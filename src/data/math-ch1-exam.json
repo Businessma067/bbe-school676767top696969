@@ -21,11 +21,11 @@
         false
       ],
       "tactical_explanations": [
-        "**A.** → True\n\nMembership checks a listed object, while subset checks every member of the smaller set.\n\n$$R=\\{0,\\{0\\},\\{\\{0\\}\\}\\}$$\n\n$$\\{0\\}\\in R$$\n\n$$\\{0\\}\\in R\\Longrightarrow \\{\\{0\\}\\}\\subseteq R$$\n\nBoth relations are satisfied,\n\nSo the statement is True.",
-        "**B.** → True\n\nPerform the inner intersection before adding the members of the third set.\n\n$$A\\cap B=\\{2,4\\}$$\n\n$$(A\\cap B)\\cup C=\\{2,4\\}\\cup\\{4,5,8\\}$$\n\n$$(A\\cap B)\\cup C=\\{2,4,5,8\\}$$\n\nThe computed roster matches the claim,\n\nSo the statement is True.",
-        "**C.** → True\n\nEliminate each implication until both formulas share the same disjunctive form.\n\n$$p\\rightarrow(q\\rightarrow r)$$\n\n$$\\equiv \\neg p\\vee(q\\rightarrow r)$$\n\n$$\\equiv \\neg p\\vee(\\neg q\\vee r)$$\n\n$$\\equiv \\neg p\\vee\\neg q\\vee r$$\n\n$$(p\\wedge q)\\rightarrow r$$\n\n$$\\equiv \\neg(p\\wedge q)\\vee r$$\n\n$$\\equiv (\\neg p\\vee\\neg q)\\vee r$$\n\n$$\\equiv \\neg p\\vee\\neg q\\vee r$$\n\nBoth formulas reduce to the same disjunction.\n\nSo the statement is True.",
-        "**D.** → True\n\nA witness may depend on the universally chosen value of $x$.\n\n$$x\\in D$$\n\n$$y = 6-x\\in\\{1,2,3,4,5\\}$$\n\n$$= D$$\n\n$$x+y = x+(6-x)$$\n\n$$= 6$$\n\nThe choice $y=6-x$ works for every $x$,\n\nSo the statement is True.",
-        "**E.** → False\n\nEach ground-set element may be included or omitted independently.\n\n$$|C|=31$$\n\n$$|\\mathcal{P}(C)|=2^{|C|}$$\n\n$$2^{31}$$\n\n$$= 2147483648$$\n\n$$2147483648\\neq 31$$\n\nThe power set has $2147483648$ members, not $31$.\n\nSo the statement is False."
+        "**A.** → True\n\nRead the roster\n\n$$R=\\{0,\\{0\\},\\{\\{0\\}\\}\\}$$\n\n$$\\{0\\}\\in R$$\n\n$$\\{\\{0\\}\\}\\subseteq R$$\n\nBoth claims hold.\n\nSo the statement is True.",
+        "**B.** → True\n\nIntersection first:\n\n$$A\\cap B=\\{2,4\\}$$\n\n$$(A\\cap B)\\cup C=\\{2,4,5,8\\}$$\n\nSo the statement is True.",
+        "**C.** → True\n\nTruth tables for $p\\rightarrow(q\\rightarrow r)$ and $(p\\wedge q)\\rightarrow r$ agree on all eight rows, so the formulas are logically equivalent.\n\nSo the statement is True.",
+        "**D.** → True\n\nFor each $x\\in D=\\{1,2,3,4,5\\}$ choose $y=6-x$:\n\n$$1+5=6$$\n\n$$2+4=6$$\n\n$$3+3=6$$\n\n$$4+2=6$$\n\n$$5+1=6$$\n\nSo the statement is True.",
+        "**E.** → False\n\nPower-set size for five codes:\n\n$$|C|=5$$\n\n$$|\\mathcal{P}(C)|=2^{5}$$\n\n$$2^{5}=32$$\n\n$$32\\neq 31$$\n\nSo the statement is False."
       ],
       "difficulty_level": "3/5",
       "sort_order": 109,
@@ -53,11 +53,11 @@
         true
       ],
       "tactical_explanations": [
-        "**A.** → False\n\nInclusion-exclusion counts the union before its complement in the conference.\n\n$$|L\\cup D|=|L|+|D|-|L\\cap D|$$\n\n$$|L\\cup D| = 52+41-18$$\n\n$$= 75$$\n\n$$90-75=15\\ne17$$\n\nExactly $15$ people attended neither panel,\n\nSo the statement is False.",
-        "**B.** → False\n\nOne truth assignment separates an implication from its converse.\n\n$$(p,q)=(F,T)$$\n\n$$p\\rightarrow q$$\n\n$$= F\\rightarrow T$$\n\n$$= T$$\n\n$$q\\rightarrow p$$\n\n$$= T\\rightarrow F$$\n\n$$= F$$\n\nThe two implications disagree on this assignment.\n\nSo the statement is False.",
-        "**C.** → False\n\nThe existential witness must stay fixed while the universal variable changes.\n\n$$x = 1\\Longrightarrow y$$\n\n$$= 3$$\n\n$$x = 2\\Longrightarrow y$$\n\n$$= 2$$\n\n$$3\\ne2$$\n\nNo single $y$ satisfies both required equations,\n\nSo the statement is False.",
-        "**D.** → True\n\nFixing required and forbidden delegates leaves a free include-or-omit choice for everyone else.\n\n$$8-1-2=5$$\n\n$$\\#\\{\\text{admissible committees}\\}=2^5$$\n\n$$2^5=32$$\n\nExactly $32$ committees are possible,\n\nSo the statement is True.",
-        "**E.** → True\n\nAn element outside a union must be outside each set separately.\n\n$$x\\in(A\\cup B)^c\\Longleftrightarrow x\\notin A\\cup B$$\n\n$$x\\notin A\\cup B\\Longleftrightarrow(x\\notin A)\\wedge(x\\notin B)$$\n\n$$(x\\notin A)\\wedge(x\\notin B)\\Longleftrightarrow x\\in A^c\\cap B^c$$\n\nBoth sides have the same elements.\n\nSo the statement is True."
+        "**A.** → False\n\nInclusion-exclusion:\n\n$$52+41=93$$\n\n$$93-18=75$$\n\n$$|L\\cup D|=75$$\n\n$$90-75=15$$\n\nThe claim asserts $17$.\n\nSo the statement is False.",
+        "**B.** → False\n\nOn $(p,q)=(F,T)$:\n\n$$F\\rightarrow T=T$$\n\n$$T\\rightarrow F=F$$\n\nSo the statement is False.",
+        "**C.** → False\n\nFrom $x+y=4$:\n\n$$x=1\\Rightarrow y=3$$\n\n$$x=2\\Rightarrow y=2$$\n\n$$3\\neq 2$$\n\nSo the statement is False.",
+        "**D.** → True\n\nFree delegates:\n\n$$8-1=7$$\n\n$$7-2=5$$\n\n$$2^{5}=32$$\n\nSo the statement is True.",
+        "**E.** → True\n\nDe Morgan:\n\n$$x\\in(A\\cup B)^{c}$$\n\n$$\\iff x\\notin A\\cup B$$\n\n$$\\iff x\\in A^{c}\\cap B^{c}$$\n\nSo the statement is True."
       ],
       "difficulty_level": "4/5",
       "sort_order": 110,
@@ -117,11 +117,11 @@
         true
       ],
       "tactical_explanations": [
-        "**A.** → False\n\nAny proposed greatest integer has a strictly larger successor.\n\n$$g\\in\\mathbb Z$$\n\n$$n=g+1\\in\\mathbb Z$$\n\n$$g+1\\le g\\Longleftrightarrow1\\le0$$\n\nThe successor $g+1$ defeats every proposed witness,\n\nSo the statement is False.",
-        "**B.** → True\n\nEach ground-set element may be included or omitted independently.\n\n$$|C|=256$$\n\n$$|\\mathcal{P}(C)|=2^{|C|}$$\n\n$$2^{256}$$\n\n$$= 115792089237316195423570985008687907853269984665640564039457584007913129639936$$\n\n$$115792089237316195423570985008687907853269984665640564039457584007913129639936\\neq 256$$\n\nThe power set has $115792089237316195423570985008687907853269984665640564039457584007913129639936$ members, not $256$.\n\nSo the statement is True.",
-        "**C.** → True\n\nThree-set inclusion-exclusion removes pairwise double counts and restores the triple overlap.\n\n$$|A\\cup D\\cup M|=46+39+31-17-12-10+4$$\n\n$$|A\\cup D\\cup M|=116-39+4$$\n\n$$|A\\cup D\\cup M|=81$$\n\nThe at-least-one count is $81$,\n\nEach candidate element is kept when it appears in at least one of the listed sets.\n\nSo the statement is True.",
-        "**D.** → True\n\nThe last two conjuncts force values that make the first conjunct false. From $\\neg p\\wedge\\neg q$:\n\n$$(p,q)=(F,F)$$\n\nOn that row,\n\n$$p\\vee q = F\\vee F$$\n\n$$= F$$\n\nso the full conjunction collapses:\n\n$$(p\\vee q)\\wedge\\neg p\\wedge\\neg q=F$$\n\nThe formula is false on every assignment.\n\nSo the statement is True.",
-        "**E.** → True\n\nMove the negation inward by switching each quantifier in order.\n\n$$\\neg[\\forall x\\ \\exists y\\ R(x,y)]\\equiv\\exists x\\ \\neg[\\exists y\\ R(x,y)]$$\n\n$$\\neg[\\exists y\\ R(x,y)]\\equiv\\forall y\\ \\neg R(x,y)$$\n\n$$\\neg[\\forall x\\ \\exists y\\ R(x,y)]\\equiv\\exists x\\ \\forall y\\ \\neg R(x,y)$$\n\nThe displayed sentence is the correct negation.\n\nSo the statement is True."
+        "**A.** → False\n\nSuccessor defeats any greatest integer:\n\n$$n=g+1$$\n\n$$g+1\\le g$$\n\nis false.\n\nSo the statement is False.",
+        "**B.** → True\n\nDouble power set:\n\n$$|\\mathcal{P}(X)|=2^{3}$$\n\n$$2^{3}=8$$\n\n$$|\\mathcal{P}(\\mathcal{P}(X))|=2^{8}$$\n\n$$2^{8}=256$$\n\nSo the statement is True.",
+        "**C.** → True\n\nInclusion-exclusion:\n\n$$46+39=85$$\n\n$$85+31=116$$\n\n$$116-17=99$$\n\n$$99-12=87$$\n\n$$87-10=77$$\n\n$$77+4=81$$\n\nSo the statement is True.",
+        "**D.** → True\n\nFrom $\\neg p\\wedge\\neg q$:\n\n$$p\\vee q=F$$\n\nso the full conjunction is false.\n\nSo the statement is True.",
+        "**E.** → True\n\n$$\\neg\\forall x\\,\\exists y\\,R(x,y)\\equiv\\exists x\\,\\forall y\\,\\neg R(x,y)$$\n\nSo the statement is True."
       ],
       "difficulty_level": "3/5",
       "sort_order": 112,
@@ -185,7 +185,7 @@
         "**B.** → True\n\nA biconditional is true exactly when its two propositions agree.\n\n$$(p,q) = (T,T)\\Longrightarrow p\\wedge q$$\n\n$$= T$$\n\n$$(p,q) = (F,F)\\Longrightarrow\\neg p\\wedge\\neg q$$\n\n$$= T$$\n\n$$p\\leftrightarrow q\\equiv(p\\wedge q)\\vee(\\neg p\\wedge\\neg q)$$\n\nThe right side selects exactly the agreement rows.\n\nSo the statement is True.",
         "**C.** → False\n\nMembership in the larger class does not force membership in its subclass.\n\n$$\\forall x\\,(V(x)\\rightarrow M(x))$$\n\n$$M(\\mathrm{Lee})=T$$\n\n$$V(\\mathrm{Lee}) = F,\\quad M(\\mathrm{Lee})$$\n\n$$= T$$\n\nThe last line is a countermodel to the conclusion,\n\nSo the statement is False.",
         "**D.** → False\n\nStrict inclusion forces bounds on the middle cardinality but does not select one value.\n\n$$|A|<|B|<|C|$$\n\n$$2<|B|<5$$\n\n$$|B|\\in\\{3,4\\}$$\n\nA three-element middle set is also possible,\n\nSo the statement is False.",
-        "**E.** → True\n\nSubtract the triple intersection from each pairwise count before adding the disjoint pair-only regions:\n\n$$|A\\cap B\\setminus C| = 15-5$$\n\n$$= 10$$\n\n$$|A\\cap C\\setminus B| = 13-5$$\n\n$$= 8$$\n\n$$|B\\cap C\\setminus A| = 11-5$$\n\n$$= 6$$\n\nAdd the three disjoint pieces:\n\n$$10+8+6=24$$\n\nThe exactly-two total is $24$.\n\nSo the statement is True."
+        "**E.** → True\n\n$$10+8=18$$\n\n$$18+6=24$$\n\nSo the statement is True."
       ],
       "difficulty_level": "5/5",
       "sort_order": 114,
@@ -247,7 +247,7 @@
       "tactical_explanations": [
         "**A.** → True\n\nThe additive identity is one fixed witness that works for every integer input.\n\n$$x=0$$\n\n$$x+y=0+y$$\n\n$$0+y=y\\quad\\text{for every }y\\in\\mathbb Z$$\n\nThe witness $x=0$ proves the sentence,\n\nSo the statement is True.",
         "**B.** → False\n\nSolving the defining equation identifies elements before any membership claim is checked:\n\n$$n^{2} = 16\\Longleftrightarrow n$$\n\n$$= \\pm 4$$\n\n$$A=\\{-4,4\\}$$\n\nThe integer $4$ sits in $A$:\n\n$$4\\in A$$\n\nbut a singleton set is a different object from that integer:\n\n$$\\{4\\}\\notin A.$$\n\nSo the statement is False.",
-        "**C.** → False\n\nA union cannot contain more people than the survey population.\n\n$$|A\\cup B|=|A|+|B|-|A\\cap B|$$\n\n$$|A\\cup B| = 70+50-10$$\n\n$$= 110$$\n\n$$110>|U|=100$$\n\nThe three reported figures are inconsistent,\n\nSo the statement is False.",
+        "**C.** → False\n\n$$|A|=70$$\n\n$$|B|=50$$\n\n$$|A\\cap B|=10$$\n\n$$70+50=120$$\n\n$$120-10=110$$\n\n$$|A\\cup B|=110$$\n\nSo the statement is False.",
         "**D.** → True\n\nAn implication is false only when its antecedent is true and its consequent is false.\n\n$$p\\rightarrow(q\\vee r) = F\\Longleftrightarrow p$$\n\n$$= T\\ \\text{and}\\ q\\vee r$$\n\n$$= F$$\n\n$$q\\vee r = F\\Longleftrightarrow(q,r)$$\n\n$$= (F,F)$$\n\n$$(p,q,r)=(T,F,F)$$\n\nThere is exactly one falsifying assignment.\n\nSo the statement is True.",
         "**E.** → False\n\nDifferent domain elements may satisfy different sides of the disjunction.\n\n$$D = \\{1,2\\},\\quad P(x)\\Longleftrightarrow x$$\n\n$$= 1,\\quad Q(x)\\Longleftrightarrow x$$\n\n$$= 2$$\n\n$$\\forall x\\in D\\,(P(x)\\vee Q(x))=T$$\n\n$$(\\forall x\\in D\\,P(x))\\vee(\\forall x\\in D\\,Q(x)) = F\\vee F$$\n\n$$= F$$\n\nThe countermodel separates the two formulas.\n\nSo the statement is False."
       ],
@@ -373,11 +373,11 @@
         true
       ],
       "tactical_explanations": [
-        "**A.** → True\n\nThree-set inclusion-exclusion recovers the union first:\n\n$$|A\\cup B\\cup C|=105+92+80-48-41-36+20$$\n\n$$|A\\cup B\\cup C|=172$$\n\nThe outside region is then\n\n$$180-172=8$$\n\nExactly $8$ participants take none of the three courses.\n\nEach candidate element is kept when it appears in at least one of the listed sets.\n\nSo the statement is True.",
-        "**B.** → False\n\nOnly-analytics removes the two pairwise overlaps and restores the triple count once:\n\n$$|A\\setminus(B\\cup C)|=105-48-41+20$$\n\n$$=36\\neq 56$$\n\nThe analytics-only region is $36$, not $56$.\n\nEach candidate element is kept when it appears in at least one of the listed sets.\n\nSo the statement is False.",
-        "**C.** → True\n\nExactly two courses means the three pairwise-only regions.\n\nSubtract the triple from each pairwise overlap, then add:\n\n$$(48-20)+(41-20)+(36-20)$$\n\n$$=28+21+16$$\n\n$$=65$$\n\nExactly $65$ participants take exactly two courses, matching the claim.\n\nSo the statement is True.",
-        "**D.** → False\n\nAt least two courses counts exactly-two participants together with the triple overlap.\n\nExactly-two was recovered as $65$, and the triple has size $20$, so\n\n$$65+20=85$$\n\nThe claim asserts $65$, which omits the all-three participants.\n\nPairwise overlaps are subtracted once; a triple overlap is added back once.\n\nSo the statement is False.",
-        "**E.** → True\n\nOnly-compliance removes the compliance pairwise overlaps and restores the triple once.\n\n$$|C\\setminus(A\\cup B)|=|C|-|A\\cap C|-|B\\cap C|+|A\\cap B\\cap C|$$\n\n$$=80-41-36+20$$\n\n$$=23$$\n\nExactly $23$ take only compliance, matching the claim.\n\nSo the statement is True."
+        "**A.** → True\n\n$$105+92=197$$\n\n$$197+80=277$$\n\n$$277-48=229$$\n\n$$229-41=188$$\n\n$$188-36=152$$\n\n$$152+20=172$$\n\n$$180-172=8$$\n\nSo the statement is True.",
+        "**B.** → False\n\n$$105-48=57$$\n\n$$57-41=16$$\n\n$$16+20=36$$\n\nThe claim asserts $56$.\n\nSo the statement is False.",
+        "**C.** → True\n\n$$48-20=28$$\n\n$$41-20=21$$\n\n$$36-20=16$$\n\n$$28+21=49$$\n\n$$49+16=65$$\n\nSo the statement is True.",
+        "**D.** → False\n\n$$65+20=85$$\n\nThe claim asserts $65$.\n\nSo the statement is False.",
+        "**E.** → True\n\n$$80-41=39$$\n\n$$39-36=3$$\n\n$$3+20=23$$\n\nSo the statement is True."
       ],
       "difficulty_level": "5/5",
       "sort_order": 120,
@@ -473,7 +473,7 @@
         "**B.** → False\n\nList every label that appears in $E$ or in $A$:\n\n$$E\\cup A=\\{a,b,c,e,f,g,h\\}$$\n\n$$|E\\cup A|=7\\neq 8$$\n\nThe union omits $d$, so it is not the full eight-module universe.\n\nEach candidate element is kept when it appears in at least one of the listed sets.\n\nSo the statement is False.",
         "**C.** → False\n\nDifference $C\\setminus A$ keeps members of $C$ that miss $A$.\n\n$$C=\\{a,b,d,f\\}$$\n\n$$A=\\{a,c,f,h\\}$$\n\n$$a\\in C,\\ a\\in A$$\n\n$$b\\in C,\\ b\\notin A$$\n\n$$d\\in C,\\ d\\notin A$$\n\n$$f\\in C,\\ f\\in A$$\n\n$$C\\setminus A=\\{b,d\\}$$\n\n$$\\{b,d,f\\}$$\n\nThe computed roster does not match the claim.\n\nSo the statement is False.",
         "**D.** → True\n\nFirst form the core-audited intersection, then test the proposed subset:\n\n$$C\\cap A=\\{a,f\\}$$\n\n$$\\{a,f\\}\\subseteq\\{a,f\\}$$\n\nThe inclusion holds.\n\nSo the statement is True.",
-        "**E.** → False\n\nSymmetric difference size is $|C|+|E|-2|C\\cap E|$.\n\nSubstitute the recovered figures $|C|=4$, $|E|=5$, $|C\\cap E|=2$:\n\n$$|C\\triangle E|=4+5-2\\cdot2$$\n\n$$= 9-4$$\n\n$$= 5$$\n\nThe claim asserts $4$. Since $5\\ne4$, the statement is False.\n\nSo the statement is False."
+        "**E.** → False\n\n$$|C|=4$$\n\n$$|E|=5$$\n\n$$|C\\cap E|=2$$\n\n$$2\\cdot 2=4$$\n\n$$4+5=9$$\n\n$$9-4=5$$\n\n$$|C\\triangle E|=5$$\n\nSo the statement is False."
       ],
       "difficulty_level": "5/5",
       "sort_order": 123,
@@ -501,11 +501,11 @@
         false
       ],
       "tactical_explanations": [
-        "**A.** → True\n\nThree-set inclusion-exclusion:\n\n$$138+124=262$$\n\n$$262+96=358$$\n\n$$358-68=290$$\n\n$$290-52=238$$\n\n$$238-46=192$$\n\n$$192+28=220$$\n\n$$|M\\cup I\\cup S|=220$$\n\n$$240-220=20$$\n\nSo the statement is True.",
-        "**B.** → True\n\nOnly-mobile:\n\n$$138-68=70$$\n\n$$70-52=18$$\n\n$$18+28=46$$\n\nOnly-internet:\n\n$$124-68=56$$\n\n$$56-46=10$$\n\n$$10+28=38$$\n\nOnly-streaming:\n\n$$96+28=124$$\n\n$$124-52=72$$\n\n$$72-46=26$$\n\nSum of only-one regions:\n\n$$46+38=84$$\n\n$$84+26=110$$\n\nSo the statement is True.",
-        "**C.** → False\n\nMobile and internet only:\n\n$$68-28=40$$\n\nThe claim asserts $68$, which forgets to remove the triple.\n\nSo the statement is False.",
-        "**D.** → False\n\nAt least two:\n\n$$68-28=40$$\n\n$$52-28=24$$\n\n$$46-28=18$$\n\n$$40+24=64$$\n\n$$64+18=82$$\n\n$$82+28=110$$\n\nThe claim asserts $82$, but including the triple gives $110$.\n\nSo the statement is False.",
-        "**E.** → False\n\nOnly streaming:\n\n$$96+28=124$$\n\n$$124-52=72$$\n\n$$72-46=26$$\n\nThe claim asserts $34$.\n\nSo the statement is False."
+        "**A.** → True\n\n$$138+124=262$$\n\n$$262+96=358$$\n\n$$358-68=290$$\n\n$$290-52=238$$\n\n$$238-46=192$$\n\n$$192+28=220$$\n\n$$240-220=20$$\n\nSo the statement is True.",
+        "**B.** → True\n\n$$138-68=70$$\n\n$$70-52=18$$\n\n$$18+28=46$$\n\n$$124-68=56$$\n\n$$56-46=10$$\n\n$$10+28=38$$\n\n$$96+28=124$$\n\n$$124-52=72$$\n\n$$72-46=26$$\n\n$$46+38=84$$\n\n$$84+26=110$$\n\nSo the statement is True.",
+        "**C.** → False\n\n$$68-28=40$$\n\nThe claim asserts $68$.\n\nSo the statement is False.",
+        "**D.** → False\n\n$$68-28=40$$\n\n$$52-28=24$$\n\n$$46-28=18$$\n\n$$40+24=64$$\n\n$$64+18=82$$\n\n$$82+28=110$$\n\nThe claim asserts $82$.\n\nSo the statement is False.",
+        "**E.** → False\n\n$$96+28=124$$\n\n$$124-52=72$$\n\n$$72-46=26$$\n\nThe claim asserts $34$.\n\nSo the statement is False."
       ],
       "difficulty_level": "4/5",
       "sort_order": 124,
@@ -629,11 +629,11 @@
         false
       ],
       "tactical_explanations": [
-        "**A.** → True\n\nApply three-set inclusion-exclusion to the festival totals:\n\n$$|J\\cup T\\cup F|=170+145+130-80-72-61+35$$\n\n$$=267$$\n\nThe three-program union has size $267$.\n\nEach candidate element is kept when it appears in at least one of the listed sets.\n\nSo the statement is True.",
-        "**B.** → True\n\nSubtract the union from the survey size:\n\n$$300-267=33$$\n\nExactly $33$ visitors chose no program.\n\nEach candidate element is kept when it appears in at least one of the listed sets.\n\nSo the statement is True.",
-        "**C.** → False\n\nJazz and theater only is the pairwise overlap minus the triple.\n\n$$|J\\cap T\\setminus F| = 80-35$$\n\n$$= 45$$\n\nThe claim asserts $50$. Since $45\\ne50$, the statement is False.\n\nSo the statement is False.",
-        "**D.** → False\n\nExactly two programs is the sum of the three pairwise-only regions.\n\n$$(80-35)+(72-35)+(61-35)$$\n\n$$=45+37+26$$\n\n$$=108$$\n\nThe claim asserts $100$. Since $108\\ne100$, the statement is False.\n\nPairwise overlaps are subtracted once; a triple overlap is added back once.\n\nSo the statement is False.",
-        "**E.** → False\n\nOnly jazz removes the jazz pairwise overlaps and restores the triple.\n\n$$170-80-72+35=53$$\n\nThe claim asserts $72$. Since $53\\ne72$, the statement is False.\n\nPairwise overlaps are subtracted once; a triple overlap is added back once.\n\nSo the statement is False."
+        "**A.** → True\n\n$$170+145=315$$\n\n$$315+130=445$$\n\n$$445-80=365$$\n\n$$365-72=293$$\n\n$$293-61=232$$\n\n$$232+35=267$$\n\nSo the statement is True.",
+        "**B.** → True\n\n$$300-267=33$$\n\nSo the statement is True.",
+        "**C.** → False\n\n$$80-35=45$$\n\nThe claim asserts $50$.\n\nSo the statement is False.",
+        "**D.** → False\n\n$$80-35=45$$\n\n$$72-35=37$$\n\n$$61-35=26$$\n\n$$45+37=82$$\n\n$$82+26=108$$\n\nThe claim asserts $100$.\n\nSo the statement is False.",
+        "**E.** → False\n\n$$170-80=90$$\n\n$$90-72=18$$\n\n$$18+35=53$$\n\nThe claim asserts $72$.\n\nSo the statement is False."
       ],
       "difficulty_level": "4/5",
       "sort_order": 128,

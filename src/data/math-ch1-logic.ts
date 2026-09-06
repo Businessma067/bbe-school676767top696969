@@ -6426,89 +6426,75 @@ On a dry venue-conflict day, $P$ is false and $Q$ is true. The original holds be
     tactical_explanations: [
       `**A.** → True
 
-Inclusive “or” is true when at least one proposition is true, including the row where both are true. For a consumer who bought both products,
+Inclusive disjunction $X\\vee Y$ is true when $X$ holds, when $Y$ holds, and when both hold. For a both-buyer:
 
-$$X = \\mathrm{T},$$
+$$X=\\mathrm{T}$$
 
-$$Y$$
+$$Y=\\mathrm{T}$$
 
-$$= \\mathrm{T}$$
+$$X\\vee Y=\\mathrm{T}\\vee\\mathrm{T}$$
 
-so
+$$X\\vee Y=\\mathrm{T}$$
 
-$$X\\lor Y = \\mathrm{T}\\lor\\mathrm{T}$$
-
-$$= \\mathrm{T}$$
-
-All $15$ both-buyers therefore satisfy “bought X or Y.” Mathematical inclusive or includes them.
+So all $15$ both-buyers satisfy “bought X or Y.”
 
 So the statement is True.`,
       `**B.** → True
 
-Adding $40$ and $35$ counts the $15$ both-buyers twice, so subtract them once:
+Inclusive union count:
 
-$$|X\\cup Y| = 40+35-15$$
+$$|X|=40$$
 
-$$= 60$$
+$$|Y|=35$$
 
-Compare the computed value with the claim ($60$). That matches the claim. The two sides agree.
+$$|X\\cap Y|=15$$
+
+$$|X|+|Y|=40+35$$
+
+$$40+35=75$$
+
+$$75-15=60$$
+
+$$|X\\cup Y|=60$$
 
 So the statement is True.`,
       `**C.** → True
 
-Exclusive or keeps only the two outer regions. X-only is $40-15=25$ and Y-only is $35-15=20$, so
+Exclusive or keeps only the outer regions:
+
+$$40-15=25$$
+
+$$35-15=20$$
 
 $$25+20=45$$
-
-Compare the computed value with the claim ($45$). That matches the claim. The two sides agree.
 
 So the statement is True.`,
       `**D.** → True
 
-A biconditional requires both implications:
+A biconditional is true exactly on matching truth values:
 
-$$P\\Leftrightarrow Q\\equiv(P\\Rightarrow Q)\\land(Q\\Rightarrow P)$$
+$$\\mathrm{T}\\Leftrightarrow\\mathrm{T}=\\mathrm{T}$$
 
-Evaluate its four input rows:
+$$\\mathrm{F}\\Leftrightarrow\\mathrm{F}=\\mathrm{T}$$
 
-$$\\mathrm{T}\\Leftrightarrow\\mathrm{T} = \\mathrm{T},$$
+$$\\mathrm{T}\\Leftrightarrow\\mathrm{F}=\\mathrm{F}$$
 
-$$\\mathrm{F}\\Leftrightarrow\\mathrm{F}$$
-
-$$= \\mathrm{T}$$
-
-$$\\mathrm{T}\\Leftrightarrow\\mathrm{F} = \\mathrm{F},$$
-
-$$\\mathrm{F}\\Leftrightarrow\\mathrm{T}$$
-
-$$= \\mathrm{F}$$
-
-It is true exactly when the two components have the same truth value.
+$$\\mathrm{F}\\Leftrightarrow\\mathrm{T}=\\mathrm{F}$$
 
 So the statement is True.`,
       `**E.** → False
 
-“At least one component is true” describes disjunction, not a biconditional. Take the mixed assignment
+“At least one true” is disjunction, not a biconditional. On
 
-$$P = \\mathrm{T},$$
+$$P=\\mathrm{T}$$
 
-$$Q$$
+$$Q=\\mathrm{F}$$
 
-$$= \\mathrm{F}$$
+$$P\\vee Q=\\mathrm{T}$$
 
-At least one proposition is true, and indeed
+but
 
-$$P\\lor Q = \\mathrm{T}\\lor\\mathrm{F}$$
-
-$$= \\mathrm{T}$$
-
-but the biconditional evaluates differently:
-
-$$P\\Leftrightarrow Q = \\mathrm{T}\\Leftrightarrow\\mathrm{F}$$
-
-$$= \\mathrm{F}$$
-
-This counterexample disproves the claim.
+$$P\\Leftrightarrow Q=\\mathrm{F}$$
 
 So the statement is False.`,
     ],
@@ -7177,71 +7163,75 @@ The age test sits outside the bracket. Inside the bracket, $D$ and $L$ are joine
     tactical_explanations: [
       `**A.** → True
 
-The first positive integer is $n=1$. The left side of the claimed formula is $1$. The right side is
+Base case $n=1$. Left side is $1$. Right side:
 
-$$\\frac{1\\cdot(1+1)}{2}=\\frac{1\\cdot 2}{2}$$
+$$1+1=2$$
 
-$$=1$$
+$$1\\cdot 2=2$$
 
-The two sides agree, so the base case holds.
+$$\\frac{2}{2}=1$$
 
-That matches the claim.
+$$\\frac{1\\cdot(1+1)}{2}=1$$
+
+The two sides agree.
 
 So the statement is True.`,
       `**B.** → True
 
-Let
+Write
 
 $$P(n):\\quad 1+2+\\cdots+n=\\frac{n(n+1)}{2}$$
 
-The inductive step assumes $P(k)$ for an arbitrary positive integer $k$ and must derive the next case:
+The inductive step is the implication
 
 $$P(k)\\Rightarrow P(k+1)$$
 
-Together with the base case, this implication propagates the formula through every positive integer. The statement describes exactly that step.
+for arbitrary $k\\ge 1$. Together with the base case, that implication propagates the formula through every positive integer.
 
 So the statement is True.`,
       `**C.** → False
 
-Checking five values establishes only
+Checking five values only establishes
 
 $$P(1)\\land P(2)\\land P(3)\\land P(4)\\land P(5)$$
 
-A complete induction also needs the bridge
+A complete induction also needs
 
 $$\\forall k\\ge 1,\\quad P(k)\\Rightarrow P(k+1)$$
 
-Without that implication, nothing has been proved about $P(6)$ or any later case. Five examples are not a complete inductive proof.
+Without that bridge, $P(6)$ is unproved.
 
 So the statement is False.`,
       `**D.** → True
 
-Assume the formula at $n=k$:
+Assume $P(k)$:
 
 $$1+2+\\cdots+k=\\frac{k(k+1)}{2}$$
 
-Add the next term $k+1$:
+Add $k+1$:
 
-$$1+2+\\cdots+k+(k+1)=\\frac{k(k+1)}{2}+(k+1)$$
+$$\\frac{k(k+1)}{2}+(k+1)$$
 
-$$=(k+1)\\left(\\frac{k}{2}+1\\right)$$
+$$k+1=\\frac{2(k+1)}{2}$$
 
-$$=\\frac{(k+1)(k+2)}{2}$$
+$$\\frac{k(k+1)}{2}+\\frac{2(k+1)}{2}=\\frac{k(k+1)+2(k+1)}{2}$$
 
-which is exactly $P(k+1)$. So the inductive step holds.
+$$k(k+1)+2(k+1)=(k+1)(k+2)$$
+
+$$\\frac{(k+1)(k+2)}{2}$$
+
+which is $P(k+1)$.
 
 So the statement is True.`,
       `**E.** → True
 
-Substitute $n=10$ into the closed form:
+Substitute $n=10$:
 
-$$\\frac{10\\cdot(10+1)}{2}=\\frac{10\\cdot 11}{2}$$
+$$10+1=11$$
 
-$$=55$$
+$$10\\cdot 11=110$$
 
-So $1+2+\\cdots+10=55$, matching the claim.
-
-That matches the claim.
+$$\\frac{110}{2}=55$$
 
 So the statement is True.`,
     ],

@@ -484,6 +484,55 @@ def expand_half_ab_product(expl: str) -> str:
     return pattern.sub(repl, expl)
 
 
+def expand_evaluate_arithmetic_rhs(expl: str) -> str:
+    """Between `… = a ± b` and `… = c`, insert the lone arithmetic `a ± b = c`."""
+    matches = list(DISPLAY_RE.finditer(expl))
+    for i, m in enumerate(matches[:-1]):
+        a = re.sub(r"\s+", " ", m.group(1)).strip()
+        m2 = matches[i + 1]
+        b = re.sub(r"\s+", " ", m2.group(1)).strip()
+        gap = expl[m.end() : m2.start()]
+        if "$" in gap and re.search(r"So the statement", gap):
+            continue
+        # LHS = a ± b   then   LHS2 = c  (or = c)
+        m1 = re.search(r"=\s*(-?[0-9.]+)\s*([\+\-])\s*([0-9.]+)\s*$", a)
+        m2r = re.search(r"=\s*(-?[0-9.]+)\s*$", b)
+        if not m1 or not m2r:
+            continue
+        left_a, op, right_a = m1.groups()
+        result = float(m2r.group(1))
+        expected = float(left_a) + float(right_a) if op == "+" else float(left_a) - float(right_a)
+        if abs(expected - result) > 1e-9:
+            continue
+        # Avoid if already evaluated nearby
+        mid = fmt_block(rf"{left_a} {op} {right_a} = {_fmt_signed(result)}")
+        if mid in expl[m.start() : m2.end()]:
+            continue
+        insert_at = m.end()
+        return expl[:insert_at] + "\n\n" + mid + expl[insert_at:]
+    return expl
+
+
+def expand_bare_product_sum_check(expl: str) -> str:
+    """Unpack check lines like $$6^{2} + 8^{2} = 36 + 64 = 100$$ if any remain packed."""
+    # Also prose Check: 6^2 + 8^2 = 36 + 64 = 100
+    def repl(m: re.Match) -> str:
+        u, v = m.group(1), m.group(2)
+        su, sv = int(u) ** 2, int(v) ** 2
+        return (
+            f"Check:\n\n$${u}^{{2}}$$\n\n$$= {su}$$\n\n"
+            f"$${v}^{{2}}$$\n\n$$= {sv}$$\n\n"
+            f"$${su} + {sv}$$\n\n$$= {su + sv}$$\n\n"
+        )
+
+    out = re.sub(
+        r"Check:\s*\$?\$?([0-9]+)\^\{?2\}?\s*\+\s*([0-9]+)\^\{?2\}?\s*=\s*[0-9]+\s*\+\s*[0-9]+\s*=\s*[0-9]+\$?\$?",
+        repl,
+        expl,
+    )
+    return out
+
+
 def process_explanation(expl: str, letter: str, truth: bool, overview: str) -> str:
     expl = B.ensure_header(expl, letter, truth)
     expl = B.scrub_filler(expl)
@@ -492,6 +541,7 @@ def process_explanation(expl: str, letter: str, truth: bool, overview: str) -> s
     expl = B.expand_zero_display_numeric(expl)
     expl = B.expand_inline_check_arithmetic(expl)
     expl = expand_prose_abc_chains(expl)
+    expl = expand_bare_product_sum_check(expl)
     expl = B.pull_overview_plugin_steps(expl, overview)
     for _ in range(5):
         nxt = expand_ln_ratio_plugin(expl)
@@ -515,6 +565,11 @@ def process_explanation(expl: str, letter: str, truth: bool, overview: str) -> s
     expl = B.expand_mortgage_pmt_plugin(expl)
     for _ in range(4):
         nxt = expand_linear_adjacent_jumps(expl)
+        if nxt == expl:
+            break
+        expl = nxt
+    for _ in range(6):
+        nxt = expand_evaluate_arithmetic_rhs(expl)
         if nxt == expl:
             break
         expl = nxt
