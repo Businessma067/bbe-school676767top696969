@@ -4099,7 +4099,11 @@ $$A^{c}=\\{6,7,8,9,10\\}$$
 So the statement is True.`,
       `**E.** → True
 
-From letter C,
+Intersection:
+
+$$A\\cap B=\\{4,5\\}$$
+
+Complement in $U=\\{1,2,\\ldots,10\\}$ removes $4$ and $5$:
 
 $$(A\\cap B)^{c}=\\{1,2,3,6,7,8,9,10\\}$$
 
@@ -4291,7 +4295,11 @@ $$A^{c}=\\{s,t,u\\}$$
 So the statement is True.`,
       `**E.** → True
 
-From letter C,
+Intersection:
+
+$$A\\cap B=\\{r\\}$$
+
+Complement in $U=\\{p,q,r,s,t,u\\}$ removes $r$:
 
 $$(A\\cap B)^{c}=\\{p,q,s,t,u\\}$$
 
@@ -5243,7 +5251,9 @@ De Morgan identifies $\\neg(P\\land Q)$ with $\\neg P\\lor\\neg Q$, and $\\neg(P
     tactical_explanations: [
       `**A.** → True
 
-The universal claim is: every prime $p>2$ is odd. The only even prime is $2$, which is excluded by $p>2$. Every larger prime is odd, so the statement is true.`,
+The universal claim is: every prime $p>2$ is odd. The only even prime is $2$, which is excluded by $p>2$. Every larger prime is odd, so the claim holds.
+
+So the statement is True.`,
       `**B.** → False
 
 A counterexample would be a prime $p>2$ that is even. The number $2$ fails the hypothesis $p>2$:
