@@ -872,7 +872,9 @@ def try_expand(task, i):
 
 def validate(task, expls):
     errs = []
-    for i, e in enumerate(expls):
+    n = min(len(expls), len(task["answer_key"]))
+    for i in range(n):
+        e = expls[i]
         L = LETTERS[i]
         key = task["answer_key"][i]
         want = f"**{L}.** → {'True' if key else 'False'}"
@@ -898,9 +900,14 @@ def main():
         n = int(task["case_id"].split(".")[1])
         if n < args.start or n > args.end:
             continue
+        nletters = min(
+            len(task["statements"]),
+            len(task["answer_key"]),
+            len(task["tactical_explanations"]),
+        )
         new = []
         ch = False
-        for i in range(5):
+        for i in range(nletters):
             text, did = try_expand(task, i)
             new.append(text)
             if did:
@@ -908,7 +915,10 @@ def main():
                 ch = True
             else:
                 kept += 1
-        errors.extend(validate(task, new))
+        # preserve any trailing explanations if counts differ
+        if len(task["tactical_explanations"]) > nletters:
+            new.extend(task["tactical_explanations"][nletters:])
+        errors.extend(validate(task, new[:nletters]))
         if ch:
             task["tactical_explanations"] = new
             changed += 1
@@ -926,7 +936,13 @@ def main():
         n = int(task["case_id"].split(".")[1])
         if n < args.start or n > args.end:
             continue
-        for i, e in enumerate(task["tactical_explanations"]):
+        nletters = min(
+            len(task["statements"]),
+            len(task["answer_key"]),
+            len(task["tactical_explanations"]),
+        )
+        for i in range(nletters):
+            e = task["tactical_explanations"][i]
             if is_thin(e, task["statements"][i]):
                 thin.append(f"{task['case_id']}{'ABCDE'[i]}:{len(e)}")
     print(f"still thin by heuristic: {len(thin)}")
