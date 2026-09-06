@@ -253,7 +253,9 @@ $B$ is given as $\\{3,-3\\}$. Equality of sets is equality of membership, indepe
 
 Each object in $A=\\{a,b,c\\}$ may be kept or left out when building a subset. That is $2$ independent binary choices:
 
-$$\\lvert\\mathcal{P}(A)\\rvert=2^{\\lvert A\\rvert}=2^{3}$$
+$$\\lvert\\mathcal{P}(A)\\rvert=2^{\\lvert A\\rvert}$$
+
+$$=2^{3}$$
 
 $$2^{3}=8$$
 
@@ -290,11 +292,13 @@ That matches the claim.
 So the statement is True.`,
       `**D.** → False
 
-Proper inclusion needs ordinary inclusion plus a genuine difference:
+Proper inclusion needs ordinary inclusion plus a genuine difference. Here the candidate is $A$ against itself:
 
-$$X\\subsetneq Y\\iff(X\\subseteq Y)\\wedge(X\\neq Y)$$
+$$A\\subseteq A$$
 
-$A\\subseteq A$ holds, but $A\\neq A$ is impossible. Therefore $A$ is not a proper subset of $A$.
+$$A\\neq A$$
+
+is impossible. Therefore $A$ is not a proper subset of $A$.
 
 That conflicts with the claim.
 
@@ -303,7 +307,9 @@ So the statement is False.`,
 
 Two-element subsets of a three-element set are counted by
 
-$$\\binom{3}{2}=\\frac{3\\cdot 2}{2}=3$$
+$$\\binom{3}{2}=\\frac{3\\cdot 2}{2}$$
+
+$$=3$$
 
 Listing them confirms the count:
 
@@ -553,8 +559,6 @@ So the statement is True.`,
 
 Union size uses inclusion-exclusion:
 
-$$\\lvert A\\cup B\\rvert=\\lvert A\\rvert+\\lvert B\\rvert-\\lvert A\\cap B\\rvert$$
-
 Substitute $\\lvert A\\rvert=5$, $\\lvert B\\rvert=4$, and $\\lvert A\\cap B\\rvert=1$:
 
 $$5+4-1=8$$
@@ -625,9 +629,7 @@ Intersection keeps numbers tagged in both inputs. Union keeps every tagged numbe
 
 Two-set inclusion-exclusion recovers the union from the given totals:
 
-$$\\lvert M\\cup E\\rvert=\\lvert M\\rvert+\\lvert E\\rvert-\\lvert M\\cap E\\rvert$$
-
-$$=30+25-12$$
+$$30+25-12$$
 
 $$=43$$
 
@@ -655,9 +657,7 @@ So the statement is True.`,
 
 Only-Mathematics peels the overlap out of the Mathematics total:
 
-$$\\lvert M\\setminus E\\rvert=\\lvert M\\rvert-\\lvert M\\cap E\\rvert$$
-
-$$=30-12$$
+$$30-12$$
 
 $$=18$$
 
@@ -670,7 +670,9 @@ So the statement is True.`,
 
 Subsethood $E\\subseteq M$ would require every Economics student also sit in $M$, i.e. an empty Economics-only region:
 
-$$\\lvert E\\setminus M\\rvert=\\lvert E\\rvert-\\lvert M\\cap E\\rvert=25-12=13$$
+$$25-12$$
+
+$$=13$$
 
 Thirteen students take Economics but not Mathematics, so $E\\not\\subseteq M$.
 
@@ -694,8 +696,6 @@ So the statement is False.`,
     solution_overview: `A cohort of $50$ students has $\\lvert M \\rvert = 30$ taking Mathematics, $\\lvert E \\rvert = 25$ taking Economics, and $\\lvert M \\cap E \\rvert = 12$ taking both.
 
 Inclusion-exclusion for two sets is
-
-$$\\lvert M \\cup E \\rvert = \\lvert M \\rvert + \\lvert E \\rvert - \\lvert M \\cap E \\rvert.$$
 
 Substitute the given sizes:
 
@@ -735,7 +735,9 @@ So the statement is True.`,
 
 A partition needs pairwise disjoint nonempty blocks whose union is $U$. Pairwise disjointness holds. The union is
 
-$$A\\cup B\\cup C=\\{1,2,\\ldots,9\\}=U$$
+$$A\\cup B\\cup C=\\{1,2,\\ldots,9\\}$$
+
+$$=U$$
 
 and each block is nonempty. So $\\{A,B,C\\}$ partitions $U$.
 
@@ -917,11 +919,15 @@ That conflicts with the claim.
 So the statement is False.`,
       `**B.** → True
 
-De Morgan's law for intersection says
+De Morgan's law for intersection equates the complement of an intersection with the union of the complements. With $A=\\{1,2,3,4,5\\}$ and $B=\\{4,5,6,7,8\\}$ in $U=\\{1,2,\\ldots,10\\}$:
 
-$$(A\\cap B)^{c}=A^{c}\\cup B^{c}$$
+$$A\\cap B=\\{4,5\\}$$
 
-for any sets $A,B$ in a fixed universe. The identity holds independently of the particular rosters.
+$$(A\\cap B)^{c}=\\{1,2,3,6,7,8,9,10\\}$$
+
+$$A^{c}\\cup B^{c}=\\{1,2,3,6,7,8,9,10\\}$$
+
+Both sides match.
 
 That matches the claim.
 
@@ -1080,7 +1086,9 @@ Block count is free: $\\{A\\}$ is a $1$-block partition, and $n$ singletons is a
 
 Each of the five elements may be included or omitted independently when building a subset:
 
-$$\\lvert\\mathcal{P}(A)\\rvert=2^{\\lvert A\\rvert}=2^{5}$$
+$$\\lvert\\mathcal{P}(A)\\rvert=2^{\\lvert A\\rvert}$$
+
+$$=2^{5}$$
 
 $$2^{5}=32$$
 
@@ -1093,7 +1101,9 @@ So the statement is True.`,
 
 Proper subsets are all subsets except $A$ itself. First count the full power set of a five-element set:
 
-$$\\lvert\\mathcal{P}(A)\\rvert=2^{5}=32$$
+$$\\lvert\\mathcal{P}(A)\\rvert=2^{5}$$
+
+$$=32$$
 
 Drop $A$ from that count:
 
@@ -1106,7 +1116,9 @@ So the statement is True.`,
 
 Four-element subsets are counted by the binomial coefficient:
 
-$$\\binom{5}{4}=\\binom{5}{1}=5$$
+$$\\binom{5}{4}=\\binom{5}{1}$$
+
+$$=5$$
 
 The claim asserts $10$. Note that $\\binom{5}{2}=10$ counts two-element subsets instead.
 
@@ -1134,7 +1146,7 @@ Even-cardinality subsets for $|A|=5$:
 
 $$\\binom{5}{0}+\\binom{5}{2}+\\binom{5}{4}$$
 
-$$=1+10+5=16$$
+$$1+10+5=16$$
 
 Exactly half of $2^{5}=32$ subsets have even size. The claim asserts $15$.
 
@@ -1270,7 +1282,7 @@ Three-set inclusion-exclusion:
 
 $$\\lvert A\\cup B\\cup C\\rvert=80+70+60-30-25-20+10$$
 
-$$=210-75+10$$
+$$210-75+10$$
 
 $$=145$$
 
@@ -1298,9 +1310,7 @@ So the statement is True.`,
 
 Exactly A-and-B (not C) is the pairwise total minus the triple:
 
-$$\\lvert A\\cap B\\setminus C\\rvert=\\lvert A\\cap B\\rvert-\\lvert A\\cap B\\cap C\\rvert$$
-
-$$=30-10=20$$
+$$30-10=20$$
 
 The claim reuses the pairwise total $30$ and forgets to remove the triple.
 
@@ -1309,9 +1319,7 @@ So the statement is False.`,
 
 Only-A removes both pairwise overlaps and restores the triple once:
 
-$$\\lvert A\\setminus(B\\cup C)\\rvert=\\lvert A\\rvert-\\lvert A\\cap B\\rvert-\\lvert A\\cap C\\rvert+\\lvert A\\cap B\\cap C\\rvert$$
-
-$$=80-30-20+10=40$$
+$$80-30-20+10=40$$
 
 The claim computes $80-30-20=30$ and forgets to add back the triple.
 
@@ -1320,11 +1328,17 @@ So the statement is False.`,
 
 At least two museums means the three pair-only regions plus the triple:
 
-$$\\lvert A\\cap B\\setminus C\\rvert=30-10=20$$
+$$\\lvert A\\cap B\\setminus C\\rvert=30-10$$
 
-$$\\lvert B\\cap C\\setminus A\\rvert=25-10=15$$
+$$=20$$
 
-$$\\lvert A\\cap C\\setminus B\\rvert=20-10=10$$
+$$\\lvert B\\cap C\\setminus A\\rvert=25-10$$
+
+$$=15$$
+
+$$\\lvert A\\cap C\\setminus B\\rvert=20-10$$
+
+$$=10$$
 
 $$20+15+10+10=55$$
 
@@ -1337,8 +1351,6 @@ So the statement is False.`,
     solution_overview: `A survey of $150$ tourists records $\\lvert A \\rvert = 80$, $\\lvert B \\rvert = 70$, $\\lvert C \\rvert = 60$, pairwise totals $\\lvert A \\cap B \\rvert = 30$, $\\lvert B \\cap C \\rvert = 25$, $\\lvert A \\cap C \\rvert = 20$, and $\\lvert A \\cap B \\cap C \\rvert = 10$.
 
 Three-set inclusion-exclusion is
-
-$$\\lvert A \\cup B \\cup C \\rvert = \\lvert A \\rvert + \\lvert B \\rvert + \\lvert C \\rvert - \\lvert A \\cap B \\rvert - \\lvert B \\cap C \\rvert - \\lvert A \\cap C \\rvert + \\lvert A \\cap B \\cap C \\rvert.$$
 
 $$80 + 70 + 60 - 30 - 25 - 20 + 10 = 145$$
 
@@ -1385,7 +1397,9 @@ So the statement is False.`,
 
 The map $f(n)=2n$ sends naturals to even naturals:
 
-$$f(N)=\\{2,4,6,\\ldots\\}=E$$
+$$f(N)=\\{2,4,6,\\ldots\\}$$
+
+$$=E$$
 
 The odd naturals are $\\{1,3,5,\\ldots\\}$, which is a different set. So $f$ is not a bijection onto the odds.
 
@@ -1553,7 +1567,9 @@ So the statement is True.`,
 
 The overview recovered $A=\\{2,3\\}$. The claim drops the root $3$. Check it against the quadratic:
 
-$$3^{2}-5\\cdot 3+6=9-15+6=0$$
+$$3^{2}-5\\cdot 3+6=9-15+6$$
+
+$$=0$$
 
 $$3\\in\\mathbb{Z}$$
 
@@ -1654,7 +1670,9 @@ So the statement is True.`,
 
 Three-element subsets of a four-element set are counted by
 
-$$\\binom{4}{3}=\\binom{4}{1}=4$$
+$$\\binom{4}{3}=\\binom{4}{1}$$
+
+$$=4$$
 
 Each such subset leaves out exactly one of the four letters $w,x,y,z$.
 
@@ -1678,7 +1696,9 @@ So the statement is True.`,
 
 Two-element subsets of a four-element set:
 
-$$\\binom{4}{2}=\\frac{4\\cdot 3}{2}=6$$
+$$\\binom{4}{2}=\\frac{4\\cdot 3}{2}$$
+
+$$=6$$
 
 The claim asserts $5$. Since $6\\neq 5$, the statement is False.
 
@@ -2109,7 +2129,7 @@ $$A\\cap B=\\{4,5\\},\\qquad A^c=\\{6,7,8,9,10\\},\\qquad B^c=\\{1,2,3,9,10\\}.$
 
 De Morgan's laws swap union with intersection under complements:
 
-$$(A\\cup B)^c=A^c\\cap B^c,\\qquad (A\\cap B)^c=A^c\\cup B^c.$$`,
+`,
   },
   {
     id: `math-1-24`,
@@ -2130,7 +2150,9 @@ $$(A\\cup B)^c=A^c\\cap B^c,\\qquad (A\\cap B)^c=A^c\\cup B^c.$$`,
 
 The overview already counted
 
-$$\\lvert A\\times B\\rvert=2\\cdot 3=6$$
+$$\\lvert A\\times B\\rvert=2\\cdot 3$$
+
+$$=6$$
 
 by the product rule. Product size is the number of cells in a $2$ by $3$ grid, not the five distinct symbols $1,2,x,y,z$. The claim is that same figure $6$.
 
@@ -2162,7 +2184,11 @@ So the statement is False.`,
 
 Size ignores order. The reverse product is
 
-$$\\lvert B\\times A\\rvert=3\\cdot 2=6=\\lvert A\\times B\\rvert.$$
+$$\\lvert B\\times A\\rvert=3\\cdot 2$$
+
+$$=6$$
+
+$$=\\lvert A\\times B\\rvert.$$
 
 The counts agree even though the member lists do not.
 
@@ -2180,7 +2206,9 @@ Let $A=\\{1,2\\}$ and $B=\\{x,y,z\\}$. Every claim here is about ordered pairs f
 
 An ordered pair $(a,b)$ lands in $A\\times B$ only when the first slot is from $A$ and the second from $B$. Size is the product rule
 
-$$\\lvert A\\times B\\rvert=\\lvert A\\rvert\\cdot\\lvert B\\rvert=2\\cdot 3=6.$$
+$$2\\cdot 3$$
+
+$$=6.$$
 
 Turning the factors around produces $B\\times A$: the same count, different members.`,
   },
@@ -2300,7 +2328,11 @@ So the statement is True.`,
 
 The sum $\\lvert A\\rvert+\\lvert B\\rvert$ double-counts the overlap, and $A\\triangle B$ throws both copies away:
 
-$$\\lvert A\\triangle B\\rvert=\\lvert A\\rvert+\\lvert B\\rvert-2\\lvert A\\cap B\\rvert=4+4-2\\cdot 2=4.$$
+$$\\lvert A\\triangle B\\rvert=\\lvert A\\rvert+\\lvert B\\rvert-2\\lvert A\\cap B\\rvert$$
+
+$$=4+4-2\\cdot 2$$
+
+$$=4.$$
 
 That matches the four-element set $\\{1,2,5,6\\}$.
 
@@ -2311,8 +2343,6 @@ So the statement is True.`,
     solution_overview: `**Part 1: The sets.**
 
 Symmetric difference keeps what sits in exactly one of the two sets:
-
-$$A\\triangle B=(A\\setminus B)\\cup(B\\setminus A).$$
 
 Let $A=\\{1,2,3,4\\}$ and $B=\\{3,4,5,6\\}$.
 
@@ -2511,7 +2541,9 @@ So the statement is True.`,
 
 A-only peels the overlap out of $A$:
 
-$$\\lvert A\\setminus B\\rvert=120-50=70.$$
+$$\\lvert A\\setminus B\\rvert=120-50$$
+
+$$=70.$$
 
 The claimed $90$ would be right only if the products shared nobody, or if $\\lvert B\\rvert$ were copied onto the A-only cell. The lists do not match.
 
@@ -2541,7 +2573,9 @@ Among $200$ customers, $\\lvert A\\rvert=120$ like Product A, $\\lvert B\\rvert=
 
 The $50$ dual-likers sit inside each headline, so inclusion-exclusion subtracts the overlap once:
 
-$$\\lvert A\\cup B\\rvert=\\lvert A\\rvert+\\lvert B\\rvert-\\lvert A\\cap B\\rvert=120+90-50=160.$$
+$$120+90-50$$
+
+$$=160.$$
 
 A-only is $\\lvert A\\rvert-\\lvert A\\cap B\\rvert$. Neither is the survey size minus the union.`,
   },
@@ -2861,8 +2895,6 @@ Let $U=\\{1,2,\\ldots,10\\}$, $A=\\{1,2,3,4,5\\}$, and $B=\\{4,5,6,7,8\\}$. A co
 
 De Morgan's laws say taking complements swaps union and intersection:
 
-$$(A\\cup B)^c=A^c\\cap B^c,\\qquad (A\\cap B)^c=A^c\\cup B^c.$$
-
 Escaping a union means escaping both sets at once. Escaping an intersection takes only escaping one of them. The shared pieces are
 
 $$A\\cap B=\\{4,5\\},\\qquad A^c=\\{6,7,8,9,10\\},\\qquad B^c=\\{1,2,3,9,10\\}.$$`,
@@ -2926,7 +2958,11 @@ So the statement is True.`,
 
 Removing nothing from $U$ leaves $U$, so
 
-$$(A\\cap B)^c=\\emptyset^c=U=\\{1,2,3,4,5,6,7,8,9,10,11,12\\}.$$
+$$(A\\cap B)^c=\\emptyset^c$$
+
+$$=U$$
+
+$$=\\{1,2,3,4,5,6,7,8,9,10,11,12\\}.$$
 
 The claimed list is that full universe. Complementing $\\emptyset$ relative to a universe always gives the universe back.
 
@@ -3032,7 +3068,9 @@ $$A\\cup B=\\{p,q,r,s\\},\\qquad A\\cap B=\\{r\\},\\qquad A^c=\\{s,t,u\\},\\qqua
 
 The overview already counted
 
-$$\\lvert A\\times B\\rvert=2\\cdot 3=6.$$ Product size is the number of cells, not the number of distinct symbols used. Two rows and three columns are six ordered pairs.
+$$\\lvert A\\times B\\rvert=2\\cdot 3$$
+
+$$=6.$$ Product size is the number of cells, not the number of distinct symbols used. Two rows and three columns are six ordered pairs.
 
 That matches the claim.
 
@@ -3060,7 +3098,9 @@ So the statement is False.`,
 
 Size ignores order: $2\\cdot 3=6$ and $3\\cdot 2=6$. Both products hold six pairs even though the pairs themselves differ:
 
-$$\\lvert A\\times B\\rvert=\\lvert B\\times A\\rvert=6.$$
+$$\\lvert A\\times B\\rvert=\\lvert B\\times A\\rvert$$
+
+$$=6.$$
 
 The counts agree.
 
@@ -3078,7 +3118,9 @@ The task gives $A=\\{1,2\\}$ and $B=\\{x,y,z\\}$. Every claim here is about the 
 
 An ordered pair records which object plays which role. The Cartesian product $A\\times B$ is the set of all pairs whose first entry comes from $A$ and whose second comes from $B$. Size is the product rule
 
-$$\\lvert A\\times B\\rvert=\\lvert A\\rvert\\cdot\\lvert B\\rvert=2\\cdot 3=6.$$
+$$2\\cdot 3$$
+
+$$=6.$$
 
 Turning the grid on its side produces $B\\times A$, same count, different members.`,
   },
@@ -3149,7 +3191,9 @@ Pair every letter of $A=\\{m,n,p\\}$ with every number of $B=\\{1,2\\}$, always 
 
 The product rule is $\\lvert A\\times B\\rvert=\\lvert A\\rvert\\cdot\\lvert B\\rvert$. A pair belongs to $A\\times B$ only when its first entry comes from $A$ and its second from $B$. Writing the product the other way round gives $B\\times A$: the same count, a different set.
 
-$$\\lvert A\\times B\\rvert=3\\cdot 2=6.$$`,
+$$\\lvert A\\times B\\rvert=3\\cdot 2$$
+
+$$=6.$$`,
   },
   {
     id: `math-1-38`,
@@ -3245,7 +3289,9 @@ $$A\\setminus B=\\{1,9\\},\\qquad A\\cap B=\\{3,5,7\\},\\qquad B\\setminus A=\\{
 
 $A$ is evens and $B$ is odds, so they share nothing. Subtracting $B$ from $A$ therefore deletes nobody:
 
-$$A\\setminus B=A=\\{2,4,6\\}.$$
+$$A\\setminus B=A$$
+
+$$=\\{2,4,6\\}.$$
 
 Empty overlap empties the middle cell, not the left cell. The claimed leftover matches.
 
@@ -3256,7 +3302,9 @@ So the statement is True.`,
 
 None of $B$'s odds is even, so nothing is deleted:
 
-$$B\\setminus A=B=\\{1,3,5\\}.$$
+$$B\\setminus A=B$$
+
+$$=\\{1,3,5\\}.$$
 
 The three odds all miss $A$, so they all stay. The claimed leftover matches.
 
@@ -3267,7 +3315,9 @@ So the statement is True.`,
 
 With an empty middle bucket, symmetric difference is the two whole sets glued together:
 
-$$A\\triangle B=\\{2,4,6\\}\\cup\\{1,3,5\\}=\\{1,2,3,4,5,6\\}.$$
+$$A\\triangle B=\\{2,4,6\\}\\cup\\{1,3,5\\}$$
+
+$$=\\{1,2,3,4,5,6\\}.$$
 
 Each of the six numbers sits in exactly one of $A$ or $B$. The claim matches.
 
@@ -3289,7 +3339,9 @@ So the statement is True.`,
 
 Here the shared part is empty, so there is nothing extra for the union to add:
 
-$$A\\triangle B=\\{1,2,3,4,5,6\\}=A\\cup B.$$
+$$A\\triangle B=\\{1,2,3,4,5,6\\}$$
+
+$$=A\\cup B.$$
 
 Disjointness is exactly the situation in which $A\\triangle B=A\\cup B$.
 
@@ -3378,7 +3430,9 @@ Of $40$ students, $\\lvert A\\rvert=22$ play chess, $\\lvert B\\rvert=15$ play c
 
 Inclusion-exclusion counts the union by adding the headlines and subtracting the overlap once:
 
-$$\\lvert A\\cup B\\rvert=22+15-6=31.$$
+$$\\lvert A\\cup B\\rvert=22+15-6$$
+
+$$=31.$$
 
 Chess-only is the chess headline minus the overlap; checkers-only is the checkers headline minus the overlap. Neither is the club total minus the union.`,
   },
@@ -3401,9 +3455,7 @@ Chess-only is the chess headline minus the overlap; checkers-only is the checker
 
 Two-set inclusion-exclusion recovers the union from the given totals:
 
-$$\\lvert A\\cup B\\rvert=\\lvert A\\rvert+\\lvert B\\rvert-\\lvert A\\cap B\\rvert$$
-
-$$=34+28-12$$
+$$34+28-12$$
 
 $$=50$$
 
@@ -3416,9 +3468,7 @@ So the statement is True.`,
 
 Spanish-only peels the overlap out of the Spanish total. The overview recovered $|A\\cap B|=12$, so
 
-$$\\lvert A\\setminus B\\rvert=\\lvert A\\rvert-\\lvert A\\cap B\\rvert$$
-
-$$=34-12$$
+$$34-12$$
 
 $$=22$$
 
@@ -3457,9 +3507,7 @@ So the statement is False.`,
 
 French-only peels the overlap out of the French total. The overview recovered $|A\\cap B|=12$, so
 
-$$\\lvert B\\setminus A\\rvert=\\lvert B\\rvert-\\lvert A\\cap B\\rvert$$
-
-$$=28-12$$
+$$28-12$$
 
 $$=16$$
 
@@ -3475,7 +3523,9 @@ Inclusion-exclusion counts each student once:
 
 $$|A\\cup B|=|A|+|B|-|A\\cap B|$$
 
-$$|A\\cup B|=34+28-12=50$$
+$$|A\\cup B|=34+28-12$$
+
+$$=50$$
 
 Spanish-only is $|A|-|A\\cap B|$. French-only is $|B|-|A\\cap B|$. Neither is the cohort minus the union. The intersection is a subset of the union.`,
   },
@@ -3498,9 +3548,7 @@ Spanish-only is $|A|-|A\\cap B|$. French-only is $|B|-|A\\cap B|$. Neither is th
 
 Two-set inclusion-exclusion recovers the union:
 
-$$\\lvert A\\cup B\\rvert=\\lvert A\\rvert+\\lvert B\\rvert-\\lvert A\\cap B\\rvert$$
-
-$$=20+18-5$$
+$$20+18-5$$
 
 $$=33$$
 
@@ -3513,9 +3561,7 @@ So the statement is True.`,
 
 Pool-only peels the overlap out of the pool total. The overview recovered $|A\\cap B|=5$, so
 
-$$\\lvert A\\setminus B\\rvert=\\lvert A\\rvert-\\lvert A\\cap B\\rvert$$
-
-$$=20-5$$
+$$20-5$$
 
 $$=15$$
 
@@ -3556,9 +3602,7 @@ So the statement is False.`,
 
 Sauna-only peels the overlap out of the sauna total. The overview recovered $|A\\cap B|=5$, so
 
-$$\\lvert B\\setminus A\\rvert=\\lvert B\\rvert-\\lvert A\\cap B\\rvert$$
-
-$$=18-5$$
+$$18-5$$
 
 $$=13$$
 
@@ -3574,7 +3618,9 @@ Inclusion-exclusion counts each member once:
 
 $$|A\\cup B|=|A|+|B|-|A\\cap B|$$
 
-$$|A\\cup B|=20+18-5=33$$
+$$|A\\cup B|=20+18-5$$
+
+$$=33$$
 
 Pool-only is $|A|-|A\\cap B|$. Sauna-only is $|B|-|A\\cap B|$. Neither is membership minus the union. The intersection is a subset of the union.`,
   },
@@ -3599,7 +3645,7 @@ Three-set inclusion-exclusion recovers the union. The overview (or direct substi
 
 $$\\lvert A\\cup B\\cup C\\rvert=30+25+20-10-8-7+3$$
 
-$$=75-25+3$$
+$$75-25+3$$
 
 $$=53$$
 
@@ -3625,9 +3671,7 @@ So the statement is True.`,
 
 Exactly photography-and-hiking (not cooking) peels the triple out of the pairwise total:
 
-$$\\lvert A\\cap B\\setminus C\\rvert=\\lvert A\\cap B\\rvert-\\lvert A\\cap B\\cap C\\rvert$$
-
-$$=10-3=7$$
+$$10-3=7$$
 
 That matches the claim.
 
@@ -3653,7 +3697,9 @@ So the statement is True.`,
 
 Compare the raw sum of the three totals with the union:
 
-$$\\lvert A\\rvert+\\lvert B\\rvert+\\lvert C\\rvert=30+25+20=75$$
+$$\\lvert A\\rvert+\\lvert B\\rvert+\\lvert C\\rvert=30+25+20$$
+
+$$=75$$
 
 $$\\lvert A\\cup B\\cup C\\rvert=53$$
 
@@ -3788,9 +3834,9 @@ $$2>2=\\mathrm{F}$$
 
 Thus the complete counterexample test gives
 
-$$\\mathrm{Prime}(2)\\land(2>2)\\land\\neg\\mathrm{Odd}(2)
-=\\mathrm{T}\\land\\mathrm{F}\\land\\mathrm{T}
-=\\mathrm{F}$$
+$$\\mathrm{Prime}(2)\\land(2>2)\\land\\neg\\mathrm{Odd}(2)=\\mathrm{T}\\land\\mathrm{F}\\land\\mathrm{T}$$
+
+$$=\\mathrm{F}$$
 
 The number $2$ is outside the quantified range, so it is not a counterexample and.
 
@@ -3928,7 +3974,9 @@ $$A(M)=\\mathrm{T}\\Longrightarrow I(M)=\\mathrm{T}\\Longrightarrow P(M)=\\mathr
 
 Here $P(M)=\\mathrm{T}$ means only “Maria passed Principles.” It does not encode any numerical grade:
 
-$$P(M)=\\mathrm{T}\\not\\Rightarrow \\mathrm{Grade}(M)=100\\%$$
+$$P(M)=\\mathrm{T}\\not\\Rightarrow \\mathrm{Grade}(M)$$
+
+$$=100\\%$$
 
 Maria could have earned any passing mark. A perfect grade cannot be inferred.
 
@@ -3985,9 +4033,9 @@ $$2\\in P,\\qquad \\mathrm{Odd}(2)=\\mathrm{F}$$
 
 Equivalently, its universal implication has the false row
 
-$$2\\in P\\Rightarrow\\mathrm{Odd}(2)
-=\\mathrm{T}\\Rightarrow\\mathrm{F}
-=\\mathrm{F}$$
+$$2\\in P\\Rightarrow\\mathrm{Odd}(2)=\\mathrm{T}\\Rightarrow\\mathrm{F}$$
+
+$$=\\mathrm{F}$$
 
 This one counterexample disproves “every $x\\in P$ is odd,”.
 
@@ -4000,9 +4048,9 @@ $$\\{x\\in P:x\\ne2\\}=\\{3,5,7,11,13\\}$$
 
 Every number in that set has the form $2k+1$, so each makes the conclusion “$x$ is odd” true. At $x=2$, the extra condition is false:
 
-$$(2\\in P\\land2\\ne2)\\Rightarrow\\mathrm{Odd}(2)
-=\\mathrm{F}\\Rightarrow\\mathrm{F}
-=\\mathrm{T}$$
+$$(2\\in P\\land2\\ne2)\\Rightarrow\\mathrm{Odd}(2)=\\mathrm{F}\\Rightarrow\\mathrm{F}$$
+
+$$=\\mathrm{T}$$
 
 Thus no $x$ gives a true antecedent and false conclusion. The universal implication is True.
 
@@ -4020,9 +4068,9 @@ $$3\\in P=\\mathrm{T},\\qquad 3\\in E=\\mathrm{F}$$
 
 so the required implication evaluates as
 
-$$3\\in P\\Rightarrow3\\in E
-=\\mathrm{T}\\Rightarrow\\mathrm{F}
-=\\mathrm{F}$$
+$$3\\in P\\Rightarrow3\\in E=\\mathrm{T}\\Rightarrow\\mathrm{F}$$
+
+$$=\\mathrm{F}$$
 
 One member of $P$ outside $E$ disproves the subset claim.
 
@@ -4268,7 +4316,9 @@ $$x^{2}=-1<0$$
 
 which contradicts that fact. Hence the real solution set is empty:
 
-$$\\{x\\in\\mathbb R:x^{2}=-1\\}=\\varnothing$$
+$$\\{x\\in\\mathbb R:x^{2}=-1\\}$$
+
+$$=\\varnothing$$
 
 The existential statement has no real witness, so it is False.
 
@@ -4442,7 +4492,9 @@ So the statement is True.`,
 
 A universal implication is proved by starting with an arbitrary value that satisfies its hypothesis. If $4\\mid x$, then $x=4k$ for some integer $k$, so
 
-$$x=4k=2(2k)$$
+$$x=4k$$
+
+$$=2(2k)$$
 
 Hence $2\\mid x$. This argument covers every multiple of $4$ in the universe.
 
@@ -4510,11 +4562,17 @@ $$B(v)\\Leftrightarrow(v\\ge3),\\qquad M(v)\\Leftrightarrow\\neg B(v)$$
 
 For Person T, $v=2$, so
 
-$$B(2)=(2\\ge3)=\\mathrm{F}$$
+$$B(2)=(2\\ge3)$$
+
+$$=\\mathrm{F}$$
 
 and therefore
 
-$$M(2)=\\neg B(2)=\\neg\\mathrm{F}=\\mathrm{T}$$
+$$M(2)=\\neg B(2)$$
+
+$$=\\neg\\mathrm{F}$$
+
+$$=\\mathrm{T}$$
 
 Person T is a member.
 
@@ -4524,11 +4582,17 @@ So the statement is True.`,
 
 Person U has four violations. Evaluate the banned-list test first:
 
-$$B(4)=(4\\ge3)=\\mathrm{T}$$
+$$B(4)=(4\\ge3)$$
+
+$$=\\mathrm{T}$$
 
 Membership is exactly the negation of banned status, so
 
-$$M(4)=\\neg B(4)=\\neg\\mathrm{T}=\\mathrm{F}$$
+$$M(4)=\\neg B(4)$$
+
+$$=\\neg\\mathrm{T}$$
+
+$$=\\mathrm{F}$$
 
 U is not a member. The claim that U is a member is therefore False.
 
@@ -4552,11 +4616,17 @@ So the statement is True.`,
 
 At the boundary value $v=3$, “three or more” is already satisfied:
 
-$$B(3)=(3\\ge3)=\\mathrm{T}$$
+$$B(3)=(3\\ge3)$$
+
+$$=\\mathrm{T}$$
 
 The membership biconditional then gives
 
-$$M(3)=\\neg B(3)=\\neg\\mathrm{T}=\\mathrm{F}$$
+$$M(3)=\\neg B(3)$$
+
+$$=\\neg\\mathrm{T}$$
+
+$$=\\mathrm{F}$$
 
 There is no second allowed outcome depending on unstated factors: exactly three violations forces banned status.
 
@@ -4570,9 +4640,13 @@ $$v<3\\quad\\text{or}\\quad v\\ge3$$
 
 The resulting classifications are
 
-$$v<3\\Rightarrow B(v)=\\mathrm{F},\\ M(v)=\\mathrm{T}$$
+$$v<3\\Rightarrow B(v)=\\mathrm{F},\\ M(v)$$
 
-$$v\\ge3\\Rightarrow B(v)=\\mathrm{T},\\ M(v)=\\mathrm{F}$$
+$$=\\mathrm{T}$$
+
+$$v\\ge3\\Rightarrow B(v)=\\mathrm{T},\\ M(v)$$
+
+$$=\\mathrm{F}$$
 
 No count leaves either truth value undetermined. Therefore no genuinely ambiguous violation count exists.
 
@@ -4617,15 +4691,15 @@ So the statement is True.`,
 
 The number $2$ is prime because its only positive divisors are $1$ and $2$. It is even, so it is not odd. The counterexample condition evaluates to
 
-$$\\mathrm{Prime}(2)\\land\\neg\\mathrm{Odd}(2)
-=\\mathrm{T}\\land\\mathrm{T}
-=\\mathrm{T}$$
+$$\\mathrm{Prime}(2)\\land\\neg\\mathrm{Odd}(2)=\\mathrm{T}\\land\\mathrm{T}$$
+
+$$=\\mathrm{T}$$
 
 Equivalently, the universal implication fails at $2$:
 
-$$\\mathrm{Prime}(2)\\Rightarrow\\mathrm{Odd}(2)
-=\\mathrm{T}\\Rightarrow\\mathrm{F}
-=\\mathrm{F}$$
+$$\\mathrm{Prime}(2)\\Rightarrow\\mathrm{Odd}(2)=\\mathrm{T}\\Rightarrow\\mathrm{F}$$
+
+$$=\\mathrm{F}$$
 
 Thus $2$ is a valid counterexample.
 
@@ -4819,7 +4893,9 @@ So the statement is True.`,
 
 Adding $40$ and $35$ counts the $15$ both-buyers twice, so subtract them once:
 
-$$|X\\cup Y|=40+35-15=60$$
+$$|X\\cup Y|=40+35-15$$
+
+$$=60$$
 
 Compare the computed value with the claim ($60$). That matches the claim. The two sides agree.
 
@@ -5459,7 +5535,7 @@ The first positive integer is $n=1$. The left side of the claimed formula is $1$
 
 $$\\frac{1\\cdot(1+1)}{2}=\\frac{1\\cdot 2}{2}$$
 
-$$=1$$
+$$1$$
 
 The two sides agree, so the base case holds.
 
@@ -5515,7 +5591,7 @@ Substitute $n=10$ into the closed form:
 
 $$\\frac{10\\cdot(10+1)}{2}=\\frac{10\\cdot 11}{2}$$
 
-$$=55$$
+$$55$$
 
 So $1+2+\\cdots+10=55$, matching the claim.
 
@@ -6876,7 +6952,9 @@ So the statement is False.`,
 
 A ratio of $40\\%$ or above fails the strict ratio test:
 
-$$D=(\\mathrm{ratio}<40\\%)=\\mathrm{F}$$
+$$D=(\\mathrm{ratio}<40\\%)$$
+
+$$=\\mathrm{F}$$
 
 For every score and co-signer truth value,
 
@@ -7021,7 +7099,9 @@ Sam received a birthday point without ordering dessert, so $P$ is false and $Q$ 
 
 For $m=4$,
 
-$$n = \\frac{100}{4} = 25$$
+$$n=\\frac{100}{4}$$
+
+$$=25$$
 
 which is a positive integer, and $4 \\cdot 25 = 100$. A partner exists.
 
@@ -7880,7 +7960,9 @@ $$24 = 2^{3} \\times 3, \\qquad 36 = 2^{2} \\times 3^{2}$$
 
 Both $2$ and $3$ appear on each side. Taking the smaller power of each shared prime gives
 
-$$\\mathrm{gcd}(24,36) = 2^{2} \\times 3 = 12 \\ne 1$$
+$$\\mathrm{gcd}(24,36)=2^{2} \\times 3$$
+
+$$=12 \\ne 1$$
 
 Pair 2 is not coprime.
 
@@ -8301,7 +8383,9 @@ So the statement is True.`,
 
 Prove the contrapositive for an arbitrary integer. Assume $3\\nmid n$. If $6\\mid n$ also held, then for some integer $k$,
 
-$$n=6k=3(2k),$$
+$$n=6k$$
+
+$$=3(2k),$$
 
 which would give $3\\mid n$, contradicting the assumption. Therefore
 
@@ -8320,7 +8404,9 @@ So the statement is False.`,
     sort_order: 16,
     solution_overview: `The original statement is $6 \\mid n \\Rightarrow 3 \\mid n$. If $6 \\mid n$, write
 
-$$n = 6k = 3(2k)$$
+$$n=6k$$
+
+$$=3(2k)$$
 
 so $3 \\mid n$ automatically.
 
