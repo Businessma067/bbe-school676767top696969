@@ -1,11 +1,13 @@
 #!/usr/bin/env python3
-"""Merge Ch10 explanation body modules into math-ch10-exp-log.json."""
+"""Merge Ch10 explanation body modules into math-ch10-exp-log.json.
+
+No character floors/ceilings: letter length follows the claim (Ch7/Ch9 style).
+"""
 from __future__ import annotations
 
 import importlib
 import json
 import re
-import statistics
 import sys
 from pathlib import Path
 
@@ -55,8 +57,6 @@ def check_letter(case_id: str, i: int, text: str, truth: bool) -> None:
         raise SystemExit(f"{case_id} {let}: closer mismatch")
     if text.count("$$") % 2:
         raise SystemExit(f"{case_id} {let}: unbalanced $$")
-    if len(text) < 180:
-        raise SystemExit(f"{case_id} {let}: thin ({len(text)} chars)")
 
 
 def main() -> None:
@@ -66,9 +66,10 @@ def main() -> None:
     if len(bodies) != len(tasks):
         missing = sorted({t["case_id"] for t in tasks} - set(bodies))
         extra = sorted(set(bodies) - {t["case_id"] for t in tasks})
-        raise SystemExit(f"count {len(bodies)} != {len(tasks)}; missing {missing[:10]} extra {extra[:10]}")
+        raise SystemExit(
+            f"count {len(bodies)} != {len(tasks)}; missing {missing[:10]} extra {extra[:10]}"
+        )
 
-    lens: list[int] = []
     for t in tasks:
         cid = t["case_id"]
         body = bodies[cid]
@@ -76,27 +77,15 @@ def main() -> None:
         teas = [e.strip() for e in body["tactical_explanations"]]
         if len(teas) != 5:
             raise SystemExit(f"{cid}: need 5 letters")
-        if not (150 <= len(ov) <= 900):
-            raise SystemExit(f"{cid}: overview length {len(ov)}")
+        if len(ov) < 40:
+            raise SystemExit(f"{cid}: empty overview")
         for i, (e, truth) in enumerate(zip(teas, t["answer_key"])):
             check_letter(cid, i, e, bool(truth))
-            lens.append(len(e))
         t["solution_overview"] = ov
         t["tactical_explanations"] = teas
 
     BANK.write_text(json.dumps(payload, ensure_ascii=False, indent=2) + "\n", encoding="utf-8")
-    print(
-        "applied",
-        len(tasks),
-        "mean",
-        round(statistics.mean(lens)),
-        "median",
-        statistics.median(lens),
-        "min",
-        min(lens),
-        "max",
-        max(lens),
-    )
+    print("applied", len(tasks), "ok")
 
 
 if __name__ == "__main__":
