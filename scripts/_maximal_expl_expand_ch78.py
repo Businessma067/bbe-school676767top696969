@@ -290,10 +290,32 @@ def expand_all_displays(text: str) -> str:
 
 
 def apply_linear_inequality_deepen(text: str) -> str:
-    def repl(m: re.Match) -> str:
-        deep = deepen_linear_inequality_display(m.group(1))
-        return deep if deep is not None else m.group(0)
-    return DISPLAY_RE.sub(repl, text)
+    """One-shot deepen; skip if the next display is already the moved-term step."""
+    parts = tokenize(text)
+    out: list[tuple[str, str]] = []
+    i = 0
+    while i < len(parts):
+        kind, val = parts[i]
+        if kind != "disp":
+            out.append((kind, val)); i += 1; continue
+        deep = deepen_linear_inequality_display(val)
+        if deep is None:
+            out.append((kind, val)); i += 1; continue
+        # Peek ahead for already-deepened marker like -4a<-25
+        already = False
+        j = i + 1
+        while j < len(parts) and parts[j][0] == "prose" and parts[j][1].strip() == "":
+            j += 1
+        if j < len(parts) and parts[j][0] == "disp":
+            if parts[j][1].lstrip().startswith("-"):
+                already = True
+        if already:
+            out.append((kind, val)); i += 1; continue
+        # Expand deep into token stream
+        for dm in DISPLAY_RE.finditer(deep):
+            out.append(("disp", norm_inner(dm.group(1))))
+        i += 1
+    return reassemble(out)
 
 
 def try_expand_power_subs(rhs: str) -> str | None:
