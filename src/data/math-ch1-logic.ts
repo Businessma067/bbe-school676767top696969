@@ -2088,69 +2088,69 @@ A proper subset is a subset that is not equal to the whole. Two infinite sets ha
     tactical_explanations: [
       `**A.** → True
 
-Membership asks whether the object appears among the listed elements. The roster is
+Membership asks whether the object sits on the roster.
 
 $$A=\\{2,4,6,8,10,12\\}$$
 
-Scan that list for $6$. It occupies the third place, so
+$$6\\in\\{2,4,6,8,10,12\\}$$
 
 $$6\\in A$$
-
-The claim asserts exactly that membership.
 
 So the statement is True.`,
       `**B.** → False
 
-The elements of $A$ are numbers, not singletons. The object $\\{6\\}$ is a one-element set:
+The singleton $\\{6\\}$ is a set, not the number $6$:
+
+$$\\{6\\}\\neq 2$$
+
+$$\\{6\\}\\neq 4$$
+
+$$\\{6\\}\\neq 6$$
+
+$$\\{6\\}\\neq 8$$
+
+$$\\{6\\}\\neq 10$$
+
+$$\\{6\\}\\neq 12$$
 
 $$\\{6\\}\\notin A$$
-
-even though $6\\in A$. The singleton is a subset of $A$, hence an element of $\\mathcal{P}(A)$, but that is not this claim.
-
-$$\\{6\\} \\in A$$
 
 So the statement is False.`,
       `**C.** → True
 
-A two-element set is a subset when each of its members sits in the larger set. Against
-
-$$A=\\{2,4,6,8,10,12\\}$$
-
-check both candidates:
+Subsethood asks whether every member of $\\{6,8\\}$ sits in $A$:
 
 $$6\\in A$$
 
 $$8\\in A$$
 
-Both succeed, therefore
-
-$$\\{6,8\\}\\subseteq A.$$
+$$\\{6,8\\}\\subseteq A$$
 
 So the statement is True.`,
       `**D.** → True
 
-Subsethood asks whether every member of the left-hand set sits in $A$. The empty set has no members at all, so there is no witness that could sit outside $A$:
+The empty set has no members that could sit outside $A$:
+
+$$\\forall x\\,(x\\in\\emptyset\\Rightarrow x\\in A)$$
 
 $$\\emptyset\\subseteq A$$
-
-That is the claimed inclusion.
-
-$$\\emptyset \\subseteq A$$
 
 So the statement is True.`,
       `**E.** → True
 
-Total subsets of a six-element set:
+Proper subsets are all subsets except $A$ itself:
+
+$$|A|=6$$
+
+$$|\\mathcal{P}(A)|=2^{|A|}$$
+
+$$|\\mathcal{P}(A)|=2^{6}$$
 
 $$2^{6}=64$$
 
-Proper subsets drop $A$ itself:
+$$|\\mathcal{P}(A)|-1=64-1$$
 
 $$64-1=63$$
-
-So $A$ has exactly $63$ proper subsets, matching the claim.
-
-That matches the claim.
 
 So the statement is True.`,
     ],
@@ -2177,67 +2177,109 @@ Membership $x\\in A$ asks whether $x$ is one of those six numbers. Inclusion $S\
     tactical_explanations: [
       `**A.** → True
 
-The overview recovered the integer roots
+Solve the quadratic over the integers:
+
+$$x^{2}-5x+6=0$$
+
+$$(x-2)(x-3)=0$$
+
+$$x-2=0$$
+
+$$x=2$$
+
+or
+
+$$x-3=0$$
+
+$$x=3$$
+
+Both roots are integers, so
 
 $$A=\\{2,3\\}$$
 
-and $B$ is given as $\\{2,3\\}$. Compare membership both ways: every element of $A$ sits in $B$, and every element of $B$ sits in $A$. Hence
+$B$ is given as $\\{2,3\\}$. Compare membership:
 
-$$A=B.$$
+$$2\\in B$$
 
-That matches the claim.
+$$3\\in B$$
+
+$$2\\in A$$
+
+$$3\\in A$$
+
+$$A=B$$
 
 So the statement is True.`,
       `**B.** → True
 
-The overview recovered
+From the factorization,
 
-$$A=\\{2,3\\}$$
+$$(x-2)(x-3)=0$$
 
-Membership asks whether $3$ sits on that roster:
+one root is $x=3$. Check directly:
 
-$$3\\in\\{2,3\\}$$
+$$3^{2}=9$$
 
-Yes, so $3\\in A$.
+$$5\\cdot 3=15$$
 
-That matches the claim.
+$$9-15=-6$$
+
+$$-6+6=0$$
+
+$$3\\in\\mathbb{Z}$$
+
+$$3\\in A$$
 
 So the statement is True.`,
       `**C.** → False
 
-The overview recovered $A=\\{2,3\\}$. The claim drops the root $3$. Check it against the quadratic:
+Both roots belong in $A$:
 
-$$3^{2}-5\\cdot 3+6 = 9-15+6$$
+$$2^{2}-5\\cdot 2+6=4-10+6$$
 
-$$= 0$$
+$$4-10=-6$$
 
-$$3\\in\\mathbb{Z}$$
+$$-6+6=0$$
 
-so $3\\in A$. Then
+$$3^{2}-5\\cdot 3+6=9-15+6$$
 
-$$A=\\{2,3\\}\\ne\\{2\\}.$$
+$$9-15=-6$$
 
-That conflicts with the claim.
+$$-6+6=0$$
+
+$$A=\\{2,3\\}$$
+
+The claim reprints $A$ as $\\{2\\}$ only:
+
+$$A\\neq\\{2\\}$$
 
 So the statement is False.`,
       `**D.** → True
 
-Two distinct integer roots were recovered:
+The two distinct integer roots give
 
 $$A=\\{2,3\\}$$
 
-Cardinality counts distinct members:
+$$2\\neq 3$$
 
-$$\\lvert A\\rvert=2$$
+$$|A|=2$$
 
 So the statement is True.`,
       `**E.** → True
 
-Restrict to natural numbers with the extra filter $x>2$. The quadratic candidates are $2$ and $3$; only $3$ satisfies $x>2$:
+Restrict to natural numbers with $x>2$:
 
-$$2\\not>2,$$
+$$x^{2}-5x+6=0$$
+
+still yields candidates $2$ and $3$. The extra filter $x>2$ drops $2$:
+
+$$2>2$$
+
+is false, while
 
 $$3>2$$
+
+holds and $3\\in\\mathbb{N}$. Hence
 
 $$C=\\{3\\}$$
 
@@ -2272,49 +2314,51 @@ $B$ is given as $\\{2,3\\}$.`,
     tactical_explanations: [
       `**A.** → True
 
-Each ground-set element may be included or omitted independently.
+Power-set size for a four-element ground set:
 
-$$|C|=16$$
+$$|D|=4$$
 
-$$|\\mathcal{P}(C)|=2^{|C|}$$
+$$|\\mathcal{P}(D)|=2^{|D|}$$
 
-$$2^{16}$$
+$$|\\mathcal{P}(D)|=2^{4}$$
 
-$$= 65536$$
-
-$$65536\\neq 16$$
-
-The power set has $65536$ members, not $16$.
+$$2^{4}=16$$
 
 So the statement is True.`,
       `**B.** → True
 
-A set belongs to the power set precisely when it is a subset of $D=\\{w,x,y,z\\}$. Check both letters:
+$\\{w,x\\}$ is a subset of $D=\\{w,x,y,z\\}$:
 
 $$w\\in D$$
 
 $$x\\in D$$
 
-Hence
-
 $$\\{w,x\\}\\subseteq D$$
 
-and therefore
+Every subset is an element of the power set:
 
-$$\\{w,x\\}\\in\\mathcal{P}(D).$$
+$$\\{w,x\\}\\in\\mathcal{P}(D)$$
 
 So the statement is True.`,
       `**C.** → True
 
-Three-element subsets of a four-element set are counted by
+Three-element subsets are counted by
 
-$$\\binom{4}{3} = \\binom{4}{1}$$
+$$\\binom{4}{3}=\\frac{4!}{3!\\,1!}$$
 
-$$= 4$$
+$$4!=4\\cdot 3\\cdot 2\\cdot 1$$
 
-Each such subset leaves out exactly one of the four letters $w,x,y,z$.
+$$4!=24$$
 
-That matches the claim.
+$$3!=6$$
+
+$$1!=1$$
+
+$$\\binom{4}{3}=\\frac{24}{6\\cdot 1}$$
+
+$$\\binom{4}{3}=\\frac{24}{6}$$
+
+$$\\binom{4}{3}=4$$
 
 So the statement is True.`,
       `**D.** → True
@@ -2323,24 +2367,26 @@ Every set is a subset of itself:
 
 $$D\\subseteq D$$
 
-The power set collects all subsets of $D$, so the whole set is one of those subsets:
+Therefore
 
-$$D\\in\\mathcal{P}(D).$$
-
-That matches the claim.
+$$D\\in\\mathcal{P}(D)$$
 
 So the statement is True.`,
       `**E.** → False
 
-Two-element subsets of a four-element set:
+Two-element subsets are counted by
 
-$$\\binom{4}{2} = \\frac{4\\cdot 3}{2}$$
+$$\\binom{4}{2}=\\frac{4\\cdot 3}{2\\cdot 1}$$
 
-$$= 6$$
+$$4\\cdot 3=12$$
 
-The claim asserts $5$. Since $6\\neq 5$, the statement is False.
+$$2\\cdot 1=2$$
 
-That conflicts with the claim.
+$$\\frac{12}{2}=6$$
+
+$$\\binom{4}{2}=6$$
+
+The claim says $5$, which is not the count.
 
 So the statement is False.`,
     ],
@@ -2367,15 +2413,11 @@ A set $S$ belongs to the power set precisely when $S\\subseteq D$. Size counts u
     tactical_explanations: [
       `**A.** → True
 
-Ordinary inclusion asks whether every member of the smaller set sits in the larger one. With
+Check each member of $E$ against $F$:
 
-$$E = \\{1,2,3\\},$$
+$$E=\\{1,2,3\\}$$
 
-$$F$$
-
-$$= \\{1,2,3,4\\}$$
-
-test each member of $E$:
+$$F=\\{1,2,3,4\\}$$
 
 $$1\\in F$$
 
@@ -2383,65 +2425,59 @@ $$2\\in F$$
 
 $$3\\in F$$
 
-All three succeed, so
-
-$$E\\subseteq F.$$
+$$E\\subseteq F$$
 
 So the statement is True.`,
       `**B.** → True
 
-Proper inclusion needs both $E\\subseteq F$ and $E\\ne F$. Every member of $E=\\{1,2,3\\}$ sits in $F=\\{1,2,3,4\\}$, and the extra element
+Ordinary inclusion holds from the previous letter:
+
+$$E\\subseteq F$$
+
+A witness for properness is
 
 $$4\\in F$$
 
 $$4\\notin E$$
 
-shows the sets differ. Hence
+$$E\\neq F$$
 
-$$E\\subsetneq F.$$
+$$E\\subsetneq F$$
 
 So the statement is True.`,
       `**C.** → False
 
-Ordinary inclusion $F\\subseteq E$ would require every member of $F$ to sit in $E$. Write the two rosters:
-
-$$F=\\{1,2,3,4\\}$$
-
-$$E=\\{1,2,3\\}$$
-
-The element $4$ sits in $F$ but not in $E$:
+Inclusion $F\\subseteq E$ would require every member of $F$ to sit in $E$. But
 
 $$4\\in F$$
 
 $$4\\notin E$$
 
-so $F\\not\\subseteq E$.
+$$F\\not\\subseteq E$$
 
 So the statement is False.`,
       `**D.** → True
 
-Inclusion is reflexive. Every member of $E$ sits in $E$ by definition of the same set:
+Every set is a subset of itself:
+
+$$\\forall x\\,(x\\in E\\Rightarrow x\\in E)$$
 
 $$E\\subseteq E$$
-
-Equivalently, $\\forall x\\,(x\\in E\\Rightarrow x\\in E)$.
-
-That matches the claim.
-
-$$E \\subseteq E$$
 
 So the statement is True.`,
       `**E.** → False
 
-Proper inclusion also needs inequality of the two sets:
+Proper inclusion also needs inequality:
 
-$$E\\subsetneq E\\iff(E\\subseteq E)\\wedge(E\\neq E)$$
+$$E\\subseteq E$$
 
-The conjunct $E\\neq E$ is impossible.
+$$E=E$$
 
-That conflicts with the claim.
+$$E\\neq E$$
 
-$$E \\subsetneq E$$
+is false. Therefore
+
+$$E\\not\\subsetneq E$$
 
 So the statement is False.`,
     ],
@@ -2468,7 +2504,7 @@ Ordinary inclusion $X\\subseteq Y$ asks whether every member of $X$ sits in $Y$.
     tactical_explanations: [
       `**A.** → True
 
-Check pairwise intersections of the blocks of $\\mathcal{S}=\\{\\{1,2\\},\\{3,4\\},\\{5,6\\}\\}$:
+The blocks are $\\{1,2\\}$, $\\{3,4\\}$, and $\\{5,6\\}$. Pairwise intersections:
 
 $$\\{1,2\\}\\cap\\{3,4\\}=\\emptyset$$
 
@@ -2481,46 +2517,48 @@ All three are empty, so the blocks are pairwise disjoint.
 So the statement is True.`,
       `**B.** → True
 
-The union of the blocks of $\\mathcal{S}$ is formed one pair at a time:
+Unite the blocks step by step:
 
 $$\\{1,2\\}\\cup\\{3,4\\}=\\{1,2,3,4\\}$$
 
 $$\\{1,2,3,4\\}\\cup\\{5,6\\}=\\{1,2,3,4,5,6\\}$$
 
-That roster equals $G$. Matching the claim.
+$$G=\\{1,2,3,4,5,6\\}$$
+
+$$\\{1,2\\}\\cup\\{3,4\\}\\cup\\{5,6\\}=G$$
 
 So the statement is True.`,
       `**C.** → True
 
-A partition needs nonempty pairwise-disjoint blocks whose union is $G$. The blocks are nonempty, pairwise disjoint (letter A), and cover $G$ (letter B). Therefore $\\mathcal{S}$ partitions $G$.
+A partition needs nonempty pairwise-disjoint blocks whose union is the ground set. From the previous two letters:
 
-Record the verdict against the live claim after the calculation above is complete.
+- each block is nonempty,
+- the blocks are pairwise disjoint,
+- the union equals $G$.
 
-$$\\mathcal{S}$$
+Hence $\\mathcal{S}$ is a partition of $G$.
 
 So the statement is True.`,
       `**D.** → False
 
-In $\\mathcal{S}'=\\{\\{1,2\\},\\{2,3,4\\},\\{5,6\\}\\}$ the first two blocks overlap:
+For $\\mathcal{S}'=\\{\\{1,2\\},\\{2,3,4\\},\\{5,6\\}\\}$ check the first two blocks:
 
 $$\\{1,2\\}\\cap\\{2,3,4\\}=\\{2\\}$$
 
 $$\\{2\\}\\neq\\emptyset$$
 
-Pairwise disjointness fails, so $\\mathcal{S}'$ is not a partition.
-
-That conflicts with the claim.
+The blocks are not pairwise disjoint, so $\\mathcal{S}'$ is not a partition.
 
 So the statement is False.`,
       `**E.** → False
 
-Replacing $\\{5,6\\}$ with $\\{5,6,7\\}$ introduces $7\\notin G$. Partition blocks must be subsets of $G$, and the union would contain an outsider. So the modified collection is not a partition of $G$.
+Replacing $\\{5,6\\}$ by $\\{5,6,7\\}$ produces a block containing $7$. But
 
-Record the verdict against the live claim after the calculation above is complete.
+$$G=\\{1,2,3,4,5,6\\}$$
 
-$$\\{5, 6\\}$$
+$$7\\notin G$$
 
-$$\\{5, 6, 7\\}$$
+A partition of $G$ cannot contain an element outside $G$. The modified collection is not a partition of $G$.
 
 So the statement is False.`,
     ],
@@ -2547,65 +2585,57 @@ A partition needs pairwise disjoint nonempty blocks whose union is $G$, and thos
     tactical_explanations: [
       `**A.** → True
 
-Every positive even integer is a natural number. Writing the two sets,
+Every positive even integer is a natural number:
 
-$$H=\\{2,4,6,\\ldots\\}$$
+$$H=\\{2,4,6,8,\\ldots\\}$$
 
-$$\\mathbb{N}=\\{1,2,3,\\ldots\\}$$
-
-shows every member of $H$ sits in $\\mathbb{N}$, so $H\\subseteq\\mathbb{N}$.
-
-That matches the claim.
+$$H\\subseteq\\mathbb{N}$$
 
 So the statement is True.`,
       `**B.** → False
 
-$H=\\{2,4,6,\\ldots\\}$ contains infinitely many distinct elements with no last term. A finite set would admit a finite listing. An infinite listing is not a finite set.
+$H$ has no largest element and continues indefinitely:
 
-Record the verdict against the live claim after the calculation above is complete.
+$$2\\in H$$
+
+$$4\\in H$$
+
+$$6\\in H$$
+
+and so on. An infinite listing cannot be a finite set, so $H$ is infinite.
 
 So the statement is False.`,
       `**C.** → False
 
-Equality fails because odd naturals sit in $\\mathbb{N}$ but not in $H$:
+Equality of sets needs matching membership. Take
 
 $$1\\in\\mathbb{N}$$
 
 $$1\\notin H$$
 
-so $H\\neq\\mathbb{N}$.
-
-That conflicts with the claim.
+$$H\\neq\\mathbb{N}$$
 
 So the statement is False.`,
       `**D.** → True
 
-Define $f:\\mathbb{N}\\to H$ by $f(n)=2n$. Injectivity:
+Define $f:\\mathbb{N}\\to H$ by $f(n)=2n$. Check the first few values:
 
-$$f(n) = f(m)\\implies 2n$$
+$$f(1)=2$$
 
-$$= 2m\\implies n$$
+$$f(2)=4$$
 
-$$= m$$
+$$f(3)=6$$
 
-Surjectivity: every $h=2k\\in H$ equals $f(k)$. So $f$ is a bijection.
-
-That matches the claim.
+Every even arises uniquely as $2n$ for $n\\in\\mathbb{N}$, so $f$ is a bijection.
 
 So the statement is True.`,
       `**E.** → False
 
-Proper inclusion $H\\subsetneq\\mathbb{N}$ holds, but the bijection $n\\mapsto 2n$ shows
+Although $H\\subsetneq\\mathbb{N}$, the bijection $n\\mapsto 2n$ shows
 
-$$\\lvert H\\rvert=\\lvert\\mathbb{N}\\rvert$$
+$$|H|=|\\mathbb{N}|$$
 
-"Proper subset implies strictly fewer" fails for infinite sets.
-
-That conflicts with the claim.
-
-$$H \\subsetneq \\mathbb{N}$$
-
-$$\\mathbb{N}$$
+A proper subset of an infinite set need not be strictly smaller.
 
 So the statement is False.`,
     ],
@@ -2640,63 +2670,49 @@ sends each natural to an even. Odd $1$ sits in $\\mathbb{N}$ and misses $H$.`,
     tactical_explanations: [
       `**A.** → True
 
-The roster lists two objects:
+Read the roster of $K$:
 
 $$K=\\{a,\\{a\\}\\}$$
 
-The bare object $a$ is the first listed member, so
+The first listed object is $a$ itself:
 
-$$a\\in K.$$
-
-That matches the claim.
+$$a\\in K$$
 
 So the statement is True.`,
       `**B.** → True
 
-The second listed member of
-
-$$K=\\{a,\\{a\\}\\}$$
-
-is the singleton set $\\{a\\}$:
+The second listed object is the singleton $\\{a\\}$:
 
 $$\\{a\\}\\in K$$
-
-Membership holds because that set appears as an element of the roster.
-
-That matches the claim.
 
 So the statement is True.`,
       `**C.** → True
 
-Subsethood asks whether every member of $\\{a\\}$ sits in $K=\\{a,\\{a\\}\\}$. The only member is $a$, and $a\\in K$, so
+Subsethood of $\\{a\\}$ needs $a\\in K$, which holds from letter A. Hence
 
-$$\\{a\\}\\subseteq K.$$
-
-That matches the claim.
-
-$$\\{a\\} \\subseteq K$$
+$$\\{a\\}\\subseteq K$$
 
 So the statement is True.`,
       `**D.** → True
 
-The singleton $\\{\\{a\\}\\}$ has one member, namely the set $\\{a\\}$. That member sits in $K$:
+The set $\\{\\{a\\}\\}$ has the single member $\\{a\\}$. From letter B,
 
 $$\\{a\\}\\in K$$
 
-$$\\implies\\{\\{a\\}\\}\\subseteq K.$$
+so
 
-That matches the claim.
+$$\\{\\{a\\}\\}\\subseteq K$$
 
 So the statement is True.`,
       `**E.** → True
 
-The two listed objects $a$ and $\\{a\\}$ are distinct — an element versus a set containing it:
+The two listed objects are distinct:
 
 $$a\\neq\\{a\\}$$
 
-$$\\lvert K\\rvert=2.$$
+(one is an object, the other is a set containing that object). Therefore
 
-That matches the claim.
+$$|K|=2$$
 
 So the statement is True.`,
     ],
@@ -2727,75 +2743,89 @@ Membership $x\\in K$ asks whether $x$ is one of those two listed objects. Subset
     tactical_explanations: [
       `**A.** → True
 
-The complement of a union is the numbers in $U$ that miss both $A$ and $B$. Putting the two lists together covers $1$ through $8$, so
-
-$$A\\cup B=\\{1,2,3,4,5,6,7,8\\}$$
-
-and the leftover in $U$ is
-
-$$(A\\cup B)^c=\\{9,10\\}.$$
-
-The claim is that same list.
-
-So the statement is True.`,
-      `**B.** → True
-
-De Morgan's first law says the complement of a union is the intersection of the complements. The overview listed $A^c=\\{6,7,8,9,10\\}$ and $B^c=\\{1,2,3,9,10\\}$, so
-
-$$A^c\\cap B^c=\\{9,10\\}.$$
-
-Numbers $6,7,8$ miss $A$ but sit in $B$, so they fail $B^c$. The intersection matches $(A\\cup B)^c$.
-
-$$(A \\cup B)^{c} = A^{c} \\cap B^{c}$$
-
-So the statement is True.`,
-      `**C.** → True
-
-De Morgan's second law says the complement of an intersection is the union of the complements. The overview listed $A\\cap B=\\{4,5\\}$, so removing those two from $U$ leaves
-
-$$(A\\cap B)^c=\\{1,2,3,6,7,8,9,10\\}.$$
-
-Joining the complements gives the same list:
-
-$$A^c\\cup B^c=\\{1,2,3,6,7,8,9,10\\}.$$
-
-The two sides agree.
-
-So the statement is True.`,
-      `**D.** → False
-
-Intersection keeps only elements that sit in both $A$ and $B$.
+First form the union:
 
 $$A=\\{1,2,3,4,5\\}$$
 
 $$B=\\{4,5,6,7,8\\}$$
 
-$$1\\in A,\\ 1\\notin B$$
+$$A\\cup B=\\{1,2,3,4,5,6,7,8\\}$$
 
-$$2\\in A,\\ 2\\notin B$$
+Complement in $U=\\{1,2,\\ldots,10\\}$:
 
-$$3\\in A,\\ 3\\notin B$$
+$$9\\notin A\\cup B$$
 
-$$4\\in A,\\ 4\\in B$$
+$$10\\notin A\\cup B$$
 
-$$5\\in A,\\ 5\\in B$$
+$$(A\\cup B)^{c}=\\{9,10\\}$$
+
+So the statement is True.`,
+      `**B.** → True
+
+De Morgan: complement of a union is the intersection of complements. Compute both sides.
+
+$$(A\\cup B)^{c}=\\{9,10\\}$$
+
+$$A^{c}=\\{6,7,8,9,10\\}$$
+
+$$B^{c}=\\{1,2,3,9,10\\}$$
+
+$$A^{c}\\cap B^{c}=\\{9,10\\}$$
+
+The two sides match.
+
+So the statement is True.`,
+      `**C.** → True
+
+De Morgan for intersections:
 
 $$A\\cap B=\\{4,5\\}$$
 
-$$\\{4,5,6\\}$$
+$$(A\\cap B)^{c}=\\{1,2,3,6,7,8,9,10\\}$$
 
-The computed roster does not match the claim.
+$$A^{c}=\\{6,7,8,9,10\\}$$
+
+$$B^{c}=\\{1,2,3,9,10\\}$$
+
+$$A^{c}\\cup B^{c}=\\{1,2,3,6,7,8,9,10\\}$$
+
+The two sides match.
+
+So the statement is True.`,
+      `**D.** → False
+
+Intersection keeps shared members:
+
+$$4\\in A$$
+
+$$4\\in B$$
+
+$$5\\in A$$
+
+$$5\\in B$$
+
+$$6\\in B$$
+
+$$6\\notin A$$
+
+$$A\\cap B=\\{4,5\\}$$
+
+The claim lists $\\{4,5,6\\}$, which incorrectly keeps $6$.
 
 So the statement is False.`,
       `**E.** → False
 
-The overview listed $A\\cap B=\\{4,5\\}$, so the complement in $U$ must drop $4$ and $5$ and keep everything else:
+From letter C,
 
-$$(A\\cap B)^c=\\{1,2,3,6,7,8,9,10\\}.$$
+$$(A\\cap B)^{c}=\\{1,2,3,6,7,8,9,10\\}$$
 
-The claimed list $\\{1,2,3,4,5,9,10\\}$ keeps $4$ and $5$ while omitting $6,7,8$. That is the opposite of a complement.
+The claim lists $\\{1,2,3,4,5,9,10\\}$. Compare:
 
-$$(A \\cap B)^{c} = \\{1, 2, 3, 4, 5, 9, 10\\}$$
+$$4\\in A\\cap B$$
+
+$$4\\notin(A\\cap B)^{c}$$
+
+yet $4$ appears in the claim, so the claim is wrong.
 
 So the statement is False.`,
     ],
@@ -2832,57 +2862,77 @@ De Morgan's laws swap union with intersection under complements:
     tactical_explanations: [
       `**A.** → True
 
-The overview already counted
+Cartesian-product size multiplies the factor sizes:
 
-$$\\lvert A\\times B\\rvert = 2\\cdot 3$$
+$$|A|=2$$
 
-$$= 6$$
+$$|B|=3$$
 
-by the product rule. Product size is the number of cells in a $2$ by $3$ grid, not the five distinct symbols $1,2,x,y,z$. The claim is that same figure $6$.
+$$|A\\times B|=|A|\\cdot|B|$$
 
-That matches the claim.
+$$|A|\\cdot|B|=2\\cdot 3$$
+
+$$2\\cdot 3=6$$
+
+$$|A\\times B|=6$$
 
 So the statement is True.`,
       `**B.** → True
 
-Membership in $A\\times B$ is a two-slot test. For $(2,x)$ the first slot $2$ sits in $A=\\{1,2\\}$ and the second slot $x$ sits in $B=\\{x,y,z\\}$. Both tests succeed, so $(2,x)\\in A\\times B$.
+An ordered pair $(a,b)$ sits in $A\\times B$ when $a\\in A$ and $b\\in B$:
 
-Record the verdict against the live claim after the calculation above is complete.
+$$2\\in A$$
 
-$$(2, x) \\in A \\times B$$
+$$x\\in B$$
+
+$$(2,x)\\in A\\times B$$
 
 So the statement is True.`,
       `**C.** → False
 
-The pair $(x,2)$ puts a letter in the first slot, and $x\\notin A$. Ordered pairs treat $(2,x)$ and $(x,2)$ as different objects; the second lives in $B\\times A$, not in $A\\times B$. The first slot already fails.
+For $(x,2)$ the first coordinate would need to sit in $A$:
 
-Record the verdict against the live claim after the calculation above is complete.
+$$x\\notin A$$
 
-$$(x, 2) \\in A \\times B$$
+because $A=\\{1,2\\}$. Already
+
+$$(x,2)\\notin A\\times B$$
 
 So the statement is False.`,
       `**D.** → False
 
-Set equality needs identical members, not identical counts. The pair $(2,x)$ sits in $A\\times B$, but $2\\notin B$, so that pair cannot sit in $B\\times A$. One missing witness already forces $A\\times B\\neq B\\times A$.
+Compare a sample pair from each product:
 
-Record the verdict against the live claim after the calculation above is complete.
+$$(1,x)\\in A\\times B$$
 
-$$A \\times B = B \\times A$$
+The first coordinate of $(1,x)$ is $1\\notin B=\\{x,y,z\\}$, so
+
+$$(1,x)\\notin B\\times A$$
+
+Hence
+
+$$A\\times B\\neq B\\times A$$
 
 So the statement is False.`,
       `**E.** → True
 
-Size ignores order. The reverse product is
+Cardinality of the reversed product:
 
-$$\\lvert B\\times A\\rvert = 3\\cdot 2$$
+$$|B|=3$$
 
-$$= 6$$
+$$|A|=2$$
 
-$$= \\lvert A\\times B\\rvert.$$
+$$|B\\times A|=|B|\\cdot|A|$$
 
-The counts agree even though the member lists do not.
+$$3\\cdot 2=6$$
 
-That matches the claim.
+$$|B\\times A|=6$$
+
+From letter A,
+
+$$|A\\times B|=6$$
+
+so the two products have equal size.
 
 So the statement is True.`,
     ],
@@ -2919,59 +2969,87 @@ Turning the factors around produces $B\\times A$: the same count, different memb
     tactical_explanations: [
       `**A.** → False
 
-Subsethood would need every point of $(1,5)$ to satisfy $x\\ge 3$. The leftover strip $(1,3)$ is the obstruction. Explicitly $x=2$ sits in $A$ because $1<2<5$, and it misses $B$ because $2<3$. One witness kills $A\\subseteq B$.
+Write the defining inequalities:
 
-Record the verdict against the live claim after the calculation above is complete.
+$$A=\\{x\\in\\mathbb{R}:1<x<5\\}$$
 
-$$A \\subseteq B$$
+$$B=\\{x\\in\\mathbb{R}:x\\ge 3\\}$$
+
+Take a point of $A$ below $3$:
+
+$$x=2$$
+
+$$1<2<5$$
+
+so $2\\in A$. But
+
+$$2\\ge 3$$
+
+is false, so $2\\notin B$. Therefore
+
+$$A\\not\\subseteq B$$
 
 So the statement is False.`,
       `**B.** → True
 
-Intersection keeps only elements that sit in both $A$ and $B$.
+Membership in both requires
 
-$$A=\\{x \\in R : 1 < x < 5\\}$$
+$$1<x<5$$
 
-$$B=\\{x \\in R : x \\ge 3\\}$$
+$$x\\ge 3$$
 
-$$x \\in R : 1 < x < 5\\in A,\\ x \\in R : 1 < x < 5\\notin B$$
+The stricter lower bound is $3$, and the upper bound stays strict at $5$:
 
-$$A\\cap B=\\{\\}$$
+$$3\\le x<5$$
 
-$$\\{x \\in R : 3 \\le x < 5\\}$$
-
-The computed roster does not match the claim.
+$$A\\cap B=[3,5)$$
 
 So the statement is True.`,
       `**C.** → False
 
-$B$ is unbounded above, so it contains numbers far past $A$. Witness $x=10$: in $B$ because $10\\ge 3$, and not in $A$ because $10\\ge 5$. One large witness kills $B\\subseteq A$.
+Inclusion $B\\subseteq A$ fails for large $x$. Take
 
-Record the verdict against the live claim after the calculation above is complete.
+$$x=6$$
 
-$$B \\subseteq A$$
+$$6\\ge 3$$
+
+so $6\\in B$. But
+
+$$1<6<5$$
+
+is false, so $6\\notin A$. Hence
+
+$$B\\not\\subseteq A$$
 
 So the statement is False.`,
       `**D.** → True
 
-Union keeps every element that sits in $A$ or in $B$ (or both).
+Union membership needs at least one of
 
-$$A=\\{x \\in R : 1 < x < 5\\}$$
+$$1<x<5$$
 
-$$B=\\{x \\in R : x \\ge 3\\}$$
+$$x\\ge 3$$
 
-$$A\\cup B=\\{x \\in R : 1 < x < 5,x \\in R : x \\ge 3\\}$$
+If $x\\le 1$, both fail. If $1<x<3$, the first holds. If $x\\ge 3$, the second holds. Hence every $x>1$ is covered:
 
-$$\\{x \\in R : x > 1\\}$$
-
-The computed roster does not match the claim.
+$$A\\cup B=(1,\\infty)$$
 
 So the statement is True.`,
       `**E.** → True
 
-Existence needs one point of $A$ that misses $B$. Take $x=2$: it satisfies $1<2<5$ but $2<3$, so $2\\in A\\setminus B$. The leftover strip $(1,3)$ is nonempty.
+From letter A, the witness
 
-Record the verdict against the live claim after the calculation above is complete.
+$$x=2$$
+
+satisfies
+
+$$1<2<5$$
+
+$$2\\in A$$
+
+$$2\\notin B$$
+
+so such a real exists.
 
 So the statement is True.`,
     ],
@@ -3002,55 +3080,109 @@ Intersection keeps numbers that satisfy both inequalities at once. Union keeps n
     tactical_explanations: [
       `**A.** → True
 
-The overview already joined the leftovers $A\\setminus B=\\{1,2\\}$ and $B\\setminus A=\\{5,6\\}$ into $A\\triangle B=\\{1,2,5,6\\}$. Symmetric difference is "exactly one," not "at least one": the overlap $\\{3,4\\}$ is absent on purpose. The claim is that same four-element list.
+Compute each difference, then unite:
 
-$$A\\triangle B = \\{1, 2, 5, 6\\}$$
+$$A=\\{1,2,3,4\\}$$
+
+$$B=\\{3,4,5,6\\}$$
+
+$$1\\in A$$
+
+$$1\\notin B$$
+
+$$2\\in A$$
+
+$$2\\notin B$$
+
+$$3\\in A$$
+
+$$3\\in B$$
+
+$$4\\in A$$
+
+$$4\\in B$$
+
+$$A\\setminus B=\\{1,2\\}$$
+
+$$5\\in B$$
+
+$$5\\notin A$$
+
+$$6\\in B$$
+
+$$6\\notin A$$
+
+$$B\\setminus A=\\{5,6\\}$$
+
+$$A\\triangle B=\\{1,2,5,6\\}$$
 
 So the statement is True.`,
       `**B.** → False
 
-The definition joins the leftovers by $\\cup$, not $\\cap$. Those leftovers $\\{1,2\\}$ and $\\{5,6\\}$ are disjoint, so
+Symmetric difference is defined with a union of differences, not an intersection:
 
-$$(A\\setminus B)\\cap(B\\setminus A)=\\emptyset,$$
+$$A\\triangle B=(A\\setminus B)\\cup(B\\setminus A)$$
 
-which is not the four-element set $\\{1,2,5,6\\}$. Outer buckets of a Venn diagram never overlap.
+Intersecting the differences would give
 
-$$A\\triangle B = (A \\setminus B) \\cap (B \\setminus A)$$
+$$(A\\setminus B)\\cap(B\\setminus A)=\\emptyset$$
+
+always, which is not the symmetric difference. The claimed rewrite is false.
 
 So the statement is False.`,
       `**C.** → False
 
-Symmetric difference excludes the overlap. The overview listed
+The intersection and the symmetric difference are disjoint by construction. Here
 
 $$A\\cap B=\\{3,4\\}$$
 
-and
+$$A\\triangle B=\\{1,2,5,6\\}$$
 
-$$A\\triangle B=\\{1,2,5,6\\},$$
+$$3\\notin A\\triangle B$$
 
-which share nothing. Already $3\\in A\\cap B$ and $3\\notin A\\triangle B$, so $A\\cap B\\nsubseteq A\\triangle B$.
+so
+
+$$A\\cap B\\not\\subseteq A\\triangle B$$
 
 So the statement is False.`,
       `**D.** → True
 
-If $A$ and $B$ share nothing, then $A\\setminus B=A$ and $B\\setminus A=B$, so $A\\triangle B=A\\cup B$. There is no middle bucket to discard. This is a general identity; the given lists are not disjoint, but the implication still holds.
+If $A\\cap B=\\emptyset$, then
 
-Record the verdict against the live claim after the calculation above is complete.
+$$A\\setminus B=A$$
 
-$$A\\triangle B = A \\cup B$$
+$$B\\setminus A=B$$
+
+$$A\\triangle B=A\\cup B$$
 
 So the statement is True.`,
       `**E.** → True
 
-The sum $\\lvert A\\rvert+\\lvert B\\rvert$ double-counts the overlap, and $A\\triangle B$ throws both copies away:
+Count with the formula. First the ingredients:
 
-$$\\lvert A\\triangle B\\rvert = \\lvert A\\rvert+\\lvert B\\rvert-2\\lvert A\\cap B\\rvert$$
+$$|A|=4$$
 
-$$= 4+4-2\\cdot 2$$
+$$|B|=4$$
 
-$$= 4.$$
+$$|A\\cap B|=2$$
 
-That matches the four-element set $\\{1,2,5,6\\}$.
+$$2\\cdot|A\\cap B|=2\\cdot 2$$
+
+$$2\\cdot 2=4$$
+
+$$|A|+|B|=4+4$$
+
+$$4+4=8$$
+
+$$|A\\triangle B|=8-4$$
+
+$$8-4=4$$
+
+Alternatively from the roster $\\{1,2,5,6\\}$:
+
+$$|A\\triangle B|=4$$
+
+The identity holds.
 
 So the statement is True.`,
     ],
@@ -3087,57 +3219,59 @@ Joining the leftovers gives $A\\triangle B=\\{1,2,5,6\\}$.`,
     tactical_explanations: [
       `**A.** → True
 
-The overview already counted
+Coverage assignments are ordered pairs from a $5$-element set times an $8$-element set:
+
+$$|\\mathrm{Reps}|=5$$
+
+$$|\\mathrm{Accounts}|=8$$
+
+$$|\\mathrm{Reps}\\times\\mathrm{Accounts}|=|\\mathrm{Reps}|\\cdot|\\mathrm{Accounts}|$$
 
 $$5\\cdot 8=40$$
-
-ordered pairs. Product size is cells, not
-
-$$5+8=13$$
-
-people-plus-accounts. The claim is that same figure $40$.
-
-That matches the claim.
 
 So the statement is True.`,
       `**B.** → False
 
-Coverage pairs are ordered: first slot is the rep, second is the account. The pair (Maria, Account $3$) and the pair (Account $3$, Maria) are different objects; the second treats Account $3$ as the rep. Order is the whole point of a Cartesian product.
+Ordered pairs care about order. The two pairs
+
+$$(\\mathrm{Maria},\\mathrm{Account\\ 3})$$
+
+$$(\\mathrm{Account\\ 3},\\mathrm{Maria})$$
+
+have swapped coordinates, so they are different ordered pairs (and only the first has the correct types for $\\mathrm{Reps}\\times\\mathrm{Accounts}$).
 
 So the statement is False.`,
       `**C.** → True
 
-Zero accounts means the second factor is empty, so
+If there are $0$ accounts, the product size is
 
-$$r\\cdot 0=0$$
+$$|\\mathrm{Reps}|\\cdot 0=0$$
 
-for any number $r$ of reps. Without a second coordinate there is no ordered pair. Hiring more reps cannot create an account slot that does not exist.
-
-That matches the claim.
+for any finite number of reps. No ordered pairs exist.
 
 So the statement is True.`,
       `**D.** → False
 
-Membership in the product means the first slot is a rep and the second slot is an account. The claim swaps both tests, putting Maria among the accounts and Account $3$ among the reps. Those are the tests for the reversed product.
+Membership $(a,b)\\in X\\times Y$ means $a\\in X$ and $b\\in Y$. For
 
-Record the verdict against the live claim after the calculation above is complete.
+$$(\\mathrm{Maria},\\mathrm{Account\\ 3})\\in\\mathrm{Reps}\\times\\mathrm{Accounts}$$
 
-$$\\times$$
+we need
 
-$$\\in$$
+$$\\mathrm{Maria}\\in\\mathrm{Reps}$$
 
-$$3 \\in$$
+$$\\mathrm{Account\\ 3}\\in\\mathrm{Accounts}$$
+
+The claim swaps the two memberships, so it is false.
 
 So the statement is False.`,
       `**E.** → True
 
-Six reps and eight accounts. The extra arithmetic is the increment from one new rep:
+With $6$ reps and $8$ accounts:
 
-$$6\\cdot 8=48.$$
+$$6\\cdot 8=48$$
 
-Equivalently the new rep adds eight new pairs to the old forty, so $40+8=48$. The claim is $48$.
-
-That matches the claim.
+$$|\\mathrm{Reps}\\times\\mathrm{Accounts}|=48$$
 
 So the statement is True.`,
     ],
@@ -3172,61 +3306,93 @@ First coordinate is the rep; second is the account. Membership means the first s
     tactical_explanations: [
       `**A.** → True
 
-A temperature must satisfy $-4<T<4$ and $T\\ge -1$. The lower limit becomes $-1$ (included: $(-1)^2=1<16$ and irrigation allows $-1$). The upper limit stays $4$ (excluded: $4^2=16$ is not strictly less than $16$):
+Rewrite $A$ from the quadratic inequality:
 
-$$A\\cap B=[-1,4).$$
+$$T^{2}<16$$
 
-The claim is that same interval.
+$$|T|<4$$
 
-$$A \\cap B = [-1, 4)$$
+$$-4<T<4$$
+
+$$A=(-4,4)$$
+
+And
+
+$$B=[-1,\\infty)$$
+
+Intersection requires both:
+
+$$-4<T<4$$
+
+$$T\\ge -1$$
+
+The stricter lower bound is $-1$, and the upper bound stays strict:
+
+$$-1\\le T<4$$
+
+$$A\\cap B=[-1,4)$$
 
 So the statement is True.`,
       `**B.** → False
 
-The temperature $4$ sits in $B$ because $4\\ge -1$, but it fails $T^2<16$:
+Test $T=4$ against $A$:
 
-$$4^2=16,$$
+$$4^{2}=16$$
 
-and $16$ is not strictly less than $16$, so $4\\notin A$ and therefore $4\\notin A\\cap B$. The overlap $[-1,4)$ is open at $4$ for the same reason.
+$$16<16$$
 
-$$A \\cap B$$
+is false, so $4\\notin A$. Already
+
+$$4\\notin A\\cap B$$
 
 So the statement is False.`,
       `**C.** → False
 
-$A=(-4,4)$ already excluded $\\pm 4$, so the complement must collect them:
+The complement of the open interval $A=(-4,4)$ includes the endpoints:
 
-$$A^c=(-\\infty,-4]\\cup[4,\\infty).$$
+$$A^{c}=(-\\infty,-4]\\cup[4,\\infty)$$
 
-The claimed strict inequalities $T<-4$ or $T>4$ drop those two boundary temperatures. Check $T=4$: $4^2=16$ is not strictly less than $16$, so $4\\notin A$ and $4$ must sit in $A^c$. The claimed roster drops it.
+The claim writes $T<-4$ or $T>4$, which is
 
-$$\\{T \\in R : T < -4 \\lor T > 4\\}$$
+$$(-\\infty,-4)\\cup(4,\\infty)$$
+
+That drops $T=-4$ and $T=4$, so the claim is false.
 
 So the statement is False.`,
       `**D.** → False
 
-$A$ covers $(-4,4)$ and $B$ carries on upward from $-1$, so together they reach every temperature above $-4$:
+Union of $A=(-4,4)$ and $B=[-1,\\infty)$:
 
-$$A\\cup B=(-4,\\infty).$$
+$$A\\cup B=(-4,\\infty)$$
 
-Take $T=-5$: not frost-safe ($25\\ge 16$) and not irrigating ($-5<-1$). The whole ray $(-\\infty,-4]$ lies outside both pieces, so the union is not all of $\\mathbb{R}$.
+A witness outside the union is
 
-$$A \\cup B$$
+$$T=-5$$
+
+$$-5\\notin A$$
+
+$$-5\\notin B$$
+
+$$A\\cup B\\neq\\mathbb{R}$$
 
 So the statement is False.`,
       `**E.** → True
 
-Frost-safe yet dry is the leftover
+Frost-safe but not irrigating means $T\\in A\\setminus B$:
 
-$$A\\setminus B=(-4,-1).$$
+$$A\\setminus B=(-4,-1)$$
 
-At
+Pick
 
 $$T=-2$$
 
-we have $4<16$ and $-2<-1$, so irrigation stays off. One witness is enough.
+$$-4<-2<4$$
 
-That matches the claim.
+so $-2\\in A$. And
+
+$$-2\\ge -1$$
+
+is false, so $-2\\notin B$. Such a temperature exists.
 
 So the statement is True.`,
     ],
@@ -3257,49 +3423,71 @@ Intersection keeps the tighter limit at each end. Union covers every temperature
     tactical_explanations: [
       `**A.** → False
 
-The overview already formed the union $160$ by subtracting the given overlap $50$ once. The claimed $170$ subtracts only $40$ from $120+90$, as if a neighbouring region were the overlap. The correct subtraction is the measured $50$, so $\\lvert A\\cup B\\rvert=160\\neq 170$.
+Inclusion-exclusion for two sets:
 
-$$\\lvert A \\cup B \\rvert$$
+$$|A\\cup B|=|A|+|B|-|A\\cap B|$$
+
+$$|A|=120$$
+
+$$|B|=90$$
+
+$$|A|+|B|=120+90$$
+
+$$120+90=210$$
+
+$$|A\\cap B|=50$$
+
+$$210-50=160$$
+
+$$|A\\cup B|=160$$
+
+The claim says $170$, which is not the computed value.
 
 So the statement is False.`,
       `**B.** → True
 
-Neither is the survey minus the union. The overview recovered $\\lvert A\\cup B\\rvert=160$, so
+Customers liking neither product:
 
-$$200-160=40.$$
+$$|U|-|A\\cup B|=200-160$$
 
-Compare the computed value with the claim ($40$). That matches the claim. The two sides agree.
+$$200-160=40$$
 
 So the statement is True.`,
       `**C.** → False
 
-A-only peels the overlap out of $A$:
+Only Product A is $A$ minus the overlap:
 
-$$\\lvert A\\setminus B\\rvert = 120-50$$
+$$|A\\setminus B|=|A|-|A\\cap B|$$
 
-$$= 70.$$
+$$120-50=70$$
 
-The claimed $90$ would be right only if the products shared nobody, or if $\\lvert B\\rvert$ were copied onto the A-only cell. The lists do not match.
+$$|A\\setminus B|=70$$
 
-That conflicts with the claim.
+The claim says $90$, which is wrong.
 
 So the statement is False.`,
       `**D.** → True
 
-The $50$ who like both already sit inside the $120$ who like $A$. That is all $A\\cap B\\subseteq A$ asks, and it holds for any pair of sets. Intersection is always a subset of each factor.
+Every element of an intersection sits in each factor:
 
-Record the verdict against the live claim after the calculation above is complete.
+$$A\\cap B\\subseteq A$$
 
-$$A \\cap B \\subseteq A$$
+by the definition of intersection.
 
 So the statement is True.`,
       `**E.** → False
 
-The overflow $120+90-200=10$ is only a floor on the overlap, not an exact value. Any overlap from $10$ up to $\\min(120,90)=90$ could fit the headlines, and the survey already reports $50$. "Exactly $10$" confuses a lower bound with a measurement.
+The excess
 
-$$\\lvert A \\rvert$$
+$$|A|+|B|-|U|=120+90-200$$
 
-$$\\lvert B \\rvert = 210$$
+$$210-200=10$$
+
+is only a lower bound on $|A\\cap B|$: inclusion-exclusion forces
+
+$$|A\\cap B|\\ge 10$$
+
+but larger overlaps (such as the given $50$) are also possible. The arithmetic does not prove that the overlap is exactly $10$.
 
 So the statement is False.`,
     ],
@@ -3336,87 +3524,113 @@ A-only is $\\lvert A\\rvert-\\lvert A\\cap B\\rvert$. Neither is the survey size
     tactical_explanations: [
       `**A.** → True
 
-Union keeps every element that sits in $A$ or in $B$ (or both).
+Unite $A$ and $B$:
 
 $$A=\\{1,2,3,4\\}$$
 
 $$B=\\{3,4,5,6\\}$$
 
+$$1\\in A\\cup B$$
+
+$$2\\in A\\cup B$$
+
+$$3\\in A\\cup B$$
+
+$$4\\in A\\cup B$$
+
+$$5\\in A\\cup B$$
+
+$$6\\in A\\cup B$$
+
 $$A\\cup B=\\{1,2,3,4,5,6\\}$$
-
-$$\\{1,2,3,4,5,6\\}$$
-
-The computed roster matches the claim.
 
 So the statement is True.`,
       `**B.** → True
 
-Intersection keeps only elements that sit in both $A$ and $B$.
+Shared members:
 
-$$A=\\{1,2,3,4\\}$$
+$$3\\in A$$
 
-$$B=\\{3,4,5,6\\}$$
+$$3\\in B$$
 
-$$1\\in A,\\ 1\\notin B$$
+$$4\\in A$$
 
-$$2\\in A,\\ 2\\notin B$$
+$$4\\in B$$
 
-$$3\\in A,\\ 3\\in B$$
+$$1\\in A$$
 
-$$4\\in A,\\ 4\\in B$$
+$$1\\notin B$$
+
+$$2\\in A$$
+
+$$2\\notin B$$
 
 $$A\\cap B=\\{3,4\\}$$
-
-$$\\{3,4\\}$$
-
-The computed roster matches the claim.
 
 So the statement is True.`,
       `**C.** → True
 
-Difference $A\\setminus B$ keeps members of $A$ that miss $B$.
+Difference keeps members of $A$ that miss $B$:
 
-$$A=\\{1,2,3,4\\}$$
+$$1\\in A$$
 
-$$B=\\{3,4,5,6\\}$$
+$$1\\notin B$$
 
-$$1\\in A,\\ 1\\notin B$$
+$$2\\in A$$
 
-$$2\\in A,\\ 2\\notin B$$
+$$2\\notin B$$
 
-$$3\\in A,\\ 3\\in B$$
+$$3\\in A$$
 
-$$4\\in A,\\ 4\\in B$$
+$$3\\in B$$
+
+$$4\\in A$$
+
+$$4\\in B$$
 
 $$A\\setminus B=\\{1,2\\}$$
-
-$$\\{1,2\\}$$
-
-The computed roster matches the claim.
 
 So the statement is True.`,
       `**D.** → False
 
-The opposite leftover lives inside $B$:
+Compute the opposite difference:
 
-$$B\\setminus A=\\{5,6\\},$$
+$$5\\in B$$
 
-while $A\\setminus B=\\{1,2\\}$. Already $1$ sits in the first leftover and misses the second. Difference is not commutative.
+$$5\\notin A$$
 
-That conflicts with the claim.
+$$6\\in B$$
 
-$$B \\setminus A = A \\setminus B$$
+$$6\\notin A$$
+
+$$B\\setminus A=\\{5,6\\}$$
+
+From letter C,
+
+$$A\\setminus B=\\{1,2\\}$$
+
+$$\\{5,6\\}\\neq\\{1,2\\}$$
+
+so the two differences are unequal.
 
 So the statement is False.`,
       `**E.** → True
 
-Disjointness means the intersection is empty. None of $7,8,9$ appears in $\\{1,2,3,4\\}$, so
+Disjointness needs empty intersection:
 
-$$A\\cap C=\\emptyset.$$
+$$A=\\{1,2,3,4\\}$$
 
-The two lists share nothing.
+$$C=\\{7,8,9\\}$$
 
-That matches the claim.
+$$1\\notin C$$
+
+$$2\\notin C$$
+
+$$3\\notin C$$
+
+$$4\\notin C$$
+
+$$A\\cap C=\\emptyset$$
 
 So the statement is True.`,
     ],
