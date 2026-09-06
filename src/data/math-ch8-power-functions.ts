@@ -9073,9 +9073,7 @@ Name the recovered power rule, then substitute the claimed input.
 
 A $25\\%$ tariff rise is the factor $k=\\frac{5}{4}$. The elasticity shortcut multiplies $-2$ by that percentage:
 
-$$-2\\cdot 0.25$$
-
-$$=-0.50$$
+$$-2\\cdot 0.25=-0.50$$
 
 The exact power uses the recovered scale identity:
 
@@ -9085,9 +9083,7 @@ $$\\left(\\frac{5}{4}\\right)^{-2}=\\frac{16}{25}$$
 
 $$\\left(\\frac{5}{4}\\right)^{-2}$$
 
-$$\\left(\\frac{5}{4}\\right)^{-2}$$
-
-$$=0.64$$
+$$\\left(\\frac{5}{4}\\right)^{-2}=0.64$$
 
 Exact demand falls by $36\\%$, not by $50\\%$. The two routes do not agree.
 
@@ -9102,9 +9098,7 @@ $$\\left(\\frac{5}{4}\\right)^{-2}=\\frac{16}{25}$$
 
 $$\\left(\\frac{5}{4}\\right)^{-2}$$
 
-$$\\left(\\frac{5}{4}\\right)^{-2}$$
-
-$$=0.64$$
+$$\\left(\\frac{5}{4}\\right)^{-2}=0.64$$
 
 $$q(3.75)=4000\\cdot 0.64$$
 
@@ -9119,9 +9113,7 @@ Read the exponent from the overview before comparing growth rates.
 
 The elasticity shortcut for a $25\\%$ rise multiplies $-2$ by that percentage:
 
-$$-2\\cdot 0.25$$
-
-$$=-0.50$$
+$$-2\\cdot 0.25=-0.50$$
 
 The exact power uses the tariff factor $\\frac{5}{4}$:
 
@@ -9129,9 +9121,7 @@ $$\\left(\\frac{5}{4}\\right)^{-2}-1=\\frac{16}{25}-1$$
 
 $$\\left(\\frac{5}{4}\\right)^{-2}-1$$
 
-$$\\left(\\frac{5}{4}\\right)^{-2}-1$$
-
-$$=-0.36$$
+$$\\left(\\frac{5}{4}\\right)^{-2}-1=-0.36$$
 
 The shortcut's $50\\%$ loss is larger than the exact $36\\%$ loss.
 
@@ -9144,9 +9134,7 @@ Start from the calibrated closed form in the overview.
 
 A $25\\%$ tariff cut is the factor $k=\\frac{3}{4}$:
 
-$$
-\\left(\\frac{3}{4}\\right)^{-2}=\\frac{16}{9}\\approx 1.778
-$$
+$$\\left(\\frac{3}{4}\\right)^{-2}=\\frac{16}{9}\\approx 1.778$$
 
 Demand rises by about $77.8\\%$. A $25\\%$ rise cuts demand by $36\\%$, and $77.8\\neq 36$.
 
@@ -10125,9 +10113,7 @@ So the statement is True.`,
 
 The overview recovered exponent $\\frac{3}{2}$. Doubling the head multiplies discharge by
 
-$$2^{\\frac{3}{2}}$$
-
-$$=2\\sqrt{2}$$
+$$2^{\\frac{3}{2}}=2\\sqrt{2}$$
 
 which is not $2$. The claim would have needed leftover exponent $1$.
 
@@ -11085,7 +11071,9 @@ Name the recovered power rule, then substitute the claimed input.
 
 The cheaper line is line 2, because
 
-$$b=\\frac{1}{4}<a$$
+$$b=\\frac{1}{4}$$
+
+$$\\frac{1}{4}<a$$
 
 $$b=1$$
 
@@ -11115,7 +11103,9 @@ So the statement is True.`,
 
 The overview recovered
 
-$$a=1>b$$
+$$a=1$$
+
+$$1>b$$
 
 $$a=\\frac{1}{4}$$
 
@@ -11245,9 +11235,7 @@ Read the exponent from the overview before comparing growth rates.
 
 The constant-elasticity shortcut for a $10\\%$ price rise is
 
-$$\\varepsilon\\cdot 0.10$$
-
-$$=-0.20$$
+$$\\varepsilon\\cdot 0.10=-0.20$$
 
 The exact relative drop uses the recovered $q\\propto p^{-2}$ with price factor $1.1$:
 
