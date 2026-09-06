@@ -21,11 +21,11 @@
         false
       ],
       "tactical_explanations": [
-        "**A.** → False\n\n$$N(12)=500\\cdot(3)^{3}=13500$$\n\n$$13500 \\le 40000$$.\n\nSo the statement is False.",
+        "**A.** → False\n\n$$N(12)=500\\cdot(3)^{3}=13500$$\n\n$$13500 \\le 40000.$$\n\nSo the statement is False.",
         "**B.** → True\n\nRewrite the period model as an exponential:\n\n$$(3)^{t/4}=e^{(t/4)\\ln(3)}=e^{kt}$$\n\nwith $k=\\ln(3)/4\\approx0.274653$. Thus the continuous force reproduces $N(t)$ identically.\n\nSo the statement is True.",
-        "**C.** → False\n\n$$\\frac{t}{\\text{period}}=\\frac{12}{4}=3$$\n\n$$3 \\le 3$$.\n\nSo the statement is False.",
+        "**C.** → False\n\n$$\\frac{t}{\\text{period}}=\\frac{12}{4}=3$$\n\n$$3 \\le 3.$$\n\nSo the statement is False.",
         "**D.** → False\n\nEach period multiplies by $3$, not necessarily by $2$. Doubling every period would require factor $2$. Here the factor is $3$, so the claim fails.\n\nSo the statement is False.",
-        "**E.** → False\n\nSolve $N(t)=40000$:\n\n$$t=\\frac{\\ln(40000/500)}{k}\\approx15.9548$$\n\n$$15.9548 \\ge 12$$.\n\nSo the statement is False."
+        "**E.** → False\n\nSolve $N(t)=40000$:\n\n$$t=\\frac{\\ln(40000/500)}{k}\\approx15.9548$$\n\n$$15.9548 \\ge 12.$$\n\nSo the statement is False."
       ],
       "solution_overview": "$N(t)=500\\cdot(3)^{t/4}$. Equivalent continuous force $k=\\ln(3)/4\\approx0.274653$. At $t=12$, after $3$ growth periods, $N\\approx13500$. Time to reach $40000$ is $t=\\ln(40000/500)/k\\approx15.9548$.",
       "difficulty_level": "1/5",
@@ -54,10 +54,10 @@
         true
       ],
       "tactical_explanations": [
-        "**A.** → False\n\nRead the two terminal levels from the overview (or the figure).\n\n$$f(15)\\approx269.9718$$\n\n$$g(15)\\approx289.6596$$\n\n$$269.9718 \\le 289.6596$$.\n\nSo the statement is False.",
-        "**B.** → False\n\nCompute the discrete force and compare with $k$.\n\n$$\\ln(1.025)\\approx0.024693$$\n\n$$0.02 \\le 0.024693$$.\n\nSo the statement is False.",
-        "**C.** → False\n\nRelative gap against the larger level:\n\n$$\\frac{|f-g|}{\\max(f,g)}\\approx0.067969$$\n\n$$0.067969 \\ge 0.05$$.\n\nSo the statement is False.",
-        "**D.** → False\n\n$$t_{\\mathrm{cont}}=\\frac{\\ln 2}{0.02}\\approx34.6574$$\n\n$$t_{\\mathrm{disc}}=\\frac{\\ln 2}{\\ln(1.025)}\\approx28.071$$\n\n$$34.6574 \\ge 28.071$$.\n\nSo the statement is False.",
+        "**A.** → False\n\nRead the two terminal levels from the overview (or the figure).\n\n$$f(15)\\approx269.9718$$\n\n$$g(15)\\approx289.6596$$\n\n$$269.9718 \\le 289.6596.$$\n\nSo the statement is False.",
+        "**B.** → False\n\nCompute the discrete force and compare with $k$.\n\n$$\\ln(1.025)\\approx0.024693$$\n\n$$0.02 \\le 0.024693.$$\n\nSo the statement is False.",
+        "**C.** → False\n\nRelative gap against the larger level:\n\n$$\\frac{|f-g|}{\\max(f,g)}\\approx0.067969$$\n\n$$0.067969 \\ge 0.05.$$\n\nSo the statement is False.",
+        "**D.** → False\n\n$$t_{\\mathrm{cont}}=\\frac{\\ln 2}{0.02}\\approx34.6574$$\n\n$$t_{\\mathrm{disc}}=\\frac{\\ln 2}{\\ln(1.025)}\\approx28.071$$\n\n$$34.6574 \\ge 28.071.$$\n\nSo the statement is False.",
         "**E.** → True\n\nAlgebraically,\n\n$$\\ln\\frac{Pe^{kt}}{P a^{t}}=(k-\\ln a)t$$\n\n$$=(0.02-0.024693)\\cdot15\\approx-0.070389.$$\n\nDirect evaluation of $\\ln(f/g)$ recovers the same number, so the identity holds.\n\nSo the statement is True."
       ],
       "solution_overview": "Continuous forecast $f(t)=200e^{0.02t}$ versus discrete $g(t)=200(1.025)^{t}$. At $t=15$:\n\n$$f(15)\\approx269.9718,\\quad g(15)\\approx289.6596.$$\n\nEquivalent discrete force $\\ln(1.025)\\approx0.024693$. Doubling times $34.6574$ (continuous) and $28.071$ (discrete).",
@@ -87,11 +87,11 @@
         false
       ],
       "tactical_explanations": [
-        "**A.** → False\n\n$$N(12)=500\\cdot(3)^{3}=13500$$\n\n$$13500 \\le 40000$$.\n\nSo the statement is False.",
+        "**A.** → False\n\n$$N(12)=500\\cdot(3)^{3}=13500$$\n\n$$13500 \\le 40000.$$\n\nSo the statement is False.",
         "**B.** → True\n\nRewrite the period model as an exponential:\n\n$$(3)^{t/4}=e^{(t/4)\\ln(3)}=e^{kt}$$\n\nwith $k=\\ln(3)/4\\approx0.274653$. Thus the continuous force reproduces $N(t)$ identically.\n\nSo the statement is True.",
-        "**C.** → False\n\n$$\\frac{t}{\\text{period}}=\\frac{12}{4}=3$$\n\n$$3 \\le 3$$.\n\nSo the statement is False.",
+        "**C.** → False\n\n$$\\frac{t}{\\text{period}}=\\frac{12}{4}=3$$\n\n$$3 \\le 3.$$\n\nSo the statement is False.",
         "**D.** → False\n\nEach period multiplies by $3$, not necessarily by $2$. Doubling every period would require factor $2$. Here the factor is $3$, so the claim fails.\n\nSo the statement is False.",
-        "**E.** → False\n\nSolve $N(t)=40000$:\n\n$$t=\\frac{\\ln(40000/500)}{k}\\approx15.9548$$\n\n$$15.9548 \\ge 12$$.\n\nSo the statement is False."
+        "**E.** → False\n\nSolve $N(t)=40000$:\n\n$$t=\\frac{\\ln(40000/500)}{k}\\approx15.9548$$\n\n$$15.9548 \\ge 12.$$\n\nSo the statement is False."
       ],
       "solution_overview": "$N(t)=500\\cdot(3)^{t/4}$. Equivalent continuous force $k=\\ln(3)/4\\approx0.274653$. At $t=12$, after $3$ growth periods, $N\\approx13500$. Time to reach $40000$ is $t=\\ln(40000/500)/k\\approx15.9548$.",
       "difficulty_level": "3/5",
@@ -120,10 +120,10 @@
         true
       ],
       "tactical_explanations": [
-        "**A.** → False\n\nRead the two terminal levels from the overview (or the figure).\n\n$$f(15)\\approx269.9718$$\n\n$$g(15)\\approx289.6596$$\n\n$$269.9718 \\le 289.6596$$.\n\nSo the statement is False.",
-        "**B.** → False\n\nCompute the discrete force and compare with $k$.\n\n$$\\ln(1.025)\\approx0.024693$$\n\n$$0.02 \\le 0.024693$$.\n\nSo the statement is False.",
-        "**C.** → False\n\nRelative gap against the larger level:\n\n$$\\frac{|f-g|}{\\max(f,g)}\\approx0.067969$$\n\n$$0.067969 \\ge 0.05$$.\n\nSo the statement is False.",
-        "**D.** → False\n\n$$t_{\\mathrm{cont}}=\\frac{\\ln 2}{0.02}\\approx34.6574$$\n\n$$t_{\\mathrm{disc}}=\\frac{\\ln 2}{\\ln(1.025)}\\approx28.071$$\n\n$$34.6574 \\ge 28.071$$.\n\nSo the statement is False.",
+        "**A.** → False\n\nRead the two terminal levels from the overview (or the figure).\n\n$$f(15)\\approx269.9718$$\n\n$$g(15)\\approx289.6596$$\n\n$$269.9718 \\le 289.6596.$$\n\nSo the statement is False.",
+        "**B.** → False\n\nCompute the discrete force and compare with $k$.\n\n$$\\ln(1.025)\\approx0.024693$$\n\n$$0.02 \\le 0.024693.$$\n\nSo the statement is False.",
+        "**C.** → False\n\nRelative gap against the larger level:\n\n$$\\frac{|f-g|}{\\max(f,g)}\\approx0.067969$$\n\n$$0.067969 \\ge 0.05.$$\n\nSo the statement is False.",
+        "**D.** → False\n\n$$t_{\\mathrm{cont}}=\\frac{\\ln 2}{0.02}\\approx34.6574$$\n\n$$t_{\\mathrm{disc}}=\\frac{\\ln 2}{\\ln(1.025)}\\approx28.071$$\n\n$$34.6574 \\ge 28.071.$$\n\nSo the statement is False.",
         "**E.** → True\n\nAlgebraically,\n\n$$\\ln\\frac{Pe^{kt}}{P a^{t}}=(k-\\ln a)t$$\n\n$$=(0.02-0.024693)\\cdot15\\approx-0.070389.$$\n\nDirect evaluation of $\\ln(f/g)$ recovers the same number, so the identity holds.\n\nSo the statement is True."
       ],
       "solution_overview": "Continuous forecast $f(t)=200e^{0.02t}$ versus discrete $g(t)=200(1.025)^{t}$. At $t=15$:\n\n$$f(15)\\approx269.9718,\\quad g(15)\\approx289.6596.$$\n\nEquivalent discrete force $\\ln(1.025)\\approx0.024693$. Doubling times $34.6574$ (continuous) and $28.071$ (discrete).",
@@ -155,9 +155,9 @@
       "tactical_explanations": [
         "**A.** → False\n\nSubstitute the recovered force into the continuous level formula.\n\n$$f(24)=10\\,e^{0.016\\cdot24}$$\n\n$$=10\\,e^{0.384}$$\n\n$$\\approx14.6815$$\n\nCompare with the claim.\n\nSo the statement is False.",
         "**B.** → False\n\nTwo closed forms agree for all $t$ only when their one-year multipliers match.\n\n$$1+0.016=1.016$$\n\n$$e^{0.016}\\approx1.016129$$\n\nSince $1.016\\neq e^{0.016}$, the discrete replacement $(1+0.016)^{t}$ is not identical to $e^{0.016t}$. At the concrete horizon $t=24$ the values already differ (14.6369 versus 14.6815).\n\nSo the statement is False.",
-        "**C.** → True\n\nUnder continuous force $k$, the exact one-year multiplier is $e^{k}$, not $1+k$.\n\n$$e^{0.016}-1\\approx0.016129$$\n\n$$1+0.016=1.016$$\n\nFor $k>0$ the inequality $e^{k}>1+k$ holds, so the continuous year-over-year growth factor exceeds $1+0.016$.\n\n$$1.016129 > 1.016$$.\n\nSo the statement is True.",
-        "**D.** → False\n\nDoubling means $f(t)=2f(0)$, which forces $e^{kt}=2$.\n\n$$t=\\frac{\\ln 2}{0.016}$$\n\n$$t\\approx43.3217$$\n\nCompare with $40$:\n\n$$43.3217 \\ge 40$$.\n\nSo the statement is False.",
-        "**E.** → True\n\nFrom the overview, we have $f(24)\\approx14.6815$ and $g(24)\\approx14.6369$. Compare those two levels directly:\n\n$$g(24)=10(1+0.016)^{24}\\approx14.6369$$\n\n$$f(24)\\approx14.6815$$\n\n$$14.6369 < 14.6815$$.\n\nSo the statement is True."
+        "**C.** → True\n\nUnder continuous force $k$, the exact one-year multiplier is $e^{k}$, not $1+k$.\n\n$$e^{0.016}-1\\approx0.016129$$\n\n$$1+0.016=1.016$$\n\nFor $k>0$ the inequality $e^{k}>1+k$ holds, so the continuous year-over-year growth factor exceeds $1+0.016$.\n\n$$1.016129 > 1.016.$$\n\nSo the statement is True.",
+        "**D.** → False\n\nDoubling means $f(t)=2f(0)$, which forces $e^{kt}=2$.\n\n$$t=\\frac{\\ln 2}{0.016}$$\n\n$$t\\approx43.3217$$\n\nCompare with $40$:\n\n$$43.3217 \\ge 40.$$\n\nSo the statement is False.",
+        "**E.** → True\n\nFrom the overview, we have $f(24)\\approx14.6815$ and $g(24)\\approx14.6369$. Compare those two levels directly:\n\n$$g(24)=10(1+0.016)^{24}\\approx14.6369$$\n\n$$f(24)\\approx14.6815$$\n\n$$14.6369 < 14.6815.$$\n\nSo the statement is True."
       ],
       "solution_overview": "The overview recovers the continuous census model\n\n$$f(t)=10\\,e^{0.016t}$$\n\nfor Onyx, with $f$ in millions of residents. The continuous annual force is $k=0.016$. At $t=24$,\n\n$$f(24)=10\\,e^{0.016\\cdot24}\\approx14.6815$$\n\nThe naive discrete rival $g(t)=10(1+0.016)^{t}$ gives $g(24)\\approx14.6369$. One-year continuous growth is $e^{k}-1\\approx0.016129$, not the force $k$ itself. Doubling solves $e^{kt}=2$, so $t=\\ln 2/k\\approx43.3217$.",
       "difficulty_level": "5/5",
@@ -186,10 +186,10 @@
         true
       ],
       "tactical_explanations": [
-        "**A.** → False\n\nRead the two terminal levels from the overview (or the figure).\n\n$$f(13)\\approx174.9485$$\n\n$$g(13)\\approx155.2328$$\n\n$$174.9485 > 155.2328$$.\n\nSo the statement is False.",
-        "**B.** → False\n\nCompute the discrete force and compare with $k$.\n\n$$\\ln(1.02)\\approx0.019803$$\n\n$$0.029 > 0.019803$$.\n\nSo the statement is False.",
-        "**C.** → False\n\nRelative gap against the larger level:\n\n$$\\frac{|f-g|}{\\max(f,g)}\\approx0.112694$$\n\n$$0.112694 \\ge 0.05$$.\n\nSo the statement is False.",
-        "**D.** → True\n\n$$t_{\\mathrm{cont}}=\\frac{\\ln 2}{0.029}\\approx23.9016$$\n\n$$t_{\\mathrm{disc}}=\\frac{\\ln 2}{\\ln(1.02)}\\approx35.0028$$\n\n$$23.9016 < 35.0028$$.\n\nSo the statement is True.",
+        "**A.** → False\n\nRead the two terminal levels from the overview (or the figure).\n\n$$f(13)\\approx174.9485$$\n\n$$g(13)\\approx155.2328$$\n\n$$174.9485 > 155.2328.$$\n\nSo the statement is False.",
+        "**B.** → False\n\nCompute the discrete force and compare with $k$.\n\n$$\\ln(1.02)\\approx0.019803$$\n\n$$0.029 > 0.019803.$$\n\nSo the statement is False.",
+        "**C.** → False\n\nRelative gap against the larger level:\n\n$$\\frac{|f-g|}{\\max(f,g)}\\approx0.112694$$\n\n$$0.112694 \\ge 0.05.$$\n\nSo the statement is False.",
+        "**D.** → True\n\n$$t_{\\mathrm{cont}}=\\frac{\\ln 2}{0.029}\\approx23.9016$$\n\n$$t_{\\mathrm{disc}}=\\frac{\\ln 2}{\\ln(1.02)}\\approx35.0028$$\n\n$$23.9016 < 35.0028.$$\n\nSo the statement is True.",
         "**E.** → True\n\nAlgebraically,\n\n$$\\ln\\frac{Pe^{kt}}{P a^{t}}=(k-\\ln a)t$$\n\n$$=(0.029-0.019803)\\cdot13\\approx0.119566.$$\n\nDirect evaluation of $\\ln(f/g)$ recovers the same number, so the identity holds.\n\nSo the statement is True."
       ],
       "solution_overview": "Continuous forecast $f(t)=120e^{0.029t}$ versus discrete $g(t)=120(1.02)^{t}$. At $t=13$:\n\n$$f(13)\\approx174.9485,\\quad g(13)\\approx155.2328.$$\n\nEquivalent discrete force $\\ln(1.02)\\approx0.019803$. Doubling times $23.9016$ (continuous) and $35.0028$ (discrete).",
@@ -220,10 +220,10 @@
         true
       ],
       "tactical_explanations": [
-        "**A.** → False\n\nSubstitute into Newton's law.\n\n$$T(37)=15+(60)e^{-1.887}$$\n\n$$\\approx24.0915$$\n\n$$24.0915 < 30$$.\n\nSo the statement is False.",
+        "**A.** → False\n\nSubstitute into Newton's law.\n\n$$T(37)=15+(60)e^{-1.887}$$\n\n$$\\approx24.0915$$\n\n$$24.0915 < 30.$$\n\nSo the statement is False.",
         "**B.** → False\n\nBecause $e^{-kt}\\in(0,1)$ for finite $t>0$ and $T_0>T_a$,\n\n$$T(t)-T_a=(T_0-T_a)e^{-kt}>0.$$\n\nNumerically $T(37)\\approx24.0915>15$.\n\nSo the statement is False.",
-        "**C.** → False\n\nThe long-run limit of Newton's law is the ambient temperature, not $T_0$:\n\n$$\\lim_{t\\to\\infty}T(t)=T_a=15.$$.\n\nSo the statement is False.",
-        "**D.** → True\n\nSolve $T(t)=30$:\n\n$$t=-\\frac{1}{k}\\ln\\frac{30-15}{75-15}\\approx27.1822$$\n\n$$27.1822 < 37$$.\n\nSo the statement is True.",
+        "**C.** → False\n\nThe long-run limit of Newton's law is the ambient temperature, not $T_0$:\n\n$$\\lim_{t\\to\\infty}T(t)=T_a=15..$$\n\nSo the statement is False.",
+        "**D.** → True\n\nSolve $T(t)=30$:\n\n$$t=-\\frac{1}{k}\\ln\\frac{30-15}{75-15}\\approx27.1822$$\n\n$$27.1822 < 37.$$\n\nSo the statement is True.",
         "**E.** → True\n\nRearrange the model:\n\n$$T(t)-T_a=(T_0-T_a)e^{-kt}.$$\n\nAt $t=37$ the right-hand side equals $9.0915$, matching $T(37)-T_a$.\n\nSo the statement is True."
       ],
       "solution_overview": "Newton cooling: $T(t)=T_a+(T_0-T_a)e^{-kt}$ with $T_0=75$, $T_a=15$, $k=0.051$.\n\n$$T(37)=15+(75-15)e^{-0.051\\cdot37}\\approx24.0915.$$\n\nTime to reach $30$ solves $t=-\\ln\\frac{30-T_a}{T_0-T_a}/k\\approx27.1822$.",
@@ -254,11 +254,11 @@
         false
       ],
       "tactical_explanations": [
-        "**A.** → False\n\n$$N(11)=1000\\cdot(2)^{3.6667}=12699.2084$$\n\n$$12699.2084 \\le 20000$$.\n\nSo the statement is False.",
+        "**A.** → False\n\n$$N(11)=1000\\cdot(2)^{3.6667}=12699.2084$$\n\n$$12699.2084 \\le 20000.$$\n\nSo the statement is False.",
         "**B.** → False\n\nRewrite the period model as an exponential:\n\n$$(2)^{t/3}=e^{(t/3)\\ln(2)}=e^{kt}$$\n\nwith $k=\\ln(2)/3\\approx0.231049$. Thus the continuous force reproduces $N(t)$ identically.\n\nSo the statement is False.",
-        "**C.** → True\n\n$$\\frac{t}{\\text{period}}=\\frac{11}{3}=3.6667$$\n\n$$3.6667 > 3$$.\n\nSo the statement is True.",
+        "**C.** → True\n\n$$\\frac{t}{\\text{period}}=\\frac{11}{3}=3.6667$$\n\n$$3.6667 > 3.$$\n\nSo the statement is True.",
         "**D.** → True\n\nEach period multiplies by $2$, not necessarily by $2$. Doubling every period would require factor $2$. Here the factor is $2$, so the claim holds.\n\nSo the statement is True.",
-        "**E.** → False\n\nSolve $N(t)=20000$:\n\n$$t=\\frac{\\ln(20000/1000)}{k}\\approx12.9658$$\n\n$$12.9658 \\ge 11$$.\n\nSo the statement is False."
+        "**E.** → False\n\nSolve $N(t)=20000$:\n\n$$t=\\frac{\\ln(20000/1000)}{k}\\approx12.9658$$\n\n$$12.9658 \\ge 11.$$\n\nSo the statement is False."
       ],
       "solution_overview": "$N(t)=1000\\cdot(2)^{t/3}$. Equivalent continuous force $k=\\ln(2)/3\\approx0.231049$. At $t=11$, after $3.6667$ growth periods, $N\\approx12699.2084$. Time to reach $20000$ is $t=\\ln(20000/1000)/k\\approx12.9658$.",
       "difficulty_level": "3/5",
@@ -288,11 +288,11 @@
         true
       ],
       "tactical_explanations": [
-        "**A.** → False\n\n$$f(12)\\approx2.58$$ million.\n\n$$2.58 \\le 10$$.\n\nSo the statement is False.",
-        "**B.** → False\n\n$$f(12)\\approx2.58$$ million.\n\n$$2.58 \\le 3$$.\n\nSo the statement is False.",
+        "**A.** → False\n\n$$f(12)\\approx2.58$$ million.\n\n$$2.58 \\le 10.$$\n\nSo the statement is False.",
+        "**B.** → False\n\n$$f(12)\\approx2.58$$ million.\n\n$$2.58 \\le 3.$$\n\nSo the statement is False.",
         "**C.** → False\n\nThe stem measures $f$ in millions. At $t=12$, $f(12)\\approx2.58$ million, i.e. about $2579992.9$ people.\n\nSo the statement is False.",
         "**D.** → True\n\nOne million residents is $10^{6}$ people, so\n\n$$f_{\\mathrm{people}}=f_{\\mathrm{million}}\\cdot 10^{6}.$$\n\nAt $t=12$ that conversion yields about $2579992.9$ people.\n\nSo the statement is True.",
-        "**E.** → True\n\nIn $f(t)=P_0 e^{kt}$ the continuous annual force is $k$.\n\n$$100k=3.$$.\n\nSo the statement is True."
+        "**E.** → True\n\nIn $f(t)=P_0 e^{kt}$ the continuous annual force is $k$.\n\n$$100k=3..$$\n\nSo the statement is True."
       ],
       "solution_overview": "Delta is modelled by $f(t)=1.8\\,e^{0.03t}$ where $f$ is in **millions** of residents.\n\n$$f(12)=1.8\\,e^{0.03\\cdot12}\\approx2.58\\text{ million}.$$\n\nIn people that is about $2579992.9$. The continuous force $k=0.03$ is a $100k=3\\%$ continuous annual rate, not a headcount.",
       "difficulty_level": "4/5",
@@ -321,10 +321,10 @@
         true
       ],
       "tactical_explanations": [
-        "**A.** → False\n\nRead the two terminal levels from the overview (or the figure).\n\n$$f(7)\\approx67.0892$$\n\n$$g(7)\\approx70.355$$\n\n$$67.0892 \\le 70.355$$.\n\nSo the statement is False.",
-        "**B.** → False\n\nCompute the discrete force and compare with $k$.\n\n$$\\ln(1.05)\\approx0.04879$$\n\n$$0.042 \\le 0.04879$$.\n\nSo the statement is False.",
-        "**C.** → True\n\nRelative gap against the larger level:\n\n$$\\frac{|f-g|}{\\max(f,g)}\\approx0.046419$$\n\n$$0.046419 < 0.05$$.\n\nSo the statement is True.",
-        "**D.** → False\n\n$$t_{\\mathrm{cont}}=\\frac{\\ln 2}{0.042}\\approx16.5035$$\n\n$$t_{\\mathrm{disc}}=\\frac{\\ln 2}{\\ln(1.05)}\\approx14.2067$$\n\n$$16.5035 \\ge 14.2067$$.\n\nSo the statement is False.",
+        "**A.** → False\n\nRead the two terminal levels from the overview (or the figure).\n\n$$f(7)\\approx67.0892$$\n\n$$g(7)\\approx70.355$$\n\n$$67.0892 \\le 70.355.$$\n\nSo the statement is False.",
+        "**B.** → False\n\nCompute the discrete force and compare with $k$.\n\n$$\\ln(1.05)\\approx0.04879$$\n\n$$0.042 \\le 0.04879.$$\n\nSo the statement is False.",
+        "**C.** → True\n\nRelative gap against the larger level:\n\n$$\\frac{|f-g|}{\\max(f,g)}\\approx0.046419$$\n\n$$0.046419 < 0.05.$$\n\nSo the statement is True.",
+        "**D.** → False\n\n$$t_{\\mathrm{cont}}=\\frac{\\ln 2}{0.042}\\approx16.5035$$\n\n$$t_{\\mathrm{disc}}=\\frac{\\ln 2}{\\ln(1.05)}\\approx14.2067$$\n\n$$16.5035 \\ge 14.2067.$$\n\nSo the statement is False.",
         "**E.** → True\n\nAlgebraically,\n\n$$\\ln\\frac{Pe^{kt}}{P a^{t}}=(k-\\ln a)t$$\n\n$$=(0.042-0.04879)\\cdot7\\approx-0.047531.$$\n\nDirect evaluation of $\\ln(f/g)$ recovers the same number, so the identity holds.\n\nSo the statement is True."
       ],
       "solution_overview": "Continuous forecast $f(t)=50e^{0.042t}$ versus discrete $g(t)=50(1.05)^{t}$. At $t=7$:\n\n$$f(7)\\approx67.0892,\\quad g(7)\\approx70.355.$$\n\nEquivalent discrete force $\\ln(1.05)\\approx0.04879$. Doubling times $16.5035$ (continuous) and $14.2067$ (discrete).",
@@ -354,11 +354,11 @@
         true
       ],
       "tactical_explanations": [
-        "**A.** → True\n\n$$t=\\frac{\\ln 2}{\\ln(1.03)}\\approx23.4498$$\n\n$$23.4498 < 25$$.\n\nSo the statement is True.",
-        "**B.** → False\n\n$$\\left|\\frac{0.72}{r}-t\\right|=\\left|24-23.4498\\right|\\approx0.5502$$\n\n$$0.5502 \\ge 0.5$$.\n\nSo the statement is False.",
-        "**C.** → False\n\n$$(1.03)^{10}\\approx1.343916$$\n\n$$1.343916 \\le 1.5$$.\n\nSo the statement is False.",
+        "**A.** → True\n\n$$t=\\frac{\\ln 2}{\\ln(1.03)}\\approx23.4498$$\n\n$$23.4498 < 25.$$\n\nSo the statement is True.",
+        "**B.** → False\n\n$$\\left|\\frac{0.72}{r}-t\\right|=\\left|24-23.4498\\right|\\approx0.5502$$\n\n$$0.5502 \\ge 0.5.$$\n\nSo the statement is False.",
+        "**C.** → False\n\n$$(1.03)^{10}\\approx1.343916$$\n\n$$1.343916 \\le 1.5.$$\n\nSo the statement is False.",
         "**D.** → False\n\nThe linearised $1/r=33.3333$ is not the exact doubling time $23.4498$. Exact doubling uses $\\ln 2/\\ln(1+r)$.\n\nSo the statement is False.",
-        "**E.** → True\n\n$$23.4498 > 8$$.\n\nSo the statement is True."
+        "**E.** → True\n\n$$23.4498 > 8.$$\n\nSo the statement is True."
       ],
       "solution_overview": "Discrete annual growth $f(t)=f_0\\cdot(1.03)^{t}$. Exact doubling:\n\n$$t=\\frac{\\ln 2}{\\ln(1.03)}\\approx23.4498.$$\n\nRule-of-$72$ estimate $0.72/r$ with $r=0.03$ gives $\\approx24$. Ten-year factor $(1.03)^{10}\\approx1.343916$.",
       "difficulty_level": "1/5",
@@ -391,7 +391,7 @@
         "**B.** → False\n\n$$\\ln f(17)\\approx5.5036,\\quad \\ln f(9)\\approx5.2716$$\n\nSince $k>0$ and $t2>t1$, the log-level rises.\n\nSo the statement is False.",
         "**C.** → False\n\nA semi-log plot of pure exponential growth is a straight line with slope $k$.\n\nSo the statement is False.",
         "**D.** → True\n\n$$\\frac{f(17)}{f(9)}=e^{k(17-9)}=e^{0.232}\\approx1.26112.$$\n\nDirect division of the recovered levels matches.\n\nSo the statement is True.",
-        "**E.** → True\n\n$$0.029 > 0.02$$.\n\nSo the statement is True."
+        "**E.** → True\n\n$$0.029 > 0.02.$$\n\nSo the statement is True."
       ],
       "solution_overview": "For $f(t)=150e^{0.029t}$, the semi-log path $t\\mapsto\\ln f(t)$ is linear with slope $k=0.029$. Between $t=9$ and $t=17$,\n\n$$\\frac{\\ln f(17)-\\ln f(9)}{17-9}=0.029.$$\n\nLevels: $f(9)\\approx194.7341$, $f(17)\\approx245.5831$.",
       "difficulty_level": "2/5",
@@ -423,9 +423,9 @@
       "tactical_explanations": [
         "**A.** → False\n\nSubstitute the recovered force into the continuous level formula.\n\n$$f(24)=15\\,e^{0.024\\cdot24}$$\n\n$$=15\\,e^{0.576}$$\n\n$$\\approx26.6836$$\n\nCompare with the claim.\n\nSo the statement is False.",
         "**B.** → False\n\nTwo closed forms agree for all $t$ only when their one-year multipliers match.\n\n$$1+0.024=1.024$$\n\n$$e^{0.024}\\approx1.02429$$\n\nSince $1.024\\neq e^{0.024}$, the discrete replacement $(1+0.024)^{t}$ is not identical to $e^{0.024t}$. At the concrete horizon $t=24$ the values already differ (26.5027 versus 26.6836).\n\nSo the statement is False.",
-        "**C.** → True\n\nUnder continuous force $k$, the exact one-year multiplier is $e^{k}$, not $1+k$.\n\n$$e^{0.024}-1\\approx0.02429$$\n\n$$1+0.024=1.024$$\n\nFor $k>0$ the inequality $e^{k}>1+k$ holds, so the continuous year-over-year growth factor exceeds $1+0.024$.\n\n$$1.02429 > 1.024$$.\n\nSo the statement is True.",
-        "**D.** → True\n\nDoubling means $f(t)=2f(0)$, which forces $e^{kt}=2$.\n\n$$t=\\frac{\\ln 2}{0.024}$$\n\n$$t\\approx28.8811$$\n\nCompare with $40$:\n\n$$28.8811 < 40$$.\n\nSo the statement is True.",
-        "**E.** → True\n\nFrom the overview, we have $f(24)\\approx26.6836$ and $g(24)\\approx26.5027$. Compare those two levels directly:\n\n$$g(24)=15(1+0.024)^{24}\\approx26.5027$$\n\n$$f(24)\\approx26.6836$$\n\n$$26.5027 < 26.6836$$.\n\nSo the statement is True."
+        "**C.** → True\n\nUnder continuous force $k$, the exact one-year multiplier is $e^{k}$, not $1+k$.\n\n$$e^{0.024}-1\\approx0.02429$$\n\n$$1+0.024=1.024$$\n\nFor $k>0$ the inequality $e^{k}>1+k$ holds, so the continuous year-over-year growth factor exceeds $1+0.024$.\n\n$$1.02429 > 1.024.$$\n\nSo the statement is True.",
+        "**D.** → True\n\nDoubling means $f(t)=2f(0)$, which forces $e^{kt}=2$.\n\n$$t=\\frac{\\ln 2}{0.024}$$\n\n$$t\\approx28.8811$$\n\nCompare with $40$:\n\n$$28.8811 < 40.$$\n\nSo the statement is True.",
+        "**E.** → True\n\nFrom the overview, we have $f(24)\\approx26.6836$ and $g(24)\\approx26.5027$. Compare those two levels directly:\n\n$$g(24)=15(1+0.024)^{24}\\approx26.5027$$\n\n$$f(24)\\approx26.6836$$\n\n$$26.5027 < 26.6836.$$\n\nSo the statement is True."
       ],
       "solution_overview": "The overview recovers the continuous census model\n\n$$f(t)=15\\,e^{0.024t}$$\n\nfor Prism, with $f$ in millions of residents. The continuous annual force is $k=0.024$. At $t=24$,\n\n$$f(24)=15\\,e^{0.024\\cdot24}\\approx26.6836$$\n\nThe naive discrete rival $g(t)=15(1+0.024)^{t}$ gives $g(24)\\approx26.5027$. One-year continuous growth is $e^{k}-1\\approx0.02429$, not the force $k$ itself. Doubling solves $e^{kt}=2$, so $t=\\ln 2/k\\approx28.8811$.",
       "difficulty_level": "3/5",
@@ -456,10 +456,10 @@
       ],
       "tactical_explanations": [
         "**A.** → False\n\nTake natural logs of the ratio definition.\n\n$$\\ln y(t)=\\ln Y(t)-\\ln N(t)$$\n\n$$=\\ln Y_0+gt-(\\ln N_0+pt)$$\n\n$$=\\ln(Y_0/N_0)+(g-p)t$$\n\nHence the continuous force on $y$ is exactly $g-p=0.026-0.006=0.02$.\n\nSo the statement is False.",
-        "**B.** → True\n\nThe overview recovered $y(19)\\approx73.1142$ and $y_0=50$.\n\n$$1.4\\,y_0=70$$\n\n$$y(19)=50\\,e^{0.02\\cdot19}\\approx73.1142$$\n\n$$73.1142 > 70$$.\n\nSo the statement is True.",
-        "**C.** → False\n\nAdding the two forces would describe a product $Y\\cdot N$, not the ratio $Y/N$.\n\n$$\\frac{d}{dt}\\ln(Y/N)=g-p=0.02$$\n\n$$g+p=0.032$$.\n\nSo the statement is False.",
+        "**B.** → True\n\nThe overview recovered $y(19)\\approx73.1142$ and $y_0=50$.\n\n$$1.4\\,y_0=70$$\n\n$$y(19)=50\\,e^{0.02\\cdot19}\\approx73.1142$$\n\n$$73.1142 > 70.$$\n\nSo the statement is True.",
+        "**C.** → False\n\nAdding the two forces would describe a product $Y\\cdot N$, not the ratio $Y/N$.\n\n$$\\frac{d}{dt}\\ln(Y/N)=g-p=0.02$$\n\n$$g+p=0.032.$$\n\nSo the statement is False.",
         "**D.** → True\n\nCompute the ratio of the recovered aggregate paths and compare with $y(19)$.\n\n$$\\frac{Y(19)}{N(19)}=\\frac{819.4293}{11.2075}\\approx73.1142$$\n\n$$y(19)\\approx73.1142$$\n\nThe absolute gap is about $0$, which is numerical noise, so the identity holds.\n\nSo the statement is True.",
-        "**E.** → True\n\nThe additive-trap path would be\n\n$$y_{\\mathrm{wrong}}(t)=50\\,e^{(0.026+0.006)t}\\approx91.8377$$\n\nwhile the true level is\n\n$$y(19)\\approx73.1142$$\n\n$$91.8377 > 73.1142$$.\n\nSo the statement is True."
+        "**E.** → True\n\nThe additive-trap path would be\n\n$$y_{\\mathrm{wrong}}(t)=50\\,e^{(0.026+0.006)t}\\approx91.8377$$\n\nwhile the true level is\n\n$$y(19)\\approx73.1142$$\n\n$$91.8377 > 73.1142.$$\n\nSo the statement is True."
       ],
       "solution_overview": "Aggregate real GDP (billions) follows $Y(t)=500\\,e^{0.026t}$ while population (millions) follows $N(t)=10\\,e^{0.006t}$. GDP per capita is the ratio\n\n$$y(t)=\\frac{Y(t)}{N(t)}=50\\,e^{(0.026-0.006)t}=50\\,e^{0.02t}$$\n\nSo the continuous per-capita force is the difference $g-p=0.02$, not a sum. At $t=19$:\n\n$$y(19)\\approx73.1142,\\quad Y(19)\\approx819.4293,\\quad N(19)\\approx11.2075.$$",
       "difficulty_level": "4/5",
@@ -491,7 +491,7 @@
       "tactical_explanations": [
         "**A.** → False\n\nAt the switch, $f(5)\\approx2418.4992$. Compare with the target $2800$:\n\n$$2418.4992 < 2800$$\n\nBecause the switch level is still below the target and $k_2=0.018>0$, solve\n\n$$f(5)\\,e^{0.018(t-5)}=2800$$\n\n$$t=5+\\frac{\\ln(2800/2418.4992)}{0.018}\\approx13.1373$$\n\nSince $13.1373>5$, the first hitting time is after the switch.\n\nSo the statement is False.",
         "**B.** → True\n\nConstant-force extrapolation with $k=0.038$ would solve\n\n$$2000\\,e^{0.038t}=2800$$\n\n$$t=\\frac{\\ln(2800/2000)}{0.038}\\approx8.8545$$\n\nThe piecewise hitting time is $\\approx13.1373$. Those times differ, so ignoring the switch changes the answer.\n\nSo the statement is True.",
-        "**C.** → False\n\nEvaluate the piecewise path at the switch only.\n\n$$f(5)\\approx2418.4992$$\n\n$$2418.4992 < 2800$$.\n\nSo the statement is False.",
+        "**C.** → False\n\nEvaluate the piecewise path at the switch only.\n\n$$f(5)\\approx2418.4992$$\n\n$$2418.4992 < 2800.$$\n\nSo the statement is False.",
         "**D.** → True\n\nOn $[0,5]$ the force is constant $k_1$, so\n\n$$\\frac{1}{T}\\ln\\frac{f(5)}{P_0}=\\frac{1}{5}\\ln\\frac{2418.4992}{2000}$$\n\n$$\\approx0.038$$\n\nwhich matches $k_1=0.038$.\n\nSo the statement is True.",
         "**E.** → True\n\nFrom $f(5)\\,e^{k_2(t-T)}=2800$ take logs:\n\n$$k_2(t-T)=\\ln\\frac{2800}{f(5)}$$\n\n$$t-T=\\frac{\\ln(2800/f(5))}{0.018}$$\n\nThat is exactly.\n\nSo the statement is True."
       ],
@@ -524,10 +524,10 @@
       ],
       "tactical_explanations": [
         "**A.** → True\n\nTake natural logs of the ratio definition.\n\n$$\\ln y(t)=\\ln Y(t)-\\ln N(t)$$\n\n$$=\\ln Y_0+gt-(\\ln N_0+pt)$$\n\n$$=\\ln(Y_0/N_0)+(g-p)t$$\n\nHence the continuous force on $y$ is exactly $g-p=0.023-0.006=0.017$.\n\nSo the statement is True.",
-        "**B.** → False\n\nThe overview recovered $y(18)\\approx67.8991$ and $y_0=50$.\n\n$$1.4\\,y_0=70$$\n\n$$y(18)=50\\,e^{0.017\\cdot18}\\approx67.8991$$\n\n$$67.8991 \\le 70$$.\n\nSo the statement is False.",
-        "**C.** → False\n\nAdding the two forces would describe a product $Y\\cdot N$, not the ratio $Y/N$.\n\n$$\\frac{d}{dt}\\ln(Y/N)=g-p=0.017$$\n\n$$g+p=0.029$$.\n\nSo the statement is False.",
+        "**B.** → False\n\nThe overview recovered $y(18)\\approx67.8991$ and $y_0=50$.\n\n$$1.4\\,y_0=70$$\n\n$$y(18)=50\\,e^{0.017\\cdot18}\\approx67.8991$$\n\n$$67.8991 \\le 70.$$\n\nSo the statement is False.",
+        "**C.** → False\n\nAdding the two forces would describe a product $Y\\cdot N$, not the ratio $Y/N$.\n\n$$\\frac{d}{dt}\\ln(Y/N)=g-p=0.017$$\n\n$$g+p=0.029.$$\n\nSo the statement is False.",
         "**D.** → True\n\nCompute the ratio of the recovered aggregate paths and compare with $y(18)$.\n\n$$\\frac{Y(18)}{N(18)}=\\frac{605.1429}{8.9124}\\approx67.8991$$\n\n$$y(18)\\approx67.8991$$\n\nThe absolute gap is about $0$, which is numerical noise, so the identity holds.\n\nSo the statement is True.",
-        "**E.** → True\n\nThe additive-trap path would be\n\n$$y_{\\mathrm{wrong}}(t)=50\\,e^{(0.023+0.006)t}\\approx84.2698$$\n\nwhile the true level is\n\n$$y(18)\\approx67.8991$$\n\n$$84.2698 > 67.8991$$.\n\nSo the statement is True."
+        "**E.** → True\n\nThe additive-trap path would be\n\n$$y_{\\mathrm{wrong}}(t)=50\\,e^{(0.023+0.006)t}\\approx84.2698$$\n\nwhile the true level is\n\n$$y(18)\\approx67.8991$$\n\n$$84.2698 > 67.8991.$$\n\nSo the statement is True."
       ],
       "solution_overview": "Aggregate real GDP (billions) follows $Y(t)=400\\,e^{0.023t}$ while population (millions) follows $N(t)=8\\,e^{0.006t}$. GDP per capita is the ratio\n\n$$y(t)=\\frac{Y(t)}{N(t)}=50\\,e^{(0.023-0.006)t}=50\\,e^{0.017t}$$\n\nSo the continuous per-capita force is the difference $g-p=0.017$, not a sum. At $t=18$:\n\n$$y(18)\\approx67.8991,\\quad Y(18)\\approx605.1429,\\quad N(18)\\approx8.9124.$$",
       "difficulty_level": "1/5",
@@ -556,11 +556,11 @@
         true
       ],
       "tactical_explanations": [
-        "**A.** → False\n\n$$f(8)\\approx3.606$$ million.\n\n$$3.606 \\le 10$$.\n\nSo the statement is False.",
-        "**B.** → True\n\n$$f(8)\\approx3.606$$ million.\n\n$$3.606 > 3$$.\n\nSo the statement is True.",
+        "**A.** → False\n\n$$f(8)\\approx3.606$$ million.\n\n$$3.606 \\le 10.$$\n\nSo the statement is False.",
+        "**B.** → True\n\n$$f(8)\\approx3.606$$ million.\n\n$$3.606 > 3.$$\n\nSo the statement is True.",
         "**C.** → False\n\nThe stem measures $f$ in millions. At $t=8$, $f(8)\\approx3.606$ million, i.e. about $3606047.5$ people.\n\nSo the statement is False.",
         "**D.** → True\n\nOne million residents is $10^{6}$ people, so\n\n$$f_{\\mathrm{people}}=f_{\\mathrm{million}}\\cdot 10^{6}.$$\n\nAt $t=8$ that conversion yields about $3606047.5$ people.\n\nSo the statement is True.",
-        "**E.** → True\n\nIn $f(t)=P_0 e^{kt}$ the continuous annual force is $k$.\n\n$$100k=2.3.$$.\n\nSo the statement is True."
+        "**E.** → True\n\nIn $f(t)=P_0 e^{kt}$ the continuous annual force is $k$.\n\n$$100k=2.3..$$\n\nSo the statement is True."
       ],
       "solution_overview": "Ulrich is modelled by $f(t)=3\\,e^{0.023t}$ where $f$ is in **millions** of residents.\n\n$$f(8)=3\\,e^{0.023\\cdot8}\\approx3.606\\text{ million}.$$\n\nIn people that is about $3606047.5$. The continuous force $k=0.023$ is a $100k=2.3\\%$ continuous annual rate, not a headcount.",
       "difficulty_level": "2/5",
@@ -589,10 +589,10 @@
         true
       ],
       "tactical_explanations": [
-        "**A.** → False\n\nRead the two terminal levels from the overview (or the figure).\n\n$$f(13)\\approx174.9485$$\n\n$$g(13)\\approx155.2328$$\n\n$$174.9485 > 155.2328$$.\n\nSo the statement is False.",
-        "**B.** → True\n\nCompute the discrete force and compare with $k$.\n\n$$\\ln(1.02)\\approx0.019803$$\n\n$$0.029 > 0.019803$$.\n\nSo the statement is True.",
-        "**C.** → False\n\nRelative gap against the larger level:\n\n$$\\frac{|f-g|}{\\max(f,g)}\\approx0.112694$$\n\n$$0.112694 \\ge 0.05$$.\n\nSo the statement is False.",
-        "**D.** → True\n\n$$t_{\\mathrm{cont}}=\\frac{\\ln 2}{0.029}\\approx23.9016$$\n\n$$t_{\\mathrm{disc}}=\\frac{\\ln 2}{\\ln(1.02)}\\approx35.0028$$\n\n$$23.9016 < 35.0028$$.\n\nSo the statement is True.",
+        "**A.** → False\n\nRead the two terminal levels from the overview (or the figure).\n\n$$f(13)\\approx174.9485$$\n\n$$g(13)\\approx155.2328$$\n\n$$174.9485 > 155.2328.$$\n\nSo the statement is False.",
+        "**B.** → True\n\nCompute the discrete force and compare with $k$.\n\n$$\\ln(1.02)\\approx0.019803$$\n\n$$0.029 > 0.019803.$$\n\nSo the statement is True.",
+        "**C.** → False\n\nRelative gap against the larger level:\n\n$$\\frac{|f-g|}{\\max(f,g)}\\approx0.112694$$\n\n$$0.112694 \\ge 0.05.$$\n\nSo the statement is False.",
+        "**D.** → True\n\n$$t_{\\mathrm{cont}}=\\frac{\\ln 2}{0.029}\\approx23.9016$$\n\n$$t_{\\mathrm{disc}}=\\frac{\\ln 2}{\\ln(1.02)}\\approx35.0028$$\n\n$$23.9016 < 35.0028.$$\n\nSo the statement is True.",
         "**E.** → True\n\nAlgebraically,\n\n$$\\ln\\frac{Pe^{kt}}{P a^{t}}=(k-\\ln a)t$$\n\n$$=(0.029-0.019803)\\cdot13\\approx0.119566.$$\n\nDirect evaluation of $\\ln(f/g)$ recovers the same number, so the identity holds.\n\nSo the statement is True."
       ],
       "solution_overview": "Continuous forecast $f(t)=120e^{0.029t}$ versus discrete $g(t)=120(1.02)^{t}$. At $t=13$:\n\n$$f(13)\\approx174.9485,\\quad g(13)\\approx155.2328.$$\n\nEquivalent discrete force $\\ln(1.02)\\approx0.019803$. Doubling times $23.9016$ (continuous) and $35.0028$ (discrete).",
@@ -625,9 +625,9 @@
       "tactical_explanations": [
         "**A.** → True\n\nSubstitute the recovered force into the continuous level formula.\n\n$$f(31)=12\\,e^{0.017\\cdot31}$$\n\n$$=12\\,e^{0.527}$$\n\n$$\\approx20.3261$$\n\nCompare with the claim.\n\nSo the statement is True.",
         "**B.** → False\n\nTwo closed forms agree for all $t$ only when their one-year multipliers match.\n\n$$1+0.017=1.017$$\n\n$$e^{0.017}\\approx1.017145$$\n\nSince $1.017\\neq e^{0.017}$, the discrete replacement $(1+0.017)^{t}$ is not identical to $e^{0.017t}$. At the concrete horizon $t=31$ the values already differ (20.2363 versus 20.3261).\n\nSo the statement is False.",
-        "**C.** → True\n\nUnder continuous force $k$, the exact one-year multiplier is $e^{k}$, not $1+k$.\n\n$$e^{0.017}-1\\approx0.017145$$\n\n$$1+0.017=1.017$$\n\nFor $k>0$ the inequality $e^{k}>1+k$ holds, so the continuous year-over-year growth factor exceeds $1+0.017$.\n\n$$1.017145 > 1.017$$.\n\nSo the statement is True.",
-        "**D.** → False\n\nDoubling means $f(t)=2f(0)$, which forces $e^{kt}=2$.\n\n$$t=\\frac{\\ln 2}{0.017}$$\n\n$$t\\approx40.7734$$\n\nCompare with $40$:\n\n$$40.7734 \\ge 40$$.\n\nSo the statement is False.",
-        "**E.** → True\n\nFrom the overview, we have $f(31)\\approx20.3261$ and $g(31)\\approx20.2363$. Compare those two levels directly:\n\n$$g(31)=12(1+0.017)^{31}\\approx20.2363$$\n\n$$f(31)\\approx20.3261$$\n\n$$20.2363 < 20.3261$$.\n\nSo the statement is True."
+        "**C.** → True\n\nUnder continuous force $k$, the exact one-year multiplier is $e^{k}$, not $1+k$.\n\n$$e^{0.017}-1\\approx0.017145$$\n\n$$1+0.017=1.017$$\n\nFor $k>0$ the inequality $e^{k}>1+k$ holds, so the continuous year-over-year growth factor exceeds $1+0.017$.\n\n$$1.017145 > 1.017.$$\n\nSo the statement is True.",
+        "**D.** → False\n\nDoubling means $f(t)=2f(0)$, which forces $e^{kt}=2$.\n\n$$t=\\frac{\\ln 2}{0.017}$$\n\n$$t\\approx40.7734$$\n\nCompare with $40$:\n\n$$40.7734 \\ge 40.$$\n\nSo the statement is False.",
+        "**E.** → True\n\nFrom the overview, we have $f(31)\\approx20.3261$ and $g(31)\\approx20.2363$. Compare those two levels directly:\n\n$$g(31)=12(1+0.017)^{31}\\approx20.2363$$\n\n$$f(31)\\approx20.3261$$\n\n$$20.2363 < 20.3261.$$\n\nSo the statement is True."
       ],
       "solution_overview": "The overview recovers the continuous census model\n\n$$f(t)=12\\,e^{0.017t}$$\n\nfor Nimbus, with $f$ in millions of residents. The continuous annual force is $k=0.017$. At $t=31$,\n\n$$f(31)=12\\,e^{0.017\\cdot31}\\approx20.3261$$\n\nThe naive discrete rival $g(t)=12(1+0.017)^{t}$ gives $g(31)\\approx20.2363$. One-year continuous growth is $e^{k}-1\\approx0.017145$, not the force $k$ itself. Doubling solves $e^{kt}=2$, so $t=\\ln 2/k\\approx40.7734$.",
       "difficulty_level": "4/5",
@@ -657,10 +657,10 @@
       ],
       "tactical_explanations": [
         "**A.** → True\n\nTake natural logs of the ratio definition.\n\n$$\\ln y(t)=\\ln Y(t)-\\ln N(t)$$\n\n$$=\\ln Y_0+gt-(\\ln N_0+pt)$$\n\n$$=\\ln(Y_0/N_0)+(g-p)t$$\n\nHence the continuous force on $y$ is exactly $g-p=0.037-0.017=0.02$.\n\nSo the statement is True.",
-        "**B.** → False\n\nThe overview recovered $y(16)\\approx68.8564$ and $y_0=50$.\n\n$$1.4\\,y_0=70$$\n\n$$y(16)=50\\,e^{0.02\\cdot16}\\approx68.8564$$\n\n$$68.8564 \\le 70$$.\n\nSo the statement is False.",
-        "**C.** → False\n\nAdding the two forces would describe a product $Y\\cdot N$, not the ratio $Y/N$.\n\n$$\\frac{d}{dt}\\ln(Y/N)=g-p=0.02$$\n\n$$g+p=0.054$$.\n\nSo the statement is False.",
+        "**B.** → False\n\nThe overview recovered $y(16)\\approx68.8564$ and $y_0=50$.\n\n$$1.4\\,y_0=70$$\n\n$$y(16)=50\\,e^{0.02\\cdot16}\\approx68.8564$$\n\n$$68.8564 \\le 70.$$\n\nSo the statement is False.",
+        "**C.** → False\n\nAdding the two forces would describe a product $Y\\cdot N$, not the ratio $Y/N$.\n\n$$\\frac{d}{dt}\\ln(Y/N)=g-p=0.02$$\n\n$$g+p=0.054.$$\n\nSo the statement is False.",
         "**D.** → True\n\nCompute the ratio of the recovered aggregate paths and compare with $y(16)$.\n\n$$\\frac{Y(16)}{N(16)}=\\frac{632.66}{9.1881}\\approx68.8564$$\n\n$$y(16)\\approx68.8564$$\n\nThe absolute gap is about $0$, which is numerical noise, so the identity holds.\n\nSo the statement is True.",
-        "**E.** → True\n\nThe additive-trap path would be\n\n$$y_{\\mathrm{wrong}}(t)=50\\,e^{(0.037+0.017)t}\\approx118.6316$$\n\nwhile the true level is\n\n$$y(16)\\approx68.8564$$\n\n$$118.6316 > 68.8564$$.\n\nSo the statement is True."
+        "**E.** → True\n\nThe additive-trap path would be\n\n$$y_{\\mathrm{wrong}}(t)=50\\,e^{(0.037+0.017)t}\\approx118.6316$$\n\nwhile the true level is\n\n$$y(16)\\approx68.8564$$\n\n$$118.6316 > 68.8564.$$\n\nSo the statement is True."
       ],
       "solution_overview": "Aggregate real GDP (billions) follows $Y(t)=350\\,e^{0.037t}$ while population (millions) follows $N(t)=7\\,e^{0.017t}$. GDP per capita is the ratio\n\n$$y(t)=\\frac{Y(t)}{N(t)}=50\\,e^{(0.037-0.017)t}=50\\,e^{0.02t}$$\n\nSo the continuous per-capita force is the difference $g-p=0.02$, not a sum. At $t=16$:\n\n$$y(16)\\approx68.8564,\\quad Y(16)\\approx632.66,\\quad N(16)\\approx9.1881.$$",
       "difficulty_level": "5/5",
@@ -689,10 +689,10 @@
         true
       ],
       "tactical_explanations": [
-        "**A.** → True\n\n$$t_{\\mathrm{cont}}\\approx11.9508$$\n\n$$t_{\\mathrm{disc}}\\approx12.2941$$\n\n$$11.9508 < 12.2941$$.\n\nSo the statement is True.",
-        "**B.** → True\n\nFrom the overview, $t_{\\mathrm{cont}}\\approx11.9508$.\n\n$$11.9508 < 15$$.\n\nSo the statement is True.",
+        "**A.** → True\n\n$$t_{\\mathrm{cont}}\\approx11.9508$$\n\n$$t_{\\mathrm{disc}}\\approx12.2941$$\n\n$$11.9508 < 12.2941.$$\n\nSo the statement is True.",
+        "**B.** → True\n\nFrom the overview, $t_{\\mathrm{cont}}\\approx11.9508$.\n\n$$11.9508 < 15.$$\n\nSo the statement is True.",
         "**C.** → False\n\nThe linearised estimate is\n\n$$t_{\\mathrm{lin}}=\\frac{20000/10000-1}{0.058}\\approx17.2414$$\n\nwhile the exact continuous time is $11.9508$. They are not equal.\n\nSo the statement is False.",
-        "**D.** → True\n\n$$17.2414 > 11.9508$$.\n\nSo the statement is True.",
+        "**D.** → True\n\n$$17.2414 > 11.9508.$$\n\nSo the statement is True.",
         "**E.** → True\n\n$$P e^{r t_{\\mathrm{cont}}}=10000\\,e^{0.058\\cdot11.9508}\\approx20000$$\n\nwhich matches the goal $20000$ by construction of $t_{\\mathrm{cont}}$.\n\nSo the statement is True."
       ],
       "solution_overview": "Continuous compounding $A(t)=Pe^{rt}$ with $P=10000$, $r=0.058$. Hitting $20000$ solves\n\n$$t=\\frac{\\ln(20000/10000)}{0.058}\\approx11.9508.$$\n\nAnnual discrete compounding at the same nominal rate needs $t=\\ln(20000/10000)/\\ln(1+0.058)\\approx12.2941$. A linearised estimate $(A/P-1)/r\\approx17.2414$ overstates the continuous time.",
@@ -723,11 +723,11 @@
         true
       ],
       "tactical_explanations": [
-        "**A.** → True\n\n$$f(12)\\approx2.58$$ million.\n\n$$2.58 \\le 10$$.\n\nSo the statement is True.",
-        "**B.** → True\n\n$$f(12)\\approx2.58$$ million.\n\n$$2.58 \\le 3$$.\n\nSo the statement is True.",
+        "**A.** → True\n\n$$f(12)\\approx2.58$$ million.\n\n$$2.58 \\le 10.$$\n\nSo the statement is True.",
+        "**B.** → True\n\n$$f(12)\\approx2.58$$ million.\n\n$$2.58 \\le 3.$$\n\nSo the statement is True.",
         "**C.** → False\n\nThe stem measures $f$ in millions. At $t=12$, $f(12)\\approx2.58$ million, i.e. about $2579992.9$ people.\n\nSo the statement is False.",
         "**D.** → True\n\nOne million residents is $10^{6}$ people, so\n\n$$f_{\\mathrm{people}}=f_{\\mathrm{million}}\\cdot 10^{6}.$$\n\nAt $t=12$ that conversion yields about $2579992.9$ people.\n\nSo the statement is True.",
-        "**E.** → True\n\nIn $f(t)=P_0 e^{kt}$ the continuous annual force is $k$.\n\n$$100k=3.$$.\n\nSo the statement is True."
+        "**E.** → True\n\nIn $f(t)=P_0 e^{kt}$ the continuous annual force is $k$.\n\n$$100k=3..$$\n\nSo the statement is True."
       ],
       "solution_overview": "Ulrich is modelled by $f(t)=1.8\\,e^{0.03t}$ where $f$ is in **millions** of residents.\n\n$$f(12)=1.8\\,e^{0.03\\cdot12}\\approx2.58\\text{ million}.$$\n\nIn people that is about $2579992.9$. The continuous force $k=0.03$ is a $100k=3\\%$ continuous annual rate, not a headcount.",
       "difficulty_level": "2/5",
@@ -757,11 +757,11 @@
         true
       ],
       "tactical_explanations": [
-        "**A.** → True\n\n$$t=\\frac{\\ln 2}{\\ln(1.08)}\\approx9.0065$$\n\n$$9.0065 < 10$$.\n\nSo the statement is True.",
-        "**B.** → True\n\n$$\\left|\\frac{0.72}{r}-t\\right|=\\left|9-9.0065\\right|\\approx0.0065$$\n\n$$0.0065 < 0.5$$.\n\nSo the statement is True.",
-        "**C.** → True\n\n$$(1.08)^{10}\\approx2.158925$$\n\n$$2.158925 > 1.5$$.\n\nSo the statement is True.",
+        "**A.** → True\n\n$$t=\\frac{\\ln 2}{\\ln(1.08)}\\approx9.0065$$\n\n$$9.0065 < 10.$$\n\nSo the statement is True.",
+        "**B.** → True\n\n$$\\left|\\frac{0.72}{r}-t\\right|=\\left|9-9.0065\\right|\\approx0.0065$$\n\n$$0.0065 < 0.5.$$\n\nSo the statement is True.",
+        "**C.** → True\n\n$$(1.08)^{10}\\approx2.158925$$\n\n$$2.158925 > 1.5.$$\n\nSo the statement is True.",
         "**D.** → False\n\nThe linearised $1/r=12.5$ is not the exact doubling time $9.0065$. Exact doubling uses $\\ln 2/\\ln(1+r)$.\n\nSo the statement is False.",
-        "**E.** → True\n\n$$9.0065 > 8$$.\n\nSo the statement is True."
+        "**E.** → True\n\n$$9.0065 > 8.$$\n\nSo the statement is True."
       ],
       "solution_overview": "Discrete annual growth $f(t)=f_0\\cdot(1.08)^{t}$. Exact doubling:\n\n$$t=\\frac{\\ln 2}{\\ln(1.08)}\\approx9.0065.$$\n\nRule-of-$72$ estimate $0.72/r$ with $r=0.08$ gives $\\approx9$. Ten-year factor $(1.08)^{10}\\approx2.158925$.",
       "difficulty_level": "3/5",
@@ -791,10 +791,10 @@
         true
       ],
       "tactical_explanations": [
-        "**A.** → True\n\nSubstitute into Newton's law.\n\n$$T(29)=20+(70)e^{-1.334}$$\n\n$$\\approx38.4395$$\n\n$$38.4395 < 40$$.\n\nSo the statement is True.",
+        "**A.** → True\n\nSubstitute into Newton's law.\n\n$$T(29)=20+(70)e^{-1.334}$$\n\n$$\\approx38.4395$$\n\n$$38.4395 < 40.$$\n\nSo the statement is True.",
         "**B.** → True\n\nBecause $e^{-kt}\\in(0,1)$ for finite $t>0$ and $T_0>T_a$,\n\n$$T(t)-T_a=(T_0-T_a)e^{-kt}>0.$$\n\nNumerically $T(29)\\approx38.4395>20$.\n\nSo the statement is True.",
-        "**C.** → False\n\nThe long-run limit of Newton's law is the ambient temperature, not $T_0$:\n\n$$\\lim_{t\\to\\infty}T(t)=T_a=20.$$.\n\nSo the statement is False.",
-        "**D.** → True\n\nSolve $T(t)=40$:\n\n$$t=-\\frac{1}{k}\\ln\\frac{40-20}{90-20}\\approx27.234$$\n\n$$27.234 < 29$$.\n\nSo the statement is True.",
+        "**C.** → False\n\nThe long-run limit of Newton's law is the ambient temperature, not $T_0$:\n\n$$\\lim_{t\\to\\infty}T(t)=T_a=20..$$\n\nSo the statement is False.",
+        "**D.** → True\n\nSolve $T(t)=40$:\n\n$$t=-\\frac{1}{k}\\ln\\frac{40-20}{90-20}\\approx27.234$$\n\n$$27.234 < 29.$$\n\nSo the statement is True.",
         "**E.** → True\n\nRearrange the model:\n\n$$T(t)-T_a=(T_0-T_a)e^{-kt}.$$\n\nAt $t=29$ the right-hand side equals $18.4395$, matching $T(29)-T_a$.\n\nSo the statement is True."
       ],
       "solution_overview": "Newton cooling: $T(t)=T_a+(T_0-T_a)e^{-kt}$ with $T_0=90$, $T_a=20$, $k=0.046$.\n\n$$T(29)=20+(90-20)e^{-0.046\\cdot29}\\approx38.4395.$$\n\nTime to reach $40$ solves $t=-\\ln\\frac{40-T_a}{T_0-T_a}/k\\approx27.234$.",
@@ -826,9 +826,9 @@
       "tactical_explanations": [
         "**A.** → True\n\nSubstitute the recovered force into the continuous level formula.\n\n$$f(24)=15\\,e^{0.024\\cdot24}$$\n\n$$=15\\,e^{0.576}$$\n\n$$\\approx26.6836$$\n\nCompare with the claim.\n\nSo the statement is True.",
         "**B.** → False\n\nTwo closed forms agree for all $t$ only when their one-year multipliers match.\n\n$$1+0.024=1.024$$\n\n$$e^{0.024}\\approx1.02429$$\n\nSince $1.024\\neq e^{0.024}$, the discrete replacement $(1+0.024)^{t}$ is not identical to $e^{0.024t}$. At the concrete horizon $t=24$ the values already differ (26.5027 versus 26.6836).\n\nSo the statement is False.",
-        "**C.** → True\n\nUnder continuous force $k$, the exact one-year multiplier is $e^{k}$, not $1+k$.\n\n$$e^{0.024}-1\\approx0.02429$$\n\n$$1+0.024=1.024$$\n\nFor $k>0$ the inequality $e^{k}>1+k$ holds, so the continuous year-over-year growth factor exceeds $1+0.024$.\n\n$$1.02429 > 1.024$$.\n\nSo the statement is True.",
-        "**D.** → True\n\nDoubling means $f(t)=2f(0)$, which forces $e^{kt}=2$.\n\n$$t=\\frac{\\ln 2}{0.024}$$\n\n$$t\\approx28.8811$$\n\nCompare with $40$:\n\n$$28.8811 < 40$$.\n\nSo the statement is True.",
-        "**E.** → True\n\nFrom the overview, we have $f(24)\\approx26.6836$ and $g(24)\\approx26.5027$. Compare those two levels directly:\n\n$$g(24)=15(1+0.024)^{24}\\approx26.5027$$\n\n$$f(24)\\approx26.6836$$\n\n$$26.5027 < 26.6836$$.\n\nSo the statement is True."
+        "**C.** → True\n\nUnder continuous force $k$, the exact one-year multiplier is $e^{k}$, not $1+k$.\n\n$$e^{0.024}-1\\approx0.02429$$\n\n$$1+0.024=1.024$$\n\nFor $k>0$ the inequality $e^{k}>1+k$ holds, so the continuous year-over-year growth factor exceeds $1+0.024$.\n\n$$1.02429 > 1.024.$$\n\nSo the statement is True.",
+        "**D.** → True\n\nDoubling means $f(t)=2f(0)$, which forces $e^{kt}=2$.\n\n$$t=\\frac{\\ln 2}{0.024}$$\n\n$$t\\approx28.8811$$\n\nCompare with $40$:\n\n$$28.8811 < 40.$$\n\nSo the statement is True.",
+        "**E.** → True\n\nFrom the overview, we have $f(24)\\approx26.6836$ and $g(24)\\approx26.5027$. Compare those two levels directly:\n\n$$g(24)=15(1+0.024)^{24}\\approx26.5027$$\n\n$$f(24)\\approx26.6836$$\n\n$$26.5027 < 26.6836.$$\n\nSo the statement is True."
       ],
       "solution_overview": "The overview recovers the continuous census model\n\n$$f(t)=15\\,e^{0.024t}$$\n\nfor Grove, with $f$ in millions of residents. The continuous annual force is $k=0.024$. At $t=24$,\n\n$$f(24)=15\\,e^{0.024\\cdot24}\\approx26.6836$$\n\nThe naive discrete rival $g(t)=15(1+0.024)^{t}$ gives $g(24)\\approx26.5027$. One-year continuous growth is $e^{k}-1\\approx0.02429$, not the force $k$ itself. Doubling solves $e^{kt}=2$, so $t=\\ln 2/k\\approx28.8811$.",
       "difficulty_level": "5/5",
@@ -859,10 +859,10 @@
       ],
       "tactical_explanations": [
         "**A.** → True\n\nTake natural logs of the ratio definition.\n\n$$\\ln y(t)=\\ln Y(t)-\\ln N(t)$$\n\n$$=\\ln Y_0+gt-(\\ln N_0+pt)$$\n\n$$=\\ln(Y_0/N_0)+(g-p)t$$\n\nHence the continuous force on $y$ is exactly $g-p=0.026-0.006=0.02$.\n\nSo the statement is True.",
-        "**B.** → True\n\nThe overview recovered $y(19)\\approx73.1142$ and $y_0=50$.\n\n$$1.4\\,y_0=70$$\n\n$$y(19)=50\\,e^{0.02\\cdot19}\\approx73.1142$$\n\n$$73.1142 > 70$$.\n\nSo the statement is True.",
-        "**C.** → False\n\nAdding the two forces would describe a product $Y\\cdot N$, not the ratio $Y/N$.\n\n$$\\frac{d}{dt}\\ln(Y/N)=g-p=0.02$$\n\n$$g+p=0.032$$.\n\nSo the statement is False.",
+        "**B.** → True\n\nThe overview recovered $y(19)\\approx73.1142$ and $y_0=50$.\n\n$$1.4\\,y_0=70$$\n\n$$y(19)=50\\,e^{0.02\\cdot19}\\approx73.1142$$\n\n$$73.1142 > 70.$$\n\nSo the statement is True.",
+        "**C.** → False\n\nAdding the two forces would describe a product $Y\\cdot N$, not the ratio $Y/N$.\n\n$$\\frac{d}{dt}\\ln(Y/N)=g-p=0.02$$\n\n$$g+p=0.032.$$\n\nSo the statement is False.",
         "**D.** → True\n\nCompute the ratio of the recovered aggregate paths and compare with $y(19)$.\n\n$$\\frac{Y(19)}{N(19)}=\\frac{819.4293}{11.2075}\\approx73.1142$$\n\n$$y(19)\\approx73.1142$$\n\nThe absolute gap is about $0$, which is numerical noise, so the identity holds.\n\nSo the statement is True.",
-        "**E.** → True\n\nThe additive-trap path would be\n\n$$y_{\\mathrm{wrong}}(t)=50\\,e^{(0.026+0.006)t}\\approx91.8377$$\n\nwhile the true level is\n\n$$y(19)\\approx73.1142$$\n\n$$91.8377 > 73.1142$$.\n\nSo the statement is True."
+        "**E.** → True\n\nThe additive-trap path would be\n\n$$y_{\\mathrm{wrong}}(t)=50\\,e^{(0.026+0.006)t}\\approx91.8377$$\n\nwhile the true level is\n\n$$y(19)\\approx73.1142$$\n\n$$91.8377 > 73.1142.$$\n\nSo the statement is True."
       ],
       "solution_overview": "Aggregate real GDP (billions) follows $Y(t)=500\\,e^{0.026t}$ while population (millions) follows $N(t)=10\\,e^{0.006t}$. GDP per capita is the ratio\n\n$$y(t)=\\frac{Y(t)}{N(t)}=50\\,e^{(0.026-0.006)t}=50\\,e^{0.02t}$$\n\nSo the continuous per-capita force is the difference $g-p=0.02$, not a sum. At $t=19$:\n\n$$y(19)\\approx73.1142,\\quad Y(19)\\approx819.4293,\\quad N(19)\\approx11.2075.$$",
       "difficulty_level": "1/5",
@@ -894,7 +894,7 @@
       "tactical_explanations": [
         "**A.** → True\n\nAt the switch, $f(5)\\approx2418.4992$. Compare with the target $2800$:\n\n$$2418.4992 < 2800$$\n\nBecause the switch level is still below the target and $k_2=0.018>0$, solve\n\n$$f(5)\\,e^{0.018(t-5)}=2800$$\n\n$$t=5+\\frac{\\ln(2800/2418.4992)}{0.018}\\approx13.1373$$\n\nSince $13.1373>5$, the first hitting time is after the switch.\n\nSo the statement is True.",
         "**B.** → True\n\nConstant-force extrapolation with $k=0.038$ would solve\n\n$$2000\\,e^{0.038t}=2800$$\n\n$$t=\\frac{\\ln(2800/2000)}{0.038}\\approx8.8545$$\n\nThe piecewise hitting time is $\\approx13.1373$. Those times differ, so ignoring the switch changes the answer.\n\nSo the statement is True.",
-        "**C.** → False\n\nEvaluate the piecewise path at the switch only.\n\n$$f(5)\\approx2418.4992$$\n\n$$2418.4992 < 2800$$.\n\nSo the statement is False.",
+        "**C.** → False\n\nEvaluate the piecewise path at the switch only.\n\n$$f(5)\\approx2418.4992$$\n\n$$2418.4992 < 2800.$$\n\nSo the statement is False.",
         "**D.** → True\n\nOn $[0,5]$ the force is constant $k_1$, so\n\n$$\\frac{1}{T}\\ln\\frac{f(5)}{P_0}=\\frac{1}{5}\\ln\\frac{2418.4992}{2000}$$\n\n$$\\approx0.038$$\n\nwhich matches $k_1=0.038$.\n\nSo the statement is True.",
         "**E.** → True\n\nFrom $f(5)\\,e^{k_2(t-T)}=2800$ take logs:\n\n$$k_2(t-T)=\\ln\\frac{2800}{f(5)}$$\n\n$$t-T=\\frac{\\ln(2800/f(5))}{0.018}$$\n\nThat is exactly.\n\nSo the statement is True."
       ],
@@ -928,7 +928,7 @@
       "tactical_explanations": [
         "**A.** → True\n\nAt the switch, $f(5)\\approx2418.4992$. Compare with the target $2800$:\n\n$$2418.4992 < 2800$$\n\nBecause the switch level is still below the target and $k_2=0.018>0$, solve\n\n$$f(5)\\,e^{0.018(t-5)}=2800$$\n\n$$t=5+\\frac{\\ln(2800/2418.4992)}{0.018}\\approx13.1373$$\n\nSince $13.1373>5$, the first hitting time is after the switch.\n\nSo the statement is True.",
         "**B.** → True\n\nConstant-force extrapolation with $k=0.038$ would solve\n\n$$2000\\,e^{0.038t}=2800$$\n\n$$t=\\frac{\\ln(2800/2000)}{0.038}\\approx8.8545$$\n\nThe piecewise hitting time is $\\approx13.1373$. Those times differ, so ignoring the switch changes the answer.\n\nSo the statement is True.",
-        "**C.** → False\n\nEvaluate the piecewise path at the switch only.\n\n$$f(5)\\approx2418.4992$$\n\n$$2418.4992 < 2800$$.\n\nSo the statement is False.",
+        "**C.** → False\n\nEvaluate the piecewise path at the switch only.\n\n$$f(5)\\approx2418.4992$$\n\n$$2418.4992 < 2800.$$\n\nSo the statement is False.",
         "**D.** → True\n\nOn $[0,5]$ the force is constant $k_1$, so\n\n$$\\frac{1}{T}\\ln\\frac{f(5)}{P_0}=\\frac{1}{5}\\ln\\frac{2418.4992}{2000}$$\n\n$$\\approx0.038$$\n\nwhich matches $k_1=0.038$.\n\nSo the statement is True.",
         "**E.** → True\n\nFrom $f(5)\\,e^{k_2(t-T)}=2800$ take logs:\n\n$$k_2(t-T)=\\ln\\frac{2800}{f(5)}$$\n\n$$t-T=\\frac{\\ln(2800/f(5))}{0.018}$$\n\nThat is exactly.\n\nSo the statement is True."
       ],
@@ -959,11 +959,11 @@
         true
       ],
       "tactical_explanations": [
-        "**A.** → True\n\n$$N(20)=2000\\cdot(2)^{4}=32000$$\n\n$$32000 > 30000$$.\n\nSo the statement is True.",
+        "**A.** → True\n\n$$N(20)=2000\\cdot(2)^{4}=32000$$\n\n$$32000 > 30000.$$\n\nSo the statement is True.",
         "**B.** → True\n\nRewrite the period model as an exponential:\n\n$$(2)^{t/5}=e^{(t/5)\\ln(2)}=e^{kt}$$\n\nwith $k=\\ln(2)/5\\approx0.138629$. Thus the continuous force reproduces $N(t)$ identically.\n\nSo the statement is True.",
-        "**C.** → True\n\n$$\\frac{t}{\\text{period}}=\\frac{20}{5}=4$$\n\n$$4 > 3$$.\n\nSo the statement is True.",
+        "**C.** → True\n\n$$\\frac{t}{\\text{period}}=\\frac{20}{5}=4$$\n\n$$4 > 3.$$\n\nSo the statement is True.",
         "**D.** → True\n\nEach period multiplies by $2$, not necessarily by $2$. Doubling every period would require factor $2$. Here the factor is $2$, so the claim holds.\n\nSo the statement is True.",
-        "**E.** → True\n\nSolve $N(t)=30000$:\n\n$$t=\\frac{\\ln(30000/2000)}{k}\\approx19.5345$$\n\n$$19.5345 < 20$$.\n\nSo the statement is True."
+        "**E.** → True\n\nSolve $N(t)=30000$:\n\n$$t=\\frac{\\ln(30000/2000)}{k}\\approx19.5345$$\n\n$$19.5345 < 20.$$\n\nSo the statement is True."
       ],
       "solution_overview": "$N(t)=2000\\cdot(2)^{t/5}$. Equivalent continuous force $k=\\ln(2)/5\\approx0.138629$. At $t=20$, after $4$ growth periods, $N\\approx32000$. Time to reach $30000$ is $t=\\ln(30000/2000)/k\\approx19.5345$.",
       "difficulty_level": "4/5",
@@ -992,10 +992,10 @@
         true
       ],
       "tactical_explanations": [
-        "**A.** → True\n\nRead the two terminal levels from the overview (or the figure).\n\n$$f(13)\\approx174.9485$$\n\n$$g(13)\\approx155.2328$$\n\n$$174.9485 > 155.2328$$.\n\nSo the statement is True.",
-        "**B.** → True\n\nCompute the discrete force and compare with $k$.\n\n$$\\ln(1.02)\\approx0.019803$$\n\n$$0.029 > 0.019803$$.\n\nSo the statement is True.",
-        "**C.** → True\n\nRelative gap against the larger level:\n\n$$\\frac{|f-g|}{\\max(f,g)}\\approx0.112694$$\n\n$$0.112694 \\ge 0.05$$.\n\nSo the statement is True.",
-        "**D.** → True\n\n$$t_{\\mathrm{cont}}=\\frac{\\ln 2}{0.029}\\approx23.9016$$\n\n$$t_{\\mathrm{disc}}=\\frac{\\ln 2}{\\ln(1.02)}\\approx35.0028$$\n\n$$23.9016 < 35.0028$$.\n\nSo the statement is True.",
+        "**A.** → True\n\nRead the two terminal levels from the overview (or the figure).\n\n$$f(13)\\approx174.9485$$\n\n$$g(13)\\approx155.2328$$\n\n$$174.9485 > 155.2328.$$\n\nSo the statement is True.",
+        "**B.** → True\n\nCompute the discrete force and compare with $k$.\n\n$$\\ln(1.02)\\approx0.019803$$\n\n$$0.029 > 0.019803.$$\n\nSo the statement is True.",
+        "**C.** → True\n\nRelative gap against the larger level:\n\n$$\\frac{|f-g|}{\\max(f,g)}\\approx0.112694$$\n\n$$0.112694 \\ge 0.05.$$\n\nSo the statement is True.",
+        "**D.** → True\n\n$$t_{\\mathrm{cont}}=\\frac{\\ln 2}{0.029}\\approx23.9016$$\n\n$$t_{\\mathrm{disc}}=\\frac{\\ln 2}{\\ln(1.02)}\\approx35.0028$$\n\n$$23.9016 < 35.0028.$$\n\nSo the statement is True.",
         "**E.** → True\n\nAlgebraically,\n\n$$\\ln\\frac{Pe^{kt}}{P a^{t}}=(k-\\ln a)t$$\n\n$$=(0.029-0.019803)\\cdot13\\approx0.119566.$$\n\nDirect evaluation of $\\ln(f/g)$ recovers the same number, so the identity holds.\n\nSo the statement is True."
       ],
       "solution_overview": "Continuous forecast $f(t)=120e^{0.029t}$ versus discrete $g(t)=120(1.02)^{t}$. At $t=13$:\n\n$$f(13)\\approx174.9485,\\quad g(13)\\approx155.2328.$$\n\nEquivalent discrete force $\\ln(1.02)\\approx0.019803$. Doubling times $23.9016$ (continuous) and $35.0028$ (discrete).",
@@ -1026,10 +1026,10 @@
         true
       ],
       "tactical_explanations": [
-        "**A.** → True\n\nSubstitute into Newton's law.\n\n$$T(37)=15+(60)e^{-1.887}$$\n\n$$\\approx24.0915$$\n\n$$24.0915 < 30$$.\n\nSo the statement is True.",
+        "**A.** → True\n\nSubstitute into Newton's law.\n\n$$T(37)=15+(60)e^{-1.887}$$\n\n$$\\approx24.0915$$\n\n$$24.0915 < 30.$$\n\nSo the statement is True.",
         "**B.** → True\n\nBecause $e^{-kt}\\in(0,1)$ for finite $t>0$ and $T_0>T_a$,\n\n$$T(t)-T_a=(T_0-T_a)e^{-kt}>0.$$\n\nNumerically $T(37)\\approx24.0915>15$.\n\nSo the statement is True.",
-        "**C.** → True\n\nThe long-run limit of Newton's law is the ambient temperature, not $T_0$:\n\n$$\\lim_{t\\to\\infty}T(t)=T_a=15.$$.\n\nSo the statement is True.",
-        "**D.** → True\n\nSolve $T(t)=30$:\n\n$$t=-\\frac{1}{k}\\ln\\frac{30-15}{75-15}\\approx27.1822$$\n\n$$27.1822 < 37$$.\n\nSo the statement is True.",
+        "**C.** → True\n\nThe long-run limit of Newton's law is the ambient temperature, not $T_0$:\n\n$$\\lim_{t\\to\\infty}T(t)=T_a=15..$$\n\nSo the statement is True.",
+        "**D.** → True\n\nSolve $T(t)=30$:\n\n$$t=-\\frac{1}{k}\\ln\\frac{30-15}{75-15}\\approx27.1822$$\n\n$$27.1822 < 37.$$\n\nSo the statement is True.",
         "**E.** → True\n\nRearrange the model:\n\n$$T(t)-T_a=(T_0-T_a)e^{-kt}.$$\n\nAt $t=37$ the right-hand side equals $9.0915$, matching $T(37)-T_a$.\n\nSo the statement is True."
       ],
       "solution_overview": "Newton cooling: $T(t)=T_a+(T_0-T_a)e^{-kt}$ with $T_0=75$, $T_a=15$, $k=0.051$.\n\n$$T(37)=15+(75-15)e^{-0.051\\cdot37}\\approx24.0915.$$\n\nTime to reach $30$ solves $t=-\\ln\\frac{30-T_a}{T_0-T_a}/k\\approx27.1822$.",
@@ -1060,11 +1060,11 @@
         true
       ],
       "tactical_explanations": [
-        "**A.** → True\n\nCompare the two recovered terminal balances.\n\n$$A_{\\mathrm{cont}}\\approx13160.5613$$\n\n$$A_{\\mathrm{disc}}\\approx13147.043$$\n\n$$13160.5613 > 13147.043$$.\n\nSo the statement is True.",
-        "**B.** → True\n\nOnce-per-year compounding yields\n\n$$P(1+r)^{t}=9000(1+0.076)^{5}\\approx12980.872$$\n\nwhile $14$-per-year compounding yields $\\approx13147.043$.\n\n$$13147.043 > 12980.872$$.\n\nSo the statement is True.",
-        "**C.** → True\n\nRelative gap:\n\n$$\\frac{|A_{\\mathrm{cont}}-A_{\\mathrm{disc}}|}{A_{\\mathrm{disc}}}\\approx0.001028$$\n\nCompare with $0.01$:\n\n$$0.001028 < 0.01$$.\n\nSo the statement is True.",
-        "**D.** → True\n\nThe EAR identity is\n\n$$\\mathrm{EAR}=\\left(1+\\frac{r}{n}\\right)^{n}-1\\approx0.078741.$$\n\nFor $n>1$ and $r>0$, EAR $>r$. Here $r=0.076$, so\n\n$$0.078741 > 0.076$$.\n\nSo the statement is True.",
-        "**E.** → True\n\nContinuous doubling solves $e^{rt}=2$.\n\n$$t=\\frac{\\ln 2}{r}\\approx9.1204$$\n\n$$9.1204 < 12$$.\n\nSo the statement is True."
+        "**A.** → True\n\nCompare the two recovered terminal balances.\n\n$$A_{\\mathrm{cont}}\\approx13160.5613$$\n\n$$A_{\\mathrm{disc}}\\approx13147.043$$\n\n$$13160.5613 > 13147.043.$$\n\nSo the statement is True.",
+        "**B.** → True\n\nOnce-per-year compounding yields\n\n$$P(1+r)^{t}=9000(1+0.076)^{5}\\approx12980.872$$\n\nwhile $14$-per-year compounding yields $\\approx13147.043$.\n\n$$13147.043 > 12980.872.$$\n\nSo the statement is True.",
+        "**C.** → True\n\nRelative gap:\n\n$$\\frac{|A_{\\mathrm{cont}}-A_{\\mathrm{disc}}|}{A_{\\mathrm{disc}}}\\approx0.001028$$\n\nCompare with $0.01$:\n\n$$0.001028 < 0.01.$$\n\nSo the statement is True.",
+        "**D.** → True\n\nThe EAR identity is\n\n$$\\mathrm{EAR}=\\left(1+\\frac{r}{n}\\right)^{n}-1\\approx0.078741.$$\n\nFor $n>1$ and $r>0$, EAR $>r$. Here $r=0.076$, so\n\n$$0.078741 > 0.076.$$\n\nSo the statement is True.",
+        "**E.** → True\n\nContinuous doubling solves $e^{rt}=2$.\n\n$$t=\\frac{\\ln 2}{r}\\approx9.1204$$\n\n$$9.1204 < 12.$$\n\nSo the statement is True."
       ],
       "solution_overview": "Principal $P=9000$ at nominal annual rate $r=0.076$.\n\n$$A_{\\mathrm{disc}}=P\\left(1+\\frac{r}{n}\\right)^{nt}=\\left(1+\\frac{0.076}{14}\\right)^{70}\\cdot9000\\approx13147.043$$\n\n$$A_{\\mathrm{cont}}=Pe^{rt}\\approx13160.5613$$\n\nEAR under $14$ compoundings: $\\left(1+r/n\\right)^{n}-1\\approx0.078741$. Continuous doubling time $\\ln 2/r\\approx9.1204$.",
       "difficulty_level": "2/5",
@@ -1093,11 +1093,11 @@
         true
       ],
       "tactical_explanations": [
-        "**A.** → True\n\n$$N(20)=2000\\cdot(2)^{4}=32000$$\n\n$$32000 > 30000$$.\n\nSo the statement is True.",
+        "**A.** → True\n\n$$N(20)=2000\\cdot(2)^{4}=32000$$\n\n$$32000 > 30000.$$\n\nSo the statement is True.",
         "**B.** → True\n\nRewrite the period model as an exponential:\n\n$$(2)^{t/5}=e^{(t/5)\\ln(2)}=e^{kt}$$\n\nwith $k=\\ln(2)/5\\approx0.138629$. Thus the continuous force reproduces $N(t)$ identically.\n\nSo the statement is True.",
-        "**C.** → True\n\n$$\\frac{t}{\\text{period}}=\\frac{20}{5}=4$$\n\n$$4 > 3$$.\n\nSo the statement is True.",
+        "**C.** → True\n\n$$\\frac{t}{\\text{period}}=\\frac{20}{5}=4$$\n\n$$4 > 3.$$\n\nSo the statement is True.",
         "**D.** → True\n\nEach period multiplies by $2$, not necessarily by $2$. Doubling every period would require factor $2$. Here the factor is $2$, so the claim holds.\n\nSo the statement is True.",
-        "**E.** → True\n\nSolve $N(t)=30000$:\n\n$$t=\\frac{\\ln(30000/2000)}{k}\\approx19.5345$$\n\n$$19.5345 < 20$$.\n\nSo the statement is True."
+        "**E.** → True\n\nSolve $N(t)=30000$:\n\n$$t=\\frac{\\ln(30000/2000)}{k}\\approx19.5345$$\n\n$$19.5345 < 20.$$\n\nSo the statement is True."
       ],
       "solution_overview": "$N(t)=2000\\cdot(2)^{t/5}$. Equivalent continuous force $k=\\ln(2)/5\\approx0.138629$. At $t=20$, after $4$ growth periods, $N\\approx32000$. Time to reach $30000$ is $t=\\ln(30000/2000)/k\\approx19.5345$.",
       "difficulty_level": "3/5",
@@ -1126,11 +1126,11 @@
         true
       ],
       "tactical_explanations": [
-        "**A.** → True\n\n$$f(12)\\approx2.58$$ million.\n\n$$2.58 \\le 10$$.\n\nSo the statement is True.",
-        "**B.** → True\n\n$$f(12)\\approx2.58$$ million.\n\n$$2.58 \\le 3$$.\n\nSo the statement is True.",
+        "**A.** → True\n\n$$f(12)\\approx2.58$$ million.\n\n$$2.58 \\le 10.$$\n\nSo the statement is True.",
+        "**B.** → True\n\n$$f(12)\\approx2.58$$ million.\n\n$$2.58 \\le 3.$$\n\nSo the statement is True.",
         "**C.** → True\n\nThe stem measures $f$ in millions. At $t=12$, $f(12)\\approx2.58$ million, i.e. about $2579992.9$ people.\n\nSo the statement is True.",
         "**D.** → True\n\nOne million residents is $10^{6}$ people, so\n\n$$f_{\\mathrm{people}}=f_{\\mathrm{million}}\\cdot 10^{6}.$$\n\nAt $t=12$ that conversion yields about $2579992.9$ people.\n\nSo the statement is True.",
-        "**E.** → True\n\nIn $f(t)=P_0 e^{kt}$ the continuous annual force is $k$.\n\n$$100k=3.$$.\n\nSo the statement is True."
+        "**E.** → True\n\nIn $f(t)=P_0 e^{kt}$ the continuous annual force is $k$.\n\n$$100k=3..$$\n\nSo the statement is True."
       ],
       "solution_overview": "Raven is modelled by $f(t)=1.8\\,e^{0.03t}$ where $f$ is in **millions** of residents.\n\n$$f(12)=1.8\\,e^{0.03\\cdot12}\\approx2.58\\text{ million}.$$\n\nIn people that is about $2579992.9$. The continuous force $k=0.03$ is a $100k=3\\%$ continuous annual rate, not a headcount.",
       "difficulty_level": "4/5",
@@ -1160,11 +1160,11 @@
         true
       ],
       "tactical_explanations": [
-        "**A.** → True\n\n$$N(17)=1500\\cdot(2)^{4.25}=28540.9708$$\n\n$$28540.9708 > 25000$$.\n\nSo the statement is True.",
+        "**A.** → True\n\n$$N(17)=1500\\cdot(2)^{4.25}=28540.9708$$\n\n$$28540.9708 > 25000.$$\n\nSo the statement is True.",
         "**B.** → True\n\nRewrite the period model as an exponential:\n\n$$(2)^{t/4}=e^{(t/4)\\ln(2)}=e^{kt}$$\n\nwith $k=\\ln(2)/4\\approx0.173287$. Thus the continuous force reproduces $N(t)$ identically.\n\nSo the statement is True.",
-        "**C.** → True\n\n$$\\frac{t}{\\text{period}}=\\frac{17}{4}=4.25$$\n\n$$4.25 > 3$$.\n\nSo the statement is True.",
+        "**C.** → True\n\n$$\\frac{t}{\\text{period}}=\\frac{17}{4}=4.25$$\n\n$$4.25 > 3.$$\n\nSo the statement is True.",
         "**D.** → True\n\nEach period multiplies by $2$, not necessarily by $2$. Doubling every period would require factor $2$. Here the factor is $2$, so the claim holds.\n\nSo the statement is True.",
-        "**E.** → True\n\nSolve $N(t)=25000$:\n\n$$t=\\frac{\\ln(25000/1500)}{k}\\approx16.2356$$\n\n$$16.2356 < 17$$.\n\nSo the statement is True."
+        "**E.** → True\n\nSolve $N(t)=25000$:\n\n$$t=\\frac{\\ln(25000/1500)}{k}\\approx16.2356$$\n\n$$16.2356 < 17.$$\n\nSo the statement is True."
       ],
       "solution_overview": "$N(t)=1500\\cdot(2)^{t/4}$. Equivalent continuous force $k=\\ln(2)/4\\approx0.173287$. At $t=17$, after $4.25$ growth periods, $N\\approx28540.9708$. Time to reach $25000$ is $t=\\ln(25000/1500)/k\\approx16.2356$.",
       "difficulty_level": "5/5",
@@ -1193,11 +1193,11 @@
         true
       ],
       "tactical_explanations": [
-        "**A.** → True\n\nCompare the two recovered terminal balances.\n\n$$A_{\\mathrm{cont}}\\approx13160.5613$$\n\n$$A_{\\mathrm{disc}}\\approx13147.043$$\n\n$$13160.5613 > 13147.043$$.\n\nSo the statement is True.",
-        "**B.** → True\n\nOnce-per-year compounding yields\n\n$$P(1+r)^{t}=9000(1+0.076)^{5}\\approx12980.872$$\n\nwhile $14$-per-year compounding yields $\\approx13147.043$.\n\n$$13147.043 > 12980.872$$.\n\nSo the statement is True.",
-        "**C.** → True\n\nRelative gap:\n\n$$\\frac{|A_{\\mathrm{cont}}-A_{\\mathrm{disc}}|}{A_{\\mathrm{disc}}}\\approx0.001028$$\n\nCompare with $0.01$:\n\n$$0.001028 < 0.01$$.\n\nSo the statement is True.",
-        "**D.** → True\n\nThe EAR identity is\n\n$$\\mathrm{EAR}=\\left(1+\\frac{r}{n}\\right)^{n}-1\\approx0.078741.$$\n\nFor $n>1$ and $r>0$, EAR $>r$. Here $r=0.076$, so\n\n$$0.078741 > 0.076$$.\n\nSo the statement is True.",
-        "**E.** → True\n\nContinuous doubling solves $e^{rt}=2$.\n\n$$t=\\frac{\\ln 2}{r}\\approx9.1204$$\n\n$$9.1204 < 12$$.\n\nSo the statement is True."
+        "**A.** → True\n\nCompare the two recovered terminal balances.\n\n$$A_{\\mathrm{cont}}\\approx13160.5613$$\n\n$$A_{\\mathrm{disc}}\\approx13147.043$$\n\n$$13160.5613 > 13147.043.$$\n\nSo the statement is True.",
+        "**B.** → True\n\nOnce-per-year compounding yields\n\n$$P(1+r)^{t}=9000(1+0.076)^{5}\\approx12980.872$$\n\nwhile $14$-per-year compounding yields $\\approx13147.043$.\n\n$$13147.043 > 12980.872.$$\n\nSo the statement is True.",
+        "**C.** → True\n\nRelative gap:\n\n$$\\frac{|A_{\\mathrm{cont}}-A_{\\mathrm{disc}}|}{A_{\\mathrm{disc}}}\\approx0.001028$$\n\nCompare with $0.01$:\n\n$$0.001028 < 0.01.$$\n\nSo the statement is True.",
+        "**D.** → True\n\nThe EAR identity is\n\n$$\\mathrm{EAR}=\\left(1+\\frac{r}{n}\\right)^{n}-1\\approx0.078741.$$\n\nFor $n>1$ and $r>0$, EAR $>r$. Here $r=0.076$, so\n\n$$0.078741 > 0.076.$$\n\nSo the statement is True.",
+        "**E.** → True\n\nContinuous doubling solves $e^{rt}=2$.\n\n$$t=\\frac{\\ln 2}{r}\\approx9.1204$$\n\n$$9.1204 < 12.$$\n\nSo the statement is True."
       ],
       "solution_overview": "Principal $P=9000$ at nominal annual rate $r=0.076$.\n\n$$A_{\\mathrm{disc}}=P\\left(1+\\frac{r}{n}\\right)^{nt}=\\left(1+\\frac{0.076}{14}\\right)^{70}\\cdot9000\\approx13147.043$$\n\n$$A_{\\mathrm{cont}}=Pe^{rt}\\approx13160.5613$$\n\nEAR under $14$ compoundings: $\\left(1+r/n\\right)^{n}-1\\approx0.078741$. Continuous doubling time $\\ln 2/r\\approx9.1204$.",
       "difficulty_level": "1/5",
@@ -1226,11 +1226,11 @@
         false
       ],
       "tactical_explanations": [
-        "**A.** → True\n\nCount half-lives and apply the geometric decay formula.\n\n$$\\frac{37}{13}=2.8462$$\n\n$$m(37)=48\\cdot\\left(\\tfrac12\\right)^{2.8462}=6.6752$$\n\n$$6.6752 < 15$$.\n\nSo the statement is True.",
-        "**B.** → True\n\nBy definition of half-life under $m(t)=m_0 e^{-kt}$,\n\n$$m(T_{1/2})=\\tfrac12 m_0\\implies e^{-k T_{1/2}}=\\tfrac12$$\n\n$$k=\\frac{\\ln 2}{T_{1/2}}=\\frac{\\ln 2}{13}\\approx0.053319.$$.\n\nSo the statement is True.",
+        "**A.** → True\n\nCount half-lives and apply the geometric decay formula.\n\n$$\\frac{37}{13}=2.8462$$\n\n$$m(37)=48\\cdot\\left(\\tfrac12\\right)^{2.8462}=6.6752$$\n\n$$6.6752 < 15.$$\n\nSo the statement is True.",
+        "**B.** → True\n\nBy definition of half-life under $m(t)=m_0 e^{-kt}$,\n\n$$m(T_{1/2})=\\tfrac12 m_0\\implies e^{-k T_{1/2}}=\\tfrac12$$\n\n$$k=\\frac{\\ln 2}{T_{1/2}}=\\frac{\\ln 2}{13}\\approx0.053319..$$\n\nSo the statement is True.",
         "**C.** → False\n\nOne eighth remains after exactly three half-lives. Here\n\n$$\\frac{t}{T_{1/2}}=2.8462$$\n\nand $m_0/8=6$. The actual remainder is $6.6752$, so the claim fails.\n\nSo the statement is False.",
-        "**D.** → True\n\nFrom the overview, $m(37)=6.6752$. Compare with $5$:\n\n$$6.6752 > 5$$.\n\nSo the statement is True.",
-        "**E.** → False\n\nSolve $m(t)=5$ under the recovered $k$.\n\n$$48\\,e^{-kt}=5$$\n\n$$t=\\frac{\\ln(48/5)}{k}\\approx42.4194$$\n\n$$42.4194 \\ge 37$$.\n\nSo the statement is False."
+        "**D.** → True\n\nFrom the overview, $m(37)=6.6752$. Compare with $5$:\n\n$$6.6752 > 5.$$\n\nSo the statement is True.",
+        "**E.** → False\n\nSolve $m(t)=5$ under the recovered $k$.\n\n$$48\\,e^{-kt}=5$$\n\n$$t=\\frac{\\ln(48/5)}{k}\\approx42.4194$$\n\n$$42.4194 \\ge 37.$$\n\nSo the statement is False."
       ],
       "solution_overview": "Half-life $T_{1/2}=13$ forces continuous decay constant\n\n$$k=\\frac{\\ln 2}{13}\\approx0.053319$$\n\nand\n\n$$m(t)=48\\,e^{-kt}=48\\left(\\tfrac12\\right)^{t/13}.$$\n\nAt $t=37$, the sample has lived $2.8462$ half-lives, so $m(37)=6.6752$.",
       "difficulty_level": "2/5",
@@ -1260,10 +1260,10 @@
       ],
       "tactical_explanations": [
         "**A.** → False\n\nTake natural logs of the ratio definition.\n\n$$\\ln y(t)=\\ln Y(t)-\\ln N(t)$$\n\n$$=\\ln Y_0+gt-(\\ln N_0+pt)$$\n\n$$=\\ln(Y_0/N_0)+(g-p)t$$\n\nHence the continuous force on $y$ is exactly $g-p=0.026-0.006=0.02$.\n\nSo the statement is False.",
-        "**B.** → False\n\nThe overview recovered $y(19)\\approx73.1142$ and $y_0=50$.\n\n$$1.4\\,y_0=70$$\n\n$$y(19)=50\\,e^{0.02\\cdot19}\\approx73.1142$$\n\n$$73.1142 > 70$$.\n\nSo the statement is False.",
-        "**C.** → False\n\nAdding the two forces would describe a product $Y\\cdot N$, not the ratio $Y/N$.\n\n$$\\frac{d}{dt}\\ln(Y/N)=g-p=0.02$$\n\n$$g+p=0.032$$.\n\nSo the statement is False.",
+        "**B.** → False\n\nThe overview recovered $y(19)\\approx73.1142$ and $y_0=50$.\n\n$$1.4\\,y_0=70$$\n\n$$y(19)=50\\,e^{0.02\\cdot19}\\approx73.1142$$\n\n$$73.1142 > 70.$$\n\nSo the statement is False.",
+        "**C.** → False\n\nAdding the two forces would describe a product $Y\\cdot N$, not the ratio $Y/N$.\n\n$$\\frac{d}{dt}\\ln(Y/N)=g-p=0.02$$\n\n$$g+p=0.032.$$\n\nSo the statement is False.",
         "**D.** → True\n\nCompute the ratio of the recovered aggregate paths and compare with $y(19)$.\n\n$$\\frac{Y(19)}{N(19)}=\\frac{819.4293}{11.2075}\\approx73.1142$$\n\n$$y(19)\\approx73.1142$$\n\nThe absolute gap is about $0$, which is numerical noise, so the identity holds.\n\nSo the statement is True.",
-        "**E.** → True\n\nThe additive-trap path would be\n\n$$y_{\\mathrm{wrong}}(t)=50\\,e^{(0.026+0.006)t}\\approx91.8377$$\n\nwhile the true level is\n\n$$y(19)\\approx73.1142$$\n\n$$91.8377 > 73.1142$$.\n\nSo the statement is True."
+        "**E.** → True\n\nThe additive-trap path would be\n\n$$y_{\\mathrm{wrong}}(t)=50\\,e^{(0.026+0.006)t}\\approx91.8377$$\n\nwhile the true level is\n\n$$y(19)\\approx73.1142$$\n\n$$91.8377 > 73.1142.$$\n\nSo the statement is True."
       ],
       "solution_overview": "Aggregate real GDP (billions) follows $Y(t)=500\\,e^{0.026t}$ while population (millions) follows $N(t)=10\\,e^{0.006t}$. GDP per capita is the ratio\n\n$$y(t)=\\frac{Y(t)}{N(t)}=50\\,e^{(0.026-0.006)t}=50\\,e^{0.02t}$$\n\nSo the continuous per-capita force is the difference $g-p=0.02$, not a sum. At $t=19$:\n\n$$y(19)\\approx73.1142,\\quad Y(19)\\approx819.4293,\\quad N(19)\\approx11.2075.$$",
       "difficulty_level": "3/5",
@@ -1293,11 +1293,11 @@
         false
       ],
       "tactical_explanations": [
-        "**A.** → True\n\nCount half-lives and apply the geometric decay formula.\n\n$$\\frac{18}{6}=3$$\n\n$$m(18)=64\\cdot\\left(\\tfrac12\\right)^{3}=8$$\n\n$$8 < 15$$.\n\nSo the statement is True.",
-        "**B.** → True\n\nBy definition of half-life under $m(t)=m_0 e^{-kt}$,\n\n$$m(T_{1/2})=\\tfrac12 m_0\\implies e^{-k T_{1/2}}=\\tfrac12$$\n\n$$k=\\frac{\\ln 2}{T_{1/2}}=\\frac{\\ln 2}{6}\\approx0.115525.$$.\n\nSo the statement is True.",
+        "**A.** → True\n\nCount half-lives and apply the geometric decay formula.\n\n$$\\frac{18}{6}=3$$\n\n$$m(18)=64\\cdot\\left(\\tfrac12\\right)^{3}=8$$\n\n$$8 < 15.$$\n\nSo the statement is True.",
+        "**B.** → True\n\nBy definition of half-life under $m(t)=m_0 e^{-kt}$,\n\n$$m(T_{1/2})=\\tfrac12 m_0\\implies e^{-k T_{1/2}}=\\tfrac12$$\n\n$$k=\\frac{\\ln 2}{T_{1/2}}=\\frac{\\ln 2}{6}\\approx0.115525..$$\n\nSo the statement is True.",
         "**C.** → True\n\nOne eighth remains after exactly three half-lives. Here\n\n$$\\frac{t}{T_{1/2}}=3$$\n\nand $m_0/8=8$. The actual remainder is $8$, so the claim holds.\n\nSo the statement is True.",
-        "**D.** → True\n\nFrom the overview, $m(18)=8$. Compare with $6$:\n\n$$8 > 6$$.\n\nSo the statement is True.",
-        "**E.** → False\n\nSolve $m(t)=6$ under the recovered $k$.\n\n$$64\\,e^{-kt}=6$$\n\n$$t=\\frac{\\ln(64/6)}{k}\\approx20.4902$$\n\n$$20.4902 \\ge 18$$.\n\nSo the statement is False."
+        "**D.** → True\n\nFrom the overview, $m(18)=8$. Compare with $6$:\n\n$$8 > 6.$$\n\nSo the statement is True.",
+        "**E.** → False\n\nSolve $m(t)=6$ under the recovered $k$.\n\n$$64\\,e^{-kt}=6$$\n\n$$t=\\frac{\\ln(64/6)}{k}\\approx20.4902$$\n\n$$20.4902 \\ge 18.$$\n\nSo the statement is False."
       ],
       "solution_overview": "Half-life $T_{1/2}=6$ forces continuous decay constant\n\n$$k=\\frac{\\ln 2}{6}\\approx0.115525$$\n\nand\n\n$$m(t)=64\\,e^{-kt}=64\\left(\\tfrac12\\right)^{t/6}.$$\n\nAt $t=18$, the sample has lived $3$ half-lives, so $m(18)=8$.",
       "difficulty_level": "4/5",
@@ -1326,11 +1326,11 @@
         false
       ],
       "tactical_explanations": [
-        "**A.** → False\n\nCount half-lives and apply the geometric decay formula.\n\n$$\\frac{30}{10}=3$$\n\n$$m(30)=100\\cdot\\left(\\tfrac12\\right)^{3}=12.5$$\n\n$$12.5 < 15$$.\n\nSo the statement is False.",
-        "**B.** → False\n\nBy definition of half-life under $m(t)=m_0 e^{-kt}$,\n\n$$m(T_{1/2})=\\tfrac12 m_0\\implies e^{-k T_{1/2}}=\\tfrac12$$\n\n$$k=\\frac{\\ln 2}{T_{1/2}}=\\frac{\\ln 2}{10}\\approx0.069315.$$.\n\nSo the statement is False.",
+        "**A.** → False\n\nCount half-lives and apply the geometric decay formula.\n\n$$\\frac{30}{10}=3$$\n\n$$m(30)=100\\cdot\\left(\\tfrac12\\right)^{3}=12.5$$\n\n$$12.5 < 15.$$\n\nSo the statement is False.",
+        "**B.** → False\n\nBy definition of half-life under $m(t)=m_0 e^{-kt}$,\n\n$$m(T_{1/2})=\\tfrac12 m_0\\implies e^{-k T_{1/2}}=\\tfrac12$$\n\n$$k=\\frac{\\ln 2}{T_{1/2}}=\\frac{\\ln 2}{10}\\approx0.069315..$$\n\nSo the statement is False.",
         "**C.** → False\n\nOne eighth remains after exactly three half-lives. Here\n\n$$\\frac{t}{T_{1/2}}=3$$\n\nand $m_0/8=12.5$. The actual remainder is $12.5$, so the claim fails.\n\nSo the statement is False.",
-        "**D.** → True\n\nFrom the overview, $m(30)=12.5$. Compare with $10$:\n\n$$12.5 > 10$$.\n\nSo the statement is True.",
-        "**E.** → False\n\nSolve $m(t)=10$ under the recovered $k$.\n\n$$100\\,e^{-kt}=10$$\n\n$$t=\\frac{\\ln(100/10)}{k}\\approx33.2193$$\n\n$$33.2193 \\ge 30$$.\n\nSo the statement is False."
+        "**D.** → True\n\nFrom the overview, $m(30)=12.5$. Compare with $10$:\n\n$$12.5 > 10.$$\n\nSo the statement is True.",
+        "**E.** → False\n\nSolve $m(t)=10$ under the recovered $k$.\n\n$$100\\,e^{-kt}=10$$\n\n$$t=\\frac{\\ln(100/10)}{k}\\approx33.2193$$\n\n$$33.2193 \\ge 30.$$\n\nSo the statement is False."
       ],
       "solution_overview": "Half-life $T_{1/2}=10$ forces continuous decay constant\n\n$$k=\\frac{\\ln 2}{10}\\approx0.069315$$\n\nand\n\n$$m(t)=100\\,e^{-kt}=100\\left(\\tfrac12\\right)^{t/10}.$$\n\nAt $t=30$, the sample has lived $3$ half-lives, so $m(30)=12.5$.",
       "difficulty_level": "5/5",
@@ -1360,10 +1360,10 @@
         true
       ],
       "tactical_explanations": [
-        "**A.** → False\n\nRead the two terminal levels from the overview (or the figure).\n\n$$f(15)\\approx269.9718$$\n\n$$g(15)\\approx289.6596$$\n\n$$269.9718 \\le 289.6596$$.\n\nSo the statement is False.",
-        "**B.** → False\n\nCompute the discrete force and compare with $k$.\n\n$$\\ln(1.025)\\approx0.024693$$\n\n$$0.02 \\le 0.024693$$.\n\nSo the statement is False.",
-        "**C.** → False\n\nRelative gap against the larger level:\n\n$$\\frac{|f-g|}{\\max(f,g)}\\approx0.067969$$\n\n$$0.067969 \\ge 0.05$$.\n\nSo the statement is False.",
-        "**D.** → False\n\n$$t_{\\mathrm{cont}}=\\frac{\\ln 2}{0.02}\\approx34.6574$$\n\n$$t_{\\mathrm{disc}}=\\frac{\\ln 2}{\\ln(1.025)}\\approx28.071$$\n\n$$34.6574 \\ge 28.071$$.\n\nSo the statement is False.",
+        "**A.** → False\n\nRead the two terminal levels from the overview (or the figure).\n\n$$f(15)\\approx269.9718$$\n\n$$g(15)\\approx289.6596$$\n\n$$269.9718 \\le 289.6596.$$\n\nSo the statement is False.",
+        "**B.** → False\n\nCompute the discrete force and compare with $k$.\n\n$$\\ln(1.025)\\approx0.024693$$\n\n$$0.02 \\le 0.024693.$$\n\nSo the statement is False.",
+        "**C.** → False\n\nRelative gap against the larger level:\n\n$$\\frac{|f-g|}{\\max(f,g)}\\approx0.067969$$\n\n$$0.067969 \\ge 0.05.$$\n\nSo the statement is False.",
+        "**D.** → False\n\n$$t_{\\mathrm{cont}}=\\frac{\\ln 2}{0.02}\\approx34.6574$$\n\n$$t_{\\mathrm{disc}}=\\frac{\\ln 2}{\\ln(1.025)}\\approx28.071$$\n\n$$34.6574 \\ge 28.071.$$\n\nSo the statement is False.",
         "**E.** → True\n\nAlgebraically,\n\n$$\\ln\\frac{Pe^{kt}}{P a^{t}}=(k-\\ln a)t$$\n\n$$=(0.02-0.024693)\\cdot15\\approx-0.070389.$$\n\nDirect evaluation of $\\ln(f/g)$ recovers the same number, so the identity holds.\n\nSo the statement is True."
       ],
       "solution_overview": "Continuous forecast $f(t)=200e^{0.02t}$ versus discrete $g(t)=200(1.025)^{t}$. At $t=15$:\n\n$$f(15)\\approx269.9718,\\quad g(15)\\approx289.6596.$$\n\nEquivalent discrete force $\\ln(1.025)\\approx0.024693$. Doubling times $34.6574$ (continuous) and $28.071$ (discrete).",
@@ -1393,10 +1393,10 @@
         false
       ],
       "tactical_explanations": [
-        "**A.** → False\n\nRead the two terminal levels from the overview (or the figure).\n\n$$f(13)\\approx174.9485$$\n\n$$g(13)\\approx155.2328$$\n\n$$174.9485 > 155.2328$$.\n\nSo the statement is False.",
-        "**B.** → False\n\nCompute the discrete force and compare with $k$.\n\n$$\\ln(1.02)\\approx0.019803$$\n\n$$0.029 > 0.019803$$.\n\nSo the statement is False.",
-        "**C.** → False\n\nRelative gap against the larger level:\n\n$$\\frac{|f-g|}{\\max(f,g)}\\approx0.112694$$\n\n$$0.112694 \\ge 0.05$$.\n\nSo the statement is False.",
-        "**D.** → True\n\n$$t_{\\mathrm{cont}}=\\frac{\\ln 2}{0.029}\\approx23.9016$$\n\n$$t_{\\mathrm{disc}}=\\frac{\\ln 2}{\\ln(1.02)}\\approx35.0028$$\n\n$$23.9016 < 35.0028$$.\n\nSo the statement is True.",
+        "**A.** → False\n\nRead the two terminal levels from the overview (or the figure).\n\n$$f(13)\\approx174.9485$$\n\n$$g(13)\\approx155.2328$$\n\n$$174.9485 > 155.2328.$$\n\nSo the statement is False.",
+        "**B.** → False\n\nCompute the discrete force and compare with $k$.\n\n$$\\ln(1.02)\\approx0.019803$$\n\n$$0.029 > 0.019803.$$\n\nSo the statement is False.",
+        "**C.** → False\n\nRelative gap against the larger level:\n\n$$\\frac{|f-g|}{\\max(f,g)}\\approx0.112694$$\n\n$$0.112694 \\ge 0.05.$$\n\nSo the statement is False.",
+        "**D.** → True\n\n$$t_{\\mathrm{cont}}=\\frac{\\ln 2}{0.029}\\approx23.9016$$\n\n$$t_{\\mathrm{disc}}=\\frac{\\ln 2}{\\ln(1.02)}\\approx35.0028$$\n\n$$23.9016 < 35.0028.$$\n\nSo the statement is True.",
         "**E.** → False\n\nAlgebraically,\n\n$$\\ln\\frac{Pe^{kt}}{P a^{t}}=(k-\\ln a)t$$\n\n$$=(0.029-0.019803)\\cdot13\\approx0.119566.$$\n\nDirect evaluation of $\\ln(f/g)$ recovers the same number, so the identity holds.\n\nSo the statement is False."
       ],
       "solution_overview": "Continuous forecast $f(t)=120e^{0.029t}$ versus discrete $g(t)=120(1.02)^{t}$. At $t=13$:\n\n$$f(13)\\approx174.9485,\\quad g(13)\\approx155.2328.$$\n\nEquivalent discrete force $\\ln(1.02)\\approx0.019803$. Doubling times $23.9016$ (continuous) and $35.0028$ (discrete).",
@@ -1427,10 +1427,10 @@
         false
       ],
       "tactical_explanations": [
-        "**A.** → False\n\nSubstitute into Newton's law.\n\n$$T(37)=15+(60)e^{-1.887}$$\n\n$$\\approx24.0915$$\n\n$$24.0915 < 30$$.\n\nSo the statement is False.",
+        "**A.** → False\n\nSubstitute into Newton's law.\n\n$$T(37)=15+(60)e^{-1.887}$$\n\n$$\\approx24.0915$$\n\n$$24.0915 < 30.$$\n\nSo the statement is False.",
         "**B.** → False\n\nBecause $e^{-kt}\\in(0,1)$ for finite $t>0$ and $T_0>T_a$,\n\n$$T(t)-T_a=(T_0-T_a)e^{-kt}>0.$$\n\nNumerically $T(37)\\approx24.0915>15$.\n\nSo the statement is False.",
-        "**C.** → False\n\nThe long-run limit of Newton's law is the ambient temperature, not $T_0$:\n\n$$\\lim_{t\\to\\infty}T(t)=T_a=15.$$.\n\nSo the statement is False.",
-        "**D.** → True\n\nSolve $T(t)=30$:\n\n$$t=-\\frac{1}{k}\\ln\\frac{30-15}{75-15}\\approx27.1822$$\n\n$$27.1822 < 37$$.\n\nSo the statement is True.",
+        "**C.** → False\n\nThe long-run limit of Newton's law is the ambient temperature, not $T_0$:\n\n$$\\lim_{t\\to\\infty}T(t)=T_a=15..$$\n\nSo the statement is False.",
+        "**D.** → True\n\nSolve $T(t)=30$:\n\n$$t=-\\frac{1}{k}\\ln\\frac{30-15}{75-15}\\approx27.1822$$\n\n$$27.1822 < 37.$$\n\nSo the statement is True.",
         "**E.** → False\n\nRearrange the model:\n\n$$T(t)-T_a=(T_0-T_a)e^{-kt}.$$\n\nAt $t=37$ the right-hand side equals $9.0915$, matching $T(37)-T_a$.\n\nSo the statement is False."
       ],
       "solution_overview": "Newton cooling: $T(t)=T_a+(T_0-T_a)e^{-kt}$ with $T_0=75$, $T_a=15$, $k=0.051$.\n\n$$T(37)=15+(75-15)e^{-0.051\\cdot37}\\approx24.0915.$$\n\nTime to reach $30$ solves $t=-\\ln\\frac{30-T_a}{T_0-T_a}/k\\approx27.1822$.",
@@ -1461,11 +1461,11 @@
         false
       ],
       "tactical_explanations": [
-        "**A.** → False\n\n$$N(11)=1000\\cdot(2)^{3.6667}=12699.2084$$\n\n$$12699.2084 \\le 20000$$.\n\nSo the statement is False.",
+        "**A.** → False\n\n$$N(11)=1000\\cdot(2)^{3.6667}=12699.2084$$\n\n$$12699.2084 \\le 20000.$$\n\nSo the statement is False.",
         "**B.** → False\n\nRewrite the period model as an exponential:\n\n$$(2)^{t/3}=e^{(t/3)\\ln(2)}=e^{kt}$$\n\nwith $k=\\ln(2)/3\\approx0.231049$. Thus the continuous force reproduces $N(t)$ identically.\n\nSo the statement is False.",
-        "**C.** → False\n\n$$\\frac{t}{\\text{period}}=\\frac{11}{3}=3.6667$$\n\n$$3.6667 > 3$$.\n\nSo the statement is False.",
+        "**C.** → False\n\n$$\\frac{t}{\\text{period}}=\\frac{11}{3}=3.6667$$\n\n$$3.6667 > 3.$$\n\nSo the statement is False.",
         "**D.** → True\n\nEach period multiplies by $2$, not necessarily by $2$. Doubling every period would require factor $2$. Here the factor is $2$, so the claim holds.\n\nSo the statement is True.",
-        "**E.** → False\n\nSolve $N(t)=20000$:\n\n$$t=\\frac{\\ln(20000/1000)}{k}\\approx12.9658$$\n\n$$12.9658 \\ge 11$$.\n\nSo the statement is False."
+        "**E.** → False\n\nSolve $N(t)=20000$:\n\n$$t=\\frac{\\ln(20000/1000)}{k}\\approx12.9658$$\n\n$$12.9658 \\ge 11.$$\n\nSo the statement is False."
       ],
       "solution_overview": "$N(t)=1000\\cdot(2)^{t/3}$. Equivalent continuous force $k=\\ln(2)/3\\approx0.231049$. At $t=11$, after $3.6667$ growth periods, $N\\approx12699.2084$. Time to reach $20000$ is $t=\\ln(20000/1000)/k\\approx12.9658$.",
       "difficulty_level": "4/5",
@@ -1497,9 +1497,9 @@
       "tactical_explanations": [
         "**A.** → False\n\n$$\\log_{5}(125)=\\frac{\\ln 125}{\\ln 5}=3$$\n\nAn integer check: distance to nearest integer is $0$, so the claim fails.\n\nSo the statement is False.",
         "**B.** → False\n\nTake $\\log_{5}$ of both sides of $125^{x}=5^{3}$:\n\n$$x\\log_{5} a=3$$\n\n$$x=\\frac{3}{\\log_{5} a}.$$\n\nWith $\\log_{5} a=3$ this is $x=1$.\n\nSo the statement is False.",
-        "**C.** → False\n\n$$x=1$$\n\n$$1 < 3$$.\n\nSo the statement is False.",
+        "**C.** → False\n\n$$x=1$$\n\n$$1 < 3.$$\n\nSo the statement is False.",
         "**D.** → True\n\n$$a^{x}=125^{1}\\approx125$$\n\n$$b^{3}=5^{3}=125$$\n\nThe sides match within numerical tolerance.\n\nSo the statement is True.",
-        "**E.** → False\n\n$$3 > 2$$.\n\nSo the statement is False."
+        "**E.** → False\n\n$$3 > 2.$$\n\nSo the statement is False."
       ],
       "solution_overview": "Change-of-base identity: $\\log_{5}(125)=\\ln a/\\ln b=3$. The equation $125^{x}=5^{3}$ becomes\n\n$$x\\log_{5} a=3\\implies x=\\frac{3}{\\log_{5}(125)}=1.$$\n\nSubstitution recovers $125^{x}=5^{3}$.",
       "difficulty_level": "1/5",
@@ -1530,10 +1530,10 @@
       ],
       "tactical_explanations": [
         "**A.** → False\n\n$$x_1=10^{2}\\approx100,\\quad x_2=10^{3}\\approx1000.$$\n\nBoth are powers of a positive base, hence strictly positive.\n\nSo the statement is False.",
-        "**B.** → False\n\nFor $u^{2}+\\cdots=0$, Vieta gives $u_1+u_2=-c_1/c_2$.\n\n$$u_1+u_2=2+3=5$$\n\n$$-c_1/c_2=5$$.\n\nSo the statement is False.",
+        "**B.** → False\n\nFor $u^{2}+\\cdots=0$, Vieta gives $u_1+u_2=-c_1/c_2$.\n\n$$u_1+u_2=2+3=5$$\n\n$$-c_1/c_2=5.$$\n\nSo the statement is False.",
         "**C.** → False\n\n$$x_1 x_2=b^{u_1}b^{u_2}=b^{u_1+u_2}.$$\n\nNumerically $x_1 x_2\\approx100000$ and $b^{u_1+u_2}\\approx100000$.\n\nSo the statement is False.",
         "**D.** → False\n\nThe logarithm $\\log_{10} x$ is defined only for $x>0$. Therefore $x=0$ is not in the domain and cannot be a solution.\n\nSo the statement is False.",
-        "**E.** → True\n\nVieta: $u_1 u_2=c_0/c_2=6$.\n\n$$(2)(3)=6$$.\n\nSo the statement is True."
+        "**E.** → True\n\nVieta: $u_1 u_2=c_0/c_2=6$.\n\n$$(2)(3)=6.$$\n\nSo the statement is True."
       ],
       "solution_overview": "Set $u=\\log_{10} x$. The equation becomes\n\n$$1u^{2}+(-5)u+(6)=0$$\n\nwith roots $u=2$ and $u=3$. Hence $x=10^{2}=100$ and $x=10^{3}=1000$. Domain requires $x>0$.",
       "difficulty_level": "2/5",
@@ -1563,9 +1563,9 @@
       ],
       "tactical_explanations": [
         "**A.** → False\n\nDifferentiate the log-linear specification:\n\n$$\\frac{d\\ln Q}{d\\ln P}=-1.5.$$\n\nThat derivative is the elasticity, constant along the curve.\n\nSo the statement is False.",
-        "**B.** → False\n\n$$Q=e^{5-1.5\\ln(4)}\\approx18.5516$$\n\n$$18.5516 > 8$$.\n\nSo the statement is False.",
-        "**C.** → False\n\n$$\\ln Q\\approx2.9206$$\n\n$$2.9206 > 1$$.\n\nSo the statement is False.",
-        "**D.** → True\n\n$$|\\varepsilon|=b=1.5$$\n\n$$1.5 > 1$$.\n\nSo the statement is True.",
+        "**B.** → False\n\n$$Q=e^{5-1.5\\ln(4)}\\approx18.5516$$\n\n$$18.5516 > 8.$$\n\nSo the statement is False.",
+        "**C.** → False\n\n$$\\ln Q\\approx2.9206$$\n\n$$2.9206 > 1.$$\n\nSo the statement is False.",
+        "**D.** → True\n\n$$|\\varepsilon|=b=1.5$$\n\n$$1.5 > 1.$$\n\nSo the statement is True.",
         "**E.** → False\n\n$$\\frac{Q(2P)}{Q(P)}=\\frac{e^{a-b\\ln(2P)}}{e^{a-b\\ln P}}=2^{-b}\\approx0.353553.$$\n\nThe constant-elasticity structure forces exactly that factor.\n\nSo the statement is False."
       ],
       "solution_overview": "Log-linear demand $\\ln Q=5-1.5\\ln P$. At $P=4$,\n\n$$\\ln Q=5-1.5\\ln(4)\\approx2.9206\\implies Q\\approx18.5516.$$\n\nPrice elasticity is the constant $d\\ln Q/d\\ln P=-1.5$. Doubling price multiplies $Q$ by $2^{-1.5}\\approx0.353553$.",
@@ -1595,11 +1595,11 @@
         true
       ],
       "tactical_explanations": [
-        "**A.** → False\n\n$$k=\\frac{\\ln(1.6)}{6}\\approx0.078334$$\n\n$$0.078334 > 0.04$$.\n\nSo the statement is False.",
+        "**A.** → False\n\n$$k=\\frac{\\ln(1.6)}{6}\\approx0.078334$$\n\n$$0.078334 > 0.04.$$\n\nSo the statement is False.",
         "**B.** → False\n\n$$P_0 e^{kt}=500\\,e^{0.078334\\cdot6}\\approx800$$\n\nwhich matches the observed $800$.\n\nSo the statement is False.",
-        "**C.** → False\n\n$$t_{\\times 2}=\\frac{\\ln 2}{k}\\approx8.8486$$\n\n$$8.8486 < 20$$.\n\nSo the statement is False.",
+        "**C.** → False\n\n$$t_{\\times 2}=\\frac{\\ln 2}{k}\\approx8.8486$$\n\n$$8.8486 < 20.$$\n\nSo the statement is False.",
         "**D.** → False\n\n$$k_{\\mathrm{lin}}=0.1,\\quad k=0.078334.$$\n\nThey differ; continuous force uses a logarithm, not a relative level change over $t$.\n\nSo the statement is False.",
-        "**E.** → True\n\n$$0.1 > 0.078334$$.\n\nSo the statement is True."
+        "**E.** → True\n\n$$0.1 > 0.078334.$$\n\nSo the statement is True."
       ],
       "solution_overview": "Observed $P(0)=500$ and $P(6)=800$ under continuous growth $P(t)=P_0 e^{kt}$. Recover\n\n$$k=\\frac{\\ln(P_t/P_0)}{t}=\\frac{\\ln(800/500)}{6}\\approx0.078334.$$\n\nDoubling time $\\ln 2/k\\approx8.8486$. A linearised rate $(P_t-P_0)/(P_0 t)\\approx0.1$ is not $k$.",
       "difficulty_level": "4/5",
@@ -1662,11 +1662,11 @@
         false
       ],
       "tactical_explanations": [
-        "**A.** → False\n\n$$\\frac{A_2}{A_1}=10^{2}\\approx100$$\n\n$$100 \\le 100$$.\n\nSo the statement is False.",
-        "**B.** → True\n\n$$\\frac{E_2}{E_1}\\approx1000,\\quad \\frac{A_2}{A_1}\\approx100$$\n\n$$1000 > 100$$.\n\nSo the statement is True.",
-        "**C.** → False\n\nThe magnitude gap is $2$, but amplitudes scale exponentially:\n\n$$\\frac{A_2}{A_1}=10^{\\Delta M}\\approx100\\neq2.$$.\n\nSo the statement is False.",
+        "**A.** → False\n\n$$\\frac{A_2}{A_1}=10^{2}\\approx100$$\n\n$$100 \\le 100.$$\n\nSo the statement is False.",
+        "**B.** → True\n\n$$\\frac{E_2}{E_1}\\approx1000,\\quad \\frac{A_2}{A_1}\\approx100$$\n\n$$1000 > 100.$$\n\nSo the statement is True.",
+        "**C.** → False\n\nThe magnitude gap is $2$, but amplitudes scale exponentially:\n\n$$\\frac{A_2}{A_1}=10^{\\Delta M}\\approx100\\neq2..$$\n\nSo the statement is False.",
         "**D.** → True\n\n$$\\log_{10}(A_2/A_1)=m_2-m_1=2.$$\n\nThat is the defining inversion of the Richter amplitude scale.\n\nSo the statement is True.",
-        "**E.** → False\n\n$$2 \\le 2$$.\n\nSo the statement is False."
+        "**E.** → False\n\n$$2 \\le 2.$$\n\nSo the statement is False."
       ],
       "solution_overview": "Richter amplitude scales as $A\\propto 10^{M}$. Between magnitudes $4.5$ and $6.5$,\n\n$$\\frac{A_2}{A_1}=10^{6.5-4.5}=100.$$\n\nA common energy proxy uses $E\\propto 10^{1.5 M}$, so\n\n$$\\frac{E_2}{E_1}=10^{1.5(6.5-4.5)}\\approx1000.$$",
       "difficulty_level": "1/5",
@@ -1696,10 +1696,10 @@
       ],
       "tactical_explanations": [
         "**A.** → False\n\n$$\\log_{5}(125)=\\frac{\\ln 125}{\\ln 5}=3$$\n\nDistance to nearest integer: $0$.\n\nSo the statement is False.",
-        "**B.** → False\n\nNeed $u=\\log_{5}(125)>0$ for the outer log to be defined. Here $u=3$. Then $\\log_{5}(u)\\approx0.6826$, compared with $2$:\n\n$$0.6826 < 2$$.\n\nSo the statement is False.",
+        "**B.** → False\n\nNeed $u=\\log_{5}(125)>0$ for the outer log to be defined. Here $u=3$. Then $\\log_{5}(u)\\approx0.6826$, compared with $2$:\n\n$$0.6826 < 2.$$\n\nSo the statement is False.",
         "**C.** → False\n\nThe nested value is $0.6826$, not automatically $1$. Equality to $1$ would require $\\log_{5}(u)=1$, i.e. $u=b$, which does not hold here.\n\nSo the statement is False.",
-        "**D.** → True\n\nPower rule:\n\n$$\\log_{5}(125^{2})=2\\log_{5}(125)=2\\cdot3=6.$$.\n\nSo the statement is True.",
-        "**E.** → True\n\n$$3 > 2$$.\n\nSo the statement is True."
+        "**D.** → True\n\nPower rule:\n\n$$\\log_{5}(125^{2})=2\\log_{5}(125)=2\\cdot3=6..$$\n\nSo the statement is True.",
+        "**E.** → True\n\n$$3 > 2.$$\n\nSo the statement is True."
       ],
       "solution_overview": "Let $u=\\log_{5}(125)=3$. Then $\\log_{5}(125^{2})=2u=6$. The nested value $\\log_{5}(u)\\approx0.6826$ is defined because $u>0$.",
       "difficulty_level": "2/5",
@@ -1730,10 +1730,10 @@
       ],
       "tactical_explanations": [
         "**A.** → True\n\nExpand the left side:\n\n$$\\log_{e}\\frac{xy}{z}=\\log_{e}(xy)-\\log_{e} z$$\n\n$$=\\log_{e} x+\\log_{e} y-\\log_{e} z.$$\n\nBoth evaluate to $0$.\n\nSo the statement is True.",
-        "**B.** → False\n\n$$0 \\le 1$$.\n\nSo the statement is False.",
+        "**B.** → False\n\n$$0 \\le 1.$$\n\nSo the statement is False.",
         "**C.** → False\n\nThe sum with a plus on $\\log z$ equals $3.583519$, while the true value is $0$. The quotient rule requires a minus.\n\nSo the statement is False.",
-        "**D.** → True\n\n$$(\\log x+\\log y+\\log z)-(\\log x+\\log y-\\log z)=2\\log_{e} z\\approx3.583519\\neq 0.$$.\n\nSo the statement is True.",
-        "**E.** → False\n\n$$\\frac{xy}{z}=1$$\n\n$$1 \\le 1$$.\n\nSo the statement is False."
+        "**D.** → True\n\n$$(\\log x+\\log y+\\log z)-(\\log x+\\log y-\\log z)=2\\log_{e} z\\approx3.583519\\neq 0..$$\n\nSo the statement is True.",
+        "**E.** → False\n\n$$\\frac{xy}{z}=1$$\n\n$$1 \\le 1.$$\n\nSo the statement is False."
       ],
       "solution_overview": "Product/quotient rule base $e$:\n\n$$\\log_{e}\\frac{xy}{z}=\\log_{e} x+\\log_{e} y-\\log_{e} z.$$\n\nWith $x=2$, $y=3$, $z=6$, both sides equal $0$.",
       "difficulty_level": "3/5",
@@ -1763,10 +1763,10 @@
       ],
       "tactical_explanations": [
         "**A.** → False\n\nExpand the left side:\n\n$$\\log_{2}\\frac{xy}{z}=\\log_{2}(xy)-\\log_{2} z$$\n\n$$=\\log_{2} x+\\log_{2} y-\\log_{2} z.$$\n\nBoth evaluate to $4$.\n\nSo the statement is False.",
-        "**B.** → False\n\n$$4 > 1$$.\n\nSo the statement is False.",
+        "**B.** → False\n\n$$4 > 1.$$\n\nSo the statement is False.",
         "**C.** → False\n\nThe sum with a plus on $\\log z$ equals $6$, while the true value is $4$. The quotient rule requires a minus.\n\nSo the statement is False.",
-        "**D.** → True\n\n$$(\\log x+\\log y+\\log z)-(\\log x+\\log y-\\log z)=2\\log_{2} z\\approx2\\neq 0.$$.\n\nSo the statement is True.",
-        "**E.** → True\n\n$$\\frac{xy}{z}=16$$\n\n$$16 > 1$$.\n\nSo the statement is True."
+        "**D.** → True\n\n$$(\\log x+\\log y+\\log z)-(\\log x+\\log y-\\log z)=2\\log_{2} z\\approx2\\neq 0..$$\n\nSo the statement is True.",
+        "**E.** → True\n\n$$\\frac{xy}{z}=16$$\n\n$$16 > 1.$$\n\nSo the statement is True."
       ],
       "solution_overview": "Product/quotient rule base $2$:\n\n$$\\log_{2}\\frac{xy}{z}=\\log_{2} x+\\log_{2} y-\\log_{2} z.$$\n\nWith $x=4$, $y=8$, $z=2$, both sides equal $4$.",
       "difficulty_level": "4/5",
@@ -1828,11 +1828,11 @@
         false
       ],
       "tactical_explanations": [
-        "**A.** → True\n\n$$\\mathrm{pH}_1=3,\\quad \\mathrm{pH}_2=5$$\n\n$$5 > 3$$.\n\nSo the statement is True.",
-        "**B.** → True\n\n$$\\mathrm{pH}_2-\\mathrm{pH}_1=-\\log_{10} h_2+\\log_{10} h_1=\\log_{10}(h_1/h_2)=2.$$.\n\nSo the statement is True.",
+        "**A.** → True\n\n$$\\mathrm{pH}_1=3,\\quad \\mathrm{pH}_2=5$$\n\n$$5 > 3.$$\n\nSo the statement is True.",
+        "**B.** → True\n\n$$\\mathrm{pH}_2-\\mathrm{pH}_1=-\\log_{10} h_2+\\log_{10} h_1=\\log_{10}(h_1/h_2)=2..$$\n\nSo the statement is True.",
         "**C.** → False\n\nConcentrations differ by $h_1-h_2=1e-03$, while the pH gap is $2$. pH is logarithmic, not linear in $[H^{+}]$.\n\nSo the statement is False.",
-        "**D.** → False\n\n$$\\frac{h_1}{h_2}=100$$\n\n$$100 \\le 100$$.\n\nSo the statement is False.",
-        "**E.** → False\n\n$$\\mathrm{pH}_2=5$$\n\n$$5 \\le 6$$.\n\nSo the statement is False."
+        "**D.** → False\n\n$$\\frac{h_1}{h_2}=100$$\n\n$$100 \\le 100.$$\n\nSo the statement is False.",
+        "**E.** → False\n\n$$\\mathrm{pH}_2=5$$\n\n$$5 \\le 6.$$\n\nSo the statement is False."
       ],
       "solution_overview": "pH $= -\\log_{10}[H^{+}]$. For $[H^{+}]=1e-03$ and $1e-05$,\n\n$$\\mathrm{pH}_1=3,\\quad \\mathrm{pH}_2=5.$$\n\nThe hydrogen-ion ratio is $h_1/h_2=100$. pH gap equals $\\log_{10}(h_1/h_2)=2$.",
       "difficulty_level": "1/5",
@@ -1862,10 +1862,10 @@
       ],
       "tactical_explanations": [
         "**A.** → True\n\nExpand the left side:\n\n$$\\log_{e}\\frac{xy}{z}=\\log_{e}(xy)-\\log_{e} z$$\n\n$$=\\log_{e} x+\\log_{e} y-\\log_{e} z.$$\n\nBoth evaluate to $0$.\n\nSo the statement is True.",
-        "**B.** → False\n\n$$0 \\le 1$$.\n\nSo the statement is False.",
+        "**B.** → False\n\n$$0 \\le 1.$$\n\nSo the statement is False.",
         "**C.** → False\n\nThe sum with a plus on $\\log z$ equals $3.583519$, while the true value is $0$. The quotient rule requires a minus.\n\nSo the statement is False.",
-        "**D.** → True\n\n$$(\\log x+\\log y+\\log z)-(\\log x+\\log y-\\log z)=2\\log_{e} z\\approx3.583519\\neq 0.$$.\n\nSo the statement is True.",
-        "**E.** → False\n\n$$\\frac{xy}{z}=1$$\n\n$$1 \\le 1$$.\n\nSo the statement is False."
+        "**D.** → True\n\n$$(\\log x+\\log y+\\log z)-(\\log x+\\log y-\\log z)=2\\log_{e} z\\approx3.583519\\neq 0..$$\n\nSo the statement is True.",
+        "**E.** → False\n\n$$\\frac{xy}{z}=1$$\n\n$$1 \\le 1.$$\n\nSo the statement is False."
       ],
       "solution_overview": "Product/quotient rule base $e$:\n\n$$\\log_{e}\\frac{xy}{z}=\\log_{e} x+\\log_{e} y-\\log_{e} z.$$\n\nWith $x=2$, $y=3$, $z=6$, both sides equal $0$.",
       "difficulty_level": "2/5",
@@ -1895,10 +1895,10 @@
       ],
       "tactical_explanations": [
         "**A.** → False\n\n$$x_1=5^{2}\\approx25,\\quad x_2=5^{3}\\approx125.$$\n\nBoth are powers of a positive base, hence strictly positive.\n\nSo the statement is False.",
-        "**B.** → False\n\nFor $u^{2}+\\cdots=0$, Vieta gives $u_1+u_2=-c_1/c_2$.\n\n$$u_1+u_2=2+3=5$$\n\n$$-c_1/c_2=5$$.\n\nSo the statement is False.",
+        "**B.** → False\n\nFor $u^{2}+\\cdots=0$, Vieta gives $u_1+u_2=-c_1/c_2$.\n\n$$u_1+u_2=2+3=5$$\n\n$$-c_1/c_2=5.$$\n\nSo the statement is False.",
         "**C.** → True\n\n$$x_1 x_2=b^{u_1}b^{u_2}=b^{u_1+u_2}.$$\n\nNumerically $x_1 x_2\\approx3125$ and $b^{u_1+u_2}\\approx3125$.\n\nSo the statement is True.",
         "**D.** → False\n\nThe logarithm $\\log_{5} x$ is defined only for $x>0$. Therefore $x=0$ is not in the domain and cannot be a solution.\n\nSo the statement is False.",
-        "**E.** → True\n\nVieta: $u_1 u_2=c_0/c_2=6$.\n\n$$(2)(3)=6$$.\n\nSo the statement is True."
+        "**E.** → True\n\nVieta: $u_1 u_2=c_0/c_2=6$.\n\n$$(2)(3)=6.$$\n\nSo the statement is True."
       ],
       "solution_overview": "Set $u=\\log_{5} x$. The equation becomes\n\n$$1u^{2}+(-5)u+(6)=0$$\n\nwith roots $u=2$ and $u=3$. Hence $x=5^{2}=25$ and $x=5^{3}=125$. Domain requires $x>0$.",
       "difficulty_level": "3/5",
@@ -1928,11 +1928,11 @@
         false
       ],
       "tactical_explanations": [
-        "**A.** → False\n\n$$\\frac{A_2}{A_1}=10^{2}\\approx100$$\n\n$$100 \\le 100$$.\n\nSo the statement is False.",
-        "**B.** → True\n\n$$\\frac{E_2}{E_1}\\approx1000,\\quad \\frac{A_2}{A_1}\\approx100$$\n\n$$1000 > 100$$.\n\nSo the statement is True.",
-        "**C.** → False\n\nThe magnitude gap is $2$, but amplitudes scale exponentially:\n\n$$\\frac{A_2}{A_1}=10^{\\Delta M}\\approx100\\neq2.$$.\n\nSo the statement is False.",
+        "**A.** → False\n\n$$\\frac{A_2}{A_1}=10^{2}\\approx100$$\n\n$$100 \\le 100.$$\n\nSo the statement is False.",
+        "**B.** → True\n\n$$\\frac{E_2}{E_1}\\approx1000,\\quad \\frac{A_2}{A_1}\\approx100$$\n\n$$1000 > 100.$$\n\nSo the statement is True.",
+        "**C.** → False\n\nThe magnitude gap is $2$, but amplitudes scale exponentially:\n\n$$\\frac{A_2}{A_1}=10^{\\Delta M}\\approx100\\neq2..$$\n\nSo the statement is False.",
         "**D.** → True\n\n$$\\log_{10}(A_2/A_1)=m_2-m_1=2.$$\n\nThat is the defining inversion of the Richter amplitude scale.\n\nSo the statement is True.",
-        "**E.** → False\n\n$$2 \\le 2$$.\n\nSo the statement is False."
+        "**E.** → False\n\n$$2 \\le 2.$$\n\nSo the statement is False."
       ],
       "solution_overview": "Richter amplitude scales as $A\\propto 10^{M}$. Between magnitudes $4.5$ and $6.5$,\n\n$$\\frac{A_2}{A_1}=10^{6.5-4.5}=100.$$\n\nA common energy proxy uses $E\\propto 10^{1.5 M}$, so\n\n$$\\frac{E_2}{E_1}=10^{1.5(6.5-4.5)}\\approx1000.$$",
       "difficulty_level": "4/5",
@@ -1964,8 +1964,8 @@
         "**A.** → True\n\nApply the inverse identity directly:\n\n$$\\log_{2}(2^{3})=3.$$\n\nNo extra arithmetic is required beyond recognising the inverse pair.\n\nSo the statement is True.",
         "**B.** → True\n\n$$ 2^{\\log_{2}(8)}=8$$\n\nby the inverse relationship on the positive reals.\n\nSo the statement is True.",
         "**C.** → False\n\nThe left side equals $3$, while $2^{3}=8$. Those are equal only in special cases; here $3\\neq8$, so the claim fails.\n\nSo the statement is False.",
-        "**D.** → True\n\nSame identity as statement A, evaluated at $x=3$:\n\n$$\\log_{2}(2^{3})=3.$$.\n\nSo the statement is True.",
-        "**E.** → False\n\n$$8 \\le 10$$.\n\nSo the statement is False."
+        "**D.** → True\n\nSame identity as statement A, evaluated at $x=3$:\n\n$$\\log_{2}(2^{3})=3..$$\n\nSo the statement is True.",
+        "**E.** → False\n\n$$8 \\le 10.$$\n\nSo the statement is False."
       ],
       "solution_overview": "Exponential and logarithm base $2$ are inverses:\n\n$$\\log_{2}(2^{x})=x,\\qquad 2^{\\log_{2} y}=y\\ (y>0).$$\n\nHere $x=3$ gives $y=2^{3}=8$.",
       "difficulty_level": "5/5",
@@ -1995,10 +1995,10 @@
       ],
       "tactical_explanations": [
         "**A.** → True\n\nExpand the left side:\n\n$$\\log_{10}\\frac{xy}{z}=\\log_{10}(xy)-\\log_{10} z$$\n\n$$=\\log_{10} x+\\log_{10} y-\\log_{10} z.$$\n\nBoth evaluate to $0.39794$.\n\nSo the statement is True.",
-        "**B.** → False\n\n$$0.39794 \\le 1$$.\n\nSo the statement is False.",
+        "**B.** → False\n\n$$0.39794 \\le 1.$$\n\nSo the statement is False.",
         "**C.** → False\n\nThe sum with a plus on $\\log z$ equals $1.60206$, while the true value is $0.39794$. The quotient rule requires a minus.\n\nSo the statement is False.",
-        "**D.** → True\n\n$$(\\log x+\\log y+\\log z)-(\\log x+\\log y-\\log z)=2\\log_{10} z\\approx1.20412\\neq 0.$$.\n\nSo the statement is True.",
-        "**E.** → True\n\n$$\\frac{xy}{z}=2.5$$\n\n$$2.5 > 1$$.\n\nSo the statement is True."
+        "**D.** → True\n\n$$(\\log x+\\log y+\\log z)-(\\log x+\\log y-\\log z)=2\\log_{10} z\\approx1.20412\\neq 0..$$\n\nSo the statement is True.",
+        "**E.** → True\n\n$$\\frac{xy}{z}=2.5$$\n\n$$2.5 > 1.$$\n\nSo the statement is True."
       ],
       "solution_overview": "Product/quotient rule base $10$:\n\n$$\\log_{10}\\frac{xy}{z}=\\log_{10} x+\\log_{10} y-\\log_{10} z.$$\n\nWith $x=2$, $y=5$, $z=4$, both sides equal $0.39794$.",
       "difficulty_level": "1/5",
@@ -2061,10 +2061,10 @@
       ],
       "tactical_explanations": [
         "**A.** → True\n\n$$\\log_{2}(16)=\\frac{\\ln 16}{\\ln 2}=4$$\n\nDistance to nearest integer: $0$.\n\nSo the statement is True.",
-        "**B.** → False\n\nNeed $u=\\log_{2}(16)>0$ for the outer log to be defined. Here $u=4$. Then $\\log_{2}(u)\\approx2$, compared with $2$:\n\n$$2 \\ge 2$$.\n\nSo the statement is False.",
+        "**B.** → False\n\nNeed $u=\\log_{2}(16)>0$ for the outer log to be defined. Here $u=4$. Then $\\log_{2}(u)\\approx2$, compared with $2$:\n\n$$2 \\ge 2.$$\n\nSo the statement is False.",
         "**C.** → False\n\nThe nested value is $2$, not automatically $1$. Equality to $1$ would require $\\log_{2}(u)=1$, i.e. $u=b$, which does not hold here.\n\nSo the statement is False.",
-        "**D.** → True\n\nPower rule:\n\n$$\\log_{2}(16^{2})=2\\log_{2}(16)=2\\cdot4=8.$$.\n\nSo the statement is True.",
-        "**E.** → True\n\n$$4 > 2$$.\n\nSo the statement is True."
+        "**D.** → True\n\nPower rule:\n\n$$\\log_{2}(16^{2})=2\\log_{2}(16)=2\\cdot4=8..$$\n\nSo the statement is True.",
+        "**E.** → True\n\n$$4 > 2.$$\n\nSo the statement is True."
       ],
       "solution_overview": "Let $u=\\log_{2}(16)=4$. Then $\\log_{2}(16^{2})=2u=8$. The nested value $\\log_{2}(u)\\approx2$ is defined because $u>0$.",
       "difficulty_level": "3/5",
@@ -2129,8 +2129,8 @@
         "**A.** → True\n\nApply the inverse identity directly:\n\n$$\\log_{e}(e^{1.5})=1.5.$$\n\nNo extra arithmetic is required beyond recognising the inverse pair.\n\nSo the statement is True.",
         "**B.** → True\n\n$$ e^{\\log_{e}(4.4817)}=4.4817$$\n\nby the inverse relationship on the positive reals.\n\nSo the statement is True.",
         "**C.** → False\n\nThe left side equals $1.5$, while $e^{1.5}=4.481689$. Those are equal only in special cases; here $1.5\\neq4.481689$, so the claim fails.\n\nSo the statement is False.",
-        "**D.** → True\n\nSame identity as statement A, evaluated at $x=1.5$:\n\n$$\\log_{e}(e^{1.5})=1.5.$$.\n\nSo the statement is True.",
-        "**E.** → False\n\n$$4.481689 \\le 10$$.\n\nSo the statement is False."
+        "**D.** → True\n\nSame identity as statement A, evaluated at $x=1.5$:\n\n$$\\log_{e}(e^{1.5})=1.5..$$\n\nSo the statement is True.",
+        "**E.** → False\n\n$$4.481689 \\le 10.$$\n\nSo the statement is False."
       ],
       "solution_overview": "Exponential and logarithm base $e$ are inverses:\n\n$$\\log_{e}(e^{x})=x,\\qquad e^{\\log_{e} y}=y\\ (y>0).$$\n\nHere $x=1.5$ gives $y=e^{1.5}=4.481689$.",
       "difficulty_level": "5/5",
@@ -2193,10 +2193,10 @@
       ],
       "tactical_explanations": [
         "**A.** → True\n\n$$\\log_{10}(100)=\\frac{\\ln 100}{\\ln 10}=2$$\n\nDistance to nearest integer: $0$.\n\nSo the statement is True.",
-        "**B.** → True\n\nNeed $u=\\log_{10}(100)>0$ for the outer log to be defined. Here $u=2$. Then $\\log_{10}(u)\\approx0.301$, compared with $2$:\n\n$$0.301 < 2$$.\n\nSo the statement is True.",
+        "**B.** → True\n\nNeed $u=\\log_{10}(100)>0$ for the outer log to be defined. Here $u=2$. Then $\\log_{10}(u)\\approx0.301$, compared with $2$:\n\n$$0.301 < 2.$$\n\nSo the statement is True.",
         "**C.** → False\n\nThe nested value is $0.301$, not automatically $1$. Equality to $1$ would require $\\log_{10}(u)=1$, i.e. $u=b$, which does not hold here.\n\nSo the statement is False.",
-        "**D.** → True\n\nPower rule:\n\n$$\\log_{10}(100^{2})=2\\log_{10}(100)=2\\cdot2=4.$$.\n\nSo the statement is True.",
-        "**E.** → False\n\n$$2 \\le 2$$.\n\nSo the statement is False."
+        "**D.** → True\n\nPower rule:\n\n$$\\log_{10}(100^{2})=2\\log_{10}(100)=2\\cdot2=4..$$\n\nSo the statement is True.",
+        "**E.** → False\n\n$$2 \\le 2.$$\n\nSo the statement is False."
       ],
       "solution_overview": "Let $u=\\log_{10}(100)=2$. Then $\\log_{10}(100^{2})=2u=4$. The nested value $\\log_{10}(u)\\approx0.301$ is defined because $u>0$.",
       "difficulty_level": "2/5",
@@ -2259,10 +2259,10 @@
       ],
       "tactical_explanations": [
         "**A.** → True\n\n$$x_1=2^{1}\\approx2,\\quad x_2=2^{3}\\approx8.$$\n\nBoth are powers of a positive base, hence strictly positive.\n\nSo the statement is True.",
-        "**B.** → True\n\nFor $u^{2}+\\cdots=0$, Vieta gives $u_1+u_2=-c_1/c_2$.\n\n$$u_1+u_2=1+3=4$$\n\n$$-c_1/c_2=4$$.\n\nSo the statement is True.",
+        "**B.** → True\n\nFor $u^{2}+\\cdots=0$, Vieta gives $u_1+u_2=-c_1/c_2$.\n\n$$u_1+u_2=1+3=4$$\n\n$$-c_1/c_2=4.$$\n\nSo the statement is True.",
         "**C.** → True\n\n$$x_1 x_2=b^{u_1}b^{u_2}=b^{u_1+u_2}.$$\n\nNumerically $x_1 x_2\\approx16$ and $b^{u_1+u_2}\\approx16$.\n\nSo the statement is True.",
         "**D.** → False\n\nThe logarithm $\\log_{2} x$ is defined only for $x>0$. Therefore $x=0$ is not in the domain and cannot be a solution.\n\nSo the statement is False.",
-        "**E.** → True\n\nVieta: $u_1 u_2=c_0/c_2=3$.\n\n$$(1)(3)=3$$.\n\nSo the statement is True."
+        "**E.** → True\n\nVieta: $u_1 u_2=c_0/c_2=3$.\n\n$$(1)(3)=3.$$\n\nSo the statement is True."
       ],
       "solution_overview": "Set $u=\\log_{2} x$. The equation becomes\n\n$$1u^{2}+(-4)u+(3)=0$$\n\nwith roots $u=1$ and $u=3$. Hence $x=2^{1}=2$ and $x=2^{3}=8$. Domain requires $x>0$.",
       "difficulty_level": "4/5",
@@ -2293,9 +2293,9 @@
       ],
       "tactical_explanations": [
         "**A.** → False\n\nDifferentiate the log-linear specification:\n\n$$\\frac{d\\ln Q}{d\\ln P}=-1.25.$$\n\nThat derivative is the elasticity, constant along the curve.\n\nSo the statement is False.",
-        "**B.** → True\n\n$$Q=e^{4.5-1.25\\ln(4)}\\approx15.9129$$\n\n$$15.9129 > 6$$.\n\nSo the statement is True.",
-        "**C.** → True\n\n$$\\ln Q\\approx2.7671$$\n\n$$2.7671 > 1$$.\n\nSo the statement is True.",
-        "**D.** → True\n\n$$|\\varepsilon|=b=1.25$$\n\n$$1.25 > 1$$.\n\nSo the statement is True.",
+        "**B.** → True\n\n$$Q=e^{4.5-1.25\\ln(4)}\\approx15.9129$$\n\n$$15.9129 > 6.$$\n\nSo the statement is True.",
+        "**C.** → True\n\n$$\\ln Q\\approx2.7671$$\n\n$$2.7671 > 1.$$\n\nSo the statement is True.",
+        "**D.** → True\n\n$$|\\varepsilon|=b=1.25$$\n\n$$1.25 > 1.$$\n\nSo the statement is True.",
         "**E.** → True\n\n$$\\frac{Q(2P)}{Q(P)}=\\frac{e^{a-b\\ln(2P)}}{e^{a-b\\ln P}}=2^{-b}\\approx0.420448.$$\n\nThe constant-elasticity structure forces exactly that factor.\n\nSo the statement is True."
       ],
       "solution_overview": "Log-linear demand $\\ln Q=4.5-1.25\\ln P$. At $P=4$,\n\n$$\\ln Q=4.5-1.25\\ln(4)\\approx2.7671\\implies Q\\approx15.9129.$$\n\nPrice elasticity is the constant $d\\ln Q/d\\ln P=-1.25$. Doubling price multiplies $Q$ by $2^{-1.25}\\approx0.420448$.",
@@ -2326,11 +2326,11 @@
         true
       ],
       "tactical_explanations": [
-        "**A.** → True\n\n$$x=499.5$$\n\n$$499.5 > 0$$.\n\nSo the statement is True.",
+        "**A.** → True\n\n$$x=499.5$$\n\n$$499.5 > 0.$$\n\nSo the statement is True.",
         "**B.** → True\n\n$$\\log_{10}(2\\cdot499.5+1)=\\log_{10}(1000)=3$$\n\nwhich matches $3$.\n\nSo the statement is True.",
-        "**C.** → True\n\n$$2x+1=1000$$\n\n$$1000 > 1$$.\n\nSo the statement is True.",
+        "**C.** → True\n\n$$2x+1=1000$$\n\n$$1000 > 1.$$\n\nSo the statement is True.",
         "**D.** → False\n\nThe root is $x=499.5$, while the RHS is $3$. Equating them would skip the exponentiation step $2x+1=10^{3}$.\n\nSo the statement is False.",
-        "**E.** → True\n\n$$499.5 > 3$$.\n\nSo the statement is True."
+        "**E.** → True\n\n$$499.5 > 3.$$\n\nSo the statement is True."
       ],
       "solution_overview": "Solve $\\log_{10}(2x+1)=3$. Exponentiate base $10$:\n\n$$2x+1=10^{3}=1000$$\n\n$$x=\\frac{1000-1}{2}=499.5.$$\n\nDomain requires $2x+1>0$, i.e. $x>-1/2$; the recovered root satisfies it.",
       "difficulty_level": "1/5",
@@ -2360,10 +2360,10 @@
       ],
       "tactical_explanations": [
         "**A.** → True\n\n$$x_1=2^{2}\\approx4,\\quad x_2=2^{3}\\approx8.$$\n\nBoth are powers of a positive base, hence strictly positive.\n\nSo the statement is True.",
-        "**B.** → True\n\nFor $u^{2}+\\cdots=0$, Vieta gives $u_1+u_2=-c_1/c_2$.\n\n$$u_1+u_2=2+3=5$$\n\n$$-c_1/c_2=5$$.\n\nSo the statement is True.",
+        "**B.** → True\n\nFor $u^{2}+\\cdots=0$, Vieta gives $u_1+u_2=-c_1/c_2$.\n\n$$u_1+u_2=2+3=5$$\n\n$$-c_1/c_2=5.$$\n\nSo the statement is True.",
         "**C.** → True\n\n$$x_1 x_2=b^{u_1}b^{u_2}=b^{u_1+u_2}.$$\n\nNumerically $x_1 x_2\\approx32$ and $b^{u_1+u_2}\\approx32$.\n\nSo the statement is True.",
         "**D.** → False\n\nThe logarithm $\\log_{2} x$ is defined only for $x>0$. Therefore $x=0$ is not in the domain and cannot be a solution.\n\nSo the statement is False.",
-        "**E.** → True\n\nVieta: $u_1 u_2=c_0/c_2=6$.\n\n$$(2)(3)=6$$.\n\nSo the statement is True."
+        "**E.** → True\n\nVieta: $u_1 u_2=c_0/c_2=6$.\n\n$$(2)(3)=6.$$\n\nSo the statement is True."
       ],
       "solution_overview": "Set $u=\\log_{2} x$. The equation becomes\n\n$$1u^{2}+(-5)u+(6)=0$$\n\nwith roots $u=2$ and $u=3$. Hence $x=2^{2}=4$ and $x=2^{3}=8$. Domain requires $x>0$.",
       "difficulty_level": "2/5",
@@ -2395,8 +2395,8 @@
         "**A.** → True\n\nApply the inverse identity directly:\n\n$$\\log_{e}(e^{1.5})=1.5.$$\n\nNo extra arithmetic is required beyond recognising the inverse pair.\n\nSo the statement is True.",
         "**B.** → True\n\n$$ e^{\\log_{e}(4.4817)}=4.4817$$\n\nby the inverse relationship on the positive reals.\n\nSo the statement is True.",
         "**C.** → True\n\nThe left side equals $1.5$, while $e^{1.5}=4.481689$. Those are equal only in special cases; here $1.5\\neq4.481689$, so the claim holds.\n\nSo the statement is True.",
-        "**D.** → True\n\nSame identity as statement A, evaluated at $x=1.5$:\n\n$$\\log_{e}(e^{1.5})=1.5.$$.\n\nSo the statement is True.",
-        "**E.** → False\n\n$$4.481689 \\le 10$$.\n\nSo the statement is False."
+        "**D.** → True\n\nSame identity as statement A, evaluated at $x=1.5$:\n\n$$\\log_{e}(e^{1.5})=1.5..$$\n\nSo the statement is True.",
+        "**E.** → False\n\n$$4.481689 \\le 10.$$\n\nSo the statement is False."
       ],
       "solution_overview": "Exponential and logarithm base $e$ are inverses:\n\n$$\\log_{e}(e^{x})=x,\\qquad e^{\\log_{e} y}=y\\ (y>0).$$\n\nHere $x=1.5$ gives $y=e^{1.5}=4.481689$.",
       "difficulty_level": "3/5",
@@ -2429,8 +2429,8 @@
         "**A.** → True\n\nApply the inverse identity directly:\n\n$$\\log_{10}(10^{2})=2.$$\n\nNo extra arithmetic is required beyond recognising the inverse pair.\n\nSo the statement is True.",
         "**B.** → True\n\n$$ 10^{\\log_{10}(100)}=100$$\n\nby the inverse relationship on the positive reals.\n\nSo the statement is True.",
         "**C.** → False\n\nThe left side equals $2$, while $10^{2}=100$. Those are equal only in special cases; here $2\\neq100$, so the claim fails.\n\nSo the statement is False.",
-        "**D.** → True\n\nSame identity as statement A, evaluated at $x=2$:\n\n$$\\log_{10}(10^{2})=2.$$.\n\nSo the statement is True.",
-        "**E.** → True\n\n$$100 > 10$$.\n\nSo the statement is True."
+        "**D.** → True\n\nSame identity as statement A, evaluated at $x=2$:\n\n$$\\log_{10}(10^{2})=2..$$\n\nSo the statement is True.",
+        "**E.** → True\n\n$$100 > 10.$$\n\nSo the statement is True."
       ],
       "solution_overview": "Exponential and logarithm base $10$ are inverses:\n\n$$\\log_{10}(10^{x})=x,\\qquad 10^{\\log_{10} y}=y\\ (y>0).$$\n\nHere $x=2$ gives $y=10^{2}=100$.",
       "difficulty_level": "4/5",
@@ -2460,10 +2460,10 @@
       ],
       "tactical_explanations": [
         "**A.** → True\n\nExpand the left side:\n\n$$\\log_{2}\\frac{xy}{z}=\\log_{2}(xy)-\\log_{2} z$$\n\n$$=\\log_{2} x+\\log_{2} y-\\log_{2} z.$$\n\nBoth evaluate to $4$.\n\nSo the statement is True.",
-        "**B.** → True\n\n$$4 > 1$$.\n\nSo the statement is True.",
+        "**B.** → True\n\n$$4 > 1.$$\n\nSo the statement is True.",
         "**C.** → False\n\nThe sum with a plus on $\\log z$ equals $6$, while the true value is $4$. The quotient rule requires a minus.\n\nSo the statement is False.",
-        "**D.** → True\n\n$$(\\log x+\\log y+\\log z)-(\\log x+\\log y-\\log z)=2\\log_{2} z\\approx2\\neq 0.$$.\n\nSo the statement is True.",
-        "**E.** → True\n\n$$\\frac{xy}{z}=16$$\n\n$$16 > 1$$.\n\nSo the statement is True."
+        "**D.** → True\n\n$$(\\log x+\\log y+\\log z)-(\\log x+\\log y-\\log z)=2\\log_{2} z\\approx2\\neq 0..$$\n\nSo the statement is True.",
+        "**E.** → True\n\n$$\\frac{xy}{z}=16$$\n\n$$16 > 1.$$\n\nSo the statement is True."
       ],
       "solution_overview": "Product/quotient rule base $2$:\n\n$$\\log_{2}\\frac{xy}{z}=\\log_{2} x+\\log_{2} y-\\log_{2} z.$$\n\nWith $x=4$, $y=8$, $z=2$, both sides equal $4$.",
       "difficulty_level": "5/5",
@@ -2492,11 +2492,11 @@
         true
       ],
       "tactical_explanations": [
-        "**A.** → True\n\n$$x=15.5$$\n\n$$15.5 > 0$$.\n\nSo the statement is True.",
+        "**A.** → True\n\n$$x=15.5$$\n\n$$15.5 > 0.$$\n\nSo the statement is True.",
         "**B.** → True\n\n$$\\log_{2}(2\\cdot15.5+1)=\\log_{2}(32)=5$$\n\nwhich matches $5$.\n\nSo the statement is True.",
-        "**C.** → True\n\n$$2x+1=32$$\n\n$$32 > 1$$.\n\nSo the statement is True.",
+        "**C.** → True\n\n$$2x+1=32$$\n\n$$32 > 1.$$\n\nSo the statement is True.",
         "**D.** → False\n\nThe root is $x=15.5$, while the RHS is $5$. Equating them would skip the exponentiation step $2x+1=2^{5}$.\n\nSo the statement is False.",
-        "**E.** → True\n\n$$15.5 > 5$$.\n\nSo the statement is True."
+        "**E.** → True\n\n$$15.5 > 5.$$\n\nSo the statement is True."
       ],
       "solution_overview": "Solve $\\log_{2}(2x+1)=5$. Exponentiate base $2$:\n\n$$2x+1=2^{5}=32$$\n\n$$x=\\frac{32-1}{2}=15.5.$$\n\nDomain requires $2x+1>0$, i.e. $x>-1/2$; the recovered root satisfies it.",
       "difficulty_level": "1/5",
@@ -2558,11 +2558,11 @@
         true
       ],
       "tactical_explanations": [
-        "**A.** → True\n\n$$x=15.5$$\n\n$$15.5 > 0$$.\n\nSo the statement is True.",
+        "**A.** → True\n\n$$x=15.5$$\n\n$$15.5 > 0.$$\n\nSo the statement is True.",
         "**B.** → True\n\n$$\\log_{2}(2\\cdot15.5+1)=\\log_{2}(32)=5$$\n\nwhich matches $5$.\n\nSo the statement is True.",
-        "**C.** → True\n\n$$2x+1=32$$\n\n$$32 > 1$$.\n\nSo the statement is True.",
+        "**C.** → True\n\n$$2x+1=32$$\n\n$$32 > 1.$$\n\nSo the statement is True.",
         "**D.** → True\n\nThe root is $x=15.5$, while the RHS is $5$. Equating them would skip the exponentiation step $2x+1=2^{5}$.\n\nSo the statement is True.",
-        "**E.** → True\n\n$$15.5 > 5$$.\n\nSo the statement is True."
+        "**E.** → True\n\n$$15.5 > 5.$$\n\nSo the statement is True."
       ],
       "solution_overview": "Solve $\\log_{2}(2x+1)=5$. Exponentiate base $2$:\n\n$$2x+1=2^{5}=32$$\n\n$$x=\\frac{32-1}{2}=15.5.$$\n\nDomain requires $2x+1>0$, i.e. $x>-1/2$; the recovered root satisfies it.",
       "difficulty_level": "3/5",
@@ -2592,9 +2592,9 @@
       ],
       "tactical_explanations": [
         "**A.** → True\n\nDifferentiate the log-linear specification:\n\n$$\\frac{d\\ln Q}{d\\ln P}=-2.$$\n\nThat derivative is the elasticity, constant along the curve.\n\nSo the statement is True.",
-        "**B.** → True\n\n$$Q=e^{4-2\\ln(2)}\\approx13.6495$$\n\n$$13.6495 > 4$$.\n\nSo the statement is True.",
-        "**C.** → True\n\n$$\\ln Q\\approx2.6137$$\n\n$$2.6137 > 1$$.\n\nSo the statement is True.",
-        "**D.** → True\n\n$$|\\varepsilon|=b=2$$\n\n$$2 > 1$$.\n\nSo the statement is True.",
+        "**B.** → True\n\n$$Q=e^{4-2\\ln(2)}\\approx13.6495$$\n\n$$13.6495 > 4.$$\n\nSo the statement is True.",
+        "**C.** → True\n\n$$\\ln Q\\approx2.6137$$\n\n$$2.6137 > 1.$$\n\nSo the statement is True.",
+        "**D.** → True\n\n$$|\\varepsilon|=b=2$$\n\n$$2 > 1.$$\n\nSo the statement is True.",
         "**E.** → True\n\n$$\\frac{Q(2P)}{Q(P)}=\\frac{e^{a-b\\ln(2P)}}{e^{a-b\\ln P}}=2^{-b}\\approx0.25.$$\n\nThe constant-elasticity structure forces exactly that factor.\n\nSo the statement is True."
       ],
       "solution_overview": "Log-linear demand $\\ln Q=4-2\\ln P$. At $P=2$,\n\n$$\\ln Q=4-2\\ln(2)\\approx2.6137\\implies Q\\approx13.6495.$$\n\nPrice elasticity is the constant $d\\ln Q/d\\ln P=-2$. Doubling price multiplies $Q$ by $2^{-2}\\approx0.25$.",
@@ -2625,10 +2625,10 @@
       ],
       "tactical_explanations": [
         "**A.** → True\n\n$$x_1=10^{1}\\approx10,\\quad x_2=10^{2}\\approx100.$$\n\nBoth are powers of a positive base, hence strictly positive.\n\nSo the statement is True.",
-        "**B.** → True\n\nFor $u^{2}+\\cdots=0$, Vieta gives $u_1+u_2=-c_1/c_2$.\n\n$$u_1+u_2=1+2=3$$\n\n$$-c_1/c_2=3$$.\n\nSo the statement is True.",
+        "**B.** → True\n\nFor $u^{2}+\\cdots=0$, Vieta gives $u_1+u_2=-c_1/c_2$.\n\n$$u_1+u_2=1+2=3$$\n\n$$-c_1/c_2=3.$$\n\nSo the statement is True.",
         "**C.** → True\n\n$$x_1 x_2=b^{u_1}b^{u_2}=b^{u_1+u_2}.$$\n\nNumerically $x_1 x_2\\approx1000$ and $b^{u_1+u_2}\\approx1000$.\n\nSo the statement is True.",
         "**D.** → True\n\nThe logarithm $\\log_{10} x$ is defined only for $x>0$. Therefore $x=0$ is not in the domain and cannot be a solution.\n\nSo the statement is True.",
-        "**E.** → True\n\nVieta: $u_1 u_2=c_0/c_2=2$.\n\n$$(1)(2)=2$$.\n\nSo the statement is True."
+        "**E.** → True\n\nVieta: $u_1 u_2=c_0/c_2=2$.\n\n$$(1)(2)=2.$$\n\nSo the statement is True."
       ],
       "solution_overview": "Set $u=\\log_{10} x$. The equation becomes\n\n$$1u^{2}+(-3)u+(2)=0$$\n\nwith roots $u=1$ and $u=2$. Hence $x=10^{1}=10$ and $x=10^{2}=100$. Domain requires $x>0$.",
       "difficulty_level": "5/5",
@@ -2659,9 +2659,9 @@
       ],
       "tactical_explanations": [
         "**A.** → True\n\nDifferentiate the log-linear specification:\n\n$$\\frac{d\\ln Q}{d\\ln P}=-1.2.$$\n\nThat derivative is the elasticity, constant along the curve.\n\nSo the statement is True.",
-        "**B.** → True\n\n$$Q=e^{6-1.2\\ln(2.7183)}\\approx121.5104$$\n\n$$121.5104 > 20$$.\n\nSo the statement is True.",
-        "**C.** → True\n\n$$\\ln Q\\approx4.8$$\n\n$$4.8 > 1$$.\n\nSo the statement is True.",
-        "**D.** → True\n\n$$|\\varepsilon|=b=1.2$$\n\n$$1.2 > 1$$.\n\nSo the statement is True.",
+        "**B.** → True\n\n$$Q=e^{6-1.2\\ln(2.7183)}\\approx121.5104$$\n\n$$121.5104 > 20.$$\n\nSo the statement is True.",
+        "**C.** → True\n\n$$\\ln Q\\approx4.8$$\n\n$$4.8 > 1.$$\n\nSo the statement is True.",
+        "**D.** → True\n\n$$|\\varepsilon|=b=1.2$$\n\n$$1.2 > 1.$$\n\nSo the statement is True.",
         "**E.** → True\n\n$$\\frac{Q(2P)}{Q(P)}=\\frac{e^{a-b\\ln(2P)}}{e^{a-b\\ln P}}=2^{-b}\\approx0.435275.$$\n\nThe constant-elasticity structure forces exactly that factor.\n\nSo the statement is True."
       ],
       "solution_overview": "Log-linear demand $\\ln Q=6-1.2\\ln P$. At $P=2.7183$,\n\n$$\\ln Q=6-1.2\\ln(2.7183)\\approx4.8\\implies Q\\approx121.5104.$$\n\nPrice elasticity is the constant $d\\ln Q/d\\ln P=-1.2$. Doubling price multiplies $Q$ by $2^{-1.2}\\approx0.435275$.",
@@ -2761,8 +2761,8 @@
         "**A.** → True\n\nApply the inverse identity directly:\n\n$$\\log_{10}(10^{2})=2.$$\n\nNo extra arithmetic is required beyond recognising the inverse pair.\n\nSo the statement is True.",
         "**B.** → True\n\n$$ 10^{\\log_{10}(100)}=100$$\n\nby the inverse relationship on the positive reals.\n\nSo the statement is True.",
         "**C.** → True\n\nThe left side equals $2$, while $10^{2}=100$. Those are equal only in special cases; here $2\\neq100$, so the claim holds.\n\nSo the statement is True.",
-        "**D.** → True\n\nSame identity as statement A, evaluated at $x=2$:\n\n$$\\log_{10}(10^{2})=2.$$.\n\nSo the statement is True.",
-        "**E.** → True\n\n$$100 > 10$$.\n\nSo the statement is True."
+        "**D.** → True\n\nSame identity as statement A, evaluated at $x=2$:\n\n$$\\log_{10}(10^{2})=2..$$\n\nSo the statement is True.",
+        "**E.** → True\n\n$$100 > 10.$$\n\nSo the statement is True."
       ],
       "solution_overview": "Exponential and logarithm base $10$ are inverses:\n\n$$\\log_{10}(10^{x})=x,\\qquad 10^{\\log_{10} y}=y\\ (y>0).$$\n\nHere $x=2$ gives $y=10^{2}=100$.",
       "difficulty_level": "4/5",
@@ -2827,9 +2827,9 @@
       "tactical_explanations": [
         "**A.** → True\n\n$$\\log_{5}(125)=\\frac{\\ln 125}{\\ln 5}=3$$\n\nAn integer check: distance to nearest integer is $0$, so the claim holds.\n\nSo the statement is True.",
         "**B.** → True\n\nTake $\\log_{5}$ of both sides of $125^{x}=5^{3}$:\n\n$$x\\log_{5} a=3$$\n\n$$x=\\frac{3}{\\log_{5} a}.$$\n\nWith $\\log_{5} a=3$ this is $x=1$.\n\nSo the statement is True.",
-        "**C.** → True\n\n$$x=1$$\n\n$$1 < 3$$.\n\nSo the statement is True.",
+        "**C.** → True\n\n$$x=1$$\n\n$$1 < 3.$$\n\nSo the statement is True.",
         "**D.** → True\n\n$$a^{x}=125^{1}\\approx125$$\n\n$$b^{3}=5^{3}=125$$\n\nThe sides match within numerical tolerance.\n\nSo the statement is True.",
-        "**E.** → True\n\n$$3 > 2$$.\n\nSo the statement is True."
+        "**E.** → True\n\n$$3 > 2.$$\n\nSo the statement is True."
       ],
       "solution_overview": "Change-of-base identity: $\\log_{5}(125)=\\ln a/\\ln b=3$. The equation $125^{x}=5^{3}$ becomes\n\n$$x\\log_{5} a=3\\implies x=\\frac{3}{\\log_{5}(125)}=1.$$\n\nSubstitution recovers $125^{x}=5^{3}$.",
       "difficulty_level": "1/5",
@@ -2859,10 +2859,10 @@
       ],
       "tactical_explanations": [
         "**A.** → False\n\nExpand the left side:\n\n$$\\log_{3}\\frac{xy}{z}=\\log_{3}(xy)-\\log_{3} z$$\n\n$$=\\log_{3} x+\\log_{3} y-\\log_{3} z.$$\n\nBoth evaluate to $4$.\n\nSo the statement is False.",
-        "**B.** → True\n\n$$4 > 1$$.\n\nSo the statement is True.",
+        "**B.** → True\n\n$$4 > 1.$$\n\nSo the statement is True.",
         "**C.** → False\n\nThe sum with a plus on $\\log z$ equals $6$, while the true value is $4$. The quotient rule requires a minus.\n\nSo the statement is False.",
-        "**D.** → True\n\n$$(\\log x+\\log y+\\log z)-(\\log x+\\log y-\\log z)=2\\log_{3} z\\approx2\\neq 0.$$.\n\nSo the statement is True.",
-        "**E.** → True\n\n$$\\frac{xy}{z}=81$$\n\n$$81 > 1$$.\n\nSo the statement is True."
+        "**D.** → True\n\n$$(\\log x+\\log y+\\log z)-(\\log x+\\log y-\\log z)=2\\log_{3} z\\approx2\\neq 0..$$\n\nSo the statement is True.",
+        "**E.** → True\n\n$$\\frac{xy}{z}=81$$\n\n$$81 > 1.$$\n\nSo the statement is True."
       ],
       "solution_overview": "Product/quotient rule base $3$:\n\n$$\\log_{3}\\frac{xy}{z}=\\log_{3} x+\\log_{3} y-\\log_{3} z.$$\n\nWith $x=9$, $y=27$, $z=3$, both sides equal $4$.",
       "difficulty_level": "2/5",
@@ -2891,11 +2891,11 @@
         false
       ],
       "tactical_explanations": [
-        "**A.** → True\n\n$$\\mathrm{pH}_1=3,\\quad \\mathrm{pH}_2=5$$\n\n$$5 > 3$$.\n\nSo the statement is True.",
-        "**B.** → True\n\n$$\\mathrm{pH}_2-\\mathrm{pH}_1=-\\log_{10} h_2+\\log_{10} h_1=\\log_{10}(h_1/h_2)=2.$$.\n\nSo the statement is True.",
+        "**A.** → True\n\n$$\\mathrm{pH}_1=3,\\quad \\mathrm{pH}_2=5$$\n\n$$5 > 3.$$\n\nSo the statement is True.",
+        "**B.** → True\n\n$$\\mathrm{pH}_2-\\mathrm{pH}_1=-\\log_{10} h_2+\\log_{10} h_1=\\log_{10}(h_1/h_2)=2..$$\n\nSo the statement is True.",
         "**C.** → False\n\nConcentrations differ by $h_1-h_2=1e-03$, while the pH gap is $2$. pH is logarithmic, not linear in $[H^{+}]$.\n\nSo the statement is False.",
-        "**D.** → False\n\n$$\\frac{h_1}{h_2}=100$$\n\n$$100 \\le 100$$.\n\nSo the statement is False.",
-        "**E.** → False\n\n$$\\mathrm{pH}_2=5$$\n\n$$5 \\le 6$$.\n\nSo the statement is False."
+        "**D.** → False\n\n$$\\frac{h_1}{h_2}=100$$\n\n$$100 \\le 100.$$\n\nSo the statement is False.",
+        "**E.** → False\n\n$$\\mathrm{pH}_2=5$$\n\n$$5 \\le 6.$$\n\nSo the statement is False."
       ],
       "solution_overview": "pH $= -\\log_{10}[H^{+}]$. For $[H^{+}]=1e-03$ and $1e-05$,\n\n$$\\mathrm{pH}_1=3,\\quad \\mathrm{pH}_2=5.$$\n\nThe hydrogen-ion ratio is $h_1/h_2=100$. pH gap equals $\\log_{10}(h_1/h_2)=2$.",
       "difficulty_level": "3/5",
@@ -2925,10 +2925,10 @@
       ],
       "tactical_explanations": [
         "**A.** → True\n\n$$x_1=e^{1}\\approx2.718282,\\quad x_2=e^{2}\\approx7.389056.$$\n\nBoth are powers of a positive base, hence strictly positive.\n\nSo the statement is True.",
-        "**B.** → True\n\nFor $u^{2}+\\cdots=0$, Vieta gives $u_1+u_2=-c_1/c_2$.\n\n$$u_1+u_2=1+2=3$$\n\n$$-c_1/c_2=3$$.\n\nSo the statement is True.",
+        "**B.** → True\n\nFor $u^{2}+\\cdots=0$, Vieta gives $u_1+u_2=-c_1/c_2$.\n\n$$u_1+u_2=1+2=3$$\n\n$$-c_1/c_2=3.$$\n\nSo the statement is True.",
         "**C.** → True\n\n$$x_1 x_2=b^{u_1}b^{u_2}=b^{u_1+u_2}.$$\n\nNumerically $x_1 x_2\\approx20.085537$ and $b^{u_1+u_2}\\approx20.085537$.\n\nSo the statement is True.",
         "**D.** → False\n\nThe logarithm $\\log_{e} x$ is defined only for $x>0$. Therefore $x=0$ is not in the domain and cannot be a solution.\n\nSo the statement is False.",
-        "**E.** → True\n\nVieta: $u_1 u_2=c_0/c_2=2$.\n\n$$(1)(2)=2$$.\n\nSo the statement is True."
+        "**E.** → True\n\nVieta: $u_1 u_2=c_0/c_2=2$.\n\n$$(1)(2)=2.$$\n\nSo the statement is True."
       ],
       "solution_overview": "Set $u=\\log_{e} x$. The equation becomes\n\n$$1u^{2}+(-3)u+(2)=0$$\n\nwith roots $u=1$ and $u=2$. Hence $x=e^{1}=2.718282$ and $x=e^{2}=7.389056$. Domain requires $x>0$.",
       "difficulty_level": "4/5",
@@ -2957,11 +2957,11 @@
         true
       ],
       "tactical_explanations": [
-        "**A.** → False\n\n$$k=\\frac{\\ln(1.6)}{6}\\approx0.078334$$\n\n$$0.078334 > 0.04$$.\n\nSo the statement is False.",
+        "**A.** → False\n\n$$k=\\frac{\\ln(1.6)}{6}\\approx0.078334$$\n\n$$0.078334 > 0.04.$$\n\nSo the statement is False.",
         "**B.** → False\n\n$$P_0 e^{kt}=500\\,e^{0.078334\\cdot6}\\approx800$$\n\nwhich matches the observed $800$.\n\nSo the statement is False.",
-        "**C.** → False\n\n$$t_{\\times 2}=\\frac{\\ln 2}{k}\\approx8.8486$$\n\n$$8.8486 < 20$$.\n\nSo the statement is False.",
+        "**C.** → False\n\n$$t_{\\times 2}=\\frac{\\ln 2}{k}\\approx8.8486$$\n\n$$8.8486 < 20.$$\n\nSo the statement is False.",
         "**D.** → False\n\n$$k_{\\mathrm{lin}}=0.1,\\quad k=0.078334.$$\n\nThey differ; continuous force uses a logarithm, not a relative level change over $t$.\n\nSo the statement is False.",
-        "**E.** → True\n\n$$0.1 > 0.078334$$.\n\nSo the statement is True."
+        "**E.** → True\n\n$$0.1 > 0.078334.$$\n\nSo the statement is True."
       ],
       "solution_overview": "Observed $P(0)=500$ and $P(6)=800$ under continuous growth $P(t)=P_0 e^{kt}$. Recover\n\n$$k=\\frac{\\ln(P_t/P_0)}{t}=\\frac{\\ln(800/500)}{6}\\approx0.078334.$$\n\nDoubling time $\\ln 2/k\\approx8.8486$. A linearised rate $(P_t-P_0)/(P_0 t)\\approx0.1$ is not $k$.",
       "difficulty_level": "5/5",
@@ -2991,10 +2991,10 @@
       ],
       "tactical_explanations": [
         "**A.** → False\n\n$$x_1=e^{1}\\approx2.718282,\\quad x_2=e^{2}\\approx7.389056.$$\n\nBoth are powers of a positive base, hence strictly positive.\n\nSo the statement is False.",
-        "**B.** → False\n\nFor $u^{2}+\\cdots=0$, Vieta gives $u_1+u_2=-c_1/c_2$.\n\n$$u_1+u_2=1+2=3$$\n\n$$-c_1/c_2=3$$.\n\nSo the statement is False.",
+        "**B.** → False\n\nFor $u^{2}+\\cdots=0$, Vieta gives $u_1+u_2=-c_1/c_2$.\n\n$$u_1+u_2=1+2=3$$\n\n$$-c_1/c_2=3.$$\n\nSo the statement is False.",
         "**C.** → False\n\n$$x_1 x_2=b^{u_1}b^{u_2}=b^{u_1+u_2}.$$\n\nNumerically $x_1 x_2\\approx20.085537$ and $b^{u_1+u_2}\\approx20.085537$.\n\nSo the statement is False.",
         "**D.** → False\n\nThe logarithm $\\log_{e} x$ is defined only for $x>0$. Therefore $x=0$ is not in the domain and cannot be a solution.\n\nSo the statement is False.",
-        "**E.** → True\n\nVieta: $u_1 u_2=c_0/c_2=2$.\n\n$$(1)(2)=2$$.\n\nSo the statement is True."
+        "**E.** → True\n\nVieta: $u_1 u_2=c_0/c_2=2$.\n\n$$(1)(2)=2.$$\n\nSo the statement is True."
       ],
       "solution_overview": "Set $u=\\log_{e} x$. The equation becomes\n\n$$1u^{2}+(-3)u+(2)=0$$\n\nwith roots $u=1$ and $u=2$. Hence $x=e^{1}=2.718282$ and $x=e^{2}=7.389056$. Domain requires $x>0$.",
       "difficulty_level": "1/5",
@@ -3025,9 +3025,9 @@
       ],
       "tactical_explanations": [
         "**A.** → False\n\nDifferentiate the log-linear specification:\n\n$$\\frac{d\\ln Q}{d\\ln P}=-0.8.$$\n\nThat derivative is the elasticity, constant along the curve.\n\nSo the statement is False.",
-        "**B.** → False\n\n$$Q=e^{3.5-0.8\\ln(1.6487)}\\approx22.198$$\n\n$$22.198 > 10$$.\n\nSo the statement is False.",
-        "**C.** → False\n\n$$\\ln Q\\approx3.1$$\n\n$$3.1 > 1$$.\n\nSo the statement is False.",
-        "**D.** → False\n\n$$|\\varepsilon|=b=0.8$$\n\n$$0.8 \\le 1$$.\n\nSo the statement is False.",
+        "**B.** → False\n\n$$Q=e^{3.5-0.8\\ln(1.6487)}\\approx22.198$$\n\n$$22.198 > 10.$$\n\nSo the statement is False.",
+        "**C.** → False\n\n$$\\ln Q\\approx3.1$$\n\n$$3.1 > 1.$$\n\nSo the statement is False.",
+        "**D.** → False\n\n$$|\\varepsilon|=b=0.8$$\n\n$$0.8 \\le 1.$$\n\nSo the statement is False.",
         "**E.** → True\n\n$$\\frac{Q(2P)}{Q(P)}=\\frac{e^{a-b\\ln(2P)}}{e^{a-b\\ln P}}=2^{-b}\\approx0.574349.$$\n\nThe constant-elasticity structure forces exactly that factor.\n\nSo the statement is True."
       ],
       "solution_overview": "Log-linear demand $\\ln Q=3.5-0.8\\ln P$. At $P=1.6487$,\n\n$$\\ln Q=3.5-0.8\\ln(1.6487)\\approx3.1\\implies Q\\approx22.198.$$\n\nPrice elasticity is the constant $d\\ln Q/d\\ln P=-0.8$. Doubling price multiplies $Q$ by $2^{-0.8}\\approx0.574349$.",
@@ -3058,11 +3058,11 @@
         true
       ],
       "tactical_explanations": [
-        "**A.** → False\n\n$$k=\\frac{\\ln(2)}{8}\\approx0.086643$$\n\n$$0.086643 > 0.04$$.\n\nSo the statement is False.",
+        "**A.** → False\n\n$$k=\\frac{\\ln(2)}{8}\\approx0.086643$$\n\n$$0.086643 > 0.04.$$\n\nSo the statement is False.",
         "**B.** → False\n\n$$P_0 e^{kt}=800\\,e^{0.086643\\cdot8}\\approx1600$$\n\nwhich matches the observed $1600$.\n\nSo the statement is False.",
-        "**C.** → False\n\n$$t_{\\times 2}=\\frac{\\ln 2}{k}\\approx8$$\n\n$$8 < 20$$.\n\nSo the statement is False.",
+        "**C.** → False\n\n$$t_{\\times 2}=\\frac{\\ln 2}{k}\\approx8$$\n\n$$8 < 20.$$\n\nSo the statement is False.",
         "**D.** → False\n\n$$k_{\\mathrm{lin}}=0.125,\\quad k=0.086643.$$\n\nThey differ; continuous force uses a logarithm, not a relative level change over $t$.\n\nSo the statement is False.",
-        "**E.** → True\n\n$$0.125 > 0.086643$$.\n\nSo the statement is True."
+        "**E.** → True\n\n$$0.125 > 0.086643.$$\n\nSo the statement is True."
       ],
       "solution_overview": "Observed $P(0)=800$ and $P(8)=1600$ under continuous growth $P(t)=P_0 e^{kt}$. Recover\n\n$$k=\\frac{\\ln(P_t/P_0)}{t}=\\frac{\\ln(1600/800)}{8}\\approx0.086643.$$\n\nDoubling time $\\ln 2/k\\approx8$. A linearised rate $(P_t-P_0)/(P_0 t)\\approx0.125$ is not $k$.",
       "difficulty_level": "3/5",
@@ -3126,11 +3126,11 @@
         false
       ],
       "tactical_explanations": [
-        "**A.** → False\n\n$$t_{\\mathrm{hit}}\\approx15.6841 > 6$$.\n\nSo the statement is False.",
-        "**B.** → False\n\n$$P_0 e^{\\bar k t_{\\mathrm{hit}}}\\approx1800.$$.\n\nSo the statement is False.",
+        "**A.** → False\n\n$$t_{\\mathrm{hit}}\\approx15.6841 > 6.$$\n\nSo the statement is False.",
+        "**B.** → False\n\n$$P_0 e^{\\bar k t_{\\mathrm{hit}}}\\approx1800..$$\n\nSo the statement is False.",
         "**C.** → False\n\nConstant-$k_1$ time $\\approx10.4962\\neq15.6841$.\n\nSo the statement is False.",
-        "**D.** → True\n\n$$|t_{\\mathrm{hit}}-t_{k_1}|\\approx5.1879.$$.\n\nSo the statement is True.",
-        "**E.** → False\n\n$$f(6)\\approx1399.339 < 1800$$.\n\nSo the statement is False."
+        "**D.** → True\n\n$$|t_{\\mathrm{hit}}-t_{k_1}|\\approx5.1879..$$\n\nSo the statement is True.",
+        "**E.** → False\n\n$$f(6)\\approx1399.339 < 1800.$$\n\nSo the statement is False."
       ],
       "solution_overview": "Piecewise forces $0.056$ then $0.026$ after $t=6$. $f(6)\\approx1399.339$. Hitting $1800$ at $t\\approx15.6841$ with path-average force $\\bar k\\approx0.037477$.",
       "difficulty_level": "5/5",
@@ -3160,11 +3160,11 @@
         false
       ],
       "tactical_explanations": [
-        "**A.** → False\n\n$$y(14)\\approx56.9414,\\quad 1.3 y_0=65$$\n\n$$56.9414 \\le 65$$.\n\nSo the statement is False.",
-        "**B.** → False\n\nPer capita is a ratio, so forces subtract:\n\n$$k_y=k_Y-k_N=0.011-0.006=0.005.$$.\n\nSo the statement is False.",
+        "**A.** → False\n\n$$y(14)\\approx56.9414,\\quad 1.3 y_0=65$$\n\n$$56.9414 \\le 65.$$\n\nSo the statement is False.",
+        "**B.** → False\n\nPer capita is a ratio, so forces subtract:\n\n$$k_y=k_Y-k_N=0.011-0.006=0.005..$$\n\nSo the statement is False.",
         "**C.** → False\n\n$$k_y=0.011-0.006=0.005$$\n\nmatches.\n\nSo the statement is False.",
-        "**D.** → True\n\n$$y_{\\mathrm{wrong}}\\approx66.1565\\neq y(14)\\approx56.9414.$$.\n\nSo the statement is True.",
-        "**E.** → False\n\n$$y(4)\\approx54.1644 > y_0=50$$.\n\nSo the statement is False."
+        "**D.** → True\n\n$$y_{\\mathrm{wrong}}\\approx66.1565\\neq y(14)\\approx56.9414..$$\n\nSo the statement is True.",
+        "**E.** → False\n\n$$y(4)\\approx54.1644 > y_0=50.$$\n\nSo the statement is False."
       ],
       "solution_overview": "GDP force switches from $0.026$ to $0.011$ at $t=4$ while population keeps force $0.006$. Per-capita force is therefore $0.02$ then $0.005$.\n\n$$y(4)\\approx54.1644,\\quad y(14)\\approx56.9414.$$\n\nIgnoring the GDP switch would give $y_{\\mathrm{wrong}}(14)\\approx66.1565$.",
       "difficulty_level": "5/5",
@@ -3194,11 +3194,11 @@
         true
       ],
       "tactical_explanations": [
-        "**A.** → False\n\n$$22.5258 \\ge 20.4753$$.\n\nSo the statement is False.",
+        "**A.** → False\n\n$$22.5258 \\ge 20.4753.$$\n\nSo the statement is False.",
         "**B.** → False\n\n$$e^{0.018}\\approx1.018163,\\quad a=1.02.$$\n\nThey differ, so continuous and discrete paths are not reparametrisations of each other.\n\nSo the statement is False.",
-        "**C.** → False\n\n$$22.5258 < 25$$.\n\nSo the statement is False.",
+        "**C.** → False\n\n$$22.5258 < 25.$$\n\nSo the statement is False.",
         "**D.** → False\n\nHitting times $22.5258$ versus $20.4753$ are unequal.\n\nSo the statement is False.",
-        "**E.** → True\n\n$$P e^{k t}= 1000 e^{0.018\\cdot22.5258}\\approx1500.$$.\n\nSo the statement is True."
+        "**E.** → True\n\n$$P e^{k t}= 1000 e^{0.018\\cdot22.5258}\\approx1500..$$\n\nSo the statement is True."
       ],
       "solution_overview": "Continuous $Pe^{kt}$ with $k=0.018$ hits $1500$ at $t=\\ln(1500/1000)/k\\approx22.5258$. Discrete $P(1.02)^{t}$ hits at $t=\\ln(1500/1000)/\\ln(1.02)\\approx20.4753$. Note $e^{k}\\approx1.018163\\neq1.02$.",
       "difficulty_level": "5/5",
@@ -3228,10 +3228,10 @@
         false
       ],
       "tactical_explanations": [
-        "**A.** → False\n\n$$2117 > 1926.0381$$.\n\nSo the statement is False.",
+        "**A.** → False\n\n$$2117 > 1926.0381.$$\n\nSo the statement is False.",
         "**B.** → False\n\nMeeting time $\\approx20.2733$ compared with horizon $25$:.\n\nSo the statement is False.",
-        "**C.** → False\n\n$$\\ln(A/A_0)=k_A t=0.75,\\quad \\ln(B/B_0)=k_B t=0.25.$$.\n\nSo the statement is False.",
-        "**D.** → True\n\n$$0.03 > 0.01$$.\n\nSo the statement is True.",
+        "**C.** → False\n\n$$\\ln(A/A_0)=k_A t=0.75,\\quad \\ln(B/B_0)=k_B t=0.25..$$\n\nSo the statement is False.",
+        "**D.** → True\n\n$$0.03 > 0.01.$$\n\nSo the statement is True.",
         "**E.** → False\n\n$$A+B\\approx4043.0381$$ vs $5000$.\n\nSo the statement is False."
       ],
       "solution_overview": "$A(t)=1000e^{0.03t}$, $B(t)=1500e^{0.01t}$. At $t=25$: $A\\approx2117$, $B\\approx1926.0381$. Meeting time $t^*=\\ln(B_0/A_0)/(k_A-k_B)\\approx20.2733$.",
@@ -3262,9 +3262,9 @@
         true
       ],
       "tactical_explanations": [
-        "**A.** → False\n\n$$m(3T_{1/2})=80/8=10$$\n\n$$10 < 15$$.\n\nSo the statement is False.",
-        "**B.** → False\n\n$$t_{\\mathrm{goal}}\\approx6.4706$$\n\n$$6.4706 < 10$$.\n\nSo the statement is False.",
-        "**C.** → False\n\n$$k_{\\mathrm{dec}}\\approx0.077016\\neq r=0.052.$$.\n\nSo the statement is False.",
+        "**A.** → False\n\n$$m(3T_{1/2})=80/8=10$$\n\n$$10 < 15.$$\n\nSo the statement is False.",
+        "**B.** → False\n\n$$t_{\\mathrm{goal}}\\approx6.4706$$\n\n$$6.4706 < 10.$$\n\nSo the statement is False.",
+        "**C.** → False\n\n$$k_{\\mathrm{dec}}\\approx0.077016\\neq r=0.052..$$\n\nSo the statement is False.",
         "**D.** → False\n\n$$3T_{1/2}=27$$ vs $t_{\\mathrm{goal}}\\approx6.4706$.\n\nSo the statement is False.",
         "**E.** → True\n\nBy construction of $t_{\\mathrm{goal}}$, $Pe^{rt}$ recovers $7000$.\n\nSo the statement is True."
       ],
@@ -3295,11 +3295,11 @@
         true
       ],
       "tactical_explanations": [
-        "**A.** → False\n\n$$|\\varepsilon|=1.4 > 1$$.\n\nSo the statement is False.",
-        "**B.** → False\n\n$$Q\\approx31.8789$$\n\n$$31.8789 > 5$$.\n\nSo the statement is False.",
-        "**C.** → False\n\n$$N(11)\\approx324.5103,\\quad 1.4 N_0=280$$.\n\nSo the statement is False.",
+        "**A.** → False\n\n$$|\\varepsilon|=1.4 > 1.$$\n\nSo the statement is False.",
+        "**B.** → False\n\n$$Q\\approx31.8789$$\n\n$$31.8789 > 5.$$\n\nSo the statement is False.",
+        "**C.** → False\n\n$$N(11)\\approx324.5103,\\quad 1.4 N_0=280.$$\n\nSo the statement is False.",
         "**D.** → False\n\nElasticity $1.4$ and force $0.044$ are unrelated parameters from different models.\n\nSo the statement is False.",
-        "**E.** → True\n\n$$\\frac{1}{t}\\ln\\frac{N(11)}{N_0}=0.044.$$.\n\nSo the statement is True."
+        "**E.** → True\n\n$$\\frac{1}{t}\\ln\\frac{N(11)}{N_0}=0.044..$$\n\nSo the statement is True."
       ],
       "solution_overview": "Demand $\\ln Q=5-1.4\\ln P$ at $P=3$ gives $Q\\approx31.8789$ with $|\\varepsilon|=1.4$. A separate stock $N(t)=200e^{0.044t}$ reaches $N(11)\\approx324.5103$.",
       "difficulty_level": "5/5",
@@ -3328,11 +3328,11 @@
         true
       ],
       "tactical_explanations": [
-        "**A.** → False\n\n$$t_{\\mathrm{hit}}\\approx15.6841 > 6$$.\n\nSo the statement is False.",
-        "**B.** → False\n\n$$P_0 e^{\\bar k t_{\\mathrm{hit}}}\\approx1800.$$.\n\nSo the statement is False.",
+        "**A.** → False\n\n$$t_{\\mathrm{hit}}\\approx15.6841 > 6.$$\n\nSo the statement is False.",
+        "**B.** → False\n\n$$P_0 e^{\\bar k t_{\\mathrm{hit}}}\\approx1800..$$\n\nSo the statement is False.",
         "**C.** → False\n\nConstant-$k_1$ time $\\approx10.4962\\neq15.6841$.\n\nSo the statement is False.",
-        "**D.** → True\n\n$$|t_{\\mathrm{hit}}-t_{k_1}|\\approx5.1879.$$.\n\nSo the statement is True.",
-        "**E.** → True\n\n$$f(6)\\approx1399.339 < 1800$$.\n\nSo the statement is True."
+        "**D.** → True\n\n$$|t_{\\mathrm{hit}}-t_{k_1}|\\approx5.1879..$$\n\nSo the statement is True.",
+        "**E.** → True\n\n$$f(6)\\approx1399.339 < 1800.$$\n\nSo the statement is True."
       ],
       "solution_overview": "Piecewise forces $0.056$ then $0.026$ after $t=6$. $f(6)\\approx1399.339$. Hitting $1800$ at $t\\approx15.6841$ with path-average force $\\bar k\\approx0.037477$.",
       "difficulty_level": "5/5",
@@ -3362,11 +3362,11 @@
         true
       ],
       "tactical_explanations": [
-        "**A.** → False\n\n$$22.5258 \\ge 20.4753$$.\n\nSo the statement is False.",
+        "**A.** → False\n\n$$22.5258 \\ge 20.4753.$$\n\nSo the statement is False.",
         "**B.** → False\n\n$$e^{0.018}\\approx1.018163,\\quad a=1.02.$$\n\nThey differ, so continuous and discrete paths are not reparametrisations of each other.\n\nSo the statement is False.",
-        "**C.** → True\n\n$$22.5258 < 25$$.\n\nSo the statement is True.",
+        "**C.** → True\n\n$$22.5258 < 25.$$\n\nSo the statement is True.",
         "**D.** → False\n\nHitting times $22.5258$ versus $20.4753$ are unequal.\n\nSo the statement is False.",
-        "**E.** → True\n\n$$P e^{k t}= 1000 e^{0.018\\cdot22.5258}\\approx1500.$$.\n\nSo the statement is True."
+        "**E.** → True\n\n$$P e^{k t}= 1000 e^{0.018\\cdot22.5258}\\approx1500..$$\n\nSo the statement is True."
       ],
       "solution_overview": "Continuous $Pe^{kt}$ with $k=0.018$ hits $1500$ at $t=\\ln(1500/1000)/k\\approx22.5258$. Discrete $P(1.02)^{t}$ hits at $t=\\ln(1500/1000)/\\ln(1.02)\\approx20.4753$. Note $e^{k}\\approx1.018163\\neq1.02$.",
       "difficulty_level": "5/5",
@@ -3395,10 +3395,10 @@
         false
       ],
       "tactical_explanations": [
-        "**A.** → False\n\n$$2117 > 1926.0381$$.\n\nSo the statement is False.",
+        "**A.** → False\n\n$$2117 > 1926.0381.$$\n\nSo the statement is False.",
         "**B.** → False\n\nMeeting time $\\approx20.2733$ compared with horizon $25$:.\n\nSo the statement is False.",
-        "**C.** → True\n\n$$\\ln(A/A_0)=k_A t=0.75,\\quad \\ln(B/B_0)=k_B t=0.25.$$.\n\nSo the statement is True.",
-        "**D.** → True\n\n$$0.03 > 0.01$$.\n\nSo the statement is True.",
+        "**C.** → True\n\n$$\\ln(A/A_0)=k_A t=0.75,\\quad \\ln(B/B_0)=k_B t=0.25..$$\n\nSo the statement is True.",
+        "**D.** → True\n\n$$0.03 > 0.01.$$\n\nSo the statement is True.",
         "**E.** → False\n\n$$A+B\\approx4043.0381$$ vs $5000$.\n\nSo the statement is False."
       ],
       "solution_overview": "$A(t)=1000e^{0.03t}$, $B(t)=1500e^{0.01t}$. At $t=25$: $A\\approx2117$, $B\\approx1926.0381$. Meeting time $t^*=\\ln(B_0/A_0)/(k_A-k_B)\\approx20.2733$.",
@@ -3428,9 +3428,9 @@
         true
       ],
       "tactical_explanations": [
-        "**A.** → False\n\n$$m(3T_{1/2})=80/8=10$$\n\n$$10 < 15$$.\n\nSo the statement is False.",
-        "**B.** → True\n\n$$t_{\\mathrm{goal}}\\approx6.4706$$\n\n$$6.4706 < 10$$.\n\nSo the statement is True.",
-        "**C.** → False\n\n$$k_{\\mathrm{dec}}\\approx0.077016\\neq r=0.052.$$.\n\nSo the statement is False.",
+        "**A.** → False\n\n$$m(3T_{1/2})=80/8=10$$\n\n$$10 < 15.$$\n\nSo the statement is False.",
+        "**B.** → True\n\n$$t_{\\mathrm{goal}}\\approx6.4706$$\n\n$$6.4706 < 10.$$\n\nSo the statement is True.",
+        "**C.** → False\n\n$$k_{\\mathrm{dec}}\\approx0.077016\\neq r=0.052..$$\n\nSo the statement is False.",
         "**D.** → False\n\n$$3T_{1/2}=27$$ vs $t_{\\mathrm{goal}}\\approx6.4706$.\n\nSo the statement is False.",
         "**E.** → True\n\nBy construction of $t_{\\mathrm{goal}}$, $Pe^{rt}$ recovers $7000$.\n\nSo the statement is True."
       ],
@@ -3461,9 +3461,9 @@
         true
       ],
       "tactical_explanations": [
-        "**A.** → False\n\n$$m(3T_{1/2})=80/8=10$$\n\n$$10 < 15$$.\n\nSo the statement is False.",
-        "**B.** → True\n\n$$t_{\\mathrm{goal}}\\approx6.4706$$\n\n$$6.4706 < 10$$.\n\nSo the statement is True.",
-        "**C.** → False\n\n$$k_{\\mathrm{dec}}\\approx0.077016\\neq r=0.052.$$.\n\nSo the statement is False.",
+        "**A.** → False\n\n$$m(3T_{1/2})=80/8=10$$\n\n$$10 < 15.$$\n\nSo the statement is False.",
+        "**B.** → True\n\n$$t_{\\mathrm{goal}}\\approx6.4706$$\n\n$$6.4706 < 10.$$\n\nSo the statement is True.",
+        "**C.** → False\n\n$$k_{\\mathrm{dec}}\\approx0.077016\\neq r=0.052..$$\n\nSo the statement is False.",
         "**D.** → False\n\n$$3T_{1/2}=27$$ vs $t_{\\mathrm{goal}}\\approx6.4706$.\n\nSo the statement is False.",
         "**E.** → True\n\nBy construction of $t_{\\mathrm{goal}}$, $Pe^{rt}$ recovers $7000$.\n\nSo the statement is True."
       ],
@@ -3494,11 +3494,11 @@
         true
       ],
       "tactical_explanations": [
-        "**A.** → False\n\n$$|\\varepsilon|=1.4 > 1$$.\n\nSo the statement is False.",
-        "**B.** → False\n\n$$Q\\approx31.8789$$\n\n$$31.8789 > 5$$.\n\nSo the statement is False.",
-        "**C.** → True\n\n$$N(11)\\approx324.5103,\\quad 1.4 N_0=280$$.\n\nSo the statement is True.",
+        "**A.** → False\n\n$$|\\varepsilon|=1.4 > 1.$$\n\nSo the statement is False.",
+        "**B.** → False\n\n$$Q\\approx31.8789$$\n\n$$31.8789 > 5.$$\n\nSo the statement is False.",
+        "**C.** → True\n\n$$N(11)\\approx324.5103,\\quad 1.4 N_0=280.$$\n\nSo the statement is True.",
         "**D.** → False\n\nElasticity $1.4$ and force $0.044$ are unrelated parameters from different models.\n\nSo the statement is False.",
-        "**E.** → True\n\n$$\\frac{1}{t}\\ln\\frac{N(11)}{N_0}=0.044.$$.\n\nSo the statement is True."
+        "**E.** → True\n\n$$\\frac{1}{t}\\ln\\frac{N(11)}{N_0}=0.044..$$\n\nSo the statement is True."
       ],
       "solution_overview": "Demand $\\ln Q=5-1.4\\ln P$ at $P=3$ gives $Q\\approx31.8789$ with $|\\varepsilon|=1.4$. A separate stock $N(t)=200e^{0.044t}$ reaches $N(11)\\approx324.5103$.",
       "difficulty_level": "5/5",
@@ -3527,11 +3527,11 @@
         true
       ],
       "tactical_explanations": [
-        "**A.** → False\n\n$$y(14)\\approx56.9414,\\quad 1.3 y_0=65$$\n\n$$56.9414 \\le 65$$.\n\nSo the statement is False.",
-        "**B.** → False\n\nPer capita is a ratio, so forces subtract:\n\n$$k_y=k_Y-k_N=0.011-0.006=0.005.$$.\n\nSo the statement is False.",
+        "**A.** → False\n\n$$y(14)\\approx56.9414,\\quad 1.3 y_0=65$$\n\n$$56.9414 \\le 65.$$\n\nSo the statement is False.",
+        "**B.** → False\n\nPer capita is a ratio, so forces subtract:\n\n$$k_y=k_Y-k_N=0.011-0.006=0.005..$$\n\nSo the statement is False.",
         "**C.** → True\n\n$$k_y=0.011-0.006=0.005$$\n\nmatches.\n\nSo the statement is True.",
-        "**D.** → True\n\n$$y_{\\mathrm{wrong}}\\approx66.1565\\neq y(14)\\approx56.9414.$$.\n\nSo the statement is True.",
-        "**E.** → True\n\n$$y(4)\\approx54.1644 > y_0=50$$.\n\nSo the statement is True."
+        "**D.** → True\n\n$$y_{\\mathrm{wrong}}\\approx66.1565\\neq y(14)\\approx56.9414..$$\n\nSo the statement is True.",
+        "**E.** → True\n\n$$y(4)\\approx54.1644 > y_0=50.$$\n\nSo the statement is True."
       ],
       "solution_overview": "GDP force switches from $0.026$ to $0.011$ at $t=4$ while population keeps force $0.006$. Per-capita force is therefore $0.02$ then $0.005$.\n\n$$y(4)\\approx54.1644,\\quad y(14)\\approx56.9414.$$\n\nIgnoring the GDP switch would give $y_{\\mathrm{wrong}}(14)\\approx66.1565$.",
       "difficulty_level": "5/5",
@@ -3560,11 +3560,11 @@
         true
       ],
       "tactical_explanations": [
-        "**A.** → False\n\n$$y(14)\\approx56.9414,\\quad 1.3 y_0=65$$\n\n$$56.9414 \\le 65$$.\n\nSo the statement is False.",
-        "**B.** → False\n\nPer capita is a ratio, so forces subtract:\n\n$$k_y=k_Y-k_N=0.011-0.006=0.005.$$.\n\nSo the statement is False.",
+        "**A.** → False\n\n$$y(14)\\approx56.9414,\\quad 1.3 y_0=65$$\n\n$$56.9414 \\le 65.$$\n\nSo the statement is False.",
+        "**B.** → False\n\nPer capita is a ratio, so forces subtract:\n\n$$k_y=k_Y-k_N=0.011-0.006=0.005..$$\n\nSo the statement is False.",
         "**C.** → True\n\n$$k_y=0.011-0.006=0.005$$\n\nmatches.\n\nSo the statement is True.",
-        "**D.** → True\n\n$$y_{\\mathrm{wrong}}\\approx66.1565\\neq y(14)\\approx56.9414.$$.\n\nSo the statement is True.",
-        "**E.** → True\n\n$$y(4)\\approx54.1644 > y_0=50$$.\n\nSo the statement is True."
+        "**D.** → True\n\n$$y_{\\mathrm{wrong}}\\approx66.1565\\neq y(14)\\approx56.9414..$$\n\nSo the statement is True.",
+        "**E.** → True\n\n$$y(4)\\approx54.1644 > y_0=50.$$\n\nSo the statement is True."
       ],
       "solution_overview": "GDP force switches from $0.026$ to $0.011$ at $t=4$ while population keeps force $0.006$. Per-capita force is therefore $0.02$ then $0.005$.\n\n$$y(4)\\approx54.1644,\\quad y(14)\\approx56.9414.$$\n\nIgnoring the GDP switch would give $y_{\\mathrm{wrong}}(14)\\approx66.1565$.",
       "difficulty_level": "5/5",
@@ -3594,11 +3594,11 @@
         true
       ],
       "tactical_explanations": [
-        "**A.** → False\n\n$$22.5258 \\ge 20.4753$$.\n\nSo the statement is False.",
+        "**A.** → False\n\n$$22.5258 \\ge 20.4753.$$\n\nSo the statement is False.",
         "**B.** → True\n\n$$e^{0.018}\\approx1.018163,\\quad a=1.02.$$\n\nThey differ, so continuous and discrete paths are not reparametrisations of each other.\n\nSo the statement is True.",
-        "**C.** → True\n\n$$22.5258 < 25$$.\n\nSo the statement is True.",
+        "**C.** → True\n\n$$22.5258 < 25.$$\n\nSo the statement is True.",
         "**D.** → False\n\nHitting times $22.5258$ versus $20.4753$ are unequal.\n\nSo the statement is False.",
-        "**E.** → True\n\n$$P e^{k t}= 1000 e^{0.018\\cdot22.5258}\\approx1500.$$.\n\nSo the statement is True."
+        "**E.** → True\n\n$$P e^{k t}= 1000 e^{0.018\\cdot22.5258}\\approx1500..$$\n\nSo the statement is True."
       ],
       "solution_overview": "Continuous $Pe^{kt}$ with $k=0.018$ hits $1500$ at $t=\\ln(1500/1000)/k\\approx22.5258$. Discrete $P(1.02)^{t}$ hits at $t=\\ln(1500/1000)/\\ln(1.02)\\approx20.4753$. Note $e^{k}\\approx1.018163\\neq1.02$.",
       "difficulty_level": "5/5",
@@ -3628,10 +3628,10 @@
         false
       ],
       "tactical_explanations": [
-        "**A.** → False\n\n$$2117 > 1926.0381$$.\n\nSo the statement is False.",
+        "**A.** → False\n\n$$2117 > 1926.0381.$$\n\nSo the statement is False.",
         "**B.** → True\n\nMeeting time $\\approx20.2733$ compared with horizon $25$:.\n\nSo the statement is True.",
-        "**C.** → True\n\n$$\\ln(A/A_0)=k_A t=0.75,\\quad \\ln(B/B_0)=k_B t=0.25.$$.\n\nSo the statement is True.",
-        "**D.** → True\n\n$$0.03 > 0.01$$.\n\nSo the statement is True.",
+        "**C.** → True\n\n$$\\ln(A/A_0)=k_A t=0.75,\\quad \\ln(B/B_0)=k_B t=0.25..$$\n\nSo the statement is True.",
+        "**D.** → True\n\n$$0.03 > 0.01.$$\n\nSo the statement is True.",
         "**E.** → False\n\n$$A+B\\approx4043.0381$$ vs $5000$.\n\nSo the statement is False."
       ],
       "solution_overview": "$A(t)=1000e^{0.03t}$, $B(t)=1500e^{0.01t}$. At $t=25$: $A\\approx2117$, $B\\approx1926.0381$. Meeting time $t^*=\\ln(B_0/A_0)/(k_A-k_B)\\approx20.2733$.",
@@ -3662,9 +3662,9 @@
         true
       ],
       "tactical_explanations": [
-        "**A.** → True\n\n$$m(3T_{1/2})=80/8=10$$\n\n$$10 < 15$$.\n\nSo the statement is True.",
-        "**B.** → True\n\n$$t_{\\mathrm{goal}}\\approx6.4706$$\n\n$$6.4706 < 10$$.\n\nSo the statement is True.",
-        "**C.** → False\n\n$$k_{\\mathrm{dec}}\\approx0.077016\\neq r=0.052.$$.\n\nSo the statement is False.",
+        "**A.** → True\n\n$$m(3T_{1/2})=80/8=10$$\n\n$$10 < 15.$$\n\nSo the statement is True.",
+        "**B.** → True\n\n$$t_{\\mathrm{goal}}\\approx6.4706$$\n\n$$6.4706 < 10.$$\n\nSo the statement is True.",
+        "**C.** → False\n\n$$k_{\\mathrm{dec}}\\approx0.077016\\neq r=0.052..$$\n\nSo the statement is False.",
         "**D.** → False\n\n$$3T_{1/2}=27$$ vs $t_{\\mathrm{goal}}\\approx6.4706$.\n\nSo the statement is False.",
         "**E.** → True\n\nBy construction of $t_{\\mathrm{goal}}$, $Pe^{rt}$ recovers $7000$.\n\nSo the statement is True."
       ],
@@ -3695,9 +3695,9 @@
         true
       ],
       "tactical_explanations": [
-        "**A.** → True\n\n$$m(3T_{1/2})=80/8=10$$\n\n$$10 < 15$$.\n\nSo the statement is True.",
-        "**B.** → True\n\n$$t_{\\mathrm{goal}}\\approx6.4706$$\n\n$$6.4706 < 10$$.\n\nSo the statement is True.",
-        "**C.** → False\n\n$$k_{\\mathrm{dec}}\\approx0.077016\\neq r=0.052.$$.\n\nSo the statement is False.",
+        "**A.** → True\n\n$$m(3T_{1/2})=80/8=10$$\n\n$$10 < 15.$$\n\nSo the statement is True.",
+        "**B.** → True\n\n$$t_{\\mathrm{goal}}\\approx6.4706$$\n\n$$6.4706 < 10.$$\n\nSo the statement is True.",
+        "**C.** → False\n\n$$k_{\\mathrm{dec}}\\approx0.077016\\neq r=0.052..$$\n\nSo the statement is False.",
         "**D.** → False\n\n$$3T_{1/2}=27$$ vs $t_{\\mathrm{goal}}\\approx6.4706$.\n\nSo the statement is False.",
         "**E.** → True\n\nBy construction of $t_{\\mathrm{goal}}$, $Pe^{rt}$ recovers $7000$.\n\nSo the statement is True."
       ],
@@ -3728,11 +3728,11 @@
         true
       ],
       "tactical_explanations": [
-        "**A.** → True\n\n$$t_{\\mathrm{hit}}\\approx15.6841 > 6$$.\n\nSo the statement is True.",
-        "**B.** → True\n\n$$P_0 e^{\\bar k t_{\\mathrm{hit}}}\\approx1800.$$.\n\nSo the statement is True.",
+        "**A.** → True\n\n$$t_{\\mathrm{hit}}\\approx15.6841 > 6.$$\n\nSo the statement is True.",
+        "**B.** → True\n\n$$P_0 e^{\\bar k t_{\\mathrm{hit}}}\\approx1800..$$\n\nSo the statement is True.",
         "**C.** → False\n\nConstant-$k_1$ time $\\approx10.4962\\neq15.6841$.\n\nSo the statement is False.",
-        "**D.** → True\n\n$$|t_{\\mathrm{hit}}-t_{k_1}|\\approx5.1879.$$.\n\nSo the statement is True.",
-        "**E.** → True\n\n$$f(6)\\approx1399.339 < 1800$$.\n\nSo the statement is True."
+        "**D.** → True\n\n$$|t_{\\mathrm{hit}}-t_{k_1}|\\approx5.1879..$$\n\nSo the statement is True.",
+        "**E.** → True\n\n$$f(6)\\approx1399.339 < 1800.$$\n\nSo the statement is True."
       ],
       "solution_overview": "Piecewise forces $0.056$ then $0.026$ after $t=6$. $f(6)\\approx1399.339$. Hitting $1800$ at $t\\approx15.6841$ with path-average force $\\bar k\\approx0.037477$.",
       "difficulty_level": "5/5",
@@ -3762,11 +3762,11 @@
         true
       ],
       "tactical_explanations": [
-        "**A.** → True\n\n$$|\\varepsilon|=1.4 > 1$$.\n\nSo the statement is True.",
-        "**B.** → True\n\n$$Q\\approx31.8789$$\n\n$$31.8789 > 5$$.\n\nSo the statement is True.",
-        "**C.** → True\n\n$$N(11)\\approx324.5103,\\quad 1.4 N_0=280$$.\n\nSo the statement is True.",
+        "**A.** → True\n\n$$|\\varepsilon|=1.4 > 1.$$\n\nSo the statement is True.",
+        "**B.** → True\n\n$$Q\\approx31.8789$$\n\n$$31.8789 > 5.$$\n\nSo the statement is True.",
+        "**C.** → True\n\n$$N(11)\\approx324.5103,\\quad 1.4 N_0=280.$$\n\nSo the statement is True.",
         "**D.** → False\n\nElasticity $1.4$ and force $0.044$ are unrelated parameters from different models.\n\nSo the statement is False.",
-        "**E.** → True\n\n$$\\frac{1}{t}\\ln\\frac{N(11)}{N_0}=0.044.$$.\n\nSo the statement is True."
+        "**E.** → True\n\n$$\\frac{1}{t}\\ln\\frac{N(11)}{N_0}=0.044..$$\n\nSo the statement is True."
       ],
       "solution_overview": "Demand $\\ln Q=5-1.4\\ln P$ at $P=3$ gives $Q\\approx31.8789$ with $|\\varepsilon|=1.4$. A separate stock $N(t)=200e^{0.044t}$ reaches $N(11)\\approx324.5103$.",
       "difficulty_level": "5/5",
@@ -3795,11 +3795,11 @@
         true
       ],
       "tactical_explanations": [
-        "**A.** → True\n\n$$22.5258 \\ge 20.4753$$.\n\nSo the statement is True.",
+        "**A.** → True\n\n$$22.5258 \\ge 20.4753.$$\n\nSo the statement is True.",
         "**B.** → True\n\n$$e^{0.018}\\approx1.018163,\\quad a=1.02.$$\n\nThey differ, so continuous and discrete paths are not reparametrisations of each other.\n\nSo the statement is True.",
-        "**C.** → True\n\n$$22.5258 < 25$$.\n\nSo the statement is True.",
+        "**C.** → True\n\n$$22.5258 < 25.$$\n\nSo the statement is True.",
         "**D.** → False\n\nHitting times $22.5258$ versus $20.4753$ are unequal.\n\nSo the statement is False.",
-        "**E.** → True\n\n$$P e^{k t}= 1000 e^{0.018\\cdot22.5258}\\approx1500.$$.\n\nSo the statement is True."
+        "**E.** → True\n\n$$P e^{k t}= 1000 e^{0.018\\cdot22.5258}\\approx1500..$$\n\nSo the statement is True."
       ],
       "solution_overview": "Continuous $Pe^{kt}$ with $k=0.018$ hits $1500$ at $t=\\ln(1500/1000)/k\\approx22.5258$. Discrete $P(1.02)^{t}$ hits at $t=\\ln(1500/1000)/\\ln(1.02)\\approx20.4753$. Note $e^{k}\\approx1.018163\\neq1.02$.",
       "difficulty_level": "5/5",
@@ -3829,10 +3829,10 @@
         false
       ],
       "tactical_explanations": [
-        "**A.** → True\n\n$$2117 > 1926.0381$$.\n\nSo the statement is True.",
+        "**A.** → True\n\n$$2117 > 1926.0381.$$\n\nSo the statement is True.",
         "**B.** → True\n\nMeeting time $\\approx20.2733$ compared with horizon $25$:.\n\nSo the statement is True.",
-        "**C.** → True\n\n$$\\ln(A/A_0)=k_A t=0.75,\\quad \\ln(B/B_0)=k_B t=0.25.$$.\n\nSo the statement is True.",
-        "**D.** → True\n\n$$0.03 > 0.01$$.\n\nSo the statement is True.",
+        "**C.** → True\n\n$$\\ln(A/A_0)=k_A t=0.75,\\quad \\ln(B/B_0)=k_B t=0.25..$$\n\nSo the statement is True.",
+        "**D.** → True\n\n$$0.03 > 0.01.$$\n\nSo the statement is True.",
         "**E.** → False\n\n$$A+B\\approx4043.0381$$ vs $5000$.\n\nSo the statement is False."
       ],
       "solution_overview": "$A(t)=1000e^{0.03t}$, $B(t)=1500e^{0.01t}$. At $t=25$: $A\\approx2117$, $B\\approx1926.0381$. Meeting time $t^*=\\ln(B_0/A_0)/(k_A-k_B)\\approx20.2733$.",
@@ -3862,11 +3862,11 @@
         true
       ],
       "tactical_explanations": [
-        "**A.** → True\n\n$$|\\varepsilon|=1.4 > 1$$.\n\nSo the statement is True.",
-        "**B.** → True\n\n$$Q\\approx31.8789$$\n\n$$31.8789 > 5$$.\n\nSo the statement is True.",
-        "**C.** → True\n\n$$N(11)\\approx324.5103,\\quad 1.4 N_0=280$$.\n\nSo the statement is True.",
+        "**A.** → True\n\n$$|\\varepsilon|=1.4 > 1.$$\n\nSo the statement is True.",
+        "**B.** → True\n\n$$Q\\approx31.8789$$\n\n$$31.8789 > 5.$$\n\nSo the statement is True.",
+        "**C.** → True\n\n$$N(11)\\approx324.5103,\\quad 1.4 N_0=280.$$\n\nSo the statement is True.",
         "**D.** → False\n\nElasticity $1.4$ and force $0.044$ are unrelated parameters from different models.\n\nSo the statement is False.",
-        "**E.** → True\n\n$$\\frac{1}{t}\\ln\\frac{N(11)}{N_0}=0.044.$$.\n\nSo the statement is True."
+        "**E.** → True\n\n$$\\frac{1}{t}\\ln\\frac{N(11)}{N_0}=0.044..$$\n\nSo the statement is True."
       ],
       "solution_overview": "Demand $\\ln Q=5-1.4\\ln P$ at $P=3$ gives $Q\\approx31.8789$ with $|\\varepsilon|=1.4$. A separate stock $N(t)=200e^{0.044t}$ reaches $N(11)\\approx324.5103$.",
       "difficulty_level": "5/5",
@@ -3895,11 +3895,11 @@
         true
       ],
       "tactical_explanations": [
-        "**A.** → True\n\n$$t_{\\mathrm{hit}}\\approx15.6841 > 6$$.\n\nSo the statement is True.",
-        "**B.** → True\n\n$$P_0 e^{\\bar k t_{\\mathrm{hit}}}\\approx1800.$$.\n\nSo the statement is True.",
+        "**A.** → True\n\n$$t_{\\mathrm{hit}}\\approx15.6841 > 6.$$\n\nSo the statement is True.",
+        "**B.** → True\n\n$$P_0 e^{\\bar k t_{\\mathrm{hit}}}\\approx1800..$$\n\nSo the statement is True.",
         "**C.** → False\n\nConstant-$k_1$ time $\\approx10.4962\\neq15.6841$.\n\nSo the statement is False.",
-        "**D.** → True\n\n$$|t_{\\mathrm{hit}}-t_{k_1}|\\approx5.1879.$$.\n\nSo the statement is True.",
-        "**E.** → True\n\n$$f(6)\\approx1399.339 < 1800$$.\n\nSo the statement is True."
+        "**D.** → True\n\n$$|t_{\\mathrm{hit}}-t_{k_1}|\\approx5.1879..$$\n\nSo the statement is True.",
+        "**E.** → True\n\n$$f(6)\\approx1399.339 < 1800.$$\n\nSo the statement is True."
       ],
       "solution_overview": "Piecewise forces $0.056$ then $0.026$ after $t=6$. $f(6)\\approx1399.339$. Hitting $1800$ at $t\\approx15.6841$ with path-average force $\\bar k\\approx0.037477$.",
       "difficulty_level": "5/5",
@@ -3928,11 +3928,11 @@
         true
       ],
       "tactical_explanations": [
-        "**A.** → True\n\n$$y(14)\\approx56.9414,\\quad 1.3 y_0=65$$\n\n$$56.9414 \\le 65$$.\n\nSo the statement is True.",
-        "**B.** → True\n\nPer capita is a ratio, so forces subtract:\n\n$$k_y=k_Y-k_N=0.011-0.006=0.005.$$.\n\nSo the statement is True.",
+        "**A.** → True\n\n$$y(14)\\approx56.9414,\\quad 1.3 y_0=65$$\n\n$$56.9414 \\le 65.$$\n\nSo the statement is True.",
+        "**B.** → True\n\nPer capita is a ratio, so forces subtract:\n\n$$k_y=k_Y-k_N=0.011-0.006=0.005..$$\n\nSo the statement is True.",
         "**C.** → True\n\n$$k_y=0.011-0.006=0.005$$\n\nmatches.\n\nSo the statement is True.",
-        "**D.** → True\n\n$$y_{\\mathrm{wrong}}\\approx66.1565\\neq y(14)\\approx56.9414.$$.\n\nSo the statement is True.",
-        "**E.** → True\n\n$$y(4)\\approx54.1644 > y_0=50$$.\n\nSo the statement is True."
+        "**D.** → True\n\n$$y_{\\mathrm{wrong}}\\approx66.1565\\neq y(14)\\approx56.9414..$$\n\nSo the statement is True.",
+        "**E.** → True\n\n$$y(4)\\approx54.1644 > y_0=50.$$\n\nSo the statement is True."
       ],
       "solution_overview": "GDP force switches from $0.026$ to $0.011$ at $t=4$ while population keeps force $0.006$. Per-capita force is therefore $0.02$ then $0.005$.\n\n$$y(4)\\approx54.1644,\\quad y(14)\\approx56.9414.$$\n\nIgnoring the GDP switch would give $y_{\\mathrm{wrong}}(14)\\approx66.1565$.",
       "difficulty_level": "5/5",
@@ -3961,11 +3961,11 @@
         true
       ],
       "tactical_explanations": [
-        "**A.** → True\n\n$$22.5258 \\ge 20.4753$$.\n\nSo the statement is True.",
+        "**A.** → True\n\n$$22.5258 \\ge 20.4753.$$\n\nSo the statement is True.",
         "**B.** → True\n\n$$e^{0.018}\\approx1.018163,\\quad a=1.02.$$\n\nThey differ, so continuous and discrete paths are not reparametrisations of each other.\n\nSo the statement is True.",
-        "**C.** → True\n\n$$22.5258 < 25$$.\n\nSo the statement is True.",
+        "**C.** → True\n\n$$22.5258 < 25.$$\n\nSo the statement is True.",
         "**D.** → True\n\nHitting times $22.5258$ versus $20.4753$ are unequal.\n\nSo the statement is True.",
-        "**E.** → True\n\n$$P e^{k t}= 1000 e^{0.018\\cdot22.5258}\\approx1500.$$.\n\nSo the statement is True."
+        "**E.** → True\n\n$$P e^{k t}= 1000 e^{0.018\\cdot22.5258}\\approx1500..$$\n\nSo the statement is True."
       ],
       "solution_overview": "Continuous $Pe^{kt}$ with $k=0.018$ hits $1500$ at $t=\\ln(1500/1000)/k\\approx22.5258$. Discrete $P(1.02)^{t}$ hits at $t=\\ln(1500/1000)/\\ln(1.02)\\approx20.4753$. Note $e^{k}\\approx1.018163\\neq1.02$.",
       "difficulty_level": "5/5",
@@ -3994,11 +3994,11 @@
         true
       ],
       "tactical_explanations": [
-        "**A.** → True\n\n$$22.5258 \\ge 20.4753$$.\n\nSo the statement is True.",
+        "**A.** → True\n\n$$22.5258 \\ge 20.4753.$$\n\nSo the statement is True.",
         "**B.** → True\n\n$$e^{0.018}\\approx1.018163,\\quad a=1.02.$$\n\nThey differ, so continuous and discrete paths are not reparametrisations of each other.\n\nSo the statement is True.",
-        "**C.** → True\n\n$$22.5258 < 25$$.\n\nSo the statement is True.",
+        "**C.** → True\n\n$$22.5258 < 25.$$\n\nSo the statement is True.",
         "**D.** → True\n\nHitting times $22.5258$ versus $20.4753$ are unequal.\n\nSo the statement is True.",
-        "**E.** → True\n\n$$P e^{k t}= 1000 e^{0.018\\cdot22.5258}\\approx1500.$$.\n\nSo the statement is True."
+        "**E.** → True\n\n$$P e^{k t}= 1000 e^{0.018\\cdot22.5258}\\approx1500..$$\n\nSo the statement is True."
       ],
       "solution_overview": "Continuous $Pe^{kt}$ with $k=0.018$ hits $1500$ at $t=\\ln(1500/1000)/k\\approx22.5258$. Discrete $P(1.02)^{t}$ hits at $t=\\ln(1500/1000)/\\ln(1.02)\\approx20.4753$. Note $e^{k}\\approx1.018163\\neq1.02$.",
       "difficulty_level": "5/5",
@@ -4028,10 +4028,10 @@
         true
       ],
       "tactical_explanations": [
-        "**A.** → True\n\n$$2117 > 1926.0381$$.\n\nSo the statement is True.",
+        "**A.** → True\n\n$$2117 > 1926.0381.$$\n\nSo the statement is True.",
         "**B.** → True\n\nMeeting time $\\approx20.2733$ compared with horizon $25$:.\n\nSo the statement is True.",
-        "**C.** → True\n\n$$\\ln(A/A_0)=k_A t=0.75,\\quad \\ln(B/B_0)=k_B t=0.25.$$.\n\nSo the statement is True.",
-        "**D.** → True\n\n$$0.03 > 0.01$$.\n\nSo the statement is True.",
+        "**C.** → True\n\n$$\\ln(A/A_0)=k_A t=0.75,\\quad \\ln(B/B_0)=k_B t=0.25..$$\n\nSo the statement is True.",
+        "**D.** → True\n\n$$0.03 > 0.01.$$\n\nSo the statement is True.",
         "**E.** → True\n\n$$A+B\\approx4043.0381$$ vs $5000$.\n\nSo the statement is True."
       ],
       "solution_overview": "$A(t)=1000e^{0.03t}$, $B(t)=1500e^{0.01t}$. At $t=25$: $A\\approx2117$, $B\\approx1926.0381$. Meeting time $t^*=\\ln(B_0/A_0)/(k_A-k_B)\\approx20.2733$.",
@@ -4062,11 +4062,11 @@
         true
       ],
       "tactical_explanations": [
-        "**A.** → True\n\n$$|\\varepsilon|=1.4 > 1$$.\n\nSo the statement is True.",
-        "**B.** → True\n\n$$Q\\approx31.8789$$\n\n$$31.8789 > 5$$.\n\nSo the statement is True.",
-        "**C.** → True\n\n$$N(11)\\approx324.5103,\\quad 1.4 N_0=280$$.\n\nSo the statement is True.",
+        "**A.** → True\n\n$$|\\varepsilon|=1.4 > 1.$$\n\nSo the statement is True.",
+        "**B.** → True\n\n$$Q\\approx31.8789$$\n\n$$31.8789 > 5.$$\n\nSo the statement is True.",
+        "**C.** → True\n\n$$N(11)\\approx324.5103,\\quad 1.4 N_0=280.$$\n\nSo the statement is True.",
         "**D.** → True\n\nElasticity $1.4$ and force $0.044$ are unrelated parameters from different models.\n\nSo the statement is True.",
-        "**E.** → True\n\n$$\\frac{1}{t}\\ln\\frac{N(11)}{N_0}=0.044.$$.\n\nSo the statement is True."
+        "**E.** → True\n\n$$\\frac{1}{t}\\ln\\frac{N(11)}{N_0}=0.044..$$\n\nSo the statement is True."
       ],
       "solution_overview": "Demand $\\ln Q=5-1.4\\ln P$ at $P=3$ gives $Q\\approx31.8789$ with $|\\varepsilon|=1.4$. A separate stock $N(t)=200e^{0.044t}$ reaches $N(11)\\approx324.5103$.",
       "difficulty_level": "5/5",
@@ -4095,11 +4095,11 @@
         true
       ],
       "tactical_explanations": [
-        "**A.** → True\n\n$$|\\varepsilon|=1.4 > 1$$.\n\nSo the statement is True.",
-        "**B.** → True\n\n$$Q\\approx31.8789$$\n\n$$31.8789 > 5$$.\n\nSo the statement is True.",
-        "**C.** → True\n\n$$N(11)\\approx324.5103,\\quad 1.4 N_0=280$$.\n\nSo the statement is True.",
+        "**A.** → True\n\n$$|\\varepsilon|=1.4 > 1.$$\n\nSo the statement is True.",
+        "**B.** → True\n\n$$Q\\approx31.8789$$\n\n$$31.8789 > 5.$$\n\nSo the statement is True.",
+        "**C.** → True\n\n$$N(11)\\approx324.5103,\\quad 1.4 N_0=280.$$\n\nSo the statement is True.",
         "**D.** → True\n\nElasticity $1.4$ and force $0.044$ are unrelated parameters from different models.\n\nSo the statement is True.",
-        "**E.** → True\n\n$$\\frac{1}{t}\\ln\\frac{N(11)}{N_0}=0.044.$$.\n\nSo the statement is True."
+        "**E.** → True\n\n$$\\frac{1}{t}\\ln\\frac{N(11)}{N_0}=0.044..$$\n\nSo the statement is True."
       ],
       "solution_overview": "Demand $\\ln Q=5-1.4\\ln P$ at $P=3$ gives $Q\\approx31.8789$ with $|\\varepsilon|=1.4$. A separate stock $N(t)=200e^{0.044t}$ reaches $N(11)\\approx324.5103$.",
       "difficulty_level": "5/5",

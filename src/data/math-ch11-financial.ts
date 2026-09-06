@@ -3534,8 +3534,8 @@ $$
 Substitute the recovered rate:
 
 $$
-t = \\frac{\\ln 5}{0.16} \\approx 10.06
-$$.
+t = \\frac{\\ln 5}{0.16} \\approx 10.06.
+$$
 
 So the statement is False.`,
       `**E.** → True
@@ -9034,7 +9034,7 @@ Using the recovered solution values $F_{\\mathrm{ordinary}}=20{,}405.76$ and $F_
 
 End-of-year deposits finish lower:
 
-$$20{,}405.76 < 21{,}426.05$$.
+$$20{,}405.76 < 21{,}426.05.$$
 
 That computed value matches the claim.
 
@@ -9149,7 +9149,7 @@ Using the recovered solution values $P_{\\mathrm{ordinary}}=101{,}096.80$ and $P
 
 End-of-year rent is worth less today:
 
-$$101{,}096.80 < 107{,}162.61$$.
+$$101{,}096.80 < 107{,}162.61.$$
 
 That computed value matches the claim.
 
@@ -9919,7 +9919,7 @@ Using the recovered solution values $F_9=96{,}757.60$ and $S_{\\mathrm{cont}}=13
 
 Both strategies commit \\$75,000 in total, and
 
-$$96{,}757.60 < 131{,}629.13$$.
+$$96{,}757.60 < 131{,}629.13.$$
 
 That computed value matches the claim.
 

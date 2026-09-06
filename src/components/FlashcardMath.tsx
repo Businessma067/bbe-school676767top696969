@@ -327,8 +327,16 @@ function splitMath(input: string): Part[] {
       const end = text.indexOf("$$", i + 2);
       if (end !== -1) {
         flush();
-        parts.push({ type: "display", value: text.slice(i + 2, end).trim() });
+        // Trailing . , : ; ! ? after $$ would otherwise render on its own line
+        // under a block-level KaTeX display — fold it into the math.
+        let value = text.slice(i + 2, end).trim();
         i = end + 2;
+        // Do not absorb "!" — it is often factorial/subfactorial notation after $$.
+        while (i < text.length && /[.,:;?]/.test(text[i]!)) {
+          value += text[i];
+          i += 1;
+        }
+        parts.push({ type: "display", value });
         continue;
       }
     }
@@ -360,8 +368,15 @@ function splitMath(input: string): Part[] {
         const inner = text.slice(i + 1, end);
         if (looksLikeMathInner(inner)) {
           flush();
-          parts.push({ type: "inline", value: inner.trim() });
+          // Keep sentence punctuation glued to inline math so "." / "," cannot
+          // wrap alone onto the next visual line after a KaTeX span.
+          let value = inner.trim();
           i = end + 1;
+          while (i < text.length && /[.,:;?]/.test(text[i]!)) {
+            value += text[i];
+            i += 1;
+          }
+          parts.push({ type: "inline", value });
           continue;
         }
       }

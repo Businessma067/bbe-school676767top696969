@@ -169,7 +169,7 @@ $$D(-4)=6\\sqrt{-4}$$
 
 There is no real load at
 
-$$t=-4$$.
+$$t=-4.$$
 
 The computed figure disagrees with the claim.
 
@@ -672,7 +672,7 @@ $$L(-4)=\\sqrt{-4}$$
 
 There is no real value at
 
-$$x=-4$$.
+$$x=-4.$$
 
 The computed figure disagrees with the claim.
 
@@ -704,9 +704,9 @@ $$N(x)=\\frac{1}{\\sqrt{x}}$$
 
 At $x=0$ the denominator is
 
-$$\\sqrt{0}=0$$, and division by zero is undefined. The transform has no value at
+$$\\sqrt{0}=0,$$ and division by zero is undefined. The transform has no value at
 
-$$x=0$$.
+$$x=0.$$
 
 The computed figure disagrees with the claim.
 
@@ -921,7 +921,7 @@ Keep the stated domain in force while you evaluate the model.
 
 Halving the radius is the width multiplier
 
-$$k=0.5$$, and the exponent $2$ acts on that whole factor:
+$$k=0.5,$$ and the exponent $2$ acts on that whole factor:
 
 $$\\frac{y(0.5r)}{y(r)}=0.5^{2}$$
 
@@ -1029,7 +1029,7 @@ Keep the stated domain in force while you evaluate the model.
 
 A ten percent overspeed is the speed multiplier
 
-$$k=1.1$$, and the exponent acts on the whole multiplier:
+$$k=1.1,$$ and the exponent acts on the whole multiplier:
 
 $$\\frac{E(1.1v)}{E(v)}=1.1^{2}$$
 
@@ -1393,7 +1393,7 @@ The recovered flows are $Q_{L}(d)=4d^{\\frac{1}{2}}$ and $Q_{O}(d)=\\frac{1}{2}d
 
 The overview recovered $F=50$ and
 
-$$A=50$$, so
+$$A=50,$$ so
 
 $$C(n)=50+50\\sqrt{n}$$
 
@@ -1629,7 +1629,7 @@ So the statement is False.`,
 
 The overview recovered
 
-$$L(x)=\\frac{1}{2}x^{2}$$, so load per job is
+$$L(x)=\\frac{1}{2}x^{2},$$ so load per job is
 
 $$\\frac{L(x)}{x}=\\frac{1}{2}x$$
 
@@ -1743,7 +1743,7 @@ So the statement is False.`,
 
 The overview recovered
 
-$$Q(x)=12x^{\\frac{1}{2}}$$, so responses per unit of intensity are
+$$Q(x)=12x^{\\frac{1}{2}},$$ so responses per unit of intensity are
 
 $$\\frac{Q(x)}{x}=12 x^{-\\frac{1}{2}}$$
 
@@ -1823,7 +1823,7 @@ $$C(n)-D(n)=n(n-16)$$
 
 On $n>0$ the roots are
 
-$$n=0$$, outside the domain, and
+$$n=0,$$ outside the domain, and
 
 $$n=16$$
 
@@ -1849,7 +1849,7 @@ Start from the calibrated closed form, then evaluate at the claimed point.
 
 The overview recovered
 
-$$C(n)=n^{2}$$, so cost per document is
+$$C(n)=n^{2},$$ so cost per document is
 
 $$\\frac{C(n)}{n}=n$$
 
@@ -2204,7 +2204,7 @@ $$R(16)=625$$
 
 The claim compares this with $700$. Compare with the claim:
 
-$$625<700$$.
+$$625<700.$$
 
 So the statement is True.`,
     `**E.** → True
@@ -2223,7 +2223,7 @@ $$q(20)=25$$
 
 The claim compares this with $30$. Compare with the claim:
 
-$$25<30$$.
+$$25<30.$$
 
 So the statement is True.`
     ],
@@ -2324,7 +2324,7 @@ $$C(900)=1100$$
 
 The claim compares this with $1000$. Compare with the claim:
 
-$$1100>1000$$.
+$$1100>1000.$$
 
 So the statement is True.`,
     `**E.** → False
@@ -2440,7 +2440,7 @@ $$E(16)=480$$
 
 The claim compares this with $400$. Compare with the claim:
 
-$$480>400$$.
+$$480>400.$$
 
 So the statement is True.`,
     `**E.** → True
@@ -2457,7 +2457,7 @@ $$E(1)=240$$
 
 The claim compares this with $250$. Compare with the claim:
 
-$$240<250$$.
+$$240<250.$$
 
 So the statement is True.`
     ],
@@ -2654,7 +2654,7 @@ $$S(4)=36\\pi$$
 
 The claim compares this with $30\\pi$. Compare with the claim:
 
-$$36\\pi>30\\pi$$.
+$$36\\pi>30\\pi.$$
 
 So the statement is True.`,
     `**E.** → False
@@ -2671,7 +2671,7 @@ $$S(9)=81\\pi$$
 
 The claim is $100\\pi$. Compare with the claim:
 
-$$81\\pi\\neq 100\\pi$$.
+$$81\\pi\\neq 100\\pi.$$
 
 So the statement is False.`
     ],
@@ -2882,7 +2882,7 @@ $$c(8)=512$$
 
 The claim compares this with $520$. Compare with the claim:
 
-$$512<520$$.
+$$512<520.$$
 
 So the statement is True.`,
     `**E.** → False
@@ -2996,7 +2996,7 @@ $$N(100)=300$$
 
 The claim compares this with $250$. Compare with the claim:
 
-$$300>250$$.
+$$300>250.$$
 
 So the statement is True.`,
     `**E.** → False
@@ -3125,7 +3125,7 @@ $$g(81)=432$$
 
 The claim compares this with $400$. Compare with the claim:
 
-$$432>400$$.
+$$432>400.$$
 
 So the statement is True.`
     ],
@@ -3224,7 +3224,7 @@ $$R(25)=400$$
 
 The claim compares this with $450$. Compare with the claim:
 
-$$400<450$$.
+$$400<450.$$
 
 So the statement is True.`,
     `**E.** → False
@@ -3340,7 +3340,7 @@ $$N(27)=162$$
 
 The claim compares this with $150$. Compare with the claim:
 
-$$162>150$$.
+$$162>150.$$
 
 So the statement is True.`,
     `**E.** → False
@@ -3469,7 +3469,7 @@ $$P(16)=2048$$
 
 Two kilowatts is $2000$ watts. Compare with the claim:
 
-$$2048>2000$$.
+$$2048>2000.$$
 
 So the statement is True.`
     ],
@@ -3568,7 +3568,7 @@ $$q(25)=240$$
 
 The claim compares this with $250$. Compare with the claim:
 
-$$240<250$$.
+$$240<250.$$
 
 So the statement is True.`,
     `**E.** → False
@@ -3680,7 +3680,7 @@ $$y(8)=64$$
 
 The claim compares this with $50$. Compare with the claim:
 
-$$64>50$$.
+$$64>50.$$
 
 So the statement is True.`,
     `**E.** → False
@@ -3750,7 +3750,7 @@ Start from the calibrated closed form recovered in the overview, then substitute
 
 The overview recovered
 
-$$g(f(x))=x$$, the identity power $x^{1}$. That grows at the same rate as the raw reading, not more slowly.
+$$g(f(x))=x,$$ the identity power $x^{1}$. That grows at the same rate as the raw reading, not more slowly.
 
 So the statement is False.`,
     `**C.** → False
@@ -4896,7 +4896,7 @@ Start from the calibrated closed form in the overview.
 
 Throughput per cubic metre is the average $T/g$. The overview recovered
 
-$$T(g)=4 g^{\\frac{2}{3}}$$, so
+$$T(g)=4 g^{\\frac{2}{3}},$$ so
 
 $$\\frac{T(g)}{g}=4 g^{-\\frac{1}{3}}$$
 
@@ -5482,7 +5482,7 @@ Start from the calibrated closed form in the overview.
 
 A nonzero power inverts to another power. The overview recovered
 
-$$I(d)=800 d^{-2}$$, so isolating distance gives
+$$I(d)=800 d^{-2},$$ so isolating distance gives
 
 $$d=\\sqrt{800}\\, I^{-\\frac{1}{2}}$$
 
@@ -5671,7 +5671,7 @@ $$-\\frac{3}{2}<-1$$
 
 The doubling factor is then
 
-$$2^{-\\frac{3}{2}}=\\frac{1}{2\\sqrt{2}}\\approx 0.354$$, steeper than $\\frac{1}{2}$. Concentration falls faster than inverse-linear decay.
+$$2^{-\\frac{3}{2}}=\\frac{1}{2\\sqrt{2}}\\approx 0.354,$$ steeper than $\\frac{1}{2}$. Concentration falls faster than inverse-linear decay.
 
 The computed figure agrees with the claim.
 
@@ -5682,7 +5682,7 @@ Form the ratio so the unknown positive coefficient cancels.
 
 Concentration per metre is the intensity $c(x)/x$. The overview recovered
 
-$$c(x)=400 x^{-\\frac{3}{2}}$$, so
+$$c(x)=400 x^{-\\frac{3}{2}},$$ so
 
 $$\\frac{c(x)}{x}=400 x^{-\\frac{5}{2}}$$
 
@@ -5714,7 +5714,7 @@ Start from the calibrated closed form in the overview.
 
 A nonzero power inverts to another power. The overview recovered
 
-$$c=400 x^{-\\frac{3}{2}}$$, so isolating distance raises both sides to the reciprocal $-\\frac{2}{3}$:
+$$c=400 x^{-\\frac{3}{2}},$$ so isolating distance raises both sides to the reciprocal $-\\frac{2}{3}$:
 
 $$x=\\left(\\frac{400}{c}\\right)^{\\frac{2}{3}}$$
 
@@ -5999,7 +5999,7 @@ Name the recovered power rule, then substitute the claimed input.
 
 A nonzero power inverts to another power. The overview recovered
 
-$$E=10 m^{\\frac{2}{3}}$$, so isolating mass gives
+$$E=10 m^{\\frac{2}{3}},$$ so isolating mass gives
 
 $$m=\\left(\\frac{E}{10}\\right)^{\\frac{3}{2}}$$
 
@@ -6014,7 +6014,7 @@ Form the ratio so the unknown positive coefficient cancels.
 
 Energy use per kilogram is the average $E/m$. The overview recovered
 
-$$E(m)=10 m^{\\frac{2}{3}}$$, so
+$$E(m)=10 m^{\\frac{2}{3}},$$ so
 
 $$\\frac{E(m)}{m}=10 m^{-\\frac{1}{3}}$$
 
@@ -6169,7 +6169,7 @@ Keep the stated domain in force while you evaluate the model.
 
 An extra kilometre is the size of the derivative. The overview recovered
 
-$$f(d)=3200 d^{-1.5}$$, so
+$$f(d)=3200 d^{-1.5},$$ so
 
 $$f'(d)=-4800 d^{-2.5}$$
 
@@ -6251,7 +6251,7 @@ Read the exponent from the overview before comparing growth rates.
 
 Output per square metre is the average $y/a$. The overview recovered
 
-$$y(a)=24 a^{\\frac{1}{2}}$$, so
+$$y(a)=24 a^{\\frac{1}{2}},$$ so
 
 $$\\frac{y(a)}{a}=24 a^{-\\frac{1}{2}}$$
 
@@ -6392,7 +6392,7 @@ $$S=N\\,c(N)$$
 
 The overview recovered
 
-$$S(N)=800 N^{\\frac{1}{2}}$$, so quadrupling volume multiplies spend by
+$$S(N)=800 N^{\\frac{1}{2}},$$ so quadrupling volume multiplies spend by
 
 $$\\frac{S(4N)}{S(N)}=4^{\\frac{1}{2}}$$
 
@@ -6512,7 +6512,7 @@ Start from the calibrated closed form in the overview.
 
 Doubling the flow velocity is the multiplier $k=2$ on the outer cube. The overview recovered
 
-$$S(v)=5 v^{3}$$, so
+$$S(v)=5 v^{3},$$ so
 
 $$\\frac{S(2v)}{S(v)}=2^{3}$$
 
@@ -7692,7 +7692,7 @@ $$q=5$$
 
 The overview recovered
 
-$$v(q)=4\\sqrt{2}\\, q$$, so
+$$v(q)=4\\sqrt{2}\\, q,$$ so
 
 $$v(5)=20\\sqrt{2}\\approx 28.28$$
 
@@ -7814,7 +7814,7 @@ $$s=36$$
 
 The overview recovered
 
-$$T(s)=20\\sqrt{s}$$, so
+$$T(s)=20\\sqrt{s},$$ so
 
 $$T(36)=20\\cdot 6$$
 
@@ -7911,7 +7911,7 @@ $$r=-\\frac{3}{2}$$
 
 Subscribers fall faster than price rises when that exponent is smaller than minus one:
 
-$$-\\frac{3}{2}<-1$$.
+$$-\\frac{3}{2}<-1.$$
 
 So the statement is True.`,
     `**B.** → True
@@ -7924,7 +7924,7 @@ $$p=16$$
 
 The overview recovered
 
-$$R(p)=2000p^{-\\frac{1}{2}}$$, so
+$$R(p)=2000p^{-\\frac{1}{2}},$$ so
 
 $$R(16)=\\frac{2000}{4}$$
 
@@ -7969,7 +7969,7 @@ $$p=9$$
 
 The overview recovered
 
-$$R(p)=2000p^{-\\frac{1}{2}}$$, so
+$$R(p)=2000p^{-\\frac{1}{2}},$$ so
 
 $$R(9)=\\frac{2000}{3}\\approx 666.67$$
 
@@ -8044,7 +8044,7 @@ $$n=900$$
 
 The overview recovered
 
-$$C(n)=400+30n^{\\frac{1}{2}}$$, so
+$$C(n)=400+30n^{\\frac{1}{2}},$$ so
 
 $$C(900)=400+30\\cdot 30$$
 
@@ -8089,7 +8089,7 @@ $$n=36$$
 
 The overview recovered
 
-$$C(n)=400+30n^{\\frac{1}{2}}$$, so
+$$C(n)=400+30n^{\\frac{1}{2}},$$ so
 
 $$C(36)=400+30\\cdot 6$$
 
@@ -8178,7 +8178,7 @@ $$q=60$$
 
 The overview recovered
 
-$$T(q)=\\frac{4800}{q}+3q$$, so
+$$T(q)=\\frac{4800}{q}+3q,$$ so
 
 $$T(60)=80+180$$
 
@@ -8408,7 +8408,7 @@ Form the ratio so the unknown positive coefficient cancels.
 
 This is a level after $900$ cumulative units. The overview recovered
 
-$$t(n)=8+50n^{-\\frac{1}{2}}$$, so
+$$t(n)=8+50n^{-\\frac{1}{2}},$$ so
 
 $$t(900)=8+\\frac{50}{30}$$
 
@@ -9148,7 +9148,7 @@ $$P(8)=256$$
 
 The claim is that this sits under $300$. Compare with the claim:
 
-$$256<300$$.
+$$256<300.$$
 
 So the statement is True.`,
     `**E.** → False
@@ -9167,7 +9167,7 @@ $$P(12)=864$$
 
 The claim is that this sits under $800$. Compare with the claim:
 
-$$864>800$$.
+$$864>800.$$
 
 So the statement is False.`
     ],
@@ -9235,7 +9235,7 @@ $$-3\\neq -1$$
 
 The recovered law is
 
-$$S(x)=400x^{-3}$$, a reciprocal cube, not a reciprocal.
+$$S(x)=400x^{-3},$$ a reciprocal cube, not a reciprocal.
 
 The exponent is $-3$.
 
@@ -9265,7 +9265,7 @@ Read the exponent from the overview before comparing growth rates.
 
 A nonzero power inverts to another power. The overview recovered
 
-$$S=400x^{-3}$$, so isolating depth raises both sides to the reciprocal $-\\frac{1}{3}$ and leaves
+$$S=400x^{-3},$$ so isolating depth raises both sides to the reciprocal $-\\frac{1}{3}$ and leaves
 
 $$x=400^{\\frac{1}{3}}S^{-\\frac{1}{3}}$$
 
@@ -9292,7 +9292,7 @@ $$S(4)=6.25$$
 
 The claim is that this already sits under $7$. Compare with the claim:
 
-$$6.25<7$$.
+$$6.25<7.$$
 
 So the statement is True.`,
     `**E.** → False
@@ -9525,7 +9525,7 @@ $$\\frac{Q(r)}{\\pi r^{2}}=\\frac{A}{\\pi}r^{k-2}$$
 
 The overview recovered $A=3$ and
 
-$$k=4$$, so the index is $\\frac{3}{\\pi}r^{2}$. The leftover exponent $2$ is not zero, so the index still depends on the tube.
+$$k=4,$$ so the index is $\\frac{3}{\\pi}r^{2}$. The leftover exponent $2$ is not zero, so the index still depends on the tube.
 
 The velocity index is not the same in every tube.
 
@@ -9548,7 +9548,7 @@ $$Q(3)=243$$
 
 The claim is that this already sits above $200$. Compare with the claim:
 
-$$243>200$$.
+$$243>200.$$
 
 So the statement is True.`,
     `**E.** → False
@@ -9567,7 +9567,7 @@ $$Q(1)=3$$
 
 The claim is that this still sits above $10$. Compare with the claim:
 
-$$3<10$$.
+$$3<10.$$
 
 So the statement is False.`
     ],
@@ -9661,7 +9661,7 @@ Read the exponent from the overview before comparing growth rates.
 
 A nonzero power inverts to another power. The overview recovered
 
-$$H=720d^{-2}$$, so isolating distance leaves
+$$H=720d^{-2},$$ so isolating distance leaves
 
 $$d=720^{\\frac{1}{2}}H^{-\\frac{1}{2}}$$
 
@@ -9688,7 +9688,7 @@ $$H(6)=20$$
 
 The claim is that this already sits under $25$. Compare with the claim:
 
-$$20<25$$.
+$$20<25.$$
 
 So the statement is True.`,
     `**E.** → False
@@ -9808,7 +9808,7 @@ $$r(8)=60$$
 
 The claim is that this already sits above $50$. Compare with the claim:
 
-$$60>50$$.
+$$60>50.$$
 
 So the statement is True.`,
     `**E.** → False
@@ -9869,7 +9869,7 @@ Name the recovered power rule, then substitute the claimed input.
 
 A nonzero power inverts to another power. The overview recovered
 
-$$Q=16h^{\\frac{3}{2}}$$, so isolating head raises both sides to the reciprocal $\\frac{2}{3}$ and leaves
+$$Q=16h^{\\frac{3}{2}},$$ so isolating head raises both sides to the reciprocal $\\frac{2}{3}$ and leaves
 
 $$h=\\left(\\frac{Q}{16}\\right)^{\\frac{2}{3}}$$
 
@@ -9920,7 +9920,7 @@ $$Q(1)=16$$
 
 The claim is that this still sits under $20$. Compare with the claim:
 
-$$16<20$$.
+$$16<20.$$
 
 So the statement is True.`,
     `**E.** → False
@@ -10038,7 +10038,7 @@ $$F(10)=300$$
 
 The claim is that this already sits above $250$. Compare with the claim:
 
-$$300>250$$.
+$$300>250.$$
 
 So the statement is True.`,
     `**E.** → False
@@ -10057,7 +10057,7 @@ $$F(6)=108$$
 
 The claim is that this still sits under $100$. Compare with the claim:
 
-$$108>100$$.
+$$108>100.$$
 
 So the statement is False.`
     ],
@@ -10168,7 +10168,7 @@ $$m(25)=10$$
 
 The claim is that this already sits above $8$. Compare with the claim:
 
-$$10>8$$.
+$$10>8.$$
 
 So the statement is True.`,
     `**E.** → False
@@ -10423,7 +10423,7 @@ $$E(25)=100$$
 
 The claim is that this already sits above $90$. Compare with the claim:
 
-$$100>90$$.
+$$100>90.$$
 
 So the statement is True.`
     ],
@@ -10496,7 +10496,7 @@ $$N(9)=18$$
 
 The claim is that this already sits above $15$. Compare with the claim:
 
-$$18>15$$.
+$$18>15.$$
 
 So the statement is True.`,
     `**C.** → False
@@ -10505,7 +10505,7 @@ Read the exponent from the overview before comparing growth rates.
 
 Upkeep overtakes benefit when
 
-$$12n^{\\frac{1}{2}}=2n$$, so
+$$12n^{\\frac{1}{2}}=2n,$$ so
 
 $$n=36$$
 
@@ -10515,7 +10515,7 @@ $$N'(n)=6n^{-\\frac{1}{2}}-2$$
 
 which is negative for every $n>9$. Past the crossing at
 
-$$n=36$$, the net is already negative and still falling, so planting more trees cannot restore a positive net.
+$$n=36,$$ the net is already negative and still falling, so planting more trees cannot restore a positive net.
 
 The net stays negative after upkeep overtakes benefit.
 
@@ -10559,7 +10559,7 @@ $$N(4)=16$$
 
 The claim is that this already sits above $20$. Compare with the claim:
 
-$$16<20$$.
+$$16<20.$$
 
 So the statement is False.`
     ],
@@ -10609,7 +10609,7 @@ Name the recovered power rule, then substitute the claimed input.
 
 A nonzero power inverts to another power. The overview recovered
 
-$$q=2000p^{-2}$$, so isolating price leaves
+$$q=2000p^{-2},$$ so isolating price leaves
 
 $$p=2000^{\\frac{1}{2}}q^{-\\frac{1}{2}}$$
 
@@ -10647,7 +10647,7 @@ $$q(10)=20$$
 
 The claim is that this already sits under $25$. Compare with the claim:
 
-$$20<25$$.
+$$20<25.$$
 
 So the statement is True.`,
     `**D.** → True
@@ -10759,7 +10759,7 @@ $$\\frac{400}{8}=50$$
 
 The claim is that this already sits above $40$. Compare with the claim:
 
-$$50>40$$.
+$$50>40.$$
 
 So the statement is True.`,
     `**D.** → False
@@ -10789,7 +10789,7 @@ $$\\frac{400}{27}\\approx 14.81$$
 
 The claim is that this stays under $16$. Compare with the claim:
 
-$$14.81<16$$.
+$$14.81<16.$$
 
 So the statement is True.`
     ],
@@ -10877,7 +10877,7 @@ So the statement is True.`,
 
 The overview recovered $a=1>b=\\frac{1}{4}$ and the equal-marginal split
 
-$$q_{2}=4q_{1}$$, hence $q_{2}=24$ and
+$$q_{2}=4q_{1},$$ hence $q_{2}=24$ and
 
 $$q_{1}=6$$
 
@@ -10967,9 +10967,9 @@ Name the recovered power rule, then substitute the claimed input.
 
 For a power
 
-$$q=Ap^{r}$$, point elasticity equals the exponent at every price. The overview recovered
+$$q=Ap^{r},$$ point elasticity equals the exponent at every price. The overview recovered
 
-$$r=-2$$, so
+$$r=-2,$$ so
 
 $$\\varepsilon=-2$$
 
@@ -11051,7 +11051,7 @@ $$q(5)=160$$
 
 The claim is that this already sits above $150$. Compare with the claim:
 
-$$160>150$$.
+$$160>150.$$
 
 So the statement is True.`
     ],
@@ -11139,7 +11139,7 @@ $$T(9)=216$$
 
 The claim is that this already sits above $200$. Compare with the claim:
 
-$$216>200$$.
+$$216>200.$$
 
 So the statement is True.`,
     `**D.** → False
