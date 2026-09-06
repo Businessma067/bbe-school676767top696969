@@ -99,6 +99,8 @@ $$(1.006)^{12}$$
 
 $$\\approx 1.074424$$
 
+$$6,000 \\times 1.074424$$
+
 $$FV \\approx 6,446.54$$
 
 The claim is \\$6,446.54.
@@ -274,6 +276,8 @@ $$(1.02)^{24}$$
 
 $$\\approx 1.608435$$
 
+$$6,000 \\times 1.608435$$
+
 $$S(6) \\approx 9,650.61$$
 
 The claim is \\$9,860.00. The computed value is
@@ -296,6 +300,8 @@ $$S(3) = 6,000 \\times (1.02)^{12}$$
 $$(1.02)^{12}$$
 
 $$\\approx 1.268242$$
+
+$$6,000 \\times 1.268242$$
 
 $$S(3) \\approx 7,609.45$$
 
@@ -660,6 +666,8 @@ $$(1.0175)^{12}$$
 
 $$\\approx 1.231439$$
 
+$$2,000 \\times 1.231439$$
+
 $$FV \\approx 2,462.86$$
 
 The claim is \\$2,420.00. The computed value is
@@ -832,6 +840,8 @@ $$FV = 15,000 \\times (1.014)^{4}$$
 $$(1.014)^{4}$$
 
 $$\\approx 1.057187$$
+
+$$15,000 \\times 1.057187$$
 
 $$FV \\approx 15,857.81$$
 
@@ -1009,6 +1019,16 @@ $$
 Substitute the recovered rate:
 
 $$t = \\frac{\\ln 2}{\\ln(1.006)}$$
+
+$$\\ln 2$$
+
+$$\\approx 0.693147$$
+
+$$\\ln(1.006)$$
+
+$$\\approx 0.005982$$
+
+$$\\frac{0.693147}{0.005982}$$
 
 $$\\approx 115.87$$
 
@@ -1362,6 +1382,8 @@ $$(1.005)^{120}$$
 
 $$\\approx 1.8194$$
 
+$$4,000 \\times 1.8194$$
+
 $$S(10) \\approx 7,277.60$$
 
 Compare the computed value with the claim (\\$7,277.60). The two sides agree.
@@ -1387,6 +1409,8 @@ $$S_{\\mathrm{ann}} = 4,000 \\times (1.06)^{10}$$
 $$(1.06)^{10}$$
 
 $$\\approx 1.790847$$
+
+$$4,000 \\times 1.790847$$
 
 $$S_{\\mathrm{ann}} \\approx 7,163.39$$
 
@@ -1882,6 +1906,18 @@ $$
 t = \\frac{\\ln 1.5}{\\ln 1.005}
 $$
 
+$$\\ln 1.5$$
+
+$$\\approx 0.405465$$
+
+$$\\ln(1.005)$$
+
+$$\\approx 0.004988$$
+
+$$\\frac{0.405465}{0.004988}$$
+
+$$\\approx 81.3$$
+
 The claim is about $81.30$ months.
 
 So the statement is True.`,
@@ -1897,7 +1933,17 @@ Substitute the recovered rate:
 
 $$t = \\frac{\\ln 1.5}{\\ln 1.005}$$
 
-$$\\approx 81.30$$
+$$\\ln 1.5$$
+
+$$\\approx 0.405465$$
+
+$$\\ln(1.005)$$
+
+$$\\approx 0.004988$$
+
+$$\\frac{0.405465}{0.004988}$$
+
+$$\\approx 81.3$$
 
 The claim is $6.00$ years exactly. The computed value is
 
@@ -1922,7 +1968,17 @@ Substitute the recovered rate:
 
 $$t = \\frac{\\ln 1.5}{\\ln 1.005}$$
 
-$$\\approx 81.30$$
+$$\\ln 1.5$$
+
+$$\\approx 0.405465$$
+
+$$\\ln(1.005)$$
+
+$$\\approx 0.004988$$
+
+$$\\frac{0.405465}{0.004988}$$
+
+$$\\approx 81.3$$
 
 The claim is $48$ months. The computed value is
 
@@ -1941,9 +1997,29 @@ The time to grow by a factor of $1.5$ and the doubling time on this account are
 
 $$t_{1.5} = \\frac{\\ln 1.5}{\\ln 1.005}$$
 
-$$\\approx 81.30$$
+$$\\ln 1.5$$
+
+$$\\approx 0.405465$$
+
+$$\\ln(1.005)$$
+
+$$\\approx 0.004988$$
+
+$$\\frac{0.405465}{0.004988}$$
+
+$$\\approx 81.3$$
 
 $$t_2 = \\frac{\\ln 2}{\\ln 1.005}$$
+
+$$\\ln 2$$
+
+$$\\approx 0.693147$$
+
+$$\\ln(1.005)$$
+
+$$\\approx 0.004988$$
+
+$$\\frac{0.693147}{0.004988}$$
 
 $$\\approx 138.98$$
 
@@ -1966,7 +2042,17 @@ Substitute the recovered rate:
 
 $$t = \\frac{\\ln 1.5}{\\ln 1.005}$$
 
-$$\\approx 81.30$$
+$$\\ln 1.5$$
+
+$$\\approx 0.405465$$
+
+$$\\ln(1.005)$$
+
+$$\\approx 0.004988$$
+
+$$\\frac{0.405465}{0.004988}$$
+
+$$\\approx 81.3$$
 
 The claim is exactly $100$ months. The computed value is
 
@@ -2280,6 +2366,8 @@ $$FV = 3,000 \\times (1.019)^{12}$$
 $$(1.019)^{12}$$
 
 $$\\approx 1.253401$$
+
+$$3,000 \\times 1.253401$$
 
 $$FV \\approx 3,760.20$$
 
