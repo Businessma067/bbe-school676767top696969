@@ -4101,7 +4101,7 @@
         "The variance of X equals 0.49.",
         "The standard deviation of X equals \\$0.70.",
         "The probability that X equals 2 is greater than the probability that X equals 1.",
-        "If every price increased by $1 (to $2, $3, $4), the variance of X would still equal 0.49."
+        "If every price increased by \\$1 (to \\$2, \\$3, \\$4), the variance of X would still equal 0.49."
       ],
       "answer_key": [
         true,
@@ -4115,7 +4115,7 @@
         "**B.** → True\n\nThis statement concerns the variance of the random variable $X$. The variance, $\\mathrm{Var}(X)$, quantifies the spread of a probability distribution around its expected value. It is calculated using the formula $\\mathrm{Var}(X) = E[X^2] - (E[X])^2$. In the overview, we first calculated $E[X^2]$ and $E[X]$.\n$$E[X^2] = 4.90$$\n$$E[X] = 2.10$$\nSubstituting these values into the variance formula:\n$$\\mathrm{Var}(X) = 4.90 - (2.10)^2$$\n$$\\mathrm{Var}(X) = 4.90 - 4.41$$\n$$\\mathrm{Var}(X) = 0.49$$\nThus, the variance of $X$ is $0.49$. The claim states that the variance of $X$ equals $0.49$.\n\nSo the statement is True.",
         "**C.** → True\n\nThis statement is about the standard deviation of $X$. The standard deviation, $\\mathrm{SD}(X)$, is another measure of the spread of a distribution and is defined as the square root of the variance. We use the variance calculated in the overview.\n$$\\mathrm{Var}(X) = 0.49$$\nNow, applying the standard deviation formula:\n$$\\mathrm{SD}(X) = \\sqrt{\\mathrm{Var}(X)}$$\n$$\\mathrm{SD}(X) = \\sqrt{0.49}$$\n$$\\mathrm{SD}(X) = 0.70$$\nTherefore, the standard deviation of $X$ is $0.70$ dollars. The claim states that the standard deviation of $X$ equals $0.70$.\n\nSo the statement is True.",
         "**D.** → True\n\nThis statement asks us to compare the probabilities of two specific outcomes for $X$. The context directly provides the probability values for each price point. We need to compare the probability that $X$ equals $2$ with the probability that $X$ equals $1$.\nFrom the given probability distribution:\n$$P(X=1) = 0.20$$\n$$P(X=2) = 0.50$$\nComparing these two probabilities:\n$$0.50 > 0.20$$\nThis shows that the probability that $X$ equals $2$ is indeed greater than the probability that $X$ equals $1$. The claim states this relationship.\n\nSo the statement is True.",
-        "**E.** → True\n\nThis statement describes a transformation of the random variable $X$ and asks about the variance of the new variable. If every price increased by $1$, the new random variable, let's call it $Y$, would be $Y = X + 1$. A fundamental property of variance is that adding a constant to a random variable does not change its variance; it only shifts the distribution. The general property is $\\mathrm{Var}(X+b) = \\mathrm{Var}(X)$ for any constant $b$. Here, the constant $b$ is $1$.\n$$\\mathrm{Var}(X+1) = \\mathrm{Var}(X)$$\nFrom the overview, we calculated the variance of $X$ to be $0.49$.\n$$\\mathrm{Var}(X) = 0.49$$\nTherefore, the variance of the new random variable $Y = X+1$ is also $0.49$. The claim states that the variance of $X$ would still equal $0.49$ if every price increased by $1$.\n\nSo the statement is True."
+        "**E.** → True\n\nThis statement describes a transformation of the random variable $X$ and asks about the variance of the new variable. If every price increased by $1$, the new random variable, let's call it $Y$, would be $Y = X + 1$. A fundamental property of variance is that adding a constant to a random variable does not change its variance; it only shifts the distribution. The general property is $\\mathrm{Var}(X+b) = \\mathrm{Var}(X)$ for any constant $b$. Here, the constant $b$ is $1$.\n$$\\mathrm{Var}(X+1) = \\mathrm{Var}(X)$$\nFrom the overview, we calculated the variance of $X$ to be \\$0.49$.\n$$\\mathrm{Var}(X) = 0.49$$\nTherefore, the variance of the new random variable $Y = X+1$ is also \\$0.49$. The claim states that the variance of $X$ would still equal \\$0.49$ if every price increased by $1$.\n\nSo the statement is True."
       ],
       "difficulty_level": "2/5",
       "sort_order": 131,
@@ -4619,7 +4619,7 @@
         "The variance of X equals 5,400.",
         "The standard deviation of X is approximately \\$73.48.",
         "The $0 outcome is less likely than the $50 outcome.",
-        "If every prize were reduced by $10 (to -$10, $40, and $240), the variance of X would still equal 5,400."
+        "If every prize were reduced by \\$10 (to -\\$10, \\$40, and \\$240), the variance of X would still equal 5,400."
       ],
       "answer_key": [
         false,
@@ -4633,7 +4633,7 @@
         "**B.** → True\n\nThe variance of a discrete random variable $X$ is computed as $E[X^2] - (E[X])^2$. We know $E[X] = 40$. We first calculate $E[X^2]$ using the derived probabilities $P(X=0) = 0.60$, $P(X=50) = 0.30$, and $P(X=250) = 0.10$.\n$$E[X^2] = (0^2 \\cdot 0.60) + (50^2 \\cdot 0.30) + (250^2 \\cdot 0.10)$$\n$$E[X^2] = 0 + (2500 \\cdot 0.30) + (62500 \\cdot 0.10)$$\n$$E[X^2] = 0 + 750 + 6250$$\n$$E[X^2] = 7000$$\nWith $E[X^2] = 7000$ and $E[X] = 40$, the variance is:\n$$\\mathrm{Var}(X) = 7000 - (40)^2$$\n$$\\mathrm{Var}(X) = 7000 - 1600$$\n$$\\mathrm{Var}(X) = 5400$$\nThis value matches the claim.\n\nSo the statement is True.",
         "**C.** → True\n\nThe standard deviation is the square root of the variance. Using the variance $\\mathrm{Var}(X) = 5400$ found in the overview:\n$$\\mathrm{SD}(X) = \\sqrt{5400}$$\n$$\\mathrm{SD}(X) \\approx 73.48469$$\nThis value rounds to $73.48$ dollars.\n\nSo the statement is True.",
         "**D.** → False\n\nThe likelihood of an outcome is given by its probability. We compare $P(X=0)$ with $P(X=50)$. From the overview:\n$$P(X=0) = 0.60$$\n$$P(X=50) = 0.30$$\nSince $0.60 > 0.30$, the $0$ dollar outcome is more likely than the $50$ dollars outcome. The claim states it is less likely.\n\nSo the statement is False.",
-        "**E.** → True\n\nIf every prize is reduced by $10, the new random variable $Y$ relates to $X$ as $Y = X - 10$. The variance of a random variable is unchanged by an additive constant shift. That is, for any constant $b$, $\\mathrm{Var}(X+b) = \\mathrm{Var}(X)\\$.\n$$\\mathrm{Var}(Y) = \\mathrm{Var}(X - 10)$$\n$$\\mathrm{Var}(Y) = \\mathrm{Var}(X)$$\nUsing $\\mathrm{Var}(X) = 5400$ from part B:\n$$\\mathrm{Var}(Y) = 5400$$\nThe variance remains $5400$.\n\nSo the statement is True."
+        "**E.** → True\n\nIf every prize is reduced by \\$10, the new random variable $Y$ relates to $X$ as $Y = X - 10$. The variance of a random variable is unchanged by an additive constant shift. That is, for any constant $b$, $\\mathrm{Var}(X+b) = \\mathrm{Var}(X)$..\n$$\\mathrm{Var}(Y) = \\mathrm{Var}(X - 10)$$\n$$\\mathrm{Var}(Y) = \\mathrm{Var}(X)$$\nUsing $\\mathrm{Var}(X) = 5400$ from part B:\n$$\\mathrm{Var}(Y) = 5400$$\nThe variance remains \\$5400$.\n\nSo the statement is True."
       ],
       "difficulty_level": "4/5",
       "sort_order": 147,

@@ -704,9 +704,7 @@ $$N(x)=\\frac{1}{\\sqrt{x}}$$
 
 At $x=0$ the denominator is
 
-$$\\sqrt{0}=0$$
-
-, and division by zero is undefined. The transform has no value at
+$$\\sqrt{0}=0$$, and division by zero is undefined. The transform has no value at
 
 $$x=0$$.
 
@@ -923,9 +921,7 @@ Keep the stated domain in force while you evaluate the model.
 
 Halving the radius is the width multiplier
 
-$$k=0.5$$
-
-, and the exponent $2$ acts on that whole factor:
+$$k=0.5$$, and the exponent $2$ acts on that whole factor:
 
 $$\\frac{y(0.5r)}{y(r)}=0.5^{2}$$
 
@@ -1033,9 +1029,7 @@ Keep the stated domain in force while you evaluate the model.
 
 A ten percent overspeed is the speed multiplier
 
-$$k=1.1$$
-
-, and the exponent acts on the whole multiplier:
+$$k=1.1$$, and the exponent acts on the whole multiplier:
 
 $$\\frac{E(1.1v)}{E(v)}=1.1^{2}$$
 
@@ -1208,7 +1202,7 @@ A nonzero power inverts to another power. From
 
 $$W=48 n^{-\\frac{1}{2}}$$
 
-,
+we recover
 
 $$n=\\left(\\frac{48}{W}\\right)^{2}$$
 
@@ -1399,9 +1393,7 @@ The recovered flows are $Q_{L}(d)=4d^{\\frac{1}{2}}$ and $Q_{O}(d)=\\frac{1}{2}d
 
 The overview recovered $F=50$ and
 
-$$A=50$$
-
-, so
+$$A=50$$, so
 
 $$C(n)=50+50\\sqrt{n}$$
 
@@ -1637,9 +1629,7 @@ So the statement is False.`,
 
 The overview recovered
 
-$$L(x)=\\frac{1}{2}x^{2}$$
-
-, so load per job is
+$$L(x)=\\frac{1}{2}x^{2}$$, so load per job is
 
 $$\\frac{L(x)}{x}=\\frac{1}{2}x$$
 
@@ -1753,9 +1743,7 @@ So the statement is False.`,
 
 The overview recovered
 
-$$Q(x)=12x^{\\frac{1}{2}}$$
-
-, so responses per unit of intensity are
+$$Q(x)=12x^{\\frac{1}{2}}$$, so responses per unit of intensity are
 
 $$\\frac{Q(x)}{x}=12 x^{-\\frac{1}{2}}$$
 
@@ -1835,9 +1823,7 @@ $$C(n)-D(n)=n(n-16)$$
 
 On $n>0$ the roots are
 
-$$n=0$$
-
-, outside the domain, and
+$$n=0$$, outside the domain, and
 
 $$n=16$$
 
@@ -1863,9 +1849,7 @@ Start from the calibrated closed form, then evaluate at the claimed point.
 
 The overview recovered
 
-$$C(n)=n^{2}$$
-
-, so cost per document is
+$$C(n)=n^{2}$$, so cost per document is
 
 $$\\frac{C(n)}{n}=n$$
 
@@ -2064,7 +2048,7 @@ A nonzero power inverts to another power. From
 
 $$W=216 k^{-\\frac{3}{2}}$$
 
-,
+we recover
 
 $$k=\\left(\\frac{216}{W}\\right)^{\\frac{2}{3}}$$
 
@@ -3766,9 +3750,7 @@ Start from the calibrated closed form recovered in the overview, then substitute
 
 The overview recovered
 
-$$g(f(x))=x$$
-
-, the identity power $x^{1}$. That grows at the same rate as the raw reading, not more slowly.
+$$g(f(x))=x$$, the identity power $x^{1}$. That grows at the same rate as the raw reading, not more slowly.
 
 So the statement is False.`,
     `**C.** → False
@@ -4916,9 +4898,7 @@ Start from the calibrated closed form in the overview.
 
 Throughput per cubic metre is the average $T/g$. The overview recovered
 
-$$T(g)=4 g^{\\frac{2}{3}}$$
-
-, so
+$$T(g)=4 g^{\\frac{2}{3}}$$, so
 
 $$\\frac{T(g)}{g}=4 g^{-\\frac{1}{3}}$$
 
@@ -5504,9 +5484,7 @@ Start from the calibrated closed form in the overview.
 
 A nonzero power inverts to another power. The overview recovered
 
-$$I(d)=800 d^{-2}$$
-
-, so isolating distance gives
+$$I(d)=800 d^{-2}$$, so isolating distance gives
 
 $$d=\\sqrt{800}\\, I^{-\\frac{1}{2}}$$
 
@@ -5695,9 +5673,7 @@ $$-\\frac{3}{2}<-1$$
 
 The doubling factor is then
 
-$$2^{-\\frac{3}{2}}=\\frac{1}{2\\sqrt{2}}\\approx 0.354$$
-
-, steeper than $\\frac{1}{2}$. Concentration falls faster than inverse-linear decay.
+$$2^{-\\frac{3}{2}}=\\frac{1}{2\\sqrt{2}}\\approx 0.354$$, steeper than $\\frac{1}{2}$. Concentration falls faster than inverse-linear decay.
 
 The computed figure agrees with the claim.
 
@@ -5708,9 +5684,7 @@ Form the ratio so the unknown positive coefficient cancels.
 
 Concentration per metre is the intensity $c(x)/x$. The overview recovered
 
-$$c(x)=400 x^{-\\frac{3}{2}}$$
-
-, so
+$$c(x)=400 x^{-\\frac{3}{2}}$$, so
 
 $$\\frac{c(x)}{x}=400 x^{-\\frac{5}{2}}$$
 
@@ -5742,9 +5716,7 @@ Start from the calibrated closed form in the overview.
 
 A nonzero power inverts to another power. The overview recovered
 
-$$c=400 x^{-\\frac{3}{2}}$$
-
-, so isolating distance raises both sides to the reciprocal $-\\frac{2}{3}$:
+$$c=400 x^{-\\frac{3}{2}}$$, so isolating distance raises both sides to the reciprocal $-\\frac{2}{3}$:
 
 $$x=\\left(\\frac{400}{c}\\right)^{\\frac{2}{3}}$$
 
@@ -6031,9 +6003,7 @@ Name the recovered power rule, then substitute the claimed input.
 
 A nonzero power inverts to another power. The overview recovered
 
-$$E=10 m^{\\frac{2}{3}}$$
-
-, so isolating mass gives
+$$E=10 m^{\\frac{2}{3}}$$, so isolating mass gives
 
 $$m=\\left(\\frac{E}{10}\\right)^{\\frac{3}{2}}$$
 
@@ -6048,9 +6018,7 @@ Form the ratio so the unknown positive coefficient cancels.
 
 Energy use per kilogram is the average $E/m$. The overview recovered
 
-$$E(m)=10 m^{\\frac{2}{3}}$$
-
-, so
+$$E(m)=10 m^{\\frac{2}{3}}$$, so
 
 $$\\frac{E(m)}{m}=10 m^{-\\frac{1}{3}}$$
 
@@ -6205,9 +6173,7 @@ Keep the stated domain in force while you evaluate the model.
 
 An extra kilometre is the size of the derivative. The overview recovered
 
-$$f(d)=3200 d^{-1.5}$$
-
-, so
+$$f(d)=3200 d^{-1.5}$$, so
 
 $$f'(d)=-4800 d^{-2.5}$$
 
@@ -6289,9 +6255,7 @@ Read the exponent from the overview before comparing growth rates.
 
 Output per square metre is the average $y/a$. The overview recovered
 
-$$y(a)=24 a^{\\frac{1}{2}}$$
-
-, so
+$$y(a)=24 a^{\\frac{1}{2}}$$, so
 
 $$\\frac{y(a)}{a}=24 a^{-\\frac{1}{2}}$$
 
@@ -6432,9 +6396,7 @@ $$S=N\\,c(N)$$
 
 The overview recovered
 
-$$S(N)=800 N^{\\frac{1}{2}}$$
-
-, so quadrupling volume multiplies spend by
+$$S(N)=800 N^{\\frac{1}{2}}$$, so quadrupling volume multiplies spend by
 
 $$\\frac{S(4N)}{S(N)}=4^{\\frac{1}{2}}$$
 
@@ -6554,9 +6516,7 @@ Start from the calibrated closed form in the overview.
 
 Doubling the flow velocity is the multiplier $k=2$ on the outer cube. The overview recovered
 
-$$S(v)=5 v^{3}$$
-
-, so
+$$S(v)=5 v^{3}$$, so
 
 $$\\frac{S(2v)}{S(v)}=2^{3}$$
 
@@ -7736,9 +7696,7 @@ $$q=5$$
 
 The overview recovered
 
-$$v(q)=4\\sqrt{2}\\, q$$
-
-, so
+$$v(q)=4\\sqrt{2}\\, q$$, so
 
 $$v(5)=20\\sqrt{2}\\approx 28.28$$
 
@@ -7860,9 +7818,7 @@ $$s=36$$
 
 The overview recovered
 
-$$T(s)=20\\sqrt{s}$$
-
-, so
+$$T(s)=20\\sqrt{s}$$, so
 
 $$T(36)=20\\cdot 6$$
 
@@ -7972,9 +7928,7 @@ $$p=16$$
 
 The overview recovered
 
-$$R(p)=2000p^{-\\frac{1}{2}}$$
-
-, so
+$$R(p)=2000p^{-\\frac{1}{2}}$$, so
 
 $$R(16)=\\frac{2000}{4}$$
 
@@ -8019,9 +7973,7 @@ $$p=9$$
 
 The overview recovered
 
-$$R(p)=2000p^{-\\frac{1}{2}}$$
-
-, so
+$$R(p)=2000p^{-\\frac{1}{2}}$$, so
 
 $$R(9)=\\frac{2000}{3}\\approx 666.67$$
 
@@ -8096,9 +8048,7 @@ $$n=900$$
 
 The overview recovered
 
-$$C(n)=400+30n^{\\frac{1}{2}}$$
-
-, so
+$$C(n)=400+30n^{\\frac{1}{2}}$$, so
 
 $$C(900)=400+30\\cdot 30$$
 
@@ -8143,9 +8093,7 @@ $$n=36$$
 
 The overview recovered
 
-$$C(n)=400+30n^{\\frac{1}{2}}$$
-
-, so
+$$C(n)=400+30n^{\\frac{1}{2}}$$, so
 
 $$C(36)=400+30\\cdot 6$$
 
@@ -8234,9 +8182,7 @@ $$q=60$$
 
 The overview recovered
 
-$$T(q)=\\frac{4800}{q}+3q$$
-
-, so
+$$T(q)=\\frac{4800}{q}+3q$$, so
 
 $$T(60)=80+180$$
 
@@ -8466,9 +8412,7 @@ Form the ratio so the unknown positive coefficient cancels.
 
 This is a level after $900$ cumulative units. The overview recovered
 
-$$t(n)=8+50n^{-\\frac{1}{2}}$$
-
-, so
+$$t(n)=8+50n^{-\\frac{1}{2}}$$, so
 
 $$t(900)=8+\\frac{50}{30}$$
 
@@ -9295,9 +9239,7 @@ $$-3\\neq -1$$
 
 The recovered law is
 
-$$S(x)=400x^{-3}$$
-
-, a reciprocal cube, not a reciprocal.
+$$S(x)=400x^{-3}$$, a reciprocal cube, not a reciprocal.
 
 The exponent is $-3$.
 
@@ -9327,9 +9269,7 @@ Read the exponent from the overview before comparing growth rates.
 
 A nonzero power inverts to another power. The overview recovered
 
-$$S=400x^{-3}$$
-
-, so isolating depth raises both sides to the reciprocal $-\\frac{1}{3}$ and leaves
+$$S=400x^{-3}$$, so isolating depth raises both sides to the reciprocal $-\\frac{1}{3}$ and leaves
 
 $$x=400^{\\frac{1}{3}}S^{-\\frac{1}{3}}$$
 
@@ -9589,9 +9529,7 @@ $$\\frac{Q(r)}{\\pi r^{2}}=\\frac{A}{\\pi}r^{k-2}$$
 
 The overview recovered $A=3$ and
 
-$$k=4$$
-
-, so the index is $\\frac{3}{\\pi}r^{2}$. The leftover exponent $2$ is not zero, so the index still depends on the tube.
+$$k=4$$, so the index is $\\frac{3}{\\pi}r^{2}$. The leftover exponent $2$ is not zero, so the index still depends on the tube.
 
 The velocity index is not the same in every tube.
 
@@ -9727,9 +9665,7 @@ Read the exponent from the overview before comparing growth rates.
 
 A nonzero power inverts to another power. The overview recovered
 
-$$H=720d^{-2}$$
-
-, so isolating distance leaves
+$$H=720d^{-2}$$, so isolating distance leaves
 
 $$d=720^{\\frac{1}{2}}H^{-\\frac{1}{2}}$$
 
@@ -9937,9 +9873,7 @@ Name the recovered power rule, then substitute the claimed input.
 
 A nonzero power inverts to another power. The overview recovered
 
-$$Q=16h^{\\frac{3}{2}}$$
-
-, so isolating head raises both sides to the reciprocal $\\frac{2}{3}$ and leaves
+$$Q=16h^{\\frac{3}{2}}$$, so isolating head raises both sides to the reciprocal $\\frac{2}{3}$ and leaves
 
 $$h=\\left(\\frac{Q}{16}\\right)^{\\frac{2}{3}}$$
 
@@ -10575,9 +10509,7 @@ Read the exponent from the overview before comparing growth rates.
 
 Upkeep overtakes benefit when
 
-$$12n^{\\frac{1}{2}}=2n$$
-
-, so
+$$12n^{\\frac{1}{2}}=2n$$, so
 
 $$n=36$$
 
@@ -10587,9 +10519,7 @@ $$N'(n)=6n^{-\\frac{1}{2}}-2$$
 
 which is negative for every $n>9$. Past the crossing at
 
-$$n=36$$
-
-, the net is already negative and still falling, so planting more trees cannot restore a positive net.
+$$n=36$$, the net is already negative and still falling, so planting more trees cannot restore a positive net.
 
 The net stays negative after upkeep overtakes benefit.
 
@@ -10683,9 +10613,7 @@ Name the recovered power rule, then substitute the claimed input.
 
 A nonzero power inverts to another power. The overview recovered
 
-$$q=2000p^{-2}$$
-
-, so isolating price leaves
+$$q=2000p^{-2}$$, so isolating price leaves
 
 $$p=2000^{\\frac{1}{2}}q^{-\\frac{1}{2}}$$
 
@@ -10953,9 +10881,7 @@ So the statement is True.`,
 
 The overview recovered $a=1>b=\\frac{1}{4}$ and the equal-marginal split
 
-$$q_{2}=4q_{1}$$
-
-, hence $q_{2}=24$ and
+$$q_{2}=4q_{1}$$, hence $q_{2}=24$ and
 
 $$q_{1}=6$$
 
@@ -11045,13 +10971,9 @@ Name the recovered power rule, then substitute the claimed input.
 
 For a power
 
-$$q=Ap^{r}$$
+$$q=Ap^{r}$$, point elasticity equals the exponent at every price. The overview recovered
 
-, point elasticity equals the exponent at every price. The overview recovered
-
-$$r=-2$$
-
-, so
+$$r=-2$$, so
 
 $$\\varepsilon=-2$$
 

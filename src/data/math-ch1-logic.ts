@@ -2080,9 +2080,7 @@ So the statement is True.`,
 
 Intersection keeps only numbers that sit in both lists. The overview listed 
 
-$$A\\cap B=\\{4,5\\}$$
-
-. The claimed $\\{4,5,6\\}$ pads the overlap with $6$, and $6$ sits in $B$ but misses $A$. The lists do not match.
+$$A\\cap B=\\{4,5\\}$$. The claimed $\\{4,5,6\\}$ pads the overlap with $6$, and $6$ sits in $B$ but misses $A$. The lists do not match.
 
 That conflicts with the claim.
 
@@ -2288,9 +2286,7 @@ $$A\\cap B=\\{3,4\\}$$
 
  and 
 
-$$A\\triangle B=\\{1,2,5,6\\}$$
-
-, which share nothing. Already $3\\in A\\cap B$ and $3\\notin A\\triangle B$, so $A\\cap B\\nsubseteq A\\triangle B$.
+$$A\\triangle B=\\{1,2,5,6\\}$$, which share nothing. Already $3\\in A\\cap B$ and $3\\notin A\\triangle B$, so $A\\cap B\\nsubseteq A\\triangle B$.
 
 So the statement is False.`,
       `**D.** → True
@@ -2462,9 +2458,7 @@ So the statement is False.`,
 
 Frost-safe yet dry is the leftover 
 
-$$A\\setminus B=(-4,-1)$$
-
-. At 
+$$A\\setminus B=(-4,-1)$$. At 
 
 $$T=-2$$
 
@@ -2682,13 +2676,9 @@ So the statement is True.`,
 
 The opposite leftover is 
 
-$$B\\setminus A=\\{60\\}$$
+$$B\\setminus A=\\{60\\}$$, while 
 
-, while 
-
-$$A\\setminus B=\\{10,20\\}$$
-
-. The sizes already disagree ($1$ versus $2$), and $10$ sits in the first leftover but not the second. Difference is not commutative.
+$$A\\setminus B=\\{10,20\\}$$. The sizes already disagree ($1$ versus $2$), and $10$ sits in the first leftover but not the second. Difference is not commutative.
 
 That conflicts with the claim.
 
@@ -2765,13 +2755,9 @@ So the statement is True.`,
 
 The opposite leftover is the singleton 
 
-$$B\\setminus A=\\{e\\}$$
+$$B\\setminus A=\\{e\\}$$, while 
 
-, while 
-
-$$A\\setminus B=\\{a,b\\}$$
-
-. Different sizes already forbid equality, and $a$ sits in one leftover but not the other. Difference is not commutative.
+$$A\\setminus B=\\{a,b\\}$$. Different sizes already forbid equality, and $a$ sits in one leftover but not the other. Difference is not commutative.
 
 That conflicts with the claim.
 
@@ -2920,13 +2906,9 @@ The two sides agree.
 So the statement is True.`,
       `**C.** → True
 
-$$A\\cap B=\\emptyset$$
+$$A\\cap B=\\emptyset$$, so 
 
-, so 
-
-$$(A\\cap B)^c=U$$
-
-. The other side $A^c\\cup B^c$ is evens joined with odds, again $U$. Complementing the empty set relative to $U$ restores $U$ in full.
+$$(A\\cap B)^c=U$$. The other side $A^c\\cup B^c$ is evens joined with odds, again $U$. Complementing the empty set relative to $U$ restores $U$ in full.
 
 That matches the claim.
 
@@ -2996,9 +2978,7 @@ $$A^c=\\{s,t,u\\}$$
 
  and 
 
-$$B^c=\\{p,q,t,u\\}$$
-
-. Their intersection is $\\{t,u\\}$, matching $(A\\cup B)^c$. Letter $s$ fails the intersection because $s\\in B$. De Morgan's first law is that agreement.
+$$B^c=\\{p,q,t,u\\}$$. Their intersection is $\\{t,u\\}$, matching $(A\\cup B)^c$. Letter $s$ fails the intersection because $s\\in B$. De Morgan's first law is that agreement.
 
 That matches the claim.
 
@@ -3054,9 +3034,7 @@ $$A\\cup B=\\{p,q,r,s\\},\\qquad A\\cap B=\\{r\\},\\qquad A^c=\\{s,t,u\\},\\qqua
 
 The overview already counted 
 
-$$\\lvert A\\times B\\rvert=2\\cdot 3=6$$
-
-. Product size is the number of cells, not the number of distinct symbols used. Two rows and three columns are six ordered pairs.
+$$\\lvert A\\times B\\rvert=2\\cdot 3=6$$. Product size is the number of cells, not the number of distinct symbols used. Two rows and three columns are six ordered pairs.
 
 That matches the claim.
 
@@ -3350,9 +3328,7 @@ Disjointness makes the subtractions do nothing: there is no shared member to del
 
 Adding $22+15$ counts the six two-game players twice. Subtracting once restores a single copy. From the shared solve, 
 
-$$\\lvert A\\cup B\\rvert=31$$
-
-. The claim is that same figure.
+$$\\lvert A\\cup B\\rvert=31$$. The claim is that same figure.
 
 That matches the claim.
 
@@ -8548,7 +8524,7 @@ The negation is $\\exists t\\,(P(t) \\land \\neg Q(t))$. The converse is $Q \\Ri
       `The correctly formed negation of the theorem is: "A number is a perfect square and it has an even number of divisors."`,
       `36 is a perfect square with divisors $\\{1,2,3,4,6,9,12,18,36\\}$ - 9 divisors (odd), which is consistent with the theorem and not a counterexample to it.`,
       `The converse, "If a number has an odd number of divisors, then it is a perfect square," is also a true statement, so both directions of the implication hold here.`,
-      `Since 20 is not a perfect square and has divisors $\\{1,2,4,5,10,20\\} (6$ divisors, even), 20 is a valid counterexample disproving the original theorem.`,
+      `Since 20 is not a perfect square and has divisors $\\{1,2,4,5,10,20\\}$ (6 divisors, even), 20 is a valid counterexample disproving the original theorem.`,
       `The inverse, "If a number is not a perfect square, it has an even number of divisors," is also true in this case, since the converse is true.`,
     ],
     answer_key: [true, true, true, false, true],
