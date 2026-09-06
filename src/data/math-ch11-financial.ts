@@ -8426,9 +8426,19 @@ $$`,
     tactical_explanations: [
       `**A.** → True
 
-At an interior optimum the derivative of the objective must vanish. Check the overview's first-order condition against the claimed stationarity figure.
+At an interior optimum the derivative of the objective must vanish. The first-order stationarity condition is
 
-The overview showed that $P'(t^{*})=rP(t^{*})$ has no solution for $t^{*}>0$, and that $f$ is maximized at $t^{*}=0$. The claim is that same conclusion.
+$$
+P'(t^{*})=rP(t^{*})
+$$
+
+The overview showed that this equation has no solution for $t^{*}>0$, and that $f$ is maximized at the boundary
+
+$$
+t^{*}=0
+$$
+
+The claim is that same conclusion.
 
 So the statement is True.`,
       `**B.** → True
