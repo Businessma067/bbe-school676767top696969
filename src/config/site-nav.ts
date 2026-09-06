@@ -102,7 +102,7 @@ const mockBuilderItem: NavItem = {
 };
 
 const gamesItem: NavItem = {
-  label: "Games",
+  label: "Study tools",
   href: "/dashboard",
   isRoute: true,
   search: { tab: "games" },
