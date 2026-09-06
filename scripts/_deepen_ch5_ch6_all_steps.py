@@ -342,13 +342,106 @@ def split_eq_chain(body: str):
     return [f"{parts[i]} = {parts[i+1]}" for i in range(len(parts) - 1)]
 
 
+
+
+
+def expand_Rightarrow_pack(body: str):
+    s = norm(body)
+    if r"\Rightarrow" not in s and r"\implies" not in s:
+        return None
+    parts = [p.strip() for p in re.split(r"\\(?:Rightarrow|implies)", s) if p.strip()]
+    if len(parts) < 2:
+        return None
+    out = []
+    for p in parts:
+        sub = split_eq_chain(p)
+        if sub:
+            out.extend(sub)
+        else:
+            out.append(p)
+    return out if len(out) >= 2 else None
+
+
+def expand_eval_compare_chain(body: str):
+    s = norm(body)
+    m = re.search(r"^(.*?)((?:\\le|\\ge|\\leq|\\geq|<|>|≤|≥)\s*.+)$", s)
+    if not m:
+        return None
+    head, comp = m.group(1).strip().rstrip("=").strip(), m.group(2).strip()
+    if head.count("=") < 1:
+        return None
+    parts = []
+    depth = 0
+    buf = []
+    for ch in head:
+        if ch == "{":
+            depth += 1
+            buf.append(ch)
+        elif ch == "}":
+            depth = max(0, depth - 1)
+            buf.append(ch)
+        elif ch == "=" and depth == 0:
+            parts.append("".join(buf).strip())
+            buf = []
+        else:
+            buf.append(ch)
+    parts.append("".join(buf).strip())
+    parts = [p for p in parts if p]
+    if len(parts) < 2:
+        return None
+    name = parts[0]
+    expr = None
+    for p in parts[1:]:
+        if r"\cdot" in p or r"\times" in p:
+            expr = p
+            break
+    if expr is None:
+        out = [f"{parts[i]} = {parts[i+1]}" for i in range(len(parts) - 1)]
+        out.append(f"{parts[-1]}{comp}")
+        return out
+    mm = re.match(
+        r"^([-\d.]+)\s*([+\-])\s*([-\d.]+)\\cdot\s*([-\d.]+)$",
+        expr.replace(" ", ""),
+    )
+    if not mm:
+        out = [f"{parts[i]} = {parts[i+1]}" for i in range(len(parts) - 1)]
+        out.append(f"{parts[-1]}{comp}")
+        return out
+    a, op, b, c = mm.groups()
+    try:
+        prod = sp.N(sp.sympify(b) * sp.sympify(c))
+        total = (
+            sp.N(sp.sympify(a) + prod) if op == "+" else sp.N(sp.sympify(a) - prod)
+        )
+    except Exception:
+        return None
+    return [
+        f"{b}\\cdot {c} = {nice_num(prod)}",
+        (
+            f"{a} + {nice_num(prod)} = {nice_num(total)}"
+            if op == "+"
+            else f"{a} - {nice_num(prod)} = {nice_num(total)}"
+        ),
+        f"{name} = {nice_num(total)}",
+        f"{nice_num(total)}{comp}",
+    ]
+
+
+
 def deepen_body(body: str):
-    for fn in (unpack_delta, unpack_cramer_frac, unpack_prod_sum_chain, unpack_juxt_sum, split_eq_chain):
+    for fn in (
+        unpack_delta,
+        unpack_cramer_frac,
+        unpack_prod_sum_chain,
+        unpack_juxt_sum,
+        expand_Rightarrow_pack,
+        expand_eval_compare_chain,
+        split_eq_chain,
+    ):
         r = fn(body)
         if r:
             return r
     return None
-
 
 def deepen_arithmetic(expl: str) -> str:
     parts = tokenize(expl)
