@@ -30,6 +30,8 @@ def load_bodies() -> dict[str, dict]:
         path = ROOT / "scripts" / f"{mod_name}.py"
         if not path.exists():
             raise SystemExit(f"missing {path}")
+        if mod_name in sys.modules:
+            del sys.modules[mod_name]
         mod = importlib.import_module(mod_name)
         chunk = getattr(mod, attr)
         overlap = set(bodies) & set(chunk)
