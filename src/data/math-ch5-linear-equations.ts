@@ -3331,7 +3331,13 @@ $$
 x = 38
 $$
 
-The claim names a different figure, so the displays do not agree.
+The claim asserts
+
+$$
+x=30
+$$
+
+Those two displays do not agree.
 
 So the statement is False.`,
       `**B.** → True
@@ -3389,7 +3395,11 @@ $$12 \\times 41$$
 
 $$= 492$$
 
-The claim is \\$492.
+The claim asserts
+
+$$492$$
+
+.
 
 So the statement is True.`,
     ],
@@ -3784,7 +3794,9 @@ $$33 + 0.21u = 0.29u$$
 
 $$33 = 0.08u$$
 
-$$\\Rightarrow u$$
+$$\$$
+
+$$\Rightarrow u$$
 
 $$
 = 412.5
@@ -3920,7 +3932,11 @@ $$174 \\times 1.10$$
 
 $$= 191.40$$
 
-The claim is \\$191.40.
+The claim asserts
+
+$$191.40$$
+
+.
 
 So the statement is True.`,
       `**E.** → True
@@ -4058,7 +4074,11 @@ $$150 \\times 27$$
 
 $$= 4050$$
 
-The claim is \\$4,050.
+The claim asserts
+
+$$4050$$
+
+.
 
 So the statement is True.`,
       `**E.** → False
@@ -4465,15 +4485,23 @@ Read the recovered pair, then run the arithmetic the claim asks for.
 
 Week 3 has 15 Widget B and 290 labor-hours. With the recovered times $x = 7$ and $y = 10$:
 
-$$7A + 10(15) = 290$$
+$$7A + 10(15)$$
 
-$$7A + 150 = 290$$
+$$= 290$$
 
-$$\\Rightarrow 7A$$
+$$7A + 150$$
+
+$$= 290$$
+
+$$\$$
+
+$$\Rightarrow 7A$$
 
 $$= 140$$
 
-$$\\Rightarrow A$$
+$$\$$
+
+$$\Rightarrow A$$
 
 $$
 = 20.
@@ -4589,9 +4617,9 @@ So the statement is False.`,
 
 Reprice the reported basket at the recovered unit costs from the overview, then compare that corrected total with the claim.
 
-Read the figure already produced by the shared solve, then compare it with the claim.
+The claim asserts
 
-The overview priced East at \\$3,085. The claim is that corrected total.
+$$3085$$
 
 So the statement is True.`,
       `**E.** → False
