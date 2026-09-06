@@ -2173,7 +2173,7 @@
       "id": "math-9-66",
       "case_id": "MATH 9.66",
       "title": "Cubic Meets a Line: Count the Crossings",
-      "context": "Let $p(x)=x \\left(x^{2} - 4\\right)$ and $\\\\ell(x)=x$. Evaluate each statement. Mark it TRUE or FALSE.",
+      "context": "Let $p(x)=x \\left(x^{2} - 4\\right)$ and $\\ell(x)=x$. Evaluate each statement. Mark it TRUE or FALSE.",
       "statements": [
         "The graphs meet at least twice on the real line.",
         "$p-\\ell$ is a cubic polynomial.",
@@ -2506,7 +2506,7 @@
       "id": "math-9-76",
       "case_id": "MATH 9.76",
       "title": "Odd Cubic Against a Parabola",
-      "context": "Let $p(x)=x^{3} - x$ and $\\\\ell(x)=x^{2} - 1$. Evaluate each statement. Mark it TRUE or FALSE.",
+      "context": "Let $p(x)=x^{3} - x$ and $\\ell(x)=x^{2} - 1$. Evaluate each statement. Mark it TRUE or FALSE.",
       "statements": [
         "The graphs meet at least twice on the real line.",
         "$p-\\ell$ is a cubic polynomial.",
@@ -2872,7 +2872,7 @@
       "id": "math-9-87",
       "case_id": "MATH 9.87",
       "title": "Quartic Minus a Parabola",
-      "context": "Let $p(x)=x^{4} - 5 x^{2} + 4$ and $\\\\ell(x)=x^{2} - 1$. Evaluate each statement. Mark it TRUE or FALSE.",
+      "context": "Let $p(x)=x^{4} - 5 x^{2} + 4$ and $\\ell(x)=x^{2} - 1$. Evaluate each statement. Mark it TRUE or FALSE.",
       "statements": [
         "The graphs meet at least twice on the real line.",
         "$p-\\ell$ is a cubic polynomial.",
@@ -3442,7 +3442,7 @@
       "id": "math-9-104",
       "case_id": "MATH 9.104",
       "title": "Quartic Meets a Parabola Four Times",
-      "context": "Let $p(x)=x^{4} - 6 x^{2} + 5$ and $\\\\ell(x)=x^{2} - 1$. Evaluate each statement. Mark it TRUE or FALSE.",
+      "context": "Let $p(x)=x^{4} - 6 x^{2} + 5$ and $\\ell(x)=x^{2} - 1$. Evaluate each statement. Mark it TRUE or FALSE.",
       "statements": [
         "The graphs meet at least twice on the real line.",
         "$p-\\ell$ is a cubic polynomial.",
@@ -3475,7 +3475,7 @@
       "id": "math-9-105",
       "case_id": "MATH 9.105",
       "title": "Cubic Meets a Parabola: Count Carefully",
-      "context": "Let $p(x)=x \\left(x^{2} - 6\\right)$ and $\\\\ell(x)=x^{2} - 4$. Evaluate each statement. Mark it TRUE or FALSE.",
+      "context": "Let $p(x)=x \\left(x^{2} - 6\\right)$ and $\\ell(x)=x^{2} - 4$. Evaluate each statement. Mark it TRUE or FALSE.",
       "statements": [
         "The graphs meet at least twice on the real line.",
         "$p-\\ell$ is a cubic polynomial.",
@@ -3508,7 +3508,7 @@
       "id": "math-9-106",
       "case_id": "MATH 9.106",
       "title": "Cubic Minus a Line: Three Meetings?",
-      "context": "Let $p(x)=x \\left(x^{2} - 3\\right)$ and $\\\\ell(x)=x + 1$. Evaluate each statement. Mark it TRUE or FALSE.",
+      "context": "Let $p(x)=x \\left(x^{2} - 3\\right)$ and $\\ell(x)=x + 1$. Evaluate each statement. Mark it TRUE or FALSE.",
       "statements": [
         "The graphs meet at least twice on the real line.",
         "$p-\\ell$ is a cubic polynomial.",
@@ -3541,7 +3541,7 @@
       "id": "math-9-107",
       "case_id": "MATH 9.107",
       "title": "Biquadratic Minus a Line",
-      "context": "Let $p(x)=x^{2} \\left(x^{2} - 4\\right)$ and $\\\\ell(x)=x$. Evaluate each statement. Mark it TRUE or FALSE.",
+      "context": "Let $p(x)=x^{2} \\left(x^{2} - 4\\right)$ and $\\ell(x)=x$. Evaluate each statement. Mark it TRUE or FALSE.",
       "statements": [
         "The graphs meet at least twice on the real line.",
         "$p-\\ell$ is a cubic polynomial.",

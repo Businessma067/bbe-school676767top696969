@@ -513,7 +513,7 @@
       "statements": [
         "$p(x)=(x-2)^{2}(x+1)$.",
         "$p'(2)=0$.",
-        "$p'(-1)\\\\neq 0$.",
+        "$p'(-1)\\neq 0$.",
         "The multiplicity-weighted root sum equals $3$, matching the Vieta coefficient of $x^{2}$.",
         "The rebuilt cubic has three distinct real zeros."
       ],
@@ -815,8 +815,8 @@
       "statements": [
         "For every real $k$, $h_{k}$ is an odd function of $x$.",
         "If $k=2$, then $h_{k}$ has exactly two distinct real zeros.",
-        "If $k=2$, then $h_{k}'(0)\\\\neq 0$.",
-        "If $k=2$, then as $x\\\\to+\\\\infty$, $h_{k}(x)\\\\to-\\\\infty$.",
+        "If $k=2$, then $h_{k}'(0)\\neq 0$.",
+        "If $k=2$, then as $x\\to+\\infty$, $h_{k}(x)\\to-\\infty$.",
         "If $k=2$, the $y$-intercept of $h_{k}$ equals $2$."
       ],
       "answer_key": [
@@ -984,7 +984,7 @@
         "$p(x)=x^{3}+x^{2}-x-1$ satisfies $p(-1)=2$.",
         "If a polynomial satisfies $p(n)=n^{3}+n$ at $n=0,1,2$ only, then $p$ is necessarily cubic.",
         "For $k=8$, the cubic $x^{3}+k$ has three distinct real roots.",
-        "If $p$ has degree $3$ and leading coefficient $-1$, then $p(x)\\\\to-\\\\infty$ as $x\\\\to-\\\\infty$."
+        "If $p$ has degree $3$ and leading coefficient $-1$, then $p(x)\\to-\\infty$ as $x\\to-\\infty$."
       ],
       "answer_key": [
         true,
