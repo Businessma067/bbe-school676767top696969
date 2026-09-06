@@ -19411,6 +19411,26 @@ So the statement is True.`,
 
 The overview recovered Option 2's cash flows $a_0=-50,000$ and $a_1=a_2=6,000$. Their undiscounted sum is
 
+Substitute the recovered stem inputs:
+
+$$a_0 = -50,000$$
+
+$$a_0 + \\frac{a_1}{1+r} + \\frac{a_2}{(1+r)^2} = 0$$
+
+$$r = \\frac{6,000}{50,000}$$
+
+$$r = 0.12$$
+
+$$r = 12\\%$$
+
+$$6,000 s^2 + 6,000 s - 50,000 = 0$$
+
+$$3s^2 + 3s - 25 = 0$$
+
+$$3^2 + 4 \\cdot 3 \\cdot 25$$
+
+$$= 309$$
+
 $$-50,000 + 6,000 + 6,000$$
 
 $$= -38,000$$
@@ -19421,6 +19441,24 @@ So the statement is False.`,
       `**E.** → True
 
 Removing Year 2 leaves a one-year project with outlay \\$50,000 and return \\$6,000. The one-year internal rate is
+
+Substitute the recovered stem inputs:
+
+$$a_0 = -50,000$$
+
+$$a_0 + \\frac{a_1}{1+r} + \\frac{a_2}{(1+r)^2} = 0$$
+
+$$r = 0.12$$
+
+$$r = 12\\%$$
+
+$$6,000 s^2 + 6,000 s - 50,000 = 0$$
+
+$$3s^2 + 3s - 25 = 0$$
+
+$$3^2 + 4 \\cdot 3 \\cdot 25$$
+
+$$= 309$$
 
 $$r = \\frac{6,000}{50,000} - 1$$
 
@@ -19562,6 +19600,28 @@ So the statement is True.`,
       `**C.** → True
 
 The internal-rate criterion ranks the designs by the recovered rates. The overview recovered $r_A \\approx 11.04\\%$ and $r_B = 16\\%$.
+
+Substitute the recovered stem inputs:
+
+$$a_0 = -120,000,$$
+
+$$a_1 = 54,000,$$
+
+$$a_2 = 88,000$$
+
+$$a_0 + \\frac{a_1}{1+r} + \\frac{a_2}{(1+r)^2} = 0$$
+
+$$88,000 s^2 + 54,000 s - 120,000 = 0$$
+
+$$44s^2 + 27s - 60 = 0$$
+
+$$27^2 + 4 \\cdot 44 \\cdot 60$$
+
+$$= 729 + 10,560$$
+
+$$27^2 + 4 \\cdot 44 \\cdot 60$$
+
+$$= 11,289$$
 
 $$16\\% > 11.04\\%$$
 
