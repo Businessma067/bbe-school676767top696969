@@ -11,7 +11,7 @@ const MAIN_TABS: { key: MainTab; label: string }[] = [
   { key: "course", label: "Course" },
   { key: "mock-exams", label: "Mock exams" },
   { key: "mock-builder", label: "Mock Builder" },
-  { key: "games", label: "Games" },
+  { key: "games", label: "Study tools" },
 ];
 
 const COURSE_SUBJECTS: {

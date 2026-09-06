@@ -183,7 +183,7 @@ function DashboardPage() {
             />
             <SideItem
               icon={<Layers className="h-4 w-4" />}
-              label="Games"
+              label="Study tools"
               active={tab === "games"}
               onClick={() => setTab("games")}
             />
@@ -244,7 +244,7 @@ function DashboardPage() {
               Custom
             </MobileTab>
             <MobileTab active={tab === "games"} onClick={() => setTab("games")}>
-              Games
+              Study tools
             </MobileTab>
           </div>
 
@@ -551,7 +551,7 @@ function GamesTab() {
   return (
     <div className="space-y-6">
       <div>
-        <h2 className="font-display text-xl font-bold tracking-tight">Games</h2>
+        <h2 className="font-display text-xl font-bold tracking-tight">Study tools</h2>
         <p className="mt-1 text-sm text-muted-foreground">
           Practice tools to reinforce Economics, Math, and English for the BBE exam.
         </p>
