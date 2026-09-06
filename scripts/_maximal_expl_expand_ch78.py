@@ -438,10 +438,18 @@ def split_qquad_comparisons(text: str) -> str:
 def dedupe_consecutive_displays(text: str) -> str:
     parts = tokenize(text)
     out: list[tuple[str, str]] = []
+    last_disp = None
     for kind, val in parts:
-        if kind == "disp" and out and out[-1][0] == "disp" and out[-1][1] == val:
-            continue
-        out.append((kind, val))
+        if kind == "disp":
+            if last_disp == val:
+                continue
+            last_disp = val
+            out.append((kind, val))
+        else:
+            # keep non-blank prose; blank between dupes can be dropped later
+            out.append((kind, val))
+            if val.strip():
+                last_disp = None
     return reassemble(out)
 
 

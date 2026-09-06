@@ -553,8 +553,6 @@ $$F(2)=2\\cdot 2^{2}$$
 
 $$F(2)=2\\cdot 4$$
 
-$$F(2)=2\\cdot 4$$
-
 $$F(2)=8$$
 
 $$G(2)=2^{3}$$
@@ -612,8 +610,6 @@ Keep the stated domain in force while you evaluate the model.
 Substitute $n=3$ into each index:
 
 $$F(3)=2\\cdot 3^{2}$$
-
-$$F(3)=2\\cdot 9$$
 
 $$F(3)=2\\cdot 9$$
 
@@ -886,8 +882,6 @@ $$y(6)=5\\cdot 6^{2}$$
 
 $$y(6)=5\\cdot 36$$
 
-$$y(6)=5\\cdot 36$$
-
 $$y(6)=180$$
 
 The panel needs $180$ litres.
@@ -943,8 +937,6 @@ $$\\frac{y(0.5r)}{y(r)}=0.5^{2}$$
 
 $$\\frac{y(0.5r)}{y(r)}=0.25$$
 
-$$\\frac{y(0.5r)}{y(r)}=0.25$$
-
 The primer is multiplied by $0.25$, not by $0.5$.
 
 The computed figure disagrees with the claim.
@@ -989,8 +981,6 @@ $$E(10)=0.5\\cdot 10^{2}$$
 
 $$E(10)=0.5\\cdot 100$$
 
-$$E(10)=0.5\\cdot 100$$
-
 $$E(10)=50$$
 
 The index at $v=10$ is $50$.
@@ -1024,8 +1014,6 @@ Read the exponent from the overview before comparing growth rates.
 At the higher standard speed, square first:
 
 $$E(20)=0.5\\cdot 20^{2}$$
-
-$$E(20)=0.5\\cdot 400$$
 
 $$E(20)=0.5\\cdot 400$$
 
@@ -1670,8 +1658,6 @@ $$L(16)=\\frac{1}{2}\\cdot 16^{2}$$
 
 $$L(16)=\\frac{1}{2}\\cdot 256$$
 
-$$L(16)=\\frac{1}{2}\\cdot 256$$
-
 $$L(16)=128$$
 
 One hundred and twenty-eight sits below $200$, so the alarm has not yet tripped.
@@ -1686,8 +1672,6 @@ Start from the calibrated closed form recovered in the overview, then substitute
 The overview recovered $L(x)=\\frac{1}{2}x^{2}$. At $10$ jobs:
 
 $$L(10)=\\frac{1}{2}\\cdot 10^{2}$$
-
-$$L(10)=\\frac{1}{2}\\cdot 100$$
 
 $$L(10)=\\frac{1}{2}\\cdot 100$$
 
@@ -1912,8 +1896,6 @@ $$C(n)=n^{2}$$
 At nine documents:
 
 $$C(9)=9^{2}$$
-
-$$C(9)=81$$
 
 $$C(9)=81$$
 
@@ -3955,9 +3937,9 @@ The same ratio $\\frac{T(x)}{S(x)}=\\frac{x}{8}$ depends on the load. At the ben
 
 $$\\frac{T(4)}{S(4)}=\\frac{8}{16}$$
 
-$$\\frac{T(4)}{S(4)}=\\frac{1}{2}, \\qquad \\frac{T(8)}{S(8)}$$
+$$\\frac{T(4)}{S(4)}=\\frac{1}{2}, \$$
 
-$$\\frac{T(4)}{S(4)}=1$$
+$$\\frac{T(8)}{S(8)}=1$$
 
 Those are not the same.
 
@@ -7543,8 +7525,6 @@ $$\\frac{y(2L)}{y(L)}=2^{2}$$
 
 $$\\frac{y(2L)}{y(L)}=4$$
 
-$$\\frac{y(2L)}{y(L)}=4$$
-
 Doubling the span quadruples the tip deflection.
 
 The computed figure disagrees with the claim.
@@ -7898,8 +7878,6 @@ Read the exponent from the overview before comparing growth rates.
 Doubling flow multiplies head by $2$ only if the exponent is $1$. The recovered head law is $H(q)=2q^{2}$, so
 
 $$\\frac{H(2q)}{H(q)}=2^{2}$$
-
-$$\\frac{H(2q)}{H(q)}=4$$
 
 $$\\frac{H(2q)}{H(q)}=4$$
 
