@@ -11,6 +11,7 @@ follow Ch7/Ch9 teacher voice. Does not write the JSON bank file.
 """
 from __future__ import annotations
 
+import json
 import math
 import re
 import sys
@@ -2058,11 +2059,34 @@ BUILDERS: list[Callable[[], dict[str, Any]]] = [
 ]
 
 
+def _load_voice_deep() -> list[dict[str, Any]]:
+    """Load deepened overviews/bodies for the 49 log tasks (Ch7/Ch9 voice)."""
+    path = Path(__file__).resolve().parent / "_ch10_log_voice_deep.json"
+    raw = json.loads(path.read_text())
+    out: list[dict[str, Any]] = []
+    for i in range(1, LOG_COUNT + 1):
+        entry = raw[str(i)]
+        out.append({"solution_overview": entry["overview"], "bodies": entry["bodies"]})
+    assert len(out) == LOG_COUNT
+    return out
+
+
 def build_log_tasks() -> list[dict]:
-    """Return exactly 49 hard logarithmic task dicts for subsection 10.2."""
+    """Return exactly 49 hard logarithmic task dicts for subsection 10.2.
+
+    Statements, keys, figures, and tables come from the builders. Teacher-voice
+    explanations and solution overviews are overlaid from `_ch10_log_voice_deep.json`
+    (Ch7/Ch9 stepped voice). Length follows claim work only.
+    """
+    deep = _load_voice_deep()
     assert len(BUILDERS) == LOG_COUNT
     tasks = [b() for b in BUILDERS]
     assert len(tasks) == LOG_COUNT
+    for t, d in zip(tasks, deep):
+        t["solution_overview"] = d["solution_overview"].strip()
+        t["tactical_explanations"] = [
+            pack(LETTERS[i], t["answer_key"][i], d["bodies"][i]) for i in range(5)
+        ]
     return tasks
 
 

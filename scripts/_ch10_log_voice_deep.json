@@ -1,0 +1,1453 @@
+{
+  "1": {
+    "overview": "Powers of two on the figure give $f(4)=2$, $f(8)=3$, $f(32)=5$, and $f(1/8)=-3$. The product rule confirms $f(6)=f(2)+f(3)$. Solving $f(x)=3$ yields the unique root $x=8$. Finally $\\log_{2}10\\neq 2$ because $2^{2}=4\\neq 10$.",
+    "bodies": [
+      [
+        "On the figure $f(x)=\\log_{2}x$, so every pure power of two is an integer height.",
+        "$$f(4)=\\log_{2}(2^{2})=2,\\qquad f(8)=\\log_{2}(2^{3})=3,\\qquad f(32)=\\log_{2}(2^{5})=5$$",
+        "Add the first two heights and compare with the third.",
+        "$$f(4)+f(8)=2+3=5=f(32)$$",
+        "The three marked powers therefore satisfy the claimed sum identity."
+      ],
+      [
+        "The product rule for a fixed base larger than $1$ turns a product of positive arguments into a sum of logs.",
+        "$$f(xy)=f(x)+f(y)\\qquad(x,y>0)$$",
+        "Specialise to the factors $2$ and $3$.",
+        "$$f(6)=f(2\\cdot 3)=f(2)+f(3)$$",
+        "So the equality holds for every base-$2$ logarithm; the claim that it fails is false."
+      ],
+      [
+        "Solve the level equation $f(x)=3$ by exponentiating with base $2$.",
+        "$$\\log_{2}x=3\\implies x=2^{3}=8$$",
+        "Because $f:(0,\\infty)\\to\\mathbb{R}$ is bijective, that root is unique on the natural domain.",
+        "$$\\{x>0:f(x)=3\\}=\\{8\\}$$"
+      ],
+      [
+        "Rewrite the argument as a pure power of the base.",
+        "$$\\frac{1}{8}=2^{-3}$$",
+        "Apply the power rule for logarithms.",
+        "$$f(1/8)=\\log_{2}(2^{-3})=-3$$"
+      ],
+      [
+        "The denominator is immediate: $f(2)=\\log_{2}2=1$, so the claimed ratio collapses to $f(10)$.",
+        "$$\\frac{f(10)}{f(2)}=\\log_{2}10$$",
+        "Split off one unit of the log.",
+        "$$\\log_{2}10=1+\\log_{2}5$$",
+        "Since $2^{2}=4\\neq 5$, one has $\\log_{2}5\\neq 1$, hence $\\log_{2}10\\neq 2$. The ratio is not $2$."
+      ]
+    ]
+  },
+  "2": {
+    "overview": "The pair $(4,2)$ forces $b^{2}=4$, and with $b>0$, $b\\neq 1$ one gets $b=2$; the columns $(16,4)$ and $(1/2,-1)$ confirm. Then $\\log_{2}32=5$, $\\log_{2}(1/16)=-4$, and $\\ln 9/\\ln b=2\\log_{b}3$. Finally $2^{3}=8\\neq 6$.",
+    "bodies": [
+      [
+        "Translate the table entry $\\log_{b}4=2$ into an exponential equation.",
+        "$$b^{2}=4$$",
+        "The admissible solutions with $b>0$ and $b\\neq 1$ reduce to the single base $b=2$.",
+        "$$b=2$$",
+        "Cross-check the other columns: $2^{4}=16$ and $2^{-1}=1/2$, matching the table exactly."
+      ],
+      [
+        "With the recovered base $b=2$, write $32$ as a pure power of two.",
+        "$$32=2^{5}$$",
+        "Apply the defining cancellation.",
+        "$$\\log_{2}32=\\log_{2}(2^{5})=5$$"
+      ],
+      [
+        "Again with $b=2$, rewrite the reciprocal power.",
+        "$$\\frac{1}{16}=2^{-4}$$",
+        "The logarithm therefore equals $-4$, not the claimed $-3$.",
+        "$$\\log_{2}(1/16)=-4\\neq -3$$"
+      ],
+      [
+        "Change of base converts the quotient of natural logs into a base-$b$ log.",
+        "$$\\frac{\\ln 9}{\\ln b}=\\log_{b}9$$",
+        "Factor the argument as a square and pull out the coefficient.",
+        "$$\\log_{b}9=\\log_{b}(3^{2})=2\\log_{b}3$$",
+        "The two sides of the claim therefore agree for the recovered $b$."
+      ],
+      [
+        "Substitute the recovered base into the cubic.",
+        "$$b^{3}=2^{3}=8$$",
+        "Since $8\\neq 6$, the equality $b^{3}=6$ fails."
+      ]
+    ]
+  },
+  "3": {
+    "overview": "On $x>1$ both factors are positive, so consolidate to $\\log_{2}(x^{2}-1)=3$, hence $x^{2}-1=8$. Domain rejects $x=-3$, leaving the unique root $x=3$. At that root the summands are $1$ and $2$. The trial $\\sqrt{7}$ fails because $x^{2}-1=6\\neq 8$.",
+    "bodies": [
+      [
+        "On the natural domain $x>1$ both $x-1$ and $x+1$ are positive, so the product rule applies.",
+        "$$\\log_{2}(x-1)+\\log_{2}(x+1)=\\log_{2}(x^{2}-1)$$",
+        "The level equation $\\log_{2}(x^{2}-1)=3$ is equivalent to exponentiating with base $2$.",
+        "$$x^{2}-1=2^{3}=8$$"
+      ],
+      [
+        "The polynomial $x^{2}-1=8$ rearranges to $x^{2}=9$, with formal roots $\\pm 3$.",
+        "$$x=\\pm 3$$",
+        "Only $x>1$ is admissible for the original logs, so the negative root is excluded.",
+        "$$x=-3\\notin(1,\\infty)$$",
+        "Thus not both candidates are solutions."
+      ],
+      [
+        "Intersect the algebraic roots with the domain cut $x>1$.",
+        "$$\\{x:x^{2}=9\\}\\cap(1,\\infty)=\\{3\\}$$",
+        "So $x=3$ is the unique solution of the log equation on its natural domain."
+      ],
+      [
+        "Substitute $x=3$ into each summand separately.",
+        "$$\\log_{2}(3-1)=\\log_{2}2=1,\\qquad\\log_{2}(3+1)=\\log_{2}4=2$$",
+        "The two heights add back to the original right-hand side.",
+        "$$1+2=3$$"
+      ],
+      [
+        "If $x=\\sqrt{7}$, then the consolidated argument is too small.",
+        "$$x^{2}-1=7-1=6\\neq 8$$",
+        "Hence the log cannot equal $3$.",
+        "$$\\log_{2}6\\neq 3$$"
+      ]
+    ]
+  },
+  "4": {
+    "overview": "Change of base yields the chain $\\log_{a}b\\cdot\\log_{b}c=\\log_{a}c$ and the reciprocal identity $\\log_{a}b=1/\\log_{b}a$. The sum $u+1/u\\ge 2$ never equals $1$ when $a\\neq b$. The auxiliary-base formula recovers $\\log_{a}b$, while products inside a log become sums of logs, not products of logs.",
+    "bodies": [
+      [
+        "Write each factor through a common auxiliary logarithm.",
+        "$$\\log_{a}b=\\frac{\\log b}{\\log a},\\qquad\\log_{b}c=\\frac{\\log c}{\\log b}$$",
+        "Multiply and cancel the middle term.",
+        "$$\\log_{a}b\\cdot\\log_{b}c=\\frac{\\log c}{\\log a}=\\log_{a}c$$",
+        "The chain identity therefore holds for every $a,b,c>1$."
+      ],
+      [
+        "Again expand through the auxiliary base.",
+        "$$\\log_{a}b=\\frac{\\log b}{\\log a}=\\left(\\frac{\\log a}{\\log b}\\right)^{-1}=\\frac{1}{\\log_{b}a}$$",
+        "So the reciprocal identity is exact whenever both logs are defined."
+      ],
+      [
+        "Set $u=\\log_{a}b$. Since $a\\neq b$ and both exceed $1$, one has $u>0$ and $u\\neq 1$, while $\\log_{b}a=1/u$.",
+        "$$\\log_{a}b+\\log_{b}a=u+\\frac{1}{u}$$",
+        "The AM-GM bound forces the sum to be at least $2$.",
+        "$$u+\\frac{1}{u}\\ge 2$$",
+        "with equality only at $u=1$ (i.e. $a=b$). For $a\\neq b$ the sum exceeds $2$ and can never equal $1$."
+      ],
+      [
+        "The change-of-base formula is precisely the claimed quotient.",
+        "$$\\log_{a}b=\\frac{\\log b}{\\log a}$$",
+        "So the identity holds for the fixed auxiliary base of the stem."
+      ],
+      [
+        "The product rule produces a sum of logarithms, not a product.",
+        "$$\\log_{a}(bc)=\\log_{a}b+\\log_{a}c$$",
+        "A concrete counter-example with $a=b=c=2$ already separates the two sides: the left side is $\\log_{2}4=2$ while the product of logs is $1\\cdot 1=1$."
+      ]
+    ]
+  },
+  "5": {
+    "overview": "Domain forces $x>2$ because the outer logarithm needs $\\log_{2}(\\log_{2}x)>0$. Peeling $65536=2^{16}$ gives $16\\mapsto 4\\mapsto 2$, so $h(65536)=h(2^{16})=2$, not $3$. The endpoint $x=2$ makes the outer argument vanish, so it is excluded.",
+    "bodies": [
+      [
+        "Innermost requires $x>0$. The middle log needs a positive argument, so $\\log_{2}x>0$, i.e. $x>1$.",
+        "The outer log needs its argument strictly positive as well.",
+        "$$\\log_{2}(\\log_{2}x)>0\\implies\\log_{2}x>1\\implies x>2$$",
+        "Intersecting the three conditions leaves the natural domain $(2,\\infty)$."
+      ],
+      [
+        "Begin the peel by writing $65536$ as a power of two.",
+        "$$65536=2^{16}\\implies\\log_{2}65536=16$$",
+        "Continue inward.",
+        "$$\\log_{2}16=4,\\qquad\\log_{2}4=2$$",
+        "So $h(65536)=2$, and the claimed value $3$ is wrong."
+      ],
+      [
+        "The same three-step peel already computed the outer value.",
+        "$$h(65536)=\\log_{2}(\\log_{2}(\\log_{2}65536))=2$$",
+        "Thus the statement that the height equals $2$ is correct."
+      ],
+      [
+        "Since $2^{16}=65536$, the input is identical to the previous evaluation.",
+        "$$h(2^{16})=h(65536)=2$$"
+      ],
+      [
+        "At the proposed endpoint $x=2$ the middle log collapses.",
+        "$$\\log_{2}2=1\\implies\\log_{2}(\\log_{2}2)=\\log_{2}1=0$$",
+        "The outer logarithm of $0$ is undefined, so $x=2$ lies outside the natural domain."
+      ]
+    ]
+  },
+  "6": {
+    "overview": "Powers of three give $f(81)=4$ and $f(1/9)=-2$. Also $\\log_{9}81=2$ because $81=9^{2}$. The change-of-base chain $\\log_{3}2\\cdot\\log_{2}9=\\log_{3}9=2$, not $1$.",
+    "bodies": [
+      [
+        "Write $81$ as a pure power of the figure base.",
+        "$$81=3^{4}$$",
+        "Apply the defining cancellation on the figure.",
+        "$$f(81)=\\log_{3}(3^{4})=4$$"
+      ],
+      [
+        "Express $81$ as a square in base $9$.",
+        "$$81=9^{2}$$",
+        "The logarithm therefore equals the exponent $2$.",
+        "$$\\log_{9}81=2$$"
+      ],
+      [
+        "The change-of-base chain telescopes through the middle base.",
+        "$$\\log_{3}2\\cdot\\log_{2}9=\\log_{3}9$$",
+        "Since $9=3^{2}$, the product equals $2$, not $1$.",
+        "$$\\log_{3}9=2\\neq 1$$"
+      ],
+      [
+        "The same telescoping identity yields the correct value.",
+        "$$\\log_{3}2\\cdot\\log_{2}9=\\log_{3}9=2$$"
+      ],
+      [
+        "Rewrite the reciprocal as a negative power of three.",
+        "$$\\frac{1}{9}=3^{-2}$$",
+        "Hence the figure height is $-2$, not $1$.",
+        "$$f(1/9)=\\log_{3}(3^{-2})=-2\\neq 1$$"
+      ]
+    ]
+  },
+  "7": {
+    "overview": "$A$ is the set $|x|>1$, while $B$ requires both factors positive and collapses to $x>1$, so $A\\neq B$. The sum-to-product identity for $\\ln$ holds pointwise on $B$, but on the left component of $A$ the separate summands are not even defined.",
+    "bodies": [
+      [
+        "The logarithm $\\ln(x^{2}-1)$ needs a positive argument.",
+        "$$x^{2}-1>0\\iff|x|>1$$",
+        "Writing the two rays explicitly recovers the claimed set.",
+        "$$A=(-\\infty,-1)\\cup(1,\\infty)$$"
+      ],
+      [
+        "For $B$ both $x-1>0$ and $x+1>0$ are required simultaneously.",
+        "$$x>1\\qquad\\text{and}\\qquad x>-1\\implies x>1$$",
+        "Thus $B=(1,\\infty)$ is a proper subset of $A$, so the two domains are not equal.",
+        "$$B\\subsetneq A$$"
+      ],
+      [
+        "The stricter pair of inequalities forces the right-hand ray alone.",
+        "$$B=(1,\\infty)$$"
+      ],
+      [
+        "Take the test point $x=-2\\in A$. The consolidated log is defined.",
+        "$$\\ln((-2)^{2}-1)=\\ln 3$$",
+        "But the separate summand $\\ln(x-1)=\\ln(-3)$ is not real, so the sum identity cannot hold for every $x\\in A$."
+      ],
+      [
+        "On $B$ both factors $x-1$ and $x+1$ are positive, so the product rule applies pointwise.",
+        "$$\\ln(x-1)+\\ln(x+1)=\\ln\\bigl((x-1)(x+1)\\bigr)=\\ln(x^{2}-1)$$"
+      ]
+    ]
+  },
+  "8": {
+    "overview": "Because $g(x)=\\log_{2}|x|$, the map is even, takes the value $3$ at both $\\pm 8$, fails to be injective on $\\mathbb{R}\\setminus\\{0\\}$, and solves $g(x)=2$ at exactly the two roots $\\pm 4$. As $x\\to 0$ the values diverge to $-\\infty$, so no continuous extension through the origin exists.",
+    "bodies": [
+      [
+        "Absolute value is insensitive to sign.",
+        "$$|-x|=|x|\\qquad(x\\neq 0)$$",
+        "Taking $\\log_{2}$ of both sides yields evenness.",
+        "$$g(-x)=\\log_{2}|-x|=\\log_{2}|x|=g(x)$$"
+      ],
+      [
+        "Evaluate at the positive eight first.",
+        "$$g(8)=\\log_{2}8=\\log_{2}(2^{3})=3$$",
+        "Evenness immediately gives the same height at $-8$.",
+        "$$g(-8)=g(8)=3$$"
+      ],
+      [
+        "Evenness produces distinct points with the same image.",
+        "$$g(8)=g(-8)=3\\quad\\text{with}\\quad 8\\neq -8$$",
+        "A function that identifies a pair of distinct inputs cannot be one-to-one on $\\mathbb{R}\\setminus\\{0\\}$."
+      ],
+      [
+        "Solve the level equation by exponentiating.",
+        "$$\\log_{2}|x|=2\\implies|x|=2^{2}=4$$",
+        "The absolute-value equation contributes exactly two real roots.",
+        "$$x\\in\\{-4,4\\}$$"
+      ],
+      [
+        "As $x\\to 0$ one has $|x|\\to 0^{+}$, and the logarithm diverges.",
+        "$$\\log_{2}|x|\\to-\\infty$$",
+        "No finite assignment $g(0)=0$ can match that blow-down, so a continuous extension through the origin is impossible."
+      ]
+    ]
+  },
+  "9": {
+    "overview": "Level shifts depend only on intensity ratios: a factor $100$ adds $20$, while a factor $2$ adds $10\\log_{10}2\\neq 2$. Vanishing level forces $I=I_{0}$. The difference $L(I_{2})-L(I_{1})$ cancels $I_{0}$, but doubling $I_{0}$ alone shifts $L$ by $-10\\log_{10}2$.",
+    "bodies": [
+      [
+        "Raising intensity by a factor of $100$ changes the level by a pure common logarithm.",
+        "$$\\Delta L=10\\log_{10}\\frac{100I}{I}=10\\log_{10}100$$",
+        "Since $\\log_{10}100=2$, the increment is exactly twenty.",
+        "$$\\Delta L=10\\cdot 2=20$$"
+      ],
+      [
+        "The same difference formula with factor $2$ produces.",
+        "$$\\Delta L=10\\log_{10}2$$",
+        "Because $\\log_{10}2\\neq 0.2$, the increment is not equal to $2$."
+      ],
+      [
+        "Set the level equal to zero and exponentiate.",
+        "$$10\\log_{10}(I/I_{0})=0\\implies\\log_{10}(I/I_{0})=0$$",
+        "The unique solution of $\\log_{10}u=0$ is $u=1$.",
+        "$$I/I_{0}=1\\implies I=I_{0}$$"
+      ],
+      [
+        "Expand the two levels and cancel the common reference.",
+        "$$L(I_{2})-L(I_{1})=10\\log_{10}\\frac{I_{2}}{I_{0}}-10\\log_{10}\\frac{I_{1}}{I_{0}}=10\\log_{10}\\frac{I_{2}}{I_{1}}$$",
+        "The difference depends only on the intensity ratio, not on $I_{0}$."
+      ],
+      [
+        "Replace $I_{0}$ by $2I_{0}$ while holding $I$ fixed.",
+        "$$L_{\\mathrm{new}}=10\\log_{10}\\frac{I}{2I_{0}}=L-10\\log_{10}2$$",
+        "Since $\\log_{10}2\\neq 0$, the level changes, so the claim that $L$ is unchanged fails."
+      ]
+    ]
+  },
+  "10": {
+    "overview": "Continuity plus the multiplicative Cauchy equation force $f(x)=c\\log_{2}x$; the seed $f(2)=3$ fixes $c=3$. Then $f(8)=9$, $f(1/2)=-3$, and $f(4)=6$, so the rival values $3$ and $4$ fail.",
+    "bodies": [
+      [
+        "Every continuous solution of $f(xy)=f(x)+f(y)$ on $(0,\\infty)$ is a scalar multiple of a fixed logarithm.",
+        "$$f(x)=c\\log_{2}x$$",
+        "Feed in the seed $f(2)=3$.",
+        "$$c\\log_{2}2=c=3$$",
+        "Hence $f(x)=3\\log_{2}x$ for every $x>0$."
+      ],
+      [
+        "Evaluate the rebuilt rule at $x=8=2^{3}$.",
+        "$$f(8)=3\\log_{2}(2^{3})=3\\cdot 3=9$$",
+        "The claimed height $3$ is therefore wrong."
+      ],
+      [
+        "The same evaluation already produced the correct height.",
+        "$$f(8)=9$$"
+      ],
+      [
+        "Rewrite the reciprocal as a negative power of two.",
+        "$$\\frac{1}{2}=2^{-1}$$",
+        "Apply the rebuilt rule.",
+        "$$f(1/2)=3\\log_{2}(2^{-1})=3\\cdot(-1)=-3$$"
+      ],
+      [
+        "At $x=4=2^{2}$ the rebuilt rule gives six, not four.",
+        "$$f(4)=3\\log_{2}(2^{2})=3\\cdot 2=6\\neq 4$$"
+      ]
+    ]
+  },
+  "11": {
+    "overview": "Because the base lies in $(0,1)$, the map $x\\mapsto\\log_{1/2}x$ is strictly decreasing, so $\\log_{1/2}x>-2$ flips to $x<4$ and intersects $x>0$ in $(0,4)$. Checks: $x=2$ works, $x=8$ fails, and the endpoint $x=4$ is excluded by strictness.",
+    "bodies": [
+      [
+        "Bases in $(0,1)$ reverse inequalities when the exponential is applied. The inverse of $t\\mapsto\\log_{1/2}t$ is $t\\mapsto(1/2)^{t}$.",
+        "$$\\log_{1/2}x>-2\\iff x<(1/2)^{-2}$$",
+        "Compute the threshold power.",
+        "$$(1/2)^{-2}=2^{2}=4$$",
+        "Intersect with the natural domain $x>0$ to obtain the open interval $(0,4)$."
+      ],
+      [
+        "The ray $x>4$ would solve $\\log_{b}x>-2$ for a base $b>1$, where the logarithm is increasing.",
+        "Here the base is $1/2\\in(0,1)$, so the inequality flips and $x>4$ is the complementary error set, not the solution."
+      ],
+      [
+        "Evaluate the half-base log at $x=2$.",
+        "$$\\log_{1/2}2=-1$$",
+        "Since $-1>-2$, the point $x=2$ lies in the solution set."
+      ],
+      [
+        "Evaluate at $x=8=2^{3}=(1/2)^{-3}$.",
+        "$$\\log_{1/2}8=-3$$",
+        "Because $-3\\not>-2$, the point $x=8$ fails the inequality."
+      ],
+      [
+        "At the boundary $x=4$ the logarithm meets the threshold exactly.",
+        "$$\\log_{1/2}4=-2$$",
+        "A strict inequality excludes its boundary, so $x=4$ is not a solution."
+      ]
+    ]
+  },
+  "12": {
+    "overview": "Change of base yields $f(x)=2g(x)$ identically on $(0,\\infty)$. Concrete checks: $f(16)=4$, $g(16)=2$, and $g(8)=3/2$. Equality $f=g$ forces $g=0$, hence only $x=1$.",
+    "bodies": [
+      [
+        "Express the base-$4$ log through base $2$.",
+        "$$g(x)=\\log_{4}x=\\frac{\\log_{2}x}{\\log_{2}4}=\\frac{f(x)}{2}$$",
+        "Rearrangement gives the exact scaling claimed.",
+        "$$f(x)=2g(x)\\qquad(x>0)$$"
+      ],
+      [
+        "Write $16$ as a power in each base.",
+        "$$16=2^{4}=4^{2}$$",
+        "Read off the two heights.",
+        "$$f(16)=4,\\qquad g(16)=2$$"
+      ],
+      [
+        "From the identity $f=2g$, the equality $f=g$ forces $g=0$.",
+        "$$g(x)=0\\iff\\log_{4}x=0\\iff x=1$$",
+        "On the ray $(1,\\infty)$ one has $g(x)>0$, so $f(x)=2g(x)>g(x)$. The identity $f=g$ fails there."
+      ],
+      [
+        "Solve $f(x)=g(x)$ using $f=2g$.",
+        "$$2g(x)=g(x)\\implies g(x)=0\\implies x=1$$",
+        "The unique positive solution is therefore $x=1$."
+      ],
+      [
+        "Reduce $g(8)$ through the scaling identity.",
+        "$$g(8)=\\frac{f(8)}{2}=\\frac{\\log_{2}8}{2}=\\frac{3}{2}$$",
+        "Since $3/2\\neq 2$, the claim fails."
+      ]
+    ]
+  },
+  "13": {
+    "overview": "From $y(2)/y(0)=4=e^{2k}$ recover $k=\\ln 2$. Doubling time is $(\\ln 2)/k=1$. Then $y(4)=8\\cdot 16=128=y(0)\\cdot 16$, while $k=\\ln 2<1$, so neither $k=\\ln 4$ nor $k>1$ holds.",
+    "bodies": [
+      [
+        "Form the growth factor between the first two table columns.",
+        "$$\\frac{y(2)}{y(0)}=\\frac{32}{8}=4=e^{2k}$$",
+        "Take the natural log and divide by the time gap.",
+        "$$2k=\\ln 4=2\\ln 2\\implies k=\\ln 2$$",
+        "Cross-check at $t=5$: $8\\cdot e^{5\\ln 2}=8\\cdot 32=256$, matching the table."
+      ],
+      [
+        "The same recovery produces $k=\\ln 2$. The value $\\ln 4$ equals $2k$, not $k$.",
+        "$$\\ln 4=2\\ln 2\\neq\\ln 2$$"
+      ],
+      [
+        "Doubling time solves $e^{kT}=2$.",
+        "$$T=\\frac{\\ln 2}{k}=\\frac{\\ln 2}{\\ln 2}=1$$"
+      ],
+      [
+        "Advance four units from the initial height.",
+        "$$y(4)=8\\cdot e^{4\\ln 2}=8\\cdot 2^{4}=8\\cdot 16=128$$",
+        "Since $y(0)=8$, this is exactly a sixteen-fold rise.",
+        "$$y(4)=y(0)\\cdot 16$$"
+      ],
+      [
+        "Compare the recovered force with the threshold $1$.",
+        "$$\\ln 2\\approx 0.693<1$$",
+        "Hence $k>1$ fails."
+      ]
+    ]
+  },
+  "14": {
+    "overview": "Reduce $\\log_{4}x=\\tfrac12\\log_{2}x$ to obtain $\\tfrac32\\log_{2}x=6$, hence $\\log_{2}x=4$ and $x=16$. At that root the summands are $4$ and $2$. The trial $x=64$ overshoots with sum $9$, and the two logs are not equal.",
+    "bodies": [
+      [
+        "Change of base converts the second summand.",
+        "$$\\log_{4}x=\\frac{\\log_{2}x}{\\log_{2}4}=\\frac{1}{2}\\log_{2}x$$",
+        "Add the two contributions.",
+        "$$\\log_{2}x+\\frac{1}{2}\\log_{2}x=\\frac{3}{2}\\log_{2}x=6$$",
+        "So the original equation is equivalent to that reduced scalar equation."
+      ],
+      [
+        "Solve the reduced equation for the base-$2$ log.",
+        "$$\\log_{2}x=6\\cdot\\frac{2}{3}=4$$",
+        "Exponentiate with base $2$.",
+        "$$x=2^{4}=16$$",
+        "Uniqueness follows from bijectivity of $\\log_{2}$ on $(0,\\infty)$."
+      ],
+      [
+        "Substitute the trial $x=64=2^{6}$.",
+        "$$\\log_{2}64=6,\\qquad\\log_{4}64=3$$",
+        "The sum is $9$, not $6$, so $x=64$ is not a root."
+      ],
+      [
+        "At the genuine root $x=16$ read each summand.",
+        "$$\\log_{2}16=4,\\qquad\\log_{4}16=2$$",
+        "Those are exactly the claimed heights."
+      ],
+      [
+        "Compare the two heights already computed at $x=16$.",
+        "$$4\\neq 2$$",
+        "So $\\log_{4}x=\\log_{2}x$ fails at the solution."
+      ]
+    ]
+  },
+  "15": {
+    "overview": "$S=2\\log_{a}u+\\log_{a}v$ and $S-T=\\log_{a}u+2\\log_{a}v$. Neither $3\\log_{a}v$ nor $3\\log_{a}u$ matches that difference for every triple. When $u=v$, one gets $S=3\\log_{a}u$ and $T=0$, so $S\\neq T$.",
+    "bodies": [
+      [
+        "Expand $S$ by the product and power rules.",
+        "$$S=\\log_{a}(u^{2}v)=\\log_{a}(u^{2})+\\log_{a}v=2\\log_{a}u+\\log_{a}v$$",
+        "The identity holds for every $a,u,v>1$."
+      ],
+      [
+        "Expand $T$ and form the difference.",
+        "$$T=\\log_{a}(u/v)=\\log_{a}u-\\log_{a}v$$",
+        "$$S-T=(2\\log_{a}u+\\log_{a}v)-(\\log_{a}u-\\log_{a}v)=\\log_{a}u+2\\log_{a}v$$",
+        "Equality with $3\\log_{a}v$ for every triple would force $\\log_{a}u=\\log_{a}v$, which fails as soon as $u\\neq v$."
+      ],
+      [
+        "The same expansion $S-T=\\log_{a}u+2\\log_{a}v$ equals $3\\log_{a}u$ for every triple only if $\\log_{a}v=\\log_{a}u$, i.e. only on the slice $u=v$, not universally."
+      ],
+      [
+        "Specialise to $u=v>1$.",
+        "$$S=2\\log_{a}u+\\log_{a}u=3\\log_{a}u$$",
+        "$$T=\\log_{a}(u/u)=\\log_{a}1=0$$",
+        "Both claimed evaluations therefore hold on that slice."
+      ],
+      [
+        "When $u=v>1$ one has $S=3\\log_{a}u>0$ while $T=0$, so the two readings are unequal.",
+        "$$S\\neq T$$"
+      ]
+    ]
+  },
+  "16": {
+    "overview": "Exponentiate once to get $\\log_{3}x=2$, hence $x=9$. The natural domain of the left-hand side is $x>1$ (not $x>3$). The trials $x=3$ and $x=81$ fail the outer evaluation.",
+    "bodies": [
+      [
+        "Apply the exponential of base $2$ to both sides of $\\log_{2}(\\log_{3}x)=1$.",
+        "$$\\log_{3}x=2^{1}=2$$",
+        "That is exactly the forced inner level."
+      ],
+      [
+        "Solve $\\log_{3}x=2$ by exponentiating with base $3$.",
+        "$$x=3^{2}=9$$",
+        "Uniqueness follows from bijectivity of $\\log_{3}$ on $(0,\\infty)$, intersected with the outer domain."
+      ],
+      [
+        "At the trial $x=3$ the inner log equals $1$.",
+        "$$\\log_{3}3=1,\\qquad\\log_{2}1=0\\neq 1$$",
+        "So $x=3$ does not solve the nested equation."
+      ],
+      [
+        "The outer logarithm requires a positive argument, i.e. $\\log_{3}x>0$.",
+        "$$\\log_{3}x>0\\iff x>3^{0}=1$$",
+        "The natural domain is therefore $x>1$, not the stricter cut $x>3$."
+      ],
+      [
+        "At $x=81=3^{4}$ the inner height is $4$.",
+        "$$\\log_{3}81=4,\\qquad\\log_{2}4=2\\neq 1$$",
+        "So $x=81$ overshoots the outer target."
+      ]
+    ]
+  },
+  "17": {
+    "overview": "Shift then evaluate: $f(6)=\\log_{2}4=2$, $f(4)=\\log_{2}2=1$, and $f(3)=\\log_{2}1=0$. Solving $f(x)=3$ yields $x-2=8$, hence $x=10$, not $x=8$.",
+    "bodies": [
+      [
+        "Substitute the marked abscissa into the shifted rule.",
+        "$$f(6)=\\log_{2}(6-2)=\\log_{2}4$$",
+        "Since $4=2^{2}$, the height equals $2$.",
+        "$$f(6)=2$$"
+      ],
+      [
+        "The same shift at $x=4$ leaves a pure power of two.",
+        "$$f(4)=\\log_{2}(4-2)=\\log_{2}2=1$$"
+      ],
+      [
+        "Solve $\\log_{2}(x-2)=3$ by exponentiating.",
+        "$$x-2=2^{3}=8\\implies x=10$$",
+        "The candidate $x=8$ would require $x-2=6$, and $\\log_{2}6\\neq 3$, so $x=8$ is not a root."
+      ],
+      [
+        "The same exponential step produces the correct root.",
+        "$$x-2=8\\implies x=10$$"
+      ],
+      [
+        "At $x=3$ the shifted argument collapses to $1$.",
+        "$$f(3)=\\log_{2}(3-2)=\\log_{2}1=0$$",
+        "Since $0\\neq 1$, the claim fails."
+      ]
+    ]
+  },
+  "18": {
+    "overview": "On $x>1$ consolidate to $x^{2}-1=8$. Domain rejects $x=-3$, leaving $x=3$. At that root the sum identity $\\log_{a}2+\\log_{a}4=\\log_{a}8$ holds for every $a>1$.",
+    "bodies": [
+      [
+        "On $x>1$ both factors are positive, so the product rule applies.",
+        "$$\\log_{a}(x-1)+\\log_{a}(x+1)=\\log_{a}\\bigl((x-1)(x+1)\\bigr)=\\log_{a}(x^{2}-1)$$",
+        "Injectivity of $\\log_{a}$ converts equality with $\\log_{a}8$ into a polynomial relation.",
+        "$$x^{2}-1=8$$"
+      ],
+      [
+        "The polynomial $x^{2}=9$ has roots $\\pm 3$, but only $x>1$ is admissible for the log equation.",
+        "At $x=-3$ the summand $\\log_{a}(x-1)=\\log_{a}(-4)$ is not real, so not every algebraic root solves the log equation."
+      ],
+      [
+        "Intersect $x^{2}=9$ with the domain cut.",
+        "$$\\{x:x^{2}=9\\}\\cap(1,\\infty)=\\{3\\}$$",
+        "Hence $x=3$ is the unique solution on $x>1$."
+      ],
+      [
+        "Independently of the concrete base $a>1$, the product rule gives.",
+        "$$\\log_{a}2+\\log_{a}4=\\log_{a}(2\\cdot 4)=\\log_{a}8$$",
+        "That is exactly the evaluation at $x=3$."
+      ],
+      [
+        "The candidate $x=-3$ lies outside the domain $x>1$, so it cannot solve the log equation there."
+      ]
+    ]
+  },
+  "19": {
+    "overview": "The two branches meet at height $0$ when $x=1$, so $p$ is continuous there with $p(1)=0$. Then $p(0)=-1$, $p(1/2)=\\sqrt{2}-2$, and $p(4)=\\log_{2}4=2$, not $3$.",
+    "bodies": [
+      [
+        "Compute the left-hand limit from the exponential branch.",
+        "$$\\lim_{x\\to 1^{-}}p(x)=\\lim_{x\\to 1^{-}}(2^{x}-2)=2^{1}-2=0$$",
+        "The right-hand value from the log branch agrees.",
+        "$$p(1)=\\log_{2}1=0$$",
+        "Matching one-sided limits give continuity at the knot $x=1$."
+      ],
+      [
+        "On the log branch at the knot itself.",
+        "$$p(1)=\\log_{2}1=0$$"
+      ],
+      [
+        "At the left endpoint of the exponential branch.",
+        "$$p(0)=2^{0}-2=1-2=-1$$",
+        "So the claimed height $0$ is wrong."
+      ],
+      [
+        "Substitute $x=1/2$ into the exponential piece.",
+        "$$p(1/2)=2^{1/2}-2=\\sqrt{2}-2$$"
+      ],
+      [
+        "On the log branch at $x=4$.",
+        "$$p(4)=\\log_{2}4=\\log_{2}(2^{2})=2$$",
+        "Since $2\\neq 3$, the claim fails."
+      ]
+    ]
+  },
+  "20": {
+    "overview": "Halving forces $e^{-\\lambda T}=1/2$, hence $T=\\ln 2/\\lambda$, independent of $m_{0}$. Two half-lives quarter the mass. The log-linearisation $\\ln(m/m_{0})=-\\lambda t$ holds for all $t\\ge 0$. Replacing $\\ln$ by $\\log_{10}$ without the change-of-base factor is incorrect.",
+    "bodies": [
+      [
+        "Impose the half-life definition $m(T)=m_{0}/2$.",
+        "$$m_{0}e^{-\\lambda T}=\\frac{m_{0}}{2}\\implies e^{-\\lambda T}=\\frac{1}{2}$$",
+        "Take the natural log and solve for $T$.",
+        "$$-\\lambda T=\\ln(1/2)=-\\ln 2\\implies T=\\frac{\\ln 2}{\\lambda}$$"
+      ],
+      [
+        "If one insists on common logs, change of base inserts an extra factor.",
+        "$$T=\\frac{\\log_{10}2}{\\lambda\\log_{10}e}$$",
+        "The displayed formula $\\log_{10}2/\\lambda$ omits that factor, so it is false."
+      ],
+      [
+        "Advance two half-lives from the initial mass.",
+        "$$m(2T)=m_{0}e^{-\\lambda(2T)}=m_{0}(e^{-\\lambda T})^{2}=m_{0}\\cdot\\left(\\frac{1}{2}\\right)^{2}=\\frac{m_{0}}{4}$$"
+      ],
+      [
+        "Divide the continuous path by $m_{0}$ and take the natural log.",
+        "$$\\ln\\frac{m(t)}{m_{0}}=\\ln(e^{-\\lambda t})=-\\lambda t$$",
+        "The identity holds for every $t\\ge 0$."
+      ],
+      [
+        "The recovered formula $T=\\ln 2/\\lambda$ depends only on the decay constant, not on the initial mass $m_{0}$."
+      ]
+    ]
+  },
+  "21": {
+    "overview": "The seed $f(9)=2$ with $b>1$ forces $b^{2}=9$, hence $b=3$; $f(27)=3$ confirms. Then $f(81)=4$, $f(1)=0$, and $f(1/3)=-1$. The rival base $b=9$ fails the seed.",
+    "bodies": [
+      [
+        "Translate $f(9)=2$ into an exponential equation.",
+        "$$b^{2}=9$$",
+        "With $b>1$ the unique solution is $b=3$.",
+        "$$b=3$$",
+        "Cross-check: $3^{3}=27$ matches the second seed $f(27)=3$."
+      ],
+      [
+        "With $b=3$, write $81$ as a pure power.",
+        "$$81=3^{4}\\implies f(81)=\\log_{3}(3^{4})=4$$"
+      ],
+      [
+        "Every logarithm vanishes at argument $1$.",
+        "$$f(1)=\\log_{3}1=0$$",
+        "The claimed height $1$ is therefore wrong."
+      ],
+      [
+        "Rewrite the reciprocal as a negative power of three.",
+        "$$\\frac{1}{3}=3^{-1}$$",
+        "$$f(1/3)=\\log_{3}(3^{-1})=-1$$"
+      ],
+      [
+        "If the base were $b=9$, the first seed would fail.",
+        "$$\\log_{9}9=1\\neq 2$$",
+        "So $b=9$ is incompatible with the table."
+      ]
+    ]
+  },
+  "22": {
+    "overview": "Domain $x>1$ plus the increasing map $\\log_{2}$ turns $\\log_{2}(x-1)>2$ into $x-1>4$, i.e. $x>5$. The endpoint $x=5$ and the trial $x=3$ fail the strict inequality.",
+    "bodies": [
+      [
+        "The logarithm $\\log_{2}(x-1)$ needs a positive argument.",
+        "$$x-1>0\\implies x>1$$",
+        "That is the natural domain of the left-hand side."
+      ],
+      [
+        "Because the base $2>1$, the logarithm is strictly increasing, so inequality direction is preserved.",
+        "$$\\log_{2}(x-1)>2\\iff x-1>2^{2}=4$$",
+        "On the domain $x>1$ that equivalence is exact."
+      ],
+      [
+        "Simplify the inequality $x-1>4$.",
+        "$$x>5$$",
+        "Intersecting with $x>1$ leaves the same open ray, which is the solution set."
+      ],
+      [
+        "At the boundary $x=5$ the logarithm meets the threshold exactly.",
+        "$$\\log_{2}(5-1)=\\log_{2}4=2$$",
+        "A strict inequality excludes its boundary, so $x=5$ is not a solution."
+      ],
+      [
+        "Substitute the trial $x=3$.",
+        "$$\\log_{2}(3-1)=\\log_{2}2=1$$",
+        "Since $1\\not>2$, the point fails."
+      ]
+    ]
+  },
+  "23": {
+    "overview": "Powers of five give $f(25)=2$, $f(125)=3$, and $f(1/5)=-1$. The product check $f(5)+f(25)=3=f(125)\\neq f(100)$. The unique root of $f$ is $x=1$, not $x=5$.",
+    "bodies": [
+      [
+        "Write the marked abscissa as a square of the base.",
+        "$$25=5^{2}$$",
+        "$$f(25)=\\log_{5}(5^{2})=2$$"
+      ],
+      [
+        "Continue one more power of five.",
+        "$$125=5^{3}\\implies f(125)=\\log_{5}(5^{3})=3$$"
+      ],
+      [
+        "The left side is immediate from the power rule.",
+        "$$f(5)+f(25)=1+2=3$$",
+        "The right side would equal $3$ only if $100=5^{3}=125$, which fails.",
+        "$$f(100)=\\log_{5}100\\neq 3$$"
+      ],
+      [
+        "Rewrite the reciprocal as a negative power.",
+        "$$\\frac{1}{5}=5^{-1}\\implies f(1/5)=\\log_{5}(5^{-1})=-1$$"
+      ],
+      [
+        "Solve $f(x)=0$ by the defining property of logarithms.",
+        "$$\\log_{5}x=0\\iff x=5^{0}=1$$",
+        "The unique root is $x=1$, not $x=5$ (where $f(5)=1$)."
+      ]
+    ]
+  },
+  "24": {
+    "overview": "From $(16,2)$ recover $b^{2}=16$, hence $b=4$ since $b>1$. Then $\\log_{4}64=3$, and the change-of-base chain $\\log_{2}4\\cdot\\log_{4}8=\\log_{2}8=3$. The rival base $b=2$ fails the table.",
+    "bodies": [
+      [
+        "Translate $\\log_{b}16=2$ into an exponential equation.",
+        "$$b^{2}=16$$",
+        "With $b>1$ the unique solution is $b=4$.",
+        "$$b=4$$",
+        "Cross-check: $4^{1}=4$ matches the first column."
+      ],
+      [
+        "Write $64$ as a cube in base $4$.",
+        "$$64=4^{3}\\implies\\log_{4}64=3$$"
+      ],
+      [
+        "The change-of-base chain telescopes through the middle base.",
+        "$$\\log_{2}b\\cdot\\log_{b}8=\\log_{2}8$$",
+        "The identity holds for the recovered $b=4$ (and indeed for every admissible middle base)."
+      ],
+      [
+        "Evaluate the telescoped value.",
+        "$$\\log_{2}8=\\log_{2}(2^{3})=3$$",
+        "Hence the product equals $3$."
+      ],
+      [
+        "The recovered base is $4$. If $b=2$, then $\\log_{2}16=4\\neq 2$, contradicting the table."
+      ]
+    ]
+  },
+  "25": {
+    "overview": "Consolidate to $(x+3)/x=4$, hence $x=1$. Trials $x=3$ and $x=-1$ fail. At the root, $\\log_{2}(x+3)=\\log_{2}4=2$, not $1$.",
+    "bodies": [
+      [
+        "On $x>0$ both arguments of the original logs are positive (since $x+3>x>0$), so the quotient rule applies.",
+        "$$\\log_{2}(x+3)-\\log_{2}x=\\log_{2}\\frac{x+3}{x}$$",
+        "Exponentiate the level equation with base $2$.",
+        "$$\\frac{x+3}{x}=2^{2}=4$$"
+      ],
+      [
+        "Clear the denominator of the reduced equation.",
+        "$$x+3=4x\\implies 3=3x\\implies x=1$$",
+        "The value $x=1$ lies in the domain $x>0$, and uniqueness follows from the linear relation."
+      ],
+      [
+        "Substitute the trial $x=3$.",
+        "$$\\frac{3+3}{3}=2\\neq 4$$",
+        "So $x=3$ is not a root."
+      ],
+      [
+        "At the genuine root $x=1$ evaluate the first summand.",
+        "$$\\log_{2}(1+3)=\\log_{2}4=2$$",
+        "The claimed height $1$ is therefore wrong."
+      ],
+      [
+        "The natural domain requires $x>0$, so the negative candidate $x=-1$ is excluded before any substitution."
+      ]
+    ]
+  },
+  "26": {
+    "overview": "Always $A=2B$ by change of base, so $A>B$ on $x>1$ with difference $\\tfrac12\\log_{2}x$. Equality $A=B$ would force $x=1$, excluded by $x>1$. The case $A=4$ recovers $x=16$ and $B=2$.",
+    "bodies": [
+      [
+        "Express the base-$4$ reading through base $2$.",
+        "$$B=\\log_{4}x=\\frac{\\log_{2}x}{2}=\\frac{A}{2}$$",
+        "Rearrangement yields the exact scaling.",
+        "$$A=2B\\qquad(x>1)$$"
+      ],
+      [
+        "For $x>1$ the base-$2$ log is strictly positive.",
+        "$$A=\\log_{2}x>0$$",
+        "Combined with $A=2B$ this forces $A>B$."
+      ],
+      [
+        "Subtract using the scaling identity.",
+        "$$A-B=\\log_{2}x-\\frac{1}{2}\\log_{2}x=\\frac{1}{2}\\log_{2}x$$"
+      ],
+      [
+        "Equality $A=B$ together with $A=2B$ would force $A=0$, i.e. $x=1$, which is excluded by the standing hypothesis $x>1$."
+      ],
+      [
+        "Solve $A=4$ by exponentiating.",
+        "$$\\log_{2}x=4\\implies x=2^{4}=16$$",
+        "Then the companion reading is immediate.",
+        "$$B=\\log_{4}16=\\log_{4}(4^{2})=2$$"
+      ]
+    ]
+  },
+  "27": {
+    "overview": "Domain is $x>1$ because the outer log needs $\\log_{2}x>0$. Evaluations: $q(16)=2$, $q(4)=1$, $q(2)=0$. The endpoint $x=1$ makes the outer argument vanish, so it is excluded.",
+    "bodies": [
+      [
+        "The outer logarithm requires a positive argument.",
+        "$$\\log_{2}x>0\\implies x>2^{0}=1$$",
+        "Together with $x>0$ from the inner log, the natural domain is $(1,\\infty)$."
+      ],
+      [
+        "Peel $16=2^{4}$.",
+        "$$q(16)=\\log_{2}(\\log_{2}16)=\\log_{2}4=2$$",
+        "The claimed height $3$ is therefore wrong."
+      ],
+      [
+        "Peel $4=2^{2}$.",
+        "$$q(4)=\\log_{2}(\\log_{2}4)=\\log_{2}2=1$$"
+      ],
+      [
+        "At $x=2$ the inner log equals $1$.",
+        "$$q(2)=\\log_{2}(\\log_{2}2)=\\log_{2}1=0$$"
+      ],
+      [
+        "At $x=1$ the inner log vanishes.",
+        "$$\\log_{2}1=0$$",
+        "The outer logarithm of $0$ is undefined, so $x=1$ lies outside the natural domain."
+      ]
+    ]
+  },
+  "28": {
+    "overview": "Cancellation identities give $\\log_{2}(2^{5})=5$ and $2^{\\log_{2}7}=7$. The sum of the two cancellations is $2t$, not $t$. There is no fixed point of $\\log_{2}$ on $(0,\\infty)$, and $\\log_{2}(2^{t})=t$ holds for negative $t$ as well.",
+    "bodies": [
+      [
+        "Matched base cancellation removes the exponential.",
+        "$$\\log_{2}(2^{5})=5$$"
+      ],
+      [
+        "The inverse cancellation removes the logarithm.",
+        "$$2^{\\log_{2}7}=7$$"
+      ],
+      [
+        "Evaluate each cancellation separately for $t>0$.",
+        "$$\\log_{2}(2^{t})=t,\\qquad 2^{\\log_{2}t}=t$$",
+        "Adding the two identities produces $2t$, not $t$.",
+        "$$t+t=2t\\neq t\\qquad(t>0)$$"
+      ],
+      [
+        "A fixed point would solve $\\log_{2}x=x$, equivalently $x=2^{x}$.",
+        "At the trial $x=2$ one has $\\log_{2}2=1\\neq 2$. For $0<x<1$ the log is negative while $x$ is positive. No positive fixed point exists."
+      ],
+      [
+        "Substitute the negative exponent $t=-3$.",
+        "$$\\log_{2}(2^{-3})=\\log_{2}(1/8)=-3$$",
+        "The cancellation identity holds at $t=-3$, so the claim that it fails is false."
+      ]
+    ]
+  },
+  "29": {
+    "overview": "Every base $a>1$ satisfies $\\log_{a}1=0$ and strict increase on $(0,\\infty)$. Positivity of $\\log_{a}x$ fails for $x<1$. Existence of a base with $\\log_{a}(1/2)<0$ is immediate (e.g. $a=2$). Finally $\\log_{a}a^{2}=2$, not $1$.",
+    "bodies": [
+      [
+        "By definition $a^{0}=1$ for every $a>1$.",
+        "$$\\log_{a}1=0$$",
+        "The identity therefore holds for every such base."
+      ],
+      [
+        "Positivity of $\\log_{a}x$ requires $x>1$. A concrete counter-example kills the universal claim.",
+        "$$a=2,\\quad x=\\tfrac12:\\qquad\\log_{2}\\tfrac12=-1\\not>0$$"
+      ],
+      [
+        "Existence needs only one witness.",
+        "$$a=2:\\qquad\\log_{2}\\tfrac12=-1<0$$",
+        "So such a base exists."
+      ],
+      [
+        "For $a>1$ the derivative of $\\log_{a}$ is positive on $(0,\\infty)$.",
+        "$$\\frac{d}{dx}\\log_{a}x=\\frac{1}{x\\ln a}>0$$",
+        "Hence the map is strictly increasing for every such base."
+      ],
+      [
+        "The power rule produces the coefficient $2$, not $1$.",
+        "$$\\log_{a}a^{2}=2\\log_{a}a=2\\neq 1$$"
+      ]
+    ]
+  },
+  "30": {
+    "overview": "Squaring forces $F=H=2\\ln|x|$ on $\\mathbb{R}\\setminus\\{0\\}$. The unsigned $G=2\\ln x$ cannot match $F$ on the negatives. At $x=-e$ one has $F=H=2$ while $G$ is undefined.",
+    "bodies": [
+      [
+        "Rewrite the square through an absolute value.",
+        "$$x^{2}=|x|^{2}\\qquad(x\\neq 0)$$",
+        "Take the natural log and apply the power rule.",
+        "$$F(x)=\\ln(x^{2})=\\ln(|x|^{2})=2\\ln|x|=H(x)$$"
+      ],
+      [
+        "$G$ is only defined for $x>0$, while $F$ is defined for every $x\\neq 0$.",
+        "On the negatives $F$ is finite (e.g. $F(-e)=2$) while $G$ does not even make sense, so $F=G$ fails on $\\mathbb{R}\\setminus\\{0\\}$."
+      ],
+      [
+        "Substitute $x=-e$ into $F$.",
+        "$$F(-e)=\\ln((-e)^{2})=\\ln(e^{2})=2$$"
+      ],
+      [
+        "The rule $G(x)=2\\ln x$ requires a positive argument.",
+        "$$x=-e<0$$",
+        "Hence $G(-e)$ is undefined in $\\mathbb{R}$."
+      ],
+      [
+        "Evaluate $H$ at the same point.",
+        "$$H(-e)=2\\ln|-e|=2\\ln e=2$$"
+      ]
+    ]
+  },
+  "31": {
+    "overview": "A tenfold drop in concentration raises pH by $1$. At $[H^{+}]=10^{-3}$ one has $\\mathrm{pH}=3$, not $-3$. Doubling concentration lowers pH by $\\log_{10}2$. The dependence on concentration is logarithmic, not linear.",
+    "bodies": [
+      [
+        "Write the new concentration as $c/10$ and form the pH difference.",
+        "$$\\Delta\\mathrm{pH}=-\\log_{10}\\frac{c}{10}-\\bigl(-\\log_{10}c\\bigr)=\\log_{10}10$$",
+        "Since $\\log_{10}10=1$, the pH rises by exactly one unit."
+      ],
+      [
+        "Substitute the concrete concentration into the definition.",
+        "$$\\mathrm{pH}=-\\log_{10}(10^{-3})=-(-3)=3$$"
+      ],
+      [
+        "The same evaluation produces $+3$, so the claimed value $-3$ simply drops the leading minus sign in the definition."
+      ],
+      [
+        "Compare pH at $2c$ with pH at $c$.",
+        "$$\\Delta\\mathrm{pH}=-\\log_{10}(2c)-\\bigl(-\\log_{10}c\\bigr)=-\\log_{10}2$$",
+        "Doubling concentration therefore decreases pH by $\\log_{10}2$."
+      ],
+      [
+        "The map $c\\mapsto-\\log_{10}c$ is a composition of a logarithm with a sign change, which is nonlinear on $(0,\\infty)$.",
+        "A linear rule would satisfy $\\mathrm{pH}(2c)=2\\,\\mathrm{pH}(c)$, but $-\\log_{10}(2c)=-\\log_{10}2-\\log_{10}c$ fails that test."
+      ]
+    ]
+  },
+  "32": {
+    "overview": "The inverse of $t\\mapsto 5^{t}$ is $x\\mapsto\\log_{5}x$. Cancellation gives $L(E(7))=7$ and $E(L(9))=9$. Concrete values: $L(25)=2$ and $L(1/5)=-1$, so the rival height $1$ fails.",
+    "bodies": [
+      [
+        "By definition the inverse of the exponential $E(t)=5^{t}$ is the base-$5$ logarithm.",
+        "$$L(x)=\\log_{5}x\\qquad(x>0)$$"
+      ],
+      [
+        "Write $25$ as a square of the base.",
+        "$$25=5^{2}\\implies L(25)=\\log_{5}(5^{2})=2$$"
+      ],
+      [
+        "Inverse cancellation along the exponential path returns the original time.",
+        "$$L(E(7))=L(5^{7})=7$$"
+      ],
+      [
+        "The other cancellation returns the original positive argument.",
+        "$$E(L(9))=5^{\\log_{5}9}=9$$"
+      ],
+      [
+        "Rewrite the reciprocal as a negative power.",
+        "$$\\frac{1}{5}=5^{-1}\\implies L(1/5)=\\log_{5}(5^{-1})=-1$$",
+        "The claimed height $1$ has the wrong sign."
+      ]
+    ]
+  },
+  "33": {
+    "overview": "Domain forces $x>4$ because both $x>0$ and $x-4>0$ are required. Then $r(8)=3\\cdot 2=6$, while $r(16)=4\\log_{2}12\\neq 48$. The trial $x=2$ makes $\\log_{2}(x-4)$ undefined.",
+    "bodies": [
+      [
+        "Each factor needs a positive argument.",
+        "$$x>0\\qquad\\text{and}\\qquad x-4>0$$",
+        "The stricter cut is $x>4$, which is the natural domain of $r$."
+      ],
+      [
+        "The test point $x=8$ satisfies $8>4$, so both $\\log_{2}8$ and $\\log_{2}4$ are defined.",
+        "$$8\\in(4,\\infty)$$"
+      ],
+      [
+        "At $x=2$ the second argument is negative.",
+        "$$x-4=2-4=-2<0$$",
+        "Hence $\\log_{2}(x-4)$ is undefined and $x=2$ lies outside the domain."
+      ],
+      [
+        "Evaluate each factor at $x=8$.",
+        "$$r(8)=\\log_{2}8\\cdot\\log_{2}4=3\\cdot 2=6$$"
+      ],
+      [
+        "At $x=16$ the product is.",
+        "$$r(16)=\\log_{2}16\\cdot\\log_{2}12=4\\log_{2}12$$",
+        "Equality with $48$ would force $\\log_{2}12=12$, i.e. $12=2^{12}$, which is absurd."
+      ]
+    ]
+  },
+  "34": {
+    "overview": "Direct substitution: $x=16$ works because $\\log_{2}16=16/4=4$. The candidates $x=2,4,8$ all fail the crossing condition $\\log_{2}x=x/4$.",
+    "bodies": [
+      [
+        "Compare the two heights at $x=16$.",
+        "$$\\log_{2}16=4,\\qquad\\frac{16}{4}=4$$",
+        "The common value $4$ means the curves cross at that abscissa."
+      ],
+      [
+        "The same substitution already showed both traces equal $4$ at $x=16$.",
+        "$$\\log_{2}16=\\frac{16}{4}=4$$"
+      ],
+      [
+        "At $x=4$ the log height is $2$ while the ray sits at $1$.",
+        "$$\\log_{2}4=2\\neq 1=\\frac{4}{4}$$",
+        "So $x=4$ is not a crossing."
+      ],
+      [
+        "At $x=8$ the heights disagree.",
+        "$$\\log_{2}8=3\\neq 2=\\frac{8}{4}$$"
+      ],
+      [
+        "At $x=2$ the heights disagree.",
+        "$$\\log_{2}2=1\\neq\\tfrac12=\\frac{2}{4}$$"
+      ]
+    ]
+  },
+  "35": {
+    "overview": "Log-differences recover $k=\\ln 2$ from the columns $t=1$ and $t=3$. Then $y(5)/y(1)=16$, while $k\\neq 1/2$. Also $\\ln y(1)=\\ln 5$ matches the table directly.",
+    "bodies": [
+      [
+        "Along $y=y_{0}e^{kt}$ the log-level is affine in time.",
+        "$$\\ln y(t)=\\ln y_{0}+kt$$",
+        "The difference quotient between $t=1$ and $t=3$ therefore recovers the force.",
+        "$$\\frac{\\ln y(3)-\\ln y(1)}{3-1}=k$$"
+      ],
+      [
+        "Insert the table heights.",
+        "$$\\frac{\\ln 20-\\ln 5}{2}=\\frac{\\ln 4}{2}=\\ln 2$$",
+        "So the continuous force equals $\\ln 2$."
+      ],
+      [
+        "Form the ratio of the outer columns.",
+        "$$\\frac{y(5)}{y(1)}=\\frac{80}{5}=16$$",
+        "As a check, $e^{4\\ln 2}=2^{4}=16$ matches the four-unit time gap."
+      ],
+      [
+        "The recovered force is $\\ln 2\\approx 0.693$, which is not equal to $1/2$.",
+        "$$\\ln 2\\neq\\tfrac12$$"
+      ],
+      [
+        "Read the middle-left table entry directly.",
+        "$$\\ln y(1)=\\ln 5$$"
+      ]
+    ]
+  },
+  "36": {
+    "overview": "The three-factor chain telescopes to $\\log_{2}4=2$. Intermediate collapse also gives $\\log_{2}3\\cdot\\log_{3}4$. The rivals $3$ and $\\log_{5}2$ fail.",
+    "bodies": [
+      [
+        "Expand every factor through natural logs and cancel.",
+        "$$P=\\frac{\\ln 3}{\\ln 2}\\cdot\\frac{\\ln 5}{\\ln 3}\\cdot\\frac{\\ln 4}{\\ln 5}=\\frac{\\ln 4}{\\ln 2}=\\log_{2}4$$"
+      ],
+      [
+        "Evaluate the telescoped logarithm.",
+        "$$\\log_{2}4=\\log_{2}(2^{2})=2$$",
+        "Hence $P=2$."
+      ],
+      [
+        "Collapse the last two factors first.",
+        "$$\\log_{3}5\\cdot\\log_{5}4=\\log_{3}4$$",
+        "Multiplying by the remaining front factor yields the two-factor form.",
+        "$$P=\\log_{2}3\\cdot\\log_{3}4$$"
+      ],
+      [
+        "The telescoping value is $2$, so the rival claim $P=3$ fails."
+      ],
+      [
+        "Compare the telescoped value with $\\log_{5}2$.",
+        "$$P=2\\neq\\log_{5}2$$",
+        "because $5^{2}=25\\neq 2$."
+      ]
+    ]
+  },
+  "37": {
+    "overview": "Logging both sides yields $2t=3\\log_{a}c$, hence $t=3\\log_{a}c/2=3\\ln c/(2\\ln a)$. When $c=a$ one gets $t=3/2$; when $c=1$ one gets $t=0$.",
+    "bodies": [
+      [
+        "Take $\\log_{a}$ of both sides of $a^{2t}=c^{3}$.",
+        "$$2t=\\log_{a}(c^{3})=3\\log_{a}c$$",
+        "Solve for the unknown exponent.",
+        "$$t=\\frac{3\\log_{a}c}{2}$$",
+        "Uniqueness follows from injectivity of the exponential in the base $a>1$."
+      ],
+      [
+        "Change of base replaces $\\log_{a}c$ by a quotient of natural logs.",
+        "$$\\log_{a}c=\\frac{\\ln c}{\\ln a}\\implies t=\\frac{3\\ln c}{2\\ln a}$$"
+      ],
+      [
+        "If $c=a$, then $\\log_{a}c=1$, so $t=3/2$, not $3$.",
+        "$$t=\\frac{3\\cdot 1}{2}=\\frac{3}{2}\\neq 3$$"
+      ],
+      [
+        "The same specialisation produces the correct half-integer.",
+        "$$t=\\frac{3}{2}$$"
+      ],
+      [
+        "If $c=1$, then $\\log_{a}1=0$, so the exponent vanishes.",
+        "$$t=\\frac{3\\cdot 0}{2}=0\\neq 1$$"
+      ]
+    ]
+  },
+  "38": {
+    "overview": "Peeling $2^{\\log_{2}(\\log_{2}16)}$ gives $4$. Rewriting $10$ in base $2$ produces $2^{4\\log_{2}10}$. Matched cancellation yields $\\log_{2}15$, while $e^{\\ln 3+\\ln 4}=12$, not $7$.",
+    "bodies": [
+      [
+        "Innermost: $\\log_{2}16=4$. The outer exponential then cancels against $\\log_{2}$.",
+        "$$2^{\\log_{2}(\\log_{2}16)}=2^{\\log_{2}4}=4$$"
+      ],
+      [
+        "The same peel yields $4$, so the claimed value $2$ is wrong."
+      ],
+      [
+        "Write the mismatched base $10$ as a power of $2$.",
+        "$$10=2^{\\log_{2}10}$$",
+        "Raise both sides to the power $\\log_{2}16=4$.",
+        "$$10^{\\log_{2}16}=(2^{\\log_{2}10})^{4}=2^{4\\log_{2}10}$$"
+      ],
+      [
+        "Matched cancellation removes the outer exponential.",
+        "$$\\log_{2}\\bigl(2^{\\log_{2}3+\\log_{2}5}\\bigr)=\\log_{2}3+\\log_{2}5$$",
+        "The sum of logs is the log of the product.",
+        "$$\\log_{2}3+\\log_{2}5=\\log_{2}15$$"
+      ],
+      [
+        "Combine the exponents inside the exponential.",
+        "$$e^{\\ln 3+\\ln 4}=e^{\\ln 12}=12$$",
+        "Since $12\\neq 7$, the claim fails."
+      ]
+    ]
+  },
+  "39": {
+    "overview": "Natural-log evaluations: $f(e^{2})=2$, $f(1)=0$, and $f(1/e)=-1$. The ratio $f(e^{3})/f(e)=3$, and $f(8)/f(2)$ recovers $\\log_{2}8$ by change of base.",
+    "bodies": [
+      [
+        "Cancel the exponential against the natural log.",
+        "$$f(e^{2})=\\ln(e^{2})=2$$"
+      ],
+      [
+        "The natural log vanishes at argument $1$.",
+        "$$f(1)=\\ln 1=0$$"
+      ],
+      [
+        "Evaluate numerator and denominator separately.",
+        "$$f(e^{3})=\\ln(e^{3})=3,\\qquad f(e)=1$$",
+        "The quotient is therefore exactly $3$.",
+        "$$\\frac{f(e^{3})}{f(e)}=3$$"
+      ],
+      [
+        "Change of base converts the ratio of natural logs into a base-$2$ log.",
+        "$$\\frac{f(8)}{f(2)}=\\frac{\\ln 8}{\\ln 2}=\\log_{2}8$$"
+      ],
+      [
+        "Rewrite the reciprocal as a negative power of $e$.",
+        "$$f(1/e)=\\ln(e^{-1})=-1$$",
+        "The claimed height $1$ has the wrong sign."
+      ]
+    ]
+  },
+  "40": {
+    "overview": "For $a>1$, logs preserve order, vanish only at $1$, and equal $1$ only at $a$. Arguments below $1$ give negative logs, so the reversed inequality characterisation fits bases in $(0,1)$, not $a>1$.",
+    "bodies": [
+      [
+        "For every base $a>1$ the logarithm is strictly increasing on $(0,\\infty)$.",
+        "$$x>y>0\\iff\\log_{a}x>\\log_{a}y$$",
+        "That is precisely the claimed biconditional."
+      ],
+      [
+        "The reversed characterisation $x<y$ would fit a base in $(0,1)$, where the logarithm is decreasing.",
+        "For $a>1$ the order is preserved, not reversed, so the claim fails."
+      ],
+      [
+        "Arguments below $1$ produce negative logs, while arguments above $1$ produce positive logs.",
+        "$$0<x<1<y\\implies\\log_{a}x<0<\\log_{a}y$$"
+      ],
+      [
+        "By definition $a^{0}=1$, so the log vanishes exactly at $1$.",
+        "$$\\log_{a}x=0\\iff x=1$$"
+      ],
+      [
+        "The level equation $\\log_{a}x=1$ forces $x=a$, not $x=0$.",
+        "$$\\log_{a}x=1\\iff x=a\\neq 0$$",
+        "Moreover $x=0$ is not even in the domain."
+      ]
+    ]
+  },
+  "41": {
+    "overview": "Absolute value splits into $\\log_{2}(x-3)$ for $x>3$ and $\\log_{2}(3-x)$ for $x<3$. Both $x=7$ and $x=-1$ give $s=2$, while $x=3$ makes the argument vanish and is excluded.",
+    "bodies": [
+      [
+        "On the half-line $x>3$ the expression inside the absolute value is already positive.",
+        "$$|x-3|=x-3\\qquad(x>3)$$",
+        "Taking $\\log_{2}$ yields the claimed branch.",
+        "$$s(x)=\\log_{2}(x-3)$$"
+      ],
+      [
+        "On the complementary half-line $x<3$ the absolute value flips the sign.",
+        "$$|x-3|=3-x\\qquad(x<3)$$",
+        "$$s(x)=\\log_{2}(3-x)$$"
+      ],
+      [
+        "At $x=7>3$ use the right-hand branch.",
+        "$$s(7)=\\log_{2}(7-3)=\\log_{2}4=2$$"
+      ],
+      [
+        "At $x=-1<3$ use the left-hand branch.",
+        "$$s(-1)=\\log_{2}(3-(-1))=\\log_{2}4=2$$"
+      ],
+      [
+        "At $x=3$ the argument of the logarithm vanishes.",
+        "$$|3-3|=0$$",
+        "Since $\\log_{2}0$ is undefined, $s(3)$ does not exist and cannot equal $0$."
+      ]
+    ]
+  },
+  "42": {
+    "overview": "A thousandfold amplitude jump adds $3$ to $M$; a twofold jump adds $\\log_{10}2\\neq 2$. Differences cancel $A_{0}$. Simultaneous scaling of $A$ and $A_{0}$ by $10$ leaves the ratio — and hence $M$ — fixed.",
+    "bodies": [
+      [
+        "Raising amplitude by a factor of $1000$ changes the magnitude by a pure common logarithm.",
+        "$$\\Delta M=\\log_{10}\\frac{1000A}{A}=\\log_{10}1000$$",
+        "Since $1000=10^{3}$, the increment is exactly $3$.",
+        "$$\\Delta M=3$$"
+      ],
+      [
+        "The same difference with factor $2$ produces.",
+        "$$\\Delta M=\\log_{10}2$$",
+        "Because $\\log_{10}2\\neq 2$, the claim fails."
+      ],
+      [
+        "Expand the two magnitudes and cancel the common reference.",
+        "$$M(A)-M(B)=\\log_{10}\\frac{A}{A_{0}}-\\log_{10}\\frac{B}{A_{0}}=\\log_{10}\\frac{A}{B}$$",
+        "The difference is independent of $A_{0}$."
+      ],
+      [
+        "When amplitude equals the reference, the argument of the log is $1$.",
+        "$$M=\\log_{10}\\frac{A_{0}}{A_{0}}=\\log_{10}1=0$$"
+      ],
+      [
+        "Scale both $A$ and $A_{0}$ by the same factor $10$.",
+        "$$M_{\\mathrm{new}}=\\log_{10}\\frac{10A}{10A_{0}}=\\log_{10}\\frac{A}{A_{0}}=M$$",
+        "The magnitude is unchanged, so it does not increase by $1$."
+      ]
+    ]
+  },
+  "43": {
+    "overview": "The seed $f(8)=3$ forces $c\\log_{2}8=3c=3$, hence $c=1$ and $f=\\log_{2}$. Then $f(64)=6$, $f(2)=1$, $f(1/8)=-3$, while $f(4)=2\\neq 4$.",
+    "bodies": [
+      [
+        "Under the standing form $f=c\\log_{2}$, feed in the seed.",
+        "$$f(8)=c\\log_{2}8=c\\cdot 3=3$$",
+        "Solve for the scalar.",
+        "$$c=1$$",
+        "Hence $f(x)=\\log_{2}x$ for every $x>0$."
+      ],
+      [
+        "With $c=1$, evaluate at $x=64=2^{6}$.",
+        "$$f(64)=\\log_{2}(2^{6})=6$$"
+      ],
+      [
+        "At the pure base argument the log equals $1$.",
+        "$$f(2)=\\log_{2}2=1$$"
+      ],
+      [
+        "Rewrite the reciprocal as a negative power.",
+        "$$\\frac{1}{8}=2^{-3}\\implies f(1/8)=\\log_{2}(2^{-3})=-3$$"
+      ],
+      [
+        "At $x=4=2^{2}$ the rebuilt rule gives $2$, not $4$.",
+        "$$f(4)=\\log_{2}4=2\\neq 4$$"
+      ]
+    ]
+  },
+  "44": {
+    "overview": "Domain $x>1$ plus $\\log_{3}x>2$ yields $x>9$. The endpoint $x=9$ gives outer value $1$, and the trial $x=3$ gives outer value $0$, so both fail the strict inequality.",
+    "bodies": [
+      [
+        "The outer logarithm needs a positive argument, i.e. $\\log_{3}x>0$.",
+        "$$\\log_{3}x>0\\iff x>3^{0}=1$$",
+        "That is the natural domain of the nested left-hand side."
+      ],
+      [
+        "Because the outer base $2>1$, the inequality $\\log_{2}(\\cdot)>1$ is equivalent to the argument exceeding $2$.",
+        "$$\\log_{2}(\\log_{3}x)>1\\iff\\log_{3}x>2^{1}=2$$"
+      ],
+      [
+        "Solve $\\log_{3}x>2$ by exponentiating with base $3$.",
+        "$$x>3^{2}=9$$",
+        "Intersecting with the domain $x>1$ leaves the open ray $x>9$."
+      ],
+      [
+        "At the boundary $x=9$ the outer log meets the threshold exactly.",
+        "$$\\log_{2}(\\log_{3}9)=\\log_{2}2=1$$",
+        "A strict inequality excludes its boundary, so $x=9$ is not a solution."
+      ],
+      [
+        "At the trial $x=3$ the inner log equals $1$.",
+        "$$\\log_{2}(\\log_{3}3)=\\log_{2}1=0\\not>1$$"
+      ]
+    ]
+  },
+  "45": {
+    "overview": "Quotient and product rules give $f(24)-f(3)=f(8)=3$ and $f(9)+f(4)=f(36)$. Also $2f(8)=f(64)$. The rival $f(13)$ fails because $9\\cdot 4=36\\neq 13$.",
+    "bodies": [
+      [
+        "The difference of logs is the log of the quotient.",
+        "$$f(24)-f(3)=\\log_{2}\\frac{24}{3}=\\log_{2}8$$",
+        "Since $\\log_{2}8=f(8)$, the claimed identity holds."
+      ],
+      [
+        "The same quotient already equals $\\log_{2}8$.",
+        "$$\\log_{2}8=3$$",
+        "Hence $f(24)-f(3)=3$."
+      ],
+      [
+        "The sum of logs is the log of the product.",
+        "$$f(9)+f(4)=\\log_{2}(9\\cdot 4)=\\log_{2}36=f(36)$$"
+      ],
+      [
+        "The sum equals $f(36)$, and $36\\neq 13$, so the sum cannot equal $f(13)$."
+      ],
+      [
+        "The power rule doubles the log.",
+        "$$2f(8)=2\\log_{2}8=\\log_{2}(8^{2})=\\log_{2}64=f(64)$$"
+      ]
+    ]
+  },
+  "46": {
+    "overview": "Powers of three give $\\log_{3}81=4$ and $\\log_{3}(1/27)=-3$. The product rule writes $\\log_{3}6=\\log_{3}2+1\\neq 2$. Also $\\log_{3}9-\\log_{3}3=1$.",
+    "bodies": [
+      [
+        "Write $81$ as a pure power of three.",
+        "$$81=3^{4}\\implies\\log_{3}81=4$$"
+      ],
+      [
+        "Rewrite the reciprocal as a negative power.",
+        "$$\\frac{1}{27}=3^{-3}\\implies\\log_{3}(1/27)=-3$$"
+      ],
+      [
+        "Factor $6=2\\cdot 3$ and apply the product rule.",
+        "$$\\log_{3}6=\\log_{3}(2\\cdot 3)=\\log_{3}2+\\log_{3}3=\\log_{3}2+1$$"
+      ],
+      [
+        "If $\\log_{3}6=2$, exponentiating would force $6=3^{2}=9$.",
+        "$$6\\neq 9$$",
+        "So the extrapolation to height $2$ fails."
+      ],
+      [
+        "The difference of logs is the log of the quotient.",
+        "$$\\log_{3}9-\\log_{3}3=\\log_{3}\\frac{9}{3}=\\log_{3}3=1$$"
+      ]
+    ]
+  },
+  "47": {
+    "overview": "Consolidate to $x(x-3)=4x$. On $x>3$ cancel the positive factor $x$ to get $x-3=4$, hence $x=7$. The trials $x=0$ and $x=4$ fail.",
+    "bodies": [
+      [
+        "On $x>3$ both $x$ and $x-3$ are positive, so the product rule applies.",
+        "$$\\ln x+\\ln(x-3)=\\ln\\bigl(x(x-3)\\bigr)$$",
+        "Injectivity of $\\ln$ converts equality with $\\ln(4x)$ into a polynomial relation.",
+        "$$x(x-3)=4x$$"
+      ],
+      [
+        "On the domain $x>3$ one may divide by the positive factor $x$.",
+        "$$x-3=4$$"
+      ],
+      [
+        "Solve the reduced linear equation.",
+        "$$x=7$$",
+        "Since $7>3$, the root lies in the natural domain, and uniqueness follows from the linear reduction."
+      ],
+      [
+        "At $x=0$ every logarithm in the original equation is undefined, so $x=0$ is not admissible."
+      ],
+      [
+        "Substitute the trial $x=4$ into the polynomial form.",
+        "$$4(4-3)=4,\\qquad 4\\cdot 4=16$$",
+        "Since $4\\neq 16$, the point $x=4$ is not a root."
+      ]
+    ]
+  },
+  "48": {
+    "overview": "From $3+\\log_{b}4=5$ recover $\\log_{b}4=2$, hence $b^{2}=4$ and $b=2$ since $b>1$. Then $\\log_{2}32=5$ while $\\log_{2}8=3$. The rival base $b=4$ fails the seed equation.",
+    "bodies": [
+      [
+        "Expand the left-hand side by the product rule.",
+        "$$\\log_{b}(b^{3}\\cdot 4)=\\log_{b}(b^{3})+\\log_{b}4=3+\\log_{b}4$$",
+        "The seed equation becomes $3+\\log_{b}4=5$, so $\\log_{b}4=2$, hence $b^{2}=4$.",
+        "$$b=2\\qquad(b>1)$$"
+      ],
+      [
+        "With the recovered base, evaluate directly.",
+        "$$\\log_{2}4=\\log_{2}(2^{2})=2$$"
+      ],
+      [
+        "If $b=4$, the seed fails.",
+        "$$3+\\log_{4}4=3+1=4\\neq 5$$",
+        "So $b=4$ is incompatible."
+      ],
+      [
+        "With $b=2$, write $32$ as a pure power.",
+        "$$\\log_{2}32=\\log_{2}(2^{5})=5$$"
+      ],
+      [
+        "At $x=8$ the height is $3$, not $4$.",
+        "$$\\log_{2}8=\\log_{2}(2^{3})=3\\neq 4$$"
+      ]
+    ]
+  },
+  "49": {
+    "overview": "Peeling once gives $\\log_{2}(\\log_{2}x)=2$, twice gives $\\log_{2}x=4$, hence $x=16$. The giant $2^{16}=65536$ peels to outer value $2$, not $1$.",
+    "bodies": [
+      [
+        "Apply the exponential of base $2$ to both sides.",
+        "$$\\log_{2}(\\log_{2}x)=2^{1}=2$$",
+        "That is the forced middle level."
+      ],
+      [
+        "Apply the exponential once more.",
+        "$$\\log_{2}x=2^{2}=4$$"
+      ],
+      [
+        "Exponentiate a third time to recover the argument.",
+        "$$x=2^{4}=16$$",
+        "Uniqueness follows from bijectivity of each successive logarithm on its range."
+      ],
+      [
+        "Peel the giant candidate $65536=2^{16}$.",
+        "$$\\log_{2}65536=16,\\quad\\log_{2}16=4,\\quad\\log_{2}4=2$$",
+        "The outer value is $2$, not $1$, so $x=65536$ is not a root."
+      ],
+      [
+        "The input $x=2^{16}$ is identical to $65536$, so the same peel applies and again yields outer value $2$, not $1$."
+      ]
+    ]
+  }
+}
