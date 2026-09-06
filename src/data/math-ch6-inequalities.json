@@ -2810,7 +2810,7 @@
         "**A.** → True\n\nAll four factors have simple critical points, so the sign alternates at each one.\n\n$$-1,\\ 1,\\ 2,\\ 3$$\n\n$$\\operatorname{sgn}=+,-,+,-,+$$\n\n$$x\\in(-\\infty,-1)\\cup(1,2)\\cup(3,\\infty)$$\n\nStrictness excludes zeros as well as poles. Therefore the statement is True.",
         "**B.** → True\n\nTranslate the area requirement into a quadratic inequality.\n\n$$x(12-x)\\ge27$$\n\n$$x^2-12x+27\\le0$$\n\n$$(x-3)(x-9)\\le0$$\n\n$$3\\le x\\le9$$\n\nThe resulting interval lies inside the physical side-length domain. Therefore the statement is True.",
         "**C.** → True\n\nSet $u=|x-1|\\ge0$ and solve the outer inequality first.\n\n$$|u-2|\\ge1\\iff u\\le1\\quad\\text{or}\\quad u\\ge3$$\n\n$$|x-1|\\le1\\iff 0\\le x\\le2$$\n\n$$|x-1|\\ge3\\iff x\\le-2\\quad\\text{or}\\quad x\\ge4$$\n\nThe three closed pieces form the stated union. Therefore the statement is True.",
-        "**D.** → False\n\nThe budget condition is $15+6u\\le 153$, so $u\\le(153-15)/6=23$.\n\nThe claim is False.",
+        "**D.** → False\n\nTranslate the service budget into a linear inequality in the unit count $u$.\n\n$$\n15+6u\\le 153\n$$\n\nSubtract the fixed charge.\n\n$$\n6u\\le 138\n$$\n\nDivide by the positive rate $6$.\n\n$$\nu\\le \\dfrac{138}{6}=23\n$$\n\nThe largest admissible integer count is $23$, not the claimed $25$.\n\nSo the statement is False.",
         "**E.** → True\n\nThe zero $a$ and pole $-a$ split the line into three sign intervals.\n\n$$\nx = -a\\ (\\text{pole}),\\qquad x\n$$\n\n$$\n= a\\ (\\text{zero})\n$$\n\n$$\\frac{x-a}{x+a}>0\\iff x\\in(-\\infty,-a)\\cup(a,\\infty)$$\n\nStrictness excludes both critical points. Therefore the statement is True."
       ],
       "difficulty_level": "5/5",
@@ -2841,7 +2841,7 @@
       "tactical_explanations": [
         "**A.** → True\n\nUse $u=x^2$ and then translate the positive interval for $u$ back to $x$.\n\n$$u^2-10u+9<0$$\n\n$$(u-1)(u-9)<0\\iff 1<u<9$$\n\n$$1<x^2<9$$\n\n$$x\\in(-3,-1)\\cup(1,3)$$\n\nAll four boundary points are excluded. Therefore the statement is True.",
         "**B.** → True\n\nA maximum is below a threshold exactly when each entry is below it.\n\n$$x-1<2\\quad\\text{and}\\quad 3-x<2$$\n\n$$x<3\\quad\\text{and}\\quad x>1$$\n\n$$1<x<3$$\n\nBoth inequalities are strict, so both endpoints are excluded. Therefore the statement is True.",
-        "**C.** → False\n\nThe budget condition is $14+6u\\le 176$, so $u\\le(176-14)/6=27$.\n\nThe claim is False.",
+        "**C.** → False\n\nTranslate the service budget into a linear inequality in the unit count $u$.\n\n$$\n14+6u\\le 176\n$$\n\nSubtract the fixed charge.\n\n$$\n6u\\le 162\n$$\n\nDivide by the positive rate $6$.\n\n$$\nu\\le \\dfrac{162}{6}=27\n$$\n\nThe largest admissible integer count is $27$, not the claimed $29$.\n\nSo the statement is False.",
         "**D.** → True\n\nMove the constant to the left over a common denominator.\n\n$$\\frac{2x+1}{x-4}-1=\\frac{x+5}{x-4}$$\n\n$$\\frac{x+5}{x-4}\\le0$$\n\n$$x\\in[-5,4)$$\n\nThe zero $-5$ is included and the pole $4$ is excluded. Therefore the statement is True.",
         "**E.** → True\n\nWork from vertex form and divide by the negative coefficient carefully.\n\n$$-2(x-5)^2+18\\ge10$$\n\n$$(x-5)^2\\le4$$\n\n$$|x-5|\\le2$$\n\n$$3\\le x\\le7$$\n\nThe endpoints give the threshold value exactly. Therefore the statement is True."
       ],
@@ -2872,7 +2872,7 @@
       ],
       "tactical_explanations": [
         "**A.** → True\n\nAn absolute value is positive exactly when its inside is nonzero.\n\n$$|x^2-1|>0\\iff x^2-1\\ne0$$\n\n$$(x-1)(x+1)\\ne0$$\n\n$$x\\ne-1,\\quad x\\ne1$$\n\nNo sign chart beyond the two zeros is needed. Therefore the statement is True.",
-        "**B.** → False\n\nThe budget condition is $13+6u\\le 151$, so $u\\le(151-13)/6=23$.\n\nThe claim is False.",
+        "**B.** → False\n\nTranslate the service budget into a linear inequality in the unit count $u$.\n\n$$\n13+6u\\le 151\n$$\n\nSubtract the fixed charge.\n\n$$\n6u\\le 138\n$$\n\nDivide by the positive rate $6$.\n\n$$\nu\\le \\dfrac{138}{6}=23\n$$\n\nThe largest admissible integer count is $23$, not the claimed $25$.\n\nSo the statement is False.",
         "**C.** → False\n\nThe common factor may cancel algebraically, but the original hole remains.\n\n$$x\\ne1,\\qquad \\frac{x^2-1}{x-1}=x+1$$\n\n$$x+1>0\\iff x>-1$$\n\n$$x\\in(-1,1)\\cup(1,\\infty)$$\n\nThe claim incorrectly restores the undefined point $x=1$. Therefore the statement is False.",
         "**D.** → True\n\nEvery real square is nonnegative.\n\n$$(x-3)^2\\ge0\\quad\\text{for all }x\\in\\mathbb R$$\n\n$$\n(x-3)^2 = 0\\iff x\n$$\n\n$$\n= 3\n$$\n\nThe equality description is exact. Therefore the statement is True.",
         "**E.** → True\n\nIntersect the union from the first condition with the final half-line.\n\n$$\\bigl((-\\infty,-2)\\cup[1,\\infty)\\bigr)\\cap(-\\infty,4)$$\n\n$$(-\\infty,-2)\\cup[1,4)$$\n\nThe mixed open and closed endpoints are preserved. Therefore the statement is True."
@@ -2903,11 +2903,11 @@
         false
       ],
       "tactical_explanations": [
-        "**A.** → False\n\nThe budget condition is $12+6u\\le 174$, so $u\\le(174-12)/6=27$.\n\nThe claim is False.",
+        "**A.** → False\n\nTranslate the service budget into a linear inequality in the unit count $u$.\n\n$$\n12+6u\\le 174\n$$\n\nSubtract the fixed charge.\n\n$$\n6u\\le 162\n$$\n\nDivide by the positive rate $6$.\n\n$$\nu\\le \\dfrac{162}{6}=27\n$$\n\nThe largest admissible integer count is $27$, not the claimed $29$.\n\nSo the statement is False.",
         "**B.** → True\n\nThe numerator is positive except at $x=2$, which lies outside the candidate negative interval.\n\n$$(x-2)^2\\ge0$$\n\n$$(x+4)(x-1)<0\\iff -4<x<1$$\n\n$$\\frac{(x-2)^2}{(x+4)(x-1)}<0\\iff -4<x<1$$\n\nBoth denominator zeros are excluded automatically by the open interval. Therefore the statement is True.",
         "**C.** → True\n\nComplete the square and divide by the positive coefficient.\n\n$$2x^2+8x+3=2(x+2)^2-5$$\n\n$$2(x+2)^2-5<0$$\n\n$$(x+2)^2<\\frac52$$\n\n$$|x+2|<\\sqrt{\\frac52}$$\n\nEvery transformation is reversible. Therefore the statement is True.",
         "**D.** → True\n\nSolve each condition independently and intersect the results.\n\n$$x+1\\le|x-1|\\iff x\\le0$$\n\n$$|x-1|<4\\iff -3<x<5$$\n\n$$(-\\infty,0]\\cap(-3,5)=(-3,0]$$\n\nThe left endpoint is strict while $x=0$ satisfies both conditions. Therefore the statement is True.",
-        "**E.** → False\n\nThe budget condition is $16+6u\\le 154$, so $u\\le(154-16)/6=23$.\n\nThe claim is False."
+        "**E.** → False\n\nTranslate the service budget into a linear inequality in the unit count $u$.\n\n$$\n16+6u\\le 154\n$$\n\nSubtract the fixed charge.\n\n$$\n6u\\le 138\n$$\n\nDivide by the positive rate $6$.\n\n$$\nu\\le \\dfrac{138}{6}=23\n$$\n\nThe largest admissible integer count is $23$, not the claimed $25$.\n\nSo the statement is False."
       ],
       "difficulty_level": "5/5",
       "sort_order": 92,
@@ -2938,7 +2938,7 @@
         "**A.** → True\n\nFactor first, retaining the original domain restriction.\n\n$$x\\ne3,\\qquad \\frac{x^2-9}{x-3}=x+3$$\n\n$$x+3<5\\iff x<2$$\n\nThe removed point $x=3$ lies outside the resulting interval, so no extra hole appears. Therefore the statement is True.",
         "**B.** → True\n\nFactor and inspect the integers in the open interval.\n\n$$(x-2)(x-5)<0$$\n\n$$2<x<5$$\n\n$$x\\in\\mathbb Z\\implies x\\in\\{3,4\\}$$\n\nThe roots themselves are excluded. Therefore the statement is True.",
         "**C.** → True\n\nThe inequality says that $x$ is farther from $0$ than from $2$.\n\n$$|x|>|x-2|$$\n\n$$x^2>(x-2)^2$$\n\n$$4x>4$$\n\n$$x>1$$\n\nSquaring is reversible because both sides are nonnegative. Therefore the statement is True.",
-        "**D.** → False\n\nThe budget condition is $15+6u\\le 177$, so $u\\le(177-15)/6=27$.\n\nThe claim is False.",
+        "**D.** → False\n\nTranslate the service budget into a linear inequality in the unit count $u$.\n\n$$\n15+6u\\le 177\n$$\n\nSubtract the fixed charge.\n\n$$\n6u\\le 162\n$$\n\nDivide by the positive rate $6$.\n\n$$\nu\\le \\dfrac{162}{6}=27\n$$\n\nThe largest admissible integer count is $27$, not the claimed $29$.\n\nSo the statement is False.",
         "**E.** → True\n\nThe denominator is positive, so clear it and complete the square.\n\n$$4x<x^2+4$$\n\n$$x^2-4x+4>0$$\n\n$$(x-2)^2>0$$\n\n$$x\\ne2$$\n\nEquality occurs only at $x=2$. Therefore the statement is True."
       ],
       "difficulty_level": "5/5",
@@ -2969,7 +2969,7 @@
       "tactical_explanations": [
         "**A.** → True\n\nRecognize the parameterized perfect square.\n\n$$x^2-2ax+a^2=(x-a)^2$$\n\n$$(x-a)^2\\ge0$$\n\nA real square cannot be strictly negative. Therefore the statement is True.",
         "**B.** → True\n\nEqual absolute values split into equal and opposite linear branches.\n\n$$\nx-1 = 2x+3\\quad\\text{or}\\quad x-1\n$$\n\n$$\n= -(2x+3)\n$$\n\n$$\nx = -4\\quad\\text{or}\\quad 3x\n$$\n\n$$\n= -2\n$$\n\n$$x\\in\\left\\{-4,-\\frac23\\right\\}$$\n\nBoth branch solutions satisfy the original equation. Therefore the statement is True.",
-        "**C.** → False\n\nThe budget condition is $14+6u\\le 152$, so $u\\le(152-14)/6=23$.\n\nThe claim is False.",
+        "**C.** → False\n\nTranslate the service budget into a linear inequality in the unit count $u$.\n\n$$\n14+6u\\le 152\n$$\n\nSubtract the fixed charge.\n\n$$\n6u\\le 138\n$$\n\nDivide by the positive rate $6$.\n\n$$\nu\\le \\dfrac{138}{6}=23\n$$\n\nThe largest admissible integer count is $23$, not the claimed $25$.\n\nSo the statement is False.",
         "**D.** → True\n\nThe squared numerator is nonnegative, while the denominator controls the nonzero sign.\n\n$$(x-1)^2\\ge0,\\qquad x\\ne-2$$\n\n$$x>-2\\implies \\frac{(x-1)^2}{x+2}\\ge0$$\n\n$$x<-2\\implies \\frac{(x-1)^2}{x+2}<0$$\n\nThe zero at $x=1$ is already contained in the interval. Therefore the statement is True.",
         "**E.** → True\n\nBring the two models to one side and use the quadratic formula.\n\n$$x^2-x-4\\le0$$\n\n$$\nx = \\frac{1\\pm\\sqrt{1+16}}{2}\n$$\n\n$$\n= \\frac{1\\pm\\sqrt{17}}{2}\n$$\n\n$$\\frac{1-\\sqrt{17}}{2}\\le x\\le\\frac{1+\\sqrt{17}}{2}$$\n\nThe upward-opening quadratic is nonpositive between its roots. Therefore the statement is True."
       ],
@@ -3000,7 +3000,7 @@
       ],
       "tactical_explanations": [
         "**A.** → True\n\nA product of two absolute values is always nonnegative.\n\n$$|x-1|\\,|x+1|\\ge0$$\n\n$$|x-1|\\,|x+1|\\le0\\iff |x-1|\\,|x+1|=0$$\n\n$$\nx = -1\\quad\\text{or}\\quad x\n$$\n\n$$\n= 1\n$$\n\nNo interval can satisfy the inequality away from the two zeros. Therefore the statement is True.",
-        "**B.** → False\n\nThe budget condition is $13+6u\\le 175$, so $u\\le(175-13)/6=27$.\n\nThe claim is False.",
+        "**B.** → False\n\nTranslate the service budget into a linear inequality in the unit count $u$.\n\n$$\n13+6u\\le 175\n$$\n\nSubtract the fixed charge.\n\n$$\n6u\\le 162\n$$\n\nDivide by the positive rate $6$.\n\n$$\nu\\le \\dfrac{162}{6}=27\n$$\n\nThe largest admissible integer count is $27$, not the claimed $29$.\n\nSo the statement is False.",
         "**C.** → True\n\nA reciprocal is positive exactly when its nonzero denominator is positive.\n\n$$x^2-4>0$$\n\n$$(x-2)(x+2)>0$$\n\n$$x<-2\\quad\\text{or}\\quad x>2$$\n\nBoth poles are excluded. Therefore the statement is True.",
         "**D.** → False\n\nComplete the square to identify the minimum value.\n\n$$x^2-6x+k=(x-3)^2+k-9$$\n\n$$\\min_x\\bigl(x^2-6x+k\\bigr)=k-9$$\n\n$$\\exists x:\\ x^2-6x+k<0\\iff k<9$$\n\nAt $k=9$ the minimum is zero, so the strict inequality has no solution. Therefore the statement is False.",
         "**E.** → True\n\nSolve the two distance conditions and intersect them.\n\n$$|x-2|<3\\iff -1<x<5$$\n\n$$|x+1|\\ge2\\iff x\\le-3\\quad\\text{or}\\quad x\\ge1$$\n\n$$(-1,5)\\cap\\bigl((-\\infty,-3]\\cup[1,\\infty)\\bigr)=[1,5)$$\n\nThe left endpoint comes from a non-strict condition; the right remains strict. Therefore the statement is True."
@@ -3031,11 +3031,11 @@
         false
       ],
       "tactical_explanations": [
-        "**A.** → False\n\nThe budget condition is $12+6u\\le 150$, so $u\\le(150-12)/6=23$.\n\nThe claim is False.",
+        "**A.** → False\n\nTranslate the service budget into a linear inequality in the unit count $u$.\n\n$$\n12+6u\\le 150\n$$\n\nSubtract the fixed charge.\n\n$$\n6u\\le 138\n$$\n\nDivide by the positive rate $6$.\n\n$$\nu\\le \\dfrac{138}{6}=23\n$$\n\nThe largest admissible integer count is $23$, not the claimed $25$.\n\nSo the statement is False.",
         "**B.** → True\n\nThe squared denominator is positive on the domain, so cross-multiplication is safe.\n\n$$x\\ne2,\\qquad 1\\le(x-2)^2$$\n\n$$|x-2|\\ge1$$\n\n$$x\\le1\\quad\\text{or}\\quad x\\ge3$$\n\nThe forbidden point $2$ lies in the rejected central interval. Therefore the statement is True.",
         "**C.** → True\n\nSubtract the line and solve the resulting quadratic sign condition.\n\n$$-x^2+3x+2>0$$\n\n$$x^2-3x-2<0$$\n\n$$\nx = \\frac{3\\pm\\sqrt{9+8}}{2}\n$$\n\n$$\n= \\frac{3\\pm\\sqrt{17}}{2}\n$$\n\nThe interval is open because the comparison is strict. Therefore the statement is True.",
         "**D.** → True\n\nA minimum is at least a threshold exactly when both entries are.\n\n$$x+2\\ge1\\quad\\text{and}\\quad4-x\\ge1$$\n\n$$x\\ge-1\\quad\\text{and}\\quad x\\le3$$\n\n$$-1\\le x\\le3$$\n\nBoth endpoints meet the non-strict threshold. Therefore the statement is True.",
-        "**E.** → False\n\nThe budget condition is $16+6u\\le 178$, so $u\\le(178-16)/6=27$.\n\nThe claim is False."
+        "**E.** → False\n\nTranslate the service budget into a linear inequality in the unit count $u$.\n\n$$\n16+6u\\le 178\n$$\n\nSubtract the fixed charge.\n\n$$\n6u\\le 162\n$$\n\nDivide by the positive rate $6$.\n\n$$\nu\\le \\dfrac{162}{6}=27\n$$\n\nThe largest admissible integer count is $27$, not the claimed $29$.\n\nSo the statement is False."
       ],
       "difficulty_level": "5/5",
       "sort_order": 96,
@@ -3066,7 +3066,7 @@
         "**A.** → True\n\nSubtract the two sides and retain both domain exclusions.\n\n$$\\frac1x-\\frac1{x+2}=\\frac{2}{x(x+2)}$$\n\n$$\\frac{2}{x(x+2)}\\ge0\\iff x(x+2)>0$$\n\n$$x\\in(-\\infty,-2)\\cup(0,\\infty)$$\n\nThe numerator never vanishes, so equality never occurs. Therefore the statement is True.",
         "**B.** → True\n\nOrder the four simple roots and keep the positive sign intervals.\n\n$$(x-2)(x+2)(x-4)(x+4)>0$$\n\n$$-4,\\ -2,\\ 2,\\ 4$$\n\n$$x\\in(-\\infty,-4)\\cup(-2,2)\\cup(4,\\infty)$$\n\nEvery root is excluded by strictness. Therefore the statement is True.",
         "**C.** → True\n\nMultiply all three parts by the positive denominator and then translate.\n\n$$-6<x-1\\le12$$\n\n$$-5<x\\le13$$\n\nMultiplication by $3$ does not reverse either sign. Therefore the statement is True.",
-        "**D.** → False\n\nThe budget condition is $15+6u\\le 153$, so $u\\le(153-15)/6=23$.\n\nThe claim is False.",
+        "**D.** → False\n\nTranslate the service budget into a linear inequality in the unit count $u$.\n\n$$\n15+6u\\le 153\n$$\n\nSubtract the fixed charge.\n\n$$\n6u\\le 138\n$$\n\nDivide by the positive rate $6$.\n\n$$\nu\\le \\dfrac{138}{6}=23\n$$\n\nThe largest admissible integer count is $23$, not the claimed $25$.\n\nSo the statement is False.",
         "**E.** → True\n\nAway from its pole, the squared denominator is positive.\n\n$$(x+1)^2>0\\quad(x\\ne-1)$$\n\n$$\\frac{x-3}{(x+1)^2}>0\\iff x-3>0$$\n\n$$x>3$$\n\nNeither the pole nor the numerator zero lies in the strict solution set. Therefore the statement is True."
       ],
       "difficulty_level": "5/5",
@@ -3097,7 +3097,7 @@
       "tactical_explanations": [
         "**A.** → True\n\nAn upward-opening quadratic is nonnegative everywhere exactly when its discriminant is nonpositive.\n\n$$\\Delta=k^2-16$$\n\n$$\\Delta\\le0\\iff k^2\\le16$$\n\n$$|k|\\le4$$\n\nAt the two boundary parameters the quadratic has a double zero. Therefore the statement is True.",
         "**B.** → True\n\nRespect the radical domain and separate the branch where the right side is nonpositive.\n\n$$x\\ge-2$$\n\n$$-2\\le x\\le0\\implies \\sqrt{x+2}\\ge0\\ge x$$\n\n$$x>0:\\quad x+2\\ge x^2\\iff (x-2)(x+1)\\le0$$\n\n$$x\\in[-2,2]$$\n\nSquaring is used only where both sides are nonnegative. Therefore the statement is True.",
-        "**C.** → False\n\nThe budget condition is $14+6u\\le 176$, so $u\\le(176-14)/6=27$.\n\nThe claim is False.",
+        "**C.** → False\n\nTranslate the service budget into a linear inequality in the unit count $u$.\n\n$$\n14+6u\\le 176\n$$\n\nSubtract the fixed charge.\n\n$$\n6u\\le 162\n$$\n\nDivide by the positive rate $6$.\n\n$$\nu\\le \\dfrac{162}{6}=27\n$$\n\nThe largest admissible integer count is $27$, not the claimed $29$.\n\nSo the statement is False.",
         "**D.** → True\n\nFactor and cancel while preserving the original excluded point.\n\n$$x\\ne1,\\qquad \\frac{(x-1)(x-3)}{x-1}=x-3$$\n\n$$x-3\\le0\\iff x\\le3$$\n\n$$x\\in(-\\infty,1)\\cup(1,3]$$\n\nThe hole at $x=1$ splits the otherwise closed half-line. Therefore the statement is True.",
         "**E.** → True\n\nThe even-multiplicity factor never changes sign.\n\n$$(x-2)^2\\ge0$$\n\n$$(x-2)^2(x+1)<0\\iff x+1<0$$\n\n$$x<-1$$\n\nThe double zero $x=2$ is not admitted by a strict inequality. Therefore the statement is True."
       ],
@@ -3127,11 +3127,11 @@
         true
       ],
       "tactical_explanations": [
-        "**A.** → True\n\nNumerator and denominator have the same sign on the two outer intervals.\n\nThe claim is True.",
-        "**B.** → False\n\nThe pole is excluded from every solution set.\n\nThe claim is False.",
-        "**C.** → True\n\nThe numerator is zero and the denominator is nonzero.\n\nThe claim is True.",
-        "**D.** → True\n\nThe ratio is negative between pole and zero, then equals zero at the zero.\n\nThe claim is True.",
-        "**E.** → True\n\n$R-1=(-1-3)/(x+1)$, which is positive exactly below the pole.\n\nThe claim is True."
+        "**A.** → True\n\nStart from the claimed strict positivity of the control ratio.\n\n$$\nR(x)=\\dfrac{x-3}{x+1}\n$$\n\n$$\nR(x)>0\n$$\n\nThe critical points are the numerator zero and the excluded pole.\n\n$$\nx-3=0\\Rightarrow x=3\n$$\n\n$$\nx+1=0\\Rightarrow x=-1\n$$\n\n(the pole $x=-1$ is never allowed).\n\nSign chart on the open intervals:\n\n| Interval | Sign of $R(x)$ |\n| --- | --- |\n| $(-\\infty,-1)$ | $+$ |\n| $(-1,3)$ | $-$ |\n| $(3,\\infty)$ | $+$ |\n\nThe strict inequality keeps only the positive intervals, so\n\n$$\nx<-1\\quad\\text{or}\\quad x>3\n$$\n\nwhich is exactly the claimed set.\n\nSo the statement is True.",
+        "**B.** → False\n\nThe claimed solution set for $R(x)\\le 0$ would have to include every $x$ where the ratio is defined and nonpositive.\n\nAt the pole the denominator vanishes:\n\n$$\nx=-1\\Rightarrow x+1=0\n$$\n\nso $R(-1)$ is undefined. A value that makes the denominator zero is excluded from every solution set of a rational inequality, regardless of the inequality symbol.\n\nTherefore $x=-1$ cannot belong to the solution of $R(x)\\le 0$.\n\nSo the statement is False.",
+        "**C.** → True\n\nEvaluate the ratio at the claimed zero.\n\n$$\nR(3)=\\dfrac{3-3}{3+1}=\\dfrac{0}{4}\n$$\n\nSince the denominator $4$ is nonzero,\n\n$$\nR(3)=0\n$$\n\nThe numerator is zero and the denominator is nonzero, confirming the claim.\n\nSo the statement is True.",
+        "**D.** → True\n\nSolve the non-strict inequality on the domain $x\\ne -1$.\n\n$$\nR(x)=\\dfrac{x-3}{x+1}\\le 0\n$$\n\nCritical points: zero $x=3$, pole $x=-1$ (excluded).\n\nOn $(-1,3)$ the numerator and denominator have opposite signs, so $R(x)<0$.\nAt $x=3$ the numerator vanishes, so $R(3)=0$.\nOutside that closed stretch the ratio is positive (or undefined at the pole).\n\nHence\n\n$$\nR(x)\\le 0\\quad\\text{exactly on }(-1,3]\n$$\n\nmatching the claim.\n\nSo the statement is True.",
+        "**E.** → True\n\nRewrite the comparison $R(x)>1$ by moving the constant to one side.\n\n$$\n\\dfrac{x-3}{x+1}-1>0\n$$\n\nWrite $1$ over the same denominator.\n\n$$\n1=\\dfrac{x+1}{x+1}\n$$\n\n$$\n\\dfrac{x-3-(x+1)}{x+1}>0\n$$\n\n$$\n\\dfrac{-4}{x+1}>0\n$$\n\nThe constant numerator $-4$ is negative, so the fraction is positive precisely when the denominator is negative:\n\n$$\nx+1<0\\Rightarrow x<-1\n$$\n\n(the pole itself is excluded). This is exactly the claimed condition.\n\nSo the statement is True."
       ],
       "difficulty_level": "5/5",
       "sort_order": 99,
@@ -3159,11 +3159,11 @@
         true
       ],
       "tactical_explanations": [
-        "**A.** → True\n\nA downward-opening factored quadratic is nonnegative between its roots.\n\nThe claim is True.",
-        "**B.** → True\n\n$Q(6)=-(3)(-3)=9$.\n\nThe claim is True.",
-        "**C.** → True\n\nThe axis is the midpoint of the two roots.\n\nThe claim is True.",
-        "**D.** → False\n\nAt the root the score is zero, so strict positivity excludes it.\n\nThe claim is False.",
-        "**E.** → True\n\nThe quadratic is negative outside its roots.\n\nThe claim is True."
+        "**A.** → True\n\nThe quality score is the downward-opening factored quadratic\n\n$$\nQ(x)=-(x-3)(x-9)\n$$\n\nA product $(x-3)(x-9)$ is nonpositive between the roots, so $-$ times that product is nonnegative on $[3,9]$:\n\n$$\nQ(x)\\ge 0\\iff 3\\le x\\le 9\n$$\n\nwhich is exactly the accepted-settings interval $[3,9]$.\n\nSo the statement is True.",
+        "**B.** → True\n\nSubstitute the midpoint into the factored score.\n\n$$\nQ(6)=-(6-3)(6-9)\n$$\n\n$$\n=-(3)(-3)\n$$\n\n$$\n=-(-9)=9\n$$\n\nSo $Q(6)=9$, matching the claim.\n\nSo the statement is True.",
+        "**C.** → True\n\nFor a quadratic, the axis of symmetry is the midpoint of the roots.\n\n$$\nx=\\dfrac{3+9}{2}=6\n$$\n\nBecause $Q$ opens downward, that axis is where the maximum occurs. Hence the highest score is at $x=6$.\n\nSo the statement is True.",
+        "**D.** → False\n\nAt a root the factored score vanishes:\n\n$$\nQ(3)=-(3-3)(3-9)=0\n$$\n\nThe claim asks for the strict inequality $Q(x)>0$. Zero fails that strict test, so $x=3$ is excluded from the positive set.\n\nSo the statement is False.",
+        "**E.** → True\n\nOutside the roots the product $(x-3)(x-9)$ is positive, so\n\n$$\nQ(x)=-(x-3)(x-9)<0\n$$\n\nexactly when\n\n$$\nx<3\\quad\\text{or}\\quad x>9\n$$\n\nmatching the claim.\n\nSo the statement is True."
       ],
       "difficulty_level": "5/5",
       "sort_order": 100,
@@ -3191,11 +3191,11 @@
         false
       ],
       "tactical_explanations": [
-        "**A.** → True\n\nUnfolding the absolute value gives the closed interval.\n\nThe claim is True.",
-        "**B.** → True\n\nIts distance from the target equals the allowed radius.\n\nThe claim is True.",
-        "**C.** → False\n\nThe comfort rule is strict and excludes both endpoints.\n\nThe claim is False.",
-        "**D.** → True\n\nThis is the complement of the closed compliance interval.\n\nThe claim is True.",
-        "**E.** → False\n\nA non-strict exterior condition includes both boundary points.\n\nThe claim is False."
+        "**A.** → True\n\nUnfold the absolute-value compliance rule.\n\n$$\n|T-20|\\le 4\n$$\n\n$$\n-4\\le T-20\\le 4\n$$\n\nAdd $20$ through all three parts.\n\n$$\n16\\le T\\le 24\n$$\n\nwhich is exactly the claimed closed interval.\n\nSo the statement is True.",
+        "**B.** → True\n\nCheck the claimed endpoint against the compliance rule.\n\n$$\n|T-20|=|24-20|=4\n$$\n\nThe non-strict inequality $|T-20|\\le 4$ allows equality, so $T=24$ is compliant.\n\nSo the statement is True.",
+        "**C.** → False\n\nThe comfort rule is the strict version\n\n$$\n|T-20|<4\n$$\n\nAt the left endpoint\n\n$$\n|16-20|=4\n$$\n\nwhich fails the strict test. Both endpoints of $[16,24]$ are excluded by comfort.\n\nSo the statement is False.",
+        "**D.** → True\n\nCompliance is the closed interval $[16,24]$. Its complement in the reals is the open exterior\n\n$$\nT<16\\quad\\text{or}\\quad T>24\n$$\n\nwhich is exactly the claimed noncompliance set.\n\nSo the statement is True.",
+        "**E.** → False\n\nUnfold the non-strict exterior condition.\n\n$$\n|T-20|\\ge 4\n$$\n\n$$\nT-20\\le -4\\quad\\text{or}\\quad T-20\\ge 4\n$$\n\n$$\nT\\le 16\\quad\\text{or}\\quad T\\ge 24\n$$\n\nBoth boundary points are included. The claimed “open exterior” is therefore wrong.\n\nSo the statement is False."
       ],
       "difficulty_level": "5/5",
       "sort_order": 101,
@@ -3223,11 +3223,11 @@
         true
       ],
       "tactical_explanations": [
-        "**A.** → True\n\n$2n\\le100$ gives $n\\le50$.\n\nThe claim is True.",
-        "**B.** → True\n\n$3n\\le180$ gives $n\\le60$.\n\nThe claim is True.",
-        "**C.** → True\n\n$1.5n\\le72$ gives $n\\le48$.\n\nThe claim is True.",
-        "**D.** → False\n\nThe tightest of the three upper bounds is $48$.\n\nThe claim is False.",
-        "**E.** → True\n\nThe feasible integer range reaches $48$, and $40\\le48$.\n\nThe claim is True."
+        "**A.** → True\n\nMaterial A uses $2$ kg per kit against $100$ kg available.\n\n$$\n2n\\le 100\n$$\n\nDivide both sides by the positive coefficient $2$.\n\n$$\nn\\le 50\n$$\n\nSo material A permits at most $50$ kits.\n\nSo the statement is True.",
+        "**B.** → True\n\nMaterial B uses $3$ kg per kit against $180$ kg available.\n\n$$\n3n\\le 180\n$$\n\nDivide both sides by $3$.\n\n$$\nn\\le 60\n$$\n\nSo material B permits at most $60$ kits.\n\nSo the statement is True.",
+        "**C.** → True\n\nLabor uses $1.5$ hours per kit against $72$ hours available.\n\n$$\n1.5n\\le 72\n$$\n\nDivide both sides by $1.5$.\n\n$$\nn\\le \\dfrac{72}{1.5}=48\n$$\n\nSo labor permits at most $48$ kits.\n\nSo the statement is True.",
+        "**D.** → False\n\nCombine the three resource upper bounds.\n\n$$\nn\\le 50,\\qquad n\\le 60,\\qquad n\\le 48\n$$\n\nThe overall production cap is the tightest of these:\n\n$$\nn\\le \\min\\{50,60,48\\}=48\n$$\n\nThe claim that the overall cap is $50$ is therefore false.\n\nSo the statement is False.",
+        "**E.** → True\n\nFrom the three resource limits the feasible integer counts satisfy\n\n$$\nn\\le 48\n$$\n\ntogether with the order minimum\n\n$$\nn\\ge 40\n$$\n\nSince $40\\le 48$, the integer range $[40,48]$ is nonempty, so the order minimum is feasible.\n\nSo the statement is True."
       ],
       "difficulty_level": "5/5",
       "sort_order": 102,
@@ -3255,11 +3255,11 @@
         true
       ],
       "tactical_explanations": [
-        "**A.** → True\n\nNumerator and denominator have the same sign on the two outer intervals.\n\nThe claim is True.",
-        "**B.** → False\n\nThe pole is excluded from every solution set.\n\nThe claim is False.",
-        "**C.** → True\n\nThe numerator is zero and the denominator is nonzero.\n\nThe claim is True.",
-        "**D.** → True\n\nThe ratio is negative between pole and zero, then equals zero at the zero.\n\nThe claim is True.",
-        "**E.** → True\n\n$R-1=(-2-4)/(x+2)$, which is positive exactly below the pole.\n\nThe claim is True."
+        "**A.** → True\n\nStart from the claimed strict positivity of the control ratio.\n\n$$\nR(x)=\\dfrac{x-4}{x+2}\n$$\n\n$$\nR(x)>0\n$$\n\nThe critical points are the numerator zero and the excluded pole.\n\n$$\nx-4=0\\Rightarrow x=4\n$$\n\n$$\nx+2=0\\Rightarrow x=-2\n$$\n\n(the pole $x=-2$ is never allowed).\n\nSign chart on the open intervals:\n\n| Interval | Sign of $R(x)$ |\n| --- | --- |\n| $(-\\infty,-2)$ | $+$ |\n| $(-2,4)$ | $-$ |\n| $(4,\\infty)$ | $+$ |\n\nThe strict inequality keeps only the positive intervals, so\n\n$$\nx<-2\\quad\\text{or}\\quad x>4\n$$\n\nwhich is exactly the claimed set.\n\nSo the statement is True.",
+        "**B.** → False\n\nThe claimed solution set for $R(x)\\le 0$ would have to include every $x$ where the ratio is defined and nonpositive.\n\nAt the pole the denominator vanishes:\n\n$$\nx=-2\\Rightarrow x+2=0\n$$\n\nso $R(-2)$ is undefined. A value that makes the denominator zero is excluded from every solution set of a rational inequality, regardless of the inequality symbol.\n\nTherefore $x=-2$ cannot belong to the solution of $R(x)\\le 0$.\n\nSo the statement is False.",
+        "**C.** → True\n\nEvaluate the ratio at the claimed zero.\n\n$$\nR(4)=\\dfrac{4-4}{4+2}=\\dfrac{0}{6}\n$$\n\nSince the denominator $6$ is nonzero,\n\n$$\nR(4)=0\n$$\n\nThe numerator is zero and the denominator is nonzero, confirming the claim.\n\nSo the statement is True.",
+        "**D.** → True\n\nSolve the non-strict inequality on the domain $x\\ne -2$.\n\n$$\nR(x)=\\dfrac{x-4}{x+2}\\le 0\n$$\n\nCritical points: zero $x=4$, pole $x=-2$ (excluded).\n\nOn $(-2,4)$ the numerator and denominator have opposite signs, so $R(x)<0$.\nAt $x=4$ the numerator vanishes, so $R(4)=0$.\nOutside that closed stretch the ratio is positive (or undefined at the pole).\n\nHence\n\n$$\nR(x)\\le 0\\quad\\text{exactly on }(-2,4]\n$$\n\nmatching the claim.\n\nSo the statement is True.",
+        "**E.** → True\n\nRewrite the comparison $R(x)>1$ by moving the constant to one side.\n\n$$\n\\dfrac{x-4}{x+2}-1>0\n$$\n\nWrite $1$ over the same denominator.\n\n$$\n1=\\dfrac{x+2}{x+2}\n$$\n\n$$\n\\dfrac{x-4-(x+2)}{x+2}>0\n$$\n\n$$\n\\dfrac{-6}{x+2}>0\n$$\n\nThe constant numerator $-6$ is negative, so the fraction is positive precisely when the denominator is negative:\n\n$$\nx+2<0\\Rightarrow x<-2\n$$\n\n(the pole itself is excluded). This is exactly the claimed condition.\n\nSo the statement is True."
       ],
       "difficulty_level": "5/5",
       "sort_order": 103,
@@ -3287,11 +3287,11 @@
         true
       ],
       "tactical_explanations": [
-        "**A.** → True\n\nA downward-opening factored quadratic is nonnegative between its roots.\n\nThe claim is True.",
-        "**B.** → True\n\n$Q(7)=-(3)(-3)=9$.\n\nThe claim is True.",
-        "**C.** → True\n\nThe axis is the midpoint of the two roots.\n\nThe claim is True.",
-        "**D.** → False\n\nAt the root the score is zero, so strict positivity excludes it.\n\nThe claim is False.",
-        "**E.** → True\n\nThe quadratic is negative outside its roots.\n\nThe claim is True."
+        "**A.** → True\n\nThe quality score is the downward-opening factored quadratic\n\n$$\nQ(x)=-(x-4)(x-10)\n$$\n\nA product $(x-4)(x-10)$ is nonpositive between the roots, so $-$ times that product is nonnegative on $[4,10]$:\n\n$$\nQ(x)\\ge 0\\iff 4\\le x\\le 10\n$$\n\nwhich is exactly the accepted-settings interval $[4,10]$.\n\nSo the statement is True.",
+        "**B.** → True\n\nSubstitute the midpoint into the factored score.\n\n$$\nQ(7)=-(7-4)(7-10)\n$$\n\n$$\n=-(3)(-3)\n$$\n\n$$\n=-(-9)=9\n$$\n\nSo $Q(7)=9$, matching the claim.\n\nSo the statement is True.",
+        "**C.** → True\n\nFor a quadratic, the axis of symmetry is the midpoint of the roots.\n\n$$\nx=\\dfrac{4+10}{2}=7\n$$\n\nBecause $Q$ opens downward, that axis is where the maximum occurs. Hence the highest score is at $x=7$.\n\nSo the statement is True.",
+        "**D.** → False\n\nAt a root the factored score vanishes:\n\n$$\nQ(4)=-(4-4)(4-10)=0\n$$\n\nThe claim asks for the strict inequality $Q(x)>0$. Zero fails that strict test, so $x=4$ is excluded from the positive set.\n\nSo the statement is False.",
+        "**E.** → True\n\nOutside the roots the product $(x-4)(x-10)$ is positive, so\n\n$$\nQ(x)=-(x-4)(x-10)<0\n$$\n\nexactly when\n\n$$\nx<4\\quad\\text{or}\\quad x>10\n$$\n\nmatching the claim.\n\nSo the statement is True."
       ],
       "difficulty_level": "5/5",
       "sort_order": 104,
@@ -3319,11 +3319,11 @@
         false
       ],
       "tactical_explanations": [
-        "**A.** → True\n\nUnfolding the absolute value gives the closed interval.\n\nThe claim is True.",
-        "**B.** → True\n\nIts distance from the target equals the allowed radius.\n\nThe claim is True.",
-        "**C.** → False\n\nThe comfort rule is strict and excludes both endpoints.\n\nThe claim is False.",
-        "**D.** → True\n\nThis is the complement of the closed compliance interval.\n\nThe claim is True.",
-        "**E.** → False\n\nA non-strict exterior condition includes both boundary points.\n\nThe claim is False."
+        "**A.** → True\n\nUnfold the absolute-value compliance rule.\n\n$$\n|T-21|\\le 4\n$$\n\n$$\n-4\\le T-21\\le 4\n$$\n\nAdd $21$ through all three parts.\n\n$$\n17\\le T\\le 25\n$$\n\nwhich is exactly the claimed closed interval.\n\nSo the statement is True.",
+        "**B.** → True\n\nCheck the claimed endpoint against the compliance rule.\n\n$$\n|T-21|=|25-21|=4\n$$\n\nThe non-strict inequality $|T-21|\\le 4$ allows equality, so $T=25$ is compliant.\n\nSo the statement is True.",
+        "**C.** → False\n\nThe comfort rule is the strict version\n\n$$\n|T-21|<4\n$$\n\nAt the left endpoint\n\n$$\n|17-21|=4\n$$\n\nwhich fails the strict test. Both endpoints of $[17,25]$ are excluded by comfort.\n\nSo the statement is False.",
+        "**D.** → True\n\nCompliance is the closed interval $[17,25]$. Its complement in the reals is the open exterior\n\n$$\nT<17\\quad\\text{or}\\quad T>25\n$$\n\nwhich is exactly the claimed noncompliance set.\n\nSo the statement is True.",
+        "**E.** → False\n\nUnfold the non-strict exterior condition.\n\n$$\n|T-21|\\ge 4\n$$\n\n$$\nT-21\\le -4\\quad\\text{or}\\quad T-21\\ge 4\n$$\n\n$$\nT\\le 17\\quad\\text{or}\\quad T\\ge 25\n$$\n\nBoth boundary points are included. The claimed “open exterior” is therefore wrong.\n\nSo the statement is False."
       ],
       "difficulty_level": "5/5",
       "sort_order": 105,
@@ -3351,11 +3351,11 @@
         true
       ],
       "tactical_explanations": [
-        "**A.** → True\n\n$2n\\le100$ gives $n\\le50$.\n\nThe claim is True.",
-        "**B.** → True\n\n$3n\\le180$ gives $n\\le60$.\n\nThe claim is True.",
-        "**C.** → True\n\n$1.5n\\le72$ gives $n\\le48$.\n\nThe claim is True.",
-        "**D.** → False\n\nThe tightest of the three upper bounds is $48$.\n\nThe claim is False.",
-        "**E.** → True\n\nThe feasible integer range reaches $48$, and $42\\le48$.\n\nThe claim is True."
+        "**A.** → True\n\nMaterial A uses $2$ kg per kit against $100$ kg available.\n\n$$\n2n\\le 100\n$$\n\nDivide both sides by the positive coefficient $2$.\n\n$$\nn\\le 50\n$$\n\nSo material A permits at most $50$ kits.\n\nSo the statement is True.",
+        "**B.** → True\n\nMaterial B uses $3$ kg per kit against $180$ kg available.\n\n$$\n3n\\le 180\n$$\n\nDivide both sides by $3$.\n\n$$\nn\\le 60\n$$\n\nSo material B permits at most $60$ kits.\n\nSo the statement is True.",
+        "**C.** → True\n\nLabor uses $1.5$ hours per kit against $72$ hours available.\n\n$$\n1.5n\\le 72\n$$\n\nDivide both sides by $1.5$.\n\n$$\nn\\le \\dfrac{72}{1.5}=48\n$$\n\nSo labor permits at most $48$ kits.\n\nSo the statement is True.",
+        "**D.** → False\n\nCombine the three resource upper bounds.\n\n$$\nn\\le 50,\\qquad n\\le 60,\\qquad n\\le 48\n$$\n\nThe overall production cap is the tightest of these:\n\n$$\nn\\le \\min\\{50,60,48\\}=48\n$$\n\nThe claim that the overall cap is $50$ is therefore false.\n\nSo the statement is False.",
+        "**E.** → True\n\nFrom the three resource limits the feasible integer counts satisfy\n\n$$\nn\\le 48\n$$\n\ntogether with the order minimum\n\n$$\nn\\ge 42\n$$\n\nSince $42\\le 48$, the integer range $[42,48]$ is nonempty, so the order minimum is feasible.\n\nSo the statement is True."
       ],
       "difficulty_level": "5/5",
       "sort_order": 106,
@@ -3383,11 +3383,11 @@
         true
       ],
       "tactical_explanations": [
-        "**A.** → True\n\nNumerator and denominator have the same sign on the two outer intervals.\n\nThe claim is True.",
-        "**B.** → False\n\nThe pole is excluded from every solution set.\n\nThe claim is False.",
-        "**C.** → True\n\nThe numerator is zero and the denominator is nonzero.\n\nThe claim is True.",
-        "**D.** → True\n\nThe ratio is negative between pole and zero, then equals zero at the zero.\n\nThe claim is True.",
-        "**E.** → True\n\n$R-1=(-3-5)/(x+3)$, which is positive exactly below the pole.\n\nThe claim is True."
+        "**A.** → True\n\nStart from the claimed strict positivity of the control ratio.\n\n$$\nR(x)=\\dfrac{x-5}{x+3}\n$$\n\n$$\nR(x)>0\n$$\n\nThe critical points are the numerator zero and the excluded pole.\n\n$$\nx-5=0\\Rightarrow x=5\n$$\n\n$$\nx+3=0\\Rightarrow x=-3\n$$\n\n(the pole $x=-3$ is never allowed).\n\nSign chart on the open intervals:\n\n| Interval | Sign of $R(x)$ |\n| --- | --- |\n| $(-\\infty,-3)$ | $+$ |\n| $(-3,5)$ | $-$ |\n| $(5,\\infty)$ | $+$ |\n\nThe strict inequality keeps only the positive intervals, so\n\n$$\nx<-3\\quad\\text{or}\\quad x>5\n$$\n\nwhich is exactly the claimed set.\n\nSo the statement is True.",
+        "**B.** → False\n\nThe claimed solution set for $R(x)\\le 0$ would have to include every $x$ where the ratio is defined and nonpositive.\n\nAt the pole the denominator vanishes:\n\n$$\nx=-3\\Rightarrow x+3=0\n$$\n\nso $R(-3)$ is undefined. A value that makes the denominator zero is excluded from every solution set of a rational inequality, regardless of the inequality symbol.\n\nTherefore $x=-3$ cannot belong to the solution of $R(x)\\le 0$.\n\nSo the statement is False.",
+        "**C.** → True\n\nEvaluate the ratio at the claimed zero.\n\n$$\nR(5)=\\dfrac{5-5}{5+3}=\\dfrac{0}{8}\n$$\n\nSince the denominator $8$ is nonzero,\n\n$$\nR(5)=0\n$$\n\nThe numerator is zero and the denominator is nonzero, confirming the claim.\n\nSo the statement is True.",
+        "**D.** → True\n\nSolve the non-strict inequality on the domain $x\\ne -3$.\n\n$$\nR(x)=\\dfrac{x-5}{x+3}\\le 0\n$$\n\nCritical points: zero $x=5$, pole $x=-3$ (excluded).\n\nOn $(-3,5)$ the numerator and denominator have opposite signs, so $R(x)<0$.\nAt $x=5$ the numerator vanishes, so $R(5)=0$.\nOutside that closed stretch the ratio is positive (or undefined at the pole).\n\nHence\n\n$$\nR(x)\\le 0\\quad\\text{exactly on }(-3,5]\n$$\n\nmatching the claim.\n\nSo the statement is True.",
+        "**E.** → True\n\nRewrite the comparison $R(x)>1$ by moving the constant to one side.\n\n$$\n\\dfrac{x-5}{x+3}-1>0\n$$\n\nWrite $1$ over the same denominator.\n\n$$\n1=\\dfrac{x+3}{x+3}\n$$\n\n$$\n\\dfrac{x-5-(x+3)}{x+3}>0\n$$\n\n$$\n\\dfrac{-8}{x+3}>0\n$$\n\nThe constant numerator $-8$ is negative, so the fraction is positive precisely when the denominator is negative:\n\n$$\nx+3<0\\Rightarrow x<-3\n$$\n\n(the pole itself is excluded). This is exactly the claimed condition.\n\nSo the statement is True."
       ],
       "difficulty_level": "5/5",
       "sort_order": 107,
@@ -3415,11 +3415,11 @@
         true
       ],
       "tactical_explanations": [
-        "**A.** → True\n\nA downward-opening factored quadratic is nonnegative between its roots.\n\nThe claim is True.",
-        "**B.** → True\n\n$Q(8)=-(3)(-3)=9$.\n\nThe claim is True.",
-        "**C.** → True\n\nThe axis is the midpoint of the two roots.\n\nThe claim is True.",
-        "**D.** → False\n\nAt the root the score is zero, so strict positivity excludes it.\n\nThe claim is False.",
-        "**E.** → True\n\nThe quadratic is negative outside its roots.\n\nThe claim is True."
+        "**A.** → True\n\nThe quality score is the downward-opening factored quadratic\n\n$$\nQ(x)=-(x-5)(x-11)\n$$\n\nA product $(x-5)(x-11)$ is nonpositive between the roots, so $-$ times that product is nonnegative on $[5,11]$:\n\n$$\nQ(x)\\ge 0\\iff 5\\le x\\le 11\n$$\n\nwhich is exactly the accepted-settings interval $[5,11]$.\n\nSo the statement is True.",
+        "**B.** → True\n\nSubstitute the midpoint into the factored score.\n\n$$\nQ(8)=-(8-5)(8-11)\n$$\n\n$$\n=-(3)(-3)\n$$\n\n$$\n=-(-9)=9\n$$\n\nSo $Q(8)=9$, matching the claim.\n\nSo the statement is True.",
+        "**C.** → True\n\nFor a quadratic, the axis of symmetry is the midpoint of the roots.\n\n$$\nx=\\dfrac{5+11}{2}=8\n$$\n\nBecause $Q$ opens downward, that axis is where the maximum occurs. Hence the highest score is at $x=8$.\n\nSo the statement is True.",
+        "**D.** → False\n\nAt a root the factored score vanishes:\n\n$$\nQ(5)=-(5-5)(5-11)=0\n$$\n\nThe claim asks for the strict inequality $Q(x)>0$. Zero fails that strict test, so $x=5$ is excluded from the positive set.\n\nSo the statement is False.",
+        "**E.** → True\n\nOutside the roots the product $(x-5)(x-11)$ is positive, so\n\n$$\nQ(x)=-(x-5)(x-11)<0\n$$\n\nexactly when\n\n$$\nx<5\\quad\\text{or}\\quad x>11\n$$\n\nmatching the claim.\n\nSo the statement is True."
       ],
       "difficulty_level": "5/5",
       "sort_order": 108,
@@ -3575,10 +3575,10 @@
         true
       ],
       "tactical_explanations": [
-        "**A.** → False\n\n$$100-0.8n^{2}\\ge 64\\Rightarrow n^{2}\\le 45\\Rightarrow n\\le\\sqrt{45}\\approx 6.71.$$\n\nThe largest integer $n$ is 6. At $n=7$, $S(7)=60.8<64$. Therefore the statement is False.",
-        "**B.** → True\n\nCost per kit: $6\\cdot 1.5+2\\cdot 4+3=20$ EUR. Budget: $n\\le 45$. Storage: $8n\\le 280\\Rightarrow n\\le 35$. Maximum is 35, which is less than 40. Therefore the statement is True.",
-        "**C.** → False\n\n$$-5\\le x^{2}-6x\\le 5.$$\n\n$$x^{2}-6x-5\\le 0\\Rightarrow x\\in[3-\\sqrt{14},\\,3+\\sqrt{14}],$$\n\n$$x^{2}-6x+5\\ge 0\\Rightarrow x\\le 1\\text{ or }x\\ge 5.$$\n\nIntersection: $[3-\\sqrt{14},1]\\cup[5,3+\\sqrt{14}]\\approx[-0.74,1]\\cup[5,6.74]$, not $[-1,1]\\cup[5,7]$. Therefore the statement is False.",
-        "**D.** → False\n\n$$\\dfrac{90}{d+1}\\ge 6\\Rightarrow d\\le 14.$$\n\nAt $d=15$, $I=5.625<6$. Therefore the statement is False.",
+        "**A.** → False\n\nThe remaining strength after $n$ hard falls is\n\n$$\nS(n)=100-0.8n^{2}\n$$\n\nRequire $S(n)\\ge 64$ with $n\\ge 0$ an integer.\n\n$$\n100-0.8n^{2}\\ge 64\n$$\n\n$$\n0.8n^{2}\\le 36\n$$\n\n$$\nn^{2}\\le 45\n$$\n\n$$\nn\\le\\sqrt{45}\\approx 6.71\n$$\n\nThe largest admissible integer is therefore $n=6$. Checking the next integer:\n\n$$\nS(7)=100-0.8\\cdot 49=100-39.2=60.8<64\n$$\n\nso $n=7$ fails. The claim that every integer up through a larger value works is false.\n\nSo the statement is False.",
+        "**B.** → True\n\nCost per climbing-hold kit:\n\n$$\n6\\cdot 1.5+2\\cdot 4+3=9+8+3=20\\text{ EUR}\n$$\n\nBudget constraint with $900$ EUR:\n\n$$\n20n\\le 900\\Rightarrow n\\le 45\n$$\n\nStorage constraint $8n\\le 280$:\n\n$$\nn\\le 35\n$$\n\nThe overall maximum is the tighter bound\n\n$$\nn\\le\\min\\{45,35\\}=35\n$$\n\nwhich is less than $40$, matching the claim.\n\nSo the statement is True.",
+        "**C.** → False\n\nStart from\n\n$$\n|x(x-6)|\\le 5\n$$\n\n$$\n-5\\le x^{2}-6x\\le 5\n$$\n\nSplit into two quadratic inequalities.\n\nRight part:\n\n$$\nx^{2}-6x-5\\le 0\n$$\n\nRoots $3\\pm\\sqrt{14}$, so\n\n$$\nx\\in\\bigl[3-\\sqrt{14},\\,3+\\sqrt{14}\\bigr]\n$$\n\nLeft part:\n\n$$\nx^{2}-6x+5\\ge 0\n$$\n\n$$\n(x-1)(x-5)\\ge 0\n$$\n\n$$\nx\\le 1\\quad\\text{or}\\quad x\\ge 5\n$$\n\nIntersecting yields\n\n$$\n\\bigl[3-\\sqrt{14},1\\bigr]\\cup\\bigl[5,3+\\sqrt{14}\\bigr]\n$$\n\nnot the claimed $[-1,1]\\cup[5,7]$. The endpoints $\\pm 1$ and $7$ do not match $3\\pm\\sqrt{14}$.\n\nSo the statement is False.",
+        "**D.** → False\n\nIntensity at distance $d\\ge 0$ is\n\n$$\nI(d)=\\dfrac{90}{d+1}\n$$\n\nVisibility requires $I(d)\\ge 6$.\n\n$$\n\\dfrac{90}{d+1}\\ge 6\n$$\n\nSince $d+1>0$, multiply through safely.\n\n$$\n90\\ge 6(d+1)\n$$\n\n$$\n15\\ge d+1\n$$\n\n$$\nd\\le 14\n$$\n\nAt the claimed boundary $d=15$:\n\n$$\nI(15)=\\dfrac{90}{16}=5.625<6\n$$\n\nso $d=15$ is not visible. The claimed set is wrong.\n\nSo the statement is False.",
         "**E.** → True\n\nStart from the claimed strict inequality and move the constant to the left side.\n\n$$\n\\frac{3x+2}{x-1}>2\n$$\n\n$$\n\\frac{3x+2}{x-1}-2>0\n$$\n\nWrite $2$ over the same denominator.\n\n$$\n2=\\frac{2(x-1)}{x-1}\n$$\n\n$$\n\\frac{3x+2}{x-1}-\\frac{2(x-1)}{x-1}>0\n$$\n\nCombine the numerators.\n\n$$\n\\frac{3x+2-2(x-1)}{x-1}>0\n$$\n\n$$\n\\frac{3x+2-2x+2}{x-1}>0\n$$\n\n$$\n\\frac{x+4}{x-1}>0\n$$\n\nThe critical points are the numerator zero and the excluded pole.\n\n$$\nx+4=0\\Rightarrow x=-4\n$$\n\n$$\nx-1=0\\Rightarrow x=1\n$$\n\n(the pole $x=1$ is never allowed).\n\nSign chart on the open intervals:\n\n| Interval | Sign of $\\dfrac{x+4}{x-1}$ |\n| --- | --- |\n| $(-\\infty,-4)$ | $+$ |\n| $(-4,1)$ | $-$ |\n| $(1,\\infty)$ | $+$ |\n\nThe strict inequality keeps only the positive intervals, so\n\n$$\nx<-4\\quad\\text{or}\\quad x>1\n$$\n\nwhich is exactly the claimed set.\n\nSo the statement is True.\n"
       ],
       "difficulty_level": "5/5",
@@ -3639,9 +3639,9 @@
         true
       ],
       "tactical_explanations": [
-        "**A.** → True\n\n$$|3\\theta-1|<0.5\\Rightarrow \\dfrac16<\\theta<\\dfrac12.$$\n\nTherefore the statement is True.",
+        "**A.** → True\n\nUnfold the absolute-value tolerance.\n\n$$\n|3\\theta-1|<0.5\n$$\n\n$$\n-0.5<3\\theta-1<0.5\n$$\n\n$$\n0.5<3\\theta<1.5\n$$\n\nDivide by $3$:\n\n$$\n\\dfrac{1}{6}<\\theta<\\dfrac{1}{2}\n$$\n\nmatching the claim.\n\nSo the statement is True.",
         "**B.** → False\n\n$$-t^{2}+16t+20\\le 80\\Rightarrow (t-6)(t-10)\\ge 0.$$\n\nOn $[0,12]$ the solution is $[0,6]\\cup[10,12]$, not only $[10,12]$. Therefore the statement is False.",
-        "**C.** → True\n\n$$|r-200|\\le 30\\Rightarrow 170\\le r\\le 230,$$\n\nalready inside $[120,240]$. Therefore the statement is True.",
+        "**C.** → True\n\nUnfold the rating band.\n\n$$\n|r-200|\\le 30\n$$\n\n$$\n170\\le r\\le 230\n$$\n\nThis closed interval already sits inside the broader window $[120,240]$, so the intersection is still $[170,230]$, matching the claim.\n\nSo the statement is True.",
         "**D.** → False\n\nCost per piece: $2\\cdot 3+8+0.5\\cdot 0.4=14.2$ EUR. Budget: $n\\le\\lfloor 500/14.2\\rfloor=35$. Clay: $n\\le 40$. Maximum is 35, which is not less than 35. Therefore the statement is False.",
         "**E.** → True\n\n$$|x+1|\\ge 2|x-2|\\Leftrightarrow (x+1)^{2}\\ge 4(x-2)^{2}$$\n\n$$(5-x)(x-1)\\ge 0\\Rightarrow x\\in[1,5],$$\n\nexcluding the pole $x=2$. Therefore the statement is True."
       ],
@@ -3767,11 +3767,11 @@
         false
       ],
       "tactical_explanations": [
-        "**A.** → True\n\n$$32\\le 35-0.5x\\le 34\\Rightarrow 2\\le x\\le 6.$$\n\nTherefore the statement is True.",
-        "**B.** → True\n\n$$x^{2}-4x\\ge 5\\Rightarrow (x+1)(x-5)\\ge 0,$$\n\nwhile $x^{2}-4x\\le -5$ rearranges to $(x-2)^{2}+1\\le 0$, which never holds. So $x\\le -1$ or $x\\ge 5$. Therefore the statement is True.",
-        "**C.** → False\n\nThe pH band alone gives $16\\le m\\le 28$, but the budget $0.25m\\le 6$ forces $m\\le 24$. Values $25$–$28$ are unaffordable. Therefore the statement is False.",
-        "**D.** → True\n\nZero at $-5$, pole at $2$. Same-sign analysis yields the open interval $(-5,2)$. Therefore the statement is True.",
-        "**E.** → False\n\nWith width $w$ and length $2w$: trim $6w\\le 120\\Rightarrow w\\le 20$; area $2w^{2}\\ge 800\\Rightarrow w\\ge 20$. Only $w=20$ works, not $[18,20]$. Therefore the statement is False."
+        "**A.** → True\n\nSalinity after adding $x$ litres of freshwater is\n\n$$\nS(x)=35-0.5x\n$$\n\nRequire the band $32\\le S(x)\\le 34$.\n\n$$\n32\\le 35-0.5x\\le 34\n$$\n\nSubtract $35$ through all three parts.\n\n$$\n-3\\le -0.5x\\le -1\n$$\n\nDivide by $-0.5$ (reverse both inequalities).\n\n$$\n6\\ge x\\ge 2\n$$\n\n$$\n2\\le x\\le 6\n$$\n\nmatching the claim.\n\nSo the statement is True.",
+        "**B.** → True\n\nStart from\n\n$$\n|x^{2}-4x|\\ge 5\n$$\n\nwhich splits into two cases.\n\nCase $x^{2}-4x\\ge 5$:\n\n$$\nx^{2}-4x-5\\ge 0\n$$\n\n$$\n(x+1)(x-5)\\ge 0\n$$\n\n$$\nx\\le -1\\quad\\text{or}\\quad x\\ge 5\n$$\n\nCase $x^{2}-4x\\le -5$:\n\n$$\nx^{2}-4x+5\\le 0\n$$\n\n$$\n(x-2)^{2}+1\\le 0\n$$\n\nwhich never holds for real $x$.\n\nSo the solution is exactly $(-\\infty,-1]\\cup[5,\\infty)$.\n\nSo the statement is True.",
+        "**C.** → False\n\npH falls by $0.05$ per millilitre from $7.2$, so after $m$ millilitres\n\n$$\n\\mathrm{pH}=7.2-0.05m\n$$\n\nThe target band $5.8\\le\\mathrm{pH}\\le 6.4$ rearranges to\n\n$$\n16\\le m\\le 28\n$$\n\nThe acid budget $0.25m\\le 6$ forces\n\n$$\nm\\le 24\n$$\n\nValues $m=25,\\ldots,28$ lie in the pH band but are unaffordable, so the claim that every integer in $16$–$28$ works is false.\n\nSo the statement is False.",
+        "**D.** → True\n\nStart from the claimed strict positivity.\n\n$$\n\\dfrac{x+5}{2-x}>0\n$$\n\nCritical points: numerator zero $x=-5$, pole $x=2$ (excluded).\n\nSign chart:\n\n| Interval | Sign |\n| --- | --- |\n| $(-\\infty,-5)$ | $-$ |\n| $(-5,2)$ | $+$ |\n| $(2,\\infty)$ | $-$ |\n\nThe strict inequality keeps only the positive open interval $(-5,2)$, matching the claim.\n\nSo the statement is True.",
+        "**E.** → False\n\nLet width be $w>0$ and length $2w$.\n\nTrim constraint:\n\n$$\n2\\bigl(w+2w\\bigr)=6w\\le 120\\Rightarrow w\\le 20\n$$\n\nArea constraint:\n\n$$\nw\\cdot 2w=2w^{2}\\ge 800\\Rightarrow w^{2}\\ge 400\\Rightarrow w\\ge 20\n$$\n\n(using $w>0$). The only common value is $w=20$, not the claimed interval $[18,20]$.\n\nSo the statement is False."
       ],
       "difficulty_level": "5/5",
       "sort_order": 119,
@@ -3863,11 +3863,11 @@
         true
       ],
       "tactical_explanations": [
-        "**A.** → False\n\n$$|T+5|\\le 3\\Rightarrow -8\\le T\\le -2.$$\n\nThe endpoints are included. Therefore the statement is False.",
-        "**B.** → True\n\nCost: $1.5\\cdot 4+0.2\\cdot 30+5=17$ EUR. Budget: $n\\le 16$. Solvent: $n\\le 40$. Maximum is 16, which is less than 20. Therefore the statement is True.",
-        "**C.** → False\n\nFor $x>-2$ one obtains $x\\ge -\\tfrac12$. For $x<-2$ the inequality holds for every such $x$. The full set is $(-\\infty,-2)\\cup\\bigl[-\\tfrac12,\\infty\\bigr)$. Therefore the statement is False.",
-        "**D.** → False\n\n$$-5t^{2}+40t>60\\Rightarrow (t-2)(t-6)<0\\Rightarrow 2<t<6.$$\n\nThe inclusive claim wrongly keeps the endpoints, where $h=60$. Therefore the statement is False.",
-        "**E.** → True\n\n$$1\\le|x|\\le 3\\Rightarrow x\\in[-3,-1]\\cup[1,3].$$\n\nTherefore the statement is True."
+        "**A.** → False\n\nUnfold the bonding window.\n\n$$\n|T+5|\\le 3\n$$\n\n$$\n-3\\le T+5\\le 3\n$$\n\n$$\n-8\\le T\\le -2\n$$\n\nBoth endpoints satisfy equality in the non-strict absolute-value bound, so they are included. The claim that excludes them is false.\n\nSo the statement is False.",
+        "**B.** → True\n\nCost per chemistry batch:\n\n$$\n1.5\\cdot 4+0.2\\cdot 30+5=6+6+5=17\\text{ EUR}\n$$\n\nBudget: $17n\\le 272\\Rightarrow n\\le 16$.\nSolvent: enough for $n\\le 40$.\n\nOverall maximum:\n\n$$\nn\\le\\min\\{16,40\\}=16\n$$\n\nwhich is less than $20$, matching the claim.\n\nSo the statement is True.",
+        "**C.** → False\n\nRequire, on the domain $x\\ne -2$,\n\n$$\n\\dfrac{|x-1|}{x+2}\\le 1\n$$\n\nFor $x>-2$ the denominator is positive, so\n\n$$\n|x-1|\\le x+2\n$$\n\nwhich rearranges (after the usual absolute-value cases, or by squaring on that ray) to $x\\ge -\\tfrac12$.\n\nFor $x<-2$ the denominator is negative while the numerator is nonnegative, so the fraction is $\\le 0\\le 1$ automatically.\n\nThe full solution is\n\n$$\n(-\\infty,-2)\\cup\\bigl[-\\tfrac12,\\infty\\bigr)\n$$\n\nnot the claimed half-line alone.\n\nSo the statement is False.",
+        "**D.** → False\n\nHeight model:\n\n$$\nh(t)=-5t^{2}+40t\n$$\n\nRequire $h(t)>60$.\n\n$$\n-5t^{2}+40t>60\n$$\n\n$$\n-5t^{2}+40t-60>0\n$$\n\nDivide by $-5$ (reverse):\n\n$$\nt^{2}-8t+12<0\n$$\n\n$$\n(t-2)(t-6)<0\n$$\n\n$$\n2<t<6\n$$\n\nAt the endpoints $h(2)=h(6)=60$, so the inclusive claim wrongly keeps them.\n\nSo the statement is False.",
+        "**E.** → True\n\nPeel the outer absolute value.\n\n$$\n\\bigl||x|-2\\bigr|\\le 1\n$$\n\n$$\n-1\\le |x|-2\\le 1\n$$\n\n$$\n1\\le |x|\\le 3\n$$\n\nTranslate back to $x$:\n\n$$\nx\\in[-3,-1]\\cup[1,3]\n$$\n\nmatching the claim.\n\nSo the statement is True."
       ],
       "difficulty_level": "5/5",
       "sort_order": 122,
@@ -3895,11 +3895,11 @@
         true
       ],
       "tactical_explanations": [
-        "**A.** → False\n\n$$-0.4t^{2}+8t+10>30\\Rightarrow t^{2}-20t+50<0$$\n\n$$t\\in(10-5\\sqrt{2},\\,10+5\\sqrt{2})\\approx(2.93,17.07),$$\n\nnot $(3,17)$. Therefore the statement is False.",
-        "**B.** → True\n\nFor $x\\ge -\\tfrac34$: $4x+3\\ge 2x+9\\Rightarrow x\\ge 3$. For $x<-\\tfrac34$: $-4x-3\\ge 2x+9\\Rightarrow x\\le -2$. Union: $(-\\infty,-2]\\cup[3,\\infty)$. Therefore the statement is True.",
-        "**C.** → True\n\n$$|W-48|\\le 10\\Rightarrow 38\\le W\\le 58,$$\n\nintersected with $[35,55]$ yields $[38,55]$. Therefore the statement is True.",
-        "**D.** → False\n\nWater: $n\\le 75$. Fertilizer: $n\\le 70$. Maximum is 70, which is not less than 70. Therefore the statement is False.",
-        "**E.** → True\n\n$$\\dfrac{2x}{x^{2}-9}\\le 0$$\n\nwith poles $\\pm 3$ yields $(-\\infty,-3)\\cup[0,3)$. Therefore the statement is True."
+        "**A.** → False\n\nRequire $u(t)=-0.4t^{2}+8t+10>30$.\n\n$$\n-0.4t^{2}+8t+10>30\n$$\n\n$$\n-0.4t^{2}+8t-20>0\n$$\n\nDivide by $-0.4$ (reverse):\n\n$$\nt^{2}-20t+50<0\n$$\n\nRoots $10\\pm 5\\sqrt{2}$:\n\n$$\nt\\in(10-5\\sqrt{2},\\,10+5\\sqrt{2})\\approx(2.93,17.07)\n$$\n\nnot the claimed $(3,17)$.\n\nSo the statement is False.",
+        "**B.** → True\n\nSolve $|4x+3|\\ge 2x+9$ by cases on the kink $x=-\\tfrac34$.\n\nFor $x\\ge -\\tfrac34$:\n\n$$\n4x+3\\ge 2x+9\\Rightarrow 2x\\ge 6\\Rightarrow x\\ge 3\n$$\n\nFor $x<-\\tfrac34$:\n\n$$\n-(4x+3)\\ge 2x+9\\Rightarrow -4x-3\\ge 2x+9\\Rightarrow -6x\\ge 12\\Rightarrow x\\le -2\n$$\n\nUnion:\n\n$$\n(-\\infty,-2]\\cup[3,\\infty)\n$$\n\nmatching the claim.\n\nSo the statement is True.",
+        "**C.** → True\n\nThe absolute-value band\n\n$$\n|W-48|\\le 10\n$$\n\nunfolds to\n\n$$\n38\\le W\\le 58\n$$\n\nIntersect with the hardware window $[35,55]$:\n\n$$\n[38,58]\\cap[35,55]=[38,55]\n$$\n\nmatching the claim.\n\nSo the statement is True.",
+        "**D.** → False\n\nWater limit: $12n\\le 900\\Rightarrow n\\le 75$.\nFertilizer: $2n\\le 140\\Rightarrow n\\le 70$.\n\nOverall maximum:\n\n$$\nn\\le\\min\\{75,70\\}=70\n$$\n\nThe claim that this maximum is strictly less than $70$ is false — $n=70$ is attainable.\n\nSo the statement is False.",
+        "**E.** → True\n\nCombine over a common denominator.\n\n$$\n\\dfrac{1}{x-3}+\\dfrac{1}{x+3}=\\dfrac{2x}{x^{2}-9}\n$$\n\nSolve\n\n$$\n\\dfrac{2x}{x^{2}-9}\\le 0\n$$\n\nPoles at $x=\\pm 3$ (excluded). Zero of the numerator at $x=0$.\n\nSign chart on $(-\\infty,-3)$, $(-3,0)$, $(0,3)$, $(3,\\infty)$ keeps\n\n$$\n(-\\infty,-3)\\cup[0,3)\n$$\n\n(including the zero $x=0$, excluding both poles), matching the claim.\n\nSo the statement is True."
       ],
       "difficulty_level": "5/5",
       "sort_order": 123,
@@ -3927,7 +3927,7 @@
         false
       ],
       "tactical_explanations": [
-        "**A.** → True\n\n$$60-1.2d\\ge 24\\Rightarrow d\\le 30,$$\n\ntogether with $d\\ge 10$. Therefore the statement is True.",
+        "**A.** → True\n\nRemaining daylight model $60-1.2d$ with $d\\ge 10$.\n\n$$\n60-1.2d\\ge 24\n$$\n\n$$\n-1.2d\\ge -36\n$$\n\nDivide by $-1.2$ (reverse):\n\n$$\nd\\le 30\n$$\n\nTogether with $d\\ge 10$:\n\n$$\n10\\le d\\le 30\n$$\n\nmatching the claim.\n\nSo the statement is True.",
         "**B.** → True\n\n$$-6<x^{2}+5x<6$$\n\nsplits into $(x+2)(x+3)>0$ and $(x+6)(x-1)<0$, intersecting in $(-6,-3)\\cup(-2,1)$. Therefore the statement is True.",
         "**C.** → False\n\nVoltage forces $5\\le n\\le 10$. Roof space allows 12, but $n=11$ and $n=12$ exceed 180 V. Therefore the statement is False.",
         "**D.** → False\n\n$$\\dfrac{250}{x}<2.4\\Rightarrow x>\\dfrac{250}{2.4}=104.\\overline{1}.$$\n\nThe smallest whole $x$ is 105. Therefore the statement is False.",
@@ -3959,11 +3959,11 @@
         true
       ],
       "tactical_explanations": [
-        "**A.** → False\n\n$$|w-10|>2\\Rightarrow w<8\\text{ or }w>12.$$\n\nIntersecting $w<18$ also keeps $[0,8)$. The claim omits that lower band. Therefore the statement is False.",
-        "**B.** → True\n\nWith $u=|x|$, $|2-u|\\ge 1$ gives $u\\le 1$ or $u\\ge 3$, i.e. the stated union. Therefore the statement is True.",
-        "**C.** → False\n\nExtras cost 7 EUR per keg: $n\\le\\lfloor 400/7\\rfloor=57$. Wort: $n\\le 50$. Maximum is 50, which is not less than 48. Therefore the statement is False.",
-        "**D.** → True\n\nZero $x=a$, pole $x=-2a$. Same-sign analysis on the three intervals gives $(-2a,a)$. Therefore the statement is True.",
-        "**E.** → True\n\nHeight $\\sqrt{100-b^{2}/4}$ and area $\\tfrac12 b h\\ge 48$ square to $b^{2}\\in\\{144,256\\}$ at equality, and the area is at least 48 precisely on $[12,16]$. Therefore the statement is True."
+        "**A.** → False\n\nWind constraints $w\\ge 0$, $w<18$, and $|w-10|>2$.\n\n$$\n|w-10|>2\\Rightarrow w<8\\text{ or }w>12\n$$\n\nIntersect with $0\\le w<18$:\n\n$$\n[0,8)\\cup(12,18)\n$$\n\nThe claim that keeps only $(12,18)$ omits the lower band $[0,8)$.\n\nSo the statement is False.",
+        "**B.** → True\n\nSet $u=|x|\\ge 0$ and solve the outer inequality.\n\n$$\n|2-u|\\ge 1\n$$\n\n$$\n2-u\\le -1\\quad\\text{or}\\quad 2-u\\ge 1\n$$\n\n$$\nu\\ge 3\\quad\\text{or}\\quad u\\le 1\n$$\n\nTranslate back:\n\n$$\n|x|\\le 1\\quad\\text{or}\\quad |x|\\ge 3\n$$\n\n$$\n(-\\infty,-3]\\cup[-1,1]\\cup[3,\\infty)\n$$\n\nmatching the claim.\n\nSo the statement is True.",
+        "**C.** → False\n\nExtras cost $2.50+1.50+3=7$ EUR per keg, so\n\n$$\n7n\\le 400\\Rightarrow n\\le\\bigl\\lfloor 400/7\\bigr\\rfloor=57\n$$\n\nWort: $18n\\le 900\\Rightarrow n\\le 50$.\n\nOverall maximum $n\\le 50$, which is not strictly less than $48$ — the claim fails.\n\nSo the statement is False.",
+        "**D.** → True\n\nFor fixed $a>0$, solve\n\n$$\n\\dfrac{x-a}{x+2a}<0\n$$\n\nZero at $x=a$, pole at $x=-2a$ (excluded).\n\nSign chart on the three intervals determined by $-2a$ and $a$ keeps the open middle interval where numerator and denominator have opposite signs:\n\n$$\n-2a<x<a\n$$\n\nmatching the claim.\n\nSo the statement is True.",
+        "**E.** → True\n\nHeight of the isosceles triangle:\n\n$$\nh=\\sqrt{10^{2}-\\bigl(\\tfrac{b}{2}\\bigr)^{2}}=\\sqrt{100-\\tfrac{b^{2}}{4}}\n$$\n\nArea condition:\n\n$$\n\\tfrac12 b h\\ge 48\\Rightarrow b\\sqrt{100-\\tfrac{b^{2}}{4}}\\ge 96\n$$\n\nSquaring (both sides nonnegative on $0<b<20$) yields a quadratic in $b^{2}$ whose equality cases are $b=12$ and $b=16$, and the inequality holds on the closed band $[12,16]$.\n\nSo the statement is True."
       ],
       "difficulty_level": "5/5",
       "sort_order": 125,
@@ -3991,11 +3991,11 @@
         true
       ],
       "tactical_explanations": [
-        "**A.** → False\n\n$$|s-2|\\ge 0.3\\Rightarrow s\\le 1.7\\text{ or }s\\ge 2.3.$$\n\nIntersecting $[1.2,3.5]$ removes $(1.7,2.3)$. Therefore the statement is False.",
-        "**B.** → True\n\n$$0.05L^{2}\\le 20\\Rightarrow L\\le 20,$$\n\nwith $L\\ge 8$. Therefore the statement is True.",
-        "**C.** → True\n\nSquaring yields $(1-3x)(9-x)>0$, hence $x<\\tfrac13$ or $x>9$. Therefore the statement is True.",
-        "**D.** → False\n\nCost: $0.04\\cdot 25+0.06\\cdot 3+0.2=1.38$ EUR. Budget: $n\\le 86$. Powder: $n\\le 75$. Maximum is 75, which is not less than 70. Therefore the statement is False.",
-        "**E.** → True\n\n$$\\dfrac{5x-11}{x-4}\\ge 0$$\n\ngives $\\bigl(-\\infty,\\tfrac{11}{5}\\bigr]\\cup(4,\\infty)$. Therefore the statement is True."
+        "**A.** → False\n\nFlow constraints $1.2\\le s\\le 3.5$ and $|s-2|\\ge 0.3$.\n\n$$\n|s-2|\\ge 0.3\\Rightarrow s\\le 1.7\\text{ or }s\\ge 2.3\n$$\n\nIntersecting with $[1.2,3.5]$ removes the open gap $(1.7,2.3)$. The claim that every speed in $[1.2,3.5]$ works is false.\n\nSo the statement is False.",
+        "**B.** → True\n\nPressure drop $P=0.05L^{2}$ with $L\\ge 8$.\n\n$$\n0.05L^{2}\\le 20\n$$\n\n$$\nL^{2}\\le 400\n$$\n\n$$\nL\\le 20\n$$\n\n(using $L\\ge 0$). Together with $L\\ge 8$:\n\n$$\n8\\le L\\le 20\n$$\n\nmatching the claim.\n\nSo the statement is True.",
+        "**C.** → True\n\nBoth sides of $|5-2x|>|x+4|$ are nonnegative, so squaring preserves the inequality.\n\n$$\n(5-2x)^{2}>(x+4)^{2}\n$$\n\n$$\n25-20x+4x^{2}>x^{2}+8x+16\n$$\n\n$$\n3x^{2}-28x+9>0\n$$\n\nFactoring (or the quadratic formula) yields\n\n$$\n(1-3x)(9-x)>0\n$$\n\nhence\n\n$$\nx<\\tfrac13\\quad\\text{or}\\quad x>9\n$$\n\nmatching the claim.\n\nSo the statement is True.",
+        "**D.** → False\n\nCost per nutrition bar:\n\n$$\n0.04\\cdot 25+0.06\\cdot 3+0.2=1+0.18+0.2=1.38\\text{ EUR}\n$$\n\nBudget: $1.38n\\le 120\\Rightarrow n\\le 86$ (approximately; integer floor).\nPowder: $0.04n\\le 3\\Rightarrow n\\le 75$.\n\nOverall maximum $n\\le 75$, which is not strictly less than $70$.\n\nSo the statement is False.",
+        "**E.** → True\n\nMove the constant to one side over a common denominator.\n\n$$\n\\dfrac{2x+1}{x-4}+3\\ge 0\n$$\n\n$$\n\\dfrac{2x+1+3(x-4)}{x-4}\\ge 0\n$$\n\n$$\n\\dfrac{2x+1+3x-12}{x-4}\\ge 0\n$$\n\n$$\n\\dfrac{5x-11}{x-4}\\ge 0\n$$\n\nCritical points: zero $x=\\tfrac{11}{5}$, pole $x=4$ (excluded).\n\nSign chart keeps\n\n$$\n\\bigl(-\\infty,\\tfrac{11}{5}\\bigr]\\cup(4,\\infty)\n$$\n\nmatching the claim.\n\nSo the statement is True."
       ],
       "difficulty_level": "5/5",
       "sort_order": 126,
@@ -4023,11 +4023,11 @@
         false
       ],
       "tactical_explanations": [
-        "**A.** → True\n\n$$|30+0.5c-45|\\le 15\\Rightarrow |c-30|\\le 30\\Rightarrow 0\\le c\\le 60.$$\n\nIntersecting $c\\le 40$ (and $c\\ge 0$) yields $[0,40]$. Therefore the statement is True.",
-        "**B.** → False\n\nSupervisors: $n\\le 12$. Socks: $n\\le 25$. Needing $n\\ge 20$ contradicts $n\\le 12$. Therefore the statement is False.",
-        "**C.** → True\n\nDomain $|x|\\ge 1$ and $|x|-1<4$ give $1\\le|x|<5$, i.e. $(-5,-1]\\cup[1,5)$. Therefore the statement is True.",
-        "**D.** → True\n\nPiecewise: the difference equals $-5$, $2x-1$, or $5$ on the three rays determined by $-2$ and $3$, and $2x-1\\ge 1$ forces $x\\ge 1$ on the middle piece, extending through $[3,\\infty)$. Therefore the statement is True.",
-        "**E.** → False\n\n$$h\\ge\\dfrac{5}{7}\\approx 0.714,\\qquad h\\le\\dfrac{10}{12}\\approx 0.833.$$\n\nThe claimed band $[0.7,0.85]$ is both too wide and wrongly endpointed. Therefore the statement is False."
+        "**A.** → True\n\nHumidity $h=30+0.5c$ with cloud cover $c\\le 40$ and $c\\ge 0$.\n\n$$\n|h-45|\\le 15\n$$\n\n$$\n|30+0.5c-45|\\le 15\n$$\n\n$$\n|0.5c-15|\\le 15\n$$\n\n$$\n|c-30|\\le 30\n$$\n\n$$\n0\\le c\\le 60\n$$\n\nIntersect with $0\\le c\\le 40$:\n\n$$\n[0,40]\n$$\n\nmatching the claim.\n\nSo the statement is True.",
+        "**B.** → False\n\nSupervisors: $n\\le 12$.\nSocks: $2n\\le 50\\Rightarrow n\\le 25$.\n\nOverall $n\\le 12$. Requiring $n\\ge 20$ contradicts $n\\le 12$, so the claimed feasible range is empty.\n\nSo the statement is False.",
+        "**C.** → True\n\nDomain of the square root:\n\n$$\n|x|-1\\ge 0\\Rightarrow |x|\\ge 1\n$$\n\nThe inequality $\\sqrt{|x|-1}<2$ squares (both sides nonnegative) to\n\n$$\n|x|-1<4\\Rightarrow |x|<5\n$$\n\nCombine:\n\n$$\n1\\le |x|<5\n$$\n\n$$\n(-5,-1]\\cup[1,5)\n$$\n\nmatching the claim.\n\nSo the statement is True.",
+        "**D.** → True\n\nCritical points $x=-2$ and $x=3$ split the line into three pieces.\n\nOn $x\\le -2$: $|x+2|-|x-3|=-5$.\nOn $-2\\le x\\le 3$: $|x+2|-|x-3|=2x-1$.\nOn $x\\ge 3$: $|x+2|-|x-3|=5$.\n\nRequire the expression $\\ge 1$: the outer rays give $-5\\ge 1$ (never) and $5\\ge 1$ (always for $x\\ge 3$). On the middle piece\n\n$$\n2x-1\\ge 1\\Rightarrow x\\ge 1\n$$\n\nso together with $x\\le 3$ one gets $[1,3]$, then union with $[3,\\infty)$ yields $[1,\\infty)$.\n\nSo the statement is True.",
+        "**E.** → False\n\nArea $0.7h\\ge 0.5$ forces\n\n$$\nh\\ge\\dfrac{5}{7}\\approx 0.714\n$$\n\nTrim/height budget $12h\\le 10$ forces\n\n$$\nh\\le\\dfrac{10}{12}\\approx 0.833\n$$\n\nThe feasible band is $\\bigl[\\tfrac57,\\tfrac{5}{6}\\bigr]$, not the claimed $[0.7,0.85]$.\n\nSo the statement is False."
       ],
       "difficulty_level": "5/5",
       "sort_order": 127,
@@ -4055,11 +4055,11 @@
         true
       ],
       "tactical_explanations": [
-        "**A.** → False\n\nBudget: $25+8t\\le 80\\Rightarrow t\\le 6.875$, but closing forces $t\\le 6$. A 7-hour rental violates the closing constraint. Therefore the statement is False.",
-        "**B.** → False\n\n$$2\\le x^{2}\\le 16\\Rightarrow x\\in\\bigl[-4,-\\sqrt{2}\\bigr]\\cup\\bigl[\\sqrt{2},4\\bigr].$$\n\nReplacing $\\sqrt{2}$ by $1$ widens the set illegally. Therefore the statement is False.",
-        "**C.** → False\n\n$$40-0.5d^{2}\\ge 10\\Rightarrow d\\le\\sqrt{60}\\approx 7.75.$$\n\nAt $d=8$, $B(8)=40-32=8<10$. Therefore the statement is False.",
-        "**D.** → False\n\nMachine A: $n\\le 50$. Machine B: $n\\le 40$. Maximum is 40, so 45 is impossible. Therefore the statement is False.",
-        "**E.** → True\n\nDomain and nonnegativity of the right-hand side force $x\\ge\\tfrac12$. Squaring on that ray yields $x\\ge\\tfrac74$, which already implies $x\\ge\\tfrac12$. Therefore the statement is True."
+        "**A.** → False\n\nBudget:\n\n$$\n25+8t\\le 80\\Rightarrow 8t\\le 55\\Rightarrow t\\le 6.875\n$$\n\nClosing time forces the separate constraint $t\\le 6$. A $7$-hour rental violates the closing limit even though $7$ is below a misread budget figure, so the claim is false.\n\nSo the statement is False.",
+        "**B.** → False\n\nStart from\n\n$$\n|x^{2}-9|\\le 7\n$$\n\n$$\n-7\\le x^{2}-9\\le 7\n$$\n\n$$\n2\\le x^{2}\\le 16\n$$\n\n$$\nx\\in\\bigl[-4,-\\sqrt{2}\\bigr]\\cup\\bigl[\\sqrt{2},4\\bigr]\n$$\n\nReplacing $\\sqrt{2}$ by $1$ illegally widens the set.\n\nSo the statement is False.",
+        "**C.** → False\n\nBattery model $B(d)=40-0.5d^{2}$ with $B(d)\\ge 10$.\n\n$$\n40-0.5d^{2}\\ge 10\n$$\n\n$$\n0.5d^{2}\\le 30\n$$\n\n$$\nd^{2}\\le 60\n$$\n\n$$\nd\\le\\sqrt{60}\\approx 7.75\n$$\n\nAt $d=8$:\n\n$$\nB(8)=40-0.5\\cdot 64=40-32=8<10\n$$\n\nso $d=8$ fails.\n\nSo the statement is False.",
+        "**D.** → False\n\nMachine A: $2n\\le 100\\Rightarrow n\\le 50$.\nMachine B: $3n\\le 120\\Rightarrow n\\le 40$.\n\nOverall maximum:\n\n$$\nn\\le\\min\\{50,40\\}=40\n$$\n\nProducing $45$ units is impossible.\n\nSo the statement is False.",
+        "**E.** → True\n\nDomain of the square root: $3x+1\\ge 0\\Rightarrow x\\ge -\\tfrac13$.\nSince a square root is nonnegative, the right-hand side must satisfy $2x-1\\ge 0$, i.e. $x\\ge\\tfrac12$.\n\nOn $x\\ge\\tfrac12$ square both sides of $\\sqrt{3x+1}\\le 2x-1$:\n\n$$\n3x+1\\le 4x^{2}-4x+1\n$$\n\n$$\n0\\le 4x^{2}-7x\n$$\n\n$$\nx(4x-7)\\ge 0\n$$\n\nWith $x\\ge\\tfrac12$ this forces $x\\ge\\tfrac74$.\n\nSo the solution is exactly $x\\ge\\dfrac{7}{4}$.\n\nSo the statement is True."
       ],
       "difficulty_level": "5/5",
       "sort_order": 128,
