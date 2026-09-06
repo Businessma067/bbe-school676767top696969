@@ -11,7 +11,7 @@ import ch7Exam from "@/data/math-ch7-mixed-exam.json";
 
 export const MATH_CH7_SUBSECTIONS = [
   { id: "7", title: "Linear and quadratic functions" },
-  { id: "7.5", title: "Mixed exam" },
+  { id: "7.5", title: "Exam-Style" },
 ] as const;
 
 const MATH_CH7_CORE: MathTask[] = (ch7.tasks as MathTask[]).map((task, i) => ({

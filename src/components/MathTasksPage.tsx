@@ -1244,7 +1244,8 @@ function classifyBoldLabel(label: string): "section" | "step" | "note" | "emphas
 }
 
 function isDisplayMathPara(trimmed: string): boolean {
-  return /^\$\$[\s\S]+\$\$$/.test(trimmed) || /^\$[^$\n]+\$\s*$/.test(trimmed);
+  // Allow trailing sentence punctuation folded after $$ (or absorbed into math).
+  return /^\$\$[\s\S]+\$\$[.,:;!?]*$/.test(trimmed) || /^\$[^$\n]+\$[.,:;!?]*\s*$/.test(trimmed);
 }
 
 function isStepStartPara(trimmed: string): boolean {

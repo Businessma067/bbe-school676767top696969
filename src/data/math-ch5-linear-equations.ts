@@ -9,7 +9,7 @@ import ch5Exam from "@/data/math-ch5-exam.json";
 
 export const MATH_CH5_SUBSECTIONS = [
   { id: "5", title: "Linear equations in two unknowns" },
-  { id: "5.5", title: "Exam-style tasks" },
+  { id: "5.5", title: "Exam-Style" },
 ] as const;
 
 const MATH_CH5_CORE: MathTask[] = [
@@ -71,9 +71,7 @@ This is not the overview's equalizing transfer. North starts at the recovered $x
 
 $$360 + 30 = 390$$
 
-Compare the computed value with the claim ($390$.
-
-The computed figure matches the claim). The two sides agree.
+Compare the computed value with the claim ($390$). The two sides agree.
 
 So the statement is True.`,
       `**D.** → False
@@ -1773,7 +1771,7 @@ The Suite premium is
 
 $$210 - 140 = 70$$
 
-The claim is \\$200 more. 
+The claim is \\$200 more.
 
 The shared elimination already fixed the unique pair; this letter only tests the claim's extra arithmetic.
 
@@ -2982,7 +2980,7 @@ $$
 
 The claim writes \\$35.
 
-$$31 \\ne 35$$.
+$$31 \\ne 35.$$
 
 So the statement is False.`,
       `**C.** → False
@@ -3242,7 +3240,7 @@ $$
 
 Customer service claimed \\$0.24 per unit.
 
-$$0.21 \\ne 0.24$$.
+$$0.21 \\ne 0.24.$$
 
 So the statement is False.`,
       `**C.** → True
@@ -3255,7 +3253,7 @@ $$280 \\times 0.21 = 58.80$$
 
 $$33 + 58.80 = 91.80$$
 
-$$91.80 < 95$$.
+$$91.80 < 95.$$
 
 So the statement is True.`,
       `**D.** → False
@@ -3401,7 +3399,7 @@ $$76 + 60 = 136$$
 
 $$136 \\times 1.10 = 149.60$$
 
-$$149.60 < 150$$.
+$$149.60 < 150.$$
 
 So the statement is True.`,
     ],
@@ -3484,7 +3482,7 @@ $$
 
 The claim writes \\$30.
 
-$$27 \\ne 30$$.
+$$27 \\ne 30.$$
 
 So the statement is False.`,
       `**C.** → False
@@ -3612,7 +3610,7 @@ $$
 
 The claim writes \\$50.
 
-$$44 \\ne 50$$.
+$$44 \\ne 50.$$
 
 So the statement is False.`,
       `**C.** → True
@@ -3630,7 +3628,7 @@ Job 1's Premium slice at the recovered $y = 44$, compared with Job 2's whole tot
 
 $$35 \\times 44 = 1540$$
 
-$$1540 > 1301$$.
+$$1540 > 1301.$$
 
 So the statement is True.`,
       `**E.** → True
@@ -3733,7 +3731,7 @@ $$
 
 Finance claimed \\$0.40 per mile.
 
-$$0.32 \\ne 0.40$$.
+$$0.32 \\ne 0.40.$$
 
 So the statement is False.`,
       `**C.** → True
@@ -3770,7 +3768,7 @@ Reports 1 and 2 together:
 
 $$323 + 245 = 568$$
 
-$$568 \\ge 550$$.
+$$568 \\ge 550.$$
 
 So the statement is True.`,
     ],
@@ -3858,7 +3856,7 @@ $$
 
 The claim writes 12 hours.
 
-$$10 \\ne 12$$.
+$$10 \\ne 12.$$
 
 So the statement is False.`,
       `**C.** → True
@@ -3887,7 +3885,7 @@ Week 3 has 15 Widget B and 290 labor-hours. With the recovered times $x = 7$ and
 
 $$7A + 10(15) = 290$$
 
-$$7A + 150 = 290 \\Rightarrow 7A = 140 \\Rightarrow A = 20$$.
+$$7A + 150 = 290 \\Rightarrow 7A = 140 \\Rightarrow A = 20.$$
 
 So the statement is True.`,
     ],
@@ -3979,7 +3977,7 @@ $$
 
 The claim writes \\$28.
 
-$$24 \\ne 28$$.
+$$24 \\ne 28.$$
 
 So the statement is False.`,
       `**C.** → False
@@ -3992,7 +3990,7 @@ Read the figure already produced by the shared solve, then compare it with the c
 
 The overview priced East at \\$3,085. East reported \\$3,200.
 
-$$3085 \\ne 3200$$.
+$$3085 \\ne 3200.$$
 
 So the statement is False.`,
       `**D.** → True
@@ -4105,7 +4103,7 @@ The gap is
 
 $$27.80 - 18.45 = 9.35$$
 
-$$9 < 9.35 < 10$$.
+$$9 < 9.35 < 10.$$
 
 The computed figure matches the claim.
 
@@ -4120,7 +4118,7 @@ Invoice 2 totals \\$657.35 across $7 + 19 = 26$ cases:
 
 $$\\frac{657.35}{26} = 25.28$$
 
-$$25.28 > 24$$.
+$$25.28 > 24.$$
 
 So the statement is True.`,
       `**D.** → False
@@ -4277,7 +4275,7 @@ $$250 \\times 1.35 = 337.50$$
 
 $$608.00 - 337.50 = 270.50$$
 
-$$270.50 > 270$$.
+$$270.50 > 270.$$
 
 So the statement is True.`,
       `**E.** → True
@@ -4369,7 +4367,7 @@ $$4 \\times 3.80 = 15.20$$
 
 $$6.35 + 3.80 = 10.15$$
 
-$$15.20 > 10.15$$.
+$$15.20 > 10.15.$$
 
 So the statement is True.`,
       `**C.** → False
@@ -4385,7 +4383,7 @@ Receipt 1 totals \\$78.65 across $7 + 9 = 16$ items:
 
 $$\\frac{78.65}{16} = 4.915625$$
 
-$$4.915625 > 4.90$$.
+$$4.915625 > 4.90.$$
 
 So the statement is True.`,
       `**E.** → True
@@ -4400,7 +4398,7 @@ $$7 \\times 20.30 = 142.10$$
 
 $$150 - 142.10 = 7.90$$
 
-$$7.90 < 8$$.
+$$7.90 < 8.$$
 
 So the statement is True.`,
     ],
@@ -4472,7 +4470,7 @@ The overview recovered $x = 13.85$ per dozen croissants. Four dozen:
 
 $$4 \\times 13.85 = 55.40$$
 
-$$55.40 > 55$$.
+$$55.40 > 55.$$
 
 So the statement is True.`,
       `**B.** → True
@@ -4777,7 +4775,7 @@ $$4 \\times 22.65 = 90.60$$
 
 $$6 \\times 16.40 = 98.40$$
 
-$$90.60 < 98.40$$.
+$$90.60 < 98.40.$$
 
 So the statement is True.`,
       `**D.** → False
@@ -4909,7 +4907,7 @@ Start from the overview's recovered unknowns, apply only this claim's extra chec
 
 Combined hourly output is the sum of the recovered rates:
 
-$$0.085 + 0.045 = 0.130 = \\frac{13}{100}$$.
+$$0.085 + 0.045 = 0.130 = \\frac{13}{100}.$$
 
 So the statement is True.`,
       `**D.** → True
@@ -5069,7 +5067,7 @@ $$310 \\times 18.40 = 5704$$
 
 $$3029 + 5704 = 8733$$
 
-$$8733 > 8700$$.
+$$8733 > 8700.$$
 
 So the statement is True.`,
     ],
@@ -5218,7 +5216,7 @@ $$400 \\times 3.15 = 1260$$
 
 $$94.60 + 1260 = 1354.60$$
 
-$$1354.60 > 1350$$.
+$$1354.60 > 1350.$$
 
 So the statement is True.`,
     ],
@@ -5286,7 +5284,7 @@ Start from the overview's recovered unknowns, apply only this claim's extra chec
 
 The overview scaled Client A to \\$967.40, which overshoots the billed \\$952.10 by \\$15.30.
 
-$$\\frac{15.30}{952.10} \\approx 0.01607 \\approx 1.61\\%$$.
+$$\\frac{15.30}{952.10} \\approx 0.01607 \\approx 1.61\\%.$$
 
 So the statement is True.`,
       `**B.** → True

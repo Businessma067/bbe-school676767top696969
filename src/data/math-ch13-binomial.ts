@@ -9,7 +9,7 @@ import ch13Exam from "@/data/math-ch13-exam.json";
 
 export const MATH_CH13_SUBSECTIONS = [
   { id: "13", title: "Binomial distribution" },
-  { id: "13.5", title: "Exam-style tasks" },
+  { id: "13.5", title: "Exam-Style" },
 ] as const;
 
 export const MATH_CH13_BINOMIAL: MathTask[] = [

@@ -29,7 +29,7 @@ export const MATH_CH1_SUBSECTIONS = [
   },
   {
     id: "1.5",
-    title: "Exam-style tasks",
+    title: "Exam-Style",
   },
 ] as const;
 
@@ -190,7 +190,7 @@ $$-3\\in Z$$
 
 so $-3$ must sit in $A$. Therefore
 
-$$A=\\{-3,3\\}\\ne\\{3\\}$$.
+$$A=\\{-3,3\\}\\ne\\{3\\}.$$
 
 That conflicts with the claim.
 
@@ -283,7 +283,7 @@ $$\\forall x\\,(x\\in\\emptyset\\Rightarrow x\\in A)$$
 
 is vacuously true. Hence
 
-$$\\emptyset\\subseteq A$$.
+$$\\emptyset\\subseteq A.$$
 
 That matches the claim.
 
@@ -353,7 +353,7 @@ $$D=\\{a,b,c\\}$$
 
 Compare $\\emptyset$ with each listed letter. None matches, so
 
-$$\\emptyset\\notin D$$.
+$$\\emptyset\\notin D.$$
 
 That conflicts with the claim.
 
@@ -394,7 +394,7 @@ $$\\forall x\\,(x\\in D\\Rightarrow x\\in D)$$
 
 which is exactly
 
-$$D\\subseteq D$$.
+$$D\\subseteq D.$$
 
 That matches the claim.
 
@@ -748,7 +748,7 @@ The triple intersection sits inside every pairwise intersection. From $A\\cap B=
 
 $$A\\cap B\\cap C\\subseteq A\\cap B$$
 
-$$A\\cap B\\cap C=\\emptyset$$.
+$$A\\cap B\\cap C=\\emptyset.$$
 
 That matches the claim.
 
@@ -1222,7 +1222,7 @@ $$5\\le 5<15$$
 
 so $5\\in B$. Even though $5\\in A$, membership in $B$ excludes it from the difference:
 
-$$5\\notin A\\setminus B$$.
+$$5\\notin A\\setminus B.$$
 
 That conflicts with the claim.
 
@@ -1472,7 +1472,7 @@ $$8\\in A$$
 
 Both succeed, therefore
 
-$$\\{6,8\\}\\subseteq A$$.
+$$\\{6,8\\}\\subseteq A.$$
 
 So the statement is True.`,
       `**D.** → True
@@ -1529,7 +1529,7 @@ $$A=\\{2,3\\}$$
 
 and $B$ is given as $\\{2,3\\}$. Compare membership both ways: every element of $A$ sits in $B$, and every element of $B$ sits in $A$. Hence
 
-$$A=B$$.
+$$A=B.$$
 
 That matches the claim.
 
@@ -1559,7 +1559,7 @@ $$3\\in\\mathbb{Z}$$
 
 so $3\\in A$. Then
 
-$$A=\\{2,3\\}\\ne\\{2\\}$$.
+$$A=\\{2,3\\}\\ne\\{2\\}.$$
 
 That conflicts with the claim.
 
@@ -1647,7 +1647,7 @@ $$\\{w,x\\}\\subseteq D$$
 
 and therefore
 
-$$\\{w,x\\}\\in\\mathcal{P}(D)$$.
+$$\\{w,x\\}\\in\\mathcal{P}(D).$$
 
 So the statement is True.`,
       `**C.** → True
@@ -1669,7 +1669,7 @@ $$D\\subseteq D$$
 
 The power set collects all subsets of $D$, so the whole set is one of those subsets:
 
-$$D\\in\\mathcal{P}(D)$$.
+$$D\\in\\mathcal{P}(D).$$
 
 That matches the claim.
 
@@ -1723,7 +1723,7 @@ $$3\\in F$$
 
 All three succeed, so
 
-$$E\\subseteq F$$.
+$$E\\subseteq F.$$
 
 So the statement is True.`,
       `**B.** → True
@@ -1734,7 +1734,7 @@ $$4\\in F,\\qquad 4\\notin E$$
 
 shows the sets differ. Hence
 
-$$E\\subsetneq F$$.
+$$E\\subsetneq F.$$
 
 So the statement is True.`,
       `**C.** → False
@@ -1964,7 +1964,7 @@ $$K=\\{a,\\{a\\}\\}$$
 
 The bare object $a$ is the first listed member, so
 
-$$a\\in K$$.
+$$a\\in K.$$
 
 That matches the claim.
 
@@ -1988,7 +1988,7 @@ So the statement is True.`,
 
 Subsethood asks whether every member of $\\{a\\}$ sits in $K=\\{a,\\{a\\}\\}$. The only member is $a$, and $a\\in K$, so
 
-$$\\{a\\}\\subseteq K$$.
+$$\\{a\\}\\subseteq K.$$
 
 That matches the claim.
 
@@ -1999,7 +1999,7 @@ The singleton $\\{\\{a\\}\\}$ has one member, namely the set $\\{a\\}$. That mem
 
 $$\\{a\\}\\in K$$
 
-$$\\implies\\{\\{a\\}\\}\\subseteq K$$.
+$$\\implies\\{\\{a\\}\\}\\subseteq K.$$
 
 That matches the claim.
 
@@ -2010,7 +2010,7 @@ The two listed objects $a$ and $\\{a\\}$ are distinct — an element versus a se
 
 $$a\\neq\\{a\\}$$
 
-$$\\lvert K\\rvert=2$$.
+$$\\lvert K\\rvert=2.$$
 
 That matches the claim.
 
@@ -2078,11 +2078,9 @@ The two sides agree.
 So the statement is True.`,
       `**D.** → False
 
-Intersection keeps only numbers that sit in both lists. The overview listed 
+Intersection keeps only numbers that sit in both lists. The overview listed
 
-$$A\\cap B=\\{4,5\\}$$
-
-. The claimed $\\{4,5,6\\}$ pads the overlap with $6$, and $6$ sits in $B$ but misses $A$. The lists do not match.
+$$A\\cap B=\\{4,5\\}.$$ The claimed $\\{4,5,6\\}$ pads the overlap with $6$, and $6$ sits in $B$ but misses $A$. The lists do not match.
 
 That conflicts with the claim.
 
@@ -2130,11 +2128,11 @@ $$(A\\cup B)^c=A^c\\cap B^c,\\qquad (A\\cap B)^c=A^c\\cup B^c.$$`,
     tactical_explanations: [
       `**A.** → True
 
-The overview already counted 
+The overview already counted
 
 $$\\lvert A\\times B\\rvert=2\\cdot 3=6$$
 
- by the product rule. Product size is the number of cells in a $2$ by $3$ grid, not the five distinct symbols $1,2,x,y,z$. The claim is that same figure $6$.
+by the product rule. Product size is the number of cells in a $2$ by $3$ grid, not the five distinct symbols $1,2,x,y,z$. The claim is that same figure $6$.
 
 That matches the claim.
 
@@ -2282,15 +2280,13 @@ which is not the four-element set $\\{1,2,5,6\\}$. Outer buckets of a Venn diagr
 So the statement is False.`,
       `**C.** → False
 
-Symmetric difference excludes the overlap. The overview listed 
+Symmetric difference excludes the overlap. The overview listed
 
 $$A\\cap B=\\{3,4\\}$$
 
- and 
+and
 
-$$A\\triangle B=\\{1,2,5,6\\}$$
-
-, which share nothing. Already $3\\in A\\cap B$ and $3\\notin A\\triangle B$, so $A\\cap B\\nsubseteq A\\triangle B$.
+$$A\\triangle B=\\{1,2,5,6\\},$$ which share nothing. Already $3\\in A\\cap B$ and $3\\notin A\\triangle B$, so $A\\cap B\\nsubseteq A\\triangle B$.
 
 So the statement is False.`,
       `**D.** → True
@@ -2345,15 +2341,15 @@ Joining the leftovers gives $A\\triangle B=\\{1,2,5,6\\}$.`,
     tactical_explanations: [
       `**A.** → True
 
-The overview already counted 
+The overview already counted
 
 $$5\\cdot 8=40$$
 
- ordered pairs. Product size is cells, not 
+ordered pairs. Product size is cells, not
 
 $$5+8=13$$
 
- people-plus-accounts. The claim is that same figure $40$.
+people-plus-accounts. The claim is that same figure $40$.
 
 That matches the claim.
 
@@ -2460,15 +2456,13 @@ Take $T=-5$: not frost-safe ($25\\ge 16$) and not irrigating ($-5<-1$). The whol
 So the statement is False.`,
       `**E.** → True
 
-Frost-safe yet dry is the leftover 
+Frost-safe yet dry is the leftover
 
-$$A\\setminus B=(-4,-1)$$
-
-. At 
+$$A\\setminus B=(-4,-1).$$ At
 
 $$T=-2$$
 
- we have $4<16$ and $-2<-1$, so irrigation stays off. One witness is enough.
+we have $4<16$ and $-2<-1$, so irrigation stays off. One witness is enough.
 
 That matches the claim.
 
@@ -2510,9 +2504,7 @@ Neither is the survey minus the union. The overview recovered $\\lvert A\\cup B\
 
 $$200-160=40.$$
 
-Compare the computed value with the claim ($40$.
-
-That matches the claim). The two sides agree.
+Compare the computed value with the claim ($40$). That matches the claim. The two sides agree.
 
 So the statement is True.`,
       `**C.** → False
@@ -2680,15 +2672,11 @@ That matches the claim.
 So the statement is True.`,
       `**D.** → False
 
-The opposite leftover is 
+The opposite leftover is
 
-$$B\\setminus A=\\{60\\}$$
+$$B\\setminus A=\\{60\\},$$ while
 
-, while 
-
-$$A\\setminus B=\\{10,20\\}$$
-
-. The sizes already disagree ($1$ versus $2$), and $10$ sits in the first leftover but not the second. Difference is not commutative.
+$$A\\setminus B=\\{10,20\\}.$$ The sizes already disagree ($1$ versus $2$), and $10$ sits in the first leftover but not the second. Difference is not commutative.
 
 That conflicts with the claim.
 
@@ -2763,15 +2751,11 @@ That matches the claim.
 So the statement is True.`,
       `**D.** → False
 
-The opposite leftover is the singleton 
+The opposite leftover is the singleton
 
-$$B\\setminus A=\\{e\\}$$
+$$B\\setminus A=\\{e\\},$$ while
 
-, while 
-
-$$A\\setminus B=\\{a,b\\}$$
-
-. Different sizes already forbid equality, and $a$ sits in one leftover but not the other. Difference is not commutative.
+$$A\\setminus B=\\{a,b\\}.$$ Different sizes already forbid equality, and $a$ sits in one leftover but not the other. Difference is not commutative.
 
 That conflicts with the claim.
 
@@ -2920,13 +2904,9 @@ The two sides agree.
 So the statement is True.`,
       `**C.** → True
 
-$$A\\cap B=\\emptyset$$
+$$A\\cap B=\\emptyset,$$ so
 
-, so 
-
-$$(A\\cap B)^c=U$$
-
-. The other side $A^c\\cup B^c$ is evens joined with odds, again $U$. Complementing the empty set relative to $U$ restores $U$ in full.
+$$(A\\cap B)^c=U.$$ The other side $A^c\\cup B^c$ is evens joined with odds, again $U$. Complementing the empty set relative to $U$ restores $U$ in full.
 
 That matches the claim.
 
@@ -2990,15 +2970,13 @@ Letter $s$ sits in $B$, so it sits in the union and cannot sit in the complement
 So the statement is True.`,
       `**B.** → True
 
-The overview listed 
+The overview listed
 
 $$A^c=\\{s,t,u\\}$$
 
- and 
+and
 
-$$B^c=\\{p,q,t,u\\}$$
-
-. Their intersection is $\\{t,u\\}$, matching $(A\\cup B)^c$. Letter $s$ fails the intersection because $s\\in B$. De Morgan's first law is that agreement.
+$$B^c=\\{p,q,t,u\\}.$$ Their intersection is $\\{t,u\\}$, matching $(A\\cup B)^c$. Letter $s$ fails the intersection because $s\\in B$. De Morgan's first law is that agreement.
 
 That matches the claim.
 
@@ -3052,11 +3030,9 @@ $$A\\cup B=\\{p,q,r,s\\},\\qquad A\\cap B=\\{r\\},\\qquad A^c=\\{s,t,u\\},\\qqua
     tactical_explanations: [
       `**A.** → True
 
-The overview already counted 
+The overview already counted
 
-$$\\lvert A\\times B\\rvert=2\\cdot 3=6$$
-
-. Product size is the number of cells, not the number of distinct symbols used. Two rows and three columns are six ordered pairs.
+$$\\lvert A\\times B\\rvert=2\\cdot 3=6.$$ Product size is the number of cells, not the number of distinct symbols used. Two rows and three columns are six ordered pairs.
 
 That matches the claim.
 
@@ -3123,11 +3099,11 @@ Turning the grid on its side produces $B\\times A$, same count, different member
     tactical_explanations: [
       `**A.** → True
 
-The overview already counted 
+The overview already counted
 
 $$3\\cdot 2=6$$
 
- letter-first pairs. Product size counts ordered pairs, not the five symbols $m,n,p,1,2$. Three letters with two numbers each give six cells.
+letter-first pairs. Product size counts ordered pairs, not the five symbols $m,n,p,1,2$. Three letters with two numbers each give six cells.
 
 That matches the claim.
 
@@ -3348,11 +3324,9 @@ Disjointness makes the subtractions do nothing: there is no shared member to del
     tactical_explanations: [
       `**A.** → True
 
-Adding $22+15$ counts the six two-game players twice. Subtracting once restores a single copy. From the shared solve, 
+Adding $22+15$ counts the six two-game players twice. Subtracting once restores a single copy. From the shared solve,
 
-$$\\lvert A\\cup B\\rvert=31$$
-
-. The claim is that same figure.
+$$\\lvert A\\cup B\\rvert=31.$$ The claim is that same figure.
 
 That matches the claim.
 
@@ -3448,7 +3422,7 @@ $$=34-12$$
 
 $$=22$$
 
-Compare the computed value with the claim ($22$. Matching that count,). The two sides agree.
+Compare the computed value with the claim ($22$). The two sides agree.
 
 So the statement is True.`,
       `**C.** → True
@@ -3489,7 +3463,7 @@ $$=28-12$$
 
 $$=16$$
 
-Compare the computed value with the claim ($16$. Matching that count,). The two sides agree.
+Compare the computed value with the claim ($16$). The two sides agree.
 
 So the statement is True.`,
     ],
@@ -3545,7 +3519,7 @@ $$=20-5$$
 
 $$=15$$
 
-Compare the computed value with the claim ($15$. Matching that count,). The two sides agree.
+Compare the computed value with the claim ($15$). The two sides agree.
 
 So the statement is True.`,
       `**C.** → True
@@ -3588,7 +3562,7 @@ $$=18-5$$
 
 $$=13$$
 
-Compare the computed value with the claim ($13$. Matching that count,). The two sides agree.
+Compare the computed value with the claim ($13$). The two sides agree.
 
 So the statement is True.`,
     ],
@@ -3991,9 +3965,7 @@ Scan $P$ against $E$. The only shared member is the even prime $2$:
 
 $$P\\cap E=\\{2\\}$$
 
-Compare the computed value with the claim (that singleton.
-
-That matches the claim). The two sides agree.
+Compare the computed value with the claim (that singleton). That matches the claim. The two sides agree.
 
 So the statement is True.`,
       `**B.** → True
@@ -4002,9 +3974,7 @@ Difference $P\\setminus E$ deletes a member of $P$ only when it also sits in $E$
 
 $$P\\setminus E=\\{3,5,7,11,13\\}$$
 
-Compare the computed value with the claim (that roster.
-
-That matches the claim). The two sides agree.
+Compare the computed value with the claim (that roster). That matches the claim. The two sides agree.
 
 So the statement is True.`,
       `**C.** → False
@@ -4683,9 +4653,9 @@ $$\\neg R:\\quad \\sqrt2\\in\\mathbb Q$$
 
 That means assuming integers $a,b$ with $b\\ne0$ and
 
-$$\\sqrt2=\\frac ab$$
+$$\\sqrt2=\\frac{a}{b}$$
 
-usually chosen in lowest terms, and then deriving an impossibility. Starting with $R$ would assume the very conclusion being proved. Therefore the proposed starting assumption is wrong and.
+usually chosen in lowest terms, and then deriving an impossibility. Starting with $R$ would assume the very conclusion being proved. Therefore the proposed starting assumption is wrong.
 
 So the statement is False.`,
 
@@ -4851,9 +4821,7 @@ Adding $40$ and $35$ counts the $15$ both-buyers twice, so subtract them once:
 
 $$|X\\cup Y|=40+35-15=60$$
 
-Compare the computed value with the claim ($60$.
-
-That matches the claim). The two sides agree.
+Compare the computed value with the claim ($60$). That matches the claim. The two sides agree.
 
 So the statement is True.`,
       `**C.** → True
@@ -4862,9 +4830,7 @@ Exclusive or keeps only the two outer regions. X-only is $40-15=25$ and Y-only i
 
 $$25+20=45$$
 
-Compare the computed value with the claim ($45$.
-
-That matches the claim). The two sides agree.
+Compare the computed value with the claim ($45$). That matches the claim. The two sides agree.
 
 So the statement is True.`,
       `**D.** → True
@@ -5307,9 +5273,7 @@ and the extra fact that $P$ is true travels along it. A true $P$ forces $Q$ true
 
 $$\\neg S \\Rightarrow C$$
 
-Compare the computed value with the claim (that same implication.
-
-That matches the claim). The two sides agree.
+Compare the computed value with the claim (that same implication). That matches the claim. The two sides agree.
 
 So the statement is True.`,
       `**B.** → False
@@ -7576,7 +7540,7 @@ Company Z has $C$ true, $W$ true, and $S$ false.`,
     context: `Several independent mini-scenarios testing whether a proof or negation is correctly constructed.`,
     statements: [
       `Proving "there is no smallest positive real number" by assuming such a number x exists and noting x/2 is smaller (a contradiction) is a valid proof by contradiction.`,
-      `A "proof" of "√3 is irrational" that begins "Assume √3 is irrational.." and proceeds from there is a valid proof by contradiction.`,
+      `A "proof" of "√3 is irrational" that begins "Assume √3 is irrational." and proceeds from there is a valid proof by contradiction.`,
       `The negation of "All flights are delayed and all trains are on time" is "No flight is delayed and no train is on time."`,
       `For "Some employee always arrives late" (some employee is late every day), the correct negation is "All employees are never late."`,
       `One satisfying value proves an existential claim; a universal claim needs an argument for an arbitrary value, not a finite check.`,
@@ -7599,7 +7563,7 @@ The original is $(\\forall f\\, D(f)) \\land (\\forall t\\, O(t))$. Negating an 
 
 $$\\exists f\\, \\neg D(f) \\lor \\exists t\\, \\neg O(t)$$
 
-The offered sentence keeps the and and strengthens both halves. One on-time flight already falsifies the original while leaving that offered sentence false.
+The offered sentence keeps the conjunction and strengthens both halves. One on-time flight already falsifies the original while leaving that offered sentence false.
 
 So the statement is False.`,
       `**D.** → False
@@ -8548,7 +8512,7 @@ The negation is $\\exists t\\,(P(t) \\land \\neg Q(t))$. The converse is $Q \\Ri
       `The correctly formed negation of the theorem is: "A number is a perfect square and it has an even number of divisors."`,
       `36 is a perfect square with divisors $\\{1,2,3,4,6,9,12,18,36\\}$ - 9 divisors (odd), which is consistent with the theorem and not a counterexample to it.`,
       `The converse, "If a number has an odd number of divisors, then it is a perfect square," is also a true statement, so both directions of the implication hold here.`,
-      `Since 20 is not a perfect square and has divisors $\\{1,2,4,5,10,20\\} (6$ divisors, even), 20 is a valid counterexample disproving the original theorem.`,
+      `Since 20 is not a perfect square and has divisors $\\{1,2,4,5,10,20\\}$ (6 divisors, even), 20 is a valid counterexample disproving the original theorem.`,
       `The inverse, "If a number is not a perfect square, it has an even number of divisors," is also true in this case, since the converse is true.`,
     ],
     answer_key: [true, true, true, false, true],
@@ -8557,14 +8521,11 @@ The negation is $\\exists t\\,(P(t) \\land \\neg Q(t))$. The converse is $Q \\Ri
 
 Treat the theorem as universal over positive integers. Negate the quantifier and implication:
 
-$$\
-eg\\forall n\\,(S(n)\\Rightarrow O(n))
+$$\\neg\\forall n\\,(S(n)\\Rightarrow O(n))
 \\equiv
-\\exists n\\,(S(n)\\land\
-eg O(n))$$
+\\exists n\\,(S(n)\\land\\neg O(n))$$
 
-Because a finite divisor count is either odd or even, $\
-eg O(n)$ means an even number of divisors. Thus a counterexample witness would have to be a perfect square with an even divisor count. The quoted sentence has exactly that logical form.
+Because a finite divisor count is either odd or even, $\\neg O(n)$ means an even number of divisors. Thus a counterexample witness would have to be a perfect square with an even divisor count. The quoted sentence has exactly that logical form.
 
 So the statement is True.`,
       `**B.** → True
@@ -8627,19 +8588,13 @@ Sample $36 = 6^{2}$ with listed divisors $\\{1,2,3,4,6,9,12,18,36\\}$. Sample $2
     tactical_explanations: [
       `**A.** → True
 
-Use the biconditionals as equal-truth constraints. Clue (3) gives $\
-eg G$. From clue (2), $F\\Leftrightarrow G$, so
+Use the biconditionals as equal-truth constraints. Clue (3) gives $\\neg G$. From clue (2), $F\\Leftrightarrow G$, so
 
-$$\
-eg G\\quad\\Longrightarrow\\quad\
-eg F$$
+$$\\neg G\\quad\\Longrightarrow\\quad\\neg F$$
 
-Clue (1) is $E\\Leftrightarrow\
-eg F$. Since $\
-eg F$ is true,
+Clue (1) is $E\\Leftrightarrow\\neg F$. Since $\\neg F$ is true,
 
-$$\
-eg F\\quad\\Longrightarrow\\quad E$$
+$$\\neg F\\quad\\Longrightarrow\\quad E$$
 
 Therefore Emma is the doctor.
 
@@ -8651,14 +8606,11 @@ Clue (2) alone says Felix is an engineer exactly when Grace is a teacher. Both s
 So the statement is False.`,
       `**C.** → True
 
-First, clues (3), (2), and (1) force $\
-eg G$, then $\
-eg F$, then $E$: Emma is Doctor. Clue (4) makes Hugo Lawyer. The unused jobs for Felix and Grace are therefore
+First, clues (3), (2), and (1) force $\\neg G$, then $\\neg F$, then $E$: Emma is Doctor. Clue (4) makes Hugo Lawyer. The unused jobs for Felix and Grace are therefore
 
 $$\\{\\text{Engineer},\\text{Teacher}\\}$$
 
-But $\
-eg F$ says Felix is not Engineer, so Felix must be Teacher. Because all four jobs are distinct, the remaining Engineer job goes to Grace.
+But $\\neg F$ says Felix is not Engineer, so Felix must be Teacher. Because all four jobs are distinct, the remaining Engineer job goes to Grace.
 
 So the statement is True.`,
       `**D.** → True
@@ -8678,11 +8630,9 @@ So the statement is True.`,
 
 Write $E$ for Emma being a doctor, $F$ for Felix being an engineer, $G$ for Grace being a teacher, and $H$ for Hugo being a lawyer. Four distinct jobs means each job is held by exactly one person. The clues are
 
-$$(1)\\ E \\Leftrightarrow \
-eg F, \\qquad (2)\\ F \\Leftrightarrow G$$
+$$(1)\\ E \\Leftrightarrow \\neg F, \\qquad (2)\\ F \\Leftrightarrow G$$
 
-$$(3)\\ \
-eg G, \\qquad (4)\\ H$$
+$$(3)\\ \\neg G, \\qquad (4)\\ H$$
 
 A biconditional forces matching truth values.
 

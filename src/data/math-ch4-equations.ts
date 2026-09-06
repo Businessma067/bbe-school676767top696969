@@ -15,7 +15,7 @@ export const MATH_CH4_SUBSECTIONS = [
   { id: "4.2", title: "Quadratic equations" },
   { id: "4.3", title: "Rational, radical and absolute-value equations" },
   { id: "4.4", title: "Exponential and logarithmic equations" },
-  { id: "4.5", title: "Mixed exam sets" },
+  { id: "4.5", title: "Exam-Style" },
 ] as const;
 
 export const MATH_CH4_EQUATIONS: MathTask[] = (ch4Cases.tasks as MathTask[]).map((t) => ({

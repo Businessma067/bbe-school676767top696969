@@ -15,7 +15,7 @@ export const MATH_CH12_SUBSECTIONS = [
   { id: "12.3", title: "Conditional Probability" },
   { id: "12.4", title: "Expected Value, Variance & SD" },
   { id: "12.5", title: "Bayes' Theorem" },
-  { id: "12.6", title: "Exam-style tasks" },
+  { id: "12.6", title: "Exam-Style" },
 ] as const;
 
 export const MATH_CH12_PROBABILITY: MathTask[] = [

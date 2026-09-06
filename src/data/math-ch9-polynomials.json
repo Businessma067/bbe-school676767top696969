@@ -558,7 +558,7 @@
         "**B.** → True\n\nThe shifted cube vanishes where the inner factor vanishes, namely at $x=1$.\n\n$$p(x)=x^{3}$$\n\n$$q(1)=(1-1)^{3}=0^{3}=0$$\n\nThat is the image of the original root $p(0)=0$ after sliding one unit to the right. Expanding is unnecessary for this check, but it agrees:\n\n$$1-3+3-1=0$$\n\nThe value at $x=1$ is $0$.\n\nSo the statement is True.",
         "**C.** → True\n\nThe $y$-intercept of $q$ is the value at $x=0$, which is the original cube evaluated one unit to the left of the origin.\n\n$$p(x)=x^{3}$$\n\n$$q(0)=(0-1)^{3}=(-1)^{3}=-1$$\n\nThe expanded form gives the same constant term:\n\n$$q(x)=x^{3}-3x^{2}+3x-1$$\n\nSo $q(0)=-1$, matching the claimed height. That $-1$ is also the constant term of the expansion $x^{3}-3x^{2}+3x-1$. The intercept of $q$ is $-1$.\n\nSo the statement is True.",
         "**D.** → False\n\nTwo graphs are the same curve only when the functions agree at every $x$. Compare them at the origin.\n\n$$p(0)=0^{3}$$\n\n$$0^{3}=0$$\n\n$$q(0)=(0-1)^{3}$$\n\n$$(0-1)^{3}=-1$$\n\nAlready $p(0)\\neq q(0)$. Expanding $q$ makes the mismatch visible as extra lower terms $-3x^{2}+3x-1$. Replacing $x$ by $x-1$ slides $y=x^{3}$ one unit to the right; it does not leave the curve unmoved.\n\nSo the statement is False.",
-        "**E.** → True\n\nThe leading coefficient is the number in front of the highest power after expansion.\n\n$$p(x)=x^{3}$$\n\n$$q(x)=(x-1)^{3}$$\n\n$$(x-1)^{3}=x^{3}-3x^{2}+3x-1$$\n\nThe top term is $1\\cdot x^{3}$. Shifting never changes that leading $1$, because\n\n$$(x-1)^{3}=x^{3}+\\cdots$$\n\nA nonzero coefficient of that highest power is what makes the degree exact.\n\nwith no extra factor in front of $x^{3}$. The leading coefficient of $q$ is $1$.\n\nSo the statement is True."
+        "**E.** → True\n\nThe leading coefficient is the number in front of the highest power after expansion.\n\n$$p(x)=x^{3}$$\n\n$$q(x)=(x-1)^{3}$$\n\n$$(x-1)^{3}=x^{3}-3x^{2}+3x-1$$\n\nThe top term is $1\\cdot x^{3}$. Shifting never changes that leading $1$, because\n\n$$(x-1)^{3}=x^{3}+\\cdots$$\n\nA nonzero coefficient of that highest power is what makes the degree exact, with no extra factor in front of $x^{3}$. The leading coefficient of $q$ is $1$.\n\nSo the statement is True."
       ],
       "difficulty_level": "2/5",
       "sort_order": 17,
@@ -728,7 +728,7 @@
       ],
       "difficulty_level": "3/5",
       "sort_order": 22,
-      "solution_overview": "The model is a named polynomial of time, quantity, or cost; later claims are substitutions, derivatives, or tabled increments.\n\n$$v(t)=0.0004t^{3}-0.036t^{2}+0.9t$$\n\n$$v(t)=0.0004t^{3}-0.036t^{2}+0.9t$$\n\nDifferentiate $v$ for acceleration. Interval speeds of the table are $\\Delta s/8$.",
+      "solution_overview": "The model is a named polynomial of time, quantity, or cost; later claims are substitutions, derivatives, or tabled increments.\n\n$$v(t)=0.0004t^{3}-0.036t^{2}+0.9t$$\n\nDifferentiate $v$ for acceleration. Interval speeds of the table are $\\Delta s/8$.",
       "subsection": "9",
       "placeholder": false,
       "stem_kind": "applied",
@@ -1022,10 +1022,10 @@
       ],
       "tactical_explanations": [
         "**A.** → True\n\nWhen the highest powers differ, they cannot cancel in a sum. Here $n>m$, so $x^{n}$ has no partner in $q$.\n\n$$p(x)=ax^{n}+\\cdots$$\n\n$$q(x)=bx^{m}+\\cdots$$\n\n$$p(x)+q(x)=ax^{n}+\\cdots$$\n\nA nonzero coefficient of that highest power is what makes the degree exact.\n\nThe coefficient $a$ of $x^{n}$ is nonzero by assumption, so it survives. A concrete pair: $x^{3}+x$ still has highest power $x^{3}$. The highest power of $p+q$ is $x^{n}$.\n\nSo the statement is True.",
-        "**B.** → True\n\nSubtracting $q$ only changes the sign of $q$'s coefficients. The top term of $p$ is still unmatched.\n\n$$p(x)-q(x)=ax^{n}+\\cdots$$\n\nBecause $n>m$, the power $x^{n}$ does not appear in $q$, so it cannot be cancelled by $-q$. With $p(x)=x^{3}$ and $q(x)=x$,\n\n$$x^{3}-x$$\n\nRead the highest written power whose coefficient is nonzero.\n\nstill has highest power $x^{3}$. The highest power of $p-q$ is $x^{n}$.\n\nSo the statement is True.",
+        "**B.** → True\n\nSubtracting $q$ only changes the sign of $q$'s coefficients. The top term of $p$ is still unmatched.\n\n$$p(x)-q(x)=ax^{n}+\\cdots$$\n\nBecause $n>m$, the power $x^{n}$ does not appear in $q$, so it cannot be cancelled by $-q$. With $p(x)=x^{3}$ and $q(x)=x$,\n\n$$x^{3}-x$$\n\nThat difference still has highest power $x^{3}$. The highest power of $p-q$ is $x^{n}$.\n\nSo the statement is True.",
         "**C.** → True\n\nThe highest power of a product is the product of the two highest powers, equivalently the sum of the two exponents.\n\n$$(ax^{n})(bx^{m})=ab\\,x^{n+m}$$\n\nThe coefficient $ab$ is a product of nonzero numbers, hence nonzero. Taking $p(x)=x^{3}$ and $q(x)=x^{2}$ gives $x^{5}$, and $3+2=5$.\n\n$$x^{3}\\cdot x^{2}=x^{5}$$\n\nRead the highest written power whose coefficient is nonzero.\n\nThe highest power of $p\\cdot q$ is $x^{n+m}$.\n\nSo the statement is True.",
-        "**D.** → False\n\nAdding polynomials never adds their exponents. The sum keeps the larger of the two highest powers.\n\n$$p+q=ax^{n}+\\cdots\\qquad n>m$$\n\nThe exponent $n+m$ would appear in a product, not in a sum. With $n=3$ and $m=1$,\n\n$$x^{3}+x$$\n\nRead the highest written power whose coefficient is nonzero.\n\nA nonzero coefficient of that highest power is what makes the degree exact.\n\nhas highest power $x^{3}$, not $x^{4}$. The claimed $x^{n+m}$ is the wrong operation.\n\nSo the statement is False.",
-        "**E.** → False\n\nOpposite leading coefficients can cancel only when they sit on the same power of $x$.\n\n$$n>m$$\n\nThe top term $ax^{n}$ of $p$ has no counterpart in $q$, whatever the sign of $b$. Opposite signs would matter if $n=m$, but here the degrees differ.\n\n$$x^{3}+(-x^{2})=x^{3}-x^{2}$$\n\nRead the highest written power whose coefficient is nonzero.\n\nstill has highest power $x^{3}$. The degree of $p+q$ cannot drop below $n$.\n\nSo the statement is False."
+        "**D.** → False\n\nAdding polynomials never adds their exponents. The sum keeps the larger of the two highest powers.\n\n$$p+q=ax^{n}+\\cdots\\qquad n>m$$\n\nThe exponent $n+m$ would appear in a product, not in a sum. With $n=3$ and $m=1$,\n\n$$x^{3}+x$$\n\nRead the highest written power whose coefficient is nonzero.\n\nA nonzero coefficient of that highest power is what makes the degree exact. That example has highest power $x^{3}$, not $x^{4}$. The claimed $x^{n+m}$ is the wrong operation.\n\nSo the statement is False.",
+        "**E.** → False\n\nOpposite leading coefficients can cancel only when they sit on the same power of $x$.\n\n$$n>m$$\n\nThe top term $ax^{n}$ of $p$ has no counterpart in $q$, whatever the sign of $b$. Opposite signs would matter if $n=m$, but here the degrees differ.\n\n$$x^{3}+(-x^{2})=x^{3}-x^{2}$$\n\nThat sum still has highest power $x^{3}$. The degree of $p+q$ cannot drop below $n$.\n\nSo the statement is False."
       ],
       "difficulty_level": "4/5",
       "sort_order": 31,
@@ -1054,7 +1054,7 @@
         true
       ],
       "tactical_explanations": [
-        "**A.** → True\n\nEqual highest powers with opposite leading coefficients cancel in the sum.\n\n$$a+b=0,\\qquad a\\neq 0$$\n\nThe $x^{n}$ terms $ax^{n}+bx^{n}=(a+b)x^{n}$ vanish, so whatever survives has exponent strictly less than $n$. A concrete pair: $p(x)=x^{2}+1$ and $q(x)=-x^{2}+x$ give\n\n$$p+q=x+1$$\n\nRead the highest written power whose coefficient is nonzero.\n\nwhich has highest power $x^{1}$, strictly below $2$. The top power of $p+q$ drops.\n\nSo the statement is True.",
+        "**A.** → True\n\nEqual highest powers with opposite leading coefficients cancel in the sum.\n\n$$a+b=0,\\qquad a\\neq 0$$\n\nThe $x^{n}$ terms $ax^{n}+bx^{n}=(a+b)x^{n}$ vanish, so whatever survives has exponent strictly less than $n$. A concrete pair: $p(x)=x^{2}+1$ and $q(x)=-x^{2}+x$ give\n\n$$p+q=x+1$$\n\nThat sum has highest power $x^{1}$, strictly below $2$. The top power of $p+q$ drops.\n\nSo the statement is True.",
         "**B.** → True\n\nSubtracting $q$ doubles the leading coefficient instead of cancelling it.\n\n$$p-q=(a-b)x^{n}+\\cdots$$\n\nBecause $b=-a$, the combination $a-b=a-(-a)=2a$ is nonzero.\n\n$$2a\\neq 0$$\n\nRead the highest written power whose coefficient is nonzero.\n\nA nonzero coefficient of that highest power is what makes the degree exact.\n\nWith $p(x)=x^{2}+1$ and $q(x)=-x^{2}+x$ one gets $p-q=2x^{2}-x+1$, still of highest power $x^{2}$. The highest power of $p-q$ remains $x^{n}$.\n\nSo the statement is True.",
         "**C.** → True\n\nThe product of two degree-$n$ polynomials has degree $2n$, because the leading coefficients multiply rather than add.\n\n$$(ax^{n})(bx^{n})=ab\\,x^{2n}$$\n\nHere $ab=a(-a)=-a^{2}$. Since $a\\neq 0$, that product is nonzero, so the $x^{2n}$ term survives.\n\n$$-a^{2}\\neq 0$$\n\nRead the highest written power whose coefficient is nonzero.\n\nFor $p(x)=x^{2}+1$ and $q(x)=-x^{2}+x$ the product begins $-x^{4}+\\cdots$. The highest power of $p\\cdot q$ is $x^{2n}$.\n\nSo the statement is True.",
         "**D.** → False\n\nCancellation of the top terms does not force every lower term to vanish.\n\n$$p(x)=x^{2}+1$$\n\n$$q(x)=-x^{2}+x$$\n\n$$p+q=x+1$$\n\nThat sum is not the zero polynomial. The identity $p+q\\equiv 0$ would require $q=-p$ as functions, which is stronger than matching leading coefficients. Opposite leads kill only the $x^{n}$ term.\n\nSo the statement is False.",
@@ -1228,7 +1228,7 @@
       ],
       "difficulty_level": "4/5",
       "sort_order": 37,
-      "solution_overview": "The model is a named polynomial of time, quantity, or cost; later claims are substitutions, derivatives, or tabled increments.\n\n$$v(t)=0.00001t^{3}-0.003t^{2}+0.24t$$\n\n$$v(t)=0.00001t^{3}-0.003t^{2}+0.24t$$\n\nDifferentiate $v$; convert the second rider's $900/90$ into km/h.",
+      "solution_overview": "The model is a named polynomial of time, quantity, or cost; later claims are substitutions, derivatives, or tabled increments.\n\n$$v(t)=0.00001t^{3}-0.003t^{2}+0.24t$$\n\nDifferentiate $v$; convert the second rider's $900/90$ into km/h.",
       "subsection": "9",
       "placeholder": false,
       "stem_kind": "applied",
@@ -1425,7 +1425,7 @@
         "**B.** → False\n\n\"At most $n-1$\" is not \"exactly $n-1$\". The cubic $x^{3}$ has derivative $3x^{2}$, whose only real root is $x=0$.\n\n$$p(x)=x^{3}$$\n\n$$p'(x)=3x^{2}$$\n\nRead the highest written power whose coefficient is nonzero.\n\nHere $n=3$, so $n-1=2$, but there is only one stationary point. Multiple roots of $p'$, or complex roots, reduce the count. Not every degree-$n$ polynomial has exactly $n-1$ stationary points.\n\nSo the statement is False.",
         "**C.** → True\n\nA vertical stretch multiplies $p$ by a nonzero constant $k$, and the chain rule (or factoring $k$) leaves the zeros of the derivative unchanged.\n\n$$(kp)'(x)=k\\,p'(x)$$\n\nBecause $k\\neq 0$, one has $(kp)'(x)=0$ if and only if $p'(x)=0$. The stationary abscissas are the same set.\n\n$$kp'(x)=0\\qquad\\Longleftrightarrow\\qquad p'(x)=0$$\n\nThe factor test is the substitution that asks whether the height vanishes at that abscissa.\n\nA vertical stretch keeps the same stationary $x$-values.\n\nSo the statement is True.",
         "**D.** → False\n\nReplacing $x$ by $x-h$ slides the graph horizontally. Every stationary point moves by $h$, but none is created or destroyed.\n\n$$q(x)=p(x-h)\\qquad\\Longrightarrow\\qquad q'(x)=p'(x-h)$$\n\nThe equation $q'(x)=0$ is $p'(x-h)=0$, which has as many solutions as $p'(u)=0$. A shift cannot increase the count.\n\n$$p(x)=x^{3}$$\n\n$$p(x-1)=(x-1)^{3}$$\n\nstill has a single stationary point. The number of stationary points is invariant.\n\nSo the statement is False.",
-        "**E.** → True\n\nIf $n$ is even then $n-1$ is odd, so $p'$ has odd highest power.\n\n$$p'(x)=nax^{n-1}+\\cdots$$\n\nAn odd-degree real polynomial always has at least one real root, by the same end-behaviour argument as for cubics. That real root of $p'$ is a stationary point of $p$. For $p(x)=x^{4}-x$ one has\n\n$$p'(x)=4x^{3}-1$$\n\nOddness requires the expanded formula to flip under $x\\mapsto -x$.\n\n$$p(-x)=-p(x)$$\n\nRead the highest written power whose coefficient is nonzero.\n\nwhich vanishes at $x=4^{-1/3}$. Even degree forces at least one stationary point.\n\nSo the statement is True."
+        "**E.** → True\n\nIf $n$ is even then $n-1$ is odd, so $p'$ has odd highest power.\n\n$$p'(x)=nax^{n-1}+\\cdots$$\n\nAn odd-degree real polynomial always has at least one real root, by the same end-behaviour argument as for cubics. That real root of $p'$ is a stationary point of $p$. For $p(x)=x^{4}-x$ one has\n\n$$p'(x)=4x^{3}-1$$\n\nOddness requires the expanded formula to flip under $x\\mapsto -x$.\n\n$$p(-x)=-p(x)$$\n\nThe derivative $4x^{3}-1$ vanishes at $x=4^{-1/3}$. Even degree forces at least one stationary point.\n\nSo the statement is True."
       ],
       "difficulty_level": "5/5",
       "sort_order": 43,
@@ -1695,7 +1695,7 @@
       ],
       "difficulty_level": "3/5",
       "sort_order": 51,
-      "solution_overview": "The model is a named polynomial of time, quantity, or cost; later claims are substitutions, derivatives, or tabled increments.\n\n$$v(t)=\\frac{1}{2500}t^{3}-\\frac{9}{100}t^{2}+\\frac{9}{10}t$$\n\n$$v(t)=\\frac{1}{2500}t^{3}-\\frac{9}{100}t^{2}+\\frac{9}{10}t$$\n\nDifferentiate the cubic speed for acceleration; interval speeds are $\\Delta s/10$.\n\nOn equally spaced samples, a frozen difference layer diagnoses the degree.",
+      "solution_overview": "The model is a named polynomial of time, quantity, or cost; later claims are substitutions, derivatives, or tabled increments.\n\n$$v(t)=\\frac{1}{2500}t^{3}-\\frac{9}{100}t^{2}+\\frac{9}{10}t$$\n\nDifferentiate the cubic speed for acceleration; interval speeds are $\\Delta s/10$.\n\nOn equally spaced samples, a frozen difference layer diagnoses the degree.",
       "subsection": "9",
       "placeholder": false,
       "stem_kind": "applied",
@@ -1863,7 +1863,7 @@
       ],
       "difficulty_level": "3/5",
       "sort_order": 56,
-      "solution_overview": "The model is a named polynomial of time, quantity, or cost; later claims are substitutions, derivatives, or tabled increments.\n\n$$h(t)=\\frac{1}{500}t^{3}-\\frac{9}{100}t^{2}+t$$\n\n$$h(t)=\\frac{1}{500}t^{3}-\\frac{9}{100}t^{2}+t$$\n\nEvaluate $h$ and $h'$ at the named times.\n\nDegree and the leading coefficient are read from the highest written power whose coefficient is not zero.\n\nA value is obtained by substituting the named number and collecting powers.",
+      "solution_overview": "The model is a named polynomial of time, quantity, or cost; later claims are substitutions, derivatives, or tabled increments.\n\n$$h(t)=\\frac{1}{500}t^{3}-\\frac{9}{100}t^{2}+t$$\n\nEvaluate $h$ and $h'$ at the named times.\n\nDegree and the leading coefficient are read from the highest written power whose coefficient is not zero.\n\nA value is obtained by substituting the named number and collecting powers.",
       "subsection": "9",
       "placeholder": false,
       "stem_kind": "applied"
@@ -2173,7 +2173,7 @@
       "id": "math-9-66",
       "case_id": "MATH 9.66",
       "title": "Cubic Meets a Line: Count the Crossings",
-      "context": "Let $p(x)=x \\left(x^{2} - 4\\right)$ and $\\\\ell(x)=x$. Evaluate each statement. Mark it TRUE or FALSE.",
+      "context": "Let $p(x)=x \\left(x^{2} - 4\\right)$ and $\\ell(x)=x$. Evaluate each statement. Mark it TRUE or FALSE.",
       "statements": [
         "The graphs meet at least twice on the real line.",
         "$p-\\ell$ is a cubic polynomial.",
@@ -2330,7 +2330,7 @@
       ],
       "difficulty_level": "4/5",
       "sort_order": 70,
-      "solution_overview": "The stem names the polynomial that every later computation refers to.\n\n$$p(x)=x^{2} - 2 x + 3$$\n\n$$p(x)=x^{2} - 2 x + 3$$\n\n$r=p^{2}-p=p(p-1)$.\n\nDegree and the leading coefficient are read from the highest written power whose coefficient is not zero.\n\nA value is obtained by substituting the named number and collecting powers.",
+      "solution_overview": "The stem names the polynomial that every later computation refers to.\n\n$$p(x)=x^{2} - 2 x + 3$$\n\n$r=p^{2}-p=p(p-1)$.\n\nDegree and the leading coefficient are read from the highest written power whose coefficient is not zero.\n\nA value is obtained by substituting the named number and collecting powers.",
       "subsection": "9",
       "placeholder": false,
       "stem_kind": "formula"
@@ -2506,7 +2506,7 @@
       "id": "math-9-76",
       "case_id": "MATH 9.76",
       "title": "Odd Cubic Against a Parabola",
-      "context": "Let $p(x)=x^{3} - x$ and $\\\\ell(x)=x^{2} - 1$. Evaluate each statement. Mark it TRUE or FALSE.",
+      "context": "Let $p(x)=x^{3} - x$ and $\\ell(x)=x^{2} - 1$. Evaluate each statement. Mark it TRUE or FALSE.",
       "statements": [
         "The graphs meet at least twice on the real line.",
         "$p-\\ell$ is a cubic polynomial.",
@@ -2663,7 +2663,7 @@
       ],
       "difficulty_level": "4/5",
       "sort_order": 80,
-      "solution_overview": "The stem names the polynomial that every later computation refers to.\n\n$$p(x)=x^{2} + x + 1$$\n\n$$p(x)=x^{2} + x + 1$$\n\n$r=p^{2}-p=p(p-1)$.\n\nDegree and the leading coefficient are read from the highest written power whose coefficient is not zero.\n\nA value is obtained by substituting the named number and collecting powers.",
+      "solution_overview": "The stem names the polynomial that every later computation refers to.\n\n$$p(x)=x^{2} + x + 1$$\n\n$r=p^{2}-p=p(p-1)$.\n\nDegree and the leading coefficient are read from the highest written power whose coefficient is not zero.\n\nA value is obtained by substituting the named number and collecting powers.",
       "subsection": "9",
       "placeholder": false,
       "stem_kind": "formula"
@@ -2872,7 +2872,7 @@
       "id": "math-9-87",
       "case_id": "MATH 9.87",
       "title": "Quartic Minus a Parabola",
-      "context": "Let $p(x)=x^{4} - 5 x^{2} + 4$ and $\\\\ell(x)=x^{2} - 1$. Evaluate each statement. Mark it TRUE or FALSE.",
+      "context": "Let $p(x)=x^{4} - 5 x^{2} + 4$ and $\\ell(x)=x^{2} - 1$. Evaluate each statement. Mark it TRUE or FALSE.",
       "statements": [
         "The graphs meet at least twice on the real line.",
         "$p-\\ell$ is a cubic polynomial.",
@@ -2896,7 +2896,7 @@
       ],
       "difficulty_level": "4/5",
       "sort_order": 87,
-      "solution_overview": "The stem names the polynomial that every later computation refers to.\n\n$$p(x)=x^{4} - 5 x^{2} + 4$$\n\n$$p(x)=x^{4} - 5 x^{2} + 4$$\n\nMeetings solve $p-\\ell=0$, i.e. $x^{4} - 6 x^{2} + 5=0$.\n\nA value is obtained by substituting the named number and collecting powers.\n\nParity is a coefficient reading: only odd powers make an odd map, only even powers make an even map.",
+      "solution_overview": "The stem names the polynomial that every later computation refers to.\n\n$$p(x)=x^{4} - 5 x^{2} + 4$$\n\nMeetings solve $p-\\ell=0$, i.e. $x^{4} - 6 x^{2} + 5=0$.\n\nA value is obtained by substituting the named number and collecting powers.\n\nParity is a coefficient reading: only odd powers make an odd map, only even powers make an even map.",
       "subsection": "9",
       "placeholder": false,
       "stem_kind": "formula"
@@ -3442,7 +3442,7 @@
       "id": "math-9-104",
       "case_id": "MATH 9.104",
       "title": "Quartic Meets a Parabola Four Times",
-      "context": "Let $p(x)=x^{4} - 6 x^{2} + 5$ and $\\\\ell(x)=x^{2} - 1$. Evaluate each statement. Mark it TRUE or FALSE.",
+      "context": "Let $p(x)=x^{4} - 6 x^{2} + 5$ and $\\ell(x)=x^{2} - 1$. Evaluate each statement. Mark it TRUE or FALSE.",
       "statements": [
         "The graphs meet at least twice on the real line.",
         "$p-\\ell$ is a cubic polynomial.",
@@ -3466,7 +3466,7 @@
       ],
       "difficulty_level": "5/5",
       "sort_order": 104,
-      "solution_overview": "The stem names the polynomial that every later computation refers to.\n\n$$p(x)=x^{4} - 6 x^{2} + 5$$\n\n$$p(x)=x^{4} - 6 x^{2} + 5$$\n\nMeetings solve $p-\\ell=0$, i.e. $x^{4} - 7 x^{2} + 6=0$.\n\nA value is obtained by substituting the named number and collecting powers.\n\nParity is a coefficient reading: only odd powers make an odd map, only even powers make an even map.",
+      "solution_overview": "The stem names the polynomial that every later computation refers to.\n\n$$p(x)=x^{4} - 6 x^{2} + 5$$\n\nMeetings solve $p-\\ell=0$, i.e. $x^{4} - 7 x^{2} + 6=0$.\n\nA value is obtained by substituting the named number and collecting powers.\n\nParity is a coefficient reading: only odd powers make an odd map, only even powers make an even map.",
       "subsection": "9",
       "placeholder": false,
       "stem_kind": "formula"
@@ -3475,7 +3475,7 @@
       "id": "math-9-105",
       "case_id": "MATH 9.105",
       "title": "Cubic Meets a Parabola: Count Carefully",
-      "context": "Let $p(x)=x \\left(x^{2} - 6\\right)$ and $\\\\ell(x)=x^{2} - 4$. Evaluate each statement. Mark it TRUE or FALSE.",
+      "context": "Let $p(x)=x \\left(x^{2} - 6\\right)$ and $\\ell(x)=x^{2} - 4$. Evaluate each statement. Mark it TRUE or FALSE.",
       "statements": [
         "The graphs meet at least twice on the real line.",
         "$p-\\ell$ is a cubic polynomial.",
@@ -3508,7 +3508,7 @@
       "id": "math-9-106",
       "case_id": "MATH 9.106",
       "title": "Cubic Minus a Line: Three Meetings?",
-      "context": "Let $p(x)=x \\left(x^{2} - 3\\right)$ and $\\\\ell(x)=x + 1$. Evaluate each statement. Mark it TRUE or FALSE.",
+      "context": "Let $p(x)=x \\left(x^{2} - 3\\right)$ and $\\ell(x)=x + 1$. Evaluate each statement. Mark it TRUE or FALSE.",
       "statements": [
         "The graphs meet at least twice on the real line.",
         "$p-\\ell$ is a cubic polynomial.",
@@ -3541,7 +3541,7 @@
       "id": "math-9-107",
       "case_id": "MATH 9.107",
       "title": "Biquadratic Minus a Line",
-      "context": "Let $p(x)=x^{2} \\left(x^{2} - 4\\right)$ and $\\\\ell(x)=x$. Evaluate each statement. Mark it TRUE or FALSE.",
+      "context": "Let $p(x)=x^{2} \\left(x^{2} - 4\\right)$ and $\\ell(x)=x$. Evaluate each statement. Mark it TRUE or FALSE.",
       "statements": [
         "The graphs meet at least twice on the real line.",
         "$p-\\ell$ is a cubic polynomial.",
@@ -3631,7 +3631,7 @@
       ],
       "difficulty_level": "5/5",
       "sort_order": 109,
-      "solution_overview": "The stem names the polynomial that every later computation refers to.\n\n$$p(x)=x^{2} - 2 x + 3$$\n\n$$p(x)=x^{2} - 2 x + 3$$\n\n$r=p^{2}-p=p(p-1)$.\n\nDegree and the leading coefficient are read from the highest written power whose coefficient is not zero.\n\nA value is obtained by substituting the named number and collecting powers.",
+      "solution_overview": "The stem names the polynomial that every later computation refers to.\n\n$$p(x)=x^{2} - 2 x + 3$$\n\n$r=p^{2}-p=p(p-1)$.\n\nDegree and the leading coefficient are read from the highest written power whose coefficient is not zero.\n\nA value is obtained by substituting the named number and collecting powers.",
       "subsection": "9",
       "placeholder": false,
       "stem_kind": "formula"
@@ -3730,7 +3730,7 @@
       ],
       "difficulty_level": "5/5",
       "sort_order": 112,
-      "solution_overview": "The stem names the polynomial that every later computation refers to.\n\n$$p(x)=x^{2} + x + 1$$\n\n$$p(x)=x^{2} + x + 1$$\n\n$r=p^{2}-p=p(p-1)$.\n\nDegree and the leading coefficient are read from the highest written power whose coefficient is not zero.\n\nA value is obtained by substituting the named number and collecting powers.",
+      "solution_overview": "The stem names the polynomial that every later computation refers to.\n\n$$p(x)=x^{2} + x + 1$$\n\n$r=p^{2}-p=p(p-1)$.\n\nDegree and the leading coefficient are read from the highest written power whose coefficient is not zero.\n\nA value is obtained by substituting the named number and collecting powers.",
       "subsection": "9",
       "placeholder": false,
       "stem_kind": "formula"
@@ -3829,7 +3829,7 @@
       ],
       "difficulty_level": "5/5",
       "sort_order": 115,
-      "solution_overview": "The stem names the polynomial that every later computation refers to.\n\n$$p(x)=x^{2} - 3 x + 5$$\n\n$$p(x)=x^{2} - 3 x + 5$$\n\n$r=p^{2}-p=p(p-1)$.\n\nDegree and the leading coefficient are read from the highest written power whose coefficient is not zero.\n\nA value is obtained by substituting the named number and collecting powers.",
+      "solution_overview": "The stem names the polynomial that every later computation refers to.\n\n$$p(x)=x^{2} - 3 x + 5$$\n\n$r=p^{2}-p=p(p-1)$.\n\nDegree and the leading coefficient are read from the highest written power whose coefficient is not zero.\n\nA value is obtained by substituting the named number and collecting powers.",
       "subsection": "9",
       "placeholder": false,
       "stem_kind": "formula"

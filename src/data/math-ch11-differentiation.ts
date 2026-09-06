@@ -11,7 +11,7 @@ export const MATH_CH11_SUBSECTIONS = [
   { id: "11.2", title: "Economic interpretation of the derivative" },
   { id: "11.3", title: "Finding and classifying optima" },
   { id: "11.4", title: "Interpreting graphs without algebra" },
-  { id: "11.5", title: "Exam-style tasks" },
+  { id: "11.5", title: "Exam-Style" },
 ] as const;
 
 const MATH_CH11_CORE: MathTask[] = [
@@ -2931,7 +2931,7 @@ Average cost $A(Q)=\\dfrac{C(Q)}{Q}$ answers a different question — euros per 
 
 The quantity that answers the management question is therefore $C^{\\prime}(Q)$, not $A(Q)$
 
-In symbols, management asks for the local rate $C^{\\prime}(Q)$ via $C(Q+\\Delta Q)-C(Q)\\approx C^{\\prime}(Q)\\,\\Delta Q$, not for the quotient $A(Q)$., so the statement is True.`,
+In symbols, management asks for the local rate $C^{\\prime}(Q)$ via $C(Q+\\Delta Q)-C(Q)\\approx C^{\\prime}(Q)\\,\\Delta Q$, not for the quotient $A(Q)$. So the statement is True.`,
       `**B.** → False
 
 Average cost is the quotient $A(Q)=\\dfrac{C(Q)}{Q}$, and differentiating that quotient tracks how the average itself moves with output.
@@ -2942,14 +2942,14 @@ $$C^{\\prime}(Q)$$
 
 Those two derivatives are different functions in general, and differentiating $A$ is not the same as computing marginal cost
 
-The quotient rule makes the gap explicit: $A^{\\prime}(Q)=\\dfrac{C^{\\prime}(Q)-A(Q)}{Q}$, which equals $C^{\\prime}$ only in degenerate cases, not in general., so the statement is False.`,
+The quotient rule makes the gap explicit: $A^{\\prime}(Q)=\\dfrac{C^{\\prime}(Q)-A(Q)}{Q}$, which equals $C^{\\prime}$ only in degenerate cases, not in general. So the statement is False.`,
       `**C.** → True
 
 On a graph of total cost against output, the derivative at a named point is the slope of the tangent there.
 
 Economists call that slope marginal cost, and marginal cost at a named output is precisely the slope of the total-cost curve at that output
 
-If the drawn tangent at some $Q_0$ has slope $m$, one reads $C^{\\prime}(Q_0)=m$ directly from the figure — that geometric slope is the definition of marginal cost at $Q_0$., so the statement is True.`,
+If the drawn tangent at some $Q_0$ has slope $m$, one reads $C^{\\prime}(Q_0)=m$ directly from the figure — that geometric slope is the definition of marginal cost at $Q_0$. So the statement is True.`,
       `**D.** → True
 
 The linear approximation says a small change in output changes total cost by about the derivative times that change:
@@ -2971,7 +2971,7 @@ The two coincide only at special outputs (for instance where average cost is min
 
 Only where average cost is minimized does $A^{\\prime}=0$ force $C^{\\prime}=A$; away from that point the average and the marginal routinely disagree.
 
-Matching the claim against that reasoning confirms the verdict is False once the right derivative (or the right expand-or-not comparison) is in view., so the statement is False.`
+Matching the claim against that reasoning confirms the verdict is False once the right derivative (or the right expand-or-not comparison) is in view. So the statement is False.`
     ],
     difficulty_level: "2/5",
     sort_order: 41,
@@ -3008,7 +3008,7 @@ Its value $3$ therefore means about $3$ million euros per extra percentage point
 
 Units confirm the reading: $C$ is in millions of euros and $x$ is a percentage, so $C^{\\prime}(50)=3$ means $3$ million euros per extra percentage point near $x=50$.
 
-Matching the claim against that reasoning confirms the verdict is True once the right derivative (or the right expand-or-not comparison) is in view., so the statement is True.`,
+Matching the claim against that reasoning confirms the verdict is True once the right derivative (or the right expand-or-not comparison) is in view. So the statement is True.`,
       `**B.** → False
 
 The total cost of a $50\\%$ cleanup is the function value $C(50)$, a stock of spending.
@@ -3017,7 +3017,7 @@ The report $C^{\\prime}(50)=3$ is a rate — millions of euros per percentage po
 
 Nothing in the report identifies the stock $C(50)$; a cleanup could already have cost $100$ million while the next percentage point still costs about $3$ million more.
 
-Matching the claim against that reasoning confirms the verdict is False once the right derivative (or the right expand-or-not comparison) is in view., so the statement is False.`,
+Matching the claim against that reasoning confirms the verdict is False once the right derivative (or the right expand-or-not comparison) is in view. So the statement is False.`,
       `**C.** → True
 
 The precise local meaning of the derivative is the linear approximation for small steps:
@@ -3030,7 +3030,7 @@ which is exactly the reading named in the claim
 
 For instance $\\Delta x=0.5$ predicts about $1.5$ million euros of extra cost for half a percentage point — the same derivative, scaled by the step size.
 
-Matching the claim against that reasoning confirms the verdict is True once the right derivative (or the right expand-or-not comparison) is in view., so the statement is True.`,
+Matching the claim against that reasoning confirms the verdict is True once the right derivative (or the right expand-or-not comparison) is in view. So the statement is True.`,
       `**D.** → True
 
 Elementary readings often take a one-unit step $\\Delta x=1$ and say the extra cost of going from $50\\%$ to $51\\%$ is about $3$ million euros.
@@ -3039,7 +3039,7 @@ That is a convenient one-unit version of the same derivative
 
 It remains an approximation for a curved $C$, but it is the standard classroom translation of $C^{\\prime}(50)=3$ into a one-percentage-point story.
 
-Matching the claim against that reasoning confirms the verdict is True once the right derivative (or the right expand-or-not comparison) is in view., so the statement is True.`,
+Matching the claim against that reasoning confirms the verdict is True once the right derivative (or the right expand-or-not comparison) is in view. So the statement is True.`,
       `**E.** → True
 
 Here the independent variable is the cleanup percentage, and the units of $C^{\\prime}(50)$ are millions of euros per percentage point.
@@ -3048,7 +3048,7 @@ That is precisely a marginal cost with respect to the cleanup percentage
 
 Calling that rate a marginal cost simply names the economic role of $C^{\\prime}$ with respect to the cleanup percentage.
 
-Matching the claim against that reasoning confirms the verdict is True once the right derivative (or the right expand-or-not comparison) is in view., so the statement is True.`
+Matching the claim against that reasoning confirms the verdict is True once the right derivative (or the right expand-or-not comparison) is in view. So the statement is True.`
     ],
     difficulty_level: "2/5",
     sort_order: 42,
@@ -3085,7 +3085,7 @@ The price schedule $p(Q)$ alone is not profit, and marginal profit is $P^{\\prim
 
 In symbols $P^{\\prime}(Q)=R^{\\prime}(Q)-C^{\\prime}(Q)$; nowhere does that identity reduce to $p^{\\prime}(Q)$ alone.
 
-Matching the claim against that reasoning confirms the verdict is True once the right derivative (or the right expand-or-not comparison) is in view., so the statement is True.`,
+Matching the claim against that reasoning confirms the verdict is True once the right derivative (or the right expand-or-not comparison) is in view. So the statement is True.`,
       `**B.** → False
 
 Differentiating only $p(Q)$ tracks how the posted price moves with quantity.
@@ -3094,7 +3094,7 @@ Marginal revenue is the derivative of revenue $R(Q)=Q\\cdot p(Q)$, which also ac
 
 Even the sign can disagree: $p^{\\prime}$ is typically negative along demand, while $R^{\\prime}$ can still be positive when price is high and quantity is low.
 
-Matching the claim against that reasoning confirms the verdict is False once the right derivative (or the right expand-or-not comparison) is in view., so the statement is False.`,
+Matching the claim against that reasoning confirms the verdict is False once the right derivative (or the right expand-or-not comparison) is in view. So the statement is False.`,
       `**C.** → True
 
 Revenue is price times quantity. When quantity rises along a downward-sloping schedule, price usually falls, so the extra euros from one more cup are not simply the current price $p(Q)$.
@@ -3103,7 +3103,7 @@ That combined effect is exactly $R^{\\prime}(Q)$, which generally differs from $
 
 The gap $p(Q)-R^{\\prime}(Q)=-Q\\,p^{\\prime}(Q)$ is the revenue lost on previous cups when price is cut to sell one more.
 
-Matching the claim against that reasoning confirms the verdict is True once the right derivative (or the right expand-or-not comparison) is in view., so the statement is True.`,
+Matching the claim against that reasoning confirms the verdict is True once the right derivative (or the right expand-or-not comparison) is in view. So the statement is True.`,
       `**D.** → True
 
 A small increase in cups changes profit by about $P^{\\prime}(Q)\\,\\Delta Q$.
@@ -3112,7 +3112,7 @@ For one extra cup near the current output, the relevant number is therefore $P^{
 
 Looking at $p(Q)$ or even at $R^{\\prime}(Q)$ alone would miss the cost side; profit change needs the full $P^{\\prime}$.
 
-Matching the claim against that reasoning confirms the verdict is True once the right derivative (or the right expand-or-not comparison) is in view., so the statement is True.`,
+Matching the claim against that reasoning confirms the verdict is True once the right derivative (or the right expand-or-not comparison) is in view. So the statement is True.`,
       `**E.** → True
 
 Profit is the difference $P=R-C$. Differentiating term by term where the derivatives exist gives
@@ -3123,7 +3123,7 @@ at every such output
 
 That is why the expand-or-not test can be written either as $P^{\\prime}>0$ or as $R^{\\prime}>C^{\\prime}$ — same identity.
 
-Matching the claim against that reasoning confirms the verdict is True once the right derivative (or the right expand-or-not comparison) is in view., so the statement is True.`
+Matching the claim against that reasoning confirms the verdict is True once the right derivative (or the right expand-or-not comparison) is in view. So the statement is True.`
     ],
     difficulty_level: "3/5",
     sort_order: 43,
@@ -3160,7 +3160,7 @@ Whenever $R^{\\prime}(Q)>C^{\\prime}(Q)$, that difference is positive, and $P^{\
 
 Numerically, if $R^{\\prime}=12$ and $C^{\\prime}=9$ then $P^{\\prime}=3>0$; the inequality of slopes forces a positive profit slope.
 
-Matching the claim against that reasoning confirms the verdict is True once the right derivative (or the right expand-or-not comparison) is in view., so the statement is True.`,
+Matching the claim against that reasoning confirms the verdict is True once the right derivative (or the right expand-or-not comparison) is in view. So the statement is True.`,
       `**B.** → True
 
 A positive marginal profit means the profit function is locally increasing.
@@ -3169,7 +3169,7 @@ Hence if $R^{\\prime}(Q)>C^{\\prime}(Q)$, then $P^{\\prime}(Q)>0$ and a small in
 
 So the firm should expand a little at that output: extra revenue still beats extra cost on the margin.
 
-Matching the claim against that reasoning confirms the verdict is True once the right derivative (or the right expand-or-not comparison) is in view., so the statement is True.`,
+Matching the claim against that reasoning confirms the verdict is True once the right derivative (or the right expand-or-not comparison) is in view. So the statement is True.`,
       `**C.** → False
 
 If $R^{\\prime}(Q)<C^{\\prime}(Q)$, then
@@ -3180,7 +3180,7 @@ A negative derivative means profit is locally decreasing, and a small increase i
 
 The correct conclusion is the opposite expand-or-not advice: when $R^{\\prime}<C^{\\prime}$, cut output a little rather than raise it.
 
-Matching the claim against that reasoning confirms the verdict is False once the right derivative (or the right expand-or-not comparison) is in view., so the statement is False.`,
+Matching the claim against that reasoning confirms the verdict is False once the right derivative (or the right expand-or-not comparison) is in view. So the statement is False.`,
       `**D.** → True
 
 Setting the profit derivative to zero is
@@ -3191,7 +3191,7 @@ which rearranges at once to $R^{\\prime}(Q)=C^{\\prime}(Q)$, and the equality of
 
 This is the calculus form of the classical MR$=$MC rule for an interior candidate — a condition on slopes, not on totals.
 
-Matching the claim against that reasoning confirms the verdict is True once the right derivative (or the right expand-or-not comparison) is in view., so the statement is True.`,
+Matching the claim against that reasoning confirms the verdict is True once the right derivative (or the right expand-or-not comparison) is in view. So the statement is True.`,
       `**E.** → False
 
 The equality $R^{\\prime}(Q)=C^{\\prime}(Q)$ equates two rates of change — extra revenue and extra cost — not the levels of total revenue and total cost.
@@ -3200,7 +3200,7 @@ Total revenue equals total cost only when $R(Q)=C(Q)$, which is a different cond
 
 A firm can have $R^{\\prime}=C^{\\prime}$ with $R>C$ (positive profit) or with $R<C$ (a loss); the slope condition is silent about break-even.
 
-Matching the claim against that reasoning confirms the verdict is False once the right derivative (or the right expand-or-not comparison) is in view., so the statement is False.`
+Matching the claim against that reasoning confirms the verdict is False once the right derivative (or the right expand-or-not comparison) is in view. So the statement is False.`
     ],
     difficulty_level: "2/5",
     sort_order: 44,
@@ -3239,7 +3239,7 @@ hence $R^{\\prime}(Q^{\\ast})=C^{\\prime}(Q^{\\ast})$: at $Q^{\\ast}$, marginal 
 
 In other words, $P^{\\prime}(Q^{\\ast})=0$ is exactly the classical first-order rule MR$=$MC at the candidate output.
 
-Matching the claim against that reasoning confirms the verdict is True once the right derivative (or the right expand-or-not comparison) is in view., so the statement is True.`,
+Matching the claim against that reasoning confirms the verdict is True once the right derivative (or the right expand-or-not comparison) is in view. So the statement is True.`,
       `**B.** → False
 
 A zero slope of profit says only that profit is locally stationary; it says nothing about the height $P(Q^{\\ast})$.
@@ -3248,7 +3248,7 @@ The firm can earn a large positive total profit (or a large loss) while $P^{\\pr
 
 Picture a profit hill whose peak sits at height $50$: the tangent is flat ($P^{\\prime}=0$) while profit itself is still $50$, not zero.
 
-Matching the claim against that reasoning confirms the verdict is False once the right derivative (or the right expand-or-not comparison) is in view., so the statement is False.`,
+Matching the claim against that reasoning confirms the verdict is False once the right derivative (or the right expand-or-not comparison) is in view. So the statement is False.`,
       `**C.** → True
 
 Total revenue equals total cost only when $R(Q^{\\ast})=C(Q^{\\ast})$.
@@ -3257,7 +3257,7 @@ The stationarity condition $P^{\\prime}(Q^{\\ast})=0$ constrains the derivatives
 
 Break-even is the separate level condition $P(Q^{\\ast})=0$, equivalently $R(Q^{\\ast})=C(Q^{\\ast})$ — not implied by $P^{\\prime}=0$.
 
-Matching the claim against that reasoning confirms the verdict is True once the right derivative (or the right expand-or-not comparison) is in view., so the statement is True.`,
+Matching the claim against that reasoning confirms the verdict is True once the right derivative (or the right expand-or-not comparison) is in view. So the statement is True.`,
       `**D.** → True
 
 A critical point with $P^{\\prime}(Q^{\\ast})=0$ can be a local maximum, a local minimum, or neither.
@@ -3266,7 +3266,7 @@ The first-order condition alone does not classify which, and it does not tell wh
 
 A flat tangent can sit at the top of a hill, at the bottom of a valley, or on a terrace; further information is required to classify it.
 
-Matching the claim against that reasoning confirms the verdict is True once the right derivative (or the right expand-or-not comparison) is in view., so the statement is True.`,
+Matching the claim against that reasoning confirms the verdict is True once the right derivative (or the right expand-or-not comparison) is in view. So the statement is True.`,
       `**E.** → True
 
 If $P^{\\prime}$ changes from positive to negative at $Q^{\\ast}$, profit switches from rising to falling there.
@@ -3275,7 +3275,7 @@ That sign change marks a local profit maximum
 
 That $+\\to -$ pattern is the first-derivative test for a local max; together with $P^{\\prime}(Q^{\\ast})=0$ it settles the local classification.
 
-Matching the claim against that reasoning confirms the verdict is True once the right derivative (or the right expand-or-not comparison) is in view., so the statement is True.`
+Matching the claim against that reasoning confirms the verdict is True once the right derivative (or the right expand-or-not comparison) is in view. So the statement is True.`
     ],
     difficulty_level: "3/5",
     sort_order: 45,
@@ -3308,7 +3308,7 @@ Marginal utility is the instantaneous rate of change of satisfaction with respec
 
 In the same vocabulary used for cost, $U^{\\prime}(x)$ is the marginal utility of leisure at $x$ hours.
 
-Keep level-versus-slope discipline: stocks such as $C$, $R$, $P$, or $U$ are heights; marginal objects are slopes of those graphs., so the statement is True.`,
+Keep level-versus-slope discipline: stocks such as $C$, $R$, $P$, or $U$ are heights; marginal objects are slopes of those graphs. So the statement is True.`,
       `**B.** → True
 
 A positive derivative means the utility function is locally increasing.
@@ -3317,14 +3317,14 @@ Hence if $U^{\\prime}(x)>0$, a little extra leisure raises satisfaction near tha
 
 Equivalently, the consumer is still on an upward stretch of the utility curve at that $x$.
 
-Keep level-versus-slope discipline: stocks such as $C$, $R$, $P$, or $U$ are heights; marginal objects are slopes of those graphs., so the statement is True.`,
+Keep level-versus-slope discipline: stocks such as $C$, $R$, $P$, or $U$ are heights; marginal objects are slopes of those graphs. So the statement is True.`,
       `**C.** → False
 
 If $U^{\\prime}(x)<0$, utility is locally decreasing, and a little extra leisure lowers satisfaction near that $x$ rather than raising it
 
 On a downward stretch of $U$, extra leisure reduces satisfaction — the sign of $U^{\\prime}$ is the whole local story.
 
-Matching the claim against that reasoning confirms the verdict is False once the right derivative (or the right expand-or-not comparison) is in view., so the statement is False.`,
+Matching the claim against that reasoning confirms the verdict is False once the right derivative (or the right expand-or-not comparison) is in view. So the statement is False.`,
       `**D.** → False
 
 The value $U(x)$ is the stock of satisfaction at $x$ hours, not its rate of change.
@@ -3333,7 +3333,7 @@ Marginal utility is the derivative $U^{\\prime}(x)$, and $U(x)$ itself is not al
 
 A student can already feel quite satisfied ($U$ large) while the next hour of leisure adds little or even subtracts ($U^{\\prime}\\le 0$).
 
-Matching the claim against that reasoning confirms the verdict is False once the right derivative (or the right expand-or-not comparison) is in view., so the statement is False.`,
+Matching the claim against that reasoning confirms the verdict is False once the right derivative (or the right expand-or-not comparison) is in view. So the statement is False.`,
       `**E.** → True
 
 The sign of $U^{\\prime}(x)$ tells whether $U$ is locally rising or falling.
@@ -3342,7 +3342,7 @@ That is exactly whether satisfaction is locally increasing or decreasing in leis
 
 That is the same increase/decrease test used for cost, revenue, and profit — only the economic label on $U$ has changed.
 
-Matching the claim against that reasoning confirms the verdict is True once the right derivative (or the right expand-or-not comparison) is in view., so the statement is True.`
+Matching the claim against that reasoning confirms the verdict is True once the right derivative (or the right expand-or-not comparison) is in view. So the statement is True.`
     ],
     difficulty_level: "2/5",
     sort_order: 46,
@@ -3377,7 +3377,7 @@ Marginal cost $C^{\\prime}(Q)$ answers how total cost changes if a little more i
 
 Mixing the two is the classic MC-versus-AC trap: one governs expand-or-not cost comparisons, the other summarizes past unit cost.
 
-Matching the claim against that reasoning confirms the verdict is True once the right derivative (or the right expand-or-not comparison) is in view., so the statement is True.`,
+Matching the claim against that reasoning confirms the verdict is True once the right derivative (or the right expand-or-not comparison) is in view. So the statement is True.`,
       `**B.** → False
 
 In general the quotient $\\dfrac{C(Q)}{Q}$ and the derivative $C^{\\prime}(Q)$ are different functions.
@@ -3386,7 +3386,7 @@ They meet only at special outputs, not for every $Q>0$, and the claim that $A(Q)
 
 A standard textbook picture has the MC curve cut through the bottom of the AC curve — they agree at one point, not everywhere.
 
-Matching the claim against that reasoning confirms the verdict is False once the right derivative (or the right expand-or-not comparison) is in view., so the statement is False.`,
+Matching the claim against that reasoning confirms the verdict is False once the right derivative (or the right expand-or-not comparison) is in view. So the statement is False.`,
       `**C.** → False
 
 Minimizing average cost looks for a critical point of $A(Q)$, which rearranges to $C^{\\prime}(Q)=A(Q)$, not to $C^{\\prime}(Q)=0$.
@@ -3395,7 +3395,7 @@ Setting marginal cost to zero is a different decision problem
 
 Setting $C^{\\prime}=0$ would ask where total cost is locally flat, which is unrelated to minimizing cost per unit.
 
-Matching the claim against that reasoning confirms the verdict is False once the right derivative (or the right expand-or-not comparison) is in view., so the statement is False.`,
+Matching the claim against that reasoning confirms the verdict is False once the right derivative (or the right expand-or-not comparison) is in view. So the statement is False.`,
       `**D.** → True
 
 Write $A(Q)=\\dfrac{C(Q)}{Q}$. At an interior minimum of $A$ one has $A^{\\prime}(Q)=0$, which expands to
@@ -3406,7 +3406,7 @@ hence $C^{\\prime}(Q)=\\dfrac{C(Q)}{Q}=A(Q)$ for $Q>0$
 
 That crossing rule — MC $=$ AC at the AC minimum — is the standard first-order characterization of efficient scale in this model.
 
-Matching the claim against that reasoning confirms the verdict is True once the right derivative (or the right expand-or-not comparison) is in view., so the statement is True.`,
+Matching the claim against that reasoning confirms the verdict is True once the right derivative (or the right expand-or-not comparison) is in view. So the statement is True.`,
       `**E.** → False
 
 Falling average cost means $A^{\\prime}(Q)<0$, which is equivalent to $C^{\\prime}(Q)<A(Q)$.
@@ -3415,7 +3415,7 @@ Marginal cost can still be positive while lying below the average; falling avera
 
 Example: $C^{\\prime}=5$ and $A=8$ gives $A^{\\prime}<0$ while cost is still rising in total; positivity of MC is compatible with falling AC.
 
-Matching the claim against that reasoning confirms the verdict is False once the right derivative (or the right expand-or-not comparison) is in view., so the statement is False.`
+Matching the claim against that reasoning confirms the verdict is False once the right derivative (or the right expand-or-not comparison) is in view. So the statement is False.`
     ],
     difficulty_level: "2/5",
     sort_order: 47,
@@ -3450,7 +3450,7 @@ The course definition of marginal cost is the derivative $C^{\\prime}(Q)$, and t
 
 Only in the limit of vanishing step size does the incremental ratio become the derivative; a jump of size $1$ is not that limit.
 
-Matching the claim against that reasoning confirms the verdict is True once the right derivative (or the right expand-or-not comparison) is in view., so the statement is True.`,
+Matching the claim against that reasoning confirms the verdict is True once the right derivative (or the right expand-or-not comparison) is in view. So the statement is True.`,
       `**B.** → True
 
 For a small extra output $\\Delta Q$, the change in cost per unit of extra output is approximately the derivative:
@@ -3461,7 +3461,7 @@ Hence $C^{\\prime}(Q)$ approximates that local rate
 
 When cost is nearly linear near $Q$, the approximation is excellent; when cost bends sharply, keep the step small.
 
-Matching the claim against that reasoning confirms the verdict is True once the right derivative (or the right expand-or-not comparison) is in view., so the statement is True.`,
+Matching the claim against that reasoning confirms the verdict is True once the right derivative (or the right expand-or-not comparison) is in view. So the statement is True.`,
       `**C.** → True
 
 Setting $\\Delta Q=1$ in the linear approximation gives
@@ -3472,7 +3472,7 @@ which is often serviceable in applications, but it remains an approximation rath
 
 For a quadratic piece of cost, for instance, the exact one-unit difference and $C^{\\prime}(Q)$ differ by a curvature correction.
 
-Matching the claim against that reasoning confirms the verdict is True once the right derivative (or the right expand-or-not comparison) is in view., so the statement is True.`,
+Matching the claim against that reasoning confirms the verdict is True once the right derivative (or the right expand-or-not comparison) is in view. So the statement is True.`,
       `**D.** → True
 
 The same derivative governs both directions: for a small (possibly negative) step,
@@ -3483,7 +3483,7 @@ Hence if output falls a little, the local cost change is still read from $C^{\\p
 
 Cutting output by $\\Delta Q=-0.5$ changes cost by about $-0.5\\,C^{\\prime}(Q)$ — same slope, opposite direction.
 
-Matching the claim against that reasoning confirms the verdict is True once the right derivative (or the right expand-or-not comparison) is in view., so the statement is True.`,
+Matching the claim against that reasoning confirms the verdict is True once the right derivative (or the right expand-or-not comparison) is in view. So the statement is True.`,
       `**E.** → False
 
 The one-unit difference is only a coarse reading, and the precise local rate is still the derivative.
@@ -3492,7 +3492,7 @@ Knowing $C(Q+1)-C(Q)$ does not make $C^{\\prime}(Q)$ unnecessary for finer or no
 
 Optimization conditions such as $R^{\\prime}=C^{\\prime}$ are stated with derivatives; a single one-unit difference cannot replace that language.
 
-Matching the claim against that reasoning confirms the verdict is False once the right derivative (or the right expand-or-not comparison) is in view., so the statement is False.`
+Matching the claim against that reasoning confirms the verdict is False once the right derivative (or the right expand-or-not comparison) is in view. So the statement is False.`
     ],
     difficulty_level: "3/5",
     sort_order: 48,
@@ -3529,7 +3529,7 @@ That rate is obtained by differentiating $R$, not by reading off the posted pric
 
 Reading $p(Q)$ alone would miss the inframarginal price-pressure term $Q\\,p^{\\prime}(Q)$ that the product rule contributes.
 
-Matching the claim against that reasoning confirms the verdict is True once the right derivative (or the right expand-or-not comparison) is in view., so the statement is True.`,
+Matching the claim against that reasoning confirms the verdict is True once the right derivative (or the right expand-or-not comparison) is in view. So the statement is True.`,
       `**B.** → True
 
 Along a downward-sloping price schedule, selling one more unit tends to push the price down.
@@ -3538,7 +3538,7 @@ That lower price also applies to the previous units, and the expansion pressure 
 
 That is why a monopolist or any price-maker does not pocket the full current price as extra revenue from one more sale.
 
-Matching the claim against that reasoning confirms the verdict is True once the right derivative (or the right expand-or-not comparison) is in view., so the statement is True.`,
+Matching the claim against that reasoning confirms the verdict is True once the right derivative (or the right expand-or-not comparison) is in view. So the statement is True.`,
       `**C.** → True
 
 That price-pressure effect appears in the product rule as the term $Q\\,p^{\\prime}(Q)<0$ when $p$ slopes down.
@@ -3547,7 +3547,7 @@ It is one reason marginal revenue can lie below the current price
 
 Rearranging, $p(Q)-R^{\\prime}(Q)=-Q\\,p^{\\prime}(Q)>0$ whenever $p$ slopes down and $Q>0$.
 
-Matching the claim against that reasoning confirms the verdict is True once the right derivative (or the right expand-or-not comparison) is in view., so the statement is True.`,
+Matching the claim against that reasoning confirms the verdict is True once the right derivative (or the right expand-or-not comparison) is in view. So the statement is True.`,
       `**D.** → False
 
 If demand did not depend on price, revenue would still be $R(Q)=Q\\cdot p$ with a constant $p$, and differentiating would give $R^{\\prime}(Q)=p$, which explicitly uses quantity in $R=Qp$.
@@ -3556,7 +3556,7 @@ The claim that differentiating revenue would still ignore quantity is therefore 
 
 With constant $p$ one still writes $R(Q)=pQ$ and obtains $R^{\\prime}=p$; quantity remains the variable of differentiation.
 
-Matching the claim against that reasoning confirms the verdict is False once the right derivative (or the right expand-or-not comparison) is in view., so the statement is False.`,
+Matching the claim against that reasoning confirms the verdict is False once the right derivative (or the right expand-or-not comparison) is in view. So the statement is False.`,
       `**E.** → True
 
 When price must fall to sell more, the product rule generally gives $R^{\\prime}(Q)\\neq p(Q)$.
@@ -3565,7 +3565,7 @@ A blanket claim that marginal revenue always equals price is therefore false in 
 
 The true special case where MR equals price is the flat-price (perfectly elastic) schedule $p^{\\prime}=0$, not a general law.
 
-Matching the claim against that reasoning confirms the verdict is True once the right derivative (or the right expand-or-not comparison) is in view., so the statement is True.`
+Matching the claim against that reasoning confirms the verdict is True once the right derivative (or the right expand-or-not comparison) is in view. So the statement is True.`
     ],
     difficulty_level: "3/5",
     sort_order: 49,
@@ -3602,7 +3602,7 @@ The consultant differentiated the price schedule alone, which is the wrong objec
 
 Once profit is written out, the correct derivative is $P^{\\prime}(Q)=32-2Q$, which is nothing like the consultant's $p^{\\prime}=-1$.
 
-Matching the claim against that reasoning confirms the verdict is True once the right derivative (or the right expand-or-not comparison) is in view., so the statement is True.`,
+Matching the claim against that reasoning confirms the verdict is True once the right derivative (or the right expand-or-not comparison) is in view. So the statement is True.`,
       `**B.** → True
 
 Differentiate the posted price:
@@ -3615,7 +3615,7 @@ That slope only describes how price falls with quantity; it is not marginal prof
 
 At $Q=10$, for example, price falls at rate $-1$ while marginal profit is $P^{\\prime}(10)=12$ — different objects, different numbers.
 
-Matching the claim against that reasoning confirms the verdict is True once the right derivative (or the right expand-or-not comparison) is in view., so the statement is True.`,
+Matching the claim against that reasoning confirms the verdict is True once the right derivative (or the right expand-or-not comparison) is in view. So the statement is True.`,
       `**C.** → True
 
 Revenue is price times quantity. Substitute the inverse demand:
@@ -3630,7 +3630,7 @@ which is exactly the claimed revenue function
 
 Differentiating that revenue later gives $R^{\\prime}(Q)=40-2Q$, which already differs from the price $p(Q)=40-Q$.
 
-Matching the claim against that reasoning confirms the verdict is True once the right derivative (or the right expand-or-not comparison) is in view., so the statement is True.`,
+Matching the claim against that reasoning confirms the verdict is True once the right derivative (or the right expand-or-not comparison) is in view. So the statement is True.`,
       `**D.** → True
 
 Profit is revenue minus cost. Using $R(Q)=40Q-Q^{2}$ and $C(Q)=8Q+20$,
@@ -3643,7 +3643,7 @@ The claimed simplification matches
 
 The fixed cost $20$ shifts the profit level but will drop out upon differentiation when we form $P^{\\prime}$.
 
-Matching the claim against that reasoning confirms the verdict is True once the right derivative (or the right expand-or-not comparison) is in view., so the statement is True.`,
+Matching the claim against that reasoning confirms the verdict is True once the right derivative (or the right expand-or-not comparison) is in view. So the statement is True.`,
       `**E.** → True
 
 Differentiate the simplified profit term by term:
@@ -3656,7 +3656,7 @@ That is the correct marginal profit, not the consultant's $p^{\\prime}(Q)=-1$
 
 Setting $P^{\\prime}(Q)=0$ would give the candidate $Q=16$; the consultant's $p^{\\prime}=-1$ never even produces a critical point of profit.
 
-Matching the claim against that reasoning confirms the verdict is True once the right derivative (or the right expand-or-not comparison) is in view., so the statement is True.`
+Matching the claim against that reasoning confirms the verdict is True once the right derivative (or the right expand-or-not comparison) is in view. So the statement is True.`
     ],
     difficulty_level: "3/5",
     sort_order: 50,
@@ -3692,7 +3692,7 @@ The marginal tax rate is the derivative $T^{\\prime}(y)$, which answers how tax 
 
 In symbols that rate is $T^{\\prime}(y)$, and the linear reading $T(y+\\Delta y)-T(y)\\approx T^{\\prime}(y)\\,\\Delta y$ is exactly "how liability changes when income rises a little."
 
-Matching the claim against that reasoning confirms the verdict is True once the right derivative (or the right expand-or-not comparison) is in view., so the statement is True.`,
+Matching the claim against that reasoning confirms the verdict is True once the right derivative (or the right expand-or-not comparison) is in view. So the statement is True.`,
       `**B.** → True
 
 The average tax rate is the quotient of tax owed by income:
@@ -3703,7 +3703,7 @@ That is precisely the fraction of income paid in tax overall, which is a differe
 
 If $T(y)=9000$ on income $y=30000$, the average rate is $9000/30000=0.3$, a fraction of income — not a statement about the next euro.
 
-Matching the claim against that reasoning confirms the verdict is True once the right derivative (or the right expand-or-not comparison) is in view., so the statement is True.`,
+Matching the claim against that reasoning confirms the verdict is True once the right derivative (or the right expand-or-not comparison) is in view. So the statement is True.`,
       `**C.** → False
 
 As with cost, the marginal and average rates coincide only in special cases, not for every income $y>0$.
@@ -3712,7 +3712,7 @@ In general $T^{\\prime}(y)$ need not equal $\\dfrac{T(y)}{y}$
 
 A progressive schedule routinely has a marginal rate above the average rate; the two coincide only in special cases such as a pure flat tax through the origin.
 
-Matching the claim against that reasoning confirms the verdict is False once the right derivative (or the right expand-or-not comparison) is in view., so the statement is False.`,
+Matching the claim against that reasoning confirms the verdict is False once the right derivative (or the right expand-or-not comparison) is in view. So the statement is False.`,
       `**D.** → True
 
 The report $T^{\\prime}(y)=0.3$ means about $0.3$ euros of tax per extra euro of income near that point.
@@ -3721,7 +3721,7 @@ That is about $30$ cents of each extra euro taxed away
 
 With $\\Delta y=1$ the approximation says about $0.30$ euros of extra tax — thirty cents of each extra euro taxed away.
 
-Matching the claim against that reasoning confirms the verdict is True once the right derivative (or the right expand-or-not comparison) is in view., so the statement is True.`,
+Matching the claim against that reasoning confirms the verdict is True once the right derivative (or the right expand-or-not comparison) is in view. So the statement is True.`,
       `**E.** → False
 
 The average rate is only a quotient at one income; it does not determine the slope there.
@@ -3730,7 +3730,7 @@ Many different tax schedules can share the same average at one $y$ while having 
 
 Recovering $T^{\\prime}(y)$ needs local information about how $T$ changes near $y$, not merely the single quotient $T(y)/y$.
 
-Matching the claim against that reasoning confirms the verdict is False once the right derivative (or the right expand-or-not comparison) is in view., so the statement is False.`
+Matching the claim against that reasoning confirms the verdict is False once the right derivative (or the right expand-or-not comparison) is in view. So the statement is False.`
     ],
     difficulty_level: "2/5",
     sort_order: 51,
@@ -3769,7 +3769,7 @@ which is exactly the definition used here
 
 That derivative is the macroeconomic analogue of a marginal cost or marginal propensity: a slope, not a stock.
 
-Matching the claim against that reasoning confirms the verdict is True once the right derivative (or the right expand-or-not comparison) is in view., so the statement is True.`,
+Matching the claim against that reasoning confirms the verdict is True once the right derivative (or the right expand-or-not comparison) is in view. So the statement is True.`,
       `**B.** → True
 
 The value $S^{\\prime}(Y)=0.2$ is a euros-saved-per-euro-of-product rate near that $Y$.
@@ -3778,7 +3778,7 @@ About one fifth of a small increase in national product is therefore saved
 
 With $\\Delta Y=10$, about $2$ units of the extra product are saved; the fraction $0.2$ is the local saving response.
 
-Matching the claim against that reasoning confirms the verdict is True once the right derivative (or the right expand-or-not comparison) is in view., so the statement is True.`,
+Matching the claim against that reasoning confirms the verdict is True once the right derivative (or the right expand-or-not comparison) is in view. So the statement is True.`,
       `**C.** → False
 
 The ratio $\\dfrac{S(Y)}{Y}$ is an average saving ratio, analogous to average cost.
@@ -3787,7 +3787,7 @@ It is not the same object as the marginal propensity $S^{\\prime}(Y)$
 
 If autonomous saving is positive, $S/Y$ exceeds $s$ at low $Y$ and approaches $s$ only as $Y$ grows — average and marginal differ.
 
-Matching the claim against that reasoning confirms the verdict is False once the right derivative (or the right expand-or-not comparison) is in view., so the statement is False.`,
+Matching the claim against that reasoning confirms the verdict is False once the right derivative (or the right expand-or-not comparison) is in view. So the statement is False.`,
       `**D.** → True
 
 Differentiate the linear saving rule:
@@ -3800,7 +3800,7 @@ The marginal propensity to save equals the coefficient $s$
 
 The intercept $\\overline{S}$ affects the level of saving but drops out of the derivative, leaving the constant slope $s$.
 
-Matching the claim against that reasoning confirms the verdict is True once the right derivative (or the right expand-or-not comparison) is in view., so the statement is True.`,
+Matching the claim against that reasoning confirms the verdict is True once the right derivative (or the right expand-or-not comparison) is in view. So the statement is True.`,
       `**E.** → True
 
 The economic question asks how saving responds to a little more national product, so the dependent quantity is $S(Y)$.
@@ -3809,7 +3809,7 @@ One therefore differentiates $S$, not the identity function $Y$
 
 Differentiating the identity map $Y$ would give $1$, which is not a propensity to save; the dependent variable must be $S$.
 
-Matching the claim against that reasoning confirms the verdict is True once the right derivative (or the right expand-or-not comparison) is in view., so the statement is True.`
+Matching the claim against that reasoning confirms the verdict is True once the right derivative (or the right expand-or-not comparison) is in view. So the statement is True.`
     ],
     difficulty_level: "2/5",
     sort_order: 52,
@@ -3846,7 +3846,7 @@ Hence marginal cost is higher at $Q_0$ than at $Q_1$
 
 In symbols $C^{\\prime}(Q_0)>C^{\\prime}(Q_1)$ precisely when the tangent at $Q_0$ is steeper than the tangent at $Q_1$.
 
-Matching the claim against that reasoning confirms the verdict is True once the right derivative (or the right expand-or-not comparison) is in view., so the statement is True.`,
+Matching the claim against that reasoning confirms the verdict is True once the right derivative (or the right expand-or-not comparison) is in view. So the statement is True.`,
       `**B.** → False
 
 The height of the cost curve at $Q_0$ is the level $C(Q_0)$.
@@ -3855,7 +3855,7 @@ Marginal cost is the slope of the tangent, not that height
 
 A high cost curve can have a flat tangent, and a low cost curve can have a steep tangent — height and slope are independent.
 
-Keep level-versus-slope discipline: stocks such as $C$, $R$, $P$, or $U$ are heights; marginal objects are slopes of those graphs., so the statement is False.`,
+Keep level-versus-slope discipline: stocks such as $C$, $R$, $P$, or $U$ are heights; marginal objects are slopes of those graphs. So the statement is False.`,
       `**C.** → True
 
 A flatter tangent means a smaller derivative at that point.
@@ -3864,7 +3864,7 @@ Because that derivative is marginal cost, a flatter tangent means a smaller marg
 
 On the figure, "flatter" means a smaller rise-over-run for the drawn tangent, hence a smaller $C^{\\prime}$ and a smaller marginal cost.
 
-Matching the claim against that reasoning confirms the verdict is True once the right derivative (or the right expand-or-not comparison) is in view., so the statement is True.`,
+Matching the claim against that reasoning confirms the verdict is True once the right derivative (or the right expand-or-not comparison) is in view. So the statement is True.`,
       `**D.** → True
 
 By definition, the slope of the tangent to the cost curve at $Q_0$ equals $C^{\\prime}(Q_0)$.
@@ -3873,7 +3873,7 @@ If that slope is $12$, then $C^{\\prime}(Q_0)=12$
 
 That is the geometric definition: whatever slope the artist drew at $Q_0$ is the number $C^{\\prime}(Q_0)$.
 
-Keep level-versus-slope discipline: stocks such as $C$, $R$, $P$, or $U$ are heights; marginal objects are slopes of those graphs., so the statement is True.`,
+Keep level-versus-slope discipline: stocks such as $C$, $R$, $P$, or $U$ are heights; marginal objects are slopes of those graphs. So the statement is True.`,
       `**E.** → False
 
 Equal heights say only that $C(Q_a)=C(Q_b)$; they say nothing about equal slopes.
@@ -3882,7 +3882,7 @@ A U-shaped cost curve can return to the same height with different tangents, and
 
 A U-shaped cost curve returns to the same height on either side of its minimum with opposite-signed slopes — equal $C$, unequal $C^{\\prime}$.
 
-Matching the claim against that reasoning confirms the verdict is False once the right derivative (or the right expand-or-not comparison) is in view., so the statement is False.`
+Matching the claim against that reasoning confirms the verdict is False once the right derivative (or the right expand-or-not comparison) is in view. So the statement is False.`
     ],
     difficulty_level: "1/5",
     sort_order: 53,
@@ -3917,7 +3917,7 @@ Setting only $R^{\\prime}(Q)=0$ ignores cost entirely, and the claim correctly i
 
 If cost depends on $Q$, the zeros of $P^{\\prime}=R^{\\prime}-C^{\\prime}$ and of $R^{\\prime}$ generally sit at different outputs.
 
-Matching the claim against that reasoning confirms the verdict is True once the right derivative (or the right expand-or-not comparison) is in view., so the statement is True.`,
+Matching the claim against that reasoning confirms the verdict is True once the right derivative (or the right expand-or-not comparison) is in view. So the statement is True.`,
       `**B.** → False
 
 Positive cost that depends on $Q$ shifts the optimum: maximizing $R$ need not maximize $R-C$.
@@ -3926,7 +3926,7 @@ Hence maximizing revenue alone does not automatically maximize profit
 
 A revenue peak with rising cost already has $P^{\\prime}=-C^{\\prime}<0$, so profit is falling there — revenue max is too far.
 
-Matching the claim against that reasoning confirms the verdict is False once the right derivative (or the right expand-or-not comparison) is in view., so the statement is False.`,
+Matching the claim against that reasoning confirms the verdict is False once the right derivative (or the right expand-or-not comparison) is in view. So the statement is False.`,
       `**C.** → True
 
 Because $P^{\\prime}=R^{\\prime}-C^{\\prime}$, the zeros of $R^{\\prime}$ and of $P^{\\prime}$ generally differ when $C^{\\prime}$ is not zero.
@@ -3935,7 +3935,7 @@ If cost rises with output, the revenue-maximizing output can therefore differ fr
 
 Typically the profit-maximizing output is smaller than the revenue-maximizing output when $C^{\\prime}>0$.
 
-Matching the claim against that reasoning confirms the verdict is True once the right derivative (or the right expand-or-not comparison) is in view., so the statement is True.`,
+Matching the claim against that reasoning confirms the verdict is True once the right derivative (or the right expand-or-not comparison) is in view. So the statement is True.`,
       `**D.** → True
 
 At an interior profit maximum one must have $P^{\\prime}(Q)=0$. Because $P^{\\prime}=R^{\\prime}-C^{\\prime}$, that rearranges at once to
@@ -3946,7 +3946,7 @@ which is the required first-order condition
 
 That MR$=$MC rearrangement is the standard first-order condition for an interior profit maximum.
 
-Matching the claim against that reasoning confirms the verdict is True once the right derivative (or the right expand-or-not comparison) is in view., so the statement is True.`,
+Matching the claim against that reasoning confirms the verdict is True once the right derivative (or the right expand-or-not comparison) is in view. So the statement is True.`,
       `**E.** → True
 
 If $R^{\\prime}(Q)=0$ while $C^{\\prime}(Q)>0$, then
@@ -3957,7 +3957,7 @@ At a revenue-stationary point with rising cost, profit is already locally decrea
 
 So at a revenue-stationary point with positive marginal cost, the firm should cut output a little, not expand.
 
-Matching the claim against that reasoning confirms the verdict is True once the right derivative (or the right expand-or-not comparison) is in view., so the statement is True.`
+Matching the claim against that reasoning confirms the verdict is True once the right derivative (or the right expand-or-not comparison) is in view. So the statement is True.`
     ],
     difficulty_level: "3/5",
     sort_order: 54,
@@ -3994,7 +3994,7 @@ Oil is therefore leaving the well at about $3$ barrels per minute
 
 The negative sign records direction (outflow); the magnitude $3$ is the depletion speed in barrels per minute.
 
-Keep level-versus-slope discipline: stocks such as $C$, $R$, $P$, or $U$ are heights; marginal objects are slopes of those graphs., so the statement is True.`,
+Keep level-versus-slope discipline: stocks such as $C$, $R$, $P$, or $U$ are heights; marginal objects are slopes of those graphs. So the statement is True.`,
       `**B.** → False
 
 The stock of oil remaining at time $0$ is the level $x(0)$, not the derivative $x^{\\prime}(0)$.
@@ -4003,7 +4003,7 @@ The number $-3$ is a rate of change, not a count of barrels left
 
 One could have $x(0)=500$ barrels remaining while $x^{\\prime}(0)=-3$; the derivative never equals the stock.
 
-Matching the claim against that reasoning confirms the verdict is False once the right derivative (or the right expand-or-not comparison) is in view., so the statement is False.`,
+Matching the claim against that reasoning confirms the verdict is False once the right derivative (or the right expand-or-not comparison) is in view. So the statement is False.`,
       `**C.** → True
 
 A negative derivative means the function is locally decreasing.
@@ -4012,7 +4012,7 @@ Hence $x^{\\prime}(0)=-3$ indicates that the stock of remaining oil is decreasin
 
 In plain language: the well is being drained at $t=0$, even though plenty of oil may still be underground.
 
-Matching the claim against that reasoning confirms the verdict is True once the right derivative (or the right expand-or-not comparison) is in view., so the statement is True.`,
+Matching the claim against that reasoning confirms the verdict is True once the right derivative (or the right expand-or-not comparison) is in view. So the statement is True.`,
       `**D.** → True
 
 The linear approximation near $t=0$ reads
@@ -4025,7 +4025,7 @@ A small time step changes remaining oil by about $-3\\Delta t$ barrels
 
 For $\\Delta t=2$ minutes the predicted change is about $-6$ barrels; the same slope scales with the time step.
 
-Matching the claim against that reasoning confirms the verdict is True once the right derivative (or the right expand-or-not comparison) is in view., so the statement is True.`,
+Matching the claim against that reasoning confirms the verdict is True once the right derivative (or the right expand-or-not comparison) is in view. So the statement is True.`,
       `**E.** → False
 
 A decreasing positive stock can still be large: the sign of the derivative does not force the sign of the level.
@@ -4034,7 +4034,7 @@ Remaining oil need not already be negative at $t=0$ merely because $x^{\\prime}(
 
 A decreasing positive quantity stays positive until it actually crosses zero — slope sign and level sign are separate.
 
-Matching the claim against that reasoning confirms the verdict is False once the right derivative (or the right expand-or-not comparison) is in view., so the statement is False.`
+Matching the claim against that reasoning confirms the verdict is False once the right derivative (or the right expand-or-not comparison) is in view. So the statement is False.`
     ],
     difficulty_level: "2/5",
     sort_order: 55,
@@ -4067,7 +4067,7 @@ The one-unit reading of $R^{\\prime}(80)=12$ says that near $80$ tickets, sellin
 
 That is the standard one-unit reading of $R^{\\prime}(80)=12$ through $R(81)-R(80)\\approx 12$.
 
-Keep level-versus-slope discipline: stocks such as $C$, $R$, $P$, or $U$ are heights; marginal objects are slopes of those graphs., so the statement is True.`,
+Keep level-versus-slope discipline: stocks such as $C$, $R$, $P$, or $U$ are heights; marginal objects are slopes of those graphs. So the statement is True.`,
       `**B.** → False
 
 Average price would involve $\\dfrac{R(80)}{80}$, and the posted price is $p(80)$.
@@ -4076,7 +4076,7 @@ Neither of those is given by the marginal-revenue report $R^{\\prime}(80)=12$
 
 Under downward-sloping demand one typically has $R^{\\prime}<p$, so $12$ would understate the sticker price even if price were constant across tickets — and here price is not given at all.
 
-Matching the claim against that reasoning confirms the verdict is False once the right derivative (or the right expand-or-not comparison) is in view., so the statement is False.`,
+Matching the claim against that reasoning confirms the verdict is False once the right derivative (or the right expand-or-not comparison) is in view. So the statement is False.`,
       `**C.** → True
 
 Many different price schedules can produce the same marginal revenue at a single point.
@@ -4085,7 +4085,7 @@ The report $R^{\\prime}(80)=12$ alone therefore does not reveal $p(Q)$
 
 Many different $p(Q)$ can share the same product-rule value $R^{\\prime}(80)=12$ at a single point.
 
-Matching the claim against that reasoning confirms the verdict is True once the right derivative (or the right expand-or-not comparison) is in view., so the statement is True.`,
+Matching the claim against that reasoning confirms the verdict is True once the right derivative (or the right expand-or-not comparison) is in view. So the statement is True.`,
       `**D.** → True
 
 If marginal cost at $80$ tickets is $15$, then
@@ -4096,7 +4096,7 @@ Hence $R^{\\prime}<C^{\\prime}$ and a small increase in sales reduces profit
 
 The expand-or-not test fails: extra revenue $12$ is less than extra cost $15$, so a little more output hurts profit.
 
-Matching the claim against that reasoning confirms the verdict is True once the right derivative (or the right expand-or-not comparison) is in view., so the statement is True.`,
+Matching the claim against that reasoning confirms the verdict is True once the right derivative (or the right expand-or-not comparison) is in view. So the statement is True.`,
       `**E.** → True
 
 If marginal cost at $80$ tickets is $9$, then
@@ -4107,7 +4107,7 @@ Hence $R^{\\prime}>C^{\\prime}$ and a small increase in sales raises profit
 
 Now extra revenue beats extra cost on the margin, so the same ticket office should expand a little past $80$.
 
-Matching the claim against that reasoning confirms the verdict is True once the right derivative (or the right expand-or-not comparison) is in view., so the statement is True.`
+Matching the claim against that reasoning confirms the verdict is True once the right derivative (or the right expand-or-not comparison) is in view. So the statement is True.`
     ],
     difficulty_level: "3/5",
     sort_order: 56,
@@ -4142,7 +4142,7 @@ The manager's rule is therefore: increase $Q$ a little when $R^{\\prime}(Q)>C^{\
 
 Translate "extra revenue" $\\mapsto R^{\\prime}(Q)$ and "extra cost" $\\mapsto C^{\\prime}(Q)$, then keep the inequality direction.
 
-Matching the claim against that reasoning confirms the verdict is True once the right derivative (or the right expand-or-not comparison) is in view., so the statement is True.`,
+Matching the claim against that reasoning confirms the verdict is True once the right derivative (or the right expand-or-not comparison) is in view. So the statement is True.`,
       `**B.** → True
 
 Because $P^{\\prime}=R^{\\prime}-C^{\\prime}$, the inequality $R^{\\prime}>C^{\\prime}$ is identical to $P^{\\prime}>0$.
@@ -4151,7 +4151,7 @@ The same rule can therefore be written as: increase $Q$ a little when $P^{\\prim
 
 The two writings are interchangeable through $P^{\\prime}=R^{\\prime}-C^{\\prime}$; choose whichever is clearer in context.
 
-Matching the claim against that reasoning confirms the verdict is True once the right derivative (or the right expand-or-not comparison) is in view., so the statement is True.`,
+Matching the claim against that reasoning confirms the verdict is True once the right derivative (or the right expand-or-not comparison) is in view. So the statement is True.`,
       `**C.** → False
 
 The manager's rule explicitly uses cost through $C^{\\prime}(Q)$; it is a profit logic, not a pure revenue logic.
@@ -4160,7 +4160,7 @@ It is not equivalent to maximizing revenue regardless of cost
 
 A pure revenue rule would ignore $C^{\\prime}$ entirely and expand whenever $R^{\\prime}>0$ — a different, usually worse, prescription.
 
-Matching the claim against that reasoning confirms the verdict is False once the right derivative (or the right expand-or-not comparison) is in view., so the statement is False.`,
+Matching the claim against that reasoning confirms the verdict is False once the right derivative (or the right expand-or-not comparison) is in view. So the statement is False.`,
       `**D.** → True
 
 Equal extras mean $R^{\\prime}(Q)=C^{\\prime}(Q)$, hence
@@ -4171,7 +4171,7 @@ Marginal profit is zero there
 
 That is the boundary case of the expand-or-not test: neither a clear expand nor a clear cut on the first-order criterion.
 
-Keep level-versus-slope discipline: stocks such as $C$, $R$, $P$, or $U$ are heights; marginal objects are slopes of those graphs., so the statement is True.`,
+Keep level-versus-slope discipline: stocks such as $C$, $R$, $P$, or $U$ are heights; marginal objects are slopes of those graphs. So the statement is True.`,
       `**E.** → True
 
 Turning the manager's words into calculus replaces "extra revenue" and "extra cost" by the two derivatives $R^{\\prime}(Q)$ and $C^{\\prime}(Q)$.
@@ -4180,7 +4180,7 @@ The comparison is precisely a comparison of those derivatives
 
 Once those derivatives are named, the manager's sentence becomes the calculus inequality $R^{\\prime}(Q)>C^{\\prime}(Q)$.
 
-Matching the claim against that reasoning confirms the verdict is True once the right derivative (or the right expand-or-not comparison) is in view., so the statement is True.`
+Matching the claim against that reasoning confirms the verdict is True once the right derivative (or the right expand-or-not comparison) is in view. So the statement is True.`
     ],
     difficulty_level: "3/5",
     sort_order: 57,
@@ -4215,7 +4215,7 @@ Their critical points generally differ, and the two problems are not the same
 
 Critical points of $U$ solve $U^{\\prime}=0$; critical points of $A$ solve $U^{\\prime}=A$ — different equations in general.
 
-Matching the claim against that reasoning confirms the verdict is True once the right derivative (or the right expand-or-not comparison) is in view., so the statement is True.`,
+Matching the claim against that reasoning confirms the verdict is True once the right derivative (or the right expand-or-not comparison) is in view. So the statement is True.`,
       `**B.** → False
 
 The condition $U^{\\prime}(x)=0$ stationarizes total utility, not average utility.
@@ -4224,7 +4224,7 @@ An interior maximum of average satisfaction instead requires $U^{\\prime}(x)=A(x
 
 At a bliss point of total utility one may have $U^{\\prime}=0$ while $A=U/x>0$, so $A^{\\prime}\\neq 0$ and average is not maximized there.
 
-Matching the claim against that reasoning confirms the verdict is False once the right derivative (or the right expand-or-not comparison) is in view., so the statement is False.`,
+Matching the claim against that reasoning confirms the verdict is False once the right derivative (or the right expand-or-not comparison) is in view. So the statement is False.`,
       `**C.** → True
 
 Write $A=\\dfrac{U}{x}$. Setting $A^{\\prime}=0$ for $x>0$ yields
@@ -4235,7 +4235,7 @@ hence $xU^{\\prime}-U=0$, and $U^{\\prime}=\\dfrac{U}{x}=A$
 
 That parallel to the cost rule MC$=$AC at the AC minimum is intentional: the same quotient calculus drives both stories.
 
-Matching the claim against that reasoning confirms the verdict is True once the right derivative (or the right expand-or-not comparison) is in view., so the statement is True.`,
+Matching the claim against that reasoning confirms the verdict is True once the right derivative (or the right expand-or-not comparison) is in view. So the statement is True.`,
       `**D.** → True
 
 A zero derivative means a tiny change in the independent variable leaves the function locally unchanged.
@@ -4244,7 +4244,7 @@ Hence $U^{\\prime}(x)=0$ means a tiny change in study time leaves satisfaction l
 
 Through the linear approximation, $U(x+\\Delta x)-U(x)\\approx 0$ for small $\\Delta x$ — a flat spot of total satisfaction.
 
-Matching the claim against that reasoning confirms the verdict is True once the right derivative (or the right expand-or-not comparison) is in view., so the statement is True.`,
+Matching the claim against that reasoning confirms the verdict is True once the right derivative (or the right expand-or-not comparison) is in view. So the statement is True.`,
       `**E.** → False
 
 Average satisfaction can fall even while total utility still rises, once utility rises slower than hours — that is, when $0<U^{\\prime}<A$.
@@ -4253,7 +4253,7 @@ Positive marginal utility therefore does not force average satisfaction to be ri
 
 Whenever $0<U^{\\prime}<A$, total utility still rises while average utility falls — positive marginal utility with declining average.
 
-Matching the claim against that reasoning confirms the verdict is False once the right derivative (or the right expand-or-not comparison) is in view., so the statement is False.`
+Matching the claim against that reasoning confirms the verdict is False once the right derivative (or the right expand-or-not comparison) is in view. So the statement is False.`
     ],
     difficulty_level: "4/5",
     sort_order: 58,
@@ -4290,7 +4290,7 @@ No demand or revenue data is required for that step, so from $C$ alone one can c
 
 Whatever formula $C$ has — polynomial, piecewise, or tabulated — its derivative is a cost-side object and needs no demand data.
 
-Matching the claim against that reasoning confirms the verdict is True once the right derivative (or the right expand-or-not comparison) is in view., so the statement is True.`,
+Matching the claim against that reasoning confirms the verdict is True once the right derivative (or the right expand-or-not comparison) is in view. So the statement is True.`,
       `**B.** → False
 
 Marginal revenue is a property of revenue, which is not determined by cost.
@@ -4299,7 +4299,7 @@ From $C$ alone one cannot compute $R^{\\prime}(Q)$
 
 Revenue depends on the price schedule or demand facing the firm; cost data are silent about that demand side.
 
-Keep level-versus-slope discipline: stocks such as $C$, $R$, $P$, or $U$ are heights; marginal objects are slopes of those graphs., so the statement is False.`,
+Keep level-versus-slope discipline: stocks such as $C$, $R$, $P$, or $U$ are heights; marginal objects are slopes of those graphs. So the statement is False.`,
       `**C.** → False
 
 Profit is the difference of revenue and cost,
@@ -4314,7 +4314,7 @@ Cost alone supplies $C^{\\prime}$ but not $R^{\\prime}$, so $P^{\\prime}$ cannot
 
 Without $R^{\\prime}$ one cannot form $P^{\\prime}=R^{\\prime}-C^{\\prime}$, so marginal profit is unidentified from $C$ alone.
 
-Matching the claim against that reasoning confirms the verdict is False once the right derivative (or the right expand-or-not comparison) is in view., so the statement is False.`,
+Matching the claim against that reasoning confirms the verdict is False once the right derivative (or the right expand-or-not comparison) is in view. So the statement is False.`,
       `**D.** → True
 
 The comparison "$R^{\\prime}(Q)$ versus $C^{\\prime}(Q)$" needs a numerical value on the revenue side.
@@ -4323,7 +4323,7 @@ Without a revenue function that side is missing, and the numerical test cannot b
 
 The expand-or-not test needs both numbers; a lone $C^{\\prime}$ cannot be compared with a missing $R^{\\prime}$.
 
-Matching the claim against that reasoning confirms the verdict is True once the right derivative (or the right expand-or-not comparison) is in view., so the statement is True.`,
+Matching the claim against that reasoning confirms the verdict is True once the right derivative (or the right expand-or-not comparison) is in view. So the statement is True.`,
       `**E.** → True
 
 Once both functions are known, differentiating the difference gives
@@ -4334,7 +4334,7 @@ Supplying $R(Q)$ later makes marginal profit available
 
 At that moment the usual identity $P^{\\prime}=R^{\\prime}-C^{\\prime}$ becomes available for every output where both derivatives exist.
 
-Matching the claim against that reasoning confirms the verdict is True once the right derivative (or the right expand-or-not comparison) is in view., so the statement is True.`
+Matching the claim against that reasoning confirms the verdict is True once the right derivative (or the right expand-or-not comparison) is in view. So the statement is True.`
     ],
     difficulty_level: "3/5",
     sort_order: 59,
@@ -4371,14 +4371,14 @@ The posted triple matches that identity
 
 Any other combination such as $18-11=6$ would have been inconsistent with the posted $P^{\\prime}=7$.
 
-Keep level-versus-slope discipline: stocks such as $C$, $R$, $P$, or $U$ are heights; marginal objects are slopes of those graphs., so the statement is True.`,
+Keep level-versus-slope discipline: stocks such as $C$, $R$, $P$, or $U$ are heights; marginal objects are slopes of those graphs. So the statement is True.`,
       `**B.** → True
 
 Those are the one-unit readings of the two derivatives: near the current output, one more chair adds about $18$ euros of revenue and about $11$ euros of cost
 
 Those one-unit stories are the linear readings $R(Q+1)-R(Q)\\approx 18$ and $C(Q+1)-C(Q)\\approx 11$.
 
-Matching the claim against that reasoning confirms the verdict is True once the right derivative (or the right expand-or-not comparison) is in view., so the statement is True.`,
+Matching the claim against that reasoning confirms the verdict is True once the right derivative (or the right expand-or-not comparison) is in view. So the statement is True.`,
       `**C.** → True
 
 Marginal profit is the rate of change of profit. With $P^{\\prime}(Q)=7$ the one-unit linear reading is
@@ -4389,7 +4389,7 @@ so near the current output one more chair adds about $7$ euros of profit
 
 Equivalently, extra revenue about $18$ minus extra cost about $11$ leaves about $7$ euros of extra profit.
 
-Matching the claim against that reasoning confirms the verdict is True once the right derivative (or the right expand-or-not comparison) is in view., so the statement is True.`,
+Matching the claim against that reasoning confirms the verdict is True once the right derivative (or the right expand-or-not comparison) is in view. So the statement is True.`,
       `**D.** → False
 
 The number $7$ is a rate of change of profit — euros of profit per extra chair — not the level $P(Q)$.
@@ -4398,7 +4398,7 @@ Positive marginal profit does not force total profit to equal $7$
 
 The workshop could already be earning $100$ euros of profit while still adding about $7$ per extra chair — slope $\\neq$ level.
 
-Matching the claim against that reasoning confirms the verdict is False once the right derivative (or the right expand-or-not comparison) is in view., so the statement is False.`,
+Matching the claim against that reasoning confirms the verdict is False once the right derivative (or the right expand-or-not comparison) is in view. So the statement is False.`,
       `**E.** → True
 
 At that other output,
@@ -4409,7 +4409,7 @@ A negative derivative means a small expansion reduces profit
 
 There the expand-or-not test flips: extra cost exceeds extra revenue, so a small expansion reduces profit.
 
-Keep level-versus-slope discipline: stocks such as $C$, $R$, $P$, or $U$ are heights; marginal objects are slopes of those graphs., so the statement is True.`
+Keep level-versus-slope discipline: stocks such as $C$, $R$, $P$, or $U$ are heights; marginal objects are slopes of those graphs. So the statement is True.`
     ],
     difficulty_level: "4/5",
     sort_order: 60,
@@ -4452,7 +4452,7 @@ A's posted numbers already force $P_A^{\\prime}(10)=3$
 
 No further data are needed: the identity $P^{\\prime}=R^{\\prime}-C^{\\prime}$ already forces $P_A^{\\prime}(10)=3$.
 
-Matching the claim against that reasoning confirms the verdict is True once the right derivative (or the right expand-or-not comparison) is in view., so the statement is True.`,
+Matching the claim against that reasoning confirms the verdict is True once the right derivative (or the right expand-or-not comparison) is in view. So the statement is True.`,
       `**B.** → True
 
 For bakery B the same identity gives
@@ -4463,7 +4463,7 @@ A negative derivative means the profit function is locally decreasing, and near 
 
 Even though B's profit stock $P_B(10)=90$ looks healthy, the slope at $10$ cakes is already negative.
 
-Matching the claim against that reasoning confirms the verdict is True once the right derivative (or the right expand-or-not comparison) is in view., so the statement is True.`,
+Matching the claim against that reasoning confirms the verdict is True once the right derivative (or the right expand-or-not comparison) is in view. So the statement is True.`,
       `**C.** → False
 
 The expansion test asks whether profit is still rising — the sign of $P^{\\prime}(Q)$ — not the size of today's profit stock $P(Q)$.
@@ -4476,7 +4476,7 @@ $$P_B^{\\prime}(10)=-2<0$$
 
 A small expansion raises A's profit and lowers B's, even though $P_B(10)=90>40=P_A(10)$. Comparing the heights of profit reverses the correct advice
 
-Ranking the heights $90>40$ reverses the correct advice: A should expand a little and B should not., so the statement is False.`,
+Ranking the heights $90>40$ reverses the correct advice: A should expand a little and B should not. So the statement is False.`,
       `**D.** → True
 
 The one-unit reading of a derivative says that a small extra cake changes profit by about $P^{\\prime}(10)$ euros.
@@ -4491,7 +4491,7 @@ The extra cake raises A's profit by about $3$ euros and lowers B's by about $2$ 
 
 Those are the one-unit linear readings of $P_A^{\\prime}(10)=3$ and $P_B^{\\prime}(10)=-2$.
 
-Matching the claim against that reasoning confirms the verdict is True once the right derivative (or the right expand-or-not comparison) is in view., so the statement is True.`,
+Matching the claim against that reasoning confirms the verdict is True once the right derivative (or the right expand-or-not comparison) is in view. So the statement is True.`,
       `**E.** → False
 
 $P_B(10)=90$ is a level — how much profit B has already earned today — while $P_B^{\\prime}(10)=-2$ is a rate.
@@ -4500,7 +4500,7 @@ A large positive stock can sit on a downward slope, and knowing only that $P_B(1
 
 Here the larger stock belongs to the bakery with the worse (negative) marginal profit — level and slope disagree.
 
-Matching the claim against that reasoning confirms the verdict is False once the right derivative (or the right expand-or-not comparison) is in view., so the statement is False.`
+Matching the claim against that reasoning confirms the verdict is False once the right derivative (or the right expand-or-not comparison) is in view. So the statement is False.`
     ],
     difficulty_level: "4/5",
     sort_order: 61,
@@ -4537,7 +4537,7 @@ Before overtime kicks in, each extra unit adds $12$ euros of cost
 
 Until overtime begins, the cost curve is a ray through the origin with constant slope $12$.
 
-Matching the claim against that reasoning confirms the verdict is True once the right derivative (or the right expand-or-not comparison) is in view., so the statement is True.`,
+Matching the claim against that reasoning confirms the verdict is True once the right derivative (or the right expand-or-not comparison) is in view. So the statement is True.`,
       `**B.** → True
 
 Rewrite the overtime formula by expanding the brackets:
@@ -4554,7 +4554,7 @@ Overtime raises the cost of an extra unit by $8$ euros
 
 The overtime piece is steeper: every unit past $50$ adds $20$ euros rather than $12$.
 
-Matching the claim against that reasoning confirms the verdict is True once the right derivative (or the right expand-or-not comparison) is in view., so the statement is True.`,
+Matching the claim against that reasoning confirms the verdict is True once the right derivative (or the right expand-or-not comparison) is in view. So the statement is True.`,
       `**C.** → False
 
 Just above $Q=50$ the workshop is already on overtime, so $C^{\\prime}(Q)=20$. Marginal revenue is still $R^{\\prime}(Q)=16$. Then
@@ -4565,7 +4565,7 @@ hence $R^{\\prime}(Q)<C^{\\prime}(Q)$, not $R^{\\prime}(Q)>C^{\\prime}(Q)$
 
 Just above $50$ the expand-or-not test already fails: extra revenue $16$ is less than overtime marginal cost $20$.
 
-Matching the claim against that reasoning confirms the verdict is False once the right derivative (or the right expand-or-not comparison) is in view., so the statement is False.`,
+Matching the claim against that reasoning confirms the verdict is False once the right derivative (or the right expand-or-not comparison) is in view. So the statement is False.`,
       `**D.** → True
 
 At $Q=40$ the workshop is still on the regular piece, so $C^{\\prime}(40)=12$. Compare with revenue:
@@ -4576,7 +4576,7 @@ A positive derivative means a small expansion raises profit at $Q=40$
 
 Before the kink, extra revenue still beats regular-crew marginal cost, so a small expansion at $40$ raises profit.
 
-Matching the claim against that reasoning confirms the verdict is True once the right derivative (or the right expand-or-not comparison) is in view., so the statement is True.`,
+Matching the claim against that reasoning confirms the verdict is True once the right derivative (or the right expand-or-not comparison) is in view. So the statement is True.`,
       `**E.** → False
 
 Average cost is the quotient $\\dfrac{C(Q)}{Q}$, not the overtime slope. For $Q>50$,
@@ -4587,7 +4587,7 @@ $$\\dfrac{C(Q)}{Q}=20-\\dfrac{400}{Q}$$
 
 The term $\\dfrac{400}{Q}$ shrinks as $Q$ grows, and average cost approaches $20$ from below and equals $12$ only at the isolated handover $Q=50$, not for every overtime output
 
-As $Q\\to\\infty$ average cost approaches $20$ from below; it equals $12$ only at the handover $Q=50$, not throughout overtime., so the statement is False.`
+As $Q\\to\\infty$ average cost approaches $20$ from below; it equals $12$ only at the handover $Q=50$, not throughout overtime. So the statement is False.`
     ],
     difficulty_level: "5/5",
     sort_order: 62,
@@ -4629,7 +4629,7 @@ The whiteboard's two numbers imply $R^{\\prime}(Q)=15$
 
 The whiteboard's two rates are enough to recover the missing revenue slope; no price schedule is required for that step.
 
-Matching the claim against that reasoning confirms the verdict is True once the right derivative (or the right expand-or-not comparison) is in view., so the statement is True.`,
+Matching the claim against that reasoning confirms the verdict is True once the right derivative (or the right expand-or-not comparison) is in view. So the statement is True.`,
       `**B.** → True
 
 The kiosk itself posted $P^{\\prime}(Q)=4>0$.
@@ -4638,14 +4638,14 @@ A positive marginal profit means profit is locally increasing, and a small extra
 
 The expand-or-not advice is immediate from the posted $P^{\\prime}=4>0$, without needing the recovered $R^{\\prime}$.
 
-Matching the claim against that reasoning confirms the verdict is True once the right derivative (or the right expand-or-not comparison) is in view., so the statement is True.`,
+Matching the claim against that reasoning confirms the verdict is True once the right derivative (or the right expand-or-not comparison) is in view. So the statement is True.`,
       `**C.** → False
 
 The posted pair determines only $R^{\\prime}(Q)=15$; it does not determine the price schedule $p(Q)$.
 
 Even if someone writes $p(Q)=30-\\dfrac{Q}{10}$, under a downward-sloping price the product rule usually gives $R^{\\prime}(Q)=p(Q)+Q\\,p^{\\prime}(Q)<p(Q)$, and price and marginal revenue are different objects. The whiteboard does not force $p(Q)=R^{\\prime}(Q)$
 
-Even evaluating the invented $p$ at some $Q$ would generally fail to match $R^{\\prime}=15$; price and MR are different objects., so the statement is False.`,
+Even evaluating the invented $p$ at some $Q$ would generally fail to match $R^{\\prime}=15$; price and MR are different objects. So the statement is False.`,
       `**D.** → True
 
 $P^{\\prime}(Q)=4$ is a rate of change of profit near the current output.
@@ -4654,7 +4654,7 @@ The current profit level is the height $P(Q)$, which was never posted, and a slo
 
 The kiosk could be earning $2$ euros or $200$ euros of profit while the slope remains $4$ — height was never on the board.
 
-Matching the claim against that reasoning confirms the verdict is True once the right derivative (or the right expand-or-not comparison) is in view., so the statement is True.`,
+Matching the claim against that reasoning confirms the verdict is True once the right derivative (or the right expand-or-not comparison) is in view. So the statement is True.`,
       `**E.** → True
 
 Repeat the same rearrangement with the alternative report $P^{\\prime}(Q)=-4$ and the same $C^{\\prime}(Q)=11$:
@@ -4667,7 +4667,7 @@ The implied marginal revenue would be $7$
 
 The same rearrangement $R^{\\prime}=P^{\\prime}+C^{\\prime}$ works for any posted pair; only the arithmetic changes.
 
-Matching the claim against that reasoning confirms the verdict is True once the right derivative (or the right expand-or-not comparison) is in view., so the statement is True.`
+Matching the claim against that reasoning confirms the verdict is True once the right derivative (or the right expand-or-not comparison) is in view. So the statement is True.`
     ],
     difficulty_level: "4/5",
     sort_order: 63,
@@ -4701,7 +4701,7 @@ The economic question "how many extra euros does one more ticket bring in?" is a
 
 Cinema A reports $R_A^{\\prime}(Q_A)=7$, and the extra ticket is worth about $7$ euros of revenue even though the current price is $12$
 
-The $5$-euro gap between price $12$ and extra revenue $7$ is exactly the inframarginal price-pressure effect on previous seats., so the statement is True.`,
+The $5$-euro gap between price $12$ and extra revenue $7$ is exactly the inframarginal price-pressure effect on previous seats. So the statement is True.`,
       `**B.** → True
 
 When price need not fall to sell a little more, the product-rule penalty $Q\\,p^{\\prime}(Q)$ is zero and $R^{\\prime}(Q)=p(Q)$.
@@ -4710,7 +4710,7 @@ Cinema B reports $R_B^{\\prime}(Q_B)=10=p_B$, which is exactly that situation
 
 In the product rule, $R^{\\prime}=p$ when $p^{\\prime}=0$; B's reports match that flat-price reading.
 
-Matching the claim against that reasoning confirms the verdict is True once the right derivative (or the right expand-or-not comparison) is in view., so the statement is True.`,
+Matching the claim against that reasoning confirms the verdict is True once the right derivative (or the right expand-or-not comparison) is in view. So the statement is True.`,
       `**C.** → False
 
 A's expansion test compares extra revenue with extra cost:
@@ -4721,7 +4721,7 @@ The tempting comparison of price $12$ with cost $8$ is the wrong test. Because $
 
 Comparing sticker price with marginal cost is the wrong test whenever MR lies below price — A's trap in this stem.
 
-Matching the claim against that reasoning confirms the verdict is False once the right derivative (or the right expand-or-not comparison) is in view., so the statement is False.`,
+Matching the claim against that reasoning confirms the verdict is False once the right derivative (or the right expand-or-not comparison) is in view. So the statement is False.`,
       `**D.** → True
 
 For cinema B,
@@ -4732,7 +4732,7 @@ Hence $R_B^{\\prime}(Q_B)>C_B^{\\prime}(Q_B)$ and a small expansion raises B's p
 
 B's expand-or-not comparison uses the true extra revenue $10$ against cost $8$, and the inequality favours expansion.
 
-Matching the claim against that reasoning confirms the verdict is True once the right derivative (or the right expand-or-not comparison) is in view., so the statement is True.`,
+Matching the claim against that reasoning confirms the verdict is True once the right derivative (or the right expand-or-not comparison) is in view. So the statement is True.`,
       `**E.** → False
 
 Marginal profit is $R^{\\prime}(Q)-C^{\\prime}(Q)$, not a ranking of sticker prices. Here
@@ -4745,7 +4745,7 @@ A has the higher price but the lower (in fact negative) marginal profit, and $p_
 
 A has the higher price but the lower marginal profit ($-1$ versus $+2$); price rankings do not decide $P^{\\prime}$ rankings.
 
-Matching the claim against that reasoning confirms the verdict is False once the right derivative (or the right expand-or-not comparison) is in view., so the statement is False.`
+Matching the claim against that reasoning confirms the verdict is False once the right derivative (or the right expand-or-not comparison) is in view. So the statement is False.`
     ],
     difficulty_level: "4/5",
     sort_order: 64,
@@ -4786,7 +4786,7 @@ For $Q<20$, marginal revenue is $15$
 
 Until the twentieth drink, revenue is a ray of slope $15$, so each extra happy-hour drink adds $15$ euros of revenue.
 
-Matching the claim against that reasoning confirms the verdict is True once the right derivative (or the right expand-or-not comparison) is in view., so the statement is True.`,
+Matching the claim against that reasoning confirms the verdict is True once the right derivative (or the right expand-or-not comparison) is in view. So the statement is True.`,
       `**B.** → True
 
 After the twentieth drink, revenue is $R(Q)=300+8(Q-20)$, so
@@ -4797,7 +4797,7 @@ Comparing with the constant marginal cost $C^{\\prime}(Q)=10$ gives $8<10$: each
 
 Post-promotion, the expand-or-not test already fails: extra revenue $8$ lies below extra cost $10$.
 
-Matching the claim against that reasoning confirms the verdict is True once the right derivative (or the right expand-or-not comparison) is in view., so the statement is True.`,
+Matching the claim against that reasoning confirms the verdict is True once the right derivative (or the right expand-or-not comparison) is in view. So the statement is True.`,
       `**C.** → True
 
 At $Q=12$ the bar is still in happy hour, so $R^{\\prime}(12)=15$. Then
@@ -4808,7 +4808,7 @@ A positive derivative means a small extra drink raises profit at $Q=12$
 
 Happy-hour marginal revenue still beats mixing cost, so a small extra drink at $Q=12$ raises profit.
 
-Matching the claim against that reasoning confirms the verdict is True once the right derivative (or the right expand-or-not comparison) is in view., so the statement is True.`,
+Matching the claim against that reasoning confirms the verdict is True once the right derivative (or the right expand-or-not comparison) is in view. So the statement is True.`,
       `**D.** → False
 
 At $Q=25$ the promotion has ended, so $R^{\\prime}(25)=8$. Then
@@ -4819,7 +4819,7 @@ Post-promotion revenue no longer beats cost at the margin
 
 At $Q=25$ one should not expand: the post-promotion slope $8$ is already below cost $10$.
 
-Keep level-versus-slope discipline: stocks such as $C$, $R$, $P$, or $U$ are heights; marginal objects are slopes of those graphs., so the statement is False.`,
+Keep level-versus-slope discipline: stocks such as $C$, $R$, $P$, or $U$ are heights; marginal objects are slopes of those graphs. So the statement is False.`,
       `**E.** → False
 
 The $15$-euro figure applies only on the happy-hour piece $Q\\le 20$.
@@ -4828,7 +4828,7 @@ At $Q=25$ the manager's post-promotion rule already gives $R^{\\prime}(25)=8$, n
 
 Piecewise schedules require reading the piece that contains the named output; $Q=25$ sits on the $8$-euro piece.
 
-Matching the claim against that reasoning confirms the verdict is False once the right derivative (or the right expand-or-not comparison) is in view., so the statement is False.`
+Matching the claim against that reasoning confirms the verdict is False once the right derivative (or the right expand-or-not comparison) is in view. So the statement is False.`
     ],
     difficulty_level: "5/5",
     sort_order: 65,
@@ -4863,7 +4863,7 @@ Saying that a small increase in production would raise profit is exactly the cla
 
 "Would raise profit" is ordinary language for a positive profit slope at the current output.
 
-Keep level-versus-slope discipline: stocks such as $C$, $R$, $P$, or $U$ are heights; marginal objects are slopes of those graphs., so the statement is True.`,
+Keep level-versus-slope discipline: stocks such as $C$, $R$, $P$, or $U$ are heights; marginal objects are slopes of those graphs. So the statement is True.`,
       `**B.** → True
 
 Because $P^{\\prime}=R^{\\prime}-C^{\\prime}$ and the cost office reports $C^{\\prime}(Q)=14$, the advice $P^{\\prime}(Q)>0$ rearranges to
@@ -4874,7 +4874,7 @@ The advice already means $R^{\\prime}(Q)>14$
 
 Rearranging $P^{\\prime}=R^{\\prime}-14>0$ forces the lower bound $R^{\\prime}>14$ on the missing marginal revenue.
 
-Matching the claim against that reasoning confirms the verdict is True once the right derivative (or the right expand-or-not comparison) is in view., so the statement is True.`,
+Matching the claim against that reasoning confirms the verdict is True once the right derivative (or the right expand-or-not comparison) is in view. So the statement is True.`,
       `**C.** → False
 
 The advice speaks only about the sign of the slope $P^{\\prime}(Q)$.
@@ -4883,7 +4883,7 @@ It does not reveal the current profit level $P(Q)$
 
 A factory can be losing money overall while still having $P^{\\prime}>0$, or earning a fortune while $P^{\\prime}>0$ — the advice is silent about $P(Q)$.
 
-Matching the claim against that reasoning confirms the verdict is False once the right derivative (or the right expand-or-not comparison) is in view., so the statement is False.`,
+Matching the claim against that reasoning confirms the verdict is False once the right derivative (or the right expand-or-not comparison) is in view. So the statement is False.`,
       `**D.** → False
 
 Nothing in the consultant's sentence or the cost-office report produces the quotient $\\dfrac{C(Q)}{Q}$.
@@ -4892,7 +4892,7 @@ The advice does not tell you average cost
 
 Average cost would need the stock $C(Q)$ as well as $Q$; neither the consultant nor the reported $C^{\\prime}=14$ supplies $C(Q)$.
 
-Matching the claim against that reasoning confirms the verdict is False once the right derivative (or the right expand-or-not comparison) is in view., so the statement is False.`,
+Matching the claim against that reasoning confirms the verdict is False once the right derivative (or the right expand-or-not comparison) is in view. So the statement is False.`,
       `**E.** → True
 
 The first adviser's claim already forces $R^{\\prime}(Q)>14$.
@@ -4901,7 +4901,7 @@ A second claim $R^{\\prime}(Q)=11$ at the same $Q$ would violate that inequality
 
 Claiming $R^{\\prime}=11$ would force $P^{\\prime}=11-14=-3<0$, contradicting the consultant's expand advice.
 
-Matching the claim against that reasoning confirms the verdict is True once the right derivative (or the right expand-or-not comparison) is in view., so the statement is True.`
+Matching the claim against that reasoning confirms the verdict is True once the right derivative (or the right expand-or-not comparison) is in view. So the statement is True.`
     ],
     difficulty_level: "4/5",
     sort_order: 66,
@@ -4938,7 +4938,7 @@ That choice raises the firm's profit
 
 Plant 1 passes the expand-or-not test: extra revenue $11$ beats Plant 1's extra cost $9$.
 
-Matching the claim against that reasoning confirms the verdict is True once the right derivative (or the right expand-or-not comparison) is in view., so the statement is True.`,
+Matching the claim against that reasoning confirms the verdict is True once the right derivative (or the right expand-or-not comparison) is in view. So the statement is True.`,
       `**B.** → False
 
 Both plants sell into the same market, so both face the same extra revenue $R'=11$.
@@ -4951,7 +4951,7 @@ Selling into the same market does not make Plant 2 the right plant
 
 Same market revenue does not erase a cost disadvantage; Plant 2 fails $R'>C_2'$ and should not take the unit.
 
-Matching the claim against that reasoning confirms the verdict is False once the right derivative (or the right expand-or-not comparison) is in view., so the statement is False.`,
+Matching the claim against that reasoning confirms the verdict is False once the right derivative (or the right expand-or-not comparison) is in view. So the statement is False.`,
       `**C.** → True
 
 With the same extra revenue available either way, the firm should choose the plant with the lower marginal cost.
@@ -4960,7 +4960,7 @@ Plant 1 has $C_1^{\\prime}=9<13=C_2^{\\prime}$, and Plant 1 is preferred for tha
 
 With a common $R'$, minimizing marginal cost across plants is exactly the profit-maximizing assignment of the extra unit.
 
-Matching the claim against that reasoning confirms the verdict is True once the right derivative (or the right expand-or-not comparison) is in view., so the statement is True.`,
+Matching the claim against that reasoning confirms the verdict is True once the right derivative (or the right expand-or-not comparison) is in view. So the statement is True.`,
       `**D.** → False
 
 Belonging to one firm does not force the two plants' current marginal costs to be equal.
@@ -4969,7 +4969,7 @@ Here they are explicitly different, $9$ versus $13$
 
 In the short run, plants can — and here do — operate with different marginal costs; equality is an optimality target, not an identity.
 
-Matching the claim against that reasoning confirms the verdict is False once the right derivative (or the right expand-or-not comparison) is in view., so the statement is False.`,
+Matching the claim against that reasoning confirms the verdict is False once the right derivative (or the right expand-or-not comparison) is in view. So the statement is False.`,
       `**E.** → True
 
 If instead $R'=8$, then both plant-level comparisons fail:
@@ -4982,7 +4982,7 @@ Neither plant should produce the extra unit
 
 When $R'=8$ lies below both plants' marginal costs, the expand-or-not test fails everywhere and the unit should not be produced.
 
-Matching the claim against that reasoning confirms the verdict is True once the right derivative (or the right expand-or-not comparison) is in view., so the statement is True.`
+Matching the claim against that reasoning confirms the verdict is True once the right derivative (or the right expand-or-not comparison) is in view. So the statement is True.`
     ],
     difficulty_level: "5/5",
     sort_order: 67,
@@ -5020,7 +5020,7 @@ For $y<1000$ the marginal tax rate is $\\dfrac{1}{5}$
 
 On the first bracket the tax rule is a ray through the origin with slope $1/5$, so the marginal rate equals that slope.
 
-Matching the claim against that reasoning confirms the verdict is True once the right derivative (or the right expand-or-not comparison) is in view., so the statement is True.`,
+Matching the claim against that reasoning confirms the verdict is True once the right derivative (or the right expand-or-not comparison) is in view. So the statement is True.`,
       `**B.** → True
 
 Above $1000$ euros the tax rule is $T(y)=200+\\dfrac{2}{5}(y-1000)$, so
@@ -5031,7 +5031,7 @@ Crossing $y=1000$ therefore raises the tax on an extra euro from one fifth to tw
 
 The kink at $y=1000$ is a jump in the marginal rate from $0.2$ to $0.4$, while the tax level $T$ itself stays continuous.
 
-Matching the claim against that reasoning confirms the verdict is True once the right derivative (or the right expand-or-not comparison) is in view., so the statement is True.`,
+Matching the claim against that reasoning confirms the verdict is True once the right derivative (or the right expand-or-not comparison) is in view. So the statement is True.`,
       `**C.** → False
 
 At $y=1500$, total tax is
@@ -5046,7 +5046,7 @@ $$\\dfrac{T(1500)}{1500}=\\dfrac{400}{1500}=\\dfrac{4}{15}$$
 
 which is strictly less than $\\dfrac{2}{5}=\\dfrac{6}{15}$, and the average rate does not equal $\\dfrac{2}{5}$
 
-Average tax blends the cheap first bracket with the dearer second; it lies strictly between $1/5$ and $2/5$ at $y=1500$., so the statement is False.`,
+Average tax blends the cheap first bracket with the dearer second; it lies strictly between $1/5$ and $2/5$ at $y=1500$. So the statement is False.`,
       `**D.** → True
 
 At $y=1500$ the taxpayer is in the second bracket, where $T^{\\prime}(y)=\\dfrac{2}{5}=0.4$.
@@ -5055,7 +5055,7 @@ About $40$ cents of a small extra euro of income is therefore taxed away
 
 That is the one-euro reading of the second-bracket slope $T^{\\prime}(1500)=2/5$.
 
-Keep level-versus-slope discipline: stocks such as $C$, $R$, $P$, or $U$ are heights; marginal objects are slopes of those graphs., so the statement is True.`,
+Keep level-versus-slope discipline: stocks such as $C$, $R$, $P$, or $U$ are heights; marginal objects are slopes of those graphs. So the statement is True.`,
       `**E.** → False
 
 The average rate $\\dfrac{T(1500)}{1500}=\\dfrac{4}{15}$ is only a quotient at one income.
@@ -5064,7 +5064,7 @@ It does not by itself recover the second-bracket slope $\\dfrac{2}{5}$; many sch
 
 The average $4/15$ is compatible with many local slopes; recovering $2/5$ needs the bracket formula, not the average alone.
 
-Matching the claim against that reasoning confirms the verdict is False once the right derivative (or the right expand-or-not comparison) is in view., so the statement is False.`
+Matching the claim against that reasoning confirms the verdict is False once the right derivative (or the right expand-or-not comparison) is in view. So the statement is False.`
     ],
     difficulty_level: "5/5",
     sort_order: 68,
@@ -5101,7 +5101,7 @@ With $A(Q)=12$, falling average cost therefore implies $C^{\\prime}(Q)<12$
 
 From $A^{\\prime}=(C^{\\prime}-A)/Q$, the sign $A^{\\prime}<0$ is exactly the inequality $C^{\\prime}<A=12$.
 
-Matching the claim against that reasoning confirms the verdict is True once the right derivative (or the right expand-or-not comparison) is in view., so the statement is True.`,
+Matching the claim against that reasoning confirms the verdict is True once the right derivative (or the right expand-or-not comparison) is in view. So the statement is True.`,
       `**B.** → False
 
 The reports give $C^{\\prime}(Q)<12$ and $R^{\\prime}(Q)=10$, but they do not pin $C^{\\prime}$ below $10$.
@@ -5110,14 +5110,14 @@ Marginal cost could be, for example, $11$, which is still below $12$ (so average
 
 The open interval $(10,12)$ is still available for $C^{\\prime}$: average cost falls while $C^{\\prime}>R^{\\prime}$.
 
-Matching the claim against that reasoning confirms the verdict is False once the right derivative (or the right expand-or-not comparison) is in view., so the statement is False.`,
+Matching the claim against that reasoning confirms the verdict is False once the right derivative (or the right expand-or-not comparison) is in view. So the statement is False.`,
       `**C.** → False
 
 Profit rises locally only when $R^{\\prime}>C^{\\prime}$. Here $R^{\\prime}=10$ while $C^{\\prime}$ is known only to satisfy $C^{\\prime}<12$.
 
 If $C^{\\prime}$ lies between $10$ and $12$, then $P^{\\prime}<0$ even while average cost falls, and the reports do not already imply $P^{\\prime}(Q)>0$
 
-Falling AC is not an expand signal; only $R^{\\prime}>C^{\\prime}$ is, and that comparison is not settled by $C^{\\prime}<12$ alone., so the statement is False.`,
+Falling AC is not an expand signal; only $R^{\\prime}>C^{\\prime}$ is, and that comparison is not settled by $C^{\\prime}<12$ alone. So the statement is False.`,
       `**D.** → True
 
 Falling average cost only forces $C^{\\prime}<A=12$; it does not force $C^{\\prime}<R^{\\prime}=10$.
@@ -5126,7 +5126,7 @@ Marginal cost could still exceed marginal revenue (for instance $C^{\\prime}=11$
 
 Example: $C^{\\prime}=11$ satisfies $C^{\\prime}<12=A$ (AC falling) and $C^{\\prime}>10=R^{\\prime}$ (MR below MC).
 
-Matching the claim against that reasoning confirms the verdict is True once the right derivative (or the right expand-or-not comparison) is in view., so the statement is True.`,
+Matching the claim against that reasoning confirms the verdict is True once the right derivative (or the right expand-or-not comparison) is in view. So the statement is True.`,
       `**E.** → False
 
 Differentiating average cost $A(Q)=\\dfrac{C(Q)}{Q}$ produces $A^{\\prime}(Q)$, which tracks how the average moves.
@@ -5135,7 +5135,7 @@ Marginal cost is $C^{\\prime}(Q)$, a different object, and differentiating $A$ d
 
 The object $A^{\\prime}$ describes how average cost moves; marginal cost remains the separate derivative $C^{\\prime}$.
 
-Matching the claim against that reasoning confirms the verdict is False once the right derivative (or the right expand-or-not comparison) is in view., so the statement is False.`
+Matching the claim against that reasoning confirms the verdict is False once the right derivative (or the right expand-or-not comparison) is in view. So the statement is False.`
     ],
     difficulty_level: "4/5",
     sort_order: 69,
@@ -5172,7 +5172,7 @@ at every $Q$
 
 Equivalently $R_N^{\\prime}-C_N^{\\prime}=30-18=12$; North's marginal profit is the constant $12$.
 
-Keep level-versus-slope discipline: stocks such as $C$, $R$, $P$, or $U$ are heights; marginal objects are slopes of those graphs., so the statement is True.`,
+Keep level-versus-slope discipline: stocks such as $C$, $R$, $P$, or $U$ are heights; marginal objects are slopes of those graphs. So the statement is True.`,
       `**B.** → True
 
 At $Q=15$, South's posted schedule gives
@@ -5183,7 +5183,7 @@ A positive derivative means South's profit is still locally increasing at $Q=15$
 
 South should still expand a little at $15$ packs: extra profit is still positive on the margin.
 
-Keep level-versus-slope discipline: stocks such as $C$, $R$, $P$, or $U$ are heights; marginal objects are slopes of those graphs., so the statement is True.`,
+Keep level-versus-slope discipline: stocks such as $C$, $R$, $P$, or $U$ are heights; marginal objects are slopes of those graphs. So the statement is True.`,
       `**C.** → True
 
 At $Q=25$,
@@ -5194,7 +5194,7 @@ A negative derivative means South's profit is locally decreasing at $Q=25$
 
 Past $Q=20$, South's posted schedule has $P_S^{\\prime}<0$, so at $25$ a small expansion lowers South's profit.
 
-Keep level-versus-slope discipline: stocks such as $C$, $R$, $P$, or $U$ are heights; marginal objects are slopes of those graphs., so the statement is True.`,
+Keep level-versus-slope discipline: stocks such as $C$, $R$, $P$, or $U$ are heights; marginal objects are slopes of those graphs. So the statement is True.`,
       `**D.** → False
 
 The shape of $P_S^{\\prime}(Q)$ — whether it depends on $Q$ — says nothing about the height $P_S(Q)$ compared with $P_N(Q)$.
@@ -5203,7 +5203,7 @@ South could currently earn more or less total profit; the claim that South must 
 
 North's stock is $P_N(15)=12\\cdot 15-40=140$, but South's stock is unidentified from $P_S^{\\prime}$ alone — no forced ranking.
 
-Matching the claim against that reasoning confirms the verdict is False once the right derivative (or the right expand-or-not comparison) is in view., so the statement is False.`,
+Matching the claim against that reasoning confirms the verdict is False once the right derivative (or the right expand-or-not comparison) is in view. So the statement is False.`,
       `**E.** → True
 
 North's marginal profit is
@@ -5214,7 +5214,7 @@ The fixed intercept $40$ in cost drops out upon differentiation, and the extra-u
 
 Fixed costs shift profit levels but cancel in every marginal comparison — a recurring theme in these stems.
 
-Matching the claim against that reasoning confirms the verdict is True once the right derivative (or the right expand-or-not comparison) is in view., so the statement is True.`
+Matching the claim against that reasoning confirms the verdict is True once the right derivative (or the right expand-or-not comparison) is in view. So the statement is True.`
     ],
     difficulty_level: "4/5",
     sort_order: 70,
@@ -5251,7 +5251,7 @@ For $x<8$, marginal utility is $U^{\\prime}(x)=10-x$
 
 Marginal utility declines linearly from $10$ at $x=0$ toward $2$ as $x$ approaches $8$ from the left.
 
-Matching the claim against that reasoning confirms the verdict is True once the right derivative (or the right expand-or-not comparison) is in view., so the statement is True.`,
+Matching the claim against that reasoning confirms the verdict is True once the right derivative (or the right expand-or-not comparison) is in view. So the statement is True.`,
       `**B.** → True
 
 At $x=6$,
@@ -5262,7 +5262,7 @@ A positive derivative means a little extra leisure still raises satisfaction at 
 
 At six hours the student is still on the rising piece of $U$, so a little more leisure still helps.
 
-Keep level-versus-slope discipline: stocks such as $C$, $R$, $P$, or $U$ are heights; marginal objects are slopes of those graphs., so the statement is True.`,
+Keep level-versus-slope discipline: stocks such as $C$, $R$, $P$, or $U$ are heights; marginal objects are slopes of those graphs. So the statement is True.`,
       `**C.** → True
 
 Once $x>8$, utility is the constant $U(x)=48$, so its derivative vanishes:
@@ -5273,7 +5273,7 @@ Marginal utility is therefore $0$ beyond eight hours
 
 A flat utility function has zero slope: further leisure past eight hours is satiation in this model.
 
-Matching the claim against that reasoning confirms the verdict is True once the right derivative (or the right expand-or-not comparison) is in view., so the statement is True.`,
+Matching the claim against that reasoning confirms the verdict is True once the right derivative (or the right expand-or-not comparison) is in view. So the statement is True.`,
       `**D.** → False
 
 $U(8)=48$ is the stock of satisfaction after eight hours, not the contribution of the eighth hour alone.
@@ -5286,7 +5286,7 @@ The eighth hour adds about $2$ units of utility, not $48$
 
 Total utility $48$ accumulates over all eight hours; the last hour's contribution is the marginal figure near $2$, not the stock $48$.
 
-Matching the claim against that reasoning confirms the verdict is False once the right derivative (or the right expand-or-not comparison) is in view., so the statement is False.`,
+Matching the claim against that reasoning confirms the verdict is False once the right derivative (or the right expand-or-not comparison) is in view. So the statement is False.`,
       `**E.** → True
 
 For $x=12>8$, utility has flattened at $U(12)=48$. Average utility is therefore
@@ -5297,7 +5297,7 @@ Average utility at $x=12$ equals $4$
 
 Once utility has flattened, stretching leisure to $12$ hours dilutes the same $48$ utils over more hours, giving average $4$.
 
-Matching the claim against that reasoning confirms the verdict is True once the right derivative (or the right expand-or-not comparison) is in view., so the statement is True.`
+Matching the claim against that reasoning confirms the verdict is True once the right derivative (or the right expand-or-not comparison) is in view. So the statement is True.`
     ],
     difficulty_level: "5/5",
     sort_order: 71,
@@ -5337,7 +5337,7 @@ The first printer's implied marginal cost is $19$
 
 Rearrangement of $P^{\\prime}=R^{\\prime}-C^{\\prime}$ always recovers the missing piece when two of the three rates are known.
 
-Matching the claim against that reasoning confirms the verdict is True once the right derivative (or the right expand-or-not comparison) is in view., so the statement is True.`,
+Matching the claim against that reasoning confirms the verdict is True once the right derivative (or the right expand-or-not comparison) is in view. So the statement is True.`,
       `**B.** → False
 
 The first printer has $P^{\\prime}(Q)=-3<0$, so profit is locally decreasing.
@@ -5346,7 +5346,7 @@ Printing a little more would lower profit, not raise it
 
 With $P^{\\prime}=-3<0$ the expand-or-not test fails: printing a little more would reduce profit.
 
-Keep level-versus-slope discipline: stocks such as $C$, $R$, $P$, or $U$ are heights; marginal objects are slopes of those graphs., so the statement is False.`,
+Keep level-versus-slope discipline: stocks such as $C$, $R$, $P$, or $U$ are heights; marginal objects are slopes of those graphs. So the statement is False.`,
       `**C.** → True
 
 The second printer reports $R^{\\prime}(Q)=16$ and $C^{\\prime}(Q)=16$, so
@@ -5357,7 +5357,7 @@ its marginal profit is $0$
 
 Equal marginal revenue and marginal cost is exactly the first-order condition $P^{\\prime}=0$ at that run length.
 
-Keep level-versus-slope discipline: stocks such as $C$, $R$, $P$, or $U$ are heights; marginal objects are slopes of those graphs., so the statement is True.`,
+Keep level-versus-slope discipline: stocks such as $C$, $R$, $P$, or $U$ are heights; marginal objects are slopes of those graphs. So the statement is True.`,
       `**D.** → False
 
 Both printers share $R^{\\prime}(Q)=16$, but their cost (or profit) companions differ.
@@ -5366,7 +5366,7 @@ The first has $P^{\\prime}=-3$ while the second has $P^{\\prime}=0$, and they do
 
 Shared $R^{\\prime}$ is only one ingredient of $P^{\\prime}=R^{\\prime}-C^{\\prime}$; different cost slopes produce different profit slopes.
 
-Matching the claim against that reasoning confirms the verdict is False once the right derivative (or the right expand-or-not comparison) is in view., so the statement is False.`,
+Matching the claim against that reasoning confirms the verdict is False once the right derivative (or the right expand-or-not comparison) is in view. So the statement is False.`,
       `**E.** → False
 
 The posted figure $P^{\\prime}(Q)=-3$ is a rate — euros of profit change per extra job — not the height of the profit function.
@@ -5375,7 +5375,7 @@ The stock $P(Q)$ is a separate number and need not equal $-3$; confusing the slo
 
 A printer could be earning a large positive profit while sitting on a mildly negative slope of $-3$ — rate $\\neq$ level.
 
-Matching the claim against that reasoning confirms the verdict is False once the right derivative (or the right expand-or-not comparison) is in view., so the statement is False.`
+Matching the claim against that reasoning confirms the verdict is False once the right derivative (or the right expand-or-not comparison) is in view. So the statement is False.`
     ],
     difficulty_level: "4/5",
     sort_order: 72,
@@ -5412,7 +5412,7 @@ A positive derivative means a small expansion raises profit
 
 Before the tax the expand-or-not test passes: extra revenue $14$ beats extra cost $10$.
 
-Keep level-versus-slope discipline: stocks such as $C$, $R$, $P$, or $U$ are heights; marginal objects are slopes of those graphs., so the statement is True.`,
+Keep level-versus-slope discipline: stocks such as $C$, $R$, $P$, or $U$ are heights; marginal objects are slopes of those graphs. So the statement is True.`,
       `**B.** → True
 
 The new cost is $\\widetilde{C}(Q)=C(Q)+5Q$. Differentiating gives
@@ -5423,7 +5423,7 @@ After the tax the relevant marginal cost is $15$
 
 A per-unit tax of $5$ shifts marginal cost up by exactly $5$, from $10$ to $15$.
 
-Keep level-versus-slope discipline: stocks such as $C$, $R$, $P$, or $U$ are heights; marginal objects are slopes of those graphs., so the statement is True.`,
+Keep level-versus-slope discipline: stocks such as $C$, $R$, $P$, or $U$ are heights; marginal objects are slopes of those graphs. So the statement is True.`,
       `**C.** → False
 
 After the tax, compare the unchanged marginal revenue with the new marginal cost:
@@ -5434,7 +5434,7 @@ A negative derivative means a small expansion lowers profit rather than raising 
 
 After the tax the test fails: extra revenue $14$ no longer covers the taxed marginal cost $15$.
 
-Matching the claim against that reasoning confirms the verdict is False once the right derivative (or the right expand-or-not comparison) is in view., so the statement is False.`,
+Matching the claim against that reasoning confirms the verdict is False once the right derivative (or the right expand-or-not comparison) is in view. So the statement is False.`,
       `**D.** → True
 
 The extra-cost side of the expansion test must use the cost schedule the firm actually faces.
@@ -5443,7 +5443,7 @@ After the tax that schedule is $\\widetilde{C}$, not the old $C$, and the tax ch
 
 Using the old $C^{\\prime}=10$ after the tax would understate extra cost and wrongly recommend expansion.
 
-Matching the claim against that reasoning confirms the verdict is True once the right derivative (or the right expand-or-not comparison) is in view., so the statement is True.`,
+Matching the claim against that reasoning confirms the verdict is True once the right derivative (or the right expand-or-not comparison) is in view. So the statement is True.`,
       `**E.** → True
 
 The revenue schedule is left unchanged by the tax, so its derivative is unchanged:
@@ -5454,7 +5454,7 @@ still after the tax
 
 Only the cost side of the ledger changed; the revenue schedule and its derivative are untouched by the tax.
 
-Keep level-versus-slope discipline: stocks such as $C$, $R$, $P$, or $U$ are heights; marginal objects are slopes of those graphs., so the statement is True.`
+Keep level-versus-slope discipline: stocks such as $C$, $R$, $P$, or $U$ are heights; marginal objects are slopes of those graphs. So the statement is True.`
     ],
     difficulty_level: "4/5",
     sort_order: 73,
@@ -5499,7 +5499,7 @@ which matches the claim
 
 The product rule on $R=Q(40-Q)$ immediately yields $R^{\\prime}=40-2Q$ on the first piece.
 
-Keep level-versus-slope discipline: stocks such as $C$, $R$, $P$, or $U$ are heights; marginal objects are slopes of those graphs., so the statement is True.`,
+Keep level-versus-slope discipline: stocks such as $C$, $R$, $P$, or $U$ are heights; marginal objects are slopes of those graphs. So the statement is True.`,
       `**B.** → True
 
 Once sales exceed $30$, price is the flat clearance price $p(Q)=10$, so revenue is $R(Q)=10Q$ on that piece.
@@ -5508,7 +5508,7 @@ Differentiating gives $R^{\\prime}(Q)=10$: marginal revenue collapses to the fla
 
 With a flat clearance price there is no inframarginal penalty, so MR collapses to the clearance price itself.
 
-Matching the claim against that reasoning confirms the verdict is True once the right derivative (or the right expand-or-not comparison) is in view., so the statement is True.`,
+Matching the claim against that reasoning confirms the verdict is True once the right derivative (or the right expand-or-not comparison) is in view. So the statement is True.`,
       `**C.** → True
 
 At $Q=12<30$,
@@ -5523,7 +5523,7 @@ A small expansion raises profit at $Q=12$
 
 At $Q=12$, extra revenue $16$ beats packing cost $12$, so a small expansion raises profit.
 
-Matching the claim against that reasoning confirms the verdict is True once the right derivative (or the right expand-or-not comparison) is in view., so the statement is True.`,
+Matching the claim against that reasoning confirms the verdict is True once the right derivative (or the right expand-or-not comparison) is in view. So the statement is True.`,
       `**D.** → False
 
 At $Q=35$ clearance pricing is in force, so $R^{\\prime}(35)=10$. Then
@@ -5534,7 +5534,7 @@ hence $R^{\\prime}<C^{\\prime}$, not $R^{\\prime}>C^{\\prime}$
 
 Clearance MR $10$ lies below packing cost $12$, so the expand-or-not test fails at $Q=35$.
 
-Matching the claim against that reasoning confirms the verdict is False once the right derivative (or the right expand-or-not comparison) is in view., so the statement is False.`,
+Matching the claim against that reasoning confirms the verdict is False once the right derivative (or the right expand-or-not comparison) is in view. So the statement is False.`,
       `**E.** → False
 
 At $Q=12$, extra revenue is the marginal revenue $R^{\\prime}(12)=16$, while the posted price is
@@ -5545,7 +5545,7 @@ Those are different numbers: under a downward-sloping price, $R^{\\prime}\\neq p
 
 The gap $28-16=12$ equals $-Q\\,p^{\\prime}(Q)$ at $Q=12$ with $p^{\\prime}=-1$ — the usual MR-versus-price wedge.
 
-Matching the claim against that reasoning confirms the verdict is False once the right derivative (or the right expand-or-not comparison) is in view., so the statement is False.`
+Matching the claim against that reasoning confirms the verdict is False once the right derivative (or the right expand-or-not comparison) is in view. So the statement is False.`
     ],
     difficulty_level: "5/5",
     sort_order: 74,
@@ -5584,7 +5584,7 @@ Hence $A_A^{\\prime}(Q)<0$: A's average cost is currently falling
 
 The sign rule $A^{\\prime}=(C^{\\prime}-A)/Q$ gives $A_A^{\\prime}<0$ precisely because $5<8$.
 
-Matching the claim against that reasoning confirms the verdict is True once the right derivative (or the right expand-or-not comparison) is in view., so the statement is True.`,
+Matching the claim against that reasoning confirms the verdict is True once the right derivative (or the right expand-or-not comparison) is in view. So the statement is True.`,
       `**B.** → True
 
 Average cost rises when marginal cost sits above average cost. Differentiating $A=C/Q$ gives the sign rule
@@ -5595,7 +5595,7 @@ For firm B one has $C_B^{\\prime}=9>6=A_B$, so $A_B^{\\prime}(Q)>0$: B's average
 
 For B the same rule gives $A_B^{\\prime}>0$ because marginal cost $9$ sits above average cost $6$.
 
-Matching the claim against that reasoning confirms the verdict is True once the right derivative (or the right expand-or-not comparison) is in view., so the statement is True.`,
+Matching the claim against that reasoning confirms the verdict is True once the right derivative (or the right expand-or-not comparison) is in view. So the statement is True.`,
       `**C.** → False
 
 The extra-unit test compares $R^{\\prime}$ with $C^{\\prime}$, not the two averages. Here
@@ -5608,7 +5608,7 @@ A should take the extra delivery; B should not. Being cheaper on average does no
 
 Average-cost rankings are the wrong input to the expand-or-not test; B's lower average does not license taking the extra delivery.
 
-Matching the claim against that reasoning confirms the verdict is False once the right derivative (or the right expand-or-not comparison) is in view., so the statement is False.`,
+Matching the claim against that reasoning confirms the verdict is False once the right derivative (or the right expand-or-not comparison) is in view. So the statement is False.`,
       `**D.** → True
 
 The extra-unit test compares $R'$ with each plant's marginal cost. Here $R'=7$, so
@@ -5619,7 +5619,7 @@ Only firm A satisfies $R'>C'$
 
 A alone has extra revenue above extra cost; B has the inequality reversed.
 
-Keep level-versus-slope discipline: stocks such as $C$, $R$, $P$, or $U$ are heights; marginal objects are slopes of those graphs., so the statement is True.`,
+Keep level-versus-slope discipline: stocks such as $C$, $R$, $P$, or $U$ are heights; marginal objects are slopes of those graphs. So the statement is True.`,
       `**E.** → True
 
 The extra-profit figures are
@@ -5632,7 +5632,7 @@ The extra unit adds about $2$ euros of profit at A and subtracts about $2$ euros
 
 Those $\\pm 2$ figures are exactly $R'-C'$ at each firm — the one-unit profit consequences of taking the delivery.
 
-Matching the claim against that reasoning confirms the verdict is True once the right derivative (or the right expand-or-not comparison) is in view., so the statement is True.`
+Matching the claim against that reasoning confirms the verdict is True once the right derivative (or the right expand-or-not comparison) is in view. So the statement is True.`
     ],
     difficulty_level: "4/5",
     sort_order: 75,
@@ -5665,7 +5665,7 @@ The stock of profit is positive, while a tiny change in output leaves that stock
 
 Studio A sits on a flat spot of the profit graph at height $50$: positive stock, zero slope.
 
-Matching the claim against that reasoning confirms the verdict is True once the right derivative (or the right expand-or-not comparison) is in view., so the statement is True.`,
+Matching the claim against that reasoning confirms the verdict is True once the right derivative (or the right expand-or-not comparison) is in view. So the statement is True.`,
       `**B.** → True
 
 Studio B reports $P_B(Q)=0$ together with $P_B^{\\prime}(Q)=4>0$.
@@ -5674,7 +5674,7 @@ Breaking even today is compatible with an upward slope: a small expansion would 
 
 Studio B sits at height zero on an upward slope: break-even today, but the next unit starts to create profit.
 
-Matching the claim against that reasoning confirms the verdict is True once the right derivative (or the right expand-or-not comparison) is in view., so the statement is True.`,
+Matching the claim against that reasoning confirms the verdict is True once the right derivative (or the right expand-or-not comparison) is in view. So the statement is True.`,
       `**C.** → False
 
 Zero slope is not a zero height. Studio A already earns $P_A(Q)=50$.
@@ -5683,7 +5683,7 @@ The report $P_A^{\\prime}(Q)=0$ only says that profit is stationary at that outp
 
 "Earns nothing" would mean $P_A(Q)=0$; the report $P_A^{\\prime}=0$ says something entirely different.
 
-Matching the claim against that reasoning confirms the verdict is False once the right derivative (or the right expand-or-not comparison) is in view., so the statement is False.`,
+Matching the claim against that reasoning confirms the verdict is False once the right derivative (or the right expand-or-not comparison) is in view. So the statement is False.`,
       `**D.** → True
 
 $P_B^{\\prime}(Q)=4>0$ is an expansion signal for B.
@@ -5692,7 +5692,7 @@ For A, $P_A^{\\prime}(Q)=0$ rearranges to $R_A^{\\prime}(Q)=C_A^{\\prime}(Q)$, t
 
 B's positive $P_B^{\\prime}$ is an expand signal; A's $P_A^{\\prime}=0$ is already the MR$=$MC first-order condition.
 
-Matching the claim against that reasoning confirms the verdict is True once the right derivative (or the right expand-or-not comparison) is in view., so the statement is True.`,
+Matching the claim against that reasoning confirms the verdict is True once the right derivative (or the right expand-or-not comparison) is in view. So the statement is True.`,
       `**E.** → False
 
 A zero height can sit on an upward slope. That is exactly studio B: $P_B(Q)=0$ while $P_B^{\\prime}(Q)=4>0$.
@@ -5701,7 +5701,7 @@ Current break-even does not forbid a positive marginal profit
 
 Break-even constrains the height $P$, not the slope $P^{\\prime}$; B is the textbook counterexample.
 
-Matching the claim against that reasoning confirms the verdict is False once the right derivative (or the right expand-or-not comparison) is in view., so the statement is False.`
+Matching the claim against that reasoning confirms the verdict is False once the right derivative (or the right expand-or-not comparison) is in view. So the statement is False.`
     ],
     difficulty_level: "4/5",
     sort_order: 76,
@@ -5736,7 +5736,7 @@ On a weekday each extra sale adds $12$ euros of cost
 
 Weekday cost is a ray of slope $12$, so each extra weekday sale adds $12$ euros of cost.
 
-Keep level-versus-slope discipline: stocks such as $C$, $R$, $P$, or $U$ are heights; marginal objects are slopes of those graphs., so the statement is True.`,
+Keep level-versus-slope discipline: stocks such as $C$, $R$, $P$, or $U$ are heights; marginal objects are slopes of those graphs. So the statement is True.`,
       `**B.** → True
 
 Weekend cost is $C_{\\mathrm{we}}(Q)=20Q$, so $C_{\\mathrm{we}}^{\\prime}(Q)=20$. The weekday slope was $12$, and
@@ -5747,7 +5747,7 @@ Overtime therefore raises the extra-sale cost by $8$ euros relative to the weekd
 
 Weekend overtime steepens the cost ray from slope $12$ to slope $20$ — an $8$-euro marginal penalty.
 
-Matching the claim against that reasoning confirms the verdict is True once the right derivative (or the right expand-or-not comparison) is in view., so the statement is True.`,
+Matching the claim against that reasoning confirms the verdict is True once the right derivative (or the right expand-or-not comparison) is in view. So the statement is True.`,
       `**C.** → True
 
 On a weekday,
@@ -5758,7 +5758,7 @@ A positive marginal profit means a small extra sale raises weekday profit
 
 Weekday expand-or-not: extra revenue $15$ beats weekday extra cost $12$, so a small extra sale raises profit.
 
-Matching the claim against that reasoning confirms the verdict is True once the right derivative (or the right expand-or-not comparison) is in view., so the statement is True.`,
+Matching the claim against that reasoning confirms the verdict is True once the right derivative (or the right expand-or-not comparison) is in view. So the statement is True.`,
       `**D.** → False
 
 Weekend marginal profit uses the weekend cost slope, not the weekday one:
@@ -5769,7 +5769,7 @@ That is not equal to the weekday figure $3$. Same $R^{\\prime}$ with a higher $C
 
 Weekend marginal profit is $15-20=-5$, not the weekday $3$; same $R^{\\prime}$ with a higher $C^{\\prime}$ flips the advice.
 
-Matching the claim against that reasoning confirms the verdict is False once the right derivative (or the right expand-or-not comparison) is in view., so the statement is False.`,
+Matching the claim against that reasoning confirms the verdict is False once the right derivative (or the right expand-or-not comparison) is in view. So the statement is False.`,
       `**E.** → True
 
 $R^{\\prime}(Q)=15$ is the same number both days.
@@ -5778,7 +5778,7 @@ What changes is which cost schedule supplies $C^{\\prime}(Q)$: the weekday rule 
 
 Marginal revenue keeps the same economic meaning — extra euros from one more sale — on both kinds of day.
 
-Matching the claim against that reasoning confirms the verdict is True once the right derivative (or the right expand-or-not comparison) is in view., so the statement is True.`
+Matching the claim against that reasoning confirms the verdict is True once the right derivative (or the right expand-or-not comparison) is in view. So the statement is True.`
     ],
     difficulty_level: "4/5",
     sort_order: 77,
@@ -5819,7 +5819,7 @@ The reviewer's sentence is already that comparison
 
 The reviewer's sentence is ordinary language for the inequality of derivatives $R_L^{\\prime}<C_L^{\\prime}$.
 
-Matching the claim against that reasoning confirms the verdict is True once the right derivative (or the right expand-or-not comparison) is in view., so the statement is True.`,
+Matching the claim against that reasoning confirms the verdict is True once the right derivative (or the right expand-or-not comparison) is in view. So the statement is True.`,
       `**B.** → True
 
 From $P_L^{\\prime}(Q)=R_L^{\\prime}(Q)-C_L^{\\prime}(Q)$ and the posted numbers,
@@ -5832,7 +5832,7 @@ Shop L's implied marginal cost is $13$
 
 Check: $9<13$ matches the reviewer's claim, and $P_L^{\\prime}=9-13=-4$ matches the posted profit slope.
 
-Matching the claim against that reasoning confirms the verdict is True once the right derivative (or the right expand-or-not comparison) is in view., so the statement is True.`,
+Matching the claim against that reasoning confirms the verdict is True once the right derivative (or the right expand-or-not comparison) is in view. So the statement is True.`,
       `**C.** → True
 
 At Shop M, $R_M^{\\prime}(Q)=9>6=C_M^{\\prime}(Q)$, so extra revenue is larger than extra cost.
@@ -5841,7 +5841,7 @@ That is the opposite of the reviewer's sentence, and Shop M does not satisfy it
 
 At M, extra revenue exceeds extra cost, which is the opposite of "extra revenue smaller than extra cost."
 
-Matching the claim against that reasoning confirms the verdict is True once the right derivative (or the right expand-or-not comparison) is in view., so the statement is True.`,
+Matching the claim against that reasoning confirms the verdict is True once the right derivative (or the right expand-or-not comparison) is in view. So the statement is True.`,
       `**D.** → True
 
 Shop M has
@@ -5852,7 +5852,7 @@ while Shop L has $P_L^{\\prime}(Q)=-4<0$. A small expansion raises profit at M a
 
 Opposite signs of $P^{\\prime}$ give opposite expand-or-not advice at the two shops.
 
-Keep level-versus-slope discipline: stocks such as $C$, $R$, $P$, or $U$ are heights; marginal objects are slopes of those graphs., so the statement is True.`,
+Keep level-versus-slope discipline: stocks such as $C$, $R$, $P$, or $U$ are heights; marginal objects are slopes of those graphs. So the statement is True.`,
       `**E.** → False
 
 Both shops share $R^{\\prime}(Q)=9$, but their cost slopes differ: $C_L^{\\prime}(Q)=13$ versus $C_M^{\\prime}(Q)=6$.
@@ -5861,7 +5861,7 @@ Same extra revenue does not force the same extra cost
 
 Shared $R^{\\prime}=9$ with $C_L^{\\prime}=13$ versus $C_M^{\\prime}=6$ is enough to see the extra-cost figures differ.
 
-Matching the claim against that reasoning confirms the verdict is False once the right derivative (or the right expand-or-not comparison) is in view., so the statement is False.`
+Matching the claim against that reasoning confirms the verdict is False once the right derivative (or the right expand-or-not comparison) is in view. So the statement is False.`
     ],
     difficulty_level: "5/5",
     sort_order: 78,
@@ -5906,7 +5906,7 @@ The claim matches
 
 Differentiate $8Q-\\dfrac{1}{10}Q^{2}$ term by term: the quadratic term contributes $-\\dfrac{2}{10}Q=-\\dfrac{1}{5}Q$.
 
-Matching the claim against that reasoning confirms the verdict is True once the right derivative (or the right expand-or-not comparison) is in view., so the statement is True.`,
+Matching the claim against that reasoning confirms the verdict is True once the right derivative (or the right expand-or-not comparison) is in view. So the statement is True.`,
       `**B.** → True
 
 At $Q=20$,
@@ -5919,7 +5919,7 @@ A small expansion raises profit at $Q=20$
 
 At $Q=20$ the firm is still below capacity on an upward stretch of profit, so a small expansion helps.
 
-Keep level-versus-slope discipline: stocks such as $C$, $R$, $P$, or $U$ are heights; marginal objects are slopes of those graphs., so the statement is True.`,
+Keep level-versus-slope discipline: stocks such as $C$, $R$, $P$, or $U$ are heights; marginal objects are slopes of those graphs. So the statement is True.`,
       `**C.** → True
 
 On the outsourcing piece $P(Q)=150-4(Q-30)$ is linear with slope $-4$, so
@@ -5930,7 +5930,7 @@ which matches the claim
 
 Beyond capacity every extra lamp subtracts $4$ euros of profit — a constant negative marginal profit.
 
-Keep level-versus-slope discipline: stocks such as $C$, $R$, $P$, or $U$ are heights; marginal objects are slopes of those graphs., so the statement is True.`,
+Keep level-versus-slope discipline: stocks such as $C$, $R$, $P$, or $U$ are heights; marginal objects are slopes of those graphs. So the statement is True.`,
       `**D.** → False
 
 Just above capacity the firm is on the outsourcing piece, where $P^{\\prime}(Q)=-4<0$.
@@ -5939,7 +5939,7 @@ A small expansion lowers profit; it does not raise it
 
 Just above $30$ the outsourcing piece is already in force, so the expand-or-not test fails immediately past capacity.
 
-Matching the claim against that reasoning confirms the verdict is False once the right derivative (or the right expand-or-not comparison) is in view., so the statement is False.`,
+Matching the claim against that reasoning confirms the verdict is False once the right derivative (or the right expand-or-not comparison) is in view. So the statement is False.`,
       `**E.** → False
 
 $P(30)=150$ is the profit stock at capacity, not the contribution of the thirtieth unit alone.
@@ -5954,7 +5954,7 @@ The thirtieth unit adds about $2$ euros of profit, not $150$
 
 The stock $P(30)=150$ accumulates all infra-capacity profit; the thirtieth unit's contribution is the marginal figure near $2$.
 
-Matching the claim against that reasoning confirms the verdict is False once the right derivative (or the right expand-or-not comparison) is in view., so the statement is False.`
+Matching the claim against that reasoning confirms the verdict is False once the right derivative (or the right expand-or-not comparison) is in view. So the statement is False.`
     ],
     difficulty_level: "5/5",
     sort_order: 79,
@@ -5995,7 +5995,7 @@ The café's implied marginal cost is $2$
 
 Two of the three rates determine the third through $P^{\\prime}=R^{\\prime}-C^{\\prime}$; here the café's missing piece is $C^{\\prime}=2$.
 
-Matching the claim against that reasoning confirms the verdict is True once the right derivative (or the right expand-or-not comparison) is in view., so the statement is True.`,
+Matching the claim against that reasoning confirms the verdict is True once the right derivative (or the right expand-or-not comparison) is in view. So the statement is True.`,
       `**B.** → True
 
 For the kiosk,
@@ -6006,7 +6006,7 @@ The kiosk's implied marginal profit is $-2$
 
 The kiosk's missing piece is the profit slope: $P^{\\prime}=3-5=-2$.
 
-Keep level-versus-slope discipline: stocks such as $C$, $R$, $P$, or $U$ are heights; marginal objects are slopes of those graphs., so the statement is True.`,
+Keep level-versus-slope discipline: stocks such as $C$, $R$, $P$, or $U$ are heights; marginal objects are slopes of those graphs. So the statement is True.`,
       `**C.** → True
 
 The café has $P^{\\prime}(40)=1>0$, so a small extra item raises café profit.
@@ -6015,7 +6015,7 @@ The kiosk has $P^{\\prime}(40)=-2<0$, and a small extra item lowers kiosk profit
 
 Opposite signs of $P^{\\prime}$ mean opposite expand-or-not advice despite the shared $R^{\\prime}(40)=3$.
 
-Matching the claim against that reasoning confirms the verdict is True once the right derivative (or the right expand-or-not comparison) is in view., so the statement is True.`,
+Matching the claim against that reasoning confirms the verdict is True once the right derivative (or the right expand-or-not comparison) is in view. So the statement is True.`,
       `**D.** → False
 
 Same $R^{\\prime}(40)$ and same $Q$ do not force the same cost slope.
@@ -6024,7 +6024,7 @@ The recovered values are already different: $C^{\\prime}(40)=2$ at the café ver
 
 The recovered cost slopes already differ ($2$ versus $5$); shared $Q$ and shared $R^{\\prime}$ never forced them to match.
 
-Matching the claim against that reasoning confirms the verdict is False once the right derivative (or the right expand-or-not comparison) is in view., so the statement is False.`,
+Matching the claim against that reasoning confirms the verdict is False once the right derivative (or the right expand-or-not comparison) is in view. So the statement is False.`,
       `**E.** → False
 
 $P^{\\prime}(40)=1$ is a rate of change of profit.
@@ -6033,7 +6033,7 @@ The height $P(40)$ of today's profit was never posted and need not equal $1$
 
 A rate of $+1$ euro of profit per extra item is compatible with any profit stock — the café never posted $P(40)$.
 
-Keep level-versus-slope discipline: stocks such as $C$, $R$, $P$, or $U$ are heights; marginal objects are slopes of those graphs., so the statement is False.`
+Keep level-versus-slope discipline: stocks such as $C$, $R$, $P$, or $U$ are heights; marginal objects are slopes of those graphs. So the statement is False.`
     ],
     difficulty_level: "5/5",
     sort_order: 80,
@@ -6166,7 +6166,7 @@ $$P(Q)=-2Q^{2}+24Q-40\\qquad\\Rightarrow\\qquad P'(Q)=-4Q+24.$$
 
 (The constant $-40$ disappears under differentiation.) That slope is exactly the claimed marginal-profit formula
 
-An interior candidate for a smooth extremum must make the first derivative vanish; that flat-slope equation only produces candidates, not finished labels., so the statement is True.`,
+An interior candidate for a smooth extremum must make the first derivative vanish; that flat-slope equation only produces candidates, not finished labels. So the statement is True.`,
       `**C.** → True
 
 Name the objective, find where its slope is flat, then classify with the bend (or a sign chart) before matching the claim.
@@ -6177,7 +6177,7 @@ $$P'(Q)=-4Q+24=0\\qquad\\Rightarrow\\qquad 4Q=24\\qquad\\Rightarrow\\qquad Q=6.$
 
 For $Q>0$ this is the unique root. Six lunch boxes is therefore the unique positive flat-slope output
 
-An interior candidate for a smooth extremum must make the first derivative vanish; that flat-slope equation only produces candidates, not finished labels., so the statement is True.`,
+An interior candidate for a smooth extremum must make the first derivative vanish; that flat-slope equation only produces candidates, not finished labels. So the statement is True.`,
       `**D.** → True
 
 Name the objective, find where its slope is flat, then classify with the bend (or a sign chart) before matching the claim.
@@ -6190,7 +6190,7 @@ $$R'(6)=30-12=18,\\qquad C'(6)=12+6=18.$$
 
 Both equal $18$ euros at six boxes, matching the claim
 
-Matching $R'=C'$ is the same as $P'=0$ because $P'=R'-C'$; that finds a critical point of profit, after which the bend of $P$ still decides peak versus trough..
+Matching $R'=C'$ is the same as $P'=0$ because $P'=R'-C'$; that finds a critical point of profit, after which the bend of $P$ still decides peak versus trough.
 
 So the statement is True.`,
       `**E.** → False
@@ -6266,7 +6266,7 @@ $$C(5)=5^{2}-10\\cdot 5+40=25-50+40=15.$$
 
 The trough cost is $15$ (hundreds of euros), matching the claim
 
-Pause on the classification step: $f''<0$ at a critical point marks a local peak, $f''>0$ marks a local trough, and $f''=0$ makes the usual bend test inconclusive., so the statement is True.`,
+Pause on the classification step: $f''<0$ at a critical point marks a local peak, $f''>0$ marks a local trough, and $f''=0$ makes the usual bend test inconclusive. So the statement is True.`,
       `**D.** → False
 
 Flat slope finds a candidate; the bend (or a sign chart) then classifies peak versus trough. Keep those two steps separate.
@@ -6426,7 +6426,7 @@ $$P_B''(Q)=2\\qquad\\Rightarrow\\qquad P_B''(10)=2>0.$$
 
 An upward bend at a flat slope is the second-derivative test for a local minimum. Therefore ten covers is a local profit trough for B — the opposite label from A's —
 
-An interior candidate for a smooth extremum must make the first derivative vanish; that flat-slope equation only produces candidates, not finished labels., so the statement is True.`,
+An interior candidate for a smooth extremum must make the first derivative vanish; that flat-slope equation only produces candidates, not finished labels. So the statement is True.`,
       `**D.** → False
 
 The wording sounds close to a standard optimisation rule, but it skips a classification step or confuses a level with a slope. Track the definitions carefully.
@@ -6444,7 +6444,7 @@ $$P_B(10)=100-200+90=-10.$$
 
 Café A's profit is $50$ euros and Café B's is $-10$ euros, matching the claim exactly
 
-An interior candidate for a smooth extremum must make the first derivative vanish; that flat-slope equation only produces candidates, not finished labels., so the statement is True.`
+An interior candidate for a smooth extremum must make the first derivative vanish; that flat-slope equation only produces candidates, not finished labels. So the statement is True.`
     ],
     difficulty_level: "4/5",
     sort_order: 85,
@@ -6491,7 +6491,7 @@ $$P'(Q)=3Q^{2}-12Q+9=3(Q^{2}-4Q+3)=3(Q-1)(Q-3).$$
 
 The roots are $Q=1$ and $Q=3$, both strictly inside $(0,5)$. Those are exactly the interior flat-slope pack counts
 
-An interior candidate for a smooth extremum must make the first derivative vanish; that flat-slope equation only produces candidates, not finished labels., so the statement is True.`,
+An interior candidate for a smooth extremum must make the first derivative vanish; that flat-slope equation only produces candidates, not finished labels. So the statement is True.`,
       `**B.** → True
 
 Name the objective, find where its slope is flat, then classify with the bend (or a sign chart) before matching the claim.
@@ -6504,7 +6504,7 @@ $$P''(1)=6-12=-6<0,\\qquad P''(3)=18-12=6>0.$$
 
 A downward bend at $Q=1$ marks a local profit peak; an upward bend at $Q=3$ marks a local profit trough. The labels match the claim
 
-Pause on the classification step: $f''<0$ at a critical point marks a local peak, $f''>0$ marks a local trough, and $f''=0$ makes the usual bend test inconclusive., so the statement is True.`,
+Pause on the classification step: $f''<0$ at a critical point marks a local peak, $f''>0$ marks a local trough, and $f''=0$ makes the usual bend test inconclusive. So the statement is True.`,
       `**C.** → True
 
 Name the objective, find where its slope is flat, then classify with the bend (or a sign chart) before matching the claim.
@@ -6519,7 +6519,7 @@ $$P(0)=10,\\qquad P(5)=125-150+45+10=30.$$
 
 Those four values match the claim exactly
 
-Pause on the classification step: $f''<0$ at a critical point marks a local peak, $f''>0$ marks a local trough, and $f''=0$ makes the usual bend test inconclusive., so the statement is True.`,
+Pause on the classification step: $f''<0$ at a critical point marks a local peak, $f''>0$ marks a local trough, and $f''=0$ makes the usual bend test inconclusive. So the statement is True.`,
       `**D.** → False
 
 Global comparison on a restricted domain needs every candidate value — interior critical points and endpoints — not just the first flat-slope output you meet.
@@ -6531,7 +6531,7 @@ Global comparison on a restricted domain needs every candidate value — interio
 
 Among $P(0)=10$, $P(1)=14$, $P(3)=10$, and $P(5)=30$, the largest value is $30$ at five packs. That endpoint is therefore the global profit maximum on $[0,5]$. The local peak at one pack loses the global comparison
 
-Pause on the classification step: $f''<0$ at a critical point marks a local peak, $f''>0$ marks a local trough, and $f''=0$ makes the usual bend test inconclusive., so the statement is True.`
+Pause on the classification step: $f''<0$ at a critical point marks a local peak, $f''>0$ marks a local trough, and $f''=0$ makes the usual bend test inconclusive. So the statement is True.`
     ],
     difficulty_level: "3/5",
     sort_order: 86,
@@ -6580,7 +6580,7 @@ $$P'(Q)=5-\\dfrac{Q}{5}.$$
 
 That slope matches the claim exactly
 
-An interior candidate for a smooth extremum must make the first derivative vanish; that flat-slope equation only produces candidates, not finished labels., so the statement is True.`,
+An interior candidate for a smooth extremum must make the first derivative vanish; that flat-slope equation only produces candidates, not finished labels. So the statement is True.`,
       `**B.** → True
 
 Name the objective, find where its slope is flat, then classify with the bend (or a sign chart) before matching the claim.
@@ -6614,7 +6614,7 @@ $$P(8)=5\\cdot 8-\\dfrac{64}{10}+3=40-6.4+3=36.6.$$
 
 Maximal profit on the interval is $36.6$ euros, matching the claim
 
-Pause on the classification step: $f''<0$ at a critical point marks a local peak, $f''>0$ marks a local trough, and $f''=0$ makes the usual bend test inconclusive., so the statement is True.`
+Pause on the classification step: $f''<0$ at a critical point marks a local peak, $f''>0$ marks a local trough, and $f''=0$ makes the usual bend test inconclusive. So the statement is True.`
     ],
     difficulty_level: "3/5",
     sort_order: 87,
@@ -6659,7 +6659,7 @@ $$B'(x)=3x^{2}-12x+9=3(x^{2}-4x+3)=3(x-1)(x-3).$$
 
 The roots are $x=1$ and $x=3$, both in the domain $x\\ge 0$. Those are exactly the flat-slope advertising intensities
 
-An interior candidate for a smooth extremum must make the first derivative vanish; that flat-slope equation only produces candidates, not finished labels., so the statement is True.`,
+An interior candidate for a smooth extremum must make the first derivative vanish; that flat-slope equation only produces candidates, not finished labels. So the statement is True.`,
       `**B.** → True
 
 Name the objective, find where its slope is flat, then classify with the bend (or a sign chart) before matching the claim.
@@ -6675,7 +6675,7 @@ Name the objective, find where its slope is flat, then classify with the bend (o
 
 Around $x=3$ the same factored slope changes the other way. Just left of $3$ one has $B'<0$ (as in the interval $(1,3)$). Just right of $3$ both factors are positive, so $B'>0$. The change from negative to positive marks a local trough at intensity $3$ by the first-derivative test
 
-Pause on the classification step: $f''<0$ at a critical point marks a local peak, $f''>0$ marks a local trough, and $f''=0$ makes the usual bend test inconclusive., so the statement is True.`,
+Pause on the classification step: $f''<0$ at a critical point marks a local peak, $f''>0$ marks a local trough, and $f''=0$ makes the usual bend test inconclusive. So the statement is True.`,
       `**D.** → True
 
 Name the objective, find where its slope is flat, then classify with the bend (or a sign chart) before matching the claim.
@@ -6688,7 +6688,7 @@ $$B''(1)=6-12=-6<0,\\qquad B''(3)=18-12=6>0.$$
 
 So intensity $1$ is a local peak and intensity $3$ is a local trough, matching the first-derivative sign reading
 
-An interior candidate for a smooth extremum must make the first derivative vanish; that flat-slope equation only produces candidates, not finished labels., so the statement is True.`,
+An interior candidate for a smooth extremum must make the first derivative vanish; that flat-slope equation only produces candidates, not finished labels. So the statement is True.`,
       `**E.** → False
 
 Global comparison on a restricted domain needs every candidate value — interior critical points and endpoints — not just the first flat-slope output you meet.
@@ -6734,7 +6734,7 @@ $$P'(Q)=-3Q^{2}+18Q-24=-3(Q^{2}-6Q+8)=-3(Q-2)(Q-4).$$
 
 The roots are $Q=2$ and $Q=4$, both strictly inside $(0,6)$. Those are the interior flat-slope oven counts
 
-An interior candidate for a smooth extremum must make the first derivative vanish; that flat-slope equation only produces candidates, not finished labels., so the statement is True.`,
+An interior candidate for a smooth extremum must make the first derivative vanish; that flat-slope equation only produces candidates, not finished labels. So the statement is True.`,
       `**B.** → True
 
 Name the objective, find where its slope is flat, then classify with the bend (or a sign chart) before matching the claim.
@@ -6745,7 +6745,7 @@ $$P''(Q)=-6Q+18\\qquad\\Rightarrow\\qquad P''(2)=-12+18=6>0.$$
 
 An upward bend at a flat slope is the second-derivative test for a local minimum. Therefore two ovens is a local profit trough
 
-Pause on the classification step: $f''<0$ at a critical point marks a local peak, $f''>0$ marks a local trough, and $f''=0$ makes the usual bend test inconclusive., so the statement is True.`,
+Pause on the classification step: $f''<0$ at a critical point marks a local peak, $f''>0$ marks a local trough, and $f''=0$ makes the usual bend test inconclusive. So the statement is True.`,
       `**C.** → True
 
 Name the objective, find where its slope is flat, then classify with the bend (or a sign chart) before matching the claim.
@@ -6756,7 +6756,7 @@ $$P''(4)=-24+18=-6<0.$$
 
 A downward bend at a flat slope is the second-derivative test for a local maximum. Therefore four ovens is a local profit peak
 
-Pause on the classification step: $f''<0$ at a critical point marks a local peak, $f''>0$ marks a local trough, and $f''=0$ makes the usual bend test inconclusive., so the statement is True.`,
+Pause on the classification step: $f''<0$ at a critical point marks a local peak, $f''>0$ marks a local trough, and $f''=0$ makes the usual bend test inconclusive. So the statement is True.`,
       `**D.** → True
 
 Global comparison on a restricted domain needs every candidate value — interior critical points and endpoints — not just the first flat-slope output you meet.
@@ -6823,7 +6823,7 @@ $$P'(Q)=-6Q+36.$$
 
 Both the simplified profit quadratic and its slope match the claim
 
-An interior candidate for a smooth extremum must make the first derivative vanish; that flat-slope equation only produces candidates, not finished labels., so the statement is True.`,
+An interior candidate for a smooth extremum must make the first derivative vanish; that flat-slope equation only produces candidates, not finished labels. So the statement is True.`,
       `**B.** → True
 
 Name the objective, find where its slope is flat, then classify with the bend (or a sign chart) before matching the claim.
@@ -6838,7 +6838,7 @@ $$R'(6)=40-24=16,\\qquad C'(6)=12+4=16.$$
 
 Flat profit at six jobs coincides with $R'=C'=16$
 
-An interior candidate for a smooth extremum must make the first derivative vanish; that flat-slope equation only produces candidates, not finished labels., so the statement is True.`,
+An interior candidate for a smooth extremum must make the first derivative vanish; that flat-slope equation only produces candidates, not finished labels. So the statement is True.`,
       `**C.** → True
 
 Name the objective, find where its slope is flat, then classify with the bend (or a sign chart) before matching the claim.
@@ -6849,7 +6849,7 @@ $$P''(Q)=-6\\qquad\\Rightarrow\\qquad P''(6)=-6<0.$$
 
 A downward bend at a flat slope means a local profit peak by the second-derivative test
 
-Pause on the classification step: $f''<0$ at a critical point marks a local peak, $f''>0$ marks a local trough, and $f''=0$ makes the usual bend test inconclusive., so the statement is True.`,
+Pause on the classification step: $f''<0$ at a critical point marks a local peak, $f''>0$ marks a local trough, and $f''=0$ makes the usual bend test inconclusive. So the statement is True.`,
       `**D.** → True
 
 Name the objective, find where its slope is flat, then classify with the bend (or a sign chart) before matching the claim.
@@ -6860,7 +6860,7 @@ $$P(6)=-3\\cdot 36+36\\cdot 6-10=-108+216-10=98.$$
 
 Peak profit is $98$ euros, matching the claim
 
-Pause on the classification step: $f''<0$ at a critical point marks a local peak, $f''>0$ marks a local trough, and $f''=0$ makes the usual bend test inconclusive., so the statement is True.`,
+Pause on the classification step: $f''<0$ at a critical point marks a local peak, $f''>0$ marks a local trough, and $f''=0$ makes the usual bend test inconclusive. So the statement is True.`,
       `**E.** → False
 
 The wording sounds close to a standard optimisation rule, but it skips a classification step or confuses a level with a slope. Track the definitions carefully.
@@ -6921,7 +6921,7 @@ $$P_N''(Q)=-2\\qquad\\Rightarrow\\qquad P_N''(8)=-2<0.$$
 
 A downward bend at a flat slope is the second-derivative test for a local maximum. Therefore eight loaves is a local profit peak for North
 
-An interior candidate for a smooth extremum must make the first derivative vanish; that flat-slope equation only produces candidates, not finished labels., so the statement is True.`,
+An interior candidate for a smooth extremum must make the first derivative vanish; that flat-slope equation only produces candidates, not finished labels. So the statement is True.`,
       `**C.** → True
 
 Name the objective, find where its slope is flat, then classify with the bend (or a sign chart) before matching the claim.
@@ -6932,7 +6932,7 @@ $$P_S''(Q)=2\\qquad\\Rightarrow\\qquad P_S''(8)=2>0.$$
 
 An upward bend at a flat slope is the second-derivative test for a local minimum. Therefore eight loaves is a local profit trough for South — opposite to North's label —
 
-An interior candidate for a smooth extremum must make the first derivative vanish; that flat-slope equation only produces candidates, not finished labels., so the statement is True.`,
+An interior candidate for a smooth extremum must make the first derivative vanish; that flat-slope equation only produces candidates, not finished labels. So the statement is True.`,
       `**D.** → True
 
 Name the objective, find where its slope is flat, then classify with the bend (or a sign chart) before matching the claim.
@@ -6945,7 +6945,7 @@ $$P_S(8)=64-128+70=6.$$
 
 North's peak profit is $34$ euros, while South's profit at the same output is only $6$ euros. Both numbers match the claim
 
-An interior candidate for a smooth extremum must make the first derivative vanish; that flat-slope equation only produces candidates, not finished labels., so the statement is True.`,
+An interior candidate for a smooth extremum must make the first derivative vanish; that flat-slope equation only produces candidates, not finished labels. So the statement is True.`,
       `**E.** → False
 
 Flat slope finds a candidate; the bend (or a sign chart) then classifies peak versus trough. Keep those two steps separate.
@@ -6997,14 +6997,14 @@ $$L'(x)=-4x^{3},\\qquad L''(x)=-12x^{2}.$$
 
 At $x=0$ one has $L'(0)=0$ and $L''(0)=0$. Both the slope and the second derivative are flat at intensity zero, matching the claim
 
-An interior candidate for a smooth extremum must make the first derivative vanish; that flat-slope equation only produces candidates, not finished labels., so the statement is True.`,
+An interior candidate for a smooth extremum must make the first derivative vanish; that flat-slope equation only produces candidates, not finished labels. So the statement is True.`,
       `**B.** → True
 
 Name the objective, find where its slope is flat, then classify with the bend (or a sign chart) before matching the claim.
 
 The usual sufficient test for a strict local peak asks for $L''(x^{\\ast})<0$ at a critical point. Here $L''(0)=0$, so that strict inequality fails. The usual downward-bend test therefore does not apply at intensity zero — the check is inconclusive rather than affirmative —
 
-Pause on the classification step: $f''<0$ at a critical point marks a local peak, $f''>0$ marks a local trough, and $f''=0$ makes the usual bend test inconclusive., so the statement is True.`,
+Pause on the classification step: $f''<0$ at a critical point marks a local peak, $f''>0$ marks a local trough, and $f''=0$ makes the usual bend test inconclusive. So the statement is True.`,
       `**C.** → True
 
 Global comparison on a restricted domain needs every candidate value — interior critical points and endpoints — not just the first flat-slope output you meet.
@@ -7083,7 +7083,7 @@ $$P'(Q)=-4Q+28=0\\qquad\\Rightarrow\\qquad Q=7.$$
 
 Profit therefore has a flat slope at seven units, matching both parts of the claim
 
-An interior candidate for a smooth extremum must make the first derivative vanish; that flat-slope equation only produces candidates, not finished labels., so the statement is True.`,
+An interior candidate for a smooth extremum must make the first derivative vanish; that flat-slope equation only produces candidates, not finished labels. So the statement is True.`,
       `**C.** → True
 
 Name the objective, find where its slope is flat, then classify with the bend (or a sign chart) before matching the claim.
@@ -7094,7 +7094,7 @@ $$P''(Q)=-4\\qquad\\Rightarrow\\qquad P''(7)=-4<0.$$
 
 A downward bend at a flat slope is the second-derivative test for a local maximum. Therefore seven units is a local profit peak
 
-Pause on the classification step: $f''<0$ at a critical point marks a local peak, $f''>0$ marks a local trough, and $f''=0$ makes the usual bend test inconclusive., so the statement is True.`,
+Pause on the classification step: $f''<0$ at a critical point marks a local peak, $f''>0$ marks a local trough, and $f''=0$ makes the usual bend test inconclusive. So the statement is True.`,
       `**D.** → False
 
 The wording sounds close to a standard optimisation rule, but it skips a classification step or confuses a level with a slope. Track the definitions carefully.
@@ -7112,7 +7112,7 @@ $$C(4)=16-32+30=14.$$
 
 At the profit peak, profit equals $68$ euros; at the cost trough, cost equals $14$ euros. Both figures match the claim
 
-Pause on the classification step: $f''<0$ at a critical point marks a local peak, $f''>0$ marks a local trough, and $f''=0$ makes the usual bend test inconclusive., so the statement is True.`
+Pause on the classification step: $f''<0$ at a critical point marks a local peak, $f''>0$ marks a local trough, and $f''=0$ makes the usual bend test inconclusive. So the statement is True.`
     ],
     difficulty_level: "4/5",
     sort_order: 93,
@@ -7164,7 +7164,7 @@ $$U_A''(t)=-2\\qquad\\Rightarrow\\qquad U_A''(5)=-2<0.$$
 
 A downward bend at a flat slope is the second-derivative test for a local maximum. Therefore five hours maximises A's satisfaction locally
 
-An interior candidate for a smooth extremum must make the first derivative vanish; that flat-slope equation only produces candidates, not finished labels., so the statement is True.`,
+An interior candidate for a smooth extremum must make the first derivative vanish; that flat-slope equation only produces candidates, not finished labels. So the statement is True.`,
       `**C.** → True
 
 Name the objective, find where its slope is flat, then classify with the bend (or a sign chart) before matching the claim.
@@ -7175,7 +7175,7 @@ $$U_B''(t)=2\\qquad\\Rightarrow\\qquad U_B''(5)=2>0.$$
 
 An upward bend at a flat slope is the second-derivative test for a local minimum. Therefore five hours minimises B's satisfaction locally — the opposite label from A's —
 
-An interior candidate for a smooth extremum must make the first derivative vanish; that flat-slope equation only produces candidates, not finished labels., so the statement is True.`,
+An interior candidate for a smooth extremum must make the first derivative vanish; that flat-slope equation only produces candidates, not finished labels. So the statement is True.`,
       `**D.** → True
 
 Name the objective, find where its slope is flat, then classify with the bend (or a sign chart) before matching the claim.
@@ -7188,7 +7188,7 @@ $$U_B(5)=25-50+30=5.$$
 
 A's peak utility is $25$, while B's utility at the same hour is only $5$. Both numbers match the claim
 
-An interior candidate for a smooth extremum must make the first derivative vanish; that flat-slope equation only produces candidates, not finished labels., so the statement is True.`,
+An interior candidate for a smooth extremum must make the first derivative vanish; that flat-slope equation only produces candidates, not finished labels. So the statement is True.`,
       `**E.** → False
 
 The wording sounds close to a standard optimisation rule, but it skips a classification step or confuses a level with a slope. Track the definitions carefully.
@@ -7240,7 +7240,7 @@ $$f'(x)=4x^{3}-16x=4x(x^{2}-4)=4x(x-2)(x+2).$$
 
 The roots are $x=-2$, $x=0$, and $x=2$. Those are exactly the flat-slope staffing intensities
 
-An interior candidate for a smooth extremum must make the first derivative vanish; that flat-slope equation only produces candidates, not finished labels., so the statement is True.`,
+An interior candidate for a smooth extremum must make the first derivative vanish; that flat-slope equation only produces candidates, not finished labels. So the statement is True.`,
       `**B.** → True
 
 Name the objective, find where its slope is flat, then classify with the bend (or a sign chart) before matching the claim.
@@ -7253,7 +7253,7 @@ $$f''(\\pm 2)=12\\cdot 4-16=32>0,\\qquad f''(0)=-16<0.$$
 
 So the second derivative is positive at $\\pm 2$ and negative at $0$, matching the claim
 
-An interior candidate for a smooth extremum must make the first derivative vanish; that flat-slope equation only produces candidates, not finished labels., so the statement is True.`,
+An interior candidate for a smooth extremum must make the first derivative vanish; that flat-slope equation only produces candidates, not finished labels. So the statement is True.`,
       `**C.** → True
 
 Name the objective, find where its slope is flat, then classify with the bend (or a sign chart) before matching the claim.
@@ -7271,7 +7271,7 @@ $$f(2)=16-32+16=0,\\qquad f(-2)=0$$
 
 (same even function). The local peak value is $16$, while each local trough has value $0$, matching the claim
 
-Pause on the classification step: $f''<0$ at a critical point marks a local peak, $f''>0$ marks a local trough, and $f''=0$ makes the usual bend test inconclusive., so the statement is True.`,
+Pause on the classification step: $f''<0$ at a critical point marks a local peak, $f''>0$ marks a local trough, and $f''=0$ makes the usual bend test inconclusive. So the statement is True.`,
       `**E.** → False
 
 Global comparison on a restricted domain needs every candidate value — interior critical points and endpoints — not just the first flat-slope output you meet.
@@ -7317,7 +7317,7 @@ $$C'(h)=4h-24=0\\qquad\\Rightarrow\\qquad 4h=24\\qquad\\Rightarrow\\qquad h=6.$$
 
 For $h>0$ this is the unique root. The slope of cost is therefore flat at six open hours
 
-An interior candidate for a smooth extremum must make the first derivative vanish; that flat-slope equation only produces candidates, not finished labels., so the statement is True.`,
+An interior candidate for a smooth extremum must make the first derivative vanish; that flat-slope equation only produces candidates, not finished labels. So the statement is True.`,
       `**B.** → True
 
 Name the objective, find where its slope is flat, then classify with the bend (or a sign chart) before matching the claim.
@@ -7328,21 +7328,21 @@ $$C''(h)=4>0$$
 
 everywhere, including at $h=6$. A positive bend at a flat slope is the second-derivative test for a local minimum. Therefore six hours is a local cost trough
 
-An interior candidate for a smooth extremum must make the first derivative vanish; that flat-slope equation only produces candidates, not finished labels., so the statement is True.`,
+An interior candidate for a smooth extremum must make the first derivative vanish; that flat-slope equation only produces candidates, not finished labels. So the statement is True.`,
       `**C.** → True
 
 Name the objective, find where its slope is flat, then classify with the bend (or a sign chart) before matching the claim.
 
 For a cost-minimisation goal, a flat slope plus an upward bend is exactly the calculus certificate of a local cost trough. Here $C'(6)=0$ and $C''(6)=4>0$, so calling six hours optimal for cost control is justified by the bend test. The statement is True
 
-An interior candidate for a smooth extremum must make the first derivative vanish; that flat-slope equation only produces candidates, not finished labels., so the statement is True.`,
+An interior candidate for a smooth extremum must make the first derivative vanish; that flat-slope equation only produces candidates, not finished labels. So the statement is True.`,
       `**D.** → True
 
 Name the objective, find where its slope is flat, then classify with the bend (or a sign chart) before matching the claim.
 
 If the clinic's goal were instead to *maximise* cost, one would need a local peak: flat slope with a *downward* bend. At six hours the bend is upward ($C''>0$), so the same critical point is a trough, not a peak. It would be the wrong type of extremum for a maximisation goal
 
-An interior candidate for a smooth extremum must make the first derivative vanish; that flat-slope equation only produces candidates, not finished labels., so the statement is True.`,
+An interior candidate for a smooth extremum must make the first derivative vanish; that flat-slope equation only produces candidates, not finished labels. So the statement is True.`,
       `**E.** → False
 
 The wording sounds close to a standard optimisation rule, but it skips a classification step or confuses a level with a slope. Track the definitions carefully.
@@ -7399,7 +7399,7 @@ $$P_A''(Q)=-2\\qquad\\Rightarrow\\qquad P_A''(3)=-2<0.$$
 
 A downward bend at a flat slope is the second-derivative test for a local maximum. Therefore three screenings is a local profit peak for A
 
-An interior candidate for a smooth extremum must make the first derivative vanish; that flat-slope equation only produces candidates, not finished labels., so the statement is True.`,
+An interior candidate for a smooth extremum must make the first derivative vanish; that flat-slope equation only produces candidates, not finished labels. So the statement is True.`,
       `**C.** → True
 
 Name the objective, find where its slope is flat, then classify with the bend (or a sign chart) before matching the claim.
@@ -7459,7 +7459,7 @@ $$f'(x)=3x^{2}-6x=3x(x-2)=0.$$
 
 The roots really are $x=0$ and $x=2$. The student's list of flat-slope outputs is therefore correct as a list of critical points
 
-An interior candidate for a smooth extremum must make the first derivative vanish; that flat-slope equation only produces candidates, not finished labels., so the statement is True.`,
+An interior candidate for a smooth extremum must make the first derivative vanish; that flat-slope equation only produces candidates, not finished labels. So the statement is True.`,
       `**B.** → True
 
 Name the objective, find where its slope is flat, then classify with the bend (or a sign chart) before matching the claim.
@@ -7470,7 +7470,7 @@ $$f''(x)=6x-6\\qquad\\Rightarrow\\qquad f''(0)=-6<0.$$
 
 A downward bend at a flat slope is the second-derivative test for a local maximum. Therefore $x=0$ is a local peak
 
-An interior candidate for a smooth extremum must make the first derivative vanish; that flat-slope equation only produces candidates, not finished labels., so the statement is True.`,
+An interior candidate for a smooth extremum must make the first derivative vanish; that flat-slope equation only produces candidates, not finished labels. So the statement is True.`,
       `**C.** → True
 
 Name the objective, find where its slope is flat, then classify with the bend (or a sign chart) before matching the claim.
@@ -7481,14 +7481,14 @@ $$f''(2)=12-6=6>0.$$
 
 An upward bend at a flat slope is the second-derivative test for a local minimum. Therefore $x=2$ is a local trough, *not* a peak. The claim correctly refuses to call it a maximum
 
-An interior candidate for a smooth extremum must make the first derivative vanish; that flat-slope equation only produces candidates, not finished labels., so the statement is True.`,
+An interior candidate for a smooth extremum must make the first derivative vanish; that flat-slope equation only produces candidates, not finished labels. So the statement is True.`,
       `**D.** → True
 
 Global comparison on a restricted domain needs every candidate value — interior critical points and endpoints — not just the first flat-slope output you meet.
 
 On the whole real line, watch the end behaviour. As $x\\to\\infty$, the cubic's leading term $x^{3}$ drives $f(x)\\to\\infty$. Values eventually exceed any candidate height such as $f(0)=5$. Therefore there is no global maximum on $\\mathbb{R}$
 
-An interior candidate for a smooth extremum must make the first derivative vanish; that flat-slope equation only produces candidates, not finished labels., so the statement is True.`,
+An interior candidate for a smooth extremum must make the first derivative vanish; that flat-slope equation only produces candidates, not finished labels. So the statement is True.`,
       `**E.** → False
 
 The wording sounds close to a standard optimisation rule, but it skips a classification step or confuses a level with a slope. Track the definitions carefully.
@@ -7534,7 +7534,7 @@ $$P'(Q)=-6Q+30=0\\qquad\\Rightarrow\\qquad 6Q=30\\qquad\\Rightarrow\\qquad Q=5.$
 
 For $Q>0$ this is the unique root. Profit therefore has a flat slope at five bikes
 
-An interior candidate for a smooth extremum must make the first derivative vanish; that flat-slope equation only produces candidates, not finished labels., so the statement is True.`,
+An interior candidate for a smooth extremum must make the first derivative vanish; that flat-slope equation only produces candidates, not finished labels. So the statement is True.`,
       `**B.** → True
 
 Name the objective, find where its slope is flat, then classify with the bend (or a sign chart) before matching the claim.
@@ -7545,7 +7545,7 @@ $$P''(Q)=-6\\qquad\\Rightarrow\\qquad P''(5)=-6<0.$$
 
 A downward bend at a flat slope is the second-derivative test for a local maximum. Therefore five bikes is a local profit peak
 
-An interior candidate for a smooth extremum must make the first derivative vanish; that flat-slope equation only produces candidates, not finished labels., so the statement is True.`,
+An interior candidate for a smooth extremum must make the first derivative vanish; that flat-slope equation only produces candidates, not finished labels. So the statement is True.`,
       `**C.** → True
 
 Name the objective, find where its slope is flat, then classify with the bend (or a sign chart) before matching the claim.
@@ -7566,7 +7566,7 @@ $$P(5)=-3\\cdot 25+30\\cdot 5-40=-75+150-40=35.$$
 
 Profit at five bikes is $35$ euros, matching the claim
 
-An interior candidate for a smooth extremum must make the first derivative vanish; that flat-slope equation only produces candidates, not finished labels., so the statement is True.`
+An interior candidate for a smooth extremum must make the first derivative vanish; that flat-slope equation only produces candidates, not finished labels. So the statement is True.`
     ],
     difficulty_level: "3/5",
     sort_order: 99,
@@ -7613,7 +7613,7 @@ $$P_W''(Q)=-2<0.$$
 
 Flat slope at seven units with a downward bend means a local profit peak for West. Both parts of the claim hold
 
-An interior candidate for a smooth extremum must make the first derivative vanish; that flat-slope equation only produces candidates, not finished labels., so the statement is True.`,
+An interior candidate for a smooth extremum must make the first derivative vanish; that flat-slope equation only produces candidates, not finished labels. So the statement is True.`,
       `**B.** → True
 
 Flat slope finds a candidate; the bend (or a sign chart) then classifies peak versus trough. Keep those two steps separate.
@@ -7626,7 +7626,7 @@ $$P_E''(Q)=2>0.$$
 
 Flat slope at five units with an upward bend means a local profit *trough* for East, not a peak. The claim correctly labels it a trough
 
-An interior candidate for a smooth extremum must make the first derivative vanish; that flat-slope equation only produces candidates, not finished labels., so the statement is True.`,
+An interior candidate for a smooth extremum must make the first derivative vanish; that flat-slope equation only produces candidates, not finished labels. So the statement is True.`,
       `**C.** → False
 
 The wording sounds close to a standard optimisation rule, but it skips a classification step or confuses a level with a slope. Track the definitions carefully.
@@ -7644,7 +7644,7 @@ $$P_E(5)=25-50+40=15.$$
 
 West's peak profit is $29$ euros, while East's profit at five units is $15$ euros. Both figures match the claim
 
-An interior candidate for a smooth extremum must make the first derivative vanish; that flat-slope equation only produces candidates, not finished labels., so the statement is True.`,
+An interior candidate for a smooth extremum must make the first derivative vanish; that flat-slope equation only produces candidates, not finished labels. So the statement is True.`,
       `**E.** → False
 
 The wording sounds close to a standard optimisation rule, but it skips a classification step or confuses a level with a slope. Track the definitions carefully.
@@ -7686,7 +7686,7 @@ $$P(Q)=-Q^{2}+18Q-45\\qquad\\Rightarrow\\qquad P'(Q)=-2Q+18.$$
 
 That derivative is the slope of daily profit. It matches the claimed formula exactly
 
-An interior candidate for a smooth extremum must make the first derivative vanish; that flat-slope equation only produces candidates, not finished labels., so the statement is True.`,
+An interior candidate for a smooth extremum must make the first derivative vanish; that flat-slope equation only produces candidates, not finished labels. So the statement is True.`,
       `**B.** → True
 
 Name the objective, find where its slope is flat, then classify with the bend (or a sign chart) before matching the claim.
@@ -7697,7 +7697,7 @@ $$P'(Q)=-2Q+18=0\\qquad\\Rightarrow\\qquad 2Q=18\\qquad\\Rightarrow\\qquad Q=9.$
 
 On $Q\\ge 0$ this linear equation has exactly one root. Nine crates is the unique flat-slope daily output
 
-An interior candidate for a smooth extremum must make the first derivative vanish; that flat-slope equation only produces candidates, not finished labels., so the statement is True.`,
+An interior candidate for a smooth extremum must make the first derivative vanish; that flat-slope equation only produces candidates, not finished labels. So the statement is True.`,
       `**C.** → True
 
 Name the objective, find where its slope is flat, then classify with the bend (or a sign chart) before matching the claim.
@@ -7708,7 +7708,7 @@ $$P''(Q)=-2\\qquad\\Rightarrow\\qquad P''(9)=-2<0.$$
 
 A downward bend at a flat slope is the second-derivative test for a local maximum. Therefore nine crates is a local profit peak
 
-Pause on the classification step: $f''<0$ at a critical point marks a local peak, $f''>0$ marks a local trough, and $f''=0$ makes the usual bend test inconclusive., so the statement is True.`,
+Pause on the classification step: $f''<0$ at a critical point marks a local peak, $f''>0$ marks a local trough, and $f''=0$ makes the usual bend test inconclusive. So the statement is True.`,
       `**D.** → True
 
 Name the objective, find where its slope is flat, then classify with the bend (or a sign chart) before matching the claim.
@@ -7719,7 +7719,7 @@ $$P(9)=-9^{2}+18\\cdot 9-45=-81+162-45=36.$$
 
 Peak daily profit is $36$ euros, matching the claim
 
-Pause on the classification step: $f''<0$ at a critical point marks a local peak, $f''>0$ marks a local trough, and $f''=0$ makes the usual bend test inconclusive., so the statement is True.`,
+Pause on the classification step: $f''<0$ at a critical point marks a local peak, $f''>0$ marks a local trough, and $f''=0$ makes the usual bend test inconclusive. So the statement is True.`,
       `**E.** → False
 
 The wording sounds close to a standard optimisation rule, but it skips a classification step or confuses a level with a slope. Track the definitions carefully.
@@ -7773,7 +7773,7 @@ $$P(Q)=(50Q-Q^{2})-(Q^{2}+10Q+20)=-2Q^{2}+40Q-20.$$
 
 That simplified quadratic matches the claim exactly
 
-Pause on the classification step: $f''<0$ at a critical point marks a local peak, $f''>0$ marks a local trough, and $f''=0$ makes the usual bend test inconclusive., so the statement is True.`,
+Pause on the classification step: $f''<0$ at a critical point marks a local peak, $f''>0$ marks a local trough, and $f''=0$ makes the usual bend test inconclusive. So the statement is True.`,
       `**B.** → True
 
 Name the objective, find where its slope is flat, then classify with the bend (or a sign chart) before matching the claim.
@@ -7784,7 +7784,7 @@ $$P'(Q)=-4Q+40=0\\qquad\\Rightarrow\\qquad 4Q=40\\qquad\\Rightarrow\\qquad Q=10.
 
 For $Q>0$ this is the unique root. Profit has a flat slope at ten boxes a day
 
-An interior candidate for a smooth extremum must make the first derivative vanish; that flat-slope equation only produces candidates, not finished labels., so the statement is True.`,
+An interior candidate for a smooth extremum must make the first derivative vanish; that flat-slope equation only produces candidates, not finished labels. So the statement is True.`,
       `**C.** → True
 
 Name the objective, find where its slope is flat, then classify with the bend (or a sign chart) before matching the claim.
@@ -7797,7 +7797,7 @@ $$R'(10)=50-20=30,\\qquad C'(10)=20+10=30.$$
 
 Both equal $30$ euros at ten boxes
 
-Pause on the classification step: $f''<0$ at a critical point marks a local peak, $f''>0$ marks a local trough, and $f''=0$ makes the usual bend test inconclusive., so the statement is True.`,
+Pause on the classification step: $f''<0$ at a critical point marks a local peak, $f''>0$ marks a local trough, and $f''=0$ makes the usual bend test inconclusive. So the statement is True.`,
       `**D.** → True
 
 Name the objective, find where its slope is flat, then classify with the bend (or a sign chart) before matching the claim.
@@ -7810,7 +7810,7 @@ $$P(10)=-2\\cdot 100+40\\cdot 10-20=-200+400-20=180.$$
 
 Ten boxes is a local profit peak with peak profit $180$ euros
 
-Pause on the classification step: $f''<0$ at a critical point marks a local peak, $f''>0$ marks a local trough, and $f''=0$ makes the usual bend test inconclusive., so the statement is True.`,
+Pause on the classification step: $f''<0$ at a critical point marks a local peak, $f''>0$ marks a local trough, and $f''=0$ makes the usual bend test inconclusive. So the statement is True.`,
       `**E.** → False
 
 The wording sounds close to a standard optimisation rule, but it skips a classification step or confuses a level with a slope. Track the definitions carefully.
@@ -7866,7 +7866,7 @@ $$P_A''(Q)=-2<0.$$
 
 Flat slope at twelve meals with a downward bend means a local profit maximum for A. The claim holds
 
-An interior candidate for a smooth extremum must make the first derivative vanish; that flat-slope equation only produces candidates, not finished labels., so the statement is True.`,
+An interior candidate for a smooth extremum must make the first derivative vanish; that flat-slope equation only produces candidates, not finished labels. So the statement is True.`,
       `**B.** → True
 
 Name the objective, find where its slope is flat, then classify with the bend (or a sign chart) before matching the claim.
@@ -7879,7 +7879,7 @@ $$P_B''(Q)=-4<0.$$
 
 Flat slope at eight meals with a downward bend means a local profit maximum for B. The claim holds
 
-An interior candidate for a smooth extremum must make the first derivative vanish; that flat-slope equation only produces candidates, not finished labels., so the statement is True.`,
+An interior candidate for a smooth extremum must make the first derivative vanish; that flat-slope equation only produces candidates, not finished labels. So the statement is True.`,
       `**C.** → True
 
 Name the objective, find where its slope is flat, then classify with the bend (or a sign chart) before matching the claim.
@@ -7892,7 +7892,7 @@ $$P_B(8)=-2\\cdot 64+32\\cdot 8-60=-128+256-60=68.$$
 
 Peak profits are $64$ euros for A and $68$ euros for B, matching the claim
 
-An interior candidate for a smooth extremum must make the first derivative vanish; that flat-slope equation only produces candidates, not finished labels., so the statement is True.`,
+An interior candidate for a smooth extremum must make the first derivative vanish; that flat-slope equation only produces candidates, not finished labels. So the statement is True.`,
       `**D.** → False
 
 The wording sounds close to a standard optimisation rule, but it skips a classification step or confuses a level with a slope. Track the definitions carefully.
@@ -7904,7 +7904,7 @@ Name the objective, find where its slope is flat, then classify with the bend (o
 
 Comparing the peak levels already computed, $P_B(8)=68>P_A(12)=64$. Truck B's peak profit is larger even though B's optimal meal count $8$ is smaller than A's $12$. Peak height and peak location are independent comparisons
 
-An interior candidate for a smooth extremum must make the first derivative vanish; that flat-slope equation only produces candidates, not finished labels., so the statement is True.`
+An interior candidate for a smooth extremum must make the first derivative vanish; that flat-slope equation only produces candidates, not finished labels. So the statement is True.`
     ],
     difficulty_level: "4/5",
     sort_order: 103,
@@ -7941,7 +7941,7 @@ $$C'(Q)=3Q^{2}-18Q+24=3(Q^{2}-6Q+8)=3(Q-2)(Q-4).$$
 
 The roots are $Q=2$ and $Q=4$, both positive. Those are the flat-slope batch counts
 
-An interior candidate for a smooth extremum must make the first derivative vanish; that flat-slope equation only produces candidates, not finished labels., so the statement is True.`,
+An interior candidate for a smooth extremum must make the first derivative vanish; that flat-slope equation only produces candidates, not finished labels. So the statement is True.`,
       `**B.** → True
 
 Name the objective, find where its slope is flat, then classify with the bend (or a sign chart) before matching the claim.
@@ -7954,14 +7954,14 @@ $$C''(2)=12-18=-6<0,\\qquad C''(4)=24-18=6>0.$$
 
 So at two batches the cost curve bends downward, while at four batches it bends upward, matching the claim
 
-An interior candidate for a smooth extremum must make the first derivative vanish; that flat-slope equation only produces candidates, not finished labels., so the statement is True.`,
+An interior candidate for a smooth extremum must make the first derivative vanish; that flat-slope equation only produces candidates, not finished labels. So the statement is True.`,
       `**C.** → True
 
 Name the objective, find where its slope is flat, then classify with the bend (or a sign chart) before matching the claim.
 
 Combine flat slopes with bend signs. Downward bend at $Q=2$ means a local cost *peak*; upward bend at $Q=4$ means a local cost *trough*. Therefore two batches is a local cost peak and four batches is a local cost trough
 
-An interior candidate for a smooth extremum must make the first derivative vanish; that flat-slope equation only produces candidates, not finished labels., so the statement is True.`,
+An interior candidate for a smooth extremum must make the first derivative vanish; that flat-slope equation only produces candidates, not finished labels. So the statement is True.`,
       `**D.** → True
 
 Name the objective, find where its slope is flat, then classify with the bend (or a sign chart) before matching the claim.
@@ -7972,7 +7972,7 @@ $$C(4)=64-144+96+5=21.$$
 
 The local trough cost value is $21$ (hundreds of euros), matching the claim
 
-An interior candidate for a smooth extremum must make the first derivative vanish; that flat-slope equation only produces candidates, not finished labels., so the statement is True.`,
+An interior candidate for a smooth extremum must make the first derivative vanish; that flat-slope equation only produces candidates, not finished labels. So the statement is True.`,
       `**E.** → False
 
 The wording sounds close to a standard optimisation rule, but it skips a classification step or confuses a level with a slope. Track the definitions carefully.
@@ -8022,7 +8022,7 @@ $$C'(Q)=2Q-10=0\\qquad\\Rightarrow\\qquad Q=5.$$
 
 The unique root $Q=5$ lies strictly inside $(0,8)$. There is no other interior critical schedule
 
-An interior candidate for a smooth extremum must make the first derivative vanish; that flat-slope equation only produces candidates, not finished labels., so the statement is True.`,
+An interior candidate for a smooth extremum must make the first derivative vanish; that flat-slope equation only produces candidates, not finished labels. So the statement is True.`,
       `**B.** → True
 
 Name the objective, find where its slope is flat, then classify with the bend (or a sign chart) before matching the claim.
@@ -8033,7 +8033,7 @@ $$C''(Q)=2>0\\qquad\\Rightarrow\\qquad C''(5)=2>0.$$
 
 An upward bend at a flat slope is the second-derivative test for a local minimum. Therefore five shifts is a local cost trough
 
-Pause on the classification step: $f''<0$ at a critical point marks a local peak, $f''>0$ marks a local trough, and $f''=0$ makes the usual bend test inconclusive., so the statement is True.`,
+Pause on the classification step: $f''<0$ at a critical point marks a local peak, $f''>0$ marks a local trough, and $f''=0$ makes the usual bend test inconclusive. So the statement is True.`,
       `**C.** → True
 
 Global comparison on a restricted domain needs every candidate value — interior critical points and endpoints — not just the first flat-slope output you meet.
@@ -8048,7 +8048,7 @@ $$C(8)=64-80+40=24.$$
 
 Endpoint costs are $40$ at zero shifts and $24$ at eight shifts, while cost at five shifts is $15$, matching the claim
 
-Pause on the classification step: $f''<0$ at a critical point marks a local peak, $f''>0$ marks a local trough, and $f''=0$ makes the usual bend test inconclusive., so the statement is True.`,
+Pause on the classification step: $f''<0$ at a critical point marks a local peak, $f''>0$ marks a local trough, and $f''=0$ makes the usual bend test inconclusive. So the statement is True.`,
       `**D.** → False
 
 Global comparison on a restricted domain needs every candidate value — interior critical points and endpoints — not just the first flat-slope output you meet.
@@ -8060,7 +8060,7 @@ Global comparison on a restricted domain needs every candidate value — interio
 
 Among $C(0)=40$, $C(5)=15$, and $C(8)=24$, the minimum is $15$ at the interior trough. On $[0,8]$ the global cost minimum is therefore at five shifts. The local trough wins the global comparison against both endpoints
 
-Pause on the classification step: $f''<0$ at a critical point marks a local peak, $f''>0$ marks a local trough, and $f''=0$ makes the usual bend test inconclusive., so the statement is True.`
+Pause on the classification step: $f''<0$ at a critical point marks a local peak, $f''>0$ marks a local trough, and $f''=0$ makes the usual bend test inconclusive. So the statement is True.`
     ],
     difficulty_level: "3/5",
     sort_order: 105,
@@ -8101,7 +8101,7 @@ $$A(x)=x(20-x)=20x-x^{2},\\qquad 0<x<20.$$
 
 That reduction to a single-variable calculus problem is exactly what the claim asserts
 
-Under a linear or product constraint, eliminate one variable, write a single-variable objective, then run ordinary critical-point calculus on the reduced function., so the statement is True.`,
+Under a linear or product constraint, eliminate one variable, write a single-variable objective, then run ordinary critical-point calculus on the reduced function. So the statement is True.`,
       `**B.** → True
 
 Name the objective, find where its slope is flat, then classify with the bend (or a sign chart) before matching the claim.
@@ -8112,7 +8112,7 @@ $$A'(x)=20-2x=0\\qquad\\Rightarrow\\qquad x=10,$$
 
 hence $y=20-10=10$. The area-maximising bed is the $10$ by $10$ metre square. The critical-point calculation matches the claim
 
-Pause on the classification step: $f''<0$ at a critical point marks a local peak, $f''>0$ marks a local trough, and $f''=0$ makes the usual bend test inconclusive., so the statement is True.`,
+Pause on the classification step: $f''<0$ at a critical point marks a local peak, $f''>0$ marks a local trough, and $f''=0$ makes the usual bend test inconclusive. So the statement is True.`,
       `**C.** → True
 
 Name the objective, find where its slope is flat, then classify with the bend (or a sign chart) before matching the claim.
@@ -8123,7 +8123,7 @@ $$A(10)=10\\cdot 10=100.$$
 
 Maximal planting area is $100$ square metres. (As a check, $A''(10)=-2<0$ confirms a maximum.) The level matches the claim
 
-Pause on the classification step: $f''<0$ at a critical point marks a local peak, $f''>0$ marks a local trough, and $f''=0$ makes the usual bend test inconclusive., so the statement is True.`,
+Pause on the classification step: $f''<0$ at a critical point marks a local peak, $f''>0$ marks a local trough, and $f''=0$ makes the usual bend test inconclusive. So the statement is True.`,
       `**D.** → True
 
 Name the objective, find where its slope is flat, then classify with the bend (or a sign chart) before matching the claim.
@@ -8134,7 +8134,7 @@ $$A''(x)=-2\\qquad\\Rightarrow\\qquad A''(10)=-2<0.$$
 
 A downward bend at a flat slope is the second-derivative test for a local maximum. The square therefore maximises area locally (and, on $(0,20)$, globally)
 
-Pause on the classification step: $f''<0$ at a critical point marks a local peak, $f''>0$ marks a local trough, and $f''=0$ makes the usual bend test inconclusive., so the statement is True.`,
+Pause on the classification step: $f''<0$ at a critical point marks a local peak, $f''>0$ marks a local trough, and $f''=0$ makes the usual bend test inconclusive. So the statement is True.`,
       `**E.** → False
 
 The wording sounds close to a standard optimisation rule, but it skips a classification step or confuses a level with a slope. Track the definitions carefully.
@@ -8180,7 +8180,7 @@ $$A(x)=(x+2)\\left(\\dfrac{36}{x}+2\\right).$$
 
 That is exactly the claimed one-variable formula for $x>0$
 
-Pause on the classification step: $f''<0$ at a critical point marks a local peak, $f''>0$ marks a local trough, and $f''=0$ makes the usual bend test inconclusive., so the statement is True.`,
+Pause on the classification step: $f''<0$ at a critical point marks a local peak, $f''>0$ marks a local trough, and $f''=0$ makes the usual bend test inconclusive. So the statement is True.`,
       `**B.** → True
 
 Name the objective, find where its slope is flat, then classify with the bend (or a sign chart) before matching the claim.
@@ -8191,7 +8191,7 @@ $$A(x)=(x+2)\\left(\\dfrac{36}{x}+2\\right)=x\\cdot\\dfrac{36}{x}+2x+2\\cdot\\df
 
 Collecting constants, $A(x)=40+2x+\\dfrac{72}{x}$, matching the claim
 
-Pause on the classification step: $f''<0$ at a critical point marks a local peak, $f''>0$ marks a local trough, and $f''=0$ makes the usual bend test inconclusive., so the statement is True.`,
+Pause on the classification step: $f''<0$ at a critical point marks a local peak, $f''>0$ marks a local trough, and $f''=0$ makes the usual bend test inconclusive. So the statement is True.`,
       `**C.** → True
 
 Name the objective, find where its slope is flat, then classify with the bend (or a sign chart) before matching the claim.
@@ -8202,7 +8202,7 @@ $$A'(x)=2-\\dfrac{72}{x^{2}}=0\\qquad\\Rightarrow\\qquad 2=\\dfrac{72}{x^{2}}\\q
 
 (the positive root). Paper area has a flat slope at printed width $x=6$
 
-An interior candidate for a smooth extremum must make the first derivative vanish; that flat-slope equation only produces candidates, not finished labels., so the statement is True.`,
+An interior candidate for a smooth extremum must make the first derivative vanish; that flat-slope equation only produces candidates, not finished labels. So the statement is True.`,
       `**D.** → True
 
 Name the objective, find where its slope is flat, then classify with the bend (or a sign chart) before matching the claim.
@@ -8213,7 +8213,7 @@ $$A(6)=40+12+\\dfrac{72}{6}=40+12+12=64.$$
 
 The bend $A''(6)=144/216>0$ confirms a local minimum. All three parts of the claim hold
 
-Pause on the classification step: $f''<0$ at a critical point marks a local peak, $f''>0$ marks a local trough, and $f''=0$ makes the usual bend test inconclusive., so the statement is True.`,
+Pause on the classification step: $f''<0$ at a critical point marks a local peak, $f''>0$ marks a local trough, and $f''=0$ makes the usual bend test inconclusive. So the statement is True.`,
       `**E.** → False
 
 The wording sounds close to a standard optimisation rule, but it skips a classification step or confuses a level with a slope. Track the definitions carefully.
@@ -8282,7 +8282,7 @@ Name the objective, find where its slope is flat, then classify with the bend (o
 
 Because $A''>0$ at the critical cut, the second-derivative test labels it a local *minimum* of total enclosed area — a trough of $A$, not a peak. The claim states exactly that classification
 
-Pause on the classification step: $f''<0$ at a critical point marks a local peak, $f''>0$ marks a local trough, and $f''=0$ makes the usual bend test inconclusive., so the statement is True.`,
+Pause on the classification step: $f''<0$ at a critical point marks a local peak, $f''>0$ marks a local trough, and $f''=0$ makes the usual bend test inconclusive. So the statement is True.`,
       `**E.** → False
 
 Reduce the constrained problem to one free variable, then differentiate the reduced objective exactly as in unconstrained single-variable calculus.
@@ -8333,7 +8333,7 @@ $$u'(x)=20-4x=0\\qquad\\Rightarrow\\qquad 4x=20\\qquad\\Rightarrow\\qquad x=5.$$
 
 The unique critical point in $(0,10)$ is $x=5$. The reduced utility therefore has a flat slope at $x=5$
 
-An interior candidate for a smooth extremum must make the first derivative vanish; that flat-slope equation only produces candidates, not finished labels., so the statement is True.`,
+An interior candidate for a smooth extremum must make the first derivative vanish; that flat-slope equation only produces candidates, not finished labels. So the statement is True.`,
       `**C.** → True
 
 Name the objective, find where its slope is flat, then classify with the bend (or a sign chart) before matching the claim.
@@ -8344,7 +8344,7 @@ $$U=xy=5\\cdot 10=50.$$
 
 (Alternatively $u(5)=20\\cdot 5-2\\cdot 25=100-50=50$.) Bundle $(5,10)$ with utility level $50$ matches the claim
 
-Pause on the classification step: $f''<0$ at a critical point marks a local peak, $f''>0$ marks a local trough, and $f''=0$ makes the usual bend test inconclusive., so the statement is True.`,
+Pause on the classification step: $f''<0$ at a critical point marks a local peak, $f''>0$ marks a local trough, and $f''=0$ makes the usual bend test inconclusive. So the statement is True.`,
       `**D.** → True
 
 Name the objective, find where its slope is flat, then classify with the bend (or a sign chart) before matching the claim.
@@ -8355,7 +8355,7 @@ $$u''(x)=-4\\qquad\\Rightarrow\\qquad u''(5)=-4<0.$$
 
 A downward bend at a flat slope is the second-derivative test for a local maximum. That bundle therefore maximises utility locally on the budget line
 
-Pause on the classification step: $f''<0$ at a critical point marks a local peak, $f''>0$ marks a local trough, and $f''=0$ makes the usual bend test inconclusive., so the statement is True.`,
+Pause on the classification step: $f''<0$ at a critical point marks a local peak, $f''>0$ marks a local trough, and $f''=0$ makes the usual bend test inconclusive. So the statement is True.`,
       `**E.** → False
 
 Reduce the constrained problem to one free variable, then differentiate the reduced objective exactly as in unconstrained single-variable calculus.
@@ -8405,7 +8405,7 @@ $$q'(x)=10-2x.$$
 
 The reduced output has slope $10-2x$, matching the claim
 
-An interior candidate for a smooth extremum must make the first derivative vanish; that flat-slope equation only produces candidates, not finished labels., so the statement is True.`,
+An interior candidate for a smooth extremum must make the first derivative vanish; that flat-slope equation only produces candidates, not finished labels. So the statement is True.`,
       `**B.** → True
 
 Name the objective, find where its slope is flat, then classify with the bend (or a sign chart) before matching the claim.
@@ -8416,7 +8416,7 @@ $$q'(x)=10-2x=0\\qquad\\Rightarrow\\qquad x=5,$$
 
 hence $y=5$ and $Q=5\\cdot 5=25$. That is the unique positive flat-slope candidate, with output $25$
 
-An interior candidate for a smooth extremum must make the first derivative vanish; that flat-slope equation only produces candidates, not finished labels., so the statement is True.`,
+An interior candidate for a smooth extremum must make the first derivative vanish; that flat-slope equation only produces candidates, not finished labels. So the statement is True.`,
       `**C.** → True
 
 Name the objective, find where its slope is flat, then classify with the bend (or a sign chart) before matching the claim.
@@ -8427,7 +8427,7 @@ $$q''(x)=-2\\qquad\\Rightarrow\\qquad q''(5)=-2<0.$$
 
 A downward bend at a flat slope confirms a local maximum of output. The equal split maximises $Q$ locally on the constraint
 
-Pause on the classification step: $f''<0$ at a critical point marks a local peak, $f''>0$ marks a local trough, and $f''=0$ makes the usual bend test inconclusive., so the statement is True.`,
+Pause on the classification step: $f''<0$ at a critical point marks a local peak, $f''>0$ marks a local trough, and $f''=0$ makes the usual bend test inconclusive. So the statement is True.`,
       `**D.** → True
 
 Name the objective, find where its slope is flat, then classify with the bend (or a sign chart) before matching the claim.
@@ -8438,14 +8438,14 @@ $$q(x)=10x-x^{2}=25-(x-5)^{2}<25.$$
 
 Equivalently, $xy=((x+y)^{2}-(x-y)^{2})/4=25-(x-y)^{2}/4<25$ unless $x=y$. Every other feasible pair yields strictly smaller output than $25$
 
-Pause on the classification step: $f''<0$ at a critical point marks a local peak, $f''>0$ marks a local trough, and $f''=0$ makes the usual bend test inconclusive., so the statement is True.`,
+Pause on the classification step: $f''<0$ at a critical point marks a local peak, $f''>0$ marks a local trough, and $f''=0$ makes the usual bend test inconclusive. So the statement is True.`,
       `**E.** → False
 
 Reduce the constrained problem to one free variable, then differentiate the reduced objective exactly as in unconstrained single-variable calculus.
 
 The constraint $x+y=10$ only forces the *sum* of inputs; output $Q=xy$ still varies with the split. A $1+9$ split gives $Q=9$, while $5+5$ gives $25$. The constraint does not force output $25$ for every feasible pair
 
-Pause on the classification step: $f''<0$ at a critical point marks a local peak, $f''>0$ marks a local trough, and $f''=0$ makes the usual bend test inconclusive.. Comparing that with the claim, the statement is False.`
+Pause on the classification step: $f''<0$ at a critical point marks a local peak, $f''>0$ marks a local trough, and $f''=0$ makes the usual bend test inconclusive. Comparing that with the claim, the statement is False.`
     ],
     difficulty_level: "2/5",
     sort_order: 110,
@@ -8482,7 +8482,7 @@ $$R(p)=p\\cdot D(p)=p(100-2p)=100p-2p^{2}.$$
 
 That quadratic in $p$ matches the claim exactly
 
-For ordinary downward-sloping demand, revenue peaks where point elasticity equals $-1$; inelastic demand ($|\\varepsilon|<1$) means a small price rise still raises revenue, not that the current price is already optimal., so the statement is True.`,
+For ordinary downward-sloping demand, revenue peaks where point elasticity equals $-1$; inelastic demand ($|\\varepsilon|<1$) means a small price rise still raises revenue, not that the current price is already optimal. So the statement is True.`,
       `**B.** → True
 
 Relate the revenue slope to demand sensitivity: unit elasticity sits at the revenue peak, while inelastic demand only says a small price rise still helps revenue.
@@ -8510,7 +8510,7 @@ $$\\varepsilon(25)=\\dfrac{-50}{100-50}=\\dfrac{-50}{50}=-1.$$
 
 Demand is unit elastic at the revenue-maximising price
 
-For ordinary downward-sloping demand, revenue peaks where point elasticity equals $-1$; inelastic demand ($|\\varepsilon|<1$) means a small price rise still raises revenue, not that the current price is already optimal., so the statement is True.`,
+For ordinary downward-sloping demand, revenue peaks where point elasticity equals $-1$; inelastic demand ($|\\varepsilon|<1$) means a small price rise still raises revenue, not that the current price is already optimal. So the statement is True.`,
       `**D.** → True
 
 Relate the revenue slope to demand sensitivity: unit elasticity sits at the revenue peak, while inelastic demand only says a small price rise still helps revenue.
@@ -8573,7 +8573,7 @@ $$R'(p)=120-6p=0\\qquad\\Rightarrow\\qquad p=20.$$
 
 Revenue expands to the claimed quadratic and has a flat slope at $20$ euros
 
-An interior candidate for a smooth extremum must make the first derivative vanish; that flat-slope equation only produces candidates, not finished labels., so the statement is True.`,
+An interior candidate for a smooth extremum must make the first derivative vanish; that flat-slope equation only produces candidates, not finished labels. So the statement is True.`,
       `**B.** → True
 
 Relate the revenue slope to demand sensitivity: unit elasticity sits at the revenue peak, while inelastic demand only says a small price rise still helps revenue.
@@ -8588,7 +8588,7 @@ $$\\varepsilon(20)=\\dfrac{-60}{120-60}=\\dfrac{-60}{60}=-1.$$
 
 Demand is unit elastic at $20$ euros
 
-Pause on the classification step: $f''<0$ at a critical point marks a local peak, $f''>0$ marks a local trough, and $f''=0$ makes the usual bend test inconclusive., so the statement is True.`,
+Pause on the classification step: $f''<0$ at a critical point marks a local peak, $f''>0$ marks a local trough, and $f''=0$ makes the usual bend test inconclusive. So the statement is True.`,
       `**C.** → True
 
 Name the objective, find where its slope is flat, then classify with the bend (or a sign chart) before matching the claim.
@@ -8599,7 +8599,7 @@ $$R''(p)=-6\\qquad\\Rightarrow\\qquad R''(20)=-6<0.$$
 
 A downward bend at a flat slope is the second-derivative test for a local maximum. That fare is a local revenue peak
 
-Pause on the classification step: $f''<0$ at a critical point marks a local peak, $f''>0$ marks a local trough, and $f''=0$ makes the usual bend test inconclusive., so the statement is True.`,
+Pause on the classification step: $f''<0$ at a critical point marks a local peak, $f''>0$ marks a local trough, and $f''=0$ makes the usual bend test inconclusive. So the statement is True.`,
       `**D.** → True
 
 Name the objective, find where its slope is flat, then classify with the bend (or a sign chart) before matching the claim.
@@ -8610,7 +8610,7 @@ $$D(20)=120-60=60,\\qquad R(20)=20\\cdot 60=1200.$$
 
 The theatre sells $60$ tickets and earns $1200$ euros, matching the claim
 
-Pause on the classification step: $f''<0$ at a critical point marks a local peak, $f''>0$ marks a local trough, and $f''=0$ makes the usual bend test inconclusive., so the statement is True.`,
+Pause on the classification step: $f''<0$ at a critical point marks a local peak, $f''>0$ marks a local trough, and $f''=0$ makes the usual bend test inconclusive. So the statement is True.`,
       `**E.** → False
 
 Relate the revenue slope to demand sensitivity: unit elasticity sits at the revenue peak, while inelastic demand only says a small price rise still helps revenue.
@@ -8687,7 +8687,7 @@ Relate the revenue slope to demand sensitivity: unit elasticity sits at the reve
 
 The elasticity shortcut produced $MR=-10$, and differentiating $R(Q)$ produced $R'(60)=-10$. The two calculations agree exactly. The elasticity formula is not a different answer — it is an equivalent route to the same marginal revenue
 
-Matching $R'=C'$ is the same as $P'=0$ because $P'=R'-C'$; that finds a critical point of profit, after which the bend of $P$ still decides peak versus trough..
+Matching $R'=C'$ is the same as $P'=0$ because $P'=R'-C'$; that finds a critical point of profit, after which the bend of $P$ still decides peak versus trough.
 
 So the statement is True.`,
       `**E.** → True
@@ -8735,7 +8735,7 @@ $$\\varepsilon_A=\\dfrac{D_A'(p)\\,p}{D_A(p)}=\\dfrac{-1\\cdot 20}{60}=-\\dfrac{
 
 Absolute elasticity $1/3<1$, so demand is inelastic. Quantity and elasticity match the claim
 
-For ordinary downward-sloping demand, revenue peaks where point elasticity equals $-1$; inelastic demand ($|\\varepsilon|<1$) means a small price rise still raises revenue, not that the current price is already optimal., so the statement is True.`,
+For ordinary downward-sloping demand, revenue peaks where point elasticity equals $-1$; inelastic demand ($|\\varepsilon|<1$) means a small price rise still raises revenue, not that the current price is already optimal. So the statement is True.`,
       `**B.** → True
 
 Relate the revenue slope to demand sensitivity: unit elasticity sits at the revenue peak, while inelastic demand only says a small price rise still helps revenue.
@@ -8746,7 +8746,7 @@ $$\\varepsilon_B=\\dfrac{-2\\cdot 20}{80}=-\\dfrac{40}{80}=-\\dfrac{1}{2}.$$
 
 Absolute elasticity $1/2<1$, so demand is inelastic. Quantity and elasticity match the claim
 
-For ordinary downward-sloping demand, revenue peaks where point elasticity equals $-1$; inelastic demand ($|\\varepsilon|<1$) means a small price rise still raises revenue, not that the current price is already optimal., so the statement is True.`,
+For ordinary downward-sloping demand, revenue peaks where point elasticity equals $-1$; inelastic demand ($|\\varepsilon|<1$) means a small price rise still raises revenue, not that the current price is already optimal. So the statement is True.`,
       `**C.** → True
 
 Relate the revenue slope to demand sensitivity: unit elasticity sits at the revenue peak, while inelastic demand only says a small price rise still helps revenue.
@@ -8757,7 +8757,7 @@ $$|\\varepsilon_B|=\\dfrac{1}{2}>\\dfrac{1}{3}=|\\varepsilon_A|.$$
 
 Larger absolute elasticity means greater price sensitivity. Cart B's customers are more price-sensitive than Cart A's at $p=20$
 
-An interior candidate for a smooth extremum must make the first derivative vanish; that flat-slope equation only produces candidates, not finished labels., so the statement is True.`,
+An interior candidate for a smooth extremum must make the first derivative vanish; that flat-slope equation only produces candidates, not finished labels. So the statement is True.`,
       `**D.** → True
 
 Relate the revenue slope to demand sensitivity: unit elasticity sits at the revenue peak, while inelastic demand only says a small price rise still helps revenue.
@@ -8819,7 +8819,7 @@ $$p'(x)=30-4x=0\\qquad\\Rightarrow\\qquad 4x=30\\qquad\\Rightarrow\\qquad x=7.5.
 
 (The critical point lies in $[0,10]$.) The reduced profit has a flat slope at $x=7.5$
 
-An interior candidate for a smooth extremum must make the first derivative vanish; that flat-slope equation only produces candidates, not finished labels., so the statement is True.`,
+An interior candidate for a smooth extremum must make the first derivative vanish; that flat-slope equation only produces candidates, not finished labels. So the statement is True.`,
       `**C.** → True
 
 Name the objective, find where its slope is flat, then classify with the bend (or a sign chart) before matching the claim.
@@ -8830,7 +8830,7 @@ $$p''(x)=-4<0,$$
 
 so the flat spot is a local profit peak by the second-derivative test. Both the complementary output and the downward bend match the claim
 
-Pause on the classification step: $f''<0$ at a critical point marks a local peak, $f''>0$ marks a local trough, and $f''=0$ makes the usual bend test inconclusive., so the statement is True.`,
+Pause on the classification step: $f''<0$ at a critical point marks a local peak, $f''>0$ marks a local trough, and $f''=0$ makes the usual bend test inconclusive. So the statement is True.`,
       `**D.** → True
 
 Name the objective, find where its slope is flat, then classify with the bend (or a sign chart) before matching the claim.
@@ -8841,7 +8841,7 @@ $$p(7.5)=30\\cdot 7.5+100-2\\cdot(7.5)^{2}=225+100-2\\cdot 56.25=325-112.5=212.5
 
 Maximised constrained profit equals $212.5$, matching the claim
 
-Pause on the classification step: $f''<0$ at a critical point marks a local peak, $f''>0$ marks a local trough, and $f''=0$ makes the usual bend test inconclusive., so the statement is True.`,
+Pause on the classification step: $f''<0$ at a critical point marks a local peak, $f''>0$ marks a local trough, and $f''=0$ makes the usual bend test inconclusive. So the statement is True.`,
       `**E.** → False
 
 Reduce the constrained problem to one free variable, then differentiate the reduced objective exactly as in unconstrained single-variable calculus.
@@ -8889,7 +8889,7 @@ $$A(x)=x(40-2x)=40x-2x^{2},\\qquad 0<x<20.$$
 
 That single-variable reduction is exactly what the claim asserts
 
-Pause on the classification step: $f''<0$ at a critical point marks a local peak, $f''>0$ marks a local trough, and $f''=0$ makes the usual bend test inconclusive., so the statement is True.`,
+Pause on the classification step: $f''<0$ at a critical point marks a local peak, $f''>0$ marks a local trough, and $f''=0$ makes the usual bend test inconclusive. So the statement is True.`,
       `**B.** → True
 
 Name the objective, find where its slope is flat, then classify with the bend (or a sign chart) before matching the claim.
@@ -8900,7 +8900,7 @@ $$A'(x)=40-4x=0\\qquad\\Rightarrow\\qquad x=10.$$
 
 Area has a flat slope when each perpendicular side is $10$ metres
 
-An interior candidate for a smooth extremum must make the first derivative vanish; that flat-slope equation only produces candidates, not finished labels., so the statement is True.`,
+An interior candidate for a smooth extremum must make the first derivative vanish; that flat-slope equation only produces candidates, not finished labels. So the statement is True.`,
       `**C.** → True
 
 Name the objective, find where its slope is flat, then classify with the bend (or a sign chart) before matching the claim.
@@ -8911,7 +8911,7 @@ $$A''(x)=-4\\qquad\\Rightarrow\\qquad A''(10)=-4<0$$
 
 confirms a local maximum. Layout $10$–$20$–$10$ maximises area locally, matching the claim
 
-Pause on the classification step: $f''<0$ at a critical point marks a local peak, $f''>0$ marks a local trough, and $f''=0$ makes the usual bend test inconclusive., so the statement is True.`,
+Pause on the classification step: $f''<0$ at a critical point marks a local peak, $f''>0$ marks a local trough, and $f''=0$ makes the usual bend test inconclusive. So the statement is True.`,
       `**D.** → True
 
 Name the objective, find where its slope is flat, then classify with the bend (or a sign chart) before matching the claim.
@@ -8922,7 +8922,7 @@ $$A(10)=10\\cdot 20=200.$$
 
 Maximal area is $200$ square metres, matching the claim
 
-Pause on the classification step: $f''<0$ at a critical point marks a local peak, $f''>0$ marks a local trough, and $f''=0$ makes the usual bend test inconclusive., so the statement is True.`,
+Pause on the classification step: $f''<0$ at a critical point marks a local peak, $f''>0$ marks a local trough, and $f''=0$ makes the usual bend test inconclusive. So the statement is True.`,
       `**E.** → False
 
 The wording sounds close to a standard optimisation rule, but it skips a classification step or confuses a level with a slope. Track the definitions carefully.
@@ -8968,7 +8968,7 @@ $$C(x)=2x+8\\cdot\\dfrac{16}{x}=2x+\\dfrac{128}{x}.$$
 
 That is exactly the claimed one-variable cost function
 
-Pause on the classification step: $f''<0$ at a critical point marks a local peak, $f''>0$ marks a local trough, and $f''=0$ makes the usual bend test inconclusive., so the statement is True.`,
+Pause on the classification step: $f''<0$ at a critical point marks a local peak, $f''>0$ marks a local trough, and $f''=0$ makes the usual bend test inconclusive. So the statement is True.`,
       `**B.** → True
 
 Name the objective, find where its slope is flat, then classify with the bend (or a sign chart) before matching the claim.
@@ -8979,7 +8979,7 @@ $$C'(x)=2-\\dfrac{128}{x^{2}}=0\\qquad\\Rightarrow\\qquad 2=\\dfrac{128}{x^{2}}\
 
 Cost has a flat slope at $x=8$
 
-An interior candidate for a smooth extremum must make the first derivative vanish; that flat-slope equation only produces candidates, not finished labels., so the statement is True.`,
+An interior candidate for a smooth extremum must make the first derivative vanish; that flat-slope equation only produces candidates, not finished labels. So the statement is True.`,
       `**C.** → True
 
 Name the objective, find where its slope is flat, then classify with the bend (or a sign chart) before matching the claim.
@@ -8990,14 +8990,14 @@ $$C(8)=2\\cdot 8+\\dfrac{128}{8}=16+16=32.$$
 
 The bend $C''(8)=256/512>0$ confirms a local cost trough. All three parts of the claim hold
 
-Pause on the classification step: $f''<0$ at a critical point marks a local peak, $f''>0$ marks a local trough, and $f''=0$ makes the usual bend test inconclusive., so the statement is True.`,
+Pause on the classification step: $f''<0$ at a critical point marks a local peak, $f''>0$ marks a local trough, and $f''=0$ makes the usual bend test inconclusive. So the statement is True.`,
       `**D.** → True
 
 Name the objective, find where its slope is flat, then classify with the bend (or a sign chart) before matching the claim.
 
 Along $xy=16$, a cost-minimising interior point balances relative input prices against the technical trade-off. Here $C_x=2$, $C_y=8$, so $C_x/C_y=1/4$, and at $(8,2)$ one has $y/x=2/8=1/4$. The balance condition holds at that point, matching the claim
 
-Pause on the classification step: $f''<0$ at a critical point marks a local peak, $f''>0$ marks a local trough, and $f''=0$ makes the usual bend test inconclusive., so the statement is True.`,
+Pause on the classification step: $f''<0$ at a critical point marks a local peak, $f''>0$ marks a local trough, and $f''=0$ makes the usual bend test inconclusive. So the statement is True.`,
       `**E.** → False
 
 Reduce the constrained problem to one free variable, then differentiate the reduced objective exactly as in unconstrained single-variable calculus.
@@ -9047,7 +9047,7 @@ $$R'(p)=90-2p=0\\qquad\\Rightarrow\\qquad p=45.$$
 
 Peak revenue is $R(45)=90\\cdot 45-45^{2}=4050-2025=2025$. Fare, revenue function, and peak level all match the claim
 
-Pause on the classification step: $f''<0$ at a critical point marks a local peak, $f''>0$ marks a local trough, and $f''=0$ makes the usual bend test inconclusive., so the statement is True.`,
+Pause on the classification step: $f''<0$ at a critical point marks a local peak, $f''>0$ marks a local trough, and $f''=0$ makes the usual bend test inconclusive. So the statement is True.`,
       `**B.** → True
 
 Relate the revenue slope to demand sensitivity: unit elasticity sits at the revenue peak, while inelastic demand only says a small price rise still helps revenue.
@@ -9062,7 +9062,7 @@ $$\\varepsilon(45)=\\dfrac{-45}{90-45}=\\dfrac{-45}{45}=-1.$$
 
 Demand is unit elastic at the $45$-euro fare
 
-For ordinary downward-sloping demand, revenue peaks where point elasticity equals $-1$; inelastic demand ($|\\varepsilon|<1$) means a small price rise still raises revenue, not that the current price is already optimal., so the statement is True.`,
+For ordinary downward-sloping demand, revenue peaks where point elasticity equals $-1$; inelastic demand ($|\\varepsilon|<1$) means a small price rise still raises revenue, not that the current price is already optimal. So the statement is True.`,
       `**C.** → True
 
 Name the objective, find where its slope is flat, then classify with the bend (or a sign chart) before matching the claim.
@@ -9073,7 +9073,7 @@ $$R'(30)=90-60=30>0.$$
 
 A positive slope means a small fare increase raises ticket revenue. (Equivalently $|\\varepsilon(30)|=30/60=1/2<1$, inelastic.) The statement is True
 
-For ordinary downward-sloping demand, revenue peaks where point elasticity equals $-1$; inelastic demand ($|\\varepsilon|<1$) means a small price rise still raises revenue, not that the current price is already optimal., so the statement is True.`,
+For ordinary downward-sloping demand, revenue peaks where point elasticity equals $-1$; inelastic demand ($|\\varepsilon|<1$) means a small price rise still raises revenue, not that the current price is already optimal. So the statement is True.`,
       `**D.** → True
 
 Name the objective, find where its slope is flat, then classify with the bend (or a sign chart) before matching the claim.
@@ -9084,7 +9084,7 @@ $$R'(60)=90-120=-30<0.$$
 
 A negative slope means a small fare increase lowers ticket revenue. (Equivalently $|\\varepsilon(60)|=60/30=2>1$, elastic.) The statement is True
 
-For ordinary downward-sloping demand, revenue peaks where point elasticity equals $-1$; inelastic demand ($|\\varepsilon|<1$) means a small price rise still raises revenue, not that the current price is already optimal., so the statement is True.`,
+For ordinary downward-sloping demand, revenue peaks where point elasticity equals $-1$; inelastic demand ($|\\varepsilon|<1$) means a small price rise still raises revenue, not that the current price is already optimal. So the statement is True.`,
       `**E.** → False
 
 Relate the revenue slope to demand sensitivity: unit elasticity sits at the revenue peak, while inelastic demand only says a small price rise still helps revenue.
@@ -9126,7 +9126,7 @@ $$V(x)=x(12-2x)^{2},\\qquad 0<x<6.$$
 
 That geometric description matches the claim exactly
 
-Pause on the classification step: $f''<0$ at a critical point marks a local peak, $f''>0$ marks a local trough, and $f''=0$ makes the usual bend test inconclusive., so the statement is True.`,
+Pause on the classification step: $f''<0$ at a critical point marks a local peak, $f''>0$ marks a local trough, and $f''=0$ makes the usual bend test inconclusive. So the statement is True.`,
       `**B.** → True
 
 Name the objective, find where its slope is flat, then classify with the bend (or a sign chart) before matching the claim.
@@ -9141,7 +9141,7 @@ $$V'(x)=144-96x+12x^{2}.$$
 
 Expanding produces a cubic volume whose slope is a quadratic in $x$, matching the claim
 
-An interior candidate for a smooth extremum must make the first derivative vanish; that flat-slope equation only produces candidates, not finished labels., so the statement is True.`,
+An interior candidate for a smooth extremum must make the first derivative vanish; that flat-slope equation only produces candidates, not finished labels. So the statement is True.`,
       `**C.** → True
 
 Name the objective, find where its slope is flat, then classify with the bend (or a sign chart) before matching the claim.
@@ -9152,7 +9152,7 @@ $$V'(x)=12(x^{2}-8x+12)=12(x-2)(x-6).$$
 
 The roots are $x=2$ and $x=6$. Only $x=2$ lies strictly inside $(0,6)$; $x=6$ is the excluded right endpoint where the base collapses. The only interior flat-slope cut is $x=2$
 
-An interior candidate for a smooth extremum must make the first derivative vanish; that flat-slope equation only produces candidates, not finished labels., so the statement is True.`,
+An interior candidate for a smooth extremum must make the first derivative vanish; that flat-slope equation only produces candidates, not finished labels. So the statement is True.`,
       `**D.** → True
 
 Name the objective, find where its slope is flat, then classify with the bend (or a sign chart) before matching the claim.
@@ -9163,7 +9163,7 @@ $$V(2)=2\\cdot 8^{2}=128,$$
 
 and differentiating $V'(x)=12(x-2)(x-6)$ (or using $V''(x)=24x-96$) gives $V''(2)=-48<0$. Downward bend plus volume $128$ means that cut maximises volume locally
 
-Pause on the classification step: $f''<0$ at a critical point marks a local peak, $f''>0$ marks a local trough, and $f''=0$ makes the usual bend test inconclusive., so the statement is True.`,
+Pause on the classification step: $f''<0$ at a critical point marks a local peak, $f''>0$ marks a local trough, and $f''=0$ makes the usual bend test inconclusive. So the statement is True.`,
       `**E.** → False
 
 Flat slope finds a candidate; the bend (or a sign chart) then classifies peak versus trough. Keep those two steps separate.
