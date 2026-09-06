@@ -31,11 +31,9 @@ function pad(n: number) {
 }
 
 export function ExamCountdown({ className }: { className?: string }) {
-  // Seed from a stable timestamp so SSR and first client render match; the
-  // live seconds start ticking after hydration.
-  const [remaining, setRemaining] = useState<Remaining>(() =>
-    getRemaining(new Date(Math.floor(Date.now() / 60000) * 60000)),
-  );
+  // The live clock only starts after hydration; SSR and the first client
+  // render share the same placeholder so the markup always matches.
+  const [remaining, setRemaining] = useState<Remaining | null>(null);
 
   useEffect(() => {
     setRemaining(getRemaining(new Date()));
@@ -45,11 +43,12 @@ export function ExamCountdown({ className }: { className?: string }) {
     return () => window.clearInterval(id);
   }, []);
 
-  const units: { value: number; label: string; padded?: boolean }[] = [
-    { value: remaining.days, label: "days" },
-    { value: remaining.hours, label: "hours", padded: true },
-    { value: remaining.minutes, label: "min", padded: true },
-    { value: remaining.seconds, label: "sec", padded: true },
+  const done = remaining?.done ?? false;
+  const units: { value: number | null; label: string; padded?: boolean }[] = [
+    { value: remaining?.days ?? null, label: "days" },
+    { value: remaining?.hours ?? null, label: "hours", padded: true },
+    { value: remaining?.minutes ?? null, label: "min", padded: true },
+    { value: remaining?.seconds ?? null, label: "sec", padded: true },
   ];
 
   return (
@@ -58,13 +57,15 @@ export function ExamCountdown({ className }: { className?: string }) {
       role="timer"
       aria-live="polite"
       aria-label={
-        remaining.done
-          ? "Exam day has arrived"
-          : `Countdown to the 2027 BBE exam: ${remaining.days} days, ${remaining.hours} hours, ${remaining.minutes} minutes, ${remaining.seconds} seconds`
+        !remaining
+          ? "Countdown to the 2027 BBE exam"
+          : remaining.done
+            ? "Exam day has arrived"
+            : `Countdown to the 2027 BBE exam: ${remaining.days} days, ${remaining.hours} hours, ${remaining.minutes} minutes, ${remaining.seconds} seconds`
       }
     >
       <p className="text-[11px] font-medium tracking-wide text-taupe sm:text-xs">
-        {remaining.done ? "Exam day" : "Until the 2027 BBE exam · 30 June"}
+        {done ? "Exam day" : "Until the 2027 BBE exam · 30 June"}
       </p>
       <div className="flex items-stretch gap-2 sm:gap-3">
         {units.map((u, i) => (
