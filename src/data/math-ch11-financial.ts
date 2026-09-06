@@ -2254,7 +2254,15 @@ $$R = (1.019)^{12}-1$$
 
 $$\\approx 25.34\\%$$
 
-The claim needs $R=22.80\\%$. We have $25.34\\% \\ne 22.80\\%$.
+The claim needs $R=22.80\\%$. The computed value is
+
+$$25.34\\%$$
+
+The claim is
+
+$$22.80\\%$$
+
+Since $25.34\\% \\ne 22.80\\%$, the figures disagree.
 
 So the statement is False.`,
       `**D.** → False
@@ -2275,7 +2283,15 @@ $$\\approx 1.253401$$
 
 $$FV \\approx 3,760.20$$
 
-The claim is \\$3,684.00. We have $3,760.20 \\ne 3,684.00$.
+The claim is \\$3,684.00. The computed value is
+
+$$3,760.20$$
+
+The claim is
+
+$$3,684.00$$
+
+Since $3,760.20 \\ne 3,684.00$, the figures disagree.
 
 So the statement is False.`,
       `**E.** → False
@@ -2559,7 +2575,15 @@ $$r = 50^{\\frac{1}{80}} - 1$$
 
 $$\\approx 5.01\\%$$
 
-Compare the computed value with the claim (about $6.25\\%$). We have $5.01\\% \\ne 6.25\\%$. The two sides do not agree.
+Compare the computed value with the claim (about $6.25\\%$). The computed value is
+
+$$5.01\\%$$
+
+The claim is
+
+$$6.25\\%$$
+
+Since $5.01\\% \\ne 6.25\\%$, the figures disagree. The two sides do not agree.
 
 So the statement is False.`,
       `**C.** → False
@@ -2578,7 +2602,15 @@ $$\\frac{r_{100}}{2}$$
 
 $$\\approx 2.96\\%$$
 
-The claim needs $r_{50}=\\frac{1}{2} r_{100}$. We have $5.01\\% \\ne 2.96\\%$.
+The claim needs $r_{50}=\\frac{1}{2} r_{100}$. The computed value is
+
+$$5.01\\%$$
+
+The claim is
+
+$$2.96\\%$$
+
+Since $5.01\\% \\ne 2.96\\%$, the figures disagree.
 
 So the statement is False.`,
       `**D.** → False
@@ -2597,7 +2629,15 @@ $$
 = 2,500
 $$
 
-The claim needs a factor of $100$. We have $2,500 \\ne 100$.
+The claim needs a factor of $100$. The computed value is
+
+$$2,500$$
+
+The claim is
+
+$$100$$
+
+Since $2,500 \\ne 100$, the figures disagree.
 
 So the statement is False.`,
       `**E.** → False
@@ -3173,7 +3213,15 @@ $$\\frac{t_Q}{4}$$
 
 $$\\approx 6.28$$
 
-The claim needs equal times. We have $6.28 \\ne 6.40$.
+The claim needs equal times. The computed value is
+
+$$6.28$$
+
+The claim is
+
+$$6.40$$
+
+Since $6.28 \\ne 6.40$, the figures disagree.
 
 So the statement is False.`,
       `**C.** → False
@@ -3347,7 +3395,15 @@ $$
 = 4,725.00
 $$
 
-Compare the computed value with the claim (\\$4,735.00). We have $4,725.00 \\ne 4,735.00$. The two sides do not agree.
+Compare the computed value with the claim (\\$4,735.00). The computed value is
+
+$$4,725.00$$
+
+The claim is
+
+$$4,735.00$$
+
+Since $4,725.00 \\ne 4,735.00$, the figures disagree. The two sides do not agree.
 
 So the statement is False.`,
       `**D.** → True
@@ -3469,7 +3525,15 @@ $$S(6) = 3,200 \\times e^{0.48}$$
 
 $$\\approx 5,171.44$$
 
-The claim needs $2\\,S(3)=S(6)$. We have $8,135.99 \\ne 5,171.44$.
+The claim needs $2\\,S(3)=S(6)$. The computed value is
+
+$$8,135.99$$
+
+The claim is
+
+$$5,171.44$$
+
+Since $8,135.99 \\ne 5,171.44$, the figures disagree.
 
 So the statement is False.`,
       `**C.** → False
@@ -3484,7 +3548,15 @@ $$5,171.44 - 3,200$$
 
 $$= 1,971.44$$
 
-The claim is approximately \\$2,000.00. We have $1,971.44 \\ne 2,000.00$.
+The claim is approximately \\$2,000.00. The computed value is
+
+$$1,971.44$$
+
+The claim is
+
+$$2,000.00$$
+
+Since $1,971.44 \\ne 2,000.00$, the figures disagree.
 
 So the statement is False.`,
       `**D.** → False
@@ -3511,7 +3583,15 @@ $$\\approx 2 \\times 5,171.44$$
 
 $$= 10,342.88$$
 
-The claim needs $S(12)=2\\,S(6)$. We have $8,357.43 \\ne 10,342.88$.
+The claim needs $S(12)=2\\,S(6)$. The computed value is
+
+$$8,357.43$$
+
+The claim is
+
+$$10,342.88$$
+
+Since $8,357.43 \\ne 10,342.88$, the figures disagree.
 
 So the statement is False.`,
       `**E.** → True
@@ -3757,7 +3837,15 @@ $$75,000 \\times (1.105171 - 1.1025)$$
 
 $$\\approx 200.32$$
 
-The claim is \\$250.32. We have $200.32 \\ne 250.32$.
+The claim is \\$250.32. The computed value is
+
+$$200.32$$
+
+The claim is
+
+$$250.32$$
+
+Since $200.32 \\ne 250.32$, the figures disagree.
 
 So the statement is False.`,
       `**E.** → False
