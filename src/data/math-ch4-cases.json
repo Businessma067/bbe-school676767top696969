@@ -6847,6 +6847,646 @@
       "sort_order": 214,
       "solution_overview": "Five independent closed claims spanning the chapter. Translate each story into one equation (a rectangle-area quadratic, a $t = d/v$ start time, a dilution, a composite decadic logarithm, and a percentage prize split), then isolate the unknown and compare with the claim.\n\nFor the quadratic, keep only a positive side length. For the logarithm, set $L = \\log x$, reduce with the power rule, and recover $x = 10^{L}$.\n\nEach letter is a separate mini-problem; do not reuse a root from another letter.",
       "placeholder": false
+    },
+    {
+      "id": "math-4-215",
+      "case_id": "MATH 4.215",
+      "title": "Exam-style tasks - 22",
+      "subsection": "4.5",
+      "context": "Evaluate each statement. Mark it TRUE or FALSE.",
+      "statements": [
+        "A rectangular garden bed is $4$ m longer than it is wide, and its area is $96$ m$^{2}$. The landscaper concludes that the longer side is $8$ m.",
+        "A ferry covers $135$ km at a steady $90$ km/h and docks at $4$ pm. Boarding therefore began at $2{:}30$ pm.",
+        "Two litres of $15\\%$ bleach must be watered down to $6\\%$. Adding $2$ litres of water is claimed to give the correct concentration.",
+        "With $\\log$ the decadic logarithm, the unique positive solution of $\\log\\sqrt[4]{x} + \\log\\dfrac{1}{x^{2}} - \\log\\sqrt{x} + \\dfrac{5}{2} = \\dfrac{\\log\\sqrt{x}}{1 + \\log 10}$ is larger than $8$.",
+        "A bonus pool of $15250$ EUR is split so the second share is $80\\%$ of the first and the third is $80\\%$ of the second. The second share is then $5000$ EUR."
+      ],
+      "answer_key": [
+        false,
+        true,
+        false,
+        true,
+        true
+      ],
+      "tactical_explanations": [
+        "**A.** → False\n\nLet the width be $w$ metres. The length is $w + 4$ and the area is $96$ m$^{2}$:\n\n$$w(w + 4) = 96$$\n\n$$w^{2} + 4w - 96 = 0$$\n\n$$(w + 12)(w - 8) = 0$$\n\nA width must be positive, so $w = 8$. The longer side is then $12$ m, not $8$ m. Check: $8 \\cdot 12 = 96$. The claim confuses the width with the longer side.\n\nSo the statement is False.",
+        "**B.** → True\n\nTravel time is distance divided by speed:\n\n$$t = \\frac{135}{90} = \\frac{3}{2}$$\n\nhours, that is $1$ hour and $30$ minutes. Counting $1$ h $30$ min back from $4$ pm lands at $2{:}30$ pm.\n\nSo the statement is True.",
+        "**C.** → False\n\nTwo litres of $15\\%$ bleach hold $0.30$ litres of pure bleach. For a $6\\%$ mixture:\n\n$$\\frac{0.30}{2 + w} = 0.06$$\n\n$$w = 3$$\n\nAdding only $2$ litres gives concentration $0.30 / 4 = 0.075 = 7.5\\%$, not $6\\%$.\n\nSo the statement is False.",
+        "**D.** → True\n\nLet $L = \\log x$ with $x > 0$. The power rule gives\n\n$$\\frac{1}{4}L - 2L - \\frac{1}{2}L + \\frac{5}{2} = \\frac{\\tfrac{1}{2}L}{1 + 1}$$\n\n$$-\\frac{9}{4}L + \\frac{5}{2} = \\frac{1}{4}L$$\n\n$$\\frac{5}{2} = \\frac{5}{2}L$$\n\n$$L = 1 \\implies x = 10$$\n\nThe solution $10$ is larger than $8$.\n\nSo the statement is True.",
+        "**E.** → True\n\nLet the first share be $a$ EUR. Then\n\n$$a + 0.8a + 0.64a = 15250$$\n\n$$2.44a = 15250$$\n\n$$a = 6250$$\n\nThe second share is $0.8 \\cdot 6250 = 5000$ EUR.\n\nSo the statement is True."
+      ],
+      "difficulty_level": "5/5",
+      "sort_order": 215,
+      "solution_overview": "Independent stories: a garden rectangle, a ferry timetable, bleach dilution, a composite logarithm, and an $80\\%$ bonus chain.",
+      "placeholder": false
+    },
+    {
+      "id": "math-4-216",
+      "case_id": "MATH 4.216",
+      "title": "Exam-style tasks - 23",
+      "subsection": "4.5",
+      "context": "Evaluate each statement. Mark it TRUE or FALSE.",
+      "statements": [
+        "A father is $28$ years older than his son. In $8$ years the father will be twice as old as the son will be then. A classmate concludes the son is now $18$.",
+        "A $20$ cm by $12$ cm photograph is mounted with a uniform frame so that the outer area is twice the photograph. The frame width is $2$ cm.",
+        "A courier cycles $48$ km at $16$ km/h and arrives at $11{:}00$. The courier therefore left at $8{:}15$.",
+        "A juice blend of $2.5$ litres at $12\\%$ pulp must be thinned to $8\\%$ pulp. Adding $1.25$ litres of water succeeds.",
+        "A scholarship fund of $8750$ EUR is divided so that the runner-up receives half of the winner and third place receives half of the runner-up. The runner-up's award is $2500$ EUR."
+      ],
+      "answer_key": [
+        false,
+        true,
+        false,
+        true,
+        true
+      ],
+      "tactical_explanations": [
+        "**A.** → False\n\nLet the son's present age be $s$ years. In eight years:\n\n$$s + 28 + 8 = 2(s + 8)$$\n\n$$s + 36 = 2s + 16$$\n\n$$s = 20$$\n\nThe son is $20$, not $18$. Check: in eight years they are $28$ and $56$, and $56 = 2 \\cdot 28$.\n\nSo the statement is False.",
+        "**B.** → True\n\nPhotograph area $20 \\cdot 12 = 240$, so the outer area is $480$. With frame width $x$ cm:\n\n$$(20 + 2x)(12 + 2x) = 480$$\n\n$$4x^{2} + 64x + 240 = 480$$\n\n$$x^{2} + 16x - 60 = 0$$\n\n$$(x + 18)(x - 2) = 0$$\n\nThe positive root is $x = 2$ cm.\n\nSo the statement is True.",
+        "**C.** → False\n\n$$t = \\frac{48}{16} = 3$$\n\nhours. Three hours before $11{:}00$ is $8{:}00$, not $8{:}15$.\n\nSo the statement is False.",
+        "**D.** → True\n\nPulp volume $2.5 \\cdot 0.12 = 0.30$ litres. Target $8\\%$:\n\n$$\\frac{0.30}{2.5 + w} = 0.08$$\n\n$$w = 1.25$$\n\nCheck: $0.30 / 3.75 = 0.08$.\n\nSo the statement is True.",
+        "**E.** → True\n\n$$a + 0.5a + 0.25a = 8750$$\n\n$$1.75a = 8750$$\n\n$$a = 5000$$\n\nRunner-up: $0.5 \\cdot 5000 = 2500$ EUR.\n\nSo the statement is True."
+      ],
+      "difficulty_level": "5/5",
+      "sort_order": 216,
+      "solution_overview": "Independent claims mixing an age relation, a framed photograph, a cycling timetable, a juice dilution, and a half-share scholarship split.",
+      "placeholder": false
+    },
+    {
+      "id": "math-4-217",
+      "case_id": "MATH 4.217",
+      "title": "Exam-style tasks - 24",
+      "subsection": "4.5",
+      "context": "Evaluate each statement. Mark it TRUE or FALSE.",
+      "statements": [
+        "The sum of three consecutive odd integers is $75$. The largest of them is therefore $29$.",
+        "A train $150$ m long passes a signal post in $10$ seconds. Its speed is then $54$ km/h.",
+        "One litre of $20\\%$ acid is diluted to $8\\%$. The chemist must add $1.5$ litres of water.",
+        "The solution of $\\log\\sqrt{x} + \\log\\dfrac{1}{x^{2}} - \\log\\sqrt[3]{x} + \\dfrac{5}{2} = \\dfrac{\\log x^{2}}{1 + \\log 100}$, where $\\log$ is decadic, is smaller than $20$.",
+        "Tournament prize money of $12200$ EUR is split with each lower place getting $80\\%$ of the place above. Second place receives $4000$ EUR."
+      ],
+      "answer_key": [
+        false,
+        true,
+        true,
+        false,
+        true
+      ],
+      "tactical_explanations": [
+        "**A.** → False\n\nLet the smallest odd integer be $n$:\n\n$$n + (n + 2) + (n + 4) = 75$$\n\n$$3n + 6 = 75$$\n\n$$n = 23$$\n\nThe three integers are $23$, $25$, and $27$. The largest is $27$, not $29$. The triple ending at $29$ sums to $81$.\n\nSo the statement is False.",
+        "**B.** → True\n\nIn $10$ seconds the train covers its own length $150$ m:\n\n$$v = \\frac{150}{10} = 15\\ \\text{m/s}$$\n\n$$15 \\cdot \\frac{18}{5} = 54\\ \\text{km/h}$$\n\nThe claimed speed matches.\n\nSo the statement is True.",
+        "**C.** → True\n\nPure acid $0.20$ litres. Target $8\\%$:\n\n$$\\frac{0.20}{1 + w} = 0.08$$\n\n$$w = 1.5$$\n\nCheck: $0.20 / 2.5 = 0.08$.\n\nSo the statement is True.",
+        "**D.** → False\n\nLet $L = \\log x$. Then\n\n$$\\frac{1}{2}L - 2L - \\frac{1}{3}L + \\frac{5}{2} = \\frac{2L}{1 + 2}$$\n\n$$\\left(\\frac{3}{6} - \\frac{12}{6} - \\frac{2}{6}\\right)L + \\frac{5}{2} = \\frac{2L}{3}$$\n\n$$-\\frac{11}{6}L + \\frac{5}{2} = \\frac{2}{3}L$$\n\n$$\\frac{5}{2} = \\frac{15}{6}L$$\n\n$$L = 1 \\implies x = 10$$\n\nThe solution $10$ is not smaller than $20$.\n\nSo the statement is False.",
+        "**E.** → True\n\n$$a + 0.8a + 0.64a = 12200$$\n\n$$2.44a = 12200$$\n\n$$a = 5000$$\n\nSecond place: $0.8 \\cdot 5000 = 4000$ EUR.\n\nSo the statement is True."
+      ],
+      "difficulty_level": "5/5",
+      "sort_order": 217,
+      "solution_overview": "Independent claims: consecutive odd integers, a train passing a post, acid dilution, a composite logarithm, and an $80\\%$ tournament split.",
+      "placeholder": false
+    },
+    {
+      "id": "math-4-218",
+      "case_id": "MATH 4.218",
+      "title": "Exam-style tasks - 25",
+      "subsection": "4.5",
+      "context": "Evaluate each statement. Mark it TRUE or FALSE.",
+      "statements": [
+        "A rectangular parking lot is $6$ m longer than it is wide, and its perimeter is $64$ m. The longer side is $19$ m.",
+        "A bus travels $210$ km at $70$ km/h and reaches the depot at $6$ pm. It left at $3$ pm.",
+        "Three litres of milk with $4.8\\%$ fat are diluted with water to $3.2\\%$ fat. Then $1.5$ litres of water must be added.",
+        "The equation $2^{x} = 64$ has unique real solution $x = 5$.",
+        "An inheritance of $14625$ EUR is shared so each next heir gets $80\\%$ of the previous heir. The middle heir receives $4800$ EUR."
+      ],
+      "answer_key": [
+        true,
+        true,
+        true,
+        false,
+        true
+      ],
+      "tactical_explanations": [
+        "**A.** → True\n\nLet the width be $w$. Length $w + 6$ and perimeter $64$:\n\n$$2\\bigl(w + (w + 6)\\bigr) = 64$$\n\n$$2(2w + 6) = 64$$\n\n$$2w + 6 = 32$$\n\n$$w = 13$$\n\nLonger side $19$ m. Check: $2(13 + 19) = 64$.\n\nSo the statement is True.",
+        "**B.** → True\n\n$$t = \\frac{210}{70} = 3$$\n\nhours. Three hours before $6$ pm is $3$ pm.\n\nSo the statement is True.",
+        "**C.** → True\n\nFat volume $3 \\cdot 0.048 = 0.144$. Target $3.2\\%$:\n\n$$\\frac{0.144}{3 + w} = 0.032$$\n\n$$w = 1.5$$\n\nCheck: $0.144 / 4.5 = 0.032$.\n\nSo the statement is True.",
+        "**D.** → False\n\n$$64 = 2^{6}$$, so $2^{x} = 2^{6}$ forces $x = 6$, not $5$.\n\nSo the statement is False.",
+        "**E.** → True\n\n$$a + 0.8a + 0.64a = 14625$$\n\n$$2.44a = 14625$$\n\n$$a = 6000$$\n\nMiddle heir: $0.8 \\cdot 6000 = 4800$ EUR.\n\nSo the statement is True."
+      ],
+      "difficulty_level": "5/5",
+      "sort_order": 218,
+      "solution_overview": "Independent claims: a parking-lot perimeter, a bus timetable, milk-fat dilution, an exponential base-$2$ equation, and an $80\\%$ inheritance chain.",
+      "placeholder": false
+    },
+    {
+      "id": "math-4-219",
+      "case_id": "MATH 4.219",
+      "title": "Exam-style tasks - 26",
+      "subsection": "4.5",
+      "context": "Evaluate each statement. Mark it TRUE or FALSE.",
+      "statements": [
+        "A square courtyard of side $10$ m is edged by a uniform $1$ m path. The path area is claimed to be $40$ m$^{2}$.",
+        "A hiker walks $18$ km at $4.5$ km/h and finishes at $17{:}00$. The hike began at $13{:}00$.",
+        "Four litres of paint at $25\\%$ pigment are thinned to $10\\%$. Water to add is $6$ litres.",
+        "Decadic $\\log$: the solution of $\\log x^{2} - \\log\\sqrt[3]{x} = \\dfrac{5}{3}$ is a two-digit integer.",
+        "Sales commissions totaling $9100$ EUR are paid so the second is $60\\%$ of the first and the third is $60\\%$ of the second. The second commission is $3000$ EUR."
+      ],
+      "answer_key": [
+        false,
+        true,
+        true,
+        true,
+        false
+      ],
+      "tactical_explanations": [
+        "**A.** → False\n\nOuter square side $12$ m. Path area:\n\n$$12^{2} - 10^{2} = 144 - 100 = 44$$\n\nsquare metres, not $40$.\n\nSo the statement is False.",
+        "**B.** → True\n\n$$t = \\frac{18}{4.5} = 4$$\n\nhours. Four hours before $17{:}00$ is $13{:}00$.\n\nSo the statement is True.",
+        "**C.** → True\n\nPigment $4 \\cdot 0.25 = 1$ litre. Target $10\\%$:\n\n$$\\frac{1}{4 + w} = 0.10$$\n\n$$w = 6$$\n\nCheck: $1 / 10 = 0.10$.\n\nSo the statement is True.",
+        "**D.** → True\n\n$$2L - \\frac{1}{3}L = \\frac{5}{3}$$\n\n$$\\frac{5}{3}L = \\frac{5}{3}$$\n\n$$L = 1 \\implies x = 10$$\n\nThe integer $10$ has two digits.\n\nSo the statement is True.",
+        "**E.** → False\n\n$$a + 0.6a + 0.36a = 9100$$\n\n$$1.96a = 9100$$\n\n$$a = \\frac{9100}{1.96} = 4642.857\\ldots$$\n\nSecond commission $0.6a \\approx 2785.71$ EUR, not $3000$.\n\nSo the statement is False."
+      ],
+      "difficulty_level": "5/5",
+      "sort_order": 219,
+      "solution_overview": "Independent claims: a square path border, a hike timetable, paint thinning, a short logarithmic equation, and a $60\\%$ commission chain.",
+      "placeholder": false
+    },
+    {
+      "id": "math-4-220",
+      "case_id": "MATH 4.220",
+      "title": "Exam-style tasks - 27",
+      "subsection": "4.5",
+      "context": "Evaluate each statement. Mark it TRUE or FALSE.",
+      "statements": [
+        "Two printers finish a job together in $4$ hours. The faster alone needs $6$ hours. Then the slower alone needs $12$ hours.",
+        "A rectangle is $3$ cm longer than it is wide and has area $40$ cm$^{2}$. The longer side is $8$ cm.",
+        "A barista has $0.8$ litres of $10\\%$ syrup and wants $4\\%$ syrup. Mixing with $1.2$ litres of water works.",
+        "The equation $|2x - 6| = 10$ has exactly one real solution.",
+        "Prize money $10950$ EUR with each lower place getting $70\\%$ of the place above yields $3500$ EUR for second place."
+      ],
+      "answer_key": [
+        true,
+        true,
+        true,
+        false,
+        true
+      ],
+      "tactical_explanations": [
+        "**A.** → True\n\nCombined rate equation:\n\n$$\\frac{1}{6} + \\frac{1}{s} = \\frac{1}{4}$$\n\n$$\\frac{1}{s} = \\frac{1}{4} - \\frac{1}{6} = \\frac{1}{12}$$\n\n$$s = 12$$\n\nThe slower printer alone needs $12$ hours.\n\nSo the statement is True.",
+        "**B.** → True\n\n$$w(w + 3) = 40$$\n\n$$w^{2} + 3w - 40 = 0$$\n\n$$(w + 8)(w - 5) = 0$$\n\nPositive width $w = 5$, longer side $8$ cm. Check: $5 \\cdot 8 = 40$.\n\nSo the statement is True.",
+        "**C.** → True\n\nSyrup $0.8 \\cdot 0.10 = 0.08$. Target $4\\%$:\n\n$$\\frac{0.08}{0.8 + w} = 0.04$$\n\n$$w = 1.2$$\n\nCheck: $0.08 / 2 = 0.04$.\n\nSo the statement is True.",
+        "**D.** → False\n\n$$|2x - 6| = 10$$ splits into $2x - 6 = 10$ and $2x - 6 = -10$, giving $x = 8$ and $x = -2$. Two real solutions, not one.\n\nSo the statement is False.",
+        "**E.** → True\n\n$$a + 0.7a + 0.49a = 10950$$\n\n$$2.19a = 10950$$\n\n$$a = 5000$$\n\nSecond place $0.7 \\cdot 5000 = 3500$ EUR.\n\nSo the statement is True."
+      ],
+      "difficulty_level": "5/5",
+      "sort_order": 220,
+      "solution_overview": "Independent claims: a two-printer work rate, a rectangle area, coffee-syrup dilution, an absolute-value equation, and a $70\\%$ prize chain.",
+      "placeholder": false
+    },
+    {
+      "id": "math-4-221",
+      "case_id": "MATH 4.221",
+      "title": "Exam-style tasks - 28",
+      "subsection": "4.5",
+      "context": "Evaluate each statement. Mark it TRUE or FALSE.",
+      "statements": [
+        "A tap fills an empty $240$ litre tub in $8$ minutes. Left open for $5$ minutes it pours $150$ litres.",
+        "The legs of a right triangle are $5$ cm and $12$ cm. A student claims the hypotenuse is $13$ cm and the area is $30$ cm$^{2}$.",
+        "Antifreeze: $5$ litres at $40\\%$ must become $25\\%$. Water to add is $3$ litres.",
+        "Decadic $\\log$: $\\log\\sqrt[3]{x} + \\log\\dfrac{1}{x^{3}} - \\log\\sqrt{x} + \\dfrac{11}{3} = \\dfrac{\\log x}{1 + \\log 10}$ has solution smaller than $5$.",
+        "A research grant of $13300$ EUR is split $100\\% : 75\\% : 56.25\\%$ of the lead share. The second investigator gets $4200$ EUR."
+      ],
+      "answer_key": [
+        true,
+        true,
+        true,
+        false,
+        false
+      ],
+      "tactical_explanations": [
+        "**A.** → True\n\nFlow rate $240 / 8 = 30$ litres per minute. In $5$ minutes: $30 \\cdot 5 = 150$ litres.\n\nSo the statement is True.",
+        "**B.** → True\n\nPythagoras: $5^{2} + 12^{2} = 25 + 144 = 169 = 13^{2}$. Area $\\tfrac{1}{2} \\cdot 5 \\cdot 12 = 30$. Both claims hold.\n\nSo the statement is True.",
+        "**C.** → True\n\nConcentrate $5 \\cdot 0.40 = 2$. Target $25\\%$:\n\n$$\\frac{2}{5 + w} = 0.25$$\n\n$$w = 3$$\n\nCheck: $2 / 8 = 0.25$.\n\nSo the statement is True.",
+        "**D.** → False\n\nWith $L = \\log x$:\n\n$$\\frac{1}{3}L - 3L - \\frac{1}{2}L + \\frac{11}{3} = \\frac{L}{2}$$\n\n$$-\\frac{19}{6}L + \\frac{11}{3} = \\frac{L}{2}$$\n\n$$\\frac{11}{3} = \\frac{11}{3}L$$\n\n$$L = 1 \\implies x = 10$$\n\nThe solution is not smaller than $5$.\n\nSo the statement is False.",
+        "**E.** → False\n\n$$a + 0.75a + 0.5625a = 13300$$\n\n$$2.3125a = 13300$$\n\n$$a = 5751.35\\ldots$$\n\nSecond share $0.75a \\approx 4313.51$ EUR, not $4200$.\n\nSo the statement is False."
+      ],
+      "difficulty_level": "5/5",
+      "sort_order": 221,
+      "solution_overview": "Independent claims: a tub fill rate, a $5$-$12$-$13$ triangle, antifreeze dilution, a composite logarithm, and a $75\\%$ grant chain.",
+      "placeholder": false
+    },
+    {
+      "id": "math-4-222",
+      "case_id": "MATH 4.222",
+      "title": "Exam-style tasks - 29",
+      "subsection": "4.5",
+      "context": "Evaluate each statement. Mark it TRUE or FALSE.",
+      "statements": [
+        "If a number is increased by one-third of itself, the result is $48$. The original number is $36$.",
+        "A light aircraft covers $240$ km at $160$ km/h and lands at $15{:}30$. Take-off was at $14{:}00$.",
+        "A cook has $1$ litre of $8\\%$ vinegar and needs $5\\%$. Adding $0.6$ litres of water is correct.",
+        "On $x \\ne 2$, the equation $\\dfrac{x + 4}{x - 2} = 3$ has solution $x = 5$.",
+        "Awards totaling $7600$ EUR are paid with second place getting $90\\%$ of first and third getting $90\\%$ of second. Second place is $2700$ EUR."
+      ],
+      "answer_key": [
+        true,
+        true,
+        true,
+        true,
+        false
+      ],
+      "tactical_explanations": [
+        "**A.** → True\n\n$$x + \\frac{x}{3} = 48$$\n\n$$\\frac{4x}{3} = 48$$\n\n$$x = 36$$\n\nSo the statement is True.",
+        "**B.** → True\n\n$$t = \\frac{240}{160} = 1.5$$\n\nhours. One and a half hours before $15{:}30$ is $14{:}00$.\n\nSo the statement is True.",
+        "**C.** → True\n\n$$\\frac{0.08}{1 + w} = 0.05$$\n\n$$w = 0.6$$\n\nCheck: $0.08 / 1.6 = 0.05$.\n\nSo the statement is True.",
+        "**D.** → True\n\n$$x + 4 = 3(x - 2)$$\n\n$$x + 4 = 3x - 6$$\n\n$$10 = 2x$$\n\n$$x = 5$$\n\nThe value $5$ avoids the hole $x = 2$.\n\nSo the statement is True.",
+        "**E.** → False\n\n$$a + 0.9a + 0.81a = 7600$$\n\n$$2.71a = 7600$$\n\n$$a = \\frac{7600}{2.71} \\approx 2804.43$$\n\nSecond place $0.9a \\approx 2524$ EUR, not $2700$.\n\nSo the statement is False."
+      ],
+      "difficulty_level": "5/5",
+      "sort_order": 222,
+      "solution_overview": "Independent claims: a fraction-of-itself sentence, an aircraft timetable, vinegar dilution, a rational equation, and a $90\\%$ award chain.",
+      "placeholder": false
+    },
+    {
+      "id": "math-4-223",
+      "case_id": "MATH 4.223",
+      "title": "Exam-style tasks - 30",
+      "subsection": "4.5",
+      "context": "Evaluate each statement. Mark it TRUE or FALSE.",
+      "statements": [
+        "A purse holds only $2$ EUR and $5$ EUR coins. There are $16$ coins worth $53$ EUR in all. There are then $7$ coins of $5$ EUR.",
+        "A metro train runs $36$ km at $48$ km/h and arrives at $9{:}45$. It departed at $8{:}45$.",
+        "Saline: $2$ litres at $9\\%$ must become $6\\%$. Water required is $1$ litre.",
+        "Decadic $\\log$: $\\dfrac{\\log x^{4}}{1 + \\log 10} = \\log x + 1$ has solution smaller than the solution of $\\log x = 2$.",
+        "Royalty payments of $18300$ EUR follow a $100\\% : 80\\% : 64\\%$ split of the lead share. The middle payment is $6000$ EUR."
+      ],
+      "answer_key": [
+        true,
+        false,
+        true,
+        true,
+        true
+      ],
+      "tactical_explanations": [
+        "**A.** → True\n\nLet $x$ be the number of $5$ EUR coins:\n\n$$5x + 2(16 - x) = 53$$\n\n$$3x + 32 = 53$$\n\n$$x = 7$$\n\nCheck: $7 \\cdot 5 + 9 \\cdot 2 = 35 + 18 = 53$.\n\nSo the statement is True.",
+        "**B.** → False\n\n$$t = \\frac{36}{48} = 0.75$$\n\nhours ($45$ minutes). Forty-five minutes before $9{:}45$ is $9{:}00$, not $8{:}45$.\n\nSo the statement is False.",
+        "**C.** → True\n\n$$\\frac{2 \\cdot 0.09}{2 + w} = 0.06$$\n\n$$\\frac{0.18}{2 + w} = 0.06$$\n\n$$w = 1$$\n\nCheck: $0.18 / 3 = 0.06$.\n\nSo the statement is True.",
+        "**D.** → True\n\n$$\\frac{4L}{2} = L + 1$$\n\n$$2L = L + 1$$\n\n$$L = 1 \\implies x = 10$$\n\nThe comparison equation $\\log x = 2$ gives $x = 100$, and $10 < 100$.\n\nSo the statement is True.",
+        "**E.** → True\n\n$$a + 0.8a + 0.64a = 18300$$\n\n$$2.44a = 18300$$\n\n$$a = 7500$$\n\nMiddle payment $0.8 \\cdot 7500 = 6000$ EUR.\n\nSo the statement is True."
+      ],
+      "difficulty_level": "5/5",
+      "sort_order": 223,
+      "solution_overview": "Independent claims: a two-coin purse, a metro timetable, saline dilution, a logarithmic comparison, and an $80\\%$ royalty chain.",
+      "placeholder": false
+    },
+    {
+      "id": "math-4-224",
+      "case_id": "MATH 4.224",
+      "title": "Exam-style tasks - 31",
+      "subsection": "4.5",
+      "context": "Evaluate each statement. Mark it TRUE or FALSE.",
+      "statements": [
+        "The product of two consecutive positive integers is $42$. The larger integer is $7$.",
+        "A freighter sails $96$ nautical miles at $16$ kn and berths at $20{:}00$. It cast off at $14{:}00$.",
+        "Ethanol mix: $1.2$ litres at $50\\%$ diluted to $20\\%$. Water needed is $1.8$ litres.",
+        "The roots of $x^{2} - 9x + 18 = 0$ have sum $10$.",
+        "Bursaries totaling $6125$ EUR are paid with each lower award $50\\%$ of the one above. The middle bursary is $1750$ EUR."
+      ],
+      "answer_key": [
+        true,
+        true,
+        true,
+        false,
+        true
+      ],
+      "tactical_explanations": [
+        "**A.** → True\n\n$$n(n + 1) = 42$$\n\n$$n^{2} + n - 42 = 0$$\n\n$$(n + 7)(n - 6) = 0$$\n\nPositive $n = 6$, larger integer $7$. Check: $6 \\cdot 7 = 42$.\n\nSo the statement is True.",
+        "**B.** → True\n\n$$t = \\frac{96}{16} = 6$$\n\nhours. Six hours before $20{:}00$ is $14{:}00$.\n\nSo the statement is True.",
+        "**C.** → True\n\n$$\\frac{1.2 \\cdot 0.50}{1.2 + w} = 0.20$$\n\n$$\\frac{0.60}{1.2 + w} = 0.20$$\n\n$$w = 1.8$$\n\nCheck: $0.60 / 3 = 0.20$.\n\nSo the statement is True.",
+        "**D.** → False\n\n$$(x - 3)(x - 6) = 0$$\n\nRoots $3$ and $6$ sum to $9$, which is also the Vieta coefficient of $-x$. The claim $10$ is wrong.\n\nSo the statement is False.",
+        "**E.** → True\n\n$$a + 0.5a + 0.25a = 6125$$\n\n$$1.75a = 6125$$\n\n$$a = 3500$$\n\nMiddle bursary $0.5 \\cdot 3500 = 1750$ EUR.\n\nSo the statement is True."
+      ],
+      "difficulty_level": "5/5",
+      "sort_order": 224,
+      "solution_overview": "Independent claims: consecutive-integer product, a freighter timetable, ethanol dilution, Vieta sum for a quadratic, and a half-share bursary chain.",
+      "placeholder": false
+    },
+    {
+      "id": "math-4-225",
+      "case_id": "MATH 4.225",
+      "title": "Exam-style tasks - 32",
+      "subsection": "4.5",
+      "context": "Evaluate each statement. Mark it TRUE or FALSE.",
+      "statements": [
+        "An isosceles triangle has equal sides $x$ cm and base $x - 2$ cm. Its perimeter is $28$ cm, so each equal side is $10$ cm.",
+        "A tram covers $27$ km at $36$ km/h and arrives at $12{:}15$. It left the depot at $11{:}30$.",
+        "Cream: $0.5$ litres at $36\\%$ fat diluted to $12\\%$. Water to add is $1.5$ litres.",
+        "The equation $3^{x} = 81$ has unique real solution $x = 4$.",
+        "Tip jars totaling $4880$ EUR are shared with each next share $80\\%$ of the previous. The second tip share is $1600$ EUR."
+      ],
+      "answer_key": [
+        true,
+        true,
+        false,
+        true,
+        true
+      ],
+      "tactical_explanations": [
+        "**A.** → True\n\n$$x + x + (x - 2) = 28$$\n\n$$3x - 2 = 28$$\n\n$$3x = 30$$\n\n$$x = 10$$\n\nEqual sides $10$ cm, base $8$ cm. Check: $10 + 10 + 8 = 28$.\n\nSo the statement is True.",
+        "**B.** → True\n\n$$t = \\frac{27}{36} = 0.75$$\n\nhours. Forty-five minutes before $12{:}15$ is $11{:}30$.\n\nSo the statement is True.",
+        "**C.** → False\n\n$$\\frac{0.5 \\cdot 0.36}{0.5 + w} = 0.12$$\n\n$$\\frac{0.18}{0.5 + w} = 0.12$$\n\n$$w = 1$$\n\nAdding $1.5$ litres gives concentration $0.18 / 2 = 0.09 = 9\\%$, not $12\\%$.\n\nSo the statement is False.",
+        "**D.** → True\n\n$$81 = 3^{4}$$\n\nso $3^{x} = 3^{4}$ forces $x = 4$.\n\nSo the statement is True.",
+        "**E.** → True\n\n$$a + 0.8a + 0.64a = 4880$$\n\n$$2.44a = 4880$$\n\n$$a = 2000$$\n\nSecond share $0.8 \\cdot 2000 = 1600$ EUR.\n\nSo the statement is True."
+      ],
+      "difficulty_level": "5/5",
+      "sort_order": 225,
+      "solution_overview": "Independent claims: an isosceles perimeter, a tram timetable, cream dilution, a base-$3$ exponential, and an $80\\%$ tip split.",
+      "placeholder": false
+    },
+    {
+      "id": "math-4-226",
+      "case_id": "MATH 4.226",
+      "title": "Exam-style tasks - 33",
+      "subsection": "4.5",
+      "context": "Evaluate each statement. Mark it TRUE or FALSE.",
+      "statements": [
+        "A $13$ m ladder leans against a wall with its foot $5$ m from the base. The height it reaches on the wall is $12$ m.",
+        "A coastal ferry does $80$ km at $64$ km/h and docks at $15{:}00$. Departure was at $13{:}15$.",
+        "Dye bath: $3$ litres at $16\\%$ reduced to $10\\%$. Water needed is $1.8$ litres.",
+        "Decadic $\\log$: $(\\log x)^{2} = \\log x + 6$ has exactly one positive solution.",
+        "Dividends of $9750$ EUR follow a $100\\% : 50\\% : 25\\%$ lead-share pattern. The second tranche is $2500$ EUR."
+      ],
+      "answer_key": [
+        true,
+        false,
+        true,
+        false,
+        false
+      ],
+      "tactical_explanations": [
+        "**A.** → True\n\nPythagoras with legs $5$ and height $h$:\n\n$$5^{2} + h^{2} = 13^{2}$$\n\n$$25 + h^{2} = 169$$\n\n$$h^{2} = 144$$\n\n$$h = 12$$\n\n(positive height).\n\nSo the statement is True.",
+        "**B.** → False\n\n$$t = \\frac{80}{64} = 1.25$$\n\nhours ($1$ h $15$ min). From $15{:}00$ back $1$ h $15$ min lands at $13{:}45$, not $13{:}15$.\n\nSo the statement is False.",
+        "**C.** → True\n\n$$\\frac{3 \\cdot 0.16}{3 + w} = 0.10$$\n\n$$\\frac{0.48}{3 + w} = 0.10$$\n\n$$w = 1.8$$\n\nCheck: $0.48 / 4.8 = 0.10$.\n\nSo the statement is True.",
+        "**D.** → False\n\n$$u^{2} - u - 6 = 0$$ with $u = \\log x$:\n\n$$(u - 3)(u + 2) = 0$$\n\n$$u = 3$$ or $u = -2$$\n\ngiving $x = 1000$ and $x = 0.01$, both positive. Two solutions, not one.\n\nSo the statement is False.",
+        "**E.** → False\n\n$$a + 0.5a + 0.25a = 9750$$\n\n$$1.75a = 9750$$\n\n$$a = 5571.43\\ldots$$\n\nSecond tranche $0.5a \\approx 2785.71$ EUR, not $2500$.\n\nSo the statement is False."
+      ],
+      "difficulty_level": "5/5",
+      "sort_order": 226,
+      "solution_overview": "Independent claims: a ladder Pythagoras check, a ferry timetable, dye dilution, a quadratic-in-log equation, and a half-share dividend chain.",
+      "placeholder": false
+    },
+    {
+      "id": "math-4-227",
+      "case_id": "MATH 4.227",
+      "title": "Exam-style tasks - 34",
+      "subsection": "4.5",
+      "context": "Evaluate each statement. Mark it TRUE or FALSE.",
+      "statements": [
+        "The mean of five scores is $14$. Four of them are $11$, $12$, $15$, and $16$. The missing score is $16$.",
+        "A runner covers $9$ km at $6$ km/h and then $6$ km at $9$ km/h. The whole run takes $2$ hours.",
+        "Disinfectant: $2.4$ litres at $5\\%$ diluted to $2\\%$. Water to add is $3.6$ litres.",
+        "The equation $|x - 4| = 2x$ has solution set $\\{4\\}$.",
+        "Stipends totaling $12200$ EUR use an $80\\%$ step-down twice. Second stipend is $4000$ EUR."
+      ],
+      "answer_key": [
+        true,
+        false,
+        true,
+        false,
+        true
+      ],
+      "tactical_explanations": [
+        "**A.** → True\n\nFive scores sum to $5 \\cdot 14 = 70$. Known sum $11 + 12 + 15 + 16 = 54$, so the missing score is $70 - 54 = 16$.\n\nSo the statement is True.",
+        "**B.** → False\n\n$$t = \\frac{9}{6} + \\frac{6}{9} = 1.5 + \\frac{2}{3} = \\frac{13}{6}$$\n\nhours, about $2$ h $10$ min, not exactly $2$ hours.\n\nSo the statement is False.",
+        "**C.** → True\n\n$$\\frac{2.4 \\cdot 0.05}{2.4 + w} = 0.02$$\n\n$$\\frac{0.12}{2.4 + w} = 0.02$$\n\n$$w = 3.6$$\n\nCheck: $0.12 / 6 = 0.02$.\n\nSo the statement is True.",
+        "**D.** → False\n\n$|x - 4| = 2x$ requires $2x \\ge 0$, so $x \\ge 0$. Cases:\n\n$$x - 4 = 2x \\implies x = -4$$ (rejected),\n\n$$4 - x = 2x \\implies 4 = 3x \\implies x = \\dfrac{4}{3}$$\n\nThe unique solution is $\\tfrac{4}{3}$, not $\\{4\\}$.\n\nSo the statement is False.",
+        "**E.** → True\n\n$$a + 0.8a + 0.64a = 12200$$\n\n$$2.44a = 12200$$\n\n$$a = 5000$$\n\nSecond stipend $4000$ EUR.\n\nSo the statement is True."
+      ],
+      "difficulty_level": "5/5",
+      "sort_order": 227,
+      "solution_overview": "Independent claims: a missing mean, a two-leg run, disinfectant dilution, an absolute-value equation, and an $80\\%$ stipend chain.",
+      "placeholder": false
+    },
+    {
+      "id": "math-4-228",
+      "case_id": "MATH 4.228",
+      "title": "Exam-style tasks - 35",
+      "subsection": "4.5",
+      "context": "Evaluate each statement. Mark it TRUE or FALSE.",
+      "statements": [
+        "Water flows into an empty tank at $15$ litres per minute. After $12$ minutes the tank is four-fifths full, so the capacity is $180$ litres.",
+        "A taxi covers $45$ km at $60$ km/h and arrives at $10{:}00$. It left at $9{:}15$.",
+        "Soup stock: $1.6$ litres at $12.5\\%$ salt reduced to $5\\%$. Water needed is $2.4$ litres.",
+        "On $x \\ne -1$, $\\dfrac{2x + 1}{x + 1} = 3$ has solution $x = -2$.",
+        "Medal bonuses totaling $15250$ EUR step down by $20\\%$ each place. Second place gets $5000$ EUR."
+      ],
+      "answer_key": [
+        false,
+        true,
+        true,
+        true,
+        true
+      ],
+      "tactical_explanations": [
+        "**A.** → False\n\nVolume delivered $15 \\cdot 12 = 180$ litres is four-fifths of capacity:\n\n$$\\frac{4}{5}C = 180 \\implies C = 225$$\n\nCapacity is $225$ litres, not $180$.\n\nSo the statement is False.",
+        "**B.** → True\n\n$$t = \\frac{45}{60} = 0.75$$\n\nhours. Forty-five minutes before $10{:}00$ is $9{:}15$.\n\nSo the statement is True.",
+        "**C.** → True\n\n$$\\frac{1.6 \\cdot 0.125}{1.6 + w} = 0.05$$\n\n$$\\frac{0.20}{1.6 + w} = 0.05$$\n\n$$w = 2.4$$\n\nCheck: $0.20 / 4 = 0.05$.\n\nSo the statement is True.",
+        "**D.** → True\n\n$$2x + 1 = 3(x + 1)$$\n\n$$2x + 1 = 3x + 3$$\n\n$$x = -2$$\n\nThe value $-2$ is admissible since $-2 \\ne -1$.\n\nSo the statement is True.",
+        "**E.** → True\n\nA $20\\%$ step-down is a factor $0.8$:\n\n$$a + 0.8a + 0.64a = 15250$$\n\n$$2.44a = 15250$$\n\n$$a = 6250$$\n\nSecond place $0.8 \\cdot 6250 = 5000$ EUR.\n\nSo the statement is True."
+      ],
+      "difficulty_level": "5/5",
+      "sort_order": 228,
+      "solution_overview": "Independent claims: a tank filled to a fraction of capacity, a taxi timetable, soup dilution, a rational equation, and a $20\\%$ step-down medal bonus.",
+      "placeholder": false
+    },
+    {
+      "id": "math-4-229",
+      "case_id": "MATH 4.229",
+      "title": "Exam-style tasks - 36",
+      "subsection": "4.5",
+      "context": "Evaluate each statement. Mark it TRUE or FALSE.",
+      "statements": [
+        "A rectangle's length is twice its width and the perimeter is $48$ cm, so the width is $10$ cm.",
+        "Car A leaves at $8{:}00$ at $60$ km/h. Car B leaves the same depot at $9{:}00$ at $90$ km/h chasing A. They meet at $11{:}00$.",
+        "Wine must: $2$ litres at $12\\%$ alcohol cut to $8\\%$. Water to add is $1$ litre.",
+        "Decadic $\\log$: $\\log\\sqrt{x} + \\log x^{3} - \\log x = 5$ has solution larger than $50$.",
+        "Escrow payouts of $8750$ EUR use successive halves. The second payout is $2500$ EUR."
+      ],
+      "answer_key": [
+        false,
+        true,
+        true,
+        true,
+        true
+      ],
+      "tactical_explanations": [
+        "**A.** → False\n\n$$2(2w + w) = 48$$\n\n$$6w = 48$$\n\n$$w = 8$$\n\nWidth is $8$ cm, not $10$.\n\nSo the statement is False.",
+        "**B.** → True\n\nLet $t$ be hours after $8{:}00$ when they meet. Then B has driven $t - 1$ hours:\n\n$$60t = 90(t - 1)$$\n\n$$60t = 90t - 90$$\n\n$$30t = 90$$\n\n$$t = 3$$\n\nMeeting time $11{:}00$. Distances: $60 \\cdot 3 = 180$ km and $90 \\cdot 2 = 180$ km.\n\nSo the statement is True.",
+        "**C.** → True\n\n$$\\frac{0.24}{2 + w} = 0.08$$\n\n$$w = 1$$\n\nCheck: $0.24 / 3 = 0.08$.\n\nSo the statement is True.",
+        "**D.** → True\n\n$$\\frac{1}{2}L + 3L - L = 5$$\n\n$$\\frac{5}{2}L = 5$$\n\n$$L = 2 \\implies x = 100 > 50$$\n\nSo the statement is True.",
+        "**E.** → True\n\n$$a + 0.5a + 0.25a = 8750$$\n\n$$1.75a = 8750$$\n\n$$a = 5000$$\n\nSecond payout $2500$ EUR.\n\nSo the statement is True."
+      ],
+      "difficulty_level": "5/5",
+      "sort_order": 229,
+      "solution_overview": "Independent claims: a $2{:}1$ rectangle perimeter, a pursuit meeting time, wine dilution, a composite logarithm, and a half-share escrow split.",
+      "placeholder": false
+    },
+    {
+      "id": "math-4-230",
+      "case_id": "MATH 4.230",
+      "title": "Exam-style tasks - 37",
+      "subsection": "4.5",
+      "context": "Evaluate each statement. Mark it TRUE or FALSE.",
+      "statements": [
+        "A carpenter cuts a board whose length is $1$ cm more than twice the width, and the area is $36$ cm$^{2}$. The width is $4$ cm.",
+        "A canoe covers $21$ km downstream at $7$ km/h and arrives at $16{:}00$. Launch time was $13{:}00$.",
+        "Hair gel: $0.75$ litres at $8\\%$ active agent diluted to $3\\%$. Water needed is $1.25$ litres.",
+        "The equation $5^{x} = 125$ has unique real solution $x = 2$.",
+        "Choir prize money $4880$ EUR steps down by $20\\%$ twice. Second place receives $1600$ EUR."
+      ],
+      "answer_key": [
+        true,
+        true,
+        true,
+        false,
+        true
+      ],
+      "tactical_explanations": [
+        "**A.** → True\n\n$$w(2w + 1) = 36$$\n\n$$2w^{2} + w - 36 = 0$$\n\n$$\\Delta = 1 + 288 = 289$$\n\n$$w = \\frac{-1 + 17}{4} = 4$$\n\n(positive root). Check: $4 \\cdot 9 = 36$.\n\nSo the statement is True.",
+        "**B.** → True\n\n$$t = \\frac{21}{7} = 3$$\n\nhours. Three hours before $16{:}00$ is $13{:}00$.\n\nSo the statement is True.",
+        "**C.** → True\n\n$$\\frac{0.75 \\cdot 0.08}{0.75 + w} = 0.03$$\n\n$$\\frac{0.06}{0.75 + w} = 0.03$$\n\n$$w = 1.25$$\n\nCheck: $0.06 / 2 = 0.03$.\n\nSo the statement is True.",
+        "**D.** → False\n\n$$125 = 5^{3}$$\n\nso $x = 3$, not $2$.\n\nSo the statement is False.",
+        "**E.** → True\n\n$$a + 0.8a + 0.64a = 4880$$\n\n$$a = 2000$$\n\nSecond place $1600$ EUR.\n\nSo the statement is True."
+      ],
+      "difficulty_level": "5/5",
+      "sort_order": 230,
+      "solution_overview": "Independent claims: a board-area quadratic, a canoe timetable, gel dilution, a base-$5$ exponential, and an $80\\%$ choir prize split.",
+      "placeholder": false
+    },
+    {
+      "id": "math-4-231",
+      "case_id": "MATH 4.231",
+      "title": "Exam-style tasks - 38",
+      "subsection": "4.5",
+      "context": "Evaluate each statement. Mark it TRUE or FALSE.",
+      "statements": [
+        "Three consecutive integers sum to $54$. The middle integer is $18$.",
+        "A cable car climbs $4.5$ km at $9$ km/h and tops out at $14{:}20$. It left the valley station at $13{:}50$.",
+        "Mustard paste: $1$ litre at $18\\%$ solids diluted to $12\\%$. Water to add is $0.5$ litres.",
+        "Decadic $\\log$: $\\log x^{3} + \\log\\dfrac{1}{x} = \\log 100$ has solution strictly greater than $10$.",
+        "Fellowships totaling $14625$ EUR use an $80\\%$ step-down. The middle fellowship is $4800$ EUR."
+      ],
+      "answer_key": [
+        true,
+        true,
+        true,
+        false,
+        true
+      ],
+      "tactical_explanations": [
+        "**A.** → True\n\n$$(n - 1) + n + (n + 1) = 54$$\n\n$$3n = 54$$\n\n$$n = 18$$\n\nSo the statement is True.",
+        "**B.** → True\n\n$$t = \\frac{4.5}{9} = 0.5$$\n\nhours. Thirty minutes before $14{:}20$ is $13{:}50$.\n\nSo the statement is True.",
+        "**C.** → True\n\n$$\\frac{0.18}{1 + w} = 0.12$$\n\n$$w = 0.5$$\n\nCheck: $0.18 / 1.5 = 0.12$.\n\nSo the statement is True.",
+        "**D.** → False\n\n$$3L - L = 2$$\n\n$$2L = 2$$\n\n$$L = 1 \\implies x = 10$$\n\nThe solution equals $10$, so it is not strictly greater than $10$.\n\nSo the statement is False.",
+        "**E.** → True\n\n$$a + 0.8a + 0.64a = 14625$$\n\n$$a = 6000$$\n\nMiddle fellowship $4800$ EUR.\n\nSo the statement is True."
+      ],
+      "difficulty_level": "5/5",
+      "sort_order": 231,
+      "solution_overview": "Independent claims: consecutive integers, a cable-car timetable, mustard dilution, a short logarithmic equation, and an $80\\%$ fellowship chain.",
+      "placeholder": false
+    },
+    {
+      "id": "math-4-232",
+      "case_id": "MATH 4.232",
+      "title": "Exam-style tasks - 39",
+      "subsection": "4.5",
+      "context": "Evaluate each statement. Mark it TRUE or FALSE.",
+      "statements": [
+        "A $12$ m by $8$ m patio has a $1$ m path all round. The path area is $44$ m$^{2}$.",
+        "A drone flies $28$ km at $112$ km/h and lands at $18{:}45$. Take-off was at $18{:}20$.",
+        "Printer ink: $0.4$ litres at $25\\%$ pigment diluted to $10\\%$. Water needed is $0.6$ litres.",
+        "The product of the roots of $x^{2} - 5x + 6 = 0$ equals $6$.",
+        "Endowment awards of $6125$ EUR use successive halves. The middle award is $1750$ EUR."
+      ],
+      "answer_key": [
+        true,
+        false,
+        true,
+        true,
+        true
+      ],
+      "tactical_explanations": [
+        "**A.** → True\n\nOuter rectangle $14$ m by $10$ m:\n\n$$14 \\cdot 10 - 12 \\cdot 8 = 140 - 96 = 44$$\n\nSo the statement is True.",
+        "**B.** → False\n\n$$t = \\frac{28}{112} = 0.25$$\n\nhours ($15$ minutes). Fifteen minutes before $18{:}45$ is $18{:}30$, not $18{:}20$.\n\nSo the statement is False.",
+        "**C.** → True\n\n$$\\frac{0.4 \\cdot 0.25}{0.4 + w} = 0.10$$\n\n$$\\frac{0.10}{0.4 + w} = 0.10$$\n\n$$w = 0.6$$\n\nCheck: $0.10 / 1 = 0.10$.\n\nSo the statement is True.",
+        "**D.** → True\n\n$$(x - 2)(x - 3) = 0$$\n\nProduct $2 \\cdot 3 = 6$, matching Vieta's constant term.\n\nSo the statement is True.",
+        "**E.** → True\n\n$$a + 0.5a + 0.25a = 6125$$\n\n$$a = 3500$$\n\nMiddle award $1750$ EUR.\n\nSo the statement is True."
+      ],
+      "difficulty_level": "5/5",
+      "sort_order": 232,
+      "solution_overview": "Independent claims: a patio path area, a drone timetable, ink dilution, Vieta product for a quadratic, and a half-share endowment split.",
+      "placeholder": false
+    },
+    {
+      "id": "math-4-233",
+      "case_id": "MATH 4.233",
+      "title": "Exam-style tasks - 40",
+      "subsection": "4.5",
+      "context": "Evaluate each statement. Mark it TRUE or FALSE.",
+      "statements": [
+        "Three times a temperature change, taken with the opposite sign, equals $12$ degrees. The change was $-4$ degrees.",
+        "A glacier bus covers $64$ km at $32$ km/h and arrives at $17{:}00$. It departed at $15{:}00$.",
+        "Yogurt culture: $2$ litres at $6\\%$ diluted to $4\\%$. Water to add is $1$ litre.",
+        "Decadic $\\log$: $\\log\\sqrt[4]{x} + \\log\\dfrac{1}{x^{2}} - \\log\\sqrt{x} + \\dfrac{5}{2} = \\dfrac{\\log\\sqrt{x}}{1 + \\log 10}$ has integer solution $10$.",
+        "Royalty pool $10950$ EUR with $70\\%$ step-downs gives second place $4000$ EUR."
+      ],
+      "answer_key": [
+        true,
+        true,
+        true,
+        true,
+        false
+      ],
+      "tactical_explanations": [
+        "**A.** → True\n\n$$-3x = 12$$\n\n$$x = -4$$\n\nSo the statement is True.",
+        "**B.** → True\n\n$$t = \\frac{64}{32} = 2$$\n\nhours. Two hours before $17{:}00$ is $15{:}00$.\n\nSo the statement is True.",
+        "**C.** → True\n\n$$\\frac{2 \\cdot 0.06}{2 + w} = 0.04$$\n\n$$\\frac{0.12}{2 + w} = 0.04$$\n\n$$w = 1$$\n\nCheck: $0.12 / 3 = 0.04$.\n\nSo the statement is True.",
+        "**D.** → True\n\nAs in the power-rule reduction,\n\n$$-\\frac{9}{4}L + \\frac{5}{2} = \\frac{1}{4}L$$\n\n$$L = 1 \\implies x = 10$$\n\nan integer.\n\nSo the statement is True.",
+        "**E.** → False\n\n$$a + 0.7a + 0.49a = 10950$$\n\n$$a = 5000$$\n\nSecond place $3500$ EUR, not $4000$.\n\nSo the statement is False."
+      ],
+      "difficulty_level": "5/5",
+      "sort_order": 233,
+      "solution_overview": "Independent claims: a signed temperature change, a glacier-bus timetable, yogurt dilution, a composite logarithm, and a $70\\%$ royalty chain.",
+      "placeholder": false
+    },
+    {
+      "id": "math-4-234",
+      "case_id": "MATH 4.234",
+      "title": "Exam-style tasks - 41",
+      "subsection": "4.5",
+      "context": "Evaluate each statement. Mark it TRUE or FALSE.",
+      "statements": [
+        "A rectangular field is $8$ m longer than it is wide. A uniform $1.5$ m path around it has area $141$ m$^{2}$. The field width is $18$ m.",
+        "A night train covers $315$ km at $90$ km/h and arrives at $06{:}30$. It left at $03{:}00$.",
+        "Brine: $5$ litres at $10\\%$ salt reduced to $4\\%$. Water needed is $7.5$ litres.",
+        "The equation $2(x + 4) = 2x + 8$ is an identity, true for every real $x$.",
+        "Jackpot shares totaling $12200$ EUR with $80\\%$ step-downs give second place $4500$ EUR."
+      ],
+      "answer_key": [
+        true,
+        true,
+        true,
+        true,
+        false
+      ],
+      "tactical_explanations": [
+        "**A.** → True\n\nLet width be $w$, length $w + 8$. Outer dimensions $w + 3$ by $w + 11$:\n\n$$(w + 3)(w + 11) - w(w + 8) = 141$$\n\n$$6w + 33 = 141$$\n\n$$w = 18$$\n\nSo the statement is True.",
+        "**B.** → True\n\n$$t = \\frac{315}{90} = 3.5$$\n\nhours. Three and a half hours before $06{:}30$ is $03{:}00$.\n\nSo the statement is True.",
+        "**C.** → True\n\n$$\\frac{5 \\cdot 0.10}{5 + w} = 0.04$$\n\n$$\\frac{0.50}{5 + w} = 0.04$$\n\n$$w = 7.5$$\n\nCheck: $0.50 / 12.5 = 0.04$.\n\nSo the statement is True.",
+        "**D.** → True\n\n$$2(x + 4) = 2x + 8$$\n\n$$2x + 8 = 2x + 8$$\n\nEvery real $x$ satisfies the identity.\n\nSo the statement is True.",
+        "**E.** → False\n\n$$a + 0.8a + 0.64a = 12200$$\n\n$$a = 5000$$\n\nSecond place $4000$ EUR, not $4500$.\n\nSo the statement is False."
+      ],
+      "difficulty_level": "5/5",
+      "sort_order": 234,
+      "solution_overview": "Independent claims: a field-and-path area, a night-train timetable, brine dilution, a linear identity, and an $80\\%$ jackpot chain.",
+      "placeholder": false
     }
   ]
 }
