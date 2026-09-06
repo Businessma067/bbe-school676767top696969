@@ -6506,9 +6506,9 @@ $$S(N)=800 N^{\\frac{1}{2}}$$
 
 The leftover exponent on unit cost is negative, so unit cost falls. The leftover exponent on spend is positive, so cumulative spend still rises. At the two milestones:
 
-$$S(100)=8000, \\qquad S(400)$$
+$$S(100)=8000, \$$
 
-$$S(100)=16000$$
+$$S(400)=16000$$
 
 Spend rises while unit cost falls.
 
@@ -6748,7 +6748,9 @@ $$R(p)=4000 p^{-2}$$
 
 The leftover exponent is negative, so raising the price cuts revenue for every $p>0$. Differentiating:
 
-$$R'(p)=-8000 p^{-3}<0$$
+$$R'(p)=-8000 p^{-3}$$
+
+$$-8000 p^{-3}<0$$
 
 Revenue always falls as the price rises.
 
@@ -6860,9 +6862,7 @@ $$16^{\\frac{3}{2}}=(\\sqrt{16})^{3}$$
 
 $$16^{\\frac{3}{2}}$$
 
-$$16^{\\frac{3}{2}}$$
-
-$$=64$$
+$$16^{\\frac{3}{2}}=64$$
 
 $$S(16)=5\\cdot 64$$
 
@@ -6989,7 +6989,7 @@ Compare two $8$ kg buoys with one $64$ kg buoy. The overview recovered $H(m)=6m^
 
 $$H(8)=24$$
 
-, so
+so
 
 $$2H(8)=48$$
 
@@ -6997,9 +6997,7 @@ $$64^{\\frac{2}{3}}=(4^{3})^{\\frac{2}{3}}$$
 
 $$64^{\\frac{2}{3}}$$
 
-$$64^{\\frac{2}{3}}$$
-
-$$=16$$
+$$64^{\\frac{2}{3}}=16$$
 
 $$H(64)=6\\cdot 16$$
 
@@ -7018,9 +7016,7 @@ $$125^{\\frac{2}{3}}=(5^{3})^{\\frac{2}{3}}$$
 
 $$125^{\\frac{2}{3}}$$
 
-$$125^{\\frac{2}{3}}$$
-
-$$=25$$
+$$125^{\\frac{2}{3}}=25$$
 
 $$H(125)=6\\cdot 25$$
 
@@ -7202,6 +7198,8 @@ Whether $11$ m still clears $8$ Mbps is a level of the recovered law:
 
 $$T(11)=\\frac{800}{11^{2}}$$
 
+$$T(11)=\\frac{800}{11}$$
+
 $$T(11)=\\frac{800}{121}\\approx 6.61$$
 
 The claim needs $T(11)\\ge 8$. We have $6.61<8$.
@@ -7288,9 +7286,7 @@ $$16^{\\frac{3}{4}}=(2^{4})^{\\frac{3}{4}}$$
 
 $$16^{\\frac{3}{4}}$$
 
-$$16^{\\frac{3}{4}}$$
-
-$$=8$$
+$$16^{\\frac{3}{4}}=8$$
 
 $$G(16)=8\\cdot 8$$
 
@@ -7329,15 +7325,11 @@ $$64^{\\frac{3}{4}}=(2^{6})^{\\frac{3}{4}}$$
 
 $$64^{\\frac{3}{4}}$$
 
-$$64^{\\frac{3}{4}}$$
-
-$$=2^{\\frac{9}{2}}$$
+$$64^{\\frac{3}{4}}=2^{\\frac{9}{2}}$$
 
 $$64^{\\frac{3}{4}}$$
 
-$$64^{\\frac{3}{4}}$$
-
-$$=16\\sqrt{2}$$
+$$64^{\\frac{3}{4}}=16\\sqrt{2}$$
 
 $$G(64)=8\\cdot 16\\sqrt{2}$$
 
@@ -7551,6 +7543,8 @@ $$\\frac{y(2L)}{y(L)}=2^{2}$$
 
 $$\\frac{y(2L)}{y(L)}=4$$
 
+$$\\frac{y(2L)}{y(L)}=4$$
+
 Doubling the span quadruples the tip deflection.
 
 The computed figure disagrees with the claim.
@@ -7682,9 +7676,7 @@ $$\\left(\\frac{11}{10}\\right)^{3}=\\frac{1331}{1000}$$
 
 $$\\left(\\frac{11}{10}\\right)^{3}$$
 
-$$\\left(\\frac{11}{10}\\right)^{3}$$
-
-$$=1.331$$
+$$\\left(\\frac{11}{10}\\right)^{3}=1.331$$
 
 Mass rises by $33.1\\%$, which is more than $30\\%$.
 
@@ -7906,6 +7898,8 @@ Read the exponent from the overview before comparing growth rates.
 Doubling flow multiplies head by $2$ only if the exponent is $1$. The recovered head law is $H(q)=2q^{2}$, so
 
 $$\\frac{H(2q)}{H(q)}=2^{2}$$
+
+$$\\frac{H(2q)}{H(q)}=4$$
 
 $$\\frac{H(2q)}{H(q)}=4$$
 
@@ -8156,7 +8150,7 @@ $$R(4)=\\frac{2000}{2}$$
 
 $$R(4)=1000$$
 
-. Doubling revenue means $R=2000$:
+Doubling revenue means $R=2000$:
 
 $$2000p^{-\\frac{1}{2}}=2000$$
 
@@ -8635,9 +8629,7 @@ Read the exponent from the overview before comparing growth rates.
 
 The learning component is $50n^{-\\frac{1}{2}}$. Quadrupling cumulative output multiplies that term by $4^{-\\frac{1}{2}}$:
 
-$$
-\\frac{50(4n)^{-\\frac{1}{2}}}{50n^{-\\frac{1}{2}}}=\\frac{1}{2}
-$$
+$$\\frac{50(4n)^{-\\frac{1}{2}}}{50n^{-\\frac{1}{2}}}=\\frac{1}{2}$$
 
 Quadrupling halves the learning component.
 
@@ -8650,9 +8642,9 @@ Start from the calibrated closed form in the overview.
 
 Quadrupling the first recorded point sends $n=25$ to $n=100$, the second recorded point:
 
-$$t(25)=18, \\qquad t(100)$$
+$$t(25)=18, \$$
 
-$$t(25)=13$$
+$$t(100)=13$$
 
 $$\\frac{13}{18}\\approx 0.722$$
 
