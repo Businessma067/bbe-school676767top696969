@@ -29,6 +29,7 @@ import {
 } from "@/components/PracticeMobileChapters";
 import { useSetPracticeCase } from "@/lib/practice-case-context";
 import { useAuthGate } from "@/hooks/use-auth-gate";
+import { economicsDifficultyFor } from "@/data/economics-difficulty-by-case-id";
 import { Check, X, ChevronLeft, ChevronRight, ChevronDown, Loader2, RotateCcw, BookOpen, AlertTriangle, NotebookPen, Settings2, Lock, PanelLeftClose, PanelLeftOpen } from "lucide-react";
 
 const CHAPTER5_FREE_LIMIT = 8;
@@ -160,7 +161,13 @@ function EconomicsTasks() {
         .order("sort_order", { ascending: true });
       if (cancel) return;
       if (error) setError(error.message);
-      else setCases((data as Case[]) ?? []);
+      else {
+        const rows = ((data as Case[]) ?? []).map((c) => ({
+          ...c,
+          difficulty_level: economicsDifficultyFor(c.case_id, c.difficulty_level),
+        }));
+        setCases(rows);
+      }
     })();
     return () => { cancel = true; };
   }, []);

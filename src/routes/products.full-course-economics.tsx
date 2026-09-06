@@ -30,6 +30,7 @@ import {
   PracticeChaptersShell,
 } from "@/components/PracticeMobileChapters";
 import { useSetPracticeCase } from "@/lib/practice-case-context";
+import { economicsDifficultyFor } from "@/data/economics-difficulty-by-case-id";
 
 // Full course: everything is unlocked. No free-tier gating, no phantom locked rows.
 const phantomCountFor = (_ch: number): number => 0;
@@ -162,7 +163,13 @@ function EconomicsTasks() {
         .limit(5000);
       if (cancel) return;
       if (error) setError(error.message);
-      else setCases(((data as Case[]) ?? []).filter(isMainFullCourseCase));
+      else {
+        const rows = ((data as Case[]) ?? []).filter(isMainFullCourseCase).map((c) => ({
+          ...c,
+          difficulty_level: economicsDifficultyFor(c.case_id, c.difficulty_level),
+        }));
+        setCases(rows);
+      }
     })();
     return () => { cancel = true; };
   }, []);
