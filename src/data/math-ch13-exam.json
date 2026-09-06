@@ -1,646 +1,6 @@
 {
   "tasks": [
     {
-      "id": "math-13-56",
-      "case_id": "MATH 13.56",
-      "title": "Exam-style tasks - 1",
-      "subsection": "13.5",
-      "context": "Evaluate each statement. Mark it TRUE or FALSE.",
-      "statements": [
-        "Nine independently prepared blood assays each return positive with probability $\\dfrac{1}{5}$. The laboratory claims that exactly $3$ positives occur with probability $\\dfrac{344064}{1953125}$.",
-        "A repair centre checks $7$ independent devices, each failing with probability $\\dfrac{1}{3}$. It claims that at most $2$ fail with probability $\\dfrac{139}{243}$.",
-        "A support desk resolves each of $12$ independent tickets on first contact with probability $\\dfrac{1}{10}$. The daily count is claimed to have mean $\\dfrac{6}{5}$ and variance $\\dfrac{27}{25}$.",
-        "Production line A tests $8$ items with pass probability $\\dfrac{1}{4}$, while line B tests $9$ with pass probability $\\dfrac{2}{5}$. The chance of exactly $3$ passes is claimed to be more likely for A than for B.",
-        "Backup A makes $4$ independent activation attempts with success probability $\\dfrac{1}{10}$; backup B makes $7$ with probability $\\dfrac{1}{10}$. At least one activation is claimed to be less likely for A."
-      ],
-      "answer_key": [
-        true,
-        false,
-        true,
-        false,
-        true
-      ],
-      "tactical_explanations": [
-        "**A.** → True\n\nThe fixed trial count, common success probability, and independence give a binomial model:\n\n$$X\\sim\\operatorname{Bin}\\left(9,\\dfrac{1}{5}\\right)$$\n\nFor exactly $3$ successes, choose their positions and multiply the Bernoulli probabilities:\n\n$$P(X=3)=\\binom{9}{3}\n\\left(\\dfrac{1}{5}\\right)^{3}\n\\left(\\dfrac{4}{5}\\right)^{6}$$\n\nSubstitution gives\n\n$$P(X=3)=84\n\\left(\\dfrac{1}{125}\\right)\n\\left(\\dfrac{4096}{15625}\\right)\n=\\dfrac{344064}{1953125}\\approx 0.17616077$$\n\nThe stem gives $\\dfrac{344064}{1953125}$; the exact comparison is\n\n$$\\dfrac{344064}{1953125}=\\dfrac{344064}{1953125}$$\n\nThe mathematical result agrees with the claim, so the statement is True.",
-        "**B.** → False\n\nThe count is binomial, and the wording names several disjoint values:\n\n$$X\\sim\\operatorname{Bin}\\left(7,\\dfrac{1}{3}\\right)$$\n\nWrite the complete tail rather than a single endpoint mass:\n\n$$P(X\\le 2)=\\sum_{x=0}^{2}\n\\binom{7}{x}\\left(\\dfrac{1}{3}\\right)^x\n\\left(\\dfrac{2}{3}\\right)^{7-x}$$\n\nExpanding every included count gives\n\n$$P(X\\le 2)=\\binom{7}{0}\\left(\\dfrac{1}{3}\\right)^{0}\\left(\\dfrac{2}{3}\\right)^{7}+\\binom{7}{1}\\left(\\dfrac{1}{3}\\right)^{1}\\left(\\dfrac{2}{3}\\right)^{6}+\\binom{7}{2}\\left(\\dfrac{1}{3}\\right)^{2}\\left(\\dfrac{2}{3}\\right)^{5}$$\n\nAdding these mutually exclusive masses,\n\n$$P(X\\le 2)=\\dfrac{416}{729}\\approx 0.57064472$$\n\nThe quoted value is $\\dfrac{139}{243}$, so\n\n$$\\dfrac{416}{729}\\ne\\dfrac{139}{243}$$\n\nThe mathematical result does not agree with the claim, so the statement is False.",
-        "**C.** → True\n\nA binomial count is a sum of independent Bernoulli indicators. Its first moment is\n\n$$E(X)=np=12\\left(\\dfrac{1}{10}\\right)=\\dfrac{6}{5}$$\n\nIts variance includes the failure probability:\n\n$$\\operatorname{Var}(X)=np(1-p)\n=12\\left(\\dfrac{1}{10}\\right)\\left(\\dfrac{9}{10}\\right)\n=\\dfrac{27}{25}$$\n\nConsequently,\n\n$$\\operatorname{SD}(X)=\\sqrt{\\dfrac{27}{25}}\n\\approx 1.03923$$\n\nBoth reported moments must hold; the mean is $\\dfrac{6}{5}$ and the variance comparison is\n\n$$\\dfrac{27}{25}=\\dfrac{27}{25}$$\n\nThe mathematical result agrees with the claim, so the statement is True.",
-        "**D.** → False\n\nTreat the two counts as different binomial models:\n\n$$X_A\\sim\\operatorname{Bin}\\left(8,\\dfrac{1}{4}\\right),\\qquad\nX_B\\sim\\operatorname{Bin}\\left(9,\\dfrac{2}{5}\\right)$$\n\nFor model A,\n\n$$P(X_A=3)=\\binom{8}{3}\n\\left(\\dfrac{1}{4}\\right)^{3}\n\\left(\\dfrac{3}{4}\\right)^{5}\n=\\dfrac{1701}{8192}\\approx 0.2076416$$\n\nFor model B,\n\n$$P(X_B=3)=\\binom{9}{3}\n\\left(\\dfrac{2}{5}\\right)^{3}\n\\left(\\dfrac{3}{5}\\right)^{6}\n=\\dfrac{489888}{1953125}\\approx 0.25082266$$\n\nTheir ratio in the statement's order is\n\n$$\\frac{P(X_A=3)}{P(X_B=3)}\n=\\dfrac{1953125}{2359296}\\approx 0.827842$$\n\nSince the ratio is below $1$, A's probability is less than B's, not automatically the one with larger $n$ or $p$.\n\nThe mathematical result does not agree with the claim, so the statement is False.",
-        "**E.** → True\n\nFor each system, use the complement of zero successes. For A,\n\n$$P_A(X\\ge1)=1-P_A(X=0)\n=1-\\left(\\dfrac{9}{10}\\right)^{4}\n=\\dfrac{3439}{10000}\\approx 0.3439$$\n\nFor B,\n\n$$P_B(Y\\ge1)=1-P_B(Y=0)\n=1-\\left(\\dfrac{9}{10}\\right)^{7}\n=\\dfrac{5217031}{10000000}\\approx 0.5217031$$\n\nSubtract in the order used by the statement:\n\n$$P_A(X\\ge1)-P_B(Y\\ge1)\n=\\dfrac{-1778031}{10000000}\\approx -0.1778031$$\n\nThe difference is negative, so A's at-least-one probability is less than B's:\n\n$$0.3439<0.5217031$$\n\nThe mathematical result agrees with the claim, so the statement is True."
-      ],
-      "difficulty_level": "5/5",
-      "sort_order": 56,
-      "solution_overview": "Topics: exact, tail, moments, compare, complement.\nA: evaluate one exact binomial mass.\nB: sum every mass in a multi-value binomial tail.\nC: derive binomial mean, variance, and standard deviation.\nD: compare two exact binomial masses.\nE: compare at-least-one probabilities through zero-success complements.",
-      "placeholder": false
-    },
-    {
-      "id": "math-13-57",
-      "case_id": "MATH 13.57",
-      "title": "Exam-style tasks - 2",
-      "subsection": "13.5",
-      "context": "Evaluate each statement. Mark it TRUE or FALSE.",
-      "statements": [
-        "In a carnival game, $8$ independent throws hit the target with probability $\\dfrac{2}{5}$. The posted chance of at least $6$ hits is $\\dfrac{19456}{390625}$.",
-        "A bottling plant rejects independently with probability $\\dfrac{1}{5}$ across $13$ bottles. Its report gives rejection-count variance $\\dfrac{53}{25}$.",
-        "Goalkeeper A faces $9$ shots and saves each with probability $\\dfrac{3}{10}$; goalkeeper B faces $9$ with probability $\\dfrac{3}{5}$. Exactly $4$ saves is said to be more likely for A.",
-        "A clinic calls $5$ donors at response chance $\\dfrac{1}{5}$, while another calls $6$ at $\\dfrac{1}{3}$. The chance of one or more responses is said to be more likely for the first clinic.",
-        "A goalkeeper faces $10$ penalty kicks, each independently saved with probability $\\dfrac{3}{10}$. The match analyst gives $\\dfrac{64324591}{625000000}$ as the chance of exactly $5$ saves."
-      ],
-      "answer_key": [
-        true,
-        false,
-        true,
-        false,
-        false
-      ],
-      "tactical_explanations": [
-        "**A.** → True\n\nThe count is binomial, and the wording names several disjoint values:\n\n$$X\\sim\\operatorname{Bin}\\left(8,\\dfrac{2}{5}\\right)$$\n\nWrite the complete tail rather than a single endpoint mass:\n\n$$P(X\\ge 6)=\\sum_{x=6}^{8}\n\\binom{8}{x}\\left(\\dfrac{2}{5}\\right)^x\n\\left(\\dfrac{3}{5}\\right)^{8-x}$$\n\nExpanding every included count gives\n\n$$P(X\\ge 6)=\\binom{8}{6}\\left(\\dfrac{2}{5}\\right)^{6}\\left(\\dfrac{3}{5}\\right)^{2}+\\binom{8}{7}\\left(\\dfrac{2}{5}\\right)^{7}\\left(\\dfrac{3}{5}\\right)^{1}+\\binom{8}{8}\\left(\\dfrac{2}{5}\\right)^{8}\\left(\\dfrac{3}{5}\\right)^{0}$$\n\nAdding these mutually exclusive masses,\n\n$$P(X\\ge 6)=\\dfrac{19456}{390625}\\approx 0.04980736$$\n\nThe quoted value is $\\dfrac{19456}{390625}$, so\n\n$$\\dfrac{19456}{390625}=\\dfrac{19456}{390625}$$\n\nThe mathematical result agrees with the claim, so the statement is True.",
-        "**B.** → False\n\nA binomial count is a sum of independent Bernoulli indicators. Its first moment is\n\n$$E(X)=np=13\\left(\\dfrac{1}{5}\\right)=\\dfrac{13}{5}$$\n\nIts variance includes the failure probability:\n\n$$\\operatorname{Var}(X)=np(1-p)\n=13\\left(\\dfrac{1}{5}\\right)\\left(\\dfrac{4}{5}\\right)\n=\\dfrac{52}{25}$$\n\nConsequently,\n\n$$\\operatorname{SD}(X)=\\sqrt{\\dfrac{52}{25}}\n\\approx 1.44222$$\n\nThus the variance is $\\dfrac{52}{25}$, compared with $\\dfrac{53}{25}$:\n\n$$\\dfrac{52}{25}\\ne\\dfrac{53}{25}$$\n\nThe mathematical result does not agree with the claim, so the statement is False.",
-        "**C.** → True\n\nTreat the two counts as different binomial models:\n\n$$X_A\\sim\\operatorname{Bin}\\left(9,\\dfrac{3}{10}\\right),\\qquad\nX_B\\sim\\operatorname{Bin}\\left(9,\\dfrac{3}{5}\\right)$$\n\nFor model A,\n\n$$P(X_A=4)=\\binom{9}{4}\n\\left(\\dfrac{3}{10}\\right)^{4}\n\\left(\\dfrac{7}{10}\\right)^{5}\n=\\dfrac{85766121}{500000000}\\approx 0.17153224$$\n\nFor model B,\n\n$$P(X_B=4)=\\binom{9}{4}\n\\left(\\dfrac{3}{5}\\right)^{4}\n\\left(\\dfrac{2}{5}\\right)^{5}\n=\\dfrac{326592}{1953125}\\approx 0.1672151$$\n\nTheir ratio in the statement's order is\n\n$$\\frac{P(X_A=4)}{P(X_B=4)}\n=\\dfrac{16807}{16384}\\approx 1.025818$$\n\nSince the ratio is above $1$, A's probability is greater than B's, not automatically the one with larger $n$ or $p$.\n\nThe mathematical result agrees with the claim, so the statement is True.",
-        "**D.** → False\n\nFor each system, use the complement of zero successes. For A,\n\n$$P_A(X\\ge1)=1-P_A(X=0)\n=1-\\left(\\dfrac{4}{5}\\right)^{5}\n=\\dfrac{2101}{3125}\\approx 0.67232$$\n\nFor B,\n\n$$P_B(Y\\ge1)=1-P_B(Y=0)\n=1-\\left(\\dfrac{2}{3}\\right)^{6}\n=\\dfrac{665}{729}\\approx 0.9122085$$\n\nSubtract in the order used by the statement:\n\n$$P_A(X\\ge1)-P_B(Y\\ge1)\n=\\dfrac{-546496}{2278125}\\approx -0.2398885$$\n\nThe difference is negative, so A's at-least-one probability is less than B's:\n\n$$0.67232<0.9122085$$\n\nThe mathematical result does not agree with the claim, so the statement is False.",
-        "**E.** → False\n\nThe fixed trial count, common success probability, and independence give a binomial model:\n\n$$X\\sim\\operatorname{Bin}\\left(10,\\dfrac{3}{10}\\right)$$\n\nFor exactly $5$ successes, choose their positions and multiply the Bernoulli probabilities:\n\n$$P(X=5)=\\binom{10}{5}\n\\left(\\dfrac{3}{10}\\right)^{5}\n\\left(\\dfrac{7}{10}\\right)^{5}$$\n\nSubstitution gives\n\n$$P(X=5)=252\n\\left(\\dfrac{243}{100000}\\right)\n\\left(\\dfrac{16807}{100000}\\right)\n=\\dfrac{257298363}{2500000000}\\approx 0.10291935$$\n\nThe stem gives $\\dfrac{64324591}{625000000}$; the exact comparison is\n\n$$\\dfrac{257298363}{2500000000}\\ne\\dfrac{64324591}{625000000}$$\n\nThe mathematical result does not agree with the claim, so the statement is False."
-      ],
-      "difficulty_level": "5/5",
-      "sort_order": 57,
-      "solution_overview": "Topics: tail, moments, compare, complement, exact.\nA: sum every mass in a multi-value binomial tail.\nB: derive binomial mean, variance, and standard deviation.\nC: compare two exact binomial masses.\nD: compare at-least-one probabilities through zero-success complements.\nE: evaluate one exact binomial mass.",
-      "placeholder": false
-    },
-    {
-      "id": "math-13-58",
-      "case_id": "MATH 13.58",
-      "title": "Exam-style tasks - 3",
-      "subsection": "13.5",
-      "context": "Evaluate each statement. Mark it TRUE or FALSE.",
-      "statements": [
-        "For $14$ independent seeds with germination probability $\\dfrac{3}{10}$, a grower claims that variance divided by mean equals $\\dfrac{7}{10}$.",
-        "Clinic A runs $10$ assays at positive rate $\\dfrac{2}{5}$ and clinic B runs $10$ at rate $\\dfrac{7}{10}$. The probability of precisely $5$ positives is reported as less likely at A.",
-        "Game A offers $6$ independent treasure searches at chance $\\dfrac{1}{4}$; game B offers $9$ at $\\dfrac{1}{4}$. At least one treasure is reported as less likely in game A.",
-        "A bulb maker tests $11$ independently selected lamps, each defective with probability $\\dfrac{2}{5}$. Its quality sheet lists probability $\\dfrac{2309472}{9765625}$ for exactly $4$ defects.",
-        "A nursery tests $9$ seeds independently at germination probability $\\dfrac{3}{10}$. Its catalogue says no more than $2$ germinate with probability $\\dfrac{7231737}{15625000}$."
-      ],
-      "answer_key": [
-        true,
-        false,
-        true,
-        true,
-        false
-      ],
-      "tactical_explanations": [
-        "**A.** → True\n\nA binomial count is a sum of independent Bernoulli indicators. Its first moment is\n\n$$E(X)=np=14\\left(\\dfrac{3}{10}\\right)=\\dfrac{21}{5}$$\n\nIts variance includes the failure probability:\n\n$$\\operatorname{Var}(X)=np(1-p)\n=14\\left(\\dfrac{3}{10}\\right)\\left(\\dfrac{7}{10}\\right)\n=\\dfrac{147}{50}$$\n\nConsequently,\n\n$$\\operatorname{SD}(X)=\\sqrt{\\dfrac{147}{50}}\n\\approx 1.71464$$\n\nCancel the common factor $np$:\n\n$$\\frac{\\operatorname{Var}(X)}{E(X)}\n=\\frac{np(1-p)}{np}=1-p=\\dfrac{7}{10}$$\n\nThe claimed ratio is $\\dfrac{7}{10}$, hence\n\n$$\\dfrac{7}{10}=\\dfrac{7}{10}$$\n\nThe mathematical result agrees with the claim, so the statement is True.",
-        "**B.** → False\n\nTreat the two counts as different binomial models:\n\n$$X_A\\sim\\operatorname{Bin}\\left(10,\\dfrac{2}{5}\\right),\\qquad\nX_B\\sim\\operatorname{Bin}\\left(10,\\dfrac{7}{10}\\right)$$\n\nFor model A,\n\n$$P(X_A=5)=\\binom{10}{5}\n\\left(\\dfrac{2}{5}\\right)^{5}\n\\left(\\dfrac{3}{5}\\right)^{5}\n=\\dfrac{1959552}{9765625}\\approx 0.20065812$$\n\nFor model B,\n\n$$P(X_B=5)=\\binom{10}{5}\n\\left(\\dfrac{7}{10}\\right)^{5}\n\\left(\\dfrac{3}{10}\\right)^{5}\n=\\dfrac{257298363}{2500000000}\\approx 0.10291935$$\n\nTheir ratio in the statement's order is\n\n$$\\frac{P(X_A=5)}{P(X_B=5)}\n=\\dfrac{32768}{16807}\\approx 1.949664$$\n\nSince the ratio is above $1$, A's probability is greater than B's, not automatically the one with larger $n$ or $p$.\n\nThe mathematical result does not agree with the claim, so the statement is False.",
-        "**C.** → True\n\nFor each system, use the complement of zero successes. For A,\n\n$$P_A(X\\ge1)=1-P_A(X=0)\n=1-\\left(\\dfrac{3}{4}\\right)^{6}\n=\\dfrac{3367}{4096}\\approx 0.82202148$$\n\nFor B,\n\n$$P_B(Y\\ge1)=1-P_B(Y=0)\n=1-\\left(\\dfrac{3}{4}\\right)^{9}\n=\\dfrac{242461}{262144}\\approx 0.92491531$$\n\nSubtract in the order used by the statement:\n\n$$P_A(X\\ge1)-P_B(Y\\ge1)\n=\\dfrac{-26973}{262144}\\approx -0.10289383$$\n\nThe difference is negative, so A's at-least-one probability is less than B's:\n\n$$0.82202148<0.92491531$$\n\nThe mathematical result agrees with the claim, so the statement is True.",
-        "**D.** → True\n\nThe fixed trial count, common success probability, and independence give a binomial model:\n\n$$X\\sim\\operatorname{Bin}\\left(11,\\dfrac{2}{5}\\right)$$\n\nFor exactly $4$ successes, choose their positions and multiply the Bernoulli probabilities:\n\n$$P(X=4)=\\binom{11}{4}\n\\left(\\dfrac{2}{5}\\right)^{4}\n\\left(\\dfrac{3}{5}\\right)^{7}$$\n\nSubstitution gives\n\n$$P(X=4)=330\n\\left(\\dfrac{16}{625}\\right)\n\\left(\\dfrac{2187}{78125}\\right)\n=\\dfrac{2309472}{9765625}\\approx 0.23648993$$\n\nThe stem gives $\\dfrac{2309472}{9765625}$; the exact comparison is\n\n$$\\dfrac{2309472}{9765625}=\\dfrac{2309472}{9765625}$$\n\nThe mathematical result agrees with the claim, so the statement is True.",
-        "**E.** → False\n\nThe count is binomial, and the wording names several disjoint values:\n\n$$X\\sim\\operatorname{Bin}\\left(9,\\dfrac{3}{10}\\right)$$\n\nWrite the complete tail rather than a single endpoint mass:\n\n$$P(X\\le 2)=\\sum_{x=0}^{2}\n\\binom{9}{x}\\left(\\dfrac{3}{10}\\right)^x\n\\left(\\dfrac{7}{10}\\right)^{9-x}$$\n\nExpanding every included count gives\n\n$$P(X\\le 2)=\\binom{9}{0}\\left(\\dfrac{3}{10}\\right)^{0}\\left(\\dfrac{7}{10}\\right)^{9}+\\binom{9}{1}\\left(\\dfrac{3}{10}\\right)^{1}\\left(\\dfrac{7}{10}\\right)^{8}+\\binom{9}{2}\\left(\\dfrac{3}{10}\\right)^{2}\\left(\\dfrac{7}{10}\\right)^{7}$$\n\nAdding these mutually exclusive masses,\n\n$$P(X\\le 2)=\\dfrac{231415583}{500000000}\\approx 0.46283117$$\n\nThe quoted value is $\\dfrac{7231737}{15625000}$, so\n\n$$\\dfrac{231415583}{500000000}\\ne\\dfrac{7231737}{15625000}$$\n\nThe mathematical result does not agree with the claim, so the statement is False."
-      ],
-      "difficulty_level": "5/5",
-      "sort_order": 58,
-      "solution_overview": "Topics: moments, compare, complement, exact, tail.\nA: derive binomial mean, variance, and standard deviation.\nB: compare two exact binomial masses.\nC: compare at-least-one probabilities through zero-success complements.\nD: evaluate one exact binomial mass.\nE: sum every mass in a multi-value binomial tail.",
-      "placeholder": false
-    },
-    {
-      "id": "math-13-59",
-      "case_id": "MATH 13.59",
-      "title": "Exam-style tasks - 4",
-      "subsection": "13.5",
-      "context": "Evaluate each statement. Mark it TRUE or FALSE.",
-      "statements": [
-        "Game A offers $11$ independent rounds with win chance $\\dfrac{3}{5}$; game B offers $12$ at chance $\\dfrac{4}{5}$. A reviewer calls exactly $6$ wins more probable in game A.",
-        "Sensor bank A has $7$ independent alarms with trigger chance $\\dfrac{1}{3}$; bank B has $8$ at $\\dfrac{1}{10}$. The operator calls one or more alarms less likely in A.",
-        "A seed tray contains $12$ independently germinating seeds with success probability $\\dfrac{3}{5}$. The grower states that exactly $7$ germinate with probability $\\dfrac{55427329}{244140625}$.",
-        "A call centre independently resolves each of $10$ calls with probability $\\dfrac{3}{5}$. Management reports probability $\\dfrac{1633689}{9765625}$ of resolving at least $8$ calls.",
-        "A scanner flags each item independently with probability $\\dfrac{2}{5}$. One shift handles $15$ items and another $30$; the second count's standard deviation is said to be $2$ times the first's."
-      ],
-      "answer_key": [
-        true,
-        false,
-        false,
-        true,
-        false
-      ],
-      "tactical_explanations": [
-        "**A.** → True\n\nTreat the two counts as different binomial models:\n\n$$X_A\\sim\\operatorname{Bin}\\left(11,\\dfrac{3}{5}\\right),\\qquad\nX_B\\sim\\operatorname{Bin}\\left(12,\\dfrac{4}{5}\\right)$$\n\nFor model A,\n\n$$P(X_A=6)=\\binom{11}{6}\n\\left(\\dfrac{3}{5}\\right)^{6}\n\\left(\\dfrac{2}{5}\\right)^{5}\n=\\dfrac{10777536}{48828125}\\approx 0.22072394$$\n\nFor model B,\n\n$$P(X_B=6)=\\binom{12}{6}\n\\left(\\dfrac{4}{5}\\right)^{6}\n\\left(\\dfrac{1}{5}\\right)^{6}\n=\\dfrac{3784704}{244140625}\\approx 0.01550215$$\n\nTheir ratio in the statement's order is\n\n$$\\frac{P(X_A=6)}{P(X_B=6)}\n=\\dfrac{3645}{256}\\approx 14.238281$$\n\nSince the ratio is above $1$, A's probability is greater than B's, not automatically the one with larger $n$ or $p$.\n\nThe mathematical result agrees with the claim, so the statement is True.",
-        "**B.** → False\n\nFor each system, use the complement of zero successes. For A,\n\n$$P_A(X\\ge1)=1-P_A(X=0)\n=1-\\left(\\dfrac{2}{3}\\right)^{7}\n=\\dfrac{2059}{2187}\\approx 0.94147234$$\n\nFor B,\n\n$$P_B(Y\\ge1)=1-P_B(Y=0)\n=1-\\left(\\dfrac{9}{10}\\right)^{8}\n=\\dfrac{56953279}{100000000}\\approx 0.56953279$$\n\nSubtract in the order used by the statement:\n\n$$P_A(X\\ge1)-P_B(Y\\ge1)\n=\\dfrac{81343178827}{218700000000}\\approx 0.37193955$$\n\nThe difference is positive, so A's at-least-one probability is greater than B's:\n\n$$0.94147234>0.56953279$$\n\nThe mathematical result does not agree with the claim, so the statement is False.",
-        "**C.** → False\n\nThe fixed trial count, common success probability, and independence give a binomial model:\n\n$$X\\sim\\operatorname{Bin}\\left(12,\\dfrac{3}{5}\\right)$$\n\nFor exactly $7$ successes, choose their positions and multiply the Bernoulli probabilities:\n\n$$P(X=7)=\\binom{12}{7}\n\\left(\\dfrac{3}{5}\\right)^{7}\n\\left(\\dfrac{2}{5}\\right)^{5}$$\n\nSubstitution gives\n\n$$P(X=7)=792\n\\left(\\dfrac{2187}{78125}\\right)\n\\left(\\dfrac{32}{3125}\\right)\n=\\dfrac{55427328}{244140625}\\approx 0.22703034$$\n\nThe stem gives $\\dfrac{55427329}{244140625}$; the exact comparison is\n\n$$\\dfrac{55427328}{244140625}\\ne\\dfrac{55427329}{244140625}$$\n\nThe mathematical result does not agree with the claim, so the statement is False.",
-        "**D.** → True\n\nThe count is binomial, and the wording names several disjoint values:\n\n$$X\\sim\\operatorname{Bin}\\left(10,\\dfrac{3}{5}\\right)$$\n\nWrite the complete tail rather than a single endpoint mass:\n\n$$P(X\\ge 8)=\\sum_{x=8}^{10}\n\\binom{10}{x}\\left(\\dfrac{3}{5}\\right)^x\n\\left(\\dfrac{2}{5}\\right)^{10-x}$$\n\nExpanding every included count gives\n\n$$P(X\\ge 8)=\\binom{10}{8}\\left(\\dfrac{3}{5}\\right)^{8}\\left(\\dfrac{2}{5}\\right)^{2}+\\binom{10}{9}\\left(\\dfrac{3}{5}\\right)^{9}\\left(\\dfrac{2}{5}\\right)^{1}+\\binom{10}{10}\\left(\\dfrac{3}{5}\\right)^{10}\\left(\\dfrac{2}{5}\\right)^{0}$$\n\nAdding these mutually exclusive masses,\n\n$$P(X\\ge 8)=\\dfrac{1633689}{9765625}\\approx 0.16728975$$\n\nThe quoted value is $\\dfrac{1633689}{9765625}$, so\n\n$$\\dfrac{1633689}{9765625}=\\dfrac{1633689}{9765625}$$\n\nThe mathematical result agrees with the claim, so the statement is True.",
-        "**E.** → False\n\nA binomial count is a sum of independent Bernoulli indicators. Its first moment is\n\n$$E(X)=np=15\\left(\\dfrac{2}{5}\\right)=6$$\n\nIts variance includes the failure probability:\n\n$$\\operatorname{Var}(X)=np(1-p)\n=15\\left(\\dfrac{2}{5}\\right)\\left(\\dfrac{3}{5}\\right)\n=\\dfrac{18}{5}$$\n\nConsequently,\n\n$$\\operatorname{SD}(X)=\\sqrt{\\dfrac{18}{5}}\n\\approx 1.89737$$\n\nWith the same $p$ and twice the trial count,\n\n$$\\operatorname{Var}(Y)=2\\operatorname{Var}(X)$$\n\nTaking nonnegative square roots gives\n\n$$\\frac{\\operatorname{SD}(Y)}{\\operatorname{SD}(X)}=\\sqrt{2}$$\n\nThe stem's factor is $2$, so\n\n$$\\sqrt{2}\\ne2$$\n\nThe mathematical result does not agree with the claim, so the statement is False."
-      ],
-      "difficulty_level": "5/5",
-      "sort_order": 59,
-      "solution_overview": "Topics: compare, complement, exact, tail, moments.\nA: compare two exact binomial masses.\nB: compare at-least-one probabilities through zero-success complements.\nC: evaluate one exact binomial mass.\nD: sum every mass in a multi-value binomial tail.\nE: derive binomial mean, variance, and standard deviation.",
-      "placeholder": false
-    },
-    {
-      "id": "math-13-60",
-      "case_id": "MATH 13.60",
-      "title": "Exam-style tasks - 5",
-      "subsection": "13.5",
-      "context": "Evaluate each statement. Mark it TRUE or FALSE.",
-      "statements": [
-        "A seed tray has $8$ independent seeds at germination probability $\\dfrac{2}{5}$ and a second has $11$ at $\\dfrac{2}{5}$. At least one germination is claimed to be less likely in the first.",
-        "A basketball player takes $13$ independent free throws and scores each with probability $\\dfrac{7}{10}$. A coach reports $P(X=9)=\\dfrac{467415829881}{2000000000000}$.",
-        "A bottling line rejects each of $11$ bottles independently with probability $\\dfrac{1}{4}$. The quality chief lists $\\dfrac{186989}{262144}$ for at most $3$ rejections.",
-        "A clinic has $16$ independent appointments, each missed with probability $\\dfrac{3}{5}$. The expected number of missed visits is reported as $\\dfrac{48}{5}$.",
-        "Seed batch A has $12$ trials at germination chance $\\dfrac{1}{5}$, versus $12$ trials at $\\dfrac{1}{2}$ for batch B. The grower claims exactly $7$ germinations are more likely in batch A."
-      ],
-      "answer_key": [
-        true,
-        true,
-        false,
-        true,
-        false
-      ],
-      "tactical_explanations": [
-        "**A.** → True\n\nFor each system, use the complement of zero successes. For A,\n\n$$P_A(X\\ge1)=1-P_A(X=0)\n=1-\\left(\\dfrac{3}{5}\\right)^{8}\n=\\dfrac{384064}{390625}\\approx 0.98320384$$\n\nFor B,\n\n$$P_B(Y\\ge1)=1-P_B(Y=0)\n=1-\\left(\\dfrac{3}{5}\\right)^{11}\n=\\dfrac{48650978}{48828125}\\approx 0.99637203$$\n\nSubtract in the order used by the statement:\n\n$$P_A(X\\ge1)-P_B(Y\\ge1)\n=\\dfrac{-642978}{48828125}\\approx -0.01316819$$\n\nThe difference is negative, so A's at-least-one probability is less than B's:\n\n$$0.98320384<0.99637203$$\n\nThe mathematical result agrees with the claim, so the statement is True.",
-        "**B.** → True\n\nThe fixed trial count, common success probability, and independence give a binomial model:\n\n$$X\\sim\\operatorname{Bin}\\left(13,\\dfrac{7}{10}\\right)$$\n\nFor exactly $9$ successes, choose their positions and multiply the Bernoulli probabilities:\n\n$$P(X=9)=\\binom{13}{9}\n\\left(\\dfrac{7}{10}\\right)^{9}\n\\left(\\dfrac{3}{10}\\right)^{4}$$\n\nSubstitution gives\n\n$$P(X=9)=715\n\\left(\\dfrac{40353607}{1000000000}\\right)\n\\left(\\dfrac{81}{10000}\\right)\n=\\dfrac{467415829881}{2000000000000}\\approx 0.23370791$$\n\nThe stem gives $\\dfrac{467415829881}{2000000000000}$; the exact comparison is\n\n$$\\dfrac{467415829881}{2000000000000}=\\dfrac{467415829881}{2000000000000}$$\n\nThe mathematical result agrees with the claim, so the statement is True.",
-        "**C.** → False\n\nThe count is binomial, and the wording names several disjoint values:\n\n$$X\\sim\\operatorname{Bin}\\left(11,\\dfrac{1}{4}\\right)$$\n\nWrite the complete tail rather than a single endpoint mass:\n\n$$P(X\\le 3)=\\sum_{x=0}^{3}\n\\binom{11}{x}\\left(\\dfrac{1}{4}\\right)^x\n\\left(\\dfrac{3}{4}\\right)^{11-x}$$\n\nExpanding every included count gives\n\n$$P(X\\le 3)=\\binom{11}{0}\\left(\\dfrac{1}{4}\\right)^{0}\\left(\\dfrac{3}{4}\\right)^{11}+\\binom{11}{1}\\left(\\dfrac{1}{4}\\right)^{1}\\left(\\dfrac{3}{4}\\right)^{10}+\\binom{11}{2}\\left(\\dfrac{1}{4}\\right)^{2}\\left(\\dfrac{3}{4}\\right)^{9}+\\binom{11}{3}\\left(\\dfrac{1}{4}\\right)^{3}\\left(\\dfrac{3}{4}\\right)^{8}$$\n\nAdding these mutually exclusive masses,\n\n$$P(X\\le 3)=\\dfrac{373977}{524288}\\approx 0.71330452$$\n\nThe quoted value is $\\dfrac{186989}{262144}$, so\n\n$$\\dfrac{373977}{524288}\\ne\\dfrac{186989}{262144}$$\n\nThe mathematical result does not agree with the claim, so the statement is False.",
-        "**D.** → True\n\nA binomial count is a sum of independent Bernoulli indicators. Its first moment is\n\n$$E(X)=np=16\\left(\\dfrac{3}{5}\\right)=\\dfrac{48}{5}$$\n\nIts variance includes the failure probability:\n\n$$\\operatorname{Var}(X)=np(1-p)\n=16\\left(\\dfrac{3}{5}\\right)\\left(\\dfrac{2}{5}\\right)\n=\\dfrac{96}{25}$$\n\nConsequently,\n\n$$\\operatorname{SD}(X)=\\sqrt{\\dfrac{96}{25}}\n\\approx 1.95959$$\n\nThus the expected count is $\\dfrac{48}{5}$, while the stem gives $\\dfrac{48}{5}$:\n\n$$\\dfrac{48}{5}=\\dfrac{48}{5}$$\n\nThe mathematical result agrees with the claim, so the statement is True.",
-        "**E.** → False\n\nTreat the two counts as different binomial models:\n\n$$X_A\\sim\\operatorname{Bin}\\left(12,\\dfrac{1}{5}\\right),\\qquad\nX_B\\sim\\operatorname{Bin}\\left(12,\\dfrac{1}{2}\\right)$$\n\nFor model A,\n\n$$P(X_A=7)=\\binom{12}{7}\n\\left(\\dfrac{1}{5}\\right)^{7}\n\\left(\\dfrac{4}{5}\\right)^{5}\n=\\dfrac{811008}{244140625}\\approx 0.00332189$$\n\nFor model B,\n\n$$P(X_B=7)=\\binom{12}{7}\n\\left(\\dfrac{1}{2}\\right)^{7}\n\\left(\\dfrac{1}{2}\\right)^{5}\n=\\dfrac{99}{512}\\approx 0.19335938$$\n\nTheir ratio in the statement's order is\n\n$$\\frac{P(X_A=7)}{P(X_B=7)}\n=\\dfrac{4194304}{244140625}\\approx 0.01718$$\n\nSince the ratio is below $1$, A's probability is less than B's, not automatically the one with larger $n$ or $p$.\n\nThe mathematical result does not agree with the claim, so the statement is False."
-      ],
-      "difficulty_level": "5/5",
-      "sort_order": 60,
-      "solution_overview": "Topics: complement, exact, tail, moments, compare.\nA: compare at-least-one probabilities through zero-success complements.\nB: evaluate one exact binomial mass.\nC: sum every mass in a multi-value binomial tail.\nD: derive binomial mean, variance, and standard deviation.\nE: compare two exact binomial masses.",
-      "placeholder": false
-    },
-    {
-      "id": "math-13-61",
-      "case_id": "MATH 13.61",
-      "title": "Exam-style tasks - 6",
-      "subsection": "13.5",
-      "context": "Evaluate each statement. Mark it TRUE or FALSE.",
-      "statements": [
-        "An email campaign sends $8$ independent offers, each converting with probability $\\dfrac{1}{4}$. The marketing forecast assigns probability $\\dfrac{319}{1024}$ to exactly $2$ conversions.",
-        "A goalkeeper faces $12$ independent shots with save probability $\\dfrac{1}{2}$. The coach states that $10$ or more saves occur with probability $\\dfrac{79}{4096}$.",
-        "A factory checks $17$ independent seals with leak probability $\\dfrac{7}{10}$. Its leak-count standard deviation is claimed to be $\\dfrac{179}{50}$.",
-        "A sales team makes $8$ pitches at conversion probability $\\dfrac{1}{3}$; a second makes $10$ at $\\dfrac{1}{2}$. Exactly $3$ sales is labelled more likely for the first team.",
-        "A sales agent makes $9$ independent pitches with conversion chance $\\dfrac{1}{10}$; a colleague makes $10$ at $\\dfrac{1}{4}$. One or more sales is said to be more probable for the first."
-      ],
-      "answer_key": [
-        false,
-        true,
-        false,
-        true,
-        false
-      ],
-      "tactical_explanations": [
-        "**A.** → False\n\nThe fixed trial count, common success probability, and independence give a binomial model:\n\n$$X\\sim\\operatorname{Bin}\\left(8,\\dfrac{1}{4}\\right)$$\n\nFor exactly $2$ successes, choose their positions and multiply the Bernoulli probabilities:\n\n$$P(X=2)=\\binom{8}{2}\n\\left(\\dfrac{1}{4}\\right)^{2}\n\\left(\\dfrac{3}{4}\\right)^{6}$$\n\nSubstitution gives\n\n$$P(X=2)=28\n\\left(\\dfrac{1}{16}\\right)\n\\left(\\dfrac{729}{4096}\\right)\n=\\dfrac{5103}{16384}\\approx 0.3114624$$\n\nThe stem gives $\\dfrac{319}{1024}$; the exact comparison is\n\n$$\\dfrac{5103}{16384}\\ne\\dfrac{319}{1024}$$\n\nThe mathematical result does not agree with the claim, so the statement is False.",
-        "**B.** → True\n\nThe count is binomial, and the wording names several disjoint values:\n\n$$X\\sim\\operatorname{Bin}\\left(12,\\dfrac{1}{2}\\right)$$\n\nWrite the complete tail rather than a single endpoint mass:\n\n$$P(X\\ge 10)=\\sum_{x=10}^{12}\n\\binom{12}{x}\\left(\\dfrac{1}{2}\\right)^x\n\\left(\\dfrac{1}{2}\\right)^{12-x}$$\n\nExpanding every included count gives\n\n$$P(X\\ge 10)=\\binom{12}{10}\\left(\\dfrac{1}{2}\\right)^{10}\\left(\\dfrac{1}{2}\\right)^{2}+\\binom{12}{11}\\left(\\dfrac{1}{2}\\right)^{11}\\left(\\dfrac{1}{2}\\right)^{1}+\\binom{12}{12}\\left(\\dfrac{1}{2}\\right)^{12}\\left(\\dfrac{1}{2}\\right)^{0}$$\n\nAdding these mutually exclusive masses,\n\n$$P(X\\ge 10)=\\dfrac{79}{4096}\\approx 0.01928711$$\n\nThe quoted value is $\\dfrac{79}{4096}$, so\n\n$$\\dfrac{79}{4096}=\\dfrac{79}{4096}$$\n\nThe mathematical result agrees with the claim, so the statement is True.",
-        "**C.** → False\n\nA binomial count is a sum of independent Bernoulli indicators. Its first moment is\n\n$$E(X)=np=17\\left(\\dfrac{7}{10}\\right)=\\dfrac{119}{10}$$\n\nIts variance includes the failure probability:\n\n$$\\operatorname{Var}(X)=np(1-p)\n=17\\left(\\dfrac{7}{10}\\right)\\left(\\dfrac{3}{10}\\right)\n=\\dfrac{357}{100}$$\n\nConsequently,\n\n$$\\operatorname{SD}(X)=\\sqrt{\\dfrac{357}{100}}\n\\approx 1.88944$$\n\nThus the variance is $\\dfrac{357}{100}$, compared with $\\dfrac{179}{50}$:\n\n$$\\dfrac{357}{100}\\ne\\dfrac{179}{50}$$\n\nThe mathematical result does not agree with the claim, so the statement is False.",
-        "**D.** → True\n\nTreat the two counts as different binomial models:\n\n$$X_A\\sim\\operatorname{Bin}\\left(8,\\dfrac{1}{3}\\right),\\qquad\nX_B\\sim\\operatorname{Bin}\\left(10,\\dfrac{1}{2}\\right)$$\n\nFor model A,\n\n$$P(X_A=3)=\\binom{8}{3}\n\\left(\\dfrac{1}{3}\\right)^{3}\n\\left(\\dfrac{2}{3}\\right)^{5}\n=\\dfrac{1792}{6561}\\approx 0.2731291$$\n\nFor model B,\n\n$$P(X_B=3)=\\binom{10}{3}\n\\left(\\dfrac{1}{2}\\right)^{3}\n\\left(\\dfrac{1}{2}\\right)^{7}\n=\\dfrac{15}{128}\\approx 0.1171875$$\n\nTheir ratio in the statement's order is\n\n$$\\frac{P(X_A=3)}{P(X_B=3)}\n=\\dfrac{229376}{98415}\\approx 2.330702$$\n\nSince the ratio is above $1$, A's probability is greater than B's, not automatically the one with larger $n$ or $p$.\n\nThe mathematical result agrees with the claim, so the statement is True.",
-        "**E.** → False\n\nFor each system, use the complement of zero successes. For A,\n\n$$P_A(X\\ge1)=1-P_A(X=0)\n=1-\\left(\\dfrac{9}{10}\\right)^{9}\n=\\dfrac{612579511}{1000000000}\\approx 0.61257951$$\n\nFor B,\n\n$$P_B(Y\\ge1)=1-P_B(Y=0)\n=1-\\left(\\dfrac{3}{4}\\right)^{10}\n=\\dfrac{989527}{1048576}\\approx 0.94368649$$\n\nSubtract in the order used by the statement:\n\n$$P_A(X\\ge1)-P_B(Y\\ge1)\n=\\dfrac{-678107083347}{2048000000000}\\approx -0.33110697$$\n\nThe difference is negative, so A's at-least-one probability is less than B's:\n\n$$0.61257951<0.94368649$$\n\nThe mathematical result does not agree with the claim, so the statement is False."
-      ],
-      "difficulty_level": "5/5",
-      "sort_order": 61,
-      "solution_overview": "Topics: exact, tail, moments, compare, complement.\nA: evaluate one exact binomial mass.\nB: sum every mass in a multi-value binomial tail.\nC: derive binomial mean, variance, and standard deviation.\nD: compare two exact binomial masses.\nE: compare at-least-one probabilities through zero-success complements.",
-      "placeholder": false
-    },
-    {
-      "id": "math-13-62",
-      "case_id": "MATH 13.62",
-      "title": "Exam-style tasks - 7",
-      "subsection": "13.5",
-      "context": "Evaluate each statement. Mark it TRUE or FALSE.",
-      "statements": [
-        "A satellite receives $8$ independent transmissions, each clear with probability $\\dfrac{3}{4}$. Its operator claims at most $5$ are clear with probability $\\dfrac{5267}{16384}$.",
-        "A quiz contains $18$ independent guesses, each right with probability $\\dfrac{1}{4}$. The teacher states that the ratio of variance to mean is $\\dfrac{3}{4}$.",
-        "Network A sends $9$ packets with loss chance $\\dfrac{2}{5}$, while network B sends $11$ with chance $\\dfrac{3}{5}$. The report ranks exactly $5$ losses as less likely on A.",
-        "Router A sends $4$ independent packets with loss chance $\\dfrac{1}{5}$, versus $7$ at $\\dfrac{1}{5}$ for router B. At least one loss is described as less likely on A.",
-        "A board game lets a player attempt $9$ independent quests, with win chance $\\dfrac{1}{3}$ on each. The rulebook's probability for exactly $6$ wins is $\\dfrac{224}{6561}$."
-      ],
-      "answer_key": [
-        false,
-        true,
-        false,
-        true,
-        true
-      ],
-      "tactical_explanations": [
-        "**A.** → False\n\nThe count is binomial, and the wording names several disjoint values:\n\n$$X\\sim\\operatorname{Bin}\\left(8,\\dfrac{3}{4}\\right)$$\n\nWrite the complete tail rather than a single endpoint mass:\n\n$$P(X\\le 5)=\\sum_{x=0}^{5}\n\\binom{8}{x}\\left(\\dfrac{3}{4}\\right)^x\n\\left(\\dfrac{1}{4}\\right)^{8-x}$$\n\nExpanding every included count gives\n\n$$P(X\\le 5)=\\binom{8}{0}\\left(\\dfrac{3}{4}\\right)^{0}\\left(\\dfrac{1}{4}\\right)^{8}+\\binom{8}{1}\\left(\\dfrac{3}{4}\\right)^{1}\\left(\\dfrac{1}{4}\\right)^{7}+\\binom{8}{2}\\left(\\dfrac{3}{4}\\right)^{2}\\left(\\dfrac{1}{4}\\right)^{6}+\\binom{8}{3}\\left(\\dfrac{3}{4}\\right)^{3}\\left(\\dfrac{1}{4}\\right)^{5}+\\binom{8}{4}\\left(\\dfrac{3}{4}\\right)^{4}\\left(\\dfrac{1}{4}\\right)^{4}+\\binom{8}{5}\\left(\\dfrac{3}{4}\\right)^{5}\\left(\\dfrac{1}{4}\\right)^{3}$$\n\nAdding these mutually exclusive masses,\n\n$$P(X\\le 5)=\\dfrac{21067}{65536}\\approx 0.32145691$$\n\nThe quoted value is $\\dfrac{5267}{16384}$, so\n\n$$\\dfrac{21067}{65536}\\ne\\dfrac{5267}{16384}$$\n\nThe mathematical result does not agree with the claim, so the statement is False.",
-        "**B.** → True\n\nA binomial count is a sum of independent Bernoulli indicators. Its first moment is\n\n$$E(X)=np=18\\left(\\dfrac{1}{4}\\right)=\\dfrac{9}{2}$$\n\nIts variance includes the failure probability:\n\n$$\\operatorname{Var}(X)=np(1-p)\n=18\\left(\\dfrac{1}{4}\\right)\\left(\\dfrac{3}{4}\\right)\n=\\dfrac{27}{8}$$\n\nConsequently,\n\n$$\\operatorname{SD}(X)=\\sqrt{\\dfrac{27}{8}}\n\\approx 1.83712$$\n\nCancel the common factor $np$:\n\n$$\\frac{\\operatorname{Var}(X)}{E(X)}\n=\\frac{np(1-p)}{np}=1-p=\\dfrac{3}{4}$$\n\nThe claimed ratio is $\\dfrac{3}{4}$, hence\n\n$$\\dfrac{3}{4}=\\dfrac{3}{4}$$\n\nThe mathematical result agrees with the claim, so the statement is True.",
-        "**C.** → False\n\nTreat the two counts as different binomial models:\n\n$$X_A\\sim\\operatorname{Bin}\\left(9,\\dfrac{2}{5}\\right),\\qquad\nX_B\\sim\\operatorname{Bin}\\left(11,\\dfrac{3}{5}\\right)$$\n\nFor model A,\n\n$$P(X_A=5)=\\binom{9}{5}\n\\left(\\dfrac{2}{5}\\right)^{5}\n\\left(\\dfrac{3}{5}\\right)^{4}\n=\\dfrac{326592}{1953125}\\approx 0.1672151$$\n\nFor model B,\n\n$$P(X_B=5)=\\binom{11}{5}\n\\left(\\dfrac{3}{5}\\right)^{5}\n\\left(\\dfrac{2}{5}\\right)^{6}\n=\\dfrac{7185024}{48828125}\\approx 0.14714929$$\n\nTheir ratio in the statement's order is\n\n$$\\frac{P(X_A=5)}{P(X_B=5)}\n=\\dfrac{25}{22}\\approx 1.136364$$\n\nSince the ratio is above $1$, A's probability is greater than B's, not automatically the one with larger $n$ or $p$.\n\nThe mathematical result does not agree with the claim, so the statement is False.",
-        "**D.** → True\n\nFor each system, use the complement of zero successes. For A,\n\n$$P_A(X\\ge1)=1-P_A(X=0)\n=1-\\left(\\dfrac{4}{5}\\right)^{4}\n=\\dfrac{369}{625}\\approx 0.5904$$\n\nFor B,\n\n$$P_B(Y\\ge1)=1-P_B(Y=0)\n=1-\\left(\\dfrac{4}{5}\\right)^{7}\n=\\dfrac{61741}{78125}\\approx 0.7902848$$\n\nSubtract in the order used by the statement:\n\n$$P_A(X\\ge1)-P_B(Y\\ge1)\n=\\dfrac{-15616}{78125}\\approx -0.1998848$$\n\nThe difference is negative, so A's at-least-one probability is less than B's:\n\n$$0.5904<0.7902848$$\n\nThe mathematical result agrees with the claim, so the statement is True.",
-        "**E.** → True\n\nThe fixed trial count, common success probability, and independence give a binomial model:\n\n$$X\\sim\\operatorname{Bin}\\left(9,\\dfrac{1}{3}\\right)$$\n\nFor exactly $6$ successes, choose their positions and multiply the Bernoulli probabilities:\n\n$$P(X=6)=\\binom{9}{6}\n\\left(\\dfrac{1}{3}\\right)^{6}\n\\left(\\dfrac{2}{3}\\right)^{3}$$\n\nSubstitution gives\n\n$$P(X=6)=84\n\\left(\\dfrac{1}{729}\\right)\n\\left(\\dfrac{8}{27}\\right)\n=\\dfrac{224}{6561}\\approx 0.03414114$$\n\nThe stem gives $\\dfrac{224}{6561}$; the exact comparison is\n\n$$\\dfrac{224}{6561}=\\dfrac{224}{6561}$$\n\nThe mathematical result agrees with the claim, so the statement is True."
-      ],
-      "difficulty_level": "5/5",
-      "sort_order": 62,
-      "solution_overview": "Topics: tail, moments, compare, complement, exact.\nA: sum every mass in a multi-value binomial tail.\nB: derive binomial mean, variance, and standard deviation.\nC: compare two exact binomial masses.\nD: compare at-least-one probabilities through zero-success complements.\nE: evaluate one exact binomial mass.",
-      "placeholder": false
-    },
-    {
-      "id": "math-13-63",
-      "case_id": "MATH 13.63",
-      "title": "Exam-style tasks - 8",
-      "subsection": "13.5",
-      "context": "Evaluate each statement. Mark it TRUE or FALSE.",
-      "statements": [
-        "A camera detects wildlife independently on each of $19$ nights with probability $\\dfrac{1}{3}$. Doubling the nights is claimed to multiply the standard deviation by $2$.",
-        "A survey samples $10$ voters with support probability $\\dfrac{1}{4}$ and another samples $9$ at $\\dfrac{1}{2}$. Exactly $4$ supporters are claimed to be less likely in the first survey.",
-        "Goalkeeper A faces $5$ independent penalties at save chance $\\dfrac{1}{4}$; goalkeeper B faces $6$ at $\\dfrac{2}{5}$. The chance of at least one save is claimed to be more likely for A.",
-        "A clinic follows $10$ independent appointments, each cancelled with probability $\\dfrac{2}{5}$. The scheduler quotes $\\dfrac{83981}{390625}$ for exactly $3$ cancellations.",
-        "An exam has $9$ independently guessed questions, each correct with probability $\\dfrac{1}{2}$. The marking guide gives $\\dfrac{23}{256}$ as the chance of at least $7$ correct."
-      ],
-      "answer_key": [
-        false,
-        true,
-        false,
-        false,
-        true
-      ],
-      "tactical_explanations": [
-        "**A.** → False\n\nA binomial count is a sum of independent Bernoulli indicators. Its first moment is\n\n$$E(X)=np=19\\left(\\dfrac{1}{3}\\right)=\\dfrac{19}{3}$$\n\nIts variance includes the failure probability:\n\n$$\\operatorname{Var}(X)=np(1-p)\n=19\\left(\\dfrac{1}{3}\\right)\\left(\\dfrac{2}{3}\\right)\n=\\dfrac{38}{9}$$\n\nConsequently,\n\n$$\\operatorname{SD}(X)=\\sqrt{\\dfrac{38}{9}}\n\\approx 2.0548$$\n\nWith the same $p$ and twice the trial count,\n\n$$\\operatorname{Var}(Y)=2\\operatorname{Var}(X)$$\n\nTaking nonnegative square roots gives\n\n$$\\frac{\\operatorname{SD}(Y)}{\\operatorname{SD}(X)}=\\sqrt{2}$$\n\nThe stem's factor is $2$, so\n\n$$\\sqrt{2}\\ne2$$\n\nThe mathematical result does not agree with the claim, so the statement is False.",
-        "**B.** → True\n\nTreat the two counts as different binomial models:\n\n$$X_A\\sim\\operatorname{Bin}\\left(10,\\dfrac{1}{4}\\right),\\qquad\nX_B\\sim\\operatorname{Bin}\\left(9,\\dfrac{1}{2}\\right)$$\n\nFor model A,\n\n$$P(X_A=4)=\\binom{10}{4}\n\\left(\\dfrac{1}{4}\\right)^{4}\n\\left(\\dfrac{3}{4}\\right)^{6}\n=\\dfrac{76545}{524288}\\approx 0.145998$$\n\nFor model B,\n\n$$P(X_B=4)=\\binom{9}{4}\n\\left(\\dfrac{1}{2}\\right)^{4}\n\\left(\\dfrac{1}{2}\\right)^{5}\n=\\dfrac{63}{256}\\approx 0.24609375$$\n\nTheir ratio in the statement's order is\n\n$$\\frac{P(X_A=4)}{P(X_B=4)}\n=\\dfrac{1215}{2048}\\approx 0.593262$$\n\nSince the ratio is below $1$, A's probability is less than B's, not automatically the one with larger $n$ or $p$.\n\nThe mathematical result agrees with the claim, so the statement is True.",
-        "**C.** → False\n\nFor each system, use the complement of zero successes. For A,\n\n$$P_A(X\\ge1)=1-P_A(X=0)\n=1-\\left(\\dfrac{3}{4}\\right)^{5}\n=\\dfrac{781}{1024}\\approx 0.76269531$$\n\nFor B,\n\n$$P_B(Y\\ge1)=1-P_B(Y=0)\n=1-\\left(\\dfrac{3}{5}\\right)^{6}\n=\\dfrac{14896}{15625}\\approx 0.953344$$\n\nSubtract in the order used by the statement:\n\n$$P_A(X\\ge1)-P_B(Y\\ge1)\n=\\dfrac{-3050379}{16000000}\\approx -0.19064869$$\n\nThe difference is negative, so A's at-least-one probability is less than B's:\n\n$$0.76269531<0.953344$$\n\nThe mathematical result does not agree with the claim, so the statement is False.",
-        "**D.** → False\n\nThe fixed trial count, common success probability, and independence give a binomial model:\n\n$$X\\sim\\operatorname{Bin}\\left(10,\\dfrac{2}{5}\\right)$$\n\nFor exactly $3$ successes, choose their positions and multiply the Bernoulli probabilities:\n\n$$P(X=3)=\\binom{10}{3}\n\\left(\\dfrac{2}{5}\\right)^{3}\n\\left(\\dfrac{3}{5}\\right)^{7}$$\n\nSubstitution gives\n\n$$P(X=3)=120\n\\left(\\dfrac{8}{125}\\right)\n\\left(\\dfrac{2187}{78125}\\right)\n=\\dfrac{419904}{1953125}\\approx 0.21499085$$\n\nThe stem gives $\\dfrac{83981}{390625}$; the exact comparison is\n\n$$\\dfrac{419904}{1953125}\\ne\\dfrac{83981}{390625}$$\n\nThe mathematical result does not agree with the claim, so the statement is False.",
-        "**E.** → True\n\nThe count is binomial, and the wording names several disjoint values:\n\n$$X\\sim\\operatorname{Bin}\\left(9,\\dfrac{1}{2}\\right)$$\n\nWrite the complete tail rather than a single endpoint mass:\n\n$$P(X\\ge 7)=\\sum_{x=7}^{9}\n\\binom{9}{x}\\left(\\dfrac{1}{2}\\right)^x\n\\left(\\dfrac{1}{2}\\right)^{9-x}$$\n\nExpanding every included count gives\n\n$$P(X\\ge 7)=\\binom{9}{7}\\left(\\dfrac{1}{2}\\right)^{7}\\left(\\dfrac{1}{2}\\right)^{2}+\\binom{9}{8}\\left(\\dfrac{1}{2}\\right)^{8}\\left(\\dfrac{1}{2}\\right)^{1}+\\binom{9}{9}\\left(\\dfrac{1}{2}\\right)^{9}\\left(\\dfrac{1}{2}\\right)^{0}$$\n\nAdding these mutually exclusive masses,\n\n$$P(X\\ge 7)=\\dfrac{23}{256}\\approx 0.08984375$$\n\nThe quoted value is $\\dfrac{23}{256}$, so\n\n$$\\dfrac{23}{256}=\\dfrac{23}{256}$$\n\nThe mathematical result agrees with the claim, so the statement is True."
-      ],
-      "difficulty_level": "5/5",
-      "sort_order": 63,
-      "solution_overview": "Topics: moments, compare, complement, exact, tail.\nA: derive binomial mean, variance, and standard deviation.\nB: compare two exact binomial masses.\nC: compare at-least-one probabilities through zero-success complements.\nD: evaluate one exact binomial mass.\nE: sum every mass in a multi-value binomial tail.",
-      "placeholder": false
-    },
-    {
-      "id": "math-13-64",
-      "case_id": "MATH 13.64",
-      "title": "Exam-style tasks - 9",
-      "subsection": "13.5",
-      "context": "Evaluate each statement. Mark it TRUE or FALSE.",
-      "statements": [
-        "Machine A attempts $11$ placements with accuracy $\\dfrac{7}{10}$; machine B attempts $12$ with accuracy $\\dfrac{3}{5}$. Engineers say exactly $8$ accurate placements is less likely for A.",
-        "A bakery inspects $6$ loaves with failure probability $\\dfrac{1}{3}$ and another inspects $9$ at $\\dfrac{1}{3}$. One or more failures is labelled less likely in the first bakery.",
-        "A satellite sends $11$ independent packets, each lost with probability $\\dfrac{1}{2}$. Mission logs claim exactly $5$ losses have probability $\\dfrac{231}{1024}$.",
-        "A clinic has $10$ independent test samples, each positive with probability $\\dfrac{1}{5}$. The lab reports probability $\\dfrac{6619137}{9765625}$ for at most $2$ positives.",
-        "A call campaign has $20$ independent prospects and response probability $\\dfrac{1}{5}$. The manager lists the response-count mean as $4$."
-      ],
-      "answer_key": [
-        false,
-        true,
-        true,
-        false,
-        true
-      ],
-      "tactical_explanations": [
-        "**A.** → False\n\nTreat the two counts as different binomial models:\n\n$$X_A\\sim\\operatorname{Bin}\\left(11,\\dfrac{7}{10}\\right),\\qquad\nX_B\\sim\\operatorname{Bin}\\left(12,\\dfrac{3}{5}\\right)$$\n\nFor model A,\n\n$$P(X_A=8)=\\binom{11}{8}\n\\left(\\dfrac{7}{10}\\right)^{8}\n\\left(\\dfrac{3}{10}\\right)^{3}\n=\\dfrac{5136437691}{20000000000}\\approx 0.25682188$$\n\nFor model B,\n\n$$P(X_B=8)=\\binom{12}{8}\n\\left(\\dfrac{3}{5}\\right)^{8}\n\\left(\\dfrac{2}{5}\\right)^{4}\n=\\dfrac{10392624}{48828125}\\approx 0.21284094$$\n\nTheir ratio in the statement's order is\n\n$$\\frac{P(X_A=8)}{P(X_B=8)}\n=\\dfrac{28824005}{23887872}\\approx 1.206638$$\n\nSince the ratio is above $1$, A's probability is greater than B's, not automatically the one with larger $n$ or $p$.\n\nThe mathematical result does not agree with the claim, so the statement is False.",
-        "**B.** → True\n\nFor each system, use the complement of zero successes. For A,\n\n$$P_A(X\\ge1)=1-P_A(X=0)\n=1-\\left(\\dfrac{2}{3}\\right)^{6}\n=\\dfrac{665}{729}\\approx 0.9122085$$\n\nFor B,\n\n$$P_B(Y\\ge1)=1-P_B(Y=0)\n=1-\\left(\\dfrac{2}{3}\\right)^{9}\n=\\dfrac{19171}{19683}\\approx 0.97398771$$\n\nSubtract in the order used by the statement:\n\n$$P_A(X\\ge1)-P_B(Y\\ge1)\n=\\dfrac{-1216}{19683}\\approx -0.0617792$$\n\nThe difference is negative, so A's at-least-one probability is less than B's:\n\n$$0.9122085<0.97398771$$\n\nThe mathematical result agrees with the claim, so the statement is True.",
-        "**C.** → True\n\nThe fixed trial count, common success probability, and independence give a binomial model:\n\n$$X\\sim\\operatorname{Bin}\\left(11,\\dfrac{1}{2}\\right)$$\n\nFor exactly $5$ successes, choose their positions and multiply the Bernoulli probabilities:\n\n$$P(X=5)=\\binom{11}{5}\n\\left(\\dfrac{1}{2}\\right)^{5}\n\\left(\\dfrac{1}{2}\\right)^{6}$$\n\nSubstitution gives\n\n$$P(X=5)=462\n\\left(\\dfrac{1}{32}\\right)\n\\left(\\dfrac{1}{64}\\right)\n=\\dfrac{231}{1024}\\approx 0.22558594$$\n\nThe stem gives $\\dfrac{231}{1024}$; the exact comparison is\n\n$$\\dfrac{231}{1024}=\\dfrac{231}{1024}$$\n\nThe mathematical result agrees with the claim, so the statement is True.",
-        "**D.** → False\n\nThe count is binomial, and the wording names several disjoint values:\n\n$$X\\sim\\operatorname{Bin}\\left(10,\\dfrac{1}{5}\\right)$$\n\nWrite the complete tail rather than a single endpoint mass:\n\n$$P(X\\le 2)=\\sum_{x=0}^{2}\n\\binom{10}{x}\\left(\\dfrac{1}{5}\\right)^x\n\\left(\\dfrac{4}{5}\\right)^{10-x}$$\n\nExpanding every included count gives\n\n$$P(X\\le 2)=\\binom{10}{0}\\left(\\dfrac{1}{5}\\right)^{0}\\left(\\dfrac{4}{5}\\right)^{10}+\\binom{10}{1}\\left(\\dfrac{1}{5}\\right)^{1}\\left(\\dfrac{4}{5}\\right)^{9}+\\binom{10}{2}\\left(\\dfrac{1}{5}\\right)^{2}\\left(\\dfrac{4}{5}\\right)^{8}$$\n\nAdding these mutually exclusive masses,\n\n$$P(X\\le 2)=\\dfrac{6619136}{9765625}\\approx 0.67779953$$\n\nThe quoted value is $\\dfrac{6619137}{9765625}$, so\n\n$$\\dfrac{6619136}{9765625}\\ne\\dfrac{6619137}{9765625}$$\n\nThe mathematical result does not agree with the claim, so the statement is False.",
-        "**E.** → True\n\nA binomial count is a sum of independent Bernoulli indicators. Its first moment is\n\n$$E(X)=np=20\\left(\\dfrac{1}{5}\\right)=4$$\n\nIts variance includes the failure probability:\n\n$$\\operatorname{Var}(X)=np(1-p)\n=20\\left(\\dfrac{1}{5}\\right)\\left(\\dfrac{4}{5}\\right)\n=\\dfrac{16}{5}$$\n\nConsequently,\n\n$$\\operatorname{SD}(X)=\\sqrt{\\dfrac{16}{5}}\n\\approx 1.78885$$\n\nThus the expected count is $4$, while the stem gives $4$:\n\n$$4=4$$\n\nThe mathematical result agrees with the claim, so the statement is True."
-      ],
-      "difficulty_level": "5/5",
-      "sort_order": 64,
-      "solution_overview": "Topics: compare, complement, exact, tail, moments.\nA: compare two exact binomial masses.\nB: compare at-least-one probabilities through zero-success complements.\nC: evaluate one exact binomial mass.\nD: sum every mass in a multi-value binomial tail.\nE: derive binomial mean, variance, and standard deviation.",
-      "placeholder": false
-    },
-    {
-      "id": "math-13-65",
-      "case_id": "MATH 13.65",
-      "title": "Exam-style tasks - 10",
-      "subsection": "13.5",
-      "context": "Evaluate each statement. Mark it TRUE or FALSE.",
-      "statements": [
-        "Survey A contacts $7$ voters at support chance $\\dfrac{2}{5}$, while survey B contacts $8$ at $\\dfrac{1}{5}$. At least one supporter is stated to be less likely in A.",
-        "A restaurant asks $12$ independent diners whether they order dessert; each does so with probability $\\dfrac{3}{10}$. The manager predicts exactly $4$ orders with probability $\\dfrac{2311396961}{10000000000}$.",
-        "A warehouse scans $11$ independent parcels, each mislabelled with probability $\\dfrac{2}{5}$. The supervisor assigns $\\dfrac{57856}{9765625}$ to seeing at least $9$ errors.",
-        "A laboratory runs $12$ independent trials with contamination probability $\\dfrac{1}{2}$. The contamination-count variance is printed as $4$.",
-        "Restaurant A asks $12$ diners at dessert probability $\\dfrac{1}{3}$, and restaurant B asks $10$ at $\\dfrac{2}{5}$. Exactly $4$ dessert orders is said to be less likely at A."
-      ],
-      "answer_key": [
-        false,
-        false,
-        true,
-        false,
-        true
-      ],
-      "tactical_explanations": [
-        "**A.** → False\n\nFor each system, use the complement of zero successes. For A,\n\n$$P_A(X\\ge1)=1-P_A(X=0)\n=1-\\left(\\dfrac{3}{5}\\right)^{7}\n=\\dfrac{75938}{78125}\\approx 0.9720064$$\n\nFor B,\n\n$$P_B(Y\\ge1)=1-P_B(Y=0)\n=1-\\left(\\dfrac{4}{5}\\right)^{8}\n=\\dfrac{325089}{390625}\\approx 0.83222784$$\n\nSubtract in the order used by the statement:\n\n$$P_A(X\\ge1)-P_B(Y\\ge1)\n=\\dfrac{54601}{390625}\\approx 0.13977856$$\n\nThe difference is positive, so A's at-least-one probability is greater than B's:\n\n$$0.9720064>0.83222784$$\n\nThe mathematical result does not agree with the claim, so the statement is False.",
-        "**B.** → False\n\nThe fixed trial count, common success probability, and independence give a binomial model:\n\n$$X\\sim\\operatorname{Bin}\\left(12,\\dfrac{3}{10}\\right)$$\n\nFor exactly $4$ successes, choose their positions and multiply the Bernoulli probabilities:\n\n$$P(X=4)=\\binom{12}{4}\n\\left(\\dfrac{3}{10}\\right)^{4}\n\\left(\\dfrac{7}{10}\\right)^{8}$$\n\nSubstitution gives\n\n$$P(X=4)=495\n\\left(\\dfrac{81}{10000}\\right)\n\\left(\\dfrac{5764801}{100000000}\\right)\n=\\dfrac{46227939219}{200000000000}\\approx 0.2311397$$\n\nThe stem gives $\\dfrac{2311396961}{10000000000}$; the exact comparison is\n\n$$\\dfrac{46227939219}{200000000000}\\ne\\dfrac{2311396961}{10000000000}$$\n\nThe mathematical result does not agree with the claim, so the statement is False.",
-        "**C.** → True\n\nThe count is binomial, and the wording names several disjoint values:\n\n$$X\\sim\\operatorname{Bin}\\left(11,\\dfrac{2}{5}\\right)$$\n\nWrite the complete tail rather than a single endpoint mass:\n\n$$P(X\\ge 9)=\\sum_{x=9}^{11}\n\\binom{11}{x}\\left(\\dfrac{2}{5}\\right)^x\n\\left(\\dfrac{3}{5}\\right)^{11-x}$$\n\nExpanding every included count gives\n\n$$P(X\\ge 9)=\\binom{11}{9}\\left(\\dfrac{2}{5}\\right)^{9}\\left(\\dfrac{3}{5}\\right)^{2}+\\binom{11}{10}\\left(\\dfrac{2}{5}\\right)^{10}\\left(\\dfrac{3}{5}\\right)^{1}+\\binom{11}{11}\\left(\\dfrac{2}{5}\\right)^{11}\\left(\\dfrac{3}{5}\\right)^{0}$$\n\nAdding these mutually exclusive masses,\n\n$$P(X\\ge 9)=\\dfrac{57856}{9765625}\\approx 0.00592445$$\n\nThe quoted value is $\\dfrac{57856}{9765625}$, so\n\n$$\\dfrac{57856}{9765625}=\\dfrac{57856}{9765625}$$\n\nThe mathematical result agrees with the claim, so the statement is True.",
-        "**D.** → False\n\nA binomial count is a sum of independent Bernoulli indicators. Its first moment is\n\n$$E(X)=np=12\\left(\\dfrac{1}{2}\\right)=6$$\n\nIts variance includes the failure probability:\n\n$$\\operatorname{Var}(X)=np(1-p)\n=12\\left(\\dfrac{1}{2}\\right)\\left(\\dfrac{1}{2}\\right)\n=3$$\n\nConsequently,\n\n$$\\operatorname{SD}(X)=\\sqrt{3}\n\\approx 1.73205$$\n\nThus the variance is $3$, compared with $4$:\n\n$$3\\ne4$$\n\nThe mathematical result does not agree with the claim, so the statement is False.",
-        "**E.** → True\n\nTreat the two counts as different binomial models:\n\n$$X_A\\sim\\operatorname{Bin}\\left(12,\\dfrac{1}{3}\\right),\\qquad\nX_B\\sim\\operatorname{Bin}\\left(10,\\dfrac{2}{5}\\right)$$\n\nFor model A,\n\n$$P(X_A=4)=\\binom{12}{4}\n\\left(\\dfrac{1}{3}\\right)^{4}\n\\left(\\dfrac{2}{3}\\right)^{8}\n=\\dfrac{14080}{59049}\\approx 0.23844604$$\n\nFor model B,\n\n$$P(X_B=4)=\\binom{10}{4}\n\\left(\\dfrac{2}{5}\\right)^{4}\n\\left(\\dfrac{3}{5}\\right)^{6}\n=\\dfrac{489888}{1953125}\\approx 0.25082266$$\n\nTheir ratio in the statement's order is\n\n$$\\frac{P(X_A=4)}{P(X_B=4)}\n=\\dfrac{859375000}{903981141}\\approx 0.950656$$\n\nSince the ratio is below $1$, A's probability is less than B's, not automatically the one with larger $n$ or $p$.\n\nThe mathematical result agrees with the claim, so the statement is True."
-      ],
-      "difficulty_level": "5/5",
-      "sort_order": 65,
-      "solution_overview": "Topics: complement, exact, tail, moments, compare.\nA: compare at-least-one probabilities through zero-success complements.\nB: evaluate one exact binomial mass.\nC: sum every mass in a multi-value binomial tail.\nD: derive binomial mean, variance, and standard deviation.\nE: compare two exact binomial masses.",
-      "placeholder": false
-    },
-    {
-      "id": "math-13-66",
-      "case_id": "MATH 13.66",
-      "title": "Exam-style tasks - 11",
-      "subsection": "13.5",
-      "context": "A sensor performs 5 independent checks, each succeeding with probability $1/2$. Let $X$ be the number of successes, so $X\\sim\\operatorname{Bin}(5,1/2)$. The report uses exact binomial masses and keeps the coefficient $\\binom{5}k$ in every calculation.",
-      "statements": [
-        "$P(X=0)=\\dfrac{1}{32}$.",
-        "$P(X=1)=\\dfrac{5}{32}$.",
-        "$P(X=2)=\\dfrac{5}{16}$.",
-        "$P(X=0)=P(X=1)$.",
-        "$P(X=5)=P(X=0)$."
-      ],
-      "answer_key": [
-        true,
-        true,
-        true,
-        false,
-        true
-      ],
-      "tactical_explanations": [
-        "**A.** → True\n\n$(1/2)^5=\\dfrac{1}{32}$.\n\nThe claim is True.",
-        "**B.** → True\n\n$\\binom{5}{1}(1/2)^5=\\dfrac{5}{32}$.\n\nThe claim is True.",
-        "**C.** → True\n\n$\\binom{5}{2}(1/2)^5=\\dfrac{5}{16}$.\n\nThe claim is True.",
-        "**D.** → False\n\n$\\dfrac{1}{32}\\ne\\dfrac{5}{32}$.\n\nThe claim is False.",
-        "**E.** → True\n\nWith $p=1/2$, the binomial distribution is symmetric.\n\nThe claim is True."
-      ],
-      "difficulty_level": "5/5",
-      "sort_order": 66,
-      "solution_overview": "Shared context topic exact.\n\nShared solution:\n1. Use the single shared stem for topic exact; do not re-read any claim as a new scenario.\n2. Organize the given data before testing claims. A shared binomial model is used for several exact masses.\n3. Keep every stated domain, endpoint, sampling rule, or physical restriction in force.\n4. A: $(1/2)^5=\\dfrac{1}{32}$.\n5. A: The computed result makes this claim True.\n6. B: $\\binom{5}{1}(1/2)^5=\\dfrac{5}{32}$.\n7. B: The computed result makes this claim True.\n8. C: $\\binom{5}{2}(1/2)^5=\\dfrac{5}{16}$.\n9. C: The computed result makes this claim True.\n10. D: $\\dfrac{1}{32}\\ne\\dfrac{5}{32}$.\n11. D: The computed result makes this claim False.\n12. E: With $p=1/2$, the binomial distribution is symmetric.\n13. E: The computed result makes this claim True.",
-      "placeholder": false
-    },
-    {
-      "id": "math-13-67",
-      "case_id": "MATH 13.67",
-      "title": "Exam-style tasks - 12",
-      "subsection": "13.5",
-      "context": "A help desk handles 6 independent tickets, each resolved immediately with probability $1/2$. Let $X$ count immediate resolutions. The analyst evaluates lower and upper tails by adding all included binomial masses; endpoint phrases such as 'at most' and 'at least' are inclusive.",
-      "statements": [
-        "$P(X\\le1)=\\dfrac{7}{64}$.",
-        "$P(X\\ge5)=\\dfrac{7}{64}$.",
-        "$P(X\\le2)=\\dfrac{11}{32}$.",
-        "$P(X<2)=P(X\\le2)$.",
-        "$P(X\\ge0)=1$."
-      ],
-      "answer_key": [
-        true,
-        true,
-        true,
-        false,
-        true
-      ],
-      "tactical_explanations": [
-        "**A.** → True\n\n$(\\binom{6}{0}+\\binom{6}{1})/2^6=\\dfrac{7}{64}$.\n\nThe claim is True.",
-        "**B.** → True\n\nSymmetry gives the same total as $P(X\\le1)$.\n\nThe claim is True.",
-        "**C.** → True\n\nAdd the masses for $0$, $1$, and $2$ successes to get $\\dfrac{11}{32}$.\n\nThe claim is True.",
-        "**D.** → False\n\nThe non-strict event also contains the positive mass $P(X=2)$.\n\nThe claim is False.",
-        "**E.** → True\n\nA binomial count cannot be negative.\n\nThe claim is True."
-      ],
-      "difficulty_level": "5/5",
-      "sort_order": 67,
-      "solution_overview": "Shared context topic tail.\n\nShared solution:\n1. Use the single shared stem for topic tail; do not re-read any claim as a new scenario.\n2. Organize the given data before testing claims. One shared binomial count supplies inclusive lower and upper tails.\n3. Keep every stated domain, endpoint, sampling rule, or physical restriction in force.\n4. A: $(\\binom{6}{0}+\\binom{6}{1})/2^6=\\dfrac{7}{64}$.\n5. A: The computed result makes this claim True.\n6. B: Symmetry gives the same total as $P(X\\le1)$.\n7. B: The computed result makes this claim True.\n8. C: Add the masses for $0$, $1$, and $2$ successes to get $\\dfrac{11}{32}$.\n9. C: The computed result makes this claim True.\n10. D: The non-strict event also contains the positive mass $P(X=2)$.\n11. D: The computed result makes this claim False.\n12. E: A binomial count cannot be negative.\n13. E: The computed result makes this claim True.",
-      "placeholder": false
-    },
-    {
-      "id": "math-13-68",
-      "case_id": "MATH 13.68",
-      "title": "Exam-style tasks - 13",
-      "subsection": "13.5",
-      "context": "A production line tests 20 independent items, each passing with probability $0.3$. Let $X$ be the pass count, so the binomial formulas for mean and variance apply. The report also uses $E(X^2)=\\operatorname{Var}(X)+[E(X)]^2$ and compares standard deviations.",
-      "statements": [
-        "$E(X)=6$.",
-        "$\\operatorname{Var}(X)=\\dfrac{21}{5}$.",
-        "$\\operatorname{SD}(X)=\\dfrac{21}{5}$.",
-        "$E(X^2)=\\dfrac{201}{5}$.",
-        "$\\operatorname{Var}(X)/E(X)=0.7$."
-      ],
-      "answer_key": [
-        true,
-        true,
-        false,
-        true,
-        true
-      ],
-      "tactical_explanations": [
-        "**A.** → True\n\n$np=20(0.3)=6$.\n\nThe claim is True.",
-        "**B.** → True\n\n$np(1-p)=20(0.3)(0.7)=\\dfrac{21}{5}$.\n\nThe claim is True.",
-        "**C.** → False\n\nStandard deviation is $\\sqrt{\\dfrac{21}{5}}$, not the variance.\n\nThe claim is False.",
-        "**D.** → True\n\n$\\dfrac{21}{5}+(6)^2=\\dfrac{201}{5}$.\n\nThe claim is True.",
-        "**E.** → True\n\n$np(1-p)/(np)=1-p=0.7$.\n\nThe claim is True."
-      ],
-      "difficulty_level": "5/5",
-      "sort_order": 68,
-      "solution_overview": "Shared context topic moments.\n\nShared solution:\n1. Use the single shared stem for topic moments; do not re-read any claim as a new scenario.\n2. Organize the given data before testing claims. A shared binomial model supplies mean, variance, SD, and second moment.\n3. Keep every stated domain, endpoint, sampling rule, or physical restriction in force.\n4. A: $np=20(0.3)=6$.\n5. A: The computed result makes this claim True.\n6. B: $np(1-p)=20(0.3)(0.7)=\\dfrac{21}{5}$.\n7. B: The computed result makes this claim True.\n8. C: Standard deviation is $\\sqrt{\\dfrac{21}{5}}$, not the variance.\n9. C: The computed result makes this claim False.\n10. D: $\\dfrac{21}{5}+(6)^2=\\dfrac{201}{5}$.\n11. D: The computed result makes this claim True.\n12. E: $np(1-p)/(np)=1-p=0.7$.\n13. E: The computed result makes this claim True.",
-      "placeholder": false
-    },
-    {
-      "id": "math-13-69",
-      "case_id": "MATH 13.69",
-      "title": "Exam-style tasks - 14",
-      "subsection": "13.5",
-      "context": "Line A tests 8 independent items with pass probability $\\dfrac{1}{4}$, while line B tests 8 independent items with pass probability $\\dfrac{1}{2}$. Let $X_A$ and $X_B$ be their pass counts. The comparison concerns exact counts and moments, so each line keeps its own binomial parameter.",
-      "statements": [
-        "$E(X_A)<E(X_B)$.",
-        "$P(X_A=0)>P(X_B=0)$.",
-        "$P(X_A=4)>P(X_B=4)$.",
-        "$\\operatorname{Var}(X_A)<\\operatorname{Var}(X_B)$.",
-        "The two pass counts have the same distribution."
-      ],
-      "answer_key": [
-        true,
-        true,
-        false,
-        true,
-        false
-      ],
-      "tactical_explanations": [
-        "**A.** → True\n\n$2<4$.\n\nThe claim is True.",
-        "**B.** → True\n\n$\\dfrac{6561}{65536}>\\dfrac{1}{256}$.\n\nThe claim is True.",
-        "**C.** → False\n\n$\\dfrac{2835}{32768}<\\dfrac{35}{128}$.\n\nThe claim is False.",
-        "**D.** → True\n\n$\\dfrac{3}{2}<2$.\n\nThe claim is True.",
-        "**E.** → False\n\nTheir success probabilities and means differ.\n\nThe claim is False."
-      ],
-      "difficulty_level": "5/5",
-      "sort_order": 69,
-      "solution_overview": "Shared context topic compare.\n\nShared solution:\n1. Use the single shared stem for topic compare; do not re-read any claim as a new scenario.\n2. Organize the given data before testing claims. Two shared binomial models are compared without mixing their parameters.\n3. Keep every stated domain, endpoint, sampling rule, or physical restriction in force.\n4. A: $2<4$.\n5. A: The computed result makes this claim True.\n6. B: $\\dfrac{6561}{65536}>\\dfrac{1}{256}$.\n7. B: The computed result makes this claim True.\n8. C: $\\dfrac{2835}{32768}<\\dfrac{35}{128}$.\n9. C: The computed result makes this claim False.\n10. D: $\\dfrac{3}{2}<2$.\n11. D: The computed result makes this claim True.\n12. E: Their success probabilities and means differ.\n13. E: The computed result makes this claim False.",
-      "placeholder": false
-    },
-    {
-      "id": "math-13-70",
-      "case_id": "MATH 13.70",
-      "title": "Exam-style tasks - 15",
-      "subsection": "13.5",
-      "context": "Backup A makes 4 independent activation attempts with success probability $1/4$ each. Backup B makes 6 independent attempts with the same success probability. The systems are tested separately, and every at-least-one probability is computed as one minus the zero-success probability.",
-      "statements": [
-        "$P(A\\text{ activates})=\\dfrac{175}{256}$.",
-        "$P(B\\text{ activates})=\\dfrac{3367}{4096}$.",
-        "Activation is more likely for B.",
-        "$P(A\\text{ never activates})=\\dfrac{81}{256}$.",
-        "Adding attempts lowers the at-least-one probability."
-      ],
-      "answer_key": [
-        true,
-        true,
-        true,
-        true,
-        false
-      ],
-      "tactical_explanations": [
-        "**A.** → True\n\n$1-(3/4)^4=\\dfrac{175}{256}$.\n\nThe claim is True.",
-        "**B.** → True\n\n$1-(3/4)^6=\\dfrac{3367}{4096}$.\n\nThe claim is True.",
-        "**C.** → True\n\n$\\dfrac{3367}{4096}>\\dfrac{175}{256}$.\n\nThe claim is True.",
-        "**D.** → True\n\n$(3/4)^4=\\dfrac{81}{256}$.\n\nThe claim is True.",
-        "**E.** → False\n\nWith fixed positive success probability, more attempts lower the zero-success probability.\n\nThe claim is False."
-      ],
-      "difficulty_level": "5/5",
-      "sort_order": 70,
-      "solution_overview": "Shared context topic complement.\n\nShared solution:\n1. Use the single shared stem for topic complement; do not re-read any claim as a new scenario.\n2. Organize the given data before testing claims. Two shared binomial systems are compared through zero-success complements.\n3. Keep every stated domain, endpoint, sampling rule, or physical restriction in force.\n4. A: $1-(3/4)^4=\\dfrac{175}{256}$.\n5. A: The computed result makes this claim True.\n6. B: $1-(3/4)^6=\\dfrac{3367}{4096}$.\n7. B: The computed result makes this claim True.\n8. C: $\\dfrac{3367}{4096}>\\dfrac{175}{256}$.\n9. C: The computed result makes this claim True.\n10. D: $(3/4)^4=\\dfrac{81}{256}$.\n11. D: The computed result makes this claim True.\n12. E: With fixed positive success probability, more attempts lower the zero-success probability.\n13. E: The computed result makes this claim False.",
-      "placeholder": false
-    },
-    {
-      "id": "math-13-71",
-      "case_id": "MATH 13.71",
-      "title": "Exam-style tasks - 16",
-      "subsection": "13.5",
-      "context": "A sensor performs 6 independent checks, each succeeding with probability $1/2$. Let $X$ be the number of successes, so $X\\sim\\operatorname{Bin}(6,1/2)$. The report uses exact binomial masses and keeps the coefficient $\\binom{6}k$ in every calculation.",
-      "statements": [
-        "$P(X=0)=\\dfrac{1}{64}$.",
-        "$P(X=1)=\\dfrac{3}{32}$.",
-        "$P(X=2)=\\dfrac{15}{64}$.",
-        "$P(X=0)=P(X=1)$.",
-        "$P(X=6)=P(X=0)$."
-      ],
-      "answer_key": [
-        true,
-        true,
-        true,
-        false,
-        true
-      ],
-      "tactical_explanations": [
-        "**A.** → True\n\n$(1/2)^6=\\dfrac{1}{64}$.\n\nThe claim is True.",
-        "**B.** → True\n\n$\\binom{6}{1}(1/2)^6=\\dfrac{3}{32}$.\n\nThe claim is True.",
-        "**C.** → True\n\n$\\binom{6}{2}(1/2)^6=\\dfrac{15}{64}$.\n\nThe claim is True.",
-        "**D.** → False\n\n$\\dfrac{1}{64}\\ne\\dfrac{3}{32}$.\n\nThe claim is False.",
-        "**E.** → True\n\nWith $p=1/2$, the binomial distribution is symmetric.\n\nThe claim is True."
-      ],
-      "difficulty_level": "5/5",
-      "sort_order": 71,
-      "solution_overview": "Shared context topic exact.\n\nShared solution:\n1. Use the single shared stem for topic exact; do not re-read any claim as a new scenario.\n2. Organize the given data before testing claims. A shared binomial model is used for several exact masses.\n3. Keep every stated domain, endpoint, sampling rule, or physical restriction in force.\n4. A: $(1/2)^6=\\dfrac{1}{64}$.\n5. A: The computed result makes this claim True.\n6. B: $\\binom{6}{1}(1/2)^6=\\dfrac{3}{32}$.\n7. B: The computed result makes this claim True.\n8. C: $\\binom{6}{2}(1/2)^6=\\dfrac{15}{64}$.\n9. C: The computed result makes this claim True.\n10. D: $\\dfrac{1}{64}\\ne\\dfrac{3}{32}$.\n11. D: The computed result makes this claim False.\n12. E: With $p=1/2$, the binomial distribution is symmetric.\n13. E: The computed result makes this claim True.",
-      "placeholder": false
-    },
-    {
-      "id": "math-13-72",
-      "case_id": "MATH 13.72",
-      "title": "Exam-style tasks - 17",
-      "subsection": "13.5",
-      "context": "A help desk handles 7 independent tickets, each resolved immediately with probability $1/2$. Let $X$ count immediate resolutions. The analyst evaluates lower and upper tails by adding all included binomial masses; endpoint phrases such as 'at most' and 'at least' are inclusive.",
-      "statements": [
-        "$P(X\\le1)=\\dfrac{1}{16}$.",
-        "$P(X\\ge6)=\\dfrac{1}{16}$.",
-        "$P(X\\le2)=\\dfrac{29}{128}$.",
-        "$P(X<2)=P(X\\le2)$.",
-        "$P(X\\ge0)=1$."
-      ],
-      "answer_key": [
-        true,
-        true,
-        true,
-        false,
-        true
-      ],
-      "tactical_explanations": [
-        "**A.** → True\n\n$(\\binom{7}{0}+\\binom{7}{1})/2^7=\\dfrac{1}{16}$.\n\nThe claim is True.",
-        "**B.** → True\n\nSymmetry gives the same total as $P(X\\le1)$.\n\nThe claim is True.",
-        "**C.** → True\n\nAdd the masses for $0$, $1$, and $2$ successes to get $\\dfrac{29}{128}$.\n\nThe claim is True.",
-        "**D.** → False\n\nThe non-strict event also contains the positive mass $P(X=2)$.\n\nThe claim is False.",
-        "**E.** → True\n\nA binomial count cannot be negative.\n\nThe claim is True."
-      ],
-      "difficulty_level": "5/5",
-      "sort_order": 72,
-      "solution_overview": "Shared context topic tail.\n\nShared solution:\n1. Use the single shared stem for topic tail; do not re-read any claim as a new scenario.\n2. Organize the given data before testing claims. One shared binomial count supplies inclusive lower and upper tails.\n3. Keep every stated domain, endpoint, sampling rule, or physical restriction in force.\n4. A: $(\\binom{7}{0}+\\binom{7}{1})/2^7=\\dfrac{1}{16}$.\n5. A: The computed result makes this claim True.\n6. B: Symmetry gives the same total as $P(X\\le1)$.\n7. B: The computed result makes this claim True.\n8. C: Add the masses for $0$, $1$, and $2$ successes to get $\\dfrac{29}{128}$.\n9. C: The computed result makes this claim True.\n10. D: The non-strict event also contains the positive mass $P(X=2)$.\n11. D: The computed result makes this claim False.\n12. E: A binomial count cannot be negative.\n13. E: The computed result makes this claim True.",
-      "placeholder": false
-    },
-    {
-      "id": "math-13-73",
-      "case_id": "MATH 13.73",
-      "title": "Exam-style tasks - 18",
-      "subsection": "13.5",
-      "context": "A production line tests 30 independent items, each passing with probability $0.3$. Let $X$ be the pass count, so the binomial formulas for mean and variance apply. The report also uses $E(X^2)=\\operatorname{Var}(X)+[E(X)]^2$ and compares standard deviations.",
-      "statements": [
-        "$E(X)=9$.",
-        "$\\operatorname{Var}(X)=\\dfrac{63}{10}$.",
-        "$\\operatorname{SD}(X)=\\dfrac{63}{10}$.",
-        "$E(X^2)=\\dfrac{873}{10}$.",
-        "$\\operatorname{Var}(X)/E(X)=0.7$."
-      ],
-      "answer_key": [
-        true,
-        true,
-        false,
-        true,
-        true
-      ],
-      "tactical_explanations": [
-        "**A.** → True\n\n$np=30(0.3)=9$.\n\nThe claim is True.",
-        "**B.** → True\n\n$np(1-p)=30(0.3)(0.7)=\\dfrac{63}{10}$.\n\nThe claim is True.",
-        "**C.** → False\n\nStandard deviation is $\\sqrt{\\dfrac{63}{10}}$, not the variance.\n\nThe claim is False.",
-        "**D.** → True\n\n$\\dfrac{63}{10}+(9)^2=\\dfrac{873}{10}$.\n\nThe claim is True.",
-        "**E.** → True\n\n$np(1-p)/(np)=1-p=0.7$.\n\nThe claim is True."
-      ],
-      "difficulty_level": "5/5",
-      "sort_order": 73,
-      "solution_overview": "Shared context topic moments.\n\nShared solution:\n1. Use the single shared stem for topic moments; do not re-read any claim as a new scenario.\n2. Organize the given data before testing claims. A shared binomial model supplies mean, variance, SD, and second moment.\n3. Keep every stated domain, endpoint, sampling rule, or physical restriction in force.\n4. A: $np=30(0.3)=9$.\n5. A: The computed result makes this claim True.\n6. B: $np(1-p)=30(0.3)(0.7)=\\dfrac{63}{10}$.\n7. B: The computed result makes this claim True.\n8. C: Standard deviation is $\\sqrt{\\dfrac{63}{10}}$, not the variance.\n9. C: The computed result makes this claim False.\n10. D: $\\dfrac{63}{10}+(9)^2=\\dfrac{873}{10}$.\n11. D: The computed result makes this claim True.\n12. E: $np(1-p)/(np)=1-p=0.7$.\n13. E: The computed result makes this claim True.",
-      "placeholder": false
-    },
-    {
-      "id": "math-13-74",
-      "case_id": "MATH 13.74",
-      "title": "Exam-style tasks - 19",
-      "subsection": "13.5",
-      "context": "Line A tests 10 independent items with pass probability $\\dfrac{2}{5}$, while line B tests 10 independent items with pass probability $\\dfrac{7}{10}$. Let $X_A$ and $X_B$ be their pass counts. The comparison concerns exact counts and moments, so each line keeps its own binomial parameter.",
-      "statements": [
-        "$E(X_A)<E(X_B)$.",
-        "$P(X_A=0)>P(X_B=0)$.",
-        "$P(X_A=5)>P(X_B=5)$.",
-        "$\\operatorname{Var}(X_A)<\\operatorname{Var}(X_B)$.",
-        "The two pass counts have the same distribution."
-      ],
-      "answer_key": [
-        true,
-        true,
-        true,
-        false,
-        false
-      ],
-      "tactical_explanations": [
-        "**A.** → True\n\n$4<7$.\n\nThe claim is True.",
-        "**B.** → True\n\n$\\dfrac{59049}{9765625}>\\dfrac{59049}{10000000000}$.\n\nThe claim is True.",
-        "**C.** → True\n\n$\\dfrac{1959552}{9765625}>\\dfrac{257298363}{2500000000}$.\n\nThe claim is True.",
-        "**D.** → False\n\n$\\dfrac{12}{5}>\\dfrac{21}{10}$.\n\nThe claim is False.",
-        "**E.** → False\n\nTheir success probabilities and means differ.\n\nThe claim is False."
-      ],
-      "difficulty_level": "5/5",
-      "sort_order": 74,
-      "solution_overview": "Shared context topic compare.\n\nShared solution:\n1. Use the single shared stem for topic compare; do not re-read any claim as a new scenario.\n2. Organize the given data before testing claims. Two shared binomial models are compared without mixing their parameters.\n3. Keep every stated domain, endpoint, sampling rule, or physical restriction in force.\n4. A: $4<7$.\n5. A: The computed result makes this claim True.\n6. B: $\\dfrac{59049}{9765625}>\\dfrac{59049}{10000000000}$.\n7. B: The computed result makes this claim True.\n8. C: $\\dfrac{1959552}{9765625}>\\dfrac{257298363}{2500000000}$.\n9. C: The computed result makes this claim True.\n10. D: $\\dfrac{12}{5}>\\dfrac{21}{10}$.\n11. D: The computed result makes this claim False.\n12. E: Their success probabilities and means differ.\n13. E: The computed result makes this claim False.",
-      "placeholder": false
-    },
-    {
-      "id": "math-13-75",
-      "case_id": "MATH 13.75",
-      "title": "Exam-style tasks - 20",
-      "subsection": "13.5",
-      "context": "Backup A makes 5 independent activation attempts with success probability $1/4$ each. Backup B makes 8 independent attempts with the same success probability. The systems are tested separately, and every at-least-one probability is computed as one minus the zero-success probability.",
-      "statements": [
-        "$P(A\\text{ activates})=\\dfrac{781}{1024}$.",
-        "$P(B\\text{ activates})=\\dfrac{58975}{65536}$.",
-        "Activation is more likely for B.",
-        "$P(A\\text{ never activates})=\\dfrac{243}{1024}$.",
-        "Adding attempts lowers the at-least-one probability."
-      ],
-      "answer_key": [
-        true,
-        true,
-        true,
-        true,
-        false
-      ],
-      "tactical_explanations": [
-        "**A.** → True\n\n$1-(3/4)^5=\\dfrac{781}{1024}$.\n\nThe claim is True.",
-        "**B.** → True\n\n$1-(3/4)^8=\\dfrac{58975}{65536}$.\n\nThe claim is True.",
-        "**C.** → True\n\n$\\dfrac{58975}{65536}>\\dfrac{781}{1024}$.\n\nThe claim is True.",
-        "**D.** → True\n\n$(3/4)^5=\\dfrac{243}{1024}$.\n\nThe claim is True.",
-        "**E.** → False\n\nWith fixed positive success probability, more attempts lower the zero-success probability.\n\nThe claim is False."
-      ],
-      "difficulty_level": "5/5",
-      "sort_order": 75,
-      "solution_overview": "Shared context topic complement.\n\nShared solution:\n1. Use the single shared stem for topic complement; do not re-read any claim as a new scenario.\n2. Organize the given data before testing claims. Two shared binomial systems are compared through zero-success complements.\n3. Keep every stated domain, endpoint, sampling rule, or physical restriction in force.\n4. A: $1-(3/4)^5=\\dfrac{781}{1024}$.\n5. A: The computed result makes this claim True.\n6. B: $1-(3/4)^8=\\dfrac{58975}{65536}$.\n7. B: The computed result makes this claim True.\n8. C: $\\dfrac{58975}{65536}>\\dfrac{781}{1024}$.\n9. C: The computed result makes this claim True.\n10. D: $(3/4)^5=\\dfrac{243}{1024}$.\n11. D: The computed result makes this claim True.\n12. E: With fixed positive success probability, more attempts lower the zero-success probability.\n13. E: The computed result makes this claim False.",
-      "placeholder": false
-    },
-    {
       "id": "math-13-76",
       "case_id": "MATH 13.76",
       "title": "Regional Tennis Circuit",
@@ -667,7 +27,7 @@
         "**D.** → False\n\nIndependence across trials means a run of successes multiplies the same probability $p$ on every trial:\n\n$$P(\\text{3 successes in a row})=p^{3}$$\n\nWith the recovered $p=0.68$,\n\n$$p^{3}=(0.68)^{3}\\approx 0.3144$$\n\nComparing with the claimed cutoff $0.3$ gives $0.3144 \\ge 0.3$. The inequality in the claim therefore fails.\n\nso the statement is False.",
         "**E.** → True\n\nLet $X\\sim\\mathrm{Bin}(6,0.68)$. The event “at most $4$ successes” is the union of the mutually exclusive outcomes $X=0,1,\\ldots,4$, so\n\n$$P(X\\le 4)=\\sum_{x=0}^{4}\\binom{6}{x}p^{x}(1-p)^{6-x}$$\n\nEvaluating each mass separately:\n\n$$P(X=0)=\\binom{6}{0}(0.68)^{0}(0.32)^{6}\\approx 0.0011$$\n\n$$P(X=1)=\\binom{6}{1}(0.68)^{1}(0.32)^{5}\\approx 0.0137$$\n\n$$P(X=2)=\\binom{6}{2}(0.68)^{2}(0.32)^{4}\\approx 0.0727$$\n\n$$P(X=3)=\\binom{6}{3}(0.68)^{3}(0.32)^{3}\\approx 0.2061$$\n\n$$P(X=4)=\\binom{6}{4}(0.68)^{4}(0.32)^{2}\\approx 0.3284$$\n\nAdding these contributions,\n\n$$P(X\\le 4)\\approx 0.622$$\n\nCompared with $0.5$, we obtain $0.622 > 0.5$. The claim's inequality holds.\n\nso the statement is True."
       ],
-      "difficulty_level": "3/5",
+      "difficulty_level": "5/5",
       "sort_order": 76,
       "solution_overview": "Over a full indoor season of 40 independent matches, a player's expected number of wins is 27.2. Assume the win chance is the same in every match.\n\nFrom the given mean over $n=40$ independent trials,\n\n$$p=\\dfrac{E[X]}{n}=\\dfrac{27.2}{40}=0.68$$\n\nWe model the count as $X\\sim\\mathrm{Bin}(40,0.68)$, so $1-p=0.32$ and $\\mathrm{Var}(X)=np(1-p)$.",
       "placeholder": false
@@ -699,7 +59,7 @@
         "**D.** → False\n\nIndependence across trials means a run of successes multiplies the same probability $p$ on every trial:\n\n$$P(\\text{4 successes in a row})=p^{4}$$\n\nWith the recovered $p=0.8$,\n\n$$p^{4}=(0.8)^{4}\\approx 0.4096$$\n\nComparing with the claimed cutoff $0.45$ gives $0.4096 \\le 0.45$. The inequality in the claim therefore fails.\n\nso the statement is False.",
         "**E.** → True\n\nLet $X\\sim\\mathrm{Bin}(5,0.8)$. The event “at least $4$” is\n\n$$P(X\\ge 4)=\\sum_{x=4}^{5}\\binom{5}{x}p^{x}(1-p)^{5-x}$$\n\nwhile “exactly $4$” is only the single term $P(X=4)$. Whenever $0<p<1$ and $k<n$, the remaining terms $x=k+1,\\ldots,n$ are strictly positive, so the upper-tail probability is strictly larger than the single mass:\n\n$$P(X\\ge 4)>P(X=4)$$\n\nNumerically, $P(X\\ge 4)\\approx 0.7373$ and $P(X=4)\\approx 0.4096$.\n\nso the statement is True."
       ],
-      "difficulty_level": "3/5",
+      "difficulty_level": "5/5",
       "sort_order": 77,
       "solution_overview": "A festival food stall tracks whether each customer leaves satisfied. In a typical block of 16 independent orders, the expected number of satisfied customers is 12.8.\n\nFrom the given mean over $n=16$ independent trials,\n\n$$p=\\dfrac{E[X]}{n}=\\dfrac{12.8}{16}=0.8$$\n\nWe model the count as $X\\sim\\mathrm{Bin}(16,0.8)$, so $1-p=0.2$ and $\\mathrm{Var}(X)=np(1-p)$.",
       "placeholder": false
@@ -731,7 +91,7 @@
         "**D.** → True\n\nIndependence across trials means a run of successes multiplies the same probability $p$ on every trial:\n\n$$P(\\text{3 successes in a row})=p^{3}$$\n\nWith the recovered $p=0.15$,\n\n$$p^{3}=(0.15)^{3}\\approx 0.0034$$\n\nComparing with the claimed cutoff $0.005$ gives $0.0034 < 0.005$. The inequality in the claim therefore holds.\n\nso the statement is True.",
         "**E.** → False\n\nLet $X\\sim\\mathrm{Bin}(8,0.15)$. The event “at most $1$ successes” is the union of the mutually exclusive outcomes $X=0,1,\\ldots,1$, so\n\n$$P(X\\le 1)=\\sum_{x=0}^{1}\\binom{8}{x}p^{x}(1-p)^{8-x}$$\n\nEvaluating each mass separately:\n\n$$P(X=0)=\\binom{8}{0}(0.15)^{0}(0.85)^{8}\\approx 0.2725$$\n\n$$P(X=1)=\\binom{8}{1}(0.15)^{1}(0.85)^{7}\\approx 0.3847$$\n\nAdding these contributions,\n\n$$P(X\\le 1)\\approx 0.6572$$\n\nCompared with $0.7$, we obtain $0.6572 \\le 0.7$. The claim's inequality does not hold.\n\nso the statement is False."
       ],
-      "difficulty_level": "4/5",
+      "difficulty_level": "5/5",
       "sort_order": 78,
       "solution_overview": "On a screening day with 80 independent patients, positives and negatives are expected in the ratio 3 : 17. The standard deviation of the number of positives that day is $\\sqrt{10.2}$.\n\nSuccesses and failures are expected in the ratio $3:17$, so\n\n$$p=\\dfrac{3}{3+17}=0.15$$\n\nWe model the count as $X\\sim\\mathrm{Bin}(80,0.15)$.",
       "placeholder": false
@@ -763,7 +123,7 @@
         "**D.** → False\n\nIndependence across trials means a run of successes multiplies the same probability $p$ on every trial:\n\n$$P(\\text{3 successes in a row})=p^{3}$$\n\nWith the recovered $p=0.84$,\n\n$$p^{3}=(0.84)^{3}\\approx 0.5927$$\n\nComparing with the claimed cutoff $0.55$ gives $0.5927 \\ge 0.55$. The inequality in the claim therefore fails.\n\nso the statement is False.",
         "**E.** → False\n\nLet $X\\sim\\mathrm{Bin}(8,0.84)$. The event “at most $5$ successes” is the union of the mutually exclusive outcomes $X=0,1,\\ldots,5$, so\n\n$$P(X\\le 5)=\\sum_{x=0}^{5}\\binom{8}{x}p^{x}(1-p)^{8-x}$$\n\nEvaluating each mass separately:\n\n$$P(X=0)=\\binom{8}{0}(0.84)^{0}(0.16)^{8}\\approx 4.2950e-7$$\n\n$$P(X=1)=\\binom{8}{1}(0.84)^{1}(0.16)^{7}\\approx 1.8039e-5$$\n\n$$P(X=2)=\\binom{8}{2}(0.84)^{2}(0.16)^{6}\\approx 0.0003$$\n\n$$P(X=3)=\\binom{8}{3}(0.84)^{3}(0.16)^{5}\\approx 0.0035$$\n\n$$P(X=4)=\\binom{8}{4}(0.84)^{4}(0.16)^{4}\\approx 0.0228$$\n\n$$P(X=5)=\\binom{8}{5}(0.84)^{5}(0.16)^{3}\\approx 0.0959$$\n\nAdding these contributions,\n\n$$P(X\\le 5)\\approx 0.1226$$\n\nCompared with $0.2$, we obtain $0.1226 \\le 0.2$. The claim's inequality does not hold.\n\nso the statement is False."
       ],
-      "difficulty_level": "3/5",
+      "difficulty_level": "5/5",
       "sort_order": 79,
       "solution_overview": "A courier completed an audit of 50 independent evening deliveries. The expected number of on-time deliveries was 42, and the variance of that count was 6.72.\n\nFrom the given mean over $n=50$ independent trials,\n\n$$p=\\dfrac{E[X]}{n}=\\dfrac{42}{50}=0.84$$\n\nWe model the count as $X\\sim\\mathrm{Bin}(50,0.84)$, so $1-p=0.16$ and $\\mathrm{Var}(X)=np(1-p)$.",
       "placeholder": false
@@ -795,7 +155,7 @@
         "**D.** → False\n\nIndependence across trials means a run of successes multiplies the same probability $p$ on every trial:\n\n$$P(\\text{3 successes in a row})=p^{3}$$\n\nWith the recovered $p=0.4$,\n\n$$p^{3}=(0.4)^{3}\\approx 0.064$$\n\nComparing with the claimed cutoff $0.1$ gives $0.064 \\le 0.1$. The inequality in the claim therefore fails.\n\nso the statement is False.",
         "**E.** → True\n\nLet $X\\sim\\mathrm{Bin}(6,0.4)$. The event “at most $2$ successes” is the union of the mutually exclusive outcomes $X=0,1,\\ldots,2$, so\n\n$$P(X\\le 2)=\\sum_{x=0}^{2}\\binom{6}{x}p^{x}(1-p)^{6-x}$$\n\nEvaluating each mass separately:\n\n$$P(X=0)=\\binom{6}{0}(0.4)^{0}(0.6)^{6}\\approx 0.0467$$\n\n$$P(X=1)=\\binom{6}{1}(0.4)^{1}(0.6)^{5}\\approx 0.1866$$\n\n$$P(X=2)=\\binom{6}{2}(0.4)^{2}(0.6)^{4}\\approx 0.311$$\n\nAdding these contributions,\n\n$$P(X\\le 2)\\approx 0.5443$$\n\nCompared with $0.5$, we obtain $0.5443 > 0.5$. The claim's inequality holds.\n\nso the statement is True."
       ],
-      "difficulty_level": "3/5",
+      "difficulty_level": "5/5",
       "sort_order": 80,
       "solution_overview": "In a contest with 35 independent submissions, the auto-grader accepts 14 on average.\n\nFrom the given mean over $n=35$ independent trials,\n\n$$p=\\dfrac{E[X]}{n}=\\dfrac{14}{35}=0.4$$\n\nWe model the count as $X\\sim\\mathrm{Bin}(35,0.4)$, so $1-p=0.6$ and $\\mathrm{Var}(X)=np(1-p)$.",
       "placeholder": false
@@ -827,7 +187,7 @@
         "**D.** → True\n\nIndependence across trials means a run of successes multiplies the same probability $p$ on every trial:\n\n$$P(\\text{3 successes in a row})=p^{3}$$\n\nWith the recovered $p=0.8$,\n\n$$p^{3}=(0.8)^{3}\\approx 0.512$$\n\nComparing with the claimed cutoff $0.55$ gives $0.512 < 0.55$. The inequality in the claim therefore holds.\n\nso the statement is True.",
         "**E.** → True\n\nLet $X\\sim\\mathrm{Bin}(8,0.8)$. The event “at most $5$ successes” is the union of the mutually exclusive outcomes $X=0,1,\\ldots,5$, so\n\n$$P(X\\le 5)=\\sum_{x=0}^{5}\\binom{8}{x}p^{x}(1-p)^{8-x}$$\n\nEvaluating each mass separately:\n\n$$P(X=0)=\\binom{8}{0}(0.8)^{0}(0.2)^{8}\\approx 2.5600e-6$$\n\n$$P(X=1)=\\binom{8}{1}(0.8)^{1}(0.2)^{7}\\approx 8.1920e-5$$\n\n$$P(X=2)=\\binom{8}{2}(0.8)^{2}(0.2)^{6}\\approx 0.0011$$\n\n$$P(X=3)=\\binom{8}{3}(0.8)^{3}(0.2)^{5}\\approx 0.0092$$\n\n$$P(X=4)=\\binom{8}{4}(0.8)^{4}(0.2)^{4}\\approx 0.0459$$\n\n$$P(X=5)=\\binom{8}{5}(0.8)^{5}(0.2)^{3}\\approx 0.1468$$\n\nAdding these contributions,\n\n$$P(X\\le 5)\\approx 0.2031$$\n\nCompared with $0.2$, we obtain $0.2031 > 0.2$. The claim's inequality holds.\n\nso the statement is True."
       ],
-      "difficulty_level": "2/5",
+      "difficulty_level": "4/5",
       "sort_order": 81,
       "solution_overview": "A warehouse audits 25 independent picks. The expected number of correct picks is 20, and the variance of the correct-pick count is 4.\n\nFrom the given mean over $n=25$ independent trials,\n\n$$p=\\dfrac{E[X]}{n}=\\dfrac{20}{25}=0.8$$\n\nWe model the count as $X\\sim\\mathrm{Bin}(25,0.8)$, so $1-p=0.2$ and $\\mathrm{Var}(X)=np(1-p)$.",
       "placeholder": false
@@ -859,7 +219,7 @@
         "**D.** → False\n\nIndependence across trials means a run of successes multiplies the same probability $p$ on every trial:\n\n$$P(\\text{3 successes in a row})=p^{3}$$\n\nWith the recovered $p=0.75$,\n\n$$p^{3}=(0.75)^{3}\\approx 0.4219$$\n\nComparing with the claimed cutoff $0.3$ gives $0.4219 \\ge 0.3$. The inequality in the claim therefore fails.\n\nso the statement is False.",
         "**E.** → False\n\nLet $X\\sim\\mathrm{Bin}(6,0.75)$. The event “at most $4$ successes” is the union of the mutually exclusive outcomes $X=0,1,\\ldots,4$, so\n\n$$P(X\\le 4)=\\sum_{x=0}^{4}\\binom{6}{x}p^{x}(1-p)^{6-x}$$\n\nEvaluating each mass separately:\n\n$$P(X=0)=\\binom{6}{0}(0.75)^{0}(0.25)^{6}\\approx 0.0002$$\n\n$$P(X=1)=\\binom{6}{1}(0.75)^{1}(0.25)^{5}\\approx 0.0044$$\n\n$$P(X=2)=\\binom{6}{2}(0.75)^{2}(0.25)^{4}\\approx 0.033$$\n\n$$P(X=3)=\\binom{6}{3}(0.75)^{3}(0.25)^{3}\\approx 0.1318$$\n\n$$P(X=4)=\\binom{6}{4}(0.75)^{4}(0.25)^{2}\\approx 0.2966$$\n\nAdding these contributions,\n\n$$P(X\\le 4)\\approx 0.4661$$\n\nCompared with $0.5$, we obtain $0.4661 \\le 0.5$. The claim's inequality does not hold.\n\nso the statement is False."
       ],
-      "difficulty_level": "2/5",
+      "difficulty_level": "4/5",
       "sort_order": 82,
       "solution_overview": "In a listening quiz of 20 independent items, a student is expected to answer 15 correctly.\n\nFrom the given mean over $n=20$ independent trials,\n\n$$p=\\dfrac{E[X]}{n}=\\dfrac{15}{20}=0.75$$\n\nWe model the count as $X\\sim\\mathrm{Bin}(20,0.75)$, so $1-p=0.25$ and $\\mathrm{Var}(X)=np(1-p)$.",
       "placeholder": false
@@ -891,7 +251,7 @@
         "**D.** → False\n\nIndependence across trials means a run of successes multiplies the same probability $p$ on every trial:\n\n$$P(\\text{3 successes in a row})=p^{3}$$\n\nWith the recovered $p=0.2$,\n\n$$p^{3}=(0.2)^{3}\\approx 0.008$$\n\nComparing with the claimed cutoff $0.005$ gives $0.008 \\ge 0.005$. The inequality in the claim therefore fails.\n\nso the statement is False.",
         "**E.** → False\n\nLet $X\\sim\\mathrm{Bin}(8,0.2)$. The event “at most $1$ successes” is the union of the mutually exclusive outcomes $X=0,1,\\ldots,1$, so\n\n$$P(X\\le 1)=\\sum_{x=0}^{1}\\binom{8}{x}p^{x}(1-p)^{8-x}$$\n\nEvaluating each mass separately:\n\n$$P(X=0)=\\binom{8}{0}(0.2)^{0}(0.8)^{8}\\approx 0.1678$$\n\n$$P(X=1)=\\binom{8}{1}(0.2)^{1}(0.8)^{7}\\approx 0.3355$$\n\nAdding these contributions,\n\n$$P(X\\le 1)\\approx 0.5033$$\n\nCompared with $0.7$, we obtain $0.5033 \\le 0.7$. The claim's inequality does not hold.\n\nso the statement is False."
       ],
-      "difficulty_level": "3/5",
+      "difficulty_level": "5/5",
       "sort_order": 83,
       "solution_overview": "A maintenance log covers 60 independent dock sensors. Faulty and working sensors are expected in the ratio 1 : 4.\n\nSuccesses and failures are expected in the ratio $1:4$, so\n\n$$p=\\dfrac{1}{1+4}=0.2$$\n\nWe model the count as $X\\sim\\mathrm{Bin}(60,0.2)$.",
       "placeholder": false
@@ -923,7 +283,7 @@
         "**D.** → False\n\nIndependence across trials means a run of successes multiplies the same probability $p$ on every trial:\n\n$$P(\\text{4 successes in a row})=p^{4}$$\n\nWith the recovered $p=0.8$,\n\n$$p^{4}=(0.8)^{4}\\approx 0.4096$$\n\nComparing with the claimed cutoff $0.45$ gives $0.4096 \\le 0.45$. The inequality in the claim therefore fails.\n\nso the statement is False.",
         "**E.** → True\n\nLet $X\\sim\\mathrm{Bin}(5,0.8)$. The event “at least $4$” is\n\n$$P(X\\ge 4)=\\sum_{x=4}^{5}\\binom{5}{x}p^{x}(1-p)^{5-x}$$\n\nwhile “exactly $4$” is only the single term $P(X=4)$. Whenever $0<p<1$ and $k<n$, the remaining terms $x=k+1,\\ldots,n$ are strictly positive, so the upper-tail probability is strictly larger than the single mass:\n\n$$P(X\\ge 4)>P(X=4)$$\n\nNumerically, $P(X\\ge 4)\\approx 0.7373$ and $P(X=4)\\approx 0.4096$.\n\nso the statement is True."
       ],
-      "difficulty_level": "3/5",
+      "difficulty_level": "5/5",
       "sort_order": 84,
       "solution_overview": "A hotel tracks 30 independent booking requests. The expected number of confirmed bookings is 24.\n\nFrom the given mean over $n=30$ independent trials,\n\n$$p=\\dfrac{E[X]}{n}=\\dfrac{24}{30}=0.8$$\n\nWe model the count as $X\\sim\\mathrm{Bin}(30,0.8)$, so $1-p=0.2$ and $\\mathrm{Var}(X)=np(1-p)$.",
       "placeholder": false
@@ -955,7 +315,7 @@
         "**D.** → False\n\nIndependence across trials means a run of successes multiplies the same probability $p$ on every trial:\n\n$$P(\\text{3 successes in a row})=p^{3}$$\n\nWith the recovered $p=0.2$,\n\n$$p^{3}=(0.2)^{3}\\approx 0.008$$\n\nComparing with the claimed cutoff $0.1$ gives $0.008 \\le 0.1$. The inequality in the claim therefore fails.\n\nso the statement is False.",
         "**E.** → True\n\nLet $X\\sim\\mathrm{Bin}(6,0.2)$. The event “at most $2$ successes” is the union of the mutually exclusive outcomes $X=0,1,\\ldots,2$, so\n\n$$P(X\\le 2)=\\sum_{x=0}^{2}\\binom{6}{x}p^{x}(1-p)^{6-x}$$\n\nEvaluating each mass separately:\n\n$$P(X=0)=\\binom{6}{0}(0.2)^{0}(0.8)^{6}\\approx 0.2621$$\n\n$$P(X=1)=\\binom{6}{1}(0.2)^{1}(0.8)^{5}\\approx 0.3932$$\n\n$$P(X=2)=\\binom{6}{2}(0.2)^{2}(0.8)^{4}\\approx 0.2458$$\n\nAdding these contributions,\n\n$$P(X\\le 2)\\approx 0.9011$$\n\nCompared with $0.5$, we obtain $0.9011 > 0.5$. The claim's inequality holds.\n\nso the statement is True."
       ],
-      "difficulty_level": "3/5",
+      "difficulty_level": "5/5",
       "sort_order": 85,
       "solution_overview": "A pharmacy reviews 40 independent prescriptions. The expected number flagged for follow-up is 8, with variance 6.4.\n\nFrom the given mean over $n=40$ independent trials,\n\n$$p=\\dfrac{E[X]}{n}=\\dfrac{8}{40}=0.2$$\n\nWe model the count as $X\\sim\\mathrm{Bin}(40,0.2)$, so $1-p=0.8$ and $\\mathrm{Var}(X)=np(1-p)$.",
       "placeholder": false
@@ -987,7 +347,7 @@
         "**D.** → False\n\nIndependence across trials means a run of successes multiplies the same probability $p$ on every trial:\n\n$$P(\\text{3 successes in a row})=p^{3}$$\n\nWith the recovered $p=0.8$,\n\n$$p^{3}=(0.8)^{3}\\approx 0.512$$\n\nComparing with the claimed cutoff $0.3$ gives $0.512 \\ge 0.3$. The inequality in the claim therefore fails.\n\nso the statement is False.",
         "**E.** → False\n\nLet $X\\sim\\mathrm{Bin}(6,0.8)$. The event “at most $4$ successes” is the union of the mutually exclusive outcomes $X=0,1,\\ldots,4$, so\n\n$$P(X\\le 4)=\\sum_{x=0}^{4}\\binom{6}{x}p^{x}(1-p)^{6-x}$$\n\nEvaluating each mass separately:\n\n$$P(X=0)=\\binom{6}{0}(0.8)^{0}(0.2)^{6}\\approx 6.4000e-5$$\n\n$$P(X=1)=\\binom{6}{1}(0.8)^{1}(0.2)^{5}\\approx 0.0015$$\n\n$$P(X=2)=\\binom{6}{2}(0.8)^{2}(0.2)^{4}\\approx 0.0154$$\n\n$$P(X=3)=\\binom{6}{3}(0.8)^{3}(0.2)^{3}\\approx 0.0819$$\n\n$$P(X=4)=\\binom{6}{4}(0.8)^{4}(0.2)^{2}\\approx 0.2458$$\n\nAdding these contributions,\n\n$$P(X\\le 4)\\approx 0.3446$$\n\nCompared with $0.5$, we obtain $0.3446 \\le 0.5$. The claim's inequality does not hold.\n\nso the statement is False."
       ],
-      "difficulty_level": "2/5",
+      "difficulty_level": "4/5",
       "sort_order": 86,
       "solution_overview": "Over 45 independent audio-guide loans, the expected number returned on time is 36.\n\nFrom the given mean over $n=45$ independent trials,\n\n$$p=\\dfrac{E[X]}{n}=\\dfrac{36}{45}=0.8$$\n\nWe model the count as $X\\sim\\mathrm{Bin}(45,0.8)$, so $1-p=0.2$ and $\\mathrm{Var}(X)=np(1-p)$.",
       "placeholder": false
@@ -1019,7 +379,7 @@
         "**D.** → True\n\nIndependence across trials means a run of successes multiplies the same probability $p$ on every trial:\n\n$$P(\\text{3 successes in a row})=p^{3}$$\n\nWith the recovered $p=0.4$,\n\n$$p^{3}=(0.4)^{3}\\approx 0.064$$\n\nComparing with the claimed cutoff $0.55$ gives $0.064 < 0.55$. The inequality in the claim therefore holds.\n\nso the statement is True.",
         "**E.** → True\n\nLet $X\\sim\\mathrm{Bin}(8,0.4)$. The event “at most $5$ successes” is the union of the mutually exclusive outcomes $X=0,1,\\ldots,5$, so\n\n$$P(X\\le 5)=\\sum_{x=0}^{5}\\binom{8}{x}p^{x}(1-p)^{8-x}$$\n\nEvaluating each mass separately:\n\n$$P(X=0)=\\binom{8}{0}(0.4)^{0}(0.6)^{8}\\approx 0.0168$$\n\n$$P(X=1)=\\binom{8}{1}(0.4)^{1}(0.6)^{7}\\approx 0.0896$$\n\n$$P(X=2)=\\binom{8}{2}(0.4)^{2}(0.6)^{6}\\approx 0.209$$\n\n$$P(X=3)=\\binom{8}{3}(0.4)^{3}(0.6)^{5}\\approx 0.2787$$\n\n$$P(X=4)=\\binom{8}{4}(0.4)^{4}(0.6)^{4}\\approx 0.2322$$\n\n$$P(X=5)=\\binom{8}{5}(0.4)^{5}(0.6)^{3}\\approx 0.1239$$\n\nAdding these contributions,\n\n$$P(X\\le 5)\\approx 0.9502$$\n\nCompared with $0.2$, we obtain $0.9502 > 0.2$. The claim's inequality holds.\n\nso the statement is True."
       ],
-      "difficulty_level": "4/5",
+      "difficulty_level": "5/5",
       "sort_order": 87,
       "solution_overview": "A sales team ran 25 independent product demos. The expected number of conversions was 10, and the standard deviation of conversions was $\\sqrt{6}$.\n\nFrom the given mean over $n=25$ independent trials,\n\n$$p=\\dfrac{E[X]}{n}=\\dfrac{10}{25}=0.4$$\n\nWe model the count as $X\\sim\\mathrm{Bin}(25,0.4)$, so $1-p=0.6$ and $\\mathrm{Var}(X)=np(1-p)$.",
       "placeholder": false
@@ -1051,7 +411,7 @@
         "**D.** → False\n\nIndependence across trials means a run of successes multiplies the same probability $p$ on every trial:\n\n$$P(\\text{3 successes in a row})=p^{3}$$\n\nWith the recovered $p=0.8$,\n\n$$p^{3}=(0.8)^{3}\\approx 0.512$$\n\nComparing with the claimed cutoff $0.005$ gives $0.512 \\ge 0.005$. The inequality in the claim therefore fails.\n\nso the statement is False.",
         "**E.** → False\n\nLet $X\\sim\\mathrm{Bin}(8,0.8)$. The event “at most $5$ successes” is the union of the mutually exclusive outcomes $X=0,1,\\ldots,5$, so\n\n$$P(X\\le 5)=\\sum_{x=0}^{5}\\binom{8}{x}p^{x}(1-p)^{8-x}$$\n\nEvaluating each mass separately:\n\n$$P(X=0)=\\binom{8}{0}(0.8)^{0}(0.2)^{8}\\approx 2.5600e-6$$\n\n$$P(X=1)=\\binom{8}{1}(0.8)^{1}(0.2)^{7}\\approx 8.1920e-5$$\n\n$$P(X=2)=\\binom{8}{2}(0.8)^{2}(0.2)^{6}\\approx 0.0011$$\n\n$$P(X=3)=\\binom{8}{3}(0.8)^{3}(0.2)^{5}\\approx 0.0092$$\n\n$$P(X=4)=\\binom{8}{4}(0.8)^{4}(0.2)^{4}\\approx 0.0459$$\n\n$$P(X=5)=\\binom{8}{5}(0.8)^{5}(0.2)^{3}\\approx 0.1468$$\n\nAdding these contributions,\n\n$$P(X\\le 5)\\approx 0.2031$$\n\nCompared with $0.7$, we obtain $0.2031 \\le 0.7$. The claim's inequality does not hold.\n\nso the statement is False."
       ],
-      "difficulty_level": "3/5",
+      "difficulty_level": "5/5",
       "sort_order": 88,
       "solution_overview": "Across 50 independent bus arrivals, on-time and late arrivals are expected in the ratio 4 : 1.\n\nSuccesses and failures are expected in the ratio $4:1$, so\n\n$$p=\\dfrac{4}{4+1}=0.8$$\n\nWe model the count as $X\\sim\\mathrm{Bin}(50,0.8)$.",
       "placeholder": false
@@ -1083,7 +443,7 @@
         "**D.** → True\n\nIndependence across trials means a run of successes multiplies the same probability $p$ on every trial:\n\n$$P(\\text{3 successes in a row})=p^{3}$$\n\nWith the recovered $p=0.6$,\n\n$$p^{3}=(0.6)^{3}\\approx 0.216$$\n\nComparing with the claimed cutoff $0.3$ gives $0.216 < 0.3$. The inequality in the claim therefore holds.\n\nso the statement is True.",
         "**E.** → True\n\nLet $X\\sim\\mathrm{Bin}(6,0.6)$. The event “at most $4$ successes” is the union of the mutually exclusive outcomes $X=0,1,\\ldots,4$, so\n\n$$P(X\\le 4)=\\sum_{x=0}^{4}\\binom{6}{x}p^{x}(1-p)^{6-x}$$\n\nEvaluating each mass separately:\n\n$$P(X=0)=\\binom{6}{0}(0.6)^{0}(0.4)^{6}\\approx 0.0041$$\n\n$$P(X=1)=\\binom{6}{1}(0.6)^{1}(0.4)^{5}\\approx 0.0369$$\n\n$$P(X=2)=\\binom{6}{2}(0.6)^{2}(0.4)^{4}\\approx 0.1382$$\n\n$$P(X=3)=\\binom{6}{3}(0.6)^{3}(0.4)^{3}\\approx 0.2765$$\n\n$$P(X=4)=\\binom{6}{4}(0.6)^{4}(0.4)^{2}\\approx 0.311$$\n\nAdding these contributions,\n\n$$P(X\\le 4)\\approx 0.7667$$\n\nCompared with $0.5$, we obtain $0.7667 > 0.5$. The claim's inequality holds.\n\nso the statement is True."
       ],
-      "difficulty_level": "3/5",
+      "difficulty_level": "5/5",
       "sort_order": 89,
       "solution_overview": "In an escape room with 12 independent puzzles, the expected number solved within the time limit is 7.2.\n\nFrom the given mean over $n=12$ independent trials,\n\n$$p=\\dfrac{E[X]}{n}=\\dfrac{7.2}{12}=0.6$$\n\nWe model the count as $X\\sim\\mathrm{Bin}(12,0.6)$, so $1-p=0.4$ and $\\mathrm{Var}(X)=np(1-p)$.",
       "placeholder": false
@@ -1115,7 +475,7 @@
         "**D.** → False\n\nIndependence across trials means a run of successes multiplies the same probability $p$ on every trial:\n\n$$P(\\text{3 successes in a row})=p^{3}$$\n\nWith the recovered $p=0.25$,\n\n$$p^{3}=(0.25)^{3}\\approx 0.0156$$\n\nComparing with the claimed cutoff $0.1$ gives $0.0156 \\le 0.1$. The inequality in the claim therefore fails.\n\nso the statement is False.",
         "**E.** → True\n\nLet $X\\sim\\mathrm{Bin}(6,0.25)$. The event “at most $2$ successes” is the union of the mutually exclusive outcomes $X=0,1,\\ldots,2$, so\n\n$$P(X\\le 2)=\\sum_{x=0}^{2}\\binom{6}{x}p^{x}(1-p)^{6-x}$$\n\nEvaluating each mass separately:\n\n$$P(X=0)=\\binom{6}{0}(0.25)^{0}(0.75)^{6}\\approx 0.178$$\n\n$$P(X=1)=\\binom{6}{1}(0.25)^{1}(0.75)^{5}\\approx 0.356$$\n\n$$P(X=2)=\\binom{6}{2}(0.25)^{2}(0.75)^{4}\\approx 0.2966$$\n\nAdding these contributions,\n\n$$P(X\\le 2)\\approx 0.8306$$\n\nCompared with $0.5$, we obtain $0.8306 > 0.5$. The claim's inequality holds.\n\nso the statement is True."
       ],
-      "difficulty_level": "3/5",
+      "difficulty_level": "5/5",
       "sort_order": 90,
       "solution_overview": "A wildlife camera records 48 independent night windows. The expected number of windows with an animal trigger is 12, with variance 9.\n\nFrom the given mean over $n=48$ independent trials,\n\n$$p=\\dfrac{E[X]}{n}=\\dfrac{12}{48}=0.25$$\n\nWe model the count as $X\\sim\\mathrm{Bin}(48,0.25)$, so $1-p=0.75$ and $\\mathrm{Var}(X)=np(1-p)$.",
       "placeholder": false
@@ -1147,7 +507,7 @@
         "**D.** → False\n\nIndependence across trials means a run of successes multiplies the same probability $p$ on every trial:\n\n$$P(\\text{4 successes in a row})=p^{4}$$\n\nWith the recovered $p=0.4$,\n\n$$p^{4}=(0.4)^{4}\\approx 0.0256$$\n\nComparing with the claimed cutoff $0.45$ gives $0.0256 \\le 0.45$. The inequality in the claim therefore fails.\n\nso the statement is False.",
         "**E.** → True\n\nLet $X\\sim\\mathrm{Bin}(5,0.4)$. The event “at least $4$” is\n\n$$P(X\\ge 4)=\\sum_{x=4}^{5}\\binom{5}{x}p^{x}(1-p)^{5-x}$$\n\nwhile “exactly $4$” is only the single term $P(X=4)$. Whenever $0<p<1$ and $k<n$, the remaining terms $x=k+1,\\ldots,n$ are strictly positive, so the upper-tail probability is strictly larger than the single mass:\n\n$$P(X\\ge 4)>P(X=4)$$\n\nNumerically, $P(X\\ge 4)\\approx 0.087$ and $P(X=4)\\approx 0.0768$.\n\nso the statement is True."
       ],
-      "difficulty_level": "3/5",
+      "difficulty_level": "5/5",
       "sort_order": 91,
       "solution_overview": "A box office handles 32 independent ticket sales. The expected number of sales that include an upsell is 12.8.\n\nFrom the given mean over $n=32$ independent trials,\n\n$$p=\\dfrac{E[X]}{n}=\\dfrac{12.8}{32}=0.4$$\n\nWe model the count as $X\\sim\\mathrm{Bin}(32,0.4)$, so $1-p=0.6$ and $\\mathrm{Var}(X)=np(1-p)$.",
       "placeholder": false
@@ -1179,7 +539,7 @@
         "**D.** → False\n\nIndependence across trials means a run of successes multiplies the same probability $p$ on every trial:\n\n$$P(\\text{3 successes in a row})=p^{3}$$\n\nWith the recovered $p=0.85$,\n\n$$p^{3}=(0.85)^{3}\\approx 0.6141$$\n\nComparing with the claimed cutoff $0.55$ gives $0.6141 \\ge 0.55$. The inequality in the claim therefore fails.\n\nso the statement is False.",
         "**E.** → False\n\nLet $X\\sim\\mathrm{Bin}(8,0.85)$. The event “at most $5$ successes” is the union of the mutually exclusive outcomes $X=0,1,\\ldots,5$, so\n\n$$P(X\\le 5)=\\sum_{x=0}^{5}\\binom{8}{x}p^{x}(1-p)^{8-x}$$\n\nEvaluating each mass separately:\n\n$$P(X=0)=\\binom{8}{0}(0.85)^{0}(0.15)^{8}\\approx 2.5629e-7$$\n\n$$P(X=1)=\\binom{8}{1}(0.85)^{1}(0.15)^{7}\\approx 1.1618e-5$$\n\n$$P(X=2)=\\binom{8}{2}(0.85)^{2}(0.15)^{6}\\approx 0.0002$$\n\n$$P(X=3)=\\binom{8}{3}(0.85)^{3}(0.15)^{5}\\approx 0.0026$$\n\n$$P(X=4)=\\binom{8}{4}(0.85)^{4}(0.15)^{4}\\approx 0.0185$$\n\n$$P(X=5)=\\binom{8}{5}(0.85)^{5}(0.15)^{3}\\approx 0.0839$$\n\nAdding these contributions,\n\n$$P(X\\le 5)\\approx 0.1052$$\n\nCompared with $0.2$, we obtain $0.1052 \\le 0.2$. The claim's inequality does not hold.\n\nso the statement is False."
       ],
-      "difficulty_level": "3/5",
+      "difficulty_level": "5/5",
       "sort_order": 92,
       "solution_overview": "Technicians calibrate 20 independent pipettes. The expected number that pass on the first try is 17, and the variance is 2.55.\n\nFrom the given mean over $n=20$ independent trials,\n\n$$p=\\dfrac{E[X]}{n}=\\dfrac{17}{20}=0.85$$\n\nWe model the count as $X\\sim\\mathrm{Bin}(20,0.85)$, so $1-p=0.15$ and $\\mathrm{Var}(X)=np(1-p)$.",
       "placeholder": false
@@ -1211,7 +571,7 @@
         "**D.** → True\n\nIndependence across trials means a run of successes multiplies the same probability $p$ on every trial:\n\n$$P(\\text{3 successes in a row})=p^{3}$$\n\nWith the recovered $p=0.6$,\n\n$$p^{3}=(0.6)^{3}\\approx 0.216$$\n\nComparing with the claimed cutoff $0.3$ gives $0.216 < 0.3$. The inequality in the claim therefore holds.\n\nso the statement is True.",
         "**E.** → True\n\nLet $X\\sim\\mathrm{Bin}(6,0.6)$. The event “at most $4$ successes” is the union of the mutually exclusive outcomes $X=0,1,\\ldots,4$, so\n\n$$P(X\\le 4)=\\sum_{x=0}^{4}\\binom{6}{x}p^{x}(1-p)^{6-x}$$\n\nEvaluating each mass separately:\n\n$$P(X=0)=\\binom{6}{0}(0.6)^{0}(0.4)^{6}\\approx 0.0041$$\n\n$$P(X=1)=\\binom{6}{1}(0.6)^{1}(0.4)^{5}\\approx 0.0369$$\n\n$$P(X=2)=\\binom{6}{2}(0.6)^{2}(0.4)^{4}\\approx 0.1382$$\n\n$$P(X=3)=\\binom{6}{3}(0.6)^{3}(0.4)^{3}\\approx 0.2765$$\n\n$$P(X=4)=\\binom{6}{4}(0.6)^{4}(0.4)^{2}\\approx 0.311$$\n\nAdding these contributions,\n\n$$P(X\\le 4)\\approx 0.7667$$\n\nCompared with $0.5$, we obtain $0.7667 > 0.5$. The claim's inequality holds.\n\nso the statement is True."
       ],
-      "difficulty_level": "2/5",
+      "difficulty_level": "4/5",
       "sort_order": 93,
       "solution_overview": "A quiz has 15 independent multiple-choice items. The expected number correct is 9.\n\nFrom the given mean over $n=15$ independent trials,\n\n$$p=\\dfrac{E[X]}{n}=\\dfrac{9}{15}=0.6$$\n\nWe model the count as $X\\sim\\mathrm{Bin}(15,0.6)$, so $1-p=0.4$ and $\\mathrm{Var}(X)=np(1-p)$.",
       "placeholder": false
@@ -1243,7 +603,7 @@
         "**D.** → False\n\nIndependence across trials means a run of successes multiplies the same probability $p$ on every trial:\n\n$$P(\\text{3 successes in a row})=p^{3}$$\n\nWith the recovered $p=0.8$,\n\n$$p^{3}=(0.8)^{3}\\approx 0.512$$\n\nComparing with the claimed cutoff $0.005$ gives $0.512 \\ge 0.005$. The inequality in the claim therefore fails.\n\nso the statement is False.",
         "**E.** → False\n\nLet $X\\sim\\mathrm{Bin}(8,0.8)$. The event “at most $5$ successes” is the union of the mutually exclusive outcomes $X=0,1,\\ldots,5$, so\n\n$$P(X\\le 5)=\\sum_{x=0}^{5}\\binom{8}{x}p^{x}(1-p)^{8-x}$$\n\nEvaluating each mass separately:\n\n$$P(X=0)=\\binom{8}{0}(0.8)^{0}(0.2)^{8}\\approx 2.5600e-6$$\n\n$$P(X=1)=\\binom{8}{1}(0.8)^{1}(0.2)^{7}\\approx 8.1920e-5$$\n\n$$P(X=2)=\\binom{8}{2}(0.8)^{2}(0.2)^{6}\\approx 0.0011$$\n\n$$P(X=3)=\\binom{8}{3}(0.8)^{3}(0.2)^{5}\\approx 0.0092$$\n\n$$P(X=4)=\\binom{8}{4}(0.8)^{4}(0.2)^{4}\\approx 0.0459$$\n\n$$P(X=5)=\\binom{8}{5}(0.8)^{5}(0.2)^{3}\\approx 0.1468$$\n\nAdding these contributions,\n\n$$P(X\\le 5)\\approx 0.2031$$\n\nCompared with $0.7$, we obtain $0.2031 \\le 0.7$. The claim's inequality does not hold.\n\nso the statement is False."
       ],
-      "difficulty_level": "3/5",
+      "difficulty_level": "5/5",
       "sort_order": 94,
       "solution_overview": "Over 70 independent Wi-Fi sessions, successful and dropped connections are expected in the ratio 4 : 1.\n\nSuccesses and failures are expected in the ratio $4:1$, so\n\n$$p=\\dfrac{4}{4+1}=0.8$$\n\nWe model the count as $X\\sim\\mathrm{Bin}(70,0.8)$.",
       "placeholder": false
@@ -1275,7 +635,7 @@
         "**D.** → True\n\nIndependence across trials means a run of successes multiplies the same probability $p$ on every trial:\n\n$$P(\\text{3 successes in a row})=p^{3}$$\n\nWith the recovered $p=0.25$,\n\n$$p^{3}=(0.25)^{3}\\approx 0.0156$$\n\nComparing with the claimed cutoff $0.55$ gives $0.0156 < 0.55$. The inequality in the claim therefore holds.\n\nso the statement is True.",
         "**E.** → True\n\nLet $X\\sim\\mathrm{Bin}(8,0.25)$. The event “at most $5$ successes” is the union of the mutually exclusive outcomes $X=0,1,\\ldots,5$, so\n\n$$P(X\\le 5)=\\sum_{x=0}^{5}\\binom{8}{x}p^{x}(1-p)^{8-x}$$\n\nEvaluating each mass separately:\n\n$$P(X=0)=\\binom{8}{0}(0.25)^{0}(0.75)^{8}\\approx 0.1001$$\n\n$$P(X=1)=\\binom{8}{1}(0.25)^{1}(0.75)^{7}\\approx 0.267$$\n\n$$P(X=2)=\\binom{8}{2}(0.25)^{2}(0.75)^{6}\\approx 0.3115$$\n\n$$P(X=3)=\\binom{8}{3}(0.25)^{3}(0.75)^{5}\\approx 0.2076$$\n\n$$P(X=4)=\\binom{8}{4}(0.25)^{4}(0.75)^{4}\\approx 0.0865$$\n\n$$P(X=5)=\\binom{8}{5}(0.25)^{5}(0.75)^{3}\\approx 0.0231$$\n\nAdding these contributions,\n\n$$P(X\\le 5)\\approx 0.9958$$\n\nCompared with $0.2$, we obtain $0.9958 > 0.2$. The claim's inequality holds.\n\nso the statement is True."
       ],
-      "difficulty_level": "4/5",
+      "difficulty_level": "5/5",
       "sort_order": 95,
       "solution_overview": "Volunteers visit 40 independent households. The expected number of pledges is 10, with standard deviation $\\sqrt{7.5}$.\n\nFrom the given mean over $n=40$ independent trials,\n\n$$p=\\dfrac{E[X]}{n}=\\dfrac{10}{40}=0.25$$\n\nWe model the count as $X\\sim\\mathrm{Bin}(40,0.25)$, so $1-p=0.75$ and $\\mathrm{Var}(X)=np(1-p)$.",
       "placeholder": false
@@ -1307,7 +667,7 @@
         "**D.** → False\n\nIndependence across trials means a run of successes multiplies the same probability $p$ on every trial:\n\n$$P(\\text{4 successes in a row})=p^{4}$$\n\nWith the recovered $p=0.8$,\n\n$$p^{4}=(0.8)^{4}\\approx 0.4096$$\n\nComparing with the claimed cutoff $0.45$ gives $0.4096 \\le 0.45$. The inequality in the claim therefore fails.\n\nso the statement is False.",
         "**E.** → True\n\nLet $X\\sim\\mathrm{Bin}(5,0.8)$. The event “at least $4$” is\n\n$$P(X\\ge 4)=\\sum_{x=4}^{5}\\binom{5}{x}p^{x}(1-p)^{5-x}$$\n\nwhile “exactly $4$” is only the single term $P(X=4)$. Whenever $0<p<1$ and $k<n$, the remaining terms $x=k+1,\\ldots,n$ are strictly positive, so the upper-tail probability is strictly larger than the single mass:\n\n$$P(X\\ge 4)>P(X=4)$$\n\nNumerically, $P(X\\ge 4)\\approx 0.7373$ and $P(X=4)\\approx 0.4096$.\n\nso the statement is True."
       ],
-      "difficulty_level": "3/5",
+      "difficulty_level": "5/5",
       "sort_order": 96,
       "solution_overview": "A bakery inspects 28 independent loaves. The expected number meeting quality standards is 22.4.\n\nFrom the given mean over $n=28$ independent trials,\n\n$$p=\\dfrac{E[X]}{n}=\\dfrac{22.4}{28}=0.8$$\n\nWe model the count as $X\\sim\\mathrm{Bin}(28,0.8)$, so $1-p=0.2$ and $\\mathrm{Var}(X)=np(1-p)$.",
       "placeholder": false
@@ -1339,7 +699,7 @@
         "**D.** → True\n\nIndependence across trials means a run of successes multiplies the same probability $p$ on every trial:\n\n$$P(\\text{3 successes in a row})=p^{3}$$\n\nWith the recovered $p=0.8$,\n\n$$p^{3}=(0.8)^{3}\\approx 0.512$$\n\nComparing with the claimed cutoff $0.55$ gives $0.512 < 0.55$. The inequality in the claim therefore holds.\n\nso the statement is True.",
         "**E.** → True\n\nLet $X\\sim\\mathrm{Bin}(8,0.8)$. The event “at most $5$ successes” is the union of the mutually exclusive outcomes $X=0,1,\\ldots,5$, so\n\n$$P(X\\le 5)=\\sum_{x=0}^{5}\\binom{8}{x}p^{x}(1-p)^{8-x}$$\n\nEvaluating each mass separately:\n\n$$P(X=0)=\\binom{8}{0}(0.8)^{0}(0.2)^{8}\\approx 2.5600e-6$$\n\n$$P(X=1)=\\binom{8}{1}(0.8)^{1}(0.2)^{7}\\approx 8.1920e-5$$\n\n$$P(X=2)=\\binom{8}{2}(0.8)^{2}(0.2)^{6}\\approx 0.0011$$\n\n$$P(X=3)=\\binom{8}{3}(0.8)^{3}(0.2)^{5}\\approx 0.0092$$\n\n$$P(X=4)=\\binom{8}{4}(0.8)^{4}(0.2)^{4}\\approx 0.0459$$\n\n$$P(X=5)=\\binom{8}{5}(0.8)^{5}(0.2)^{3}\\approx 0.1468$$\n\nAdding these contributions,\n\n$$P(X\\le 5)\\approx 0.2031$$\n\nCompared with $0.2$, we obtain $0.2031 > 0.2$. The claim's inequality holds.\n\nso the statement is True."
       ],
-      "difficulty_level": "2/5",
+      "difficulty_level": "4/5",
       "sort_order": 97,
       "solution_overview": "In a meet with 24 independent starts, the expected number of legal starts is 19.2, and the variance is 3.84.\n\nFrom the given mean over $n=24$ independent trials,\n\n$$p=\\dfrac{E[X]}{n}=\\dfrac{19.2}{24}=0.8$$\n\nWe model the count as $X\\sim\\mathrm{Bin}(24,0.8)$, so $1-p=0.2$ and $\\mathrm{Var}(X)=np(1-p)$.",
       "placeholder": false
@@ -1371,7 +731,7 @@
         "**D.** → False\n\nIndependence across trials means a run of successes multiplies the same probability $p$ on every trial:\n\n$$P(\\text{3 successes in a row})=p^{3}$$\n\nWith the recovered $p=0.75$,\n\n$$p^{3}=(0.75)^{3}\\approx 0.4219$$\n\nComparing with the claimed cutoff $0.3$ gives $0.4219 \\ge 0.3$. The inequality in the claim therefore fails.\n\nso the statement is False.",
         "**E.** → False\n\nLet $X\\sim\\mathrm{Bin}(6,0.75)$. The event “at most $4$ successes” is the union of the mutually exclusive outcomes $X=0,1,\\ldots,4$, so\n\n$$P(X\\le 4)=\\sum_{x=0}^{4}\\binom{6}{x}p^{x}(1-p)^{6-x}$$\n\nEvaluating each mass separately:\n\n$$P(X=0)=\\binom{6}{0}(0.75)^{0}(0.25)^{6}\\approx 0.0002$$\n\n$$P(X=1)=\\binom{6}{1}(0.75)^{1}(0.25)^{5}\\approx 0.0044$$\n\n$$P(X=2)=\\binom{6}{2}(0.75)^{2}(0.25)^{4}\\approx 0.033$$\n\n$$P(X=3)=\\binom{6}{3}(0.75)^{3}(0.25)^{3}\\approx 0.1318$$\n\n$$P(X=4)=\\binom{6}{4}(0.75)^{4}(0.25)^{2}\\approx 0.2966$$\n\nAdding these contributions,\n\n$$P(X\\le 4)\\approx 0.4661$$\n\nCompared with $0.5$, we obtain $0.4661 \\le 0.5$. The claim's inequality does not hold.\n\nso the statement is False."
       ],
-      "difficulty_level": "2/5",
+      "difficulty_level": "4/5",
       "sort_order": 98,
       "solution_overview": "Of 36 independent reserve holds, the expected number picked up within 48 hours is 27.\n\nFrom the given mean over $n=36$ independent trials,\n\n$$p=\\dfrac{E[X]}{n}=\\dfrac{27}{36}=0.75$$\n\nWe model the count as $X\\sim\\mathrm{Bin}(36,0.75)$, so $1-p=0.25$ and $\\mathrm{Var}(X)=np(1-p)$.",
       "placeholder": false
@@ -1403,7 +763,7 @@
         "**D.** → False\n\nIndependence across trials means a run of successes multiplies the same probability $p$ on every trial:\n\n$$P(\\text{3 successes in a row})=p^{3}$$\n\nWith the recovered $p=0.3$,\n\n$$p^{3}=(0.3)^{3}\\approx 0.027$$\n\nComparing with the claimed cutoff $0.005$ gives $0.027 \\ge 0.005$. The inequality in the claim therefore fails.\n\nso the statement is False.",
         "**E.** → True\n\nLet $X\\sim\\mathrm{Bin}(8,0.3)$. The event “at most $5$ successes” is the union of the mutually exclusive outcomes $X=0,1,\\ldots,5$, so\n\n$$P(X\\le 5)=\\sum_{x=0}^{5}\\binom{8}{x}p^{x}(1-p)^{8-x}$$\n\nEvaluating each mass separately:\n\n$$P(X=0)=\\binom{8}{0}(0.3)^{0}(0.7)^{8}\\approx 0.0576$$\n\n$$P(X=1)=\\binom{8}{1}(0.3)^{1}(0.7)^{7}\\approx 0.1977$$\n\n$$P(X=2)=\\binom{8}{2}(0.3)^{2}(0.7)^{6}\\approx 0.2965$$\n\n$$P(X=3)=\\binom{8}{3}(0.3)^{3}(0.7)^{5}\\approx 0.2541$$\n\n$$P(X=4)=\\binom{8}{4}(0.3)^{4}(0.7)^{4}\\approx 0.1361$$\n\n$$P(X=5)=\\binom{8}{5}(0.3)^{5}(0.7)^{3}\\approx 0.0467$$\n\nAdding these contributions,\n\n$$P(X\\le 5)\\approx 0.9887$$\n\nCompared with $0.7$, we obtain $0.9887 > 0.7$. The claim's inequality holds.\n\nso the statement is True."
       ],
-      "difficulty_level": "3/5",
+      "difficulty_level": "5/5",
       "sort_order": 99,
       "solution_overview": "A campaign sends 100 independent push notifications. Opens and ignores are expected in the ratio 3 : 7.\n\nSuccesses and failures are expected in the ratio $3:7$, so\n\n$$p=\\dfrac{3}{3+7}=0.3$$\n\nWe model the count as $X\\sim\\mathrm{Bin}(100,0.3)$.",
       "placeholder": false
@@ -1435,7 +795,7 @@
         "**D.** → True\n\nIndependence across trials means a run of successes multiplies the same probability $p$ on every trial:\n\n$$P(\\text{3 successes in a row})=p^{3}$$\n\nWith the recovered $p=0.7$,\n\n$$p^{3}=(0.7)^{3}\\approx 0.343$$\n\nComparing with the claimed cutoff $0.55$ gives $0.343 < 0.55$. The inequality in the claim therefore holds.\n\nso the statement is True.",
         "**E.** → True\n\nLet $X\\sim\\mathrm{Bin}(8,0.7)$. The event “at most $5$ successes” is the union of the mutually exclusive outcomes $X=0,1,\\ldots,5$, so\n\n$$P(X\\le 5)=\\sum_{x=0}^{5}\\binom{8}{x}p^{x}(1-p)^{8-x}$$\n\nEvaluating each mass separately:\n\n$$P(X=0)=\\binom{8}{0}(0.7)^{0}(0.3)^{8}\\approx 6.5610e-5$$\n\n$$P(X=1)=\\binom{8}{1}(0.7)^{1}(0.3)^{7}\\approx 0.0012$$\n\n$$P(X=2)=\\binom{8}{2}(0.7)^{2}(0.3)^{6}\\approx 0.01$$\n\n$$P(X=3)=\\binom{8}{3}(0.7)^{3}(0.3)^{5}\\approx 0.0467$$\n\n$$P(X=4)=\\binom{8}{4}(0.7)^{4}(0.3)^{4}\\approx 0.1361$$\n\n$$P(X=5)=\\binom{8}{5}(0.7)^{5}(0.3)^{3}\\approx 0.2541$$\n\nAdding these contributions,\n\n$$P(X\\le 5)\\approx 0.4482$$\n\nCompared with $0.2$, we obtain $0.4482 > 0.2$. The claim's inequality holds.\n\nso the statement is True."
       ],
-      "difficulty_level": "3/5",
+      "difficulty_level": "5/5",
       "sort_order": 100,
       "solution_overview": "A robot attempts 18 independent room cleanings. The expected number completed without human help is 12.6, with variance 3.78.\n\nFrom the given mean over $n=18$ independent trials,\n\n$$p=\\dfrac{E[X]}{n}=\\dfrac{12.6}{18}=0.7$$\n\nWe model the count as $X\\sim\\mathrm{Bin}(18,0.7)$, so $1-p=0.3$ and $\\mathrm{Var}(X)=np(1-p)$.",
       "placeholder": false
@@ -1467,7 +827,7 @@
         "**D.** → True\n\nIndependence across trials means a run of successes multiplies the same probability $p$ on every trial:\n\n$$P(\\text{3 successes in a row})=p^{3}$$\n\nWith the recovered $p=0.55$,\n\n$$p^{3}=(0.55)^{3}\\approx 0.1664$$\n\nComparing with the claimed cutoff $0.3$ gives $0.1664 < 0.3$. The inequality in the claim therefore holds.\n\nso the statement is True.",
         "**E.** → True\n\nLet $X\\sim\\mathrm{Bin}(6,0.55)$. The event “at most $4$ successes” is the union of the mutually exclusive outcomes $X=0,1,\\ldots,4$, so\n\n$$P(X\\le 4)=\\sum_{x=0}^{4}\\binom{6}{x}p^{x}(1-p)^{6-x}$$\n\nEvaluating each mass separately:\n\n$$P(X=0)=\\binom{6}{0}(0.55)^{0}(0.45)^{6}\\approx 0.0083$$\n\n$$P(X=1)=\\binom{6}{1}(0.55)^{1}(0.45)^{5}\\approx 0.0609$$\n\n$$P(X=2)=\\binom{6}{2}(0.55)^{2}(0.45)^{4}\\approx 0.1861$$\n\n$$P(X=3)=\\binom{6}{3}(0.55)^{3}(0.45)^{3}\\approx 0.3032$$\n\n$$P(X=4)=\\binom{6}{4}(0.55)^{4}(0.45)^{2}\\approx 0.278$$\n\nAdding these contributions,\n\n$$P(X\\le 4)\\approx 0.8364$$\n\nCompared with $0.5$, we obtain $0.8364 > 0.5$. The claim's inequality holds.\n\nso the statement is True."
       ],
-      "difficulty_level": "2/5",
+      "difficulty_level": "4/5",
       "sort_order": 101,
       "solution_overview": "A tournament uses 20 independent coin tosses to assign sides. The expected number of heads is 11.\n\nFrom the given mean over $n=20$ independent trials,\n\n$$p=\\dfrac{E[X]}{n}=\\dfrac{11}{20}=0.55$$\n\nWe model the count as $X\\sim\\mathrm{Bin}(20,0.55)$, so $1-p=0.45$ and $\\mathrm{Var}(X)=np(1-p)$.",
       "placeholder": false
@@ -1499,7 +859,7 @@
         "**D.** → False\n\nIndependence across trials means a run of successes multiplies the same probability $p$ on every trial:\n\n$$P(\\text{3 successes in a row})=p^{3}$$\n\nWith the recovered $p=0.2$,\n\n$$p^{3}=(0.2)^{3}\\approx 0.008$$\n\nComparing with the claimed cutoff $0.1$ gives $0.008 \\le 0.1$. The inequality in the claim therefore fails.\n\nso the statement is False.",
         "**E.** → True\n\nLet $X\\sim\\mathrm{Bin}(6,0.2)$. The event “at most $2$ successes” is the union of the mutually exclusive outcomes $X=0,1,\\ldots,2$, so\n\n$$P(X\\le 2)=\\sum_{x=0}^{2}\\binom{6}{x}p^{x}(1-p)^{6-x}$$\n\nEvaluating each mass separately:\n\n$$P(X=0)=\\binom{6}{0}(0.2)^{0}(0.8)^{6}\\approx 0.2621$$\n\n$$P(X=1)=\\binom{6}{1}(0.2)^{1}(0.8)^{5}\\approx 0.3932$$\n\n$$P(X=2)=\\binom{6}{2}(0.2)^{2}(0.8)^{4}\\approx 0.2458$$\n\nAdding these contributions,\n\n$$P(X\\le 2)\\approx 0.9011$$\n\nCompared with $0.5$, we obtain $0.9011 > 0.5$. The claim's inequality holds.\n\nso the statement is True."
       ],
-      "difficulty_level": "3/5",
+      "difficulty_level": "5/5",
       "sort_order": 102,
       "solution_overview": "Sensors check 45 independent field plots. The expected number of drought alerts is 9.\n\nFrom the given mean over $n=45$ independent trials,\n\n$$p=\\dfrac{E[X]}{n}=\\dfrac{9}{45}=0.2$$\n\nWe model the count as $X\\sim\\mathrm{Bin}(45,0.2)$, so $1-p=0.8$ and $\\mathrm{Var}(X)=np(1-p)$.",
       "placeholder": false
@@ -1531,7 +891,7 @@
         "**D.** → True\n\nIndependence across trials means a run of successes multiplies the same probability $p$ on every trial:\n\n$$P(\\text{3 successes in a row})=p^{3}$$\n\nWith the recovered $p=0.6$,\n\n$$p^{3}=(0.6)^{3}\\approx 0.216$$\n\nComparing with the claimed cutoff $0.55$ gives $0.216 < 0.55$. The inequality in the claim therefore holds.\n\nso the statement is True.",
         "**E.** → True\n\nLet $X\\sim\\mathrm{Bin}(8,0.6)$. The event “at most $5$ successes” is the union of the mutually exclusive outcomes $X=0,1,\\ldots,5$, so\n\n$$P(X\\le 5)=\\sum_{x=0}^{5}\\binom{8}{x}p^{x}(1-p)^{8-x}$$\n\nEvaluating each mass separately:\n\n$$P(X=0)=\\binom{8}{0}(0.6)^{0}(0.4)^{8}\\approx 0.0007$$\n\n$$P(X=1)=\\binom{8}{1}(0.6)^{1}(0.4)^{7}\\approx 0.0079$$\n\n$$P(X=2)=\\binom{8}{2}(0.6)^{2}(0.4)^{6}\\approx 0.0413$$\n\n$$P(X=3)=\\binom{8}{3}(0.6)^{3}(0.4)^{5}\\approx 0.1239$$\n\n$$P(X=4)=\\binom{8}{4}(0.6)^{4}(0.4)^{4}\\approx 0.2322$$\n\n$$P(X=5)=\\binom{8}{5}(0.6)^{5}(0.4)^{3}\\approx 0.2787$$\n\nAdding these contributions,\n\n$$P(X\\le 5)\\approx 0.6846$$\n\nCompared with $0.2$, we obtain $0.6846 > 0.2$. The claim's inequality holds.\n\nso the statement is True."
       ],
-      "difficulty_level": "3/5",
+      "difficulty_level": "5/5",
       "sort_order": 103,
       "solution_overview": "At a cinema, 60 independent ticket purchases are tracked. The expected number that scan a loyalty card is 36, with SD $\\sqrt{14.4}$.\n\nFrom the given mean over $n=60$ independent trials,\n\n$$p=\\dfrac{E[X]}{n}=\\dfrac{36}{60}=0.6$$\n\nWe model the count as $X\\sim\\mathrm{Bin}(60,0.6)$, so $1-p=0.4$ and $\\mathrm{Var}(X)=np(1-p)$.",
       "placeholder": false
@@ -1563,7 +923,7 @@
         "**D.** → False\n\nIndependence across trials means a run of successes multiplies the same probability $p$ on every trial:\n\n$$P(\\text{3 successes in a row})=p^{3}$$\n\nWith the recovered $p=0.9$,\n\n$$p^{3}=(0.9)^{3}\\approx 0.729$$\n\nComparing with the claimed cutoff $0.005$ gives $0.729 \\ge 0.005$. The inequality in the claim therefore fails.\n\nso the statement is False.",
         "**E.** → False\n\nLet $X\\sim\\mathrm{Bin}(8,0.9)$. The event “at most $5$ successes” is the union of the mutually exclusive outcomes $X=0,1,\\ldots,5$, so\n\n$$P(X\\le 5)=\\sum_{x=0}^{5}\\binom{8}{x}p^{x}(1-p)^{8-x}$$\n\nEvaluating each mass separately:\n\n$$P(X=0)=\\binom{8}{0}(0.9)^{0}(0.1)^{8}\\approx 1.0000e-8$$\n\n$$P(X=1)=\\binom{8}{1}(0.9)^{1}(0.1)^{7}\\approx 7.2000e-7$$\n\n$$P(X=2)=\\binom{8}{2}(0.9)^{2}(0.1)^{6}\\approx 2.2680e-5$$\n\n$$P(X=3)=\\binom{8}{3}(0.9)^{3}(0.1)^{5}\\approx 0.0004$$\n\n$$P(X=4)=\\binom{8}{4}(0.9)^{4}(0.1)^{4}\\approx 0.0046$$\n\n$$P(X=5)=\\binom{8}{5}(0.9)^{5}(0.1)^{3}\\approx 0.0331$$\n\nAdding these contributions,\n\n$$P(X\\le 5)\\approx 0.0381$$\n\nCompared with $0.7$, we obtain $0.0381 \\le 0.7$. The claim's inequality does not hold.\n\nso the statement is False."
       ],
-      "difficulty_level": "3/5",
+      "difficulty_level": "5/5",
       "sort_order": 104,
       "solution_overview": "A lift processes 80 independent riders. Valid and invalid passes are expected in the ratio 9 : 1.\n\nSuccesses and failures are expected in the ratio $9:1$, so\n\n$$p=\\dfrac{9}{9+1}=0.9$$\n\nWe model the count as $X\\sim\\mathrm{Bin}(80,0.9)$.",
       "placeholder": false
@@ -1595,7 +955,7 @@
         "**D.** → False\n\nIndependence across trials means a run of successes multiplies the same probability $p$ on every trial:\n\n$$P(\\text{3 successes in a row})=p^{3}$$\n\nWith the recovered $p=0.1$,\n\n$$p^{3}=(0.1)^{3}\\approx 0.001$$\n\nComparing with the claimed cutoff $0.1$ gives $0.001 \\le 0.1$. The inequality in the claim therefore fails.\n\nso the statement is False.",
         "**E.** → True\n\nLet $X\\sim\\mathrm{Bin}(6,0.1)$. The event “at most $2$ successes” is the union of the mutually exclusive outcomes $X=0,1,\\ldots,2$, so\n\n$$P(X\\le 2)=\\sum_{x=0}^{2}\\binom{6}{x}p^{x}(1-p)^{6-x}$$\n\nEvaluating each mass separately:\n\n$$P(X=0)=\\binom{6}{0}(0.1)^{0}(0.9)^{6}\\approx 0.5314$$\n\n$$P(X=1)=\\binom{6}{1}(0.1)^{1}(0.9)^{5}\\approx 0.3543$$\n\n$$P(X=2)=\\binom{6}{2}(0.1)^{2}(0.9)^{4}\\approx 0.0984$$\n\nAdding these contributions,\n\n$$P(X\\le 2)\\approx 0.9842$$\n\nCompared with $0.5$, we obtain $0.9842 > 0.5$. The claim's inequality holds.\n\nso the statement is True."
       ],
-      "difficulty_level": "4/5",
+      "difficulty_level": "5/5",
       "sort_order": 105,
       "solution_overview": "An ad plays in 50 independent episodes. The expected number of click-throughs is 5.\n\nFrom the given mean over $n=50$ independent trials,\n\n$$p=\\dfrac{E[X]}{n}=\\dfrac{5}{50}=0.1$$\n\nWe model the count as $X\\sim\\mathrm{Bin}(50,0.1)$, so $1-p=0.9$ and $\\mathrm{Var}(X)=np(1-p)$.",
       "placeholder": false
@@ -1627,7 +987,7 @@
         "**D.** → True\n\nIndependence across trials means a run of successes multiplies the same probability $p$ on every trial:\n\n$$P(\\text{3 successes in a row})=p^{3}$$\n\nWith the recovered $p=0.8$,\n\n$$p^{3}=(0.8)^{3}\\approx 0.512$$\n\nComparing with the claimed cutoff $0.55$ gives $0.512 < 0.55$. The inequality in the claim therefore holds.\n\nso the statement is True.",
         "**E.** → True\n\nLet $X\\sim\\mathrm{Bin}(8,0.8)$. The event “at most $5$ successes” is the union of the mutually exclusive outcomes $X=0,1,\\ldots,5$, so\n\n$$P(X\\le 5)=\\sum_{x=0}^{5}\\binom{8}{x}p^{x}(1-p)^{8-x}$$\n\nEvaluating each mass separately:\n\n$$P(X=0)=\\binom{8}{0}(0.8)^{0}(0.2)^{8}\\approx 2.5600e-6$$\n\n$$P(X=1)=\\binom{8}{1}(0.8)^{1}(0.2)^{7}\\approx 8.1920e-5$$\n\n$$P(X=2)=\\binom{8}{2}(0.8)^{2}(0.2)^{6}\\approx 0.0011$$\n\n$$P(X=3)=\\binom{8}{3}(0.8)^{3}(0.2)^{5}\\approx 0.0092$$\n\n$$P(X=4)=\\binom{8}{4}(0.8)^{4}(0.2)^{4}\\approx 0.0459$$\n\n$$P(X=5)=\\binom{8}{5}(0.8)^{5}(0.2)^{3}\\approx 0.1468$$\n\nAdding these contributions,\n\n$$P(X\\le 5)\\approx 0.2031$$\n\nCompared with $0.2$, we obtain $0.2031 > 0.2$. The claim's inequality holds.\n\nso the statement is True."
       ],
-      "difficulty_level": "2/5",
+      "difficulty_level": "4/5",
       "sort_order": 106,
       "solution_overview": "A computer lab runs 22 independent print jobs. The expected number completed without error is 17.6, and the variance is 3.52.\n\nFrom the given mean over $n=22$ independent trials,\n\n$$p=\\dfrac{E[X]}{n}=\\dfrac{17.6}{22}=0.8$$\n\nWe model the count as $X\\sim\\mathrm{Bin}(22,0.8)$, so $1-p=0.2$ and $\\mathrm{Var}(X)=np(1-p)$.",
       "placeholder": false
@@ -1659,7 +1019,7 @@
         "**D.** → False\n\nIndependence across trials means a run of successes multiplies the same probability $p$ on every trial:\n\n$$P(\\text{4 successes in a row})=p^{4}$$\n\nWith the recovered $p=0.2$,\n\n$$p^{4}=(0.2)^{4}\\approx 0.0016$$\n\nComparing with the claimed cutoff $0.45$ gives $0.0016 \\le 0.45$. The inequality in the claim therefore fails.\n\nso the statement is False.",
         "**E.** → True\n\nLet $X\\sim\\mathrm{Bin}(5,0.2)$. The event “at least $4$” is\n\n$$P(X\\ge 4)=\\sum_{x=4}^{5}\\binom{5}{x}p^{x}(1-p)^{5-x}$$\n\nwhile “exactly $4$” is only the single term $P(X=4)$. Whenever $0<p<1$ and $k<n$, the remaining terms $x=k+1,\\ldots,n$ are strictly positive, so the upper-tail probability is strictly larger than the single mass:\n\n$$P(X\\ge 4)>P(X=4)$$\n\nNumerically, $P(X\\ge 4)\\approx 0.0067$ and $P(X=4)\\approx 0.0064$.\n\nso the statement is True."
       ],
-      "difficulty_level": "3/5",
+      "difficulty_level": "5/5",
       "sort_order": 107,
       "solution_overview": "In a campaign of 30 independent attack rolls, the expected number of critical hits is 6.\n\nFrom the given mean over $n=30$ independent trials,\n\n$$p=\\dfrac{E[X]}{n}=\\dfrac{6}{30}=0.2$$\n\nWe model the count as $X\\sim\\mathrm{Bin}(30,0.2)$, so $1-p=0.8$ and $\\mathrm{Var}(X)=np(1-p)$.",
       "placeholder": false
@@ -1691,7 +1051,7 @@
         "**D.** → False\n\nIndependence across trials means a run of successes multiplies the same probability $p$ on every trial:\n\n$$P(\\text{3 successes in a row})=p^{3}$$\n\nWith the recovered $p=0.8$,\n\n$$p^{3}=(0.8)^{3}\\approx 0.512$$\n\nComparing with the claimed cutoff $0.3$ gives $0.512 \\ge 0.3$. The inequality in the claim therefore fails.\n\nso the statement is False.",
         "**E.** → False\n\nLet $X\\sim\\mathrm{Bin}(6,0.8)$. The event “at most $4$ successes” is the union of the mutually exclusive outcomes $X=0,1,\\ldots,4$, so\n\n$$P(X\\le 4)=\\sum_{x=0}^{4}\\binom{6}{x}p^{x}(1-p)^{6-x}$$\n\nEvaluating each mass separately:\n\n$$P(X=0)=\\binom{6}{0}(0.8)^{0}(0.2)^{6}\\approx 6.4000e-5$$\n\n$$P(X=1)=\\binom{6}{1}(0.8)^{1}(0.2)^{5}\\approx 0.0015$$\n\n$$P(X=2)=\\binom{6}{2}(0.8)^{2}(0.2)^{4}\\approx 0.0154$$\n\n$$P(X=3)=\\binom{6}{3}(0.8)^{3}(0.2)^{3}\\approx 0.0819$$\n\n$$P(X=4)=\\binom{6}{4}(0.8)^{4}(0.2)^{2}\\approx 0.2458$$\n\nAdding these contributions,\n\n$$P(X\\le 4)\\approx 0.3446$$\n\nCompared with $0.5$, we obtain $0.3446 \\le 0.5$. The claim's inequality does not hold.\n\nso the statement is False."
       ],
-      "difficulty_level": "2/5",
+      "difficulty_level": "4/5",
       "sort_order": 108,
       "solution_overview": "Harbor staff run 14 independent foghorn tests. The expected number of clear audible tests is 11.2.\n\nFrom the given mean over $n=14$ independent trials,\n\n$$p=\\dfrac{E[X]}{n}=\\dfrac{11.2}{14}=0.8$$\n\nWe model the count as $X\\sim\\mathrm{Bin}(14,0.8)$, so $1-p=0.2$ and $\\mathrm{Var}(X)=np(1-p)$.",
       "placeholder": false
@@ -1723,7 +1083,7 @@
         "**D.** → False\n\nIndependence across trials means a run of successes multiplies the same probability $p$ on every trial:\n\n$$P(\\text{3 successes in a row})=p^{3}$$\n\nWith the recovered $p=0.8$,\n\n$$p^{3}=(0.8)^{3}\\approx 0.512$$\n\nComparing with the claimed cutoff $0.005$ gives $0.512 \\ge 0.005$. The inequality in the claim therefore fails.\n\nso the statement is False.",
         "**E.** → False\n\nLet $X\\sim\\mathrm{Bin}(8,0.8)$. The event “at most $5$ successes” is the union of the mutually exclusive outcomes $X=0,1,\\ldots,5$, so\n\n$$P(X\\le 5)=\\sum_{x=0}^{5}\\binom{8}{x}p^{x}(1-p)^{8-x}$$\n\nEvaluating each mass separately:\n\n$$P(X=0)=\\binom{8}{0}(0.8)^{0}(0.2)^{8}\\approx 2.5600e-6$$\n\n$$P(X=1)=\\binom{8}{1}(0.8)^{1}(0.2)^{7}\\approx 8.1920e-5$$\n\n$$P(X=2)=\\binom{8}{2}(0.8)^{2}(0.2)^{6}\\approx 0.0011$$\n\n$$P(X=3)=\\binom{8}{3}(0.8)^{3}(0.2)^{5}\\approx 0.0092$$\n\n$$P(X=4)=\\binom{8}{4}(0.8)^{4}(0.2)^{4}\\approx 0.0459$$\n\n$$P(X=5)=\\binom{8}{5}(0.8)^{5}(0.2)^{3}\\approx 0.1468$$\n\nAdding these contributions,\n\n$$P(X\\le 5)\\approx 0.2031$$\n\nCompared with $0.7$, we obtain $0.2031 \\le 0.7$. The claim's inequality does not hold.\n\nso the statement is False."
       ],
-      "difficulty_level": "3/5",
+      "difficulty_level": "5/5",
       "sort_order": 109,
       "solution_overview": "A clinic books 55 independent donation appointments. Shows and no-shows are expected in the ratio 4 : 1.\n\nSuccesses and failures are expected in the ratio $4:1$, so\n\n$$p=\\dfrac{4}{4+1}=0.8$$\n\nWe model the count as $X\\sim\\mathrm{Bin}(55,0.8)$.",
       "placeholder": false
@@ -1755,7 +1115,7 @@
         "**D.** → True\n\nIndependence across trials means a run of successes multiplies the same probability $p$ on every trial:\n\n$$P(\\text{3 successes in a row})=p^{3}$$\n\nWith the recovered $p=0.75$,\n\n$$p^{3}=(0.75)^{3}\\approx 0.4219$$\n\nComparing with the claimed cutoff $0.55$ gives $0.4219 < 0.55$. The inequality in the claim therefore holds.\n\nso the statement is True.",
         "**E.** → True\n\nLet $X\\sim\\mathrm{Bin}(8,0.75)$. The event “at most $5$ successes” is the union of the mutually exclusive outcomes $X=0,1,\\ldots,5$, so\n\n$$P(X\\le 5)=\\sum_{x=0}^{5}\\binom{8}{x}p^{x}(1-p)^{8-x}$$\n\nEvaluating each mass separately:\n\n$$P(X=0)=\\binom{8}{0}(0.75)^{0}(0.25)^{8}\\approx 1.5259e-5$$\n\n$$P(X=1)=\\binom{8}{1}(0.75)^{1}(0.25)^{7}\\approx 0.0004$$\n\n$$P(X=2)=\\binom{8}{2}(0.75)^{2}(0.25)^{6}\\approx 0.0038$$\n\n$$P(X=3)=\\binom{8}{3}(0.75)^{3}(0.25)^{5}\\approx 0.0231$$\n\n$$P(X=4)=\\binom{8}{4}(0.75)^{4}(0.25)^{4}\\approx 0.0865$$\n\n$$P(X=5)=\\binom{8}{5}(0.75)^{5}(0.25)^{3}\\approx 0.2076$$\n\nAdding these contributions,\n\n$$P(X\\le 5)\\approx 0.3215$$\n\nCompared with $0.2$, we obtain $0.3215 > 0.2$. The claim's inequality holds.\n\nso the statement is True."
       ],
-      "difficulty_level": "3/5",
+      "difficulty_level": "5/5",
       "sort_order": 110,
       "solution_overview": "A drone completes 16 independent drops. The expected number landing in the target zone is 12, with variance 3.\n\nFrom the given mean over $n=16$ independent trials,\n\n$$p=\\dfrac{E[X]}{n}=\\dfrac{12}{16}=0.75$$\n\nWe model the count as $X\\sim\\mathrm{Bin}(16,0.75)$, so $1-p=0.25$ and $\\mathrm{Var}(X)=np(1-p)$.",
       "placeholder": false
@@ -1787,7 +1147,7 @@
         "**D.** → False\n\nIndependence across trials means a run of successes multiplies the same probability $p$ on every trial:\n\n$$P(\\text{3 successes in a row})=p^{3}$$\n\nWith the recovered $p=0.9$,\n\n$$p^{3}=(0.9)^{3}\\approx 0.729$$\n\nComparing with the claimed cutoff $0.55$ gives $0.729 \\ge 0.55$. The inequality in the claim therefore fails.\n\nso the statement is False.",
         "**E.** → False\n\nLet $X\\sim\\mathrm{Bin}(8,0.9)$. The event “at most $5$ successes” is the union of the mutually exclusive outcomes $X=0,1,\\ldots,5$, so\n\n$$P(X\\le 5)=\\sum_{x=0}^{5}\\binom{8}{x}p^{x}(1-p)^{8-x}$$\n\nEvaluating each mass separately:\n\n$$P(X=0)=\\binom{8}{0}(0.9)^{0}(0.1)^{8}\\approx 1.0000e-8$$\n\n$$P(X=1)=\\binom{8}{1}(0.9)^{1}(0.1)^{7}\\approx 7.2000e-7$$\n\n$$P(X=2)=\\binom{8}{2}(0.9)^{2}(0.1)^{6}\\approx 2.2680e-5$$\n\n$$P(X=3)=\\binom{8}{3}(0.9)^{3}(0.1)^{5}\\approx 0.0004$$\n\n$$P(X=4)=\\binom{8}{4}(0.9)^{4}(0.1)^{4}\\approx 0.0046$$\n\n$$P(X=5)=\\binom{8}{5}(0.9)^{5}(0.1)^{3}\\approx 0.0331$$\n\nAdding these contributions,\n\n$$P(X\\le 5)\\approx 0.0381$$\n\nCompared with $0.2$, we obtain $0.0381 \\le 0.2$. The claim's inequality does not hold.\n\nso the statement is False."
       ],
-      "difficulty_level": "3/5",
+      "difficulty_level": "5/5",
       "sort_order": 111,
       "solution_overview": "At an entrance gate, 90 independent wristband scans are logged. The expected number of successful scans is 81, with SD $\\sqrt{8.1}$.\n\nFrom the given mean over $n=90$ independent trials,\n\n$$p=\\dfrac{E[X]}{n}=\\dfrac{81}{90}=0.9$$\n\nWe model the count as $X\\sim\\mathrm{Bin}(90,0.9)$, so $1-p=0.1$ and $\\mathrm{Var}(X)=np(1-p)$.",
       "placeholder": false
@@ -1819,7 +1179,7 @@
         "**D.** → True\n\nIndependence across trials means a run of successes multiplies the same probability $p$ on every trial:\n\n$$P(\\text{3 successes in a row})=p^{3}$$\n\nWith the recovered $p=0.6$,\n\n$$p^{3}=(0.6)^{3}\\approx 0.216$$\n\nComparing with the claimed cutoff $0.3$ gives $0.216 < 0.3$. The inequality in the claim therefore holds.\n\nso the statement is True.",
         "**E.** → True\n\nLet $X\\sim\\mathrm{Bin}(6,0.6)$. The event “at most $4$ successes” is the union of the mutually exclusive outcomes $X=0,1,\\ldots,4$, so\n\n$$P(X\\le 4)=\\sum_{x=0}^{4}\\binom{6}{x}p^{x}(1-p)^{6-x}$$\n\nEvaluating each mass separately:\n\n$$P(X=0)=\\binom{6}{0}(0.6)^{0}(0.4)^{6}\\approx 0.0041$$\n\n$$P(X=1)=\\binom{6}{1}(0.6)^{1}(0.4)^{5}\\approx 0.0369$$\n\n$$P(X=2)=\\binom{6}{2}(0.6)^{2}(0.4)^{4}\\approx 0.1382$$\n\n$$P(X=3)=\\binom{6}{3}(0.6)^{3}(0.4)^{3}\\approx 0.2765$$\n\n$$P(X=4)=\\binom{6}{4}(0.6)^{4}(0.4)^{2}\\approx 0.311$$\n\nAdding these contributions,\n\n$$P(X\\le 4)\\approx 0.7667$$\n\nCompared with $0.5$, we obtain $0.7667 > 0.5$. The claim's inequality holds.\n\nso the statement is True."
       ],
-      "difficulty_level": "2/5",
+      "difficulty_level": "4/5",
       "sort_order": 112,
       "solution_overview": "A tutor checks 18 independent homework sets. The expected number completed before the session is 10.8.\n\nFrom the given mean over $n=18$ independent trials,\n\n$$p=\\dfrac{E[X]}{n}=\\dfrac{10.8}{18}=0.6$$\n\nWe model the count as $X\\sim\\mathrm{Bin}(18,0.6)$, so $1-p=0.4$ and $\\mathrm{Var}(X)=np(1-p)$.",
       "placeholder": false
@@ -1851,7 +1211,7 @@
         "**D.** → False\n\nIndependence across trials means a run of successes multiplies the same probability $p$ on every trial:\n\n$$P(\\text{4 successes in a row})=p^{4}$$\n\nWith the recovered $p=0.8$,\n\n$$p^{4}=(0.8)^{4}\\approx 0.4096$$\n\nComparing with the claimed cutoff $0.45$ gives $0.4096 \\le 0.45$. The inequality in the claim therefore fails.\n\nso the statement is False.",
         "**E.** → True\n\nLet $X\\sim\\mathrm{Bin}(5,0.8)$. The event “at least $4$” is\n\n$$P(X\\ge 4)=\\sum_{x=4}^{5}\\binom{5}{x}p^{x}(1-p)^{5-x}$$\n\nwhile “exactly $4$” is only the single term $P(X=4)$. Whenever $0<p<1$ and $k<n$, the remaining terms $x=k+1,\\ldots,n$ are strictly positive, so the upper-tail probability is strictly larger than the single mass:\n\n$$P(X\\ge 4)>P(X=4)$$\n\nNumerically, $P(X\\ge 4)\\approx 0.7373$ and $P(X=4)\\approx 0.4096$.\n\nso the statement is True."
       ],
-      "difficulty_level": "3/5",
+      "difficulty_level": "5/5",
       "sort_order": 113,
       "solution_overview": "A parlor runs 26 independent self-clean cycles. The expected number that finish without a fault alert is 20.8.\n\nFrom the given mean over $n=26$ independent trials,\n\n$$p=\\dfrac{E[X]}{n}=\\dfrac{20.8}{26}=0.8$$\n\nWe model the count as $X\\sim\\mathrm{Bin}(26,0.8)$, so $1-p=0.2$ and $\\mathrm{Var}(X)=np(1-p)$.",
       "placeholder": false
@@ -1883,7 +1243,7 @@
         "**D.** → False\n\nIndependence across trials means a run of successes multiplies the same probability $p$ on every trial:\n\n$$P(\\text{3 successes in a row})=p^{3}$$\n\nWith the recovered $p=0.25$,\n\n$$p^{3}=(0.25)^{3}\\approx 0.0156$$\n\nComparing with the claimed cutoff $0.005$ gives $0.0156 \\ge 0.005$. The inequality in the claim therefore fails.\n\nso the statement is False.",
         "**E.** → False\n\nLet $X\\sim\\mathrm{Bin}(8,0.25)$. The event “at most $1$ successes” is the union of the mutually exclusive outcomes $X=0,1,\\ldots,1$, so\n\n$$P(X\\le 1)=\\sum_{x=0}^{1}\\binom{8}{x}p^{x}(1-p)^{8-x}$$\n\nEvaluating each mass separately:\n\n$$P(X=0)=\\binom{8}{0}(0.25)^{0}(0.75)^{8}\\approx 0.1001$$\n\n$$P(X=1)=\\binom{8}{1}(0.25)^{1}(0.75)^{7}\\approx 0.267$$\n\nAdding these contributions,\n\n$$P(X\\le 1)\\approx 0.3671$$\n\nCompared with $0.7$, we obtain $0.3671 \\le 0.7$. The claim's inequality does not hold.\n\nso the statement is False."
       ],
-      "difficulty_level": "4/5",
+      "difficulty_level": "5/5",
       "sort_order": 114,
       "solution_overview": "A dig team examines 64 independent soil squares. Finds and empty squares are expected in the ratio 1 : 3.\n\nSuccesses and failures are expected in the ratio $1:3$, so\n\n$$p=\\dfrac{1}{1+3}=0.25$$\n\nWe model the count as $X\\sim\\mathrm{Bin}(64,0.25)$.",
       "placeholder": false
@@ -1915,7 +1275,7 @@
         "**D.** → False\n\nIndependence across trials means a run of successes multiplies the same probability $p$ on every trial:\n\n$$P(\\text{3 successes in a row})=p^{3}$$\n\nWith the recovered $p=0.85$,\n\n$$p^{3}=(0.85)^{3}\\approx 0.6141$$\n\nComparing with the claimed cutoff $0.55$ gives $0.6141 \\ge 0.55$. The inequality in the claim therefore fails.\n\nso the statement is False.",
         "**E.** → False\n\nLet $X\\sim\\mathrm{Bin}(8,0.85)$. The event “at most $5$ successes” is the union of the mutually exclusive outcomes $X=0,1,\\ldots,5$, so\n\n$$P(X\\le 5)=\\sum_{x=0}^{5}\\binom{8}{x}p^{x}(1-p)^{8-x}$$\n\nEvaluating each mass separately:\n\n$$P(X=0)=\\binom{8}{0}(0.85)^{0}(0.15)^{8}\\approx 2.5629e-7$$\n\n$$P(X=1)=\\binom{8}{1}(0.85)^{1}(0.15)^{7}\\approx 1.1618e-5$$\n\n$$P(X=2)=\\binom{8}{2}(0.85)^{2}(0.15)^{6}\\approx 0.0002$$\n\n$$P(X=3)=\\binom{8}{3}(0.85)^{3}(0.15)^{5}\\approx 0.0026$$\n\n$$P(X=4)=\\binom{8}{4}(0.85)^{4}(0.15)^{4}\\approx 0.0185$$\n\n$$P(X=5)=\\binom{8}{5}(0.85)^{5}(0.15)^{3}\\approx 0.0839$$\n\nAdding these contributions,\n\n$$P(X\\le 5)\\approx 0.1052$$\n\nCompared with $0.2$, we obtain $0.1052 \\le 0.2$. The claim's inequality does not hold.\n\nso the statement is False."
       ],
-      "difficulty_level": "3/5",
+      "difficulty_level": "5/5",
       "sort_order": 115,
       "solution_overview": "A ground station sends 40 independent packets. The expected number of acknowledgements received is 34, and the variance is 5.1.\n\nFrom the given mean over $n=40$ independent trials,\n\n$$p=\\dfrac{E[X]}{n}=\\dfrac{34}{40}=0.85$$\n\nWe model the count as $X\\sim\\mathrm{Bin}(40,0.85)$, so $1-p=0.15$ and $\\mathrm{Var}(X)=np(1-p)$.",
       "placeholder": false
