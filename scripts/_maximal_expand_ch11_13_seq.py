@@ -208,6 +208,10 @@ def split_equals_chain(inner: str) -> list[str]:
     if binom_steps and s.count("=") <= 1:
         return binom_steps
 
+    # Pure approx chains with no '='
+    if "=" not in s and r"\approx" in s:
+        return split_approx_chain(s)
+
     parts = top_level_split_on_equals(s)
     if len(parts) <= 1:
         prod = expand_numeric_product(s)
@@ -226,12 +230,13 @@ def split_equals_chain(inner: str) -> list[str]:
 
         if sum_steps:
             out.append(f"{lhs} = {first}" if not out else f"= {first}")
-            for st in sum_steps:
-                out.append(st)
+            last_val = sum_steps[-1].split("=")[-1].strip()
+            # Prefer "= <value>" over restating the full "a + b = value" when the
+            # unevaluated sum was already shown on the previous line.
+            out.append(f"= {last_val}")
             if i + 1 < len(rhs_list):
                 nxt = rhs_list[i + 1].strip().replace(" ", "")
-                last_val = sum_steps[-1].split("=")[-1].strip().replace(" ", "")
-                if nxt == last_val:
+                if nxt == last_val.replace(" ", ""):
                     i += 1
             for ap in approx_parts[1:]:
                 out.append(ap if ap.startswith(r"\approx") else f"= {ap}")
@@ -276,7 +281,26 @@ def expand_display_block(inner: str) -> str:
 
 
 def expand_displays_in_text(text: str) -> str:
-    return DISPLAY_RE.sub(lambda m: expand_display_block(m.group(1)), text)
+    text = DISPLAY_RE.sub(lambda m: expand_display_block(m.group(1)), text)
+    return collapse_duplicate_displays(text)
+
+
+def collapse_duplicate_displays(text: str) -> str:
+    """Remove consecutive identical $$...$$ blocks."""
+    parts = []
+    pos = 0
+    last_inner = None
+    for m in DISPLAY_RE.finditer(text):
+        parts.append(text[pos:m.start()])
+        inner = re.sub(r"\s+", "", m.group(1))
+        if inner == last_inner:
+            pos = m.end()
+            continue
+        parts.append(m.group(0))
+        last_inner = inner
+        pos = m.end()
+    parts.append(text[pos:])
+    return "".join(parts)
 
 
 def expand_implies_prose_jumps(text: str) -> str:
