@@ -6618,73 +6618,75 @@ The words "if and only if" mean the list is complete. Conjunction $\\land$ is un
     tactical_explanations: [
       `**A.** → False
 
-The filter displays an item only when both negated conditions are true. Item M is on sale and in stock, so $S$ is true and $O$ is false:
+Filter displays iff $\\neg(S\\vee O)$. Item M is on sale and in stock:
 
-$$\\neg S\\land\\neg O = \\mathrm{F}\\land\\mathrm{T}$$
+$$S=\\mathrm{T}$$
 
-$$= \\mathrm{F}$$
+$$O=\\mathrm{F}$$
 
-The filter condition is false for M.
+$$S\\vee O=\\mathrm{T}\\vee\\mathrm{F}$$
+
+$$S\\vee O=\\mathrm{T}$$
+
+$$\\neg(S\\vee O)=\\mathrm{F}$$
+
+M is not displayed.
 
 So the statement is False.`,
       `**B.** → False
 
-The filter displays an item only when both negated conditions are true. Item N is not on sale and is out of stock, so $S$ is false and $O$ is true:
+Item N is not on sale and out of stock:
 
-$$\\neg S\\land\\neg O = \\mathrm{T}\\land\\mathrm{F}$$
+$$S=\\mathrm{F}$$
 
-$$= \\mathrm{F}$$
+$$O=\\mathrm{T}$$
 
-The filter condition is false for N.
+$$S\\vee O=\\mathrm{F}\\vee\\mathrm{T}$$
+
+$$S\\vee O=\\mathrm{T}$$
+
+$$\\neg(S\\vee O)=\\mathrm{F}$$
+
+N is not displayed.
 
 So the statement is False.`,
       `**C.** → False
 
-Logical equivalence requires the two formulas to agree on every truth assignment. For item M, $S$ is true and $O$ is false. The proposed formula gives
+De Morgan expands a negated disjunction as a conjunction:
 
-$$\\neg S\\lor\\neg O = \\mathrm{F}\\lor\\mathrm{T}$$
+$$\\neg(S\\vee O)\\equiv\\neg S\\wedge\\neg O$$
 
-$$= \\mathrm{T}$$
+The claim writes $\\neg S\\vee\\neg O$ instead. Those are not equivalent: on $S=\\mathrm{T}$, $O=\\mathrm{F}$,
 
-The actual filter gives
+$$\\neg(S\\vee O)=\\mathrm{F}$$
 
-$$\\neg(S\\lor O) = \\neg(\\mathrm{T}\\lor\\mathrm{F})$$
-
-$$= \\mathrm{F}$$
-
-The formulas disagree on M. They are not equivalent.
+$$\\neg S\\vee\\neg O=\\mathrm{F}\\vee\\mathrm{T}=\\mathrm{T}$$
 
 So the statement is False.`,
       `**D.** → True
 
-Move the outer negation through the parentheses using De Morgan's law:
+Correct De Morgan form:
 
-$$\\neg(S\\lor O)\\equiv\\neg S\\land\\neg O$$
+$$\\neg(S\\vee O)\\equiv\\neg S\\wedge\\neg O$$
 
-The connective changes from OR to AND. For example, on the only displayed-item assignment $S=\\mathrm{F}$ and $O=\\mathrm{F}$,
-
-$$\\neg(S\\lor O) = \\neg(\\mathrm{F}\\lor\\mathrm{F})$$
-
-$$= \\mathrm{T}$$
-
-and
-
-$$\\neg S\\land\\neg O = \\mathrm{T}\\land\\mathrm{T}$$
-
-$$= \\mathrm{T}$$
-
-Thus “not on sale and not out of stock” is the correct equivalent condition.
+Displayed items are neither on sale nor out of stock.
 
 So the statement is True.`,
       `**E.** → True
 
-The filter displays an item when both negated conditions are true. Item K is not on sale and is in stock, so $S$ and $O$ are both false:
+Item K: not on sale and in stock:
 
-$$\\neg S\\land\\neg O = \\mathrm{T}\\land\\mathrm{T}$$
+$$S=\\mathrm{F}$$
 
-$$= \\mathrm{T}$$
+$$O=\\mathrm{F}$$
 
-The filter condition is true for K.
+$$\\neg S=\\mathrm{T}$$
+
+$$\\neg O=\\mathrm{T}$$
+
+$$\\neg S\\wedge\\neg O=\\mathrm{T}$$
+
+so K is displayed.
 
 So the statement is True.`,
     ],
@@ -6941,77 +6943,39 @@ and the extra fact that $P$ is true travels along it. A true $P$ forces $Q$ true
     tactical_explanations: [
       `**A.** → True
 
-“Cancelled unless $S$” requires cancellation whenever the escape fails. That is the overview’s translation
+“Cancelled unless rain stops” means cancellation occurs when the stop fails:
 
-$$\\neg S \\Rightarrow C$$
-
-Compare the computed value with the claim (that same implication). That matches the claim. The two sides agree.
+$$\\neg S\\Rightarrow C$$
 
 So the statement is True.`,
       `**B.** → False
 
-The proposed implication $S\\Rightarrow\\neg C$ says that a timely stop guarantees no cancellation. Consider a 5 PM rain stop followed by a power failure. Then
-
-$$S = \\mathrm{T},$$
-
-$$C$$
-
-$$= \\mathrm{T}$$
-
-The actual unless-rule remains true:
-
-$$\\neg S\\Rightarrow C = \\mathrm{F}\\Rightarrow\\mathrm{T}$$
-
-$$= \\mathrm{T}$$
-
-but the proposed implication is false:
-
-$$S\\Rightarrow\\neg C = \\mathrm{T}\\Rightarrow\\mathrm{F}$$
-
-$$= \\mathrm{F}$$
-
-The formulas are not equivalent.
+The converse of $\\neg S\\Rightarrow C$ is $C\\Rightarrow\\neg S$, not $S\\Rightarrow\\neg C$. Check $S\\Rightarrow\\neg C$: that would say a stop forces the concert to run, which the rule never promises.
 
 So the statement is False.`,
       `**C.** → True
 
-Apply the overview identity to $\\neg S \\Rightarrow C$:
+Material implication rewrite:
 
-$$\\neg(\\neg S) \\lor C \\equiv S \\lor C$$
+$$\\neg S\\Rightarrow C\\equiv S\\vee C$$
 
-OR is symmetric, so $C \\lor S$ is the same formula. Inclusive or still allows $S$ and $C$ together.
-
-That matches the claim.
-
-$$C \\lor S$$
+(or $C\\vee S$). The two forms are equivalent.
 
 So the statement is True.`,
       `**D.** → False
 
-When the rain stops before 6 PM, $S=\\mathrm{T}$ and the antecedent $\\neg S$ of the actual rule is false. If a power failure still cancels the concert, then $C=\\mathrm{T}$ and
-
-$$\\neg S\\Rightarrow C = \\mathrm{F}\\Rightarrow\\mathrm{T}$$
-
-$$= \\mathrm{T}$$
-
-The claimed guarantee would instead require
-
-$$S\\Rightarrow\\neg C = \\mathrm{T}\\Rightarrow\\mathrm{F}$$
-
-$$= \\mathrm{F}$$
-
-The actual rule allows cancellation for another cause after the rain stops.
+If $S$ holds, $\\neg S\\Rightarrow C$ is vacuously true whether or not $C$ holds. The concert might still be cancelled for other reasons. So a stop does not guarantee the concert happens.
 
 So the statement is False.`,
       `**E.** → True
 
-The contrapositive of $\\neg S \\Rightarrow C$ swaps and negates both sides:
+Contrapositive of $\\neg S\\Rightarrow C$:
 
-$$\\neg C \\Rightarrow S$$
+$$\\neg C\\Rightarrow\\neg(\\neg S)$$
 
-A concert that went ahead has $\\neg C$, so the rain must have stopped before 6 PM. Contrapositive shares the original truth value.
+$$\\neg C\\Rightarrow S$$
 
-That matches the claim.
+If the concert is not cancelled, the rain must have stopped before 6 PM.
 
 So the statement is True.`,
     ],
@@ -7046,87 +7010,59 @@ When $S$ is true the antecedent $\\neg S$ is false, so the implication is silent
     tactical_explanations: [
       `**A.** → True
 
-Rider P is $70$ with no disability and income \\$18,000. Then $A$ is true, $D$ is false, and $L$ is true because \\$18,000 is below \\$20,000, so
+Discount requires age and (disability or low income). For P:
 
-$$A \\land (D \\lor L) = \\mathrm{T} \\land (\\mathrm{F} \\lor \\mathrm{T})$$
+$$70\\ge 65$$
 
-$$= \\mathrm{T}$$
+$$\\mathrm{disability}=\\mathrm{F}$$
+
+$$18000<20000$$
+
+$$\\mathrm{disability}\\vee\\mathrm{low\\ income}=\\mathrm{F}\\vee\\mathrm{T}$$
+
+$$=\\mathrm{T}$$
+
+$$\\mathrm{age}\\wedge(\\mathrm{disability}\\vee\\mathrm{low\\ income})=\\mathrm{T}$$
 
 P qualifies.
 
 So the statement is True.`,
       `**B.** → False
 
-Rider Q is $67$, has a qualifying disability, and earns \\$50,000. Then $A$ is true, $D$ is true, and $L$ is false, so $D \\lor L$ holds on the disability half:
+For Q: age and disability hold, income is high. The inner disjunction is
 
-$$A \\land (D \\lor L) = \\mathrm{T} \\land (\\mathrm{T} \\lor \\mathrm{F})$$
+$$\\mathrm{disability}\\vee\\mathrm{low\\ income}=\\mathrm{T}\\vee\\mathrm{F}$$
 
-$$= \\mathrm{T}$$
+$$=\\mathrm{T}$$
 
-Q does qualify. High income is not a veto while $D$ is true.
+so the full conjunction still holds. Q does qualify; the claim is false.
 
 So the statement is False.`,
       `**C.** → False
 
-Income below the cutoff, $L$, is joined to disability, $D$, by inclusive OR. Rider Q provides a direct counterexample to automatic disqualification:
-
-$$A = \\mathrm{T},$$
-
-$$D$$
-
-$$= \\mathrm{T},$$
-
-$$L$$
-
-$$= \\mathrm{F}$$
-
-Evaluate the complete condition:
-
-$$A\\land(D\\lor L) = \\mathrm{T}\\land(\\mathrm{T}\\lor\\mathrm{F})$$
-
-$$= \\mathrm{T}$$
-
-Although Q's income is above $\\$20{,}000$, the disability satisfies the bracket and Q qualifies.
+A senior with disability and income above $\\$20{,}000$ still satisfies the inner disjunction via disability. High income alone does not disqualify.
 
 So the statement is False.`,
       `**D.** → True
 
-Take a $70$-year-old with no disability and income \\$25,000. Then $A$ is true, $D$ is false, and $L$ is false because \\$25,000 is above the cutoff, so
+Take age $70$, no disability, income $\\$25{,}000$:
 
-$$D \\lor L = \\mathrm{F} \\lor \\mathrm{F}$$
+$$70\\ge 65$$
 
-$$= \\mathrm{F}$$
+$$\\mathrm{disability}=\\mathrm{F}$$
 
-and the conjunction fails. That rider does not qualify.
+$$25000<20000$$
+
+is false, so
+
+$$\\mathrm{disability}\\vee\\mathrm{low\\ income}=\\mathrm{F}$$
+
+The conjunction fails, so the rider does not qualify. Such a scenario exists.
 
 So the statement is True.`,
       `**E.** → False
 
-If age alone were sufficient, $A\\Rightarrow\\mathrm{Discount}$ would hold. Test a $70$-year-old with no disability and income $\\$25{,}000$:
-
-$$A = \\mathrm{T},$$
-
-$$D$$
-
-$$= \\mathrm{F},$$
-
-$$L$$
-
-$$= \\mathrm{F}$$
-
-The rule evaluates to
-
-$$A\\land(D\\lor L) = \\mathrm{T}\\land(\\mathrm{F}\\lor\\mathrm{F})$$
-
-$$= \\mathrm{F}$$
-
-This senior rider does not qualify, so
-
-$$A\\Rightarrow\\mathrm{Discount} = \\mathrm{T}\\Rightarrow\\mathrm{F}$$
-
-$$= \\mathrm{F}$$
-
-Age is necessary but not sufficient, making the statement False.
+Age alone is not sufficient: the second conjunct may still fail. The previous letter’s rider is a counterexample.
 
 So the statement is False.`,
     ],
@@ -7252,93 +7188,31 @@ A proof by induction has two moves. The base case checks one starting value, her
     tactical_explanations: [
       `**A.** → False
 
-“For unemployment to decrease, inflation must increase” makes $P$ necessary for $Q$, which is
-
-$$Q \\Rightarrow P$$
-
-That is the converse of $P \\Rightarrow Q$. To see that the two are not equivalent, use the assignment
-
-$$P = \\mathrm{F},$$
-
-$$Q$$
-
-$$= \\mathrm{T}$$
-
-Then
-
-$$P\\Rightarrow Q = \\mathrm{F}\\Rightarrow\\mathrm{T}$$
-
-$$= \\mathrm{T}$$
-
-but
-
-$$Q\\Rightarrow P = \\mathrm{T}\\Rightarrow\\mathrm{F}$$
-
-$$= \\mathrm{F}$$
-
-The original can be true while the proposed wording is false.
+Original: $I\\Rightarrow U$ (inflation up $\\Rightarrow$ unemployment down). The claim “for $U$, inflation must increase” is $U\\Rightarrow I$, the converse. Not equivalent.
 
 So the statement is False.`,
       `**B.** → True
 
-“A sufficient condition for unemployment to decrease is that inflation increases” makes $P$ sufficient for $Q$:
-
-$$P \\Rightarrow Q$$
-
-That is the original claim.
-
-That matches the claim.
+“Sufficient for $U$ that $I$” means $I\\Rightarrow U$, which is exactly the original.
 
 So the statement is True.`,
       `**C.** → False
 
-“Unemployment can only decrease if inflation increases” is $Q$ only if $P$, which is
-
-$$Q \\Rightarrow P$$
-
-This is the converse, not the original implication. Let inflation fail to increase while unemployment nevertheless decreases:
-
-$$P = \\mathrm{F},$$
-
-$$Q$$
-
-$$= \\mathrm{T}$$
-
-The original is true on this row,
-
-$$P\\Rightarrow Q = \\mathrm{F}\\Rightarrow\\mathrm{T}$$
-
-$$= \\mathrm{T},$$
-
-while the proposed “only if” claim is false:
-
-$$Q\\Rightarrow P = \\mathrm{T}\\Rightarrow\\mathrm{F}$$
-
-$$= \\mathrm{F}$$
-
-Because the truth values can differ, the two claims are not equivalent.
+“$U$ only if $I$” means $U\\Rightarrow I$, again the converse. Not equivalent.
 
 So the statement is False.`,
       `**D.** → True
 
-“If unemployment does not decrease, then inflation does not increase” is
+Contrapositive of $I\\Rightarrow U$:
 
-$$\\neg Q \\Rightarrow \\neg P$$
+$$\\neg U\\Rightarrow\\neg I$$
 
-That is the contrapositive of $P \\Rightarrow Q$.
-
-That matches the claim.
+which matches the claim. Equivalent.
 
 So the statement is True.`,
       `**E.** → True
 
-“A necessary condition for inflation to increase is that unemployment decreases” makes $Q$ necessary for $P$, which is
-
-$$P \\Rightarrow Q$$
-
-That is the original claim.
-
-That matches the claim.
+“Necessary for $I$ that $U$” means $I\\Rightarrow U$, the original. Equivalent.
 
 So the statement is True.`,
     ],
@@ -7373,71 +7247,39 @@ The original and its contrapositive $\\neg Q \\Rightarrow \\neg P$ are equivalen
     tactical_explanations: [
       `**A.** → True
 
-Write $D$ for “Flight 202 is delayed” and $C$ for “Flight 305 is cancelled.” The log supplies
+From (1) and (3):
 
-$$D=\\mathrm{T},$$
+$$D_{202}\\Rightarrow C_{305}$$
 
-$$D\\Rightarrow C$$
+$$D_{202}$$
 
-Modus ponens applies because the antecedent is true:
-
-$$D = \\mathrm{T},\\quad D\\Rightarrow C \\quad\\Longrightarrow\\quad C$$
-
-$$= \\mathrm{T}$$
-
-Flight 305 is therefore cancelled today.
+$$C_{305}$$
 
 So the statement is True.`,
       `**B.** → True
 
-Letter A gives $C=\\mathrm{T}$. Statement (2) supplies the next implication:
+From letter A and (2):
 
-$$C\\Rightarrow O$$
+$$C_{305}\\Rightarrow O$$
 
-Apply modus ponens a second time:
+$$C_{305}$$
 
-$$C = \\mathrm{T},\\quad C\\Rightarrow O \\quad\\Longrightarrow\\quad O$$
-
-$$= \\mathrm{T}$$
-
-Thus the ground crew works overtime today.
+$$O$$
 
 So the statement is True.`,
       `**C.** → True
 
-An inference can reach a conclusion only through premises that connect to it. From statements (1) and (3), modus ponens gives
-
-$$D,\\quad D\\Rightarrow C\\quad\\Longrightarrow\\quad C$$
-
-Those premises contain no link from $C$ to $O$:
-
-$$\\{D,D\\Rightarrow C\\}\\nvdash O$$
-
-Statement (2), $C\\Rightarrow O$, is therefore essential to the overtime conclusion.
+Without (2), we only reach $C_{305}$ from (1) and (3). Overtime $O$ is not forced. So (2) is essential for the overtime conclusion.
 
 So the statement is True.`,
       `**D.** → False
 
-An implication with a false antecedent does not force its conclusion to be false. Consider a day when Flight 202 is not delayed but Flight 305 is cancelled for another reason:
-
-$$D\\Rightarrow C = \\mathrm{F}\\Rightarrow\\mathrm{T}$$
-
-$$= \\mathrm{T}$$
-
-Statement (1) still holds on that day, although $\\neg C$ is false. Thus $\\neg D$ does not guarantee $\\neg C$.
+Statement (1) is $D_{202}\\Rightarrow C_{305}$. Its converse would be $\\neg D_{202}\\Rightarrow\\neg C_{305}$, which is not given. A non-delay does not guarantee that 305 runs.
 
 So the statement is False.`,
       `**E.** → False
 
-Successive modus ponens carries the recorded delay through both rules. First,
-
-$$D,\\quad D\\Rightarrow C\\quad\\Longrightarrow\\quad C$$
-
-Then,
-
-$$C,\\quad C\\Rightarrow O\\quad\\Longrightarrow\\quad O$$
-
-Every scenario satisfying (1), (2), and (3) therefore has overtime. The claimed no-overtime scenario cannot exist.
+From (1)–(3), modus ponens forces $C_{305}$ and then $O$. Every model of the three premises has overtime, so no counter-scenario exists.
 
 So the statement is False.`,
     ],
