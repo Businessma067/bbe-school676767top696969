@@ -10,6 +10,7 @@ import ch3 from "./math-theory/ch3.md?raw";
 import ch4 from "./math-theory/ch4.md?raw";
 import ch5 from "./math-theory/ch5.md?raw";
 import ch6 from "./math-theory/ch6.md?raw";
+import ch7 from "./math-theory/ch7.md?raw";
 import ch8 from "./math-theory/ch8.md?raw";
 import ch11 from "./math-theory/ch11.md?raw";
 import ch12 from "./math-theory/ch12.md?raw";
@@ -57,6 +58,11 @@ export const MATH_COURSE_THEORY: Record<number, MathCourseTheoryChapter> = {
     markdown: ch6,
     materialsPdfUrl: "/bbe-math-inequalities-theory.pdf",
     materialsPdfName: "BBE-Math-Inequalities-Prep-Guide.pdf",
+  },
+  7: {
+    num: 7,
+    title: "Linear and quadratic functions",
+    markdown: ch7,
   },
   8: {
     num: 8,
