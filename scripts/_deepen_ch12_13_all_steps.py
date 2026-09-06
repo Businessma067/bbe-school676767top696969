@@ -192,7 +192,7 @@ def fix_broken_sums(text: str) -> str:
             flags=re.S,
         )
         text = re.sub(
-            r"\$\$\s*(P\([^$]*?\))\s*=\s*\\sum_\{([a-zA-Z])\s*\$\$\s*"
+            r"\$\$\s*([^$]*?)\s*=\s*\\sum_\{([a-zA-Z])\s*\$\$\s*"
             r"\$\$\s*=\s*(\d+)\}\^{(\d+)\}\s*([^$]*?)\$\$",
             lambda m: disp(
                 rf"{m.group(1).strip()} = \sum_{{{m.group(2)} = {m.group(3)}}}^{{{m.group(4)}}} {m.group(5).strip()}"
@@ -731,7 +731,7 @@ def audit_explanation(expl: str, letter: str, is_true: bool, case_id: str) -> li
         errs.append(f"{case_id} {letter}: missing closer")
     if re.search(r"\bQED\b", expl, re.I):
         errs.append(f"{case_id} {letter}: QED")
-    if re.search(r"\\sum_\{[a-zA-Z]\s*\$\$", expl) or re.search(r"\$\$\s*=\s*\d+\}\{", expl):
+    if re.search(r"\\sum_\{[a-zA-Z]\s*\$\$", expl) or re.search(r"\$\$\s*=\s*\d+\}\^\{", expl):
         errs.append(f"{case_id} {letter}: broken sum")
     return errs
 
