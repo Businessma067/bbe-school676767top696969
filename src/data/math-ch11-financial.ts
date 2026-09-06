@@ -11546,6 +11546,28 @@ So the statement is True.`,
 
 Read the figure already produced by the shared solve, then compare it with the claim.
 
+Substitute the recovered stem inputs:
+
+$$a = 200,000,$$
+
+$$k = 1.12$$
+
+$$1.12^9$$
+
+$$= 2.773078757$$
+
+$$s_9 = 200,000\\frac{2.773078757-1}{0.12}$$
+
+$$s_9 = 200,000 \\times 14.775656$$
+
+$$s_9 \\approx 2,955,131.26$$
+
+$$1.12^{10}$$
+
+$$= 3.105848289$$
+
+$$s_{10} = 200,000\\frac{3.105848289-1}{0.12}$$
+
 The overview recovered $s_9\\approx 2,955,131.26$. Since
 
 $$2,955,131.26 < 3,000,000$$
@@ -11918,6 +11940,24 @@ So the statement is True.`,
       `**E.** → False
 
 If the decline continued forever,
+
+Substitute the recovered stem inputs:
+
+$$a = 10,000,$$
+
+$$k = 0.98,$$
+
+$$n = 20$$
+
+$$0.98^{20}$$
+
+$$= 0.667607972$$
+
+$$s_{20} = 10,000\\frac{1-0.667607972}{0.02}$$
+
+$$s_{20} = 10,000 \\times 16.619601$$
+
+$$s_{20} = 166,196.01$$
 
 $$
 s_{\\infty} = \\frac{10,000}{1-0.98}
@@ -12613,6 +12653,24 @@ So the statement is True.`,
 
 Tranche 3 converges, so its \\$375,000 total is a finite dollar amount and may be added to the two finite tranches. The overview recovered
 
+Substitute the recovered stem inputs:
+
+$$a_1 = 25,000,$$
+
+$$k_1 = 1,$$
+
+$$n_1 = 9$$
+
+$$a_2 = 18,000,$$
+
+$$k_2 = 1.07,$$
+
+$$n_2 = 9$$
+
+$$a_3 = 30,000,$$
+
+$$k_3 = 0.92$$
+
 $$225,000+215,603.80+375,000$$
 
 $$= 815,603.80$$
@@ -12767,12 +12825,38 @@ $$5,000 - 4,081.49$$
 
 $$= 918.51$$
 
-Compare the computed value with the claim (\\$928.51). We have $918.51 \\ne 928.51$. The two sides do not agree.
+Compare the computed value with the claim (\\$928.51). The computed value is
+
+$$918.51$$
+
+The claim is
+
+$$928.51$$
+
+Since $918.51 \\ne 928.51$, the figures disagree. The two sides do not agree.
 
 So the statement is False.`,
       `**D.** → True
 
 Present value is linear in the target. The overview recovered $x\\approx 4,081.49$, so a \\$10,000 target needs
+
+Substitute the recovered stem inputs:
+
+$$A = 5,000,$$
+
+$$r = 7\\%$$
+
+$$r = 0.07,$$
+
+$$n = 3$$
+
+$$(1.07)^3$$
+
+$$= 1.225043$$
+
+$$x = \\frac{5,000}{1.225043}$$
+
+$$x \\approx 4,081.49$$
 
 $$2 \\times 4,081.49$$
 
@@ -12795,7 +12879,15 @@ $$\\frac{4,081.49}{2}$$
 
 $$= 2,040.75$$
 
-The claim needs $x_6 = 2,040.75$. We have $3,331.71 \\ne 2,040.75$.
+The claim needs $x_6 = 2,040.75$. The computed value is
+
+$$3,331.71$$
+
+The claim is
+
+$$2,040.75$$
+
+Since $3,331.71 \\ne 2,040.75$, the figures disagree.
 
 So the statement is False.`,
     ],
@@ -12894,12 +12986,40 @@ $$2 \\times 8,698.47$$
 
 $$= 17,396.94$$
 
-The claim needs $F(10)=17,396.94$. We have $11,640.51 \\ne 17,396.94$.
+The claim needs $F(10)=17,396.94$. The computed value is
+
+$$11,640.51$$
+
+The claim is
+
+$$17,396.94$$
+
+Since $11,640.51 \\ne 17,396.94$, the figures disagree.
 
 So the statement is False.`,
       `**D.** → False
 
 Interest in the second five years is the ten-year balance minus the five-year balance. The overview recovered $F(5)\\approx 8,698.47$ and $F(10)\\approx 11,640.51$:
+
+Substitute the recovered stem inputs:
+
+$$P = 6,500,$$
+
+$$r = 6\\%$$
+
+$$r = 0.06$$
+
+$$n = 5,$$
+
+$$n = 10$$
+
+$$(1.06)^5$$
+
+$$= 1.338226$$
+
+$$F(5) = 6,500 \\times 1.338226$$
+
+$$F(5) \\approx 8,698.47$$
 
 $$11,640.51 - 8,698.47$$
 
@@ -12928,7 +13048,15 @@ $$\\frac{8,698.47}{2}$$
 
 $$= 4,349.24$$
 
-The claim needs $F_{3\\%}(5)=4,349.24$. We have $7,535.28 \\ne 4,349.24$.
+The claim needs $F_{3\\%}(5)=4,349.24$. The computed value is
+
+$$7,535.28$$
+
+The claim is
+
+$$4,349.24$$
+
+Since $7,535.28 \\ne 4,349.24$, the figures disagree.
 
 So the statement is False.`,
     ],
@@ -13032,7 +13160,15 @@ $$13,603.84 - 12,000$$
 
 $$= 1,603.84$$
 
-Compare the computed value with the claim (\\$1,703.84). We have $1,603.84 \\ne 1,703.84$. The two sides do not agree.
+Compare the computed value with the claim (\\$1,703.84). The computed value is
+
+$$1,603.84$$
+
+The claim is
+
+$$1,703.84$$
+
+Since $1,603.84 \\ne 1,703.84$, the figures disagree. The two sides do not agree.
 
 So the statement is False.`,
       `**C.** → False
@@ -13043,18 +13179,48 @@ $$P_6 = \\frac{13,603.84}{(1.05)^6}$$
 
 $$\\approx 10,151.40$$
 
-Compare the computed value with the claim (\\$18,230.45). We have $10,151.40 \\ne 18,230.45$. The two sides do not agree.
+Compare the computed value with the claim (\\$18,230.45). The computed value is
+
+$$10,151.40$$
+
+The claim is
+
+$$18,230.45$$
+
+Since $10,151.40 \\ne 18,230.45$, the figures disagree. The two sides do not agree.
 
 So the statement is False.`,
       `**D.** → False
 
 Future value is linear in the annual deposit. The overview recovered $F_6\\approx 13,603.84$, so a 50% larger deposit of \\$3,000 gives
 
+Substitute the recovered stem inputs:
+
+$$a = 2,000,$$
+
+$$r = 5\\%$$
+
+$$r = 0.05,$$
+
+$$n = 6$$
+
+$$F_6 = \\frac{2,000}{0.05}\\left[(1.05)^6-1\\right]$$
+
+$$F_6 \\approx 13,603.84$$
+
 $$13,603.84 \\times 1.5$$
 
 $$= 20,405.76$$
 
-The claim is \\$21,405.76. We have $20,405.76 \\ne 21,405.76$.
+The claim is \\$21,405.76. The computed value is
+
+$$20,405.76$$
+
+The claim is
+
+$$21,405.76$$
+
+Since $20,405.76 \\ne 21,405.76$, the figures disagree.
 
 So the statement is False.`,
       `**E.** → False
@@ -13190,6 +13356,24 @@ So the statement is False.`,
       `**D.** → False
 
 The overview recovered $F_{10}\\approx 50,702.97$. Interest is that pile minus the \\$35,000 of deposits:
+
+Substitute the recovered stem inputs:
+
+$$a = 3,500,$$
+
+$$r = 8\\%$$
+
+$$r = 0.08,$$
+
+$$n = 10$$
+
+$$
+F_{10} = \\frac{3,500}{0.08}\\left[(1.08)^{10}-1\\right]
+$$
+
+$$= 43,750 \\times 1.158925$$
+
+$$\\approx 50,702.97$$
 
 $$50,702.97 - 35,000$$
 
