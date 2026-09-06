@@ -17358,6 +17358,28 @@ So the statement is True.`,
 
 Read the figure already produced by the shared solve, then compare it with the claim.
 
+Substitute the recovered stem inputs:
+
+$$K = 120,000,$$
+
+$$a = 25,000,$$
+
+$$r = 0.14$$
+
+$$
+n \\ge \\frac{\\ln(25,000)-\\ln(25,000-0.14 \\times 120,000)}{\\ln(1.14)}
+$$
+
+$$\\approx 8.508$$
+
+$$\\frac{25,000}{0.14}\\bigl[(1.14)^{8}-1\\bigr]$$
+
+$$\\approx 330,819.00$$
+
+$$11,491.37 \\times 1.14$$
+
+$$\\approx 13,100.16$$
+
 The overview recovered the ninth and final payment as about \\$13,100.16. The claim is that same figure.
 
 So the statement is True.`,
@@ -17469,6 +17491,20 @@ So the statement is True.`,
 
 Read the figure already produced by the shared solve, then compare it with the claim.
 
+Substitute the recovered stem inputs:
+
+$$a \\approx 16,176.12$$
+
+$$0.12 \\times 73,823.88$$
+
+$$\\approx 8,858.87$$
+
+$$
+F_3 = \\frac{1,240.50}{0.09}\\bigl[(1.09)^{3}-1\\bigr]
+$$
+
+$$F_3 \\approx 4,066.48$$
+
 The overview recovered the interest portion of the second loan payment as about \\$8,858.87. The claim is that same figure.
 
 So the statement is True.`,
@@ -17486,6 +17522,20 @@ So the statement is False.`,
       `**D.** → True
 
 Read the figure already produced by the shared solve, then compare it with the claim.
+
+Substitute the recovered stem inputs:
+
+$$a \\approx 16,176.12$$
+
+$$0.12 \\times 73,823.88$$
+
+$$\\approx 8,858.87$$
+
+$$
+F_3 = \\frac{1,240.50}{0.09}\\bigl[(1.09)^{3}-1\\bigr]
+$$
+
+$$F_3 \\approx 4,066.48$$
 
 The overview recovered the reserve's year-end equivalent and three-year balance:
 
@@ -17915,6 +17965,28 @@ So the statement is False.`,
 
 The overview recovered $PV_{\\mathrm{II}} \\approx 2,508,822$ at $7.5\\%$. Schedule I is \\$2,400,000. Then
 
+Substitute the recovered stem inputs:
+
+$$a_{\\mathrm{II}} = 340,000,$$
+
+$$n_{\\mathrm{II}} = 10$$
+
+$$a_{\\mathrm{III}} = 250,000,$$
+
+$$n_{\\mathrm{III}} = 9$$
+
+$$
+PV_{\\mathrm{II}} = 340,000 + \\frac{340,000}{0.075}\\bigl[1-(1.075)^{-9}\\bigr]
+$$
+
+$$PV_{\\mathrm{II}} \\approx 2,508,821.59$$
+
+$$
+PV_{\\mathrm{III}} = 600,000 + \\frac{250,000}{0.075}\\bigl[1-(1.075)^{-9}\\bigr]
+$$
+
+$$PV_{\\mathrm{III}} \\approx 2,194,722$$
+
 $$2,400,000 < 2,508,822$$
 
 Schedule I is cheaper than Schedule II at $7.5\\%$.
@@ -17934,6 +18006,28 @@ So the statement is False.`,
       `**E.** → False
 
 The overview recovered $PV_{\\mathrm{II}} \\approx 2,186,562$ at $11.5\\%$. Then
+
+Substitute the recovered stem inputs:
+
+$$a_{\\mathrm{II}} = 340,000,$$
+
+$$n_{\\mathrm{II}} = 10$$
+
+$$a_{\\mathrm{III}} = 250,000,$$
+
+$$n_{\\mathrm{III}} = 9$$
+
+$$
+PV_{\\mathrm{II}} = 340,000 + \\frac{340,000}{0.075}\\bigl[1-(1.075)^{-9}\\bigr]
+$$
+
+$$PV_{\\mathrm{II}} \\approx 2,508,821.59$$
+
+$$
+PV_{\\mathrm{III}} = 600,000 + \\frac{250,000}{0.075}\\bigl[1-(1.075)^{-9}\\bigr]
+$$
+
+$$PV_{\\mathrm{III}} \\approx 2,194,722$$
 
 $$2,186,562 < 2,400,000$$
 
@@ -18099,6 +18193,22 @@ So the statement is True.`,
       `**E.** → True
 
 One negative outlay followed by one positive return is a cash-flow polynomial $-8,000 + 9,600 s$ with a single sign change, hence a unique $r > -1$. The recovered $20\\%$ is that unique admissible root.
+
+Substitute the recovered stem inputs:
+
+$$a_0 = -8,000,$$
+
+$$a_1 = 9,600,$$
+
+$$n = 1$$
+
+$$-a + b(1+r)^{-1} = 0$$
+
+$$r = \\frac{9,600}{8,000} - 1$$
+
+$$r = 0.20$$
+
+$$r = 20\\%$$
 
 So the statement is True.`,
     ],
@@ -18612,6 +18722,28 @@ So the statement is False.`,
 
 NPV is positive at $8\\%$ (about \\$4,012) and already negative at $12\\%$ (about -\\$445). The unique conventional root therefore sits between $8\\%$ and $12\\%$, not between $12\\%$ and $15\\%$.
 
+Substitute the recovered stem inputs:
+
+$$a_0 = -45,000,$$
+
+$$a_1 = -3,000,$$
+
+$$a_2 = 28,000,$$
+
+$$a_3 = 35,000$$
+
+$$
+A = -45,000 - \\frac{3,000}{1.08} + \\frac{28,000}{1.1664} + \\frac{35,000}{1.259712}
+$$
+
+$$A \\approx 4,011.84$$
+
+$$
+A = -45,000 - \\frac{3,000}{1.12} + \\frac{28,000}{1.2544} + \\frac{35,000}{1.404928}
+$$
+
+$$A \\approx -444.83$$
+
 So the statement is False.`,
       `**D.** → True
 
@@ -18633,6 +18765,28 @@ So the statement is True.`,
       `**E.** → False
 
 Year 1 is an installation outflow, so $a_1 = -3,000$. The later cash flows are not all positive.
+
+Substitute the recovered stem inputs:
+
+$$a_0 = -45,000,$$
+
+$$a_1 = -3,000,$$
+
+$$a_2 = 28,000,$$
+
+$$a_3 = 35,000$$
+
+$$
+A = -45,000 - \\frac{3,000}{1.08} + \\frac{28,000}{1.1664} + \\frac{35,000}{1.259712}
+$$
+
+$$A \\approx 4,011.84$$
+
+$$
+A = -45,000 - \\frac{3,000}{1.12} + \\frac{28,000}{1.2544} + \\frac{35,000}{1.404928}
+$$
+
+$$A \\approx -444.83$$
 
 So the statement is False.`,
     ],
@@ -18903,6 +19057,24 @@ So the statement is True.`,
       `**E.** → True
 
 The cash-flow signs are $-,+,+$, one sign change, hence a unique $r > -1$. The recovered $15\\%$ is that unique admissible root.
+
+Substitute the recovered stem inputs:
+
+$$a_0 = -40,000,$$
+
+$$a_1 = 22,000,$$
+
+$$a_2 = 27,600,$$
+
+$$n = 2$$
+
+$$
+A = -40,000 + \\frac{22,000}{1.15} + \\frac{27,600}{1.3225}
+$$
+
+$$= -40,000 + 19,130.43 + 20,869.57$$
+
+$$= 0$$
 
 So the statement is True.`,
     ],
