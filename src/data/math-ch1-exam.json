@@ -86,7 +86,7 @@
       ],
       "tactical_explanations": [
         "**A.** → True\n\nA conjunction fails precisely when at least one conjunct fails.\n\n$$\\neg(p\\wedge q)$$\n\n$$\\equiv \\neg p\\vee \\neg q$$\n\n$$\\neg(p\\wedge q)\\leftrightarrow(\\neg p\\vee\\neg q)$$\n\nThis is De Morgan's law for conjunction.\n\nSo the statement is True.",
-        "**B.** → True\n\nAdding one gives a valid integer witness above any selected integer.\n\n$$n\\in\\mathbb Z$$\n\n$$m=n+1\\in\\mathbb Z$$\n\n$$m-n = (n+1)-n$$\n\n$$= 1>0$$\n\nEvery integer has a larger integer witness,\n\nSo the statement is True.",
+        "**B.** → True\n\nSuccessor difference:\n\n$$m=n+1$$\n\n$$m-n=(n+1)-n$$\n\n$$(n+1)-n=1$$\n\nSo the statement is True.",
         "**C.** → False\n\nRepeated roster entries do not create new elements of a set. Collapse duplicates first:\n\n$$\\{\\alpha,\\beta,\\alpha\\}=\\{\\alpha,\\beta\\}$$\n\nOrder is irrelevant as well:\n\n$$\\{\\alpha,\\beta\\}=\\{\\beta,\\alpha\\}$$\n\nCardinality then counts distinct members only:\n\n$$|\\{\\alpha,\\beta,\\alpha\\}|=2$$\n\n$$2\\neq 3$$\n\nThe equality of rosters is correct, but the claimed cardinality $3$ is not.\n\nSo the statement is False.",
         "**D.** → False\n\nThe intersection is removed once from each set's exclusive part.\n\n$$|A\\setminus B| = 18-5$$\n\n$$= 13$$\n\n$$|B\\setminus A| = 14-5$$\n\n$$= 9$$\n\n$$|A\\triangle B| = 13+9$$\n\n$$= 22\\ne23$$\n\nThe symmetric difference has size $22$,\n\nSo the statement is False.",
         "**E.** → True\n\nAn implication can fail only when its antecedent is true and its consequent is false.\n\n$$(p\\rightarrow q)\\wedge p = T\\Longrightarrow p$$\n\n$$= T$$\n\n$$p = T\\ \\text{and}\\ p\\rightarrow q$$\n\n$$= T\\Longrightarrow q$$\n\n$$= T$$\n\n$$((p\\rightarrow q)\\wedge p)\\rightarrow q=T$$\n\nNo truth assignment makes the formula false.\n\nSo the statement is True."
@@ -245,7 +245,7 @@
         false
       ],
       "tactical_explanations": [
-        "**A.** → True\n\nThe additive identity is one fixed witness that works for every integer input.\n\n$$x=0$$\n\n$$x+y=0+y$$\n\n$$0+y=y\\quad\\text{for every }y\\in\\mathbb Z$$\n\nThe witness $x=0$ proves the sentence,\n\nSo the statement is True.",
+        "**A.** → True\n\nOn the zero first coordinate:\n\n$$x=0$$\n\n$$x+y=0+y$$\n\n$$0+y=y$$\n\nSo the statement is True.",
         "**B.** → False\n\nSolving the defining equation identifies elements before any membership claim is checked:\n\n$$n^{2} = 16\\Longleftrightarrow n$$\n\n$$= \\pm 4$$\n\n$$A=\\{-4,4\\}$$\n\nThe integer $4$ sits in $A$:\n\n$$4\\in A$$\n\nbut a singleton set is a different object from that integer:\n\n$$\\{4\\}\\notin A.$$\n\nSo the statement is False.",
         "**C.** → False\n\n$$|A|=70$$\n\n$$|B|=50$$\n\n$$|A\\cap B|=10$$\n\n$$70+50=120$$\n\n$$120-10=110$$\n\n$$|A\\cup B|=110$$\n\nSo the statement is False.",
         "**D.** → True\n\nAn implication is false only when its antecedent is true and its consequent is false.\n\n$$p\\rightarrow(q\\vee r) = F\\Longleftrightarrow p$$\n\n$$= T\\ \\text{and}\\ q\\vee r$$\n\n$$= F$$\n\n$$q\\vee r = F\\Longleftrightarrow(q,r)$$\n\n$$= (F,F)$$\n\n$$(p,q,r)=(T,F,F)$$\n\nThere is exactly one falsifying assignment.\n\nSo the statement is True.",

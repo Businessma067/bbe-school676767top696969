@@ -6523,83 +6523,67 @@ X-only is $|X|-|X\\cap Y|$. Y-only is $|Y|-|X\\cap Y|$.`,
     tactical_explanations: [
       `**A.** → False
 
-Passing requires both thresholds, so evaluate Student K's two tests separately:
+Pass iff attendance and exam both meet thresholds. For K:
 
-$$85\\%\\ge80\\%$$
+$$85\\ge 80$$
 
-$$48<50$$
+$$48\\ge 50$$
 
-Therefore
-
-$$A(K)\\land F(K) = \\mathrm{T}\\land\\mathrm{F}$$
-
-$$= \\mathrm{F}$$
-
-K fails the conjunction despite clearing attendance.
+is false. The conjunction fails, so K does not pass.
 
 So the statement is False.`,
       `**B.** → False
 
-Passing requires both thresholds, so evaluate Student L's two tests separately:
+For L:
 
-$$75\\%<80\\%$$
+$$75\\ge 80$$
 
-$$90\\ge50$$
+is false, even though
 
-Therefore
+$$90\\ge 50$$
 
-$$A(L)\\land F(L) = \\mathrm{F}\\land\\mathrm{T}$$
-
-$$= \\mathrm{F}$$
-
-L fails the conjunction despite the high exam score.
+The conjunction fails, so L does not pass.
 
 So the statement is False.`,
       `**C.** → False
 
-Conjunction does not allow one true condition to compensate for a false one. Student L supplies a direct test:
-
-$$A(L)\\land F(L) = \\mathrm{F}\\land\\mathrm{T}$$
-
-$$= \\mathrm{F}$$
-
-The $90$ exam score makes $F$ true, but $75\\%$ attendance leaves $A$ false. The combined pass condition remains false.
+The rule is a biconditional with a conjunction — both conjuncts are required. A high exam score cannot replace missing attendance.
 
 So the statement is False.`,
       `**D.** → True
 
-The exam threshold is a conjunct, so any score below $50$ makes the complete pass condition false. If attendance clears but the score does not, then
-
-$$A\\land F = \\mathrm{T}\\land\\mathrm{F}$$
-
-$$= \\mathrm{F}$$
-
-For Student K,
-
-$$48<50$$
-
-The distance from the cutoff does not change the truth value.
+If attendance holds but the exam fails the cutoff, the conjunction is false, so the student does not pass.
 
 So the statement is True.`,
       `**E.** → True
 
-Compare Student X with attendance $80\\%$ and exam score $50$ to Student Y with attendance $79\\%$ and exam score $100$. Their threshold evaluations are
+Compare Student X (attendance $80$, exam $50$) with Student Y (attendance $79$, exam $100$).
 
-$$\\mathrm{Pass}(X) = \\mathrm{T}\\land\\mathrm{T}$$
+$$80\\ge 80$$
 
-$$= \\mathrm{T}$$
+$$50\\ge 50$$
 
-$$\\mathrm{Pass}(Y) = \\mathrm{F}\\land\\mathrm{T}$$
+$$\\mathrm{Pass}(X)=\\mathrm{T}$$
 
-$$= \\mathrm{F}$$
+$$79\\ge 80$$
 
-Yet a simple combined average of the two reported numbers ranks Y higher:
+is false, so
 
-$$\\frac{80+50}{2} = 65 \\quad<\\quad \\frac{79+100}{2}$$
+$$\\mathrm{Pass}(Y)=\\mathrm{F}$$
 
-$$= 89.5$$
+Combined averages:
 
-The rule checks each cutoff separately rather than that average, so the described reversal is possible and.
+$$80+50=130$$
+
+$$\\frac{130}{2}=65$$
+
+$$79+100=179$$
+
+$$\\frac{179}{2}=89.5$$
+
+$$65<89.5$$
+
+Yet X passes and Y fails, so a lower combined average can still pass.
 
 So the statement is True.`,
     ],
@@ -10399,15 +10383,13 @@ which reverses the original arrow and is its converse. It is not a proof by cont
 So the statement is False.`,
       `**C.** → True
 
-The given square $4321^{2} = 18{,}671{,}041$ is odd. An odd square forces an odd ID. Direct check:
+The given square $4321^{2}=18{,}671{,}041$ is odd. Direct parity check:
 
-$$4321 = 2 \\times 2160 + 1$$
+$$2\\cdot 2160=4320$$
+
+$$4320+1=4321$$
 
 so $4321$ is odd. Hypothesis true and conclusion true.
-
-That matches the claim.
-
-$$4321^2$$
 
 So the statement is True.`,
       `**D.** → False
@@ -10433,13 +10415,19 @@ The two implications disagree on this assignment.
 So the statement is False.`,
       `**E.** → True
 
-An implication $R$ fails only on $n^{2}$ even and $n$ odd. A contradiction proof of $R$ therefore assumes exactly that pair, then derives an impossibility. From $n = 2k+1$,
+A contradiction proof of $E(n^{2})\\Rightarrow E(n)$ assumes $n^{2}$ even and $n$ odd. Write
 
-$$n^{2} = 4k^{2} + 4k + 1$$
+$$n=2k+1$$
 
-which is odd, colliding with the assumption that $n^{2}$ is even. The opening the claim describes is the legal one.
+$$n^{2}=(2k+1)^{2}$$
 
-$$n^2$$
+$$(2k+1)^{2}=4k^{2}+4k+1$$
+
+$$4k^{2}+4k\\text{ is even}$$
+
+$$4k^{2}+4k+1\\text{ is odd}$$
+
+so $n^{2}$ is odd, colliding with the even-square assumption.
 
 So the statement is True.`,
     ],
@@ -10891,27 +10879,15 @@ Then K would be the only truth-teller. That makes J's sentence, "Exactly one of 
 The only alternative is $L=\\text{true}$. With K and L both truth-tellers, L's "same type" sentence is indeed true.
 
 So the statement is True.`,
-      `**D.** → False
+      `**D.** → True
 
-The claim requires the final assignment to contain exactly one truth-teller. J is forced to be a liar, and K's true accusation then forces K to be a truth-teller. If L were a liar, K alone would be the one truth-teller:
+Add the three bits one step at a time:
 
-$$J = 0,$$
+$$0+1=1$$
 
-$$K$$
+$$1+1=2$$
 
-$$= 1,$$
-
-$$L$$
-
-$$= 0$$
-
-That would make J's "exactly one" sentence true, contradicting J's liar type. Thus L must also be a truth-teller. The actual count is
-
-$$0+1+1=2,$$
-
-not one.
-
-So the statement is False.`,
+So the statement is True.`,
       `**E.** → False
 
 The claim needs a second assignment, so split first on J's type. If J is truthful, J's sentence makes K and L liars, but then L truthfully says that K and L are the same type. That branch fails.
