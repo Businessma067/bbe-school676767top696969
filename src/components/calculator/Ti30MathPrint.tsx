@@ -1,4 +1,4 @@
-import { useCallback, useMemo, useState, type ReactNode } from "react";
+import { useCallback, useRef, useState, type ReactNode } from "react";
 import { BookOpen, Calculator, ChevronDown, ChevronUp, HelpCircle, X } from "lucide-react";
 import { cn } from "@/lib/utils";
 import {
@@ -329,9 +329,46 @@ export function Ti30MathPrint({
   className?: string;
   compact?: boolean;
 }) {
-  const engine = useMemo(() => new Ti30Engine(), []);
-  const [, bump] = useState(0);
-  const refresh = () => bump((n) => n + 1);
+  // Mutable engine in a ref; LCD chrome is mirrored into React state so renders
+  // always see the latest entry (mutable engine fields alone are not reactive).
+  const engineRef = useRef<Ti30Engine | null>(null);
+  if (engineRef.current === null) {
+    engineRef.current = new Ti30Engine();
+  }
+  const engine = engineRef.current;
+
+  type LcdState = {
+    entry: string;
+    lastError: string | null;
+    history: { expr: string; result: string }[];
+    ans: number;
+    angle: AngleMode;
+    notation: NotationMode;
+    fix: number | null;
+    entryMode: "MATHPRINT" | "CLASSIC";
+    mem: Record<MemoryKey, number>;
+  };
+
+  const snapshotLcd = useCallback((): LcdState => {
+    const e = engineRef.current!;
+    return {
+      entry: e.entry,
+      lastError: e.lastError,
+      history: e.history.slice(-3).map((h) => ({ expr: h.expr, result: h.result })),
+      ans: e.ans,
+      angle: e.mode.angle,
+      notation: e.mode.notation,
+      fix: e.mode.fix,
+      entryMode: e.mode.entry,
+      mem: { ...e.mem },
+    };
+  }, []);
+
+  const [lcd, setLcd] = useState<LcdState>(() => snapshotLcd());
+  const refresh = useCallback(() => {
+    setLcd(snapshotLcd());
+  }, [snapshotLcd]);
+
   const [tab, setTab] = useState<Tab>("home");
   const [second, setSecond] = useState(false);
   const [guideOpen, setGuideOpen] = useState(false);
@@ -355,14 +392,14 @@ export function Ti30MathPrint({
       setSecond(false);
       refresh();
     },
-    [engine],
+    [engine, refresh],
   );
 
-  const run = () => {
+  const run = useCallback(() => {
     engine.evaluate();
     setSecond(false);
     refresh();
-  };
+  }, [engine, refresh]);
 
   const pickDist = (fn: DistFn) => {
     setDistFn(fn);
@@ -471,11 +508,20 @@ export function Ti30MathPrint({
     }
   };
 
-  const screenLines = engine.history.slice(-3);
+  const screenLines = lcd.history;
   const display =
-    engine.lastError ??
-    (engine.entry ||
-      (engine.history.length ? engine.history[engine.history.length - 1].result : "0"));
+    lcd.lastError ??
+    (lcd.entry ||
+      (lcd.history.length ? lcd.history[lcd.history.length - 1].result : "0"));
+  const modeLabel = `${lcd.angle} · ${lcd.notation}${
+    lcd.fix != null ? ` · FIX ${lcd.fix}` : ""
+  } · ${lcd.entryMode}`;
+  const ansLabel = formatDisplay(lcd.ans, {
+    angle: lcd.angle,
+    notation: lcd.notation,
+    fix: lcd.fix,
+    entry: lcd.entryMode,
+  });
 
   const fieldCls =
     "mt-0.5 w-full rounded-lg border border-border bg-background px-2 py-1 font-mono text-xs text-foreground";
@@ -484,20 +530,16 @@ export function Ti30MathPrint({
     <div
       className={cn(
         "flex w-full max-w-md flex-col overflow-hidden rounded-2xl border border-border bg-card text-foreground shadow-sm",
-        compact && "max-w-none shadow-none",
+        compact && "h-full min-h-0 max-w-none shadow-none",
         className,
       )}
     >
-      <div className="flex items-center justify-between gap-2 border-b border-border px-3 py-2">
+      <div className="flex shrink-0 items-center justify-between gap-2 border-b border-border px-3 py-2">
         <div className="flex min-w-0 items-center gap-2">
           <Calculator className="h-4 w-4 shrink-0 text-caramel-deep" />
           <div className="min-w-0">
             <div className="font-display text-xs font-bold tracking-tight">MathPrint calc</div>
-            <div className="truncate text-[9px] text-taupe">
-              {engine.mode.angle} · {engine.mode.notation}
-              {engine.mode.fix != null ? ` · FIX ${engine.mode.fix}` : ""} ·{" "}
-              {engine.mode.entry}
-            </div>
+            <div className="truncate text-[9px] text-taupe">{modeLabel}</div>
           </div>
         </div>
         <div className="flex flex-wrap justify-end gap-0.5">
@@ -528,25 +570,36 @@ export function Ti30MathPrint({
         </div>
       </div>
 
-      {/* LCD */}
-      <div className="mx-3 mt-3 rounded-xl border border-border bg-ivory px-3 py-2 font-mono text-foreground shadow-inner">
-        <div className="mb-1 min-h-[3.2rem] space-y-0.5 text-[10px] leading-tight text-taupe">
-          {screenLines.map((h, i) => (
-            <div key={`${h.expr}-${i}`} className="flex justify-between gap-2 truncate">
-              <span className="truncate">{h.expr}</span>
-              <span className="shrink-0 font-semibold text-foreground">{h.result}</span>
-            </div>
-          ))}
-        </div>
-        <div className="border-t border-border/60 pt-1 text-right font-display text-lg font-bold tracking-tight">
-          {display}
-        </div>
-        <div className="mt-0.5 flex justify-between text-[9px] text-taupe">
-          <span className={second ? "font-bold text-caramel-deep" : ""}>{second ? "2nd" : "\u00a0"}</span>
-          <span>Ans={formatDisplay(engine.ans, engine.mode)}</span>
+      {/* LCD — pinned above the scrollable keypad so presses stay visible */}
+      <div
+        className="mx-3 mt-3 shrink-0 rounded-xl border border-border bg-ivory px-3 py-2 font-mono text-foreground shadow-inner"
+        data-calc-entry={lcd.entry}
+        data-calc-display={display}
+        aria-live="polite"
+        aria-atomic="true"
+      >
+        {/* key forces a fresh LCD subtree whenever entry/result changes (avoids
+            stale memoized text nodes against the mutable engine snapshot). */}
+        <div key={`lcd-${lcd.entry}-${display}-${ansLabel}-${screenLines.length}`}>
+          <div className="mb-1 min-h-[3.2rem] space-y-0.5 text-[10px] leading-tight text-taupe">
+            {screenLines.map((h, i) => (
+              <div key={`${h.expr}-${i}`} className="flex justify-between gap-2 truncate">
+                <span className="truncate">{h.expr}</span>
+                <span className="shrink-0 font-semibold text-foreground">{h.result}</span>
+              </div>
+            ))}
+          </div>
+          <div className="border-t border-border/60 pt-1 text-right font-display text-lg font-bold tracking-tight">
+            {display}
+          </div>
+          <div className="mt-0.5 flex justify-between text-[9px] text-taupe">
+            <span className={second ? "font-bold text-caramel-deep" : ""}>{second ? "2nd" : "\u00a0"}</span>
+            <span>Ans={ansLabel}</span>
+          </div>
         </div>
       </div>
 
+      <div className="min-h-0 flex-1 overflow-y-auto">
       {/* Feature guide menu */}
       <div className="mx-3 mt-2">
         <button
@@ -691,7 +744,7 @@ export function Ti30MathPrint({
                   type="button"
                   className={cn(
                     "rounded-lg border px-3 py-1.5 text-[11px] font-semibold",
-                    engine.mode.angle === a
+                    lcd.angle === a
                       ? "border-caramel-deep bg-caramel-deep text-primary-foreground"
                       : "border-border bg-background",
                   )}
@@ -712,7 +765,7 @@ export function Ti30MathPrint({
                   type="button"
                   className={cn(
                     "rounded-lg border px-3 py-1.5 text-[11px] font-semibold",
-                    engine.mode.notation === n
+                    lcd.notation === n
                       ? "border-caramel-deep bg-caramel-deep text-primary-foreground"
                       : "border-border bg-background",
                   )}
@@ -731,7 +784,7 @@ export function Ti30MathPrint({
                 type="button"
                 className={cn(
                   "rounded-lg border px-3 py-1.5 text-[11px] font-semibold",
-                  engine.mode.fix == null
+                  lcd.fix == null
                     ? "border-caramel-deep bg-caramel-deep text-primary-foreground"
                     : "border-border bg-background",
                 )}
@@ -748,7 +801,7 @@ export function Ti30MathPrint({
                   type="button"
                   className={cn(
                     "rounded-lg border px-2.5 py-1.5 text-[11px] font-semibold",
-                    engine.mode.fix === d
+                    lcd.fix === d
                       ? "border-caramel-deep bg-caramel-deep text-primary-foreground"
                       : "border-border bg-background",
                   )}
@@ -769,7 +822,7 @@ export function Ti30MathPrint({
                   type="button"
                   className={cn(
                     "rounded-lg border px-3 py-1.5 text-[11px] font-semibold",
-                    engine.mode.entry === e
+                    lcd.entryMode === e
                       ? "border-caramel-deep bg-caramel-deep text-primary-foreground"
                       : "border-border bg-background",
                   )}
@@ -1155,7 +1208,12 @@ export function Ti30MathPrint({
                 >
                   <span className="font-mono font-bold uppercase">{k}</span>
                   <span className="font-mono text-[11px] text-taupe">
-                    {formatDisplay(engine.mem[k], engine.mode)}
+                    {formatDisplay(lcd.mem[k], {
+                      angle: lcd.angle,
+                      notation: lcd.notation,
+                      fix: lcd.fix,
+                      entry: lcd.entryMode,
+                    })}
                   </span>
                   <div className="flex gap-1">
                     <button
@@ -1195,8 +1253,9 @@ export function Ti30MathPrint({
           </div>
         )}
       </div>
+      </div>
 
-      <p className="border-t border-border px-3 py-1.5 text-[8px] leading-snug text-muted-foreground">
+      <p className="shrink-0 border-t border-border px-3 py-1.5 text-[8px] leading-snug text-muted-foreground">
         Independent math engine inspired by TI-30XS MultiView / TI-30X Pro Dist public docs. Not affiliated
         with Texas Instruments. For exam practice only.
       </p>
@@ -1222,8 +1281,8 @@ export function PracticeCalcPanel() {
           <X className="h-3 w-3" /> Close · Theory
         </button>
       </div>
-      <div className="min-h-0 flex-1 overflow-y-auto p-2">
-        <Ti30MathPrint compact className="w-full" />
+      <div className="min-h-0 flex-1 p-2">
+        <Ti30MathPrint compact className="h-full w-full" />
       </div>
     </div>
   );
