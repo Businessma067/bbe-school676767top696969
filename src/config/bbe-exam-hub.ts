@@ -78,11 +78,11 @@ export const BBE_EXAM_FORMAT = {
   location: "VIECON, Vienna Congress and Convention Center (Messe Wien)",
   /** Time-sensitive cycle details from the existing guide — update yearly. */
   cycle: {
-    lastUpdated: "August 22, 2026",
-    examDate: "June 30, 2026, 3:00 to 5:00 p.m. CEST",
-    registrationWindow: "March 2 to May 19, 2026",
+    lastUpdated: "September 6, 2026",
+    examDate: "June 30, 2027, 3:00 to 5:00 p.m. CEST",
+    registrationWindow: "March to May 2027 (exact window announced by WU)",
     registrationFee: "€50 (waived for Ukrainian citizens)",
-    osaDeadline: "May 28, 2026, 12:00 noon CEST",
+    osaDeadline: "Announced with the 2027 registration window",
   },
 } as const;
 
