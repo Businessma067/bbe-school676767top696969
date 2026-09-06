@@ -22,6 +22,10 @@ const SKIP_TAGS = new Set([
  *
  * Study surfaces (full/lite course, games, mock builder, mock exams) always
  * stay in English so exam content is never rewritten.
+ *
+ * Important: when React updates live English UI (timers, ON/OFF labels, etc.),
+ * we refresh the cached source instead of reverting the DOM to the first
+ * value we saw — otherwise dynamic controls appear stuck.
  */
 export function PageTranslator() {
   const { lang } = useLanguage();
@@ -30,10 +34,12 @@ export function PageTranslator() {
   // Persist across lang changes so DE↔UK can re-translate from English,
   // not from already-translated DOM text.
   const originalsRef = useRef(new WeakMap<Text, string>());
+  const lastWrittenRef = useRef(new WeakMap<Text, string>());
 
   useEffect(() => {
     if (typeof document === "undefined") return;
     const originals = originalsRef.current;
+    const lastWritten = lastWrittenRef.current;
 
     const shouldSkip = (node: Text) => {
       let el = node.parentElement;
@@ -45,7 +51,13 @@ export function PageTranslator() {
       return false;
     };
 
-    const applyTo = (root: Node) => {
+    const writeNode = (node: Text, next: string) => {
+      if ((node.nodeValue ?? "") === next) return;
+      lastWritten.set(node, next);
+      node.nodeValue = next;
+    };
+
+    const applyTo = (root: Node, fromCharacterData = false) => {
       const walker = document.createTreeWalker(root, NodeFilter.SHOW_TEXT);
       const nodes: Text[] = [];
       let current = walker.nextNode();
@@ -59,16 +71,26 @@ export function PageTranslator() {
         const value = node.nodeValue ?? "";
         if (!value.trim() || shouldSkip(node)) continue;
 
-        let source = originals.get(node);
-        if (source === undefined) {
-          // First sight of this node: React rendered English source copy.
-          source = value;
-          originals.set(node, source);
+        // Echo of our own write — ignore so we don't loop.
+        if (fromCharacterData && lastWritten.get(node) === value) {
+          lastWritten.delete(node);
+          continue;
         }
 
-        const next =
-          effectiveLang === "en" ? source : (translate(source, effectiveLang) ?? source);
-        if (next !== value) node.nodeValue = next;
+        if (effectiveLang === "en") {
+          // Live English from React is authoritative (timers, toggles, counters).
+          originals.set(node, value);
+          continue;
+        }
+
+        if (fromCharacterData || !originals.has(node)) {
+          // First sight, or React changed the English source text.
+          originals.set(node, value);
+        }
+
+        const source = originals.get(node) ?? value;
+        const next = translate(source, effectiveLang) ?? source;
+        writeNode(node, next);
       }
     };
 
@@ -77,7 +99,7 @@ export function PageTranslator() {
     const observer = new MutationObserver((records) => {
       for (const record of records) {
         if (record.type === "characterData") {
-          applyTo(record.target);
+          applyTo(record.target, true);
         } else {
           record.addedNodes.forEach((n) => applyTo(n));
         }

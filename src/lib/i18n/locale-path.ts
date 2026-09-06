@@ -90,6 +90,7 @@ export const STUDY_CONTENT_PATH_PREFIXES = [
   "/matching",
   "/tutor-exam",
   "/practice",
+  "/demo-practice",
 ] as const;
 
 /** True for full/lite course study, games, mock builder, and mock exams. */

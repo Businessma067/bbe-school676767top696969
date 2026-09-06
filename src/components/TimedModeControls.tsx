@@ -33,7 +33,10 @@ export function TimedModeBar({
   const entry = session.get(session.activeId ?? questionId);
 
   return (
-    <div className={cn("mb-5 rounded-2xl border border-border bg-card p-3 shadow-sm", className)}>
+    <div
+      data-no-i18n
+      className={cn("mb-5 rounded-2xl border border-border bg-card p-3 shadow-sm", className)}
+    >
       <div className="flex flex-wrap items-center gap-2">
         <button
           type="button"
@@ -46,7 +49,8 @@ export function TimedModeBar({
               : "border-border bg-background text-foreground hover:bg-secondary",
           )}
         >
-          <Timer className="h-4 w-4" /> Timed Mode {session.enabled ? "ON" : "OFF"}
+          <Timer className="h-4 w-4" />
+          {session.enabled ? "Timed Mode ON" : "Timed Mode"}
         </button>
 
         {showCalculator && <PracticeCalculatorInline />}
