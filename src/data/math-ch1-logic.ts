@@ -2132,7 +2132,7 @@ The overview already counted
 
 $$\\lvert A\\times B\\rvert=2\\cdot 3=6$$
 
- by the product rule. Product size is the number of cells in a $2$ by $3$ grid, not the five distinct symbols $1,2,x,y,z$. The claim is that same figure $6$.
+by the product rule. Product size is the number of cells in a $2$ by $3$ grid, not the five distinct symbols $1,2,x,y,z$. The claim is that same figure $6$.
 
 That matches the claim.
 
@@ -2284,7 +2284,7 @@ Symmetric difference excludes the overlap. The overview listed
 
 $$A\\cap B=\\{3,4\\}$$
 
- and
+and
 
 $$A\\triangle B=\\{1,2,5,6\\},$$ which share nothing. Already $3\\in A\\cap B$ and $3\\notin A\\triangle B$, so $A\\cap B\\nsubseteq A\\triangle B$.
 
@@ -2345,11 +2345,11 @@ The overview already counted
 
 $$5\\cdot 8=40$$
 
- ordered pairs. Product size is cells, not
+ordered pairs. Product size is cells, not
 
 $$5+8=13$$
 
- people-plus-accounts. The claim is that same figure $40$.
+people-plus-accounts. The claim is that same figure $40$.
 
 That matches the claim.
 
@@ -2462,7 +2462,7 @@ $$A\\setminus B=(-4,-1).$$ At
 
 $$T=-2$$
 
- we have $4<16$ and $-2<-1$, so irrigation stays off. One witness is enough.
+we have $4<16$ and $-2<-1$, so irrigation stays off. One witness is enough.
 
 That matches the claim.
 
@@ -2974,7 +2974,7 @@ The overview listed
 
 $$A^c=\\{s,t,u\\}$$
 
- and
+and
 
 $$B^c=\\{p,q,t,u\\}.$$ Their intersection is $\\{t,u\\}$, matching $(A\\cup B)^c$. Letter $s$ fails the intersection because $s\\in B$. De Morgan's first law is that agreement.
 
@@ -3103,7 +3103,7 @@ The overview already counted
 
 $$3\\cdot 2=6$$
 
- letter-first pairs. Product size counts ordered pairs, not the five symbols $m,n,p,1,2$. Three letters with two numbers each give six cells.
+letter-first pairs. Product size counts ordered pairs, not the five symbols $m,n,p,1,2$. Three letters with two numbers each give six cells.
 
 That matches the claim.
 

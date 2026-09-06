@@ -1314,9 +1314,7 @@ $$\\frac{d}{8}=1$$
 
 $$d=8$$
 
-Eight metres is shallower than $10$
-
- shows agreement.
+Eight metres is shallower than $10$. That matches the claim.
 
 Keep the recovered coefficient and exponent fixed; only the claimed input (or threshold) changes.
 
@@ -8663,7 +8661,7 @@ The overview recovered exponent $\\frac{3}{2}$. Handling cost grows faster than 
 
 $$\\frac{3}{2}>1$$
 
- shows agreement.
+That matches the claim.
 
 Keep the recovered coefficient and exponent fixed; only the claimed input (or threshold) changes.
 
