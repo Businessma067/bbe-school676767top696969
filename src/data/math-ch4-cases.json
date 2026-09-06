@@ -6815,6 +6815,38 @@
       "sort_order": 213,
       "solution_overview": "Operating surplus is modeled by $P(q)=-(q-6)(q-12)$ thousand EUR for a nonnegative attendance index $q$.\n\n**Part 1: Translate.**\n\nBreak-even means $P(q)=0$, and a positive surplus means $P(q)>0$. Expanding gives the downward parabola\n\n$$P(q)=-q^{2}+18q-72$$\n\n**Part 2: Recover.**\n\nA product is zero when a factor is zero, so the roots are $q=6$ and $q=12$. The axis of symmetry is their midpoint\n\n$$q=\\dfrac{6+12}{2}=9$$\n\nThe maximum surplus is the vertex value\n\n$$P(9)=-(9-6)(9-12)=9$$\n\n**Answer.** Roots $6,12$ | axis $q=9$ | max surplus $9$ thousand EUR.",
       "placeholder": false
+    },
+    {
+      "id": "math-4-214",
+      "case_id": "MATH 4.214",
+      "title": "Exam-style tasks - 21",
+      "subsection": "4.5",
+      "context": "Evaluate each statement. Mark it TRUE or FALSE.",
+      "statements": [
+        "If one side of a rectangle is by $5$ cm longer than the other one and the rectangle's area is $84$ cm$^{2}$, then the length of the longer side is $7$ cm.",
+        "A car travels at an average speed of $80$ km/h. At $5$ pm, it has traveled a total distance of $100$ km. Then it started traveling at $3{:}45$ pm.",
+        "A recipe calls for $4\\%$ salt solution. If the cook only has $1.5$ litres of $10\\%$ salt solution, he needs to mix it with $2.25$ litres of water to get the right concentration.",
+        "The solution of the equation $\\log\\sqrt[3]{x} + \\log\\dfrac{1}{x^{3}} - \\log\\sqrt{x} + \\dfrac{11}{3} = \\dfrac{\\log x}{1 + \\log 10}$, where $\\log x$ denotes the decadic logarithm of $x$, is smaller than $5$.",
+        "A prize money of $10950$ EUR is supposed to be split among the winners in a way that the $2$nd placed obtains $70\\%$ of the amount the $1$st placed obtains, and the $3$rd placed obtains $70\\%$ of the $2$nd placed. Then the prize for the $2$nd place is $3500$ EUR."
+      ],
+      "answer_key": [
+        false,
+        true,
+        true,
+        false,
+        true
+      ],
+      "tactical_explanations": [
+        "**A.** → False\n\nArea is length times width. Let the shorter side be $x$ cm. Then the longer side is $x + 5$, and the area is $84$ cm$^{2}$:\n\n$$x(x + 5) = 84$$\n\n$$x^{2} + 5x - 84 = 0$$\n\nFactor the quadratic:\n\n$$(x + 12)(x - 7) = 0$$\n\nso $x = -12$ or $x = 7$. A side length must be positive, so $x = 7$. The longer side is then\n\n$$7 + 5 = 12$$\n\nCheck: $7 \\cdot 12 = 84$. The longer side is $12$ cm, not the claimed $7$ cm. Substituting a longer side of $7$ cm would force a shorter side of $2$ cm:\n\n$$2 \\cdot 7 = 14$$\n\nwhich is not $84$.\n\nSo the statement is False.",
+        "**B.** → True\n\nTime on the road is distance divided by average speed:\n\n$$t = \\frac{100}{80}$$\n\n$$t = \\frac{5}{4}$$\n\n$$t = 1.25$$\n\nhours. That is $1$ hour and $15$ minutes. Counting $1$ hour back from $5$ pm lands at $4$ pm; counting a further $15$ minutes back lands at $3{:}45$ pm. The recovered start time matches the claim.\n\nSo the statement is True.",
+        "**C.** → True\n\nOne and a half litres of $10\\%$ salt solution hold $0.15$ litres of pure salt. After adding $w$ litres of water the total volume is $1.5 + w$ litres, and the concentration should be $4\\%$:\n\n$$\\frac{0.15}{1.5 + w} = 0.04$$\n\n$$0.15 = 0.04(1.5 + w)$$\n\n$$0.15 = 0.06 + 0.04w$$\n\n$$0.09 = 0.04w$$\n\n$$w = \\frac{0.09}{0.04}$$\n\n$$w = 2.25$$\n\nThat $2.25$ is the litres of water to add. Substituting it recovers the $4\\%$ concentration:\n\n$$1.5 + 2.25 = 3.75$$\n\n$$\\frac{0.15}{3.75} = 0.04$$\n\nwhich matches the recipe.\n\nSo the statement is True.",
+        "**D.** → False\n\nThroughout, $\\log$ denotes the decadic logarithm, and the domain requires $x > 0$. Write $L = \\log x$ and apply the power rule to every logarithmic term:\n\n$$\\log\\sqrt[3]{x} = \\frac{1}{3}L$$\n\n$$\\log\\frac{1}{x^{3}} = \\log\\bigl(x^{-3}\\bigr) = -3L$$\n\n$$\\log\\sqrt{x} = \\frac{1}{2}L$$\n\n$$\\log 10 = 1$$\n\nThe equation becomes\n\n$$\\frac{1}{3}L - 3L - \\frac{1}{2}L + \\frac{11}{3} = \\frac{L}{1 + 1}$$\n\nCombine the coefficients of $L$ on the left-hand side:\n\n$$\\frac{1}{3} - 3 - \\frac{1}{2} = \\frac{2}{6} - \\frac{18}{6} - \\frac{3}{6} = -\\frac{19}{6}$$\n\nso\n\n$$-\\frac{19}{6}L + \\frac{11}{3} = \\frac{L}{2}$$\n\nAdd $\\dfrac{19}{6}L$ to both sides:\n\n$$\\frac{11}{3} = \\frac{L}{2} + \\frac{19}{6}L$$\n\n$$\\frac{11}{3} = \\frac{3L}{6} + \\frac{19L}{6}$$\n\n$$\\frac{11}{3} = \\frac{22L}{6}$$\n\n$$\\frac{11}{3} = \\frac{11L}{3}$$\n\n$$L = 1$$\n\n$$x = 10^{1} = 10$$\n\nThe unique positive solution is $x = 10$, which is not smaller than $5$.\n\nSo the statement is False.",
+        "**E.** → True\n\nLet the first-place prize be $a$ EUR. Then second place is $70\\%$ of first place, and third place is $70\\%$ of second place:\n\n$$0.7a$$\n\n$$0.7 \\cdot 0.7a = 0.49a$$\n\nThe three prizes sum to $10950$ EUR:\n\n$$a + 0.7a + 0.49a = 10950$$\n\n$$2.19a = 10950$$\n\n$$a = \\frac{10950}{2.19}$$\n\n$$a = 5000$$\n\nFirst place is $5000$ EUR, so second place is\n\n$$0.7 \\cdot 5000 = 3500$$\n\nThat $3500$ is the second-place prize in EUR, matching the claim.\n\nSo the statement is True."
+      ],
+      "difficulty_level": "5/5",
+      "sort_order": 214,
+      "solution_overview": "Five independent closed claims spanning the chapter. Translate each story into one equation (a rectangle-area quadratic, a $t = d/v$ start time, a dilution, a composite decadic logarithm, and a percentage prize split), then isolate the unknown and compare with the claim.\n\nFor the quadratic, keep only a positive side length. For the logarithm, set $L = \\log x$, reduce with the power rule, and recover $x = 10^{L}$.\n\nEach letter is a separate mini-problem; do not reuse a root from another letter.",
+      "placeholder": false
     }
   ]
 }
