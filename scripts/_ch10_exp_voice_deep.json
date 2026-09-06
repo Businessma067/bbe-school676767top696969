@@ -1,0 +1,1566 @@
+{
+  "1": {
+    "overview": "The marked heights fix a single continuous force.\n\n$$P(t)=1024\\,e^{kt}$$\n\nFrom $P(8)/P(0)=2$ one recovers $k=(\\ln 2)/8$. Every later height, ratio, and midpoint claim reuses that same $k$.",
+    "bodies": [
+      [
+        "The eight-unit growth factor is read from the two marked heights.",
+        "$$\\frac{P(8)}{P(0)}=\\frac{2048}{1024}=2$$",
+        "A continuous exponential converts that factor into a force equation.",
+        "$$e^{8k}=2$$",
+        "$$k=\\frac{\\ln 2}{8}$$",
+        "Two doubling intervals multiply the start by four.",
+        "$$P(16)=1024\\cdot e^{16k}=1024\\cdot 4=4096$$",
+        "The recovered force therefore yields the claimed height $4096$."
+      ],
+      [
+        "Doubling solves for the unique positive time $T$ with growth factor $2$.",
+        "$$e^{kT}=2$$",
+        "$$T=\\frac{\\ln 2}{k}=8$$",
+        "Three doubling intervals then multiply the start by eight.",
+        "$$P(24)=1024\\cdot e^{24k}=1024\\cdot 2^{3}=8192$$",
+        "$$\\frac{P(24)}{P(0)}=8$$",
+        "Both halves of the claim therefore hold."
+      ],
+      [
+        "The average relative change over $[0,8]$ is the linear rise per unit time.",
+        "$$\\frac{P(8)-P(0)}{8P(0)}=\\frac{2048-1024}{8\\cdot 1024}=\\frac{1}{8}$$",
+        "The continuous force recovered above is the log-rate, not that linear rise.",
+        "$$k=\\frac{\\ln 2}{8}$$",
+        "$$\\frac{\\ln 2}{8}\\\neq\\frac{1}{8}$$",
+        "The two numbers disagree, so the claimed equality fails."
+      ],
+      [
+        "Halving the start asks for growth factor $1/2$.",
+        "$$e^{kt}=\\frac{1}{2}$$",
+        "$$t=-\\frac{\\ln 2}{k}=-8$$",
+        "A negative abscissa lies outside the plotted window $t\\ge 0$, matching the claim."
+      ],
+      [
+        "At the time midpoint the continuous path takes the geometric mean of the endpoint heights.",
+        "$$P(4)=1024\\cdot e^{4k}=1024\\sqrt{2}$$",
+        "The arithmetic mean of the same endpoints is larger.",
+        "$$\\frac{P(0)+P(8)}{2}=\\frac{1024+2048}{2}=1536$$",
+        "$$1024\\sqrt{2}\\\neq 1536$$",
+        "The claimed identity therefore fails."
+      ]
+    ]
+  },
+  "2": {
+    "overview": "The table is pure doubling on consecutive integers.\n\n$$P(t)=250\\cdot 2^{t}=250\\,e^{(\\ln 2)t}$$\n\nEvery ratio recovery of the force returns $k=\\ln 2$. Letters reuse that closed form.",
+    "bodies": [
+      [
+        "Read the three consecutive ratios from the table.",
+        "$$\\frac{500}{250}=\\frac{1000}{500}=\\frac{2000}{1000}=2$$",
+        "A continuous exponential turns a unit ratio of $2$ into a force.",
+        "$$e^{k}=2$$",
+        "$$k=\\ln 2$$",
+        "Every consecutive ratio equals $2$, so the force is exactly $\\ln 2$."
+      ],
+      [
+        "A two-step jump multiplies by four.",
+        "$$\\frac{P(2)}{P(0)}=\\frac{1000}{250}=4$$",
+        "Half the logarithm recovers the same unit force.",
+        "$$\\frac{1}{2}\\ln 4=\\ln 2$$",
+        "The two-step recovery therefore matches $k=\\ln 2$."
+      ],
+      [
+        "The continuous one-year factor is $e^{k}=2$.",
+        "The discrete rival instead multiplies by $1+\\ln 2$ each year.",
+        "$$1+\\ln 2\\\neq 2$$",
+        "Already at $t=1$ the discrete model misses the table.",
+        "$$250(1+\\ln 2)\\\neq 500$$",
+        "The claimed match therefore fails."
+      ],
+      [
+        "From the closed form, set the level equal to $4000$.",
+        "$$250\\cdot 2^{t}=4000$$",
+        "$$2^{t}=16$$",
+        "$$t=4$$",
+        "The solving time is the integer $4$."
+      ],
+      [
+        "Constant force means equal log-increments on equal time gaps.",
+        "$$\\ln P(3)-\\ln P(1)=\\ln\\frac{2000}{500}=\\ln 4$$",
+        "$$\\ln 4=2\\ln 2$$",
+        "The identity holds and confirms constant force on that window."
+      ]
+    ]
+  },
+  "3": {
+    "overview": "The two closed forms are given with explicit forces.\n\n$$A(t)=400\\,e^{k_A t}\\qquad B(t)=100\\,e^{k_B t}$$\n\n$$k_A=\\frac{\\ln 2}{6}\\qquad k_B=\\frac{\\ln 2}{3}$$\n\nCrossing, ratios, and the product all reuse the force gap $k_B-k_A=(\\ln 2)/6$.",
+    "bodies": [
+      [
+        "Set the two paths equal and cancel the common exponential shape.",
+        "$$400 e^{k_A t}=100 e^{k_B t}$$",
+        "$$4=e^{(k_B-k_A)t}$$",
+        "Substitute the force gap $k_B-k_A=(\\ln 2)/6$.",
+        "$$4=e^{(\\ln 2/6)t}$$",
+        "$$t=\\frac{6\\ln 4}{\\ln 2}=12$$",
+        "At that time both heights equal $1600$.",
+        "$$A(12)=400\\cdot 2^{2}=1600=B(12)$$"
+      ],
+      [
+        "Substitute $t=6$ into each closed form.",
+        "$$A(6)=400\\cdot e^{\\ln 2}=800$$",
+        "$$B(6)=100\\cdot e^{2\\ln 2}=400$$",
+        "$$\\frac{A(6)}{B(6)}=2$$",
+        "The ratio at $t=6$ is exactly $2$."
+      ],
+      [
+        "The doubling time of $A$ is $T_A=\\ln 2/k_A=6$, so half of that is $3$.",
+        "The crossing time solved above is $12$, not $3$.",
+        "$$t_{\\mathrm{cross}}=\\frac{\\ln(A_0/B_0)}{k_B-k_A}=12$$",
+        "$$12\\\neq 3$$",
+        "Having $k_B=2k_A$ does not make the crossing equal half of $T_A$."
+      ],
+      [
+        "After the crossing, compare the two paths through their ratio.",
+        "$$\\frac{B(t)}{A(t)}=\\frac{1}{4}e^{(k_B-k_A)t}$$",
+        "For $t>12$ the exponential factor exceeds $4$, so $B(t)>A(t)$.",
+        "The faster force $k_B$ therefore leads after the meeting."
+      ],
+      [
+        "Multiply the two closed forms.",
+        "$$A(t)B(t)=40000\\,e^{(k_A+k_B)t}$$",
+        "Add the forces.",
+        "$$k_A+k_B=\\frac{\\ln 2}{6}+\\frac{\\ln 2}{3}=\\frac{\\ln 2}{2}$$",
+        "The product is continuous-exponential with that summed force."
+      ]
+    ]
+  },
+  "4": {
+    "overview": "The substitution $u=e^{x}>0$ turns the nested equation into a quadratic.\n\n$$u^{2}-5u+6=(u-2)(u-3)=0$$\n\nReal roots are $x=\\ln 2$ and $x=\\ln 3$. Later letters reuse those two solutions.",
+    "bodies": [
+      [
+        "Set $u=e^{x}>0$ and factor the quadratic.",
+        "$$u^{2}-5u+6=(u-2)(u-3)=0$$",
+        "$$u=2\\quad\\text{or}\\quad u=3$$",
+        "Return to $x$ through the logarithm.",
+        "$$x=\\ln 2\\quad\\text{or}\\quad x=\\ln 3$$",
+        "Both roots are real, matching the claim."
+      ],
+      [
+        "Both candidate values of $u$ exceed $1$.",
+        "$$2>1\\qquad 3>1$$",
+        "Because $\\ln$ is increasing, both solution abscissae are positive.",
+        "$$\\ln 2>0\\qquad \\ln 3>0$$"
+      ],
+      [
+        "Add the two real solutions.",
+        "$$\\ln 2+\\ln 3=\\ln(2\\cdot 3)=\\ln 6$$",
+        "The sum equals $\\ln 6$ as claimed."
+      ],
+      [
+        "The rival factorisation $(e^{x}-2)(e^{x}-4)=0$ has a different second root.",
+        "$$x=\\ln 2\\quad\\text{or}\\quad x=\\ln 4$$",
+        "Compare the two solution sets.",
+        "$$\\{\\ln 2,\\ln 4\\}\\\neq\\{\\ln 2,\\ln 3\\}$$",
+        "Replacing the factorisation changes the solution set."
+      ],
+      [
+        "Substitute $x=\\ln 2$ into both sides of the rearranged equation.",
+        "$$e^{2\\ln 2}+6=4+6=10$$",
+        "$$5e^{\\ln 2}=5\\cdot 2=10$$",
+        "Both sides match, so the numerical identity holds."
+      ]
+    ]
+  },
+  "5": {
+    "overview": "The first piece runs up to the switch, then the second piece continues from the matched height.\n\n$$P(t)=80\\,e^{(\\ln 2)t}\\quad(0\\le t\\le 3)$$\n\n$$P(3)=640$$\n\nAfter $t=3$ the force is $-(\\ln 2)/2$. Later heights and the average force reuse $P(3)=640$.",
+    "bodies": [
+      [
+        "Substitute the switch time into the first piece.",
+        "$$P(3)=80\\cdot e^{3\\ln 2}$$",
+        "$$e^{3\\ln 2}=8$$",
+        "$$P(3)=80\\cdot 8=640$$",
+        "Continuity at the switch therefore forces $P(3)=640$."
+      ],
+      [
+        "From the second piece, advance two units from the switch.",
+        "$$P(5)=640\\cdot e^{-(\\ln 2/2)\\cdot 2}=640\\cdot e^{-\\ln 2}=320$$",
+        "Advance four units from the switch.",
+        "$$P(7)=640\\cdot e^{-(\\ln 2/2)\\cdot 4}=640\\cdot e^{-2\\ln 2}=160$$",
+        "Both claimed heights hold."
+      ],
+      [
+        "Two units of time at force $-(\\ln 2)/2$ multiply by $e^{-\\ln 2}$.",
+        "$$e^{-\\ln 2}=\\tfrac12$$",
+        "$$P(5)=\\tfrac12 P(3)$$",
+        "So $t=5$ is a half-life measured from the switch."
+      ],
+      [
+        "Blindly extending the first force past the switch would ignore the kink.",
+        "$$80\\cdot 2^{5}=2560$$",
+        "The piecewise value at $t=5$ is $320$.",
+        "$$2560\\\neq 320$$",
+        "The two values do not match."
+      ],
+      [
+        "Match the endpoint $P(7)=160$ to a single exponential from the start.",
+        "$$160=80\\,e^{7k_{\\mathrm{avg}}}$$",
+        "$$e^{7k_{\\mathrm{avg}}}=2$$",
+        "$$k_{\\mathrm{avg}}=\\frac{\\ln 2}{7}$$",
+        "The average force on $[0,7]$ is exactly $(\\ln 2)/7$."
+      ]
+    ]
+  },
+  "6": {
+    "overview": "Per-capita output is the ratio of the two continuous aggregates.\n\n$$y(t)=\\frac{Y(t)}{N(t)}=y_0 e^{(g-p)t}$$\n\n$$g-p=0.04$$\n\nDoubling times and growth factors all reuse that difference force.",
+    "bodies": [
+      [
+        "Divide the two closed forms.",
+        "$$y(t)=\\frac{Y_0 e^{gt}}{N_0 e^{pt}}=y_0 e^{(g-p)t}$$",
+        "Substitute the given forces.",
+        "$$g-p=0.06-0.02=0.04$$",
+        "$$y(t)=y_0 e^{0.04 t}$$",
+        "The per-capita force is $0.04$."
+      ],
+      [
+        "Doubling solves for the unique positive time with factor $2$.",
+        "$$e^{0.04 T}=2$$",
+        "$$T=\\frac{\\ln 2}{0.04}$$",
+        "That is the per-capita doubling time."
+      ],
+      [
+        "At the same $T$, aggregate output grows by the factor $e^{gT}$.",
+        "$$e^{0.06\\cdot(\\ln 2)/0.04}=e^{(3/2)\\ln 2}$$",
+        "$$e^{(3/2)\\ln 2}=2^{3/2}=2\\sqrt{2}$$",
+        "$$2\\sqrt{2}\\\neq 4$$",
+        "The claimed factor $4$ is too large."
+      ],
+      [
+        "Flipping the sign of $p$ in the quotient replaces the difference by a sum.",
+        "$$g-(-p)=g+p$$",
+        "$$g+p=0.06+0.02=0.08$$",
+        "The misread force would indeed be $0.08$."
+      ],
+      [
+        "Compare per-capita levels two $t$-steps apart.",
+        "$$\\frac{y(2t)}{y(t)}=e^{0.04(2t)-0.04 t}$$",
+        "$$e^{0.04 t}$$",
+        "The identity holds for every $t>0$."
+      ]
+    ]
+  },
+  "7": {
+    "overview": "One logarithm turns the continuous path into an affine semi-log graph.\n\n$$\\ln P(t)=\\ln 200+kt$$\n\nThe marked heights recover $k=(\\ln 2)/5$. Level claims still use the exponential, not the log-line alone.",
+    "bodies": [
+      [
+        "Take logarithms of the closed form.",
+        "$$\\ln P(t)=\\ln 200+kt$$",
+        "Recover the slope from the marked heights.",
+        "$$k=\\frac{1}{5}\\ln\\frac{400}{200}=\\frac{\\ln 2}{5}$$",
+        "On semi-log axes the graph of $\\ln P$ is affine with that slope."
+      ],
+      [
+        "The rise over ten units is ten times the force.",
+        "$$\\ln P(10)-\\ln P(0)=10k$$",
+        "$$10\\cdot\\frac{\\ln 2}{5}=2\\ln 2$$",
+        "The claimed rise equals $2\\ln 2$."
+      ],
+      [
+        "Affinity of $\\ln P$ means $P$ itself is exponential.",
+        "$$P(t)=200 e^{kt}$$",
+        "An affine level path would require constant first differences, which this closed form does not have.",
+        "The claim that $P$ must be affine in $t$ is false."
+      ],
+      [
+        "The equation $\\ln P=\\ln 200+\\ln 8$ means the level is $200\\cdot 8$.",
+        "$$e^{kt}=8=2^{3}$$",
+        "$$kt=3\\ln 2$$",
+        "$$t=\\frac{3\\ln 2}{k}=15$$",
+        "The solving time is $15$."
+      ],
+      [
+        "Form the difference quotient of $\\ln P$ on $[5,15]$.",
+        "$$\\frac{\\ln P(15)-\\ln P(5)}{10}=\\frac{15k-5k}{10}$$",
+        "$$\\frac{10k}{10}=k$$",
+        "The same slope $k$ is recovered."
+      ]
+    ]
+  },
+  "8": {
+    "overview": "Two exact observations rebuild the continuous exponential.\n\n$$\\frac{P(6)}{P(2)}=8=e^{4k}$$\n\n$$k=\\frac{3\\ln 2}{4}\\qquad P_0=45\\sqrt{2}$$\n\nDoubling time, interpolation, and discrete rivals all reuse that pair $(P_0,k)$.",
+    "bodies": [
+      [
+        "Form the four-unit ratio of the two observations.",
+        "$$\\frac{P(6)}{P(2)}=\\frac{1440}{180}=8$$",
+        "Convert the factor into a force.",
+        "$$e^{4k}=8$$",
+        "$$4k=\\ln 8=3\\ln 2$$",
+        "$$k=\\frac{3\\ln 2}{4}$$"
+      ],
+      [
+        "Back-solve from the observation at $t=2$.",
+        "$$P_0=P(2)e^{-2k}=180\\cdot e^{-(3\\ln 2)/2}$$",
+        "$$e^{-(3\\ln 2)/2}=2^{-3/2}$$",
+        "$$P_0=180\\cdot 2^{-3/2}=45\\sqrt{2}$$"
+      ],
+      [
+        "Doubling solves $e^{kT}=2$.",
+        "$$T=\\frac{\\ln 2}{k}=\\frac{\\ln 2}{(3\\ln 2)/4}=\\frac{4}{3}$$",
+        "$$\\frac{4}{3}\\\neq 2$$",
+        "The doubling time is $4/3$, not $2$."
+      ],
+      [
+        "Geometric interpolation advances two units from $t=2$.",
+        "$$P(4)=P(2)e^{2k}=180\\cdot e^{(3\\ln 2)/2}$$",
+        "$$e^{(3\\ln 2)/2}=2^{3/2}=2\\sqrt{2}$$",
+        "$$P(4)=180\\cdot 2\\sqrt{2}$$"
+      ],
+      [
+        "Discrete compounding with factor $1+k$ cannot match the continuous factor $e^{k}$.",
+        "$$1+k\\\neq e^{k}\\qquad(k>0)$$",
+        "Even with the same $P_0$, the discrete law misses at least one of the two observations.",
+        "The claimed match therefore fails."
+      ]
+    ]
+  },
+  "9": {
+    "overview": "Newton cooling is an exponential gap toward ambient $20$.\n\n$$T(t)-20=60\\,e^{-kt}\\qquad k=\\frac{\\ln 2}{10}$$\n\nThe gap halves every $10$ units. Hitting times and relative rates reuse that gap model.",
+    "bodies": [
+      [
+        "At $t=10$ the gap has halved once.",
+        "$$T(10)-20=60\\cdot e^{-\\ln 2}=30$$",
+        "$$T(10)=50$$",
+        "The temperature is $50$."
+      ],
+      [
+        "At $t=20$ the gap has halved twice.",
+        "$$T(20)-20=60\\cdot e^{-2\\ln 2}=15$$",
+        "$$T(20)=35$$",
+        "The temperature is $35$."
+      ],
+      [
+        "Hitting $T=30$ sets the gap equal to $10$.",
+        "$$60 e^{-kt}=10$$",
+        "$$e^{-kt}=\\frac{1}{6}$$",
+        "$$t=\\frac{\\ln 6}{k}=\\frac{10\\ln 6}{\\ln 2}$$",
+        "$$\\frac{10\\ln 6}{\\ln 2}\\\neq 20$$",
+        "The solving time is not $20$."
+      ],
+      [
+        "Differentiate the gap $G(t)=T(t)-20=60 e^{-kt}$.",
+        "$$G'(t)=-k\\cdot 60 e^{-kt}=-k G(t)$$",
+        "The relative rate $G'/G$ is therefore the constant $-k$."
+      ],
+      [
+        "Rewrite the exponential factor in base $2$.",
+        "$$e^{-kt}=e^{-(\\ln 2)t/10}=2^{-t/10}$$",
+        "$$T(t)=20+60\\cdot 2^{-t/10}$$",
+        "The rewrite is equivalent to the given model."
+      ]
+    ]
+  },
+  "10": {
+    "overview": "Path agreement needs matching one-year factors.\n\n$$P(t)=1000\\,e^{kt}\\qquad Q(t)=1000\\cdot(1.05)^{t}$$\n\nWith $k=\\ln 1.05$ the paths coincide. The trap $k=0.05$ overshoots because $e^{0.05}>1.05$.",
+    "bodies": [
+      [
+        "Substitute $k=\\ln 1.05$ into the continuous path.",
+        "$$P(t)=1000 e^{(\\ln 1.05)t}$$",
+        "$$e^{(\\ln 1.05)t}=(1.05)^{t}$$",
+        "$$P(t)=1000\\cdot(1.05)^{t}=Q(t)$$",
+        "The two paths agree for every $t\\ge 0$."
+      ],
+      [
+        "The elementary inequality $e^{0.05}>1.05$ lifts to every positive power.",
+        "$$e^{0.05 t}>(1.05)^{t}\\qquad(t>0)$$",
+        "Multiplying by the common start $1000$ preserves the inequality.",
+        "$$P(t)>Q(t)\\qquad(t>0)$$"
+      ],
+      [
+        "Continuous doubling solves $e^{kT}=2$.",
+        "$$T=\\frac{\\ln 2}{k}=\\frac{\\ln 2}{\\ln 1.05}$$",
+        "That is the continuous doubling time."
+      ],
+      [
+        "Discrete doubling solves $(1.05)^{T}=2$.",
+        "$$T=\\frac{\\ln 2}{\\ln 1.05}$$",
+        "The claimed formula uses $0.05$ in the denominator instead.",
+        "$$\\frac{\\ln 2}{\\ln 1.05}\\\neq\\frac{\\ln 2}{0.05}$$",
+        "The denominator must be $\\ln 1.05$, not the raw $0.05$."
+      ],
+      [
+        "The one-year continuous multiplier is $e^{k}$.",
+        "$$e^{k}=1.05\\iff k=\\ln 1.05$$",
+        "The equivalence is exactly the claim."
+      ]
+    ]
+  },
+  "11": {
+    "overview": "Throughout, $P(t)=P_0 e^{kt}$ with $P_0>0$.\n\n$$P(t)=P_0 e^{kt}$$\n\nQuantified claims are settled by solving, differentiating in $k$, or comparing derivatives against an affine rival.",
+    "bodies": [
+      [
+        "Doubling requires the exponential factor to equal $2$.",
+        "$$e^{kT}=2$$",
+        "$$T=\\frac{\\ln 2}{k}$$",
+        "For every $k>0$ this $T$ is positive, so such a doubling time exists."
+      ],
+      [
+        "Suppose some $k$ made the exponential track the affine path for every $t\\ge 0$.",
+        "$$P_0 e^{kt}=P_0(1+t)\\quad\\forall t\\ge 0$$",
+        "At $t=0$ both sides equal $P_0$. The second derivative of the left side at $0$ is $P_0 k^{2}$, while the right side has second derivative $0$.",
+        "$$k^{2} P_0=0\\implies k=0$$",
+        "With $k=0$ the right side collapses to $1+t$, which is not constant. No such $k$ exists."
+      ],
+      [
+        "Fix $t>0$ and differentiate in the force parameter.",
+        "$$\\partial_k P(t)=P_0 t e^{kt}$$",
+        "$$P_0 t e^{kt}>0$$",
+        "The map $k\\mapsto P(t)$ is therefore strictly increasing on $\\mathbb{R}$."
+      ],
+      [
+        "Impose $P(t)=P(2t)$ for every $t>0$.",
+        "$$e^{kt}=e^{2kt}\\quad\\forall t>0$$",
+        "$$e^{kt}=1\\quad\\forall t>0$$",
+        "The only real force compatible with that identity is $k=0$."
+      ],
+      [
+        "Solve $P(t)=P_0$ under $k\\\neq 0$.",
+        "$$e^{kt}=1$$",
+        "$$kt=0$$",
+        "$$t=0$$",
+        "The unique real solution is $t=0$."
+      ]
+    ]
+  },
+  "12": {
+    "overview": "Constant consecutive ratios diagnose a pure geometric table.\n\n$$P(t)=81\\cdot\\bigl(\\tfrac{4}{3}\\bigr)^{t}$$\n\nThe continuous force is $k=\\ln(4/3)$. Geometric first differences are expected for an exponential level.",
+    "bodies": [
+      [
+        "Read the three consecutive ratios from the table.",
+        "$$\\frac{108}{81}=\\frac{144}{108}=\\frac{192}{144}=\\frac{4}{3}$$",
+        "A constant ratio yields the geometric closed form.",
+        "$$P(t)=81\\cdot\\bigl(\\tfrac{4}{3}\\bigr)^{t}$$",
+        "Every column fits that formula."
+      ],
+      [
+        "Match the geometric factor to a continuous exponential.",
+        "$$e^{k}=\\tfrac{4}{3}$$",
+        "$$k=\\ln\\tfrac{4}{3}$$",
+        "That is the continuous force."
+      ],
+      [
+        "Form the three-step ratio from the table.",
+        "$$\\frac{P(3)}{P(0)}=\\frac{192}{81}=\\frac{64}{27}$$",
+        "The same ratio is the cube of the unit factor.",
+        "$$\\bigl(\\tfrac{4}{3}\\bigr)^{3}=\\frac{64}{27}$$"
+      ],
+      [
+        "First differences of a geometric sequence are themselves geometric with the same ratio.",
+        "$$27,\\\\,36,\\\\,48$$",
+        "$$\\frac{36}{27}=\\frac{48}{36}=\\frac{4}{3}$$",
+        "That pattern is consistent with an exponential level, not a contradiction. The claim is false."
+      ],
+      [
+        "Set the closed form equal to $256$.",
+        "$$81\\cdot\\bigl(\\tfrac{4}{3}\\bigr)^{t}=256$$",
+        "$$\\bigl(\\tfrac{4}{3}\\bigr)^{t}=\\frac{256}{81}$$",
+        "$$t=\\frac{\\ln(256/81)}{\\ln(4/3)}$$"
+      ]
+    ]
+  },
+  "13": {
+    "overview": "Half-life $14$ fixes the decay force and the binary rewrite.\n\n$$m(t)=m_0\\cdot 2^{-t/14}\\qquad \\lambda=\\frac{\\ln 2}{14}$$\n\nPowers of $1/2$ settle fraction claims; the mass stays positive for all finite $t$.",
+    "bodies": [
+      [
+        "Two half-lives multiply by $2^{-2}$.",
+        "$$m(28)=m_0 e^{-\\lambda\\cdot 28}=m_0 e^{-2\\ln 2}$$",
+        "$$m(28)=\\tfrac14 m_0$$"
+      ],
+      [
+        "Reaching one-eighth asks for three halvings.",
+        "$$e^{-\\lambda t}=\\tfrac18=2^{-3}$$",
+        "$$\\lambda t=3\\ln 2$$",
+        "$$t=3\\cdot 14=42$$"
+      ],
+      [
+        "Evaluate the mass at $t=7$.",
+        "$$m(7)=m_0 e^{-(\\ln 2)/2}=m_0/\\sqrt{2}$$",
+        "Recover the force from that window.",
+        "$$\\frac{\\ln(m_0/m(7))}{7}=\\frac{\\tfrac12\\ln 2}{7}=\\frac{\\ln 2}{14}$$",
+        "The common value equals $\\lambda$."
+      ],
+      [
+        "An exponential with negative force stays positive for every finite $t$.",
+        "$$m(t)=m_0 e^{-\\lambda t}>0$$",
+        "The mass never becomes negative."
+      ],
+      [
+        "Rewrite the exponential factor in base $2$.",
+        "$$e^{-\\lambda t}=e^{-(\\ln 2)t/14}=2^{-t/14}$$",
+        "$$m(t)=m_0\\cdot 2^{-t/14}$$",
+        "The rewrite is equivalent to the given model."
+      ]
+    ]
+  },
+  "14": {
+    "overview": "Every member of the family shares the start $800$.\n\n$$P_\\alpha(t)=800\\\\,e^{\\alpha t}$$\n\nForce order lifts to path order for $t>0$. Ratios cancel the shared start; opposite forces multiply back to $800^{2}$.",
+    "bodies": [
+      [
+        "Form the ratio of two members.",
+        "$$\\frac{P_\\alpha(t)}{P_\\beta(t)}=e^{(\\alpha-\\beta)t}$$",
+        "When $\\alpha>\\beta$ and $t>0$ the exponent is positive, so the ratio exceeds $1$.",
+        "$$P_\\alpha(t)>P_\\beta(t)$$"
+      ],
+      [
+        "The same ratio calculation cancels the shared start $800$.",
+        "$$\\frac{P_\\alpha(t)}{P_\\beta(t)}=e^{(\\alpha-\\beta)t}$$",
+        "The ratio depends only on the force gap and on $t$."
+      ],
+      [
+        "Doubling solves $e^{\\alpha T}=2$ for $\\alpha>0$.",
+        "$$T=\\frac{\\ln 2}{\\alpha}$$",
+        "Larger positive force shortens the doubling clock."
+      ],
+      [
+        "Impose $P_\\alpha(3)=1600$.",
+        "$$800 e^{3\\alpha}=1600$$",
+        "$$e^{3\\alpha}=2$$",
+        "$$\\alpha=\\frac{\\ln 2}{3}$$",
+        "That force is unique."
+      ],
+      [
+        "Multiply opposite-force members.",
+        "$$P_{-\\beta}(t)P_{\\beta}(t)=800^{2} e^{-\\beta t}e^{\\beta t}$$",
+        "$$800^{2}$$",
+        "The product is the constant $800^{2}$ for every $t$."
+      ]
+    ]
+  },
+  "15": {
+    "overview": "Logarithms linearise the continuous path.\n\n$$\\ln P(t)=\\ln P_0+kt$$\n\nThreshold equations are affine in $t$. Force recovery is a difference quotient of $\\ln P$.",
+    "bodies": [
+      [
+        "Expand the logarithm of the closed form.",
+        "$$\\ln P(t)=\\ln(P_0 e^{kt})$$",
+        "$$\\ln P_0+\\ln(e^{kt})$$",
+        "$$\\ln P_0+kt$$",
+        "The identity holds for every $t$."
+      ],
+      [
+        "Impose $\\ln P(t)=\\ln(4P_0)$.",
+        "$$\\ln P_0+kt=\\ln P_0+\\ln 4$$",
+        "$$kt=\\ln 4$$",
+        "$$t=\\frac{\\ln 4}{k}$$",
+        "The solving time is unique."
+      ],
+      [
+        "Impose $\\ln P(t)=0$.",
+        "$$\\ln P_0+kt=0$$",
+        "$$t=-\\frac{\\ln P_0}{k}$$",
+        "That is the unique real solution."
+      ],
+      [
+        "With $P_0=1$ one has $\\ln P(t)=kt$.",
+        "Whenever $t<0$ and $k>0$, the product $kt$ is negative.",
+        "$$kt<0\\quad(t<0)$$",
+        "So $\\ln P(t)$ is not positive for every $t\\\neq 0$."
+      ],
+      [
+        "Subtract the initial log.",
+        "$$\\ln P(t)-\\ln P(0)=kt$$",
+        "Divide by any nonzero $t$.",
+        "$$k=\\frac{1}{t}\\bigl(\\ln P(t)-\\ln P(0)\\bigr)\\quad(t\\\\\neq 0)$$",
+        "The difference quotient recovers the force."
+      ]
+    ]
+  },
+  "16": {
+    "overview": "Two-unit doubling on the table fixes the continuous force.\n\n$$P(t)=125\\,e^{kt}\\qquad k=\\frac{\\ln 2}{2}$$\n\nEquivalently $P(t)=125\\cdot 2^{t/2}$. Letters reuse that closed form; writing $2^{t}$ overshoots the table.",
+    "bodies": [
+      [
+        "Each two-unit step doubles.",
+        "$$\\frac{P(2)}{P(0)}=2=e^{2k}$$",
+        "$$k=\\frac{\\ln 2}{2}$$",
+        "The continuous force is $(\\ln 2)/2$."
+      ],
+      [
+        "The one-unit multiplier is the square root of the two-unit factor.",
+        "$$e^{k}=\\sqrt{2}$$",
+        "$$P(1)=125 e^{k}=125\\sqrt{2}$$"
+      ],
+      [
+        "Match the endpoint $P(6)=1000$ to a single exponential from the start.",
+        "$$1000=125 e^{6k_{\\mathrm{avg}}}$$",
+        "$$e^{6k_{\\mathrm{avg}}}=8=2^{3}$$",
+        "$$k_{\\mathrm{avg}}=\\frac{\\ln 2}{2}$$",
+        "A pure exponential has constant force, so the window average equals $k$."
+      ],
+      [
+        "Set the closed form equal to $2000$.",
+        "$$125\\cdot 2^{t/2}=2000$$",
+        "$$2^{t/2}=16$$",
+        "$$t/2=4$$",
+        "$$t=8$$"
+      ],
+      [
+        "The discrete law $125\\cdot 2^{t}$ would already fail at $t=2$.",
+        "$$125\\cdot 2^{2}=500$$",
+        "$$500\\\neq 250$$",
+        "The correct discrete rewrite is $125\\cdot 2^{t/2}$, not $125\\cdot 2^{t}$."
+      ]
+    ]
+  },
+  "17": {
+    "overview": "The first piece runs to the switch, then the raised force continues from the matched height.\n\n$$P(4)=400$$\n\nAfter $t=4$ the force is $\\ln 2$. Later heights and the average force reuse $P(4)=400$.",
+    "bodies": [
+      [
+        "Substitute the switch time into the first piece.",
+        "$$P(4)=100\\cdot e^{(\\ln 2/2)\\cdot 4}$$",
+        "$$e^{2\\ln 2}=4$$",
+        "$$P(4)=100\\cdot 4=400$$"
+      ],
+      [
+        "From the second piece, advance two units past the switch.",
+        "$$P(6)=400\\cdot e^{(\\ln 2)\\cdot 2}$$",
+        "$$e^{2\\ln 2}=4$$",
+        "$$P(6)=400\\cdot 4=1600$$"
+      ],
+      [
+        "After the switch the force is $\\ln 2$, so doubling takes time $1$.",
+        "$$e^{(\\ln 2)\\cdot 1}=2$$",
+        "The time from the switch to the next doubling of $P(4)$ is therefore $1$."
+      ],
+      [
+        "Extending the original force past $t=4$ ignores the policy raise.",
+        "$$100\\cdot e^{(\\ln 2/2)\\cdot 6}=100\\cdot 2^{3}=800$$",
+        "$$800\\\neq 1600$$",
+        "The piecewise value at $t=6$ is larger."
+      ],
+      [
+        "Match the endpoint $P(6)=1600$ to a single exponential from the start.",
+        "$$1600=100 e^{6k_{\\mathrm{avg}}}$$",
+        "$$e^{6k_{\\mathrm{avg}}}=16=2^{4}$$",
+        "$$k_{\\mathrm{avg}}=\\frac{4\\ln 2}{6}=\\frac{2\\ln 2}{3}$$"
+      ]
+    ]
+  },
+  "18": {
+    "overview": "Raw headcount is a positive constant times the millions path.\n\n$$P(t)=10^{6}M(t)=10^{6}\\cdot 2\\,e^{(\\ln 2/10)t}$$\n\nA constant scale leaves the continuous force unchanged. Doubling times and ratios reuse $k=(\\ln 2)/10$.",
+    "bodies": [
+      [
+        "Write the raw headcount explicitly.",
+        "$$P(t)=10^{6}\\cdot 2\\,e^{(\\ln 2/10)t}$$",
+        "A positive constant factor does not change the logarithmic force.",
+        "$$\\frac{P'}{P}=\\frac{M'}{M}=\\frac{\\ln 2}{10}$$",
+        "Both paths share the force $(\\ln 2)/10$."
+      ],
+      [
+        "Doubling the raw headcount solves the same exponential equation.",
+        "$$e^{(\\ln 2/10)T}=2$$",
+        "$$T=10$$"
+      ],
+      [
+        "At $t=10$ the millions path has doubled once.",
+        "$$M(10)=2\\cdot e^{\\ln 2}=4$$",
+        "$$P(10)=4\\cdot 10^{6}$$"
+      ],
+      [
+        "Constants scale the level, not the logarithmic force.",
+        "$$\\frac{P'}{P}=\\frac{M'}{M}=\\frac{\\ln 2}{10}$$",
+        "The force of $P$ is not $10^{6}$ times the force of $M$."
+      ],
+      [
+        "The ratio of two levels depends only on the shared force and the time gap.",
+        "$$\\frac{P(20)}{P(5)}=e^{(\\ln 2/10)(15)}$$",
+        "$$e^{(3/2)\\ln 2}=2^{3/2}=2\\sqrt{2}$$"
+      ]
+    ]
+  },
+  "19": {
+    "overview": "Change-of-base writes every exponential base as a continuous force.\n\n$$a^{t}=e^{t\\ln a}\\qquad k=\\ln a$$\n\nDoubling time is $\\log_a 2$. The gap $a-1$ is not the continuous force.",
+    "bodies": [
+      [
+        "Apply the change-of-base identity.",
+        "$$a^{t}=e^{t\\ln a}$$",
+        "$$k=\\ln a$$",
+        "The continuous force is $\\ln a$ for every real $t$."
+      ],
+      [
+        "With $a=8$, rewrite the logarithm.",
+        "$$\\ln 8=3\\ln 2$$",
+        "$$P(t)=e^{3t\\ln 2}$$",
+        "Evaluate at $t=2$.",
+        "$$P(2)=8^{2}=64$$"
+      ],
+      [
+        "Doubling solves $a^{T}=2$ for $a>1$.",
+        "$$T=\\frac{\\ln 2}{\\ln a}$$",
+        "$$\\frac{\\ln 2}{\\ln a}=\\log_{a} 2$$"
+      ],
+      [
+        "When $0<a<1$ the logarithm is negative.",
+        "$$\\ln a<0$$",
+        "A negative force sends the path to $0$ at infinity.",
+        "$$\\lim_{t\\to+\\infty}a^{t}=0$$"
+      ],
+      [
+        "The algebraic rewrite $(1+(a-1))^{t}$ does not identify the continuous force with $a-1$.",
+        "$$k=\\ln a$$",
+        "$$\\ln a\\\neq a-1\\quad(a\\\neq 1)$$"
+      ]
+    ]
+  },
+  "20": {
+    "overview": "Three classical footprints characterise continuous exponentials: the ODE $P'=kP$, constant consecutive ratios, and an affine logarithm.\n\n$$P'(t)=kP(t)\\iff P(t)=Ce^{kt}$$\n\nThe relation $P(2t)=2P(t)$ never holds for a continuous-exponential path. Constant elasticity produces powers, not exponentials.",
+    "bodies": [
+      [
+        "The ODE $P'=kP$ has solutions of the form $P(t)=Ce^{kt}$.",
+        "Matching the value at $t=1$ fixes the constant.",
+        "$$C=P(1)e^{-k}$$",
+        "$$P(t)=P(1)e^{k(t-1)}$$"
+      ],
+      [
+        "A constant consecutive ratio restricts to a geometric sequence on the positive integers.",
+        "$$\\frac{P(t+1)}{P(t)}=r$$",
+        "$$P(n)=P(1)r^{n-1}$$"
+      ],
+      [
+        "An affine logarithm means an exponential level.",
+        "$$\\ln P(t)=a+bt$$",
+        "$$P(t)=e^{a}e^{bt}$$",
+        "So $P$ is continuous-exponential on $(0,\\infty)$."
+      ],
+      [
+        "Impose $P(2t)=2P(t)$ on $P(t)=P_0 e^{kt}$.",
+        "$$P_0 e^{2kt}=2 P_0 e^{kt}$$",
+        "$$e^{kt}=2\\quad\\forall t>0$$",
+        "No real $k$ makes $e^{kt}$ equal the constant $2$ for every positive $t$."
+      ],
+      [
+        "Constant elasticity is a separable ODE for a power.",
+        "$$t\\frac{P'}{P}=\\alpha$$",
+        "$$P(t)=C t^{\\alpha}$$",
+        "A power in $t$ is exponential in $t$ only when $\\alpha=0$."
+      ]
+    ]
+  },
+  "21": {
+    "overview": "The marked heights fix a single continuous force.\n\n$$P(t)=500\\,e^{kt}\\qquad k=\\frac{\\ln 2}{12}$$\n\nThreshold times are multiples of the doubling clock. The linear relative rise $1/12$ is not $k$.",
+    "bodies": [
+      [
+        "The twelve-unit growth factor is $2$.",
+        "$$e^{12k}=2$$",
+        "$$k=\\frac{\\ln 2}{12}$$",
+        "Two doubling intervals multiply the start by four.",
+        "$$P(24)=500\\cdot 4=2000$$"
+      ],
+      [
+        "Reaching $4000$ asks for growth factor $8=2^{3}$.",
+        "$$500\\cdot 2^{t/12}=4000$$",
+        "$$2^{t/12}=8$$",
+        "$$t=36$$"
+      ],
+      [
+        "The average relative change over $[0,12]$ is the linear rise per unit time.",
+        "$$\\frac{P(12)-P(0)}{12P(0)}=\\frac{1}{12}$$",
+        "The continuous force is the log-rate.",
+        "$$k=\\frac{\\ln 2}{12}$$",
+        "$$\\frac{\\ln 2}{12}\\\neq\\frac{1}{12}$$"
+      ],
+      [
+        "Halving asks for growth factor $1/2$.",
+        "$$e^{kt}=\\tfrac12$$",
+        "$$t=-\\frac{\\ln 2}{k}=-12$$",
+        "A negative abscissa lies outside the plotted window $t\\ge 0$."
+      ],
+      [
+        "At the time midpoint the continuous path takes the geometric mean of the endpoints.",
+        "$$P(6)=500\\sqrt{2}$$",
+        "Square that midpoint height.",
+        "$$P(6)^{2}=500^{2}\\cdot 2=P(0)P(12)$$",
+        "The identity holds."
+      ]
+    ]
+  },
+  "22": {
+    "overview": "Constant log-increments diagnose constant force.\n\n$$\\ln P(t)=\\ln 40+t\\ln 2$$\n\n$$P(t)=40\\cdot 2^{t}$$\n\nArithmetic in $\\ln P$ is geometric in $P$.",
+    "bodies": [
+      [
+        "Read the first differences of the log-row.",
+        "$$\\Delta\\ln P=\\ln 2$$",
+        "Equal log-increments on unit steps mean constant force.",
+        "$$k=\\ln 2$$"
+      ],
+      [
+        "Exponentiate the affine log-row.",
+        "$$P(t)=e^{\\ln 40+t\\ln 2}$$",
+        "$$P(t)=40\\cdot 2^{t}$$"
+      ],
+      [
+        "Substitute $t=3$ into the closed form $P(t)=40\\cdot 2^{t}$.",
+        "$$P(3)=40\\cdot 2^{3}$$",
+        "$$40\\cdot 8=320$$",
+        "$$P(3)=320$$"
+      ],
+      [
+        "An arithmetic log-row means a geometric level row.",
+        "$$P(0),P(1),P(2),P(3)=40,80,160,320$$",
+        "Those levels double each step; they are not an arithmetic sequence."
+      ],
+      [
+        "Form the three-step difference quotient of $\\ln P$.",
+        "$$\\frac{1}{3}\\bigl(\\ln P(3)-\\ln P(0)\\bigr)$$",
+        "$$\\frac{1}{3}\\bigl(\\ln 40+3\\ln 2-\\ln 40\\bigr)=\\ln 2$$",
+        "The same force is recovered."
+      ]
+    ]
+  },
+  "23": {
+    "overview": "The two paths share the start $P_0$ and differ only in force.\n\n$$A(t)=P_0 e^{\\alpha t}\\qquad B(t)=P_0 e^{\\beta t}$$\n\nWith $\\alpha>\\beta>0$ the ratio $A/B=e^{(\\alpha-\\beta)t}$ stays above $1$ for every $t>0$.",
+    "bodies": [
+      [
+        "Form the ratio of the two paths.",
+        "$$\\frac{A(t)}{B(t)}=e^{(\\alpha-\\beta)t}$$",
+        "For $t>0$ the exponent is positive, so the ratio exceeds $1$.",
+        "$$A(t)>B(t)$$"
+      ],
+      [
+        "Differentiate the log-ratio.",
+        "$$\\partial_t\\log(A/B)=\\alpha-\\beta$$",
+        "$$\\alpha-\\beta>0$$",
+        "The ratio is therefore strictly increasing in $t$."
+      ],
+      [
+        "Compare the two doubling clocks.",
+        "$$T_A=\\frac{\\ln 2}{\\alpha}$$",
+        "$$T_B=\\frac{\\ln 2}{\\beta}$$",
+        "$$T_A<T_B$$",
+        "The larger force shortens the doubling time."
+      ],
+      [
+        "The ratio $A/B$ stays above $1$ for every $t>0$.",
+        "$$e^{(\\alpha-\\beta)t}>1\\quad(t>0)$$",
+        "Hence $B$ never overtakes $A$."
+      ],
+      [
+        "Multiply the two closed forms.",
+        "$$A(t)B(t)=P_0^{2} e^{(\\alpha+\\beta)t}$$",
+        "The product carries force $\\alpha+\\beta$."
+      ]
+    ]
+  },
+  "24": {
+    "overview": "Per-capita output is the ratio of the two continuous aggregates.\n\n$$y(t)=y_0 e^{(\\alpha-\\beta)t}$$\n\nEqual letters freeze $y$. The sum $\\alpha+\\beta$ is the wrong exponent for the ratio.",
+    "bodies": [
+      [
+        "Divide the two closed forms.",
+        "$$y(t)=\\frac{Y_0 e^{\\alpha t}}{N_0 e^{\\beta t}}=y_0 e^{(\\alpha-\\beta)t}$$",
+        "The per-capita force is exactly $\\alpha-\\beta$."
+      ],
+      [
+        "If the forces agree, the exponent vanishes.",
+        "$$\\alpha=\\beta\\implies y(t)=y_0$$",
+        "Per-capita output is then constant in time."
+      ],
+      [
+        "Doubling solves $e^{(\\alpha-\\beta)T}=2$ when $\\alpha>\\beta$.",
+        "$$T=\\frac{\\ln 2}{\\alpha-\\beta}$$",
+        "That is the value required by the claim."
+      ],
+      [
+        "The correct exponent is the difference, not the sum.",
+        "$$y(t)=y_0 e^{(\\alpha-\\beta)t}$$",
+        "$$\\alpha-\\beta\\\neq\\alpha+\\beta\\quad(\\beta\\\neq 0)$$",
+        "The claimed identity with $(\\alpha+\\beta)t$ fails."
+      ],
+      [
+        "With $\\alpha-\\beta=\\ln 2$, impose $y(T)=4y_0$.",
+        "$$e^{(\\ln 2)T}=4=2^{2}$$",
+        "$$T=2$$"
+      ]
+    ]
+  },
+  "25": {
+    "overview": "Half-life $H$ fixes the decay force and the binary rewrite.\n\n$$\\lambda=\\frac{\\ln 2}{H}\\qquad m(t)=m_0\\cdot 2^{-t/H}$$\n\nFraction claims are powers of $1/2$. Substituting $1/H$ for $\\lambda$ breaks the half-life.",
+    "bodies": [
+      [
+        "The half-life condition is a pure exponential equation.",
+        "$$e^{-\\lambda H}=\\tfrac12$$",
+        "$$\\lambda=\\frac{\\ln 2}{H}$$"
+      ],
+      [
+        "Three half-lives multiply by $2^{-3}$.",
+        "$$m(3H)=m_0 e^{-3\\ln 2}$$",
+        "$$m(3H)=\\tfrac18 m_0$$"
+      ],
+      [
+        "Reaching one-fifth solves for a non-integer number of half-lives.",
+        "$$e^{-\\lambda t}=\\tfrac15$$",
+        "$$t=\\frac{\\ln 5}{\\lambda}=H\\frac{\\ln 5}{\\ln 2}$$"
+      ],
+      [
+        "Compare the true force with the linearised substitute.",
+        "$$\\frac{1}{H}\\\\\neq\\frac{\\ln 2}{H}$$",
+        "Under force $1/H$, the half-life solving $e^{-t/H}=1/2$ would be $t=H\\ln 2\\\neq H$.",
+        "Replacing $\\lambda$ by $1/H$ therefore changes the half-life."
+      ],
+      [
+        "Rewrite the exponential factor in base $2$.",
+        "$$e^{-(\\ln 2)t/H}=2^{-t/H}$$",
+        "$$m(t)=m_0\\cdot 2^{-t/H}$$",
+        "The rewrite is equivalent to the recovered model."
+      ]
+    ]
+  },
+  "26": {
+    "overview": "The nest $e^{k\\ln(P/Q)}$ is the relative power $(P/Q)^{k}$.\n\n$$e^{k\\ln(P/Q)}=\\bigl(\\frac{P}{Q}\\bigr)^{k}$$\n\nLog-difference is free. Change-of-base recovers prescribed values.",
+    "bodies": [
+      [
+        "Collapse the nest through the inverse pair $\\exp$ and $\\ln$.",
+        "$$e^{k\\ln(P/Q)}=\\bigl(e^{\\ln(P/Q)}\\bigr)^{k}$$",
+        "$$\\bigl(\\frac{P}{Q}\\bigr)^{k}$$"
+      ],
+      [
+        "Substitute $k=2$ and $P=2Q$ into the simplified nest.",
+        "$$e^{k\\ln(P/Q)}=\\bigl(\\frac{P}{Q}\\bigr)^{k}$$",
+        "$$\\bigl(\\frac{2Q}{Q}\\bigr)^{2}=2^{2}$$",
+        "$$4$$",
+        "The expression equals $4$."
+      ],
+      [
+        "Split the logarithm and the exponential.",
+        "$$e^{k\\ln(P/Q)}=e^{k\\ln P-k\\ln Q}$$",
+        "$$\\frac{e^{k\\ln P}}{e^{k\\ln Q}}$$",
+        "The identity holds for every positive $P,Q$."
+      ],
+      [
+        "By definition of the logarithm in base $P/Q$.",
+        "$$\\bigl(\\tfrac{P}{Q}\\bigr)^{\\log_{P/Q} 5}=5$$",
+        "The nest equals $5$."
+      ],
+      [
+        "The logarithm difference rule is an identity.",
+        "$$\\ln(P/Q)=\\ln P-\\ln Q$$",
+        "Substitution leaves the nested expression unchanged, so the claim is false."
+      ]
+    ]
+  },
+  "27": {
+    "overview": "Equal starts cancel in the ratio, leaving the force gap $\\delta$.\n\n$$\\frac{A(t)}{B(t)}=e^{\\delta t}=2^{t/8}\\qquad \\delta=\\frac{\\ln 2}{8}$$\n\nDoubling of the ratio occurs at $t=\\ln 2/\\delta=8$.",
+    "bodies": [
+      [
+        "Divide the two closed forms.",
+        "$$\\frac{A(t)}{B(t)}=e^{(k_A-k_B)t}=e^{\\delta t}$$",
+        "Rewrite in base $2$.",
+        "$$e^{(\\ln 2)t/8}=2^{t/8}$$"
+      ],
+      [
+        "Substitute $t=8$ into the ratio closed form.",
+        "$$\\frac{A(t)}{B(t)}=2^{t/8}$$",
+        "$$2^{8/8}=2$$",
+        "$$\\frac{A(8)}{B(8)}=2$$"
+      ],
+      [
+        "Impose $A(t)=2B(t)$, that is ratio equal to $2$.",
+        "$$e^{\\delta t}=2$$",
+        "$$\\delta t=\\ln 2$$",
+        "$$t=\\frac{\\ln 2}{\\delta}=8$$"
+      ],
+      [
+        "Equal starts and unequal forces meet only at the origin of time.",
+        "$$A(t)=B(t)\\iff e^{\\delta t}=1$$",
+        "$$t=0$$",
+        "The only crossing time is $t=0$."
+      ],
+      [
+        "The ratio is itself continuous-exponential with force $\\delta$.",
+        "$$\\frac{A}{B}=e^{\\delta t}$$",
+        "$$\\delta=\\frac{\\ln 2}{8}$$"
+      ]
+    ]
+  },
+  "28": {
+    "overview": "Path agreement needs matching one-year factors.\n\n$$P\\equiv Q\\iff e^{k}=1+r$$\n\nThe trap $r=k$ undershoots because $e^{k}>1+k$. Matching factors does not force $r=k$.",
+    "bodies": [
+      [
+        "Two exponential paths with a common start coincide for all $t$ iff their one-year multipliers agree.",
+        "$$e^{kt}=(1+r)^{t}\\quad\\forall t$$",
+        "$$e^{k}=1+r$$"
+      ],
+      [
+        "When $r=k>0$, compare one-year multipliers first.",
+        "$$e^{k}>1+k$$",
+        "Raising both sides to the power $t>0$ preserves the inequality.",
+        "$$e^{kt}>(1+k)^{t}\\qquad(t>0)$$",
+        "$$P(t)>Q(t)$$"
+      ],
+      [
+        "Equate the two doubling-time formulas.",
+        "$$\\frac{\\ln 2}{k}=\\frac{\\ln 2}{\\ln(1+r)}$$",
+        "$$k=\\ln(1+r)$$",
+        "Whenever $1+r=e^{k}$, the doubling times agree."
+      ],
+      [
+        "The discrete path with factor $1+k$ is written explicitly.",
+        "$$Q(t)=P_0(1+k)^{t}$$",
+        "Its one-year multiplier is $1+k$, while the continuous path multiplies by $e^{k}$.",
+        "$$e^{k}>1+k\\qquad(k>0)$$",
+        "Raising both sides to the power $t>0$ and multiplying by $P_0$ yields $P(t)>Q(t)$.",
+        "$$P(t)=P_0 e^{kt}>P_0(1+k)^{t}=Q(t)$$",
+        "So the inequality $e^{k}>1+k$ is exactly the statement that $P$ beats that discrete rival."
+      ],
+      [
+        "Matching one-year factors forces $r=e^{k}-1$.",
+        "$$r=e^{k}-1$$",
+        "$$e^{k}-1\\\neq k\\quad(k>0)$$",
+        "Matching factors does not force $r=k$."
+      ]
+    ]
+  },
+  "29": {
+    "overview": "Mirror forces $\\pm\\ln 2$ about the switch return the level to the start.\n\n$$P(2)=256\\qquad P(4)=64=P(0)$$\n\nEndpoint matching on $[0,4]$ forces average force $0$.",
+    "bodies": [
+      [
+        "Substitute the switch time into the first piece.",
+        "$$P(2)=64\\cdot e^{(\\ln 2)\\cdot 2}$$",
+        "$$P(2)=64\\cdot 4=256$$"
+      ],
+      [
+        "From the second piece, advance two units past the switch.",
+        "$$P(4)=256\\cdot e^{-(\\ln 2)\\cdot 2}$$",
+        "$$P(4)=256\\cdot\\tfrac14=64$$",
+        "$$P(4)=P(0)$$"
+      ],
+      [
+        "Match the endpoint to a single exponential from the start.",
+        "$$P(4)=64=64 e^{4k_{\\mathrm{avg}}}$$",
+        "$$e^{4k_{\\mathrm{avg}}}=1$$",
+        "$$k_{\\mathrm{avg}}=0$$"
+      ],
+      [
+        "Before the switch the force is positive; after it, negative.",
+        "The peak on $[0,4]$ is therefore at the switch.",
+        "$$P(2)=256$$",
+        "That is the value required by the claim."
+      ],
+      [
+        "Extending the first force to $t=4$ ignores the mirror decay.",
+        "$$64\\cdot 2^{4}=1024$$",
+        "$$1024\\\\\neq 64$$"
+      ]
+    ]
+  },
+  "30": {
+    "overview": "Newton cooling is an exponential gap toward a fixed ambient level.\n\n$$T(t)-T_a=(T_0-T_a)e^{-kt}$$\n\nHalf-gap time ignores the ambient level. The temperature itself is not $T_0 e^{-kt}$.",
+    "bodies": [
+      [
+        "Write the gap explicitly.",
+        "$$G(t)=T(t)-T_a=(T_0-T_a)e^{-kt}$$",
+        "The gap is continuous-exponential with force $-k$."
+      ],
+      [
+        "Halving the gap solves $e^{-kH}=1/2$.",
+        "$$H=\\frac{\\ln 2}{k}$$",
+        "The letters $T_0$ and $T_a$ cancel before the logarithm."
+      ],
+      [
+        "Send $t\to+\\infty$ in the Newton formula with $k>0$.",
+        "$$e^{-kt}\\to 0$$",
+        "$$T(t)=T_a+(T_0-T_a)e^{-kt}$$",
+        "$$T(t)\\to T_a$$",
+        "The temperature approaches ambient."
+      ],
+      [
+        "Substitute the concrete letters into the gap formula.",
+        "$$T(5)=T_a+40\\cdot e^{-\\ln 2}$$",
+        "$$T(5)=T_a+20$$"
+      ],
+      [
+        "Only the gap is a pure exponential; the temperature carries the ambient shift.",
+        "$$T(t)=T_a+(T_0-T_a)e^{-kt}$$",
+        "$$T(t)\\\\\neq T_0 e^{-kt}$$"
+      ]
+    ]
+  },
+  "31": {
+    "overview": "Compare the continuous path with force $(\\ln 2)/5$ to the discrete rival with factor $1.1$.\n\n$$P(t)=800\\,e^{(\\ln 2/5)t}\\qquad Q(t)=800\\cdot(1.1)^{t}$$\n\nBecause $2^{1/5}>1.1$, the continuous path stays above the discrete rival. Doubling times use different denominators.",
+    "bodies": [
+      [
+        "Continuous doubling solves $e^{(\\ln 2/5)T}=2$.",
+        "$$T_P=\\frac{\\ln 2}{\\ln 2/5}=5$$",
+        "Discrete doubling solves $(1.1)^{T}=2$.",
+        "$$T_Q=\\frac{\\ln 2}{\\ln 1.1}$$"
+      ],
+      [
+        "Compare the one-year multipliers.",
+        "$$e^{\\ln 2/5}=2^{1/5}$$",
+        "$$2^{1/5}>1.1$$",
+        "Raising both sides to the power $t>0$ preserves the inequality.",
+        "$$e^{(\\ln 2/5)t}>(1.1)^{t}\\qquad(t>0)$$",
+        "$$P(t)>Q(t)$$"
+      ],
+      [
+        "At $t=5$ the continuous path has doubled once.",
+        "$$P(5)=800\\cdot 2=1600$$",
+        "The discrete rival is still written with factor $1.1$.",
+        "$$Q(5)=800\\cdot(1.1)^{5}$$"
+      ],
+      [
+        "Compare $\\ln 1.1$ with $(\\ln 2)/5$.",
+        "$$\\ln 1.1<\\frac{\\ln 2}{5}$$",
+        "Taking reciprocals (both positive) reverses the inequality.",
+        "$$\\frac{\\ln 2}{\\ln 1.1}>5$$",
+        "The discrete doubling time is strictly larger than $5$."
+      ],
+      [
+        "Matching $Q$ to a continuous force requires $k=\\ln 1.1$.",
+        "$$\\ln 1.1\\\\\neq\\frac{\\ln 2}{5}$$",
+        "That force is not equal to $(\\ln 2)/5$."
+      ]
+    ]
+  },
+  "32": {
+    "overview": "Constant consecutive ratios diagnose a geometric decay table.\n\n$$Q(t)=625\\cdot\\bigl(\\tfrac{4}{5}\\bigr)^{t}\\qquad r=-\\tfrac{1}{5}$$\n\nThe matching continuous force is $k=\\ln(4/5)<0$. The continuous rewrite matches every tabulated height.",
+    "bodies": [
+      [
+        "Read the three consecutive ratios from the table.",
+        "$$\\frac{500}{625}=\\frac{400}{500}=\\frac{320}{400}=\\frac{4}{5}$$",
+        "The unit factor is $1+r$.",
+        "$$1+r=\\frac{4}{5}$$",
+        "$$r=-\\frac{1}{5}$$"
+      ],
+      [
+        "Match the geometric factor to a continuous exponential.",
+        "$$e^{k}=\\tfrac{4}{5}$$",
+        "$$k=\\ln\\tfrac{4}{5}$$"
+      ],
+      [
+        "The continuous rewrite with that force is identical to the geometric law.",
+        "$$625 e^{t\\ln(4/5)}=625\\cdot(4/5)^{t}$$",
+        "Every tabulated height is therefore reproduced."
+      ],
+      [
+        "Set the geometric law equal to $200$.",
+        "$$625\\cdot(4/5)^{t}=200$$",
+        "$$(4/5)^{t}=\\frac{200}{625}$$",
+        "$$t=\\frac{\\ln(200/625)}{\\ln(4/5)}$$"
+      ],
+      [
+        "The unit factor $4/5$ lies strictly between $0$ and $1$.",
+        "$$0<\\tfrac{4}{5}<1$$",
+        "$$\\ln\\tfrac{4}{5}<0$$",
+        "The continuous force is negative, not positive."
+      ]
+    ]
+  },
+  "33": {
+    "overview": "The substitution $u=e^{x}>0$ turns the equation into a quadratic.\n\n$$u^{2}-3u+2=(u-1)(u-2)=0$$\n\nReal roots are $x=0$ and $x=\\ln 2$. Both lie in $\\mathbb{R}$; $x=\\ln 3$ fails the original equation.",
+    "bodies": [
+      [
+        "Set $u=e^{x}>0$ and factor.",
+        "$$u^{2}-3u+2=(u-1)(u-2)=0$$",
+        "$$u=1\\quad\\text{or}\\quad u=2$$",
+        "Return to $x$ through the logarithm.",
+        "$$x=0\\quad\\text{or}\\quad x=\\ln 2$$"
+      ],
+      [
+        "Every term in the original equation is built from the exponential map.",
+        "$$e^{x}\\qquad e^{2x}=(e^{x})^{2}$$",
+        "Both maps are defined for every real input.",
+        "$$x\\in\\mathbb{R}$$",
+        "The candidate roots $0$ and $\\ln 2$ are real, so both lie in the domain of every exponential appearing in the equation."
+      ],
+      [
+        "Multiply the two real solutions.",
+        "$$0\\cdot\\ln 2=0$$",
+        "The product equals $0$."
+      ],
+      [
+        "Substitute $x=\\ln 3$ into the left-hand side.",
+        "$$e^{2\\ln 3}-3e^{\\ln 3}+2$$",
+        "$$9-9+2=2$$",
+        "$$2\\\\\neq 0$$",
+        "The candidate fails the equation."
+      ],
+      [
+        "The change of variables sends each real $x$ to a positive $u$.",
+        "$$u=e^{x}>0$$",
+        "Every positive $u$ arises uniquely as $e^{x}$ for $x=\\ln u$.",
+        "$$x=\\ln u$$",
+        "The map is therefore bijective from $\\mathbb{R}$ onto $(0,\\infty)$, and no positive root of the quadratic in $u$ is lost."
+      ]
+    ]
+  },
+  "34": {
+    "overview": "Per-worker capital is the ratio of capital to labour.\n\n$$k(t)=k_0 e^{(g-p)t}$$\n\nThe product $KL$ carries force $g+p$. Doubling time of $k$ uses the difference, not the sum.",
+    "bodies": [
+      [
+        "Divide the two closed forms.",
+        "$$k(t)=\\frac{K_0 e^{gt}}{L_0 e^{pt}}=k_0 e^{(g-p)t}$$",
+        "The per-worker force is $g-p$."
+      ],
+      [
+        "If the forces agree, the exponent vanishes.",
+        "$$g=p\\implies k(t)=k_0$$",
+        "Per-worker capital is then constant."
+      ],
+      [
+        "Multiply the two closed forms.",
+        "$$K(t)L(t)=K_0 L_0 e^{(g+p)t}$$",
+        "The product carries force $g+p$."
+      ],
+      [
+        "Doubling of $k$ when $g>p$ solves $e^{(g-p)T}=2$.",
+        "$$T=\\frac{\\ln 2}{g-p}$$",
+        "$$\\frac{\\ln 2}{g-p}\\\\\neq\\frac{\\ln 2}{g+p}$$",
+        "The claimed denominator $g+p$ is the wrong force."
+      ],
+      [
+        "Compare levels two $t$-steps apart.",
+        "$$\\frac{k(2t)}{k(t)}=e^{(g-p)(2t)-(g-p)t}$$",
+        "$$e^{(g-p)t}$$",
+        "The identity holds for every $t$."
+      ]
+    ]
+  },
+  "35": {
+    "overview": "One observation and a known force rebuild the continuous path.\n\n$$P(3)=54\\qquad k=\\ln 3$$\n\n$$P_0=2\\qquad P(t)=2\\cdot 3^{t}$$\n\nA mismatched force corrupts the back-solve.",
+    "bodies": [
+      [
+        "Back-solve from the observation at $t=3$.",
+        "$$P_0=54 e^{-3\\ln 3}$$",
+        "$$e^{3\\ln 3}=27$$",
+        "$$P_0=54/27=2$$"
+      ],
+      [
+        "Rewrite the continuous path in base $3$.",
+        "$$P(t)=2 e^{t\\ln 3}$$",
+        "$$P(t)=2\\cdot 3^{t}$$"
+      ],
+      [
+        "Substitute $t=2$ into the rebuilt closed form.",
+        "$$P(t)=2\\cdot 3^{t}$$",
+        "$$P(2)=2\\cdot 3^{2}=2\\cdot 9$$",
+        "$$P(2)=18$$"
+      ],
+      [
+        "Doubling solves $e^{(\\ln 3)T}=2$.",
+        "$$T=\\frac{\\ln 2}{\\ln 3}$$",
+        "$$\\frac{\\ln 2}{\\ln 3}=\\log_{3} 2$$"
+      ],
+      [
+        "The false force $k=\\ln 2$ produces a different back-solve.",
+        "$$54 e^{-3\\ln 2}=54/8$$",
+        "$$54/8\\\\\neq 2$$",
+        "The same $P_0$ is not recovered."
+      ]
+    ]
+  },
+  "36": {
+    "overview": "Logarithms linearise the concrete path $5 e^{2t}$.\n\n$$\\ln P(t)=\\ln 5+2t$$\n\nThreshold solves are affine in $t$. The second derivative of $\\ln P$ is $0$, not $2$.",
+    "bodies": [
+      [
+        "Expand the logarithm of the closed form.",
+        "$$\\ln P(t)=\\ln(5 e^{2t})$$",
+        "$$\\ln 5+2t$$"
+      ],
+      [
+        "Impose $\\ln P(t)=0$ on the affine log-path.",
+        "$$\\ln P(t)=\\ln 5+2t$$",
+        "$$\\ln 5+2t=0$$",
+        "$$t=-\\tfrac12\\ln 5$$",
+        "That is the unique real solution of the equation."
+      ],
+      [
+        "Impose $\\ln P(t)=\\ln 45$.",
+        "$$\\ln 5+2t=\\ln 45=\\ln 5+\\ln 9$$",
+        "$$2t=\\ln 9$$",
+        "$$t=\\ln 3$$"
+      ],
+      [
+        "The log-path is affine, so its second derivative vanishes.",
+        "$$(\\ln P)'(t)=2$$",
+        "$$(\\ln P)''(t)=0$$",
+        "$$0\\\\\neq 2$$"
+      ],
+      [
+        "Form the difference quotient of $\\ln P$ on $[1,4]$.",
+        "$$\\frac{(\\ln 5+8)-(\\ln 5+2)}{3}$$",
+        "$$\\frac{6}{3}=2$$",
+        "The recovered force equals $2$."
+      ]
+    ]
+  },
+  "37": {
+    "overview": "Arithmetic semi-log samples give a constant force.\n\n$$k=\\frac{\\ln 3}{2}\\qquad P(t)=3^{t/2}$$\n\nGeometric levels are the counterpart of arithmetic logs.",
+    "bodies": [
+      [
+        "Read the semi-log slope from the first two samples.",
+        "$$k=\\frac{\\ln 3-0}{2}=\\frac{\\ln 3}{2}$$",
+        "Exponentiate to recover the level.",
+        "$$P(t)=e^{kt}=3^{t/2}$$"
+      ],
+      [
+        "Substitute $t=4$ into the recovered closed form.",
+        "$$P(t)=3^{t/2}$$",
+        "$$P(4)=3^{4/2}=3^{2}$$",
+        "$$P(4)=9$$",
+        "The level at $t=4$ is $9$."
+      ],
+      [
+        "Subtract the log-samples at $t=6$ and $t=2$.",
+        "$$\\ln P(6)-\\ln P(2)=3\\ln 3-\\ln 3$$",
+        "$$2\\ln 3$$"
+      ],
+      [
+        "The corresponding levels are geometric with ratio $3$.",
+        "$$P(0),P(2),P(4),P(6)=1,\\,3,\\,9,\\,27$$",
+        "Those heights are not an arithmetic sequence."
+      ],
+      [
+        "Impose $\\ln P(t)=\\ln 27$.",
+        "$$(\\ln 3)t/2=\\ln 27=3\\ln 3$$",
+        "$$t=6$$"
+      ]
+    ]
+  },
+  "38": {
+    "overview": "Quantifier order matters for the family $P_k(t)=P_0 e^{kt}$.\n\n$$P_k(t)=P_0 e^{kt}$$\n\nHitting a level at one $t$ is easy; hitting it at every $t$ is impossible for a non-constant target. Nonzero force makes the path injective.",
+    "bodies": [
+      [
+        "For fixed $k>0$, solve $P_k(t)>2P_0$.",
+        "$$e^{kt}>2$$",
+        "$$t>\\frac{\\ln 2}{k}$$",
+        "Such a positive $t$ always exists."
+      ],
+      [
+        "Any negative force works. For instance take $k=-1$.",
+        "$$P_{-1}(t)=P_0 e^{-t}$$",
+        "$$e^{-t}<1\\quad(t>0)$$",
+        "Then $P_{-1}(t)<P_0$ for every $t>0$."
+      ],
+      [
+        "For fixed $t>0$, solve $P_k(t)=7P_0$ for the force.",
+        "$$e^{kt}=7$$",
+        "$$k=\\frac{\\ln 7}{t}$$",
+        "Such a real $k$ always exists."
+      ],
+      [
+        "The swapped quantifiers ask for one force $k$ that hits the level $7P_0$ at every positive time.",
+        "$$P_k(t)=7P_0\\quad\\forall t>0$$",
+        "That forces the exponential factor to be the constant $7$.",
+        "$$e^{kt}=7\\quad\\forall t>0$$",
+        "No single real $k$ can make $e^{kt}$ constant and equal to $7$ for every $t>0$.",
+        "The claim therefore fails."
+      ],
+      [
+        "Impose $P_k(t_1)=P_k(t_2)$ under $k\\\neq 0$.",
+        "$$e^{k(t_1-t_2)}=1$$",
+        "$$t_1=t_2$$",
+        "The map $t\\mapsto P_k(t)$ is injective on $\\mathbb{R}$."
+      ]
+    ]
+  },
+  "39": {
+    "overview": "The first piece runs to $t=6$, then the second force continues from the matched height.\n\n$$P(6)=400\\qquad P(18)=1600$$\n\nEndpoint matching recovers $k_{\\mathrm{avg}}=2\\ln 2/9$, the time-weighted mean of the piece forces.",
+    "bodies": [
+      [
+        "Substitute the switch time into the first piece.",
+        "$$P(6)=100\\cdot e^{(\\ln 2/3)\\cdot 6}$$",
+        "$$e^{2\\ln 2}=4$$",
+        "$$P(6)=400$$"
+      ],
+      [
+        "From the second piece, advance twelve units past the switch.",
+        "$$P(18)=400\\cdot e^{(\\ln 2/6)\\cdot 12}$$",
+        "$$e^{2\\ln 2}=4$$",
+        "$$P(18)=1600$$"
+      ],
+      [
+        "Match the endpoint to a single exponential from the start.",
+        "$$1600=100 e^{18 k_{\\mathrm{avg}}}$$",
+        "$$e^{18 k_{\\mathrm{avg}}}=16=2^{4}$$",
+        "$$k_{\\mathrm{avg}}=\\frac{4\\ln 2}{18}=\\frac{2\\ln 2}{9}$$"
+      ],
+      [
+        "The plain arithmetic mean of the two piece forces is different.",
+        "$$\\frac12\\bigl(\\tfrac{\\ln 2}{3}+\\tfrac{\\ln 2}{6}\\bigr)=\\frac{\\ln 2}{4}$$",
+        "$$\\frac{2\\ln 2}{9}\\\\\neq\\frac{\\ln 2}{4}$$",
+        "Unequal piece lengths require a time-weighted average, not the plain mean of the two forces."
+      ],
+      [
+        "Extending the first force through $t=18$ ignores the later slowdown.",
+        "$$100\\cdot e^{(\\ln 2/3)\\cdot 18}=100\\cdot 2^{6}=6400$$",
+        "$$6400\\\\\neq 1600$$"
+      ]
+    ]
+  },
+  "40": {
+    "overview": "Equal forces freeze per-capita output while aggregate and population still grow.\n\n$$y(t)=y_0 e^{(g-p)t}=y_0\\qquad(g=p=0.03)$$\n\nPer capita is a ratio, not equal to aggregate output.",
+    "bodies": [
+      [
+        "Form the per-capita path.",
+        "$$y(t)=y_0 e^{(g-p)t}$$",
+        "$$g-p=0$$",
+        "$$y(t)=y_0$$",
+        "Per-capita output is constant."
+      ],
+      [
+        "Aggregate doubling still solves a pure exponential equation.",
+        "$$Y(T)=2Y_0$$",
+        "$$e^{0.03 T}=2$$",
+        "$$T=\\frac{\\ln 2}{0.03}$$"
+      ],
+      [
+        "Over that same horizon, population doubles as well.",
+        "$$N(T)=N_0 e^{0.03 T}=2N_0$$",
+        "$$y(T)=\\frac{2Y_0}{2N_0}=y_0$$",
+        "Per capita stays fixed."
+      ],
+      [
+        "With $p=0.01$ and $g=0.03$ the per-capita force is $0.02$.",
+        "$$g-p=0.02$$",
+        "$$T=\\frac{\\ln 2}{0.02}$$"
+      ],
+      [
+        "Per capita is the ratio of aggregate to population.",
+        "$$y(t)=\\frac{Y(t)}{N(t)}=y_0$$",
+        "$$y_0\\\\\neq Y(t)$$",
+        "Equal forces do not identify $y$ with $Y$."
+      ]
+    ]
+  },
+  "41": {
+    "overview": "Semi-log slope recovers the negative force from the marked heights.\n\n$$m(t)=1000\\,e^{kt}\\qquad k=-\\frac{\\ln 2}{7}$$\n\nPowers of $1/2$ settle later masses. The level itself remains exponential, not affine.",
+    "bodies": [
+      [
+        "The seven-unit decay factor is $1/2$.",
+        "$$e^{7k}=\\tfrac12$$",
+        "$$k=-\\frac{\\ln 2}{7}$$",
+        "That is the semi-log slope."
+      ],
+      [
+        "Three half-lives multiply by $2^{-3}$.",
+        "$$m(21)=1000\\cdot 2^{-3}=125$$",
+        "That is the value required by the claim."
+      ],
+      [
+        "The rise of $\\ln m$ over fourteen units is fourteen times the force.",
+        "$$\\ln m(14)-\\ln m(0)=14k$$",
+        "$$14\\cdot\\bigl(-\\frac{\\ln 2}{7}\\bigr)=-2\\ln 2$$"
+      ],
+      [
+        "A falling semi-log graph means exponential decay of the level.",
+        "$$m(t)=1000 e^{kt}$$",
+        "That closed form is not an affine function of $t$."
+      ],
+      [
+        "The equation $\\ln m=\\ln 1000-\\ln 8$ means the mass is $1000/8$.",
+        "$$kt=-\\ln 8=-3\\ln 2$$",
+        "$$t=\\frac{3\\ln 2}{\\ln 2/7}=21$$"
+      ]
+    ]
+  },
+  "42": {
+    "overview": "Non-constant ratios kill a pure exponential fit.\n\n$$\\frac{P(1)}{P(0)}=2,\\quad \\frac{P(2)}{P(1)}=\\tfrac32,\\quad \\frac{P(3)}{P(2)}=2$$\n\nEven the opening doubling fails by $t=2$, and $P(3)/P(0)=6$ is not a pure power of $2$.",
+    "bodies": [
+      [
+        "Read the three consecutive ratios from the table.",
+        "$$\\frac{200}{100}=2$$",
+        "$$\\frac{300}{200}=\\tfrac32$$",
+        "$$\\frac{600}{300}=2$$",
+        "Unequal ratios rule out a single geometric / continuous-exponential model."
+      ],
+      [
+        "Columns $t=0,1$ give ratio $2$, but column $t=2$ would then need height $400$.",
+        "$$100\\cdot 2^{2}=400$$",
+        "$$400\\\\\neq 300$$",
+        "The first three columns are not consistent with force $\\ln 2$."
+      ],
+      [
+        "Forcing the pure doubling model predicts the wrong height at $t=2$.",
+        "$$100\\cdot e^{(\\ln 2)\\cdot 2}=400$$",
+        "$$400\\\\\neq 300$$",
+        "The tabulated $300$ contradicts that prediction."
+      ],
+      [
+        "The three-step ratio from the table is $6$.",
+        "$$\\frac{P(3)}{P(0)}=6$$",
+        "Under force $\\ln 2$ the three-step factor would be $8$.",
+        "$$e^{3\\ln 2}=8$$",
+        "$$8\\\\\neq 6$$"
+      ],
+      [
+        "Compare successive log-increments.",
+        "$$\\ln 200-\\ln 100=\\ln 2$$",
+        "$$\\ln 300-\\ln 200=\\ln\\tfrac32$$",
+        "$$\\ln\\tfrac32\\\\\neq\\ln 2$$",
+        "Equal log-increments already fail between those two windows."
+      ]
+    ]
+  },
+  "43": {
+    "overview": "Translation multiplies a continuous exponential by a pure force factor.\n\n$$P(t+s)=P(t)e^{ks}$$\n\nNonzero force forbids a positive period. The quadratic identity $P(2t)=P(t)^{2}/P_0$ is the doubling-in-time rule.",
+    "bodies": [
+      [
+        "Expand the translated path.",
+        "$$P(t+s)=P_0 e^{k(t+s)}$$",
+        "$$P_0 e^{kt}e^{ks}=P(t)e^{ks}$$",
+        "The identity holds for every real $t,s$."
+      ],
+      [
+        "Divide by $P(t)$.",
+        "$$\\frac{P(t+s)}{P(t)}=e^{ks}$$",
+        "The right-hand side depends on $s$ and $k$ alone, not on $t$ or $P_0$."
+      ],
+      [
+        "A positive period $\\tau$ would require $P(t+\\tau)=P(t)$ for every $t$.",
+        "$$e^{k\\tau}=1$$",
+        "$$\\tau=0\\quad(k\\\\\neq 0)$$",
+        "No positive period exists when $k\\\neq 0$."
+      ],
+      [
+        "Differentiate the closed form.",
+        "$$P'=kP$$",
+        "Form the Wronskian-style combination.",
+        "$$P'P-P\\cdot(kP)=kP^{2}-kP^{2}=0$$",
+        "The combination vanishes identically."
+      ],
+      [
+        "Expand $P(2t)$ and compare with the square.",
+        "$$P(2t)=P_0 e^{2kt}$$",
+        "$$\\frac{P(t)^{2}}{P_0}=\\frac{(P_0 e^{kt})^{2}}{P_0}=P_0 e^{2kt}$$",
+        "The two sides agree for every $t$."
+      ]
+    ]
+  },
+  "44": {
+    "overview": "Opposite forces $\\pm(\\ln 2)/15$ cross when the growth factor of the ratio equals $4$.\n\n$$S(t)=1200\\,e^{kt}\\qquad D(t)=4800\\,e^{-kt}\\qquad k=\\frac{\\ln 2}{15}$$\n\nThe product is constant; ratio growth uses force $2k$.",
+    "bodies": [
+      [
+        "Set the two balances equal.",
+        "$$1200 e^{kt}=4800 e^{-kt}$$",
+        "$$e^{2kt}=4$$",
+        "$$2kt=2\\ln 2$$",
+        "Substitute $k=(\\ln 2)/15$.",
+        "$$t=15$$"
+      ],
+      [
+        "Evaluate either path at the crossing.",
+        "$$S(15)=1200\\cdot e^{\\ln 2}=1200\\cdot 2=2400$$",
+        "$$D(15)=4800\\cdot e^{-\\ln 2}=2400$$",
+        "Both balances equal $2400$."
+      ],
+      [
+        "Multiply the two closed forms.",
+        "$$S(t)D(t)=1200\\cdot 4800\\cdot e^{kt}e^{-kt}$$",
+        "$$1200\\cdot 4800$$",
+        "The product is constant for every $t$."
+      ],
+      [
+        "Form the ratio of the two paths.",
+        "$$\\frac{S(t)}{D(t)}=\\frac{1200}{4800}e^{2kt}$$",
+        "$$\\frac14 e^{(2\\ln 2/15)t}$$"
+      ],
+      [
+        "Impose $S(t)=2D(t)$, that is ratio equal to $2$.",
+        "$$\\frac14 e^{2kt}=2$$",
+        "$$e^{2kt}=8$$",
+        "$$2kt=3\\ln 2$$",
+        "$$t=\\frac{3\\ln 2}{2k}=\\frac{45}{2}$$"
+      ]
+    ]
+  }
+}

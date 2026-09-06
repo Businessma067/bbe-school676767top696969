@@ -23,13 +23,13 @@
         false
       ],
       "tactical_explanations": [
-        "**A.** → True\n\nThe marked heights give the eight-unit growth factor.\n\n$$\\frac{P(8)}{P(0)}=\\frac{2048}{1024}=2=e^{8k}$$\n\n$$k=\\frac{\\ln 2}{8}$$\n\nTwo doubling intervals multiply by four.\n\n$$P(16)=1024\\cdot e^{16k}=1024\\cdot 4=4096$$\n\nSo the statement is True.",
-        "**B.** → True\n\nDoubling solves $e^{kT}=2$, hence $T=\\ln 2/k=8$.\n\n$$P(24)=1024\\cdot e^{24k}=1024\\cdot 2^{3}=8192$$\n\n$$\\frac{P(24)}{P(0)}=8$$\n\nSo the statement is True.",
-        "**C.** → False\n\nThe average relative change over $[0,8]$ is the linear rise per unit time.\n\n$$\\frac{P(8)-P(0)}{8P(0)}=\\frac{1}{8}$$\n\n$$k=\\frac{\\ln 2}{8}\\neq\\frac{1}{8}$$\n\nThe force is the log-rate, not that linear relative rise.\n\nSo the statement is False.",
-        "**D.** → True\n\nHalving asks for $e^{kt}=1/2$.\n\n$$t=-\\frac{\\ln 2}{k}=-8$$\n\nA negative abscissa is outside the plotted window $t\\ge 0$.\n\nSo the statement is True.",
-        "**E.** → False\n\nThe time midpoint is the geometric mean of the endpoint heights.\n\n$$P(4)=1024\\sqrt{2}$$\n\n$$\\frac{P(0)+P(8)}{2}=1536$$\n\n$$1024\\sqrt{2}\\neq 1536$$\n\nSo the statement is False."
+        "**A.** → True\n\nThe eight-unit growth factor is read from the two marked heights.\n\n$$\\frac{P(8)}{P(0)}=\\frac{2048}{1024}=2$$\n\nA continuous exponential converts that factor into a force equation.\n\n$$e^{8k}=2$$\n\n$$k=\\frac{\\ln 2}{8}$$\n\nTwo doubling intervals multiply the start by four.\n\n$$P(16)=1024\\cdot e^{16k}=1024\\cdot 4=4096$$\n\nThe recovered force therefore yields the claimed height $4096$.\n\nSo the statement is True.",
+        "**B.** → True\n\nDoubling solves for the unique positive time $T$ with growth factor $2$.\n\n$$e^{kT}=2$$\n\n$$T=\\frac{\\ln 2}{k}=8$$\n\nThree doubling intervals then multiply the start by eight.\n\n$$P(24)=1024\\cdot e^{24k}=1024\\cdot 2^{3}=8192$$\n\n$$\\frac{P(24)}{P(0)}=8$$\n\nBoth halves of the claim therefore hold.\n\nSo the statement is True.",
+        "**C.** → False\n\nThe average relative change over $[0,8]$ is the linear rise per unit time.\n\n$$\\frac{P(8)-P(0)}{8P(0)}=\\frac{2048-1024}{8\\cdot 1024}=\\frac{1}{8}$$\n\nThe continuous force recovered above is the log-rate, not that linear rise.\n\n$$k=\\frac{\\ln 2}{8}$$\n\n$$\\frac{\\ln 2}{8}\\ eq\\frac{1}{8}$$\n\nThe two numbers disagree, so the claimed equality fails.\n\nSo the statement is False.",
+        "**D.** → True\n\nHalving the start asks for growth factor $1/2$.\n\n$$e^{kt}=\\frac{1}{2}$$\n\n$$t=-\\frac{\\ln 2}{k}=-8$$\n\nA negative abscissa lies outside the plotted window $t\\ge 0$, matching the claim.\n\nSo the statement is True.",
+        "**E.** → False\n\nAt the time midpoint the continuous path takes the geometric mean of the endpoint heights.\n\n$$P(4)=1024\\cdot e^{4k}$$\n\n$$1024\\cdot e^{4k}=1024\\sqrt{2}$$\n\nThe arithmetic mean of the same endpoints is larger.\n\n$$\\frac{P(0)+P(8)}{2}=\\frac{1024+2048}{2}=1536$$\n\n$$1024\\sqrt{2}\\ eq 1536$$\n\nThe claimed identity therefore fails.\n\nSo the statement is False."
       ],
-      "solution_overview": "From $P(8)/P(0)=2$ recover $k=\\ln 2/8$. Powers of two settle later heights; the linear relative rise $1/8$ is not $k$; the midpoint $P(4)$ is geometric.",
+      "solution_overview": "The marked heights fix a single continuous force.\n\n$$P(t)=1024\\,e^{kt}$$\n\nFrom $P(8)/P(0)=2$ one recovers $k=(\\ln 2)/8$. Every later height, ratio, and midpoint claim reuses that same $k$.",
       "difficulty_level": "1/5",
       "sort_order": 1,
       "placeholder": false,
@@ -57,13 +57,13 @@
         true
       ],
       "tactical_explanations": [
-        "**A.** → True\n\nRead consecutive ratios from the table.\n\n$$\\frac{500}{250}=\\frac{1000}{500}=\\frac{2000}{1000}=2$$\n\n$$e^{k}=2\\qquad k=\\ln 2$$\n\nSo the statement is True.",
-        "**B.** → True\n\nA two-step jump multiplies by four, so half the log recovers $k$.\n\n$$\\frac{P(2)}{P(0)}=\\frac{1000}{250}=4$$\n\n$$\\frac{1}{2}\\ln 4=\\ln 2$$\n\nSo the statement is True.",
-        "**C.** → False\n\nThe continuous one-year factor is $e^{k}=2$, while the discrete rival uses $1+\\ln 2$.\n\n$$1+\\ln 2\\neq 2$$\n\nAlready at $t=1$ the discrete model yields $250(1+\\ln 2)\\neq 500$.\n\nSo the statement is False.",
-        "**D.** → True\n\nFrom $P(t)=250\\cdot 2^{t}=4000$ obtain $2^{t}=16$.\n\n$$t=4$$\n\nSo the statement is True.",
-        "**E.** → True\n\nConstant force means equal log-increments on equal time gaps.\n\n$$\\ln P(3)-\\ln P(1)=\\ln\\frac{2000}{500}=\\ln 4=2\\ln 2$$\n\nSo the statement is True."
+        "**A.** → True\n\nRead the three consecutive ratios from the table.\n\n$$\\frac{500}{250}=\\frac{1000}{500}=\\frac{2000}{1000}=2$$\n\nA continuous exponential turns a unit ratio of $2$ into a force.\n\n$$e^{k}=2$$\n\n$$k=\\ln 2$$\n\nEvery consecutive ratio equals $2$, so the force is exactly $\\ln 2$.\n\nSo the statement is True.",
+        "**B.** → True\n\nA two-step jump multiplies by four.\n\n$$\\frac{P(2)}{P(0)}=\\frac{1000}{250}=4$$\n\nHalf the logarithm recovers the same unit force.\n\n$$\\frac{1}{2}\\ln 4=\\ln 2$$\n\nThe two-step recovery therefore matches $k=\\ln 2$.\n\nSo the statement is True.",
+        "**C.** → False\n\nThe continuous one-year factor is $e^{k}=2$.\n\nThe discrete rival instead multiplies by $1+\\ln 2$ each year.\n\n$$1+\\ln 2\\ eq 2$$\n\nAlready at $t=1$ the discrete model misses the table.\n\n$$250(1+\\ln 2)\\ eq 500$$\n\nThe claimed match therefore fails.\n\nSo the statement is False.",
+        "**D.** → True\n\nFrom the closed form, set the level equal to $4000$.\n\n$$250\\cdot 2^{t}=4000$$\n\n$$2^{t}=16$$\n\n$$t=4$$\n\nThe solving time is the integer $4$.\n\nSo the statement is True.",
+        "**E.** → True\n\nConstant force means equal log-increments on equal time gaps.\n\n$$\\ln P(3)-\\ln P(1)=\\ln\\frac{2000}{500}=\\ln 4$$\n\n$$\\ln 4=2\\ln 2$$\n\nThe identity holds and confirms constant force on that window.\n\nSo the statement is True."
       ],
-      "solution_overview": "The table is pure doubling: $P(t)=250\\cdot 2^{t}=250 e^{(\\ln 2)t}$. Any recovery of $k$ from a ratio $\\ln(P(t+\\Delta)/P(t))/\\Delta$ returns $\\ln 2$. Replacing $e^{k}$ by $1+k$ breaks the table.",
+      "solution_overview": "The table is pure doubling on consecutive integers.\n\n$$P(t)=250\\cdot 2^{t}=250\\,e^{(\\ln 2)t}$$\n\nEvery ratio recovery of the force returns $k=\\ln 2$. Letters reuse that closed form.",
       "difficulty_level": "2/5",
       "sort_order": 2,
       "placeholder": false,
@@ -91,13 +91,13 @@
         true
       ],
       "tactical_explanations": [
-        "**A.** → True\n\nSet $A(t)=B(t)$ and cancel the common exponential shape.\n\n$$400 e^{k_A t}=100 e^{k_B t}$$\n\n$$4=e^{(k_B-k_A)t}=e^{(\\ln 2/6)t}$$\n\n$$t=\\frac{6\\ln 4}{\\ln 2}=12$$\n\n$$A(12)=400\\cdot 2^{2}=1600=B(12)$$\n\nSo the statement is True.",
-        "**B.** → True\n\nSubstitute $t=6$ into both rules.\n\n$$A(6)=400\\cdot e^{\\ln 2}=800$$\n\n$$B(6)=100\\cdot e^{2\\ln 2}=400$$\n\n$$A(6)/B(6)=2$$\n\nSo the statement is True.",
-        "**C.** → False\n\nThe doubling time of $A$ is $T_A=\\ln 2/k_A=6$. Half of that is $3$, not the crossing time $12$.\n\n$$t_{\\mathrm{cross}}=\\frac{\\ln(A_0/B_0)}{k_B-k_A}=12\\neq 3$$\n\nSo the statement is False.",
-        "**D.** → True\n\nAfter the crossing, the faster force $k_B$ dominates.\n\n$$\\frac{B(t)}{A(t)}=\\frac{1}{4}e^{(k_B-k_A)t}$$\n\nFor $t>12$ the exponential factor exceeds $4$, so $B>A$.\n\nSo the statement is True.",
-        "**E.** → True\n\nMultiply the two closed forms.\n\n$$A(t)B(t)=40000\\,e^{(k_A+k_B)t}$$\n\n$$k_A+k_B=\\frac{\\ln 2}{6}+\\frac{\\ln 2}{3}=\\frac{\\ln 2}{2}$$\n\nSo the statement is True."
+        "**A.** → True\n\nSet the two paths equal and cancel the common exponential shape.\n\n$$400 e^{k_A t}=100 e^{k_B t}$$\n\n$$4=e^{(k_B-k_A)t}$$\n\nSubstitute the force gap $k_B-k_A=(\\ln 2)/6$.\n\n$$4=e^{(\\ln 2/6)t}$$\n\n$$t=\\frac{6\\ln 4}{\\ln 2}=12$$\n\nAt that time both heights equal $1600$.\n\n$$A(12)=400\\cdot 2^{2}=1600=B(12)$$\n\nSo the statement is True.",
+        "**B.** → True\n\nSubstitute $t=6$ into each closed form.\n\n$$A(6)=400\\cdot e^{\\ln 2}$$\n\n$$400\\cdot e^{\\ln 2}=800$$\n\n$$B(6)=100\\cdot e^{2\\ln 2}$$\n\n$$100\\cdot e^{2\\ln 2}=400$$\n\n$$\\frac{A(6)}{B(6)}=2$$\n\nThe ratio at $t=6$ is exactly $2$.\n\nSo the statement is True.",
+        "**C.** → False\n\nThe doubling time of $A$ is $T_A=\\ln 2/k_A=6$, so half of that is $3$.\n\nThe crossing time solved above is $12$, not $3$.\n\n$$t_{\\mathrm{cross}}=\\frac{\\ln(A_0/B_0)}{k_B-k_A}=12$$\n\n$$12\\ eq 3$$\n\nHaving $k_B=2k_A$ does not make the crossing equal half of $T_A$.\n\nSo the statement is False.",
+        "**D.** → True\n\nAfter the crossing, compare the two paths through their ratio.\n\n$$\\frac{B(t)}{A(t)}=\\frac{1}{4}e^{(k_B-k_A)t}$$\n\nFor $t>12$ the exponential factor exceeds $4$, so $B(t)>A(t)$.\n\nThe faster force $k_B$ therefore leads after the meeting.\n\nSo the statement is True.",
+        "**E.** → True\n\nMultiply the two closed forms.\n\n$$A(t)B(t)=40000\\,e^{(k_A+k_B)t}$$\n\nAdd the forces.\n\n$$k_A+k_B=\\frac{\\ln 2}{6}+\\frac{\\ln 2}{3}=\\frac{\\ln 2}{2}$$\n\nThe product is continuous-exponential with that summed force.\n\nSo the statement is True."
       ],
-      "solution_overview": "Crossing solves $400 e^{k_A t}=100 e^{k_B t}$, giving $t=12$. Ratios before/after follow $e^{(k_B-k_A)t}$. The product carries force $k_A+k_B$.",
+      "solution_overview": "The two closed forms are given with explicit forces.\n\n$$A(t)=400\\,e^{k_A t}\\qquad B(t)=100\\,e^{k_B t}$$\n\n$$k_A=\\frac{\\ln 2}{6}\\qquad k_B=\\frac{\\ln 2}{3}$$\n\nCrossing, ratios, and the product all reuse the force gap $k_B-k_A=(\\ln 2)/6$.",
       "difficulty_level": "3/5",
       "sort_order": 3,
       "placeholder": false,
@@ -125,13 +125,13 @@
         true
       ],
       "tactical_explanations": [
-        "**A.** → True\n\nSet $u=e^{x}>0$ and factor.\n\n$$u^{2}-5u+6=(u-2)(u-3)=0$$\n\n$$u=2\\ \\text{or}\\ u=3$$\n\n$$x=\\ln 2\\ \\text{or}\\ x=\\ln 3$$\n\nSo the statement is True.",
-        "**B.** → True\n\nBoth $2$ and $3$ exceed $1$, and $\\ln$ is increasing.\n\n$$\\ln 2>0\\qquad \\ln 3>0$$\n\nSo the statement is True.",
-        "**C.** → True\n\nAdd the two logarithms.\n\n$$\\ln 2+\\ln 3=\\ln 6$$\n\nSo the statement is True.",
-        "**D.** → False\n\nThe rival factorisation $(e^{x}-2)(e^{x}-4)=0$ has roots $\\ln 2$ and $\\ln 4$.\n\n$$\\{\\ln 2,\\ln 4\\}\\neq\\{\\ln 2,\\ln 3\\}$$\n\nSo the statement is False.",
-        "**E.** → True\n\nAt $x=\\ln 2$ both sides of the rearranged equation match.\n\n$$e^{2\\ln 2}+6=4+6=10$$\n\n$$5e^{\\ln 2}=10$$\n\nSo the statement is True."
+        "**A.** → True\n\nSet $u=e^{x}>0$ and factor the quadratic.\n\n$$u^{2}-5u+6=(u-2)(u-3)$$\n\n$$(u-2)(u-3)=0$$\n\n$$u=2\\quad\\text{or}\\quad u$$\n\n$$2\\quad\\text{or}\\quad u=3$$\n\nReturn to $x$ through the logarithm.\n\n$$x=\\ln 2\\quad\\text{or}\\quad x$$\n\n$$\\ln 2\\quad\\text{or}\\quad x=\\ln 3$$\n\nBoth roots are real, matching the claim.\n\nSo the statement is True.",
+        "**B.** → True\n\nBoth candidate values of $u$ exceed $1$.\n\n$$2>1\\qquad 3>1$$\n\nBecause $\\ln$ is increasing, both solution abscissae are positive.\n\n$$\\ln 2>0\\qquad \\ln 3>0$$\n\nSo the statement is True.",
+        "**C.** → True\n\nAdd the two real solutions.\n\n$$\\ln 2+\\ln 3=\\ln(2\\cdot 3)$$\n\n$$\\ln(2\\cdot 3)=\\ln 6$$\n\nThe sum equals $\\ln 6$ as claimed.\n\nSo the statement is True.",
+        "**D.** → False\n\nThe rival factorisation $(e^{x}-2)(e^{x}-4)=0$ has a different second root.\n\n$$x=\\ln 2\\quad\\text{or}\\quad x$$\n\n$$\\ln 2\\quad\\text{or}\\quad x=\\ln 4$$\n\nCompare the two solution sets.\n\n$$\\{\\ln 2,\\ln 4\\}\\ eq\\{\\ln 2,\\ln 3\\}$$\n\nReplacing the factorisation changes the solution set.\n\nSo the statement is False.",
+        "**E.** → True\n\nSubstitute $x=\\ln 2$ into both sides of the rearranged equation.\n\n$$e^{2\\ln 2}+6=4+6$$\n\n$$4+6=10$$\n\n$$5e^{\\ln 2}=5\\cdot 2$$\n\n$$5\\cdot 2=10$$\n\nBoth sides match, so the numerical identity holds.\n\nSo the statement is True."
       ],
-      "solution_overview": "With $u=e^{x}$ the equation is $(u-2)(u-3)=0$. Real roots are $\\ln 2$ and $\\ln 3$; their sum is $\\ln 6$. A different factorisation changes the root set.",
+      "solution_overview": "The substitution $u=e^{x}>0$ turns the nested equation into a quadratic.\n\n$$u^{2}-5u+6=(u-2)(u-3)=0$$\n\nReal roots are $x=\\ln 2$ and $x=\\ln 3$. Later letters reuse those two solutions.",
       "difficulty_level": "4/5",
       "sort_order": 4,
       "placeholder": false,
@@ -158,13 +158,13 @@
         true
       ],
       "tactical_explanations": [
-        "**A.** → True\n\nSubstitute the switch time into the first piece.\n\n$$P(3)=80\\cdot e^{3\\ln 2}=80\\cdot 8=640$$\n\nSo the statement is True.",
-        "**B.** → True\n\nFrom the second piece with force $-\\ln 2/2$.\n\n$$P(5)=640\\cdot e^{-\\ln 2}=320$$\n\n$$P(7)=640\\cdot e^{-2\\ln 2}=160$$\n\nSo the statement is True.",
-        "**C.** → True\n\nTwo units of time at force $-\\ln 2/2$ multiply by $e^{-\\ln 2}=1/2$.\n\n$$P(5)=\\tfrac12 P(3)$$\n\nSo the statement is True.",
-        "**D.** → False\n\nBlindly extending the first force contradicts the switch.\n\n$$80\\cdot 2^{5}=2560\\neq 320$$\n\nSo the statement is False.",
-        "**E.** → True\n\nMatch the endpoint to a single exponential.\n\n$$160=80\\,e^{7k_{\\mathrm{avg}}}$$\n\n$$e^{7k_{\\mathrm{avg}}}=2\\qquad k_{\\mathrm{avg}}=\\frac{\\ln 2}{7}$$\n\nSo the statement is True."
+        "**A.** → True\n\nSubstitute the switch time into the first piece.\n\n$$P(3)=80\\cdot e^{3\\ln 2}$$\n\n$$e^{3\\ln 2}=8$$\n\n$$P(3)=80\\cdot 8$$\n\n$$80\\cdot 8=640$$\n\nContinuity at the switch therefore forces $P(3)=640$.\n\nSo the statement is True.",
+        "**B.** → True\n\nFrom the second piece, advance two units from the switch.\n\n$$P(5)=640\\cdot e^{-(\\ln 2/2)\\cdot 2}=640\\cdot e^{-\\ln 2}=320$$\n\nAdvance four units from the switch.\n\n$$P(7)=640\\cdot e^{-(\\ln 2/2)\\cdot 4}=640\\cdot e^{-2\\ln 2}=160$$\n\nBoth claimed heights hold.\n\nSo the statement is True.",
+        "**C.** → True\n\nTwo units of time at force $-(\\ln 2)/2$ multiply by $e^{-\\ln 2}$.\n\n$$e^{-\\ln 2}=\\tfrac12$$\n\n$$P(5)=\\tfrac12 P(3)$$\n\nSo $t=5$ is a half-life measured from the switch.\n\nSo the statement is True.",
+        "**D.** → False\n\nBlindly extending the first force past the switch would ignore the kink.\n\n$$80\\cdot 2^{5}=2560$$\n\nThe piecewise value at $t=5$ is $320$.\n\n$$2560\\ eq 320$$\n\nThe two values do not match.\n\nSo the statement is False.",
+        "**E.** → True\n\nMatch the endpoint $P(7)=160$ to a single exponential from the start.\n\n$$160=80\\,e^{7k_{\\mathrm{avg}}}$$\n\n$$e^{7k_{\\mathrm{avg}}}=2$$\n\n$$k_{\\mathrm{avg}}=\\frac{\\ln 2}{7}$$\n\nThe average force on $[0,7]$ is exactly $(\\ln 2)/7$.\n\nSo the statement is True."
       ],
-      "solution_overview": "Match at $t=3$ to get $P(3)=640$, then decay with force $-\\ln 2/2$. Endpoint matching recovers the average force $\\ln 2/7$ on $[0,7]$.",
+      "solution_overview": "The first piece runs up to the switch, then the second piece continues from the matched height.\n\n$$P(t)=80\\,e^{(\\ln 2)t}\\quad(0\\le t\\le 3)$$\n\n$$P(3)=640$$\n\nAfter $t=3$ the force is $-(\\ln 2)/2$. Later heights and the average force reuse $P(3)=640$.",
       "difficulty_level": "5/5",
       "sort_order": 5,
       "placeholder": false,
@@ -192,13 +192,13 @@
         true
       ],
       "tactical_explanations": [
-        "**A.** → True\n\nDivide the two closed forms.\n\n$$y(t)=\\frac{Y_0}{N_0}e^{(g-p)t}=y_0 e^{0.04 t}$$\n\nSo the statement is True.",
-        "**B.** → True\n\nDoubling solves $e^{0.04 T}=2$.\n\n$$T=\\frac{\\ln 2}{0.04}$$\n\nSo the statement is True.",
-        "**C.** → False\n\nAt that same $T$, aggregate growth is $e^{gT}$.\n\n$$e^{0.06\\cdot(\\ln 2)/0.04}=e^{(3/2)\\ln 2}=2^{3/2}=2\\sqrt{2}\\neq 4$$\n\nSo the statement is False.",
-        "**D.** → True\n\nFlipping the sign of $p$ in the quotient replaces $g-p$ by $g+p$.\n\n$$g+p=0.08$$\n\nSo the statement is True.",
-        "**E.** → True\n\nCompare levels two $t$-steps apart.\n\n$$\\frac{y(2t)}{y(t)}=e^{0.04(2t)-0.04 t}=e^{0.04 t}$$\n\nSo the statement is True."
+        "**A.** → True\n\nDivide the two closed forms.\n\n$$y(t)=\\frac{Y_0 e^{gt}}{N_0 e^{pt}}=y_0 e^{(g-p)t}$$\n\nSubstitute the given forces.\n\n$$g-p=0.06-0.02$$\n\n$$0.06-0.02=0.04$$\n\n$$y(t)=y_0 e^{0.04 t}$$\n\nThe per-capita force is $0.04$.\n\nSo the statement is True.",
+        "**B.** → True\n\nDoubling solves for the unique positive time with factor $2$.\n\n$$e^{0.04 T}=2$$\n\n$$T=\\frac{\\ln 2}{0.04}$$\n\nThat is the per-capita doubling time.\n\nSo the statement is True.",
+        "**C.** → False\n\nAt the same $T$, aggregate output grows by the factor $e^{gT}$.\n\n$$e^{0.06\\cdot(\\ln 2)/0.04}=e^{(3/2)\\ln 2}$$\n\n$$e^{(3/2)\\ln 2}=2^{3/2}$$\n\n$$2^{3/2}=2\\sqrt{2}$$\n\n$$2\\sqrt{2}\\ eq 4$$\n\nThe claimed factor $4$ is too large.\n\nSo the statement is False.",
+        "**D.** → True\n\nFlipping the sign of $p$ in the quotient replaces the difference by a sum.\n\n$$g-(-p)=g+p$$\n\n$$g+p=0.06+0.02$$\n\n$$0.06+0.02=0.08$$\n\nThe misread force would indeed be $0.08$.\n\nSo the statement is True.",
+        "**E.** → True\n\nCompare per-capita levels two $t$-steps apart.\n\n$$\\frac{y(2t)}{y(t)}=e^{0.04(2t)-0.04 t}$$\n\n$$e^{0.04 t}$$\n\nThe identity holds for every $t>0$.\n\nSo the statement is True."
       ],
-      "solution_overview": "Per capita carries force $g-p=0.04$. Doubling time is $\\ln 2/0.04$; aggregate growth over that horizon is $2^{3/2}$, not $4$.",
+      "solution_overview": "Per-capita output is the ratio of the two continuous aggregates.\n\n$$y(t)=\\frac{Y(t)}{N(t)}=y_0 e^{(g-p)t}$$\n\n$$g-p=0.04$$\n\nDoubling times and growth factors all reuse that difference force.",
       "difficulty_level": "1/5",
       "sort_order": 6,
       "placeholder": false,
@@ -226,13 +226,13 @@
         true
       ],
       "tactical_explanations": [
-        "**A.** → True\n\nTake logarithms of the closed form.\n\n$$\\ln P(t)=\\ln 200+kt$$\n\n$$k=\\frac{1}{5}\\ln\\frac{400}{200}=\\frac{\\ln 2}{5}$$\n\nSo the statement is True.",
-        "**B.** → True\n\n$$\\ln P(10)-\\ln P(0)=10k=2\\ln 2$$\n\nSo the statement is True.",
-        "**C.** → False\n\nAffinity of $\\ln P$ means $P$ is exponential, not affine.\n\n$$P(t)=200 e^{kt}$$\n\nAn affine level path would require constant first differences, which this closed form does not have.\n\nSo the statement is False.",
-        "**D.** → True\n\nThe equation $\\ln P=\\ln 200+\\ln 8$ means $P=200\\cdot 8$.\n\n$$e^{kt}=8=2^{3}\\qquad kt=3\\ln 2$$\n\n$$t=\\frac{3\\ln 2}{k}=15$$\n\nSo the statement is True.",
-        "**E.** → True\n\n$$\\frac{\\ln P(15)-\\ln P(5)}{10}=\\frac{15k-5k}{10}=k$$\n\nSo the statement is True."
+        "**A.** → True\n\nTake logarithms of the closed form.\n\n$$\\ln P(t)=\\ln 200+kt$$\n\nRecover the slope from the marked heights.\n\n$$k=\\frac{1}{5}\\ln\\frac{400}{200}=\\frac{\\ln 2}{5}$$\n\nOn semi-log axes the graph of $\\ln P$ is affine with that slope.\n\nSo the statement is True.",
+        "**B.** → True\n\nThe rise over ten units is ten times the force.\n\n$$\\ln P(10)-\\ln P(0)=10k$$\n\n$$10\\cdot\\frac{\\ln 2}{5}=2\\ln 2$$\n\nThe claimed rise equals $2\\ln 2$.\n\nSo the statement is True.",
+        "**C.** → False\n\nAffinity of $\\ln P$ means $P$ itself is exponential.\n\n$$P(t)=200 e^{kt}$$\n\nAn affine level path would require constant first differences, which this closed form does not have.\n\nThe claim that $P$ must be affine in $t$ is false.\n\nSo the statement is False.",
+        "**D.** → True\n\nThe equation $\\ln P=\\ln 200+\\ln 8$ means the level is $200\\cdot 8$.\n\n$$e^{kt}=8$$\n\n$$8=2^{3}$$\n\n$$kt=3\\ln 2$$\n\n$$t=\\frac{3\\ln 2}{k}=15$$\n\nThe solving time is $15$.\n\nSo the statement is True.",
+        "**E.** → True\n\nForm the difference quotient of $\\ln P$ on $[5,15]$.\n\n$$\\frac{\\ln P(15)-\\ln P(5)}{10}=\\frac{15k-5k}{10}$$\n\n$$\\frac{10k}{10}=k$$\n\nThe same slope $k$ is recovered.\n\nSo the statement is True."
       ],
-      "solution_overview": "Semi-log turns $P=200 e^{kt}$ into the affine law $\\ln P=\\ln 200+kt$ with $k=\\ln 2/5$. Level claims still need the exponential, not the log-line.",
+      "solution_overview": "One logarithm turns the continuous path into an affine semi-log graph.\n\n$$\\ln P(t)=\\ln 200+kt$$\n\nThe marked heights recover $k=(\\ln 2)/5$. Level claims still use the exponential, not the log-line alone.",
       "difficulty_level": "2/5",
       "sort_order": 7,
       "placeholder": false,
@@ -260,13 +260,13 @@
         false
       ],
       "tactical_explanations": [
-        "**A.** → True\n\n$$\\frac{P(6)}{P(2)}=\\frac{1440}{180}=8=e^{4k}$$\n\n$$4k=\\ln 8=3\\ln 2\\qquad k=\\frac{3\\ln 2}{4}$$\n\nSo the statement is True.",
-        "**B.** → True\n\n$$P_0=P(2)e^{-2k}=180\\cdot e^{-(3\\ln 2)/2}=180\\cdot 2^{-3/2}=45\\sqrt{2}$$\n\nSo the statement is True.",
-        "**C.** → False\n\nDoubling solves $e^{kT}=2$.\n\n$$T=\\frac{\\ln 2}{k}=\\frac{4}{3}\\neq 2$$\n\nSo the statement is False.",
-        "**D.** → True\n\nGeometric interpolation between $t=2$ and $t=6$.\n\n$$P(4)=P(2)e^{2k}=180\\cdot e^{(3\\ln 2)/2}=180\\cdot 2\\sqrt{2}$$\n\nSo the statement is True.",
-        "**E.** → False\n\nDiscrete compounding with factor $1+k$ cannot match $e^{k}$ for $k>0$.\n\n$$1+k\\neq e^{k}$$\n\nEven matching $P_0$ cannot hit both tabulated heights under the discrete law.\n\nSo the statement is False."
+        "**A.** → True\n\nForm the four-unit ratio of the two observations.\n\n$$\\frac{P(6)}{P(2)}=\\frac{1440}{180}=8$$\n\nConvert the factor into a force.\n\n$$e^{4k}=8$$\n\n$$4k=\\ln 8$$\n\n$$\\ln 8=3\\ln 2$$\n\n$$k=\\frac{3\\ln 2}{4}$$\n\nSo the statement is True.",
+        "**B.** → True\n\nBack-solve from the observation at $t=2$.\n\n$$P_0=P(2)e^{-2k}$$\n\n$$P(2)e^{-2k}=180\\cdot e^{-(3\\ln 2)/2}$$\n\n$$e^{-(3\\ln 2)/2}=2^{-3/2}$$\n\n$$P_0=180\\cdot 2^{-3/2}$$\n\n$$180\\cdot 2^{-3/2}=45\\sqrt{2}$$\n\nSo the statement is True.",
+        "**C.** → False\n\nDoubling solves $e^{kT}=2$.\n\n$$T=\\frac{\\ln 2}{k}=\\frac{\\ln 2}{(3\\ln 2)/4}=\\frac{4}{3}$$\n\n$$\\frac{4}{3}\\ eq 2$$\n\nThe doubling time is $4/3$, not $2$.\n\nSo the statement is False.",
+        "**D.** → True\n\nGeometric interpolation advances two units from $t=2$.\n\n$$P(4)=P(2)e^{2k}$$\n\n$$P(2)e^{2k}=180\\cdot e^{(3\\ln 2)/2}$$\n\n$$e^{(3\\ln 2)/2}=2^{3/2}$$\n\n$$2^{3/2}=2\\sqrt{2}$$\n\n$$P(4)=180\\cdot 2\\sqrt{2}$$\n\nSo the statement is True.",
+        "**E.** → False\n\nDiscrete compounding with factor $1+k$ cannot match the continuous factor $e^{k}$.\n\n$$1+k\\ eq e^{k}\\qquad(k>0)$$\n\nEven with the same $P_0$, the discrete law misses at least one of the two observations.\n\nThe claimed match therefore fails.\n\nSo the statement is False."
       ],
-      "solution_overview": "From $P(6)/P(2)=8$ recover $k=(3\\ln 2)/4$ and $P_0=45\\sqrt{2}$. Doubling time is $4/3$; the discrete rival with factor $1+k$ misses the table.",
+      "solution_overview": "Two exact observations rebuild the continuous exponential.\n\n$$\\frac{P(6)}{P(2)}=8=e^{4k}$$\n\n$$k=\\frac{3\\ln 2}{4}\\qquad P_0=45\\sqrt{2}$$\n\nDoubling time, interpolation, and discrete rivals all reuse that pair $(P_0,k)$.",
       "difficulty_level": "3/5",
       "sort_order": 8,
       "placeholder": false,
@@ -293,13 +293,13 @@
         true
       ],
       "tactical_explanations": [
-        "**A.** → True\n\n$$T(10)-20=60\\cdot e^{-\\ln 2}=30$$\n\n$$T(10)=50$$\n\nSo the statement is True.",
-        "**B.** → True\n\n$$T(20)-20=60\\cdot e^{-2\\ln 2}=15$$\n\n$$T(20)=35$$\n\nSo the statement is True.",
-        "**C.** → False\n\nSet the gap equal to $10$.\n\n$$60 e^{-kt}=10\\qquad e^{-kt}=\\frac{1}{6}$$\n\n$$t=\\frac{\\ln 6}{k}=\\frac{10\\ln 6}{\\ln 2}\\neq 20$$\n\nSo the statement is False.",
-        "**D.** → True\n\nDifferentiate the gap $G(t)=T(t)-20=60 e^{-kt}$.\n\n$$G'(t)=-k G(t)$$\n\nThe relative rate $G'/G$ is the constant $-k$.\n\nSo the statement is True.",
-        "**E.** → True\n\n$$e^{-kt}=e^{-(\\ln 2)t/10}=2^{-t/10}$$\n\n$$T(t)=20+60\\cdot 2^{-t/10}$$\n\nSo the statement is True."
+        "**A.** → True\n\nAt $t=10$ the gap has halved once.\n\n$$T(10)-20=60\\cdot e^{-\\ln 2}$$\n\n$$60\\cdot e^{-\\ln 2}=30$$\n\n$$T(10)=50$$\n\nThe temperature is $50$.\n\nSo the statement is True.",
+        "**B.** → True\n\nAt $t=20$ the gap has halved twice.\n\n$$T(20)-20=60\\cdot e^{-2\\ln 2}$$\n\n$$60\\cdot e^{-2\\ln 2}=15$$\n\n$$T(20)=35$$\n\nThe temperature is $35$.\n\nSo the statement is True.",
+        "**C.** → False\n\nHitting $T=30$ sets the gap equal to $10$.\n\n$$60 e^{-kt}=10$$\n\n$$e^{-kt}=\\frac{1}{6}$$\n\n$$t=\\frac{\\ln 6}{k}=\\frac{10\\ln 6}{\\ln 2}$$\n\n$$\\frac{10\\ln 6}{\\ln 2}\\ eq 20$$\n\nThe solving time is not $20$.\n\nSo the statement is False.",
+        "**D.** → True\n\nDifferentiate the gap $G(t)=T(t)-20=60 e^{-kt}$.\n\n$$G'(t)=-k\\cdot 60 e^{-kt}$$\n\n$$-k\\cdot 60 e^{-kt}=-k G(t)$$\n\nThe relative rate $G'/G$ is therefore the constant $-k$.\n\nSo the statement is True.",
+        "**E.** → True\n\nRewrite the exponential factor in base $2$.\n\n$$e^{-kt}=e^{-(\\ln 2)t/10}$$\n\n$$e^{-(\\ln 2)t/10}=2^{-t/10}$$\n\n$$T(t)=20+60\\cdot 2^{-t/10}$$\n\nThe rewrite is equivalent to the given model.\n\nSo the statement is True."
       ],
-      "solution_overview": "The gap halves every $10$ units: $T(10)=50$, $T(20)=35$. Hitting $T=30$ solves $e^{-kt}=1/6$, not a pure power of $1/2$.",
+      "solution_overview": "Newton cooling is an exponential gap toward ambient $20$.\n\n$$T(t)-20=60\\,e^{-kt}\\qquad k=\\frac{\\ln 2}{10}$$\n\nThe gap halves every $10$ units. Hitting times and relative rates reuse that gap model.",
       "difficulty_level": "4/5",
       "sort_order": 9,
       "placeholder": false,
@@ -327,13 +327,13 @@
         true
       ],
       "tactical_explanations": [
-        "**A.** → True\n\n$$P(t)=1000 e^{(\\ln 1.05)t}=1000\\cdot(1.05)^{t}=Q(t)$$\n\nSo the statement is True.",
-        "**B.** → True\n\nThe strict inequality $e^{0.05}>1.05$ lifts to every positive power.\n\n$$e^{0.05 t}>(1.05)^{t}\\qquad(t>0)$$\n\n$$P(t)>Q(t)$$\n\nSo the statement is True.",
-        "**C.** → True\n\n$$e^{kT}=2\\qquad T=\\frac{\\ln 2}{k}=\\frac{\\ln 2}{\\ln 1.05}$$\n\nSo the statement is True.",
-        "**D.** → False\n\nDiscrete doubling solves $(1.05)^{T}=2$.\n\n$$T=\\frac{\\ln 2}{\\ln 1.05}\\neq\\frac{\\ln 2}{0.05}$$\n\nThe denominator must be $\\ln 1.05$, not the raw $0.05$.\n\nSo the statement is False.",
-        "**E.** → True\n\n$$e^{k}=1.05\\iff k=\\ln 1.05$$\n\nSo the statement is True."
+        "**A.** → True\n\nSubstitute $k=\\ln 1.05$ into the continuous path.\n\n$$P(t)=1000 e^{(\\ln 1.05)t}$$\n\n$$e^{(\\ln 1.05)t}=(1.05)^{t}$$\n\n$$P(t)=1000\\cdot(1.05)^{t}$$\n\n$$1000\\cdot(1.05)^{t}=Q(t)$$\n\nThe two paths agree for every $t\\ge 0$.\n\nSo the statement is True.",
+        "**B.** → True\n\nThe elementary inequality $e^{0.05}>1.05$ lifts to every positive power.\n\n$$e^{0.05 t}>(1.05)^{t}\\qquad(t>0)$$\n\nMultiplying by the common start $1000$ preserves the inequality.\n\n$$P(t)>Q(t)\\qquad(t>0)$$\n\nSo the statement is True.",
+        "**C.** → True\n\nContinuous doubling solves $e^{kT}=2$.\n\n$$T=\\frac{\\ln 2}{k}=\\frac{\\ln 2}{\\ln 1.05}$$\n\nThat is the continuous doubling time.\n\nSo the statement is True.",
+        "**D.** → False\n\nDiscrete doubling solves $(1.05)^{T}=2$.\n\n$$T=\\frac{\\ln 2}{\\ln 1.05}$$\n\nThe claimed formula uses $0.05$ in the denominator instead.\n\n$$\\frac{\\ln 2}{\\ln 1.05}\\ eq\\frac{\\ln 2}{0.05}$$\n\nThe denominator must be $\\ln 1.05$, not the raw $0.05$.\n\nSo the statement is False.",
+        "**E.** → True\n\nThe one-year continuous multiplier is $e^{k}$.\n\n$$e^{k}=1.05\\iff k=\\ln 1.05$$\n\nThe equivalence is exactly the claim.\n\nSo the statement is True."
       ],
-      "solution_overview": "Equality of paths needs $k=\\ln 1.05$. The trap $k=0.05$ overshoots because $e^{0.05}>1.05$. Doubling times use $\\ln 1.05$ in the denominator.",
+      "solution_overview": "Path agreement needs matching one-year factors.\n\n$$P(t)=1000\\,e^{kt}\\qquad Q(t)=1000\\cdot(1.05)^{t}$$\n\nWith $k=\\ln 1.05$ the paths coincide. The trap $k=0.05$ overshoots because $e^{0.05}>1.05$.",
       "difficulty_level": "5/5",
       "sort_order": 10,
       "placeholder": false,
@@ -361,13 +361,13 @@
         true
       ],
       "tactical_explanations": [
-        "**A.** → True\n\n$$e^{kT}=2\\qquad T=\\frac{\\ln 2}{k}>0$$\n\nSo the statement is True.",
-        "**B.** → False\n\nAn exponential equals the affine path $P_0(1+t)$ for all $t$ only in degenerate cases.\n\n$$P_0 e^{kt}=P_0(1+t)\\quad\\forall t\\ge 0$$\n\nAlready the second derivative test fails: left side has $P''(0)=P_0 k^{2}$ while the right side has $0$, forcing $k=0$, which then collapses $1=1+t$.\n\nSo the statement is False.",
-        "**C.** → True\n\nFix $t>0$. The derivative in the force parameter is positive.\n\n$$\\partial_k P(t)=P_0 t e^{kt}>0$$\n\nSo the statement is True.",
-        "**D.** → True\n\n$$e^{kt}=e^{2kt}\\quad\\forall t>0\\implies e^{kt}=1\\implies k=0$$\n\nSo the statement is True.",
-        "**E.** → True\n\n$$e^{kt}=1\\iff kt=0\\iff t=0\\quad(k\\neq 0)$$\n\nSo the statement is True."
+        "**A.** → True\n\nDoubling requires the exponential factor to equal $2$.\n\n$$e^{kT}=2$$\n\n$$T=\\frac{\\ln 2}{k}$$\n\nFor every $k>0$ this $T$ is positive, so such a doubling time exists.\n\nSo the statement is True.",
+        "**B.** → False\n\nSuppose some $k$ made the exponential track the affine path for every $t\\ge 0$.\n\n$$P_0 e^{kt}=P_0(1+t)\\quad\\forall t\\ge 0$$\n\nAt $t=0$ both sides equal $P_0$. The second derivative of the left side at $0$ is $P_0 k^{2}$, while the right side has second derivative $0$.\n\n$$k^{2} P_0=0\\implies k=0$$\n\nWith $k=0$ the right side collapses to $1+t$, which is not constant. No such $k$ exists.\n\nSo the statement is False.",
+        "**C.** → True\n\nFix $t>0$ and differentiate in the force parameter.\n\n$$\\partial_k P(t)=P_0 t e^{kt}$$\n\n$$P_0 t e^{kt}>0$$\n\nThe map $k\\mapsto P(t)$ is therefore strictly increasing on $\\mathbb{R}$.\n\nSo the statement is True.",
+        "**D.** → True\n\nImpose $P(t)=P(2t)$ for every $t>0$.\n\n$$e^{kt}=e^{2kt}\\quad\\forall t>0$$\n\n$$e^{kt}=1\\quad\\forall t>0$$\n\nThe only real force compatible with that identity is $k=0$.\n\nSo the statement is True.",
+        "**E.** → True\n\nSolve $P(t)=P_0$ under $k\\\neq 0$.\n\n$$e^{kt}=1$$\n\n$$kt=0$$\n\n$$t=0$$\n\nThe unique real solution is $t=0$.\n\nSo the statement is True."
       ],
-      "solution_overview": "Doubling exists for every $k>0$. An exponential cannot track $1+t$ globally. Force monotonicity in $k$ for fixed $t>0$ is immediate from $\\partial_k P>0$.",
+      "solution_overview": "Throughout, $P(t)=P_0 e^{kt}$ with $P_0>0$.\n\n$$P(t)=P_0 e^{kt}$$\n\nQuantified claims are settled by solving, differentiating in $k$, or comparing derivatives against an affine rival.",
       "difficulty_level": "1/5",
       "sort_order": 11,
       "placeholder": false,
@@ -394,13 +394,13 @@
         true
       ],
       "tactical_explanations": [
-        "**A.** → True\n\n$$\\frac{108}{81}=\\frac{144}{108}=\\frac{192}{144}=\\frac{4}{3}$$\n\n$$P(t)=81\\cdot\\bigl(\\tfrac{4}{3}\\bigr)^{t}$$\n\nSo the statement is True.",
-        "**B.** → True\n\n$$e^{k}=\\tfrac{4}{3}\\qquad k=\\ln\\tfrac{4}{3}$$\n\nSo the statement is True.",
-        "**C.** → True\n\n$$\\frac{192}{81}=\\frac{64}{27}=\\bigl(\\tfrac{4}{3}\\bigr)^{3}$$\n\nSo the statement is True.",
-        "**D.** → False\n\nFirst differences of a geometric sequence are themselves geometric with the same ratio — that is consistent with an exponential level, not a contradiction.\n\n$$27,36,48\\qquad \\frac{36}{27}=\\frac{48}{36}=\\frac{4}{3}$$\n\nSo the statement is False.",
-        "**E.** → True\n\n$$\\bigl(\\tfrac{4}{3}\\bigr)^{t}=\\frac{256}{81}$$\n\n$$t=\\frac{\\ln(256/81)}{\\ln(4/3)}$$\n\nSo the statement is True."
+        "**A.** → True\n\nRead the three consecutive ratios from the table.\n\n$$\\frac{108}{81}=\\frac{144}{108}=\\frac{192}{144}=\\frac{4}{3}$$\n\nA constant ratio yields the geometric closed form.\n\n$$P(t)=81\\cdot\\bigl(\\tfrac{4}{3}\\bigr)^{t}$$\n\nEvery column fits that formula.\n\nSo the statement is True.",
+        "**B.** → True\n\nMatch the geometric factor to a continuous exponential.\n\n$$e^{k}=\\tfrac{4}{3}$$\n\n$$k=\\ln\\tfrac{4}{3}$$\n\nThat is the continuous force.\n\nSo the statement is True.",
+        "**C.** → True\n\nForm the three-step ratio from the table.\n\n$$\\frac{P(3)}{P(0)}=\\frac{192}{81}=\\frac{64}{27}$$\n\nThe same ratio is the cube of the unit factor.\n\n$$\\bigl(\\tfrac{4}{3}\\bigr)^{3}=\\frac{64}{27}$$\n\nSo the statement is True.",
+        "**D.** → False\n\nFirst differences of a geometric sequence are themselves geometric with the same ratio.\n\n$$27,\\\\,36,\\\\,48$$\n\n$$\\frac{36}{27}=\\frac{48}{36}=\\frac{4}{3}$$\n\nThat pattern is consistent with an exponential level, not a contradiction. The claim is false.\n\nSo the statement is False.",
+        "**E.** → True\n\nSet the closed form equal to $256$.\n\n$$81\\cdot\\bigl(\\tfrac{4}{3}\\bigr)^{t}=256$$\n\n$$\\bigl(\\tfrac{4}{3}\\bigr)^{t}=\\frac{256}{81}$$\n\n$$t=\\frac{\\ln(256/81)}{\\ln(4/3)}$$\n\nSo the statement is True."
       ],
-      "solution_overview": "Constant ratio $4/3$ diagnoses $P(t)=81(4/3)^{t}$ with force $\\ln(4/3)$. Geometric first differences are expected, not a disqualification.",
+      "solution_overview": "Constant consecutive ratios diagnose a pure geometric table.\n\n$$P(t)=81\\cdot\\bigl(\\tfrac{4}{3}\\bigr)^{t}$$\n\nThe continuous force is $k=\\ln(4/3)$. Geometric first differences are expected for an exponential level.",
       "difficulty_level": "2/5",
       "sort_order": 12,
       "placeholder": false,
@@ -428,13 +428,13 @@
         true
       ],
       "tactical_explanations": [
-        "**A.** → True\n\n$$m(28)=m_0 e^{-\\lambda\\cdot 28}=m_0 e^{-2\\ln 2}=\\tfrac14 m_0$$\n\nSo the statement is True.",
-        "**B.** → True\n\n$$e^{-\\lambda t}=\\tfrac18=2^{-3}$$\n\n$$\\lambda t=3\\ln 2\\qquad t=42$$\n\nSo the statement is True.",
-        "**C.** → True\n\n$$m(7)=m_0 e^{-(\\ln 2)/2}=m_0/\\sqrt{2}$$\n\n$$\\frac{\\ln(m_0/m(7))}{7}=\\frac{\\tfrac12\\ln 2}{7}=\\frac{\\ln 2}{14}=\\lambda$$\n\nSo the statement is True.",
-        "**D.** → False\n\nAn exponential with negative force stays positive for all finite $t$.\n\n$$m(t)=m_0 e^{-\\lambda t}>0$$\n\nSo the statement is False.",
-        "**E.** → True\n\n$$e^{-\\lambda t}=e^{-(\\ln 2)t/14}=2^{-t/14}$$\n\nSo the statement is True."
+        "**A.** → True\n\nTwo half-lives multiply by $2^{-2}$.\n\n$$m(28)=m_0 e^{-\\lambda\\cdot 28}$$\n\n$$m_0 e^{-\\lambda\\cdot 28}=m_0 e^{-2\\ln 2}$$\n\n$$m(28)=\\tfrac14 m_0$$\n\nSo the statement is True.",
+        "**B.** → True\n\nReaching one-eighth asks for three halvings.\n\n$$e^{-\\lambda t}=\\tfrac18$$\n\n$$\\tfrac18=2^{-3}$$\n\n$$\\lambda t=3\\ln 2$$\n\n$$t=3\\cdot 14$$\n\n$$3\\cdot 14=42$$\n\nSo the statement is True.",
+        "**C.** → True\n\nEvaluate the mass at $t=7$.\n\n$$m(7)=m_0 e^{-(\\ln 2)/2}$$\n\n$$m_0 e^{-(\\ln 2)/2}=m_0/\\sqrt{2}$$\n\nRecover the force from that window.\n\n$$\\frac{\\ln(m_0/m(7))}{7}=\\frac{\\tfrac12\\ln 2}{7}=\\frac{\\ln 2}{14}$$\n\nThe common value equals $\\lambda$.\n\nSo the statement is True.",
+        "**D.** → False\n\nAn exponential with negative force stays positive for every finite $t$.\n\n$$m(t)=m_0 e^{-\\lambda t}>0$$\n\nThe mass never becomes negative.\n\nSo the statement is False.",
+        "**E.** → True\n\nRewrite the exponential factor in base $2$.\n\n$$e^{-\\lambda t}=e^{-(\\ln 2)t/14}$$\n\n$$e^{-(\\ln 2)t/14}=2^{-t/14}$$\n\n$$m(t)=m_0\\cdot 2^{-t/14}$$\n\nThe rewrite is equivalent to the given model.\n\nSo the statement is True."
       ],
-      "solution_overview": "Half-life $14$ means $m(t)=m_0 2^{-t/14}$. Powers of $1/2$ settle fraction claims; the mass never crosses zero.",
+      "solution_overview": "Half-life $14$ fixes the decay force and the binary rewrite.\n\n$$m(t)=m_0\\cdot 2^{-t/14}\\qquad \\lambda=\\frac{\\ln 2}{14}$$\n\nPowers of $1/2$ settle fraction claims; the mass stays positive for all finite $t$.",
       "difficulty_level": "3/5",
       "sort_order": 13,
       "placeholder": false,
@@ -462,13 +462,13 @@
         true
       ],
       "tactical_explanations": [
-        "**A.** → True\n\n$$\\frac{P_\\alpha(t)}{P_\\beta(t)}=e^{(\\alpha-\\beta)t}>1\\quad(t>0,\\ \\alpha>\\beta)$$\n\nSo the statement is True.",
-        "**B.** → True\n\n$$\\frac{P_\\alpha(t)}{P_\\beta(t)}=e^{(\\alpha-\\beta)t}$$\n\nSo the statement is True.",
-        "**C.** → True\n\n$$T=\\frac{\\ln 2}{\\alpha}$$\n\nLarger positive force shortens the doubling clock.\n\nSo the statement is True.",
-        "**D.** → True\n\n$$800 e^{3\\alpha}=1600\\qquad e^{3\\alpha}=2\\qquad\\alpha=\\frac{\\ln 2}{3}$$\n\nSo the statement is True.",
-        "**E.** → True\n\n$$P_{-\\beta}(t)P_{\\beta}(t)=800^{2} e^{-\\beta t}e^{\\beta t}=800^{2}$$\n\nSo the statement is True."
+        "**A.** → True\n\nForm the ratio of two members.\n\n$$\\frac{P_\\alpha(t)}{P_\\beta(t)}=e^{(\\alpha-\\beta)t}$$\n\nWhen $\\alpha>\\beta$ and $t>0$ the exponent is positive, so the ratio exceeds $1$.\n\n$$P_\\alpha(t)>P_\\beta(t)$$\n\nSo the statement is True.",
+        "**B.** → True\n\nThe same ratio calculation cancels the shared start $800$.\n\n$$\\frac{P_\\alpha(t)}{P_\\beta(t)}=e^{(\\alpha-\\beta)t}$$\n\nThe ratio depends only on the force gap and on $t$.\n\nSo the statement is True.",
+        "**C.** → True\n\nDoubling solves $e^{\\alpha T}=2$ for $\\alpha>0$.\n\n$$T=\\frac{\\ln 2}{\\alpha}$$\n\nLarger positive force shortens the doubling clock.\n\nSo the statement is True.",
+        "**D.** → True\n\nImpose $P_\\alpha(3)=1600$.\n\n$$800 e^{3\\alpha}=1600$$\n\n$$e^{3\\alpha}=2$$\n\n$$\\alpha=\\frac{\\ln 2}{3}$$\n\nThat force is unique.\n\nSo the statement is True.",
+        "**E.** → True\n\nMultiply opposite-force members.\n\n$$P_{-\\beta}(t)P_{\\beta}(t)=800^{2} e^{-\\beta t}e^{\\beta t}$$\n\n$$800^{2}$$\n\nThe product is the constant $800^{2}$ for every $t$.\n\nSo the statement is True."
       ],
-      "solution_overview": "Force order lifts to path order for $t>0$. Ratios cancel the shared start. Opposite forces multiply back to the constant $800^{2}$.",
+      "solution_overview": "Every member of the family shares the start $800$.\n\n$$P_\\alpha(t)=800\\\\,e^{\\alpha t}$$\n\nForce order lifts to path order for $t>0$. Ratios cancel the shared start; opposite forces multiply back to $800^{2}$.",
       "difficulty_level": "4/5",
       "sort_order": 14,
       "placeholder": false,
@@ -495,13 +495,13 @@
         true
       ],
       "tactical_explanations": [
-        "**A.** → True\n\n$$\\ln P(t)=\\ln(P_0 e^{kt})=\\ln P_0+kt$$\n\nSo the statement is True.",
-        "**B.** → True\n\n$$\\ln P_0+kt=\\ln P_0+\\ln 4$$\n\n$$kt=\\ln 4\\qquad t=\\frac{\\ln 4}{k}$$\n\nSo the statement is True.",
-        "**C.** → True\n\n$$\\ln P_0+kt=0\\qquad t=-\\frac{\\ln P_0}{k}$$\n\nSo the statement is True.",
-        "**D.** → False\n\nWith $P_0=1$ one has $\\ln P(t)=kt$, which is negative whenever $t<0$.\n\n$$kt<0\\quad(t<0)$$\n\nSo the statement is False.",
-        "**E.** → True\n\n$$\\ln P(t)-\\ln P(0)=kt$$\n\n$$k=\\frac{1}{t}\\bigl(\\ln P(t)-\\ln P(0)\\bigr)\\quad(t\\neq 0)$$\n\nSo the statement is True."
+        "**A.** → True\n\nExpand the logarithm of the closed form.\n\n$$\\ln P(t)=\\ln(P_0 e^{kt})$$\n\n$$\\ln P_0+\\ln(e^{kt})$$\n\n$$\\ln P_0+kt$$\n\nThe identity holds for every $t$.\n\nSo the statement is True.",
+        "**B.** → True\n\nImpose $\\ln P(t)=\\ln(4P_0)$.\n\n$$\\ln P_0+kt=\\ln P_0+\\ln 4$$\n\n$$kt=\\ln 4$$\n\n$$t=\\frac{\\ln 4}{k}$$\n\nThe solving time is unique.\n\nSo the statement is True.",
+        "**C.** → True\n\nImpose $\\ln P(t)=0$.\n\n$$\\ln P_0+kt=0$$\n\n$$t=-\\frac{\\ln P_0}{k}$$\n\nThat is the unique real solution.\n\nSo the statement is True.",
+        "**D.** → False\n\nWith $P_0=1$ one has $\\ln P(t)=kt$.\n\nWhenever $t<0$ and $k>0$, the product $kt$ is negative.\n\n$$kt<0\\quad(t<0)$$\n\nSo $\\ln P(t)$ is not positive for every $t\\\neq 0$.\n\nSo the statement is False.",
+        "**E.** → True\n\nSubtract the initial log.\n\n$$\\ln P(t)-\\ln P(0)=kt$$\n\nDivide by any nonzero $t$.\n\n$$k=\\frac{1}{t}\\bigl(\\ln P(t)-\\ln P(0)\\bigr)\\quad(t\\\\ eq 0)$$\n\nThe difference quotient recovers the force.\n\nSo the statement is True."
       ],
-      "solution_overview": "Logarithms linearise the exponential: $\\ln P=\\ln P_0+kt$. Threshold equations are affine in $t$; force recovery is a difference quotient of $\\ln P$.",
+      "solution_overview": "Logarithms linearise the continuous path.\n\n$$\\ln P(t)=\\ln P_0+kt$$\n\nThreshold equations are affine in $t$. Force recovery is a difference quotient of $\\ln P$.",
       "difficulty_level": "5/5",
       "sort_order": 15,
       "placeholder": false,
@@ -528,13 +528,13 @@
         false
       ],
       "tactical_explanations": [
-        "**A.** → True\n\n$$\\frac{P(2)}{P(0)}=2=e^{2k}\\qquad k=\\frac{\\ln 2}{2}$$\n\nSo the statement is True.",
-        "**B.** → True\n\n$$P(1)=125 e^{k}=125\\sqrt{2}$$\n\nSo the statement is True.",
-        "**C.** → True\n\n$$P(6)=1000=125\\cdot 8=125 e^{6k}$$\n\n$$k_{\\mathrm{avg}}=k=\\frac{\\ln 2}{2}$$\n\nA pure exponential has constant force, so the window average equals $k$.\n\nSo the statement is True.",
-        "**D.** → True\n\n$$125\\cdot 2^{t/2}=2000\\qquad 2^{t/2}=16\\qquad t/2=4\\qquad t=8$$\n\nSo the statement is True.",
-        "**E.** → False\n\nThe discrete law $125\\cdot 2^{t}$ would give $P(2)=500$, but the table shows $250$.\n\n$$125\\cdot 2^{2}=500\\neq 250$$\n\nThe correct discrete rewrite is $125\\cdot 2^{t/2}$, not $125\\cdot 2^{t}$.\n\nSo the statement is False."
+        "**A.** → True\n\nEach two-unit step doubles.\n\n$$\\frac{P(2)}{P(0)}=2=e^{2k}$$\n\n$$k=\\frac{\\ln 2}{2}$$\n\nThe continuous force is $(\\ln 2)/2$.\n\nSo the statement is True.",
+        "**B.** → True\n\nThe one-unit multiplier is the square root of the two-unit factor.\n\n$$e^{k}=\\sqrt{2}$$\n\n$$P(1)=125 e^{k}$$\n\n$$125 e^{k}=125\\sqrt{2}$$\n\nSo the statement is True.",
+        "**C.** → True\n\nMatch the endpoint $P(6)=1000$ to a single exponential from the start.\n\n$$1000=125 e^{6k_{\\mathrm{avg}}}$$\n\n$$e^{6k_{\\mathrm{avg}}}=8$$\n\n$$8=2^{3}$$\n\n$$k_{\\mathrm{avg}}=\\frac{\\ln 2}{2}$$\n\nA pure exponential has constant force, so the window average equals $k$.\n\nSo the statement is True.",
+        "**D.** → True\n\nSet the closed form equal to $2000$.\n\n$$125\\cdot 2^{t/2}=2000$$\n\n$$2^{t/2}=16$$\n\n$$t/2=4$$\n\n$$t=8$$\n\nSo the statement is True.",
+        "**E.** → False\n\nThe discrete law $125\\cdot 2^{t}$ would already fail at $t=2$.\n\n$$125\\cdot 2^{2}=500$$\n\n$$500\\ eq 250$$\n\nThe correct discrete rewrite is $125\\cdot 2^{t/2}$, not $125\\cdot 2^{t}$.\n\nSo the statement is False."
       ],
-      "solution_overview": "Two-unit doubling forces $k=\\ln 2/2$. The matching geometric form is $125\\cdot 2^{t/2}$; writing $2^{t}$ overshoots the table.",
+      "solution_overview": "Two-unit doubling on the table fixes the continuous force.\n\n$$P(t)=125\\,e^{kt}\\qquad k=\\frac{\\ln 2}{2}$$\n\nEquivalently $P(t)=125\\cdot 2^{t/2}$. Letters reuse that closed form; writing $2^{t}$ overshoots the table.",
       "difficulty_level": "1/5",
       "sort_order": 16,
       "placeholder": false,
@@ -563,13 +563,13 @@
         true
       ],
       "tactical_explanations": [
-        "**A.** → True\n\n$$P(4)=100\\cdot e^{2\\ln 2}=100\\cdot 4=400$$\n\nSo the statement is True.",
-        "**B.** → True\n\n$$P(6)=400\\cdot e^{2\\ln 2}=400\\cdot 4=1600$$\n\nSo the statement is True.",
-        "**C.** → True\n\nAfter the switch the force is $\\ln 2$, so doubling takes time $1$.\n\n$$e^{(\\ln 2)\\cdot 1}=2$$\n\nSo the statement is True.",
-        "**D.** → False\n\nExtending the old force gives a smaller height.\n\n$$100\\cdot e^{(\\ln 2/2)\\cdot 6}=100\\cdot 2^{3}=800\\neq 1600$$\n\nSo the statement is False.",
-        "**E.** → True\n\n$$1600=100 e^{6k_{\\mathrm{avg}}}\\qquad e^{6k_{\\mathrm{avg}}}=16=2^{4}$$\n\n$$k_{\\mathrm{avg}}=\\frac{4\\ln 2}{6}=\\frac{2\\ln 2}{3}$$\n\nSo the statement is True."
+        "**A.** → True\n\nSubstitute the switch time into the first piece.\n\n$$P(4)=100\\cdot e^{(\\ln 2/2)\\cdot 4}$$\n\n$$e^{2\\ln 2}=4$$\n\n$$P(4)=100\\cdot 4$$\n\n$$100\\cdot 4=400$$\n\nSo the statement is True.",
+        "**B.** → True\n\nFrom the second piece, advance two units past the switch.\n\n$$P(6)=400\\cdot e^{(\\ln 2)\\cdot 2}$$\n\n$$e^{2\\ln 2}=4$$\n\n$$P(6)=400\\cdot 4$$\n\n$$400\\cdot 4=1600$$\n\nSo the statement is True.",
+        "**C.** → True\n\nAfter the switch the force is $\\ln 2$, so doubling takes time $1$.\n\n$$e^{(\\ln 2)\\cdot 1}=2$$\n\nThe time from the switch to the next doubling of $P(4)$ is therefore $1$.\n\nSo the statement is True.",
+        "**D.** → False\n\nExtending the original force past $t=4$ ignores the policy raise.\n\n$$100\\cdot e^{(\\ln 2/2)\\cdot 6}=100\\cdot 2^{3}$$\n\n$$100\\cdot 2^{3}=800$$\n\n$$800\\ eq 1600$$\n\nThe piecewise value at $t=6$ is larger.\n\nSo the statement is False.",
+        "**E.** → True\n\nMatch the endpoint $P(6)=1600$ to a single exponential from the start.\n\n$$1600=100 e^{6k_{\\mathrm{avg}}}$$\n\n$$e^{6k_{\\mathrm{avg}}}=16$$\n\n$$16=2^{4}$$\n\n$$k_{\\mathrm{avg}}=\\frac{4\\ln 2}{6}=\\frac{2\\ln 2}{3}$$\n\nSo the statement is True."
       ],
-      "solution_overview": "Match at $t=4$ to get $P(4)=400$, then grow with force $\\ln 2$. Endpoint matching on $[0,6]$ recovers average force $2\\ln 2/3$.",
+      "solution_overview": "The first piece runs to the switch, then the raised force continues from the matched height.\n\n$$P(4)=400$$\n\nAfter $t=4$ the force is $\\ln 2$. Later heights and the average force reuse $P(4)=400$.",
       "difficulty_level": "2/5",
       "sort_order": 17,
       "placeholder": false,
@@ -597,13 +597,13 @@
         true
       ],
       "tactical_explanations": [
-        "**A.** → True\n\n$$P(t)=10^{6}\\cdot 2\\,e^{(\\ln 2/10)t}$$\n\nA positive constant factor does not change the continuous force.\n\nSo the statement is True.",
-        "**B.** → True\n\n$$e^{(\\ln 2/10)T}=2\\qquad T=10$$\n\nSo the statement is True.",
-        "**C.** → True\n\n$$M(10)=2\\cdot e^{\\ln 2}=4$$\n\n$$P(10)=4\\cdot 10^{6}$$\n\nSo the statement is True.",
-        "**D.** → False\n\nConstants scale the level, not the logarithmic force.\n\n$$\\frac{P'}{P}=\\frac{M'}{M}=\\frac{\\ln 2}{10}$$\n\nSo the statement is False.",
-        "**E.** → True\n\n$$\\frac{P(20)}{P(5)}=e^{(\\ln 2/10)(15)}=2^{3/2}=2\\sqrt{2}$$\n\nSo the statement is True."
+        "**A.** → True\n\nWrite the raw headcount explicitly.\n\n$$P(t)=10^{6}\\cdot 2\\,e^{(\\ln 2/10)t}$$\n\nA positive constant factor does not change the logarithmic force.\n\n$$\\frac{P'}{P}=\\frac{M'}{M}=\\frac{\\ln 2}{10}$$\n\nBoth paths share the force $(\\ln 2)/10$.\n\nSo the statement is True.",
+        "**B.** → True\n\nDoubling the raw headcount solves the same exponential equation.\n\n$$e^{(\\ln 2/10)T}=2$$\n\n$$T=10$$\n\nSo the statement is True.",
+        "**C.** → True\n\nAt $t=10$ the millions path has doubled once.\n\n$$M(10)=2\\cdot e^{\\ln 2}$$\n\n$$2\\cdot e^{\\ln 2}=4$$\n\n$$P(10)=4\\cdot 10^{6}$$\n\nSo the statement is True.",
+        "**D.** → False\n\nConstants scale the level, not the logarithmic force.\n\n$$\\frac{P'}{P}=\\frac{M'}{M}=\\frac{\\ln 2}{10}$$\n\nThe force of $P$ is not $10^{6}$ times the force of $M$.\n\nSo the statement is False.",
+        "**E.** → True\n\nThe ratio of two levels depends only on the shared force and the time gap.\n\n$$\\frac{P(20)}{P(5)}=e^{(\\ln 2/10)(15)}$$\n\n$$e^{(3/2)\\ln 2}=2^{3/2}$$\n\n$$2^{3/2}=2\\sqrt{2}$$\n\nSo the statement is True."
       ],
-      "solution_overview": "Scaling by $10^{6}$ leaves the force $\\ln 2/10$ unchanged. Doubling time and ratios are read from that shared force.",
+      "solution_overview": "Raw headcount is a positive constant times the millions path.\n\n$$P(t)=10^{6}M(t)=10^{6}\\cdot 2\\,e^{(\\ln 2/10)t}$$\n\nA constant scale leaves the continuous force unchanged. Doubling times and ratios reuse $k=(\\ln 2)/10$.",
       "difficulty_level": "3/5",
       "sort_order": 18,
       "placeholder": false,
@@ -630,13 +630,13 @@
         false
       ],
       "tactical_explanations": [
-        "**A.** → True\n\n$$a^{t}=e^{t\\ln a}\\qquad k=\\ln a$$\n\nSo the statement is True.",
-        "**B.** → True\n\n$$\\ln 8=3\\ln 2$$\n\n$$P(2)=8^{2}=64=e^{2\\cdot 3\\ln 2}$$\n\nSo the statement is True.",
-        "**C.** → True\n\n$$a^{T}=2\\qquad T=\\frac{\\ln 2}{\\ln a}=\\log_{a} 2$$\n\nSo the statement is True.",
-        "**D.** → True\n\n$$0<a<1\\implies\\ln a<0$$\n\n$$\\lim_{t\\to+\\infty}a^{t}=0$$\n\nSo the statement is True.",
-        "**E.** → False\n\nThe algebraic rewrite $(1+(a-1))^{t}$ is discrete-looking but does not identify the continuous force with $a-1$.\n\n$$k=\\ln a\\neq a-1\\quad(a\\neq 1)$$\n\nSo the statement is False."
+        "**A.** → True\n\nApply the change-of-base identity.\n\n$$a^{t}=e^{t\\ln a}$$\n\n$$k=\\ln a$$\n\nThe continuous force is $\\ln a$ for every real $t$.\n\nSo the statement is True.",
+        "**B.** → True\n\nWith $a=8$, rewrite the logarithm.\n\n$$\\ln 8=3\\ln 2$$\n\n$$P(t)=e^{3t\\ln 2}$$\n\nEvaluate at $t=2$.\n\n$$P(2)=8^{2}$$\n\n$$8^{2}=64$$\n\nSo the statement is True.",
+        "**C.** → True\n\nDoubling solves $a^{T}=2$ for $a>1$.\n\n$$T=\\frac{\\ln 2}{\\ln a}$$\n\n$$\\frac{\\ln 2}{\\ln a}=\\log_{a} 2$$\n\nSo the statement is True.",
+        "**D.** → True\n\nWhen $0<a<1$ the logarithm is negative.\n\n$$\\ln a<0$$\n\nA negative force sends the path to $0$ at infinity.\n\n$$\\lim_{t\\to+\\infty}a^{t}=0$$\n\nSo the statement is True.",
+        "**E.** → False\n\nThe algebraic rewrite $(1+(a-1))^{t}$ does not identify the continuous force with $a-1$.\n\n$$k=\\ln a$$\n\n$$\\ln a\\ eq a-1\\quad(a\\ eq 1)$$\n\nSo the statement is False."
       ],
-      "solution_overview": "Change-of-base writes $a^{t}=e^{t\\ln a}$. Doubling time is $\\log_a 2$. The gap $a-1$ is not the continuous force.",
+      "solution_overview": "Change-of-base writes every exponential base as a continuous force.\n\n$$a^{t}=e^{t\\ln a}\\qquad k=\\ln a$$\n\nDoubling time is $\\log_a 2$. The gap $a-1$ is not the continuous force.",
       "difficulty_level": "4/5",
       "sort_order": 19,
       "placeholder": false,
@@ -663,13 +663,13 @@
         true
       ],
       "tactical_explanations": [
-        "**A.** → True\n\nThe ODE $P'=kP$ has solutions $P(t)=Ce^{kt}$; matching at $t=1$ fixes $C=P(1)e^{-k}$.\n\n$$P(t)=P(1)e^{k(t-1)}$$\n\nSo the statement is True.",
-        "**B.** → True\n\nA constant consecutive ratio restricts to a geometric sequence on the integers.\n\n$$P(n)=P(1)r^{n-1}$$\n\nSo the statement is True.",
-        "**C.** → True\n\n$$\\ln P(t)=a+bt\\implies P(t)=e^{a}e^{bt}$$\n\nSo the statement is True.",
-        "**D.** → True\n\nImpose $P(2t)=2P(t)$ on $P(t)=P_0 e^{kt}$.\n\n$$e^{2kt}=2 e^{kt}\\qquad e^{kt}=2\\quad\\forall t>0$$\n\nNo real $k$ makes $e^{kt}$ equal the constant $2$ for every positive $t$.\n\nSo the statement is True.",
-        "**E.** → True\n\n$$t\\frac{P'}{P}=\\alpha\\implies P(t)=C t^{\\alpha}$$\n\nA power in $t$ is exponential in $t$ only when $\\alpha=0$.\n\nSo the statement is True."
+        "**A.** → True\n\nThe ODE $P'=kP$ has solutions of the form $P(t)=Ce^{kt}$.\n\nMatching the value at $t=1$ fixes the constant.\n\n$$C=P(1)e^{-k}$$\n\n$$P(t)=P(1)e^{k(t-1)}$$\n\nSo the statement is True.",
+        "**B.** → True\n\nA constant consecutive ratio restricts to a geometric sequence on the positive integers.\n\n$$\\frac{P(t+1)}{P(t)}=r$$\n\n$$P(n)=P(1)r^{n-1}$$\n\nSo the statement is True.",
+        "**C.** → True\n\nAn affine logarithm means an exponential level.\n\n$$\\ln P(t)=a+bt$$\n\n$$P(t)=e^{a}e^{bt}$$\n\nSo $P$ is continuous-exponential on $(0,\\infty)$.\n\nSo the statement is True.",
+        "**D.** → True\n\nImpose $P(2t)=2P(t)$ on $P(t)=P_0 e^{kt}$.\n\n$$P_0 e^{2kt}=2 P_0 e^{kt}$$\n\n$$e^{kt}=2\\quad\\forall t>0$$\n\nNo real $k$ makes $e^{kt}$ equal the constant $2$ for every positive $t$.\n\nSo the statement is True.",
+        "**E.** → True\n\nConstant elasticity is a separable ODE for a power.\n\n$$t\\frac{P'}{P}=\\alpha$$\n\n$$P(t)=C t^{\\alpha}$$\n\nA power in $t$ is exponential in $t$ only when $\\alpha=0$.\n\nSo the statement is True."
       ],
-      "solution_overview": "ODE, constant ratio, and affine $\\ln P$ each characterise continuous exponentials. The relation $P(2t)=2P(t)$ never holds for a continuous-exponential path. Constant elasticity produces powers, not exponentials.",
+      "solution_overview": "Three classical footprints characterise continuous exponentials: the ODE $P'=kP$, constant consecutive ratios, and an affine logarithm.\n\n$$P'(t)=kP(t)\\iff P(t)=Ce^{kt}$$\n\nThe relation $P(2t)=2P(t)$ never holds for a continuous-exponential path. Constant elasticity produces powers, not exponentials.",
       "difficulty_level": "5/5",
       "sort_order": 20,
       "placeholder": false,
@@ -696,13 +696,13 @@
         true
       ],
       "tactical_explanations": [
-        "**A.** → True\n\n$$e^{12k}=2\\qquad k=\\frac{\\ln 2}{12}$$\n\n$$P(24)=500\\cdot 4=2000$$\n\nSo the statement is True.",
-        "**B.** → True\n\n$$500\\cdot 2^{t/12}=4000\\qquad 2^{t/12}=8\\qquad t=36$$\n\nSo the statement is True.",
-        "**C.** → False\n\n$$\\frac{P(12)-P(0)}{12P(0)}=\\frac{1}{12}$$\n\n$$k=\\frac{\\ln 2}{12}\\neq\\frac{1}{12}$$\n\nSo the statement is False.",
-        "**D.** → True\n\n$$e^{kt}=\\tfrac12\\qquad t=-\\frac{\\ln 2}{k}=-12$$\n\nSo the statement is True.",
-        "**E.** → True\n\n$$P(6)=500\\sqrt{2}$$\n\n$$P(6)^{2}=500^{2}\\cdot 2=P(0)P(12)$$\n\nSo the statement is True."
+        "**A.** → True\n\nThe twelve-unit growth factor is $2$.\n\n$$e^{12k}=2$$\n\n$$k=\\frac{\\ln 2}{12}$$\n\nTwo doubling intervals multiply the start by four.\n\n$$P(24)=500\\cdot 4$$\n\n$$500\\cdot 4=2000$$\n\nSo the statement is True.",
+        "**B.** → True\n\nReaching $4000$ asks for growth factor $8=2^{3}$.\n\n$$500\\cdot 2^{t/12}=4000$$\n\n$$2^{t/12}=8$$\n\n$$t=36$$\n\nSo the statement is True.",
+        "**C.** → False\n\nThe average relative change over $[0,12]$ is the linear rise per unit time.\n\n$$\\frac{P(12)-P(0)}{12P(0)}=\\frac{1}{12}$$\n\nThe continuous force is the log-rate.\n\n$$k=\\frac{\\ln 2}{12}$$\n\n$$\\frac{\\ln 2}{12}\\ eq\\frac{1}{12}$$\n\nSo the statement is False.",
+        "**D.** → True\n\nHalving asks for growth factor $1/2$.\n\n$$e^{kt}=\\tfrac12$$\n\n$$t=-\\frac{\\ln 2}{k}=-12$$\n\nA negative abscissa lies outside the plotted window $t\\ge 0$.\n\nSo the statement is True.",
+        "**E.** → True\n\nAt the time midpoint the continuous path takes the geometric mean of the endpoints.\n\n$$P(6)=500\\sqrt{2}$$\n\nSquare that midpoint height.\n\n$$P(6)^{2}=500^{2}\\cdot 2$$\n\n$$500^{2}\\cdot 2=P(0)P(12)$$\n\nThe identity holds.\n\nSo the statement is True."
       ],
-      "solution_overview": "From $P(12)/P(0)=2$ recover $k=\\ln 2/12$. Threshold times are multiples of the doubling clock. The linear relative rise $1/12$ is not $k$.",
+      "solution_overview": "The marked heights fix a single continuous force.\n\n$$P(t)=500\\,e^{kt}\\qquad k=\\frac{\\ln 2}{12}$$\n\nThreshold times are multiples of the doubling clock. The linear relative rise $1/12$ is not $k$.",
       "difficulty_level": "1/5",
       "sort_order": 21,
       "placeholder": false,
@@ -730,13 +730,13 @@
         true
       ],
       "tactical_explanations": [
-        "**A.** → True\n\n$$\\Delta\\ln P=\\ln 2$$\n\n$$k=\\ln 2$$\n\nSo the statement is True.",
-        "**B.** → True\n\n$$P(t)=e^{\\ln 40+t\\ln 2}=40\\cdot 2^{t}$$\n\nSo the statement is True.",
-        "**C.** → True\n\n$$P(3)=40\\cdot 8=320$$\n\nSo the statement is True.",
+        "**A.** → True\n\nRead the first differences of the log-row.\n\n$$\\Delta\\ln P=\\ln 2$$\n\nEqual log-increments on unit steps mean constant force.\n\n$$k=\\ln 2$$\n\nSo the statement is True.",
+        "**B.** → True\n\nExponentiate the affine log-row.\n\n$$P(t)=e^{\\ln 40+t\\ln 2}$$\n\n$$P(t)=40\\cdot 2^{t}$$\n\nSo the statement is True.",
+        "**C.** → True\n\nSubstitute $t=3$ into the closed form $P(t)=40\\cdot 2^{t}$.\n\n$$P(3)=40\\cdot 2^{3}$$\n\n$$40\\cdot 8=320$$\n\n$$P(3)=320$$\n\nSo the statement is True.",
         "**D.** → False\n\nAn arithmetic log-row means a geometric level row.\n\n$$P(0),P(1),P(2),P(3)=40,80,160,320$$\n\nThose levels double each step; they are not an arithmetic sequence.\n\nSo the statement is False.",
-        "**E.** → True\n\n$$\\frac{1}{3}\\bigl(\\ln 40+3\\ln 2-\\ln 40\\bigr)=\\ln 2$$\n\nSo the statement is True."
+        "**E.** → True\n\nForm the three-step difference quotient of $\\ln P$.\n\n$$\\frac{1}{3}\\bigl(\\ln P(3)-\\ln P(0)\\bigr)$$\n\n$$\\frac{1}{3}\\bigl(\\ln 40+3\\ln 2-\\ln 40\\bigr)=\\ln 2$$\n\nThe same force is recovered.\n\nSo the statement is True."
       ],
-      "solution_overview": "Constant log-increments diagnose force $\\ln 2$ and the closed form $40\\cdot 2^{t}$. Arithmetic in $\\ln P$ is geometric in $P$.",
+      "solution_overview": "Constant log-increments diagnose constant force.\n\n$$\\ln P(t)=\\ln 40+t\\ln 2$$\n\n$$P(t)=40\\cdot 2^{t}$$\n\nArithmetic in $\\ln P$ is geometric in $P$.",
       "difficulty_level": "2/5",
       "sort_order": 22,
       "placeholder": false,
@@ -764,13 +764,13 @@
         true
       ],
       "tactical_explanations": [
-        "**A.** → True\n\n$$\\frac{A(t)}{B(t)}=e^{(\\alpha-\\beta)t}>1\\quad(t>0)$$\n\nSo the statement is True.",
-        "**B.** → True\n\n$$\\partial_t\\log(A/B)=\\alpha-\\beta>0$$\n\nSo the statement is True.",
-        "**C.** → True\n\n$$T_A=\\frac{\\ln 2}{\\alpha}<\\frac{\\ln 2}{\\beta}=T_B$$\n\nSo the statement is True.",
-        "**D.** → False\n\nThe ratio $A/B$ stays above $1$ for every $t>0$, so $B$ never overtakes $A$.\n\nSo the statement is False.",
-        "**E.** → True\n\n$$A(t)B(t)=P_0^{2} e^{(\\alpha+\\beta)t}$$\n\nSo the statement is True."
+        "**A.** → True\n\nForm the ratio of the two paths.\n\n$$\\frac{A(t)}{B(t)}=e^{(\\alpha-\\beta)t}$$\n\nFor $t>0$ the exponent is positive, so the ratio exceeds $1$.\n\n$$A(t)>B(t)$$\n\nSo the statement is True.",
+        "**B.** → True\n\nDifferentiate the log-ratio.\n\n$$\\partial_t\\log(A/B)=\\alpha-\\beta$$\n\n$$\\alpha-\\beta>0$$\n\nThe ratio is therefore strictly increasing in $t$.\n\nSo the statement is True.",
+        "**C.** → True\n\nCompare the two doubling clocks.\n\n$$T_A=\\frac{\\ln 2}{\\alpha}$$\n\n$$T_B=\\frac{\\ln 2}{\\beta}$$\n\n$$T_A<T_B$$\n\nThe larger force shortens the doubling time.\n\nSo the statement is True.",
+        "**D.** → False\n\nThe ratio $A/B$ stays above $1$ for every $t>0$.\n\n$$e^{(\\alpha-\\beta)t}>1\\quad(t>0)$$\n\nHence $B$ never overtakes $A$.\n\nSo the statement is False.",
+        "**E.** → True\n\nMultiply the two closed forms.\n\n$$A(t)B(t)=P_0^{2} e^{(\\alpha+\\beta)t}$$\n\nThe product carries force $\\alpha+\\beta$.\n\nSo the statement is True."
       ],
-      "solution_overview": "Larger force dominates for all $t>0$, shortens doubling time, and adds in the product.",
+      "solution_overview": "The two paths share the start $P_0$ and differ only in force.\n\n$$A(t)=P_0 e^{\\alpha t}\\qquad B(t)=P_0 e^{\\beta t}$$\n\nWith $\\alpha>\\beta>0$ the ratio $A/B=e^{(\\alpha-\\beta)t}$ stays above $1$ for every $t>0$.",
       "difficulty_level": "3/5",
       "sort_order": 23,
       "placeholder": false,
@@ -797,13 +797,13 @@
         true
       ],
       "tactical_explanations": [
-        "**A.** → True\n\n$$y(t)=y_0 e^{(\\alpha-\\beta)t}$$\n\nSo the statement is True.",
-        "**B.** → True\n\n$$\\alpha=\\beta\\implies y(t)=y_0$$\n\nSo the statement is True.",
-        "**C.** → True\n\n$$e^{(\\alpha-\\beta)T}=2\\qquad T=\\frac{\\ln 2}{\\alpha-\\beta}$$\n\nSo the statement is True.",
-        "**D.** → False\n\nThe correct exponent is the difference, not the sum.\n\n$$\\alpha-\\beta\\neq\\alpha+\\beta\\quad(\\beta\\neq 0)$$\n\nSo the statement is False.",
-        "**E.** → True\n\n$$e^{(\\ln 2)T}=4=2^{2}\\qquad T=2$$\n\nSo the statement is True."
+        "**A.** → True\n\nDivide the two closed forms.\n\n$$y(t)=\\frac{Y_0 e^{\\alpha t}}{N_0 e^{\\beta t}}=y_0 e^{(\\alpha-\\beta)t}$$\n\nThe per-capita force is exactly $\\alpha-\\beta$.\n\nSo the statement is True.",
+        "**B.** → True\n\nIf the forces agree, the exponent vanishes.\n\n$$\\alpha=\\beta\\implies y(t)=y_0$$\n\nPer-capita output is then constant in time.\n\nSo the statement is True.",
+        "**C.** → True\n\nDoubling solves $e^{(\\alpha-\\beta)T}=2$ when $\\alpha>\\beta$.\n\n$$T=\\frac{\\ln 2}{\\alpha-\\beta}$$\n\nThat is the value required by the claim.\n\nSo the statement is True.",
+        "**D.** → False\n\nThe correct exponent is the difference, not the sum.\n\n$$y(t)=y_0 e^{(\\alpha-\\beta)t}$$\n\n$$\\alpha-\\beta\\ eq\\alpha+\\beta\\quad(\\beta\\ eq 0)$$\n\nThe claimed identity with $(\\alpha+\\beta)t$ fails.\n\nSo the statement is False.",
+        "**E.** → True\n\nWith $\\alpha-\\beta=\\ln 2$, impose $y(T)=4y_0$.\n\n$$e^{(\\ln 2)T}=4$$\n\n$$4=2^{2}$$\n\n$$T=2$$\n\nSo the statement is True."
       ],
-      "solution_overview": "Per capita carries force $\\alpha-\\beta$. Equal letters freeze $y$; the sum $\\alpha+\\beta$ is the wrong exponent.",
+      "solution_overview": "Per-capita output is the ratio of the two continuous aggregates.\n\n$$y(t)=y_0 e^{(\\alpha-\\beta)t}$$\n\nEqual letters freeze $y$. The sum $\\alpha+\\beta$ is the wrong exponent for the ratio.",
       "difficulty_level": "4/5",
       "sort_order": 24,
       "placeholder": false,
@@ -830,13 +830,13 @@
         true
       ],
       "tactical_explanations": [
-        "**A.** → True\n\n$$e^{-\\lambda H}=\\tfrac12\\qquad\\lambda=\\frac{\\ln 2}{H}$$\n\nSo the statement is True.",
-        "**B.** → True\n\n$$m(3H)=m_0 e^{-3\\ln 2}=\\tfrac18 m_0$$\n\nSo the statement is True.",
-        "**C.** → True\n\n$$e^{-\\lambda t}=\\tfrac15\\qquad t=\\frac{\\ln 5}{\\lambda}=H\\frac{\\ln 5}{\\ln 2}$$\n\nSo the statement is True.",
-        "**D.** → False\n\n$$\\frac{1}{H}\\neq\\frac{\\ln 2}{H}$$\n\nThe half-life solving $e^{-t/H}=1/2$ would be $t=H\\ln 2\\neq H$.\n\nSo the statement is False.",
-        "**E.** → True\n\n$$e^{-(\\ln 2)t/H}=2^{-t/H}$$\n\nSo the statement is True."
+        "**A.** → True\n\nThe half-life condition is a pure exponential equation.\n\n$$e^{-\\lambda H}=\\tfrac12$$\n\n$$\\lambda=\\frac{\\ln 2}{H}$$\n\nSo the statement is True.",
+        "**B.** → True\n\nThree half-lives multiply by $2^{-3}$.\n\n$$m(3H)=m_0 e^{-3\\ln 2}$$\n\n$$m(3H)=\\tfrac18 m_0$$\n\nSo the statement is True.",
+        "**C.** → True\n\nReaching one-fifth solves for a non-integer number of half-lives.\n\n$$e^{-\\lambda t}=\\tfrac15$$\n\n$$t=\\frac{\\ln 5}{\\lambda}=H\\frac{\\ln 5}{\\ln 2}$$\n\nSo the statement is True.",
+        "**D.** → False\n\nCompare the true force with the linearised substitute.\n\n$$\\frac{1}{H}\\\\ eq\\frac{\\ln 2}{H}$$\n\nUnder force $1/H$, the half-life solving $e^{-t/H}=1/2$ would be $t=H\\ln 2\\\neq H$.\n\nReplacing $\\lambda$ by $1/H$ therefore changes the half-life.\n\nSo the statement is False.",
+        "**E.** → True\n\nRewrite the exponential factor in base $2$.\n\n$$e^{-(\\ln 2)t/H}=2^{-t/H}$$\n\n$$m(t)=m_0\\cdot 2^{-t/H}$$\n\nThe rewrite is equivalent to the recovered model.\n\nSo the statement is True."
       ],
-      "solution_overview": "Half-life $H$ forces $\\lambda=\\ln 2/H$ and the binary rewrite $2^{-t/H}$. Substituting $1/H$ for $\\lambda$ breaks the half-life.",
+      "solution_overview": "Half-life $H$ fixes the decay force and the binary rewrite.\n\n$$\\lambda=\\frac{\\ln 2}{H}\\qquad m(t)=m_0\\cdot 2^{-t/H}$$\n\nFraction claims are powers of $1/2$. Substituting $1/H$ for $\\lambda$ breaks the half-life.",
       "difficulty_level": "5/5",
       "sort_order": 25,
       "placeholder": false,
@@ -863,13 +863,13 @@
         false
       ],
       "tactical_explanations": [
-        "**A.** → True\n\n$$e^{k\\ln(P/Q)}=\\bigl(e^{\\ln(P/Q)}\\bigr)^{k}=(P/Q)^{k}$$\n\nSo the statement is True.",
-        "**B.** → True\n\n$$(2Q/Q)^{2}=2^{2}=4$$\n\nSo the statement is True.",
-        "**C.** → True\n\n$$e^{k\\ln P-k\\ln Q}=\\frac{e^{k\\ln P}}{e^{k\\ln Q}}$$\n\nSo the statement is True.",
-        "**D.** → True\n\n$$\\bigl(\\tfrac{P}{Q}\\bigr)^{\\log_{P/Q} 5}=5$$\n\nSo the statement is True.",
-        "**E.** → False\n\nThe logarithm difference rule is an identity.\n\n$$\\ln(P/Q)=\\ln P-\\ln Q$$\n\nSubstitution leaves the nested expression unchanged.\n\nSo the statement is False."
+        "**A.** → True\n\nCollapse the nest through the inverse pair $\\exp$ and $\\ln$.\n\n$$e^{k\\ln(P/Q)}=\\bigl(e^{\\ln(P/Q)}\\bigr)^{k}$$\n\n$$\\bigl(\\frac{P}{Q}\\bigr)^{k}$$\n\nSo the statement is True.",
+        "**B.** → True\n\nSubstitute $k=2$ and $P=2Q$ into the simplified nest.\n\n$$e^{k\\ln(P/Q)}=\\bigl(\\frac{P}{Q}\\bigr)^{k}$$\n\n$$\\bigl(\\frac{2Q}{Q}\\bigr)^{2}=2^{2}$$\n\n$$4$$\n\nThe expression equals $4$.\n\nSo the statement is True.",
+        "**C.** → True\n\nSplit the logarithm and the exponential.\n\n$$e^{k\\ln(P/Q)}=e^{k\\ln P-k\\ln Q}$$\n\n$$\\frac{e^{k\\ln P}}{e^{k\\ln Q}}$$\n\nThe identity holds for every positive $P,Q$.\n\nSo the statement is True.",
+        "**D.** → True\n\nBy definition of the logarithm in base $P/Q$.\n\n$$\\bigl(\\tfrac{P}{Q}\\bigr)^{\\log_{P/Q} 5}=5$$\n\nThe nest equals $5$.\n\nSo the statement is True.",
+        "**E.** → False\n\nThe logarithm difference rule is an identity.\n\n$$\\ln(P/Q)=\\ln P-\\ln Q$$\n\nSubstitution leaves the nested expression unchanged, so the claim is false.\n\nSo the statement is False."
       ],
-      "solution_overview": "The nest $e^{k\\ln(P/Q)}$ is the relative power $(P/Q)^{k}$. Log-difference is free; change-of-base recovers prescribed values.",
+      "solution_overview": "The nest $e^{k\\ln(P/Q)}$ is the relative power $(P/Q)^{k}$.\n\n$$e^{k\\ln(P/Q)}=\\bigl(\\frac{P}{Q}\\bigr)^{k}$$\n\nLog-difference is free. Change-of-base recovers prescribed values.",
       "difficulty_level": "1/5",
       "sort_order": 26,
       "placeholder": false,
@@ -896,13 +896,13 @@
         true
       ],
       "tactical_explanations": [
-        "**A.** → True\n\n$$\\frac{A(t)}{B(t)}=e^{\\delta t}=e^{(\\ln 2)t/8}=2^{t/8}$$\n\nSo the statement is True.",
-        "**B.** → True\n\n$$2^{8/8}=2$$\n\nSo the statement is True.",
-        "**C.** → True\n\n$$e^{\\delta t}=2\\qquad\\delta t=\\ln 2\\qquad t=8$$\n\nSo the statement is True.",
-        "**D.** → True\n\nEqual starts and unequal forces meet only at the origin of time.\n\n$$A(t)=B(t)\\iff e^{\\delta t}=1\\iff t=0$$\n\nSo the statement is True.",
-        "**E.** → True\n\n$$\\frac{A}{B}=e^{\\delta t}$$\n\nSo the statement is True."
+        "**A.** → True\n\nDivide the two closed forms.\n\n$$\\frac{A(t)}{B(t)}=e^{(k_A-k_B)t}=e^{\\delta t}$$\n\nRewrite in base $2$.\n\n$$e^{(\\ln 2)t/8}=2^{t/8}$$\n\nSo the statement is True.",
+        "**B.** → True\n\nSubstitute $t=8$ into the ratio closed form.\n\n$$\\frac{A(t)}{B(t)}=2^{t/8}$$\n\n$$2^{8/8}=2$$\n\n$$\\frac{A(8)}{B(8)}=2$$\n\nSo the statement is True.",
+        "**C.** → True\n\nImpose $A(t)=2B(t)$, that is ratio equal to $2$.\n\n$$e^{\\delta t}=2$$\n\n$$\\delta t=\\ln 2$$\n\n$$t=\\frac{\\ln 2}{\\delta}=8$$\n\nSo the statement is True.",
+        "**D.** → True\n\nEqual starts and unequal forces meet only at the origin of time.\n\n$$A(t)=B(t)\\iff e^{\\delta t}=1$$\n\n$$t=0$$\n\nThe only crossing time is $t=0$.\n\nSo the statement is True.",
+        "**E.** → True\n\nThe ratio is itself continuous-exponential with force $\\delta$.\n\n$$\\frac{A}{B}=e^{\\delta t}$$\n\n$$\\delta=\\frac{\\ln 2}{8}$$\n\nSo the statement is True."
       ],
-      "solution_overview": "Equal starts cancel in the ratio, leaving force gap $\\delta$. Doubling of the ratio occurs at $t=\\ln 2/\\delta=8$.",
+      "solution_overview": "Equal starts cancel in the ratio, leaving the force gap $\\delta$.\n\n$$\\frac{A(t)}{B(t)}=e^{\\delta t}=2^{t/8}\\qquad \\delta=\\frac{\\ln 2}{8}$$\n\nDoubling of the ratio occurs at $t=\\ln 2/\\delta=8$.",
       "difficulty_level": "2/5",
       "sort_order": 27,
       "placeholder": false,
@@ -930,13 +930,13 @@
         false
       ],
       "tactical_explanations": [
-        "**A.** → True\n\n$$P\\equiv Q\\iff e^{k}=1+r$$\n\nSo the statement is True.",
-        "**B.** → True\n\n$$e^{k}>1+k\\qquad(k>0)$$\n\n$$e^{kt}>(1+k)^{t}\\qquad(t>0)$$\n\nSo the statement is True.",
-        "**C.** → True\n\n$$\\frac{\\ln 2}{k}=\\frac{\\ln 2}{\\ln(1+r)}\\iff k=\\ln(1+r)$$\n\nSo the statement is True.",
-        "**D.** → True\n\nThe discrete path with factor $1+k$ is $Q(t)=P_0(1+k)^{t}$; comparing one-year factors is exactly $e^{k}>1+k$.\n\nSo the statement is True.",
-        "**E.** → False\n\n$$r=e^{k}-1\\neq k\\quad(k>0)$$\n\nSo the statement is False."
+        "**A.** → True\n\nTwo exponential paths with a common start coincide for all $t$ iff their one-year multipliers agree.\n\n$$e^{kt}=(1+r)^{t}\\quad\\forall t$$\n\n$$e^{k}=1+r$$\n\nSo the statement is True.",
+        "**B.** → True\n\nWhen $r=k>0$, compare one-year multipliers first.\n\n$$e^{k}>1+k$$\n\nRaising both sides to the power $t>0$ preserves the inequality.\n\n$$e^{kt}>(1+k)^{t}\\qquad(t>0)$$\n\n$$P(t)>Q(t)$$\n\nSo the statement is True.",
+        "**C.** → True\n\nEquate the two doubling-time formulas.\n\n$$\\frac{\\ln 2}{k}=\\frac{\\ln 2}{\\ln(1+r)}$$\n\n$$k=\\ln(1+r)$$\n\nWhenever $1+r=e^{k}$, the doubling times agree.\n\nSo the statement is True.",
+        "**D.** → True\n\nThe discrete path with factor $1+k$ is written explicitly.\n\n$$Q(t)=P_0(1+k)^{t}$$\n\nIts one-year multiplier is $1+k$, while the continuous path multiplies by $e^{k}$.\n\n$$e^{k}>1+k\\qquad(k>0)$$\n\nRaising both sides to the power $t>0$ and multiplying by $P_0$ yields $P(t)>Q(t)$.\n\n$$P(t)=P_0 e^{kt}>P_0(1+k)^{t}$$\n\n$$P_0 e^{kt}>P_0(1+k)^{t}=Q(t)$$\n\nSo the inequality $e^{k}>1+k$ is exactly the statement that $P$ beats that discrete rival.\n\nSo the statement is True.",
+        "**E.** → False\n\nMatching one-year factors forces $r=e^{k}-1$.\n\n$$r=e^{k}-1$$\n\n$$e^{k}-1\\ eq k\\quad(k>0)$$\n\nMatching factors does not force $r=k$.\n\nSo the statement is False."
       ],
-      "solution_overview": "Path agreement needs matching one-year factors $e^{k}=1+r$. The trap $r=k$ undershoots because $e^{k}>1+k$. Matching factors does not force $r=k$.",
+      "solution_overview": "Path agreement needs matching one-year factors.\n\n$$P\\equiv Q\\iff e^{k}=1+r$$\n\nThe trap $r=k$ undershoots because $e^{k}>1+k$. Matching factors does not force $r=k$.",
       "difficulty_level": "3/5",
       "sort_order": 28,
       "placeholder": false,
@@ -963,13 +963,13 @@
         false
       ],
       "tactical_explanations": [
-        "**A.** → True\n\n$$P(2)=64\\cdot 2^{2}=256$$\n\nSo the statement is True.",
-        "**B.** → True\n\n$$P(4)=256\\cdot e^{-2\\ln 2}=256\\cdot\\tfrac14=64$$\n\nSo the statement is True.",
-        "**C.** → True\n\n$$P(4)=P(0)=64=64 e^{4k_{\\mathrm{avg}}}\\implies k_{\\mathrm{avg}}=0$$\n\nSo the statement is True.",
-        "**D.** → True\n\nBefore the switch the force is positive; after it, negative. The peak is at $t=2$.\n\n$$P(2)=256$$\n\nSo the statement is True.",
-        "**E.** → False\n\n$$64\\cdot 2^{4}=1024\\neq 64$$\n\nSo the statement is False."
+        "**A.** → True\n\nSubstitute the switch time into the first piece.\n\n$$P(2)=64\\cdot e^{(\\ln 2)\\cdot 2}$$\n\n$$P(2)=64\\cdot 4$$\n\n$$64\\cdot 4=256$$\n\nSo the statement is True.",
+        "**B.** → True\n\nFrom the second piece, advance two units past the switch.\n\n$$P(4)=256\\cdot e^{-(\\ln 2)\\cdot 2}$$\n\n$$P(4)=256\\cdot\\tfrac14$$\n\n$$256\\cdot\\tfrac14=64$$\n\n$$P(4)=P(0)$$\n\nSo the statement is True.",
+        "**C.** → True\n\nMatch the endpoint to a single exponential from the start.\n\n$$P(4)=64$$\n\n$$64=64 e^{4k_{\\mathrm{avg}}}$$\n\n$$e^{4k_{\\mathrm{avg}}}=1$$\n\n$$k_{\\mathrm{avg}}=0$$\n\nSo the statement is True.",
+        "**D.** → True\n\nBefore the switch the force is positive; after it, negative.\n\nThe peak on $[0,4]$ is therefore at the switch.\n\n$$P(2)=256$$\n\nThat is the value required by the claim.\n\nSo the statement is True.",
+        "**E.** → False\n\nExtending the first force to $t=4$ ignores the mirror decay.\n\n$$64\\cdot 2^{4}=1024$$\n\n$$1024\\\\ eq 64$$\n\nSo the statement is False."
       ],
-      "solution_overview": "Mirror forces $\\pm\\ln 2$ about $t=2$ return the level to the start at $t=4$, forcing average force $0$ on that window.",
+      "solution_overview": "Mirror forces $\\pm\\ln 2$ about the switch return the level to the start.\n\n$$P(2)=256\\qquad P(4)=64=P(0)$$\n\nEndpoint matching on $[0,4]$ forces average force $0$.",
       "difficulty_level": "4/5",
       "sort_order": 29,
       "placeholder": false,
@@ -997,13 +997,13 @@
         false
       ],
       "tactical_explanations": [
-        "**A.** → True\n\n$$G(t)=(T_0-T_a)e^{-kt}$$\n\nSo the statement is True.",
-        "**B.** → True\n\n$$e^{-kH}=\\tfrac12\\qquad H=\\frac{\\ln 2}{k}$$\n\nSo the statement is True.",
-        "**C.** → True\n\n$$\\lim_{t\\to+\\infty}T(t)=T_a$$\n\nSo the statement is True.",
-        "**D.** → True\n\n$$T(5)=T_a+40\\cdot e^{-\\ln 2}=T_a+20$$\n\nSo the statement is True.",
-        "**E.** → False\n\nOnly the gap is a pure exponential; the temperature carries the ambient shift.\n\n$$T(t)=T_a+(T_0-T_a)e^{-kt}\\neq T_0 e^{-kt}$$\n\nSo the statement is False."
+        "**A.** → True\n\nWrite the gap explicitly.\n\n$$G(t)=T(t)-T_a$$\n\n$$T(t)-T_a=(T_0-T_a)e^{-kt}$$\n\nThe gap is continuous-exponential with force $-k$.\n\nSo the statement is True.",
+        "**B.** → True\n\nHalving the gap solves $e^{-kH}=1/2$.\n\n$$H=\\frac{\\ln 2}{k}$$\n\nThe letters $T_0$ and $T_a$ cancel before the logarithm.\n\nSo the statement is True.",
+        "**C.** → True\n\nSend $t\to+\\infty$ in the Newton formula with $k>0$.\n\n$$e^{-kt}\\to 0$$\n\n$$T(t)=T_a+(T_0-T_a)e^{-kt}$$\n\n$$T(t)\\to T_a$$\n\nThe temperature approaches ambient.\n\nSo the statement is True.",
+        "**D.** → True\n\nSubstitute the concrete letters into the gap formula.\n\n$$T(5)=T_a+40\\cdot e^{-\\ln 2}$$\n\n$$T(5)=T_a+20$$\n\nSo the statement is True.",
+        "**E.** → False\n\nOnly the gap is a pure exponential; the temperature carries the ambient shift.\n\n$$T(t)=T_a+(T_0-T_a)e^{-kt}$$\n\n$$T(t)\\\\ eq T_0 e^{-kt}$$\n\nSo the statement is False."
       ],
-      "solution_overview": "The gap to ambient is pure exponential with force $-k$. Half-gap time ignores the ambient level; $T(t)$ itself is not $T_0 e^{-kt}$.",
+      "solution_overview": "Newton cooling is an exponential gap toward a fixed ambient level.\n\n$$T(t)-T_a=(T_0-T_a)e^{-kt}$$\n\nHalf-gap time ignores the ambient level. The temperature itself is not $T_0 e^{-kt}$.",
       "difficulty_level": "5/5",
       "sort_order": 30,
       "placeholder": false,
@@ -1030,13 +1030,13 @@
         false
       ],
       "tactical_explanations": [
-        "**A.** → True\n\n$$T_P=\\frac{\\ln 2}{\\ln 2/5}=5$$\n\n$$T_Q=\\frac{\\ln 2}{\\ln 1.1}$$\n\nSo the statement is True.",
-        "**B.** → True\n\n$$2^{1/5}>1.1$$\n\n$$e^{(\\ln 2/5)t}>(1.1)^{t}\\qquad(t>0)$$\n\nSo the statement is True.",
-        "**C.** → True\n\n$$P(5)=800\\cdot 2=1600$$\n\n$$Q(5)=800\\cdot(1.1)^{5}$$\n\nSo the statement is True.",
-        "**D.** → True\n\n$$\\ln 1.1<\\frac{\\ln 2}{5}\\iff \\frac{\\ln 2}{\\ln 1.1}>5$$\n\nSo the statement is True.",
-        "**E.** → False\n\n$$\\ln 1.1\\neq\\frac{\\ln 2}{5}$$\n\nSo the statement is False."
+        "**A.** → True\n\nContinuous doubling solves $e^{(\\ln 2/5)T}=2$.\n\n$$T_P=\\frac{\\ln 2}{\\ln 2/5}=5$$\n\nDiscrete doubling solves $(1.1)^{T}=2$.\n\n$$T_Q=\\frac{\\ln 2}{\\ln 1.1}$$\n\nSo the statement is True.",
+        "**B.** → True\n\nCompare the one-year multipliers.\n\n$$e^{\\ln 2/5}=2^{1/5}$$\n\n$$2^{1/5}>1.1$$\n\nRaising both sides to the power $t>0$ preserves the inequality.\n\n$$e^{(\\ln 2/5)t}>(1.1)^{t}\\qquad(t>0)$$\n\n$$P(t)>Q(t)$$\n\nSo the statement is True.",
+        "**C.** → True\n\nAt $t=5$ the continuous path has doubled once.\n\n$$P(5)=800\\cdot 2$$\n\n$$800\\cdot 2=1600$$\n\nThe discrete rival is still written with factor $1.1$.\n\n$$Q(5)=800\\cdot(1.1)^{5}$$\n\nSo the statement is True.",
+        "**D.** → True\n\nCompare $\\ln 1.1$ with $(\\ln 2)/5$.\n\n$$\\ln 1.1<\\frac{\\ln 2}{5}$$\n\nTaking reciprocals (both positive) reverses the inequality.\n\n$$\\frac{\\ln 2}{\\ln 1.1}>5$$\n\nThe discrete doubling time is strictly larger than $5$.\n\nSo the statement is True.",
+        "**E.** → False\n\nMatching $Q$ to a continuous force requires $k=\\ln 1.1$.\n\n$$\\ln 1.1\\\\ eq\\frac{\\ln 2}{5}$$\n\nThat force is not equal to $(\\ln 2)/5$.\n\nSo the statement is False."
       ],
-      "solution_overview": "Continuous doubling time is $5$; discrete doubling uses $\\ln 1.1$. Because $2^{1/5}>1.1$, the continuous path stays above the discrete rival.",
+      "solution_overview": "Compare the continuous path with force $(\\ln 2)/5$ to the discrete rival with factor $1.1$.\n\n$$P(t)=800\\,e^{(\\ln 2/5)t}\\qquad Q(t)=800\\cdot(1.1)^{t}$$\n\nBecause $2^{1/5}>1.1$, the continuous path stays above the discrete rival. Doubling times use different denominators.",
       "difficulty_level": "1/5",
       "sort_order": 31,
       "placeholder": false,
@@ -1064,13 +1064,13 @@
         false
       ],
       "tactical_explanations": [
-        "**A.** → True\n\n$$\\frac{500}{625}=\\frac{400}{500}=\\frac{320}{400}=\\frac{4}{5}$$\n\n$$r=\\frac{4}{5}-1=-\\frac{1}{5}$$\n\nSo the statement is True.",
-        "**B.** → True\n\n$$k=\\ln\\tfrac{4}{5}$$\n\nSo the statement is True.",
-        "**C.** → True\n\n$$625 e^{t\\ln(4/5)}=625\\cdot(4/5)^{t}$$\n\nSo the statement is True.",
-        "**D.** → True\n\n$$(4/5)^{t}=\\frac{200}{625}$$\n\n$$t=\\frac{\\ln(200/625)}{\\ln(4/5)}$$\n\nSo the statement is True.",
-        "**E.** → False\n\n$$0<\\tfrac{4}{5}<1\\implies\\ln\\tfrac{4}{5}<0$$\n\nSo the statement is False."
+        "**A.** → True\n\nRead the three consecutive ratios from the table.\n\n$$\\frac{500}{625}=\\frac{400}{500}=\\frac{320}{400}=\\frac{4}{5}$$\n\nThe unit factor is $1+r$.\n\n$$1+r=\\frac{4}{5}$$\n\n$$r=-\\frac{1}{5}$$\n\nSo the statement is True.",
+        "**B.** → True\n\nMatch the geometric factor to a continuous exponential.\n\n$$e^{k}=\\tfrac{4}{5}$$\n\n$$k=\\ln\\tfrac{4}{5}$$\n\nSo the statement is True.",
+        "**C.** → True\n\nThe continuous rewrite with that force is identical to the geometric law.\n\n$$625 e^{t\\ln(4/5)}=625\\cdot(4/5)^{t}$$\n\nEvery tabulated height is therefore reproduced.\n\nSo the statement is True.",
+        "**D.** → True\n\nSet the geometric law equal to $200$.\n\n$$625\\cdot(4/5)^{t}=200$$\n\n$$(4/5)^{t}=\\frac{200}{625}$$\n\n$$t=\\frac{\\ln(200/625)}{\\ln(4/5)}$$\n\nSo the statement is True.",
+        "**E.** → False\n\nThe unit factor $4/5$ lies strictly between $0$ and $1$.\n\n$$0<\\tfrac{4}{5}<1$$\n\n$$\\ln\\tfrac{4}{5}<0$$\n\nThe continuous force is negative, not positive.\n\nSo the statement is False."
       ],
-      "solution_overview": "Constant ratio $4/5$ recovers $r=-1/5$ and continuous force $\\ln(4/5)<0$. The continuous rewrite matches the geometric table exactly.",
+      "solution_overview": "Constant consecutive ratios diagnose a geometric decay table.\n\n$$Q(t)=625\\cdot\\bigl(\\tfrac{4}{5}\\bigr)^{t}\\qquad r=-\\tfrac{1}{5}$$\n\nThe matching continuous force is $k=\\ln(4/5)<0$. The continuous rewrite matches every tabulated height.",
       "difficulty_level": "2/5",
       "sort_order": 32,
       "placeholder": false,
@@ -1098,13 +1098,13 @@
         true
       ],
       "tactical_explanations": [
-        "**A.** → True\n\n$$u^{2}-3u+2=(u-1)(u-2)=0$$\n\n$$u=1\\ \\text{or}\\ u=2$$\n\n$$x=0\\ \\text{or}\\ x=\\ln 2$$\n\nSo the statement is True.",
-        "**B.** → True\n\nThe maps $x\\mapsto e^{x}$ and $x\\mapsto e^{2x}$ are defined on all of $\\mathbb{R}$.\n\nSo the statement is True.",
-        "**C.** → True\n\n$$0\\cdot\\ln 2=0$$\n\nSo the statement is True.",
-        "**D.** → False\n\n$$e^{2\\ln 3}-3e^{\\ln 3}+2=9-9+2=2\\neq 0$$\n\nSo the statement is False.",
-        "**E.** → True\n\nEvery positive $u$ is $e^{x}$ for a unique real $x=\\ln u$.\n\nSo the statement is True."
+        "**A.** → True\n\nSet $u=e^{x}>0$ and factor.\n\n$$u^{2}-3u+2=(u-1)(u-2)$$\n\n$$(u-1)(u-2)=0$$\n\n$$u=1\\quad\\text{or}\\quad u$$\n\n$$1\\quad\\text{or}\\quad u=2$$\n\nReturn to $x$ through the logarithm.\n\n$$x=0\\quad\\text{or}\\quad x$$\n\n$$0\\quad\\text{or}\\quad x=\\ln 2$$\n\nSo the statement is True.",
+        "**B.** → True\n\nEvery term in the original equation is built from the exponential map.\n\n$$e^{x}\\qquad e^{2x}=(e^{x})^{2}$$\n\nBoth maps are defined for every real input.\n\n$$x\\in\\mathbb{R}$$\n\nThe candidate roots $0$ and $\\ln 2$ are real, so both lie in the domain of every exponential appearing in the equation.\n\nSo the statement is True.",
+        "**C.** → True\n\nMultiply the two real solutions.\n\n$$0\\cdot\\ln 2=0$$\n\nThe product equals $0$.\n\nSo the statement is True.",
+        "**D.** → False\n\nSubstitute $x=\\ln 3$ into the left-hand side.\n\n$$e^{2\\ln 3}-3e^{\\ln 3}+2$$\n\n$$9-9+2=2$$\n\n$$2\\\\ eq 0$$\n\nThe candidate fails the equation.\n\nSo the statement is False.",
+        "**E.** → True\n\nThe change of variables sends each real $x$ to a positive $u$.\n\n$$u=e^{x}>0$$\n\nEvery positive $u$ arises uniquely as $e^{x}$ for $x=\\ln u$.\n\n$$x=\\ln u$$\n\nThe map is therefore bijective from $\\mathbb{R}$ onto $(0,\\infty)$, and no positive root of the quadratic in $u$ is lost.\n\nSo the statement is True."
       ],
-      "solution_overview": "Factor as $(e^{x}-1)(e^{x}-2)=0$. Roots $0$ and $\\ln 2$ both lie in $\\mathbb{R}$; $x=\\ln 3$ fails the original equation.",
+      "solution_overview": "The substitution $u=e^{x}>0$ turns the equation into a quadratic.\n\n$$u^{2}-3u+2=(u-1)(u-2)=0$$\n\nReal roots are $x=0$ and $x=\\ln 2$. Both lie in $\\mathbb{R}$; $x=\\ln 3$ fails the original equation.",
       "difficulty_level": "3/5",
       "sort_order": 33,
       "placeholder": false,
@@ -1131,13 +1131,13 @@
         true
       ],
       "tactical_explanations": [
-        "**A.** → True\n\n$$k(t)=k_0 e^{(g-p)t}$$\n\nSo the statement is True.",
-        "**B.** → True\n\n$$g=p\\implies k(t)=k_0$$\n\nSo the statement is True.",
-        "**C.** → True\n\n$$K(t)L(t)=K_0 L_0 e^{(g+p)t}$$\n\nSo the statement is True.",
-        "**D.** → False\n\n$$T=\\frac{\\ln 2}{g-p}\\neq\\frac{\\ln 2}{g+p}$$\n\nSo the statement is False.",
-        "**E.** → True\n\n$$\\frac{k(2t)}{k(t)}=e^{(g-p)t}$$\n\nSo the statement is True."
+        "**A.** → True\n\nDivide the two closed forms.\n\n$$k(t)=\\frac{K_0 e^{gt}}{L_0 e^{pt}}=k_0 e^{(g-p)t}$$\n\nThe per-worker force is $g-p$.\n\nSo the statement is True.",
+        "**B.** → True\n\nIf the forces agree, the exponent vanishes.\n\n$$g=p\\implies k(t)=k_0$$\n\nPer-worker capital is then constant.\n\nSo the statement is True.",
+        "**C.** → True\n\nMultiply the two closed forms.\n\n$$K(t)L(t)=K_0 L_0 e^{(g+p)t}$$\n\nThe product carries force $g+p$.\n\nSo the statement is True.",
+        "**D.** → False\n\nDoubling of $k$ when $g>p$ solves $e^{(g-p)T}=2$.\n\n$$T=\\frac{\\ln 2}{g-p}$$\n\n$$\\frac{\\ln 2}{g-p}\\\\ eq\\frac{\\ln 2}{g+p}$$\n\nThe claimed denominator $g+p$ is the wrong force.\n\nSo the statement is False.",
+        "**E.** → True\n\nCompare levels two $t$-steps apart.\n\n$$\\frac{k(2t)}{k(t)}=e^{(g-p)(2t)-(g-p)t}$$\n\n$$e^{(g-p)t}$$\n\nThe identity holds for every $t$.\n\nSo the statement is True."
       ],
-      "solution_overview": "Per-worker capital carries $g-p$; the product carries $g+p$. Doubling time uses the difference, not the sum.",
+      "solution_overview": "Per-worker capital is the ratio of capital to labour.\n\n$$k(t)=k_0 e^{(g-p)t}$$\n\nThe product $KL$ carries force $g+p$. Doubling time of $k$ uses the difference, not the sum.",
       "difficulty_level": "4/5",
       "sort_order": 34,
       "placeholder": false,
@@ -1165,13 +1165,13 @@
         false
       ],
       "tactical_explanations": [
-        "**A.** → True\n\n$$P_0=54 e^{-3\\ln 3}=54/27=2$$\n\nSo the statement is True.",
-        "**B.** → True\n\n$$P(t)=2 e^{t\\ln 3}=2\\cdot 3^{t}$$\n\nSo the statement is True.",
-        "**C.** → True\n\n$$P(2)=2\\cdot 9=18$$\n\nSo the statement is True.",
-        "**D.** → True\n\n$$T=\\frac{\\ln 2}{\\ln 3}=\\log_{3} 2$$\n\nSo the statement is True.",
-        "**E.** → False\n\n$$54 e^{-3\\ln 2}=54/8\\neq 2$$\n\nSo the statement is False."
+        "**A.** → True\n\nBack-solve from the observation at $t=3$.\n\n$$P_0=54 e^{-3\\ln 3}$$\n\n$$e^{3\\ln 3}=27$$\n\n$$P_0=54/27$$\n\n$$54/27=2$$\n\nSo the statement is True.",
+        "**B.** → True\n\nRewrite the continuous path in base $3$.\n\n$$P(t)=2 e^{t\\ln 3}$$\n\n$$P(t)=2\\cdot 3^{t}$$\n\nSo the statement is True.",
+        "**C.** → True\n\nSubstitute $t=2$ into the rebuilt closed form.\n\n$$P(t)=2\\cdot 3^{t}$$\n\n$$P(2)=2\\cdot 3^{2}$$\n\n$$2\\cdot 3^{2}=2\\cdot 9$$\n\n$$P(2)=18$$\n\nSo the statement is True.",
+        "**D.** → True\n\nDoubling solves $e^{(\\ln 3)T}=2$.\n\n$$T=\\frac{\\ln 2}{\\ln 3}$$\n\n$$\\frac{\\ln 2}{\\ln 3}=\\log_{3} 2$$\n\nSo the statement is True.",
+        "**E.** → False\n\nThe false force $k=\\ln 2$ produces a different back-solve.\n\n$$54 e^{-3\\ln 2}=54/8$$\n\n$$54/8\\\\ eq 2$$\n\nThe same $P_0$ is not recovered.\n\nSo the statement is False."
       ],
-      "solution_overview": "From $P(3)=54$ and $k=\\ln 3$ recover $P_0=2$ and $P(t)=2\\cdot 3^{t}$. A mismatched force corrupts the back-solve.",
+      "solution_overview": "One observation and a known force rebuild the continuous path.\n\n$$P(3)=54\\qquad k=\\ln 3$$\n\n$$P_0=2\\qquad P(t)=2\\cdot 3^{t}$$\n\nA mismatched force corrupts the back-solve.",
       "difficulty_level": "5/5",
       "sort_order": 35,
       "placeholder": false,
@@ -1198,13 +1198,13 @@
         true
       ],
       "tactical_explanations": [
-        "**A.** → True\n\n$$\\ln P(t)=\\ln 5+2t$$\n\nSo the statement is True.",
-        "**B.** → True\n\n$$\\ln 5+2t=0\\qquad t=-\\tfrac12\\ln 5$$\n\nSo the statement is True.",
-        "**C.** → True\n\n$$\\ln 5+2t=\\ln 45=\\ln 5+\\ln 9$$\n\n$$2t=\\ln 9\\qquad t=\\ln 3$$\n\nSo the statement is True.",
-        "**D.** → False\n\nThe log-path is affine, so its second derivative vanishes.\n\n$$(\\ln P)''(t)=0\\neq 2$$\n\nSo the statement is False.",
-        "**E.** → True\n\n$$\\frac{(\\ln 5+8)-(\\ln 5+2)}{3}=\\frac{6}{3}=2$$\n\nSo the statement is True."
+        "**A.** → True\n\nExpand the logarithm of the closed form.\n\n$$\\ln P(t)=\\ln(5 e^{2t})$$\n\n$$\\ln 5+2t$$\n\nSo the statement is True.",
+        "**B.** → True\n\nImpose $\\ln P(t)=0$ on the affine log-path.\n\n$$\\ln P(t)=\\ln 5+2t$$\n\n$$\\ln 5+2t=0$$\n\n$$t=-\\tfrac12\\ln 5$$\n\nThat is the unique real solution of the equation.\n\nSo the statement is True.",
+        "**C.** → True\n\nImpose $\\ln P(t)=\\ln 45$.\n\n$$\\ln 5+2t=\\ln 45$$\n\n$$\\ln 45=\\ln 5+\\ln 9$$\n\n$$2t=\\ln 9$$\n\n$$t=\\ln 3$$\n\nSo the statement is True.",
+        "**D.** → False\n\nThe log-path is affine, so its second derivative vanishes.\n\n$$(\\ln P)'(t)=2$$\n\n$$(\\ln P)''(t)=0$$\n\n$$0\\\\ eq 2$$\n\nSo the statement is False.",
+        "**E.** → True\n\nForm the difference quotient of $\\ln P$ on $[1,4]$.\n\n$$\\frac{(\\ln 5+8)-(\\ln 5+2)}{3}$$\n\n$$\\frac{6}{3}=2$$\n\nThe recovered force equals $2$.\n\nSo the statement is True."
       ],
-      "solution_overview": "Logarithms linearise $5 e^{2t}$ to $\\ln 5+2t$. Threshold solves are affine in $t$; the second derivative of $\\ln P$ is $0$, not $2$.",
+      "solution_overview": "Logarithms linearise the concrete path $5 e^{2t}$.\n\n$$\\ln P(t)=\\ln 5+2t$$\n\nThreshold solves are affine in $t$. The second derivative of $\\ln P$ is $0$, not $2$.",
       "difficulty_level": "1/5",
       "sort_order": 36,
       "placeholder": false,
@@ -1231,13 +1231,13 @@
         true
       ],
       "tactical_explanations": [
-        "**A.** → True\n\n$$k=\\frac{\\ln 3-0}{2}=\\frac{\\ln 3}{2}$$\n\n$$P(t)=e^{kt}=3^{t/2}$$\n\nSo the statement is True.",
-        "**B.** → True\n\n$$P(4)=3^{2}=9$$\n\nSo the statement is True.",
-        "**C.** → True\n\n$$3\\ln 3-\\ln 3=2\\ln 3$$\n\nSo the statement is True.",
-        "**D.** → False\n\n$$P=1,\\,3,\\,9,\\,27$$\n\nThose levels are geometric with ratio $3$, not arithmetic.\n\nSo the statement is False.",
-        "**E.** → True\n\n$$(\\ln 3)t/2=\\ln 27=3\\ln 3\\qquad t=6$$\n\nSo the statement is True."
+        "**A.** → True\n\nRead the semi-log slope from the first two samples.\n\n$$k=\\frac{\\ln 3-0}{2}=\\frac{\\ln 3}{2}$$\n\nExponentiate to recover the level.\n\n$$P(t)=e^{kt}$$\n\n$$e^{kt}=3^{t/2}$$\n\nSo the statement is True.",
+        "**B.** → True\n\nSubstitute $t=4$ into the recovered closed form.\n\n$$P(t)=3^{t/2}$$\n\n$$P(4)=3^{4/2}$$\n\n$$3^{4/2}=3^{2}$$\n\n$$P(4)=9$$\n\nThe level at $t=4$ is $9$.\n\nSo the statement is True.",
+        "**C.** → True\n\nSubtract the log-samples at $t=6$ and $t=2$.\n\n$$\\ln P(6)-\\ln P(2)=3\\ln 3-\\ln 3$$\n\n$$2\\ln 3$$\n\nSo the statement is True.",
+        "**D.** → False\n\nThe corresponding levels are geometric with ratio $3$.\n\n$$P(0),P(2),P(4),P(6)=1,\\,3,\\,9,\\,27$$\n\nThose heights are not an arithmetic sequence.\n\nSo the statement is False.",
+        "**E.** → True\n\nImpose $\\ln P(t)=\\ln 27$.\n\n$$(\\ln 3)t/2=\\ln 27$$\n\n$$\\ln 27=3\\ln 3$$\n\n$$t=6$$\n\nSo the statement is True."
       ],
-      "solution_overview": "Arithmetic semi-log samples give force $\\ln 3/2$ and levels $3^{t/2}$. Geometric levels are the counterpart of arithmetic logs.",
+      "solution_overview": "Arithmetic semi-log samples give a constant force.\n\n$$k=\\frac{\\ln 3}{2}\\qquad P(t)=3^{t/2}$$\n\nGeometric levels are the counterpart of arithmetic logs.",
       "difficulty_level": "2/5",
       "sort_order": 37,
       "placeholder": false,
@@ -1266,13 +1266,13 @@
         true
       ],
       "tactical_explanations": [
-        "**A.** → True\n\n$$e^{kt}>2\\qquad t>\\frac{\\ln 2}{k}$$\n\nSo the statement is True.",
-        "**B.** → True\n\nAny negative force works: e.g. $k=-1$ gives $P_{-1}(t)=P_0 e^{-t}<P_0$ for $t>0$.\n\nSo the statement is True.",
-        "**C.** → True\n\n$$e^{kt}=7\\qquad k=\\frac{\\ln 7}{t}$$\n\nSo the statement is True.",
-        "**D.** → False\n\nA constant path equal to $7P_0$ for all $t>0$ would require $e^{kt}=7$ for all $t>0$, impossible.\n\nSo the statement is False.",
-        "**E.** → True\n\n$$P_k(t_1)=P_k(t_2)\\implies e^{k(t_1-t_2)}=1\\implies t_1=t_2\\quad(k\\neq 0)$$\n\nSo the statement is True."
+        "**A.** → True\n\nFor fixed $k>0$, solve $P_k(t)>2P_0$.\n\n$$e^{kt}>2$$\n\n$$t>\\frac{\\ln 2}{k}$$\n\nSuch a positive $t$ always exists.\n\nSo the statement is True.",
+        "**B.** → True\n\nAny negative force works. For instance take $k=-1$.\n\n$$P_{-1}(t)=P_0 e^{-t}$$\n\n$$e^{-t}<1\\quad(t>0)$$\n\nThen $P_{-1}(t)<P_0$ for every $t>0$.\n\nSo the statement is True.",
+        "**C.** → True\n\nFor fixed $t>0$, solve $P_k(t)=7P_0$ for the force.\n\n$$e^{kt}=7$$\n\n$$k=\\frac{\\ln 7}{t}$$\n\nSuch a real $k$ always exists.\n\nSo the statement is True.",
+        "**D.** → False\n\nThe swapped quantifiers ask for one force $k$ that hits the level $7P_0$ at every positive time.\n\n$$P_k(t)=7P_0\\quad\\forall t>0$$\n\nThat forces the exponential factor to be the constant $7$.\n\n$$e^{kt}=7\\quad\\forall t>0$$\n\nNo single real $k$ can make $e^{kt}$ constant and equal to $7$ for every $t>0$.\n\nThe claim therefore fails.\n\nSo the statement is False.",
+        "**E.** → True\n\nImpose $P_k(t_1)=P_k(t_2)$ under $k\\\neq 0$.\n\n$$e^{k(t_1-t_2)}=1$$\n\n$$t_1=t_2$$\n\nThe map $t\\mapsto P_k(t)$ is injective on $\\mathbb{R}$.\n\nSo the statement is True."
       ],
-      "solution_overview": "Quantifier order matters: hitting a level at one $t$ is easy; hitting it at every $t$ is impossible for a non-constant target. Nonzero force makes the path injective.",
+      "solution_overview": "Quantifier order matters for the family $P_k(t)=P_0 e^{kt}$.\n\n$$P_k(t)=P_0 e^{kt}$$\n\nHitting a level at one $t$ is easy; hitting it at every $t$ is impossible for a non-constant target. Nonzero force makes the path injective.",
       "difficulty_level": "3/5",
       "sort_order": 38,
       "placeholder": false,
@@ -1299,13 +1299,13 @@
         false
       ],
       "tactical_explanations": [
-        "**A.** → True\n\n$$P(6)=100\\cdot e^{2\\ln 2}=400$$\n\nSo the statement is True.",
-        "**B.** → True\n\n$$P(18)=400\\cdot e^{(\\ln 2/6)\\cdot 12}=400\\cdot e^{2\\ln 2}=1600$$\n\nSo the statement is True.",
-        "**C.** → True\n\n$$1600=100 e^{18 k_{\\mathrm{avg}}}\\qquad e^{18 k_{\\mathrm{avg}}}=16=2^{4}$$\n\n$$k_{\\mathrm{avg}}=\\frac{4\\ln 2}{18}=\\frac{2\\ln 2}{9}$$\n\nSo the statement is True.",
-        "**D.** → False\n\n$$\\frac12\\bigl(\\tfrac{\\ln 2}{3}+\\tfrac{\\ln 2}{6}\\bigr)=\\frac{\\ln 2}{4}$$\n\n$$\\frac{2\\ln 2}{9}\\neq\\frac{\\ln 2}{4}$$\n\nUnequal piece lengths require a time-weighted average, not the plain mean of the two forces.\n\nSo the statement is False.",
-        "**E.** → False\n\n$$100\\cdot e^{(\\ln 2/3)\\cdot 18}=100\\cdot 2^{6}=6400\\neq 1600$$\n\nSo the statement is False."
+        "**A.** → True\n\nSubstitute the switch time into the first piece.\n\n$$P(6)=100\\cdot e^{(\\ln 2/3)\\cdot 6}$$\n\n$$e^{2\\ln 2}=4$$\n\n$$P(6)=400$$\n\nSo the statement is True.",
+        "**B.** → True\n\nFrom the second piece, advance twelve units past the switch.\n\n$$P(18)=400\\cdot e^{(\\ln 2/6)\\cdot 12}$$\n\n$$e^{2\\ln 2}=4$$\n\n$$P(18)=1600$$\n\nSo the statement is True.",
+        "**C.** → True\n\nMatch the endpoint to a single exponential from the start.\n\n$$1600=100 e^{18 k_{\\mathrm{avg}}}$$\n\n$$e^{18 k_{\\mathrm{avg}}}=16$$\n\n$$16=2^{4}$$\n\n$$k_{\\mathrm{avg}}=\\frac{4\\ln 2}{18}=\\frac{2\\ln 2}{9}$$\n\nSo the statement is True.",
+        "**D.** → False\n\nThe plain arithmetic mean of the two piece forces is different.\n\n$$\\frac12\\bigl(\\tfrac{\\ln 2}{3}+\\tfrac{\\ln 2}{6}\\bigr)=\\frac{\\ln 2}{4}$$\n\n$$\\frac{2\\ln 2}{9}\\\\ eq\\frac{\\ln 2}{4}$$\n\nUnequal piece lengths require a time-weighted average, not the plain mean of the two forces.\n\nSo the statement is False.",
+        "**E.** → False\n\nExtending the first force through $t=18$ ignores the later slowdown.\n\n$$100\\cdot e^{(\\ln 2/3)\\cdot 18}=100\\cdot 2^{6}$$\n\n$$100\\cdot 2^{6}=6400$$\n\n$$6400\\\\ eq 1600$$\n\nSo the statement is False."
       ],
-      "solution_overview": "Match $P(6)=400$ and $P(18)=1600$. Endpoint matching recovers $k_{\\mathrm{avg}}=2\\ln 2/9$, which is the time-weighted mean of the piece forces.",
+      "solution_overview": "The first piece runs to $t=6$, then the second force continues from the matched height.\n\n$$P(6)=400\\qquad P(18)=1600$$\n\nEndpoint matching recovers $k_{\\mathrm{avg}}=2\\ln 2/9$, the time-weighted mean of the piece forces.",
       "difficulty_level": "4/5",
       "sort_order": 39,
       "placeholder": false,
@@ -1333,13 +1333,13 @@
         false
       ],
       "tactical_explanations": [
-        "**A.** → True\n\n$$y(t)=y_0 e^{(g-p)t}=y_0$$\n\nSo the statement is True.",
-        "**B.** → True\n\n$$e^{0.03 T}=2\\qquad T=\\frac{\\ln 2}{0.03}$$\n\nSo the statement is True.",
-        "**C.** → True\n\n$$N(T)=N_0 e^{0.03 T}=2N_0$$\n\n$$y(T)=\\frac{2Y_0}{2N_0}=y_0$$\n\nSo the statement is True.",
-        "**D.** → True\n\n$$g-p=0.02\\qquad T=\\frac{\\ln 2}{0.02}$$\n\nSo the statement is True.",
-        "**E.** → False\n\n$$y(t)=\\frac{Y(t)}{N(t)}=y_0\\neq Y(t)$$\n\nSo the statement is False."
+        "**A.** → True\n\nForm the per-capita path.\n\n$$y(t)=y_0 e^{(g-p)t}$$\n\n$$g-p=0$$\n\n$$y(t)=y_0$$\n\nPer-capita output is constant.\n\nSo the statement is True.",
+        "**B.** → True\n\nAggregate doubling still solves a pure exponential equation.\n\n$$Y(T)=2Y_0$$\n\n$$e^{0.03 T}=2$$\n\n$$T=\\frac{\\ln 2}{0.03}$$\n\nSo the statement is True.",
+        "**C.** → True\n\nOver that same horizon, population doubles as well.\n\n$$N(T)=N_0 e^{0.03 T}$$\n\n$$N_0 e^{0.03 T}=2N_0$$\n\n$$y(T)=\\frac{2Y_0}{2N_0}=y_0$$\n\nPer capita stays fixed.\n\nSo the statement is True.",
+        "**D.** → True\n\nWith $p=0.01$ and $g=0.03$ the per-capita force is $0.02$.\n\n$$g-p=0.02$$\n\n$$T=\\frac{\\ln 2}{0.02}$$\n\nSo the statement is True.",
+        "**E.** → False\n\nPer capita is the ratio of aggregate to population.\n\n$$y(t)=\\frac{Y(t)}{N(t)}=y_0$$\n\n$$y_0\\\\ eq Y(t)$$\n\nEqual forces do not identify $y$ with $Y$.\n\nSo the statement is False."
       ],
-      "solution_overview": "Equal forces freeze per capita while aggregate and population still grow. Per capita is a ratio, not equal to aggregate output.",
+      "solution_overview": "Equal forces freeze per-capita output while aggregate and population still grow.\n\n$$y(t)=y_0 e^{(g-p)t}=y_0\\qquad(g=p=0.03)$$\n\nPer capita is a ratio, not equal to aggregate output.",
       "difficulty_level": "5/5",
       "sort_order": 40,
       "placeholder": false,
@@ -1366,13 +1366,13 @@
         true
       ],
       "tactical_explanations": [
-        "**A.** → True\n\n$$e^{7k}=\\tfrac12\\qquad k=-\\frac{\\ln 2}{7}$$\n\nSo the statement is True.",
-        "**B.** → True\n\n$$m(21)=1000\\cdot 2^{-3}=125$$\n\nSo the statement is True.",
-        "**C.** → True\n\n$$14k=-2\\ln 2$$\n\nSo the statement is True.",
-        "**D.** → False\n\nA falling semi-log graph means exponential decay of the level, not an affine level path.\n\n$$m(t)=1000 e^{kt}$$\n\nSo the statement is False.",
-        "**E.** → True\n\n$$kt=-\\ln 8=-3\\ln 2\\qquad t=\\frac{3\\ln 2}{\\ln 2/7}=21$$\n\nSo the statement is True."
+        "**A.** → True\n\nThe seven-unit decay factor is $1/2$.\n\n$$e^{7k}=\\tfrac12$$\n\n$$k=-\\frac{\\ln 2}{7}$$\n\nThat is the semi-log slope.\n\nSo the statement is True.",
+        "**B.** → True\n\nThree half-lives multiply by $2^{-3}$.\n\n$$m(21)=1000\\cdot 2^{-3}$$\n\n$$1000\\cdot 2^{-3}=125$$\n\nThat is the value required by the claim.\n\nSo the statement is True.",
+        "**C.** → True\n\nThe rise of $\\ln m$ over fourteen units is fourteen times the force.\n\n$$\\ln m(14)-\\ln m(0)=14k$$\n\n$$14\\cdot\\bigl(-\\frac{\\ln 2}{7}\\bigr)=-2\\ln 2$$\n\nSo the statement is True.",
+        "**D.** → False\n\nA falling semi-log graph means exponential decay of the level.\n\n$$m(t)=1000 e^{kt}$$\n\nThat closed form is not an affine function of $t$.\n\nSo the statement is False.",
+        "**E.** → True\n\nThe equation $\\ln m=\\ln 1000-\\ln 8$ means the mass is $1000/8$.\n\n$$kt=-\\ln 8$$\n\n$$-\\ln 8=-3\\ln 2$$\n\n$$t=\\frac{3\\ln 2}{\\ln 2/7}=21$$\n\nSo the statement is True."
       ],
-      "solution_overview": "Semi-log slope recovers $k=-\\ln 2/7$. Powers of $1/2$ settle later masses; the level itself remains exponential, not affine.",
+      "solution_overview": "Semi-log slope recovers the negative force from the marked heights.\n\n$$m(t)=1000\\,e^{kt}\\qquad k=-\\frac{\\ln 2}{7}$$\n\nPowers of $1/2$ settle later masses. The level itself remains exponential, not affine.",
       "difficulty_level": "1/5",
       "sort_order": 41,
       "placeholder": false,
@@ -1400,13 +1400,13 @@
         true
       ],
       "tactical_explanations": [
-        "**A.** → True\n\n$$\\frac{200}{100}=2,\\quad\\frac{300}{200}=\\tfrac32,\\quad\\frac{600}{300}=2$$\n\nUnequal ratios rule out a single geometric / continuous-exponential model.\n\nSo the statement is True.",
-        "**B.** → False\n\nColumns $t=0,1$ give ratio $2$, but column $t=2$ would then need height $400$, not $300$.\n\n$$100\\cdot 2^{2}=400\\neq 300$$\n\nSo the first three columns are not consistent with force $\\ln 2$.\n\nSo the statement is False.",
-        "**C.** → True\n\n$$100\\cdot 2^{2}=400\\neq 300$$\n\nSo the statement is True.",
-        "**D.** → False\n\n$$e^{3\\ln 2}=8\\neq 6$$\n\nSo the statement is False.",
-        "**E.** → True\n\n$$\\ln 200-\\ln 100=\\ln 2$$\n\n$$\\ln 300-\\ln 200=\\ln\\tfrac32\\neq\\ln 2$$\n\nSo the statement is True."
+        "**A.** → True\n\nRead the three consecutive ratios from the table.\n\n$$\\frac{200}{100}=2$$\n\n$$\\frac{300}{200}=\\tfrac32$$\n\n$$\\frac{600}{300}=2$$\n\nUnequal ratios rule out a single geometric / continuous-exponential model.\n\nSo the statement is True.",
+        "**B.** → False\n\nColumns $t=0,1$ give ratio $2$, but column $t=2$ would then need height $400$.\n\n$$100\\cdot 2^{2}=400$$\n\n$$400\\\\ eq 300$$\n\nThe first three columns are not consistent with force $\\ln 2$.\n\nSo the statement is False.",
+        "**C.** → True\n\nForcing the pure doubling model predicts the wrong height at $t=2$.\n\n$$100\\cdot e^{(\\ln 2)\\cdot 2}=400$$\n\n$$400\\\\ eq 300$$\n\nThe tabulated $300$ contradicts that prediction.\n\nSo the statement is True.",
+        "**D.** → False\n\nThe three-step ratio from the table is $6$.\n\n$$\\frac{P(3)}{P(0)}=6$$\n\nUnder force $\\ln 2$ the three-step factor would be $8$.\n\n$$e^{3\\ln 2}=8$$\n\n$$8\\\\ eq 6$$\n\nSo the statement is False.",
+        "**E.** → True\n\nCompare successive log-increments.\n\n$$\\ln 200-\\ln 100=\\ln 2$$\n\n$$\\ln 300-\\ln 200=\\ln\\tfrac32$$\n\n$$\\ln\\tfrac32\\\\ eq\\ln 2$$\n\nEqual log-increments already fail between those two windows.\n\nSo the statement is True."
       ],
-      "solution_overview": "Non-constant ratios kill a pure exponential fit. Even the opening doubling fails by $t=2$, and $P(3)/P(0)=6$ is not a pure power of $2$.",
+      "solution_overview": "Non-constant ratios kill a pure exponential fit.\n\n$$\\frac{P(1)}{P(0)}=2,\\quad \\frac{P(2)}{P(1)}=\\tfrac32,\\quad \\frac{P(3)}{P(2)}=2$$\n\nEven the opening doubling fails by $t=2$, and $P(3)/P(0)=6$ is not a pure power of $2$.",
       "difficulty_level": "2/5",
       "sort_order": 42,
       "placeholder": false,
@@ -1434,13 +1434,13 @@
         true
       ],
       "tactical_explanations": [
-        "**A.** → True\n\n$$P(t+s)=P_0 e^{k(t+s)}=P(t)e^{ks}$$\n\nSo the statement is True.",
-        "**B.** → True\n\n$$\\frac{P(t+s)}{P(t)}=e^{ks}$$\n\nSo the statement is True.",
-        "**C.** → True\n\n$$P(t+\\tau)=P(t)\\ \\forall t\\implies e^{k\\tau}=1\\implies\\tau=0\\quad(k\\neq 0)$$\n\nSo the statement is True.",
-        "**D.** → True\n\n$$P'=kP\\implies P'P-k P^{2}=0$$\n\nSo the statement is True.",
-        "**E.** → True\n\n$$P(2t)=P_0 e^{2kt}=\\frac{(P_0 e^{kt})^{2}}{P_0}=\\frac{P(t)^{2}}{P_0}$$\n\nSo the statement is True."
+        "**A.** → True\n\nExpand the translated path.\n\n$$P(t+s)=P_0 e^{k(t+s)}$$\n\n$$P_0 e^{kt}e^{ks}=P(t)e^{ks}$$\n\nThe identity holds for every real $t,s$.\n\nSo the statement is True.",
+        "**B.** → True\n\nDivide by $P(t)$.\n\n$$\\frac{P(t+s)}{P(t)}=e^{ks}$$\n\nThe right-hand side depends on $s$ and $k$ alone, not on $t$ or $P_0$.\n\nSo the statement is True.",
+        "**C.** → True\n\nA positive period $\\tau$ would require $P(t+\\tau)=P(t)$ for every $t$.\n\n$$e^{k\\tau}=1$$\n\n$$\\tau=0\\quad(k\\\\ eq 0)$$\n\nNo positive period exists when $k\\\neq 0$.\n\nSo the statement is True.",
+        "**D.** → True\n\nDifferentiate the closed form.\n\n$$P'=kP$$\n\nForm the Wronskian-style combination.\n\n$$P'P-P\\cdot(kP)=kP^{2}-kP^{2}$$\n\n$$kP^{2}-kP^{2}=0$$\n\nThe combination vanishes identically.\n\nSo the statement is True.",
+        "**E.** → True\n\nExpand $P(2t)$ and compare with the square.\n\n$$P(2t)=P_0 e^{2kt}$$\n\n$$\\frac{P(t)^{2}}{P_0}=\\frac{(P_0 e^{kt})^{2}}{P_0}=P_0 e^{2kt}$$\n\nThe two sides agree for every $t$.\n\nSo the statement is True."
       ],
-      "solution_overview": "Translation multiplies by $e^{ks}$. Nonzero force forbids a positive period. The quadratic identity $P(2t)=P(t)^{2}/P_0$ is the doubling-in-time rule.",
+      "solution_overview": "Translation multiplies a continuous exponential by a pure force factor.\n\n$$P(t+s)=P(t)e^{ks}$$\n\nNonzero force forbids a positive period. The quadratic identity $P(2t)=P(t)^{2}/P_0$ is the doubling-in-time rule.",
       "difficulty_level": "3/5",
       "sort_order": 43,
       "placeholder": false,
@@ -1467,13 +1467,13 @@
         true
       ],
       "tactical_explanations": [
-        "**A.** → True\n\n$$1200 e^{kt}=4800 e^{-kt}\\qquad e^{2kt}=4\\qquad 2kt=2\\ln 2$$\n\n$$k=\\frac{\\ln 2}{15}\\implies t=15$$\n\nSo the statement is True.",
-        "**B.** → True\n\n$$S(15)=1200\\cdot 2=2400=D(15)$$\n\nSo the statement is True.",
-        "**C.** → True\n\n$$S(t)D(t)=1200\\cdot 4800\\cdot e^{kt}e^{-kt}=1200\\cdot 4800$$\n\nSo the statement is True.",
-        "**D.** → True\n\n$$\\frac{S(t)}{D(t)}=\\frac{1200}{4800}e^{2kt}=\\frac14 e^{(2\\ln 2/15)t}$$\n\nSo the statement is True.",
-        "**E.** → True\n\n$$\\frac14 e^{2kt}=2\\qquad e^{2kt}=8\\qquad 2kt=3\\ln 2$$\n\n$$t=\\frac{3\\ln 2}{2k}=\\frac{45}{2}$$\n\nSo the statement is True."
+        "**A.** → True\n\nSet the two balances equal.\n\n$$1200 e^{kt}=4800 e^{-kt}$$\n\n$$e^{2kt}=4$$\n\n$$2kt=2\\ln 2$$\n\nSubstitute $k=(\\ln 2)/15$.\n\n$$t=15$$\n\nSo the statement is True.",
+        "**B.** → True\n\nEvaluate either path at the crossing.\n\n$$S(15)=1200\\cdot e^{\\ln 2}=1200\\cdot 2=2400$$\n\n$$D(15)=4800\\cdot e^{-\\ln 2}$$\n\n$$4800\\cdot e^{-\\ln 2}=2400$$\n\nBoth balances equal $2400$.\n\nSo the statement is True.",
+        "**C.** → True\n\nMultiply the two closed forms.\n\n$$S(t)D(t)=1200\\cdot 4800\\cdot e^{kt}e^{-kt}$$\n\n$$1200\\cdot 4800$$\n\nThe product is constant for every $t$.\n\nSo the statement is True.",
+        "**D.** → True\n\nForm the ratio of the two paths.\n\n$$\\frac{S(t)}{D(t)}=\\frac{1200}{4800}e^{2kt}$$\n\n$$\\frac14 e^{(2\\ln 2/15)t}$$\n\nSo the statement is True.",
+        "**E.** → True\n\nImpose $S(t)=2D(t)$, that is ratio equal to $2$.\n\n$$\\frac14 e^{2kt}=2$$\n\n$$e^{2kt}=8$$\n\n$$2kt=3\\ln 2$$\n\n$$t=\\frac{3\\ln 2}{2k}=\\frac{45}{2}$$\n\nSo the statement is True."
       ],
-      "solution_overview": "Opposite forces $\\pm\\ln 2/15$ cross when $e^{2kt}=4$, i.e. at $t=15$. The product is constant; ratio growth uses force $2k$.",
+      "solution_overview": "Opposite forces $\\pm(\\ln 2)/15$ cross when the growth factor of the ratio equals $4$.\n\n$$S(t)=1200\\,e^{kt}\\qquad D(t)=4800\\,e^{-kt}\\qquad k=\\frac{\\ln 2}{15}$$\n\nThe product is constant; ratio growth uses force $2k$.",
       "difficulty_level": "4/5",
       "sort_order": 44,
       "placeholder": false,

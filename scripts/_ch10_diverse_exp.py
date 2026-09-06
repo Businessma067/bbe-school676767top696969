@@ -31,6 +31,19 @@ TAIL = "Evaluate each statement. Mark it TRUE or FALSE."
 LN2 = math.log(2)
 LN3 = math.log(3)
 
+_VOICE_PATH = Path(__file__).with_name("_ch10_exp_voice_deep.json")
+_VOICE: dict[str, Any] | None = None
+
+
+def _load_voice() -> dict[str, Any]:
+    """Ch7/Ch9 teacher-voice bodies keyed by 1-based task index."""
+    global _VOICE
+    if _VOICE is None:
+        import json
+
+        _VOICE = json.loads(_VOICE_PATH.read_text(encoding="utf-8"))
+    return _VOICE
+
 
 def D(s: str) -> str:
     return f"$${s}$$"
@@ -52,6 +65,32 @@ def _ensure_tail(context: str) -> str:
             ctx += "."
         ctx += " " + TAIL
     return ctx
+
+
+def _split_chained_display(inner: str) -> list[str]:
+    """Prefer one idea per display for short a=b=c chains."""
+    inner = re.sub(r"\s+", " ", inner).strip()
+    if r"\qquad" in inner or r"\iff" in inner or r"\implies" in inner:
+        return [inner]
+    if inner.count("=") == 2 and r"\frac" not in inner and inner.count("(") <= 4:
+        parts = [p.strip() for p in inner.split("=")]
+        if all(parts) and all(len(p) < 70 for p in parts):
+            return [f"{parts[0]}={parts[1]}", f"{parts[1]}={parts[2]}"]
+    return [inner]
+
+
+def _deepen_parts(parts: list[str]) -> list[str]:
+    out: list[str] = []
+    for p in parts:
+        p = p.strip()
+        if not p:
+            continue
+        if p.startswith("$$") and p.endswith("$$") and p.count("$$") == 2:
+            for piece in _split_chained_display(p[2:-2]):
+                out.append(D(piece))
+        else:
+            out.append(p)
+    return out
 
 
 def make_task(
@@ -79,6 +118,20 @@ def make_task(
         "figure": figure,
         "tables_markdown": tables_markdown,
     }
+
+
+def _apply_deep_voice(tasks: list[dict[str, Any]]) -> None:
+    """Replace thin teas/overviews with Ch7/Ch9 teacher voice (keys unchanged)."""
+    voice = _load_voice()
+    assert len(voice) == EXP_COUNT
+    for i, t in enumerate(tasks, start=1):
+        deep = voice[str(i)]
+        bodies = [_deepen_parts(b) for b in deep["bodies"]]
+        assert len(bodies) == 5
+        t["tactical_explanations"] = [
+            pack(LETTERS[j], t["answer_key"][j], bodies[j]) for j in range(5)
+        ]
+        t["solution_overview"] = deep["overview"].strip()
 
 
 # ---------------------------------------------------------------------------
@@ -2075,6 +2128,7 @@ def build_exp_tasks() -> list[dict]:
         t41(), t42(), t43(), t44(),
     ]
     assert len(tasks) == EXP_COUNT == 44
+    _apply_deep_voice(tasks)
 
     required_kinds = {
         "graph", "table", "symbolic", "parametric", "rebuild", "nested",
