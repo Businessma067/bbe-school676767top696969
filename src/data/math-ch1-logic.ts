@@ -7612,12 +7612,12 @@ The memo uses $M\\Rightarrow S$ and $S$ to conclude $M$. That affirms the conseq
 So the statement is False.`,
       `**B.** → False
 
-Restating with the same invalid pattern remains invalid.
+The restatement uses $M\\Rightarrow S$ and $\\neg M$ to conclude $\\neg S$. That denies the antecedent and is also invalid.
 
 So the statement is False.`,
       `**C.** → True
 
-Using the contrapositive form $\\neg S\\Rightarrow\\neg M$ with $\\neg S$ validly yields $\\neg M$.
+The restatement uses $M\\Rightarrow S$ and $\\neg S$ to conclude $\\neg M$. That is modus tollens (contrapositive form) and is valid.
 
 So the statement is True.`,
       `**D.** → True
@@ -7627,7 +7627,7 @@ A biconditional $M\\Leftrightarrow S$ would let $S$ recover $M$.
 So the statement is True.`,
       `**E.** → True
 
-Same fallacy as inferring rain from “if rain then wet ground” and “ground is wet.”
+Same affirming-the-consequent pattern as inferring rain from “if rain then wet” and “ground is wet.”
 
 So the statement is True.`,
     ],
