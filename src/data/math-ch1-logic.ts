@@ -57,17 +57,33 @@ $$A=\\{1,2,3,4,5\\}$$
 
 $$B=\\{3,4,5,6,7\\}$$
 
-$$1\\in A,\\ 1\\notin B$$
+Test each member of $A$:
 
-$$2\\in A,\\ 2\\notin B$$
+$$1\\in A$$
 
-$$3\\in A,\\ 3\\in B$$
+$$1\\notin B$$
 
-$$4\\in A,\\ 4\\in B$$
+$$2\\in A$$
 
-$$5\\in A,\\ 5\\in B$$
+$$2\\notin B$$
+
+$$3\\in A$$
+
+$$3\\in B$$
+
+$$4\\in A$$
+
+$$4\\in B$$
+
+$$5\\in A$$
+
+$$5\\in B$$
+
+Collect the keepers:
 
 $$A\\cap B=\\{3,4,5\\}$$
+
+The claimed roster is
 
 $$\\{3,4,5\\}$$
 
@@ -82,26 +98,66 @@ $$A=\\{1,2,3,4,5\\}$$
 
 $$C=\\{5,6,7,8,9\\}$$
 
+Members coming from $A$:
+
+$$1\\in A\\cup C$$
+
+$$2\\in A\\cup C$$
+
+$$3\\in A\\cup C$$
+
+$$4\\in A\\cup C$$
+
+$$5\\in A\\cup C$$
+
+Members that $C$ adds beyond $A$:
+
+$$6\\in C$$
+
+$$6\\notin A$$
+
+$$7\\in C$$
+
+$$7\\notin A$$
+
+$$8\\in C$$
+
+$$8\\notin A$$
+
+$$9\\in C$$
+
+$$9\\notin A$$
+
+So the full union is
+
 $$A\\cup C=\\{1,2,3,4,5,6,7,8,9\\}$$
+
+The claim lists
 
 $$\\{1,2,3,4,5,6,7,8\\}$$
 
-The computed roster does not match the claim.
+It drops $9$, but $9\\in C$, so the claim is incomplete.
 
 So the statement is False.`,
       `**C.** → True
 
 An element of $(A\\cap B)\\cap C$ must sit in all three lists. First form the pairwise intersection:
 
+$$A=\\{1,2,3,4,5\\}$$
+
+$$B=\\{3,4,5,6,7\\}$$
+
 $$A\\cap B=\\{3,4,5\\}$$
 
-Now test those three against $C$:
+Now test those three against $C=\\{5,6,7,8,9\\}$:
 
 $$3\\notin C$$
 
 $$4\\notin C$$
 
 $$5\\in C$$
+
+Therefore
 
 $$(A\\cap B)\\cap C=\\{5\\}$$
 
@@ -116,36 +172,62 @@ $$A=\\{1,2,3,4,5\\}$$
 
 $$C=\\{5,6,7,8,9\\}$$
 
-$$1\\in A,\\ 1\\notin C$$
+$$1\\in A$$
 
-$$2\\in A,\\ 2\\notin C$$
+$$1\\notin C$$
 
-$$3\\in A,\\ 3\\notin C$$
+$$2\\in A$$
 
-$$4\\in A,\\ 4\\notin C$$
+$$2\\notin C$$
 
-$$5\\in A,\\ 5\\in C$$
+$$3\\in A$$
+
+$$3\\notin C$$
+
+$$4\\in A$$
+
+$$4\\notin C$$
+
+$$5\\in A$$
+
+$$5\\in C$$
+
+So only $5$ is removed:
 
 $$A\\setminus C=\\{1,2,3,4\\}$$
 
+The claim lists
+
 $$\\{1,2,3\\}$$
 
-The computed roster does not match the claim.
+It drops $4$, but $4\\in A$ and $4\\notin C$.
 
 So the statement is False.`,
       `**E.** → False
 
-Disjointness requires an empty intersection. Compute the shared roster:
+Disjointness requires an empty intersection. List the two sets:
 
 $$B=\\{3,4,5,6,7\\}$$
 
 $$C=\\{5,6,7,8,9\\}$$
 
+Test shared membership:
+
+$$5\\in B$$
+
+$$5\\in C$$
+
+$$6\\in B$$
+
+$$6\\in C$$
+
+$$7\\in B$$
+
+$$7\\in C$$
+
 $$B\\cap C=\\{5,6,7\\}$$
 
 The intersection is nonempty, so $B$ and $C$ are not disjoint.
-
-That conflicts with the claim.
 
 So the statement is False.`,
     ],
@@ -172,11 +254,29 @@ Intersection keeps elements that sit in both inputs. Union keeps elements that s
     tactical_explanations: [
       `**A.** → True
 
-The overview recovered the integer roots of $x^{2}=9$:
+Recover $A$ from the set-builder. Solve the defining equation in the integers:
+
+$$x^{2}=9$$
+
+$$x^{2}-9=0$$
+
+$$(x-3)(x+3)=0$$
+
+$$x-3=0$$
+
+$$x=3$$
+
+or
+
+$$x+3=0$$
+
+$$x=-3$$
+
+Both roots are integers, so
 
 $$A=\\{-3,3\\}$$
 
-$B$ is given as $\\{3,-3\\}$. Sets ignore order, so compare membership both ways:
+$B$ is given as $\\{3,-3\\}$. Compare membership both ways:
 
 $$-3\\in B$$
 
@@ -186,55 +286,77 @@ $$3\\in A$$
 
 $$-3\\in A$$
 
-Hence $A=B$.
-
-That matches the claim.
+Sets ignore order, so $A=B$.
 
 So the statement is True.`,
       `**B.** → True
 
-The overview recovered
+From the set-builder,
+
+$$x^{2}=9$$
+
+gives the integer roots $\\pm 3$, so
 
 $$A=\\{-3,3\\}$$
 
-Membership asks whether the object appears on that roster. Test the claimed element:
+Test the claimed element:
+
+$$3^{2}=9$$
+
+$$3\\in Z$$
+
+$$3\\in A$$
+
+Alternatively, read the roster directly:
 
 $$3\\in\\{-3,3\\}$$
-
-Yes, so $3\\in A$.
-
-That matches the claim.
 
 So the statement is True.`,
       `**C.** → False
 
-The overview recovered $A=\\{-3,3\\}$. The claim reprints $A$ as $\\{3\\}$ only. Check the discarded root against the set-builder:
+From the set-builder the integer roots are $\\pm 3$:
 
 $$(-3)^{2}=9$$
 
 $$-3\\in Z$$
 
-so $-3$ must sit in $A$. Therefore
+$$3^{2}=9$$
 
-$$A=\\{-3,3\\}\\ne\\{3\\}.$$
+$$3\\in Z$$
 
-That conflicts with the claim.
+$$A=\\{-3,3\\}$$
+
+The claim reprints $A$ as $\\{3\\}$ only. Then
+
+$$A=\\{-3,3\\}$$
+
+$$\\{3\\}=\\{3\\}$$
+
+$$A\\neq\\{3\\}$$
+
+because $-3$ sits in $A$ but not in $\\{3\\}$.
 
 So the statement is False.`,
       `**D.** → True
 
-Cardinality counts distinct members. The overview recovered
+Cardinality counts distinct members. The set-builder yields
 
 $$A=\\{-3,3\\}$$
 
-Those two integers are distinct, so
+Those two integers are distinct:
 
-$$\\lvert A\\rvert=2$$
+$$-3\\neq 3$$
+
+$$|A|=2$$
 
 So the statement is True.`,
       `**E.** → False
 
-Filter the same equation by the universe $N=\\{1,2,3,\\ldots\\}$ instead of $Z$. The algebraic candidates are still $\\pm 3$, but
+Filter the same equation by $N=\\{1,2,3,\\ldots\\}$ instead of $Z$. Candidates from
+
+$$x^{2}=9$$
+
+are still $\\pm 3$, but
 
 $$3\\in N$$
 
@@ -244,7 +366,13 @@ so the natural-number set-builder yields
 
 $$C=\\{3\\}$$
 
-The claim equates $C$ with $\\{3,-3\\}$. Those sets differ.
+The claim equates $C$ with $\\{3,-3\\}$. Compare:
+
+$$C=\\{3\\}$$
+
+$$\\{3,-3\\}=\\{-3,3\\}$$
+
+$$C\\neq\\{3,-3\\}$$
 
 So the statement is False.`,
     ],
@@ -273,45 +401,53 @@ $B$ is given as $\\{3,-3\\}$. Equality of sets is equality of membership, indepe
     tactical_explanations: [
       `**A.** → True
 
-Each ground-set element may be included or omitted independently.
+Here $A=\\{a,b,c\\}$ has three ground elements. Each may be included or omitted independently when building a subset:
 
-$$|C|=8$$
+$$|A|=3$$
 
-$$|\\mathcal{P}(C)|=2^{|C|}$$
+$$|\\mathcal{P}(A)|=2^{|A|}$$
 
-$$2^{8}$$
+$$|\\mathcal{P}(A)|=2^{3}$$
 
-$$= 256$$
+$$2^{3}=8$$
 
-$$256\\neq 8$$
-
-The power set has $256$ members, not $8$.
+The power set therefore has $8$ elements.
 
 So the statement is True.`,
       `**B.** → False
 
-The elements of $A$ are the letters $a$, $b$, and $c$. The object $\\{a,b\\}$ is a set of letters, not a letter:
+The elements of $A$ are the letters $a$, $b$, and $c$:
 
-$$\\{a,b\\}\\notin\\{a,b,c\\}$$
+$$A=\\{a,b,c\\}$$
 
-It is a subset of $A$, so it belongs to the power set:
+The object $\\{a,b\\}$ is a set of letters, not a letter:
 
-$$\\{a,b\\}\\subseteq A\\implies\\{a,b\\}\\in\\mathcal{P}(A)$$
+$$\\{a,b\\}\\neq a$$
+
+$$\\{a,b\\}\\neq b$$
+
+$$\\{a,b\\}\\neq c$$
+
+$$\\{a,b\\}\\notin A$$
+
+It is a subset of $A$, so
+
+$$\\{a,b\\}\\subseteq A$$
+
+$$\\{a,b\\}\\in\\mathcal{P}(A)$$
 
 but that is not the claim.
 
 So the statement is False.`,
       `**C.** → True
 
-Subsethood asks whether every member of the left-hand set sits in $A$. The empty set has no members at all:
+Subsethood asks whether every member of the left-hand set sits in $A$. The empty set has no members at all, so the implication
 
 $$\\forall x\\,(x\\in\\emptyset\\Rightarrow x\\in A)$$
 
 is vacuously true. Hence
 
-$$\\emptyset\\subseteq A.$$
-
-That matches the claim.
+$$\\emptyset\\subseteq A$$
 
 So the statement is True.`,
       `**D.** → False
@@ -320,26 +456,48 @@ Proper inclusion needs ordinary inclusion plus a genuine difference:
 
 $$X\\subsetneq Y\\iff(X\\subseteq Y)\\wedge(X\\neq Y)$$
 
-$A\\subseteq A$ holds, but $A\\neq A$ is impossible. Therefore $A$ is not a proper subset of $A$.
+Check each half for $X=Y=A$:
 
-That conflicts with the claim.
+$$A\\subseteq A$$
+
+$$A=A$$
+
+$$A\\neq A$$
+
+is false. Therefore $A$ is not a proper subset of $A$.
 
 So the statement is False.`,
       `**E.** → True
 
 Two-element subsets of a three-element set are counted by
 
-$$\\binom{3}{2} = \\frac{3\\cdot 2}{2}$$
+$$\\binom{3}{2}=\\frac{3!}{2!\\,1!}$$
 
-$$= 3$$
+$$3!=3\\cdot 2\\cdot 1$$
+
+$$3!=6$$
+
+$$2!=2\\cdot 1$$
+
+$$2!=2$$
+
+$$1!=1$$
+
+$$\\binom{3}{2}=\\frac{6}{2\\cdot 1}$$
+
+$$\\binom{3}{2}=\\frac{6}{2}$$
+
+$$\\binom{3}{2}=3$$
 
 Listing them confirms the count:
 
-$$\\{a,b\\},\\quad\\{a,c\\},\\quad\\{b,c\\}$$
+$$\\{a,b\\}$$
+
+$$\\{a,c\\}$$
+
+$$\\{b,c\\}$$
 
 Exactly three such subsets.
-
-That matches the claim.
 
 So the statement is True.`,
     ],
@@ -366,67 +524,79 @@ Membership $x\\in A$ means $x$ is one of those three objects. Inclusion $S\\subs
     tactical_explanations: [
       `**A.** → True
 
-Subsethood asks whether every member of the left-hand set sits in $D$. The empty set has no members at all, so there is no witness that could sit outside $D$:
+Subsethood of $\\emptyset$ is vacuous: there is no witness that could sit outside $D$.
+
+$$\\forall x\\,(x\\in\\emptyset\\Rightarrow x\\in D)$$
+
+holds for every set $D$. With
+
+$$D=\\{a,b,c\\}$$
+
+we conclude
 
 $$\\emptyset\\subseteq D$$
-
-That is exactly the claimed inclusion.
-
-$$\\emptyset \\subseteq D$$
 
 So the statement is True.`,
       `**B.** → False
 
-Membership asks whether the object is one of the listed elements. Write the roster:
+Membership asks whether the object itself appears on the roster of $D$:
 
 $$D=\\{a,b,c\\}$$
 
-Compare $\\emptyset$ with each listed letter. None matches, so
+The three members are the letters $a$, $b$, and $c$:
 
-$$\\emptyset\\notin D.$$
+$$\\emptyset\\neq a$$
 
-That conflicts with the claim.
+$$\\emptyset\\neq b$$
+
+$$\\emptyset\\neq c$$
+
+$$\\emptyset\\notin D$$
 
 So the statement is False.`,
       `**C.** → True
 
-Each of the three letters in $D=\\{a,b,c\\}$ may be kept or left out independently when building a subset:
+The number of subsets is the size of the power set:
 
-$$\\lvert\\mathcal{P}(D)\\rvert=2^{3}$$
+$$|D|=3$$
+
+$$|\\mathcal{P}(D)|=2^{|D|}$$
+
+$$|\\mathcal{P}(D)|=2^{3}$$
 
 $$2^{3}=8$$
 
-So $D$ has exactly $8$ subsets, matching the claim.
-
-That matches the claim.
+So $D$ has exactly $8$ subsets.
 
 So the statement is True.`,
       `**D.** → False
 
-Check the two relations separately. Because $a\\in D$,
+Check the two claims separately. First inclusion:
 
 $$\\{a\\}\\subseteq D$$
 
-holds. But the elements of $D$ are letters, not singletons:
+because $a\\in D=\\{a,b,c\\}$. That half is true. Next membership:
 
-$$\\{a\\}\\notin\\{a,b,c\\}$$
+$$\\{a\\}\\neq a$$
 
-The claim needs both relations at once. The second fails.
+$$\\{a\\}\\neq b$$
 
-That conflicts with the claim.
+$$\\{a\\}\\neq c$$
+
+$$\\{a\\}\\notin D$$
+
+The conjunction “both are true” fails because the membership half is false.
 
 So the statement is False.`,
       `**E.** → True
 
-Inclusion is reflexive. Take an arbitrary $x\\in D=\\{a,b,c\\}$. Then $x$ is one of those three letters, hence $x\\in D$. Since $x$ was arbitrary,
+Every set is a subset of itself. With $D=\\{a,b,c\\}$, the condition
 
 $$\\forall x\\,(x\\in D\\Rightarrow x\\in D)$$
 
-which is exactly
+holds for each of $a$, $b$, and $c$. Hence
 
-$$D\\subseteq D.$$
-
-That matches the claim.
+$$D\\subseteq D$$
 
 So the statement is True.`,
     ],
@@ -459,19 +629,23 @@ $$E=\\{1,3,5,7\\}$$
 
 $$F=\\{3,4,5,6\\}$$
 
-$$1\\in E,\\ 1\\notin F$$
+$$1\\in E$$
 
-$$3\\in E,\\ 3\\in F$$
+$$1\\notin F$$
 
-$$5\\in E,\\ 5\\in F$$
+$$3\\in E$$
 
-$$7\\in E,\\ 7\\notin F$$
+$$3\\in F$$
+
+$$5\\in E$$
+
+$$5\\in F$$
+
+$$7\\in E$$
+
+$$7\\notin F$$
 
 $$E\\setminus F=\\{1,7\\}$$
-
-$$\\{1,7\\}$$
-
-The computed roster matches the claim.
 
 So the statement is True.`,
       `**B.** → True
@@ -482,62 +656,78 @@ $$F=\\{3,4,5,6\\}$$
 
 $$E=\\{1,3,5,7\\}$$
 
-$$3\\in F,\\ 3\\in E$$
+$$3\\in F$$
 
-$$4\\in F,\\ 4\\notin E$$
+$$3\\in E$$
 
-$$5\\in F,\\ 5\\in E$$
+$$4\\in F$$
 
-$$6\\in F,\\ 6\\notin E$$
+$$4\\notin E$$
+
+$$5\\in F$$
+
+$$5\\in E$$
+
+$$6\\in F$$
+
+$$6\\notin E$$
 
 $$F\\setminus E=\\{4,6\\}$$
-
-$$\\{4,6\\}$$
-
-The computed roster matches the claim.
 
 So the statement is True.`,
       `**C.** → False
 
-The two differences are
+From the previous two computations:
 
 $$E\\setminus F=\\{1,7\\}$$
 
 $$F\\setminus E=\\{4,6\\}$$
 
-Equality of sets would require the same members. But
+Compare the rosters:
 
 $$1\\in E\\setminus F$$
 
 $$1\\notin F\\setminus E$$
 
-so the rosters differ.
+Already
 
-That conflicts with the claim.
+$$E\\setminus F\\neq F\\setminus E$$
 
 So the statement is False.`,
       `**D.** → True
 
-Form each leftover pile, then take the union:
+Form the two differences, then unite them:
 
 $$E\\setminus F=\\{1,7\\}$$
 
 $$F\\setminus E=\\{4,6\\}$$
 
+$$1\\in(E\\setminus F)\\cup(F\\setminus E)$$
+
+$$7\\in(E\\setminus F)\\cup(F\\setminus E)$$
+
+$$4\\in(E\\setminus F)\\cup(F\\setminus E)$$
+
+$$6\\in(E\\setminus F)\\cup(F\\setminus E)$$
+
 $$(E\\setminus F)\\cup(F\\setminus E)=\\{1,4,6,7\\}$$
-
-That matches the claimed roster.
-
-That matches the claim.
 
 So the statement is True.`,
       `**E.** → True
 
-The leftover piles are $\\{1,7\\}$ and $\\{4,6\\}$. Their intersection is
+Intersect the two differences:
 
-$$\\{1,7\\}\\cap\\{4,6\\}=\\emptyset$$
+$$E\\setminus F=\\{1,7\\}$$
 
-so
+$$F\\setminus E=\\{4,6\\}$$
+
+$$1\\notin\\{4,6\\}$$
+
+$$7\\notin\\{4,6\\}$$
+
+$$4\\notin\\{1,7\\}$$
+
+$$6\\notin\\{1,7\\}$$
 
 $$(E\\setminus F)\\cap(F\\setminus E)=\\emptyset$$
 
@@ -574,40 +764,56 @@ The union of those leftover piles is the symmetric difference. Their intersectio
     tactical_explanations: [
       `**A.** → True
 
-Intersection keeps only elements that sit in both $A$ and $B$.
+Intersection keeps elements in both $A$ and $B$.
 
 $$A=\\{2,4,6,8,10\\}$$
 
 $$B=\\{3,6,9,12\\}$$
 
-$$2\\in A,\\ 2\\notin B$$
+$$2\\in A$$
 
-$$4\\in A,\\ 4\\notin B$$
+$$2\\notin B$$
 
-$$6\\in A,\\ 6\\in B$$
+$$4\\in A$$
 
-$$8\\in A,\\ 8\\notin B$$
+$$4\\notin B$$
 
-$$10\\in A,\\ 10\\notin B$$
+$$6\\in A$$
+
+$$6\\in B$$
+
+$$8\\in A$$
+
+$$8\\notin B$$
+
+$$10\\in A$$
+
+$$10\\notin B$$
 
 $$A\\cap B=\\{6\\}$$
-
-$$\\{6\\}$$
-
-The computed roster matches the claim.
 
 So the statement is True.`,
       `**B.** → True
 
-Union size uses inclusion-exclusion:
+Use the inclusion-exclusion count. First the three sizes:
 
-$$\\lvert A\\cup B\\rvert=\\lvert A\\rvert+\\lvert B\\rvert-\\lvert A\\cap B\\rvert$$
+$$|A|=5$$
 
-Substitute $\\lvert A\\rvert=5$, $\\lvert B\\rvert=4$, and $\\lvert A\\cap B\\rvert=1$:
+$$|B|=4$$
 
-$$5+4-1=8$$
+$$|A\\cap B|=1$$
 
-So $A\\cup B$ has $8$ elements.
+because $A\\cap B=\\{6\\}$. Then
+
+$$|A\\cup B|=|A|+|B|-|A\\cap B|$$
+
+$$|A|+|B|=5+4$$
+
+$$5+4=9$$
+
+$$|A\\cup B|=9-1$$
+
+$$|A\\cup B|=8$$
 
 So the statement is True.`,
       `**C.** → False
@@ -618,21 +824,29 @@ $$C=\\{1,2,3,4,5\\}$$
 
 $$A=\\{2,4,6,8,10\\}$$
 
-$$1\\in C,\\ 1\\notin A$$
+$$1\\in C$$
 
-$$2\\in C,\\ 2\\in A$$
+$$1\\notin A$$
 
-$$3\\in C,\\ 3\\notin A$$
+$$2\\in C$$
 
-$$4\\in C,\\ 4\\in A$$
+$$2\\in A$$
 
-$$5\\in C,\\ 5\\notin A$$
+$$3\\in C$$
+
+$$3\\notin A$$
+
+$$4\\in C$$
+
+$$4\\in A$$
+
+$$5\\in C$$
+
+$$5\\notin A$$
 
 $$C\\setminus A=\\{1,3,5\\}$$
 
-$$\\{1,3\\}$$
-
-The computed roster does not match the claim.
+The claim lists $\\{1,3\\}$, which drops $5$.
 
 So the statement is False.`,
       `**D.** → False
@@ -643,44 +857,58 @@ $$B=\\{3,6,9,12\\}$$
 
 $$C=\\{1,2,3,4,5\\}$$
 
-$$3\\in B,\\ 3\\in C$$
+$$3\\in B$$
 
-$$6\\in B,\\ 6\\notin C$$
+$$3\\in C$$
 
-$$9\\in B,\\ 9\\notin C$$
+$$6\\in B$$
 
-$$12\\in B,\\ 12\\notin C$$
+$$6\\notin C$$
+
+$$9\\in B$$
+
+$$9\\notin C$$
+
+$$12\\in B$$
+
+$$12\\notin C$$
 
 $$B\\setminus C=\\{6,9,12\\}$$
 
-$$\\{3,6,9,12\\}$$
-
-The computed roster does not match the claim.
+The claim lists $\\{3,6,9,12\\}$, which still includes $3$.
 
 So the statement is False.`,
       `**E.** → False
 
-Intersection keeps only elements that sit in both $A$ and $C$.
+Intersection of $A$ and $C$:
 
 $$A=\\{2,4,6,8,10\\}$$
 
 $$C=\\{1,2,3,4,5\\}$$
 
-$$2\\in A,\\ 2\\in C$$
+$$2\\in A$$
 
-$$4\\in A,\\ 4\\in C$$
+$$2\\in C$$
 
-$$6\\in A,\\ 6\\notin C$$
+$$4\\in A$$
 
-$$8\\in A,\\ 8\\notin C$$
+$$4\\in C$$
 
-$$10\\in A,\\ 10\\notin C$$
+$$6\\in A$$
+
+$$6\\notin C$$
+
+$$8\\in A$$
+
+$$8\\notin C$$
+
+$$10\\in A$$
+
+$$10\\notin C$$
 
 $$A\\cap C=\\{2,4\\}$$
 
-$$\\{2,4,6\\}$$
-
-The computed roster does not match the claim.
+The claim lists $\\{2,4,6\\}$, which incorrectly keeps $6$.
 
 So the statement is False.`,
     ],
@@ -707,65 +935,91 @@ Intersection keeps numbers tagged in both inputs. Union keeps every tagged numbe
     tactical_explanations: [
       `**A.** → True
 
-Two-set inclusion-exclusion recovers the union from the given totals:
+Apply inclusion-exclusion with the given counts:
 
-$$\\lvert M\\cup E\\rvert=\\lvert M\\rvert+\\lvert E\\rvert-\\lvert M\\cap E\\rvert$$
+$$|M|=30$$
 
-$$=30+25-12$$
+$$|E|=25$$
 
-$$=43$$
+$$|M\\cap E|=12$$
+
+$$|M\\cup E|=|M|+|E|-|M\\cap E|$$
+
+$$|M|+|E|=30+25$$
+
+$$30+25=55$$
+
+$$|M\\cup E|=55-12$$
+
+$$|M\\cup E|=43$$
 
 So the statement is True.`,
       `**B.** → True
 
-Students in neither course are the cohort total minus the union:
+The cohort has $50$ students, and the previous letter gives
 
-$$\\lvert U\\setminus(M\\cup E)\\rvert=50-\\lvert M\\cup E\\rvert$$
+$$|M\\cup E|=43$$
 
-With $\\lvert M\\cup E\\rvert=43$,
+Students in neither course sit in the complement of the union:
+
+$$|U\\setminus(M\\cup E)|=|U|-|M\\cup E|$$
+
+$$|U|=50$$
 
 $$50-43=7$$
-
-So exactly $7$ take neither course.
-
-That matches the claim.
 
 So the statement is True.`,
       `**C.** → True
 
-Only-Mathematics peels the overlap out of the Mathematics total:
+Only-Mathematics is Mathematics minus the overlap:
 
-$$\\lvert M\\setminus E\\rvert=\\lvert M\\rvert-\\lvert M\\cap E\\rvert$$
+$$|M\\setminus E|=|M|-|M\\cap E|$$
 
-$$=30-12$$
+$$|M|=30$$
 
-$$=18$$
+$$|M\\cap E|=12$$
+
+$$30-12=18$$
+
+$$|M\\setminus E|=18$$
 
 So the statement is True.`,
       `**D.** → False
 
-Subsethood $E\\subseteq M$ would require every Economics student also sit in $M$, i.e. an empty Economics-only region:
+Inclusion $E\\subseteq M$ would require every Economics student to also take Mathematics, so in particular
 
-$$\\lvert E\\setminus M\\rvert = \\lvert E\\rvert-\\lvert M\\cap E\\rvert$$
+$$|E|\\le|M|$$
 
-$$= 25-12$$
+and more strongly
 
-$$= 13$$
+$$E\\cap M=E$$
 
-Thirteen students take Economics but not Mathematics, so $E\\not\\subseteq M$.
+$$|E\\cap M|=|E|$$
+
+But the data give
+
+$$|E\\cap M|=12$$
+
+$$|E|=25$$
+
+$$12\\neq 25$$
+
+so $E\\not\\subseteq M$.
 
 So the statement is False.`,
       `**E.** → False
 
-Disjointness requires an empty intersection. The stem gives a positive overlap:
+Disjointness requires empty intersection:
 
-$$\\lvert M\\cap E\\rvert=12$$
+$$|M\\cap E|=0$$
+
+The given overlap is
+
+$$|M\\cap E|=12$$
 
 $$12\\neq 0$$
 
-so the courses are not disjoint.
-
-That conflicts with the claim.
+so $M$ and $E$ are not disjoint.
 
 So the statement is False.`,
     ],
@@ -798,7 +1052,13 @@ so $\\lvert M \\cup E \\rvert = 43$. Only-Mathematics is $\\lvert M \\rvert$ min
     tactical_explanations: [
       `**A.** → True
 
-Pairwise disjointness means every pair of blocks shares nothing. Check the three pairs on $A=\\{1,2,3\\}$, $B=\\{4,5,6\\}$, $C=\\{7,8,9\\}$:
+Pairwise disjointness means every pairwise intersection is empty.
+
+$$A=\\{1,2,3\\}$$
+
+$$B=\\{4,5,6\\}$$
+
+$$C=\\{7,8,9\\}$$
 
 $$A\\cap B=\\emptyset$$
 
@@ -806,61 +1066,81 @@ $$A\\cap C=\\emptyset$$
 
 $$B\\cap C=\\emptyset$$
 
-All three intersections are empty.
+All three pairwise intersections are empty.
 
 So the statement is True.`,
       `**B.** → True
 
-A partition needs pairwise disjoint nonempty blocks whose union is $U$. Pairwise disjointness holds. The union is
+A partition needs pairwise disjoint nonempty blocks whose union is $U$. From the previous letter the three sets are pairwise disjoint. Their union is
 
-$$A\\cup B\\cup C = \\{1,2,\\ldots,9\\}$$
+$$A\\cup B=\\{1,2,3,4,5,6\\}$$
 
-$$= U$$
+$$A\\cup B\\cup C=\\{1,2,3,4,5,6,7,8,9\\}$$
 
-and each block is nonempty. So $\\{A,B,C\\}$ partitions $U$.
+$$U=\\{1,2,\\ldots,9\\}$$
 
-That matches the claim.
+$$A\\cup B\\cup C=U$$
+
+Each block is nonempty, so $\\{A,B,C\\}$ partitions $U$.
 
 So the statement is True.`,
       `**C.** → True
 
-The triple intersection sits inside every pairwise intersection. From $A\\cap B=\\emptyset$,
+The triple intersection sits inside every pairwise intersection:
 
 $$A\\cap B\\cap C\\subseteq A\\cap B$$
 
-$$A\\cap B\\cap C=\\emptyset.$$
+But
 
-That matches the claim.
+$$A\\cap B=\\emptyset$$
+
+so
+
+$$A\\cap B\\cap C=\\emptyset$$
 
 So the statement is True.`,
       `**D.** → False
 
-Difference $A\\setminus B$ keeps members of $A$ that miss $B$. The blocks are
+Difference $A\\setminus B$ keeps members of $A$ that miss $B$:
 
-$$A = \\{1,2,3\\},$$
+$$A=\\{1,2,3\\}$$
 
-$$B$$
+$$B=\\{4,5,6\\}$$
 
-$$= \\{4,5,6\\}$$
+$$1\\in A$$
 
-Every element of $A$ lies outside $B$, so none is removed:
+$$1\\notin B$$
 
-$$A\\setminus B=\\{1,2,3\\}\\ne\\emptyset$$
+$$2\\in A$$
 
-The claim says the difference is empty. Comparing the two sides.
+$$2\\notin B$$
+
+$$3\\in A$$
+
+$$3\\notin B$$
+
+$$A\\setminus B=\\{1,2,3\\}$$
+
+$$A\\setminus B\\neq\\emptyset$$
 
 So the statement is False.`,
       `**E.** → False
 
-Disjointness of two nonempty sets is allowed. Here both blocks are nonempty:
+An empty intersection does not force either factor to be empty. Here
 
-$$A=\\{1,2,3\\}\\neq\\emptyset$$
+$$A\\cap B=\\emptyset$$
 
-$$B=\\{4,5,6\\}\\neq\\emptyset$$
+but
 
-yet $A\\cap B=\\emptyset$. Empty intersection does not force either factor to be empty.
+$$A=\\{1,2,3\\}$$
 
-That conflicts with the claim.
+$$A\\neq\\emptyset$$
+
+$$B=\\{4,5,6\\}$$
+
+$$B\\neq\\emptyset$$
+
+so the claimed implication fails.
 
 So the statement is False.`,
     ],
@@ -889,55 +1169,88 @@ Pairwise disjointness means every pair of blocks shares nothing. A partition of 
     tactical_explanations: [
       `**A.** → True
 
-The complement of $X$ in $U=\\{1,2,\\ldots,12\\}$ is everyone $X$ leaves out. With
+The universe is $U=\\{1,2,\\ldots,12\\}$ and
 
 $$X=\\{1,2,3,4,5,6\\}$$
 
-the leftover roster is
+Complement keeps the members of $U$ that miss $X$:
+
+$$7\\notin X$$
+
+$$8\\notin X$$
+
+$$9\\notin X$$
+
+$$10\\notin X$$
+
+$$11\\notin X$$
+
+$$12\\notin X$$
 
 $$X^{c}=\\{7,8,9,10,11,12\\}$$
 
 So the statement is True.`,
       `**B.** → True
 
-First form the union of the skill sets:
+First form the union:
+
+$$X=\\{1,2,3,4,5,6\\}$$
+
+$$Y=\\{4,5,6,7,8,9\\}$$
 
 $$X\\cup Y=\\{1,2,3,4,5,6,7,8,9\\}$$
 
-Its complement in $U$ is the three employees outside both skills:
+Complement relative to $U=\\{1,2,\\ldots,12\\}$:
+
+$$10\\notin X\\cup Y$$
+
+$$11\\notin X\\cup Y$$
+
+$$12\\notin X\\cup Y$$
 
 $$(X\\cup Y)^{c}=\\{10,11,12\\}$$
 
 So the statement is True.`,
       `**C.** → True
 
-Compute each complement, then intersect:
+Form each complement, then intersect:
 
 $$X^{c}=\\{7,8,9,10,11,12\\}$$
 
+$$Y=\\{4,5,6,7,8,9\\}$$
+
 $$Y^{c}=\\{1,2,3,10,11,12\\}$$
 
+Shared members:
+
+$$10\\in X^{c}$$
+
+$$10\\in Y^{c}$$
+
+$$11\\in X^{c}$$
+
+$$11\\in Y^{c}$$
+
+$$12\\in X^{c}$$
+
+$$12\\in Y^{c}$$
+
 $$X^{c}\\cap Y^{c}=\\{10,11,12\\}$$
-
-De Morgan also identifies this with $(X\\cup Y)^{c}$.
-
-That matches the claim.
 
 So the statement is True.`,
       `**D.** → True
 
-De Morgan's second law equates the complement of an intersection with the union of complements. One side:
+De Morgan’s law for complements says
+
+$$(X\\cap Y)^{c}=X^{c}\\cup Y^{c}$$
+
+Verify by computing both sides. First the intersection:
 
 $$X\\cap Y=\\{4,5,6\\}$$
 
 $$(X\\cap Y)^{c}=\\{1,2,3,7,8,9,10,11,12\\}$$
 
-The other side $X^{c}\\cup Y^{c}$ yields the same roster. So the identity holds.
-
-So the statement is True.`,
-      `**E.** → False
-
-Form the union of complements:
+From earlier,
 
 $$X^{c}=\\{7,8,9,10,11,12\\}$$
 
@@ -945,9 +1258,40 @@ $$Y^{c}=\\{1,2,3,10,11,12\\}$$
 
 $$X^{c}\\cup Y^{c}=\\{1,2,3,7,8,9,10,11,12\\}$$
 
-The claim drops $7,8,9$.
+The two sides match.
 
-That conflicts with the claim.
+So the statement is True.`,
+      `**E.** → False
+
+From earlier,
+
+$$X^{c}=\\{7,8,9,10,11,12\\}$$
+
+$$Y^{c}=\\{1,2,3,10,11,12\\}$$
+
+Unite them:
+
+$$1\\in Y^{c}$$
+
+$$2\\in Y^{c}$$
+
+$$3\\in Y^{c}$$
+
+$$7\\in X^{c}$$
+
+$$8\\in X^{c}$$
+
+$$9\\in X^{c}$$
+
+$$10\\in X^{c}$$
+
+$$11\\in X^{c}$$
+
+$$12\\in X^{c}$$
+
+$$X^{c}\\cup Y^{c}=\\{1,2,3,7,8,9,10,11,12\\}$$
+
+The claim lists $\\{1,2,3,10,11,12\\}$, which drops $7,8,9$.
 
 So the statement is False.`,
     ],
@@ -978,73 +1322,141 @@ De Morgan's laws: $(X\\cup Y)^{c}=X^{c}\\cap Y^{c}$ and $(X\\cap Y)^{c}=X^{c}\\c
     tactical_explanations: [
       `**A.** → False
 
-Form the union first:
+First form the union:
+
+$$A=\\{1,2,3,4,5\\}$$
+
+$$B=\\{4,5,6,7,8\\}$$
 
 $$A\\cup B=\\{1,2,3,4,5,6,7,8\\}$$
 
-Its complement in $U=\\{1,2,\\ldots,10\\}$ is
+Complement relative to $U=\\{1,2,\\ldots,10\\}$:
+
+$$9\\notin A\\cup B$$
+
+$$10\\notin A\\cup B$$
 
 $$(A\\cup B)^{c}=\\{9,10\\}$$
 
-The claim inserts $8$, but $8\\in A\\cup B$, so $8$ cannot sit in the complement.
+The claim lists $\\{8,9,10\\}$. But
 
-That conflicts with the claim.
+$$8\\in B$$
+
+$$8\\in A\\cup B$$
+
+$$8\\notin(A\\cup B)^{c}$$
 
 So the statement is False.`,
       `**B.** → True
 
-De Morgan's law for intersection says
+De Morgan’s law for complements states
 
 $$(A\\cap B)^{c}=A^{c}\\cup B^{c}$$
 
-for any sets $A,B$ in a fixed universe. The identity holds independently of the particular rosters.
+Compute both sides. Intersection:
 
-That matches the claim.
+$$A\\cap B=\\{4,5\\}$$
 
-$$(A \\cap B)^{c} = A^{c} \\cup B^{c}$$
+$$(A\\cap B)^{c}=\\{1,2,3,6,7,8,9,10\\}$$
 
-So the statement is True.`,
-      `**C.** → False
-
-Compute each complement, then intersect:
+Complements:
 
 $$A^{c}=\\{6,7,8,9,10\\}$$
 
 $$B^{c}=\\{1,2,3,9,10\\}$$
 
+$$A^{c}\\cup B^{c}=\\{1,2,3,6,7,8,9,10\\}$$
+
+The two sides agree.
+
+So the statement is True.`,
+      `**C.** → False
+
+Form the complements, then intersect:
+
+$$A^{c}=\\{6,7,8,9,10\\}$$
+
+$$B^{c}=\\{1,2,3,9,10\\}$$
+
+$$6\\in A^{c}$$
+
+$$6\\notin B^{c}$$
+
+$$7\\in A^{c}$$
+
+$$7\\notin B^{c}$$
+
+$$8\\in A^{c}$$
+
+$$8\\notin B^{c}$$
+
+$$9\\in A^{c}$$
+
+$$9\\in B^{c}$$
+
+$$10\\in A^{c}$$
+
+$$10\\in B^{c}$$
+
 $$A^{c}\\cap B^{c}=\\{9,10\\}$$
 
-The claim keeps $6,7,8$, which sit in $A^{c}$ but not in $B^{c}$.
-
-That conflicts with the claim.
+The claim lists $\\{6,7,8,9,10\\}$, which is $A^{c}$ rather than the intersection.
 
 So the statement is False.`,
       `**D.** → True
 
-First form the intersection:
+Intersection first:
 
 $$A\\cap B=\\{4,5\\}$$
 
-Its complement in $U$ is everyone else:
+Complement in $U=\\{1,2,\\ldots,10\\}$ removes $4$ and $5$:
+
+$$1\\notin A\\cap B$$
+
+$$2\\notin A\\cap B$$
+
+$$3\\notin A\\cap B$$
+
+$$6\\notin A\\cap B$$
+
+$$7\\notin A\\cap B$$
+
+$$8\\notin A\\cap B$$
+
+$$9\\notin A\\cap B$$
+
+$$10\\notin A\\cap B$$
 
 $$(A\\cap B)^{c}=\\{1,2,3,6,7,8,9,10\\}$$
 
 So the statement is True.`,
       `**E.** → False
 
-Form the union of complements from
+Unite the complements:
 
-$$A^{c} = \\{6,7,8,9,10\\},$$
+$$A^{c}=\\{6,7,8,9,10\\}$$
 
-$$B^{c}$$
+$$B^{c}=\\{1,2,3,9,10\\}$$
 
-$$= \\{1,2,3,9,10\\}$$
+$$1\\in B^{c}$$
+
+$$2\\in B^{c}$$
+
+$$3\\in B^{c}$$
+
+$$6\\in A^{c}$$
+
+$$7\\in A^{c}$$
+
+$$8\\in A^{c}$$
+
+$$9\\in A^{c}$$
+
+$$10\\in A^{c}$$
 
 $$A^{c}\\cup B^{c}=\\{1,2,3,6,7,8,9,10\\}$$
 
-The claim drops $6,7,8$.
-
-That conflicts with the claim.
+The claim lists $\\{1,2,3,9,10\\}$, which drops $6,7,8$.
 
 So the statement is False.`,
     ],
@@ -1075,7 +1487,19 @@ De Morgan's laws: $(A\\cup B)^{c}=A^{c}\\cap B^{c}$ and $(A\\cap B)^{c}=A^{c}\\c
     tactical_explanations: [
       `**A.** → True
 
-Check the three partition axioms for $P=\\{\\{1,2\\},\\{3,4\\},\\{5,6\\}\\}$ on $A=\\{1,2,3,4,5,6\\}$:
+Check the three partition axioms for
+
+$$P=\\{\\{1,2\\},\\{3,4\\},\\{5,6\\}\\}$$
+
+on $A=\\{1,2,3,4,5,6\\}$. Nonempty blocks:
+
+$$\\{1,2\\}\\neq\\emptyset$$
+
+$$\\{3,4\\}\\neq\\emptyset$$
+
+$$\\{5,6\\}\\neq\\emptyset$$
+
+Pairwise disjoint:
 
 $$\\{1,2\\}\\cap\\{3,4\\}=\\emptyset$$
 
@@ -1083,59 +1507,77 @@ $$\\{1,2\\}\\cap\\{5,6\\}=\\emptyset$$
 
 $$\\{3,4\\}\\cap\\{5,6\\}=\\emptyset$$
 
+Union covers $A$:
+
+$$\\{1,2\\}\\cup\\{3,4\\}=\\{1,2,3,4\\}$$
+
+$$\\{1,2,3,4\\}\\cup\\{5,6\\}=\\{1,2,3,4,5,6\\}$$
+
 $$\\{1,2\\}\\cup\\{3,4\\}\\cup\\{5,6\\}=A$$
 
-Each block is nonempty. All three axioms hold.
+All three axioms hold.
 
 So the statement is True.`,
       `**B.** → False
 
-Block count is free. Both of the following partition a six-element set:
+The claim says every partition must have exactly $n$ blocks when $|A|=n$. But the partition
 
-$$\\{\\{1,2\\},\\{3,4\\},\\{5,6\\}\\}$$
+$$P=\\{\\{1,2\\},\\{3,4\\},\\{5,6\\}\\}$$
+
+of a $6$-element set has only $3$ blocks. Another valid partition is the single-block collection
 
 $$\\{A\\}$$
 
-The first has $3$ blocks and the second has $1$ block.
+which has $1$ block, not $6$. So the number of blocks need not equal $|A|$.
 
 So the statement is False.`,
       `**C.** → False
 
-The blocks of $Q=\\{\\{1,2,3\\},\\{3,4,5,6\\}\\}$ overlap at $3$:
+For
+
+$$Q=\\{\\{1,2,3\\},\\{3,4,5,6\\}\\}$$
+
+check pairwise disjointness:
 
 $$\\{1,2,3\\}\\cap\\{3,4,5,6\\}=\\{3\\}$$
 
 $$\\{3\\}\\neq\\emptyset$$
 
-Pairwise disjointness fails, so $Q$ is not a partition.
-
-That conflicts with the claim.
+The blocks share $3$, so $Q$ is not a partition.
 
 So the statement is False.`,
       `**D.** → False
 
-The union of the blocks of $R=\\{\\{1,2\\},\\{3,4\\},\\{5\\}\\}$ is
+For
 
-$$\\{1,2\\}\\cup\\{3,4\\}\\cup\\{5\\}=\\{1,2,3,4,5\\}$$
+$$R=\\{\\{1,2\\},\\{3,4\\},\\{5\\}\\}$$
 
-which misses $6\\in A$. Covering fails, so $R$ is not a partition.
+the union is
 
-That conflicts with the claim.
+$$\\{1,2\\}\\cup\\{3,4\\}=\\{1,2,3,4\\}$$
 
-$$R = \\{\\{1,2\\}, \\{3,4\\}, \\{5\\}\\}$$
+$$\\{1,2,3,4\\}\\cup\\{5\\}=\\{1,2,3,4,5\\}$$
+
+But
+
+$$A=\\{1,2,3,4,5,6\\}$$
+
+$$6\\notin\\{1,2,3,4,5\\}$$
+
+so the union misses $6$ and $R$ is not a partition.
 
 So the statement is False.`,
       `**E.** → True
 
-For $n\\ge 2$, at least two partitions exist. The trivial one-block partition is $\\{A\\}$. Splitting off a singleton gives another:
+For $n\\ge 2$, at least two partitions exist. One is the single block
+
+$$\\{A\\}$$
+
+Another splits off one element:
 
 $$\\{\\{a\\},A\\setminus\\{a\\}\\}$$
 
-for any $a\\in A$. So more than one partition always exists.
-
-That matches the claim.
-
-$$n \\ge 2$$
+for any fixed $a\\in A$. These are distinct because one has $1$ block and the other has $2$. Hence more than one partition exists.
 
 So the statement is True.`,
     ],
@@ -1162,75 +1604,85 @@ Block count is free: $\\{A\\}$ is a $1$-block partition, and $n$ singletons is a
     tactical_explanations: [
       `**A.** → True
 
-Each of the five elements may be included or omitted independently when building a subset:
+The number of subsets equals the power-set size:
 
-$$\\lvert\\mathcal{P}(A)\\rvert = 2^{\\lvert A\\rvert}$$
+$$|A|=5$$
 
-$$= 2^{5}$$
+$$|\\mathcal{P}(A)|=2^{|A|}$$
+
+$$|\\mathcal{P}(A)|=2^{5}$$
 
 $$2^{5}=32$$
-
-So $A$ has $32$ subsets.
-
-That matches the claim.
 
 So the statement is True.`,
       `**B.** → True
 
-Proper subsets are all subsets except $A$ itself. First count the full power set of a five-element set:
+Proper subsets are all subsets except $A$ itself:
 
-$$\\lvert\\mathcal{P}(A)\\rvert = 2^{5}$$
+$$|\\mathcal{P}(A)|=2^{5}$$
 
-$$= 32$$
+$$2^{5}=32$$
 
-Drop $A$ from that count:
+$$|\\mathcal{P}(A)|-1=32-1$$
 
 $$32-1=31$$
-
-So there are $31$ proper subsets, matching the claim.
 
 So the statement is True.`,
       `**C.** → False
 
-Four-element subsets are counted by the binomial coefficient:
+Subsets of size $4$ are counted by
 
-$$\\binom{5}{4} = \\binom{5}{1}$$
+$$\\binom{5}{4}=\\frac{5!}{4!\\,1!}$$
 
-$$= 5$$
+$$5!=5\\cdot 4\\cdot 3\\cdot 2\\cdot 1$$
 
-The claim asserts $10$. Note that $\\binom{5}{2}=10$ counts two-element subsets instead.
+$$5!=120$$
 
-That conflicts with the claim.
+$$4!=24$$
+
+$$1!=1$$
+
+$$\\binom{5}{4}=\\frac{120}{24\\cdot 1}$$
+
+$$\\binom{5}{4}=\\frac{120}{24}$$
+
+$$\\binom{5}{4}=5$$
+
+The claim says $10$, but the count is $5$.
 
 So the statement is False.`,
       `**D.** → True
 
-Nonempty subsets are the full power set with the empty set removed. For $|A|=5$,
+Nonempty subsets exclude only $\\emptyset$:
 
-$$\\lvert\\mathcal{P}(A)\\rvert=2^{5}$$
+$$|\\mathcal{P}(A)|=32$$
 
-$$2^{5}=32$$
-
-Drop only $\\emptyset$:
+$$|\\mathcal{P}(A)|-1=32-1$$
 
 $$32-1=31$$
-
-So there are $31$ nonempty subsets, matching the claim.
 
 So the statement is True.`,
       `**E.** → False
 
-Even-cardinality subsets for $|A|=5$:
+Even-sized subsets have size $0$, $2$, or $4$:
 
-$$\\binom{5}{0}+\\binom{5}{2}+\\binom{5}{4}$$
+$$\\binom{5}{0}=1$$
 
-$$= 1+10+5$$
+$$\\binom{5}{2}=\\frac{5\\cdot 4}{2\\cdot 1}$$
 
-$$= 16$$
+$$\\frac{5\\cdot 4}{2\\cdot 1}=\\frac{20}{2}$$
 
-Exactly half of $2^{5}=32$ subsets have even size. The claim asserts $15$.
+$$\\frac{20}{2}=10$$
 
-That conflicts with the claim.
+$$\\binom{5}{4}=5$$
+
+Sum:
+
+$$1+10=11$$
+
+$$11+5=16$$
+
+The even-sized count is $16$, not $15$.
 
 So the statement is False.`,
     ],
@@ -1261,75 +1713,87 @@ Proper subsets drop $A$ itself. Nonempty subsets drop $\\emptyset$. Size counts 
     tactical_explanations: [
       `**A.** → True
 
-Translate brackets into inequalities, then take the tighter bounds:
+Write the interval conditions:
 
 $$A=(0,10]\\iff 0<x\\le 10$$
 
 $$B=[5,15)\\iff 5\\le x<15$$
 
-Intersection requires both conditions at once:
+Membership in both requires both inequalities:
+
+$$0<x\\le 10$$
+
+$$5\\le x<15$$
+
+The stricter lower bound is $5$, and the stricter upper bound is $10$:
 
 $$5\\le x\\le 10$$
 
-which is the closed interval $[5,10]$.
-
-That matches the claim.
+$$A\\cap B=[5,10]$$
 
 So the statement is True.`,
       `**B.** → False
 
-Union runs from the leftmost open end to the rightmost open end:
+Union membership requires at least one of
 
-$$0<x<15$$
+$$0<x\\le 10$$
 
-so
+$$5\\le x<15$$
+
+The leftmost points come from $A$, so $x>0$. The rightmost points come from $B$, so $x<15$. At the right endpoint of $A$:
+
+$$10\\in A$$
+
+$$10<15$$
+
+so $10$ is included. But $15$ itself fails $x<15$, and points with $x=15$ are excluded. Also $A$ never includes $0$. Hence
 
 $$A\\cup B=(0,15)$$
 
-The claim closes the right end as $(0,15]$. But $15\\notin A$ and $15\\notin B$, so $15$ is excluded.
-
-That conflicts with the claim.
+The claim writes $(0,15]$, which incorrectly includes $15$.
 
 So the statement is False.`,
       `**C.** → True
 
-Check $10$ against both intervals. For $A=(0,10]$:
+Test $x=10$ against both intervals:
 
 $$0<10\\le 10$$
 
-holds, so $10\\in A$. For $B=[5,15)$:
+so $10\\in A$. And
 
 $$5\\le 10<15$$
 
-holds, so $10\\in B$. Therefore $10\\in A\\cap B$.
+so $10\\in B$. Therefore
 
-That matches the claim.
+$$10\\in A\\cap B$$
 
 So the statement is True.`,
       `**D.** → False
 
-Difference $A\\setminus B$ needs $x\\in A$ and $x\\notin B$. For $x=5$, the left endpoint of $B$ gives
+Difference $A\\setminus B$ needs $x\\in A$ and $x\\notin B$. Test $x=5$:
 
 $$5\\le 5<15$$
 
-so $5\\in B$. Even though $5\\in A$, membership in $B$ excludes it from the difference:
+so $5\\in B$. Therefore
 
-$$5\\notin A\\setminus B.$$
+$$5\\notin A\\setminus B$$
 
-That conflicts with the claim.
+even though $5\\in A$ because $0<5\\le 10$.
 
 So the statement is False.`,
       `**E.** → False
 
-The implication $x\\in A\\Rightarrow x\\in B$ fails at any point of $A$ outside $B$. Take $x=1$:
+The implication $x\\in A\\Rightarrow x\\in B$ fails if some point of $A$ misses $B$. Take
 
-$$1\\in A$$
+$$x=1$$
 
-$$1\\notin B$$
+$$0<1\\le 10$$
 
-so the implication is not true for all $x$.
+so $1\\in A$. But
 
-That conflicts with the claim.
+$$5\\le 1<15$$
+
+is false, so $1\\notin B$. The implication does not hold for all $x$.
 
 So the statement is False.`,
     ],
@@ -1360,77 +1824,125 @@ Intersection takes the tighter bounds. Union runs from the leftmost open end to 
 
 Three-set inclusion-exclusion:
 
-$$\\lvert A\\cup B\\cup C\\rvert=80+70+60-30-25-20+10$$
+$$|A\\cup B\\cup C|=|A|+|B|+|C|-|A\\cap B|-|B\\cap C|-|A\\cap C|+|A\\cap B\\cap C|$$
 
-$$=210-75+10$$
+Plug in the survey counts one term at a time:
 
-$$=145$$
+$$|A|=80$$
 
-The claim asserts $155$. Since $145\\neq 155$, the statement is False.
+$$|B|=70$$
 
-That conflicts with the claim.
+$$|C|=60$$
+
+$$|A|+|B|=80+70$$
+
+$$80+70=150$$
+
+$$150+|C|=150+60$$
+
+$$150+60=210$$
+
+$$|A\\cap B|=30$$
+
+$$210-30=180$$
+
+$$|B\\cap C|=25$$
+
+$$180-25=155$$
+
+$$|A\\cap C|=20$$
+
+$$155-20=135$$
+
+$$|A\\cap B\\cap C|=10$$
+
+$$135+10=145$$
+
+$$|A\\cup B\\cup C|=145$$
+
+The claim says $155$, which is not the computed value.
 
 So the statement is False.`,
       `**B.** → True
 
-Tourists who visited none of the three are the survey total minus the union:
+From the previous letter,
 
-$$150-\\lvert A\\cup B\\cup C\\rvert$$
+$$|A\\cup B\\cup C|=145$$
 
-With $\\lvert A\\cup B\\cup C\\rvert=145$,
+Tourists outside all three museums:
+
+$$150-|A\\cup B\\cup C|=150-145$$
 
 $$150-145=5$$
-
-So exactly $5$ visited none.
-
-That matches the claim.
 
 So the statement is True.`,
       `**C.** → False
 
-Exactly A-and-B (not C) is the pairwise total minus the triple:
+Exactly $A$ and $B$ but not $C$ is the pairwise overlap minus the triple:
 
-$$\\lvert A\\cap B\\setminus C\\rvert=\\lvert A\\cap B\\rvert-\\lvert A\\cap B\\cap C\\rvert$$
+$$|A\\cap B\\setminus C|=|A\\cap B|-|A\\cap B\\cap C|$$
 
-$$= 30-10$$
+$$|A\\cap B|=30$$
 
-$$= 20$$
+$$|A\\cap B\\cap C|=10$$
 
-The claim reuses the pairwise total $30$ and forgets to remove the triple.
+$$30-10=20$$
+
+The claim says $30$, which forgets to remove the triple overlap.
 
 So the statement is False.`,
       `**D.** → False
 
-Only-A removes both pairwise overlaps and restores the triple once:
+Only Museum A excludes visitors who also saw $B$ or $C$. The correct count is
 
-$$\\lvert A\\setminus(B\\cup C)\\rvert=\\lvert A\\rvert-\\lvert A\\cap B\\rvert-\\lvert A\\cap C\\rvert+\\lvert A\\cap B\\cap C\\rvert$$
+$$|A\\setminus(B\\cup C)|=|A|-|A\\cap B|-|A\\cap C|+|A\\cap B\\cap C|$$
 
-$$= 80-30-20+10$$
+because the triple was subtracted twice in the two pairwise terms:
 
-$$= 40$$
+$$|A|=80$$
 
-The claim computes $80-30-20=30$ and forgets to add back the triple.
+$$|A\\cap B|=30$$
+
+$$80-30=50$$
+
+$$|A\\cap C|=20$$
+
+$$50-20=30$$
+
+$$|A\\cap B\\cap C|=10$$
+
+$$30+10=40$$
+
+The claim’s arithmetic $80-30-20=30$ omits the $+$ triple correction, so it is wrong.
 
 So the statement is False.`,
       `**E.** → False
 
-At least two museums means the three pair-only regions plus the triple:
+At least two museums means the three “exactly-two” regions plus the triple. Exactly-two counts:
 
-$$\\lvert A\\cap B\\setminus C\\rvert = 30-10$$
+$$|A\\cap B\\setminus C|=30-10$$
 
-$$= 20$$
+$$30-10=20$$
 
-$$\\lvert B\\cap C\\setminus A\\rvert = 25-10$$
+$$|B\\cap C\\setminus A|=25-10$$
 
-$$= 15$$
+$$25-10=15$$
 
-$$\\lvert A\\cap C\\setminus B\\rvert = 20-10$$
+$$|A\\cap C\\setminus B|=20-10$$
 
-$$= 10$$
+$$20-10=10$$
 
-$$20+15+10+10=55$$
+$$|A\\cap B\\cap C|=10$$
 
-The claim asserts $65$.
+Sum:
+
+$$20+15=35$$
+
+$$35+10=45$$
+
+$$45+10=55$$
+
+The claim says $65$, which is too large.
 
 So the statement is False.`,
     ],
@@ -1461,65 +1973,91 @@ Pair totals still include the triple, so an exact-pair region subtracts $10$. On
     tactical_explanations: [
       `**A.** → True
 
-A proper subset is a subset that is not equal to the whole. Every positive even sits in $N$, so
-
-$$E\\subseteq N$$
-
-But $1\\in N$ and $1\\notin E$, so $E\\ne N$. Hence
-
-$$E\\subsetneq N$$
-
-That is the claimed proper inclusion.
-
-So the statement is True.`,
-      `**B.** → False
-
-For infinite sets, a proper subset can have the same cardinality as the whole. The map $n\\mapsto 2n$ is a bijection $N\\to E$, so
-
-$$\\lvert E\\rvert=\\lvert N\\rvert$$
-
-even though $E\\subsetneq N$. "Proper subset implies strictly fewer" is a finite-set intuition.
-
-So the statement is False.`,
-      `**C.** → False
-
-The map $f(n)=2n$ sends naturals to even naturals:
-
-$$f(N) = \\{2,4,6,\\ldots\\}$$
-
-$$= E$$
-
-The odd naturals are $\\{1,3,5,\\ldots\\}$, which is a different set. So $f$ is not a bijection onto the odds.
-
-That conflicts with the claim.
-
-So the statement is False.`,
-      `**D.** → True
-
-We have both $E\\subsetneq N$ and a bijection $n\\mapsto 2n$ between them. That pair of facts is the standard counterexample showing that finite-set size intuition fails for infinite sets.
-
-Record the verdict against the live claim after the calculation above is complete.
-
-$$E \\subsetneq N$$
-
-$$\\Rightarrow$$
-
-So the statement is True.`,
-      `**E.** → False
-
-Many infinite subsets of $N$ are proper. The evens
+Every even natural is a natural number:
 
 $$E=\\{2,4,6,\\ldots\\}$$
 
-are infinite, yet
+$$N=\\{1,2,3,\\ldots\\}$$
+
+$$E\\subseteq N$$
+
+Properness needs a witness in $N\\setminus E$. Take
 
 $$1\\in N$$
 
 $$1\\notin E$$
 
-so $E\\neq N$. Not every infinite subset equals $N$.
+so
 
-That conflicts with the claim.
+$$E\\neq N$$
+
+$$E\\subsetneq N$$
+
+So the statement is True.`,
+      `**B.** → False
+
+For infinite sets, a proper subset can still be equinumerous with the whole set. The map
+
+$$f:N\\to E,\\qquad f(n)=2n$$
+
+is a bijection:
+
+$$f(1)=2$$
+
+$$f(2)=4$$
+
+$$f(3)=6$$
+
+and every even arises uniquely. Hence
+
+$$|E|=|N|$$
+
+even though $E\\subsetneq N$. The finite-set slogan “proper subset $\\Rightarrow$ strictly smaller” fails here.
+
+So the statement is False.`,
+      `**C.** → False
+
+The rule $f(n)=2n$ sends naturals to even naturals:
+
+$$f(1)=2$$
+
+$$f(2)=4$$
+
+$$f(3)=6$$
+
+$$f(N)=\\{2,4,6,\\ldots\\}$$
+
+$$E=\\{2,4,6,\\ldots\\}$$
+
+$$f(N)=E$$
+
+The odd naturals are $\\{1,3,5,\\ldots\\}$, which is not $E$. So $f$ is a bijection $N\\to E$, not a bijection onto the odds.
+
+So the statement is False.`,
+      `**D.** → True
+
+We already have
+
+$$E\\subsetneq N$$
+
+and a bijection $n\\mapsto 2n$ showing
+
+$$|E|=|N|$$
+
+That pair of facts is exactly a counterexample to the finite-set intuition that a proper subset must be strictly smaller.
+
+So the statement is True.`,
+      `**E.** → False
+
+The even numbers form an infinite subset of $N$:
+
+$$E=\\{2,4,6,\\ldots\\}$$
+
+$$E\\subseteq N$$
+
+$$E\\neq N$$
+
+because $1\\notin E$. So an infinite subset need not equal $N$.
 
 So the statement is False.`,
     ],
