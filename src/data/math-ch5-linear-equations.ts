@@ -1886,15 +1886,27 @@ $$=17$$
     tactical_explanations: [
       `**A.** → False
 
-A recovered unknown is checked by reading it from the shared solve and comparing it with the figure on the card.
+Compare the recovered Standard base fee with the advertised Basic base fee from the flyer.
 
-The shared solve isolates Standard's base fee:
+The overview recovered Standard's base fee:
 
 $$
 x=38
 $$
 
-The claim names a different figure, so the displays do not agree.
+The Basic plan's advertised base fee is
+
+$$
+15
+$$
+
+The claim says Standard's base is lower than Basic's, which would require
+
+$$
+38 < 15
+$$
+
+That comparison fails.
 
 So the statement is False.`,
       `**B.** → True
@@ -2032,25 +2044,31 @@ $$x = 38$$
     tactical_explanations: [
       `**A.** → True
 
-A transfer shifts one recovered holding into the other by the stated amount:
+Weekend 1's printed total includes the $8\%$ occupancy tax. Strip the tax to recover the pre-tax booking revenue.
+
+Weekend 1 charged
 
 $$
-x' = x - t,\\quad y'
+2419.20
+$$
+
+Divide by $1.08$:
+
+$$
+\frac{2419.20}{1.08}
 $$
 
 $$
-= y + t
+= 2240
 $$
 
-Substitute the stem numbers recovered in the overview:
+The claim asserts
 
 $$
 2240
 $$
 
-That computed value matches the claim.
-
-The shared elimination already fixed the unique pair; this letter only tests the claim's extra arithmetic.
+Those two displays agree.
 
 So the statement is True.`,
       `**B.** → False
@@ -4199,9 +4217,27 @@ $$44 \\ne 50.$$
 So the statement is False.`,
       `**C.** → True
 
-Start from the overview's recovered unknowns, apply only this claim's extra check, and compare with the stated figure.
+Expand Job 1's bundles into individual units using the stem's bundle definition.
 
-The overview expanded Job 1 to 14 Standard units and 35 Premium units. The claim is those same counts.
+Each bundle is $2$ Standard and $5$ Premium, and Job 1 has $7$ bundles:
+
+$$
+7 \\times 2
+$$
+
+$$
+= 14
+$$
+
+$$
+7 \\times 5
+$$
+
+$$
+= 35
+$$
+
+So Job 1 is $14$ Standard and $35$ Premium units, matching the claim.
 
 So the statement is True.`,
       `**D.** → True
@@ -4459,9 +4495,45 @@ $$10 \\ne 12.$$
 So the statement is False.`,
       `**C.** → True
 
-Read the figure already produced by the shared solve, then compare it with the claim.
+Recover Week 2's unit counts from the sticky note, then compare with the claim.
 
-The overview recovered Week 2's counts as 25 Widget A and 33 Widget B from the sticky note. The claim is that same pair.
+The note says $8$ more Widget B than Widget A and $58$ units total:
+
+$$
+a + b = 58
+$$
+
+$$
+b = a + 8
+$$
+
+Substitute:
+
+$$
+a + (a + 8) = 58
+$$
+
+$$
+2a + 8 = 58
+$$
+
+$$
+2a = 50
+$$
+
+$$
+a = 25
+$$
+
+$$
+b = 25 + 8
+$$
+
+$$
+= 33
+$$
+
+The claim asserts $25$ Widget A and $33$ Widget B. Those figures agree.
 
 So the statement is True.`,
       `**D.** → False
@@ -5042,7 +5114,19 @@ $$15.20 > 10.15.$$
 So the statement is True.`,
       `**C.** → False
 
-The calorie totals 6,100 and 5,400 are printed for reference only. They are not coefficients of $x$ or $y$, so they cannot replace the item counts in (1) and (2). The prices are recovered from quantities and dollar totals.
+The prices come from the quantity–dollar system, not from the calorie totals.
+
+The overview equations use item counts and dollar totals only:
+
+$$
+7x + 9y = 78.65
+$$
+
+$$
+11x + 4y = 85.05
+$$
+
+The calorie figures $6100$ and $5400$ never appear as coefficients. They cannot replace the item counts, so they do not determine the prices on their own.
 
 So the statement is False.`,
       `**D.** → True
@@ -5461,9 +5545,41 @@ $$
     tactical_explanations: [
       `**A.** → True
 
-Start from the overview's recovered unknowns, apply only this claim's extra check, and compare with the stated figure.
+Check whether Invoice 2 is a constant scale of Invoice 1's quantities and total.
 
-The overview found Invoice 2 is a $0.60$-scale copy of Invoice 1. The claim is that same redundancy.
+Invoice 1 has $15$ Nitrogen and $20$ Oxygen for \\$699.00. Invoice 2 has $9$ Nitrogen and $12$ Oxygen for \\$419.40.
+
+Quantity scale on Nitrogen:
+
+$$
+\frac{9}{15}
+$$
+
+$$
+= 0.60
+$$
+
+Quantity scale on Oxygen:
+
+$$
+\frac{12}{20}
+$$
+
+$$
+= 0.60
+$$
+
+Total scale:
+
+$$
+\frac{419.40}{699.00}
+$$
+
+$$
+= 0.60
+$$
+
+All three ratios equal $0.60$, so Invoice 2 only restates Invoice 1 at $60\%$ scale, matching the claim.
 
 So the statement is True.`,
       `**B.** → False
