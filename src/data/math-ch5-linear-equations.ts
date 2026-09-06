@@ -1600,7 +1600,11 @@ $$6 - 3.50$$
 
 $$= 2.50$$
 
-The claim is \\$2.50.
+The claim asserts
+
+$$2.50$$
+
+.
 
 The computed figure matches the claim.
 
@@ -1655,7 +1659,9 @@ $$21 + 36$$
 
 $$= 57$$
 
-The claim is \\$57.00
+The claim asserts
+
+$$57.00$$
 
 The computed figure and the claim agree.
 
@@ -1755,7 +1761,13 @@ $$
 y=17
 $$
 
-The claim names a different figure, so the displays do not agree.
+The claim asserts
+
+$$
+y=18
+$$
+
+Those two displays do not agree.
 
 So the statement is False.`,
       `**C.** → True
@@ -1768,7 +1780,11 @@ $$100 \\times 12$$
 
 $$= 1200$$
 
-The claim is \\$1,200 higher.
+The claim asserts
+
+$$1200$$
+
+ higher.
 
 So the statement is True.`,
       `**D.** → False
@@ -1920,7 +1936,9 @@ $$38 + 30$$
 
 $$= 68$$
 
-The claim is \\$68.00
+The claim asserts
+
+$$68.00$$
 
 The computed figure and the claim agree.
 
@@ -2051,7 +2069,11 @@ $$210 - 140$$
 
 $$= 70$$
 
-The claim is \\$200 more.
+The claim asserts
+
+$$200$$
+
+ more.
 
 The shared elimination already fixed the unique pair; this letter only tests the claim's extra arithmetic.
 
@@ -2220,7 +2242,13 @@ $$
 y=15
 $$
 
-The claim names a different figure, so the displays do not agree.
+The claim asserts
+
+$$
+y=18
+$$
+
+Those two displays do not agree.
 
 So the statement is False.`,
       `**C.** → True
@@ -2276,7 +2304,11 @@ $$2400 + 1500$$
 
 $$= 3900$$
 
-The claim is \\$4,700. Then $3900 \\ne 4700$.
+The claim asserts
+
+$$4700$$
+
+. Then $3900 \\ne 4700$.
 
 The computed figure does not match the claim.
 
@@ -2291,7 +2323,11 @@ $$3150 + 3660$$
 
 $$= 6810$$
 
-The claim is \\$6,810.
+The claim asserts
+
+$$6810$$
+
+.
 
 So the statement is True.`,
     ],
@@ -2371,7 +2407,13 @@ $$
 y=24
 $$
 
-That recovered value is not the figure on the card.
+The claim asserts
+
+$$
+y=1.5
+$$
+
+Those two displays do not agree.
 
 So the statement is False.`,
       `**B.** → True
@@ -2428,7 +2470,11 @@ $$560 + 96$$
 
 $$= 656$$
 
-The claim is \\$656.
+The claim asserts
+
+$$656$$
+
+.
 
 So the statement is True.`,
       `**E.** → True
@@ -2517,7 +2563,13 @@ $$
 x=15
 $$
 
-The claim names a different figure, so the displays do not agree.
+The claim asserts
+
+$$
+x=18.00
+$$
+
+Those two displays do not agree.
 
 So the statement is False.`,
       `**B.** → True
@@ -2582,7 +2634,9 @@ $$15 + 80$$
 
 $$= 95$$
 
-The claim is \\$85.00
+The claim asserts
+
+$$85.00$$
 
 The computed figure does not match the claim.
 
@@ -2597,7 +2651,11 @@ $$65 \\times 1.10$$
 
 $$= 71.50$$
 
-The claim is \\$71.50.
+The claim asserts
+
+$$71.50$$
+
+.
 
 So the statement is True.`,
     ],
@@ -2754,7 +2812,11 @@ $$
 = 36
 $$
 
-The claim is \\$36.00.
+The claim asserts
+
+$$36.00$$
+
+.
 
 So the statement is True.`,
       `**E.** → False
