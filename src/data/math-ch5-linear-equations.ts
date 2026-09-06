@@ -92,7 +92,11 @@ $$360 - 260$$
 
 $$= 100$$
 
-The claim is $120$.
+The claim asserts
+
+$$120$$
+
+$.
 
 The computed figure does not match the claim.
 
@@ -210,18 +214,28 @@ $$
 y=1.80
 $$
 
-The claim names a different figure, so the displays do not agree.
+The claim asserts
+
+$$
+y=2.10
+$$
+
+Those two displays do not agree.
 
 So the statement is False.`,
       `**C.** → True
 
-Once the unit prices are recovered, this session total is fixed by the stem quantities. Read the printed total, then compare it with the claim.
+Once the unit prices are recovered, each stem total is fixed. Read the printed figure for this claim, then compare it with the card.
 
-Once the unit prices are recovered, each stem invoice total is fixed. Read the printed total for this claim:
+The printed total is
 
-Invoice #101 is printed at \\$185.
+$$185$$
 
-The claim names that same total. The invoice total and the claim agree.
+The claim asserts
+
+$$185$$
+
+Those two displays agree.
 
 So the statement is True.`,
       `**D.** → True
@@ -248,20 +262,26 @@ $$35 + 18$$
 
 $$= 53$$
 
-The claim is \\$53.00
+The claim asserts
+
+$$53.00$$
 
 The computed figure and the claim agree.
 
 So the statement is True.`,
       `**E.** → False
 
-Once the unit prices are recovered, this session total is fixed by the stem quantities. Read the printed total, then compare it with the claim.
+Once the unit prices are recovered, each stem total is fixed. Read the printed figure for this claim, then compare it with the card.
 
-Once the unit prices are recovered, each stem invoice total is fixed. Read the printed total for this claim:
+The printed total is
 
-Invoice #102 is printed at \\$160.
+$$160$$
 
-The claim names \\$172. The invoice total and the claim do not agree.
+The claim asserts
+
+$$172$$
+
+Those two displays do not agree.
 
 So the statement is False.`,
     ],
@@ -369,24 +389,32 @@ Those two displays agree.
 So the statement is True.`,
       `**C.** → False
 
-Once the unit prices are recovered, this session total is fixed by the stem quantities. Read the printed total, then compare it with the claim.
+Once the unit prices are recovered, each stem total is fixed. Read the printed figure for this claim, then compare it with the card.
 
-Once unit prices are recovered, the stem total for this session is fixed. Read that printed total:
+The printed total is
 
-The Saturday matinee is printed at \\$2,130.
+$$2130$$
 
-The claim names \\$2,050. The printed figure and the claim do not agree.
+The claim asserts
+
+$$2050$$
+
+Those two displays do not agree.
 
 So the statement is False.`,
       `**D.** → False
 
-Once the unit prices are recovered, this session total is fixed by the stem quantities. Read the printed total, then compare it with the claim.
+Once the unit prices are recovered, each stem total is fixed. Read the printed figure for this claim, then compare it with the card.
 
-Once unit prices are recovered, the stem total for this session is fixed. Read that printed total:
+The printed total is
 
-The Saturday evening session is printed at \\$2,200.
+$$2200$$
 
-The claim names \\$2,300. The printed figure and the claim do not agree.
+The claim asserts
+
+$$2300$$
+
+Those two displays do not agree.
 
 So the statement is False.`,
       `**E.** → False
@@ -413,7 +441,9 @@ $$600 + 350$$
 
 $$= 950$$
 
-The claim is \\$1,000.00
+The claim asserts
+
+$$1000.00$$
 
 The computed figure does not match the claim.
 
@@ -519,32 +549,44 @@ Those two displays agree.
 So the statement is True.`,
       `**C.** → True
 
-A mixed purchase is the linear combination of the recovered unit prices:
+Receipt A's food subtotal uses the recovered unit prices on the stem quantities, before the delivery fee.
 
-$$
-C = n_x x + n_y y
-$$
+The overview recovered $x=7$ and $y=5$. Receipt A has $6$ sandwiches and $4$ wraps:
 
-Substitute the stem numbers recovered in the overview:
+$$6 \\times 7$$
+
+$$= 42$$
+
+$$4 \\times 5$$
+
+$$= 20$$
+
+$$42 + 20$$
+
+$$= 62$$
+
+The claim asserts
 
 $$
 62
 $$
 
-The computed value is approximately \\$62.00, which matches the claim.
-
-The shared elimination already fixed the unique pair; this letter only tests the claim's extra arithmetic.
+Those two displays agree.
 
 So the statement is True.`,
       `**D.** → True
 
-Once the unit prices are recovered, this session total is fixed by the stem quantities. Read the printed total, then compare it with the claim.
+Once the unit prices are recovered, each stem total is fixed. Read the printed figure for this claim, then compare it with the card.
 
-Use the recovered values from the overview for this claim-specific check.
+The printed total is
 
-Receipt B is printed at \\$74.00 including the delivery fee.
+$$74.00$$
 
-The claim names that same total Those two totals agree.
+The claim asserts
+
+$$74.00$$
+
+Those two displays agree.
 
 So the statement is True.`,
       `**E.** → True
@@ -635,7 +677,13 @@ $$
 x=6000
 $$
 
-The claim names a different figure, so the displays do not agree.
+The claim asserts
+
+$$
+x=6500
+$$
+
+Those two displays do not agree.
 
 So the statement is False.`,
       `**B.** → False
@@ -648,7 +696,13 @@ $$
 y=4000
 $$
 
-The claim names a different figure, so the displays do not agree.
+The claim asserts
+
+$$
+y=4500
+$$
+
+Those two displays do not agree.
 
 So the statement is False.`,
       `**C.** → False
@@ -661,7 +715,11 @@ $$0.04 \\times 6000$$
 
 $$= 240$$
 
-The claim is \\$260.00.
+The claim asserts
+
+$$260.00$$
+
+.
 
 So the statement is False.`,
       `**D.** → False
@@ -674,7 +732,11 @@ $$0.07 \\times 4000$$
 
 $$= 280$$
 
-The claim is \\$210.00.
+The claim asserts
+
+$$210.00$$
+
+.
 
 So the statement is False.`,
       `**E.** → True
@@ -687,7 +749,11 @@ $$0.07 \\times 10000$$
 
 $$= 700$$
 
-The claim is \\$700.00.
+The claim asserts
+
+$$700.00$$
+
+.
 
 So the statement is True.`,
     ],
@@ -772,7 +838,13 @@ $$
 y=349
 $$
 
-The claim names a different figure, so the displays do not agree.
+The claim asserts
+
+$$
+y=354.00
+$$
+
+Those two displays do not agree.
 
 So the statement is False.`,
       `**C.** → True
@@ -785,14 +857,30 @@ $$12 \\times 349$$
 
 $$= 4188$$
 
-The claim is \\$4,188.00.
+The claim asserts
+
+$$4188.00$$
+
+.
 
 So the statement is True.`,
       `**D.** → True
 
 Start from the overview's recovered unknowns, apply only this claim's extra check, and compare with the stated figure.
 
-The catalogue gap is already equation (1): $y = x + 45$. The claim is that same \\$45.00.
+The overview recovered $x=304$ and $y=349$. The Premium–Standard gap is
+
+$$349 - 304$$
+
+$$= 45$$
+
+The claim asserts
+
+$$
+45
+$$
+
+Those two displays agree.
 
 So the statement is True.`,
       `**E.** → True
@@ -935,7 +1023,9 @@ $$17 + 60$$
 
 $$= 77$$
 
-The claim is \\$80.00
+The claim asserts
+
+$$80.00$$
 
 The computed figure does not match the claim.
 
@@ -944,7 +1034,19 @@ So the statement is False.`,
 
 Start from the overview's recovered unknowns, apply only this claim's extra check, and compare with the stated figure.
 
-With zero extra minutes, the bill is the recovered fixed fee $f=17$. The claim is \\$0.00.
+From the overview relation:
+
+$$f=17$$
+
+The claim asserts
+
+$$0.00$$
+
+The recovered figure is
+
+$$17$$
+
+Those two displays do not agree.
 
 So the statement is False.`,
       `**E.** → False
@@ -1046,7 +1148,13 @@ $$
 d=55
 $$
 
-That recovered value is not the figure on the card.
+The claim asserts
+
+$$
+d=45
+$$
+
+Those two displays do not agree.
 
 So the statement is False.`,
       `**C.** → True
@@ -1059,7 +1167,11 @@ $$75 \\times 4$$
 
 $$= 300$$
 
-The claim is $300$ assembly hours.
+The claim asserts
+
+$$300$$
+
+$ assembly hours.
 
 So the statement is True.`,
       `**D.** → False
@@ -1072,7 +1184,11 @@ $$55 \\times 9$$
 
 $$= 495$$
 
-The claim is $500$ assembly hours.
+The claim asserts
+
+$$500$$
+
+$ assembly hours.
 
 So the statement is False.`,
       `**E.** → True
@@ -1085,7 +1201,11 @@ $$75 \\times 120$$
 
 $$= 9000$$
 
-The claim is \\$9,000.00.
+The claim asserts
+
+$$9000.00$$
+
+.
 
 So the statement is True.`,
     ],
@@ -1202,11 +1322,17 @@ The shared elimination already fixed the unique pair; this letter only tests the
 So the statement is True.`,
       `**D.** → True
 
-Once the unit prices are recovered, this session total is fixed by the stem quantities. Read the printed total, then compare it with the claim.
+Once the unit prices are recovered, each stem total is fixed. Read the printed figure for this claim, then compare it with the card.
 
-Use the recovered values from the overview for this claim-specific check.
+The printed total is
 
-Hillcrest's gross sales are printed at \\$9,300. The claim is that same total.
+$$9300$$
+
+The claim asserts
+
+$$9300$$
+
+Those two displays agree.
 
 So the statement is True.`,
       `**E.** → True
@@ -1299,7 +1425,13 @@ $$
 f=9
 $$
 
-The claim names a different figure, so the displays do not agree.
+The claim asserts
+
+$$
+f=12.00
+$$
+
+Those two displays do not agree.
 
 So the statement is False.`,
       `**B.** → False
@@ -1312,7 +1444,13 @@ $$
 r=0.20
 $$
 
-The claim names a different figure, so the displays do not agree.
+The claim asserts
+
+$$
+r=0.25
+$$
+
+Those two displays do not agree.
 
 So the statement is False.`,
       `**C.** → False
@@ -1335,7 +1473,9 @@ $$9 + 50$$
 
 $$= 59$$
 
-The claim is \\$60.00
+The claim asserts
+
+$$60.00$$
 
 The computed figure does not match the claim.
 
@@ -1365,17 +1505,19 @@ QuickCopy's flat fee is \\$60. Then $79 > 60$.
 So the statement is False.`,
       `**E.** → True
 
-The gap between the two recovered unknowns is their difference:
+Two independent PrintFast bills give two linear equations in the setup fee and the per-page rate. Different page counts make the coefficient rows independent, so the system determines a unique pair.
+
+The overview recovers
 
 $$
-d = x - y
+f=9
 $$
 
-Substitute the stem numbers recovered in the overview:
+$$
+r=0.20
+$$
 
-Two independent PrintFast bills give two linear equations in the setup fee and the per-page rate. Different page counts make the equations independent, so they determine a unique pair. The that pair as $f=9$ and $r=0.20$.
-
-The computed figure matches the claim.
+So there is exactly one consistent pricing scheme, matching the claim.
 
 So the statement is True.`,
     ],
