@@ -31,9 +31,14 @@ function pad(n: number) {
 }
 
 export function ExamCountdown({ className }: { className?: string }) {
-  const [remaining, setRemaining] = useState<Remaining>(() => getRemaining(new Date()));
+  // Seed from a stable timestamp so SSR and first client render match; the
+  // live seconds start ticking after hydration.
+  const [remaining, setRemaining] = useState<Remaining>(() =>
+    getRemaining(new Date(Math.floor(Date.now() / 60000) * 60000)),
+  );
 
   useEffect(() => {
+    setRemaining(getRemaining(new Date()));
     const id = window.setInterval(() => {
       setRemaining(getRemaining(new Date()));
     }, 1000);
