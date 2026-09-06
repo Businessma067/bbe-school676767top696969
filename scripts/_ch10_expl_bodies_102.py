@@ -1,7 +1,8 @@
 """Chapter 10.2 tactical explanation bodies (MATH 10.2.1–10.2.49).
 
-Hand-authored to match Chapter 7/9 teacher voice: calm rule sentence,
+Hand-authored in Chapter 7/9 teacher voice: calm rule sentence,
 stepped KaTeX, claim comparison, plain True/False closer.
+Length follows the claim — no character floors or ceilings.
 A runner merges these into math-ch10-exp-log.json.
 """
 from __future__ import annotations
@@ -15,43 +16,39 @@ The figure is the base-$2$ logarithm $f(x)=\log_{2}x$ on $(0,\infty)$. Every adm
             r"""
 **A.** → True
 
-Every logarithm of base $b>0$, $b\neq 1$, vanishes at the argument $1$. Write the normalisation rule once.
+Every admissible logarithm vanishes at the argument $1$.
 
 $$
 \log_{b}1=0
 $$
 
-Substitute the concrete base $b=2$ from the figure.
+With the concrete base $b=2$ from the figure,
 
 $$
 f(1)=\log_{2}1=0
 $$
 
-That is exactly the horizontal intercept $(1,0)$ marked on the graph, so the claim matches the definition.
-
-Equivalently $2^{0}=1$ forces the height at the intercept to vanish.
+That is exactly the horizontal intercept $(1,0)$ marked on the graph.
 
 So the statement is True.
 """,
             r"""
 **B.** → False
 
-Monotonicity of $\log_{b}$ is controlled by the size of the base. For every base $b>1$ the map is strictly increasing, not decreasing: if $0<x<y$ then
+Monotonicity of $\log_{b}$ is controlled by the size of the base. For every base $b>1$ the map is strictly increasing: if $0<x<y$, then
 
 $$
 \log_{b}x<\log_{b}y
 $$
 
-Equivalently, the derivative $(\ln b)^{-1}x^{-1}$ is positive when $b>1$. Bases in $(0,1)$ reverse the inequality. The blanket claim that every base $b>1$ yields a decreasing logarithm is therefore false.
-
-A concrete increasing sample with base $2$: $\log_{2}1=0<\log_{2}2=1$.
+Bases in $(0,1)$ reverse the inequality. The blanket claim that every base $b>1$ yields a decreasing logarithm is therefore false.
 
 So the statement is False.
 """,
             r"""
 **C.** → False
 
-The concrete rule on the figure has base $2>1$, so $f$ inherits the increasing regime. Compare two sample inputs.
+The concrete rule on the figure has base $2>1$, so $f$ is increasing. Compare two sample inputs.
 
 $$
 f(1)=\log_{2}1=0,\qquad f(2)=\log_{2}2=1
@@ -59,35 +56,25 @@ $$
 
 Since $1<2$ yet $f(1)<f(2)$, the graph rises. A strictly decreasing claim on $(0,\infty)$ fails.
 
-The same comparison $f(1)<f(2)$ already contradicts a decreasing claim on $(0,\infty)$.
-
 So the statement is False.
 """,
             r"""
 **D.** → False
 
-The domain condition for a real logarithm is that the argument be strictly positive.
+A real logarithm needs a strictly positive argument.
 
 $$
 u>0
 $$
 
-At $u=0$ the expression $\log_{b}u$ is undefined, and the graph of $f$ only approaches the asymptote $x=0$ without ever meeting it. Zero arguments are never admitted.
-
-Equivalently, the natural domain of $f$ is written
-
-$$
-(0,\infty)
-$$
-
-which already excludes the asymptote abscissa $0$.
+At $u=0$ the expression is undefined, and the graph of $f$ only approaches the asymptote $x=0$ without meeting it. Zero arguments are never admitted.
 
 So the statement is False.
 """,
             r"""
 **E.** → False
 
-Rewrite the claimed input as a power of the base, then apply the inverse relation $\log_{2}(2^{k})=k$.
+Rewrite the claimed input as a power of the base, then apply $\log_{2}(2^{k})=k$.
 
 $$
 \frac12=2^{-1}
@@ -97,15 +84,7 @@ $$
 f\!\left(\frac12\right)=\log_{2}(2^{-1})=-1
 $$
 
-The claim announces the value $1$, but the evaluation returns $-1$, so the statement is wrong.
-
-The claim's value $1$ would instead be
-
-$$
-\log_{2}(2^{1})=1
-$$
-
-which sits at the input $2$, not at $1/2$.
+The claim announces the value $1$, but the evaluation returns $-1$.
 
 So the statement is False.
 """,
@@ -133,8 +112,6 @@ $$
 
 The table's ratio for pair $P$ is therefore exactly $3$, matching $\log_{2}8$.
 
-The table's approximate ratio $2.0794/0.6931\approx 3.000$ matches the exact integer.
-
 So the statement is True.
 """,
             r"""
@@ -154,22 +131,12 @@ $$
 
 The table ratio equals $2$, so the claim holds.
 
-The table's approximate ratio $2.1972/1.0986\approx 2.000$ matches the exact integer.
-
 So the statement is True.
 """,
             r"""
 **C.** → False
 
-The exponential $b^{t}$ accepts every real exponent, while $\log_{b}$ accepts only positive arguments. Their natural domains are therefore complementary:
-
-$$
-\operatorname{dom}(b^{\,\cdot\,})=\mathbb{R},\qquad\operatorname{dom}(\log_{b})=(0,\infty)
-$$
-
-They are inverse partners, but they do not share one common domain. The claim fails.
-
-Writing $\mathbb{R}$ versus $(0,\infty)$ records the complementary domains of the inverse pair.
+The exponential $b^{t}$ accepts every real input, while $\log_{b}$ accepts only positive inputs. Their natural domains are complementary, not identical.
 
 So the statement is False.
 """,
@@ -184,8 +151,6 @@ $$
 
 The identity does not fail on integers; it continues to hold.
 
-Non-integer pairs such as $(e^{2},e)$ also satisfy the same change-of-base identity.
-
 So the statement is False.
 """,
             r"""
@@ -198,8 +163,6 @@ $$
 $$
 
 The ratio is strictly larger than $2$, not strictly less, so the statement is false.
-
-Reading the table ratio for pair $P$ confirms the same integer height $3.000$.
 
 So the statement is False.
 """,
@@ -221,8 +184,6 @@ $$
 
 It follows from $b^{\log a+\log b}=b^{\log a}\,b^{\log b}=ab$. The claim is exactly that identity, so it holds.
 
-In exponential language, $b^{\log a+\log b}=ab$ recovers the product.
-
 So the statement is True.
 """,
             r"""
@@ -235,8 +196,6 @@ $$
 $$
 
 for every $a>0$ and $b>0$. The displayed statement matches this rule.
-
-In exponential language, $b^{\log a-\log b}=a/b$ recovers the quotient.
 
 So the statement is True.
 """,
@@ -255,8 +214,6 @@ $$
 
 Since $\log 2\neq 0$, the claimed equality fails for these positive inputs.
 
-The surviving laws act on products, quotients, and powers — never on bare sums.
-
 So the statement is False.
 """,
             r"""
@@ -269,8 +226,6 @@ $$
 $$
 
 It follows from $b^{c\log a}=(b^{\log a})^{c}=a^{c}$. The claim is precisely this identity.
-
-In exponential language, $b^{c\log a}=(b^{\log a})^{c}=a^{c}$.
 
 So the statement is True.
 """,
@@ -323,43 +278,33 @@ $$
 
 That open interval is the natural domain of $f$.
 
-Outside $[p,q]$ the product is negative, so those outer rays are excluded as well.
-
 So the statement is True.
 """,
             r"""
 **B.** → False
 
-At an endpoint the product collapses to zero. Substitute $x=p$.
+At an endpoint the product collapses to zero.
 
 $$
 (p-p)(q-p)=0
 $$
-
-Likewise $(q-p)(q-q)=0$. The logarithm of $0$ is undefined, so neither endpoint belongs to the domain.
-
-The logarithm of $0$ is undefined for every base, so closed endpoints are impossible.
 
 So the statement is False.
 """,
             r"""
 **C.** → True
 
-The midpoint $x=(p+q)/2$ sits halfway between the roots. Each factor equals half the gap.
+At the midpoint $x=(p+q)/2$ each factor equals half the gap.
 
 $$
 \frac{p+q}{2}-p=\frac{q-p}{2},\qquad q-\frac{p+q}{2}=\frac{q-p}{2}
 $$
 
-Their product is therefore the displayed square.
-
 $$
-\left(\frac{q-p}{2}\right)^{2}>0
+(x-p)(q-x)=\left(\frac{q-p}{2}\right)^{2}>0
 $$
 
 since $q>p$. The claim matches the arithmetic.
-
-The midpoint therefore maximises the downward-opening product on $[p,q]$.
 
 So the statement is True.
 """,
@@ -374,22 +319,18 @@ $$
 
 This is a standard logarithm identity for any fixed base $>1$, independent of the parameters $p$ and $q$.
 
-In exponential language, $b^{\log u+\log v}=uv$ recovers the same product identity.
-
 So the statement is True.
 """,
             r"""
 **E.** → True
 
-On the open interval $(p,q)$ one has both $x-p>0$ and $q-x>0$. The product law therefore applies to those two positive factors.
+On the open interval $(p,q)$ both factors $x-p$ and $q-x$ are positive, so the product law applies.
 
 $$
 \log\bigl((x-p)(q-x)\bigr)=\log(x-p)+\log(q-x)
 $$
 
-Outside $(p,q)$ at least one factor is non-positive, so the split would be illegitimate; inside the interval it is valid.
-
-Outside $(p,q)$ at least one factor fails positivity, so the split would be illegitimate.
+The rewrite is legitimate throughout the natural domain.
 
 So the statement is True.
 """,
@@ -417,8 +358,6 @@ $$
 
 The intercept and asymptote already match every $\log_{b}$, so the unit point alone rebuilds $b$.
 
-The intercept $(1,0)$ and asymptote $x=0$ are shared by every $\log_{b}$, so only $f(3)=1$ pins $b$.
-
 So the statement is True.
 """,
             r"""
@@ -432,8 +371,6 @@ $$
 
 The claimed height $2$ matches the evaluation.
 
-Equivalently, $9=3^{2}$ is two multiplicative steps of the base from $1$, each adding $1$ to the log height.
-
 So the statement is True.
 """,
             r"""
@@ -446,8 +383,6 @@ $$
 $$
 
 It is one of the three fundamental logarithm identities and holds independently of the rebuilt base $b=3$.
-
-In exponential language the same rule is $b^{c\log a}=(b^{\log a})^{c}=a^{c}$.
 
 So the statement is True.
 """,
@@ -466,8 +401,6 @@ $$
 
 So the curve $f=\log_{3}$ is precisely the inverse of $g(t)=3^{t}$.
 
-Both compositions $\log_{3}(3^{t})=t$ and $3^{\log_{3}x}=x$ hold on the matching domains.
-
 So the statement is True.
 """,
             r"""
@@ -478,10 +411,6 @@ Normalisation at the argument $1$ is part of the definition for every admissible
 $$
 \log_{b}1=0\qquad(b>0,\,b\neq 1)
 $$
-
-Equivalently $b^{0}=1$. The identity does not depend on the particular value $b=3$.
-
-Equivalently $b^{0}=1$ forces the intercept height to vanish for every admissible base.
 
 So the statement is True.
 """,
@@ -495,85 +424,73 @@ For $h(x)=\log_{2}(\log_{2}x)$ every intermediate argument must be positive: fir
             r"""
 **A.** → True
 
-The outer logarithm needs a positive inner value, so impose
+For $h(x)=\log_{2}(\log_{2}x)$ every intermediate argument must be positive. The inner log first needs
+
+$$
+x>0
+$$
+
+The outer log then needs a positive input:
 
 $$
 \log_{2}x>0
 $$
 
-Because base $2>1$, this inequality is equivalent to $x>2^{0}=1$. Combined with the inner requirement $x>0$ one obtains
+With base $2>1$ that forces
 
 $$
-x>1
+x>2^{0}=1
 $$
 
-Hence the natural domain is the open ray $(1,\infty)$.
-
-At the endpoint $x=1$ the inner log vanishes, so the inequality $x>1$ is strict.
+Intersecting the conditions leaves the open ray $(1,\infty)$.
 
 So the statement is True.
 """,
             r"""
 **B.** → False
 
-Addition inside a logarithm is not an identity. Test $a=b=1$.
+There is no universal addition-inside law. The counter-example $a=b=1$ already kills it:
 
 $$
 \log(1+1)=\log 2\neq 0=\log 1+\log 1
 $$
-
-No universal law $\log(a+b)=\log a+\log b$ exists on $a,b>0$, so the claim fails.
-
-Product, quotient, and power survive; addition inside does not.
 
 So the statement is False.
 """,
             r"""
 **C.** → False
 
-Real logarithms require a strictly positive argument.
-
-$$
-u>0
-$$
-
-Only then is $\log_{b}u$ defined. The value $u=0$ is excluded for every base. Nested or single, zero arguments are never allowed.
-
-The domain cut $x>1$ already encodes strict positivity of every intermediate argument.
+A real logarithm needs a strictly positive argument. At argument $0$ the expression is undefined, so zero is never admitted to a log domain.
 
 So the statement is False.
 """,
             r"""
 **D.** → False
 
-Peel the nesting at $x=4=2^{2}$ from the inside out.
+Peel the nesting at $x=4$ from the inside out.
 
 $$
-\log_{2}4=\log_{2}(2^{2})=2
+\log_{2}4=2
 $$
 
 $$
 h(4)=\log_{2}2=1
 $$
 
-The claim announces $h(4)=0$, but the correct value is $1$.
-
-The value $0$ would require $\log_{2}4=1$, but $\log_{2}4=2$, so the outer step cannot return $0$.
+The claim announces $0$, but the correct value is $1$.
 
 So the statement is False.
 """,
             r"""
 **E.** → False
 
-At the boundary $x=1$ the inner logarithm vanishes.
+At $x=1$ the inner logarithm vanishes.
 
 $$
 \log_{2}1=0
 $$
 
-The outer expression becomes $\log_{2}0$, which is undefined. Therefore $x=1$ does not belong to the domain $(1,\infty)$.
-
-Only $x>1$ keeps $\log_{2}x$ positive enough for the outer logarithm.
+The outer logarithm then faces the forbidden argument $0$, so $x=1$ lies outside the domain.
 
 So the statement is False.
 """,
@@ -625,22 +542,12 @@ $$
 
 They are complementary, not identical. The claim that $f$ and $g$ share one common domain is false.
 
-Writing $\mathbb{R}$ versus $(0,\infty)$ records the complementary domains.
-
 So the statement is False.
 """,
             r"""
 **D.** → False
 
-For every base $b>1$ the logarithm is strictly increasing. If $0<x<y$ then
-
-$$
-\log_{b}x<\log_{b}y
-$$
-
-Decreasing behaviour appears only for bases in $(0,1)$. The universal decreasing claim for $b>1$ fails.
-
-A sample: $\log_{2}1=0<\log_{2}2=1$ shows a base $>1$ rising.
+For every base $b>1$ the logarithm is strictly increasing, not decreasing. Bases in $(0,1)$ reverse monotonicity. The blanket decreasing claim is false.
 
 So the statement is False.
 """,
@@ -686,8 +593,6 @@ So the statement is True.
 
 Closed endpoints are fatal for a logarithm. At $x=a$ the numerator vanishes, so the argument is $0$. At $x=b$ the denominator vanishes, so the quotient is undefined. The natural domain is the open interval $(a,b)$, not the closed interval $[a,b]$.
 
-The natural domain is therefore the open interval $(a,b)$, matching the positivity set.
-
 So the statement is False.
 """,
             r"""
@@ -707,8 +612,6 @@ $$
 
 The claimed height $0$ is correct.
 
-Normalisation $\log 1=0$ converts that unit quotient into height $0$.
-
 So the statement is True.
 """,
             r"""
@@ -721,8 +624,6 @@ $$
 $$
 
 The right-hand side is exactly the displayed difference, and it matches $F(x)$ throughout $(a,b)$.
-
-Both $x-a$ and $b-x$ stay positive on $(a,b)$, so each separate log is defined.
 
 So the statement is True.
 """,
@@ -751,21 +652,13 @@ Critical points of the argument $(2x+1)/(x-3)$ are the numerator root $x=-1/2$ a
             r"""
 **A.** → True
 
-The quotient of two linears changes sign only at the roots $x=-1/2$ and $x=3$. Testing one point in each open component shows positivity on the outer rays
+The quotient of two linears changes sign only at the roots $x=-1/2$ and $x=3$. A sign chart shows positivity on the outer rays
 
 $$
 (-\infty,-1/2)\cup(3,\infty)
 $$
 
-where
-
-$$
-\frac{2x+1}{x-3}>0
-$$
-
-That union is exactly the set announced in the claim.
-
-The open interval $(-1/2,3)$ makes the quotient negative and is excluded from the domain.
+where $(2x+1)/(x-3)>0$. That union is exactly the set announced in the claim.
 
 So the statement is True.
 """,
@@ -778,9 +671,7 @@ $$
 x-3=0
 $$
 
-The rational argument is undefined, so $x=3$ is excluded from every candidate domain of $m$.
-
-No limiting value of $m(x)$ as $x\to 3$ can place the abscissa $3$ into the domain.
+The rational argument is undefined, so $x=3$ is excluded from the domain of $m$.
 
 So the statement is False.
 """,
@@ -790,12 +681,10 @@ So the statement is False.
 Substitute the test point $x=0$ into the argument.
 
 $$
-\frac{2\cdot 0+1}{0-3}=\frac{1}{-3}=-\frac13<0
+\frac{2\cdot 0+1}{0-3}=-\frac13<0
 $$
 
 A negative argument is forbidden for a real logarithm, so $x=0$ is excluded for that reason.
-
-Any negative argument is forbidden, so the test point $x=0$ is out.
 
 So the statement is True.
 """,
@@ -824,8 +713,6 @@ m(x)=\log(2x+1)-\log(x-3)\qquad(x>3)
 $$
 
 That is the legitimate split announced in the claim.
-
-Both $2x+1$ and $x-3$ stay positive on $(3,\infty)$, so each separate log is defined.
 
 So the statement is True.
 """,
@@ -881,8 +768,6 @@ $$
 
 It is a standard identity and does not depend on the demand parameters $A$ and $\beta$.
 
-In exponential language, $b^{\log a-\log b}=a/b$ recovers the same quotient.
-
 So the statement is True.
 """,
             r"""
@@ -896,8 +781,6 @@ $$
 
 The hypothesis $\beta>1$ therefore forces $|E|>1$, which is the definition of elastic demand in this model.
 
-Elastic demand is the threshold $|E|>1$, which is identical to $\beta>1$ here.
-
 So the statement is True.
 """,
             r"""
@@ -908,10 +791,6 @@ By definition the logarithm of its own base equals one.
 $$
 \log_{b}b=1\qquad(b>0,\,b\neq 1)
 $$
-
-Equivalently $b^{1}=b$. The identity holds for every admissible base.
-
-Equivalently $b^{1}=b$ records the same normalisation for every admissible base.
 
 So the statement is True.
 """,
@@ -933,37 +812,19 @@ $$
 
 That common asymptote is what the claim asserts.
 
-Both curves also share the intercept $(1,0)$, but the present claim is only about the asymptote.
-
 So the statement is True.
 """,
             r"""
 **B.** → False
 
-A real logarithm is defined only for strictly positive arguments.
-
-$$
-u>0
-$$
-
-Zero is excluded for every base, so the blanket permission for zero arguments is false.
-
-The shared domain $(0,\infty)$ already excludes the asymptote abscissa $0$.
+A real logarithm needs a strictly positive argument. At argument $0$ the expression is undefined, so zero is never admitted to a log domain.
 
 So the statement is False.
 """,
             r"""
 **C.** → False
 
-A nesting such as $\log(\log x)$ needs the inner value itself to be positive, which is a stricter demand than mere $x>0$. For base $2$ the outer logarithm forces
-
-$$
-\log_{2}x>0\implies x>1
-$$
-
-not merely $x>0$. The claim that no further checks are required fails.
-
-Each outer logarithm imposes its own positivity requirement on the inner value.
+Nested logarithms still require every intermediate argument to be positive. The condition $x>0$ alone is not enough.
 
 So the statement is False.
 """,
@@ -989,15 +850,13 @@ So the statement is False.
             r"""
 **E.** → False
 
-Change of base works with any auxiliary base $k>0$, $k\neq 1$.
+Change of base works with any auxiliary base $k>0$, $k\neq 1$:
 
 $$
 \log_{b}a=\frac{\log_{k}a}{\log_{k}b}
 $$
 
-Base $10$ is convenient but not mandatory; natural logs or base $2$ work equally well. The restriction to base $10$ is false.
-
-Natural logs or base $2$ convert bases just as legitimately as base $10$.
+It is not restricted to auxiliary base $10$.
 
 So the statement is False.
 """,
@@ -1056,24 +915,18 @@ So the statement is False.
             r"""
 **D.** → False
 
-Addition inside a logarithm is not a law. Counter-example with $a=b=1$:
+There is no universal addition-inside law. The counter-example $a=b=1$ already kills it:
 
 $$
 \log(1+1)=\log 2\neq 0=\log 1+\log 1
 $$
-
-The universal claim fails.
-
-Product, quotient, and power survive; addition inside does not.
 
 So the statement is False.
 """,
             r"""
 **E.** → False
 
-Logarithms require a strictly positive argument. The value $0$ produces an undefined expression for every base, so zero arguments are never allowed in log domains.
-
-Every tabulated $x$ is already strictly positive; the value $0$ never appears as an input.
+A real logarithm needs a strictly positive argument. At argument $0$ the expression is undefined, so zero is never admitted to a log domain.
 
 So the statement is False.
 """,
@@ -1095,8 +948,6 @@ $$
 
 The stem already restricts to exactly that set of $(a,b)$, so the identity holds throughout.
 
-The proof is the exponential identity $b^{(\ln a)/(\ln b)}=a$.
-
 So the statement is True.
 """,
             r"""
@@ -1109,8 +960,6 @@ $$
 $$
 
 The two ratios are equal because each equals $\log_{b}a$. The claimed equivalence holds.
-
-Both ratios equal $\log_{b}a$, so they equal each other.
 
 So the statement is True.
 """,
@@ -1147,9 +996,7 @@ So the statement is False.
             r"""
 **E.** → False
 
-A vertical asymptote is a line that the graph approaches but never meets. For $\log_{b}$ that line is $x=0$, and every point on the graph has abscissa $x>0$. The graph therefore never crosses its vertical asymptote at a finite point.
-
-As $x\to 0^{+}$ one has $\log_{b}x\to-\infty$, but $x=0$ itself is never attained.
+A vertical asymptote is a line the graph approaches but never meets. The graph does not cross that asymptote at any finite point.
 
 So the statement is False.
 """,
@@ -1171,8 +1018,6 @@ $$
 
 For $0<b<1$ the denominator $\ln b$ is negative, so $f$ inherits the opposite monotonicity of $\ln$. Hence $f$ is strictly decreasing on $(0,\infty)$.
 
-Equivalently, if $0<x<y$ then $\log_{b}x>\log_{b}y$ when $0<b<1$.
-
 So the statement is True.
 """,
             r"""
@@ -1186,8 +1031,6 @@ $$
 
 because $b^{0}=1$ for every admissible base. The claim holds.
 
-Equivalently $b^{0}=1$ forces the height at $x=1$ to vanish for every admissible base.
-
 So the statement is True.
 """,
             r"""
@@ -1198,10 +1041,6 @@ By definition the logarithm of its own base equals one, even when $0<b<1$.
 $$
 f(b)=\log_{b}b=1
 $$
-
-Equivalently $b^{1}=b$. The evaluation is correct.
-
-Equivalently $b^{1}=b$ forces the height at $x=b$ to equal $1$.
 
 So the statement is True.
 """,
@@ -1216,8 +1055,6 @@ $$
 
 That matches the claim.
 
-By contrast, bases $b>1$ send $\log_{b}x\to-\infty$ as $x\to 0^{+}$.
-
 So the statement is True.
 """,
             r"""
@@ -1229,9 +1066,7 @@ $$
 \log_{b}x=\frac{\ln x}{\ln b}
 $$
 
-remains valid for $0<b<1$. The negative sign of $\ln b$ simply reverses inequalities; it does not invalidate the identity.
-
-The identity requires only $b>0$ and $b\neq 1$; the sign of $\ln b$ may be negative.
+remains valid for $0<b<1$. The negative sign of $\ln b$ reverses inequalities; it does not invalidate the identity.
 
 So the statement is False.
 """,
@@ -1252,8 +1087,6 @@ f(e)=\log_{b}e=1
 $$
 
 Therefore $b=e$, and $f$ is the natural logarithm.
-
-The intercept and asymptote are shared by every $\log_{b}$, so only $f(e)=1$ pins $b=e$.
 
 So the statement is True.
 """,
@@ -1283,8 +1116,6 @@ $$
 
 It does not depend on the particular identification $b=e$.
 
-Equivalently $b^{0}=1$ for every admissible base, so the intercept height is always $0$.
-
 So the statement is True.
 """,
             r"""
@@ -1302,8 +1133,6 @@ $$
 
 Hence the inverse of $f$ is $g(t)=e^{t}$.
 
-Both compositions $\ln(e^{t})=t$ and $e^{\ln x}=x$ hold on the matching domains.
-
 So the statement is True.
 """,
             r"""
@@ -1316,8 +1145,6 @@ $$
 $$
 
 It is independent of the rebuilt base $b=e$.
-
-In exponential language, $b^{\log u+\log v}=uv$ recovers the same product identity.
 
 So the statement is True.
 """,
@@ -1337,15 +1164,13 @@ $$
 \log_{2}(\log_{2}x)>0
 $$
 
-With base $2>1$ this means $\log_{2}x>1$, hence $x>2^{1}=2$. The natural domain is therefore
+With base $2>1$ that means $\log_{2}x>1$, hence
 
 $$
-(2,\infty)
+x>2^{1}=2
 $$
 
-The claim announces $(4,\infty)$, which is the wrong threshold.
-
-The threshold $4$ would correspond to an extra unnecessary nesting condition.
+The natural domain is therefore $(2,\infty)$. The claim announces $(4,\infty)$, which is the wrong threshold.
 
 So the statement is False.
 """,
@@ -1363,46 +1188,34 @@ $$
 $$
 
 $$
-\log_{2}16=4,\qquad\log_{2}4=2
+\log_{2}16=4
+$$
+
+$$
+\log_{2}4=2
 $$
 
 So $H(65536)=2$, matching the claim.
-
-Each peeling step uses $\log_{2}(2^{k})=k$ on a pure power of two.
 
 So the statement is True.
 """,
             r"""
 **C.** → False
 
-For the isoelastic demand $Q=AP^{-\beta}$ take logs and differentiate.
-
-$$
-\ln Q=\ln A-\beta\ln P
-$$
-
-$$
-E=\frac{d\ln Q}{d\ln P}=-\beta
-$$
-
-Elasticity equals $-\beta$, not $-A$. The claim confuses the slope with the scale factor.
-
-The scale $A$ cancels when $\ln Q$ is differentiated in $\ln P$.
+For demand $Q=AP^{-\beta}$ the log-log elasticity is the constant slope $-\beta$, not $-A$. The scale $A$ never enters the elasticity.
 
 So the statement is False.
 """,
             r"""
 **D.** → False
 
-Change of base accepts every auxiliary base $k>0$ with $k\neq 1$.
+Change of base works with any auxiliary base $k>0$, $k\neq 1$:
 
 $$
 \log_{b}a=\frac{\log_{k}a}{\log_{k}b}
 $$
 
-Base $10$ is optional. Natural logs or base $2$ work equally well.
-
-Natural logs or base $2$ convert bases just as legitimately as base $10$.
+It is not restricted to auxiliary base $10$.
 
 So the statement is False.
 """,
@@ -1416,8 +1229,6 @@ $$
 $$
 
 The outer logarithm then meets a non-positive argument and fails. Hence $H$ is not defined there.
-
-The outer logarithm fails as soon as the middle value is non-positive.
 
 So the statement is False.
 """,
@@ -1439,8 +1250,6 @@ $$
 
 It holds for every positive factor pair and every fixed base $>1$, so $(I_1)$ survives.
 
-In exponential language, $b^{\log u+\log v}=b^{\log u}\,b^{\log v}=uv$ recovers the product.
-
 So the statement is True.
 """,
             r"""
@@ -1453,8 +1262,6 @@ $$
 $$
 
 It follows from the product law applied to $u\cdot v^{-1}$, so $(I_2)$ survives as well.
-
-In exponential language, $b^{\log u-\log v}=u/v$ recovers the quotient.
 
 So the statement is True.
 """,
@@ -1480,15 +1287,7 @@ So the statement is False.
             r"""
 **D.** → False
 
-A real logarithm needs a strictly positive argument. Write the domain condition once.
-
-$$
-u>0
-$$
-
-The value $u=0$ is excluded for every base, so zero arguments are never allowed.
-
-Every identity in the table already assumes strictly positive $u$ and $v$.
+A real logarithm needs a strictly positive argument. At argument $0$ the expression is undefined, so zero is never admitted to a log domain.
 
 So the statement is False.
 """,
@@ -1564,22 +1363,12 @@ So the statement is False.
 
 The exponential $f:\mathbb{R}\to(0,\infty)$ is bijective, and $g:(0,\infty)\to\mathbb{R}$ is its two-sided inverse. Together they are bijections between $\mathbb{R}$ and $(0,\infty)$ in opposite directions, exactly as claimed.
 
-Surjectivity of $f$ onto $(0,\infty)$ and of $g$ onto $\mathbb{R}$ is part of that inverse package.
-
 So the statement is True.
 """,
             r"""
 **E.** → False
 
-For every base $b>1$ the logarithm is strictly increasing: if $0<x<y$ then
-
-$$
-\log_{b}x<\log_{b}y
-$$
-
-Decreasing behaviour requires a base in $(0,1)$. The universal decreasing claim fails.
-
-A sample with base $b>1$: $\log_{b}1=0<\log_{b}b=1$ shows the rise.
+For every base $b>1$ the logarithm is strictly increasing, not decreasing. Bases in $(0,1)$ reverse monotonicity. The blanket decreasing claim is false.
 
 So the statement is False.
 """,
@@ -1614,10 +1403,6 @@ $$
 x\in(c,d)
 $$
 
-Endpoints make the radicand $0$ or undefined, so the natural domain is the open interval $(c,d)$.
-
-Endpoints make the radicand $0$ or undefined, so the interval is open.
-
 So the statement is True.
 """,
             r"""
@@ -1637,8 +1422,6 @@ $$
 
 The claimed height is correct.
 
-Normalisation $\log 1=0$ converts $\sqrt{1}=1$ into height $0$.
-
 So the statement is True.
 """,
             r"""
@@ -1656,8 +1439,6 @@ $$
 r(x)=\frac12\log\!\left(\frac{x-c}{d-x}\right)
 $$
 
-The identity is the power law with exponent $1/2$ on a positive argument.
-
 So the statement is True.
 """,
             r"""
@@ -1670,8 +1451,6 @@ $$
 $$
 
 Then $\sqrt{0}=0$ and $\log 0$ is undefined, so $x=c$ does not lie in the domain.
-
-The square-root layer cannot rescue a zero radicand into a positive log argument.
 
 So the statement is False.
 """,
@@ -1727,8 +1506,6 @@ $$
 
 The identity is independent of the magnitude model.
 
-Equivalently $b^{1}=b$ records the same normalisation.
-
 So the statement is True.
 """,
             r"""
@@ -1777,46 +1554,32 @@ $$
 
 The logarithm sits at height $0$ while the ray sits at $1/4$, exactly as claimed.
 
-Already at $x=1$ the ray sits strictly above the logarithm.
-
 So the statement is True.
 """,
             r"""
 **B.** → False
 
-Isoelastic demand $Q=AP^{-\beta}$ has log-linear form $\ln Q=\ln A-\beta\ln P$, so
-
-$$
-E=\frac{d\ln Q}{d\ln P}=-\beta
-$$
-
-Elasticity equals $-\beta$, not $-A$.
-
-After $\ln Q=\ln A-\beta\ln P$, the slope in $\ln P$ is $-\beta$ alone.
+For demand $Q=AP^{-\beta}$ the log-log elasticity is the constant slope $-\beta$, not $-A$. The scale $A$ never enters the elasticity.
 
 So the statement is False.
 """,
             r"""
 **C.** → False
 
-Change of base works with every auxiliary base $k>0$, $k\neq 1$.
+Change of base works with any auxiliary base $k>0$, $k\neq 1$:
 
 $$
 \log_{b}a=\frac{\log_{k}a}{\log_{k}b}
 $$
 
-Restricting the identity to base $10$ alone is false.
-
-Natural logs or base $2$ convert bases just as legitimately as base $10$.
+It is not restricted to auxiliary base $10$.
 
 So the statement is False.
 """,
             r"""
 **D.** → False
 
-The exponential $b^{t}$ has domain $\mathbb{R}$, while $\log_{b}$ has domain $(0,\infty)$. The two domains are complementary, not shared.
-
-Writing the domains side by side, $\mathbb{R}$ versus $(0,\infty)$, makes the mismatch visible.
+The exponential $b^{t}$ accepts every real input, while $\log_{b}$ accepts only positive inputs. Their natural domains are complementary, not identical.
 
 So the statement is False.
 """,
@@ -1853,8 +1616,6 @@ $$
 
 Every tabulated $\beta$ is positive ($1.2$, $1.5$, $0.8$), so every implied elasticity $E=-\beta$ is negative.
 
-Each fitted $\beta$ in the table is positive, so each $E=-\beta$ is negative.
-
 So the statement is True.
 """,
             r"""
@@ -1866,30 +1627,20 @@ $$
 |E|=\beta
 $$
 
-Sample $B$ has $\beta=1.5$ while sample $A$ has $\beta=1.2$.
-
-$$
-1.5>1.2
-$$
-
-So sample $B$ is more elastic in absolute value than sample $A$.
-
-Larger $\beta$ means larger $|E|$ in this constant-elasticity specification.
+Sample $B$ has $\beta=1.5$ while sample $A$ has $\beta=1.2$, and $1.5>1.2$. Sample $B$ is more elastic in absolute value.
 
 So the statement is True.
 """,
             r"""
 **C.** → False
 
-Unit-elastic demand means $|E|=1$, hence $\beta=1$ in this specification. Sample $C$ carries
+Unit-elastic demand means $|E|=1$, hence $\beta=1$. Sample $C$ carries
 
 $$
 \beta=0.8\neq 1
 $$
 
 so $|E|=0.8\neq 1$. Sample $C$ is not unit-elastic.
-
-With $|E|=0.8$ the sample is inelastic, not unit-elastic.
 
 So the statement is False.
 """,
@@ -1902,18 +1653,12 @@ $$
 E=-\beta
 $$
 
-The intercept $\alpha$ shifts $\ln Q$ vertically but never appears in the derivative with respect to $\ln P$. Elasticity is recovered from the $\beta$ column alone.
-
-The intercept $\alpha$ never appears in $E=-\beta$.
-
 So the statement is False.
 """,
             r"""
 **E.** → False
 
-In the model $Q=AP^{-\beta}$ one has $E=-\beta$ at every price. The scale $A$ cancels when logs are differentiated, so elasticity is never equal to $-A$.
-
-The scale $A$ (or $\alpha=\ln A$) never enters the slope $E$.
+For demand $Q=AP^{-\beta}$ the log-log elasticity is the constant slope $-\beta$, not $-A$. The scale $A$ never enters the elasticity.
 
 So the statement is False.
 """,
@@ -1950,8 +1695,6 @@ $$
 
 The two sides agree for every $a>0$, so the claim holds.
 
-Both sides equal $2\log_{b}a$, so the identity is the power law in additive disguise.
-
 So the statement is True.
 """,
             r"""
@@ -1968,8 +1711,6 @@ $$
 $$
 
 These agree only for special values of $\log_{b}a$, not universally. The claimed identity fails.
-
-For $\log_{b}a=3$ one would need $6=9$, which fails.
 
 So the statement is False.
 """,
@@ -1991,15 +1732,11 @@ So the statement is True.
             r"""
 **E.** → False
 
-Addition inside a logarithm is not an identity. Counter-example:
+There is no universal addition-inside law. The counter-example $a=b=1$ already kills it:
 
 $$
 \log(1+1)=\log 2\neq 0=\log 1+\log 1
 $$
-
-No universal law $\log(a+b)=\log a+\log b$ exists on $a,b>0$.
-
-Product, quotient, and power survive; addition inside does not.
 
 So the statement is False.
 """,
@@ -2045,8 +1782,6 @@ So the statement is True.
 
 The logarithm $\log_{b}x$ is defined only for $x>0$. The candidate $x=0$ lies outside that domain, so it cannot be a solution of an equation built from $\log_{b}x$.
 
-Any equation built from $\log_{b}x$ silently restricts to $x>0$ before solving.
-
 So the statement is False.
 """,
             r"""
@@ -2072,8 +1807,6 @@ For the monic quadratic $u^{2}-5u+6$, Vieta's sum-of-roots formula reads the mid
 $$
 u_{1}+u_{2}=5
 $$
-
-Equivalently $2+3=5$. The claim matches Vieta.
 
 The product of the $u$-roots is the constant term $6$, while their sum is the middle coefficient $5$.
 
@@ -2110,8 +1843,6 @@ $$
 
 Hence $h=2$, consistent with the asymptote reading.
 
-Solving $3-h=1$ recovers $h=2$, matching the asymptote reading.
-
 So the statement is True.
 """,
             r"""
@@ -2125,8 +1856,6 @@ $$
 
 It does not depend on the shift parameter $h$.
 
-In exponential language, $b^{\log u+\log v}=uv$ recovers the same product identity.
-
 So the statement is True.
 """,
             r"""
@@ -2139,8 +1868,6 @@ x-h>0\implies x>h
 $$
 
 With $h=2$ already recovered, the domain is $(2,\infty)$.
-
-Equivalently, after the shift, every admissible input satisfies $x-2>0$.
 
 So the statement is True.
 """,
@@ -2167,22 +1894,20 @@ For $N(x)=\log_{2}(\ln x)$ the outer logarithm needs $\ln x>0$, hence $x>1$. The
             r"""
 **A.** → False
 
-The outer base-$2$ logarithm requires a positive inner value.
+The outer logarithm needs a positive input, so demand
 
 $$
-\ln x>0\implies x>e^{0}=1
+\ln x>0
 $$
 
-So the natural domain is $(1,\infty)$. The claim announces $(e,\infty)$, which cuts away the admissible interval $(1,e]$ and is therefore wrong.
-
-Points such as $x=e^{1/2}$ lie in $(1,e)$ and make $N$ defined, so $(e,\infty)$ is too small.
+That forces $x>e^{0}=1$. The natural domain is therefore $(1,\infty)$, not the stricter ray $(e,\infty)$.
 
 So the statement is False.
 """,
             r"""
 **B.** → True
 
-Substitute $x=e$ and peel inside-out.
+Substitute $x=e$ into the nesting.
 
 $$
 \ln e=1
@@ -2192,18 +1917,14 @@ $$
 N(e)=\log_{2}1=0
 $$
 
-The claimed height $0$ matches.
-
-The inner value $1$ is exactly the normalisation point of $\log_{2}$.
+The claim matches the evaluation.
 
 So the statement is True.
 """,
             r"""
 **C.** → False
 
-The exponential $b^{t}$ has domain $\mathbb{R}$, while $\log_{b}$ has domain $(0,\infty)$. Inverse partners do not share one common domain.
-
-Writing $\mathbb{R}$ versus $(0,\infty)$ makes the domain mismatch immediate.
+The exponential $b^{t}$ accepts every real input, while $\log_{b}$ accepts only positive inputs. Their natural domains are complementary, not identical.
 
 So the statement is False.
 """,
@@ -2225,9 +1946,7 @@ So the statement is False.
             r"""
 **E.** → False
 
-For every base $b>1$ the logarithm is strictly increasing. Decreasing behaviour appears only when $0<b<1$. The universal decreasing claim fails.
-
-A sample with base $2$: $\log_{2}1=0<\log_{2}2=1$, so the graph rises.
+For every base $b>1$ the logarithm is strictly increasing, not decreasing. Bases in $(0,1)$ reverse monotonicity. The blanket decreasing claim is false.
 
 So the statement is False.
 """,
@@ -2290,9 +2009,7 @@ So the statement is False.
             r"""
 **D.** → False
 
-Isoelastic demand gives $E=-\beta$ after differentiating $\ln Q=\ln A-\beta\ln P$. Elasticity equals $-\beta$, not $-A$.
-
-After $\ln Q=\ln A-\beta\ln P$, the derivative in $\ln P$ isolates $-\beta$ alone.
+For demand $Q=AP^{-\beta}$ the log-log elasticity is the constant slope $-\beta$, not $-A$. The scale $A$ never enters the elasticity.
 
 So the statement is False.
 """,
@@ -2300,8 +2017,6 @@ So the statement is False.
 **E.** → False
 
 The logarithm $f=\log_{3}$ requires a positive argument, so $t=-1$ is not an admissible input for $f$. By contrast $g(-1)=3^{-1}$ is perfectly defined. The two maps are not defined the same way at $-1$.
-
-Attempting $f(-1)=\log_{3}(-1)$ is undefined, while $g(-1)$ is fine.
 
 So the statement is False.
 """,
@@ -2379,9 +2094,7 @@ So the statement is False.
             r"""
 **E.** → False
 
-Real logarithms require a strictly positive argument. Zero is excluded for every base, so zero arguments are never allowed in log domains.
-
-The domain inequality is the strict cut $x>b/a$, which already excludes a zero argument.
+A real logarithm needs a strictly positive argument. At argument $0$ the expression is undefined, so zero is never admitted to a log domain.
 
 So the statement is False.
 """,
@@ -2403,8 +2116,6 @@ $$
 
 That fails precisely when $x^{2}-1=0$, i.e. at $x=\pm 1$. The expression is defined for all other real $x$.
 
-Equivalently, exclude the two roots of $x^{2}=1$.
-
 So the statement is True.
 """,
             r"""
@@ -2421,8 +2132,6 @@ w(0)=\log 1=0
 $$
 
 The claimed evaluation is correct.
-
-Normalisation $\log 1=0$ applies because the absolute value produced the argument $1$.
 
 So the statement is True.
 """,
@@ -2567,8 +2276,6 @@ $$
 f(1)=\log_{5}1=0
 $$
 
-Equivalently $5^{0}=1$. The claimed intercept height is correct.
-
 The marked unit point $(5,1)$ is consistent with the same normalisation package.
 
 So the statement is True.
@@ -2576,18 +2283,14 @@ So the statement is True.
             r"""
 **B.** → False
 
-The exponential $b^{t}$ has domain $\mathbb{R}$, while $\log_{b}$ has domain $(0,\infty)$. Inverse partners do not share one common domain.
-
-Writing $\mathbb{R}$ versus $(0,\infty)$ records the mismatch of domains.
+The exponential $b^{t}$ accepts every real input, while $\log_{b}$ accepts only positive inputs. Their natural domains are complementary, not identical.
 
 So the statement is False.
 """,
             r"""
 **C.** → False
 
-A vertical asymptote is approached but never attained. For $f=\log_{5}$ that asymptote is $x=0$, and every graph point has abscissa $x>0$. The graph never crosses the asymptote at a finite point.
-
-As $x\to 0^{+}$ one has $f(x)\to-\infty$, but $x=0$ itself is never a graph point.
+A vertical asymptote is a line the graph approaches but never meets. The graph does not cross that asymptote at any finite point.
 
 So the statement is False.
 """,
@@ -2609,15 +2312,11 @@ So the statement is False.
             r"""
 **E.** → False
 
-Addition inside a logarithm is not an identity. Counter-example:
+There is no universal addition-inside law. The counter-example $a=b=1$ already kills it:
 
 $$
 \log(1+1)=\log 2\neq 0=\log 1+\log 1
 $$
-
-The universal claim fails.
-
-Product, quotient, and power survive; addition inside does not.
 
 So the statement is False.
 """,
@@ -2648,16 +2347,12 @@ So the statement is True.
 
 The conversion constant $\ln 10$ is a property of the two bases alone. It does not depend on the row argument $a$, so the same bridge factor appears in every row.
 
-Numerically the bridge is the constant $\ln 10\approx 2.302$ in every row.
-
 So the statement is True.
 """,
             r"""
 **C.** → False
 
-Isoelastic demand gives $E=-\beta$ after differentiating $\ln Q=\ln A-\beta\ln P$. Elasticity equals $-\beta$, not $-A$.
-
-After $\ln Q=\ln A-\beta\ln P$, the slope in $\ln P$ is $-\beta$ alone.
+For demand $Q=AP^{-\beta}$ the log-log elasticity is the constant slope $-\beta$, not $-A$. The scale $A$ never enters the elasticity.
 
 So the statement is False.
 """,
@@ -2679,9 +2374,7 @@ So the statement is False.
             r"""
 **E.** → False
 
-The exponential $b^{t}$ has domain $\mathbb{R}$, while $\log_{b}$ has domain $(0,\infty)$. Inverse partners do not share one common domain.
-
-Writing $\mathbb{R}$ versus $(0,\infty)$ records the complementary domains.
+The exponential $b^{t}$ accepts every real input, while $\log_{b}$ accepts only positive inputs. Their natural domains are complementary, not identical.
 
 So the statement is False.
 """,
@@ -2853,8 +2546,6 @@ $$
 \log(ax+b)=\log a+\log\!\left(x+\frac{b}{a}\right)
 $$
 
-Both factors $a$ and $x+b/a$ stay positive throughout the domain when $a>0$.
-
 So the statement is True.
 """,
         ],
@@ -2879,8 +2570,6 @@ $$
 
 With $f(2)=k$ this is exactly $f(8)=3k$, so the triple relation is consistent.
 
-The lettered height $k$ cancels in the ratio $f(8)/f(2)=3$ whenever $k\neq 0$.
-
 So the statement is True.
 """,
             r"""
@@ -2893,8 +2582,6 @@ b=2
 $$
 
 So $k=1$ pins the base at $2$.
-
-Equivalently $b^{1}=2$ forces the base to equal $2$ when $k=1$.
 
 So the statement is True.
 """,
@@ -2909,8 +2596,6 @@ $$
 
 The claimed height $4$ matches.
 
-Four multiplicative factors of $2$ raise the base-$2$ log by $4$.
-
 So the statement is True.
 """,
             r"""
@@ -2923,8 +2608,6 @@ $$
 $$
 
 Hence $f(8)=3f(2)$ holds for every base $b>1$.
-
-No special choice of $b$ is required beyond $b>1$ for that power identity.
 
 So the statement is True.
 """,
@@ -2939,8 +2622,6 @@ $$
 
 It is one of the three fundamental logarithm identities.
 
-In exponential language, $b^{c\log a}=(b^{\log a})^{c}=a^{c}$.
-
 So the statement is True.
 """,
         ],
@@ -2953,61 +2634,51 @@ Peel $L=\log_{3}(\log_{2}(\log_{5}5^{4}))$ inside-out: the innermost value is $4
             r"""
 **A.** → True
 
-The innermost logarithm receives a pure power of its own base.
+Peel the innermost logarithm first.
 
 $$
 \log_{5}(5^{4})=4
 $$
 
-by the inverse relation. The innermost value equals $4$.
-
-The inverse relation $\log_{5}(5^{t})=t$ specialises at $t=4$.
+The innermost value is exactly $4$.
 
 So the statement is True.
 """,
             r"""
 **B.** → False
 
-A vertical asymptote is approached but never attained or crossed. Every point on a logarithmic graph has a finite abscissa strictly to one side of the asymptote.
-
-Asymptotes constrain limiting behaviour; they are not intersection loci.
+A vertical asymptote is a line the graph approaches but never meets. The graph does not cross that asymptote at any finite point.
 
 So the statement is False.
 """,
             r"""
 **C.** → False
 
-For every base $b>1$ the logarithm is strictly increasing. Decreasing behaviour requires a base in $(0,1)$. The universal decreasing claim fails.
-
-A sample with base $3$: $\log_{3}1=0<\log_{3}3=1$ shows the rise.
+For every base $b>1$ the logarithm is strictly increasing, not decreasing. Bases in $(0,1)$ reverse monotonicity. The blanket decreasing claim is false.
 
 So the statement is False.
 """,
             r"""
 **D.** → False
 
-Continue peeling after the innermost step.
+Continue peeling after the innermost value $4$.
 
 $$
-\log_{2}4=\log_{2}(2^{2})=2
+\log_{2}4=2
 $$
 
 $$
 L=\log_{3}2
 $$
 
-Since $3^{1}=3\neq 2$, one has $\log_{3}2\neq 1$. The claim $L=1$ fails.
-
-Since $2<3$, one also has the strict inequality $0<\log_{3}2<1$.
+Since $\log_{3}2\neq 1$, the claim $L=1$ fails.
 
 So the statement is False.
 """,
             r"""
 **E.** → False
 
-Real logarithms require a strictly positive argument. Zero is excluded for every base, so zero arguments are never allowed.
-
-Each layer of $L$ already requires a strictly positive argument before the next log is applied.
+A real logarithm needs a strictly positive argument. At argument $0$ the expression is undefined, so zero is never admitted to a log domain.
 
 So the statement is False.
 """,
@@ -3042,22 +2713,18 @@ So the statement is True.
 
 The same derivative computation shows that the log-log slope equals the constant $-\beta$ everywhere on the curve. Constancy of $d\ln Q/d\ln P$ is exactly the claim.
 
-Constancy of that derivative is exactly constant elasticity along the demand curve.
-
 So the statement is True.
 """,
             r"""
 **C.** → False
 
-Change of base accepts every auxiliary base $k>0$, $k\neq 1$.
+Change of base works with any auxiliary base $k>0$, $k\neq 1$:
 
 $$
 \log_{b}a=\frac{\log_{k}a}{\log_{k}b}
 $$
 
-Restricting the tool to base $10$ is false.
-
-Natural logs or base $2$ convert bases just as legitimately as base $10$.
+It is not restricted to auxiliary base $10$.
 
 So the statement is False.
 """,
@@ -3079,9 +2746,7 @@ So the statement is False.
             r"""
 **E.** → False
 
-A vertical asymptote is approached but never crossed. No finite point of the graph lies on the asymptote line.
-
-Asymptotes are limiting lines; no finite graph point lies on them.
+A vertical asymptote is a line the graph approaches but never meets. The graph does not cross that asymptote at any finite point.
 
 So the statement is False.
 """,
@@ -3122,8 +2787,6 @@ $$
 
 which equals the same value $2\log u+\log v-\log w$. The stepwise form is correct.
 
-Folding $\log(u^{2})=2\log u$ and $\log(w^{-1})=-\log w$ recovers the same expansion.
-
 So the statement is True.
 """,
             r"""
@@ -3160,16 +2823,12 @@ $$
 
 That is larger than the true expansion by $\log w$ whenever $\log w\neq 0$. The claim fails.
 
-Unless $w=1$, the extra $+\log w$ spoils equality with the true expansion.
-
 So the statement is False.
 """,
             r"""
 **E.** → False
 
-Isoelastic demand gives $E=-\beta$ after differentiating $\ln Q=\ln A-\beta\ln P$. Elasticity equals $-\beta$, not $-A$.
-
-After $\ln Q=\ln A-\beta\ln P$, the slope in $\ln P$ is $-\beta$ alone.
+For demand $Q=AP^{-\beta}$ the log-log elasticity is the constant slope $-\beta$, not $-A$. The scale $A$ never enters the elasticity.
 
 So the statement is False.
 """,
@@ -3190,8 +2849,6 @@ $$
 $$
 
 That is the positivity description in the claim.
-
-Equivalently, the critical points $p$ and $q$ split the line into three components, and only the outer two are positive.
 
 So the statement is True.
 """,
@@ -3236,22 +2893,16 @@ $$
 
 That union is the natural domain of $g$.
 
-The open interval $(p,q)$ itself makes the quotient negative when $p<q$, so it is excluded.
-
 So the statement is True.
 """,
             r"""
 **E.** → False
 
-Addition inside a logarithm is not an identity. Counter-example:
+There is no universal addition-inside law. The counter-example $a=b=1$ already kills it:
 
 $$
 \log(1+1)=\log 2\neq 0=\log 1+\log 1
 $$
-
-The universal claim fails.
-
-Product, quotient, and power survive; addition inside does not.
 
 So the statement is False.
 """,
@@ -3322,8 +2973,6 @@ $$
 
 It holds independently of the growth model.
 
-In exponential language, $b^{c\log a}=(b^{\log a})^{c}=a^{c}$.
-
 So the statement is True.
 """,
             r"""
@@ -3336,8 +2985,6 @@ $$
 $$
 
 That is exactly the claimed identity.
-
-Both $Y$ and $Y_{0}$ must be positive for each separate logarithm to be defined.
 
 So the statement is True.
 """,
@@ -3357,33 +3004,23 @@ $$
 f(1)=\log_{2}1=0,\qquad g(1)=\log_{10}1=0
 $$
 
-Both graphs therefore share the intercept $(1,0)$.
-
-Equivalently $2^{0}=1$ and $10^{0}=1$ force both heights at $x=1$ to vanish.
-
 So the statement is True.
 """,
             r"""
 **B.** → False
 
-For every base $b>1$ the logarithm is strictly increasing. Decreasing behaviour requires a base in $(0,1)$. The universal decreasing claim fails.
-
-A sample: $\log_{2}1=0<\log_{2}2=1$ shows the base-$2$ graph rising.
+For every base $b>1$ the logarithm is strictly increasing, not decreasing. Bases in $(0,1)$ reverse monotonicity. The blanket decreasing claim is false.
 
 So the statement is False.
 """,
             r"""
 **C.** → False
 
-Addition inside a logarithm is not an identity. Counter-example:
+There is no universal addition-inside law. The counter-example $a=b=1$ already kills it:
 
 $$
 \log(1+1)=\log 2\neq 0=\log 1+\log 1
 $$
-
-The universal claim fails.
-
-Product, quotient, and power survive; addition inside does not.
 
 So the statement is False.
 """,
@@ -3409,9 +3046,7 @@ So the statement is False.
             r"""
 **E.** → False
 
-A nesting such as $\log(\log x)$ needs the inner value itself to be positive, which is stricter than $x>0$. Further checks are always required, so the claim fails.
-
-For instance $\log_{2}(\log_{2}x)$ already needs $x>1$, not merely $x>0$.
+Nested logarithms still require every intermediate argument to be positive. The condition $x>0$ alone is not enough.
 
 So the statement is False.
 """,
@@ -3433,8 +3068,6 @@ $$
 
 The identity holds, so row $P$ is consistent.
 
-Equivalently $\log_{2}8=3$ is the inverse reading of $2^{3}=8$.
-
 So the statement is True.
 """,
             r"""
@@ -3447,8 +3080,6 @@ $$
 $$
 
 The identity holds, so row $Q$ is consistent.
-
-Equivalently $\log_{3}9=2$ is the inverse reading of $3^{2}=9$.
 
 So the statement is True.
 """,
@@ -3485,9 +3116,7 @@ So the statement is False.
             r"""
 **E.** → False
 
-For every base $b>1$ the logarithm is strictly increasing. Decreasing behaviour requires a base in $(0,1)$. The universal decreasing claim fails.
-
-A sample: $\log_{2}1=0<\log_{2}2=1$ shows a base $>1$ rising.
+For every base $b>1$ the logarithm is strictly increasing, not decreasing. Bases in $(0,1)$ reverse monotonicity. The blanket decreasing claim is false.
 
 So the statement is False.
 """,
@@ -3547,16 +3176,12 @@ $$
 
 Those are the corresponding positive $x$-roots.
 
-Both $e^{2}$ and $e^{-1}$ are positive, so they lie in the domain of $\ln$.
-
 So the statement is True.
 """,
             r"""
 **D.** → False
 
-Isoelastic demand gives $E=-\beta$ after differentiating $\ln Q=\ln A-\beta\ln P$. Elasticity equals $-\beta$, not $-A$.
-
-After $\ln Q=\ln A-\beta\ln P$, the slope in $\ln P$ is $-\beta$ alone.
+For demand $Q=AP^{-\beta}$ the log-log elasticity is the constant slope $-\beta$, not $-A$. The scale $A$ never enters the elasticity.
 
 So the statement is False.
 """,
@@ -3597,8 +3222,6 @@ $$
 f_{b}(x)>f_{c}(x)
 $$
 
-Larger bases grow faster, so their logarithms climb more slowly at a fixed $x>1$.
-
 So the statement is True.
 """,
             r"""
@@ -3612,8 +3235,6 @@ $$
 
 for every base $b>1$.
 
-Equivalently $b^{1}=b$ records the same unit-point normalisation for every base.
-
 So the statement is True.
 """,
             r"""
@@ -3622,12 +3243,10 @@ So the statement is True.
 Differentiate the change-of-base form with respect to the base, treating $x>1$ as fixed.
 
 $$
-\frac{\partial}{\partial b}\log_{b}x=\frac{\partial}{\partial b}\left(\frac{\ln x}{\ln b}\right)=-\frac{\ln x}{(\ln b)^{2}}\cdot\frac{1}{b}
+\frac{\partial}{\partial b}\log_{b}x=-\frac{\ln x}{(\ln b)^{2}}\cdot\frac{1}{b}
 $$
 
 For $x>1$ one has $\ln x>0$, and the remaining factors are positive, so the whole derivative is negative.
-
-The minus sign in front of $\ln x$ (with $x>1$) forces the whole partial derivative negative.
 
 So the statement is True.
 """,
@@ -3642,8 +3261,6 @@ $$
 
 for every admissible $b$. The value does not depend on $b$, so the claim fails.
 
-Equivalently $b^{0}=1$ for every admissible base, so the intercept height is always $0$.
-
 So the statement is False.
 """,
             r"""
@@ -3656,8 +3273,6 @@ f_{b}(x)=\log_{b}x=\frac{\ln x}{\ln b}
 $$
 
 for $b>1$ and $x>0$.
-
-The same identity with auxiliary base $10$ would read $\log_{10}x/\log_{10}b$.
 
 So the statement is True.
 """,
@@ -3724,8 +3339,6 @@ $$
 
 It does not depend on the horizontal shift.
 
-In exponential language, $b^{\log a-\log b}=a/b$ recovers the same quotient identity.
-
 So the statement is True.
 """,
             r"""
@@ -3753,48 +3366,46 @@ For $h_{c}(x)=\log_{2}(\log_{2}(x-c))$ the outer logarithm needs $\log_{2}(x-c)>
             r"""
 **A.** → False
 
-The outer logarithm requires a positive inner value.
+The outer logarithm needs $\log_{2}(x-c)>0$. With base $2>1$ that means
 
 $$
-\log_{2}(x-c)>0\implies x-c>2^{0}=1\implies x>c+1
+x-c>2^{0}=1
 $$
 
-The claim announces the stricter cut $x>c+2$, which excludes admissible points such as $x=c+1.5$. The stated domain is wrong.
-
-The point $x=c+1.5$ satisfies $x>c+1$ yet fails $x>c+2$, and $h_{c}$ is defined there.
+hence $x>c+1$. The threshold $c+2$ is stricter than necessary, so it is not the natural domain.
 
 So the statement is False.
 """,
             r"""
 **B.** → True
 
-The same positivity chain yields the sharp threshold.
+The outer logarithm needs a positive input:
 
 $$
-\log_{2}(x-c)>0\implies x>c+1
+\log_{2}(x-c)>0
 $$
 
-Together with the inner requirement $x-c>0$, which is weaker, the natural domain is $x>c+1$.
+With base $2>1$ that rearranges to
 
-At the threshold $x=c+1$ the inner log equals $0$, so the outer log fails; the inequality is strict.
+$$
+x-c>1\qquad\Leftrightarrow\qquad x>c+1
+$$
+
+The inner condition $x-c>0$ is weaker, so the natural domain is exactly $x>c+1$.
 
 So the statement is True.
 """,
             r"""
 **C.** → False
 
-Real logarithms require a strictly positive argument. Zero is excluded for every base, so zero arguments are never allowed.
-
-The domain cut $x>c+1$ already encodes strict positivity of every intermediate argument.
+A real logarithm needs a strictly positive argument. At argument $0$ the expression is undefined, so zero is never admitted to a log domain.
 
 So the statement is False.
 """,
             r"""
 **D.** → False
 
-A nesting needs every intermediate value to be positive, which is stricter than a single condition $x>0$. Further checks are always required.
-
-Here the outer log needs $\log_{2}(x-c)>0$, which is stronger than $x>0$.
+Nested logarithms still require every intermediate argument to be positive. The condition $x>0$ alone is not enough.
 
 So the statement is False.
 """,
@@ -3846,8 +3457,6 @@ $$
 
 The table's entry $0$ at $x=1$ matches the graph.
 
-Normalisation $\log_{3}1=0$ is the shared intercept of every admissible logarithm.
-
 So the statement is True.
 """,
             r"""
@@ -3868,24 +3477,18 @@ So the statement is False.
             r"""
 **D.** → False
 
-For every base $b>1$ the logarithm is strictly increasing. Decreasing behaviour requires a base in $(0,1)$. The universal decreasing claim fails.
-
-A sample: $\log_{3}1=0<\log_{3}3=1$ shows the base-$3$ graph rising.
+For every base $b>1$ the logarithm is strictly increasing, not decreasing. Bases in $(0,1)$ reverse monotonicity. The blanket decreasing claim is false.
 
 So the statement is False.
 """,
             r"""
 **E.** → False
 
-Addition inside a logarithm is not an identity. Counter-example:
+There is no universal addition-inside law. The counter-example $a=b=1$ already kills it:
 
 $$
 \log(1+1)=\log 2\neq 0=\log 1+\log 1
 $$
-
-The universal claim fails.
-
-Product, quotient, and power survive; addition inside does not.
 
 So the statement is False.
 """,
@@ -3899,37 +3502,33 @@ The claimed chain equates a quotient of logs with a log of a quotient. The first
             r"""
 **A.** → True
 
-The first equality is the quotient law on positive arguments.
+The quotient law converts a difference of logs into a log of a quotient, for every positive factor pair.
 
 $$
 \log a-\log b=\log\!\left(\frac{a}{b}\right)\qquad(a>0,\,b>0)
 $$
 
-It holds for every such pair, independently of the false second step.
-
-In exponential language, $b^{\log a-\log b}=a/b$ recovers the same quotient.
+The first equality in the chain is exactly that identity.
 
 So the statement is True.
 """,
             r"""
 **B.** → True
 
-The second equality in the chain asserts
+The second step of the chain equates a log of a quotient with a quotient of logs.
 
 $$
-\log\!\left(\frac{a}{b}\right)=\frac{\log a}{\log b}
+\log\!\left(\frac{a}{b}\right)\stackrel{?}{=}\frac{\log a}{\log b}
 $$
 
-for a fixed base. That is not a logarithm identity. The statement correctly reports that the equality fails in general (the wording's caution is the true content of the claim).
-
-Dividing two logs is change-of-base territory only after the bases are aligned correctly — not after a quotient law.
+Those are different operations. The equality fails in general for the same fixed base, so the statement's diagnosis is correct.
 
 So the statement is True.
 """,
             r"""
 **C.** → True
 
-Substitute the suggested pair $a=e^{2}$, $b=e$ into both sides of the false step, using natural logs for concreteness.
+Take $a=e^{2}$ and $b=e$ in natural logs.
 
 $$
 \log\!\left(\frac{e^{2}}{e}\right)=\log e=1
@@ -3939,39 +3538,33 @@ $$
 \frac{\log(e^{2})}{\log e}=\frac{2}{1}=2
 $$
 
-Left side $1$ and right side $2$ disagree, confirming the counter-example.
-
-The mismatch $1\neq 2$ is enough to kill the second step as a universal identity.
+Left side $1$ and right side $2$ disagree, confirming the second step fails.
 
 So the statement is True.
 """,
             r"""
 **D.** → False
 
-Change of base accepts every auxiliary base $k>0$, $k\neq 1$.
+Change of base works with any auxiliary base $k>0$, $k\neq 1$:
 
 $$
 \log_{b}a=\frac{\log_{k}a}{\log_{k}b}
 $$
 
-Restricting the tool to base $10$ is false.
-
-Natural logs or base $2$ convert bases just as legitimately as base $10$.
+It is not restricted to auxiliary base $10$.
 
 So the statement is False.
 """,
             r"""
 **E.** → False
 
-Change of base states $\log_{b}a=\ln a/\ln b$, which rewrites a single logarithm in a new base. It does not turn the false identification
+Change of base is the identity
 
 $$
-\log\!\left(\frac{a}{b}\right)=\frac{\log a}{\log b}
+\log_{b}a=\frac{\ln a}{\ln b}
 $$
 
-into a true step of the original chain. The two identities are different statements, so the replacement does not repair the chain.
-
-Repairing the chain would require replacing the false step by a true consequence of the first step — change of base is not such a consequence.
+That rewrites a logarithm in a new auxiliary base; it does not turn the false friend $\log(a/b)=(\log a)/(\log b)$ into a true equality inside the original chain. The proposed repair does not salvage the chain.
 
 So the statement is False.
 """,
@@ -3993,8 +3586,6 @@ $$
 
 For $q$, the product $(b-x)(x-a)$ is positive on the same open interval when $a<b$. Endpoints make a factor $0$, so both natural domains equal $(a,b)$.
 
-Endpoints make a factor $0$, so both $p$ and $q$ use open endpoints.
-
 So the statement is True.
 """,
             r"""
@@ -4007,8 +3598,6 @@ $$
 $$
 
 Hence $p(x)=q(x)$ for every $x\in(a,b)$.
-
-Outside $(a,b)$ the product law cannot be invoked for $p$, because at least one log is undefined.
 
 So the statement is True.
 """,
@@ -4029,9 +3618,7 @@ $$
 x>b:\quad (b-x)(x-a)<0
 $$
 
-The product is positive only on $(a,b)$, so the domain of $q$ is still forced to be that same open interval.
-
-Unlike a general product, these two linear factors never share a both-negative positivity region when $a<b$.
+The product is positive only on $(a,b)$, so $q$ cannot enlarge the domain beyond that of $p$.
 
 So the statement is True.
 """,
@@ -4044,24 +3631,21 @@ $$
 b-x>0,\qquad x-a>0
 $$
 
-That forces $x\in(a,b)$ and cannot be enlarged. The domain of $p$ cannot exceed $(a,b)$.
-
-A single non-positive factor already undefined one of the summands in $p$.
+That forces $x\in(a,b)$ and cannot be enlarged.
 
 So the statement is True.
 """,
             r"""
 **E.** → False
 
-A nesting needs every intermediate value to be positive, which is stricter than a single condition $x>0$. Further checks are always required, so the claim fails.
-
-For instance $\log(\log x)$ needs the inner value positive, which is stronger than $x>0$.
+Nested logarithms still require every intermediate argument to be positive. The condition $x>0$ alone is not enough.
 
 So the statement is False.
 """,
         ],
     },
 }
+
 
 if __name__ == "__main__":
     import json
@@ -4079,14 +3663,12 @@ if __name__ == "__main__":
     for cid, body in BODIES_102.items():
         teas = body["tactical_explanations"]
         assert len(teas) == 5, cid
-        ov = body["solution_overview"].strip()
-        assert 150 <= len(ov) <= 700, (cid, len(ov))
         key = by_id.get(cid, {}).get("answer_key")
         for i, e in enumerate(teas):
             let = LETTERS[i]
-            lines = e.strip().splitlines()
-            m = HEADER_RE.match(lines[0])
-            assert m and m.group(1) == let, (cid, let, lines[:1])
+            lines_ = e.strip().splitlines()
+            m = HEADER_RE.match(lines_[0])
+            assert m and m.group(1) == let, (cid, let, lines_[:1])
             cm = CLOSE_RE.search(e.strip())
             assert cm and cm.group(1) == m.group(2), (cid, let)
             if key is not None:
@@ -4094,5 +3676,4 @@ if __name__ == "__main__":
                 assert m.group(2) == verd, (cid, let, m.group(2), verd)
                 assert cm.group(1) == verd, (cid, let)
             assert e.count("$$") % 2 == 0, (cid, let)
-            assert len(e) >= 180, (cid, let, len(e))
     print("BODIES_102 ok", len(BODIES_102))
