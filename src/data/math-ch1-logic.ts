@@ -10879,15 +10879,25 @@ Then K would be the only truth-teller. That makes J's sentence, "Exactly one of 
 The only alternative is $L=\\text{true}$. With K and L both truth-tellers, L's "same type" sentence is indeed true.
 
 So the statement is True.`,
-      `**D.** → True
+      `**D.** → False
 
-Add the three bits one step at a time:
+From letters A–C the forced types are:
+
+$$J\\text{ is a liar}$$
+
+$$K\\text{ is a truth-teller}$$
+
+$$L\\text{ is a truth-teller}$$
+
+Count the truth-tellers:
 
 $$0+1=1$$
 
 $$1+1=2$$
 
-So the statement is True.`,
+Exactly two inhabitants are truth-tellers, not one. So the claim is false.
+
+So the statement is False.`,
       `**E.** → False
 
 The claim needs a second assignment, so split first on J's type. If J is truthful, J's sentence makes K and L liars, but then L truthfully says that K and L are the same type. That branch fails.
