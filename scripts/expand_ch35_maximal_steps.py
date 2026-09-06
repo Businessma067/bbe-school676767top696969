@@ -157,6 +157,8 @@ def expand_chain_body(body: str) -> str | None:
             and not has_arithmetic_op(first)
             and "=" not in first
             and len(first) <= 40
+            and not has_arithmetic_op(approx_parts[1])
+            and "=" not in approx_parts[1]
         ):
             return None
         blocks: list[str] = []
