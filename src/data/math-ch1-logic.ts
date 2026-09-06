@@ -9162,87 +9162,27 @@ Given: $1234^{2} = 1{,}522{,}756$ (even) and $4321^{2} = 18{,}671{,}041$ (odd).`
     tactical_explanations: [
       `**A.** → True
 
-Apply quantifier and implication negation:
-
-$$\\neg\\forall t\\,(P(t)\\Rightarrow Q(t)) \\equiv \\exists t\\,\\neg(P(t)\\Rightarrow Q(t)) \\equiv \\exists t\\,(P(t)\\land\\neg Q(t))$$
-
-A hypothetical witness $t_0$ would have to be inscribed with a diameter as one side, $P(t_0)=\\mathrm{T}$, while lacking a right angle, $Q(t_0)=\\mathrm{F}$. That is exactly “there exists such a triangle without a right angle,”.
+Negation of $\\forall$ triangles $T$ with property $R(T)$ is $\\exists T\\,\\neg R(T)$.
 
 So the statement is True.`,
       `**B.** → True
 
-Thales’ theorem proves the universal statement
-
-$$\\forall t\\,(P(t)\\Rightarrow Q(t))=\\mathrm{T}$$
-
-Its negation is the counterexample claim
-
-$$\\exists t\\,(P(t)\\land\\neg Q(t))$$
-
-If that existential had a witness, the witness would falsify the proved universal. Since no such witness can coexist with the theorem, the negation is false. The claim correctly reports that truth value.
+A true universal has a false negation.
 
 So the statement is True.`,
       `**C.** → True
 
-One truth assignment separates an implication from its converse.
-
-$$(p,q)=(F,T)$$
-
-$$p\\rightarrow q$$
-
-$$= F\\rightarrow T$$
-
-$$= T$$
-
-$$q\\rightarrow p$$
-
-$$= T\\rightarrow F$$
-
-$$= F$$
-
-The two implications disagree on this assignment.
+The geometric converse (right triangle inscribed with hypotenuse as diameter) is also a standard theorem.
 
 So the statement is True.`,
       `**D.** → True
 
-One truth assignment separates an implication from its converse.
-
-$$(p,q)=(F,T)$$
-
-$$p\\rightarrow q$$
-
-$$= F\\rightarrow T$$
-
-$$= T$$
-
-$$q\\rightarrow p$$
-
-$$= T\\rightarrow F$$
-
-$$= F$$
-
-The two implications disagree on this assignment.
+When both $P\\Rightarrow Q$ and $Q\\Rightarrow P$ hold, we have $P\\Leftrightarrow Q$.
 
 So the statement is True.`,
       `**E.** → False
 
-The original and inverse are
-
-$$P\\Rightarrow Q,$$
-
-$$\\neg P\\Rightarrow\\neg Q$$
-
-They are not logically equivalent. A concrete truth assignment demonstrates the mismatch:
-
-$$P = \\mathrm{F},\\quad Q$$
-
-$$= \\mathrm{T} \\quad\\Longrightarrow\\quad P\\Rightarrow Q$$
-
-$$= \\mathrm{T}, \\quad \\neg P\\Rightarrow\\neg Q$$
-
-$$= \\mathrm{F}$$
-
-The original is equivalent to $\\neg Q\\Rightarrow\\neg P$, its contrapositive; the inverse is equivalent to the converse. The stated reason for transferring truth is invalid.
+Inverse is not always equivalent to the original; here the inverse need not follow from Thales alone.
 
 So the statement is False.`,
     ],
@@ -9271,71 +9211,31 @@ The negation is $\\exists t\\,(P(t) \\land \\neg Q(t))$. The converse is $Q \\Ri
     tactical_explanations: [
       `**A.** → True
 
-Treat the theorem as universal over positive integers. Negate the quantifier and implication:
-
-$$\\neg\\forall n\\,(S(n)\\Rightarrow O(n)) \\equiv \\exists n\\,(S(n)\\land\\neg O(n))$$
-
-Because a finite divisor count is either odd or even, $\\neg O(n)$ means an even number of divisors. Thus a counterexample witness would have to be a perfect square with an even divisor count. The quoted sentence has exactly that logical form.
+Negation of $Sq\\Rightarrow OddDiv$ is $Sq\\wedge\\neg OddDiv$.
 
 So the statement is True.`,
       `**B.** → True
 
-$36$ is $6^{2}$, so the hypothesis holds. The listed divisors are
+Count divisors of $36$:
 
-$$\\{1,2,3,4,6,9,12,18,36\\}$$
+$$1,2,3,4,6,9,12,18,36$$
 
-nine numbers, and nine is odd. Hypothesis true and conclusion true: $36$ supports the theorem and is not a counterexample.
-
-That matches the claim.
+Nine divisors — odd — consistent with the theorem.
 
 So the statement is True.`,
       `**C.** → True
 
-One truth assignment separates an implication from its converse.
-
-$$(p,q)=(F,T)$$
-
-$$p\\rightarrow q$$
-
-$$= F\\rightarrow T$$
-
-$$= T$$
-
-$$q\\rightarrow p$$
-
-$$= T\\rightarrow F$$
-
-$$= F$$
-
-The two implications disagree on this assignment.
+The converse is also a theorem: odd divisor count characterizes squares.
 
 So the statement is True.`,
       `**D.** → False
 
-The theorem speaks only about perfect squares. $20$ sits between $4^{2} = 16$ and $5^{2} = 25$, so $20$ is not a square and the hypothesis $S$ is false. An implication with a false "if" is not refuted by $20$. A counterexample would need a square with an even divisor count.
-
-$$\\{1,2,4,5,10,20\\}$$
+$20$ not being square with even divisor count is consistent with the theorem, not a counterexample to $Sq\\Rightarrow OddDiv$.
 
 So the statement is False.`,
       `**E.** → True
 
-One truth assignment separates an implication from its converse.
-
-$$(p,q)=(F,T)$$
-
-$$p\\rightarrow q$$
-
-$$= F\\rightarrow T$$
-
-$$= T$$
-
-$$q\\rightarrow p$$
-
-$$= T\\rightarrow F$$
-
-$$= F$$
-
-The two implications disagree on this assignment.
+With both directions true, the inverse matches as well.
 
 So the statement is True.`,
     ],
@@ -9372,39 +9272,39 @@ Sample $36 = 6^{2}$ with listed divisors $\\{1,2,3,4,6,9,12,18,36\\}$. Sample $2
     tactical_explanations: [
       `**A.** → True
 
-Use the biconditionals as equal-truth constraints. Clue (3) gives $\\neg G$. From clue (2), $F\\Leftrightarrow G$, so
+From (3), Grace is not a teacher:
 
-$$\\neg G\\quad\\Longrightarrow\\quad\\neg F$$
+$$\\neg G$$
 
-Clue (1) is $E\\Leftrightarrow\\neg F$. Since $\\neg F$ is true,
+Clue (2) says $F\\Leftrightarrow G$, so
 
-$$\\neg F\\quad\\Longrightarrow\\quad E$$
+$$F=\\mathrm{F}$$
 
-Therefore Emma is the doctor.
+Clue (1) says $E\\Leftrightarrow\\neg F$. Since $\\neg F$ holds,
+
+$$E=\\mathrm{T}$$
+
+Emma is the doctor.
 
 So the statement is True.`,
       `**B.** → False
 
-Clue (2) alone says Felix is an engineer exactly when Grace is a teacher. Both sides are unset, so (2) names nobody. Even after (3) shuts Grace out of Teacher, (2) yields only that Felix is not the engineer. Pinning him to Teacher still needs Emma placed as doctor and Hugo placed as lawyer. A right job with a wrong reason fails.
+Clue (2) alone is only $F\\Leftrightarrow G$. Without a value for $G$, Felix’s job is not fixed. The claim that (2) alone makes Felix the teacher is false.
 
 So the statement is False.`,
       `**C.** → True
 
-First, clues (3), (2), and (1) force $\\neg G$, then $\\neg F$, then $E$: Emma is Doctor. Clue (4) makes Hugo Lawyer. The unused jobs for Felix and Grace are therefore
-
-$$\\{\\text{Engineer},\\text{Teacher}\\}$$
-
-But $\\neg F$ says Felix is not Engineer, so Felix must be Teacher. Because all four jobs are distinct, the remaining Engineer job goes to Grace.
+Felix is not the engineer. Hugo is the lawyer by (4). Emma is the doctor. The only remaining job for Grace is engineer.
 
 So the statement is True.`,
       `**D.** → True
 
-Drop clue (3) and try Grace as teacher. Then (2) makes Felix the engineer, so (1) makes $E$ false: Emma is not the doctor. Clue (4) already placed Hugo as lawyer, so the only leftover job for Emma is Doctor, contradicting $E$ false. Clues (1), (2), and (4) already forbid Grace-as-teacher, so clue (3) is redundant.
+Drop clue (3) and try $G=\\mathrm{T}$. Then (2) forces $F=\\mathrm{T}$ and (1) forces $E=\\mathrm{F}$. Hugo is the lawyer, Felix the engineer, Grace the teacher — so Emma would have to be the doctor, contradicting $E=\\mathrm{F}$. Thus $G=\\mathrm{T}$ is impossible, and $\\neg G$ is forced even without (3). Clue (3) is redundant.
 
 So the statement is True.`,
       `**E.** → True
 
-The chain to Emma used only (3), (2), and (1): Grace not teacher, therefore Felix not engineer, therefore Emma is the doctor. Clue (4) names Hugo as lawyer and is used only later to split Engineer from Teacher. Remove clue (4) and Emma is still the doctor.
+From (1)–(3) as in letter A, Emma is already forced to be the doctor before using (4).
 
 So the statement is True.`,
     ],
@@ -9441,81 +9341,27 @@ From (3), $G$ is false, so (2) forces $F$ false. Then (1) forces $E$ true: Emma 
     tactical_explanations: [
       `**A.** → True
 
-Write $C(s)$ for convergence and $B(s)$ for boundedness. Negating the universal theorem gives
-
-$$\\neg\\forall s\\,(C(s)\\Rightarrow B(s)) \\equiv \\exists s\\,(C(s)\\land\\neg B(s))$$
-
-A witness would have to be one sequence that both converges and is unbounded. The theorem $C(s)\\Rightarrow B(s)$ rules out that combination for every sequence, so the described witness set is empty. The negation describes an impossible situation.
+The theorem forbids a convergent unbounded sequence, so the negation describes an impossibility.
 
 So the statement is True.`,
       `**B.** → True
 
-One truth assignment separates an implication from its converse.
-
-$$(p,q)=(F,T)$$
-
-$$p\\rightarrow q$$
-
-$$= F\\rightarrow T$$
-
-$$= T$$
-
-$$q\\rightarrow p$$
-
-$$= T\\rightarrow F$$
-
-$$= F$$
-
-The two implications disagree on this assignment.
+$(-1)^{n}$ is bounded but does not converge — converse fails.
 
 So the statement is True.`,
       `**C.** → True
 
-One truth assignment separates an implication from its converse.
-
-$$(p,q)=(F,T)$$
-
-$$p\\rightarrow q$$
-
-$$= F\\rightarrow T$$
-
-$$= T$$
-
-$$q\\rightarrow p$$
-
-$$= T\\rightarrow F$$
-
-$$= F$$
-
-The two implications disagree on this assignment.
+Inverse $\\Leftrightarrow$ converse, so the inverse is also false.
 
 So the statement is True.`,
       `**D.** → True
 
-The contrapositive is "not bounded, therefore does not converge," equivalent to the proved theorem, hence true. For the sequences $n$, $2n$, and $n^{2}$, unboundedness is immediate, and the contrapositive then yields divergence. Both halves of the claim hold.
-
-$$n^2$$
+Contrapositive “unbounded $\\Rightarrow$ divergent” is equivalent and true.
 
 So the statement is True.`,
       `**E.** → False
 
-One truth assignment separates an implication from its converse.
-
-$$(p,q)=(F,T)$$
-
-$$p\\rightarrow q$$
-
-$$= F\\rightarrow T$$
-
-$$= T$$
-
-$$q\\rightarrow p$$
-
-$$= T\\rightarrow F$$
-
-$$= F$$
-
-The two implications disagree on this assignment.
+A false converse does not falsify the original theorem.
 
 So the statement is False.`,
     ],
