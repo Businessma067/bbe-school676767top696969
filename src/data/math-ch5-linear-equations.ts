@@ -9,7 +9,7 @@ import ch5Exam from "@/data/math-ch5-exam.json";
 
 export const MATH_CH5_SUBSECTIONS = [
   { id: "5", title: "Linear equations in two unknowns" },
-  { id: "5.5", title: "Exam-style tasks" },
+  { id: "5.5", title: "Exam-Style" },
 ] as const;
 
 const MATH_CH5_CORE: MathTask[] = [

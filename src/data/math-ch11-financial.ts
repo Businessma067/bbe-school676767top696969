@@ -14,7 +14,7 @@ export const MATH_CH11_SUBSECTIONS = [
   { id: "3.5", title: "Annuities, Annuities Due & Perpetuities" },
   { id: "3.6", title: "Mortgage Repayments" },
   { id: "3.7", title: "Internal Rate of Return" },
-  { id: "3.8", title: "Exam-style tasks" },
+  { id: "3.8", title: "Exam-Style" },
 ] as const;
 
 const MATH_CH11_CORE: MathTask[] = [

@@ -11,7 +11,7 @@ export const MATH_CH11_SUBSECTIONS = [
   { id: "11.2", title: "Economic interpretation of the derivative" },
   { id: "11.3", title: "Finding and classifying optima" },
   { id: "11.4", title: "Interpreting graphs without algebra" },
-  { id: "11.5", title: "Exam-style tasks" },
+  { id: "11.5", title: "Exam-Style" },
 ] as const;
 
 const MATH_CH11_CORE: MathTask[] = [
