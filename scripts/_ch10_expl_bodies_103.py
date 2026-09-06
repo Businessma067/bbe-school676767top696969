@@ -52,11 +52,15 @@ BODIES_103['MATH 10.3.4'] = {
 BODIES_103['MATH 10.3.5'] = {
     "solution_overview": 'The nested-log constraints unwind at sight.\n\n$$\\ln(\\ln A)=0\\implies\\ln A=1\\implies A=e$$\n\n$$\\ln k=-\\ln 2\\implies k=e^{-\\ln 2}=\\tfrac12$$\n\nWith those parameters, doubling takes $t_{\\times2}=\\ln2/k=2\\ln2\\approx1.3863$, and $N(2)=A e^{2k}=e^{2}$.',
     "tactical_explanations": [
-        '**A.** → True\n\nUnwind the outer logarithm first, then the inner one.\n\n$$\n\\ln(\\ln A)=0\\implies\\ln A=1\n$$\n\n$$\nA=e^{1}=e\n$$\n\nThe nested constraint pins the level parameter at $A=e$.\n\nBecause $e^{1}=e$, the nested log admits no other positive solution.\n\n$$\n\\ln A=1\\iff A=e\n$$\n\nThe arithmetic already displayed is enough to accept or reject the claim.\n\n$$\n\\mathrm{QED}\n$$\n\nSo the statement is True.',
+        '**A.** → True\n\nUnwind the outer logarithm first, then the inner one.\n\n$$\n\\ln(\\ln A)=0\\implies\\ln A=1\n$$\n\n$$\nA=e^{1}=e\n$$\n\nThe nested constraint pins the level parameter at $A=e$.\n\nBecause $e^{1}=e$, the nested log admits no other positive solution.\n\n$$\n\\ln A=1\\iff A=e\n$$\n\n
+
+\n\nSo the statement is True.',
         '**B.** → False\n\nExponentiate the force constraint carefully.\n\n$$\n\\ln k=-\\ln 2\\implies k=e^{-\\ln 2}=\\frac{1}{2}\n$$\n\nCompare with the claimed value $2$.\n\n$$\nk=\\tfrac12\\neq2\n$$\n\nThe force is one half, not two.\n\nCollect the decisive inequality in one display so the verdict is immediate.\n\nThe last recovered line is already the comparison the claim needs.\n\n$$\nk=\\tfrac12\\neq2\n$$\n\nSo the statement is False.',
         '**C.** → False\n\nDoubling time is the log of two divided by the recovered force.\n\n$$\nt_{\\times2}=\\frac{\\ln 2}{k}=\\frac{\\ln 2}{1/2}=2\\ln 2\\approx1.3863\n$$\n\nThe claim asserts that this clock equals $\\ln 2$ itself.\n\n$$\n2\\ln 2\\neq\\ln 2\n$$\n\nDoubling time is $2\\ln 2$, not $\\ln 2$.\n\nCollect the decisive inequality in one display so the verdict is immediate.\n\nThe last recovered line is already the comparison the claim needs.\n\n$$\n2\\ln 2\\neq\\ln 2\n$$\n\nSo the statement is False.',
         '**D.** → False\n\nEvaluate the stock at calendar time $t=2$ under the pinned parameters.\n\n$$\nN(2)=A e^{2k}=e\\cdot e^{2\\cdot(1/2)}=e\\cdot e=e^{2}\n$$\n\nSet that beside the initial level.\n\n$$\ne^{2}\\neq A=e\n$$\n\nAfter two years the stock is $e^{2}$, not $A$.\n\nCollect the decisive inequality in one display so the verdict is immediate.\n\nThe last recovered line is already the comparison the claim needs.\n\n$$\ne^{2}\\neq A=e\n$$\n\nSo the statement is False.',
-        '**E.** → False\n\nAdd the two constrained logarithms as they stand.\n\n$$\n\\ln(\\ln A)+\\ln k=0+(-\\ln 2)=-\\ln 2\n$$\n\n$$\n-\\ln 2\\neq0\n$$\n\nThe sum equals $-\\ln 2$, not zero.\n\nThe nonzero sum is exactly the force-constraint log.\n\n$$\n\\ln(\\ln A)+\\ln k=-\\ln 2\n$$\n\nThe arithmetic already displayed is enough to accept or reject the claim.\n\n$$\n\\mathrm{QED}\n$$\n\nSo the statement is False.',
+        '**E.** → False\n\nAdd the two constrained logarithms as they stand.\n\n$$\n\\ln(\\ln A)+\\ln k=0+(-\\ln 2)=-\\ln 2\n$$\n\n$$\n-\\ln 2\\neq0\n$$\n\nThe sum equals $-\\ln 2$, not zero.\n\nThe nonzero sum is exactly the force-constraint log.\n\n$$\n\\ln(\\ln A)+\\ln k=-\\ln 2\n$$\n\n
+
+\n\nSo the statement is False.',
     ],
 }
 
@@ -66,7 +70,9 @@ BODIES_103['MATH 10.3.6'] = {
         '**A.** → True\n\nSolve the early-regime equation $P_0 e^{k_1 t}=M$ for the first crossing.\n\n$$\nt_{\\mathrm{hit}}=\\frac{\\ln(M/P_0)}{k_1}=\\frac{\\ln(547.0871/500)}{0.06}\\approx1.5\n$$\n\nPlace that clock beside the kink.\n\n$$\n0<1.5<3=T\n$$\n\nThe threshold is therefore crossed strictly before $t=3$.\n\nCollect the decisive inequality in one display so the verdict is immediate.\n\nThe last recovered line is already the comparison the claim needs.\n\n$$\n0<1.5<3=T\n$$\n\nSo the statement is True.',
         '**B.** → True\n\nAfter the switch the level is a decaying exponential starting from $f(T)$.\n\n$$\nf(t)=f(T)e^{k_2(t-T)}\\qquad k_2=-0.02<0\n$$\n\nAs $t\\to\\infty$ this path tends to $0$, which lies strictly below $M$.\n\n$$\n\\lim_{t\\to\\infty}f(t)=0<M\n$$\n\nBy continuity the decaying path must cross $M$ again from above, so the claim holds.\n\nSo the statement is True.',
         '**C.** → False\n\nRead the late force from the stem and compare it with zero.\n\n$$\nk_2=-0.02\n$$\n\n$$\nk_2-0=-0.02<0\n$$\n\nA negative force means the path is decaying after the kink, so the late force is not strictly positive.\n\nDecay after the kink is the geometric meaning of a negative force.\n\n$$\ne^{k_2(t-T)}=e^{-0.02(t-T)}<1\\quad(t>T)\n$$\n\nSo the statement is False.',
-        '**D.** → True\n\nOnly the early force has acted by the switch time, so the log-increment is exactly $k_1 T$.\n\n$$\n\\ln\\frac{f(3)}{P_0}=k_1 T\n$$\n\n$$\n=0.06\\cdot3=0.18\n$$\n\nThat identity is exact, not approximate.\n\nNo late-force contribution has entered yet at $t=T$.\n\n$$\nf(T)=P_0 e^{k_1 T}\n$$\n\nThe arithmetic already displayed is enough to accept or reject the claim.\n\n$$\n\\mathrm{QED}\n$$\n\nSo the statement is True.',
+        '**D.** → True\n\nOnly the early force has acted by the switch time, so the log-increment is exactly $k_1 T$.\n\n$$\n\\ln\\frac{f(3)}{P_0}=k_1 T\n$$\n\n$$\n=0.06\\cdot3=0.18\n$$\n\nThat identity is exact, not approximate.\n\nNo late-force contribution has entered yet at $t=T$.\n\n$$\nf(T)=P_0 e^{k_1 T}\n$$\n\n
+
+\n\nSo the statement is True.',
         '**E.** → False\n\nCompare the threshold with the switch level already recovered.\n\n$$\nM=547.0871\\qquad f(3)\\approx598.61\n$$\n\n$$\nM-f(3)\\approx-51.52<0\n$$\n\nThe threshold lies strictly below the switch level, so it does not exceed $f(3)$.\n\nCollect the decisive inequality in one display so the verdict is immediate.\n\nThe last recovered line is already the comparison the claim needs.\n\n$$\nM-f(3)\\approx-51.52<0\n$$\n\nSo the statement is False.',
     ],
 }
@@ -74,8 +80,12 @@ BODIES_103['MATH 10.3.6'] = {
 BODIES_103['MATH 10.3.7'] = {
     "solution_overview": 'The log constraints fix both parameters at sight.\n\n$$\\ln P_0=3\\implies P_0=e^{3}\\qquad\\ln k=-2\\implies k=e^{-2}$$\n\nOne $e$-fold above $P_0$ means $M/P_0=e$, so the hitting time is\n\n$$t=\\frac{\\ln(M/P_0)}{k}=\\frac{1}{k}=e^{2}\\approx7.3891$$',
     "tactical_explanations": [
-        '**A.** → True\n\nExponentiate the level constraint to recover the initial balance.\n\n$$\n\\ln P_0=3\n$$\n\n$$\nP_0=e^{3}\n$$\n\nThe initial balance is exactly $e^{3}$, the exponential of the given log.\n\nNo other positive $P_0$ satisfies the same log constraint.\n\n$$\ne^{\\ln P_0}=e^{3}\n$$\n\nThe arithmetic already displayed is enough to accept or reject the claim.\n\n$$\n\\mathrm{QED}\n$$\n\nSo the statement is True.',
-        '**B.** → True\n\nExponentiate the force constraint to recover $k$.\n\n$$\n\\ln k=-2\n$$\n\n$$\nk=e^{-2}\n$$\n\nThe continuous force is exactly $e^{-2}$, the exponential of the given log.\n\nNo other positive $k$ satisfies the same log constraint.\n\n$$\ne^{\\ln k}=e^{-2}\n$$\n\nThe arithmetic already displayed is enough to accept or reject the claim.\n\n$$\n\\mathrm{QED}\n$$\n\nSo the statement is True.',
+        '**A.** → True\n\nExponentiate the level constraint to recover the initial balance.\n\n$$\n\\ln P_0=3\n$$\n\n$$\nP_0=e^{3}\n$$\n\nThe initial balance is exactly $e^{3}$, the exponential of the given log.\n\nNo other positive $P_0$ satisfies the same log constraint.\n\n$$\ne^{\\ln P_0}=e^{3}\n$$\n\n
+
+\n\nSo the statement is True.',
+        '**B.** → True\n\nExponentiate the force constraint to recover $k$.\n\n$$\n\\ln k=-2\n$$\n\n$$\nk=e^{-2}\n$$\n\nThe continuous force is exactly $e^{-2}$, the exponential of the given log.\n\nNo other positive $k$ satisfies the same log constraint.\n\n$$\ne^{\\ln k}=e^{-2}\n$$\n\n
+
+\n\nSo the statement is True.',
         '**C.** → False\n\nHitting one $e$-fold solves $e^{kt}=e$, hence $t=1/k$.\n\n$$\nt=\\frac{1}{k}=e^{2}\\approx7.3891\n$$\n\nCompare with the claimed clock $e^{-2}$.\n\n$$\ne^{2}\\neq e^{-2}\n$$\n\nThe hitting time is $e^{2}$, the reciprocal of the force, not the force itself.\n\nCollect the decisive inequality in one display so the verdict is immediate.\n\nThe last recovered line is already the comparison the claim needs.\n\n$$\ne^{2}\\neq e^{-2}\n$$\n\nSo the statement is False.',
         '**D.** → False\n\nBy construction $M=e\\cdot P_0$, so the log-ratio is $1$.\n\n$$\n\\ln\\frac{M}{P_0}=\\ln e=1\n$$\n\nThe force is the much smaller number $e^{-2}$.\n\n$$\n1\\neq k=e^{-2}\n$$\n\nThe log-ratio is not equal to $k$.\n\nCollect the decisive inequality in one display so the verdict is immediate.\n\nThe last recovered line is already the comparison the claim needs.\n\n$$\n1\\neq k=e^{-2}\n$$\n\nSo the statement is False.',
         '**E.** → False\n\nThe equivalent discrete annual base is the exponential of the force.\n\n$$\ne^{k}=e^{e^{-2}}\n$$\n\nCompare with the claimed base $e^{2}$.\n\n$$\ne^{e^{-2}}\\neq e^{2}\n$$\n\nThe discrete base is far smaller than $e^{2}$.\n\nCollect the decisive inequality in one display so the verdict is immediate.\n\nThe last recovered line is already the comparison the claim needs.\n\n$$\ne^{e^{-2}}\\neq e^{2}\n$$\n\nSo the statement is False.',
@@ -88,7 +98,9 @@ BODIES_103['MATH 10.3.8'] = {
         '**A.** → True\n\nThe exponential series begins $1+r+r^{2}/2+\\cdots$ with every further term positive for $r>0$.\n\n$$\ne^{0.05}=1+0.05+\\frac{(0.05)^{2}}{2}+\\cdots\n$$\n\n$$\ne^{0.05}\\approx1.051271>1.05=1+0.05\n$$\n\nContinuous one-year growth therefore strictly beats the linear nominal.\n\nCollect the decisive inequality in one display so the verdict is immediate.\n\nThe last recovered line is already the comparison the claim needs.\n\n$$\ne^{0.05}\\approx1.051271>1.05=1+0.05\n$$\n\nSo the statement is True.',
         '**B.** → True\n\nStrict concavity of $\\ln$ at $1$ forces $\\ln(1+r)<r$ for every $r>0$.\n\n$$\n\\ln(1.05)\\approx0.048790<0.05\n$$\n\nThe log-linearisation overstates the true log-return.\n\nThe gap $r-\\ln(1+r)$ is the usual continuous-versus-discrete discrepancy at this nominal rate.\n\n$$\n0.05-0.048790\\approx0.00121>0\n$$\n\nSo the statement is True.',
         "**C.** → True\n\nDifferentiate the constant-elasticity demand $\\ln Q=C-b\\ln P$ in time.\n\n$$\n\\frac{d\\ln Q}{dt}=-b\\frac{d\\ln P}{dt}=-b g\n$$\n\nInsert the given magnitude and price force.\n\n$$\n-b g=-1.2\\cdot0.03=-0.036\n$$\n\nQuantity's continuous force is exactly $-1.2\\cdot0.03$.\n\nCollect the decisive inequality in one display so the verdict is immediate.\n\nThe last recovered line is already the comparison the claim needs.\n\n$$\n-b g=-1.2\\cdot0.03=-0.036\n$$\n\nSo the statement is True.",
-        '**D.** → False\n\nCompare the absolute size of that quantity force with $0.05$.\n\n$$\n|-0.036|=0.036\n$$\n\n$$\n0.036\\le0.05\n$$\n\nThe absolute force is $0.036$, which does not exceed $0.05$.\n\nThe shortfall below $0.05$ is fourteen thousandths of force.\n\n$$\n0.05-0.036=0.014>0\n$$\n\nThe arithmetic already displayed is enough to accept or reject the claim.\n\n$$\n\\mathrm{QED}\n$$\n\nSo the statement is False.',
+        '**D.** → False\n\nCompare the absolute size of that quantity force with $0.05$.\n\n$$\n|-0.036|=0.036\n$$\n\n$$\n0.036\\le0.05\n$$\n\nThe absolute force is $0.036$, which does not exceed $0.05$.\n\nThe shortfall below $0.05$ is fourteen thousandths of force.\n\n$$\n0.05-0.036=0.014>0\n$$\n\n
+
+\n\nSo the statement is False.',
         '**E.** → True\n\nBecause $1+r<e^{r}$ and the map $x\\mapsto x^{t}$ is increasing on $(0,\\infty)$ for $t>0$, the inequality survives powering.\n\n$$\n(1.05)^{10}\\approx1.62889\\qquad e^{0.5}\\approx1.64872\n$$\n\n$$\n(1+r)^{t}<e^{rt}\n$$\n\nAnnual compounding therefore stays strictly below continuous compounding at $t=10$.\n\nSo the statement is True.',
     ],
 }
@@ -108,10 +120,14 @@ BODIES_103['MATH 10.3.10'] = {
     "solution_overview": 'Per capita is the quotient $y=Y/N$, so logs turn growth into a difference of forces.\n\n$$\\ln y(t)=\\ln(Y_0/N_0)+(g-p)t\\qquad k_y=g-p=0.02$$\n\nOver the horizon $t=20$ one therefore has $\\Delta\\ln y=0.4$, while aggregate log-GDP rises by $gt=0.6$ and log-population by $pt=0.2$.',
     "tactical_explanations": [
         '**A.** → True\n\nWrite per capita as a quotient and take logs.\n\n$$\n\\ln y(t)=\\ln Y(t)-\\ln N(t)=\\ln\\frac{Y_0}{N_0}+(g-p)t\n$$\n\nThe change over a horizon of length $t$ is therefore exactly the force gap times $t$.\n\n$$\n\\Delta\\ln y=(g-p)t=0.02\\cdot20=0.4\n$$\n\nThat is the identity the claim asserts.\n\nCollect the decisive inequality in one display so the verdict is immediate.\n\nThe last recovered line is already the comparison the claim needs.\n\n$$\n\\Delta\\ln y=(g-p)t=0.02\\cdot20=0.4\n$$\n\nSo the statement is True.',
-        '**B.** → False\n\nCompare the recovered log change with the threshold $0.5$.\n\n$$\n\\Delta\\ln y=0.4\n$$\n\n$$\n0.4\\le0.5\n$$\n\nThe log change equals $0.4$, which does not exceed $0.5$.\n\nThe shortfall below the claimed $0.5$ is a full tenth of a log-unit.\n\n$$\n0.5-0.4=0.1>0\n$$\n\nThe arithmetic already displayed is enough to accept or reject the claim.\n\n$$\n\\mathrm{QED}\n$$\n\nSo the statement is False.',
+        '**B.** → False\n\nCompare the recovered log change with the threshold $0.5$.\n\n$$\n\\Delta\\ln y=0.4\n$$\n\n$$\n0.4\\le0.5\n$$\n\nThe log change equals $0.4$, which does not exceed $0.5$.\n\nThe shortfall below the claimed $0.5$ is a full tenth of a log-unit.\n\n$$\n0.5-0.4=0.1>0\n$$\n\n
+
+\n\nSo the statement is False.',
         '**C.** → False\n\nPer capita is a ratio, so continuous forces subtract rather than add.\n\n$$\nk_y=g-p=0.03-0.01=0.02\n$$\n\n$$\ng+p=0.04\n$$\n\nAdding the forces would track the product $Y\\cdot N$, not the quotient $Y/N$.\n\nCollect the decisive inequality in one display so the verdict is immediate.\n\nThe last recovered line is already the comparison the claim needs.\n\n$$\ng+p=0.04\n$$\n\nSo the statement is False.',
         '**D.** → False\n\nAggregate log-GDP growth over the horizon is simply $gt$.\n\n$$\n\\Delta\\ln Y=gt=0.03\\cdot20=0.6\n$$\n\nThe claim asserts that this rise is strictly less than $0.5$.\n\n$$\n0.6\\not<0.5\n$$\n\nLog GDP rises by $0.6$, which fails the claimed bound.\n\nCollect the decisive inequality in one display so the verdict is immediate.\n\nThe last recovered line is already the comparison the claim needs.\n\n$$\n0.6\\not<0.5\n$$\n\nSo the statement is False.',
-        '**E.** → False\n\nCompare the per-capita force with $0.025$.\n\n$$\nk_y=0.02\n$$\n\n$$\n0.02\\le0.025\n$$\n\nThe per-capita force equals $0.02$, so it is not strictly larger than $0.025$.\n\nThe shortfall below $0.025$ is half a percentage point of force.\n\n$$\n0.025-0.02=0.005>0\n$$\n\nThe arithmetic already displayed is enough to accept or reject the claim.\n\n$$\n\\mathrm{QED}\n$$\n\nSo the statement is False.',
+        '**E.** → False\n\nCompare the per-capita force with $0.025$.\n\n$$\nk_y=0.02\n$$\n\n$$\n0.02\\le0.025\n$$\n\nThe per-capita force equals $0.02$, so it is not strictly larger than $0.025$.\n\nThe shortfall below $0.025$ is half a percentage point of force.\n\n$$\n0.025-0.02=0.005>0\n$$\n\n
+
+\n\nSo the statement is False.',
     ],
 }
 
@@ -121,7 +137,9 @@ BODIES_103['MATH 10.3.11'] = {
         '**A.** → True\n\nSolve both hitting clocks with logarithms against the shared target $M=2P$.\n\n$$\nt_c=\\frac{\\ln(M/P)}{k}=\\frac{\\ln 2}{0.05}\\approx13.8629\n$$\n\n$$\nt_d=\\frac{\\ln(M/P)}{\\ln a}=\\frac{\\ln 2}{\\ln 1.04}\\approx17.6730\n$$\n\nCompare the two clocks.\n\n$$\nt_c-t_d\\approx-3.8101<0\n$$\n\nContinuous compounding therefore reaches the target strictly sooner.\n\nSo the statement is True.',
         '**B.** → True\n\nCompare the one-year growth factors side by side.\n\n$$\ne^{0.05}\\approx1.051271\\qquad a=1.04\n$$\n\n$$\ne^{0.05}-a\\approx0.011271\\neq0\n$$\n\nThe multipliers differ, so the two paths are not reparametrisations of each other.\n\nCollect the decisive inequality in one display so the verdict is immediate.\n\nThe last recovered line is already the comparison the claim needs.\n\n$$\ne^{0.05}-a\\approx0.011271\\neq0\n$$\n\nSo the statement is True.',
         '**C.** → False\n\nThe two hitting times recovered above are visibly unequal.\n\n$$\nt_c\\approx13.8629\\qquad t_d\\approx17.6730\n$$\n\n$$\nt_c\\neq t_d\n$$\n\nA shared hitting time for the target therefore fails.\n\nUnequal one-year multipliers already force unequal hitting clocks for a shared target.\n\n$$\ne^{k}\\neq a\\implies t_c\\neq t_d\n$$\n\nSo the statement is False.',
-        '**D.** → True\n\nPlace the continuous hitting clock beside the twenty-year threshold.\n\n$$\nt_c\\approx13.8629\n$$\n\n$$\n13.8629<20\n$$\n\nContinuous hitting finishes strictly inside twenty years.\n\nThe margin inside twenty years is more than six years.\n\n$$\n20-t_c\\approx6.137>0\n$$\n\nThe arithmetic already displayed is enough to accept or reject the claim.\n\n$$\n\\mathrm{QED}\n$$\n\nSo the statement is True.',
+        '**D.** → True\n\nPlace the continuous hitting clock beside the twenty-year threshold.\n\n$$\nt_c\\approx13.8629\n$$\n\n$$\n13.8629<20\n$$\n\nContinuous hitting finishes strictly inside twenty years.\n\nThe margin inside twenty years is more than six years.\n\n$$\n20-t_c\\approx6.137>0\n$$\n\n
+
+\n\nSo the statement is True.',
         '**E.** → False\n\nThe inequality between the clocks runs the other way.\n\n$$\nt_d\\approx17.6730>t_c\\approx13.8629\n$$\n\nDiscrete compounding is the slower of the two routes to the target, so it does not win the race.\n\nWinning the race would require $t_d<t_c$, which the clocks refuse.\n\n$$\nt_d-t_c\\approx3.810>0\n$$\n\nSo the statement is False.',
     ],
 }
@@ -151,18 +169,26 @@ BODIES_103['MATH 10.3.13'] = {
 BODIES_103['MATH 10.3.14'] = {
     "solution_overview": 'Change of base turns the power equation into a linear relation for the unknown exponent.\n\n$$\\log_2(8)=3\\qquad 8^x=2^5\\implies x\\log_2 8=5\\implies x=\\frac{5}{3}$$\n\nThe solved exponent is $5/3\\approx1.6667$, which is smaller than both $5$ and $4$.',
     "tactical_explanations": [
-        '**A.** → True\n\nEvaluate the base-$2$ logarithm of $8$ by writing $8$ as a power of $2$.\n\n$$\n8=2^{3}\n$$\n\n$$\n\\log_2(8)=3\n$$\n\nThe logarithm is the integer $3$, as claimed.\n\nInteger values of $\\log_2$ occur exactly at pure powers of two.\n\n$$\n\\log_2(2^{n})=n\\in\\mathbb{Z}\n$$\n\nThe arithmetic already displayed is enough to accept or reject the claim.\n\n$$\n\\mathrm{QED}\n$$\n\nSo the statement is True.',
+        '**A.** → True\n\nEvaluate the base-$2$ logarithm of $8$ by writing $8$ as a power of $2$.\n\n$$\n8=2^{3}\n$$\n\n$$\n\\log_2(8)=3\n$$\n\nThe logarithm is the integer $3$, as claimed.\n\nInteger values of $\\log_2$ occur exactly at pure powers of two.\n\n$$\n\\log_2(2^{n})=n\\in\\mathbb{Z}\n$$\n\n
+
+\n\nSo the statement is True.',
         '**B.** → True\n\nTake $\\log_2$ of both sides of $8^x=2^5$.\n\n$$\nx\\log_2(8)=5\n$$\n\nSolve for the unknown exponent.\n\n$$\nx=\\frac{5}{\\log_2(8)}=\\frac{5}{3}\n$$\n\nChange of base produces exactly that quotient.\n\nSo the statement is True.',
-        '**C.** → False\n\nCompare the solved exponent with $5$.\n\n$$\nx=\\frac{5}{3}\\approx1.6667\n$$\n\n$$\n\\frac{5}{3}<5\n$$\n\nThe solution is smaller than the right-hand exponent, not larger.\n\nDividing the exponent $5$ by $3$ lands well below $5$.\n\n$$\n5-\\frac{5}{3}=\\frac{10}{3}>0\n$$\n\nThe arithmetic already displayed is enough to accept or reject the claim.\n\n$$\n\\mathrm{QED}\n$$\n\nSo the statement is False.',
+        '**C.** → False\n\nCompare the solved exponent with $5$.\n\n$$\nx=\\frac{5}{3}\\approx1.6667\n$$\n\n$$\n\\frac{5}{3}<5\n$$\n\nThe solution is smaller than the right-hand exponent, not larger.\n\nDividing the exponent $5$ by $3$ lands well below $5$.\n\n$$\n5-\\frac{5}{3}=\\frac{10}{3}>0\n$$\n\n
+
+\n\nSo the statement is False.',
         '**D.** → False\n\nSubstituting the solved $x$ recovers the original right-hand side $2^5$, not $2^{6}$.\n\n$$\n8^{5/3}=(2^{3})^{5/3}=2^{5}\n$$\n\n$$\n2^{5}=32\\qquad 2^{5+1}=64\n$$\n\nSubstitution yields $2^{5}$, not $2^{5+1}$.\n\nCollect the decisive inequality in one display so the verdict is immediate.\n\nThe last recovered line is already the comparison the claim needs.\n\n$$\n2^{5}=32\\qquad 2^{5+1}=64\n$$\n\nSo the statement is False.',
-        '**E.** → False\n\nCompare $\\log_2(8)$ with the threshold $4$.\n\n$$\n\\log_2(8)=3\n$$\n\n$$\n3\\le 4\n$$\n\nThe logarithm equals $3$, which is not strictly larger than $4$.\n\nThe gap below $4$ is a full unit of logarithm.\n\n$$\n4-3=1>0\n$$\n\nThe arithmetic already displayed is enough to accept or reject the claim.\n\n$$\n\\mathrm{QED}\n$$\n\nSo the statement is False.',
+        '**E.** → False\n\nCompare $\\log_2(8)$ with the threshold $4$.\n\n$$\n\\log_2(8)=3\n$$\n\n$$\n3\\le 4\n$$\n\nThe logarithm equals $3$, which is not strictly larger than $4$.\n\nThe gap below $4$ is a full unit of logarithm.\n\n$$\n4-3=1>0\n$$\n\n
+
+\n\nSo the statement is False.',
     ],
 }
 
 BODIES_103['MATH 10.3.15'] = {
     "solution_overview": 'The log constraint pins the distinguished force at once.\n\n$$\\ln\\lambda^{*}=-\\ln 5\\implies\\lambda^{*}=e^{-\\ln 5}=\\frac{1}{5}$$\n\nDoubling at that force takes $t_{\\times2}=\\ln2/\\lambda^{*}=5\\ln2\\approx3.4657$, and any larger force shortens the doubling clock.',
     "tactical_explanations": [
-        '**A.** → True\n\nExponentiate the log constraint.\n\n$$\n\\ln\\lambda^{*}=-\\ln 5\\implies\\lambda^{*}=e^{-\\ln 5}=\\frac{1}{5}\n$$\n\nThe distinguished force equals $1/5$.\n\nExponentiating $-\\ln5$ is the same as taking the reciprocal of $5$.\n\n$$\ne^{-\\ln 5}=\\frac{1}{5}\n$$\n\nThe arithmetic already displayed is enough to accept or reject the claim.\n\n$$\n\\mathrm{QED}\n$$\n\nSo the statement is True.',
+        '**A.** → True\n\nExponentiate the log constraint.\n\n$$\n\\ln\\lambda^{*}=-\\ln 5\\implies\\lambda^{*}=e^{-\\ln 5}=\\frac{1}{5}\n$$\n\nThe distinguished force equals $1/5$.\n\nExponentiating $-\\ln5$ is the same as taking the reciprocal of $5$.\n\n$$\ne^{-\\ln 5}=\\frac{1}{5}\n$$\n\n
+
+\n\nSo the statement is True.',
         '**B.** → True\n\nEvaluate the distinguished member at calendar time $\\ln 5$.\n\n$$\nP_{\\lambda^{*}}(\\ln 5)=A\\exp\\bigl(\\tfrac15\\ln 5\\bigr)=A\\cdot5^{1/5}\n$$\n\nBecause $5^{1/5}>1$, the level sits strictly above $A$.\n\n$$\nA\\cdot5^{1/5}>A\n$$\n\nThe claim holds.\n\nCollect the decisive inequality in one display so the verdict is immediate.\n\nThe last recovered line is already the comparison the claim needs.\n\n$$\nA\\cdot5^{1/5}>A\n$$\n\nSo the statement is True.',
         '**C.** → True\n\nDoubling time is the log of two divided by the pinned force.\n\n$$\nt_{\\times2}=\\frac{\\ln 2}{\\lambda^{*}}\n$$\n\n$$\n=\\frac{\\ln 2}{1/5}=5\\ln 2\n$$\n\nThat is exactly the displayed multiple of $\\ln 2$.\n\nThe factor $5$ is exactly the reciprocal of the pinned force.\n\n$$\n\\frac{1}{\\lambda^{*}}=5\n$$\n\nSo the statement is True.',
         '**D.** → True\n\nTake the log of the family and differentiate in the force parameter.\n\n$$\n\\ln P_{\\lambda}(t)=\\ln A+\\lambda t\n$$\n\n$$\n\\frac{\\partial}{\\partial\\lambda}\\ln P_{\\lambda}(t)=t\n$$\n\nThe cross-partial in force is calendar time, for each fixed $t$.\n\nCollect the decisive inequality in one display so the verdict is immediate.\n\nThe last recovered line is already the comparison the claim needs.\n\n$$\n\\frac{\\partial}{\\partial\\lambda}\\ln P_{\\lambda}(t)=t\n$$\n\nSo the statement is True.',
@@ -184,7 +210,9 @@ BODIES_103['MATH 10.3.16'] = {
 BODIES_103['MATH 10.3.17'] = {
     "solution_overview": 'The force constraint $\\ln k=-1$ gives $k=e^{-1}$. The normalised stock $f(t)=e^{kt}$ has inverse\n\n$$g(y)=\\frac{\\ln y}{k}\\qquad(y>0)$$\n\nso $g(1)=0$, $g(e^{k})=1$, and $g(e)=e$, while $0$ itself lies outside the domain of $g$.',
     "tactical_explanations": [
-        '**A.** → True\n\nExponentiate the force constraint to recover $k$.\n\n$$\n\\ln k=-1\n$$\n\n$$\nk=e^{-1}\n$$\n\nThe continuous force is exactly $e^{-1}$, matching the claim.\n\nExponentiating $-1$ is the reciprocal of $e$.\n\n$$\ne^{-1}=\\frac{1}{e}\n$$\n\nThe arithmetic already displayed is enough to accept or reject the claim.\n\n$$\n\\mathrm{QED}\n$$\n\nSo the statement is True.',
+        '**A.** → True\n\nExponentiate the force constraint to recover $k$.\n\n$$\n\\ln k=-1\n$$\n\n$$\nk=e^{-1}\n$$\n\nThe continuous force is exactly $e^{-1}$, matching the claim.\n\nExponentiating $-1$ is the reciprocal of $e$.\n\n$$\ne^{-1}=\\frac{1}{e}\n$$\n\n
+
+\n\nSo the statement is True.',
         '**B.** → False\n\nEvaluate the inverse clock at level $e$.\n\n$$\ng(e)=\\frac{\\ln e}{k}=\\frac{1}{k}=e\n$$\n\nCompare with the claimed value $e^{-1}$.\n\n$$\ne\\neq e^{-1}\n$$\n\nThe inverse returns $e$, not $e^{-1}$.\n\nCollect the decisive inequality in one display so the verdict is immediate.\n\nThe last recovered line is already the comparison the claim needs.\n\n$$\ne\\neq e^{-1}\n$$\n\nSo the statement is False.',
         '**C.** → True\n\nThe initial level of the normalised stock is $f(0)=1$, so its inverse clock must be time zero.\n\n$$\ng(1)=\\frac{\\ln 1}{k}=\\frac{0}{k}=0\n$$\n\nTime zero is recovered exactly from the inverse clock.\n\nBecause $\\ln1=0$, every positive force returns time zero at unit level.\n\n$$\n\\ln 1=0\n$$\n\nSo the statement is True.',
         '**D.** → False\n\nThe range of $f$ is $(0,\\infty)$ because $e^{kt}>0$ for every real $t$.\n\n$$\nf(\\mathbb{R})=(0,\\infty)\n$$\n\nZero is excluded from that range, so $0$ is not in the domain of $g$.\n\nThe inverse clock is a logarithm, and $\\ln$ is undefined at $0$ over the reals.\n\n$$\n0\\notin(0,\\infty)\n$$\n\nSo the statement is False.',
@@ -207,7 +235,9 @@ BODIES_103['MATH 10.3.19'] = {
     "solution_overview": 'Outer samples rebuild the continuous force on the semi-log chart.\n\n$$k=\\frac{\\ln y(8)-\\ln y(0)}{8}=\\frac{\\ln(716.66/500)}{8}\\approx0.045$$\n\nwith $P_0=y(0)=500$. Equal four-year steps then share the common ratio $e^{4k}\\approx1.1972$, while doubling takes $\\ln2/k\\approx15.4033$.',
     "tactical_explanations": [
         '**A.** → True\n\nThe semi-log slope between the outer samples is the continuous force.\n\n$$\n\\frac{\\ln y(8)-\\ln y(0)}{8}=\\frac{\\ln(716.66/500)}{8}\\approx0.045\n$$\n\nThat slope equals the claimed force $k=0.045$.\n\nCollect the decisive inequality in one display so the verdict is immediate.\n\nThe last recovered line is already the comparison the claim needs.\n\n$$\n\\frac{\\ln y(8)-\\ln y(0)}{8}=\\frac{\\ln(716.66/500)}{8}\\approx0.045\n$$\n\nSo the statement is True.',
-        '**B.** → False\n\nRead the initial level from the first table row.\n\n$$\nP_0=y(0)=500\n$$\n\n$$\n500\\neq 600\n$$\n\nThe initial level is $500$, not the claimed $600$.\n\nEvery later table row is generated from this same $P_0=500$.\n\n$$\ny(4)=500 e^{0.18}\\approx598.61\n$$\n\nThe arithmetic already displayed is enough to accept or reject the claim.\n\n$$\n\\mathrm{QED}\n$$\n\nSo the statement is False.',
+        '**B.** → False\n\nRead the initial level from the first table row.\n\n$$\nP_0=y(0)=500\n$$\n\n$$\n500\\neq 600\n$$\n\nThe initial level is $500$, not the claimed $600$.\n\nEvery later table row is generated from this same $P_0=500$.\n\n$$\ny(4)=500 e^{0.18}\\approx598.61\n$$\n\n
+
+\n\nSo the statement is False.',
         '**C.** → False\n\nA discrete path with base $1+k$ has one-year multiplier $1.045$, while continuous growth multiplies by $e^{k}$.\n\n$$\ne^{0.045}\\approx1.046028\\qquad 1+0.045=1.045\n$$\n\n$$\ne^{k}\\neq1+k\n$$\n\nThe discrete model therefore cannot match the continuous path for all $t$.\n\nCollect the decisive inequality in one display so the verdict is immediate.\n\nThe last recovered line is already the comparison the claim needs.\n\n$$\ne^{k}\\neq1+k\n$$\n\nSo the statement is False.',
         '**D.** → False\n\nDoubling time under the rebuilt force is\n\n$$\nt_{\\times2}=\\frac{\\ln 2}{0.045}\\approx15.4033\n$$\n\nCompare with ten years.\n\n$$\n15.4033\\not<10\n$$\n\nDoubling takes about $15.4$ years, so it is not strictly less than $10$.\n\nCollect the decisive inequality in one display so the verdict is immediate.\n\nThe last recovered line is already the comparison the claim needs.\n\n$$\n15.4033\\not<10\n$$\n\nSo the statement is False.',
         '**E.** → True\n\nEqual time steps on a pure exponential produce equal growth ratios.\n\n$$\n\\frac{y(4)}{y(0)}=e^{4k}=\\frac{y(8)}{y(4)}\\approx1.1972\n$$\n\nThe two successive ratios match exactly.\n\nSo the statement is True.',
@@ -221,7 +251,9 @@ BODIES_103['MATH 10.3.20'] = {
         '**B.** → True\n\nInsert the concrete parameters into the meeting formula.\n\n$$\nt^{*}=\\frac{\\ln(1200/800)}{0.04-0.02}=\\frac{\\ln 1.5}{0.02}\\approx20.2733\n$$\n\n$$\nt^{*}>0\n$$\n\nBecause $B_0>A_0$ and $\\alpha>\\beta$, the crossing lies in the future.\n\nCollect the decisive inequality in one display so the verdict is immediate.\n\nThe last recovered line is already the comparison the claim needs.\n\n$$\nt^{*}>0\n$$\n\nSo the statement is True.',
         '**C.** → True\n\nThe log-quotient of the funds is affine in time with positive slope.\n\n$$\n\\ln\\frac{A(t)}{B(t)}=\\ln\\frac{A_0}{B_0}+(\\alpha-\\beta)t\n$$\n\n$$\n\\alpha-\\beta=0.02>0\n$$\n\nAt $t^{*}$ the log-quotient crosses zero from below, so for every later time $A(t)>B(t)$.\n\nCollect the decisive inequality in one display so the verdict is immediate.\n\nThe last recovered line is already the comparison the claim needs.\n\n$$\n\\alpha-\\beta=0.02>0\n$$\n\nSo the statement is True.',
         '**D.** → True\n\nExpand the log of the quotient of the two closed forms.\n\n$$\n\\ln\\frac{A(t)}{B(t)}=\\ln A_0+\\alpha t-\\ln B_0-\\beta t\n$$\n\n$$\n=\\ln\\frac{A_0}{B_0}+(\\alpha-\\beta)t\n$$\n\nThe identity holds for every real $t$.\n\nCollect the decisive inequality in one display so the verdict is immediate.\n\nThe last recovered line is already the comparison the claim needs.\n\n$$\n=\\ln\\frac{A_0}{B_0}+(\\alpha-\\beta)t\n$$\n\nSo the statement is True.',
-        '**E.** → True\n\nCompare the two initial balances directly.\n\n$$\nB_0=1200\\qquad A_0=800\n$$\n\n$$\nB_0-A_0=400>0\n$$\n\nAt $t=0$, fund $B$ strictly exceeds fund $A$.\n\nThe initial gap is four hundred units of fund level.\n\n$$\nB_0/A_0=1.5>1\n$$\n\nThe arithmetic already displayed is enough to accept or reject the claim.\n\n$$\n\\mathrm{QED}\n$$\n\nSo the statement is True.',
+        '**E.** → True\n\nCompare the two initial balances directly.\n\n$$\nB_0=1200\\qquad A_0=800\n$$\n\n$$\nB_0-A_0=400>0\n$$\n\nAt $t=0$, fund $B$ strictly exceeds fund $A$.\n\nThe initial gap is four hundred units of fund level.\n\n$$\nB_0/A_0=1.5>1\n$$\n\n
+
+\n\nSo the statement is True.',
     ],
 }
 
@@ -231,7 +263,9 @@ BODIES_103['MATH 10.3.21'] = {
         '**A.** → True\n\nChain the two exponential segments and take logs.\n\n$$\nf(10)=P_0 e^{k_1 T}e^{k_2(t-T)}\n$$\n\n$$\n\\ln\\frac{f(10)}{P_0}=k_1 T+k_2(t-T)=0.05\\cdot4+0.02\\cdot6=0.32\n$$\n\nLogs add across the kink, giving exactly the claimed identity.\n\nCollect the decisive inequality in one display so the verdict is immediate.\n\nThe last recovered line is already the comparison the claim needs.\n\n$$\n\\ln\\frac{f(10)}{P_0}=k_1 T+k_2(t-T)=0.05\\cdot4+0.02\\cdot6=0.32\n$$\n\nSo the statement is True.',
         '**B.** → True\n\nPath-average force is the total log-increment per unit time.\n\n$$\n\\bar k=\\frac{\\ln(f(10)/P_0)}{10}=\\frac{0.32}{10}=0.032\n$$\n\nCompare with $0.03$.\n\n$$\n0.032>0.03\n$$\n\nThe average stock force strictly exceeds $0.03$.\n\nCollect the decisive inequality in one display so the verdict is immediate.\n\nThe last recovered line is already the comparison the claim needs.\n\n$$\n0.032>0.03\n$$\n\nSo the statement is True.',
         "**C.** → True\n\nConstant elasticity converts price force into quantity force by the factor $-b$.\n\n$$\n\\frac{d\\ln Q}{dt}=-b\\frac{d\\ln P}{dt}=-b g\n$$\n\n$$\n-b g=-1.5\\cdot0.03=-0.045\n$$\n\nQuantity's continuous force is exactly $-1.5\\cdot0.03$.\n\nCollect the decisive inequality in one display so the verdict is immediate.\n\nThe last recovered line is already the comparison the claim needs.\n\n$$\n-b g=-1.5\\cdot0.03=-0.045\n$$\n\nSo the statement is True.",
-        '**D.** → False\n\nPrice-inelastic demand would require elasticity magnitude strictly below one.\n\n$$\nb=1.5\n$$\n\n$$\n1.5>1\n$$\n\nDemand is elastic, so the inelastic claim fails.\n\nElasticity magnitude $1.5$ sits half a unit above the inelastic boundary.\n\n$$\nb-1=0.5>0\n$$\n\nThe arithmetic already displayed is enough to accept or reject the claim.\n\n$$\n\\mathrm{QED}\n$$\n\nSo the statement is False.',
+        '**D.** → False\n\nPrice-inelastic demand would require elasticity magnitude strictly below one.\n\n$$\nb=1.5\n$$\n\n$$\n1.5>1\n$$\n\nDemand is elastic, so the inelastic claim fails.\n\nElasticity magnitude $1.5$ sits half a unit above the inelastic boundary.\n\n$$\nb-1=0.5>0\n$$\n\n
+
+\n\nSo the statement is False.',
         '**E.** → True\n\nEvaluate the stock at the horizon under the recovered average force.\n\n$$\nf(10)=P_0 e^{0.32}=1000 e^{0.32}\\approx1377.13\n$$\n\nThe $1.3$ threshold is $1.3 P_0=1300$.\n\n$$\n1377.13>1300\n$$\n\nAt $t=10$ the stock exceeds $1.3$ times $P_0$.\n\nCollect the decisive inequality in one display so the verdict is immediate.\n\nThe last recovered line is already the comparison the claim needs.\n\n$$\n1377.13>1300\n$$\n\nSo the statement is True.',
     ],
 }
@@ -272,11 +306,17 @@ BODIES_103['MATH 10.3.24'] = {
 BODIES_103['MATH 10.3.25'] = {
     "solution_overview": 'Real logarithms $\\ln(A-1)$ and $\\ln(2-k)$ require the side-conditions $A>1$ and $k<2$.\n\nThe calibrated pair $A=e$ and $k=1/2$ obeys both domain constraints, while the side-condition logs themselves are not specially pinned:\n\n$$\\ln(A-1)=\\ln(e-1)\\neq0\\qquad N(0)=A=e\\neq1$$\n\nThose two evaluations already settle the false claims about $\\ln(A-1)=0$ and $N(0)=1$.',
     "tactical_explanations": [
-        '**A.** → True\n\nCompare the calibrated level with the domain threshold for $\\ln(A-1)$.\n\n$$\nA=e\\approx2.71828\n$$\n\n$$\ne>1\n$$\n\nThe level clears the threshold, so $\\ln(A-1)$ is defined.\n\nThe margin above the domain wall $A=1$ is $e-1>0$.\n\n$$\nA-1=e-1\\approx1.718>0\n$$\n\nThe arithmetic already displayed is enough to accept or reject the claim.\n\n$$\n\\mathrm{QED}\n$$\n\nSo the statement is True.',
-        '**B.** → True\n\nCompare the calibrated force with the domain threshold for $\\ln(2-k)$.\n\n$$\nk=\\tfrac12=0.5\n$$\n\n$$\n0.5<2\n$$\n\nThe force sits strictly below $2$, so $\\ln(2-k)$ is defined.\n\nThe margin below the domain wall $k=2$ is $1.5$.\n\n$$\n2-k=2-0.5=1.5>0\n$$\n\nThe arithmetic already displayed is enough to accept or reject the claim.\n\n$$\n\\mathrm{QED}\n$$\n\nSo the statement is True.',
+        '**A.** → True\n\nCompare the calibrated level with the domain threshold for $\\ln(A-1)$.\n\n$$\nA=e\\approx2.71828\n$$\n\n$$\ne>1\n$$\n\nThe level clears the threshold, so $\\ln(A-1)$ is defined.\n\nThe margin above the domain wall $A=1$ is $e-1>0$.\n\n$$\nA-1=e-1\\approx1.718>0\n$$\n\n
+
+\n\nSo the statement is True.',
+        '**B.** → True\n\nCompare the calibrated force with the domain threshold for $\\ln(2-k)$.\n\n$$\nk=\\tfrac12=0.5\n$$\n\n$$\n0.5<2\n$$\n\nThe force sits strictly below $2$, so $\\ln(2-k)$ is defined.\n\nThe margin below the domain wall $k=2$ is $1.5$.\n\n$$\n2-k=2-0.5=1.5>0\n$$\n\n
+
+\n\nSo the statement is True.',
         '**C.** → False\n\nEvaluate the side-condition log at the calibrated level.\n\n$$\n\\ln(A-1)=\\ln(e-1)\n$$\n\nBecause $e-1\\neq1$, that logarithm is not zero.\n\n$$\ne-1\\approx1.71828\\neq1\\implies\\ln(e-1)\\neq0\n$$\n\nThe claim fails.\n\nCollect the decisive inequality in one display so the verdict is immediate.\n\nThe last recovered line is already the comparison the claim needs.\n\n$$\ne-1\\approx1.71828\\neq1\\implies\\ln(e-1)\\neq0\n$$\n\nSo the statement is False.',
         '**D.** → False\n\nNatural log $\\ln(2-k)$ needs a positive argument.\n\n$$\n2-k>0\\iff k<2\n$$\n\nThe domain inequality runs $k<2$, not $k>2$.\n\n$$\nk>2\\implies2-k<0\n$$\n\nRequiring $k>2$ would make the logarithm undefined over the reals.\n\nCollect the decisive inequality in one display so the verdict is immediate.\n\nThe last recovered line is already the comparison the claim needs.\n\n$$\nk>2\\implies2-k<0\n$$\n\nSo the statement is False.',
-        '**E.** → False\n\nAt time zero the exponential stock equals its level parameter.\n\n$$\nN(0)=A e^{0}=A=e\n$$\n\n$$\ne\\neq1\n$$\n\nInitial stock equals $e$, not $1$.\n\nThe exponential factor at time zero is identically one.\n\n$$\ne^{k\\cdot0}=1\n$$\n\nThe arithmetic already displayed is enough to accept or reject the claim.\n\n$$\n\\mathrm{QED}\n$$\n\nSo the statement is False.',
+        '**E.** → False\n\nAt time zero the exponential stock equals its level parameter.\n\n$$\nN(0)=A e^{0}=A=e\n$$\n\n$$\ne\\neq1\n$$\n\nInitial stock equals $e$, not $1$.\n\nThe exponential factor at time zero is identically one.\n\n$$\ne^{k\\cdot0}=1\n$$\n\n
+
+\n\nSo the statement is False.',
     ],
 }
 
@@ -285,7 +325,9 @@ BODIES_103['MATH 10.3.26'] = {
     "tactical_explanations": [
         '**A.** → True\n\nChain the segments and take logs.\n\n$$\nf(8)=P_0 e^{k_1 T}e^{k_2(t-T)}\n$$\n\n$$\n\\ln\\frac{f(8)}{P_0}=0.07\\cdot2+0.03\\cdot6=0.32\n$$\n\nThe log-increment equals the claimed weighted sum of forces exactly.\n\nThe numerical total $0.32$ is the only log-increment that enters the average force.\n\n$$\n0.14+0.18=0.32\n$$\n\nSo the statement is True.',
         '**B.** → False\n\nPath-average force is the time-weighted blend, not the arithmetic mean of the two forces.\n\n$$\n\\bar k=\\frac{k_1 T+k_2(t-T)}{t}=\\frac{0.32}{8}=0.04\n$$\n\n$$\n\\frac{k_1+k_2}{2}=\\frac{0.07+0.03}{2}=0.05\n$$\n\nBecause $0.04\\neq0.05$, the path-average is not the arithmetic mean.\n\nCollect the decisive inequality in one display so the verdict is immediate.\n\nThe last recovered line is already the comparison the claim needs.\n\n$$\n\\frac{k_1+k_2}{2}=\\frac{0.07+0.03}{2}=0.05\n$$\n\nSo the statement is False.',
-        '**C.** → False\n\nCompare the two segment forces directly.\n\n$$\nk_2=0.03\\qquad k_1=0.07\n$$\n\n$$\nk_2-k_1=-0.04<0\n$$\n\nThe late force is smaller than the early force, not larger.\n\nEarly force exceeds late force by four percentage points.\n\n$$\nk_1-k_2=0.04>0\n$$\n\nThe arithmetic already displayed is enough to accept or reject the claim.\n\n$$\n\\mathrm{QED}\n$$\n\nSo the statement is False.',
+        '**C.** → False\n\nCompare the two segment forces directly.\n\n$$\nk_2=0.03\\qquad k_1=0.07\n$$\n\n$$\nk_2-k_1=-0.04<0\n$$\n\nThe late force is smaller than the early force, not larger.\n\nEarly force exceeds late force by four percentage points.\n\n$$\nk_1-k_2=0.04>0\n$$\n\n
+
+\n\nSo the statement is False.',
         '**D.** → False\n\nBoth segment forces are positive, so the fund rises above its start.\n\n$$\nf(8)=900 e^{0.32}\\approx1239.42\n$$\n\n$$\n1239.42>P_0=900\n$$\n\nAt $t=8$ the fund lies strictly above $P_0$, not below.\n\nThe multiplicative lift over eight years is $e^{0.32}\\approx1.377$.\n\n$$\nf(8)/P_0=e^{0.32}\\approx1.377>1\n$$\n\nSo the statement is False.',
         '**E.** → False\n\nA constant-$k_1$ doubling clock would read $\\ln2/k_1$, but that formula is valid only if the double is reached before the kink.\n\n$$\n\\frac{\\ln 2}{k_1}\\approx9.9021\n$$\n\nAfter the switch the correct doubling solve must use both segments, because the late force is smaller.\n\n$$\nf(2)=900 e^{0.14}\\approx1035.0<1800=2P_0\n$$\n\nDoubling has not yet occurred by the kink, so the pure-$k_1$ clock is not the piecewise doubling time.\n\nSo the statement is False.',
     ],
@@ -294,11 +336,19 @@ BODIES_103['MATH 10.3.26'] = {
 BODIES_103['MATH 10.3.27'] = {
     "solution_overview": 'Unwind both nested-log constraints.\n\n$$\\ln(\\ln A)=\\ln2\\implies\\ln A=2\\implies A=e^{2}$$\n\n$$\\ln(\\ln(1/k))=0\\implies\\ln(1/k)=1\\implies k=e^{-1}$$\n\nHitting $A$ from $N(0)=1$ then takes $t=\\ln A/k=2e\\approx5.4366$, and the product $Ak=e$.',
     "tactical_explanations": [
-        '**A.** → True\n\nUnwind the outer log, then the inner log.\n\n$$\n\\ln(\\ln A)=\\ln 2\\implies\\ln A=2\n$$\n\n$$\nA=e^{2}\n$$\n\nThe nested constraint pins the target level at $e^{2}$.\n\nNo other $A>1$ satisfies the same double-log constraint.\n\n$$\n\\ln A=2\\iff A=e^{2}\n$$\n\nThe arithmetic already displayed is enough to accept or reject the claim.\n\n$$\n\\mathrm{QED}\n$$\n\nSo the statement is True.',
-        '**B.** → True\n\nUnwind the nested constraint on $1/k$.\n\n$$\n\\ln(\\ln(1/k))=0\\implies\\ln(1/k)=1\n$$\n\n$$\n1/k=e\\implies k=e^{-1}\n$$\n\nThe force is exactly $e^{-1}$.\n\nNo other positive $k$ satisfies the same nested constraint on $1/k$.\n\n$$\n\\ln(1/k)=1\\iff k=e^{-1}\n$$\n\nThe arithmetic already displayed is enough to accept or reject the claim.\n\n$$\n\\mathrm{QED}\n$$\n\nSo the statement is True.',
+        '**A.** → True\n\nUnwind the outer log, then the inner log.\n\n$$\n\\ln(\\ln A)=\\ln 2\\implies\\ln A=2\n$$\n\n$$\nA=e^{2}\n$$\n\nThe nested constraint pins the target level at $e^{2}$.\n\nNo other $A>1$ satisfies the same double-log constraint.\n\n$$\n\\ln A=2\\iff A=e^{2}\n$$\n\n
+
+\n\nSo the statement is True.',
+        '**B.** → True\n\nUnwind the nested constraint on $1/k$.\n\n$$\n\\ln(\\ln(1/k))=0\\implies\\ln(1/k)=1\n$$\n\n$$\n1/k=e\\implies k=e^{-1}\n$$\n\nThe force is exactly $e^{-1}$.\n\nNo other positive $k$ satisfies the same nested constraint on $1/k$.\n\n$$\n\\ln(1/k)=1\\iff k=e^{-1}\n$$\n\n
+
+\n\nSo the statement is True.',
         '**C.** → True\n\nHitting time from the normalised start $N(0)=1$ is the log of the target divided by the force.\n\n$$\nt=\\frac{\\ln A}{k}=\\frac{2}{e^{-1}}=2e\n$$\n\nThe hitting time equals $2e$ exactly.\n\nSo the statement is True.',
-        '**D.** → True\n\nSubstitute the recovered level $A=e^{2}$ back into the outer nested log.\n\n$$\n\\ln(\\ln e^{2})=\\ln(2)=\\ln 2\n$$\n\nThe given constraint $\\ln(\\ln A)=\\ln 2$ is recovered exactly.\n\nThe outer log sees only $\\ln A=2$, whose log is $\\ln2$.\n\n$$\n\\ln2=\\ln2\n$$\n\nThe arithmetic already displayed is enough to accept or reject the claim.\n\n$$\n\\mathrm{QED}\n$$\n\nSo the statement is True.',
-        '**E.** → True\n\nMultiply the recovered level and force.\n\n$$\nA=e^{2}\\qquad k=e^{-1}\n$$\n\n$$\nA k=e^{2}\\cdot e^{-1}=e\n$$\n\nThe product collapses to $e$ exactly.\n\nThe powers of $e$ add in the exponent.\n\n$$\ne^{2-1}=e^{1}=e\n$$\n\nThe arithmetic already displayed is enough to accept or reject the claim.\n\n$$\n\\mathrm{QED}\n$$\n\nSo the statement is True.',
+        '**D.** → True\n\nSubstitute the recovered level $A=e^{2}$ back into the outer nested log.\n\n$$\n\\ln(\\ln e^{2})=\\ln(2)=\\ln 2\n$$\n\nThe given constraint $\\ln(\\ln A)=\\ln 2$ is recovered exactly.\n\nThe outer log sees only $\\ln A=2$, whose log is $\\ln2$.\n\n$$\n\\ln2=\\ln2\n$$\n\n
+
+\n\nSo the statement is True.',
+        '**E.** → True\n\nMultiply the recovered level and force.\n\n$$\nA=e^{2}\\qquad k=e^{-1}\n$$\n\n$$\nA k=e^{2}\\cdot e^{-1}=e\n$$\n\nThe product collapses to $e$ exactly.\n\nThe powers of $e$ add in the exponent.\n\n$$\ne^{2-1}=e^{1}=e\n$$\n\n
+
+\n\nSo the statement is True.',
     ],
 }
 
@@ -306,7 +356,9 @@ BODIES_103['MATH 10.3.28'] = {
     "solution_overview": 'The stock $f(t)=50 e^{0.1 t}$ maps $\\mathbb{R}$ onto $(0,\\infty)$, with inverse\n\n$$g(y)=\\frac{1}{0.1}\\ln\\frac{y}{50}\\qquad(y>0)$$\n\nso $g(2P)=\\ln2/0.1$, $g(P)=0$, and $g(f(3))=3$, while negative levels lie outside the domain.',
     "tactical_explanations": [
         '**A.** → True\n\nDoubling the initial level is the standard inverse-clock evaluation.\n\n$$\ng(2P)=\\frac{1}{k}\\ln\\frac{2P}{P}=\\frac{\\ln 2}{k}\n$$\n\n$$\n=\\frac{\\ln 2}{0.1}\n$$\n\nThat is exactly the claimed formula.\n\nThe same clock is the ordinary doubling time under force $k=0.1$.\n\n$$\nt_{\\times2}=\\frac{\\ln 2}{0.1}\\approx6.9315\n$$\n\nSo the statement is True.',
-        '**B.** → True\n\nThe inverse of the initial level is time zero.\n\n$$\ng(P)=\\frac{1}{k}\\ln\\frac{P}{P}=\\frac{\\ln 1}{k}=0\n$$\n\nThe identity holds exactly.\n\nEvery positive force returns time zero at the initial level.\n\n$$\nf(0)=P\\implies g(P)=0\n$$\n\nThe arithmetic already displayed is enough to accept or reject the claim.\n\n$$\n\\mathrm{QED}\n$$\n\nSo the statement is True.',
+        '**B.** → True\n\nThe inverse of the initial level is time zero.\n\n$$\ng(P)=\\frac{1}{k}\\ln\\frac{P}{P}=\\frac{\\ln 1}{k}=0\n$$\n\nThe identity holds exactly.\n\nEvery positive force returns time zero at the initial level.\n\n$$\nf(0)=P\\implies g(P)=0\n$$\n\n
+
+\n\nSo the statement is True.',
         '**C.** → False\n\nThe range of $f$ is the positive half-line.\n\n$$\nf(\\mathbb{R})=(0,\\infty)\n$$\n\nThe argument $-1$ lies outside that range, so $g(-1)$ is not defined as a real number.\n\nA negative argument would require the exponential stock to take a negative value, which never happens.\n\n$$\nP e^{kt}>0\n$$\n\nSo the statement is False.',
         '**D.** → False\n\nThe right-inverse identity $f(g(y))=y$ requires $y$ in the range of $f$.\n\n$$\ny=-3\\notin(0,\\infty)\n$$\n\nBecause $-3$ is not a positive level, $f(g(-3))=y$ cannot hold in the reals.\n\nThe right-inverse identity is stated only on the positive half-line.\n\n$$\nf(g(y))=y\\qquad(y>0)\n$$\n\nSo the statement is False.',
         '**E.** → False\n\nLeft-inverse returns the original calendar time.\n\n$$\ng(f(3))=3\n$$\n\nCompare with the claimed value $1/0.1=10$.\n\n$$\n3\\neq10\n$$\n\nThe inverse clock returns $3$, not $10$.\n\nSo the statement is False.',
@@ -317,7 +369,9 @@ BODIES_103['MATH 10.3.29'] = {
     "solution_overview": 'Two-point log recovery on each series rebuilds the forces\n\n$$k_A=\\frac{\\ln(1161.83/1000)}{5}\\approx0.03\\qquad k_B=\\frac{\\ln(1576.91/1500)}{5}\\approx0.01$$\n\nThe implied meeting time is\n\n$$t^{*}=\\frac{\\ln(B_0/A_0)}{k_A-k_B}=\\frac{\\ln 1.5}{0.02}\\approx20.2733$$\n\nwhich lies after the observation window; at $t=5$ one still has $B>A$.',
     "tactical_explanations": [
         '**A.** → True\n\nRecover force $A$ from its two tabulated levels.\n\n$$\nk_A=\\frac{\\ln(A(5)/A(0))}{5}=\\frac{\\ln(1161.83/1000)}{5}\\approx0.03\n$$\n\nThe rebuilt force of $A$ equals $0.03$.\n\nSo the statement is True.',
-        '**B.** → True\n\nRecover force $B$ the same way.\n\n$$\nk_B=\\frac{\\ln(B(5)/B(0))}{5}=\\frac{\\ln(1576.91/1500)}{5}\\approx0.01\n$$\n\nThe rebuilt force of $B$ equals $0.01$.\n\nThe five-year log-increment of $B$ is $0.05$, hence force $0.01$.\n\n$$\n\\ln\\frac{1576.91}{1500}\\approx0.05\n$$\n\nThe arithmetic already displayed is enough to accept or reject the claim.\n\n$$\n\\mathrm{QED}\n$$\n\nSo the statement is True.',
+        '**B.** → True\n\nRecover force $B$ the same way.\n\n$$\nk_B=\\frac{\\ln(B(5)/B(0))}{5}=\\frac{\\ln(1576.91/1500)}{5}\\approx0.01\n$$\n\nThe rebuilt force of $B$ equals $0.01$.\n\nThe five-year log-increment of $B$ is $0.05$, hence force $0.01$.\n\n$$\n\\ln\\frac{1576.91}{1500}\\approx0.05\n$$\n\n
+
+\n\nSo the statement is True.',
         '**C.** → True\n\nInsert the rebuilt forces into the log meeting formula.\n\n$$\nt^{*}=\\frac{\\ln(1500/1000)}{0.03-0.01}=\\frac{\\ln 1.5}{0.02}\\approx20.2733\n$$\n\n$$\nt^{*}>0\n$$\n\nA future crossing therefore exists.\n\nA positive meeting time is the same as $B_0>A_0$ when $k_A>k_B$.\n\n$$\n\\ln\\frac{B_0}{A_0}=\\ln1.5>0\n$$\n\nSo the statement is True.',
         '**D.** → False\n\nCompare the meeting time with the end of the observation window.\n\n$$\nt^{*}\\approx20.2733\n$$\n\n$$\n20.2733>5\n$$\n\nThe crossing lies after $t=5$, not strictly before it.\n\nSo the statement is False.',
         '**E.** → False\n\nRead the second observation column directly.\n\n$$\nA(5)\\approx1161.83\\qquad B(5)\\approx1576.91\n$$\n\n$$\nA(5)-B(5)\\approx-415.08<0\n$$\n\nAt $t=5$, series $B$ is still larger, so $A$ does not yet exceed $B$.\n\nSeries $B$ still leads by more than four hundred units at $t=5$.\n\n$$\nB(5)/A(5)\\approx1.357>1\n$$\n\nSo the statement is False.',
@@ -327,14 +381,19 @@ BODIES_103['MATH 10.3.29'] = {
 BODIES_103['MATH 10.3.30'] = {
     "solution_overview": 'The nested-log link $\\ln(g/p)=\\ln3$ collapses to $g=3p$. With $p=0.01$ one gets $g=0.03$ and per-capita force\n\n$$k_y=g-p=0.02$$\n\nOver horizon $t=25$, $\\Delta\\ln y=0.5$ while $\\Delta\\ln N=pt=0.25$, so per-capita log-growth outpaces population log-growth.',
     "tactical_explanations": [
-        '**A.** → True\n\nExponentiate the nested-log link.\n\n$$\n\\ln\\frac{g}{p}=\\ln 3\\implies\\frac{g}{p}=3\n$$\n\n$$\ng=3p\n$$\n\nThe link collapses to $g=3p$.\n\nCanceling $\\ln$ on both sides is valid because $\\ln$ is one-to-one.\n\n$$\n\\frac{g}{p}=e^{\\ln3}=3\n$$\n\nThe arithmetic already displayed is enough to accept or reject the claim.\n\n$$\n\\mathrm{QED}\n$$\n\nSo the statement is True.',
-        '**B.** → True\n\nSubtract population force from the recovered GDP force.\n\n$$\ng=3\\cdot0.01=0.03\n$$\n\n$$\nk_y=g-p=0.03-0.01=0.02\n$$\n\nPer-capita force equals $0.02$.\n\nWith $g=0.03$ the arithmetic is immediate.\n\n$$\n0.03-0.01=0.02\n$$\n\nThe arithmetic already displayed is enough to accept or reject the claim.\n\n$$\n\\mathrm{QED}\n$$\n\nSo the statement is True.',
-        '**C.** → True\n\nLog per-capita change over the horizon is force times time.\n\n$$\n\\Delta\\ln y=k_y\\cdot t=0.02\\cdot25=0.5\n$$\n\nThe change equals $0.5$ exactly.\n\nForce times horizon is the whole log-change for a constant-force path.\n\n$$\nk_y t=0.02\\cdot25=0.5\n$$\n\nThe arithmetic already displayed is enough to accept or reject the claim.\n\n$$\n\\mathrm{QED}\n$$\n\nSo the statement is True.',
+        '**A.** → True\n\nExponentiate the nested-log link.\n\n$$\n\\ln\\frac{g}{p}=\\ln 3\\implies\\frac{g}{p}=3\n$$\n\n$$\ng=3p\n$$\n\nThe link collapses to $g=3p$.\n\nCanceling $\\ln$ on both sides is valid because $\\ln$ is one-to-one.\n\n$$\n\\frac{g}{p}=e^{\\ln3}=3\n$$\n\n
+
+\n\nSo the statement is True.',
+        '**B.** → True\n\nSubtract population force from the recovered GDP force.\n\n$$\ng=3\\cdot0.01=0.03\n$$\n\n$$\nk_y=g-p=0.03-0.01=0.02\n$$\n\nPer-capita force equals $0.02$.\n\nWith $g=0.03$ the arithmetic is immediate.\n\n$$\n0.03-0.01=0.02\n$$\n\n
+
+\n\nSo the statement is True.',
+        '**C.** → True\n\nLog per-capita change over the horizon is force times time.\n\n$$\n\\Delta\\ln y=k_y\\cdot t=0.02\\cdot25=0.5\n$$\n\nThe change equals $0.5$ exactly.\n\nForce times horizon is the whole log-change for a constant-force path.\n\n$$\nk_y t=0.02\\cdot25=0.5\n$$\n\n
+
+\n\nSo the statement is True.',
         '**D.** → True\n\nCompare per-capita log-growth with population log-growth over the same horizon.\n\n$$\n\\Delta\\ln y=0.5\\qquad\\Delta\\ln N=p t=0.01\\cdot25=0.25\n$$\n\n$$\n0.5>0.25\n$$\n\nPer-capita log-growth strictly exceeds population log-growth.\n\nCollect the decisive inequality in one display so the verdict is immediate.\n\nThe last recovered line is already the comparison the claim needs.\n\n$$\n0.5>0.25\n$$\n\nSo the statement is True.',
         '**E.** → False\n\nAdding the forces would track a product, not per capita.\n\n$$\ng+p=0.03+0.01=0.04\n$$\n\n$$\nk_y=0.02\\neq0.04\n$$\n\nThe per-capita force is the difference $g-p$, not the sum $g+p$.\n\nThe sum $g+p$ would be the force of the product $YN$, not of the quotient $Y/N$.\n\n$$\n\\frac{d}{dt}\\ln(YN)=g+p\n$$\n\nSo the statement is False.',
     ],
 }
-
 
 BODIES_103['MATH 10.3.31'] = {
     "solution_overview": 'Annual compounding at $1.8\\%$ starts from $12$ million inhabitants:\n\n$$f(t)=12\\cdot 1.018^{t}\\qquad(0\\le t\\le 6)$$\n\nAfter the kink the base drops to $1.01$. At the switch one has $f(6)\\approx13.3557$, and the $15$-million hit finishes at $t_{\\mathrm{hit}}\\approx17.6684$. Over twenty years of uninterrupted $1.8\\%$ growth the multiplicative factor is $1.018^{20}\\approx1.4287$ (about $42.87\\%$ net growth). Exact GDP-per-capita growth is $1.04/1.018-1\\approx0.0216$, while a continuous neighbour with force $0.015$ has effective annual rate $e^{0.015}-1\\approx0.01511$.',
@@ -346,7 +405,6 @@ BODIES_103['MATH 10.3.31'] = {
         '**E.** → False\n\nThe neighbouring population is written in continuous form\n\n$$\nN(t)=9\\cdot 10^{6}\\,e^{0.015 t}\n$$\n\nThe coefficient of $t$ in the exponent is the continuous force of growth:\n\n$$\nk=0.015=1.5\\%\n$$\n\nThat force is equal to $1.5\\%$ per year, not strictly smaller. The corresponding effective annual rate is even larger:\n\n$$\ne^{0.015}-1\\approx0.015113\\approx1.511\\%\n$$\n\n$$\n0.015113>0.015\n$$\n\nWhether one reads the continuous force or the effective annual rate, the growth is not smaller than $1.5\\%$ per year.\n\nSo the statement is False.',
     ],
 }
-
 
 if __name__ == "__main__":
     assert len(BODIES_103) == 31
