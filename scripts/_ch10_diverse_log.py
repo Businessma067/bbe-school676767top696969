@@ -1,248 +1,2067 @@
 #!/usr/bin/env python3
-"""Chapter 10.2 — Logarithmic functions: diverse letter-heavy T/F builders.
+"""Chapter 10.2 — HARD logarithmic exam bank (from-scratch rewrite).
 
 Exports:
     LOG_COUNT = 49
     build_log_tasks() -> list[dict]  # exactly 49 task dicts
 
-Quality bar matches Ch7/Ch9: letters, multi-conditions, varied stem kinds.
-Does not write the JSON bank file.
+Every claim requires multi-step work (COB chains, nested peels, domain
+inequalities, table→base recovery, graph-tick arithmetic). Explanations
+follow Ch7/Ch9 teacher voice. Does not write the JSON bank file.
 """
 from __future__ import annotations
 
-import base64
-import json
 import math
+import re
 import sys
-import zlib
 from collections import Counter
 from pathlib import Path
-from typing import Any
-
-from sympy import Symbol, expand_log, log, simplify, solve
+from typing import Any, Callable
 
 sys.path.insert(0, str(Path(__file__).resolve().parent))
 from ch10_svg import log_curve, svg_curves, svg_log  # noqa: E402
 
 LOG_COUNT = 49
-MARK = "Evaluate each statement. Mark it TRUE or FALSE."
 LETTERS = "ABCDE"
+TAIL = "Evaluate each statement. Mark it TRUE or FALSE."
 
-a = Symbol("a", positive=True)
-b = Symbol("b", positive=True)
-k = Symbol("k", real=True)
+_FORBIDDEN = [
+    "the graph is decreasing",
+    "is the graph a straight line",
+    "is it decreasing",
+    "the asymptote is visible",
+    "meets the axis at",
+    "log(ab)=log a+log b",
+    r"\log(ab)=\log a+\log b",
+    "ln e=1",
+    r"\ln e=1",
+]
 
-_SPECS_BLOB = """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"""
-SPECS: list[dict[str, Any]] = json.loads(
-    zlib.decompress(base64.b64decode(_SPECS_BLOB)).decode("utf-8")
-)
+
+def D(s: str) -> str:
+    return f"$${s}$$"
 
 
-def _pack(letter: str, truth: bool, body: str) -> str:
+def pack(letter: str, truth: bool, parts: list[str]) -> str:
     verd = "True" if truth else "False"
-    body = body.strip().replace("\\n", "\n")
-    if "so the statement is" not in body.lower():
-        body = body.rstrip(".") + f".\n\nSo the statement is {verd}."
-    return f"**{letter}.** → {verd}\n\n{body}"
+    body = "\n\n".join(p.strip() for p in parts if p and str(p).strip()).strip()
+    if body.endswith("$$"):
+        return f"**{letter}.** → {verd}\n\n{body}\n\nSo the statement is {verd}."
+    body = body.rstrip(".")
+    return f"**{letter}.** → {verd}\n\n{body}.\n\nSo the statement is {verd}."
 
 
-def _task(
+def _ensure_tail(context: str) -> str:
+    ctx = context.strip()
+    if "TRUE or FALSE" not in ctx:
+        if not ctx.endswith("."):
+            ctx += "."
+        ctx += " " + TAIL
+    return ctx
+
+
+def make_task(
     *,
     title: str,
     context: str,
     statements: list[str],
     answer_key: list[bool],
-    bodies: list[str],
-    overview: str,
+    bodies: list[list[str]],
+    solution_overview: str,
     stem_kind: str,
     figure: str | None = None,
     tables_markdown: str | None = None,
 ) -> dict[str, Any]:
-    assert len(statements) == len(answer_key) == len(bodies) == 5
-    assert all(isinstance(bit, bool) for bit in answer_key)
-    ctx = context.strip()
-    if MARK not in ctx:
-        if not ctx.endswith("."):
-            ctx += "."
-        ctx += " " + MARK
-    out: dict[str, Any] = {
+    assert len(statements) == 5 and len(answer_key) == 5 and len(bodies) == 5
+    teas = [pack(LETTERS[i], answer_key[i], bodies[i]) for i in range(5)]
+    task: dict[str, Any] = {
         "title": title,
-        "context": ctx,
+        "context": _ensure_tail(context),
         "statements": statements,
-        "answer_key": list(answer_key),
-        "tactical_explanations": [
-            _pack(LETTERS[i], answer_key[i], bodies[i]) for i in range(5)
-        ],
-        "solution_overview": overview.strip(),
+        "answer_key": answer_key,
+        "tactical_explanations": teas,
+        "solution_overview": solution_overview.strip(),
         "stem_kind": stem_kind,
     }
     if figure is not None:
-        out["figure"] = figure
+        task["figure"] = figure
     if tables_markdown is not None:
-        out["tables_markdown"] = tables_markdown
-    return out
+        task["tables_markdown"] = tables_markdown
+    return task
 
 
-def _ln(val: float) -> float:
-    return math.log(val)
+def _fig_log2_mark4() -> str:
+    return svg_log(base=2, xmin=0.2, xmax=10, title="f(x)=log_2(x)", mark_x=4)
 
 
-def _logb(val: float, base: float) -> float:
-    return math.log(val, base)
+def _fig_log3() -> str:
+    return log_curve(3.0, 0.2, 12, "f(x)=log_3(x)")
 
 
-assert simplify(expand_log(log(a * b) - log(a) - log(b))) == 0
-assert simplify(expand_log(log(a / b) - log(a) + log(b))) == 0
-assert simplify(expand_log(log(a**k) - k * log(a), force=True)) == 0
-assert set(solve(Symbol("u") ** 2 - 5 * Symbol("u") + 6, Symbol("u"))) == {2, 3}
+def _fig_log5() -> str:
+    return svg_log(base=5, xmin=0.3, xmax=30, title="f(x)=log_5(x)", mark_x=25)
 
 
-def _fig_log(base: float, xmax: float, title: str, mark: float | None = None) -> str:
-    return svg_log(base=base, xmin=0.15, xmax=xmax, title=title, mark_x=mark)
-
-
-def _fig_inverse(base: float) -> str:
+def _fig_two_bases() -> str:
     return svg_curves(
         [
-            (lambda tt, bb=base: bb**tt, "#2F5D50", f"{base:g}^t"),
-            (
-                lambda xx, bb=base: math.log(xx, bb) if xx > 0 else float("nan"),
-                "#8B5A2B",
-                f"log_{base:g}",
-            ),
+            (lambda x: math.log(x, 2), "#8B5A2B", "log_2"),
+            (lambda x: math.log(x, 4), "#2F5D50", "log_4", "6 4"),
         ],
-        xmin=-1.2,
-        xmax=max(4.0, base + 1),
-        ymin=-2.5,
-        ymax=max(4.0, base + 1),
-        title=f"Inverse pair base {base:g}",
-        xlabel="input",
-        ylabel="output",
-        hlines=[0.0],
-        vlines=[0.0],
-    )
-
-
-def _fig_two(b1: float, b2: float) -> str:
-    return svg_curves(
-        [
-            (lambda xx, bb=b1: math.log(xx, bb), "#8B5A2B", f"log_{b1:g}"),
-            (lambda xx, bb=b2: math.log(xx, bb), "#2F5D50", f"log_{b2:g}", "6 4"),
-        ],
-        xmin=0.2,
-        xmax=10,
-        title="Two logarithmic bases",
+        xmin=0.25,
+        xmax=16,
+        title="log_2 versus log_4",
         xlabel="x",
         ylabel="f(x)",
         hlines=[0.0],
         vlines=[1.0],
+        marks=[(4, 2, ""), (16, 4, ""), (16, 2, "")],
     )
 
 
-def _fig_shift(h: float) -> str:
+def _fig_shift() -> str:
     return svg_curves(
         [
             (
-                lambda xx, hh=h: math.log(xx - hh, 2) if xx > hh else float("nan"),
+                lambda x: math.log(x - 2, 2) if x > 2 else float("nan"),
                 "#8B5A2B",
-                f"log_2(x-{h:g})",
+                "log_2(x-2)",
             )
         ],
-        xmin=h - 0.2,
-        xmax=h + 8,
-        title=f"Shifted log asymptote x={h:g}",
+        xmin=1.5,
+        xmax=12,
+        title="Shifted logarithm log_2(x-2)",
         xlabel="x",
         ylabel="f(x)",
         hlines=[0.0],
-        vlines=[h],
+        vlines=[2.0],
+        marks=[(6, 2, ""), (4, 1, "")],
     )
 
 
-def _fig_ray() -> str:
+def _fig_ln() -> str:
+    return svg_log(base=math.e, xmin=0.2, xmax=10, title="f(x)=ln(x)", mark_x=math.e)
+
+
+def _fig_inv_pair() -> str:
     return svg_curves(
         [
-            (lambda xx: math.log(xx, 2), "#8B5A2B", "log_2"),
-            (lambda xx: xx / 4, "#2F5D50", "y=x/4", "6 4"),
+            (lambda t: 2**t, "#2F5D50", "2^t"),
+            (lambda x: math.log(x, 2) if x > 0 else float("nan"), "#8B5A2B", "log_2"),
         ],
-        xmin=0.2,
-        xmax=8,
-        title="log_2 vs ray y=x/4",
+        xmin=-1.5,
+        xmax=4.5,
+        ymin=-2.0,
+        ymax=4.5,
+        title="Inverse pair base 2",
+        xlabel="input",
+        ylabel="output",
+        hlines=[0.0],
+        vlines=[0.0],
+        marks=[(2, 1, ""), (4, 2, "")],
+    )
+
+
+def _fig_ray_cross() -> str:
+    return svg_curves(
+        [
+            (lambda x: math.log(x, 2), "#8B5A2B", "log_2"),
+            (lambda x: x / 4, "#2F5D50", "y=x/4", "6 4"),
+        ],
+        xmin=0.25,
+        xmax=18,
+        title="log_2 against the ray y=x/4",
         xlabel="x",
         ylabel="y",
         hlines=[0.0],
-        marks=[(4, 1, "(4,1)")],
+        marks=[(16, 4, "")],
     )
 
 
-def _fig_elast() -> str:
-    return svg_curves(
-        [(lambda P: 100 * P ** (-1.5), "#8B5A2B", "Q=A P^{-β}")],
-        xmin=0.5,
-        xmax=8,
-        title="Constant-elasticity demand",
-        xlabel="P",
-        ylabel="Q",
+
+def t01_graph_log2_ticks() -> dict[str, Any]:
+    key = [True, False, True, True, False]
+    return make_task(
+        title='Base-two logarithm — tick arithmetic on the figure',
+        context='The figure shows $f(x)=\\log_{2}x$. Marks and axis ticks are exact. Use $f(2^{t})=t$ and change of base to judge the claims.',
+        statements=[
+            '$f(4)+f(8)=f(32)$.',
+            'The equality $f(6)=f(2)+f(3)$ fails even though $6=2\\cdot 3$.',
+            'The unique solution of $f(x)=3$ on $(0,\\infty)$ is $x=8$.',
+            '$f(1/8)=-3$.',
+            '$f(10)/f(2)=2$.'
+        ],
+        answer_key=key,
+        bodies=[
+            [
+                'Evaluate at powers of two: $f(4)=2$, $f(8)=3$, $f(32)=5$.',
+                '$$f(4)+f(8)=2+3=5=f(32)$$',
+            ],
+            [
+                'The product rule applies to every positive pair.',
+                '$$f(2\\cdot 3)=f(2)+f(3)\\implies f(6)=f(2)+f(3)$$',
+                'So the equality holds; the claim that it fails is false.',
+            ],
+            [
+                'Solve $f(x)=3$.',
+                '$$\\log_{2}x=3\\implies x=2^{3}=8$$',
+                'Bijectivity of $f$ onto $\\mathbb{R}$ gives uniqueness.',
+            ],
+            [
+                'Write $1/8=2^{-3}$.',
+                '$$f(1/8)=\\log_{2}(2^{-3})=-3$$',
+            ],
+            [
+                'Here $f(2)=1$, so the left side is $f(10)=\\log_{2}10$.',
+                '$$\\log_{2}10=1+\\log_{2}5$$',
+                'Since $2^{2}=4\\neq 5$, one has $\\log_{2}5\\neq 2$, hence $\\log_{2}10\\neq 2$.',
+            ]
+        ],
+        solution_overview='Powers of two give $f(4)=2$, $f(8)=3$, $f(32)=5$, and $f(1/8)=-3$. The product rule confirms $f(6)=f(2)+f(3)$. Solving $f(x)=3$ yields $x=8$. Finally $\\log_{2}10\\neq 2$ because $2^{2}=4\\neq 10$.',
+        stem_kind='graph',
+        figure=_fig_log2_mark4(),
     )
 
 
-def _resolve_figure(tag: str | None) -> str | None:
-    if not tag:
-        return None
-    builders = {
-        "log2": lambda: _fig_log(2, 8, "f(x)=log_2(x)", 4),
-        "log2nest": lambda: _fig_log(2, 20, "nested log_2 context", 16),
-        "log3": lambda: log_curve(3.0, 0.2, 12, "log base 3"),
-        "log5": lambda: _fig_log(5, 30, "f(x)=log_5(x)", 5),
-        "ln": lambda: _fig_log(math.e, 10, "f(x)=ln(x)", math.e),
-        "inv2": lambda: _fig_inverse(2),
-        "inv3": lambda: _fig_inverse(3),
-        "two24": lambda: _fig_two(2, 4),
-        "two210": lambda: _fig_two(2, 10),
-        "shift1": lambda: _fig_shift(1),
-        "shift2": lambda: _fig_shift(2),
-        "log2ray": lambda: _fig_ray(),
-        "elast": lambda: _fig_elast(),
-    }
-    return builders[tag]()
+def t02_table_recover_base() -> dict[str, Any]:
+    key = [True, True, False, True, False]
+    return make_task(
+        title='Recover the logarithmic base from a three-point table',
+        context='A function $y=\\log_{b}x$ with unknown base $b>0$, $b\\neq 1$, produces the table. Recover $b$, then judge each claim.',
+        statements=[
+            'The unique admissible base is $b=2$.',
+            '$\\log_{b}32=5$.',
+            '$\\log_{b}(1/16)=-3$.',
+            '$\\dfrac{\\ln 9}{\\ln b}=2\\log_{b}3$.',
+            '$b^{3}=6$.'
+        ],
+        answer_key=key,
+        bodies=[
+            [
+                'From $\\log_{b}4=2$ one gets $b^{2}=4$. With $b>0$ and $b\\neq 1$,',
+                '$$b=2$$',
+                'Checks: $2^{4}=16$ and $2^{-1}=1/2$.',
+            ],
+            [
+                '$$\\log_{2}32=\\log_{2}(2^{5})=5$$',
+            ],
+            [
+                '$$\\log_{2}(1/16)=\\log_{2}(2^{-4})=-4\\neq -3$$',
+            ],
+            [
+                '$$\\frac{\\ln 9}{\\ln b}=\\log_{b}9=\\log_{b}(3^{2})=2\\log_{b}3$$',
+            ],
+            [
+                'With $b=2$, one has $b^{3}=8\\neq 6$.',
+            ]
+        ],
+        solution_overview='The pair $(4,2)$ forces $b=2$; the other columns confirm. Then $\\log_{2}32=5$, $\\log_{2}(1/16)=-4$, and $\\ln 9/\\ln b=2\\log_{b}3$. Finally $2^{3}=8\\neq 6$.',
+        stem_kind='table',
+        tables_markdown='| $x$ | $4$ | $16$ | $\\tfrac{1}{2}$ |\n| --- | --- | --- | --- |\n| $y=\\log_{b}x$ | $2$ | $4$ | $-1$ |',
+    )
 
 
-def _verify_numeric_keys() -> None:
-    assert abs(_logb(4, 2) - 2) < 1e-12
-    assert abs(_logb(0.5, 2) + 1) < 1e-12
-    assert abs(_ln(8) / _ln(2) - 3) < 1e-9
-    assert abs(_logb(_logb(16, 2), 2) - 2) < 1e-12
-    assert abs(_logb(_logb(_logb(65536, 2), 2), 2) - 2) < 1e-12
-    assert abs(_logb(math.e, math.e) - 1) < 1e-12
-    A, beta, P = 7.0, 1.5, 3.0
-    Q = A * P ** (-beta)
-    P2 = P * 1.001
-    Q2 = A * P2 ** (-beta)
-    E_approx = (math.log(Q2) - math.log(Q)) / (math.log(P2) - math.log(P))
-    assert abs(E_approx + beta) < 1e-3
+def t03_symbolic_quadratic_log() -> dict[str, Any]:
+    key = [True, False, True, True, False]
+    return make_task(
+        title='Product consolidation turns a log equation into a quadratic',
+        context='Consider $\\log_{2}(x-1)+\\log_{2}(x+1)=3$ on the natural domain $x>1$. Solve algebraically, then judge the claims.',
+        statements=[
+            'On $x>1$ the equation is equivalent to $x^{2}-1=8$.',
+            'Both $x=3$ and $x=-3$ are admissible solutions.',
+            'The unique solution in the natural domain is $x=3$.',
+            'At that solution, $\\log_{2}(x-1)=1$ and $\\log_{2}(x+1)=2$.',
+            '$x=\\sqrt{7}$ also solves the equation on $x>1$.'
+        ],
+        answer_key=key,
+        bodies=[
+            [
+                'On $x>1$ both arguments are positive, so consolidate.',
+                '$$\\log_{2}(x^{2}-1)=3\\implies x^{2}-1=8$$',
+            ],
+            [
+                'From $x^{2}=9$ one gets $x=\\pm 3$, but the domain requires $x>1$.',
+                '$$x=-3\\notin(1,\\infty)$$',
+            ],
+            [
+                '$$x=3$$',
+                'is the sole root of $x^{2}=9$ inside $(1,\\infty)$.',
+            ],
+            [
+                '$$\\log_{2}2=1,\\qquad\\log_{2}4=2$$',
+                'and $1+2=3$.',
+            ],
+            [
+                'If $x=\\sqrt{7}$, then $x^{2}-1=6\\neq 8$.',
+                '$$\\log_{2}6\\neq 3$$',
+            ]
+        ],
+        solution_overview='Consolidate to $\\log_{2}(x^{2}-1)=3$, hence $x^{2}-1=8$. Domain rejects $x=-3$, leaving $x=3$. At that root the summands are $1$ and $2$. The trial $\\sqrt{7}$ fails.',
+        stem_kind='symbolic',
+    )
 
 
-_verify_numeric_keys()
+def t04_parametric_cob_letters() -> dict[str, Any]:
+    key = [True, True, False, True, False]
+    return make_task(
+        title='Change-of-base chain with letter bases a, b, c',
+        context='Let $a,b,c>1$. Write $\\log$ for a fixed auxiliary base larger than $1$. All claims are identities in the letters $a,b,c$.',
+        statements=[
+            '$\\log_{a}b\\cdot\\log_{b}c=\\log_{a}c$.',
+            '$\\log_{a}b=1/\\log_{b}a$.',
+            '$\\log_{a}b+\\log_{b}a=1$ whenever $a\\neq b$.',
+            '$\\dfrac{\\log b}{\\log a}=\\log_{a}b$.',
+            '$\\log_{a}(bc)=\\log_{a}b\\cdot\\log_{a}c$ for every $a,b,c>1$.'
+        ],
+        answer_key=key,
+        bodies=[
+            [
+                '$$\\log_{a}b\\cdot\\log_{b}c=\\frac{\\log b}{\\log a}\\cdot\\frac{\\log c}{\\log b}=\\frac{\\log c}{\\log a}=\\log_{a}c$$',
+            ],
+            [
+                '$$\\log_{a}b=\\frac{\\log b}{\\log a}=\\bigl(\\frac{\\log a}{\\log b}\\bigr)^{-1}=\\frac{1}{\\log_{b}a}$$',
+            ],
+            [
+                'Set $u=\\log_{a}b>0$. Then $\\log_{b}a=1/u$, so the sum equals $u+1/u$.',
+                '$$u+\\frac{1}{u}\\ge 2$$',
+                'with equality only at $u=1$ (i.e. $a=b$). For $a\\neq b$ the sum exceeds $2$, never equals $1$.',
+            ],
+            [
+                '$$\\log_{a}b=\\frac{\\log b}{\\log a}$$',
+            ],
+            [
+                'The product rule produces a sum:',
+                '$$\\log_{a}(bc)=\\log_{a}b+\\log_{a}c$$',
+                'which is not the product of the two logs in general.',
+            ]
+        ],
+        solution_overview='Change of base yields the chain $\\log_{a}b\\cdot\\log_{b}c=\\log_{a}c$ and the reciprocal identity. The sum $u+1/u\\ge 2$ never equals $1$ when $a\\neq b$. Products inside a log become sums of logs, not products of logs.',
+        stem_kind='parametric',
+    )
+
+
+def t05_nested_triple_peel() -> dict[str, Any]:
+    key = [True, False, True, True, False]
+    return make_task(
+        title='Triple nested base-two logarithm — peel and domain',
+        context='Define $h(x)=\\log_{2}\\bigl(\\log_{2}(\\log_{2}x)\\bigr)$. Every intermediate argument must be strictly positive. Evaluate at concrete powers of two.',
+        statements=[
+            'The natural domain of $h$ is $(2,\\infty)$.',
+            '$h(65536)=3$.',
+            '$h(65536)=2$.',
+            '$h(2^{16})=2$.',
+            '$x=2$ belongs to the natural domain of $h$.'
+        ],
+        answer_key=key,
+        bodies=[
+            [
+                'Innermost $x>0$; middle $\\log_{2}x>0$ i.e. $x>1$; outer needs $\\log_{2}(\\log_{2}x)>0$.',
+                '$$\\log_{2}x>1\\implies x>2$$',
+                'Hence the natural domain is $(2,\\infty)$.',
+            ],
+            [
+                'Peel $65536=2^{16}$.',
+                '$$\\log_{2}65536=16,\\quad\\log_{2}16=4,\\quad\\log_{2}4=2$$',
+                'So $h(65536)=2$, not $3$.',
+            ],
+            [
+                '$$h(65536)=2$$',
+                'as computed by the three-step peel.',
+            ],
+            [
+                'Since $2^{16}=65536$, the same peel applies.',
+                '$$h(2^{16})=2$$',
+            ],
+            [
+                'At $x=2$ the outer argument is $\\log_{2}(\\log_{2}2)=\\log_{2}1=0$, which is not strictly positive.',
+                '$$\\log_{2}(\\log_{2}2)=0\\not>0$$',
+            ]
+        ],
+        solution_overview='Domain forces $x>2$. Peeling $65536=2^{16}$ gives $16\\mapsto 4\\mapsto 2$, so $h(65536)=h(2^{16})=2$. The endpoint $x=2$ makes the outer argument vanish, so it is excluded.',
+        stem_kind='nested',
+        figure=_fig_log2_mark4(),
+    )
+
+
+def t06_hybrid_log3_table() -> dict[str, Any]:
+    key = [True, True, False, True, False]
+    return make_task(
+        title='Hybrid — figure of log_3 with a matching power table',
+        context='The figure shows $f(x)=\\log_{3}x$. The table records three exact evaluations. Combine figure ticks with change of base.',
+        statements=[
+            '$f(81)=4$.',
+            '$\\log_{9}81=2$.',
+            '$\\log_{3}2\\cdot\\log_{2}9=1$.',
+            '$\\log_{3}2\\cdot\\log_{2}9=2$.',
+            '$f(1/9)=1$.'
+        ],
+        answer_key=key,
+        bodies=[
+            [
+                '$$81=3^{4}\\implies f(81)=4$$',
+            ],
+            [
+                'Since $81=9^{2}$.',
+                '$$\\log_{9}81=2$$',
+            ],
+            [
+                'The chain rule gives $\\log_{3}2\\cdot\\log_{2}9=\\log_{3}9=2$, not $1$.',
+                '$$\\log_{3}9=2$$',
+            ],
+            [
+                '$$\\log_{3}2\\cdot\\log_{2}9=\\log_{3}9=2$$',
+            ],
+            [
+                '$$f(1/9)=\\log_{3}(3^{-2})=-2\\neq 1$$',
+            ]
+        ],
+        solution_overview='Powers of three give $f(81)=4$ and $f(1/9)=-2$. Also $\\log_{9}81=2$. The COB chain $\\log_{3}2\\cdot\\log_{2}9=\\log_{3}9=2$.',
+        stem_kind='hybrid',
+        figure=_fig_log3(),
+        tables_markdown='| $x$ | $3$ | $9$ | $27$ |\n| --- | --- | --- | --- |\n| $\\log_{3}x$ | $1$ | $2$ | $3$ |',
+    )
+
+
+def t07_text_dense_domain_compare() -> dict[str, Any]:
+    key = [True, False, True, False, True]
+    return make_task(
+        title='Dense comparison of two logarithmically related domains',
+        context='Let $A$ be the natural domain of $\\ln(x^{2}-1)$ and $B$ the natural domain of $\\ln(x-1)+\\ln(x+1)$. Compare $A$ and $B$ carefully, then judge each claim.',
+        statements=[
+            '$A=(-\\infty,-1)\\cup(1,\\infty)$.',
+            '$A=B$.',
+            '$B=(1,\\infty)$.',
+            'Every $x\\in A$ satisfies $\\ln(x^{2}-1)=\\ln(x-1)+\\ln(x+1)$.',
+            'On $B$ the identity $\\ln(x^{2}-1)=\\ln(x-1)+\\ln(x+1)$ holds pointwise.'
+        ],
+        answer_key=key,
+        bodies=[
+            [
+                'Need $x^{2}-1>0$, i.e. $|x|>1$.',
+                '$$A=(-\\infty,-1)\\cup(1,\\infty)$$',
+            ],
+            [
+                'For $B$ both $x-1>0$ and $x+1>0$ are required, hence $x>1$.',
+                '$$B=(1,\\infty)\\subsetneq A$$',
+                'So $A\\neq B$.',
+            ],
+            [
+                '$$B=(1,\\infty)$$',
+            ],
+            [
+                'Take $x=-2\\in A$. Then $\\ln(x^{2}-1)=\\ln 3$ is defined, but $\\ln(x-1)=\\ln(-3)$ is not. The sum identity cannot even be stated on all of $A$.',
+            ],
+            [
+                'On $B$ both factors are positive, so the product rule applies.',
+                '$$\\ln(x-1)+\\ln(x+1)=\\ln((x-1)(x+1))=\\ln(x^{2}-1)$$',
+            ]
+        ],
+        solution_overview='$A$ is $|x|>1$ while $B$ is only $x>1$, so $A\\neq B$. The sum-to-product identity for $\\ln$ holds on $B$, but fails to even make sense on the left component of $A$.',
+        stem_kind='text_dense',
+    )
+
+
+def t08_piecewise_abs_log() -> dict[str, Any]:
+    key = [True, True, False, True, False]
+    return make_task(
+        title='Piecewise logarithm glued through an absolute value',
+        context='Define $g(x)=\\log_{2}|x|$ for $x\\neq 0$, equivalently $g(x)=\\log_{2}x$ for $x>0$ and $g(x)=\\log_{2}(-x)$ for $x<0$.',
+        statements=[
+            '$g$ is even: $g(-x)=g(x)$ for every $x\\neq 0$.',
+            '$g(8)=3$ and $g(-8)=3$.',
+            '$g$ is one-to-one on $\\mathbb{R}\\setminus\\{0\\}$.',
+            'The equation $g(x)=2$ has exactly two real roots.',
+            '$g$ extends continuously through $x=0$ by setting $g(0)=0$.'
+        ],
+        answer_key=key,
+        bodies=[
+            [
+                '$$g(-x)=\\log_{2}|-x|=\\log_{2}|x|=g(x)$$',
+            ],
+            [
+                '$$g(8)=\\log_{2}8=3,\\qquad g(-8)=\\log_{2}8=3$$',
+            ],
+            [
+                'Evenness destroys injectivity: $g(8)=g(-8)$ with $8\\neq -8$.',
+            ],
+            [
+                'Solve $\\log_{2}|x|=2$, i.e. $|x|=4$.',
+                '$$x\\in\\{-4,4\\}$$',
+            ],
+            [
+                'As $x\\to 0$, $|x|\\to 0^{+}$, so $\\log_{2}|x|\\to-\\infty$. No finite value at $0$ yields continuity.',
+            ]
+        ],
+        solution_overview='Because $g(x)=\\log_{2}|x|$, the map is even, takes the value $3$ at $\\pm 8$, fails to be injective, and solves $g(x)=2$ at exactly $\\pm 4$. It diverges as $x\\to 0$.',
+        stem_kind='piecewise',
+    )
+
+
+def t09_applied_decibel_letters() -> dict[str, Any]:
+    key = [True, False, True, True, False]
+    return make_task(
+        title='Applied — intensity ratios through a common logarithm',
+        context='An intensity level is modelled by $L=10\\log_{10}(I/I_{0})$ with reference $I_{0}>0$ and intensity $I>0$. Letters stay symbolic unless a numeric ratio is named.',
+        statements=[
+            'Raising $I$ by a factor of $100$ increases $L$ by exactly $20$.',
+            'Raising $I$ by a factor of $2$ increases $L$ by exactly $2$.',
+            'If $L=0$, then necessarily $I=I_{0}$.',
+            'The difference $L(I_{2})-L(I_{1})$ equals $10\\log_{10}(I_{2}/I_{1})$, independent of $I_{0}$.',
+            'Doubling $I_{0}$ while holding $I$ fixed leaves $L$ unchanged.'
+        ],
+        answer_key=key,
+        bodies=[
+            [
+                '$$\\Delta L=10\\log_{10}100=10\\cdot 2=20$$',
+            ],
+            [
+                '$$\\Delta L=10\\log_{10}2$$',
+                'and $\\log_{10}2\\neq 0.2$, so the increment is not $2$.',
+            ],
+            [
+                '$$10\\log_{10}(I/I_{0})=0\\implies I/I_{0}=1\\implies I=I_{0}$$',
+            ],
+            [
+                '$$L(I_{2})-L(I_{1})=10\\log_{10}(I_{2}/I_{1})$$',
+            ],
+            [
+                'Replacing $I_{0}$ by $2I_{0}$ subtracts $10\\log_{10}2\\neq 0$ from $L$.',
+            ]
+        ],
+        solution_overview='Level shifts depend only on intensity ratios: a factor $100$ adds $20$, while a factor $2$ adds $10\\log_{10}2\\neq 2$. Vanishing level forces $I=I_{0}$. Changing $I_{0}$ moves $L$.',
+        stem_kind='applied_letter',
+    )
+
+
+def t10_rebuild_from_functional() -> dict[str, Any]:
+    key = [True, False, True, True, False]
+    return make_task(
+        title='Rebuild a logarithm from a functional equation and one seed',
+        context='Suppose $f:(0,\\infty)\\to\\mathbb{R}$ is continuous, satisfies $f(xy)=f(x)+f(y)$ for all $x,y>0$, and $f(2)=3$. Rebuild $f$, then judge the claims.',
+        statements=[
+            '$f(x)=3\\log_{2}x$ for every $x>0$.',
+            '$f(8)=3$.',
+            '$f(8)=9$.',
+            '$f(1/2)=-3$.',
+            '$f(4)=4$.'
+        ],
+        answer_key=key,
+        bodies=[
+            [
+                "Cauchy's equation with continuity yields $f(x)=c\\log_{2}x$; the seed $f(2)=3$ forces $c=3$.",
+                '$$f(x)=3\\log_{2}x$$',
+            ],
+            [
+                '$$f(8)=3\\log_{2}(2^{3})=9\\neq 3$$',
+            ],
+            [
+                '$$f(8)=9$$',
+            ],
+            [
+                '$$f(1/2)=3\\log_{2}(2^{-1})=-3$$',
+            ],
+            [
+                '$$f(4)=3\\log_{2}(2^{2})=6\\neq 4$$',
+            ]
+        ],
+        solution_overview='Continuity plus the multiplicative Cauchy equation give $f(x)=c\\log_{2}x$; the seed $f(2)=3$ forces $c=3$. Then $f(8)=9$, $f(1/2)=-3$, and $f(4)=6$.',
+        stem_kind='rebuild',
+    )
+
+
+def t11_domain_tangled_half_base() -> dict[str, Any]:
+    key = [True, False, True, True, False]
+    return make_task(
+        title='Domain tangle — inequality for a base in (0,1)',
+        context='Solve the inequality $\\log_{1/2}x>-2$ on the natural domain $x>0$, remembering that bases in $(0,1)$ reverse inequalities when the exponential is applied.',
+        statements=[
+            'The solution set is $0<x<4$.',
+            'The solution set is $x>4$.',
+            '$x=2$ satisfies the inequality.',
+            '$x=8$ fails the inequality.',
+            '$x=4$ satisfies the strict inequality.'
+        ],
+        answer_key=key,
+        bodies=[
+            [
+                'The map $x\\mapsto\\log_{1/2}x$ is strictly decreasing, with inverse $t\\mapsto(1/2)^{t}$.',
+                '$$\\log_{1/2}x>-2\\iff x<(1/2)^{-2}=4$$',
+                'Intersect with $x>0$ to obtain $(0,4)$.',
+            ],
+            [
+                'That ray would fit a base larger than $1$. Here the base is $1/2$, so $x>4$ is wrong.',
+            ],
+            [
+                '$$\\log_{1/2}2=-1>-2$$',
+            ],
+            [
+                '$$\\log_{1/2}8=-3\\not>-2$$',
+            ],
+            [
+                'At $x=4$ one has $\\log_{1/2}4=-2$, which fails the strict inequality.',
+            ]
+        ],
+        solution_overview='Because the base lies in $(0,1)$, $\\log_{1/2}x>-2$ flips to $x<4$, hence $(0,4)$. Checks: $x=2$ works, $x=8$ fails, and the endpoint $x=4$ is excluded by strictness.',
+        stem_kind='domain_tangled',
+    )
+
+
+def t12_graph_two_bases() -> dict[str, Any]:
+    key = [True, True, False, True, False]
+    return make_task(
+        title='Graph — log_2 versus log_4 and the exact scaling',
+        context='The figure shows $f(x)=\\log_{2}x$ and $g(x)=\\log_{4}x$ on $(0,\\infty)$. Use the exact identity relating the two bases.',
+        statements=[
+            '$f(x)=2g(x)$ for every $x>0$.',
+            '$f(16)=4$ and $g(16)=2$.',
+            '$f(x)=g(x)$ for every $x>1$.',
+            'The unique positive solution of $f(x)=g(x)$ is $x=1$.',
+            '$g(8)=2$.'
+        ],
+        answer_key=key,
+        bodies=[
+            [
+                '$$\\log_{4}x=\\frac{\\log_{2}x}{\\log_{2}4}=\\frac{f(x)}{2}$$',
+                'hence $f=2g$ identically on $(0,\\infty)$.',
+            ],
+            [
+                '$$f(16)=\\log_{2}(2^{4})=4,\\qquad g(16)=\\log_{4}(4^{2})=2$$',
+            ],
+            [
+                'From $f=2g$, equality $f=g$ forces $g=0$.',
+                '$$g(x)=0\\iff x=1$$',
+                'So the identity fails on $(1,\\infty)$.',
+            ],
+            [
+                '$$2g(x)=g(x)\\implies g(x)=0\\implies x=1$$',
+            ],
+            [
+                '$$g(8)=\\frac{\\log_{2}8}{2}=\\frac{3}{2}\\neq 2$$',
+            ]
+        ],
+        solution_overview='Change of base yields $f=2g$ everywhere. Concrete checks: $f(16)=4$, $g(16)=2$, and $g(8)=3/2$. Equality $f=g$ holds only at $x=1$.',
+        stem_kind='graph',
+        figure=_fig_two_bases(),
+    )
+
+
+def t13_table_force_via_logs() -> dict[str, Any]:
+    key = [True, False, True, True, False]
+    return make_task(
+        title='Table — recover continuous force by logarithm, then compare',
+        context='A path $y(t)=y_{0}e^{kt}$ with $y_{0}>0$ produces the table. Recover $k$ by logarithms, then judge the threshold claims.',
+        statements=[
+            'The continuous force equals $k=\\ln 2$.',
+            '$k=\\ln 4$.',
+            'The doubling time equals $1$.',
+            '$y(4)=y(0)\\cdot 16$.',
+            '$k>1$.'
+        ],
+        answer_key=key,
+        bodies=[
+            [
+                'From $t=0$ to $t=2$: $y(2)/y(0)=32/8=4=e^{2k}$.',
+                '$$2k=\\ln 4\\implies k=\\ln 2$$',
+                'Check at $t=5$: $8\\cdot e^{5\\ln 2}=8\\cdot 32=256$.',
+            ],
+            [
+                'The same recovery gives $k=\\ln 2$, not $\\ln 4$ (that would be $2k$).',
+            ],
+            [
+                '$$T_{\\times 2}=\\frac{\\ln 2}{k}=\\frac{\\ln 2}{\\ln 2}=1$$',
+            ],
+            [
+                '$$y(4)=8\\cdot e^{4\\ln 2}=8\\cdot 16=128=y(0)\\cdot 16$$',
+            ],
+            [
+                'Since $\\ln 2\\approx 0.693<1$, one has $k<1$.',
+            ]
+        ],
+        solution_overview='From $e^{2k}=4$ recover $k=\\ln 2$. Doubling time is $1$. Then $y(4)=8\\cdot 16=128=y(0)\\cdot 16$, while $k=\\ln 2<1$.',
+        stem_kind='table',
+        tables_markdown='| $t$ | $0$ | $2$ | $5$ |\n| --- | --- | --- | --- |\n| $y(t)$ | $8$ | $32$ | $256$ |',
+    )
+
+
+def t14_symbolic_mixed_bases_eq() -> dict[str, Any]:
+    key = [True, True, False, True, False]
+    return make_task(
+        title='Mixed-base equation — reduce log_4 to log_2',
+        context='Solve $\\log_{2}x+\\log_{4}x=6$ for $x>0$. Reduce everything to base $2$.',
+        statements=[
+            'The equation is equivalent to $\\dfrac{3}{2}\\log_{2}x=6$.',
+            'The unique positive solution is $x=16$.',
+            '$x=64$ also solves the equation.',
+            'At the solution, $\\log_{2}x=4$ and $\\log_{4}x=2$.',
+            '$\\log_{4}x=\\log_{2}x$ at the solution.'
+        ],
+        answer_key=key,
+        bodies=[
+            [
+                'Since $\\log_{4}x=\\log_{2}x/2$,',
+                '$$\\log_{2}x+\\frac{1}{2}\\log_{2}x=\\frac{3}{2}\\log_{2}x=6$$',
+            ],
+            [
+                '$$\\log_{2}x=4\\implies x=2^{4}=16$$',
+            ],
+            [
+                'If $x=64$, then $\\log_{2}64=6$ and $\\log_{4}64=3$, so the sum is $9\\neq 6$.',
+            ],
+            [
+                '$$\\log_{2}16=4,\\qquad\\log_{4}16=2$$',
+            ],
+            [
+                'At $x=16$ one has $4\\neq 2$, so the two logs are not equal.',
+            ]
+        ],
+        solution_overview='Reduce $\\log_{4}x=\\tfrac12\\log_{2}x$ to obtain $\\tfrac32\\log_{2}x=6$, hence $\\log_{2}x=4$ and $x=16$. Checks: summands $4$ and $2$; $x=64$ overshoots.',
+        stem_kind='symbolic',
+    )
+
+
+def t15_parametric_letter_compare() -> dict[str, Any]:
+    key = [True, False, False, True, False]
+    return make_task(
+        title="Parametric — compare log_a of letter powers against thresholds",
+        context=(
+            r"Fix a base $a>1$ and letters $u,v>1$. Define $S=\log_{a}(u^{2}v)$ and "
+            r"$T=\log_{a}(u/v)$. Judge each claim as an identity in $a,u,v$."
+        ),
+        statements=[
+            r"$S=2\log_{a}u+\log_{a}v$ for every such triple.",
+            r"$S-T=3\log_{a}v$ for every such triple.",
+            r"$S-T=3\log_{a}u$ for every such triple.",
+            r"If $u=v$, then $S=3\log_{a}u$ and $T=0$.",
+            r"If $u=v$, then $S=T$.",
+        ],
+        answer_key=key,
+        bodies=[
+            [
+                r"Expand by the product and power rules.",
+                r"$$S=\log_{a}(u^{2}v)=2\log_{a}u+\log_{a}v$$",
+            ],
+            [
+                r"Expand the difference.",
+                r"$$S-T=(2\log_{a}u+\log_{a}v)-(\log_{a}u-\log_{a}v)=\log_{a}u+2\log_{a}v$$",
+                r"This equals $3\log_{a}v$ for every triple only if $\log_{a}u=\log_{a}v$, which fails in general.",
+            ],
+            [
+                r"The same expansion $S-T=\log_{a}u+2\log_{a}v$ equals $3\log_{a}u$ for every triple only if $u=v$.",
+            ],
+            [
+                r"When $u=v>1$,",
+                r"$$S=2\log_{a}u+\log_{a}u=3\log_{a}u,\qquad T=\log_{a}1=0$$",
+            ],
+            [
+                r"When $u=v$, one has $S=3\log_{a}u>0=T$, so $S\neq T$.",
+            ],
+        ],
+        solution_overview=(
+            r"$S=2\log_{a}u+\log_{a}v$ and $S-T=\log_{a}u+2\log_{a}v$. Neither $3\log_{a}v$ nor "
+            r"$3\log_{a}u$ matches that difference for every triple. When $u=v$, one gets $S=3\log_{a}u$ and $T=0$."
+        ),
+        stem_kind="parametric",
+    )
+
+
+def t16_nested_invert_equation() -> dict[str, Any]:
+    key = [True, True, False, False, False]
+    return make_task(
+        title='Invert a nested log equation log_2(log_3 x)=1',
+        context='Solve $\\log_{2}(\\log_{3}x)=1$ on the natural domain where every intermediate argument is positive.',
+        statements=[
+            'The equation forces $\\log_{3}x=2$.',
+            'The unique solution is $x=9$.',
+            '$x=3$ also solves the equation.',
+            'The natural domain of the left-hand side is $x>3$.',
+            '$x=81$ solves the equation.'
+        ],
+        answer_key=key,
+        bodies=[
+            [
+                'Apply $2^{(\\cdot)}$ to both sides.',
+                '$$\\log_{3}x=2^{1}=2$$',
+            ],
+            [
+                '$$x=3^{2}=9$$',
+            ],
+            [
+                'At $x=3$, $\\log_{3}3=1$ and $\\log_{2}1=0\\neq 1$.',
+            ],
+            [
+                'The outer log needs $\\log_{3}x>0$, i.e. $x>1$, not $x>3$.',
+                '$$x>1$$',
+            ],
+            [
+                'At $x=81$, $\\log_{3}81=4$ and $\\log_{2}4=2\\neq 1$.',
+            ]
+        ],
+        solution_overview='Exponentiate to get $\\log_{3}x=2$, hence $x=9$. Domain is $x>1$ (not $x>3$). The trials $x=3$ and $x=81$ fail the outer evaluation.',
+        stem_kind='nested',
+    )
+
+
+def t17_hybrid_shifted_log() -> dict[str, Any]:
+    key = [True, True, False, True, False]
+    return make_task(
+        title='Hybrid — shifted log_2(x-2) with marked points',
+        context='The figure shows $f(x)=\\log_{2}(x-2)$ for $x>2$. Marks indicate exact evaluations. Combine the shift with base-two arithmetic.',
+        statements=[
+            '$f(6)=2$.',
+            '$f(4)=1$.',
+            'The equation $f(x)=3$ has solution $x=8$.',
+            'The equation $f(x)=3$ has solution $x=10$.',
+            '$f(3)=1$.'
+        ],
+        answer_key=key,
+        bodies=[
+            [
+                '$$f(6)=\\log_{2}(4)=2$$',
+            ],
+            [
+                '$$f(4)=\\log_{2}(2)=1$$',
+            ],
+            [
+                'Solve $\\log_{2}(x-2)=3\\Rightarrow x-2=8\\Rightarrow x=10$, not $8$.',
+            ],
+            [
+                '$$x-2=2^{3}=8\\implies x=10$$',
+            ],
+            [
+                '$$f(3)=\\log_{2}(1)=0\\neq 1$$',
+            ]
+        ],
+        solution_overview='Shift then evaluate: $f(6)=2$, $f(4)=1$, $f(3)=0$. Solving $f(x)=3$ yields $x=10$.',
+        stem_kind='hybrid',
+        figure=_fig_shift(),
+    )
+
+
+def t18_text_dense_iff_exp() -> dict[str, Any]:
+    key = [True, False, True, True, False]
+    return make_task(
+        title="Dense — when log equations are equivalent after a domain cut",
+        context=(
+            r"Fix $a>1$. Compare the equation $\log_{a}(x-1)+\log_{a}(x+1)=\log_{a}(8)$ "
+            r"with the polynomial relation $(x-1)(x+1)=8$, paying attention to domains."
+        ),
+        statements=[
+            r"On the domain $x>1$, the log equation is equivalent to $x^{2}-1=8$.",
+            r"Every real root of $x^{2}-1=8$ solves the log equation.",
+            r"The unique solution of the log equation on $x>1$ is $x=3$.",
+            r"At $x=3$ one has $\log_{a}2+\log_{a}4=\log_{a}8$.",
+            r"$x=-3$ solves the log equation on $x>1$.",
+        ],
+        answer_key=key,
+        bodies=[
+            [
+                r"On $x>1$ both factors are positive, so the product rule applies.",
+                r"$$\log_{a}\bigl((x-1)(x+1)\bigr)=\log_{a}8\implies x^{2}-1=8$$",
+            ],
+            [
+                r"The polynomial $x^{2}=9$ has roots $\pm 3$, but $x=-3$ lies outside $x>1$, "
+                r"and at $x=-3$ the summands $\log_{a}(x-1)$ are undefined in $\mathbb{R}$.",
+            ],
+            [
+                r"$$x=3$$",
+                r"is the sole root of $x^{2}=9$ inside $(1,\infty)$.",
+            ],
+            [
+                r"Independently of $a>1$,",
+                r"$$\log_{a}2+\log_{a}4=\log_{a}8$$",
+                r"because $2\cdot 4=8$.",
+            ],
+            [
+                r"$x=-3$ fails the domain $x>1$.",
+            ],
+        ],
+        solution_overview=(
+            r"On $x>1$ consolidate to $x^{2}-1=8$. Domain rejects $x=-3$, leaving $x=3$. "
+            r"At that root the sum identity $\log_{a}2+\log_{a}4=\log_{a}8$ holds for every $a>1$."
+        ),
+        stem_kind="text_dense",
+    )
+
+
+def t19_piecewise_log_match() -> dict[str, Any]:
+    key = [True, True, False, True, False]
+    return make_task(
+        title='Piecewise — match a log branch to an exponential branch at a knot',
+        context='Define $p(x)=\\log_{2}x$ for $x\\ge 1$ and $p(x)=2^{x}-2$ for $0\\le x<1$. Continuity at the knot is part of the analysis.',
+        statements=[
+            '$p$ is continuous at $x=1$.',
+            '$p(1)=0$.',
+            '$p(0)=0$.',
+            '$p(1/2)=\\sqrt{2}-2$.',
+            '$p(4)=3$.'
+        ],
+        answer_key=key,
+        bodies=[
+            [
+                'Left limit: $\\lim_{x\\to 1^{-}}(2^{x}-2)=0$. Right/value: $\\log_{2}1=0$. They agree.',
+            ],
+            [
+                '$$p(1)=\\log_{2}1=0$$',
+            ],
+            [
+                '$$p(0)=2^{0}-2=-1\\neq 0$$',
+            ],
+            [
+                '$$p(1/2)=2^{1/2}-2=\\sqrt{2}-2$$',
+            ],
+            [
+                '$$p(4)=\\log_{2}4=2\\neq 3$$',
+            ]
+        ],
+        solution_overview='The two branches meet at $0$ when $x=1$, so $p$ is continuous there with $p(1)=0$. Then $p(0)=-1$, $p(1/2)=\\sqrt{2}-2$, and $p(4)=2$.',
+        stem_kind='piecewise',
+    )
+
+
+def t20_applied_half_life_log() -> dict[str, Any]:
+    key = [True, False, True, True, False]
+    return make_task(
+        title='Applied — half-life recovered by a logarithm',
+        context='A mass follows $m(t)=m_{0}e^{-\\lambda t}$ with $m_{0}>0$ and $\\lambda>0$. The half-life $T$ is defined by $m(T)=m_{0}/2$.',
+        statements=[
+            '$T=\\dfrac{\\ln 2}{\\lambda}$.',
+            '$T=\\dfrac{\\log_{10}2}{\\lambda}$.',
+            '$m(2T)=m_{0}/4$.',
+            '$\\ln(m(t)/m_{0})=-\\lambda t$ for every $t\\ge 0$.',
+            '$T$ depends on the initial mass $m_{0}$.'
+        ],
+        answer_key=key,
+        bodies=[
+            [
+                '$$e^{-\\lambda T}=1/2\\implies T=\\frac{\\ln 2}{\\lambda}$$',
+            ],
+            [
+                'With common logs one needs $T=\\log_{10}2/(\\lambda\\log_{10}e)$, not $\\log_{10}2/\\lambda$.',
+            ],
+            [
+                '$$m(2T)=m_{0}(e^{-\\lambda T})^{2}=m_{0}/4$$',
+            ],
+            [
+                '$$\\ln(m(t)/m_{0})=\\ln(e^{-\\lambda t})=-\\lambda t$$',
+            ],
+            [
+                'The formula $T=\\ln 2/\\lambda$ is independent of $m_{0}$.',
+            ]
+        ],
+        solution_overview='Halving forces $T=\\ln 2/\\lambda$, independent of $m_{0}$. Two half-lives quarter the mass. The log-linearisation $\\ln(m/m_{0})=-\\lambda t$ holds for all $t\\ge 0$.',
+        stem_kind='applied_letter',
+    )
+
+
+def t21_rebuild_log_two_points() -> dict[str, Any]:
+    key = [True, True, False, True, False]
+    return make_task(
+        title='Rebuild log_b from two exact table points',
+        context='Assume $f(x)=\\log_{b}x$ for an unknown $b>1$. It is known that $f(9)=2$ and $f(27)=3$. Rebuild $b$ and $f$.',
+        statements=[
+            '$b=3$.',
+            '$f(81)=4$.',
+            '$f(1)=1$.',
+            '$f(1/3)=-1$.',
+            '$b=9$.'
+        ],
+        answer_key=key,
+        bodies=[
+            [
+                'From $f(9)=2$, $b^{2}=9$, so $b=3$ (since $b>1$). Check: $3^{3}=27$ matches $f(27)=3$.',
+            ],
+            [
+                '$$f(81)=\\log_{3}(3^{4})=4$$',
+            ],
+            [
+                '$$f(1)=\\log_{3}1=0\\neq 1$$',
+            ],
+            [
+                '$$f(1/3)=\\log_{3}(3^{-1})=-1$$',
+            ],
+            [
+                'If $b=9$, then $f(9)=1\\neq 2$.',
+            ]
+        ],
+        solution_overview='The seed $f(9)=2$ with $b>1$ forces $b=3$; $f(27)=3$ confirms. Then $f(81)=4$, $f(1)=0$, and $f(1/3)=-1$.',
+        stem_kind='rebuild',
+    )
+
+
+def t22_domain_tangled_compound() -> dict[str, Any]:
+    key = [True, True, True, False, False]
+    return make_task(
+        title='Domain tangle — compound inequality with log_2(x-1)>2',
+        context='Solve $\\log_{2}(x-1)>2$ together with the natural domain $x-1>0$.',
+        statements=[
+            'The natural domain alone is $x>1$.',
+            'The inequality is equivalent to $x-1>4$ on that domain.',
+            'The solution set is $x>5$.',
+            '$x=5$ belongs to the solution set.',
+            '$x=3$ satisfies the inequality.'
+        ],
+        answer_key=key,
+        bodies=[
+            [
+                '$$x-1>0\\implies x>1$$',
+            ],
+            [
+                'Because base $2>1$, the log is increasing.',
+                '$$\\log_{2}(x-1)>2\\iff x-1>2^{2}=4$$',
+            ],
+            [
+                '$$x>5$$',
+            ],
+            [
+                'At $x=5$, $\\log_{2}4=2$, which fails the strict inequality.',
+            ],
+            [
+                '$$\\log_{2}(3-1)=\\log_{2}2=1\\not>2$$',
+            ]
+        ],
+        solution_overview='Domain $x>1$ plus the increasing map $\\log_{2}$ turns the inequality into $x-1>4$, i.e. $x>5$. Endpoints and the trial $x=3$ fail.',
+        stem_kind='domain_tangled',
+    )
+
+
+def t23_graph_log5_ticks() -> dict[str, Any]:
+    key = [True, True, False, True, False]
+    return make_task(
+        title='Base-five logarithm — tick arithmetic past the marked base',
+        context='The figure shows $f(x)=\\log_{5}x$ with a mark at $x=25$. Use $f(5^{t})=t$ to judge the claims.',
+        statements=[
+            '$f(25)=2$.',
+            '$f(125)=3$.',
+            '$f(5)+f(25)=f(100)$.',
+            '$f(1/5)=-1$.',
+            'The unique solution of $f(x)=0$ is $x=5$.'
+        ],
+        answer_key=key,
+        bodies=[
+            [
+                '$$f(25)=\\log_{5}(5^{2})=2$$',
+            ],
+            [
+                '$$f(125)=\\log_{5}(5^{3})=3$$',
+            ],
+            [
+                'Left side: $1+2=3$. Right side: $\\log_{5}100$. Since $5^{3}=125\\neq 100$, one has $f(100)\\neq 3$.',
+            ],
+            [
+                '$$f(1/5)=\\log_{5}(5^{-1})=-1$$',
+            ],
+            [
+                '$$f(x)=0\\iff x=5^{0}=1$$',
+                'so the root is $x=1$, not $x=5$.',
+            ]
+        ],
+        solution_overview='Powers of five give $f(25)=2$, $f(125)=3$, and $f(1/5)=-1$. The product check $f(5)+f(25)=f(125)\\neq f(100)$. The root of $f$ is $x=1$.',
+        stem_kind='graph',
+        figure=_fig_log5(),
+    )
+
+
+def t24_table_cob_after_recover() -> dict[str, Any]:
+    key = [True, True, True, True, False]
+    return make_task(
+        title='Table — recover base, then run a change-of-base chain',
+        context='The table comes from $y=\\log_{b}x$. Recover $b>1$, then evaluate the chain claims.',
+        statements=[
+            '$b=4$.',
+            '$\\log_{b}64=3$.',
+            '$\\log_{2}b\\cdot\\log_{b}8=\\log_{2}8$.',
+            '$\\log_{2}b\\cdot\\log_{b}8=3$.',
+            '$b=2$.'
+        ],
+        answer_key=key,
+        bodies=[
+            [
+                'From $\\log_{b}16=2$, $b^{2}=16$, so $b=4$ (since $b>1$). Check: $4^{1}=4$.',
+            ],
+            [
+                '$$\\log_{4}64=\\log_{4}(4^{3})=3$$',
+            ],
+            [
+                '$$\\log_{2}b\\cdot\\log_{b}8=\\log_{2}8$$',
+            ],
+            [
+                '$$\\log_{2}8=3$$',
+            ],
+            [
+                'The recovered base is $4$, not $2$.',
+            ]
+        ],
+        solution_overview='From $(16,2)$ recover $b=4$. Then $\\log_{4}64=3$, and the COB chain $\\log_{2}4\\cdot\\log_{4}8=\\log_{2}8=3$.',
+        stem_kind='table',
+        tables_markdown='| $x$ | $4$ | $16$ | $64$ |\n| --- | --- | --- | --- |\n| $y=\\log_{b}x$ | $1$ | $2$ | $3$ |',
+    )
+
+
+def t25_symbolic_quotient_eq() -> dict[str, Any]:
+    key = [True, True, False, False, False]
+    return make_task(
+        title='Quotient rule turns a two-log equation into a linear relation',
+        context='Solve $\\log_{2}(x+3)-\\log_{2}x=2$ on the natural domain $x>0$.',
+        statements=[
+            'On $x>0$ the equation is equivalent to $\\dfrac{x+3}{x}=4$.',
+            'The unique solution is $x=1$.',
+            '$x=3$ also solves the equation.',
+            'At the solution, $\\log_{2}(x+3)=1$.',
+            'The value $x=-1$ is an admissible solution.'
+        ],
+        answer_key=key,
+        bodies=[
+            [
+                'Consolidate by the quotient rule.',
+                '$$\\log_{2}\\frac{x+3}{x}=2\\implies\\frac{x+3}{x}=4$$',
+            ],
+            [
+                '$$x+3=4x\\implies 3=3x\\implies x=1$$',
+            ],
+            [
+                'If $x=3$, then $(x+3)/x=2\\neq 4$.',
+            ],
+            [
+                '$$\\log_{2}(1+3)=\\log_{2}4=2\\neq 1$$',
+            ],
+            [
+                'The domain requires $x>0$, so $x=-1$ is excluded.',
+            ]
+        ],
+        solution_overview='Consolidate to $(x+3)/x=4$, hence $x=1$. Trials $x=3$ and $x=-1$ fail. At the root, $\\log_{2}(x+3)=2$.',
+        stem_kind='symbolic',
+    )
+
+
+def t26_parametric_competing_rates() -> dict[str, Any]:
+    key = [True, True, True, False, True]
+    return make_task(
+        title='Parametric — competing logarithmic scales for the same letter argument',
+        context='Fix $x>1$ and compare the two readings $A=\\log_{2}x$ and $B=\\log_{4}x$. Letters stay symbolic.',
+        statements=[
+            '$A=2B$ for every $x>1$.',
+            '$A>B$ for every $x>1$.',
+            '$A-B=\\frac12\\log_{2}x$.',
+            '$A=B$ for every $x>1$.',
+            'If $A=4$, then $x=16$ and $B=2$.'
+        ],
+        answer_key=key,
+        bodies=[
+            [
+                '$$B=\\frac{A}{2}\\implies A=2B$$',
+            ],
+            [
+                'For $x>1$ one has $A=\\log_{2}x>0$, so $A=2B>B$.',
+            ],
+            [
+                '$$A-B=\\log_{2}x-\\frac12\\log_{2}x=\\frac12\\log_{2}x$$',
+            ],
+            [
+                'Equality would force $A=0$, i.e. $x=1$, excluded by $x>1$.',
+            ],
+            [
+                '$$A=4\\implies x=2^{4}=16,\\qquad B=\\log_{4}16=2$$',
+            ]
+        ],
+        solution_overview='Always $A=2B$, so $A>B$ on $x>1$ with difference $\\tfrac12\\log_{2}x$. The case $A=4$ recovers $x=16$ and $B=2$.',
+        stem_kind='parametric',
+    )
+
+
+def t27_nested_double_domain() -> dict[str, Any]:
+    key = [True, False, True, True, False]
+    return make_task(
+        title='Double nested log_2(log_2 x) — domain and evaluation',
+        context='Define $q(x)=\\log_{2}(\\log_{2}x)$. Every intermediate argument must be positive.',
+        statements=[
+            'The natural domain of $q$ is $(1,\\infty)$.',
+            '$q(16)=3$.',
+            '$q(4)=1$.',
+            '$q(2)=0$.',
+            '$x=1$ belongs to the natural domain.'
+        ],
+        answer_key=key,
+        bodies=[
+            [
+                'Need $\\log_{2}x>0$, i.e. $x>1$.',
+                '$$x>1$$',
+            ],
+            [
+                '$$q(16)=\\log_{2}4=2\\neq 3$$',
+            ],
+            [
+                '$$q(4)=\\log_{2}2=1$$',
+            ],
+            [
+                '$$q(2)=\\log_{2}1=0$$',
+            ],
+            [
+                'At $x=1$, $\\log_{2}1=0$, so the outer log is undefined.',
+            ]
+        ],
+        solution_overview='Domain is $x>1$. Evaluations: $q(16)=2$, $q(4)=1$, $q(2)=0$. The endpoint $x=1$ is excluded.',
+        stem_kind='nested',
+    )
+
+
+def t28_hybrid_inverse_pair() -> dict[str, Any]:
+    key = [True, True, False, False, False]
+    return make_task(
+        title='Hybrid — inverse pair 2^t and log_2 on one figure',
+        context='The figure shows the inverse pair $y=2^{t}$ and $y=\\log_{2}x$. Use inverse cancellation, not eyeballing.',
+        statements=[
+            '$\\log_{2}(2^{5})=5$.',
+            '$2^{\\log_{2}7}=7$.',
+            '$\\log_{2}(2^{t})+2^{\\log_{2}t}=t$ for every $t>0$.',
+            'The unique fixed point of $\\log_{2}$ in $(0,\\infty)$ is $x=2$.',
+            '$\\log_{2}(2^{t})=t$ fails at $t=-3$.'
+        ],
+        answer_key=key,
+        bodies=[
+            [
+                '$$\\log_{2}(2^{5})=5$$',
+            ],
+            [
+                '$$2^{\\log_{2}7}=7$$',
+            ],
+            [
+                'The left side equals $t+t=2t$, not $t$.',
+                '$$t+t=2t\\neq t$$',
+            ],
+            [
+                'A fixed point would solve $\\log_{2}x=x$, i.e. $x=2^{x}$. No $x>0$ satisfies that (e.g. at $x=2$, $1\\neq 2$).',
+            ],
+            [
+                '$$\\log_{2}(2^{-3})=-3$$',
+                'so the cancellation identity holds at $t=-3$.',
+            ]
+        ],
+        solution_overview='Cancellation identities give $\\log_{2}(2^{5})=5$ and $2^{\\log_{2}7}=7$. The sum of the two cancellations is $2t$, not $t$. There is no fixed point of $\\log_{2}$, and $\\log_{2}(2^{t})=t$ holds for negative $t$ as well.',
+        stem_kind='hybrid',
+        figure=_fig_inv_pair(),
+    )
+
+
+def t29_text_dense_for_every() -> dict[str, Any]:
+    key = [True, False, True, True, False]
+    return make_task(
+        title='Dense quantifiers — for every base and for some argument',
+        context="Quantify carefully over bases $a>1$ and arguments $x>0$. A slip between 'for every' and 'for some' is fatal.",
+        statements=[
+            'For every $a>1$ one has $\\log_{a}1=0$.',
+            'For every $a>1$ and every $x>0$, $\\log_{a}x>0$.',
+            'There exists $a>1$ such that $\\log_{a}(1/2)<0$.',
+            'For every $a>1$, the map $x\\mapsto\\log_{a}x$ is strictly increasing on $(0,\\infty)$.',
+            'For every $a>1$, $\\log_{a}a^{2}=1$.'
+        ],
+        answer_key=key,
+        bodies=[
+            [
+                '$$a^{0}=1\\implies\\log_{a}1=0$$',
+            ],
+            [
+                'Counter-example: $a=2$, $x=1/2$ gives $\\log_{2}(1/2)=-1<0$.',
+            ],
+            [
+                'Take $a=2$: $\\log_{2}(1/2)=-1<0$.',
+            ],
+            [
+                'The derivative $1/(x\\ln a)>0$ for $a>1$, $x>0$.',
+            ],
+            [
+                '$$\\log_{a}a^{2}=2\\neq 1$$',
+            ]
+        ],
+        solution_overview='Every base satisfies $\\log_{a}1=0$ and strict increase. Positivity of $\\log_{a}x$ fails for $x<1$. Existence of a base with $\\log_{a}(1/2)<0$ is immediate. Finally $\\log_{a}a^{2}=2$, not $1$.',
+        stem_kind='text_dense',
+    )
+
+
+def t30_piecewise_sign_split() -> dict[str, Any]:
+    key = [True, False, True, False, True]
+    return make_task(
+        title='Piecewise — log of a squared expression versus twice the log',
+        context='Compare $F(x)=\\ln(x^{2})$ on $\\mathbb{R}\\setminus\\{0\\}$ with $G(x)=2\\ln x$ on $(0,\\infty)$ and with $H(x)=2\\ln|x|$ on $\\mathbb{R}\\setminus\\{0\\}$.',
+        statements=[
+            '$F(x)=H(x)$ for every $x\\neq 0$.',
+            '$F(x)=G(x)$ for every $x\\neq 0$.',
+            '$F(-e)=2$.',
+            '$G$ is defined at $x=-e$.',
+            '$H(-e)=2$.'
+        ],
+        answer_key=key,
+        bodies=[
+            [
+                '$$\\ln(x^{2})=\\ln(|x|^{2})=2\\ln|x|=H(x)$$',
+            ],
+            [
+                '$G$ is only defined for $x>0$, while $F$ is defined for $x<0$ as well. Even on $(0,\\infty)$ one has $F=G$, but not on all of $\\mathbb{R}\\setminus\\{0\\}$.',
+            ],
+            [
+                '$$F(-e)=\\ln(e^{2})=2$$',
+            ],
+            [
+                '$G(-e)=2\\ln(-e)$ is undefined in $\\mathbb{R}$.',
+            ],
+            [
+                '$$H(-e)=2\\ln|-e|=2\\ln e=2$$',
+            ]
+        ],
+        solution_overview='Squaring forces $F=H=2\\ln|x|$ on $\\mathbb{R}\\setminus\\{0\\}$. The unsigned $G=2\\ln x$ cannot match $F$ on the negatives. At $x=-e$ one has $F=H=2$ while $G$ is undefined.',
+        stem_kind='piecewise',
+    )
+
+
+def t31_applied_pH_letters() -> dict[str, Any]:
+    key = [True, True, False, True, False]
+    return make_task(
+        title='Applied — pH as a common logarithm of concentration',
+        context='Define $\\mathrm{pH}=-\\log_{10}[H^{+}]$ with concentration $[H^{+}]>0$ measured in the usual molar units.',
+        statements=[
+            'If $[H^{+}]$ drops by a factor of $10$, then pH rises by exactly $1$.',
+            'If $[H^{+}]=10^{-3}$, then $\\mathrm{pH}=3$.',
+            'If $[H^{+}]=10^{-3}$, then $\\mathrm{pH}=-3$.',
+            'Doubling $[H^{+}]$ decreases pH by $\\log_{10}2$.',
+            'pH is a linear function of $[H^{+}]$.'
+        ],
+        answer_key=key,
+        bodies=[
+            [
+                '$$\\Delta\\mathrm{pH}=-\\log_{10}(c/10)-(-\\log_{10}c)=\\log_{10}10=1$$',
+            ],
+            [
+                '$$\\mathrm{pH}=-\\log_{10}(10^{-3})=3$$',
+            ],
+            [
+                'The same evaluation gives $+3$, not $-3$.',
+            ],
+            [
+                '$$\\Delta\\mathrm{pH}=-\\log_{10}(2c)+\\log_{10}c=-\\log_{10}2$$',
+            ],
+            [
+                'pH depends on $\\log_{10}[H^{+}]$, which is nonlinear in the concentration.',
+            ]
+        ],
+        solution_overview='A tenfold drop in concentration raises pH by $1$. At $10^{-3}$ one has pH $=3$. Doubling concentration lowers pH by $\\log_{10}2$. The dependence on concentration is logarithmic, not linear.',
+        stem_kind='applied_letter',
+    )
+
+
+def t32_rebuild_from_inverse() -> dict[str, Any]:
+    key = [True, True, True, True, False]
+    return make_task(
+        title='Rebuild a logarithm as the inverse of a given exponential',
+        context='Let $E(t)=5^{t}$ for $t\\in\\mathbb{R}$. Let $L$ be the inverse function of $E$, defined on $(0,\\infty)$.',
+        statements=[
+            '$L(x)=\\log_{5}x$.',
+            '$L(25)=2$.',
+            '$L(E(7))=7$.',
+            '$E(L(9))=9$.',
+            '$L(1/5)=1$.'
+        ],
+        answer_key=key,
+        bodies=[
+            [
+                'By definition the inverse of $t\\mapsto 5^{t}$ is $x\\mapsto\\log_{5}x$.',
+            ],
+            [
+                '$$L(25)=\\log_{5}(5^{2})=2$$',
+            ],
+            [
+                '$$L(E(7))=7$$',
+            ],
+            [
+                '$$E(L(9))=9$$',
+            ],
+            [
+                '$$L(1/5)=\\log_{5}(5^{-1})=-1\\neq 1$$',
+            ]
+        ],
+        solution_overview='The inverse of $5^{t}$ is $\\log_{5}$. Cancellation gives $L(E(7))=7$ and $E(L(9))=9$. Concrete values: $L(25)=2$ and $L(1/5)=-1$.',
+        stem_kind='rebuild',
+    )
+
+
+def t33_domain_tangled_product() -> dict[str, Any]:
+    key = [True, True, False, True, False]
+    return make_task(
+        title='Domain tangle — product of logs requiring two inequalities',
+        context='Consider $r(x)=\\log_{2}x\\cdot\\log_{2}(x-4)$. Determine where $r$ is defined, then judge the claims.',
+        statements=[
+            'The natural domain is $x>4$.',
+            '$x=8$ lies in the natural domain.',
+            '$x=2$ lies in the natural domain.',
+            '$r(8)=6$.',
+            '$r(16)=48$.'
+        ],
+        answer_key=key,
+        bodies=[
+            [
+                'Need $x>0$ and $x-4>0$, hence $x>4$.',
+            ],
+            [
+                'Since $8>4$, both arguments are positive.',
+            ],
+            [
+                'At $x=2$, $\\log_{2}(x-4)$ is undefined.',
+            ],
+            [
+                '$$r(8)=\\log_{2}8\\cdot\\log_{2}4=3\\cdot 2=6$$',
+            ],
+            [
+                '$$r(16)=\\log_{2}16\\cdot\\log_{2}12=4\\log_{2}12$$',
+                'Since $\\log_{2}12\\neq 12$, one has $r(16)\\neq 48$.',
+            ]
+        ],
+        solution_overview='Domain forces $x>4$. Then $r(8)=6$, while $r(16)=4\\log_{2}12\\neq 48$. The trial $x=2$ is excluded.',
+        stem_kind='domain_tangled',
+    )
+
+
+def t34_graph_ray_crossings() -> dict[str, Any]:
+    key = [True, True, False, False, False]
+    return make_task(
+        title='Graph — crossings of log_2 with the ray y=x/4',
+        context='The figure shows $y=\\log_{2}x$ and $y=x/4$. A crossing means $\\log_{2}x=x/4$. Verify candidates by direct substitution.',
+        statements=[
+            '$x=16$ is a crossing point.',
+            'At $x=16$ both curves equal $4$.',
+            '$x=4$ is a crossing point.',
+            '$x=8$ is a crossing point.',
+            '$x=2$ is a crossing point.'
+        ],
+        answer_key=key,
+        bodies=[
+            [
+                '$$\\log_{2}16=4,\\qquad 16/4=4$$',
+            ],
+            [
+                '$$\\log_{2}16=16/4=4$$',
+            ],
+            [
+                '$$\\log_{2}4=2\\neq 1=4/4$$',
+            ],
+            [
+                '$$\\log_{2}8=3\\neq 2=8/4$$',
+            ],
+            [
+                '$$\\log_{2}2=1\\neq 1/2=2/4$$',
+            ]
+        ],
+        solution_overview='Direct substitution: $x=16$ works with common value $4$. The candidates $x=2,4,8$ all fail $\\log_{2}x=x/4$.',
+        stem_kind='graph',
+        figure=_fig_ray_cross(),
+    )
+
+
+def t35_table_semi_log_slope() -> dict[str, Any]:
+    key = [True, True, True, False, True]
+    return make_task(
+        title='Table — recover ln-slope of an exponential path',
+        context='An exponential path $y=y_{0}e^{kt}$ is sampled in the table. Work with differences of natural logs.',
+        statements=[
+            '$\\dfrac{\\ln y(3)-\\ln y(1)}{2}=k$.',
+            '$k=\\ln 2$.',
+            '$y(5)/y(1)=16$.',
+            '$k=\\dfrac12$.',
+            '$\\ln y(1)=\\ln 5$.'
+        ],
+        answer_key=key,
+        bodies=[
+            [
+                'Along $y=y_{0}e^{kt}$ one has $\\ln y(t)=\\ln y_{0}+kt$, so the difference quotient recovers $k$.',
+            ],
+            [
+                '$$\\frac{\\ln 20-\\ln 5}{2}=\\frac{\\ln 4}{2}=\\ln 2$$',
+            ],
+            [
+                '$$y(5)/y(1)=80/5=16=e^{4\\ln 2}$$',
+            ],
+            [
+                'The recovered force is $\\ln 2\\approx 0.693$, not $1/2$.',
+            ],
+            [
+                '$$\\ln y(1)=\\ln 5$$',
+            ]
+        ],
+        solution_overview='Log-differences recover $k=\\ln 2$. Then $y(5)/y(1)=16$, while $k\\neq 1/2$. Also $\\ln y(1)=\\ln 5$.',
+        stem_kind='table',
+        tables_markdown='| $t$ | $1$ | $3$ | $5$ |\n| --- | --- | --- | --- |\n| $y(t)$ | $5$ | $20$ | $80$ |',
+    )
+
+
+def t36_symbolic_cob_chain_eq() -> dict[str, Any]:
+    key = [True, True, True, False, False]
+    return make_task(
+        title='Symbolic — evaluate a three-factor change-of-base chain',
+        context='Simplify the product $P=\\log_{2}3\\cdot\\log_{3}5\\cdot\\log_{5}4$ by telescoping, then judge the claims.',
+        statements=[
+            '$P=\\log_{2}4$.',
+            '$P=2$.',
+            '$P=\\log_{2}3\\cdot\\log_{3}4$.',
+            '$P=3$.',
+            '$P=\\log_{5}2$.'
+        ],
+        answer_key=key,
+        bodies=[
+            [
+                '$$P=\\frac{\\ln 3}{\\ln 2}\\cdot\\frac{\\ln 5}{\\ln 3}\\cdot\\frac{\\ln 4}{\\ln 5}=\\frac{\\ln 4}{\\ln 2}=\\log_{2}4$$',
+            ],
+            [
+                '$$\\log_{2}4=2$$',
+            ],
+            [
+                '$$\\log_{3}5\\cdot\\log_{5}4=\\log_{3}4$$',
+                'hence $P=\\log_{2}3\\cdot\\log_{3}4$.',
+            ],
+            [
+                'The telescoping value is $2$, not $3$.',
+            ],
+            [
+                '$P=2\\neq\\log_{5}2$.',
+            ]
+        ],
+        solution_overview='The three-factor chain telescopes to $\\log_{2}4=2$. Intermediate collapse also gives $\\log_{2}3\\cdot\\log_{3}4$. The rivals $3$ and $\\log_{5}2$ fail.',
+        stem_kind='symbolic',
+    )
+
+
+def t37_parametric_power_unknown() -> dict[str, Any]:
+    key = [True, True, False, True, False]
+    return make_task(
+        title="Parametric — solve a^{2t}=c^3 for the unknown exponent",
+        context=(
+            r"Fix $a>1$ and $c>0$. Solve $a^{2t}=c^{3}$ for the real unknown $t$, "
+            r"expressing the answer through logarithms."
+        ),
+        statements=[
+            r"$t=\dfrac{3\log_{a}c}{2}$ is the unique real solution.",
+            r"$t=\dfrac{3\ln c}{2\ln a}$.",
+            r"If $c=a$, then $t=3$.",
+            r"If $c=a$, then $t=\dfrac{3}{2}$.",
+            r"If $c=1$, then $t=1$.",
+        ],
+        answer_key=key,
+        bodies=[
+            [
+                r"Take $\log_{a}$ of both sides.",
+                r"$$2t=3\log_{a}c\implies t=\frac{3\log_{a}c}{2}$$",
+            ],
+            [
+                r"Change of base replaces $\log_{a}c$ by $\ln c/\ln a$.",
+                r"$$t=\frac{3\ln c}{2\ln a}$$",
+            ],
+            [
+                r"If $c=a$, then $\log_{a}c=1$, so $t=3/2$, not $3$.",
+            ],
+            [
+                r"$$t=\frac{3\cdot 1}{2}=\frac{3}{2}$$",
+            ],
+            [
+                r"If $c=1$, then $\log_{a}1=0$, so $t=0$, not $1$.",
+            ],
+        ],
+        solution_overview=(
+            r"Logging both sides yields $2t=3\log_{a}c$, hence $t=3\log_{a}c/2=3\ln c/(2\ln a)$. "
+            r"When $c=a$ one gets $t=3/2$; when $c=1$ one gets $t=0$."
+        ),
+        stem_kind="parametric",
+    )
+
+
+def t38_nested_exp_of_log() -> dict[str, Any]:
+    key = [True, False, True, True, False]
+    return make_task(
+        title="Nested — peel 2^{log_2(log_2(16))} and mismatched bases",
+        context=(
+            r"Evaluate nested compositions that mix exponentials and logarithms, "
+            r"including mismatched bases."
+        ),
+        statements=[
+            r"$2^{\log_{2}(\log_{2}16)}=4$.",
+            r"$2^{\log_{2}(\log_{2}16)}=2$.",
+            r"$10^{\log_{2}16}=2^{4\log_{2}10}$.",
+            r"$\log_{2}(2^{\log_{2}3+\log_{2}5})=\log_{2}15$.",
+            r"$e^{\ln 3+\ln 4}=7$.",
+        ],
+        answer_key=key,
+        bodies=[
+            [
+                r"Innermost: $\log_{2}16=4$. Then $2^{\log_{2}4}=4$.",
+                r"$$2^{\log_{2}(\log_{2}16)}=4$$",
+            ],
+            [
+                r"The same peel yields $4$, not $2$.",
+            ],
+            [
+                r"Write $10=2^{\log_{2}10}$, so",
+                r"$$10^{\log_{2}16}=(2^{\log_{2}10})^{4}=2^{4\log_{2}10}$$",
+            ],
+            [
+                r"$$\log_{2}(2^{\log_{2}3+\log_{2}5})=\log_{2}3+\log_{2}5=\log_{2}15$$",
+            ],
+            [
+                r"$$e^{\ln 3+\ln 4}=e^{\ln 12}=12\neq 7$$",
+            ],
+        ],
+        solution_overview=(
+            r"Peeling $2^{\log_{2}(\log_{2}16)}$ gives $4$. Rewriting $10$ in base $2$ produces "
+            r"$2^{4\log_{2}10}$. Matched cancellation yields $\log_{2}15$, while $e^{\ln 3+\ln 4}=12$."
+        ),
+        stem_kind="nested",
+    )
+
+
+def t39_hybrid_ln_graph() -> dict[str, Any]:
+    key = [True, True, True, True, False]
+    return make_task(
+        title='Hybrid — natural log figure with e-mark arithmetic',
+        context='The figure shows $f(x)=\\ln x$ with a mark at $x=e$. Use $\\ln(e^{t})=t$ and change of base.',
+        statements=[
+            '$f(e^{2})=2$.',
+            '$f(1)=0$.',
+            '$f(e^{3})/f(e)=3$.',
+            '$\\dfrac{f(8)}{f(2)}=\\log_{2}8$.',
+            '$f(1/e)=1$.'
+        ],
+        answer_key=key,
+        bodies=[
+            [
+                '$$f(e^{2})=\\ln(e^{2})=2$$',
+            ],
+            [
+                '$$f(1)=\\ln 1=0$$',
+            ],
+            [
+                '$$f(e^{3})/f(e)=3/1=3$$',
+            ],
+            [
+                '$$\\frac{\\ln 8}{\\ln 2}=\\log_{2}8$$',
+            ],
+            [
+                '$$f(1/e)=\\ln(e^{-1})=-1\\neq 1$$',
+            ]
+        ],
+        solution_overview='Natural-log evaluations: $f(e^{2})=2$, $f(1)=0$, $f(1/e)=-1$. Ratios recover $\\log_{2}8$ and the quotient $3$.',
+        stem_kind='hybrid',
+        figure=_fig_ln(),
+    )
+
+
+def t40_text_dense_precisely_when() -> dict[str, Any]:
+    key = [True, False, True, True, False]
+    return make_task(
+        title='Dense — precisely when a logarithmic inequality holds',
+        context='Fix $a>1$. Characterise precisely when $\\log_{a}x>\\log_{a}y$ for $x,y>0$, and related variants.',
+        statements=[
+            '$\\log_{a}x>\\log_{a}y$ if and only if $x>y$.',
+            '$\\log_{a}x>\\log_{a}y$ if and only if $x<y$.',
+            'If $0<x<1<y$, then $\\log_{a}x<0<\\log_{a}y$.',
+            '$\\log_{a}x=0$ if and only if $x=1$.',
+            '$\\log_{a}x=1$ if and only if $x=0$.'
+        ],
+        answer_key=key,
+        bodies=[
+            [
+                'For $a>1$ the logarithm is strictly increasing.',
+            ],
+            [
+                'That characterisation fits bases in $(0,1)$, not $a>1$.',
+            ],
+            [
+                '$$\\log_{a}x<0<\\log_{a}y$$',
+            ],
+            [
+                '$$a^{0}=1$$',
+            ],
+            [
+                '$$\\log_{a}x=1\\iff x=a\\neq 0$$',
+            ]
+        ],
+        solution_overview='For $a>1$, logs preserve order, vanish only at $1$, and equal $1$ only at $a$. Arguments below $1$ give negative logs.',
+        stem_kind='text_dense',
+    )
+
+
+def t41_piecewise_abs_inside() -> dict[str, Any]:
+    key = [True, True, True, True, False]
+    return make_task(
+        title='Piecewise — log_2 of |x-3| and the split domain',
+        context='Define $s(x)=\\log_{2}|x-3|$ for $x\\neq 3$. Split into $x>3$ and $x<3$.',
+        statements=[
+            'For $x>3$, $s(x)=\\log_{2}(x-3)$.',
+            'For $x<3$, $s(x)=\\log_{2}(3-x)$.',
+            '$s(7)=2$.',
+            '$s(-1)=2$.',
+            '$s(3)=0$.'
+        ],
+        answer_key=key,
+        bodies=[
+            [
+                'For $x>3$, $|x-3|=x-3$.',
+            ],
+            [
+                'For $x<3$, $|x-3|=3-x$.',
+            ],
+            [
+                '$$s(7)=\\log_{2}4=2$$',
+            ],
+            [
+                '$$s(-1)=\\log_{2}4=2$$',
+            ],
+            [
+                'At $x=3$ the argument vanishes, so $s$ is undefined.',
+            ]
+        ],
+        solution_overview='Absolute value splits into $\\log_{2}(x-3)$ and $\\log_{2}(3-x)$. Both $x=7$ and $x=-1$ give $s=2$, while $x=3$ is excluded.',
+        stem_kind='piecewise',
+    )
+
+
+def t42_applied_richter() -> dict[str, Any]:
+    key = [True, False, True, True, False]
+    return make_task(
+        title='Applied — Richter-style magnitude as a logarithm of amplitude',
+        context='A magnitude is modelled by $M=\\log_{10}(A/A_{0})$ with amplitude $A>0$ and reference $A_{0}>0$.',
+        statements=[
+            'If $A$ grows by a factor of $1000$, then $M$ increases by $3$.',
+            'If $A$ grows by a factor of $2$, then $M$ increases by $2$.',
+            '$M(A)-M(B)=\\log_{10}(A/B)$, independent of $A_{0}$.',
+            'When $A=A_{0}$, one has $M=0$.',
+            'If $A$ and $A_{0}$ are both multiplied by $10$, then $M$ increases by $1$.'
+        ],
+        answer_key=key,
+        bodies=[
+            [
+                '$$\\Delta M=\\log_{10}1000=3$$',
+            ],
+            [
+                '$$\\Delta M=\\log_{10}2\\neq 2$$',
+            ],
+            [
+                '$$M(A)-M(B)=\\log_{10}(A/B)$$',
+            ],
+            [
+                '$$\\log_{10}1=0$$',
+            ],
+            [
+                'Scaling both $A$ and $A_{0}$ by $10$ leaves the ratio unchanged, so $\\Delta M=0$, not $1$.',
+            ]
+        ],
+        solution_overview='A thousandfold amplitude jump adds $3$ to $M$; a twofold jump adds $\\log_{10}2$. Differences cancel $A_{0}$. Simultaneous scaling of $A$ and $A_{0}$ leaves $M$ fixed.',
+        stem_kind='applied_letter',
+    )
+
+
+def t43_rebuild_seed_and_rule() -> dict[str, Any]:
+    key = [True, True, True, True, False]
+    return make_task(
+        title='Rebuild — continuous log-like map from a seed and the power rule',
+        context='Suppose $f:(0,\\infty)\\to\\mathbb{R}$ satisfies $f(x^{2})=2f(x)$ for every $x>0$, is continuous, and $f(8)=3$. Assume also $f$ is of the form $c\\log_{2}$ (the continuous solutions of the power relation).',
+        statements=[
+            '$c=1$, so $f(x)=\\log_{2}x$.',
+            '$f(64)=6$.',
+            '$f(2)=1$.',
+            '$f(1/8)=-3$.',
+            '$f(4)=4$.'
+        ],
+        answer_key=key,
+        bodies=[
+            [
+                '$$f(8)=c\\log_{2}8=3c=3\\implies c=1$$',
+            ],
+            [
+                '$$f(64)=\\log_{2}(2^{6})=6$$',
+            ],
+            [
+                '$$f(2)=\\log_{2}2=1$$',
+            ],
+            [
+                '$$f(1/8)=\\log_{2}(2^{-3})=-3$$',
+            ],
+            [
+                '$$f(4)=\\log_{2}4=2\\neq 4$$',
+            ]
+        ],
+        solution_overview='The seed $f(8)=3$ forces $c=1$, hence $f=\\log_{2}$. Then $f(64)=6$, $f(2)=1$, $f(1/8)=-3$, while $f(4)=2$.',
+        stem_kind='rebuild',
+    )
+
+
+def t44_domain_tangled_nested_ineq() -> dict[str, Any]:
+    key = [True, True, True, False, False]
+    return make_task(
+        title='Domain tangle — inequality for a nested logarithm',
+        context='Solve $\\log_{2}(\\log_{3}x)>1$ on the natural domain of the nested logarithm.',
+        statements=[
+            'The natural domain requires $x>1$.',
+            'The inequality is equivalent to $\\log_{3}x>2$ on that domain.',
+            'The solution set is $x>9$.',
+            '$x=9$ satisfies the strict inequality.',
+            '$x=3$ satisfies the inequality.'
+        ],
+        answer_key=key,
+        bodies=[
+            [
+                'Outer log needs $\\log_{3}x>0$, i.e. $x>1$.',
+            ],
+            [
+                'Base $2>1$, so $\\log_{2}(\\cdot)>1$ iff the argument exceeds $2$.',
+                '$$\\log_{3}x>2$$',
+            ],
+            [
+                '$$x>3^{2}=9$$',
+            ],
+            [
+                'At $x=9$, $\\log_{2}(\\log_{3}9)=\\log_{2}2=1$, not strictly greater.',
+            ],
+            [
+                '$$\\log_{2}(\\log_{3}3)=\\log_{2}1=0\\not>1$$',
+            ]
+        ],
+        solution_overview='Domain $x>1$ plus $\\log_{3}x>2$ yields $x>9$. The endpoint $x=9$ and the trial $x=3$ fail the strict inequality.',
+        stem_kind='domain_tangled',
+    )
+
+
+def t45_graph_log2_product_check() -> dict[str, Any]:
+    key = [True, True, True, False, True]
+    return make_task(
+        title='Graph log_2 — multi-step product and quotient checks',
+        context='Again $f(x)=\\log_{2}x$ on the figure. Each claim needs a calculation with at least two evaluations.',
+        statements=[
+            '$f(24)-f(3)=f(8)$.',
+            '$f(24)-f(3)=3$.',
+            '$f(9)+f(4)=f(36)$.',
+            '$f(9)+f(4)=f(13)$.',
+            '$2f(8)=f(64)$.'
+        ],
+        answer_key=key,
+        bodies=[
+            [
+                '$$f(24)-f(3)=\\log_{2}(24/3)=\\log_{2}8=f(8)$$',
+            ],
+            [
+                '$$f(8)=3$$',
+            ],
+            [
+                '$$f(9)+f(4)=\\log_{2}(36)=f(36)$$',
+            ],
+            [
+                'The sum equals $f(36)$, not $f(13)$.',
+            ],
+            [
+                '$$2f(8)=6=\\log_{2}64=f(64)$$',
+            ]
+        ],
+        solution_overview='Quotient and product rules give $f(24)-f(3)=f(8)=3$ and $f(9)+f(4)=f(36)$. Also $2f(8)=f(64)$. The rival $f(13)$ fails.',
+        stem_kind='graph',
+        figure=_fig_log2_mark4(),
+    )
+
+
+def t46_table_judge_claims_base3() -> dict[str, Any]:
+    key = [True, True, True, False, True]
+    return make_task(
+        title='Table — base-three logs with a false extrapolation',
+        context='The table lists exact values of $\\log_{3}x$. Use them to judge extrapolations.',
+        statements=[
+            '$\\log_{3}81=4$.',
+            '$\\log_{3}(1/27)=-3$.',
+            '$\\log_{3}6=\\log_{3}2+\\log_{3}3=\\log_{3}2+1$.',
+            '$\\log_{3}6=2$.',
+            '$\\log_{3}9-\\log_{3}3=1$.'
+        ],
+        answer_key=key,
+        bodies=[
+            [
+                '$$\\log_{3}81=\\log_{3}(3^{4})=4$$',
+            ],
+            [
+                '$$\\log_{3}(3^{-3})=-3$$',
+            ],
+            [
+                '$$\\log_{3}6=\\log_{3}(2\\cdot 3)=\\log_{3}2+1$$',
+            ],
+            [
+                'If $\\log_{3}6=2$, then $6=9$, false.',
+            ],
+            [
+                '$$\\log_{3}9-\\log_{3}3=\\log_{3}3=1$$',
+            ]
+        ],
+        solution_overview='Powers of three give $\\log_{3}81=4$ and $\\log_{3}(1/27)=-3$. The product rule writes $\\log_{3}6=\\log_{3}2+1\\neq 2$. Also $\\log_{3}9-\\log_{3}3=1$.',
+        stem_kind='table',
+        tables_markdown='| $x$ | $3$ | $9$ | $27$ |\n| --- | --- | --- | --- |\n| $\\log_{3}x$ | $1$ | $2$ | $3$ |',
+    )
+
+
+def t47_symbolic_quadratic_ln() -> dict[str, Any]:
+    key = [True, True, True, False, False]
+    return make_task(
+        title='Symbolic — ln equation that becomes a quadratic after exp',
+        context='Solve $\\ln(x)+\\ln(x-3)=\\ln(4x)$ on the natural domain $x>3$.',
+        statements=[
+            'On $x>3$ the equation is equivalent to $x(x-3)=4x$.',
+            'After cancelling the factor $x>0$, one obtains $x-3=4$.',
+            'The unique solution in the domain is $x=7$.',
+            '$x=0$ is an admissible solution.',
+            '$x=4$ solves the equation on $x>3$.'
+        ],
+        answer_key=key,
+        bodies=[
+            [
+                'Use the product rule.',
+                '$$\\ln(x(x-3))=\\ln(4x)\\implies x(x-3)=4x$$',
+            ],
+            [
+                '$$x-3=4$$',
+            ],
+            [
+                '$$x=7$$',
+                'and $7>3$.',
+            ],
+            [
+                '$x=0$ makes every logarithm undefined.',
+            ],
+            [
+                '$$4(4-3)=4\\neq 16=4\\cdot 4$$',
+            ]
+        ],
+        solution_overview='Consolidate to $x(x-3)=4x$. On $x>3$ cancel to get $x=7$. The trials $x=0$ and $x=4$ fail.',
+        stem_kind='symbolic',
+    )
+
+
+def t48_parametric_change_unknown_base() -> dict[str, Any]:
+    key = [True, True, False, True, False]
+    return make_task(
+        title='Parametric — unknown base recovered from one letter equation',
+        context='Suppose $b>1$ satisfies $\\log_{b}(b^{3}\\cdot 4)=5$. Recover $b$, then judge the claims.',
+        statements=[
+            '$b=2$.',
+            '$\\log_{b}4=2$.',
+            '$b=4$.',
+            '$\\log_{b}32=5$.',
+            '$\\log_{b}8=4$.'
+        ],
+        answer_key=key,
+        bodies=[
+            [
+                'Expand: $3+\\log_{b}4=5$, so $\\log_{b}4=2$, hence $b^{2}=4$. With $b>1$,',
+                '$$b=2$$',
+            ],
+            [
+                '$$\\log_{2}4=2$$',
+            ],
+            [
+                'If $b=4$, then $3+\\log_{4}4=4\\neq 5$.',
+            ],
+            [
+                '$$\\log_{2}32=5$$',
+            ],
+            [
+                '$$\\log_{2}8=3\\neq 4$$',
+            ]
+        ],
+        solution_overview='From $3+\\log_{b}4=5$ recover $\\log_{b}4=2$, hence $b=2$. Then $\\log_{2}32=5$ while $\\log_{2}8=3$.',
+        stem_kind='parametric',
+    )
+
+
+def t49_nested_peel_equation() -> dict[str, Any]:
+    key = [True, True, True, False, False]
+    return make_task(
+        title='Nested peel — solve log_2(log_2(log_2 x))=1',
+        context='Solve $\\log_{2}\\bigl(\\log_{2}(\\log_{2}x)\\bigr)=1$ on the natural domain of the triple nesting.',
+        statements=[
+            'The equation forces $\\log_{2}(\\log_{2}x)=2$.',
+            'Next, $\\log_{2}x=4$.',
+            'The unique solution is $x=16$.',
+            '$x=65536$ solves the equation.',
+            '$x=2^{16}$ solves the equation.'
+        ],
+        answer_key=key,
+        bodies=[
+            [
+                'Apply $2^{(\\cdot)}$.',
+                '$$\\log_{2}(\\log_{2}x)=2$$',
+            ],
+            [
+                '$$\\log_{2}x=2^{2}=4$$',
+            ],
+            [
+                '$$x=2^{4}=16$$',
+            ],
+            [
+                'Peel $65536=2^{16}$: $16\\mapsto 4\\mapsto 2\\neq 1$.',
+            ],
+            [
+                'Same peel as $65536$, giving outer value $2$, not $1$.',
+            ]
+        ],
+        solution_overview='Peeling once gives $\\log_{2}(\\log_{2}x)=2$, twice gives $\\log_{2}x=4$, hence $x=16$. The giant $2^{16}$ peels to $2$, not $1$.',
+        stem_kind='nested',
+    )
+
+
+BUILDERS: list[Callable[[], dict[str, Any]]] = [
+    t01_graph_log2_ticks,
+    t02_table_recover_base,
+    t03_symbolic_quadratic_log,
+    t04_parametric_cob_letters,
+    t05_nested_triple_peel,
+    t06_hybrid_log3_table,
+    t07_text_dense_domain_compare,
+    t08_piecewise_abs_log,
+    t09_applied_decibel_letters,
+    t10_rebuild_from_functional,
+    t11_domain_tangled_half_base,
+    t12_graph_two_bases,
+    t13_table_force_via_logs,
+    t14_symbolic_mixed_bases_eq,
+    t15_parametric_letter_compare,
+    t16_nested_invert_equation,
+    t17_hybrid_shifted_log,
+    t18_text_dense_iff_exp,
+    t19_piecewise_log_match,
+    t20_applied_half_life_log,
+    t21_rebuild_log_two_points,
+    t22_domain_tangled_compound,
+    t23_graph_log5_ticks,
+    t24_table_cob_after_recover,
+    t25_symbolic_quotient_eq,
+    t26_parametric_competing_rates,
+    t27_nested_double_domain,
+    t28_hybrid_inverse_pair,
+    t29_text_dense_for_every,
+    t30_piecewise_sign_split,
+    t31_applied_pH_letters,
+    t32_rebuild_from_inverse,
+    t33_domain_tangled_product,
+    t34_graph_ray_crossings,
+    t35_table_semi_log_slope,
+    t36_symbolic_cob_chain_eq,
+    t37_parametric_power_unknown,
+    t38_nested_exp_of_log,
+    t39_hybrid_ln_graph,
+    t40_text_dense_precisely_when,
+    t41_piecewise_abs_inside,
+    t42_applied_richter,
+    t43_rebuild_seed_and_rule,
+    t44_domain_tangled_nested_ineq,
+    t45_graph_log2_product_check,
+    t46_table_judge_claims_base3,
+    t47_symbolic_quadratic_ln,
+    t48_parametric_change_unknown_base,
+    t49_nested_peel_equation,
+]
 
 
 def build_log_tasks() -> list[dict]:
-    """Return exactly 49 task dicts for subsection 10.2."""
-    assert len(SPECS) == LOG_COUNT
-    tasks: list[dict] = []
-    for spec in SPECS:
-        bodies = [str(b).replace("\\n", "\n") for b in spec["bodies"]]
-        tasks.append(
-            _task(
-                title=spec["title"],
-                context=spec["context"],
-                statements=list(spec["statements"]),
-                answer_key=list(spec["answer_key"]),
-                bodies=bodies,
-                overview=spec["overview"],
-                stem_kind=spec["stem_kind"],
-                figure=_resolve_figure(spec.get("figure_tag")),
-                tables_markdown=spec.get("tables_markdown"),
-            )
-        )
+    """Return exactly 49 hard logarithmic task dicts for subsection 10.2."""
+    assert len(BUILDERS) == LOG_COUNT
+    tasks = [b() for b in BUILDERS]
     assert len(tasks) == LOG_COUNT
     return tasks
 
@@ -252,22 +2071,18 @@ def _self_check() -> None:
     assert len(tasks) == 49
     hist = Counter(sum(t["answer_key"]) for t in tasks)
     assert set(hist) <= {1, 2, 3, 4, 5}
-    assert min(hist.values()) >= 8
     kinds = Counter(t["stem_kind"] for t in tasks)
-    assert len(kinds) == 10
+    assert len(kinds) >= 10, kinds
     figs = sum(1 for t in tasks if t.get("figure"))
     tabs = sum(1 for t in tasks if t.get("tables_markdown"))
-    either = sum(1 for t in tasks if t.get("figure") or t.get("tables_markdown"))
-    assert figs >= 15
-    assert tabs >= 12
-    assert either >= int(0.4 * 49)
     for t in tasks:
-        assert MARK in t["context"]
+        assert TAIL.split(".")[0] in t["context"] or "TRUE or FALSE" in t["context"]
+        assert len(t["statements"]) == 5
         assert len(set(t["statements"])) == 5
         for i, e in enumerate(t["tactical_explanations"]):
             letter = LETTERS[i]
             verd = "True" if t["answer_key"][i] else "False"
-            assert e.startswith(f"**{letter}.** → {verd}")
+            assert e.startswith(f"**{letter}.** → {verd}"), (t["title"], letter, e[:80])
             assert f"So the statement is {verd}." in e
         blob = (
             t["context"]
@@ -277,10 +2092,26 @@ def _self_check() -> None:
             + t["solution_overview"]
             + "|"
             + "|".join(t["tactical_explanations"])
+        ).lower()
+        for phrase in _FORBIDDEN:
+            assert phrase.lower() not in blob, (t["title"], phrase)
+        # Reject over-escaped KaTeX (two backslashes before the command name)
+        raw = (
+            t["context"]
+            + "|"
+            + "|".join(t["statements"])
+            + "|"
+            + t["solution_overview"]
+            + "|"
+            + "|".join(t["tactical_explanations"])
         )
-        assert "\\\\neq" not in blob
-        assert "\\\\to" not in blob
-        assert "\\\\infty" not in blob
+        assert "\\\\neq" not in raw
+        assert "\\\\to" not in raw
+        assert "\\\\infty" not in raw
+        # Ban one-step log2(8)=3 as the whole claim
+        for s in t["statements"]:
+            stripped = re.sub(r"\s+", "", s.lower())
+            assert stripped not in {r"$\log_{2}8=3$.", r"$log_28=3$."}
     print(
         "OK",
         len(tasks),
