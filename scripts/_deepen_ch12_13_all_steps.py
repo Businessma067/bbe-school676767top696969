@@ -158,23 +158,56 @@ def pmf_expansion_steps(n: int, k: int, p: float, q: float) -> list[str]:
 
 
 def fix_broken_sums(text: str) -> str:
-    text = re.sub(
-        r"\$\$\s*(P\([^$]*?\))\s*=\s*\\sum_\{([a-zA-Z])\s*\$\$\s*"
-        r"\$\$\s*=\s*(\d+)\}\^{(\d+)\}\s*([^$]*?)\$\$",
-        lambda m: disp(
-            rf"{m.group(1).strip()} = \sum_{{{m.group(2)} = {m.group(3)}}}^{{{m.group(4)}}} {m.group(5).strip()}"
-        ),
-        text,
-        flags=re.S,
-    )
-    text = re.sub(
-        r"\$\$\s*\\sum_\{([a-zA-Z])\s*\$\$\s*\$\$\s*=\s*(\d+)\}\^{(\d+)\}\s*([^$]*?)\$\$",
-        lambda m: disp(
-            rf"\sum_{{{m.group(1)} = {m.group(2)}}}^{{{m.group(3)}}} {m.group(4).strip()}"
-        ),
-        text,
-        flags=re.S,
-    )
+    # Three-piece split: LHS = \sum_{x   /   = lo}^{hi} ... P(X   /   = x)
+    def join3(m: re.Match) -> str:
+        raw_lhs = m.group(1).strip()
+        lhs = re.sub(r"\s*=\s*\\sum_\{[a-zA-Z]\s*$", "", raw_lhs).strip()
+        var, lo, hi, mid, tail = (
+            m.group(2),
+            m.group(3),
+            m.group(4),
+            m.group(5).strip(),
+            m.group(6).strip(),
+        )
+        # mid often ends with P(X ; tail is "= x)" or "x)"
+        tail = re.sub(r"^=\s*", "", tail)
+        if mid.endswith("P(X") and not tail.startswith("="):
+            combined = f"{mid} = {tail}"
+        elif mid.endswith("P(X") and tail.startswith("="):
+            combined = f"{mid} {tail}"
+        else:
+            combined = f"{mid} {tail}".strip()
+        combined = re.sub(r"\s+", " ", combined)
+        return disp(rf"{lhs} = \sum_{{{var} = {lo}}}^{{{hi}}} {combined}")
+
+    prev = None
+    while prev != text:
+        prev = text
+        text = re.sub(
+            r"\$\$\s*([^$]*?=\s*\\sum_\{([a-zA-Z])\s*)\$\$\s*"
+            r"\$\$\s*=\s*(\d+)\}\^{(\d+)\}\s*([^$]*?)\$\$\s*"
+            r"\$\$\s*(=\s*[^$]+?)\$\$",
+            join3,
+            text,
+            flags=re.S,
+        )
+        text = re.sub(
+            r"\$\$\s*(P\([^$]*?\))\s*=\s*\\sum_\{([a-zA-Z])\s*\$\$\s*"
+            r"\$\$\s*=\s*(\d+)\}\^{(\d+)\}\s*([^$]*?)\$\$",
+            lambda m: disp(
+                rf"{m.group(1).strip()} = \sum_{{{m.group(2)} = {m.group(3)}}}^{{{m.group(4)}}} {m.group(5).strip()}"
+            ),
+            text,
+            flags=re.S,
+        )
+        text = re.sub(
+            r"\$\$\s*\\sum_\{([a-zA-Z])\s*\$\$\s*\$\$\s*=\s*(\d+)\}\^{(\d+)\}\s*([^$]*?)\$\$",
+            lambda m: disp(
+                rf"\sum_{{{m.group(1)} = {m.group(2)}}}^{{{m.group(3)}}} {m.group(4).strip()}"
+            ),
+            text,
+            flags=re.S,
+        )
     return text
 
 
