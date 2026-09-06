@@ -7131,13 +7131,15 @@ Let $t$ be years ago. The claim is that $x - t = 3(y - t)$ for some $t > 4$. Usi
 
 $$47 - t = 3(19 - t)$$
 
-$$
-47 - t = 57 - 3t \\Rightarrow 2t
-$$
+$$47 - t = 57 - 3t \$$
+
+$$\Rightarrow 2t$$
 
 $$= 10$$
 
-$$\\Rightarrow t$$
+$$\$$
+
+$$\Rightarrow t$$
 
 $$
 = 5
