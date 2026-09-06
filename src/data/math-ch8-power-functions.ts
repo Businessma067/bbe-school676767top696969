@@ -2780,15 +2780,15 @@ The plans cross where the uncapped square-root bill equals the linear bill:
 
 $$40\\sqrt{u}=5u$$
 
-$$8=\\sqrt{u}, \\qquad u$$
+$$8=\\sqrt{u}, \$$
 
-$$8=64$$
+$$u=64$$
 
 Below that crossing, at the recorded $36$ tickets:
 
-$$C_A(36)=240, \\qquad C_B(36)$$
+$$C_A(36)=240, \$$
 
-$$C_A(36)=180$$
+$$C_B(36)=180$$
 
 and $180<240$, so Plan B is cheaper below the crossing.
 
@@ -2801,9 +2801,9 @@ Read the exponent from the overview before comparing growth rates.
 
 Plan A's cap binds once $40\\sqrt{u}=400$:
 
-$$\\sqrt{u}=10, \\qquad u$$
+$$\\sqrt{u}=10, \$$
 
-$$\\sqrt{u}=100$$
+$$u=100$$
 
 For every larger ticket volume the billed amount stays $400$ rather than $40\\sqrt{u}$, so the cap eventually binds.
 
@@ -2824,9 +2824,7 @@ $$\\frac{240}{36}=\\frac{20}{3}, \\qquad \\frac{320}{64}$$
 
 $$\\frac{240}{36}$$
 
-$$\\frac{240}{36}$$
-
-$$=5$$
+$$\\frac{240}{36}=5$$
 
 and $5<\\frac{20}{3}$.
 
@@ -3016,11 +3014,11 @@ $$\\frac{R(x)}{x}=90 x^{-\\frac{1}{2}}$$
 
 The leftover exponent is negative, so the average falls as the campaign grows. At the recorded spend and at $400$:
 
-$$\\frac{R(100)}{100}=9, \\qquad \\frac{R(400)}{400}$$
+$$\\frac{R(100)}{100}=9, \$$
 
-$$\\frac{R(100)}{100}=\\frac{90\\cdot 20}{400}$$
+$$\\frac{R(400)}{400}=\\frac{90\\cdot 20}{400}$$
 
-$$\\frac{R(100)}{100}=4.5$$
+$$\\frac{R(400)}{400}=4.5$$
 
 and $4.5<9$.
 
@@ -3265,9 +3263,9 @@ $$R(p)=2000 p^{-\\frac{1}{2}}$$
 
 The leftover exponent is negative, so revenue falls as the price rises. At the recorded price and at $16$:
 
-$$R(4)=1000, \\qquad R(16)$$
+$$R(4)=1000, \$$
 
-$$R(4)=500$$
+$$R(16)=500$$
 
 and $500<1000$.
 
@@ -3301,7 +3299,9 @@ The charge is covered when $R(p)\\ge 400$:
 
 $$2000 p^{-\\frac{1}{2}}\\ge 400$$
 
-$$\\sqrt{p}\\le 5, \\qquad p\\le 25$$
+$$\\sqrt{p}\\le 5, \$$
+
+$$p\\le 25$$
 
 The claim is that the charge is covered only at prices below $16$. The recovered cutoff is $p=25$, which is not $16$.
 
@@ -3486,9 +3486,7 @@ Form the ratio so the unknown positive coefficient cancels.
 
 Doubling the airspeed on $F(v)=2 v^{\\frac{3}{2}}$ multiplies drag by
 
-$$2^{\\frac{3}{2}}$$
-
-$$=2\\sqrt{2}$$
+$$2^{\\frac{3}{2}}=2\\sqrt{2}$$
 
 Now $2\\sqrt{2}\\approx 2.83$, which is not more than $3$.
 
@@ -3518,11 +3516,11 @@ The mounting rating $F=250$ needs
 
 $$2 v^{\\frac{3}{2}}=250$$
 
-$$v^{\\frac{3}{2}}=125, \\qquad v$$
+$$v^{\\frac{3}{2}}=125, \$$
 
-$$v^{\\frac{3}{2}}=125^{\\frac{2}{3}}$$
+$$v=125^{\\frac{2}{3}}$$
 
-$$v^{\\frac{3}{2}}=25$$
+$$v=25$$
 
 The claim is that the rating is first reached above $30$ m/s. We have $v=25$.
 
@@ -3595,9 +3593,9 @@ $$R(p)=1200 p^{\\frac{1}{2}}$$
 
 The leftover exponent is positive, so revenue rises as the price rises. At $16$ and $25$:
 
-$$R(16)=4800, \\qquad R(25)$$
+$$R(16)=4800, \$$
 
-$$R(16)=6000$$
+$$R(25)=6000$$
 
 and $6000>4800$.
 
@@ -3659,9 +3657,9 @@ Cutting quantity to $200$ needs
 
 $$1200 p^{-\\frac{1}{2}}=200$$
 
-$$\\sqrt{p}=6, \\qquad p$$
+$$\\sqrt{p}=6, \$$
 
-$$\\sqrt{p}=36$$
+$$p=36$$
 
 The claim is a price above $40$. We have $p=36$.
 
@@ -3743,9 +3741,9 @@ Read the exponent from the overview before comparing growth rates.
 
 The licence binds once $4 x^{\\frac{4}{3}}=1024$:
 
-$$x^{\\frac{4}{3}}=256, \\qquad x$$
+$$x^{\\frac{4}{3}}=256, \$$
 
-$$x^{\\frac{4}{3}}=64$$
+$$x=64$$
 
 Past that feed, daily shipped output is the constant $1024$, which is not a monomial in $x$.
 
@@ -3957,9 +3955,7 @@ The same ratio $\\frac{T(x)}{S(x)}=\\frac{x}{8}$ depends on the load. At the ben
 
 $$\\frac{T(4)}{S(4)}=\\frac{8}{16}$$
 
-$$
-\\frac{T(4)}{S(4)}=\\frac{1}{2}, \\qquad \\frac{T(8)}{S(8)}
-$$
+$$\\frac{T(4)}{S(4)}=\\frac{1}{2}, \\qquad \\frac{T(8)}{S(8)}$$
 
 $$\\frac{T(4)}{S(4)}=1$$
 
@@ -4146,15 +4142,15 @@ Form the ratio so the unknown positive coefficient cancels.
 
 Net gain is maximised where $\\Pi'(L)=0$:
 
-$$60 L^{-\\frac{1}{2}}=6, \\qquad L$$
+$$60 L^{-\\frac{1}{2}}=6, \$$
 
-$$60 L^{-\\frac{1}{2}}=100$$
+$$L=100$$
 
 Net gain is zero where $\\Pi(L)=0$ on $L>0$:
 
-$$120 L^{\\frac{1}{2}}=6L, \\qquad L$$
+$$120 L^{\\frac{1}{2}}=6L, \$$
 
-$$120 L^{\\frac{1}{2}}=400$$
+$$L=400$$
 
 Those hours are not the same.
 
@@ -4197,9 +4193,9 @@ Keep the stated domain in force while you evaluate the model.
 
 Net gain crosses zero on $L>0$ where
 
-$$120\\sqrt{L}=6L, \\qquad L$$
+$$120\\sqrt{L}=6L, \$$
 
-$$120\\sqrt{L}=400$$
+$$L=400$$
 
 The claim is a crossing after more than $300$ hours. We have $400>300$.
 
@@ -4313,9 +4309,7 @@ Keep the stated domain in force while you evaluate the model.
 
 Sending $30$ units to each plant costs
 
-$$
-C_1(30)+C_2(30)=\\frac{1}{2}\\cdot 900+\\frac{1}{4}\\cdot 900
-$$
+$$C_1(30)+C_2(30)=\\frac{1}{2}\\cdot 900+\\frac{1}{4}\\cdot 900$$
 
 $$C_1(30)+C_2(30)=450+225$$
 
@@ -4365,21 +4359,13 @@ Name the recovered power rule, then substitute the claimed input.
 
 Both fitted points sit on the recovered law:
 
-$$3\\cdot 4^{\\frac{3}{2}}$$
+$$3\\cdot 4^{\\frac{3}{2}}=3\\cdot 8$$
 
-$$=3\\cdot 8$$
+$$3\\cdot 4^{\\frac{3}{2}}=24$$
 
-$$3\\cdot 4^{\\frac{3}{2}}$$
+$$3\\cdot 16^{\\frac{3}{2}}=3\\cdot 64$$
 
-$$=24$$
-
-$$3\\cdot 16^{\\frac{3}{2}}$$
-
-$$=3\\cdot 64$$
-
-$$3\\cdot 16^{\\frac{3}{2}}$$
-
-$$=192$$
+$$3\\cdot 16^{\\frac{3}{2}}=192$$
 
 so the first two measurements are consistent with a single power.
 
@@ -4405,13 +4391,9 @@ Read the exponent from the overview before comparing growth rates.
 
 The fitted response at $x=9$ is
 
-$$3\\cdot 9^{\\frac{3}{2}}$$
+$$3\\cdot 9^{\\frac{3}{2}}=3\\cdot 27$$
 
-$$=3\\cdot 27$$
-
-$$3\\cdot 9^{\\frac{3}{2}}$$
-
-$$=81$$
+$$3\\cdot 9^{\\frac{3}{2}}=81$$
 
 That matches the recorded $81$, so the measurement does not contradict the fitted law.
 
@@ -4422,13 +4404,9 @@ Start from the calibrated closed form in the overview.
 
 The fitted law at $x=25$ predicts
 
-$$3\\cdot 25^{\\frac{3}{2}}$$
+$$3\\cdot 25^{\\frac{3}{2}}=3\\cdot 125$$
 
-$$=3\\cdot 125$$
-
-$$3\\cdot 25^{\\frac{3}{2}}$$
-
-$$=375$$
+$$3\\cdot 25^{\\frac{3}{2}}=375$$
 
 The claim compares this with $350$. We have $375>350$.
 
@@ -4439,9 +4417,7 @@ Keep the stated domain in force while you evaluate the model.
 
 The fitted response at $x=9$ is
 
-$$3\\cdot 9^{\\frac{3}{2}}$$
-
-$$=81$$
+$$3\\cdot 9^{\\frac{3}{2}}=81$$
 
 The claim compares this with $70$. Compare with the claim:
 
@@ -4670,7 +4646,7 @@ $$Y(9)=20\\cdot 3$$
 
 $$Y(9)=60$$
 
-. Doubling that output means $Y(L)=120$. The overview recovered $Y(L)=20 L^{\\frac{1}{2}}$, so
+Doubling that output means $Y(L)=120$. The overview recovered $Y(L)=20 L^{\\frac{1}{2}}$, so
 
 $$20 L^{\\frac{1}{2}}=120$$
 
@@ -4933,19 +4909,17 @@ Keep the stated domain in force while you evaluate the model.
 
 Benefit per million of cost is the ratio of the two recovered curves:
 
-$$
-\\frac{B(x)}{C(x)}=\\frac{18 x^{\\frac{1}{2}}}{\\frac{1}{2} x^{\\frac{3}{2}}}
-$$
+$$\\frac{B(x)}{C(x)}=\\frac{18 x^{\\frac{1}{2}}}{\\frac{1}{2} x^{\\frac{3}{2}}}$$
 
 $$\\frac{B(x)}{C(x)}=\\frac{36}{x}$$
 
 That leftover power of $x$ is not constant. At the cost trial, the benefit trial, and the meeting:
 
-$$\\frac{B(4)}{C(4)}=9, \\qquad \\frac{B(16)}{C(16)}$$
+$$\\frac{B(4)}{C(4)}=9, \$$
 
-$$\\frac{B(4)}{C(4)}=2.25, \\qquad \\frac{B(36)}{C(36)}$$
+$$\\frac{B(16)}{C(16)}=2.25, \$$
 
-$$\\frac{B(4)}{C(4)}=1$$
+$$\\frac{B(36)}{C(36)}=1$$
 
 Three different ratios.
 
@@ -5285,9 +5259,9 @@ $$\\frac{E(v)}{v}=\\frac{v}{20}$$
 
 The leftover exponent is positive, so that average is not the same at every speed. At the two survey speeds:
 
-$$\\frac{E(30)}{30}=1.5, \\qquad \\frac{E(50)}{50}$$
+$$\\frac{E(30)}{30}=1.5, \$$
 
-$$\\frac{E(30)}{30}=2.5$$
+$$\\frac{E(50)}{50}=2.5$$
 
 Two different averages.
 
