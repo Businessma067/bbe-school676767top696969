@@ -286,7 +286,7 @@ async def expand_all_visible_chevrons(page, limit=12):
         if not clicked:
             # Fallback: click subsection titles that look collapsed
             subs = page.locator("button").filter(
-                has_text=re.compile(r"^(Sets:|Set Operations|Propositional|Quantifiers|Exam-style|The Rise|Dynamic Pricing|Marshall|Nudge|Antibiotic)")
+                has_text=re.compile(r"^(Sets:|Set Operations|Propositional|Quantifiers|Exam-Style|The Rise|Dynamic Pricing|Marshall|Nudge|Antibiotic)")
             )
             if await subs.count():
                 await soft_click(page, subs.first, 800)
@@ -481,7 +481,7 @@ async def demo_math(page):
         "Set Operations, Complements & Counting",
         "Propositional Logic & Implications",
         "Quantifiers, Validity & Deduction",
-        "Exam-style tasks",
+        "Exam-Style",
     ]:
         node = page.locator("button").filter(has_text=sub).first
         try:
