@@ -12,6 +12,7 @@ import ch5 from "./math-theory/ch5.md?raw";
 import ch6 from "./math-theory/ch6.md?raw";
 import ch7 from "./math-theory/ch7.md?raw";
 import ch8 from "./math-theory/ch8.md?raw";
+import ch9 from "./math-theory/ch9.md?raw";
 import ch11 from "./math-theory/ch11.md?raw";
 import ch12 from "./math-theory/ch12.md?raw";
 import ch13 from "./math-theory/ch13.md?raw";
@@ -68,6 +69,11 @@ export const MATH_COURSE_THEORY: Record<number, MathCourseTheoryChapter> = {
     num: 8,
     title: "Power functions",
     markdown: ch8,
+  },
+  9: {
+    num: 9,
+    title: "Polynomial functions",
+    markdown: ch9,
   },
   11: {
     num: 11,
