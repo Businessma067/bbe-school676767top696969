@@ -428,9 +428,22 @@ export class Ti30Engine {
     this.pushKey(String(this.mem[key]));
   }
 
+  /**
+   * Auto-close unmatched "(" so cos(30 / log(100 / (1+2 work like a TI
+   * calculator (Enter closes open parentheses).
+   */
+  private closeOpenParens(s: string): string {
+    let depth = 0;
+    for (const ch of s) {
+      if (ch === "(") depth++;
+      else if (ch === ")") depth = Math.max(0, depth - 1);
+    }
+    return depth > 0 ? s + ")".repeat(depth) : s;
+  }
+
   /** Normalize UI glyphs / aliases into parser ids. */
   private normalize(s: string): string {
-    return s
+    const rewritten = s
       .replace(/×/g, "*")
       .replace(/÷/g, "/")
       .replace(/−/g, "-")
@@ -445,6 +458,7 @@ export class Ti30Engine {
       })
       .replace(/\)(\d)/g, ")*$1")
       .replace(/\)([a-z(])/gi, ")*$1");
+    return this.closeOpenParens(rewritten);
   }
 
   private evalExpr(tokens: Tok[], env: Env): number {
