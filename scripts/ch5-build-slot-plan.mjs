@@ -1,7 +1,8 @@
 /**
  * Build shuffled slot plan for Ch.5 banks: 100 cases × 7 subtopics.
  * TRUE counts: exactly 20 of each 1..5, order shuffled.
- * Difficulty: 50 × 5/5, and 50 among 2/5, 3/5, 4/5 (~17/17/16), shuffled.
+ * Difficulty placeholders are mixed; after case text exists, run
+ * `python3 scripts/recalibrate-economics-difficulty.py` for content-based ratings.
  */
 import fs from "node:fs";
 

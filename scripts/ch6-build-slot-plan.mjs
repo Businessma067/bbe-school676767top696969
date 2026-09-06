@@ -9,7 +9,8 @@
  *   6.3 125  reading statements (margins / interpretation)
  *   6.4  60  types of accounting (conceptual; half-page)
  *
- * Within each: ~40% text / ~60% table; TRUE 1..5 even; difficulties mixed.
+ * Within each: ~40% text / ~60% table; TRUE 1..5 even; difficulty placeholders mixed
+ * (run `python3 scripts/recalibrate-economics-difficulty.py` after case text exists).
  */
 import fs from "node:fs";
 
