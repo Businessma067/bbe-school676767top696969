@@ -21,6 +21,10 @@ from _deepen_ch910_helpers import (  # noqa: E402
     regenerate_difference_letter,
     unpack_triple_products,
 )
+from _deepen_ch910_poly_regen import (  # noqa: E402
+    extract_named_polys,
+    regen_poly_eval_letter,
+)
 
 FILES = {
     "ch9": ROOT / "src/data/math-ch9-polynomials.json",
