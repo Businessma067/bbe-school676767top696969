@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""Assemble Chapter 10 diverse rewrite bank (10.1→50, 10.2→55, 10.3→32 after numeric pass).
+"""Assemble Chapter 10 diverse rewrite bank (10.1=44, 10.2=49, 10.3=30).
 
 Writes src/data/math-ch10-exp-log.json from the three diverse builder modules.
 """
@@ -17,7 +17,6 @@ sys.path.insert(0, str(ROOT / "scripts"))
 from _ch10_diverse_exp import EXP_COUNT, build_exp_tasks  # noqa: E402
 from _ch10_diverse_log import LOG_COUNT, build_log_tasks  # noqa: E402
 from _ch10_diverse_mixed import MIXED_COUNT, build_mixed_tasks  # noqa: E402
-from ch10_numeric_abcd_pass import apply_pass as apply_numeric_abcd_pass  # noqa: E402
 
 OUT = ROOT / "src/data/math-ch10-exp-log.json"
 
@@ -160,8 +159,6 @@ def main() -> None:
         sort += 1
 
     audit(tasks)
-    # Numeric/a-b-c-d pass: simplify exotic letters and inject concrete calibrations.
-    tasks = apply_numeric_abcd_pass(tasks, add_extras=True)
     payload = {
         "chapter": 10,
         "title": "Exponential and logarithmic functions",
