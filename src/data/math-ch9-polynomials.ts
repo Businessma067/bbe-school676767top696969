@@ -11,7 +11,7 @@ import ch9Exam from "@/data/math-ch9-mixed-exam.json";
 
 export const MATH_CH9_SUBSECTIONS = [
   { id: "9", title: "Polynomial functions" },
-  { id: "9.5", title: "Mixed exam" },
+  { id: "9.5", title: "Exam-Style" },
 ] as const;
 
 const MATH_CH9_CORE: MathTask[] = (ch9.tasks as MathTask[]).map((task, i) => ({

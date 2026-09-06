@@ -9,7 +9,7 @@ import ch10 from "@/data/math-ch10-exp-log.json";
 export const MATH_CH10_SUBSECTIONS = [
   { id: "10.1", title: "Exponential functions" },
   { id: "10.2", title: "Logarithmic functions" },
-  { id: "10.3", title: "Mixed exam" },
+  { id: "10.3", title: "Exam-Style" },
 ] as const;
 
 export const MATH_CH10_EXP_LOG: MathTask[] = (ch10.tasks as MathTask[]).map((t, i) => ({

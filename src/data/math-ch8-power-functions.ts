@@ -9,7 +9,7 @@ import ch8Exam from "@/data/math-ch8-exam.json";
 
 export const MATH_CH8_SUBSECTIONS = [
   { id: "8", title: "Power functions" },
-  { id: "8.5", title: "Exam-style tasks" },
+  { id: "8.5", title: "Exam-Style" },
 ] as const;
 
 const MATH_CH8_CORE: MathTask[] = [

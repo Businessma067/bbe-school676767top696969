@@ -29,7 +29,7 @@ export const MATH_CH1_SUBSECTIONS = [
   },
   {
     id: "1.5",
-    title: "Exam-style tasks",
+    title: "Exam-Style",
   },
 ] as const;
 

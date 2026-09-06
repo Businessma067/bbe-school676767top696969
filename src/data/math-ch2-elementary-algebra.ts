@@ -22,7 +22,7 @@ export const MATH_CH2_SUBSECTIONS = [
   { id: "2.2", title: "Rational expressions and algebraic fractions" },
   { id: "2.3", title: "Powers, roots, and negative exponents" },
   { id: "2.4", title: "Absolute value and algebraic rewriting" },
-  { id: "2.5", title: "Mixed exam sets" },
+  { id: "2.5", title: "Exam-Style" },
 ] as const;
 
 export const MATH_CH2_ALGEBRA: MathTask[] = (ch2Cases.tasks as MathTask[]).map((t) => ({

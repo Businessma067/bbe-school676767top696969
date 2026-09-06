@@ -69,7 +69,7 @@ export function getMathBuilderChapters(): CustomMockChapterToc[] {
         { id: "1.2", title: "Set Operations, Complements & Counting" },
         { id: "1.3", title: "Propositional Logic & Implications" },
         { id: "1.4", title: "Quantifiers, Validity & Deduction" },
-        { id: "1.5", title: "Exam-style tasks" },
+        { id: "1.5", title: "Exam-Style" },
       ]),
     ),
     toChapterToc(
@@ -81,7 +81,7 @@ export function getMathBuilderChapters(): CustomMockChapterToc[] {
         { id: "2.2", title: "Rational expressions and algebraic fractions" },
         { id: "2.3", title: "Powers, roots, and negative exponents" },
         { id: "2.4", title: "Absolute value and algebraic rewriting" },
-        { id: "2.5", title: "Mixed exam sets" },
+        { id: "2.5", title: "Exam-Style" },
       ]),
     ),
     toChapterToc(
@@ -96,7 +96,7 @@ export function getMathBuilderChapters(): CustomMockChapterToc[] {
         { id: "3.5", title: "Annuities, Annuities Due & Perpetuities" },
         { id: "3.6", title: "Mortgage Repayments" },
         { id: "3.7", title: "Internal Rate of Return" },
-        { id: "3.8", title: "Exam-style tasks" },
+        { id: "3.8", title: "Exam-Style" },
       ]),
     ),
     toChapterToc(
@@ -108,7 +108,7 @@ export function getMathBuilderChapters(): CustomMockChapterToc[] {
         { id: "4.2", title: "Quadratic equations" },
         { id: "4.3", title: "Rational, radical and absolute-value equations" },
         { id: "4.4", title: "Exponential and logarithmic equations" },
-        { id: "4.5", title: "Mixed exam sets" },
+        { id: "4.5", title: "Exam-Style" },
       ]),
     ),
     toChapterToc(
@@ -117,7 +117,7 @@ export function getMathBuilderChapters(): CustomMockChapterToc[] {
       "Chapter 5",
       subs(5, [
         { id: "5", title: "Linear equations in two unknowns" },
-        { id: "5.5", title: "Exam-style tasks" },
+        { id: "5.5", title: "Exam-Style" },
       ]),
     ),
     toChapterToc(
@@ -129,7 +129,7 @@ export function getMathBuilderChapters(): CustomMockChapterToc[] {
         { id: "6.2", title: "Quadratic Sign Inequalities" },
         { id: "6.3", title: "Compound & Special Inequalities" },
         { id: "6.4", title: "Word Problems" },
-        { id: "6.5", title: "Exam-style tasks" },
+        { id: "6.5", title: "Exam-Style" },
       ]),
     ),
     toChapterToc(
@@ -145,7 +145,7 @@ export function getMathBuilderChapters(): CustomMockChapterToc[] {
       "Chapter 8",
       subs(8, [
         { id: "8", title: "Power functions" },
-        { id: "8.5", title: "Exam-style tasks" },
+        { id: "8.5", title: "Exam-Style" },
       ]),
     ),
     toChapterToc(
@@ -154,7 +154,7 @@ export function getMathBuilderChapters(): CustomMockChapterToc[] {
       "Chapter 9",
       subs(9, [
         { id: "9", title: "Polynomial functions" },
-        { id: "9.5", title: "Mixed exam" },
+        { id: "9.5", title: "Exam-Style" },
       ]),
     ),
     toChapterToc(
@@ -164,7 +164,7 @@ export function getMathBuilderChapters(): CustomMockChapterToc[] {
       subs(10, [
         { id: "10.1", title: "Exponential functions" },
         { id: "10.2", title: "Logarithmic functions" },
-        { id: "10.3", title: "Mixed exam" },
+        { id: "10.3", title: "Exam-Style" },
       ]),
     ),
     toChapterToc(
@@ -176,7 +176,7 @@ export function getMathBuilderChapters(): CustomMockChapterToc[] {
         { id: "11.2", title: "Economic interpretation of the derivative" },
         { id: "11.3", title: "Finding and classifying optima" },
         { id: "11.4", title: "Interpreting graphs without algebra" },
-        { id: "11.5", title: "Exam-style tasks" },
+        { id: "11.5", title: "Exam-Style" },
       ]),
     ),
     toChapterToc(
@@ -189,7 +189,7 @@ export function getMathBuilderChapters(): CustomMockChapterToc[] {
         { id: "12.3", title: "Conditional Probability" },
         { id: "12.4", title: "Expected Value, Variance & SD" },
         { id: "12.5", title: "Bayes' Theorem" },
-        { id: "12.6", title: "Exam-style tasks" },
+        { id: "12.6", title: "Exam-Style" },
       ]),
     ),
     toChapterToc(
@@ -198,7 +198,7 @@ export function getMathBuilderChapters(): CustomMockChapterToc[] {
       "Chapter 13",
       subs(13, [
         { id: "13", title: "Binomial distribution" },
-        { id: "13.5", title: "Exam-style tasks" },
+        { id: "13.5", title: "Exam-Style" },
       ]),
     ),
   ];
