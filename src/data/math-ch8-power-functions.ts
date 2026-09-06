@@ -4067,8 +4067,6 @@ $$6L=6 L^{1}$$
 
 That is a monomial in hours hired.
 
- shows agreement.
-
 Keep the recovered coefficient and exponent fixed; only the claimed input (or threshold) changes.
 
 So the statement is True.`,
@@ -5827,8 +5825,6 @@ The overview recovered composed exponent $\\frac{3}{2}$.
 $$\\frac{3}{2}>1$$
 
 Losses accelerate as the wind strengthens.
-
- shows agreement.
 
 Keep the recovered coefficient and exponent fixed; only the claimed input (or threshold) changes.
 

@@ -1795,7 +1795,7 @@ The same inversion gives
 
 $$r = 50^{\\frac{1}{80}} - 1 \\approx 5.01\\%$$
 
-Compare the computed value with the claim (about $6.25\\%$. We have $5.01\\% \\ne 6.25\\%$). The two sides do not agree.
+Compare the computed value with the claim (about $6.25\\%$). We have $5.01\\% \\ne 6.25\\%$. The two sides do not agree.
 
 So the statement is False.`,
       `**C.** → False
@@ -2323,7 +2323,7 @@ Annual compounding at the same 5% nominal rate uses $n=1$:
 
 $$S_{\\mathrm{ann}} = 4{,}500 \\times 1.05 = 4{,}725.00$$
 
-Compare the computed value with the claim (\\$4,735.00. We have $4{,}725.00 \\ne 4{,}735.00$). The two sides do not agree.
+Compare the computed value with the claim (\\$4,735.00). We have $4{,}725.00 \\ne 4{,}735.00$. The two sides do not agree.
 
 So the statement is False.`,
       `**D.** → True
@@ -2884,7 +2884,7 @@ Each doubling multiplies the balance by $2$. Three full doubling periods therefo
 
 $$2^{3} = 8$$
 
-Compare the computed value with the claim (a factor of $6$. We have $8 \\ne 6$). The two sides do not agree.
+Compare the computed value with the claim (a factor of $6$). We have $8 \\ne 6$. The two sides do not agree.
 
 So the statement is False.`,
       `**E.** → False
@@ -3120,7 +3120,7 @@ The continuous compounding ceiling at this $9.5\\%$ quote is
 
 $$R_{\\mathrm{c}} = e^{0.095} - 1 \\approx 0.099659 \\approx 9.97\\%$$
 
-Compare the computed value with the claim (about $9.50\\%$, equal to the nominal rate. We have $9.97\\% \\ne 9.50\\%$). The two sides do not agree.
+Compare the computed value with the claim (about $9.50\\%$, equal to the nominal rate). We have $9.97\\% \\ne 9.50\\%$. The two sides do not agree.
 
 So the statement is False.`,
       `**D.** → False
@@ -3238,7 +3238,7 @@ Doubling the original \\$28,000 at the recovered rate takes
 
 $$t_2 = \\frac{\\ln 2}{0.06667} \\approx 10.40$$
 
-Compare the computed value with the claim (about $12.40$ years. We have $10.40 \\ne 12.40$). The two sides do not agree.
+Compare the computed value with the claim (about $12.40$ years). We have $10.40 \\ne 12.40$. The two sides do not agree.
 
 So the statement is False.`,
       `**E.** → False
@@ -3435,7 +3435,7 @@ Doubling at the recovered $7\\%$ net rate takes
 
 $$t_2 = \\frac{\\ln 2}{0.07} \\approx 9.90$$
 
-Compare the computed value with the claim (about $7.00$ years. We have $9.90 \\ne 7.00$). The two sides do not agree.
+Compare the computed value with the claim (about $7.00$ years). We have $9.90 \\ne 7.00$. The two sides do not agree.
 
 So the statement is False.`,
       `**D.** → False
@@ -7028,7 +7028,7 @@ $$1.08^{11} \\approx 2.331639$$
 
 $$a_{12} = 9{,}000 \\times 2.331639 \\approx 20{,}984.75$$
 
-Compare the computed value with the claim (about \\$20,715.85. The year-$12$ royalty is about \\$20,984.75). The two sides do not agree.
+Compare the computed value with the claim (about \\$20,715.85). The year-$12$ royalty is about \\$20,984.75. The two sides do not agree.
 
 So the statement is False.`,
       `**E.** → True
@@ -7801,7 +7801,7 @@ $$4^{1.5} = 4 \\times \\sqrt{4} = 8$$
 
 $$a_4 = \\frac{5{,}000}{8} = 625$$
 
-Compare the computed value with the claim (about \\$650.00. The fourth benefit is \\$625.00). The two sides do not agree.
+Compare the computed value with the claim (about \\$650.00). The fourth benefit is \\$625.00. The two sides do not agree.
 
 So the statement is False.`,
       `**B.** → True
@@ -8039,7 +8039,7 @@ $$1.06^6 \\approx 1.418519$$
 
 $$a_7 = 2{,}400{,}000 \\times 1.418519 \\approx 3{,}404{,}445.87$$
 
-Compare the computed value with the claim (about \\$2,900,000.00. Year-$7$ cash flow is about \\$3,404,445.87). The two sides do not agree.
+Compare the computed value with the claim (about \\$2,900,000.00). Year-$7$ cash flow is about \\$3,404,445.87. The two sides do not agree.
 
 So the statement is False.`,
     ],
@@ -8215,7 +8215,7 @@ Interest is the \\$5,000 target minus the recovered deposit:
 
 $$5{,}000 - 4{,}081.49 = 918.51$$
 
-Compare the computed value with the claim (\\$928.51. We have $918.51 \\ne 928.51$). The two sides do not agree.
+Compare the computed value with the claim (\\$928.51). We have $918.51 \\ne 928.51$. The two sides do not agree.
 
 So the statement is False.`,
       `**D.** → True
@@ -8416,7 +8416,7 @@ $$2{,}000 \\times 6 = 12{,}000$$
 
 $$13{,}603.84 - 12{,}000 = 1{,}603.84$$
 
-Compare the computed value with the claim (\\$1,703.84. We have $1{,}603.84 \\ne 1{,}703.84$). The two sides do not agree.
+Compare the computed value with the claim (\\$1,703.84). We have $1{,}603.84 \\ne 1{,}703.84$. The two sides do not agree.
 
 So the statement is False.`,
       `**C.** → False
@@ -8425,7 +8425,7 @@ The present-value equivalent discounts the recovered $F_6\\approx 13{,}603.84$:
 
 $$P_6 = \\frac{13{,}603.84}{(1.05)^6} \\approx 10{,}151.40$$
 
-Compare the computed value with the claim (\\$18,230.45. We have $10{,}151.40 \\ne 18{,}230.45$). The two sides do not agree.
+Compare the computed value with the claim (\\$18,230.45). We have $10{,}151.40 \\ne 18{,}230.45$. The two sides do not agree.
 
 So the statement is False.`,
       `**D.** → False
@@ -8732,7 +8732,7 @@ The 20-year share of the perpetuity is
 
 $$\\frac{57{,}349.67}{83{,}333.33} \\approx 0.6882 = 68.82\\%$$
 
-Compare the computed value with the claim (about $72.82\\%$. We have $68.82\\% \\ne 72.82\\%$). The two sides do not agree.
+Compare the computed value with the claim (about $72.82\\%$). We have $68.82\\% \\ne 72.82\\%$. The two sides do not agree.
 
 So the statement is False.`,
       `**D.** → False
@@ -8816,7 +8816,7 @@ The overview recovered $P_9=16{,}288.18$. That is less than Option 1's \\$18,000
 
 $$18{,}000 - 16{,}288.18 = 1{,}711.82$$
 
-Compare the computed value with the claim (a saving of \\$1,811.82. We have $1{,}711.82 \\ne 1{,}811.82$). The two sides do not agree.
+Compare the computed value with the claim (a saving of \\$1,811.82). We have $1{,}711.82 \\ne 1{,}811.82$. The two sides do not agree.
 
 So the statement is False.`,
       `**C.** → False
@@ -8838,7 +8838,7 @@ The excess over Option 1 is
 
 $$22{,}500 - 18{,}000 = 4{,}500$$
 
-Compare the computed value with the claim (\\$4,600. We have $4{,}500 \\ne 4{,}600$). The two sides do not agree.
+Compare the computed value with the claim (\\$4,600). We have $4{,}500 \\ne 4{,}600$. The two sides do not agree.
 
 So the statement is False.`,
       `**E.** → False
@@ -9045,7 +9045,7 @@ The dollar gap is the due pile minus the ordinary pile:
 
 $$21{,}426.05 - 20{,}405.76 = 1{,}020.29$$
 
-Compare the computed value with the claim (\\$1,120.29. We have $1{,}020.29 \\ne 1{,}120.29$). The two sides do not agree.
+Compare the computed value with the claim (\\$1,120.29). We have $1{,}020.29 \\ne 1{,}120.29$. The two sides do not agree.
 
 So the statement is False.`,
       `**D.** → False
@@ -9160,7 +9160,7 @@ The dollar gap is the due present value minus the ordinary present value:
 
 $$107{,}162.61 - 101{,}096.80 = 6{,}065.81$$
 
-Compare the computed value with the claim (\\$7,065.81. We have $6{,}065.81 \\ne 7{,}065.81$). The two sides do not agree.
+Compare the computed value with the claim (\\$7,065.81). We have $6{,}065.81 \\ne 7{,}065.81$. The two sides do not agree.
 
 So the statement is False.`,
       `**D.** → False
@@ -9366,7 +9366,7 @@ At a 4% required return,
 
 $$P' = \\frac{4.25}{0.04} = 106.25$$
 
-Compare the computed value with the claim (\\$116.25. We have $106.25 \\ne 116.25$). The two sides do not agree.
+Compare the computed value with the claim (\\$116.25). We have $106.25 \\ne 116.25$. The two sides do not agree.
 
 So the statement is False.`,
       `**D.** → False
@@ -9384,7 +9384,7 @@ A 20% dividend cut leaves $a'=4.25\\times 0.80=3.40$. At the same 7%,
 
 $$P'' = \\frac{3.40}{0.07} \\approx 48.57$$
 
-Compare the computed value with the claim (\\$50.57. We have $48.57 \\ne 50.57$). The two sides do not agree.
+Compare the computed value with the claim (\\$50.57). We have $48.57 \\ne 50.57$. The two sides do not agree.
 
 So the statement is False.`,
     ],
@@ -9567,7 +9567,7 @@ At a 6% required return,
 
 $$P'' = \\frac{24{,}000}{0.06-0.025} = \\frac{24{,}000}{0.035} = 685{,}714.29$$
 
-Compare the computed value with the claim (\\$715,714.29. We have $685{,}714.29 \\ne 715{,}714.29$). The two sides do not agree.
+Compare the computed value with the claim (\\$715,714.29). We have $685{,}714.29 \\ne 715{,}714.29$. The two sides do not agree.
 
 So the statement is False.`,
       `**E.** → True
@@ -9657,7 +9657,7 @@ The understatement is
 
 $$51.50 - 50.00 = 1.50$$
 
-Compare the computed value with the claim (\\$2.50. We have $1.50 \\ne 2.50$). The two sides do not agree.
+Compare the computed value with the claim (\\$2.50). We have $1.50 \\ne 2.50$. The two sides do not agree.
 
 So the statement is False.`,
       `**D.** → False
@@ -10010,7 +10010,7 @@ The due future value scales the ordinary future value by one extra period:
 
 $$F_{\\mathrm{due}} = \\frac{4{,}200}{0.08}\\left[(1.08)^5-1\\right](1.08) = 26{,}610.90$$
 
-Compare the computed value with the claim (\\$27,610.90. We have $26{,}610.90 \\ne 27{,}610.90$). The two sides do not agree.
+Compare the computed value with the claim (\\$27,610.90). We have $26{,}610.90 \\ne 27{,}610.90$. The two sides do not agree.
 
 So the statement is False.`,
       `**C.** → False
@@ -10422,7 +10422,7 @@ Total paid is the recovered monthly payment times $48$:
 
 $$597.24 \\times 48 \\approx 28{,}667.57$$
 
-Compare the computed value with the claim (\\$29,500.00. We have about \\$28,667.57). The two sides do not agree.
+Compare the computed value with the claim (\\$29,500.00). We have about \\$28,667.57. The two sides do not agree.
 
 So the statement is False.`,
       `**D.** → True
@@ -10662,7 +10662,7 @@ Total cash outlay is ten copies of the recovered due payment:
 
 $$22{,}946.14 \\times 10 \\approx 229{,}461.39$$
 
-Compare the computed value with the claim (\\$220,000.00. We have about \\$229,461.39). The two sides do not agree.
+Compare the computed value with the claim (\\$220,000.00). We have about \\$229,461.39. The two sides do not agree.
 
 So the statement is False.`,
     ],
@@ -10941,7 +10941,7 @@ Three years of the recovered \\$1,030 equivalent at $8\\%$ is
 
 $$F_3 = \\frac{1{,}030}{0.08}\\bigl[(1.08)^{3}-1\\bigr] \\approx 3{,}343.79$$
 
-Compare the computed value with the claim (\\$3,500.00. We have about \\$3,343.79). The two sides do not agree.
+Compare the computed value with the claim (\\$3,500.00). We have about \\$3,343.79. The two sides do not agree.
 
 So the statement is False.`,
       `**D.** → True
@@ -11074,7 +11074,7 @@ Lifetime interest is total paid minus principal:
 
 $$240 \\times 1{,}432.86 - 200{,}000 \\approx 143{,}886.91$$
 
-Compare the computed value with the claim (\\$120,000.00. We have about \\$143,886.91). The two sides do not agree.
+Compare the computed value with the claim (\\$120,000.00). We have about \\$143,886.91. The two sides do not agree.
 
 So the statement is False.`,
     ],
@@ -11160,7 +11160,7 @@ Total paid is eight full payments plus the recovered final instalment:
 
 $$200{,}000 + 13{,}100.16 = 213{,}100.16$$
 
-Compare the computed value with the claim (\\$210,000.00. We have about \\$213,100.16). The two sides do not agree.
+Compare the computed value with the claim (\\$210,000.00). We have about \\$213,100.16. The two sides do not agree.
 
 So the statement is False.`,
       `**E.** → True
@@ -11695,7 +11695,7 @@ The computed value is approximately 20%, which matches the claim.
 So the statement is True.`,
       `**B.** → True
 
-Net present value is the discounted cash inflow total minus the initial outlay. The decision rule accepts the project when that difference is positive.Fifteen percent sits below the recovered $20\\%$ IRR. NPV at $15\\%$ is
+Net present value is the discounted cash inflow total minus the initial outlay. The decision rule accepts the project when that difference is positive. Fifteen percent sits below the recovered $20\\%$ IRR. NPV at $15\\%$ is
 
 $$A = -8{,}000 + \\frac{9{,}600}{1.15} = -8{,}000 + 8{,}347.83 = 347.83$$
 
@@ -12341,7 +12341,7 @@ $$
 r \\approx 10.69\\%
 $$
 
-The claim names that same figure. 
+The claim names that same figure.
 
 Those two figures agree.
 
@@ -12535,7 +12535,7 @@ The overview recovered Option 2's cash flows $a_0=-50{,}000$ and $a_1=a_2=6{,}00
 
 $$-50{,}000 + 6{,}000 + 6{,}000 = -38{,}000$$
 
-Compare the computed value with the claim (-\\$40,000. We have -\\$38,000). The two sides do not agree.
+Compare the computed value with the claim (-\\$40,000). We have -\\$38,000. The two sides do not agree.
 
 So the statement is False.`,
       `**E.** → True

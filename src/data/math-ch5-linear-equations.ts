@@ -1771,7 +1771,7 @@ The Suite premium is
 
 $$210 - 140 = 70$$
 
-The claim is \\$200 more. 
+The claim is \\$200 more.
 
 The shared elimination already fixed the unique pair; this letter only tests the claim's extra arithmetic.
 

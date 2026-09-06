@@ -2078,7 +2078,7 @@ The two sides agree.
 So the statement is True.`,
       `**D.** → False
 
-Intersection keeps only numbers that sit in both lists. The overview listed 
+Intersection keeps only numbers that sit in both lists. The overview listed
 
 $$A\\cap B=\\{4,5\\}$$. The claimed $\\{4,5,6\\}$ pads the overlap with $6$, and $6$ sits in $B$ but misses $A$. The lists do not match.
 
@@ -2128,7 +2128,7 @@ $$(A\\cup B)^c=A^c\\cap B^c,\\qquad (A\\cap B)^c=A^c\\cup B^c.$$`,
     tactical_explanations: [
       `**A.** → True
 
-The overview already counted 
+The overview already counted
 
 $$\\lvert A\\times B\\rvert=2\\cdot 3=6$$
 
@@ -2280,11 +2280,11 @@ which is not the four-element set $\\{1,2,5,6\\}$. Outer buckets of a Venn diagr
 So the statement is False.`,
       `**C.** → False
 
-Symmetric difference excludes the overlap. The overview listed 
+Symmetric difference excludes the overlap. The overview listed
 
 $$A\\cap B=\\{3,4\\}$$
 
- and 
+ and
 
 $$A\\triangle B=\\{1,2,5,6\\}$$, which share nothing. Already $3\\in A\\cap B$ and $3\\notin A\\triangle B$, so $A\\cap B\\nsubseteq A\\triangle B$.
 
@@ -2341,11 +2341,11 @@ Joining the leftovers gives $A\\triangle B=\\{1,2,5,6\\}$.`,
     tactical_explanations: [
       `**A.** → True
 
-The overview already counted 
+The overview already counted
 
 $$5\\cdot 8=40$$
 
- ordered pairs. Product size is cells, not 
+ ordered pairs. Product size is cells, not
 
 $$5+8=13$$
 
@@ -2456,9 +2456,9 @@ Take $T=-5$: not frost-safe ($25\\ge 16$) and not irrigating ($-5<-1$). The whol
 So the statement is False.`,
       `**E.** → True
 
-Frost-safe yet dry is the leftover 
+Frost-safe yet dry is the leftover
 
-$$A\\setminus B=(-4,-1)$$. At 
+$$A\\setminus B=(-4,-1)$$. At
 
 $$T=-2$$
 
@@ -2504,9 +2504,7 @@ Neither is the survey minus the union. The overview recovered $\\lvert A\\cup B\
 
 $$200-160=40.$$
 
-Compare the computed value with the claim ($40$.
-
-That matches the claim). The two sides agree.
+Compare the computed value with the claim ($40$). That matches the claim. The two sides agree.
 
 So the statement is True.`,
       `**C.** → False
@@ -2674,9 +2672,9 @@ That matches the claim.
 So the statement is True.`,
       `**D.** → False
 
-The opposite leftover is 
+The opposite leftover is
 
-$$B\\setminus A=\\{60\\}$$, while 
+$$B\\setminus A=\\{60\\}$$, while
 
 $$A\\setminus B=\\{10,20\\}$$. The sizes already disagree ($1$ versus $2$), and $10$ sits in the first leftover but not the second. Difference is not commutative.
 
@@ -2753,9 +2751,9 @@ That matches the claim.
 So the statement is True.`,
       `**D.** → False
 
-The opposite leftover is the singleton 
+The opposite leftover is the singleton
 
-$$B\\setminus A=\\{e\\}$$, while 
+$$B\\setminus A=\\{e\\}$$, while
 
 $$A\\setminus B=\\{a,b\\}$$. Different sizes already forbid equality, and $a$ sits in one leftover but not the other. Difference is not commutative.
 
@@ -2906,7 +2904,7 @@ The two sides agree.
 So the statement is True.`,
       `**C.** → True
 
-$$A\\cap B=\\emptyset$$, so 
+$$A\\cap B=\\emptyset$$, so
 
 $$(A\\cap B)^c=U$$. The other side $A^c\\cup B^c$ is evens joined with odds, again $U$. Complementing the empty set relative to $U$ restores $U$ in full.
 
@@ -2972,11 +2970,11 @@ Letter $s$ sits in $B$, so it sits in the union and cannot sit in the complement
 So the statement is True.`,
       `**B.** → True
 
-The overview listed 
+The overview listed
 
 $$A^c=\\{s,t,u\\}$$
 
- and 
+ and
 
 $$B^c=\\{p,q,t,u\\}$$. Their intersection is $\\{t,u\\}$, matching $(A\\cup B)^c$. Letter $s$ fails the intersection because $s\\in B$. De Morgan's first law is that agreement.
 
@@ -3032,7 +3030,7 @@ $$A\\cup B=\\{p,q,r,s\\},\\qquad A\\cap B=\\{r\\},\\qquad A^c=\\{s,t,u\\},\\qqua
     tactical_explanations: [
       `**A.** → True
 
-The overview already counted 
+The overview already counted
 
 $$\\lvert A\\times B\\rvert=2\\cdot 3=6$$. Product size is the number of cells, not the number of distinct symbols used. Two rows and three columns are six ordered pairs.
 
@@ -3101,7 +3099,7 @@ Turning the grid on its side produces $B\\times A$, same count, different member
     tactical_explanations: [
       `**A.** → True
 
-The overview already counted 
+The overview already counted
 
 $$3\\cdot 2=6$$
 
@@ -3326,7 +3324,7 @@ Disjointness makes the subtractions do nothing: there is no shared member to del
     tactical_explanations: [
       `**A.** → True
 
-Adding $22+15$ counts the six two-game players twice. Subtracting once restores a single copy. From the shared solve, 
+Adding $22+15$ counts the six two-game players twice. Subtracting once restores a single copy. From the shared solve,
 
 $$\\lvert A\\cup B\\rvert=31$$. The claim is that same figure.
 
@@ -3424,7 +3422,7 @@ $$=34-12$$
 
 $$=22$$
 
-Compare the computed value with the claim ($22$. Matching that count,). The two sides agree.
+Compare the computed value with the claim ($22$). The two sides agree.
 
 So the statement is True.`,
       `**C.** → True
@@ -3465,7 +3463,7 @@ $$=28-12$$
 
 $$=16$$
 
-Compare the computed value with the claim ($16$. Matching that count,). The two sides agree.
+Compare the computed value with the claim ($16$). The two sides agree.
 
 So the statement is True.`,
     ],
@@ -3521,7 +3519,7 @@ $$=20-5$$
 
 $$=15$$
 
-Compare the computed value with the claim ($15$. Matching that count,). The two sides agree.
+Compare the computed value with the claim ($15$). The two sides agree.
 
 So the statement is True.`,
       `**C.** → True
@@ -3564,7 +3562,7 @@ $$=18-5$$
 
 $$=13$$
 
-Compare the computed value with the claim ($13$. Matching that count,). The two sides agree.
+Compare the computed value with the claim ($13$). The two sides agree.
 
 So the statement is True.`,
     ],
@@ -3967,9 +3965,7 @@ Scan $P$ against $E$. The only shared member is the even prime $2$:
 
 $$P\\cap E=\\{2\\}$$
 
-Compare the computed value with the claim (that singleton.
-
-That matches the claim). The two sides agree.
+Compare the computed value with the claim (that singleton). That matches the claim. The two sides agree.
 
 So the statement is True.`,
       `**B.** → True
@@ -3978,9 +3974,7 @@ Difference $P\\setminus E$ deletes a member of $P$ only when it also sits in $E$
 
 $$P\\setminus E=\\{3,5,7,11,13\\}$$
 
-Compare the computed value with the claim (that roster.
-
-That matches the claim). The two sides agree.
+Compare the computed value with the claim (that roster). That matches the claim. The two sides agree.
 
 So the statement is True.`,
       `**C.** → False
@@ -4827,9 +4821,7 @@ Adding $40$ and $35$ counts the $15$ both-buyers twice, so subtract them once:
 
 $$|X\\cup Y|=40+35-15=60$$
 
-Compare the computed value with the claim ($60$.
-
-That matches the claim). The two sides agree.
+Compare the computed value with the claim ($60$). That matches the claim. The two sides agree.
 
 So the statement is True.`,
       `**C.** → True
@@ -4838,9 +4830,7 @@ Exclusive or keeps only the two outer regions. X-only is $40-15=25$ and Y-only i
 
 $$25+20=45$$
 
-Compare the computed value with the claim ($45$.
-
-That matches the claim). The two sides agree.
+Compare the computed value with the claim ($45$). That matches the claim. The two sides agree.
 
 So the statement is True.`,
       `**D.** → True
@@ -5283,9 +5273,7 @@ and the extra fact that $P$ is true travels along it. A true $P$ forces $Q$ true
 
 $$\\neg S \\Rightarrow C$$
 
-Compare the computed value with the claim (that same implication.
-
-That matches the claim). The two sides agree.
+Compare the computed value with the claim (that same implication). That matches the claim. The two sides agree.
 
 So the statement is True.`,
       `**B.** → False
@@ -7552,7 +7540,7 @@ Company Z has $C$ true, $W$ true, and $S$ false.`,
     context: `Several independent mini-scenarios testing whether a proof or negation is correctly constructed.`,
     statements: [
       `Proving "there is no smallest positive real number" by assuming such a number x exists and noting x/2 is smaller (a contradiction) is a valid proof by contradiction.`,
-      `A "proof" of "√3 is irrational" that begins "Assume √3 is irrational.." and proceeds from there is a valid proof by contradiction.`,
+      `A "proof" of "√3 is irrational" that begins "Assume √3 is irrational." and proceeds from there is a valid proof by contradiction.`,
       `The negation of "All flights are delayed and all trains are on time" is "No flight is delayed and no train is on time."`,
       `For "Some employee always arrives late" (some employee is late every day), the correct negation is "All employees are never late."`,
       `One satisfying value proves an existential claim; a universal claim needs an argument for an arbitrary value, not a finite check.`,
