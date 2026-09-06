@@ -43,7 +43,7 @@ $$
 \\dfrac{2ah+h^{2}-4h}{h} = 2a+h-4
 $$
 
-A common trap is dropping the $-4h$ from the linear term; keeping every contribution yields exactly the claimed simplification. Writing every intermediate line keeps the comparison with the claim mechanical.
+A common trap is dropping the $-4h$ from the linear term; keeping every contribution yields exactly the claimed simplification.
 
 So the statement is True.`,
       `**B.** → True
@@ -64,7 +64,7 @@ $$
 P'(3) = 2
 $$
 
-Do not confuse the derivative value with the height $P(3)=4$ on the curve — the claim asks only for the slope. The computed slope matches. The stem's formula is enough; no outside identity is required for the check. Substituting only after the general expression is finished avoids mixing height with slope.
+Do not confuse the derivative value with the height $P(3)=4$ on the curve — the claim asks only for the slope. The computed slope matches.
 
 So the statement is True.`,
       `**C.** → True
@@ -73,6 +73,18 @@ A tangent line needs one point on the curve and the slope there. First evaluate 
 
 $$
 P(3) = 9-12+7
+$$
+
+$$
+9 - 12 = -3
+$$
+
+$$
+-3 + 7 = 4
+$$
+
+$$
+P(3) = 4
 $$
 
 $$
@@ -109,7 +121,7 @@ $$
 y = 2x-2
 $$
 
-A trap is writing $y=2x+4$ from the point alone; the algebra above confirms the claimed tangent. Substituting only after the general expression is finished avoids mixing height with slope.
+A trap is writing $y=2x+4$ from the point alone; the algebra above confirms the claimed tangent.
 
 So the statement is True.`,
       `**D.** → False
@@ -120,7 +132,7 @@ $$
 P'(x) = 2x-4
 $$
 
-Solve $2x-4>0$ to see that $P'(x)>0$ for every $x>2$, so the profit curve is increasing on that ray. The claim asserts it is decreasing there — that flips the sign of $P'$. The named evaluation already serves as a counter-example. Holding both formulas in view makes the failure obvious. The derived expression and the asserted one disagree at a checkable place.
+Solve $2x-4>0$ to see that $P'(x)>0$ for every $x>2$, so the profit curve is increasing on that ray. The claim asserts it is decreasing there — that flips the sign of $P'$.
 
 So the statement is False.`,
       `**E.** → True
@@ -132,10 +144,14 @@ $$
 $$
 
 $$
+2x = 4
+$$
+
+$$
 x = 2
 $$
 
-The parabola $P(x)=x^{2}-4x+7$ opens upward (leading coefficient $+1>0$), so this unique stationary point is a minimum rather than a maximum. Do not confuse a critical-point location with a maximum just because profit is discussed. The same checklist — differentiate, simplify, evaluate — settles the assertion. Writing every intermediate line keeps the comparison with the claim mechanical.
+The parabola $P(x)=x^{2}-4x+7$ opens upward (leading coefficient $+1>0$), so this unique stationary point is a minimum rather than a maximum. Do not confuse a critical-point location with a maximum just because profit is discussed.
 
 So the statement is True.`
     ],
@@ -191,7 +207,7 @@ $$
 C'(q) = 12+\\dfrac{3}{50}q
 $$
 
-The constant $200$ vanishes under differentiation, and $\\dfrac{6}{100}$ reduces to $\\dfrac{3}{50}$. That is exactly the claimed marginal-cost formula. The stem's formula is enough; no outside identity is required for the check. Substituting only after the general expression is finished avoids mixing height with slope.
+The constant $200$ vanishes under differentiation, and $\\dfrac{6}{100}$ reduces to $\\dfrac{3}{50}$. That is exactly the claimed marginal-cost formula.
 
 So the statement is True.`,
       `**B.** → True
@@ -207,6 +223,14 @@ C'(100) = 12+6
 $$
 
 $$
+12 + 6 = 18
+$$
+
+$$
+C'(100) = 18
+$$
+
+$$
 = 18
 $$
 
@@ -218,7 +242,7 @@ $$
 C'(100) = 18
 $$
 
-A trap here is evaluating total cost $C(100)=1700$ by mistake when the claim asks for the derivative. The slope computation matches the claim. Substituting only after the general expression is finished avoids mixing height with slope. Coefficient and sign agreement with the claim is what decides the letter. The same checklist — differentiate, simplify, evaluate — settles the assertion.
+A trap here is evaluating total cost $C(100)=1700$ by mistake when the claim asks for the derivative. The slope computation matches the claim.
 
 So the statement is True.`,
       `**C.** → True
@@ -229,7 +253,7 @@ $$
 C'(100) = 18
 $$
 
-so producing one extra unit near that output raises total cost by approximately $18$ euros. The word "approximately" matters: the derivative is the local linear estimate, not an exact finite difference. Matching that reading, the statement is True. Coefficient and sign agreement with the claim is what decides the letter.
+so producing one extra unit near that output raises total cost by approximately $18$ euros. The word "approximately" matters: the derivative is the local linear estimate, not an exact finite difference. Matching that reading,
 
 So the statement is True.`,
       `**D.** → False
@@ -240,7 +264,7 @@ $$
 \\dfrac{C(q)}{q} = \\dfrac{200}{q}+12+\\dfrac{3}{100}q
 $$
 
-whereas $C'(q)=12+\\dfrac{3}{50}q$ is marginal cost — the slope of total cost. Those two functions agree only at special points, not identically. The claim's identification of $C'$ with average cost is incorrect. Holding both formulas in view makes the failure obvious. The derived expression and the asserted one disagree at a checkable place. That mismatch alone is enough to reject the letter.
+whereas $C'(q)=12+\\dfrac{3}{50}q$ is marginal cost — the slope of total cost. Those two functions agree only at special points, not identically. The claim's identification of $C'$ with average cost is incorrect.
 
 So the statement is False.`,
       `**E.** → True
@@ -265,7 +289,7 @@ $$
 y = 1700+18(q-100)
 $$
 
-exactly as claimed. Do not replace the intercept $1700$ by the fixed cost $200$. Comparing with the claim, the statement is True. Writing every intermediate line keeps the comparison with the claim mechanical. The stem's formula is enough; no outside identity is required for the check.
+exactly as claimed. Do not replace the intercept $1700$ by the fixed cost $200$. Comparing with the claim,
 
 So the statement is True.`
     ],
@@ -317,7 +341,7 @@ $$
 Q'(L) = \\dfrac{15}{2}L^{\\frac{1}{2}}
 $$
 
-A trap is writing $5\\cdot\\dfrac{3}{2}L^{\\frac{3}{2}}$ without lowering the exponent. The simplified formula matches the claim. Substituting only after the general expression is finished avoids mixing height with slope.
+A trap is writing $5\\cdot\\dfrac{3}{2}L^{\\frac{3}{2}}$ without lowering the exponent. The simplified formula matches the claim.
 
 So the statement is True.`,
       `**B.** → True
@@ -332,7 +356,7 @@ $$
 Q'(4) = 15
 $$
 
-Do not confuse this slope with the output level $Q(4)=5\\cdot 8=40$. The claim asks only for $Q'(4)$, and that value equals $15$. Coefficient and sign agreement with the claim is what decides the letter. The same checklist — differentiate, simplify, evaluate — settles the assertion. Writing every intermediate line keeps the comparison with the claim mechanical.
+Do not confuse this slope with the output level $Q(4)=5\\cdot 8=40$. The claim asks only for $Q'(4)$, and that value equals $15$.
 
 So the statement is True.`,
       `**C.** → True
@@ -343,7 +367,7 @@ $$
 Q'(4) = 15
 $$
 
-so one extra labour-hour near that staffing level raises output by approximately $15$ units. The approximation language is intentional: the derivative is not an exact finite jump. Matching that reading, the statement is True. The same checklist — differentiate, simplify, evaluate — settles the assertion. Writing every intermediate line keeps the comparison with the claim mechanical.
+so one extra labour-hour near that staffing level raises output by approximately $15$ units. The approximation language is intentional: the derivative is not an exact finite jump. Matching that reading,
 
 So the statement is True.`,
       `**D.** → False
@@ -354,7 +378,9 @@ $$
 Q'(L) = \\dfrac{15}{2}L^{\\frac{1}{2}}
 $$
 
-which changes whenever $L$ changes. Only a constant function would stay flat for all $L>0$; here the square-root factor grows with labour. Marginal product is therefore not constant. The derived expression and the asserted one disagree at a checkable place. That mismatch alone is enough to reject the letter. Rephrasing the claim cannot repair an algebraic contradiction.
+which changes whenever $L$ changes. Only a constant function would stay flat for all $L>0$; here the square-root factor grows with labour. Marginal product is therefore not constant.
+
+Rephrasing the claim cannot repair an algebraic contradiction.
 
 So the statement is False.`,
       `**E.** → False
@@ -369,7 +395,9 @@ $$
 \\dfrac{Q'(8)}{Q'(4)} = \\sqrt{2}\\neq 2
 $$
 
-Because $Q'$ scales like $\\sqrt{L}$, doubling labour multiplies marginal product by $\\sqrt{2}$, not by $2$. The claim's "exactly doubles" comparison is incorrect. That mismatch alone is enough to reject the letter. Rephrasing the claim cannot repair an algebraic contradiction. The named evaluation already serves as a counter-example.
+Because $Q'$ scales like $\\sqrt{L}$, doubling labour multiplies marginal product by $\\sqrt{2}$, not by $2$. The claim's "exactly doubles" comparison is incorrect.
+
+Rephrasing the claim cannot repair an algebraic contradiction.
 
 So the statement is False.`
     ],
@@ -421,7 +449,7 @@ $$
 R(q) = 80q-2q^{2}
 $$
 
-Do not leave the expression as $q(80-2q)$ when the claim asks for the expanded quadratic. That expanded form is exactly what is named. Coefficient and sign agreement with the claim is what decides the letter. The same checklist — differentiate, simplify, evaluate — settles the assertion. Writing every intermediate line keeps the comparison with the claim mechanical.
+Do not leave the expression as $q(80-2q)$ when the claim asks for the expanded quadratic. That expanded form is exactly what is named.
 
 So the statement is True.`,
       `**B.** → True
@@ -432,7 +460,7 @@ $$
 R'(q) = 80-4q
 $$
 
-A trap is writing $R'(q)=-2$ from the price slope. The claimed formula matches the correct differentiation. The same checklist — differentiate, simplify, evaluate — settles the assertion. Writing every intermediate line keeps the comparison with the claim mechanical. The stem's formula is enough; no outside identity is required for the check.
+A trap is writing $R'(q)=-2$ from the price slope. The claimed formula matches the correct differentiation.
 
 So the statement is True.`,
       `**C.** → True
@@ -448,6 +476,14 @@ R'(10) = 80-40
 $$
 
 $$
+80 - 40 = 40
+$$
+
+$$
+R'(10) = 40
+$$
+
+$$
 = 40
 $$
 
@@ -459,7 +495,7 @@ $$
 R'(10) = 40
 $$
 
-Do not confuse this with price $p(10)=60$ or with revenue $R(10)=600$. The slope computation matches the claim. Writing every intermediate line keeps the comparison with the claim mechanical. The stem's formula is enough; no outside identity is required for the check. Substituting only after the general expression is finished avoids mixing height with slope.
+Do not confuse this with price $p(10)=60$ or with revenue $R(10)=600$. The slope computation matches the claim.
 
 So the statement is True.`,
       `**D.** → False
@@ -470,7 +506,9 @@ $$
 R'(q) = 80-4q
 $$
 
-These are different functions for every $q>0$. Equating $R'$ with $p'$ forgets that revenue is the product $q\\,p(q)$. The claim's identification is incorrect. That mismatch alone is enough to reject the letter. Rephrasing the claim cannot repair an algebraic contradiction. The named evaluation already serves as a counter-example. Holding both formulas in view makes the failure obvious.
+These are different functions for every $q>0$. Equating $R'$ with $p'$ forgets that revenue is the product $q\\,p(q)$. The claim's identification is incorrect.
+
+Rephrasing the claim cannot repair an algebraic contradiction.
 
 So the statement is False.`,
       `**E.** → True
@@ -495,7 +533,7 @@ $$
 y = 600+40(q-10)
 $$
 
-exactly as claimed. Replacing $600$ by $p(10)$ would break the tangent equation. Comparing with the claim, the statement is True. Substituting only after the general expression is finished avoids mixing height with slope. Coefficient and sign agreement with the claim is what decides the letter.
+exactly as claimed. Replacing $600$ by $p(10)$ would break the tangent equation. Comparing with the claim,
 
 So the statement is True.`
     ],
@@ -545,7 +583,7 @@ $$
 A(q) = \\dfrac{300}{q}+6+\\dfrac{3}{100}q
 $$
 
-Each term of $C$ contributes separately: the fixed cost becomes $\\dfrac{300}{q}$, the linear piece stays $6$, and the quadratic becomes proportional to $q$. That is the claimed simplification. The same checklist — differentiate, simplify, evaluate — settles the assertion. Writing every intermediate line keeps the comparison with the claim mechanical.
+Each term of $C$ contributes separately: the fixed cost becomes $\\dfrac{300}{q}$, the linear piece stays $6$, and the quadratic becomes proportional to $q$. That is the claimed simplification.
 
 So the statement is True.`,
       `**B.** → True
@@ -556,7 +594,7 @@ $$
 A'(q) = -\\dfrac{300}{q^{2}}+\\dfrac{3}{100}
 $$
 
-A trap is differentiating $\\dfrac{3}{100}q$ as $\\dfrac{3}{100}q^{2}$. The claimed derivative matches. Writing every intermediate line keeps the comparison with the claim mechanical. The stem's formula is enough; no outside identity is required for the check.
+A trap is differentiating $\\dfrac{3}{100}q$ as $\\dfrac{3}{100}q^{2}$. The claimed derivative matches.
 
 So the statement is True.`,
       `**C.** → True
@@ -575,7 +613,7 @@ $$
 A'(100) = 0
 $$
 
-The two contributions cancel exactly at this output. The derivative vanishes there, matching the claim. The stem's formula is enough; no outside identity is required for the check. Substituting only after the general expression is finished avoids mixing height with slope. Coefficient and sign agreement with the claim is what decides the letter.
+The two contributions cancel exactly at this output. The derivative vanishes there, matching the claim.
 
 So the statement is True.`,
       `**D.** → False
@@ -586,7 +624,7 @@ $$
 A'(q) = -\\dfrac{300}{q^{2}}+\\dfrac{3}{100}
 $$
 
-is the rate of change of average cost. Those are different objects: one tracks the slope of $C$, the other the slope of $C/q$. Identifying $A'$ with marginal cost is incorrect. Rephrasing the claim cannot repair an algebraic contradiction. The named evaluation already serves as a counter-example. Holding both formulas in view makes the failure obvious.
+is the rate of change of average cost. Those are different objects: one tracks the slope of $C$, the other the slope of $C/q$. Identifying $A'$ with marginal cost is incorrect. Rephrasing the claim cannot repair an algebraic contradiction.
 
 So the statement is False.`,
       `**E.** → True
@@ -597,7 +635,7 @@ $$
 A'(100) = 0
 $$
 
-average cost is locally flat at $q=100$. That does not by itself say whether the flat point is a min or max — but local flatness is exactly what the claim asserts. Coefficient and sign agreement with the claim is what decides the letter. The same checklist — differentiate, simplify, evaluate — settles the assertion. Writing every intermediate line keeps the comparison with the claim mechanical.
+average cost is locally flat at $q=100$. That does not by itself say whether the flat point is a min or max — but local flatness is exactly what the claim asserts.
 
 So the statement is True.`
     ],
@@ -651,7 +689,7 @@ $$
 W'(n) = -\\dfrac{48}{(n+3)^{2}}
 $$
 
-The inner derivative of $n+3$ is $1$, so no extra factor appears. That matches the claimed formula. Writing every intermediate line keeps the comparison with the claim mechanical. The stem's formula is enough; no outside identity is required for the check. Substituting only after the general expression is finished avoids mixing height with slope.
+The inner derivative of $n+3$ is $1$, so no extra factor appears. That matches the claimed formula.
 
 So the statement is True.`,
       `**B.** → True
@@ -670,7 +708,7 @@ $$
 W'(3) = -\\dfrac{4}{3}
 $$
 
-Keep the minus sign: adding agents reduces waiting time. The computed value matches the claim. The stem's formula is enough; no outside identity is required for the check. Substituting only after the general expression is finished avoids mixing height with slope. Coefficient and sign agreement with the claim is what decides the letter.
+Keep the minus sign: adding agents reduces waiting time. The computed value matches the claim.
 
 So the statement is True.`,
       `**C.** → True
@@ -681,7 +719,7 @@ $$
 W'(3) = -\\dfrac{4}{3}
 $$
 
-so adding one more agent lowers waiting time by approximately $\\dfrac{4}{3}$ minutes. The negative sign is the reduction; the claim's wording matches that reading. Substituting only after the general expression is finished avoids mixing height with slope. Coefficient and sign agreement with the claim is what decides the letter.
+so adding one more agent lowers waiting time by approximately $\\dfrac{4}{3}$ minutes. The negative sign is the reduction; the claim's wording matches that reading.
 
 So the statement is True.`,
       `**D.** → False
@@ -692,7 +730,7 @@ $$
 W'(n) = -\\dfrac{48}{(n+3)^{2}}<0
 $$
 
-for every $n>0$, waiting time is decreasing in the number of agents, not increasing. The claim flips the meaning of $W'<0$. The named evaluation already serves as a counter-example. Holding both formulas in view makes the failure obvious. The derived expression and the asserted one disagree at a checkable place. That mismatch alone is enough to reject the letter.
+for every $n>0$, waiting time is decreasing in the number of agents, not increasing. The claim flips the meaning of $W'<0$.
 
 So the statement is False.`,
       `**E.** → True
@@ -707,7 +745,7 @@ $$
 W''(n) = \\dfrac{96}{(n+3)^{3}}
 $$
 
-which matches the claimed second derivative. The positive sign shows the decrease in waiting time becomes less steep as $n$ grows. The same checklist — differentiate, simplify, evaluate — settles the assertion. Writing every intermediate line keeps the comparison with the claim mechanical.
+which matches the claimed second derivative. The positive sign shows the decrease in waiting time becomes less steep as $n$ grows.
 
 So the statement is True.`
     ],
@@ -749,6 +787,34 @@ Reuse this derivative setup for every letter: simplify first, evaluate at named 
 
 The response index is a product $S(x)=x^{2}\\cdot e^{-x}$. Apply the product rule and factor $x\\,e^{-x}$:
 
+Write the product as two factors and differentiate each factor before combining.
+
+$$
+S(x) = x^{2} \\cdot e^{-x}
+$$
+
+$$
+u(x) = x^{2}
+$$
+
+$$
+v(x) = e^{- x}
+$$
+
+$$
+u'(x) = 2 x
+$$
+
+$$
+v'(x) = - e^{- x}
+$$
+
+$$
+S'(x) = (2 x)\\cdot(e^{- x}) + (x^{2})\\cdot(- e^{- x})
+$$
+
+Only after that product-rule expansion do we simplify to the claimed form.
+
 $$
 S'(x) = 2x\\,e^{-x}+x^{2}(-e^{-x})
 $$
@@ -757,7 +823,7 @@ $$
 S'(x) = x\\,e^{-x}(2-x)
 $$
 
-A trap is forgetting the chain-rule minus from $e^{-x}$. The factored form matches the claim exactly. The stem's formula is enough; no outside identity is required for the check. Substituting only after the general expression is finished avoids mixing height with slope. Coefficient and sign agreement with the claim is what decides the letter.
+A trap is forgetting the chain-rule minus from $e^{-x}$. The factored form matches the claim exactly.
 
 So the statement is True.`,
       `**B.** → True
@@ -772,7 +838,7 @@ $$
 S'(2) = 0
 $$
 
-The factor $(2-x)$ vanishes, so the whole product is zero even though $e^{-2}\\neq 0$. The derivative vanishes at that intensity, matching the claim. Substituting only after the general expression is finished avoids mixing height with slope. Coefficient and sign agreement with the claim is what decides the letter. The same checklist — differentiate, simplify, evaluate — settles the assertion.
+The factor $(2-x)$ vanishes, so the whole product is zero even though $e^{-2}\\neq 0$. The derivative vanishes at that intensity, matching the claim.
 
 So the statement is True.`,
       `**C.** → True
@@ -783,7 +849,7 @@ $$
 S''(x) = e^{-x}(x^{2}-4x+2)
 $$
 
-Do not stop at an unsimplified three-term product — the claimed compact polynomial factor is what matters. Matching that form, the statement is True. Coefficient and sign agreement with the claim is what decides the letter. The same checklist — differentiate, simplify, evaluate — settles the assertion. Writing every intermediate line keeps the comparison with the claim mechanical.
+Do not stop at an unsimplified three-term product — the claimed compact polynomial factor is what matters. Matching that form,
 
 So the statement is True.`,
       `**D.** → True
@@ -798,7 +864,7 @@ $$
 S'(1) = e^{-1}
 $$
 
-Here the factor $(2-x)$ equals $1$, so the derivative reduces cleanly to $e^{-1}$. The computed value matches the claim. The same checklist — differentiate, simplify, evaluate — settles the assertion. Writing every intermediate line keeps the comparison with the claim mechanical. The stem's formula is enough; no outside identity is required for the check.
+Here the factor $(2-x)$ equals $1$, so the derivative reduces cleanly to $e^{-1}$. The computed value matches the claim.
 
 So the statement is True.`,
       `**E.** → True
@@ -809,7 +875,7 @@ $$
 S'(2) = 0
 $$
 
-so the tangent to the graph at that point is horizontal. Do not confuse "horizontal tangent" with "horizontal asymptote" — here it is a local flat slope. Writing every intermediate line keeps the comparison with the claim mechanical. The stem's formula is enough; no outside identity is required for the check. Substituting only after the general expression is finished avoids mixing height with slope.
+so the tangent to the graph at that point is horizontal. Do not confuse "horizontal tangent" with "horizontal asymptote" — here it is a local flat slope.
 
 So the statement is True.`
     ],
@@ -863,7 +929,7 @@ $$
 D'(a) = \\dfrac{7}{2\\sqrt{a+9}}
 $$
 
-A trap is forgetting the factor $\\dfrac{1}{2}$ from the square-root power. The simplified formula matches the claim. Substituting only after the general expression is finished avoids mixing height with slope. Coefficient and sign agreement with the claim is what decides the letter.
+A trap is forgetting the factor $\\dfrac{1}{2}$ from the square-root power. The simplified formula matches the claim.
 
 So the statement is True.`,
       `**B.** → True
@@ -878,7 +944,7 @@ $$
 D'(7) = \\dfrac{7}{8}
 $$
 
-Do not evaluate $D(7)=7\\cdot 4=28$ when the claim asks for the derivative. The slope matches. Coefficient and sign agreement with the claim is what decides the letter. The same checklist — differentiate, simplify, evaluate — settles the assertion. Writing every intermediate line keeps the comparison with the claim mechanical. The stem's formula is enough; no outside identity is required for the check.
+Do not evaluate $D(7)=7\\cdot 4=28$ when the claim asks for the derivative. The slope matches.
 
 So the statement is True.`,
       `**C.** → True
@@ -893,7 +959,7 @@ $$
 D''(a) = -\\dfrac{7}{4}(a+9)^{-\\frac{3}{2}}
 $$
 
-The negative sign shows diminishing marginal returns. Matching the claimed second derivative, the statement is True. The same checklist — differentiate, simplify, evaluate — settles the assertion. Writing every intermediate line keeps the comparison with the claim mechanical.
+The negative sign shows diminishing marginal returns. Matching the claimed second derivative,
 
 So the statement is True.`,
       `**D.** → False
@@ -904,7 +970,9 @@ $$
 D'(7) = \\dfrac{7}{8}
 $$
 
-units of demand per extra advertising unit, not $7$. Confusing the coefficient $7$ in $D(a)$ with the marginal effect at $a=7$ overstates the slope badly. The claim overstates the marginal effect. The derived expression and the asserted one disagree at a checkable place. That mismatch alone is enough to reject the letter. Rephrasing the claim cannot repair an algebraic contradiction.
+units of demand per extra advertising unit, not $7$. Confusing the coefficient $7$ in $D(a)$ with the marginal effect at $a=7$ overstates the slope badly. The claim overstates the marginal effect.
+
+Rephrasing the claim cannot repair an algebraic contradiction.
 
 So the statement is False.`,
       `**E.** → True
@@ -927,7 +995,7 @@ $$
 = \\dfrac{7}{6}
 $$
 
-Since $\\dfrac{7}{10}<\\dfrac{7}{6}$, the derivative is smaller at $a=16$ than at $a=0$. That is diminishing returns in action. The stem's formula is enough; no outside identity is required for the check. Substituting only after the general expression is finished avoids mixing height with slope. Coefficient and sign agreement with the claim is what decides the letter.
+Since $\\dfrac{7}{10}<\\dfrac{7}{6}$, the derivative is smaller at $a=16$ than at $a=0$. That is diminishing returns in action.
 
 So the statement is True.`
     ],
@@ -981,7 +1049,7 @@ $$
 R'(n) = \\dfrac{17-9n}{\\sqrt{2n+1}}
 $$
 
-The numerator algebra $ -6n-3+20-3n=17-9n $ is the delicate step. Matching the claimed simplified formula, the statement is True. Coefficient and sign agreement with the claim is what decides the letter. The same checklist — differentiate, simplify, evaluate — settles the assertion.
+The numerator algebra $ -6n-3+20-3n=17-9n $ is the delicate step. Matching the claimed simplified formula,
 
 So the statement is True.`,
       `**B.** → True
@@ -996,7 +1064,7 @@ $$
 R'(1) = \\dfrac{8}{\\sqrt{3}}
 $$
 
-Do not rationalise away from $\\dfrac{8}{\\sqrt{3}}$ unless asked — the claim keeps that form. The computed value matches. The same checklist — differentiate, simplify, evaluate — settles the assertion. Writing every intermediate line keeps the comparison with the claim mechanical. The stem's formula is enough; no outside identity is required for the check.
+Do not rationalise away from $\\dfrac{8}{\\sqrt{3}}$ unless asked — the claim keeps that form. The computed value matches.
 
 So the statement is True.`,
       `**C.** → True
@@ -1007,7 +1075,7 @@ $$
 R'(n) = -3\\sqrt{2n+1}+\\dfrac{20-3n}{\\sqrt{2n+1}}
 $$
 
-which is exactly the intermediate form named in the claim. Leaving it uncombined is intentional here. Writing every intermediate line keeps the comparison with the claim mechanical. The stem's formula is enough; no outside identity is required for the check.
+which is exactly the intermediate form named in the claim. Leaving it uncombined is intentional here.
 
 So the statement is True.`,
       `**D.** → True
@@ -1022,7 +1090,7 @@ $$
 n = \\dfrac{17}{9}
 $$
 
-matching the claimed root. Do not set $17-9n=\\sqrt{2n+1}$ by mistake. Comparing with the claim, the statement is True. The stem's formula is enough; no outside identity is required for the check. Substituting only after the general expression is finished avoids mixing height with slope.
+matching the claimed root. Do not set $17-9n=\\sqrt{2n+1}$ by mistake. Comparing with the claim,
 
 So the statement is True.`,
       `**E.** → False
@@ -1033,7 +1101,7 @@ $$
 n = \\dfrac{17}{9}
 $$
 
-and $\\dfrac{17}{9}<2$. Revenue therefore rises on part of $(0,2)$ and falls on the rest, so it is not increasing throughout that interval. The claim overstates the monotonicity. Rephrasing the claim cannot repair an algebraic contradiction. The named evaluation already serves as a counter-example. Holding both formulas in view makes the failure obvious. The derived expression and the asserted one disagree at a checkable place.
+and $\\dfrac{17}{9}<2$. Revenue therefore rises on part of $(0,2)$ and falls on the rest, so it is not increasing throughout that interval. The claim overstates the monotonicity. Rephrasing the claim cannot repair an algebraic contradiction.
 
 So the statement is False.`
     ],
@@ -1083,7 +1151,7 @@ $$
 T'(n) = \\dfrac{2n^{2}+4n+8}{(n+1)^{2}}
 $$
 
-which matches the claimed formula. The same checklist — differentiate, simplify, evaluate — settles the assertion. Writing every intermediate line keeps the comparison with the claim mechanical. The stem's formula is enough; no outside identity is required for the check.
+which matches the claimed formula.
 
 So the statement is True.`,
       `**B.** → True
@@ -1102,7 +1170,7 @@ $$
 T'(1) = \\dfrac{7}{2}
 $$
 
-Do not evaluate $T(1)=\\dfrac{10}{2}=5$ when the claim asks for the slope. The computed derivative matches. Writing every intermediate line keeps the comparison with the claim mechanical. The stem's formula is enough; no outside identity is required for the check. Substituting only after the general expression is finished avoids mixing height with slope.
+Do not evaluate $T(1)=\\dfrac{10}{2}=5$ when the claim asks for the slope. The computed derivative matches.
 
 So the statement is True.`,
       `**C.** → True
@@ -1113,7 +1181,7 @@ $$
 T'(n) = \\dfrac{2n^{2}+4n+8}{(n+1)^{2}}>0
 $$
 
-for every $n>0$. A positive derivative means $T$ is strictly increasing. The stem's formula is enough; no outside identity is required for the check. Substituting only after the general expression is finished avoids mixing height with slope. Coefficient and sign agreement with the claim is what decides the letter.
+for every $n>0$. A positive derivative means $T$ is strictly increasing.
 
 So the statement is True.`,
       `**D.** → False
@@ -1124,7 +1192,7 @@ $$
 T'(n) = \\dfrac{2n^{2}+4n+8}{(n+1)^{2}}
 $$
 
-Those expressions are not identical — the false one drops both the quadratic numerator structure and the squared denominator. The statement is False. Rephrasing the claim cannot repair an algebraic contradiction. The named evaluation already serves as a counter-example. Holding both formulas in view makes the failure obvious.
+Those expressions are not identical — the false one drops both the quadratic numerator structure and the squared denominator. The statement is False. Rephrasing the claim cannot repair an algebraic contradiction.
 
 So the statement is False.`,
       `**E.** → False
@@ -1135,7 +1203,7 @@ $$
 T'(n) = \\dfrac{2n^{2}+4n+8}{(n+1)^{2}}>0
 $$
 
-throughout. A strictly positive derivative never hits zero, so no such root exists and the statement is False. The named evaluation already serves as a counter-example. Holding both formulas in view makes the failure obvious. The derived expression and the asserted one disagree at a checkable place.
+throughout. A strictly positive derivative never hits zero, so no such root exists and
 
 So the statement is False.`
     ],
@@ -1175,7 +1243,7 @@ $$
 U'(x) = \\dfrac{40}{x+1}-1
 $$
 
-which matches the claimed first derivative. Do not write $\\dfrac{40}{x}$ by forgetting the $+1$ shift. Writing every intermediate line keeps the comparison with the claim mechanical. The stem's formula is enough; no outside identity is required for the check.
+which matches the claimed first derivative. Do not write $\\dfrac{40}{x}$ by forgetting the $+1$ shift.
 
 So the statement is True.`,
       `**B.** → True
@@ -1194,7 +1262,7 @@ $$
 U'(3) = 9
 $$
 
-A trap is stopping at $\\dfrac{40}{4}=10$ and forgetting to subtract $1$. The full computation matches the claim. The stem's formula is enough; no outside identity is required for the check. Substituting only after the general expression is finished avoids mixing height with slope. Coefficient and sign agreement with the claim is what decides the letter.
+A trap is stopping at $\\dfrac{40}{4}=10$ and forgetting to subtract $1$. The full computation matches the claim.
 
 So the statement is True.`,
       `**C.** → True
@@ -1209,7 +1277,7 @@ $$
 U''(x) = -\\dfrac{40}{(x+1)^{2}}
 $$
 
-which matches the claimed second derivative. The negative sign shows diminishing marginal utility. Substituting only after the general expression is finished avoids mixing height with slope. Coefficient and sign agreement with the claim is what decides the letter. The same checklist — differentiate, simplify, evaluate — settles the assertion.
+which matches the claimed second derivative. The negative sign shows diminishing marginal utility.
 
 So the statement is True.`,
       `**D.** → False
@@ -1224,7 +1292,7 @@ $$
 U'(0) = 39
 $$
 
-so the derivative is defined at $x=0$. The argument of the logarithm is $x+1$, which equals $1$ at $x=0$ — there is no division by zero. The claim is incorrect. The named evaluation already serves as a counter-example. Holding both formulas in view makes the failure obvious. The derived expression and the asserted one disagree at a checkable place.
+so the derivative is defined at $x=0$. The argument of the logarithm is $x+1$, which equals $1$ at $x=0$ — there is no division by zero. The claim is incorrect.
 
 So the statement is False.`,
       `**E.** → True
@@ -1235,7 +1303,7 @@ $$
 U'(3) = 9
 $$
 
-so one extra hour near that level changes utility by approximately $9$ utility units. The approximation language matches the derivative interpretation. The same checklist — differentiate, simplify, evaluate — settles the assertion. Writing every intermediate line keeps the comparison with the claim mechanical. The stem's formula is enough; no outside identity is required for the check.
+so one extra hour near that level changes utility by approximately $9$ utility units. The approximation language matches the derivative interpretation.
 
 So the statement is True.`
     ],
@@ -1283,7 +1351,7 @@ $$
 c'(N) = -500N^{-\\frac{3}{2}}
 $$
 
-which matches the claimed formula. Keep the minus sign — learning curves fall. The stem's formula is enough; no outside identity is required for the check. Substituting only after the general expression is finished avoids mixing height with slope.
+which matches the claimed formula. Keep the minus sign — learning curves fall.
 
 So the statement is True.`,
       `**B.** → True
@@ -1298,7 +1366,7 @@ $$
 c'(4) = -\\dfrac{125}{2}
 $$
 
-A trap is computing $4^{-\\frac{1}{2}}=\\tfrac{1}{2}$ instead of $4^{-\\frac{3}{2}}=\\tfrac{1}{8}$. The correct value matches the claim. Substituting only after the general expression is finished avoids mixing height with slope. Coefficient and sign agreement with the claim is what decides the letter. The same checklist — differentiate, simplify, evaluate — settles the assertion.
+A trap is computing $4^{-\\frac{1}{2}}=\\tfrac{1}{2}$ instead of $4^{-\\frac{3}{2}}=\\tfrac{1}{8}$. The correct value matches the claim.
 
 So the statement is True.`,
       `**C.** → True
@@ -1309,7 +1377,7 @@ $$
 c'(N)<0
 $$
 
-throughout the domain. A negative derivative means unit cost keeps falling as cumulative output rises. Coefficient and sign agreement with the claim is what decides the letter. The same checklist — differentiate, simplify, evaluate — settles the assertion. Writing every intermediate line keeps the comparison with the claim mechanical.
+throughout the domain. A negative derivative means unit cost keeps falling as cumulative output rises.
 
 So the statement is True.`,
       `**D.** → True
@@ -1320,7 +1388,7 @@ $$
 c'(4) = -\\dfrac{125}{2}
 $$
 
-so one extra unit lowers unit cost by approximately $\\dfrac{125}{2}$ euros. The absolute value of the negative derivative is the size of the reduction. The same checklist — differentiate, simplify, evaluate — settles the assertion. Writing every intermediate line keeps the comparison with the claim mechanical.
+so one extra unit lowers unit cost by approximately $\\dfrac{125}{2}$ euros. The absolute value of the negative derivative is the size of the reduction.
 
 So the statement is True.`,
       `**E.** → False
@@ -1335,7 +1403,9 @@ $$
 \\dfrac{|c'(8)|}{|c'(4)|} = \\dfrac{1}{2\\sqrt{2}}\\neq 2
 $$
 
-Because $c'$ scales like $N^{-\\frac{3}{2}}$, doubling $N$ multiplies the magnitude by $2^{-\\frac{3}{2}}$, not by $2$. The claim is incorrect. The derived expression and the asserted one disagree at a checkable place. That mismatch alone is enough to reject the letter. Rephrasing the claim cannot repair an algebraic contradiction.
+Because $c'$ scales like $N^{-\\frac{3}{2}}$, doubling $N$ multiplies the magnitude by $2^{-\\frac{3}{2}}$, not by $2$. The claim is incorrect.
+
+Rephrasing the claim cannot repair an algebraic contradiction.
 
 So the statement is False.`
     ],
@@ -1383,7 +1453,7 @@ $$
 R'(q) = 50-2q
 $$
 
-which matches the claimed formula. Do not write $-2q$ alone by dropping the $50$. Substituting only after the general expression is finished avoids mixing height with slope. Coefficient and sign agreement with the claim is what decides the letter. The same checklist — differentiate, simplify, evaluate — settles the assertion.
+which matches the claimed formula. Do not write $-2q$ alone by dropping the $50$.
 
 So the statement is True.`,
       `**B.** → True
@@ -1399,6 +1469,14 @@ R'(20) = 50-40
 $$
 
 $$
+50 - 40 = 10
+$$
+
+$$
+R'(20) = 10
+$$
+
+$$
 = 10
 $$
 
@@ -1410,7 +1488,7 @@ $$
 R'(20) = 10
 $$
 
-A trap is computing $50-20=30$ by forgetting the factor $2$ on $q$. The correct slope is $10$. Coefficient and sign agreement with the claim is what decides the letter. The same checklist — differentiate, simplify, evaluate — settles the assertion. Writing every intermediate line keeps the comparison with the claim mechanical. The stem's formula is enough; no outside identity is required for the check.
+A trap is computing $50-20=30$ by forgetting the factor $2$ on $q$. The correct slope is $10$.
 
 So the statement is True.`,
       `**C.** → True
@@ -1426,6 +1504,14 @@ R(20) = 1000-400
 $$
 
 $$
+1000 - 400 = 600
+$$
+
+$$
+R(20) = 600
+$$
+
+$$
 = 600
 $$
 
@@ -1437,7 +1523,7 @@ $$
 R(20) = 600
 $$
 
-This is the height on the curve, not the slope. The height matches the claim. The same checklist — differentiate, simplify, evaluate — settles the assertion. Writing every intermediate line keeps the comparison with the claim mechanical. The stem's formula is enough; no outside identity is required for the check. Substituting only after the general expression is finished avoids mixing height with slope.
+This is the height on the curve, not the slope. The height matches the claim.
 
 So the statement is True.`,
       `**D.** → True
@@ -1452,7 +1538,7 @@ $$
 y = 600+10(q-20)
 $$
 
-which is the claimed tangent. Replacing $600$ by $R'(20)$ would break the equation. Writing every intermediate line keeps the comparison with the claim mechanical. The stem's formula is enough; no outside identity is required for the check. Substituting only after the general expression is finished avoids mixing height with slope.
+which is the claimed tangent. Replacing $600$ by $R'(20)$ would break the equation.
 
 So the statement is True.`,
       `**E.** → False
@@ -1463,7 +1549,9 @@ $$
 R'(20) = 10>0
 $$
 
-so the tangent rises from left to right rather than falling. Revenue still increases at $q=20$ because the peak $R'(q)=0$ occurs later at $q=25$. That mismatch alone is enough to reject the letter. Rephrasing the claim cannot repair an algebraic contradiction. The named evaluation already serves as a counter-example. Holding both formulas in view makes the failure obvious.
+so the tangent rises from left to right rather than falling. Revenue still increases at $q=20$ because the peak $R'(q)=0$ occurs later at $q=25$.
+
+Rephrasing the claim cannot repair an algebraic contradiction.
 
 So the statement is False.`
     ],
@@ -1517,7 +1605,7 @@ $$
 G'(x) = 30x(3x^{2}+4)^{4}
 $$
 
-matching the claimed formula. Forgetting the inner $6x$ is the classic chain-rule trap here. Comparing with the claim, the statement is True. Coefficient and sign agreement with the claim is what decides the letter. The same checklist — differentiate, simplify, evaluate — settles the assertion.
+matching the claimed formula. Forgetting the inner $6x$ is the classic chain-rule trap here. Comparing with the claim,
 
 So the statement is True.`,
       `**B.** → True
@@ -1540,7 +1628,7 @@ $$
 G'(1) = 72030
 $$
 
-Do not compute $7^{5}$ by mistake — the outer power has already been reduced to $4$. The computed value matches the claim. The same checklist — differentiate, simplify, evaluate — settles the assertion. Writing every intermediate line keeps the comparison with the claim mechanical. The stem's formula is enough; no outside identity is required for the check.
+Do not compute $7^{5}$ by mistake — the outer power has already been reduced to $4$. The computed value matches the claim.
 
 So the statement is True.`,
       `**C.** → True
@@ -1551,7 +1639,7 @@ $$
 G''(x) = 30(3x^{2}+4)^{3}(27x^{2}+4)
 $$
 
-The factor $27x^{2}+4$ comes from combining the two product-rule pieces. Matching the claimed second derivative, the statement is True. Writing every intermediate line keeps the comparison with the claim mechanical. The stem's formula is enough; no outside identity is required for the check. Substituting only after the general expression is finished avoids mixing height with slope.
+The factor $27x^{2}+4$ comes from combining the two product-rule pieces. Matching the claimed second derivative,
 
 So the statement is True.`,
       `**D.** → True
@@ -1602,7 +1690,7 @@ $$
 G''(0) = 7680
 $$
 
-Here $3(0)^{2}+4=4$ and $27(0)^{2}+4=4$. The computed value matches the claim. The stem's formula is enough; no outside identity is required for the check. Substituting only after the general expression is finished avoids mixing height with slope. Coefficient and sign agreement with the claim is what decides the letter. The same checklist — differentiate, simplify, evaluate — settles the assertion.
+Here $3(0)^{2}+4=4$ and $27(0)^{2}+4=4$. The computed value matches the claim.
 
 So the statement is True.`,
       `**E.** → False
@@ -1617,7 +1705,7 @@ $$
 G'(0) = 0
 $$
 
-not $30$. A trap is reading off the leading coefficient $30$ and ignoring the vanishing $x$. The claim's value is incorrect. Rephrasing the claim cannot repair an algebraic contradiction. The named evaluation already serves as a counter-example. Holding both formulas in view makes the failure obvious. The derived expression and the asserted one disagree at a checkable place.
+not $30$. A trap is reading off the leading coefficient $30$ and ignoring the vanishing $x$. The claim's value is incorrect. Rephrasing the claim cannot repair an algebraic contradiction.
 
 So the statement is False.`
     ],
@@ -1663,7 +1751,7 @@ $$
 C'(q) = 12q^{2}-36q+40
 $$
 
-which is exactly the claimed marginal-cost formula. The constant $100$ vanishes, as constants always do under differentiation. The same checklist — differentiate, simplify, evaluate — settles the assertion. Writing every intermediate line keeps the comparison with the claim mechanical. The stem's formula is enough; no outside identity is required for the check.
+which is exactly the claimed marginal-cost formula. The constant $100$ vanishes, as constants always do under differentiation.
 
 So the statement is True.`,
       `**B.** → True
@@ -1674,7 +1762,7 @@ $$
 C''(q) = 24q-36
 $$
 
-matching the claimed second derivative. This measures how fast marginal cost itself is changing. Comparing with the claim, the statement is True. Writing every intermediate line keeps the comparison with the claim mechanical. The stem's formula is enough; no outside identity is required for the check. Substituting only after the general expression is finished avoids mixing height with slope.
+matching the claimed second derivative. This measures how fast marginal cost itself is changing. Comparing with the claim,
 
 So the statement is True.`,
       `**C.** → True
@@ -1697,7 +1785,7 @@ $$
 36 - 36 = 0
 $$
 
-so the second derivative vanishes there. That is the natural candidate for an inflection point of $C$. The stem's formula is enough; no outside identity is required for the check. Substituting only after the general expression is finished avoids mixing height with slope. Coefficient and sign agreement with the claim is what decides the letter.
+so the second derivative vanishes there. That is the natural candidate for an inflection point of $C$.
 
 So the statement is True.`,
       `**D.** → False
@@ -1706,6 +1794,14 @@ Evaluate the second derivative at $q=1$:
 
 $$
 C''(1) = 24-36
+$$
+
+$$
+24 - 36 = -12
+$$
+
+$$
+C''(1) = -12
 $$
 
 $$
@@ -1720,7 +1816,7 @@ $$
 C''(1) = -12
 $$
 
-which is negative rather than positive. The claim's sign is wrong — just left of $q=\\tfrac{3}{2}$ the cost curve is still concave down. Rephrasing the claim cannot repair an algebraic contradiction. The named evaluation already serves as a counter-example. Holding both formulas in view makes the failure obvious. The derived expression and the asserted one disagree at a checkable place.
+which is negative rather than positive. The claim's sign is wrong — just left of $q=\\tfrac{3}{2}$ the cost curve is still concave down. Rephrasing the claim cannot repair an algebraic contradiction.
 
 So the statement is False.`,
       `**E.** → True
@@ -1729,6 +1825,14 @@ Evaluate the second derivative at $q=2$:
 
 $$
 C''(2) = 48-36
+$$
+
+$$
+48 - 36 = 12
+$$
+
+$$
+C''(2) = 12
 $$
 
 $$
@@ -1743,7 +1847,7 @@ $$
 C''(2) = 12>0
 $$
 
-so the second derivative is positive there. Just right of the zero at $q=\\tfrac{3}{2}$, curvature has flipped to concave up. Coefficient and sign agreement with the claim is what decides the letter. The same checklist — differentiate, simplify, evaluate — settles the assertion. Writing every intermediate line keeps the comparison with the claim mechanical. The stem's formula is enough; no outside identity is required for the check.
+so the second derivative is positive there. Just right of the zero at $q=\\tfrac{3}{2}$, curvature has flipped to concave up.
 
 So the statement is True.`
     ],
@@ -1783,6 +1887,32 @@ so curvature changes from negative to positive across $q=\\dfrac{3}{2}$. That is
 
 The complaint index is the quotient $K(t)=\\dfrac{t+4}{t+1}$. The quotient rule simplifies at once to
 
+Name the numerator and denominator, differentiate each, then apply the quotient rule before simplifying.
+
+$$
+K(t) = \\dfrac{t+4}{t+1}
+$$
+
+$$
+u(t) = t+4
+$$
+
+$$
+v(t) = t+1
+$$
+
+$$
+u'(t) = 1
+$$
+
+$$
+v'(t) = 1
+$$
+
+$$
+K'(t) = \\dfrac{(1)(t+1) - (t+4)(1)}{(t+1)^{2}}
+$$
+
 $$
 K'(t) = \\dfrac{(t+1)-(t+4)}{(t+1)^{2}}
 $$
@@ -1791,7 +1921,7 @@ $$
 K'(t) = -\\dfrac{3}{(t+1)^{2}}
 $$
 
-The numerator difference $1-4=-3$ is the whole story. Writing every intermediate line keeps the comparison with the claim mechanical. The stem's formula is enough; no outside identity is required for the check. Substituting only after the general expression is finished avoids mixing height with slope.
+The numerator difference $1-4=-3$ is the whole story.
 
 So the statement is True.`,
       `**B.** → True
@@ -1810,7 +1940,7 @@ $$
 K'(2) = -\\dfrac{1}{3}
 $$
 
-Keep the minus sign — more training lowers the complaint index. The computed value matches the claim. The stem's formula is enough; no outside identity is required for the check. Substituting only after the general expression is finished avoids mixing height with slope. Coefficient and sign agreement with the claim is what decides the letter. The same checklist — differentiate, simplify, evaluate — settles the assertion.
+Keep the minus sign — more training lowers the complaint index. The computed value matches the claim.
 
 So the statement is True.`,
       `**C.** → True
@@ -1821,7 +1951,7 @@ $$
 K'(t)<0
 $$
 
-throughout. A negative derivative means the index is strictly decreasing in training time. Substituting only after the general expression is finished avoids mixing height with slope. Coefficient and sign agreement with the claim is what decides the letter. The same checklist — differentiate, simplify, evaluate — settles the assertion.
+throughout. A negative derivative means the index is strictly decreasing in training time.
 
 So the statement is True.`,
       `**D.** → True
@@ -1832,7 +1962,7 @@ $$
 K'(2) = -\\dfrac{1}{3}
 $$
 
-so one extra hour changes the index by approximately $-\\dfrac{1}{3}$. The signed rate is exactly what the claim reports. Coefficient and sign agreement with the claim is what decides the letter. The same checklist — differentiate, simplify, evaluate — settles the assertion. Writing every intermediate line keeps the comparison with the claim mechanical.
+so one extra hour changes the index by approximately $-\\dfrac{1}{3}$. The signed rate is exactly what the claim reports.
 
 So the statement is True.`,
       `**E.** → True
@@ -1847,7 +1977,7 @@ $$
 K''(t) = \\dfrac{6}{(t+1)^{3}}
 $$
 
-matching the claimed second derivative. The positive sign means the decrease in $K$ flattens as $t$ grows. Comparing with the claim, the statement is True. The same checklist — differentiate, simplify, evaluate — settles the assertion. Writing every intermediate line keeps the comparison with the claim mechanical. The stem's formula is enough; no outside identity is required for the check.
+matching the claimed second derivative. The positive sign means the decrease in $K$ flattens as $t$ grows. Comparing with the claim,
 
 So the statement is True.`
     ],
@@ -1901,7 +2031,7 @@ $$
 S'(x) = 8(2x+5)^{3}
 $$
 
-matching the claimed formula. Forgetting the factor $2$ from the inner linear term is the usual trap. Comparing with the claim, the statement is True. The stem's formula is enough; no outside identity is required for the check. Substituting only after the general expression is finished avoids mixing height with slope.
+matching the claimed formula. Forgetting the factor $2$ from the inner linear term is the usual trap. Comparing with the claim,
 
 So the statement is True.`,
       `**B.** → True
@@ -1924,7 +2054,7 @@ $$
 S'(0) = 1000
 $$
 
-Do not confuse this with $S(0)=5^{4}=625$. The derivative value matches the claim. Substituting only after the general expression is finished avoids mixing height with slope. Coefficient and sign agreement with the claim is what decides the letter. The same checklist — differentiate, simplify, evaluate — settles the assertion. Writing every intermediate line keeps the comparison with the claim mechanical.
+Do not confuse this with $S(0)=5^{4}=625$. The derivative value matches the claim.
 
 So the statement is True.`,
       `**C.** → True
@@ -1939,7 +2069,7 @@ $$
 S''(x) = 48(2x+5)^{2}
 $$
 
-matching the claimed second derivative. The pattern of coefficients $8\\to 48$ is consistent with $4\\cdot 3\\cdot 2^{2}$. Coefficient and sign agreement with the claim is what decides the letter. The same checklist — differentiate, simplify, evaluate — settles the assertion. Writing every intermediate line keeps the comparison with the claim mechanical.
+matching the claimed second derivative. The pattern of coefficients $8\\to 48$ is consistent with $4\\cdot 3\\cdot 2^{2}$.
 
 So the statement is True.`,
       `**D.** → True
@@ -1962,7 +2092,7 @@ $$
 S''(0) = 1200
 $$
 
-The computed value matches the claim. Keep $5^{2}=25$, not $5^{3}$. Comparing with the claim, the statement is True. The same checklist — differentiate, simplify, evaluate — settles the assertion. Writing every intermediate line keeps the comparison with the claim mechanical. The stem's formula is enough; no outside identity is required for the check. Substituting only after the general expression is finished avoids mixing height with slope.
+The computed value matches the claim. Keep $5^{2}=25$, not $5^{3}$. Comparing with the claim,
 
 So the statement is True.`,
       `**E.** → True
@@ -1977,7 +2107,7 @@ $$
 S'''(x) = 192(2x+5)
 $$
 
-matching the claimed third derivative. One more differentiation would leave the constant $384$. Writing every intermediate line keeps the comparison with the claim mechanical. The stem's formula is enough; no outside identity is required for the check. Substituting only after the general expression is finished avoids mixing height with slope. Coefficient and sign agreement with the claim is what decides the letter.
+matching the claimed third derivative. One more differentiation would leave the constant $384$.
 
 So the statement is True.`
     ],
@@ -2019,6 +2149,34 @@ Reuse this derivative setup for every letter: simplify first, evaluate at named 
 
 The engagement index is the product $E(t)=t\\cdot\\ln(t+1)$. Apply the product rule: differentiate $t$ and $\\ln(t+1)$ in turn,
 
+Write the product as two factors and differentiate each factor before combining.
+
+$$
+E(t) = t \\cdot \\ln(t+1)
+$$
+
+$$
+u(t) = t
+$$
+
+$$
+v(t) = \\ln{(t + 1 )}
+$$
+
+$$
+u'(t) = 1
+$$
+
+$$
+v'(t) = \\frac{1}{t + 1}
+$$
+
+$$
+E'(t) = (1)\\cdot(\\ln{(t + 1 )}) + (t)\\cdot(\\frac{1}{t + 1})
+$$
+
+Only after that product-rule expansion do we simplify to the claimed form.
+
 $$
 E'(t) = \\ln(t+1)+t\\cdot\\dfrac{1}{t+1}
 $$
@@ -2027,7 +2185,7 @@ $$
 E'(t) = \\ln(t+1)+\\dfrac{t}{t+1}
 $$
 
-which matches the claimed formula. Keep both summands — neither alone is the full derivative. Substituting only after the general expression is finished avoids mixing height with slope. Coefficient and sign agreement with the claim is what decides the letter.
+which matches the claimed formula. Keep both summands — neither alone is the full derivative.
 
 So the statement is True.`,
       `**B.** → True
@@ -2042,7 +2200,7 @@ $$
 E'(1) = \\ln 2+\\dfrac{1}{2}
 $$
 
-Do not replace $\\dfrac{1}{2}$ by $1$. The computed value matches the claim. Coefficient and sign agreement with the claim is what decides the letter. The same checklist — differentiate, simplify, evaluate — settles the assertion. Writing every intermediate line keeps the comparison with the claim mechanical. The stem's formula is enough; no outside identity is required for the check.
+Do not replace $\\dfrac{1}{2}$ by $1$. The computed value matches the claim.
 
 So the statement is True.`,
       `**C.** → True
@@ -2053,7 +2211,7 @@ $$
 E''(t) = \\dfrac{1}{t+1}+\\dfrac{1}{(t+1)^{2}}
 $$
 
-matching the claimed second derivative. The same checklist — differentiate, simplify, evaluate — settles the assertion. Writing every intermediate line keeps the comparison with the claim mechanical. The stem's formula is enough; no outside identity is required for the check. Substituting only after the general expression is finished avoids mixing height with slope.
+matching the claimed second derivative.
 
 So the statement is True.`,
       `**D.** → True
@@ -2068,7 +2226,7 @@ $$
 E''(1) = \\dfrac{3}{4}
 $$
 
-The two positive contributions add cleanly. The computed value matches the claim. Writing every intermediate line keeps the comparison with the claim mechanical. The stem's formula is enough; no outside identity is required for the check. Substituting only after the general expression is finished avoids mixing height with slope. Coefficient and sign agreement with the claim is what decides the letter.
+The two positive contributions add cleanly. The computed value matches the claim.
 
 So the statement is True.`,
       `**E.** → False
@@ -2079,7 +2237,9 @@ $$
 E'(t) = \\ln(t+1)+\\dfrac{t}{t+1}
 $$
 
-Replacing the second summand by the constant $1$ drops the factor $\\dfrac{t}{t+1}$ and produces a different function. That shortcut is incorrect. That mismatch alone is enough to reject the letter. Rephrasing the claim cannot repair an algebraic contradiction. The named evaluation already serves as a counter-example. Holding both formulas in view makes the failure obvious.
+Replacing the second summand by the constant $1$ drops the factor $\\dfrac{t}{t+1}$ and produces a different function. That shortcut is incorrect.
+
+Rephrasing the claim cannot repair an algebraic contradiction.
 
 So the statement is False.`
     ],
@@ -2129,7 +2289,7 @@ $$
 M(x) = (x^{2}+1)(x+3)^{-\\frac{1}{2}}
 $$
 
-which is exactly the product form named in the claim. That rewriting sets up the product rule cleanly. Coefficient and sign agreement with the claim is what decides the letter. The same checklist — differentiate, simplify, evaluate — settles the assertion. Writing every intermediate line keeps the comparison with the claim mechanical.
+which is exactly the product form named in the claim. That rewriting sets up the product rule cleanly.
 
 So the statement is True.`,
       `**B.** → True
@@ -2146,7 +2306,7 @@ $$
 M'(x) = \\dfrac{3x^{2}+12x-1}{2(x+3)^{\\frac{3}{2}}}
 $$
 
-matching the claimed formula. The same checklist — differentiate, simplify, evaluate — settles the assertion. Writing every intermediate line keeps the comparison with the claim mechanical. The stem's formula is enough; no outside identity is required for the check.
+matching the claimed formula.
 
 So the statement is True.`,
       `**C.** → True
@@ -2165,7 +2325,7 @@ $$
 M'(1) = \\dfrac{7}{8}
 $$
 
-The numerator $14$ and denominator $16$ cancel by $2$. The computed value matches the claim. Writing every intermediate line keeps the comparison with the claim mechanical. The stem's formula is enough; no outside identity is required for the check. Substituting only after the general expression is finished avoids mixing height with slope.
+The numerator $14$ and denominator $16$ cancel by $2$. The computed value matches the claim.
 
 So the statement is True.`,
       `**D.** → False
@@ -2176,7 +2336,9 @@ $$
 M'(1) = \\dfrac{7}{8}
 $$
 
-which is not equal to $\\dfrac{13}{8}$. A trap is miscomputing the numerator as $3+12+1=16$ or $12-1=11$. The claim's value is incorrect. That mismatch alone is enough to reject the letter. Rephrasing the claim cannot repair an algebraic contradiction. The named evaluation already serves as a counter-example. Holding both formulas in view makes the failure obvious. The derived expression and the asserted one disagree at a checkable place.
+which is not equal to $\\dfrac{13}{8}$. A trap is miscomputing the numerator as $3+12+1=16$ or $12-1=11$. The claim's value is incorrect.
+
+Rephrasing the claim cannot repair an algebraic contradiction.
 
 So the statement is False.`,
       `**E.** → False
@@ -2187,7 +2349,7 @@ $$
 M'(x) = \\dfrac{3x^{2}+12x-1}{2(x+3)^{\\frac{3}{2}}}
 $$
 
-still depends on $x$ in both the numerator and the denominator. It is therefore not a constant function. Rephrasing the claim cannot repair an algebraic contradiction. The named evaluation already serves as a counter-example. Holding both formulas in view makes the failure obvious. The derived expression and the asserted one disagree at a checkable place. That mismatch alone is enough to reject the letter.
+still depends on $x$ in both the numerator and the denominator. It is therefore not a constant function. Rephrasing the claim cannot repair an algebraic contradiction.
 
 So the statement is False.`
     ],
@@ -2233,7 +2395,7 @@ $$
 F'(t) = 2t\\cdot\\ln(t+1)+\\dfrac{t^{2}+1}{t+1}
 $$
 
-which matches the claimed formula. Both summands are required. The same checklist — differentiate, simplify, evaluate — settles the assertion. Writing every intermediate line keeps the comparison with the claim mechanical. The stem's formula is enough; no outside identity is required for the check.
+which matches the claimed formula. Both summands are required.
 
 So the statement is True.`,
       `**B.** → True
@@ -2248,7 +2410,7 @@ $$
 F'(1) = 2\\ln 2+1
 $$
 
-The second summand simplifies to $1$ at this point, but that is special to $t=1$, not a general rule. Writing every intermediate line keeps the comparison with the claim mechanical. The stem's formula is enough; no outside identity is required for the check. Substituting only after the general expression is finished avoids mixing height with slope. Coefficient and sign agreement with the claim is what decides the letter.
+The second summand simplifies to $1$ at this point, but that is special to $t=1$, not a general rule.
 
 So the statement is True.`,
       `**C.** → True
@@ -2259,7 +2421,7 @@ $$
 F''(t) = 2\\ln(t+1)+\\dfrac{4t}{t+1}-\\dfrac{t^{2}+1}{(t+1)^{2}}
 $$
 
-matching the claimed second derivative. The stem's formula is enough; no outside identity is required for the check. Substituting only after the general expression is finished avoids mixing height with slope. Coefficient and sign agreement with the claim is what decides the letter.
+matching the claimed second derivative.
 
 So the statement is True.`,
       `**D.** → True
@@ -2278,7 +2440,7 @@ $$
 F''(1) = 2\\ln 2+\\dfrac{3}{2}
 $$
 
-Watch the arithmetic $2-\\tfrac{1}{2}=\\tfrac{3}{2}$. The computed value matches the claim. Substituting only after the general expression is finished avoids mixing height with slope. Coefficient and sign agreement with the claim is what decides the letter. The same checklist — differentiate, simplify, evaluate — settles the assertion.
+Watch the arithmetic $2-\\tfrac{1}{2}=\\tfrac{3}{2}$. The computed value matches the claim.
 
 So the statement is True.`,
       `**E.** → False
@@ -2289,7 +2451,7 @@ $$
 F'(t) = 2t\\cdot\\ln(t+1)+\\dfrac{t^{2}+1}{t+1}
 $$
 
-Dropping the logarithm term produces $2t+\\dfrac{t^{2}+1}{t+1}$, which is missing the summand $2t\\ln(t+1)$. That shortcut is incorrect. The named evaluation already serves as a counter-example. Holding both formulas in view makes the failure obvious. The derived expression and the asserted one disagree at a checkable place. That mismatch alone is enough to reject the letter.
+Dropping the logarithm term produces $2t+\\dfrac{t^{2}+1}{t+1}$, which is missing the summand $2t\\ln(t+1)$. That shortcut is incorrect.
 
 So the statement is False.`
     ],
@@ -2335,7 +2497,7 @@ $$
 \\pi'(q) = -3q^{2}+24q-21
 $$
 
-which matches the claimed first derivative. Watch the signs: the leading term contributes $-3q^{2}$, not $+3q^{2}$. Writing every intermediate line keeps the comparison with the claim mechanical. The stem's formula is enough; no outside identity is required for the check. Substituting only after the general expression is finished avoids mixing height with slope.
+which matches the claimed first derivative. Watch the signs: the leading term contributes $-3q^{2}$, not $+3q^{2}$.
 
 So the statement is True.`,
       `**B.** → True
@@ -2347,10 +2509,18 @@ $$
 $$
 
 $$
+-3 + 24 = 21
+$$
+
+$$
+21 - 21 = 0
+$$
+
+$$
 \\pi'(1) = 0
 $$
 
-so the derivative vanishes at that output. The three terms cancel exactly: $-3+24=21$, then $21-21=0$. The stem's formula is enough; no outside identity is required for the check. Substituting only after the general expression is finished avoids mixing height with slope. Coefficient and sign agreement with the claim is what decides the letter. The same checklist — differentiate, simplify, evaluate — settles the assertion.
+so the derivative vanishes at that output. The three terms cancel exactly: $-3+24=21$, then $21-21=0$.
 
 So the statement is True.`,
       `**C.** → True
@@ -2361,7 +2531,7 @@ $$
 \\pi''(q) = -6q+24
 $$
 
-matching the claimed second derivative. This tracks how the marginal profit itself changes with output. Comparing with the claim, the statement is True. Substituting only after the general expression is finished avoids mixing height with slope. Coefficient and sign agreement with the claim is what decides the letter. The same checklist — differentiate, simplify, evaluate — settles the assertion.
+matching the claimed second derivative. This tracks how the marginal profit itself changes with output. Comparing with the claim,
 
 So the statement is True.`,
       `**D.** → False
@@ -2377,10 +2547,20 @@ $$
 $$
 
 $$
+-18 + 24 = 6
+$$
+
+$$
+\\pi''(3) = 6
+$$
+
+$$
 \\pi''(3) = 6\\neq 0
 $$
 
-The second derivative vanishes at $q=4$, not at $q=3$. The claim's evaluation is wrong. The named evaluation already serves as a counter-example. Holding both formulas in view makes the failure obvious. The derived expression and the asserted one disagree at a checkable place. That mismatch alone is enough to reject the letter. Rephrasing the claim cannot repair an algebraic contradiction.
+The second derivative vanishes at $q=4$, not at $q=3$. The claim's evaluation is wrong.
+
+Rephrasing the claim cannot repair an algebraic contradiction.
 
 So the statement is False.`,
       `**E.** → False
@@ -2391,7 +2571,9 @@ $$
 \\pi'(1) = 0
 $$
 
-which is zero rather than strictly positive. A horizontal tangent is not a strictly rising one. Holding both formulas in view makes the failure obvious. The derived expression and the asserted one disagree at a checkable place. That mismatch alone is enough to reject the letter. Rephrasing the claim cannot repair an algebraic contradiction. The named evaluation already serves as a counter-example.
+which is zero rather than strictly positive. A horizontal tangent is not a strictly rising one.
+
+Rephrasing the claim cannot repair an algebraic contradiction.
 
 So the statement is False.`
     ],
@@ -2437,7 +2619,7 @@ $$
 C'(q) = 9
 $$
 
-which is exactly the claimed constant marginal cost. The fixed cost $45$ vanishes under differentiation. The stem's formula is enough; no outside identity is required for the check. Substituting only after the general expression is finished avoids mixing height with slope. Coefficient and sign agreement with the claim is what decides the letter. The same checklist — differentiate, simplify, evaluate — settles the assertion.
+which is exactly the claimed constant marginal cost. The fixed cost $45$ vanishes under differentiation.
 
 So the statement is True.`,
       `**B.** → True
@@ -2448,7 +2630,7 @@ $$
 C'(20) = 9
 $$
 
-There is nothing special about $q=20$ for a constant derivative. Substituting only after the general expression is finished avoids mixing height with slope. Coefficient and sign agreement with the claim is what decides the letter. The same checklist — differentiate, simplify, evaluate — settles the assertion. Writing every intermediate line keeps the comparison with the claim mechanical.
+There is nothing special about $q=20$ for a constant derivative.
 
 So the statement is True.`,
       `**C.** → False
@@ -2459,7 +2641,7 @@ $$
 \\dfrac{C(q)}{q} = \\dfrac{45}{q}+9
 $$
 
-which equals the constant marginal cost $9$ only in the limit $q\\to\\infty$, not for every finite $q>0$. The fixed-cost contribution $\\dfrac{45}{q}$ keeps them apart. The claim's identification is incorrect. The named evaluation already serves as a counter-example. Holding both formulas in view makes the failure obvious. The derived expression and the asserted one disagree at a checkable place.
+which equals the constant marginal cost $9$ only in the limit $q\\to\\infty$, not for every finite $q>0$. The fixed-cost contribution $\\dfrac{45}{q}$ keeps them apart. The claim's identification is incorrect.
 
 So the statement is False.`,
       `**D.** → True
@@ -2470,7 +2652,7 @@ $$
 y = 45+9q
 $$
 
-matching the claim. Point-slope form with $C(10)=135$ recovers the same line. The same checklist — differentiate, simplify, evaluate — settles the assertion. Writing every intermediate line keeps the comparison with the claim mechanical. The stem's formula is enough; no outside identity is required for the check.
+matching the claim. Point-slope form with $C(10)=135$ recovers the same line.
 
 So the statement is True.`,
       `**E.** → True
@@ -2481,7 +2663,7 @@ $$
 C''(q) = 0
 $$
 
-for every $q$. A linear cost schedule has zero curvature everywhere. Writing every intermediate line keeps the comparison with the claim mechanical. The stem's formula is enough; no outside identity is required for the check. Substituting only after the general expression is finished avoids mixing height with slope. Coefficient and sign agreement with the claim is what decides the letter.
+for every $q$. A linear cost schedule has zero curvature everywhere.
 
 So the statement is True.`
     ],
@@ -2531,7 +2713,7 @@ $$
 Q'(L) = 10L^{\\frac{3}{2}}
 $$
 
-which matches the claimed marginal product. Do not leave the exponent at $\\tfrac{5}{2}$. Substituting only after the general expression is finished avoids mixing height with slope. Coefficient and sign agreement with the claim is what decides the letter. The same checklist — differentiate, simplify, evaluate — settles the assertion.
+which matches the claimed marginal product. Do not leave the exponent at $\\tfrac{5}{2}$.
 
 So the statement is True.`,
       `**B.** → True
@@ -2546,7 +2728,7 @@ $$
 Q'(1) = 10
 $$
 
-Any positive power of $1$ is still $1$, so the evaluation is immediate. Coefficient and sign agreement with the claim is what decides the letter. The same checklist — differentiate, simplify, evaluate — settles the assertion. Writing every intermediate line keeps the comparison with the claim mechanical. The stem's formula is enough; no outside identity is required for the check.
+Any positive power of $1$ is still $1$, so the evaluation is immediate.
 
 So the statement is True.`,
       `**C.** → True
@@ -2565,7 +2747,7 @@ $$
 Q'(4) = 80
 $$
 
-A trap is computing $4^{\\frac{5}{2}}=32$ (the original $Q$) instead of $4^{\\frac{3}{2}}=8$. The same checklist — differentiate, simplify, evaluate — settles the assertion. Writing every intermediate line keeps the comparison with the claim mechanical. The stem's formula is enough; no outside identity is required for the check. Substituting only after the general expression is finished avoids mixing height with slope.
+A trap is computing $4^{\\frac{5}{2}}=32$ (the original $Q$) instead of $4^{\\frac{3}{2}}=8$.
 
 So the statement is True.`,
       `**D.** → True
@@ -2580,7 +2762,7 @@ $$
 Q''(L) = 15L^{\\frac{1}{2}}
 $$
 
-matching the claimed second derivative. The positive coefficient shows marginal product itself is still rising. Writing every intermediate line keeps the comparison with the claim mechanical. The stem's formula is enough; no outside identity is required for the check. Substituting only after the general expression is finished avoids mixing height with slope.
+matching the claimed second derivative. The positive coefficient shows marginal product itself is still rising.
 
 So the statement is True.`,
       `**E.** → False
@@ -2591,7 +2773,9 @@ $$
 Q'(L) = 10L^{\\frac{3}{2}}
 $$
 
-rises as $L$ rises. Comparing $Q'(1)=10$ with $Q'(4)=80$ confirms the increase. The claim that it falls is incorrect. That mismatch alone is enough to reject the letter. Rephrasing the claim cannot repair an algebraic contradiction. The named evaluation already serves as a counter-example. Holding both formulas in view makes the failure obvious. The derived expression and the asserted one disagree at a checkable place.
+rises as $L$ rises. Comparing $Q'(1)=10$ with $Q'(4)=80$ confirms the increase. The claim that it falls is incorrect.
+
+Rephrasing the claim cannot repair an algebraic contradiction.
 
 So the statement is False.`
     ],
@@ -2641,7 +2825,7 @@ $$
 R(q) = 60q-\\dfrac{1}{2}q^{2}
 $$
 
-which matches the claimed revenue function. Keep the coefficient $\\tfrac{1}{2}$ on $q^{2}$, not $1$. Coefficient and sign agreement with the claim is what decides the letter. The same checklist — differentiate, simplify, evaluate — settles the assertion. Writing every intermediate line keeps the comparison with the claim mechanical.
+which matches the claimed revenue function. Keep the coefficient $\\tfrac{1}{2}$ on $q^{2}$, not $1$.
 
 So the statement is True.`,
       `**B.** → True
@@ -2652,7 +2836,7 @@ $$
 R'(q) = 60-q
 $$
 
-matching the claimed marginal revenue. The derivative of $-\\tfrac{1}{2}q^{2}$ is $-q$, not $-\\tfrac{1}{2}q$. The same checklist — differentiate, simplify, evaluate — settles the assertion. Writing every intermediate line keeps the comparison with the claim mechanical. The stem's formula is enough; no outside identity is required for the check. Substituting only after the general expression is finished avoids mixing height with slope.
+matching the claimed marginal revenue. The derivative of $-\\tfrac{1}{2}q^{2}$ is $-q$, not $-\\tfrac{1}{2}q$.
 
 So the statement is True.`,
       `**C.** → True
@@ -2661,6 +2845,14 @@ Substitute $q=20$ into marginal revenue:
 
 $$
 R'(20) = 60-20
+$$
+
+$$
+60 - 20 = 40
+$$
+
+$$
+R'(20) = 40
 $$
 
 $$
@@ -2675,7 +2867,7 @@ $$
 R'(20) = 40
 $$
 
-The computed value matches the claim. Do not confuse this with $p(20)=50$. Writing every intermediate line keeps the comparison with the claim mechanical. The stem's formula is enough; no outside identity is required for the check. Substituting only after the general expression is finished avoids mixing height with slope. Coefficient and sign agreement with the claim is what decides the letter.
+The computed value matches the claim. Do not confuse this with $p(20)=50$.
 
 So the statement is True.`,
       `**D.** → False
@@ -2686,7 +2878,9 @@ $$
 p(q) = 60-\\dfrac{1}{2}q
 $$
 
-These differ by the factor on $q$: $R'$ falls twice as steeply as $p$. Equating them forgets that revenue is the product $q\\,p(q)$. The claim is incorrect. That mismatch alone is enough to reject the letter. Rephrasing the claim cannot repair an algebraic contradiction. The named evaluation already serves as a counter-example. Holding both formulas in view makes the failure obvious.
+These differ by the factor on $q$: $R'$ falls twice as steeply as $p$. Equating them forgets that revenue is the product $q\\,p(q)$. The claim is incorrect.
+
+Rephrasing the claim cannot repair an algebraic contradiction.
 
 So the statement is False.`,
       `**E.** → True
@@ -2711,7 +2905,7 @@ $$
 y = 1000+40(q-20)
 $$
 
-exactly as claimed. Substituting only after the general expression is finished avoids mixing height with slope. Coefficient and sign agreement with the claim is what decides the letter. The same checklist — differentiate, simplify, evaluate — settles the assertion. Writing every intermediate line keeps the comparison with the claim mechanical.
+exactly as claimed.
 
 So the statement is True.`
     ],
@@ -2765,7 +2959,7 @@ $$
 D'(n) = -\\dfrac{36}{(n+2)^{2}}
 $$
 
-matching the claimed formula. The inner derivative of $n+2$ is $1$. The same checklist — differentiate, simplify, evaluate — settles the assertion. Writing every intermediate line keeps the comparison with the claim mechanical. The stem's formula is enough; no outside identity is required for the check. Substituting only after the general expression is finished avoids mixing height with slope.
+matching the claimed formula. The inner derivative of $n+2$ is $1$.
 
 So the statement is True.`,
       `**B.** → True
@@ -2784,7 +2978,7 @@ $$
 D'(1) = -4
 $$
 
-Keep the minus sign. The computed value matches the claim. Writing every intermediate line keeps the comparison with the claim mechanical. The stem's formula is enough; no outside identity is required for the check. Substituting only after the general expression is finished avoids mixing height with slope. Coefficient and sign agreement with the claim is what decides the letter.
+Keep the minus sign. The computed value matches the claim.
 
 So the statement is True.`,
       `**C.** → True
@@ -2799,7 +2993,7 @@ $$
 D''(n) = \\dfrac{72}{(n+2)^{3}}
 $$
 
-matching the claimed second derivative. The positive sign shows the reduction in delay becomes less steep as $n$ grows. The stem's formula is enough; no outside identity is required for the check. Substituting only after the general expression is finished avoids mixing height with slope. Coefficient and sign agreement with the claim is what decides the letter.
+matching the claimed second derivative. The positive sign shows the reduction in delay becomes less steep as $n$ grows.
 
 So the statement is True.`,
       `**D.** → False
@@ -2810,7 +3004,7 @@ $$
 D'(n)<0
 $$
 
-throughout rather than positive. A negative derivative means delay falls when agents are added. The claim's inequality is wrong. Rephrasing the claim cannot repair an algebraic contradiction. The named evaluation already serves as a counter-example. Holding both formulas in view makes the failure obvious. The derived expression and the asserted one disagree at a checkable place.
+throughout rather than positive. A negative derivative means delay falls when agents are added. The claim's inequality is wrong. Rephrasing the claim cannot repair an algebraic contradiction.
 
 So the statement is False.`,
       `**E.** → True
@@ -2821,7 +3015,7 @@ $$
 D'(1) = -4
 $$
 
-so one extra agent cuts delay by about $4$ minutes. The absolute value of the negative derivative is the size of the cut. Coefficient and sign agreement with the claim is what decides the letter. The same checklist — differentiate, simplify, evaluate — settles the assertion. Writing every intermediate line keeps the comparison with the claim mechanical.
+so one extra agent cuts delay by about $4$ minutes. The absolute value of the negative derivative is the size of the cut.
 
 So the statement is True.`
     ],
@@ -2867,7 +3061,7 @@ $$
 S'(x) = e^{-2x}(1-2x)
 $$
 
-which matches the claimed formula. The chain-rule factor $-2$ is essential. Writing every intermediate line keeps the comparison with the claim mechanical. The stem's formula is enough; no outside identity is required for the check. Substituting only after the general expression is finished avoids mixing height with slope.
+which matches the claimed formula. The chain-rule factor $-2$ is essential.
 
 So the statement is True.`,
       `**B.** → True
@@ -2886,7 +3080,7 @@ $$
 e^{-1}\\cdot 0 = 0
 $$
 
-so the derivative vanishes there. The factor $(1-2x)$ is zero at the critical point. The stem's formula is enough; no outside identity is required for the check. Substituting only after the general expression is finished avoids mixing height with slope. Coefficient and sign agreement with the claim is what decides the letter.
+so the derivative vanishes there. The factor $(1-2x)$ is zero at the critical point.
 
 So the statement is True.`,
       `**C.** → True
@@ -2897,7 +3091,7 @@ $$
 S''(x) = e^{-2x}(4x-4)
 $$
 
-matching the claimed second derivative. Equivalent forms such as $4e^{-2x}(x-1)$ are the same polynomial factor. Substituting only after the general expression is finished avoids mixing height with slope. Coefficient and sign agreement with the claim is what decides the letter. The same checklist — differentiate, simplify, evaluate — settles the assertion.
+matching the claimed second derivative. Equivalent forms such as $4e^{-2x}(x-1)$ are the same polynomial factor.
 
 So the statement is True.`,
       `**D.** → True
@@ -2912,7 +3106,7 @@ $$
 S'(0) = 1
 $$
 
-matching the claim. At the origin the exponential is $1$ and the linear factor is $1$. Coefficient and sign agreement with the claim is what decides the letter. The same checklist — differentiate, simplify, evaluate — settles the assertion. Writing every intermediate line keeps the comparison with the claim mechanical. The stem's formula is enough; no outside identity is required for the check.
+matching the claim. At the origin the exponential is $1$ and the linear factor is $1$.
 
 So the statement is True.`,
       `**E.** → False
@@ -2927,7 +3121,9 @@ $$
 S'(1) = -e^{-2}
 $$
 
-which equals $-e^{-2}$, not the positive value $e^{-2}$. The claim misses the sign from $(1-2x)$. Holding both formulas in view makes the failure obvious. The derived expression and the asserted one disagree at a checkable place. That mismatch alone is enough to reject the letter. Rephrasing the claim cannot repair an algebraic contradiction. The named evaluation already serves as a counter-example.
+which equals $-e^{-2}$, not the positive value $e^{-2}$. The claim misses the sign from $(1-2x)$.
+
+Rephrasing the claim cannot repair an algebraic contradiction.
 
 So the statement is False.`
     ],
@@ -2981,7 +3177,7 @@ $$
 R'(a) = \\dfrac{10}{\\sqrt{4a+9}}
 $$
 
-matching the claimed formula. Forgetting the inner $4$ would leave $\\dfrac{5}{2\\sqrt{4a+9}}$. The stem's formula is enough; no outside identity is required for the check. Substituting only after the general expression is finished avoids mixing height with slope.
+matching the claimed formula. Forgetting the inner $4$ would leave $\\dfrac{5}{2\\sqrt{4a+9}}$.
 
 So the statement is True.`,
       `**B.** → True
@@ -2996,7 +3192,7 @@ $$
 R'(0) = \\dfrac{10}{3}
 $$
 
-The computed value matches the claim. Do not evaluate $R(0)=15$ when asking for the slope. Substituting only after the general expression is finished avoids mixing height with slope. Coefficient and sign agreement with the claim is what decides the letter. The same checklist — differentiate, simplify, evaluate — settles the assertion. Writing every intermediate line keeps the comparison with the claim mechanical.
+The computed value matches the claim. Do not evaluate $R(0)=15$ when asking for the slope.
 
 So the statement is True.`,
       `**C.** → True
@@ -3011,7 +3207,7 @@ $$
 R''(a) = -\\dfrac{20}{(4a+9)^{\\frac{3}{2}}}
 $$
 
-matching the claimed second derivative. The negative sign encodes diminishing returns. Coefficient and sign agreement with the claim is what decides the letter. The same checklist — differentiate, simplify, evaluate — settles the assertion. Writing every intermediate line keeps the comparison with the claim mechanical.
+matching the claimed second derivative. The negative sign encodes diminishing returns.
 
 So the statement is True.`,
       `**D.** → True
@@ -3030,7 +3226,7 @@ $$
 R'(4) = 2
 $$
 
-The computed value matches the claim. The same checklist — differentiate, simplify, evaluate — settles the assertion. Writing every intermediate line keeps the comparison with the claim mechanical. The stem's formula is enough; no outside identity is required for the check. Substituting only after the general expression is finished avoids mixing height with slope.
+The computed value matches the claim.
 
 So the statement is True.`,
       `**E.** → False
@@ -3041,7 +3237,9 @@ $$
 R'(a) = \\dfrac{10}{\\sqrt{4a+9}}\\to 0
 $$
 
-rather than exploding. Marginal reach shrinks toward zero. The claim's comparison is incorrect. The derived expression and the asserted one disagree at a checkable place. That mismatch alone is enough to reject the letter. Rephrasing the claim cannot repair an algebraic contradiction. The named evaluation already serves as a counter-example.
+rather than exploding. Marginal reach shrinks toward zero. The claim's comparison is incorrect.
+
+Rephrasing the claim cannot repair an algebraic contradiction.
 
 So the statement is False.`
     ],
@@ -3091,7 +3289,7 @@ $$
 U'(t) = \\dfrac{60}{2t+1}-4
 $$
 
-matching the claimed first derivative. Forgetting the inner $2$ leaves $\\dfrac{30}{2t+1}-4$. Substituting only after the general expression is finished avoids mixing height with slope. Coefficient and sign agreement with the claim is what decides the letter. The same checklist — differentiate, simplify, evaluate — settles the assertion.
+matching the claimed first derivative. Forgetting the inner $2$ leaves $\\dfrac{30}{2t+1}-4$.
 
 So the statement is True.`,
       `**B.** → True
@@ -3111,6 +3309,14 @@ U'(2) = 12-4
 $$
 
 $$
+12 - 4 = 8
+$$
+
+$$
+U'(2) = 8
+$$
+
+$$
 = 8
 $$
 
@@ -3122,7 +3328,7 @@ $$
 U'(2) = 8
 $$
 
-The arithmetic $12-4=8$ completes the evaluation. Coefficient and sign agreement with the claim is what decides the letter. The same checklist — differentiate, simplify, evaluate — settles the assertion. Writing every intermediate line keeps the comparison with the claim mechanical. The stem's formula is enough; no outside identity is required for the check.
+The arithmetic $12-4=8$ completes the evaluation.
 
 So the statement is True.`,
       `**C.** → True
@@ -3137,7 +3343,7 @@ $$
 U''(t) = -\\dfrac{120}{(2t+1)^{2}}
 $$
 
-matching the claimed second derivative. The always-negative sign shows diminishing marginal utility. The same checklist — differentiate, simplify, evaluate — settles the assertion. Writing every intermediate line keeps the comparison with the claim mechanical. The stem's formula is enough; no outside identity is required for the check.
+matching the claimed second derivative. The always-negative sign shows diminishing marginal utility.
 
 So the statement is True.`,
       `**D.** → True
@@ -3152,18 +3358,24 @@ $$
 U'(0) = 56
 $$
 
-matching the claim. At $t=0$ the logarithm argument is $1$, so there is no singularity. Writing every intermediate line keeps the comparison with the claim mechanical. The stem's formula is enough; no outside identity is required for the check. Substituting only after the general expression is finished avoids mixing height with slope. Coefficient and sign agreement with the claim is what decides the letter.
+matching the claim. At $t=0$ the logarithm argument is $1$, so there is no singularity.
 
 So the statement is True.`,
       `**E.** → False
 
-Setting $U'(t)=0$ yields $\\dfrac{60}{2t+1}=4$, hence $2t+1=15$ and
+Setting $U'(t)=0$ yields
+
+$$
+\\dfrac{60}{2t+1} = 4
+$$, hence $2t+1=15$ and
 
 $$
 t = 7
 $$
 
-not $t=\\dfrac{7}{2}$. Halving $7$ by mistake (perhaps from the inner coefficient $2$) produces the wrong root. The claimed root is wrong. That mismatch alone is enough to reject the letter. Rephrasing the claim cannot repair an algebraic contradiction. The named evaluation already serves as a counter-example. Holding both formulas in view makes the failure obvious. The derived expression and the asserted one disagree at a checkable place.
+not $t=\\dfrac{7}{2}$. Halving $7$ by mistake (perhaps from the inner coefficient $2$) produces the wrong root. The claimed root is wrong.
+
+Rephrasing the claim cannot repair an algebraic contradiction.
 
 So the statement is False.`
     ],
@@ -3209,7 +3421,7 @@ $$
 G'(x) = 20(4x+1)^{4}
 $$
 
-matching the claimed formula. Forgetting the factor $4$ leaves only $5(4x+1)^{4}$. Coefficient and sign agreement with the claim is what decides the letter. The same checklist — differentiate, simplify, evaluate — settles the assertion. Writing every intermediate line keeps the comparison with the claim mechanical.
+matching the claimed formula. Forgetting the factor $4$ leaves only $5(4x+1)^{4}$.
 
 So the statement is True.`,
       `**B.** → True
@@ -3224,7 +3436,7 @@ $$
 G'(0) = 20
 $$
 
-The computed value matches the claim. At the origin the inner linear factor is $1$, so the fourth power is still $1$. The same checklist — differentiate, simplify, evaluate — settles the assertion. Writing every intermediate line keeps the comparison with the claim mechanical. The stem's formula is enough; no outside identity is required for the check. Substituting only after the general expression is finished avoids mixing height with slope.
+The computed value matches the claim. At the origin the inner linear factor is $1$, so the fourth power is still $1$.
 
 So the statement is True.`,
       `**C.** → True
@@ -3239,7 +3451,7 @@ $$
 G''(x) = 320(4x+1)^{3}
 $$
 
-matching the claimed second derivative. The coefficient $20\\cdot 4\\cdot 4=320$ is the key arithmetic. Writing every intermediate line keeps the comparison with the claim mechanical. The stem's formula is enough; no outside identity is required for the check. Substituting only after the general expression is finished avoids mixing height with slope.
+matching the claimed second derivative. The coefficient $20\\cdot 4\\cdot 4=320$ is the key arithmetic.
 
 So the statement is True.`,
       `**D.** → True
@@ -3254,7 +3466,7 @@ $$
 G''(0) = 320
 $$
 
-The computed value matches the claim. The stem's formula is enough; no outside identity is required for the check. Substituting only after the general expression is finished avoids mixing height with slope. Coefficient and sign agreement with the claim is what decides the letter. The same checklist — differentiate, simplify, evaluate — settles the assertion. Writing every intermediate line keeps the comparison with the claim mechanical.
+The computed value matches the claim.
 
 So the statement is True.`,
       `**E.** → True
@@ -3265,7 +3477,7 @@ $$
 G'(1) = 20\\cdot 5^{4}
 $$
 
-exactly the expression named in the claim. Leaving $5^{4}$ unexpanded is fine — the claim does the same. Substituting only after the general expression is finished avoids mixing height with slope. Coefficient and sign agreement with the claim is what decides the letter. The same checklist — differentiate, simplify, evaluate — settles the assertion. Writing every intermediate line keeps the comparison with the claim mechanical.
+exactly the expression named in the claim. Leaving $5^{4}$ unexpanded is fine — the claim does the same.
 
 So the statement is True.`
     ],
@@ -3319,7 +3531,7 @@ $$
 P'(x) = 2x\\sqrt{3x+1}+\\dfrac{3x^{2}}{2\\sqrt{3x+1}}
 $$
 
-matching the claimed unsimplified formula. The same checklist — differentiate, simplify, evaluate — settles the assertion. Writing every intermediate line keeps the comparison with the claim mechanical. The stem's formula is enough; no outside identity is required for the check.
+matching the claimed unsimplified formula.
 
 So the statement is True.`,
       `**B.** → True
@@ -3334,7 +3546,7 @@ $$
 P'(x) = \\dfrac{15x^{2}+4x}{2\\sqrt{3x+1}}
 $$
 
-which is the claimed combined form. The numerator $12x^{2}+4x+3x^{2}=15x^{2}+4x$ is the key. Writing every intermediate line keeps the comparison with the claim mechanical. The stem's formula is enough; no outside identity is required for the check. Substituting only after the general expression is finished avoids mixing height with slope.
+which is the claimed combined form. The numerator $12x^{2}+4x+3x^{2}=15x^{2}+4x$ is the key.
 
 So the statement is True.`,
       `**C.** → True
@@ -3353,7 +3565,7 @@ $$
 P'(1) = \\dfrac{19}{4}
 $$
 
-The computed value matches the claim. Do not stop at $\\dfrac{19}{2}$ by forgetting $\\sqrt{4}=2$. The stem's formula is enough; no outside identity is required for the check. Substituting only after the general expression is finished avoids mixing height with slope. Coefficient and sign agreement with the claim is what decides the letter.
+The computed value matches the claim. Do not stop at $\\dfrac{19}{2}$ by forgetting $\\sqrt{4}=2$.
 
 So the statement is True.`,
       `**D.** → True
@@ -3368,7 +3580,7 @@ $$
 P'(0) = 0
 $$
 
-so the derivative vanishes at the origin. Substituting only after the general expression is finished avoids mixing height with slope. Coefficient and sign agreement with the claim is what decides the letter. The same checklist — differentiate, simplify, evaluate — settles the assertion. Writing every intermediate line keeps the comparison with the claim mechanical.
+so the derivative vanishes at the origin.
 
 So the statement is True.`,
       `**E.** → False
@@ -3379,7 +3591,7 @@ $$
 P'(1) = \\dfrac{19}{4}
 $$
 
-Since $\\dfrac{15}{2}=\\dfrac{30}{4}\\neq\\dfrac{19}{4}$, the claimed value is wrong — it looks like a misread of the leading numerator coefficient $15$. The named evaluation already serves as a counter-example. Holding both formulas in view makes the failure obvious. The derived expression and the asserted one disagree at a checkable place. That mismatch alone is enough to reject the letter.
+Since $\\dfrac{15}{2}=\\dfrac{30}{4}\\neq\\dfrac{19}{4}$, the claimed value is wrong — it looks like a misread of the leading numerator coefficient $15$.
 
 So the statement is False.`
     ],
@@ -3425,7 +3637,7 @@ $$
 K'(x) = \\dfrac{6(2x-1)^{2}(x+4)-(2x-1)^{3}}{(x+4)^{2}}
 $$
 
-which is exactly the unsimplified form named in the claim. The factor $6$ comes from $3\\cdot 2$ on the cubed numerator. Writing every intermediate line keeps the comparison with the claim mechanical. The stem's formula is enough; no outside identity is required for the check.
+which is exactly the unsimplified form named in the claim. The factor $6$ comes from $3\\cdot 2$ on the cubed numerator.
 
 So the statement is True.`,
       `**B.** → True
@@ -3439,8 +3651,6 @@ $$
 $$
 K'(x) = \\dfrac{(2x-1)^{2}(4x+25)}{(x+4)^{2}}
 $$
-
-since $6x+24-2x+1=4x+25$. Matching the claimed factored form, the statement is True. The stem's formula is enough; no outside identity is required for the check. Substituting only after the general expression is finished avoids mixing height with slope. Coefficient and sign agreement with the claim is what decides the letter.
 
 So the statement is True.`,
       `**C.** → True
@@ -3459,7 +3669,7 @@ $$
 K'(1) = \\dfrac{29}{25}
 $$
 
-The computed value matches the claim. Substituting only after the general expression is finished avoids mixing height with slope. Coefficient and sign agreement with the claim is what decides the letter. The same checklist — differentiate, simplify, evaluate — settles the assertion. Writing every intermediate line keeps the comparison with the claim mechanical.
+The computed value matches the claim.
 
 So the statement is True.`,
       `**D.** → True
@@ -3470,7 +3680,7 @@ $$
 K'\\!\\left(\\dfrac{1}{2}\\right) = 0
 $$
 
-matching the claim. That is a genuine critical point of $K$. Coefficient and sign agreement with the claim is what decides the letter. The same checklist — differentiate, simplify, evaluate — settles the assertion. Writing every intermediate line keeps the comparison with the claim mechanical.
+matching the claim. That is a genuine critical point of $K$.
 
 So the statement is True.`,
       `**E.** → False
@@ -3481,7 +3691,9 @@ $$
 K'(1) = \\dfrac{29}{25}
 $$
 
-Since $\\dfrac{7}{5}=\\dfrac{35}{25}\\neq\\dfrac{29}{25}$, the claimed value is wrong. A trap is misreading $4+25=29$ as $4+31$ or similar. Holding both formulas in view makes the failure obvious. The derived expression and the asserted one disagree at a checkable place. That mismatch alone is enough to reject the letter. Rephrasing the claim cannot repair an algebraic contradiction.
+Since $\\dfrac{7}{5}=\\dfrac{35}{25}\\neq\\dfrac{29}{25}$, the claimed value is wrong. A trap is misreading $4+25=29$ as $4+31$ or similar.
+
+Rephrasing the claim cannot repair an algebraic contradiction.
 
 So the statement is False.`
     ],
@@ -3531,7 +3743,7 @@ $$
 L'(x) = \\dfrac{2x}{x^{2}+9}
 $$
 
-matching the claimed first derivative. The stem's formula is enough; no outside identity is required for the check. Substituting only after the general expression is finished avoids mixing height with slope. Coefficient and sign agreement with the claim is what decides the letter.
+matching the claimed first derivative.
 
 So the statement is True.`,
       `**B.** → True
@@ -3550,7 +3762,7 @@ $$
 L'(3) = \\dfrac{1}{3}
 $$
 
-The computed value matches the claim. Substituting only after the general expression is finished avoids mixing height with slope. Coefficient and sign agreement with the claim is what decides the letter. The same checklist — differentiate, simplify, evaluate — settles the assertion. Writing every intermediate line keeps the comparison with the claim mechanical.
+The computed value matches the claim.
 
 So the statement is True.`,
       `**C.** → True
@@ -3565,7 +3777,7 @@ $$
 L''(x) = \\dfrac{18-2x^{2}}{(x^{2}+9)^{2}}
 $$
 
-matching the claimed second derivative. The numerator $2x^{2}+18-4x^{2}=18-2x^{2}$ is the key. Coefficient and sign agreement with the claim is what decides the letter. The same checklist — differentiate, simplify, evaluate — settles the assertion. Writing every intermediate line keeps the comparison with the claim mechanical.
+matching the claimed second derivative. The numerator $2x^{2}+18-4x^{2}=18-2x^{2}$ is the key.
 
 So the statement is True.`,
       `**D.** → True
@@ -3584,7 +3796,7 @@ $$
 L''(0) = \\dfrac{2}{9}
 $$
 
-The computed value matches the claim. Reduce $\\dfrac{18}{81}$ by dividing by $9$. The same checklist — differentiate, simplify, evaluate — settles the assertion. Writing every intermediate line keeps the comparison with the claim mechanical. The stem's formula is enough; no outside identity is required for the check. Substituting only after the general expression is finished avoids mixing height with slope.
+The computed value matches the claim. Reduce $\\dfrac{18}{81}$ by dividing by $9$.
 
 So the statement is True.`,
       `**E.** → False
@@ -3599,7 +3811,9 @@ $$
 L'(0) = 0
 $$
 
-which is not equal to $1$. The odd factor $2x$ vanishes at the origin, so the slope is zero there. The claim's value is incorrect. The derived expression and the asserted one disagree at a checkable place. That mismatch alone is enough to reject the letter. Rephrasing the claim cannot repair an algebraic contradiction. The named evaluation already serves as a counter-example.
+which is not equal to $1$. The odd factor $2x$ vanishes at the origin, so the slope is zero there. The claim's value is incorrect.
+
+Rephrasing the claim cannot repair an algebraic contradiction.
 
 So the statement is False.`
     ],
@@ -3649,7 +3863,7 @@ $$
 M'(x) = 3x\\sqrt{x^{2}+1}
 $$
 
-matching the claimed first derivative. The factors $\\tfrac{3}{2}$ and $2$ cancel cleanly. Substituting only after the general expression is finished avoids mixing height with slope. Coefficient and sign agreement with the claim is what decides the letter. The same checklist — differentiate, simplify, evaluate — settles the assertion.
+matching the claimed first derivative. The factors $\\tfrac{3}{2}$ and $2$ cancel cleanly.
 
 So the statement is True.`,
       `**B.** → True
@@ -3664,7 +3878,7 @@ $$
 M'(0) = 0
 $$
 
-so the derivative vanishes at the origin, matching the claim. Coefficient and sign agreement with the claim is what decides the letter. The same checklist — differentiate, simplify, evaluate — settles the assertion. Writing every intermediate line keeps the comparison with the claim mechanical. The stem's formula is enough; no outside identity is required for the check.
+so the derivative vanishes at the origin, matching the claim.
 
 So the statement is True.`,
       `**C.** → True
@@ -3679,7 +3893,7 @@ $$
 M''(x) = \\dfrac{6x^{2}+3}{\\sqrt{x^{2}+1}}
 $$
 
-matching the claimed second derivative. The same checklist — differentiate, simplify, evaluate — settles the assertion. Writing every intermediate line keeps the comparison with the claim mechanical. The stem's formula is enough; no outside identity is required for the check.
+matching the claimed second derivative.
 
 So the statement is True.`,
       `**D.** → True
@@ -3694,7 +3908,7 @@ $$
 M''(0) = 3
 $$
 
-The computed value matches the claim. At the origin only the constant numerator term $3$ survives. Writing every intermediate line keeps the comparison with the claim mechanical. The stem's formula is enough; no outside identity is required for the check. Substituting only after the general expression is finished avoids mixing height with slope. Coefficient and sign agreement with the claim is what decides the letter.
+The computed value matches the claim. At the origin only the constant numerator term $3$ survives.
 
 So the statement is True.`,
       `**E.** → False
@@ -3709,7 +3923,9 @@ $$
 M'(1) = 3\\sqrt{2}
 $$
 
-which is not the bare value $3$. The claim drops the square-root factor $\\sqrt{2}$. That mismatch alone is enough to reject the letter. Rephrasing the claim cannot repair an algebraic contradiction. The named evaluation already serves as a counter-example. Holding both formulas in view makes the failure obvious. The derived expression and the asserted one disagree at a checkable place.
+which is not the bare value $3$. The claim drops the square-root factor $\\sqrt{2}$.
+
+Rephrasing the claim cannot repair an algebraic contradiction.
 
 So the statement is False.`
     ],
@@ -3759,7 +3975,7 @@ $$
 F'(x) = e^{3x}(3x^{2}+2x+3)
 $$
 
-matching the claimed formula. The chain-rule factor $3$ on the exponential is essential. Coefficient and sign agreement with the claim is what decides the letter. The same checklist — differentiate, simplify, evaluate — settles the assertion. Writing every intermediate line keeps the comparison with the claim mechanical.
+matching the claimed formula. The chain-rule factor $3$ on the exponential is essential.
 
 So the statement is True.`,
       `**B.** → True
@@ -3774,7 +3990,7 @@ $$
 F'(0) = 3
 $$
 
-The computed value matches the claim. At the origin only the constant term $3$ of the polynomial factor survives. The same checklist — differentiate, simplify, evaluate — settles the assertion. Writing every intermediate line keeps the comparison with the claim mechanical. The stem's formula is enough; no outside identity is required for the check. Substituting only after the general expression is finished avoids mixing height with slope.
+The computed value matches the claim. At the origin only the constant term $3$ of the polynomial factor survives.
 
 So the statement is True.`,
       `**C.** → True
@@ -3789,7 +4005,7 @@ $$
 F''(x) = e^{3x}(9x^{2}+12x+11)
 $$
 
-matching the claimed second derivative. Writing every intermediate line keeps the comparison with the claim mechanical. The stem's formula is enough; no outside identity is required for the check. Substituting only after the general expression is finished avoids mixing height with slope.
+matching the claimed second derivative.
 
 So the statement is True.`,
       `**D.** → True
@@ -3804,7 +4020,7 @@ $$
 F''(0) = 11
 $$
 
-The computed value matches the claim. The stem's formula is enough; no outside identity is required for the check. Substituting only after the general expression is finished avoids mixing height with slope. Coefficient and sign agreement with the claim is what decides the letter. The same checklist — differentiate, simplify, evaluate — settles the assertion. Writing every intermediate line keeps the comparison with the claim mechanical.
+The computed value matches the claim.
 
 So the statement is True.`,
       `**E.** → False
@@ -3819,7 +4035,7 @@ $$
 F'(0) = 3
 $$
 
-which is not equal to $1$. Confusing $F'(0)$ with $e^{0}=1$ drops the polynomial factor. The claim's value is incorrect. Rephrasing the claim cannot repair an algebraic contradiction. The named evaluation already serves as a counter-example. Holding both formulas in view makes the failure obvious. The derived expression and the asserted one disagree at a checkable place. That mismatch alone is enough to reject the letter.
+which is not equal to $1$. Confusing $F'(0)$ with $e^{0}=1$ drops the polynomial factor. The claim's value is incorrect. Rephrasing the claim cannot repair an algebraic contradiction.
 
 So the statement is False.`
     ],
@@ -3863,7 +4079,7 @@ $$
 H'(x) = \\dfrac{9}{2\\sqrt{2x+1}\\,(x+5)^{\\frac{3}{2}}}
 $$
 
-The numerator $9$ comes from the Wronskian-style difference $2(x+5)-(2x+1)=9$. The same checklist — differentiate, simplify, evaluate — settles the assertion. Writing every intermediate line keeps the comparison with the claim mechanical. The stem's formula is enough; no outside identity is required for the check.
+The numerator $9$ comes from the Wronskian-style difference $2(x+5)-(2x+1)=9$.
 
 So the statement is True.`,
       `**B.** → True
@@ -3874,7 +4090,7 @@ $$
 H'(2) = \\dfrac{9}{2\\sqrt{5}\\cdot 7^{\\frac{3}{2}}}
 $$
 
-exactly the value named in the claim. Leave the irrational factors unexpanded — that is the exact form. Writing every intermediate line keeps the comparison with the claim mechanical. The stem's formula is enough; no outside identity is required for the check. Substituting only after the general expression is finished avoids mixing height with slope.
+exactly the value named in the claim. Leave the irrational factors unexpanded — that is the exact form.
 
 So the statement is True.`,
       `**C.** → True
@@ -3889,7 +4105,7 @@ $$
 H(x) = (2x+1)^{\\frac{1}{2}}(x+5)^{-\\frac{1}{2}}
 $$
 
-which is exactly the rewriting named in the claim. That form sets up the product rule. The stem's formula is enough; no outside identity is required for the check. Substituting only after the general expression is finished avoids mixing height with slope. Coefficient and sign agreement with the claim is what decides the letter.
+which is exactly the rewriting named in the claim. That form sets up the product rule.
 
 So the statement is True.`,
       `**D.** → False
@@ -3900,7 +4116,7 @@ $$
 H'(x)>0
 $$
 
-rather than negative. The balance index is increasing, not decreasing. The claim's inequality is wrong. Rephrasing the claim cannot repair an algebraic contradiction. The named evaluation already serves as a counter-example. Holding both formulas in view makes the failure obvious. The derived expression and the asserted one disagree at a checkable place.
+rather than negative. The balance index is increasing, not decreasing. The claim's inequality is wrong. Rephrasing the claim cannot repair an algebraic contradiction.
 
 So the statement is False.`,
       `**E.** → False
@@ -3911,7 +4127,7 @@ $$
 H'(2) = \\dfrac{9}{2\\sqrt{5}\\cdot 7^{\\frac{3}{2}}}
 $$
 
-which is not equal to the simplified fraction $\\dfrac{9}{70}$. That false reduction pretends $\\sqrt{5}\\cdot 7^{\\frac{3}{2}}=35$, which is wrong. The claim's numerical reduction is incorrect. The named evaluation already serves as a counter-example. Holding both formulas in view makes the failure obvious. The derived expression and the asserted one disagree at a checkable place.
+which is not equal to the simplified fraction $\\dfrac{9}{70}$. That false reduction pretends $\\sqrt{5}\\cdot 7^{\\frac{3}{2}}=35$, which is wrong. The claim's numerical reduction is incorrect.
 
 So the statement is False.`
     ],
@@ -3955,7 +4171,7 @@ $$
 N'(x) = \\dfrac{4}{(x^{2}+4)^{\\frac{3}{2}}}
 $$
 
-matching the claimed formula. Writing every intermediate line keeps the comparison with the claim mechanical. The stem's formula is enough; no outside identity is required for the check. Substituting only after the general expression is finished avoids mixing height with slope.
+matching the claimed formula.
 
 So the statement is True.`,
       `**B.** → True
@@ -3970,7 +4186,7 @@ $$
 N'(0) = \\dfrac{1}{2}
 $$
 
-The computed value matches the claim. The stem's formula is enough; no outside identity is required for the check. Substituting only after the general expression is finished avoids mixing height with slope. Coefficient and sign agreement with the claim is what decides the letter. The same checklist — differentiate, simplify, evaluate — settles the assertion. Writing every intermediate line keeps the comparison with the claim mechanical.
+The computed value matches the claim.
 
 So the statement is True.`,
       `**C.** → True
@@ -4003,7 +4219,7 @@ $$
 N'(2) = \\dfrac{1}{4\\sqrt{2}}
 $$
 
-The computed value matches the claim. Substituting only after the general expression is finished avoids mixing height with slope. Coefficient and sign agreement with the claim is what decides the letter. The same checklist — differentiate, simplify, evaluate — settles the assertion.
+The computed value matches the claim.
 
 So the statement is True.`,
       `**D.** → False
@@ -4014,7 +4230,7 @@ $$
 N'(x) = \\dfrac{4}{(x^{2}+4)^{\\frac{3}{2}}}
 $$
 
-has a positive numerator and a positive denominator for every real $x$, so it never changes sign. Crossing $x=0$ does not flip $N'$. The claim is incorrect. The named evaluation already serves as a counter-example. Holding both formulas in view makes the failure obvious. The derived expression and the asserted one disagree at a checkable place. That mismatch alone is enough to reject the letter.
+has a positive numerator and a positive denominator for every real $x$, so it never changes sign. Crossing $x=0$ does not flip $N'$. The claim is incorrect.
 
 So the statement is False.`,
       `**E.** → True
@@ -4025,7 +4241,7 @@ $$
 N'(1) = \\dfrac{4}{5^{\\frac{3}{2}}}
 $$
 
-exactly as claimed. Leaving $5^{\\frac{3}{2}}$ unexpanded is the exact form. The same checklist — differentiate, simplify, evaluate — settles the assertion. Writing every intermediate line keeps the comparison with the claim mechanical. The stem's formula is enough; no outside identity is required for the check. Substituting only after the general expression is finished avoids mixing height with slope.
+exactly as claimed. Leaving $5^{\\frac{3}{2}}$ unexpanded is the exact form.
 
 So the statement is True.`
     ],
@@ -4071,7 +4287,7 @@ $$
 C'(q) = 3q^{2}-12q+20
 $$
 
-matching the claimed first derivative. The constant $50$ vanishes under differentiation. The stem's formula is enough; no outside identity is required for the check. Substituting only after the general expression is finished avoids mixing height with slope. Coefficient and sign agreement with the claim is what decides the letter. The same checklist — differentiate, simplify, evaluate — settles the assertion.
+matching the claimed first derivative. The constant $50$ vanishes under differentiation.
 
 So the statement is True.`,
       `**B.** → True
@@ -4082,7 +4298,7 @@ $$
 C''(q) = 6q-12
 $$
 
-matching the claimed second derivative. This measures how fast marginal cost itself changes. Substituting only after the general expression is finished avoids mixing height with slope. Coefficient and sign agreement with the claim is what decides the letter. The same checklist — differentiate, simplify, evaluate — settles the assertion. Writing every intermediate line keeps the comparison with the claim mechanical.
+matching the claimed second derivative. This measures how fast marginal cost itself changes.
 
 So the statement is True.`,
       `**C.** → True
@@ -4091,6 +4307,14 @@ Substitute $q=2$ into the second derivative:
 
 $$
 C''(2) = 12-12
+$$
+
+$$
+12 - 12 = 0
+$$
+
+$$
+C''(2) = 0
 $$
 
 $$
@@ -4105,7 +4329,7 @@ $$
 C''(2) = 0
 $$
 
-so the second derivative vanishes there, matching the claim. That is the natural inflection candidate of the cubic. Coefficient and sign agreement with the claim is what decides the letter. The same checklist — differentiate, simplify, evaluate — settles the assertion. Writing every intermediate line keeps the comparison with the claim mechanical. The stem's formula is enough; no outside identity is required for the check.
+so the second derivative vanishes there, matching the claim. That is the natural inflection candidate of the cubic.
 
 So the statement is True.`,
       `**D.** → False
@@ -4114,6 +4338,14 @@ Evaluate the second derivative at $q=1$:
 
 $$
 C''(1) = 6-12
+$$
+
+$$
+6 - 12 = -6
+$$
+
+$$
+C''(1) = -6
 $$
 
 $$
@@ -4128,7 +4360,9 @@ $$
 C''(1) = -6<0
 $$
 
-so the inequality $C''(1)>0$ fails. Just left of $q=2$ the cost curve is still concave down. Holding both formulas in view makes the failure obvious. The derived expression and the asserted one disagree at a checkable place. That mismatch alone is enough to reject the letter. Rephrasing the claim cannot repair an algebraic contradiction. The named evaluation already serves as a counter-example.
+so the inequality $C''(1)>0$ fails. Just left of $q=2$ the cost curve is still concave down.
+
+Rephrasing the claim cannot repair an algebraic contradiction.
 
 So the statement is False.`,
       `**E.** → True
@@ -4141,6 +4375,18 @@ $$
 
 $$
 C'(2) = 12-24+20
+$$
+
+$$
+12 - 24 = -12
+$$
+
+$$
+-12 + 20 = 8
+$$
+
+$$
+C'(2) = 8
 $$
 
 $$
@@ -4167,7 +4413,7 @@ $$
 C'(2) = 8
 $$
 
-The computed value matches the claim. Marginal cost is still positive at the inflection candidate. Writing every intermediate line keeps the comparison with the claim mechanical. The stem's formula is enough; no outside identity is required for the check. Substituting only after the general expression is finished avoids mixing height with slope. Coefficient and sign agreement with the claim is what decides the letter.
+The computed value matches the claim. Marginal cost is still positive at the inflection candidate.
 
 So the statement is True.`
     ],
@@ -4213,7 +4459,7 @@ $$
 W'(x) = (2x+1)(x-3)^{2}(10x-9)
 $$
 
-matching the claimed formula. The coefficient $10$ comes from combining $4(x-3)+3(2x+1)$. Substituting only after the general expression is finished avoids mixing height with slope. Coefficient and sign agreement with the claim is what decides the letter.
+matching the claimed formula. The coefficient $10$ comes from combining $4(x-3)+3(2x+1)$.
 
 So the statement is True.`,
       `**B.** → True
@@ -4224,7 +4470,7 @@ $$
 W'(3) = 0
 $$
 
-matching the claim. Even though $(2x+1)$ and $(10x-9)$ are nonzero there, the squared factor forces a critical point. Coefficient and sign agreement with the claim is what decides the letter. The same checklist — differentiate, simplify, evaluate — settles the assertion. Writing every intermediate line keeps the comparison with the claim mechanical. The stem's formula is enough; no outside identity is required for the check.
+matching the claim. Even though $(2x+1)$ and $(10x-9)$ are nonzero there, the squared factor forces a critical point.
 
 So the statement is True.`,
       `**C.** → True
@@ -4235,7 +4481,7 @@ $$
 W'\\!\\left(\\dfrac{9}{10}\\right) = 0
 $$
 
-as well, matching the claim. That is a second root of the factored derivative. The same checklist — differentiate, simplify, evaluate — settles the assertion. Writing every intermediate line keeps the comparison with the claim mechanical. The stem's formula is enough; no outside identity is required for the check. Substituting only after the general expression is finished avoids mixing height with slope.
+as well, matching the claim. That is a second root of the factored derivative.
 
 So the statement is True.`,
       `**D.** → True
@@ -4254,7 +4500,7 @@ $$
 W'(0) = -81
 $$
 
-The computed value matches the claim. Watch the sign from $10\\cdot 0-9=-9$. Writing every intermediate line keeps the comparison with the claim mechanical. The stem's formula is enough; no outside identity is required for the check. Substituting only after the general expression is finished avoids mixing height with slope. Coefficient and sign agreement with the claim is what decides the letter.
+The computed value matches the claim. Watch the sign from $10\\cdot 0-9=-9$.
 
 So the statement is True.`,
       `**E.** → False
@@ -4265,7 +4511,9 @@ $$
 4(2x+1)(x-3)^{3}
 $$
 
-which misses the contribution from differentiating $(x-3)^{3}$. That incomplete expression is not $W'$. That mismatch alone is enough to reject the letter. Rephrasing the claim cannot repair an algebraic contradiction. The named evaluation already serves as a counter-example. Holding both formulas in view makes the failure obvious. The derived expression and the asserted one disagree at a checkable place.
+which misses the contribution from differentiating $(x-3)^{3}$. That incomplete expression is not $W'$.
+
+Rephrasing the claim cannot repair an algebraic contradiction.
 
 So the statement is False.`
     ],
@@ -4319,7 +4567,7 @@ $$
 V'(x) = \\dfrac{5}{(3x+1)(x+2)}
 $$
 
-matching the claimed first derivative. Coefficient and sign agreement with the claim is what decides the letter. The same checklist — differentiate, simplify, evaluate — settles the assertion. Writing every intermediate line keeps the comparison with the claim mechanical.
+matching the claimed first derivative.
 
 So the statement is True.`,
       `**B.** → True
@@ -4334,7 +4582,7 @@ $$
 V'(0) = \\dfrac{5}{2}
 $$
 
-matching the claim. At $x=0$ both linear factors are positive, so the derivative is defined. The same checklist — differentiate, simplify, evaluate — settles the assertion. Writing every intermediate line keeps the comparison with the claim mechanical. The stem's formula is enough; no outside identity is required for the check. Substituting only after the general expression is finished avoids mixing height with slope.
+matching the claim. At $x=0$ both linear factors are positive, so the derivative is defined.
 
 So the statement is True.`,
       `**C.** → True
@@ -4345,7 +4593,7 @@ $$
 V''(x) = -\\dfrac{5(6x+7)}{(3x+1)^{2}(x+2)^{2}}
 $$
 
-matching the claimed second derivative. The factor $6x+7$ comes from the product rule on the denominator. Writing every intermediate line keeps the comparison with the claim mechanical. The stem's formula is enough; no outside identity is required for the check. Substituting only after the general expression is finished avoids mixing height with slope.
+matching the claimed second derivative. The factor $6x+7$ comes from the product rule on the denominator.
 
 So the statement is True.`,
       `**D.** → True
@@ -4364,7 +4612,7 @@ $$
 V'(1) = \\dfrac{5}{12}
 $$
 
-The computed value matches the claim. The stem's formula is enough; no outside identity is required for the check. Substituting only after the general expression is finished avoids mixing height with slope. Coefficient and sign agreement with the claim is what decides the letter. The same checklist — differentiate, simplify, evaluate — settles the assertion.
+The computed value matches the claim.
 
 So the statement is True.`,
       `**E.** → False
@@ -4375,7 +4623,7 @@ $$
 V'(x) = \\dfrac{5}{(3x+1)(x+2)}>0
 $$
 
-and never hits zero. There is therefore no such root on $x>0$, and the statement is False. Rephrasing the claim cannot repair an algebraic contradiction. The named evaluation already serves as a counter-example. Holding both formulas in view makes the failure obvious. The derived expression and the asserted one disagree at a checkable place.
+and never hits zero. There is therefore no such root on $x>0$, and the statement is False. Rephrasing the claim cannot repair an algebraic contradiction.
 
 So the statement is False.`
     ],
@@ -4427,7 +4675,7 @@ $$
 Z'(t) = 2t\\cdot\\ln(2t+1)+\\dfrac{2t^{2}}{2t+1}
 $$
 
-matching the claimed formula. The same checklist — differentiate, simplify, evaluate — settles the assertion. Writing every intermediate line keeps the comparison with the claim mechanical. The stem's formula is enough; no outside identity is required for the check.
+matching the claimed formula.
 
 So the statement is True.`,
       `**B.** → True
@@ -4438,7 +4686,7 @@ $$
 Z'(1) = 2\\ln(3)+\\dfrac{2}{3}
 $$
 
-The computed value matches the claim. Keep $\\dfrac{2}{3}$, not $1$. Writing every intermediate line keeps the comparison with the claim mechanical. The stem's formula is enough; no outside identity is required for the check. Substituting only after the general expression is finished avoids mixing height with slope. Coefficient and sign agreement with the claim is what decides the letter.
+The computed value matches the claim. Keep $\\dfrac{2}{3}$, not $1$.
 
 So the statement is True.`,
       `**C.** → True
@@ -4449,7 +4697,7 @@ $$
 Z''(t) = 2\\ln(2t+1)+\\dfrac{4t}{2t+1}+\\dfrac{4t^{2}+4t}{(2t+1)^{2}}
 $$
 
-matching the claimed second derivative. The stem's formula is enough; no outside identity is required for the check. Substituting only after the general expression is finished avoids mixing height with slope. Coefficient and sign agreement with the claim is what decides the letter.
+matching the claimed second derivative.
 
 So the statement is True.`,
       `**D.** → False
@@ -4460,7 +4708,7 @@ $$
 Z'(1) = 2\\ln 3+\\dfrac{2}{3}
 $$
 
-Replacing the second summand by $1$ produces the different number $2\\ln 3+1$. That slip pretends $\\dfrac{2t^{2}}{2t+1}=1$ at $t=1$, but $\\dfrac{2}{3}\\neq 1$. The claim is incorrect. Rephrasing the claim cannot repair an algebraic contradiction. The named evaluation already serves as a counter-example. Holding both formulas in view makes the failure obvious. The derived expression and the asserted one disagree at a checkable place.
+Replacing the second summand by $1$ produces the different number $2\\ln 3+1$. That slip pretends $\\dfrac{2t^{2}}{2t+1}=1$ at $t=1$, but $\\dfrac{2}{3}\\neq 1$. The claim is incorrect. Rephrasing the claim cannot repair an algebraic contradiction.
 
 So the statement is False.`,
       `**E.** → True
@@ -4475,7 +4723,7 @@ $$
 Z''(1) = 2\\ln 3+\\dfrac{4}{3}+\\dfrac{8}{9}
 $$
 
-exactly as claimed. The last numerator is $4(1)^{2}+4(1)=8$. Coefficient and sign agreement with the claim is what decides the letter. The same checklist — differentiate, simplify, evaluate — settles the assertion. Writing every intermediate line keeps the comparison with the claim mechanical. The stem's formula is enough; no outside identity is required for the check.
+exactly as claimed. The last numerator is $4(1)^{2}+4(1)=8$.
 
 So the statement is True.`
     ],
