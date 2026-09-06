@@ -41,12 +41,6 @@ $$M(2)=5\\cdot 8$$
 
 $$M(2)=40$$
 
-$$2^{3}=8$$
-
-$$M(2)=5\\cdot 8$$
-
-$$M(2)=40$$
-
 The claimed mass is $40$ grams.
 
 So the statement is True.`,
@@ -83,12 +77,6 @@ $$\\frac{M(2s)}{M(s)}=8$$
 
 $$2^{3}=8$$
 
-$$\\frac{M(2s)}{M(s)}=8$$
-
-$$2^{3}=8$$
-
-$$\\frac{M(2s)}{M(s)}=8$$
-
 Doubling the side multiplies the mass by $8$.
 
 The computed figure agrees with the claim.
@@ -101,12 +89,6 @@ Start from the calibrated closed form in the overview.
 At side $1$ the cube is $1$, so the coefficient is the mass itself:
 
 $$M(1)=5\\cdot 1^{3}$$
-
-$$1^{3}=1$$
-
-$$M(1)=5\\cdot 1$$
-
-$$M(1)=5$$
 
 $$1^{3}=1$$
 
@@ -130,12 +112,6 @@ $$s=4$$
  is a single evaluation:
 
 $$M(4)=5\\cdot 4^{3}$$
-
-$$4^{3}=64$$
-
-$$M(4)=5\\cdot 64$$
-
-$$M(4)=320$$
 
 $$4^{3}=64$$
 
@@ -194,16 +170,6 @@ $$D(0)=6\\cdot 0$$
 $$D(0)=0$$
 
 $$D(0)=0^{\\frac{1}{2}}$$
-
-$$0^{\\frac{1}{2}}=\\bigl(0^{\\frac{1}{2}}\\bigr)^{1}$$
-
-$$0^{\\frac{1}{2}}=0$$
-
-$$0^{1}=0$$
-
-$$D(0)=6\\cdot 0$$
-
-$$D(0)=0$$
 
 The load rule returns a real value at
 
@@ -286,16 +252,6 @@ $$D(9)=6\\cdot 3$$
 $$D(9)=18$$
 
 $$D(9)=54^{\\frac{1}{2}}$$
-
-$$9^{\\frac{1}{2}}=\\bigl(9^{\\frac{1}{2}}\\bigr)^{1}$$
-
-$$9^{\\frac{1}{2}}=3$$
-
-$$3^{1}=3$$
-
-$$D(9)=6\\cdot 3$$
-
-$$D(9)=18$$
 
 The load is $18$ kilograms.
 
@@ -380,16 +336,6 @@ $$T(4)=2\\cdot 2$$
 $$T(4)=4$$
 
 $$T(4)=8^{\\frac{1}{2}}$$
-
-$$4^{\\frac{1}{2}}=\\bigl(4^{\\frac{1}{2}}\\bigr)^{1}$$
-
-$$4^{\\frac{1}{2}}=2$$
-
-$$2^{1}=2$$
-
-$$T(4)=2\\cdot 2$$
-
-$$T(4)=4$$
 
 Already $4>2$, and a positive exponent keeps climbing. There is no finite ceiling.
 
@@ -531,17 +477,13 @@ $$8^{\\frac{1}{3}}=2$$
 
 $$2^{2}=4$$
 
+$$8^{\\frac{1}{3}}=\\bigl(8^{\\frac{1}{3}}\\bigr)^{1}$$
+
+$$2^{1}=2$$
+
 $$8^{\\frac{2}{3}}$$
 
 $$8^{\\frac{2}{3}}=2^{2}$$
-
-$$8^{\\frac{2}{3}}=4$$
-
-$$2^{2}=4$$
-
-$$8^{\\frac{2}{3}}=4$$
-
-$$8^{\\frac{2}{3}}$$
 
 $$8^{\\frac{2}{3}}=4$$
 
@@ -597,8 +539,6 @@ $$A=8$$
 
 The claim asserts that same coefficient
 
-$$A=8$$
-
 .
 
 So the statement is True.`,
@@ -623,10 +563,6 @@ $$Q(100)=8\\cdot 10$$
 $$Q(100)=80$$
 
 $$Q(100)=800^{\\frac{1}{2}}$$
-
-$$Q(100)=8\\cdot 10$$
-
-$$Q(100)=80$$
 
 The output is $80$ crates per hour.
 
@@ -702,10 +638,6 @@ $$Q(4)=8\\cdot 2$$
 $$Q(4)=16$$
 
 $$Q(4)=32^{\\frac{1}{2}}$$
-
-$$Q(4)=8\\cdot 2$$
-
-$$Q(4)=16$$
 
 The claimed $20$ is not $16$.
 
@@ -900,8 +832,6 @@ $$0^{1}=0$$
 $$L(0)=0$$
 
 $$L(0)=\\sqrt{0}$$
-
-$$L(0)=0$$
 
 The transform returns $0$ at a raw reading of zero.
 
@@ -1679,10 +1609,6 @@ $$4^{1}=4$$
 
 $$Q_{L}(4)=4$$
 
-$$Q_{L}(4)=4\\cdot 2$$
-
-$$Q_{L}(4)=8$$
-
 Eight litres a minute is more than $7$.
 
 The computed figure agrees with the claim.
@@ -2230,10 +2156,6 @@ $$Q(400)=240$$
 
 $$Q(400)=4800^{\\frac{1}{2}}$$
 
-$$Q(400)=12\\cdot 20$$
-
-$$Q(400)=240$$
-
 Two hundred and forty is not a ceiling of $200$.
 
 The computed figure disagrees with the claim.
@@ -2260,10 +2182,6 @@ $$Q(81)=12\\cdot 9$$
 $$Q(81)=108$$
 
 $$Q(81)=972^{\\frac{1}{2}}$$
-
-$$Q(81)=12\\cdot 9$$
-
-$$Q(81)=108$$
 
 One hundred and eight sits above $100$.
 
@@ -2492,10 +2410,6 @@ $$H(64)=64$$
 
 $$H(64)=512^{\\frac{1}{2}}$$
 
-$$H(64)=8\\cdot 8$$
-
-$$H(64)=64$$
-
 Sixty-four sits below the cap of $80$, so the ceiling is not yet reached.
 
 The computed figure disagrees with the claim.
@@ -2524,10 +2438,6 @@ $$H(81)=8\\cdot 9$$
 $$H(81)=72$$
 
 $$H(81)=648^{\\frac{1}{2}}$$
-
-$$H(81)=8\\cdot 9$$
-
-$$H(81)=72$$
 
 Seventy-two sits above $70$.
 
@@ -3054,10 +2964,6 @@ $$E(16)=480$$
 
 $$E(16)=3840^{\\frac{1}{4}}$$
 
-$$E(16)=240\\cdot 2$$
-
-$$E(16)=480$$
-
 The claim compares this with $400$. Compare with the claim:
 
 $$480>400.$$
@@ -3376,8 +3282,6 @@ $$40\\sqrt{64}=320$$
 which sits under the cap, so Plan A bills $320$. Plan B bills
 
 $$5\\cdot 64$$
-
-$$40\\sqrt{64}=320$$
 
 Both sit under $400$.
 
@@ -3885,9 +3789,13 @@ $$6^{3}=216$$
 
 $$g(81)=216$$
 
-$$g(81)=16\\cdot 27$$
+$$81^{\\frac{1}{4}}=\\bigl(81^{\\frac{1}{4}}\\bigr)^{1}$$
 
-$$g(81)=432$$
+$$3^{1}=3$$
+
+$$1296^{\\frac{1}{4}}=\\bigl(1296^{\\frac{1}{4}}\\bigr)^{1}$$
+
+$$6^{1}=6$$
 
 The claim compares this with $400$. Compare with the claim:
 
@@ -4113,8 +4021,6 @@ $$\\frac{N(h)}{h}=9, \\qquad 18\\cdot 27^{-\\frac{1}{3}}$$
 
 $$\\frac{N(h)}{h}=9, \\qquad 486^{-\\frac{1}{3}}$$
 
-$$18\\cdot 8^{-\\frac{1}{3}}$$
-
 $$\\frac{N(h)}{h}=6$$
 
 and $6<9$.
@@ -4262,6 +4168,10 @@ $$5^{2}=25$$
 
 $$v=25$$
 
+$$125^{\\frac{1}{3}}=\\bigl(125^{\\frac{1}{3}}\\bigr)^{1}$$
+
+$$5^{1}=5$$
+
 The claim is that the rating is first reached above $30$ m/s. We have $v=25$.
 
 So the statement is False.`,
@@ -4289,9 +4199,9 @@ $$P(16)=2048$$
 
 $$P(16)=32^{\\frac{5}{2}}$$
 
-$$P(16)=2\\cdot 1024$$
+$$16^{\\frac{1}{2}}=\\bigl(16^{\\frac{1}{2}}\\bigr)^{1}$$
 
-$$P(16)=2048$$
+$$4^{1}=4$$
 
 Two kilowatts is $2000$ watts. Compare with the claim:
 
@@ -4498,7 +4408,7 @@ $$\\frac{y(x)}{x}=8, \\qquad 4\\cdot 3$$
 
 $$\\frac{y(x)}{x}=8, \\qquad 108^{\\frac{1}{3}}$$
 
-$$4\\cdot 8^{\\frac{1}{3}}$$
+$$\\frac{y(x)}{x}=8, \\qquad 12$$
 
 $$\\frac{y(x)}{x}=12$$
 
@@ -4550,9 +4460,9 @@ $$y(8)=64$$
 
 $$y(8)=32^{\\frac{4}{3}}$$
 
-$$y(8)=4\\cdot 16$$
+$$8^{\\frac{1}{3}}=\\bigl(8^{\\frac{1}{3}}\\bigr)^{1}$$
 
-$$y(8)=64$$
+$$2^{1}=2$$
 
 The claim compares this with $50$. Compare with the claim:
 
@@ -4664,9 +4574,9 @@ $$f(64)=144$$
 
 $$f(64)=576^{\\frac{2}{3}}$$
 
-$$f(64)=9\\cdot 16$$
+$$64^{\\frac{1}{3}}=\\bigl(64^{\\frac{1}{3}}\\bigr)^{1}$$
 
-$$f(64)=144$$
+$$4^{1}=4$$
 
 The claim compares this with $140$. We have $144>140$.
 
@@ -4693,9 +4603,9 @@ $$f(125)=225$$
 
 $$f(125)=1125^{\\frac{2}{3}}$$
 
-$$f(125)=9\\cdot 25$$
+$$125^{\\frac{1}{3}}=\\bigl(125^{\\frac{1}{3}}\\bigr)^{1}$$
 
-$$f(125)=225$$
+$$5^{1}=5$$
 
 The claim is an index under $200$. We have $225>200$.
 
@@ -4926,9 +4836,9 @@ $$C(243)=405$$
 
 $$C(243)=1215^{\\frac{4}{5}}$$
 
-$$C(243)=5\\cdot 81$$
+$$243^{\\frac{1}{5}}=\\bigl(243^{\\frac{1}{5}}\\bigr)^{1}$$
 
-$$C(243)=405$$
+$$3^{1}=3$$
 
 The claim compares this with $400$. We have $405>400$.
 
@@ -5147,8 +5057,6 @@ $$\\frac{1}{4}\\cdot 20$$
 
 $$\\frac{C_2(q)}{q}=5, \\qquad \\frac{1}{4}\\cdot 40$$
 
-$$\\frac{1}{4}\\cdot 20$$
-
 $$\\frac{C_2(q)}{q}=10$$
 
 and $10>5$.
@@ -5235,6 +5143,10 @@ $$2^{3}=8$$
 
 $$3\\cdot 4^{\\frac{3}{2}}=24$$
 
+$$4^{\\frac{1}{2}}=\\bigl(4^{\\frac{1}{2}}\\bigr)^{1}$$
+
+$$2^{1}=2$$
+
 $$3\\cdot 16^{\\frac{3}{2}}=3\\cdot 64$$
 
 $$16^{\\frac{3}{2}}=\\bigl(16^{\\frac{1}{2}}\\bigr)^{3}$$
@@ -5244,6 +5156,10 @@ $$16^{\\frac{1}{2}}=4$$
 $$4^{3}=64$$
 
 $$3\\cdot 16^{\\frac{3}{2}}=192$$
+
+$$16^{\\frac{1}{2}}=\\bigl(16^{\\frac{1}{2}}\\bigr)^{1}$$
+
+$$4^{1}=4$$
 
 so the first two measurements are consistent with a single power.
 
@@ -5287,6 +5203,10 @@ $$3^{3}=27$$
 
 $$3\\cdot 9^{\\frac{3}{2}}=81$$
 
+$$9^{\\frac{1}{2}}=\\bigl(9^{\\frac{1}{2}}\\bigr)^{1}$$
+
+$$3^{1}=3$$
+
 That matches the recorded $81$, so the measurement does not contradict the fitted law.
 
 So the statement is False.`,
@@ -5310,6 +5230,10 @@ $$5^{3}=125$$
 
 $$3\\cdot 25^{\\frac{3}{2}}=375$$
 
+$$25^{\\frac{1}{2}}=\\bigl(25^{\\frac{1}{2}}\\bigr)^{1}$$
+
+$$5^{1}=5$$
+
 The claim compares this with $350$. We have $375>350$.
 
 So the statement is True.`,
@@ -5330,6 +5254,10 @@ $$9^{\\frac{3}{2}}=\\bigl(9^{\\frac{1}{2}}\\bigr)^{3}$$
 $$9^{\\frac{1}{2}}=3$$
 
 $$3^{3}=27$$
+
+$$9^{\\frac{1}{2}}=\\bigl(9^{\\frac{1}{2}}\\bigr)^{1}$$
+
+$$3^{1}=3$$
 
 The claim compares this with $70$. Compare with the claim:
 
@@ -5456,8 +5384,6 @@ $$100^{\\frac{1}{2}}$$
 
 $$R(100)=10$$
 
-$$R(100)=800$$
-
 Eight hundred sits above $750$.
 
 The computed figure agrees with the claim.
@@ -5577,8 +5503,6 @@ $$Y(36)=720^{\\frac{1}{2}}$$
 $$36^{\\frac{1}{2}}$$
 
 $$Y(36)=6$$
-
-$$Y(36)=120$$
 
 One hundred and twenty sits above $100$.
 
@@ -5894,6 +5818,10 @@ $$4^{3}=64$$
 
 $$C(16)=\\frac{1}{2}\\cdot 64$$
 
+$$16^{\\frac{1}{2}}=\\bigl(16^{\\frac{1}{2}}\\bigr)^{1}$$
+
+$$4^{1}=4$$
+
 $$16^{\\frac{3}{2}}$$
 
 $$C(16)=64$$
@@ -6131,11 +6059,13 @@ $$T(64)=64$$
 
 $$T(64)=256^{\\frac{2}{3}}$$
 
+$$64^{\\frac{1}{3}}=\\bigl(64^{\\frac{1}{3}}\\bigr)^{1}$$
+
+$$4^{1}=4$$
+
 $$64^{\\frac{2}{3}}$$
 
 $$T(64)=16$$
-
-$$T(64)=64$$
 
 Sixty-four sits above $60$.
 
@@ -6909,11 +6839,13 @@ $$C(81)=2700$$
 
 $$C(81)=8100^{\\frac{3}{4}}$$
 
+$$81^{\\frac{1}{4}}=\\bigl(81^{\\frac{1}{4}}\\bigr)^{1}$$
+
+$$3^{1}=3$$
+
 $$81^{\\frac{3}{4}}$$
 
 $$C(81)=27$$
-
-$$C(81)=2700$$
 
 Two thousand seven hundred sits above $2500$.
 
@@ -7207,11 +7139,17 @@ $$16^{3}=4096$$
 
 $$L(64)=4096$$
 
+$$64^{\\frac{1}{2}}=\\bigl(64^{\\frac{1}{2}}\\bigr)^{1}$$
+
+$$8^{1}=8$$
+
+$$256^{\\frac{1}{2}}=\\bigl(256^{\\frac{1}{2}}\\bigr)^{1}$$
+
+$$16^{1}=16$$
+
 $$64^{\\frac{3}{2}}$$
 
 $$L(64)=512$$
-
-$$L(64)=2048$$
 
 Two thousand and forty-eight sits above $2000$.
 
@@ -7345,9 +7283,9 @@ $$I(0.16)=60\\cdot 0.4$$
 
 $$I(0.16)=0.16^{\\frac{1}{2}}$$
 
-$$0.16^{\\frac{1}{2}}$$
-
 $$I(0.16)=0.4$$
+
+$$0.16^{\\frac{1}{2}}$$
 
 $$I(0.16)=24$$
 
@@ -7376,8 +7314,6 @@ $$\\frac{3}{2}>1$$
 
 , so past
 
-$$v=\\frac{1}{4}$$
-
  the scaled charge stays larger at every bigger order.
 
 The computed figure agrees with the claim.
@@ -7403,9 +7339,13 @@ $$0.25\\cdot I(0.25)=60\\cdot 0.125$$
 
 $$0.25\\cdot I(0.25)=0.25^{\\frac{3}{2}}$$
 
-$$0.25^{\\frac{3}{2}}$$
+$$25^{\\frac{1}{2}}=\\bigl(25^{\\frac{1}{2}}\\bigr)^{1}$$
+
+$$5^{1}=5$$
 
 $$0.25\\cdot I(0.25)=0.125$$
+
+$$0.25^{\\frac{3}{2}}$$
 
 $$60\\cdot 0.125$$
 
@@ -7503,11 +7443,13 @@ $$E(64)=160$$
 
 $$E(64)=640^{\\frac{2}{3}}$$
 
+$$64^{\\frac{1}{3}}=\\bigl(64^{\\frac{1}{3}}\\bigr)^{1}$$
+
+$$4^{1}=4$$
+
 $$64^{\\frac{2}{3}}$$
 
 $$E(64)=16$$
-
-$$E(64)=160$$
 
 One hundred and sixty sits above $150$.
 
@@ -7555,11 +7497,13 @@ $$E(216)=360$$
 
 $$E(216)=2160^{\\frac{2}{3}}$$
 
+$$216^{\\frac{1}{3}}=\\bigl(216^{\\frac{1}{3}}\\bigr)^{1}$$
+
+$$6^{1}=6$$
+
 $$216^{\\frac{2}{3}}$$
 
 $$E(216)=36$$
-
-$$E(216)=360$$
 
 Three hundred and sixty sits under $400$.
 
@@ -8082,8 +8026,6 @@ $$\\frac{S(2v)}{S(v)}=8$$
 
 $$2^{3}=8$$
 
-$$\\frac{S(2v)}{S(v)}=8$$
-
 That is not $2$.
 
 The computed figure disagrees with the claim.
@@ -8300,6 +8242,10 @@ $$16^{\\frac{1}{2}}=4$$
 
 $$4^{3}=64$$
 
+$$16^{\\frac{1}{2}}=\\bigl(16^{\\frac{1}{2}}\\bigr)^{1}$$
+
+$$4^{1}=4$$
+
 $$16^{\\frac{3}{2}}$$
 
 $$16^{\\frac{3}{2}}=64$$
@@ -8461,6 +8407,10 @@ $$4^{3}=64$$
 
 $$64^{\\frac{2}{3}}=(64)^{\\frac{2}{3}}$$
 
+$$64^{\\frac{1}{3}}=\\bigl(64^{\\frac{1}{3}}\\bigr)^{1}$$
+
+$$4^{1}=4$$
+
 $$64^{\\frac{2}{3}}$$
 
 $$64^{\\frac{2}{3}}=16$$
@@ -8493,6 +8443,10 @@ $$5^{2}=25$$
 $$5^{3}=125$$
 
 $$125^{\\frac{2}{3}}=(125)^{\\frac{2}{3}}$$
+
+$$125^{\\frac{1}{3}}=\\bigl(125^{\\frac{1}{3}}\\bigr)^{1}$$
+
+$$5^{1}=5$$
 
 $$125^{\\frac{2}{3}}$$
 
@@ -8558,6 +8512,10 @@ $$25^{\\frac{1}{2}}=5$$
 $$5^{3}=125$$
 
 $$m=125$$
+
+$$25^{\\frac{1}{2}}=\\bigl(25^{\\frac{1}{2}}\\bigr)^{1}$$
+
+$$5^{1}=5$$
 
 That is $125$ kg, which is $0.125$ tonnes, not more than $1$ tonne. In tonnes,
 
@@ -8810,6 +8768,10 @@ $$2^{4}=16$$
 
 $$16^{\\frac{3}{4}}=(16)^{\\frac{3}{4}}$$
 
+$$16^{\\frac{1}{4}}=\\bigl(16^{\\frac{1}{4}}\\bigr)^{1}$$
+
+$$2^{1}=2$$
+
 $$16^{\\frac{3}{4}}$$
 
 $$16^{\\frac{3}{4}}=8$$
@@ -8864,8 +8826,6 @@ $$64^{\\frac{3}{4}}=(64)^{\\frac{3}{4}}$$
 $$64^{\\frac{3}{4}}$$
 
 $$64^{\\frac{3}{4}}=2^{\\frac{9}{2}}$$
-
-$$64^{\\frac{3}{4}}$$
 
 $$64^{\\frac{3}{4}}=16\\sqrt{2}$$
 
@@ -9112,8 +9072,6 @@ $$\\frac{y(2L)}{y(L)}=2^{2}$$
 $$\\frac{y(2L)}{y(L)}=4$$
 
 $$2^{2}=4$$
-
-$$\\frac{y(2L)}{y(L)}=4$$
 
 Doubling the span quadruples the tip deflection.
 
@@ -9433,8 +9391,6 @@ $$d=6$$
 
 The cap is met at
 
-$$d=6$$
-
  m, a finite distance.
 
 The computed figure disagrees with the claim.
@@ -9516,8 +9472,6 @@ $$\\frac{H(2q)}{H(q)}=2^{2}$$
 $$\\frac{H(2q)}{H(q)}=4$$
 
 $$2^{2}=4$$
-
-$$\\frac{H(2q)}{H(q)}=4$$
 
 Doubling the flow quadruples the head.
 
@@ -10565,6 +10519,10 @@ $$2^{3}=8$$
 
 $$\\frac{f(4x)}{f(x)}=8$$
 
+$$4^{\\frac{1}{2}}=\\bigl(4^{\\frac{1}{2}}\\bigr)^{1}$$
+
+$$2^{1}=2$$
+
 A factor of $4$ on the index multiplies handling cost by $8$, not by $4$.
 
 The computed figure disagrees with the claim.
@@ -11005,8 +10963,6 @@ $$\\frac{M(2h)}{M(h)}=8$$
 
 $$2^{3}=8$$
 
-$$\\frac{M(2h)}{M(h)}=8$$
-
 Doubling a bell's height multiplies its mass by $8$, not by $2$.
 
 The computed figure disagrees with the claim.
@@ -11389,8 +11345,6 @@ A proportional law would have carried exponent $1$.
 
 The leftover exponent is
 
-$$\\frac{3}{4}$$
-
 .
 
 The computed figure agrees with the claim.
@@ -11474,9 +11428,9 @@ $$D(256)=320$$
 
 $$D(256)=1280^{\\frac{3}{4}}$$
 
-$$D(256)=5\\cdot 64$$
+$$256^{\\frac{1}{4}}=\\bigl(256^{\\frac{1}{4}}\\bigr)^{1}$$
 
-$$D(256)=320$$
+$$4^{1}=4$$
 
 The claim is that this already sits above $300$. We have $320>300$.
 
@@ -11501,9 +11455,15 @@ $$16\\cdot D(16)=80\\cdot 16^{\\frac{3}{4}}$$
 
 $$16\\cdot D(16)=1280^{\\frac{3}{4}}$$
 
-$$16\\cdot D(16)=16\\cdot 40$$
+$$16^{\\frac{1}{4}}=\\bigl(16^{\\frac{1}{4}}\\bigr)^{1}$$
+
+$$2^{1}=2$$
+
+$$16\\cdot D(16)=80\\cdot 8$$
 
 $$16\\cdot D(16)=640$$
+
+$$16\\cdot D(16)=16\\cdot 40$$
 
 The claim is that this still sits under $600$. We have $640>600$.
 
@@ -11882,8 +11842,6 @@ A proportional law would have carried exponent $1$.
 
 The leftover exponent is
 
-$$\\frac{4}{3}$$
-
 .
 
 The computed figure agrees with the claim.
@@ -12014,8 +11972,6 @@ A proportional law would have carried exponent $1$.
 
 The leftover exponent is
 
-$$\\frac{3}{2}$$
-
 .
 
 The computed figure agrees with the claim.
@@ -12085,9 +12041,13 @@ $$8^{3}=512$$
 
 $$Q(4)=512$$
 
-$$Q(4)=16\\cdot 8$$
+$$4^{\\frac{1}{2}}=\\bigl(4^{\\frac{1}{2}}\\bigr)^{1}$$
 
-$$Q(4)=128$$
+$$2^{1}=2$$
+
+$$64^{\\frac{1}{2}}=\\bigl(64^{\\frac{1}{2}}\\bigr)^{1}$$
+
+$$8^{1}=8$$
 
 The claim is that this still sits under $100$. We have $128>100$.
 
@@ -13368,8 +13328,6 @@ $$\\frac{3}{2}>1$$
 A proportional law would have carried exponent $1$.
 
 The leftover exponent is
-
-$$\\frac{3}{2}$$
 
 .
 

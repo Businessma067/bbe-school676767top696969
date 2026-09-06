@@ -206,11 +206,12 @@ def unpack_scale_ratio_display(text):
     return reassemble(out)
 
 def dedupe_consecutive_displays(text):
-    parts=tokenize(text); out=[]; last=None
+    parts=tokenize(text); out=[]; seen=set(); last=None
     for kind,val in parts:
         if kind=="disp":
-            if val==last: continue
-            last=val; out.append((kind,val))
+            if val==last or val in seen:
+                continue
+            last=val; seen.add(val); out.append((kind,val))
         else:
             out.append((kind,val))
             if val.strip(): last=None
