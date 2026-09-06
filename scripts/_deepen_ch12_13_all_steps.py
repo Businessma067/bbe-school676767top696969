@@ -378,7 +378,7 @@ def deepen_math_sequence(maths: list[str]) -> list[str]:
                 re.sub(r"\s+", " ", maths[i + skip]).strip(),
             ):
                 skip += 1
-                if skip > 8:
+                if skip > 16:
                     break
             i += skip
             continue
@@ -592,7 +592,7 @@ def deepen_explanation(expl: str, letter: str, is_true: bool, overview: str = ""
                 re.sub(r"\s+", " ", maths[i + skip]).strip(),
             ):
                 skip += 1
-                if skip > 6:
+                if skip > 16:
                     break
             if skip > 1:
                 return skip

@@ -56,6 +56,17 @@ def nice_num(v) -> str:
     return sp.latex(v)
 
 
+def fmt_factor(v: str) -> str:
+    s = str(v).strip()
+    return f"({s})" if s.startswith("-") else s
+
+
+def fmt_diff(a, b) -> str:
+    na, nb = nice_num(a), nice_num(b)
+    return f"{na} - ({nb})" if str(nb).startswith("-") else f"{na} - {nb}"
+
+
+
 def ensure_header_closer(text: str, letter: str, truth: bool) -> str:
     verd = "True" if truth else "False"
     text = text.strip()
@@ -102,29 +113,47 @@ def reassemble(parts):
     return "".join(buf)
 
 
+def _factor_pair(rhs: str):
+    """Parse a(b)±c(d) allowing (-n) factors."""
+    m2 = re.match(
+        r"^(\(?-?[\d.]+\)?)\(([^)]+)\)([+\-])(\(?-?[\d.]+\)?)\(([^)]+)\)$",
+        rhs,
+    )
+    if m2:
+        return m2.groups()
+    m2 = re.match(
+        r"^(-?[\d.]+)\\cdot(-?[\d.]+)([+\-])(-?[\d.]+)\\cdot(-?[\d.]+)$",
+        rhs,
+    )
+    return m2.groups() if m2 else None
+
+
 def unpack_delta(body: str):
     s = norm(body)
     m = re.match(r"^(?:\\Delta|D)\s*=\s*(.+)$", s)
     if not m:
         return None
     rhs = m.group(1).replace(" ", "")
-    m2 = re.match(r"^([-\d.]+)\(([^)]+)\)([+\-])([-\d.]+)\(([^)]+)\)$", rhs)
-    if not m2:
-        m2 = re.match(r"^([-\d.]+)\\cdot([-\d.]+)([+\-])([-\d.]+)\\cdot([-\d.]+)$", rhs)
-    if not m2:
+    parsed = _factor_pair(rhs)
+    if not parsed:
         return None
-    a, b, op, c, d = m2.groups()
+    a, b, op, c, d = parsed
+    a = a.strip("()")
+    c = c.strip("()")
     try:
         p1 = sp.N(sp.sympify(a) * sp.sympify(b))
         p2 = sp.N(sp.sympify(c) * sp.sympify(d))
         total = p1 + p2 if op == "+" else p1 - p2
     except Exception:
         return None
-    out = [f"{a}\\cdot {b} = {nice_num(p1)}", f"{c}\\cdot {d} = {nice_num(p2)}"]
+    out = [
+        f"{fmt_factor(a)}\\cdot {fmt_factor(b)} = {nice_num(p1)}",
+        f"{fmt_factor(c)}\\cdot {fmt_factor(d)} = {nice_num(p2)}",
+    ]
     if op == "+":
         out.append(f"\\Delta = {nice_num(p1)} + {nice_num(p2)}")
     else:
-        out.append(f"\\Delta = {nice_num(p1)} - {nice_num(p2)}")
+        out.append(f"\\Delta = {fmt_diff(p1, p2)}")
     out.append(f"\\Delta = {nice_num(total)}")
     return out
 
@@ -135,10 +164,12 @@ def unpack_cramer_frac(body: str):
     if not m:
         return None
     var, num, den = m.group(1), m.group(2), m.group(3)
-    m2 = re.match(r"^([-\d.]+)\(([^)]+)\)([+\-])([-\d.]+)\(([^)]+)\)$", num)
-    if not m2:
+    parsed = _factor_pair(num)
+    if not parsed:
         return None
-    a, b, op, c, d = m2.groups()
+    a, b, op, c, d = parsed
+    a = a.strip("()")
+    c = c.strip("()")
     try:
         p1 = sp.N(sp.sympify(a) * sp.sympify(b))
         p2 = sp.N(sp.sympify(c) * sp.sympify(d))
@@ -147,11 +178,14 @@ def unpack_cramer_frac(body: str):
         result = sp.N(combined / den_v)
     except Exception:
         return None
-    out = [f"{a}\\cdot {b} = {nice_num(p1)}", f"{c}\\cdot {d} = {nice_num(p2)}"]
+    out = [
+        f"{fmt_factor(a)}\\cdot {fmt_factor(b)} = {nice_num(p1)}",
+        f"{fmt_factor(c)}\\cdot {fmt_factor(d)} = {nice_num(p2)}",
+    ]
     if op == "+":
         out.append(f"{nice_num(p1)} + {nice_num(p2)} = {nice_num(combined)}")
     else:
-        out.append(f"{nice_num(p1)} - {nice_num(p2)} = {nice_num(combined)}")
+        out.append(f"{fmt_diff(p1, p2)} = {nice_num(combined)}")
     out.append(f"{var} = \\frac{{{nice_num(combined)}}}{{{nice_num(den_v)}}}")
     out.append(f"{var} = {nice_num(result)}")
     return out
