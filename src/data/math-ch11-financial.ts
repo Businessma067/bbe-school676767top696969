@@ -13470,6 +13470,24 @@ So the statement is True.`,
 
 Fifteen withdrawals of \\$2,400 total
 
+Substitute the recovered stem inputs:
+
+$$a = 2,400,$$
+
+$$r = 4.5\\%$$
+
+$$r = 0.045,$$
+
+$$n = 15$$
+
+$$
+P_{15} = \\frac{2,400}{0.045}\\left[1-\\frac{1}{(1.045)^{15}}\\right]
+$$
+
+$$= 53,333.33 \\times 0.483284$$
+
+$$= 25,775.15$$
+
 $$2,400 \\times 15$$
 
 $$= 36,000$$
@@ -13495,7 +13513,15 @@ $$2 \\times 25,775.15$$
 
 $$= 51,550.30$$
 
-The claim needs $P_{30}=51,550.30$. We have $39,091.65 \\ne 51,550.30$.
+The claim needs $P_{30}=51,550.30$. The computed value is
+
+$$39,091.65$$
+
+The claim is
+
+$$51,550.30$$
+
+Since $39,091.65 \\ne 51,550.30$, the figures disagree.
 
 So the statement is False.`,
       `**D.** → False
@@ -13512,7 +13538,15 @@ $$36,000 - 25,775.15$$
 
 $$= 10,224.85$$
 
-The claim is \\$11,224.85. We have $10,224.85 \\ne 11,224.85$.
+The claim is \\$11,224.85. The computed value is
+
+$$10,224.85$$
+
+The claim is
+
+$$11,224.85$$
+
+Since $10,224.85 \\ne 11,224.85$, the figures disagree.
 
 So the statement is False.`,
       `**E.** → False
@@ -13632,7 +13666,15 @@ $$\\approx 0.6882$$
 
 $$= 68.82\\%$$
 
-Compare the computed value with the claim (about $72.82\\%$). We have $68.82\\% \\ne 72.82\\%$. The two sides do not agree.
+Compare the computed value with the claim (about $72.82\\%$). The computed value is
+
+$$68.82\\%$$
+
+The claim is
+
+$$72.82\\%$$
+
+Since $68.82\\% \\ne 72.82\\%$, the figures disagree. The two sides do not agree.
 
 So the statement is False.`,
       `**D.** → False
@@ -13740,11 +13782,37 @@ So the statement is True.`,
 
 The overview recovered $P_9=16,288.18$. That is less than Option 1's \\$18,000, so Option 2 is cheaper. The saving is
 
+Substitute the recovered stem inputs:
+
+$$a = 2,500,$$
+
+$$r = 7\\%$$
+
+$$r = 0.07,$$
+
+$$n = 9$$
+
+$$
+P_9 = \\frac{2,500}{0.07}\\left[1-\\frac{1}{(1.07)^9}\\right]
+$$
+
+$$= 35,714.29 \\times 0.456069$$
+
+$$= 16,288.18$$
+
 $$18,000 - 16,288.18$$
 
 $$= 1,711.82$$
 
-Compare the computed value with the claim (a saving of \\$1,811.82). We have $1,711.82 \\ne 1,811.82$. The two sides do not agree.
+Compare the computed value with the claim (a saving of \\$1,811.82). The computed value is
+
+$$1,711.82$$
+
+The claim is
+
+$$1,811.82$$
+
+Since $1,711.82 \\ne 1,811.82$, the figures disagree. The two sides do not agree.
 
 So the statement is False.`,
       `**C.** → False
@@ -13776,7 +13844,15 @@ $$22,500 - 18,000$$
 
 $$= 4,500$$
 
-Compare the computed value with the claim (\\$4,600). We have $4,500 \\ne 4,600$. The two sides do not agree.
+Compare the computed value with the claim (\\$4,600). The computed value is
+
+$$4,500$$
+
+The claim is
+
+$$4,600$$
+
+Since $4,500 \\ne 4,600$, the figures disagree. The two sides do not agree.
 
 So the statement is False.`,
       `**E.** → False
@@ -13900,7 +13976,15 @@ $$19,126.18 - 13,856.46$$
 
 $$= 5,269.72$$
 
-The claim is a gap of \\$5,769.72. We have $5,269.72 \\ne 5,769.72$.
+The claim is a gap of \\$5,769.72. The computed value is
+
+$$5,269.72$$
+
+The claim is
+
+$$5,769.72$$
+
+Since $5,269.72 \\ne 5,769.72$, the figures disagree.
 
 So the statement is False.`,
       `**D.** → False
@@ -14043,7 +14127,15 @@ $$21,426.05 - 20,405.76$$
 
 $$= 1,020.29$$
 
-Compare the computed value with the claim (\\$1,120.29). We have $1,020.29 \\ne 1,120.29$. The two sides do not agree.
+Compare the computed value with the claim (\\$1,120.29). The computed value is
+
+$$1,020.29$$
+
+The claim is
+
+$$1,120.29$$
+
+Since $1,020.29 \\ne 1,120.29$, the figures disagree. The two sides do not agree.
 
 So the statement is False.`,
       `**D.** → False
@@ -14072,7 +14164,15 @@ $$2 \\times 21,426.05$$
 
 $$= 42,852.10$$
 
-The claim needs $F_{\\mathrm{due}}(12)=42,852.10$. We have $50,138.93 \\ne 42,852.10$.
+The claim needs $F_{\\mathrm{due}}(12)=42,852.10$. The computed value is
+
+$$50,138.93$$
+
+The claim is
+
+$$42,852.10$$
+
+Since $50,138.93 \\ne 42,852.10$, the figures disagree.
 
 So the statement is False.`,
       `**E.** → True
@@ -14200,7 +14300,15 @@ $$107,162.61 - 101,096.80$$
 
 $$= 6,065.81$$
 
-Compare the computed value with the claim (\\$7,065.81). We have $6,065.81 \\ne 7,065.81$. The two sides do not agree.
+Compare the computed value with the claim (\\$7,065.81). The computed value is
+
+$$6,065.81$$
+
+The claim is
+
+$$7,065.81$$
+
+Since $6,065.81 \\ne 7,065.81$, the figures disagree. The two sides do not agree.
 
 So the statement is False.`,
       `**D.** → False
@@ -14229,7 +14337,15 @@ $$2 \\times 107,162.61$$
 
 $$= 214,325.22$$
 
-The claim needs $P_{\\mathrm{due}}(10)=214,325.22$. We have $187,240.52 \\ne 214,325.22$.
+The claim needs $P_{\\mathrm{due}}(10)=214,325.22$. The computed value is
+
+$$187,240.52$$
+
+The claim is
+
+$$214,325.22$$
+
+Since $187,240.52 \\ne 214,325.22$, the figures disagree.
 
 So the statement is False.`,
       `**E.** → True
@@ -14389,7 +14505,15 @@ $$\\frac{PV_0}{V} = \\frac{1}{(1.06)^4}$$
 
 $$\\approx 0.7921$$
 
-Compare the computed value with the claim ($0.8321$). We have $0.7921 \\ne 0.8321$. The two sides do not agree.
+Compare the computed value with the claim ($0.8321$). The computed value is
+
+$$0.7921$$
+
+The claim is
+
+$$0.8321$$
+
+Since $0.7921 \\ne 0.8321$, the figures disagree. The two sides do not agree.
 
 So the statement is False.`,
     ],
@@ -14479,6 +14603,20 @@ So the statement is True.`,
 
 The market price is \\$65.00. The overview recovered a fair value of \\$60.71:
 
+Substitute the recovered stem inputs:
+
+$$a = 4.25,$$
+
+$$r = 7\\%$$
+
+$$r = 0.07$$
+
+$$P = \\frac{4.25}{0.07}$$
+
+$$P = 60.714286$$
+
+$$P \\approx 60.71$$
+
 $$65.00 > 60.71$$
 
 The claim needs the stock to be undervalued. We have $65.00 > 60.71$.
@@ -14496,7 +14634,15 @@ $$
 = 106.25
 $$
 
-Compare the computed value with the claim (\\$116.25). We have $106.25 \\ne 116.25$. The two sides do not agree.
+Compare the computed value with the claim (\\$116.25). The computed value is
+
+$$106.25$$
+
+The claim is
+
+$$116.25$$
+
+Since $106.25 \\ne 116.25$, the figures disagree. The two sides do not agree.
 
 So the statement is False.`,
       `**D.** → False
@@ -14522,7 +14668,15 @@ $$P'' = \\frac{3.40}{0.07}$$
 
 $$\\approx 48.57$$
 
-Compare the computed value with the claim (\\$50.57). We have $48.57 \\ne 50.57$. The two sides do not agree.
+Compare the computed value with the claim (\\$50.57). The computed value is
+
+$$48.57$$
+
+The claim is
+
+$$50.57$$
+
+Since $48.57 \\ne 50.57$, the figures disagree. The two sides do not agree.
 
 So the statement is False.`,
     ],
@@ -14783,12 +14937,38 @@ $$
 = 685,714.29
 $$
 
-Compare the computed value with the claim (\\$715,714.29). We have $685,714.29 \\ne 715,714.29$. The two sides do not agree.
+Compare the computed value with the claim (\\$715,714.29). The computed value is
+
+$$685,714.29$$
+
+The claim is
+
+$$715,714.29$$
+
+Since $685,714.29 \\ne 715,714.29$, the figures disagree. The two sides do not agree.
 
 So the statement is False.`,
       `**E.** → True
 
 The growing-perpetuity formula uses the denominator $r-g$. When $g\\ge 8\\%$ that denominator is zero or negative, so the constant-growth model does not apply. The claim is that restriction.
+
+Substitute the recovered stem inputs:
+
+$$a_1 = 24,000,$$
+
+$$g = 2.5\\%$$
+
+$$g = 0.025,$$
+
+$$r = 8\\%$$
+
+$$r = 0.08$$
+
+$$P = \\frac{24,000}{0.08-0.025}$$
+
+$$P = \\frac{24,000}{0.055}$$
+
+$$P = 436,363.64$$
 
 So the statement is True.`,
     ],
@@ -14913,7 +15093,15 @@ $$51.50 - 50.00$$
 
 $$= 1.50$$
 
-Compare the computed value with the claim (\\$2.50). We have $1.50 \\ne 2.50$. The two sides do not agree.
+Compare the computed value with the claim (\\$2.50). The computed value is
+
+$$1.50$$
+
+The claim is
+
+$$2.50$$
+
+Since $1.50 \\ne 2.50$, the figures disagree. The two sides do not agree.
 
 So the statement is False.`,
       `**D.** → False
@@ -14938,6 +15126,24 @@ So the statement is False.`,
       `**E.** → False
 
 If $g=r$, the denominator $r-g$ is zero and the growing-perpetuity formula is undefined. The present value does not become $0$. The claim is \\$0.00.
+
+Substitute the recovered stem inputs:
+
+$$D_0 = 3.00,$$
+
+$$g = 3\\%$$
+
+$$g = 0.03,$$
+
+$$r = 9\\%$$
+
+$$r = 0.09$$
+
+$$D_1 = 3.00 \\times 1.03$$
+
+$$D_1 = 3.09$$
+
+$$P = \\frac{3.09}{0.09-0.03}$$
 
 So the statement is False.`,
     ],
@@ -15006,6 +15212,24 @@ $$`,
 
 The overview recovered $P_1=180,000$. A fair buy at a \\$170,000 asking price needs fair value at least that price:
 
+Substitute the recovered stem inputs:
+
+$$a = 18,000,$$
+
+$$a_1 = 14,000,$$
+
+$$g = 4\\%$$
+
+$$g = 0.04$$
+
+$$P_1 = \\frac{18,000}{0.10}$$
+
+$$P_1 = 180,000$$
+
+$$P_2 = \\frac{14,000}{0.10-0.04}$$
+
+$$P_2 = \\frac{14,000}{0.06}$$
+
 $$180,000 > 170,000$$
 
 Deal 1 is a good buy.
@@ -15014,6 +15238,24 @@ So the statement is True.`,
       `**B.** → True
 
 The overview recovered $P_2=233,333.33$. The margin over the asking price is
+
+Substitute the recovered stem inputs:
+
+$$a = 18,000,$$
+
+$$a_1 = 14,000,$$
+
+$$g = 4\\%$$
+
+$$g = 0.04$$
+
+$$P_1 = \\frac{18,000}{0.10}$$
+
+$$P_1 = 180,000$$
+
+$$P_2 = \\frac{14,000}{0.10-0.04}$$
+
+$$P_2 = \\frac{14,000}{0.06}$$
 
 $$233,333.33 - 170,000$$
 
@@ -15025,6 +15267,24 @@ So the statement is True.`,
       `**C.** → False
 
 Deal 1's margin is $180,000-170,000=10,000$. Deal 2's margin is $63,333.33$. The claim needs Deal 1's cushion to be larger. We have $10,000 < 63,333.33$.
+
+Substitute the recovered stem inputs:
+
+$$a = 18,000,$$
+
+$$a_1 = 14,000,$$
+
+$$g = 4\\%$$
+
+$$g = 0.04$$
+
+$$P_1 = \\frac{18,000}{0.10}$$
+
+$$P_1 = 180,000$$
+
+$$P_2 = \\frac{14,000}{0.10-0.04}$$
+
+$$P_2 = \\frac{14,000}{0.06}$$
 
 So the statement is False.`,
       `**D.** → True
