@@ -323,9 +323,14 @@ def process_explanation(
     context: str = "",
     tables_markdown: str | None = None,
     bank: str = "ch9",
+    polys: dict | None = None,
 ) -> str:
     if bank in ("ch9", "mixed") and tables_markdown:
         regen = regenerate_difference_letter(stmt, tables_markdown, letter, truth)
+        if regen is not None:
+            return regen
+    if bank in ("ch9", "mixed") and polys:
+        regen = regen_poly_eval_letter(stmt, polys, letter, truth)
         if regen is not None:
             return regen
 
@@ -375,6 +380,11 @@ def process_json_range(path: Path, start: int, end: int | None):
     for pos in range(start, end_i):
         idx = order[pos]
         t = tasks[idx]
+        polys = (
+            extract_named_polys(t.get("context") or "", t.get("solution_overview") or "")
+            if bank in ("ch9", "mixed")
+            else {}
+        )
         new_expls = []
         task_changed = False
         for i, e in enumerate(t["tactical_explanations"]):
@@ -387,6 +397,7 @@ def process_json_range(path: Path, start: int, end: int | None):
                 t.get("context", ""),
                 t.get("tables_markdown"),
                 bank=bank,
+                polys=polys,
             )
             if new != e:
                 changed += 1
