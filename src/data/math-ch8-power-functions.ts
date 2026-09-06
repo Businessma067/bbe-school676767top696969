@@ -577,7 +577,13 @@ Read the exponent from the overview before comparing growth rates.
 
 On $0<n<2$ the overview's factor $n-2$ is negative, while $n^{2}$ is still positive, so $G-F<0$ and therefore $F(n)>G(n)$. A single interior check:
 
-$$F(1)=2, \\qquad G(1)=1$$
+$$
+F(1) = 2, \\qquad G(1)
+$$
+
+$$
+= 1
+$$
 
 The quadratic index leads throughout $0<n<2$.
 
@@ -1858,7 +1864,13 @@ So the statement is True.`,
 
 The overview recovered $C(n)=n^{2}$ and $D(n)=16n$. At $25$ documents:
 
-$$C(25)=625, \\qquad D(25)=400$$
+$$
+C(25) = 625, \\qquad D(25)
+$$
+
+$$
+= 400
+$$
 
 $$625-400=225$$
 
@@ -2181,7 +2193,13 @@ At the recorded pair,
 
 $$q(10)=\\frac{10000}{100}$$
 
-$$q(10)=100, \\qquad q(5)=400$$
+$$
+q(10) = 100, \\qquad q(5)
+$$
+
+$$
+= 400
+$$
 
 and $100$ is a quarter of $400$, not a half. The claim is that demand halves.
 
@@ -2280,7 +2298,13 @@ $$\\frac{C(n)}{n}=\\frac{200}{n}+30 n^{-\\frac{1}{2}}$$
 
 Both leftover exponents are negative, so the average falls as the book grows. At the two invoices:
 
-$$\\frac{C(100)}{100}=5, \\qquad \\frac{C(400)}{400}=2$$
+$$
+\\frac{C(100)}{100} = 5, \\qquad \\frac{C(400)}{400}
+$$
+
+$$
+= 2
+$$
 
 and $2<5$.
 
@@ -2413,7 +2437,13 @@ $$e(a)=120 a^{-\\frac{1}{2}}$$
 
 The exponent is negative, so intensity falls as the fleet grows. For a concrete pair:
 
-$$e(16)=30, \\qquad e(64)=\\frac{120}{8}$$
+$$
+e(16) = 30, \\qquad e(64)
+$$
+
+$$
+= \\frac{120}{8}
+$$
 
 $$e(16)=15$$
 
@@ -2736,11 +2766,23 @@ The plans cross where the uncapped square-root bill equals the linear bill:
 
 $$40\\sqrt{u}=5u$$
 
-$$8=\\sqrt{u}, \\qquad u=64$$
+$$
+8 = \\sqrt{u}, \\qquad u
+$$
+
+$$
+= 64
+$$
 
 Below that crossing, at the recorded $36$ tickets:
 
-$$C_A(36)=240, \\qquad C_B(36)=180$$
+$$
+C_A(36) = 240, \\qquad C_B(36)
+$$
+
+$$
+= 180
+$$
 
 and $180<240$, so Plan B is cheaper below the crossing.
 
@@ -2753,7 +2795,13 @@ Read the exponent from the overview before comparing growth rates.
 
 Plan A's cap binds once $40\\sqrt{u}=400$:
 
-$$\\sqrt{u}=10, \\qquad u=100$$
+$$
+\\sqrt{u} = 10, \\qquad u
+$$
+
+$$
+= 100
+$$
 
 For every larger ticket volume the billed amount stays $400$ rather than $40\\sqrt{u}$, so the cap eventually binds.
 
@@ -2770,7 +2818,13 @@ $$\\frac{C_A(u)}{u}=40 u^{-\\frac{1}{2}}$$
 
 The leftover exponent is negative, so the average falls as volume rises. Past the cap it is $\\frac{400}{u}$, which also falls. At the invoice and at $64$ tickets:
 
-$$\\frac{240}{36}=\\frac{20}{3}, \\qquad \\frac{320}{64}=5$$
+$$
+\\frac{240}{36} = \\frac{20}{3}, \\qquad \\frac{320}{64}
+$$
+
+$$
+= 5
+$$
 
 and $5<\\frac{20}{3}$.
 
@@ -2960,7 +3014,13 @@ $$\\frac{R(x)}{x}=90 x^{-\\frac{1}{2}}$$
 
 The leftover exponent is negative, so the average falls as the campaign grows. At the recorded spend and at $400$:
 
-$$\\frac{R(100)}{100}=9, \\qquad \\frac{R(400)}{400}=\\frac{90\\cdot 20}{400}$$
+$$
+\\frac{R(100)}{100} = 9, \\qquad \\frac{R(400)}{400}
+$$
+
+$$
+= \\frac{90\\cdot 20}{400}
+$$
 
 $$\\frac{R(100)}{100}=4.5$$
 
@@ -3087,7 +3147,13 @@ $$\\frac{g}{L}=16 L^{-\\frac{1}{4}}$$
 
 The leftover exponent is negative, so the average falls as labour rises. At $L=16$ and $L=81$:
 
-$$16\\cdot 16^{-\\frac{1}{4}}=8, \\qquad 16\\cdot 81^{-\\frac{1}{4}}=\\frac{16}{3}$$
+$$
+16\\cdot 16^{-\\frac{1}{4}} = 8, \\qquad 16\\cdot 81^{-\\frac{1}{4}}
+$$
+
+$$
+= \\frac{16}{3}
+$$
 
 and $\\frac{16}{3}<8$.
 
@@ -3203,7 +3269,13 @@ $$R(p)=2000 p^{-\\frac{1}{2}}$$
 
 The leftover exponent is negative, so revenue falls as the price rises. At the recorded price and at $16$:
 
-$$R(4)=1000, \\qquad R(16)=500$$
+$$
+R(4) = 1000, \\qquad R(16)
+$$
+
+$$
+= 500
+$$
 
 and $500<1000$.
 
@@ -3319,7 +3391,13 @@ $$\\frac{N(h)}{h}=18 h^{-\\frac{1}{3}}$$
 
 The leftover exponent is negative, so the average falls as the shift lengthens. At $8$ and $27$ hours:
 
-$$18\\cdot 8^{-\\frac{1}{3}}=9, \\qquad 18\\cdot 27^{-\\frac{1}{3}}=6$$
+$$
+18\\cdot 8^{-\\frac{1}{3}} = 9, \\qquad 18\\cdot 27^{-\\frac{1}{3}}
+$$
+
+$$
+= 6
+$$
 
 and $6<9$.
 
@@ -3446,7 +3524,13 @@ The mounting rating $F=250$ needs
 
 $$2 v^{\\frac{3}{2}}=250$$
 
-$$v^{\\frac{3}{2}}=125, \\qquad v=125^{\\frac{2}{3}}$$
+$$
+v^{\\frac{3}{2}} = 125, \\qquad v
+$$
+
+$$
+= 125^{\\frac{2}{3}}
+$$
 
 $$v^{\\frac{3}{2}}=25$$
 
@@ -3521,7 +3605,13 @@ $$R(p)=1200 p^{\\frac{1}{2}}$$
 
 The leftover exponent is positive, so revenue rises as the price rises. At $16$ and $25$:
 
-$$R(16)=4800, \\qquad R(25)=6000$$
+$$
+R(16) = 4800, \\qquad R(25)
+$$
+
+$$
+= 6000
+$$
 
 and $6000>4800$.
 
@@ -3583,7 +3673,13 @@ Cutting quantity to $200$ needs
 
 $$1200 p^{-\\frac{1}{2}}=200$$
 
-$$\\sqrt{p}=6, \\qquad p=36$$
+$$
+\\sqrt{p} = 6, \\qquad p
+$$
+
+$$
+= 36
+$$
 
 The claim is a price above $40$. We have $p=36$.
 
@@ -3646,7 +3742,13 @@ $$\\frac{y(x)}{x}=4 x^{\\frac{1}{3}}$$
 
 The leftover exponent is positive, so the average rises as the feed increases. At $8$ and $27$:
 
-$$4\\cdot 8^{\\frac{1}{3}}=8, \\qquad 4\\cdot 27^{\\frac{1}{3}}=12$$
+$$
+4\\cdot 8^{\\frac{1}{3}} = 8, \\qquad 4\\cdot 27^{\\frac{1}{3}}
+$$
+
+$$
+= 12
+$$
 
 and $12>8$.
 
@@ -3659,7 +3761,13 @@ Read the exponent from the overview before comparing growth rates.
 
 The licence binds once $4 x^{\\frac{4}{3}}=1024$:
 
-$$x^{\\frac{4}{3}}=256, \\qquad x=64$$
+$$
+x^{\\frac{4}{3}} = 256, \\qquad x
+$$
+
+$$
+= 64
+$$
 
 Past that feed, daily shipped output is the constant $1024$, which is not a monomial in $x$.
 
@@ -3871,7 +3979,13 @@ The same ratio $\\frac{T(x)}{S(x)}=\\frac{x}{8}$ depends on the load. At the ben
 
 $$\\frac{T(4)}{S(4)}=\\frac{8}{16}$$
 
-$$\\frac{T(4)}{S(4)}=\\frac{1}{2}, \\qquad \\frac{T(8)}{S(8)}=1$$
+$$
+\\frac{T(4)}{S(4)} = \\frac{1}{2}, \\qquad \\frac{T(8)}{S(8)}
+$$
+
+$$
+= 1
+$$
 
 Those are not the same.
 
@@ -3895,7 +4009,13 @@ So the statement is True.`,
 
 The overview recovered $S(x)=8 x^{\\frac{1}{2}}$ and $T(x)=x^{\\frac{3}{2}}$. At load $16$:
 
-$$S(16)=32, \qquad T(16)=64$$
+$$
+S(16) = 32, \qquad T(16)
+$$
+
+$$
+= 64
+$$
 
 $$T(16)-S(16)=32$$
 
@@ -4054,11 +4174,23 @@ Form the ratio so the unknown positive coefficient cancels.
 
 Net gain is maximised where $\\Pi'(L)=0$:
 
-$$60 L^{-\\frac{1}{2}}=6, \\qquad L=100$$
+$$
+60 L^{-\\frac{1}{2}} = 6, \\qquad L
+$$
+
+$$
+= 100
+$$
 
 Net gain is zero where $\\Pi(L)=0$ on $L>0$:
 
-$$120 L^{\\frac{1}{2}}=6L, \\qquad L=400$$
+$$
+120 L^{\\frac{1}{2}} = 6L, \\qquad L
+$$
+
+$$
+= 400
+$$
 
 Those hours are not the same.
 
@@ -4101,7 +4233,13 @@ Keep the stated domain in force while you evaluate the model.
 
 Net gain crosses zero on $L>0$ where
 
-$$120\\sqrt{L}=6L, \\qquad L=400$$
+$$
+120\\sqrt{L} = 6L, \\qquad L
+$$
+
+$$
+= 400
+$$
 
 The claim is a crossing after more than $300$ hours. We have $400>300$.
 
@@ -4183,7 +4321,13 @@ $$\\frac{C_2(q)}{q}=\\frac{1}{4} q$$
 
 The leftover exponent is positive, so unit cost rises as plant 2 produces more. At $20$ and $40$ units:
 
-$$\\frac{1}{4}\\cdot 20=5, \\qquad \\frac{1}{4}\\cdot 40=10$$
+$$
+\\frac{1}{4}\\cdot 20 = 5, \\qquad \\frac{1}{4}\\cdot 40
+$$
+
+$$
+= 10
+$$
 
 and $10>5$.
 
@@ -4797,13 +4941,27 @@ Keep the stated domain in force while you evaluate the model.
 
 Benefit per million of cost is the ratio of the two recovered curves:
 
-$$\\frac{B(x)}{C(x)}=\\frac{18 x^{\\frac{1}{2}}}{\\frac{1}{2} x^{\\frac{3}{2}}}$$
+$$
+\\frac{B(x)}{C(x)} = \\frac{18 x^{\\frac{1}{2}}}{\\frac{1}{2} x^{\\frac{3}{2}}}
+$$
 
-$$=\\frac{36}{x}$$
+$$
+= \\frac{36}{x}
+$$
 
 That leftover power of $x$ is not constant. At the cost trial, the benefit trial, and the meeting:
 
-$$\\frac{B(4)}{C(4)}=9, \\qquad \\frac{B(16)}{C(16)}=2.25, \\qquad \\frac{B(36)}{C(36)}=1$$
+$$
+\\frac{B(4)}{C(4)} = 9, \\qquad \\frac{B(16)}{C(16)}
+$$
+
+$$
+= 2.25, \\qquad \\frac{B(36)}{C(36)}
+$$
+
+$$
+= 1
+$$
 
 Three different ratios.
 
@@ -5107,7 +5265,13 @@ $$E'(v)=\\frac{v}{10}$$
 
 The leftover power is positive, so the slope itself rises with speed. At the two survey speeds:
 
-$$E'(30)=3, \\qquad E'(50)=5$$
+$$
+E'(30) = 3, \\qquad E'(50)
+$$
+
+$$
+= 5
+$$
 
 The later increment adds more.
 
@@ -5139,7 +5303,13 @@ $$\\frac{E(v)}{v}=\\frac{v}{20}$$
 
 The leftover exponent is positive, so that average is not the same at every speed. At the two survey speeds:
 
-$$\\frac{E(30)}{30}=1.5, \\qquad \\frac{E(50)}{50}=2.5$$
+$$
+\\frac{E(30)}{30} = 1.5, \\qquad \\frac{E(50)}{50}
+$$
+
+$$
+= 2.5
+$$
 
 Two different averages.
 
@@ -5479,7 +5649,13 @@ $$I'(d)=-1600 d^{-3}$$
 
 The cut is larger nearer the lamp. At the two named distances:
 
-$$\\lvert I'(2)\\rvert=200, \\qquad \\lvert I'(4)\\rvert=25$$
+$$
+\\lvert I'(2)\\rvert = 200, \\qquad \\lvert I'(4)\\rvert
+$$
+
+$$
+= 25
+$$
 
 An extra metre cuts less illuminance at $4$ metres than at $2$.
 
@@ -6368,7 +6544,13 @@ $$S(N)=800 N^{\\frac{1}{2}}$$
 
 The leftover exponent on unit cost is negative, so unit cost falls. The leftover exponent on spend is positive, so cumulative spend still rises. At the two milestones:
 
-$$S(100)=8000, \\qquad S(400)=16000$$
+$$
+S(100) = 8000, \\qquad S(400)
+$$
+
+$$
+= 16000
+$$
 
 Spend rises while unit cost falls.
 
@@ -8464,7 +8646,13 @@ Start from the calibrated closed form in the overview.
 
 Quadrupling the first recorded point sends $n=25$ to $n=100$, the second recorded point:
 
-$$t(25)=18, \\qquad t(100)=13$$
+$$
+t(25) = 18, \\qquad t(100)
+$$
+
+$$
+= 13
+$$
 
 $$\\frac{13}{18}\\approx 0.722$$
 

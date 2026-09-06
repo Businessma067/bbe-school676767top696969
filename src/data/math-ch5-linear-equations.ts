@@ -76,7 +76,13 @@ Compare the computed value with the claim ($390$). The two sides agree.
 So the statement is True.`,
       `**D.** → False
 
-Using the recovered solution values $x=360$ and $y=260$ as inputs for this claim.
+The gap between the two recovered unknowns is their difference:
+
+$$
+d = x - y
+$$
+
+Using the recovered solution values $x=360$ and $y=260$ as inputs for this claim:
 
 Today's gap is
 
@@ -91,7 +97,17 @@ The shared elimination already fixed the unique pair; this letter only tests the
 So the statement is False.`,
       `**E.** → True
 
-Using the recovered solution values $x=360$ and $y=260$ as inputs for this claim.
+A transfer shifts one recovered holding into the other by the stated amount:
+
+$$
+x' = x - t,\quad y'
+$$
+
+$$
+= y + t
+$$
+
+Using the recovered solution values $x=360$ and $y=260$ as inputs for this claim:
 
 Moving $50$ crates from North to South gives
 
@@ -193,7 +209,7 @@ So the statement is False.`,
 
 Once the unit prices are recovered, this session total is fixed by the stem quantities. Read the printed total, then compare it with the claim.
 
-Once the unit prices are recovered, each stem invoice total is fixed. Read the printed total for this claim.
+Once the unit prices are recovered, each stem invoice total is fixed. Read the printed total for this claim:
 
 Invoice #101 is printed at \\$185.
 
@@ -202,7 +218,13 @@ The claim names that same total. The invoice total and the claim agree.
 So the statement is True.`,
       `**D.** → True
 
-Using the recovered solution values $x=3.50$ and $y=1.80$ as inputs for this claim.
+An extended bill adds the recovered per-unit charge on top of the recovered fee:
+
+$$
+B = f + t\cdot r
+$$
+
+Using the recovered solution values $x=3.50$ and $y=1.80$ as inputs for this claim:
 
 Ten of each costs
 
@@ -221,7 +243,7 @@ So the statement is True.`,
 
 Once the unit prices are recovered, this session total is fixed by the stem quantities. Read the printed total, then compare it with the claim.
 
-Once the unit prices are recovered, each stem invoice total is fixed. Read the printed total for this claim.
+Once the unit prices are recovered, each stem invoice total is fixed. Read the printed total for this claim:
 
 Invoice #102 is printed at \\$160.
 
@@ -335,7 +357,7 @@ So the statement is True.`,
 
 Once the unit prices are recovered, this session total is fixed by the stem quantities. Read the printed total, then compare it with the claim.
 
-Once unit prices are recovered, the stem total for this session is fixed. Read that printed total.
+Once unit prices are recovered, the stem total for this session is fixed. Read that printed total:
 
 The Saturday matinee is printed at \\$2,130.
 
@@ -346,7 +368,7 @@ So the statement is False.`,
 
 Once the unit prices are recovered, this session total is fixed by the stem quantities. Read the printed total, then compare it with the claim.
 
-Once unit prices are recovered, the stem total for this session is fixed. Read that printed total.
+Once unit prices are recovered, the stem total for this session is fixed. Read that printed total:
 
 The Saturday evening session is printed at \\$2,200.
 
@@ -355,7 +377,13 @@ The claim names \\$2,300. The printed figure and the claim do not agree.
 So the statement is False.`,
       `**E.** → False
 
-Using the recovered solution values $a=12$ and $c=7$ as inputs for this claim.
+An extended bill adds the recovered per-unit charge on top of the recovered fee:
+
+$$
+B = f + t\cdot r
+$$
+
+Using the recovered solution values $a=12$ and $c=7$ as inputs for this claim:
 
 Fifty of each would generate
 
@@ -470,6 +498,12 @@ Those two displays agree.
 
 So the statement is True.`,
       `**C.** → True
+
+A mixed purchase is the linear combination of the recovered unit prices:
+
+$$
+C = n_x x + n_y y
+$$
 
 Substitute the stem numbers recovered in the overview:
 
@@ -729,7 +763,13 @@ The catalogue gap is already equation (1): $y = x + 45$. The claim is that same 
 So the statement is True.`,
       `**E.** → True
 
-Using the recovered solution values $x=304$ and $y=349$ as inputs for this claim.
+An extended bill adds the recovered per-unit charge on top of the recovered fee:
+
+$$
+B = f + t\cdot r
+$$
+
+Using the recovered solution values $x=304$ and $y=349$ as inputs for this claim:
 
 Five of each costs
 
@@ -837,7 +877,13 @@ Those two displays agree.
 So the statement is True.`,
       `**C.** → False
 
-Using the recovered solution values $f=17$ and $r=0.30$ as inputs for this claim.
+An extended bill adds the recovered per-unit charge on top of the recovered fee:
+
+$$
+B = f + t\cdot r
+$$
+
+Using the recovered solution values $f=17$ and $r=0.30$ as inputs for this claim:
 
 Two hundred extra minutes would cost
 
@@ -925,11 +971,21 @@ $$f = 17$$
     tactical_explanations: [
       `**A.** → True
 
+Elimination on two independent linear equations recovers a unique value for each unknown. The claim names the second recovered coordinate:
+
+$$
+y=\frac{\Delta_y}{\Delta}
+$$
+
 Substitute the stem numbers:
 
-$$s=130 - 55$$
+$$
+s = 130 - 55
+$$
 
-$$=75$$
+$$
+= 75
+$$
 
 The computed figure matches the claim.
 
@@ -1075,6 +1131,12 @@ Those two displays agree.
 So the statement is True.`,
       `**C.** → True
 
+Elimination on two independent linear equations recovers a unique value for each unknown. The claim names the first recovered coordinate:
+
+$$
+x=\frac{\Delta_x}{\Delta}
+$$
+
 Substitute the stem numbers:
 
 $$
@@ -1201,7 +1263,13 @@ The claim names a different figure, so the displays do not agree.
 So the statement is False.`,
       `**C.** → False
 
-Using the recovered solution values $f=9$ and $r=0.20$ as inputs for this claim.
+An extended bill adds the recovered per-unit charge on top of the recovered fee:
+
+$$
+B = f + t\cdot r
+$$
+
+Using the recovered solution values $f=9$ and $r=0.20$ as inputs for this claim:
 
 A 250-page PrintFast order costs
 
@@ -1216,7 +1284,13 @@ The computed figure does not match the claim.
 So the statement is False.`,
       `**D.** → False
 
-Using the recovered solution values $f=9$ and $r=0.20$ as inputs for this claim.
+An extended bill adds the recovered per-unit charge on top of the recovered fee:
+
+$$
+B = f + t\cdot r
+$$
+
+Using the recovered solution values $f=9$ and $r=0.20$ as inputs for this claim:
 
 A 350-page PrintFast order costs
 
@@ -1229,7 +1303,13 @@ QuickCopy's flat fee is \\$60. Then $79 > 60$.
 So the statement is False.`,
       `**E.** → True
 
-Substitute the stem numbers recovered in the overview.
+The gap between the two recovered unknowns is their difference:
+
+$$
+d = x - y
+$$
+
+Substitute the stem numbers recovered in the overview:
 
 Two independent PrintFast bills give two linear equations in the setup fee and the per-page rate. Different page counts make the equations independent, so they determine a unique pair. The that pair as $f=9$ and $r=0.20$.
 
@@ -1300,7 +1380,13 @@ Ana's entire order was \\$32.00. Then $30 < 32$.
 So the statement is False.`,
       `**B.** → True
 
-Using the recovered solution values $x=3.50$ and $y=6$ as inputs for this claim.
+A mixed purchase is the linear combination of the recovered unit prices:
+
+$$
+C = n_x x + n_y y
+$$
+
+Using the recovered solution values $x=3.50$ and $y=6$ as inputs for this claim:
 
 The gap is
 
@@ -1337,7 +1423,13 @@ That recovered value is not the figure on the card.
 So the statement is False.`,
       `**E.** → True
 
-Using the recovered solution values $x=3.50$ and $y=6$ as inputs for this claim.
+An extended bill adds the recovered per-unit charge on top of the recovered fee:
+
+$$
+B = f + t\cdot r
+$$
+
+Using the recovered solution values $x=3.50$ and $y=6$ as inputs for this claim:
 
 Six of each costs
 
@@ -1463,7 +1555,13 @@ The claim is \\$1,200 higher.
 So the statement is True.`,
       `**D.** → False
 
-Using the recovered solution values $x=12$ and $y=17$ as inputs for this claim.
+An extended bill adds the recovered per-unit charge on top of the recovered fee:
+
+$$
+B = f + t\cdot r
+$$
+
+Using the recovered solution values $x=12$ and $y=17$ as inputs for this claim:
 
 Three hardcovers and two paperbacks cost
 
@@ -1578,7 +1676,13 @@ Those two displays agree.
 So the statement is True.`,
       `**C.** → True
 
-Using the recovered solution values $x=38$ and $y=3$ as inputs for this claim.
+An extended bill adds the recovered per-unit charge on top of the recovered fee:
+
+$$
+B = f + t\cdot r
+$$
+
+Using the recovered solution values $x=38$ and $y=3$ as inputs for this claim:
 
 Ten GB of overage on Standard costs
 
@@ -1672,6 +1776,16 @@ $$x = 38$$
     tactical_explanations: [
       `**A.** → True
 
+A transfer shifts one recovered holding into the other by the stated amount:
+
+$$
+x' = x - t,\quad y'
+$$
+
+$$
+= y + t
+$$
+
 Substitute the stem numbers recovered in the overview:
 
 $$
@@ -1685,7 +1799,13 @@ The shared elimination already fixed the unique pair; this letter only tests the
 So the statement is True.`,
       `**B.** → False
 
-Using the recovered solution values $x=140$ and $y=210$ as inputs for this claim.
+A mixed purchase is the linear combination of the recovered unit prices:
+
+$$
+C = n_x x + n_y y
+$$
+
+Using the recovered solution values $x=140$ and $y=210$ as inputs for this claim:
 
 The Suite premium is
 
@@ -1698,7 +1818,13 @@ The shared elimination already fixed the unique pair; this letter only tests the
 So the statement is False.`,
       `**C.** → False
 
-Using the recovered solution values $x=140$ and $y=210$ as inputs for this claim.
+An extended bill adds the recovered per-unit charge on top of the recovered fee:
+
+$$
+B = f + t\cdot r
+$$
+
+Using the recovered solution values $x=140$ and $y=210$ as inputs for this claim:
 
 Six Standard rooms cost
 
@@ -1853,7 +1979,13 @@ The claim names a different figure, so the displays do not agree.
 So the statement is False.`,
       `**C.** → True
 
-Using the recovered solution values $x=12$ and $y=15$ as inputs for this claim.
+An extended bill adds the recovered per-unit charge on top of the recovered fee:
+
+$$
+B = f + t\cdot r
+$$
+
+Using the recovered solution values $x=12$ and $y=15$ as inputs for this claim:
 
 March's forecast quantities at those actual costs would be
 
@@ -1870,7 +2002,13 @@ The computed figure matches the claim.
 So the statement is True.`,
       `**D.** → False
 
-Using the recovered solution values $x=12$ and $y=15$ as inputs for this claim.
+An extended bill adds the recovered per-unit charge on top of the recovered fee:
+
+$$
+B = f + t\cdot r
+$$
+
+Using the recovered solution values $x=12$ and $y=15$ as inputs for this claim:
 
 March's forecast quantities at those actual costs would be
 
@@ -2006,7 +2144,13 @@ Compare the computed value with the claim (\\$6.00). The two sides agree.
 So the statement is True.`,
       `**D.** → True
 
-Using the recovered solution values $x=14$ and $y=24$ as inputs for this claim.
+An extended bill adds the recovered per-unit charge on top of the recovered fee:
+
+$$
+B = f + t\cdot r
+$$
+
+Using the recovered solution values $x=14$ and $y=24$ as inputs for this claim:
 
 Forty regular hours plus 4 overtime hours at those actual rates:
 
@@ -2123,6 +2267,16 @@ Those two displays agree.
 So the statement is True.`,
       `**C.** → True
 
+A transfer shifts one recovered holding into the other by the stated amount:
+
+$$
+x' = x - t,\quad y'
+$$
+
+$$
+= y + t
+$$
+
 Substitute the stem numbers recovered in the overview:
 
 $$
@@ -2136,7 +2290,13 @@ The shared elimination already fixed the unique pair; this letter only tests the
 So the statement is True.`,
       `**D.** → False
 
-Using the recovered solution values $x=15$ and $y=2$ as inputs for this claim.
+An extended bill adds the recovered per-unit charge on top of the recovered fee:
+
+$$
+B = f + t\cdot r
+$$
+
+Using the recovered solution values $x=15$ and $y=2$ as inputs for this claim:
 
 Forty cubic metres would be billed
 
@@ -2215,19 +2375,33 @@ $$x = 15$$
     tactical_explanations: [
       `**A.** → True
 
-Using the recovered solution values $C(d)=6+d$ and $M(d)=6+1.5d$ as inputs for this claim.
+An extended bill adds the recovered per-unit charge on top of the recovered fee:
+
+$$
+B = f + t\cdot r
+$$
+
+Using the recovered solution values $C(d)=6+d$ and $M(d)=6+1.5d$ as inputs for this claim:
 
 At $10$ km:
 
-$$C(10)=6 + 10$$
+$$
+C(10) = 6 + 10
+$$
 
-$$=16$$
+$$
+= 16
+$$
 
 $$1.5 \\times 10 = 15$$
 
-$$M(10)=6 + 15$$
+$$
+M(10) = 6 + 15
+$$
 
-$$=21$$
+$$
+= 21
+$$
 
 Then $16 < 21$.
 
@@ -2235,6 +2409,8 @@ The computed figure matches the claim.
 
 So the statement is True.`,
       `**B.** → True
+
+Elimination on two independent linear equations recovers a unique value for each unknown. The claim names the first recovered coordinate:
 
 $$
 x_1 = 6
@@ -2247,19 +2423,33 @@ The shared elimination already fixed the unique pair; this letter only tests the
 So the statement is True.`,
       `**C.** → False
 
-Using the recovered solution values $C(d)=6+d$ and $M(d)=6+1.5d$ as inputs for this claim.
+An extended bill adds the recovered per-unit charge on top of the recovered fee:
+
+$$
+B = f + t\cdot r
+$$
+
+Using the recovered solution values $C(d)=6+d$ and $M(d)=6+1.5d$ as inputs for this claim:
 
 At $3$ km, which is under $4$ km:
 
-$$C(3)=6 + 3$$
+$$
+C(3) = 6 + 3
+$$
 
-$$=9$$
+$$
+= 9
+$$
 
 $$1.5 \\times 3 = 4.50$$
 
-$$M(3)=6 + 4.50$$
+$$
+M(3) = 6 + 4.50
+$$
 
-$$=10.50$$
+$$
+= 10.50
+$$
 
 Then $10.50 > 9$, so MetroX is not cheaper.
 
@@ -2272,9 +2462,13 @@ Read the figure already produced by the shared solve, then compare it with the c
 
 The overview recovered $C(d)=6+d$. At $30$ km:
 
-$$C(30)=6 + 30$$
+$$
+C(30) = 6 + 30
+$$
 
-$$=36$$
+$$
+= 36
+$$
 
 The claim is \\$36.00.
 
@@ -2285,9 +2479,13 @@ Read the figure already produced by the shared solve, then compare it with the c
 
 The overview recovered $C(d)=6+d$. A 5 km CityCab ride costs
 
-$$C(5)=6 + 5$$
+$$
+C(5) = 6 + 5
+$$
 
-$$=11$$
+$$
+= 11
+$$
 
 The stem already prices a 5 km MetroX ride at \\$13.50. Then $11 \\ne 13.50$.
 
@@ -2369,6 +2567,8 @@ $$M(d) = 6 + 1.5d$$
     tactical_explanations: [
       `**A.** → True
 
+Elimination on two independent linear equations recovers a unique value for each unknown. The claim names the first recovered coordinate:
+
 $$
 y_A = 30 - \\frac{4}{3}x_A
 $$
@@ -2386,9 +2586,15 @@ The shared elimination already fixed the unique pair; this letter only tests the
 So the statement is True.`,
       `**B.** → True
 
-$$y_B=\\frac{92 - 44}{3}$$
+Elimination on two independent linear equations recovers a unique value for each unknown. The claim names the second recovered coordinate:
 
-$$=16$$
+$$
+y_B = \\frac{92 - 44}{3}
+$$
+
+$$
+= 16
+$$
 
 The computed figure matches the claim.
 
@@ -2441,7 +2647,13 @@ Switching to Vendor B raises the cost by $20$, it does not reduce it.
 So the statement is False.`,
       `**E.** → True
 
-Using the recovered solution values $y_A=18$ and $y_B=16$ as inputs for this claim.
+An extended bill adds the recovered per-unit charge on top of the recovered fee:
+
+$$
+B = f + t\cdot r
+$$
+
+Using the recovered solution values $y_A=18$ and $y_B=16$ as inputs for this claim:
 
 Sixty units of Y only:
 
@@ -2533,6 +2745,12 @@ $$=16$$
     tactical_explanations: [
       `**A.** → True
 
+Elimination on two independent linear equations recovers a unique value for each unknown. The claim names the first recovered coordinate:
+
+$$
+x=\frac{\Delta_x}{\Delta}
+$$
+
 Substitute the stem numbers:
 
 $$
@@ -2546,11 +2764,21 @@ The shared elimination already fixed the unique pair; this letter only tests the
 So the statement is True.`,
       `**B.** → True
 
+Elimination on two independent linear equations recovers a unique value for each unknown. The claim names the first recovered coordinate:
+
+$$
+x=\frac{\Delta_x}{\Delta}
+$$
+
 Substitute the stem numbers:
 
-$$A=27200 - 14100$$
+$$
+A = 27200 - 14100
+$$
 
-$$=13100$$
+$$
+= 13100
+$$
 
 The computed figure matches the claim.
 
@@ -2593,7 +2821,13 @@ Beta's recovered Q1 revenue is $14100$. Then $13850 < 14100$.
 So the statement is False.`,
       `**E.** → True
 
-Using the recovered solution values $x=50$ and $y=70$ as inputs for this claim.
+An extended bill adds the recovered per-unit charge on top of the recovered fee:
+
+$$
+B = f + t\cdot r
+$$
+
+Using the recovered solution values $x=50$ and $y=70$ as inputs for this claim:
 
 Beta's Service Q revenue is
 
@@ -3124,7 +3358,13 @@ The Solar Offset Plan is $0.29u$ with no connection fee. The standard plan is $3
 
 $$33 + 0.21u = 0.29u$$
 
-$$33 = 0.08u \\Rightarrow u = 412.5$$
+$$
+33 = 0.08u \\Rightarrow u
+$$
+
+$$
+= 412.5
+$$
 
 For $u > 412.5$ the standard plan is cheaper, so Solar is not cheaper at every positive usage.
 
@@ -3137,9 +3377,13 @@ At 500 units, Solar and the standard plan are
 
 $$0.29 \\times 500 = 145$$
 
-$$33 + 0.21 \\times 500=33 + 105$$
+$$
+33 + 0.21 \\times 500 = 33 + 105
+$$
 
-$$=138$$
+$$
+= 138
+$$
 
 $$145 > 138$$
 
@@ -3749,7 +3993,17 @@ Week 3 has 15 Widget B and 290 labor-hours. With the recovered times $x = 7$ and
 
 $$7A + 10(15) = 290$$
 
-$$7A + 150 = 290 \\Rightarrow 7A = 140 \\Rightarrow A = 20.$$
+$$
+7A + 150 = 290 \\Rightarrow 7A
+$$
+
+$$
+= 140 \\Rightarrow A
+$$
+
+$$
+= 20.
+$$
 
 So the statement is True.`,
     ],
@@ -3959,9 +4213,9 @@ Compare the computed value with the claim (\\$19.00). The two sides agree.
 So the statement is True.`,
       `**B.** → True
 
-Start from the recovered solution pair and apply the claim's extra arithmetic.
+Start from the recovered solution pair and apply the claim's extra arithmetic:
 
-Using the recovered solution values $x = 18.45$ and $y = 27.80$ as inputs for this claim.
+Using the recovered solution values $x = 18.45$ and $y = 27.80$ as inputs for this claim:
 
 The gap is
 
@@ -4148,7 +4402,17 @@ Swift is $145.50 + 1.85m$. The competitor is $1.35m$. The slopes $1.85$ and $1.3
 
 $$145.50 + 1.85m = 1.35m$$
 
-$$145.50 = -0.50m \\Rightarrow m = \\frac{145.50}{-0.50} = -291$$
+$$
+145.50 = -0.50m \\Rightarrow m
+$$
+
+$$
+= \\frac{145.50}{-0.50}
+$$
+
+$$
+= -291
+$$
 
 The crossing is at $-291$ miles, a meaningless haul but a real intersection.
 
@@ -4339,7 +4603,13 @@ $$55.40 > 55.$$
 So the statement is True.`,
       `**B.** → True
 
-Using the recovered solution values $x = 13.85$ and $y = 9.40$ as inputs for this claim.
+The gap between the two recovered unknowns is their difference:
+
+$$
+d = x - y
+$$
+
+Using the recovered solution values $x = 13.85$ and $y = 9.40$ as inputs for this claim:
 
 The per-dozen gap is
 
@@ -4390,9 +4660,13 @@ Raise Email 2's baguette price by \\$3 and keep croissants at $x = 13.85$:
 
 $$9.40 + 3 = 12.40$$
 
-$$6 \\times 13.85 + 23 \\times 12.40=83.10 + 285.20$$
+$$
+6 \\times 13.85 + 23 \\times 12.40 = 83.10 + 285.20
+$$
 
-$$=368.30$$
+$$
+= 368.30
+$$
 
 The cents digit is 30.
 
@@ -4769,9 +5043,13 @@ Start from the overview's recovered unknowns, apply only this claim's extra chec
 
 Combined hourly output is the sum of the recovered rates:
 
-$$0.085 + 0.045=0.130$$
+$$
+0.085 + 0.045 = 0.130
+$$
 
-$$=\\frac{13}{100}.$$
+$$
+= \\frac{13}{100}.
+$$
 
 So the statement is True.`,
       `**D.** → True
@@ -5314,9 +5592,13 @@ So the statement is False.`,
 
 The overview recovered the two balances $4800$ (smaller) and $13600$. The relative gap versus the smaller balance is
 
-$$\\frac{13600 - 4800}{4800}=\\frac{8800}{4800}$$
+$$
+\\frac{13600 - 4800}{4800} = \\frac{8800}{4800}
+$$
 
-$$=1.8\\overline{3}$$
+$$
+= 1.8\\overline{3}
+$$
 
 about $183.3\\%$, which exceeds $180\\%$.
 
@@ -5418,9 +5700,13 @@ So the statement is True.`,
 
 The overview recovered $A = 16$ g/L and $B = 12$ g/L. A $3:1$ mix of A:B is $75\\%$ A and $25\\%$ B, so the blend concentration in g/L is
 
-$$0.75 \\times 16 + 0.25 \\times 12=12 + 3$$
+$$
+0.75 \\times 16 + 0.25 \\times 12 = 12 + 3
+$$
 
-$$=15$$
+$$
+= 15
+$$
 
 The volume that holds $130$ g is then
 
@@ -5658,9 +5944,13 @@ Start from the overview’s recovered unknowns, then test the named figure.
 
 At fixed per-meter prices, combining Project 1 and Project 3 is linear. Combined metres are $28$ m wood and $64$ m wire.
 
-$$28(27) + 64(11)=756 + 704$$
+$$
+28(27) + 64(11) = 756 + 704
+$$
 
-$$=1460$$
+$$
+= 1460
+$$
 
 $$750 + 710 = 1460$$
 
@@ -5773,7 +6063,13 @@ $$2 \\times 48 = 96$$
 
 $$2 \\times 77 = 154$$
 
-$$154 - 96 = 58, \\qquad \\frac{250}{2} = 125$$
+$$
+154 - 96 = 58, \\qquad \\frac{250}{2}
+$$
+
+$$
+= 125
+$$
 
 Since $58 < 125$, the difference is less than half the gap.
 
@@ -5869,18 +6165,22 @@ $$
 
 The overview recovered Wheat at \\$95/t and Barley at \\$120/t. Season 1 with Wheat raised to $260$ t, Barley still $160$ t, would earn
 
-$$260 \\times 95 + 160 \\times 120=24700 + 19200$$
+$$
+260 \\times 95 + 160 \\times 120 = 24700 + 19200
+$$
 
-$$=43900$$
+$$
+= 43900
+$$
 
 Since $43900 < 44000$, the total would not exceed \\$44,000.
 
 So the statement is False.`,
       `**B.** → True
 
-Start from the recovered solution pair and apply the claim's extra arithmetic.
+Start from the recovered solution pair and apply the claim's extra arithmetic:
 
-Using the recovered solution values $x = 95$ and $y = 120$ as inputs for this claim.
+Using the recovered solution values $x = 95$ and $y = 120$ as inputs for this claim:
 
 Barley's advantage as a share of Wheat's profit per tonne is
 
@@ -6004,7 +6304,13 @@ Since $62 < 68$, the elder will be less than double the younger at that time.
 So the statement is True.`,
       `**B.** → True
 
-Using the recovered solution values $x = 47$ and $y = 19$ as inputs for this claim.
+The gap between the two recovered unknowns is their difference:
+
+$$
+d = x - y
+$$
+
+Using the recovered solution values $x = 47$ and $y = 19$ as inputs for this claim:
 
 The current gap as a share of the elder's age is
 
@@ -6043,7 +6349,17 @@ Let $t$ be years ago. The claim is that $x - t = 3(y - t)$ for some $t > 4$. Usi
 
 $$47 - t = 3(19 - t)$$
 
-$$47 - t = 57 - 3t \\Rightarrow 2t = 10 \\Rightarrow t = 5$$
+$$
+47 - t = 57 - 3t \\Rightarrow 2t
+$$
+
+$$
+= 10 \\Rightarrow t
+$$
+
+$$
+= 5
+$$
 
 Since $5 > 4$, such a time exists.
 
@@ -6116,16 +6432,26 @@ $$=47$$
 
 The overview recovered wholesale $x = 55$ and $y = 80$. Swapping the markups puts $18\\%$ on A and $32\\%$ on B. Order 3 would then be
 
-$$3(55)(1.18) + 12(80)(1.32)=194.70 + 1267.20$$
+$$
+3(55)(1.18) + 12(80)(1.32) = 194.70 + 1267.20
+$$
 
-$$=1461.90$$
+$$
+= 1461.90
+$$
 
 Compared with the actual \\$1,350.60, the swapped total increases rather than decreases.
 
 So the statement is False.`,
       `**B.** → True
 
-Using the recovered solution values $x = 55$ and $y = 80$ as inputs for this claim.
+An extended bill adds the recovered per-unit charge on top of the recovered fee:
+
+$$
+B = f + t\cdot r
+$$
+
+Using the recovered solution values $x = 55$ and $y = 80$ as inputs for this claim:
 
 Dollar markups are $0.32x$ and $0.18y$.
 
@@ -6142,13 +6468,23 @@ The computed figure matches the claim.
 So the statement is True.`,
       `**C.** → True
 
-Using the recovered solution values $x = 55$ and $y = 80$ as inputs for this claim.
+An extended bill adds the recovered per-unit charge on top of the recovered fee:
+
+$$
+B = f + t\cdot r
+$$
+
+Using the recovered solution values $x = 55$ and $y = 80$ as inputs for this claim:
 
 Unit markups are $0.32 \\times 55 = 17.60$ and $0.18 \\times 80 = 14.40$, so Order 1's total markup is
 
-$$8 \\times 17.60 + 5 \\times 14.40=140.80 + 72.00$$
+$$
+8 \\times 17.60 + 5 \\times 14.40 = 140.80 + 72.00
+$$
 
-$$=212.80$$
+$$
+= 212.80
+$$
 
 Since $212.80 > 150$, the markup exceeds \\$150.
 
@@ -6166,7 +6502,13 @@ Since $283.20 > 280$, the retail total would increase by more than \\$280.
 So the statement is True.`,
       `**E.** → True
 
-Using the recovered solution values $x = 55$ and $y = 80$ as inputs for this claim.
+A mixed purchase is the linear combination of the recovered unit prices:
+
+$$
+C = n_x x + n_y y
+$$
+
+Using the recovered solution values $x = 55$ and $y = 80$ as inputs for this claim:
 
 Retail prices are $1.32x = 72.60$ and $1.18y = 94.40$.
 
@@ -6248,9 +6590,13 @@ $$
 
 The overview recovered $x = 7$ points per win. If a draw were worth half of that, a draw would be $3.5$ points. The Falcons would then have
 
-$$9 \\times 7 + 4 \\times 3.5=63 + 14$$
+$$
+9 \\times 7 + 4 \\times 3.5 = 63 + 14
+$$
 
-$$=77$$
+$$
+= 77
+$$
 
 Since $77 > 75$, their total would increase.
 
@@ -6369,24 +6715,32 @@ $$
 
 The overview recovered $A = 7.6$ kg/L and $B = 11.4$ kg/L. Batch 1 with $10$ L of B instead of $8$ L would mass
 
-$$12(7.6) + 10(11.4)=91.2 + 114$$
+$$
+12(7.6) + 10(11.4) = 91.2 + 114
+$$
 
-$$=205.2$$
+$$
+= 205.2
+$$
 
 Since $205.2 > 200$, the total would exceed $200$ kg.
 
 So the statement is True.`,
       `**B.** → False
 
-Start from the recovered solution pair and apply the claim's extra arithmetic.
+Start from the recovered solution pair and apply the claim's extra arithmetic:
 
-Using the recovered solution values $x = 7.6$ and $y = 11.4$ as inputs for this claim.
+Using the recovered solution values $x = 7.6$ and $y = 11.4$ as inputs for this claim:
 
 The relative density advantage of B over A is
 
-$$\\frac{11.4 - 7.6}{7.6}=\\frac{3.8}{7.6}$$
+$$
+\\frac{11.4 - 7.6}{7.6} = \\frac{3.8}{7.6}
+$$
 
-$$=0.50$$
+$$
+= 0.50
+$$
 
 That is $50\\%$ greater, not more than $50\\%$.
 
@@ -6408,9 +6762,13 @@ The shared solve is done; only this claim’s comparison remains.
 
 If Batch 3 used $10$ L of A instead of $9.5$ L, with $6$ L of B still, the predicted mass at the recovered densities is
 
-$$10(7.6) + 6(11.4)=76 + 68.4$$
+$$
+10(7.6) + 6(11.4) = 76 + 68.4
+$$
 
-$$=144.4$$
+$$
+= 144.4
+$$
 
 $$|144.4 - 147.0| = 2.6$$
 
@@ -6499,9 +6857,13 @@ versus 147.0 kg recorded, a 6.4 kg discrepancy.
 
 The overview recovered rate $x = 0.016$ and retainer $y = 1200$. A client with AUM \\$850,000 pays
 
-$$850000 \\times 0.016 + 1200=13600 + 1200$$
+$$
+850000 \\times 0.016 + 1200 = 13600 + 1200
+$$
 
-$$=14800$$
+$$
+= 14800
+$$
 
 $$\\frac{14800}{850000} \\approx 0.017412$$
 
@@ -6525,9 +6887,13 @@ Start from the overview’s recovered unknowns, then test the named figure.
 
 Client 1 has AUM \\$750,000 and actual fee $750000(0.016) + 1200 = 13200$. After a $0.2$ percentage-point rate cut and a doubled retainer, the new fee is
 
-$$750000 \\times 0.014 + 2400=10500 + 2400$$
+$$
+750000 \\times 0.014 + 2400 = 10500 + 2400
+$$
 
-$$=12900$$
+$$
+= 12900
+$$
 
 Since $12900 < 13200$, Client 1's fee would decrease.
 
@@ -6538,7 +6904,13 @@ For this claim, use the recovered values from the overview for this claim-specif
 
 Client 1's effective rate and Client 2's effective rate are
 
-$$\\frac{13200}{750000} = 0.0176, \\qquad \\frac{10800}{600000} = 0.018$$
+$$
+\\frac{13200}{750000} = 0.0176, \\qquad \\frac{10800}{600000}
+$$
+
+$$
+= 0.018
+$$
 
 $$0.018 - 0.0176 = 0.0004$$
 
@@ -6551,9 +6923,13 @@ Next, use the recovered values from the overview for this claim-specific check.
 
 Triple of Client 2's AUM is \\$1,800,000. That client's fee, versus triple of Client 2's \\$10,800, is
 
-$$1800000 \\times 0.016 + 1200=28800 + 1200$$
+$$
+1800000 \\times 0.016 + 1200 = 28800 + 1200
+$$
 
-$$=30000$$
+$$
+= 30000
+$$
 
 $$3 \\times 10800 = 32400$$
 
@@ -6634,13 +7010,23 @@ about $0.0825\\%$, which is not more than $1\\%$.
 So the statement is False.`,
       `**C.** → True
 
-Using the recovered solution values $A = 8.4$ and $B = 15.6$ as inputs for this claim.
+A mixed purchase is the linear combination of the recovered unit prices:
+
+$$
+C = n_x x + n_y y
+$$
+
+Using the recovered solution values $A = 8.4$ and $B = 15.6$ as inputs for this claim:
 
 Doubling Batch 1's Suspension B volume from $300$ mL to $600$ mL gives
 
-$$500(8.4) + 600(15.6)=4200 + 9360$$
+$$
+500(8.4) + 600(15.6) = 4200 + 9360
+$$
 
-$$=13560$$
+$$
+= 13560
+$$
 
 Since $13560 > 13500$, the new total would exceed $13500$ mg.
 
@@ -6744,13 +7130,23 @@ versus 9,700 mg recorded, an 8 mg discrepancy.
     tactical_explanations: [
       `**A.** → False
 
-Using the recovered solution values $x = 4.50$ and $y = 38$ as inputs for this claim.
+An extended bill adds the recovered per-unit charge on top of the recovered fee:
+
+$$
+B = f + t\cdot r
+$$
+
+Using the recovered solution values $x = 4.50$ and $y = 38$ as inputs for this claim:
 
 Invoice 1's waste is $200 \\times 0.12 = 24$ studs and $150 \\times 0.08 = 12$ sheets.
 
-$$24 \\times 4.50 + 12 \\times 38=108 + 456$$
+$$
+24 \\times 4.50 + 12 \\times 38 = 108 + 456
+$$
 
-$$=564$$
+$$
+= 564
+$$
 
 Since $564 < 700$, the waste-related cost does not exceed \\$700.
 
@@ -6772,9 +7168,13 @@ Start from the overview’s recovered unknowns, then test the named figure.
 
 Job 2's usable-material cost at the recovered prices, as a share of the printed \\$8,946, is
 
-$$350 \\times 4.50 + 175 \\times 38=1575 + 6650$$
+$$
+350 \\times 4.50 + 175 \\times 38 = 1575 + 6650
+$$
 
-$$=8225$$
+$$
+= 8225
+$$
 
 $$\\frac{8225}{8946} \\approx 0.9194$$
 
@@ -6794,13 +7194,21 @@ So the statement is True.`,
 
 Job 1 usable cost and Job 2 usable cost at the recovered prices $x = 4.50$ and $y = 38$ are
 
-$$200 \\times 4.50 + 150 \\times 38=900 + 5700$$
+$$
+200 \\times 4.50 + 150 \\times 38 = 900 + 5700
+$$
 
-$$=6600$$
+$$
+= 6600
+$$
 
-$$350 \\times 4.50 + 175 \\times 38=1575 + 6650$$
+$$
+350 \\times 4.50 + 175 \\times 38 = 1575 + 6650
+$$
 
-$$=8225$$
+$$
+= 8225
+$$
 
 Waste as a share of usable cost:
 
@@ -6888,13 +7296,23 @@ about $2.94\\%$, which is more than $2.5\\%$.
 So the statement is True.`,
       `**B.** → True
 
-Using the recovered solution values $x = 3.50$ and $y = 13.50$ as inputs for this claim.
+An extended bill adds the recovered per-unit charge on top of the recovered fee:
+
+$$
+B = f + t\cdot r
+$$
+
+Using the recovered solution values $x = 3.50$ and $y = 13.50$ as inputs for this claim:
 
 Doubling the offset gives $27$, so at reading $20$
 
-$$3.50 \\times 20 + 27=70 + 27$$
+$$
+3.50 \\times 20 + 27 = 70 + 27
+$$
 
-$$=97$$
+$$
+= 97
+$$
 
 Since $97 > 95$, the predicted true value would exceed $95$.
 
@@ -6927,9 +7345,13 @@ Read the recovered pair, then run the arithmetic the claim asks for.
 
 At reading $8.0$, the recovered calibration gives
 
-$$3.50 \\times 8.0 + 13.50=28 + 13.50$$
+$$
+3.50 \\times 8.0 + 13.50 = 28 + 13.50
+$$
 
-$$=41.50$$
+$$
+= 41.50
+$$
 
 Half of Point 1's true value $56.90$ is $28.45$. Since $41.50 > 28.45$, the prediction is not less than half of Point 1.
 
@@ -7021,9 +7443,13 @@ For this claim, use the recovered values from the overview for this claim-specif
 
 An $800$ kg shipment mixed $1:1$ is $400$ kg of each at the recovered prices.
 
-$$400 \\times 6.20 + 400 \\times 4.85=2480 + 1940$$
+$$
+400 \\times 6.20 + 400 \\times 4.85 = 2480 + 1940
+$$
 
-$$=4420$$
+$$
+= 4420
+$$
 
 Since $4420 < 4555$, the $1:1$ mix would cost less than the actual \\$4,555.
 
@@ -7043,7 +7469,13 @@ Cocoa's dollar total is smaller, not larger.
 So the statement is False.`,
       `**E.** → True
 
-Using the recovered solution values $x = 6.20$ and $y = 4.85$ as inputs for this claim.
+The gap between the two recovered unknowns is their difference:
+
+$$
+d = x - y
+$$
+
+Using the recovered solution values $x = 6.20$ and $y = 4.85$ as inputs for this claim:
 
 The gap as a share of Coffee's price is
 
@@ -7296,7 +7728,7 @@ The two figures match.
 So the statement is True.`,
       `**E.** → True
 
-Start from the recovered solution pair and apply the claim's extra arithmetic.
+Start from the recovered solution pair and apply the claim's extra arithmetic:
 
 Using the recovered solution values $5.4\\%$ and $6.6\\%$ as inputs for this claim:
 
@@ -7421,9 +7853,13 @@ Read the recovered pair, then run the arithmetic the claim asks for.
 
 A single combined policy has one administrative fee and $85 + 210 = 295$ thousands of coverage.
 
-$$214.70 + 295 \\times 4.68=214.70 + 1380.60$$
+$$
+214.70 + 295 \\times 4.68 = 214.70 + 1380.60
+$$
 
-$$=1595.30$$
+$$
+= 1595.30
+$$
 
 $$612.50 + 1197.50 = 1810.00$$
 
@@ -7528,7 +7964,13 @@ The populations are equal $t$ years after Year 2 when
 
 $$610 + 72t = 730 + 36t$$
 
-$$36t = 120 \\Rightarrow t = \\frac{10}{3} \\approx 3.333$$
+$$
+36t = 120 \\Rightarrow t
+$$
+
+$$
+= \\frac{10}{3} \\approx 3.333
+$$
 
 That is Year $5.333$, which lies between Year 2 and Year 6.
 
@@ -7537,7 +7979,13 @@ So the statement is True.`,
 
 Set $610 + 72t = 730 + 36t$ to find when A catches B:
 
-$$36t = 120 \\Rightarrow t = \\frac{10}{3} \\approx 3.333$$
+$$
+36t = 120 \\Rightarrow t
+$$
+
+$$
+= \\frac{10}{3} \\approx 3.333
+$$
 
 so equality is at Year $5.333$. At Year 5, three years after Year 2,
 
@@ -7628,9 +8076,13 @@ So the statement is True.`,
 
 Across Days 1 and 2, Plant B operated $20 + 9 = 29$ hours and Plant A operated $14 + 22 = 36$ hours. Swapping those totals at the recovered rates gives
 
-$$29 \\times 145 + 36 \\times 98=4205 + 3528$$
+$$
+29 \\times 145 + 36 \\times 98 = 4205 + 3528
+$$
 
-$$=7733$$
+$$
+= 7733
+$$
 
 The actual combined Day 1 + Day 2 total is $3990 + 4072 = 8062$. Since $7733 < 8062$, the swapped grand total does not exceed the actual combined total.
 
