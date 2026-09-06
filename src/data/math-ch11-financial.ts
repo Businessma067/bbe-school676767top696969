@@ -276,7 +276,15 @@ $$\\approx 1.608435$$
 
 $$S(6) \\approx 9,650.61$$
 
-The claim is \\$9,860.00. We have $9,650.61 \\ne 9,860.00$.
+The claim is \\$9,860.00. The computed value is
+
+$$9,650.61$$
+
+The claim is
+
+$$9,860.00$$
+
+Since $9,650.61 \\ne 9,860.00$, the figures disagree.
 
 So the statement is False.`,
       `**D.** → False
@@ -301,7 +309,15 @@ $$\\frac{9,650.61}{2}$$
 
 $$\\approx 4,825.31$$
 
-The claim needs $S(3)=\\frac{S(6)}{2}$. We have $7,609.45 \\ne 4,825.31$.
+The claim needs $S(3)=\\frac{S(6)}{2}$. The computed value is
+
+$$7,609.45$$
+
+The claim is
+
+$$4,825.31$$
+
+Since $7,609.45 \\ne 4,825.31$, the figures disagree.
 
 So the statement is False.`,
       `**E.** → False
@@ -582,7 +598,15 @@ $$
 = 21.00\\%
 $$
 
-Compare the computed value with the claim ($22.00\\%$). We have $21.00\\% \\ne 22.00\\%$. The two sides do not agree.
+Compare the computed value with the claim ($22.00\\%$). The computed value is
+
+$$21.00\\%$$
+
+The claim is
+
+$$22.00\\%$$
+
+Since $21.00\\% \\ne 22.00\\%$, the figures disagree. The two sides do not agree.
 
 So the statement is False.`,
       `**B.** → False
@@ -609,7 +633,15 @@ $$\\approx 0.231439$$
 
 $$\\approx 23.14\\%$$
 
-The claim is about $21.75\\%$. We have $23.14\\% \\ne 21.75\\%$.
+The claim is about $21.75\\%$. The computed value is
+
+$$23.14\\%$$
+
+The claim is
+
+$$21.75\\%$$
+
+Since $23.14\\% \\ne 21.75\\%$, the figures disagree.
 
 So the statement is False.`,
       `**C.** → False
@@ -630,7 +662,15 @@ $$\\approx 1.231439$$
 
 $$FV \\approx 2,462.86$$
 
-The claim is \\$2,420.00. We have $2,462.86 \\ne 2,420.00$.
+The claim is \\$2,420.00. The computed value is
+
+$$2,462.86$$
+
+The claim is
+
+$$2,420.00$$
+
+Since $2,462.86 \\ne 2,420.00$, the figures disagree.
 
 So the statement is False.`,
       `**D.** → True
@@ -935,7 +975,27 @@ $$
 t = \\frac{\\ln 2}{\\ln(1.006)}
 $$
 
-The claim is $108$ months. We have $115.87 \\ne 108$.
+$$\\ln 2$$
+
+$$\\approx 0.693147$$
+
+$$\\ln(1.006)$$
+
+$$\\approx 0.005982$$
+
+$$t \\approx \\frac{0.693147}{0.005982}$$
+
+$$t \\approx 115.87$$
+
+The claim is $108$ months. The computed value is
+
+$$115.87$$
+
+The claim is
+
+$$108$$
+
+Since $115.87 \\ne 108$, the figures disagree.
 
 So the statement is False.`,
       `**C.** → False
@@ -952,7 +1012,15 @@ $$t = \\frac{\\ln 2}{\\ln(1.006)}$$
 
 $$\\approx 115.87$$
 
-The claim is $58$ months. We have $115.87 \\ne 58$.
+The claim is $58$ months. The computed value is
+
+$$115.87$$
+
+The claim is
+
+$$58$$
+
+Since $115.87 \\ne 58$, the figures disagree.
 
 So the statement is False.`,
       `**D.** → False
@@ -973,12 +1041,36 @@ $$\\approx 0.15389$$
 
 $$\\approx 15.39\\%$$
 
-Double the original effective rate would be $2 \\times 7.44\\% = 14.88\\%$. We have $15.39\\% \\ne 14.88\\%$.
+Double the original effective rate would be $2 \\times 7.44\\% = 14.88\\%$. The computed value is
+
+$$15.39\\%$$
+
+The claim is
+
+$$14.88\\%$$
+
+Since $15.39\\% \\ne 14.88\\%$, the figures disagree.
 
 So the statement is False.`,
       `**E.** → True
 
 The time equation $t=\\frac{\\ln M}{\\ln(1+i_m)}$ is defined for any growth multiple $M>1$, not only $M=2$. Because $(1+i_m)^{t}$ is increasing in $t$, each target $M$ has a unique $t$.
+
+Substitute the recovered stem inputs:
+
+$$r = 7.2\\%$$
+
+$$r = 0.072,$$
+
+$$n = 12,$$
+
+$$M = 2$$
+
+$$i_m = \\frac{0.072}{12}$$
+
+$$i_m = 0.006$$
+
+$$i_m = 0.60\\%$$
 
 The same logarithmic method therefore works for any other target growth multiple.
 
@@ -1807,7 +1899,15 @@ $$t = \\frac{\\ln 1.5}{\\ln 1.005}$$
 
 $$\\approx 81.30$$
 
-The claim is $6.00$ years exactly. We have $6.78 \\ne 6.00$.
+The claim is $6.00$ years exactly. The computed value is
+
+$$6.78$$
+
+The claim is
+
+$$6.00$$
+
+Since $6.78 \\ne 6.00$, the figures disagree.
 
 So the statement is False.`,
       `**C.** → False
@@ -1824,7 +1924,15 @@ $$t = \\frac{\\ln 1.5}{\\ln 1.005}$$
 
 $$\\approx 81.30$$
 
-The claim is $48$ months. We have $81.30 \\ne 48$.
+The claim is $48$ months. The computed value is
+
+$$81.30$$
+
+The claim is
+
+$$48$$
+
+Since $81.30 \\ne 48$, the figures disagree.
 
 So the statement is False.`,
       `**D.** → False
@@ -1860,7 +1968,15 @@ $$t = \\frac{\\ln 1.5}{\\ln 1.005}$$
 
 $$\\approx 81.30$$
 
-The claim is exactly $100$ months. We have $81.30 \\ne 100$.
+The claim is exactly $100$ months. The computed value is
+
+$$81.30$$
+
+The claim is
+
+$$100$$
+
+Since $81.30 \\ne 100$, the figures disagree.
 
 So the statement is False.`,
     ],
