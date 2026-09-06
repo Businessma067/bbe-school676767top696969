@@ -82,7 +82,7 @@ A stationary point solves $P'(x)=0$:
 $$2x-4=0\\qquad\\Rightarrow\\qquad x=2$$
 
 The parabola $P(x)=x^{2}-4x+7$ opens upward (leading coefficient $+1>0$), so this unique stationary point is a minimum rather than a maximum. Do not confuse a critical-point location with a maximum just because profit is discussed. The same checklist — differentiate, simplify, evaluate — settles the assertion. Writing every intermediate line keeps the comparison with the claim mechanical, so the statement is True.`
-    ]
+    ],
     difficulty_level: "1/5",
     sort_order: 1,
     solution_overview: `The workshop profit curve is the quadratic
@@ -116,7 +116,7 @@ The stationary point solves $P'(x)=0$, giving $x=2$. Because the leading coeffic
       "At $q=100$, producing one extra unit raises total cost by approximately $18$ euros.",
       "The derivative $C'(q)$ gives average cost per unit.",
       "The tangent line to $C$ at $q=100$ is $y=1700+18(q-100)$.",
-    ]
+    ],
     answer_key: [true, true, true, false, true],
     tactical_explanations: [
       `**A.** → True
@@ -176,7 +176,7 @@ Point-slope form then assembles the tangent
 $$y=1700+18(q-100)$$
 
 exactly as claimed. Do not replace the intercept $1700$ by the fixed cost $200$. Comparing with the claim, the statement is True. Writing every intermediate line keeps the comparison with the claim mechanical. The stem's formula is enough; no outside identity is required for the check, so the statement is True.`
-    ]
+    ],
     difficulty_level: "1/5",
     sort_order: 2,
     solution_overview: `Total daily cost is the quadratic schedule
@@ -210,7 +210,7 @@ Marginal cost $C'(q)$ is the instantaneous rate of change of total cost; average
       "At $L=4$, one extra labour-hour raises output by approximately $15$ units.",
       "$Q'(L)$ is constant for all $L>0$.",
       "Doubling labour from $L=4$ to $L=8$ doubles the marginal product exactly.",
-    ]
+    ],
     answer_key: [true, true, true, false, false],
     tactical_explanations: [
       `**A.** → True
@@ -266,7 +266,7 @@ $$
 $$
 
 Because $Q'$ scales like $\\sqrt{L}$, doubling labour multiplies marginal product by $\\sqrt{2}$, not by $2$. The claim's "exactly doubles" comparison is incorrect. That mismatch alone is enough to reject the letter. Rephrasing the claim cannot repair an algebraic contradiction. The named evaluation already serves as a counter-example. Comparing that with the claim, the statement is False.`
-    ]
+    ],
     difficulty_level: "1/5",
     sort_order: 3,
     solution_overview: `Output follows the power production rule
@@ -300,7 +300,7 @@ so doubling labour does not double the marginal product.`,
       "$R'(10)=40$.",
       "$R'(q)=p'(q)$ for every $q>0$.",
       "The tangent line to $R$ at $q=10$ is $y=600+40(q-10)$.",
-    ]
+    ],
     answer_key: [true, true, true, false, true],
     tactical_explanations: [
       `**A.** → True
@@ -358,7 +358,7 @@ Point-slope form then gives the tangent
 $$y=600+40(q-10)$$
 
 exactly as claimed. Replacing $600$ by $p(10)$ would break the tangent equation. Comparing with the claim, the statement is True. Substituting only after the general expression is finished avoids mixing height with slope. Coefficient and sign agreement with the claim is what decides the letter, so the statement is True.`
-    ]
+    ],
     difficulty_level: "2/5",
     sort_order: 4,
     solution_overview: `Price is the linear schedule $p(q)=80-2q$, so revenue expands to
@@ -390,7 +390,7 @@ Reuse this derivative setup for every letter: simplify first, evaluate at named 
       "$A'(100)=0$.",
       "The derivative $A'(q)$ is the same as marginal cost.",
       "At $q=100$, average cost is locally flat because the derivative is zero there.",
-    ]
+    ],
     answer_key: [true, true, true, false, true],
     tactical_explanations: [
       `**A.** → True
@@ -444,7 +444,7 @@ A zero first derivative means a horizontal tangent on the graph of $A$. Since th
 $$A'(100)=0$$
 
 average cost is locally flat at $q=100$. That does not by itself say whether the flat point is a min or max — but local flatness is exactly what the claim asserts. Coefficient and sign agreement with the claim is what decides the letter. The same checklist — differentiate, simplify, evaluate — settles the assertion. Writing every intermediate line keeps the comparison with the claim mechanical, so the statement is True.`
-    ]
+    ],
     difficulty_level: "2/5",
     sort_order: 5,
     solution_overview: `Total cost is $C(q)=300+6q+\\dfrac{3}{100}q^{2}$, so average cost splits as
@@ -476,7 +476,7 @@ Reuse this derivative setup for every letter: simplify first, evaluate at named 
       "At $n=3$, adding one more agent lowers the waiting time by approximately $\\dfrac{4}{3}$ minutes.",
       "Because $W'(n)<0$, waiting time is increasing in $n$.",
       "$W''(n)=\\dfrac{96}{(n+3)^{3}}$.",
-    ]
+    ],
     answer_key: [true, true, true, false, true],
     tactical_explanations: [
       `**A.** → True
@@ -538,7 +538,7 @@ W''(n) = \\dfrac{96}{(n+3)^{3}}
 $$
 
 which matches the claimed second derivative. The positive sign shows the decrease in waiting time becomes less steep as $n$ grows. The same checklist — differentiate, simplify, evaluate — settles the assertion. Writing every intermediate line keeps the comparison with the claim mechanical, so the statement is True.`
-    ]
+    ],
     difficulty_level: "2/5",
     sort_order: 6,
     solution_overview: `Waiting time is the reciprocal staffing rule
@@ -570,7 +570,7 @@ Reuse this derivative setup for every letter: simplify first, evaluate at named 
       "$S''(x)=e^{-x}\\cdot (x^{2}-4x+2)$.",
       "$S'(1)=e^{-1}$.",
       "At $x=2$, the tangent to the graph is horizontal.",
-    ]
+    ],
     answer_key: [true, true, true, true, true],
     tactical_explanations: [
       `**A.** → True
@@ -626,7 +626,7 @@ A horizontal tangent is precisely a zero slope. From the evaluation at $x=2$,
 $$S'(2)=0$$
 
 so the tangent to the graph at that point is horizontal. Do not confuse "horizontal tangent" with "horizontal asymptote" — here it is a local flat slope. Writing every intermediate line keeps the comparison with the claim mechanical. The stem's formula is enough; no outside identity is required for the check. Substituting only after the general expression is finished avoids mixing height with slope, so the statement is True.`
-    ]
+    ],
     difficulty_level: "2/5",
     sort_order: 7,
     solution_overview: `The campaign response index is the exponential-polynomial product
@@ -662,7 +662,7 @@ Reuse this derivative setup for every letter: simplify first, evaluate at named 
       "$D''(a)=-\\dfrac{7}{4}(a+9)^{-\\frac{3}{2}}$.",
       "Near $a=7$, increasing advertising by one unit raises expected demand by approximately $7$ units.",
       "$D'(a)$ is smaller at $a=16$ than at $a=0$.",
-    ]
+    ],
     answer_key: [true, true, true, false, true],
     tactical_explanations: [
       `**A.** → True
@@ -718,7 +718,7 @@ Compare the derivative at the two advertising levels:
 $$D'(16)=\\dfrac{7}{2\\sqrt{25}}=\\dfrac{7}{10}\\qquad D'(0)=\\dfrac{7}{2\\sqrt{9}}=\\dfrac{7}{6}$$
 
 Since $\\dfrac{7}{10}<\\dfrac{7}{6}$, the derivative is smaller at $a=16$ than at $a=0$. That is diminishing returns in action. The stem's formula is enough; no outside identity is required for the check. Substituting only after the general expression is finished avoids mixing height with slope. Coefficient and sign agreement with the claim is what decides the letter, so the statement is True.`
-    ]
+    ],
     difficulty_level: "2/5",
     sort_order: 8,
     solution_overview: `Expected demand follows the square-root advertising rule
@@ -754,7 +754,7 @@ Reuse this derivative setup for every letter: simplify first, evaluate at named 
       "$R'(n)=-3\\sqrt{2n+1}+\\dfrac{20-3n}{\\sqrt{2n+1}}$ before combining over one denominator.",
       "$R'(n)=0$ at $n=\\dfrac{17}{9}$.",
       "$R(n)$ is increasing for every $0<n<2$.",
-    ]
+    ],
     answer_key: [true, true, true, true, false],
     tactical_explanations: [
       `**A.** → True
@@ -804,7 +804,7 @@ The derivative changes sign at the critical point
 $$n=\\dfrac{17}{9}$$
 
 and $\\dfrac{17}{9}<2$. Revenue therefore rises on part of $(0,2)$ and falls on the rest, so it is not increasing throughout that interval. The claim overstates the monotonicity. Rephrasing the claim cannot repair an algebraic contradiction. The named evaluation already serves as a counter-example. Holding both formulas in view makes the failure obvious. The derived expression and the asserted one disagree at a checkable place. Comparing that with the claim, the statement is False.`
-    ]
+    ],
     difficulty_level: "3/5",
     sort_order: 9,
     solution_overview: `Revenue is the product of the two scenario rules
@@ -836,7 +836,7 @@ Reuse this derivative setup for every letter: simplify first, evaluate at named 
       "$T'(n)>0$ for every $n>0$.",
       "$T'(n)=\\dfrac{2n+8}{n+1}$ after cancelling a common factor incorrectly.",
       "There exists some $n>0$ for which $T'(n)=0$.",
-    ]
+    ],
     answer_key: [true, true, true, false, false],
     tactical_explanations: [
       `**A.** → True
@@ -890,7 +890,7 @@ For $n>0$ the numerator $2n^{2}+4n+8$ never vanishes (discriminant $4-16<0$) and
 $$T'(n)=\\dfrac{2n^{2}+4n+8}{(n+1)^{2}}>0$$
 
 throughout. A strictly positive derivative never hits zero, so no such root exists and the statement is False. The named evaluation already serves as a counter-example. Holding both formulas in view makes the failure obvious. The derived expression and the asserted one disagree at a checkable place. Comparing that with the claim, the statement is False.`
-    ]
+    ],
     difficulty_level: "3/5",
     sort_order: 10,
     solution_overview: `Maintenance hours are $H(n)=2n^{2}+8n$, and time per effective unit is the quotient
@@ -916,7 +916,7 @@ At $n=1$ one finds $T'(1)=\\dfrac{7}{2}$. The numerator $2n^{2}+4n+8=2(n^{2}+2n+
       "$U''(x)=-\\dfrac{40}{(x+1)^{2}}$.",
       "$U'(x)$ is undefined at $x=0$.",
       "Near $x=3$, one extra hour of study changes utility by approximately $9$ utility units.",
-    ]
+    ],
     answer_key: [true, true, true, false, true],
     tactical_explanations: [
       `**A.** → True
@@ -976,7 +976,7 @@ The first derivative measures the instantaneous change in utility per extra stud
 $$U'(3)=9$$
 
 so one extra hour near that level changes utility by approximately $9$ utility units. The approximation language matches the derivative interpretation. The same checklist — differentiate, simplify, evaluate — settles the assertion. Writing every intermediate line keeps the comparison with the claim mechanical. The stem's formula is enough; no outside identity is required for the check, so the statement is True.`
-    ]
+    ],
     difficulty_level: "2/5",
     sort_order: 11,
     solution_overview: `A student models utility from study time by the log-linear rule
@@ -1006,7 +1006,7 @@ At the named study level one finds $U'(3)=9$, so one extra hour near $x=3$ chang
       "The derivative is negative for all $N>0$.",
       "Near $N=4$, one extra unit of cumulative output lowers unit cost by approximately $\\dfrac{125}{2}$ euros.",
       "Doubling $N$ from $4$ to $8$ doubles the magnitude of the derivative.",
-    ]
+    ],
     answer_key: [true, true, true, true, false],
     tactical_explanations: [
       `**A.** → True
@@ -1062,7 +1062,7 @@ $$
 $$
 
 Because $c'$ scales like $N^{-\\frac{3}{2}}$, doubling $N$ multiplies the magnitude by $2^{-\\frac{3}{2}}$, not by $2$. The claim is incorrect. The derived expression and the asserted one disagree at a checkable place. That mismatch alone is enough to reject the letter. Rephrasing the claim cannot repair an algebraic contradiction. Comparing that with the claim, the statement is False.`
-    ]
+    ],
     difficulty_level: "2/5",
     sort_order: 12,
     solution_overview: `Unit processing cost follows the learning curve
@@ -1096,7 +1096,7 @@ so doubling cumulative output does not double the magnitude of the derivative.`,
       "$R(20)=600$.",
       "The tangent line at $q=20$ is $y=600+10(q-20)$.",
       "At $q=20$, the tangent line has negative slope.",
-    ]
+    ],
     answer_key: [true, true, true, true, false],
     tactical_explanations: [
       `**A.** → True
@@ -1154,7 +1154,7 @@ The slope of the tangent at $q=20$ is the derivative value
 $$R'(20)=10>0$$
 
 so the tangent rises from left to right rather than falling. Revenue still increases at $q=20$ because the peak $R'(q)=0$ occurs later at $q=25$. That mismatch alone is enough to reject the letter. Rephrasing the claim cannot repair an algebraic contradiction. The named evaluation already serves as a counter-example. Holding both formulas in view makes the failure obvious. Comparing that with the claim, the statement is False.`
-    ]
+    ],
     difficulty_level: "2/5",
     sort_order: 13,
     solution_overview: `Daily revenue is modelled by the concave quadratic
@@ -1190,7 +1190,7 @@ Reuse this derivative setup for every letter: simplify first, evaluate at named 
       "$G''(x)=30(3x^{2}+4)^{3}(27x^{2}+4)$.",
       "$G''(0)=7680$.",
       "$G'(0)=30$.",
-    ]
+    ],
     answer_key: [true, true, true, true, false],
     tactical_explanations: [
       `**A.** → True
@@ -1260,7 +1260,7 @@ G'(0) = 0
 $$
 
 not $30$. A trap is reading off the leading coefficient $30$ and ignoring the vanishing $x$. The claim's value is incorrect. Rephrasing the claim cannot repair an algebraic contradiction. The named evaluation already serves as a counter-example. Holding both formulas in view makes the failure obvious. The derived expression and the asserted one disagree at a checkable place. Comparing that with the claim, the statement is False.`
-    ]
+    ],
     difficulty_level: "4/5",
     sort_order: 14,
     solution_overview: `The machine reliability score is the nested fifth-power composition
@@ -1292,7 +1292,7 @@ Reuse this derivative setup for every letter: simplify first, evaluate at named 
       "$C''\\left(\\dfrac{3}{2}\\right)=0$.",
       "$C''(1)$ is positive.",
       "$C''(2)$ is positive.",
-    ]
+    ],
     answer_key: [true, true, true, false, true],
     tactical_explanations: [
       `**A.** → True
@@ -1352,7 +1352,7 @@ C''(2) = 12>0
 $$
 
 so the second derivative is positive there. Just right of the zero at $q=\\tfrac{3}{2}$, curvature has flipped to concave up. Coefficient and sign agreement with the claim is what decides the letter. The same checklist — differentiate, simplify, evaluate — settles the assertion. Writing every intermediate line keeps the comparison with the claim mechanical. The stem's formula is enough; no outside identity is required for the check, so the statement is True.`
-    ]
+    ],
     difficulty_level: "3/5",
     sort_order: 15,
     solution_overview: `Total delivery cost is the cubic schedule
@@ -1382,7 +1382,7 @@ so curvature changes from negative to positive across $q=\\dfrac{3}{2}$. That is
       "The index is decreasing for all $t>0$.",
       "At $t=2$, one extra hour of training changes the index by approximately $-\\dfrac{1}{3}$.",
       "$K''(t)=\\dfrac{6}{(t+1)^{3}}$.",
-    ]
+    ],
     answer_key: [true, true, true, true, true],
     tactical_explanations: [
       `**A.** → True
@@ -1442,7 +1442,7 @@ K''(t) = \\dfrac{6}{(t+1)^{3}}
 $$
 
 matching the claimed second derivative. The positive sign means the decrease in $K$ flattens as $t$ grows. Comparing with the claim, the statement is True. The same checklist — differentiate, simplify, evaluate — settles the assertion. Writing every intermediate line keeps the comparison with the claim mechanical. The stem's formula is enough; no outside identity is required for the check, so the statement is True.`
-    ]
+    ],
     difficulty_level: "3/5",
     sort_order: 16,
     solution_overview: `The complaint index is the simple linear-over-linear quotient
@@ -1478,7 +1478,7 @@ Reuse this derivative setup for every letter: simplify first, evaluate at named 
       "$S''(x)=48(2x+5)^{2}$.",
       "$S''(0)=1200$.",
       "$S'''(x)=192(2x+5)$.",
-    ]
+    ],
     answer_key: [true, true, true, true, true],
     tactical_explanations: [
       `**A.** → True
@@ -1554,7 +1554,7 @@ S'''(x) = 192(2x+5)
 $$
 
 matching the claimed third derivative. One more differentiation would leave the constant $384$. Writing every intermediate line keeps the comparison with the claim mechanical. The stem's formula is enough; no outside identity is required for the check. Substituting only after the general expression is finished avoids mixing height with slope. Coefficient and sign agreement with the claim is what decides the letter, so the statement is True.`
-    ]
+    ],
     difficulty_level: "3/5",
     sort_order: 17,
     solution_overview: `The packaging safety score is the nested fourth-power composition
@@ -1586,7 +1586,7 @@ Reuse this derivative setup for every letter: simplify first, evaluate at named 
       "$E''(t)=\\dfrac{1}{t+1}+\\dfrac{1}{(t+1)^{2}}$.",
       "$E''(1)=\\dfrac{3}{4}$.",
       "The statement $E'(t)=\\ln(t+1)+1$ is correct.",
-    ]
+    ],
     answer_key: [true, true, true, true, false],
     tactical_explanations: [
       `**A.** → True
@@ -1642,7 +1642,7 @@ The correct product-rule derivative is
 $$E'(t)=\\ln(t+1)+\\dfrac{t}{t+1}$$
 
 Replacing the second summand by the constant $1$ drops the factor $\\dfrac{t}{t+1}$ and produces a different function. That shortcut is incorrect. That mismatch alone is enough to reject the letter. Rephrasing the claim cannot repair an algebraic contradiction. The named evaluation already serves as a counter-example. Holding both formulas in view makes the failure obvious. Comparing that with the claim, the statement is False.`
-    ]
+    ],
     difficulty_level: "4/5",
     sort_order: 18,
     solution_overview: `The engagement index is the product
@@ -1674,7 +1674,7 @@ Reuse this derivative setup for every letter: simplify first, evaluate at named 
       "$M'(1)=\\dfrac{7}{8}$.",
       "$M'(1)=\\dfrac{13}{8}$.",
       "The derivative is a constant.",
-    ]
+    ],
     answer_key: [true, true, true, false, false],
     tactical_explanations: [
       `**A.** → True
@@ -1732,7 +1732,7 @@ The derivative formula
 $$M'(x)=\\dfrac{3x^{2}+12x-1}{2(x+3)^{\\frac{3}{2}}}$$
 
 still depends on $x$ in both the numerator and the denominator. It is therefore not a constant function. Rephrasing the claim cannot repair an algebraic contradiction. The named evaluation already serves as a counter-example. Holding both formulas in view makes the failure obvious. The derived expression and the asserted one disagree at a checkable place. That mismatch alone is enough to reject the letter. Comparing that with the claim, the statement is False.`
-    ]
+    ],
     difficulty_level: "5/5",
     sort_order: 19,
     solution_overview: `Rewrite the processing index as a product of powers:
@@ -1764,7 +1764,7 @@ Reuse this derivative setup for every letter: simplify first, evaluate at named 
       "$F''(t)=2\\ln(t+1)+\\dfrac{4t}{t+1}-\\dfrac{t^{2}+1}{(t+1)^{2}}$.",
       "$F''(1)=2\\ln 2+\\dfrac{3}{2}$.",
       "The expression $F'(t)=2t+\\dfrac{t^{2}+1}{t+1}$ is correct.",
-    ]
+    ],
     answer_key: [true, true, true, true, false],
     tactical_explanations: [
       `**A.** → True
@@ -1818,7 +1818,7 @@ The true product-rule derivative is
 $$F'(t)=2t\\cdot\\ln(t+1)+\\dfrac{t^{2}+1}{t+1}$$
 
 Dropping the logarithm term produces $2t+\\dfrac{t^{2}+1}{t+1}$, which is missing the summand $2t\\ln(t+1)$. That shortcut is incorrect. The named evaluation already serves as a counter-example. Holding both formulas in view makes the failure obvious. The derived expression and the asserted one disagree at a checkable place. That mismatch alone is enough to reject the letter. Comparing that with the claim, the statement is False.`
-    ]
+    ],
     difficulty_level: "5/5",
     sort_order: 20,
     solution_overview: `The performance index is the mixed product
@@ -1850,7 +1850,7 @@ Reuse this derivative setup for every letter: simplify first, evaluate at named 
       "$\\pi''(q)=-6q+24$.",
       "$\\pi''(3)=0$.",
       "At $q=1$ the tangent slope is strictly positive.",
-    ]
+    ],
     answer_key: [true, true, true, false, false],
     tactical_explanations: [
       `**A.** → True
@@ -1904,7 +1904,7 @@ The tangent slope at $q=1$ is precisely the first-derivative value
 $$\\pi'(1)=0$$
 
 which is zero rather than strictly positive. A horizontal tangent is not a strictly rising one. Holding both formulas in view makes the failure obvious. The derived expression and the asserted one disagree at a checkable place. That mismatch alone is enough to reject the letter. Rephrasing the claim cannot repair an algebraic contradiction. The named evaluation already serves as a counter-example. Comparing that with the claim, the statement is False.`
-    ]
+    ],
     difficulty_level: "1/5",
     sort_order: 21,
     solution_overview: `Daily profit follows the cubic schedule
@@ -1936,7 +1936,7 @@ Reuse this derivative setup for every letter: simplify first, evaluate at named 
       "Average cost equals marginal cost for every $q>0$.",
       "The tangent to $C$ at $q=10$ is $y=45+9q$.",
       "$C''(q)=0$ for all $q$.",
-    ]
+    ],
     answer_key: [true, true, false, true, true],
     tactical_explanations: [
       `**A.** → True
@@ -1974,7 +1974,7 @@ Differentiating the constant marginal cost once more yields
 $$C''(q)=0$$
 
 for every $q$. A linear cost schedule has zero curvature everywhere. Writing every intermediate line keeps the comparison with the claim mechanical. The stem's formula is enough; no outside identity is required for the check. Substituting only after the general expression is finished avoids mixing height with slope. Coefficient and sign agreement with the claim is what decides the letter, so the statement is True.`
-    ]
+    ],
     difficulty_level: "1/5",
     sort_order: 22,
     solution_overview: `Shipping cost is the linear schedule
@@ -2006,7 +2006,7 @@ Reuse this derivative setup for every letter: simplify first, evaluate at named 
       "$Q'(4)=80$.",
       "$Q''(L)=15L^{\\frac{1}{2}}$.",
       "$Q'(L)$ falls as $L$ rises.",
-    ]
+    ],
     answer_key: [true, true, true, true, false],
     tactical_explanations: [
       `**A.** → True
@@ -2068,7 +2068,7 @@ Because the exponent $\\dfrac{3}{2}$ is positive,
 $$Q'(L)=10L^{\\frac{3}{2}}$$
 
 rises as $L$ rises. Comparing $Q'(1)=10$ with $Q'(4)=80$ confirms the increase. The claim that it falls is incorrect. That mismatch alone is enough to reject the letter. Rephrasing the claim cannot repair an algebraic contradiction. The named evaluation already serves as a counter-example. Holding both formulas in view makes the failure obvious. The derived expression and the asserted one disagree at a checkable place. Comparing that with the claim, the statement is False.`
-    ]
+    ],
     difficulty_level: "2/5",
     sort_order: 23,
     solution_overview: `Output follows the five-halves production rule
@@ -2100,7 +2100,7 @@ Reuse this derivative setup for every letter: simplify first, evaluate at named 
       "$R'(20)=40$.",
       "$R'(q)=p(q)$ at every $q$.",
       "The tangent to $R$ at $q=20$ is $y=1000+40(q-20)$.",
-    ]
+    ],
     answer_key: [true, true, true, false, true],
     tactical_explanations: [
       `**A.** → True
@@ -2154,7 +2154,7 @@ Point-slope form then gives the tangent
 $$y=1000+40(q-20)$$
 
 exactly as claimed. Substituting only after the general expression is finished avoids mixing height with slope. Coefficient and sign agreement with the claim is what decides the letter. The same checklist — differentiate, simplify, evaluate — settles the assertion. Writing every intermediate line keeps the comparison with the claim mechanical, so the statement is True.`
-    ]
+    ],
     difficulty_level: "2/5",
     sort_order: 24,
     solution_overview: `The venue charges the linear fare $p(q)=60-\\dfrac{1}{2}q$, so ticket revenue expands to
@@ -2186,7 +2186,7 @@ Reuse this derivative setup for every letter: simplify first, evaluate at named 
       "$D''(n)=\\dfrac{72}{(n+2)^{3}}$.",
       "$D'(n)>0$ for all $n>0$.",
       "Near $n=1$, one extra agent cuts delay by about $4$ minutes.",
-    ]
+    ],
     answer_key: [true, true, true, false, true],
     tactical_explanations: [
       `**A.** → True
@@ -2248,7 +2248,7 @@ The first derivative measures minutes of delay gained (or lost) per extra agent.
 $$D'(1)=-4$$
 
 so one extra agent cuts delay by about $4$ minutes. The absolute value of the negative derivative is the size of the cut. Coefficient and sign agreement with the claim is what decides the letter. The same checklist — differentiate, simplify, evaluate — settles the assertion. Writing every intermediate line keeps the comparison with the claim mechanical, so the statement is True.`
-    ]
+    ],
     difficulty_level: "2/5",
     sort_order: 25,
     solution_overview: `Mean call-centre delay is the reciprocal staffing model
@@ -2276,7 +2276,7 @@ Reuse this derivative setup for every letter: simplify first, evaluate at named 
       "$S''(x)=e^{-2x}\\cdot(4x-4)$.",
       "$S'(0)=1$.",
       "$S'(1)=e^{-2}$.",
-    ]
+    ],
     answer_key: [true, true, true, true, false],
     tactical_explanations: [
       `**A.** → True
@@ -2342,7 +2342,7 @@ S'(1) = -e^{-2}
 $$
 
 which equals $-e^{-2}$, not the positive value $e^{-2}$. The claim misses the sign from $(1-2x)$. Holding both formulas in view makes the failure obvious. The derived expression and the asserted one disagree at a checkable place. That mismatch alone is enough to reject the letter. Rephrasing the claim cannot repair an algebraic contradiction. The named evaluation already serves as a counter-example. Comparing that with the claim, the statement is False.`
-    ]
+    ],
     difficulty_level: "3/5",
     sort_order: 26,
     solution_overview: `The response score is the decaying exponential-linear product
@@ -2378,7 +2378,7 @@ Reuse this derivative setup for every letter: simplify first, evaluate at named 
       "$R''(a)=-\\dfrac{20}{(4a+9)^{\\frac{3}{2}}}$.",
       "$R'(4)=2$.",
       "$R'(a)$ grows without bound as $a$ grows.",
-    ]
+    ],
     answer_key: [true, true, true, true, false],
     tactical_explanations: [
       `**A.** → True
@@ -2444,7 +2444,7 @@ As $a\\to\\infty$ the denominator $\\sqrt{4a+9}$ grows without bound, so
 $$R'(a)=\\dfrac{10}{\\sqrt{4a+9}}\\to 0$$
 
 rather than exploding. Marginal reach shrinks toward zero. The claim's comparison is incorrect. The derived expression and the asserted one disagree at a checkable place. That mismatch alone is enough to reject the letter. Rephrasing the claim cannot repair an algebraic contradiction. The named evaluation already serves as a counter-example. Comparing that with the claim, the statement is False.`
-    ]
+    ],
     difficulty_level: "3/5",
     sort_order: 27,
     solution_overview: `Expected reach is the scaled square-root rule
@@ -2476,7 +2476,7 @@ Reuse this derivative setup for every letter: simplify first, evaluate at named 
       "$U''(t)=-\\dfrac{120}{(2t+1)^{2}}$.",
       "$U'(0)=56$.",
       "$U'(t)=0$ at $t=\\dfrac{7}{2}$.",
-    ]
+    ],
     answer_key: [true, true, true, true, false],
     tactical_explanations: [
       `**A.** → True
@@ -2546,7 +2546,7 @@ Setting $U'(t)=0$ yields $\\dfrac{60}{2t+1}=4$, hence $2t+1=15$ and
 $$t=7$$
 
 not $t=\\dfrac{7}{2}$. Halving $7$ by mistake (perhaps from the inner coefficient $2$) produces the wrong root. The claimed root is wrong. That mismatch alone is enough to reject the letter. Rephrasing the claim cannot repair an algebraic contradiction. The named evaluation already serves as a counter-example. Holding both formulas in view makes the failure obvious. The derived expression and the asserted one disagree at a checkable place. Comparing that with the claim, the statement is False.`
-    ]
+    ],
     difficulty_level: "3/5",
     sort_order: 28,
     solution_overview: `Study utility combines a logarithm of linear study time with a linear penalty:
@@ -2574,7 +2574,7 @@ Reuse this derivative setup for every letter: simplify first, evaluate at named 
       "$G''(x)=320(4x+1)^{3}$.",
       "$G''(0)=320$.",
       "$G'(1)=20\\cdot 5^{4}$.",
-    ]
+    ],
     answer_key: [true, true, true, true, true],
     tactical_explanations: [
       `**A.** → True
@@ -2636,7 +2636,7 @@ Substitute $x=1$, using $4\\cdot 1+1=5$:
 $$G'(1)=20\\cdot 5^{4}$$
 
 exactly the expression named in the claim. Leaving $5^{4}$ unexpanded is fine — the claim does the same. Substituting only after the general expression is finished avoids mixing height with slope. Coefficient and sign agreement with the claim is what decides the letter. The same checklist — differentiate, simplify, evaluate — settles the assertion. Writing every intermediate line keeps the comparison with the claim mechanical, so the statement is True.`
-    ]
+    ],
     difficulty_level: "4/5",
     sort_order: 29,
     solution_overview: `The quality index is the nested fifth-power composition
@@ -2672,7 +2672,7 @@ Reuse this derivative setup for every letter: simplify first, evaluate at named 
       "$P'(1)=\\dfrac{19}{4}$.",
       "$P'(0)=0$.",
       "$P'(1)=\\dfrac{15}{2}$.",
-    ]
+    ],
     answer_key: [true, true, true, true, false],
     tactical_explanations: [
       `**A.** → True
@@ -2738,7 +2738,7 @@ The evaluation at $x=1$ already produced
 $$P'(1)=\\dfrac{19}{4}$$
 
 Since $\\dfrac{15}{2}=\\dfrac{30}{4}\\neq\\dfrac{19}{4}$, the claimed value is wrong — it looks like a misread of the leading numerator coefficient $15$. The named evaluation already serves as a counter-example. Holding both formulas in view makes the failure obvious. The derived expression and the asserted one disagree at a checkable place. That mismatch alone is enough to reject the letter. Comparing that with the claim, the statement is False.`
-    ]
+    ],
     difficulty_level: "4/5",
     sort_order: 30,
     solution_overview: `The productivity index is the product of a square and a nested square root:
@@ -2770,7 +2770,7 @@ Reuse this derivative setup for every letter: simplify first, evaluate at named 
       "$K'(1)=\\dfrac{29}{25}$.",
       "$K'\\left(\\dfrac{1}{2}\\right)=0$.",
       "$K'(1)=\\dfrac{7}{5}$.",
-    ]
+    ],
     answer_key: [true, true, true, true, false],
     tactical_explanations: [
       `**A.** → True
@@ -2824,7 +2824,7 @@ The evaluation at $x=1$ already produced
 $$K'(1)=\\dfrac{29}{25}$$
 
 Since $\\dfrac{7}{5}=\\dfrac{35}{25}\\neq\\dfrac{29}{25}$, the claimed value is wrong. A trap is misreading $4+25=29$ as $4+31$ or similar. Holding both formulas in view makes the failure obvious. The derived expression and the asserted one disagree at a checkable place. That mismatch alone is enough to reject the letter. Rephrasing the claim cannot repair an algebraic contradiction. Comparing that with the claim, the statement is False.`
-    ]
+    ],
     difficulty_level: "5/5",
     sort_order: 31,
     solution_overview: `The intensity ratio is the cubed-over-linear quotient
@@ -2856,7 +2856,7 @@ Reuse this derivative setup for every letter: simplify first, evaluate at named 
       "$L''(x)=\\dfrac{18-2x^{2}}{(x^{2}+9)^{2}}$.",
       "$L''(0)=\\dfrac{2}{9}$.",
       "$L'(0)=1$.",
-    ]
+    ],
     answer_key: [true, true, true, true, false],
     tactical_explanations: [
       `**A.** → True
@@ -2932,7 +2932,7 @@ L'(0) = 0
 $$
 
 which is not equal to $1$. The odd factor $2x$ vanishes at the origin, so the slope is zero there. The claim's value is incorrect. The derived expression and the asserted one disagree at a checkable place. That mismatch alone is enough to reject the letter. Rephrasing the claim cannot repair an algebraic contradiction. The named evaluation already serves as a counter-example. Comparing that with the claim, the statement is False.`
-    ]
+    ],
     difficulty_level: "5/5",
     sort_order: 32,
     solution_overview: `The saturation index is the natural logarithm of a quadratic argument:
@@ -2964,7 +2964,7 @@ Reuse this derivative setup for every letter: simplify first, evaluate at named 
       "$M''(x)=\\dfrac{6x^{2}+3}{\\sqrt{x^{2}+1}}$.",
       "$M''(0)=3$.",
       "$M'(1)=3$.",
-    ]
+    ],
     answer_key: [true, true, true, true, false],
     tactical_explanations: [
       `**A.** → True
@@ -3032,7 +3032,7 @@ M'(1) = 3\\sqrt{2}
 $$
 
 which is not the bare value $3$. The claim drops the square-root factor $\\sqrt{2}$. That mismatch alone is enough to reject the letter. Rephrasing the claim cannot repair an algebraic contradiction. The named evaluation already serves as a counter-example. Holding both formulas in view makes the failure obvious. The derived expression and the asserted one disagree at a checkable place. Comparing that with the claim, the statement is False.`
-    ]
+    ],
     difficulty_level: "5/5",
     sort_order: 33,
     solution_overview: `The growth score is the nested three-halves power of a quadratic:
@@ -3064,7 +3064,7 @@ Reuse this derivative setup for every letter: simplify first, evaluate at named 
       "$F''(x)=e^{3x}\\cdot(9x^{2}+12x+11)$.",
       "$F''(0)=11$.",
       "$F'(0)=1$.",
-    ]
+    ],
     answer_key: [true, true, true, true, false],
     tactical_explanations: [
       `**A.** → True
@@ -3132,7 +3132,7 @@ F'(0) = 3
 $$
 
 which is not equal to $1$. Confusing $F'(0)$ with $e^{0}=1$ drops the polynomial factor. The claim's value is incorrect. Rephrasing the claim cannot repair an algebraic contradiction. The named evaluation already serves as a counter-example. Holding both formulas in view makes the failure obvious. The derived expression and the asserted one disagree at a checkable place. That mismatch alone is enough to reject the letter. Comparing that with the claim, the statement is False.`
-    ]
+    ],
     difficulty_level: "5/5",
     sort_order: 34,
     solution_overview: `The momentum index is the product of an exponential growth factor and a quadratic:
@@ -3162,7 +3162,7 @@ and therefore $F''(0)=11$. The constant term $3$ in $F'$ comes from $3\\cdot 1$ 
       "$H(x)=(2x+1)^{\\frac{1}{2}}(x+5)^{-\\frac{1}{2}}$.",
       "$H'(x)<0$ for every $x>0$.",
       "$H'(2)=\\dfrac{9}{70}$.",
-    ]
+    ],
     answer_key: [true, true, true, false, false],
     tactical_explanations: [
       `**A.** → True
@@ -3206,7 +3206,7 @@ The exact value at $x=2$ is
 $$H'(2)=\\dfrac{9}{2\\sqrt{5}\\cdot 7^{\\frac{3}{2}}}$$
 
 which is not equal to the simplified fraction $\\dfrac{9}{70}$. That false reduction pretends $\\sqrt{5}\\cdot 7^{\\frac{3}{2}}=35$, which is wrong. The claim's numerical reduction is incorrect. The named evaluation already serves as a counter-example. Holding both formulas in view makes the failure obvious. The derived expression and the asserted one disagree at a checkable place. Comparing that with the claim, the statement is False.`
-    ]
+    ],
     difficulty_level: "5/5",
     sort_order: 35,
     solution_overview: `Rewrite the balance index as a product of powers:
@@ -3236,7 +3236,7 @@ which is not equal to the simplified fraction $\\dfrac{9}{70}$ — that false re
       "$N'(2)=\\dfrac{1}{4\\sqrt{2}}$.",
       "$N'(x)$ changes sign at $x=0$.",
       "$N'(1)=\\dfrac{4}{5^{\\frac{3}{2}}}$.",
-    ]
+    ],
     answer_key: [true, true, true, false, true],
     tactical_explanations: [
       `**A.** → True
@@ -3304,7 +3304,7 @@ Substitute $x=1$, using $1+4=5$:
 $$N'(1)=\\dfrac{4}{5^{\\frac{3}{2}}}$$
 
 exactly as claimed. Leaving $5^{\\frac{3}{2}}$ unexpanded is the exact form. The same checklist — differentiate, simplify, evaluate — settles the assertion. Writing every intermediate line keeps the comparison with the claim mechanical. The stem's formula is enough; no outside identity is required for the check. Substituting only after the general expression is finished avoids mixing height with slope, so the statement is True.`
-    ]
+    ],
     difficulty_level: "5/5",
     sort_order: 36,
     solution_overview: `The normalised score is the linear-over-root quotient
@@ -3336,7 +3336,7 @@ Reuse this derivative setup for every letter: simplify first, evaluate at named 
       "$C''(2)=0$.",
       "$C''(1)>0$.",
       "$C'(2)=8$.",
-    ]
+    ],
     answer_key: [true, true, true, false, true],
     tactical_explanations: [
       `**A.** → True
@@ -3396,7 +3396,7 @@ C'(2) = 8
 $$
 
 The computed value matches the claim. Marginal cost is still positive at the inflection candidate. Writing every intermediate line keeps the comparison with the claim mechanical. The stem's formula is enough; no outside identity is required for the check. Substituting only after the general expression is finished avoids mixing height with slope. Coefficient and sign agreement with the claim is what decides the letter, so the statement is True.`
-    ]
+    ],
     difficulty_level: "3/5",
     sort_order: 37,
     solution_overview: `Total cost is the cubic schedule
@@ -3428,7 +3428,7 @@ Reuse this derivative setup for every letter: simplify first, evaluate at named 
       "$W'\\left(\\dfrac{9}{10}\\right)=0$.",
       "$W'(0)=-81$.",
       "$W'(x)=4(2x+1)(x-3)^{3}$ alone.",
-    ]
+    ],
     answer_key: [true, true, true, true, false],
     tactical_explanations: [
       `**A.** → True
@@ -3476,7 +3476,7 @@ Differentiating only the first factor as if the second were constant would produ
 $$4(2x+1)(x-3)^{3}$$
 
 which misses the contribution from differentiating $(x-3)^{3}$. That incomplete expression is not $W'$. That mismatch alone is enough to reject the letter. Rephrasing the claim cannot repair an algebraic contradiction. The named evaluation already serves as a counter-example. Holding both formulas in view makes the failure obvious. The derived expression and the asserted one disagree at a checkable place. Comparing that with the claim, the statement is False.`
-    ]
+    ],
     difficulty_level: "5/5",
     sort_order: 38,
     solution_overview: `The warranty score is the product of two nested powers
@@ -3508,7 +3508,7 @@ Reuse this derivative setup for every letter: simplify first, evaluate at named 
       "$V''(x)=-\\dfrac{5(6x+7)}{(3x+1)^{2}(x+2)^{2}}$.",
       "$V'(1)=\\dfrac{5}{12}$.",
       "$V'(x)=0$ for some $x>0$.",
-    ]
+    ],
     answer_key: [true, true, true, true, false],
     tactical_explanations: [
       `**A.** → True
@@ -3572,7 +3572,7 @@ For every $x>0$ the numerator $5$ is positive and both linear factors in the den
 $$V'(x)=\\dfrac{5}{(3x+1)(x+2)}>0$$
 
 and never hits zero. There is therefore no such root on $x>0$, and the statement is False. Rephrasing the claim cannot repair an algebraic contradiction. The named evaluation already serves as a counter-example. Holding both formulas in view makes the failure obvious. The derived expression and the asserted one disagree at a checkable place. Comparing that with the claim, the statement is False.`
-    ]
+    ],
     difficulty_level: "5/5",
     sort_order: 39,
     solution_overview: `Split the relative score as a difference of logarithms:
@@ -3606,7 +3606,7 @@ The numerator $5$ of $V'$ never hits zero, so there is no critical point for $x>
       "$Z''(t)=2\\ln(2t+1)+\\dfrac{4t}{2t+1}+\\dfrac{4t^{2}+4t}{(2t+1)^{2}}$.",
       "$Z'(1)=2\\ln 3+1$.",
       "$Z''(1)=2\\ln 3+\\dfrac{4}{3}+\\dfrac{8}{9}$.",
-    ]
+    ],
     answer_key: [true, true, true, false, true],
     tactical_explanations: [
       `**A.** → True
@@ -3656,7 +3656,7 @@ Z''(1) = 2\\ln 3+\\dfrac{4}{3}+\\dfrac{8}{9}
 $$
 
 exactly as claimed. The last numerator is $4(1)^{2}+4(1)=8$. Coefficient and sign agreement with the claim is what decides the letter. The same checklist — differentiate, simplify, evaluate — settles the assertion. Writing every intermediate line keeps the comparison with the claim mechanical. The stem's formula is enough; no outside identity is required for the check, so the statement is True.`
-    ]
+    ],
     difficulty_level: "5/5",
     sort_order: 40,
     solution_overview: `The engagement score is the square-log product
@@ -3692,7 +3692,7 @@ Reuse this derivative setup for every letter: simplify first, evaluate at named 
       "Marginal cost at a named output is the slope of the total-cost curve at that output.",
       "If $C'(120)=0.80$, then near $120$ loaves each extra loaf adds about $0.80$ euros to total cost.",
       "Because average cost already divides by $Q$, its value $A(120)$ is automatically equal to marginal cost at $120$.",
-    ]
+    ],
     answer_key: [true, false, true, true, false],
     tactical_explanations: [
       `**A.** → True
@@ -3744,7 +3744,7 @@ The two coincide only at special outputs (for instance where average cost is min
 Only where average cost is minimized does $A^{\\prime}=0$ force $C^{\\prime}=A$; away from that point the average and the marginal routinely disagree.
 
 Matching the claim against that reasoning confirms the verdict is False once the right derivative (or the right expand-or-not comparison) is in view. So the statement is False.`
-    ]
+    ],
     difficulty_level: "2/5",
     sort_order: 41,
     solution_overview: `The bakery reports total weekly cost $C(Q)$ and average cost per loaf
@@ -3768,7 +3768,7 @@ so with $\\Delta Q=1$ and $C^{\\prime}(120)=0.80$ one gets about $0.80$ euros of
       "A precise reading uses the linear approximation $C(50+\\Delta x)-C(50)\\approx 3\\cdot\\Delta x$ for small $\\Delta x$.",
       "Saying \"it costs about $3$ million more to remove $51\\%$ than $50\\%$\" is a rough one-unit reading of the same derivative.",
       "Because the units are millions of euros per percentage point, $C'(50)$ is a marginal cost with respect to the cleanup percentage.",
-    ]
+    ],
     answer_key: [true, false, true, true, true],
     tactical_explanations: [
       `**A.** → True
@@ -3820,7 +3820,7 @@ That is precisely a marginal cost with respect to the cleanup percentage
 Calling that rate a marginal cost simply names the economic role of $C^{\\prime}$ with respect to the cleanup percentage.
 
 Matching the claim against that reasoning confirms the verdict is True once the right derivative (or the right expand-or-not comparison) is in view. So the statement is True.`
-    ]
+    ],
     difficulty_level: "2/5",
     sort_order: 42,
     solution_overview: `Cleanup cost $C(x)$ is measured in millions of euros when $x\\%$ of the pollution is removed. Analysts report the derivative
@@ -3842,7 +3842,7 @@ for small $\\Delta x$. Taking the convenient one-unit step $\\Delta x=1$ says it
       "Marginal revenue is $R'(Q)$, which generally differs from the posted price $p(Q)$.",
       "If the café wants the approximate change in profit from selling one more cup, it should look at $P'(Q)$.",
       "Because profit equals revenue minus cost, one always has $P'(Q)=R'(Q)-C'(Q)$.",
-    ]
+    ],
     answer_key: [true, false, true, true, true],
     tactical_explanations: [
       `**A.** → True
@@ -3894,7 +3894,7 @@ at every such output
 That is why the expand-or-not test can be written either as $P^{\\prime}>0$ or as $R^{\\prime}>C^{\\prime}$ — same identity.
 
 Matching the claim against that reasoning confirms the verdict is True once the right derivative (or the right expand-or-not comparison) is in view. So the statement is True.`
-    ]
+    ],
     difficulty_level: "3/5",
     sort_order: 43,
     solution_overview: `The café posts a downward-sloping price schedule $p(Q)$, forms revenue and profit by
@@ -3916,7 +3916,7 @@ Marginal profit is $P^{\\prime}$, not $p^{\\prime}$. Differentiating $p$ alone o
       "If $R'(Q)<C'(Q)$, a small increase in output raises profit.",
       "The equality $R'(Q)=C'(Q)$ is exactly the condition $P'(Q)=0$.",
       "The equality $R'(Q)=C'(Q)$ means that total revenue equals total cost.",
-    ]
+    ],
     answer_key: [true, true, false, true, false],
     tactical_explanations: [
       `**A.** → True
@@ -3976,7 +3976,7 @@ Total revenue equals total cost only when $R(Q)=C(Q)$, which is a different cond
 A firm can have $R^{\\prime}=C^{\\prime}$ with $R>C$ (positive profit) or with $R<C$ (a loss); the slope condition is silent about break-even.
 
 Matching the claim against that reasoning confirms the verdict is False once the right derivative (or the right expand-or-not comparison) is in view. So the statement is False.`
-    ]
+    ],
     difficulty_level: "2/5",
     sort_order: 44,
     solution_overview: `Profit is the difference of revenue and cost,
@@ -4000,7 +4000,7 @@ is exactly $P^{\\prime}(Q)=0$; it says nothing about whether the levels $R(Q)$ a
       "At $Q^{\\ast}$, total revenue need not equal total cost.",
       "The condition $P'(Q^{\\ast})=0$ alone does not tell whether profit is maximized or minimized.",
       "If $P'(Q^{\\ast})=0$ and $P$ changes from increasing to decreasing at $Q^{\\ast}$, then $Q^{\\ast}$ is a local profit maximum.",
-    ]
+    ],
     answer_key: [true, false, true, true, true],
     tactical_explanations: [
       `**A.** → True
@@ -4056,7 +4056,7 @@ That sign change marks a local profit maximum
 That $+\\to -$ pattern is the first-derivative test for a local max; together with $P^{\\prime}(Q^{\\ast})=0$ it settles the local classification.
 
 Matching the claim against that reasoning confirms the verdict is True once the right derivative (or the right expand-or-not comparison) is in view. So the statement is True.`
-    ]
+    ],
     difficulty_level: "3/5",
     sort_order: 45,
     solution_overview: `At the candidate output one is told only
@@ -4078,7 +4078,7 @@ It constrains the slope of profit, not the height: the stock $P(Q^{\\ast})$ may 
       "If $U'(x)<0$, a little extra leisure raises satisfaction near that $x$.",
       "The value $U(x)$ itself is already the marginal utility.",
       "The sign of $U'(x)$ answers whether satisfaction is locally increasing or decreasing in leisure.",
-    ]
+    ],
     answer_key: [true, true, false, false, true],
     tactical_explanations: [
       `**A.** → True
@@ -4122,7 +4122,7 @@ That is exactly whether satisfaction is locally increasing or decreasing in leis
 That is the same increase/decrease test used for cost, revenue, and profit — only the economic label on $U$ has changed.
 
 Matching the claim against that reasoning confirms the verdict is True once the right derivative (or the right expand-or-not comparison) is in view. So the statement is True.`
-    ]
+    ],
     difficulty_level: "2/5",
     sort_order: 46,
     solution_overview: `Satisfaction from $x$ hours of leisure is measured by a utility function $U(x)$. Marginal utility is the derivative
@@ -4144,7 +4144,7 @@ shows that the sign of $U^{\\prime}$ answers the local question: if $U^{\\prime}
       "Minimizing average cost is the same decision problem as setting marginal cost to zero.",
       "At an output that minimizes average cost (with $A(Q)$ differentiable and $Q>0$), one has $C'(Q)=A(Q)$.",
       "If average cost is falling, then necessarily $C'(Q)<0$.",
-    ]
+    ],
     answer_key: [true, false, false, true, false],
     tactical_explanations: [
       `**A.** → True
@@ -4200,7 +4200,7 @@ Marginal cost can still be positive while lying below the average; falling avera
 Example: $C^{\\prime}=5$ and $A=8$ gives $A^{\\prime}<0$ while cost is still rising in total; positivity of MC is compatible with falling AC.
 
 Matching the claim against that reasoning confirms the verdict is False once the right derivative (or the right expand-or-not comparison) is in view. So the statement is False.`
-    ]
+    ],
     difficulty_level: "2/5",
     sort_order: 47,
     solution_overview: `Average cost and marginal cost answer different questions. With total cost $C(Q)$ one forms
@@ -4222,7 +4222,7 @@ So $A$ is falling precisely when $C^{\\prime}<A$, which can hold even while $C^{
       "The approximation $C(Q+1)-C(Q)\\approx C'(Q)$ is often serviceable, but it is still an approximation.",
       "If output falls by a small amount, the same derivative still governs the local cost change through $C(Q+\\Delta Q)-C(Q)\\approx C'(Q)\\Delta Q$ with $\\Delta Q<0$.",
       "Because textbooks mention $C(Q+1)-C(Q)$, the derivative $C'(Q)$ is unnecessary once that difference is known.",
-    ]
+    ],
     answer_key: [true, true, true, true, false],
     tactical_explanations: [
       `**A.** → True
@@ -4276,7 +4276,7 @@ Knowing $C(Q+1)-C(Q)$ does not make $C^{\\prime}(Q)$ unnecessary for finer or no
 Optimization conditions such as $R^{\\prime}=C^{\\prime}$ are stated with derivatives; a single one-unit difference cannot replace that language.
 
 Matching the claim against that reasoning confirms the verdict is False once the right derivative (or the right expand-or-not comparison) is in view. So the statement is False.`
-    ]
+    ],
     difficulty_level: "3/5",
     sort_order: 48,
     solution_overview: `Elementary texts often call the one-unit increment
@@ -4300,7 +4300,7 @@ which remains an approximation rather than an identity. The same formula governs
       "That price-pressure effect is one reason marginal revenue can lie below the current price.",
       "If demand did not depend on price at all, differentiating revenue would still ignore quantity.",
       "A claim that \"marginal revenue always equals price\" is generally false when price must fall to sell more.",
-    ]
+    ],
     answer_key: [true, true, true, false, true],
     tactical_explanations: [
       `**A.** → True
@@ -4348,7 +4348,7 @@ A blanket claim that marginal revenue always equals price is therefore false in 
 The true special case where MR equals price is the flat-price (perfectly elastic) schedule $p^{\\prime}=0$, not a general law.
 
 Matching the claim against that reasoning confirms the verdict is True once the right derivative (or the right expand-or-not comparison) is in view. So the statement is True.`
-    ]
+    ],
     difficulty_level: "3/5",
     sort_order: 49,
     solution_overview: `Revenue along an inverse demand $p=p(Q)$ is the product
@@ -4372,7 +4372,7 @@ in general: selling one more unit tends to reduce the price earned on previous u
       "Revenue in this story is $R(Q)=40Q-Q^{2}$.",
       "Profit simplifies to $P(Q)=32Q-Q^{2}-20$.",
       "The correct marginal profit is $P'(Q)=32-2Q$.",
-    ]
+    ],
     answer_key: [true, true, true, true, true],
     tactical_explanations: [
       `**A.** → True
@@ -4438,7 +4438,7 @@ That is the correct marginal profit, not the consultant's $p^{\\prime}(Q)=-1$
 Setting $P^{\\prime}(Q)=0$ would give the candidate $Q=16$; the consultant's $p^{\\prime}=-1$ never even produces a critical point of profit.
 
 Matching the claim against that reasoning confirms the verdict is True once the right derivative (or the right expand-or-not comparison) is in view. So the statement is True.`
-    ]
+    ],
     difficulty_level: "3/5",
     sort_order: 50,
     solution_overview: `Inverse demand and cost are
@@ -4463,7 +4463,7 @@ By contrast, differentiating $p(Q)=40-Q$ alone yields only $p^{\\prime}(Q)=-1$, 
       "In general the marginal tax rate equals the average tax rate for every income $y>0$.",
       "If $T'(y)=0.3$, then near that income about $30$ cents of each extra euro is taxed away.",
       "Knowing only $\\dfrac{T(y)}{y}$ is enough to read the marginal tax rate at that same $y$.",
-    ]
+    ],
     answer_key: [true, true, false, true, false],
     tactical_explanations: [
       `**A.** → True
@@ -4511,7 +4511,7 @@ Many different tax schedules can share the same average at one $y$ while having 
 Recovering $T^{\\prime}(y)$ needs local information about how $T$ changes near $y$, not merely the single quotient $T(y)/y$.
 
 Matching the claim against that reasoning confirms the verdict is False once the right derivative (or the right expand-or-not comparison) is in view. So the statement is False.`
-    ]
+    ],
     difficulty_level: "2/5",
     sort_order: 51,
     solution_overview: `Income tax liability is $T(y)$. The marginal tax rate is the derivative
@@ -4535,7 +4535,7 @@ means that $T^{\\prime}(y)=0.3$ taxes away about $30$ cents of each extra euro. 
       "The ratio $\\dfrac{S(Y)}{Y}$ is the same object as the marginal propensity to save.",
       "A constant saving rule $S(Y)=\\overline{S}+sY$ has marginal propensity to save equal to the coefficient $s$.",
       "To find how saving responds to a little more national product, one differentiates $S(Y)$, not the identity function $Y$.",
-    ]
+    ],
     answer_key: [true, true, false, true, true],
     tactical_explanations: [
       `**A.** → True
@@ -4589,7 +4589,7 @@ One therefore differentiates $S$, not the identity function $Y$
 Differentiating the identity map $Y$ would give $1$, which is not a propensity to save; the dependent variable must be $S$.
 
 Matching the claim against that reasoning confirms the verdict is True once the right derivative (or the right expand-or-not comparison) is in view. So the statement is True.`
-    ]
+    ],
     difficulty_level: "2/5",
     sort_order: 52,
     solution_overview: `National saving $S(Y)$ depends on national product $Y$. The marginal propensity to save is defined as the derivative
@@ -4613,7 +4613,7 @@ one has $S^{\\prime}(Y)=s$ constantly. To see how saving responds to a little mo
       "A flatter tangent means a smaller derivative and therefore a smaller marginal cost.",
       "If the tangent at $Q_0$ has slope $12$, then $C'(Q_0)=12$.",
       "If two outputs have the same total cost, they must have the same marginal cost.",
-    ]
+    ],
     answer_key: [true, false, true, true, false],
     tactical_explanations: [
       `**A.** → True
@@ -4661,7 +4661,7 @@ A U-shaped cost curve can return to the same height with different tangents, and
 A U-shaped cost curve returns to the same height on either side of its minimum with opposite-signed slopes — equal $C$, unequal $C^{\\prime}$.
 
 Matching the claim against that reasoning confirms the verdict is False once the right derivative (or the right expand-or-not comparison) is in view. So the statement is False.`
-    ]
+    ],
     difficulty_level: "1/5",
     sort_order: 53,
     solution_overview: `On a diagram of total cost against output, marginal cost at a named point is the slope of the drawn tangent there:
@@ -4683,7 +4683,7 @@ A flatter tangent means a smaller derivative and a smaller marginal cost. The he
       "If cost rises with output, the output that maximizes revenue can differ from the output that maximizes profit.",
       "At a profit-maximizing interior point one must have $R'(Q)=C'(Q)$.",
       "If $R'(Q)=0$ at some $Q$ while $C'(Q)>0$ there, then $P'(Q)<0$ at that same $Q$.",
-    ]
+    ],
     answer_key: [true, false, true, true, true],
     tactical_explanations: [
       `**A.** → True
@@ -4745,7 +4745,7 @@ At a revenue-stationary point with rising cost, profit is already locally decrea
 So at a revenue-stationary point with positive marginal cost, the firm should cut output a little, not expand.
 
 Matching the claim against that reasoning confirms the verdict is True once the right derivative (or the right expand-or-not comparison) is in view. So the statement is True.`
-    ]
+    ],
     difficulty_level: "3/5",
     sort_order: 54,
     solution_overview: `Profit is
@@ -4769,7 +4769,7 @@ so the profit-maximizing output typically differs from the revenue-maximizing ou
       "The negative sign indicates that the stock of remaining oil is decreasing at $t=0$.",
       "A small time step $\\Delta t$ changes remaining oil by about $-3\\Delta t$ barrels near $t=0$.",
       "Because the derivative is negative, remaining oil must already be negative at $t=0$.",
-    ]
+    ],
     answer_key: [true, false, true, true, false],
     tactical_explanations: [
       `**A.** → True
@@ -4821,7 +4821,7 @@ Remaining oil need not already be negative at $t=0$ merely because $x^{\\prime}(
 A decreasing positive quantity stays positive until it actually crosses zero — slope sign and level sign are separate.
 
 Matching the claim against that reasoning confirms the verdict is False once the right derivative (or the right expand-or-not comparison) is in view. So the statement is False.`
-    ]
+    ],
     difficulty_level: "2/5",
     sort_order: 55,
     solution_overview: `Let $x(t)$ be barrels of oil left in the well at time $t$. The report
@@ -4843,7 +4843,7 @@ governs small time steps. None of this identifies the level $x(0)$ itself, and a
       "The report alone does not reveal the price schedule $p(Q)$.",
       "If marginal cost at $80$ tickets is $15$ euros, then selling a little more than $80$ would lower profit.",
       "If marginal cost at $80$ tickets is $9$ euros, then selling a little more than $80$ would raise profit.",
-    ]
+    ],
     answer_key: [true, false, true, true, true],
     tactical_explanations: [
       `**A.** → True
@@ -4909,7 +4909,7 @@ Hence $R^{\\prime}>C^{\\prime}$ and a small increase in sales raises profit
 Now extra revenue beats extra cost on the margin, so the same ticket office should expand a little past $80$.
 
 Matching the claim against that reasoning confirms the verdict is True once the right derivative (or the right expand-or-not comparison) is in view. So the statement is True.`
-    ]
+    ],
     difficulty_level: "3/5",
     sort_order: 56,
     solution_overview: `The ticket office reports
@@ -4931,7 +4931,7 @@ If $C^{\\prime}(80)=15$ then $P^{\\prime}(80)=-3<0$ and a little more output low
       "The manager's rule is equivalent to maximizing revenue regardless of cost.",
       "If extra revenue and extra cost are equal for a small expansion, marginal profit is zero there.",
       "The manager's comparison of \"extra revenue\" and \"extra cost\" is precisely a comparison of two derivatives.",
-    ]
+    ],
     answer_key: [true, true, false, true, true],
     tactical_explanations: [
       `**A.** → True
@@ -4987,7 +4987,7 @@ The comparison is precisely a comparison of those derivatives
 Once those derivatives are named, the manager's sentence becomes the calculus inequality $R^{\\prime}(Q)>C^{\\prime}(Q)$.
 
 Matching the claim against that reasoning confirms the verdict is True once the right derivative (or the right expand-or-not comparison) is in view. So the statement is True.`
-    ]
+    ],
     difficulty_level: "3/5",
     sort_order: 57,
     solution_overview: `The manager's verbal rule — expand when extra revenue exceeds extra cost — translates into derivatives as
@@ -5009,7 +5009,7 @@ It is a comparison of two derivatives, not a command to maximize revenue regardl
       "An interior maximum of average satisfaction requires $A'(x)=0$, which rearranges to $U'(x)=A(x)$.",
       "The condition $U'(x)=0$ means that a tiny change in study time leaves satisfaction locally unchanged.",
       "If marginal utility is positive, average satisfaction must also be rising.",
-    ]
+    ],
     answer_key: [true, false, true, true, false],
     tactical_explanations: [
       `**A.** → True
@@ -5065,7 +5065,7 @@ Positive marginal utility therefore does not force average satisfaction to be ri
 Whenever $0<U^{\\prime}<A$, total utility still rises while average utility falls — positive marginal utility with declining average.
 
 Matching the claim against that reasoning confirms the verdict is False once the right derivative (or the right expand-or-not comparison) is in view. So the statement is False.`
-    ]
+    ],
     difficulty_level: "4/5",
     sort_order: 58,
     solution_overview: `Total utility $U(x)$ and average utility
@@ -5087,7 +5087,7 @@ so an interior maximum of $A$ requires $A^{\\prime}=0$, hence $U^{\\prime}(x)=A(
       "From $C$ alone one can compute marginal profit $P'(Q)$.",
       "Without a revenue function, the comparison \"$R'(Q)$ versus $C'(Q)$\" cannot be carried out numerically.",
       "If a second analyst later supplies $R(Q)$, then marginal profit becomes $R'(Q)-C'(Q)$.",
-    ]
+    ],
     answer_key: [true, false, false, true, true],
     tactical_explanations: [
       `**A.** → True
@@ -5145,7 +5145,7 @@ Supplying $R(Q)$ later makes marginal profit available
 At that moment the usual identity $P^{\\prime}=R^{\\prime}-C^{\\prime}$ becomes available for every output where both derivatives exist.
 
 Matching the claim against that reasoning confirms the verdict is True once the right derivative (or the right expand-or-not comparison) is in view. So the statement is True.`
-    ]
+    ],
     difficulty_level: "3/5",
     sort_order: 59,
     solution_overview: `With only the cost function $C(Q)$ in hand one can differentiate to obtain marginal cost
@@ -5167,7 +5167,7 @@ can be computed, and the numerical comparison $R^{\\prime}$ versus $C^{\\prime}$
       "Near the current output, one more chair adds about $7$ euros of profit.",
       "Because profit is already positive at the rate of $7$ euros per chair, total profit must equal $7$ euros.",
       "If the workshop instead faced $R'(Q)=11$ and $C'(Q)=18$ at some other output, a small expansion there would reduce profit.",
-    ]
+    ],
     answer_key: [true, true, true, false, true],
     tactical_explanations: [
       `**A.** → True
@@ -5229,7 +5229,7 @@ A negative derivative means a small expansion reduces profit
 There the expand-or-not test flips: extra cost exceeds extra revenue, so a small expansion reduces profit.
 
 Keep level-versus-slope discipline: stocks such as $C$, $R$, $P$, or $U$ are heights; marginal objects are slopes of those graphs. So the statement is True.`
-    ]
+    ],
     difficulty_level: "4/5",
     sort_order: 60,
     solution_overview: `At the current output the workshop posts
@@ -5253,7 +5253,7 @@ so a small expansion would reduce profit. Consistency requires $P^{\\prime}=R^{\
       "Because $P_B(10)>P_A(10)$, bakery B should expand and bakery A should not.",
       "A small extra cake raises A's profit by about $3$ euros and lowers B's profit by about $2$ euros.",
       "The higher profit level at B already tells you that B's marginal profit is larger."
-    ]
+    ],
     answer_key: [true, true, false, true, false],
     tactical_explanations: [
       `**A.** → True
@@ -5335,7 +5335,7 @@ A large positive stock can sit on a downward slope, and knowing only that $P_B(1
 Here the larger stock belongs to the bakery with the worse (negative) marginal profit — level and slope disagree.
 
 Matching the claim against that reasoning confirms the verdict is False once the right derivative (or the right expand-or-not comparison) is in view. So the statement is False.`
-    ]
+    ],
     difficulty_level: "4/5",
     sort_order: 61,
     solution_overview: `Both bakeries sold $Q=10$ cakes, but their slopes differ. At A,
@@ -5357,7 +5357,7 @@ with stock $P_B(10)=90$. So a small extra cake raises A's profit by about $3$ eu
       "Just above $50$, overtime still leaves $R'(Q)>C'(Q)$.",
       "At $Q=40$, a small expansion raises profit.",
       "Average cost $\\dfrac{C(Q)}{Q}$ equals $12$ for every $Q>50$."
-    ]
+    ],
     answer_key: [true, true, false, true, false],
     tactical_explanations: [
       `**A.** → True
@@ -5437,7 +5437,7 @@ $$\\dfrac{C(Q)}{Q}=20-\\dfrac{400}{Q}$$
 The term $\\dfrac{400}{Q}$ shrinks as $Q$ grows, and average cost approaches $20$ from below and equals $12$ only at the isolated handover $Q=50$, not for every overtime output
 
 As $Q\\to\\infty$ average cost approaches $20$ from below; it equals $12$ only at the handover $Q=50$, not throughout overtime. So the statement is False.`
-    ]
+    ],
     difficulty_level: "5/5",
     sort_order: 62,
     solution_overview: `Regular-crew cost is $C(Q)=12Q$ for $Q\\le 50$, so
@@ -5462,7 +5462,7 @@ $$A(Q)=\\dfrac{C(Q)}{Q}=\\dfrac{600+20(Q-50)}{Q}=20-\\dfrac{400}{Q}\\neq 12.$$ R
       "The passer-by's claim that $p(Q)$ equals marginal revenue is guaranteed by the posted numbers.",
       "The posted $P'(Q)=4$ is not the same information as the current profit level $P(Q)$.",
       "If instead the kiosk had posted $P'(Q)=-4$ with the same $C'(Q)=11$, implied $R'(Q)$ would be $7$."
-    ]
+    ],
     answer_key: [true, true, false, true, true],
     tactical_explanations: [
       `**A.** → True
@@ -5528,7 +5528,7 @@ The implied marginal revenue would be $7$
 The same rearrangement $R^{\\prime}=P^{\\prime}+C^{\\prime}$ works for any posted pair; only the arithmetic changes.
 
 Matching the claim against that reasoning confirms the verdict is True once the right derivative (or the right expand-or-not comparison) is in view. So the statement is True.`
-    ]
+    ],
     difficulty_level: "4/5",
     sort_order: 63,
     solution_overview: `The whiteboard posts $P^{\\prime}(Q)=4$ and $C^{\\prime}(Q)=11$. Rearranging
@@ -5551,7 +5551,7 @@ $$R^{\\prime}=-4+11=7.$$ From $P^{\\prime}=4$ and $C^{\\prime}=11$ recover $R^{\
       "Cinema A should expand a little, because its price $12$ exceeds marginal cost $8$.",
       "Cinema B should expand a little, because $R_B'(Q_B)>C_B'(Q_B)$.",
       "The comparison $p_A>p_B$ already decides which cinema has the larger marginal profit."
-    ]
+    ],
     answer_key: [true, true, false, true, false],
     tactical_explanations: [
       `**A.** → True
@@ -5637,7 +5637,7 @@ A has the higher price but the lower (in fact negative) marginal profit, and $p_
 A has the higher price but the lower marginal profit ($-1$ versus $+2$); price rankings do not decide $P^{\\prime}$ rankings.
 
 Matching the claim against that reasoning confirms the verdict is False once the right derivative (or the right expand-or-not comparison) is in view. So the statement is False.`
-    ]
+    ],
     difficulty_level: "4/5",
     sort_order: 64,
     solution_overview: `Both cinemas face $C^{\\prime}=8$, but their extra-ticket revenues differ from their posted prices. Cinema A has
@@ -5663,7 +5663,7 @@ So B should expand a little while A should not. Comparing posted prices $p_A>p_B
       "At $Q=12$, a small extra drink raises profit.",
       "At $Q=25$, post-promotion revenue still beats cost at the margin.",
       "Because the first $20$ drinks each bring in $15$ euros, the extra drink at $Q=25$ also brings in $15$ euros."
-    ]
+    ],
     answer_key: [true, true, true, false, false],
     tactical_explanations: [
       `**A.** → True
@@ -5735,7 +5735,7 @@ At $Q=25$ the manager's post-promotion rule already gives $R^{\\prime}(25)=8$, n
 Piecewise schedules require reading the piece that contains the named output; $Q=25$ sits on the $8$-euro piece.
 
 Matching the claim against that reasoning confirms the verdict is False once the right derivative (or the right expand-or-not comparison) is in view. So the statement is False.`
-    ]
+    ],
     difficulty_level: "5/5",
     sort_order: 65,
     solution_overview: `Happy-hour revenue is $R(Q)=15Q$ for $Q\\le 20$, so
@@ -5759,7 +5759,7 @@ while at $Q=25$ one has $P^{\\prime}=8-10=-2<0$, so post-promotion revenue no lo
       "The advice tells you the current profit level $P(Q)$.",
       "The advice tells you the average cost $\\dfrac{C(Q)}{Q}$.",
       "If a second adviser, at the same $Q$, claimed $R'(Q)=11$, that second claim would contradict the first."
-    ]
+    ],
     answer_key: [true, true, false, false, true],
     tactical_explanations: [
       `**A.** → True
@@ -5807,7 +5807,7 @@ A second claim $R^{\\prime}(Q)=11$ at the same $Q$ would violate that inequality
 Claiming $R^{\\prime}=11$ would force $P^{\\prime}=11-14=-3<0$, contradicting the consultant's expand advice.
 
 Matching the claim against that reasoning confirms the verdict is True once the right derivative (or the right expand-or-not comparison) is in view. So the statement is True.`
-    ]
+    ],
     difficulty_level: "4/5",
     sort_order: 66,
     solution_overview: `The consultant's sentence — a small increase in production would raise profit — means
@@ -5829,7 +5829,7 @@ The advice constrains the slope of profit, not the stock $P(Q)$ and not the aver
       "The firm should prefer Plant 1 for that extra unit because Plant 1 has the lower marginal cost.",
       "Because both plants belong to one firm, the two marginal costs must be equal.",
       "If the extra unit's revenue were instead $R'=8$, then neither plant should produce it."
-    ]
+    ],
     answer_key: [true, false, true, false, true],
     tactical_explanations: [
       `**A.** → True
@@ -5893,7 +5893,7 @@ Neither plant should produce the extra unit
 When $R'=8$ lies below both plants' marginal costs, the expand-or-not test fails everywhere and the unit should not be produced.
 
 Matching the claim against that reasoning confirms the verdict is True once the right derivative (or the right expand-or-not comparison) is in view. So the statement is True.`
-    ]
+    ],
     difficulty_level: "5/5",
     sort_order: 67,
     solution_overview: `The extra sale adds $R'=11$ euros whichever plant produces it. Plant 1 has $C_1^{\\prime}=9$, so
@@ -5916,7 +5916,7 @@ $$8-9<0,\\qquad 8-13<0.$$ Common $R'=11$: Plant 1 ($C'=9$) raises profit, Plant 
       "At $y=1500$, the average tax rate equals $\\dfrac{2}{5}$.",
       "At $y=1500$, about $40$ cents of a small extra euro of income is taxed away.",
       "Knowing only the average tax rate at $y=1500$ is enough to recover the second-bracket slope."
-    ]
+    ],
     answer_key: [true, true, false, true, false],
     tactical_explanations: [
       `**A.** → True
@@ -5986,7 +5986,7 @@ It does not by itself recover the second-bracket slope $\\dfrac{2}{5}$; many sch
 The average $4/15$ is compatible with many local slopes; recovering $2/5$ needs the bracket formula, not the average alone.
 
 Matching the claim against that reasoning confirms the verdict is False once the right derivative (or the right expand-or-not comparison) is in view. So the statement is False.`
-    ]
+    ],
     difficulty_level: "5/5",
     sort_order: 68,
     solution_overview: `The first bracket is $T(y)=\\dfrac{1}{5}y$ for $y\\le 1000$, so
@@ -6010,7 +6010,7 @@ while about $40$ cents of a small extra euro is taxed away by the slope $\\dfrac
       "The reports already imply $P'(Q)>0$.",
       "Marginal cost could still exceed marginal revenue even while average cost is falling.",
       "Differentiating $A(Q)$ would produce marginal cost."
-    ]
+    ],
     answer_key: [true, false, false, true, false],
     tactical_explanations: [
       `**A.** → True
@@ -6056,7 +6056,7 @@ Marginal cost is $C^{\\prime}(Q)$, a different object, and differentiating $A$ d
 The object $A^{\\prime}$ describes how average cost moves; marginal cost remains the separate derivative $C^{\\prime}$.
 
 Matching the claim against that reasoning confirms the verdict is False once the right derivative (or the right expand-or-not comparison) is in view. So the statement is False.`
-    ]
+    ],
     difficulty_level: "4/5",
     sort_order: 69,
     solution_overview: `Average cost is currently $A(Q)=12$ and falling. Differentiating $A=\\dfrac{C}{Q}$ yields
@@ -6078,7 +6078,7 @@ Sales reports $R^{\\prime}(Q)=10$. That upper bound on $C^{\\prime}$ does not fo
       "At $Q=25$, South's profit is locally decreasing.",
       "Because South's $P_S'(Q)$ depends on $Q$ while North's does not, South must currently earn less total profit.",
       "North's extra unit always adds $12$ euros of profit; that fact uses $R_N'(Q)-C_N'(Q)$, not the intercept $40$."
-    ]
+    ],
     answer_key: [true, true, true, false, true],
     tactical_explanations: [
       `**A.** → True
@@ -6156,7 +6156,7 @@ The fixed intercept $40$ in cost drops out upon differentiation, and the extra-u
 Fixed costs shift profit levels but cancel in every marginal comparison — a recurring theme in these stems.
 
 Matching the claim against that reasoning confirms the verdict is True once the right derivative (or the right expand-or-not comparison) is in view. So the statement is True.`
-    ]
+    ],
     difficulty_level: "4/5",
     sort_order: 70,
     solution_overview: `North posts $R_N(Q)=30Q$ and $C_N(Q)=18Q+40$, so
@@ -6178,7 +6178,7 @@ At $Q=15$ one has $P_S^{\\prime}(15)=5>0$ (profit still locally increasing), whi
       "For $x>8$, marginal utility is $0$.",
       "Because $U(8)=48$, the eighth hour must have added $48$ units of utility.",
       "Average utility $\\dfrac{U(x)}{x}$ at $x=12$ equals $4$."
-    ]
+    ],
     answer_key: [true, true, true, false, true],
     tactical_explanations: [
       `**A.** → True
@@ -6256,7 +6256,7 @@ Average utility at $x=12$ equals $4$
 Once utility has flattened, stretching leisure to $12$ hours dilutes the same $48$ utils over more hours, giving average $4$.
 
 Matching the claim against that reasoning confirms the verdict is True once the right derivative (or the right expand-or-not comparison) is in view. So the statement is True.`
-    ]
+    ],
     difficulty_level: "5/5",
     sort_order: 71,
     solution_overview: `For $0\\le x\\le 8$ utility is $U(x)=10x-\\dfrac{1}{2}x^{2}$, so
@@ -6279,7 +6279,7 @@ $$\\dfrac{U(12)}{12}=\\dfrac{48}{12}=4.$$ For $x<8$, $U^{\\prime}=10-x>0$ at $x=
       "The second printer's marginal profit is $0$.",
       "Both printers have the same extra-revenue figure, so they have the same extra-profit figure.",
       "The first printer's current total profit $P(Q)$ must equal $-3$."
-    ]
+    ],
     answer_key: [true, false, true, false, false],
     tactical_explanations: [
       `**A.** → True
@@ -6345,7 +6345,7 @@ The stock $P(Q)$ is a separate number and need not equal $-3$; confusing the slo
 A printer could be earning a large positive profit while sitting on a mildly negative slope of $-3$ — rate $\\neq$ level.
 
 Matching the claim against that reasoning confirms the verdict is False once the right derivative (or the right expand-or-not comparison) is in view. So the statement is False.`
-    ]
+    ],
     difficulty_level: "4/5",
     sort_order: 72,
     solution_overview: `Both shops face $R^{\\prime}(Q)=16$. The first also posts $P^{\\prime}(Q)=-3$, so rearranging $P^{\\prime}=R^{\\prime}-C^{\\prime}$ recovers
@@ -6367,7 +6367,7 @@ Same extra-revenue figure does not force the same extra-profit figure, and the f
       "After the tax, a small expansion raises profit.",
       "The tax changes which function must be differentiated for the extra-cost side: the new cost $\\widetilde{C}$, not the old $C$.",
       "Because revenue is unchanged, marginal revenue is still $14$ after the tax."
-    ]
+    ],
     answer_key: [true, true, false, true, true],
     tactical_explanations: [
       `**A.** → True
@@ -6453,7 +6453,7 @@ still after the tax
 Only the cost side of the ledger changed; the revenue schedule and its derivative are untouched by the tax.
 
 Keep level-versus-slope discipline: stocks such as $C$, $R$, $P$, or $U$ are heights; marginal objects are slopes of those graphs. So the statement is True.`
-    ]
+    ],
     difficulty_level: "4/5",
     sort_order: 73,
     solution_overview: `Before the tax one has $R^{\\prime}=14$ and $C^{\\prime}=10$, so
@@ -6479,7 +6479,7 @@ so a small expansion no longer raises profit. The extra-cost side must now diffe
       "At $Q=12$, a small expansion raises profit.",
       "At $Q=35$, clearance pricing still leaves $R'(Q)>C'(Q)$.",
       "At $Q=12$, extra revenue equals the posted price $p(12)=28$."
-    ]
+    ],
     answer_key: [true, true, true, false, false],
     tactical_explanations: [
       `**A.** → True
@@ -6577,7 +6577,7 @@ Those are different numbers: under a downward-sloping price, $R^{\\prime}\\neq p
 The gap $28-16=12$ equals $-Q\\,p^{\\prime}(Q)$ at $Q=12$ with $p^{\\prime}=-1$ — the usual MR-versus-price wedge.
 
 Matching the claim against that reasoning confirms the verdict is False once the right derivative (or the right expand-or-not comparison) is in view. So the statement is False.`
-    ]
+    ],
     difficulty_level: "5/5",
     sort_order: 74,
     solution_overview: `While $Q\\le 30$ the price is $p(Q)=40-Q$, so
@@ -6601,7 +6601,7 @@ so a small expansion raises profit. At $Q=35$, clearance gives $R^{\\prime}=10<1
       "Firm B is cheaper per unit on average, so B should produce the extra unit and A should not.",
       "Only firm A has $R'>C'$ here.",
       "The extra unit adds about $2$ euros of profit at A and subtracts about $2$ euros at B."
-    ]
+    ],
     answer_key: [true, true, false, true, true],
     tactical_explanations: [
       `**A.** → True
@@ -6681,7 +6681,7 @@ The extra unit adds about $2$ euros of profit at A and subtracts about $2$ euros
 Those $\\pm 2$ figures are exactly $R'-C'$ at each firm — the one-unit profit consequences of taking the delivery.
 
 Matching the claim against that reasoning confirms the verdict is True once the right derivative (or the right expand-or-not comparison) is in view. So the statement is True.`
-    ]
+    ],
     difficulty_level: "4/5",
     sort_order: 75,
     solution_overview: `Both firms face $R'=7$. Average-cost movement is read from $C^{\\prime}$ versus $A$: Firm A has $C_A^{\\prime}=5<A_A=8$, so $A_A$ is falling; Firm B has $C_B^{\\prime}=9>A_B=6$, so $A_B$ is rising. The extra-unit test uses $R'$ versus $C^{\\prime}$, not average cost:
@@ -6701,7 +6701,7 @@ Only A has $R'>C'$. Being cheaper on average does not decide who should take the
       "Studio A's $P_A'(Q)=0$ means A earns nothing.",
       "Studio B should expand a little; studio A's first-order condition is already $R_A'(Q)=C_A'(Q)$.",
       "Because B's current profit is $0$, B cannot have a positive marginal profit."
-    ]
+    ],
     answer_key: [true, true, false, true, false],
     tactical_explanations: [
       `**A.** → True
@@ -6749,7 +6749,7 @@ Current break-even does not forbid a positive marginal profit
 Break-even constrains the height $P$, not the slope $P^{\\prime}$; B is the textbook counterexample.
 
 Matching the claim against that reasoning confirms the verdict is False once the right derivative (or the right expand-or-not comparison) is in view. So the statement is False.`
-    ]
+    ],
     difficulty_level: "4/5",
     sort_order: 76,
     solution_overview: `Studio A reports stock $P_A(Q)=50$ with slope $P_A^{\\prime}(Q)=0$, hence
@@ -6769,7 +6769,7 @@ and a tiny output change leaves profit locally unchanged even though the firm is
       "A small extra sale raises profit on a weekday.",
       "Because weekend revenue is still $R'(Q)=15$, weekend marginal profit equals the weekday figure $3$.",
       "The weekday-versus-weekend switch changes the cost function that must be differentiated, not the meaning of $R'(Q)$."
-    ]
+    ],
     answer_key: [true, true, true, false, true],
     tactical_explanations: [
       `**A.** → True
@@ -6845,7 +6845,7 @@ What changes is which cost schedule supplies $C^{\\prime}(Q)$: the weekday rule 
 Marginal revenue keeps the same economic meaning — extra euros from one more sale — on both kinds of day.
 
 Matching the claim against that reasoning confirms the verdict is True once the right derivative (or the right expand-or-not comparison) is in view. So the statement is True.`
-    ]
+    ],
     difficulty_level: "4/5",
     sort_order: 77,
     solution_overview: `Weekday cost is $C_{\\mathrm{wd}}(Q)=12Q$, so
@@ -6871,7 +6871,7 @@ The weekday-versus-weekend switch changes which cost function is differentiated;
       "Shop M does not satisfy the reviewer's sentence.",
       "A small expansion raises profit at Shop M and lowers profit at Shop L.",
       "Because both shops have the same $R'(Q)$, they have the same extra-cost figure."
-    ]
+    ],
     answer_key: [true, true, true, true, false],
     tactical_explanations: [
       `**A.** → True
@@ -6933,7 +6933,7 @@ Same extra revenue does not force the same extra cost
 Shared $R^{\\prime}=9$ with $C_L^{\\prime}=13$ versus $C_M^{\\prime}=6$ is enough to see the extra-cost figures differ.
 
 Matching the claim against that reasoning confirms the verdict is False once the right derivative (or the right expand-or-not comparison) is in view. So the statement is False.`
-    ]
+    ],
     difficulty_level: "5/5",
     sort_order: 78,
     solution_overview: `The reviewer's sentence about Shop L means
@@ -6957,7 +6957,7 @@ so a small expansion raises profit at M and lowers it at L. Same $R^{\\prime}$ d
       "For $Q>30$, $P'(Q)=-4$.",
       "Just above $Q=30$, a small expansion raises profit.",
       "$P(30)=150$, so the firm earns $150$ euros of extra profit from the thirtieth unit."
-    ]
+    ],
     answer_key: [true, true, true, false, false],
     tactical_explanations: [
       `**A.** → True
@@ -7037,7 +7037,7 @@ The thirtieth unit adds about $2$ euros of profit, not $150$
 The stock $P(30)=150$ accumulates all infra-capacity profit; the thirtieth unit's contribution is the marginal figure near $2$.
 
 Matching the claim against that reasoning confirms the verdict is False once the right derivative (or the right expand-or-not comparison) is in view. So the statement is False.`
-    ]
+    ],
     difficulty_level: "5/5",
     sort_order: 79,
     solution_overview: `Below capacity, $P(Q)=8Q-\\dfrac{1}{10}Q^{2}$, so
@@ -7061,7 +7061,7 @@ so just above $Q=30$ a small expansion lowers profit. The level $P(30)=150$ is t
       "A small extra item raises profit at the café and lowers profit at the kiosk.",
       "Because both have the same $R'(40)$ and the same $Q$, they must have the same $C'(40)$.",
       "The café's report $P'(40)=1$ already equals its profit level $P(40)$."
-    ]
+    ],
     answer_key: [true, true, true, false, false],
     tactical_explanations: [
       `**A.** → True
@@ -7125,7 +7125,7 @@ The height $P(40)$ of today's profit was never posted and need not equal $1$
 A rate of $+1$ euro of profit per extra item is compatible with any profit stock — the café never posted $P(40)$.
 
 Keep level-versus-slope discipline: stocks such as $C$, $R$, $P$, or $U$ are heights; marginal objects are slopes of those graphs. So the statement is False.`
-    ]
+    ],
     difficulty_level: "5/5",
     sort_order: 80,
     solution_overview: `Both outlets sold $Q=40$ with the same $R^{\\prime}(40)=3$. The café also posts $P^{\\prime}(40)=1$, so
@@ -7147,7 +7147,7 @@ A small extra item therefore raises profit at the café ($P^{\\prime}=1>0$) and 
       "At six lamps a day the profit curve bends strictly downward, so that output is a local profit peak.",
       "At six lamps a day, daily profit equals $16$ euros.",
       "Because the slope is flat at six lamps, the profit level itself must be zero there."
-    ]
+    ],
     answer_key: [true, true, true, true, false],
     tactical_explanations: [
       `**A.** → True
@@ -7209,7 +7209,7 @@ A flat slope describes how profit *changes* at that output, not how large profit
 $$P(6)=16\\neq 0.$$
 
 Zero slope does not force zero profit — confusing the derivative with the function itself is the trap —. Comparing that with the claim, the statement is False.`
-    ]
+    ],
     difficulty_level: "2/5",
     sort_order: 81,
     solution_overview: `Daily profit is the concrete quadratic
@@ -7239,7 +7239,7 @@ so six lamps yield $16$ euros of daily profit. A zero slope never forces the pro
       "Profit has a flat slope at six lunch boxes a day.",
       "At six lunch boxes, marginal revenue and marginal cost both equal $18$ euros.",
       "Because profit's slope is flat at six boxes, the café's profit level equals its cost level there."
-    ]
+    ],
     answer_key: [true, true, true, true, false],
     tactical_explanations: [
       `**A.** → True
@@ -7331,7 +7331,7 @@ C(6) = 112.
 $$
 
 The levels $32$ and $112$ differ sharply. Confusing a zero *derivative* of profit with equal *levels* of profit and cost is the trap. Comparing that with the claim, the statement is False.`
-    ]
+    ],
     difficulty_level: "3/5",
     sort_order: 82,
     solution_overview: `Revenue and cost are given separately, so daily profit is their difference:
@@ -7361,7 +7361,7 @@ and the bend $P''=-4<0$ confirms a local profit peak. The *levels* at six boxes 
       "The trough cost value is $15$ (hundreds of euros).",
       "Because the slope of cost is flat at five vans, that fleet size must be a local cost peak.",
       "On $Q\\ge 0$, the global cost minimum is also at five vans."
-    ]
+    ],
     answer_key: [true, true, true, false, true],
     tactical_explanations: [
       `**A.** → True
@@ -7417,7 +7417,7 @@ so five vans is a local *minimum* of cost, not a local maximum. Claiming a local
 Global comparison on a restricted domain needs every candidate value — interior critical points and endpoints — not just the first flat-slope output you meet.
 
 On $Q\\ge 0$ the parabola opens upward ($C''=2>0$) with its vertex at $Q=5\\ge 0$. For an upward-opening parabola the vertex is the global minimum on the whole real line, hence also on the restricted domain $Q\\ge 0$. The local trough is therefore also the global cost minimum: the cost-minimising fleet is five vans globally as well as locally, so the statement is True.`
-    ]
+    ],
     difficulty_level: "2/5",
     sort_order: 83,
     solution_overview: `Daily operating cost is the upward-opening parabola
@@ -7447,7 +7447,7 @@ and since the parabola opens upward with its vertex already inside $Q\\ge 0$, th
       "Even so, intensity zero is a strict local trough of score $A$.",
       "Even so, intensity zero is a strict local peak of score $B$.",
       "Because both second derivatives vanish at zero, neither score can have a local peak or trough there."
-    ]
+    ],
     answer_key: [true, true, true, true, false],
     tactical_explanations: [
       `**A.** → True
@@ -7507,7 +7507,7 @@ Nearby values sit strictly below the value at zero, so intensity zero is a stric
 The wording sounds close to a standard optimisation rule, but it skips a classification step or confuses a level with a slope. Track the definitions carefully.
 
 Vanishing of the second derivative only makes the *usual bend test* inconclusive; it does not forbid a peak or trough. The fourth-power comparisons already show a trough for $A$ and a peak for $B$ at zero. Claiming that neither score can have a local extremum there confuses “test inconclusive” with “no extremum exists,”. Comparing that with the claim, the statement is False.`
-    ]
+    ],
     difficulty_level: "4/5",
     sort_order: 84,
     solution_overview: `The two campaign scores near intensity zero are pure fourth powers of opposite sign:
@@ -7539,7 +7539,7 @@ so zero is a strict local trough of $A$ and a strict local peak of $B$. Vanishin
       "Café B's profit curve bends upward at ten covers, so that output is a local profit trough for B.",
       "Because both cafés have a flat slope at ten covers, both are maximising profit there.",
       "At ten covers, Café A's profit is $50$ euros while Café B's profit is $-10$ euros."
-    ]
+    ],
     answer_key: [true, true, true, false, true],
     tactical_explanations: [
       `**A.** → True
@@ -7603,7 +7603,7 @@ $$
 Café A's profit is $50$ euros and Café B's is $-10$ euros, matching the claim exactly
 
 An interior candidate for a smooth extremum must make the first derivative vanish; that flat-slope equation only produces candidates, not finished labels. So the statement is True.`
-    ]
+    ],
     difficulty_level: "4/5",
     sort_order: 85,
     solution_overview: `Two cafés share the output $Q=10$ but run opposite profit shapes:
@@ -7635,7 +7635,7 @@ so flat slope alone does not mean both cafés are maximising profit.`,
       "The profit values are $14$ at one pack, $10$ at three packs, $10$ at zero packs, and $30$ at five packs.",
       "On the full interval $[0,5]$, the global profit maximum is at the local peak of one pack.",
       "On $[0,5]$, the global profit maximum is at the endpoint of five packs."
-    ]
+    ],
     answer_key: [true, true, true, false, true],
     tactical_explanations: [
       `**A.** → True
@@ -7711,7 +7711,7 @@ Global comparison on a restricted domain needs every candidate value — interio
 Among $P(0)=10$, $P(1)=14$, $P(3)=10$, and $P(5)=30$, the largest value is $30$ at five packs. That endpoint is therefore the global profit maximum on $[0,5]$. The local peak at one pack loses the global comparison
 
 Pause on the classification step: $f''<0$ at a critical point marks a local peak, $f''>0$ marks a local trough, and $f''=0$ makes the usual bend test inconclusive. So the statement is True.`
-    ]
+    ],
     difficulty_level: "3/5",
     sort_order: 86,
     solution_overview: `Festival profit on the closed pack interval $[0,5]$ is the cubic
@@ -7741,7 +7741,7 @@ shows the global maximum on $[0,5]$ is the endpoint $Q=5$, not the local peak at
       "Because profit is strictly increasing on $[0,8]$, the maximum is at eight units and the minimum at zero.",
       "At the maximum output of eight units one must have a flat profit slope.",
       "The maximal profit on the interval is $36.6$ euros."
-    ]
+    ],
     answer_key: [true, true, true, false, true],
     tactical_explanations: [
       `**A.** → True
@@ -7819,7 +7819,7 @@ $$
 Maximal profit on the interval is $36.6$ euros, matching the claim
 
 Pause on the classification step: $f''<0$ at a critical point marks a local peak, $f''>0$ marks a local trough, and $f''=0$ makes the usual bend test inconclusive. So the statement is True.`
-    ]
+    ],
     difficulty_level: "3/5",
     sort_order: 87,
     solution_overview: `The stall's profit on the closed interval $[0,8]$ is
@@ -7849,7 +7849,7 @@ Endpoint maxima need not be critical points.`,
       "A sign chart shows a change from negative to positive at intensity $3$, so that point is a local trough.",
       "The second-derivative bend test confirms the same local peak at $1$ and local trough at $3$.",
       "Because intensity $1$ is a local peak, it must also be the global maximum of net benefit on $[0,\\infty)$."
-    ]
+    ],
     answer_key: [true, true, true, true, false],
     tactical_explanations: [
       `**A.** → True
@@ -7907,7 +7907,7 @@ An interior candidate for a smooth extremum must make the first derivative vanis
 Global comparison on a restricted domain needs every candidate value — interior critical points and endpoints — not just the first flat-slope output you meet.
 
 A local peak need not be global on $[0,\\infty)$. As $x\\to\\infty$, the leading term $x^{3}$ drives $B(x)\\to\\infty$, so values beyond the local trough eventually exceed $B(1)$. Intensity $1$ is only a local peak — the unbounded domain lets benefit grow without bound afterward — so it is not the global maximum. Comparing that with the claim, the statement is False.`
-    ]
+    ],
     difficulty_level: "4/5",
     sort_order: 88,
     solution_overview: `Weekly net benefit for advertising intensity $x\\ge 0$ is the cubic
@@ -7933,7 +7933,7 @@ Flat slopes sit at $x=1$ and $x=3$. The sign chart of $B'$ changes from positive
       "Four ovens is a local profit peak.",
       "Comparing all candidate and endpoint values, the global profit maximum on $[0,6]$ is at zero ovens.",
       "Finding the flat-slope outputs alone already proves which point maximises profit on $[0,6]$."
-    ]
+    ],
     answer_key: [true, true, true, true, false],
     tactical_explanations: [
       `**A.** → True
@@ -8023,7 +8023,7 @@ The largest value on $[0,6]$ is $P(0)=30$, so the global maximum is at zero oven
 The wording sounds close to a standard optimisation rule, but it skips a classification step or confuses a level with a slope. Track the definitions carefully.
 
 Listing the flat-slope outputs $Q=2$ and $Q=4$ only produces *candidates*. Without comparing their profit values to the endpoints — and without classifying peak versus trough — one cannot prove which point maximises profit on the closed interval. Here the endpoint $Q=0$ actually wins. Stopping at the critical-point list does not finish the proof. Comparing that with the claim, the statement is False.`
-    ]
+    ],
     difficulty_level: "3/5",
     sort_order: 89,
     solution_overview: `Bakery profit on the closed oven interval $[0,6]$ is
@@ -8053,7 +8053,7 @@ shows the global maximum on $[0,6]$ is at zero ovens. Listing the flat-slope out
       "At six jobs the profit curve bends downward, so that output is a local profit peak.",
       "Peak profit is $98$ euros.",
       "Matching marginal revenue to marginal cost is enough; one may skip checking the bend of profit."
-    ]
+    ],
     answer_key: [true, true, true, true, false],
     tactical_explanations: [
       `**A.** → True
@@ -8127,7 +8127,7 @@ Pause on the classification step: $f''<0$ at a critical point marks a local peak
 The wording sounds close to a standard optimisation rule, but it skips a classification step or confuses a level with a slope. Track the definitions carefully.
 
 Matching $R'=C'$ is equivalent to $P'=0$: it only finds a critical point of profit. Without a bend check (or an equivalent first-derivative sign argument), one cannot yet label that point a peak rather than a trough or a flat inflection. Skipping the second-derivative classification leaves the maximisation unfinished. Comparing that with the claim, the statement is False.`
-    ]
+    ],
     difficulty_level: "3/5",
     sort_order: 90,
     solution_overview: `Print-shop profit is revenue minus cost:
@@ -8157,7 +8157,7 @@ Matching $R'=C'$ only finds a critical point of profit; without a bend check (or
       "At eight loaves, South's profit curve bends upward, so that output is a local profit trough for South.",
       "North's peak profit is $34$ euros, while South's profit at eight loaves is $6$ euros.",
       "Because both flat-slope outputs equal eight, both bakeries are at a profit maximum."
-    ]
+    ],
     answer_key: [true, true, true, true, false],
     tactical_explanations: [
       `**A.** → True
@@ -8223,7 +8223,7 @@ An interior candidate for a smooth extremum must make the first derivative vanis
 Flat slope finds a candidate; the bend (or a sign chart) then classifies peak versus trough. Keep those two steps separate.
 
 Both bakeries have a flat slope at eight loaves, but the bends disagree: North has a peak while South has a trough. Flat slope alone finds candidates; it does not mean both are at a profit maximum. South is locally *minimising* profit there. The claim confuses critical point with maximum. Comparing that with the claim, the statement is False.`
-    ]
+    ],
     difficulty_level: "4/5",
     sort_order: 91,
     solution_overview: `Two bakeries share the critical output $Q=8$ but run opposite profit shapes:
@@ -8255,7 +8255,7 @@ Equal flat-slope outputs do not mean both bakeries are maximising profit. Shared
       "Even so, intensity zero is a strict global maximum of the loyalty index.",
       "Because the second derivative vanishes at zero, intensity zero cannot be a local peak.",
       "A necessary condition at an interior local peak is that the second derivative is at most zero; here that necessary condition still holds."
-    ]
+    ],
     answer_key: [true, true, true, false, true],
     tactical_explanations: [
       `**A.** → True
@@ -8301,7 +8301,7 @@ Vanishing of the second derivative only makes the *usual sufficient bend test* f
 Name the objective, find where its slope is flat, then classify with the bend (or a sign chart) before matching the claim.
 
 At an interior local peak a necessary condition is $L''\\le 0$ (the curve cannot bend strictly upward there). Here $L''(0)=0$, which satisfies $L''\\le 0$. The necessary condition therefore still holds, even though the stricter sufficient test $L''<0$ fails. The claim is carefully worded and correct, so the statement is True.`
-    ]
+    ],
     difficulty_level: "4/5",
     sort_order: 92,
     solution_overview: `The loyalty index is the downward fourth-power bump
@@ -8331,7 +8331,7 @@ so zero is a strict global maximum. Vanishing of $L''$ does not forbid a peak. A
       "At seven units the profit curve bends downward, so that output is a local profit peak.",
       "The cost-minimising output of four units is automatically the profit-maximising output as well.",
       "At the profit peak, profit equals $68$ euros, while at the cost trough, cost equals $14$ euros."
-    ]
+    ],
     answer_key: [true, true, true, false, true],
     tactical_explanations: [
       `**A.** → True
@@ -8411,7 +8411,7 @@ $$
 At the profit peak, profit equals $68$ euros; at the cost trough, cost equals $14$ euros. Both figures match the claim
 
 Pause on the classification step: $f''<0$ at a critical point marks a local peak, $f''>0$ marks a local trough, and $f''=0$ makes the usual bend test inconclusive. So the statement is True.`
-    ]
+    ],
     difficulty_level: "4/5",
     sort_order: 93,
     solution_overview: `Cost and revenue are
@@ -8437,7 +8437,7 @@ Cost has slope $C'=2Q-8$ and bend $C''=2>0$, so the cost trough is at $Q=4$ with
       "At five hours, B's utility curve bends upward, so that hour minimises B's satisfaction locally.",
       "A's peak utility is $25$, while B's utility at five hours is $5$.",
       "Because both solve for a flat slope at the same hour, both are maximising satisfaction there."
-    ]
+    ],
     answer_key: [true, true, true, true, false],
     tactical_explanations: [
       `**A.** → True
@@ -8503,7 +8503,7 @@ An interior candidate for a smooth extremum must make the first derivative vanis
 The wording sounds close to a standard optimisation rule, but it skips a classification step or confuses a level with a slope. Track the definitions carefully.
 
 Both hikers solve for a flat slope at five hours, but the bends disagree: A has a peak while B has a trough. Flat slope alone finds candidates; it does not mean both are maximising satisfaction. B is locally *minimising* utility there. The claim confuses critical point with maximum. Comparing that with the claim, the statement is False.`
-    ]
+    ],
     difficulty_level: "4/5",
     sort_order: 94,
     solution_overview: `Two hikers share the critical hour $t=5$ but run opposite utility shapes:
@@ -8535,7 +8535,7 @@ Equal flat-slope hours do not mean both hikers are maximising satisfaction. Shar
       "Therefore $\\pm 2$ are local troughs and $0$ is a local peak.",
       "The local peak value is $16$, while each local trough has value $0$.",
       "Because intensity zero is a local peak, it is also the global maximum of payoff on the whole real line."
-    ]
+    ],
     answer_key: [true, true, true, true, false],
     tactical_explanations: [
       `**A.** → True
@@ -8595,7 +8595,7 @@ Pause on the classification step: $f''<0$ at a critical point marks a local peak
 Global comparison on a restricted domain needs every candidate value — interior critical points and endpoints — not just the first flat-slope output you meet.
 
 A local peak need not be global on the whole real line. As $|x|\\to\\infty$, the leading term $x^{4}$ drives $f(x)\\to\\infty$, so values far from zero eventually exceed $f(0)=16$. Intensity zero is only a local peak — the unbounded domain lets payoff grow afterward — so it is not the global maximum. Comparing that with the claim, the statement is False.`
-    ]
+    ],
     difficulty_level: "5/5",
     sort_order: 95,
     solution_overview: `Warehouse net payoff is the even quartic
@@ -8621,7 +8621,7 @@ Flat slopes sit at $x=-2$, $x=0$, and $x=2$. The bend test gives $f''(\\pm 2)=32
       "Calling six hours optimal is reasonable for a cost-minimisation goal, because the bend confirms a trough.",
       "If the clinic's goal were instead to maximise cost, the same flat-slope point would be the wrong type of extremum.",
       "A point where the slope is zero already means the clinic is cost-maximising, so no bend check is needed."
-    ]
+    ],
     answer_key: [true, true, true, true, false],
     tactical_explanations: [
       `**A.** → True
@@ -8665,7 +8665,7 @@ An interior candidate for a smooth extremum must make the first derivative vanis
 The wording sounds close to a standard optimisation rule, but it skips a classification step or confuses a level with a slope. Track the definitions carefully.
 
 A point where the slope is zero is only a critical point — it might be a peak, a trough, or neither. Here $C''(6)>0$, so six hours is a cost *minimum*, not a maximum. Claiming that zero slope already means cost-maximising, with no bend check needed, reverses the correct label and skips the classification step. Comparing that with the claim, the statement is False.`
-    ]
+    ],
     difficulty_level: "3/5",
     sort_order: 96,
     solution_overview: `Clinic staffing cost is the upward-opening parabola
@@ -8691,7 +8691,7 @@ Flat slope at $h=6$ together with $C''>0$ marks a local cost *trough*, so callin
       "For Cinema B, the second-derivative bend check is inconclusive at three screenings.",
       "A sign chart of Cinema B's slope shows no sign change at three screenings, so that output is neither a local peak nor a local trough for B.",
       "Because both have a flat slope at three screenings, both cinemas are at a profit peak."
-    ]
+    ],
     answer_key: [true, true, true, true, false],
     tactical_explanations: [
       `**A.** → True
@@ -8739,7 +8739,7 @@ for every $Q$, with equality only at $Q=3$. The slope does not change sign throu
 Flat slope finds a candidate; the bend (or a sign chart) then classifies peak versus trough. Keep those two steps separate.
 
 Both cinemas have a flat slope at three screenings, but only A has a profit peak. For B the slope does not change sign, so three screenings is not a local peak. Shared critical outputs do not mean shared extrema. Claiming both are at a profit peak overreaches. Comparing that with the claim, the statement is False.`
-    ]
+    ],
     difficulty_level: "5/5",
     sort_order: 97,
     solution_overview: `Two cinemas share the critical screening count $Q=3$ but have different shapes:
@@ -8761,7 +8761,7 @@ For A: $P_A'=-2(Q-3)$ and $P_A''=-2<0$, so $Q=3$ is a local profit peak. For B: 
       "At $x=2$ the curve bends upward, so that point is a local trough, not a peak.",
       "There is no global maximum on the real line, because $f(x)$ tends to infinity as $x$ grows without bound.",
       "Stopping after listing the flat-slope outputs already finishes a maximisation proof."
-    ]
+    ],
     answer_key: [true, true, true, true, false],
     tactical_explanations: [
       `**A.** → True
@@ -8825,7 +8825,7 @@ An interior candidate for a smooth extremum must make the first derivative vanis
 The wording sounds close to a standard optimisation rule, but it skips a classification step or confuses a level with a slope. Track the definitions carefully.
 
 Listing the flat-slope outputs only produces candidates. Without classifying peak versus trough, and without checking whether a global maximum even exists on the domain, the maximisation proof is unfinished. Here $x=2$ is a trough and no global max exists on $\\mathbb{R}$. Stopping after $f'=0$ does not finish the argument. Comparing that with the claim, the statement is False.`
-    ]
+    ],
     difficulty_level: "3/5",
     sort_order: 98,
     solution_overview: `The exam function on $\\mathbb{R}$ is
@@ -8851,7 +8851,7 @@ Flat slopes at $x=0$ and $x=2$ are only candidates. The bend test labels $x=0$ a
       "A local profit peak means: in some neighbourhood of five bikes, every other output gives strictly smaller profit than at five.",
       "Because five bikes is a local peak, the profit level there must be zero.",
       "Evaluating gives a profit of $35$ euros at five bikes."
-    ]
+    ],
     answer_key: [true, true, true, false, true],
     tactical_explanations: [
       `**A.** → True
@@ -8907,7 +8907,7 @@ $$
 Profit at five bikes is $35$ euros, matching the claim
 
 An interior candidate for a smooth extremum must make the first derivative vanish; that flat-slope equation only produces candidates, not finished labels. So the statement is True.`
-    ]
+    ],
     difficulty_level: "3/5",
     sort_order: 99,
     solution_overview: `Bike-rental profit is the downward-opening parabola
@@ -8937,7 +8937,7 @@ which is not zero — flat slope never forces zero profit. Shared workflow for e
       "The memo is correct that both flat-slope outputs are local profit maxima.",
       "West's peak profit is $29$ euros, while East's profit at five units is $15$ euros.",
       "Because the two flat-slope outputs are unequal, at most one of the two flat-slope equations can be valid."
-    ]
+    ],
     answer_key: [true, true, false, true, false],
     tactical_explanations: [
       `**A.** → True
@@ -9001,7 +9001,7 @@ An interior candidate for a smooth extremum must make the first derivative vanis
 The wording sounds close to a standard optimisation rule, but it skips a classification step or confuses a level with a slope. Track the definitions carefully.
 
 Each plant has its own profit function and its own derivative. West's equation $P_W'=0$ and East's equation $P_E'=0$ are independent; they can (and do) have different roots without either equation being invalid. Unequal flat-slope outputs do not cast doubt on either calculation. The claim is a non sequitur. Comparing that with the claim, the statement is False.`
-    ]
+    ],
     difficulty_level: "5/5",
     sort_order: 100,
     solution_overview: `Two plants have different profit shapes and different critical outputs:
@@ -9023,7 +9023,7 @@ West: $P_W'=-2Q+14$ vanishes at $Q=7$, and $P_W''=-2<0$, so seven is a local pro
       "At nine crates the profit curve bends downward, so that output is a local profit peak.",
       "Peak daily profit is $36$ euros.",
       "Because the slope of profit is flat at nine crates, the profit level itself must be zero there."
-    ]
+    ],
     answer_key: [true, true, true, true, false],
     tactical_explanations: [
       `**A.** → True
@@ -9089,7 +9089,7 @@ A flat slope describes how profit *changes* at nine crates, not how large profit
 $$P(9)=36\\neq 0.$$
 
 Zero slope does not force zero profit. Comparing that with the claim, the statement is False.`
-    ]
+    ],
     difficulty_level: "2/5",
     sort_order: 101,
     solution_overview: `Farm-shop profit is the downward-opening parabola
@@ -9119,7 +9119,7 @@ A zero slope never forces the profit level itself to be zero — slope and heigh
       "At ten boxes, marginal revenue and marginal cost both equal $30$ euros.",
       "At ten boxes the profit curve bends downward, so that output is a local profit peak, and peak profit is $180$ euros.",
       "Because marginal revenue equals marginal cost at ten boxes, the stall's revenue level equals its cost level there."
-    ]
+    ],
     answer_key: [true, true, true, true, false],
     tactical_explanations: [
       `**A.** → True
@@ -9195,7 +9195,7 @@ Matching $R'=C'$ means the *derivatives* agree, not the *levels*. At ten boxes,
 $$R(10)=500-100=400,\\qquad C(10)=100+100+20=220,$$
 
 so revenue and cost differ (profit is their gap $180$). Confusing equal marginals with equal levels is the trap. Comparing that with the claim, the statement is False.`
-    ]
+    ],
     difficulty_level: "3/5",
     sort_order: 102,
     solution_overview: `Market-stall profit is revenue minus cost:
@@ -9225,7 +9225,7 @@ Matching $R'=C'$ only finds a critical point; it does not force the *levels* $R$
       "Peak profits are $64$ euros for truck A and $68$ euros for truck B.",
       "Because both trucks have a local profit peak, they must share the same optimal quantity.",
       "Truck B's peak profit is larger than truck A's, even though B's optimal quantity is smaller."
-    ]
+    ],
     answer_key: [true, true, true, false, true],
     tactical_explanations: [
       `**A.** → True
@@ -9295,7 +9295,7 @@ Name the objective, find where its slope is flat, then classify with the bend (o
 Comparing the peak levels already computed, $P_B(8)=68>P_A(12)=64$. Truck B's peak profit is larger even though B's optimal meal count $8$ is smaller than A's $12$. Peak height and peak location are independent comparisons
 
 An interior candidate for a smooth extremum must make the first derivative vanish; that flat-slope equation only produces candidates, not finished labels. So the statement is True.`
-    ]
+    ],
     difficulty_level: "4/5",
     sort_order: 103,
     solution_overview: `Two food trucks have separate profit rules:
@@ -9317,7 +9317,7 @@ Truck A: $P_A'=-2Q+24$ vanishes at $Q=12$, and $P_A''=-2<0$, so twelve is a loca
       "Therefore two batches is a local cost peak and four batches is a local cost trough.",
       "The local trough cost value is $21$ (hundreds of euros).",
       "Because the slope of cost is flat at two batches, that output minimises cost."
-    ]
+    ],
     answer_key: [true, true, true, true, false],
     tactical_explanations: [
       `**A.** → True
@@ -9383,7 +9383,7 @@ An interior candidate for a smooth extremum must make the first derivative vanis
 The wording sounds close to a standard optimisation rule, but it skips a classification step or confuses a level with a slope. Track the definitions carefully.
 
 At two batches the slope is flat, but the bend is downward ($C''(2)<0$), so that output is a local cost *peak*, not a minimum. The cost-minimising local candidate is the trough at four batches. Claiming that flat slope at two batches minimises cost reverses the correct label. Comparing that with the claim, the statement is False.`
-    ]
+    ],
     difficulty_level: "3/5",
     sort_order: 104,
     solution_overview: `Weekly cost is the cubic
@@ -9413,7 +9413,7 @@ A flat slope at two batches marks a local cost peak, not a minimum — bend clas
       "Endpoint costs are $40$ at zero shifts and $24$ at eight shifts, while cost at five shifts is $15$.",
       "On $[0,8]$, the global cost minimum is at the endpoint of eight shifts.",
       "On $[0,8]$, the global cost minimum is at the interior trough of five shifts."
-    ]
+    ],
     answer_key: [true, true, true, false, true],
     tactical_explanations: [
       `**A.** → True
@@ -9477,7 +9477,7 @@ Global comparison on a restricted domain needs every candidate value — interio
 Among $C(0)=40$, $C(5)=15$, and $C(8)=24$, the minimum is $15$ at the interior trough. On $[0,8]$ the global cost minimum is therefore at five shifts. The local trough wins the global comparison against both endpoints
 
 Pause on the classification step: $f''<0$ at a critical point marks a local peak, $f''>0$ marks a local trough, and $f''=0$ makes the usual bend test inconclusive. So the statement is True.`
-    ]
+    ],
     difficulty_level: "3/5",
     sort_order: 105,
     solution_overview: `Delivery cost on the closed shift interval $[0,8]$ is
@@ -9503,7 +9503,7 @@ The only interior flat-slope schedule is $Q=5$, and the upward bend marks a loca
       "That maximum planting area is $100$ square metres.",
       "At that square the area curve bends downward, confirming a local maximum.",
       "Because every layout uses the same $40$ metres of fence, every layout gives the same area, so no optimisation is needed."
-    ]
+    ],
     answer_key: [true, true, true, true, false],
     tactical_explanations: [
       `**A.** → True
@@ -9561,7 +9561,7 @@ Pause on the classification step: $f''<0$ at a critical point marks a local peak
 The wording sounds close to a standard optimisation rule, but it skips a classification step or confuses a level with a slope. Track the definitions carefully.
 
 Every feasible layout uses the same $40$ metres of fence, but different shapes enclose different areas: a $1\\times 19$ rectangle has area $19$, while the $10\\times 10$ square has area $100$. Equal perimeter does not force equal area. Optimisation is needed. Comparing that with the claim, the statement is False.`
-    ]
+    ],
     difficulty_level: "3/5",
     sort_order: 106,
     solution_overview: `With a fixed $40$ m fence for a rectangular bed, if one side is $x$ then the adjacent side is $20-x$ (semi-perimeter $20$), so area is
@@ -9587,7 +9587,7 @@ Flat slope at $x=10$ gives the square $10\\times 10$ with $A(10)=100$. The downw
       "Paper area has a flat slope at printed width $x=6$ (taking $x>0$).",
       "At that width the printed region is a $6\\times 6$ square, total paper area is $64$, and the area curve bends upward, confirming a local minimum.",
       "Any printed rectangle of area $36$ already minimises paper use; the margins do not create a real optimisation problem."
-    ]
+    ],
     answer_key: [true, true, true, true, false],
     tactical_explanations: [
       `**A.** → True
@@ -9659,7 +9659,7 @@ Pause on the classification step: $f''<0$ at a critical point marks a local peak
 The wording sounds close to a standard optimisation rule, but it skips a classification step or confuses a level with a slope. Track the definitions carefully.
 
 Any printed rectangle of area $36$ keeps the *printed* region fixed in area, but different aspect ratios change the outer paper once margins are added. A long thin print forces large outer dimensions; the square print minimises paper. The margins create a genuine optimisation problem. Comparing that with the claim, the statement is False.`
-    ]
+    ],
     difficulty_level: "4/5",
     sort_order: 107,
     solution_overview: `Printed area is fixed at $36$, so if printed width is $x>0$ then printed height is $36/x$. With a $1$ cm margin on every side, total paper area is
@@ -9685,7 +9685,7 @@ Flat slope at $x=6$ (taking $x>0$) gives a $6\\times 6$ printed square with tota
       "Total area has a flat slope at the split $x=\\dfrac{240}{4+\\pi}$.",
       "At that split the area curve bends upward, so the split is a local minimum of total enclosed area.",
       "Because two shapes are involved, the problem cannot be reduced to a single-variable calculus exercise."
-    ]
+    ],
     answer_key: [true, true, true, true, false],
     tactical_explanations: [
       `**A.** → True
@@ -9739,7 +9739,7 @@ Pause on the classification step: $f''<0$ at a critical point marks a local peak
 Reduce the constrained problem to one free variable, then differentiate the reduced objective exactly as in unconstrained single-variable calculus.
 
 Two shapes appear, but both are determined by the single split variable $x$. After writing square area and circle area in terms of $x$, the problem is ordinary single-variable calculus on $[0,60]$. The presence of two shapes does not block the reduction. Comparing that with the claim, the statement is False.`
-    ]
+    ],
     difficulty_level: "5/5",
     sort_order: 108,
     solution_overview: `A $60$ cm wire is split: length $x$ for a square and $60-x$ for a circle ($0\\le x\\le 60$). Side of the square is $x/4$; radius of the circle is $(60-x)/(2\\pi)$. Total enclosed area is
@@ -9761,7 +9761,7 @@ Differentiate and classify: the unique critical point in $(0,60)$ is a local *mi
       "At $x=5$ one has $y=10$ and utility level $50$.",
       "At $x=5$ the utility curve bends downward, so that bundle maximises utility locally on the budget line.",
       "After substitution, one may skip checking the bend of utility because a budget constraint automatically guarantees a maximum."
-    ]
+    ],
     answer_key: [true, true, true, true, false],
     tactical_explanations: [
       `**A.** → True
@@ -9827,7 +9827,7 @@ Pause on the classification step: $f''<0$ at a critical point marks a local peak
 Reduce the constrained problem to one free variable, then differentiate the reduced objective exactly as in unconstrained single-variable calculus.
 
 After substitution one still has an ordinary calculus problem: critical points must be classified. The budget constraint defines the feasible set; it does not by itself guarantee that a flat-slope bundle is a maximum rather than a minimum or saddle of the reduced utility. Skipping the bend check (here $u''=-4<0$) leaves the argument unfinished. Comparing that with the claim, the statement is False.`
-    ]
+    ],
     difficulty_level: "3/5",
     sort_order: 109,
     solution_overview: `Utility $U=xy$ on the budget $2x+y=20$ with $x>0$, $y>0$. Solve for $y=20-2x$ (requiring $0<x<10$) and substitute:
@@ -9853,7 +9853,7 @@ Flat slope at $x=5$ gives $y=10$ and $U=50$. The downward bend confirms a local 
       "At that split the output curve bends downward, confirming a local maximum.",
       "Any other split with $x+y=10$ yields strictly smaller output than $25$.",
       "The constraint $x+y=10$ already forces output $25$ for every feasible pair $(x,y)$."
-    ]
+    ],
     answer_key: [true, true, true, true, false],
     tactical_explanations: [
       `**A.** → True
@@ -9917,7 +9917,7 @@ Reduce the constrained problem to one free variable, then differentiate the redu
 The constraint $x+y=10$ only forces the *sum* of inputs; output $Q=xy$ still varies with the split. A $1+9$ split gives $Q=9$, while $5+5$ gives $25$. The constraint does not force output $25$ for every feasible pair
 
 Pause on the classification step: $f''<0$ at a critical point marks a local peak, $f''>0$ marks a local trough, and $f''=0$ makes the usual bend test inconclusive. Comparing that with the claim, the statement is False.`
-    ]
+    ],
     difficulty_level: "2/5",
     sort_order: 110,
     solution_overview: `Output $Q=xy$ on the resource constraint $x+y=10$ with $x>0$, $y>0$. Substitute $y=10-x$:
@@ -9939,7 +9939,7 @@ with slope $q'(x)=10-2x$ and bend $q''(x)=-2<0$. Flat slope at $x=5$ gives $y=5$
       "At the $25$-euro price, demand is unit elastic.",
       "At a price of $20$ euros, a small further price increase would still raise the firm's daily revenue.",
       "At the $25$-euro price demand is perfectly inelastic, because elasticity has absolute value $1$."
-    ]
+    ],
     answer_key: [true, true, true, true, false],
     tactical_explanations: [
       `**A.** → True
@@ -10033,7 +10033,7 @@ A positive slope means a small further price increase raises daily revenue. (Equ
 Relate the revenue slope to demand sensitivity: unit elasticity sits at the revenue peak, while inelastic demand only says a small price rise still helps revenue.
 
 Unit elasticity means $|\\varepsilon|=1$, not perfect inelasticity. Perfect inelasticity would mean $\\varepsilon=0$ (quantity does not respond to price at all). At $p=25$ one has $\\varepsilon=-1$, which is the revenue-peak condition, not zero elasticity. The claim misreads $|\\varepsilon|=1$ as perfect inelasticity. Comparing that with the claim, the statement is False.`
-    ]
+    ],
     difficulty_level: "3/5",
     sort_order: 111,
     solution_overview: `Demand is $D(p)=100-2p$ for $0<p<50$. Revenue as a function of price is
@@ -10063,7 +10063,7 @@ so $\\varepsilon(25)=-1$ (unit elastic). At $p=20$, $|\\varepsilon|<1$ (inelasti
       "At $20$ euros the revenue curve bends downward, so that fare is a local revenue peak.",
       "At $20$ euros the theatre sells $60$ tickets and earns $1200$ euros.",
       "For this demand curve, the price that flattens revenue can differ from the unit-elastic price."
-    ]
+    ],
     answer_key: [true, true, true, true, false],
     tactical_explanations: [
       `**A.** → True
@@ -10141,7 +10141,7 @@ Pause on the classification step: $f''<0$ at a critical point marks a local peak
 Relate the revenue slope to demand sensitivity: unit elasticity sits at the revenue peak, while inelastic demand only says a small price rise still helps revenue.
 
 For this linear demand, setting $R'(p)=0$ and setting $|\\varepsilon(p)|=1$ are algebraically equivalent: both force $p=20$. The price that flattens revenue *is* the unit-elastic price; they cannot differ for this demand curve. The claim asserts they can differ. Comparing that with the claim, the statement is False.`
-    ]
+    ],
     difficulty_level: "3/5",
     sort_order: 112,
     solution_overview: `Theatre demand is $D(p)=120-3p$ for $0<p<40$. Revenue is
@@ -10167,7 +10167,7 @@ gives $\\varepsilon(20)=-1$, so the revenue-flattening price and the unit-elasti
       "Writing revenue as a function of quantity and differentiating also gives marginal revenue $-10$ at sixty gadgets.",
       "The two calculations agree, so the elasticity shortcut matches direct differentiation of revenue with respect to quantity.",
       "Because that marginal revenue is not zero, the $20$-euro price does not maximise the shop's revenue."
-    ]
+    ],
     answer_key: [true, true, true, true, true],
     tactical_explanations: [
       `**A.** → True
@@ -10249,7 +10249,7 @@ So the statement is True.`,
 Relate the revenue slope to demand sensitivity: unit elasticity sits at the revenue peak, while inelastic demand only says a small price rise still helps revenue.
 
 Revenue is maximised where marginal revenue is zero (and the bend of $R$ is downward). Here $MR=-10\\neq 0$ at the $20$-euro price, so that price is not a revenue maximum. (Indeed $R'(Q)=0$ at $Q=50$, i.e. $p=25$.) The claim correctly refuses to call $p=20$ optimal, so the statement is True.`
-    ]
+    ],
     difficulty_level: "4/5",
     sort_order: 113,
     solution_overview: `Demand $Q=100-2p$ at posted price $p=20$ gives $Q=60$. Elasticity is
@@ -10275,7 +10275,7 @@ Writing $p=(100-Q)/2$ and $R(Q)=50Q-Q^{2}/2$ gives $R'(Q)=50-Q$, so $R'(60)=-10$
       "At this common price, Cart B's customers are more price-sensitive than Cart A's (larger absolute elasticity).",
       "For Cart A, a small price increase from $20$ euros would still raise its revenue.",
       "Because Cart A's demand is inelastic at $20$ euros, that price already maximises Cart A's revenue."
-    ]
+    ],
     answer_key: [true, true, true, true, false],
     tactical_explanations: [
       `**A.** → True
@@ -10347,7 +10347,7 @@ A positive marginal revenue means a small price increase from $20$ euros still r
 Relate the revenue slope to demand sensitivity: unit elasticity sits at the revenue peak, while inelastic demand only says a small price rise still helps revenue.
 
 Inelastic demand at $p=20$ means a *small* price increase raises revenue — it does not mean $p=20$ already maximises revenue. Cart A's revenue peak solves $R_A'(p)=0$, giving $p=40$, not $p=20$. Confusing “inelastic, so raise price” with “already at the maximum” is the trap. Comparing that with the claim, the statement is False.`
-    ]
+    ],
     difficulty_level: "3/5",
     sort_order: 114,
     solution_overview: `At the common cup price $p=20$:
@@ -10371,7 +10371,7 @@ $|\\varepsilon_B|=1/2>|\\varepsilon_A|=1/3$, so B's customers are more price-sen
       "At that candidate one has $y=2.5$, and the profit curve bends downward, confirming a local profit peak.",
       "The maximised constrained profit equals $212.5$.",
       "Ignoring the constraint and treating $x$ and $y$ as unrelated would automatically give the same answer."
-    ]
+    ],
     answer_key: [true, true, true, true, false],
     tactical_explanations: [
       `**A.** → True
@@ -10441,7 +10441,7 @@ Pause on the classification step: $f''<0$ at a critical point marks a local peak
 Reduce the constrained problem to one free variable, then differentiate the reduced objective exactly as in unconstrained single-variable calculus.
 
 Ignoring the constraint, one would set $\\partial P/\\partial x=30-2x=0$ and $\\partial P/\\partial y=20-2y=0$, giving $(x,y)=(15,10)$, which violates $x+y=10$. The unconstrained critical point is not feasible, and the constrained optimum $(7.5,2.5)$ is different. Treating $x$ and $y$ as unrelated does *not* give the same answer. Comparing that with the claim, the statement is False.`
-    ]
+    ],
     difficulty_level: "4/5",
     sort_order: 115,
     solution_overview: `Profit $P=30x+20y-x^{2}-y^{2}$ on the resource constraint $x+y=10$. Substitute $y=10-x$:
@@ -10469,7 +10469,7 @@ Ignoring the constraint and optimising $x,y$ separately yields a different uncon
       "Then the riverside side is $20$ metres, and the area curve bends downward, so that layout maximises area locally.",
       "Maximal area is $200$ square metres.",
       "The same dimensions would also maximise area if all four sides had to be fenced with the same $40$ metres."
-    ]
+    ],
     answer_key: [true, true, true, true, false],
     tactical_explanations: [
       `**A.** → True
@@ -10527,7 +10527,7 @@ Pause on the classification step: $f''<0$ at a critical point marks a local peak
 The wording sounds close to a standard optimisation rule, but it skips a classification step or confuses a level with a slope. Track the definitions carefully.
 
 If all four sides had to be fenced with the same $40$ m, the constraint would be $2x+2y=40$, so $y=20-x$ and $A=x(20-x)$, maximised at the $10\\times 10$ square of area $100$ — not at $10\\times 20$. The three-sided optimum is a different problem with different dimensions. The claim is false. Comparing that with the claim, the statement is False.`
-    ]
+    ],
     difficulty_level: "3/5",
     sort_order: 116,
     solution_overview: `Three-sided riverside fence of $40$ m: two perpendicular sides $x$ and riverside side $40-2x$, so area is
@@ -10553,7 +10553,7 @@ Flat slope at $x=10$ gives riverside length $20$ and $A(10)=200$. The downward b
       "Then $y=2$, total cost is $32$, and the cost curve bends upward, confirming a local cost trough.",
       "Along $xy=16$, the cost-minimising point balances the input prices against the trade-off $\\dfrac{y}{x}$, which holds at $(x,y)=(8,2)$.",
       "Any other pair with $xy=16$ has the same cost $32$, so substitution is unnecessary."
-    ]
+    ],
     answer_key: [true, true, true, true, false],
     tactical_explanations: [
       `**A.** → True
@@ -10617,7 +10617,7 @@ Pause on the classification step: $f''<0$ at a critical point marks a local peak
 Reduce the constrained problem to one free variable, then differentiate the reduced objective exactly as in unconstrained single-variable calculus.
 
 Other pairs on $xy=16$ have different costs. For example $(4,4)$ costs $C=8+32=40>32$, and $(16,1)$ costs $32+8=40>32$. Cost is *not* constant along the isoquant, so substitution (or an equivalent method) is necessary. The statement is False. Comparing that with the claim, the statement is False.`
-    ]
+    ],
     difficulty_level: "4/5",
     sort_order: 117,
     solution_overview: `Fixed output $xy=16$ with cost $C=2x+8y$. Substitute $y=16/x$:
@@ -10643,7 +10643,7 @@ Flat slope at $x=8$ gives $y=2$, total cost $C(8)=16+16=32$, and $C''(8)>0$ conf
       "If the ferry instead charges $30$ euros, a small fare increase would raise ticket revenue.",
       "If the ferry charges $60$ euros, a small fare increase would lower ticket revenue.",
       "Whenever demand is elastic (absolute elasticity greater than $1$), that fare already maximises revenue."
-    ]
+    ],
     answer_key: [true, true, true, true, false],
     tactical_explanations: [
       `**A.** → True
@@ -10733,7 +10733,7 @@ For ordinary downward-sloping demand, revenue peaks where point elasticity equal
 Relate the revenue slope to demand sensitivity: unit elasticity sits at the revenue peak, while inelastic demand only says a small price rise still helps revenue.
 
 Elastic demand ($|\\varepsilon|>1$) means a small price *increase* lowers revenue — equivalently, a price cut raises revenue. It does *not* mean the current fare already maximises revenue. Revenue is maximised only at unit elasticity ($|\\varepsilon|=1$). The claim reverses the meaning of elastic demand. Comparing that with the claim, the statement is False.`
-    ]
+    ],
     difficulty_level: "3/5",
     sort_order: 118,
     solution_overview: `Ferry demand is $D(p)=90-p$ for $0<p<90$. Revenue is
@@ -10755,7 +10755,7 @@ with $R'(p)=90-2p$ and $R''(p)=-2<0$. Flat revenue at $p=45$ gives $R(45)=2025$.
       "Inside $(0,6)$ the only flat-slope cut size is $x=2$.",
       "At $x=2$ the volume curve bends downward and volume equals $128$, so that cut maximises volume locally.",
       "Finding the flat-slope cut alone, without checking the bend or the ends of the interval, already proves the global maximum on $(0,6)$."
-    ]
+    ],
     answer_key: [true, true, true, true, false],
     tactical_explanations: [
       `**A.** → True
@@ -10829,7 +10829,7 @@ Pause on the classification step: $f''<0$ at a critical point marks a local peak
 Flat slope finds a candidate; the bend (or a sign chart) then classifies peak versus trough. Keep those two steps separate.
 
 Finding $V'(x)=0$ only produces the candidate $x=2$. Without checking the bend (or comparing with behaviour as $x\\to 0^{+}$ and $x\\to 6^{-}$), one has not proved a global maximum on $(0,6)$. The critical-point list alone does not finish the maximisation argument. Comparing that with the claim, the statement is False.`
-    ]
+    ],
     difficulty_level: "5/5",
     sort_order: 119,
     solution_overview: `Open box from a $12$ cm square sheet: cut squares of side $x$ from each corner ($0<x<6$). Height is $x$ and base side is $12-2x$, so
@@ -10855,7 +10855,7 @@ Inside $(0,6)$ the only flat-slope cut is $x=2$ (the root $x=6$ is an endpoint o
       "At $x=3$, $f'(3)=4$, so $x=3$ is a local minimum of $f$.",
       "On $(0,1)$ the curve is below the axis, so $f$ is decreasing there.",
       "The steepest climb of $f$ in the window is at $x=3$."
-    ]
+    ],
     answer_key: [true, true, false, true, true],
     tactical_explanations: [
       `**A.** → True
@@ -10913,7 +10913,7 @@ $$(3,4)$$
 so among the positive values of $f'$ in the window the maximum is $4$ at $x=3$, and that is the steepest upward stretch of $f$
 
 Putting that figure reading next to the claim, every asserted sign, height, or classification matches what the axes show, so the statement is True.`
-    ]
+    ],
     difficulty_level: "2/5",
     sort_order: 121,
     solution_overview: `The figure plots the derivative $f'$, not $f$ itself. Marked zeros sit at $x=1$ and $x=5$, and the curve attains a labelled peak at
@@ -10940,7 +10940,7 @@ Hence $f$ decreases on $(0,1)$ and increases on $(1,5)$. The $+$ to $-$ crossing
       "On $(2,4)$ the curve is below the axis, so $f$ is decreasing on $(2,4)$.",
       "At $x=3$, the height of $f'$ is about $-1$.",
       "Because $f'(3)<0$, the point $x=3$ is a local minimum of $f$."
-    ]
+    ],
     answer_key: [true, true, true, true, false],
     tactical_explanations: [
       `**A.** → True
@@ -10998,7 +10998,7 @@ $$f'(3)\\approx -1\\neq 0$$
 so $x=3$ is not a critical point of $f$ at all. Negativity of $f'$ says $f$ is decreasing there, not that a local minimum occurs
 
 Once that mismatch with the figure is clear, the claim cannot stand. Comparing the assertion with the axes, the statement is False.`
-    ]
+    ],
     difficulty_level: "2/5",
     sort_order: 122,
     solution_overview: `The figure shows $f'$ with two axis crossings, at $x=2$ and $x=4$. Just left of $x=2$ the curve is above the axis and just right it is below; between the zeros it dips below; at $x=4$ it returns from below to above. The sign chart is therefore
@@ -11025,7 +11025,7 @@ That lowest point of $f'$ is not a critical point of $f$.`,
       "Between those turning points the graph is rising.",
       "Near $x=3$ the graph is steepest upward in this window.",
       "Because the graph crosses the axis near $x=0$, one must have $f'(0)=0$."
-    ]
+    ],
     answer_key: [true, true, true, true, false],
     tactical_explanations: [
       `**A.** → True
@@ -11083,7 +11083,7 @@ $$f(0)=0\\qquad\\text{does not force}\\qquad f'(0)=0$$
 Roots and horizontal tangents are different geometric facts, so the crossing near $x=0$ alone does not force $f'(0)=0$, and the statement is False.
 
 Once that mismatch with the figure is clear, the claim cannot stand. Comparing the assertion with the axes, the statement is False.`
-    ]
+    ],
     difficulty_level: "2/5",
     sort_order: 123,
     solution_overview: `Here the figure shows the level curve $f$ itself, not its derivative. Reading turning points and slopes directly from the shape:
@@ -11109,7 +11109,7 @@ An axis crossing of $f$ near $x=0$ is only a root $f=0$. That is a different geo
       "A local profit peak occurs at the marked zero of $P'$.",
       "At $x=1$, reading the scale, $P'$ is greater than $1$.",
       "Because $P'$ is a straight line, profit $P$ itself must be a straight line."
-    ]
+    ],
     answer_key: [true, true, true, true, false],
     tactical_explanations: [
       `**A.** → True
@@ -11171,7 +11171,7 @@ $$
 Profit $P$ is therefore a parabola, not a straight line
 
 Once that mismatch with the figure is clear, the claim cannot stand. Comparing the assertion with the axes, the statement is False.`
-    ]
+    ],
     difficulty_level: "2/5",
     sort_order: 124,
     solution_overview: `The figure shows marginal profit $P'$ as a falling straight line that crosses the axis once near
@@ -11198,7 +11198,7 @@ A little more output therefore raises profit left of the zero and lowers profit 
       "The function $f$ has a local maximum at $x=3$.",
       "At $x=1$, $f'$ equals $2$ on the scale.",
       "Because $f'$ is decreasing, $f$ is concave down throughout the window."
-    ]
+    ],
     answer_key: [true, true, true, true, true],
     tactical_explanations: [
       `**A.** → True
@@ -11256,7 +11256,7 @@ $$f''(x)<0\\quad\\text{throughout the window}$$
 Negative $f''$ means $f$ is concave down everywhere in view
 
 Putting that figure reading next to the claim, every asserted sign, height, or classification matches what the axes show, so the statement is True.`
-    ]
+    ],
     difficulty_level: "2/5",
     sort_order: 125,
     solution_overview: `Read the figure first: name the drawn curve(s), mark zeros and sample heights, then translate signs into monotonicity and turning points.
@@ -11285,7 +11285,7 @@ Because the graph of $f'$ itself is strictly decreasing, one has $f''<0$ through
       "On $(0,3)$ the graph is rising, so $f$ is increasing there.",
       "At $x=2$, reading the vertical scale, $f(2)$ is strictly greater than $2$.",
       "An axis crossing of $f$ at $x=0$ forces $f'(0)=0$ for every differentiable $f$."
-    ]
+    ],
     answer_key: [true, true, true, true, false],
     tactical_explanations: [
       `**A.** → True
@@ -11343,7 +11343,7 @@ $$f(0)=0\\qquad\\nRightarrow\\qquad f'(0)=0\\text{ for every differentiable }f$$
 Roots and critical points are different geometric facts
 
 Once that mismatch with the figure is clear, the claim cannot stand. Comparing the assertion with the axes, the statement is False.`
-    ]
+    ],
     difficulty_level: "3/5",
     sort_order: 126,
     solution_overview: `The figure shows $f$ itself: a curve with a lowest point at the origin and arms rising on both sides. So
@@ -11366,7 +11366,7 @@ On $(-3,0)$ the graph falls toward the origin ($f$ decreasing), and on $(0,3)$ i
       "Near $x=5$ the graph has a local minimum.",
       "On $(1,2.5)$ the graph is rising, so $f$ is increasing there.",
       "Because $f(0)=0$, one must have $f'(0)=0$."
-    ]
+    ],
     answer_key: [true, true, true, true, false],
     tactical_explanations: [
       `**A.** → True
@@ -11424,7 +11424,7 @@ $$f(0)=0\\qquad\\nRightarrow\\qquad f'(0)=0$$
 Roots and critical points are different
 
 Once that mismatch with the figure is clear, the claim cannot stand. Comparing the assertion with the axes, the statement is False.`
-    ]
+    ],
     difficulty_level: "3/5",
     sort_order: 127,
     solution_overview: `Read the figure first: name the drawn curve(s), mark zeros and sample heights, then translate signs into monotonicity and turning points.
@@ -11449,7 +11449,7 @@ Reading the shape: a local minimum near $x=1$, a local maximum near $x=2.5$, and
       "Outside those zeros (still in the window), $f'<0$, so $f$ is decreasing there.",
       "The maximum height of $f'$ is at $x=2$, near height $4$.",
       "The maximum of $f'$ at $x=2$ is a local maximum of $f$."
-    ]
+    ],
     answer_key: [true, true, true, true, false],
     tactical_explanations: [
       `**A.** → True
@@ -11505,7 +11505,7 @@ $$\\max f'\\text{ at }x=2\\qquad\\nRightarrow\\qquad\\text{local max of }f\\text
 The peak of the hill is not a local maximum of $f$
 
 Once that mismatch with the figure is clear, the claim cannot stand. Comparing the assertion with the axes, the statement is False.`
-    ]
+    ],
     difficulty_level: "3/5",
     sort_order: 128,
     solution_overview: `The figure shows $f'$ as a single positive hill that crosses the axis twice — once left of $x=2$ and once right of $x=2$. Between those zeros the hill sits above the axis; outside them (still in the window) the curve is below. The top of the hill is at
@@ -11532,7 +11532,7 @@ so $f$ decreases, then increases, then decreases. The maximum of $f'$ at $x=2$ i
       "At $x=0$ one has $f'(0)=0$.",
       "Because $f'$ approaches $0$ late in the window, $f$ becomes almost flat there.",
       "A local maximum of $f$ occurs at the peak of $f'$."
-    ]
+    ],
     answer_key: [true, true, true, true, false],
     tactical_explanations: [
       `**A.** → True
@@ -11590,7 +11590,7 @@ $$f'>0\\text{ at the peak of }f'\\qquad\\nRightarrow\\qquad\\text{local max of }
 so the peak of $f'$ is not a local maximum of $f$, and the statement is False.
 
 Once that mismatch with the figure is clear, the claim cannot stand. Comparing the assertion with the axes, the statement is False.`
-    ]
+    ],
     difficulty_level: "3/5",
     sort_order: 129,
     solution_overview: `The figure shows $f'$ starting at the origin, rising to a hump, then falling back toward the axis from above while staying non-negative for $x>0$ in the window. So
@@ -11613,7 +11613,7 @@ and $f$ is increasing throughout $(0,8)$. The steepest climb of $f$ is at the pe
       "On $(0,1)$ the curve is also below the axis (or touches at the end), so $f$ does not switch from increasing to decreasing at $x=1$ in the usual $+$ to $-$ way.",
       "At $x=2$, $f'$ is negative.",
       "Touching the axis at $x=1$ without a clear $+$ to $-$ or $-$ to $+$ change means $x=1$ need not be a local extremum of $f$."
-    ]
+    ],
     answer_key: [true, true, true, true, true],
     tactical_explanations: [
       `**A.** → True
@@ -11671,7 +11671,7 @@ $$f'(1)=0\\text{ with no sign change}\\nRightarrow\\text{need not be a local ext
 so $x=1$ need not be a local extremum of $f$, and the statement is True.
 
 Putting that figure reading next to the claim, every asserted sign, height, or classification matches what the axes show, so the statement is True.`
-    ]
+    ],
     difficulty_level: "3/5",
     sort_order: 130,
     solution_overview: `The figure shows $f'$ touching the axis at $x=1$ (a flat contact) and crossing transversally at $x=4$. On both sides of $x=1$ in the window the curve stays non-positive, so there is no ordinary $+$ to $-$ or $-$ to $+$ sign change at the touch. Between $1$ and $4$ the curve is below the axis, and at $x=4$ it flips from negative to positive:
@@ -11694,7 +11694,7 @@ Thus $f$ decreases on $(1,4)$ and has a local minimum at $x=4$. At $x=2$ one rea
       "At $x=4$, reading the scale, $C'$ is greater than $2$.",
       "A local minimum of cost occurs somewhere in $(0,6)$ because $C'$ is positive.",
       "At $x=0$, $C'$ is about $0.5$."
-    ]
+    ],
     answer_key: [true, true, true, false, true],
     tactical_explanations: [
       `**A.** → True
@@ -11752,7 +11752,7 @@ $$C'(0)\\approx 0.5$$
 so the statement matches the figure, and the statement is True.
 
 Putting that figure reading next to the claim, every asserted sign, height, or classification matches what the axes show, so the statement is True.`
-    ]
+    ],
     difficulty_level: "3/5",
     sort_order: 131,
     solution_overview: `Read the figure first: name the drawn curve(s), mark zeros and sample heights, then translate signs into monotonicity and turning points.
@@ -11777,7 +11777,7 @@ Total cost $C$ is therefore increasing and concave up. Reading the scale: at $x=
       "Because $f'$ changes from positive to negative at $x=2.5$, the function $f$ has a local maximum at $x=2.5$.",
       "Because $f'$ changes from negative to positive at $x=1$, the function $f$ has a local minimum at $x=1$.",
       "The value $f'(0)$ is positive."
-    ]
+    ],
     answer_key: [true, true, true, true, false],
     tactical_explanations: [
       `**A.** → True
@@ -11835,7 +11835,7 @@ $$f'(0)<0$$
 so $f'(0)$ is not positive, and the statement is False.
 
 Once that mismatch with the figure is clear, the claim cannot stand. Comparing the assertion with the axes, the statement is False.`
-    ]
+    ],
     difficulty_level: "4/5",
     sort_order: 132,
     solution_overview: `Read the figure first: name the drawn curve(s), mark zeros and sample heights, then translate signs into monotonicity and turning points.
@@ -11866,7 +11866,7 @@ In particular $f'(0)<0$, not positive.`,
       "The function $f$ has a local maximum at $x=4$.",
       "The steepest positive slope of $f$ in the window occurs where $f'$ attains its maximum value (near $x=1$), not at $x=4$.",
       "Reading the scale, $f'(0)$ is about $4$, while $f'(6)$ is negative but greater than $-1$."
-    ]
+    ],
     answer_key: [true, true, true, true, true],
     tactical_explanations: [
       `**A.** → True
@@ -11924,7 +11924,7 @@ $$f'(0)\\approx 4,\\qquad -1<f'(6)<0$$
 so both readings match the claim, and the statement is True.
 
 Putting that figure reading next to the claim, every asserted sign, height, or classification matches what the axes show, so the statement is True.`
-    ]
+    ],
     difficulty_level: "4/5",
     sort_order: 133,
     solution_overview: `Read the figure first: name the drawn curve(s), mark zeros and sample heights, then translate signs into monotonicity and turning points.
@@ -11951,7 +11951,7 @@ $$f'(0)\\approx 4,\\qquad f'(6)\\in(-1,0)$$`,
       "Reading the scale, $|f'(1)|$ is about $4$, and $f'(-1)\\approx -4$.",
       "The highest point of the graph of $f'$ on $(0,3)$ occurs near $x=1$, so that is where $f$ rises most steeply on the right.",
       "Because $f'(0)=0$, the point $x=0$ is an inflection point of $f$."
-    ]
+    ],
     answer_key: [true, true, true, true, false],
     tactical_explanations: [
       `**A.** → True
@@ -12007,7 +12007,7 @@ A zero of $f'$ with a sign change is a local extremum of $f$ (here a local minim
 $$f'(0)=0\\qquad\\nRightarrow\\qquad\\text{inflection of }f\\text{ at }x=0$$
 
 Once that mismatch with the figure is clear, the claim cannot stand. Comparing the assertion with the axes, the statement is False.`
-    ]
+    ],
     difficulty_level: "4/5",
     sort_order: 134,
     solution_overview: `The figure shows an odd-looking $f'$ through the origin: negative for $x<0$ and positive for $x>0$, with
@@ -12034,7 +12034,7 @@ The highest point of $f'$ on $(0,3)$ is near $x=1$, where $f$ rises most steeply
       "The function $f$ has a local maximum at $x=1$ and a local minimum at $x=2$.",
       "At $x=3$, reading the scale, $f'(3)$ is greater than $4$.",
       "Because there are three zeros, $f''(x)=0$ at each of $x=-2$, $1$, and $2$."
-    ]
+    ],
     answer_key: [true, true, true, true, false],
     tactical_explanations: [
       `**A.** → True
@@ -12090,7 +12090,7 @@ $$f'(x)=0\\qquad\\nRightarrow\\qquad f''(x)=0$$
 Three zeros of $f'$ do not force $f''=0$ at those same abscissae
 
 Once that mismatch with the figure is clear, the claim cannot stand. Comparing the assertion with the axes, the statement is False.`
-    ]
+    ],
     difficulty_level: "4/5",
     sort_order: 135,
     solution_overview: `The figure shows $f'$ with three zeros at
@@ -12117,7 +12117,7 @@ At $x=3$ the scale reading is greater than $4$. Zeros of $f'$ are about extrema 
       "The green curve is zero near $x=\\pm 1$, which matches the peak and the lowest point of the brown curve.",
       "For $x>1$, green is negative, so brown is falling on $(1,3)$.",
       "Brown being positive on $(0,3)$ means $f$ is increasing on $(0,3)$."
-    ]
+    ],
     answer_key: [true, true, true, true, true],
     tactical_explanations: [
       `**A.** → True
@@ -12173,7 +12173,7 @@ $$f'(x)>0\\quad\\text{for }x\\in(0,3)$$
 Positive $f'$ means $f$ is increasing on $(0,3)$
 
 Putting that figure reading next to the claim, every asserted sign, height, or classification matches what the axes show, so the statement is True.`
-    ]
+    ],
     difficulty_level: "4/5",
     sort_order: 136,
     solution_overview: `Read the figure first: name the drawn curve(s), mark zeros and sample heights, then translate signs into monotonicity and turning points.
@@ -12198,7 +12198,7 @@ so brown is increasing through the origin. Green is zero near $x=\\pm 1$, lining
       "On $(-3,0)$, green is negative, matching a falling brown curve.",
       "At $x=1$, green is near height $4$, so the slope of brown at $x=1$ is about $4$.",
       "The highest point of green on $(0,3)$ is a local maximum of brown."
-    ]
+    ],
     answer_key: [true, true, true, true, false],
     tactical_explanations: [
       `**A.** → True
@@ -12256,7 +12256,7 @@ $$\\max f'\\qquad\\nRightarrow\\qquad\\text{local max of }f$$
 Local maxima of brown need zeros of green with a $+$ to $-$ change
 
 Once that mismatch with the figure is clear, the claim cannot stand. Comparing the assertion with the axes, the statement is False.`
-    ]
+    ],
     difficulty_level: "4/5",
     sort_order: 137,
     solution_overview: `Read the figure first: name the drawn curve(s), mark zeros and sample heights, then translate signs into monotonicity and turning points.
@@ -12281,7 +12281,7 @@ On $(0,3)$ green is positive and brown rises; on $(-3,0)$ green is negative and 
       "Brown has a single hump and two zeros near $x=0$ and $x=5$ after the $+1$ shift — from the figure, brown crosses once early and once late.",
       "On $(2.5,5)$, green is negative, so $Q$ is decreasing there.",
       "The larger of $P'(2)$ and $Q'(2)$ is brown's value if brown sits above green at $x=2$."
-    ]
+    ],
     answer_key: [true, true, true, true, true],
     tactical_explanations: [
       `**A.** → True
@@ -12337,7 +12337,7 @@ $$P'(2)>Q'(2)$$
 so the larger of the two is brown's value, and the statement is True.
 
 Putting that figure reading next to the claim, every asserted sign, height, or classification matches what the axes show, so the statement is True.`
-    ]
+    ],
     difficulty_level: "4/5",
     sort_order: 138,
     solution_overview: `Read the figure first: name the drawn curve(s), mark zeros and sample heights, then translate signs into monotonicity and turning points.
@@ -12358,7 +12358,7 @@ Brown is $P'$ and green is $Q'$ on the same axes. At $x=2$ both curves sit above
       "On $(3,6)$, green is negative, so brown is falling — and $f$ is concave down.",
       "At $x=2$, brown is positive, so $f$ is increasing at $x=2$.",
       "Because green is a straight line, $f$ cannot have a local maximum in the window."
-    ]
+    ],
     answer_key: [true, true, true, true, false],
     tactical_explanations: [
       `**A.** → True
@@ -12414,7 +12414,7 @@ $$f'\\text{ changes }+\\to-\\text{ near }x=5$$
 so $f$ still has a local maximum there. A linear $f''$ does not rule out a local maximum of $f$
 
 Once that mismatch with the figure is clear, the claim cannot stand. Comparing the assertion with the axes, the statement is False.`
-    ]
+    ],
     difficulty_level: "4/5",
     sort_order: 139,
     solution_overview: `Brown is $f'$ and green is $f''$ (a straight line) on shared axes. Green crosses zero at $x=3$, lining up with the peak of brown. Sign/height readings:
@@ -12437,7 +12437,7 @@ so at $x=4$ brown is still positive while green is negative. On $(3,6)$ green is
       "On $(2,5)$, green is negative, so brown is falling.",
       "Wherever brown is positive, $f$ is increasing.",
       "Green being zero at $x=2$ means $f$ has a local maximum at $x=2$."
-    ]
+    ],
     answer_key: [true, true, true, true, false],
     tactical_explanations: [
       `**A.** → True
@@ -12495,7 +12495,7 @@ $$f''(2)=0\\qquad\\nRightarrow\\qquad\\text{local max of }f\\text{ at }x=2$$
 Critical points of $f$ are zeros of brown
 
 Once that mismatch with the figure is clear, the claim cannot stand. Comparing the assertion with the axes, the statement is False.`
-    ]
+    ],
     difficulty_level: "4/5",
     sort_order: 140,
     solution_overview: `Read the figure first: name the drawn curve(s), mark zeros and sample heights, then translate signs into monotonicity and turning points.
@@ -12520,7 +12520,7 @@ so brown rises on $(0,2)$ and falls on $(2,5)$. Wherever brown is positive, $f$ 
       "On $(2,8)$, green is negative, so brown is falling toward the axis.",
       "At $x=6$, brown is still positive but small, so $f$ is still increasing slowly.",
       "Because brown never goes negative in the window, $f$ has no local maximum in $(0,8)$."
-    ]
+    ],
     answer_key: [true, true, true, true, true],
     tactical_explanations: [
       `**A.** → True
@@ -12578,7 +12578,7 @@ $$f'(x)\\ge 0\\quad\\text{on }(0,8)$$
 so there is no such zero in $(0,8)$, and $f$ has no local maximum there. The statement is True.
 
 Putting that figure reading next to the claim, every asserted sign, height, or classification matches what the axes show, so the statement is True.`
-    ]
+    ],
     difficulty_level: "4/5",
     sort_order: 141,
     solution_overview: `Read the figure first: name the drawn curve(s), mark zeros and sample heights, then translate signs into monotonicity and turning points.
@@ -12599,7 +12599,7 @@ Brown is $f'$ and green is $f''$ on one plane (an $xe^{-x/2}$-style family). Gre
       "Wherever brown is positive, a little more output raises profit.",
       "Green staying positive means total cost keeps rising throughout the window.",
       "The two curves meet at the profit-maximising output."
-    ]
+    ],
     answer_key: [true, true, true, true, false],
     tactical_explanations: [
       `**A.** → True
@@ -12657,7 +12657,7 @@ $$P'=C'\\qquad\\nRightarrow\\qquad P'\\text{ changes }+\\to-$$
 Meeting of the two curves is not the profit-peak test
 
 Once that mismatch with the figure is clear, the claim cannot stand. Comparing the assertion with the axes, the statement is False.`
-    ]
+    ],
     difficulty_level: "4/5",
     sort_order: 142,
     solution_overview: `Read the figure first: name the drawn curve(s), mark zeros and sample heights, then translate signs into monotonicity and turning points.
@@ -12678,7 +12678,7 @@ Brown is marginal profit $P'$ and green is marginal cost $C'$ on shared axes. At
       "At $x=3$, brown is negative.",
       "On an interval where brown is above green and both are negative, $f$ and $g$ both decrease, and $f$ decreases less steeply when brown is less negative.",
       "Equal numbers of turning points for $f$ and $g$ follow automatically from the figure."
-    ]
+    ],
     answer_key: [true, true, true, true, false],
     tactical_explanations: [
       `**A.** → True
@@ -12718,7 +12718,7 @@ Turning points of $f$ and $g$ arise from zeros of $f'$ and $g'$ that change sign
 $$3\\neq 2$$
 
 so $f$ and $g$ need not have the same number of turning points. Equal turning-point counts do not follow automatically from the figure when the zero counts already differ — the premise the claim needs is simply not there — so the statement is False.`
-    ]
+    ],
     difficulty_level: "4/5",
     sort_order: 143,
     solution_overview: `Brown is $f'$ and green is $g'$ on one shared plane. At $x=0$ both curves sit below the axis, so both derivatives are negative there. Counting axis crossings in the window: brown has three zeros and green has two. At $x=3$, between brown's middle and right zeros, brown sits below the axis, hence $f'(3)<0$. On an interval where both curves are negative and brown sits above green, both $f$ and $g$ decrease, with $f$ decreasing less steeply because brown is less negative ($|f'|<|g'|$). Because the zero counts already differ ($3$ versus $2$), equal numbers of turning points for $f$ and $g$ do not follow from the figure.`,
@@ -12737,7 +12737,7 @@ so $f$ and $g$ need not have the same number of turning points. Equal turning-po
       "At $x=1$, the graph of $f'$ is above the axis, so $f'(1)>0$.",
       "A local minimum of the graph of $f'$ (a lowest point of the brown curve) is automatically a local minimum of $f$.",
       "Between consecutive zeros of $f'$, the sign of $f'$ does not change, so $f$ is strictly monotonic on each such open interval."
-    ]
+    ],
     answer_key: [true, true, true, false, true],
     tactical_explanations: [
       `**A.** → True
@@ -12793,7 +12793,7 @@ $$f'\\text{ constant sign between consecutive zeros}$$
 so $f$ is strictly monotonic on each such open interval, and the statement is True.
 
 Putting that figure reading next to the claim, every asserted sign, height, or classification matches what the axes show, so the statement is True.`
-    ]
+    ],
     difficulty_level: "5/5",
     sort_order: 144,
     solution_overview: `The figure shows $f'$ with four transversal axis crossings in $[0,6]$, near
@@ -12816,7 +12816,7 @@ Each sign-changing zero gives a local extremum of $f$, so $f$ has four local ext
       "At $x=3$, $f'$ changes from negative to positive, so $f$ has a local minimum at $x=3$.",
       "At $x=5$, $|f'(5)|$ is smaller than $|f'(2)|$ because of the decay of the envelope.",
       "Since the curve's amplitude is smaller near $x=3$ than near $x=2$, the point $x=3$ cannot be a local extremum of $f$."
-    ]
+    ],
     answer_key: [true, true, true, true, false],
     tactical_explanations: [
       `**A.** → True
@@ -12874,7 +12874,7 @@ $$f'(3)=0,\\qquad f'\\text{ changes }-\\to+\\text{ at }x=3$$
 Amplitude decay does not cancel that test
 
 Once that mismatch with the figure is clear, the claim cannot stand. Comparing the assertion with the axes, the statement is False.`
-    ]
+    ],
     difficulty_level: "5/5",
     sort_order: 145,
     solution_overview: `Read the figure first: name the drawn curve(s), mark zeros and sample heights, then translate signs into monotonicity and turning points.
@@ -12899,7 +12899,7 @@ so $f$ has a local maximum at $x=1$ ($+$ to $-$) and a local minimum at $x=3$ ($
       "Near $x=1.5$, $f'$ has a local maximum (highest point of the brown curve there), and there $f''$ is about $0$.",
       "Wherever the green curve is positive, the brown curve is rising.",
       "The brown curve has three zeros while the green curve has only two zeros in the window."
-    ]
+    ],
     answer_key: [true, true, true, true, true],
     tactical_explanations: [
       `**A.** → True
@@ -12955,7 +12955,7 @@ $$f'\\text{ has three zeros},\\qquad f''\\text{ has two zeros}$$
 Those counts match the claim exactly
 
 Putting that figure reading next to the claim, every asserted sign, height, or classification matches what the axes show, so the statement is True.`
-    ]
+    ],
     difficulty_level: "5/5",
     sort_order: 146,
     solution_overview: `Read the figure first: name the drawn curve(s), mark zeros and sample heights, then translate signs into monotonicity and turning points.
@@ -12980,7 +12980,7 @@ so $f$ is decreasing and concave down at $x=3$. Near $x=1.5$ brown has a local m
       "For $x>2$ in this window, the green curve is negative, so $f'$ is decreasing on $(2,8)$.",
       "At $x=0$, brown is near height $4$ while green is near height $-2$.",
       "Because green is negative on $(2,8)$, the function $f$ itself must be decreasing on $(2,8)$."
-    ]
+    ],
     answer_key: [true, true, true, true, false],
     tactical_explanations: [
       `**A.** → True
@@ -13036,7 +13036,7 @@ $$f''<0\\text{ on }(2,8)\\quad\\text{but}\\quad f'>0\\text{ on }(2,4)$$
 so $f$ is still increasing on $(2,4)$. Concavity and monotonicity are different
 
 Once that mismatch with the figure is clear, the claim cannot stand. Comparing the assertion with the axes, the statement is False.`
-    ]
+    ],
     difficulty_level: "5/5",
     sort_order: 147,
     solution_overview: `Brown is $f'$ and green is $f''$ on one shared plane. Brown crosses the axis at $x=4$ with a positive hump to the left:
@@ -13063,7 +13063,7 @@ Negative $f''$ speaks to concavity of $f$ and decrease of $f'$, not to whether $
       "At $x=4$, both curves are negative, so both firms' profits are decreasing in output there.",
       "Near $x=0$, both curves are positive, and green starts higher than brown.",
       "Having two zeros each means the two firms earn the same maximal profit level."
-    ]
+    ],
     answer_key: [true, true, true, true, false],
     tactical_explanations: [
       `**A.** → True
@@ -13121,7 +13121,7 @@ $$\\#\\{P_A'=0\\}=\\#\\{P_B'=0\\}\\qquad\\nRightarrow\\qquad\\max P_A=\\max P_B$
 Equal critical-point counts do not force equal maximal profit levels
 
 Once that mismatch with the figure is clear, the claim cannot stand. Comparing the assertion with the axes, the statement is False.`
-    ]
+    ],
     difficulty_level: "5/5",
     sort_order: 148,
     solution_overview: `Brown is firm A's marginal profit $P_A'$ and green is firm B's $P_B'$ on the same axes. Axis crossings:
@@ -13144,7 +13144,7 @@ Near $x=0$ both curves are positive, with green starting higher than brown. At $
       "At a local maximum of the brown curve, the green curve crosses or touches zero.",
       "On an interval where green is positive, brown is rising, so $f$ is concave up there.",
       "At $x=3$, brown is negative, so $f$ is decreasing at $x=3$."
-    ]
+    ],
     answer_key: [true, true, true, true, true],
     tactical_explanations: [
       `**A.** → True
@@ -13202,7 +13202,7 @@ $$f'(3)<0$$
 Negative $f'$ means $f$ is decreasing at $x=3$
 
 Putting that figure reading next to the claim, every asserted sign, height, or classification matches what the axes show, so the statement is True.`
-    ]
+    ],
     difficulty_level: "5/5",
     sort_order: 149,
     solution_overview: `Read the figure first: name the drawn curve(s), mark zeros and sample heights, then translate signs into monotonicity and turning points.
@@ -13227,7 +13227,7 @@ Extrema of brown line up with zeros of green: at a local maximum of brown, green
       "At $x=5$, brown is negative, so firm 1's profit is decreasing in output at $x=5$.",
       "The first firm to hit a zero of marginal profit when moving right from $x=0$ is not necessarily firm 1.",
       "If at some $x$ one curve is above another and both are positive, that firm has the larger instantaneous profit gain per unit."
-    ]
+    ],
     answer_key: [true, false, true, true, true],
     tactical_explanations: [
       `**A.** → True
@@ -13285,7 +13285,7 @@ $$P_i'>P_j'>0\\quad\\Rightarrow\\quad\\text{firm }i\\text{ has the larger instan
 Height comparison of positive $P'$ values is exactly that ranking
 
 Putting that figure reading next to the claim, every asserted sign, height, or classification matches what the axes show, so the statement is True.`
-    ]
+    ],
     difficulty_level: "5/5",
     sort_order: 150,
     solution_overview: `Three marginal-profit curves $P_1'$ (brown), $P_2'$ (green), and $P_3'$ (purple) share one pair of axes. At $x=0$:
@@ -13308,7 +13308,7 @@ so firm 2 starts with negative marginal profit. Brown crosses near $x=4$ and is 
       "At $x=2.5$, brown is negative while green is also negative.",
       "On $(3,5)$, brown is positive while green is negative: $f$ increases and $g$ decreases there.",
       "Equal numbers of zeros imply $\\max f = \\max g$."
-    ]
+    ],
     answer_key: [true, true, true, true, false],
     tactical_explanations: [
       `**A.** → True
@@ -13364,7 +13364,7 @@ Equal numbers of zeros of $f'$ and $g'$ only say $f$ and $g$ have the same numbe
 $$\\#\\{f'=0\\}=\\#\\{g'=0\\}\\qquad\\nRightarrow\\qquad\\max f=\\max g$$
 
 Once that mismatch with the figure is clear, the claim cannot stand. Comparing the assertion with the axes, the statement is False.`
-    ]
+    ],
     difficulty_level: "5/5",
     sort_order: 151,
     solution_overview: `Read the figure first: name the drawn curve(s), mark zeros and sample heights, then translate signs into monotonicity and turning points.
@@ -13389,7 +13389,7 @@ At $x=0$ both are positive with $g'(0)>f'(0)$. At $x=2.5$ both sit below the axi
       "Green opens upward and is negative at $x=0$.",
       "Wherever green is positive, brown is increasing as a function of $x$.",
       "Purple being a vertical shift/scaling of brown means purple and brown share the same zeros."
-    ]
+    ],
     answer_key: [true, true, true, true, false],
     tactical_explanations: [
       `**A.** → True
@@ -13447,7 +13447,7 @@ $$h'=\\text{shift/scale of }f'\\qquad\\nRightarrow\\qquad\\text{same zero set}$$
 On the figure purple and brown meet the axis at different $x$-values
 
 Once that mismatch with the figure is clear, the claim cannot stand. Comparing the assertion with the axes, the statement is False.`
-    ]
+    ],
     difficulty_level: "5/5",
     sort_order: 152,
     solution_overview: `Read the figure first: name the drawn curve(s), mark zeros and sample heights, then translate signs into monotonicity and turning points.
@@ -13472,7 +13472,7 @@ Green opens upward (U-shaped) and is negative at $x=0$. At $x=3$ brown sits near
       "Zeros of $B$ occur under a local max and a local min of $A$.",
       "Wherever $B>0$, the brown curve $A$ is rising.",
       "The purple curve having a zero means $A=B$ at that $x$, i.e. $A(x)=A'(x)$."
-    ]
+    ],
     answer_key: [true, false, true, true, true],
     tactical_explanations: [
       `**A.** → True
@@ -13530,7 +13530,7 @@ $$A(x)=A'(x)$$
 so the claim's reading is correct, and the statement is True.
 
 Putting that figure reading next to the claim, every asserted sign, height, or classification matches what the axes show, so the statement is True.`
-    ]
+    ],
     difficulty_level: "5/5",
     sort_order: 153,
     solution_overview: `Read the figure first: name the drawn curve(s), mark zeros and sample heights, then translate signs into monotonicity and turning points.
@@ -13555,7 +13555,7 @@ while purple sits above brown on the shared scale (not below). Because $B=A'$, z
       "On $(1,2)$ one has $f'<0$, so $f$ decreases on $(1,2)$.",
       "The local maximum of $f$ among these critical points is at $x=1$.",
       "At $x=-2$, $f'$ changes from positive to negative, so $x=-2$ is a local maximum of $f$."
-    ]
+    ],
     answer_key: [true, true, true, true, false],
     tactical_explanations: [
       `**A.** → True
@@ -13611,7 +13611,7 @@ $$f'\\text{ changes }-\\to+\\text{ at }x=-2$$
 so $x=-2$ is a local minimum of $f$, not a local maximum, and the statement is False.
 
 Once that mismatch with the figure is clear, the claim cannot stand. Comparing the assertion with the axes, the statement is False.`
-    ]
+    ],
     difficulty_level: "5/5",
     sort_order: 154,
     solution_overview: `The figure shows $f'$ with zeros at $x=-2$, $1$, and $2$. Sign chart from the figure:
@@ -13634,7 +13634,7 @@ So $f$ increases on $(-2,1)$ and decreases on $(1,2)$. At $x=-1$ the height is a
       "Purple crosses the axis at different $x$-values from brown.",
       "Wherever green is positive, brown is rising.",
       "Because purple is just brown shifted down by $2$, brown and purple have the same local max/min $x$-coordinates."
-    ]
+    ],
     answer_key: [true, true, true, true, true],
     tactical_explanations: [
       `**A.** → True
@@ -13690,7 +13690,7 @@ $$(f'-2)'=f''$$
 so the $x$-coordinates of local max/min of purple match those of brown. Only the heights differ by $2$, and the statement is True.
 
 Putting that figure reading next to the claim, every asserted sign, height, or classification matches what the axes show, so the statement is True.`
-    ]
+    ],
     difficulty_level: "5/5",
     sort_order: 155,
     solution_overview: `Read the figure first: name the drawn curve(s), mark zeros and sample heights, then translate signs into monotonicity and turning points.
@@ -13711,7 +13711,7 @@ Brown is $f'$, green is $f''$, and purple is the vertical shift $f'-2$ on one pl
       "At $x=0$, brown is already positive.",
       "Purple crosses from positive to negative somewhere in $(4,5)$.",
       "All three firms have the same expand/contract recommendation at every $x$ in $(0,6)$."
-    ]
+    ],
     answer_key: [true, true, false, true, false],
     tactical_explanations: [
       `**A.** → True
@@ -13769,7 +13769,7 @@ $$\\text{signs disagree at }x=3$$
 so the three firms do not share the same recommendation on $(0,6)$, and the statement is False.
 
 Once that mismatch with the figure is clear, the claim cannot stand. Comparing the assertion with the axes, the statement is False.`
-    ]
+    ],
     difficulty_level: "5/5",
     sort_order: 156,
     solution_overview: `Brown, green, and purple are three firms' marginal profits on shared axes. At $x=3$ brown and purple sit above the axis while green sits below — opposite expand/contract advice. Brown starts below the axis at $x=0$ and only becomes positive after $x=1$; it later crosses from $+$ to $-$ near $x=5$, so firm A has a local profit peak there. Purple crosses from positive to negative somewhere in $(4,5)$. Because signs disagree at even one $x$ (e.g. $x=3$), the three firms do not share one expand/contract recommendation on the whole of $(0,6)$.`,
@@ -13788,7 +13788,7 @@ Once that mismatch with the figure is clear, the claim cannot stand. Comparing t
       "Where green is negative, brown is falling.",
       "The highest point of green is a local maximum of brown.",
       "At $x=3$, green is near height $4$, matching the steepest climb of brown."
-    ]
+    ],
     answer_key: [true, true, true, false, true],
     tactical_explanations: [
       `**A.** → True
@@ -13846,7 +13846,7 @@ $$f'(3)\\approx 4$$
 so the reading matches the steepest climb of brown, and the statement is True.
 
 Putting that figure reading next to the claim, every asserted sign, height, or classification matches what the axes show, so the statement is True.`
-    ]
+    ],
     difficulty_level: "5/5",
     sort_order: 157,
     solution_overview: `Read the figure first: name the drawn curve(s), mark zeros and sample heights, then translate signs into monotonicity and turning points.
@@ -13867,7 +13867,7 @@ Brown is $f$ and green is $f'$ on one shared plane. Consistency checks: turning 
       "Green is zero at some interior point between $1$ and $4$ where brown has a lowest point.",
       "On $(4,5)$, brown is positive, so $f$ is increasing there.",
       "A zero of green always forces a local extremum of $f$."
-    ]
+    ],
     answer_key: [true, true, true, true, false],
     tactical_explanations: [
       `**A.** → True
@@ -13925,7 +13925,7 @@ $$f''=0\\qquad\\nRightarrow\\qquad\\text{local extremum of }f$$
 Local extrema of $f$ need zeros of brown with a sign change
 
 Once that mismatch with the figure is clear, the claim cannot stand. Comparing the assertion with the axes, the statement is False.`
-    ]
+    ],
     difficulty_level: "5/5",
     sort_order: 158,
     solution_overview: `Read the figure first: name the drawn curve(s), mark zeros and sample heights, then translate signs into monotonicity and turning points.
@@ -13946,7 +13946,7 @@ Brown is $f'$ and green is $f''$. Brown touches the axis at $x=1$ without an ord
       "Late in the window, green stays positive while brown falls below it, so purple becomes negative.",
       "A local profit peak occurs where purple changes from positive to negative.",
       "Because green never crosses the axis, total cost has a local maximum in the window."
-    ]
+    ],
     answer_key: [true, true, true, true, false],
     tactical_explanations: [
       `**A.** → True
@@ -14002,7 +14002,7 @@ $$C'>0\\text{ throughout}\\quad\\Rightarrow\\quad\\text{no local max of }C$$
 A never-zero positive $C'$ rules out a local max of $C$
 
 Once that mismatch with the figure is clear, the claim cannot stand. Comparing the assertion with the axes, the statement is False.`
-    ]
+    ],
     difficulty_level: "5/5",
     sort_order: 159,
     solution_overview: `Brown is marginal revenue $R'$, green is marginal cost $C'$, and purple is marginal profit $P'=R'-C'$ on one plane. By construction purple is positive precisely where brown lies above green. At $x=2$ brown is near its peak and still above green, so purple is positive there. Late in the window green stays positive while brown falls below it, so purple becomes negative. A local profit peak occurs where purple changes from $+$ to $-$. Green never crossing the axis means $C'>0$ throughout, so total cost keeps rising — there is no local cost maximum from a sign change of $C'$.`,
@@ -14021,7 +14021,7 @@ Once that mismatch with the figure is clear, the claim cannot stand. Comparing t
       "Purple stays above brown by about $1$ everywhere in the window.",
       "At $x=1$, brown is positive, so $f$ is increasing at $x=1$.",
       "Purple touches the axis at $x=3$ without changing sign, so that touch need not give a local extremum of $h$."
-    ]
+    ],
     answer_key: [true, true, true, true, true],
     tactical_explanations: [
       `**A.** → True
@@ -14079,7 +14079,7 @@ $$h'(3)=0\\text{ with no sign change}$$
 Without a genuine sign change, that touch need not give a local extremum of $h$
 
 Putting that figure reading next to the claim, every asserted sign, height, or classification matches what the axes show, so the statement is True.`
-    ]
+    ],
     difficulty_level: "5/5",
     sort_order: 160,
     solution_overview: `Read the figure first: name the drawn curve(s), mark zeros and sample heights, then translate signs into monotonicity and turning points.
