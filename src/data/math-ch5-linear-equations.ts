@@ -6796,13 +6796,11 @@ Start from the overview’s recovered unknowns, then test the named figure.
 
 At fixed per-meter prices, combining Project 1 and Project 3 is linear. Combined metres are $28$ m wood and $64$ m wire.
 
-$$28(27) + 64(11)$$
+$$28\\cdot 27 = 756$$
 
-$$= 756 + 704$$
+$$64\\cdot 11 = 704$$
 
-$$
-= 1460
-$$
+$$756 + 704 = 1460$$
 
 $$750 + 710$$
 
@@ -7639,13 +7637,11 @@ $$
 
 The overview recovered $A = 7.6$ kg/L and $B = 11.4$ kg/L. Batch 1 with $10$ L of B instead of $8$ L would mass
 
-$$12(7.6) + 10(11.4)$$
+$$12\\cdot 7.6 = 91.2$$
 
-$$= 91.2 + 114$$
+$$10\\cdot 11.4 = 114$$
 
-$$
-= 205.2
-$$
+$$91.2 + 114 = 205.2$$
 
 Since $205.2 > 200$, the total would exceed $200$ kg.
 
@@ -7688,13 +7684,11 @@ The shared solve is done; only this claim’s comparison remains.
 
 If Batch 3 used $10$ L of A instead of $9.5$ L, with $6$ L of B still, the predicted mass at the recovered densities is
 
-$$10(7.6) + 6(11.4)$$
+$$10\\cdot 7.6 = 76$$
 
-$$= 76 + 68.4$$
+$$6\\cdot 11.4 = 68.4$$
 
-$$
-= 144.4
-$$
+$$76 + 68.4 = 144.4$$
 
 $$|144.4 - 147.0|$$
 
@@ -7962,13 +7956,11 @@ Using the recovered solution values $A = 8.4$ and $B = 15.6$ as inputs for this 
 
 Doubling Batch 1's Suspension B volume from $300$ mL to $600$ mL gives
 
-$$500(8.4) + 600(15.6)$$
+$$500\\cdot 8.4 = 4200$$
 
-$$= 4200 + 9360$$
+$$600\\cdot 15.6 = 9360$$
 
-$$
-= 13560
-$$
+$$4200 + 9360 = 13560$$
 
 Since $13560 > 13500$, the new total would exceed $13500$ mg.
 
