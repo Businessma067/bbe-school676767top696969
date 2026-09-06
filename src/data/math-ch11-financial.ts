@@ -15417,7 +15417,15 @@ $$131,495.10 - 129,213.75$$
 
 $$= 2,281.35$$
 
-The claim is \\$4,280.35. We have $2,281.35 \\ne 4,280.35$.
+The claim is \\$4,280.35. The computed value is
+
+$$2,281.35$$
+
+The claim is
+
+$$4,280.35$$
+
+Since $2,281.35 \\ne 4,280.35$, the figures disagree.
 
 So the statement is False.`,
       `**D.** → False
@@ -15587,6 +15595,24 @@ So the statement is True.`,
 
 The lump sum earns 6.25% on the full \\$75,000 from day one. The annuity's later deposits sit for fewer years, so they accumulate less. That timing gap is why $S_{\\mathrm{cont}}$ exceeds $F_9$.
 
+Substitute the recovered stem inputs:
+
+$$P = 75,000,$$
+
+$$r = 6.25\\%$$
+
+$$r = 0.0625,$$
+
+$$t = 9$$
+
+$$rt = 0.0625 \\times 9$$
+
+$$rt = 0.5625$$
+
+$$S_{\\mathrm{cont}} = 75,000 e^{0.5625}$$
+
+$$S_{\\mathrm{cont}} = 131,629.13$$
+
 So the statement is True.`,
       `**E.** → True
 
@@ -15696,7 +15722,15 @@ $$
 = 26,610.90
 $$
 
-Compare the computed value with the claim (\\$27,610.90). We have $26,610.90 \\ne 27,610.90$. The two sides do not agree.
+Compare the computed value with the claim (\\$27,610.90). The computed value is
+
+$$26,610.90$$
+
+The claim is
+
+$$27,610.90$$
+
+Since $26,610.90 \\ne 27,610.90$, the figures disagree. The two sides do not agree.
 
 So the statement is False.`,
       `**C.** → False
@@ -16071,6 +16105,28 @@ So the statement is True.`,
 
 Interest in year 1 is the opening balance times the periodic rate, independent of the instalment size:
 
+Substitute the recovered stem inputs:
+
+$$K = 60,000,$$
+
+$$r = 0.12,$$
+
+$$n = 6$$
+
+$$a = \\frac{0.12 \\times 60,000}{1-(1.12)^{-6}}$$
+
+$$a = \\frac{7,200}{0.493369}$$
+
+$$a \\approx 14,593.54$$
+
+$$0.12 \\times 60,000$$
+
+$$= 7,200$$
+
+$$14,593.54 - 7,200$$
+
+$$= 7,393.54$$
+
 $$
 I_1 = 60,000 \\times 0.12
 $$
@@ -16085,6 +16141,28 @@ So the statement is True.`,
       `**D.** → True
 
 Read the figure already produced by the shared solve, then compare it with the claim.
+
+Substitute the recovered stem inputs:
+
+$$K = 60,000,$$
+
+$$r = 0.12,$$
+
+$$n = 6$$
+
+$$a = \\frac{0.12 \\times 60,000}{1-(1.12)^{-6}}$$
+
+$$a = \\frac{7,200}{0.493369}$$
+
+$$a \\approx 14,593.54$$
+
+$$0.12 \\times 60,000$$
+
+$$= 7,200$$
+
+$$14,593.54 - 7,200$$
+
+$$= 7,393.54$$
 
 The overview recovered first-year principal as $7,393.54$. Half the payment is
 
@@ -16376,6 +16454,20 @@ So the statement is True.`,
 
 The overview recovered the year-3 closing balance as \\$20,602.37. Year-4 interest and principal are
 
+Substitute the recovered stem inputs:
+
+$$K = 45,000,$$
+
+$$r = 0.10,$$
+
+$$n = 5$$
+
+$$a = \\frac{0.10 \\times 45,000}{1-(1.10)^{-5}}$$
+
+$$a = \\frac{4,500}{0.379079}$$
+
+$$a \\approx 11,870.89$$
+
 $$0.10 \\times 20,602.37$$
 
 $$= 2,060.24$$
@@ -16390,6 +16482,20 @@ So the statement is False.`,
       `**E.** → False
 
 Principal portions retire the original loan and nothing else, so they sum to $K=45,000$. The claim is \\$46,200.00.
+
+Substitute the recovered stem inputs:
+
+$$K = 45,000,$$
+
+$$r = 0.10,$$
+
+$$n = 5$$
+
+$$a = \\frac{0.10 \\times 45,000}{1-(1.10)^{-5}}$$
+
+$$a = \\frac{4,500}{0.379079}$$
+
+$$a \\approx 11,870.89$$
 
 So the statement is False.`,
     ],
@@ -16483,6 +16589,28 @@ So the statement is True.`,
       `**C.** → False
 
 End-of-year timing is an ordinary annuity. The overview recovered $a_{\\mathrm{ordinary}} \\approx 25,470.21$. Then
+
+Substitute the recovered stem inputs:
+
+$$K = 150,000,$$
+
+$$r = 0.11,$$
+
+$$n = 10$$
+
+$$
+\\frac{K}{a} = 1 + \\frac{1}{0.11}\\bigl[1-(1.11)^{-9}\\bigr]
+$$
+
+$$\\frac{K}{a} = 1 + 5.537048$$
+
+$$\\frac{K}{a}$$
+
+$$\\approx 6.537048$$
+
+$$a = \\frac{150,000}{6.537048}$$
+
+$$a \\approx 22,946.14$$
 
 $$25,470.21 > 22,946.14$$
 
@@ -16615,6 +16743,34 @@ So the statement is True.`,
 
 Read the figure already produced by the shared solve, then compare it with the claim.
 
+Substitute the recovered stem inputs:
+
+$$K = 35,000,$$
+
+$$r = 0.13,$$
+
+$$a = 10,000$$
+
+$$
+\\frac{\\ln(10,000)-\\ln(10,000-0.13 \\times 35,000)}{\\ln(1.13)}
+$$
+
+$$= \\frac{\\ln(10,000)-\\ln(5,450)}{\\ln(1.13)}$$
+
+$$
+\\frac{\\ln(10,000)-\\ln(10,000-0.13 \\times 35,000)}{\\ln(1.13)}
+$$
+
+$$\\approx 4.9663$$
+
+$$\\frac{10,000}{0.13}\\bigl[(1.13)^{4}-1\\bigr]$$
+
+$$\\approx 48,497.97$$
+
+$$8,568.61 \\times 1.13$$
+
+$$= 9,682.53$$
+
 The overview recovered the fifth and final payment as \\$9,682.53. The claim is that same figure.
 
 So the statement is True.`,
@@ -16717,6 +16873,22 @@ So the statement is True.`,
 
 The overview recovered $PV_{\\mathrm{B}} \\approx 535,526.07$ at $10\\%$. Option A is \\$500,000 today. Then
 
+Substitute the recovered stem inputs:
+
+$$a = 100,000,$$
+
+$$n = 7$$
+
+$$
+PV_{\\mathrm{B}} = 100,000 + \\frac{100,000}{0.10}\\bigl[1-(1.10)^{-6}\\bigr]
+$$
+
+$$
+PV_{\\mathrm{B}} = 100,000 + \\frac{100,000}{0.14}\\bigl[1-(1.14)^{-6}\\bigr]
+$$
+
+$$PV_{\\mathrm{B}} \\approx 488,866.75$$
+
 $$535,526.07 > 500,000$$
 
 Option A is cheaper at $10\\%$.
@@ -16737,6 +16909,22 @@ So the statement is False.`,
 
 Read the figure already produced by the shared solve, then compare it with the claim.
 
+Substitute the recovered stem inputs:
+
+$$a = 100,000,$$
+
+$$n = 7$$
+
+$$
+PV_{\\mathrm{B}} = 100,000 + \\frac{100,000}{0.10}\\bigl[1-(1.10)^{-6}\\bigr]
+$$
+
+$$PV_{\\mathrm{B}} \\approx 535,526.07$$
+
+$$
+PV_{\\mathrm{B}} = 100,000 + \\frac{100,000}{0.14}\\bigl[1-(1.14)^{-6}\\bigr]
+$$
+
 The overview recovered $PV_{\\mathrm{B}} \\approx 488,866.75$ at $14\\%$. Then
 
 $$488,866.75 < 500,000$$
@@ -16747,6 +16935,24 @@ So the statement is True.`,
       `**E.** → False
 
 At $10\\%$ Option B costs about \\$535,526, above cash. At $14\\%$ it costs about \\$488,867, below cash. The cheaper choice depends on the rate.
+
+Substitute the recovered stem inputs:
+
+$$a = 100,000,$$
+
+$$n = 7$$
+
+$$
+PV_{\\mathrm{B}} = 100,000 + \\frac{100,000}{0.10}\\bigl[1-(1.10)^{-6}\\bigr]
+$$
+
+$$PV_{\\mathrm{B}} \\approx 535,526.07$$
+
+$$
+PV_{\\mathrm{B}} = 100,000 + \\frac{100,000}{0.14}\\bigl[1-(1.14)^{-6}\\bigr]
+$$
+
+$$PV_{\\mathrm{B}} \\approx 488,866.75$$
 
 So the statement is False.`,
     ],
@@ -17012,6 +17218,26 @@ So the statement is False.`,
       `**D.** → True
 
 The overview recovered $B_{60} \\approx 169,799.20$. Principal repaid in five years is
+
+Substitute the recovered stem inputs:
+
+$$K = 200,000,$$
+
+$$n = 20 \\times 12$$
+
+$$n = 240,$$
+
+$$m = 5 \\times 12$$
+
+$$m = 60$$
+
+$$r = \\frac{0.06}{12}$$
+
+$$r = 0.005$$
+
+$$
+a = \\frac{0.005 \\times 200,000}{1-(1.005)^{-240}}
+$$
 
 $$200,000 - 169,799.20$$
 
