@@ -7622,6 +7622,14 @@ So the statement is True.`,
 
 The overview recovered the critical holding time $t^{*}$ from the first-order condition. Compare that time with half of the original optimum:
 
+Substitute the recovered stem inputs:
+
+$$f(23) = 5,000(25)^{2}e^{-0.08\\times 23}$$
+
+$$f(23) = 3,125,000\\,e^{-1.84}$$
+
+$$f(23) \\approx 496,304.46$$
+
 At an interior optimum the derivative of the objective must vanish. Check the overview's first-order condition against the claimed stationarity figure.
 
 The overview used $P'(t^{*})=rP(t^{*})$. The claim instead sets $P'(t^{*})$ equal to $\\frac{P(t^{*})}{r}$.
@@ -7652,6 +7660,14 @@ So the statement is False.`,
       `**E.** → False
 
 At $t=25$,
+
+Substitute the recovered stem inputs:
+
+$$f(23) = 5,000(25)^{2}e^{-0.08\\times 23}$$
+
+$$f(23) = 3,125,000\\,e^{-1.84}$$
+
+$$f(23) \\approx 496,304.46$$
 
 $$
 f(25) = 5,000(27)^{2}e^{-0.08\\times 25}
@@ -7902,6 +7918,26 @@ So the statement is False.`,
 
 The overview recovered $1+r_a=e^{0.05}$. At a $3$-year horizon the two clocks agree:
 
+Substitute the recovered stem inputs:
+
+$$K = 50,000,$$
+
+$$r = 0.05,$$
+
+$$t = 7$$
+
+$$rt = 0.35,$$
+
+$$e^{-0.35}$$
+
+$$\\approx 0.704688$$
+
+$$\\mathrm{PDV} = 50,000 \\times 0.704688$$
+
+$$\\mathrm{PDV} \\approx 35,234.40$$
+
+$$1+r_a = e^{0.05}$$
+
 $$
 \\mathrm{PDV} = 50,000\\,e^{-0.05\\times 3}
 $$
@@ -7916,6 +7952,26 @@ So the statement is True.`,
       `**E.** → False
 
 Read the figure already produced by the shared solve, then compare it with the claim.
+
+Substitute the recovered stem inputs:
+
+$$K = 50,000,$$
+
+$$r = 0.05,$$
+
+$$t = 7$$
+
+$$rt = 0.35,$$
+
+$$e^{-0.35}$$
+
+$$\\approx 0.704688$$
+
+$$\\mathrm{PDV} = 50,000 \\times 0.704688$$
+
+$$\\mathrm{PDV} \\approx 35,234.40$$
+
+$$1+r_a = e^{0.05}$$
 
 The overview recovered $r_a\\approx 5.13\\%$. The gap from the continuous quote is
 
@@ -8053,6 +8109,24 @@ So the statement is True.`,
 
 If the second receivable is due in $3$ years instead, the overview's required present value $\\mathrm{PV}_2=64,735.99$ accumulates for only three years:
 
+Substitute the recovered stem inputs:
+
+$$K_1 = 42,000,$$
+
+$$t_1 = 3,$$
+
+$$t_2 = 6$$
+
+$$\\mathrm{PDV}_{\\mathrm{target}} = 100,000,$$
+
+$$r = 0.06$$
+
+$$\\mathrm{PV}_1 = \\frac{42,000}{(1.06)^{3}}$$
+
+$$\\mathrm{PV}_1 = \\frac{42,000}{1.191016}$$
+
+$$\\mathrm{PV}_1 \\approx 35,264.01$$
+
 $$K_2 = 64,735.99\\times(1.06)^{3}$$
 
 $$\\approx 77,101.60$$
@@ -8063,6 +8137,24 @@ So the statement is False.`,
       `**E.** → True
 
 The overview recovered that the second receivable must contribute $\\mathrm{PV}_2=64,735.99$ today. Accumulating that amount for $6$ years at $8\\%$,
+
+Substitute the recovered stem inputs:
+
+$$K_1 = 42,000,$$
+
+$$t_1 = 3,$$
+
+$$t_2 = 6$$
+
+$$\\mathrm{PDV}_{\\mathrm{target}} = 100,000,$$
+
+$$r = 0.06$$
+
+$$\\mathrm{PV}_1 = \\frac{42,000}{(1.06)^{3}}$$
+
+$$\\mathrm{PV}_1 = \\frac{42,000}{1.191016}$$
+
+$$\\mathrm{PV}_1 \\approx 35,264.01$$
 
 $$K_2 = 64,735.99\\times(1.08)^{6}$$
 
@@ -8171,6 +8263,26 @@ So the statement is False.`,
 
 The overview recovered $K\\approx 45,392.55$. The excess over the immediate option is
 
+Substitute the recovered stem inputs:
+
+$$\\mathrm{PV}_0 = 35,000,$$
+
+$$r = 0.065,$$
+
+$$t = 4$$
+
+$$rt = 0.065 \\times 4$$
+
+$$rt = 0.26,$$
+
+$$e^{-0.26}$$
+
+$$\\approx 0.7711$$
+
+$$K = \\frac{35,000}{0.7711}$$
+
+$$K \\approx 45,392.55$$
+
 $$45,392.55-35,000$$
 
 $$= 10,392.55$$
@@ -8182,6 +8294,26 @@ So the statement is False.`,
 
 At $r=0.09$ the four-year factor changes:
 
+Substitute the recovered stem inputs:
+
+$$\\mathrm{PV}_0 = 35,000,$$
+
+$$r = 0.065,$$
+
+$$t = 4$$
+
+$$rt = 0.065 \\times 4$$
+
+$$rt = 0.26,$$
+
+$$e^{-0.26}$$
+
+$$\\approx 0.7711$$
+
+$$K = \\frac{35,000}{0.7711}$$
+
+$$K \\approx 45,392.55$$
+
 $$
 K = 35,000\\,e^{0.09\\times 4}
 $$
@@ -8190,12 +8322,40 @@ $$= 35,000\\,e^{0.36}$$
 
 $$\\approx 50,166.53$$
 
-The overview recovered $K\\approx 45,392.55$ at $6.5\\%$. We have $50,166.53\\neq 45,392.55$.
+The overview recovered $K\\approx 45,392.55$ at $6.5\\%$. The computed value is
+
+$$50,166.53$$
+
+The claim is
+
+$$q 45,392.55$$
+
+Since $50,166.53 \\ne q 45,392.55$, the figures disagree.
 
 So the statement is False.`,
       `**E.** → True
 
 At a $2$-year horizon with the original $6.5\\%$ rate,
+
+Substitute the recovered stem inputs:
+
+$$\\mathrm{PV}_0 = 35,000,$$
+
+$$r = 0.065,$$
+
+$$t = 4$$
+
+$$rt = 0.065 \\times 4$$
+
+$$rt = 0.26,$$
+
+$$e^{-0.26}$$
+
+$$\\approx 0.7711$$
+
+$$K = \\frac{35,000}{0.7711}$$
+
+$$K \\approx 45,392.55$$
 
 $$
 K = 35,000\\,e^{0.065\\times 2}
@@ -8363,6 +8523,22 @@ The interior condition would need $0.05P(t^{*})=0.08P(t^{*})$, which is impossib
 
 The overview recovered the critical holding time $t^{*}$ from the first-order condition. Compare that time with half of the original optimum:
 
+Substitute the recovered stem inputs:
+
+$$P(t^{*})=520,000,$$
+
+$$P'(t^{*})=46,800,$$
+
+$$P''(t^{*})=3,120,$$
+
+$$r=0.09$$
+
+$$P''(t^{*})-rP'(t^{*}) = 3,120-0.09\\times 46,800$$
+
+$$P''(t^{*})-rP'(t^{*}) = 3,120-4,212$$
+
+$$P''(t^{*})-rP'(t^{*}) = -1,092$$
+
 At an interior optimum the derivative of the objective must vanish. Check the overview's first-order condition against the claimed stationarity figure.
 
 The overview checked $0.09\\times 520,000=46,800$, which matches $P'(t^{*})$. The first-order condition holds.
@@ -8413,6 +8589,26 @@ So the statement is True.`,
       `**D.** → False
 
 The overview recovered the critical holding time $t^{*}$ from the first-order condition. Compare that time with half of the original optimum:$$\\frac{dt^{*}}{dr}$$
+
+Substitute the recovered stem inputs:
+
+$$P(t^{*})=520,000,$$
+
+$$P'(t^{*})=46,800,$$
+
+$$P''(t^{*})=3,120,$$
+
+$$r=0.09$$
+
+$$0.09\\times 520,000$$
+
+$$= 46,800$$
+
+$$P''(t^{*})-rP'(t^{*}) = 3,120-0.09\\times 46,800$$
+
+$$P''(t^{*})-rP'(t^{*}) = 3,120-4,212$$
+
+$$P''(t^{*})-rP'(t^{*}) = -1,092$$
 
 $$\\approx -476.19<0$$
 
@@ -8535,6 +8731,26 @@ So the statement is True.`,
 
 The overview recovered the critical holding time $t^{*}$ from the first-order condition. Compare that time with half of the original optimum:
 
+Substitute the recovered stem inputs:
+
+$$P(t^{*}) = 3,000(22.22)^{2}$$
+
+$$P(t^{*})$$
+
+$$\\approx 1,481,481.48$$
+
+$$P'(t^{*}) = 6,000\\times 22.22$$
+
+$$P'(t^{*})$$
+
+$$\\approx 133,333.33$$
+
+$$
+P''(t^{*})-rP'(t^{*}) = 6,000-0.09\\times 133,333.33
+$$
+
+$$P''(t^{*})-rP'(t^{*}) = -6,000$$
+
 The overview recovered $P(t^{*})\\approx 1,481,481.48$. Discounting to the present,
 
 $$f(t^{*}) = 1,481,481.48\\,e^{-0.09\\times 18.22}$$
@@ -8557,6 +8773,26 @@ So the statement is False.`,
 
 Write overview recovered the critical holding time $t^{*}$ from the first-order condition. Compare that time with half of the original optimum:
 
+Substitute the recovered stem inputs:
+
+$$P(t^{*}) = 3,000(22.22)^{2}$$
+
+$$P(t^{*})$$
+
+$$\\approx 1,481,481.48$$
+
+$$P'(t^{*}) = 6,000\\times 22.22$$
+
+$$P'(t^{*})$$
+
+$$\\approx 133,333.33$$
+
+$$
+P''(t^{*})-rP'(t^{*}) = 6,000-0.09\\times 133,333.33
+$$
+
+$$P''(t^{*})-rP'(t^{*}) = -6,000$$
+
 The overview recovered $P(t^{*})\\approx 1,481,481.48$ and denominator $-6,000$:
 
 $$\\frac{dt^{*}}{dr} = \\frac{1,481,481.48}{-6,000}$$
@@ -8570,6 +8806,26 @@ So the statement is False.`,
 
 Using the same setup, the overview recovered the critical holding time $t^{*}$ from the first-order condition. Compare that time with half of the original optimum:
 
+Substitute the recovered stem inputs:
+
+$$P(t^{*}) = 3,000(22.22)^{2}$$
+
+$$P(t^{*})$$
+
+$$\\approx 1,481,481.48$$
+
+$$P'(t^{*}) = 6,000\\times 22.22$$
+
+$$P'(t^{*})$$
+
+$$\\approx 133,333.33$$
+
+$$
+P''(t^{*})-rP'(t^{*}) = 6,000-0.09\\times 133,333.33
+$$
+
+$$P''(t^{*})-rP'(t^{*}) = -6,000$$
+
 Read the figure already produced by the shared solve, then compare it with the claim.
 
 The overview recovered $t^{*}=\\frac{2}{r}-4$. At $r=0.045$,
@@ -8582,7 +8838,15 @@ $$
 = 40.44
 $$
 
-Double the original $18.22$ would be $36.44$. We have $40.44\\neq 36.44$.
+Double the original $18.22$ would be $36.44$. The computed value is
+
+$$40.44$$
+
+The claim is
+
+$$q 36.44$$
+
+Since $40.44 \\ne q 36.44$, the figures disagree.
 
 So the statement is False.`,
     ],
@@ -8681,6 +8945,26 @@ So the statement is False.`,
       `**D.** → False
 
 Read the figure already produced by the shared solve, then compare it with the claim.
+
+Substitute the recovered stem inputs:
+
+$$K_1 = 250,000,$$
+
+$$t_1 = 2.5$$
+
+$$K_2 = 40,000,$$
+
+$$t_2 = \\frac{7}{12},$$
+
+$$r = 0.11$$
+
+$$rt_1 = 0.11 \\times 2.5$$
+
+$$rt_1 = 0.275,$$
+
+$$e^{-0.275}$$
+
+$$\\approx 0.759572$$
 
 The overview recovered $\\mathrm{PV}_2\\approx 37,513.95$. The haircut from face is
 
@@ -8852,6 +9136,26 @@ So the statement is True.`,
 
 At a \\$3,600,000 payout,
 
+Substitute the recovered stem inputs:
+
+$$\\mathrm{PDV} = 2,000,000,$$
+
+$$K = 3,200,000,$$
+
+$$t = 4.5$$
+
+$$
+\\frac{\\mathrm{PDV}}{K} = \\frac{2,000,000}{3,200,000}
+$$
+
+$$\\frac{\\mathrm{PDV}}{K} = 0.625$$
+
+$$r = -\\frac{\\ln(0.625)}{4.5}$$
+
+$$r = \\frac{0.470004}{4.5}$$
+
+$$r \\approx 0.1044 = 10.44\\%$$
+
 $$
 r = -\\frac{\\ln\\!\\left(\\frac{2,000,000}{3,600,000}\\right)}{4.5}
 $$
@@ -8868,6 +9172,26 @@ So the statement is True.`,
       `**D.** → False
 
 At a $3$-year horizon with the original discount factor $0.625$,
+
+Substitute the recovered stem inputs:
+
+$$\\mathrm{PDV} = 2,000,000,$$
+
+$$K = 3,200,000,$$
+
+$$t = 4.5$$
+
+$$
+\\frac{\\mathrm{PDV}}{K} = \\frac{2,000,000}{3,200,000}
+$$
+
+$$\\frac{\\mathrm{PDV}}{K} = 0.625$$
+
+$$r = -\\frac{\\ln(0.625)}{4.5}$$
+
+$$r = \\frac{0.470004}{4.5}$$
+
+$$r \\approx 0.1044 = 10.44\\%$$
 
 $$
 r = -\\frac{\\ln(0.625)}{3}
@@ -9022,6 +9346,22 @@ So the statement is False.`,
 
 The overview recovered the critical holding time $t^{*}$ from the first-order condition. Compare that time with half of the original optimum:
 
+Substitute the recovered stem inputs:
+
+$$A=1,200,$$
+
+$$k=5,$$
+
+$$r=0.075$$
+
+$$t^{*} = \\frac{2}{0.075}-5$$
+
+$$t^{*} = 26.67-5$$
+
+$$t^{*}$$
+
+$$\\approx 21.67$$
+
 Read the figure already produced by the shared solve, then compare it with the claim.
 
 The overview recovered $t^{*}=\\frac{2}{r}-k$. At $k=8$,
@@ -9036,6 +9376,22 @@ So the statement is True.`,
       `**E.** → False
 
 The overview recovered the critical holding time $t^{*}$ from the first-order condition. Compare that time with half of the original optimum:
+
+Substitute the recovered stem inputs:
+
+$$A=1,200,$$
+
+$$k=5,$$
+
+$$r=0.075$$
+
+$$t^{*} = \\frac{2}{0.075}-5$$
+
+$$t^{*} = 26.67-5$$
+
+$$t^{*}$$
+
+$$\\approx 21.67$$
 
 Read the figure already produced by the shared solve, then compare it with the claim.
 
