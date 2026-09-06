@@ -76,6 +76,10 @@ P(3) = 9-12+7
 $$
 
 $$
+= 4
+$$
+
+$$
 9 - 12 = -3
 $$
 
@@ -200,6 +204,10 @@ $$
 
 $$
 C'(100) = 12+6
+$$
+
+$$
+= 18
 $$
 
 $$
@@ -437,6 +445,10 @@ $$
 
 $$
 R'(10) = 80-40
+$$
+
+$$
+= 40
 $$
 
 $$
@@ -1387,6 +1399,10 @@ R'(20) = 50-40
 $$
 
 $$
+= 10
+$$
+
+$$
 50 - 40 = 10
 $$
 
@@ -1407,6 +1423,10 @@ $$
 
 $$
 R(20) = 1000-400
+$$
+
+$$
+= 600
 $$
 
 $$
@@ -1563,6 +1583,22 @@ $$
 $$
 
 $$
+30\\times 64 = 1920
+$$
+
+$$
+1920\\times 4 = 7680
+$$
+
+$$
+30\\times 64 = 1920
+$$
+
+$$
+1920\\times 4 = 7680
+$$
+
+$$
 G''(0) = 7680
 $$
 
@@ -1654,11 +1690,11 @@ $$
 $$
 
 $$
-36 - 36 = 0
+= 0
 $$
 
 $$
-36-36 = 0
+36 - 36 = 0
 $$
 
 so the second derivative vanishes there. That is the natural candidate for an inflection point of $C$. The stem's formula is enough; no outside identity is required for the check. Substituting only after the general expression is finished avoids mixing height with slope. Coefficient and sign agreement with the claim is what decides the letter.
@@ -1670,6 +1706,10 @@ Evaluate the second derivative at $q=1$:
 
 $$
 C''(1) = 24-36
+$$
+
+$$
+= -12
 $$
 
 $$
@@ -1689,6 +1729,10 @@ Evaluate the second derivative at $q=2$:
 
 $$
 C''(2) = 48-36
+$$
+
+$$
+= 12
 $$
 
 $$
@@ -2620,6 +2664,10 @@ R'(20) = 60-20
 $$
 
 $$
+= 40
+$$
+
+$$
 60 - 20 = 40
 $$
 
@@ -3060,6 +3108,10 @@ $$
 
 $$
 U'(2) = 12-4
+$$
+
+$$
+= 8
 $$
 
 $$
@@ -4042,6 +4094,10 @@ C''(2) = 12-12
 $$
 
 $$
+= 0
+$$
+
+$$
 12 - 12 = 0
 $$
 
@@ -4058,6 +4114,10 @@ Evaluate the second derivative at $q=1$:
 
 $$
 C''(1) = 6-12
+$$
+
+$$
+= -6
 $$
 
 $$
@@ -4081,6 +4141,10 @@ $$
 
 $$
 C'(2) = 12-24+20
+$$
+
+$$
+= 8
 $$
 
 $$
@@ -4493,13 +4557,21 @@ So the statement is True.`,
 The linear approximation says a small change in output changes total cost by about the derivative times that change:
 
 $$
-C(Q+\\Delta Q)-C(Q)\\approx C^{\\prime}(Q)\\,\\Delta Q
+C(Q+\\Delta Q)-C(Q)
+$$
+
+$$
+C^{\\prime}(Q)\\,\\Delta Q
 $$
 
 With $\\Delta Q=1$ near $Q=120$ and $C^{\\prime}(120)=0.80$,
 
 $$
-C(121)-C(120)\\approx 0.80
+C(121)-C(120)
+$$
+
+$$
+0.80
 $$
 
 Each extra loaf near $120$ adds about $0.80$ euros to total cost
@@ -4572,11 +4644,19 @@ So the statement is False.`,
 The precise local meaning of the derivative is the linear approximation for small steps:
 
 $$
-C(50+\\Delta x)-C(50)\\approx C^{\\prime}(50)\\,\\Delta x
+C(50+\\Delta x)-C(50)
 $$
 
 $$
-C(50+\\Delta x)-C(50)\\approx 3\\cdot\\Delta x
+C^{\\prime}(50)\\,\\Delta x
+$$
+
+$$
+C(50+\\Delta x)-C(50)
+$$
+
+$$
+3\\cdot\\Delta x
 $$
 
 which is exactly the reading named in the claim
@@ -5087,7 +5167,11 @@ So the statement is True.`,
 For a small extra output $\\Delta Q$, the change in cost per unit of extra output is approximately the derivative:
 
 $$
-\\dfrac{C(Q+\\Delta Q)-C(Q)}{\\Delta Q}\\approx C^{\\prime}(Q)
+\\dfrac{C(Q+\\Delta Q)-C(Q)}{\\Delta Q}
+$$
+
+$$
+C^{\\prime}(Q)
 $$
 
 Hence $C^{\\prime}(Q)$ approximates that local rate
@@ -5102,7 +5186,11 @@ So the statement is True.`,
 Setting $\\Delta Q=1$ in the linear approximation gives
 
 $$
-C(Q+1)-C(Q)\\approx C^{\\prime}(Q)
+C(Q+1)-C(Q)
+$$
+
+$$
+C^{\\prime}(Q)
 $$
 
 which is often serviceable in applications, but it remains an approximation rather than an identity
@@ -5117,7 +5205,11 @@ So the statement is True.`,
 The same derivative governs both directions: for a small (possibly negative) step,
 
 $$
-C(Q+\\Delta Q)-C(Q)\\approx C^{\\prime}(Q)\\,\\Delta Q
+C(Q+\\Delta Q)-C(Q)
+$$
+
+$$
+C^{\\prime}(Q)\\,\\Delta Q
 $$
 
 Hence if output falls a little, the local cost change is still read from $C^{\\prime}(Q)$
@@ -5760,11 +5852,19 @@ So the statement is True.`,
 The linear approximation near $t=0$ reads
 
 $$
-x(\\Delta t)-x(0)\\approx x^{\\prime}(0)\\,\\Delta t
+x(\\Delta t)-x(0)
 $$
 
 $$
-x(\\Delta t)-x(0)\\approx -3\\,\\Delta t
+x^{\\prime}(0)\\,\\Delta t
+$$
+
+$$
+x(\\Delta t)-x(0)
+$$
+
+$$
+-3\\,\\Delta t
 $$
 
 A small time step changes remaining oil by about $-3\\Delta t$ barrels
@@ -5854,6 +5954,10 @@ P^{\\prime}(80) = 12-15
 $$
 
 $$
+= -3
+$$
+
+$$
 12 - 15 = -3
 $$
 
@@ -5874,6 +5978,10 @@ If marginal cost at $80$ tickets is $9$, then
 
 $$
 P^{\\prime}(80) = 12-9
+$$
+
+$$
+= 3
 $$
 
 $$
@@ -6219,7 +6327,11 @@ So the statement is True.`,
 Marginal profit is the rate of change of profit. With $P^{\\prime}(Q)=7$ the one-unit linear reading is
 
 $$
-P(Q+1)-P(Q)\\approx 7
+P(Q+1)-P(Q)
+$$
+
+$$
+7
 $$
 
 so near the current output one more chair adds about $7$ euros of profit
@@ -6250,6 +6362,10 @@ $$
 
 $$
 P^{\\prime}(Q) = 11-18
+$$
+
+$$
+= -7
 $$
 
 $$
@@ -6309,6 +6425,10 @@ P_A^{\\prime}(10) = 9-6
 $$
 
 $$
+= 3
+$$
+
+$$
 9 - 6 = 3
 $$
 
@@ -6333,6 +6453,10 @@ $$
 
 $$
 P_B^{\\prime}(10) = 5-7
+$$
+
+$$
+= -2
 $$
 
 $$
@@ -6475,6 +6599,10 @@ R^{\\prime}(Q)-C^{\\prime}(Q) = 16-20
 $$
 
 $$
+= -4
+$$
+
+$$
 16 - 20 = -4
 $$
 
@@ -6499,6 +6627,10 @@ $$
 
 $$
 P^{\\prime}(40) = 16-12
+$$
+
+$$
+= 4
 $$
 
 $$
@@ -6571,6 +6703,10 @@ $$
 
 $$
 R^{\\prime}(Q) = 4+11
+$$
+
+$$
+= 15
 $$
 
 $$
@@ -6701,6 +6837,10 @@ P_A^{\\prime}(Q_A) = 7-8
 $$
 
 $$
+= -1
+$$
+
+$$
 7 - 8 = -1
 $$
 
@@ -6728,6 +6868,10 @@ P_B^{\\prime}(Q_B) = 10-8
 $$
 
 $$
+= 2
+$$
+
+$$
 10 - 8 = 2
 $$
 
@@ -6751,6 +6895,10 @@ P_A^{\\prime}(Q_A) = 7-8
 $$
 
 $$
+= -1
+$$
+
+$$
 7 - 8 = -1
 $$
 
@@ -6760,6 +6908,10 @@ $$
 
 $$
 P_B^{\\prime}(Q_B) = 10-8
+$$
+
+$$
+= 2
 $$
 
 $$
@@ -6849,6 +7001,10 @@ P^{\\prime}(12) = 15-10
 $$
 
 $$
+= 5
+$$
+
+$$
 15 - 10 = 5
 $$
 
@@ -6869,6 +7025,10 @@ At $Q=25$ the promotion has ended, so $R^{\\prime}(25)=8$. Then
 
 $$
 P^{\\prime}(25) = 8-10
+$$
+
+$$
+= -2
 $$
 
 $$
@@ -7015,6 +7175,10 @@ P^{\\prime}\\text{ via Plant 1} = 11-9
 $$
 
 $$
+= 2
+$$
+
+$$
 11 - 9 = 2
 $$
 
@@ -7153,6 +7317,10 @@ $$
 
 $$
 T(1500) = 200+200
+$$
+
+$$
+= 400
 $$
 
 $$
@@ -7329,6 +7497,10 @@ P_S^{\\prime}(15) = 20-15
 $$
 
 $$
+= 5
+$$
+
+$$
 20 - 15 = 5
 $$
 
@@ -7349,6 +7521,10 @@ At $Q=25$,
 
 $$
 P_S^{\\prime}(25) = 20-25
+$$
+
+$$
+= -5
 $$
 
 $$
@@ -7387,6 +7563,10 @@ $$
 
 $$
 P_N^{\\prime}(Q) = 30-18
+$$
+
+$$
+= 12
 $$
 
 $$
@@ -7453,6 +7633,10 @@ U^{\\prime}(6) = 10-6
 $$
 
 $$
+= 4
+$$
+
+$$
 10 - 6 = 4
 $$
 
@@ -7490,6 +7674,10 @@ Approaching $x=8$ from the left,
 
 $$
 U^{\\prime}(8^{-}) = 10-8
+$$
+
+$$
+= 2
 $$
 
 $$
@@ -7595,6 +7783,10 @@ P^{\\prime}(Q) = 16-16
 $$
 
 $$
+= 0
+$$
+
+$$
 16 - 16 = 0
 $$
 
@@ -7669,6 +7861,10 @@ P^{\\prime}(Q) = 14-10
 $$
 
 $$
+= 4
+$$
+
+$$
 14 - 10 = 4
 $$
 
@@ -7696,6 +7892,10 @@ $$
 $$
 
 $$
+= 15
+$$
+
+$$
 10 + 5 = 15
 $$
 
@@ -7720,6 +7920,10 @@ $$
 
 $$
 P^{\\prime}(Q) = 14-15
+$$
+
+$$
+= -1
 $$
 
 $$
@@ -7841,6 +8045,10 @@ R^{\\prime}(12) = 40-24
 $$
 
 $$
+= 16
+$$
+
+$$
 40 - 24 = 16
 $$
 
@@ -7852,6 +8060,10 @@ Compare with packing cost $C^{\\prime}=12$:
 
 $$
 P^{\\prime}(12) = 16-12
+$$
+
+$$
+= 4
 $$
 
 $$
@@ -7878,6 +8090,10 @@ R^{\\prime}(35)-C^{\\prime}(35) = 10-12
 $$
 
 $$
+= -2
+$$
+
+$$
 10 - 12 = -2
 $$
 
@@ -7898,6 +8114,10 @@ At $Q=12$, extra revenue is the marginal revenue $R^{\\prime}(12)=16$, while the
 
 $$
 p(12) = 40-12
+$$
+
+$$
+= 28
 $$
 
 $$
@@ -8027,6 +8247,10 @@ P_A^{\\prime} = 7-5
 $$
 
 $$
+= 2
+$$
+
+$$
 7 - 5 = 2
 $$
 
@@ -8036,6 +8260,10 @@ $$
 
 $$
 P_B^{\\prime} = 7-9
+$$
+
+$$
+= -2
 $$
 
 $$
@@ -8197,6 +8425,10 @@ P^{\\prime}(Q) = 15-12
 $$
 
 $$
+= 3
+$$
+
+$$
 15 - 12 = 3
 $$
 
@@ -8221,6 +8453,10 @@ $$
 
 $$
 P^{\\prime}(Q) = 15-20
+$$
+
+$$
+= -5
 $$
 
 $$
@@ -8332,6 +8568,10 @@ P_M^{\\prime}(Q) = 9-6
 $$
 
 $$
+= 3
+$$
+
+$$
 9 - 6 = 3
 $$
 
@@ -8422,6 +8662,10 @@ P^{\\prime}(20) = 8-4
 $$
 
 $$
+= 4
+$$
+
+$$
 8 - 4 = 4
 $$
 
@@ -8474,6 +8718,10 @@ $$
 
 $$
 P^{\\prime}(30^{-}) = 8-6
+$$
+
+$$
+= 2
 $$
 
 $$
@@ -8547,6 +8795,10 @@ $$
 
 $$
 P^{\\prime}(40) = 3-5
+$$
+
+$$
+= -2
 $$
 
 $$
@@ -8842,11 +9094,19 @@ R'(6) = 30-12
 $$
 
 $$
+= 18
+$$
+
+$$
 30 - 12 = 18
 $$
 
 $$
 C'(6) = 12+6
+$$
+
+$$
+= 18
 $$
 
 $$
@@ -8882,6 +9142,10 @@ $$
 
 $$
 C(6) = 36+36+40
+$$
+
+$$
+= 112
 $$
 
 $$
@@ -8990,6 +9254,10 @@ $$
 
 $$
 C(5) = 25-50+40
+$$
+
+$$
+= 15
 $$
 
 $$
@@ -9217,6 +9485,10 @@ P_B'(10) = 20-20
 $$
 
 $$
+= 0
+$$
+
+$$
 20 - 20 = 0
 $$
 
@@ -9286,6 +9558,10 @@ $$
 
 $$
 P_B(10) = 100-200+90
+$$
+
+$$
+= -10
 $$
 
 $$
@@ -9386,6 +9662,10 @@ P''(1) = 6-12
 $$
 
 $$
+= -6
+$$
+
+$$
 6 - 12 = -6
 $$
 
@@ -9395,6 +9675,10 @@ $$
 
 $$
 P''(3) = 18-12
+$$
+
+$$
+= 6
 $$
 
 $$
@@ -9418,6 +9702,10 @@ Evaluate profit at the two critical packs and at both endpoints — global compa
 
 $$
 P(1) = 1-6+9+10
+$$
+
+$$
+= 14
 $$
 
 $$
@@ -9450,6 +9738,10 @@ $$
 
 $$
 P(3) = 27-54+27+10
+$$
+
+$$
+= 10
 $$
 
 $$
@@ -9486,6 +9778,10 @@ $$
 
 $$
 P(5) = 125-150+45+10
+$$
+
+$$
+= 30
 $$
 
 $$
@@ -9651,6 +9947,10 @@ P(8) = 40-6.4+3
 $$
 
 $$
+= 36.6
+$$
+
+$$
 40 - 6.4 = 33.6
 $$
 
@@ -9768,6 +10068,10 @@ B''(1) = 6-12
 $$
 
 $$
+= -6
+$$
+
+$$
 6 - 12 = -6
 $$
 
@@ -9777,6 +10081,10 @@ $$
 
 $$
 B''(3) = 18-12
+$$
+
+$$
+= 6
 $$
 
 $$
@@ -10024,11 +10332,19 @@ R'(6) = 40-24
 $$
 
 $$
+= 16
+$$
+
+$$
 40 - 24 = 16
 $$
 
 $$
 C'(6) = 12+4
+$$
+
+$$
+= 16
 $$
 
 $$
@@ -10153,6 +10469,10 @@ P_S'(8) = 16-16
 $$
 
 $$
+= 0
+$$
+
+$$
 16 - 16 = 0
 $$
 
@@ -10217,6 +10537,10 @@ $$
 
 $$
 P_S(8) = 64-128+70
+$$
+
+$$
+= 6
 $$
 
 $$
@@ -10485,6 +10809,10 @@ C(4) = 16-32+30
 $$
 
 $$
+= 14
+$$
+
+$$
 16 - 32 = -16
 $$
 
@@ -10565,6 +10893,10 @@ U_B'(5) = 10-10
 $$
 
 $$
+= 0
+$$
+
+$$
 10 - 10 = 0
 $$
 
@@ -10629,6 +10961,10 @@ $$
 
 $$
 U_B(5) = 25-50+30
+$$
+
+$$
+= 5
 $$
 
 $$
@@ -10767,6 +11103,10 @@ $$
 
 $$
 f(2) = 16-32+16
+$$
+
+$$
+= 0
 $$
 
 $$
@@ -10997,7 +11337,7 @@ $$
 P_B'(Q) = 3(Q-3)^{2}\\ge 0
 $$
 
-for every $Q$, with equality only at $Q=3$. The slope does not change sign through three screenings — it touches zero and stays non-negative — so $Q=3$ is neither a local peak nor a local trough for B (a flat inflection). The statement is True.
+for every $Q$, with equality only at $Q=3$. The slope does not change sign through three screenings — it touches zero and stays non-negative — so $Q=3$ is neither a local peak nor a local trough for B (a flat inflection).
 
 So the statement is True.`,
       `**E.** → False
@@ -11082,6 +11422,10 @@ Classify $x=2$ the same way:
 
 $$
 f''(2) = 12-6
+$$
+
+$$
+= 6
 $$
 
 $$
@@ -11316,7 +11660,7 @@ So the statement is True.`,
 
 The wording sounds close to a standard optimisation rule, but it skips a classification step or confuses a level with a slope. Track the definitions carefully.
 
-The memo claims both flat-slope outputs are local profit maxima. West's seven is indeed a peak ($P_W''<0$), but East's five is a trough ($P_E''>0$). The memo is therefore incorrect: both are critical points, but they are not both maxima. The statement is False.
+The memo claims both flat-slope outputs are local profit maxima. West's seven is indeed a peak ($P_W''<0$), but East's five is a trough ($P_E''>0$). The memo is therefore incorrect: both are critical points, but they are not both maxima.
 
 So the statement is False.`,
       `**D.** → True
@@ -11335,6 +11679,10 @@ $$
 
 $$
 P_E(5) = 25-50+40
+$$
+
+$$
+= 15
 $$
 
 $$
@@ -11593,11 +11941,19 @@ R'(10) = 50-20
 $$
 
 $$
+= 30
+$$
+
+$$
 50 - 20 = 30
 $$
 
 $$
 C'(10) = 20+10
+$$
+
+$$
+= 30
 $$
 
 $$
@@ -11655,11 +12011,19 @@ R(10) = 500-100
 $$
 
 $$
+= 400
+$$
+
+$$
 500 - 100 = 400
 $$
 
 $$
 C(10) = 100+100+20
+$$
+
+$$
+= 220
 $$
 
 $$
@@ -11878,6 +12242,10 @@ C''(2) = 12-18
 $$
 
 $$
+= -6
+$$
+
+$$
 12 - 18 = -6
 $$
 
@@ -11887,6 +12255,10 @@ $$
 
 $$
 C''(4) = 24-18
+$$
+
+$$
+= 6
 $$
 
 $$
@@ -11919,6 +12291,10 @@ Evaluate cost at the local trough $Q=4$:
 
 $$
 C(4) = 64-144+96+5
+$$
+
+$$
+= 21
 $$
 
 $$
@@ -12051,6 +12427,10 @@ C(5) = 25-50+40
 $$
 
 $$
+= 15
+$$
+
+$$
 25 - 50 = -25
 $$
 
@@ -12072,6 +12452,10 @@ $$
 
 $$
 C(8) = 64-80+40
+$$
+
+$$
+= 24
 $$
 
 $$
@@ -12349,6 +12733,10 @@ $$
 
 $$
 A(6) = 40+12+12
+$$
+
+$$
+= 64
 $$
 
 $$
@@ -12802,6 +13190,10 @@ R(25) = 2500-1250
 $$
 
 $$
+= 1250
+$$
+
+$$
 2500 - 1250 = 1250
 $$
 
@@ -12852,6 +13244,10 @@ R'(20) = 100-80
 $$
 
 $$
+= 20
+$$
+
+$$
 100 - 80 = 20
 $$
 
@@ -12859,7 +13255,7 @@ $$
 R'(20) = 20>0.
 $$
 
-A positive slope means a small further price increase raises daily revenue. (Equivalently $|\\varepsilon(20)|=40/60=2/3<1$, so demand is inelastic and a price rise helps revenue.) The statement is True.
+A positive slope means a small further price increase raises daily revenue. (Equivalently $|\\varepsilon(20)|=40/60=2/3<1$, so demand is inelastic and a price rise helps revenue.)
 
 So the statement is True.`,
       `**E.** → False
@@ -12994,6 +13390,10 @@ D(20) = 120-60
 $$
 
 $$
+= 60
+$$
+
+$$
 120 - 60 = 60
 $$
 
@@ -13124,6 +13524,10 @@ $$
 
 $$
 R'(60) = 50-60
+$$
+
+$$
+= -10
 $$
 
 $$
@@ -13372,6 +13776,10 @@ p(7.5) = 325-112.5
 $$
 
 $$
+= 212.5
+$$
+
+$$
 325 - 112.5 = 212.5
 $$
 
@@ -13611,6 +14019,10 @@ C(8) = 16+16
 $$
 
 $$
+= 32
+$$
+
+$$
 16 + 16 = 32
 $$
 
@@ -13636,7 +14048,7 @@ So the statement is True.`,
 
 Reduce the constrained problem to one free variable, then differentiate the reduced objective exactly as in unconstrained single-variable calculus.
 
-Other pairs on $xy=16$ have different costs. For example $(4,4)$ costs $C=8+32=40>32$, and $(16,1)$ costs $32+8=40>32$. Cost is *not* constant along the isoquant, so substitution (or an equivalent method) is necessary. The statement is False.
+Other pairs on $xy=16$ have different costs. For example $(4,4)$ costs $C=8+32=40>32$, and $(16,1)$ costs $32+8=40>32$. Cost is *not* constant along the isoquant, so substitution (or an equivalent method) is necessary.
 
 So the statement is False.`
     ],
@@ -13741,6 +14153,10 @@ R'(30) = 90-60
 $$
 
 $$
+= 30
+$$
+
+$$
 90 - 60 = 30
 $$
 
@@ -13761,6 +14177,10 @@ At $p=60$, marginal revenue is already negative:
 
 $$
 R'(60) = 90-120
+$$
+
+$$
+= -30
 $$
 
 $$
@@ -14091,7 +14511,11 @@ This claim is a direct coordinate reading from the figure. Locate the stated $x$
 The valley of the $f'$ curve sits near $x=3$. Reading the vertical scale there, the height is about $-1$.
 
 $$
-f'(3)\\approx -1
+f'(3)
+$$
+
+$$
+-1
 $$
 
 That matches the claim's reading of the figure
@@ -14106,7 +14530,11 @@ A local minimum of $f$ needs a critical point where $f'=0$ and the sign of $f'$ 
 A local minimum of $f$ needs a zero of $f'$ with a $-$ to $+$ sign change. At $x=3$ the figure only shows a negative height
 
 $$
-f'(3)\\approx -1\\neq 0
+f'(3)
+$$
+
+$$
+-1\\neq 0
 $$
 
 so $x=3$ is not a critical point of $f$ at all. Negativity of $f'$ says $f$ is decreasing there, not that a local minimum occurs
@@ -14744,7 +15172,11 @@ This claim is a direct coordinate reading from the figure. Locate the stated $x$
 The top of the hill is at $x=2$. Reading the vertical scale there, the height is near $4$.
 
 $$
-f'(2)\\approx 4
+f'(2)
+$$
+
+$$
+4
 $$
 
 so the maximum height of $f'$ in the window is at $x=2$ near height $4$, and the statement is True.
@@ -14827,7 +15259,11 @@ The steepest climb of $f$ is the point where $f'$ attains its largest positive h
 The steepest climb of $f$ is where $f'$ attains its largest height. On the figure that hump sits near $x=2$:
 
 $$
-\\arg\\max f'\\approx 2
+\\arg\\max f'
+$$
+
+$$
+2
 $$
 
 so the steepest climb of $f$ occurs near $x=2$, and the statement is True.
@@ -15082,7 +15518,11 @@ This claim is a direct coordinate reading from the figure. Locate the stated $x$
 At the left edge $x=0$, reading the scale on the $C'$ curve gives a height of about half a unit.
 
 $$
-C'(0)\\approx 0.5
+C'(0)
+$$
+
+$$
+0.5
 $$
 
 so the statement matches the figure, and the statement is True.
@@ -15306,7 +15746,11 @@ This claim is a direct coordinate reading from the figure. Locate the stated $x$
 Reading the scale at the left edge, the height of $f'$ is about $4$. At $x=6$, which is right of the zero, the height is negative but greater than $-1$.
 
 $$
-f'(0)\\approx 4,\\qquad -1<f'(6)<0
+f'(0)
+$$
+
+$$
+4,\\qquad -1<f'(6)<0
 $$
 
 so both readings match the claim, and the statement is True.
@@ -15385,7 +15829,15 @@ This claim is a direct coordinate reading from the figure. Locate the stated $x$
 The lobes of $f'$ peak near $x=\\pm 1$. Reading the shared vertical scale, the absolute height there is about $4$.
 
 $$
-|f'(1)|\\approx 4,\\qquad f'(-1)\\approx -4
+|f'(1)|
+$$
+
+$$
+4,\\qquad f'(-1)
+$$
+
+$$
+-4
 $$
 
 so both readings match the claim, and the statement is True.
@@ -15400,7 +15852,11 @@ The steepest climb of $f$ is the point where $f'$ attains its largest positive h
 On $(0,3)$ the graph of $f'$ reaches its highest point near $x=1$:
 
 $$
-\\arg\\max_{x\\in(0,3)} f'(x)\\approx 1
+\\arg\\max_{x\\in(0,3)} f'(x)
+$$
+
+$$
+1
 $$
 
 That largest positive height is where $f$ rises most steeply on the right
@@ -15585,7 +16041,7 @@ f'(0) = 0,\\qquad f''(0)
 $$
 
 $$
-\\approx 8>0
+8>0
 $$
 
 so both readings match the claim, and the statement is True.
@@ -15619,7 +16075,11 @@ On the shared plane, match each colour to its named derivative, then read height
 Extrema of brown ($f'$) occur where green ($f''$) is zero. On the figure the green zeros near $x=\\pm 1$ line up with the peak and the lowest point of brown:
 
 $$
-f''(\\pm 1)\\approx 0\\quad\\text{at extrema of }f'
+f''(\\pm 1)
+$$
+
+$$
+0\\quad\\text{at extrema of }f'
 $$
 
 Putting that figure reading next to the claim, every asserted sign, height, or classification matches what the axes show.
@@ -15739,7 +16199,11 @@ This claim is a direct coordinate reading from the figure. Locate the stated $x$
 At $x=1$ the height of the green curve is the value of $f'(1)$. Reading the shared scale there gives about $4$.
 
 $$
-f'(1)\\approx 4
+f'(1)
+$$
+
+$$
+4
 $$
 
 so the slope of brown at $x=1$ is about $4$, and the statement is True.
@@ -15993,7 +16457,11 @@ This claim is a direct coordinate reading from the figure. Locate the stated $x$
 Brown is $f'$ and green is $f''$. At $x=2$ the brown curve is near its maximum height, and the green curve is about zero there.
 
 $$
-f''(2)\\approx 0
+f''(2)
+$$
+
+$$
+0
 $$
 
 so the peak of $f'$ lines up with a zero of $f''$, and the statement is True.
@@ -16643,7 +17111,11 @@ This claim is a direct coordinate reading from the figure. Locate the stated $x$
 Near $x=1.5$ the brown curve has a local highest point, and the green curve is about zero there.
 
 $$
-f''(1.5)\\approx 0
+f''(1.5)
+$$
+
+$$
+0
 $$
 
 so the local maximum of $f'$ lines up with a zero of $f''$, and the statement is True.
@@ -16735,7 +17207,11 @@ On the shared plane, match each colour to its named derivative, then read height
 The highest point of brown sits near $x=1$, and there the green curve is approximately zero.
 
 $$
-f''(1)\\approx 0
+f''(1)
+$$
+
+$$
+0
 $$
 
 so the peak of $f'$ lines up with a zero of $f''$, and the statement is True.
@@ -16765,7 +17241,15 @@ This claim is a direct coordinate reading from the figure. Locate the stated $x$
 At the left edge, reading both heights on the shared scale, brown is near height $4$ while green is near height $-2$.
 
 $$
-f'(0)\\approx 4,\\qquad f''(0)\\approx -2
+f'(0)
+$$
+
+$$
+4,\\qquad f''(0)
+$$
+
+$$
+-2
 $$
 
 Putting that figure reading next to the claim, every asserted sign, height, or classification matches what the axes show.
@@ -17261,7 +17745,15 @@ This claim is a direct coordinate reading from the figure. Locate the stated $x$
 Brown is $f'$, green is $f''$, and purple is $h'$. At $x=0$, reading the shared scale, brown is near height $4$ while green is near height $-4$.
 
 $$
-f'(0)\\approx 4,\\qquad f''(0)\\approx -4
+f'(0)
+$$
+
+$$
+4,\\qquad f''(0)
+$$
+
+$$
+-4
 $$
 
 so brown is positive and green is negative at $x=0$, and the statement is True.
@@ -17276,7 +17768,15 @@ This claim is a direct coordinate reading from the figure. Locate the stated $x$
 At $x=3$, brown is near height $10$ while purple is near height $6$, so brown lies above purple.
 
 $$
-f'(3)\\approx 10,\\qquad h'(3)\\approx 6
+f'(3)
+$$
+
+$$
+10,\\qquad h'(3)
+$$
+
+$$
+6
 $$
 
 and the statement is True.
@@ -17291,7 +17791,11 @@ On the shared plane, match each colour to its named derivative, then read height
 The green curve ($f''$) opens upward in a U-shape on the shared plane, and at $x=0$ it sits below the axis:
 
 $$
-f''(0)\\approx -4<0,\\qquad f''\\text{ opens upward}
+f''(0)
+$$
+
+$$
+-4<0,\\qquad f''\\text{ opens upward}
 $$
 
 Both geometric facts match the claim
@@ -17490,7 +17994,11 @@ This claim is a direct coordinate reading from the figure. Locate the stated $x$
 At $x=-1$, which lies in $(-2,1)$, the graph is clearly above the axis. Reading the vertical scale, the height is about $6$.
 
 $$
-f'(-1)\\approx 6>0
+f'(-1)
+$$
+
+$$
+6>0
 $$
 
 Putting that figure reading next to the claim, every asserted sign, height, or classification matches what the axes show.
@@ -17844,7 +18352,11 @@ The steepest climb of $f$ is the point where $f'$ attains its largest positive h
 At $x=3$ the green curve is near height $4$, and that is where brown's climb looks steepest in the window.
 
 $$
-f'(3)\\approx 4
+f'(3)
+$$
+
+$$
+4
 $$
 
 so the reading matches the steepest climb of brown, and the statement is True.
@@ -18123,7 +18635,11 @@ This claim is a direct coordinate reading from the figure. Locate the stated $x$
 Throughout the window the purple curve sits about one unit above the brown curve on the shared scale:
 
 $$
-h'(x)\\approx f'(x)+1
+h'(x)
+$$
+
+$$
+f'(x)+1
 $$
 
 so purple stays above brown by about $1$, and the statement is True.
