@@ -35,9 +35,9 @@ The mass at a named side is the coefficient times the cube of that side:
 
 $$M(2)=5\\cdot 2^{3}$$
 
-$$=5\\cdot 8$$
+$$M(2)=5\\cdot 8$$
 
-$$=40$$
+$$M(2)=40$$
 
 The claimed mass is $40$ grams.
 
@@ -65,9 +65,9 @@ The scale factor of a power function depends only on the exponent, because the c
 
 $$\\frac{M(2s)}{M(s)}=\\frac{5(2s)^{3}}{5s^{3}}$$
 
-$$=2^{3}$$
+$$\\frac{M(2s)}{M(s)}=2^{3}$$
 
-$$=8$$
+$$\\frac{M(2s)}{M(s)}=8$$
 
 Doubling the side multiplies the mass by $8$.
 
@@ -97,9 +97,9 @@ The rule at $s=4$ is a single evaluation:
 
 $$M(4)=5\\cdot 4^{3}$$
 
-$$=5\\cdot 64$$
+$$M(4)=5\\cdot 64$$
 
-$$=320$$
+$$M(4)=320$$
 
 The claimed $240$ does not equal $320$
 
@@ -137,9 +137,9 @@ An exponent of $\\frac{1}{2}$ is a square root, and the square root of zero is $
 
 $$D(0)=6\\cdot 0^{\\frac{1}{2}}$$
 
-$$=6\\cdot 0$$
+$$D(0)=6\\cdot 0$$
 
-$$=0$$
+$$D(0)=0$$
 
 The load rule returns a real value at $t=0$.
 
@@ -182,9 +182,9 @@ Square the time in the denominator, then divide:
 
 $$R(4)=\\frac{50}{4^{2}}$$
 
-$$=\\frac{50}{16}$$
+$$R(4)=\\frac{50}{16}$$
 
-$$=3.125$$
+$$R(4)=3.125$$
 
 The reading is $3.125$ units.
 
@@ -199,9 +199,9 @@ The square root is taken before the coefficient:
 
 $$D(9)=6\\cdot 9^{\\frac{1}{2}}$$
 
-$$=6\\cdot 3$$
+$$D(9)=6\\cdot 3$$
 
-$$=18$$
+$$D(9)=18$$
 
 The load is $18$ kilograms.
 
@@ -267,9 +267,9 @@ The $2$ in $T(x)=2x^{\\frac{1}{2}}$ multiplies the power; it does not cap the ou
 
 $$T(4)=2\\cdot 4^{\\frac{1}{2}}$$
 
-$$=2\\cdot 2$$
+$$T(4)=2\\cdot 2$$
 
-$$=4$$
+$$T(4)=4$$
 
 Already $4>2$, and a positive exponent keeps climbing. There is no finite ceiling.
 
@@ -284,9 +284,9 @@ Cube the distance in the denominator, then divide:
 
 $$S(2)=\\frac{80}{2^{3}}$$
 
-$$=\\frac{80}{8}$$
+$$S(2)=\\frac{80}{8}$$
 
-$$=10$$
+$$S(2)=10$$
 
 The strength is $10$ millivolts.
 
@@ -391,9 +391,13 @@ Take the cube root of $8$, then square:
 
 $$8^{\\frac{2}{3}}=\\bigl(8^{\\frac{1}{3}}\\bigr)^{2}$$
 
-$$=2^{2}$$
+$$8^{\\frac{2}{3}}$$
 
-$$=4$$
+$$8^{\\frac{2}{3}}=2^{2}$$
+
+$$8^{\\frac{2}{3}}$$
+
+$$8^{\\frac{2}{3}}=4$$
 
 $$V(8)=3\\cdot 4$$
 
@@ -437,7 +441,9 @@ $$Q(25)=40$$
 
 Solve that level for the unknown coefficient $A$:
 
-$$25^{1/2}=5$$
+$$25^{1/2}$$
+
+$$Q(25)=5$$
 
 $$A\cdot 5=40$$
 
@@ -452,9 +458,9 @@ The overview recovered $A=8$. At $100$ staff the square root is $10$:
 
 $$Q(100)=8\\cdot 100^{\\frac{1}{2}}$$
 
-$$=8\\cdot 10$$
+$$Q(100)=8\\cdot 10$$
 
-$$=80$$
+$$Q(100)=80$$
 
 The output is $80$ crates per hour.
 
@@ -469,9 +475,9 @@ A staffing scale factor is fixed by the exponent alone, because $A$ cancels:
 
 $$\\frac{Q(4s)}{Q(s)}=\\frac{A(4s)^{\\frac{1}{2}}}{A s^{\\frac{1}{2}}}$$
 
-$$=4^{\\frac{1}{2}}$$
+$$\\frac{Q(4s)}{Q(s)}=4^{\\frac{1}{2}}$$
 
-$$=2$$
+$$\\frac{Q(4s)}{Q(s)}=2$$
 
 Quadrupling the staffing doubles the output.
 
@@ -484,9 +490,7 @@ Start from the calibrated closed form in the overview.
 
 A doubled coefficient appears once above and once below in the ratio, so it cancels:
 
-$$\\frac{(2A)(4s)^{\\frac{1}{2}}}{(2A)s^{\\frac{1}{2}}}$$
-
-$$=4^{\\frac{1}{2}}$$
+$$\\frac{(2A)(4s)^{\\frac{1}{2}}}{(2A)s^{\\frac{1}{2}}}=4^{\\frac{1}{2}}$$
 
 $$=2$$
 
@@ -503,9 +507,9 @@ The overview recovered $A=8$. At four staff the square root is $2$:
 
 $$Q(4)=8\\cdot 4^{\\frac{1}{2}}$$
 
-$$=8\\cdot 2$$
+$$Q(4)=8\\cdot 2$$
 
-$$=16$$
+$$Q(4)=16$$
 
 The claimed $20$ is not $16$.
 
@@ -577,13 +581,9 @@ Read the exponent from the overview before comparing growth rates.
 
 On $0<n<2$ the overview's factor $n-2$ is negative, while $n^{2}$ is still positive, so $G-F<0$ and therefore $F(n)>G(n)$. A single interior check:
 
-$$
-F(1) = 2, \\qquad G(1)
-$$
+$$F(1)=2, \$$
 
-$$
-= 1
-$$
+$$G(1)=1$$
 
 The quadratic index leads throughout $0<n<2$.
 
@@ -725,9 +725,9 @@ A negative exponent puts the root in the denominator:
 
 $$N(4)=4^{-\\frac{1}{2}}$$
 
-$$=\\frac{1}{\\sqrt{4}}$$
+$$N(4)=\\frac{1}{\\sqrt{4}}$$
 
-$$=\\frac{1}{2}$$
+$$N(4)=\\frac{1}{2}$$
 
 The claimed $2$ is $\\sqrt{4}$, which drops the minus in the exponent. The transform returns $\\frac{1}{2}$, not $2$.
 
@@ -765,9 +765,9 @@ Rewrite the negative exponent as a root in the denominator, then substitute four
 
 $$P(4)=\\frac{12}{\\sqrt{4}}$$
 
-$$=\\frac{12}{2}$$
+$$P(4)=\\frac{12}{2}$$
 
-$$=6$$
+$$P(4)=6$$
 
 The drop is $6$ kilopascals.
 
@@ -808,9 +808,9 @@ A tiny positive cartridge count puts a tiny number in the denominator:
 
 $$P(0.01)=\\frac{12}{\\sqrt{0.01}}$$
 
-$$=\\frac{12}{0.1}$$
+$$P(0.01)=\\frac{12}{0.1}$$
 
-$$=120$$
+$$P(0.01)=120$$
 
 The denominator $\\sqrt{x}$ can be made arbitrarily small as $x\\to 0^{+}$, so $P(x)$ has no finite limit.
 
@@ -827,9 +827,9 @@ Nine cartridges give a whole square root:
 
 $$P(9)=\\frac{12}{\\sqrt{9}}$$
 
-$$=\\frac{12}{3}$$
+$$P(9)=\\frac{12}{3}$$
 
-$$=4$$
+$$P(9)=4$$
 
 The drop is $4$ kilopascals.
 
@@ -880,9 +880,9 @@ The overview recovered $A=5$. At radius $6$ metres:
 
 $$y(6)=5\\cdot 6^{2}$$
 
-$$=5\\cdot 36$$
+$$y(6)=5\\cdot 36$$
 
-$$=180$$
+$$y(6)=180$$
 
 The panel needs $180$ litres.
 
@@ -895,9 +895,11 @@ A fifty percent increase in radius is the width multiplier $k=1.5$. For a square
 
 $$\\frac{y(1.5r)}{y(r)}=\\frac{A(1.5r)^{2}}{A r^{2}}$$
 
-$$=1.5^{2}$$
+$$\\frac{y(1.5r)}{y(r)}=1.5^{2}$$
 
-$$=2.25$$
+$$\\frac{y(1.5r)}{y(r)}=1.25$$
+
+$$\\frac{y(1.5r)}{y(r)}=2.25$$
 
 The primer is multiplied by $2.25$.
 
@@ -915,6 +917,8 @@ $$A=5$$
 At a radius of one metre the square is $1$, so the requirement equals the coefficient:
 
 $$y(1)=5\\cdot 1^{2}$$
+
+$$y(1)=5\\cdot 1$$
 
 $$y(1)=5$$
 
@@ -975,9 +979,9 @@ Square the speed, then apply the coefficient:
 
 $$E(10)=0.5\\cdot 10^{2}$$
 
-$$=0.5\\cdot 100$$
+$$E(10)=0.5\\cdot 100$$
 
-$$=50$$
+$$E(10)=50$$
 
 The index at $v=10$ is $50$.
 
@@ -992,9 +996,11 @@ Raising the speed from $10$ to $20$ is the multiplier $k=2$. The coefficient can
 
 $$\\frac{E(20)}{E(10)}=\\frac{0.5\\cdot 20^{2}}{0.5\\cdot 10^{2}}$$
 
-$$=2^{2}$$
+$$\\frac{E(20)}{E(10)}=\\frac{0.5\\cdot 400}{0.5\\cdot 100}$$
 
-$$=4$$
+$$\\frac{E(20)}{E(10)}=2^{2}$$
+
+$$\\frac{E(20)}{E(10)}=4$$
 
 Doubling the speed multiplies the index by $4$.
 
@@ -1009,9 +1015,9 @@ At the higher standard speed, square first:
 
 $$E(20)=0.5\\cdot 20^{2}$$
 
-$$=0.5\\cdot 400$$
+$$E(20)=0.5\\cdot 400$$
 
-$$=200$$
+$$E(20)=200$$
 
 The index reads $200$.
 
@@ -1038,6 +1044,8 @@ A ten percent overspeed is the speed multiplier
 $$k=1.1,$$ and the exponent acts on the whole multiplier:
 
 $$\\frac{E(1.1v)}{E(v)}=1.1^{2}$$
+
+$$\\frac{E(1.1v)}{E(v)}=1.1$$
 
 $$\\frac{E(1.1v)}{E(v)}=1.21$$
 
@@ -1139,7 +1147,7 @@ A nonzero power inverts to another power. From $Y=2h^{\\frac{1}{3}}$,
 
 $$h=\\left(\\frac{Y}{2}\\right)^{3}$$
 
-$$=\\frac{1}{8}Y^{3}$$
+$$h=\\frac{1}{8}Y^{3}$$
 
 Watering time is a monomial in harvest.
 
@@ -1191,9 +1199,9 @@ The overview recovered $A=48$. At nine agents the square root is $3$:
 
 $$W(9)=\\frac{48}{\\sqrt{9}}$$
 
-$$=\\frac{48}{3}$$
+$$W(9)=\\frac{48}{3}$$
 
-$$=16$$
+$$W(9)=16$$
 
 Sixteen minutes is less than $20$.
 
@@ -1261,7 +1269,7 @@ Doubling the team is the multiplier $k=2$, and the exponent $-\\frac{1}{2}$ acts
 
 $$\\frac{W(2n)}{W(n)}=2^{-\\frac{1}{2}}$$
 
-$$=\\frac{1}{\\sqrt{2}}\\approx 0.707$$
+$$\\frac{W(2n)}{W(n)}=\\frac{1}{\\sqrt{2}}\\approx 0.707$$
 
 Wait falls to about $0.707$ of its former value, not to $\\frac{1}{2}$.
 
@@ -1303,9 +1311,9 @@ The overview recovered $a=4$. At $4$ metres the square root is $2$:
 
 $$Q_{L}(4)=4\\cdot 4^{\\frac{1}{2}}$$
 
-$$=4\\cdot 2$$
+$$Q_{L}(4)=4\\cdot 2$$
 
-$$=8$$
+$$Q_{L}(4)=8$$
 
 Eight litres a minute is more than $7$.
 
@@ -1444,9 +1452,9 @@ The overview recovered $C(n)=50+50\\sqrt{n}$. Twenty-five is a perfect square:
 
 $$C(25)=50+50\\cdot 5$$
 
-$$=50+250$$
+$$C(25)=50+250$$
 
-$$=300$$
+$$C(25)=300$$
 
 Three hundred sits above $280$.
 
@@ -1457,9 +1465,9 @@ The overview recovered $C(n)=50+50\\sqrt{n}$. Thirty-six is a perfect square:
 
 $$C(36)=50+50\\cdot 6$$
 
-$$=50+300$$
+$$C(36)=50+300$$
 
-$$=350$$
+$$C(36)=350$$
 
 Three hundred and fifty does not sit above $400$.
 
@@ -1622,7 +1630,7 @@ The overview recovered $r=2$. Halving jobs is the multiplier $k=\\frac{1}{2}$:
 
 $$\\frac{L(x/2)}{L(x)}=\\left(\\frac{1}{2}\\right)^{2}$$
 
-$$=\\frac{1}{4}$$
+$$\\frac{L(x/2)}{L(x)}=\\frac{1}{4}$$
 
 Load drops to a quarter, not to a half.
 
@@ -1648,9 +1656,9 @@ The overview recovered $L(x)=\\frac{1}{2}x^{2}$. At $16$ jobs:
 
 $$L(16)=\\frac{1}{2}\\cdot 16^{2}$$
 
-$$=\\frac{1}{2}\\cdot 256$$
+$$L(16)=\\frac{1}{2}\\cdot 256$$
 
-$$=128$$
+$$L(16)=128$$
 
 One hundred and twenty-eight sits below $200$, so the alarm has not yet tripped.
 
@@ -1665,9 +1673,9 @@ The overview recovered $L(x)=\\frac{1}{2}x^{2}$. At $10$ jobs:
 
 $$L(10)=\\frac{1}{2}\\cdot 10^{2}$$
 
-$$=\\frac{1}{2}\\cdot 100$$
+$$L(10)=\\frac{1}{2}\\cdot 100$$
 
-$$=50$$
+$$L(10)=50$$
 
 Fifty sits above $40$.
 
@@ -1762,9 +1770,9 @@ The overview recovered $Q(x)=12x^{\\frac{1}{2}}$. At the intensity cap:
 
 $$Q(400)=12\\cdot 400^{\\frac{1}{2}}$$
 
-$$=12\\cdot 20$$
+$$Q(400)=12\\cdot 20$$
 
-$$=240$$
+$$Q(400)=240$$
 
 Two hundred and forty is not a ceiling of $200$.
 
@@ -1777,9 +1785,9 @@ The overview recovered $Q(x)=12x^{\\frac{1}{2}}$. Eighty-one is a perfect square
 
 $$Q(81)=12\\cdot 81^{\\frac{1}{2}}$$
 
-$$=12\\cdot 9$$
+$$Q(81)=12\\cdot 9$$
 
-$$=108$$
+$$Q(81)=108$$
 
 One hundred and eight sits above $100$.
 
@@ -1864,15 +1872,13 @@ So the statement is True.`,
 
 The overview recovered $C(n)=n^{2}$ and $D(n)=16n$. At $25$ documents:
 
-$$
-C(25) = 625, \\qquad D(25)
-$$
+$$C(25)=625, \$$
 
-$$
-= 400
-$$
+$$D(25)=400$$
 
-$$625-400=225$$
+$$625-400$$
+
+$$C(25)=225$$
 
 Two hundred and twenty-five is not less than $100$.
 
@@ -1972,9 +1978,9 @@ The overview recovered $H(s)=8s^{\\frac{1}{2}}$. At $64$ staff:
 
 $$H(64)=8\\cdot 64^{\\frac{1}{2}}$$
 
-$$=8\\cdot 8$$
+$$H(64)=8\\cdot 8$$
 
-$$=64$$
+$$H(64)=64$$
 
 Sixty-four sits below the cap of $80$, so the ceiling is not yet reached.
 
@@ -1989,9 +1995,9 @@ The overview recovered $H(s)=8s^{\\frac{1}{2}}$. At $81$ staff:
 
 $$H(81)=8\\cdot 81^{\\frac{1}{2}}$$
 
-$$=8\\cdot 9$$
+$$H(81)=8\\cdot 9$$
 
-$$=72$$
+$$H(81)=72$$
 
 Seventy-two sits above $70$.
 
@@ -2075,7 +2081,7 @@ Doubling the server count is the multiplier $k=2$, and the exponent $-\\frac{3}{
 
 $$\\frac{W(2k)}{W(k)}=2^{-\\frac{3}{2}}$$
 
-$$=\\frac{1}{2\\sqrt{2}}\\approx 0.354$$
+$$\\frac{W(2k)}{W(k)}=\\frac{1}{2\\sqrt{2}}\\approx 0.354$$
 
 Wait falls to about $0.354$ of its former value, not to $\\frac{1}{2}$.
 
@@ -2088,9 +2094,9 @@ The overview recovered $W(k)=216 k^{-\\frac{3}{2}}$. At nine servers:
 
 $$W(9)=\\frac{216}{9^{\\frac{3}{2}}}$$
 
-$$=\\frac{216}{27}$$
+$$W(9)=\\frac{216}{27}$$
 
-$$=8$$
+$$W(9)=8$$
 
 Eight milliseconds is not more than $10$.
 
@@ -2103,9 +2109,9 @@ The overview recovered $W(k)=216 k^{-\\frac{3}{2}}$. At four servers:
 
 $$W(4)=\\frac{216}{4^{\\frac{3}{2}}}$$
 
-$$=\\frac{216}{8}$$
+$$W(4)=\\frac{216}{8}$$
 
-$$=27$$
+$$W(4)=27$$
 
 Twenty-seven sits above $25$.
 
@@ -2193,13 +2199,9 @@ At the recorded pair,
 
 $$q(10)=\\frac{10000}{100}$$
 
-$$
-q(10) = 100, \\qquad q(5)
-$$
+$$q(10)=100, \$$
 
-$$
-= 400
-$$
+$$q(5)=400$$
 
 and $100$ is a quarter of $400$, not a half. The claim is that demand halves.
 
@@ -2298,13 +2300,9 @@ $$\\frac{C(n)}{n}=\\frac{200}{n}+30 n^{-\\frac{1}{2}}$$
 
 Both leftover exponents are negative, so the average falls as the book grows. At the two invoices:
 
-$$
-\\frac{C(100)}{100} = 5, \\qquad \\frac{C(400)}{400}
-$$
+$$\\frac{C(100)}{100}=5, \$$
 
-$$
-= 2
-$$
+$$\\frac{C(400)}{400}=2$$
 
 and $2<5$.
 
@@ -2437,15 +2435,11 @@ $$e(a)=120 a^{-\\frac{1}{2}}$$
 
 The exponent is negative, so intensity falls as the fleet grows. For a concrete pair:
 
-$$
-e(16) = 30, \\qquad e(64)
-$$
+$$e(16)=30, \$$
 
-$$
-= \\frac{120}{8}
-$$
+$$e(64)=\\frac{120}{8}$$
 
-$$e(16)=15$$
+$$e(64)=15$$
 
 and $15<30$.
 
@@ -2751,7 +2745,9 @@ $$40\\sqrt{64}=320$$
 
 which sits under the cap, so Plan A bills $320$. Plan B bills
 
-$$5\\cdot 64=320$$
+$$5\\cdot 64$$
+
+$$40\\sqrt{64}=320$$
 
 Both sit under $400$.
 
@@ -2766,23 +2762,15 @@ The plans cross where the uncapped square-root bill equals the linear bill:
 
 $$40\\sqrt{u}=5u$$
 
-$$
-8 = \\sqrt{u}, \\qquad u
-$$
+$$8=\\sqrt{u}, \$$
 
-$$
-= 64
-$$
+$$u=64$$
 
 Below that crossing, at the recorded $36$ tickets:
 
-$$
-C_A(36) = 240, \\qquad C_B(36)
-$$
+$$C_A(36)=240, \$$
 
-$$
-= 180
-$$
+$$C_B(36)=180$$
 
 and $180<240$, so Plan B is cheaper below the crossing.
 
@@ -2795,13 +2783,9 @@ Read the exponent from the overview before comparing growth rates.
 
 Plan A's cap binds once $40\\sqrt{u}=400$:
 
-$$
-\\sqrt{u} = 10, \\qquad u
-$$
+$$\\sqrt{u}=10, \$$
 
-$$
-= 100
-$$
+$$u=100$$
 
 For every larger ticket volume the billed amount stays $400$ rather than $40\\sqrt{u}$, so the cap eventually binds.
 
@@ -2818,13 +2802,11 @@ $$\\frac{C_A(u)}{u}=40 u^{-\\frac{1}{2}}$$
 
 The leftover exponent is negative, so the average falls as volume rises. Past the cap it is $\\frac{400}{u}$, which also falls. At the invoice and at $64$ tickets:
 
-$$
-\\frac{240}{36} = \\frac{20}{3}, \\qquad \\frac{320}{64}
-$$
+$$\\frac{240}{36}=\\frac{20}{3}, \\qquad \\frac{320}{64}$$
 
-$$
-= 5
-$$
+$$\\frac{240}{36}$$
+
+$$\\frac{240}{36}=5$$
 
 and $5<\\frac{20}{3}$.
 
@@ -3014,15 +2996,11 @@ $$\\frac{R(x)}{x}=90 x^{-\\frac{1}{2}}$$
 
 The leftover exponent is negative, so the average falls as the campaign grows. At the recorded spend and at $400$:
 
-$$
-\\frac{R(100)}{100} = 9, \\qquad \\frac{R(400)}{400}
-$$
+$$\\frac{R(100)}{100}=9, \$$
 
-$$
-= \\frac{90\\cdot 20}{400}
-$$
+$$\\frac{R(400)}{400}=\\frac{90\\cdot 20}{400}$$
 
-$$\\frac{R(100)}{100}=4.5$$
+$$\\frac{R(400)}{400}=4.5$$
 
 and $4.5<9$.
 
@@ -3147,13 +3125,11 @@ $$\\frac{g}{L}=16 L^{-\\frac{1}{4}}$$
 
 The leftover exponent is negative, so the average falls as labour rises. At $L=16$ and $L=81$:
 
-$$
-16\\cdot 16^{-\\frac{1}{4}} = 8, \\qquad 16\\cdot 81^{-\\frac{1}{4}}
-$$
+$$16\\cdot 16^{-\\frac{1}{4}}$$
 
-$$
-= \\frac{16}{3}
-$$
+$$\\frac{g}{L}=8, \\qquad 16\\cdot 81^{-\\frac{1}{4}}$$
+
+$$16\\cdot 16^{-\\frac{1}{4}}=\\frac{16}{3}$$
 
 and $\\frac{16}{3}<8$.
 
@@ -3269,13 +3245,9 @@ $$R(p)=2000 p^{-\\frac{1}{2}}$$
 
 The leftover exponent is negative, so revenue falls as the price rises. At the recorded price and at $16$:
 
-$$
-R(4) = 1000, \\qquad R(16)
-$$
+$$R(4)=1000, \$$
 
-$$
-= 500
-$$
+$$R(16)=500$$
 
 and $500<1000$.
 
@@ -3309,7 +3281,9 @@ The charge is covered when $R(p)\\ge 400$:
 
 $$2000 p^{-\\frac{1}{2}}\\ge 400$$
 
-$$\\sqrt{p}\\le 5, \\qquad p\\le 25$$
+$$\\sqrt{p}\\le 5, \$$
+
+$$p\\le 25$$
 
 The claim is that the charge is covered only at prices below $16$. The recovered cutoff is $p=25$, which is not $16$.
 
@@ -3391,13 +3365,13 @@ $$\\frac{N(h)}{h}=18 h^{-\\frac{1}{3}}$$
 
 The leftover exponent is negative, so the average falls as the shift lengthens. At $8$ and $27$ hours:
 
-$$
-18\\cdot 8^{-\\frac{1}{3}} = 9, \\qquad 18\\cdot 27^{-\\frac{1}{3}}
-$$
+$$18\\cdot 8^{-\\frac{1}{3}}$$
 
-$$
-= 6
-$$
+$$\\frac{N(h)}{h}=9, \\qquad 18\\cdot 27^{-\\frac{1}{3}}$$
+
+$$18\\cdot 8^{-\\frac{1}{3}}$$
+
+$$\\frac{N(h)}{h}=6$$
 
 and $6<9$.
 
@@ -3524,15 +3498,11 @@ The mounting rating $F=250$ needs
 
 $$2 v^{\\frac{3}{2}}=250$$
 
-$$
-v^{\\frac{3}{2}} = 125, \\qquad v
-$$
+$$v^{\\frac{3}{2}}=125, \$$
 
-$$
-= 125^{\\frac{2}{3}}
-$$
+$$v=125^{\\frac{2}{3}}$$
 
-$$v^{\\frac{3}{2}}=25$$
+$$v=25$$
 
 The claim is that the rating is first reached above $30$ m/s. We have $v=25$.
 
@@ -3605,13 +3575,9 @@ $$R(p)=1200 p^{\\frac{1}{2}}$$
 
 The leftover exponent is positive, so revenue rises as the price rises. At $16$ and $25$:
 
-$$
-R(16) = 4800, \\qquad R(25)
-$$
+$$R(16)=4800, \$$
 
-$$
-= 6000
-$$
+$$R(25)=6000$$
 
 and $6000>4800$.
 
@@ -3673,13 +3639,9 @@ Cutting quantity to $200$ needs
 
 $$1200 p^{-\\frac{1}{2}}=200$$
 
-$$
-\\sqrt{p} = 6, \\qquad p
-$$
+$$\\sqrt{p}=6, \$$
 
-$$
-= 36
-$$
+$$p=36$$
 
 The claim is a price above $40$. We have $p=36$.
 
@@ -3742,13 +3704,13 @@ $$\\frac{y(x)}{x}=4 x^{\\frac{1}{3}}$$
 
 The leftover exponent is positive, so the average rises as the feed increases. At $8$ and $27$:
 
-$$
-4\\cdot 8^{\\frac{1}{3}} = 8, \\qquad 4\\cdot 27^{\\frac{1}{3}}
-$$
+$$4\\cdot 8^{\\frac{1}{3}}$$
 
-$$
-= 12
-$$
+$$\\frac{y(x)}{x}=8, \\qquad 4\\cdot 27^{\\frac{1}{3}}$$
+
+$$4\\cdot 8^{\\frac{1}{3}}$$
+
+$$\\frac{y(x)}{x}=12$$
 
 and $12>8$.
 
@@ -3761,13 +3723,9 @@ Read the exponent from the overview before comparing growth rates.
 
 The licence binds once $4 x^{\\frac{4}{3}}=1024$:
 
-$$
-x^{\\frac{4}{3}} = 256, \\qquad x
-$$
+$$x^{\\frac{4}{3}}=256, \$$
 
-$$
-= 64
-$$
+$$x=64$$
 
 Past that feed, daily shipped output is the constant $1024$, which is not a monomial in $x$.
 
@@ -3957,7 +3915,7 @@ Setting the two recovered score laws equal yields a single positive crossing:
 
 $$x=8$$
 
-One equation of this type cannot have two distinct positive ties. So the statement is false.`,
+One equation of this type cannot have two distinct positive ties. So the statement is False.`,
     `**B.** → True
 
 Form the ratio so the unknown positive coefficient cancels.
@@ -3979,13 +3937,9 @@ The same ratio $\\frac{T(x)}{S(x)}=\\frac{x}{8}$ depends on the load. At the ben
 
 $$\\frac{T(4)}{S(4)}=\\frac{8}{16}$$
 
-$$
-\\frac{T(4)}{S(4)} = \\frac{1}{2}, \\qquad \\frac{T(8)}{S(8)}
-$$
+$$\\frac{T(4)}{S(4)}=\\frac{1}{2}, \$$
 
-$$
-= 1
-$$
+$$\\frac{T(8)}{S(8)}=1$$
 
 Those are not the same.
 
@@ -4009,13 +3963,9 @@ So the statement is True.`,
 
 The overview recovered $S(x)=8 x^{\\frac{1}{2}}$ and $T(x)=x^{\\frac{3}{2}}$. At load $16$:
 
-$$
-S(16) = 32, \qquad T(16)
-$$
+$$S(16)=32$$
 
-$$
-= 64
-$$
+$$T(16)=64$$
 
 $$T(16)-S(16)=32$$
 
@@ -4174,23 +4124,15 @@ Form the ratio so the unknown positive coefficient cancels.
 
 Net gain is maximised where $\\Pi'(L)=0$:
 
-$$
-60 L^{-\\frac{1}{2}} = 6, \\qquad L
-$$
+$$60 L^{-\\frac{1}{2}}=6, \$$
 
-$$
-= 100
-$$
+$$L=100$$
 
 Net gain is zero where $\\Pi(L)=0$ on $L>0$:
 
-$$
-120 L^{\\frac{1}{2}} = 6L, \\qquad L
-$$
+$$120 L^{\\frac{1}{2}}=6L, \$$
 
-$$
-= 400
-$$
+$$L=400$$
 
 Those hours are not the same.
 
@@ -4233,13 +4175,9 @@ Keep the stated domain in force while you evaluate the model.
 
 Net gain crosses zero on $L>0$ where
 
-$$
-120\\sqrt{L} = 6L, \\qquad L
-$$
+$$120\\sqrt{L}=6L, \$$
 
-$$
-= 400
-$$
+$$L=400$$
 
 The claim is a crossing after more than $300$ hours. We have $400>300$.
 
@@ -4321,13 +4259,13 @@ $$\\frac{C_2(q)}{q}=\\frac{1}{4} q$$
 
 The leftover exponent is positive, so unit cost rises as plant 2 produces more. At $20$ and $40$ units:
 
-$$
-\\frac{1}{4}\\cdot 20 = 5, \\qquad \\frac{1}{4}\\cdot 40
-$$
+$$\\frac{1}{4}\\cdot 20$$
 
-$$
-= 10
-$$
+$$\\frac{C_2(q)}{q}=5, \\qquad \\frac{1}{4}\\cdot 40$$
+
+$$\\frac{1}{4}\\cdot 20$$
+
+$$\\frac{C_2(q)}{q}=10$$
 
 and $10>5$.
 
@@ -4560,7 +4498,9 @@ Revenue as a function of quantity is the leftover power after multiplying price 
 
 $$R(100)=80\\cdot 100^{\\frac{1}{2}}$$
 
-$$100^{\\frac{1}{2}}=10$$
+$$100^{\\frac{1}{2}}$$
+
+$$R(100)=10$$
 
 $$R(100)=800$$
 
@@ -4646,7 +4586,9 @@ This is a level of output at $36$ hours. The overview recovered $Y(L)=20 L^{\\fr
 
 $$Y(36)=20\\cdot 36^{\\frac{1}{2}}$$
 
-$$36^{\\frac{1}{2}}=6$$
+$$36^{\\frac{1}{2}}$$
+
+$$Y(36)=6$$
 
 $$Y(36)=120$$
 
@@ -4680,7 +4622,13 @@ So the statement is False.`,
 
 Start from the calibrated closed form in the overview.
 
-The nine-hour output is $Y(9)=20\\cdot 3=60$. Doubling that output means $Y(L)=120$. The overview recovered $Y(L)=20 L^{\\frac{1}{2}}$, so
+The nine-hour output is
+
+$$Y(9)=20\\cdot 3$$
+
+$$Y(9)=60$$
+
+Doubling that output means $Y(L)=120$. The overview recovered $Y(L)=20 L^{\\frac{1}{2}}$, so
 
 $$20 L^{\\frac{1}{2}}=120$$
 
@@ -4886,7 +4834,9 @@ This is a level of cost at scale $16$. The overview recovered $C(x)=\\frac{1}{2}
 
 $$C(16)=\\frac{1}{2}\\cdot 16^{\\frac{3}{2}}$$
 
-$$16^{\\frac{3}{2}}=64$$
+$$16^{\\frac{3}{2}}$$
+
+$$C(16)=64$$
 
 $$C(16)=32$$
 
@@ -4941,27 +4891,17 @@ Keep the stated domain in force while you evaluate the model.
 
 Benefit per million of cost is the ratio of the two recovered curves:
 
-$$
-\\frac{B(x)}{C(x)} = \\frac{18 x^{\\frac{1}{2}}}{\\frac{1}{2} x^{\\frac{3}{2}}}
-$$
+$$\\frac{B(x)}{C(x)}=\\frac{18 x^{\\frac{1}{2}}}{\\frac{1}{2} x^{\\frac{3}{2}}}$$
 
-$$
-= \\frac{36}{x}
-$$
+$$\\frac{B(x)}{C(x)}=\\frac{36}{x}$$
 
 That leftover power of $x$ is not constant. At the cost trial, the benefit trial, and the meeting:
 
-$$
-\\frac{B(4)}{C(4)} = 9, \\qquad \\frac{B(16)}{C(16)}
-$$
+$$\\frac{B(4)}{C(4)}=9, \$$
 
-$$
-= 2.25, \\qquad \\frac{B(36)}{C(36)}
-$$
+$$\\frac{B(16)}{C(16)}=2.25, \$$
 
-$$
-= 1
-$$
+$$\\frac{B(36)}{C(36)}=1$$
 
 Three different ratios.
 
@@ -5081,7 +5021,9 @@ This is a level of throughput at a feed of $64$. The overview recovered $T(g)=4 
 
 $$T(64)=4\\cdot 64^{\\frac{2}{3}}$$
 
-$$64^{\\frac{2}{3}}=16$$
+$$64^{\\frac{2}{3}}$$
+
+$$T(64)=16$$
 
 $$T(64)=64$$
 
@@ -5265,13 +5207,9 @@ $$E'(v)=\\frac{v}{10}$$
 
 The leftover power is positive, so the slope itself rises with speed. At the two survey speeds:
 
-$$
-E'(30) = 3, \\qquad E'(50)
-$$
+$$E'(30)=3, \\qquad E'(50)$$
 
-$$
-= 5
-$$
+$$E'(30)=5$$
 
 The later increment adds more.
 
@@ -5303,13 +5241,9 @@ $$\\frac{E(v)}{v}=\\frac{v}{20}$$
 
 The leftover exponent is positive, so that average is not the same at every speed. At the two survey speeds:
 
-$$
-\\frac{E(30)}{30} = 1.5, \\qquad \\frac{E(50)}{50}
-$$
+$$\\frac{E(30)}{30}=1.5, \$$
 
-$$
-= 2.5
-$$
+$$\\frac{E(50)}{50}=2.5$$
 
 Two different averages.
 
@@ -5649,13 +5583,9 @@ $$I'(d)=-1600 d^{-3}$$
 
 The cut is larger nearer the lamp. At the two named distances:
 
-$$
-\\lvert I'(2)\\rvert = 200, \\qquad \\lvert I'(4)\\rvert
-$$
+$$\\lvert I'(2)\\rvert=200, \\qquad \\lvert I'(4)\\rvert$$
 
-$$
-= 25
-$$
+$$\\lvert I'(2)\\rvert=25$$
 
 An extra metre cuts less illuminance at $4$ metres than at $2$.
 
@@ -5761,7 +5691,9 @@ This is a level of the bill at $81$ accounts. The overview recovered $C(n)=100 n
 
 $$C(81)=100\\cdot 81^{\\frac{3}{4}}$$
 
-$$81^{\\frac{3}{4}}=27$$
+$$81^{\\frac{3}{4}}$$
+
+$$C(81)=27$$
 
 $$C(81)=2700$$
 
@@ -5995,7 +5927,9 @@ This is a level of the composed loss at wind speed $64$. The overview recovered 
 
 $$L(64)=4\\cdot 64^{\\frac{3}{2}}$$
 
-$$64^{\\frac{3}{2}}=512$$
+$$64^{\\frac{3}{2}}$$
+
+$$L(64)=512$$
 
 $$L(64)=2048$$
 
@@ -6103,7 +6037,9 @@ This is a level of impact at $0.16$ ADV. The overview recovered $I(v)=60 v^{\\fr
 
 $$I(0.16)=60\\cdot 0.16^{\\frac{1}{2}}$$
 
-$$0.16^{\\frac{1}{2}}=0.4$$
+$$0.16^{\\frac{1}{2}}$$
+
+$$I(0.16)=0.4$$
 
 $$I(0.16)=24$$
 
@@ -6135,9 +6071,13 @@ This is a level of the scaled charge at $0.25$ ADV. The overview recovered $vI(v
 
 $$0.25\\cdot I(0.25)=60\\cdot 0.25^{\\frac{3}{2}}$$
 
-$$0.25^{\\frac{3}{2}}=0.125$$
+$$0.25^{\\frac{3}{2}}$$
 
-$$60\\cdot 0.125=7.5$$
+$$0.25\\cdot I(0.25)=0.125$$
+
+$$60\\cdot 0.125$$
+
+$$0.25\\cdot I(0.25)=7.5$$
 
 Seven point five does not sit above $10$.
 
@@ -6217,7 +6157,9 @@ This is a level of energy at $64$ kg. The overview recovered $E(m)=10 m^{\\frac{
 
 $$E(64)=10\\cdot 64^{\\frac{2}{3}}$$
 
-$$64^{\\frac{2}{3}}=16$$
+$$64^{\\frac{2}{3}}$$
+
+$$E(64)=16$$
 
 $$E(64)=160$$
 
@@ -6249,7 +6191,9 @@ This is a level of energy at $216$ kg. The overview recovered $E(m)=10 m^{\\frac
 
 $$E(216)=10\\cdot 216^{\\frac{2}{3}}$$
 
-$$216^{\\frac{2}{3}}=36$$
+$$216^{\\frac{2}{3}}$$
+
+$$E(216)=36$$
 
 $$E(216)=360$$
 
@@ -6544,13 +6488,9 @@ $$S(N)=800 N^{\\frac{1}{2}}$$
 
 The leftover exponent on unit cost is negative, so unit cost falls. The leftover exponent on spend is positive, so cumulative spend still rises. At the two milestones:
 
-$$
-S(100) = 8000, \\qquad S(400)
-$$
+$$S(100)=8000, \$$
 
-$$
-= 16000
-$$
+$$S(400)=16000$$
 
 Spend rises while unit cost falls.
 
@@ -6790,7 +6730,9 @@ $$R(p)=4000 p^{-2}$$
 
 The leftover exponent is negative, so raising the price cuts revenue for every $p>0$. Differentiating:
 
-$$R'(p)=-8000 p^{-3}<0$$
+$$R'(p)=-8000 p^{-3}$$
+
+$$-8000 p^{-3}<0$$
 
 Revenue always falls as the price rises.
 
@@ -6899,6 +6841,8 @@ Form the ratio so the unknown positive coefficient cancels.
 This is a level at $16$ A. The overview recovered $S(p)=5p^{\\frac{3}{2}}$, so
 
 $$16^{\\frac{3}{2}}=(\\sqrt{16})^{3}$$
+
+$$16^{\\frac{3}{2}}$$
 
 $$16^{\\frac{3}{2}}=64$$
 
@@ -7023,11 +6967,17 @@ $$S(p)=5p^{\\frac{3}{2}}$$`,
 
 Name the recovered power rule, then substitute the claimed input.
 
-Compare two $8$ kg buoys with one $64$ kg buoy. The overview recovered $H(m)=6m^{\\frac{2}{3}}$, and the trial already gives $H(8)=24$, so
+Compare two $8$ kg buoys with one $64$ kg buoy. The overview recovered $H(m)=6m^{\\frac{2}{3}}$, and the trial already gives
+
+$$H(8)=24$$
+
+so
 
 $$2H(8)=48$$
 
 $$64^{\\frac{2}{3}}=(4^{3})^{\\frac{2}{3}}$$
+
+$$64^{\\frac{2}{3}}$$
 
 $$64^{\\frac{2}{3}}=16$$
 
@@ -7045,6 +6995,8 @@ Form the ratio so the unknown positive coefficient cancels.
 This is a level at $125$ kg. The overview recovered $H(m)=6m^{\\frac{2}{3}}$, so
 
 $$125^{\\frac{2}{3}}=(5^{3})^{\\frac{2}{3}}$$
+
+$$125^{\\frac{2}{3}}$$
 
 $$125^{\\frac{2}{3}}=25$$
 
@@ -7228,6 +7180,8 @@ Whether $11$ m still clears $8$ Mbps is a level of the recovered law:
 
 $$T(11)=\\frac{800}{11^{2}}$$
 
+$$T(11)=\\frac{800}{11}$$
+
 $$T(11)=\\frac{800}{121}\\approx 6.61$$
 
 The claim needs $T(11)\\ge 8$. We have $6.61<8$.
@@ -7312,6 +7266,8 @@ This is a level at $16$ g. The overview recovered $G(m)=8m^{\\frac{3}{4}}$, so
 
 $$16^{\\frac{3}{4}}=(2^{4})^{\\frac{3}{4}}$$
 
+$$16^{\\frac{3}{4}}$$
+
 $$16^{\\frac{3}{4}}=8$$
 
 $$G(16)=8\\cdot 8$$
@@ -7349,7 +7305,11 @@ This is a level at $64$ g. The overview recovered $G(m)=8m^{\\frac{3}{4}}$, so
 
 $$64^{\\frac{3}{4}}=(2^{6})^{\\frac{3}{4}}$$
 
+$$64^{\\frac{3}{4}}$$
+
 $$64^{\\frac{3}{4}}=2^{\\frac{9}{2}}$$
+
+$$64^{\\frac{3}{4}}$$
 
 $$64^{\\frac{3}{4}}=16\\sqrt{2}$$
 
@@ -7582,7 +7542,9 @@ $$y(9)=162$$
 
 The recorded third run is $150$ mm, so
 
-$$162-150=12$$
+$$162-150$$
+
+$$y(9)=12$$
 
 The shortfall is $12$ mm, which is more than $10$ mm.
 
@@ -7691,6 +7653,8 @@ Start from the calibrated closed form in the overview.
 A $10\\%$ height increase is the scale factor $1.1^{3}$:
 
 $$\\left(\\frac{11}{10}\\right)^{3}=\\frac{1331}{1000}$$
+
+$$\\left(\\frac{11}{10}\\right)^{3}$$
 
 $$\\left(\\frac{11}{10}\\right)^{3}=1.331$$
 
@@ -8158,7 +8122,13 @@ So the statement is True.`,
 
 Start from the calibrated closed form in the overview.
 
-At the recorded price, $R(4)=\\frac{2000}{2}=1000$. Doubling revenue means $R=2000$:
+At the recorded price,
+
+$$R(4)=\\frac{2000}{2}$$
+
+$$R(4)=1000$$
+
+Doubling revenue means $R=2000$:
 
 $$2000p^{-\\frac{1}{2}}=2000$$
 
@@ -8401,7 +8371,11 @@ So the statement is True.`,
 
 Read the exponent from the overview before comparing growth rates.
 
-Doubling the recorded batch of $40$ units gives $q=80$:
+Doubling the recorded batch of $40$ units gives
+
+$$q=80$$
+
+:
 
 $$T(40)=120+120$$
 
@@ -8646,13 +8620,9 @@ Start from the calibrated closed form in the overview.
 
 Quadrupling the first recorded point sends $n=25$ to $n=100$, the second recorded point:
 
-$$
-t(25) = 18, \\qquad t(100)
-$$
+$$t(25)=18, \$$
 
-$$
-= 13
-$$
+$$t(100)=13$$
 
 $$\\frac{13}{18}\\approx 0.722$$
 
@@ -8915,7 +8885,9 @@ $$f(25)=750$$
 
 $$f(9)=162$$
 
-$$750-162=588$$
+$$750-162$$
+
+$$f(9)=588$$
 
 The added cost is $588$ euros, which is not under $500$.
 
@@ -9087,6 +9059,8 @@ $$\\frac{q(kp)}{q(p)}=k^{-2}$$
 
 $$\\left(\\frac{5}{4}\\right)^{-2}=\\frac{16}{25}$$
 
+$$\\left(\\frac{5}{4}\\right)^{-2}$$
+
 $$\\left(\\frac{5}{4}\\right)^{-2}=0.64$$
 
 Exact demand falls by $36\\%$, not by $50\\%$. The two routes do not agree.
@@ -9099,6 +9073,8 @@ Form the ratio so the unknown positive coefficient cancels.
 A $25\\%$ rise takes the tariff from $3$ to $3.75$. The exact multiplier is
 
 $$\\left(\\frac{5}{4}\\right)^{-2}=\\frac{16}{25}$$
+
+$$\\left(\\frac{5}{4}\\right)^{-2}$$
 
 $$\\left(\\frac{5}{4}\\right)^{-2}=0.64$$
 
@@ -9120,6 +9096,8 @@ $$-2\\cdot 0.25=-0.50$$
 The exact power uses the tariff factor $\\frac{5}{4}$:
 
 $$\\left(\\frac{5}{4}\\right)^{-2}-1=\\frac{16}{25}-1$$
+
+$$\\left(\\frac{5}{4}\\right)^{-2}-1$$
 
 $$\\left(\\frac{5}{4}\\right)^{-2}-1=-0.36$$
 
@@ -10977,7 +10955,9 @@ $$q\\circ p=\\frac{400}{s}$$
 
 At subsidy index $8$:
 
-$$\\frac{400}{8}=50$$
+$$\\frac{400}{8}$$
+
+$$q\\circ p=50$$
 
 The claim is that this already sits above $40$. Compare with the claim:
 
@@ -11069,7 +11049,9 @@ Name the recovered power rule, then substitute the claimed input.
 
 The cheaper line is line 2, because
 
-$$b=\\frac{1}{4}<a$$
+$$b=\\frac{1}{4}$$
+
+$$\\frac{1}{4}<a$$
 
 $$b=1$$
 
@@ -11097,7 +11079,15 @@ The score sits above $200$, matching the claim.
 So the statement is True.`,
     `**C.** → True
 
-The overview recovered $a=1>b=\\frac{1}{4}$ and the equal-marginal split
+The overview recovered
+
+$$a=1$$
+
+$$1>b$$
+
+$$a=\\frac{1}{4}$$
+
+ and the equal-marginal split
 
 $$q_{2}=4q_{1},$$ hence $q_{2}=24$ and
 
