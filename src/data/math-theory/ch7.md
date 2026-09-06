@@ -14,8 +14,8 @@ Chapter 4 solves equations. This chapter studies the functions themselves: what 
 - Find the axis $x=-b/(2a)$ and the vertex, and connect the axis to Vieta’s sum of roots.
 - Use the discriminant to count real roots and meetings with a horizontal line.
 - Decide how many times a line meets a parabola, including tangency.
-- Read linear and quadratic behaviour from tables of first and second differences.
-- Compose a line with a parabola and rewrite one using the other.
+- Read linear and quadratic behaviour from tables by checking first and second differences.
+- Expand a nested rule such as $g(f(x))$ and see that the order of nesting matters.
 - Rebuild a line or a parabola from roots, a vertex, or a few points.
 - Translate applied stories (fare, ball toss, revenue, cost) into the same algebra.
 - Spot the common traps: confusing roots with the vertex, half-sum mistakes, wrong nesting degrees.
@@ -418,77 +418,116 @@ A chord joining the two roots of a parabola is a horizontal segment on the $x$-a
 
 ## 7.7 Tables: first and second differences
 
-### Constant first differences
+Many Chapter 7 tasks give a table and no formula. Your job is to decide whether the hidden rule is a line or a parabola, then rebuild what you need (slope, leading coefficient, axis, vertex, next value).
 
-Suppose inputs are equally spaced: $x,x+h,x+2h,\ldots$. Look at successive output gaps
+Almost every table in the course uses equally spaced inputs with step $1$ (for example $n=0,1,2,3,\ldots$ or $p=1,2,3,\ldots$). Work with that case first.
 
-$$
-\Delta y_{i}=y_{i+1}-y_{i}.
-$$
+### First differences
 
-If the first differences are constant, the underlying rule is linear (affine). The common difference equals $m\cdot h$, so
+Write the outputs in a row. Under each pair of neighbours, write the gap
 
 $$
-m=\frac{\text{common first difference}}{h}.
+\text{next output}-\text{current output}.
 $$
 
-### Constant second differences
+Those gaps are the **first differences**.
 
-Second differences are differences of first differences. If second differences are constant and nonzero, the underlying rule is quadratic.
+**Example 1 (line).**
 
-For a quadratic $g(x)=ax^{2}+bx+c$ sampled at step $h$,
-
-$$
-\text{common second difference}=2ah^{2}.
-$$
-
-So
-
-$$
-a=\frac{\text{common second difference}}{2h^{2}}.
-$$
-
-**Example 1.** Heights every second:
-
-| $t$ | $0$ | $1$ | $2$ | $3$ | $4$ |
+| $x$ | $0$ | $1$ | $2$ | $3$ | $4$ |
 | --- | --- | --- | --- | --- | --- |
-| $h(t)$ | $0$ | $15$ | $20$ | $15$ | $0$ |
+| $y$ | $-1$ | $2$ | $5$ | $8$ | $11$ |
 
-First differences: $15,5,-5,-15$. Second differences: $-10,-10,-10$. The second differences are constant, so a quadratic fits. With $h=1$,
+First differences: $3,3,3,3$.
+
+The first differences are constant. So the rule is linear. With step $1$, that common gap is the slope:
 
 $$
-2a=-10\implies a=-5.
+m=3.
 $$
 
-The pattern matches a ball toss that returns to ground at $t=0$ and $t=4$, with peak at the midpoint $t=2$.
+Using the first point,
 
-### False constant-gap claims
+$$
+y=3x-1.
+$$
 
-Exam tables sometimes almost look quadratic. Check the second gaps carefully. One wrong gap kills the “perfect quadratic” claim. Also, a constant first difference cannot come from a genuine parabola: a square cannot fit an arithmetic sequence of outputs at equal steps.
+You can now extend the table by keeping the same gap: $y(5)=11+3=14$.
 
-### Choosing between models
+### Second differences
 
-Given a short table, compare:
+If the first differences are not constant, form gaps of those gaps. Those are the **second differences**.
 
-1. Are first differences constant? Prefer a line.
-2. Are second differences constant? Prefer a parabola.
-3. Neither? Neither pure model fits exactly.
+**Example 2 (parabola).**
 
-Do not force a parabola onto arithmetic data.
+| $n$ | $0$ | $1$ | $2$ | $3$ | $4$ | $5$ |
+| --- | --- | --- | --- | --- | --- | --- |
+| $s_n$ | $3$ | $0$ | $-1$ | $0$ | $3$ | $8$ |
+
+First differences: $-3,-1,1,3,5$.
+
+Second differences: $2,2,2,2$.
+
+The second differences are constant and nonzero. So the rule is quadratic. With step $1$,
+
+$$
+\text{common second difference}=2a.
+$$
+
+Here $2a=2$, so $a=1$. Matching the first two points gives
+
+$$
+s_n=n^{2}-4n+3=(n-1)(n-3).
+$$
+
+From that rebuilt formula you can read everything the claims ask for:
+
+- roots at $n=1$ and $n=3$;
+- axis at the midpoint $n=2$;
+- vertex height $s_2=-1$;
+- the next value $s_6=6^{2}-4\cdot 6+3=15$, not $12$.
+
+### How to decide on an exam table
+
+1. Compute first differences.
+2. If they are constant, use a line. Slope equals that common gap when the step is $1$.
+3. If they are not constant, compute second differences.
+4. If second differences are constant, use a parabola. Leading coefficient satisfies $2a=$ that common second gap when the step is $1$.
+5. Rebuild only as far as the claim needs: sometimes $a$ alone is enough, sometimes you also need roots, axis, or one more table value.
+
+### Traps that appear in the course
+
+- A claim may say a line through the first and last points also hits a middle point. Check that middle value directly. In Example 2, the line through $(0,3)$ and $(5,8)$ has slope $1$, so at $n=2$ it predicts $5$, but the table has $-1$. The claim is false.
+- A claim may extend the pattern wrongly. Keep adding the same second difference to the first differences, then add that new first difference to the last output. Do not invent a new gap.
+- Constant first differences mean a line. Do not force a parabola onto that table.
+
+**Example 3 (revenue table).**
+
+| $p$ | $1$ | $2$ | $3$ | $4$ | $5$ |
+| --- | --- | --- | --- | --- | --- |
+| $R$ | $7$ | $12$ | $15$ | $16$ | $15$ |
+
+First differences: $5,3,1,-1$. Second differences: $-2,-2,-2$. So $2a=-2$ and $a=-1$. Matching $R(1)=7$ recovers
+
+$$
+R(p)=p(8-p)=-p^{2}+8p.
+$$
+
+The peak is at the midpoint $p=4$ of the roots $0$ and $8$. Revenue does not increase at every listed step: from $4$ to $5$ it falls from $16$ to $15$.
 
 ---
 
-## 7.8 Composition, rewriting, and nesting
+## 7.8 Nesting a line and a parabola
 
-### Degrees multiply under composition
+Course tasks often give a line $f$ and a parabola $g$, then ask about $g(f(x))$ or $f(g(x))$. You do not need abstract degree theory. Expand the expression and read the result.
 
-If $f$ is linear of degree $1$ and $g$ is quadratic of degree $2$, then
+### What nesting means
 
-$$
-\deg(g\circ f)=2\cdot 1=2,\qquad \deg(f\circ g)=1\cdot 2=2.
-$$
+$g(f(x))$ means: first compute the line value, then feed that number into the parabola.
 
-Both nestings are quadratic polynomials. The trap is to add degrees and claim an $x^{3}$ term. Adding $1+2=3$ is wrong for composition.
+$f(g(x))$ means: first compute the parabola value, then feed that number into the line.
+
+### Expand both orders
 
 **Example 1.** Let $f(x)=x+1$ and $g(x)=x^{2}$.
 
@@ -500,36 +539,48 @@ $$
 f(g(x))=x^{2}+1.
 $$
 
-Both have highest power $x^{2}$. They are not the same function. Composition does not commute.
+Both results have highest power $x^{2}$. Nesting a line with a parabola does not create an $x^{3}$ term. The false claim “$1+2=3$, so there is an $x^{3}$ term” is a standard trap.
 
-### Writing a parabola using a line
-
-If $f$ is any non-constant linear function, the set $\{1,f,f^{2}\}$ spans all polynomials of degree at most $2$. So every quadratic $g$ can be written
+The two nestings are different functions. A quick check:
 
 $$
-g(x)=A\,f(x)^{2}+B\,f(x)+C
+g(f(1))=4,\qquad f(g(1))=2.
 $$
 
-for unique real $A,B,C$. Matching leading coefficients gives
+So claims that “the two nested rules are identical” or “they have the same vertex” are false here.
+
+From the expansions you can also read geometry:
+
+- $g(f(x))=(x+1)^{2}$ is a perfect square, so its vertex lies on the horizontal axis;
+- $f(g(x))=x^{2}+1$ has the same axis $x=0$ as $g$, and vertex $(0,1)$.
+
+### Checking a rewrite claim
+
+Some tasks claim that the parabola can be written using the line, for example
 
 $$
-A=\frac{a_{g}}{a_{f}^{2}}.
+g(x)=f(x)^{2}-6\,f(x)+6.
 $$
 
-A constant “line” cannot produce an $x^{2}$ term, so the rewrite fails if $f$ is constant.
+The method is simple: replace $f(x)$ by its formula and expand. If you recover $g(x)$, the claim is true. If not, it is false.
 
-### Linear substitution and roots
+**Example 2.** Let $f(x)=x+1$ and $g(x)=x^{2}-4x+1$. Expand the proposed rewrite:
 
-If $g(x)=A(f(x)-r)(f(x)-s)$, the roots of $g$ solve $f(x)=r$ or $f(x)=s$. They are not automatically the same as the roots of $f$. Reading roots “through” a linear substitution means solving those linear equations.
+$$
+(x+1)^{2}-6(x+1)+6=x^{2}+2x+1-6x-6+6=x^{2}-4x+1=g(x).
+$$
 
-### Shifts and scalings
+The claim is true.
 
-- Horizontal shift: $g(x-t)$ moves the graph by $t$ to the right and moves the axis with it.
-- Vertical shift: $g(x)+s$ moves the graph up by $s$ and leaves the axis fixed.
-- Vertical scale: $A g(x)$ multiplies heights by $A$ and preserves roots when $A\neq 0$.
-- Evenness: if $g(-x)=g(x)$ for all $x$, the graph is symmetric about the $y$-axis, which forces $b=0$ in standard form.
+You do not need a general theorem about bases of polynomials for these tasks. Expand and compare.
 
-A translation alone never flattens a parabola into a line. Degree is preserved by shifts.
+### Shifts you meet in claims
+
+- $g(x)+s$ moves the graph up by $s$ and leaves the axis fixed.
+- $g(x-t)$ moves the graph right by $t$ and moves the axis with it.
+- Multiplying by a nonzero constant stretches heights and keeps the roots when the constant is nonzero.
+
+That is enough for the shift and nesting claims in the chapter.
 
 ---
 
@@ -663,13 +714,13 @@ The vertex formula never needs $\Delta\geq 0$.
 
 Opposite signs can still produce a positive sum. Check the product.
 
-### Error 5: adding degrees under composition
+### Error 5: inventing an $x^{3}$ term from nesting
 
-$\deg(g\circ f)=\deg(g)\cdot\deg(f)$. For a line and a parabola both nestings have degree $2$, not $3$.
+Expand $g(f(x))$ or $f(g(x))$. For a line and a parabola the highest power stays $x^{2}$. Do not add $1+2=3$.
 
-### Error 6: assuming composition commutes
+### Error 6: assuming nesting order does not matter
 
-$g(f(x))$ and $f(g(x))$ can share degree and still be different functions.
+$g(f(x))$ and $f(g(x))$ can both be quadratic and still be different functions. Check with one test point.
 
 ### Error 7: thinking a vertical shift moves the axis
 
@@ -711,81 +762,71 @@ On a parabola the average rate over $[x_{1},x_{2}]$ equals the slope of the chor
 
 ## 7.13 Difficult exam-style tasks
 
-The tasks below match the style of Chapter 7.5: several True/False claims, often with no hint which formula to open first. Work each claim from the recovered algebra, not from a slogan.
+The eight tasks below are taken from the course Chapter 7.5 bank (difficulty $5/5$). Each one is a True/False pack. Work from the table, formula, or figure data, not from a slogan. Where the live course shows a figure or an unprinted table, the needed values are written out so you can practise here.
 
-### Exam task 1 — Axis, Vieta, and the half-sum trap
+### Exam task 1 — Sampled heights (table)
 
-Let $g(x)=ax^{2}+bx+c$ with $a\neq 0$, and write $S$ for the sum of the roots of $g$ in $\mathbb{C}$. Let $\ell$ be the axis of symmetry of the graph of $g$. No concrete coefficients are given.
+A sequence $s_n$ is recorded for $n=0,1,2,3,4,5$. No closed form is supplied.
 
-**Claims.**
-
-1. The vertical line $\ell$ is always the same as the vertical line $x=S$.
-2. In all cases, $\ell$ is the line $x=S/2$.
-3. If $S=0$, then the axis of $g$ is the $y$-axis.
-4. If $a>0$ and $S>0$, then both real roots (when they exist) must be positive.
-5. Changing the constant term $c$ never moves the axis $\ell$.
-
-**Solution.**
-
-By Vieta, $S=-b/a$. The axis is
-
-$$
-x=-\frac{b}{2a}=\frac{S}{2}.
-$$
-
-So claim 1 is false and claim 2 is true. If $S=0$, then $b=0$ and the axis is $x=0$, so claim 3 is true. Claim 4 is false: roots $-1$ and $3$ give $S=2>0$ with opposite signs. Claim 5 is true, because the axis depends only on $a$ and $b$.
-
-**Answers.** False, True, True, False, True.
-
-### Exam task 2 — Nested functions without numbers
-
-Let $f$ be a non-constant linear function and $g$ a quadratic function. No further data are given.
+| $n$ | $0$ | $1$ | $2$ | $3$ | $4$ | $5$ |
+| --- | --- | --- | --- | --- | --- | --- |
+| $s_n$ | $3$ | $0$ | $-1$ | $0$ | $3$ | $8$ |
 
 **Claims.**
 
-1. The nested function $g(f(x))$ always has an $x^{3}$ term, because one adds $1$ and $2$.
-2. The nested function $f(g(x))$ is always a parabola (highest power $x^{2}$).
-3. The nested functions $g(f(x))$ and $f(g(x))$ always have the same highest power of $x$.
-4. The polynomials $g\circ f$ and $f\circ g$ are always identical as functions.
-5. If one replaces $f$ by $f^{2}$ (still using the same $g$), then $g(f(x)^{2})$ has highest power $x^{4}$.
+1. The unique quadratic through the listed points has roots at $n=1$ and $n=3$.
+2. Extending the constant-second-difference pattern one step past $n=5$ produces $s_6=12$.
+3. The axis of that interpolating parabola is $n=2$, the unique listed input of smallest height.
+4. A line matching $s_0$ and $s_5$ also matches $s_2$.
+5. The vertex height of the interpolating parabola equals $-1$.
 
 **Solution.**
 
-Degrees multiply: $\deg(g\circ f)=2$ and $\deg(f\circ g)=2$. Claim 1 is false. Claims 2 and 3 are true. Composition does not commute, so claim 4 is false. Finally $\deg(f^{2})=2$, so $\deg(g\circ f^{2})=4$, and claim 5 is true.
-
-**Answers.** False, True, True, False, True.
-
-### Exam task 3 — Vertical shift family and root count
-
-For each real $s$ let
+First differences: $-3,-1,1,3,5$. Second differences: $2,2,2,2$. So $2a=2$ and $a=1$. Matching the first points recovers
 
 $$
-g_{s}(x)=(x-2)^{2}+(s-4).
+s_n=n^{2}-4n+3=(n-1)(n-3).
 $$
+
+Roots at $1$ and $3$: claim 1 true. Axis at midpoint $n=2$, and $s_2=-1$ is the unique listed minimum: claims 3 and 5 true.
+
+Next value: keep second difference $2$, so the next first difference after $5$ is $7$, hence $s_6=8+7=15$, not $12$. Claim 2 false.
+
+Line through $(0,3)$ and $(5,8)$ has slope $1$, so at $n=2$ it predicts $5$, but $s_2=-1$. Claim 4 false.
+
+**Answers.** True, False, True, False, True.
+
+### Exam task 2 — Ticket desk revenue (applied table)
+
+A club sells tickets at price $p$ euros. Total revenue $R$ is observed at five prices. No formula is printed.
+
+| $p$ | $1$ | $2$ | $3$ | $4$ | $5$ |
+| --- | --- | --- | --- | --- | --- |
+| $R$ | $7$ | $12$ | $15$ | $16$ | $15$ |
 
 **Claims.**
 
-1. For $s=3$ the vertex sits one unit below the axis, so there are two distinct real roots whose midpoint is $x=2$.
-2. For $s=4$ the vertex lies on the axis, so there is a double root at $x=2$ and no other.
-3. For $s=5$ the vertex sits one unit above the axis, so $g_{s}$ has no real root.
-4. The axis of symmetry of $g_{s}$ is $x=2$ for every $s$.
-5. The vertex height of $g_{s}$ equals $s-4$, so the graph sits below the axis precisely when $s<4$.
+1. Among the listed prices, the unique maximum occurs at the midpoint of the two prices where revenue equals $15$.
+2. Rebuilding a quadratic from the constant second difference recovers leading coefficient $-1$.
+3. Revenue increases at every listed step from $p=1$ to $p=5$.
+4. The interpolating parabola has roots $0$ and $8$, so its axis is $p=4$.
+5. Raising the price from $4$ to $5$ decreases the listed revenue by $1$ euro.
 
 **Solution.**
 
-Expand or read vertex form directly: axis $x=2$, vertex height $s-4$. The equation $g_{s}(x)=0$ becomes $(x-2)^{2}=4-s$.
+First differences: $5,3,1,-1$. Second differences: $-2,-2,-2$. So $2a=-2$ and $a=-1$. Matching $R(1)=7$ recovers
 
-- $s=3$: right-hand side $1>0$, two roots, midpoint $2$.
-- $s=4$: right-hand side $0$, double root at $2$.
-- $s=5$: right-hand side $-1<0$, no real root.
+$$
+R(p)=p(8-p)=-p^{2}+8p.
+$$
 
-Vertical shift never moves the axis. With $a>0$, the graph is below the $x$-axis between its roots precisely when the vertex is below the axis, that is when $s-4<0$. All five claims are true.
+Revenue $15$ occurs at $p=3$ and $p=5$; the midpoint is $p=4$, where $R=16$ is the unique listed maximum. Claim 1 true. Claim 2 true. Claim 3 false, because the step from $4$ to $5$ falls. Roots $0$ and $8$ give axis $p=4$: claim 4 true. From $16$ to $15$ is a drop of $1$: claim 5 true.
 
-**Answers.** True, True, True, True, True.
+**Answers.** True, True, False, True, True.
 
-### Exam task 4 — Meetings, vertex, and a rewrite in $f$
+### Exam task 3 — Meetings, vertex, and a rewrite in $f$
 
-Let $f(x)=x+1$ and $g(x)=x^{2}-4x+1$.
+Let $f(x)=x+1$ and $g(x)=x^{2}-4x+1$. Work in symbols; no figure is supplied.
 
 **Claims.**
 
@@ -797,33 +838,93 @@ Let $f(x)=x+1$ and $g(x)=x^{2}-4x+1$.
 
 **Solution.**
 
-Meetings: $x^{2}-4x+1=x+1$, so $x^{2}-5x=0$, hence $x(x-5)=0$. Meeting abscissas $0$ and $5$, sum $5$. Claim 1 is true.
+Meetings: $x^{2}-4x+1=x+1$ gives $x^{2}-5x=0$, so $x=0$ or $x=5$. Sum $5$: claim 1 true.
 
-For $g$ itself, $S=4$, axis $x=2=S/2$. Claim 2 is true.
+For $g$, sum of roots $4$, axis $x=2$: claim 2 true. Vertex height $g(2)=4-8+1=-3$: claim 3 true. Product $c/a=1$ and $g(0)=1$: claim 4 true.
 
-Vertex height:
-
-$$
-g(2)=4-8+1=-3,
-$$
-
-so the vertex is $(2,-3)$, three units below the axis. Claim 3 is true.
-
-Product of roots $c/a=1$, and $g(0)=1$. Claim 4 is true.
-
-Expand the proposed rewrite:
+Expand the rewrite:
 
 $$
-(x+1)^{2}-6(x+1)+6=x^{2}+2x+1-6x-6+6=x^{2}-4x+1=g(x).
+(x+1)^{2}-6(x+1)+6=x^{2}-4x+1=g(x).
 $$
 
-Claim 5 is true.
+Claim 5 true.
 
 **Answers.** True, True, True, True, True.
 
-### Exam task 5 — Ball toss from a figure
+### Exam task 4 — Sliding slope family
 
-A ball is tossed straight up. Height $h$ (metres) against time $t$ (seconds) is a downward parabola. The horizontal axis is ground level. The visible ground times are $t=0$ and $t=6$, and the marked peak is at height $9$.
+For each real $t$ let $f_{t}(x)=tx$ and $g(x)=x^{2}+1$. Study how the line family meets the fixed parabola.
+
+**Claims.**
+
+1. Tangency occurs precisely at the two slopes $t=2$ and $t=-2$.
+2. The graphs never miss each other: every real $t$ produces at least one meeting.
+3. For $t=0$ the graphs meet at two real points, because $x^{2}+1$ factors over the reals.
+4. When $t=3$ the graphs miss each other, because $|t|>2$ forces a negative discriminant.
+5. The axis of $g$ depends on $t$, and for $t=0$ that axis coincides with the line $f_{0}$.
+
+**Solution.**
+
+Meetings solve $x^{2}-tx+1=0$. Discriminant $\Delta(t)=t^{2}-4$.
+
+- miss when $|t|<2$;
+- tangency when $t=\pm 2$;
+- two meetings when $|t|>2$.
+
+Claim 1 true. Claim 2 false (miss when $|t|<2$). Claim 3 false ($t=0$ gives $x^{2}+1=0$, no real root). Claim 4 false ($t=3$ gives $\Delta=5>0$, two meetings). Axis of $g$ is $x=0$ for every $t$, and $f_{0}$ is the horizontal line $y=0$, not the vertical axis: claim 5 false.
+
+**Answers.** True, False, False, False, False.
+
+### Exam task 5 — Rebuild from vertex and a point
+
+A parabola has vertex $(2,-3)$ and passes through $(0,5)$. It opens upwards.
+
+**Claims.**
+
+1. The stretch factor in vertex form equals $2$, so the rebuilt rule is $g(x)=2(x-2)^{2}-3$.
+2. $g(4)=g(0)=5$, matching the symmetry of a parabola about $x=2$.
+3. $g(1)=-1$ and $g(3)=-1$, so those two inputs sit equally far from the axis $x=2$.
+4. The vertex lies above the horizontal axis, and therefore both given points $(0,5)$ and $(2,-3)$ have positive height.
+5. The rule is $g(x)=(x-2)^{2}-3$.
+
+**Solution.**
+
+Start from $g(x)=a(x-2)^{2}-3$. Use $(0,5)$:
+
+$$
+4a-3=5\implies 4a=8\implies a=2.
+$$
+
+So $g(x)=2(x-2)^{2}-3$. Claim 1 true. Claim 5 false (wrong stretch). Symmetry about $x=2$ gives $g(4)=g(0)=5$ and $g(1)=g(3)=-1$: claims 2 and 3 true. Vertex height $-3$ is below the axis, and the point $(2,-3)$ is not positive: claim 4 false.
+
+**Answers.** True, True, True, False, False.
+
+### Exam task 6 — Line inside a square (nesting)
+
+Let $f(x)=x+1$ and $g(x)=x^{2}$. Study the nested rules $g(f(x))$ and $f(g(x))$.
+
+**Claims.**
+
+1. The nested rule $g(f(x))$ expands to a perfect square, so its vertex lies on the horizontal axis.
+2. The nested rule $f(g(x))$ has the same axis of symmetry as $g$.
+3. The two nested rules are identical as functions.
+4. The nested rules $g(f(x))$ and $f(g(x))$ have the same vertex.
+5. The highest power appearing in $f(g(x))$ is $x^{3}$.
+
+**Solution.**
+
+$$
+g(f(x))=(x+1)^{2}=x^{2}+2x+1,\qquad f(g(x))=x^{2}+1.
+$$
+
+Claim 1 true (vertex $(-1,0)$ on the axis). Claim 2 true (both have axis $x=0$). The functions differ: $g(f(1))=4$ while $f(g(1))=2$, so claim 3 false. Vertices $(-1,0)$ and $(0,1)$ differ, so claim 4 false. Highest power in $f(g(x))$ is $x^{2}$, not $x^{3}$: claim 5 false.
+
+**Answers.** True, True, False, False, False.
+
+### Exam task 7 — Ball toss (figure)
+
+A ball is tossed straight up. The figure shows height $h$ (metres) against time $t$ (seconds) as a solid brown curve; the horizontal axis is ground level. The visible ground times are $t=0$ and $t=6$, and the marked peak has height $9$.
 
 **Claims.**
 
@@ -838,98 +939,36 @@ A ball is tossed straight up. Height $h$ (metres) against time $t$ (seconds) is 
 Recover
 
 $$
-h(t)=t(6-t)=6t-t^{2}=9-(t-3)^{2}.
+h(t)=t(6-t)=9-(t-3)^{2}.
 $$
 
-The peak is at the midpoint $t=3$, height $9$. Claim 1 is true. Claim 2 is false (it names $t=2$). By symmetry about $t=3$, heights at $t=1$ and $t=5$ are equal, both equal to $5$, so claim 3 is false. After the peak the completed square decreases, so claim 4 is false. The greatest height is $9$, not $8$, so claim 5 is false.
+Peak at midpoint $t=3$, height $9$. Claim 1 true. Claim 2 false (names $t=2$). Heights at $t=1$ and $t=5$ are equal ($5$), so claim 3 false. After the peak the completed square falls, so claim 4 false. Greatest height is $9$, not $8$, so claim 5 false.
 
 **Answers.** True, False, False, False, False.
 
-### Exam task 6 — Sliding slope family and tangency
+### Exam task 8 — Vertical shift family
 
-Let $g(x)=x^{2}-2x+2$ and $f_{m}(x)=mx$. Study meetings as $m$ varies.
-
-**Claims.**
-
-1. Meetings solve $x^{2}-(2+m)x+2=0$.
-2. There is a real slope $m$ for which the line is tangent to the parabola.
-3. Tangency occurs exactly when the discriminant $(2+m)^{2}-8=0$.
-4. One tangent slope is $m=-2+2\sqrt{2}$.
-5. For every real $m$ the two graphs meet at least once.
-
-**Solution.**
-
-Set $x^{2}-2x+2=mx$, so $x^{2}-(2+m)x+2=0$. Claim 1 is true (sign carefully: $x^{2}-2x-mx+2=0$).
-
-Discriminant:
-
-$$
-\Delta(m)=(2+m)^{2}-8.
-$$
-
-Tangency when $\Delta=0$, so claim 3 is true. Solving,
-
-$$
-2+m=\pm\sqrt{8}=\pm 2\sqrt{2}\implies m=-2\pm 2\sqrt{2}.
-$$
-
-So claim 2 is true and claim 4 is true. Claim 5 is false: when $|2+m|<\sqrt{8}$, one has $\Delta<0$ and no meeting.
-
-**Answers.** True, True, True, True, False.
-
-### Exam task 7 — Rebuild from vertex and a point, then probe
-
-A parabola has vertex $(1,-2)$ and passes through $(3,2)$. A horizontal line sits at height $0$.
+For each real $s$ let $g_{s}(x)=(x-2)^{2}+(s-4)$. Study how the vertical shift changes the graph.
 
 **Claims.**
 
-1. The parabola has equation $g(x)=(x-1)^{2}-2$.
-2. After calibrating with $(3,2)$, one gets $g(x)=2(x-1)^{2}-2$.
-3. The axis is $x=1$ for either of the two displayed candidates above.
-4. The calibrated parabola meets $y=0$ at two real points.
-5. Because the vertex lies below the line $y=0$ and the parabola opens up, there are two meetings with that line.
+1. For $s=3$ the vertex sits one unit below the axis, so there are two distinct real roots whose midpoint is $x=2$.
+2. For $s=4$ the vertex lies on the axis, so there is a double root at $x=2$ and no other.
+3. For $s=5$ the vertex sits one unit above the axis, so $g_{s}$ has no real root.
+4. The axis of symmetry of $g_{s}$ is $x=2$ for every $s$, because the $(x-2)^{2}$ term never moves horizontally.
+5. The vertex height of $g_{s}$ equals $s-4$, so the graph sits below the axis precisely when $s<4$.
 
 **Solution.**
 
-Vertex form starts as $g(x)=a(x-1)^{2}-2$. Calibrate with $(3,2)$:
+Axis $x=2$ for every $s$. Vertex height $s-4$. Solving $(x-2)^{2}=4-s$:
 
-$$
-2=a(3-1)^{2}-2=4a-2\implies 4a=4\implies a=1.
-$$
+- $s=3$: two roots, midpoint $2$;
+- $s=4$: double root at $2$;
+- $s=5$: no real root.
 
-So
+All five claims are true.
 
-$$
-g(x)=(x-1)^{2}-2.
-$$
-
-Claim 1 matches this calibrated equation, so it is true. Claim 2 uses leading coefficient $2$, which fails at $(3,2)$, so it is false. The axis is $x=1$ in either displayed candidate’s vertex form, so claim 3 is true. Solving $(x-1)^{2}=2$ gives two real roots, so claim 4 is true. The vertex sits below $y=0$ and $a>0$, so the upward parabola crosses that horizontal line twice, and claim 5 is true.
-
-**Answers.** True, False, True, True, True.
-
-### Exam task 8 — Table versus two candidate formulas
-
-Outputs at $x=0,1,2,3$:
-
-| $x$ | $0$ | $1$ | $2$ | $3$ |
-| --- | --- | --- | --- | --- |
-| $y$ | $2$ | $3$ | $6$ | $11$ |
-
-Candidate A: $y=x^{2}+2$. Candidate B: $y=2x+2$.
-
-**Claims.**
-
-1. First differences are $1,3,5$, so the rule is not linear.
-2. Second differences are constant and equal to $2$, so a quadratic with $a=1$ fits when the step is $1$.
-3. Candidate A matches every table value.
-4. Candidate B matches the first two values, therefore matches the whole table.
-5. The unique monic quadratic through the four points is $x^{2}+2$.
-
-**Solution.**
-
-First differences $1,3,5$ are not constant, so not linear: claim 1 true. Second differences $2,2$ are constant: with step $1$, $2a=2$ so $a=1$, claim 2 true. Candidate A gives $2,3,6,11$ and matches the whole table, so claim 3 is true. Candidate B gives $2,4,6,8$. It already fails at $x=1$ ($4\neq 3$), so matching only a prefix of the table is not enough and claim 4 is false. Claim 5 is true: $x^{2}+2$ hits all four points, and a monic quadratic is already fixed by three consistent non-collinear conditions.
-
-**Answers.** True, True, True, False, True.
+**Answers.** True, True, True, True, True.
 
 ---
 
@@ -947,9 +986,9 @@ First differences $1,3,5$ are not constant, so not linear: claim 1 true. Second 
 | Line meets parabola | Solve $g(x)=f(x)$; discriminant of $g-f$ counts meetings |
 | Tangency | Discriminant of $g-f$ equals zero |
 | Table: linear? | Constant first differences |
-| Table: quadratic? | Constant second differences; $2ah^{2}=$ that gap |
-| Composition degree | Multiply degrees; do not add them |
-| Rewrite $g$ through line $f$ | $g=Af^{2}+Bf+C$ when $\deg f=1$ |
+| Table: quadratic? | Constant second differences; with step $1$, $2a=$ that gap |
+| Nesting $g(f(x))$ or $f(g(x))$ | Expand; highest power stays $x^{2}$; order matters |
+| Rewrite claim using a line | Replace the line by its formula and expand |
 | Rebuild from vertex and a point | Start from $a(x-h)^{2}+k$, solve for $a$ |
 | Ball toss peak | Midpoint of the two ground times |
 | Parameter root-count | Track vertex height or $\Delta(\text{parameter})$ |
@@ -984,6 +1023,6 @@ $$
 g(x)-f(x)=0\quad\text{for meetings}.
 $$
 
-**Working order.** Name whether the object is a line, a parabola, a difference, a table, or a story. Recover the formula (or the discriminant condition) before judging a claim. For graphs without printed formulas, rebuild from ticks first. For nested expressions, multiply degrees. For Vieta claims, write sum and product explicitly and remember the axis is the half-sum. Keep parameter cases separate: two meetings, tangency, or none.
+**Working order.** Name whether the object is a line, a parabola, a difference, a table, or a story. Recover the formula (or the discriminant condition) before judging a claim. For graphs without printed formulas, rebuild from ticks first. For nested expressions, expand and compare; do not invent an $x^{3}$ term. For Vieta claims, write sum and product explicitly and remember the axis is the half-sum. Keep parameter cases separate: two meetings, tangency, or none.
 
-**Self-check.** Can you read slope and both intercepts from $f(x)=mx+c$? Why does $a\neq 0$ matter for a quadratic? How do you get the axis from coefficients, and why is it $S/2$ rather than $S$? Why does a parabola still have a vertex when $\Delta<0$? How many times can a line meet a parabola? What do constant first and second differences tell you in a table? Why is $g(f(x))$ of degree $2$, not $3$, when $f$ is linear and $g$ is quadratic? How do you rebuild a parabola from a vertex and one extra point? In a ball-toss figure, where is the peak relative to the ground times? And why can a revenue peak and a profit peak sit at different inputs?
+**Self-check.** Can you read slope and both intercepts from $f(x)=mx+c$? Why does $a\neq 0$ matter for a quadratic? How do you get the axis from coefficients, and why is it $S/2$ rather than $S$? Why does a parabola still have a vertex when $\Delta<0$? How many times can a line meet a parabola? What do constant first and second differences tell you in a table? After expanding $g(f(x))$ for a line and a parabola, why is the highest power $x^{2}$, not $x^{3}$? How do you rebuild a parabola from a vertex and one extra point? In a ball-toss figure, where is the peak relative to the ground times? And why can a revenue peak and a profit peak sit at different inputs?
