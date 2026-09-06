@@ -100,7 +100,11 @@ So the statement is False.`,
 A transfer shifts one recovered holding into the other by the stated amount:
 
 $$
-x' = x - t,\quad y' = y + t
+x' = x - t,\quad y'
+$$
+
+$$
+= y + t
 $$
 
 Using the recovered solution values $x=360$ and $y=260$ as inputs for this claim:
@@ -145,7 +149,9 @@ $$x = 360$$
 
 From (1):
 
-$$y = 620 - 360 = 260$$
+$$y=620 - 360$$
+
+$$=260$$
 
 **Answer.** North = 360 crates | South = 260 crates`,
   },
@@ -277,13 +283,17 @@ $$428 - 160y + 25y = 185$$
 
 $$-135y = -243$$
 
-$$y = \\frac{243}{135} = 1.80$$
+$$y=\\frac{243}{135}$$
+
+$$=1.80$$
 
 Then
 
 $$x = 10.70 - 4(1.80)$$
 
-$$x = 10.70 - 7.20 = 3.50$$
+$$x=10.70 - 7.20$$
+
+$$=3.50$$
 
 **Answer.** Notebook = \\$3.50 | Pen = \\$1.80`,
   },
@@ -421,13 +431,17 @@ $$90a + 8250 - 600a = 2130$$
 
 $$-510a = -6120$$
 
-$$a = \\frac{6120}{510} = 12$$
+$$a=\\frac{6120}{510}$$
+
+$$=12$$
 
 Then
 
 $$c = 55 - 4(12)$$
 
-$$c = 55 - 48 = 7$$
+$$c=55 - 48$$
+
+$$=7$$
 
 **Answer.** Adult = \\$12.00 | Child = \\$7.00`,
   },
@@ -671,11 +685,15 @@ $$400 - 0.04y + 0.07y = 520$$
 
 $$0.03y = 120$$
 
-$$y = \\frac{120}{0.03} = 4000$$
+$$y=\\frac{120}{0.03}$$
+
+$$=4000$$
 
 Then
 
-$$x = 10000 - 4000 = 6000$$
+$$x=10000 - 4000$$
+
+$$=6000$$
 
 **Answer.** Account A = \\$6,000 | Account B = \\$4,000`,
   },
@@ -793,11 +811,15 @@ $$18x + 12x + 540 = 9660$$
 
 $$30x = 9120$$
 
-$$x = \\frac{9120}{30} = 304$$
+$$x=\\frac{9120}{30}$$
+
+$$=304$$
 
 Then
 
-$$y = 304 + 45 = 349$$
+$$y=304 + 45$$
+
+$$=349$$
 
 **Answer.** Standard = \\$304.00 | Premium = \\$349.00`,
   },
@@ -958,7 +980,11 @@ $$
 Substitute the stem numbers:
 
 $$
-s = 130 - 55 = 75
+s = 130 - 55
+$$
+
+$$
+= 75
 $$
 
 The computed figure matches the claim.
@@ -1041,7 +1067,9 @@ $$d = 55$$
 
 Then
 
-$$s = 130 - 55 = 75$$
+$$s=130 - 55$$
+
+$$=75$$
 
 **Answer.** Standard = 75 | Deluxe = 55`,
   },
@@ -1179,13 +1207,17 @@ $$14x + 19800 - 44x = 9300$$
 
 $$-30x = -10500$$
 
-$$x = \\frac{10500}{30} = 350$$
+$$x=\\frac{10500}{30}$$
+
+$$=350$$
 
 Then
 
 $$y = 900 - 2(350)$$
 
-$$y = 900 - 700 = 200$$
+$$y=900 - 700$$
+
+$$=200$$
 
 **Answer.** Sofa = \\$350.00 | Armchair = \\$200.00`,
   },
@@ -1580,11 +1612,15 @@ $$400x + 220x + 1100 = 8540$$
 
 $$620x = 7440$$
 
-$$x = \\frac{7440}{620} = 12$$
+$$x=\\frac{7440}{620}$$
+
+$$=12$$
 
 Then
 
-$$y = 12 + 5 = 17$$
+$$y=12 + 5$$
+
+$$=17$$
 
 **Answer.** Paperback = \\$12.00 | Hardcover = \\$17.00`,
   },
@@ -1743,7 +1779,11 @@ $$x = 38$$
 A transfer shifts one recovered holding into the other by the stated amount:
 
 $$
-x' = x - t,\quad y' = y + t
+x' = x - t,\quad y'
+$$
+
+$$
+= y + t
 $$
 
 Substitute the stem numbers recovered in the overview:
@@ -1872,7 +1912,9 @@ $$14x + 10080 - 45x = 5740$$
 
 $$-31x = -4340$$
 
-$$x = \\frac{4340}{31} = 140$$
+$$x=\\frac{4340}{31}$$
+
+$$=140$$
 
 Then
 
@@ -2228,7 +2270,11 @@ So the statement is True.`,
 A transfer shifts one recovered holding into the other by the stated amount:
 
 $$
-x' = x - t,\quad y' = y + t
+x' = x - t,\quad y'
+$$
+
+$$
+= y + t
 $$
 
 Substitute the stem numbers recovered in the overview:
@@ -2339,11 +2385,23 @@ Using the recovered solution values $C(d)=6+d$ and $M(d)=6+1.5d$ as inputs for t
 
 At $10$ km:
 
-$$C(10) = 6 + 10 = 16$$
+$$
+C(10) = 6 + 10
+$$
+
+$$
+= 16
+$$
 
 $$1.5 \\times 10 = 15$$
 
-$$M(10) = 6 + 15 = 21$$
+$$
+M(10) = 6 + 15
+$$
+
+$$
+= 21
+$$
 
 Then $16 < 21$.
 
@@ -2375,11 +2433,23 @@ Using the recovered solution values $C(d)=6+d$ and $M(d)=6+1.5d$ as inputs for t
 
 At $3$ km, which is under $4$ km:
 
-$$C(3) = 6 + 3 = 9$$
+$$
+C(3) = 6 + 3
+$$
+
+$$
+= 9
+$$
 
 $$1.5 \\times 3 = 4.50$$
 
-$$M(3) = 6 + 4.50 = 10.50$$
+$$
+M(3) = 6 + 4.50
+$$
+
+$$
+= 10.50
+$$
 
 Then $10.50 > 9$, so MetroX is not cheaper.
 
@@ -2392,7 +2462,13 @@ Read the figure already produced by the shared solve, then compare it with the c
 
 The overview recovered $C(d)=6+d$. At $30$ km:
 
-$$C(30) = 6 + 30 = 36$$
+$$
+C(30) = 6 + 30
+$$
+
+$$
+= 36
+$$
 
 The claim is \\$36.00.
 
@@ -2403,7 +2479,13 @@ Read the figure already produced by the shared solve, then compare it with the c
 
 The overview recovered $C(d)=6+d$. A 5 km CityCab ride costs
 
-$$C(5) = 6 + 5 = 11$$
+$$
+C(5) = 6 + 5
+$$
+
+$$
+= 11
+$$
 
 The stem already prices a 5 km MetroX ride at \\$13.50. Then $11 \\ne 13.50$.
 
@@ -2507,7 +2589,11 @@ So the statement is True.`,
 Elimination on two independent linear equations recovers a unique value for each unknown. The claim names the second recovered coordinate:
 
 $$
-y_B = \\frac{92 - 44}{3} = 16
+y_B = \\frac{92 - 44}{3}
+$$
+
+$$
+= 16
 $$
 
 The computed figure matches the claim.
@@ -2619,7 +2705,9 @@ $$9x_A = 81$$
 
 $$x_A = 9$$
 
-$$y_A = 30 - 12 = 18$$
+$$y_A=30 - 12$$
+
+$$=18$$
 
 Vendor B, divide the first quote by $5$:
 
@@ -2635,7 +2723,9 @@ $$27x_B = 297$$
 
 $$x_B = 11$$
 
-$$y_B = \\frac{92 - 44}{3} = 16$$
+$$y_B=\\frac{92 - 44}{3}$$
+
+$$=16$$
 
 **Answer.** Vendor A: X = \\$9, Y = \\$18 | Vendor B: X = \\$11, Y = \\$16`,
   },
@@ -2683,7 +2773,11 @@ $$
 Substitute the stem numbers:
 
 $$
-A = 27200 - 14100 = 13100
+A = 27200 - 14100
+$$
+
+$$
+= 13100
 $$
 
 The computed figure matches the claim.
@@ -2779,7 +2873,9 @@ $$2B = 28200$$
 
 $$B = 14100$$
 
-$$A = 27200 - 14100 = 13100$$
+$$A=27200 - 14100$$
+
+$$=13100$$
 
 The price system is then
 
@@ -3262,7 +3358,13 @@ The Solar Offset Plan is $0.29u$ with no connection fee. The standard plan is $3
 
 $$33 + 0.21u = 0.29u$$
 
-$$33 = 0.08u \\Rightarrow u = 412.5$$
+$$
+33 = 0.08u \\Rightarrow u
+$$
+
+$$
+= 412.5
+$$
 
 For $u > 412.5$ the standard plan is cheaper, so Solar is not cheaper at every positive usage.
 
@@ -3275,7 +3377,13 @@ At 500 units, Solar and the standard plan are
 
 $$0.29 \\times 500 = 145$$
 
-$$33 + 0.21 \\times 500 = 33 + 105 = 138$$
+$$
+33 + 0.21 \\times 500 = 33 + 105
+$$
+
+$$
+= 138
+$$
 
 $$145 > 138$$
 
@@ -3885,7 +3993,17 @@ Week 3 has 15 Widget B and 290 labor-hours. With the recovered times $x = 7$ and
 
 $$7A + 10(15) = 290$$
 
-$$7A + 150 = 290 \\Rightarrow 7A = 140 \\Rightarrow A = 20.$$
+$$
+7A + 150 = 290 \\Rightarrow 7A
+$$
+
+$$
+= 140 \\Rightarrow A
+$$
+
+$$
+= 20.
+$$
 
 So the statement is True.`,
     ],
@@ -4052,9 +4170,9 @@ $$
 
 Testing East at the recovered prices:
 
-$$
-65(29) + 50(24) = 1885 + 1200 = 3085
-$$
+$$65(29) + 50(24)=1885 + 1200$$
+
+$$=3085$$
 
 East reported \\$3,200, so that row does not reconcile.
 
@@ -4284,7 +4402,17 @@ Swift is $145.50 + 1.85m$. The competitor is $1.35m$. The slopes $1.85$ and $1.3
 
 $$145.50 + 1.85m = 1.35m$$
 
-$$145.50 = -0.50m \\Rightarrow m = \\frac{145.50}{-0.50} = -291$$
+$$
+145.50 = -0.50m \\Rightarrow m
+$$
+
+$$
+= \\frac{145.50}{-0.50}
+$$
+
+$$
+= -291
+$$
 
 The crossing is at $-291$ miles, a meaningless haul but a real intersection.
 
@@ -4532,7 +4660,13 @@ Raise Email 2's baguette price by \\$3 and keep croissants at $x = 13.85$:
 
 $$9.40 + 3 = 12.40$$
 
-$$6 \\times 13.85 + 23 \\times 12.40 = 83.10 + 285.20 = 368.30$$
+$$
+6 \\times 13.85 + 23 \\times 12.40 = 83.10 + 285.20
+$$
+
+$$
+= 368.30
+$$
 
 The cents digit is 30.
 
@@ -4819,9 +4953,11 @@ Let $x$ = price per Nitrogen-type cylinder, $y$ = price per Oxygen-type cylinder
 
 Invoice 2 versus Invoice 1:
 
-$$
-\\frac{9}{15} = \\frac{12}{20} = \\frac{419.40}{699.00} = 0.60
-$$
+$$\\frac{9}{15}=\\frac{12}{20}$$
+
+$$=\\frac{419.40}{699.00}$$
+
+$$=0.60$$
 
 **1. Translate: Invoice 1.**
 
@@ -4907,7 +5043,13 @@ Start from the overview's recovered unknowns, apply only this claim's extra chec
 
 Combined hourly output is the sum of the recovered rates:
 
-$$0.085 + 0.045 = 0.130 = \\frac{13}{100}.$$
+$$
+0.085 + 0.045 = 0.130
+$$
+
+$$
+= \\frac{13}{100}.
+$$
 
 So the statement is True.`,
       `**D.** → True
@@ -5450,7 +5592,13 @@ So the statement is False.`,
 
 The overview recovered the two balances $4800$ (smaller) and $13600$. The relative gap versus the smaller balance is
 
-$$\\frac{13600 - 4800}{4800} = \\frac{8800}{4800} = 1.8\\overline{3}$$
+$$
+\\frac{13600 - 4800}{4800} = \\frac{8800}{4800}
+$$
+
+$$
+= 1.8\\overline{3}
+$$
 
 about $183.3\\%$, which exceeds $180\\%$.
 
@@ -5490,9 +5638,11 @@ $$
 
 **2.** Substitute back:
 
-$$
-y = 2(4800) + 4000 = 9600 + 4000 = 13600
-$$
+$$y=2(4800) + 4000$$
+
+$$=9600 + 4000$$
+
+$$=13600$$
 
 **Answer.** Fund A holds \\$4,800 and Fund B holds \\$13,600.`,
   },
@@ -5550,7 +5700,13 @@ So the statement is True.`,
 
 The overview recovered $A = 16$ g/L and $B = 12$ g/L. A $3:1$ mix of A:B is $75\\%$ A and $25\\%$ B, so the blend concentration in g/L is
 
-$$0.75 \\times 16 + 0.25 \\times 12 = 12 + 3 = 15$$
+$$
+0.75 \\times 16 + 0.25 \\times 12 = 12 + 3
+$$
+
+$$
+= 15
+$$
 
 The volume that holds $130$ g is then
 
@@ -5607,15 +5763,17 @@ $$
 
 **3.** Then
 
-$$
-y = 92 - 5(16) = 92 - 80 = 12
-$$
+$$y=92 - 5(16)$$
+
+$$=92 - 80$$
+
+$$=12$$
 
 **4.** Audit Batch 3 (8 L at 1:3 is $2$ L of A and $6$ L of B):
 
-$$
-2(16) + 6(12) = 32 + 72 = 104
-$$
+$$2(16) + 6(12)=32 + 72$$
+
+$$=104$$
 
 versus 109 g recorded, a 5 g discrepancy.
 
@@ -5786,7 +5944,13 @@ Start from the overview’s recovered unknowns, then test the named figure.
 
 At fixed per-meter prices, combining Project 1 and Project 3 is linear. Combined metres are $28$ m wood and $64$ m wire.
 
-$$28(27) + 64(11) = 756 + 704 = 1460$$
+$$
+28(27) + 64(11) = 756 + 704
+$$
+
+$$
+= 1460
+$$
 
 $$750 + 710 = 1460$$
 
@@ -5899,7 +6063,13 @@ $$2 \\times 48 = 96$$
 
 $$2 \\times 77 = 154$$
 
-$$154 - 96 = 58, \\qquad \\frac{250}{2} = 125$$
+$$
+154 - 96 = 58, \\qquad \\frac{250}{2}
+$$
+
+$$
+= 125
+$$
 
 Since $58 < 125$, the difference is less than half the gap.
 
@@ -5995,7 +6165,13 @@ $$
 
 The overview recovered Wheat at \\$95/t and Barley at \\$120/t. Season 1 with Wheat raised to $260$ t, Barley still $160$ t, would earn
 
-$$260 \\times 95 + 160 \\times 120 = 24700 + 19200 = 43900$$
+$$
+260 \\times 95 + 160 \\times 120 = 24700 + 19200
+$$
+
+$$
+= 43900
+$$
 
 Since $43900 < 44000$, the total would not exceed \\$44,000.
 
@@ -6173,7 +6349,17 @@ Let $t$ be years ago. The claim is that $x - t = 3(y - t)$ for some $t > 4$. Usi
 
 $$47 - t = 3(19 - t)$$
 
-$$47 - t = 57 - 3t \\Rightarrow 2t = 10 \\Rightarrow t = 5$$
+$$
+47 - t = 57 - 3t \\Rightarrow 2t
+$$
+
+$$
+= 10 \\Rightarrow t
+$$
+
+$$
+= 5
+$$
 
 Since $5 > 4$, such a time exists.
 
@@ -6215,9 +6401,11 @@ $$
 
 **3.** Substitute $y = 19$ into $x = 2y + 9$:
 
-$$
-x = 2(19) + 9 = 38 + 9 = 47
-$$
+$$x=2(19) + 9$$
+
+$$=38 + 9$$
+
+$$=47$$
 
 **Answer.** Elder employee = 47 years old | Younger employee = 19 years old.`,
   },
@@ -6244,7 +6432,13 @@ $$
 
 The overview recovered wholesale $x = 55$ and $y = 80$. Swapping the markups puts $18\\%$ on A and $32\\%$ on B. Order 3 would then be
 
-$$3(55)(1.18) + 12(80)(1.32) = 194.70 + 1267.20 = 1461.90$$
+$$
+3(55)(1.18) + 12(80)(1.32) = 194.70 + 1267.20
+$$
+
+$$
+= 1461.90
+$$
 
 Compared with the actual \\$1,350.60, the swapped total increases rather than decreases.
 
@@ -6284,7 +6478,13 @@ Using the recovered solution values $x = 55$ and $y = 80$ as inputs for this cla
 
 Unit markups are $0.32 \\times 55 = 17.60$ and $0.18 \\times 80 = 14.40$, so Order 1's total markup is
 
-$$8 \\times 17.60 + 5 \\times 14.40 = 140.80 + 72.00 = 212.80$$
+$$
+8 \\times 17.60 + 5 \\times 14.40 = 140.80 + 72.00
+$$
+
+$$
+= 212.80
+$$
 
 Since $212.80 > 150$, the markup exceeds \\$150.
 
@@ -6390,7 +6590,13 @@ $$
 
 The overview recovered $x = 7$ points per win. If a draw were worth half of that, a draw would be $3.5$ points. The Falcons would then have
 
-$$9 \\times 7 + 4 \\times 3.5 = 63 + 14 = 77$$
+$$
+9 \\times 7 + 4 \\times 3.5 = 63 + 14
+$$
+
+$$
+= 77
+$$
 
 Since $77 > 75$, their total would increase.
 
@@ -6509,7 +6715,13 @@ $$
 
 The overview recovered $A = 7.6$ kg/L and $B = 11.4$ kg/L. Batch 1 with $10$ L of B instead of $8$ L would mass
 
-$$12(7.6) + 10(11.4) = 91.2 + 114 = 205.2$$
+$$
+12(7.6) + 10(11.4) = 91.2 + 114
+$$
+
+$$
+= 205.2
+$$
 
 Since $205.2 > 200$, the total would exceed $200$ kg.
 
@@ -6522,7 +6734,13 @@ Using the recovered solution values $x = 7.6$ and $y = 11.4$ as inputs for this 
 
 The relative density advantage of B over A is
 
-$$\\frac{11.4 - 7.6}{7.6} = \\frac{3.8}{7.6} = 0.50$$
+$$
+\\frac{11.4 - 7.6}{7.6} = \\frac{3.8}{7.6}
+$$
+
+$$
+= 0.50
+$$
 
 That is $50\\%$ greater, not more than $50\\%$.
 
@@ -6544,7 +6762,13 @@ The shared solve is done; only this claim’s comparison remains.
 
 If Batch 3 used $10$ L of A instead of $9.5$ L, with $6$ L of B still, the predicted mass at the recovered densities is
 
-$$10(7.6) + 6(11.4) = 76 + 68.4 = 144.4$$
+$$
+10(7.6) + 6(11.4) = 76 + 68.4
+$$
+
+$$
+= 144.4
+$$
 
 $$|144.4 - 147.0| = 2.6$$
 
@@ -6599,15 +6823,17 @@ $$
 
 **3.** Substitute $y = 11.4$ back:
 
-$$
-x = 41.8 - 3(11.4) = 41.8 - 34.2 = 7.6
-$$
+$$x=41.8 - 3(11.4)$$
+
+$$=41.8 - 34.2$$
+
+$$=7.6$$
 
 **4.** Audit Batch 3:
 
-$$
-9.5(7.6) + 6(11.4) = 72.2 + 68.4 = 140.6
-$$
+$$9.5(7.6) + 6(11.4)=72.2 + 68.4$$
+
+$$=140.6$$
 
 versus 147.0 kg recorded, a 6.4 kg discrepancy.
 
@@ -6631,7 +6857,13 @@ versus 147.0 kg recorded, a 6.4 kg discrepancy.
 
 The overview recovered rate $x = 0.016$ and retainer $y = 1200$. A client with AUM \\$850,000 pays
 
-$$850000 \\times 0.016 + 1200 = 13600 + 1200 = 14800$$
+$$
+850000 \\times 0.016 + 1200 = 13600 + 1200
+$$
+
+$$
+= 14800
+$$
 
 $$\\frac{14800}{850000} \\approx 0.017412$$
 
@@ -6655,7 +6887,13 @@ Start from the overview’s recovered unknowns, then test the named figure.
 
 Client 1 has AUM \\$750,000 and actual fee $750000(0.016) + 1200 = 13200$. After a $0.2$ percentage-point rate cut and a doubled retainer, the new fee is
 
-$$750000 \\times 0.014 + 2400 = 10500 + 2400 = 12900$$
+$$
+750000 \\times 0.014 + 2400 = 10500 + 2400
+$$
+
+$$
+= 12900
+$$
 
 Since $12900 < 13200$, Client 1's fee would decrease.
 
@@ -6666,7 +6904,13 @@ For this claim, use the recovered values from the overview for this claim-specif
 
 Client 1's effective rate and Client 2's effective rate are
 
-$$\\frac{13200}{750000} = 0.0176, \\qquad \\frac{10800}{600000} = 0.018$$
+$$
+\\frac{13200}{750000} = 0.0176, \\qquad \\frac{10800}{600000}
+$$
+
+$$
+= 0.018
+$$
 
 $$0.018 - 0.0176 = 0.0004$$
 
@@ -6679,7 +6923,13 @@ Next, use the recovered values from the overview for this claim-specific check.
 
 Triple of Client 2's AUM is \\$1,800,000. That client's fee, versus triple of Client 2's \\$10,800, is
 
-$$1800000 \\times 0.016 + 1200 = 28800 + 1200 = 30000$$
+$$
+1800000 \\times 0.016 + 1200 = 28800 + 1200
+$$
+
+$$
+= 30000
+$$
 
 $$3 \\times 10800 = 32400$$
 
@@ -6770,7 +7020,13 @@ Using the recovered solution values $A = 8.4$ and $B = 15.6$ as inputs for this 
 
 Doubling Batch 1's Suspension B volume from $300$ mL to $600$ mL gives
 
-$$500(8.4) + 600(15.6) = 4200 + 9360 = 13560$$
+$$
+500(8.4) + 600(15.6) = 4200 + 9360
+$$
+
+$$
+= 13560
+$$
 
 Since $13560 > 13500$, the new total would exceed $13500$ mg.
 
@@ -6850,9 +7106,9 @@ $$
 
 **5.** Audit Batch 3 ($0.32$ L $= 320$ mL of A):
 
-$$
-320(8.4) + 450(15.6) = 2688 + 7020 = 9708
-$$
+$$320(8.4) + 450(15.6)=2688 + 7020$$
+
+$$=9708$$
 
 versus 9,700 mg recorded, an 8 mg discrepancy.
 
@@ -6884,7 +7140,13 @@ Using the recovered solution values $x = 4.50$ and $y = 38$ as inputs for this c
 
 Invoice 1's waste is $200 \\times 0.12 = 24$ studs and $150 \\times 0.08 = 12$ sheets.
 
-$$24 \\times 4.50 + 12 \\times 38 = 108 + 456 = 564$$
+$$
+24 \\times 4.50 + 12 \\times 38 = 108 + 456
+$$
+
+$$
+= 564
+$$
 
 Since $564 < 700$, the waste-related cost does not exceed \\$700.
 
@@ -6906,7 +7168,13 @@ Start from the overview’s recovered unknowns, then test the named figure.
 
 Job 2's usable-material cost at the recovered prices, as a share of the printed \\$8,946, is
 
-$$350 \\times 4.50 + 175 \\times 38 = 1575 + 6650 = 8225$$
+$$
+350 \\times 4.50 + 175 \\times 38 = 1575 + 6650
+$$
+
+$$
+= 8225
+$$
 
 $$\\frac{8225}{8946} \\approx 0.9194$$
 
@@ -6926,9 +7194,21 @@ So the statement is True.`,
 
 Job 1 usable cost and Job 2 usable cost at the recovered prices $x = 4.50$ and $y = 38$ are
 
-$$200 \\times 4.50 + 150 \\times 38 = 900 + 5700 = 6600$$
+$$
+200 \\times 4.50 + 150 \\times 38 = 900 + 5700
+$$
 
-$$350 \\times 4.50 + 175 \\times 38 = 1575 + 6650 = 8225$$
+$$
+= 6600
+$$
+
+$$
+350 \\times 4.50 + 175 \\times 38 = 1575 + 6650
+$$
+
+$$
+= 8225
+$$
 
 Waste as a share of usable cost:
 
@@ -7026,7 +7306,13 @@ Using the recovered solution values $x = 3.50$ and $y = 13.50$ as inputs for thi
 
 Doubling the offset gives $27$, so at reading $20$
 
-$$3.50 \\times 20 + 27 = 70 + 27 = 97$$
+$$
+3.50 \\times 20 + 27 = 70 + 27
+$$
+
+$$
+= 97
+$$
 
 Since $97 > 95$, the predicted true value would exceed $95$.
 
@@ -7059,7 +7345,13 @@ Read the recovered pair, then run the arithmetic the claim asks for.
 
 At reading $8.0$, the recovered calibration gives
 
-$$3.50 \\times 8.0 + 13.50 = 28 + 13.50 = 41.50$$
+$$
+3.50 \\times 8.0 + 13.50 = 28 + 13.50
+$$
+
+$$
+= 41.50
+$$
 
 Half of Point 1's true value $56.90$ is $28.45$. Since $41.50 > 28.45$, the prediction is not less than half of Point 1.
 
@@ -7101,9 +7393,9 @@ $$
 
 **3.** Verification at reading $45.0$:
 
-$$
-45.0(3.50) + 13.50 = 157.50 + 13.50 = 171.00
-$$
+$$45.0(3.50) + 13.50=157.50 + 13.50$$
+
+$$=171.00$$
 
 versus recorded 172.20, a $1.20$ discrepancy.
 
@@ -7151,7 +7443,13 @@ For this claim, use the recovered values from the overview for this claim-specif
 
 An $800$ kg shipment mixed $1:1$ is $400$ kg of each at the recovered prices.
 
-$$400 \\times 6.20 + 400 \\times 4.85 = 2480 + 1940 = 4420$$
+$$
+400 \\times 6.20 + 400 \\times 4.85 = 2480 + 1940
+$$
+
+$$
+= 4420
+$$
 
 Since $4420 < 4555$, the $1:1$ mix would cost less than the actual \\$4,555.
 
@@ -7229,9 +7527,11 @@ $$
 
 **3.** Substitute $y = 4.85$ back:
 
-$$
-x = 9.11 - 0.6(4.85) = 9.11 - 2.91 = 6.20
-$$
+$$x=9.11 - 0.6(4.85)$$
+
+$$=9.11 - 2.91$$
+
+$$=6.20$$
 
 **Answer.** Coffee = \\$6.20/kg | Cocoa = \\$4.85/kg.`,
   },
@@ -7358,9 +7658,9 @@ $$
 
 **4.** Audit Route 3 ($155.3$ mi $\\approx 250$ km $= 2.5$ hundreds of km):
 
-$$
-2.5(32) + 4(18) = 80 + 72 = 152
-$$
+$$2.5(32) + 4(18)=80 + 72$$
+
+$$=152$$
 
 versus 155 L recorded, a 3 L discrepancy.
 
@@ -7553,7 +7853,13 @@ Read the recovered pair, then run the arithmetic the claim asks for.
 
 A single combined policy has one administrative fee and $85 + 210 = 295$ thousands of coverage.
 
-$$214.70 + 295 \\times 4.68 = 214.70 + 1380.60 = 1595.30$$
+$$
+214.70 + 295 \\times 4.68 = 214.70 + 1380.60
+$$
+
+$$
+= 1595.30
+$$
 
 $$612.50 + 1197.50 = 1810.00$$
 
@@ -7658,7 +7964,13 @@ The populations are equal $t$ years after Year 2 when
 
 $$610 + 72t = 730 + 36t$$
 
-$$36t = 120 \\Rightarrow t = \\frac{10}{3} \\approx 3.333$$
+$$
+36t = 120 \\Rightarrow t
+$$
+
+$$
+= \\frac{10}{3} \\approx 3.333
+$$
 
 That is Year $5.333$, which lies between Year 2 and Year 6.
 
@@ -7667,7 +7979,13 @@ So the statement is True.`,
 
 Set $610 + 72t = 730 + 36t$ to find when A catches B:
 
-$$36t = 120 \\Rightarrow t = \\frac{10}{3} \\approx 3.333$$
+$$
+36t = 120 \\Rightarrow t
+$$
+
+$$
+= \\frac{10}{3} \\approx 3.333
+$$
 
 so equality is at Year $5.333$. At Year 5, three years after Year 2,
 
@@ -7705,9 +8023,9 @@ $$
 
 **2.** Then
 
-$$
-x = 2(36) = 72
-$$
+$$x=2(36)$$
+
+$$=72$$
 
 **3.** Year 6 populations:
 
@@ -7758,7 +8076,13 @@ So the statement is True.`,
 
 Across Days 1 and 2, Plant B operated $20 + 9 = 29$ hours and Plant A operated $14 + 22 = 36$ hours. Swapping those totals at the recovered rates gives
 
-$$29 \\times 145 + 36 \\times 98 = 4205 + 3528 = 7733$$
+$$
+29 \\times 145 + 36 \\times 98 = 4205 + 3528
+$$
+
+$$
+= 7733
+$$
 
 The actual combined Day 1 + Day 2 total is $3990 + 4072 = 8062$. Since $7733 < 8062$, the swapped grand total does not exceed the actual combined total.
 
@@ -7836,9 +8160,9 @@ $$
 
 **6.** Audit Day 3 ($1020$ min $= 17$ hrs):
 
-$$
-17(145) + 11(98) = 2465 + 1078 = 3543
-$$
+$$17(145) + 11(98)=2465 + 1078$$
+
+$$=3543$$
 
 versus 3,553 MWh recorded, a 10 MWh discrepancy.
 
