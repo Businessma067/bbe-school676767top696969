@@ -48,7 +48,13 @@ $$P'(x)=2x-4$$
 
 Substitute the named sales level $x=3$:
 
-$$P'(3)=2\\cdot 3-4=2$$
+$$
+P'(3) = 2\\cdot 3-4
+$$
+
+$$
+P'(3) = 2
+$$
 
 Do not confuse the derivative value with the height $P(3)=4$ on the curve — the claim asks only for the slope. The computed slope matches. The stem's formula is enough; no outside identity is required for the check. Substituting only after the general expression is finished avoids mixing height with slope, so the statement is True.`,
       `**C.** → True
@@ -76,11 +82,10 @@ A stationary point solves $P'(x)=0$:
 $$2x-4=0\\qquad\\Rightarrow\\qquad x=2$$
 
 The parabola $P(x)=x^{2}-4x+7$ opens upward (leading coefficient $+1>0$), so this unique stationary point is a minimum rather than a maximum. Do not confuse a critical-point location with a maximum just because profit is discussed. The same checklist — differentiate, simplify, evaluate — settles the assertion. Writing every intermediate line keeps the comparison with the claim mechanical, so the statement is True.`
-    ],
+    ]
     difficulty_level: "1/5",
     sort_order: 1,
-    solution_overview:
-      `The workshop profit curve is the quadratic
+    solution_overview: `The workshop profit curve is the quadratic
 
 $$P(x)=x^{2}-4x+7$$
 
@@ -111,7 +116,7 @@ The stationary point solves $P'(x)=0$, giving $x=2$. Because the leading coeffic
       "At $q=100$, producing one extra unit raises total cost by approximately $18$ euros.",
       "The derivative $C'(q)$ gives average cost per unit.",
       "The tangent line to $C$ at $q=100$ is $y=1700+18(q-100)$.",
-    ],
+    ]
     answer_key: [true, true, true, false, true],
     tactical_explanations: [
       `**A.** → True
@@ -120,14 +125,30 @@ Marginal cost is the derivative of total cost with respect to output. Differenti
 
 $$C(q)=200+12q+\\dfrac{3}{100}q^{2}$$
 
-$$C'(q)=12+\\dfrac{6}{100}q=12+\\dfrac{3}{50}q$$
+$$
+C'(q) = 12+\\dfrac{6}{100}q
+$$
+
+$$
+C'(q) = 12+\\dfrac{3}{50}q
+$$
 
 The constant $200$ vanishes under differentiation, and $\\dfrac{6}{100}$ reduces to $\\dfrac{3}{50}$. That is exactly the claimed marginal-cost formula. The stem's formula is enough; no outside identity is required for the check. Substituting only after the general expression is finished avoids mixing height with slope, so the statement is True.`,
       `**B.** → True
 
 Substitute the named output $q=100$ into the marginal-cost rule already derived:
 
-$$C'(100)=12+\\dfrac{3}{50}\\cdot 100=12+6=18$$
+$$
+C'(100) = 12+\\dfrac{3}{50}\\cdot 100
+$$
+
+$$
+C'(100) = 12+6
+$$
+
+$$
+C'(100) = 18
+$$
 
 A trap here is evaluating total cost $C(100)=1700$ by mistake when the claim asks for the derivative. The slope computation matches the claim. Substituting only after the general expression is finished avoids mixing height with slope. Coefficient and sign agreement with the claim is what decides the letter. The same checklist — differentiate, simplify, evaluate — settles the assertion, so the statement is True.`,
       `**C.** → True
@@ -155,11 +176,10 @@ Point-slope form then assembles the tangent
 $$y=1700+18(q-100)$$
 
 exactly as claimed. Do not replace the intercept $1700$ by the fixed cost $200$. Comparing with the claim, the statement is True. Writing every intermediate line keeps the comparison with the claim mechanical. The stem's formula is enough; no outside identity is required for the check, so the statement is True.`
-    ],
+    ]
     difficulty_level: "1/5",
     sort_order: 2,
-    solution_overview:
-      `Total daily cost is the quadratic schedule
+    solution_overview: `Total daily cost is the quadratic schedule
 
 $$C(q)=200+12q+\\dfrac{3}{100}q^{2}$$
 
@@ -190,21 +210,33 @@ Marginal cost $C'(q)$ is the instantaneous rate of change of total cost; average
       "At $L=4$, one extra labour-hour raises output by approximately $15$ units.",
       "$Q'(L)$ is constant for all $L>0$.",
       "Doubling labour from $L=4$ to $L=8$ doubles the marginal product exactly.",
-    ],
+    ]
     answer_key: [true, true, true, false, false],
     tactical_explanations: [
       `**A.** → True
 
 Marginal product is the derivative of output with respect to labour. Apply the power rule to $Q(L)=5L^{\\frac{3}{2}}$, multiplying by the exponent and reducing the power by one:
 
-$$Q'(L)=5\\cdot\\dfrac{3}{2}L^{\\frac{1}{2}}=\\dfrac{15}{2}L^{\\frac{1}{2}}$$
+$$
+Q'(L) = 5\\cdot\\dfrac{3}{2}L^{\\frac{1}{2}}
+$$
+
+$$
+Q'(L) = \\dfrac{15}{2}L^{\\frac{1}{2}}
+$$
 
 A trap is writing $5\\cdot\\dfrac{3}{2}L^{\\frac{3}{2}}$ without lowering the exponent. The simplified formula matches the claim. Substituting only after the general expression is finished avoids mixing height with slope, so the statement is True.`,
       `**B.** → True
 
 Substitute $L=4$ into the marginal-product rule, using $\\sqrt{4}=2$:
 
-$$Q'(4)=\\dfrac{15}{2}\\cdot 2=15$$
+$$
+Q'(4) = \\dfrac{15}{2}\\cdot 2
+$$
+
+$$
+Q'(4) = 15
+$$
 
 Do not confuse this slope with the output level $Q(4)=5\\cdot 8=40$. The claim asks only for $Q'(4)$, and that value equals $15$. Coefficient and sign agreement with the claim is what decides the letter. The same checklist — differentiate, simplify, evaluate — settles the assertion. Writing every intermediate line keeps the comparison with the claim mechanical, so the statement is True.`,
       `**C.** → True
@@ -225,14 +257,19 @@ which changes whenever $L$ changes. Only a constant function would stay flat for
 
 Compare the two labour levels through the ratio of marginal products:
 
-$$\\dfrac{Q'(8)}{Q'(4)}=\\dfrac{\\sqrt{8}}{\\sqrt{4}}=\\sqrt{2}\\neq 2$$
+$$
+\\dfrac{Q'(8)}{Q'(4)} = \\dfrac{\\sqrt{8}}{\\sqrt{4}}
+$$
+
+$$
+\\dfrac{Q'(8)}{Q'(4)} = \\sqrt{2}\\neq 2
+$$
 
 Because $Q'$ scales like $\\sqrt{L}$, doubling labour multiplies marginal product by $\\sqrt{2}$, not by $2$. The claim's "exactly doubles" comparison is incorrect. That mismatch alone is enough to reject the letter. Rephrasing the claim cannot repair an algebraic contradiction. The named evaluation already serves as a counter-example. Comparing that with the claim, the statement is False.`
-    ],
+    ]
     difficulty_level: "1/5",
     sort_order: 3,
-    solution_overview:
-      `Output follows the power production rule
+    solution_overview: `Output follows the power production rule
 
 $$Q(L)=5L^{\\frac{3}{2}}\\qquad(L>0)$$
 
@@ -263,14 +300,20 @@ so doubling labour does not double the marginal product.`,
       "$R'(10)=40$.",
       "$R'(q)=p'(q)$ for every $q>0$.",
       "The tangent line to $R$ at $q=10$ is $y=600+40(q-10)$.",
-    ],
+    ]
     answer_key: [true, true, true, false, true],
     tactical_explanations: [
       `**A.** → True
 
 Revenue is price times quantity sold. Expand the product with the linear price schedule:
 
-$$R(q)=q\\cdot(80-2q)=80q-2q^{2}$$
+$$
+R(q) = q\\cdot(80-2q)
+$$
+
+$$
+R(q) = 80q-2q^{2}
+$$
 
 Do not leave the expression as $q(80-2q)$ when the claim asks for the expanded quadratic. That expanded form is exactly what is named. Coefficient and sign agreement with the claim is what decides the letter. The same checklist — differentiate, simplify, evaluate — settles the assertion. Writing every intermediate line keeps the comparison with the claim mechanical, so the statement is True.`,
       `**B.** → True
@@ -284,7 +327,17 @@ A trap is writing $R'(q)=-2$ from the price slope. The claimed formula matches t
 
 Substitute the named sales level $q=10$ into marginal revenue:
 
-$$R'(10)=80-4\\cdot 10=80-40=40$$
+$$
+R'(10) = 80-4\\cdot 10
+$$
+
+$$
+R'(10) = 80-40
+$$
+
+$$
+R'(10) = 40
+$$
 
 Do not confuse this with price $p(10)=60$ or with revenue $R(10)=600$. The slope computation matches the claim. Writing every intermediate line keeps the comparison with the claim mechanical. The stem's formula is enough; no outside identity is required for the check. Substituting only after the general expression is finished avoids mixing height with slope, so the statement is True.`,
       `**D.** → False
@@ -305,11 +358,10 @@ Point-slope form then gives the tangent
 $$y=600+40(q-10)$$
 
 exactly as claimed. Replacing $600$ by $p(10)$ would break the tangent equation. Comparing with the claim, the statement is True. Substituting only after the general expression is finished avoids mixing height with slope. Coefficient and sign agreement with the claim is what decides the letter, so the statement is True.`
-    ],
+    ]
     difficulty_level: "2/5",
     sort_order: 4,
-    solution_overview:
-      `Price is the linear schedule $p(q)=80-2q$, so revenue expands to
+    solution_overview: `Price is the linear schedule $p(q)=80-2q$, so revenue expands to
 
 $$R(q)=q\\cdot p(q)=80q-2q^{2}$$
 
@@ -338,14 +390,20 @@ Reuse this derivative setup for every letter: simplify first, evaluate at named 
       "$A'(100)=0$.",
       "The derivative $A'(q)$ is the same as marginal cost.",
       "At $q=100$, average cost is locally flat because the derivative is zero there.",
-    ],
+    ]
     answer_key: [true, true, true, false, true],
     tactical_explanations: [
       `**A.** → True
 
 Average cost is total cost divided by output. Split the quotient term by term:
 
-$$A(q)=\\dfrac{300+6q+\\dfrac{3}{100}q^{2}}{q}=\\dfrac{300}{q}+6+\\dfrac{3}{100}q$$
+$$
+A(q) = \\dfrac{300+6q+\\dfrac{3}{100}q^{2}}{q}
+$$
+
+$$
+A(q) = \\dfrac{300}{q}+6+\\dfrac{3}{100}q
+$$
 
 Each term of $C$ contributes separately: the fixed cost becomes $\\dfrac{300}{q}$, the linear piece stays $6$, and the quadratic becomes proportional to $q$. That is the claimed simplification. The same checklist — differentiate, simplify, evaluate — settles the assertion. Writing every intermediate line keeps the comparison with the claim mechanical, so the statement is True.`,
       `**B.** → True
@@ -359,7 +417,17 @@ A trap is differentiating $\\dfrac{3}{100}q$ as $\\dfrac{3}{100}q^{2}$. The clai
 
 Substitute $q=100$ into the average-cost derivative:
 
-$$A'(100)=-\\dfrac{300}{10000}+\\dfrac{3}{100}=-0.03+0.03=0$$
+$$
+A'(100) = -\\dfrac{300}{10000}+\\dfrac{3}{100}
+$$
+
+$$
+A'(100) = -0.03+0.03
+$$
+
+$$
+A'(100) = 0
+$$
 
 The two contributions cancel exactly at this output. The derivative vanishes there, matching the claim. The stem's formula is enough; no outside identity is required for the check. Substituting only after the general expression is finished avoids mixing height with slope. Coefficient and sign agreement with the claim is what decides the letter, so the statement is True.`,
       `**D.** → False
@@ -376,11 +444,10 @@ A zero first derivative means a horizontal tangent on the graph of $A$. Since th
 $$A'(100)=0$$
 
 average cost is locally flat at $q=100$. That does not by itself say whether the flat point is a min or max — but local flatness is exactly what the claim asserts. Coefficient and sign agreement with the claim is what decides the letter. The same checklist — differentiate, simplify, evaluate — settles the assertion. Writing every intermediate line keeps the comparison with the claim mechanical, so the statement is True.`
-    ],
+    ]
     difficulty_level: "2/5",
     sort_order: 5,
-    solution_overview:
-      `Total cost is $C(q)=300+6q+\\dfrac{3}{100}q^{2}$, so average cost splits as
+    solution_overview: `Total cost is $C(q)=300+6q+\\dfrac{3}{100}q^{2}$, so average cost splits as
 
 $$A(q)=\\dfrac{C(q)}{q}=\\dfrac{300}{q}+6+\\dfrac{3}{100}q$$
 
@@ -409,7 +476,7 @@ Reuse this derivative setup for every letter: simplify first, evaluate at named 
       "At $n=3$, adding one more agent lowers the waiting time by approximately $\\dfrac{4}{3}$ minutes.",
       "Because $W'(n)<0$, waiting time is increasing in $n$.",
       "$W''(n)=\\dfrac{96}{(n+3)^{3}}$.",
-    ],
+    ]
     answer_key: [true, true, true, false, true],
     tactical_explanations: [
       `**A.** → True
@@ -418,14 +485,30 @@ Rewrite waiting time as a power and differentiate with the chain rule:
 
 $$W(n)=48(n+3)^{-1}$$
 
-$$W'(n)=-48(n+3)^{-2}=-\\dfrac{48}{(n+3)^{2}}$$
+$$
+W'(n) = -48(n+3)^{-2}
+$$
+
+$$
+W'(n) = -\\dfrac{48}{(n+3)^{2}}
+$$
 
 The inner derivative of $n+3$ is $1$, so no extra factor appears. That matches the claimed formula. Writing every intermediate line keeps the comparison with the claim mechanical. The stem's formula is enough; no outside identity is required for the check. Substituting only after the general expression is finished avoids mixing height with slope, so the statement is True.`,
       `**B.** → True
 
 Substitute the named staffing level $n=3$ into the derivative:
 
-$$W'(3)=-\\dfrac{48}{(3+3)^{2}}=-\\dfrac{48}{36}=-\\dfrac{4}{3}$$
+$$
+W'(3) = -\\dfrac{48}{(3+3)^{2}}
+$$
+
+$$
+W'(3) = -\\dfrac{48}{36}
+$$
+
+$$
+W'(3) = -\\dfrac{4}{3}
+$$
 
 Keep the minus sign: adding agents reduces waiting time. The computed value matches the claim. The stem's formula is enough; no outside identity is required for the check. Substituting only after the general expression is finished avoids mixing height with slope. Coefficient and sign agreement with the claim is what decides the letter, so the statement is True.`,
       `**C.** → True
@@ -446,14 +529,19 @@ for every $n>0$, waiting time is decreasing in the number of agents, not increas
 
 Differentiate $W'(n)=-48(n+3)^{-2}$ once more, multiplying by $-2$ from the power rule and by the inner slope $1$:
 
-$$W''(n)=(-48)\\cdot(-2)(n+3)^{-3}=\\dfrac{96}{(n+3)^{3}}$$
+$$
+W''(n) = (-48)\\cdot(-2)(n+3)^{-3}
+$$
+
+$$
+W''(n) = \\dfrac{96}{(n+3)^{3}}
+$$
 
 which matches the claimed second derivative. The positive sign shows the decrease in waiting time becomes less steep as $n$ grows. The same checklist — differentiate, simplify, evaluate — settles the assertion. Writing every intermediate line keeps the comparison with the claim mechanical, so the statement is True.`
-    ],
+    ]
     difficulty_level: "2/5",
     sort_order: 6,
-    solution_overview:
-      `Waiting time is the reciprocal staffing rule
+    solution_overview: `Waiting time is the reciprocal staffing rule
 
 $$W(n)=\\dfrac{48}{n+3}=48(n+3)^{-1}$$
 
@@ -482,21 +570,33 @@ Reuse this derivative setup for every letter: simplify first, evaluate at named 
       "$S''(x)=e^{-x}\\cdot (x^{2}-4x+2)$.",
       "$S'(1)=e^{-1}$.",
       "At $x=2$, the tangent to the graph is horizontal.",
-    ],
+    ]
     answer_key: [true, true, true, true, true],
     tactical_explanations: [
       `**A.** → True
 
 The response index is a product $S(x)=x^{2}\\cdot e^{-x}$. Apply the product rule and factor $x\\,e^{-x}$:
 
-$$S'(x)=2x\\,e^{-x}+x^{2}(-e^{-x})=x\\,e^{-x}(2-x)$$
+$$
+S'(x) = 2x\\,e^{-x}+x^{2}(-e^{-x})
+$$
+
+$$
+S'(x) = x\\,e^{-x}(2-x)
+$$
 
 A trap is forgetting the chain-rule minus from $e^{-x}$. The factored form matches the claim exactly. The stem's formula is enough; no outside identity is required for the check. Substituting only after the general expression is finished avoids mixing height with slope. Coefficient and sign agreement with the claim is what decides the letter, so the statement is True.`,
       `**B.** → True
 
 Substitute $x=2$ into the factored derivative:
 
-$$S'(2)=2\\cdot e^{-2}\\cdot(2-2)=0$$
+$$
+S'(2) = 2\\cdot e^{-2}\\cdot(2-2)
+$$
+
+$$
+S'(2) = 0
+$$
 
 The factor $(2-x)$ vanishes, so the whole product is zero even though $e^{-2}\\neq 0$. The derivative vanishes at that intensity, matching the claim. Substituting only after the general expression is finished avoids mixing height with slope. Coefficient and sign agreement with the claim is what decides the letter. The same checklist — differentiate, simplify, evaluate — settles the assertion, so the statement is True.`,
       `**C.** → True
@@ -510,7 +610,13 @@ Do not stop at an unsimplified three-term product — the claimed compact polyno
 
 Substitute $x=1$ into the first-derivative formula:
 
-$$S'(1)=1\\cdot e^{-1}\\cdot(2-1)=e^{-1}$$
+$$
+S'(1) = 1\\cdot e^{-1}\\cdot(2-1)
+$$
+
+$$
+S'(1) = e^{-1}
+$$
 
 Here the factor $(2-x)$ equals $1$, so the derivative reduces cleanly to $e^{-1}$. The computed value matches the claim. The same checklist — differentiate, simplify, evaluate — settles the assertion. Writing every intermediate line keeps the comparison with the claim mechanical. The stem's formula is enough; no outside identity is required for the check, so the statement is True.`,
       `**E.** → True
@@ -520,11 +626,10 @@ A horizontal tangent is precisely a zero slope. From the evaluation at $x=2$,
 $$S'(2)=0$$
 
 so the tangent to the graph at that point is horizontal. Do not confuse "horizontal tangent" with "horizontal asymptote" — here it is a local flat slope. Writing every intermediate line keeps the comparison with the claim mechanical. The stem's formula is enough; no outside identity is required for the check. Substituting only after the general expression is finished avoids mixing height with slope, so the statement is True.`
-    ],
+    ]
     difficulty_level: "2/5",
     sort_order: 7,
-    solution_overview:
-      `The campaign response index is the exponential-polynomial product
+    solution_overview: `The campaign response index is the exponential-polynomial product
 
 $$S(x)=x^{2}\\cdot e^{-x}\\qquad(x>0)$$
 
@@ -557,28 +662,46 @@ Reuse this derivative setup for every letter: simplify first, evaluate at named 
       "$D''(a)=-\\dfrac{7}{4}(a+9)^{-\\frac{3}{2}}$.",
       "Near $a=7$, increasing advertising by one unit raises expected demand by approximately $7$ units.",
       "$D'(a)$ is smaller at $a=16$ than at $a=0$.",
-    ],
+    ]
     answer_key: [true, true, true, false, true],
     tactical_explanations: [
       `**A.** → True
 
 Rewrite demand as $D(a)=7(a+9)^{\\frac{1}{2}}$ and apply the chain rule, multiplying by the inner slope $1$:
 
-$$D'(a)=7\\cdot\\dfrac{1}{2}(a+9)^{-\\frac{1}{2}}=\\dfrac{7}{2\\sqrt{a+9}}$$
+$$
+D'(a) = 7\\cdot\\dfrac{1}{2}(a+9)^{-\\frac{1}{2}}
+$$
+
+$$
+D'(a) = \\dfrac{7}{2\\sqrt{a+9}}
+$$
 
 A trap is forgetting the factor $\\dfrac{1}{2}$ from the square-root power. The simplified formula matches the claim. Substituting only after the general expression is finished avoids mixing height with slope. Coefficient and sign agreement with the claim is what decides the letter, so the statement is True.`,
       `**B.** → True
 
 Substitute $a=7$, noting that $a+9=16$ and $\\sqrt{16}=4$:
 
-$$D'(7)=\\dfrac{7}{2\\cdot 4}=\\dfrac{7}{8}$$
+$$
+D'(7) = \\dfrac{7}{2\\cdot 4}
+$$
+
+$$
+D'(7) = \\dfrac{7}{8}
+$$
 
 Do not evaluate $D(7)=7\\cdot 4=28$ when the claim asks for the derivative. The slope matches. Coefficient and sign agreement with the claim is what decides the letter. The same checklist — differentiate, simplify, evaluate — settles the assertion. Writing every intermediate line keeps the comparison with the claim mechanical. The stem's formula is enough; no outside identity is required for the check, so the statement is True.`,
       `**C.** → True
 
 Differentiate $D'(a)=\\dfrac{7}{2}(a+9)^{-\\frac{1}{2}}$ once more:
 
-$$D''(a)=\\dfrac{7}{2}\\cdot\\Bigl(-\\dfrac{1}{2}\\Bigr)(a+9)^{-\\frac{3}{2}}=-\\dfrac{7}{4}(a+9)^{-\\frac{3}{2}}$$
+$$
+D''(a) = \\dfrac{7}{2}\\cdot\\Bigl(-\\dfrac{1}{2}\\Bigr)(a+9)^{-\\frac{3}{2}}
+$$
+
+$$
+D''(a) = -\\dfrac{7}{4}(a+9)^{-\\frac{3}{2}}
+$$
 
 The negative sign shows diminishing marginal returns. Matching the claimed second derivative, the statement is True. The same checklist — differentiate, simplify, evaluate — settles the assertion. Writing every intermediate line keeps the comparison with the claim mechanical, so the statement is True.`,
       `**D.** → False
@@ -595,11 +718,10 @@ Compare the derivative at the two advertising levels:
 $$D'(16)=\\dfrac{7}{2\\sqrt{25}}=\\dfrac{7}{10}\\qquad D'(0)=\\dfrac{7}{2\\sqrt{9}}=\\dfrac{7}{6}$$
 
 Since $\\dfrac{7}{10}<\\dfrac{7}{6}$, the derivative is smaller at $a=16$ than at $a=0$. That is diminishing returns in action. The stem's formula is enough; no outside identity is required for the check. Substituting only after the general expression is finished avoids mixing height with slope. Coefficient and sign agreement with the claim is what decides the letter, so the statement is True.`
-    ],
+    ]
     difficulty_level: "2/5",
     sort_order: 8,
-    solution_overview:
-      `Expected demand follows the square-root advertising rule
+    solution_overview: `Expected demand follows the square-root advertising rule
 
 $$D(a)=7\\sqrt{a+9}=7(a+9)^{\\frac{1}{2}}$$
 
@@ -632,21 +754,33 @@ Reuse this derivative setup for every letter: simplify first, evaluate at named 
       "$R'(n)=-3\\sqrt{2n+1}+\\dfrac{20-3n}{\\sqrt{2n+1}}$ before combining over one denominator.",
       "$R'(n)=0$ at $n=\\dfrac{17}{9}$.",
       "$R(n)$ is increasing for every $0<n<2$.",
-    ],
+    ]
     answer_key: [true, true, true, true, false],
     tactical_explanations: [
       `**A.** → True
 
 Revenue is the product $R(n)=(20-3n)\\sqrt{2n+1}$. Apply the product rule, then combine over the common denominator $\\sqrt{2n+1}$:
 
-$$R'(n)=\\dfrac{-3(2n+1)+(20-3n)}{\\sqrt{2n+1}}=\\dfrac{17-9n}{\\sqrt{2n+1}}$$
+$$
+R'(n) = \\dfrac{-3(2n+1)+(20-3n)}{\\sqrt{2n+1}}
+$$
+
+$$
+R'(n) = \\dfrac{17-9n}{\\sqrt{2n+1}}
+$$
 
 The numerator algebra $ -6n-3+20-3n=17-9n $ is the delicate step. Matching the claimed simplified formula, the statement is True. Coefficient and sign agreement with the claim is what decides the letter. The same checklist — differentiate, simplify, evaluate — settles the assertion, so the statement is True.`,
       `**B.** → True
 
 Substitute $n=1$ into the combined derivative:
 
-$$R'(1)=\\dfrac{17-9}{\\sqrt{2+1}}=\\dfrac{8}{\\sqrt{3}}$$
+$$
+R'(1) = \\dfrac{17-9}{\\sqrt{2+1}}
+$$
+
+$$
+R'(1) = \\dfrac{8}{\\sqrt{3}}
+$$
 
 Do not rationalise away from $\\dfrac{8}{\\sqrt{3}}$ unless asked — the claim keeps that form. The computed value matches. The same checklist — differentiate, simplify, evaluate — settles the assertion. Writing every intermediate line keeps the comparison with the claim mechanical. The stem's formula is enough; no outside identity is required for the check, so the statement is True.`,
       `**C.** → True
@@ -670,11 +804,10 @@ The derivative changes sign at the critical point
 $$n=\\dfrac{17}{9}$$
 
 and $\\dfrac{17}{9}<2$. Revenue therefore rises on part of $(0,2)$ and falls on the rest, so it is not increasing throughout that interval. The claim overstates the monotonicity. Rephrasing the claim cannot repair an algebraic contradiction. The named evaluation already serves as a counter-example. Holding both formulas in view makes the failure obvious. The derived expression and the asserted one disagree at a checkable place. Comparing that with the claim, the statement is False.`
-    ],
+    ]
     difficulty_level: "3/5",
     sort_order: 9,
-    solution_overview:
-      `Revenue is the product of the two scenario rules
+    solution_overview: `Revenue is the product of the two scenario rules
 
 $$R(n)=(20-3n)\\sqrt{2n+1}$$
 
@@ -703,21 +836,37 @@ Reuse this derivative setup for every letter: simplify first, evaluate at named 
       "$T'(n)>0$ for every $n>0$.",
       "$T'(n)=\\dfrac{2n+8}{n+1}$ after cancelling a common factor incorrectly.",
       "There exists some $n>0$ for which $T'(n)=0$.",
-    ],
+    ]
     answer_key: [true, true, true, false, false],
     tactical_explanations: [
       `**A.** → True
 
 Maintenance time per effective unit is the quotient $T(n)=\\dfrac{2n^{2}+8n}{n+1}$. Apply the quotient rule with numerator $u=2n^{2}+8n$ and denominator $v=n+1$:
 
-$$T'(n)=\\dfrac{(4n+8)(n+1)-(2n^{2}+8n)\\cdot 1}{(n+1)^{2}}=\\dfrac{2n^{2}+4n+8}{(n+1)^{2}}$$
+$$
+T'(n) = \\dfrac{(4n+8)(n+1)-(2n^{2}+8n)\\cdot 1}{(n+1)^{2}}
+$$
+
+$$
+T'(n) = \\dfrac{2n^{2}+4n+8}{(n+1)^{2}}
+$$
 
 which matches the claimed formula. The same checklist — differentiate, simplify, evaluate — settles the assertion. Writing every intermediate line keeps the comparison with the claim mechanical. The stem's formula is enough; no outside identity is required for the check, so the statement is True.`,
       `**B.** → True
 
 Substitute $n=1$ into that derivative:
 
-$$T'(1)=\\dfrac{2+4+8}{2^{2}}=\\dfrac{14}{4}=\\dfrac{7}{2}$$
+$$
+T'(1) = \\dfrac{2+4+8}{2^{2}}
+$$
+
+$$
+T'(1) = \\dfrac{14}{4}
+$$
+
+$$
+T'(1) = \\dfrac{7}{2}
+$$
 
 Do not evaluate $T(1)=\\dfrac{10}{2}=5$ when the claim asks for the slope. The computed derivative matches. Writing every intermediate line keeps the comparison with the claim mechanical. The stem's formula is enough; no outside identity is required for the check. Substituting only after the general expression is finished avoids mixing height with slope, so the statement is True.`,
       `**C.** → True
@@ -741,11 +890,10 @@ For $n>0$ the numerator $2n^{2}+4n+8$ never vanishes (discriminant $4-16<0$) and
 $$T'(n)=\\dfrac{2n^{2}+4n+8}{(n+1)^{2}}>0$$
 
 throughout. A strictly positive derivative never hits zero, so no such root exists and the statement is False. The named evaluation already serves as a counter-example. Holding both formulas in view makes the failure obvious. The derived expression and the asserted one disagree at a checkable place. Comparing that with the claim, the statement is False.`
-    ],
+    ]
     difficulty_level: "3/5",
     sort_order: 10,
-    solution_overview:
-      `Maintenance hours are $H(n)=2n^{2}+8n$, and time per effective unit is the quotient
+    solution_overview: `Maintenance hours are $H(n)=2n^{2}+8n$, and time per effective unit is the quotient
 
 $$T(n)=\\dfrac{2n^{2}+8n}{n+1}$$
 
@@ -768,7 +916,7 @@ At $n=1$ one finds $T'(1)=\\dfrac{7}{2}$. The numerator $2n^{2}+4n+8=2(n^{2}+2n+
       "$U''(x)=-\\dfrac{40}{(x+1)^{2}}$.",
       "$U'(x)$ is undefined at $x=0$.",
       "Near $x=3$, one extra hour of study changes utility by approximately $9$ utility units.",
-    ],
+    ]
     answer_key: [true, true, true, false, true],
     tactical_explanations: [
       `**A.** → True
@@ -782,21 +930,43 @@ which matches the claimed first derivative. Do not write $\\dfrac{40}{x}$ by for
 
 Substitute the named study time $x=3$ into the first derivative:
 
-$$U'(3)=\\dfrac{40}{3+1}-1=\\dfrac{40}{4}-1=9$$
+$$
+U'(3) = \\dfrac{40}{3+1}-1
+$$
+
+$$
+U'(3) = \\dfrac{40}{4}-1
+$$
+
+$$
+U'(3) = 9
+$$
 
 A trap is stopping at $\\dfrac{40}{4}=10$ and forgetting to subtract $1$. The full computation matches the claim. The stem's formula is enough; no outside identity is required for the check. Substituting only after the general expression is finished avoids mixing height with slope. Coefficient and sign agreement with the claim is what decides the letter, so the statement is True.`,
       `**C.** → True
 
 Differentiate $U'(x)=40(x+1)^{-1}-1$ once more. The constant $-1$ vanishes, and the power rule on $(x+1)^{-1}$ produces
 
-$$U''(x)=-40(x+1)^{-2}=-\\dfrac{40}{(x+1)^{2}}$$
+$$
+U''(x) = -40(x+1)^{-2}
+$$
+
+$$
+U''(x) = -\\dfrac{40}{(x+1)^{2}}
+$$
 
 which matches the claimed second derivative. The negative sign shows diminishing marginal utility. Substituting only after the general expression is finished avoids mixing height with slope. Coefficient and sign agreement with the claim is what decides the letter. The same checklist — differentiate, simplify, evaluate — settles the assertion, so the statement is True.`,
       `**D.** → False
 
 Extending the first-derivative formula to $x=0$ gives the ordinary finite value
 
-$$U'(0)=\\dfrac{40}{1}-1=39$$
+$$
+U'(0) = \\dfrac{40}{1}-1
+$$
+
+$$
+U'(0) = 39
+$$
 
 so the derivative is defined at $x=0$. The argument of the logarithm is $x+1$, which equals $1$ at $x=0$ — there is no division by zero. The claim is incorrect. The named evaluation already serves as a counter-example. Holding both formulas in view makes the failure obvious. The derived expression and the asserted one disagree at a checkable place. Comparing that with the claim, the statement is False.`,
       `**E.** → True
@@ -806,11 +976,10 @@ The first derivative measures the instantaneous change in utility per extra stud
 $$U'(3)=9$$
 
 so one extra hour near that level changes utility by approximately $9$ utility units. The approximation language matches the derivative interpretation. The same checklist — differentiate, simplify, evaluate — settles the assertion. Writing every intermediate line keeps the comparison with the claim mechanical. The stem's formula is enough; no outside identity is required for the check, so the statement is True.`
-    ],
+    ]
     difficulty_level: "2/5",
     sort_order: 11,
-    solution_overview:
-      `A student models utility from study time by the log-linear rule
+    solution_overview: `A student models utility from study time by the log-linear rule
 
 $$U(x)=40\\cdot\\ln(x+1)-x\\qquad(x>0)$$
 
@@ -837,21 +1006,33 @@ At the named study level one finds $U'(3)=9$, so one extra hour near $x=3$ chang
       "The derivative is negative for all $N>0$.",
       "Near $N=4$, one extra unit of cumulative output lowers unit cost by approximately $\\dfrac{125}{2}$ euros.",
       "Doubling $N$ from $4$ to $8$ doubles the magnitude of the derivative.",
-    ],
+    ]
     answer_key: [true, true, true, true, false],
     tactical_explanations: [
       `**A.** → True
 
 Apply the power rule to the learning-curve cost $c(N)=1000N^{-\\frac{1}{2}}$, multiplying by the exponent $-\\tfrac{1}{2}$ and reducing the power:
 
-$$c'(N)=1000\\cdot\\Bigl(-\\dfrac{1}{2}\\Bigr)N^{-\\frac{3}{2}}=-500N^{-\\frac{3}{2}}$$
+$$
+c'(N) = 1000\\cdot\\Bigl(-\\dfrac{1}{2}\\Bigr)N^{-\\frac{3}{2}}
+$$
+
+$$
+c'(N) = -500N^{-\\frac{3}{2}}
+$$
 
 which matches the claimed formula. Keep the minus sign — learning curves fall. The stem's formula is enough; no outside identity is required for the check. Substituting only after the general expression is finished avoids mixing height with slope, so the statement is True.`,
       `**B.** → True
 
 Substitute $N=4$, using $4^{-\\frac{3}{2}}=\\dfrac{1}{8}$:
 
-$$c'(4)=-500\\cdot\\dfrac{1}{8}=-\\dfrac{125}{2}$$
+$$
+c'(4) = -500\\cdot\\dfrac{1}{8}
+$$
+
+$$
+c'(4) = -\\dfrac{125}{2}
+$$
 
 A trap is computing $4^{-\\frac{1}{2}}=\\tfrac{1}{2}$ instead of $4^{-\\frac{3}{2}}=\\tfrac{1}{8}$. The correct value matches the claim. Substituting only after the general expression is finished avoids mixing height with slope. Coefficient and sign agreement with the claim is what decides the letter. The same checklist — differentiate, simplify, evaluate — settles the assertion, so the statement is True.`,
       `**C.** → True
@@ -872,14 +1053,19 @@ so one extra unit lowers unit cost by approximately $\\dfrac{125}{2}$ euros. The
 
 Compare magnitudes at the two cumulative outputs:
 
-$$\\dfrac{|c'(8)|}{|c'(4)|}=\\dfrac{8^{-\\frac{3}{2}}}{4^{-\\frac{3}{2}}}=\\dfrac{1}{2\\sqrt{2}}\\neq 2$$
+$$
+\\dfrac{|c'(8)|}{|c'(4)|} = \\dfrac{8^{-\\frac{3}{2}}}{4^{-\\frac{3}{2}}}
+$$
+
+$$
+\\dfrac{|c'(8)|}{|c'(4)|} = \\dfrac{1}{2\\sqrt{2}}\\neq 2
+$$
 
 Because $c'$ scales like $N^{-\\frac{3}{2}}$, doubling $N$ multiplies the magnitude by $2^{-\\frac{3}{2}}$, not by $2$. The claim is incorrect. The derived expression and the asserted one disagree at a checkable place. That mismatch alone is enough to reject the letter. Rephrasing the claim cannot repair an algebraic contradiction. Comparing that with the claim, the statement is False.`
-    ],
+    ]
     difficulty_level: "2/5",
     sort_order: 12,
-    solution_overview:
-      `Unit processing cost follows the learning curve
+    solution_overview: `Unit processing cost follows the learning curve
 
 $$c(N)=1000N^{-\\frac{1}{2}}\\qquad(N>0)$$
 
@@ -910,7 +1096,7 @@ so doubling cumulative output does not double the magnitude of the derivative.`,
       "$R(20)=600$.",
       "The tangent line at $q=20$ is $y=600+10(q-20)$.",
       "At $q=20$, the tangent line has negative slope.",
-    ],
+    ]
     answer_key: [true, true, true, true, false],
     tactical_explanations: [
       `**A.** → True
@@ -924,14 +1110,34 @@ which matches the claimed formula. Do not write $-2q$ alone by dropping the $50$
 
 Substitute the named output $q=20$ into marginal revenue:
 
-$$R'(20)=50-2\\cdot 20=50-40=10$$
+$$
+R'(20) = 50-2\\cdot 20
+$$
+
+$$
+R'(20) = 50-40
+$$
+
+$$
+R'(20) = 10
+$$
 
 A trap is computing $50-20=30$ by forgetting the factor $2$ on $q$. The correct slope is $10$. Coefficient and sign agreement with the claim is what decides the letter. The same checklist — differentiate, simplify, evaluate — settles the assertion. Writing every intermediate line keeps the comparison with the claim mechanical. The stem's formula is enough; no outside identity is required for the check, so the statement is True.`,
       `**C.** → True
 
 Evaluate the revenue function itself at $q=20$:
 
-$$R(20)=50\\cdot 20-20^{2}=1000-400=600$$
+$$
+R(20) = 50\\cdot 20-20^{2}
+$$
+
+$$
+R(20) = 1000-400
+$$
+
+$$
+R(20) = 600
+$$
 
 This is the height on the curve, not the slope. The height matches the claim. The same checklist — differentiate, simplify, evaluate — settles the assertion. Writing every intermediate line keeps the comparison with the claim mechanical. The stem's formula is enough; no outside identity is required for the check. Substituting only after the general expression is finished avoids mixing height with slope, so the statement is True.`,
       `**D.** → True
@@ -948,11 +1154,10 @@ The slope of the tangent at $q=20$ is the derivative value
 $$R'(20)=10>0$$
 
 so the tangent rises from left to right rather than falling. Revenue still increases at $q=20$ because the peak $R'(q)=0$ occurs later at $q=25$. That mismatch alone is enough to reject the letter. Rephrasing the claim cannot repair an algebraic contradiction. The named evaluation already serves as a counter-example. Holding both formulas in view makes the failure obvious. Comparing that with the claim, the statement is False.`
-    ],
+    ]
     difficulty_level: "2/5",
     sort_order: 13,
-    solution_overview:
-      `Daily revenue is modelled by the concave quadratic
+    solution_overview: `Daily revenue is modelled by the concave quadratic
 
 $$R(q)=50q-q^{2}$$
 
@@ -985,21 +1190,37 @@ Reuse this derivative setup for every letter: simplify first, evaluate at named 
       "$G''(x)=30(3x^{2}+4)^{3}(27x^{2}+4)$.",
       "$G''(0)=7680$.",
       "$G'(0)=30$.",
-    ],
+    ]
     answer_key: [true, true, true, true, false],
     tactical_explanations: [
       `**A.** → True
 
 The reliability score is the nested fifth power $G(x)=(3x^{2}+4)^{5}$. The chain rule multiplies the outer power by the inner derivative $6x$:
 
-$$G'(x)=5(3x^{2}+4)^{4}\\cdot 6x=30x(3x^{2}+4)^{4}$$
+$$
+G'(x) = 5(3x^{2}+4)^{4}\\cdot 6x
+$$
+
+$$
+G'(x) = 30x(3x^{2}+4)^{4}
+$$
 
 matching the claimed formula. Forgetting the inner $6x$ is the classic chain-rule trap here. Comparing with the claim, the statement is True. Coefficient and sign agreement with the claim is what decides the letter. The same checklist — differentiate, simplify, evaluate — settles the assertion, so the statement is True.`,
       `**B.** → True
 
 At $x=1$ one has $3x^{2}+4=7$ and $7^{4}=2401$, so
 
-$$G'(1)=30\\cdot 1\\cdot 7^{4}=30\\cdot 2401=72030$$
+$$
+G'(1) = 30\\cdot 1\\cdot 7^{4}
+$$
+
+$$
+G'(1) = 30\\cdot 2401
+$$
+
+$$
+G'(1) = 72030
+$$
 
 Do not compute $7^{5}$ by mistake — the outer power has already been reduced to $4$. The computed value matches the claim. The same checklist — differentiate, simplify, evaluate — settles the assertion. Writing every intermediate line keeps the comparison with the claim mechanical. The stem's formula is enough; no outside identity is required for the check, so the statement is True.`,
       `**C.** → True
@@ -1013,21 +1234,36 @@ The factor $27x^{2}+4$ comes from combining the two product-rule pieces. Matchin
 
 Substitute $x=0$ into the second-derivative formula:
 
-$$G''(0)=30\\cdot 4^{3}\\cdot 4=30\\cdot 64\\cdot 4=7680$$
+$$
+G''(0) = 30\\cdot 4^{3}\\cdot 4
+$$
+
+$$
+G''(0) = 30\\cdot 64\\cdot 4
+$$
+
+$$
+G''(0) = 7680
+$$
 
 Here $3(0)^{2}+4=4$ and $27(0)^{2}+4=4$. The computed value matches the claim. The stem's formula is enough; no outside identity is required for the check. Substituting only after the general expression is finished avoids mixing height with slope. Coefficient and sign agreement with the claim is what decides the letter. The same checklist — differentiate, simplify, evaluate — settles the assertion, so the statement is True.`,
       `**E.** → False
 
 The first derivative carries an explicit factor of $x$:
 
-$$G'(0)=30\\cdot 0\\cdot 4^{4}=0$$
+$$
+G'(0) = 30\\cdot 0\\cdot 4^{4}
+$$
+
+$$
+G'(0) = 0
+$$
 
 not $30$. A trap is reading off the leading coefficient $30$ and ignoring the vanishing $x$. The claim's value is incorrect. Rephrasing the claim cannot repair an algebraic contradiction. The named evaluation already serves as a counter-example. Holding both formulas in view makes the failure obvious. The derived expression and the asserted one disagree at a checkable place. Comparing that with the claim, the statement is False.`
-    ],
+    ]
     difficulty_level: "4/5",
     sort_order: 14,
-    solution_overview:
-      `The machine reliability score is the nested fifth-power composition
+    solution_overview: `The machine reliability score is the nested fifth-power composition
 
 $$G(x)=(3x^{2}+4)^{5}\\qquad(x\\geq 0)$$
 
@@ -1056,7 +1292,7 @@ Reuse this derivative setup for every letter: simplify first, evaluate at named 
       "$C''\\left(\\dfrac{3}{2}\\right)=0$.",
       "$C''(1)$ is positive.",
       "$C''(2)$ is positive.",
-    ],
+    ]
     answer_key: [true, true, true, false, true],
     tactical_explanations: [
       `**A.** → True
@@ -1077,28 +1313,49 @@ matching the claimed second derivative. This measures how fast marginal cost its
 
 Substitute $q=\\dfrac{3}{2}$ into the second derivative:
 
-$$C''\\!\\left(\\dfrac{3}{2}\\right)=24\\cdot\\dfrac{3}{2}-36=36-36=0$$
+$$
+C''\\!\\left(\\dfrac{3}{2}\\right) = 24\\cdot\\dfrac{3}{2}-36
+$$
+
+$$
+24\\cdot\\dfrac{3}{2}-36 = 36-36
+$$
+
+$$
+36-36 = 0
+$$
 
 so the second derivative vanishes there. That is the natural candidate for an inflection point of $C$. The stem's formula is enough; no outside identity is required for the check. Substituting only after the general expression is finished avoids mixing height with slope. Coefficient and sign agreement with the claim is what decides the letter, so the statement is True.`,
       `**D.** → False
 
 Evaluate the second derivative at $q=1$:
 
-$$C''(1)=24-36=-12$$
+$$
+C''(1) = 24-36
+$$
+
+$$
+C''(1) = -12
+$$
 
 which is negative rather than positive. The claim's sign is wrong — just left of $q=\\tfrac{3}{2}$ the cost curve is still concave down. Rephrasing the claim cannot repair an algebraic contradiction. The named evaluation already serves as a counter-example. Holding both formulas in view makes the failure obvious. The derived expression and the asserted one disagree at a checkable place. Comparing that with the claim, the statement is False.`,
       `**E.** → True
 
 Evaluate the second derivative at $q=2$:
 
-$$C''(2)=48-36=12>0$$
+$$
+C''(2) = 48-36
+$$
+
+$$
+C''(2) = 12>0
+$$
 
 so the second derivative is positive there. Just right of the zero at $q=\\tfrac{3}{2}$, curvature has flipped to concave up. Coefficient and sign agreement with the claim is what decides the letter. The same checklist — differentiate, simplify, evaluate — settles the assertion. Writing every intermediate line keeps the comparison with the claim mechanical. The stem's formula is enough; no outside identity is required for the check, so the statement is True.`
-    ],
+    ]
     difficulty_level: "3/5",
     sort_order: 15,
-    solution_overview:
-      `Total delivery cost is the cubic schedule
+    solution_overview: `Total delivery cost is the cubic schedule
 
 $$C(q)=4q^{3}-18q^{2}+40q+100$$
 
@@ -1125,21 +1382,37 @@ so curvature changes from negative to positive across $q=\\dfrac{3}{2}$. That is
       "The index is decreasing for all $t>0$.",
       "At $t=2$, one extra hour of training changes the index by approximately $-\\dfrac{1}{3}$.",
       "$K''(t)=\\dfrac{6}{(t+1)^{3}}$.",
-    ],
+    ]
     answer_key: [true, true, true, true, true],
     tactical_explanations: [
       `**A.** → True
 
 The complaint index is the quotient $K(t)=\\dfrac{t+4}{t+1}$. The quotient rule simplifies at once to
 
-$$K'(t)=\\dfrac{(t+1)-(t+4)}{(t+1)^{2}}=-\\dfrac{3}{(t+1)^{2}}$$
+$$
+K'(t) = \\dfrac{(t+1)-(t+4)}{(t+1)^{2}}
+$$
+
+$$
+K'(t) = -\\dfrac{3}{(t+1)^{2}}
+$$
 
 The numerator difference $1-4=-3$ is the whole story. Writing every intermediate line keeps the comparison with the claim mechanical. The stem's formula is enough; no outside identity is required for the check. Substituting only after the general expression is finished avoids mixing height with slope, so the statement is True.`,
       `**B.** → True
 
 Substitute the named training time $t=2$:
 
-$$K'(2)=-\\dfrac{3}{(2+1)^{2}}=-\\dfrac{3}{9}=-\\dfrac{1}{3}$$
+$$
+K'(2) = -\\dfrac{3}{(2+1)^{2}}
+$$
+
+$$
+K'(2) = -\\dfrac{3}{9}
+$$
+
+$$
+K'(2) = -\\dfrac{1}{3}
+$$
 
 Keep the minus sign — more training lowers the complaint index. The computed value matches the claim. The stem's formula is enough; no outside identity is required for the check. Substituting only after the general expression is finished avoids mixing height with slope. Coefficient and sign agreement with the claim is what decides the letter. The same checklist — differentiate, simplify, evaluate — settles the assertion, so the statement is True.`,
       `**C.** → True
@@ -1160,14 +1433,19 @@ so one extra hour changes the index by approximately $-\\dfrac{1}{3}$. The signe
 
 Differentiate $K'(t)=-3(t+1)^{-2}$ once more:
 
-$$K''(t)=(-3)\\cdot(-2)(t+1)^{-3}=\\dfrac{6}{(t+1)^{3}}$$
+$$
+K''(t) = (-3)\\cdot(-2)(t+1)^{-3}
+$$
+
+$$
+K''(t) = \\dfrac{6}{(t+1)^{3}}
+$$
 
 matching the claimed second derivative. The positive sign means the decrease in $K$ flattens as $t$ grows. Comparing with the claim, the statement is True. The same checklist — differentiate, simplify, evaluate — settles the assertion. Writing every intermediate line keeps the comparison with the claim mechanical. The stem's formula is enough; no outside identity is required for the check, so the statement is True.`
-    ],
+    ]
     difficulty_level: "3/5",
     sort_order: 16,
-    solution_overview:
-      `The complaint index is the simple linear-over-linear quotient
+    solution_overview: `The complaint index is the simple linear-over-linear quotient
 
 $$K(t)=\\dfrac{t+4}{t+1}\\qquad(t>0)$$
 
@@ -1200,49 +1478,86 @@ Reuse this derivative setup for every letter: simplify first, evaluate at named 
       "$S''(x)=48(2x+5)^{2}$.",
       "$S''(0)=1200$.",
       "$S'''(x)=192(2x+5)$.",
-    ],
+    ]
     answer_key: [true, true, true, true, true],
     tactical_explanations: [
       `**A.** → True
 
 The safety score is the nested fourth power $S(x)=(2x+5)^{4}$. The chain rule multiplies by the inner slope $2$:
 
-$$S'(x)=4(2x+5)^{3}\\cdot 2=8(2x+5)^{3}$$
+$$
+S'(x) = 4(2x+5)^{3}\\cdot 2
+$$
+
+$$
+S'(x) = 8(2x+5)^{3}
+$$
 
 matching the claimed formula. Forgetting the factor $2$ from the inner linear term is the usual trap. Comparing with the claim, the statement is True. The stem's formula is enough; no outside identity is required for the check. Substituting only after the general expression is finished avoids mixing height with slope, so the statement is True.`,
       `**B.** → True
 
 Substitute $x=0$, using $2\\cdot 0+5=5$:
 
-$$S'(0)=8\\cdot 5^{3}=8\\cdot 125=1000$$
+$$
+S'(0) = 8\\cdot 5^{3}
+$$
+
+$$
+S'(0) = 8\\cdot 125
+$$
+
+$$
+S'(0) = 1000
+$$
 
 Do not confuse this with $S(0)=5^{4}=625$. The derivative value matches the claim. Substituting only after the general expression is finished avoids mixing height with slope. Coefficient and sign agreement with the claim is what decides the letter. The same checklist — differentiate, simplify, evaluate — settles the assertion. Writing every intermediate line keeps the comparison with the claim mechanical, so the statement is True.`,
       `**C.** → True
 
 Differentiate $S'(x)=8(2x+5)^{3}$ again, again multiplying by the inner slope $2$:
 
-$$S''(x)=8\\cdot 3(2x+5)^{2}\\cdot 2=48(2x+5)^{2}$$
+$$
+S''(x) = 8\\cdot 3(2x+5)^{2}\\cdot 2
+$$
+
+$$
+S''(x) = 48(2x+5)^{2}
+$$
 
 matching the claimed second derivative. The pattern of coefficients $8\\to 48$ is consistent with $4\\cdot 3\\cdot 2^{2}$. Coefficient and sign agreement with the claim is what decides the letter. The same checklist — differentiate, simplify, evaluate — settles the assertion. Writing every intermediate line keeps the comparison with the claim mechanical, so the statement is True.`,
       `**D.** → True
 
 Substitute $x=0$ into the second derivative:
 
-$$S''(0)=48\\cdot 5^{2}=48\\cdot 25=1200$$
+$$
+S''(0) = 48\\cdot 5^{2}
+$$
+
+$$
+S''(0) = 48\\cdot 25
+$$
+
+$$
+S''(0) = 1200
+$$
 
 The computed value matches the claim. Keep $5^{2}=25$, not $5^{3}$. Comparing with the claim, the statement is True. The same checklist — differentiate, simplify, evaluate — settles the assertion. Writing every intermediate line keeps the comparison with the claim mechanical. The stem's formula is enough; no outside identity is required for the check. Substituting only after the general expression is finished avoids mixing height with slope, so the statement is True.`,
       `**E.** → True
 
 Differentiate $S''(x)=48(2x+5)^{2}$ once more:
 
-$$S'''(x)=48\\cdot 2(2x+5)\\cdot 2=192(2x+5)$$
+$$
+S'''(x) = 48\\cdot 2(2x+5)\\cdot 2
+$$
+
+$$
+S'''(x) = 192(2x+5)
+$$
 
 matching the claimed third derivative. One more differentiation would leave the constant $384$. Writing every intermediate line keeps the comparison with the claim mechanical. The stem's formula is enough; no outside identity is required for the check. Substituting only after the general expression is finished avoids mixing height with slope. Coefficient and sign agreement with the claim is what decides the letter, so the statement is True.`
-    ],
+    ]
     difficulty_level: "3/5",
     sort_order: 17,
-    solution_overview:
-      `The packaging safety score is the nested fourth-power composition
+    solution_overview: `The packaging safety score is the nested fourth-power composition
 
 $$S(x)=(2x+5)^{4}$$
 
@@ -1271,21 +1586,33 @@ Reuse this derivative setup for every letter: simplify first, evaluate at named 
       "$E''(t)=\\dfrac{1}{t+1}+\\dfrac{1}{(t+1)^{2}}$.",
       "$E''(1)=\\dfrac{3}{4}$.",
       "The statement $E'(t)=\\ln(t+1)+1$ is correct.",
-    ],
+    ]
     answer_key: [true, true, true, true, false],
     tactical_explanations: [
       `**A.** → True
 
 The engagement index is the product $E(t)=t\\cdot\\ln(t+1)$. Apply the product rule: differentiate $t$ and $\\ln(t+1)$ in turn,
 
-$$E'(t)=\\ln(t+1)+t\\cdot\\dfrac{1}{t+1}=\\ln(t+1)+\\dfrac{t}{t+1}$$
+$$
+E'(t) = \\ln(t+1)+t\\cdot\\dfrac{1}{t+1}
+$$
+
+$$
+E'(t) = \\ln(t+1)+\\dfrac{t}{t+1}
+$$
 
 which matches the claimed formula. Keep both summands — neither alone is the full derivative. Substituting only after the general expression is finished avoids mixing height with slope. Coefficient and sign agreement with the claim is what decides the letter, so the statement is True.`,
       `**B.** → True
 
 Substitute $t=1$ into the first derivative:
 
-$$E'(1)=\\ln(1+1)+\\dfrac{1}{1+1}=\\ln 2+\\dfrac{1}{2}$$
+$$
+E'(1) = \\ln(1+1)+\\dfrac{1}{1+1}
+$$
+
+$$
+E'(1) = \\ln 2+\\dfrac{1}{2}
+$$
 
 Do not replace $\\dfrac{1}{2}$ by $1$. The computed value matches the claim. Coefficient and sign agreement with the claim is what decides the letter. The same checklist — differentiate, simplify, evaluate — settles the assertion. Writing every intermediate line keeps the comparison with the claim mechanical. The stem's formula is enough; no outside identity is required for the check, so the statement is True.`,
       `**C.** → True
@@ -1299,7 +1626,13 @@ matching the claimed second derivative. The same checklist — differentiate, si
 
 Substitute $t=1$ into the second derivative:
 
-$$E''(1)=\\dfrac{1}{2}+\\dfrac{1}{4}=\\dfrac{3}{4}$$
+$$
+E''(1) = \\dfrac{1}{2}+\\dfrac{1}{4}
+$$
+
+$$
+E''(1) = \\dfrac{3}{4}
+$$
 
 The two positive contributions add cleanly. The computed value matches the claim. Writing every intermediate line keeps the comparison with the claim mechanical. The stem's formula is enough; no outside identity is required for the check. Substituting only after the general expression is finished avoids mixing height with slope. Coefficient and sign agreement with the claim is what decides the letter, so the statement is True.`,
       `**E.** → False
@@ -1309,11 +1642,10 @@ The correct product-rule derivative is
 $$E'(t)=\\ln(t+1)+\\dfrac{t}{t+1}$$
 
 Replacing the second summand by the constant $1$ drops the factor $\\dfrac{t}{t+1}$ and produces a different function. That shortcut is incorrect. That mismatch alone is enough to reject the letter. Rephrasing the claim cannot repair an algebraic contradiction. The named evaluation already serves as a counter-example. Holding both formulas in view makes the failure obvious. Comparing that with the claim, the statement is False.`
-    ],
+    ]
     difficulty_level: "4/5",
     sort_order: 18,
-    solution_overview:
-      `The engagement index is the product
+    solution_overview: `The engagement index is the product
 
 $$E(t)=t\\cdot\\ln(t+1)\\qquad(t>0)$$
 
@@ -1342,14 +1674,20 @@ Reuse this derivative setup for every letter: simplify first, evaluate at named 
       "$M'(1)=\\dfrac{7}{8}$.",
       "$M'(1)=\\dfrac{13}{8}$.",
       "The derivative is a constant.",
-    ],
+    ]
     answer_key: [true, true, true, false, false],
     tactical_explanations: [
       `**A.** → True
 
 Rewrite the processing index by converting the root in the denominator into a negative power:
 
-$$M(x)=\\dfrac{x^{2}+1}{\\sqrt{x+3}}=(x^{2}+1)(x+3)^{-\\frac{1}{2}}$$
+$$
+M(x) = \\dfrac{x^{2}+1}{\\sqrt{x+3}}
+$$
+
+$$
+M(x) = (x^{2}+1)(x+3)^{-\\frac{1}{2}}
+$$
 
 which is exactly the product form named in the claim. That rewriting sets up the product rule cleanly. Coefficient and sign agreement with the claim is what decides the letter. The same checklist — differentiate, simplify, evaluate — settles the assertion. Writing every intermediate line keeps the comparison with the claim mechanical, so the statement is True.`,
       `**B.** → True
@@ -1367,7 +1705,17 @@ matching the claimed formula. The same checklist — differentiate, simplify, ev
 
 Substitute $x=1$, using $x+3=4$ and $4^{\\frac{3}{2}}=8$:
 
-$$M'(1)=\\dfrac{3+12-1}{2\\cdot 8}=\\dfrac{14}{16}=\\dfrac{7}{8}$$
+$$
+M'(1) = \\dfrac{3+12-1}{2\\cdot 8}
+$$
+
+$$
+M'(1) = \\dfrac{14}{16}
+$$
+
+$$
+M'(1) = \\dfrac{7}{8}
+$$
 
 The numerator $14$ and denominator $16$ cancel by $2$. The computed value matches the claim. Writing every intermediate line keeps the comparison with the claim mechanical. The stem's formula is enough; no outside identity is required for the check. Substituting only after the general expression is finished avoids mixing height with slope, so the statement is True.`,
       `**D.** → False
@@ -1384,11 +1732,10 @@ The derivative formula
 $$M'(x)=\\dfrac{3x^{2}+12x-1}{2(x+3)^{\\frac{3}{2}}}$$
 
 still depends on $x$ in both the numerator and the denominator. It is therefore not a constant function. Rephrasing the claim cannot repair an algebraic contradiction. The named evaluation already serves as a counter-example. Holding both formulas in view makes the failure obvious. The derived expression and the asserted one disagree at a checkable place. That mismatch alone is enough to reject the letter. Comparing that with the claim, the statement is False.`
-    ],
+    ]
     difficulty_level: "5/5",
     sort_order: 19,
-    solution_overview:
-      `Rewrite the processing index as a product of powers:
+    solution_overview: `Rewrite the processing index as a product of powers:
 
 $$M(x)=\\dfrac{x^{2}+1}{\\sqrt{x+3}}=(x^{2}+1)(x+3)^{-\\frac{1}{2}}$$
 
@@ -1417,7 +1764,7 @@ Reuse this derivative setup for every letter: simplify first, evaluate at named 
       "$F''(t)=2\\ln(t+1)+\\dfrac{4t}{t+1}-\\dfrac{t^{2}+1}{(t+1)^{2}}$.",
       "$F''(1)=2\\ln 2+\\dfrac{3}{2}$.",
       "The expression $F'(t)=2t+\\dfrac{t^{2}+1}{t+1}$ is correct.",
-    ],
+    ]
     answer_key: [true, true, true, true, false],
     tactical_explanations: [
       `**A.** → True
@@ -1431,7 +1778,13 @@ which matches the claimed formula. Both summands are required. The same checklis
 
 Substitute $t=1$ into the first derivative:
 
-$$F'(1)=2\\cdot 1\\cdot\\ln 2+\\dfrac{1+1}{2}=2\\ln 2+1$$
+$$
+F'(1) = 2\\cdot 1\\cdot\\ln 2+\\dfrac{1+1}{2}
+$$
+
+$$
+F'(1) = 2\\ln 2+1
+$$
 
 The second summand simplifies to $1$ at this point, but that is special to $t=1$, not a general rule. Writing every intermediate line keeps the comparison with the claim mechanical. The stem's formula is enough; no outside identity is required for the check. Substituting only after the general expression is finished avoids mixing height with slope. Coefficient and sign agreement with the claim is what decides the letter, so the statement is True.`,
       `**C.** → True
@@ -1445,7 +1798,17 @@ matching the claimed second derivative. The stem's formula is enough; no outside
 
 Substitute $t=1$ into the second derivative:
 
-$$F''(1)=2\\ln 2+\\dfrac{4}{2}-\\dfrac{2}{4}=2\\ln 2+2-\\dfrac{1}{2}=2\\ln 2+\\dfrac{3}{2}$$
+$$
+F''(1) = 2\\ln 2+\\dfrac{4}{2}-\\dfrac{2}{4}
+$$
+
+$$
+F''(1) = 2\\ln 2+2-\\dfrac{1}{2}
+$$
+
+$$
+F''(1) = 2\\ln 2+\\dfrac{3}{2}
+$$
 
 Watch the arithmetic $2-\\tfrac{1}{2}=\\tfrac{3}{2}$. The computed value matches the claim. Substituting only after the general expression is finished avoids mixing height with slope. Coefficient and sign agreement with the claim is what decides the letter. The same checklist — differentiate, simplify, evaluate — settles the assertion, so the statement is True.`,
       `**E.** → False
@@ -1455,11 +1818,10 @@ The true product-rule derivative is
 $$F'(t)=2t\\cdot\\ln(t+1)+\\dfrac{t^{2}+1}{t+1}$$
 
 Dropping the logarithm term produces $2t+\\dfrac{t^{2}+1}{t+1}$, which is missing the summand $2t\\ln(t+1)$. That shortcut is incorrect. The named evaluation already serves as a counter-example. Holding both formulas in view makes the failure obvious. The derived expression and the asserted one disagree at a checkable place. That mismatch alone is enough to reject the letter. Comparing that with the claim, the statement is False.`
-    ],
+    ]
     difficulty_level: "5/5",
     sort_order: 20,
-    solution_overview:
-      `The performance index is the mixed product
+    solution_overview: `The performance index is the mixed product
 
 $$F(t)=(t^{2}+1)\\cdot\\ln(t+1)\\qquad(t>0)$$
 
@@ -1488,7 +1850,7 @@ Reuse this derivative setup for every letter: simplify first, evaluate at named 
       "$\\pi''(q)=-6q+24$.",
       "$\\pi''(3)=0$.",
       "At $q=1$ the tangent slope is strictly positive.",
-    ],
+    ]
     answer_key: [true, true, true, false, false],
     tactical_explanations: [
       `**A.** → True
@@ -1502,7 +1864,13 @@ which matches the claimed first derivative. Watch the signs: the leading term co
 
 Substitute $q=1$ into the first derivative:
 
-$$\\pi'(1)=-3+24-21=0$$
+$$
+\\pi'(1) = -3+24-21
+$$
+
+$$
+\\pi'(1) = 0
+$$
 
 so the derivative vanishes at that output. The three terms cancel exactly: $-3+24=21$, then $21-21=0$. The stem's formula is enough; no outside identity is required for the check. Substituting only after the general expression is finished avoids mixing height with slope. Coefficient and sign agreement with the claim is what decides the letter. The same checklist — differentiate, simplify, evaluate — settles the assertion, so the statement is True.`,
       `**C.** → True
@@ -1516,7 +1884,17 @@ matching the claimed second derivative. This tracks how the marginal profit itse
 
 Substitute $q=3$ into the second derivative:
 
-$$\\pi''(3)=-6\\cdot 3+24=-18+24=6\\neq 0$$
+$$
+\\pi''(3) = -6\\cdot 3+24
+$$
+
+$$
+\\pi''(3) = -18+24
+$$
+
+$$
+\\pi''(3) = 6\\neq 0
+$$
 
 The second derivative vanishes at $q=4$, not at $q=3$. The claim's evaluation is wrong. The named evaluation already serves as a counter-example. Holding both formulas in view makes the failure obvious. The derived expression and the asserted one disagree at a checkable place. That mismatch alone is enough to reject the letter. Rephrasing the claim cannot repair an algebraic contradiction. Comparing that with the claim, the statement is False.`,
       `**E.** → False
@@ -1526,11 +1904,10 @@ The tangent slope at $q=1$ is precisely the first-derivative value
 $$\\pi'(1)=0$$
 
 which is zero rather than strictly positive. A horizontal tangent is not a strictly rising one. Holding both formulas in view makes the failure obvious. The derived expression and the asserted one disagree at a checkable place. That mismatch alone is enough to reject the letter. Rephrasing the claim cannot repair an algebraic contradiction. The named evaluation already serves as a counter-example. Comparing that with the claim, the statement is False.`
-    ],
+    ]
     difficulty_level: "1/5",
     sort_order: 21,
-    solution_overview:
-      `Daily profit follows the cubic schedule
+    solution_overview: `Daily profit follows the cubic schedule
 
 $$\\pi(q)=-q^{3}+12q^{2}-21q$$
 
@@ -1559,7 +1936,7 @@ Reuse this derivative setup for every letter: simplify first, evaluate at named 
       "Average cost equals marginal cost for every $q>0$.",
       "The tangent to $C$ at $q=10$ is $y=45+9q$.",
       "$C''(q)=0$ for all $q$.",
-    ],
+    ]
     answer_key: [true, true, false, true, true],
     tactical_explanations: [
       `**A.** → True
@@ -1597,11 +1974,10 @@ Differentiating the constant marginal cost once more yields
 $$C''(q)=0$$
 
 for every $q$. A linear cost schedule has zero curvature everywhere. Writing every intermediate line keeps the comparison with the claim mechanical. The stem's formula is enough; no outside identity is required for the check. Substituting only after the general expression is finished avoids mixing height with slope. Coefficient and sign agreement with the claim is what decides the letter, so the statement is True.`
-    ],
+    ]
     difficulty_level: "1/5",
     sort_order: 22,
-    solution_overview:
-      `Shipping cost is the linear schedule
+    solution_overview: `Shipping cost is the linear schedule
 
 $$C(q)=45+9q$$
 
@@ -1630,35 +2006,59 @@ Reuse this derivative setup for every letter: simplify first, evaluate at named 
       "$Q'(4)=80$.",
       "$Q''(L)=15L^{\\frac{1}{2}}$.",
       "$Q'(L)$ falls as $L$ rises.",
-    ],
+    ]
     answer_key: [true, true, true, true, false],
     tactical_explanations: [
       `**A.** → True
 
 Apply the power rule to $Q(L)=4L^{\\frac{5}{2}}$, multiplying by $\\tfrac{5}{2}$ and lowering the exponent:
 
-$$Q'(L)=4\\cdot\\dfrac{5}{2}L^{\\frac{3}{2}}=10L^{\\frac{3}{2}}$$
+$$
+Q'(L) = 4\\cdot\\dfrac{5}{2}L^{\\frac{3}{2}}
+$$
+
+$$
+Q'(L) = 10L^{\\frac{3}{2}}
+$$
 
 which matches the claimed marginal product. Do not leave the exponent at $\\tfrac{5}{2}$. Substituting only after the general expression is finished avoids mixing height with slope. Coefficient and sign agreement with the claim is what decides the letter. The same checklist — differentiate, simplify, evaluate — settles the assertion, so the statement is True.`,
       `**B.** → True
 
 Substitute $L=1$ into the marginal-product rule:
 
-$$Q'(1)=10\\cdot 1^{\\frac{3}{2}}=10$$
+$$
+Q'(1) = 10\\cdot 1^{\\frac{3}{2}}
+$$
+
+$$
+Q'(1) = 10
+$$
 
 Any positive power of $1$ is still $1$, so the evaluation is immediate. Coefficient and sign agreement with the claim is what decides the letter. The same checklist — differentiate, simplify, evaluate — settles the assertion. Writing every intermediate line keeps the comparison with the claim mechanical. The stem's formula is enough; no outside identity is required for the check, so the statement is True.`,
       `**C.** → True
 
 Substitute $L=4$, using $4^{\\frac{3}{2}}=(\\sqrt{4})^{3}=2^{3}=8$:
 
-$$Q'(4)=10\\cdot 8=80$$
+$$
+Q'(4) = 10\\cdot 8
+$$
+
+$$
+Q'(4) = 80
+$$
 
 A trap is computing $4^{\\frac{5}{2}}=32$ (the original $Q$) instead of $4^{\\frac{3}{2}}=8$. The same checklist — differentiate, simplify, evaluate — settles the assertion. Writing every intermediate line keeps the comparison with the claim mechanical. The stem's formula is enough; no outside identity is required for the check. Substituting only after the general expression is finished avoids mixing height with slope, so the statement is True.`,
       `**D.** → True
 
 Differentiate the marginal product once more:
 
-$$Q''(L)=10\\cdot\\dfrac{3}{2}L^{\\frac{1}{2}}=15L^{\\frac{1}{2}}$$
+$$
+Q''(L) = 10\\cdot\\dfrac{3}{2}L^{\\frac{1}{2}}
+$$
+
+$$
+Q''(L) = 15L^{\\frac{1}{2}}
+$$
 
 matching the claimed second derivative. The positive coefficient shows marginal product itself is still rising. Writing every intermediate line keeps the comparison with the claim mechanical. The stem's formula is enough; no outside identity is required for the check. Substituting only after the general expression is finished avoids mixing height with slope, so the statement is True.`,
       `**E.** → False
@@ -1668,11 +2068,10 @@ Because the exponent $\\dfrac{3}{2}$ is positive,
 $$Q'(L)=10L^{\\frac{3}{2}}$$
 
 rises as $L$ rises. Comparing $Q'(1)=10$ with $Q'(4)=80$ confirms the increase. The claim that it falls is incorrect. That mismatch alone is enough to reject the letter. Rephrasing the claim cannot repair an algebraic contradiction. The named evaluation already serves as a counter-example. Holding both formulas in view makes the failure obvious. The derived expression and the asserted one disagree at a checkable place. Comparing that with the claim, the statement is False.`
-    ],
+    ]
     difficulty_level: "2/5",
     sort_order: 23,
-    solution_overview:
-      `Output follows the five-halves production rule
+    solution_overview: `Output follows the five-halves production rule
 
 $$Q(L)=4L^{\\frac{5}{2}}\\qquad(L>0)$$
 
@@ -1701,14 +2100,20 @@ Reuse this derivative setup for every letter: simplify first, evaluate at named 
       "$R'(20)=40$.",
       "$R'(q)=p(q)$ at every $q$.",
       "The tangent to $R$ at $q=20$ is $y=1000+40(q-20)$.",
-    ],
+    ]
     answer_key: [true, true, true, false, true],
     tactical_explanations: [
       `**A.** → True
 
 Revenue is price times tickets sold. Expand with the linear fare:
 
-$$R(q)=q\\cdot\\Bigl(60-\\dfrac{1}{2}q\\Bigr)=60q-\\dfrac{1}{2}q^{2}$$
+$$
+R(q) = q\\cdot\\Bigl(60-\\dfrac{1}{2}q\\Bigr)
+$$
+
+$$
+R(q) = 60q-\\dfrac{1}{2}q^{2}
+$$
 
 which matches the claimed revenue function. Keep the coefficient $\\tfrac{1}{2}$ on $q^{2}$, not $1$. Coefficient and sign agreement with the claim is what decides the letter. The same checklist — differentiate, simplify, evaluate — settles the assertion. Writing every intermediate line keeps the comparison with the claim mechanical, so the statement is True.`,
       `**B.** → True
@@ -1722,7 +2127,13 @@ matching the claimed marginal revenue. The derivative of $-\\tfrac{1}{2}q^{2}$ i
 
 Substitute $q=20$ into marginal revenue:
 
-$$R'(20)=60-20=40$$
+$$
+R'(20) = 60-20
+$$
+
+$$
+R'(20) = 40
+$$
 
 The computed value matches the claim. Do not confuse this with $p(20)=50$. Writing every intermediate line keeps the comparison with the claim mechanical. The stem's formula is enough; no outside identity is required for the check. Substituting only after the general expression is finished avoids mixing height with slope. Coefficient and sign agreement with the claim is what decides the letter, so the statement is True.`,
       `**D.** → False
@@ -1743,11 +2154,10 @@ Point-slope form then gives the tangent
 $$y=1000+40(q-20)$$
 
 exactly as claimed. Substituting only after the general expression is finished avoids mixing height with slope. Coefficient and sign agreement with the claim is what decides the letter. The same checklist — differentiate, simplify, evaluate — settles the assertion. Writing every intermediate line keeps the comparison with the claim mechanical, so the statement is True.`
-    ],
+    ]
     difficulty_level: "2/5",
     sort_order: 24,
-    solution_overview:
-      `The venue charges the linear fare $p(q)=60-\\dfrac{1}{2}q$, so ticket revenue expands to
+    solution_overview: `The venue charges the linear fare $p(q)=60-\\dfrac{1}{2}q$, so ticket revenue expands to
 
 $$R(q)=q\\cdot p(q)=60q-\\dfrac{1}{2}q^{2}$$
 
@@ -1776,7 +2186,7 @@ Reuse this derivative setup for every letter: simplify first, evaluate at named 
       "$D''(n)=\\dfrac{72}{(n+2)^{3}}$.",
       "$D'(n)>0$ for all $n>0$.",
       "Near $n=1$, one extra agent cuts delay by about $4$ minutes.",
-    ],
+    ]
     answer_key: [true, true, true, false, true],
     tactical_explanations: [
       `**A.** → True
@@ -1785,21 +2195,43 @@ Rewrite delay as a power and differentiate with the chain rule:
 
 $$D(n)=36(n+2)^{-1}$$
 
-$$D'(n)=-36(n+2)^{-2}=-\\dfrac{36}{(n+2)^{2}}$$
+$$
+D'(n) = -36(n+2)^{-2}
+$$
+
+$$
+D'(n) = -\\dfrac{36}{(n+2)^{2}}
+$$
 
 matching the claimed formula. The inner derivative of $n+2$ is $1$. The same checklist — differentiate, simplify, evaluate — settles the assertion. Writing every intermediate line keeps the comparison with the claim mechanical. The stem's formula is enough; no outside identity is required for the check. Substituting only after the general expression is finished avoids mixing height with slope, so the statement is True.`,
       `**B.** → True
 
 Substitute $n=1$ into the first derivative:
 
-$$D'(1)=-\\dfrac{36}{(1+2)^{2}}=-\\dfrac{36}{9}=-4$$
+$$
+D'(1) = -\\dfrac{36}{(1+2)^{2}}
+$$
+
+$$
+D'(1) = -\\dfrac{36}{9}
+$$
+
+$$
+D'(1) = -4
+$$
 
 Keep the minus sign. The computed value matches the claim. Writing every intermediate line keeps the comparison with the claim mechanical. The stem's formula is enough; no outside identity is required for the check. Substituting only after the general expression is finished avoids mixing height with slope. Coefficient and sign agreement with the claim is what decides the letter, so the statement is True.`,
       `**C.** → True
 
 Differentiate $D'(n)=-36(n+2)^{-2}$ once more:
 
-$$D''(n)=(-36)\\cdot(-2)(n+2)^{-3}=\\dfrac{72}{(n+2)^{3}}$$
+$$
+D''(n) = (-36)\\cdot(-2)(n+2)^{-3}
+$$
+
+$$
+D''(n) = \\dfrac{72}{(n+2)^{3}}
+$$
 
 matching the claimed second derivative. The positive sign shows the reduction in delay becomes less steep as $n$ grows. The stem's formula is enough; no outside identity is required for the check. Substituting only after the general expression is finished avoids mixing height with slope. Coefficient and sign agreement with the claim is what decides the letter, so the statement is True.`,
       `**D.** → False
@@ -1816,11 +2248,10 @@ The first derivative measures minutes of delay gained (or lost) per extra agent.
 $$D'(1)=-4$$
 
 so one extra agent cuts delay by about $4$ minutes. The absolute value of the negative derivative is the size of the cut. Coefficient and sign agreement with the claim is what decides the letter. The same checklist — differentiate, simplify, evaluate — settles the assertion. Writing every intermediate line keeps the comparison with the claim mechanical, so the statement is True.`
-    ],
+    ]
     difficulty_level: "2/5",
     sort_order: 25,
-    solution_overview:
-      `Mean call-centre delay is the reciprocal staffing model
+    solution_overview: `Mean call-centre delay is the reciprocal staffing model
 
 $$D(n)=\\dfrac{36}{n+2}=36(n+2)^{-1}\\qquad(n>0)$$
 
@@ -1845,21 +2276,37 @@ Reuse this derivative setup for every letter: simplify first, evaluate at named 
       "$S''(x)=e^{-2x}\\cdot(4x-4)$.",
       "$S'(0)=1$.",
       "$S'(1)=e^{-2}$.",
-    ],
+    ]
     answer_key: [true, true, true, true, false],
     tactical_explanations: [
       `**A.** → True
 
 The response score is the product $S(x)=x\\,e^{-2x}$. Apply the product rule and factor $e^{-2x}$:
 
-$$S'(x)=e^{-2x}+x(-2)e^{-2x}=e^{-2x}(1-2x)$$
+$$
+S'(x) = e^{-2x}+x(-2)e^{-2x}
+$$
+
+$$
+S'(x) = e^{-2x}(1-2x)
+$$
 
 which matches the claimed formula. The chain-rule factor $-2$ is essential. Writing every intermediate line keeps the comparison with the claim mechanical. The stem's formula is enough; no outside identity is required for the check. Substituting only after the general expression is finished avoids mixing height with slope, so the statement is True.`,
       `**B.** → True
 
 Substitute $x=\\dfrac{1}{2}$ into the factored derivative:
 
-$$S'\\!\\left(\\dfrac{1}{2}\\right)=e^{-1}\\cdot\\Bigl(1-2\\cdot\\dfrac{1}{2}\\Bigr)=e^{-1}\\cdot 0=0$$
+$$
+S'\\!\\left(\\dfrac{1}{2}\\right) = e^{-1}\\cdot\\Bigl(1-2\\cdot\\dfrac{1}{2}\\Bigr)
+$$
+
+$$
+e^{-1}\\cdot\\Bigl(1-2\\cdot\\dfrac{1}{2}\\Bigr) = e^{-1}\\cdot 0
+$$
+
+$$
+e^{-1}\\cdot 0 = 0
+$$
 
 so the derivative vanishes there. The factor $(1-2x)$ is zero at the critical point. The stem's formula is enough; no outside identity is required for the check. Substituting only after the general expression is finished avoids mixing height with slope. Coefficient and sign agreement with the claim is what decides the letter, so the statement is True.`,
       `**C.** → True
@@ -1873,21 +2320,32 @@ matching the claimed second derivative. Equivalent forms such as $4e^{-2x}(x-1)$
 
 Extending the first-derivative formula to $x=0$ gives
 
-$$S'(0)=e^{0}(1-0)=1$$
+$$
+S'(0) = e^{0}(1-0)
+$$
+
+$$
+S'(0) = 1
+$$
 
 matching the claim. At the origin the exponential is $1$ and the linear factor is $1$. Coefficient and sign agreement with the claim is what decides the letter. The same checklist — differentiate, simplify, evaluate — settles the assertion. Writing every intermediate line keeps the comparison with the claim mechanical. The stem's formula is enough; no outside identity is required for the check, so the statement is True.`,
       `**E.** → False
 
 Substitute $x=1$ into the first derivative:
 
-$$S'(1)=e^{-2}(1-2)=-e^{-2}$$
+$$
+S'(1) = e^{-2}(1-2)
+$$
+
+$$
+S'(1) = -e^{-2}
+$$
 
 which equals $-e^{-2}$, not the positive value $e^{-2}$. The claim misses the sign from $(1-2x)$. Holding both formulas in view makes the failure obvious. The derived expression and the asserted one disagree at a checkable place. That mismatch alone is enough to reject the letter. Rephrasing the claim cannot repair an algebraic contradiction. The named evaluation already serves as a counter-example. Comparing that with the claim, the statement is False.`
-    ],
+    ]
     difficulty_level: "3/5",
     sort_order: 26,
-    solution_overview:
-      `The response score is the decaying exponential-linear product
+    solution_overview: `The response score is the decaying exponential-linear product
 
 $$S(x)=x\\cdot e^{-2x}\\qquad(x>0)$$
 
@@ -1920,35 +2378,63 @@ Reuse this derivative setup for every letter: simplify first, evaluate at named 
       "$R''(a)=-\\dfrac{20}{(4a+9)^{\\frac{3}{2}}}$.",
       "$R'(4)=2$.",
       "$R'(a)$ grows without bound as $a$ grows.",
-    ],
+    ]
     answer_key: [true, true, true, true, false],
     tactical_explanations: [
       `**A.** → True
 
 Rewrite reach as $R(a)=5(4a+9)^{\\frac{1}{2}}$ and apply the chain rule, multiplying by the inner slope $4$:
 
-$$R'(a)=5\\cdot\\dfrac{1}{2}(4a+9)^{-\\frac{1}{2}}\\cdot 4=\\dfrac{10}{\\sqrt{4a+9}}$$
+$$
+R'(a) = 5\\cdot\\dfrac{1}{2}(4a+9)^{-\\frac{1}{2}}\\cdot 4
+$$
+
+$$
+R'(a) = \\dfrac{10}{\\sqrt{4a+9}}
+$$
 
 matching the claimed formula. Forgetting the inner $4$ would leave $\\dfrac{5}{2\\sqrt{4a+9}}$. The stem's formula is enough; no outside identity is required for the check. Substituting only after the general expression is finished avoids mixing height with slope, so the statement is True.`,
       `**B.** → True
 
 Substitute $a=0$:
 
-$$R'(0)=\\dfrac{10}{\\sqrt{9}}=\\dfrac{10}{3}$$
+$$
+R'(0) = \\dfrac{10}{\\sqrt{9}}
+$$
+
+$$
+R'(0) = \\dfrac{10}{3}
+$$
 
 The computed value matches the claim. Do not evaluate $R(0)=15$ when asking for the slope. Substituting only after the general expression is finished avoids mixing height with slope. Coefficient and sign agreement with the claim is what decides the letter. The same checklist — differentiate, simplify, evaluate — settles the assertion. Writing every intermediate line keeps the comparison with the claim mechanical, so the statement is True.`,
       `**C.** → True
 
 Differentiate $R'(a)=10(4a+9)^{-\\frac{1}{2}}$ once more, again multiplying by the inner slope $4$:
 
-$$R''(a)=10\\cdot\\Bigl(-\\dfrac{1}{2}\\Bigr)(4a+9)^{-\\frac{3}{2}}\\cdot 4=-\\dfrac{20}{(4a+9)^{\\frac{3}{2}}}$$
+$$
+R''(a) = 10\\cdot\\Bigl(-\\dfrac{1}{2}\\Bigr)(4a+9)^{-\\frac{3}{2}}\\cdot 4
+$$
+
+$$
+R''(a) = -\\dfrac{20}{(4a+9)^{\\frac{3}{2}}}
+$$
 
 matching the claimed second derivative. The negative sign encodes diminishing returns. Coefficient and sign agreement with the claim is what decides the letter. The same checklist — differentiate, simplify, evaluate — settles the assertion. Writing every intermediate line keeps the comparison with the claim mechanical, so the statement is True.`,
       `**D.** → True
 
 Substitute $a=4$, using $4\\cdot 4+9=25$:
 
-$$R'(4)=\\dfrac{10}{\\sqrt{25}}=\\dfrac{10}{5}=2$$
+$$
+R'(4) = \\dfrac{10}{\\sqrt{25}}
+$$
+
+$$
+R'(4) = \\dfrac{10}{5}
+$$
+
+$$
+R'(4) = 2
+$$
 
 The computed value matches the claim. The same checklist — differentiate, simplify, evaluate — settles the assertion. Writing every intermediate line keeps the comparison with the claim mechanical. The stem's formula is enough; no outside identity is required for the check. Substituting only after the general expression is finished avoids mixing height with slope, so the statement is True.`,
       `**E.** → False
@@ -1958,11 +2444,10 @@ As $a\\to\\infty$ the denominator $\\sqrt{4a+9}$ grows without bound, so
 $$R'(a)=\\dfrac{10}{\\sqrt{4a+9}}\\to 0$$
 
 rather than exploding. Marginal reach shrinks toward zero. The claim's comparison is incorrect. The derived expression and the asserted one disagree at a checkable place. That mismatch alone is enough to reject the letter. Rephrasing the claim cannot repair an algebraic contradiction. The named evaluation already serves as a counter-example. Comparing that with the claim, the statement is False.`
-    ],
+    ]
     difficulty_level: "3/5",
     sort_order: 27,
-    solution_overview:
-      `Expected reach is the scaled square-root rule
+    solution_overview: `Expected reach is the scaled square-root rule
 
 $$R(a)=5\\sqrt{4a+9}=5(4a+9)^{\\frac{1}{2}}$$
 
@@ -1991,35 +2476,67 @@ Reuse this derivative setup for every letter: simplify first, evaluate at named 
       "$U''(t)=-\\dfrac{120}{(2t+1)^{2}}$.",
       "$U'(0)=56$.",
       "$U'(t)=0$ at $t=\\dfrac{7}{2}$.",
-    ],
+    ]
     answer_key: [true, true, true, true, false],
     tactical_explanations: [
       `**A.** → True
 
 Differentiate $U(t)=30\\ln(2t+1)-4t$ with the chain rule on the logarithm, multiplying by the inner slope $2$:
 
-$$U'(t)=30\\cdot\\dfrac{2}{2t+1}-4=\\dfrac{60}{2t+1}-4$$
+$$
+U'(t) = 30\\cdot\\dfrac{2}{2t+1}-4
+$$
+
+$$
+U'(t) = \\dfrac{60}{2t+1}-4
+$$
 
 matching the claimed first derivative. Forgetting the inner $2$ leaves $\\dfrac{30}{2t+1}-4$. Substituting only after the general expression is finished avoids mixing height with slope. Coefficient and sign agreement with the claim is what decides the letter. The same checklist — differentiate, simplify, evaluate — settles the assertion, so the statement is True.`,
       `**B.** → True
 
 Substitute $t=2$ into the first derivative:
 
-$$U'(2)=\\dfrac{60}{4+1}-4=\\dfrac{60}{5}-4=12-4=8$$
+$$
+U'(2) = \\dfrac{60}{4+1}-4
+$$
+
+$$
+U'(2) = \\dfrac{60}{5}-4
+$$
+
+$$
+U'(2) = 12-4
+$$
+
+$$
+U'(2) = 8
+$$
 
 The arithmetic $12-4=8$ completes the evaluation. Coefficient and sign agreement with the claim is what decides the letter. The same checklist — differentiate, simplify, evaluate — settles the assertion. Writing every intermediate line keeps the comparison with the claim mechanical. The stem's formula is enough; no outside identity is required for the check, so the statement is True.`,
       `**C.** → True
 
 Differentiate $U'(t)=60(2t+1)^{-1}-4$ once more, multiplying by the inner slope $2$:
 
-$$U''(t)=-60(2t+1)^{-2}\\cdot 2=-\\dfrac{120}{(2t+1)^{2}}$$
+$$
+U''(t) = -60(2t+1)^{-2}\\cdot 2
+$$
+
+$$
+U''(t) = -\\dfrac{120}{(2t+1)^{2}}
+$$
 
 matching the claimed second derivative. The always-negative sign shows diminishing marginal utility. The same checklist — differentiate, simplify, evaluate — settles the assertion. Writing every intermediate line keeps the comparison with the claim mechanical. The stem's formula is enough; no outside identity is required for the check, so the statement is True.`,
       `**D.** → True
 
 Extending the first-derivative formula to $t=0$ gives
 
-$$U'(0)=\\dfrac{60}{1}-4=56$$
+$$
+U'(0) = \\dfrac{60}{1}-4
+$$
+
+$$
+U'(0) = 56
+$$
 
 matching the claim. At $t=0$ the logarithm argument is $1$, so there is no singularity. Writing every intermediate line keeps the comparison with the claim mechanical. The stem's formula is enough; no outside identity is required for the check. Substituting only after the general expression is finished avoids mixing height with slope. Coefficient and sign agreement with the claim is what decides the letter, so the statement is True.`,
       `**E.** → False
@@ -2029,11 +2546,10 @@ Setting $U'(t)=0$ yields $\\dfrac{60}{2t+1}=4$, hence $2t+1=15$ and
 $$t=7$$
 
 not $t=\\dfrac{7}{2}$. Halving $7$ by mistake (perhaps from the inner coefficient $2$) produces the wrong root. The claimed root is wrong. That mismatch alone is enough to reject the letter. Rephrasing the claim cannot repair an algebraic contradiction. The named evaluation already serves as a counter-example. Holding both formulas in view makes the failure obvious. The derived expression and the asserted one disagree at a checkable place. Comparing that with the claim, the statement is False.`
-    ],
+    ]
     difficulty_level: "3/5",
     sort_order: 28,
-    solution_overview:
-      `Study utility combines a logarithm of linear study time with a linear penalty:
+    solution_overview: `Study utility combines a logarithm of linear study time with a linear penalty:
 
 $$U(t)=30\\cdot\\ln(2t+1)-4t\\qquad(t>0)$$
 
@@ -2058,35 +2574,59 @@ Reuse this derivative setup for every letter: simplify first, evaluate at named 
       "$G''(x)=320(4x+1)^{3}$.",
       "$G''(0)=320$.",
       "$G'(1)=20\\cdot 5^{4}$.",
-    ],
+    ]
     answer_key: [true, true, true, true, true],
     tactical_explanations: [
       `**A.** → True
 
 The quality index is the nested fifth power $G(x)=(4x+1)^{5}$. The chain rule multiplies by the inner slope $4$:
 
-$$G'(x)=5(4x+1)^{4}\\cdot 4=20(4x+1)^{4}$$
+$$
+G'(x) = 5(4x+1)^{4}\\cdot 4
+$$
+
+$$
+G'(x) = 20(4x+1)^{4}
+$$
 
 matching the claimed formula. Forgetting the factor $4$ leaves only $5(4x+1)^{4}$. Coefficient and sign agreement with the claim is what decides the letter. The same checklist — differentiate, simplify, evaluate — settles the assertion. Writing every intermediate line keeps the comparison with the claim mechanical, so the statement is True.`,
       `**B.** → True
 
 Substitute $x=0$:
 
-$$G'(0)=20\\cdot 1^{4}=20$$
+$$
+G'(0) = 20\\cdot 1^{4}
+$$
+
+$$
+G'(0) = 20
+$$
 
 The computed value matches the claim. At the origin the inner linear factor is $1$, so the fourth power is still $1$. The same checklist — differentiate, simplify, evaluate — settles the assertion. Writing every intermediate line keeps the comparison with the claim mechanical. The stem's formula is enough; no outside identity is required for the check. Substituting only after the general expression is finished avoids mixing height with slope, so the statement is True.`,
       `**C.** → True
 
 Differentiate $G'(x)=20(4x+1)^{4}$ again, again multiplying by the inner slope $4$:
 
-$$G''(x)=20\\cdot 4(4x+1)^{3}\\cdot 4=320(4x+1)^{3}$$
+$$
+G''(x) = 20\\cdot 4(4x+1)^{3}\\cdot 4
+$$
+
+$$
+G''(x) = 320(4x+1)^{3}
+$$
 
 matching the claimed second derivative. The coefficient $20\\cdot 4\\cdot 4=320$ is the key arithmetic. Writing every intermediate line keeps the comparison with the claim mechanical. The stem's formula is enough; no outside identity is required for the check. Substituting only after the general expression is finished avoids mixing height with slope, so the statement is True.`,
       `**D.** → True
 
 Substitute $x=0$ into the second derivative:
 
-$$G''(0)=320\\cdot 1^{3}=320$$
+$$
+G''(0) = 320\\cdot 1^{3}
+$$
+
+$$
+G''(0) = 320
+$$
 
 The computed value matches the claim. The stem's formula is enough; no outside identity is required for the check. Substituting only after the general expression is finished avoids mixing height with slope. Coefficient and sign agreement with the claim is what decides the letter. The same checklist — differentiate, simplify, evaluate — settles the assertion. Writing every intermediate line keeps the comparison with the claim mechanical, so the statement is True.`,
       `**E.** → True
@@ -2096,11 +2636,10 @@ Substitute $x=1$, using $4\\cdot 1+1=5$:
 $$G'(1)=20\\cdot 5^{4}$$
 
 exactly the expression named in the claim. Leaving $5^{4}$ unexpanded is fine — the claim does the same. Substituting only after the general expression is finished avoids mixing height with slope. Coefficient and sign agreement with the claim is what decides the letter. The same checklist — differentiate, simplify, evaluate — settles the assertion. Writing every intermediate line keeps the comparison with the claim mechanical, so the statement is True.`
-    ],
+    ]
     difficulty_level: "4/5",
     sort_order: 29,
-    solution_overview:
-      `The quality index is the nested fifth-power composition
+    solution_overview: `The quality index is the nested fifth-power composition
 
 $$G(x)=(4x+1)^{5}$$
 
@@ -2133,35 +2672,63 @@ Reuse this derivative setup for every letter: simplify first, evaluate at named 
       "$P'(1)=\\dfrac{19}{4}$.",
       "$P'(0)=0$.",
       "$P'(1)=\\dfrac{15}{2}$.",
-    ],
+    ]
     answer_key: [true, true, true, true, false],
     tactical_explanations: [
       `**A.** → True
 
 The productivity index is the product $P(x)=x^{2}\\sqrt{3x+1}$. Apply the product rule, differentiating the square and the nested root in turn:
 
-$$P'(x)=2x\\sqrt{3x+1}+x^{2}\\cdot\\dfrac{3}{2\\sqrt{3x+1}}=2x\\sqrt{3x+1}+\\dfrac{3x^{2}}{2\\sqrt{3x+1}}$$
+$$
+P'(x) = 2x\\sqrt{3x+1}+x^{2}\\cdot\\dfrac{3}{2\\sqrt{3x+1}}
+$$
+
+$$
+P'(x) = 2x\\sqrt{3x+1}+\\dfrac{3x^{2}}{2\\sqrt{3x+1}}
+$$
 
 matching the claimed unsimplified formula. The same checklist — differentiate, simplify, evaluate — settles the assertion. Writing every intermediate line keeps the comparison with the claim mechanical. The stem's formula is enough; no outside identity is required for the check, so the statement is True.`,
       `**B.** → True
 
 Clear the two pieces over the common denominator $2\\sqrt{3x+1}$:
 
-$$P'(x)=\\dfrac{4x(3x+1)+3x^{2}}{2\\sqrt{3x+1}}=\\dfrac{15x^{2}+4x}{2\\sqrt{3x+1}}$$
+$$
+P'(x) = \\dfrac{4x(3x+1)+3x^{2}}{2\\sqrt{3x+1}}
+$$
+
+$$
+P'(x) = \\dfrac{15x^{2}+4x}{2\\sqrt{3x+1}}
+$$
 
 which is the claimed combined form. The numerator $12x^{2}+4x+3x^{2}=15x^{2}+4x$ is the key. Writing every intermediate line keeps the comparison with the claim mechanical. The stem's formula is enough; no outside identity is required for the check. Substituting only after the general expression is finished avoids mixing height with slope, so the statement is True.`,
       `**C.** → True
 
 Substitute $x=1$ into the combined derivative:
 
-$$P'(1)=\\dfrac{15+4}{2\\sqrt{4}}=\\dfrac{19}{2\\cdot 2}=\\dfrac{19}{4}$$
+$$
+P'(1) = \\dfrac{15+4}{2\\sqrt{4}}
+$$
+
+$$
+P'(1) = \\dfrac{19}{2\\cdot 2}
+$$
+
+$$
+P'(1) = \\dfrac{19}{4}
+$$
 
 The computed value matches the claim. Do not stop at $\\dfrac{19}{2}$ by forgetting $\\sqrt{4}=2$. The stem's formula is enough; no outside identity is required for the check. Substituting only after the general expression is finished avoids mixing height with slope. Coefficient and sign agreement with the claim is what decides the letter, so the statement is True.`,
       `**D.** → True
 
 Every term of the combined derivative carries a factor of $x$:
 
-$$P'(0)=\\dfrac{0}{2\\sqrt{1}}=0$$
+$$
+P'(0) = \\dfrac{0}{2\\sqrt{1}}
+$$
+
+$$
+P'(0) = 0
+$$
 
 so the derivative vanishes at the origin. Substituting only after the general expression is finished avoids mixing height with slope. Coefficient and sign agreement with the claim is what decides the letter. The same checklist — differentiate, simplify, evaluate — settles the assertion. Writing every intermediate line keeps the comparison with the claim mechanical, so the statement is True.`,
       `**E.** → False
@@ -2171,11 +2738,10 @@ The evaluation at $x=1$ already produced
 $$P'(1)=\\dfrac{19}{4}$$
 
 Since $\\dfrac{15}{2}=\\dfrac{30}{4}\\neq\\dfrac{19}{4}$, the claimed value is wrong — it looks like a misread of the leading numerator coefficient $15$. The named evaluation already serves as a counter-example. Holding both formulas in view makes the failure obvious. The derived expression and the asserted one disagree at a checkable place. That mismatch alone is enough to reject the letter. Comparing that with the claim, the statement is False.`
-    ],
+    ]
     difficulty_level: "4/5",
     sort_order: 30,
-    solution_overview:
-      `The productivity index is the product of a square and a nested square root:
+    solution_overview: `The productivity index is the product of a square and a nested square root:
 
 $$P(x)=x^{2}\\cdot\\sqrt{3x+1}\\qquad(x>0)$$
 
@@ -2204,7 +2770,7 @@ Reuse this derivative setup for every letter: simplify first, evaluate at named 
       "$K'(1)=\\dfrac{29}{25}$.",
       "$K'\\left(\\dfrac{1}{2}\\right)=0$.",
       "$K'(1)=\\dfrac{7}{5}$.",
-    ],
+    ]
     answer_key: [true, true, true, true, false],
     tactical_explanations: [
       `**A.** → True
@@ -2218,14 +2784,30 @@ which is exactly the unsimplified form named in the claim. The factor $6$ comes 
 
 Factor $(2x-1)^{2}$ from the numerator and simplify the remaining linear factor:
 
-$$K'(x)=\\dfrac{(2x-1)^{2}\\bigl(6(x+4)-(2x-1)\\bigr)}{(x+4)^{2}}=\\dfrac{(2x-1)^{2}(4x+25)}{(x+4)^{2}}$$
+$$
+K'(x) = \\dfrac{(2x-1)^{2}\\bigl(6(x+4)-(2x-1)\\bigr)}{(x+4)^{2}}
+$$
+
+$$
+K'(x) = \\dfrac{(2x-1)^{2}(4x+25)}{(x+4)^{2}}
+$$
 
 since $6x+24-2x+1=4x+25$. Matching the claimed factored form, the statement is True. The stem's formula is enough; no outside identity is required for the check. Substituting only after the general expression is finished avoids mixing height with slope. Coefficient and sign agreement with the claim is what decides the letter, so the statement is True.`,
       `**C.** → True
 
 Substitute $x=1$ into the factored derivative:
 
-$$K'(1)=\\dfrac{(2-1)^{2}(4+25)}{(1+4)^{2}}=\\dfrac{1\\cdot 29}{25}=\\dfrac{29}{25}$$
+$$
+K'(1) = \\dfrac{(2-1)^{2}(4+25)}{(1+4)^{2}}
+$$
+
+$$
+K'(1) = \\dfrac{1\\cdot 29}{25}
+$$
+
+$$
+K'(1) = \\dfrac{29}{25}
+$$
 
 The computed value matches the claim. Substituting only after the general expression is finished avoids mixing height with slope. Coefficient and sign agreement with the claim is what decides the letter. The same checklist — differentiate, simplify, evaluate — settles the assertion. Writing every intermediate line keeps the comparison with the claim mechanical, so the statement is True.`,
       `**D.** → True
@@ -2242,11 +2824,10 @@ The evaluation at $x=1$ already produced
 $$K'(1)=\\dfrac{29}{25}$$
 
 Since $\\dfrac{7}{5}=\\dfrac{35}{25}\\neq\\dfrac{29}{25}$, the claimed value is wrong. A trap is misreading $4+25=29$ as $4+31$ or similar. Holding both formulas in view makes the failure obvious. The derived expression and the asserted one disagree at a checkable place. That mismatch alone is enough to reject the letter. Rephrasing the claim cannot repair an algebraic contradiction. Comparing that with the claim, the statement is False.`
-    ],
+    ]
     difficulty_level: "5/5",
     sort_order: 31,
-    solution_overview:
-      `The intensity ratio is the cubed-over-linear quotient
+    solution_overview: `The intensity ratio is the cubed-over-linear quotient
 
 $$K(x)=\\dfrac{(2x-1)^{3}}{x+4}\\qquad(x>0)$$
 
@@ -2275,49 +2856,86 @@ Reuse this derivative setup for every letter: simplify first, evaluate at named 
       "$L''(x)=\\dfrac{18-2x^{2}}{(x^{2}+9)^{2}}$.",
       "$L''(0)=\\dfrac{2}{9}$.",
       "$L'(0)=1$.",
-    ],
+    ]
     answer_key: [true, true, true, true, false],
     tactical_explanations: [
       `**A.** → True
 
 Differentiate the composition $L(x)=\\ln(x^{2}+9)$ with the chain rule: the outer logarithm contributes $\\dfrac{1}{x^{2}+9}$ and the inner quadratic contributes $2x$,
 
-$$L'(x)=\\dfrac{1}{x^{2}+9}\\cdot 2x=\\dfrac{2x}{x^{2}+9}$$
+$$
+L'(x) = \\dfrac{1}{x^{2}+9}\\cdot 2x
+$$
+
+$$
+L'(x) = \\dfrac{2x}{x^{2}+9}
+$$
 
 matching the claimed first derivative. The stem's formula is enough; no outside identity is required for the check. Substituting only after the general expression is finished avoids mixing height with slope. Coefficient and sign agreement with the claim is what decides the letter, so the statement is True.`,
       `**B.** → True
 
 Substitute $x=3$ into the first derivative:
 
-$$L'(3)=\\dfrac{2\\cdot 3}{9+9}=\\dfrac{6}{18}=\\dfrac{1}{3}$$
+$$
+L'(3) = \\dfrac{2\\cdot 3}{9+9}
+$$
+
+$$
+L'(3) = \\dfrac{6}{18}
+$$
+
+$$
+L'(3) = \\dfrac{1}{3}
+$$
 
 The computed value matches the claim. Substituting only after the general expression is finished avoids mixing height with slope. Coefficient and sign agreement with the claim is what decides the letter. The same checklist — differentiate, simplify, evaluate — settles the assertion. Writing every intermediate line keeps the comparison with the claim mechanical, so the statement is True.`,
       `**C.** → True
 
 Differentiate $L'(x)=\\dfrac{2x}{x^{2}+9}$ with the quotient rule:
 
-$$L''(x)=\\dfrac{2(x^{2}+9)-2x\\cdot 2x}{(x^{2}+9)^{2}}=\\dfrac{18-2x^{2}}{(x^{2}+9)^{2}}$$
+$$
+L''(x) = \\dfrac{2(x^{2}+9)-2x\\cdot 2x}{(x^{2}+9)^{2}}
+$$
+
+$$
+L''(x) = \\dfrac{18-2x^{2}}{(x^{2}+9)^{2}}
+$$
 
 matching the claimed second derivative. The numerator $2x^{2}+18-4x^{2}=18-2x^{2}$ is the key. Coefficient and sign agreement with the claim is what decides the letter. The same checklist — differentiate, simplify, evaluate — settles the assertion. Writing every intermediate line keeps the comparison with the claim mechanical, so the statement is True.`,
       `**D.** → True
 
 Substitute $x=0$ into the second derivative:
 
-$$L''(0)=\\dfrac{18}{9^{2}}=\\dfrac{18}{81}=\\dfrac{2}{9}$$
+$$
+L''(0) = \\dfrac{18}{9^{2}}
+$$
+
+$$
+L''(0) = \\dfrac{18}{81}
+$$
+
+$$
+L''(0) = \\dfrac{2}{9}
+$$
 
 The computed value matches the claim. Reduce $\\dfrac{18}{81}$ by dividing by $9$. The same checklist — differentiate, simplify, evaluate — settles the assertion. Writing every intermediate line keeps the comparison with the claim mechanical. The stem's formula is enough; no outside identity is required for the check. Substituting only after the general expression is finished avoids mixing height with slope, so the statement is True.`,
       `**E.** → False
 
 Substitute $x=0$ into the first derivative:
 
-$$L'(0)=\\dfrac{0}{9}=0$$
+$$
+L'(0) = \\dfrac{0}{9}
+$$
+
+$$
+L'(0) = 0
+$$
 
 which is not equal to $1$. The odd factor $2x$ vanishes at the origin, so the slope is zero there. The claim's value is incorrect. The derived expression and the asserted one disagree at a checkable place. That mismatch alone is enough to reject the letter. Rephrasing the claim cannot repair an algebraic contradiction. The named evaluation already serves as a counter-example. Comparing that with the claim, the statement is False.`
-    ],
+    ]
     difficulty_level: "5/5",
     sort_order: 32,
-    solution_overview:
-      `The saturation index is the natural logarithm of a quadratic argument:
+    solution_overview: `The saturation index is the natural logarithm of a quadratic argument:
 
 $$L(x)=\\ln(x^{2}+9)$$
 
@@ -2346,49 +2964,78 @@ Reuse this derivative setup for every letter: simplify first, evaluate at named 
       "$M''(x)=\\dfrac{6x^{2}+3}{\\sqrt{x^{2}+1}}$.",
       "$M''(0)=3$.",
       "$M'(1)=3$.",
-    ],
+    ]
     answer_key: [true, true, true, true, false],
     tactical_explanations: [
       `**A.** → True
 
 Differentiate $M(x)=(x^{2}+1)^{\\frac{3}{2}}$ with the chain rule, multiplying by the inner slope $2x$:
 
-$$M'(x)=\\dfrac{3}{2}(x^{2}+1)^{\\frac{1}{2}}\\cdot 2x=3x\\sqrt{x^{2}+1}$$
+$$
+M'(x) = \\dfrac{3}{2}(x^{2}+1)^{\\frac{1}{2}}\\cdot 2x
+$$
+
+$$
+M'(x) = 3x\\sqrt{x^{2}+1}
+$$
 
 matching the claimed first derivative. The factors $\\tfrac{3}{2}$ and $2$ cancel cleanly. Substituting only after the general expression is finished avoids mixing height with slope. Coefficient and sign agreement with the claim is what decides the letter. The same checklist — differentiate, simplify, evaluate — settles the assertion, so the statement is True.`,
       `**B.** → True
 
 The first derivative carries an explicit factor of $x$:
 
-$$M'(0)=3\\cdot 0\\cdot\\sqrt{1}=0$$
+$$
+M'(0) = 3\\cdot 0\\cdot\\sqrt{1}
+$$
+
+$$
+M'(0) = 0
+$$
 
 so the derivative vanishes at the origin, matching the claim. Coefficient and sign agreement with the claim is what decides the letter. The same checklist — differentiate, simplify, evaluate — settles the assertion. Writing every intermediate line keeps the comparison with the claim mechanical. The stem's formula is enough; no outside identity is required for the check, so the statement is True.`,
       `**C.** → True
 
 Differentiate $M'(x)=3x(x^{2}+1)^{\\frac{1}{2}}$ with the product rule and clear the common root:
 
-$$M''(x)=3\\sqrt{x^{2}+1}+3x\\cdot\\dfrac{x}{\\sqrt{x^{2}+1}}=\\dfrac{6x^{2}+3}{\\sqrt{x^{2}+1}}$$
+$$
+M''(x) = 3\\sqrt{x^{2}+1}+3x\\cdot\\dfrac{x}{\\sqrt{x^{2}+1}}
+$$
+
+$$
+M''(x) = \\dfrac{6x^{2}+3}{\\sqrt{x^{2}+1}}
+$$
 
 matching the claimed second derivative. The same checklist — differentiate, simplify, evaluate — settles the assertion. Writing every intermediate line keeps the comparison with the claim mechanical. The stem's formula is enough; no outside identity is required for the check, so the statement is True.`,
       `**D.** → True
 
 Substitute $x=0$ into the second derivative:
 
-$$M''(0)=\\dfrac{3}{\\sqrt{1}}=3$$
+$$
+M''(0) = \\dfrac{3}{\\sqrt{1}}
+$$
+
+$$
+M''(0) = 3
+$$
 
 The computed value matches the claim. At the origin only the constant numerator term $3$ survives. Writing every intermediate line keeps the comparison with the claim mechanical. The stem's formula is enough; no outside identity is required for the check. Substituting only after the general expression is finished avoids mixing height with slope. Coefficient and sign agreement with the claim is what decides the letter, so the statement is True.`,
       `**E.** → False
 
 Substitute $x=1$ into the first derivative:
 
-$$M'(1)=3\\cdot 1\\cdot\\sqrt{2}=3\\sqrt{2}$$
+$$
+M'(1) = 3\\cdot 1\\cdot\\sqrt{2}
+$$
+
+$$
+M'(1) = 3\\sqrt{2}
+$$
 
 which is not the bare value $3$. The claim drops the square-root factor $\\sqrt{2}$. That mismatch alone is enough to reject the letter. Rephrasing the claim cannot repair an algebraic contradiction. The named evaluation already serves as a counter-example. Holding both formulas in view makes the failure obvious. The derived expression and the asserted one disagree at a checkable place. Comparing that with the claim, the statement is False.`
-    ],
+    ]
     difficulty_level: "5/5",
     sort_order: 33,
-    solution_overview:
-      `The growth score is the nested three-halves power of a quadratic:
+    solution_overview: `The growth score is the nested three-halves power of a quadratic:
 
 $$M(x)=(x^{2}+1)^{\\frac{3}{2}}$$
 
@@ -2417,49 +3064,78 @@ Reuse this derivative setup for every letter: simplify first, evaluate at named 
       "$F''(x)=e^{3x}\\cdot(9x^{2}+12x+11)$.",
       "$F''(0)=11$.",
       "$F'(0)=1$.",
-    ],
+    ]
     answer_key: [true, true, true, true, false],
     tactical_explanations: [
       `**A.** → True
 
 The momentum index is the product $F(x)=e^{3x}(x^{2}+1)$. Apply the product rule and factor $e^{3x}$:
 
-$$F'(x)=3e^{3x}(x^{2}+1)+e^{3x}\\cdot 2x=e^{3x}(3x^{2}+2x+3)$$
+$$
+F'(x) = 3e^{3x}(x^{2}+1)+e^{3x}\\cdot 2x
+$$
+
+$$
+F'(x) = e^{3x}(3x^{2}+2x+3)
+$$
 
 matching the claimed formula. The chain-rule factor $3$ on the exponential is essential. Coefficient and sign agreement with the claim is what decides the letter. The same checklist — differentiate, simplify, evaluate — settles the assertion. Writing every intermediate line keeps the comparison with the claim mechanical, so the statement is True.`,
       `**B.** → True
 
 Substitute $x=0$ into the first derivative:
 
-$$F'(0)=e^{0}(0+0+3)=3$$
+$$
+F'(0) = e^{0}(0+0+3)
+$$
+
+$$
+F'(0) = 3
+$$
 
 The computed value matches the claim. At the origin only the constant term $3$ of the polynomial factor survives. The same checklist — differentiate, simplify, evaluate — settles the assertion. Writing every intermediate line keeps the comparison with the claim mechanical. The stem's formula is enough; no outside identity is required for the check. Substituting only after the general expression is finished avoids mixing height with slope, so the statement is True.`,
       `**C.** → True
 
 Differentiate $F'(x)=e^{3x}(3x^{2}+2x+3)$ again and factor $e^{3x}$. The product rule produces
 
-$$F''(x)=3e^{3x}(3x^{2}+2x+3)+e^{3x}(6x+2)=e^{3x}(9x^{2}+12x+11)$$
+$$
+F''(x) = 3e^{3x}(3x^{2}+2x+3)+e^{3x}(6x+2)
+$$
+
+$$
+F''(x) = e^{3x}(9x^{2}+12x+11)
+$$
 
 matching the claimed second derivative. Writing every intermediate line keeps the comparison with the claim mechanical. The stem's formula is enough; no outside identity is required for the check. Substituting only after the general expression is finished avoids mixing height with slope, so the statement is True.`,
       `**D.** → True
 
 Substitute $x=0$ into the second derivative:
 
-$$F''(0)=e^{0}\\cdot 11=11$$
+$$
+F''(0) = e^{0}\\cdot 11
+$$
+
+$$
+F''(0) = 11
+$$
 
 The computed value matches the claim. The stem's formula is enough; no outside identity is required for the check. Substituting only after the general expression is finished avoids mixing height with slope. Coefficient and sign agreement with the claim is what decides the letter. The same checklist — differentiate, simplify, evaluate — settles the assertion. Writing every intermediate line keeps the comparison with the claim mechanical, so the statement is True.`,
       `**E.** → False
 
 The evaluation at $x=0$ already produced
 
-$$F'(0)=e^{0}(0+0+3)=3$$
+$$
+F'(0) = e^{0}(0+0+3)
+$$
+
+$$
+F'(0) = 3
+$$
 
 which is not equal to $1$. Confusing $F'(0)$ with $e^{0}=1$ drops the polynomial factor. The claim's value is incorrect. Rephrasing the claim cannot repair an algebraic contradiction. The named evaluation already serves as a counter-example. Holding both formulas in view makes the failure obvious. The derived expression and the asserted one disagree at a checkable place. That mismatch alone is enough to reject the letter. Comparing that with the claim, the statement is False.`
-    ],
+    ]
     difficulty_level: "5/5",
     sort_order: 34,
-    solution_overview:
-      `The momentum index is the product of an exponential growth factor and a quadratic:
+    solution_overview: `The momentum index is the product of an exponential growth factor and a quadratic:
 
 $$F(x)=e^{3x}\\cdot(x^{2}+1)$$
 
@@ -2486,7 +3162,7 @@ and therefore $F''(0)=11$. The constant term $3$ in $F'$ comes from $3\\cdot 1$ 
       "$H(x)=(2x+1)^{\\frac{1}{2}}(x+5)^{-\\frac{1}{2}}$.",
       "$H'(x)<0$ for every $x>0$.",
       "$H'(2)=\\dfrac{9}{70}$.",
-    ],
+    ]
     answer_key: [true, true, true, false, false],
     tactical_explanations: [
       `**A.** → True
@@ -2507,7 +3183,13 @@ exactly the value named in the claim. Leave the irrational factors unexpanded �
 
 Converting the square root of a quotient into a product of powers gives
 
-$$H(x)=\\sqrt{\\dfrac{2x+1}{x+5}}=(2x+1)^{\\frac{1}{2}}(x+5)^{-\\frac{1}{2}}$$
+$$
+H(x) = \\sqrt{\\dfrac{2x+1}{x+5}}
+$$
+
+$$
+H(x) = (2x+1)^{\\frac{1}{2}}(x+5)^{-\\frac{1}{2}}
+$$
 
 which is exactly the rewriting named in the claim. That form sets up the product rule. The stem's formula is enough; no outside identity is required for the check. Substituting only after the general expression is finished avoids mixing height with slope. Coefficient and sign agreement with the claim is what decides the letter, so the statement is True.`,
       `**D.** → False
@@ -2524,11 +3206,10 @@ The exact value at $x=2$ is
 $$H'(2)=\\dfrac{9}{2\\sqrt{5}\\cdot 7^{\\frac{3}{2}}}$$
 
 which is not equal to the simplified fraction $\\dfrac{9}{70}$. That false reduction pretends $\\sqrt{5}\\cdot 7^{\\frac{3}{2}}=35$, which is wrong. The claim's numerical reduction is incorrect. The named evaluation already serves as a counter-example. Holding both formulas in view makes the failure obvious. The derived expression and the asserted one disagree at a checkable place. Comparing that with the claim, the statement is False.`
-    ],
+    ]
     difficulty_level: "5/5",
     sort_order: 35,
-    solution_overview:
-      `Rewrite the balance index as a product of powers:
+    solution_overview: `Rewrite the balance index as a product of powers:
 
 $$H(x)=\\sqrt{\\dfrac{2x+1}{x+5}}=(2x+1)^{\\frac{1}{2}}(x+5)^{-\\frac{1}{2}}$$
 
@@ -2555,7 +3236,7 @@ which is not equal to the simplified fraction $\\dfrac{9}{70}$ — that false re
       "$N'(2)=\\dfrac{1}{4\\sqrt{2}}$.",
       "$N'(x)$ changes sign at $x=0$.",
       "$N'(1)=\\dfrac{4}{5^{\\frac{3}{2}}}$.",
-    ],
+    ]
     answer_key: [true, true, true, false, true],
     tactical_explanations: [
       `**A.** → True
@@ -2569,18 +3250,44 @@ matching the claimed formula. Writing every intermediate line keeps the comparis
 
 Substitute $x=0$, using $4^{\\frac{3}{2}}=8$:
 
-$$N'(0)=\\dfrac{4}{8}=\\dfrac{1}{2}$$
+$$
+N'(0) = \\dfrac{4}{8}
+$$
+
+$$
+N'(0) = \\dfrac{1}{2}
+$$
 
 The computed value matches the claim. The stem's formula is enough; no outside identity is required for the check. Substituting only after the general expression is finished avoids mixing height with slope. Coefficient and sign agreement with the claim is what decides the letter. The same checklist — differentiate, simplify, evaluate — settles the assertion. Writing every intermediate line keeps the comparison with the claim mechanical, so the statement is True.`,
       `**C.** → True
 
 Substitute $x=2$ into the simplified derivative. First $x^{2}+4=8$ and
 
-$$8^{\\frac{3}{2}}=(\\sqrt{8})^{3}=(2\\sqrt{2})^{3}=8\\cdot 2\\sqrt{2}=16\\sqrt{2}$$
+$$
+8^{\\frac{3}{2}} = (\\sqrt{8})^{3}
+$$
+
+$$
+(\\sqrt{8})^{3} = (2\\sqrt{2})^{3}
+$$
+
+$$
+(2\\sqrt{2})^{3} = 8\\cdot 2\\sqrt{2}
+$$
+
+$$
+8\\cdot 2\\sqrt{2} = 16\\sqrt{2}
+$$
 
 so
 
-$$N'(2)=\\dfrac{4}{16\\sqrt{2}}=\\dfrac{1}{4\\sqrt{2}}$$
+$$
+N'(2) = \\dfrac{4}{16\\sqrt{2}}
+$$
+
+$$
+N'(2) = \\dfrac{1}{4\\sqrt{2}}
+$$
 
 The computed value matches the claim. Substituting only after the general expression is finished avoids mixing height with slope. Coefficient and sign agreement with the claim is what decides the letter. The same checklist — differentiate, simplify, evaluate — settles the assertion, so the statement is True.`,
       `**D.** → False
@@ -2597,11 +3304,10 @@ Substitute $x=1$, using $1+4=5$:
 $$N'(1)=\\dfrac{4}{5^{\\frac{3}{2}}}$$
 
 exactly as claimed. Leaving $5^{\\frac{3}{2}}$ unexpanded is the exact form. The same checklist — differentiate, simplify, evaluate — settles the assertion. Writing every intermediate line keeps the comparison with the claim mechanical. The stem's formula is enough; no outside identity is required for the check. Substituting only after the general expression is finished avoids mixing height with slope, so the statement is True.`
-    ],
+    ]
     difficulty_level: "5/5",
     sort_order: 36,
-    solution_overview:
-      `The normalised score is the linear-over-root quotient
+    solution_overview: `The normalised score is the linear-over-root quotient
 
 $$N(x)=\\dfrac{x}{\\sqrt{x^{2}+4}}$$
 
@@ -2630,7 +3336,7 @@ Reuse this derivative setup for every letter: simplify first, evaluate at named 
       "$C''(2)=0$.",
       "$C''(1)>0$.",
       "$C'(2)=8$.",
-    ],
+    ]
     answer_key: [true, true, true, false, true],
     tactical_explanations: [
       `**A.** → True
@@ -2651,28 +3357,49 @@ matching the claimed second derivative. This measures how fast marginal cost its
 
 Substitute $q=2$ into the second derivative:
 
-$$C''(2)=12-12=0$$
+$$
+C''(2) = 12-12
+$$
+
+$$
+C''(2) = 0
+$$
 
 so the second derivative vanishes there, matching the claim. That is the natural inflection candidate of the cubic. Coefficient and sign agreement with the claim is what decides the letter. The same checklist — differentiate, simplify, evaluate — settles the assertion. Writing every intermediate line keeps the comparison with the claim mechanical. The stem's formula is enough; no outside identity is required for the check, so the statement is True.`,
       `**D.** → False
 
 Evaluate the second derivative at $q=1$:
 
-$$C''(1)=6-12=-6<0$$
+$$
+C''(1) = 6-12
+$$
+
+$$
+C''(1) = -6<0
+$$
 
 so the inequality $C''(1)>0$ fails. Just left of $q=2$ the cost curve is still concave down. Holding both formulas in view makes the failure obvious. The derived expression and the asserted one disagree at a checkable place. That mismatch alone is enough to reject the letter. Rephrasing the claim cannot repair an algebraic contradiction. The named evaluation already serves as a counter-example. Comparing that with the claim, the statement is False.`,
       `**E.** → True
 
 Substitute $q=2$ into the first derivative:
 
-$$C'(2)=3\\cdot 4-12\\cdot 2+20=12-24+20=8$$
+$$
+C'(2) = 3\\cdot 4-12\\cdot 2+20
+$$
+
+$$
+C'(2) = 12-24+20
+$$
+
+$$
+C'(2) = 8
+$$
 
 The computed value matches the claim. Marginal cost is still positive at the inflection candidate. Writing every intermediate line keeps the comparison with the claim mechanical. The stem's formula is enough; no outside identity is required for the check. Substituting only after the general expression is finished avoids mixing height with slope. Coefficient and sign agreement with the claim is what decides the letter, so the statement is True.`
-    ],
+    ]
     difficulty_level: "3/5",
     sort_order: 37,
-    solution_overview:
-      `Total cost is the cubic schedule
+    solution_overview: `Total cost is the cubic schedule
 
 $$C(q)=q^{3}-6q^{2}+20q+50$$
 
@@ -2701,7 +3428,7 @@ Reuse this derivative setup for every letter: simplify first, evaluate at named 
       "$W'\\left(\\dfrac{9}{10}\\right)=0$.",
       "$W'(0)=-81$.",
       "$W'(x)=4(2x+1)(x-3)^{3}$ alone.",
-    ],
+    ]
     answer_key: [true, true, true, true, false],
     tactical_explanations: [
       `**A.** → True
@@ -2729,7 +3456,17 @@ as well, matching the claim. That is a second root of the factored derivative. T
 
 Substitute $x=0$ into the factored derivative:
 
-$$W'(0)=(1)(-3)^{2}(-9)=1\\cdot 9\\cdot(-9)=-81$$
+$$
+W'(0) = (1)(-3)^{2}(-9)
+$$
+
+$$
+W'(0) = 1\\cdot 9\\cdot(-9)
+$$
+
+$$
+W'(0) = -81
+$$
 
 The computed value matches the claim. Watch the sign from $10\\cdot 0-9=-9$. Writing every intermediate line keeps the comparison with the claim mechanical. The stem's formula is enough; no outside identity is required for the check. Substituting only after the general expression is finished avoids mixing height with slope. Coefficient and sign agreement with the claim is what decides the letter, so the statement is True.`,
       `**E.** → False
@@ -2739,11 +3476,10 @@ Differentiating only the first factor as if the second were constant would produ
 $$4(2x+1)(x-3)^{3}$$
 
 which misses the contribution from differentiating $(x-3)^{3}$. That incomplete expression is not $W'$. That mismatch alone is enough to reject the letter. Rephrasing the claim cannot repair an algebraic contradiction. The named evaluation already serves as a counter-example. Holding both formulas in view makes the failure obvious. The derived expression and the asserted one disagree at a checkable place. Comparing that with the claim, the statement is False.`
-    ],
+    ]
     difficulty_level: "5/5",
     sort_order: 38,
-    solution_overview:
-      `The warranty score is the product of two nested powers
+    solution_overview: `The warranty score is the product of two nested powers
 
 $$W(x)=(2x+1)^{2}(x-3)^{3}$$
 
@@ -2772,21 +3508,37 @@ Reuse this derivative setup for every letter: simplify first, evaluate at named 
       "$V''(x)=-\\dfrac{5(6x+7)}{(3x+1)^{2}(x+2)^{2}}$.",
       "$V'(1)=\\dfrac{5}{12}$.",
       "$V'(x)=0$ for some $x>0$.",
-    ],
+    ]
     answer_key: [true, true, true, true, false],
     tactical_explanations: [
       `**A.** → True
 
 Rewrite $V(x)=\\ln(3x+1)-\\ln(x+2)$ and differentiate. Combining over one denominator,
 
-$$V'(x)=\\dfrac{3}{3x+1}-\\dfrac{1}{x+2}=\\dfrac{3(x+2)-(3x+1)}{(3x+1)(x+2)}=\\dfrac{5}{(3x+1)(x+2)}$$
+$$
+V'(x) = \\dfrac{3}{3x+1}-\\dfrac{1}{x+2}
+$$
+
+$$
+V'(x) = \\dfrac{3(x+2)-(3x+1)}{(3x+1)(x+2)}
+$$
+
+$$
+V'(x) = \\dfrac{5}{(3x+1)(x+2)}
+$$
 
 matching the claimed first derivative. Coefficient and sign agreement with the claim is what decides the letter. The same checklist — differentiate, simplify, evaluate — settles the assertion. Writing every intermediate line keeps the comparison with the claim mechanical, so the statement is True.`,
       `**B.** → True
 
 Extending the formula to $x=0$ gives
 
-$$V'(0)=\\dfrac{5}{1\\cdot 2}=\\dfrac{5}{2}$$
+$$
+V'(0) = \\dfrac{5}{1\\cdot 2}
+$$
+
+$$
+V'(0) = \\dfrac{5}{2}
+$$
 
 matching the claim. At $x=0$ both linear factors are positive, so the derivative is defined. The same checklist — differentiate, simplify, evaluate — settles the assertion. Writing every intermediate line keeps the comparison with the claim mechanical. The stem's formula is enough; no outside identity is required for the check. Substituting only after the general expression is finished avoids mixing height with slope, so the statement is True.`,
       `**C.** → True
@@ -2800,7 +3552,17 @@ matching the claimed second derivative. The factor $6x+7$ comes from the product
 
 Substitute $x=1$ into the first derivative:
 
-$$V'(1)=\\dfrac{5}{(3+1)(1+2)}=\\dfrac{5}{4\\cdot 3}=\\dfrac{5}{12}$$
+$$
+V'(1) = \\dfrac{5}{(3+1)(1+2)}
+$$
+
+$$
+V'(1) = \\dfrac{5}{4\\cdot 3}
+$$
+
+$$
+V'(1) = \\dfrac{5}{12}
+$$
 
 The computed value matches the claim. The stem's formula is enough; no outside identity is required for the check. Substituting only after the general expression is finished avoids mixing height with slope. Coefficient and sign agreement with the claim is what decides the letter. The same checklist — differentiate, simplify, evaluate — settles the assertion, so the statement is True.`,
       `**E.** → False
@@ -2810,11 +3572,10 @@ For every $x>0$ the numerator $5$ is positive and both linear factors in the den
 $$V'(x)=\\dfrac{5}{(3x+1)(x+2)}>0$$
 
 and never hits zero. There is therefore no such root on $x>0$, and the statement is False. Rephrasing the claim cannot repair an algebraic contradiction. The named evaluation already serves as a counter-example. Holding both formulas in view makes the failure obvious. The derived expression and the asserted one disagree at a checkable place. Comparing that with the claim, the statement is False.`
-    ],
+    ]
     difficulty_level: "5/5",
     sort_order: 39,
-    solution_overview:
-      `Split the relative score as a difference of logarithms:
+    solution_overview: `Split the relative score as a difference of logarithms:
 
 $$V(x)=\\ln\\!\\left(\\dfrac{3x+1}{x+2}\\right)=\\ln(3x+1)-\\ln(x+2)$$
 
@@ -2845,14 +3606,20 @@ The numerator $5$ of $V'$ never hits zero, so there is no critical point for $x>
       "$Z''(t)=2\\ln(2t+1)+\\dfrac{4t}{2t+1}+\\dfrac{4t^{2}+4t}{(2t+1)^{2}}$.",
       "$Z'(1)=2\\ln 3+1$.",
       "$Z''(1)=2\\ln 3+\\dfrac{4}{3}+\\dfrac{8}{9}$.",
-    ],
+    ]
     answer_key: [true, true, true, false, true],
     tactical_explanations: [
       `**A.** → True
 
 The engagement score is the product $Z(t)=t^{2}\\ln(2t+1)$. Apply the product rule, multiplying the logarithm's derivative by the inner slope $2$:
 
-$$Z'(t)=2t\\cdot\\ln(2t+1)+t^{2}\\cdot\\dfrac{2}{2t+1}=2t\\cdot\\ln(2t+1)+\\dfrac{2t^{2}}{2t+1}$$
+$$
+Z'(t) = 2t\\cdot\\ln(2t+1)+t^{2}\\cdot\\dfrac{2}{2t+1}
+$$
+
+$$
+Z'(t) = 2t\\cdot\\ln(2t+1)+\\dfrac{2t^{2}}{2t+1}
+$$
 
 matching the claimed formula. The same checklist — differentiate, simplify, evaluate — settles the assertion. Writing every intermediate line keeps the comparison with the claim mechanical. The stem's formula is enough; no outside identity is required for the check, so the statement is True.`,
       `**B.** → True
@@ -2880,14 +3647,19 @@ Replacing the second summand by $1$ produces the different number $2\\ln 3+1$. T
 
 Substitute $t=1$ into the second-derivative formula:
 
-$$Z''(1)=2\\ln 3+\\dfrac{4}{3}+\\dfrac{4+4}{9}=2\\ln 3+\\dfrac{4}{3}+\\dfrac{8}{9}$$
+$$
+Z''(1) = 2\\ln 3+\\dfrac{4}{3}+\\dfrac{4+4}{9}
+$$
+
+$$
+Z''(1) = 2\\ln 3+\\dfrac{4}{3}+\\dfrac{8}{9}
+$$
 
 exactly as claimed. The last numerator is $4(1)^{2}+4(1)=8$. Coefficient and sign agreement with the claim is what decides the letter. The same checklist — differentiate, simplify, evaluate — settles the assertion. Writing every intermediate line keeps the comparison with the claim mechanical. The stem's formula is enough; no outside identity is required for the check, so the statement is True.`
-    ],
+    ]
     difficulty_level: "5/5",
     sort_order: 40,
-    solution_overview:
-      `The engagement score is the square-log product
+    solution_overview: `The engagement score is the square-log product
 
 $$Z(t)=t^{2}\\cdot\\ln(2t+1)\\qquad(t>0)$$
 
@@ -2920,7 +3692,7 @@ Reuse this derivative setup for every letter: simplify first, evaluate at named 
       "Marginal cost at a named output is the slope of the total-cost curve at that output.",
       "If $C'(120)=0.80$, then near $120$ loaves each extra loaf adds about $0.80$ euros to total cost.",
       "Because average cost already divides by $Q$, its value $A(120)$ is automatically equal to marginal cost at $120$.",
-    ],
+    ]
     answer_key: [true, false, true, true, false],
     tactical_explanations: [
       `**A.** → True
@@ -2972,11 +3744,10 @@ The two coincide only at special outputs (for instance where average cost is min
 Only where average cost is minimized does $A^{\\prime}=0$ force $C^{\\prime}=A$; away from that point the average and the marginal routinely disagree.
 
 Matching the claim against that reasoning confirms the verdict is False once the right derivative (or the right expand-or-not comparison) is in view. So the statement is False.`
-    ],
+    ]
     difficulty_level: "2/5",
     sort_order: 41,
-    solution_overview:
-      `The bakery reports total weekly cost $C(Q)$ and average cost per loaf
+    solution_overview: `The bakery reports total weekly cost $C(Q)$ and average cost per loaf
 $$A(Q)=\\dfrac{C(Q)}{Q}.$$
 Management's question — the approximate extra cost of one more loaf — is answered by the derivative of total cost (marginal cost):
 $$C^{\\prime}(Q).$$
@@ -2997,7 +3768,7 @@ so with $\\Delta Q=1$ and $C^{\\prime}(120)=0.80$ one gets about $0.80$ euros of
       "A precise reading uses the linear approximation $C(50+\\Delta x)-C(50)\\approx 3\\cdot\\Delta x$ for small $\\Delta x$.",
       "Saying \"it costs about $3$ million more to remove $51\\%$ than $50\\%$\" is a rough one-unit reading of the same derivative.",
       "Because the units are millions of euros per percentage point, $C'(50)$ is a marginal cost with respect to the cleanup percentage.",
-    ],
+    ]
     answer_key: [true, false, true, true, true],
     tactical_explanations: [
       `**A.** → True
@@ -3049,11 +3820,10 @@ That is precisely a marginal cost with respect to the cleanup percentage
 Calling that rate a marginal cost simply names the economic role of $C^{\\prime}$ with respect to the cleanup percentage.
 
 Matching the claim against that reasoning confirms the verdict is True once the right derivative (or the right expand-or-not comparison) is in view. So the statement is True.`
-    ],
+    ]
     difficulty_level: "2/5",
     sort_order: 42,
-    solution_overview:
-      `Cleanup cost $C(x)$ is measured in millions of euros when $x\\%$ of the pollution is removed. Analysts report the derivative
+    solution_overview: `Cleanup cost $C(x)$ is measured in millions of euros when $x\\%$ of the pollution is removed. Analysts report the derivative
 $$C^{\\prime}(50)=3.$$
 That number is a rate — millions of euros per percentage point — not the stock $C(50)$. The linear approximation near a $50\\%$ cleanup is
 $$C(50+\\Delta x)-C(50)\\approx 3\\cdot\\Delta x$$
@@ -3072,7 +3842,7 @@ for small $\\Delta x$. Taking the convenient one-unit step $\\Delta x=1$ says it
       "Marginal revenue is $R'(Q)$, which generally differs from the posted price $p(Q)$.",
       "If the café wants the approximate change in profit from selling one more cup, it should look at $P'(Q)$.",
       "Because profit equals revenue minus cost, one always has $P'(Q)=R'(Q)-C'(Q)$.",
-    ],
+    ]
     answer_key: [true, false, true, true, true],
     tactical_explanations: [
       `**A.** → True
@@ -3124,11 +3894,10 @@ at every such output
 That is why the expand-or-not test can be written either as $P^{\\prime}>0$ or as $R^{\\prime}>C^{\\prime}$ — same identity.
 
 Matching the claim against that reasoning confirms the verdict is True once the right derivative (or the right expand-or-not comparison) is in view. So the statement is True.`
-    ],
+    ]
     difficulty_level: "3/5",
     sort_order: 43,
-    solution_overview:
-      `The café posts a downward-sloping price schedule $p(Q)$, forms revenue and profit by
+    solution_overview: `The café posts a downward-sloping price schedule $p(Q)$, forms revenue and profit by
 $$R(Q)=Q\\cdot p(Q),\\qquad P(Q)=R(Q)-C(Q),$$
 and keeps daily cost $C(Q)$ separate. The matching derivatives are
 $$R^{\\prime}(Q),\\qquad P^{\\prime}(Q)=R^{\\prime}(Q)-C^{\\prime}(Q).$$
@@ -3147,7 +3916,7 @@ Marginal profit is $P^{\\prime}$, not $p^{\\prime}$. Differentiating $p$ alone o
       "If $R'(Q)<C'(Q)$, a small increase in output raises profit.",
       "The equality $R'(Q)=C'(Q)$ is exactly the condition $P'(Q)=0$.",
       "The equality $R'(Q)=C'(Q)$ means that total revenue equals total cost.",
-    ],
+    ]
     answer_key: [true, true, false, true, false],
     tactical_explanations: [
       `**A.** → True
@@ -3185,7 +3954,13 @@ Matching the claim against that reasoning confirms the verdict is False once the
 
 Setting the profit derivative to zero is
 
-$$P^{\\prime}(Q)=R^{\\prime}(Q)-C^{\\prime}(Q)=0$$
+$$
+P^{\\prime}(Q) = R^{\\prime}(Q)-C^{\\prime}(Q)
+$$
+
+$$
+P^{\\prime}(Q) = 0
+$$
 
 which rearranges at once to $R^{\\prime}(Q)=C^{\\prime}(Q)$, and the equality of marginal revenue and marginal cost is exactly $P^{\\prime}(Q)=0$
 
@@ -3201,11 +3976,10 @@ Total revenue equals total cost only when $R(Q)=C(Q)$, which is a different cond
 A firm can have $R^{\\prime}=C^{\\prime}$ with $R>C$ (positive profit) or with $R<C$ (a loss); the slope condition is silent about break-even.
 
 Matching the claim against that reasoning confirms the verdict is False once the right derivative (or the right expand-or-not comparison) is in view. So the statement is False.`
-    ],
+    ]
     difficulty_level: "2/5",
     sort_order: 44,
-    solution_overview:
-      `Profit is the difference of revenue and cost,
+    solution_overview: `Profit is the difference of revenue and cost,
 $$P(Q)=R(Q)-C(Q),$$
 so its derivative factors as the marginal comparison
 $$P^{\\prime}(Q)=R^{\\prime}(Q)-C^{\\prime}(Q).$$
@@ -3226,14 +4000,20 @@ is exactly $P^{\\prime}(Q)=0$; it says nothing about whether the levels $R(Q)$ a
       "At $Q^{\\ast}$, total revenue need not equal total cost.",
       "The condition $P'(Q^{\\ast})=0$ alone does not tell whether profit is maximized or minimized.",
       "If $P'(Q^{\\ast})=0$ and $P$ changes from increasing to decreasing at $Q^{\\ast}$, then $Q^{\\ast}$ is a local profit maximum.",
-    ],
+    ]
     answer_key: [true, false, true, true, true],
     tactical_explanations: [
       `**A.** → True
 
 Zero marginal profit means
 
-$$P^{\\prime}(Q^{\\ast})=R^{\\prime}(Q^{\\ast})-C^{\\prime}(Q^{\\ast})=0$$
+$$
+P^{\\prime}(Q^{\\ast}) = R^{\\prime}(Q^{\\ast})-C^{\\prime}(Q^{\\ast})
+$$
+
+$$
+P^{\\prime}(Q^{\\ast}) = 0
+$$
 
 hence $R^{\\prime}(Q^{\\ast})=C^{\\prime}(Q^{\\ast})$: at $Q^{\\ast}$, marginal revenue equals marginal cost
 
@@ -3276,11 +4056,10 @@ That sign change marks a local profit maximum
 That $+\\to -$ pattern is the first-derivative test for a local max; together with $P^{\\prime}(Q^{\\ast})=0$ it settles the local classification.
 
 Matching the claim against that reasoning confirms the verdict is True once the right derivative (or the right expand-or-not comparison) is in view. So the statement is True.`
-    ],
+    ]
     difficulty_level: "3/5",
     sort_order: 45,
-    solution_overview:
-      `At the candidate output one is told only
+    solution_overview: `At the candidate output one is told only
 $$P^{\\prime}(Q^{\\ast})=0.$$
 Because $P^{\\prime}=R^{\\prime}-C^{\\prime}$, this first-order condition is exactly
 $$R^{\\prime}(Q^{\\ast})=C^{\\prime}(Q^{\\ast}).$$
@@ -3299,7 +4078,7 @@ It constrains the slope of profit, not the height: the stock $P(Q^{\\ast})$ may 
       "If $U'(x)<0$, a little extra leisure raises satisfaction near that $x$.",
       "The value $U(x)$ itself is already the marginal utility.",
       "The sign of $U'(x)$ answers whether satisfaction is locally increasing or decreasing in leisure.",
-    ],
+    ]
     answer_key: [true, true, false, false, true],
     tactical_explanations: [
       `**A.** → True
@@ -3343,11 +4122,10 @@ That is exactly whether satisfaction is locally increasing or decreasing in leis
 That is the same increase/decrease test used for cost, revenue, and profit — only the economic label on $U$ has changed.
 
 Matching the claim against that reasoning confirms the verdict is True once the right derivative (or the right expand-or-not comparison) is in view. So the statement is True.`
-    ],
+    ]
     difficulty_level: "2/5",
     sort_order: 46,
-    solution_overview:
-      `Satisfaction from $x$ hours of leisure is measured by a utility function $U(x)$. Marginal utility is the derivative
+    solution_overview: `Satisfaction from $x$ hours of leisure is measured by a utility function $U(x)$. Marginal utility is the derivative
 $$U^{\\prime}(x),$$
 not the stock $U(x)$ itself. The linear approximation
 $$U(x+\\Delta x)-U(x)\\approx U^{\\prime}(x)\\,\\Delta x$$
@@ -3366,7 +4144,7 @@ shows that the sign of $U^{\\prime}$ answers the local question: if $U^{\\prime}
       "Minimizing average cost is the same decision problem as setting marginal cost to zero.",
       "At an output that minimizes average cost (with $A(Q)$ differentiable and $Q>0$), one has $C'(Q)=A(Q)$.",
       "If average cost is falling, then necessarily $C'(Q)<0$.",
-    ],
+    ]
     answer_key: [true, false, false, true, false],
     tactical_explanations: [
       `**A.** → True
@@ -3400,7 +4178,13 @@ Matching the claim against that reasoning confirms the verdict is False once the
 
 Write $A(Q)=\\dfrac{C(Q)}{Q}$. At an interior minimum of $A$ one has $A^{\\prime}(Q)=0$, which expands to
 
-$$A^{\\prime}(Q)=\\dfrac{Q\\,C^{\\prime}(Q)-C(Q)}{Q^{2}}=0$$
+$$
+A^{\\prime}(Q) = \\dfrac{Q\\,C^{\\prime}(Q)-C(Q)}{Q^{2}}
+$$
+
+$$
+A^{\\prime}(Q) = 0
+$$
 
 hence $C^{\\prime}(Q)=\\dfrac{C(Q)}{Q}=A(Q)$ for $Q>0$
 
@@ -3416,11 +4200,10 @@ Marginal cost can still be positive while lying below the average; falling avera
 Example: $C^{\\prime}=5$ and $A=8$ gives $A^{\\prime}<0$ while cost is still rising in total; positivity of MC is compatible with falling AC.
 
 Matching the claim against that reasoning confirms the verdict is False once the right derivative (or the right expand-or-not comparison) is in view. So the statement is False.`
-    ],
+    ]
     difficulty_level: "2/5",
     sort_order: 47,
-    solution_overview:
-      `Average cost and marginal cost answer different questions. With total cost $C(Q)$ one forms
+    solution_overview: `Average cost and marginal cost answer different questions. With total cost $C(Q)$ one forms
 $$A(Q)=\\dfrac{C(Q)}{Q},\\qquad C^{\\prime}(Q)$$
 for $Q>0$. In general $A(Q)\\neq C^{\\prime}(Q)$. Differentiating the quotient by the product rule gives
 $$A^{\\prime}(Q)=\\dfrac{Q\\,C^{\\prime}(Q)-C(Q)}{Q^{2}}=\\dfrac{C^{\\prime}(Q)-A(Q)}{Q}.$$
@@ -3439,7 +4222,7 @@ So $A$ is falling precisely when $C^{\\prime}<A$, which can hold even while $C^{
       "The approximation $C(Q+1)-C(Q)\\approx C'(Q)$ is often serviceable, but it is still an approximation.",
       "If output falls by a small amount, the same derivative still governs the local cost change through $C(Q+\\Delta Q)-C(Q)\\approx C'(Q)\\Delta Q$ with $\\Delta Q<0$.",
       "Because textbooks mention $C(Q+1)-C(Q)$, the derivative $C'(Q)$ is unnecessary once that difference is known.",
-    ],
+    ]
     answer_key: [true, true, true, true, false],
     tactical_explanations: [
       `**A.** → True
@@ -3493,11 +4276,10 @@ Knowing $C(Q+1)-C(Q)$ does not make $C^{\\prime}(Q)$ unnecessary for finer or no
 Optimization conditions such as $R^{\\prime}=C^{\\prime}$ are stated with derivatives; a single one-unit difference cannot replace that language.
 
 Matching the claim against that reasoning confirms the verdict is False once the right derivative (or the right expand-or-not comparison) is in view. So the statement is False.`
-    ],
+    ]
     difficulty_level: "3/5",
     sort_order: 48,
-    solution_overview:
-      `Elementary texts often call the one-unit increment
+    solution_overview: `Elementary texts often call the one-unit increment
 $$C(Q+1)-C(Q)$$
 "marginal cost," but in this course marginal cost means the derivative $C^{\\prime}(Q)$. The precise link is the linear approximation
 $$C(Q+\\Delta Q)-C(Q)\\approx C^{\\prime}(Q)\\,\\Delta Q$$
@@ -3518,7 +4300,7 @@ which remains an approximation rather than an identity. The same formula governs
       "That price-pressure effect is one reason marginal revenue can lie below the current price.",
       "If demand did not depend on price at all, differentiating revenue would still ignore quantity.",
       "A claim that \"marginal revenue always equals price\" is generally false when price must fall to sell more.",
-    ],
+    ]
     answer_key: [true, true, true, false, true],
     tactical_explanations: [
       `**A.** → True
@@ -3566,11 +4348,10 @@ A blanket claim that marginal revenue always equals price is therefore false in 
 The true special case where MR equals price is the flat-price (perfectly elastic) schedule $p^{\\prime}=0$, not a general law.
 
 Matching the claim against that reasoning confirms the verdict is True once the right derivative (or the right expand-or-not comparison) is in view. So the statement is True.`
-    ],
+    ]
     difficulty_level: "3/5",
     sort_order: 49,
-    solution_overview:
-      `Revenue along an inverse demand $p=p(Q)$ is the product
+    solution_overview: `Revenue along an inverse demand $p=p(Q)$ is the product
 $$R(Q)=Q\\cdot p(Q).$$
 Marginal revenue is therefore the derivative $R^{\\prime}(Q)$, obtained by the product rule:
 $$R^{\\prime}(Q)=p(Q)+Q\\,p^{\\prime}(Q).$$
@@ -3591,7 +4372,7 @@ in general: selling one more unit tends to reduce the price earned on previous u
       "Revenue in this story is $R(Q)=40Q-Q^{2}$.",
       "Profit simplifies to $P(Q)=32Q-Q^{2}-20$.",
       "The correct marginal profit is $P'(Q)=32-2Q$.",
-    ],
+    ]
     answer_key: [true, true, true, true, true],
     tactical_explanations: [
       `**A.** → True
@@ -3657,11 +4438,10 @@ That is the correct marginal profit, not the consultant's $p^{\\prime}(Q)=-1$
 Setting $P^{\\prime}(Q)=0$ would give the candidate $Q=16$; the consultant's $p^{\\prime}=-1$ never even produces a critical point of profit.
 
 Matching the claim against that reasoning confirms the verdict is True once the right derivative (or the right expand-or-not comparison) is in view. So the statement is True.`
-    ],
+    ]
     difficulty_level: "3/5",
     sort_order: 50,
-    solution_overview:
-      `Inverse demand and cost are
+    solution_overview: `Inverse demand and cost are
 $$p(Q)=40-Q,\\qquad C(Q)=8Q+20.$$
 Revenue and profit are built from those formulas:
 $$R(Q)=Q\\cdot p(Q)=40Q-Q^{2},$$
@@ -3683,7 +4463,7 @@ By contrast, differentiating $p(Q)=40-Q$ alone yields only $p^{\\prime}(Q)=-1$, 
       "In general the marginal tax rate equals the average tax rate for every income $y>0$.",
       "If $T'(y)=0.3$, then near that income about $30$ cents of each extra euro is taxed away.",
       "Knowing only $\\dfrac{T(y)}{y}$ is enough to read the marginal tax rate at that same $y$.",
-    ],
+    ]
     answer_key: [true, true, false, true, false],
     tactical_explanations: [
       `**A.** → True
@@ -3731,11 +4511,10 @@ Many different tax schedules can share the same average at one $y$ while having 
 Recovering $T^{\\prime}(y)$ needs local information about how $T$ changes near $y$, not merely the single quotient $T(y)/y$.
 
 Matching the claim against that reasoning confirms the verdict is False once the right derivative (or the right expand-or-not comparison) is in view. So the statement is False.`
-    ],
+    ]
     difficulty_level: "2/5",
     sort_order: 51,
-    solution_overview:
-      `Income tax liability is $T(y)$. The marginal tax rate is the derivative
+    solution_overview: `Income tax liability is $T(y)$. The marginal tax rate is the derivative
 $$T^{\\prime}(y),$$
 while the average tax rate is the quotient
 $$\\dfrac{T(y)}{y}\\qquad(y>0).$$
@@ -3756,7 +4535,7 @@ means that $T^{\\prime}(y)=0.3$ taxes away about $30$ cents of each extra euro. 
       "The ratio $\\dfrac{S(Y)}{Y}$ is the same object as the marginal propensity to save.",
       "A constant saving rule $S(Y)=\\overline{S}+sY$ has marginal propensity to save equal to the coefficient $s$.",
       "To find how saving responds to a little more national product, one differentiates $S(Y)$, not the identity function $Y$.",
-    ],
+    ]
     answer_key: [true, true, false, true, true],
     tactical_explanations: [
       `**A.** → True
@@ -3810,11 +4589,10 @@ One therefore differentiates $S$, not the identity function $Y$
 Differentiating the identity map $Y$ would give $1$, which is not a propensity to save; the dependent variable must be $S$.
 
 Matching the claim against that reasoning confirms the verdict is True once the right derivative (or the right expand-or-not comparison) is in view. So the statement is True.`
-    ],
+    ]
     difficulty_level: "2/5",
     sort_order: 52,
-    solution_overview:
-      `National saving $S(Y)$ depends on national product $Y$. The marginal propensity to save is defined as the derivative
+    solution_overview: `National saving $S(Y)$ depends on national product $Y$. The marginal propensity to save is defined as the derivative
 $$S^{\\prime}(Y),$$
 not as the average ratio $\\dfrac{S(Y)}{Y}$. The linear approximation
 $$S(Y+\\Delta Y)-S(Y)\\approx S^{\\prime}(Y)\\,\\Delta Y$$
@@ -3835,7 +4613,7 @@ one has $S^{\\prime}(Y)=s$ constantly. To see how saving responds to a little mo
       "A flatter tangent means a smaller derivative and therefore a smaller marginal cost.",
       "If the tangent at $Q_0$ has slope $12$, then $C'(Q_0)=12$.",
       "If two outputs have the same total cost, they must have the same marginal cost.",
-    ],
+    ]
     answer_key: [true, false, true, true, false],
     tactical_explanations: [
       `**A.** → True
@@ -3883,11 +4661,10 @@ A U-shaped cost curve can return to the same height with different tangents, and
 A U-shaped cost curve returns to the same height on either side of its minimum with opposite-signed slopes — equal $C$, unequal $C^{\\prime}$.
 
 Matching the claim against that reasoning confirms the verdict is False once the right derivative (or the right expand-or-not comparison) is in view. So the statement is False.`
-    ],
+    ]
     difficulty_level: "1/5",
     sort_order: 53,
-    solution_overview:
-      `On a diagram of total cost against output, marginal cost at a named point is the slope of the drawn tangent there:
+    solution_overview: `On a diagram of total cost against output, marginal cost at a named point is the slope of the drawn tangent there:
 $$C^{\\prime}(Q_{0})=\\text{slope of the tangent at }Q_{0}.$$
 A steeper tangent at $Q_{0}$ than at $Q_{1}$ therefore means
 $$C^{\\prime}(Q_{0})>C^{\\prime}(Q_{1}).$$
@@ -3906,7 +4683,7 @@ A flatter tangent means a smaller derivative and a smaller marginal cost. The he
       "If cost rises with output, the output that maximizes revenue can differ from the output that maximizes profit.",
       "At a profit-maximizing interior point one must have $R'(Q)=C'(Q)$.",
       "If $R'(Q)=0$ at some $Q$ while $C'(Q)>0$ there, then $P'(Q)<0$ at that same $Q$.",
-    ],
+    ]
     answer_key: [true, false, true, true, true],
     tactical_explanations: [
       `**A.** → True
@@ -3951,18 +4728,27 @@ Matching the claim against that reasoning confirms the verdict is True once the 
 
 If $R^{\\prime}(Q)=0$ while $C^{\\prime}(Q)>0$, then
 
-$$P^{\\prime}(Q)=R^{\\prime}(Q)-C^{\\prime}(Q)=0-C^{\\prime}(Q)=-C^{\\prime}(Q)<0$$
+$$
+P^{\\prime}(Q) = R^{\\prime}(Q)-C^{\\prime}(Q)
+$$
+
+$$
+P^{\\prime}(Q) = 0-C^{\\prime}(Q)
+$$
+
+$$
+P^{\\prime}(Q) = -C^{\\prime}(Q)<0
+$$
 
 At a revenue-stationary point with rising cost, profit is already locally decreasing
 
 So at a revenue-stationary point with positive marginal cost, the firm should cut output a little, not expand.
 
 Matching the claim against that reasoning confirms the verdict is True once the right derivative (or the right expand-or-not comparison) is in view. So the statement is True.`
-    ],
+    ]
     difficulty_level: "3/5",
     sort_order: 54,
-    solution_overview:
-      `Profit is
+    solution_overview: `Profit is
 $$P(Q)=R(Q)-C(Q),$$
 so an interior profit maximum requires the first-order condition
 $$P^{\\prime}(Q)=0\\qquad\\Leftrightarrow\\qquad R^{\\prime}(Q)=C^{\\prime}(Q),$$
@@ -3983,7 +4769,7 @@ so the profit-maximizing output typically differs from the revenue-maximizing ou
       "The negative sign indicates that the stock of remaining oil is decreasing at $t=0$.",
       "A small time step $\\Delta t$ changes remaining oil by about $-3\\Delta t$ barrels near $t=0$.",
       "Because the derivative is negative, remaining oil must already be negative at $t=0$.",
-    ],
+    ]
     answer_key: [true, false, true, true, false],
     tactical_explanations: [
       `**A.** → True
@@ -4035,11 +4821,10 @@ Remaining oil need not already be negative at $t=0$ merely because $x^{\\prime}(
 A decreasing positive quantity stays positive until it actually crosses zero — slope sign and level sign are separate.
 
 Matching the claim against that reasoning confirms the verdict is False once the right derivative (or the right expand-or-not comparison) is in view. So the statement is False.`
-    ],
+    ]
     difficulty_level: "2/5",
     sort_order: 55,
-    solution_overview:
-      `Let $x(t)$ be barrels of oil left in the well at time $t$. The report
+    solution_overview: `Let $x(t)$ be barrels of oil left in the well at time $t$. The report
 $$x^{\\prime}(0)=-3$$
 is a rate: about $3$ barrels leave per minute at $t=0$. The negative sign means the stock is decreasing. The linear approximation
 $$x(0+\\Delta t)-x(0)\\approx -3\\,\\Delta t$$
@@ -4058,7 +4843,7 @@ governs small time steps. None of this identifies the level $x(0)$ itself, and a
       "The report alone does not reveal the price schedule $p(Q)$.",
       "If marginal cost at $80$ tickets is $15$ euros, then selling a little more than $80$ would lower profit.",
       "If marginal cost at $80$ tickets is $9$ euros, then selling a little more than $80$ would raise profit.",
-    ],
+    ]
     answer_key: [true, false, true, true, true],
     tactical_explanations: [
       `**A.** → True
@@ -4090,7 +4875,17 @@ Matching the claim against that reasoning confirms the verdict is True once the 
 
 If marginal cost at $80$ tickets is $15$, then
 
-$$P^{\\prime}(80)=R^{\\prime}(80)-C^{\\prime}(80)=12-15=-3<0$$
+$$
+P^{\\prime}(80) = R^{\\prime}(80)-C^{\\prime}(80)
+$$
+
+$$
+P^{\\prime}(80) = 12-15
+$$
+
+$$
+P^{\\prime}(80) = -3<0
+$$
 
 Hence $R^{\\prime}<C^{\\prime}$ and a small increase in sales reduces profit
 
@@ -4101,18 +4896,23 @@ Matching the claim against that reasoning confirms the verdict is True once the 
 
 If marginal cost at $80$ tickets is $9$, then
 
-$$P^{\\prime}(80)=12-9=3>0$$
+$$
+P^{\\prime}(80) = 12-9
+$$
+
+$$
+P^{\\prime}(80) = 3>0
+$$
 
 Hence $R^{\\prime}>C^{\\prime}$ and a small increase in sales raises profit
 
 Now extra revenue beats extra cost on the margin, so the same ticket office should expand a little past $80$.
 
 Matching the claim against that reasoning confirms the verdict is True once the right derivative (or the right expand-or-not comparison) is in view. So the statement is True.`
-    ],
+    ]
     difficulty_level: "3/5",
     sort_order: 56,
-    solution_overview:
-      `The ticket office reports
+    solution_overview: `The ticket office reports
 $$R^{\\prime}(80)=12$$
 euros per ticket. That is a marginal-revenue rate near $80$ tickets — about $12$ euros of extra revenue from one more ticket — not the posted price of each of the $80$ tickets, and not enough alone to recover the whole schedule $p(Q)$. Profit responds through
 $$P^{\\prime}(80)=R^{\\prime}(80)-C^{\\prime}(80)=12-C^{\\prime}(80).$$
@@ -4131,7 +4931,7 @@ If $C^{\\prime}(80)=15$ then $P^{\\prime}(80)=-3<0$ and a little more output low
       "The manager's rule is equivalent to maximizing revenue regardless of cost.",
       "If extra revenue and extra cost are equal for a small expansion, marginal profit is zero there.",
       "The manager's comparison of \"extra revenue\" and \"extra cost\" is precisely a comparison of two derivatives.",
-    ],
+    ]
     answer_key: [true, true, false, true, true],
     tactical_explanations: [
       `**A.** → True
@@ -4165,7 +4965,13 @@ Matching the claim against that reasoning confirms the verdict is False once the
 
 Equal extras mean $R^{\\prime}(Q)=C^{\\prime}(Q)$, hence
 
-$$P^{\\prime}(Q)=R^{\\prime}(Q)-C^{\\prime}(Q)=0$$
+$$
+P^{\\prime}(Q) = R^{\\prime}(Q)-C^{\\prime}(Q)
+$$
+
+$$
+P^{\\prime}(Q) = 0
+$$
 
 Marginal profit is zero there
 
@@ -4181,11 +4987,10 @@ The comparison is precisely a comparison of those derivatives
 Once those derivatives are named, the manager's sentence becomes the calculus inequality $R^{\\prime}(Q)>C^{\\prime}(Q)$.
 
 Matching the claim against that reasoning confirms the verdict is True once the right derivative (or the right expand-or-not comparison) is in view. So the statement is True.`
-    ],
+    ]
     difficulty_level: "3/5",
     sort_order: 57,
-    solution_overview:
-      `The manager's verbal rule — expand when extra revenue exceeds extra cost — translates into derivatives as
+    solution_overview: `The manager's verbal rule — expand when extra revenue exceeds extra cost — translates into derivatives as
 $$R^{\\prime}(Q)>C^{\\prime}(Q).$$
 Because $P^{\\prime}=R^{\\prime}-C^{\\prime}$, the same rule is
 $$P^{\\prime}(Q)>0.$$
@@ -4204,7 +5009,7 @@ It is a comparison of two derivatives, not a command to maximize revenue regardl
       "An interior maximum of average satisfaction requires $A'(x)=0$, which rearranges to $U'(x)=A(x)$.",
       "The condition $U'(x)=0$ means that a tiny change in study time leaves satisfaction locally unchanged.",
       "If marginal utility is positive, average satisfaction must also be rising.",
-    ],
+    ]
     answer_key: [true, false, true, true, false],
     tactical_explanations: [
       `**A.** → True
@@ -4229,7 +5034,13 @@ Matching the claim against that reasoning confirms the verdict is False once the
 
 Write $A=\\dfrac{U}{x}$. Setting $A^{\\prime}=0$ for $x>0$ yields
 
-$$A^{\\prime}(x)=\\dfrac{x\\,U^{\\prime}(x)-U(x)}{x^{2}}=0$$
+$$
+A^{\\prime}(x) = \\dfrac{x\\,U^{\\prime}(x)-U(x)}{x^{2}}
+$$
+
+$$
+A^{\\prime}(x) = 0
+$$
 
 hence $xU^{\\prime}-U=0$, and $U^{\\prime}=\\dfrac{U}{x}=A$
 
@@ -4254,11 +5065,10 @@ Positive marginal utility therefore does not force average satisfaction to be ri
 Whenever $0<U^{\\prime}<A$, total utility still rises while average utility falls — positive marginal utility with declining average.
 
 Matching the claim against that reasoning confirms the verdict is False once the right derivative (or the right expand-or-not comparison) is in view. So the statement is False.`
-    ],
+    ]
     difficulty_level: "4/5",
     sort_order: 58,
-    solution_overview:
-      `Total utility $U(x)$ and average utility
+    solution_overview: `Total utility $U(x)$ and average utility
 $$A(x)=\\dfrac{U(x)}{x}\\qquad(x>0)$$
 are different objectives. Marginal utility is $U^{\\prime}(x)$. Differentiating the average gives
 $$A^{\\prime}(x)=\\dfrac{x\\,U^{\\prime}(x)-U(x)}{x^{2}}=\\dfrac{U^{\\prime}(x)-A(x)}{x},$$
@@ -4277,7 +5087,7 @@ so an interior maximum of $A$ requires $A^{\\prime}=0$, hence $U^{\\prime}(x)=A(
       "From $C$ alone one can compute marginal profit $P'(Q)$.",
       "Without a revenue function, the comparison \"$R'(Q)$ versus $C'(Q)$\" cannot be carried out numerically.",
       "If a second analyst later supplies $R(Q)$, then marginal profit becomes $R'(Q)-C'(Q)$.",
-    ],
+    ]
     answer_key: [true, false, false, true, true],
     tactical_explanations: [
       `**A.** → True
@@ -4335,11 +5145,10 @@ Supplying $R(Q)$ later makes marginal profit available
 At that moment the usual identity $P^{\\prime}=R^{\\prime}-C^{\\prime}$ becomes available for every output where both derivatives exist.
 
 Matching the claim against that reasoning confirms the verdict is True once the right derivative (or the right expand-or-not comparison) is in view. So the statement is True.`
-    ],
+    ]
     difficulty_level: "3/5",
     sort_order: 59,
-    solution_overview:
-      `With only the cost function $C(Q)$ in hand one can differentiate to obtain marginal cost
+    solution_overview: `With only the cost function $C(Q)$ in hand one can differentiate to obtain marginal cost
 $$C^{\\prime}(Q).$$
 Revenue $R(Q)$ and profit $P(Q)=R(Q)-C(Q)$ are not identified by cost data alone, so neither
 $$R^{\\prime}(Q)\\qquad\\text{nor}\\qquad P^{\\prime}(Q)=R^{\\prime}(Q)-C^{\\prime}(Q)$$
@@ -4358,7 +5167,7 @@ can be computed, and the numerical comparison $R^{\\prime}$ versus $C^{\\prime}$
       "Near the current output, one more chair adds about $7$ euros of profit.",
       "Because profit is already positive at the rate of $7$ euros per chair, total profit must equal $7$ euros.",
       "If the workshop instead faced $R'(Q)=11$ and $C'(Q)=18$ at some other output, a small expansion there would reduce profit.",
-    ],
+    ]
     answer_key: [true, true, true, false, true],
     tactical_explanations: [
       `**A.** → True
@@ -4403,18 +5212,27 @@ Matching the claim against that reasoning confirms the verdict is False once the
 
 At that other output,
 
-$$P^{\\prime}(Q)=R^{\\prime}(Q)-C^{\\prime}(Q)=11-18=-7<0$$
+$$
+P^{\\prime}(Q) = R^{\\prime}(Q)-C^{\\prime}(Q)
+$$
+
+$$
+P^{\\prime}(Q) = 11-18
+$$
+
+$$
+P^{\\prime}(Q) = -7<0
+$$
 
 A negative derivative means a small expansion reduces profit
 
 There the expand-or-not test flips: extra cost exceeds extra revenue, so a small expansion reduces profit.
 
 Keep level-versus-slope discipline: stocks such as $C$, $R$, $P$, or $U$ are heights; marginal objects are slopes of those graphs. So the statement is True.`
-    ],
+    ]
     difficulty_level: "4/5",
     sort_order: 60,
-    solution_overview:
-      `At the current output the workshop posts
+    solution_overview: `At the current output the workshop posts
 $$R^{\\prime}(Q)=18,\\qquad C^{\\prime}(Q)=11,\\qquad P^{\\prime}(Q)=7.$$
 These are consistent because
 $$P^{\\prime}(Q)=R^{\\prime}(Q)-C^{\\prime}(Q)=18-11=7.$$
@@ -4435,7 +5253,7 @@ so a small expansion would reduce profit. Consistency requires $P^{\\prime}=R^{\
       "Because $P_B(10)>P_A(10)$, bakery B should expand and bakery A should not.",
       "A small extra cake raises A's profit by about $3$ euros and lowers B's profit by about $2$ euros.",
       "The higher profit level at B already tells you that B's marginal profit is larger."
-    ],
+    ]
     answer_key: [true, true, false, true, false],
     tactical_explanations: [
       `**A.** → True
@@ -4446,7 +5264,13 @@ $$P_A^{\\prime}(Q)=R_A^{\\prime}(Q)-C_A^{\\prime}(Q)$$
 
 Plug in the bakery-A reports at $Q=10$:
 
-$$P_A^{\\prime}(10)=9-6=3$$
+$$
+P_A^{\\prime}(10) = 9-6
+$$
+
+$$
+P_A^{\\prime}(10) = 3
+$$
 
 A's posted numbers already force $P_A^{\\prime}(10)=3$
 
@@ -4457,7 +5281,17 @@ Matching the claim against that reasoning confirms the verdict is True once the 
 
 For bakery B the same identity gives
 
-$$P_B^{\\prime}(10)=R_B^{\\prime}(10)-C_B^{\\prime}(10)=5-7=-2$$
+$$
+P_B^{\\prime}(10) = R_B^{\\prime}(10)-C_B^{\\prime}(10)
+$$
+
+$$
+P_B^{\\prime}(10) = 5-7
+$$
+
+$$
+P_B^{\\prime}(10) = -2
+$$
 
 A negative derivative means the profit function is locally decreasing, and near $10$ cakes baking a little more lowers B's profit
 
@@ -4501,11 +5335,10 @@ A large positive stock can sit on a downward slope, and knowing only that $P_B(1
 Here the larger stock belongs to the bakery with the worse (negative) marginal profit — level and slope disagree.
 
 Matching the claim against that reasoning confirms the verdict is False once the right derivative (or the right expand-or-not comparison) is in view. So the statement is False.`
-    ],
+    ]
     difficulty_level: "4/5",
     sort_order: 61,
-    solution_overview:
-      `Both bakeries sold $Q=10$ cakes, but their slopes differ. At A,
+    solution_overview: `Both bakeries sold $Q=10$ cakes, but their slopes differ. At A,
 $$P_A^{\\prime}(10)=R_A^{\\prime}(10)-C_A^{\\prime}(10)=9-6=3>0,$$
 while the stock of profit is the separate number $P_A(10)=40$. At B,
 $$P_B^{\\prime}(10)=5-7=-2<0,$$
@@ -4524,7 +5357,7 @@ with stock $P_B(10)=90$. So a small extra cake raises A's profit by about $3$ eu
       "Just above $50$, overtime still leaves $R'(Q)>C'(Q)$.",
       "At $Q=40$, a small expansion raises profit.",
       "Average cost $\\dfrac{C(Q)}{Q}$ equals $12$ for every $Q>50$."
-    ],
+    ]
     answer_key: [true, true, false, true, false],
     tactical_explanations: [
       `**A.** → True
@@ -4559,7 +5392,13 @@ Matching the claim against that reasoning confirms the verdict is True once the 
 
 Just above $Q=50$ the workshop is already on overtime, so $C^{\\prime}(Q)=20$. Marginal revenue is still $R^{\\prime}(Q)=16$. Then
 
-$$R^{\\prime}(Q)-C^{\\prime}(Q)=16-20=-4<0$$
+$$
+R^{\\prime}(Q)-C^{\\prime}(Q) = 16-20
+$$
+
+$$
+R^{\\prime}(Q)-C^{\\prime}(Q) = -4<0
+$$
 
 hence $R^{\\prime}(Q)<C^{\\prime}(Q)$, not $R^{\\prime}(Q)>C^{\\prime}(Q)$
 
@@ -4570,7 +5409,17 @@ Matching the claim against that reasoning confirms the verdict is False once the
 
 At $Q=40$ the workshop is still on the regular piece, so $C^{\\prime}(40)=12$. Compare with revenue:
 
-$$P^{\\prime}(40)=R^{\\prime}(40)-C^{\\prime}(40)=16-12=4>0$$
+$$
+P^{\\prime}(40) = R^{\\prime}(40)-C^{\\prime}(40)
+$$
+
+$$
+P^{\\prime}(40) = 16-12
+$$
+
+$$
+P^{\\prime}(40) = 4>0
+$$
 
 A positive derivative means a small expansion raises profit at $Q=40$
 
@@ -4588,11 +5437,10 @@ $$\\dfrac{C(Q)}{Q}=20-\\dfrac{400}{Q}$$
 The term $\\dfrac{400}{Q}$ shrinks as $Q$ grows, and average cost approaches $20$ from below and equals $12$ only at the isolated handover $Q=50$, not for every overtime output
 
 As $Q\\to\\infty$ average cost approaches $20$ from below; it equals $12$ only at the handover $Q=50$, not throughout overtime. So the statement is False.`
-    ],
+    ]
     difficulty_level: "5/5",
     sort_order: 62,
-    solution_overview:
-      `Regular-crew cost is $C(Q)=12Q$ for $Q\\le 50$, so
+    solution_overview: `Regular-crew cost is $C(Q)=12Q$ for $Q\\le 50$, so
 $$C^{\\prime}(Q)=12\\qquad(Q<50).$$
 Beyond capacity, $C(Q)=600+20(Q-50)$ gives
 $$C^{\\prime}(Q)=20\\qquad(Q>50).$$
@@ -4614,7 +5462,7 @@ $$A(Q)=\\dfrac{C(Q)}{Q}=\\dfrac{600+20(Q-50)}{Q}=20-\\dfrac{400}{Q}\\neq 12.$$ R
       "The passer-by's claim that $p(Q)$ equals marginal revenue is guaranteed by the posted numbers.",
       "The posted $P'(Q)=4$ is not the same information as the current profit level $P(Q)$.",
       "If instead the kiosk had posted $P'(Q)=-4$ with the same $C'(Q)=11$, implied $R'(Q)$ would be $7$."
-    ],
+    ]
     answer_key: [true, true, false, true, true],
     tactical_explanations: [
       `**A.** → True
@@ -4623,7 +5471,13 @@ By definition $P^{\\prime}(Q)=R^{\\prime}(Q)-C^{\\prime}(Q)$. Rearrange to recov
 
 $$R^{\\prime}(Q)=P^{\\prime}(Q)+C^{\\prime}(Q)$$
 
-$$R^{\\prime}(Q)=4+11=15$$
+$$
+R^{\\prime}(Q) = 4+11
+$$
+
+$$
+R^{\\prime}(Q) = 15
+$$
 
 The whiteboard's two numbers imply $R^{\\prime}(Q)=15$
 
@@ -4661,18 +5515,23 @@ Repeat the same rearrangement with the alternative report $P^{\\prime}(Q)=-4$ an
 
 $$R^{\\prime}(Q)=P^{\\prime}(Q)+C^{\\prime}(Q)$$
 
-$$R^{\\prime}(Q)=-4+11=7$$
+$$
+R^{\\prime}(Q) = -4+11
+$$
+
+$$
+R^{\\prime}(Q) = 7
+$$
 
 The implied marginal revenue would be $7$
 
 The same rearrangement $R^{\\prime}=P^{\\prime}+C^{\\prime}$ works for any posted pair; only the arithmetic changes.
 
 Matching the claim against that reasoning confirms the verdict is True once the right derivative (or the right expand-or-not comparison) is in view. So the statement is True.`
-    ],
+    ]
     difficulty_level: "4/5",
     sort_order: 63,
-    solution_overview:
-      `The whiteboard posts $P^{\\prime}(Q)=4$ and $C^{\\prime}(Q)=11$. Rearranging
+    solution_overview: `The whiteboard posts $P^{\\prime}(Q)=4$ and $C^{\\prime}(Q)=11$. Rearranging
 $$P^{\\prime}(Q)=R^{\\prime}(Q)-C^{\\prime}(Q)$$
 recovers the missing marginal revenue
 $$R^{\\prime}(Q)=P^{\\prime}(Q)+C^{\\prime}(Q)=4+11=15.$$
@@ -4692,7 +5551,7 @@ $$R^{\\prime}=-4+11=7.$$ From $P^{\\prime}=4$ and $C^{\\prime}=11$ recover $R^{\
       "Cinema A should expand a little, because its price $12$ exceeds marginal cost $8$.",
       "Cinema B should expand a little, because $R_B'(Q_B)>C_B'(Q_B)$.",
       "The comparison $p_A>p_B$ already decides which cinema has the larger marginal profit."
-    ],
+    ]
     answer_key: [true, true, false, true, false],
     tactical_explanations: [
       `**A.** → True
@@ -4715,7 +5574,17 @@ Matching the claim against that reasoning confirms the verdict is True once the 
 
 A's expansion test compares extra revenue with extra cost:
 
-$$P_A^{\\prime}(Q_A)=R_A^{\\prime}(Q_A)-C^{\\prime}=7-8=-1<0$$
+$$
+P_A^{\\prime}(Q_A) = R_A^{\\prime}(Q_A)-C^{\\prime}
+$$
+
+$$
+P_A^{\\prime}(Q_A) = 7-8
+$$
+
+$$
+P_A^{\\prime}(Q_A) = -1<0
+$$
 
 The tempting comparison of price $12$ with cost $8$ is the wrong test. Because $7<8$, a small expansion lowers A's profit
 
@@ -4726,7 +5595,17 @@ Matching the claim against that reasoning confirms the verdict is False once the
 
 For cinema B,
 
-$$P_B^{\\prime}(Q_B)=R_B^{\\prime}(Q_B)-C^{\\prime}=10-8=2>0$$
+$$
+P_B^{\\prime}(Q_B) = R_B^{\\prime}(Q_B)-C^{\\prime}
+$$
+
+$$
+P_B^{\\prime}(Q_B) = 10-8
+$$
+
+$$
+P_B^{\\prime}(Q_B) = 2>0
+$$
 
 Hence $R_B^{\\prime}(Q_B)>C_B^{\\prime}(Q_B)$ and a small expansion raises B's profit
 
@@ -4737,20 +5616,31 @@ Matching the claim against that reasoning confirms the verdict is True once the 
 
 Marginal profit is $R^{\\prime}(Q)-C^{\\prime}(Q)$, not a ranking of sticker prices. Here
 
-$$P_A^{\\prime}(Q_A)=7-8=-1$$
+$$
+P_A^{\\prime}(Q_A) = 7-8
+$$
 
-$$P_B^{\\prime}(Q_B)=10-8=2$$
+$$
+P_A^{\\prime}(Q_A) = -1
+$$
+
+$$
+P_B^{\\prime}(Q_B) = 10-8
+$$
+
+$$
+P_B^{\\prime}(Q_B) = 2
+$$
 
 A has the higher price but the lower (in fact negative) marginal profit, and $p_A>p_B$ does not decide the expansion ranking
 
 A has the higher price but the lower marginal profit ($-1$ versus $+2$); price rankings do not decide $P^{\\prime}$ rankings.
 
 Matching the claim against that reasoning confirms the verdict is False once the right derivative (or the right expand-or-not comparison) is in view. So the statement is False.`
-    ],
+    ]
     difficulty_level: "4/5",
     sort_order: 64,
-    solution_overview:
-      `Both cinemas face $C^{\\prime}=8$, but their extra-ticket revenues differ from their posted prices. Cinema A has
+    solution_overview: `Both cinemas face $C^{\\prime}=8$, but their extra-ticket revenues differ from their posted prices. Cinema A has
 $$p_A=12,\\qquad R_A^{\\prime}=7,$$
 so the expand test uses $7$, not $12$:
 $$P_A^{\\prime}=7-8=-1<0.$$
@@ -4773,7 +5663,7 @@ So B should expand a little while A should not. Comparing posted prices $p_A>p_B
       "At $Q=12$, a small extra drink raises profit.",
       "At $Q=25$, post-promotion revenue still beats cost at the margin.",
       "Because the first $20$ drinks each bring in $15$ euros, the extra drink at $Q=25$ also brings in $15$ euros."
-    ],
+    ]
     answer_key: [true, true, true, false, false],
     tactical_explanations: [
       `**A.** → True
@@ -4802,7 +5692,17 @@ Matching the claim against that reasoning confirms the verdict is True once the 
 
 At $Q=12$ the bar is still in happy hour, so $R^{\\prime}(12)=15$. Then
 
-$$P^{\\prime}(12)=R^{\\prime}(12)-C^{\\prime}(12)=15-10=5>0$$
+$$
+P^{\\prime}(12) = R^{\\prime}(12)-C^{\\prime}(12)
+$$
+
+$$
+P^{\\prime}(12) = 15-10
+$$
+
+$$
+P^{\\prime}(12) = 5>0
+$$
 
 A positive derivative means a small extra drink raises profit at $Q=12$
 
@@ -4813,7 +5713,13 @@ Matching the claim against that reasoning confirms the verdict is True once the 
 
 At $Q=25$ the promotion has ended, so $R^{\\prime}(25)=8$. Then
 
-$$P^{\\prime}(25)=8-10=-2<0$$
+$$
+P^{\\prime}(25) = 8-10
+$$
+
+$$
+P^{\\prime}(25) = -2<0
+$$
 
 Post-promotion revenue no longer beats cost at the margin
 
@@ -4829,11 +5735,10 @@ At $Q=25$ the manager's post-promotion rule already gives $R^{\\prime}(25)=8$, n
 Piecewise schedules require reading the piece that contains the named output; $Q=25$ sits on the $8$-euro piece.
 
 Matching the claim against that reasoning confirms the verdict is False once the right derivative (or the right expand-or-not comparison) is in view. So the statement is False.`
-    ],
+    ]
     difficulty_level: "5/5",
     sort_order: 65,
-    solution_overview:
-      `Happy-hour revenue is $R(Q)=15Q$ for $Q\\le 20$, so
+    solution_overview: `Happy-hour revenue is $R(Q)=15Q$ for $Q\\le 20$, so
 $$R^{\\prime}(Q)=15\\qquad(Q<20).$$
 After the promotion, $R(Q)=300+8(Q-20)$ gives
 $$R^{\\prime}(Q)=8\\qquad(Q>20).$$
@@ -4854,7 +5759,7 @@ while at $Q=25$ one has $P^{\\prime}=8-10=-2<0$, so post-promotion revenue no lo
       "The advice tells you the current profit level $P(Q)$.",
       "The advice tells you the average cost $\\dfrac{C(Q)}{Q}$.",
       "If a second adviser, at the same $Q$, claimed $R'(Q)=11$, that second claim would contradict the first."
-    ],
+    ]
     answer_key: [true, true, false, false, true],
     tactical_explanations: [
       `**A.** → True
@@ -4902,11 +5807,10 @@ A second claim $R^{\\prime}(Q)=11$ at the same $Q$ would violate that inequality
 Claiming $R^{\\prime}=11$ would force $P^{\\prime}=11-14=-3<0$, contradicting the consultant's expand advice.
 
 Matching the claim against that reasoning confirms the verdict is True once the right derivative (or the right expand-or-not comparison) is in view. So the statement is True.`
-    ],
+    ]
     difficulty_level: "4/5",
     sort_order: 66,
-    solution_overview:
-      `The consultant's sentence — a small increase in production would raise profit — means
+    solution_overview: `The consultant's sentence — a small increase in production would raise profit — means
 $$P^{\\prime}(Q)>0.$$
 With the cost office's report $C^{\\prime}(Q)=14$ and the identity $P^{\\prime}=R^{\\prime}-C^{\\prime}$, that is equivalent to the bound
 $$R^{\\prime}(Q)>14.$$
@@ -4925,14 +5829,20 @@ The advice constrains the slope of profit, not the stock $P(Q)$ and not the aver
       "The firm should prefer Plant 1 for that extra unit because Plant 1 has the lower marginal cost.",
       "Because both plants belong to one firm, the two marginal costs must be equal.",
       "If the extra unit's revenue were instead $R'=8$, then neither plant should produce it."
-    ],
+    ]
     answer_key: [true, false, true, false, true],
     tactical_explanations: [
       `**A.** → True
 
 Producing the extra unit in Plant 1 adds about $R'=11$ euros of revenue and about $C_1^{\\prime}=9$ euros of cost:
 
-$$P^{\\prime}\\text{ via Plant 1}=11-9=2>0$$
+$$
+P^{\\prime}\\text{ via Plant 1} = 11-9
+$$
+
+$$
+P^{\\prime}\\text{ via Plant 1} = 2>0
+$$
 
 That choice raises the firm's profit
 
@@ -4983,11 +5893,10 @@ Neither plant should produce the extra unit
 When $R'=8$ lies below both plants' marginal costs, the expand-or-not test fails everywhere and the unit should not be produced.
 
 Matching the claim against that reasoning confirms the verdict is True once the right derivative (or the right expand-or-not comparison) is in view. So the statement is True.`
-    ],
+    ]
     difficulty_level: "5/5",
     sort_order: 67,
-    solution_overview:
-      `The extra sale adds $R'=11$ euros whichever plant produces it. Plant 1 has $C_1^{\\prime}=9$, so
+    solution_overview: `The extra sale adds $R'=11$ euros whichever plant produces it. Plant 1 has $C_1^{\\prime}=9$, so
 $$P_1^{\\prime}=11-9=2>0$$
 and producing there raises profit. Plant 2 has $C_2^{\\prime}=13$, so
 $$P_2^{\\prime}=11-13=-2<0$$
@@ -5007,7 +5916,7 @@ $$8-9<0,\\qquad 8-13<0.$$ Common $R'=11$: Plant 1 ($C'=9$) raises profit, Plant 
       "At $y=1500$, the average tax rate equals $\\dfrac{2}{5}$.",
       "At $y=1500$, about $40$ cents of a small extra euro of income is taxed away.",
       "Knowing only the average tax rate at $y=1500$ is enough to recover the second-bracket slope."
-    ],
+    ]
     answer_key: [true, true, false, true, false],
     tactical_explanations: [
       `**A.** → True
@@ -5038,11 +5947,23 @@ At $y=1500$, total tax is
 
 $$T(1500)=200+\\dfrac{2}{5}(1500-1000)$$
 
-$$T(1500)=200+200=400$$
+$$
+T(1500) = 200+200
+$$
+
+$$
+T(1500) = 400
+$$
 
 Average tax is therefore
 
-$$\\dfrac{T(1500)}{1500}=\\dfrac{400}{1500}=\\dfrac{4}{15}$$
+$$
+\\dfrac{T(1500)}{1500} = \\dfrac{400}{1500}
+$$
+
+$$
+\\dfrac{T(1500)}{1500} = \\dfrac{4}{15}
+$$
 
 which is strictly less than $\\dfrac{2}{5}=\\dfrac{6}{15}$, and the average rate does not equal $\\dfrac{2}{5}$
 
@@ -5065,11 +5986,10 @@ It does not by itself recover the second-bracket slope $\\dfrac{2}{5}$; many sch
 The average $4/15$ is compatible with many local slopes; recovering $2/5$ needs the bracket formula, not the average alone.
 
 Matching the claim against that reasoning confirms the verdict is False once the right derivative (or the right expand-or-not comparison) is in view. So the statement is False.`
-    ],
+    ]
     difficulty_level: "5/5",
     sort_order: 68,
-    solution_overview:
-      `The first bracket is $T(y)=\\dfrac{1}{5}y$ for $y\\le 1000$, so
+    solution_overview: `The first bracket is $T(y)=\\dfrac{1}{5}y$ for $y\\le 1000$, so
 $$T^{\\prime}(y)=\\dfrac{1}{5}\\qquad(y<1000).$$
 Above $1000$, $T(y)=200+\\dfrac{2}{5}(y-1000)$ gives
 $$T^{\\prime}(y)=\\dfrac{2}{5}\\qquad(y>1000).$$
@@ -5090,7 +6010,7 @@ while about $40$ cents of a small extra euro is taxed away by the slope $\\dfrac
       "The reports already imply $P'(Q)>0$.",
       "Marginal cost could still exceed marginal revenue even while average cost is falling.",
       "Differentiating $A(Q)$ would produce marginal cost."
-    ],
+    ]
     answer_key: [true, false, false, true, false],
     tactical_explanations: [
       `**A.** → True
@@ -5136,11 +6056,10 @@ Marginal cost is $C^{\\prime}(Q)$, a different object, and differentiating $A$ d
 The object $A^{\\prime}$ describes how average cost moves; marginal cost remains the separate derivative $C^{\\prime}$.
 
 Matching the claim against that reasoning confirms the verdict is False once the right derivative (or the right expand-or-not comparison) is in view. So the statement is False.`
-    ],
+    ]
     difficulty_level: "4/5",
     sort_order: 69,
-    solution_overview:
-      `Average cost is currently $A(Q)=12$ and falling. Differentiating $A=\\dfrac{C}{Q}$ yields
+    solution_overview: `Average cost is currently $A(Q)=12$ and falling. Differentiating $A=\\dfrac{C}{Q}$ yields
 $$A^{\\prime}(Q)=\\dfrac{C^{\\prime}(Q)-A(Q)}{Q},$$
 so $A^{\\prime}<0$ implies only
 $$C^{\\prime}(Q)<A(Q)=12.$$
@@ -5159,7 +6078,7 @@ Sales reports $R^{\\prime}(Q)=10$. That upper bound on $C^{\\prime}$ does not fo
       "At $Q=25$, South's profit is locally decreasing.",
       "Because South's $P_S'(Q)$ depends on $Q$ while North's does not, South must currently earn less total profit.",
       "North's extra unit always adds $12$ euros of profit; that fact uses $R_N'(Q)-C_N'(Q)$, not the intercept $40$."
-    ],
+    ]
     answer_key: [true, true, true, false, true],
     tactical_explanations: [
       `**A.** → True
@@ -5177,7 +6096,13 @@ Keep level-versus-slope discipline: stocks such as $C$, $R$, $P$, or $U$ are hei
 
 At $Q=15$, South's posted schedule gives
 
-$$P_S^{\\prime}(15)=20-15=5>0$$
+$$
+P_S^{\\prime}(15) = 20-15
+$$
+
+$$
+P_S^{\\prime}(15) = 5>0
+$$
 
 A positive derivative means South's profit is still locally increasing at $Q=15$
 
@@ -5188,7 +6113,13 @@ Keep level-versus-slope discipline: stocks such as $C$, $R$, $P$, or $U$ are hei
 
 At $Q=25$,
 
-$$P_S^{\\prime}(25)=20-25=-5<0$$
+$$
+P_S^{\\prime}(25) = 20-25
+$$
+
+$$
+P_S^{\\prime}(25) = -5<0
+$$
 
 A negative derivative means South's profit is locally decreasing at $Q=25$
 
@@ -5208,18 +6139,27 @@ Matching the claim against that reasoning confirms the verdict is False once the
 
 North's marginal profit is
 
-$$P_N^{\\prime}(Q)=R_N^{\\prime}(Q)-C_N^{\\prime}(Q)=30-18=12$$
+$$
+P_N^{\\prime}(Q) = R_N^{\\prime}(Q)-C_N^{\\prime}(Q)
+$$
+
+$$
+P_N^{\\prime}(Q) = 30-18
+$$
+
+$$
+P_N^{\\prime}(Q) = 12
+$$
 
 The fixed intercept $40$ in cost drops out upon differentiation, and the extra-unit profit of $12$ euros uses $R_N^{\\prime}-C_N^{\\prime}$, not that intercept
 
 Fixed costs shift profit levels but cancel in every marginal comparison — a recurring theme in these stems.
 
 Matching the claim against that reasoning confirms the verdict is True once the right derivative (or the right expand-or-not comparison) is in view. So the statement is True.`
-    ],
+    ]
     difficulty_level: "4/5",
     sort_order: 70,
-    solution_overview:
-      `North posts $R_N(Q)=30Q$ and $C_N(Q)=18Q+40$, so
+    solution_overview: `North posts $R_N(Q)=30Q$ and $C_N(Q)=18Q+40$, so
 $$R_N^{\\prime}=30,\\qquad C_N^{\\prime}=18,\\qquad P_N^{\\prime}(Q)=30-18=12$$
 at every $Q$. The intercept $40$ is a fixed cost and does not enter the marginal comparison. South posts only
 $$P_S^{\\prime}(Q)=20-Q.$$
@@ -5238,7 +6178,7 @@ At $Q=15$ one has $P_S^{\\prime}(15)=5>0$ (profit still locally increasing), whi
       "For $x>8$, marginal utility is $0$.",
       "Because $U(8)=48$, the eighth hour must have added $48$ units of utility.",
       "Average utility $\\dfrac{U(x)}{x}$ at $x=12$ equals $4$."
-    ],
+    ]
     answer_key: [true, true, true, false, true],
     tactical_explanations: [
       `**A.** → True
@@ -5256,7 +6196,13 @@ Matching the claim against that reasoning confirms the verdict is True once the 
 
 At $x=6$,
 
-$$U^{\\prime}(6)=10-6=4>0$$
+$$
+U^{\\prime}(6) = 10-6
+$$
+
+$$
+U^{\\prime}(6) = 4>0
+$$
 
 A positive derivative means a little extra leisure still raises satisfaction at $x=6$
 
@@ -5280,7 +6226,13 @@ $U(8)=48$ is the stock of satisfaction after eight hours, not the contribution o
 
 Approaching $x=8$ from the left,
 
-$$U^{\\prime}(8^{-})=10-8=2$$
+$$
+U^{\\prime}(8^{-}) = 10-8
+$$
+
+$$
+U^{\\prime}(8^{-}) = 2
+$$
 
 The eighth hour adds about $2$ units of utility, not $48$
 
@@ -5291,18 +6243,23 @@ Matching the claim against that reasoning confirms the verdict is False once the
 
 For $x=12>8$, utility has flattened at $U(12)=48$. Average utility is therefore
 
-$$\\dfrac{U(12)}{12}=\\dfrac{48}{12}=4$$
+$$
+\\dfrac{U(12)}{12} = \\dfrac{48}{12}
+$$
+
+$$
+\\dfrac{U(12)}{12} = 4
+$$
 
 Average utility at $x=12$ equals $4$
 
 Once utility has flattened, stretching leisure to $12$ hours dilutes the same $48$ utils over more hours, giving average $4$.
 
 Matching the claim against that reasoning confirms the verdict is True once the right derivative (or the right expand-or-not comparison) is in view. So the statement is True.`
-    ],
+    ]
     difficulty_level: "5/5",
     sort_order: 71,
-    solution_overview:
-      `For $0\\le x\\le 8$ utility is $U(x)=10x-\\dfrac{1}{2}x^{2}$, so
+    solution_overview: `For $0\\le x\\le 8$ utility is $U(x)=10x-\\dfrac{1}{2}x^{2}$, so
 $$U^{\\prime}(x)=10-x\\qquad(x<8).$$
 At $x=6$ one has $U^{\\prime}(6)=4>0$, so a little extra leisure still raises satisfaction. For $x>8$ the rule flattens to the constant $U(x)=48$, hence
 $$U^{\\prime}(x)=0\\qquad(x>8).$$
@@ -5322,7 +6279,7 @@ $$\\dfrac{U(12)}{12}=\\dfrac{48}{12}=4.$$ For $x<8$, $U^{\\prime}=10-x>0$ at $x=
       "The second printer's marginal profit is $0$.",
       "Both printers have the same extra-revenue figure, so they have the same extra-profit figure.",
       "The first printer's current total profit $P(Q)$ must equal $-3$."
-    ],
+    ]
     answer_key: [true, false, true, false, false],
     tactical_explanations: [
       `**A.** → True
@@ -5331,7 +6288,13 @@ From $P^{\\prime}=R^{\\prime}-C^{\\prime}$ and the first shop's reports,
 
 $$-3=16-C^{\\prime}(Q)$$
 
-$$C^{\\prime}(Q)=16-(-3)=19$$
+$$
+C^{\\prime}(Q) = 16-(-3)
+$$
+
+$$
+C^{\\prime}(Q) = 19
+$$
 
 The first printer's implied marginal cost is $19$
 
@@ -5351,7 +6314,13 @@ Keep level-versus-slope discipline: stocks such as $C$, $R$, $P$, or $U$ are hei
 
 The second printer reports $R^{\\prime}(Q)=16$ and $C^{\\prime}(Q)=16$, so
 
-$$P^{\\prime}(Q)=16-16=0$$
+$$
+P^{\\prime}(Q) = 16-16
+$$
+
+$$
+P^{\\prime}(Q) = 0
+$$
 
 its marginal profit is $0$
 
@@ -5376,11 +6345,10 @@ The stock $P(Q)$ is a separate number and need not equal $-3$; confusing the slo
 A printer could be earning a large positive profit while sitting on a mildly negative slope of $-3$ — rate $\\neq$ level.
 
 Matching the claim against that reasoning confirms the verdict is False once the right derivative (or the right expand-or-not comparison) is in view. So the statement is False.`
-    ],
+    ]
     difficulty_level: "4/5",
     sort_order: 72,
-    solution_overview:
-      `Both shops face $R^{\\prime}(Q)=16$. The first also posts $P^{\\prime}(Q)=-3$, so rearranging $P^{\\prime}=R^{\\prime}-C^{\\prime}$ recovers
+    solution_overview: `Both shops face $R^{\\prime}(Q)=16$. The first also posts $P^{\\prime}(Q)=-3$, so rearranging $P^{\\prime}=R^{\\prime}-C^{\\prime}$ recovers
 $$C^{\\prime}(Q)=R^{\\prime}-P^{\\prime}=16-(-3)=19.$$
 Because $P^{\\prime}=-3<0$, the first printer should not print a little more. The second shop posts $C^{\\prime}(Q)=16$ with the same $R^{\\prime}$, so
 $$P^{\\prime}(Q)=16-16=0.$$
@@ -5399,14 +6367,24 @@ Same extra-revenue figure does not force the same extra-profit figure, and the f
       "After the tax, a small expansion raises profit.",
       "The tax changes which function must be differentiated for the extra-cost side: the new cost $\\widetilde{C}$, not the old $C$.",
       "Because revenue is unchanged, marginal revenue is still $14$ after the tax."
-    ],
+    ]
     answer_key: [true, true, false, true, true],
     tactical_explanations: [
       `**A.** → True
 
 Before the tax,
 
-$$P^{\\prime}(Q)=R^{\\prime}(Q)-C^{\\prime}(Q)=14-10=4>0$$
+$$
+P^{\\prime}(Q) = R^{\\prime}(Q)-C^{\\prime}(Q)
+$$
+
+$$
+P^{\\prime}(Q) = 14-10
+$$
+
+$$
+P^{\\prime}(Q) = 4>0
+$$
 
 A positive derivative means a small expansion raises profit
 
@@ -5417,7 +6395,17 @@ Keep level-versus-slope discipline: stocks such as $C$, $R$, $P$, or $U$ are hei
 
 The new cost is $\\widetilde{C}(Q)=C(Q)+5Q$. Differentiating gives
 
-$$\\widetilde{C}^{\\prime}(Q)=C^{\\prime}(Q)+5=10+5=15$$
+$$
+\\widetilde{C}^{\\prime}(Q) = C^{\\prime}(Q)+5
+$$
+
+$$
+\\widetilde{C}^{\\prime}(Q) = 10+5
+$$
+
+$$
+\\widetilde{C}^{\\prime}(Q) = 15
+$$
 
 After the tax the relevant marginal cost is $15$
 
@@ -5428,7 +6416,17 @@ Keep level-versus-slope discipline: stocks such as $C$, $R$, $P$, or $U$ are hei
 
 After the tax, compare the unchanged marginal revenue with the new marginal cost:
 
-$$P^{\\prime}(Q)=R^{\\prime}(Q)-\\widetilde{C}^{\\prime}(Q)=14-15=-1<0$$
+$$
+P^{\\prime}(Q) = R^{\\prime}(Q)-\\widetilde{C}^{\\prime}(Q)
+$$
+
+$$
+P^{\\prime}(Q) = 14-15
+$$
+
+$$
+P^{\\prime}(Q) = -1<0
+$$
 
 A negative derivative means a small expansion lowers profit rather than raising it
 
@@ -5455,11 +6453,10 @@ still after the tax
 Only the cost side of the ledger changed; the revenue schedule and its derivative are untouched by the tax.
 
 Keep level-versus-slope discipline: stocks such as $C$, $R$, $P$, or $U$ are heights; marginal objects are slopes of those graphs. So the statement is True.`
-    ],
+    ]
     difficulty_level: "4/5",
     sort_order: 73,
-    solution_overview:
-      `Before the tax one has $R^{\\prime}=14$ and $C^{\\prime}=10$, so
+    solution_overview: `Before the tax one has $R^{\\prime}=14$ and $C^{\\prime}=10$, so
 $$P^{\\prime}=14-10=4>0$$
 and a small expansion raises profit. The per-unit tax replaces cost by
 $$\\widetilde{C}(Q)=C(Q)+5Q,$$
@@ -5482,14 +6479,20 @@ so a small expansion no longer raises profit. The extra-cost side must now diffe
       "At $Q=12$, a small expansion raises profit.",
       "At $Q=35$, clearance pricing still leaves $R'(Q)>C'(Q)$.",
       "At $Q=12$, extra revenue equals the posted price $p(12)=28$."
-    ],
+    ]
     answer_key: [true, true, true, false, false],
     tactical_explanations: [
       `**A.** → True
 
 For $Q<30$, price is $p(Q)=40-Q$, so revenue is
 
-$$R(Q)=Q(40-Q)=40Q-Q^{2}$$
+$$
+R(Q) = Q(40-Q)
+$$
+
+$$
+R(Q) = 40Q-Q^{2}
+$$
 
 Differentiating gives
 
@@ -5513,11 +6516,27 @@ Matching the claim against that reasoning confirms the verdict is True once the 
 
 At $Q=12<30$,
 
-$$R^{\\prime}(12)=40-2\\cdot 12=40-24=16$$
+$$
+R^{\\prime}(12) = 40-2\\cdot 12
+$$
+
+$$
+R^{\\prime}(12) = 40-24
+$$
+
+$$
+R^{\\prime}(12) = 16
+$$
 
 Compare with packing cost $C^{\\prime}=12$:
 
-$$P^{\\prime}(12)=16-12=4>0$$
+$$
+P^{\\prime}(12) = 16-12
+$$
+
+$$
+P^{\\prime}(12) = 4>0
+$$
 
 A small expansion raises profit at $Q=12$
 
@@ -5528,7 +6547,13 @@ Matching the claim against that reasoning confirms the verdict is True once the 
 
 At $Q=35$ clearance pricing is in force, so $R^{\\prime}(35)=10$. Then
 
-$$R^{\\prime}(35)-C^{\\prime}(35)=10-12=-2<0$$
+$$
+R^{\\prime}(35)-C^{\\prime}(35) = 10-12
+$$
+
+$$
+R^{\\prime}(35)-C^{\\prime}(35) = -2<0
+$$
 
 hence $R^{\\prime}<C^{\\prime}$, not $R^{\\prime}>C^{\\prime}$
 
@@ -5539,18 +6564,23 @@ Matching the claim against that reasoning confirms the verdict is False once the
 
 At $Q=12$, extra revenue is the marginal revenue $R^{\\prime}(12)=16$, while the posted price is
 
-$$p(12)=40-12=28$$
+$$
+p(12) = 40-12
+$$
+
+$$
+p(12) = 28
+$$
 
 Those are different numbers: under a downward-sloping price, $R^{\\prime}\\neq p$ in general
 
 The gap $28-16=12$ equals $-Q\\,p^{\\prime}(Q)$ at $Q=12$ with $p^{\\prime}=-1$ — the usual MR-versus-price wedge.
 
 Matching the claim against that reasoning confirms the verdict is False once the right derivative (or the right expand-or-not comparison) is in view. So the statement is False.`
-    ],
+    ]
     difficulty_level: "5/5",
     sort_order: 74,
-    solution_overview:
-      `While $Q\\le 30$ the price is $p(Q)=40-Q$, so
+    solution_overview: `While $Q\\le 30$ the price is $p(Q)=40-Q$, so
 $$R(Q)=40Q-Q^{2},\\qquad R^{\\prime}(Q)=40-2Q.$$
 Once clearance pricing begins, $p(Q)=10$ is flat, hence
 $$R(Q)=10Q,\\qquad R^{\\prime}(Q)=10\\qquad(Q>30).$$
@@ -5571,14 +6601,20 @@ so a small expansion raises profit. At $Q=35$, clearance gives $R^{\\prime}=10<1
       "Firm B is cheaper per unit on average, so B should produce the extra unit and A should not.",
       "Only firm A has $R'>C'$ here.",
       "The extra unit adds about $2$ euros of profit at A and subtracts about $2$ euros at B."
-    ],
+    ]
     answer_key: [true, true, false, true, true],
     tactical_explanations: [
       `**A.** → True
 
 Average cost falls when marginal cost lies below average cost. For firm A,
 
-$$C_A^{\\prime}=5<8=A_A$$
+$$
+C_A^{\\prime} = 5<8
+$$
+
+$$
+C_A^{\\prime} = A_A
+$$
 
 Hence $A_A^{\\prime}(Q)<0$: A's average cost is currently falling
 
@@ -5624,20 +6660,31 @@ Keep level-versus-slope discipline: stocks such as $C$, $R$, $P$, or $U$ are hei
 
 The extra-profit figures are
 
-$$P_A^{\\prime}=7-5=2$$
+$$
+P_A^{\\prime} = 7-5
+$$
 
-$$P_B^{\\prime}=7-9=-2$$
+$$
+P_A^{\\prime} = 2
+$$
+
+$$
+P_B^{\\prime} = 7-9
+$$
+
+$$
+P_B^{\\prime} = -2
+$$
 
 The extra unit adds about $2$ euros of profit at A and subtracts about $2$ euros at B
 
 Those $\\pm 2$ figures are exactly $R'-C'$ at each firm — the one-unit profit consequences of taking the delivery.
 
 Matching the claim against that reasoning confirms the verdict is True once the right derivative (or the right expand-or-not comparison) is in view. So the statement is True.`
-    ],
+    ]
     difficulty_level: "4/5",
     sort_order: 75,
-    solution_overview:
-      `Both firms face $R'=7$. Average-cost movement is read from $C^{\\prime}$ versus $A$: Firm A has $C_A^{\\prime}=5<A_A=8$, so $A_A$ is falling; Firm B has $C_B^{\\prime}=9>A_B=6$, so $A_B$ is rising. The extra-unit test uses $R'$ versus $C^{\\prime}$, not average cost:
+    solution_overview: `Both firms face $R'=7$. Average-cost movement is read from $C^{\\prime}$ versus $A$: Firm A has $C_A^{\\prime}=5<A_A=8$, so $A_A$ is falling; Firm B has $C_B^{\\prime}=9>A_B=6$, so $A_B$ is rising. The extra-unit test uses $R'$ versus $C^{\\prime}$, not average cost:
 $$P_A^{\\prime}=7-5=2>0,\\qquad P_B^{\\prime}=7-9=-2<0.$$
 Only A has $R'>C'$. Being cheaper on average does not decide who should take the extra delivery. A: $C'=5<A=8$ (AC falling), $P'=7-5=2>0$. B: $C'=9>A=6$ (AC rising), $P'=7-9=-2<0$. Average rankings do not decide expansion.`,
   },
@@ -5654,7 +6701,7 @@ Only A has $R'>C'$. Being cheaper on average does not decide who should take the
       "Studio A's $P_A'(Q)=0$ means A earns nothing.",
       "Studio B should expand a little; studio A's first-order condition is already $R_A'(Q)=C_A'(Q)$.",
       "Because B's current profit is $0$, B cannot have a positive marginal profit."
-    ],
+    ]
     answer_key: [true, true, false, true, false],
     tactical_explanations: [
       `**A.** → True
@@ -5702,11 +6749,10 @@ Current break-even does not forbid a positive marginal profit
 Break-even constrains the height $P$, not the slope $P^{\\prime}$; B is the textbook counterexample.
 
 Matching the claim against that reasoning confirms the verdict is False once the right derivative (or the right expand-or-not comparison) is in view. So the statement is False.`
-    ],
+    ]
     difficulty_level: "4/5",
     sort_order: 76,
-    solution_overview:
-      `Studio A reports stock $P_A(Q)=50$ with slope $P_A^{\\prime}(Q)=0$, hence
+    solution_overview: `Studio A reports stock $P_A(Q)=50$ with slope $P_A^{\\prime}(Q)=0$, hence
 $$R_A^{\\prime}(Q)=C_A^{\\prime}(Q)$$
 and a tiny output change leaves profit locally unchanged even though the firm is already earning a solid profit. Studio B reports stock $P_B(Q)=0$ with slope $P_B^{\\prime}(Q)=4>0$, so it is currently breaking even yet a small expansion would start to create profit. Height and slope are independent: $P^{\\prime}=0$ does not mean the firm earns nothing, and $P=0$ does not forbid a positive marginal profit. A: stock $P=50$ with slope $P^{\\prime}=0$ (MR$=$MC). B: stock $P=0$ with slope $P^{\\prime}=4>0$ (expand). Height and slope are independent.`,
   },
@@ -5723,7 +6769,7 @@ and a tiny output change leaves profit locally unchanged even though the firm is
       "A small extra sale raises profit on a weekday.",
       "Because weekend revenue is still $R'(Q)=15$, weekend marginal profit equals the weekday figure $3$.",
       "The weekday-versus-weekend switch changes the cost function that must be differentiated, not the meaning of $R'(Q)$."
-    ],
+    ]
     answer_key: [true, true, true, false, true],
     tactical_explanations: [
       `**A.** → True
@@ -5752,7 +6798,17 @@ Matching the claim against that reasoning confirms the verdict is True once the 
 
 On a weekday,
 
-$$P^{\\prime}(Q)=R^{\\prime}(Q)-C_{\\mathrm{wd}}^{\\prime}(Q)=15-12=3>0$$
+$$
+P^{\\prime}(Q) = R^{\\prime}(Q)-C_{\\mathrm{wd}}^{\\prime}(Q)
+$$
+
+$$
+P^{\\prime}(Q) = 15-12
+$$
+
+$$
+P^{\\prime}(Q) = 3>0
+$$
 
 A positive marginal profit means a small extra sale raises weekday profit
 
@@ -5763,7 +6819,17 @@ Matching the claim against that reasoning confirms the verdict is True once the 
 
 Weekend marginal profit uses the weekend cost slope, not the weekday one:
 
-$$P^{\\prime}(Q)=R^{\\prime}(Q)-C_{\\mathrm{we}}^{\\prime}(Q)=15-20=-5$$
+$$
+P^{\\prime}(Q) = R^{\\prime}(Q)-C_{\\mathrm{we}}^{\\prime}(Q)
+$$
+
+$$
+P^{\\prime}(Q) = 15-20
+$$
+
+$$
+P^{\\prime}(Q) = -5
+$$
 
 That is not equal to the weekday figure $3$. Same $R^{\\prime}$ with a higher $C^{\\prime}$ changes the profit slope
 
@@ -5779,11 +6845,10 @@ What changes is which cost schedule supplies $C^{\\prime}(Q)$: the weekday rule 
 Marginal revenue keeps the same economic meaning — extra euros from one more sale — on both kinds of day.
 
 Matching the claim against that reasoning confirms the verdict is True once the right derivative (or the right expand-or-not comparison) is in view. So the statement is True.`
-    ],
+    ]
     difficulty_level: "4/5",
     sort_order: 77,
-    solution_overview:
-      `Weekday cost is $C_{\\mathrm{wd}}(Q)=12Q$, so
+    solution_overview: `Weekday cost is $C_{\\mathrm{wd}}(Q)=12Q$, so
 $$C_{\\mathrm{wd}}^{\\prime}(Q)=12.$$
 Weekend overtime cost is $C_{\\mathrm{we}}(Q)=20Q$, so
 $$C_{\\mathrm{we}}^{\\prime}(Q)=20.$$
@@ -5806,7 +6871,7 @@ The weekday-versus-weekend switch changes which cost function is differentiated;
       "Shop M does not satisfy the reviewer's sentence.",
       "A small expansion raises profit at Shop M and lowers profit at Shop L.",
       "Because both shops have the same $R'(Q)$, they have the same extra-cost figure."
-    ],
+    ]
     answer_key: [true, true, true, true, false],
     tactical_explanations: [
       `**A.** → True
@@ -5846,7 +6911,13 @@ Matching the claim against that reasoning confirms the verdict is True once the 
 
 Shop M has
 
-$$P_M^{\\prime}(Q)=9-6=3>0$$
+$$
+P_M^{\\prime}(Q) = 9-6
+$$
+
+$$
+P_M^{\\prime}(Q) = 3>0
+$$
 
 while Shop L has $P_L^{\\prime}(Q)=-4<0$. A small expansion raises profit at M and lowers it at L
 
@@ -5862,11 +6933,10 @@ Same extra revenue does not force the same extra cost
 Shared $R^{\\prime}=9$ with $C_L^{\\prime}=13$ versus $C_M^{\\prime}=6$ is enough to see the extra-cost figures differ.
 
 Matching the claim against that reasoning confirms the verdict is False once the right derivative (or the right expand-or-not comparison) is in view. So the statement is False.`
-    ],
+    ]
     difficulty_level: "5/5",
     sort_order: 78,
-    solution_overview:
-      `The reviewer's sentence about Shop L means
+    solution_overview: `The reviewer's sentence about Shop L means
 $$R_L^{\\prime}(Q)<C_L^{\\prime}(Q).$$
 With the posted $R_L^{\\prime}=9$ and $P_L^{\\prime}=-4$, rearrange to recover
 $$C_L^{\\prime}=R_L^{\\prime}-P_L^{\\prime}=9-(-4)=13,$$
@@ -5887,7 +6957,7 @@ so a small expansion raises profit at M and lowers it at L. Same $R^{\\prime}$ d
       "For $Q>30$, $P'(Q)=-4$.",
       "Just above $Q=30$, a small expansion raises profit.",
       "$P(30)=150$, so the firm earns $150$ euros of extra profit from the thirtieth unit."
-    ],
+    ]
     answer_key: [true, true, true, false, false],
     tactical_explanations: [
       `**A.** → True
@@ -5913,7 +6983,13 @@ At $Q=20$,
 
 $$P^{\\prime}(20)=8-\\dfrac{1}{5}\\cdot 20$$
 
-$$P^{\\prime}(20)=8-4=4>0$$
+$$
+P^{\\prime}(20) = 8-4
+$$
+
+$$
+P^{\\prime}(20) = 4>0
+$$
 
 A small expansion raises profit at $Q=20$
 
@@ -5948,18 +7024,23 @@ Approaching $Q=30$ from the left,
 
 $$P^{\\prime}(30^{-})=8-\\dfrac{1}{5}\\cdot 30$$
 
-$$P^{\\prime}(30^{-})=8-6=2$$
+$$
+P^{\\prime}(30^{-}) = 8-6
+$$
+
+$$
+P^{\\prime}(30^{-}) = 2
+$$
 
 The thirtieth unit adds about $2$ euros of profit, not $150$
 
 The stock $P(30)=150$ accumulates all infra-capacity profit; the thirtieth unit's contribution is the marginal figure near $2$.
 
 Matching the claim against that reasoning confirms the verdict is False once the right derivative (or the right expand-or-not comparison) is in view. So the statement is False.`
-    ],
+    ]
     difficulty_level: "5/5",
     sort_order: 79,
-    solution_overview:
-      `Below capacity, $P(Q)=8Q-\\dfrac{1}{10}Q^{2}$, so
+    solution_overview: `Below capacity, $P(Q)=8Q-\\dfrac{1}{10}Q^{2}$, so
 $$P^{\\prime}(Q)=8-\\dfrac{1}{5}Q\\qquad(Q<30).$$
 At $Q=20$ one has $P^{\\prime}(20)=8-4=4>0$, so a small expansion raises profit. Beyond capacity,
 $$P(Q)=150-4(Q-30)\\qquad(Q>30)$$
@@ -5980,7 +7061,7 @@ so just above $Q=30$ a small expansion lowers profit. The level $P(30)=150$ is t
       "A small extra item raises profit at the café and lowers profit at the kiosk.",
       "Because both have the same $R'(40)$ and the same $Q$, they must have the same $C'(40)$.",
       "The café's report $P'(40)=1$ already equals its profit level $P(40)$."
-    ],
+    ]
     answer_key: [true, true, true, false, false],
     tactical_explanations: [
       `**A.** → True
@@ -6000,7 +7081,17 @@ Matching the claim against that reasoning confirms the verdict is True once the 
 
 For the kiosk,
 
-$$P^{\\prime}(40)=R^{\\prime}(40)-C^{\\prime}(40)=3-5=-2$$
+$$
+P^{\\prime}(40) = R^{\\prime}(40)-C^{\\prime}(40)
+$$
+
+$$
+P^{\\prime}(40) = 3-5
+$$
+
+$$
+P^{\\prime}(40) = -2
+$$
 
 The kiosk's implied marginal profit is $-2$
 
@@ -6034,11 +7125,10 @@ The height $P(40)$ of today's profit was never posted and need not equal $1$
 A rate of $+1$ euro of profit per extra item is compatible with any profit stock — the café never posted $P(40)$.
 
 Keep level-versus-slope discipline: stocks such as $C$, $R$, $P$, or $U$ are heights; marginal objects are slopes of those graphs. So the statement is False.`
-    ],
+    ]
     difficulty_level: "5/5",
     sort_order: 80,
-    solution_overview:
-      `Both outlets sold $Q=40$ with the same $R^{\\prime}(40)=3$. The café also posts $P^{\\prime}(40)=1$, so
+    solution_overview: `Both outlets sold $Q=40$ with the same $R^{\\prime}(40)=3$. The café also posts $P^{\\prime}(40)=1$, so
 $$C^{\\prime}(40)=R^{\\prime}(40)-P^{\\prime}(40)=3-1=2.$$
 The kiosk posts $C^{\\prime}(40)=5$ instead, so
 $$P^{\\prime}(40)=R^{\\prime}(40)-C^{\\prime}(40)=3-5=-2.$$
@@ -6057,7 +7147,7 @@ A small extra item therefore raises profit at the café ($P^{\\prime}=1>0$) and 
       "At six lamps a day the profit curve bends strictly downward, so that output is a local profit peak.",
       "At six lamps a day, daily profit equals $16$ euros.",
       "Because the slope is flat at six lamps, the profit level itself must be zero there."
-    ],
+    ]
     answer_key: [true, true, true, true, false],
     tactical_explanations: [
       `**A.** → True
@@ -6097,7 +7187,17 @@ Name the objective, find where its slope is flat, then classify with the bend (o
 
 Once the critical output is known, evaluate the *profit level* $P$ there — not the slope $P'$. Substitute $Q=6$ into the original quadratic:
 
-$$P(6)=-6^{2}+12\\cdot 6-20=-36+72-20=16.$$
+$$
+P(6) = -6^{2}+12\\cdot 6-20
+$$
+
+$$
+P(6) = -36+72-20
+$$
+
+$$
+P(6) = 16.
+$$
 
 Daily profit at six lamps is therefore $16$ euros. The calculation uses the level function, which is what the claim asks for, so the statement is True.`,
       `**E.** → False
@@ -6109,11 +7209,10 @@ A flat slope describes how profit *changes* at that output, not how large profit
 $$P(6)=16\\neq 0.$$
 
 Zero slope does not force zero profit — confusing the derivative with the function itself is the trap —. Comparing that with the claim, the statement is False.`
-    ],
+    ]
     difficulty_level: "2/5",
     sort_order: 81,
-    solution_overview:
-      `Daily profit is the concrete quadratic
+    solution_overview: `Daily profit is the concrete quadratic
 
 $$P(Q)=-Q^{2}+12Q-20,\\qquad Q\\ge 0.$$
 
@@ -6140,7 +7239,7 @@ so six lamps yield $16$ euros of daily profit. A zero slope never forces the pro
       "Profit has a flat slope at six lunch boxes a day.",
       "At six lunch boxes, marginal revenue and marginal cost both equal $18$ euros.",
       "Because profit's slope is flat at six boxes, the café's profit level equals its cost level there."
-    ],
+    ]
     answer_key: [true, true, true, true, false],
     tactical_explanations: [
       `**A.** → True
@@ -6149,11 +7248,23 @@ Name the objective, find where its slope is flat, then classify with the bend (o
 
 Profit is defined as revenue minus cost. Expand carefully, watching the minus sign distribute over every cost term:
 
-$$P(Q)=R(Q)-C(Q)=(30Q-Q^{2})-(Q^{2}+6Q+40).$$
+$$
+P(Q) = R(Q)-C(Q)
+$$
+
+$$
+P(Q) = (30Q-Q^{2})-(Q^{2}+6Q+40).
+$$
 
 Collect like terms:
 
-$$P(Q)=-Q^{2}-Q^{2}+30Q-6Q-40=-2Q^{2}+24Q-40.$$
+$$
+P(Q) = -Q^{2}-Q^{2}+30Q-6Q-40
+$$
+
+$$
+P(Q) = -2Q^{2}+24Q-40.
+$$
 
 That simplified quadratic matches the claim exactly, so the statement is True.`,
       `**B.** → True
@@ -6199,16 +7310,31 @@ The wording sounds close to a standard optimisation rule, but it skips a classif
 
 Flat profit slope means $P'(6)=0$, not that the *levels* $P(6)$ and $C(6)$ coincide. Compute both explicitly:
 
-$$P(6)=-2\\cdot 36+24\\cdot 6-40=-72+144-40=32,$$
+$$
+P(6) = -2\\cdot 36+24\\cdot 6-40
+$$
 
-$$C(6)=36+36+40=112.$$
+$$
+P(6) = -72+144-40
+$$
+
+$$
+P(6) = 32,
+$$
+
+$$
+C(6) = 36+36+40
+$$
+
+$$
+C(6) = 112.
+$$
 
 The levels $32$ and $112$ differ sharply. Confusing a zero *derivative* of profit with equal *levels* of profit and cost is the trap. Comparing that with the claim, the statement is False.`
-    ],
+    ]
     difficulty_level: "3/5",
     sort_order: 82,
-    solution_overview:
-      `Revenue and cost are given separately, so daily profit is their difference:
+    solution_overview: `Revenue and cost are given separately, so daily profit is their difference:
 
 $$P(Q)=R(Q)-C(Q)=(30Q-Q^{2})-(Q^{2}+6Q+40)=-2Q^{2}+24Q-40.$$
 
@@ -6235,7 +7361,7 @@ and the bend $P''=-4<0$ confirms a local profit peak. The *levels* at six boxes 
       "The trough cost value is $15$ (hundreds of euros).",
       "Because the slope of cost is flat at five vans, that fleet size must be a local cost peak.",
       "On $Q\\ge 0$, the global cost minimum is also at five vans."
-    ],
+    ]
     answer_key: [true, true, true, false, true],
     tactical_explanations: [
       `**A.** → True
@@ -6262,7 +7388,17 @@ Name the objective, find where its slope is flat, then classify with the bend (o
 
 Evaluate cost at the trough fleet size — use the level $C$, not the slope $C'$:
 
-$$C(5)=5^{2}-10\\cdot 5+40=25-50+40=15.$$
+$$
+C(5) = 5^{2}-10\\cdot 5+40
+$$
+
+$$
+C(5) = 25-50+40
+$$
+
+$$
+C(5) = 15.
+$$
 
 The trough cost is $15$ (hundreds of euros), matching the claim
 
@@ -6281,11 +7417,10 @@ so five vans is a local *minimum* of cost, not a local maximum. Claiming a local
 Global comparison on a restricted domain needs every candidate value — interior critical points and endpoints — not just the first flat-slope output you meet.
 
 On $Q\\ge 0$ the parabola opens upward ($C''=2>0$) with its vertex at $Q=5\\ge 0$. For an upward-opening parabola the vertex is the global minimum on the whole real line, hence also on the restricted domain $Q\\ge 0$. The local trough is therefore also the global cost minimum: the cost-minimising fleet is five vans globally as well as locally, so the statement is True.`
-    ],
+    ]
     difficulty_level: "2/5",
     sort_order: 83,
-    solution_overview:
-      `Daily operating cost is the upward-opening parabola
+    solution_overview: `Daily operating cost is the upward-opening parabola
 
 $$C(Q)=Q^{2}-10Q+40,\\qquad Q\\ge 0.$$
 
@@ -6312,7 +7447,7 @@ and since the parabola opens upward with its vertex already inside $Q\\ge 0$, th
       "Even so, intensity zero is a strict local trough of score $A$.",
       "Even so, intensity zero is a strict local peak of score $B$.",
       "Because both second derivatives vanish at zero, neither score can have a local peak or trough there."
-    ],
+    ]
     answer_key: [true, true, true, true, false],
     tactical_explanations: [
       `**A.** → True
@@ -6343,7 +7478,13 @@ Name the objective, find where its slope is flat, then classify with the bend (o
 
 Even though $A''(0)=0$, the fourth-power shape still settles the local picture by direct comparison. For every $x\\neq 0$,
 
-$$A(x)=x^{4}>0=A(0).$$
+$$
+A(x) = x^{4}>0
+$$
+
+$$
+A(x) = A(0).
+$$
 
 So nearby values sit strictly above the value at zero: intensity zero is a strict local trough of score $A$. The inconclusive bend test does not cancel that comparison, so the statement is True.`,
       `**D.** → True
@@ -6352,7 +7493,13 @@ Name the objective, find where its slope is flat, then classify with the bend (o
 
 Likewise for the opposite-sign fourth power: for every $x\\neq 0$,
 
-$$B(x)=-x^{4}<0=B(0).$$
+$$
+B(x) = -x^{4}<0
+$$
+
+$$
+B(x) = B(0).
+$$
 
 Nearby values sit strictly below the value at zero, so intensity zero is a strict local peak of score $B$, even though the second derivative vanishes there. Direct comparison classifies what the bend test could not, so the statement is True.`,
       `**E.** → False
@@ -6360,11 +7507,10 @@ Nearby values sit strictly below the value at zero, so intensity zero is a stric
 The wording sounds close to a standard optimisation rule, but it skips a classification step or confuses a level with a slope. Track the definitions carefully.
 
 Vanishing of the second derivative only makes the *usual bend test* inconclusive; it does not forbid a peak or trough. The fourth-power comparisons already show a trough for $A$ and a peak for $B$ at zero. Claiming that neither score can have a local extremum there confuses “test inconclusive” with “no extremum exists,”. Comparing that with the claim, the statement is False.`
-    ],
+    ]
     difficulty_level: "4/5",
     sort_order: 84,
-    solution_overview:
-      `The two campaign scores near intensity zero are pure fourth powers of opposite sign:
+    solution_overview: `The two campaign scores near intensity zero are pure fourth powers of opposite sign:
 
 $$A(x)=x^{4},\\qquad B(x)=-x^{4}.$$
 
@@ -6393,7 +7539,7 @@ so zero is a strict local trough of $A$ and a strict local peak of $B$. Vanishin
       "Café B's profit curve bends upward at ten covers, so that output is a local profit trough for B.",
       "Because both cafés have a flat slope at ten covers, both are maximising profit there.",
       "At ten covers, Café A's profit is $50$ euros while Café B's profit is $-10$ euros."
-    ],
+    ]
     answer_key: [true, true, true, false, true],
     tactical_explanations: [
       `**A.** → True
@@ -6438,18 +7584,29 @@ Name the objective, find where its slope is flat, then classify with the bend (o
 
 Evaluate each profit *level* at ten covers (not the slopes):
 
-$$P_A(10)=-100+200-50=50,$$
+$$
+P_A(10) = -100+200-50
+$$
 
-$$P_B(10)=100-200+90=-10.$$
+$$
+P_A(10) = 50,
+$$
+
+$$
+P_B(10) = 100-200+90
+$$
+
+$$
+P_B(10) = -10.
+$$
 
 Café A's profit is $50$ euros and Café B's is $-10$ euros, matching the claim exactly
 
 An interior candidate for a smooth extremum must make the first derivative vanish; that flat-slope equation only produces candidates, not finished labels. So the statement is True.`
-    ],
+    ]
     difficulty_level: "4/5",
     sort_order: 85,
-    solution_overview:
-      `Two cafés share the output $Q=10$ but run opposite profit shapes:
+    solution_overview: `Two cafés share the output $Q=10$ but run opposite profit shapes:
 
 $$P_A(Q)=-Q^{2}+20Q-50,\\qquad P_B(Q)=Q^{2}-20Q+90.$$
 
@@ -6478,7 +7635,7 @@ so flat slope alone does not mean both cafés are maximising profit.`,
       "The profit values are $14$ at one pack, $10$ at three packs, $10$ at zero packs, and $30$ at five packs.",
       "On the full interval $[0,5]$, the global profit maximum is at the local peak of one pack.",
       "On $[0,5]$, the global profit maximum is at the endpoint of five packs."
-    ],
+    ]
     answer_key: [true, true, true, false, true],
     tactical_explanations: [
       `**A.** → True
@@ -6487,7 +7644,17 @@ Name the objective, find where its slope is flat, then classify with the bend (o
 
 Differentiate the cubic profit and set the slope to zero inside $(0,5)$:
 
-$$P'(Q)=3Q^{2}-12Q+9=3(Q^{2}-4Q+3)=3(Q-1)(Q-3).$$
+$$
+P'(Q) = 3Q^{2}-12Q+9
+$$
+
+$$
+P'(Q) = 3(Q^{2}-4Q+3)
+$$
+
+$$
+P'(Q) = 3(Q-1)(Q-3).
+$$
 
 The roots are $Q=1$ and $Q=3$, both strictly inside $(0,5)$. Those are exactly the interior flat-slope pack counts
 
@@ -6511,9 +7678,21 @@ Name the objective, find where its slope is flat, then classify with the bend (o
 
 Evaluate profit at the two critical packs and at both endpoints — global comparison needs all four values:
 
-$$P(1)=1-6+9+10=14,$$
+$$
+P(1) = 1-6+9+10
+$$
 
-$$P(3)=27-54+27+10=10,$$
+$$
+P(1) = 14,
+$$
+
+$$
+P(3) = 27-54+27+10
+$$
+
+$$
+P(3) = 10,
+$$
 
 $$P(0)=10,\\qquad P(5)=125-150+45+10=30.$$
 
@@ -6532,11 +7711,10 @@ Global comparison on a restricted domain needs every candidate value — interio
 Among $P(0)=10$, $P(1)=14$, $P(3)=10$, and $P(5)=30$, the largest value is $30$ at five packs. That endpoint is therefore the global profit maximum on $[0,5]$. The local peak at one pack loses the global comparison
 
 Pause on the classification step: $f''<0$ at a critical point marks a local peak, $f''>0$ marks a local trough, and $f''=0$ makes the usual bend test inconclusive. So the statement is True.`
-    ],
+    ]
     difficulty_level: "3/5",
     sort_order: 86,
-    solution_overview:
-      `Festival profit on the closed pack interval $[0,5]$ is the cubic
+    solution_overview: `Festival profit on the closed pack interval $[0,5]$ is the cubic
 
 $$P(Q)=Q^{3}-6Q^{2}+9Q+10.$$
 
@@ -6563,7 +7741,7 @@ shows the global maximum on $[0,5]$ is the endpoint $Q=5$, not the local peak at
       "Because profit is strictly increasing on $[0,8]$, the maximum is at eight units and the minimum at zero.",
       "At the maximum output of eight units one must have a flat profit slope.",
       "The maximal profit on the interval is $36.6$ euros."
-    ],
+    ]
     answer_key: [true, true, true, false, true],
     tactical_explanations: [
       `**A.** → True
@@ -6587,7 +7765,17 @@ Name the objective, find where its slope is flat, then classify with the bend (o
 
 Inside $(0,8)$ check whether the slope can hit zero. Solving $5-\\dfrac{Q}{5}=0$ would give $Q=25$, which lies far outside $[0,8]$. At the right endpoint itself
 
-$$P'(8)=5-\\dfrac{8}{5}=\\dfrac{17}{5}=3.4>0,$$
+$$
+P'(8) = 5-\\dfrac{8}{5}
+$$
+
+$$
+P'(8) = \\dfrac{17}{5}
+$$
+
+$$
+P'(8) = 3.4>0,
+$$
 
 and for every smaller positive $Q$ the slope is even larger. So there is no interior root of $P'(Q)=0$ on $(0,8)$, so the statement is True.`,
       `**C.** → True
@@ -6601,7 +7789,13 @@ Flat slope finds a candidate; the bend (or a sign chart) then classifies peak ve
 
 Endpoint maxima need not be critical points — that is the trap. Here the domain simply stops at eight units while the slope is still positive:
 
-$$P'(8)=5-\\dfrac{8}{5}=\\dfrac{17}{5}>0.$$
+$$
+P'(8) = 5-\\dfrac{8}{5}
+$$
+
+$$
+P'(8) = \\dfrac{17}{5}>0.
+$$
 
 The maximum sits at the boundary because the feasible set ends, not because the tangent is flat. Claiming a flat slope at the maximum is false. Comparing that with the claim, the statement is False.`,
       `**E.** → True
@@ -6610,16 +7804,25 @@ Name the objective, find where its slope is flat, then classify with the bend (o
 
 Evaluate profit at the right endpoint where the maximum must occur:
 
-$$P(8)=5\\cdot 8-\\dfrac{64}{10}+3=40-6.4+3=36.6.$$
+$$
+P(8) = 5\\cdot 8-\\dfrac{64}{10}+3
+$$
+
+$$
+P(8) = 40-6.4+3
+$$
+
+$$
+P(8) = 36.6.
+$$
 
 Maximal profit on the interval is $36.6$ euros, matching the claim
 
 Pause on the classification step: $f''<0$ at a critical point marks a local peak, $f''>0$ marks a local trough, and $f''=0$ makes the usual bend test inconclusive. So the statement is True.`
-    ],
+    ]
     difficulty_level: "3/5",
     sort_order: 87,
-    solution_overview:
-      `The stall's profit on the closed interval $[0,8]$ is
+    solution_overview: `The stall's profit on the closed interval $[0,8]$ is
 
 $$P(Q)=5Q-\\dfrac{Q^{2}}{10}+3.$$
 
@@ -6646,7 +7849,7 @@ Endpoint maxima need not be critical points.`,
       "A sign chart shows a change from negative to positive at intensity $3$, so that point is a local trough.",
       "The second-derivative bend test confirms the same local peak at $1$ and local trough at $3$.",
       "Because intensity $1$ is a local peak, it must also be the global maximum of net benefit on $[0,\\infty)$."
-    ],
+    ]
     answer_key: [true, true, true, true, false],
     tactical_explanations: [
       `**A.** → True
@@ -6655,7 +7858,17 @@ Name the objective, find where its slope is flat, then classify with the bend (o
 
 Differentiate net benefit and set the slope to zero:
 
-$$B'(x)=3x^{2}-12x+9=3(x^{2}-4x+3)=3(x-1)(x-3).$$
+$$
+B'(x) = 3x^{2}-12x+9
+$$
+
+$$
+B'(x) = 3(x^{2}-4x+3)
+$$
+
+$$
+B'(x) = 3(x-1)(x-3).
+$$
 
 The roots are $x=1$ and $x=3$, both in the domain $x\\ge 0$. Those are exactly the flat-slope advertising intensities
 
@@ -6694,11 +7907,10 @@ An interior candidate for a smooth extremum must make the first derivative vanis
 Global comparison on a restricted domain needs every candidate value — interior critical points and endpoints — not just the first flat-slope output you meet.
 
 A local peak need not be global on $[0,\\infty)$. As $x\\to\\infty$, the leading term $x^{3}$ drives $B(x)\\to\\infty$, so values beyond the local trough eventually exceed $B(1)$. Intensity $1$ is only a local peak — the unbounded domain lets benefit grow without bound afterward — so it is not the global maximum. Comparing that with the claim, the statement is False.`
-    ],
+    ]
     difficulty_level: "4/5",
     sort_order: 88,
-    solution_overview:
-      `Weekly net benefit for advertising intensity $x\\ge 0$ is the cubic
+    solution_overview: `Weekly net benefit for advertising intensity $x\\ge 0$ is the cubic
 
 $$B(x)=x^{3}-6x^{2}+9x+2.$$
 
@@ -6721,7 +7933,7 @@ Flat slopes sit at $x=1$ and $x=3$. The sign chart of $B'$ changes from positive
       "Four ovens is a local profit peak.",
       "Comparing all candidate and endpoint values, the global profit maximum on $[0,6]$ is at zero ovens.",
       "Finding the flat-slope outputs alone already proves which point maximises profit on $[0,6]$."
-    ],
+    ]
     answer_key: [true, true, true, true, false],
     tactical_explanations: [
       `**A.** → True
@@ -6730,7 +7942,17 @@ Name the objective, find where its slope is flat, then classify with the bend (o
 
 Differentiate daily profit and set the slope to zero inside $(0,6)$:
 
-$$P'(Q)=-3Q^{2}+18Q-24=-3(Q^{2}-6Q+8)=-3(Q-2)(Q-4).$$
+$$
+P'(Q) = -3Q^{2}+18Q-24
+$$
+
+$$
+P'(Q) = -3(Q^{2}-6Q+8)
+$$
+
+$$
+P'(Q) = -3(Q-2)(Q-4).
+$$
 
 The roots are $Q=2$ and $Q=4$, both strictly inside $(0,6)$. Those are the interior flat-slope oven counts
 
@@ -6752,7 +7974,13 @@ Name the objective, find where its slope is flat, then classify with the bend (o
 
 Classify four ovens the same way:
 
-$$P''(4)=-24+18=-6<0.$$
+$$
+P''(4) = -24+18
+$$
+
+$$
+P''(4) = -6<0.
+$$
 
 A downward bend at a flat slope is the second-derivative test for a local maximum. Therefore four ovens is a local profit peak
 
@@ -6765,11 +7993,29 @@ Compare profit at the critical ovens and at both endpoints — global max needs 
 
 $$P(0)=30,$$
 
-$$P(2)=-8+36-48+30=10,$$
+$$
+P(2) = -8+36-48+30
+$$
 
-$$P(4)=-64+144-96+30=14,$$
+$$
+P(2) = 10,
+$$
 
-$$P(6)=-216+324-144+30=-6.$$
+$$
+P(4) = -64+144-96+30
+$$
+
+$$
+P(4) = 14,
+$$
+
+$$
+P(6) = -216+324-144+30
+$$
+
+$$
+P(6) = -6.
+$$
 
 The largest value on $[0,6]$ is $P(0)=30$, so the global maximum is at zero ovens, so the statement is True.`,
       `**E.** → False
@@ -6777,11 +8023,10 @@ The largest value on $[0,6]$ is $P(0)=30$, so the global maximum is at zero oven
 The wording sounds close to a standard optimisation rule, but it skips a classification step or confuses a level with a slope. Track the definitions carefully.
 
 Listing the flat-slope outputs $Q=2$ and $Q=4$ only produces *candidates*. Without comparing their profit values to the endpoints — and without classifying peak versus trough — one cannot prove which point maximises profit on the closed interval. Here the endpoint $Q=0$ actually wins. Stopping at the critical-point list does not finish the proof. Comparing that with the claim, the statement is False.`
-    ],
+    ]
     difficulty_level: "3/5",
     sort_order: 89,
-    solution_overview:
-      `Bakery profit on the closed oven interval $[0,6]$ is
+    solution_overview: `Bakery profit on the closed oven interval $[0,6]$ is
 
 $$P(Q)=-Q^{3}+9Q^{2}-24Q+30.$$
 
@@ -6808,7 +8053,7 @@ shows the global maximum on $[0,6]$ is at zero ovens. Listing the flat-slope out
       "At six jobs the profit curve bends downward, so that output is a local profit peak.",
       "Peak profit is $98$ euros.",
       "Matching marginal revenue to marginal cost is enough; one may skip checking the bend of profit."
-    ],
+    ]
     answer_key: [true, true, true, true, false],
     tactical_explanations: [
       `**A.** → True
@@ -6817,7 +8062,13 @@ Name the objective, find where its slope is flat, then classify with the bend (o
 
 Form profit as revenue minus cost, distribute the minus carefully, then differentiate:
 
-$$P(Q)=(40Q-2Q^{2})-(Q^{2}+4Q+10)=-3Q^{2}+36Q-10,$$
+$$
+P(Q) = (40Q-2Q^{2})-(Q^{2}+4Q+10)
+$$
+
+$$
+P(Q) = -3Q^{2}+36Q-10,
+$$
 
 $$P'(Q)=-6Q+36.$$
 
@@ -6856,7 +8107,17 @@ Name the objective, find where its slope is flat, then classify with the bend (o
 
 Evaluate profit at the peak output — use the level $P$, not the slope:
 
-$$P(6)=-3\\cdot 36+36\\cdot 6-10=-108+216-10=98.$$
+$$
+P(6) = -3\\cdot 36+36\\cdot 6-10
+$$
+
+$$
+P(6) = -108+216-10
+$$
+
+$$
+P(6) = 98.
+$$
 
 Peak profit is $98$ euros, matching the claim
 
@@ -6866,11 +8127,10 @@ Pause on the classification step: $f''<0$ at a critical point marks a local peak
 The wording sounds close to a standard optimisation rule, but it skips a classification step or confuses a level with a slope. Track the definitions carefully.
 
 Matching $R'=C'$ is equivalent to $P'=0$: it only finds a critical point of profit. Without a bend check (or an equivalent first-derivative sign argument), one cannot yet label that point a peak rather than a trough or a flat inflection. Skipping the second-derivative classification leaves the maximisation unfinished. Comparing that with the claim, the statement is False.`
-    ],
+    ]
     difficulty_level: "3/5",
     sort_order: 90,
-    solution_overview:
-      `Print-shop profit is revenue minus cost:
+    solution_overview: `Print-shop profit is revenue minus cost:
 
 $$P(Q)=(40Q-2Q^{2})-(Q^{2}+4Q+10)=-3Q^{2}+36Q-10,$$
 
@@ -6897,7 +8157,7 @@ Matching $R'=C'$ only finds a critical point of profit; without a bend check (or
       "At eight loaves, South's profit curve bends upward, so that output is a local profit trough for South.",
       "North's peak profit is $34$ euros, while South's profit at eight loaves is $6$ euros.",
       "Because both flat-slope outputs equal eight, both bakeries are at a profit maximum."
-    ],
+    ]
     answer_key: [true, true, true, true, false],
     tactical_explanations: [
       `**A.** → True
@@ -6939,9 +8199,21 @@ Name the objective, find where its slope is flat, then classify with the bend (o
 
 Evaluate each profit level at eight loaves:
 
-$$P_N(8)=-64+128-30=34,$$
+$$
+P_N(8) = -64+128-30
+$$
 
-$$P_S(8)=64-128+70=6.$$
+$$
+P_N(8) = 34,
+$$
+
+$$
+P_S(8) = 64-128+70
+$$
+
+$$
+P_S(8) = 6.
+$$
 
 North's peak profit is $34$ euros, while South's profit at the same output is only $6$ euros. Both numbers match the claim
 
@@ -6951,11 +8223,10 @@ An interior candidate for a smooth extremum must make the first derivative vanis
 Flat slope finds a candidate; the bend (or a sign chart) then classifies peak versus trough. Keep those two steps separate.
 
 Both bakeries have a flat slope at eight loaves, but the bends disagree: North has a peak while South has a trough. Flat slope alone finds candidates; it does not mean both are at a profit maximum. South is locally *minimising* profit there. The claim confuses critical point with maximum. Comparing that with the claim, the statement is False.`
-    ],
+    ]
     difficulty_level: "4/5",
     sort_order: 91,
-    solution_overview:
-      `Two bakeries share the critical output $Q=8$ but run opposite profit shapes:
+    solution_overview: `Two bakeries share the critical output $Q=8$ but run opposite profit shapes:
 
 $$P_N(Q)=-Q^{2}+16Q-30,\\qquad P_S(Q)=Q^{2}-16Q+70.$$
 
@@ -6984,7 +8255,7 @@ Equal flat-slope outputs do not mean both bakeries are maximising profit. Shared
       "Even so, intensity zero is a strict global maximum of the loyalty index.",
       "Because the second derivative vanishes at zero, intensity zero cannot be a local peak.",
       "A necessary condition at an interior local peak is that the second derivative is at most zero; here that necessary condition still holds."
-    ],
+    ]
     answer_key: [true, true, true, false, true],
     tactical_explanations: [
       `**A.** → True
@@ -7011,7 +8282,13 @@ Global comparison on a restricted domain needs every candidate value — interio
 
 Even with $L''(0)=0$, compare nearby values directly. For every $x\\neq 0$,
 
-$$L(x)=10-x^{4}<10=L(0).$$
+$$
+L(x) = 10-x^{4}<10
+$$
+
+$$
+L(x) = L(0).
+$$
 
 So the index at zero strictly dominates every other intensity: zero is a strict global maximum (hence also a strict local peak). The failed bend test does not cancel that comparison, so the statement is True.`,
       `**D.** → False
@@ -7024,11 +8301,10 @@ Vanishing of the second derivative only makes the *usual sufficient bend test* f
 Name the objective, find where its slope is flat, then classify with the bend (or a sign chart) before matching the claim.
 
 At an interior local peak a necessary condition is $L''\\le 0$ (the curve cannot bend strictly upward there). Here $L''(0)=0$, which satisfies $L''\\le 0$. The necessary condition therefore still holds, even though the stricter sufficient test $L''<0$ fails. The claim is carefully worded and correct, so the statement is True.`
-    ],
+    ]
     difficulty_level: "4/5",
     sort_order: 92,
-    solution_overview:
-      `The loyalty index is the downward fourth-power bump
+    solution_overview: `The loyalty index is the downward fourth-power bump
 
 $$L(x)=10-x^{4}.$$
 
@@ -7055,7 +8331,7 @@ so zero is a strict global maximum. Vanishing of $L''$ does not forbid a peak. A
       "At seven units the profit curve bends downward, so that output is a local profit peak.",
       "The cost-minimising output of four units is automatically the profit-maximising output as well.",
       "At the profit peak, profit equals $68$ euros, while at the cost trough, cost equals $14$ euros."
-    ],
+    ]
     answer_key: [true, true, true, false, true],
     tactical_explanations: [
       `**A.** → True
@@ -7075,7 +8351,13 @@ Name the objective, find where its slope is flat, then classify with the bend (o
 
 Form profit as revenue minus cost and simplify:
 
-$$P(Q)=(20Q-Q^{2})-(Q^{2}-8Q+30)=-2Q^{2}+28Q-30.$$
+$$
+P(Q) = (20Q-Q^{2})-(Q^{2}-8Q+30)
+$$
+
+$$
+P(Q) = -2Q^{2}+28Q-30.
+$$
 
 Set the slope to zero:
 
@@ -7106,18 +8388,33 @@ Name the objective, find where its slope is flat, then classify with the bend (o
 
 Evaluate the two levels at their respective critical outputs:
 
-$$P(7)=-2\\cdot 49+28\\cdot 7-30=-98+196-30=68,$$
+$$
+P(7) = -2\\cdot 49+28\\cdot 7-30
+$$
 
-$$C(4)=16-32+30=14.$$
+$$
+P(7) = -98+196-30
+$$
+
+$$
+P(7) = 68,
+$$
+
+$$
+C(4) = 16-32+30
+$$
+
+$$
+C(4) = 14.
+$$
 
 At the profit peak, profit equals $68$ euros; at the cost trough, cost equals $14$ euros. Both figures match the claim
 
 Pause on the classification step: $f''<0$ at a critical point marks a local peak, $f''>0$ marks a local trough, and $f''=0$ makes the usual bend test inconclusive. So the statement is True.`
-    ],
+    ]
     difficulty_level: "4/5",
     sort_order: 93,
-    solution_overview:
-      `Cost and revenue are
+    solution_overview: `Cost and revenue are
 
 $$C(Q)=Q^{2}-8Q+30,\\qquad R(Q)=20Q-Q^{2},$$
 
@@ -7140,7 +8437,7 @@ Cost has slope $C'=2Q-8$ and bend $C''=2>0$, so the cost trough is at $Q=4$ with
       "At five hours, B's utility curve bends upward, so that hour minimises B's satisfaction locally.",
       "A's peak utility is $25$, while B's utility at five hours is $5$.",
       "Because both solve for a flat slope at the same hour, both are maximising satisfaction there."
-    ],
+    ]
     answer_key: [true, true, true, true, false],
     tactical_explanations: [
       `**A.** → True
@@ -7182,9 +8479,21 @@ Name the objective, find where its slope is flat, then classify with the bend (o
 
 Evaluate each utility level at five hours:
 
-$$U_A(5)=-25+50=25,$$
+$$
+U_A(5) = -25+50
+$$
 
-$$U_B(5)=25-50+30=5.$$
+$$
+U_A(5) = 25,
+$$
+
+$$
+U_B(5) = 25-50+30
+$$
+
+$$
+U_B(5) = 5.
+$$
 
 A's peak utility is $25$, while B's utility at the same hour is only $5$. Both numbers match the claim
 
@@ -7194,11 +8503,10 @@ An interior candidate for a smooth extremum must make the first derivative vanis
 The wording sounds close to a standard optimisation rule, but it skips a classification step or confuses a level with a slope. Track the definitions carefully.
 
 Both hikers solve for a flat slope at five hours, but the bends disagree: A has a peak while B has a trough. Flat slope alone finds candidates; it does not mean both are maximising satisfaction. B is locally *minimising* utility there. The claim confuses critical point with maximum. Comparing that with the claim, the statement is False.`
-    ],
+    ]
     difficulty_level: "4/5",
     sort_order: 94,
-    solution_overview:
-      `Two hikers share the critical hour $t=5$ but run opposite utility shapes:
+    solution_overview: `Two hikers share the critical hour $t=5$ but run opposite utility shapes:
 
 $$U_A(t)=-t^{2}+10t,\\qquad U_B(t)=t^{2}-10t+30.$$
 
@@ -7227,7 +8535,7 @@ Equal flat-slope hours do not mean both hikers are maximising satisfaction. Shar
       "Therefore $\\pm 2$ are local troughs and $0$ is a local peak.",
       "The local peak value is $16$, while each local trough has value $0$.",
       "Because intensity zero is a local peak, it is also the global maximum of payoff on the whole real line."
-    ],
+    ]
     answer_key: [true, true, true, true, false],
     tactical_explanations: [
       `**A.** → True
@@ -7236,7 +8544,17 @@ Name the objective, find where its slope is flat, then classify with the bend (o
 
 Differentiate the payoff and set the slope to zero:
 
-$$f'(x)=4x^{3}-16x=4x(x^{2}-4)=4x(x-2)(x+2).$$
+$$
+f'(x) = 4x^{3}-16x
+$$
+
+$$
+f'(x) = 4x(x^{2}-4)
+$$
+
+$$
+f'(x) = 4x(x-2)(x+2).
+$$
 
 The roots are $x=-2$, $x=0$, and $x=2$. Those are exactly the flat-slope staffing intensities
 
@@ -7277,11 +8595,10 @@ Pause on the classification step: $f''<0$ at a critical point marks a local peak
 Global comparison on a restricted domain needs every candidate value — interior critical points and endpoints — not just the first flat-slope output you meet.
 
 A local peak need not be global on the whole real line. As $|x|\\to\\infty$, the leading term $x^{4}$ drives $f(x)\\to\\infty$, so values far from zero eventually exceed $f(0)=16$. Intensity zero is only a local peak — the unbounded domain lets payoff grow afterward — so it is not the global maximum. Comparing that with the claim, the statement is False.`
-    ],
+    ]
     difficulty_level: "5/5",
     sort_order: 95,
-    solution_overview:
-      `Warehouse net payoff is the even quartic
+    solution_overview: `Warehouse net payoff is the even quartic
 
 $$f(x)=x^{4}-8x^{2}+16=(x^{2}-4)^{2}.$$
 
@@ -7304,7 +8621,7 @@ Flat slopes sit at $x=-2$, $x=0$, and $x=2$. The bend test gives $f''(\\pm 2)=32
       "Calling six hours optimal is reasonable for a cost-minimisation goal, because the bend confirms a trough.",
       "If the clinic's goal were instead to maximise cost, the same flat-slope point would be the wrong type of extremum.",
       "A point where the slope is zero already means the clinic is cost-maximising, so no bend check is needed."
-    ],
+    ]
     answer_key: [true, true, true, true, false],
     tactical_explanations: [
       `**A.** → True
@@ -7348,11 +8665,10 @@ An interior candidate for a smooth extremum must make the first derivative vanis
 The wording sounds close to a standard optimisation rule, but it skips a classification step or confuses a level with a slope. Track the definitions carefully.
 
 A point where the slope is zero is only a critical point — it might be a peak, a trough, or neither. Here $C''(6)>0$, so six hours is a cost *minimum*, not a maximum. Claiming that zero slope already means cost-maximising, with no bend check needed, reverses the correct label and skips the classification step. Comparing that with the claim, the statement is False.`
-    ],
+    ]
     difficulty_level: "3/5",
     sort_order: 96,
-    solution_overview:
-      `Clinic staffing cost is the upward-opening parabola
+    solution_overview: `Clinic staffing cost is the upward-opening parabola
 
 $$C(h)=2h^{2}-24h+100,\\qquad h>0.$$
 
@@ -7375,7 +8691,7 @@ Flat slope at $h=6$ together with $C''>0$ marks a local cost *trough*, so callin
       "For Cinema B, the second-derivative bend check is inconclusive at three screenings.",
       "A sign chart of Cinema B's slope shows no sign change at three screenings, so that output is neither a local peak nor a local trough for B.",
       "Because both have a flat slope at three screenings, both cinemas are at a profit peak."
-    ],
+    ]
     answer_key: [true, true, true, true, false],
     tactical_explanations: [
       `**A.** → True
@@ -7423,11 +8739,10 @@ for every $Q$, with equality only at $Q=3$. The slope does not change sign throu
 Flat slope finds a candidate; the bend (or a sign chart) then classifies peak versus trough. Keep those two steps separate.
 
 Both cinemas have a flat slope at three screenings, but only A has a profit peak. For B the slope does not change sign, so three screenings is not a local peak. Shared critical outputs do not mean shared extrema. Claiming both are at a profit peak overreaches. Comparing that with the claim, the statement is False.`
-    ],
+    ]
     difficulty_level: "5/5",
     sort_order: 97,
-    solution_overview:
-      `Two cinemas share the critical screening count $Q=3$ but have different shapes:
+    solution_overview: `Two cinemas share the critical screening count $Q=3$ but have different shapes:
 
 $$P_A(Q)=-(Q-3)^{2}+5,\\qquad P_B(Q)=(Q-3)^{3}+5.$$
 
@@ -7446,7 +8761,7 @@ For A: $P_A'=-2(Q-3)$ and $P_A''=-2<0$, so $Q=3$ is a local profit peak. For B: 
       "At $x=2$ the curve bends upward, so that point is a local trough, not a peak.",
       "There is no global maximum on the real line, because $f(x)$ tends to infinity as $x$ grows without bound.",
       "Stopping after listing the flat-slope outputs already finishes a maximisation proof."
-    ],
+    ]
     answer_key: [true, true, true, true, false],
     tactical_explanations: [
       `**A.** → True
@@ -7455,7 +8770,17 @@ Name the objective, find where its slope is flat, then classify with the bend (o
 
 Differentiate and set the slope to zero:
 
-$$f'(x)=3x^{2}-6x=3x(x-2)=0.$$
+$$
+f'(x) = 3x^{2}-6x
+$$
+
+$$
+f'(x) = 3x(x-2)
+$$
+
+$$
+f'(x) = 0.
+$$
 
 The roots really are $x=0$ and $x=2$. The student's list of flat-slope outputs is therefore correct as a list of critical points
 
@@ -7477,7 +8802,13 @@ Name the objective, find where its slope is flat, then classify with the bend (o
 
 Classify $x=2$ the same way:
 
-$$f''(2)=12-6=6>0.$$
+$$
+f''(2) = 12-6
+$$
+
+$$
+f''(2) = 6>0.
+$$
 
 An upward bend at a flat slope is the second-derivative test for a local minimum. Therefore $x=2$ is a local trough, *not* a peak. The claim correctly refuses to call it a maximum
 
@@ -7494,11 +8825,10 @@ An interior candidate for a smooth extremum must make the first derivative vanis
 The wording sounds close to a standard optimisation rule, but it skips a classification step or confuses a level with a slope. Track the definitions carefully.
 
 Listing the flat-slope outputs only produces candidates. Without classifying peak versus trough, and without checking whether a global maximum even exists on the domain, the maximisation proof is unfinished. Here $x=2$ is a trough and no global max exists on $\\mathbb{R}$. Stopping after $f'=0$ does not finish the argument. Comparing that with the claim, the statement is False.`
-    ],
+    ]
     difficulty_level: "3/5",
     sort_order: 98,
-    solution_overview:
-      `The exam function on $\\mathbb{R}$ is
+    solution_overview: `The exam function on $\\mathbb{R}$ is
 
 $$f(x)=x^{3}-3x^{2}+5.$$
 
@@ -7521,7 +8851,7 @@ Flat slopes at $x=0$ and $x=2$ are only candidates. The bend test labels $x=0$ a
       "A local profit peak means: in some neighbourhood of five bikes, every other output gives strictly smaller profit than at five.",
       "Because five bikes is a local peak, the profit level there must be zero.",
       "Evaluating gives a profit of $35$ euros at five bikes."
-    ],
+    ]
     answer_key: [true, true, true, false, true],
     tactical_explanations: [
       `**A.** → True
@@ -7562,16 +8892,25 @@ Name the objective, find where its slope is flat, then classify with the bend (o
 
 Evaluate profit at the peak output — use the level $P$, not the slope:
 
-$$P(5)=-3\\cdot 25+30\\cdot 5-40=-75+150-40=35.$$
+$$
+P(5) = -3\\cdot 25+30\\cdot 5-40
+$$
+
+$$
+P(5) = -75+150-40
+$$
+
+$$
+P(5) = 35.
+$$
 
 Profit at five bikes is $35$ euros, matching the claim
 
 An interior candidate for a smooth extremum must make the first derivative vanish; that flat-slope equation only produces candidates, not finished labels. So the statement is True.`
-    ],
+    ]
     difficulty_level: "3/5",
     sort_order: 99,
-    solution_overview:
-      `Bike-rental profit is the downward-opening parabola
+    solution_overview: `Bike-rental profit is the downward-opening parabola
 
 $$P(Q)=-3Q^{2}+30Q-40,\\qquad Q>0.$$
 
@@ -7598,7 +8937,7 @@ which is not zero — flat slope never forces zero profit. Shared workflow for e
       "The memo is correct that both flat-slope outputs are local profit maxima.",
       "West's peak profit is $29$ euros, while East's profit at five units is $15$ euros.",
       "Because the two flat-slope outputs are unequal, at most one of the two flat-slope equations can be valid."
-    ],
+    ]
     answer_key: [true, true, false, true, false],
     tactical_explanations: [
       `**A.** → True
@@ -7638,9 +8977,21 @@ Name the objective, find where its slope is flat, then classify with the bend (o
 
 Evaluate each plant's profit at its own critical output:
 
-$$P_W(7)=-49+98-20=29,$$
+$$
+P_W(7) = -49+98-20
+$$
 
-$$P_E(5)=25-50+40=15.$$
+$$
+P_W(7) = 29,
+$$
+
+$$
+P_E(5) = 25-50+40
+$$
+
+$$
+P_E(5) = 15.
+$$
 
 West's peak profit is $29$ euros, while East's profit at five units is $15$ euros. Both figures match the claim
 
@@ -7650,11 +9001,10 @@ An interior candidate for a smooth extremum must make the first derivative vanis
 The wording sounds close to a standard optimisation rule, but it skips a classification step or confuses a level with a slope. Track the definitions carefully.
 
 Each plant has its own profit function and its own derivative. West's equation $P_W'=0$ and East's equation $P_E'=0$ are independent; they can (and do) have different roots without either equation being invalid. Unequal flat-slope outputs do not cast doubt on either calculation. The claim is a non sequitur. Comparing that with the claim, the statement is False.`
-    ],
+    ]
     difficulty_level: "5/5",
     sort_order: 100,
-    solution_overview:
-      `Two plants have different profit shapes and different critical outputs:
+    solution_overview: `Two plants have different profit shapes and different critical outputs:
 
 $$P_W(Q)=-Q^{2}+14Q-20,\\qquad P_E(Q)=Q^{2}-10Q+40.$$
 
@@ -7673,7 +9023,7 @@ West: $P_W'=-2Q+14$ vanishes at $Q=7$, and $P_W''=-2<0$, so seven is a local pro
       "At nine crates the profit curve bends downward, so that output is a local profit peak.",
       "Peak daily profit is $36$ euros.",
       "Because the slope of profit is flat at nine crates, the profit level itself must be zero there."
-    ],
+    ]
     answer_key: [true, true, true, true, false],
     tactical_explanations: [
       `**A.** → True
@@ -7715,7 +9065,17 @@ Name the objective, find where its slope is flat, then classify with the bend (o
 
 Evaluate profit at the peak output — use the level $P$, not the slope:
 
-$$P(9)=-9^{2}+18\\cdot 9-45=-81+162-45=36.$$
+$$
+P(9) = -9^{2}+18\\cdot 9-45
+$$
+
+$$
+P(9) = -81+162-45
+$$
+
+$$
+P(9) = 36.
+$$
 
 Peak daily profit is $36$ euros, matching the claim
 
@@ -7729,11 +9089,10 @@ A flat slope describes how profit *changes* at nine crates, not how large profit
 $$P(9)=36\\neq 0.$$
 
 Zero slope does not force zero profit. Comparing that with the claim, the statement is False.`
-    ],
+    ]
     difficulty_level: "2/5",
     sort_order: 101,
-    solution_overview:
-      `Farm-shop profit is the downward-opening parabola
+    solution_overview: `Farm-shop profit is the downward-opening parabola
 
 $$P(Q)=-Q^{2}+18Q-45,\\qquad Q\\ge 0.$$
 
@@ -7760,7 +9119,7 @@ A zero slope never forces the profit level itself to be zero — slope and heigh
       "At ten boxes, marginal revenue and marginal cost both equal $30$ euros.",
       "At ten boxes the profit curve bends downward, so that output is a local profit peak, and peak profit is $180$ euros.",
       "Because marginal revenue equals marginal cost at ten boxes, the stall's revenue level equals its cost level there."
-    ],
+    ]
     answer_key: [true, true, true, true, false],
     tactical_explanations: [
       `**A.** → True
@@ -7769,7 +9128,13 @@ Name the objective, find where its slope is flat, then classify with the bend (o
 
 Form profit as revenue minus cost and collect like terms carefully:
 
-$$P(Q)=(50Q-Q^{2})-(Q^{2}+10Q+20)=-2Q^{2}+40Q-20.$$
+$$
+P(Q) = (50Q-Q^{2})-(Q^{2}+10Q+20)
+$$
+
+$$
+P(Q) = -2Q^{2}+40Q-20.
+$$
 
 That simplified quadratic matches the claim exactly
 
@@ -7806,7 +9171,17 @@ Read the bend and evaluate the peak level:
 
 $$P''(Q)=-4<0\\qquad\\Rightarrow\\qquad\\text{local profit peak at }Q=10,$$
 
-$$P(10)=-2\\cdot 100+40\\cdot 10-20=-200+400-20=180.$$
+$$
+P(10) = -2\\cdot 100+40\\cdot 10-20
+$$
+
+$$
+P(10) = -200+400-20
+$$
+
+$$
+P(10) = 180.
+$$
 
 Ten boxes is a local profit peak with peak profit $180$ euros
 
@@ -7820,11 +9195,10 @@ Matching $R'=C'$ means the *derivatives* agree, not the *levels*. At ten boxes,
 $$R(10)=500-100=400,\\qquad C(10)=100+100+20=220,$$
 
 so revenue and cost differ (profit is their gap $180$). Confusing equal marginals with equal levels is the trap. Comparing that with the claim, the statement is False.`
-    ],
+    ]
     difficulty_level: "3/5",
     sort_order: 102,
-    solution_overview:
-      `Market-stall profit is revenue minus cost:
+    solution_overview: `Market-stall profit is revenue minus cost:
 
 $$P(Q)=(50Q-Q^{2})-(Q^{2}+10Q+20)=-2Q^{2}+40Q-20,$$
 
@@ -7851,7 +9225,7 @@ Matching $R'=C'$ only finds a critical point; it does not force the *levels* $R$
       "Peak profits are $64$ euros for truck A and $68$ euros for truck B.",
       "Because both trucks have a local profit peak, they must share the same optimal quantity.",
       "Truck B's peak profit is larger than truck A's, even though B's optimal quantity is smaller."
-    ],
+    ]
     answer_key: [true, true, true, false, true],
     tactical_explanations: [
       `**A.** → True
@@ -7886,9 +9260,25 @@ Name the objective, find where its slope is flat, then classify with the bend (o
 
 Evaluate each truck's profit at its own peak output:
 
-$$P_A(12)=-144+288-80=64,$$
+$$
+P_A(12) = -144+288-80
+$$
 
-$$P_B(8)=-2\\cdot 64+32\\cdot 8-60=-128+256-60=68.$$
+$$
+P_A(12) = 64,
+$$
+
+$$
+P_B(8) = -2\\cdot 64+32\\cdot 8-60
+$$
+
+$$
+P_B(8) = -128+256-60
+$$
+
+$$
+P_B(8) = 68.
+$$
 
 Peak profits are $64$ euros for A and $68$ euros for B, matching the claim
 
@@ -7905,11 +9295,10 @@ Name the objective, find where its slope is flat, then classify with the bend (o
 Comparing the peak levels already computed, $P_B(8)=68>P_A(12)=64$. Truck B's peak profit is larger even though B's optimal meal count $8$ is smaller than A's $12$. Peak height and peak location are independent comparisons
 
 An interior candidate for a smooth extremum must make the first derivative vanish; that flat-slope equation only produces candidates, not finished labels. So the statement is True.`
-    ],
+    ]
     difficulty_level: "4/5",
     sort_order: 103,
-    solution_overview:
-      `Two food trucks have separate profit rules:
+    solution_overview: `Two food trucks have separate profit rules:
 
 $$P_A(Q)=-Q^{2}+24Q-80,\\qquad P_B(Q)=-2Q^{2}+32Q-60.$$
 
@@ -7928,7 +9317,7 @@ Truck A: $P_A'=-2Q+24$ vanishes at $Q=12$, and $P_A''=-2<0$, so twelve is a loca
       "Therefore two batches is a local cost peak and four batches is a local cost trough.",
       "The local trough cost value is $21$ (hundreds of euros).",
       "Because the slope of cost is flat at two batches, that output minimises cost."
-    ],
+    ]
     answer_key: [true, true, true, true, false],
     tactical_explanations: [
       `**A.** → True
@@ -7937,7 +9326,17 @@ Name the objective, find where its slope is flat, then classify with the bend (o
 
 Differentiate weekly cost and set the slope to zero:
 
-$$C'(Q)=3Q^{2}-18Q+24=3(Q^{2}-6Q+8)=3(Q-2)(Q-4).$$
+$$
+C'(Q) = 3Q^{2}-18Q+24
+$$
+
+$$
+C'(Q) = 3(Q^{2}-6Q+8)
+$$
+
+$$
+C'(Q) = 3(Q-2)(Q-4).
+$$
 
 The roots are $Q=2$ and $Q=4$, both positive. Those are the flat-slope batch counts
 
@@ -7968,7 +9367,13 @@ Name the objective, find where its slope is flat, then classify with the bend (o
 
 Evaluate cost at the local trough $Q=4$:
 
-$$C(4)=64-144+96+5=21.$$
+$$
+C(4) = 64-144+96+5
+$$
+
+$$
+C(4) = 21.
+$$
 
 The local trough cost value is $21$ (hundreds of euros), matching the claim
 
@@ -7978,11 +9383,10 @@ An interior candidate for a smooth extremum must make the first derivative vanis
 The wording sounds close to a standard optimisation rule, but it skips a classification step or confuses a level with a slope. Track the definitions carefully.
 
 At two batches the slope is flat, but the bend is downward ($C''(2)<0$), so that output is a local cost *peak*, not a minimum. The cost-minimising local candidate is the trough at four batches. Claiming that flat slope at two batches minimises cost reverses the correct label. Comparing that with the claim, the statement is False.`
-    ],
+    ]
     difficulty_level: "3/5",
     sort_order: 104,
-    solution_overview:
-      `Weekly cost is the cubic
+    solution_overview: `Weekly cost is the cubic
 
 $$C(Q)=Q^{3}-9Q^{2}+24Q+5,\\qquad Q>0.$$
 
@@ -8009,7 +9413,7 @@ A flat slope at two batches marks a local cost peak, not a minimum — bend clas
       "Endpoint costs are $40$ at zero shifts and $24$ at eight shifts, while cost at five shifts is $15$.",
       "On $[0,8]$, the global cost minimum is at the endpoint of eight shifts.",
       "On $[0,8]$, the global cost minimum is at the interior trough of five shifts."
-    ],
+    ]
     answer_key: [true, true, true, false, true],
     tactical_explanations: [
       `**A.** → True
@@ -8042,9 +9446,21 @@ Evaluate cost at both endpoints and at the interior trough:
 
 $$C(0)=40,$$
 
-$$C(5)=25-50+40=15,$$
+$$
+C(5) = 25-50+40
+$$
 
-$$C(8)=64-80+40=24.$$
+$$
+C(5) = 15,
+$$
+
+$$
+C(8) = 64-80+40
+$$
+
+$$
+C(8) = 24.
+$$
 
 Endpoint costs are $40$ at zero shifts and $24$ at eight shifts, while cost at five shifts is $15$, matching the claim
 
@@ -8061,11 +9477,10 @@ Global comparison on a restricted domain needs every candidate value — interio
 Among $C(0)=40$, $C(5)=15$, and $C(8)=24$, the minimum is $15$ at the interior trough. On $[0,8]$ the global cost minimum is therefore at five shifts. The local trough wins the global comparison against both endpoints
 
 Pause on the classification step: $f''<0$ at a critical point marks a local peak, $f''>0$ marks a local trough, and $f''=0$ makes the usual bend test inconclusive. So the statement is True.`
-    ],
+    ]
     difficulty_level: "3/5",
     sort_order: 105,
-    solution_overview:
-      `Delivery cost on the closed shift interval $[0,8]$ is
+    solution_overview: `Delivery cost on the closed shift interval $[0,8]$ is
 
 $$C(Q)=Q^{2}-10Q+40.$$
 
@@ -8088,7 +9503,7 @@ The only interior flat-slope schedule is $Q=5$, and the upward bend marks a loca
       "That maximum planting area is $100$ square metres.",
       "At that square the area curve bends downward, confirming a local maximum.",
       "Because every layout uses the same $40$ metres of fence, every layout gives the same area, so no optimisation is needed."
-    ],
+    ]
     answer_key: [true, true, true, true, false],
     tactical_explanations: [
       `**A.** → True
@@ -8119,7 +9534,13 @@ Name the objective, find where its slope is flat, then classify with the bend (o
 
 Evaluate area at the critical square:
 
-$$A(10)=10\\cdot 10=100.$$
+$$
+A(10) = 10\\cdot 10
+$$
+
+$$
+A(10) = 100.
+$$
 
 Maximal planting area is $100$ square metres. (As a check, $A''(10)=-2<0$ confirms a maximum.) The level matches the claim
 
@@ -8140,11 +9561,10 @@ Pause on the classification step: $f''<0$ at a critical point marks a local peak
 The wording sounds close to a standard optimisation rule, but it skips a classification step or confuses a level with a slope. Track the definitions carefully.
 
 Every feasible layout uses the same $40$ metres of fence, but different shapes enclose different areas: a $1\\times 19$ rectangle has area $19$, while the $10\\times 10$ square has area $100$. Equal perimeter does not force equal area. Optimisation is needed. Comparing that with the claim, the statement is False.`
-    ],
+    ]
     difficulty_level: "3/5",
     sort_order: 106,
-    solution_overview:
-      `With a fixed $40$ m fence for a rectangular bed, if one side is $x$ then the adjacent side is $20-x$ (semi-perimeter $20$), so area is
+    solution_overview: `With a fixed $40$ m fence for a rectangular bed, if one side is $x$ then the adjacent side is $20-x$ (semi-perimeter $20$), so area is
 
 $$A(x)=x(20-x)=20x-x^{2},\\qquad 0<x<20.$$
 
@@ -8167,7 +9587,7 @@ Flat slope at $x=10$ gives the square $10\\times 10$ with $A(10)=100$. The downw
       "Paper area has a flat slope at printed width $x=6$ (taking $x>0$).",
       "At that width the printed region is a $6\\times 6$ square, total paper area is $64$, and the area curve bends upward, confirming a local minimum.",
       "Any printed rectangle of area $36$ already minimises paper use; the margins do not create a real optimisation problem."
-    ],
+    ]
     answer_key: [true, true, true, true, false],
     tactical_explanations: [
       `**A.** → True
@@ -8187,7 +9607,17 @@ Name the objective, find where its slope is flat, then classify with the bend (o
 
 Expand the product carefully:
 
-$$A(x)=(x+2)\\left(\\dfrac{36}{x}+2\\right)=x\\cdot\\dfrac{36}{x}+2x+2\\cdot\\dfrac{36}{x}+4=36+2x+\\dfrac{72}{x}+4.$$
+$$
+A(x) = (x+2)\\left(\\dfrac{36}{x}+2\\right)
+$$
+
+$$
+A(x) = x\\cdot\\dfrac{36}{x}+2x+2\\cdot\\dfrac{36}{x}+4
+$$
+
+$$
+A(x) = 36+2x+\\dfrac{72}{x}+4.
+$$
 
 Collecting constants, $A(x)=40+2x+\\dfrac{72}{x}$, matching the claim
 
@@ -8209,7 +9639,17 @@ Name the objective, find where its slope is flat, then classify with the bend (o
 
 At $x=6$ the printed height is $36/6=6$, so the printed region is a $6\\times 6$ square. Total paper area is
 
-$$A(6)=40+12+\\dfrac{72}{6}=40+12+12=64.$$
+$$
+A(6) = 40+12+\\dfrac{72}{6}
+$$
+
+$$
+A(6) = 40+12+12
+$$
+
+$$
+A(6) = 64.
+$$
 
 The bend $A''(6)=144/216>0$ confirms a local minimum. All three parts of the claim hold
 
@@ -8219,11 +9659,10 @@ Pause on the classification step: $f''<0$ at a critical point marks a local peak
 The wording sounds close to a standard optimisation rule, but it skips a classification step or confuses a level with a slope. Track the definitions carefully.
 
 Any printed rectangle of area $36$ keeps the *printed* region fixed in area, but different aspect ratios change the outer paper once margins are added. A long thin print forces large outer dimensions; the square print minimises paper. The margins create a genuine optimisation problem. Comparing that with the claim, the statement is False.`
-    ],
+    ]
     difficulty_level: "4/5",
     sort_order: 107,
-    solution_overview:
-      `Printed area is fixed at $36$, so if printed width is $x>0$ then printed height is $36/x$. With a $1$ cm margin on every side, total paper area is
+    solution_overview: `Printed area is fixed at $36$, so if printed width is $x>0$ then printed height is $36/x$. With a $1$ cm margin on every side, total paper area is
 
 $$A(x)=(x+2)\\left(\\dfrac{36}{x}+2\\right)=40+2x+\\dfrac{72}{x}.$$
 
@@ -8246,7 +9685,7 @@ Flat slope at $x=6$ (taking $x>0$) gives a $6\\times 6$ printed square with tota
       "Total area has a flat slope at the split $x=\\dfrac{240}{4+\\pi}$.",
       "At that split the area curve bends upward, so the split is a local minimum of total enclosed area.",
       "Because two shapes are involved, the problem cannot be reduced to a single-variable calculus exercise."
-    ],
+    ]
     answer_key: [true, true, true, true, false],
     tactical_explanations: [
       `**A.** → True
@@ -8255,7 +9694,13 @@ Name the objective, find where its slope is flat, then classify with the bend (o
 
 Let $x$ be the wire length for the square, so $60-x$ goes to the circle. The square's side is $x/4$ and the circle's circumference $2\\pi r=60-x$ gives radius $r=(60-x)/(2\\pi)$. Total enclosed area as a function of $x$ alone is
 
-$$A(x)=\\left(\\dfrac{x}{4}\\right)^{2}+\\pi r^{2}=\\dfrac{x^{2}}{16}+\\dfrac{(60-x)^{2}}{4\\pi}.$$
+$$
+A(x) = \\left(\\dfrac{x}{4}\\right)^{2}+\\pi r^{2}
+$$
+
+$$
+A(x) = \\dfrac{x^{2}}{16}+\\dfrac{(60-x)^{2}}{4\\pi}.
+$$
 
 That reduction matches the setup behind the claim, so the statement is True.`,
       `**B.** → True
@@ -8264,7 +9709,13 @@ Name the objective, find where its slope is flat, then classify with the bend (o
 
 Differentiate the reduced area (product and chain rules on the circle term):
 
-$$A'(x)=\\dfrac{2x}{16}+\\dfrac{2(60-x)(-1)}{4\\pi}=\\dfrac{x}{8}-\\dfrac{60-x}{2\\pi}.$$
+$$
+A'(x) = \\dfrac{2x}{16}+\\dfrac{2(60-x)(-1)}{4\\pi}
+$$
+
+$$
+A'(x) = \\dfrac{x}{8}-\\dfrac{60-x}{2\\pi}.
+$$
 
 Setting $A'(x)=0$ and solving in $(0,60)$ yields a unique critical cut. The slope of total area is therefore a well-defined single-variable derivative with an interior flat point, so the statement is True.`,
       `**C.** → True
@@ -8288,11 +9739,10 @@ Pause on the classification step: $f''<0$ at a critical point marks a local peak
 Reduce the constrained problem to one free variable, then differentiate the reduced objective exactly as in unconstrained single-variable calculus.
 
 Two shapes appear, but both are determined by the single split variable $x$. After writing square area and circle area in terms of $x$, the problem is ordinary single-variable calculus on $[0,60]$. The presence of two shapes does not block the reduction. Comparing that with the claim, the statement is False.`
-    ],
+    ]
     difficulty_level: "5/5",
     sort_order: 108,
-    solution_overview:
-      `A $60$ cm wire is split: length $x$ for a square and $60-x$ for a circle ($0\\le x\\le 60$). Side of the square is $x/4$; radius of the circle is $(60-x)/(2\\pi)$. Total enclosed area is
+    solution_overview: `A $60$ cm wire is split: length $x$ for a square and $60-x$ for a circle ($0\\le x\\le 60$). Side of the square is $x/4$; radius of the circle is $(60-x)/(2\\pi)$. Total enclosed area is
 
 $$A(x)=\\left(\\dfrac{x}{4}\\right)^{2}+\\pi\\left(\\dfrac{60-x}{2\\pi}\\right)^{2}=\\dfrac{x^{2}}{16}+\\dfrac{(60-x)^{2}}{4\\pi}.$$
 
@@ -8311,7 +9761,7 @@ Differentiate and classify: the unique critical point in $(0,60)$ is a local *mi
       "At $x=5$ one has $y=10$ and utility level $50$.",
       "At $x=5$ the utility curve bends downward, so that bundle maximises utility locally on the budget line.",
       "After substitution, one may skip checking the bend of utility because a budget constraint automatically guarantees a maximum."
-    ],
+    ]
     answer_key: [true, true, true, true, false],
     tactical_explanations: [
       `**A.** → True
@@ -8320,7 +9770,13 @@ Reduce the constrained problem to one free variable, then differentiate the redu
 
 Solve the budget $2x+y=20$ for $y=20-2x$. Positivity $y>0$ forces $x<10$, and $x>0$ is already required, so the feasible open interval is $0<x<10$. Substituting into $U=xy$ gives the one-variable utility
 
-$$u(x)=x(20-2x)=20x-2x^{2}.$$
+$$
+u(x) = x(20-2x)
+$$
+
+$$
+u(x) = 20x-2x^{2}.
+$$
 
 That reduction matches the claim, so the statement is True.`,
       `**B.** → True
@@ -8340,7 +9796,17 @@ Name the objective, find where its slope is flat, then classify with the bend (o
 
 At $x=5$ the budget gives $y=20-2\\cdot 5=10$, and utility is the product
 
-$$U=xy=5\\cdot 10=50.$$
+$$
+U = xy
+$$
+
+$$
+U = 5\\cdot 10
+$$
+
+$$
+U = 50.
+$$
 
 (Alternatively $u(5)=20\\cdot 5-2\\cdot 25=100-50=50$.) Bundle $(5,10)$ with utility level $50$ matches the claim
 
@@ -8361,11 +9827,10 @@ Pause on the classification step: $f''<0$ at a critical point marks a local peak
 Reduce the constrained problem to one free variable, then differentiate the reduced objective exactly as in unconstrained single-variable calculus.
 
 After substitution one still has an ordinary calculus problem: critical points must be classified. The budget constraint defines the feasible set; it does not by itself guarantee that a flat-slope bundle is a maximum rather than a minimum or saddle of the reduced utility. Skipping the bend check (here $u''=-4<0$) leaves the argument unfinished. Comparing that with the claim, the statement is False.`
-    ],
+    ]
     difficulty_level: "3/5",
     sort_order: 109,
-    solution_overview:
-      `Utility $U=xy$ on the budget $2x+y=20$ with $x>0$, $y>0$. Solve for $y=20-2x$ (requiring $0<x<10$) and substitute:
+    solution_overview: `Utility $U=xy$ on the budget $2x+y=20$ with $x>0$, $y>0$. Solve for $y=20-2x$ (requiring $0<x<10$) and substitute:
 
 $$u(x)=x(20-2x)=20x-2x^{2}.$$
 
@@ -8388,7 +9853,7 @@ Flat slope at $x=5$ gives $y=10$ and $U=50$. The downward bend confirms a local 
       "At that split the output curve bends downward, confirming a local maximum.",
       "Any other split with $x+y=10$ yields strictly smaller output than $25$.",
       "The constraint $x+y=10$ already forces output $25$ for every feasible pair $(x,y)$."
-    ],
+    ]
     answer_key: [true, true, true, true, false],
     tactical_explanations: [
       `**A.** → True
@@ -8434,7 +9899,13 @@ Name the objective, find where its slope is flat, then classify with the bend (o
 
 For any other split with $x+y=10$ and $x\\neq 5$, the reduced area satisfies
 
-$$q(x)=10x-x^{2}=25-(x-5)^{2}<25.$$
+$$
+q(x) = 10x-x^{2}
+$$
+
+$$
+q(x) = 25-(x-5)^{2}<25.
+$$
 
 Equivalently, $xy=((x+y)^{2}-(x-y)^{2})/4=25-(x-y)^{2}/4<25$ unless $x=y$. Every other feasible pair yields strictly smaller output than $25$
 
@@ -8446,11 +9917,10 @@ Reduce the constrained problem to one free variable, then differentiate the redu
 The constraint $x+y=10$ only forces the *sum* of inputs; output $Q=xy$ still varies with the split. A $1+9$ split gives $Q=9$, while $5+5$ gives $25$. The constraint does not force output $25$ for every feasible pair
 
 Pause on the classification step: $f''<0$ at a critical point marks a local peak, $f''>0$ marks a local trough, and $f''=0$ makes the usual bend test inconclusive. Comparing that with the claim, the statement is False.`
-    ],
+    ]
     difficulty_level: "2/5",
     sort_order: 110,
-    solution_overview:
-      `Output $Q=xy$ on the resource constraint $x+y=10$ with $x>0$, $y>0$. Substitute $y=10-x$:
+    solution_overview: `Output $Q=xy$ on the resource constraint $x+y=10$ with $x>0$, $y>0$. Substitute $y=10-x$:
 
 $$q(x)=x(10-x)=10x-x^{2},\\qquad 0<x<10,$$
 
@@ -8469,7 +9939,7 @@ with slope $q'(x)=10-2x$ and bend $q''(x)=-2<0$. Flat slope at $x=5$ gives $y=5$
       "At the $25$-euro price, demand is unit elastic.",
       "At a price of $20$ euros, a small further price increase would still raise the firm's daily revenue.",
       "At the $25$-euro price demand is perfectly inelastic, because elasticity has absolute value $1$."
-    ],
+    ]
     answer_key: [true, true, true, true, false],
     tactical_explanations: [
       `**A.** → True
@@ -8478,7 +9948,17 @@ Relate the revenue slope to demand sensitivity: unit elasticity sits at the reve
 
 Daily revenue is price times quantity demanded:
 
-$$R(p)=p\\cdot D(p)=p(100-2p)=100p-2p^{2}.$$
+$$
+R(p) = p\\cdot D(p)
+$$
+
+$$
+R(p) = p(100-2p)
+$$
+
+$$
+R(p) = 100p-2p^{2}.
+$$
 
 That quadratic in $p$ matches the claim exactly
 
@@ -8493,7 +9973,17 @@ $$R'(p)=100-4p=0\\qquad\\Rightarrow\\qquad p=25.$$
 
 The bend $R''(p)=-4<0$ confirms a peak. Peak revenue is
 
-$$R(25)=100\\cdot 25-2\\cdot 625=2500-1250=1250.$$
+$$
+R(25) = 100\\cdot 25-2\\cdot 625
+$$
+
+$$
+R(25) = 2500-1250
+$$
+
+$$
+R(25) = 1250.
+$$
 
 Both the maximising price and the peak revenue match the claim, so the statement is True.`,
       `**C.** → True
@@ -8502,11 +9992,23 @@ Relate the revenue slope to demand sensitivity: unit elasticity sits at the reve
 
 Point price elasticity of demand is
 
-$$\\varepsilon(p)=\\dfrac{D'(p)\\,p}{D(p)}=\\dfrac{-2\\cdot p}{100-2p}.$$
+$$
+\\varepsilon(p) = \\dfrac{-2\\cdot p}{100-2p}.
+$$
 
 At $p=25$,
 
-$$\\varepsilon(25)=\\dfrac{-50}{100-50}=\\dfrac{-50}{50}=-1.$$
+$$
+\\varepsilon(25) = \\dfrac{-50}{100-50}
+$$
+
+$$
+\\varepsilon(25) = \\dfrac{-50}{50}
+$$
+
+$$
+\\varepsilon(25) = -1.
+$$
 
 Demand is unit elastic at the revenue-maximising price
 
@@ -8517,7 +10019,13 @@ Relate the revenue slope to demand sensitivity: unit elasticity sits at the reve
 
 At $p=20$, marginal revenue is still positive:
 
-$$R'(20)=100-80=20>0.$$
+$$
+R'(20) = 100-80
+$$
+
+$$
+R'(20) = 20>0.
+$$
 
 A positive slope means a small further price increase raises daily revenue. (Equivalently $|\\varepsilon(20)|=40/60=2/3<1$, so demand is inelastic and a price rise helps revenue.) The statement is True, so the statement is True.`,
       `**E.** → False
@@ -8525,11 +10033,10 @@ A positive slope means a small further price increase raises daily revenue. (Equ
 Relate the revenue slope to demand sensitivity: unit elasticity sits at the revenue peak, while inelastic demand only says a small price rise still helps revenue.
 
 Unit elasticity means $|\\varepsilon|=1$, not perfect inelasticity. Perfect inelasticity would mean $\\varepsilon=0$ (quantity does not respond to price at all). At $p=25$ one has $\\varepsilon=-1$, which is the revenue-peak condition, not zero elasticity. The claim misreads $|\\varepsilon|=1$ as perfect inelasticity. Comparing that with the claim, the statement is False.`
-    ],
+    ]
     difficulty_level: "3/5",
     sort_order: 111,
-    solution_overview:
-      `Demand is $D(p)=100-2p$ for $0<p<50$. Revenue as a function of price is
+    solution_overview: `Demand is $D(p)=100-2p$ for $0<p<50$. Revenue as a function of price is
 
 $$R(p)=p\\cdot D(p)=100p-2p^{2}.$$
 
@@ -8556,7 +10063,7 @@ so $\\varepsilon(25)=-1$ (unit elastic). At $p=20$, $|\\varepsilon|<1$ (inelasti
       "At $20$ euros the revenue curve bends downward, so that fare is a local revenue peak.",
       "At $20$ euros the theatre sells $60$ tickets and earns $1200$ euros.",
       "For this demand curve, the price that flattens revenue can differ from the unit-elastic price."
-    ],
+    ]
     answer_key: [true, true, true, true, false],
     tactical_explanations: [
       `**A.** → True
@@ -8565,7 +10072,13 @@ Name the objective, find where its slope is flat, then classify with the bend (o
 
 Ticket revenue is price times audience:
 
-$$R(p)=p(120-3p)=120p-3p^{2}.$$
+$$
+R(p) = p(120-3p)
+$$
+
+$$
+R(p) = 120p-3p^{2}.
+$$
 
 Set the slope to zero:
 
@@ -8580,11 +10093,23 @@ Relate the revenue slope to demand sensitivity: unit elasticity sits at the reve
 
 Point elasticity at the critical fare is
 
-$$\\varepsilon(p)=\\dfrac{D'(p)\\,p}{D(p)}=\\dfrac{-3p}{120-3p}.$$
+$$
+\\varepsilon(p) = \\dfrac{-3p}{120-3p}.
+$$
 
 At $p=20$,
 
-$$\\varepsilon(20)=\\dfrac{-60}{120-60}=\\dfrac{-60}{60}=-1.$$
+$$
+\\varepsilon(20) = \\dfrac{-60}{120-60}
+$$
+
+$$
+\\varepsilon(20) = \\dfrac{-60}{60}
+$$
+
+$$
+\\varepsilon(20) = -1.
+$$
 
 Demand is unit elastic at $20$ euros
 
@@ -8616,11 +10141,10 @@ Pause on the classification step: $f''<0$ at a critical point marks a local peak
 Relate the revenue slope to demand sensitivity: unit elasticity sits at the revenue peak, while inelastic demand only says a small price rise still helps revenue.
 
 For this linear demand, setting $R'(p)=0$ and setting $|\\varepsilon(p)|=1$ are algebraically equivalent: both force $p=20$. The price that flattens revenue *is* the unit-elastic price; they cannot differ for this demand curve. The claim asserts they can differ. Comparing that with the claim, the statement is False.`
-    ],
+    ]
     difficulty_level: "3/5",
     sort_order: 112,
-    solution_overview:
-      `Theatre demand is $D(p)=120-3p$ for $0<p<40$. Revenue is
+    solution_overview: `Theatre demand is $D(p)=120-3p$ for $0<p<40$. Revenue is
 
 $$R(p)=120p-3p^{2},$$
 
@@ -8643,7 +10167,7 @@ gives $\\varepsilon(20)=-1$, so the revenue-flattening price and the unit-elasti
       "Writing revenue as a function of quantity and differentiating also gives marginal revenue $-10$ at sixty gadgets.",
       "The two calculations agree, so the elasticity shortcut matches direct differentiation of revenue with respect to quantity.",
       "Because that marginal revenue is not zero, the $20$-euro price does not maximise the shop's revenue."
-    ],
+    ]
     answer_key: [true, true, true, true, true],
     tactical_explanations: [
       `**A.** → True
@@ -8652,7 +10176,13 @@ Relate the revenue slope to demand sensitivity: unit elasticity sits at the reve
 
 At $p=20$, quantity sold is $D(20)=100-40=60$. Point elasticity is
 
-$$\\varepsilon=\\dfrac{D'(p)\\,p}{D(p)}=\\dfrac{-2\\cdot 20}{60}=-\\dfrac{2}{3}.$$
+$$
+\\varepsilon = \\dfrac{-2\\cdot 20}{60}
+$$
+
+$$
+\\varepsilon = -\\dfrac{2}{3}.
+$$
 
 Absolute elasticity $2/3<1$, so demand is inelastic at that price. Both the quantity and the elasticity match the claim, so the statement is True.`,
       `**B.** → True
@@ -8665,7 +10195,21 @@ $$MR=p\\left(1+\\dfrac{1}{\\varepsilon}\\right).$$
 
 With $p=20$ and $\\varepsilon=-2/3$,
 
-$$MR=20\\left(1+\\dfrac{1}{-2/3}\\right)=20\\left(1-\\dfrac{3}{2}\\right)=20\\left(-\\dfrac{1}{2}\\right)=-10.$$
+$$
+MR = 20\\left(1+\\dfrac{1}{-2/3}\\right)
+$$
+
+$$
+MR = 20\\left(1-\\dfrac{3}{2}\\right)
+$$
+
+$$
+MR = 20\\left(-\\dfrac{1}{2}\\right)
+$$
+
+$$
+MR = -10.
+$$
 
 Marginal revenue equals $-10$ euros per extra gadget, so the statement is True.`,
       `**C.** → True
@@ -8674,7 +10218,17 @@ Name the objective, find where its slope is flat, then classify with the bend (o
 
 Invert demand to $p=(100-Q)/2$ and write revenue as a function of quantity:
 
-$$R(Q)=p(Q)\\cdot Q=\\dfrac{100-Q}{2}\\cdot Q=50Q-\\dfrac{Q^{2}}{2}.$$
+$$
+R(Q) = p(Q)\\cdot Q
+$$
+
+$$
+R(Q) = \\dfrac{100-Q}{2}\\cdot Q
+$$
+
+$$
+R(Q) = 50Q-\\dfrac{Q^{2}}{2}.
+$$
 
 Differentiate:
 
@@ -8695,11 +10249,10 @@ So the statement is True.`,
 Relate the revenue slope to demand sensitivity: unit elasticity sits at the revenue peak, while inelastic demand only says a small price rise still helps revenue.
 
 Revenue is maximised where marginal revenue is zero (and the bend of $R$ is downward). Here $MR=-10\\neq 0$ at the $20$-euro price, so that price is not a revenue maximum. (Indeed $R'(Q)=0$ at $Q=50$, i.e. $p=25$.) The claim correctly refuses to call $p=20$ optimal, so the statement is True.`
-    ],
+    ]
     difficulty_level: "4/5",
     sort_order: 113,
-    solution_overview:
-      `Demand $Q=100-2p$ at posted price $p=20$ gives $Q=60$. Elasticity is
+    solution_overview: `Demand $Q=100-2p$ at posted price $p=20$ gives $Q=60$. Elasticity is
 
 $$\\varepsilon=\\dfrac{-2\\cdot 20}{60}=-\\dfrac{2}{3}$$
 
@@ -8722,7 +10275,7 @@ Writing $p=(100-Q)/2$ and $R(Q)=50Q-Q^{2}/2$ gives $R'(Q)=50-Q$, so $R'(60)=-10$
       "At this common price, Cart B's customers are more price-sensitive than Cart A's (larger absolute elasticity).",
       "For Cart A, a small price increase from $20$ euros would still raise its revenue.",
       "Because Cart A's demand is inelastic at $20$ euros, that price already maximises Cart A's revenue."
-    ],
+    ]
     answer_key: [true, true, true, true, false],
     tactical_explanations: [
       `**A.** → True
@@ -8731,7 +10284,13 @@ Relate the revenue slope to demand sensitivity: unit elasticity sits at the reve
 
 At $p=20$, Cart A expects $D_A(20)=80-20=60$ cups. Elasticity is
 
-$$\\varepsilon_A=\\dfrac{D_A'(p)\\,p}{D_A(p)}=\\dfrac{-1\\cdot 20}{60}=-\\dfrac{1}{3}.$$
+$$
+\\varepsilon_A = \\dfrac{-1\\cdot 20}{60}
+$$
+
+$$
+\\varepsilon_A = -\\dfrac{1}{3}.
+$$
 
 Absolute elasticity $1/3<1$, so demand is inelastic. Quantity and elasticity match the claim
 
@@ -8742,7 +10301,17 @@ Relate the revenue slope to demand sensitivity: unit elasticity sits at the reve
 
 At $p=20$, Cart B expects $D_B(20)=120-40=80$ cups. Elasticity is
 
-$$\\varepsilon_B=\\dfrac{-2\\cdot 20}{80}=-\\dfrac{40}{80}=-\\dfrac{1}{2}.$$
+$$
+\\varepsilon_B = \\dfrac{-2\\cdot 20}{80}
+$$
+
+$$
+\\varepsilon_B = -\\dfrac{40}{80}
+$$
+
+$$
+\\varepsilon_B = -\\dfrac{1}{2}.
+$$
 
 Absolute elasticity $1/2<1$, so demand is inelastic. Quantity and elasticity match the claim
 
@@ -8753,7 +10322,13 @@ Relate the revenue slope to demand sensitivity: unit elasticity sits at the reve
 
 Compare absolute elasticities at the common price:
 
-$$|\\varepsilon_B|=\\dfrac{1}{2}>\\dfrac{1}{3}=|\\varepsilon_A|.$$
+$$
+|\\varepsilon_B| = \\dfrac{1}{2}>\\dfrac{1}{3}
+$$
+
+$$
+|\\varepsilon_B| = |\\varepsilon_A|.
+$$
 
 Larger absolute elasticity means greater price sensitivity. Cart B's customers are more price-sensitive than Cart A's at $p=20$
 
@@ -8772,11 +10347,10 @@ A positive marginal revenue means a small price increase from $20$ euros still r
 Relate the revenue slope to demand sensitivity: unit elasticity sits at the revenue peak, while inelastic demand only says a small price rise still helps revenue.
 
 Inelastic demand at $p=20$ means a *small* price increase raises revenue — it does not mean $p=20$ already maximises revenue. Cart A's revenue peak solves $R_A'(p)=0$, giving $p=40$, not $p=20$. Confusing “inelastic, so raise price” with “already at the maximum” is the trap. Comparing that with the claim, the statement is False.`
-    ],
+    ]
     difficulty_level: "3/5",
     sort_order: 114,
-    solution_overview:
-      `At the common cup price $p=20$:
+    solution_overview: `At the common cup price $p=20$:
 
 Cart A: $D_A=80-20=60$, $\\varepsilon_A=\\dfrac{-20}{60}=-\\dfrac{1}{3}$ (inelastic).
 
@@ -8797,7 +10371,7 @@ $|\\varepsilon_B|=1/2>|\\varepsilon_A|=1/3$, so B's customers are more price-sen
       "At that candidate one has $y=2.5$, and the profit curve bends downward, confirming a local profit peak.",
       "The maximised constrained profit equals $212.5$.",
       "Ignoring the constraint and treating $x$ and $y$ as unrelated would automatically give the same answer."
-    ],
+    ]
     answer_key: [true, true, true, true, false],
     tactical_explanations: [
       `**A.** → True
@@ -8806,7 +10380,13 @@ Reduce the constrained problem to one free variable, then differentiate the redu
 
 Substitute $y=10-x$ into profit and expand:
 
-$$p(x)=30x+20(10-x)-x^{2}-(10-x)^{2}=30x+200-20x-x^{2}-(100-20x+x^{2}).$$
+$$
+p(x) = 30x+20(10-x)-x^{2}-(10-x)^{2}
+$$
+
+$$
+p(x) = 30x+200-20x-x^{2}-(100-20x+x^{2}).
+$$
 
 Simplifying, $p(x)=10x+100+20x-2x^{2}=30x+100-2x^{2}$ (equivalently $200-100+30x-2x^{2}$). Either way, profit reduces to a genuine one-variable function of $x$, so the statement is True.`,
       `**B.** → True
@@ -8837,7 +10417,21 @@ Name the objective, find where its slope is flat, then classify with the bend (o
 
 Evaluate reduced profit at the peak:
 
-$$p(7.5)=30\\cdot 7.5+100-2\\cdot(7.5)^{2}=225+100-2\\cdot 56.25=325-112.5=212.5.$$
+$$
+p(7.5) = 30\\cdot 7.5+100-2\\cdot(7.5)^{2}
+$$
+
+$$
+p(7.5) = 225+100-2\\cdot 56.25
+$$
+
+$$
+p(7.5) = 325-112.5
+$$
+
+$$
+p(7.5) = 212.5.
+$$
 
 Maximised constrained profit equals $212.5$, matching the claim
 
@@ -8847,11 +10441,10 @@ Pause on the classification step: $f''<0$ at a critical point marks a local peak
 Reduce the constrained problem to one free variable, then differentiate the reduced objective exactly as in unconstrained single-variable calculus.
 
 Ignoring the constraint, one would set $\\partial P/\\partial x=30-2x=0$ and $\\partial P/\\partial y=20-2y=0$, giving $(x,y)=(15,10)$, which violates $x+y=10$. The unconstrained critical point is not feasible, and the constrained optimum $(7.5,2.5)$ is different. Treating $x$ and $y$ as unrelated does *not* give the same answer. Comparing that with the claim, the statement is False.`
-    ],
+    ]
     difficulty_level: "4/5",
     sort_order: 115,
-    solution_overview:
-      `Profit $P=30x+20y-x^{2}-y^{2}$ on the resource constraint $x+y=10$. Substitute $y=10-x$:
+    solution_overview: `Profit $P=30x+20y-x^{2}-y^{2}$ on the resource constraint $x+y=10$. Substitute $y=10-x$:
 
 $$p(x)=30x+20(10-x)-x^{2}-(10-x)^{2}=10x+200-x^{2}-(100-20x+x^{2})$$
 
@@ -8876,7 +10469,7 @@ Ignoring the constraint and optimising $x,y$ separately yields a different uncon
       "Then the riverside side is $20$ metres, and the area curve bends downward, so that layout maximises area locally.",
       "Maximal area is $200$ square metres.",
       "The same dimensions would also maximise area if all four sides had to be fenced with the same $40$ metres."
-    ],
+    ]
     answer_key: [true, true, true, true, false],
     tactical_explanations: [
       `**A.** → True
@@ -8918,7 +10511,13 @@ Name the objective, find where its slope is flat, then classify with the bend (o
 
 Evaluate area at the critical layout:
 
-$$A(10)=10\\cdot 20=200.$$
+$$
+A(10) = 10\\cdot 20
+$$
+
+$$
+A(10) = 200.
+$$
 
 Maximal area is $200$ square metres, matching the claim
 
@@ -8928,11 +10527,10 @@ Pause on the classification step: $f''<0$ at a critical point marks a local peak
 The wording sounds close to a standard optimisation rule, but it skips a classification step or confuses a level with a slope. Track the definitions carefully.
 
 If all four sides had to be fenced with the same $40$ m, the constraint would be $2x+2y=40$, so $y=20-x$ and $A=x(20-x)$, maximised at the $10\\times 10$ square of area $100$ — not at $10\\times 20$. The three-sided optimum is a different problem with different dimensions. The claim is false. Comparing that with the claim, the statement is False.`
-    ],
+    ]
     difficulty_level: "3/5",
     sort_order: 116,
-    solution_overview:
-      `Three-sided riverside fence of $40$ m: two perpendicular sides $x$ and riverside side $40-2x$, so area is
+    solution_overview: `Three-sided riverside fence of $40$ m: two perpendicular sides $x$ and riverside side $40-2x$, so area is
 
 $$A(x)=x(40-2x)=40x-2x^{2},\\qquad 0<x<20.$$
 
@@ -8955,7 +10553,7 @@ Flat slope at $x=10$ gives riverside length $20$ and $A(10)=200$. The downward b
       "Then $y=2$, total cost is $32$, and the cost curve bends upward, confirming a local cost trough.",
       "Along $xy=16$, the cost-minimising point balances the input prices against the trade-off $\\dfrac{y}{x}$, which holds at $(x,y)=(8,2)$.",
       "Any other pair with $xy=16$ has the same cost $32$, so substitution is unnecessary."
-    ],
+    ]
     answer_key: [true, true, true, true, false],
     tactical_explanations: [
       `**A.** → True
@@ -8964,7 +10562,13 @@ Reduce the constrained problem to one free variable, then differentiate the redu
 
 From $xy=16$ one has $y=16/x$ for $x>0$. Substitute into cost:
 
-$$C(x)=2x+8\\cdot\\dfrac{16}{x}=2x+\\dfrac{128}{x}.$$
+$$
+C(x) = 2x+8\\cdot\\dfrac{16}{x}
+$$
+
+$$
+C(x) = 2x+\\dfrac{128}{x}.
+$$
 
 That is exactly the claimed one-variable cost function
 
@@ -8986,7 +10590,17 @@ Name the objective, find where its slope is flat, then classify with the bend (o
 
 At $x=8$ one has $y=16/8=2$ and total cost
 
-$$C(8)=2\\cdot 8+\\dfrac{128}{8}=16+16=32.$$
+$$
+C(8) = 2\\cdot 8+\\dfrac{128}{8}
+$$
+
+$$
+C(8) = 16+16
+$$
+
+$$
+C(8) = 32.
+$$
 
 The bend $C''(8)=256/512>0$ confirms a local cost trough. All three parts of the claim hold
 
@@ -9003,11 +10617,10 @@ Pause on the classification step: $f''<0$ at a critical point marks a local peak
 Reduce the constrained problem to one free variable, then differentiate the reduced objective exactly as in unconstrained single-variable calculus.
 
 Other pairs on $xy=16$ have different costs. For example $(4,4)$ costs $C=8+32=40>32$, and $(16,1)$ costs $32+8=40>32$. Cost is *not* constant along the isoquant, so substitution (or an equivalent method) is necessary. The statement is False. Comparing that with the claim, the statement is False.`
-    ],
+    ]
     difficulty_level: "4/5",
     sort_order: 117,
-    solution_overview:
-      `Fixed output $xy=16$ with cost $C=2x+8y$. Substitute $y=16/x$:
+    solution_overview: `Fixed output $xy=16$ with cost $C=2x+8y$. Substitute $y=16/x$:
 
 $$C(x)=2x+\\dfrac{128}{x},\\qquad x>0.$$
 
@@ -9030,7 +10643,7 @@ Flat slope at $x=8$ gives $y=2$, total cost $C(8)=16+16=32$, and $C''(8)>0$ conf
       "If the ferry instead charges $30$ euros, a small fare increase would raise ticket revenue.",
       "If the ferry charges $60$ euros, a small fare increase would lower ticket revenue.",
       "Whenever demand is elastic (absolute elasticity greater than $1$), that fare already maximises revenue."
-    ],
+    ]
     answer_key: [true, true, true, true, false],
     tactical_explanations: [
       `**A.** → True
@@ -9039,7 +10652,13 @@ Name the objective, find where its slope is flat, then classify with the bend (o
 
 Ticket revenue is fare times passengers:
 
-$$R(p)=p(90-p)=90p-p^{2}.$$
+$$
+R(p) = p(90-p)
+$$
+
+$$
+R(p) = 90p-p^{2}.
+$$
 
 Set the slope to zero:
 
@@ -9054,11 +10673,23 @@ Relate the revenue slope to demand sensitivity: unit elasticity sits at the reve
 
 Point elasticity at the critical fare is
 
-$$\\varepsilon(p)=\\dfrac{D'(p)\\,p}{D(p)}=\\dfrac{-p}{90-p}.$$
+$$
+\\varepsilon(p) = \\dfrac{-p}{90-p}.
+$$
 
 At $p=45$,
 
-$$\\varepsilon(45)=\\dfrac{-45}{90-45}=\\dfrac{-45}{45}=-1.$$
+$$
+\\varepsilon(45) = \\dfrac{-45}{90-45}
+$$
+
+$$
+\\varepsilon(45) = \\dfrac{-45}{45}
+$$
+
+$$
+\\varepsilon(45) = -1.
+$$
 
 Demand is unit elastic at the $45$-euro fare
 
@@ -9069,7 +10700,13 @@ Name the objective, find where its slope is flat, then classify with the bend (o
 
 At $p=30$, marginal revenue is still positive:
 
-$$R'(30)=90-60=30>0.$$
+$$
+R'(30) = 90-60
+$$
+
+$$
+R'(30) = 30>0.
+$$
 
 A positive slope means a small fare increase raises ticket revenue. (Equivalently $|\\varepsilon(30)|=30/60=1/2<1$, inelastic.) The statement is True
 
@@ -9080,7 +10717,13 @@ Name the objective, find where its slope is flat, then classify with the bend (o
 
 At $p=60$, marginal revenue is already negative:
 
-$$R'(60)=90-120=-30<0.$$
+$$
+R'(60) = 90-120
+$$
+
+$$
+R'(60) = -30<0.
+$$
 
 A negative slope means a small fare increase lowers ticket revenue. (Equivalently $|\\varepsilon(60)|=60/30=2>1$, elastic.) The statement is True
 
@@ -9090,11 +10733,10 @@ For ordinary downward-sloping demand, revenue peaks where point elasticity equal
 Relate the revenue slope to demand sensitivity: unit elasticity sits at the revenue peak, while inelastic demand only says a small price rise still helps revenue.
 
 Elastic demand ($|\\varepsilon|>1$) means a small price *increase* lowers revenue — equivalently, a price cut raises revenue. It does *not* mean the current fare already maximises revenue. Revenue is maximised only at unit elasticity ($|\\varepsilon|=1$). The claim reverses the meaning of elastic demand. Comparing that with the claim, the statement is False.`
-    ],
+    ]
     difficulty_level: "3/5",
     sort_order: 118,
-    solution_overview:
-      `Ferry demand is $D(p)=90-p$ for $0<p<90$. Revenue is
+    solution_overview: `Ferry demand is $D(p)=90-p$ for $0<p<90$. Revenue is
 
 $$R(p)=90p-p^{2},$$
 
@@ -9113,7 +10755,7 @@ with $R'(p)=90-2p$ and $R''(p)=-2<0$. Flat revenue at $p=45$ gives $R(45)=2025$.
       "Inside $(0,6)$ the only flat-slope cut size is $x=2$.",
       "At $x=2$ the volume curve bends downward and volume equals $128$, so that cut maximises volume locally.",
       "Finding the flat-slope cut alone, without checking the bend or the ends of the interval, already proves the global maximum on $(0,6)$."
-    ],
+    ]
     answer_key: [true, true, true, true, false],
     tactical_explanations: [
       `**A.** → True
@@ -9133,7 +10775,13 @@ Name the objective, find where its slope is flat, then classify with the bend (o
 
 Expand and differentiate. First
 
-$$V(x)=x(144-48x+4x^{2})=144x-48x^{2}+4x^{3}.$$
+$$
+V(x) = x(144-48x+4x^{2})
+$$
+
+$$
+V(x) = 144x-48x^{2}+4x^{3}.
+$$
 
 The derivative is the quadratic
 
@@ -9148,7 +10796,13 @@ Name the objective, find where its slope is flat, then classify with the bend (o
 
 Factor the slope and find roots inside $(0,6)$:
 
-$$V'(x)=12(x^{2}-8x+12)=12(x-2)(x-6).$$
+$$
+V'(x) = 12(x^{2}-8x+12)
+$$
+
+$$
+V'(x) = 12(x-2)(x-6).
+$$
 
 The roots are $x=2$ and $x=6$. Only $x=2$ lies strictly inside $(0,6)$; $x=6$ is the excluded right endpoint where the base collapses. The only interior flat-slope cut is $x=2$
 
@@ -9159,7 +10813,13 @@ Name the objective, find where its slope is flat, then classify with the bend (o
 
 At $x=2$, volume and bend are
 
-$$V(2)=2\\cdot 8^{2}=128,$$
+$$
+V(2) = 2\\cdot 8^{2}
+$$
+
+$$
+V(2) = 128,
+$$
 
 and differentiating $V'(x)=12(x-2)(x-6)$ (or using $V''(x)=24x-96$) gives $V''(2)=-48<0$. Downward bend plus volume $128$ means that cut maximises volume locally
 
@@ -9169,11 +10829,10 @@ Pause on the classification step: $f''<0$ at a critical point marks a local peak
 Flat slope finds a candidate; the bend (or a sign chart) then classifies peak versus trough. Keep those two steps separate.
 
 Finding $V'(x)=0$ only produces the candidate $x=2$. Without checking the bend (or comparing with behaviour as $x\\to 0^{+}$ and $x\\to 6^{-}$), one has not proved a global maximum on $(0,6)$. The critical-point list alone does not finish the maximisation argument. Comparing that with the claim, the statement is False.`
-    ],
+    ]
     difficulty_level: "5/5",
     sort_order: 119,
-    solution_overview:
-      `Open box from a $12$ cm square sheet: cut squares of side $x$ from each corner ($0<x<6$). Height is $x$ and base side is $12-2x$, so
+    solution_overview: `Open box from a $12$ cm square sheet: cut squares of side $x$ from each corner ($0<x<6$). Height is $x$ and base side is $12-2x$, so
 
 $$V(x)=x(12-2x)^{2}=4x(6-x)^{2}.$$
 
@@ -9196,7 +10855,7 @@ Inside $(0,6)$ the only flat-slope cut is $x=2$ (the root $x=6$ is an endpoint o
       "At $x=3$, $f'(3)=4$, so $x=3$ is a local minimum of $f$.",
       "On $(0,1)$ the curve is below the axis, so $f$ is decreasing there.",
       "The steepest climb of $f$ in the window is at $x=3$."
-    ],
+    ]
     answer_key: [true, true, false, true, true],
     tactical_explanations: [
       `**A.** → True
@@ -9254,11 +10913,10 @@ $$(3,4)$$
 so among the positive values of $f'$ in the window the maximum is $4$ at $x=3$, and that is the steepest upward stretch of $f$
 
 Putting that figure reading next to the claim, every asserted sign, height, or classification matches what the axes show, so the statement is True.`
-    ],
+    ]
     difficulty_level: "2/5",
     sort_order: 121,
-    solution_overview:
-      `The figure plots the derivative $f'$, not $f$ itself. Marked zeros sit at $x=1$ and $x=5$, and the curve attains a labelled peak at
+    solution_overview: `The figure plots the derivative $f'$, not $f$ itself. Marked zeros sit at $x=1$ and $x=5$, and the curve attains a labelled peak at
 
 $$(3,4)$$
 
@@ -9282,7 +10940,7 @@ Hence $f$ decreases on $(0,1)$ and increases on $(1,5)$. The $+$ to $-$ crossing
       "On $(2,4)$ the curve is below the axis, so $f$ is decreasing on $(2,4)$.",
       "At $x=3$, the height of $f'$ is about $-1$.",
       "Because $f'(3)<0$, the point $x=3$ is a local minimum of $f$."
-    ],
+    ]
     answer_key: [true, true, true, true, false],
     tactical_explanations: [
       `**A.** → True
@@ -9340,11 +10998,10 @@ $$f'(3)\\approx -1\\neq 0$$
 so $x=3$ is not a critical point of $f$ at all. Negativity of $f'$ says $f$ is decreasing there, not that a local minimum occurs
 
 Once that mismatch with the figure is clear, the claim cannot stand. Comparing the assertion with the axes, the statement is False.`
-    ],
+    ]
     difficulty_level: "2/5",
     sort_order: 122,
-    solution_overview:
-      `The figure shows $f'$ with two axis crossings, at $x=2$ and $x=4$. Just left of $x=2$ the curve is above the axis and just right it is below; between the zeros it dips below; at $x=4$ it returns from below to above. The sign chart is therefore
+    solution_overview: `The figure shows $f'$ with two axis crossings, at $x=2$ and $x=4$. Just left of $x=2$ the curve is above the axis and just right it is below; between the zeros it dips below; at $x=4$ it returns from below to above. The sign chart is therefore
 
 $$f'>0\\text{ on }(0,2),\\qquad f'<0\\text{ on }(2,4),\\qquad f'>0\\text{ just right of }4$$
 
@@ -9368,7 +11025,7 @@ That lowest point of $f'$ is not a critical point of $f$.`,
       "Between those turning points the graph is rising.",
       "Near $x=3$ the graph is steepest upward in this window.",
       "Because the graph crosses the axis near $x=0$, one must have $f'(0)=0$."
-    ],
+    ]
     answer_key: [true, true, true, true, false],
     tactical_explanations: [
       `**A.** → True
@@ -9426,11 +11083,10 @@ $$f(0)=0\\qquad\\text{does not force}\\qquad f'(0)=0$$
 Roots and horizontal tangents are different geometric facts, so the crossing near $x=0$ alone does not force $f'(0)=0$, and the statement is False.
 
 Once that mismatch with the figure is clear, the claim cannot stand. Comparing the assertion with the axes, the statement is False.`
-    ],
+    ]
     difficulty_level: "2/5",
     sort_order: 123,
-    solution_overview:
-      `Here the figure shows the level curve $f$ itself, not its derivative. Reading turning points and slopes directly from the shape:
+    solution_overview: `Here the figure shows the level curve $f$ itself, not its derivative. Reading turning points and slopes directly from the shape:
 
 - near $x=1$ the graph bottoms out (a local minimum);
 - near $x=5$ it reaches a local highest point (a local maximum);
@@ -9453,7 +11109,7 @@ An axis crossing of $f$ near $x=0$ is only a root $f=0$. That is a different geo
       "A local profit peak occurs at the marked zero of $P'$.",
       "At $x=1$, reading the scale, $P'$ is greater than $1$.",
       "Because $P'$ is a straight line, profit $P$ itself must be a straight line."
-    ],
+    ]
     answer_key: [true, true, true, true, false],
     tactical_explanations: [
       `**A.** → True
@@ -9504,16 +11160,21 @@ Easy trap: the figure shows a derivative as a straight line. Integrating a nonco
 
 A non-constant linear graph of $P'$ means $P''$ is a nonzero constant, so integrating once gives a quadratic total profit:
 
-$$P'\\text{ linear and non-constant}\\implies P\\text{ quadratic}$$
+$$
+P'\\text{ linear and non-constant}\
+$$
+
+$$
+P\\text{ quadratic}
+$$
 
 Profit $P$ is therefore a parabola, not a straight line
 
 Once that mismatch with the figure is clear, the claim cannot stand. Comparing the assertion with the axes, the statement is False.`
-    ],
+    ]
     difficulty_level: "2/5",
     sort_order: 124,
-    solution_overview:
-      `The figure shows marginal profit $P'$ as a falling straight line that crosses the axis once near
+    solution_overview: `The figure shows marginal profit $P'$ as a falling straight line that crosses the axis once near
 
 $$x\\approx 4.2$$
 
@@ -9537,7 +11198,7 @@ A little more output therefore raises profit left of the zero and lowers profit 
       "The function $f$ has a local maximum at $x=3$.",
       "At $x=1$, $f'$ equals $2$ on the scale.",
       "Because $f'$ is decreasing, $f$ is concave down throughout the window."
-    ],
+    ]
     answer_key: [true, true, true, true, true],
     tactical_explanations: [
       `**A.** → True
@@ -9595,11 +11256,10 @@ $$f''(x)<0\\quad\\text{throughout the window}$$
 Negative $f''$ means $f$ is concave down everywhere in view
 
 Putting that figure reading next to the claim, every asserted sign, height, or classification matches what the axes show, so the statement is True.`
-    ],
+    ]
     difficulty_level: "2/5",
     sort_order: 125,
-    solution_overview:
-      `Read the figure first: name the drawn curve(s), mark zeros and sample heights, then translate signs into monotonicity and turning points.
+    solution_overview: `Read the figure first: name the drawn curve(s), mark zeros and sample heights, then translate signs into monotonicity and turning points.
 
 The figure shows a falling straight-line graph of $f'$ that crosses the axis at $x=3$. The sign chart is
 
@@ -9625,7 +11285,7 @@ Because the graph of $f'$ itself is strictly decreasing, one has $f''<0$ through
       "On $(0,3)$ the graph is rising, so $f$ is increasing there.",
       "At $x=2$, reading the vertical scale, $f(2)$ is strictly greater than $2$.",
       "An axis crossing of $f$ at $x=0$ forces $f'(0)=0$ for every differentiable $f$."
-    ],
+    ]
     answer_key: [true, true, true, true, false],
     tactical_explanations: [
       `**A.** → True
@@ -9683,11 +11343,10 @@ $$f(0)=0\\qquad\\nRightarrow\\qquad f'(0)=0\\text{ for every differentiable }f$$
 Roots and critical points are different geometric facts
 
 Once that mismatch with the figure is clear, the claim cannot stand. Comparing the assertion with the axes, the statement is False.`
-    ],
+    ]
     difficulty_level: "3/5",
     sort_order: 126,
-    solution_overview:
-      `The figure shows $f$ itself: a curve with a lowest point at the origin and arms rising on both sides. So
+    solution_overview: `The figure shows $f$ itself: a curve with a lowest point at the origin and arms rising on both sides. So
 
 $$f(0)=0\\qquad\\text{is a local minimum of }f$$
 
@@ -9707,7 +11366,7 @@ On $(-3,0)$ the graph falls toward the origin ($f$ decreasing), and on $(0,3)$ i
       "Near $x=5$ the graph has a local minimum.",
       "On $(1,2.5)$ the graph is rising, so $f$ is increasing there.",
       "Because $f(0)=0$, one must have $f'(0)=0$."
-    ],
+    ]
     answer_key: [true, true, true, true, false],
     tactical_explanations: [
       `**A.** → True
@@ -9765,11 +11424,10 @@ $$f(0)=0\\qquad\\nRightarrow\\qquad f'(0)=0$$
 Roots and critical points are different
 
 Once that mismatch with the figure is clear, the claim cannot stand. Comparing the assertion with the axes, the statement is False.`
-    ],
+    ]
     difficulty_level: "3/5",
     sort_order: 127,
-    solution_overview:
-      `Read the figure first: name the drawn curve(s), mark zeros and sample heights, then translate signs into monotonicity and turning points.
+    solution_overview: `Read the figure first: name the drawn curve(s), mark zeros and sample heights, then translate signs into monotonicity and turning points.
 
 The figure shows $f$ with turning points aligned at the critical $x$-values where $f'=0$:
 
@@ -9791,7 +11449,7 @@ Reading the shape: a local minimum near $x=1$, a local maximum near $x=2.5$, and
       "Outside those zeros (still in the window), $f'<0$, so $f$ is decreasing there.",
       "The maximum height of $f'$ is at $x=2$, near height $4$.",
       "The maximum of $f'$ at $x=2$ is a local maximum of $f$."
-    ],
+    ]
     answer_key: [true, true, true, true, false],
     tactical_explanations: [
       `**A.** → True
@@ -9847,11 +11505,10 @@ $$\\max f'\\text{ at }x=2\\qquad\\nRightarrow\\qquad\\text{local max of }f\\text
 The peak of the hill is not a local maximum of $f$
 
 Once that mismatch with the figure is clear, the claim cannot stand. Comparing the assertion with the axes, the statement is False.`
-    ],
+    ]
     difficulty_level: "3/5",
     sort_order: 128,
-    solution_overview:
-      `The figure shows $f'$ as a single positive hill that crosses the axis twice — once left of $x=2$ and once right of $x=2$. Between those zeros the hill sits above the axis; outside them (still in the window) the curve is below. The top of the hill is at
+    solution_overview: `The figure shows $f'$ as a single positive hill that crosses the axis twice — once left of $x=2$ and once right of $x=2$. Between those zeros the hill sits above the axis; outside them (still in the window) the curve is below. The top of the hill is at
 
 $$x=2\\qquad\\text{with height near }4$$
 
@@ -9875,7 +11532,7 @@ so $f$ decreases, then increases, then decreases. The maximum of $f'$ at $x=2$ i
       "At $x=0$ one has $f'(0)=0$.",
       "Because $f'$ approaches $0$ late in the window, $f$ becomes almost flat there.",
       "A local maximum of $f$ occurs at the peak of $f'$."
-    ],
+    ]
     answer_key: [true, true, true, true, false],
     tactical_explanations: [
       `**A.** → True
@@ -9933,11 +11590,10 @@ $$f'>0\\text{ at the peak of }f'\\qquad\\nRightarrow\\qquad\\text{local max of }
 so the peak of $f'$ is not a local maximum of $f$, and the statement is False.
 
 Once that mismatch with the figure is clear, the claim cannot stand. Comparing the assertion with the axes, the statement is False.`
-    ],
+    ]
     difficulty_level: "3/5",
     sort_order: 129,
-    solution_overview:
-      `The figure shows $f'$ starting at the origin, rising to a hump, then falling back toward the axis from above while staying non-negative for $x>0$ in the window. So
+    solution_overview: `The figure shows $f'$ starting at the origin, rising to a hump, then falling back toward the axis from above while staying non-negative for $x>0$ in the window. So
 
 $$f'(0)=0,\\qquad f'(x)\\ge 0\\text{ on }(0,8)$$
 
@@ -9957,7 +11613,7 @@ and $f$ is increasing throughout $(0,8)$. The steepest climb of $f$ is at the pe
       "On $(0,1)$ the curve is also below the axis (or touches at the end), so $f$ does not switch from increasing to decreasing at $x=1$ in the usual $+$ to $-$ way.",
       "At $x=2$, $f'$ is negative.",
       "Touching the axis at $x=1$ without a clear $+$ to $-$ or $-$ to $+$ change means $x=1$ need not be a local extremum of $f$."
-    ],
+    ]
     answer_key: [true, true, true, true, true],
     tactical_explanations: [
       `**A.** → True
@@ -10015,11 +11671,10 @@ $$f'(1)=0\\text{ with no sign change}\\nRightarrow\\text{need not be a local ext
 so $x=1$ need not be a local extremum of $f$, and the statement is True.
 
 Putting that figure reading next to the claim, every asserted sign, height, or classification matches what the axes show, so the statement is True.`
-    ],
+    ]
     difficulty_level: "3/5",
     sort_order: 130,
-    solution_overview:
-      `The figure shows $f'$ touching the axis at $x=1$ (a flat contact) and crossing transversally at $x=4$. On both sides of $x=1$ in the window the curve stays non-positive, so there is no ordinary $+$ to $-$ or $-$ to $+$ sign change at the touch. Between $1$ and $4$ the curve is below the axis, and at $x=4$ it flips from negative to positive:
+    solution_overview: `The figure shows $f'$ touching the axis at $x=1$ (a flat contact) and crossing transversally at $x=4$. On both sides of $x=1$ in the window the curve stays non-positive, so there is no ordinary $+$ to $-$ or $-$ to $+$ sign change at the touch. Between $1$ and $4$ the curve is below the axis, and at $x=4$ it flips from negative to positive:
 
 $$f'<0\\text{ on }(1,4),\\qquad f'\\text{ changes }-\\to+\\text{ at }x=4$$
 
@@ -10039,7 +11694,7 @@ Thus $f$ decreases on $(1,4)$ and has a local minimum at $x=4$. At $x=2$ one rea
       "At $x=4$, reading the scale, $C'$ is greater than $2$.",
       "A local minimum of cost occurs somewhere in $(0,6)$ because $C'$ is positive.",
       "At $x=0$, $C'$ is about $0.5$."
-    ],
+    ]
     answer_key: [true, true, true, false, true],
     tactical_explanations: [
       `**A.** → True
@@ -10097,11 +11752,10 @@ $$C'(0)\\approx 0.5$$
 so the statement matches the figure, and the statement is True.
 
 Putting that figure reading next to the claim, every asserted sign, height, or classification matches what the axes show, so the statement is True.`
-    ],
+    ]
     difficulty_level: "3/5",
     sort_order: 131,
-    solution_overview:
-      `Read the figure first: name the drawn curve(s), mark zeros and sample heights, then translate signs into monotonicity and turning points.
+    solution_overview: `Read the figure first: name the drawn curve(s), mark zeros and sample heights, then translate signs into monotonicity and turning points.
 
 The figure shows marginal cost $C'$ as a curve that stays strictly above the axis and is itself rising throughout the window. So
 
@@ -10123,7 +11777,7 @@ Total cost $C$ is therefore increasing and concave up. Reading the scale: at $x=
       "Because $f'$ changes from positive to negative at $x=2.5$, the function $f$ has a local maximum at $x=2.5$.",
       "Because $f'$ changes from negative to positive at $x=1$, the function $f$ has a local minimum at $x=1$.",
       "The value $f'(0)$ is positive."
-    ],
+    ]
     answer_key: [true, true, true, true, false],
     tactical_explanations: [
       `**A.** → True
@@ -10181,11 +11835,10 @@ $$f'(0)<0$$
 so $f'(0)$ is not positive, and the statement is False.
 
 Once that mismatch with the figure is clear, the claim cannot stand. Comparing the assertion with the axes, the statement is False.`
-    ],
+    ]
     difficulty_level: "4/5",
     sort_order: 132,
-    solution_overview:
-      `Read the figure first: name the drawn curve(s), mark zeros and sample heights, then translate signs into monotonicity and turning points.
+    solution_overview: `Read the figure first: name the drawn curve(s), mark zeros and sample heights, then translate signs into monotonicity and turning points.
 
 The figure shows $f'$ on $[0,6]$ with marked zeros at
 
@@ -10213,7 +11866,7 @@ In particular $f'(0)<0$, not positive.`,
       "The function $f$ has a local maximum at $x=4$.",
       "The steepest positive slope of $f$ in the window occurs where $f'$ attains its maximum value (near $x=1$), not at $x=4$.",
       "Reading the scale, $f'(0)$ is about $4$, while $f'(6)$ is negative but greater than $-1$."
-    ],
+    ]
     answer_key: [true, true, true, true, true],
     tactical_explanations: [
       `**A.** → True
@@ -10271,11 +11924,10 @@ $$f'(0)\\approx 4,\\qquad -1<f'(6)<0$$
 so both readings match the claim, and the statement is True.
 
 Putting that figure reading next to the claim, every asserted sign, height, or classification matches what the axes show, so the statement is True.`
-    ],
+    ]
     difficulty_level: "4/5",
     sort_order: 133,
-    solution_overview:
-      `Read the figure first: name the drawn curve(s), mark zeros and sample heights, then translate signs into monotonicity and turning points.
+    solution_overview: `Read the figure first: name the drawn curve(s), mark zeros and sample heights, then translate signs into monotonicity and turning points.
 
 The figure shows $f'$ with a single positive hump left of a zero at $x=4$, then negative heights to the right. Sign chart:
 
@@ -10299,7 +11951,7 @@ $$f'(0)\\approx 4,\\qquad f'(6)\\in(-1,0)$$`,
       "Reading the scale, $|f'(1)|$ is about $4$, and $f'(-1)\\approx -4$.",
       "The highest point of the graph of $f'$ on $(0,3)$ occurs near $x=1$, so that is where $f$ rises most steeply on the right.",
       "Because $f'(0)=0$, the point $x=0$ is an inflection point of $f$."
-    ],
+    ]
     answer_key: [true, true, true, true, false],
     tactical_explanations: [
       `**A.** → True
@@ -10355,11 +12007,10 @@ A zero of $f'$ with a sign change is a local extremum of $f$ (here a local minim
 $$f'(0)=0\\qquad\\nRightarrow\\qquad\\text{inflection of }f\\text{ at }x=0$$
 
 Once that mismatch with the figure is clear, the claim cannot stand. Comparing the assertion with the axes, the statement is False.`
-    ],
+    ]
     difficulty_level: "4/5",
     sort_order: 134,
-    solution_overview:
-      `The figure shows an odd-looking $f'$ through the origin: negative for $x<0$ and positive for $x>0$, with
+    solution_overview: `The figure shows an odd-looking $f'$ through the origin: negative for $x<0$ and positive for $x>0$, with
 
 $$f'(0)=0\\qquad\\text{and a }-\\to+\\text{ sign change}$$
 
@@ -10383,7 +12034,7 @@ The highest point of $f'$ on $(0,3)$ is near $x=1$, where $f$ rises most steeply
       "The function $f$ has a local maximum at $x=1$ and a local minimum at $x=2$.",
       "At $x=3$, reading the scale, $f'(3)$ is greater than $4$.",
       "Because there are three zeros, $f''(x)=0$ at each of $x=-2$, $1$, and $2$."
-    ],
+    ]
     answer_key: [true, true, true, true, false],
     tactical_explanations: [
       `**A.** → True
@@ -10439,11 +12090,10 @@ $$f'(x)=0\\qquad\\nRightarrow\\qquad f''(x)=0$$
 Three zeros of $f'$ do not force $f''=0$ at those same abscissae
 
 Once that mismatch with the figure is clear, the claim cannot stand. Comparing the assertion with the axes, the statement is False.`
-    ],
+    ]
     difficulty_level: "4/5",
     sort_order: 135,
-    solution_overview:
-      `The figure shows $f'$ with three zeros at
+    solution_overview: `The figure shows $f'$ with three zeros at
 
 $$x=-2,\\quad x=1,\\quad x=2$$
 
@@ -10467,7 +12117,7 @@ At $x=3$ the scale reading is greater than $4$. Zeros of $f'$ are about extrema 
       "The green curve is zero near $x=\\pm 1$, which matches the peak and the lowest point of the brown curve.",
       "For $x>1$, green is negative, so brown is falling on $(1,3)$.",
       "Brown being positive on $(0,3)$ means $f$ is increasing on $(0,3)$."
-    ],
+    ]
     answer_key: [true, true, true, true, true],
     tactical_explanations: [
       `**A.** → True
@@ -10523,11 +12173,10 @@ $$f'(x)>0\\quad\\text{for }x\\in(0,3)$$
 Positive $f'$ means $f$ is increasing on $(0,3)$
 
 Putting that figure reading next to the claim, every asserted sign, height, or classification matches what the axes show, so the statement is True.`
-    ],
+    ]
     difficulty_level: "4/5",
     sort_order: 136,
-    solution_overview:
-      `Read the figure first: name the drawn curve(s), mark zeros and sample heights, then translate signs into monotonicity and turning points.
+    solution_overview: `Read the figure first: name the drawn curve(s), mark zeros and sample heights, then translate signs into monotonicity and turning points.
 
 Brown is $f'$ and green is $f''$ on shared axes. At the origin brown vanishes while green is positive near height $8$:
 
@@ -10549,7 +12198,7 @@ so brown is increasing through the origin. Green is zero near $x=\\pm 1$, lining
       "On $(-3,0)$, green is negative, matching a falling brown curve.",
       "At $x=1$, green is near height $4$, so the slope of brown at $x=1$ is about $4$.",
       "The highest point of green on $(0,3)$ is a local maximum of brown."
-    ],
+    ]
     answer_key: [true, true, true, true, false],
     tactical_explanations: [
       `**A.** → True
@@ -10607,11 +12256,10 @@ $$\\max f'\\qquad\\nRightarrow\\qquad\\text{local max of }f$$
 Local maxima of brown need zeros of green with a $+$ to $-$ change
 
 Once that mismatch with the figure is clear, the claim cannot stand. Comparing the assertion with the axes, the statement is False.`
-    ],
+    ]
     difficulty_level: "4/5",
     sort_order: 137,
-    solution_overview:
-      `Read the figure first: name the drawn curve(s), mark zeros and sample heights, then translate signs into monotonicity and turning points.
+    solution_overview: `Read the figure first: name the drawn curve(s), mark zeros and sample heights, then translate signs into monotonicity and turning points.
 
 Brown is $f$ and green is $f'$ on one shared plane. At $x=0$ brown has a local minimum of height $0$ while green crosses the axis there:
 
@@ -10633,7 +12281,7 @@ On $(0,3)$ green is positive and brown rises; on $(-3,0)$ green is negative and 
       "Brown has a single hump and two zeros near $x=0$ and $x=5$ after the $+1$ shift — from the figure, brown crosses once early and once late.",
       "On $(2.5,5)$, green is negative, so $Q$ is decreasing there.",
       "The larger of $P'(2)$ and $Q'(2)$ is brown's value if brown sits above green at $x=2$."
-    ],
+    ]
     answer_key: [true, true, true, true, true],
     tactical_explanations: [
       `**A.** → True
@@ -10689,11 +12337,10 @@ $$P'(2)>Q'(2)$$
 so the larger of the two is brown's value, and the statement is True.
 
 Putting that figure reading next to the claim, every asserted sign, height, or classification matches what the axes show, so the statement is True.`
-    ],
+    ]
     difficulty_level: "4/5",
     sort_order: 138,
-    solution_overview:
-      `Read the figure first: name the drawn curve(s), mark zeros and sample heights, then translate signs into monotonicity and turning points.
+    solution_overview: `Read the figure first: name the drawn curve(s), mark zeros and sample heights, then translate signs into monotonicity and turning points.
 
 Brown is $P'$ and green is $Q'$ on the same axes. At $x=2$ both curves sit above the axis. Green has a zero at $x=5$, while brown is already negative there. Brown shows a single hump with two axis crossings — one early and one late in the window. On $(2.5,5)$ green is negative, so $Q$ is decreasing there. On a shared vertical scale, whichever curve sits higher at a fixed $x$ has the larger derivative value; at $x=2$, if brown sits above green then $P'(2)>Q'(2)$.`,
     figure: `data:image/svg+xml;utf8,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20viewBox%3D%220%200%20640%20400%22%20width%3D%22640%22%20height%3D%22400%22%20role%3D%22img%22%3E%0A%3Crect%20width%3D%22640%22%20height%3D%22400%22%20rx%3D%2216%22%20fill%3D%22%23faf8f4%22%20stroke%3D%22%23d9d2c5%22%2F%3E%0A%3Ctext%20x%3D%22279%22%20y%3D%2226%22%20text-anchor%3D%22middle%22%20font-size%3D%2214%22%20font-family%3D%22Georgia%2Cserif%22%20fill%3D%22%232b2b2b%22%3ETwo%20rate-of-change%20curves%20on%20one%20plane%3C%2Ftext%3E%0A%3Cdefs%3E%3CclipPath%20id%3D%22clip-8236561%22%3E%3Crect%20x%3D%2252%22%20y%3D%2244%22%20width%3D%22454%22%20height%3D%22300%22%2F%3E%3C%2FclipPath%3E%3C%2Fdefs%3E%0A%3Cline%20x1%3D%2252.0%22%20y1%3D%2244%22%20x2%3D%2252.0%22%20y2%3D%22344%22%20stroke%3D%22%23e8e2d8%22%20stroke-width%3D%221%22%2F%3E%0A%3Cline%20x1%3D%22127.7%22%20y1%3D%2244%22%20x2%3D%22127.7%22%20y2%3D%22344%22%20stroke%3D%22%23e8e2d8%22%20stroke-width%3D%221%22%2F%3E%0A%3Cline%20x1%3D%22203.3%22%20y1%3D%2244%22%20x2%3D%22203.3%22%20y2%3D%22344%22%20stroke%3D%22%23e8e2d8%22%20stroke-width%3D%221%22%2F%3E%0A%3Cline%20x1%3D%22279.0%22%20y1%3D%2244%22%20x2%3D%22279.0%22%20y2%3D%22344%22%20stroke%3D%22%23e8e2d8%22%20stroke-width%3D%221%22%2F%3E%0A%3Cline%20x1%3D%22354.7%22%20y1%3D%2244%22%20x2%3D%22354.7%22%20y2%3D%22344%22%20stroke%3D%22%23e8e2d8%22%20stroke-width%3D%221%22%2F%3E%0A%3Cline%20x1%3D%22430.3%22%20y1%3D%2244%22%20x2%3D%22430.3%22%20y2%3D%22344%22%20stroke%3D%22%23e8e2d8%22%20stroke-width%3D%221%22%2F%3E%0A%3Cline%20x1%3D%22506.0%22%20y1%3D%2244%22%20x2%3D%22506.0%22%20y2%3D%22344%22%20stroke%3D%22%23e8e2d8%22%20stroke-width%3D%221%22%2F%3E%0A%0A%0A%0A%0A%0A%3Cline%20x1%3D%2252%22%20y1%3D%22194.0%22%20x2%3D%22506%22%20y2%3D%22194.0%22%20stroke%3D%22%23c4b8a8%22%20stroke-width%3D%221.3%22%2F%3E%0A%3Cline%20x1%3D%2252%22%20y1%3D%2244%22%20x2%3D%2252%22%20y2%3D%22344%22%20stroke%3D%22%237a7268%22%20stroke-width%3D%221.5%22%2F%3E%0A%3Cline%20x1%3D%2252%22%20y1%3D%22344%22%20x2%3D%22506%22%20y2%3D%22344%22%20stroke%3D%22%237a7268%22%20stroke-width%3D%221.5%22%2F%3E%0A%0A%0A%0A%0A%0A%0A%0A%0A%0A%0A%0A%0A%3Cline%20x1%3D%2252.0%22%20y1%3D%22344.0%22%20x2%3D%2252.0%22%20y2%3D%22350.0%22%20stroke%3D%22%23333%22%2F%3E%3Ctext%20x%3D%2252.0%22%20y%3D%22364.0%22%20text-anchor%3D%22middle%22%20font-size%3D%2211%22%20font-family%3D%22Georgia%2Cserif%22%20fill%3D%22%23333%22%3E0%3C%2Ftext%3E%3Cline%20x1%3D%22203.3%22%20y1%3D%22344.0%22%20x2%3D%22203.3%22%20y2%3D%22350.0%22%20stroke%3D%22%23333%22%2F%3E%3Ctext%20x%3D%22203.3%22%20y%3D%22364.0%22%20text-anchor%3D%22middle%22%20font-size%3D%2211%22%20font-family%3D%22Georgia%2Cserif%22%20fill%3D%22%23333%22%3E2%3C%2Ftext%3E%3Cline%20x1%3D%22354.7%22%20y1%3D%22344.0%22%20x2%3D%22354.7%22%20y2%3D%22350.0%22%20stroke%3D%22%23333%22%2F%3E%3Ctext%20x%3D%22354.7%22%20y%3D%22364.0%22%20text-anchor%3D%22middle%22%20font-size%3D%2211%22%20font-family%3D%22Georgia%2Cserif%22%20fill%3D%22%23333%22%3E4%3C%2Ftext%3E%3Cline%20x1%3D%22506.0%22%20y1%3D%22344.0%22%20x2%3D%22506.0%22%20y2%3D%22350.0%22%20stroke%3D%22%23333%22%2F%3E%3Ctext%20x%3D%22506.0%22%20y%3D%22364.0%22%20text-anchor%3D%22middle%22%20font-size%3D%2211%22%20font-family%3D%22Georgia%2Cserif%22%20fill%3D%22%23333%22%3E6%3C%2Ftext%3E%3Cline%20x1%3D%2252.0%22%20y1%3D%22291.8%22%20x2%3D%22506.0%22%20y2%3D%22291.8%22%20stroke%3D%22%23ddd%22%20stroke-width%3D%221%22%2F%3E%3Cline%20x1%3D%2246.0%22%20y1%3D%22291.8%22%20x2%3D%2252.0%22%20y2%3D%22291.8%22%20stroke%3D%22%23333%22%2F%3E%3Ctext%20x%3D%2242.0%22%20y%3D%22291.8%22%20text-anchor%3D%22end%22%20dominant-baseline%3D%22middle%22%20font-size%3D%2211%22%20font-family%3D%22Georgia%2Cserif%22%20fill%3D%22%23333%22%3E-5%3C%2Ftext%3E%3Cline%20x1%3D%2252.0%22%20y1%3D%22198.0%22%20x2%3D%22506.0%22%20y2%3D%22198.0%22%20stroke%3D%22%23ddd%22%20stroke-width%3D%221%22%2F%3E%3Cline%20x1%3D%2246.0%22%20y1%3D%22198.0%22%20x2%3D%2252.0%22%20y2%3D%22198.0%22%20stroke%3D%22%23333%22%2F%3E%3Ctext%20x%3D%2242.0%22%20y%3D%22198.0%22%20text-anchor%3D%22end%22%20dominant-baseline%3D%22middle%22%20font-size%3D%2211%22%20font-family%3D%22Georgia%2Cserif%22%20fill%3D%22%23333%22%3E0%3C%2Ftext%3E%3Cline%20x1%3D%2252.0%22%20y1%3D%22104.2%22%20x2%3D%22506.0%22%20y2%3D%22104.2%22%20stroke%3D%22%23ddd%22%20stroke-width%3D%221%22%2F%3E%3Cline%20x1%3D%2246.0%22%20y1%3D%22104.2%22%20x2%3D%2252.0%22%20y2%3D%22104.2%22%20stroke%3D%22%23333%22%2F%3E%3Ctext%20x%3D%2242.0%22%20y%3D%22104.2%22%20text-anchor%3D%22end%22%20dominant-baseline%3D%22middle%22%20font-size%3D%2211%22%20font-family%3D%22Georgia%2Cserif%22%20fill%3D%22%23333%22%3E5%3C%2Ftext%3E%3Cpolyline%20fill%3D%22none%22%20stroke%3D%22%238B5A2B%22%20stroke-width%3D%222.4%22%20points%3D%2252.0%2C212.8%2053.4%2C211.9%2054.8%2C211.0%2056.3%2C210.1%2057.7%2C209.3%2059.1%2C208.4%2060.5%2C207.6%2061.9%2C206.8%2063.4%2C205.9%2064.8%2C205.1%2066.2%2C204.3%2067.6%2C203.5%2069.0%2C202.7%2070.4%2C201.9%2071.9%2C201.1%2073.3%2C200.3%2074.7%2C199.5%2076.1%2C198.8%2077.5%2C198.0%2079.0%2C197.2%2080.4%2C196.5%2081.8%2C195.7%2083.2%2C195.0%2084.6%2C194.3%2086.0%2C193.6%2087.5%2C192.8%2088.9%2C192.1%2090.3%2C191.4%2091.7%2C190.7%2093.1%2C190.0%2094.6%2C189.3%2096.0%2C188.7%2097.4%2C188.0%2098.8%2C187.3%20100.2%2C186.7%20101.7%2C186.0%20103.1%2C185.4%20104.5%2C184.7%20105.9%2C184.1%20107.3%2C183.5%20108.8%2C182.9%20110.2%2C182.3%20111.6%2C181.6%20113.0%2C181.1%20114.4%2C180.5%20115.8%2C179.9%20117.3%2C179.3%20118.7%2C178.7%20120.1%2C178.2%20121.5%2C177.6%20122.9%2C177.0%20124.4%2C176.5%20125.8%2C176.0%20127.2%2C175.4%20128.6%2C174.9%20130.0%2C174.4%20131.4%2C173.9%20132.9%2C173.4%20134.3%2C172.9%20135.7%2C172.4%20137.1%2C171.9%20138.5%2C171.4%20140.0%2C170.9%20141.4%2C170.5%20142.8%2C170.0%20144.2%2C169.5%20145.6%2C169.1%20147.1%2C168.7%20148.5%2C168.2%20149.9%2C167.8%20151.3%2C167.4%20152.7%2C167.0%20154.2%2C166.6%20155.6%2C166.2%20157.0%2C165.8%20158.4%2C165.4%20159.8%2C165.0%20161.2%2C164.6%20162.7%2C164.2%20164.1%2C163.9%20165.5%2C163.5%20166.9%2C163.2%20168.3%2C162.8%20169.8%2C162.5%20171.2%2C162.2%20172.6%2C161.9%20174.0%2C161.5%20175.4%2C161.2%20176.8%2C160.9%20178.3%2C160.6%20179.7%2C160.3%20181.1%2C160.1%20182.5%2C159.8%20183.9%2C159.5%20185.4%2C159.3%20186.8%2C159.0%20188.2%2C158.8%20189.6%2C158.5%20191.0%2C158.3%20192.5%2C158.0%20193.9%2C157.8%20195.3%2C157.6%20196.7%2C157.4%20198.1%2C157.2%20199.6%2C157.0%20201.0%2C156.8%20202.4%2C156.6%20203.8%2C156.4%20205.2%2C156.3%20206.6%2C156.1%20208.1%2C156.0%20209.5%2C155.8%20210.9%2C155.7%20212.3%2C155.5%20213.7%2C155.4%20215.2%2C155.3%20216.6%2C155.1%20218.0%2C155.0%20219.4%2C154.9%20220.8%2C154.8%20222.2%2C154.7%20223.7%2C154.7%20225.1%2C154.6%20226.5%2C154.5%20227.9%2C154.4%20229.3%2C154.4%20230.8%2C154.3%20232.2%2C154.3%20233.6%2C154.2%20235.0%2C154.2%20236.4%2C154.2%20237.9%2C154.2%20239.3%2C154.2%20240.7%2C154.2%20242.1%2C154.2%20243.5%2C154.2%20244.9%2C154.2%20246.4%2C154.2%20247.8%2C154.2%20249.2%2C154.3%20250.6%2C154.3%20252.0%2C154.3%20253.5%2C154.4%20254.9%2C154.5%20256.3%2C154.5%20257.7%2C154.6%20259.1%2C154.7%20260.6%2C154.8%20262.0%2C154.9%20263.4%2C155.0%20264.8%2C155.1%20266.2%2C155.2%20267.6%2C155.3%20269.1%2C155.4%20270.5%2C155.6%20271.9%2C155.7%20273.3%2C155.8%20274.7%2C156.0%20276.2%2C156.2%20277.6%2C156.3%20279.0%2C156.5%20280.4%2C156.7%20281.8%2C156.9%20283.3%2C157.1%20284.7%2C157.3%20286.1%2C157.5%20287.5%2C157.7%20288.9%2C157.9%20290.4%2C158.1%20291.8%2C158.3%20293.2%2C158.6%20294.6%2C158.8%20296.0%2C159.1%20297.4%2C159.3%20298.9%2C159.6%20300.3%2C159.9%20301.7%2C160.2%20303.1%2C160.4%20304.5%2C160.7%20306.0%2C161.0%20307.4%2C161.3%20308.8%2C161.6%20310.2%2C162.0%20311.6%2C162.3%20313.1%2C162.6%20314.5%2C163.0%20315.9%2C163.3%20317.3%2C163.6%20318.7%2C164.0%20320.1%2C164.4%20321.6%2C164.7%20323.0%2C165.1%20324.4%2C165.5%20325.8%2C165.9%20327.2%2C166.3%20328.7%2C166.7%20330.1%2C167.1%20331.5%2C167.5%20332.9%2C167.9%20334.3%2C168.4%20335.8%2C168.8%20337.2%2C169.2%20338.6%2C169.7%20340.0%2C170.2%20341.4%2C170.6%20342.8%2C171.1%20344.3%2C171.6%20345.7%2C172.0%20347.1%2C172.5%20348.5%2C173.0%20349.9%2C173.5%20351.4%2C174.0%20352.8%2C174.6%20354.2%2C175.1%20355.6%2C175.6%20357.0%2C176.1%20358.4%2C176.7%20359.9%2C177.2%20361.3%2C177.8%20362.7%2C178.3%20364.1%2C178.9%20365.5%2C179.5%20367.0%2C180.1%20368.4%2C180.7%20369.8%2C181.2%20371.2%2C181.9%20372.6%2C182.5%20374.1%2C183.1%20375.5%2C183.7%20376.9%2C184.3%20378.3%2C185.0%20379.7%2C185.6%20381.1%2C186.2%20382.6%2C186.9%20384.0%2C187.6%20385.4%2C188.2%20386.8%2C188.9%20388.2%2C189.6%20389.7%2C190.3%20391.1%2C191.0%20392.5%2C191.7%20393.9%2C192.4%20395.3%2C193.1%20396.8%2C193.8%20398.2%2C194.5%20399.6%2C195.3%20401.0%2C196.0%20402.4%2C196.7%20403.9%2C197.5%20405.3%2C198.3%20406.7%2C199.0%20408.1%2C199.8%20409.5%2C200.6%20410.9%2C201.4%20412.4%2C202.1%20413.8%2C202.9%20415.2%2C203.8%20416.6%2C204.6%20418.0%2C205.4%20419.5%2C206.2%20420.9%2C207.0%20422.3%2C207.9%20423.7%2C208.7%20425.1%2C209.6%20426.6%2C210.4%20428.0%2C211.3%20429.4%2C212.2%20430.8%2C213.0%20432.2%2C213.9%20433.6%2C214.8%20435.1%2C215.7%20436.5%2C216.6%20437.9%2C217.5%20439.3%2C218.4%20440.7%2C219.4%20442.2%2C220.3%20443.6%2C221.2%20445.0%2C222.2%20446.4%2C223.1%20447.8%2C224.1%20449.2%2C225.1%20450.7%2C226.0%20452.1%2C227.0%20453.5%2C228.0%20454.9%2C229.0%20456.3%2C230.0%20457.8%2C231.0%20459.2%2C232.0%20460.6%2C233.0%20462.0%2C234.0%20463.4%2C235.1%20464.9%2C236.1%20466.3%2C237.1%20467.7%2C238.2%20469.1%2C239.2%20470.5%2C240.3%20471.9%2C241.4%20473.4%2C242.4%20474.8%2C243.5%20476.2%2C244.6%20477.6%2C245.7%20479.0%2C246.8%20480.5%2C247.9%20481.9%2C249.0%20483.3%2C250.2%20484.7%2C251.3%20486.1%2C252.4%20487.6%2C253.6%20489.0%2C254.7%20490.4%2C255.9%20491.8%2C257.0%20493.2%2C258.2%20494.6%2C259.4%20496.1%2C260.5%20497.5%2C261.7%20498.9%2C262.9%20500.3%2C264.1%20501.7%2C265.3%20503.2%2C266.6%20504.6%2C267.8%20506.0%2C269.0%22%20clip-path%3D%22url%28%23clip-8236561%29%22%2F%3E%0A%3Cpolyline%20fill%3D%22none%22%20stroke%3D%22%232F5D50%22%20stroke-width%3D%222.4%22%20points%3D%2252.0%2C428.4%2053.4%2C421.4%2054.8%2C414.5%2056.3%2C407.8%2057.7%2C401.1%2059.1%2C394.6%2060.5%2C388.2%2061.9%2C381.9%2063.4%2C375.6%2064.8%2C369.5%2066.2%2C363.5%2067.6%2C357.6%2069.0%2C351.9%2070.4%2C346.2%2071.9%2C340.6%2073.3%2C335.1%2074.7%2C329.7%2076.1%2C324.4%2077.5%2C319.2%2079.0%2C314.2%2080.4%2C309.2%2081.8%2C304.3%2083.2%2C299.5%2084.6%2C294.8%2086.0%2C290.2%2087.5%2C285.7%2088.9%2C281.3%2090.3%2C276.9%2091.7%2C272.7%2093.1%2C268.6%2094.6%2C264.5%2096.0%2C260.6%2097.4%2C256.7%2098.8%2C252.9%20100.2%2C249.2%20101.7%2C245.6%20103.1%2C242.1%20104.5%2C238.7%20105.9%2C235.3%20107.3%2C232.0%20108.8%2C228.9%20110.2%2C225.8%20111.6%2C222.7%20113.0%2C219.8%20114.4%2C216.9%20115.8%2C214.2%20117.3%2C211.5%20118.7%2C208.8%20120.1%2C206.3%20121.5%2C203.8%20122.9%2C201.4%20124.4%2C199.1%20125.8%2C196.9%20127.2%2C194.7%20128.6%2C192.6%20130.0%2C190.6%20131.4%2C188.6%20132.9%2C186.7%20134.3%2C184.9%20135.7%2C183.2%20137.1%2C181.5%20138.5%2C179.9%20140.0%2C178.4%20141.4%2C176.9%20142.8%2C175.5%20144.2%2C174.1%20145.6%2C172.8%20147.1%2C171.6%20148.5%2C170.5%20149.9%2C169.4%20151.3%2C168.3%20152.7%2C167.4%20154.2%2C166.5%20155.6%2C165.6%20157.0%2C164.8%20158.4%2C164.1%20159.8%2C163.4%20161.2%2C162.7%20162.7%2C162.2%20164.1%2C161.7%20165.5%2C161.2%20166.9%2C160.8%20168.3%2C160.4%20169.8%2C160.1%20171.2%2C159.8%20172.6%2C159.6%20174.0%2C159.5%20175.4%2C159.4%20176.8%2C159.3%20178.3%2C159.3%20179.7%2C159.3%20181.1%2C159.4%20182.5%2C159.5%20183.9%2C159.7%20185.4%2C159.9%20186.8%2C160.1%20188.2%2C160.4%20189.6%2C160.7%20191.0%2C161.1%20192.5%2C161.5%20193.9%2C162.0%20195.3%2C162.4%20196.7%2C163.0%20198.1%2C163.5%20199.6%2C164.1%20201.0%2C164.7%20202.4%2C165.4%20203.8%2C166.1%20205.2%2C166.8%20206.6%2C167.6%20208.1%2C168.4%20209.5%2C169.2%20210.9%2C170.1%20212.3%2C171.0%20213.7%2C171.9%20215.2%2C172.8%20216.6%2C173.8%20218.0%2C174.8%20219.4%2C175.8%20220.8%2C176.8%20222.2%2C177.9%20223.7%2C179.0%20225.1%2C180.1%20226.5%2C181.2%20227.9%2C182.4%20229.3%2C183.5%20230.8%2C184.7%20232.2%2C185.9%20233.6%2C187.2%20235.0%2C188.4%20236.4%2C189.7%20237.9%2C191.0%20239.3%2C192.3%20240.7%2C193.6%20242.1%2C194.9%20243.5%2C196.2%20244.9%2C197.6%20246.4%2C198.9%20247.8%2C200.3%20249.2%2C201.7%20250.6%2C203.0%20252.0%2C204.4%20253.5%2C205.8%20254.9%2C207.2%20256.3%2C208.7%20257.7%2C210.1%20259.1%2C211.5%20260.6%2C212.9%20262.0%2C214.4%20263.4%2C215.8%20264.8%2C217.2%20266.2%2C218.7%20267.6%2C220.1%20269.1%2C221.5%20270.5%2C223.0%20271.9%2C224.4%20273.3%2C225.8%20274.7%2C227.3%20276.2%2C228.7%20277.6%2C230.1%20279.0%2C231.5%20280.4%2C232.9%20281.8%2C234.3%20283.3%2C235.7%20284.7%2C237.1%20286.1%2C238.4%20287.5%2C239.8%20288.9%2C241.1%20290.4%2C242.5%20291.8%2C243.8%20293.2%2C245.1%20294.6%2C246.4%20296.0%2C247.7%20297.4%2C249.0%20298.9%2C250.2%20300.3%2C251.4%20301.7%2C252.7%20303.1%2C253.8%20304.5%2C255.0%20306.0%2C256.2%20307.4%2C257.3%20308.8%2C258.4%20310.2%2C259.5%20311.6%2C260.6%20313.1%2C261.6%20314.5%2C262.7%20315.9%2C263.7%20317.3%2C264.6%20318.7%2C265.6%20320.1%2C266.5%20321.6%2C267.4%20323.0%2C268.2%20324.4%2C269.1%20325.8%2C269.9%20327.2%2C270.6%20328.7%2C271.4%20330.1%2C272.1%20331.5%2C272.8%20332.9%2C273.4%20334.3%2C274.0%20335.8%2C274.6%20337.2%2C275.1%20338.6%2C275.6%20340.0%2C276.0%20341.4%2C276.5%20342.8%2C276.8%20344.3%2C277.2%20345.7%2C277.5%20347.1%2C277.7%20348.5%2C278.0%20349.9%2C278.1%20351.4%2C278.3%20352.8%2C278.3%20354.2%2C278.4%20355.6%2C278.4%20357.0%2C278.3%20358.4%2C278.2%20359.9%2C278.1%20361.3%2C277.9%20362.7%2C277.6%20364.1%2C277.3%20365.5%2C277.0%20367.0%2C276.6%20368.4%2C276.1%20369.8%2C275.6%20371.2%2C275.0%20372.6%2C274.4%20374.1%2C273.8%20375.5%2C273.0%20376.9%2C272.2%20378.3%2C271.4%20379.7%2C270.5%20381.1%2C269.5%20382.6%2C268.5%20384.0%2C267.4%20385.4%2C266.3%20386.8%2C265.1%20388.2%2C263.8%20389.7%2C262.5%20391.1%2C261.1%20392.5%2C259.6%20393.9%2C258.1%20395.3%2C256.5%20396.8%2C254.8%20398.2%2C253.1%20399.6%2C251.3%20401.0%2C249.4%20402.4%2C247.5%20403.9%2C245.5%20405.3%2C243.4%20406.7%2C241.3%20408.1%2C239.0%20409.5%2C236.7%20410.9%2C234.4%20412.4%2C231.9%20413.8%2C229.4%20415.2%2C226.8%20416.6%2C224.1%20418.0%2C221.3%20419.5%2C218.5%20420.9%2C215.6%20422.3%2C212.6%20423.7%2C209.5%20425.1%2C206.3%20426.6%2C203.1%20428.0%2C199.7%20429.4%2C196.3%20430.8%2C192.8%20432.2%2C189.2%20433.6%2C185.6%20435.1%2C181.8%20436.5%2C178.0%20437.9%2C174.0%20439.3%2C170.0%20440.7%2C165.9%20442.2%2C161.7%20443.6%2C157.4%20445.0%2C153.0%20446.4%2C148.5%20447.8%2C143.9%20449.2%2C139.2%20450.7%2C134.4%20452.1%2C129.6%20453.5%2C124.6%20454.9%2C119.5%20456.3%2C114.4%20457.8%2C109.1%20459.2%2C103.8%20460.6%2C98.3%20462.0%2C92.7%20463.4%2C87.1%20464.9%2C81.3%20466.3%2C75.4%20467.7%2C69.5%20469.1%2C63.4%20470.5%2C57.2%20471.9%2C50.9%20473.4%2C44.5%20474.8%2C38.0%20476.2%2C31.4%20477.6%2C24.6%20479.0%2C17.8%20480.5%2C10.8%20481.9%2C3.8%20483.3%2C-3.4%20484.7%2C-10.7%20486.1%2C-18.1%20487.6%2C-25.6%20489.0%2C-33.2%20490.4%2C-41.0%20491.8%2C-48.9%20493.2%2C-56.8%20494.6%2C-64.9%20496.1%2C-73.2%20497.5%2C-81.5%20498.9%2C-90.0%20500.3%2C-98.6%20501.7%2C-107.3%20503.2%2C-116.1%20504.6%2C-125.0%20506.0%2C-134.1%22%20clip-path%3D%22url%28%23clip-8236561%29%22%2F%3E%0A%3Crect%20x%3D%22514%22%20y%3D%2246%22%20width%3D%22106%22%20height%3D%2250%22%20rx%3D%228%22%20fill%3D%22%23f8f6f2%22%20stroke%3D%22%23d9d2c5%22%2F%3E%0A%3Cline%20x1%3D%22520%22%20y1%3D%2264%22%20x2%3D%22538%22%20y2%3D%2264%22%20stroke%3D%22%238B5A2B%22%20stroke-width%3D%222.6%22%2F%3E%3Ctext%20x%3D%22544%22%20y%3D%2268%22%20font-size%3D%2212%22%20font-family%3D%22Georgia%2Cserif%22%20fill%3D%22%232b2b2b%22%3EP%E2%80%B2%3C%2Ftext%3E%0A%3Cline%20x1%3D%22520%22%20y1%3D%2282%22%20x2%3D%22538%22%20y2%3D%2282%22%20stroke%3D%22%232F5D50%22%20stroke-width%3D%222.6%22%2F%3E%3Ctext%20x%3D%22544%22%20y%3D%2286%22%20font-size%3D%2212%22%20font-family%3D%22Georgia%2Cserif%22%20fill%3D%22%232b2b2b%22%3EQ%E2%80%B2%3C%2Ftext%3E%0A%3Ctext%20x%3D%22279%22%20y%3D%22388%22%20text-anchor%3D%22middle%22%20font-size%3D%2212%22%20font-family%3D%22Georgia%2Cserif%22%20fill%3D%22%232b2b2b%22%3Ex%3C%2Ftext%3E%0A%3C%2Fsvg%3E`,
@@ -10711,7 +12358,7 @@ Brown is $P'$ and green is $Q'$ on the same axes. At $x=2$ both curves sit above
       "On $(3,6)$, green is negative, so brown is falling — and $f$ is concave down.",
       "At $x=2$, brown is positive, so $f$ is increasing at $x=2$.",
       "Because green is a straight line, $f$ cannot have a local maximum in the window."
-    ],
+    ]
     answer_key: [true, true, true, true, false],
     tactical_explanations: [
       `**A.** → True
@@ -10767,11 +12414,10 @@ $$f'\\text{ changes }+\\to-\\text{ near }x=5$$
 so $f$ still has a local maximum there. A linear $f''$ does not rule out a local maximum of $f$
 
 Once that mismatch with the figure is clear, the claim cannot stand. Comparing the assertion with the axes, the statement is False.`
-    ],
+    ]
     difficulty_level: "4/5",
     sort_order: 139,
-    solution_overview:
-      `Brown is $f'$ and green is $f''$ (a straight line) on shared axes. Green crosses zero at $x=3$, lining up with the peak of brown. Sign/height readings:
+    solution_overview: `Brown is $f'$ and green is $f''$ (a straight line) on shared axes. Green crosses zero at $x=3$, lining up with the peak of brown. Sign/height readings:
 
 $$f'(4)>0,\\qquad f''(4)<0$$
 
@@ -10791,7 +12437,7 @@ so at $x=4$ brown is still positive while green is negative. On $(3,6)$ green is
       "On $(2,5)$, green is negative, so brown is falling.",
       "Wherever brown is positive, $f$ is increasing.",
       "Green being zero at $x=2$ means $f$ has a local maximum at $x=2$."
-    ],
+    ]
     answer_key: [true, true, true, true, false],
     tactical_explanations: [
       `**A.** → True
@@ -10849,11 +12495,10 @@ $$f''(2)=0\\qquad\\nRightarrow\\qquad\\text{local max of }f\\text{ at }x=2$$
 Critical points of $f$ are zeros of brown
 
 Once that mismatch with the figure is clear, the claim cannot stand. Comparing the assertion with the axes, the statement is False.`
-    ],
+    ]
     difficulty_level: "4/5",
     sort_order: 140,
-    solution_overview:
-      `Read the figure first: name the drawn curve(s), mark zeros and sample heights, then translate signs into monotonicity and turning points.
+    solution_overview: `Read the figure first: name the drawn curve(s), mark zeros and sample heights, then translate signs into monotonicity and turning points.
 
 Brown is $f'$ and green is $f''$. At $x=2$ brown is near its maximum while green is about $0$ — a peak of $f'$ aligned with a zero of $f''$. Sign chart for green:
 
@@ -10875,7 +12520,7 @@ so brown rises on $(0,2)$ and falls on $(2,5)$. Wherever brown is positive, $f$ 
       "On $(2,8)$, green is negative, so brown is falling toward the axis.",
       "At $x=6$, brown is still positive but small, so $f$ is still increasing slowly.",
       "Because brown never goes negative in the window, $f$ has no local maximum in $(0,8)$."
-    ],
+    ]
     answer_key: [true, true, true, true, true],
     tactical_explanations: [
       `**A.** → True
@@ -10933,11 +12578,10 @@ $$f'(x)\\ge 0\\quad\\text{on }(0,8)$$
 so there is no such zero in $(0,8)$, and $f$ has no local maximum there. The statement is True.
 
 Putting that figure reading next to the claim, every asserted sign, height, or classification matches what the axes show, so the statement is True.`
-    ],
+    ]
     difficulty_level: "4/5",
     sort_order: 141,
-    solution_overview:
-      `Read the figure first: name the drawn curve(s), mark zeros and sample heights, then translate signs into monotonicity and turning points.
+    solution_overview: `Read the figure first: name the drawn curve(s), mark zeros and sample heights, then translate signs into monotonicity and turning points.
 
 Brown is $f'$ and green is $f''$ on one plane (an $xe^{-x/2}$-style family). Green crosses from positive to negative near $x=2$, under the peak of brown. So brown rises on $(0,2)$ and falls toward the axis on $(2,8)$, while staying non-negative in the window. At $x=6$ brown is still positive but small, so $f$ is still increasing slowly. Because brown never goes negative in $(0,8)$, there is no $+$ to $-$ zero of $f'$ and hence no local maximum of $f$ in that open interval.`,
     figure: `data:image/svg+xml;utf8,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20viewBox%3D%220%200%20640%20400%22%20width%3D%22640%22%20height%3D%22400%22%20role%3D%22img%22%3E%0A%3Crect%20width%3D%22640%22%20height%3D%22400%22%20rx%3D%2216%22%20fill%3D%22%23faf8f4%22%20stroke%3D%22%23d9d2c5%22%2F%3E%0A%3Ctext%20x%3D%22279%22%20y%3D%2226%22%20text-anchor%3D%22middle%22%20font-size%3D%2214%22%20font-family%3D%22Georgia%2Cserif%22%20fill%3D%22%232b2b2b%22%3Ef%E2%80%B2%20and%20f%E2%80%B3%20on%20the%20same%20axes%3C%2Ftext%3E%0A%3Cdefs%3E%3CclipPath%20id%3D%22clip-291752%22%3E%3Crect%20x%3D%2252%22%20y%3D%2244%22%20width%3D%22454%22%20height%3D%22300%22%2F%3E%3C%2FclipPath%3E%3C%2Fdefs%3E%0A%3Cline%20x1%3D%2252.0%22%20y1%3D%2244%22%20x2%3D%2252.0%22%20y2%3D%22344%22%20stroke%3D%22%23e8e2d8%22%20stroke-width%3D%221%22%2F%3E%0A%3Cline%20x1%3D%22165.5%22%20y1%3D%2244%22%20x2%3D%22165.5%22%20y2%3D%22344%22%20stroke%3D%22%23e8e2d8%22%20stroke-width%3D%221%22%2F%3E%0A%3Cline%20x1%3D%22279.0%22%20y1%3D%2244%22%20x2%3D%22279.0%22%20y2%3D%22344%22%20stroke%3D%22%23e8e2d8%22%20stroke-width%3D%221%22%2F%3E%0A%3Cline%20x1%3D%22392.5%22%20y1%3D%2244%22%20x2%3D%22392.5%22%20y2%3D%22344%22%20stroke%3D%22%23e8e2d8%22%20stroke-width%3D%221%22%2F%3E%0A%3Cline%20x1%3D%22506.0%22%20y1%3D%2244%22%20x2%3D%22506.0%22%20y2%3D%22344%22%20stroke%3D%22%23e8e2d8%22%20stroke-width%3D%221%22%2F%3E%0A%0A%0A%0A%0A%3Cline%20x1%3D%2252%22%20y1%3D%22224.0%22%20x2%3D%22506%22%20y2%3D%22224.0%22%20stroke%3D%22%23c4b8a8%22%20stroke-width%3D%221.3%22%2F%3E%0A%3Cline%20x1%3D%2252%22%20y1%3D%2244%22%20x2%3D%2252%22%20y2%3D%22344%22%20stroke%3D%22%237a7268%22%20stroke-width%3D%221.5%22%2F%3E%0A%3Cline%20x1%3D%2252%22%20y1%3D%22344%22%20x2%3D%22506%22%20y2%3D%22344%22%20stroke%3D%22%237a7268%22%20stroke-width%3D%221.5%22%2F%3E%0A%0A%0A%0A%0A%0A%0A%0A%0A%0A%3Cline%20x1%3D%2252.0%22%20y1%3D%22344.0%22%20x2%3D%2252.0%22%20y2%3D%22350.0%22%20stroke%3D%22%23333%22%2F%3E%3Ctext%20x%3D%2252.0%22%20y%3D%22364.0%22%20text-anchor%3D%22middle%22%20font-size%3D%2211%22%20font-family%3D%22Georgia%2Cserif%22%20fill%3D%22%23333%22%3E0%3C%2Ftext%3E%3Cline%20x1%3D%22165.5%22%20y1%3D%22344.0%22%20x2%3D%22165.5%22%20y2%3D%22350.0%22%20stroke%3D%22%23333%22%2F%3E%3Ctext%20x%3D%22165.5%22%20y%3D%22364.0%22%20text-anchor%3D%22middle%22%20font-size%3D%2211%22%20font-family%3D%22Georgia%2Cserif%22%20fill%3D%22%23333%22%3E2%3C%2Ftext%3E%3Cline%20x1%3D%22279.0%22%20y1%3D%22344.0%22%20x2%3D%22279.0%22%20y2%3D%22350.0%22%20stroke%3D%22%23333%22%2F%3E%3Ctext%20x%3D%22279.0%22%20y%3D%22364.0%22%20text-anchor%3D%22middle%22%20font-size%3D%2211%22%20font-family%3D%22Georgia%2Cserif%22%20fill%3D%22%23333%22%3E4%3C%2Ftext%3E%3Cline%20x1%3D%22392.5%22%20y1%3D%22344.0%22%20x2%3D%22392.5%22%20y2%3D%22350.0%22%20stroke%3D%22%23333%22%2F%3E%3Ctext%20x%3D%22392.5%22%20y%3D%22364.0%22%20text-anchor%3D%22middle%22%20font-size%3D%2211%22%20font-family%3D%22Georgia%2Cserif%22%20fill%3D%22%23333%22%3E6%3C%2Ftext%3E%3Cline%20x1%3D%22506.0%22%20y1%3D%22344.0%22%20x2%3D%22506.0%22%20y2%3D%22350.0%22%20stroke%3D%22%23333%22%2F%3E%3Ctext%20x%3D%22506.0%22%20y%3D%22364.0%22%20text-anchor%3D%22middle%22%20font-size%3D%2211%22%20font-family%3D%22Georgia%2Cserif%22%20fill%3D%22%23333%22%3E8%3C%2Ftext%3E%3Cline%20x1%3D%2252.0%22%20y1%3D%22228.0%22%20x2%3D%22506.0%22%20y2%3D%22228.0%22%20stroke%3D%22%23ddd%22%20stroke-width%3D%221%22%2F%3E%3Cline%20x1%3D%2246.0%22%20y1%3D%22228.0%22%20x2%3D%2252.0%22%20y2%3D%22228.0%22%20stroke%3D%22%23333%22%2F%3E%3Ctext%20x%3D%2242.0%22%20y%3D%22228.0%22%20text-anchor%3D%22end%22%20dominant-baseline%3D%22middle%22%20font-size%3D%2211%22%20font-family%3D%22Georgia%2Cserif%22%20fill%3D%22%23333%22%3E0%3C%2Ftext%3E%3Cline%20x1%3D%2252.0%22%20y1%3D%2278.0%22%20x2%3D%22506.0%22%20y2%3D%2278.0%22%20stroke%3D%22%23ddd%22%20stroke-width%3D%221%22%2F%3E%3Cline%20x1%3D%2246.0%22%20y1%3D%2278.0%22%20x2%3D%2252.0%22%20y2%3D%2278.0%22%20stroke%3D%22%23333%22%2F%3E%3Ctext%20x%3D%2242.0%22%20y%3D%2278.0%22%20text-anchor%3D%22end%22%20dominant-baseline%3D%22middle%22%20font-size%3D%2211%22%20font-family%3D%22Georgia%2Cserif%22%20fill%3D%22%23333%22%3E1%3C%2Ftext%3E%3Cpolyline%20fill%3D%22none%22%20stroke%3D%22%238B5A2B%22%20stroke-width%3D%222.4%22%20points%3D%2252.0%2C224.0%2053.4%2C220.3%2054.8%2C216.7%2056.3%2C213.2%2057.7%2C209.7%2059.1%2C206.4%2060.5%2C203.1%2061.9%2C199.9%2063.4%2C196.9%2064.8%2C193.8%2066.2%2C190.9%2067.6%2C188.0%2069.0%2C185.3%2070.4%2C182.6%2071.9%2C179.9%2073.3%2C177.4%2074.7%2C174.9%2076.1%2C172.5%2077.5%2C170.1%2079.0%2C167.8%2080.4%2C165.6%2081.8%2C163.4%2083.2%2C161.3%2084.6%2C159.3%2086.0%2C157.3%2087.5%2C155.4%2088.9%2C153.6%2090.3%2C151.8%2091.7%2C150.0%2093.1%2C148.3%2094.6%2C146.7%2096.0%2C145.1%2097.4%2C143.6%2098.8%2C142.1%20100.2%2C140.6%20101.7%2C139.3%20103.1%2C137.9%20104.5%2C136.6%20105.9%2C135.4%20107.3%2C134.2%20108.8%2C133.0%20110.2%2C131.9%20111.6%2C130.8%20113.0%2C129.8%20114.4%2C128.8%20115.8%2C127.8%20117.3%2C126.9%20118.7%2C126.1%20120.1%2C125.2%20121.5%2C124.4%20122.9%2C123.6%20124.4%2C122.9%20125.8%2C122.2%20127.2%2C121.5%20128.6%2C120.9%20130.0%2C120.3%20131.4%2C119.7%20132.9%2C119.2%20134.3%2C118.7%20135.7%2C118.2%20137.1%2C117.7%20138.5%2C117.3%20140.0%2C116.9%20141.4%2C116.5%20142.8%2C116.2%20144.2%2C115.8%20145.6%2C115.5%20147.1%2C115.3%20148.5%2C115.0%20149.9%2C114.8%20151.3%2C114.6%20152.7%2C114.4%20154.2%2C114.2%20155.6%2C114.1%20157.0%2C114.0%20158.4%2C113.9%20159.8%2C113.8%20161.2%2C113.7%20162.7%2C113.7%20164.1%2C113.6%20165.5%2C113.6%20166.9%2C113.6%20168.3%2C113.7%20169.8%2C113.7%20171.2%2C113.8%20172.6%2C113.8%20174.0%2C113.9%20175.4%2C114.0%20176.9%2C114.2%20178.3%2C114.3%20179.7%2C114.4%20181.1%2C114.6%20182.5%2C114.8%20183.9%2C114.9%20185.4%2C115.1%20186.8%2C115.3%20188.2%2C115.6%20189.6%2C115.8%20191.0%2C116.0%20192.5%2C116.3%20193.9%2C116.6%20195.3%2C116.8%20196.7%2C117.1%20198.1%2C117.4%20199.6%2C117.7%20201.0%2C118.0%20202.4%2C118.3%20203.8%2C118.7%20205.2%2C119.0%20206.6%2C119.4%20208.1%2C119.7%20209.5%2C120.1%20210.9%2C120.4%20212.3%2C120.8%20213.7%2C121.2%20215.2%2C121.6%20216.6%2C122.0%20218.0%2C122.4%20219.4%2C122.8%20220.8%2C123.2%20222.2%2C123.6%20223.7%2C124.0%20225.1%2C124.4%20226.5%2C124.9%20227.9%2C125.3%20229.3%2C125.7%20230.8%2C126.2%20232.2%2C126.6%20233.6%2C127.1%20235.0%2C127.5%20236.4%2C128.0%20237.9%2C128.5%20239.3%2C128.9%20240.7%2C129.4%20242.1%2C129.9%20243.5%2C130.4%20244.9%2C130.8%20246.4%2C131.3%20247.8%2C131.8%20249.2%2C132.3%20250.6%2C132.8%20252.0%2C133.3%20253.5%2C133.8%20254.9%2C134.2%20256.3%2C134.7%20257.7%2C135.2%20259.1%2C135.7%20260.6%2C136.2%20262.0%2C136.7%20263.4%2C137.2%20264.8%2C137.7%20266.2%2C138.2%20267.6%2C138.7%20269.1%2C139.3%20270.5%2C139.8%20271.9%2C140.3%20273.3%2C140.8%20274.7%2C141.3%20276.2%2C141.8%20277.6%2C142.3%20279.0%2C142.8%20280.4%2C143.3%20281.8%2C143.8%20283.3%2C144.3%20284.7%2C144.8%20286.1%2C145.3%20287.5%2C145.8%20288.9%2C146.3%20290.4%2C146.9%20291.8%2C147.4%20293.2%2C147.9%20294.6%2C148.4%20296.0%2C148.9%20297.4%2C149.4%20298.9%2C149.9%20300.3%2C150.4%20301.7%2C150.9%20303.1%2C151.4%20304.5%2C151.9%20306.0%2C152.4%20307.4%2C152.9%20308.8%2C153.3%20310.2%2C153.8%20311.6%2C154.3%20313.0%2C154.8%20314.5%2C155.3%20315.9%2C155.8%20317.3%2C156.3%20318.7%2C156.8%20320.1%2C157.2%20321.6%2C157.7%20323.0%2C158.2%20324.4%2C158.7%20325.8%2C159.2%20327.2%2C159.6%20328.7%2C160.1%20330.1%2C160.6%20331.5%2C161.0%20332.9%2C161.5%20334.3%2C162.0%20335.8%2C162.4%20337.2%2C162.9%20338.6%2C163.4%20340.0%2C163.8%20341.4%2C164.3%20342.8%2C164.7%20344.3%2C165.2%20345.7%2C165.6%20347.1%2C166.1%20348.5%2C166.5%20349.9%2C167.0%20351.4%2C167.4%20352.8%2C167.8%20354.2%2C168.3%20355.6%2C168.7%20357.0%2C169.1%20358.5%2C169.6%20359.9%2C170.0%20361.3%2C170.4%20362.7%2C170.8%20364.1%2C171.3%20365.5%2C171.7%20367.0%2C172.1%20368.4%2C172.5%20369.8%2C172.9%20371.2%2C173.3%20372.6%2C173.7%20374.1%2C174.1%20375.5%2C174.5%20376.9%2C174.9%20378.3%2C175.3%20379.7%2C175.7%20381.1%2C176.1%20382.6%2C176.5%20384.0%2C176.9%20385.4%2C177.3%20386.8%2C177.7%20388.2%2C178.1%20389.7%2C178.4%20391.1%2C178.8%20392.5%2C179.2%20393.9%2C179.6%20395.3%2C179.9%20396.8%2C180.3%20398.2%2C180.7%20399.6%2C181.0%20401.0%2C181.4%20402.4%2C181.7%20403.9%2C182.1%20405.3%2C182.5%20406.7%2C182.8%20408.1%2C183.2%20409.5%2C183.5%20410.9%2C183.8%20412.4%2C184.2%20413.8%2C184.5%20415.2%2C184.9%20416.6%2C185.2%20418.0%2C185.5%20419.5%2C185.9%20420.9%2C186.2%20422.3%2C186.5%20423.7%2C186.8%20425.1%2C187.2%20426.5%2C187.5%20428.0%2C187.8%20429.4%2C188.1%20430.8%2C188.4%20432.2%2C188.7%20433.6%2C189.0%20435.1%2C189.4%20436.5%2C189.7%20437.9%2C190.0%20439.3%2C190.3%20440.7%2C190.6%20442.2%2C190.9%20443.6%2C191.1%20445.0%2C191.4%20446.4%2C191.7%20447.8%2C192.0%20449.2%2C192.3%20450.7%2C192.6%20452.1%2C192.9%20453.5%2C193.1%20454.9%2C193.4%20456.3%2C193.7%20457.8%2C194.0%20459.2%2C194.2%20460.6%2C194.5%20462.0%2C194.8%20463.4%2C195.0%20464.9%2C195.3%20466.3%2C195.5%20467.7%2C195.8%20469.1%2C196.1%20470.5%2C196.3%20472.0%2C196.6%20473.4%2C196.8%20474.8%2C197.1%20476.2%2C197.3%20477.6%2C197.5%20479.0%2C197.8%20480.5%2C198.0%20481.9%2C198.3%20483.3%2C198.5%20484.7%2C198.7%20486.1%2C199.0%20487.6%2C199.2%20489.0%2C199.4%20490.4%2C199.6%20491.8%2C199.9%20493.2%2C200.1%20494.6%2C200.3%20496.1%2C200.5%20497.5%2C200.8%20498.9%2C201.0%20500.3%2C201.2%20501.7%2C201.4%20503.2%2C201.6%20504.6%2C201.8%20506.0%2C202.0%22%20clip-path%3D%22url%28%23clip-291752%29%22%2F%3E%0A%3Cpolyline%20fill%3D%22none%22%20stroke%3D%22%232F5D50%22%20stroke-width%3D%222.4%22%20points%3D%2252.0%2C74.0%2053.4%2C77.7%2054.8%2C81.4%2056.3%2C84.9%2057.7%2C88.4%2059.1%2C91.9%2060.5%2C95.3%2061.9%2C98.6%2063.4%2C101.8%2064.8%2C105.0%2066.2%2C108.2%2067.6%2C111.2%2069.0%2C114.3%2070.4%2C117.2%2071.9%2C120.1%2073.3%2C123.0%2074.7%2C125.8%2076.1%2C128.5%2077.5%2C131.2%2079.0%2C133.8%2080.4%2C136.4%2081.8%2C138.9%2083.2%2C141.4%2084.6%2C143.8%2086.0%2C146.2%2087.5%2C148.6%2088.9%2C150.8%2090.3%2C153.1%2091.7%2C155.3%2093.1%2C157.5%2094.6%2C159.6%2096.0%2C161.6%2097.4%2C163.7%2098.8%2C165.7%20100.2%2C167.6%20101.7%2C169.5%20103.1%2C171.4%20104.5%2C173.2%20105.9%2C175.0%20107.3%2C176.8%20108.8%2C178.5%20110.2%2C180.2%20111.6%2C181.9%20113.0%2C183.5%20114.4%2C185.1%20115.8%2C186.6%20117.3%2C188.1%20118.7%2C189.6%20120.1%2C191.1%20121.5%2C192.5%20122.9%2C193.9%20124.4%2C195.3%20125.8%2C196.6%20127.2%2C197.9%20128.6%2C199.2%20130.0%2C200.4%20131.4%2C201.7%20132.9%2C202.9%20134.3%2C204.0%20135.7%2C205.2%20137.1%2C206.3%20138.5%2C207.4%20140.0%2C208.5%20141.4%2C209.5%20142.8%2C210.5%20144.2%2C211.5%20145.6%2C212.5%20147.1%2C213.5%20148.5%2C214.4%20149.9%2C215.3%20151.3%2C216.2%20152.7%2C217.1%20154.2%2C217.9%20155.6%2C218.7%20157.0%2C219.5%20158.4%2C220.3%20159.8%2C221.1%20161.2%2C221.9%20162.7%2C222.6%20164.1%2C223.3%20165.5%2C224.0%20166.9%2C224.7%20168.3%2C225.3%20169.8%2C226.0%20171.2%2C226.6%20172.6%2C227.2%20174.0%2C227.8%20175.4%2C228.4%20176.9%2C229.0%20178.3%2C229.5%20179.7%2C230.1%20181.1%2C230.6%20182.5%2C231.1%20183.9%2C231.6%20185.4%2C232.1%20186.8%2C232.6%20188.2%2C233.0%20189.6%2C233.5%20191.0%2C233.9%20192.5%2C234.3%20193.9%2C234.7%20195.3%2C235.1%20196.7%2C235.5%20198.1%2C235.9%20199.6%2C236.3%20201.0%2C236.6%20202.4%2C237.0%20203.8%2C237.3%20205.2%2C237.6%20206.6%2C237.9%20208.1%2C238.2%20209.5%2C238.5%20210.9%2C238.8%20212.3%2C239.1%20213.7%2C239.3%20215.2%2C239.6%20216.6%2C239.8%20218.0%2C240.1%20219.4%2C240.3%20220.8%2C240.5%20222.2%2C240.7%20223.7%2C240.9%20225.1%2C241.1%20226.5%2C241.3%20227.9%2C241.5%20229.3%2C241.7%20230.8%2C241.9%20232.2%2C242.0%20233.6%2C242.2%20235.0%2C242.3%20236.4%2C242.5%20237.9%2C242.6%20239.3%2C242.7%20240.7%2C242.8%20242.1%2C243.0%20243.5%2C243.1%20244.9%2C243.2%20246.4%2C243.3%20247.8%2C243.4%20249.2%2C243.5%20250.6%2C243.5%20252.0%2C243.6%20253.5%2C243.7%20254.9%2C243.8%20256.3%2C243.8%20257.7%2C243.9%20259.1%2C244.0%20260.6%2C244.0%20262.0%2C244.0%20263.4%2C244.1%20264.8%2C244.1%20266.2%2C244.2%20267.6%2C244.2%20269.1%2C244.2%20270.5%2C244.2%20271.9%2C244.3%20273.3%2C244.3%20274.7%2C244.3%20276.2%2C244.3%20277.6%2C244.3%20279.0%2C244.3%20280.4%2C244.3%20281.8%2C244.3%20283.3%2C244.3%20284.7%2C244.3%20286.1%2C244.3%20287.5%2C244.2%20288.9%2C244.2%20290.4%2C244.2%20291.8%2C244.2%20293.2%2C244.2%20294.6%2C244.1%20296.0%2C244.1%20297.4%2C244.1%20298.9%2C244.0%20300.3%2C244.0%20301.7%2C243.9%20303.1%2C243.9%20304.5%2C243.9%20306.0%2C243.8%20307.4%2C243.8%20308.8%2C243.7%20310.2%2C243.7%20311.6%2C243.6%20313.0%2C243.6%20314.5%2C243.5%20315.9%2C243.4%20317.3%2C243.4%20318.7%2C243.3%20320.1%2C243.2%20321.6%2C243.2%20323.0%2C243.1%20324.4%2C243.1%20325.8%2C243.0%20327.2%2C242.9%20328.7%2C242.8%20330.1%2C242.8%20331.5%2C242.7%20332.9%2C242.6%20334.3%2C242.5%20335.8%2C242.5%20337.2%2C242.4%20338.6%2C242.3%20340.0%2C242.2%20341.4%2C242.2%20342.8%2C242.1%20344.3%2C242.0%20345.7%2C241.9%20347.1%2C241.8%20348.5%2C241.7%20349.9%2C241.7%20351.4%2C241.6%20352.8%2C241.5%20354.2%2C241.4%20355.6%2C241.3%20357.0%2C241.2%20358.5%2C241.1%20359.9%2C241.0%20361.3%2C241.0%20362.7%2C240.9%20364.1%2C240.8%20365.5%2C240.7%20367.0%2C240.6%20368.4%2C240.5%20369.8%2C240.4%20371.2%2C240.3%20372.6%2C240.2%20374.1%2C240.1%20375.5%2C240.1%20376.9%2C240.0%20378.3%2C239.9%20379.7%2C239.8%20381.1%2C239.7%20382.6%2C239.6%20384.0%2C239.5%20385.4%2C239.4%20386.8%2C239.3%20388.2%2C239.2%20389.7%2C239.1%20391.1%2C239.0%20392.5%2C238.9%20393.9%2C238.8%20395.3%2C238.7%20396.8%2C238.7%20398.2%2C238.6%20399.6%2C238.5%20401.0%2C238.4%20402.4%2C238.3%20403.9%2C238.2%20405.3%2C238.1%20406.7%2C238.0%20408.1%2C237.9%20409.5%2C237.8%20410.9%2C237.7%20412.4%2C237.6%20413.8%2C237.5%20415.2%2C237.5%20416.6%2C237.4%20418.0%2C237.3%20419.5%2C237.2%20420.9%2C237.1%20422.3%2C237.0%20423.7%2C236.9%20425.1%2C236.8%20426.5%2C236.7%20428.0%2C236.6%20429.4%2C236.5%20430.8%2C236.5%20432.2%2C236.4%20433.6%2C236.3%20435.1%2C236.2%20436.5%2C236.1%20437.9%2C236.0%20439.3%2C235.9%20440.7%2C235.8%20442.2%2C235.8%20443.6%2C235.7%20445.0%2C235.6%20446.4%2C235.5%20447.8%2C235.4%20449.2%2C235.3%20450.7%2C235.2%20452.1%2C235.2%20453.5%2C235.1%20454.9%2C235.0%20456.3%2C234.9%20457.8%2C234.8%20459.2%2C234.7%20460.6%2C234.7%20462.0%2C234.6%20463.4%2C234.5%20464.9%2C234.4%20466.3%2C234.3%20467.7%2C234.3%20469.1%2C234.2%20470.5%2C234.1%20472.0%2C234.0%20473.4%2C233.9%20474.8%2C233.9%20476.2%2C233.8%20477.6%2C233.7%20479.0%2C233.6%20480.5%2C233.5%20481.9%2C233.5%20483.3%2C233.4%20484.7%2C233.3%20486.1%2C233.2%20487.6%2C233.2%20489.0%2C233.1%20490.4%2C233.0%20491.8%2C233.0%20493.2%2C232.9%20494.6%2C232.8%20496.1%2C232.7%20497.5%2C232.7%20498.9%2C232.6%20500.3%2C232.5%20501.7%2C232.5%20503.2%2C232.4%20504.6%2C232.3%20506.0%2C232.2%22%20clip-path%3D%22url%28%23clip-291752%29%22%2F%3E%0A%3Crect%20x%3D%22514%22%20y%3D%2246%22%20width%3D%22106%22%20height%3D%2250%22%20rx%3D%228%22%20fill%3D%22%23f8f6f2%22%20stroke%3D%22%23d9d2c5%22%2F%3E%0A%3Cline%20x1%3D%22520%22%20y1%3D%2264%22%20x2%3D%22538%22%20y2%3D%2264%22%20stroke%3D%22%238B5A2B%22%20stroke-width%3D%222.6%22%2F%3E%3Ctext%20x%3D%22544%22%20y%3D%2268%22%20font-size%3D%2212%22%20font-family%3D%22Georgia%2Cserif%22%20fill%3D%22%232b2b2b%22%3Ef%E2%80%B2%3C%2Ftext%3E%0A%3Cline%20x1%3D%22520%22%20y1%3D%2282%22%20x2%3D%22538%22%20y2%3D%2282%22%20stroke%3D%22%232F5D50%22%20stroke-width%3D%222.6%22%2F%3E%3Ctext%20x%3D%22544%22%20y%3D%2286%22%20font-size%3D%2212%22%20font-family%3D%22Georgia%2Cserif%22%20fill%3D%22%232b2b2b%22%3Ef%E2%80%B3%3C%2Ftext%3E%0A%3Ctext%20x%3D%22279%22%20y%3D%22388%22%20text-anchor%3D%22middle%22%20font-size%3D%2212%22%20font-family%3D%22Georgia%2Cserif%22%20fill%3D%22%232b2b2b%22%3Ex%3C%2Ftext%3E%0A%3C%2Fsvg%3E`,
@@ -10955,7 +12599,7 @@ Brown is $f'$ and green is $f''$ on one plane (an $xe^{-x/2}$-style family). Gre
       "Wherever brown is positive, a little more output raises profit.",
       "Green staying positive means total cost keeps rising throughout the window.",
       "The two curves meet at the profit-maximising output."
-    ],
+    ]
     answer_key: [true, true, true, true, false],
     tactical_explanations: [
       `**A.** → True
@@ -11013,11 +12657,10 @@ $$P'=C'\\qquad\\nRightarrow\\qquad P'\\text{ changes }+\\to-$$
 Meeting of the two curves is not the profit-peak test
 
 Once that mismatch with the figure is clear, the claim cannot stand. Comparing the assertion with the axes, the statement is False.`
-    ],
+    ]
     difficulty_level: "4/5",
     sort_order: 142,
-    solution_overview:
-      `Read the figure first: name the drawn curve(s), mark zeros and sample heights, then translate signs into monotonicity and turning points.
+    solution_overview: `Read the figure first: name the drawn curve(s), mark zeros and sample heights, then translate signs into monotonicity and turning points.
 
 Brown is marginal profit $P'$ and green is marginal cost $C'$ on shared axes. At $x=1$ brown sits above green (heights near $2$ and $1$). At $x=5$ brown has crossed below the axis while green remains positive. Wherever brown is positive, a little more output raises profit; green staying positive means total cost keeps rising throughout the window. A profit-maximising output is where brown crosses from $+$ to $-$ (a zero of $P'$), which is not the same as the place where brown equals green.`,
     figure: `data:image/svg+xml;utf8,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20viewBox%3D%220%200%20640%20400%22%20width%3D%22640%22%20height%3D%22400%22%20role%3D%22img%22%3E%0A%3Crect%20width%3D%22640%22%20height%3D%22400%22%20rx%3D%2216%22%20fill%3D%22%23faf8f4%22%20stroke%3D%22%23d9d2c5%22%2F%3E%0A%3Ctext%20x%3D%22279%22%20y%3D%2226%22%20text-anchor%3D%22middle%22%20font-size%3D%2214%22%20font-family%3D%22Georgia%2Cserif%22%20fill%3D%22%232b2b2b%22%3EP%E2%80%B2%20and%20C%E2%80%B2%20on%20the%20same%20axes%3C%2Ftext%3E%0A%3Cdefs%3E%3CclipPath%20id%3D%22clip-7334103%22%3E%3Crect%20x%3D%2252%22%20y%3D%2244%22%20width%3D%22454%22%20height%3D%22300%22%2F%3E%3C%2FclipPath%3E%3C%2Fdefs%3E%0A%3Cline%20x1%3D%2252.0%22%20y1%3D%2244%22%20x2%3D%2252.0%22%20y2%3D%22344%22%20stroke%3D%22%23e8e2d8%22%20stroke-width%3D%221%22%2F%3E%0A%3Cline%20x1%3D%22127.7%22%20y1%3D%2244%22%20x2%3D%22127.7%22%20y2%3D%22344%22%20stroke%3D%22%23e8e2d8%22%20stroke-width%3D%221%22%2F%3E%0A%3Cline%20x1%3D%22203.3%22%20y1%3D%2244%22%20x2%3D%22203.3%22%20y2%3D%22344%22%20stroke%3D%22%23e8e2d8%22%20stroke-width%3D%221%22%2F%3E%0A%3Cline%20x1%3D%22279.0%22%20y1%3D%2244%22%20x2%3D%22279.0%22%20y2%3D%22344%22%20stroke%3D%22%23e8e2d8%22%20stroke-width%3D%221%22%2F%3E%0A%3Cline%20x1%3D%22354.7%22%20y1%3D%2244%22%20x2%3D%22354.7%22%20y2%3D%22344%22%20stroke%3D%22%23e8e2d8%22%20stroke-width%3D%221%22%2F%3E%0A%3Cline%20x1%3D%22430.3%22%20y1%3D%2244%22%20x2%3D%22430.3%22%20y2%3D%22344%22%20stroke%3D%22%23e8e2d8%22%20stroke-width%3D%221%22%2F%3E%0A%3Cline%20x1%3D%22506.0%22%20y1%3D%2244%22%20x2%3D%22506.0%22%20y2%3D%22344%22%20stroke%3D%22%23e8e2d8%22%20stroke-width%3D%221%22%2F%3E%0A%0A%0A%0A%0A%3Cline%20x1%3D%2252%22%20y1%3D%22244.0%22%20x2%3D%22506%22%20y2%3D%22244.0%22%20stroke%3D%22%23c4b8a8%22%20stroke-width%3D%221.3%22%2F%3E%0A%3Cline%20x1%3D%2252%22%20y1%3D%2244%22%20x2%3D%2252%22%20y2%3D%22344%22%20stroke%3D%22%237a7268%22%20stroke-width%3D%221.5%22%2F%3E%0A%3Cline%20x1%3D%2252%22%20y1%3D%22344%22%20x2%3D%22506%22%20y2%3D%22344%22%20stroke%3D%22%237a7268%22%20stroke-width%3D%221.5%22%2F%3E%0A%0A%0A%0A%0A%0A%0A%0A%0A%0A%0A%0A%3Cline%20x1%3D%2252.0%22%20y1%3D%22344.0%22%20x2%3D%2252.0%22%20y2%3D%22350.0%22%20stroke%3D%22%23333%22%2F%3E%3Ctext%20x%3D%2252.0%22%20y%3D%22364.0%22%20text-anchor%3D%22middle%22%20font-size%3D%2211%22%20font-family%3D%22Georgia%2Cserif%22%20fill%3D%22%23333%22%3E0%3C%2Ftext%3E%3Cline%20x1%3D%22203.3%22%20y1%3D%22344.0%22%20x2%3D%22203.3%22%20y2%3D%22350.0%22%20stroke%3D%22%23333%22%2F%3E%3Ctext%20x%3D%22203.3%22%20y%3D%22364.0%22%20text-anchor%3D%22middle%22%20font-size%3D%2211%22%20font-family%3D%22Georgia%2Cserif%22%20fill%3D%22%23333%22%3E2%3C%2Ftext%3E%3Cline%20x1%3D%22354.7%22%20y1%3D%22344.0%22%20x2%3D%22354.7%22%20y2%3D%22350.0%22%20stroke%3D%22%23333%22%2F%3E%3Ctext%20x%3D%22354.7%22%20y%3D%22364.0%22%20text-anchor%3D%22middle%22%20font-size%3D%2211%22%20font-family%3D%22Georgia%2Cserif%22%20fill%3D%22%23333%22%3E4%3C%2Ftext%3E%3Cline%20x1%3D%22506.0%22%20y1%3D%22344.0%22%20x2%3D%22506.0%22%20y2%3D%22350.0%22%20stroke%3D%22%23333%22%2F%3E%3Ctext%20x%3D%22506.0%22%20y%3D%22364.0%22%20text-anchor%3D%22middle%22%20font-size%3D%2211%22%20font-family%3D%22Georgia%2Cserif%22%20fill%3D%22%23333%22%3E6%3C%2Ftext%3E%3Cline%20x1%3D%2252.0%22%20y1%3D%22344.0%22%20x2%3D%22506.0%22%20y2%3D%22344.0%22%20stroke%3D%22%23ddd%22%20stroke-width%3D%221%22%2F%3E%3Cline%20x1%3D%2246.0%22%20y1%3D%22344.0%22%20x2%3D%2252.0%22%20y2%3D%22344.0%22%20stroke%3D%22%23333%22%2F%3E%3Ctext%20x%3D%2242.0%22%20y%3D%22344.0%22%20text-anchor%3D%22end%22%20dominant-baseline%3D%22middle%22%20font-size%3D%2211%22%20font-family%3D%22Georgia%2Cserif%22%20fill%3D%22%23333%22%3E-2%3C%2Ftext%3E%3Cline%20x1%3D%2252.0%22%20y1%3D%22248.0%22%20x2%3D%22506.0%22%20y2%3D%22248.0%22%20stroke%3D%22%23ddd%22%20stroke-width%3D%221%22%2F%3E%3Cline%20x1%3D%2246.0%22%20y1%3D%22248.0%22%20x2%3D%2252.0%22%20y2%3D%22248.0%22%20stroke%3D%22%23333%22%2F%3E%3Ctext%20x%3D%2242.0%22%20y%3D%22248.0%22%20text-anchor%3D%22end%22%20dominant-baseline%3D%22middle%22%20font-size%3D%2211%22%20font-family%3D%22Georgia%2Cserif%22%20fill%3D%22%23333%22%3E0%3C%2Ftext%3E%3Cline%20x1%3D%2252.0%22%20y1%3D%22148.0%22%20x2%3D%22506.0%22%20y2%3D%22148.0%22%20stroke%3D%22%23ddd%22%20stroke-width%3D%221%22%2F%3E%3Cline%20x1%3D%2246.0%22%20y1%3D%22148.0%22%20x2%3D%2252.0%22%20y2%3D%22148.0%22%20stroke%3D%22%23333%22%2F%3E%3Ctext%20x%3D%2242.0%22%20y%3D%22148.0%22%20text-anchor%3D%22end%22%20dominant-baseline%3D%22middle%22%20font-size%3D%2211%22%20font-family%3D%22Georgia%2Cserif%22%20fill%3D%22%23333%22%3E2%3C%2Ftext%3E%3Cline%20x1%3D%2252.0%22%20y1%3D%2248.0%22%20x2%3D%22506.0%22%20y2%3D%2248.0%22%20stroke%3D%22%23ddd%22%20stroke-width%3D%221%22%2F%3E%3Cline%20x1%3D%2246.0%22%20y1%3D%2248.0%22%20x2%3D%2252.0%22%20y2%3D%2248.0%22%20stroke%3D%22%23333%22%2F%3E%3Ctext%20x%3D%2242.0%22%20y%3D%2248.0%22%20text-anchor%3D%22end%22%20dominant-baseline%3D%22middle%22%20font-size%3D%2211%22%20font-family%3D%22Georgia%2Cserif%22%20fill%3D%22%23333%22%3E4%3C%2Ftext%3E%3Cpolyline%20fill%3D%22none%22%20stroke%3D%22%238B5A2B%22%20stroke-width%3D%222.4%22%20points%3D%2252.0%2C119.0%2053.4%2C119.6%2054.8%2C120.1%2056.3%2C120.7%2057.7%2C121.2%2059.1%2C121.8%2060.5%2C122.4%2061.9%2C122.9%2063.4%2C123.5%2064.8%2C124.1%2066.2%2C124.6%2067.6%2C125.2%2069.0%2C125.7%2070.4%2C126.3%2071.9%2C126.9%2073.3%2C127.4%2074.7%2C128.0%2076.1%2C128.6%2077.5%2C129.1%2079.0%2C129.7%2080.4%2C130.2%2081.8%2C130.8%2083.2%2C131.4%2084.6%2C131.9%2086.0%2C132.5%2087.5%2C133.1%2088.9%2C133.6%2090.3%2C134.2%2091.7%2C134.8%2093.1%2C135.3%2094.6%2C135.9%2096.0%2C136.4%2097.4%2C137.0%2098.8%2C137.6%20100.2%2C138.1%20101.7%2C138.7%20103.1%2C139.2%20104.5%2C139.8%20105.9%2C140.4%20107.3%2C140.9%20108.8%2C141.5%20110.2%2C142.1%20111.6%2C142.6%20113.0%2C143.2%20114.4%2C143.8%20115.8%2C144.3%20117.3%2C144.9%20118.7%2C145.4%20120.1%2C146.0%20121.5%2C146.6%20122.9%2C147.1%20124.4%2C147.7%20125.8%2C148.2%20127.2%2C148.8%20128.6%2C149.4%20130.0%2C149.9%20131.4%2C150.5%20132.9%2C151.1%20134.3%2C151.6%20135.7%2C152.2%20137.1%2C152.8%20138.5%2C153.3%20140.0%2C153.9%20141.4%2C154.4%20142.8%2C155.0%20144.2%2C155.6%20145.6%2C156.1%20147.1%2C156.7%20148.5%2C157.2%20149.9%2C157.8%20151.3%2C158.4%20152.7%2C158.9%20154.2%2C159.5%20155.6%2C160.1%20157.0%2C160.6%20158.4%2C161.2%20159.8%2C161.8%20161.2%2C162.3%20162.7%2C162.9%20164.1%2C163.4%20165.5%2C164.0%20166.9%2C164.6%20168.3%2C165.1%20169.8%2C165.7%20171.2%2C166.2%20172.6%2C166.8%20174.0%2C167.4%20175.4%2C167.9%20176.8%2C168.5%20178.3%2C169.1%20179.7%2C169.6%20181.1%2C170.2%20182.5%2C170.8%20183.9%2C171.3%20185.4%2C171.9%20186.8%2C172.4%20188.2%2C173.0%20189.6%2C173.6%20191.0%2C174.1%20192.5%2C174.7%20193.9%2C175.2%20195.3%2C175.8%20196.7%2C176.4%20198.1%2C176.9%20199.6%2C177.5%20201.0%2C178.1%20202.4%2C178.6%20203.8%2C179.2%20205.2%2C179.8%20206.6%2C180.3%20208.1%2C180.9%20209.5%2C181.4%20210.9%2C182.0%20212.3%2C182.6%20213.7%2C183.1%20215.2%2C183.7%20216.6%2C184.2%20218.0%2C184.8%20219.4%2C185.4%20220.8%2C185.9%20222.2%2C186.5%20223.7%2C187.1%20225.1%2C187.6%20226.5%2C188.2%20227.9%2C188.8%20229.3%2C189.3%20230.8%2C189.9%20232.2%2C190.4%20233.6%2C191.0%20235.0%2C191.6%20236.4%2C192.1%20237.9%2C192.7%20239.3%2C193.3%20240.7%2C193.8%20242.1%2C194.4%20243.5%2C194.9%20244.9%2C195.5%20246.4%2C196.1%20247.8%2C196.6%20249.2%2C197.2%20250.6%2C197.8%20252.0%2C198.3%20253.5%2C198.9%20254.9%2C199.4%20256.3%2C200.0%20257.7%2C200.6%20259.1%2C201.1%20260.6%2C201.7%20262.0%2C202.2%20263.4%2C202.8%20264.8%2C203.4%20266.2%2C203.9%20267.6%2C204.5%20269.1%2C205.1%20270.5%2C205.6%20271.9%2C206.2%20273.3%2C206.8%20274.7%2C207.3%20276.2%2C207.9%20277.6%2C208.4%20279.0%2C209.0%20280.4%2C209.6%20281.8%2C210.1%20283.3%2C210.7%20284.7%2C211.2%20286.1%2C211.8%20287.5%2C212.4%20288.9%2C212.9%20290.4%2C213.5%20291.8%2C214.1%20293.2%2C214.6%20294.6%2C215.2%20296.0%2C215.8%20297.4%2C216.3%20298.9%2C216.9%20300.3%2C217.4%20301.7%2C218.0%20303.1%2C218.6%20304.5%2C219.1%20306.0%2C219.7%20307.4%2C220.2%20308.8%2C220.8%20310.2%2C221.4%20311.6%2C221.9%20313.1%2C222.5%20314.5%2C223.1%20315.9%2C223.6%20317.3%2C224.2%20318.7%2C224.7%20320.1%2C225.3%20321.6%2C225.9%20323.0%2C226.4%20324.4%2C227.0%20325.8%2C227.6%20327.2%2C228.1%20328.7%2C228.7%20330.1%2C229.2%20331.5%2C229.8%20332.9%2C230.4%20334.3%2C230.9%20335.8%2C231.5%20337.2%2C232.1%20338.6%2C232.6%20340.0%2C233.2%20341.4%2C233.7%20342.8%2C234.3%20344.3%2C234.9%20345.7%2C235.4%20347.1%2C236.0%20348.5%2C236.6%20349.9%2C237.1%20351.4%2C237.7%20352.8%2C238.2%20354.2%2C238.8%20355.6%2C239.4%20357.0%2C239.9%20358.4%2C240.5%20359.9%2C241.1%20361.3%2C241.6%20362.7%2C242.2%20364.1%2C242.8%20365.5%2C243.3%20367.0%2C243.9%20368.4%2C244.4%20369.8%2C245.0%20371.2%2C245.6%20372.6%2C246.1%20374.1%2C246.7%20375.5%2C247.2%20376.9%2C247.8%20378.3%2C248.4%20379.7%2C248.9%20381.1%2C249.5%20382.6%2C250.1%20384.0%2C250.6%20385.4%2C251.2%20386.8%2C251.7%20388.2%2C252.3%20389.7%2C252.9%20391.1%2C253.4%20392.5%2C254.0%20393.9%2C254.6%20395.3%2C255.1%20396.8%2C255.7%20398.2%2C256.2%20399.6%2C256.8%20401.0%2C257.4%20402.4%2C257.9%20403.9%2C258.5%20405.3%2C259.1%20406.7%2C259.6%20408.1%2C260.2%20409.5%2C260.7%20410.9%2C261.3%20412.4%2C261.9%20413.8%2C262.4%20415.2%2C263.0%20416.6%2C263.6%20418.0%2C264.1%20419.5%2C264.7%20420.9%2C265.2%20422.3%2C265.8%20423.7%2C266.4%20425.1%2C266.9%20426.6%2C267.5%20428.0%2C268.1%20429.4%2C268.6%20430.8%2C269.2%20432.2%2C269.8%20433.6%2C270.3%20435.1%2C270.9%20436.5%2C271.4%20437.9%2C272.0%20439.3%2C272.6%20440.7%2C273.1%20442.2%2C273.7%20443.6%2C274.2%20445.0%2C274.8%20446.4%2C275.4%20447.8%2C275.9%20449.2%2C276.5%20450.7%2C277.1%20452.1%2C277.6%20453.5%2C278.2%20454.9%2C278.8%20456.3%2C279.3%20457.8%2C279.9%20459.2%2C280.4%20460.6%2C281.0%20462.0%2C281.6%20463.4%2C282.1%20464.9%2C282.7%20466.3%2C283.2%20467.7%2C283.8%20469.1%2C284.4%20470.5%2C284.9%20471.9%2C285.5%20473.4%2C286.1%20474.8%2C286.6%20476.2%2C287.2%20477.6%2C287.8%20479.0%2C288.3%20480.5%2C288.9%20481.9%2C289.4%20483.3%2C290.0%20484.7%2C290.6%20486.1%2C291.1%20487.6%2C291.7%20489.0%2C292.2%20490.4%2C292.8%20491.8%2C293.4%20493.2%2C293.9%20494.6%2C294.5%20496.1%2C295.1%20497.5%2C295.6%20498.9%2C296.2%20500.3%2C296.8%20501.7%2C297.3%20503.2%2C297.9%20504.6%2C298.4%20506.0%2C299.0%22%20clip-path%3D%22url%28%23clip-7334103%29%22%2F%3E%0A%3Cpolyline%20fill%3D%22none%22%20stroke%3D%22%232F5D50%22%20stroke-width%3D%222.4%22%20points%3D%2252.0%2C219.0%2053.4%2C218.7%2054.8%2C218.4%2056.3%2C218.1%2057.7%2C217.9%2059.1%2C217.6%2060.5%2C217.3%2061.9%2C217.0%2063.4%2C216.7%2064.8%2C216.4%2066.2%2C216.1%2067.6%2C215.8%2069.0%2C215.5%2070.4%2C215.2%2071.9%2C214.9%2073.3%2C214.6%2074.7%2C214.3%2076.1%2C214.0%2077.5%2C213.7%2079.0%2C213.3%2080.4%2C213.0%2081.8%2C212.7%2083.2%2C212.4%2084.6%2C212.1%2086.0%2C211.7%2087.5%2C211.4%2088.9%2C211.1%2090.3%2C210.8%2091.7%2C210.4%2093.1%2C210.1%2094.6%2C209.8%2096.0%2C209.4%2097.4%2C209.1%2098.8%2C208.8%20100.2%2C208.4%20101.7%2C208.1%20103.1%2C207.7%20104.5%2C207.4%20105.9%2C207.0%20107.3%2C206.7%20108.8%2C206.3%20110.2%2C206.0%20111.6%2C205.6%20113.0%2C205.3%20114.4%2C204.9%20115.8%2C204.6%20117.3%2C204.2%20118.7%2C203.8%20120.1%2C203.5%20121.5%2C203.1%20122.9%2C202.7%20124.4%2C202.4%20125.8%2C202.0%20127.2%2C201.6%20128.6%2C201.2%20130.0%2C200.9%20131.4%2C200.5%20132.9%2C200.1%20134.3%2C199.7%20135.7%2C199.3%20137.1%2C199.0%20138.5%2C198.6%20140.0%2C198.2%20141.4%2C197.8%20142.8%2C197.4%20144.2%2C197.0%20145.6%2C196.6%20147.1%2C196.2%20148.5%2C195.8%20149.9%2C195.4%20151.3%2C195.0%20152.7%2C194.6%20154.2%2C194.2%20155.6%2C193.8%20157.0%2C193.4%20158.4%2C193.0%20159.8%2C192.5%20161.2%2C192.1%20162.7%2C191.7%20164.1%2C191.3%20165.5%2C190.9%20166.9%2C190.5%20168.3%2C190.0%20169.8%2C189.6%20171.2%2C189.2%20172.6%2C188.7%20174.0%2C188.3%20175.4%2C187.9%20176.8%2C187.4%20178.3%2C187.0%20179.7%2C186.6%20181.1%2C186.1%20182.5%2C185.7%20183.9%2C185.2%20185.4%2C184.8%20186.8%2C184.3%20188.2%2C183.9%20189.6%2C183.4%20191.0%2C183.0%20192.5%2C182.5%20193.9%2C182.1%20195.3%2C181.6%20196.7%2C181.2%20198.1%2C180.7%20199.6%2C180.2%20201.0%2C179.8%20202.4%2C179.3%20203.8%2C178.8%20205.2%2C178.4%20206.6%2C177.9%20208.1%2C177.4%20209.5%2C177.0%20210.9%2C176.5%20212.3%2C176.0%20213.7%2C175.5%20215.2%2C175.0%20216.6%2C174.5%20218.0%2C174.1%20219.4%2C173.6%20220.8%2C173.1%20222.2%2C172.6%20223.7%2C172.1%20225.1%2C171.6%20226.5%2C171.1%20227.9%2C170.6%20229.3%2C170.1%20230.8%2C169.6%20232.2%2C169.1%20233.6%2C168.6%20235.0%2C168.1%20236.4%2C167.6%20237.9%2C167.1%20239.3%2C166.6%20240.7%2C166.0%20242.1%2C165.5%20243.5%2C165.0%20244.9%2C164.5%20246.4%2C164.0%20247.8%2C163.4%20249.2%2C162.9%20250.6%2C162.4%20252.0%2C161.9%20253.5%2C161.3%20254.9%2C160.8%20256.3%2C160.3%20257.7%2C159.7%20259.1%2C159.2%20260.6%2C158.7%20262.0%2C158.1%20263.4%2C157.6%20264.8%2C157.0%20266.2%2C156.5%20267.6%2C155.9%20269.1%2C155.4%20270.5%2C154.8%20271.9%2C154.3%20273.3%2C153.7%20274.7%2C153.2%20276.2%2C152.6%20277.6%2C152.1%20279.0%2C151.5%20280.4%2C150.9%20281.8%2C150.4%20283.3%2C149.8%20284.7%2C149.2%20286.1%2C148.7%20287.5%2C148.1%20288.9%2C147.5%20290.4%2C146.9%20291.8%2C146.4%20293.2%2C145.8%20294.6%2C145.2%20296.0%2C144.6%20297.4%2C144.0%20298.9%2C143.5%20300.3%2C142.9%20301.7%2C142.3%20303.1%2C141.7%20304.5%2C141.1%20306.0%2C140.5%20307.4%2C139.9%20308.8%2C139.3%20310.2%2C138.7%20311.6%2C138.1%20313.1%2C137.5%20314.5%2C136.9%20315.9%2C136.3%20317.3%2C135.7%20318.7%2C135.1%20320.1%2C134.4%20321.6%2C133.8%20323.0%2C133.2%20324.4%2C132.6%20325.8%2C132.0%20327.2%2C131.4%20328.7%2C130.7%20330.1%2C130.1%20331.5%2C129.5%20332.9%2C128.9%20334.3%2C128.2%20335.8%2C127.6%20337.2%2C127.0%20338.6%2C126.3%20340.0%2C125.7%20341.4%2C125.0%20342.8%2C124.4%20344.3%2C123.8%20345.7%2C123.1%20347.1%2C122.5%20348.5%2C121.8%20349.9%2C121.2%20351.4%2C120.5%20352.8%2C119.9%20354.2%2C119.2%20355.6%2C118.6%20357.0%2C117.9%20358.4%2C117.2%20359.9%2C116.6%20361.3%2C115.9%20362.7%2C115.3%20364.1%2C114.6%20365.5%2C113.9%20367.0%2C113.2%20368.4%2C112.6%20369.8%2C111.9%20371.2%2C111.2%20372.6%2C110.5%20374.1%2C109.9%20375.5%2C109.2%20376.9%2C108.5%20378.3%2C107.8%20379.7%2C107.1%20381.1%2C106.4%20382.6%2C105.8%20384.0%2C105.1%20385.4%2C104.4%20386.8%2C103.7%20388.2%2C103.0%20389.7%2C102.3%20391.1%2C101.6%20392.5%2C100.9%20393.9%2C100.2%20395.3%2C99.5%20396.8%2C98.8%20398.2%2C98.0%20399.6%2C97.3%20401.0%2C96.6%20402.4%2C95.9%20403.9%2C95.2%20405.3%2C94.5%20406.7%2C93.8%20408.1%2C93.0%20409.5%2C92.3%20410.9%2C91.6%20412.4%2C90.9%20413.8%2C90.1%20415.2%2C89.4%20416.6%2C88.7%20418.0%2C87.9%20419.5%2C87.2%20420.9%2C86.5%20422.3%2C85.7%20423.7%2C85.0%20425.1%2C84.2%20426.6%2C83.5%20428.0%2C82.7%20429.4%2C82.0%20430.8%2C81.2%20432.2%2C80.5%20433.6%2C79.7%20435.1%2C79.0%20436.5%2C78.2%20437.9%2C77.5%20439.3%2C76.7%20440.7%2C76.0%20442.2%2C75.2%20443.6%2C74.4%20445.0%2C73.7%20446.4%2C72.9%20447.8%2C72.1%20449.2%2C71.3%20450.7%2C70.6%20452.1%2C69.8%20453.5%2C69.0%20454.9%2C68.2%20456.3%2C67.5%20457.8%2C66.7%20459.2%2C65.9%20460.6%2C65.1%20462.0%2C64.3%20463.4%2C63.5%20464.9%2C62.7%20466.3%2C61.9%20467.7%2C61.1%20469.1%2C60.3%20470.5%2C59.5%20471.9%2C58.7%20473.4%2C57.9%20474.8%2C57.1%20476.2%2C56.3%20477.6%2C55.5%20479.0%2C54.7%20480.5%2C53.9%20481.9%2C53.1%20483.3%2C52.3%20484.7%2C51.5%20486.1%2C50.6%20487.6%2C49.8%20489.0%2C49.0%20490.4%2C48.2%20491.8%2C47.3%20493.2%2C46.5%20494.6%2C45.7%20496.1%2C44.9%20497.5%2C44.0%20498.9%2C43.2%20500.3%2C42.4%20501.7%2C41.5%20503.2%2C40.7%20504.6%2C39.8%20506.0%2C39.0%22%20clip-path%3D%22url%28%23clip-7334103%29%22%2F%3E%0A%3Crect%20x%3D%22514%22%20y%3D%2246%22%20width%3D%22106%22%20height%3D%2250%22%20rx%3D%228%22%20fill%3D%22%23f8f6f2%22%20stroke%3D%22%23d9d2c5%22%2F%3E%0A%3Cline%20x1%3D%22520%22%20y1%3D%2264%22%20x2%3D%22538%22%20y2%3D%2264%22%20stroke%3D%22%238B5A2B%22%20stroke-width%3D%222.6%22%2F%3E%3Ctext%20x%3D%22544%22%20y%3D%2268%22%20font-size%3D%2212%22%20font-family%3D%22Georgia%2Cserif%22%20fill%3D%22%232b2b2b%22%3EP%E2%80%B2%3C%2Ftext%3E%0A%3Cline%20x1%3D%22520%22%20y1%3D%2282%22%20x2%3D%22538%22%20y2%3D%2282%22%20stroke%3D%22%232F5D50%22%20stroke-width%3D%222.6%22%2F%3E%3Ctext%20x%3D%22544%22%20y%3D%2286%22%20font-size%3D%2212%22%20font-family%3D%22Georgia%2Cserif%22%20fill%3D%22%232b2b2b%22%3EC%E2%80%B2%3C%2Ftext%3E%0A%3Ctext%20x%3D%22279%22%20y%3D%22388%22%20text-anchor%3D%22middle%22%20font-size%3D%2212%22%20font-family%3D%22Georgia%2Cserif%22%20fill%3D%22%232b2b2b%22%3Ex%3C%2Ftext%3E%0A%3C%2Fsvg%3E`,
@@ -11035,7 +12678,7 @@ Brown is marginal profit $P'$ and green is marginal cost $C'$ on shared axes. At
       "At $x=3$, brown is negative.",
       "On an interval where brown is above green and both are negative, $f$ and $g$ both decrease, and $f$ decreases less steeply when brown is less negative.",
       "Equal numbers of turning points for $f$ and $g$ follow automatically from the figure."
-    ],
+    ]
     answer_key: [true, true, true, true, false],
     tactical_explanations: [
       `**A.** → True
@@ -11075,11 +12718,10 @@ Turning points of $f$ and $g$ arise from zeros of $f'$ and $g'$ that change sign
 $$3\\neq 2$$
 
 so $f$ and $g$ need not have the same number of turning points. Equal turning-point counts do not follow automatically from the figure when the zero counts already differ — the premise the claim needs is simply not there — so the statement is False.`
-    ],
+    ]
     difficulty_level: "4/5",
     sort_order: 143,
-    solution_overview:
-      `Brown is $f'$ and green is $g'$ on one shared plane. At $x=0$ both curves sit below the axis, so both derivatives are negative there. Counting axis crossings in the window: brown has three zeros and green has two. At $x=3$, between brown's middle and right zeros, brown sits below the axis, hence $f'(3)<0$. On an interval where both curves are negative and brown sits above green, both $f$ and $g$ decrease, with $f$ decreasing less steeply because brown is less negative ($|f'|<|g'|$). Because the zero counts already differ ($3$ versus $2$), equal numbers of turning points for $f$ and $g$ do not follow from the figure.`,
+    solution_overview: `Brown is $f'$ and green is $g'$ on one shared plane. At $x=0$ both curves sit below the axis, so both derivatives are negative there. Counting axis crossings in the window: brown has three zeros and green has two. At $x=3$, between brown's middle and right zeros, brown sits below the axis, hence $f'(3)<0$. On an interval where both curves are negative and brown sits above green, both $f$ and $g$ decrease, with $f$ decreasing less steeply because brown is less negative ($|f'|<|g'|$). Because the zero counts already differ ($3$ versus $2$), equal numbers of turning points for $f$ and $g$ do not follow from the figure.`,
     figure: `data:image/svg+xml;utf8,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20viewBox%3D%220%200%20640%20400%22%20width%3D%22640%22%20height%3D%22400%22%20role%3D%22img%22%3E%0A%3Crect%20width%3D%22640%22%20height%3D%22400%22%20rx%3D%2216%22%20fill%3D%22%23faf8f4%22%20stroke%3D%22%23d9d2c5%22%2F%3E%0A%3Ctext%20x%3D%22279%22%20y%3D%2226%22%20text-anchor%3D%22middle%22%20font-size%3D%2214%22%20font-family%3D%22Georgia%2Cserif%22%20fill%3D%22%232b2b2b%22%3Ef%E2%80%B2%20and%20g%E2%80%B2%20on%20the%20same%20axes%3C%2Ftext%3E%0A%3Cdefs%3E%3CclipPath%20id%3D%22clip-4616603%22%3E%3Crect%20x%3D%2252%22%20y%3D%2244%22%20width%3D%22454%22%20height%3D%22300%22%2F%3E%3C%2FclipPath%3E%3C%2Fdefs%3E%0A%3Cline%20x1%3D%2252.0%22%20y1%3D%2244%22%20x2%3D%2252.0%22%20y2%3D%22344%22%20stroke%3D%22%23e8e2d8%22%20stroke-width%3D%221%22%2F%3E%0A%3Cline%20x1%3D%22127.7%22%20y1%3D%2244%22%20x2%3D%22127.7%22%20y2%3D%22344%22%20stroke%3D%22%23e8e2d8%22%20stroke-width%3D%221%22%2F%3E%0A%3Cline%20x1%3D%22203.3%22%20y1%3D%2244%22%20x2%3D%22203.3%22%20y2%3D%22344%22%20stroke%3D%22%23e8e2d8%22%20stroke-width%3D%221%22%2F%3E%0A%3Cline%20x1%3D%22279.0%22%20y1%3D%2244%22%20x2%3D%22279.0%22%20y2%3D%22344%22%20stroke%3D%22%23e8e2d8%22%20stroke-width%3D%221%22%2F%3E%0A%3Cline%20x1%3D%22354.7%22%20y1%3D%2244%22%20x2%3D%22354.7%22%20y2%3D%22344%22%20stroke%3D%22%23e8e2d8%22%20stroke-width%3D%221%22%2F%3E%0A%3Cline%20x1%3D%22430.3%22%20y1%3D%2244%22%20x2%3D%22430.3%22%20y2%3D%22344%22%20stroke%3D%22%23e8e2d8%22%20stroke-width%3D%221%22%2F%3E%0A%3Cline%20x1%3D%22506.0%22%20y1%3D%2244%22%20x2%3D%22506.0%22%20y2%3D%22344%22%20stroke%3D%22%23e8e2d8%22%20stroke-width%3D%221%22%2F%3E%0A%0A%0A%0A%0A%0A%3Cline%20x1%3D%2252%22%20y1%3D%22194.0%22%20x2%3D%22506%22%20y2%3D%22194.0%22%20stroke%3D%22%23c4b8a8%22%20stroke-width%3D%221.3%22%2F%3E%0A%3Cline%20x1%3D%22127.7%22%20y1%3D%2244%22%20x2%3D%22127.7%22%20y2%3D%22344%22%20stroke%3D%22%23c4b8a8%22%20stroke-width%3D%221.3%22%2F%3E%0A%3Cline%20x1%3D%2252%22%20y1%3D%2244%22%20x2%3D%2252%22%20y2%3D%22344%22%20stroke%3D%22%237a7268%22%20stroke-width%3D%221.5%22%2F%3E%0A%3Cline%20x1%3D%2252%22%20y1%3D%22344%22%20x2%3D%22506%22%20y2%3D%22344%22%20stroke%3D%22%237a7268%22%20stroke-width%3D%221.5%22%2F%3E%0A%0A%0A%0A%0A%0A%0A%0A%0A%0A%0A%0A%0A%3Cline%20x1%3D%22127.7%22%20y1%3D%22344.0%22%20x2%3D%22127.7%22%20y2%3D%22350.0%22%20stroke%3D%22%23333%22%2F%3E%3Ctext%20x%3D%22127.7%22%20y%3D%22364.0%22%20text-anchor%3D%22middle%22%20font-size%3D%2211%22%20font-family%3D%22Georgia%2Cserif%22%20fill%3D%22%23333%22%3E0%3C%2Ftext%3E%3Cline%20x1%3D%22279.0%22%20y1%3D%22344.0%22%20x2%3D%22279.0%22%20y2%3D%22350.0%22%20stroke%3D%22%23333%22%2F%3E%3Ctext%20x%3D%22279.0%22%20y%3D%22364.0%22%20text-anchor%3D%22middle%22%20font-size%3D%2211%22%20font-family%3D%22Georgia%2Cserif%22%20fill%3D%22%23333%22%3E2%3C%2Ftext%3E%3Cline%20x1%3D%22430.3%22%20y1%3D%22344.0%22%20x2%3D%22430.3%22%20y2%3D%22350.0%22%20stroke%3D%22%23333%22%2F%3E%3Ctext%20x%3D%22430.3%22%20y%3D%22364.0%22%20text-anchor%3D%22middle%22%20font-size%3D%2211%22%20font-family%3D%22Georgia%2Cserif%22%20fill%3D%22%23333%22%3E4%3C%2Ftext%3E%3Cline%20x1%3D%2252.0%22%20y1%3D%22291.8%22%20x2%3D%22506.0%22%20y2%3D%22291.8%22%20stroke%3D%22%23ddd%22%20stroke-width%3D%221%22%2F%3E%3Cline%20x1%3D%2246.0%22%20y1%3D%22291.8%22%20x2%3D%2252.0%22%20y2%3D%22291.8%22%20stroke%3D%22%23333%22%2F%3E%3Ctext%20x%3D%2242.0%22%20y%3D%22291.8%22%20text-anchor%3D%22end%22%20dominant-baseline%3D%22middle%22%20font-size%3D%2211%22%20font-family%3D%22Georgia%2Cserif%22%20fill%3D%22%23333%22%3E-5%3C%2Ftext%3E%3Cline%20x1%3D%2252.0%22%20y1%3D%22198.0%22%20x2%3D%22506.0%22%20y2%3D%22198.0%22%20stroke%3D%22%23ddd%22%20stroke-width%3D%221%22%2F%3E%3Cline%20x1%3D%2246.0%22%20y1%3D%22198.0%22%20x2%3D%2252.0%22%20y2%3D%22198.0%22%20stroke%3D%22%23333%22%2F%3E%3Ctext%20x%3D%2242.0%22%20y%3D%22198.0%22%20text-anchor%3D%22end%22%20dominant-baseline%3D%22middle%22%20font-size%3D%2211%22%20font-family%3D%22Georgia%2Cserif%22%20fill%3D%22%23333%22%3E0%3C%2Ftext%3E%3Cline%20x1%3D%2252.0%22%20y1%3D%22104.2%22%20x2%3D%22506.0%22%20y2%3D%22104.2%22%20stroke%3D%22%23ddd%22%20stroke-width%3D%221%22%2F%3E%3Cline%20x1%3D%2246.0%22%20y1%3D%22104.2%22%20x2%3D%2252.0%22%20y2%3D%22104.2%22%20stroke%3D%22%23333%22%2F%3E%3Ctext%20x%3D%2242.0%22%20y%3D%22104.2%22%20text-anchor%3D%22end%22%20dominant-baseline%3D%22middle%22%20font-size%3D%2211%22%20font-family%3D%22Georgia%2Cserif%22%20fill%3D%22%23333%22%3E5%3C%2Ftext%3E%3Cpolyline%20fill%3D%22none%22%20stroke%3D%22%238B5A2B%22%20stroke-width%3D%222.4%22%20points%3D%2252.0%2C194.0%2053.4%2C188.8%2054.8%2C183.7%2056.3%2C178.7%2057.7%2C173.7%2059.1%2C168.9%2060.5%2C164.2%2061.9%2C159.6%2063.4%2C155.1%2064.8%2C150.7%2066.2%2C146.4%2067.6%2C142.2%2069.0%2C138.1%2070.4%2C134.1%2071.9%2C130.2%2073.3%2C126.3%2074.7%2C122.6%2076.1%2C119.0%2077.5%2C115.4%2079.0%2C112.0%2080.4%2C108.6%2081.8%2C105.4%2083.2%2C102.2%2084.6%2C99.1%2086.0%2C96.1%2087.5%2C93.2%2088.9%2C90.4%2090.3%2C87.6%2091.7%2C85.0%2093.1%2C82.4%2094.6%2C79.9%2096.0%2C77.5%2097.4%2C75.2%2098.8%2C73.0%20100.2%2C70.8%20101.7%2C68.7%20103.1%2C66.7%20104.5%2C64.8%20105.9%2C63.0%20107.3%2C61.2%20108.8%2C59.5%20110.2%2C57.9%20111.6%2C56.4%20113.0%2C54.9%20114.4%2C53.5%20115.8%2C52.2%20117.3%2C51.0%20118.7%2C49.8%20120.1%2C48.7%20121.5%2C47.7%20122.9%2C46.7%20124.4%2C45.8%20125.8%2C45.0%20127.2%2C44.2%20128.6%2C43.5%20130.0%2C42.9%20131.4%2C42.4%20132.9%2C41.9%20134.3%2C41.4%20135.7%2C41.1%20137.1%2C40.7%20138.5%2C40.5%20140.0%2C40.3%20141.4%2C40.2%20142.8%2C40.1%20144.2%2C40.1%20145.6%2C40.1%20147.1%2C40.2%20148.5%2C40.4%20149.9%2C40.6%20151.3%2C40.9%20152.7%2C41.2%20154.2%2C41.6%20155.6%2C42.0%20157.0%2C42.5%20158.4%2C43.0%20159.8%2C43.6%20161.2%2C44.2%20162.7%2C44.9%20164.1%2C45.6%20165.5%2C46.3%20166.9%2C47.2%20168.3%2C48.0%20169.8%2C48.9%20171.2%2C49.9%20172.6%2C50.9%20174.0%2C51.9%20175.4%2C53.0%20176.8%2C54.1%20178.3%2C55.2%20179.7%2C56.4%20181.1%2C57.7%20182.5%2C58.9%20183.9%2C60.3%20185.4%2C61.6%20186.8%2C63.0%20188.2%2C64.4%20189.6%2C65.9%20191.0%2C67.3%20192.5%2C68.9%20193.9%2C70.4%20195.3%2C72.0%20196.7%2C73.6%20198.1%2C75.2%20199.6%2C76.9%20201.0%2C78.6%20202.4%2C80.3%20203.8%2C82.1%20205.2%2C83.9%20206.6%2C85.7%20208.1%2C87.5%20209.5%2C89.4%20210.9%2C91.2%20212.3%2C93.1%20213.7%2C95.1%20215.2%2C97.0%20216.6%2C99.0%20218.0%2C100.9%20219.4%2C102.9%20220.8%2C105.0%20222.2%2C107.0%20223.7%2C109.0%20225.1%2C111.1%20226.5%2C113.2%20227.9%2C115.3%20229.3%2C117.4%20230.8%2C119.5%20232.2%2C121.7%20233.6%2C123.8%20235.0%2C126.0%20236.4%2C128.1%20237.9%2C130.3%20239.3%2C132.5%20240.7%2C134.7%20242.1%2C136.9%20243.5%2C139.1%20244.9%2C141.3%20246.4%2C143.5%20247.8%2C145.7%20249.2%2C147.9%20250.6%2C150.2%20252.0%2C152.4%20253.5%2C154.6%20254.9%2C156.8%20256.3%2C159.1%20257.7%2C161.3%20259.1%2C163.5%20260.6%2C165.7%20262.0%2C168.0%20263.4%2C170.2%20264.8%2C172.4%20266.2%2C174.6%20267.6%2C176.8%20269.1%2C179.0%20270.5%2C181.1%20271.9%2C183.3%20273.3%2C185.5%20274.7%2C187.6%20276.2%2C189.8%20277.6%2C191.9%20279.0%2C194.0%20280.4%2C196.1%20281.8%2C198.2%20283.3%2C200.3%20284.7%2C202.3%20286.1%2C204.4%20287.5%2C206.4%20288.9%2C208.4%20290.4%2C210.4%20291.8%2C212.4%20293.2%2C214.3%20294.6%2C216.2%20296.0%2C218.1%20297.4%2C220.0%20298.9%2C221.9%20300.3%2C223.7%20301.7%2C225.6%20303.1%2C227.3%20304.5%2C229.1%20306.0%2C230.9%20307.4%2C232.6%20308.8%2C234.2%20310.2%2C235.9%20311.6%2C237.5%20313.1%2C239.1%20314.5%2C240.7%20315.9%2C242.2%20317.3%2C243.7%20318.7%2C245.2%20320.1%2C246.6%20321.6%2C248.0%20323.0%2C249.4%20324.4%2C250.7%20325.8%2C252.0%20327.2%2C253.2%20328.7%2C254.5%20330.1%2C255.6%20331.5%2C256.8%20332.9%2C257.9%20334.3%2C258.9%20335.8%2C259.9%20337.2%2C260.9%20338.6%2C261.8%20340.0%2C262.7%20341.4%2C263.5%20342.8%2C264.3%20344.3%2C265.1%20345.7%2C265.7%20347.1%2C266.4%20348.5%2C267.0%20349.9%2C267.5%20351.4%2C268.0%20352.8%2C268.5%20354.2%2C268.9%20355.6%2C269.2%20357.0%2C269.5%20358.4%2C269.7%20359.9%2C269.9%20361.3%2C270.1%20362.7%2C270.1%20364.1%2C270.1%20365.5%2C270.1%20367.0%2C270.0%20368.4%2C269.8%20369.8%2C269.6%20371.2%2C269.3%20372.6%2C269.0%20374.1%2C268.6%20375.5%2C268.1%20376.9%2C267.6%20378.3%2C267.0%20379.7%2C266.3%20381.1%2C265.6%20382.6%2C264.8%20384.0%2C263.9%20385.4%2C263.0%20386.8%2C262.0%20388.2%2C260.9%20389.7%2C259.8%20391.1%2C258.6%20392.5%2C257.3%20393.9%2C255.9%20395.3%2C254.5%20396.8%2C253.0%20398.2%2C251.4%20399.6%2C249.8%20401.0%2C248.0%20402.4%2C246.2%20403.9%2C244.4%20405.3%2C242.4%20406.7%2C240.3%20408.1%2C238.2%20409.5%2C236.0%20410.9%2C233.7%20412.4%2C231.4%20413.8%2C228.9%20415.2%2C226.4%20416.6%2C223.8%20418.0%2C221.1%20419.5%2C218.3%20420.9%2C215.4%20422.3%2C212.5%20423.7%2C209.4%20425.1%2C206.3%20426.6%2C203.0%20428.0%2C199.7%20429.4%2C196.3%20430.8%2C192.8%20432.2%2C189.2%20433.6%2C185.5%20435.1%2C181.8%20436.5%2C177.9%20437.9%2C173.9%20439.3%2C169.9%20440.7%2C165.7%20442.2%2C161.4%20443.6%2C157.1%20445.0%2C152.6%20446.4%2C148.0%20447.8%2C143.4%20449.2%2C138.6%20450.7%2C133.8%20452.1%2C128.8%20453.5%2C123.7%20454.9%2C118.6%20456.3%2C113.3%20457.8%2C107.9%20459.2%2C102.4%20460.6%2C96.8%20462.0%2C91.1%20463.4%2C85.3%20464.9%2C79.4%20466.3%2C73.3%20467.7%2C67.2%20469.1%2C60.9%20470.5%2C54.5%20471.9%2C48.1%20473.4%2C41.5%20474.8%2C34.7%20476.2%2C27.9%20477.6%2C21.0%20479.0%2C13.9%20480.5%2C6.7%20481.9%2C-0.6%20483.3%2C-8.0%20484.7%2C-15.5%20486.1%2C-23.2%20487.6%2C-31.0%20489.0%2C-38.9%20490.4%2C-46.9%20491.8%2C-55.0%20493.2%2C-63.3%20494.6%2C-71.7%20496.1%2C-80.2%20497.5%2C-88.9%20498.9%2C-97.7%20500.3%2C-106.6%20501.7%2C-115.6%20503.2%2C-124.8%20504.6%2C-134.1%20506.0%2C-143.5%22%20clip-path%3D%22url%28%23clip-4616603%29%22%2F%3E%0A%3Cpolyline%20fill%3D%22none%22%20stroke%3D%22%232F5D50%22%20stroke-width%3D%222.4%22%20points%3D%2252.0%2C276.5%2053.4%2C275.4%2054.8%2C274.3%2056.3%2C273.1%2057.7%2C272.0%2059.1%2C270.9%2060.5%2C269.8%2061.9%2C268.8%2063.4%2C267.7%2064.8%2C266.6%2066.2%2C265.5%2067.6%2C264.4%2069.0%2C263.4%2070.4%2C262.3%2071.9%2C261.3%2073.3%2C260.2%2074.7%2C259.2%2076.1%2C258.1%2077.5%2C257.1%2079.0%2C256.1%2080.4%2C255.1%2081.8%2C254.0%2083.2%2C253.0%2084.6%2C252.0%2086.0%2C251.0%2087.5%2C250.0%2088.9%2C249.0%2090.3%2C248.0%2091.7%2C247.1%2093.1%2C246.1%2094.6%2C245.1%2096.0%2C244.2%2097.4%2C243.2%2098.8%2C242.2%20100.2%2C241.3%20101.7%2C240.4%20103.1%2C239.4%20104.5%2C238.5%20105.9%2C237.6%20107.3%2C236.6%20108.8%2C235.7%20110.2%2C234.8%20111.6%2C233.9%20113.0%2C233.0%20114.4%2C232.1%20115.8%2C231.2%20117.3%2C230.3%20118.7%2C229.4%20120.1%2C228.6%20121.5%2C227.7%20122.9%2C226.8%20124.4%2C226.0%20125.8%2C225.1%20127.2%2C224.3%20128.6%2C223.4%20130.0%2C222.6%20131.4%2C221.8%20132.9%2C220.9%20134.3%2C220.1%20135.7%2C219.3%20137.1%2C218.5%20138.5%2C217.7%20140.0%2C216.9%20141.4%2C216.1%20142.8%2C215.3%20144.2%2C214.5%20145.6%2C213.7%20147.1%2C213.0%20148.5%2C212.2%20149.9%2C211.4%20151.3%2C210.7%20152.7%2C209.9%20154.2%2C209.2%20155.6%2C208.4%20157.0%2C207.7%20158.4%2C207.0%20159.8%2C206.2%20161.2%2C205.5%20162.7%2C204.8%20164.1%2C204.1%20165.5%2C203.4%20166.9%2C202.7%20168.3%2C202.0%20169.8%2C201.3%20171.2%2C200.6%20172.6%2C199.9%20174.0%2C199.3%20175.4%2C198.6%20176.8%2C197.9%20178.3%2C197.3%20179.7%2C196.6%20181.1%2C196.0%20182.5%2C195.3%20183.9%2C194.7%20185.4%2C194.0%20186.8%2C193.4%20188.2%2C192.8%20189.6%2C192.2%20191.0%2C191.6%20192.5%2C191.0%20193.9%2C190.4%20195.3%2C189.8%20196.7%2C189.2%20198.1%2C188.6%20199.6%2C188.0%20201.0%2C187.4%20202.4%2C186.9%20203.8%2C186.3%20205.2%2C185.8%20206.6%2C185.2%20208.1%2C184.7%20209.5%2C184.1%20210.9%2C183.6%20212.3%2C183.0%20213.7%2C182.5%20215.2%2C182.0%20216.6%2C181.5%20218.0%2C181.0%20219.4%2C180.5%20220.8%2C180.0%20222.2%2C179.5%20223.7%2C179.0%20225.1%2C178.5%20226.5%2C178.0%20227.9%2C177.5%20229.3%2C177.1%20230.8%2C176.6%20232.2%2C176.2%20233.6%2C175.7%20235.0%2C175.3%20236.4%2C174.8%20237.9%2C174.4%20239.3%2C173.9%20240.7%2C173.5%20242.1%2C173.1%20243.5%2C172.7%20244.9%2C172.3%20246.4%2C171.9%20247.8%2C171.5%20249.2%2C171.1%20250.6%2C170.7%20252.0%2C170.3%20253.5%2C169.9%20254.9%2C169.5%20256.3%2C169.2%20257.7%2C168.8%20259.1%2C168.5%20260.6%2C168.1%20262.0%2C167.8%20263.4%2C167.4%20264.8%2C167.1%20266.2%2C166.7%20267.6%2C166.4%20269.1%2C166.1%20270.5%2C165.8%20271.9%2C165.5%20273.3%2C165.2%20274.7%2C164.9%20276.2%2C164.6%20277.6%2C164.3%20279.0%2C164.0%20280.4%2C163.7%20281.8%2C163.4%20283.3%2C163.2%20284.7%2C162.9%20286.1%2C162.7%20287.5%2C162.4%20288.9%2C162.2%20290.4%2C161.9%20291.8%2C161.7%20293.2%2C161.5%20294.6%2C161.2%20296.0%2C161.0%20297.4%2C160.8%20298.9%2C160.6%20300.3%2C160.4%20301.7%2C160.2%20303.1%2C160.0%20304.5%2C159.8%20306.0%2C159.6%20307.4%2C159.4%20308.8%2C159.3%20310.2%2C159.1%20311.6%2C158.9%20313.1%2C158.8%20314.5%2C158.6%20315.9%2C158.5%20317.3%2C158.3%20318.7%2C158.2%20320.1%2C158.1%20321.6%2C157.9%20323.0%2C157.8%20324.4%2C157.7%20325.8%2C157.6%20327.2%2C157.5%20328.7%2C157.4%20330.1%2C157.3%20331.5%2C157.2%20332.9%2C157.1%20334.3%2C157.0%20335.8%2C157.0%20337.2%2C156.9%20338.6%2C156.8%20340.0%2C156.8%20341.4%2C156.7%20342.8%2C156.7%20344.3%2C156.6%20345.7%2C156.6%20347.1%2C156.6%20348.5%2C156.5%20349.9%2C156.5%20351.4%2C156.5%20352.8%2C156.5%20354.2%2C156.5%20355.6%2C156.5%20357.0%2C156.5%20358.4%2C156.5%20359.9%2C156.5%20361.3%2C156.6%20362.7%2C156.6%20364.1%2C156.6%20365.5%2C156.7%20367.0%2C156.7%20368.4%2C156.7%20369.8%2C156.8%20371.2%2C156.9%20372.6%2C156.9%20374.1%2C157.0%20375.5%2C157.1%20376.9%2C157.1%20378.3%2C157.2%20379.7%2C157.3%20381.1%2C157.4%20382.6%2C157.5%20384.0%2C157.6%20385.4%2C157.7%20386.8%2C157.9%20388.2%2C158.0%20389.7%2C158.1%20391.1%2C158.2%20392.5%2C158.4%20393.9%2C158.5%20395.3%2C158.7%20396.8%2C158.8%20398.2%2C159.0%20399.6%2C159.1%20401.0%2C159.3%20402.4%2C159.5%20403.9%2C159.7%20405.3%2C159.9%20406.7%2C160.0%20408.1%2C160.2%20409.5%2C160.4%20410.9%2C160.6%20412.4%2C160.9%20413.8%2C161.1%20415.2%2C161.3%20416.6%2C161.5%20418.0%2C161.8%20419.5%2C162.0%20420.9%2C162.2%20422.3%2C162.5%20423.7%2C162.7%20425.1%2C163.0%20426.6%2C163.3%20428.0%2C163.5%20429.4%2C163.8%20430.8%2C164.1%20432.2%2C164.4%20433.6%2C164.7%20435.1%2C165.0%20436.5%2C165.3%20437.9%2C165.6%20439.3%2C165.9%20440.7%2C166.2%20442.2%2C166.5%20443.6%2C166.9%20445.0%2C167.2%20446.4%2C167.5%20447.8%2C167.9%20449.2%2C168.2%20450.7%2C168.6%20452.1%2C168.9%20453.5%2C169.3%20454.9%2C169.7%20456.3%2C170.0%20457.8%2C170.4%20459.2%2C170.8%20460.6%2C171.2%20462.0%2C171.6%20463.4%2C172.0%20464.9%2C172.4%20466.3%2C172.8%20467.7%2C173.2%20469.1%2C173.7%20470.5%2C174.1%20471.9%2C174.5%20473.4%2C175.0%20474.8%2C175.4%20476.2%2C175.9%20477.6%2C176.3%20479.0%2C176.8%20480.5%2C177.2%20481.9%2C177.7%20483.3%2C178.2%20484.7%2C178.7%20486.1%2C179.1%20487.6%2C179.6%20489.0%2C180.1%20490.4%2C180.6%20491.8%2C181.1%20493.2%2C181.7%20494.6%2C182.2%20496.1%2C182.7%20497.5%2C183.2%20498.9%2C183.8%20500.3%2C184.3%20501.7%2C184.8%20503.2%2C185.4%20504.6%2C185.9%20506.0%2C186.5%22%20clip-path%3D%22url%28%23clip-4616603%29%22%2F%3E%0A%3Crect%20x%3D%22514%22%20y%3D%2246%22%20width%3D%22106%22%20height%3D%2250%22%20rx%3D%228%22%20fill%3D%22%23f8f6f2%22%20stroke%3D%22%23d9d2c5%22%2F%3E%0A%3Cline%20x1%3D%22520%22%20y1%3D%2264%22%20x2%3D%22538%22%20y2%3D%2264%22%20stroke%3D%22%238B5A2B%22%20stroke-width%3D%222.6%22%2F%3E%3Ctext%20x%3D%22544%22%20y%3D%2268%22%20font-size%3D%2212%22%20font-family%3D%22Georgia%2Cserif%22%20fill%3D%22%232b2b2b%22%3Ef%E2%80%B2%3C%2Ftext%3E%0A%3Cline%20x1%3D%22520%22%20y1%3D%2282%22%20x2%3D%22538%22%20y2%3D%2282%22%20stroke%3D%22%232F5D50%22%20stroke-width%3D%222.6%22%2F%3E%3Ctext%20x%3D%22544%22%20y%3D%2286%22%20font-size%3D%2212%22%20font-family%3D%22Georgia%2Cserif%22%20fill%3D%22%232b2b2b%22%3Eg%E2%80%B2%3C%2Ftext%3E%0A%3Ctext%20x%3D%22279%22%20y%3D%22388%22%20text-anchor%3D%22middle%22%20font-size%3D%2212%22%20font-family%3D%22Georgia%2Cserif%22%20fill%3D%22%232b2b2b%22%3Ex%3C%2Ftext%3E%0A%3C%2Fsvg%3E`,
   },
 {
@@ -11095,7 +12737,7 @@ so $f$ and $g$ need not have the same number of turning points. Equal turning-po
       "At $x=1$, the graph of $f'$ is above the axis, so $f'(1)>0$.",
       "A local minimum of the graph of $f'$ (a lowest point of the brown curve) is automatically a local minimum of $f$.",
       "Between consecutive zeros of $f'$, the sign of $f'$ does not change, so $f$ is strictly monotonic on each such open interval."
-    ],
+    ]
     answer_key: [true, true, true, false, true],
     tactical_explanations: [
       `**A.** → True
@@ -11151,11 +12793,10 @@ $$f'\\text{ constant sign between consecutive zeros}$$
 so $f$ is strictly monotonic on each such open interval, and the statement is True.
 
 Putting that figure reading next to the claim, every asserted sign, height, or classification matches what the axes show, so the statement is True.`
-    ],
+    ]
     difficulty_level: "5/5",
     sort_order: 144,
-    solution_overview:
-      `The figure shows $f'$ with four transversal axis crossings in $[0,6]$, near
+    solution_overview: `The figure shows $f'$ with four transversal axis crossings in $[0,6]$, near
 
 $$x=0.5,\\ 2,\\ 3.5,\\ 5.5$$
 
@@ -11175,7 +12816,7 @@ Each sign-changing zero gives a local extremum of $f$, so $f$ has four local ext
       "At $x=3$, $f'$ changes from negative to positive, so $f$ has a local minimum at $x=3$.",
       "At $x=5$, $|f'(5)|$ is smaller than $|f'(2)|$ because of the decay of the envelope.",
       "Since the curve's amplitude is smaller near $x=3$ than near $x=2$, the point $x=3$ cannot be a local extremum of $f$."
-    ],
+    ]
     answer_key: [true, true, true, true, false],
     tactical_explanations: [
       `**A.** → True
@@ -11233,11 +12874,10 @@ $$f'(3)=0,\\qquad f'\\text{ changes }-\\to+\\text{ at }x=3$$
 Amplitude decay does not cancel that test
 
 Once that mismatch with the figure is clear, the claim cannot stand. Comparing the assertion with the axes, the statement is False.`
-    ],
+    ]
     difficulty_level: "5/5",
     sort_order: 145,
-    solution_overview:
-      `Read the figure first: name the drawn curve(s), mark zeros and sample heights, then translate signs into monotonicity and turning points.
+    solution_overview: `Read the figure first: name the drawn curve(s), mark zeros and sample heights, then translate signs into monotonicity and turning points.
 
 The figure shows $f'$ with zeros at $x=1$ and $x=3$ and a decaying envelope. Sign chart:
 
@@ -11259,7 +12899,7 @@ so $f$ has a local maximum at $x=1$ ($+$ to $-$) and a local minimum at $x=3$ ($
       "Near $x=1.5$, $f'$ has a local maximum (highest point of the brown curve there), and there $f''$ is about $0$.",
       "Wherever the green curve is positive, the brown curve is rising.",
       "The brown curve has three zeros while the green curve has only two zeros in the window."
-    ],
+    ]
     answer_key: [true, true, true, true, true],
     tactical_explanations: [
       `**A.** → True
@@ -11315,11 +12955,10 @@ $$f'\\text{ has three zeros},\\qquad f''\\text{ has two zeros}$$
 Those counts match the claim exactly
 
 Putting that figure reading next to the claim, every asserted sign, height, or classification matches what the axes show, so the statement is True.`
-    ],
+    ]
     difficulty_level: "5/5",
     sort_order: 146,
-    solution_overview:
-      `Read the figure first: name the drawn curve(s), mark zeros and sample heights, then translate signs into monotonicity and turning points.
+    solution_overview: `Read the figure first: name the drawn curve(s), mark zeros and sample heights, then translate signs into monotonicity and turning points.
 
 The figure plots $f'$ (brown) and $f''$ (green) on the same plane. Brown has three zeros and green has two in the window. At $x=3$ (between brown's middle zeros) brown is below the axis, and green is also below:
 
@@ -11341,7 +12980,7 @@ so $f$ is decreasing and concave down at $x=3$. Near $x=1.5$ brown has a local m
       "For $x>2$ in this window, the green curve is negative, so $f'$ is decreasing on $(2,8)$.",
       "At $x=0$, brown is near height $4$ while green is near height $-2$.",
       "Because green is negative on $(2,8)$, the function $f$ itself must be decreasing on $(2,8)$."
-    ],
+    ]
     answer_key: [true, true, true, true, false],
     tactical_explanations: [
       `**A.** → True
@@ -11397,11 +13036,10 @@ $$f''<0\\text{ on }(2,8)\\quad\\text{but}\\quad f'>0\\text{ on }(2,4)$$
 so $f$ is still increasing on $(2,4)$. Concavity and monotonicity are different
 
 Once that mismatch with the figure is clear, the claim cannot stand. Comparing the assertion with the axes, the statement is False.`
-    ],
+    ]
     difficulty_level: "5/5",
     sort_order: 147,
-    solution_overview:
-      `Brown is $f'$ and green is $f''$ on one shared plane. Brown crosses the axis at $x=4$ with a positive hump to the left:
+    solution_overview: `Brown is $f'$ and green is $f''$ on one shared plane. Brown crosses the axis at $x=4$ with a positive hump to the left:
 
 $$f'>0\\text{ on }(0,4),\\qquad f'<0\\text{ right of }4$$
 
@@ -11425,7 +13063,7 @@ Negative $f''$ speaks to concavity of $f$ and decrease of $f'$, not to whether $
       "At $x=4$, both curves are negative, so both firms' profits are decreasing in output there.",
       "Near $x=0$, both curves are positive, and green starts higher than brown.",
       "Having two zeros each means the two firms earn the same maximal profit level."
-    ],
+    ]
     answer_key: [true, true, true, true, false],
     tactical_explanations: [
       `**A.** → True
@@ -11483,11 +13121,10 @@ $$\\#\\{P_A'=0\\}=\\#\\{P_B'=0\\}\\qquad\\nRightarrow\\qquad\\max P_A=\\max P_B$
 Equal critical-point counts do not force equal maximal profit levels
 
 Once that mismatch with the figure is clear, the claim cannot stand. Comparing the assertion with the axes, the statement is False.`
-    ],
+    ]
     difficulty_level: "5/5",
     sort_order: 148,
-    solution_overview:
-      `Brown is firm A's marginal profit $P_A'$ and green is firm B's $P_B'$ on the same axes. Axis crossings:
+    solution_overview: `Brown is firm A's marginal profit $P_A'$ and green is firm B's $P_B'$ on the same axes. Axis crossings:
 
 $$P_A'\\text{ zeros near }x=1,3;\\qquad P_B'\\text{ zeros near }x=2,5$$
 
@@ -11507,7 +13144,7 @@ Near $x=0$ both curves are positive, with green starting higher than brown. At $
       "At a local maximum of the brown curve, the green curve crosses or touches zero.",
       "On an interval where green is positive, brown is rising, so $f$ is concave up there.",
       "At $x=3$, brown is negative, so $f$ is decreasing at $x=3$."
-    ],
+    ]
     answer_key: [true, true, true, true, true],
     tactical_explanations: [
       `**A.** → True
@@ -11565,11 +13202,10 @@ $$f'(3)<0$$
 Negative $f'$ means $f$ is decreasing at $x=3$
 
 Putting that figure reading next to the claim, every asserted sign, height, or classification matches what the axes show, so the statement is True.`
-    ],
+    ]
     difficulty_level: "5/5",
     sort_order: 149,
-    solution_overview:
-      `Read the figure first: name the drawn curve(s), mark zeros and sample heights, then translate signs into monotonicity and turning points.
+    solution_overview: `Read the figure first: name the drawn curve(s), mark zeros and sample heights, then translate signs into monotonicity and turning points.
 
 Brown is $f'$ and green is $f''$ on one plane. Counting axis crossings:
 
@@ -11591,7 +13227,7 @@ Extrema of brown line up with zeros of green: at a local maximum of brown, green
       "At $x=5$, brown is negative, so firm 1's profit is decreasing in output at $x=5$.",
       "The first firm to hit a zero of marginal profit when moving right from $x=0$ is not necessarily firm 1.",
       "If at some $x$ one curve is above another and both are positive, that firm has the larger instantaneous profit gain per unit."
-    ],
+    ]
     answer_key: [true, false, true, true, true],
     tactical_explanations: [
       `**A.** → True
@@ -11649,11 +13285,10 @@ $$P_i'>P_j'>0\\quad\\Rightarrow\\quad\\text{firm }i\\text{ has the larger instan
 Height comparison of positive $P'$ values is exactly that ranking
 
 Putting that figure reading next to the claim, every asserted sign, height, or classification matches what the axes show, so the statement is True.`
-    ],
+    ]
     difficulty_level: "5/5",
     sort_order: 150,
-    solution_overview:
-      `Three marginal-profit curves $P_1'$ (brown), $P_2'$ (green), and $P_3'$ (purple) share one pair of axes. At $x=0$:
+    solution_overview: `Three marginal-profit curves $P_1'$ (brown), $P_2'$ (green), and $P_3'$ (purple) share one pair of axes. At $x=0$:
 
 $$\\text{brown}>0,\\quad\\text{purple}>0,\\quad\\text{green}\\approx -1<0$$
 
@@ -11673,7 +13308,7 @@ so firm 2 starts with negative marginal profit. Brown crosses near $x=4$ and is 
       "At $x=2.5$, brown is negative while green is also negative.",
       "On $(3,5)$, brown is positive while green is negative: $f$ increases and $g$ decreases there.",
       "Equal numbers of zeros imply $\\max f = \\max g$."
-    ],
+    ]
     answer_key: [true, true, true, true, false],
     tactical_explanations: [
       `**A.** → True
@@ -11729,11 +13364,10 @@ Equal numbers of zeros of $f'$ and $g'$ only say $f$ and $g$ have the same numbe
 $$\\#\\{f'=0\\}=\\#\\{g'=0\\}\\qquad\\nRightarrow\\qquad\\max f=\\max g$$
 
 Once that mismatch with the figure is clear, the claim cannot stand. Comparing the assertion with the axes, the statement is False.`
-    ],
+    ]
     difficulty_level: "5/5",
     sort_order: 151,
-    solution_overview:
-      `Read the figure first: name the drawn curve(s), mark zeros and sample heights, then translate signs into monotonicity and turning points.
+    solution_overview: `Read the figure first: name the drawn curve(s), mark zeros and sample heights, then translate signs into monotonicity and turning points.
 
 Brown is $f'$ and green is $g'$ on one plane. Zero locations:
 
@@ -11755,7 +13389,7 @@ At $x=0$ both are positive with $g'(0)>f'(0)$. At $x=2.5$ both sit below the axi
       "Green opens upward and is negative at $x=0$.",
       "Wherever green is positive, brown is increasing as a function of $x$.",
       "Purple being a vertical shift/scaling of brown means purple and brown share the same zeros."
-    ],
+    ]
     answer_key: [true, true, true, true, false],
     tactical_explanations: [
       `**A.** → True
@@ -11813,11 +13447,10 @@ $$h'=\\text{shift/scale of }f'\\qquad\\nRightarrow\\qquad\\text{same zero set}$$
 On the figure purple and brown meet the axis at different $x$-values
 
 Once that mismatch with the figure is clear, the claim cannot stand. Comparing the assertion with the axes, the statement is False.`
-    ],
+    ]
     difficulty_level: "5/5",
     sort_order: 152,
-    solution_overview:
-      `Read the figure first: name the drawn curve(s), mark zeros and sample heights, then translate signs into monotonicity and turning points.
+    solution_overview: `Read the figure first: name the drawn curve(s), mark zeros and sample heights, then translate signs into monotonicity and turning points.
 
 Brown is $f'$, green is $f''$, and purple is another derivative $h'$, all on the same axes. At $x=0$:
 
@@ -11839,7 +13472,7 @@ Green opens upward (U-shaped) and is negative at $x=0$. At $x=3$ brown sits near
       "Zeros of $B$ occur under a local max and a local min of $A$.",
       "Wherever $B>0$, the brown curve $A$ is rising.",
       "The purple curve having a zero means $A=B$ at that $x$, i.e. $A(x)=A'(x)$."
-    ],
+    ]
     answer_key: [true, false, true, true, true],
     tactical_explanations: [
       `**A.** → True
@@ -11897,11 +13530,10 @@ $$A(x)=A'(x)$$
 so the claim's reading is correct, and the statement is True.
 
 Putting that figure reading next to the claim, every asserted sign, height, or classification matches what the axes show, so the statement is True.`
-    ],
+    ]
     difficulty_level: "5/5",
     sort_order: 153,
-    solution_overview:
-      `Read the figure first: name the drawn curve(s), mark zeros and sample heights, then translate signs into monotonicity and turning points.
+    solution_overview: `Read the figure first: name the drawn curve(s), mark zeros and sample heights, then translate signs into monotonicity and turning points.
 
 Three curves share one plane: $A$ (brown), $B$ (green), and $A-B$ (purple), with the model relation $B=A'$. At $x=3$ both brown and green sit below the axis:
 
@@ -11923,7 +13555,7 @@ while purple sits above brown on the shared scale (not below). Because $B=A'$, z
       "On $(1,2)$ one has $f'<0$, so $f$ decreases on $(1,2)$.",
       "The local maximum of $f$ among these critical points is at $x=1$.",
       "At $x=-2$, $f'$ changes from positive to negative, so $x=-2$ is a local maximum of $f$."
-    ],
+    ]
     answer_key: [true, true, true, true, false],
     tactical_explanations: [
       `**A.** → True
@@ -11979,11 +13611,10 @@ $$f'\\text{ changes }-\\to+\\text{ at }x=-2$$
 so $x=-2$ is a local minimum of $f$, not a local maximum, and the statement is False.
 
 Once that mismatch with the figure is clear, the claim cannot stand. Comparing the assertion with the axes, the statement is False.`
-    ],
+    ]
     difficulty_level: "5/5",
     sort_order: 154,
-    solution_overview:
-      `The figure shows $f'$ with zeros at $x=-2$, $1$, and $2$. Sign chart from the figure:
+    solution_overview: `The figure shows $f'$ with zeros at $x=-2$, $1$, and $2$. Sign chart from the figure:
 
 $$f'<0\\text{ for }x<-2,\\qquad f'>0\\text{ on }(-2,1),\\qquad f'<0\\text{ on }(1,2),\\qquad f'>0\\text{ for }x>2$$
 
@@ -12003,7 +13634,7 @@ So $f$ increases on $(-2,1)$ and decreases on $(1,2)$. At $x=-1$ the height is a
       "Purple crosses the axis at different $x$-values from brown.",
       "Wherever green is positive, brown is rising.",
       "Because purple is just brown shifted down by $2$, brown and purple have the same local max/min $x$-coordinates."
-    ],
+    ]
     answer_key: [true, true, true, true, true],
     tactical_explanations: [
       `**A.** → True
@@ -12059,11 +13690,10 @@ $$(f'-2)'=f''$$
 so the $x$-coordinates of local max/min of purple match those of brown. Only the heights differ by $2$, and the statement is True.
 
 Putting that figure reading next to the claim, every asserted sign, height, or classification matches what the axes show, so the statement is True.`
-    ],
+    ]
     difficulty_level: "5/5",
     sort_order: 155,
-    solution_overview:
-      `Read the figure first: name the drawn curve(s), mark zeros and sample heights, then translate signs into monotonicity and turning points.
+    solution_overview: `Read the figure first: name the drawn curve(s), mark zeros and sample heights, then translate signs into monotonicity and turning points.
 
 Brown is $f'$, green is $f''$, and purple is the vertical shift $f'-2$ on one plane. At $x=0$ brown is below the axis and purple (shifted down by $2$) is even lower. Zeros of green sit under a local max and a local min of brown. Because purple is brown shifted down by $2$, its axis crossings move to different $x$-values from brown's, but the $x$-coordinates of peaks and valleys stay the same (a vertical shift does not move extrema left or right). Wherever green is positive, brown is rising.`,
     figure: `data:image/svg+xml;utf8,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20viewBox%3D%220%200%20640%20400%22%20width%3D%22640%22%20height%3D%22400%22%20role%3D%22img%22%3E%0A%3Crect%20width%3D%22640%22%20height%3D%22400%22%20rx%3D%2216%22%20fill%3D%22%23faf8f4%22%20stroke%3D%22%23d9d2c5%22%2F%3E%0A%3Ctext%20x%3D%22279%22%20y%3D%2226%22%20text-anchor%3D%22middle%22%20font-size%3D%2214%22%20font-family%3D%22Georgia%2Cserif%22%20fill%3D%22%232b2b2b%22%3EThree%20related%20curves%20on%20one%20plane%3C%2Ftext%3E%0A%3Cdefs%3E%3CclipPath%20id%3D%22clip-6784096%22%3E%3Crect%20x%3D%2252%22%20y%3D%2244%22%20width%3D%22454%22%20height%3D%22300%22%2F%3E%3C%2FclipPath%3E%3C%2Fdefs%3E%0A%3Cline%20x1%3D%2252.0%22%20y1%3D%2244%22%20x2%3D%2252.0%22%20y2%3D%22344%22%20stroke%3D%22%23e8e2d8%22%20stroke-width%3D%221%22%2F%3E%0A%3Cline%20x1%3D%22127.7%22%20y1%3D%2244%22%20x2%3D%22127.7%22%20y2%3D%22344%22%20stroke%3D%22%23e8e2d8%22%20stroke-width%3D%221%22%2F%3E%0A%3Cline%20x1%3D%22203.3%22%20y1%3D%2244%22%20x2%3D%22203.3%22%20y2%3D%22344%22%20stroke%3D%22%23e8e2d8%22%20stroke-width%3D%221%22%2F%3E%0A%3Cline%20x1%3D%22279.0%22%20y1%3D%2244%22%20x2%3D%22279.0%22%20y2%3D%22344%22%20stroke%3D%22%23e8e2d8%22%20stroke-width%3D%221%22%2F%3E%0A%3Cline%20x1%3D%22354.7%22%20y1%3D%2244%22%20x2%3D%22354.7%22%20y2%3D%22344%22%20stroke%3D%22%23e8e2d8%22%20stroke-width%3D%221%22%2F%3E%0A%3Cline%20x1%3D%22430.3%22%20y1%3D%2244%22%20x2%3D%22430.3%22%20y2%3D%22344%22%20stroke%3D%22%23e8e2d8%22%20stroke-width%3D%221%22%2F%3E%0A%3Cline%20x1%3D%22506.0%22%20y1%3D%2244%22%20x2%3D%22506.0%22%20y2%3D%22344%22%20stroke%3D%22%23e8e2d8%22%20stroke-width%3D%221%22%2F%3E%0A%0A%0A%0A%0A%0A%3Cline%20x1%3D%2252%22%20y1%3D%22180.4%22%20x2%3D%22506%22%20y2%3D%22180.4%22%20stroke%3D%22%23c4b8a8%22%20stroke-width%3D%221.3%22%2F%3E%0A%3Cline%20x1%3D%22127.7%22%20y1%3D%2244%22%20x2%3D%22127.7%22%20y2%3D%22344%22%20stroke%3D%22%23c4b8a8%22%20stroke-width%3D%221.3%22%2F%3E%0A%3Cline%20x1%3D%2252%22%20y1%3D%2244%22%20x2%3D%2252%22%20y2%3D%22344%22%20stroke%3D%22%237a7268%22%20stroke-width%3D%221.5%22%2F%3E%0A%3Cline%20x1%3D%2252%22%20y1%3D%22344%22%20x2%3D%22506%22%20y2%3D%22344%22%20stroke%3D%22%237a7268%22%20stroke-width%3D%221.5%22%2F%3E%0A%0A%0A%0A%0A%0A%0A%0A%0A%0A%0A%0A%0A%3Cline%20x1%3D%22127.7%22%20y1%3D%22344.0%22%20x2%3D%22127.7%22%20y2%3D%22350.0%22%20stroke%3D%22%23333%22%2F%3E%3Ctext%20x%3D%22127.7%22%20y%3D%22364.0%22%20text-anchor%3D%22middle%22%20font-size%3D%2211%22%20font-family%3D%22Georgia%2Cserif%22%20fill%3D%22%23333%22%3E0%3C%2Ftext%3E%3Cline%20x1%3D%22279.0%22%20y1%3D%22344.0%22%20x2%3D%22279.0%22%20y2%3D%22350.0%22%20stroke%3D%22%23333%22%2F%3E%3Ctext%20x%3D%22279.0%22%20y%3D%22364.0%22%20text-anchor%3D%22middle%22%20font-size%3D%2211%22%20font-family%3D%22Georgia%2Cserif%22%20fill%3D%22%23333%22%3E2%3C%2Ftext%3E%3Cline%20x1%3D%22430.3%22%20y1%3D%22344.0%22%20x2%3D%22430.3%22%20y2%3D%22350.0%22%20stroke%3D%22%23333%22%2F%3E%3Ctext%20x%3D%22430.3%22%20y%3D%22364.0%22%20text-anchor%3D%22middle%22%20font-size%3D%2211%22%20font-family%3D%22Georgia%2Cserif%22%20fill%3D%22%23333%22%3E4%3C%2Ftext%3E%3Cline%20x1%3D%2252.0%22%20y1%3D%22320.8%22%20x2%3D%22506.0%22%20y2%3D%22320.8%22%20stroke%3D%22%23ddd%22%20stroke-width%3D%221%22%2F%3E%3Cline%20x1%3D%2246.0%22%20y1%3D%22320.8%22%20x2%3D%2252.0%22%20y2%3D%22320.8%22%20stroke%3D%22%23333%22%2F%3E%3Ctext%20x%3D%2242.0%22%20y%3D%22320.8%22%20text-anchor%3D%22end%22%20dominant-baseline%3D%22middle%22%20font-size%3D%2211%22%20font-family%3D%22Georgia%2Cserif%22%20fill%3D%22%23333%22%3E-10%3C%2Ftext%3E%3Cline%20x1%3D%2252.0%22%20y1%3D%22184.4%22%20x2%3D%22506.0%22%20y2%3D%22184.4%22%20stroke%3D%22%23ddd%22%20stroke-width%3D%221%22%2F%3E%3Cline%20x1%3D%2246.0%22%20y1%3D%22184.4%22%20x2%3D%2252.0%22%20y2%3D%22184.4%22%20stroke%3D%22%23333%22%2F%3E%3Ctext%20x%3D%2242.0%22%20y%3D%22184.4%22%20text-anchor%3D%22end%22%20dominant-baseline%3D%22middle%22%20font-size%3D%2211%22%20font-family%3D%22Georgia%2Cserif%22%20fill%3D%22%23333%22%3E0%3C%2Ftext%3E%3Cline%20x1%3D%2252.0%22%20y1%3D%2248.0%22%20x2%3D%22506.0%22%20y2%3D%2248.0%22%20stroke%3D%22%23ddd%22%20stroke-width%3D%221%22%2F%3E%3Cline%20x1%3D%2246.0%22%20y1%3D%2248.0%22%20x2%3D%2252.0%22%20y2%3D%2248.0%22%20stroke%3D%22%23333%22%2F%3E%3Ctext%20x%3D%2242.0%22%20y%3D%2248.0%22%20text-anchor%3D%22end%22%20dominant-baseline%3D%22middle%22%20font-size%3D%2211%22%20font-family%3D%22Georgia%2Cserif%22%20fill%3D%22%23333%22%3E10%3C%2Ftext%3E%3Cpolyline%20fill%3D%22none%22%20stroke%3D%22%238B5A2B%22%20stroke-width%3D%222.4%22%20points%3D%2252.0%2C180.4%2053.4%2C176.6%2054.8%2C172.8%2056.3%2C169.2%2057.7%2C165.6%2059.1%2C162.1%2060.5%2C158.7%2061.9%2C155.4%2063.4%2C152.1%2064.8%2C148.9%2066.2%2C145.8%2067.6%2C142.7%2069.0%2C139.7%2070.4%2C136.8%2071.9%2C133.9%2073.3%2C131.2%2074.7%2C128.4%2076.1%2C125.8%2077.5%2C123.2%2079.0%2C120.7%2080.4%2C118.3%2081.8%2C115.9%2083.2%2C113.6%2084.6%2C111.3%2086.0%2C109.2%2087.5%2C107.0%2088.9%2C105.0%2090.3%2C103.0%2091.7%2C101.1%2093.1%2C99.2%2094.6%2C97.4%2096.0%2C95.7%2097.4%2C94.0%2098.8%2C92.3%20100.2%2C90.8%20101.7%2C89.3%20103.1%2C87.8%20104.5%2C86.4%20105.9%2C85.1%20107.3%2C83.8%20108.8%2C82.6%20110.2%2C81.4%20111.6%2C80.3%20113.0%2C79.2%20114.4%2C78.2%20115.8%2C77.3%20117.3%2C76.3%20118.7%2C75.5%20120.1%2C74.7%20121.5%2C73.9%20122.9%2C73.2%20124.4%2C72.6%20125.8%2C72.0%20127.2%2C71.4%20128.6%2C70.9%20130.0%2C70.5%20131.4%2C70.1%20132.9%2C69.7%20134.3%2C69.4%20135.7%2C69.1%20137.1%2C68.9%20138.5%2C68.7%20140.0%2C68.6%20141.4%2C68.5%20142.8%2C68.4%20144.2%2C68.4%20145.6%2C68.5%20147.1%2C68.5%20148.5%2C68.6%20149.9%2C68.8%20151.3%2C69.0%20152.7%2C69.2%20154.2%2C69.5%20155.6%2C69.8%20157.0%2C70.1%20158.4%2C70.5%20159.8%2C71.0%20161.2%2C71.4%20162.7%2C71.9%20164.1%2C72.4%20165.5%2C73.0%20166.9%2C73.6%20168.3%2C74.2%20169.8%2C74.9%20171.2%2C75.5%20172.6%2C76.3%20174.0%2C77.0%20175.4%2C77.8%20176.8%2C78.6%20178.3%2C79.4%20179.7%2C80.3%20181.1%2C81.2%20182.5%2C82.1%20183.9%2C83.1%20185.4%2C84.1%20186.8%2C85.1%20188.2%2C86.1%20189.6%2C87.2%20191.0%2C88.2%20192.5%2C89.3%20193.9%2C90.5%20195.3%2C91.6%20196.7%2C92.8%20198.1%2C94.0%20199.6%2C95.2%20201.0%2C96.4%20202.4%2C97.7%20203.8%2C99.0%20205.2%2C100.3%20206.6%2C101.6%20208.1%2C102.9%20209.5%2C104.3%20210.9%2C105.6%20212.3%2C107.0%20213.7%2C108.4%20215.2%2C109.8%20216.6%2C111.2%20218.0%2C112.7%20219.4%2C114.1%20220.8%2C115.6%20222.2%2C117.1%20223.7%2C118.6%20225.1%2C120.1%20226.5%2C121.6%20227.9%2C123.1%20229.3%2C124.7%20230.8%2C126.2%20232.2%2C127.7%20233.6%2C129.3%20235.0%2C130.9%20236.4%2C132.5%20237.9%2C134.0%20239.3%2C135.6%20240.7%2C137.2%20242.1%2C138.8%20243.5%2C140.4%20244.9%2C142.0%20246.4%2C143.6%20247.8%2C145.3%20249.2%2C146.9%20250.6%2C148.5%20252.0%2C150.1%20253.5%2C151.7%20254.9%2C153.3%20256.3%2C155.0%20257.7%2C156.6%20259.1%2C158.2%20260.6%2C159.8%20262.0%2C161.4%20263.4%2C163.0%20264.8%2C164.6%20266.2%2C166.2%20267.6%2C167.8%20269.1%2C169.4%20270.5%2C171.0%20271.9%2C172.6%20273.3%2C174.2%20274.7%2C175.7%20276.2%2C177.3%20277.6%2C178.8%20279.0%2C180.4%20280.4%2C181.9%20281.8%2C183.4%20283.3%2C184.9%20284.7%2C186.4%20286.1%2C187.9%20287.5%2C189.4%20288.9%2C190.8%20290.4%2C192.3%20291.8%2C193.7%20293.2%2C195.1%20294.6%2C196.5%20296.0%2C197.9%20297.4%2C199.3%20298.9%2C200.7%20300.3%2C202.0%20301.7%2C203.3%20303.1%2C204.6%20304.5%2C205.9%20306.0%2C207.2%20307.4%2C208.4%20308.8%2C209.6%20310.2%2C210.8%20311.6%2C212.0%20313.1%2C213.2%20314.5%2C214.3%20315.9%2C215.4%20317.3%2C216.5%20318.7%2C217.6%20320.1%2C218.6%20321.6%2C219.6%20323.0%2C220.6%20324.4%2C221.6%20325.8%2C222.5%20327.2%2C223.4%20328.7%2C224.3%20330.1%2C225.2%20331.5%2C226.0%20332.9%2C226.8%20334.3%2C227.6%20335.8%2C228.3%20337.2%2C229.0%20338.6%2C229.7%20340.0%2C230.3%20341.4%2C230.9%20342.8%2C231.5%20344.3%2C232.0%20345.7%2C232.5%20347.1%2C233.0%20348.5%2C233.4%20349.9%2C233.8%20351.4%2C234.2%20352.8%2C234.5%20354.2%2C234.8%20355.6%2C235.1%20357.0%2C235.3%20358.4%2C235.5%20359.9%2C235.6%20361.3%2C235.7%20362.7%2C235.7%20364.1%2C235.7%20365.5%2C235.7%20367.0%2C235.6%20368.4%2C235.5%20369.8%2C235.3%20371.2%2C235.1%20372.6%2C234.9%20374.1%2C234.6%20375.5%2C234.3%20376.9%2C233.9%20378.3%2C233.4%20379.7%2C232.9%20381.1%2C232.4%20382.6%2C231.8%20384.0%2C231.2%20385.4%2C230.5%20386.8%2C229.8%20388.2%2C229.0%20389.7%2C228.2%20391.1%2C227.3%20392.5%2C226.4%20393.9%2C225.4%20395.3%2C224.4%20396.8%2C223.3%20398.2%2C222.1%20399.6%2C220.9%20401.0%2C219.7%20402.4%2C218.4%20403.9%2C217.0%20405.3%2C215.6%20406.7%2C214.1%20408.1%2C212.5%20409.5%2C210.9%20410.9%2C209.3%20412.4%2C207.5%20413.8%2C205.8%20415.2%2C203.9%20416.6%2C202.0%20418.0%2C200.1%20419.5%2C198.0%20420.9%2C195.9%20422.3%2C193.8%20423.7%2C191.6%20425.1%2C189.3%20426.6%2C186.9%20428.0%2C184.5%20429.4%2C182.1%20430.8%2C179.5%20432.2%2C176.9%20433.6%2C174.2%20435.1%2C171.5%20436.5%2C168.6%20437.9%2C165.8%20439.3%2C162.8%20440.7%2C159.8%20442.2%2C156.7%20443.6%2C153.5%20445.0%2C150.3%20446.4%2C146.9%20447.8%2C143.6%20449.2%2C140.1%20450.7%2C136.6%20452.1%2C132.9%20453.5%2C129.3%20454.9%2C125.5%20456.3%2C121.7%20457.8%2C117.7%20459.2%2C113.7%20460.6%2C109.7%20462.0%2C105.5%20463.4%2C101.3%20464.9%2C97.0%20466.3%2C92.6%20467.7%2C88.1%20469.1%2C83.6%20470.5%2C78.9%20471.9%2C74.2%20473.4%2C69.4%20474.8%2C64.5%20476.2%2C59.6%20477.6%2C54.5%20479.0%2C49.4%20480.5%2C44.2%20481.9%2C38.9%20483.3%2C33.5%20484.7%2C28.0%20486.1%2C22.4%20487.6%2C16.7%20489.0%2C11.0%20490.4%2C5.2%20491.8%2C-0.8%20493.2%2C-6.8%20494.6%2C-12.9%20496.1%2C-19.1%20497.5%2C-25.4%20498.9%2C-31.8%20500.3%2C-38.2%20501.7%2C-44.8%20503.2%2C-51.5%20504.6%2C-58.2%20506.0%2C-65.1%22%20clip-path%3D%22url%28%23clip-6784096%29%22%2F%3E%0A%3Cpolyline%20fill%3D%22none%22%20stroke%3D%22%232F5D50%22%20stroke-width%3D%222.4%22%20points%3D%2252.0%2C-24.2%2053.4%2C-20.1%2054.8%2C-16.1%2056.3%2C-12.0%2057.7%2C-8.0%2059.1%2C-4.1%2060.5%2C-0.2%2061.9%2C3.7%2063.4%2C7.6%2064.8%2C11.5%2066.2%2C15.3%2067.6%2C19.1%2069.0%2C22.8%2070.4%2C26.6%2071.9%2C30.3%2073.3%2C33.9%2074.7%2C37.6%2076.1%2C41.2%2077.5%2C44.8%2079.0%2C48.4%2080.4%2C51.9%2081.8%2C55.4%2083.2%2C58.9%2084.6%2C62.3%2086.0%2C65.7%2087.5%2C69.1%2088.9%2C72.5%2090.3%2C75.8%2091.7%2C79.1%2093.1%2C82.4%2094.6%2C85.6%2096.0%2C88.8%2097.4%2C92.0%2098.8%2C95.2%20100.2%2C98.3%20101.7%2C101.4%20103.1%2C104.5%20104.5%2C107.5%20105.9%2C110.5%20107.3%2C113.5%20108.8%2C116.4%20110.2%2C119.4%20111.6%2C122.3%20113.0%2C125.1%20114.4%2C128.0%20115.8%2C130.8%20117.3%2C133.6%20118.7%2C136.3%20120.1%2C139.0%20121.5%2C141.7%20122.9%2C144.4%20124.4%2C147.0%20125.8%2C149.7%20127.2%2C152.2%20128.6%2C154.8%20130.0%2C157.3%20131.4%2C159.8%20132.9%2C162.3%20134.3%2C164.7%20135.7%2C167.1%20137.1%2C169.5%20138.5%2C171.8%20140.0%2C174.2%20141.4%2C176.5%20142.8%2C178.7%20144.2%2C181.0%20145.6%2C183.2%20147.1%2C185.3%20148.5%2C187.5%20149.9%2C189.6%20151.3%2C191.7%20152.7%2C193.8%20154.2%2C195.8%20155.6%2C197.8%20157.0%2C199.8%20158.4%2C201.7%20159.8%2C203.7%20161.2%2C205.5%20162.7%2C207.4%20164.1%2C209.2%20165.5%2C211.0%20166.9%2C212.8%20168.3%2C214.6%20169.8%2C216.3%20171.2%2C218.0%20172.6%2C219.6%20174.0%2C221.3%20175.4%2C222.9%20176.8%2C224.4%20178.3%2C226.0%20179.7%2C227.5%20181.1%2C229.0%20182.5%2C230.5%20183.9%2C231.9%20185.4%2C233.3%20186.8%2C234.7%20188.2%2C236.0%20189.6%2C237.3%20191.0%2C238.6%20192.5%2C239.9%20193.9%2C241.1%20195.3%2C242.3%20196.7%2C243.5%20198.1%2C244.6%20199.6%2C245.7%20201.0%2C246.8%20202.4%2C247.9%20203.8%2C248.9%20205.2%2C249.9%20206.6%2C250.9%20208.1%2C251.8%20209.5%2C252.7%20210.9%2C253.6%20212.3%2C254.4%20213.7%2C255.3%20215.2%2C256.1%20216.6%2C256.8%20218.0%2C257.6%20219.4%2C258.3%20220.8%2C259.0%20222.2%2C259.6%20223.7%2C260.2%20225.1%2C260.8%20226.5%2C261.4%20227.9%2C262.0%20229.3%2C262.5%20230.8%2C262.9%20232.2%2C263.4%20233.6%2C263.8%20235.0%2C264.2%20236.4%2C264.6%20237.9%2C264.9%20239.3%2C265.2%20240.7%2C265.5%20242.1%2C265.8%20243.5%2C266.0%20244.9%2C266.2%20246.4%2C266.3%20247.8%2C266.5%20249.2%2C266.6%20250.6%2C266.7%20252.0%2C266.7%20253.5%2C266.7%20254.9%2C266.7%20256.3%2C266.7%20257.7%2C266.6%20259.1%2C266.5%20260.6%2C266.4%20262.0%2C266.2%20263.4%2C266.1%20264.8%2C265.9%20266.2%2C265.6%20267.6%2C265.4%20269.1%2C265.1%20270.5%2C264.7%20271.9%2C264.4%20273.3%2C264.0%20274.7%2C263.6%20276.2%2C263.1%20277.6%2C262.7%20279.0%2C262.2%20280.4%2C261.7%20281.8%2C261.1%20283.3%2C260.5%20284.7%2C259.9%20286.1%2C259.3%20287.5%2C258.6%20288.9%2C257.9%20290.4%2C257.2%20291.8%2C256.4%20293.2%2C255.6%20294.6%2C254.8%20296.0%2C254.0%20297.4%2C253.1%20298.9%2C252.2%20300.3%2C251.3%20301.7%2C250.3%20303.1%2C249.3%20304.5%2C248.3%20306.0%2C247.3%20307.4%2C246.2%20308.8%2C245.1%20310.2%2C244.0%20311.6%2C242.8%20313.1%2C241.6%20314.5%2C240.4%20315.9%2C239.2%20317.3%2C237.9%20318.7%2C236.6%20320.1%2C235.3%20321.6%2C233.9%20323.0%2C232.5%20324.4%2C231.1%20325.8%2C229.6%20327.2%2C228.2%20328.7%2C226.7%20330.1%2C225.1%20331.5%2C223.6%20332.9%2C222.0%20334.3%2C220.4%20335.8%2C218.7%20337.2%2C217.0%20338.6%2C215.3%20340.0%2C213.6%20341.4%2C211.8%20342.8%2C210.0%20344.3%2C208.2%20345.7%2C206.4%20347.1%2C204.5%20348.5%2C202.6%20349.9%2C200.7%20351.4%2C198.7%20352.8%2C196.7%20354.2%2C194.7%20355.6%2C192.6%20357.0%2C190.6%20358.4%2C188.4%20359.9%2C186.3%20361.3%2C184.1%20362.7%2C181.9%20364.1%2C179.7%20365.5%2C177.5%20367.0%2C175.2%20368.4%2C172.9%20369.8%2C170.5%20371.2%2C168.2%20372.6%2C165.8%20374.1%2C163.4%20375.5%2C160.9%20376.9%2C158.4%20378.3%2C155.9%20379.7%2C153.4%20381.1%2C150.8%20382.6%2C148.2%20384.0%2C145.6%20385.4%2C142.9%20386.8%2C140.2%20388.2%2C137.5%20389.7%2C134.8%20391.1%2C132.0%20392.5%2C129.2%20393.9%2C126.4%20395.3%2C123.5%20396.8%2C120.7%20398.2%2C117.7%20399.6%2C114.8%20401.0%2C111.8%20402.4%2C108.8%20403.9%2C105.8%20405.3%2C102.7%20406.7%2C99.7%20408.1%2C96.5%20409.5%2C93.4%20410.9%2C90.2%20412.4%2C87.0%20413.8%2C83.8%20415.2%2C80.5%20416.6%2C77.3%20418.0%2C73.9%20419.5%2C70.6%20420.9%2C67.2%20422.3%2C63.8%20423.7%2C60.4%20425.1%2C56.9%20426.6%2C53.4%20428.0%2C49.9%20429.4%2C46.4%20430.8%2C42.8%20432.2%2C39.2%20433.6%2C35.6%20435.1%2C31.9%20436.5%2C28.2%20437.9%2C24.5%20439.3%2C20.8%20440.7%2C17.0%20442.2%2C13.2%20443.6%2C9.3%20445.0%2C5.5%20446.4%2C1.6%20447.8%2C-2.3%20449.2%2C-6.3%20450.7%2C-10.3%20452.1%2C-14.3%20453.5%2C-18.3%20454.9%2C-22.4%20456.3%2C-26.5%20457.8%2C-30.6%20459.2%2C-34.7%20460.6%2C-38.9%20462.0%2C-43.1%20463.4%2C-47.4%20464.9%2C-51.6%20466.3%2C-55.9%20467.7%2C-60.2%20469.1%2C-64.6%20470.5%2C-69.0%20471.9%2C-73.4%20473.4%2C-77.8%20474.8%2C-82.3%20476.2%2C-86.8%20477.6%2C-91.3%20479.0%2C-95.9%20480.5%2C-100.4%20481.9%2C-105.0%20483.3%2C-109.7%20484.7%2C-114.3%20486.1%2C-119.0%20487.6%2C-123.8%20489.0%2C-128.5%20490.4%2C-133.3%20491.8%2C-138.1%20493.2%2C-143.0%20494.6%2C-147.8%20496.1%2C-152.7%20497.5%2C-157.7%20498.9%2C-162.6%20500.3%2C-167.6%20501.7%2C-172.6%20503.2%2C-177.6%20504.6%2C-182.7%20506.0%2C-187.8%22%20clip-path%3D%22url%28%23clip-6784096%29%22%2F%3E%0A%3Cpolyline%20fill%3D%22none%22%20stroke%3D%22%236B3FA0%22%20stroke-width%3D%222.4%22%20points%3D%2252.0%2C207.6%2053.4%2C203.8%2054.8%2C200.1%2056.3%2C196.5%2057.7%2C192.9%2059.1%2C189.4%2060.5%2C186.0%2061.9%2C182.6%2063.4%2C179.4%2064.8%2C176.2%2066.2%2C173.0%2067.6%2C170.0%2069.0%2C167.0%2070.4%2C164.1%2071.9%2C161.2%2073.3%2C158.4%2074.7%2C155.7%2076.1%2C153.1%2077.5%2C150.5%2079.0%2C148.0%2080.4%2C145.6%2081.8%2C143.2%2083.2%2C140.9%2084.6%2C138.6%2086.0%2C136.4%2087.5%2C134.3%2088.9%2C132.3%2090.3%2C130.3%2091.7%2C128.3%2093.1%2C126.5%2094.6%2C124.7%2096.0%2C122.9%2097.4%2C121.2%2098.8%2C119.6%20100.2%2C118.0%20101.7%2C116.5%20103.1%2C115.1%20104.5%2C113.7%20105.9%2C112.3%20107.3%2C111.1%20108.8%2C109.8%20110.2%2C108.7%20111.6%2C107.6%20113.0%2C106.5%20114.4%2C105.5%20115.8%2C104.5%20117.3%2C103.6%20118.7%2C102.8%20120.1%2C102.0%20121.5%2C101.2%20122.9%2C100.5%20124.4%2C99.9%20125.8%2C99.3%20127.2%2C98.7%20128.6%2C98.2%20130.0%2C97.8%20131.4%2C97.4%20132.9%2C97.0%20134.3%2C96.7%20135.7%2C96.4%20137.1%2C96.2%20138.5%2C96.0%20140.0%2C95.9%20141.4%2C95.8%20142.8%2C95.7%20144.2%2C95.7%20145.6%2C95.7%20147.1%2C95.8%20148.5%2C95.9%20149.9%2C96.1%20151.3%2C96.3%20152.7%2C96.5%20154.2%2C96.8%20155.6%2C97.1%20157.0%2C97.4%20158.4%2C97.8%20159.8%2C98.2%20161.2%2C98.7%20162.7%2C99.2%20164.1%2C99.7%20165.5%2C100.2%20166.9%2C100.8%20168.3%2C101.5%20169.8%2C102.1%20171.2%2C102.8%20172.6%2C103.5%20174.0%2C104.3%20175.4%2C105.1%20176.8%2C105.9%20178.3%2C106.7%20179.7%2C107.6%20181.1%2C108.5%20182.5%2C109.4%20183.9%2C110.4%20185.4%2C111.3%20186.8%2C112.4%20188.2%2C113.4%20189.6%2C114.4%20191.0%2C115.5%20192.5%2C116.6%20193.9%2C117.7%20195.3%2C118.9%20196.7%2C120.1%20198.1%2C121.3%20199.6%2C122.5%20201.0%2C123.7%20202.4%2C125.0%20203.8%2C126.2%20205.2%2C127.5%20206.6%2C128.9%20208.1%2C130.2%20209.5%2C131.5%20210.9%2C132.9%20212.3%2C134.3%20213.7%2C135.7%20215.2%2C137.1%20216.6%2C138.5%20218.0%2C140.0%20219.4%2C141.4%20220.8%2C142.9%20222.2%2C144.4%20223.7%2C145.8%20225.1%2C147.4%20226.5%2C148.9%20227.9%2C150.4%20229.3%2C151.9%20230.8%2C153.5%20232.2%2C155.0%20233.6%2C156.6%20235.0%2C158.2%20236.4%2C159.7%20237.9%2C161.3%20239.3%2C162.9%20240.7%2C164.5%20242.1%2C166.1%20243.5%2C167.7%20244.9%2C169.3%20246.4%2C170.9%20247.8%2C172.5%20249.2%2C174.1%20250.6%2C175.8%20252.0%2C177.4%20253.5%2C179.0%20254.9%2C180.6%20256.3%2C182.2%20257.7%2C183.8%20259.1%2C185.5%20260.6%2C187.1%20262.0%2C188.7%20263.4%2C190.3%20264.8%2C191.9%20266.2%2C193.5%20267.6%2C195.1%20269.1%2C196.7%20270.5%2C198.3%20271.9%2C199.9%20273.3%2C201.4%20274.7%2C203.0%20276.2%2C204.5%20277.6%2C206.1%20279.0%2C207.6%20280.4%2C209.2%20281.8%2C210.7%20283.3%2C212.2%20284.7%2C213.7%20286.1%2C215.2%20287.5%2C216.6%20288.9%2C218.1%20290.4%2C219.6%20291.8%2C221.0%20293.2%2C222.4%20294.6%2C223.8%20296.0%2C225.2%20297.4%2C226.6%20298.9%2C227.9%20300.3%2C229.3%20301.7%2C230.6%20303.1%2C231.9%20304.5%2C233.2%20306.0%2C234.4%20307.4%2C235.7%20308.8%2C236.9%20310.2%2C238.1%20311.6%2C239.3%20313.1%2C240.5%20314.5%2C241.6%20315.9%2C242.7%20317.3%2C243.8%20318.7%2C244.9%20320.1%2C245.9%20321.6%2C246.9%20323.0%2C247.9%20324.4%2C248.9%20325.8%2C249.8%20327.2%2C250.7%20328.7%2C251.6%20330.1%2C252.5%20331.5%2C253.3%20332.9%2C254.1%20334.3%2C254.8%20335.8%2C255.6%20337.2%2C256.3%20338.6%2C257.0%20340.0%2C257.6%20341.4%2C258.2%20342.8%2C258.8%20344.3%2C259.3%20345.7%2C259.8%20347.1%2C260.3%20348.5%2C260.7%20349.9%2C261.1%20351.4%2C261.5%20352.8%2C261.8%20354.2%2C262.1%20355.6%2C262.3%20357.0%2C262.6%20358.4%2C262.7%20359.9%2C262.9%20361.3%2C262.9%20362.7%2C263.0%20364.1%2C263.0%20365.5%2C263.0%20367.0%2C262.9%20368.4%2C262.8%20369.8%2C262.6%20371.2%2C262.4%20372.6%2C262.2%20374.1%2C261.9%20375.5%2C261.5%20376.9%2C261.1%20378.3%2C260.7%20379.7%2C260.2%20381.1%2C259.7%20382.6%2C259.1%20384.0%2C258.5%20385.4%2C257.8%20386.8%2C257.1%20388.2%2C256.3%20389.7%2C255.5%20391.1%2C254.6%20392.5%2C253.7%20393.9%2C252.7%20395.3%2C251.6%20396.8%2C250.5%20398.2%2C249.4%20399.6%2C248.2%20401.0%2C246.9%20402.4%2C245.6%20403.9%2C244.3%20405.3%2C242.8%20406.7%2C241.3%20408.1%2C239.8%20409.5%2C238.2%20410.9%2C236.5%20412.4%2C234.8%20413.8%2C233.0%20415.2%2C231.2%20416.6%2C229.3%20418.0%2C227.3%20419.5%2C225.3%20420.9%2C223.2%20422.3%2C221.1%20423.7%2C218.8%20425.1%2C216.6%20426.6%2C214.2%20428.0%2C211.8%20429.4%2C209.3%20430.8%2C206.8%20432.2%2C204.2%20433.6%2C201.5%20435.1%2C198.7%20436.5%2C195.9%20437.9%2C193.0%20439.3%2C190.1%20440.7%2C187.0%20442.2%2C183.9%20443.6%2C180.8%20445.0%2C177.5%20446.4%2C174.2%20447.8%2C170.8%20449.2%2C167.4%20450.7%2C163.8%20452.1%2C160.2%20453.5%2C156.5%20454.9%2C152.8%20456.3%2C148.9%20457.8%2C145.0%20459.2%2C141.0%20460.6%2C136.9%20462.0%2C132.8%20463.4%2C128.6%20464.9%2C124.3%20466.3%2C119.9%20467.7%2C115.4%20469.1%2C110.8%20470.5%2C106.2%20471.9%2C101.5%20473.4%2C96.7%20474.8%2C91.8%20476.2%2C86.8%20477.6%2C81.8%20479.0%2C76.7%20480.5%2C71.4%20481.9%2C66.1%20483.3%2C60.7%20484.7%2C55.2%20486.1%2C49.7%20487.6%2C44.0%20489.0%2C38.3%20490.4%2C32.4%20491.8%2C26.5%20493.2%2C20.5%20494.6%2C14.4%20496.1%2C8.2%20497.5%2C1.9%20498.9%2C-4.5%20500.3%2C-11.0%20501.7%2C-17.5%20503.2%2C-24.2%20504.6%2C-31.0%20506.0%2C-37.8%22%20clip-path%3D%22url%28%23clip-6784096%29%22%2F%3E%0A%3Crect%20x%3D%22514%22%20y%3D%2246%22%20width%3D%22106%22%20height%3D%2268%22%20rx%3D%228%22%20fill%3D%22%23f8f6f2%22%20stroke%3D%22%23d9d2c5%22%2F%3E%0A%3Cline%20x1%3D%22520%22%20y1%3D%2264%22%20x2%3D%22538%22%20y2%3D%2264%22%20stroke%3D%22%238B5A2B%22%20stroke-width%3D%222.6%22%2F%3E%3Ctext%20x%3D%22544%22%20y%3D%2268%22%20font-size%3D%2212%22%20font-family%3D%22Georgia%2Cserif%22%20fill%3D%22%232b2b2b%22%3Ef%E2%80%B2%3C%2Ftext%3E%0A%3Cline%20x1%3D%22520%22%20y1%3D%2282%22%20x2%3D%22538%22%20y2%3D%2282%22%20stroke%3D%22%232F5D50%22%20stroke-width%3D%222.6%22%2F%3E%3Ctext%20x%3D%22544%22%20y%3D%2286%22%20font-size%3D%2212%22%20font-family%3D%22Georgia%2Cserif%22%20fill%3D%22%232b2b2b%22%3Ef%E2%80%B3%3C%2Ftext%3E%0A%3Cline%20x1%3D%22520%22%20y1%3D%22100%22%20x2%3D%22538%22%20y2%3D%22100%22%20stroke%3D%22%236B3FA0%22%20stroke-width%3D%222.6%22%2F%3E%3Ctext%20x%3D%22544%22%20y%3D%22104%22%20font-size%3D%2212%22%20font-family%3D%22Georgia%2Cserif%22%20fill%3D%22%232b2b2b%22%3Ef%E2%80%B2%E2%88%922%3C%2Ftext%3E%0A%3Ctext%20x%3D%22279%22%20y%3D%22388%22%20text-anchor%3D%22middle%22%20font-size%3D%2212%22%20font-family%3D%22Georgia%2Cserif%22%20fill%3D%22%232b2b2b%22%3Ex%3C%2Ftext%3E%0A%3C%2Fsvg%3E`,
@@ -12081,7 +13711,7 @@ Brown is $f'$, green is $f''$, and purple is the vertical shift $f'-2$ on one pl
       "At $x=0$, brown is already positive.",
       "Purple crosses from positive to negative somewhere in $(4,5)$.",
       "All three firms have the same expand/contract recommendation at every $x$ in $(0,6)$."
-    ],
+    ]
     answer_key: [true, true, false, true, false],
     tactical_explanations: [
       `**A.** → True
@@ -12139,11 +13769,10 @@ $$\\text{signs disagree at }x=3$$
 so the three firms do not share the same recommendation on $(0,6)$, and the statement is False.
 
 Once that mismatch with the figure is clear, the claim cannot stand. Comparing the assertion with the axes, the statement is False.`
-    ],
+    ]
     difficulty_level: "5/5",
     sort_order: 156,
-    solution_overview:
-      `Brown, green, and purple are three firms' marginal profits on shared axes. At $x=3$ brown and purple sit above the axis while green sits below — opposite expand/contract advice. Brown starts below the axis at $x=0$ and only becomes positive after $x=1$; it later crosses from $+$ to $-$ near $x=5$, so firm A has a local profit peak there. Purple crosses from positive to negative somewhere in $(4,5)$. Because signs disagree at even one $x$ (e.g. $x=3$), the three firms do not share one expand/contract recommendation on the whole of $(0,6)$.`,
+    solution_overview: `Brown, green, and purple are three firms' marginal profits on shared axes. At $x=3$ brown and purple sit above the axis while green sits below — opposite expand/contract advice. Brown starts below the axis at $x=0$ and only becomes positive after $x=1$; it later crosses from $+$ to $-$ near $x=5$, so firm A has a local profit peak there. Purple crosses from positive to negative somewhere in $(4,5)$. Because signs disagree at even one $x$ (e.g. $x=3$), the three firms do not share one expand/contract recommendation on the whole of $(0,6)$.`,
     figure: `data:image/svg+xml;utf8,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20viewBox%3D%220%200%20640%20400%22%20width%3D%22640%22%20height%3D%22400%22%20role%3D%22img%22%3E%0A%3Crect%20width%3D%22640%22%20height%3D%22400%22%20rx%3D%2216%22%20fill%3D%22%23faf8f4%22%20stroke%3D%22%23d9d2c5%22%2F%3E%0A%3Ctext%20x%3D%22279%22%20y%3D%2226%22%20text-anchor%3D%22middle%22%20font-size%3D%2214%22%20font-family%3D%22Georgia%2Cserif%22%20fill%3D%22%232b2b2b%22%3EThree%20marginal-profit%20curves%20on%20one%20plane%3C%2Ftext%3E%0A%3Cdefs%3E%3CclipPath%20id%3D%22clip-3806376%22%3E%3Crect%20x%3D%2252%22%20y%3D%2244%22%20width%3D%22454%22%20height%3D%22300%22%2F%3E%3C%2FclipPath%3E%3C%2Fdefs%3E%0A%3Cline%20x1%3D%2252.0%22%20y1%3D%2244%22%20x2%3D%2252.0%22%20y2%3D%22344%22%20stroke%3D%22%23e8e2d8%22%20stroke-width%3D%221%22%2F%3E%0A%3Cline%20x1%3D%22127.7%22%20y1%3D%2244%22%20x2%3D%22127.7%22%20y2%3D%22344%22%20stroke%3D%22%23e8e2d8%22%20stroke-width%3D%221%22%2F%3E%0A%3Cline%20x1%3D%22203.3%22%20y1%3D%2244%22%20x2%3D%22203.3%22%20y2%3D%22344%22%20stroke%3D%22%23e8e2d8%22%20stroke-width%3D%221%22%2F%3E%0A%3Cline%20x1%3D%22279.0%22%20y1%3D%2244%22%20x2%3D%22279.0%22%20y2%3D%22344%22%20stroke%3D%22%23e8e2d8%22%20stroke-width%3D%221%22%2F%3E%0A%3Cline%20x1%3D%22354.7%22%20y1%3D%2244%22%20x2%3D%22354.7%22%20y2%3D%22344%22%20stroke%3D%22%23e8e2d8%22%20stroke-width%3D%221%22%2F%3E%0A%3Cline%20x1%3D%22430.3%22%20y1%3D%2244%22%20x2%3D%22430.3%22%20y2%3D%22344%22%20stroke%3D%22%23e8e2d8%22%20stroke-width%3D%221%22%2F%3E%0A%3Cline%20x1%3D%22506.0%22%20y1%3D%2244%22%20x2%3D%22506.0%22%20y2%3D%22344%22%20stroke%3D%22%23e8e2d8%22%20stroke-width%3D%221%22%2F%3E%0A%0A%0A%0A%0A%0A%3Cline%20x1%3D%2252%22%20y1%3D%22224.0%22%20x2%3D%22506%22%20y2%3D%22224.0%22%20stroke%3D%22%23c4b8a8%22%20stroke-width%3D%221.3%22%2F%3E%0A%3Cline%20x1%3D%2252%22%20y1%3D%2244%22%20x2%3D%2252%22%20y2%3D%22344%22%20stroke%3D%22%237a7268%22%20stroke-width%3D%221.5%22%2F%3E%0A%3Cline%20x1%3D%2252%22%20y1%3D%22344%22%20x2%3D%22506%22%20y2%3D%22344%22%20stroke%3D%22%237a7268%22%20stroke-width%3D%221.5%22%2F%3E%0A%0A%0A%0A%0A%0A%0A%0A%0A%0A%0A%0A%0A%3Cline%20x1%3D%2252.0%22%20y1%3D%22344.0%22%20x2%3D%2252.0%22%20y2%3D%22350.0%22%20stroke%3D%22%23333%22%2F%3E%3Ctext%20x%3D%2252.0%22%20y%3D%22364.0%22%20text-anchor%3D%22middle%22%20font-size%3D%2211%22%20font-family%3D%22Georgia%2Cserif%22%20fill%3D%22%23333%22%3E0%3C%2Ftext%3E%3Cline%20x1%3D%22203.3%22%20y1%3D%22344.0%22%20x2%3D%22203.3%22%20y2%3D%22350.0%22%20stroke%3D%22%23333%22%2F%3E%3Ctext%20x%3D%22203.3%22%20y%3D%22364.0%22%20text-anchor%3D%22middle%22%20font-size%3D%2211%22%20font-family%3D%22Georgia%2Cserif%22%20fill%3D%22%23333%22%3E2%3C%2Ftext%3E%3Cline%20x1%3D%22354.7%22%20y1%3D%22344.0%22%20x2%3D%22354.7%22%20y2%3D%22350.0%22%20stroke%3D%22%23333%22%2F%3E%3Ctext%20x%3D%22354.7%22%20y%3D%22364.0%22%20text-anchor%3D%22middle%22%20font-size%3D%2211%22%20font-family%3D%22Georgia%2Cserif%22%20fill%3D%22%23333%22%3E4%3C%2Ftext%3E%3Cline%20x1%3D%22506.0%22%20y1%3D%22344.0%22%20x2%3D%22506.0%22%20y2%3D%22350.0%22%20stroke%3D%22%23333%22%2F%3E%3Ctext%20x%3D%22506.0%22%20y%3D%22364.0%22%20text-anchor%3D%22middle%22%20font-size%3D%2211%22%20font-family%3D%22Georgia%2Cserif%22%20fill%3D%22%23333%22%3E6%3C%2Ftext%3E%3Cline%20x1%3D%2252.0%22%20y1%3D%22228.0%22%20x2%3D%22506.0%22%20y2%3D%22228.0%22%20stroke%3D%22%23ddd%22%20stroke-width%3D%221%22%2F%3E%3Cline%20x1%3D%2246.0%22%20y1%3D%22228.0%22%20x2%3D%2252.0%22%20y2%3D%22228.0%22%20stroke%3D%22%23333%22%2F%3E%3Ctext%20x%3D%2242.0%22%20y%3D%22228.0%22%20text-anchor%3D%22end%22%20dominant-baseline%3D%22middle%22%20font-size%3D%2211%22%20font-family%3D%22Georgia%2Cserif%22%20fill%3D%22%23333%22%3E0%3C%2Ftext%3E%3Cline%20x1%3D%2252.0%22%20y1%3D%2278.0%22%20x2%3D%22506.0%22%20y2%3D%2278.0%22%20stroke%3D%22%23ddd%22%20stroke-width%3D%221%22%2F%3E%3Cline%20x1%3D%2246.0%22%20y1%3D%2278.0%22%20x2%3D%2252.0%22%20y2%3D%2278.0%22%20stroke%3D%22%23333%22%2F%3E%3Ctext%20x%3D%2242.0%22%20y%3D%2278.0%22%20text-anchor%3D%22end%22%20dominant-baseline%3D%22middle%22%20font-size%3D%2211%22%20font-family%3D%22Georgia%2Cserif%22%20fill%3D%22%23333%22%3E5%3C%2Ftext%3E%3Cpolyline%20fill%3D%22none%22%20stroke%3D%22%238B5A2B%22%20stroke-width%3D%222.4%22%20points%3D%2252.0%2C374.0%2053.4%2C370.6%2054.8%2C367.3%2056.3%2C364.0%2057.7%2C360.7%2059.1%2C357.4%2060.5%2C354.1%2061.9%2C350.9%2063.4%2C347.7%2064.8%2C344.5%2066.2%2C341.3%2067.6%2C338.2%2069.0%2C335.0%2070.4%2C331.9%2071.9%2C328.8%2073.3%2C325.7%2074.7%2C322.7%2076.1%2C319.7%2077.5%2C316.7%2079.0%2C313.7%2080.4%2C310.7%2081.8%2C307.8%2083.2%2C304.9%2084.6%2C302.0%2086.0%2C299.1%2087.5%2C296.2%2088.9%2C293.4%2090.3%2C290.6%2091.7%2C287.8%2093.1%2C285.0%2094.6%2C282.2%2096.0%2C279.5%2097.4%2C276.8%2098.8%2C274.1%20100.2%2C271.4%20101.7%2C268.8%20103.1%2C266.2%20104.5%2C263.6%20105.9%2C261.0%20107.3%2C258.4%20108.8%2C255.9%20110.2%2C253.4%20111.6%2C250.9%20113.0%2C248.4%20114.4%2C245.9%20115.8%2C243.5%20117.3%2C241.1%20118.7%2C238.7%20120.1%2C236.3%20121.5%2C233.9%20122.9%2C231.6%20124.4%2C229.3%20125.8%2C227.0%20127.2%2C224.8%20128.6%2C222.5%20130.0%2C220.3%20131.4%2C218.1%20132.9%2C215.9%20134.3%2C213.7%20135.7%2C211.6%20137.1%2C209.5%20138.5%2C207.4%20140.0%2C205.3%20141.4%2C203.2%20142.8%2C201.2%20144.2%2C199.2%20145.6%2C197.2%20147.1%2C195.2%20148.5%2C193.3%20149.9%2C191.3%20151.3%2C189.4%20152.7%2C187.5%20154.2%2C185.7%20155.6%2C183.8%20157.0%2C182.0%20158.4%2C180.2%20159.8%2C178.4%20161.2%2C176.7%20162.7%2C174.9%20164.1%2C173.2%20165.5%2C171.5%20166.9%2C169.8%20168.3%2C168.2%20169.8%2C166.5%20171.2%2C164.9%20172.6%2C163.3%20174.0%2C161.8%20175.4%2C160.2%20176.8%2C158.7%20178.3%2C157.2%20179.7%2C155.7%20181.1%2C154.2%20182.5%2C152.8%20183.9%2C151.3%20185.4%2C149.9%20186.8%2C148.6%20188.2%2C147.2%20189.6%2C145.9%20191.0%2C144.5%20192.5%2C143.2%20193.9%2C142.0%20195.3%2C140.7%20196.7%2C139.5%20198.1%2C138.3%20199.6%2C137.1%20201.0%2C135.9%20202.4%2C134.8%20203.8%2C133.6%20205.2%2C132.5%20206.6%2C131.4%20208.1%2C130.4%20209.5%2C129.3%20210.9%2C128.3%20212.3%2C127.3%20213.7%2C126.3%20215.2%2C125.4%20216.6%2C124.4%20218.0%2C123.5%20219.4%2C122.6%20220.8%2C121.7%20222.2%2C120.9%20223.7%2C120.0%20225.1%2C119.2%20226.5%2C118.4%20227.9%2C117.7%20229.3%2C116.9%20230.8%2C116.2%20232.2%2C115.5%20233.6%2C114.8%20235.0%2C114.1%20236.4%2C113.5%20237.9%2C112.9%20239.3%2C112.3%20240.7%2C111.7%20242.1%2C111.1%20243.5%2C110.6%20244.9%2C110.1%20246.4%2C109.6%20247.8%2C109.1%20249.2%2C108.7%20250.6%2C108.2%20252.0%2C107.8%20253.5%2C107.4%20254.9%2C107.0%20256.3%2C106.7%20257.7%2C106.4%20259.1%2C106.1%20260.6%2C105.8%20262.0%2C105.5%20263.4%2C105.3%20264.8%2C105.1%20266.2%2C104.9%20267.6%2C104.7%20269.1%2C104.5%20270.5%2C104.4%20271.9%2C104.3%20273.3%2C104.2%20274.7%2C104.1%20276.2%2C104.0%20277.6%2C104.0%20279.0%2C104.0%20280.4%2C104.0%20281.8%2C104.0%20283.3%2C104.1%20284.7%2C104.2%20286.1%2C104.3%20287.5%2C104.4%20288.9%2C104.5%20290.4%2C104.7%20291.8%2C104.9%20293.2%2C105.1%20294.6%2C105.3%20296.0%2C105.5%20297.4%2C105.8%20298.9%2C106.1%20300.3%2C106.4%20301.7%2C106.7%20303.1%2C107.0%20304.5%2C107.4%20306.0%2C107.8%20307.4%2C108.2%20308.8%2C108.7%20310.2%2C109.1%20311.6%2C109.6%20313.1%2C110.1%20314.5%2C110.6%20315.9%2C111.1%20317.3%2C111.7%20318.7%2C112.3%20320.1%2C112.9%20321.6%2C113.5%20323.0%2C114.1%20324.4%2C114.8%20325.8%2C115.5%20327.2%2C116.2%20328.7%2C116.9%20330.1%2C117.7%20331.5%2C118.4%20332.9%2C119.2%20334.3%2C120.0%20335.8%2C120.9%20337.2%2C121.7%20338.6%2C122.6%20340.0%2C123.5%20341.4%2C124.4%20342.8%2C125.4%20344.3%2C126.3%20345.7%2C127.3%20347.1%2C128.3%20348.5%2C129.3%20349.9%2C130.4%20351.4%2C131.4%20352.8%2C132.5%20354.2%2C133.6%20355.6%2C134.8%20357.0%2C135.9%20358.4%2C137.1%20359.9%2C138.3%20361.3%2C139.5%20362.7%2C140.7%20364.1%2C142.0%20365.5%2C143.2%20367.0%2C144.5%20368.4%2C145.9%20369.8%2C147.2%20371.2%2C148.6%20372.6%2C149.9%20374.1%2C151.3%20375.5%2C152.8%20376.9%2C154.2%20378.3%2C155.7%20379.7%2C157.2%20381.1%2C158.7%20382.6%2C160.2%20384.0%2C161.8%20385.4%2C163.3%20386.8%2C164.9%20388.2%2C166.5%20389.7%2C168.2%20391.1%2C169.8%20392.5%2C171.5%20393.9%2C173.2%20395.3%2C174.9%20396.8%2C176.7%20398.2%2C178.4%20399.6%2C180.2%20401.0%2C182.0%20402.4%2C183.8%20403.9%2C185.7%20405.3%2C187.5%20406.7%2C189.4%20408.1%2C191.3%20409.5%2C193.3%20410.9%2C195.2%20412.4%2C197.2%20413.8%2C199.2%20415.2%2C201.2%20416.6%2C203.2%20418.0%2C205.3%20419.5%2C207.4%20420.9%2C209.5%20422.3%2C211.6%20423.7%2C213.7%20425.1%2C215.9%20426.6%2C218.1%20428.0%2C220.3%20429.4%2C222.5%20430.8%2C224.8%20432.2%2C227.0%20433.6%2C229.3%20435.1%2C231.6%20436.5%2C233.9%20437.9%2C236.3%20439.3%2C238.7%20440.7%2C241.1%20442.2%2C243.5%20443.6%2C245.9%20445.0%2C248.4%20446.4%2C250.9%20447.8%2C253.4%20449.2%2C255.9%20450.7%2C258.4%20452.1%2C261.0%20453.5%2C263.6%20454.9%2C266.2%20456.3%2C268.8%20457.8%2C271.4%20459.2%2C274.1%20460.6%2C276.8%20462.0%2C279.5%20463.4%2C282.2%20464.9%2C285.0%20466.3%2C287.8%20467.7%2C290.6%20469.1%2C293.4%20470.5%2C296.2%20471.9%2C299.1%20473.4%2C302.0%20474.8%2C304.9%20476.2%2C307.8%20477.6%2C310.7%20479.0%2C313.7%20480.5%2C316.7%20481.9%2C319.7%20483.3%2C322.7%20484.7%2C325.7%20486.1%2C328.8%20487.6%2C331.9%20489.0%2C335.0%20490.4%2C338.2%20491.8%2C341.3%20493.2%2C344.5%20494.6%2C347.7%20496.1%2C350.9%20497.5%2C354.1%20498.9%2C357.4%20500.3%2C360.7%20501.7%2C364.0%20503.2%2C367.3%20504.6%2C370.6%20506.0%2C374.0%22%20clip-path%3D%22url%28%23clip-3806376%29%22%2F%3E%0A%3Cpolyline%20fill%3D%22none%22%20stroke%3D%22%232F5D50%22%20stroke-width%3D%222.4%22%20points%3D%2252.0%2C-16.0%2053.4%2C-12.6%2054.8%2C-9.3%2056.3%2C-6.0%2057.7%2C-2.7%2059.1%2C0.6%2060.5%2C3.9%2061.9%2C7.1%2063.4%2C10.3%2064.8%2C13.5%2066.2%2C16.7%2067.6%2C19.8%2069.0%2C23.0%2070.4%2C26.1%2071.9%2C29.2%2073.3%2C32.3%2074.7%2C35.3%2076.1%2C38.3%2077.5%2C41.3%2079.0%2C44.3%2080.4%2C47.3%2081.8%2C50.2%2083.2%2C53.1%2084.6%2C56.0%2086.0%2C58.9%2087.5%2C61.8%2088.9%2C64.6%2090.3%2C67.4%2091.7%2C70.2%2093.1%2C73.0%2094.6%2C75.8%2096.0%2C78.5%2097.4%2C81.2%2098.8%2C83.9%20100.2%2C86.6%20101.7%2C89.2%20103.1%2C91.8%20104.5%2C94.4%20105.9%2C97.0%20107.3%2C99.6%20108.8%2C102.1%20110.2%2C104.6%20111.6%2C107.1%20113.0%2C109.6%20114.4%2C112.1%20115.8%2C114.5%20117.3%2C116.9%20118.7%2C119.3%20120.1%2C121.7%20121.5%2C124.1%20122.9%2C126.4%20124.4%2C128.7%20125.8%2C131.0%20127.2%2C133.2%20128.6%2C135.5%20130.0%2C137.7%20131.4%2C139.9%20132.9%2C142.1%20134.3%2C144.3%20135.7%2C146.4%20137.1%2C148.5%20138.5%2C150.6%20140.0%2C152.7%20141.4%2C154.8%20142.8%2C156.8%20144.2%2C158.8%20145.6%2C160.8%20147.1%2C162.8%20148.5%2C164.7%20149.9%2C166.7%20151.3%2C168.6%20152.7%2C170.5%20154.2%2C172.3%20155.6%2C174.2%20157.0%2C176.0%20158.4%2C177.8%20159.8%2C179.6%20161.2%2C181.3%20162.7%2C183.1%20164.1%2C184.8%20165.5%2C186.5%20166.9%2C188.2%20168.3%2C189.8%20169.8%2C191.5%20171.2%2C193.1%20172.6%2C194.7%20174.0%2C196.2%20175.4%2C197.8%20176.8%2C199.3%20178.3%2C200.8%20179.7%2C202.3%20181.1%2C203.8%20182.5%2C205.2%20183.9%2C206.7%20185.4%2C208.1%20186.8%2C209.4%20188.2%2C210.8%20189.6%2C212.1%20191.0%2C213.5%20192.5%2C214.8%20193.9%2C216.0%20195.3%2C217.3%20196.7%2C218.5%20198.1%2C219.7%20199.6%2C220.9%20201.0%2C222.1%20202.4%2C223.2%20203.8%2C224.4%20205.2%2C225.5%20206.6%2C226.6%20208.1%2C227.6%20209.5%2C228.7%20210.9%2C229.7%20212.3%2C230.7%20213.7%2C231.7%20215.2%2C232.6%20216.6%2C233.6%20218.0%2C234.5%20219.4%2C235.4%20220.8%2C236.3%20222.2%2C237.1%20223.7%2C238.0%20225.1%2C238.8%20226.5%2C239.6%20227.9%2C240.3%20229.3%2C241.1%20230.8%2C241.8%20232.2%2C242.5%20233.6%2C243.2%20235.0%2C243.9%20236.4%2C244.5%20237.9%2C245.1%20239.3%2C245.7%20240.7%2C246.3%20242.1%2C246.9%20243.5%2C247.4%20244.9%2C247.9%20246.4%2C248.4%20247.8%2C248.9%20249.2%2C249.3%20250.6%2C249.8%20252.0%2C250.2%20253.5%2C250.6%20254.9%2C251.0%20256.3%2C251.3%20257.7%2C251.6%20259.1%2C251.9%20260.6%2C252.2%20262.0%2C252.5%20263.4%2C252.7%20264.8%2C252.9%20266.2%2C253.1%20267.6%2C253.3%20269.1%2C253.5%20270.5%2C253.6%20271.9%2C253.7%20273.3%2C253.8%20274.7%2C253.9%20276.2%2C254.0%20277.6%2C254.0%20279.0%2C254.0%20280.4%2C254.0%20281.8%2C254.0%20283.3%2C253.9%20284.7%2C253.8%20286.1%2C253.7%20287.5%2C253.6%20288.9%2C253.5%20290.4%2C253.3%20291.8%2C253.1%20293.2%2C252.9%20294.6%2C252.7%20296.0%2C252.5%20297.4%2C252.2%20298.9%2C251.9%20300.3%2C251.6%20301.7%2C251.3%20303.1%2C251.0%20304.5%2C250.6%20306.0%2C250.2%20307.4%2C249.8%20308.8%2C249.3%20310.2%2C248.9%20311.6%2C248.4%20313.1%2C247.9%20314.5%2C247.4%20315.9%2C246.9%20317.3%2C246.3%20318.7%2C245.7%20320.1%2C245.1%20321.6%2C244.5%20323.0%2C243.9%20324.4%2C243.2%20325.8%2C242.5%20327.2%2C241.8%20328.7%2C241.1%20330.1%2C240.3%20331.5%2C239.6%20332.9%2C238.8%20334.3%2C238.0%20335.8%2C237.1%20337.2%2C236.3%20338.6%2C235.4%20340.0%2C234.5%20341.4%2C233.6%20342.8%2C232.6%20344.3%2C231.7%20345.7%2C230.7%20347.1%2C229.7%20348.5%2C228.7%20349.9%2C227.6%20351.4%2C226.6%20352.8%2C225.5%20354.2%2C224.4%20355.6%2C223.2%20357.0%2C222.1%20358.4%2C220.9%20359.9%2C219.7%20361.3%2C218.5%20362.7%2C217.3%20364.1%2C216.0%20365.5%2C214.8%20367.0%2C213.5%20368.4%2C212.1%20369.8%2C210.8%20371.2%2C209.4%20372.6%2C208.1%20374.1%2C206.7%20375.5%2C205.2%20376.9%2C203.8%20378.3%2C202.3%20379.7%2C200.8%20381.1%2C199.3%20382.6%2C197.8%20384.0%2C196.2%20385.4%2C194.7%20386.8%2C193.1%20388.2%2C191.5%20389.7%2C189.8%20391.1%2C188.2%20392.5%2C186.5%20393.9%2C184.8%20395.3%2C183.1%20396.8%2C181.3%20398.2%2C179.6%20399.6%2C177.8%20401.0%2C176.0%20402.4%2C174.2%20403.9%2C172.3%20405.3%2C170.5%20406.7%2C168.6%20408.1%2C166.7%20409.5%2C164.7%20410.9%2C162.8%20412.4%2C160.8%20413.8%2C158.8%20415.2%2C156.8%20416.6%2C154.8%20418.0%2C152.7%20419.5%2C150.6%20420.9%2C148.5%20422.3%2C146.4%20423.7%2C144.3%20425.1%2C142.1%20426.6%2C139.9%20428.0%2C137.7%20429.4%2C135.5%20430.8%2C133.2%20432.2%2C131.0%20433.6%2C128.7%20435.1%2C126.4%20436.5%2C124.1%20437.9%2C121.7%20439.3%2C119.3%20440.7%2C116.9%20442.2%2C114.5%20443.6%2C112.1%20445.0%2C109.6%20446.4%2C107.1%20447.8%2C104.6%20449.2%2C102.1%20450.7%2C99.6%20452.1%2C97.0%20453.5%2C94.4%20454.9%2C91.8%20456.3%2C89.2%20457.8%2C86.6%20459.2%2C83.9%20460.6%2C81.2%20462.0%2C78.5%20463.4%2C75.8%20464.9%2C73.0%20466.3%2C70.2%20467.7%2C67.4%20469.1%2C64.6%20470.5%2C61.8%20471.9%2C58.9%20473.4%2C56.0%20474.8%2C53.1%20476.2%2C50.2%20477.6%2C47.3%20479.0%2C44.3%20480.5%2C41.3%20481.9%2C38.3%20483.3%2C35.3%20484.7%2C32.3%20486.1%2C29.2%20487.6%2C26.1%20489.0%2C23.0%20490.4%2C19.8%20491.8%2C16.7%20493.2%2C13.5%20494.6%2C10.3%20496.1%2C7.1%20497.5%2C3.9%20498.9%2C0.6%20500.3%2C-2.7%20501.7%2C-6.0%20503.2%2C-9.3%20504.6%2C-12.6%20506.0%2C-16.0%22%20clip-path%3D%22url%28%23clip-3806376%29%22%2F%3E%0A%3Cpolyline%20fill%3D%22none%22%20stroke%3D%22%236B3FA0%22%20stroke-width%3D%222.4%22%20points%3D%2252.0%2C149.0%2053.4%2C149.3%2054.8%2C149.7%2056.3%2C150.0%2057.7%2C150.3%2059.1%2C150.7%2060.5%2C151.0%2061.9%2C151.4%2063.4%2C151.7%2064.8%2C152.0%2066.2%2C152.4%2067.6%2C152.7%2069.0%2C153.1%2070.4%2C153.4%2071.9%2C153.7%2073.3%2C154.1%2074.7%2C154.4%2076.1%2C154.7%2077.5%2C155.1%2079.0%2C155.4%2080.4%2C155.8%2081.8%2C156.1%2083.2%2C156.4%2084.6%2C156.8%2086.0%2C157.1%2087.5%2C157.4%2088.9%2C157.8%2090.3%2C158.1%2091.7%2C158.4%2093.1%2C158.8%2094.6%2C159.1%2096.0%2C159.5%2097.4%2C159.8%2098.8%2C160.1%20100.2%2C160.5%20101.7%2C160.8%20103.1%2C161.2%20104.5%2C161.5%20105.9%2C161.8%20107.3%2C162.2%20108.8%2C162.5%20110.2%2C162.8%20111.6%2C163.2%20113.0%2C163.5%20114.4%2C163.9%20115.8%2C164.2%20117.3%2C164.5%20118.7%2C164.9%20120.1%2C165.2%20121.5%2C165.5%20122.9%2C165.9%20124.4%2C166.2%20125.8%2C166.6%20127.2%2C166.9%20128.6%2C167.2%20130.0%2C167.6%20131.4%2C167.9%20132.9%2C168.2%20134.3%2C168.6%20135.7%2C168.9%20137.1%2C169.2%20138.5%2C169.6%20140.0%2C169.9%20141.4%2C170.3%20142.8%2C170.6%20144.2%2C170.9%20145.6%2C171.3%20147.1%2C171.6%20148.5%2C171.9%20149.9%2C172.3%20151.3%2C172.6%20152.7%2C173.0%20154.2%2C173.3%20155.6%2C173.6%20157.0%2C174.0%20158.4%2C174.3%20159.8%2C174.7%20161.2%2C175.0%20162.7%2C175.3%20164.1%2C175.7%20165.5%2C176.0%20166.9%2C176.3%20168.3%2C176.7%20169.8%2C177.0%20171.2%2C177.3%20172.6%2C177.7%20174.0%2C178.0%20175.4%2C178.4%20176.8%2C178.7%20178.3%2C179.0%20179.7%2C179.4%20181.1%2C179.7%20182.5%2C180.1%20183.9%2C180.4%20185.4%2C180.7%20186.8%2C181.1%20188.2%2C181.4%20189.6%2C181.7%20191.0%2C182.1%20192.5%2C182.4%20193.9%2C182.8%20195.3%2C183.1%20196.7%2C183.4%20198.1%2C183.8%20199.6%2C184.1%20201.0%2C184.4%20202.4%2C184.8%20203.8%2C185.1%20205.2%2C185.4%20206.6%2C185.8%20208.1%2C186.1%20209.5%2C186.5%20210.9%2C186.8%20212.3%2C187.1%20213.7%2C187.5%20215.2%2C187.8%20216.6%2C188.2%20218.0%2C188.5%20219.4%2C188.8%20220.8%2C189.2%20222.2%2C189.5%20223.7%2C189.8%20225.1%2C190.2%20226.5%2C190.5%20227.9%2C190.8%20229.3%2C191.2%20230.8%2C191.5%20232.2%2C191.9%20233.6%2C192.2%20235.0%2C192.5%20236.4%2C192.9%20237.9%2C193.2%20239.3%2C193.6%20240.7%2C193.9%20242.1%2C194.2%20243.5%2C194.6%20244.9%2C194.9%20246.4%2C195.2%20247.8%2C195.6%20249.2%2C195.9%20250.6%2C196.3%20252.0%2C196.6%20253.5%2C196.9%20254.9%2C197.3%20256.3%2C197.6%20257.7%2C197.9%20259.1%2C198.3%20260.6%2C198.6%20262.0%2C198.9%20263.4%2C199.3%20264.8%2C199.6%20266.2%2C200.0%20267.6%2C200.3%20269.1%2C200.6%20270.5%2C201.0%20271.9%2C201.3%20273.3%2C201.6%20274.7%2C202.0%20276.2%2C202.3%20277.6%2C202.7%20279.0%2C203.0%20280.4%2C203.3%20281.8%2C203.7%20283.3%2C204.0%20284.7%2C204.3%20286.1%2C204.7%20287.5%2C205.0%20288.9%2C205.4%20290.4%2C205.7%20291.8%2C206.0%20293.2%2C206.4%20294.6%2C206.7%20296.0%2C207.1%20297.4%2C207.4%20298.9%2C207.7%20300.3%2C208.1%20301.7%2C208.4%20303.1%2C208.7%20304.5%2C209.1%20306.0%2C209.4%20307.4%2C209.8%20308.8%2C210.1%20310.2%2C210.4%20311.6%2C210.8%20313.1%2C211.1%20314.5%2C211.4%20315.9%2C211.8%20317.3%2C212.1%20318.7%2C212.4%20320.1%2C212.8%20321.6%2C213.1%20323.0%2C213.5%20324.4%2C213.8%20325.8%2C214.1%20327.2%2C214.5%20328.7%2C214.8%20330.1%2C215.2%20331.5%2C215.5%20332.9%2C215.8%20334.3%2C216.2%20335.8%2C216.5%20337.2%2C216.8%20338.6%2C217.2%20340.0%2C217.5%20341.4%2C217.8%20342.8%2C218.2%20344.3%2C218.5%20345.7%2C218.9%20347.1%2C219.2%20348.5%2C219.5%20349.9%2C219.9%20351.4%2C220.2%20352.8%2C220.6%20354.2%2C220.9%20355.6%2C221.2%20357.0%2C221.6%20358.4%2C221.9%20359.9%2C222.2%20361.3%2C222.6%20362.7%2C222.9%20364.1%2C223.2%20365.5%2C223.6%20367.0%2C223.9%20368.4%2C224.3%20369.8%2C224.6%20371.2%2C224.9%20372.6%2C225.3%20374.1%2C225.6%20375.5%2C225.9%20376.9%2C226.3%20378.3%2C226.6%20379.7%2C227.0%20381.1%2C227.3%20382.6%2C227.6%20384.0%2C228.0%20385.4%2C228.3%20386.8%2C228.6%20388.2%2C229.0%20389.7%2C229.3%20391.1%2C229.7%20392.5%2C230.0%20393.9%2C230.3%20395.3%2C230.7%20396.8%2C231.0%20398.2%2C231.4%20399.6%2C231.7%20401.0%2C232.0%20402.4%2C232.4%20403.9%2C232.7%20405.3%2C233.0%20406.7%2C233.4%20408.1%2C233.7%20409.5%2C234.0%20410.9%2C234.4%20412.4%2C234.7%20413.8%2C235.1%20415.2%2C235.4%20416.6%2C235.7%20418.0%2C236.1%20419.5%2C236.4%20420.9%2C236.8%20422.3%2C237.1%20423.7%2C237.4%20425.1%2C237.8%20426.6%2C238.1%20428.0%2C238.4%20429.4%2C238.8%20430.8%2C239.1%20432.2%2C239.5%20433.6%2C239.8%20435.1%2C240.1%20436.5%2C240.5%20437.9%2C240.8%20439.3%2C241.1%20440.7%2C241.5%20442.2%2C241.8%20443.6%2C242.2%20445.0%2C242.5%20446.4%2C242.8%20447.8%2C243.2%20449.2%2C243.5%20450.7%2C243.8%20452.1%2C244.2%20453.5%2C244.5%20454.9%2C244.8%20456.3%2C245.2%20457.8%2C245.5%20459.2%2C245.9%20460.6%2C246.2%20462.0%2C246.5%20463.4%2C246.9%20464.9%2C247.2%20466.3%2C247.6%20467.7%2C247.9%20469.1%2C248.2%20470.5%2C248.6%20471.9%2C248.9%20473.4%2C249.2%20474.8%2C249.6%20476.2%2C249.9%20477.6%2C250.2%20479.0%2C250.6%20480.5%2C250.9%20481.9%2C251.3%20483.3%2C251.6%20484.7%2C251.9%20486.1%2C252.3%20487.6%2C252.6%20489.0%2C252.9%20490.4%2C253.3%20491.8%2C253.6%20493.2%2C254.0%20494.6%2C254.3%20496.1%2C254.6%20497.5%2C255.0%20498.9%2C255.3%20500.3%2C255.7%20501.7%2C256.0%20503.2%2C256.3%20504.6%2C256.7%20506.0%2C257.0%22%20clip-path%3D%22url%28%23clip-3806376%29%22%2F%3E%0A%3Crect%20x%3D%22514%22%20y%3D%2246%22%20width%3D%22106%22%20height%3D%2268%22%20rx%3D%228%22%20fill%3D%22%23f8f6f2%22%20stroke%3D%22%23d9d2c5%22%2F%3E%0A%3Cline%20x1%3D%22520%22%20y1%3D%2264%22%20x2%3D%22538%22%20y2%3D%2264%22%20stroke%3D%22%238B5A2B%22%20stroke-width%3D%222.6%22%2F%3E%3Ctext%20x%3D%22544%22%20y%3D%2268%22%20font-size%3D%2212%22%20font-family%3D%22Georgia%2Cserif%22%20fill%3D%22%232b2b2b%22%3EP%E2%80%B2_A%3C%2Ftext%3E%0A%3Cline%20x1%3D%22520%22%20y1%3D%2282%22%20x2%3D%22538%22%20y2%3D%2282%22%20stroke%3D%22%232F5D50%22%20stroke-width%3D%222.6%22%2F%3E%3Ctext%20x%3D%22544%22%20y%3D%2286%22%20font-size%3D%2212%22%20font-family%3D%22Georgia%2Cserif%22%20fill%3D%22%232b2b2b%22%3EP%E2%80%B2_B%3C%2Ftext%3E%0A%3Cline%20x1%3D%22520%22%20y1%3D%22100%22%20x2%3D%22538%22%20y2%3D%22100%22%20stroke%3D%22%236B3FA0%22%20stroke-width%3D%222.6%22%2F%3E%3Ctext%20x%3D%22544%22%20y%3D%22104%22%20font-size%3D%2212%22%20font-family%3D%22Georgia%2Cserif%22%20fill%3D%22%232b2b2b%22%3EP%E2%80%B2_C%3C%2Ftext%3E%0A%3Ctext%20x%3D%22279%22%20y%3D%22388%22%20text-anchor%3D%22middle%22%20font-size%3D%2212%22%20font-family%3D%22Georgia%2Cserif%22%20fill%3D%22%232b2b2b%22%3Ex%3C%2Ftext%3E%0A%3C%2Fsvg%3E`,
   },
 {
@@ -12159,7 +13788,7 @@ Once that mismatch with the figure is clear, the claim cannot stand. Comparing t
       "Where green is negative, brown is falling.",
       "The highest point of green is a local maximum of brown.",
       "At $x=3$, green is near height $4$, matching the steepest climb of brown."
-    ],
+    ]
     answer_key: [true, true, true, false, true],
     tactical_explanations: [
       `**A.** → True
@@ -12217,11 +13846,10 @@ $$f'(3)\\approx 4$$
 so the reading matches the steepest climb of brown, and the statement is True.
 
 Putting that figure reading next to the claim, every asserted sign, height, or classification matches what the axes show, so the statement is True.`
-    ],
+    ]
     difficulty_level: "5/5",
     sort_order: 157,
-    solution_overview:
-      `Read the figure first: name the drawn curve(s), mark zeros and sample heights, then translate signs into monotonicity and turning points.
+    solution_overview: `Read the figure first: name the drawn curve(s), mark zeros and sample heights, then translate signs into monotonicity and turning points.
 
 Brown is $f$ and green is $f'$ on one shared plane. Consistency checks: turning points of brown line up with zeros of green; where green is positive, brown rises; where green is negative, brown falls. At $x=3$ green is near height $4$, matching the steepest climb of brown in the window. The highest point of green is where brown is steepest — not a local maximum of brown. Brown's local peak sits near $x=5$ where green is $0$ with a $+$ to $-$ change.`,
     figure: `data:image/svg+xml;utf8,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20viewBox%3D%220%200%20640%20400%22%20width%3D%22640%22%20height%3D%22400%22%20role%3D%22img%22%3E%0A%3Crect%20width%3D%22640%22%20height%3D%22400%22%20rx%3D%2216%22%20fill%3D%22%23faf8f4%22%20stroke%3D%22%23d9d2c5%22%2F%3E%0A%3Ctext%20x%3D%22279%22%20y%3D%2226%22%20text-anchor%3D%22middle%22%20font-size%3D%2214%22%20font-family%3D%22Georgia%2Cserif%22%20fill%3D%22%232b2b2b%22%3Ef%20and%20f%E2%80%B2%20on%20the%20same%20axes%3C%2Ftext%3E%0A%3Cdefs%3E%3CclipPath%20id%3D%22clip-4997141%22%3E%3Crect%20x%3D%2252%22%20y%3D%2244%22%20width%3D%22454%22%20height%3D%22300%22%2F%3E%3C%2FclipPath%3E%3C%2Fdefs%3E%0A%3Cline%20x1%3D%2252.0%22%20y1%3D%2244%22%20x2%3D%2252.0%22%20y2%3D%22344%22%20stroke%3D%22%23e8e2d8%22%20stroke-width%3D%221%22%2F%3E%0A%3Cline%20x1%3D%22127.7%22%20y1%3D%2244%22%20x2%3D%22127.7%22%20y2%3D%22344%22%20stroke%3D%22%23e8e2d8%22%20stroke-width%3D%221%22%2F%3E%0A%3Cline%20x1%3D%22203.3%22%20y1%3D%2244%22%20x2%3D%22203.3%22%20y2%3D%22344%22%20stroke%3D%22%23e8e2d8%22%20stroke-width%3D%221%22%2F%3E%0A%3Cline%20x1%3D%22279.0%22%20y1%3D%2244%22%20x2%3D%22279.0%22%20y2%3D%22344%22%20stroke%3D%22%23e8e2d8%22%20stroke-width%3D%221%22%2F%3E%0A%3Cline%20x1%3D%22354.7%22%20y1%3D%2244%22%20x2%3D%22354.7%22%20y2%3D%22344%22%20stroke%3D%22%23e8e2d8%22%20stroke-width%3D%221%22%2F%3E%0A%3Cline%20x1%3D%22430.3%22%20y1%3D%2244%22%20x2%3D%22430.3%22%20y2%3D%22344%22%20stroke%3D%22%23e8e2d8%22%20stroke-width%3D%221%22%2F%3E%0A%3Cline%20x1%3D%22506.0%22%20y1%3D%2244%22%20x2%3D%22506.0%22%20y2%3D%22344%22%20stroke%3D%22%23e8e2d8%22%20stroke-width%3D%221%22%2F%3E%0A%0A%0A%0A%0A%3Cline%20x1%3D%2252%22%20y1%3D%22177.3%22%20x2%3D%22506%22%20y2%3D%22177.3%22%20stroke%3D%22%23c4b8a8%22%20stroke-width%3D%221.3%22%2F%3E%0A%3Cline%20x1%3D%2252%22%20y1%3D%2244%22%20x2%3D%2252%22%20y2%3D%22344%22%20stroke%3D%22%237a7268%22%20stroke-width%3D%221.5%22%2F%3E%0A%3Cline%20x1%3D%2252%22%20y1%3D%22344%22%20x2%3D%22506%22%20y2%3D%22344%22%20stroke%3D%22%237a7268%22%20stroke-width%3D%221.5%22%2F%3E%0A%0A%0A%0A%0A%0A%0A%0A%0A%0A%0A%0A%3Cline%20x1%3D%2252.0%22%20y1%3D%22344.0%22%20x2%3D%2252.0%22%20y2%3D%22350.0%22%20stroke%3D%22%23333%22%2F%3E%3Ctext%20x%3D%2252.0%22%20y%3D%22364.0%22%20text-anchor%3D%22middle%22%20font-size%3D%2211%22%20font-family%3D%22Georgia%2Cserif%22%20fill%3D%22%23333%22%3E0%3C%2Ftext%3E%3Cline%20x1%3D%22203.3%22%20y1%3D%22344.0%22%20x2%3D%22203.3%22%20y2%3D%22350.0%22%20stroke%3D%22%23333%22%2F%3E%3Ctext%20x%3D%22203.3%22%20y%3D%22364.0%22%20text-anchor%3D%22middle%22%20font-size%3D%2211%22%20font-family%3D%22Georgia%2Cserif%22%20fill%3D%22%23333%22%3E2%3C%2Ftext%3E%3Cline%20x1%3D%22354.7%22%20y1%3D%22344.0%22%20x2%3D%22354.7%22%20y2%3D%22350.0%22%20stroke%3D%22%23333%22%2F%3E%3Ctext%20x%3D%22354.7%22%20y%3D%22364.0%22%20text-anchor%3D%22middle%22%20font-size%3D%2211%22%20font-family%3D%22Georgia%2Cserif%22%20fill%3D%22%23333%22%3E4%3C%2Ftext%3E%3Cline%20x1%3D%22506.0%22%20y1%3D%22344.0%22%20x2%3D%22506.0%22%20y2%3D%22350.0%22%20stroke%3D%22%23333%22%2F%3E%3Ctext%20x%3D%22506.0%22%20y%3D%22364.0%22%20text-anchor%3D%22middle%22%20font-size%3D%2211%22%20font-family%3D%22Georgia%2Cserif%22%20fill%3D%22%23333%22%3E6%3C%2Ftext%3E%3Cline%20x1%3D%2252.0%22%20y1%3D%22344.0%22%20x2%3D%22506.0%22%20y2%3D%22344.0%22%20stroke%3D%22%23ddd%22%20stroke-width%3D%221%22%2F%3E%3Cline%20x1%3D%2246.0%22%20y1%3D%22344.0%22%20x2%3D%2252.0%22%20y2%3D%22344.0%22%20stroke%3D%22%23333%22%2F%3E%3Ctext%20x%3D%2242.0%22%20y%3D%22344.0%22%20text-anchor%3D%22end%22%20dominant-baseline%3D%22middle%22%20font-size%3D%2211%22%20font-family%3D%22Georgia%2Cserif%22%20fill%3D%22%23333%22%3E-10%3C%2Ftext%3E%3Cline%20x1%3D%2252.0%22%20y1%3D%22181.4%22%20x2%3D%22506.0%22%20y2%3D%22181.4%22%20stroke%3D%22%23ddd%22%20stroke-width%3D%221%22%2F%3E%3Cline%20x1%3D%2246.0%22%20y1%3D%22181.4%22%20x2%3D%2252.0%22%20y2%3D%22181.4%22%20stroke%3D%22%23333%22%2F%3E%3Ctext%20x%3D%2242.0%22%20y%3D%22181.4%22%20text-anchor%3D%22end%22%20dominant-baseline%3D%22middle%22%20font-size%3D%2211%22%20font-family%3D%22Georgia%2Cserif%22%20fill%3D%22%23333%22%3E0%3C%2Ftext%3E%3Cpolyline%20fill%3D%22none%22%20stroke%3D%22%238B5A2B%22%20stroke-width%3D%222.4%22%20points%3D%2252.0%2C177.3%2053.4%2C178.9%2054.8%2C180.4%2056.3%2C181.9%2057.7%2C183.3%2059.1%2C184.7%2060.5%2C186.1%2061.9%2C187.4%2063.4%2C188.7%2064.8%2C190.0%2066.2%2C191.2%2067.6%2C192.4%2069.0%2C193.6%2070.4%2C194.8%2071.9%2C195.9%2073.3%2C196.9%2074.7%2C198.0%2076.1%2C199.0%2077.5%2C200.0%2079.0%2C200.9%2080.4%2C201.8%2081.8%2C202.7%2083.2%2C203.6%2084.6%2C204.4%2086.0%2C205.2%2087.5%2C206.0%2088.9%2C206.7%2090.3%2C207.4%2091.7%2C208.1%2093.1%2C208.8%2094.6%2C209.4%2096.0%2C210.0%2097.4%2C210.5%2098.8%2C211.1%20100.2%2C211.6%20101.7%2C212.1%20103.1%2C212.5%20104.5%2C212.9%20105.9%2C213.3%20107.3%2C213.7%20108.8%2C214.1%20110.2%2C214.4%20111.6%2C214.7%20113.0%2C214.9%20114.4%2C215.2%20115.8%2C215.4%20117.3%2C215.6%20118.7%2C215.7%20120.1%2C215.9%20121.5%2C216.0%20122.9%2C216.1%20124.4%2C216.2%20125.8%2C216.2%20127.2%2C216.2%20128.6%2C216.2%20130.0%2C216.2%20131.4%2C216.1%20132.9%2C216.1%20134.3%2C216.0%20135.7%2C215.9%20137.1%2C215.7%20138.5%2C215.5%20140.0%2C215.4%20141.4%2C215.2%20142.8%2C214.9%20144.2%2C214.7%20145.6%2C214.4%20147.1%2C214.1%20148.5%2C213.8%20149.9%2C213.5%20151.3%2C213.1%20152.7%2C212.8%20154.2%2C212.4%20155.6%2C212.0%20157.0%2C211.5%20158.4%2C211.1%20159.8%2C210.6%20161.2%2C210.1%20162.7%2C209.6%20164.1%2C209.1%20165.5%2C208.6%20166.9%2C208.0%20168.3%2C207.5%20169.8%2C206.9%20171.2%2C206.3%20172.6%2C205.6%20174.0%2C205.0%20175.4%2C204.3%20176.8%2C203.7%20178.3%2C203.0%20179.7%2C202.3%20181.1%2C201.6%20182.5%2C200.8%20183.9%2C200.1%20185.4%2C199.3%20186.8%2C198.5%20188.2%2C197.7%20189.6%2C196.9%20191.0%2C196.1%20192.5%2C195.3%20193.9%2C194.4%20195.3%2C193.6%20196.7%2C192.7%20198.1%2C191.8%20199.6%2C190.9%20201.0%2C190.0%20202.4%2C189.1%20203.8%2C188.1%20205.2%2C187.2%20206.6%2C186.2%20208.1%2C185.3%20209.5%2C184.3%20210.9%2C183.3%20212.3%2C182.3%20213.7%2C181.3%20215.2%2C180.2%20216.6%2C179.2%20218.0%2C178.2%20219.4%2C177.1%20220.8%2C176.1%20222.2%2C175.0%20223.7%2C173.9%20225.1%2C172.8%20226.5%2C171.7%20227.9%2C170.6%20229.3%2C169.5%20230.8%2C168.4%20232.2%2C167.3%20233.6%2C166.1%20235.0%2C165.0%20236.4%2C163.8%20237.9%2C162.7%20239.3%2C161.5%20240.7%2C160.4%20242.1%2C159.2%20243.5%2C158.0%20244.9%2C156.8%20246.4%2C155.6%20247.8%2C154.4%20249.2%2C153.2%20250.6%2C152.0%20252.0%2C150.8%20253.5%2C149.6%20254.9%2C148.4%20256.3%2C147.2%20257.7%2C146.0%20259.1%2C144.7%20260.6%2C143.5%20262.0%2C142.3%20263.4%2C141.0%20264.8%2C139.8%20266.2%2C138.6%20267.6%2C137.3%20269.1%2C136.1%20270.5%2C134.8%20271.9%2C133.6%20273.3%2C132.3%20274.7%2C131.1%20276.2%2C129.8%20277.6%2C128.6%20279.0%2C127.3%20280.4%2C126.1%20281.8%2C124.8%20283.3%2C123.6%20284.7%2C122.3%20286.1%2C121.1%20287.5%2C119.8%20288.9%2C118.6%20290.4%2C117.4%20291.8%2C116.1%20293.2%2C114.9%20294.6%2C113.6%20296.0%2C112.4%20297.4%2C111.2%20298.9%2C109.9%20300.3%2C108.7%20301.7%2C107.5%20303.1%2C106.3%20304.5%2C105.0%20306.0%2C103.8%20307.4%2C102.6%20308.8%2C101.4%20310.2%2C100.2%20311.6%2C99.0%20313.1%2C97.8%20314.5%2C96.7%20315.9%2C95.5%20317.3%2C94.3%20318.7%2C93.1%20320.1%2C92.0%20321.6%2C90.8%20323.0%2C89.7%20324.4%2C88.5%20325.8%2C87.4%20327.2%2C86.3%20328.7%2C85.2%20330.1%2C84.0%20331.5%2C82.9%20332.9%2C81.8%20334.3%2C80.8%20335.8%2C79.7%20337.2%2C78.6%20338.6%2C77.5%20340.0%2C76.5%20341.4%2C75.5%20342.8%2C74.4%20344.3%2C73.4%20345.7%2C72.4%20347.1%2C71.4%20348.5%2C70.4%20349.9%2C69.4%20351.4%2C68.4%20352.8%2C67.5%20354.2%2C66.5%20355.6%2C65.6%20357.0%2C64.7%20358.4%2C63.8%20359.9%2C62.9%20361.3%2C62.0%20362.7%2C61.1%20364.1%2C60.2%20365.5%2C59.4%20367.0%2C58.6%20368.4%2C57.7%20369.8%2C56.9%20371.2%2C56.1%20372.6%2C55.4%20374.1%2C54.6%20375.5%2C53.8%20376.9%2C53.1%20378.3%2C52.4%20379.7%2C51.7%20381.1%2C51.0%20382.6%2C50.3%20384.0%2C49.7%20385.4%2C49.0%20386.8%2C48.4%20388.2%2C47.8%20389.7%2C47.2%20391.1%2C46.6%20392.5%2C46.1%20393.9%2C45.5%20395.3%2C45.0%20396.8%2C44.5%20398.2%2C44.0%20399.6%2C43.6%20401.0%2C43.1%20402.4%2C42.7%20403.9%2C42.3%20405.3%2C41.9%20406.7%2C41.5%20408.1%2C41.2%20409.5%2C40.8%20410.9%2C40.5%20412.4%2C40.3%20413.8%2C40.0%20415.2%2C39.7%20416.6%2C39.5%20418.0%2C39.3%20419.5%2C39.1%20420.9%2C39.0%20422.3%2C38.8%20423.7%2C38.7%20425.1%2C38.6%20426.6%2C38.5%20428.0%2C38.5%20429.4%2C38.4%20430.8%2C38.4%20432.2%2C38.5%20433.6%2C38.5%20435.1%2C38.6%20436.5%2C38.7%20437.9%2C38.8%20439.3%2C38.9%20440.7%2C39.1%20442.2%2C39.3%20443.6%2C39.5%20445.0%2C39.7%20446.4%2C40.0%20447.8%2C40.3%20449.2%2C40.6%20450.7%2C41.0%20452.1%2C41.3%20453.5%2C41.7%20454.9%2C42.2%20456.3%2C42.6%20457.8%2C43.1%20459.2%2C43.6%20460.6%2C44.1%20462.0%2C44.7%20463.4%2C45.3%20464.9%2C45.9%20466.3%2C46.6%20467.7%2C47.2%20469.1%2C47.9%20470.5%2C48.7%20471.9%2C49.5%20473.4%2C50.2%20474.8%2C51.1%20476.2%2C51.9%20477.6%2C52.8%20479.0%2C53.7%20480.5%2C54.7%20481.9%2C55.7%20483.3%2C56.7%20484.7%2C57.7%20486.1%2C58.8%20487.6%2C59.9%20489.0%2C61.1%20490.4%2C62.2%20491.8%2C63.4%20493.2%2C64.7%20494.6%2C65.9%20496.1%2C67.2%20497.5%2C68.6%20498.9%2C70.0%20500.3%2C71.4%20501.7%2C72.8%20503.2%2C74.3%20504.6%2C75.8%20506.0%2C77.3%22%20clip-path%3D%22url%28%23clip-4997141%29%22%2F%3E%0A%3Cpolyline%20fill%3D%22none%22%20stroke%3D%22%232F5D50%22%20stroke-width%3D%222.4%22%20points%3D%2252.0%2C260.7%2053.4%2C258.8%2054.8%2C256.9%2056.3%2C255.1%2057.7%2C253.3%2059.1%2C251.4%2060.5%2C249.6%2061.9%2C247.8%2063.4%2C246.0%2064.8%2C244.3%2066.2%2C242.5%2067.6%2C240.8%2069.0%2C239.0%2070.4%2C237.3%2071.9%2C235.6%2073.3%2C233.9%2074.7%2C232.2%2076.1%2C230.5%2077.5%2C228.8%2079.0%2C227.2%2080.4%2C225.5%2081.8%2C223.9%2083.2%2C222.3%2084.6%2C220.6%2086.0%2C219.0%2087.5%2C217.5%2088.9%2C215.9%2090.3%2C214.3%2091.7%2C212.8%2093.1%2C211.2%2094.6%2C209.7%2096.0%2C208.2%2097.4%2C206.7%2098.8%2C205.2%20100.2%2C203.7%20101.7%2C202.2%20103.1%2C200.8%20104.5%2C199.3%20105.9%2C197.9%20107.3%2C196.5%20108.8%2C195.0%20110.2%2C193.6%20111.6%2C192.3%20113.0%2C190.9%20114.4%2C189.5%20115.8%2C188.2%20117.3%2C186.8%20118.7%2C185.5%20120.1%2C184.2%20121.5%2C182.9%20122.9%2C181.6%20124.4%2C180.3%20125.8%2C179.0%20127.2%2C177.8%20128.6%2C176.5%20130.0%2C175.3%20131.4%2C174.0%20132.9%2C172.8%20134.3%2C171.6%20135.7%2C170.4%20137.1%2C169.3%20138.5%2C168.1%20140.0%2C166.9%20141.4%2C165.8%20142.8%2C164.7%20144.2%2C163.5%20145.6%2C162.4%20147.1%2C161.3%20148.5%2C160.3%20149.9%2C159.2%20151.3%2C158.1%20152.7%2C157.1%20154.2%2C156.0%20155.6%2C155.0%20157.0%2C154.0%20158.4%2C153.0%20159.8%2C152.0%20161.2%2C151.0%20162.7%2C150.1%20164.1%2C149.1%20165.5%2C148.2%20166.9%2C147.2%20168.3%2C146.3%20169.8%2C145.4%20171.2%2C144.5%20172.6%2C143.6%20174.0%2C142.8%20175.4%2C141.9%20176.8%2C141.0%20178.3%2C140.2%20179.7%2C139.4%20181.1%2C138.6%20182.5%2C137.8%20183.9%2C137.0%20185.4%2C136.2%20186.8%2C135.4%20188.2%2C134.7%20189.6%2C133.9%20191.0%2C133.2%20192.5%2C132.5%20193.9%2C131.8%20195.3%2C131.1%20196.7%2C130.4%20198.1%2C129.7%20199.6%2C129.0%20201.0%2C128.4%20202.4%2C127.8%20203.8%2C127.1%20205.2%2C126.5%20206.6%2C125.9%20208.1%2C125.3%20209.5%2C124.7%20210.9%2C124.2%20212.3%2C123.6%20213.7%2C123.1%20215.2%2C122.5%20216.6%2C122.0%20218.0%2C121.5%20219.4%2C121.0%20220.8%2C120.5%20222.2%2C120.0%20223.7%2C119.6%20225.1%2C119.1%20226.5%2C118.7%20227.9%2C118.3%20229.3%2C117.8%20230.8%2C117.4%20232.2%2C117.0%20233.6%2C116.7%20235.0%2C116.3%20236.4%2C115.9%20237.9%2C115.6%20239.3%2C115.3%20240.7%2C114.9%20242.1%2C114.6%20243.5%2C114.3%20244.9%2C114.0%20246.4%2C113.8%20247.8%2C113.5%20249.2%2C113.3%20250.6%2C113.0%20252.0%2C112.8%20253.5%2C112.6%20254.9%2C112.4%20256.3%2C112.2%20257.7%2C112.0%20259.1%2C111.8%20260.6%2C111.7%20262.0%2C111.5%20263.4%2C111.4%20264.8%2C111.3%20266.2%2C111.1%20267.6%2C111.0%20269.1%2C111.0%20270.5%2C110.9%20271.9%2C110.8%20273.3%2C110.8%20274.7%2C110.7%20276.2%2C110.7%20277.6%2C110.7%20279.0%2C110.7%20280.4%2C110.7%20281.8%2C110.7%20283.3%2C110.7%20284.7%2C110.8%20286.1%2C110.8%20287.5%2C110.9%20288.9%2C111.0%20290.4%2C111.0%20291.8%2C111.1%20293.2%2C111.3%20294.6%2C111.4%20296.0%2C111.5%20297.4%2C111.7%20298.9%2C111.8%20300.3%2C112.0%20301.7%2C112.2%20303.1%2C112.4%20304.5%2C112.6%20306.0%2C112.8%20307.4%2C113.0%20308.8%2C113.3%20310.2%2C113.5%20311.6%2C113.8%20313.1%2C114.0%20314.5%2C114.3%20315.9%2C114.6%20317.3%2C114.9%20318.7%2C115.3%20320.1%2C115.6%20321.6%2C115.9%20323.0%2C116.3%20324.4%2C116.7%20325.8%2C117.0%20327.2%2C117.4%20328.7%2C117.8%20330.1%2C118.3%20331.5%2C118.7%20332.9%2C119.1%20334.3%2C119.6%20335.8%2C120.0%20337.2%2C120.5%20338.6%2C121.0%20340.0%2C121.5%20341.4%2C122.0%20342.8%2C122.5%20344.3%2C123.1%20345.7%2C123.6%20347.1%2C124.2%20348.5%2C124.7%20349.9%2C125.3%20351.4%2C125.9%20352.8%2C126.5%20354.2%2C127.1%20355.6%2C127.8%20357.0%2C128.4%20358.4%2C129.0%20359.9%2C129.7%20361.3%2C130.4%20362.7%2C131.1%20364.1%2C131.8%20365.5%2C132.5%20367.0%2C133.2%20368.4%2C133.9%20369.8%2C134.7%20371.2%2C135.4%20372.6%2C136.2%20374.1%2C137.0%20375.5%2C137.8%20376.9%2C138.6%20378.3%2C139.4%20379.7%2C140.2%20381.1%2C141.0%20382.6%2C141.9%20384.0%2C142.8%20385.4%2C143.6%20386.8%2C144.5%20388.2%2C145.4%20389.7%2C146.3%20391.1%2C147.2%20392.5%2C148.2%20393.9%2C149.1%20395.3%2C150.1%20396.8%2C151.0%20398.2%2C152.0%20399.6%2C153.0%20401.0%2C154.0%20402.4%2C155.0%20403.9%2C156.0%20405.3%2C157.1%20406.7%2C158.1%20408.1%2C159.2%20409.5%2C160.3%20410.9%2C161.3%20412.4%2C162.4%20413.8%2C163.5%20415.2%2C164.7%20416.6%2C165.8%20418.0%2C166.9%20419.5%2C168.1%20420.9%2C169.3%20422.3%2C170.4%20423.7%2C171.6%20425.1%2C172.8%20426.6%2C174.0%20428.0%2C175.3%20429.4%2C176.5%20430.8%2C177.8%20432.2%2C179.0%20433.6%2C180.3%20435.1%2C181.6%20436.5%2C182.9%20437.9%2C184.2%20439.3%2C185.5%20440.7%2C186.8%20442.2%2C188.2%20443.6%2C189.5%20445.0%2C190.9%20446.4%2C192.3%20447.8%2C193.6%20449.2%2C195.0%20450.7%2C196.5%20452.1%2C197.9%20453.5%2C199.3%20454.9%2C200.8%20456.3%2C202.2%20457.8%2C203.7%20459.2%2C205.2%20460.6%2C206.7%20462.0%2C208.2%20463.4%2C209.7%20464.9%2C211.2%20466.3%2C212.8%20467.7%2C214.3%20469.1%2C215.9%20470.5%2C217.5%20471.9%2C219.0%20473.4%2C220.6%20474.8%2C222.3%20476.2%2C223.9%20477.6%2C225.5%20479.0%2C227.2%20480.5%2C228.8%20481.9%2C230.5%20483.3%2C232.2%20484.7%2C233.9%20486.1%2C235.6%20487.6%2C237.3%20489.0%2C239.0%20490.4%2C240.8%20491.8%2C242.5%20493.2%2C244.3%20494.6%2C246.0%20496.1%2C247.8%20497.5%2C249.6%20498.9%2C251.4%20500.3%2C253.3%20501.7%2C255.1%20503.2%2C256.9%20504.6%2C258.8%20506.0%2C260.7%22%20clip-path%3D%22url%28%23clip-4997141%29%22%2F%3E%0A%3Crect%20x%3D%22514%22%20y%3D%2246%22%20width%3D%22106%22%20height%3D%2250%22%20rx%3D%228%22%20fill%3D%22%23f8f6f2%22%20stroke%3D%22%23d9d2c5%22%2F%3E%0A%3Cline%20x1%3D%22520%22%20y1%3D%2264%22%20x2%3D%22538%22%20y2%3D%2264%22%20stroke%3D%22%238B5A2B%22%20stroke-width%3D%222.6%22%2F%3E%3Ctext%20x%3D%22544%22%20y%3D%2268%22%20font-size%3D%2212%22%20font-family%3D%22Georgia%2Cserif%22%20fill%3D%22%232b2b2b%22%3Ef%3C%2Ftext%3E%0A%3Cline%20x1%3D%22520%22%20y1%3D%2282%22%20x2%3D%22538%22%20y2%3D%2282%22%20stroke%3D%22%232F5D50%22%20stroke-width%3D%222.6%22%2F%3E%3Ctext%20x%3D%22544%22%20y%3D%2286%22%20font-size%3D%2212%22%20font-family%3D%22Georgia%2Cserif%22%20fill%3D%22%232b2b2b%22%3Ef%E2%80%B2%3C%2Ftext%3E%0A%3Ctext%20x%3D%22279%22%20y%3D%22388%22%20text-anchor%3D%22middle%22%20font-size%3D%2212%22%20font-family%3D%22Georgia%2Cserif%22%20fill%3D%22%232b2b2b%22%3Ex%3C%2Ftext%3E%0A%3C%2Fsvg%3E`,
@@ -12239,7 +13867,7 @@ Brown is $f$ and green is $f'$ on one shared plane. Consistency checks: turning 
       "Green is zero at some interior point between $1$ and $4$ where brown has a lowest point.",
       "On $(4,5)$, brown is positive, so $f$ is increasing there.",
       "A zero of green always forces a local extremum of $f$."
-    ],
+    ]
     answer_key: [true, true, true, true, false],
     tactical_explanations: [
       `**A.** → True
@@ -12297,11 +13925,10 @@ $$f''=0\\qquad\\nRightarrow\\qquad\\text{local extremum of }f$$
 Local extrema of $f$ need zeros of brown with a sign change
 
 Once that mismatch with the figure is clear, the claim cannot stand. Comparing the assertion with the axes, the statement is False.`
-    ],
+    ]
     difficulty_level: "5/5",
     sort_order: 158,
-    solution_overview:
-      `Read the figure first: name the drawn curve(s), mark zeros and sample heights, then translate signs into monotonicity and turning points.
+    solution_overview: `Read the figure first: name the drawn curve(s), mark zeros and sample heights, then translate signs into monotonicity and turning points.
 
 Brown is $f'$ and green is $f''$. Brown touches the axis at $x=1$ without an ordinary sign change (staying non-positive on both sides in the window) and crosses transversally at $x=4$ from negative to positive. So $f$ has a local minimum at $x=4$, and on $(4,5)$ brown is positive so $f$ is increasing. Between $1$ and $4$, brown has a lowest point aligned with a zero of green. Zeros of $f''$ control extrema of $f'$, not of $f$ — a green zero does not by itself force a local extremum of $f$.`,
     figure: `data:image/svg+xml;utf8,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20viewBox%3D%220%200%20640%20400%22%20width%3D%22640%22%20height%3D%22400%22%20role%3D%22img%22%3E%0A%3Crect%20width%3D%22640%22%20height%3D%22400%22%20rx%3D%2216%22%20fill%3D%22%23faf8f4%22%20stroke%3D%22%23d9d2c5%22%2F%3E%0A%3Ctext%20x%3D%22279%22%20y%3D%2226%22%20text-anchor%3D%22middle%22%20font-size%3D%2214%22%20font-family%3D%22Georgia%2Cserif%22%20fill%3D%22%232b2b2b%22%3Ef%E2%80%B2%20and%20f%E2%80%B3%20on%20the%20same%20axes%3C%2Ftext%3E%0A%3Cdefs%3E%3CclipPath%20id%3D%22clip-3329802%22%3E%3Crect%20x%3D%2252%22%20y%3D%2244%22%20width%3D%22454%22%20height%3D%22300%22%2F%3E%3C%2FclipPath%3E%3C%2Fdefs%3E%0A%3Cline%20x1%3D%2252.0%22%20y1%3D%2244%22%20x2%3D%2252.0%22%20y2%3D%22344%22%20stroke%3D%22%23e8e2d8%22%20stroke-width%3D%221%22%2F%3E%0A%3Cline%20x1%3D%22142.8%22%20y1%3D%2244%22%20x2%3D%22142.8%22%20y2%3D%22344%22%20stroke%3D%22%23e8e2d8%22%20stroke-width%3D%221%22%2F%3E%0A%3Cline%20x1%3D%22233.6%22%20y1%3D%2244%22%20x2%3D%22233.6%22%20y2%3D%22344%22%20stroke%3D%22%23e8e2d8%22%20stroke-width%3D%221%22%2F%3E%0A%3Cline%20x1%3D%22324.4%22%20y1%3D%2244%22%20x2%3D%22324.4%22%20y2%3D%22344%22%20stroke%3D%22%23e8e2d8%22%20stroke-width%3D%221%22%2F%3E%0A%3Cline%20x1%3D%22415.2%22%20y1%3D%2244%22%20x2%3D%22415.2%22%20y2%3D%22344%22%20stroke%3D%22%23e8e2d8%22%20stroke-width%3D%221%22%2F%3E%0A%3Cline%20x1%3D%22506.0%22%20y1%3D%2244%22%20x2%3D%22506.0%22%20y2%3D%22344%22%20stroke%3D%22%23e8e2d8%22%20stroke-width%3D%221%22%2F%3E%0A%0A%0A%0A%0A%3Cline%20x1%3D%2252%22%20y1%3D%22177.3%22%20x2%3D%22506%22%20y2%3D%22177.3%22%20stroke%3D%22%23c4b8a8%22%20stroke-width%3D%221.3%22%2F%3E%0A%3Cline%20x1%3D%2252%22%20y1%3D%2244%22%20x2%3D%2252%22%20y2%3D%22344%22%20stroke%3D%22%237a7268%22%20stroke-width%3D%221.5%22%2F%3E%0A%3Cline%20x1%3D%2252%22%20y1%3D%22344%22%20x2%3D%22506%22%20y2%3D%22344%22%20stroke%3D%22%237a7268%22%20stroke-width%3D%221.5%22%2F%3E%0A%0A%0A%0A%0A%0A%0A%0A%0A%0A%0A%3Cline%20x1%3D%2252.0%22%20y1%3D%22344.0%22%20x2%3D%2252.0%22%20y2%3D%22350.0%22%20stroke%3D%22%23333%22%2F%3E%3Ctext%20x%3D%2252.0%22%20y%3D%22364.0%22%20text-anchor%3D%22middle%22%20font-size%3D%2211%22%20font-family%3D%22Georgia%2Cserif%22%20fill%3D%22%23333%22%3E0%3C%2Ftext%3E%3Cline%20x1%3D%22233.6%22%20y1%3D%22344.0%22%20x2%3D%22233.6%22%20y2%3D%22350.0%22%20stroke%3D%22%23333%22%2F%3E%3Ctext%20x%3D%22233.6%22%20y%3D%22364.0%22%20text-anchor%3D%22middle%22%20font-size%3D%2211%22%20font-family%3D%22Georgia%2Cserif%22%20fill%3D%22%23333%22%3E2%3C%2Ftext%3E%3Cline%20x1%3D%22415.2%22%20y1%3D%22344.0%22%20x2%3D%22415.2%22%20y2%3D%22350.0%22%20stroke%3D%22%23333%22%2F%3E%3Ctext%20x%3D%22415.2%22%20y%3D%22364.0%22%20text-anchor%3D%22middle%22%20font-size%3D%2211%22%20font-family%3D%22Georgia%2Cserif%22%20fill%3D%22%23333%22%3E4%3C%2Ftext%3E%3Cline%20x1%3D%2252.0%22%20y1%3D%22344.0%22%20x2%3D%22506.0%22%20y2%3D%22344.0%22%20stroke%3D%22%23ddd%22%20stroke-width%3D%221%22%2F%3E%3Cline%20x1%3D%2246.0%22%20y1%3D%22344.0%22%20x2%3D%2252.0%22%20y2%3D%22344.0%22%20stroke%3D%22%23333%22%2F%3E%3Ctext%20x%3D%2242.0%22%20y%3D%22344.0%22%20text-anchor%3D%22end%22%20dominant-baseline%3D%22middle%22%20font-size%3D%2211%22%20font-family%3D%22Georgia%2Cserif%22%20fill%3D%22%23333%22%3E-10%3C%2Ftext%3E%3Cline%20x1%3D%2252.0%22%20y1%3D%22181.4%22%20x2%3D%22506.0%22%20y2%3D%22181.4%22%20stroke%3D%22%23ddd%22%20stroke-width%3D%221%22%2F%3E%3Cline%20x1%3D%2246.0%22%20y1%3D%22181.4%22%20x2%3D%2252.0%22%20y2%3D%22181.4%22%20stroke%3D%22%23333%22%2F%3E%3Ctext%20x%3D%2242.0%22%20y%3D%22181.4%22%20text-anchor%3D%22end%22%20dominant-baseline%3D%22middle%22%20font-size%3D%2211%22%20font-family%3D%22Georgia%2Cserif%22%20fill%3D%22%23333%22%3E0%3C%2Ftext%3E%3Cpolyline%20fill%3D%22none%22%20stroke%3D%22%238B5A2B%22%20stroke-width%3D%222.4%22%20points%3D%2252.0%2C244.0%2053.4%2C241.7%2054.8%2C239.4%2056.3%2C237.2%2057.7%2C235.0%2059.1%2C232.9%2060.5%2C230.8%2061.9%2C228.8%2063.4%2C226.8%2064.8%2C224.8%2066.2%2C222.9%2067.6%2C221.1%2069.0%2C219.3%2070.4%2C217.5%2071.9%2C215.8%2073.3%2C214.1%2074.7%2C212.5%2076.1%2C210.9%2077.5%2C209.4%2079.0%2C207.8%2080.4%2C206.4%2081.8%2C205.0%2083.2%2C203.6%2084.6%2C202.2%2086.0%2C200.9%2087.5%2C199.7%2088.9%2C198.4%2090.3%2C197.3%2091.7%2C196.1%2093.1%2C195.0%2094.6%2C193.9%2096.0%2C192.9%2097.4%2C191.9%2098.8%2C191.0%20100.2%2C190.0%20101.7%2C189.2%20103.1%2C188.3%20104.5%2C187.5%20105.9%2C186.7%20107.3%2C186.0%20108.8%2C185.2%20110.2%2C184.6%20111.6%2C183.9%20113.0%2C183.3%20114.4%2C182.7%20115.8%2C182.2%20117.3%2C181.7%20118.7%2C181.2%20120.1%2C180.7%20121.5%2C180.3%20122.9%2C179.9%20124.4%2C179.5%20125.8%2C179.2%20127.2%2C178.9%20128.6%2C178.6%20130.0%2C178.4%20131.4%2C178.1%20132.9%2C178.0%20134.3%2C177.8%20135.7%2C177.6%20137.1%2C177.5%20138.5%2C177.4%20140.0%2C177.4%20141.4%2C177.3%20142.8%2C177.3%20144.2%2C177.3%20145.6%2C177.4%20147.1%2C177.4%20148.5%2C177.5%20149.9%2C177.6%20151.3%2C177.8%20152.7%2C177.9%20154.2%2C178.1%20155.6%2C178.3%20157.0%2C178.5%20158.4%2C178.7%20159.8%2C179.0%20161.2%2C179.3%20162.7%2C179.6%20164.1%2C179.9%20165.5%2C180.2%20166.9%2C180.5%20168.3%2C180.9%20169.8%2C181.3%20171.2%2C181.7%20172.6%2C182.1%20174.0%2C182.6%20175.4%2C183.0%20176.9%2C183.5%20178.3%2C184.0%20179.7%2C184.5%20181.1%2C185.0%20182.5%2C185.5%20183.9%2C186.0%20185.4%2C186.6%20186.8%2C187.2%20188.2%2C187.8%20189.6%2C188.3%20191.0%2C188.9%20192.5%2C189.6%20193.9%2C190.2%20195.3%2C190.8%20196.7%2C191.5%20198.1%2C192.1%20199.6%2C192.8%20201.0%2C193.5%20202.4%2C194.2%20203.8%2C194.8%20205.2%2C195.6%20206.6%2C196.3%20208.1%2C197.0%20209.5%2C197.7%20210.9%2C198.4%20212.3%2C199.2%20213.7%2C199.9%20215.2%2C200.7%20216.6%2C201.4%20218.0%2C202.2%20219.4%2C202.9%20220.8%2C203.7%20222.2%2C204.4%20223.7%2C205.2%20225.1%2C206.0%20226.5%2C206.8%20227.9%2C207.5%20229.3%2C208.3%20230.8%2C209.1%20232.2%2C209.9%20233.6%2C210.7%20235.0%2C211.4%20236.4%2C212.2%20237.9%2C213.0%20239.3%2C213.8%20240.7%2C214.6%20242.1%2C215.3%20243.5%2C216.1%20244.9%2C216.9%20246.4%2C217.7%20247.8%2C218.4%20249.2%2C219.2%20250.6%2C219.9%20252.0%2C220.7%20253.5%2C221.4%20254.9%2C222.2%20256.3%2C222.9%20257.7%2C223.6%20259.1%2C224.4%20260.6%2C225.1%20262.0%2C225.8%20263.4%2C226.5%20264.8%2C227.2%20266.2%2C227.9%20267.6%2C228.5%20269.1%2C229.2%20270.5%2C229.9%20271.9%2C230.5%20273.3%2C231.1%20274.7%2C231.8%20276.2%2C232.4%20277.6%2C233.0%20279.0%2C233.6%20280.4%2C234.2%20281.8%2C234.7%20283.3%2C235.3%20284.7%2C235.8%20286.1%2C236.4%20287.5%2C236.9%20288.9%2C237.4%20290.4%2C237.8%20291.8%2C238.3%20293.2%2C238.8%20294.6%2C239.2%20296.0%2C239.6%20297.4%2C240.0%20298.9%2C240.4%20300.3%2C240.8%20301.7%2C241.1%20303.1%2C241.5%20304.5%2C241.8%20306.0%2C242.1%20307.4%2C242.4%20308.8%2C242.6%20310.2%2C242.8%20311.6%2C243.1%20313.0%2C243.3%20314.5%2C243.4%20315.9%2C243.6%20317.3%2C243.7%20318.7%2C243.8%20320.1%2C243.9%20321.6%2C244.0%20323.0%2C244.0%20324.4%2C244.0%20325.8%2C244.0%20327.2%2C244.0%20328.7%2C243.9%20330.1%2C243.8%20331.5%2C243.7%20332.9%2C243.5%20334.3%2C243.4%20335.8%2C243.2%20337.2%2C243.0%20338.6%2C242.7%20340.0%2C242.4%20341.4%2C242.1%20342.8%2C241.8%20344.3%2C241.4%20345.7%2C241.0%20347.1%2C240.6%20348.5%2C240.2%20349.9%2C239.7%20351.4%2C239.2%20352.8%2C238.6%20354.2%2C238.0%20355.6%2C237.4%20357.0%2C236.8%20358.5%2C236.1%20359.9%2C235.4%20361.3%2C234.6%20362.7%2C233.8%20364.1%2C233.0%20365.5%2C232.2%20367.0%2C231.3%20368.4%2C230.4%20369.8%2C229.4%20371.2%2C228.4%20372.6%2C227.4%20374.1%2C226.3%20375.5%2C225.2%20376.9%2C224.1%20378.3%2C222.9%20379.7%2C221.7%20381.1%2C220.4%20382.6%2C219.1%20384.0%2C217.8%20385.4%2C216.4%20386.8%2C215.0%20388.2%2C213.5%20389.7%2C212.0%20391.1%2C210.4%20392.5%2C208.8%20393.9%2C207.2%20395.3%2C205.5%20396.8%2C203.8%20398.2%2C202.1%20399.6%2C200.2%20401.0%2C198.4%20402.4%2C196.5%20403.9%2C194.6%20405.3%2C192.6%20406.7%2C190.5%20408.1%2C188.4%20409.5%2C186.3%20410.9%2C184.1%20412.4%2C181.9%20413.8%2C179.7%20415.2%2C177.3%20416.6%2C175.0%20418.0%2C172.5%20419.5%2C170.1%20420.9%2C167.6%20422.3%2C165.0%20423.7%2C162.4%20425.1%2C159.7%20426.5%2C157.0%20428.0%2C154.2%20429.4%2C151.4%20430.8%2C148.5%20432.2%2C145.6%20433.6%2C142.6%20435.1%2C139.6%20436.5%2C136.5%20437.9%2C133.3%20439.3%2C130.1%20440.7%2C126.9%20442.2%2C123.6%20443.6%2C120.2%20445.0%2C116.8%20446.4%2C113.3%20447.8%2C109.7%20449.2%2C106.1%20450.7%2C102.5%20452.1%2C98.8%20453.5%2C95.0%20454.9%2C91.2%20456.3%2C87.3%20457.8%2C83.3%20459.2%2C79.3%20460.6%2C75.2%20462.0%2C71.1%20463.4%2C66.9%20464.9%2C62.7%20466.3%2C58.4%20467.7%2C54.0%20469.1%2C49.5%20470.5%2C45.0%20472.0%2C40.5%20473.4%2C35.8%20474.8%2C31.1%20476.2%2C26.4%20477.6%2C21.5%20479.0%2C16.6%20480.5%2C11.7%20481.9%2C6.6%20483.3%2C1.6%20484.7%2C-3.6%20486.1%2C-8.8%20487.6%2C-14.1%20489.0%2C-19.5%20490.4%2C-24.9%20491.8%2C-30.4%20493.2%2C-36.0%20494.6%2C-41.6%20496.1%2C-47.4%20497.5%2C-53.1%20498.9%2C-59.0%20500.3%2C-64.9%20501.7%2C-70.9%20503.2%2C-77.0%20504.6%2C-83.1%20506.0%2C-89.3%22%20clip-path%3D%22url%28%23clip-3329802%29%22%2F%3E%0A%3Cpolyline%20fill%3D%22none%22%20stroke%3D%22%232F5D50%22%20stroke-width%3D%222.4%22%20points%3D%2252.0%2C27.3%2053.4%2C30.4%2054.8%2C33.5%2056.3%2C36.6%2057.7%2C39.6%2059.1%2C42.7%2060.5%2C45.6%2061.9%2C48.6%2063.4%2C51.6%2064.8%2C54.5%2066.2%2C57.4%2067.6%2C60.2%2069.0%2C63.1%2070.4%2C65.9%2071.9%2C68.7%2073.3%2C71.5%2074.7%2C74.2%2076.1%2C76.9%2077.5%2C79.6%2079.0%2C82.3%2080.4%2C85.0%2081.8%2C87.6%2083.2%2C90.2%2084.6%2C92.8%2086.0%2C95.3%2087.5%2C97.8%2088.9%2C100.3%2090.3%2C102.8%2091.7%2C105.3%2093.1%2C107.7%2094.6%2C110.1%2096.0%2C112.5%2097.4%2C114.8%2098.8%2C117.2%20100.2%2C119.5%20101.7%2C121.8%20103.1%2C124.0%20104.5%2C126.2%20105.9%2C128.5%20107.3%2C130.6%20108.8%2C132.8%20110.2%2C134.9%20111.6%2C137.1%20113.0%2C139.1%20114.4%2C141.2%20115.8%2C143.2%20117.3%2C145.3%20118.7%2C147.2%20120.1%2C149.2%20121.5%2C151.1%20122.9%2C153.1%20124.4%2C155.0%20125.8%2C156.8%20127.2%2C158.7%20128.6%2C160.5%20130.0%2C162.3%20131.4%2C164.1%20132.9%2C165.8%20134.3%2C167.5%20135.7%2C169.2%20137.1%2C170.9%20138.5%2C172.5%20140.0%2C174.2%20141.4%2C175.8%20142.8%2C177.3%20144.2%2C178.9%20145.6%2C180.4%20147.1%2C181.9%20148.5%2C183.4%20149.9%2C184.8%20151.3%2C186.3%20152.7%2C187.7%20154.2%2C189.1%20155.6%2C190.4%20157.0%2C191.7%20158.4%2C193.0%20159.8%2C194.3%20161.2%2C195.6%20162.7%2C196.8%20164.1%2C198.0%20165.5%2C199.2%20166.9%2C200.4%20168.3%2C201.5%20169.8%2C202.6%20171.2%2C203.7%20172.6%2C204.8%20174.0%2C205.8%20175.4%2C206.8%20176.9%2C207.8%20178.3%2C208.8%20179.7%2C209.7%20181.1%2C210.6%20182.5%2C211.5%20183.9%2C212.4%20185.4%2C213.2%20186.8%2C214.0%20188.2%2C214.8%20189.6%2C215.6%20191.0%2C216.3%20192.5%2C217.1%20193.9%2C217.8%20195.3%2C218.4%20196.7%2C219.1%20198.1%2C219.7%20199.6%2C220.3%20201.0%2C220.9%20202.4%2C221.4%20203.8%2C222.0%20205.2%2C222.5%20206.6%2C222.9%20208.1%2C223.4%20209.5%2C223.8%20210.9%2C224.2%20212.3%2C224.6%20213.7%2C224.9%20215.2%2C225.3%20216.6%2C225.6%20218.0%2C225.9%20219.4%2C226.1%20220.8%2C226.3%20222.2%2C226.6%20223.7%2C226.7%20225.1%2C226.9%20226.5%2C227.0%20227.9%2C227.1%20229.3%2C227.2%20230.8%2C227.3%20232.2%2C227.3%20233.6%2C227.3%20235.0%2C227.3%20236.4%2C227.3%20237.9%2C227.2%20239.3%2C227.1%20240.7%2C227.0%20242.1%2C226.9%20243.5%2C226.7%20244.9%2C226.6%20246.4%2C226.3%20247.8%2C226.1%20249.2%2C225.9%20250.6%2C225.6%20252.0%2C225.3%20253.5%2C224.9%20254.9%2C224.6%20256.3%2C224.2%20257.7%2C223.8%20259.1%2C223.4%20260.6%2C222.9%20262.0%2C222.5%20263.4%2C222.0%20264.8%2C221.4%20266.2%2C220.9%20267.6%2C220.3%20269.1%2C219.7%20270.5%2C219.1%20271.9%2C218.4%20273.3%2C217.8%20274.7%2C217.1%20276.2%2C216.3%20277.6%2C215.6%20279.0%2C214.8%20280.4%2C214.0%20281.8%2C213.2%20283.3%2C212.4%20284.7%2C211.5%20286.1%2C210.6%20287.5%2C209.7%20288.9%2C208.8%20290.4%2C207.8%20291.8%2C206.8%20293.2%2C205.8%20294.6%2C204.8%20296.0%2C203.7%20297.4%2C202.6%20298.9%2C201.5%20300.3%2C200.4%20301.7%2C199.2%20303.1%2C198.0%20304.5%2C196.8%20306.0%2C195.6%20307.4%2C194.3%20308.8%2C193.0%20310.2%2C191.7%20311.6%2C190.4%20313.0%2C189.1%20314.5%2C187.7%20315.9%2C186.3%20317.3%2C184.8%20318.7%2C183.4%20320.1%2C181.9%20321.6%2C180.4%20323.0%2C178.9%20324.4%2C177.3%20325.8%2C175.8%20327.2%2C174.2%20328.7%2C172.5%20330.1%2C170.9%20331.5%2C169.2%20332.9%2C167.5%20334.3%2C165.8%20335.8%2C164.1%20337.2%2C162.3%20338.6%2C160.5%20340.0%2C158.7%20341.4%2C156.8%20342.8%2C155.0%20344.3%2C153.1%20345.7%2C151.1%20347.1%2C149.2%20348.5%2C147.2%20349.9%2C145.3%20351.4%2C143.2%20352.8%2C141.2%20354.2%2C139.1%20355.6%2C137.1%20357.0%2C134.9%20358.5%2C132.8%20359.9%2C130.6%20361.3%2C128.5%20362.7%2C126.2%20364.1%2C124.0%20365.5%2C121.8%20367.0%2C119.5%20368.4%2C117.2%20369.8%2C114.8%20371.2%2C112.5%20372.6%2C110.1%20374.1%2C107.7%20375.5%2C105.3%20376.9%2C102.8%20378.3%2C100.3%20379.7%2C97.8%20381.1%2C95.3%20382.6%2C92.8%20384.0%2C90.2%20385.4%2C87.6%20386.8%2C85.0%20388.2%2C82.3%20389.7%2C79.6%20391.1%2C76.9%20392.5%2C74.2%20393.9%2C71.5%20395.3%2C68.7%20396.8%2C65.9%20398.2%2C63.1%20399.6%2C60.2%20401.0%2C57.4%20402.4%2C54.5%20403.9%2C51.6%20405.3%2C48.6%20406.7%2C45.6%20408.1%2C42.7%20409.5%2C39.6%20410.9%2C36.6%20412.4%2C33.5%20413.8%2C30.4%20415.2%2C27.3%20416.6%2C24.2%20418.0%2C21.0%20419.5%2C17.8%20420.9%2C14.6%20422.3%2C11.4%20423.7%2C8.1%20425.1%2C4.9%20426.5%2C1.6%20428.0%2C-1.8%20429.4%2C-5.1%20430.8%2C-8.5%20432.2%2C-11.9%20433.6%2C-15.4%20435.1%2C-18.8%20436.5%2C-22.3%20437.9%2C-25.8%20439.3%2C-29.3%20440.7%2C-32.9%20442.2%2C-36.4%20443.6%2C-40.0%20445.0%2C-43.7%20446.4%2C-47.3%20447.8%2C-51.0%20449.2%2C-54.7%20450.7%2C-58.4%20452.1%2C-62.2%20453.5%2C-65.9%20454.9%2C-69.7%20456.3%2C-73.6%20457.8%2C-77.4%20459.2%2C-81.3%20460.6%2C-85.2%20462.0%2C-89.1%20463.4%2C-93.0%20464.9%2C-97.0%20466.3%2C-101.0%20467.7%2C-105.0%20469.1%2C-109.0%20470.5%2C-113.1%20472.0%2C-117.2%20473.4%2C-121.3%20474.8%2C-125.4%20476.2%2C-129.6%20477.6%2C-133.8%20479.0%2C-138.0%20480.5%2C-142.2%20481.9%2C-146.5%20483.3%2C-150.8%20484.7%2C-155.1%20486.1%2C-159.4%20487.6%2C-163.8%20489.0%2C-168.2%20490.4%2C-172.6%20491.8%2C-177.0%20493.2%2C-181.5%20494.6%2C-185.9%20496.1%2C-190.5%20497.5%2C-195.0%20498.9%2C-199.5%20500.3%2C-204.1%20501.7%2C-208.7%20503.2%2C-213.3%20504.6%2C-218.0%20506.0%2C-222.7%22%20clip-path%3D%22url%28%23clip-3329802%29%22%2F%3E%0A%3Crect%20x%3D%22514%22%20y%3D%2246%22%20width%3D%22106%22%20height%3D%2250%22%20rx%3D%228%22%20fill%3D%22%23f8f6f2%22%20stroke%3D%22%23d9d2c5%22%2F%3E%0A%3Cline%20x1%3D%22520%22%20y1%3D%2264%22%20x2%3D%22538%22%20y2%3D%2264%22%20stroke%3D%22%238B5A2B%22%20stroke-width%3D%222.6%22%2F%3E%3Ctext%20x%3D%22544%22%20y%3D%2268%22%20font-size%3D%2212%22%20font-family%3D%22Georgia%2Cserif%22%20fill%3D%22%232b2b2b%22%3Ef%E2%80%B2%3C%2Ftext%3E%0A%3Cline%20x1%3D%22520%22%20y1%3D%2282%22%20x2%3D%22538%22%20y2%3D%2282%22%20stroke%3D%22%232F5D50%22%20stroke-width%3D%222.6%22%2F%3E%3Ctext%20x%3D%22544%22%20y%3D%2286%22%20font-size%3D%2212%22%20font-family%3D%22Georgia%2Cserif%22%20fill%3D%22%232b2b2b%22%3Ef%E2%80%B3%3C%2Ftext%3E%0A%3Ctext%20x%3D%22279%22%20y%3D%22388%22%20text-anchor%3D%22middle%22%20font-size%3D%2212%22%20font-family%3D%22Georgia%2Cserif%22%20fill%3D%22%232b2b2b%22%3Ex%3C%2Ftext%3E%0A%3C%2Fsvg%3E`,
@@ -12319,7 +13946,7 @@ Brown is $f'$ and green is $f''$. Brown touches the axis at $x=1$ without an ord
       "Late in the window, green stays positive while brown falls below it, so purple becomes negative.",
       "A local profit peak occurs where purple changes from positive to negative.",
       "Because green never crosses the axis, total cost has a local maximum in the window."
-    ],
+    ]
     answer_key: [true, true, true, true, false],
     tactical_explanations: [
       `**A.** → True
@@ -12375,11 +14002,10 @@ $$C'>0\\text{ throughout}\\quad\\Rightarrow\\quad\\text{no local max of }C$$
 A never-zero positive $C'$ rules out a local max of $C$
 
 Once that mismatch with the figure is clear, the claim cannot stand. Comparing the assertion with the axes, the statement is False.`
-    ],
+    ]
     difficulty_level: "5/5",
     sort_order: 159,
-    solution_overview:
-      `Brown is marginal revenue $R'$, green is marginal cost $C'$, and purple is marginal profit $P'=R'-C'$ on one plane. By construction purple is positive precisely where brown lies above green. At $x=2$ brown is near its peak and still above green, so purple is positive there. Late in the window green stays positive while brown falls below it, so purple becomes negative. A local profit peak occurs where purple changes from $+$ to $-$. Green never crossing the axis means $C'>0$ throughout, so total cost keeps rising — there is no local cost maximum from a sign change of $C'$.`,
+    solution_overview: `Brown is marginal revenue $R'$, green is marginal cost $C'$, and purple is marginal profit $P'=R'-C'$ on one plane. By construction purple is positive precisely where brown lies above green. At $x=2$ brown is near its peak and still above green, so purple is positive there. Late in the window green stays positive while brown falls below it, so purple becomes negative. A local profit peak occurs where purple changes from $+$ to $-$. Green never crossing the axis means $C'>0$ throughout, so total cost keeps rising — there is no local cost maximum from a sign change of $C'$.`,
     figure: `data:image/svg+xml;utf8,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20viewBox%3D%220%200%20640%20400%22%20width%3D%22640%22%20height%3D%22400%22%20role%3D%22img%22%3E%0A%3Crect%20width%3D%22640%22%20height%3D%22400%22%20rx%3D%2216%22%20fill%3D%22%23faf8f4%22%20stroke%3D%22%23d9d2c5%22%2F%3E%0A%3Ctext%20x%3D%22279%22%20y%3D%2226%22%20text-anchor%3D%22middle%22%20font-size%3D%2214%22%20font-family%3D%22Georgia%2Cserif%22%20fill%3D%22%232b2b2b%22%3ER%E2%80%B2%2C%20C%E2%80%B2%2C%20and%20P%E2%80%B2%3DR%E2%80%B2%E2%88%92C%E2%80%B2%20on%20one%20plane%3C%2Ftext%3E%0A%3Cdefs%3E%3CclipPath%20id%3D%22clip-6114479%22%3E%3Crect%20x%3D%2252%22%20y%3D%2244%22%20width%3D%22454%22%20height%3D%22300%22%2F%3E%3C%2FclipPath%3E%3C%2Fdefs%3E%0A%3Cline%20x1%3D%2252.0%22%20y1%3D%2244%22%20x2%3D%2252.0%22%20y2%3D%22344%22%20stroke%3D%22%23e8e2d8%22%20stroke-width%3D%221%22%2F%3E%0A%3Cline%20x1%3D%22142.8%22%20y1%3D%2244%22%20x2%3D%22142.8%22%20y2%3D%22344%22%20stroke%3D%22%23e8e2d8%22%20stroke-width%3D%221%22%2F%3E%0A%3Cline%20x1%3D%22233.6%22%20y1%3D%2244%22%20x2%3D%22233.6%22%20y2%3D%22344%22%20stroke%3D%22%23e8e2d8%22%20stroke-width%3D%221%22%2F%3E%0A%3Cline%20x1%3D%22324.4%22%20y1%3D%2244%22%20x2%3D%22324.4%22%20y2%3D%22344%22%20stroke%3D%22%23e8e2d8%22%20stroke-width%3D%221%22%2F%3E%0A%3Cline%20x1%3D%22415.2%22%20y1%3D%2244%22%20x2%3D%22415.2%22%20y2%3D%22344%22%20stroke%3D%22%23e8e2d8%22%20stroke-width%3D%221%22%2F%3E%0A%3Cline%20x1%3D%22506.0%22%20y1%3D%2244%22%20x2%3D%22506.0%22%20y2%3D%22344%22%20stroke%3D%22%23e8e2d8%22%20stroke-width%3D%221%22%2F%3E%0A%0A%0A%0A%0A%3Cline%20x1%3D%2252%22%20y1%3D%22224.0%22%20x2%3D%22506%22%20y2%3D%22224.0%22%20stroke%3D%22%23c4b8a8%22%20stroke-width%3D%221.3%22%2F%3E%0A%3Cline%20x1%3D%2252%22%20y1%3D%2244%22%20x2%3D%2252%22%20y2%3D%22344%22%20stroke%3D%22%237a7268%22%20stroke-width%3D%221.5%22%2F%3E%0A%3Cline%20x1%3D%2252%22%20y1%3D%22344%22%20x2%3D%22506%22%20y2%3D%22344%22%20stroke%3D%22%237a7268%22%20stroke-width%3D%221.5%22%2F%3E%0A%0A%0A%0A%0A%0A%0A%0A%0A%0A%0A%3Cline%20x1%3D%2252.0%22%20y1%3D%22344.0%22%20x2%3D%2252.0%22%20y2%3D%22350.0%22%20stroke%3D%22%23333%22%2F%3E%3Ctext%20x%3D%2252.0%22%20y%3D%22364.0%22%20text-anchor%3D%22middle%22%20font-size%3D%2211%22%20font-family%3D%22Georgia%2Cserif%22%20fill%3D%22%23333%22%3E0%3C%2Ftext%3E%3Cline%20x1%3D%22233.6%22%20y1%3D%22344.0%22%20x2%3D%22233.6%22%20y2%3D%22350.0%22%20stroke%3D%22%23333%22%2F%3E%3Ctext%20x%3D%22233.6%22%20y%3D%22364.0%22%20text-anchor%3D%22middle%22%20font-size%3D%2211%22%20font-family%3D%22Georgia%2Cserif%22%20fill%3D%22%23333%22%3E2%3C%2Ftext%3E%3Cline%20x1%3D%22415.2%22%20y1%3D%22344.0%22%20x2%3D%22415.2%22%20y2%3D%22350.0%22%20stroke%3D%22%23333%22%2F%3E%3Ctext%20x%3D%22415.2%22%20y%3D%22364.0%22%20text-anchor%3D%22middle%22%20font-size%3D%2211%22%20font-family%3D%22Georgia%2Cserif%22%20fill%3D%22%23333%22%3E4%3C%2Ftext%3E%3Cline%20x1%3D%2252.0%22%20y1%3D%22308.0%22%20x2%3D%22506.0%22%20y2%3D%22308.0%22%20stroke%3D%22%23ddd%22%20stroke-width%3D%221%22%2F%3E%3Cline%20x1%3D%2246.0%22%20y1%3D%22308.0%22%20x2%3D%2252.0%22%20y2%3D%22308.0%22%20stroke%3D%22%23333%22%2F%3E%3Ctext%20x%3D%2242.0%22%20y%3D%22308.0%22%20text-anchor%3D%22end%22%20dominant-baseline%3D%22middle%22%20font-size%3D%2211%22%20font-family%3D%22Georgia%2Cserif%22%20fill%3D%22%23333%22%3E-2%3C%2Ftext%3E%3Cline%20x1%3D%2252.0%22%20y1%3D%22228.0%22%20x2%3D%22506.0%22%20y2%3D%22228.0%22%20stroke%3D%22%23ddd%22%20stroke-width%3D%221%22%2F%3E%3Cline%20x1%3D%2246.0%22%20y1%3D%22228.0%22%20x2%3D%2252.0%22%20y2%3D%22228.0%22%20stroke%3D%22%23333%22%2F%3E%3Ctext%20x%3D%2242.0%22%20y%3D%22228.0%22%20text-anchor%3D%22end%22%20dominant-baseline%3D%22middle%22%20font-size%3D%2211%22%20font-family%3D%22Georgia%2Cserif%22%20fill%3D%22%23333%22%3E0%3C%2Ftext%3E%3Cline%20x1%3D%2252.0%22%20y1%3D%22148.0%22%20x2%3D%22506.0%22%20y2%3D%22148.0%22%20stroke%3D%22%23ddd%22%20stroke-width%3D%221%22%2F%3E%3Cline%20x1%3D%2246.0%22%20y1%3D%22148.0%22%20x2%3D%2252.0%22%20y2%3D%22148.0%22%20stroke%3D%22%23333%22%2F%3E%3Ctext%20x%3D%2242.0%22%20y%3D%22148.0%22%20text-anchor%3D%22end%22%20dominant-baseline%3D%22middle%22%20font-size%3D%2211%22%20font-family%3D%22Georgia%2Cserif%22%20fill%3D%22%23333%22%3E2%3C%2Ftext%3E%3Cline%20x1%3D%2252.0%22%20y1%3D%2268.0%22%20x2%3D%22506.0%22%20y2%3D%2268.0%22%20stroke%3D%22%23ddd%22%20stroke-width%3D%221%22%2F%3E%3Cline%20x1%3D%2246.0%22%20y1%3D%2268.0%22%20x2%3D%2252.0%22%20y2%3D%2268.0%22%20stroke%3D%22%23333%22%2F%3E%3Ctext%20x%3D%2242.0%22%20y%3D%2268.0%22%20text-anchor%3D%22end%22%20dominant-baseline%3D%22middle%22%20font-size%3D%2211%22%20font-family%3D%22Georgia%2Cserif%22%20fill%3D%22%23333%22%3E4%3C%2Ftext%3E%3Cpolyline%20fill%3D%22none%22%20stroke%3D%22%238B5A2B%22%20stroke-width%3D%222.4%22%20points%3D%2252.0%2C224.0%2053.4%2C223.5%2054.8%2C223.0%2056.3%2C222.5%2057.7%2C221.9%2059.1%2C221.4%2060.5%2C220.8%2061.9%2C220.3%2063.4%2C219.7%2064.8%2C219.1%2066.2%2C218.5%2067.6%2C217.9%2069.0%2C217.3%2070.4%2C216.7%2071.9%2C216.1%2073.3%2C215.4%2074.7%2C214.8%2076.1%2C214.1%2077.5%2C213.4%2079.0%2C212.7%2080.4%2C212.0%2081.8%2C211.3%2083.2%2C210.6%2084.6%2C209.8%2086.0%2C209.1%2087.5%2C208.3%2088.9%2C207.5%2090.3%2C206.7%2091.7%2C205.9%2093.1%2C205.1%2094.6%2C204.2%2096.0%2C203.3%2097.4%2C202.5%2098.8%2C201.6%20100.2%2C200.7%20101.7%2C199.7%20103.1%2C198.8%20104.5%2C197.8%20105.9%2C196.8%20107.3%2C195.8%20108.8%2C194.8%20110.2%2C193.8%20111.6%2C192.7%20113.0%2C191.6%20114.4%2C190.5%20115.8%2C189.4%20117.3%2C188.3%20118.7%2C187.1%20120.1%2C186.0%20121.5%2C184.8%20122.9%2C183.5%20124.4%2C182.3%20125.8%2C181.0%20127.2%2C179.7%20128.6%2C178.4%20130.0%2C177.1%20131.4%2C175.7%20132.9%2C174.3%20134.3%2C172.9%20135.7%2C171.5%20137.1%2C170.1%20138.5%2C168.6%20140.0%2C167.1%20141.4%2C165.6%20142.8%2C164.0%20144.2%2C162.4%20145.6%2C160.8%20147.1%2C159.2%20148.5%2C157.6%20149.9%2C155.9%20151.3%2C154.2%20152.7%2C152.5%20154.2%2C150.7%20155.6%2C149.0%20157.0%2C147.2%20158.4%2C145.4%20159.8%2C143.5%20161.2%2C141.7%20162.7%2C139.8%20164.1%2C137.9%20165.5%2C136.0%20166.9%2C134.1%20168.3%2C132.1%20169.8%2C130.2%20171.2%2C128.2%20172.6%2C126.2%20174.0%2C124.2%20175.4%2C122.2%20176.9%2C120.2%20178.3%2C118.2%20179.7%2C116.1%20181.1%2C114.1%20182.5%2C112.1%20183.9%2C110.0%20185.4%2C108.0%20186.8%2C106.0%20188.2%2C104.0%20189.6%2C102.0%20191.0%2C100.0%20192.5%2C98.1%20193.9%2C96.1%20195.3%2C94.2%20196.7%2C92.3%20198.1%2C90.5%20199.6%2C88.7%20201.0%2C86.9%20202.4%2C85.1%20203.8%2C83.4%20205.2%2C81.8%20206.6%2C80.2%20208.1%2C78.7%20209.5%2C77.2%20210.9%2C75.8%20212.3%2C74.4%20213.7%2C73.1%20215.2%2C71.9%20216.6%2C70.8%20218.0%2C69.7%20219.4%2C68.8%20220.8%2C67.9%20222.2%2C67.1%20223.7%2C66.4%20225.1%2C65.7%20226.5%2C65.2%20227.9%2C64.8%20229.3%2C64.4%20230.8%2C64.2%20232.2%2C64.0%20233.6%2C64.0%20235.0%2C64.0%20236.4%2C64.2%20237.9%2C64.4%20239.3%2C64.8%20240.7%2C65.2%20242.1%2C65.7%20243.5%2C66.4%20244.9%2C67.1%20246.4%2C67.9%20247.8%2C68.8%20249.2%2C69.7%20250.6%2C70.8%20252.0%2C71.9%20253.5%2C73.1%20254.9%2C74.4%20256.3%2C75.8%20257.7%2C77.2%20259.1%2C78.7%20260.6%2C80.2%20262.0%2C81.8%20263.4%2C83.4%20264.8%2C85.1%20266.2%2C86.9%20267.6%2C88.7%20269.1%2C90.5%20270.5%2C92.3%20271.9%2C94.2%20273.3%2C96.1%20274.7%2C98.1%20276.2%2C100.0%20277.6%2C102.0%20279.0%2C104.0%20280.4%2C106.0%20281.8%2C108.0%20283.3%2C110.0%20284.7%2C112.1%20286.1%2C114.1%20287.5%2C116.1%20288.9%2C118.2%20290.4%2C120.2%20291.8%2C122.2%20293.2%2C124.2%20294.6%2C126.2%20296.0%2C128.2%20297.4%2C130.2%20298.9%2C132.1%20300.3%2C134.1%20301.7%2C136.0%20303.1%2C137.9%20304.5%2C139.8%20306.0%2C141.7%20307.4%2C143.5%20308.8%2C145.4%20310.2%2C147.2%20311.6%2C149.0%20313.0%2C150.7%20314.5%2C152.5%20315.9%2C154.2%20317.3%2C155.9%20318.7%2C157.6%20320.1%2C159.2%20321.6%2C160.8%20323.0%2C162.4%20324.4%2C164.0%20325.8%2C165.6%20327.2%2C167.1%20328.7%2C168.6%20330.1%2C170.1%20331.5%2C171.5%20332.9%2C172.9%20334.3%2C174.3%20335.8%2C175.7%20337.2%2C177.1%20338.6%2C178.4%20340.0%2C179.7%20341.4%2C181.0%20342.8%2C182.3%20344.3%2C183.5%20345.7%2C184.8%20347.1%2C186.0%20348.5%2C187.1%20349.9%2C188.3%20351.4%2C189.4%20352.8%2C190.5%20354.2%2C191.6%20355.6%2C192.7%20357.0%2C193.8%20358.5%2C194.8%20359.9%2C195.8%20361.3%2C196.8%20362.7%2C197.8%20364.1%2C198.8%20365.5%2C199.7%20367.0%2C200.7%20368.4%2C201.6%20369.8%2C202.5%20371.2%2C203.3%20372.6%2C204.2%20374.1%2C205.1%20375.5%2C205.9%20376.9%2C206.7%20378.3%2C207.5%20379.7%2C208.3%20381.1%2C209.1%20382.6%2C209.8%20384.0%2C210.6%20385.4%2C211.3%20386.8%2C212.0%20388.2%2C212.7%20389.7%2C213.4%20391.1%2C214.1%20392.5%2C214.8%20393.9%2C215.4%20395.3%2C216.1%20396.8%2C216.7%20398.2%2C217.3%20399.6%2C217.9%20401.0%2C218.5%20402.4%2C219.1%20403.9%2C219.7%20405.3%2C220.3%20406.7%2C220.8%20408.1%2C221.4%20409.5%2C221.9%20410.9%2C222.5%20412.4%2C223.0%20413.8%2C223.5%20415.2%2C224.0%20416.6%2C224.5%20418.0%2C225.0%20419.5%2C225.5%20420.9%2C225.9%20422.3%2C226.4%20423.7%2C226.9%20425.1%2C227.3%20426.5%2C227.7%20428.0%2C228.2%20429.4%2C228.6%20430.8%2C229.0%20432.2%2C229.4%20433.6%2C229.8%20435.1%2C230.2%20436.5%2C230.6%20437.9%2C231.0%20439.3%2C231.4%20440.7%2C231.8%20442.2%2C232.1%20443.6%2C232.5%20445.0%2C232.8%20446.4%2C233.2%20447.8%2C233.5%20449.2%2C233.9%20450.7%2C234.2%20452.1%2C234.5%20453.5%2C234.9%20454.9%2C235.2%20456.3%2C235.5%20457.8%2C235.8%20459.2%2C236.1%20460.6%2C236.4%20462.0%2C236.7%20463.4%2C237.0%20464.9%2C237.3%20466.3%2C237.6%20467.7%2C237.8%20469.1%2C238.1%20470.5%2C238.4%20472.0%2C238.7%20473.4%2C238.9%20474.8%2C239.2%20476.2%2C239.4%20477.6%2C239.7%20479.0%2C239.9%20480.5%2C240.2%20481.9%2C240.4%20483.3%2C240.6%20484.7%2C240.9%20486.1%2C241.1%20487.6%2C241.3%20489.0%2C241.6%20490.4%2C241.8%20491.8%2C242.0%20493.2%2C242.2%20494.6%2C242.4%20496.1%2C242.6%20497.5%2C242.8%20498.9%2C243.0%20500.3%2C243.2%20501.7%2C243.4%20503.2%2C243.6%20504.6%2C243.8%20506.0%2C244.0%22%20clip-path%3D%22url%28%23clip-6114479%29%22%2F%3E%0A%3Cpolyline%20fill%3D%22none%22%20stroke%3D%22%232F5D50%22%20stroke-width%3D%222.4%22%20points%3D%2252.0%2C204.0%2053.4%2C203.8%2054.8%2C203.6%2056.3%2C203.4%2057.7%2C203.2%2059.1%2C203.1%2060.5%2C202.9%2061.9%2C202.7%2063.4%2C202.5%2064.8%2C202.3%2066.2%2C202.1%2067.6%2C201.9%2069.0%2C201.7%2070.4%2C201.5%2071.9%2C201.3%2073.3%2C201.1%2074.7%2C200.9%2076.1%2C200.7%2077.5%2C200.5%2079.0%2C200.3%2080.4%2C200.1%2081.8%2C199.8%2083.2%2C199.6%2084.6%2C199.4%2086.0%2C199.2%2087.5%2C199.0%2088.9%2C198.8%2090.3%2C198.6%2091.7%2C198.4%2093.1%2C198.2%2094.6%2C197.9%2096.0%2C197.7%2097.4%2C197.5%2098.8%2C197.3%20100.2%2C197.1%20101.7%2C196.8%20103.1%2C196.6%20104.5%2C196.4%20105.9%2C196.2%20107.3%2C195.9%20108.8%2C195.7%20110.2%2C195.5%20111.6%2C195.3%20113.0%2C195.0%20114.4%2C194.8%20115.8%2C194.6%20117.3%2C194.3%20118.7%2C194.1%20120.1%2C193.9%20121.5%2C193.6%20122.9%2C193.4%20124.4%2C193.2%20125.8%2C192.9%20127.2%2C192.7%20128.6%2C192.5%20130.0%2C192.2%20131.4%2C192.0%20132.9%2C191.7%20134.3%2C191.5%20135.7%2C191.2%20137.1%2C191.0%20138.5%2C190.7%20140.0%2C190.5%20141.4%2C190.2%20142.8%2C190.0%20144.2%2C189.7%20145.6%2C189.5%20147.1%2C189.2%20148.5%2C189.0%20149.9%2C188.7%20151.3%2C188.5%20152.7%2C188.2%20154.2%2C188.0%20155.6%2C187.7%20157.0%2C187.5%20158.4%2C187.2%20159.8%2C186.9%20161.2%2C186.7%20162.7%2C186.4%20164.1%2C186.1%20165.5%2C185.9%20166.9%2C185.6%20168.3%2C185.3%20169.8%2C185.1%20171.2%2C184.8%20172.6%2C184.5%20174.0%2C184.3%20175.4%2C184.0%20176.9%2C183.7%20178.3%2C183.4%20179.7%2C183.2%20181.1%2C182.9%20182.5%2C182.6%20183.9%2C182.3%20185.4%2C182.1%20186.8%2C181.8%20188.2%2C181.5%20189.6%2C181.2%20191.0%2C180.9%20192.5%2C180.7%20193.9%2C180.4%20195.3%2C180.1%20196.7%2C179.8%20198.1%2C179.5%20199.6%2C179.2%20201.0%2C178.9%20202.4%2C178.6%20203.8%2C178.3%20205.2%2C178.1%20206.6%2C177.8%20208.1%2C177.5%20209.5%2C177.2%20210.9%2C176.9%20212.3%2C176.6%20213.7%2C176.3%20215.2%2C176.0%20216.6%2C175.7%20218.0%2C175.4%20219.4%2C175.1%20220.8%2C174.8%20222.2%2C174.5%20223.7%2C174.2%20225.1%2C173.9%20226.5%2C173.6%20227.9%2C173.2%20229.3%2C172.9%20230.8%2C172.6%20232.2%2C172.3%20233.6%2C172.0%20235.0%2C171.7%20236.4%2C171.4%20237.9%2C171.1%20239.3%2C170.7%20240.7%2C170.4%20242.1%2C170.1%20243.5%2C169.8%20244.9%2C169.5%20246.4%2C169.1%20247.8%2C168.8%20249.2%2C168.5%20250.6%2C168.2%20252.0%2C167.9%20253.5%2C167.5%20254.9%2C167.2%20256.3%2C166.9%20257.7%2C166.5%20259.1%2C166.2%20260.6%2C165.9%20262.0%2C165.6%20263.4%2C165.2%20264.8%2C164.9%20266.2%2C164.6%20267.6%2C164.2%20269.1%2C163.9%20270.5%2C163.5%20271.9%2C163.2%20273.3%2C162.9%20274.7%2C162.5%20276.2%2C162.2%20277.6%2C161.8%20279.0%2C161.5%20280.4%2C161.2%20281.8%2C160.8%20283.3%2C160.5%20284.7%2C160.1%20286.1%2C159.8%20287.5%2C159.4%20288.9%2C159.1%20290.4%2C158.7%20291.8%2C158.4%20293.2%2C158.0%20294.6%2C157.7%20296.0%2C157.3%20297.4%2C156.9%20298.9%2C156.6%20300.3%2C156.2%20301.7%2C155.9%20303.1%2C155.5%20304.5%2C155.2%20306.0%2C154.8%20307.4%2C154.4%20308.8%2C154.1%20310.2%2C153.7%20311.6%2C153.3%20313.0%2C153.0%20314.5%2C152.6%20315.9%2C152.2%20317.3%2C151.9%20318.7%2C151.5%20320.1%2C151.1%20321.6%2C150.7%20323.0%2C150.4%20324.4%2C150.0%20325.8%2C149.6%20327.2%2C149.2%20328.7%2C148.9%20330.1%2C148.5%20331.5%2C148.1%20332.9%2C147.7%20334.3%2C147.4%20335.8%2C147.0%20337.2%2C146.6%20338.6%2C146.2%20340.0%2C145.8%20341.4%2C145.4%20342.8%2C145.0%20344.3%2C144.7%20345.7%2C144.3%20347.1%2C143.9%20348.5%2C143.5%20349.9%2C143.1%20351.4%2C142.7%20352.8%2C142.3%20354.2%2C141.9%20355.6%2C141.5%20357.0%2C141.1%20358.5%2C140.7%20359.9%2C140.3%20361.3%2C139.9%20362.7%2C139.5%20364.1%2C139.1%20365.5%2C138.7%20367.0%2C138.3%20368.4%2C137.9%20369.8%2C137.5%20371.2%2C137.1%20372.6%2C136.7%20374.1%2C136.3%20375.5%2C135.9%20376.9%2C135.5%20378.3%2C135.0%20379.7%2C134.6%20381.1%2C134.2%20382.6%2C133.8%20384.0%2C133.4%20385.4%2C133.0%20386.8%2C132.6%20388.2%2C132.1%20389.7%2C131.7%20391.1%2C131.3%20392.5%2C130.9%20393.9%2C130.5%20395.3%2C130.0%20396.8%2C129.6%20398.2%2C129.2%20399.6%2C128.8%20401.0%2C128.3%20402.4%2C127.9%20403.9%2C127.5%20405.3%2C127.0%20406.7%2C126.6%20408.1%2C126.2%20409.5%2C125.7%20410.9%2C125.3%20412.4%2C124.9%20413.8%2C124.4%20415.2%2C124.0%20416.6%2C123.6%20418.0%2C123.1%20419.5%2C122.7%20420.9%2C122.2%20422.3%2C121.8%20423.7%2C121.4%20425.1%2C120.9%20426.5%2C120.5%20428.0%2C120.0%20429.4%2C119.6%20430.8%2C119.1%20432.2%2C118.7%20433.6%2C118.2%20435.1%2C117.8%20436.5%2C117.3%20437.9%2C116.9%20439.3%2C116.4%20440.7%2C116.0%20442.2%2C115.5%20443.6%2C115.1%20445.0%2C114.6%20446.4%2C114.1%20447.8%2C113.7%20449.2%2C113.2%20450.7%2C112.8%20452.1%2C112.3%20453.5%2C111.8%20454.9%2C111.4%20456.3%2C110.9%20457.8%2C110.4%20459.2%2C110.0%20460.6%2C109.5%20462.0%2C109.0%20463.4%2C108.6%20464.9%2C108.1%20466.3%2C107.6%20467.7%2C107.1%20469.1%2C106.7%20470.5%2C106.2%20472.0%2C105.7%20473.4%2C105.2%20474.8%2C104.8%20476.2%2C104.3%20477.6%2C103.8%20479.0%2C103.3%20480.5%2C102.8%20481.9%2C102.4%20483.3%2C101.9%20484.7%2C101.4%20486.1%2C100.9%20487.6%2C100.4%20489.0%2C99.9%20490.4%2C99.4%20491.8%2C99.0%20493.2%2C98.5%20494.6%2C98.0%20496.1%2C97.5%20497.5%2C97.0%20498.9%2C96.5%20500.3%2C96.0%20501.7%2C95.5%20503.2%2C95.0%20504.6%2C94.5%20506.0%2C94.0%22%20clip-path%3D%22url%28%23clip-6114479%29%22%2F%3E%0A%3Cpolyline%20fill%3D%22none%22%20stroke%3D%22%236B3FA0%22%20stroke-width%3D%222.4%22%20points%3D%2252.0%2C244.0%2053.4%2C243.7%2054.8%2C243.4%2056.3%2C243.0%2057.7%2C242.7%2059.1%2C242.3%2060.5%2C242.0%2061.9%2C241.6%2063.4%2C241.2%2064.8%2C240.9%2066.2%2C240.5%2067.6%2C240.1%2069.0%2C239.6%2070.4%2C239.2%2071.9%2C238.8%2073.3%2C238.3%2074.7%2C237.9%2076.1%2C237.4%2077.5%2C237.0%2079.0%2C236.5%2080.4%2C236.0%2081.8%2C235.5%2083.2%2C234.9%2084.6%2C234.4%2086.0%2C233.8%2087.5%2C233.3%2088.9%2C232.7%2090.3%2C232.1%2091.7%2C231.5%2093.1%2C230.9%2094.6%2C230.3%2096.0%2C229.6%2097.4%2C229.0%2098.8%2C228.3%20100.2%2C227.6%20101.7%2C226.9%20103.1%2C226.2%20104.5%2C225.4%20105.9%2C224.7%20107.3%2C223.9%20108.8%2C223.1%20110.2%2C222.3%20111.6%2C221.5%20113.0%2C220.6%20114.4%2C219.7%20115.8%2C218.9%20117.3%2C217.9%20118.7%2C217.0%20120.1%2C216.1%20121.5%2C215.1%20122.9%2C214.1%20124.4%2C213.1%20125.8%2C212.1%20127.2%2C211.0%20128.6%2C210.0%20130.0%2C208.9%20131.4%2C207.8%20132.9%2C206.6%20134.3%2C205.5%20135.7%2C204.3%20137.1%2C203.1%20138.5%2C201.8%20140.0%2C200.6%20141.4%2C199.3%20142.8%2C198.0%20144.2%2C196.7%20145.6%2C195.3%20147.1%2C194.0%20148.5%2C192.6%20149.9%2C191.1%20151.3%2C189.7%20152.7%2C188.2%20154.2%2C186.8%20155.6%2C185.2%20157.0%2C183.7%20158.4%2C182.2%20159.8%2C180.6%20161.2%2C179.0%20162.7%2C177.4%20164.1%2C175.8%20165.5%2C174.1%20166.9%2C172.5%20168.3%2C170.8%20169.8%2C169.1%20171.2%2C167.4%20172.6%2C165.7%20174.0%2C163.9%20175.4%2C162.2%20176.9%2C160.5%20178.3%2C158.7%20179.7%2C157.0%20181.1%2C155.2%20182.5%2C153.5%20183.9%2C151.7%20185.4%2C150.0%20186.8%2C148.2%20188.2%2C146.5%20189.6%2C144.8%20191.0%2C143.1%20192.5%2C141.4%20193.9%2C139.8%20195.3%2C138.1%20196.7%2C136.5%20198.1%2C135.0%20199.6%2C133.4%20201.0%2C131.9%20202.4%2C130.5%20203.8%2C129.1%20205.2%2C127.7%20206.6%2C126.4%20208.1%2C125.2%20209.5%2C124.0%20210.9%2C122.9%20212.3%2C121.8%20213.7%2C120.9%20215.2%2C119.9%20216.6%2C119.1%20218.0%2C118.4%20219.4%2C117.7%20220.8%2C117.1%20222.2%2C116.6%20223.7%2C116.2%20225.1%2C115.9%20226.5%2C115.7%20227.9%2C115.5%20229.3%2C115.5%20230.8%2C115.6%20232.2%2C115.7%20233.6%2C116.0%20235.0%2C116.4%20236.4%2C116.8%20237.9%2C117.4%20239.3%2C118.0%20240.7%2C118.8%20242.1%2C119.6%20243.5%2C120.6%20244.9%2C121.6%20246.4%2C122.7%20247.8%2C123.9%20249.2%2C125.2%20250.6%2C126.6%20252.0%2C128.1%20253.5%2C129.6%20254.9%2C131.2%20256.3%2C132.9%20257.7%2C134.6%20259.1%2C136.4%20260.6%2C138.3%20262.0%2C140.2%20263.4%2C142.2%20264.8%2C144.2%20266.2%2C146.3%20267.6%2C148.4%20269.1%2C150.6%20270.5%2C152.8%20271.9%2C155.0%20273.3%2C157.3%20274.7%2C159.5%20276.2%2C161.8%20277.6%2C164.2%20279.0%2C166.5%20280.4%2C168.9%20281.8%2C171.2%20283.3%2C173.6%20284.7%2C176.0%20286.1%2C178.3%20287.5%2C180.7%20288.9%2C183.1%20290.4%2C185.5%20291.8%2C187.8%20293.2%2C190.2%20294.6%2C192.5%20296.0%2C194.9%20297.4%2C197.2%20298.9%2C199.5%20300.3%2C201.8%20301.7%2C204.1%20303.1%2C206.4%20304.5%2C208.6%20306.0%2C210.9%20307.4%2C213.1%20308.8%2C215.3%20310.2%2C217.5%20311.6%2C219.6%20313.0%2C221.8%20314.5%2C223.9%20315.9%2C226.0%20317.3%2C228.0%20318.7%2C230.1%20320.1%2C232.1%20321.6%2C234.1%20323.0%2C236.1%20324.4%2C238.0%20325.8%2C239.9%20327.2%2C241.8%20328.7%2C243.7%20330.1%2C245.6%20331.5%2C247.4%20332.9%2C249.2%20334.3%2C251.0%20335.8%2C252.8%20337.2%2C254.5%20338.6%2C256.2%20340.0%2C257.9%20341.4%2C259.6%20342.8%2C261.2%20344.3%2C262.9%20345.7%2C264.5%20347.1%2C266.1%20348.5%2C267.6%20349.9%2C269.2%20351.4%2C270.7%20352.8%2C272.2%20354.2%2C273.7%20355.6%2C275.2%20357.0%2C276.7%20358.5%2C278.1%20359.9%2C279.5%20361.3%2C280.9%20362.7%2C282.3%20364.1%2C283.7%20365.5%2C285.0%20367.0%2C286.3%20368.4%2C287.7%20369.8%2C289.0%20371.2%2C290.2%20372.6%2C291.5%20374.1%2C292.8%20375.5%2C294.0%20376.9%2C295.2%20378.3%2C296.5%20379.7%2C297.7%20381.1%2C298.8%20382.6%2C300.0%20384.0%2C301.2%20385.4%2C302.3%20386.8%2C303.5%20388.2%2C304.6%20389.7%2C305.7%20391.1%2C306.8%20392.5%2C307.9%20393.9%2C309.0%20395.3%2C310.0%20396.8%2C311.1%20398.2%2C312.1%20399.6%2C313.2%20401.0%2C314.2%20402.4%2C315.2%20403.9%2C316.2%20405.3%2C317.2%20406.7%2C318.2%20408.1%2C319.2%20409.5%2C320.2%20410.9%2C321.2%20412.4%2C322.1%20413.8%2C323.1%20415.2%2C324.0%20416.6%2C324.9%20418.0%2C325.9%20419.5%2C326.8%20420.9%2C327.7%20422.3%2C328.6%20423.7%2C329.5%20425.1%2C330.4%20426.5%2C331.3%20428.0%2C332.1%20429.4%2C333.0%20430.8%2C333.9%20432.2%2C334.7%20433.6%2C335.6%20435.1%2C336.5%20436.5%2C337.3%20437.9%2C338.1%20439.3%2C339.0%20440.7%2C339.8%20442.2%2C340.6%20443.6%2C341.4%20445.0%2C342.3%20446.4%2C343.1%20447.8%2C343.9%20449.2%2C344.7%20450.7%2C345.5%20452.1%2C346.3%20453.5%2C347.0%20454.9%2C347.8%20456.3%2C348.6%20457.8%2C349.4%20459.2%2C350.1%20460.6%2C350.9%20462.0%2C351.7%20463.4%2C352.4%20464.9%2C353.2%20466.3%2C354.0%20467.7%2C354.7%20469.1%2C355.4%20470.5%2C356.2%20472.0%2C356.9%20473.4%2C357.7%20474.8%2C358.4%20476.2%2C359.1%20477.6%2C359.9%20479.0%2C360.6%20480.5%2C361.3%20481.9%2C362.0%20483.3%2C362.8%20484.7%2C363.5%20486.1%2C364.2%20487.6%2C364.9%20489.0%2C365.6%20490.4%2C366.3%20491.8%2C367.0%20493.2%2C367.7%20494.6%2C368.4%20496.1%2C369.1%20497.5%2C369.8%20498.9%2C370.5%20500.3%2C371.2%20501.7%2C371.9%20503.2%2C372.6%20504.6%2C373.3%20506.0%2C374.0%22%20clip-path%3D%22url%28%23clip-6114479%29%22%2F%3E%0A%3Crect%20x%3D%22514%22%20y%3D%2246%22%20width%3D%22106%22%20height%3D%2268%22%20rx%3D%228%22%20fill%3D%22%23f8f6f2%22%20stroke%3D%22%23d9d2c5%22%2F%3E%0A%3Cline%20x1%3D%22520%22%20y1%3D%2264%22%20x2%3D%22538%22%20y2%3D%2264%22%20stroke%3D%22%238B5A2B%22%20stroke-width%3D%222.6%22%2F%3E%3Ctext%20x%3D%22544%22%20y%3D%2268%22%20font-size%3D%2212%22%20font-family%3D%22Georgia%2Cserif%22%20fill%3D%22%232b2b2b%22%3ER%E2%80%B2%3C%2Ftext%3E%0A%3Cline%20x1%3D%22520%22%20y1%3D%2282%22%20x2%3D%22538%22%20y2%3D%2282%22%20stroke%3D%22%232F5D50%22%20stroke-width%3D%222.6%22%2F%3E%3Ctext%20x%3D%22544%22%20y%3D%2286%22%20font-size%3D%2212%22%20font-family%3D%22Georgia%2Cserif%22%20fill%3D%22%232b2b2b%22%3EC%E2%80%B2%3C%2Ftext%3E%0A%3Cline%20x1%3D%22520%22%20y1%3D%22100%22%20x2%3D%22538%22%20y2%3D%22100%22%20stroke%3D%22%236B3FA0%22%20stroke-width%3D%222.6%22%2F%3E%3Ctext%20x%3D%22544%22%20y%3D%22104%22%20font-size%3D%2212%22%20font-family%3D%22Georgia%2Cserif%22%20fill%3D%22%232b2b2b%22%3EP%E2%80%B2%3C%2Ftext%3E%0A%3Ctext%20x%3D%22279%22%20y%3D%22388%22%20text-anchor%3D%22middle%22%20font-size%3D%2212%22%20font-family%3D%22Georgia%2Cserif%22%20fill%3D%22%232b2b2b%22%3Ex%3C%2Ftext%3E%0A%3C%2Fsvg%3E`,
   },
 {
@@ -12395,7 +14021,7 @@ Once that mismatch with the figure is clear, the claim cannot stand. Comparing t
       "Purple stays above brown by about $1$ everywhere in the window.",
       "At $x=1$, brown is positive, so $f$ is increasing at $x=1$.",
       "Purple touches the axis at $x=3$ without changing sign, so that touch need not give a local extremum of $h$."
-    ],
+    ]
     answer_key: [true, true, true, true, true],
     tactical_explanations: [
       `**A.** → True
@@ -12453,11 +14079,10 @@ $$h'(3)=0\\text{ with no sign change}$$
 Without a genuine sign change, that touch need not give a local extremum of $h$
 
 Putting that figure reading next to the claim, every asserted sign, height, or classification matches what the axes show, so the statement is True.`
-    ],
+    ]
     difficulty_level: "5/5",
     sort_order: 160,
-    solution_overview:
-      `Read the figure first: name the drawn curve(s), mark zeros and sample heights, then translate signs into monotonicity and turning points.
+    solution_overview: `Read the figure first: name the drawn curve(s), mark zeros and sample heights, then translate signs into monotonicity and turning points.
 
 Brown is $f'$, green is $f''$, and purple is another derivative $h'$ on shared axes. Green is zero at $x=3$, under the lowest point of brown. On $(0,3)$ green is negative, so brown is falling. Purple stays above brown by about $1$ everywhere (a parallel lift). At $x=1$ brown is positive, so $f$ is increasing there. Purple touches the axis at $x=3$ without changing sign (non-negative, only touching), so that touch need not give a local extremum of $h$ by the first-derivative test.`,
     figure: `data:image/svg+xml;utf8,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20viewBox%3D%220%200%20640%20400%22%20width%3D%22640%22%20height%3D%22400%22%20role%3D%22img%22%3E%0A%3Crect%20width%3D%22640%22%20height%3D%22400%22%20rx%3D%2216%22%20fill%3D%22%23faf8f4%22%20stroke%3D%22%23d9d2c5%22%2F%3E%0A%3Ctext%20x%3D%22279%22%20y%3D%2226%22%20text-anchor%3D%22middle%22%20font-size%3D%2214%22%20font-family%3D%22Georgia%2Cserif%22%20fill%3D%22%232b2b2b%22%3EThree%20curves%20on%20one%20plane%3C%2Ftext%3E%0A%3Cdefs%3E%3CclipPath%20id%3D%22clip-7058447%22%3E%3Crect%20x%3D%2252%22%20y%3D%2244%22%20width%3D%22454%22%20height%3D%22300%22%2F%3E%3C%2FclipPath%3E%3C%2Fdefs%3E%0A%3Cline%20x1%3D%2252.0%22%20y1%3D%2244%22%20x2%3D%2252.0%22%20y2%3D%22344%22%20stroke%3D%22%23e8e2d8%22%20stroke-width%3D%221%22%2F%3E%0A%3Cline%20x1%3D%22127.7%22%20y1%3D%2244%22%20x2%3D%22127.7%22%20y2%3D%22344%22%20stroke%3D%22%23e8e2d8%22%20stroke-width%3D%221%22%2F%3E%0A%3Cline%20x1%3D%22203.3%22%20y1%3D%2244%22%20x2%3D%22203.3%22%20y2%3D%22344%22%20stroke%3D%22%23e8e2d8%22%20stroke-width%3D%221%22%2F%3E%0A%3Cline%20x1%3D%22279.0%22%20y1%3D%2244%22%20x2%3D%22279.0%22%20y2%3D%22344%22%20stroke%3D%22%23e8e2d8%22%20stroke-width%3D%221%22%2F%3E%0A%3Cline%20x1%3D%22354.7%22%20y1%3D%2244%22%20x2%3D%22354.7%22%20y2%3D%22344%22%20stroke%3D%22%23e8e2d8%22%20stroke-width%3D%221%22%2F%3E%0A%3Cline%20x1%3D%22430.3%22%20y1%3D%2244%22%20x2%3D%22430.3%22%20y2%3D%22344%22%20stroke%3D%22%23e8e2d8%22%20stroke-width%3D%221%22%2F%3E%0A%3Cline%20x1%3D%22506.0%22%20y1%3D%2244%22%20x2%3D%22506.0%22%20y2%3D%22344%22%20stroke%3D%22%23e8e2d8%22%20stroke-width%3D%221%22%2F%3E%0A%0A%0A%0A%0A%0A%3Cline%20x1%3D%2252%22%20y1%3D%22224.0%22%20x2%3D%22506%22%20y2%3D%22224.0%22%20stroke%3D%22%23c4b8a8%22%20stroke-width%3D%221.3%22%2F%3E%0A%3Cline%20x1%3D%2252%22%20y1%3D%2244%22%20x2%3D%2252%22%20y2%3D%22344%22%20stroke%3D%22%237a7268%22%20stroke-width%3D%221.5%22%2F%3E%0A%3Cline%20x1%3D%2252%22%20y1%3D%22344%22%20x2%3D%22506%22%20y2%3D%22344%22%20stroke%3D%22%237a7268%22%20stroke-width%3D%221.5%22%2F%3E%0A%0A%0A%0A%0A%0A%0A%0A%0A%0A%0A%0A%0A%3Cline%20x1%3D%2252.0%22%20y1%3D%22344.0%22%20x2%3D%2252.0%22%20y2%3D%22350.0%22%20stroke%3D%22%23333%22%2F%3E%3Ctext%20x%3D%2252.0%22%20y%3D%22364.0%22%20text-anchor%3D%22middle%22%20font-size%3D%2211%22%20font-family%3D%22Georgia%2Cserif%22%20fill%3D%22%23333%22%3E0%3C%2Ftext%3E%3Cline%20x1%3D%22203.3%22%20y1%3D%22344.0%22%20x2%3D%22203.3%22%20y2%3D%22350.0%22%20stroke%3D%22%23333%22%2F%3E%3Ctext%20x%3D%22203.3%22%20y%3D%22364.0%22%20text-anchor%3D%22middle%22%20font-size%3D%2211%22%20font-family%3D%22Georgia%2Cserif%22%20fill%3D%22%23333%22%3E2%3C%2Ftext%3E%3Cline%20x1%3D%22354.7%22%20y1%3D%22344.0%22%20x2%3D%22354.7%22%20y2%3D%22350.0%22%20stroke%3D%22%23333%22%2F%3E%3Ctext%20x%3D%22354.7%22%20y%3D%22364.0%22%20text-anchor%3D%22middle%22%20font-size%3D%2211%22%20font-family%3D%22Georgia%2Cserif%22%20fill%3D%22%23333%22%3E4%3C%2Ftext%3E%3Cline%20x1%3D%22506.0%22%20y1%3D%22344.0%22%20x2%3D%22506.0%22%20y2%3D%22350.0%22%20stroke%3D%22%23333%22%2F%3E%3Ctext%20x%3D%22506.0%22%20y%3D%22364.0%22%20text-anchor%3D%22middle%22%20font-size%3D%2211%22%20font-family%3D%22Georgia%2Cserif%22%20fill%3D%22%23333%22%3E6%3C%2Ftext%3E%3Cline%20x1%3D%2252.0%22%20y1%3D%22228.0%22%20x2%3D%22506.0%22%20y2%3D%22228.0%22%20stroke%3D%22%23ddd%22%20stroke-width%3D%221%22%2F%3E%3Cline%20x1%3D%2246.0%22%20y1%3D%22228.0%22%20x2%3D%2252.0%22%20y2%3D%22228.0%22%20stroke%3D%22%23333%22%2F%3E%3Ctext%20x%3D%2242.0%22%20y%3D%22228.0%22%20text-anchor%3D%22end%22%20dominant-baseline%3D%22middle%22%20font-size%3D%2211%22%20font-family%3D%22Georgia%2Cserif%22%20fill%3D%22%23333%22%3E0%3C%2Ftext%3E%3Cline%20x1%3D%2252.0%22%20y1%3D%2278.0%22%20x2%3D%22506.0%22%20y2%3D%2278.0%22%20stroke%3D%22%23ddd%22%20stroke-width%3D%221%22%2F%3E%3Cline%20x1%3D%2246.0%22%20y1%3D%2278.0%22%20x2%3D%2252.0%22%20y2%3D%2278.0%22%20stroke%3D%22%23333%22%2F%3E%3Ctext%20x%3D%2242.0%22%20y%3D%2278.0%22%20text-anchor%3D%22end%22%20dominant-baseline%3D%22middle%22%20font-size%3D%2211%22%20font-family%3D%22Georgia%2Cserif%22%20fill%3D%22%23333%22%3E5%3C%2Ftext%3E%3Cpolyline%20fill%3D%22none%22%20stroke%3D%22%238B5A2B%22%20stroke-width%3D%222.4%22%20points%3D%2252.0%2C-16.0%2053.4%2C-12.6%2054.8%2C-9.3%2056.3%2C-6.0%2057.7%2C-2.7%2059.1%2C0.6%2060.5%2C3.9%2061.9%2C7.1%2063.4%2C10.3%2064.8%2C13.5%2066.2%2C16.7%2067.6%2C19.8%2069.0%2C23.0%2070.4%2C26.1%2071.9%2C29.2%2073.3%2C32.3%2074.7%2C35.3%2076.1%2C38.3%2077.5%2C41.3%2079.0%2C44.3%2080.4%2C47.3%2081.8%2C50.2%2083.2%2C53.1%2084.6%2C56.0%2086.0%2C58.9%2087.5%2C61.8%2088.9%2C64.6%2090.3%2C67.4%2091.7%2C70.2%2093.1%2C73.0%2094.6%2C75.8%2096.0%2C78.5%2097.4%2C81.2%2098.8%2C83.9%20100.2%2C86.6%20101.7%2C89.2%20103.1%2C91.8%20104.5%2C94.4%20105.9%2C97.0%20107.3%2C99.6%20108.8%2C102.1%20110.2%2C104.6%20111.6%2C107.1%20113.0%2C109.6%20114.4%2C112.1%20115.8%2C114.5%20117.3%2C116.9%20118.7%2C119.3%20120.1%2C121.7%20121.5%2C124.1%20122.9%2C126.4%20124.4%2C128.7%20125.8%2C131.0%20127.2%2C133.2%20128.6%2C135.5%20130.0%2C137.7%20131.4%2C139.9%20132.9%2C142.1%20134.3%2C144.3%20135.7%2C146.4%20137.1%2C148.5%20138.5%2C150.6%20140.0%2C152.7%20141.4%2C154.8%20142.8%2C156.8%20144.2%2C158.8%20145.6%2C160.8%20147.1%2C162.8%20148.5%2C164.7%20149.9%2C166.7%20151.3%2C168.6%20152.7%2C170.5%20154.2%2C172.3%20155.6%2C174.2%20157.0%2C176.0%20158.4%2C177.8%20159.8%2C179.6%20161.2%2C181.3%20162.7%2C183.1%20164.1%2C184.8%20165.5%2C186.5%20166.9%2C188.2%20168.3%2C189.8%20169.8%2C191.5%20171.2%2C193.1%20172.6%2C194.7%20174.0%2C196.2%20175.4%2C197.8%20176.8%2C199.3%20178.3%2C200.8%20179.7%2C202.3%20181.1%2C203.8%20182.5%2C205.2%20183.9%2C206.7%20185.4%2C208.1%20186.8%2C209.4%20188.2%2C210.8%20189.6%2C212.1%20191.0%2C213.5%20192.5%2C214.8%20193.9%2C216.0%20195.3%2C217.3%20196.7%2C218.5%20198.1%2C219.7%20199.6%2C220.9%20201.0%2C222.1%20202.4%2C223.2%20203.8%2C224.4%20205.2%2C225.5%20206.6%2C226.6%20208.1%2C227.6%20209.5%2C228.7%20210.9%2C229.7%20212.3%2C230.7%20213.7%2C231.7%20215.2%2C232.6%20216.6%2C233.6%20218.0%2C234.5%20219.4%2C235.4%20220.8%2C236.3%20222.2%2C237.1%20223.7%2C238.0%20225.1%2C238.8%20226.5%2C239.6%20227.9%2C240.3%20229.3%2C241.1%20230.8%2C241.8%20232.2%2C242.5%20233.6%2C243.2%20235.0%2C243.9%20236.4%2C244.5%20237.9%2C245.1%20239.3%2C245.7%20240.7%2C246.3%20242.1%2C246.9%20243.5%2C247.4%20244.9%2C247.9%20246.4%2C248.4%20247.8%2C248.9%20249.2%2C249.3%20250.6%2C249.8%20252.0%2C250.2%20253.5%2C250.6%20254.9%2C251.0%20256.3%2C251.3%20257.7%2C251.6%20259.1%2C251.9%20260.6%2C252.2%20262.0%2C252.5%20263.4%2C252.7%20264.8%2C252.9%20266.2%2C253.1%20267.6%2C253.3%20269.1%2C253.5%20270.5%2C253.6%20271.9%2C253.7%20273.3%2C253.8%20274.7%2C253.9%20276.2%2C254.0%20277.6%2C254.0%20279.0%2C254.0%20280.4%2C254.0%20281.8%2C254.0%20283.3%2C253.9%20284.7%2C253.8%20286.1%2C253.7%20287.5%2C253.6%20288.9%2C253.5%20290.4%2C253.3%20291.8%2C253.1%20293.2%2C252.9%20294.6%2C252.7%20296.0%2C252.5%20297.4%2C252.2%20298.9%2C251.9%20300.3%2C251.6%20301.7%2C251.3%20303.1%2C251.0%20304.5%2C250.6%20306.0%2C250.2%20307.4%2C249.8%20308.8%2C249.3%20310.2%2C248.9%20311.6%2C248.4%20313.1%2C247.9%20314.5%2C247.4%20315.9%2C246.9%20317.3%2C246.3%20318.7%2C245.7%20320.1%2C245.1%20321.6%2C244.5%20323.0%2C243.9%20324.4%2C243.2%20325.8%2C242.5%20327.2%2C241.8%20328.7%2C241.1%20330.1%2C240.3%20331.5%2C239.6%20332.9%2C238.8%20334.3%2C238.0%20335.8%2C237.1%20337.2%2C236.3%20338.6%2C235.4%20340.0%2C234.5%20341.4%2C233.6%20342.8%2C232.6%20344.3%2C231.7%20345.7%2C230.7%20347.1%2C229.7%20348.5%2C228.7%20349.9%2C227.6%20351.4%2C226.6%20352.8%2C225.5%20354.2%2C224.4%20355.6%2C223.2%20357.0%2C222.1%20358.4%2C220.9%20359.9%2C219.7%20361.3%2C218.5%20362.7%2C217.3%20364.1%2C216.0%20365.5%2C214.8%20367.0%2C213.5%20368.4%2C212.1%20369.8%2C210.8%20371.2%2C209.4%20372.6%2C208.1%20374.1%2C206.7%20375.5%2C205.2%20376.9%2C203.8%20378.3%2C202.3%20379.7%2C200.8%20381.1%2C199.3%20382.6%2C197.8%20384.0%2C196.2%20385.4%2C194.7%20386.8%2C193.1%20388.2%2C191.5%20389.7%2C189.8%20391.1%2C188.2%20392.5%2C186.5%20393.9%2C184.8%20395.3%2C183.1%20396.8%2C181.3%20398.2%2C179.6%20399.6%2C177.8%20401.0%2C176.0%20402.4%2C174.2%20403.9%2C172.3%20405.3%2C170.5%20406.7%2C168.6%20408.1%2C166.7%20409.5%2C164.7%20410.9%2C162.8%20412.4%2C160.8%20413.8%2C158.8%20415.2%2C156.8%20416.6%2C154.8%20418.0%2C152.7%20419.5%2C150.6%20420.9%2C148.5%20422.3%2C146.4%20423.7%2C144.3%20425.1%2C142.1%20426.6%2C139.9%20428.0%2C137.7%20429.4%2C135.5%20430.8%2C133.2%20432.2%2C131.0%20433.6%2C128.7%20435.1%2C126.4%20436.5%2C124.1%20437.9%2C121.7%20439.3%2C119.3%20440.7%2C116.9%20442.2%2C114.5%20443.6%2C112.1%20445.0%2C109.6%20446.4%2C107.1%20447.8%2C104.6%20449.2%2C102.1%20450.7%2C99.6%20452.1%2C97.0%20453.5%2C94.4%20454.9%2C91.8%20456.3%2C89.2%20457.8%2C86.6%20459.2%2C83.9%20460.6%2C81.2%20462.0%2C78.5%20463.4%2C75.8%20464.9%2C73.0%20466.3%2C70.2%20467.7%2C67.4%20469.1%2C64.6%20470.5%2C61.8%20471.9%2C58.9%20473.4%2C56.0%20474.8%2C53.1%20476.2%2C50.2%20477.6%2C47.3%20479.0%2C44.3%20480.5%2C41.3%20481.9%2C38.3%20483.3%2C35.3%20484.7%2C32.3%20486.1%2C29.2%20487.6%2C26.1%20489.0%2C23.0%20490.4%2C19.8%20491.8%2C16.7%20493.2%2C13.5%20494.6%2C10.3%20496.1%2C7.1%20497.5%2C3.9%20498.9%2C0.6%20500.3%2C-2.7%20501.7%2C-6.0%20503.2%2C-9.3%20504.6%2C-12.6%20506.0%2C-16.0%22%20clip-path%3D%22url%28%23clip-7058447%29%22%2F%3E%0A%3Cpolyline%20fill%3D%22none%22%20stroke%3D%22%232F5D50%22%20stroke-width%3D%222.4%22%20points%3D%2252.0%2C404.0%2053.4%2C402.9%2054.8%2C401.8%2056.3%2C400.6%2057.7%2C399.5%2059.1%2C398.4%2060.5%2C397.2%2061.9%2C396.1%2063.4%2C395.0%2064.8%2C393.9%2066.2%2C392.8%2067.6%2C391.6%2069.0%2C390.5%2070.4%2C389.4%2071.9%2C388.2%2073.3%2C387.1%2074.7%2C386.0%2076.1%2C384.9%2077.5%2C383.7%2079.0%2C382.6%2080.4%2C381.5%2081.8%2C380.4%2083.2%2C379.3%2084.6%2C378.1%2086.0%2C377.0%2087.5%2C375.9%2088.9%2C374.8%2090.3%2C373.6%2091.7%2C372.5%2093.1%2C371.4%2094.6%2C370.2%2096.0%2C369.1%2097.4%2C368.0%2098.8%2C366.9%20100.2%2C365.8%20101.7%2C364.6%20103.1%2C363.5%20104.5%2C362.4%20105.9%2C361.2%20107.3%2C360.1%20108.8%2C359.0%20110.2%2C357.9%20111.6%2C356.8%20113.0%2C355.6%20114.4%2C354.5%20115.8%2C353.4%20117.3%2C352.2%20118.7%2C351.1%20120.1%2C350.0%20121.5%2C348.9%20122.9%2C347.8%20124.4%2C346.6%20125.8%2C345.5%20127.2%2C344.4%20128.6%2C343.2%20130.0%2C342.1%20131.4%2C341.0%20132.9%2C339.9%20134.3%2C338.8%20135.7%2C337.6%20137.1%2C336.5%20138.5%2C335.4%20140.0%2C334.2%20141.4%2C333.1%20142.8%2C332.0%20144.2%2C330.9%20145.6%2C329.8%20147.1%2C328.6%20148.5%2C327.5%20149.9%2C326.4%20151.3%2C325.2%20152.7%2C324.1%20154.2%2C323.0%20155.6%2C321.9%20157.0%2C320.8%20158.4%2C319.6%20159.8%2C318.5%20161.2%2C317.4%20162.7%2C316.2%20164.1%2C315.1%20165.5%2C314.0%20166.9%2C312.9%20168.3%2C311.8%20169.8%2C310.6%20171.2%2C309.5%20172.6%2C308.4%20174.0%2C307.2%20175.4%2C306.1%20176.8%2C305.0%20178.3%2C303.9%20179.7%2C302.8%20181.1%2C301.6%20182.5%2C300.5%20183.9%2C299.4%20185.4%2C298.2%20186.8%2C297.1%20188.2%2C296.0%20189.6%2C294.9%20191.0%2C293.8%20192.5%2C292.6%20193.9%2C291.5%20195.3%2C290.4%20196.7%2C289.2%20198.1%2C288.1%20199.6%2C287.0%20201.0%2C285.9%20202.4%2C284.8%20203.8%2C283.6%20205.2%2C282.5%20206.6%2C281.4%20208.1%2C280.2%20209.5%2C279.1%20210.9%2C278.0%20212.3%2C276.9%20213.7%2C275.8%20215.2%2C274.6%20216.6%2C273.5%20218.0%2C272.4%20219.4%2C271.2%20220.8%2C270.1%20222.2%2C269.0%20223.7%2C267.9%20225.1%2C266.8%20226.5%2C265.6%20227.9%2C264.5%20229.3%2C263.4%20230.8%2C262.2%20232.2%2C261.1%20233.6%2C260.0%20235.0%2C258.9%20236.4%2C257.8%20237.9%2C256.6%20239.3%2C255.5%20240.7%2C254.4%20242.1%2C253.2%20243.5%2C252.1%20244.9%2C251.0%20246.4%2C249.9%20247.8%2C248.8%20249.2%2C247.6%20250.6%2C246.5%20252.0%2C245.4%20253.5%2C244.2%20254.9%2C243.1%20256.3%2C242.0%20257.7%2C240.9%20259.1%2C239.8%20260.6%2C238.6%20262.0%2C237.5%20263.4%2C236.4%20264.8%2C235.2%20266.2%2C234.1%20267.6%2C233.0%20269.1%2C231.9%20270.5%2C230.7%20271.9%2C229.6%20273.3%2C228.5%20274.7%2C227.4%20276.2%2C226.2%20277.6%2C225.1%20279.0%2C224.0%20280.4%2C222.9%20281.8%2C221.8%20283.3%2C220.6%20284.7%2C219.5%20286.1%2C218.4%20287.5%2C217.2%20288.9%2C216.1%20290.4%2C215.0%20291.8%2C213.9%20293.2%2C212.8%20294.6%2C211.6%20296.0%2C210.5%20297.4%2C209.4%20298.9%2C208.2%20300.3%2C207.1%20301.7%2C206.0%20303.1%2C204.9%20304.5%2C203.8%20306.0%2C202.6%20307.4%2C201.5%20308.8%2C200.4%20310.2%2C199.2%20311.6%2C198.1%20313.1%2C197.0%20314.5%2C195.9%20315.9%2C194.8%20317.3%2C193.6%20318.7%2C192.5%20320.1%2C191.4%20321.6%2C190.2%20323.0%2C189.1%20324.4%2C188.0%20325.8%2C186.9%20327.2%2C185.8%20328.7%2C184.6%20330.1%2C183.5%20331.5%2C182.4%20332.9%2C181.2%20334.3%2C180.1%20335.8%2C179.0%20337.2%2C177.9%20338.6%2C176.8%20340.0%2C175.6%20341.4%2C174.5%20342.8%2C173.4%20344.3%2C172.2%20345.7%2C171.1%20347.1%2C170.0%20348.5%2C168.9%20349.9%2C167.8%20351.4%2C166.6%20352.8%2C165.5%20354.2%2C164.4%20355.6%2C163.2%20357.0%2C162.1%20358.4%2C161.0%20359.9%2C159.9%20361.3%2C158.8%20362.7%2C157.6%20364.1%2C156.5%20365.5%2C155.4%20367.0%2C154.2%20368.4%2C153.1%20369.8%2C152.0%20371.2%2C150.9%20372.6%2C149.8%20374.1%2C148.6%20375.5%2C147.5%20376.9%2C146.4%20378.3%2C145.2%20379.7%2C144.1%20381.1%2C143.0%20382.6%2C141.9%20384.0%2C140.8%20385.4%2C139.6%20386.8%2C138.5%20388.2%2C137.4%20389.7%2C136.2%20391.1%2C135.1%20392.5%2C134.0%20393.9%2C132.9%20395.3%2C131.8%20396.8%2C130.6%20398.2%2C129.5%20399.6%2C128.4%20401.0%2C127.3%20402.4%2C126.1%20403.9%2C125.0%20405.3%2C123.9%20406.7%2C122.8%20408.1%2C121.6%20409.5%2C120.5%20410.9%2C119.4%20412.4%2C118.2%20413.8%2C117.1%20415.2%2C116.0%20416.6%2C114.9%20418.0%2C113.7%20419.5%2C112.6%20420.9%2C111.5%20422.3%2C110.4%20423.7%2C109.3%20425.1%2C108.1%20426.6%2C107.0%20428.0%2C105.9%20429.4%2C104.8%20430.8%2C103.6%20432.2%2C102.5%20433.6%2C101.4%20435.1%2C100.2%20436.5%2C99.1%20437.9%2C98.0%20439.3%2C96.9%20440.7%2C95.7%20442.2%2C94.6%20443.6%2C93.5%20445.0%2C92.4%20446.4%2C91.2%20447.8%2C90.1%20449.2%2C89.0%20450.7%2C87.9%20452.1%2C86.8%20453.5%2C85.6%20454.9%2C84.5%20456.3%2C83.4%20457.8%2C82.2%20459.2%2C81.1%20460.6%2C80.0%20462.0%2C78.9%20463.4%2C77.8%20464.9%2C76.6%20466.3%2C75.5%20467.7%2C74.4%20469.1%2C73.2%20470.5%2C72.1%20471.9%2C71.0%20473.4%2C69.9%20474.8%2C68.7%20476.2%2C67.6%20477.6%2C66.5%20479.0%2C65.4%20480.5%2C64.3%20481.9%2C63.1%20483.3%2C62.0%20484.7%2C60.9%20486.1%2C59.8%20487.6%2C58.6%20489.0%2C57.5%20490.4%2C56.4%20491.8%2C55.2%20493.2%2C54.1%20494.6%2C53.0%20496.1%2C51.9%20497.5%2C50.7%20498.9%2C49.6%20500.3%2C48.5%20501.7%2C47.4%20503.2%2C46.2%20504.6%2C45.1%20506.0%2C44.0%22%20clip-path%3D%22url%28%23clip-7058447%29%22%2F%3E%0A%3Cpolyline%20fill%3D%22none%22%20stroke%3D%22%236B3FA0%22%20stroke-width%3D%222.4%22%20points%3D%2252.0%2C-46.0%2053.4%2C-42.6%2054.8%2C-39.3%2056.3%2C-36.0%2057.7%2C-32.7%2059.1%2C-29.4%2060.5%2C-26.1%2061.9%2C-22.9%2063.4%2C-19.7%2064.8%2C-16.5%2066.2%2C-13.3%2067.6%2C-10.2%2069.0%2C-7.0%2070.4%2C-3.9%2071.9%2C-0.8%2073.3%2C2.3%2074.7%2C5.3%2076.1%2C8.3%2077.5%2C11.3%2079.0%2C14.3%2080.4%2C17.3%2081.8%2C20.2%2083.2%2C23.1%2084.6%2C26.0%2086.0%2C28.9%2087.5%2C31.8%2088.9%2C34.6%2090.3%2C37.4%2091.7%2C40.2%2093.1%2C43.0%2094.6%2C45.8%2096.0%2C48.5%2097.4%2C51.2%2098.8%2C53.9%20100.2%2C56.6%20101.7%2C59.2%20103.1%2C61.8%20104.5%2C64.4%20105.9%2C67.0%20107.3%2C69.6%20108.8%2C72.1%20110.2%2C74.6%20111.6%2C77.1%20113.0%2C79.6%20114.4%2C82.1%20115.8%2C84.5%20117.3%2C86.9%20118.7%2C89.3%20120.1%2C91.7%20121.5%2C94.1%20122.9%2C96.4%20124.4%2C98.7%20125.8%2C101.0%20127.2%2C103.2%20128.6%2C105.5%20130.0%2C107.7%20131.4%2C109.9%20132.9%2C112.1%20134.3%2C114.3%20135.7%2C116.4%20137.1%2C118.5%20138.5%2C120.6%20140.0%2C122.7%20141.4%2C124.8%20142.8%2C126.8%20144.2%2C128.8%20145.6%2C130.8%20147.1%2C132.8%20148.5%2C134.7%20149.9%2C136.7%20151.3%2C138.6%20152.7%2C140.5%20154.2%2C142.3%20155.6%2C144.2%20157.0%2C146.0%20158.4%2C147.8%20159.8%2C149.6%20161.2%2C151.3%20162.7%2C153.1%20164.1%2C154.8%20165.5%2C156.5%20166.9%2C158.2%20168.3%2C159.8%20169.8%2C161.5%20171.2%2C163.1%20172.6%2C164.7%20174.0%2C166.2%20175.4%2C167.8%20176.8%2C169.3%20178.3%2C170.8%20179.7%2C172.3%20181.1%2C173.8%20182.5%2C175.2%20183.9%2C176.7%20185.4%2C178.1%20186.8%2C179.4%20188.2%2C180.8%20189.6%2C182.1%20191.0%2C183.5%20192.5%2C184.8%20193.9%2C186.0%20195.3%2C187.3%20196.7%2C188.5%20198.1%2C189.7%20199.6%2C190.9%20201.0%2C192.1%20202.4%2C193.2%20203.8%2C194.4%20205.2%2C195.5%20206.6%2C196.6%20208.1%2C197.6%20209.5%2C198.7%20210.9%2C199.7%20212.3%2C200.7%20213.7%2C201.7%20215.2%2C202.6%20216.6%2C203.6%20218.0%2C204.5%20219.4%2C205.4%20220.8%2C206.3%20222.2%2C207.1%20223.7%2C208.0%20225.1%2C208.8%20226.5%2C209.6%20227.9%2C210.3%20229.3%2C211.1%20230.8%2C211.8%20232.2%2C212.5%20233.6%2C213.2%20235.0%2C213.9%20236.4%2C214.5%20237.9%2C215.1%20239.3%2C215.7%20240.7%2C216.3%20242.1%2C216.9%20243.5%2C217.4%20244.9%2C217.9%20246.4%2C218.4%20247.8%2C218.9%20249.2%2C219.3%20250.6%2C219.8%20252.0%2C220.2%20253.5%2C220.6%20254.9%2C221.0%20256.3%2C221.3%20257.7%2C221.6%20259.1%2C221.9%20260.6%2C222.2%20262.0%2C222.5%20263.4%2C222.7%20264.8%2C222.9%20266.2%2C223.1%20267.6%2C223.3%20269.1%2C223.5%20270.5%2C223.6%20271.9%2C223.7%20273.3%2C223.8%20274.7%2C223.9%20276.2%2C224.0%20277.6%2C224.0%20279.0%2C224.0%20280.4%2C224.0%20281.8%2C224.0%20283.3%2C223.9%20284.7%2C223.8%20286.1%2C223.7%20287.5%2C223.6%20288.9%2C223.5%20290.4%2C223.3%20291.8%2C223.1%20293.2%2C222.9%20294.6%2C222.7%20296.0%2C222.5%20297.4%2C222.2%20298.9%2C221.9%20300.3%2C221.6%20301.7%2C221.3%20303.1%2C221.0%20304.5%2C220.6%20306.0%2C220.2%20307.4%2C219.8%20308.8%2C219.3%20310.2%2C218.9%20311.6%2C218.4%20313.1%2C217.9%20314.5%2C217.4%20315.9%2C216.9%20317.3%2C216.3%20318.7%2C215.7%20320.1%2C215.1%20321.6%2C214.5%20323.0%2C213.9%20324.4%2C213.2%20325.8%2C212.5%20327.2%2C211.8%20328.7%2C211.1%20330.1%2C210.3%20331.5%2C209.6%20332.9%2C208.8%20334.3%2C208.0%20335.8%2C207.1%20337.2%2C206.3%20338.6%2C205.4%20340.0%2C204.5%20341.4%2C203.6%20342.8%2C202.6%20344.3%2C201.7%20345.7%2C200.7%20347.1%2C199.7%20348.5%2C198.7%20349.9%2C197.6%20351.4%2C196.6%20352.8%2C195.5%20354.2%2C194.4%20355.6%2C193.2%20357.0%2C192.1%20358.4%2C190.9%20359.9%2C189.7%20361.3%2C188.5%20362.7%2C187.3%20364.1%2C186.0%20365.5%2C184.8%20367.0%2C183.5%20368.4%2C182.1%20369.8%2C180.8%20371.2%2C179.4%20372.6%2C178.1%20374.1%2C176.7%20375.5%2C175.2%20376.9%2C173.8%20378.3%2C172.3%20379.7%2C170.8%20381.1%2C169.3%20382.6%2C167.8%20384.0%2C166.2%20385.4%2C164.7%20386.8%2C163.1%20388.2%2C161.5%20389.7%2C159.8%20391.1%2C158.2%20392.5%2C156.5%20393.9%2C154.8%20395.3%2C153.1%20396.8%2C151.3%20398.2%2C149.6%20399.6%2C147.8%20401.0%2C146.0%20402.4%2C144.2%20403.9%2C142.3%20405.3%2C140.5%20406.7%2C138.6%20408.1%2C136.7%20409.5%2C134.7%20410.9%2C132.8%20412.4%2C130.8%20413.8%2C128.8%20415.2%2C126.8%20416.6%2C124.8%20418.0%2C122.7%20419.5%2C120.6%20420.9%2C118.5%20422.3%2C116.4%20423.7%2C114.3%20425.1%2C112.1%20426.6%2C109.9%20428.0%2C107.7%20429.4%2C105.5%20430.8%2C103.2%20432.2%2C101.0%20433.6%2C98.7%20435.1%2C96.4%20436.5%2C94.1%20437.9%2C91.7%20439.3%2C89.3%20440.7%2C86.9%20442.2%2C84.5%20443.6%2C82.1%20445.0%2C79.6%20446.4%2C77.1%20447.8%2C74.6%20449.2%2C72.1%20450.7%2C69.6%20452.1%2C67.0%20453.5%2C64.4%20454.9%2C61.8%20456.3%2C59.2%20457.8%2C56.6%20459.2%2C53.9%20460.6%2C51.2%20462.0%2C48.5%20463.4%2C45.8%20464.9%2C43.0%20466.3%2C40.2%20467.7%2C37.4%20469.1%2C34.6%20470.5%2C31.8%20471.9%2C28.9%20473.4%2C26.0%20474.8%2C23.1%20476.2%2C20.2%20477.6%2C17.3%20479.0%2C14.3%20480.5%2C11.3%20481.9%2C8.3%20483.3%2C5.3%20484.7%2C2.3%20486.1%2C-0.8%20487.6%2C-3.9%20489.0%2C-7.0%20490.4%2C-10.2%20491.8%2C-13.3%20493.2%2C-16.5%20494.6%2C-19.7%20496.1%2C-22.9%20497.5%2C-26.1%20498.9%2C-29.4%20500.3%2C-32.7%20501.7%2C-36.0%20503.2%2C-39.3%20504.6%2C-42.6%20506.0%2C-46.0%22%20clip-path%3D%22url%28%23clip-7058447%29%22%2F%3E%0A%3Crect%20x%3D%22514%22%20y%3D%2246%22%20width%3D%22106%22%20height%3D%2268%22%20rx%3D%228%22%20fill%3D%22%23f8f6f2%22%20stroke%3D%22%23d9d2c5%22%2F%3E%0A%3Cline%20x1%3D%22520%22%20y1%3D%2264%22%20x2%3D%22538%22%20y2%3D%2264%22%20stroke%3D%22%238B5A2B%22%20stroke-width%3D%222.6%22%2F%3E%3Ctext%20x%3D%22544%22%20y%3D%2268%22%20font-size%3D%2212%22%20font-family%3D%22Georgia%2Cserif%22%20fill%3D%22%232b2b2b%22%3Ef%E2%80%B2%3C%2Ftext%3E%0A%3Cline%20x1%3D%22520%22%20y1%3D%2282%22%20x2%3D%22538%22%20y2%3D%2282%22%20stroke%3D%22%232F5D50%22%20stroke-width%3D%222.6%22%2F%3E%3Ctext%20x%3D%22544%22%20y%3D%2286%22%20font-size%3D%2212%22%20font-family%3D%22Georgia%2Cserif%22%20fill%3D%22%232b2b2b%22%3Ef%E2%80%B3%3C%2Ftext%3E%0A%3Cline%20x1%3D%22520%22%20y1%3D%22100%22%20x2%3D%22538%22%20y2%3D%22100%22%20stroke%3D%22%236B3FA0%22%20stroke-width%3D%222.6%22%2F%3E%3Ctext%20x%3D%22544%22%20y%3D%22104%22%20font-size%3D%2212%22%20font-family%3D%22Georgia%2Cserif%22%20fill%3D%22%232b2b2b%22%3Eh%E2%80%B2%3C%2Ftext%3E%0A%3Ctext%20x%3D%22279%22%20y%3D%22388%22%20text-anchor%3D%22middle%22%20font-size%3D%2212%22%20font-family%3D%22Georgia%2Cserif%22%20fill%3D%22%232b2b2b%22%3Ex%3C%2Ftext%3E%0A%3C%2Fsvg%3E`,

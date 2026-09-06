@@ -2237,7 +2237,9 @@ $$A\\cdot 5^{-2}=400 \\tag{1}$$
 
 **Part 2: Solve.**
 
-$$A=400\\cdot 25=10000$$
+$$A=400\\cdot 25$$
+
+$$=10000$$
 
 The recovered demand and revenue are
 
@@ -2471,7 +2473,9 @@ $$k\\cdot 16^{-\\frac{1}{2}}=30 \\tag{1}$$
 
 **Part 2: Solve.**
 
-$$k=30\\cdot 4=120$$
+$$k=30\\cdot 4$$
+
+$$=120$$
 
 Then $E=k a^{\\frac{1}{2}}$ and $a^{\\frac{1}{2}}=2 t^{\\frac{1}{4}}$, so the recovered intensity and totals are
 
@@ -3479,7 +3483,9 @@ So the statement is True.`
 
 The run ratio cancels $A$:
 
-$$\\frac{F(16)}{F(4)}=4^{r}=8 \\tag{1}$$
+$$\\frac{F(16)}{F(4)}=4^{r}$$
+
+$$=8 \\tag{1}$$
 
 Either run then fixes $A$:
 
@@ -3815,9 +3821,13 @@ $$f(x)=9 x^{\\frac{2}{3}}, \\qquad g(y)=\\frac{1}{27} y^{\\frac{3}{2}}$$
 
 Composing in either order:
 
-$$g(f(x))=\\frac{1}{27}\\bigl(9 x^{\\frac{2}{3}}\\bigr)^{\\frac{3}{2}}=x$$
+$$g(f(x))=\\frac{1}{27}\\bigl(9 x^{\\frac{2}{3}}\\bigr)^{\\frac{3}{2}}$$
 
-$$f(g(y))=9\\left(\\frac{y^{\\frac{3}{2}}}{27}\\right)^{\\frac{2}{3}}=y$$`,
+$$=x$$
+
+$$f(g(y))=9\\left(\\frac{y^{\\frac{3}{2}}}{27}\\right)^{\\frac{2}{3}}$$
+
+$$=y$$`,
   },
   {
     id: `math-8-36`,
@@ -4787,7 +4797,9 @@ Keep the stated domain in force while you evaluate the model.
 
 Benefit per million of cost is the ratio of the two recovered curves:
 
-$$\\frac{B(x)}{C(x)}=\\frac{18 x^{\\frac{1}{2}}}{\\frac{1}{2} x^{\\frac{3}{2}}}=\\frac{36}{x}$$
+$$\\frac{B(x)}{C(x)}=\\frac{18 x^{\\frac{1}{2}}}{\\frac{1}{2} x^{\\frac{3}{2}}}$$
+
+$$=\\frac{36}{x}$$
 
 That leftover power of $x$ is not constant. At the cost trial, the benefit trial, and the meeting:
 
@@ -6557,7 +6569,9 @@ $$A=5$$
 
 The recovered transport in velocity is $S(v)=5 v^{3}$. Composing with $v(q)=\\frac{q^{0.5}}{2}$ gives
 
-$$S(q)=5\\left(\\frac{q^{0.5}}{2}\\right)^{3}=0.625 q^{1.5}.$$`,
+$$S(q)=5\\left(\\frac{q^{0.5}}{2}\\right)^{3}$$
+
+$$=0.625 q^{1.5}.$$`,
   },
   {
     id: `math-8-60`,
@@ -6789,7 +6803,9 @@ $$A\\cdot 4^{k}=40$$
 
 **Part 2: Solve.**
 
-$$\\frac{135}{40}=\\frac{27}{8}=\\left(\\frac{3}{2}\\right)^{3}$$
+$$\\frac{135}{40}=\\frac{27}{8}$$
+
+$$=\\left(\\frac{3}{2}\\right)^{3}$$
 
 $$\\frac{9}{4}=\\left(\\frac{3}{2}\\right)^{2}$$
 
@@ -6937,15 +6953,21 @@ $$B=A\\cdot 1000^{\\frac{2}{3}}$$
 
 **Part 2: Solve.**
 
-$$8^{\\frac{2}{3}}=(2^{3})^{\\frac{2}{3}}=4$$
+$$8^{\\frac{2}{3}}=(2^{3})^{\\frac{2}{3}}$$
+
+$$=4$$
 
 $$4A=24$$
 
 $$A=6$$
 
-$$1000^{\\frac{2}{3}}=(10^{3})^{\\frac{2}{3}}=100$$
+$$1000^{\\frac{2}{3}}=(10^{3})^{\\frac{2}{3}}$$
 
-$$B=6\\cdot 100=600$$
+$$=100$$
+
+$$B=6\\cdot 100$$
+
+$$=600$$
 
 The recovered laws are
 
@@ -7171,9 +7193,13 @@ $$A\\cdot 256^{\\frac{3}{4}}=512$$
 
 **Part 2: Solve.**
 
-$$256^{\\frac{3}{4}}=(2^{8})^{\\frac{3}{4}}=64$$
+$$256^{\\frac{3}{4}}=(2^{8})^{\\frac{3}{4}}$$
 
-$$A=\\frac{512}{64}=8$$
+$$=64$$
+
+$$A=\\frac{512}{64}$$
+
+$$=8$$
 
 The recovered law is
 
@@ -7525,7 +7551,9 @@ $$A\\cdot 10^{k}=500$$
 
 $$1.2=\\frac{6}{5}$$
 
-$$1.728=\\frac{216}{125}=\\left(\\frac{6}{5}\\right)^{3}$$
+$$1.728=\\frac{216}{125}$$
+
+$$=\\left(\\frac{6}{5}\\right)^{3}$$
 
 $$k=3$$
 
@@ -7763,7 +7791,9 @@ $$25A=50$$
 
 $$A=2$$
 
-$$v(q)=4\\sqrt{2q^{2}}=4\\sqrt{2}\\, q$$
+$$v(q)=4\\sqrt{2q^{2}}$$
+
+$$=4\\sqrt{2}\\, q$$
 
 The recovered laws are
 
@@ -9953,7 +9983,9 @@ $$A\\cdot(0.25)^{\\frac{3}{2}}=2 \\tag{1}$$
 
 **Part 2: Solve.**
 
-$$(0.25)^{\\frac{3}{2}}=\\left(\\frac{1}{4}\\right)^{\\frac{3}{2}}=\\frac{1}{8}$$
+$$(0.25)^{\\frac{3}{2}}=\\left(\\frac{1}{4}\\right)^{\\frac{3}{2}}$$
+
+$$=\\frac{1}{8}$$
 
 so $(1)$ is $\\frac{A}{8}=2$ and $A=16$.
 
@@ -10199,7 +10231,11 @@ $$A\\cdot 9^{\\frac{1}{2}}=6 \\tag{1}$$
 
 From $(1)$, $3A=6$ and $A=2$. The recovered mass flow is $m(t)=2t^{\\frac{1}{2}}$. Substituting into the index:
 
-$$P\\bigl(m(t)\\bigr)=\\frac{\\bigl(2t^{\\frac{1}{2}}\\bigr)^{4}}{16}=\\frac{16t^{2}}{16}=t^{2}$$
+$$P\\bigl(m(t)\\bigr)=\\frac{\\bigl(2t^{\\frac{1}{2}}\\bigr)^{4}}{16}$$
+
+$$=\\frac{16t^{2}}{16}$$
+
+$$=t^{2}$$
 
 **Answer.** $A=2$ | $m(t)=2t^{\\frac{1}{2}}$ | $P\\circ m=t^{2}$`,
   },
