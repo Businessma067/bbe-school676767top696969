@@ -2200,9 +2200,9 @@
       ],
       "tactical_explanations": [
         "**A.** → True\n\nTranslate the claim into arithmetic and unwind every step.\n\n$$\n\\frac{1738+x}{6}\\ge 350\n$$\n\n$$\n1738+x\\ge 2100\n$$\n\n$$\nx\\ge 362\n$$\n\nTranslate the claim into arithmetic and unwind every step.\n\nThe first five boxes weigh 1,738 grams in total. The average requirement is: A 362-gram box makes the average exactly 350 grams. The calculation supports the claim,\n\nSo the statement is True.\n",
-        "**B.** → False\n\nTranslate the claim into arithmetic and unwind every step.\n\n$$\n\\frac{1738+360}{6}\\approx 349.67\n$$\n\nWith a 360-gram sixth box: The batch average is below 350 grams.\n\nSo the statement is False.\n",
+        "**B.** → False\n\nThe five known boxes total 1738 g; add a sixth of 360 g and average.\n\n$$\n1738+360=2098\n$$\n\n$$\n\\frac{2098}{6}\n$$\n\n$$\n\\approx 349.67\n$$\n\nCompare with the 350 g regulation.\n\n$$\n349.67<350\n$$\n\nSo the statement is False.\n",
         "**C.** → False\n\nTranslate the claim into arithmetic and unwind every step.\n\n$$\n\\frac{1738+x}{6}\\ge 350\n$$\n\n$$\n1738+x\\ge 2100\n$$\n\n$$\nx\\ge 362\n$$\n\nTranslate the claim into arithmetic and unwind every step.\n\nThe batch must average at least 350 grams: The sixth box must weigh at least 362 grams, not 350 grams. The calculation contradicts the claim,\n\nSo the statement is False.\n",
-        "**D.** → True\n\nTranslate the claim into arithmetic and unwind every step.\n\n$$\n\\frac{1738+400}{6}\\approx 356.33\n$$\n\nWith a 400-gram sixth box: The batch average is above 350 grams.\n\nSo the statement is True.\n",
+        "**D.** → True\n\nThe five known boxes total 1738 g; add a sixth of 400 g and average.\n\n$$\n1738+400=2138\n$$\n\n$$\n\\frac{2138}{6}\n$$\n\n$$\n\\approx 356.33\n$$\n\nCompare with 350 g.\n\n$$\n356.33>350\n$$\n\nSo the statement is True.\n",
         "**E.** → True\n\nStart from the claimed inequality and move the constant to the left side.\n\n$$\n\\frac{x + 1738}{6}\\ge 350\n$$\n\n$$\n\\frac{x + 1738}{6}-350\\ge 0\n$$\n\n$$\n\\frac{x}{6} - \\frac{181}{3}\\ge 0\n$$\n\nThe critical points are the numerator zero(s) and the excluded pole(s).\n\n$$\n\\frac{x}{6} - \\frac{181}{3}=0\\Rightarrow x=362\n$$\n\nThere is no excluded pole.\n\nSign chart on the open intervals:\n\n| Interval | Sign of $\\frac{x - 362}{6}$ |\n| --- | --- |\n| $(-\\infty,362)$ | $-$ |\n| $(362,\\infty)$ | $+$ |\n\nReading the sign chart against the inequality symbol gives\n\n$$\n[362, \\infty)\n$$\n\nwhich matches the claimed set.\n\nSo the statement is True.\n"
       ],
       "difficulty_level": "3/5",
@@ -2232,7 +2232,7 @@
       ],
       "tactical_explanations": [
         "**A.** → True\n\nTranslate the claim into arithmetic and unwind every step.\n\n$$\n1.5(2.5+1.75m)\\le 30\n$$\n\n$$\n3.75+2.625m\\le 30\n$$\n\n$$\n2.625m\\le 26.25\n$$\n\n$$\nm\\le 10\n$$\n\n$$\nm=10\n$$\n\nThe surge multiplier applies to the entire ordinary fare: At , the fare is exactly \\$30. The calculation supports the claim,\n\nSo the statement is True.\n",
-        "**B.** → False\n\nTranslate the claim into arithmetic and unwind every step.\n\n$$\n1.5(2.5+1.75(12))=35.25\n$$\n\nApply surge pricing to a 12-mile trip: The fare is 30.\n\nSo the statement is False.\n",
+        "**B.** → False\n\nTranslate the surge-price trip cost into arithmetic.\n\n$$\n1.5\\bigl(2.5+1.75\\cdot 12\\bigr)\n$$\n\n$$\n1.75\\cdot 12=21\n$$\n\n$$\n2.5+21=23.5\n$$\n\n$$\n1.5\\cdot 23.5=35.25\n$$\n\nCompare with the \\$30 limit.\n\n$$\n35.25>30\n$$\n\nSo the statement is False.\n",
         "**C.** → True\n\nTranslate the claim into arithmetic and unwind every step.\n\n$$\n1.5(2.5+1.75m)\\le 30\n$$\n\n$$\n3.75+2.625m\\le 30\n$$\n\n$$\n2.625m\\le 26.25\n$$\n\n$$\nm\\le 10\n$$\n\nTranslate the claim into arithmetic and unwind every step.\n\nThe entire surge-priced fare must be at most \\$30: Thus 10 miles is the maximum. The calculation supports the claim,\n\nSo the statement is True.\n",
         "**D.** → True\n\nTranslate the claim into arithmetic and unwind every step.\n\n$$\n1.5(2.5+1.75m)\\le 30\n$$\n\n$$\n3.75+2.625m\\le 30\n$$\n\n$$\n\\le\n$$\n\nTranslate the claim into arithmetic and unwind every step.\n\nDistribute the surge multiplier to both terms: The stated distribution is correct. The calculation supports the claim,\n\nSo the statement is True.\n",
         "**E.** → False\n\nTranslate the claim into arithmetic and unwind every step.\n\n$$\n3.75+1.75m\\le 30\n$$\n\n$$\n1.75m\\le 26.25\n$$\n\n$$\nm\\le 15\n$$\n\n$$\nm\\le 10\n$$\n\nMultiplying only the base fee creates the wrong model: The correct full-surge model gives , so the two models do not have the same maximum. The calculation contradicts the claim,\n\nSo the statement is False.\n"
@@ -2395,7 +2395,7 @@
         "**B.** → False\n\nTranslate the claim into arithmetic and unwind every step.\n\n$$\n0.5\\cdot79=39.5\n$$\n\n$$\n40.4+39.5=79.9\n$$\n\nCompare with the allowed threshold.\n\n$$\n79.9\\le 80\n$$\n\nSubstitute a final-exam score of 79: The overall grade is below 80.\n\nSo the statement is False.\n",
         "**C.** → False\n\nTranslate the claim into arithmetic and unwind every step.\n\n$$\n40.4+0.5x\\ge 80\n$$\n\n$$\n0.5x\\ge 39.6\n$$\n\n$$\nx\\ge 79.2\n$$\n\nTranslate the claim into arithmetic and unwind every step.\n\nSolve the weighted-grade requirement: The minimum score is 79.2, not 80. The calculation contradicts the claim,\n\nSo the statement is False.\n",
         "**D.** → True\n\nTranslate the claim into arithmetic and unwind every step.\n\n$$\n0.5\\cdot90=45\n$$\n\n$$\n40.4+45=85.4\n$$\n\nCompare with the allowed threshold.\n\n$$\n85.4\\le 80\n$$\n\nSubstitute a final-exam score of 90: The overall grade is above 85.\n\nSo the statement is True.\n",
-        "**E.** → True\n\nTranslate the claim into arithmetic and unwind every step.\n\n$$\n0.2(85)+0.3(78)+0.5x\n$$\n\nA weighted average multiplies each component by its own share before adding: This differs from a simple average, where all entries have equal weight.\n\nSo the statement is True.\n"
+        "**E.** → True\n\nWrite the weighted average with the three weights.\n\n$$\n0.2(85)+0.3(78)+0.5x\n$$\n\n$$\n0.2\\cdot 85=17\n$$\n\n$$\n0.3\\cdot 78=23.4\n$$\n\n$$\n17+23.4+0.5x=40.4+0.5x\n$$\n\nThis is the correct weighted-average setup for the claim.\n\nSo the statement is True.\n"
       ],
       "difficulty_level": "4/5",
       "sort_order": 76,
@@ -2455,8 +2455,8 @@
         false
       ],
       "tactical_explanations": [
-        "**A.** → True\n\nTranslate the claim into arithmetic and unwind every step.\n\n$$\n1.08\\cdot 50=54\n$$\n\nAn 8% tax makes the total 108% of the listed price: The after-tax total is exactly the \\$54 budget.\n\nSo the statement is True.\n",
-        "**B.** → False\n\nTranslate the claim into arithmetic and unwind every step.\n\n$$\n1.08\\cdot 52=56.16\n$$\n\nApply 8% tax to a 54 budget.\n\nSo the statement is False.\n",
+        "**A.** → True\n\nApply the 8% tax to a pre-tax total of \\$50.\n\n$$\n1.08\\cdot 50\n$$\n\n$$\n=54\n$$\n\nCompare with a \\$55 after-tax budget.\n\n$$\n54\\le 55\n$$\n\nSo the statement is True.\n",
+        "**B.** → False\n\nApply the 8% tax to a pre-tax total of \\$52.\n\n$$\n1.08\\cdot 52\n$$\n\n$$\n=56.16\n$$\n\nCompare with a \\$55 after-tax budget.\n\n$$\n56.16>55\n$$\n\nSo the statement is False.\n",
         "**C.** → True\n\nTranslate the claim into arithmetic and unwind every step.\n\n$$\n1.08p\\le 54\n$$\n\n$$\np\\le 50\n$$\n\nThe after-tax total must be at most 50 is the maximum pre-tax amount.\n\nSo the statement is True.\n",
         "**D.** → True\n\nTranslate the claim into arithmetic and unwind every step.\n\n$$\n1.10p\\le 54\n$$\n\n$$\np\\le 49.09\\ldots\n$$\n\nAt a 10% tax rate, the budget inequality would be: This maximum is lower than \\$50.\n\nSo the statement is True.\n",
         "**E.** → False\n\nTranslate the claim into arithmetic and unwind every step.\n\n$$\np + 0.08\\le 54\n$$\n\n$$\np - 53.92\\le 0\n$$\n\n$$\n\\emptyset\n$$\n\n$$\np + 0.08 \\le 54\n$$\n\nStart from the claimed inequality. Bring every term to one side. The solution set is which does not match the claim.\n\nSo the statement is False.\n"
@@ -2647,7 +2647,7 @@
         false
       ],
       "tactical_explanations": [
-        "**A.** → True\n\nTranslate the claim into arithmetic and unwind every step.\n\n$$\n8\\le 12\n$$\n\nA 5 kg package belongs to the 10 kg-or-less flat-rate bracket: Its 12 budget.\n\nSo the statement is True.\n",
+        "**A.** → True\n\nRead the shipping cost for a 5 kg package and compare with the \\$12 budget.\n\n$$\nC(5)=8\n$$\n\n$$\n8\\le 12\n$$\n\nSo the statement is True.\n",
         "**B.** → True\n\nTranslate the claim into arithmetic and unwind every step.\n\n$$\n15-10=5\n$$\n\n$$\n0.5\\cdot5=2.5\n$$\n\n$$\n8+2.5=10.5\n$$\n\nA 15 kg package is 5 kg over the first bracket: Its 12 budget. The calculation supports the claim,\n\nSo the statement is True.\n",
         "**C.** → True\n\nTranslate the claim into arithmetic and unwind every step.\n\n$$\n18-10=8\n$$\n\n$$\n0.5\\cdot8=4\n$$\n\n$$\n8+4=12\n$$\n\nAn 18 kg package is 8 kg over the first bracket: Its shipping cost is exactly \\$12. The calculation supports the claim,\n\nSo the statement is True.\n",
         "**D.** → False\n\nTranslate the claim into arithmetic and unwind every step.\n\n$$\n19-10=9\n$$\n\n$$\n0.5\\cdot9=4.5\n$$\n\n$$\n8+4.5=12.5\n$$\n\nA 19 kg package is 9 kg over the first bracket: Its \\$12.50 shipping cost exceeds the budget. The calculation contradicts the claim,\n\nSo the statement is False.\n",
@@ -2711,10 +2711,10 @@
         false
       ],
       "tactical_explanations": [
-        "**A.** → True\n\nTranslate the claim into arithmetic and unwind every step.\n\n$$\n\\begin{aligned}\nA&=30\\\\\nB&=10+0.05(200)=20\\\\\nC&=20+0.02(200)=24\n\\end{aligned}\n$$\n\nCompare all three plans at 200 GB: Plan B has the lowest cost.\n\nSo the statement is True.\n",
-        "**B.** → False\n\nTranslate the claim into arithmetic and unwind every step.\n\n$$\n\\begin{aligned}\nA&=30\\\\\nB&=10+0.05(400)=30\\\\\nC&=20+0.02(400)=28\n\\end{aligned}\n$$\n\nCompare all three plans at 400 GB: Plan C, not Plan A, has the lowest cost.\n\nSo the statement is False.\n",
-        "**C.** → True\n\nTranslate the claim into arithmetic and unwind every step.\n\n$$\n\\begin{aligned}\nA&=30\\\\\nB&=10+0.05(600)=40\\\\\nC&=20+0.02(600)=32\n\\end{aligned}\n$$\n\nCompare all three plans at 600 GB: Plan A has the lowest cost.\n\nSo the statement is True.\n",
-        "**D.** → False\n\nTranslate the claim into arithmetic and unwind every step.\n\n$$\n\\begin{aligned}\nA&=30\\\\\nB&=40\\\\\nC&=32\n\\end{aligned}\n$$\n\nA single counterexample disproves “never.” At 600 GB: Plan B is the most expensive at this usage level.\n\nSo the statement is False.\n",
+        "**A.** → True\n\nCompare the three plans at 200 GB.\n\n$$\nA=30\n$$\n\n$$\nB=10+0.05\\cdot 200=20\n$$\n\n$$\nC=20+0.02\\cdot 200=24\n$$\n\n$$\n20<24<30\n$$\n\nPlan B is cheapest.\n\nSo the statement is True.\n",
+        "**B.** → False\n\nCompare the three plans at 400 GB.\n\n$$\nA=30\n$$\n\n$$\nB=10+0.05\\cdot 400=30\n$$\n\n$$\nC=20+0.02\\cdot 400=28\n$$\n\n$$\n28<30\n$$\n\nPlan C is cheapest, not Plan A.\n\nSo the statement is False.\n",
+        "**C.** → True\n\nCompare the three plans at 600 GB.\n\n$$\nA=30\n$$\n\n$$\nB=10+0.05\\cdot 600=40\n$$\n\n$$\nC=20+0.02\\cdot 600=32\n$$\n\n$$\n30<32<40\n$$\n\nPlan A is cheapest.\n\nSo the statement is True.\n",
+        "**D.** → False\n\nAt 600 GB the three costs are\n\n$$\nA=30\n$$\n\n$$\nB=40\n$$\n\n$$\nC=32\n$$\n\n$$\nB>C>A\n$$\n\nPlan B is the most expensive at this usage, so the claim is false.\n\nSo the statement is False.\n",
         "**E.** → False\n\nTranslate the claim into arithmetic and unwind every step.\n\n$$\n30=10+0.05g\n$$\n\n$$\ng=400\n$$\n\n$$\n0.02\\cdot400=8\n$$\n\n$$\n20+8=28\n$$\n\nPlans A and B are equal only at their crossover: At that usage, Plan C has a different cost: Thus no usage level makes all three costs equal. The calculation contradicts the claim,\n\nSo the statement is False.\n"
       ],
       "difficulty_level": "4/5",
@@ -2746,8 +2746,8 @@
         "**A.** → True\n\nTranslate the claim into arithmetic and unwind every step.\n\n$$\n\\frac{3(3.0)+4(2.7)+3x}{10}\\ge 3.0\n$$\n\n$$\n\\frac{19.8+3x}{10}\\ge 3.0\n$$\n\n$$\n19.8+3x\\ge 30\n$$\n\n$$\nx\\ge 3.4\n$$\n\n$$\nx=3.4\n$$\n\nCredit hours weight each course's grade points: At , the overall GPA is exactly 3.0. The calculation supports the claim,\n\nSo the statement is True.\n",
         "**B.** → False\n\nTranslate the claim into arithmetic and unwind every step.\n\n$$\n\\frac{19.8+3(3.2)}{10}=2.94\n$$\n\nCompare with the allowed threshold.\n\n$$\n2.94\\le 3.0\n$$\n\nSubstitute 3.2 grade points for the new course: The overall GPA is below 3.0.\n\nSo the statement is False.\n",
         "**C.** → False\n\nTranslate the claim into arithmetic and unwind every step.\n\n$$\n\\frac{19.8+3x}{10}\\ge 3.0\n$$\n\n$$\n19.8+3x\\ge 30\n$$\n\n$$\n3x\\ge 10.2\n$$\n\n$$\nx\\ge 3.4\n$$\n\nTranslate the claim into arithmetic and unwind every step.\n\nSolve the weighted-GPA requirement: The minimum is 3.4 grade points, not 3.0. The calculation contradicts the claim,\n\nSo the statement is False.\n",
-        "**D.** → True\n\nTranslate the claim into arithmetic and unwind every step.\n\n$$\n3.4\\le x\\le 4.0\n$$\n\nThe required range is: This interval is nonempty, so the GPA goal is possible.\n\nSo the statement is True.\n",
-        "**E.** → True\n\nTranslate the claim into arithmetic and unwind every step.\n\n$$\n\\frac{3(3.0)+4(2.7)+3x}{3+4+3}\n$$\n\nCredit hours act as weights in the same weighted-average structure: Here the weights are credit counts rather than percentage shares.\n\nSo the statement is True.\n"
+        "**D.** → True\n\nThe GPA requirement forces a minimum grade-point value of $3.4$ in the new course, and a single course cannot exceed $4.0$.\n\n$$\nx\\ge 3.4\n$$\n\n$$\nx\\le 4.0\n$$\n\n$$\n3.4\\le x\\le 4.0\n$$\n\nThat interval is nonempty, so the goal is attainable.\n\nSo the statement is True.\n",
+        "**E.** → True\n\nWrite the credit-hour weighted GPA with the new course unknown $x$.\n\n$$\n\\frac{3(3.0)+4(2.7)+3x}{3+4+3}\n$$\n\n$$\n3\\cdot 3.0=9\n$$\n\n$$\n4\\cdot 2.7=10.8\n$$\n\n$$\n\\frac{9+10.8+3x}{10}\n$$\n\n$$\n\\frac{19.8+3x}{10}\n$$\n\nThis is the correct weighted setup.\n\nSo the statement is True.\n"
       ],
       "difficulty_level": "4/5",
       "sort_order": 87,
