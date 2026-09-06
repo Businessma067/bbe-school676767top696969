@@ -380,25 +380,32 @@ def process_json_range(path: Path, start: int, end: int | None):
     for pos in range(start, end_i):
         idx = order[pos]
         t = tasks[idx]
-        polys = (
-            extract_named_polys(t.get("context") or "", t.get("solution_overview") or "")
-            if bank in ("ch9", "mixed")
-            else {}
-        )
+        try:
+            polys = (
+                extract_named_polys(t.get("context") or "", t.get("solution_overview") or "")
+                if bank in ("ch9", "mixed")
+                else {}
+            )
+        except Exception:
+            polys = {}
         new_expls = []
         task_changed = False
         for i, e in enumerate(t["tactical_explanations"]):
             letter, truth = LETTERS[i], bool(t["answer_key"][i])
-            new = process_explanation(
-                e,
-                letter,
-                truth,
-                t["statements"][i],
-                t.get("context", ""),
-                t.get("tables_markdown"),
-                bank=bank,
-                polys=polys,
-            )
+            try:
+                new = process_explanation(
+                    e,
+                    letter,
+                    truth,
+                    t["statements"][i],
+                    t.get("context", ""),
+                    t.get("tables_markdown"),
+                    bank=bank,
+                    polys=polys,
+                )
+            except Exception as exc:
+                print(f"  ! {t['case_id']} {letter}: deepen failed ({exc}); keeping prior text")
+                new = ensure_header_closer(e, letter, truth)
             if new != e:
                 changed += 1
                 task_changed = True
