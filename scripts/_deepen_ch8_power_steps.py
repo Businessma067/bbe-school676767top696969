@@ -115,7 +115,7 @@ def _pow_eval(expr):
     return s2 if s2!=expr else None
 
 def _cdot_once(expr):
-    m=re.search(r"(?<![A-Za-z{])(\d+)\\cdot(-?\d+)", expr)
+    m=re.search(r"(?<![A-Za-z{])(\d+)\\cdot\s*(-?\d+)", expr)
     if not m: return None
     return expr[:m.start()]+str(int(m.group(1))*int(m.group(2)))+expr[m.end():]
 
@@ -150,10 +150,15 @@ def expand_numeric_eval_chain(text):
                 for s in steps: out.append(("disp", f"{lhs}={s}"))
             else:
                 out.append((kind,val)); i+=1; continue
+        emitted_set={x[1] for x in out[-12:] if x[0]=="disp"}
         j=i+1
         while j<len(parts):
             if parts[j][0]=="prose" and not parts[j][1].strip(): j+=1; continue
-            if parts[j][0]=="disp" and parts[j][1].startswith(lhs+"="): j+=1; continue
+            if parts[j][0]=="disp" and parts[j][1].startswith(lhs+"="):
+                if parts[j][1] in emitted_set:
+                    j+=1; continue
+                # keep a further final value not yet emitted
+                out.append(parts[j]); emitted_set.add(parts[j][1]); j+=1; continue
             break
         i=j
     return reassemble(out)
