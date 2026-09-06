@@ -1,225 +1,255 @@
 # Chapter 4 — Equations
 
-An equation asks when two expressions take the same value. On the BBE mathematics exam, Chapter 4 is not about plugging numbers into a calculator. It is about deciding which technique fits, which values are allowed, how many solutions exist, and whether a proposed root survives a domain check.
+An equation asks when two expressions take the same value. On the BBE mathematics exam, Chapter 4 is less about arithmetic and more about rules: which technique fits, which values are allowed, how many solutions exist, and whether a proposed root survives a domain check.
 
-This chapter starts from linear equations and builds through quadratics, rational / radical / absolute-value equations, and exponential / logarithmic equations. The later mixed sets combine those skills in one True/False stem. The guide follows the live Chapter 4 map (4.1–4.5) and ends with several difficult exam-style tasks worked claim by claim.
+This guide follows the live Chapter 4 map (4.1–4.5). It spends most of its space on the rules themselves. A short closing block then shows how those rules appear in difficult True/False exam tasks.
 
 ## Learning objectives
 
-- Clear linear equations, including those with parameters, and classify unique / none / infinitely many solutions.
-- Solve quadratics by factoring, formula, or substitution, and read root properties from the discriminant and Vieta.
-- Handle rational, radical, and absolute-value equations with the correct domain and extraneous-root checks.
-- Rewrite exponential and logarithmic equations using the same base, substitutions $u=a^{x}$, and log rules only when arguments are positive.
-- Translate word models (fees, work rates, growth) into equations and separate physical roots from algebraic extras.
-- Judge Chapter 4 True/False claims by technique, domain, and solution count, not by arithmetic alone.
+- Reduce a linear equation to $Ax=B$ and classify unique / none / infinitely many solutions, including parameter cases.
+- Use the discriminant and Vieta on quadratics, and recognise degeneration when the leading coefficient vanishes.
+- Apply domain rules and extraneous-root checks for rational, radical, and absolute-value equations.
+- Use same-base rewriting, the substitution $u=a^{x}>0$, and log conversion with argument restrictions.
+- Separate algebraic roots from physical roots in fee, work-rate, and growth stories.
+- Judge True/False claims from the solved picture, not from slogans.
 
 ---
 
 ## 4.1 Linear equations in one unknown
 
-### The standard form
+### What “linear” means here
 
-After clearing brackets and combining like terms, a linear equation in one unknown can be written
+After expanding brackets and combining like terms, a linear equation in one unknown can always be written
 
 $$
-Ax = B,
+Ax=B,
 $$
 
-where $A$ and $B$ do not contain $x$.
+where $A$ and $B$ do not contain $x$. Every allowed move (adding the same quantity to both sides, multiplying both sides by a nonzero constant, clearing a common denominator) is meant to reach this form without changing the solution set, except for values you deliberately exclude because a denominator was zero.
 
-Three cases matter on the exam:
+### The three cases of $Ax=B$
 
-| Condition | Conclusion |
-| --- | --- |
-| $A\neq 0$ | Unique solution $x=\dfrac{B}{A}$. |
-| $A=0$ and $B\neq 0$ | No solution. |
-| $A=0$ and $B=0$ | Identity: every allowed $x$ works (infinitely many solutions). |
+| Condition | Meaning | Exam wording |
+| --- | --- | --- |
+| $A\neq 0$ | Unique solution $x=\dfrac{B}{A}$ | “exactly one solution”, “the unique equilibrium”, … |
+| $A=0$ and $B\neq 0$ | Contradiction: $0=B\neq 0$ | “no solution”, “impossible for every $x$” |
+| $A=0$ and $B=0$ | Identity: $0=0$ for every allowed $x$ | “true for all $x$”, “an identity”, “infinitely many solutions” |
 
-The trap is to call an equation an identity just because a parameter appears. Both $A=0$ and $B=0$ must hold for the same parameter value.
+These three cases are the core linear rule. Almost every parametric True/False claim is asking which of the three boxes you are in.
+
+**Rule.** An equation is an identity only when both $A=0$ and $B=0$ hold at the same time. A parameter appearing in the coefficients is not enough.
 
 ### Clearing fractions
 
-If every term has a denominator, multiply through by a common denominator (often the product of the distinct denominators). Then expand and collect terms. Keep every excluded parameter or excluded $x$ from the original denominators.
+If terms have denominators, multiply every term by a common multiple of those denominators (often their product). That step is allowed only away from the zeros of those denominators.
 
-**Example 1.** Solve $\dfrac{x-1}{2}+\dfrac{x}{3}=4$.
+**Rules when clearing fractions**
 
-Multiply by $6$:
-
-$$
-3(x-1)+2x=24
-\quad\Longrightarrow\quad
-5x-3=24
-\quad\Longrightarrow\quad
-x=\frac{27}{5}.
-$$
+1. List excluded values first: every denominator $\neq 0$.
+2. Multiply the entire equation by the common multiple, not just one side.
+3. Expand and collect into $Ax=B$.
+4. Solve, then reject any candidate that hits an excluded value (this matters more for rational equations in 4.3, but the habit starts here).
 
 ### Parameters
 
-When a coefficient depends on a parameter $a$, solve for $x$ in terms of $a$, then study the expression. Typical claims ask:
+When $A$ or $B$ depends on a parameter $a$, treat $a$ as temporarily fixed and solve for $x$. You obtain either
 
-- for which $a$ the solution is unique;
-- the sign of $x$;
-- whether the equation can become an identity;
-- which $a$ make $x$ an integer.
+- a formula $x=x(a)$ on the set where $A(a)\neq 0$, or
+- a special case $A(a)=0$, which must be classified with the three-case table above.
 
-Always list the excluded values of $a$ first (zeros of denominators, or values that kill the leading coefficient).
+**Rules for parameter claims**
 
-**Example 2.** For $a\neq -1$,
+1. Write the excluded set for $a$ (denominators, and later any value that makes a model undefined).
+2. Form $A(a)$ and $B(a)$ carefully; a sign error here ruins every later claim.
+3. On $\{a:A(a)\neq 0\}$, study $x(a)=\dfrac{B(a)}{A(a)}$: sign charts, integer conditions, inequalities such as $x\geq 0$.
+4. On $\{a:A(a)=0\}$, decide separately whether $B(a)=0$ (identity) or $B(a)\neq 0$ (no solution).
+5. Never merge those two worlds. A claim “for every $a>3$ there is a unique negative $x$” is about the formula branch, not about an identity.
 
-$$
-\frac{ax-6}{a+1}+2=\frac{3x-a}{a+1}.
-$$
-
-Multiply by $a+1$:
-
-$$
-ax-6+2(a+1)=3x-a
-\quad\Longrightarrow\quad
-ax+2a-4=3x-a.
-$$
-
-Collect $x$:
-
-$$
-(a-3)x=-3a+4
-\quad\Longrightarrow\quad
-x=\frac{3a-4}{3-a}\qquad(a\neq 3).
-$$
-
-If $a=3$, the left coefficient of $x$ vanishes and the right side becomes $-9+4=-5\neq 0$, so there is no solution at $a=3$. The equation is never an identity for any allowed $a$.
+**Integer solutions.** If $x(a)$ simplifies to something like $-3+\dfrac{5}{3-a}$, then for integer $a\neq 3$ the value $x$ is integer exactly when $3-a$ divides $5$. That divisor language is a standard exam move.
 
 ### Word models
 
-Fee invoices, mixture, and budget stories usually reduce to one linear equation. Define the unknown clearly, write the balance once, then solve. Reject answers that violate a physical restriction stated in the stem (for example a positive price).
+Fee, budget, and mixture stories are still linear equations. The extra rule is a physical filter: after solving, discard roots that violate an explicit restriction in the stem (positive price, nonnegative quantity, and so on). Algebra may allow a negative root; the story may not.
 
 ---
 
 ## 4.2 Quadratic equations
 
-### Standard form and discriminant
+### Standard form
 
-Write
+A quadratic equation is
 
 $$
-ax^{2}+bx+c=0,\qquad a\neq 0.
+ax^{2}+bx+c=0\qquad\text{with }a\neq 0.
 $$
 
-The discriminant is
+The condition $a\neq 0$ is part of the definition. If a stem writes a formula that looks quadratic but allows $a=0$, you must leave the quadratic theory and fall back to the linear three-case rule.
+
+### Discriminant rule
 
 $$
 \Delta=b^{2}-4ac.
 $$
 
-| $\Delta$ | Real roots |
-| --- | --- |
-| $\Delta>0$ | Two distinct real roots. |
-| $\Delta=0$ | One double real root $x=-\dfrac{b}{2a}$. |
-| $\Delta<0$ | No real roots. |
+| $\Delta$ | Real roots | How to think about it |
+| --- | --- | --- |
+| $\Delta>0$ | Two distinct real roots | The parabola crosses the axis twice. |
+| $\Delta=0$ | One real root, multiplicity two | The parabola touches once; still one $x$-value. |
+| $\Delta<0$ | No real roots | No real crossing. |
 
-The quadratic formula is
+The quadratic formula
 
 $$
-x=\frac{-b\pm\sqrt{\Delta}}{2a}.
+x=\frac{-b\pm\sqrt{\Delta}}{2a}
 $$
 
-### Vieta
+is available only when $\Delta\geq 0$ (for real solutions) and $a\neq 0$.
 
-If the roots are $x_{1}$ and $x_{2}$ (counting multiplicity),
+**Rule.** “Number of real solutions” counts distinct real $x$-values unless the stem explicitly says “counting multiplicity”. A double root is one real solution with multiplicity two.
+
+### Vieta’s rules
+
+When $a\neq 0$ and the roots $x_{1},x_{2}$ are real (counting multiplicity),
 
 $$
 x_{1}+x_{2}=-\frac{b}{a},\qquad x_{1}x_{2}=\frac{c}{a}.
 $$
 
-Product sign and sum sign are useful True/False shortcuts, but only when $a\neq 0$ and the roots are known to be real. Opposite signs need $x_{1}x_{2}<0$, which requires $c$ and $a$ to have opposite signs.
+**How to use them on True/False claims**
 
-### Degeneration when $a=0$
+- Same sign of roots: need $x_{1}x_{2}>0$ (and usually also look at the sum to decide both positive or both negative).
+- Opposite signs: need $x_{1}x_{2}<0$, that is $\dfrac{c}{a}<0$.
+- Sum zero: $x_{2}=-x_{1}$ iff $b=0$.
 
-If a “quadratic” formula has a parameter in the leading coefficient, check the case $a=0$. The equation may become linear. Claiming “no solution when the leading coefficient vanishes” is often False.
+**Rule.** $\Delta>0$ alone does **not** imply opposite signs. You need the product test as well.
 
-**Example 3.** $(k-1)x^{2}-2(k+1)x+(2k-1)=0$.
+### Degeneration rule when the leading coefficient vanishes
 
-- If $k\neq 1$, it is quadratic. A double root needs $\Delta=0$, which happens at certain $k$ (for example $k=0$ and $k=5$ in the hard bank tasks), still with $k\neq 1$.
-- If $k=1$, the equation becomes $-4x+1=0$, so $x=\dfrac14$. That is a genuine linear solution, not “no solution”.
+If the stem is $(k-1)x^{2}+\cdots=0$ and $k=1$, the $x^{2}$ term disappears. The equation becomes linear (or a constant equation). Apply the linear cases.
 
-### Substitution
+**Rule.** “Leading coefficient zero ⇒ no solution” is False in general. It may become a perfectly solvable linear equation, or an identity, or a contradiction. You must check.
 
-Equations such as $x^{4}-5x^{2}+4=0$ are quadratic in $u=x^{2}$. Solve for $u$ first, then recover $x$. Watch how many real $x$ each positive $u$ produces (two), and that $u=0$ produces one, while $u<0$ produces none.
+### Factoring and completing the square
+
+Factoring over the reals is possible when $\Delta$ is a perfect square (for rational coefficients) or, more generally, when the roots are real. Completing the square rewrites
+
+$$
+ax^{2}+bx+c=a\left(\left(x+\frac{b}{2a}\right)^{2}-\frac{\Delta}{4a^{2}}\right)
+$$
+
+and makes the vertex and the sign of $\Delta$ visible. Both methods obey the same discriminant rule; they are not a second theory.
+
+### Substitution rule
+
+An equation in $x^{2}$ or $x+\dfrac{1}{x}$ is often quadratic in a new unknown $u$.
+
+**Rules**
+
+1. Define $u$ explicitly ($u=x^{2}$, $u=2^{x}$, …).
+2. Solve the quadratic for $u$.
+3. Translate each $u$-root back to $x$, using the range of $u$.
+4. Count final $x$-solutions carefully: each $u>0$ in $u=x^{2}$ gives two real $x$; $u=0$ gives one; $u<0$ gives none.
 
 ### Applied parabolas
 
-Profit or surplus models of the form $P(q)=-(q-r)(q-s)$ have roots $r$ and $s$. The axis of symmetry is $\dfrac{r+s}{2}$. The product is positive between the roots when the parabola opens downward. Do not confuse the axis location with the maximum value of $P$.
+For $P(q)=-(q-r)(q-s)$ with $r<s$:
+
+- roots are $q=r$ and $q=s$;
+- the axis is $q=\dfrac{r+s}{2}$;
+- because the leading behaviour is $-q^{2}$, one has $P(q)>0$ for $q\in(r,s)$ and $P(q)<0$ outside $[r,s]$.
+
+**Rule.** The axis location is not the same thing as the maximum value. The maximum value is $P$ evaluated at the axis.
 
 ---
 
 ## 4.3 Rational, radical, and absolute-value equations
 
-### Rational equations
+### Rational equations: domain first
 
-1. Write the domain: every denominator $\neq 0$.
-2. Multiply by the LCD.
-3. Solve the resulting polynomial equation.
-4. Discard any candidate that hits an excluded value.
+A rational equation is an equality of rational expressions. The governing rule is:
 
-Cancelling a factor $(x-c)$ removes a potential root $x=c$ from the simplified equation, but $x=c$ was already forbidden if it made a denominator zero.
+**Domain first, algebra second, check last.**
 
-**Example 4.** $\dfrac{x^{2}-16}{x-4}=x+4$ is True for every $x\neq 4$, but the claim “the left side equals $8$ at $x=4$” is False because $x=4$ is undefined.
+1. **Domain.** Every denominator $\neq 0$. Write the excluded set before you touch the LCD.
+2. **Clear.** Multiply by the LCD on the domain.
+3. **Solve** the polynomial equation you obtain.
+4. **Check.** Discard every candidate in the excluded set.
 
-### Work-rate and average-speed stories
+**Rule about cancellation.** If you cancel a factor $(x-c)$, the simplified equation no longer “sees” $x=c$. But if $x=c$ made an original denominator zero, it remains forbidden. You may not plug it back into the simplified formula and call that a value of the original left-hand side.
 
-If one machine needs $x$ hours and another needs $x+d$ hours, together they often satisfy
+### Extraneous roots from clearing
 
-$$
-\frac{1}{x}+\frac{1}{x+d}=\frac{1}{T}.
-$$
+Multiplying by an LCD that depends on $x$ can, in principle, introduce extras if you multiply by zero. In practice, with a genuine LCD built from the denominators, the usual damage is the opposite: you must remember the holes you started with. Either way, the check against the domain is mandatory.
 
-Clear the LCD, solve the quadratic, then keep only the physically meaningful root (usually $x>0$). The negative root may be an algebraic solution of the cleared equation but not of the original story.
+### Work-rate and average-speed structure
 
-### Radical equations
-
-1. Domain: every even root needs a nonnegative radicand; the whole expression must be defined.
-2. Isolate one radical.
-3. Square (or raise to the matching power).
-4. Solve, then **check every candidate in the original equation**.
-
-Squaring can introduce extraneous roots. A candidate can fail either because it leaves the domain or because both sides disagree after substitution.
-
-**Example 5.** $2x-5\sqrt{x+3}+3=0$.
-
-Domain: $x\geq -3$. Set $u=\sqrt{x+3}\geq 0$, so $x=u^{2}-3$. Substitute:
+A two-worker model often looks like
 
 $$
-2(u^{2}-3)-5u+3=0
-\quad\Longrightarrow\quad
-2u^{2}-5u-3=0
-\quad\Longrightarrow\quad
-(2u+1)(u-3)=0.
+\frac{1}{x}+\frac{1}{x+d}=\frac{1}{T}
 $$
 
-Roots $u=-\dfrac12$ (reject, since $u\geq 0$) and $u=3$. Then $x=6$. Check in the original equation: it works. So the unique solution is $x=6$.
+with $x>0$, $x+d>0$, $T>0$. After clearing, you typically get a quadratic. Algebra may give two roots; the story keeps only those that satisfy the positivity (and any other stated) constraints.
+
+**Rule.** A negative root of the cleared equation is not automatically a solution of the original rate problem.
+
+### Radical equations: one-way implication of squaring
+
+Even roots require nonnegative radicands. That is the domain rule.
+
+The algebraic danger is different: if $U=V$, then $U^{2}=V^{2}$, but the converse is False. Squaring can turn a false equality into a true one. So:
+
+1. Write the domain (radicands $\geq 0$, and any other restrictions).
+2. Isolate a radical.
+3. Square both sides.
+4. Solve.
+5. **Test every candidate in the original equation** (and against the domain).
+
+**Rule.** A candidate can fail for two different reasons: it leaves the domain, or it stays in the domain but does not satisfy the unsquared equation. Exam claims often confuse those two reasons. Read them carefully.
+
+Substitutions such as $u=\sqrt{f(x)}$ add the rule $u\geq 0$ by definition of the principal square root. Negative $u$-roots of the auxiliary quadratic are discarded even when the corresponding $x$ would have been in the radicand domain.
 
 ### Absolute-value equations
 
-For $c>0$,
+The definition
 
 $$
-\lvert A\rvert=c
-\quad\Longleftrightarrow\quad
-A=c\text{ or }A=-c.
+\lvert A\rvert=
+\begin{cases}
+A,& A\geq 0,\\
+-A,& A<0
+\end{cases}
 $$
 
-If $c=0$, then $A=0$. If $c<0$, there is no real solution.
+implies the solving rule
 
-For equations such as $\lvert x-a\rvert=\lvert x-b\rvert$, the solutions are the midpoint $x=\dfrac{a+b}{2}$ (geometric meaning: points equidistant from $a$ and $b$).
+| Right-hand side | Solutions of $\lvert A\rvert=c$ |
+| --- | --- |
+| $c>0$ | $A=c$ or $A=-c$ |
+| $c=0$ | $A=0$ |
+| $c<0$ | no real solution |
 
-Casework on the critical points of the expression inside the bars is the systematic method when several absolute values appear.
+**Geometric rule.** $\lvert x-a\rvert$ is distance from $x$ to $a$ on the line. So $\lvert x-a\rvert=\lvert x-b\rvert$ means $x$ is equidistant from $a$ and $b$, hence $x=\dfrac{a+b}{2}$.
+
+**Inequality companions** (often mixed into claims):
+
+$$
+\lvert A\rvert<c\ (c>0)\ \Longleftrightarrow\ -c<A<c,
+$$
+
+$$
+\lvert A\rvert>c\ (c>0)\ \Longleftrightarrow\ A<-c\text{ or }A>c.
+$$
+
+**Rule.** Identities such as $\lvert x+y\rvert=\lvert x\rvert+\lvert y\rvert$ are not always true. They fail when $x$ and $y$ have opposite signs.
 
 ---
 
 ## 4.4 Exponential and logarithmic equations
 
-### Same-base exponentials
+### Same-base rule for exponentials
 
-If $a>0$, $a\neq 1$, then
+If $a>0$ and $a\neq 1$, the map $t\mapsto a^{t}$ is one-to-one on $\mathbb{R}$. Therefore
 
 $$
 a^{f(x)}=a^{g(x)}
@@ -227,425 +257,232 @@ a^{f(x)}=a^{g(x)}
 f(x)=g(x).
 $$
 
-Rewrite powers so the bases match before cancelling.
+**Rule.** You must first rewrite both sides with the **same** base. $4^{x}=(2^{x})^{2}=2^{2x}$, $8^{x}=(2^{x})^{3}$, and so on.
+
+### Range rule for $a^{x}$
+
+For $a>0$, $a\neq 1$,
+
+$$
+a^{x}>0\qquad\text{for every real }x.
+$$
+
+There is no real $x$ with $a^{x}\leq 0$. This single fact drives most exponential True/False traps after a substitution $u=a^{x}$.
 
 ### Substitution $u=a^{x}$
 
-Many equations become quadratic in $u=a^{x}$. Remember:
+Many exam equations become quadratic in $u$:
+
+1. Rewrite every exponential in base $a$.
+2. Set $u=a^{x}$. Impose $u>0$.
+3. Solve the quadratic in $u$.
+4. Keep only positive $u$-roots.
+5. Return to $x=\log_{a} u$ (one real $x$ per positive $u$).
+
+**Rule.** A negative or zero root of the $u$-quadratic is not an exponential solution, even if $\Delta>0$ for that quadratic.
+
+If the $u$-quadratic has $\Delta<0$, there is no real $u$ and therefore no real $x$.
+
+### Logarithmic conversion rule
+
+For $b>0$, $b\neq 1$, and $A>0$,
 
 $$
-u=a^{x}>0
-$$
-
-for every real $x$. Discard nonpositive $u$ even if the quadratic likes them.
-
-**Example 6.** $4^{x}-2^{x+2}+5=0$.
-
-Write $4^{x}=(2^{x})^{2}$ and $2^{x+2}=4\cdot 2^{x}$. With $u=2^{x}>0$,
-
-$$
-u^{2}-4u+5=0,\qquad \Delta=16-20=-4<0.
-$$
-
-No real $u$, hence no real $x$. Changing the constant term can produce one or two positive $u$-roots; each positive $u$ gives exactly one real $x=\log_{2} u$.
-
-### Logarithms
-
-For $b>0$, $b\neq 1$, and argument $A>0$,
-
-$$
-\log_{b} A = c
+\log_{b} A=c
 \quad\Longleftrightarrow\quad
 A=b^{c}.
 $$
 
-Product and quotient rules need every argument positive:
+The argument restriction $A>0$ is mandatory. Changing the equation into exponential form does not remove it; you still verify $A>0$ at the end (and often up front).
+
+### Logarithm algebra rules (with domain)
+
+For $x>0$, $y>0$,
 
 $$
-\log_{b}(xy)=\log_{b} x+\log_{b} y
-\quad(x>0,\,y>0).
+\log_{b}(xy)=\log_{b} x+\log_{b} y,
+\qquad
+\log_{b}\!\left(\frac{x}{y}\right)=\log_{b} x-\log_{b} y,
+\qquad
+\log_{b}(x^{r})=r\log_{b} x.
 $$
 
-Never apply the product rule when both factors are negative, even if the product is positive.
+**Rule.** The sum rule requires **each** factor positive. If $x<0$ and $y<0$, then $xy>0$ so $\log_{b}(xy)$ may exist, but $\log_{b} x$ and $\log_{b} y$ do not. Writing $\log_{b}(xy)=\log_{b} x+\log_{b} y$ in that case is False.
 
-**Example 7.** $\log_{3}(x^{2}-2x+9)=2$.
+### Growth models
 
-The quadratic $x^{2}-2x+9$ has discriminant $4-36<0$, so it is always at least $8>0$. The log is defined for every real $x$. Convert:
+For $N(t)=N_{0}\cdot 2^{t/T}$ with $N_{0}>0$ and $T>0$:
 
-$$
-x^{2}-2x+9=9
-\quad\Longrightarrow\quad
-x^{2}-2x=0
-\quad\Longrightarrow\quad
-x(x-2)=0.
-$$
+- $N$ is always positive;
+- increasing $t$ by $T$ multiplies $N$ by $2$;
+- increasing $t$ by $2T$ multiplies $N$ by $4$, not by adding $2N_{0}$.
 
-Solutions $x=0$ and $x=2$. Both keep the argument positive, so both survive.
-
-### Growth stories
-
-Models such as $N(t)=N_{0}\cdot 2^{t/T}$ double every $T$ time units. Then $N(T)=2N_{0}$, $N(2T)=4N_{0}$, and so on. Claims that replace doubling by adding $N_{0}$ (for example “after two doubling periods the amount is $3N_{0}$”) are False.
+**Rule.** Doubling is multiplication, not addition. After two doubling periods you have $4N_{0}$, never $3N_{0}$.
 
 ---
 
 ## 4.5 Mixed exam sets and True/False strategy
 
-Subsection 4.5 mixes linear fees, quadratic surplus, work-rate, and exponential growth in one bank. The five statements A–E are independent.
+Subsection 4.5 reuses the rules above inside fee, surplus, work-rate, and growth stories. The five claims A–E are independent.
 
-### A reliable exam order
+### Working order
 
-1. Read the stem: list unknowns, parameters, and domain exclusions.
-2. Rewrite the equation into a standard form (linear, quadratic, exponential in $u$, and so on).
-3. Solve completely, including degeneration cases for parameters.
-4. Check candidates against the domain and against the original wording (physical constraints).
-5. Judge each True/False claim from that solved picture. Do not restart from scratch for every letter if the stem is shared.
+1. **Inventory.** Unknowns, parameters, domain exclusions, physical restrictions.
+2. **Classify.** Linear, quadratic, rational, radical, absolute value, exponential, or log.
+3. **Apply the matching rules** from 4.1–4.4, including degeneration cases.
+4. **Check** candidates against domain and story constraints.
+5. **Judge each claim** from that finished picture.
+
+### What True/False claims usually test
+
+| Claim type | Rule you need |
+| --- | --- |
+| Count of solutions | Discriminant, $Ax=B$ cases, or positive-$u$ filter |
+| Sign of a parameterised root | Sign chart of $x(a)$ |
+| “Identity for some $a$” | Simultaneous $A(a)=B(a)=0$ |
+| “Value at a cancelled hole” | Domain exclusion survives simplification |
+| “Opposite-sign roots” | Product $c/a$, not merely $\Delta>0$ |
+| Growth arithmetic | Multiply by powers of $2$, do not add |
 
 ### Frequent False slogans
 
 | Slogan | Why it fails |
 | --- | --- |
-| Squaring always preserves the solution set | It can add extraneous roots. |
-| Cancelled factor may be substituted back | That value is still excluded if it zeroed a denominator. |
-| Leading coefficient $0$ means no solution | The equation may become a solvable linear equation. |
-| Opposite-sign roots whenever $\Delta>0$ | You also need $x_{1}x_{2}<0$. |
-| $\log(xy)=\log x+\log y$ with no domain check | Both factors must be positive. |
-| $u=a^{x}$ may be negative | Exponential values are always positive. |
+| Squaring preserves the solution set | Converse implication is false; extras appear. |
+| Cancelled hole may be evaluated | Original denominator still forbids that input. |
+| Leading coefficient $0$ ⇒ no solution | May become a solvable linear equation. |
+| $\Delta>0$ ⇒ opposite-sign roots | Need also $x_{1}x_{2}<0$. |
+| $\log(xy)=\log x+\log y$ with no checks | Each factor must be positive. |
+| $a^{x}$ can be negative | The range is $(0,\infty)$. |
+| Two doublings add $2N_{0}$ | They multiply by $4$. |
 
 ---
 
-## 4.6 Difficult exam-style tasks with full solutions
+## 4.6 A few difficult exam-style tasks
 
-The tasks below match the Chapter 4 bank: one stem, five independent True/False claims, and a full claim-by-claim solution.
+The bank format is one stem and five independent True/False claims. The three tasks below are for practising the rules, not for replacing them. Read the matching section above before you mine these for patterns.
 
 ### Exam task 1 — Parametric linear equation
 
-An economic model determines the equilibrium adjustment $x\in\mathbb{R}$ as a function of a policy parameter $a\in\mathbb{R}\setminus\{-1\}$ by
+For $a\neq -1$,
 
 $$
 \frac{ax-6}{a+1}+2=\frac{3x-a}{a+1}.
 $$
 
-Which of the following statements is/are correct?
+**A.** For every $a>3$, the unique solution $x$ is strictly negative.  
+**B.** If $a\in(0,1)$, then $x$ is strictly positive.  
+**C.** There exists $a\neq -1$ for which the equation is an identity.  
+**D.** Exactly three distinct integers $a$ yield an integer solution $x$.  
+**E.** One has $x\geq 0$ if and only if $a\in\left[\dfrac{4}{3},3\right)$.
 
-**A.** For every $a>3$, the unique equilibrium $x$ is strictly negative.
+**Solution (rules in action).**
 
-**B.** If $a\in(0,1)$, then the equilibrium $x$ is strictly positive.
+Clear $a+1$: $(a-3)x=4-3a$.
 
-**C.** There exists $a\neq -1$ for which the equation is an identity (true for every real $x$).
+- If $a\neq 3$, then $x=\dfrac{3a-4}{3-a}=-3+\dfrac{5}{3-a}$.
+- If $a=3$, then $0=4-9=-5\neq 0$: no solution.
+- Identity would need $a-3=0$ and $4-3a=0$ together: impossible.
 
-**D.** There are exactly three distinct integer values of $a$ that yield an integer equilibrium $x$.
-
-**E.** The equation has a nonnegative solution $x\geq 0$ if and only if $a\in\left[\dfrac{4}{3},3\right)$.
-
-**Complete solution.**
-
-Clear the denominator $a+1$ (allowed since $a\neq -1$):
-
-$$
-ax-6+2(a+1)=3x-a
-\quad\Longrightarrow\quad
-(a-3)x=4-3a.
-$$
-
-- If $a\neq 3$, then $x=\dfrac{3a-4}{3-a}$ (equivalently $\dfrac{3a-4}{3-a}$).
-- If $a=3$, then $0\cdot x=4-9=-5\neq 0$, so no solution.
-
-The equation is never an identity: that would require $a-3=0$ and $4-3a=0$ together, which forces $a=3$ and $a=\dfrac{4}{3}$ at once.
-
-**A.** → True
-
-For $a>3$, both numerator $3a-4>0$ and denominator $3-a<0$, so $x<0$. The solution is unique because $a\neq 3$ automatically when $a>3$.
-
-**B.** → False
-
-For $a\in(0,1)$, numerator $3a-4<0$ and denominator $3-a>0$, so $x<0$, not strictly positive.
-
-**C.** → False
-
-As above, $A=a-3$ and $B=4-3a$ never vanish together for the same $a$.
-
-**D.** → False
-
-Integer $x$ for integer $a\neq -1,3$ means $3-a$ divides $3a-4$. Checking integers around the critical points shows more (or fewer) than three hits depending on the range; the bank’s detailed divisor count rejects “exactly three”. (A direct check for small integers already produces at least the values $a=0$ with $x=-\dfrac{4}{3}$ non-integer, $a=2$ with $x=2$, $a=4$ with $x=-8$, $a=5$ with $x=-\dfrac{11}{2}$, $a=-2$ with $x=-2$, … — the precise count is not three.)
-
-More cleanly: $x=\dfrac{3a-4}{3-a}=-3+\dfrac{5}{3-a}$. For integer $a\neq 3$, $x$ is integer iff $3-a$ divides $5$, so $3-a\in\{\pm1,\pm5\}$. That yields four values $a=2,4,8,-2$, not three.
-
-**E.** → True
-
-For $a\neq 3$, $x\geq 0$ iff $\dfrac{3a-4}{3-a}\geq 0$. The critical points are $a=\dfrac{4}{3}$ and $a=3$. Sign chart on $\mathbb{R}\setminus\{-1,3\}$ gives nonnegativity precisely on $\left[\dfrac{4}{3},3\right)$. At $a=3$ there is no solution, so $3$ is excluded. At $a=\dfrac{4}{3}$, $x=0$, which is allowed.
+**A True:** for $a>3$, numerator $3a-4>0$ and denominator $3-a<0$, so $x<0$, and uniqueness holds.  
+**B False:** on $(0,1)$ one gets $x<0$.  
+**C False:** never both coefficients vanish.  
+**D False:** $x$ integer iff $3-a$ divides $5$, so $3-a\in\{\pm1,\pm5\}$, giving four integers $a\in\{2,4,8,-2\}$.  
+**E True:** sign chart of $\dfrac{3a-4}{3-a}$ on $\mathbb{R}\setminus\{-1,3\}$ yields $x\geq 0$ precisely on $\left[\tfrac{4}{3},3\right)$.
 
 **Answers:** A True, B False, C False, D False, E True.
 
-### Exam task 2 — Parameterized quadratic
-
-Consider
+### Exam task 2 — Parameterized quadratic and degeneration
 
 $$
 (k-1)x^{2}-2(k+1)x+(2k-1)=0.
 $$
 
-Which of the following statements is/are correct?
+**A.** A double real root occurs exactly at $k=0$ and $k=5$.  
+**B.** If $k=1$, there is no real solution.  
+**C.** Whenever the equation is quadratic and $\Delta>0$, the roots have opposite signs.  
+**D.** If $k=5$, the unique root is $x=\dfrac{3}{2}$.  
+**E.** For $k=0$, the substitution $x=y^{2}$ produces four distinct real $y$.
 
-**A.** The equation has a double real root if and only if $k\in\{0,5\}$ with $k\neq 1$ (already true here).
+**Solution.**
 
-**B.** If $k=1$, the equation has no real solution.
+For $k\neq 1$, $\Delta=4k(5-k)$, so $\Delta=0$ at $k=0$ and $k=5$.
 
-**C.** Whenever the equation is quadratic and $\Delta>0$, the two roots have opposite signs.
-
-**D.** If $k=5$, the unique root is $x=\dfrac{3}{2}$.
-
-**E.** The substitution $x=y^{2}$ into the equation for $k=0$ produces four distinct real $y$.
-
-**Complete solution.**
-
-Discriminant (for $k\neq 1$):
-
-$$
-\Delta=4(k+1)^{2}-4(k-1)(2k-1)=4\bigl((k+1)^{2}-(k-1)(2k-1)\bigr).
-$$
-
-Expand:
-
-$$
-(k+1)^{2}-(k-1)(2k-1)=k^{2}+2k+1-(2k^{2}-k-2k+1)=k^{2}+2k+1-2k^{2}+3k-1=-k^{2}+5k.
-$$
-
-So $\Delta=4k(5-k)$. Thus $\Delta=0$ at $k=0$ and $k=5$, both different from $1$.
-
-**A.** → True
-
-Double roots occur exactly at $k=0$ and $k=5$, where the equation remains quadratic.
-
-**B.** → False
-
-At $k=1$ the quadratic term drops and one gets $-4x+1=0$, hence $x=\dfrac14$. There is a real solution.
-
-**C.** → False
-
-Opposite signs need $x_{1}x_{2}=\dfrac{2k-1}{k-1}<0$. This is not automatic whenever $\Delta>0$. For example at $k=2$, $\Delta=4\cdot2\cdot3>0$ and product $\dfrac{3}{1}>0$, so the roots have the same sign.
-
-**D.** → True
-
-For $k=5$, the equation is $4x^{2}-12x+9=0$, that is $(2x-3)^{2}=0$, so $x=\dfrac{3}{2}$.
-
-**E.** → False
-
-For $k=0$, the equation is $-x^{2}-2x-1=0$, that is $x^{2}+2x+1=0$, so $(x+1)^{2}=0$ and $x=-1$. Setting $x=y^{2}$ would require $y^{2}=-1$, which gives no real $y$, let alone four distinct real $y$.
+**A True.**  
+**B False:** $k=1$ gives $-4x+1=0$, so $x=\dfrac14$ (linear degeneration rule).  
+**C False:** opposite signs need $\dfrac{2k-1}{k-1}<0$; e.g. $k=2$ has $\Delta>0$ but product $3>0$.  
+**D True:** $k=5$ gives $(2x-3)^{2}=0$.  
+**E False:** $k=0$ forces $x=-1$; then $y^{2}=-1$ has no real $y$.
 
 **Answers:** A True, B False, C False, D True, E False.
 
-### Exam task 3 — Radical equation and extraneous roots
+### Exam task 3 — Radical check versus domain, and an exponential range rule
 
-Solve, in the background,
+Part I: $2x-5\sqrt{x+3}+3=0$.  
+Part II: $4^{x}-2^{x+2}+5=0$.
 
-$$
-2x-5\sqrt{x+3}+3=0.
-$$
+**A.** The domain of Part I is $(-3,\infty)$.  
+**B.** With $u=\sqrt{x+3}$, exactly one admissible $u$ appears, giving unique $x=6$.  
+**C.** The candidate $x=-\dfrac{11}{4}$ fails only because it leaves the domain.  
+**D.** Part II becomes $u^{2}-4u+5=0$ with $u=2^{x}$.  
+**E.** Part II has no real solution.
 
-Which of the following statements is/are correct?
+**Solution.**
 
-**A.** The domain is the open interval $(-3,\infty)$.
+Part I domain is $x\geq -3$. Then $u\geq 0$ and $2u^{2}-5u-3=0$ give $u=3$ or $u=-\tfrac12$; only $u=3$ survives, so $x=6$. The value $x=-\tfrac{11}{4}$ is still in the domain but comes from illegal $u<0$.
 
-**B.** The substitution $u=\sqrt{x+3}$ forces $u\geq 0$ and yields exactly one admissible $u$.
+Part II: $u=2^{x}>0$ yields $u^{2}-4u+5=0$ with $\Delta<0$, so no real $u$ and no real $x$.
 
-**C.** After substitution, the quadratic for $u$ has root sum $\dfrac{5}{2}$.
+**A False** (domain is closed). **B True.** **C False** (domain is not the reason). **D True.** **E True.**
 
-**D.** $x=-\dfrac{11}{4}$ fails only because it leaves the domain.
-
-**E.** The original equation has the unique real solution $x=6$.
-
-**Complete solution.**
-
-Domain: $x+3\geq 0$, so $x\geq -3$ (closed ray). Set $u=\sqrt{x+3}\geq 0$, hence $x=u^{2}-3$. Substitute:
-
-$$
-2(u^{2}-3)-5u+3=0
-\quad\Longrightarrow\quad
-2u^{2}-5u-3=0
-\quad\Longrightarrow\quad
-u=\frac{5\pm\sqrt{25+24}}{4}=\frac{5\pm 7}{4}.
-$$
-
-So $u=3$ or $u=-\dfrac12$. Only $u=3$ is allowed. Then $x=6$. The rejected $u=-\dfrac12$ would have given $x=\dfrac{1}{4}-3=-\dfrac{11}{4}$, which lies in the domain $[-3,\infty)$ but fails the original equation because $u$ was required to be nonnegative (equivalently, checking LHS and RHS after restoring the square root fails).
-
-**A.** → False
-
-The domain is $[-3,\infty)$, not the open interval $(-3,\infty)$. The endpoint $x=-3$ is allowed for the square root.
-
-**B.** → True
-
-$u\geq 0$ by definition of the principal square root, and only $u=3$ survives.
-
-**C.** → True
-
-For $2u^{2}-5u-3=0$, Vieta gives root sum $\dfrac{5}{2}$.
-
-**D.** → False
-
-$x=-\dfrac{11}{4}$ is still $\geq -3$, so it lies in the domain. It fails because it corresponds to the negative $u$, which is not a value of $\sqrt{x+3}$.
-
-**E.** → True
-
-The only surviving solution is $x=6$.
-
-**Answers:** A False, B True, C True, D False, E True.
-
-### Exam task 4 — Exponential with no real root, and a log companion
-
-Consider the equation
-
-$$
-4^{x}-2^{x+2}+5=0.
-$$
-
-Separately, consider $\log_{3}(x^{2}-2x+9)=2$.
-
-Which of the following statements is/are correct?
-
-**A.** The substitution $u=2^{x}$ turns the exponential equation into $u^{2}-4u+5=0$.
-
-**B.** The exponential equation has no real solution.
-
-**C.** For the logarithmic equation, the argument $x^{2}-2x+9$ is positive for every real $x$.
-
-**D.** The logarithmic equation has a strictly negative solution.
-
-**E.** The logarithmic equation has solutions $x=0$ and $x=2$.
-
-**Complete solution.**
-
-**Exponential part.** $4^{x}=(2^{x})^{2}$ and $2^{x+2}=4\cdot 2^{x}$. With $u=2^{x}>0$,
-
-$$
-u^{2}-4u+5=0,\qquad \Delta=16-20<0.
-$$
-
-No real $u$, hence no real $x$.
-
-**Logarithmic part.** Discriminant of $x^{2}-2x+9$ is $4-36=-32<0$, and the leading coefficient is positive, so the quadratic is always at least $9-\dfrac{1}{1}=8>0$. Convert the log equation:
-
-$$
-x^{2}-2x+9=3^{2}=9
-\quad\Longrightarrow\quad
-x^{2}-2x=0
-\quad\Longrightarrow\quad
-x(x-2)=0.
-$$
-
-Roots $0$ and $2$, both admissible. Neither is strictly negative.
-
-**A.** → True
-
-**B.** → True
-
-**C.** → True
-
-**D.** → False
-
-**E.** → True
-
-**Answers:** A True, B True, C True, D False, E True.
-
-### Exam task 5 — Mixed applied set
-
-A firm’s weekly surplus is modelled by $P(q)=-(q-6)(q-12)$ for output $q\geq 0$. A second team solves the work-rate equation $\dfrac{1}{x}+\dfrac{1}{x+12}=\dfrac{1}{8}$ for a positive time $x$. A third model uses $N(t)=250\cdot 2^{t/3}$.
-
-Which of the following statements is/are correct?
-
-**A.** $P(q)=0$ at $q=6$ and $q=12$.
-
-**B.** $P(q)>0$ for every $q\in(6,12)$.
-
-**C.** The work-rate equation has a unique positive solution $x=12$.
-
-**D.** $N(6)=750$.
-
-**E.** $N(t)$ doubles every $3$ time units.
-
-**Complete solution.**
-
-**A.** → True
-
-The factors give roots $6$ and $12$.
-
-**B.** → True
-
-The parabola opens downward (leading behaviour $-q^{2}$), so $P$ is positive between the roots.
-
-**C.** → True
-
-Clear $8x(x+12)$:
-
-$$
-8(x+12)+8x=x(x+12)
-\quad\Longrightarrow\quad
-x^{2}-4x-96=0
-\quad\Longrightarrow\quad
-(x-12)(x+8)=0.
-$$
-
-Roots $x=12$ and $x=-8$. Only $x=12$ is positive and admissible for the rate story.
-
-**D.** → False
-
-$$
-N(6)=250\cdot 2^{6/3}=250\cdot 2^{2}=250\cdot 4=1000,
-$$
-
-not $750$. The false value $750$ comes from adding one doubling instead of multiplying by $4$ over two doubling periods.
-
-**E.** → True
-
-The exponent is $t/3$, so when $t$ increases by $3$, the factor $2^{t/3}$ multiplies by $2$.
-
-**Answers:** A True, B True, C True, D False, E True.
+**Answers:** A False, B True, C False, D True, E True.
 
 ---
 
 ## 4.7 Summary reference
 
-| Task | Method |
+| Situation | Governing rule |
 | --- | --- |
-| Linear $Ax=B$ | Unique / none / identity from $A$ and $B$. |
-| Linear with fractions | Multiply by LCD; keep exclusions. |
-| Parametric linear | Solve $x(a)$; study sign and special $a$. |
-| Quadratic | Use $\Delta$, formula, factoring, Vieta. |
-| Leading coefficient $0$ | Reduce to linear; do not invent “no solution”. |
-| Rational equation | Domain → LCD → solve → reject excluded roots. |
-| Radical equation | Domain → isolate → raise powers → check. |
-| Absolute value $\lvert A\rvert=c>0$ | Solve $A=\pm c$. |
-| Exponential | Match bases or set $u=a^{x}>0$. |
-| Logarithm | Convert $\log_{b} A=c$ to $A=b^{c}$ with $A>0$. |
-| Growth $N_{0}2^{t/T}$ | Multiplies by $2$ every $T$ units. |
+| $Ax=B$ | Unique / none / identity from $A$ and $B$. |
+| Parameter in linear equation | Formula branch if $A\neq 0$; separate case if $A=0$. |
+| Quadratic $a\neq 0$ | Read the number of real roots from $\Delta$. |
+| Leading coefficient becomes $0$ | Fall back to linear cases; do not invent emptiness. |
+| Vieta sign claims | Use product and sum; $\Delta>0$ is not enough for opposite signs. |
+| Rational equation | Domain → LCD → solve → reject holes. |
+| Radical equation | Domain → isolate → raise powers → check originals. |
+| $\lvert A\rvert=c$ | Use the $c>0$/ $c=0$/ $c<0$ table. |
+| Exponential in base $a$ | Same-base cancellation, or $u=a^{x}>0$. |
+| Logarithm | $\log_{b} A=c\Leftrightarrow A=b^{c}$ with $A>0$. |
+| Growth by doubling | Multiply; do not add. |
 
 ### Key formulas
 
 $$
 Ax=B,
 \qquad
-x=\frac{-b\pm\sqrt{b^{2}-4ac}}{2a},
+\Delta=b^{2}-4ac,
 \qquad
+x=\frac{-b\pm\sqrt{\Delta}}{2a},
+$$
+
+$$
 x_{1}+x_{2}=-\frac{b}{a},\quad x_{1}x_{2}=\frac{c}{a},
 $$
 
 $$
 \lvert A\rvert=c\ (c>0)\ \Longleftrightarrow\ A=\pm c,
 \qquad
-\log_{b} A=c\ \Longleftrightarrow\ A=b^{c}\ (A>0).
+\log_{b} A=c\ \Longleftrightarrow\ A=b^{c}\ (A>0),
 $$
 
-### Working order on an exam statement
-
-1. Domain and excluded parameters.
-2. Standard form.
-3. Solve, including degeneration cases.
-4. Check candidates.
-5. Verdict for each claim.
+$$
+a^{x}>0\quad\text{for all real }x.
+$$
 
 ### Self-check
 
-- When is $Ax=B$ an identity rather than a unique solution?
-- Why can $k=1$ in a “quadratic” still give a real root?
-- Why must radical candidates be checked in the original equation?
-- Why is $u=a^{x}$ never negative?
-- If $N(t)=250\cdot 2^{t/3}$, what is $N(6)$, and why is $750$ wrong?
+- State the three cases of $Ax=B$ without looking.
+- Why is “$\Delta>0$ ⇒ opposite-sign roots” False?
+- What are the two different reasons a radical candidate can fail?
+- Why is a nonpositive root of a $u=a^{x}$ quadratic useless?
+- After two doubling periods, is the amount $3N_{0}$ or $4N_{0}$?

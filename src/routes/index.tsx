@@ -1,5 +1,5 @@
 import { createFileRoute } from "@tanstack/react-router";
-import { useEffect, useRef, useState, type CSSProperties, type ReactNode, Suspense, lazy } from "react";
+import { useEffect, useRef, useState, type CSSProperties, type ReactNode } from "react";
 
 import { Flame, ChevronLeft, ChevronRight } from "lucide-react";
 import wuAsset from "@/assets/wu-vienna.jpg.asset.json";
@@ -10,11 +10,9 @@ import { FaqAccordion, homepageFaqs } from "@/components/FaqAccordion";
 import { buildFaqPageJsonLd } from "@/components/SeoFaq";
 import { PrepJourneyRoadmap } from "@/components/PrepJourneyRoadmap";
 import { SiteHeader } from "@/components/SiteHeader";
+import { HowItWorksSection } from "@/components/HowItWorksSection";
 import { LocalizedLink } from "@/components/LocalizedLink";
 import { hreflangLinks } from "@/lib/i18n/locale-path";
-
-const PracticeSimulator = lazy(() => import("@/components/PracticeSimulator"));
-const MockBuilderSimulator = lazy(() => import("@/components/MockBuilderSimulator"));
 
 export const Route = createFileRoute("/")({
   head: () => ({
@@ -44,9 +42,6 @@ export const Route = createFileRoute("/")({
 });
 
 export function Index() {
-  const [demoSubject, setDemoSubject] = useState<"economics" | "math" | "english">("economics");
-  const [demoMode, setDemoMode] = useState<"practice" | "mock">("practice");
-
   return (
     <div className="min-h-screen bg-background font-sans text-foreground antialiased">
       <SiteHeader showNav showMobileNav />
@@ -121,87 +116,7 @@ export function Index() {
           </div>
         </section>
 
-        {/* FIVE-STATEMENT SIMULATION ENGINE */}
-        <section
-          id="how-it-works"
-          className="relative bg-[#070a12] px-4 py-20 sm:px-6 lg:px-8 lg:py-28"
-        >
-          <div className="relative mx-auto max-w-6xl text-center">
-            <div className="text-sm font-medium text-white/55">Live product demo</div>
-            <h2 className="mx-auto mt-3 max-w-3xl font-display text-3xl font-semibold text-white sm:text-4xl lg:text-5xl">
-              How it works
-            </h2>
-            <p className="mx-auto mt-4 max-w-2xl text-sm leading-relaxed text-white/60 sm:text-base">
-              Watch the live practice UI — answer statements, use the calculator and passage tools,
-              then open explanations on the real product.
-            </p>
-          </div>
-          <div className="relative mx-auto mt-8 flex w-full max-w-6xl flex-wrap items-center justify-center gap-2 sm:gap-3">
-            {(
-              [
-                { key: "practice", label: "Practice Tasks" },
-                { key: "mock", label: "Mock Builder" },
-              ] as const
-            ).map((m) => (
-              <button
-                key={m.key}
-                type="button"
-                onClick={() => setDemoMode(m.key)}
-                className={cn(
-                  "rounded-full border px-5 py-2 text-xs font-semibold uppercase tracking-[0.2em] transition-all sm:text-sm",
-                  demoMode === m.key
-                    ? "border-white bg-white text-[#161616]"
-                    : "border-white/20 bg-white/5 text-white/70 hover:border-white/50 hover:text-white",
-                )}
-              >
-                {m.label}
-              </button>
-            ))}
-          </div>
-          {demoMode === "practice" && (
-          <div className="relative mx-auto mt-4 flex w-full max-w-6xl flex-wrap items-center justify-center gap-2 sm:gap-3">
-            {(
-              [
-                { key: "economics", label: "Economics", enabled: true },
-                { key: "math", label: "Math", enabled: true },
-                { key: "english", label: "English", enabled: true },
-              ] as const
-            ).map((s) => {
-              const active = demoSubject === s.key;
-              return (
-                <button
-                  key={s.key}
-                  type="button"
-                  onClick={() => s.enabled && setDemoSubject(s.key)}
-                  disabled={!s.enabled}
-                  className={cn(
-                    "rounded-full border px-5 py-2 text-xs font-semibold uppercase tracking-[0.2em] transition-all sm:text-sm",
-                    active
-                      ? "border-white bg-white text-[#161616]"
-                      : s.enabled
-                        ? "border-white/20 bg-white/5 text-white/70 hover:border-white/50 hover:text-white"
-                        : "cursor-not-allowed border-white/10 bg-white/[0.03] text-white/30",
-                  )}
-                >
-                  {s.label}
-                  {!s.enabled && <span className="ml-2 text-[9px] opacity-70">soon</span>}
-                </button>
-              );
-            })}
-          </div>
-          )}
-          <div className="relative mx-auto mt-6 w-full max-w-6xl px-1 sm:px-0">
-            {demoMode === "practice" ? (
-              <Suspense fallback={<div className="min-h-[28rem] animate-pulse rounded-2xl bg-muted/40" aria-hidden="true" />}>
-                <PracticeSimulator key={demoSubject} subject={demoSubject} />
-              </Suspense>
-            ) : (
-              <Suspense fallback={<div className="min-h-[28rem] animate-pulse rounded-2xl bg-muted/40" aria-hidden="true" />}>
-                <MockBuilderSimulator />
-              </Suspense>
-            )}
-          </div>
-        </section>
+        <HowItWorksSection />
 
         {/* PARALLAX BAND — darkened WU campus */}
         <section

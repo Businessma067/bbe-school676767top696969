@@ -17,6 +17,7 @@ import {
   practiceExplanationToggleClass,
   practiceInlineAiButtonClass,
   practicePanelSectionLabelClass,
+  practicePanelSubsectionLabelClass,
   practiceSubmitButtonClass,
   practiceTryAgainButtonClass,
 } from "@/lib/practice-button-styles";
@@ -180,7 +181,7 @@ function EconomicsTasks() {
   const requestExplanation = async (caseData: Case, i: number) => {
     const key = `${caseData.id}:${i}`;
     if (explanation?.key === key) return;
-    setShowExplanations(false);
+    setShowExplanations(true);
     const stmt = caseData.statements[i];
     const correct = caseData.answer_key[i];
     setExplanation({
@@ -614,14 +615,15 @@ function EconomicsTasks() {
                 });
               }}
               onResetProgress={() => resetCaseIds([activeCase.id])}
-              explanationsOpen={showExplanations && !explanation}
+              explanationsOpen={showExplanations}
               onShowExplanations={() => {
-                setExplanation(null);
                 setShowExplanations(true);
               }}
               onToggleExplanations={() => {
-                setExplanation(null);
-                setShowExplanations((v) => !v);
+                setShowExplanations((v) => {
+                  if (v) setExplanation(null);
+                  return !v;
+                });
               }}
             />
           )}
@@ -653,23 +655,23 @@ function EconomicsTasks() {
           )}
         </main>
 
-        {/* Right panel: Calculator, Full solution, or AI Explanation */}
-        <DemoEconPracticeAside hasExplanation={showExplanations || !!explanation}>
-          {explanation ? (
-            <ExplanationPanels
-              state={explanation}
-              onClose={() => setExplanation(null)}
-              onRetry={() => {
-                if (!activeCase) return;
-                requestExplanation(activeCase, explanation.statementIndex);
-              }}
-            />
-          ) : showExplanations && activeCase ? (
+        {/* Right panel: Calculator or full solution with optional side-by-side AI */}
+        <DemoEconPracticeAside hasExplanation={showExplanations} wide={!!explanation}>
+          {showExplanations && activeCase ? (
             <AllExplanationsPanel
               task={activeCase}
               index={activeIdx}
-              onClose={() => setShowExplanations(false)}
+              onClose={() => {
+                setShowExplanations(false);
+                setExplanation(null);
+              }}
               onRequestAi={(i) => requestExplanation(activeCase, i)}
+              aiState={explanation}
+              onCloseAi={() => setExplanation(null)}
+              onRetryAi={() => {
+                if (!activeCase || !explanation) return;
+                requestExplanation(activeCase, explanation.statementIndex);
+              }}
             />
           ) : null}
         </DemoEconPracticeAside>
@@ -1027,30 +1029,19 @@ function AllExplanationsPanel({
   index,
   onClose,
   onRequestAi,
+  aiState,
+  onCloseAi,
+  onRetryAi,
 }: {
   task: Case;
   index: number;
   onClose: () => void;
   onRequestAi: (i: number) => void;
+  aiState: ExplanationPanelState | null;
+  onCloseAi: () => void;
+  onRetryAi: () => void;
 }) {
   const letters = "ABCDEF";
-  const body = [
-    ...task.statements.flatMap((_, i) => {
-      const letter = letters[i] ?? String(i + 1);
-      const verdict = task.answer_key[i] ? "True" : "False";
-      const expl = (task.tactical_explanations[i] ?? "").trim();
-      if (expl) {
-        return [`**${letter}.** → ${verdict}\n\n${expl}`, ""];
-      }
-      return [
-        `**${letter}.** → ${verdict}\n\n${scrubStatementHints(task.statements[i])}`,
-        "",
-      ];
-    }),
-  ]
-    .join("\n")
-    .replace(/\n{3,}/g, "\n\n")
-    .trim();
 
   return (
     <div className="practice-fade-in flex h-full flex-col overflow-hidden rounded-2xl border border-border bg-card shadow-sm" data-practice-surface>
@@ -1069,21 +1060,55 @@ function AllExplanationsPanel({
           Close
         </button>
       </div>
-      <div className="practice-scroll min-h-0 flex-1 overflow-y-auto bg-white px-7 py-7 sm:px-9 sm:py-8">
+      <div className="practice-scroll min-h-0 flex-1 overflow-y-auto bg-white px-5 py-6 sm:px-7 sm:py-7">
         <EconAnswerKeyTable answerKey={task.answer_key} />
-        <div className="mb-6 flex flex-wrap gap-2">
-          {task.statements.map((_, i) => (
-            <button
-              key={i}
-              type="button"
-              onClick={() => onRequestAi(i)}
-              className={practiceInlineAiButtonClass(false)}
-            >
-              AI · {letters[i] ?? i + 1}
-            </button>
-          ))}
+        <div className="space-y-8">
+          {task.statements.map((_, i) => {
+            const letter = letters[i] ?? String(i + 1);
+            const verdict = task.answer_key[i] ? "True" : "False";
+            const expl = (task.tactical_explanations[i] ?? "").trim();
+            const prose = expl || scrubStatementHints(task.statements[i]);
+            const aiOpen = aiState?.statementIndex === i;
+
+            return (
+              <section key={i} className="min-w-0 border-b border-border/60 pb-8 last:border-b-0 last:pb-0">
+                <div className="mb-3 flex flex-wrap items-center justify-between gap-2">
+                  <p className="font-expl text-[15.5px] font-bold leading-snug text-[#111] sm:text-[16.5px]">
+                    {letter}. → {verdict}
+                  </p>
+                  <button
+                    type="button"
+                    onClick={() => (aiOpen ? onCloseAi() : onRequestAi(i))}
+                    className={practiceInlineAiButtonClass(!!aiOpen)}
+                    aria-label={`AI explanation for statement ${letter}`}
+                  >
+                    {aiOpen ? "Hide AI" : "AI explanation"}
+                  </button>
+                </div>
+                <div
+                  className={cn(
+                    "grid gap-4",
+                    aiOpen && "lg:grid-cols-2 lg:gap-5",
+                  )}
+                >
+                  <div className="min-w-0 rounded-xl border border-border bg-secondary/30 p-4">
+                    <p className={practicePanelSubsectionLabelClass}>Statement explanation</p>
+                    <div className="mt-3">
+                      <ExplanationProse text={prose} />
+                    </div>
+                  </div>
+                  {aiOpen && aiState ? (
+                    <InlineAiBesideStatement
+                      state={aiState}
+                      onClose={onCloseAi}
+                      onRetry={onRetryAi}
+                    />
+                  ) : null}
+                </div>
+              </section>
+            );
+          })}
         </div>
-        <ExplanationProse text={body} />
       </div>
     </div>
   );
@@ -1245,18 +1270,31 @@ type ExplanationPanelState = {
 
 function DemoEconPracticeAside({
   hasExplanation,
+  wide = false,
   children,
 }: {
   hasExplanation: boolean;
+  wide?: boolean;
   children: ReactNode;
 }) {
   const calc = usePracticeCalcOptional();
   if (!hasExplanation && !calc?.open) return null;
-  return <PracticeRightSlot>{children}</PracticeRightSlot>;
+  return (
+    <PracticeRightSlot
+      className={cn(
+        "lg:sticky lg:top-20 lg:block lg:h-[calc(100vh-6rem)] lg:shrink-0",
+        wide ? "lg:w-[min(100%,42rem)] xl:w-[46rem]" : "lg:w-[28rem] xl:w-[32rem]",
+      )}
+    >
+      {children}
+    </PracticeRightSlot>
+  );
 }
 
-function ExplanationPanels({
-  state, onClose, onRetry,
+function InlineAiBesideStatement({
+  state,
+  onClose,
+  onRetry,
 }: {
   state: ExplanationPanelState;
   onClose: () => void;
@@ -1281,77 +1319,64 @@ function ExplanationPanels({
   }, [reveal]);
 
   return (
-    <div className="flex h-full flex-col gap-3" data-practice-surface>
-      {/* Header */}
-      <div className="flex items-center justify-between rounded-2xl border border-primary/40 bg-primary/5 px-4 py-2.5">
-        <span className={practicePanelSectionLabelClass}>
-          AI Explanation · Statement {state.statementIndex + 1}
-        </span>
+    <div className="flex min-w-0 flex-col gap-3 rounded-xl border border-primary/30 bg-primary/5 p-4">
+      <div className="flex items-center justify-between gap-2">
+        <p className={practicePanelSectionLabelClass}>AI explanation</p>
         <button
+          type="button"
           onClick={onClose}
-          aria-label="Close explanation"
+          aria-label="Close AI explanation"
           className="rounded-md p-1 text-muted-foreground hover:bg-secondary hover:text-foreground"
         >
           <X className="h-4 w-4" />
         </button>
       </div>
-
-      {/* Panel B: Classic Explanation */}
-      <div className="rounded-2xl border border-border bg-card p-4 shadow-sm">
-        <div className="mb-2 flex items-center gap-2">
-          <span className="rounded-md bg-secondary px-2 py-0.5 text-[10px] font-bold uppercase tracking-widest text-muted-foreground">
-            Classic Explanation
-          </span>
-          <span className={cn(
+      <div className="flex flex-wrap items-center gap-2">
+        <span
+          className={cn(
             "rounded-md px-2 py-0.5 text-[10px] font-bold uppercase tracking-widest",
-            state.correctAnswer ? "bg-emerald-500/15 text-emerald-700 dark:text-emerald-300" : "bg-destructive/15 text-destructive",
-          )}>
-            Answer: {state.correctAnswer ? "TRUE" : "FALSE"}
-          </span>
-        </div>
-        <p className="mb-3 text-[11px] italic text-muted-foreground">"{state.statementText}"</p>
-        {state.loading && (
-          <div className="flex items-center gap-2 text-xs text-muted-foreground">
-            <Loader2 className="h-3.5 w-3.5 animate-spin" /> Reasoning through the textbook…
-          </div>
-        )}
-        {state.error && (
-          <div className="rounded-md border border-destructive/40 bg-destructive/10 p-3 text-xs text-destructive">
-            {state.error}
-            <button onClick={onRetry} className="ml-2 underline">Retry</button>
-          </div>
-        )}
-        {state.data && (
-          <p className="text-sm leading-relaxed text-foreground">{state.data.classic_explanation}</p>
-        )}
-      </div>
-
-      {/* Panel C: Textbook Canvas */}
-      <div className="min-h-0 flex-1 overflow-hidden rounded-2xl border border-border bg-[#fdf9f0] shadow-sm">
-        <div className="flex items-center justify-between border-b border-border/60 bg-white/60 px-4 py-2">
-          <span className="text-[10px] font-bold uppercase tracking-widest text-taupe">
-            Textbook Canvas
-          </span>
-          <span className="text-[9px] font-semibold uppercase tracking-widest text-muted-foreground">
-            BBE School Textbook
-          </span>
-        </div>
-        <div className="h-full overflow-y-auto px-5 py-4 font-serif text-[13px] leading-relaxed text-[#3a2e1f]">
-          {state.loading && (
-            <div className="flex items-center gap-2 text-xs text-muted-foreground">
-              <Loader2 className="h-3.5 w-3.5 animate-spin" /> Fetching the page…
-            </div>
+            state.correctAnswer
+              ? "bg-emerald-500/15 text-emerald-700 dark:text-emerald-300"
+              : "bg-destructive/15 text-destructive",
           )}
-          {state.data && (
+        >
+          Answer: {state.correctAnswer ? "TRUE" : "FALSE"}
+        </span>
+      </div>
+      <p className="text-[11px] italic text-muted-foreground">&ldquo;{state.statementText}&rdquo;</p>
+      {state.loading && (
+        <div className="flex items-center gap-2 text-xs text-muted-foreground">
+          <Loader2 className="h-3.5 w-3.5 animate-spin" /> Reasoning through the textbook…
+        </div>
+      )}
+      {state.error && (
+        <div className="rounded-md border border-destructive/40 bg-destructive/10 p-3 text-xs text-destructive">
+          {state.error}
+          <button type="button" onClick={onRetry} className="ml-2 underline">
+            Retry
+          </button>
+        </div>
+      )}
+      {state.data && (
+        <p className="text-sm leading-relaxed text-foreground">{state.data.classic_explanation}</p>
+      )}
+      {state.data && (
+        <div className="overflow-hidden rounded-lg border border-border bg-[#fdf9f0]">
+          <div className="border-b border-border/60 bg-white/60 px-3 py-1.5">
+            <span className="text-[10px] font-bold uppercase tracking-widest text-taupe">
+              Textbook
+            </span>
+          </div>
+          <div className="max-h-48 overflow-y-auto px-3 py-3 font-serif text-[12px] leading-relaxed text-[#3a2e1f]">
             <TextbookCanvasBody
               text={state.data.textbook_context}
               highlight={state.data.highlight_text}
               reveal={reveal}
               highlightRef={highlightRef}
             />
-          )}
+          </div>
         </div>
-      </div>
+      )}
     </div>
   );
 }
