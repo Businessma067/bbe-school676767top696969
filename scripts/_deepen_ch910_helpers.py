@@ -178,7 +178,7 @@ def unpack_triple_products(text: str) -> str:
 
 def deepen_thin_explog(text: str, stmt: str, context: str, letter: str, truth: bool) -> str:
     n = text.count("$$") // 2
-    if n >= 6:
+    if n >= 8:
         return text
     inject: list[str] = []
     blob = stmt + "\n" + text + "\n" + (context or "")
@@ -186,10 +186,20 @@ def deepen_thin_explog(text: str, stmt: str, context: str, letter: str, truth: b
     def add(s: str) -> None:
         inject.append(D(s))
 
+    def prose(s: str) -> None:
+        inject.append(s)
+
+    # Always surface the governing continuous model when present in context
+    if re.search(r"P\(t\)\s*=\s*P_0\s*e\^\{kt\}|P_0 e\^\{kt\}", context or ""):
+        if "P_0 e^{kt}" not in text.replace(" ", "") and n < 5:
+            prose("The continuous path is")
+            add(r"P(t)=P_0 e^{kt}")
+
     if re.search(r"change of base|\\log_\{|\\log_|\\ln", blob, re.I):
         if r"\frac{\ln" not in text and r"\dfrac{\ln" not in text:
-            inject.append("Change of base with natural logs reads")
+            prose("Change of base with natural logs reads")
             add(r"\log_{b}a=\dfrac{\ln a}{\ln b}")
+            add(r"\log_{b}a=\dfrac{\log_k a}{\log_k b}")
 
     m = re.search(r"\\log_\{(\d+)\}\s*\{?(\d+)\}?", stmt)
     if m:
@@ -199,50 +209,72 @@ def deepen_thin_explog(text: str, stmt: str, context: str, letter: str, truth: b
             p *= b
             k += 1
         if p == a:
-            inject.append("Evaluate by the defining power identity")
+            prose("Evaluate by the defining power identity")
             add(rf"{b}^{{{k}}}={a}")
             add(rf"\log_{{{b}}}{a}={k}")
 
+    # letter-log claims like \log_b a
+    m = re.search(r"\\log_\{([a-zA-Z]+)\}\s*([a-zA-Z0-9]+)", stmt)
+    if m and n < 5:
+        b, a = m.group(1), m.group(2)
+        add(rf"\log_{{{b}}}{a}=\dfrac{{\ln {a}}}{{\ln {b}}}")
+
     if re.search(r"e\^\{|\\exp\(|\(1\+[rk]\)", blob):
         if "e^{u+v}" not in text.replace(" ", ""):
-            inject.append("The exponential addition law is")
+            prose("The exponential addition law is")
             add(r"e^{u+v}=e^{u}\,e^{v}")
-        if re.search(r"e\^\{k\}|1\+k", blob):
-            inject.append("Compare the one-year multipliers")
+            add(r"e^{ut}=(e^{u})^{t}")
+        if re.search(r"e\^\{k\}|1\+k|1\+r", blob):
+            prose("Compare the one-year multipliers")
             add(r"e^{k}")
             add(r"1+k")
             if "e^{k}>1+k" not in text.replace(" ", ""):
                 add(r"e^{k}>1+k\qquad(k>0)")
+            if re.search(r"1\+r", blob):
+                add(r"1+r")
+                add(r"1+r=e^{k}")
 
-    if re.search(r"\\log|\\ln", stmt):
-        if re.search(r"product|\(ab\)", stmt, re.I) and r"\log a+\log b" not in text.replace(" ", ""):
+    if re.search(r"\\log|\\ln", blob):
+        if r"\log(ab)=\log a+\log b" not in text.replace(" ", ""):
+            prose("The logarithm product / quotient / power laws are")
             add(r"\log(ab)=\log a+\log b")
-        if re.search(r"quotient|a/b|\\frac\{a\}", stmt) and r"\log a-\log b" not in text.replace(
-            " ", ""
-        ):
             add(r"\log\!\left(\dfrac{a}{b}\right)=\log a-\log b")
-        if re.search(r"power|a\^", stmt) and r"t\log" not in text.replace(" ", ""):
             add(r"\log(a^{t})=t\log a")
+        if re.search(r"\\ln|\\log_e", blob) and r"\ln(e^{" not in text.replace(" ", ""):
+            add(r"\ln(e^{u})=u")
+            add(r"e^{\ln u}=u\qquad(u>0)")
 
     if re.search(r"doubl|half-life|T_\{?2|T_\{?1/2|\\ln 2", blob, re.I):
-        if r"\ln 2" not in text:
-            add(r"e^{kT}=2")
-            add(r"kT=\ln 2")
-            add(r"T=\dfrac{\ln 2}{k}")
+        prose("Doubling / half-life recovers the logarithm of two")
+        add(r"e^{kT}=2")
+        add(r"kT=\ln 2")
+        add(r"T=\dfrac{\ln 2}{|k|}")
 
-    if re.search(r"ratio|P\(t\+1\)|successive", blob, re.I):
-        if text.count("$$") // 2 < 3:
-            add(r"\dfrac{P(t+1)}{P(t)}=\dfrac{P_0 e^{k(t+1)}}{P_0 e^{kt}}")
-            add(r"=e^{k}")
+    if re.search(r"ratio|P\(t\+1\)|successive|geometric", blob, re.I):
+        prose("Successive ratios of a pure exponential are constant")
+        add(r"\dfrac{P(t+1)}{P(t)}=\dfrac{P_0 e^{k(t+1)}}{P_0 e^{kt}}")
+        add(r"=e^{k}")
+
+    # solving patterns: a^x = b
+    m = re.search(r"([0-9]+)\^\{?x\}?\s*=\s*([0-9]+)|([a-z])\^\{?x\}?\s*=\s*([0-9]+)", stmt.replace(" ", ""))
+    if m and n < 6:
+        prose("Take logarithms of both sides")
+        add(r"x\ln a=\ln b")
+        add(r"x=\dfrac{\ln b}{\ln a}")
 
     if not inject:
-        return text
+        # last-resort: pull display math out of the statement itself
+        for dm in re.finditer(r"\$([^$]+)\$", stmt):
+            inner = dm.group(1).strip()
+            if len(inner) > 2 and inner not in text:
+                add(inner)
+                if len(inject) >= 4:
+                    break
+        if not inject:
+            return text
 
     body = re.sub(r"(?i)so the statement is (?:True|False)\.\s*$", "", text.strip()).rstrip()
-    pieces: list[str] = []
-    for item in inject:
-        pieces.append(item)
-    body = body + "\n\n" + "\n\n".join(pieces)
+    body = body + "\n\n" + "\n\n".join(inject)
     verd = "True" if truth else "False"
     body = re.sub(
         r"^\*\*[A-E]\.\*\* → (?:True|False)",
