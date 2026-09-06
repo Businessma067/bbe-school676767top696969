@@ -8705,7 +8705,15 @@ Then $y = 5.4 + 1.2 = 6.6$.
 
 Read the figure already produced by the shared solve, then compare it with the claim.
 
-The overview reconstructed Renters coverage at \\$25,000. That is less than \\$30,000.
+The recovered / computed figure is
+
+$$25000$$
+
+The claim asserts
+
+$$30000$$
+
+Those two displays do not agree.
 
 So the statement is True.`,
       `**B.** → False
@@ -8874,9 +8882,9 @@ The populations are equal $t$ years after Year 2 when
 
 $$610 + 72t = 730 + 36t$$
 
-$$
-36t = 120 \\Rightarrow t
-$$
+$$36t = 120 \$$
+
+$$\Rightarrow t$$
 
 $$= \\frac{10}{3}$$
 
@@ -8889,9 +8897,9 @@ So the statement is True.`,
 
 Set $610 + 72t = 730 + 36t$ to find when A catches B:
 
-$$
-36t = 120 \\Rightarrow t
-$$
+$$36t = 120 \$$
+
+$$\Rightarrow t$$
 
 $$= \\frac{10}{3}$$
 
