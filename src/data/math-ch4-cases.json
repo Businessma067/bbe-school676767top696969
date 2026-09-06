@@ -6855,29 +6855,29 @@
       "subsection": "4.5",
       "context": "Evaluate each statement. Mark it TRUE or FALSE.",
       "statements": [
-        "A rectangular garden bed is $4$ m longer than it is wide, and its area is $96$ m$^{2}$. The landscaper concludes that the longer side is $8$ m.",
-        "A ferry covers $135$ km at a steady $90$ km/h and docks at $4$ pm. Boarding therefore began at $2{:}30$ pm.",
-        "Two litres of $15\\%$ bleach must be watered down to $6\\%$. Adding $2$ litres of water is claimed to give the correct concentration.",
-        "With $\\log$ the decadic logarithm, the unique positive solution of $\\log\\sqrt[4]{x} + \\log\\dfrac{1}{x^{2}} - \\log\\sqrt{x} + \\dfrac{5}{2} = \\dfrac{\\log\\sqrt{x}}{1 + \\log 10}$ is larger than $8$.",
-        "A bonus pool of $15250$ EUR is split so the second share is $80\\%$ of the first and the third is $80\\%$ of the second. The second share is then $5000$ EUR."
+        "If one side of a rectangle is by $4$ m longer than the other one and the rectangle's area is $96$ m$^{2}$, then the length of the longer side is $8$ m.",
+        "A car travels at an average speed of $90$ km/h. At 4 pm, it has traveled a total distance of $135$ km. Then it started traveling at 2{:}30 pm.",
+        "A recipe calls for $6\\%$ salt solution. If the cook only has $2$ litres of $15\\%$ salt solution, he needs to mix it with $2$ litres of water to get the right concentration.",
+        "The solution of the equation $\\log\\sqrt[3]{x} + \\log\\dfrac{1}{x^{3}} -\\log\\sqrt{x} + \\dfrac{11}{3} = \\dfrac{\\log x}{1 + \\log 10}$, where $\\log x$ denotes the decadic logarithm of $x$, is smaller than $5$.",
+        "A prize money of $15250$ EUR is supposed to be split among the winners in a way that the $2$nd placed obtains $80\\%$ of the amount the $1$st placed obtains, and the $3$rd placed obtains $80\\%$ of the $2$nd placed. Then the prize for the $2$nd place is $5000$ EUR."
       ],
       "answer_key": [
         false,
         true,
         false,
-        true,
+        false,
         true
       ],
       "tactical_explanations": [
-        "**A.** → False\n\nLet the width be $w$ metres. The length is $w + 4$ and the area is $96$ m$^{2}$:\n\n$$w(w + 4) = 96$$\n\n$$w^{2} + 4w - 96 = 0$$\n\n$$(w + 12)(w - 8) = 0$$\n\nA width must be positive, so $w = 8$. The longer side is then $12$ m, not $8$ m. Check: $8 \\cdot 12 = 96$. The claim confuses the width with the longer side.\n\nSo the statement is False.",
-        "**B.** → True\n\nTravel time is distance divided by speed:\n\n$$t = \\frac{135}{90} = \\frac{3}{2}$$\n\nhours, that is $1$ hour and $30$ minutes. Counting $1$ h $30$ min back from $4$ pm lands at $2{:}30$ pm.\n\nSo the statement is True.",
-        "**C.** → False\n\nTwo litres of $15\\%$ bleach hold $0.30$ litres of pure bleach. For a $6\\%$ mixture:\n\n$$\\frac{0.30}{2 + w} = 0.06$$\n\n$$w = 3$$\n\nAdding only $2$ litres gives concentration $0.30 / 4 = 0.075 = 7.5\\%$, not $6\\%$.\n\nSo the statement is False.",
-        "**D.** → True\n\nLet $L = \\log x$ with $x > 0$. The power rule gives\n\n$$\\frac{1}{4}L - 2L - \\frac{1}{2}L + \\frac{5}{2} = \\frac{\\tfrac{1}{2}L}{1 + 1}$$\n\n$$-\\frac{9}{4}L + \\frac{5}{2} = \\frac{1}{4}L$$\n\n$$\\frac{5}{2} = \\frac{5}{2}L$$\n\n$$L = 1 \\implies x = 10$$\n\nThe solution $10$ is larger than $8$.\n\nSo the statement is True.",
-        "**E.** → True\n\nLet the first share be $a$ EUR. Then\n\n$$a + 0.8a + 0.64a = 15250$$\n\n$$2.44a = 15250$$\n\n$$a = 6250$$\n\nThe second share is $0.8 \\cdot 6250 = 5000$ EUR.\n\nSo the statement is True."
+        "**A.** → False\n\nArea is length times width. Let the shorter side be $x$ m. Then the longer side is $x + 4$, and the area is $96$ m$^{2}$:\n\n$$x(x + 4) = 96$$\n\n$$x^{2} + 4x - 96 = 0$$\n\nThe discriminant is\n\n$$\\Delta = 4^{2} + 4 \\cdot 96 = 400 = 20^{2}$$\n\n$$x = \\dfrac{-4 \\pm 20}{2}$$\n\nso $x = 8$ or $x = -12$. A side length must be positive, so $x = 8$. The longer side is then\n\n$$8 + 4 = 12$$\n\nCheck: $8 \\cdot 12 = 96$. The longer side is $12$ m, not the claimed $8$ m. Substituting a longer side of $8$ m would force a shorter side of $4$ m:\n\n$$4 \\cdot 8 = 32$$\n\nwhich is not $96$.\n\nSo the statement is False.",
+        "**B.** → True\n\nTime on the road is distance divided by average speed:\n\n$$t = \\frac{135}{90}$$\n\n$$t = \\dfrac{3}{2}$$\n\n$$t = 1.5$$\n\nhours. That is $1$ hour and $30$ minutes. Counting $1$ hour back from 4 pm, then a further $30$ minutes, lands at 2{:}30 pm. The recovered start time matches the claim.\n\nSo the statement is True.",
+        "**C.** → False\n\n$2$ litres of $15\\%$ salt solution hold $0.3$ litres of pure salt. After adding $w$ litres of water the total volume is $2 + w$ litres, and the concentration should be $6\\%$:\n\n$$\\frac{0.3}{2 + w} = 0.06$$\n\n$$0.3 = 0.06(2 + w)$$\n\n$$0.3 = 0.12 + 0.06w$$\n\n$$0.18 = 0.06w$$\n\n$$w = \\frac{0.18}{0.06}$$\n\n$$w = 3$$\n\nThe required amount of water is $3$ litres, not the claimed $2$. Substituting the claimed value gives concentration\n\n$$\\frac{0.3}{4} = 0.075$$\n\nwhich is not $0.06$.\n\nSo the statement is False.",
+        "**D.** → False\n\nThroughout, $\\log$ denotes the decadic logarithm, and the domain requires $x > 0$. Write $L = \\log x$ and apply the power rule to every logarithmic term:\n\n$$\\log\\sqrt[3]{x} = \\dfrac{1}{3}L$$\n\n$$\\log\\dfrac{1}{x^{3}} = -3L$$\n\n$$\\log\\sqrt{x} = \\dfrac{1}{2}L$$\n\nso the signed contribution in the equation is $-\\dfrac{1}{2}L$.\n\n$$\\log 10 = 1$$\n\nThe equation becomes\n\n$$\\dfrac{1}{3}L - 3L - \\dfrac{1}{2}L + \\dfrac{11}{3} = \\dfrac{L}{1 + 1}$$\n\nCombine the coefficients of $L$ on the left-hand side:\n\n$$\\text{coefficient sum} = \\dfrac{-19}{6}$$\n\nso\n\n$$\\dfrac{-19}{6}L + \\dfrac{11}{3} = \\dfrac{1}{2}L$$\n\nCollect the $L$-terms:\n\n$$\\dfrac{11}{3} = \\dfrac{1}{2}L - (\\dfrac{-19}{6})L$$\n\n$$\\dfrac{11}{3} = \\dfrac{11}{3}L$$\n\n$$L = 1$$\n\n$$x = 10^{1} = 10$$\n\nThe unique positive solution is $x = 10$, which is not smaller than $5$.\n\nSo the statement is False.",
+        "**E.** → True\n\nLet the first-place prize be $a$ EUR. Then second place is $80\\%$ of first place, and third place is $80\\%$ of second place:\n\n$$0.8a$$\n\n$$0.8 \\cdot 0.8a = 0.64a$$\n\nThe three prizes sum to $15250$ EUR:\n\n$$a + 0.8a + 0.64a = 15250$$\n\n$$2.44a = 15250$$\n\n$$a = \\frac{15250}{2.44}$$\n\n$$a = 6250$$\n\nFirst place is $6250$ EUR, so second place is\n\n$$0.8 \\cdot 6250 = 5000$$\n\nThat $5000$ is the second-place prize in EUR, matching the claim.\n\nSo the statement is True."
       ],
       "difficulty_level": "5/5",
       "sort_order": 215,
-      "solution_overview": "Independent stories: a garden rectangle, a ferry timetable, bleach dilution, a composite logarithm, and an $80\\%$ bonus chain.",
+      "solution_overview": "Five independent closed claims spanning the chapter. Translate each story into one equation (a rectangle-area quadratic, a $t = d/v$ start time, a dilution, a composite decadic logarithm, and a percentage prize split), then isolate the unknown and compare with the claim.\n\nFor the quadratic, keep only a positive side length. For the logarithm, set $L = \\log x$, reduce with the power rule, and recover $x = 10^{L}$.\n\nEach letter is a separate mini-problem; do not reuse a root from another letter.",
       "placeholder": false
     },
     {
@@ -6887,29 +6887,29 @@
       "subsection": "4.5",
       "context": "Evaluate each statement. Mark it TRUE or FALSE.",
       "statements": [
-        "A father is $28$ years older than his son. In $8$ years the father will be twice as old as the son will be then. A classmate concludes the son is now $18$.",
-        "A $20$ cm by $12$ cm photograph is mounted with a uniform frame so that the outer area is twice the photograph. The frame width is $2$ cm.",
-        "A courier cycles $48$ km at $16$ km/h and arrives at $11{:}00$. The courier therefore left at $8{:}15$.",
-        "A juice blend of $2.5$ litres at $12\\%$ pulp must be thinned to $8\\%$ pulp. Adding $1.25$ litres of water succeeds.",
-        "A scholarship fund of $8750$ EUR is divided so that the runner-up receives half of the winner and third place receives half of the runner-up. The runner-up's award is $2500$ EUR."
+        "If one side of a rectangle is by $6$ cm longer than the other one and the rectangle's area is $55$ cm$^{2}$, then the length of the longer side is $5$ cm.",
+        "A ferry travels at an average speed of $64$ km/h. At 3 pm, it has traveled a total distance of $112$ km. Then it started traveling at 1{:}15 pm.",
+        "A recipe calls for $4\\%$ vinegar solution. If the cook only has $1.5$ litres of $10\\%$ vinegar solution, he needs to mix it with $2.25$ litres of water to get the right concentration.",
+        "The solution of the equation $\\log\\sqrt[4]{x} + \\log\\dfrac{1}{x^{2}} -\\log\\sqrt{x} + \\dfrac{5}{2} = \\dfrac{\\log\\sqrt{x}}{1 + \\log 10}$, where $\\log x$ denotes the decadic logarithm of $x$, is larger than $8$.",
+        "A bonus pool of $12200$ EUR is supposed to be split among the winners in a way that the $2$nd placed obtains $80\\%$ of the amount the $1$st placed obtains, and the $3$rd placed obtains $80\\%$ of the $2$nd placed. Then the prize for the $2$nd place is $4000$ EUR."
       ],
       "answer_key": [
         false,
         true,
-        false,
+        true,
         true,
         true
       ],
       "tactical_explanations": [
-        "**A.** → False\n\nLet the son's present age be $s$ years. In eight years:\n\n$$s + 28 + 8 = 2(s + 8)$$\n\n$$s + 36 = 2s + 16$$\n\n$$s = 20$$\n\nThe son is $20$, not $18$. Check: in eight years they are $28$ and $56$, and $56 = 2 \\cdot 28$.\n\nSo the statement is False.",
-        "**B.** → True\n\nPhotograph area $20 \\cdot 12 = 240$, so the outer area is $480$. With frame width $x$ cm:\n\n$$(20 + 2x)(12 + 2x) = 480$$\n\n$$4x^{2} + 64x + 240 = 480$$\n\n$$x^{2} + 16x - 60 = 0$$\n\n$$(x + 18)(x - 2) = 0$$\n\nThe positive root is $x = 2$ cm.\n\nSo the statement is True.",
-        "**C.** → False\n\n$$t = \\frac{48}{16} = 3$$\n\nhours. Three hours before $11{:}00$ is $8{:}00$, not $8{:}15$.\n\nSo the statement is False.",
-        "**D.** → True\n\nPulp volume $2.5 \\cdot 0.12 = 0.30$ litres. Target $8\\%$:\n\n$$\\frac{0.30}{2.5 + w} = 0.08$$\n\n$$w = 1.25$$\n\nCheck: $0.30 / 3.75 = 0.08$.\n\nSo the statement is True.",
-        "**E.** → True\n\n$$a + 0.5a + 0.25a = 8750$$\n\n$$1.75a = 8750$$\n\n$$a = 5000$$\n\nRunner-up: $0.5 \\cdot 5000 = 2500$ EUR.\n\nSo the statement is True."
+        "**A.** → False\n\nArea is length times width. Let the shorter side be $x$ cm. Then the longer side is $x + 6$, and the area is $55$ cm$^{2}$:\n\n$$x(x + 6) = 55$$\n\n$$x^{2} + 6x - 55 = 0$$\n\nThe discriminant is\n\n$$\\Delta = 6^{2} + 4 \\cdot 55 = 256 = 16^{2}$$\n\n$$x = \\dfrac{-6 \\pm 16}{2}$$\n\nso $x = 5$ or $x = -11$. A side length must be positive, so $x = 5$. The longer side is then\n\n$$5 + 6 = 11$$\n\nCheck: $5 \\cdot 11 = 55$. The longer side is $11$ cm, not the claimed $5$ cm. Substituting a longer side of $5$ cm would force a shorter side of $-1$ cm:\n\n$$-1 \\cdot 5 = -5$$\n\nwhich is not $55$.\n\nSo the statement is False.",
+        "**B.** → True\n\nTime on the road is distance divided by average speed:\n\n$$t = \\frac{112}{64}$$\n\n$$t = \\dfrac{7}{4}$$\n\n$$t = 1.75$$\n\nhours. That is $1$ hour and $45$ minutes. Counting $1$ hour back from 3 pm, then a further $45$ minutes, lands at 1{:}15 pm. The recovered start time matches the claim.\n\nSo the statement is True.",
+        "**C.** → True\n\n$1.5$ litres of $10\\%$ vinegar solution hold $0.15$ litres of pure vinegar. After adding $w$ litres of water the total volume is $1.5 + w$ litres, and the concentration should be $4\\%$:\n\n$$\\frac{0.15}{1.5 + w} = 0.04$$\n\n$$0.15 = 0.04(1.5 + w)$$\n\n$$0.15 = 0.06 + 0.04w$$\n\n$$0.09 = 0.04w$$\n\n$$w = \\frac{0.09}{0.04}$$\n\n$$w = 2.25$$\n\nThat $2.25$ is the litres of water to add. Substituting it recovers the $4\\%$ concentration:\n\n$$1.5 + 2.25 = 3.75$$\n\n$$\\frac{0.15}{3.75} = 0.04$$\n\nwhich matches the recipe.\n\nSo the statement is True.",
+        "**D.** → True\n\nThroughout, $\\log$ denotes the decadic logarithm, and the domain requires $x > 0$. Write $L = \\log x$ and apply the power rule to every logarithmic term:\n\n$$\\log\\sqrt[4]{x} = \\dfrac{1}{4}L$$\n\n$$\\log\\dfrac{1}{x^{2}} = -2L$$\n\n$$\\log\\sqrt{x} = \\dfrac{1}{2}L$$\n\nso the signed contribution in the equation is $-\\dfrac{1}{2}L$.\n\n$$\\log 10 = 1$$\n\nThe equation becomes\n\n$$\\dfrac{1}{4}L - 2L - \\dfrac{1}{2}L + \\dfrac{5}{2} = \\dfrac{\\dfrac{1}{2}L}{1 + 1}$$\n\nCombine the coefficients of $L$ on the left-hand side:\n\n$$\\text{coefficient sum} = \\dfrac{-9}{4}$$\n\nso\n\n$$\\dfrac{-9}{4}L + \\dfrac{5}{2} = \\dfrac{1}{4}L$$\n\nCollect the $L$-terms:\n\n$$\\dfrac{5}{2} = \\dfrac{1}{4}L - (\\dfrac{-9}{4})L$$\n\n$$\\dfrac{5}{2} = \\dfrac{5}{2}L$$\n\n$$L = 1$$\n\n$$x = 10^{1} = 10$$\n\nThe unique positive solution is $x = 10$, which is larger than $8$.\n\nSo the statement is True.",
+        "**E.** → True\n\nLet the first-place prize be $a$ EUR. Then second place is $80\\%$ of first place, and third place is $80\\%$ of second place:\n\n$$0.8a$$\n\n$$0.8 \\cdot 0.8a = 0.64a$$\n\nThe three prizes sum to $12200$ EUR:\n\n$$a + 0.8a + 0.64a = 12200$$\n\n$$2.44a = 12200$$\n\n$$a = \\frac{12200}{2.44}$$\n\n$$a = 5000$$\n\nFirst place is $5000$ EUR, so second place is\n\n$$0.8 \\cdot 5000 = 4000$$\n\nThat $4000$ is the second-place prize in EUR, matching the claim.\n\nSo the statement is True."
       ],
       "difficulty_level": "5/5",
       "sort_order": 216,
-      "solution_overview": "Independent claims mixing an age relation, a framed photograph, a cycling timetable, a juice dilution, and a half-share scholarship split.",
+      "solution_overview": "Five independent closed claims spanning the chapter. Translate each story into one equation (a rectangle-area quadratic, a $t = d/v$ start time, a dilution, a composite decadic logarithm, and a percentage prize split), then isolate the unknown and compare with the claim.\n\nFor the quadratic, keep only a positive side length. For the logarithm, set $L = \\log x$, reduce with the power rule, and recover $x = 10^{L}$.\n\nEach letter is a separate mini-problem; do not reuse a root from another letter.",
       "placeholder": false
     },
     {
@@ -6919,29 +6919,29 @@
       "subsection": "4.5",
       "context": "Evaluate each statement. Mark it TRUE or FALSE.",
       "statements": [
-        "The sum of three consecutive odd integers is $75$. The largest of them is therefore $29$.",
-        "A train $150$ m long passes a signal post in $10$ seconds. Its speed is then $54$ km/h.",
-        "One litre of $20\\%$ acid is diluted to $8\\%$. The chemist must add $1.5$ litres of water.",
-        "The solution of $\\log\\sqrt{x} + \\log\\dfrac{1}{x^{2}} - \\log\\sqrt[3]{x} + \\dfrac{5}{2} = \\dfrac{\\log x^{2}}{1 + \\log 100}$, where $\\log$ is decadic, is smaller than $20$.",
-        "Tournament prize money of $12200$ EUR is split with each lower place getting $80\\%$ of the place above. Second place receives $4000$ EUR."
+        "If one side of a rectangle is by $3$ cm longer than the other one and the rectangle's area is $70$ cm$^{2}$, then the length of the longer side is $7$ cm.",
+        "A coach travels at an average speed of $80$ km/h. At 5 pm, it has traveled a total distance of $100$ km. Then it started traveling at 3{:}30 pm.",
+        "A recipe calls for $5\\%$ bleach solution. If the cook only has $1$ litre of $8\\%$ bleach solution, he needs to mix it with $0.6$ litres of water to get the right concentration.",
+        "The solution of the equation $\\log\\sqrt{x} + \\log\\dfrac{1}{x^{2}} -\\log\\sqrt[3]{x} + 5 = \\dfrac{\\log x^{2}}{1 + \\log 100}$, where $\\log x$ denotes the decadic logarithm of $x$, is smaller than $50$.",
+        "A scholarship fund of $10950$ EUR is supposed to be split among the winners in a way that the $2$nd placed obtains $70\\%$ of the amount the $1$st placed obtains, and the $3$rd placed obtains $70\\%$ of the $2$nd placed. Then the prize for the $2$nd place is $3500$ EUR."
       ],
       "answer_key": [
         false,
-        true,
+        false,
         true,
         false,
         true
       ],
       "tactical_explanations": [
-        "**A.** → False\n\nLet the smallest odd integer be $n$:\n\n$$n + (n + 2) + (n + 4) = 75$$\n\n$$3n + 6 = 75$$\n\n$$n = 23$$\n\nThe three integers are $23$, $25$, and $27$. The largest is $27$, not $29$. The triple ending at $29$ sums to $81$.\n\nSo the statement is False.",
-        "**B.** → True\n\nIn $10$ seconds the train covers its own length $150$ m:\n\n$$v = \\frac{150}{10} = 15\\ \\text{m/s}$$\n\n$$15 \\cdot \\frac{18}{5} = 54\\ \\text{km/h}$$\n\nThe claimed speed matches.\n\nSo the statement is True.",
-        "**C.** → True\n\nPure acid $0.20$ litres. Target $8\\%$:\n\n$$\\frac{0.20}{1 + w} = 0.08$$\n\n$$w = 1.5$$\n\nCheck: $0.20 / 2.5 = 0.08$.\n\nSo the statement is True.",
-        "**D.** → False\n\nLet $L = \\log x$. Then\n\n$$\\frac{1}{2}L - 2L - \\frac{1}{3}L + \\frac{5}{2} = \\frac{2L}{1 + 2}$$\n\n$$\\left(\\frac{3}{6} - \\frac{12}{6} - \\frac{2}{6}\\right)L + \\frac{5}{2} = \\frac{2L}{3}$$\n\n$$-\\frac{11}{6}L + \\frac{5}{2} = \\frac{2}{3}L$$\n\n$$\\frac{5}{2} = \\frac{15}{6}L$$\n\n$$L = 1 \\implies x = 10$$\n\nThe solution $10$ is not smaller than $20$.\n\nSo the statement is False.",
-        "**E.** → True\n\n$$a + 0.8a + 0.64a = 12200$$\n\n$$2.44a = 12200$$\n\n$$a = 5000$$\n\nSecond place: $0.8 \\cdot 5000 = 4000$ EUR.\n\nSo the statement is True."
+        "**A.** → False\n\nArea is length times width. Let the shorter side be $x$ cm. Then the longer side is $x + 3$, and the area is $70$ cm$^{2}$:\n\n$$x(x + 3) = 70$$\n\n$$x^{2} + 3x - 70 = 0$$\n\nThe discriminant is\n\n$$\\Delta = 3^{2} + 4 \\cdot 70 = 289 = 17^{2}$$\n\n$$x = \\dfrac{-3 \\pm 17}{2}$$\n\nso $x = 7$ or $x = -10$. A side length must be positive, so $x = 7$. The longer side is then\n\n$$7 + 3 = 10$$\n\nCheck: $7 \\cdot 10 = 70$. The longer side is $10$ cm, not the claimed $7$ cm. Substituting a longer side of $7$ cm would force a shorter side of $4$ cm:\n\n$$4 \\cdot 7 = 28$$\n\nwhich is not $70$.\n\nSo the statement is False.",
+        "**B.** → False\n\nTime on the road is distance divided by average speed:\n\n$$t = \\frac{100}{80}$$\n\n$$t = \\dfrac{5}{4}$$\n\n$$t = 1.25$$\n\nhours. That is $1$ hour and $15$ minutes. Counting $1$ hour back from 5 pm, then a further $15$ minutes, lands at 3{:}45 pm, not the claimed 3{:}30 pm.\n\nSo the statement is False.",
+        "**C.** → True\n\n$1$ litre of $8\\%$ bleach solution hold $0.08$ litres of pure bleach. After adding $w$ litres of water the total volume is $1 + w$ litres, and the concentration should be $5\\%$:\n\n$$\\frac{0.08}{1 + w} = 0.05$$\n\n$$0.08 = 0.05(1 + w)$$\n\n$$0.08 = 0.05 + 0.05w$$\n\n$$0.03 = 0.05w$$\n\n$$w = \\frac{0.03}{0.05}$$\n\n$$w = 0.6$$\n\nThat $0.6$ is the litres of water to add. Substituting it recovers the $5\\%$ concentration:\n\n$$1 + 0.6 = 1.6$$\n\n$$\\frac{0.08}{1.6} = 0.05$$\n\nwhich matches the recipe.\n\nSo the statement is True.",
+        "**D.** → False\n\nThroughout, $\\log$ denotes the decadic logarithm, and the domain requires $x > 0$. Write $L = \\log x$ and apply the power rule to every logarithmic term:\n\n$$\\log\\sqrt{x} = \\dfrac{1}{2}L$$\n\n$$\\log\\dfrac{1}{x^{2}} = -2L$$\n\n$$\\log\\sqrt[3]{x} = \\dfrac{1}{3}L$$\n\nso the signed contribution in the equation is $-\\dfrac{1}{3}L$.\n\n$$\\log 100 = 2$$\n\nThe equation becomes\n\n$$\\dfrac{1}{2}L - 2L - \\dfrac{1}{3}L + 5 = \\dfrac{2L}{1 + 2}$$\n\nCombine the coefficients of $L$ on the left-hand side:\n\n$$\\text{coefficient sum} = \\dfrac{-11}{6}$$\n\nso\n\n$$\\dfrac{-11}{6}L + 5 = \\dfrac{2}{3}L$$\n\nCollect the $L$-terms:\n\n$$5 = \\dfrac{2}{3}L - (\\dfrac{-11}{6})L$$\n\n$$5 = \\dfrac{5}{2}L$$\n\n$$L = 2$$\n\n$$x = 10^{2} = 100$$\n\nThe unique positive solution is $x = 100$, which is not smaller than $50$.\n\nSo the statement is False.",
+        "**E.** → True\n\nLet the first-place prize be $a$ EUR. Then second place is $70\\%$ of first place, and third place is $70\\%$ of second place:\n\n$$0.7a$$\n\n$$0.7 \\cdot 0.7a = 0.49a$$\n\nThe three prizes sum to $10950$ EUR:\n\n$$a + 0.7a + 0.49a = 10950$$\n\n$$2.19a = 10950$$\n\n$$a = \\frac{10950}{2.19}$$\n\n$$a = 5000$$\n\nFirst place is $5000$ EUR, so second place is\n\n$$0.7 \\cdot 5000 = 3500$$\n\nThat $3500$ is the second-place prize in EUR, matching the claim.\n\nSo the statement is True."
       ],
       "difficulty_level": "5/5",
       "sort_order": 217,
-      "solution_overview": "Independent claims: consecutive odd integers, a train passing a post, acid dilution, a composite logarithm, and an $80\\%$ tournament split.",
+      "solution_overview": "Five independent closed claims spanning the chapter. Translate each story into one equation (a rectangle-area quadratic, a $t = d/v$ start time, a dilution, a composite decadic logarithm, and a percentage prize split), then isolate the unknown and compare with the claim.\n\nFor the quadratic, keep only a positive side length. For the logarithm, set $L = \\log x$, reduce with the power rule, and recover $x = 10^{L}$.\n\nEach letter is a separate mini-problem; do not reuse a root from another letter.",
       "placeholder": false
     },
     {
@@ -6951,29 +6951,29 @@
       "subsection": "4.5",
       "context": "Evaluate each statement. Mark it TRUE or FALSE.",
       "statements": [
-        "A rectangular parking lot is $6$ m longer than it is wide, and its perimeter is $64$ m. The longer side is $19$ m.",
-        "A bus travels $210$ km at $70$ km/h and reaches the depot at $6$ pm. It left at $3$ pm.",
-        "Three litres of milk with $4.8\\%$ fat are diluted with water to $3.2\\%$ fat. Then $1.5$ litres of water must be added.",
-        "The equation $2^{x} = 64$ has unique real solution $x = 5$.",
-        "An inheritance of $14625$ EUR is shared so each next heir gets $80\\%$ of the previous heir. The middle heir receives $4800$ EUR."
+        "If one side of a rectangle is by $5$ cm longer than the other one and the rectangle's area is $150$ cm$^{2}$, then the length of the longer side is $15$ cm.",
+        "A delivery van travels at an average speed of $70$ km/h. At 6 pm, it has traveled a total distance of $210$ km. Then it started traveling at 3 pm.",
+        "A recipe calls for $8\\%$ acid solution. If the cook only has $2$ litres of $12\\%$ acid solution, he needs to mix it with $1$ litre of water to get the right concentration.",
+        "The solution of the equation $\\log\\sqrt[3]{x} + \\log\\dfrac{1}{x^{2}} -\\log\\sqrt{x} + \\dfrac{8}{3} = \\dfrac{\\log x}{1 + \\log 10}$, where $\\log x$ denotes the decadic logarithm of $x$, is larger than $5$.",
+        "A tournament purse of $14640$ EUR is supposed to be split among the winners in a way that the $2$nd placed obtains $80\\%$ of the amount the $1$st placed obtains, and the $3$rd placed obtains $80\\%$ of the $2$nd placed. Then the prize for the $2$nd place is $4800$ EUR."
       ],
       "answer_key": [
         true,
         true,
         true,
-        false,
+        true,
         true
       ],
       "tactical_explanations": [
-        "**A.** → True\n\nLet the width be $w$. Length $w + 6$ and perimeter $64$:\n\n$$2\\bigl(w + (w + 6)\\bigr) = 64$$\n\n$$2(2w + 6) = 64$$\n\n$$2w + 6 = 32$$\n\n$$w = 13$$\n\nLonger side $19$ m. Check: $2(13 + 19) = 64$.\n\nSo the statement is True.",
-        "**B.** → True\n\n$$t = \\frac{210}{70} = 3$$\n\nhours. Three hours before $6$ pm is $3$ pm.\n\nSo the statement is True.",
-        "**C.** → True\n\nFat volume $3 \\cdot 0.048 = 0.144$. Target $3.2\\%$:\n\n$$\\frac{0.144}{3 + w} = 0.032$$\n\n$$w = 1.5$$\n\nCheck: $0.144 / 4.5 = 0.032$.\n\nSo the statement is True.",
-        "**D.** → False\n\n$$64 = 2^{6}$$, so $2^{x} = 2^{6}$ forces $x = 6$, not $5$.\n\nSo the statement is False.",
-        "**E.** → True\n\n$$a + 0.8a + 0.64a = 14625$$\n\n$$2.44a = 14625$$\n\n$$a = 6000$$\n\nMiddle heir: $0.8 \\cdot 6000 = 4800$ EUR.\n\nSo the statement is True."
+        "**A.** → True\n\nArea is length times width. Let the shorter side be $x$ cm. Then the longer side is $x + 5$, and the area is $150$ cm$^{2}$:\n\n$$x(x + 5) = 150$$\n\n$$x^{2} + 5x - 150 = 0$$\n\nThe discriminant is\n\n$$\\Delta = 5^{2} + 4 \\cdot 150 = 625 = 25^{2}$$\n\n$$x = \\dfrac{-5 \\pm 25}{2}$$\n\nso $x = 10$ or $x = -15$. A side length must be positive, so $x = 10$. The longer side is then\n\n$$10 + 5 = 15$$\n\nCheck: $10 \\cdot 15 = 150$. The longer side is $15$ cm, matching the claim.\n\nSo the statement is True.",
+        "**B.** → True\n\nTime on the road is distance divided by average speed:\n\n$$t = \\frac{210}{70}$$\n\n$$t = 3$$\n\n$$t = 3$$\n\nhours. That is exactly $3$ hours. Counting $3$ hours back from 6 pm, lands at 3 pm. The recovered start time matches the claim.\n\nSo the statement is True.",
+        "**C.** → True\n\n$2$ litres of $12\\%$ acid solution hold $0.24$ litres of pure acid. After adding $w$ litres of water the total volume is $2 + w$ litres, and the concentration should be $8\\%$:\n\n$$\\frac{0.24}{2 + w} = 0.08$$\n\n$$0.24 = 0.08(2 + w)$$\n\n$$0.24 = 0.16 + 0.08w$$\n\n$$0.08 = 0.08w$$\n\n$$w = \\frac{0.08}{0.08}$$\n\n$$w = 1$$\n\nThat $1$ is the litres of water to add. Substituting it recovers the $8\\%$ concentration:\n\n$$2 + 1 = 3$$\n\n$$\\frac{0.24}{3} = 0.08$$\n\nwhich matches the recipe.\n\nSo the statement is True.",
+        "**D.** → True\n\nThroughout, $\\log$ denotes the decadic logarithm, and the domain requires $x > 0$. Write $L = \\log x$ and apply the power rule to every logarithmic term:\n\n$$\\log\\sqrt[3]{x} = \\dfrac{1}{3}L$$\n\n$$\\log\\dfrac{1}{x^{2}} = -2L$$\n\n$$\\log\\sqrt{x} = \\dfrac{1}{2}L$$\n\nso the signed contribution in the equation is $-\\dfrac{1}{2}L$.\n\n$$\\log 10 = 1$$\n\nThe equation becomes\n\n$$\\dfrac{1}{3}L - 2L - \\dfrac{1}{2}L + \\dfrac{8}{3} = \\dfrac{L}{1 + 1}$$\n\nCombine the coefficients of $L$ on the left-hand side:\n\n$$\\text{coefficient sum} = \\dfrac{-13}{6}$$\n\nso\n\n$$\\dfrac{-13}{6}L + \\dfrac{8}{3} = \\dfrac{1}{2}L$$\n\nCollect the $L$-terms:\n\n$$\\dfrac{8}{3} = \\dfrac{1}{2}L - (\\dfrac{-13}{6})L$$\n\n$$\\dfrac{8}{3} = \\dfrac{8}{3}L$$\n\n$$L = 1$$\n\n$$x = 10^{1} = 10$$\n\nThe unique positive solution is $x = 10$, which is larger than $5$.\n\nSo the statement is True.",
+        "**E.** → True\n\nLet the first-place prize be $a$ EUR. Then second place is $80\\%$ of first place, and third place is $80\\%$ of second place:\n\n$$0.8a$$\n\n$$0.8 \\cdot 0.8a = 0.64a$$\n\nThe three prizes sum to $14640$ EUR:\n\n$$a + 0.8a + 0.64a = 14640$$\n\n$$2.44a = 14640$$\n\n$$a = \\frac{14640}{2.44}$$\n\n$$a = 6000$$\n\nFirst place is $6000$ EUR, so second place is\n\n$$0.8 \\cdot 6000 = 4800$$\n\nThat $4800$ is the second-place prize in EUR, matching the claim.\n\nSo the statement is True."
       ],
       "difficulty_level": "5/5",
       "sort_order": 218,
-      "solution_overview": "Independent claims: a parking-lot perimeter, a bus timetable, milk-fat dilution, an exponential base-$2$ equation, and an $80\\%$ inheritance chain.",
+      "solution_overview": "Five independent closed claims spanning the chapter. Translate each story into one equation (a rectangle-area quadratic, a $t = d/v$ start time, a dilution, a composite decadic logarithm, and a percentage prize split), then isolate the unknown and compare with the claim.\n\nFor the quadratic, keep only a positive side length. For the logarithm, set $L = \\log x$, reduce with the power rule, and recover $x = 10^{L}$.\n\nEach letter is a separate mini-problem; do not reuse a root from another letter.",
       "placeholder": false
     },
     {
@@ -6983,29 +6983,29 @@
       "subsection": "4.5",
       "context": "Evaluate each statement. Mark it TRUE or FALSE.",
       "statements": [
-        "A square courtyard of side $10$ m is edged by a uniform $1$ m path. The path area is claimed to be $40$ m$^{2}$.",
-        "A hiker walks $18$ km at $4.5$ km/h and finishes at $17{:}00$. The hike began at $13{:}00$.",
-        "Four litres of paint at $25\\%$ pigment are thinned to $10\\%$. Water to add is $6$ litres.",
-        "Decadic $\\log$: the solution of $\\log x^{2} - \\log\\sqrt[3]{x} = \\dfrac{5}{3}$ is a two-digit integer.",
-        "Sales commissions totaling $9100$ EUR are paid so the second is $60\\%$ of the first and the third is $60\\%$ of the second. The second commission is $3000$ EUR."
+        "If one side of a rectangle is by $8$ m longer than the other one and the rectangle's area is $240$ m$^{2}$, then the length of the longer side is $12$ m.",
+        "A express train travels at an average speed of $64$ km/h. At 2 pm, it has traveled a total distance of $96$ km. Then it started traveling at 12{:}15 pm.",
+        "A recipe calls for $8\\%$ alcohol solution. If the cook only has $2.5$ litres of $12\\%$ alcohol solution, he needs to mix it with $1$ litre of water to get the right concentration.",
+        "The solution of the equation $\\log\\sqrt[4]{x} + \\log\\dfrac{1}{x^{3}} -\\log\\sqrt[3]{x} + \\dfrac{15}{4} = \\dfrac{\\log x^{2}}{1 + \\log 100}$, where $\\log x$ denotes the decadic logarithm of $x$, is smaller than $5$.",
+        "A grant award of $8750$ EUR is supposed to be split among the winners in a way that the $2$nd placed obtains $50\\%$ of the amount the $1$st placed obtains, and the $3$rd placed obtains $50\\%$ of the $2$nd placed. Then the prize for the $2$nd place is $2500$ EUR."
       ],
       "answer_key": [
         false,
-        true,
-        true,
-        true,
-        false
+        false,
+        false,
+        false,
+        true
       ],
       "tactical_explanations": [
-        "**A.** → False\n\nOuter square side $12$ m. Path area:\n\n$$12^{2} - 10^{2} = 144 - 100 = 44$$\n\nsquare metres, not $40$.\n\nSo the statement is False.",
-        "**B.** → True\n\n$$t = \\frac{18}{4.5} = 4$$\n\nhours. Four hours before $17{:}00$ is $13{:}00$.\n\nSo the statement is True.",
-        "**C.** → True\n\nPigment $4 \\cdot 0.25 = 1$ litre. Target $10\\%$:\n\n$$\\frac{1}{4 + w} = 0.10$$\n\n$$w = 6$$\n\nCheck: $1 / 10 = 0.10$.\n\nSo the statement is True.",
-        "**D.** → True\n\n$$2L - \\frac{1}{3}L = \\frac{5}{3}$$\n\n$$\\frac{5}{3}L = \\frac{5}{3}$$\n\n$$L = 1 \\implies x = 10$$\n\nThe integer $10$ has two digits.\n\nSo the statement is True.",
-        "**E.** → False\n\n$$a + 0.6a + 0.36a = 9100$$\n\n$$1.96a = 9100$$\n\n$$a = \\frac{9100}{1.96} = 4642.857\\ldots$$\n\nSecond commission $0.6a \\approx 2785.71$ EUR, not $3000$.\n\nSo the statement is False."
+        "**A.** → False\n\nArea is length times width. Let the shorter side be $x$ m. Then the longer side is $x + 8$, and the area is $240$ m$^{2}$:\n\n$$x(x + 8) = 240$$\n\n$$x^{2} + 8x - 240 = 0$$\n\nThe discriminant is\n\n$$\\Delta = 8^{2} + 4 \\cdot 240 = 1024 = 32^{2}$$\n\n$$x = \\dfrac{-8 \\pm 32}{2}$$\n\nso $x = 12$ or $x = -20$. A side length must be positive, so $x = 12$. The longer side is then\n\n$$12 + 8 = 20$$\n\nCheck: $12 \\cdot 20 = 240$. The longer side is $20$ m, not the claimed $12$ m. Substituting a longer side of $12$ m would force a shorter side of $4$ m:\n\n$$4 \\cdot 12 = 48$$\n\nwhich is not $240$.\n\nSo the statement is False.",
+        "**B.** → False\n\nTime on the road is distance divided by average speed:\n\n$$t = \\frac{96}{64}$$\n\n$$t = \\dfrac{3}{2}$$\n\n$$t = 1.5$$\n\nhours. That is $1$ hour and $30$ minutes. Counting $1$ hour back from 2 pm, then a further $30$ minutes, lands at 12{:}30 pm, not the claimed 12{:}15 pm.\n\nSo the statement is False.",
+        "**C.** → False\n\n$2.5$ litres of $12\\%$ alcohol solution hold $0.3$ litres of pure alcohol. After adding $w$ litres of water the total volume is $2.5 + w$ litres, and the concentration should be $8\\%$:\n\n$$\\frac{0.3}{2.5 + w} = 0.08$$\n\n$$0.3 = 0.08(2.5 + w)$$\n\n$$0.3 = 0.2 + 0.08w$$\n\n$$0.1 = 0.08w$$\n\n$$w = \\frac{0.1}{0.08}$$\n\n$$w = 1.25$$\n\nThe required amount of water is $1.25$ litres, not the claimed $1$. Substituting the claimed value gives concentration\n\n$$\\frac{0.3}{3.5} = 0.0857143$$\n\nwhich is not $0.08$.\n\nSo the statement is False.",
+        "**D.** → False\n\nThroughout, $\\log$ denotes the decadic logarithm, and the domain requires $x > 0$. Write $L = \\log x$ and apply the power rule to every logarithmic term:\n\n$$\\log\\sqrt[4]{x} = \\dfrac{1}{4}L$$\n\n$$\\log\\dfrac{1}{x^{3}} = -3L$$\n\n$$\\log\\sqrt[3]{x} = \\dfrac{1}{3}L$$\n\nso the signed contribution in the equation is $-\\dfrac{1}{3}L$.\n\n$$\\log 100 = 2$$\n\nThe equation becomes\n\n$$\\dfrac{1}{4}L - 3L - \\dfrac{1}{3}L + \\dfrac{15}{4} = \\dfrac{2L}{1 + 2}$$\n\nCombine the coefficients of $L$ on the left-hand side:\n\n$$\\text{coefficient sum} = \\dfrac{-37}{12}$$\n\nso\n\n$$\\dfrac{-37}{12}L + \\dfrac{15}{4} = \\dfrac{2}{3}L$$\n\nCollect the $L$-terms:\n\n$$\\dfrac{15}{4} = \\dfrac{2}{3}L - (\\dfrac{-37}{12})L$$\n\n$$\\dfrac{15}{4} = \\dfrac{15}{4}L$$\n\n$$L = 1$$\n\n$$x = 10^{1} = 10$$\n\nThe unique positive solution is $x = 10$, which is not smaller than $5$.\n\nSo the statement is False.",
+        "**E.** → True\n\nLet the first-place prize be $a$ EUR. Then second place is $50\\%$ of first place, and third place is $50\\%$ of second place:\n\n$$0.5a$$\n\n$$0.5 \\cdot 0.5a = 0.25a$$\n\nThe three prizes sum to $8750$ EUR:\n\n$$a + 0.5a + 0.25a = 8750$$\n\n$$1.75a = 8750$$\n\n$$a = \\frac{8750}{1.75}$$\n\n$$a = 5000$$\n\nFirst place is $5000$ EUR, so second place is\n\n$$0.5 \\cdot 5000 = 2500$$\n\nThat $2500$ is the second-place prize in EUR, matching the claim.\n\nSo the statement is True."
       ],
       "difficulty_level": "5/5",
       "sort_order": 219,
-      "solution_overview": "Independent claims: a square path border, a hike timetable, paint thinning, a short logarithmic equation, and a $60\\%$ commission chain.",
+      "solution_overview": "Five independent closed claims spanning the chapter. Translate each story into one equation (a rectangle-area quadratic, a $t = d/v$ start time, a dilution, a composite decadic logarithm, and a percentage prize split), then isolate the unknown and compare with the claim.\n\nFor the quadratic, keep only a positive side length. For the logarithm, set $L = \\log x$, reduce with the power rule, and recover $x = 10^{L}$.\n\nEach letter is a separate mini-problem; do not reuse a root from another letter.",
       "placeholder": false
     },
     {
@@ -7015,29 +7015,29 @@
       "subsection": "4.5",
       "context": "Evaluate each statement. Mark it TRUE or FALSE.",
       "statements": [
-        "Two printers finish a job together in $4$ hours. The faster alone needs $6$ hours. Then the slower alone needs $12$ hours.",
-        "A rectangle is $3$ cm longer than it is wide and has area $40$ cm$^{2}$. The longer side is $8$ cm.",
-        "A barista has $0.8$ litres of $10\\%$ syrup and wants $4\\%$ syrup. Mixing with $1.2$ litres of water works.",
-        "The equation $|2x - 6| = 10$ has exactly one real solution.",
-        "Prize money $10950$ EUR with each lower place getting $70\\%$ of the place above yields $3500$ EUR for second place."
+        "If one side of a rectangle is by $2$ cm longer than the other one and the rectangle's area is $48$ cm$^{2}$, then the length of the longer side is $8$ cm.",
+        "A minibus travels at an average speed of $60$ km/h. At 1{:}30 pm, it has traveled a total distance of $150$ km. Then it started traveling at 11 am.",
+        "A recipe calls for $8\\%$ pulp solution. If the cook only has $1$ litre of $20\\%$ pulp solution, he needs to mix it with $1.5$ litres of water to get the right concentration.",
+        "The solution of the equation $\\log\\sqrt{x} + \\log\\dfrac{1}{x} -\\log x + \\dfrac{11}{6} = \\dfrac{\\log x}{1 + \\log 100}$, where $\\log x$ denotes the decadic logarithm of $x$, is the integer $10$.",
+        "A royalty pool of $18300$ EUR is supposed to be split among the winners in a way that the $2$nd placed obtains $80\\%$ of the amount the $1$st placed obtains, and the $3$rd placed obtains $80\\%$ of the $2$nd placed. Then the prize for the $2$nd place is $6000$ EUR."
       ],
       "answer_key": [
         true,
         true,
         true,
-        false,
+        true,
         true
       ],
       "tactical_explanations": [
-        "**A.** → True\n\nCombined rate equation:\n\n$$\\frac{1}{6} + \\frac{1}{s} = \\frac{1}{4}$$\n\n$$\\frac{1}{s} = \\frac{1}{4} - \\frac{1}{6} = \\frac{1}{12}$$\n\n$$s = 12$$\n\nThe slower printer alone needs $12$ hours.\n\nSo the statement is True.",
-        "**B.** → True\n\n$$w(w + 3) = 40$$\n\n$$w^{2} + 3w - 40 = 0$$\n\n$$(w + 8)(w - 5) = 0$$\n\nPositive width $w = 5$, longer side $8$ cm. Check: $5 \\cdot 8 = 40$.\n\nSo the statement is True.",
-        "**C.** → True\n\nSyrup $0.8 \\cdot 0.10 = 0.08$. Target $4\\%$:\n\n$$\\frac{0.08}{0.8 + w} = 0.04$$\n\n$$w = 1.2$$\n\nCheck: $0.08 / 2 = 0.04$.\n\nSo the statement is True.",
-        "**D.** → False\n\n$$|2x - 6| = 10$$ splits into $2x - 6 = 10$ and $2x - 6 = -10$, giving $x = 8$ and $x = -2$. Two real solutions, not one.\n\nSo the statement is False.",
-        "**E.** → True\n\n$$a + 0.7a + 0.49a = 10950$$\n\n$$2.19a = 10950$$\n\n$$a = 5000$$\n\nSecond place $0.7 \\cdot 5000 = 3500$ EUR.\n\nSo the statement is True."
+        "**A.** → True\n\nArea is length times width. Let the shorter side be $x$ cm. Then the longer side is $x + 2$, and the area is $48$ cm$^{2}$:\n\n$$x(x + 2) = 48$$\n\n$$x^{2} + 2x - 48 = 0$$\n\nThe discriminant is\n\n$$\\Delta = 2^{2} + 4 \\cdot 48 = 196 = 14^{2}$$\n\n$$x = \\dfrac{-2 \\pm 14}{2}$$\n\nso $x = 6$ or $x = -8$. A side length must be positive, so $x = 6$. The longer side is then\n\n$$6 + 2 = 8$$\n\nCheck: $6 \\cdot 8 = 48$. The longer side is $8$ cm, matching the claim.\n\nSo the statement is True.",
+        "**B.** → True\n\nTime on the road is distance divided by average speed:\n\n$$t = \\frac{150}{60}$$\n\n$$t = \\dfrac{5}{2}$$\n\n$$t = 2.5$$\n\nhours. That is $2$ hours and $30$ minutes. Counting $2$ hours back from 1{:}30 pm, then a further $30$ minutes, lands at 11 am. The recovered start time matches the claim.\n\nSo the statement is True.",
+        "**C.** → True\n\n$1$ litre of $20\\%$ pulp solution hold $0.2$ litres of pure pulp. After adding $w$ litres of water the total volume is $1 + w$ litres, and the concentration should be $8\\%$:\n\n$$\\frac{0.2}{1 + w} = 0.08$$\n\n$$0.2 = 0.08(1 + w)$$\n\n$$0.2 = 0.08 + 0.08w$$\n\n$$0.12 = 0.08w$$\n\n$$w = \\frac{0.12}{0.08}$$\n\n$$w = 1.5$$\n\nThat $1.5$ is the litres of water to add. Substituting it recovers the $8\\%$ concentration:\n\n$$1 + 1.5 = 2.5$$\n\n$$\\frac{0.2}{2.5} = 0.08$$\n\nwhich matches the recipe.\n\nSo the statement is True.",
+        "**D.** → True\n\nThroughout, $\\log$ denotes the decadic logarithm, and the domain requires $x > 0$. Write $L = \\log x$ and apply the power rule to every logarithmic term:\n\n$$\\log\\sqrt{x} = \\dfrac{1}{2}L$$\n\n$$\\log\\dfrac{1}{x} = -L$$\n\n$$\\log x = L$$\n\nso the signed contribution in the equation is $-L$.\n\n$$\\log 100 = 2$$\n\nThe equation becomes\n\n$$\\dfrac{1}{2}L - 1L - 1L + \\dfrac{11}{6} = \\dfrac{L}{1 + 2}$$\n\nCombine the coefficients of $L$ on the left-hand side:\n\n$$\\text{coefficient sum} = \\dfrac{-3}{2}$$\n\nso\n\n$$\\dfrac{-3}{2}L + \\dfrac{11}{6} = \\dfrac{1}{3}L$$\n\nCollect the $L$-terms:\n\n$$\\dfrac{11}{6} = \\dfrac{1}{3}L - (\\dfrac{-3}{2})L$$\n\n$$\\dfrac{11}{6} = \\dfrac{11}{6}L$$\n\n$$L = 1$$\n\n$$x = 10^{1} = 10$$\n\nThe unique positive solution is $x = 10$, matching the claimed integer $10$.\n\nSo the statement is True.",
+        "**E.** → True\n\nLet the first-place prize be $a$ EUR. Then second place is $80\\%$ of first place, and third place is $80\\%$ of second place:\n\n$$0.8a$$\n\n$$0.8 \\cdot 0.8a = 0.64a$$\n\nThe three prizes sum to $18300$ EUR:\n\n$$a + 0.8a + 0.64a = 18300$$\n\n$$2.44a = 18300$$\n\n$$a = \\frac{18300}{2.44}$$\n\n$$a = 7500$$\n\nFirst place is $7500$ EUR, so second place is\n\n$$0.8 \\cdot 7500 = 6000$$\n\nThat $6000$ is the second-place prize in EUR, matching the claim.\n\nSo the statement is True."
       ],
       "difficulty_level": "5/5",
       "sort_order": 220,
-      "solution_overview": "Independent claims: a two-printer work rate, a rectangle area, coffee-syrup dilution, an absolute-value equation, and a $70\\%$ prize chain.",
+      "solution_overview": "Five independent closed claims spanning the chapter. Translate each story into one equation (a rectangle-area quadratic, a $t = d/v$ start time, a dilution, a composite decadic logarithm, and a percentage prize split), then isolate the unknown and compare with the claim.\n\nFor the quadratic, keep only a positive side length. For the logarithm, set $L = \\log x$, reduce with the power rule, and recover $x = 10^{L}$.\n\nEach letter is a separate mini-problem; do not reuse a root from another letter.",
       "placeholder": false
     },
     {
@@ -7047,29 +7047,29 @@
       "subsection": "4.5",
       "context": "Evaluate each statement. Mark it TRUE or FALSE.",
       "statements": [
-        "A tap fills an empty $240$ litre tub in $8$ minutes. Left open for $5$ minutes it pours $150$ litres.",
-        "The legs of a right triangle are $5$ cm and $12$ cm. A student claims the hypotenuse is $13$ cm and the area is $30$ cm$^{2}$.",
-        "Antifreeze: $5$ litres at $40\\%$ must become $25\\%$. Water to add is $3$ litres.",
-        "Decadic $\\log$: $\\log\\sqrt[3]{x} + \\log\\dfrac{1}{x^{3}} - \\log\\sqrt{x} + \\dfrac{11}{3} = \\dfrac{\\log x}{1 + \\log 10}$ has solution smaller than $5$.",
-        "A research grant of $13300$ EUR is split $100\\% : 75\\% : 56.25\\%$ of the lead share. The second investigator gets $4200$ EUR."
+        "If one side of a rectangle is by $7$ cm longer than the other one and the rectangle's area is $60$ cm$^{2}$, then the length of the longer side is $5$ cm.",
+        "A truck travels at an average speed of $72$ km/h. At 4 pm, it has traveled a total distance of $180$ km. Then it started traveling at 1{:}15 pm.",
+        "A recipe calls for $10\\%$ pigment solution. If the cook only has $4$ litres of $25\\%$ pigment solution, he needs to mix it with $6$ litres of water to get the right concentration.",
+        "The solution of the equation $\\log\\sqrt[3]{x} + \\log\\dfrac{1}{x^{3}} -\\log x + \\dfrac{28}{3} = \\dfrac{\\log x^{2}}{1 + \\log 10}$, where $\\log x$ denotes the decadic logarithm of $x$, is larger than $50$.",
+        "A fellowship fund of $6125$ EUR is supposed to be split among the winners in a way that the $2$nd placed obtains $50\\%$ of the amount the $1$st placed obtains, and the $3$rd placed obtains $50\\%$ of the $2$nd placed. Then the prize for the $2$nd place is $1750$ EUR."
       ],
       "answer_key": [
-        true,
-        true,
-        true,
         false,
-        false
+        false,
+        true,
+        true,
+        true
       ],
       "tactical_explanations": [
-        "**A.** → True\n\nFlow rate $240 / 8 = 30$ litres per minute. In $5$ minutes: $30 \\cdot 5 = 150$ litres.\n\nSo the statement is True.",
-        "**B.** → True\n\nPythagoras: $5^{2} + 12^{2} = 25 + 144 = 169 = 13^{2}$. Area $\\tfrac{1}{2} \\cdot 5 \\cdot 12 = 30$. Both claims hold.\n\nSo the statement is True.",
-        "**C.** → True\n\nConcentrate $5 \\cdot 0.40 = 2$. Target $25\\%$:\n\n$$\\frac{2}{5 + w} = 0.25$$\n\n$$w = 3$$\n\nCheck: $2 / 8 = 0.25$.\n\nSo the statement is True.",
-        "**D.** → False\n\nWith $L = \\log x$:\n\n$$\\frac{1}{3}L - 3L - \\frac{1}{2}L + \\frac{11}{3} = \\frac{L}{2}$$\n\n$$-\\frac{19}{6}L + \\frac{11}{3} = \\frac{L}{2}$$\n\n$$\\frac{11}{3} = \\frac{11}{3}L$$\n\n$$L = 1 \\implies x = 10$$\n\nThe solution is not smaller than $5$.\n\nSo the statement is False.",
-        "**E.** → False\n\n$$a + 0.75a + 0.5625a = 13300$$\n\n$$2.3125a = 13300$$\n\n$$a = 5751.35\\ldots$$\n\nSecond share $0.75a \\approx 4313.51$ EUR, not $4200$.\n\nSo the statement is False."
+        "**A.** → False\n\nArea is length times width. Let the shorter side be $x$ cm. Then the longer side is $x + 7$, and the area is $60$ cm$^{2}$:\n\n$$x(x + 7) = 60$$\n\n$$x^{2} + 7x - 60 = 0$$\n\nThe discriminant is\n\n$$\\Delta = 7^{2} + 4 \\cdot 60 = 289 = 17^{2}$$\n\n$$x = \\dfrac{-7 \\pm 17}{2}$$\n\nso $x = 5$ or $x = -12$. A side length must be positive, so $x = 5$. The longer side is then\n\n$$5 + 7 = 12$$\n\nCheck: $5 \\cdot 12 = 60$. The longer side is $12$ cm, not the claimed $5$ cm. Substituting a longer side of $5$ cm would force a shorter side of $-2$ cm:\n\n$$-2 \\cdot 5 = -10$$\n\nwhich is not $60$.\n\nSo the statement is False.",
+        "**B.** → False\n\nTime on the road is distance divided by average speed:\n\n$$t = \\frac{180}{72}$$\n\n$$t = \\dfrac{5}{2}$$\n\n$$t = 2.5$$\n\nhours. That is $2$ hours and $30$ minutes. Counting $2$ hours back from 4 pm, then a further $30$ minutes, lands at 1{:}30 pm, not the claimed 1{:}15 pm.\n\nSo the statement is False.",
+        "**C.** → True\n\n$4$ litres of $25\\%$ pigment solution hold $1$ litres of pure pigment. After adding $w$ litres of water the total volume is $4 + w$ litres, and the concentration should be $10\\%$:\n\n$$\\frac{1}{4 + w} = 0.1$$\n\n$$1 = 0.1(4 + w)$$\n\n$$1 = 0.4 + 0.1w$$\n\n$$0.6 = 0.1w$$\n\n$$w = \\frac{0.6}{0.1}$$\n\n$$w = 6$$\n\nThat $6$ is the litres of water to add. Substituting it recovers the $10\\%$ concentration:\n\n$$4 + 6 = 10$$\n\n$$\\frac{1}{10} = 0.1$$\n\nwhich matches the recipe.\n\nSo the statement is True.",
+        "**D.** → True\n\nThroughout, $\\log$ denotes the decadic logarithm, and the domain requires $x > 0$. Write $L = \\log x$ and apply the power rule to every logarithmic term:\n\n$$\\log\\sqrt[3]{x} = \\dfrac{1}{3}L$$\n\n$$\\log\\dfrac{1}{x^{3}} = -3L$$\n\n$$\\log x = L$$\n\nso the signed contribution in the equation is $-L$.\n\n$$\\log 10 = 1$$\n\nThe equation becomes\n\n$$\\dfrac{1}{3}L - 3L - 1L + \\dfrac{28}{3} = \\dfrac{2L}{1 + 1}$$\n\nCombine the coefficients of $L$ on the left-hand side:\n\n$$\\text{coefficient sum} = \\dfrac{-11}{3}$$\n\nso\n\n$$\\dfrac{-11}{3}L + \\dfrac{28}{3} = 1L$$\n\nCollect the $L$-terms:\n\n$$\\dfrac{28}{3} = 1L - (\\dfrac{-11}{3})L$$\n\n$$\\dfrac{28}{3} = \\dfrac{14}{3}L$$\n\n$$L = 2$$\n\n$$x = 10^{2} = 100$$\n\nThe unique positive solution is $x = 100$, which is larger than $50$.\n\nSo the statement is True.",
+        "**E.** → True\n\nLet the first-place prize be $a$ EUR. Then second place is $50\\%$ of first place, and third place is $50\\%$ of second place:\n\n$$0.5a$$\n\n$$0.5 \\cdot 0.5a = 0.25a$$\n\nThe three prizes sum to $6125$ EUR:\n\n$$a + 0.5a + 0.25a = 6125$$\n\n$$1.75a = 6125$$\n\n$$a = \\frac{6125}{1.75}$$\n\n$$a = 3500$$\n\nFirst place is $3500$ EUR, so second place is\n\n$$0.5 \\cdot 3500 = 1750$$\n\nThat $1750$ is the second-place prize in EUR, matching the claim.\n\nSo the statement is True."
       ],
       "difficulty_level": "5/5",
       "sort_order": 221,
-      "solution_overview": "Independent claims: a tub fill rate, a $5$-$12$-$13$ triangle, antifreeze dilution, a composite logarithm, and a $75\\%$ grant chain.",
+      "solution_overview": "Five independent closed claims spanning the chapter. Translate each story into one equation (a rectangle-area quadratic, a $t = d/v$ start time, a dilution, a composite decadic logarithm, and a percentage prize split), then isolate the unknown and compare with the claim.\n\nFor the quadratic, keep only a positive side length. For the logarithm, set $L = \\log x$, reduce with the power rule, and recover $x = 10^{L}$.\n\nEach letter is a separate mini-problem; do not reuse a root from another letter.",
       "placeholder": false
     },
     {
@@ -7079,29 +7079,29 @@
       "subsection": "4.5",
       "context": "Evaluate each statement. Mark it TRUE or FALSE.",
       "statements": [
-        "If a number is increased by one-third of itself, the result is $48$. The original number is $36$.",
-        "A light aircraft covers $240$ km at $160$ km/h and lands at $15{:}30$. Take-off was at $14{:}00$.",
-        "A cook has $1$ litre of $8\\%$ vinegar and needs $5\\%$. Adding $0.6$ litres of water is correct.",
-        "On $x \\ne 2$, the equation $\\dfrac{x + 4}{x - 2} = 3$ has solution $x = 5$.",
-        "Awards totaling $7600$ EUR are paid with second place getting $90\\%$ of first and third getting $90\\%$ of second. Second place is $2700$ EUR."
+        "If one side of a rectangle is by $4$ cm longer than the other one and the rectangle's area is $45$ cm$^{2}$, then the length of the longer side is $9$ cm.",
+        "A light aircraft travels at an average speed of $60$ km/h. At 10 am, it has traveled a total distance of $45$ km. Then it started traveling at 9{:}15 am.",
+        "A recipe calls for $4\\%$ antifreeze solution. If the cook only has $0.8$ litres of $10\\%$ antifreeze solution, he needs to mix it with $1.2$ litres of water to get the right concentration.",
+        "The solution of the equation $\\log\\sqrt[5]{x} + \\log\\dfrac{1}{x^{2}} -\\log x + \\dfrac{33}{10} = \\dfrac{\\log x}{1 + \\log 10}$, where $\\log x$ denotes the decadic logarithm of $x$, is larger than $8$.",
+        "A medal bonus of $4880$ EUR is supposed to be split among the winners in a way that the $2$nd placed obtains $80\\%$ of the amount the $1$st placed obtains, and the $3$rd placed obtains $80\\%$ of the $2$nd placed. Then the prize for the $2$nd place is $1600$ EUR."
       ],
       "answer_key": [
         true,
         true,
         true,
         true,
-        false
+        true
       ],
       "tactical_explanations": [
-        "**A.** → True\n\n$$x + \\frac{x}{3} = 48$$\n\n$$\\frac{4x}{3} = 48$$\n\n$$x = 36$$\n\nSo the statement is True.",
-        "**B.** → True\n\n$$t = \\frac{240}{160} = 1.5$$\n\nhours. One and a half hours before $15{:}30$ is $14{:}00$.\n\nSo the statement is True.",
-        "**C.** → True\n\n$$\\frac{0.08}{1 + w} = 0.05$$\n\n$$w = 0.6$$\n\nCheck: $0.08 / 1.6 = 0.05$.\n\nSo the statement is True.",
-        "**D.** → True\n\n$$x + 4 = 3(x - 2)$$\n\n$$x + 4 = 3x - 6$$\n\n$$10 = 2x$$\n\n$$x = 5$$\n\nThe value $5$ avoids the hole $x = 2$.\n\nSo the statement is True.",
-        "**E.** → False\n\n$$a + 0.9a + 0.81a = 7600$$\n\n$$2.71a = 7600$$\n\n$$a = \\frac{7600}{2.71} \\approx 2804.43$$\n\nSecond place $0.9a \\approx 2524$ EUR, not $2700$.\n\nSo the statement is False."
+        "**A.** → True\n\nArea is length times width. Let the shorter side be $x$ cm. Then the longer side is $x + 4$, and the area is $45$ cm$^{2}$:\n\n$$x(x + 4) = 45$$\n\n$$x^{2} + 4x - 45 = 0$$\n\nThe discriminant is\n\n$$\\Delta = 4^{2} + 4 \\cdot 45 = 196 = 14^{2}$$\n\n$$x = \\dfrac{-4 \\pm 14}{2}$$\n\nso $x = 5$ or $x = -9$. A side length must be positive, so $x = 5$. The longer side is then\n\n$$5 + 4 = 9$$\n\nCheck: $5 \\cdot 9 = 45$. The longer side is $9$ cm, matching the claim.\n\nSo the statement is True.",
+        "**B.** → True\n\nTime on the road is distance divided by average speed:\n\n$$t = \\frac{45}{60}$$\n\n$$t = \\dfrac{3}{4}$$\n\n$$t = 0.75$$\n\nhours. That is $45$ minutes. Counting $45$ minutes back from 10 am, lands at 9{:}15 am. The recovered start time matches the claim.\n\nSo the statement is True.",
+        "**C.** → True\n\n$0.8$ litres of $10\\%$ antifreeze solution hold $0.08$ litres of pure antifreeze. After adding $w$ litres of water the total volume is $0.8 + w$ litres, and the concentration should be $4\\%$:\n\n$$\\frac{0.08}{0.8 + w} = 0.04$$\n\n$$0.08 = 0.04(0.8 + w)$$\n\n$$0.08 = 0.032 + 0.04w$$\n\n$$0.048 = 0.04w$$\n\n$$w = \\frac{0.048}{0.04}$$\n\n$$w = 1.2$$\n\nThat $1.2$ is the litres of water to add. Substituting it recovers the $4\\%$ concentration:\n\n$$0.8 + 1.2 = 2$$\n\n$$\\frac{0.08}{2} = 0.04$$\n\nwhich matches the recipe.\n\nSo the statement is True.",
+        "**D.** → True\n\nThroughout, $\\log$ denotes the decadic logarithm, and the domain requires $x > 0$. Write $L = \\log x$ and apply the power rule to every logarithmic term:\n\n$$\\log\\sqrt[5]{x} = \\dfrac{1}{5}L$$\n\n$$\\log\\dfrac{1}{x^{2}} = -2L$$\n\n$$\\log x = L$$\n\nso the signed contribution in the equation is $-L$.\n\n$$\\log 10 = 1$$\n\nThe equation becomes\n\n$$\\dfrac{1}{5}L - 2L - 1L + \\dfrac{33}{10} = \\dfrac{L}{1 + 1}$$\n\nCombine the coefficients of $L$ on the left-hand side:\n\n$$\\text{coefficient sum} = \\dfrac{-14}{5}$$\n\nso\n\n$$\\dfrac{-14}{5}L + \\dfrac{33}{10} = \\dfrac{1}{2}L$$\n\nCollect the $L$-terms:\n\n$$\\dfrac{33}{10} = \\dfrac{1}{2}L - (\\dfrac{-14}{5})L$$\n\n$$\\dfrac{33}{10} = \\dfrac{33}{10}L$$\n\n$$L = 1$$\n\n$$x = 10^{1} = 10$$\n\nThe unique positive solution is $x = 10$, which is larger than $8$.\n\nSo the statement is True.",
+        "**E.** → True\n\nLet the first-place prize be $a$ EUR. Then second place is $80\\%$ of first place, and third place is $80\\%$ of second place:\n\n$$0.8a$$\n\n$$0.8 \\cdot 0.8a = 0.64a$$\n\nThe three prizes sum to $4880$ EUR:\n\n$$a + 0.8a + 0.64a = 4880$$\n\n$$2.44a = 4880$$\n\n$$a = \\frac{4880}{2.44}$$\n\n$$a = 2000$$\n\nFirst place is $2000$ EUR, so second place is\n\n$$0.8 \\cdot 2000 = 1600$$\n\nThat $1600$ is the second-place prize in EUR, matching the claim.\n\nSo the statement is True."
       ],
       "difficulty_level": "5/5",
       "sort_order": 222,
-      "solution_overview": "Independent claims: a fraction-of-itself sentence, an aircraft timetable, vinegar dilution, a rational equation, and a $90\\%$ award chain.",
+      "solution_overview": "Five independent closed claims spanning the chapter. Translate each story into one equation (a rectangle-area quadratic, a $t = d/v$ start time, a dilution, a composite decadic logarithm, and a percentage prize split), then isolate the unknown and compare with the claim.\n\nFor the quadratic, keep only a positive side length. For the logarithm, set $L = \\log x$, reduce with the power rule, and recover $x = 10^{L}$.\n\nEach letter is a separate mini-problem; do not reuse a root from another letter.",
       "placeholder": false
     },
     {
@@ -7111,29 +7111,29 @@
       "subsection": "4.5",
       "context": "Evaluate each statement. Mark it TRUE or FALSE.",
       "statements": [
-        "A purse holds only $2$ EUR and $5$ EUR coins. There are $16$ coins worth $53$ EUR in all. There are then $7$ coins of $5$ EUR.",
-        "A metro train runs $36$ km at $48$ km/h and arrives at $9{:}45$. It departed at $8{:}45$.",
-        "Saline: $2$ litres at $9\\%$ must become $6\\%$. Water required is $1$ litre.",
-        "Decadic $\\log$: $\\dfrac{\\log x^{4}}{1 + \\log 10} = \\log x + 1$ has solution smaller than the solution of $\\log x = 2$.",
-        "Royalty payments of $18300$ EUR follow a $100\\% : 80\\% : 64\\%$ split of the lead share. The middle payment is $6000$ EUR."
+        "If one side of a rectangle is by $6$ m longer than the other one and the rectangle's area is $135$ m$^{2}$, then the length of the longer side is $9$ m.",
+        "A night bus travels at an average speed of $160$ km/h. At 3{:}30 pm, it has traveled a total distance of $240$ km. Then it started traveling at 2 pm.",
+        "A recipe calls for $25\\%$ syrup solution. If the cook only has $5$ litres of $40\\%$ syrup solution, he needs to mix it with $3$ litres of water to get the right concentration.",
+        "The solution of the equation $\\log\\sqrt[3]{x} + \\log\\dfrac{1}{x^{4}} -\\log\\sqrt{x} + \\dfrac{31}{6} = \\dfrac{\\log x^{2}}{1 + \\log 10}$, where $\\log x$ denotes the decadic logarithm of $x$, is smaller than $5$.",
+        "A endowment award of $10950$ EUR is supposed to be split among the winners in a way that the $2$nd placed obtains $70\\%$ of the amount the $1$st placed obtains, and the $3$rd placed obtains $70\\%$ of the $2$nd placed. Then the prize for the $2$nd place is $4000$ EUR."
       ],
       "answer_key": [
-        true,
         false,
         true,
         true,
-        true
+        false,
+        false
       ],
       "tactical_explanations": [
-        "**A.** → True\n\nLet $x$ be the number of $5$ EUR coins:\n\n$$5x + 2(16 - x) = 53$$\n\n$$3x + 32 = 53$$\n\n$$x = 7$$\n\nCheck: $7 \\cdot 5 + 9 \\cdot 2 = 35 + 18 = 53$.\n\nSo the statement is True.",
-        "**B.** → False\n\n$$t = \\frac{36}{48} = 0.75$$\n\nhours ($45$ minutes). Forty-five minutes before $9{:}45$ is $9{:}00$, not $8{:}45$.\n\nSo the statement is False.",
-        "**C.** → True\n\n$$\\frac{2 \\cdot 0.09}{2 + w} = 0.06$$\n\n$$\\frac{0.18}{2 + w} = 0.06$$\n\n$$w = 1$$\n\nCheck: $0.18 / 3 = 0.06$.\n\nSo the statement is True.",
-        "**D.** → True\n\n$$\\frac{4L}{2} = L + 1$$\n\n$$2L = L + 1$$\n\n$$L = 1 \\implies x = 10$$\n\nThe comparison equation $\\log x = 2$ gives $x = 100$, and $10 < 100$.\n\nSo the statement is True.",
-        "**E.** → True\n\n$$a + 0.8a + 0.64a = 18300$$\n\n$$2.44a = 18300$$\n\n$$a = 7500$$\n\nMiddle payment $0.8 \\cdot 7500 = 6000$ EUR.\n\nSo the statement is True."
+        "**A.** → False\n\nArea is length times width. Let the shorter side be $x$ m. Then the longer side is $x + 6$, and the area is $135$ m$^{2}$:\n\n$$x(x + 6) = 135$$\n\n$$x^{2} + 6x - 135 = 0$$\n\nThe discriminant is\n\n$$\\Delta = 6^{2} + 4 \\cdot 135 = 576 = 24^{2}$$\n\n$$x = \\dfrac{-6 \\pm 24}{2}$$\n\nso $x = 9$ or $x = -15$. A side length must be positive, so $x = 9$. The longer side is then\n\n$$9 + 6 = 15$$\n\nCheck: $9 \\cdot 15 = 135$. The longer side is $15$ m, not the claimed $9$ m. Substituting a longer side of $9$ m would force a shorter side of $3$ m:\n\n$$3 \\cdot 9 = 27$$\n\nwhich is not $135$.\n\nSo the statement is False.",
+        "**B.** → True\n\nTime on the road is distance divided by average speed:\n\n$$t = \\frac{240}{160}$$\n\n$$t = \\dfrac{3}{2}$$\n\n$$t = 1.5$$\n\nhours. That is $1$ hour and $30$ minutes. Counting $1$ hour back from 3{:}30 pm, then a further $30$ minutes, lands at 2 pm. The recovered start time matches the claim.\n\nSo the statement is True.",
+        "**C.** → True\n\n$5$ litres of $40\\%$ syrup solution hold $2$ litres of pure syrup. After adding $w$ litres of water the total volume is $5 + w$ litres, and the concentration should be $25\\%$:\n\n$$\\frac{2}{5 + w} = 0.25$$\n\n$$2 = 0.25(5 + w)$$\n\n$$2 = 1.25 + 0.25w$$\n\n$$0.75 = 0.25w$$\n\n$$w = \\frac{0.75}{0.25}$$\n\n$$w = 3$$\n\nThat $3$ is the litres of water to add. Substituting it recovers the $25\\%$ concentration:\n\n$$5 + 3 = 8$$\n\n$$\\frac{2}{8} = 0.25$$\n\nwhich matches the recipe.\n\nSo the statement is True.",
+        "**D.** → False\n\nThroughout, $\\log$ denotes the decadic logarithm, and the domain requires $x > 0$. Write $L = \\log x$ and apply the power rule to every logarithmic term:\n\n$$\\log\\sqrt[3]{x} = \\dfrac{1}{3}L$$\n\n$$\\log\\dfrac{1}{x^{4}} = -4L$$\n\n$$\\log\\sqrt{x} = \\dfrac{1}{2}L$$\n\nso the signed contribution in the equation is $-\\dfrac{1}{2}L$.\n\n$$\\log 10 = 1$$\n\nThe equation becomes\n\n$$\\dfrac{1}{3}L - 4L - \\dfrac{1}{2}L + \\dfrac{31}{6} = \\dfrac{2L}{1 + 1}$$\n\nCombine the coefficients of $L$ on the left-hand side:\n\n$$\\text{coefficient sum} = \\dfrac{-25}{6}$$\n\nso\n\n$$\\dfrac{-25}{6}L + \\dfrac{31}{6} = 1L$$\n\nCollect the $L$-terms:\n\n$$\\dfrac{31}{6} = 1L - (\\dfrac{-25}{6})L$$\n\n$$\\dfrac{31}{6} = \\dfrac{31}{6}L$$\n\n$$L = 1$$\n\n$$x = 10^{1} = 10$$\n\nThe unique positive solution is $x = 10$, which is not smaller than $5$.\n\nSo the statement is False.",
+        "**E.** → False\n\nLet the first-place prize be $a$ EUR. Then second place is $70\\%$ of first place, and third place is $70\\%$ of second place:\n\n$$0.7a$$\n\n$$0.7 \\cdot 0.7a = 0.49a$$\n\nThe three prizes sum to $10950$ EUR:\n\n$$a + 0.7a + 0.49a = 10950$$\n\n$$2.19a = 10950$$\n\n$$a = \\frac{10950}{2.19}$$\n\n$$a = 5000$$\n\nFirst place is $5000$ EUR, so second place is\n\n$$0.7 \\cdot 5000 = 3500$$\n\nThe second-place prize is $3500$ EUR, not the claimed $4000$.\n\nSo the statement is False."
       ],
       "difficulty_level": "5/5",
       "sort_order": 223,
-      "solution_overview": "Independent claims: a two-coin purse, a metro timetable, saline dilution, a logarithmic comparison, and an $80\\%$ royalty chain.",
+      "solution_overview": "Five independent closed claims spanning the chapter. Translate each story into one equation (a rectangle-area quadratic, a $t = d/v$ start time, a dilution, a composite decadic logarithm, and a percentage prize split), then isolate the unknown and compare with the claim.\n\nFor the quadratic, keep only a positive side length. For the logarithm, set $L = \\log x$, reduce with the power rule, and recover $x = 10^{L}$.\n\nEach letter is a separate mini-problem; do not reuse a root from another letter.",
       "placeholder": false
     },
     {
@@ -7143,29 +7143,29 @@
       "subsection": "4.5",
       "context": "Evaluate each statement. Mark it TRUE or FALSE.",
       "statements": [
-        "The product of two consecutive positive integers is $42$. The larger integer is $7$.",
-        "A freighter sails $96$ nautical miles at $16$ kn and berths at $20{:}00$. It cast off at $14{:}00$.",
-        "Ethanol mix: $1.2$ litres at $50\\%$ diluted to $20\\%$. Water needed is $1.8$ litres.",
-        "The roots of $x^{2} - 9x + 18 = 0$ have sum $10$.",
-        "Bursaries totaling $6125$ EUR are paid with each lower award $50\\%$ of the one above. The middle bursary is $1750$ EUR."
+        "If one side of a rectangle is by $3$ cm longer than the other one and the rectangle's area is $54$ cm$^{2}$, then the length of the longer side is $9$ cm.",
+        "A tram travels at an average speed of $90$ km/h. At 6{:}30 am, it has traveled a total distance of $315$ km. Then it started traveling at 3 am.",
+        "A recipe calls for $20\\%$ disinfectant solution. If the cook only has $1.2$ litres of $50\\%$ disinfectant solution, he needs to mix it with $1.8$ litres of water to get the right concentration.",
+        "The solution of the equation $\\log\\sqrt[4]{x} + \\log\\dfrac{1}{x^{3}} -\\log x + \\dfrac{49}{12} = \\dfrac{\\log x}{1 + \\log 100}$, where $\\log x$ denotes the decadic logarithm of $x$, is larger than $5$.",
+        "A jackpot share of $12200$ EUR is supposed to be split among the winners in a way that the $2$nd placed obtains $80\\%$ of the amount the $1$st placed obtains, and the $3$rd placed obtains $80\\%$ of the $2$nd placed. Then the prize for the $2$nd place is $4500$ EUR."
       ],
       "answer_key": [
         true,
         true,
         true,
-        false,
-        true
+        true,
+        false
       ],
       "tactical_explanations": [
-        "**A.** → True\n\n$$n(n + 1) = 42$$\n\n$$n^{2} + n - 42 = 0$$\n\n$$(n + 7)(n - 6) = 0$$\n\nPositive $n = 6$, larger integer $7$. Check: $6 \\cdot 7 = 42$.\n\nSo the statement is True.",
-        "**B.** → True\n\n$$t = \\frac{96}{16} = 6$$\n\nhours. Six hours before $20{:}00$ is $14{:}00$.\n\nSo the statement is True.",
-        "**C.** → True\n\n$$\\frac{1.2 \\cdot 0.50}{1.2 + w} = 0.20$$\n\n$$\\frac{0.60}{1.2 + w} = 0.20$$\n\n$$w = 1.8$$\n\nCheck: $0.60 / 3 = 0.20$.\n\nSo the statement is True.",
-        "**D.** → False\n\n$$(x - 3)(x - 6) = 0$$\n\nRoots $3$ and $6$ sum to $9$, which is also the Vieta coefficient of $-x$. The claim $10$ is wrong.\n\nSo the statement is False.",
-        "**E.** → True\n\n$$a + 0.5a + 0.25a = 6125$$\n\n$$1.75a = 6125$$\n\n$$a = 3500$$\n\nMiddle bursary $0.5 \\cdot 3500 = 1750$ EUR.\n\nSo the statement is True."
+        "**A.** → True\n\nArea is length times width. Let the shorter side be $x$ cm. Then the longer side is $x + 3$, and the area is $54$ cm$^{2}$:\n\n$$x(x + 3) = 54$$\n\n$$x^{2} + 3x - 54 = 0$$\n\nThe discriminant is\n\n$$\\Delta = 3^{2} + 4 \\cdot 54 = 225 = 15^{2}$$\n\n$$x = \\dfrac{-3 \\pm 15}{2}$$\n\nso $x = 6$ or $x = -9$. A side length must be positive, so $x = 6$. The longer side is then\n\n$$6 + 3 = 9$$\n\nCheck: $6 \\cdot 9 = 54$. The longer side is $9$ cm, matching the claim.\n\nSo the statement is True.",
+        "**B.** → True\n\nTime on the road is distance divided by average speed:\n\n$$t = \\frac{315}{90}$$\n\n$$t = \\dfrac{7}{2}$$\n\n$$t = 3.5$$\n\nhours. That is $3$ hours and $30$ minutes. Counting $3$ hours back from 6{:}30 am, then a further $30$ minutes, lands at 3 am. The recovered start time matches the claim.\n\nSo the statement is True.",
+        "**C.** → True\n\n$1.2$ litres of $50\\%$ disinfectant solution hold $0.6$ litres of pure disinfectant. After adding $w$ litres of water the total volume is $1.2 + w$ litres, and the concentration should be $20\\%$:\n\n$$\\frac{0.6}{1.2 + w} = 0.2$$\n\n$$0.6 = 0.2(1.2 + w)$$\n\n$$0.6 = 0.24 + 0.2w$$\n\n$$0.36 = 0.2w$$\n\n$$w = \\frac{0.36}{0.2}$$\n\n$$w = 1.8$$\n\nThat $1.8$ is the litres of water to add. Substituting it recovers the $20\\%$ concentration:\n\n$$1.2 + 1.8 = 3$$\n\n$$\\frac{0.6}{3} = 0.2$$\n\nwhich matches the recipe.\n\nSo the statement is True.",
+        "**D.** → True\n\nThroughout, $\\log$ denotes the decadic logarithm, and the domain requires $x > 0$. Write $L = \\log x$ and apply the power rule to every logarithmic term:\n\n$$\\log\\sqrt[4]{x} = \\dfrac{1}{4}L$$\n\n$$\\log\\dfrac{1}{x^{3}} = -3L$$\n\n$$\\log x = L$$\n\nso the signed contribution in the equation is $-L$.\n\n$$\\log 100 = 2$$\n\nThe equation becomes\n\n$$\\dfrac{1}{4}L - 3L - 1L + \\dfrac{49}{12} = \\dfrac{L}{1 + 2}$$\n\nCombine the coefficients of $L$ on the left-hand side:\n\n$$\\text{coefficient sum} = \\dfrac{-15}{4}$$\n\nso\n\n$$\\dfrac{-15}{4}L + \\dfrac{49}{12} = \\dfrac{1}{3}L$$\n\nCollect the $L$-terms:\n\n$$\\dfrac{49}{12} = \\dfrac{1}{3}L - (\\dfrac{-15}{4})L$$\n\n$$\\dfrac{49}{12} = \\dfrac{49}{12}L$$\n\n$$L = 1$$\n\n$$x = 10^{1} = 10$$\n\nThe unique positive solution is $x = 10$, which is larger than $5$.\n\nSo the statement is True.",
+        "**E.** → False\n\nLet the first-place prize be $a$ EUR. Then second place is $80\\%$ of first place, and third place is $80\\%$ of second place:\n\n$$0.8a$$\n\n$$0.8 \\cdot 0.8a = 0.64a$$\n\nThe three prizes sum to $12200$ EUR:\n\n$$a + 0.8a + 0.64a = 12200$$\n\n$$2.44a = 12200$$\n\n$$a = \\frac{12200}{2.44}$$\n\n$$a = 5000$$\n\nFirst place is $5000$ EUR, so second place is\n\n$$0.8 \\cdot 5000 = 4000$$\n\nThe second-place prize is $4000$ EUR, not the claimed $4500$.\n\nSo the statement is False."
       ],
       "difficulty_level": "5/5",
       "sort_order": 224,
-      "solution_overview": "Independent claims: consecutive-integer product, a freighter timetable, ethanol dilution, Vieta sum for a quadratic, and a half-share bursary chain.",
+      "solution_overview": "Five independent closed claims spanning the chapter. Translate each story into one equation (a rectangle-area quadratic, a $t = d/v$ start time, a dilution, a composite decadic logarithm, and a percentage prize split), then isolate the unknown and compare with the claim.\n\nFor the quadratic, keep only a positive side length. For the logarithm, set $L = \\log x$, reduce with the power rule, and recover $x = 10^{L}$.\n\nEach letter is a separate mini-problem; do not reuse a root from another letter.",
       "placeholder": false
     },
     {
@@ -7175,29 +7175,29 @@
       "subsection": "4.5",
       "context": "Evaluate each statement. Mark it TRUE or FALSE.",
       "statements": [
-        "An isosceles triangle has equal sides $x$ cm and base $x - 2$ cm. Its perimeter is $28$ cm, so each equal side is $10$ cm.",
-        "A tram covers $27$ km at $36$ km/h and arrives at $12{:}15$. It left the depot at $11{:}30$.",
-        "Cream: $0.5$ litres at $36\\%$ fat diluted to $12\\%$. Water to add is $1.5$ litres.",
-        "The equation $3^{x} = 81$ has unique real solution $x = 4$.",
-        "Tip jars totaling $4880$ EUR are shared with each next share $80\\%$ of the previous. The second tip share is $1600$ EUR."
+        "If one side of a rectangle is by $5$ cm longer than the other one and the rectangle's area is $66$ cm$^{2}$, then the length of the longer side is $6$ cm.",
+        "A cable car travels at an average speed of $64$ km/h. At 3 pm, it has traveled a total distance of $80$ km. Then it started traveling at 1{:}15 pm.",
+        "A recipe calls for $12\\%$ brine solution. If the cook only has $0.5$ litres of $36\\%$ brine solution, he needs to mix it with $1.5$ litres of water to get the right concentration.",
+        "The solution of the equation $\\log\\sqrt{x} + \\log\\dfrac{1}{x^{2}\\sqrt{x}} -\\log x + \\dfrac{11}{3} = \\dfrac{\\log x^{2}}{1 + \\log 100}$, where $\\log x$ denotes the decadic logarithm of $x$, is the integer $10$.",
+        "A bursary fund of $15250$ EUR is supposed to be split among the winners in a way that the $2$nd placed obtains $80\\%$ of the amount the $1$st placed obtains, and the $3$rd placed obtains $80\\%$ of the $2$nd placed. Then the prize for the $2$nd place is $5200$ EUR."
       ],
       "answer_key": [
-        true,
-        true,
+        false,
+        false,
         false,
         true,
-        true
+        false
       ],
       "tactical_explanations": [
-        "**A.** → True\n\n$$x + x + (x - 2) = 28$$\n\n$$3x - 2 = 28$$\n\n$$3x = 30$$\n\n$$x = 10$$\n\nEqual sides $10$ cm, base $8$ cm. Check: $10 + 10 + 8 = 28$.\n\nSo the statement is True.",
-        "**B.** → True\n\n$$t = \\frac{27}{36} = 0.75$$\n\nhours. Forty-five minutes before $12{:}15$ is $11{:}30$.\n\nSo the statement is True.",
-        "**C.** → False\n\n$$\\frac{0.5 \\cdot 0.36}{0.5 + w} = 0.12$$\n\n$$\\frac{0.18}{0.5 + w} = 0.12$$\n\n$$w = 1$$\n\nAdding $1.5$ litres gives concentration $0.18 / 2 = 0.09 = 9\\%$, not $12\\%$.\n\nSo the statement is False.",
-        "**D.** → True\n\n$$81 = 3^{4}$$\n\nso $3^{x} = 3^{4}$ forces $x = 4$.\n\nSo the statement is True.",
-        "**E.** → True\n\n$$a + 0.8a + 0.64a = 4880$$\n\n$$2.44a = 4880$$\n\n$$a = 2000$$\n\nSecond share $0.8 \\cdot 2000 = 1600$ EUR.\n\nSo the statement is True."
+        "**A.** → False\n\nArea is length times width. Let the shorter side be $x$ cm. Then the longer side is $x + 5$, and the area is $66$ cm$^{2}$:\n\n$$x(x + 5) = 66$$\n\n$$x^{2} + 5x - 66 = 0$$\n\nThe discriminant is\n\n$$\\Delta = 5^{2} + 4 \\cdot 66 = 289 = 17^{2}$$\n\n$$x = \\dfrac{-5 \\pm 17}{2}$$\n\nso $x = 6$ or $x = -11$. A side length must be positive, so $x = 6$. The longer side is then\n\n$$6 + 5 = 11$$\n\nCheck: $6 \\cdot 11 = 66$. The longer side is $11$ cm, not the claimed $6$ cm. Substituting a longer side of $6$ cm would force a shorter side of $1$ cm:\n\n$$1 \\cdot 6 = 6$$\n\nwhich is not $66$.\n\nSo the statement is False.",
+        "**B.** → False\n\nTime on the road is distance divided by average speed:\n\n$$t = \\frac{80}{64}$$\n\n$$t = \\dfrac{5}{4}$$\n\n$$t = 1.25$$\n\nhours. That is $1$ hour and $15$ minutes. Counting $1$ hour back from 3 pm, then a further $15$ minutes, lands at 1{:}45 pm, not the claimed 1{:}15 pm.\n\nSo the statement is False.",
+        "**C.** → False\n\n$0.5$ litres of $36\\%$ brine solution hold $0.18$ litres of pure brine. After adding $w$ litres of water the total volume is $0.5 + w$ litres, and the concentration should be $12\\%$:\n\n$$\\frac{0.18}{0.5 + w} = 0.12$$\n\n$$0.18 = 0.12(0.5 + w)$$\n\n$$0.18 = 0.06 + 0.12w$$\n\n$$0.12 = 0.12w$$\n\n$$w = \\frac{0.12}{0.12}$$\n\n$$w = 1$$\n\nThe required amount of water is $1$ litres, not the claimed $1.5$. Substituting the claimed value gives concentration\n\n$$\\frac{0.18}{2} = 0.09$$\n\nwhich is not $0.12$.\n\nSo the statement is False.",
+        "**D.** → True\n\nThroughout, $\\log$ denotes the decadic logarithm, and the domain requires $x > 0$. Write $L = \\log x$ and apply the power rule to every logarithmic term:\n\n$$\\log\\sqrt{x} = \\dfrac{1}{2}L$$\n\n$$\\log\\dfrac{1}{x^{2}\\sqrt{x}} = -\\dfrac{5}{2}L$$\n\n$$\\log x = L$$\n\nso the signed contribution in the equation is $-L$.\n\n$$\\log 100 = 2$$\n\nThe equation becomes\n\n$$\\dfrac{1}{2}L - \\dfrac{5}{2}L - 1L + \\dfrac{11}{3} = \\dfrac{2L}{1 + 2}$$\n\nCombine the coefficients of $L$ on the left-hand side:\n\n$$\\text{coefficient sum} = -3$$\n\nso\n\n$$-3L + \\dfrac{11}{3} = \\dfrac{2}{3}L$$\n\nCollect the $L$-terms:\n\n$$\\dfrac{11}{3} = \\dfrac{2}{3}L - (-3)L$$\n\n$$\\dfrac{11}{3} = \\dfrac{11}{3}L$$\n\n$$L = 1$$\n\n$$x = 10^{1} = 10$$\n\nThe unique positive solution is $x = 10$, matching the claimed integer $10$.\n\nSo the statement is True.",
+        "**E.** → False\n\nLet the first-place prize be $a$ EUR. Then second place is $80\\%$ of first place, and third place is $80\\%$ of second place:\n\n$$0.8a$$\n\n$$0.8 \\cdot 0.8a = 0.64a$$\n\nThe three prizes sum to $15250$ EUR:\n\n$$a + 0.8a + 0.64a = 15250$$\n\n$$2.44a = 15250$$\n\n$$a = \\frac{15250}{2.44}$$\n\n$$a = 6250$$\n\nFirst place is $6250$ EUR, so second place is\n\n$$0.8 \\cdot 6250 = 5000$$\n\nThe second-place prize is $5000$ EUR, not the claimed $5200$.\n\nSo the statement is False."
       ],
       "difficulty_level": "5/5",
       "sort_order": 225,
-      "solution_overview": "Independent claims: an isosceles perimeter, a tram timetable, cream dilution, a base-$3$ exponential, and an $80\\%$ tip split.",
+      "solution_overview": "Five independent closed claims spanning the chapter. Translate each story into one equation (a rectangle-area quadratic, a $t = d/v$ start time, a dilution, a composite decadic logarithm, and a percentage prize split), then isolate the unknown and compare with the claim.\n\nFor the quadratic, keep only a positive side length. For the logarithm, set $L = \\log x$, reduce with the power rule, and recover $x = 10^{L}$.\n\nEach letter is a separate mini-problem; do not reuse a root from another letter.",
       "placeholder": false
     },
     {
@@ -7207,29 +7207,29 @@
       "subsection": "4.5",
       "context": "Evaluate each statement. Mark it TRUE or FALSE.",
       "statements": [
-        "A $13$ m ladder leans against a wall with its foot $5$ m from the base. The height it reaches on the wall is $12$ m.",
-        "A coastal ferry does $80$ km at $64$ km/h and docks at $15{:}00$. Departure was at $13{:}15$.",
-        "Dye bath: $3$ litres at $16\\%$ reduced to $10\\%$. Water needed is $1.8$ litres.",
-        "Decadic $\\log$: $(\\log x)^{2} = \\log x + 6$ has exactly one positive solution.",
-        "Dividends of $9750$ EUR follow a $100\\% : 50\\% : 25\\%$ lead-share pattern. The second tranche is $2500$ EUR."
+        "If one side of a rectangle is by $9$ m longer than the other one and the rectangle's area is $90$ m$^{2}$, then the length of the longer side is $6$ m.",
+        "A freighter travels at an average speed of $16$ km/h. At 11 am, it has traveled a total distance of $48$ km. Then it started traveling at 8{:}15 am.",
+        "A recipe calls for $10\\%$ dye solution. If the cook only has $3$ litres of $16\\%$ dye solution, he needs to mix it with $1.8$ litres of water to get the right concentration.",
+        "The solution of the equation $\\log\\sqrt[3]{x} + \\log\\dfrac{1}{x^{2}} -\\log\\sqrt[3]{x^{2}} + \\dfrac{17}{6} = \\dfrac{\\log x}{1 + \\log 10}$, where $\\log x$ denotes the decadic logarithm of $x$, is smaller than $5$.",
+        "A commission pool of $9800$ EUR is supposed to be split among the winners in a way that the $2$nd placed obtains $60\\%$ of the amount the $1$st placed obtains, and the $3$rd placed obtains $60\\%$ of the $2$nd placed. Then the prize for the $2$nd place is $3200$ EUR."
       ],
       "answer_key": [
-        true,
+        false,
         false,
         true,
         false,
         false
       ],
       "tactical_explanations": [
-        "**A.** → True\n\nPythagoras with legs $5$ and height $h$:\n\n$$5^{2} + h^{2} = 13^{2}$$\n\n$$25 + h^{2} = 169$$\n\n$$h^{2} = 144$$\n\n$$h = 12$$\n\n(positive height).\n\nSo the statement is True.",
-        "**B.** → False\n\n$$t = \\frac{80}{64} = 1.25$$\n\nhours ($1$ h $15$ min). From $15{:}00$ back $1$ h $15$ min lands at $13{:}45$, not $13{:}15$.\n\nSo the statement is False.",
-        "**C.** → True\n\n$$\\frac{3 \\cdot 0.16}{3 + w} = 0.10$$\n\n$$\\frac{0.48}{3 + w} = 0.10$$\n\n$$w = 1.8$$\n\nCheck: $0.48 / 4.8 = 0.10$.\n\nSo the statement is True.",
-        "**D.** → False\n\n$$u^{2} - u - 6 = 0$$ with $u = \\log x$:\n\n$$(u - 3)(u + 2) = 0$$\n\n$$u = 3$$ or $u = -2$$\n\ngiving $x = 1000$ and $x = 0.01$, both positive. Two solutions, not one.\n\nSo the statement is False.",
-        "**E.** → False\n\n$$a + 0.5a + 0.25a = 9750$$\n\n$$1.75a = 9750$$\n\n$$a = 5571.43\\ldots$$\n\nSecond tranche $0.5a \\approx 2785.71$ EUR, not $2500$.\n\nSo the statement is False."
+        "**A.** → False\n\nArea is length times width. Let the shorter side be $x$ m. Then the longer side is $x + 9$, and the area is $90$ m$^{2}$:\n\n$$x(x + 9) = 90$$\n\n$$x^{2} + 9x - 90 = 0$$\n\nThe discriminant is\n\n$$\\Delta = 9^{2} + 4 \\cdot 90 = 441 = 21^{2}$$\n\n$$x = \\dfrac{-9 \\pm 21}{2}$$\n\nso $x = 6$ or $x = -15$. A side length must be positive, so $x = 6$. The longer side is then\n\n$$6 + 9 = 15$$\n\nCheck: $6 \\cdot 15 = 90$. The longer side is $15$ m, not the claimed $6$ m. Substituting a longer side of $6$ m would force a shorter side of $-3$ m:\n\n$$-3 \\cdot 6 = -18$$\n\nwhich is not $90$.\n\nSo the statement is False.",
+        "**B.** → False\n\nTime on the road is distance divided by average speed:\n\n$$t = \\frac{48}{16}$$\n\n$$t = 3$$\n\n$$t = 3$$\n\nhours. That is exactly $3$ hours. Counting $3$ hours back from 11 am, lands at 8 am, not the claimed 8{:}15 am.\n\nSo the statement is False.",
+        "**C.** → True\n\n$3$ litres of $16\\%$ dye solution hold $0.48$ litres of pure dye. After adding $w$ litres of water the total volume is $3 + w$ litres, and the concentration should be $10\\%$:\n\n$$\\frac{0.48}{3 + w} = 0.1$$\n\n$$0.48 = 0.1(3 + w)$$\n\n$$0.48 = 0.3 + 0.1w$$\n\n$$0.18 = 0.1w$$\n\n$$w = \\frac{0.18}{0.1}$$\n\n$$w = 1.8$$\n\nThat $1.8$ is the litres of water to add. Substituting it recovers the $10\\%$ concentration:\n\n$$3 + 1.8 = 4.8$$\n\n$$\\frac{0.48}{4.8} = 0.1$$\n\nwhich matches the recipe.\n\nSo the statement is True.",
+        "**D.** → False\n\nThroughout, $\\log$ denotes the decadic logarithm, and the domain requires $x > 0$. Write $L = \\log x$ and apply the power rule to every logarithmic term:\n\n$$\\log\\sqrt[3]{x} = \\dfrac{1}{3}L$$\n\n$$\\log\\dfrac{1}{x^{2}} = -2L$$\n\n$$\\log\\sqrt[3]{x^{2}} = \\dfrac{2}{3}L$$\n\nso the signed contribution in the equation is $-\\dfrac{2}{3}L$.\n\n$$\\log 10 = 1$$\n\nThe equation becomes\n\n$$\\dfrac{1}{3}L - 2L - \\dfrac{2}{3}L + \\dfrac{17}{6} = \\dfrac{L}{1 + 1}$$\n\nCombine the coefficients of $L$ on the left-hand side:\n\n$$\\text{coefficient sum} = \\dfrac{-7}{3}$$\n\nso\n\n$$\\dfrac{-7}{3}L + \\dfrac{17}{6} = \\dfrac{1}{2}L$$\n\nCollect the $L$-terms:\n\n$$\\dfrac{17}{6} = \\dfrac{1}{2}L - (\\dfrac{-7}{3})L$$\n\n$$\\dfrac{17}{6} = \\dfrac{17}{6}L$$\n\n$$L = 1$$\n\n$$x = 10^{1} = 10$$\n\nThe unique positive solution is $x = 10$, which is not smaller than $5$.\n\nSo the statement is False.",
+        "**E.** → False\n\nLet the first-place prize be $a$ EUR. Then second place is $60\\%$ of first place, and third place is $60\\%$ of second place:\n\n$$0.6a$$\n\n$$0.6 \\cdot 0.6a = 0.36a$$\n\nThe three prizes sum to $9800$ EUR:\n\n$$a + 0.6a + 0.36a = 9800$$\n\n$$1.96a = 9800$$\n\n$$a = \\frac{9800}{1.96}$$\n\n$$a = 5000$$\n\nFirst place is $5000$ EUR, so second place is\n\n$$0.6 \\cdot 5000 = 3000$$\n\nThe second-place prize is $3000$ EUR, not the claimed $3200$.\n\nSo the statement is False."
       ],
       "difficulty_level": "5/5",
       "sort_order": 226,
-      "solution_overview": "Independent claims: a ladder Pythagoras check, a ferry timetable, dye dilution, a quadratic-in-log equation, and a half-share dividend chain.",
+      "solution_overview": "Five independent closed claims spanning the chapter. Translate each story into one equation (a rectangle-area quadratic, a $t = d/v$ start time, a dilution, a composite decadic logarithm, and a percentage prize split), then isolate the unknown and compare with the claim.\n\nFor the quadratic, keep only a positive side length. For the logarithm, set $L = \\log x$, reduce with the power rule, and recover $x = 10^{L}$.\n\nEach letter is a separate mini-problem; do not reuse a root from another letter.",
       "placeholder": false
     },
     {
@@ -7239,29 +7239,29 @@
       "subsection": "4.5",
       "context": "Evaluate each statement. Mark it TRUE or FALSE.",
       "statements": [
-        "The mean of five scores is $14$. Four of them are $11$, $12$, $15$, and $16$. The missing score is $16$.",
-        "A runner covers $9$ km at $6$ km/h and then $6$ km at $9$ km/h. The whole run takes $2$ hours.",
-        "Disinfectant: $2.4$ litres at $5\\%$ diluted to $2\\%$. Water to add is $3.6$ litres.",
-        "The equation $|x - 4| = 2x$ has solution set $\\{4\\}$.",
-        "Stipends totaling $12200$ EUR use an $80\\%$ step-down twice. Second stipend is $4000$ EUR."
+        "If one side of a rectangle is by $4$ cm longer than the other one and the rectangle's area is $140$ cm$^{2}$, then the length of the longer side is $14$ cm.",
+        "A metro train travels at an average speed of $36$ km/h. At 12{:}15 pm, it has traveled a total distance of $27$ km. Then it started traveling at 11{:}30 am.",
+        "A recipe calls for $2\\%$ fat solution. If the cook only has $2.4$ litres of $5\\%$ fat solution, he needs to mix it with $3.6$ litres of water to get the right concentration.",
+        "The solution of the equation $\\log\\sqrt[4]{x} -\\log\\left(x^{2}\\sqrt{x}\\right) -\\log\\sqrt{x} + \\dfrac{19}{4} = \\dfrac{\\log x^{2}}{1 + \\log 10}$, where $\\log x$ denotes the decadic logarithm of $x$, is larger than $8$.",
+        "A stipend total of $13300$ EUR is supposed to be split among the winners in a way that the $2$nd placed obtains $75\\%$ of the amount the $1$st placed obtains, and the $3$rd placed obtains $75\\%$ of the $2$nd placed. Then the prize for the $2$nd place is $4200$ EUR."
       ],
       "answer_key": [
         true,
-        false,
         true,
-        false,
-        true
+        true,
+        true,
+        false
       ],
       "tactical_explanations": [
-        "**A.** → True\n\nFive scores sum to $5 \\cdot 14 = 70$. Known sum $11 + 12 + 15 + 16 = 54$, so the missing score is $70 - 54 = 16$.\n\nSo the statement is True.",
-        "**B.** → False\n\n$$t = \\frac{9}{6} + \\frac{6}{9} = 1.5 + \\frac{2}{3} = \\frac{13}{6}$$\n\nhours, about $2$ h $10$ min, not exactly $2$ hours.\n\nSo the statement is False.",
-        "**C.** → True\n\n$$\\frac{2.4 \\cdot 0.05}{2.4 + w} = 0.02$$\n\n$$\\frac{0.12}{2.4 + w} = 0.02$$\n\n$$w = 3.6$$\n\nCheck: $0.12 / 6 = 0.02$.\n\nSo the statement is True.",
-        "**D.** → False\n\n$|x - 4| = 2x$ requires $2x \\ge 0$, so $x \\ge 0$. Cases:\n\n$$x - 4 = 2x \\implies x = -4$$ (rejected),\n\n$$4 - x = 2x \\implies 4 = 3x \\implies x = \\dfrac{4}{3}$$\n\nThe unique solution is $\\tfrac{4}{3}$, not $\\{4\\}$.\n\nSo the statement is False.",
-        "**E.** → True\n\n$$a + 0.8a + 0.64a = 12200$$\n\n$$2.44a = 12200$$\n\n$$a = 5000$$\n\nSecond stipend $4000$ EUR.\n\nSo the statement is True."
+        "**A.** → True\n\nArea is length times width. Let the shorter side be $x$ cm. Then the longer side is $x + 4$, and the area is $140$ cm$^{2}$:\n\n$$x(x + 4) = 140$$\n\n$$x^{2} + 4x - 140 = 0$$\n\nThe discriminant is\n\n$$\\Delta = 4^{2} + 4 \\cdot 140 = 576 = 24^{2}$$\n\n$$x = \\dfrac{-4 \\pm 24}{2}$$\n\nso $x = 10$ or $x = -14$. A side length must be positive, so $x = 10$. The longer side is then\n\n$$10 + 4 = 14$$\n\nCheck: $10 \\cdot 14 = 140$. The longer side is $14$ cm, matching the claim.\n\nSo the statement is True.",
+        "**B.** → True\n\nTime on the road is distance divided by average speed:\n\n$$t = \\frac{27}{36}$$\n\n$$t = \\dfrac{3}{4}$$\n\n$$t = 0.75$$\n\nhours. That is $45$ minutes. Counting $45$ minutes back from 12{:}15 pm, lands at 11{:}30 am. The recovered start time matches the claim.\n\nSo the statement is True.",
+        "**C.** → True\n\n$2.4$ litres of $5\\%$ fat solution hold $0.12$ litres of pure fat. After adding $w$ litres of water the total volume is $2.4 + w$ litres, and the concentration should be $2\\%$:\n\n$$\\frac{0.12}{2.4 + w} = 0.02$$\n\n$$0.12 = 0.02(2.4 + w)$$\n\n$$0.12 = 0.048 + 0.02w$$\n\n$$0.072 = 0.02w$$\n\n$$w = \\frac{0.072}{0.02}$$\n\n$$w = 3.6$$\n\nThat $3.6$ is the litres of water to add. Substituting it recovers the $2\\%$ concentration:\n\n$$2.4 + 3.6 = 6$$\n\n$$\\frac{0.12}{6} = 0.02$$\n\nwhich matches the recipe.\n\nSo the statement is True.",
+        "**D.** → True\n\nThroughout, $\\log$ denotes the decadic logarithm, and the domain requires $x > 0$. Write $L = \\log x$ and apply the power rule to every logarithmic term:\n\n$$\\log\\sqrt[4]{x} = \\dfrac{1}{4}L$$\n\n$$\\log\\left(x^{2}\\sqrt{x}\\right) = \\dfrac{7}{2}L$$\n\nso the signed contribution in the equation is $-\\dfrac{7}{2}L$.\n\n$$\\log\\sqrt{x} = \\dfrac{1}{2}L$$\n\nso the signed contribution in the equation is $-\\dfrac{1}{2}L$.\n\n$$\\log 10 = 1$$\n\nThe equation becomes\n\n$$\\dfrac{1}{4}L - \\dfrac{7}{2}L - \\dfrac{1}{2}L + \\dfrac{19}{4} = \\dfrac{2L}{1 + 1}$$\n\nCombine the coefficients of $L$ on the left-hand side:\n\n$$\\text{coefficient sum} = \\dfrac{-15}{4}$$\n\nso\n\n$$\\dfrac{-15}{4}L + \\dfrac{19}{4} = 1L$$\n\nCollect the $L$-terms:\n\n$$\\dfrac{19}{4} = 1L - (\\dfrac{-15}{4})L$$\n\n$$\\dfrac{19}{4} = \\dfrac{19}{4}L$$\n\n$$L = 1$$\n\n$$x = 10^{1} = 10$$\n\nThe unique positive solution is $x = 10$, which is larger than $8$.\n\nSo the statement is True.",
+        "**E.** → False\n\nLet the first-place prize be $a$ EUR. Then second place is $75\\%$ of first place, and third place is $75\\%$ of second place:\n\n$$0.75a$$\n\n$$0.75 \\cdot 0.75a = 0.5625a$$\n\nThe three prizes sum to $13300$ EUR:\n\n$$a + 0.75a + 0.5625a = 13300$$\n\n$$2.3125a = 13300$$\n\n$$a = \\frac{13300}{2.3125}$$\n\n$$a = 5751.35$$\n\nFirst place is $5751.35$ EUR, so second place is\n\n$$0.75 \\cdot 5751.35 = 4313.51$$\n\nThe second-place prize is $4313.51$ EUR, not the claimed $4200$.\n\nSo the statement is False."
       ],
       "difficulty_level": "5/5",
       "sort_order": 227,
-      "solution_overview": "Independent claims: a missing mean, a two-leg run, disinfectant dilution, an absolute-value equation, and an $80\\%$ stipend chain.",
+      "solution_overview": "Five independent closed claims spanning the chapter. Translate each story into one equation (a rectangle-area quadratic, a $t = d/v$ start time, a dilution, a composite decadic logarithm, and a percentage prize split), then isolate the unknown and compare with the claim.\n\nFor the quadratic, keep only a positive side length. For the logarithm, set $L = \\log x$, reduce with the power rule, and recover $x = 10^{L}$.\n\nEach letter is a separate mini-problem; do not reuse a root from another letter.",
       "placeholder": false
     },
     {
@@ -7271,29 +7271,29 @@
       "subsection": "4.5",
       "context": "Evaluate each statement. Mark it TRUE or FALSE.",
       "statements": [
-        "Water flows into an empty tank at $15$ litres per minute. After $12$ minutes the tank is four-fifths full, so the capacity is $180$ litres.",
-        "A taxi covers $45$ km at $60$ km/h and arrives at $10{:}00$. It left at $9{:}15$.",
-        "Soup stock: $1.6$ litres at $12.5\\%$ salt reduced to $5\\%$. Water needed is $2.4$ litres.",
-        "On $x \\ne -1$, $\\dfrac{2x + 1}{x + 1} = 3$ has solution $x = -2$.",
-        "Medal bonuses totaling $15250$ EUR step down by $20\\%$ each place. Second place gets $5000$ EUR."
+        "If one side of a rectangle is by $2$ cm longer than the other one and the rectangle's area is $80$ cm$^{2}$, then the length of the longer side is $8$ cm.",
+        "A shuttle travels at an average speed of $32$ km/h. At 5 pm, it has traveled a total distance of $64$ km. Then it started traveling at 3 pm.",
+        "A recipe calls for $5\\%$ solids solution. If the cook only has $1.6$ litres of $12.5\\%$ solids solution, he needs to mix it with $2.4$ litres of water to get the right concentration.",
+        "The solution of the equation $\\log\\sqrt[3]{x} + \\log\\dfrac{1}{x^{3}} -\\log\\sqrt[4]{x} + \\dfrac{13}{2} = \\dfrac{\\log x}{1 + \\log 100}$, where $\\log x$ denotes the decadic logarithm of $x$, is smaller than $50$.",
+        "A inheritance share of $7600$ EUR is supposed to be split among the winners in a way that the $2$nd placed obtains $90\\%$ of the amount the $1$st placed obtains, and the $3$rd placed obtains $90\\%$ of the $2$nd placed. Then the prize for the $2$nd place is $2700$ EUR."
       ],
       "answer_key": [
         false,
         true,
         true,
-        true,
-        true
+        false,
+        false
       ],
       "tactical_explanations": [
-        "**A.** → False\n\nVolume delivered $15 \\cdot 12 = 180$ litres is four-fifths of capacity:\n\n$$\\frac{4}{5}C = 180 \\implies C = 225$$\n\nCapacity is $225$ litres, not $180$.\n\nSo the statement is False.",
-        "**B.** → True\n\n$$t = \\frac{45}{60} = 0.75$$\n\nhours. Forty-five minutes before $10{:}00$ is $9{:}15$.\n\nSo the statement is True.",
-        "**C.** → True\n\n$$\\frac{1.6 \\cdot 0.125}{1.6 + w} = 0.05$$\n\n$$\\frac{0.20}{1.6 + w} = 0.05$$\n\n$$w = 2.4$$\n\nCheck: $0.20 / 4 = 0.05$.\n\nSo the statement is True.",
-        "**D.** → True\n\n$$2x + 1 = 3(x + 1)$$\n\n$$2x + 1 = 3x + 3$$\n\n$$x = -2$$\n\nThe value $-2$ is admissible since $-2 \\ne -1$.\n\nSo the statement is True.",
-        "**E.** → True\n\nA $20\\%$ step-down is a factor $0.8$:\n\n$$a + 0.8a + 0.64a = 15250$$\n\n$$2.44a = 15250$$\n\n$$a = 6250$$\n\nSecond place $0.8 \\cdot 6250 = 5000$ EUR.\n\nSo the statement is True."
+        "**A.** → False\n\nArea is length times width. Let the shorter side be $x$ cm. Then the longer side is $x + 2$, and the area is $80$ cm$^{2}$:\n\n$$x(x + 2) = 80$$\n\n$$x^{2} + 2x - 80 = 0$$\n\nThe discriminant is\n\n$$\\Delta = 2^{2} + 4 \\cdot 80 = 324 = 18^{2}$$\n\n$$x = \\dfrac{-2 \\pm 18}{2}$$\n\nso $x = 8$ or $x = -10$. A side length must be positive, so $x = 8$. The longer side is then\n\n$$8 + 2 = 10$$\n\nCheck: $8 \\cdot 10 = 80$. The longer side is $10$ cm, not the claimed $8$ cm. Substituting a longer side of $8$ cm would force a shorter side of $6$ cm:\n\n$$6 \\cdot 8 = 48$$\n\nwhich is not $80$.\n\nSo the statement is False.",
+        "**B.** → True\n\nTime on the road is distance divided by average speed:\n\n$$t = \\frac{64}{32}$$\n\n$$t = 2$$\n\n$$t = 2$$\n\nhours. That is exactly $2$ hours. Counting $2$ hours back from 5 pm, lands at 3 pm. The recovered start time matches the claim.\n\nSo the statement is True.",
+        "**C.** → True\n\n$1.6$ litres of $12.5\\%$ solids solution hold $0.2$ litres of pure solids. After adding $w$ litres of water the total volume is $1.6 + w$ litres, and the concentration should be $5\\%$:\n\n$$\\frac{0.2}{1.6 + w} = 0.05$$\n\n$$0.2 = 0.05(1.6 + w)$$\n\n$$0.2 = 0.08 + 0.05w$$\n\n$$0.12 = 0.05w$$\n\n$$w = \\frac{0.12}{0.05}$$\n\n$$w = 2.4$$\n\nThat $2.4$ is the litres of water to add. Substituting it recovers the $5\\%$ concentration:\n\n$$1.6 + 2.4 = 4$$\n\n$$\\frac{0.2}{4} = 0.05$$\n\nwhich matches the recipe.\n\nSo the statement is True.",
+        "**D.** → False\n\nThroughout, $\\log$ denotes the decadic logarithm, and the domain requires $x > 0$. Write $L = \\log x$ and apply the power rule to every logarithmic term:\n\n$$\\log\\sqrt[3]{x} = \\dfrac{1}{3}L$$\n\n$$\\log\\dfrac{1}{x^{3}} = -3L$$\n\n$$\\log\\sqrt[4]{x} = \\dfrac{1}{4}L$$\n\nso the signed contribution in the equation is $-\\dfrac{1}{4}L$.\n\n$$\\log 100 = 2$$\n\nThe equation becomes\n\n$$\\dfrac{1}{3}L - 3L - \\dfrac{1}{4}L + \\dfrac{13}{2} = \\dfrac{L}{1 + 2}$$\n\nCombine the coefficients of $L$ on the left-hand side:\n\n$$\\text{coefficient sum} = \\dfrac{-35}{12}$$\n\nso\n\n$$\\dfrac{-35}{12}L + \\dfrac{13}{2} = \\dfrac{1}{3}L$$\n\nCollect the $L$-terms:\n\n$$\\dfrac{13}{2} = \\dfrac{1}{3}L - (\\dfrac{-35}{12})L$$\n\n$$\\dfrac{13}{2} = \\dfrac{13}{4}L$$\n\n$$L = 2$$\n\n$$x = 10^{2} = 100$$\n\nThe unique positive solution is $x = 100$, which is not smaller than $50$.\n\nSo the statement is False.",
+        "**E.** → False\n\nLet the first-place prize be $a$ EUR. Then second place is $90\\%$ of first place, and third place is $90\\%$ of second place:\n\n$$0.9a$$\n\n$$0.9 \\cdot 0.9a = 0.81a$$\n\nThe three prizes sum to $7600$ EUR:\n\n$$a + 0.9a + 0.81a = 7600$$\n\n$$2.71a = 7600$$\n\n$$a = \\frac{7600}{2.71}$$\n\n$$a = 2804.43$$\n\nFirst place is $2804.43$ EUR, so second place is\n\n$$0.9 \\cdot 2804.43 = 2523.99$$\n\nThe second-place prize is $2523.99$ EUR, not the claimed $2700$.\n\nSo the statement is False."
       ],
       "difficulty_level": "5/5",
       "sort_order": 228,
-      "solution_overview": "Independent claims: a tank filled to a fraction of capacity, a taxi timetable, soup dilution, a rational equation, and a $20\\%$ step-down medal bonus.",
+      "solution_overview": "Five independent closed claims spanning the chapter. Translate each story into one equation (a rectangle-area quadratic, a $t = d/v$ start time, a dilution, a composite decadic logarithm, and a percentage prize split), then isolate the unknown and compare with the claim.\n\nFor the quadratic, keep only a positive side length. For the logarithm, set $L = \\log x$, reduce with the power rule, and recover $x = 10^{L}$.\n\nEach letter is a separate mini-problem; do not reuse a root from another letter.",
       "placeholder": false
     },
     {
@@ -7303,29 +7303,29 @@
       "subsection": "4.5",
       "context": "Evaluate each statement. Mark it TRUE or FALSE.",
       "statements": [
-        "A rectangle's length is twice its width and the perimeter is $48$ cm, so the width is $10$ cm.",
-        "Car A leaves at $8{:}00$ at $60$ km/h. Car B leaves the same depot at $9{:}00$ at $90$ km/h chasing A. They meet at $11{:}00$.",
-        "Wine must: $2$ litres at $12\\%$ alcohol cut to $8\\%$. Water to add is $1$ litre.",
-        "Decadic $\\log$: $\\log\\sqrt{x} + \\log x^{3} - \\log x = 5$ has solution larger than $50$.",
-        "Escrow payouts of $8750$ EUR use successive halves. The second payout is $2500$ EUR."
+        "If one side of a rectangle is by $8$ cm longer than the other one and the rectangle's area is $105$ cm$^{2}$, then the length of the longer side is $15$ cm.",
+        "A regional train travels at an average speed of $112$ km/h. At 6{:}45 pm, it has traveled a total distance of $28$ km. Then it started traveling at 6{:}20 pm.",
+        "A recipe calls for $8\\%$ ink solution. If the cook only has $2$ litres of $12\\%$ ink solution, he needs to mix it with $0.8$ litres of water to get the right concentration.",
+        "The solution of the equation $\\log\\sqrt{x} + \\log\\dfrac{1}{x^{4}} -\\log\\sqrt{x} + \\dfrac{14}{3} = \\dfrac{\\log x^{2}}{1 + \\log 100}$, where $\\log x$ denotes the decadic logarithm of $x$, is the integer $10$.",
+        "A choir prize money of $9750$ EUR is supposed to be split among the winners in a way that the $2$nd placed obtains $50\\%$ of the amount the $1$st placed obtains, and the $3$rd placed obtains $50\\%$ of the $2$nd placed. Then the prize for the $2$nd place is $2500$ EUR."
       ],
       "answer_key": [
+        true,
+        false,
         false,
         true,
-        true,
-        true,
-        true
+        false
       ],
       "tactical_explanations": [
-        "**A.** → False\n\n$$2(2w + w) = 48$$\n\n$$6w = 48$$\n\n$$w = 8$$\n\nWidth is $8$ cm, not $10$.\n\nSo the statement is False.",
-        "**B.** → True\n\nLet $t$ be hours after $8{:}00$ when they meet. Then B has driven $t - 1$ hours:\n\n$$60t = 90(t - 1)$$\n\n$$60t = 90t - 90$$\n\n$$30t = 90$$\n\n$$t = 3$$\n\nMeeting time $11{:}00$. Distances: $60 \\cdot 3 = 180$ km and $90 \\cdot 2 = 180$ km.\n\nSo the statement is True.",
-        "**C.** → True\n\n$$\\frac{0.24}{2 + w} = 0.08$$\n\n$$w = 1$$\n\nCheck: $0.24 / 3 = 0.08$.\n\nSo the statement is True.",
-        "**D.** → True\n\n$$\\frac{1}{2}L + 3L - L = 5$$\n\n$$\\frac{5}{2}L = 5$$\n\n$$L = 2 \\implies x = 100 > 50$$\n\nSo the statement is True.",
-        "**E.** → True\n\n$$a + 0.5a + 0.25a = 8750$$\n\n$$1.75a = 8750$$\n\n$$a = 5000$$\n\nSecond payout $2500$ EUR.\n\nSo the statement is True."
+        "**A.** → True\n\nArea is length times width. Let the shorter side be $x$ cm. Then the longer side is $x + 8$, and the area is $105$ cm$^{2}$:\n\n$$x(x + 8) = 105$$\n\n$$x^{2} + 8x - 105 = 0$$\n\nThe discriminant is\n\n$$\\Delta = 8^{2} + 4 \\cdot 105 = 484 = 22^{2}$$\n\n$$x = \\dfrac{-8 \\pm 22}{2}$$\n\nso $x = 7$ or $x = -15$. A side length must be positive, so $x = 7$. The longer side is then\n\n$$7 + 8 = 15$$\n\nCheck: $7 \\cdot 15 = 105$. The longer side is $15$ cm, matching the claim.\n\nSo the statement is True.",
+        "**B.** → False\n\nTime on the road is distance divided by average speed:\n\n$$t = \\frac{28}{112}$$\n\n$$t = \\dfrac{1}{4}$$\n\n$$t = 0.25$$\n\nhours. That is $15$ minutes. Counting $15$ minutes back from 6{:}45 pm, lands at 6{:}30 pm, not the claimed 6{:}20 pm.\n\nSo the statement is False.",
+        "**C.** → False\n\n$2$ litres of $12\\%$ ink solution hold $0.24$ litres of pure ink. After adding $w$ litres of water the total volume is $2 + w$ litres, and the concentration should be $8\\%$:\n\n$$\\frac{0.24}{2 + w} = 0.08$$\n\n$$0.24 = 0.08(2 + w)$$\n\n$$0.24 = 0.16 + 0.08w$$\n\n$$0.08 = 0.08w$$\n\n$$w = \\frac{0.08}{0.08}$$\n\n$$w = 1$$\n\nThe required amount of water is $1$ litres, not the claimed $0.8$. Substituting the claimed value gives concentration\n\n$$\\frac{0.24}{2.8} = 0.0857143$$\n\nwhich is not $0.08$.\n\nSo the statement is False.",
+        "**D.** → True\n\nThroughout, $\\log$ denotes the decadic logarithm, and the domain requires $x > 0$. Write $L = \\log x$ and apply the power rule to every logarithmic term:\n\n$$\\log\\sqrt{x} = \\dfrac{1}{2}L$$\n\n$$\\log\\dfrac{1}{x^{4}} = -4L$$\n\n$$\\log\\sqrt{x} = \\dfrac{1}{2}L$$\n\nso the signed contribution in the equation is $-\\dfrac{1}{2}L$.\n\n$$\\log 100 = 2$$\n\nThe equation becomes\n\n$$\\dfrac{1}{2}L - 4L - \\dfrac{1}{2}L + \\dfrac{14}{3} = \\dfrac{2L}{1 + 2}$$\n\nCombine the coefficients of $L$ on the left-hand side:\n\n$$\\text{coefficient sum} = -4$$\n\nso\n\n$$-4L + \\dfrac{14}{3} = \\dfrac{2}{3}L$$\n\nCollect the $L$-terms:\n\n$$\\dfrac{14}{3} = \\dfrac{2}{3}L - (-4)L$$\n\n$$\\dfrac{14}{3} = \\dfrac{14}{3}L$$\n\n$$L = 1$$\n\n$$x = 10^{1} = 10$$\n\nThe unique positive solution is $x = 10$, matching the claimed integer $10$.\n\nSo the statement is True.",
+        "**E.** → False\n\nLet the first-place prize be $a$ EUR. Then second place is $50\\%$ of first place, and third place is $50\\%$ of second place:\n\n$$0.5a$$\n\n$$0.5 \\cdot 0.5a = 0.25a$$\n\nThe three prizes sum to $9750$ EUR:\n\n$$a + 0.5a + 0.25a = 9750$$\n\n$$1.75a = 9750$$\n\n$$a = \\frac{9750}{1.75}$$\n\n$$a = 5571.43$$\n\nFirst place is $5571.43$ EUR, so second place is\n\n$$0.5 \\cdot 5571.43 = 2785.71$$\n\nThe second-place prize is $2785.71$ EUR, not the claimed $2500$.\n\nSo the statement is False."
       ],
       "difficulty_level": "5/5",
       "sort_order": 229,
-      "solution_overview": "Independent claims: a $2{:}1$ rectangle perimeter, a pursuit meeting time, wine dilution, a composite logarithm, and a half-share escrow split.",
+      "solution_overview": "Five independent closed claims spanning the chapter. Translate each story into one equation (a rectangle-area quadratic, a $t = d/v$ start time, a dilution, a composite decadic logarithm, and a percentage prize split), then isolate the unknown and compare with the claim.\n\nFor the quadratic, keep only a positive side length. For the logarithm, set $L = \\log x$, reduce with the power rule, and recover $x = 10^{L}$.\n\nEach letter is a separate mini-problem; do not reuse a root from another letter.",
       "placeholder": false
     },
     {
@@ -7335,29 +7335,29 @@
       "subsection": "4.5",
       "context": "Evaluate each statement. Mark it TRUE or FALSE.",
       "statements": [
-        "A carpenter cuts a board whose length is $1$ cm more than twice the width, and the area is $36$ cm$^{2}$. The width is $4$ cm.",
-        "A canoe covers $21$ km downstream at $7$ km/h and arrives at $16{:}00$. Launch time was $13{:}00$.",
-        "Hair gel: $0.75$ litres at $8\\%$ active agent diluted to $3\\%$. Water needed is $1.25$ litres.",
-        "The equation $5^{x} = 125$ has unique real solution $x = 2$.",
-        "Choir prize money $4880$ EUR steps down by $20\\%$ twice. Second place receives $1600$ EUR."
+        "If one side of a rectangle is by $5$ cm longer than the other one and the rectangle's area is $84$ cm$^{2}$, then the length of the longer side is $12$ cm.",
+        "A bus travels at an average speed of $48$ km/h. At 9{:}45 am, it has traveled a total distance of $36$ km. Then it started traveling at 9 am.",
+        "A recipe calls for $3\\%$ culture solution. If the cook only has $0.75$ litres of $8\\%$ culture solution, he needs to mix it with $1.25$ litres of water to get the right concentration.",
+        "The solution of the equation $\\log\\sqrt[5]{x} + \\log\\dfrac{1}{x^{3}} -\\log\\sqrt{x} + \\dfrac{19}{5} = \\dfrac{\\log x}{1 + \\log 10}$, where $\\log x$ denotes the decadic logarithm of $x$, is larger than $5$.",
+        "A research grant of $14640$ EUR is supposed to be split among the winners in a way that the $2$nd placed obtains $80\\%$ of the amount the $1$st placed obtains, and the $3$rd placed obtains $80\\%$ of the $2$nd placed. Then the prize for the $2$nd place is $5000$ EUR."
       ],
       "answer_key": [
         true,
         true,
         true,
-        false,
-        true
+        true,
+        false
       ],
       "tactical_explanations": [
-        "**A.** → True\n\n$$w(2w + 1) = 36$$\n\n$$2w^{2} + w - 36 = 0$$\n\n$$\\Delta = 1 + 288 = 289$$\n\n$$w = \\frac{-1 + 17}{4} = 4$$\n\n(positive root). Check: $4 \\cdot 9 = 36$.\n\nSo the statement is True.",
-        "**B.** → True\n\n$$t = \\frac{21}{7} = 3$$\n\nhours. Three hours before $16{:}00$ is $13{:}00$.\n\nSo the statement is True.",
-        "**C.** → True\n\n$$\\frac{0.75 \\cdot 0.08}{0.75 + w} = 0.03$$\n\n$$\\frac{0.06}{0.75 + w} = 0.03$$\n\n$$w = 1.25$$\n\nCheck: $0.06 / 2 = 0.03$.\n\nSo the statement is True.",
-        "**D.** → False\n\n$$125 = 5^{3}$$\n\nso $x = 3$, not $2$.\n\nSo the statement is False.",
-        "**E.** → True\n\n$$a + 0.8a + 0.64a = 4880$$\n\n$$a = 2000$$\n\nSecond place $1600$ EUR.\n\nSo the statement is True."
+        "**A.** → True\n\nArea is length times width. Let the shorter side be $x$ cm. Then the longer side is $x + 5$, and the area is $84$ cm$^{2}$:\n\n$$x(x + 5) = 84$$\n\n$$x^{2} + 5x - 84 = 0$$\n\nThe discriminant is\n\n$$\\Delta = 5^{2} + 4 \\cdot 84 = 361 = 19^{2}$$\n\n$$x = \\dfrac{-5 \\pm 19}{2}$$\n\nso $x = 7$ or $x = -12$. A side length must be positive, so $x = 7$. The longer side is then\n\n$$7 + 5 = 12$$\n\nCheck: $7 \\cdot 12 = 84$. The longer side is $12$ cm, matching the claim.\n\nSo the statement is True.",
+        "**B.** → True\n\nTime on the road is distance divided by average speed:\n\n$$t = \\frac{36}{48}$$\n\n$$t = \\dfrac{3}{4}$$\n\n$$t = 0.75$$\n\nhours. That is $45$ minutes. Counting $45$ minutes back from 9{:}45 am, lands at 9 am. The recovered start time matches the claim.\n\nSo the statement is True.",
+        "**C.** → True\n\n$0.75$ litres of $8\\%$ culture solution hold $0.06$ litres of pure culture. After adding $w$ litres of water the total volume is $0.75 + w$ litres, and the concentration should be $3\\%$:\n\n$$\\frac{0.06}{0.75 + w} = 0.03$$\n\n$$0.06 = 0.03(0.75 + w)$$\n\n$$0.06 = 0.0225 + 0.03w$$\n\n$$0.0375 = 0.03w$$\n\n$$w = \\frac{0.0375}{0.03}$$\n\n$$w = 1.25$$\n\nThat $1.25$ is the litres of water to add. Substituting it recovers the $3\\%$ concentration:\n\n$$0.75 + 1.25 = 2$$\n\n$$\\frac{0.06}{2} = 0.03$$\n\nwhich matches the recipe.\n\nSo the statement is True.",
+        "**D.** → True\n\nThroughout, $\\log$ denotes the decadic logarithm, and the domain requires $x > 0$. Write $L = \\log x$ and apply the power rule to every logarithmic term:\n\n$$\\log\\sqrt[5]{x} = \\dfrac{1}{5}L$$\n\n$$\\log\\dfrac{1}{x^{3}} = -3L$$\n\n$$\\log\\sqrt{x} = \\dfrac{1}{2}L$$\n\nso the signed contribution in the equation is $-\\dfrac{1}{2}L$.\n\n$$\\log 10 = 1$$\n\nThe equation becomes\n\n$$\\dfrac{1}{5}L - 3L - \\dfrac{1}{2}L + \\dfrac{19}{5} = \\dfrac{L}{1 + 1}$$\n\nCombine the coefficients of $L$ on the left-hand side:\n\n$$\\text{coefficient sum} = \\dfrac{-33}{10}$$\n\nso\n\n$$\\dfrac{-33}{10}L + \\dfrac{19}{5} = \\dfrac{1}{2}L$$\n\nCollect the $L$-terms:\n\n$$\\dfrac{19}{5} = \\dfrac{1}{2}L - (\\dfrac{-33}{10})L$$\n\n$$\\dfrac{19}{5} = \\dfrac{19}{5}L$$\n\n$$L = 1$$\n\n$$x = 10^{1} = 10$$\n\nThe unique positive solution is $x = 10$, which is larger than $5$.\n\nSo the statement is True.",
+        "**E.** → False\n\nLet the first-place prize be $a$ EUR. Then second place is $80\\%$ of first place, and third place is $80\\%$ of second place:\n\n$$0.8a$$\n\n$$0.8 \\cdot 0.8a = 0.64a$$\n\nThe three prizes sum to $14640$ EUR:\n\n$$a + 0.8a + 0.64a = 14640$$\n\n$$2.44a = 14640$$\n\n$$a = \\frac{14640}{2.44}$$\n\n$$a = 6000$$\n\nFirst place is $6000$ EUR, so second place is\n\n$$0.8 \\cdot 6000 = 4800$$\n\nThe second-place prize is $4800$ EUR, not the claimed $5000$.\n\nSo the statement is False."
       ],
       "difficulty_level": "5/5",
       "sort_order": 230,
-      "solution_overview": "Independent claims: a board-area quadratic, a canoe timetable, gel dilution, a base-$5$ exponential, and an $80\\%$ choir prize split.",
+      "solution_overview": "Five independent closed claims spanning the chapter. Translate each story into one equation (a rectangle-area quadratic, a $t = d/v$ start time, a dilution, a composite decadic logarithm, and a percentage prize split), then isolate the unknown and compare with the claim.\n\nFor the quadratic, keep only a positive side length. For the logarithm, set $L = \\log x$, reduce with the power rule, and recover $x = 10^{L}$.\n\nEach letter is a separate mini-problem; do not reuse a root from another letter.",
       "placeholder": false
     },
     {
@@ -7367,29 +7367,29 @@
       "subsection": "4.5",
       "context": "Evaluate each statement. Mark it TRUE or FALSE.",
       "statements": [
-        "Three consecutive integers sum to $54$. The middle integer is $18$.",
-        "A cable car climbs $4.5$ km at $9$ km/h and tops out at $14{:}20$. It left the valley station at $13{:}50$.",
-        "Mustard paste: $1$ litre at $18\\%$ solids diluted to $12\\%$. Water to add is $0.5$ litres.",
-        "Decadic $\\log$: $\\log x^{3} + \\log\\dfrac{1}{x} = \\log 100$ has solution strictly greater than $10$.",
-        "Fellowships totaling $14625$ EUR use an $80\\%$ step-down. The middle fellowship is $4800$ EUR."
+        "If one side of a rectangle is by $3$ m longer than the other one and the rectangle's area is $108$ m$^{2}$, then the length of the longer side is $12$ m.",
+        "A ferry travels at an average speed of $7$ km/h. At 4 pm, it has traveled a total distance of $21$ km. Then it started traveling at 1 pm.",
+        "A recipe calls for $12\\%$ gelatin solution. If the cook only has $1$ litre of $18\\%$ gelatin solution, he needs to mix it with $0.5$ litres of water to get the right concentration.",
+        "The solution of the equation $\\log\\sqrt[3]{x} -\\log\\sqrt[3]{x^{8}} -\\log x + \\dfrac{13}{3} = \\dfrac{\\log x^{2}}{1 + \\log 10}$, where $\\log x$ denotes the decadic logarithm of $x$, is smaller than $5$.",
+        "A tip pool of $8750$ EUR is supposed to be split among the winners in a way that the $2$nd placed obtains $50\\%$ of the amount the $1$st placed obtains, and the $3$rd placed obtains $50\\%$ of the $2$nd placed. Then the prize for the $2$nd place is $2800$ EUR."
       ],
       "answer_key": [
         true,
         true,
         true,
         false,
-        true
+        false
       ],
       "tactical_explanations": [
-        "**A.** → True\n\n$$(n - 1) + n + (n + 1) = 54$$\n\n$$3n = 54$$\n\n$$n = 18$$\n\nSo the statement is True.",
-        "**B.** → True\n\n$$t = \\frac{4.5}{9} = 0.5$$\n\nhours. Thirty minutes before $14{:}20$ is $13{:}50$.\n\nSo the statement is True.",
-        "**C.** → True\n\n$$\\frac{0.18}{1 + w} = 0.12$$\n\n$$w = 0.5$$\n\nCheck: $0.18 / 1.5 = 0.12$.\n\nSo the statement is True.",
-        "**D.** → False\n\n$$3L - L = 2$$\n\n$$2L = 2$$\n\n$$L = 1 \\implies x = 10$$\n\nThe solution equals $10$, so it is not strictly greater than $10$.\n\nSo the statement is False.",
-        "**E.** → True\n\n$$a + 0.8a + 0.64a = 14625$$\n\n$$a = 6000$$\n\nMiddle fellowship $4800$ EUR.\n\nSo the statement is True."
+        "**A.** → True\n\nArea is length times width. Let the shorter side be $x$ m. Then the longer side is $x + 3$, and the area is $108$ m$^{2}$:\n\n$$x(x + 3) = 108$$\n\n$$x^{2} + 3x - 108 = 0$$\n\nThe discriminant is\n\n$$\\Delta = 3^{2} + 4 \\cdot 108 = 441 = 21^{2}$$\n\n$$x = \\dfrac{-3 \\pm 21}{2}$$\n\nso $x = 9$ or $x = -12$. A side length must be positive, so $x = 9$. The longer side is then\n\n$$9 + 3 = 12$$\n\nCheck: $9 \\cdot 12 = 108$. The longer side is $12$ m, matching the claim.\n\nSo the statement is True.",
+        "**B.** → True\n\nTime on the road is distance divided by average speed:\n\n$$t = \\frac{21}{7}$$\n\n$$t = 3$$\n\n$$t = 3$$\n\nhours. That is exactly $3$ hours. Counting $3$ hours back from 4 pm, lands at 1 pm. The recovered start time matches the claim.\n\nSo the statement is True.",
+        "**C.** → True\n\n$1$ litre of $18\\%$ gelatin solution hold $0.18$ litres of pure gelatin. After adding $w$ litres of water the total volume is $1 + w$ litres, and the concentration should be $12\\%$:\n\n$$\\frac{0.18}{1 + w} = 0.12$$\n\n$$0.18 = 0.12(1 + w)$$\n\n$$0.18 = 0.12 + 0.12w$$\n\n$$0.06 = 0.12w$$\n\n$$w = \\frac{0.06}{0.12}$$\n\n$$w = 0.5$$\n\nThat $0.5$ is the litres of water to add. Substituting it recovers the $12\\%$ concentration:\n\n$$1 + 0.5 = 1.5$$\n\n$$\\frac{0.18}{1.5} = 0.12$$\n\nwhich matches the recipe.\n\nSo the statement is True.",
+        "**D.** → False\n\nThroughout, $\\log$ denotes the decadic logarithm, and the domain requires $x > 0$. Write $L = \\log x$ and apply the power rule to every logarithmic term:\n\n$$\\log\\sqrt[3]{x} = \\dfrac{1}{3}L$$\n\n$$\\log\\sqrt[3]{x^{8}} = \\dfrac{8}{3}L$$\n\nso the signed contribution in the equation is $-\\dfrac{8}{3}L$.\n\n$$\\log x = L$$\n\nso the signed contribution in the equation is $-L$.\n\n$$\\log 10 = 1$$\n\nThe equation becomes\n\n$$\\dfrac{1}{3}L - \\dfrac{8}{3}L - 1L + \\dfrac{13}{3} = \\dfrac{2L}{1 + 1}$$\n\nCombine the coefficients of $L$ on the left-hand side:\n\n$$\\text{coefficient sum} = \\dfrac{-10}{3}$$\n\nso\n\n$$\\dfrac{-10}{3}L + \\dfrac{13}{3} = 1L$$\n\nCollect the $L$-terms:\n\n$$\\dfrac{13}{3} = 1L - (\\dfrac{-10}{3})L$$\n\n$$\\dfrac{13}{3} = \\dfrac{13}{3}L$$\n\n$$L = 1$$\n\n$$x = 10^{1} = 10$$\n\nThe unique positive solution is $x = 10$, which is not smaller than $5$.\n\nSo the statement is False.",
+        "**E.** → False\n\nLet the first-place prize be $a$ EUR. Then second place is $50\\%$ of first place, and third place is $50\\%$ of second place:\n\n$$0.5a$$\n\n$$0.5 \\cdot 0.5a = 0.25a$$\n\nThe three prizes sum to $8750$ EUR:\n\n$$a + 0.5a + 0.25a = 8750$$\n\n$$1.75a = 8750$$\n\n$$a = \\frac{8750}{1.75}$$\n\n$$a = 5000$$\n\nFirst place is $5000$ EUR, so second place is\n\n$$0.5 \\cdot 5000 = 2500$$\n\nThe second-place prize is $2500$ EUR, not the claimed $2800$.\n\nSo the statement is False."
       ],
       "difficulty_level": "5/5",
       "sort_order": 231,
-      "solution_overview": "Independent claims: consecutive integers, a cable-car timetable, mustard dilution, a short logarithmic equation, and an $80\\%$ fellowship chain.",
+      "solution_overview": "Five independent closed claims spanning the chapter. Translate each story into one equation (a rectangle-area quadratic, a $t = d/v$ start time, a dilution, a composite decadic logarithm, and a percentage prize split), then isolate the unknown and compare with the claim.\n\nFor the quadratic, keep only a positive side length. For the logarithm, set $L = \\log x$, reduce with the power rule, and recover $x = 10^{L}$.\n\nEach letter is a separate mini-problem; do not reuse a root from another letter.",
       "placeholder": false
     },
     {
@@ -7399,29 +7399,29 @@
       "subsection": "4.5",
       "context": "Evaluate each statement. Mark it TRUE or FALSE.",
       "statements": [
-        "A $12$ m by $8$ m patio has a $1$ m path all round. The path area is $44$ m$^{2}$.",
-        "A drone flies $28$ km at $112$ km/h and lands at $18{:}45$. Take-off was at $18{:}20$.",
-        "Printer ink: $0.4$ litres at $25\\%$ pigment diluted to $10\\%$. Water needed is $0.6$ litres.",
-        "The product of the roots of $x^{2} - 5x + 6 = 0$ equals $6$.",
-        "Endowment awards of $6125$ EUR use successive halves. The middle award is $1750$ EUR."
+        "If one side of a rectangle is by $7$ cm longer than the other one and the rectangle's area is $78$ cm$^{2}$, then the length of the longer side is $6$ cm.",
+        "A coach travels at an average speed of $60$ km/h. At 12 pm, it has traveled a total distance of $90$ km. Then it started traveling at 10{:}15 am.",
+        "A recipe calls for $10\\%$ nitrate solution. If the cook only has $0.4$ litres of $25\\%$ nitrate solution, he needs to mix it with $0.6$ litres of water to get the right concentration.",
+        "The solution of the equation $\\log\\sqrt[4]{x} + \\log\\dfrac{1}{x^{2}} -\\log\\sqrt[4]{x^{3}} + 3 = \\dfrac{\\log x}{1 + \\log 10}$, where $\\log x$ denotes the decadic logarithm of $x$, is larger than $8$.",
+        "A dividend fund of $4880$ EUR is supposed to be split among the winners in a way that the $2$nd placed obtains $80\\%$ of the amount the $1$st placed obtains, and the $3$rd placed obtains $80\\%$ of the $2$nd placed. Then the prize for the $2$nd place is $1500$ EUR."
       ],
       "answer_key": [
-        true,
+        false,
         false,
         true,
         true,
-        true
+        false
       ],
       "tactical_explanations": [
-        "**A.** → True\n\nOuter rectangle $14$ m by $10$ m:\n\n$$14 \\cdot 10 - 12 \\cdot 8 = 140 - 96 = 44$$\n\nSo the statement is True.",
-        "**B.** → False\n\n$$t = \\frac{28}{112} = 0.25$$\n\nhours ($15$ minutes). Fifteen minutes before $18{:}45$ is $18{:}30$, not $18{:}20$.\n\nSo the statement is False.",
-        "**C.** → True\n\n$$\\frac{0.4 \\cdot 0.25}{0.4 + w} = 0.10$$\n\n$$\\frac{0.10}{0.4 + w} = 0.10$$\n\n$$w = 0.6$$\n\nCheck: $0.10 / 1 = 0.10$.\n\nSo the statement is True.",
-        "**D.** → True\n\n$$(x - 2)(x - 3) = 0$$\n\nProduct $2 \\cdot 3 = 6$, matching Vieta's constant term.\n\nSo the statement is True.",
-        "**E.** → True\n\n$$a + 0.5a + 0.25a = 6125$$\n\n$$a = 3500$$\n\nMiddle award $1750$ EUR.\n\nSo the statement is True."
+        "**A.** → False\n\nArea is length times width. Let the shorter side be $x$ cm. Then the longer side is $x + 7$, and the area is $78$ cm$^{2}$:\n\n$$x(x + 7) = 78$$\n\n$$x^{2} + 7x - 78 = 0$$\n\nThe discriminant is\n\n$$\\Delta = 7^{2} + 4 \\cdot 78 = 361 = 19^{2}$$\n\n$$x = \\dfrac{-7 \\pm 19}{2}$$\n\nso $x = 6$ or $x = -13$. A side length must be positive, so $x = 6$. The longer side is then\n\n$$6 + 7 = 13$$\n\nCheck: $6 \\cdot 13 = 78$. The longer side is $13$ cm, not the claimed $6$ cm. Substituting a longer side of $6$ cm would force a shorter side of $-1$ cm:\n\n$$-1 \\cdot 6 = -6$$\n\nwhich is not $78$.\n\nSo the statement is False.",
+        "**B.** → False\n\nTime on the road is distance divided by average speed:\n\n$$t = \\frac{90}{60}$$\n\n$$t = \\dfrac{3}{2}$$\n\n$$t = 1.5$$\n\nhours. That is $1$ hour and $30$ minutes. Counting $1$ hour back from 12 pm, then a further $30$ minutes, lands at 10{:}30 am, not the claimed 10{:}15 am.\n\nSo the statement is False.",
+        "**C.** → True\n\n$0.4$ litres of $25\\%$ nitrate solution hold $0.1$ litres of pure nitrate. After adding $w$ litres of water the total volume is $0.4 + w$ litres, and the concentration should be $10\\%$:\n\n$$\\frac{0.1}{0.4 + w} = 0.1$$\n\n$$0.1 = 0.1(0.4 + w)$$\n\n$$0.1 = 0.04 + 0.1w$$\n\n$$0.06 = 0.1w$$\n\n$$w = \\frac{0.06}{0.1}$$\n\n$$w = 0.6$$\n\nThat $0.6$ is the litres of water to add. Substituting it recovers the $10\\%$ concentration:\n\n$$0.4 + 0.6 = 1$$\n\n$$\\frac{0.1}{1} = 0.1$$\n\nwhich matches the recipe.\n\nSo the statement is True.",
+        "**D.** → True\n\nThroughout, $\\log$ denotes the decadic logarithm, and the domain requires $x > 0$. Write $L = \\log x$ and apply the power rule to every logarithmic term:\n\n$$\\log\\sqrt[4]{x} = \\dfrac{1}{4}L$$\n\n$$\\log\\dfrac{1}{x^{2}} = -2L$$\n\n$$\\log\\sqrt[4]{x^{3}} = \\dfrac{3}{4}L$$\n\nso the signed contribution in the equation is $-\\dfrac{3}{4}L$.\n\n$$\\log 10 = 1$$\n\nThe equation becomes\n\n$$\\dfrac{1}{4}L - 2L - \\dfrac{3}{4}L + 3 = \\dfrac{L}{1 + 1}$$\n\nCombine the coefficients of $L$ on the left-hand side:\n\n$$\\text{coefficient sum} = \\dfrac{-5}{2}$$\n\nso\n\n$$\\dfrac{-5}{2}L + 3 = \\dfrac{1}{2}L$$\n\nCollect the $L$-terms:\n\n$$3 = \\dfrac{1}{2}L - (\\dfrac{-5}{2})L$$\n\n$$3 = 3L$$\n\n$$L = 1$$\n\n$$x = 10^{1} = 10$$\n\nThe unique positive solution is $x = 10$, which is larger than $8$.\n\nSo the statement is True.",
+        "**E.** → False\n\nLet the first-place prize be $a$ EUR. Then second place is $80\\%$ of first place, and third place is $80\\%$ of second place:\n\n$$0.8a$$\n\n$$0.8 \\cdot 0.8a = 0.64a$$\n\nThe three prizes sum to $4880$ EUR:\n\n$$a + 0.8a + 0.64a = 4880$$\n\n$$2.44a = 4880$$\n\n$$a = \\frac{4880}{2.44}$$\n\n$$a = 2000$$\n\nFirst place is $2000$ EUR, so second place is\n\n$$0.8 \\cdot 2000 = 1600$$\n\nThe second-place prize is $1600$ EUR, not the claimed $1500$.\n\nSo the statement is False."
       ],
       "difficulty_level": "5/5",
       "sort_order": 232,
-      "solution_overview": "Independent claims: a patio path area, a drone timetable, ink dilution, Vieta product for a quadratic, and a half-share endowment split.",
+      "solution_overview": "Five independent closed claims spanning the chapter. Translate each story into one equation (a rectangle-area quadratic, a $t = d/v$ start time, a dilution, a composite decadic logarithm, and a percentage prize split), then isolate the unknown and compare with the claim.\n\nFor the quadratic, keep only a positive side length. For the logarithm, set $L = \\log x$, reduce with the power rule, and recover $x = 10^{L}$.\n\nEach letter is a separate mini-problem; do not reuse a root from another letter.",
       "placeholder": false
     },
     {
@@ -7431,29 +7431,29 @@
       "subsection": "4.5",
       "context": "Evaluate each statement. Mark it TRUE or FALSE.",
       "statements": [
-        "Three times a temperature change, taken with the opposite sign, equals $12$ degrees. The change was $-4$ degrees.",
-        "A glacier bus covers $64$ km at $32$ km/h and arrives at $17{:}00$. It departed at $15{:}00$.",
-        "Yogurt culture: $2$ litres at $6\\%$ diluted to $4\\%$. Water to add is $1$ litre.",
-        "Decadic $\\log$: $\\log\\sqrt[4]{x} + \\log\\dfrac{1}{x^{2}} - \\log\\sqrt{x} + \\dfrac{5}{2} = \\dfrac{\\log\\sqrt{x}}{1 + \\log 10}$ has integer solution $10$.",
-        "Royalty pool $10950$ EUR with $70\\%$ step-downs gives second place $4000$ EUR."
+        "If one side of a rectangle is by $4$ cm longer than the other one and the rectangle's area is $165$ cm$^{2}$, then the length of the longer side is $15$ cm.",
+        "A van travels at an average speed of $80$ km/h. At 8 pm, it has traveled a total distance of $160$ km. Then it started traveling at 5{:}45 pm.",
+        "A recipe calls for $4\\%$ soap solution. If the cook only has $5$ litres of $10\\%$ soap solution, he needs to mix it with $7.5$ litres of water to get the right concentration.",
+        "The solution of the equation $\\log\\sqrt{x} + \\log\\dfrac{1}{x^{3}} -\\log\\sqrt[4]{x} + \\dfrac{41}{12} = \\dfrac{\\log x^{2}}{1 + \\log 100}$, where $\\log x$ denotes the decadic logarithm of $x$, is the integer $10$.",
+        "A escrow payout of $18300$ EUR is supposed to be split among the winners in a way that the $2$nd placed obtains $80\\%$ of the amount the $1$st placed obtains, and the $3$rd placed obtains $80\\%$ of the $2$nd placed. Then the prize for the $2$nd place is $5800$ EUR."
       ],
       "answer_key": [
         true,
-        true,
+        false,
         true,
         true,
         false
       ],
       "tactical_explanations": [
-        "**A.** → True\n\n$$-3x = 12$$\n\n$$x = -4$$\n\nSo the statement is True.",
-        "**B.** → True\n\n$$t = \\frac{64}{32} = 2$$\n\nhours. Two hours before $17{:}00$ is $15{:}00$.\n\nSo the statement is True.",
-        "**C.** → True\n\n$$\\frac{2 \\cdot 0.06}{2 + w} = 0.04$$\n\n$$\\frac{0.12}{2 + w} = 0.04$$\n\n$$w = 1$$\n\nCheck: $0.12 / 3 = 0.04$.\n\nSo the statement is True.",
-        "**D.** → True\n\nAs in the power-rule reduction,\n\n$$-\\frac{9}{4}L + \\frac{5}{2} = \\frac{1}{4}L$$\n\n$$L = 1 \\implies x = 10$$\n\nan integer.\n\nSo the statement is True.",
-        "**E.** → False\n\n$$a + 0.7a + 0.49a = 10950$$\n\n$$a = 5000$$\n\nSecond place $3500$ EUR, not $4000$.\n\nSo the statement is False."
+        "**A.** → True\n\nArea is length times width. Let the shorter side be $x$ cm. Then the longer side is $x + 4$, and the area is $165$ cm$^{2}$:\n\n$$x(x + 4) = 165$$\n\n$$x^{2} + 4x - 165 = 0$$\n\nThe discriminant is\n\n$$\\Delta = 4^{2} + 4 \\cdot 165 = 676 = 26^{2}$$\n\n$$x = \\dfrac{-4 \\pm 26}{2}$$\n\nso $x = 11$ or $x = -15$. A side length must be positive, so $x = 11$. The longer side is then\n\n$$11 + 4 = 15$$\n\nCheck: $11 \\cdot 15 = 165$. The longer side is $15$ cm, matching the claim.\n\nSo the statement is True.",
+        "**B.** → False\n\nTime on the road is distance divided by average speed:\n\n$$t = \\frac{160}{80}$$\n\n$$t = 2$$\n\n$$t = 2$$\n\nhours. That is exactly $2$ hours. Counting $2$ hours back from 8 pm, lands at 6 pm, not the claimed 5{:}45 pm.\n\nSo the statement is False.",
+        "**C.** → True\n\n$5$ litres of $10\\%$ soap solution hold $0.5$ litres of pure soap. After adding $w$ litres of water the total volume is $5 + w$ litres, and the concentration should be $4\\%$:\n\n$$\\frac{0.5}{5 + w} = 0.04$$\n\n$$0.5 = 0.04(5 + w)$$\n\n$$0.5 = 0.2 + 0.04w$$\n\n$$0.3 = 0.04w$$\n\n$$w = \\frac{0.3}{0.04}$$\n\n$$w = 7.5$$\n\nThat $7.5$ is the litres of water to add. Substituting it recovers the $4\\%$ concentration:\n\n$$5 + 7.5 = 12.5$$\n\n$$\\frac{0.5}{12.5} = 0.04$$\n\nwhich matches the recipe.\n\nSo the statement is True.",
+        "**D.** → True\n\nThroughout, $\\log$ denotes the decadic logarithm, and the domain requires $x > 0$. Write $L = \\log x$ and apply the power rule to every logarithmic term:\n\n$$\\log\\sqrt{x} = \\dfrac{1}{2}L$$\n\n$$\\log\\dfrac{1}{x^{3}} = -3L$$\n\n$$\\log\\sqrt[4]{x} = \\dfrac{1}{4}L$$\n\nso the signed contribution in the equation is $-\\dfrac{1}{4}L$.\n\n$$\\log 100 = 2$$\n\nThe equation becomes\n\n$$\\dfrac{1}{2}L - 3L - \\dfrac{1}{4}L + \\dfrac{41}{12} = \\dfrac{2L}{1 + 2}$$\n\nCombine the coefficients of $L$ on the left-hand side:\n\n$$\\text{coefficient sum} = \\dfrac{-11}{4}$$\n\nso\n\n$$\\dfrac{-11}{4}L + \\dfrac{41}{12} = \\dfrac{2}{3}L$$\n\nCollect the $L$-terms:\n\n$$\\dfrac{41}{12} = \\dfrac{2}{3}L - (\\dfrac{-11}{4})L$$\n\n$$\\dfrac{41}{12} = \\dfrac{41}{12}L$$\n\n$$L = 1$$\n\n$$x = 10^{1} = 10$$\n\nThe unique positive solution is $x = 10$, matching the claimed integer $10$.\n\nSo the statement is True.",
+        "**E.** → False\n\nLet the first-place prize be $a$ EUR. Then second place is $80\\%$ of first place, and third place is $80\\%$ of second place:\n\n$$0.8a$$\n\n$$0.8 \\cdot 0.8a = 0.64a$$\n\nThe three prizes sum to $18300$ EUR:\n\n$$a + 0.8a + 0.64a = 18300$$\n\n$$2.44a = 18300$$\n\n$$a = \\frac{18300}{2.44}$$\n\n$$a = 7500$$\n\nFirst place is $7500$ EUR, so second place is\n\n$$0.8 \\cdot 7500 = 6000$$\n\nThe second-place prize is $6000$ EUR, not the claimed $5800$.\n\nSo the statement is False."
       ],
       "difficulty_level": "5/5",
       "sort_order": 233,
-      "solution_overview": "Independent claims: a signed temperature change, a glacier-bus timetable, yogurt dilution, a composite logarithm, and a $70\\%$ royalty chain.",
+      "solution_overview": "Five independent closed claims spanning the chapter. Translate each story into one equation (a rectangle-area quadratic, a $t = d/v$ start time, a dilution, a composite decadic logarithm, and a percentage prize split), then isolate the unknown and compare with the claim.\n\nFor the quadratic, keep only a positive side length. For the logarithm, set $L = \\log x$, reduce with the power rule, and recover $x = 10^{L}$.\n\nEach letter is a separate mini-problem; do not reuse a root from another letter.",
       "placeholder": false
     },
     {
@@ -7463,29 +7463,29 @@
       "subsection": "4.5",
       "context": "Evaluate each statement. Mark it TRUE or FALSE.",
       "statements": [
-        "A rectangular field is $8$ m longer than it is wide. A uniform $1.5$ m path around it has area $141$ m$^{2}$. The field width is $18$ m.",
-        "A night train covers $315$ km at $90$ km/h and arrives at $06{:}30$. It left at $03{:}00$.",
-        "Brine: $5$ litres at $10\\%$ salt reduced to $4\\%$. Water needed is $7.5$ litres.",
-        "The equation $2(x + 4) = 2x + 8$ is an identity, true for every real $x$.",
-        "Jackpot shares totaling $12200$ EUR with $80\\%$ step-downs give second place $4500$ EUR."
+        "If one side of a rectangle is by $6$ cm longer than the other one and the rectangle's area is $91$ cm$^{2}$, then the length of the longer side is $7$ cm.",
+        "A limousine travels at an average speed of $50$ km/h. At 2 pm, it has traveled a total distance of $75$ km. Then it started traveling at 12{:}30 pm.",
+        "A recipe calls for $6\\%$ ethanol solution. If the cook only has $3$ litres of $9\\%$ ethanol solution, he needs to mix it with $1$ litre of water to get the right concentration.",
+        "The solution of the equation $\\log\\sqrt[3]{x} + \\log\\dfrac{1}{x^{2}} -\\log\\sqrt[4]{x} + \\dfrac{9}{4} = \\dfrac{\\log x}{1 + \\log 100}$, where $\\log x$ denotes the decadic logarithm of $x$, is smaller than $5$.",
+        "A award purse of $6125$ EUR is supposed to be split among the winners in a way that the $2$nd placed obtains $50\\%$ of the amount the $1$st placed obtains, and the $3$rd placed obtains $50\\%$ of the $2$nd placed. Then the prize for the $2$nd place is $2000$ EUR."
       ],
       "answer_key": [
+        false,
         true,
-        true,
-        true,
-        true,
+        false,
+        false,
         false
       ],
       "tactical_explanations": [
-        "**A.** → True\n\nLet width be $w$, length $w + 8$. Outer dimensions $w + 3$ by $w + 11$:\n\n$$(w + 3)(w + 11) - w(w + 8) = 141$$\n\n$$6w + 33 = 141$$\n\n$$w = 18$$\n\nSo the statement is True.",
-        "**B.** → True\n\n$$t = \\frac{315}{90} = 3.5$$\n\nhours. Three and a half hours before $06{:}30$ is $03{:}00$.\n\nSo the statement is True.",
-        "**C.** → True\n\n$$\\frac{5 \\cdot 0.10}{5 + w} = 0.04$$\n\n$$\\frac{0.50}{5 + w} = 0.04$$\n\n$$w = 7.5$$\n\nCheck: $0.50 / 12.5 = 0.04$.\n\nSo the statement is True.",
-        "**D.** → True\n\n$$2(x + 4) = 2x + 8$$\n\n$$2x + 8 = 2x + 8$$\n\nEvery real $x$ satisfies the identity.\n\nSo the statement is True.",
-        "**E.** → False\n\n$$a + 0.8a + 0.64a = 12200$$\n\n$$a = 5000$$\n\nSecond place $4000$ EUR, not $4500$.\n\nSo the statement is False."
+        "**A.** → False\n\nArea is length times width. Let the shorter side be $x$ cm. Then the longer side is $x + 6$, and the area is $91$ cm$^{2}$:\n\n$$x(x + 6) = 91$$\n\n$$x^{2} + 6x - 91 = 0$$\n\nThe discriminant is\n\n$$\\Delta = 6^{2} + 4 \\cdot 91 = 400 = 20^{2}$$\n\n$$x = \\dfrac{-6 \\pm 20}{2}$$\n\nso $x = 7$ or $x = -13$. A side length must be positive, so $x = 7$. The longer side is then\n\n$$7 + 6 = 13$$\n\nCheck: $7 \\cdot 13 = 91$. The longer side is $13$ cm, not the claimed $7$ cm. Substituting a longer side of $7$ cm would force a shorter side of $1$ cm:\n\n$$1 \\cdot 7 = 7$$\n\nwhich is not $91$.\n\nSo the statement is False.",
+        "**B.** → True\n\nTime on the road is distance divided by average speed:\n\n$$t = \\frac{75}{50}$$\n\n$$t = \\dfrac{3}{2}$$\n\n$$t = 1.5$$\n\nhours. That is $1$ hour and $30$ minutes. Counting $1$ hour back from 2 pm, then a further $30$ minutes, lands at 12{:}30 pm. The recovered start time matches the claim.\n\nSo the statement is True.",
+        "**C.** → False\n\n$3$ litres of $9\\%$ ethanol solution hold $0.27$ litres of pure ethanol. After adding $w$ litres of water the total volume is $3 + w$ litres, and the concentration should be $6\\%$:\n\n$$\\frac{0.27}{3 + w} = 0.06$$\n\n$$0.27 = 0.06(3 + w)$$\n\n$$0.27 = 0.18 + 0.06w$$\n\n$$0.09 = 0.06w$$\n\n$$w = \\frac{0.09}{0.06}$$\n\n$$w = 1.5$$\n\nThe required amount of water is $1.5$ litres, not the claimed $1$. Substituting the claimed value gives concentration\n\n$$\\frac{0.27}{4} = 0.0675$$\n\nwhich is not $0.06$.\n\nSo the statement is False.",
+        "**D.** → False\n\nThroughout, $\\log$ denotes the decadic logarithm, and the domain requires $x > 0$. Write $L = \\log x$ and apply the power rule to every logarithmic term:\n\n$$\\log\\sqrt[3]{x} = \\dfrac{1}{3}L$$\n\n$$\\log\\dfrac{1}{x^{2}} = -2L$$\n\n$$\\log\\sqrt[4]{x} = \\dfrac{1}{4}L$$\n\nso the signed contribution in the equation is $-\\dfrac{1}{4}L$.\n\n$$\\log 100 = 2$$\n\nThe equation becomes\n\n$$\\dfrac{1}{3}L - 2L - \\dfrac{1}{4}L + \\dfrac{9}{4} = \\dfrac{L}{1 + 2}$$\n\nCombine the coefficients of $L$ on the left-hand side:\n\n$$\\text{coefficient sum} = \\dfrac{-23}{12}$$\n\nso\n\n$$\\dfrac{-23}{12}L + \\dfrac{9}{4} = \\dfrac{1}{3}L$$\n\nCollect the $L$-terms:\n\n$$\\dfrac{9}{4} = \\dfrac{1}{3}L - (\\dfrac{-23}{12})L$$\n\n$$\\dfrac{9}{4} = \\dfrac{9}{4}L$$\n\n$$L = 1$$\n\n$$x = 10^{1} = 10$$\n\nThe unique positive solution is $x = 10$, which is not smaller than $5$.\n\nSo the statement is False.",
+        "**E.** → False\n\nLet the first-place prize be $a$ EUR. Then second place is $50\\%$ of first place, and third place is $50\\%$ of second place:\n\n$$0.5a$$\n\n$$0.5 \\cdot 0.5a = 0.25a$$\n\nThe three prizes sum to $6125$ EUR:\n\n$$a + 0.5a + 0.25a = 6125$$\n\n$$1.75a = 6125$$\n\n$$a = \\frac{6125}{1.75}$$\n\n$$a = 3500$$\n\nFirst place is $3500$ EUR, so second place is\n\n$$0.5 \\cdot 3500 = 1750$$\n\nThe second-place prize is $1750$ EUR, not the claimed $2000$.\n\nSo the statement is False."
       ],
       "difficulty_level": "5/5",
       "sort_order": 234,
-      "solution_overview": "Independent claims: a field-and-path area, a night-train timetable, brine dilution, a linear identity, and an $80\\%$ jackpot chain.",
+      "solution_overview": "Five independent closed claims spanning the chapter. Translate each story into one equation (a rectangle-area quadratic, a $t = d/v$ start time, a dilution, a composite decadic logarithm, and a percentage prize split), then isolate the unknown and compare with the claim.\n\nFor the quadratic, keep only a positive side length. For the logarithm, set $L = \\log x$, reduce with the power rule, and recover $x = 10^{L}$.\n\nEach letter is a separate mini-problem; do not reuse a root from another letter.",
       "placeholder": false
     }
   ]
