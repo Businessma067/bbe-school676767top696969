@@ -3933,7 +3933,15 @@ $$\\approx 1.046028$$
 
 $$S(1) \\approx 99,372.65$$
 
-The claim is approximately \\$98,500.00. We have $99,372.65 \\ne 98,500.00$.
+The claim is approximately \\$98,500.00. The computed value is
+
+$$99,372.65$$
+
+The claim is
+
+$$98,500.00$$
+
+Since $99,372.65 \\ne 98,500.00$, the figures disagree.
 
 So the statement is False.`,
       `**B.** → True
@@ -4007,7 +4015,15 @@ $$\\approx 2 \\times 1.046028$$
 
 $$= 2.092056$$
 
-The claim needs $e^{0.09}=2e^{0.045}$. We have $1.094174 \\ne 2.092056$.
+The claim needs $e^{0.09}=2e^{0.045}$. The computed value is
+
+$$1.094174$$
+
+The claim is
+
+$$2.092056$$
+
+Since $1.094174 \\ne 2.092056$, the figures disagree.
 
 So the statement is False.`,
     ],
@@ -4231,7 +4247,15 @@ $$t_2' = \\frac{\\ln 2}{0.11}$$
 
 $$\\approx 6.30$$
 
-The original wait was $t_2 \\approx 12.60$. The claim needs $t_2' \\approx 12.60$. We have $6.30 \\ne 12.60$.
+The original wait was $t_2 \\approx 12.60$. The claim needs $t_2' \\approx 12.60$. The computed value is
+
+$$6.30$$
+
+The claim is
+
+$$12.60$$
+
+Since $6.30 \\ne 12.60$, the figures disagree.
 
 So the statement is False.`,
       `**D.** → False
@@ -4242,12 +4266,32 @@ $$2^{3}$$
 
 $$= 8$$
 
-Compare the computed value with the claim (a factor of $6$). We have $8 \\ne 6$. The two sides do not agree.
+Compare the computed value with the claim (a factor of $6$). The computed value is
+
+$$8$$
+
+The claim is
+
+$$6$$
+
+Since $8 \\ne 6$, the figures disagree. The two sides do not agree.
 
 So the statement is False.`,
       `**E.** → False
 
 The doubling time $t_2=\\frac{\\ln 2}{r}$ falls when $r$ rises. A higher interest rate shortens the wait, it does not lengthen it.
+
+Substitute the recovered stem inputs:
+
+$$S_0 = 18,000,$$
+
+$$r = 5.5\\%$$
+
+$$r = 0.055$$
+
+$$t_2 = \\frac{\\ln 2}{0.055}$$
+
+$$t_2 \\approx 12.60$$
 
 So the statement is False.`,
     ],
@@ -4295,6 +4339,16 @@ $$`,
       `**A.** → True
 
 The overview isolated the time to a $40\\%$ remainder as $t=\\frac{\\ln 2.5}{\\delta}$. The claim is that same isolation.
+
+Substitute the recovered stem inputs:
+
+$$v_0 = 120,000,$$
+
+$$\\delta = 0.18$$
+
+$$t = \\frac{\\ln\\bigl(\\frac{1}{0.40}\\bigr)}{\\delta}$$
+
+$$t = \\frac{\\ln 2.5}{\\delta}$$
 
 So the statement is True.`,
       `**B.** → True
@@ -4529,7 +4583,15 @@ $$\\approx 1.099248$$
 
 $$S_B \\approx 439,699.03$$
 
-The claim is approximately \\$439,750.00. We have $439,699.03 \\ne 439,750.00$.
+The claim is approximately \\$439,750.00. The computed value is
+
+$$439,699.03$$
+
+The claim is
+
+$$439,750.00$$
+
+Since $439,699.03 \\ne 439,750.00$, the figures disagree.
 
 So the statement is False.`,
       `**C.** → False
@@ -4542,7 +4604,15 @@ $$\\approx 0.099659$$
 
 $$\\approx 9.97\\%$$
 
-Compare the computed value with the claim (about $9.50\\%$, equal to the nominal rate). We have $9.97\\% \\ne 9.50\\%$. The two sides do not agree.
+Compare the computed value with the claim (about $9.50\\%$, equal to the nominal rate). The computed value is
+
+$$9.97\\%$$
+
+The claim is
+
+$$9.50\\%$$
+
+Since $9.97\\% \\ne 9.50\\%$, the figures disagree. The two sides do not agree.
 
 So the statement is False.`,
       `**D.** → False
@@ -4689,7 +4759,15 @@ $$34,200 + 2 \\times 2,066.67$$
 
 $$= 38,333.33$$
 
-The exponential projection was $S(5) \\approx 39,078.52$. The claim needs these to match. We have $38,333.33 \\ne 39,078.52$.
+The exponential projection was $S(5) \\approx 39,078.52$. The claim needs these to match. The computed value is
+
+$$38,333.33$$
+
+The claim is
+
+$$39,078.52$$
+
+Since $38,333.33 \\ne 39,078.52$, the figures disagree.
 
 So the statement is False.`,
       `**D.** → False
@@ -4700,7 +4778,15 @@ $$t_2 = \\frac{\\ln 2}{0.06667}$$
 
 $$\\approx 10.40$$
 
-Compare the computed value with the claim (about $12.40$ years). We have $10.40 \\ne 12.40$. The two sides do not agree.
+Compare the computed value with the claim (about $12.40$ years). The computed value is
+
+$$10.40$$
+
+The claim is
+
+$$12.40$$
+
+Since $10.40 \\ne 12.40$, the figures disagree. The two sides do not agree.
 
 So the statement is False.`,
       `**E.** → False
@@ -4955,7 +5041,15 @@ $$
 = 7\\%
 $$
 
-The claim asserts $11\\%$ by adding the fee instead. We have $7\\% \\ne 11\\%$.
+The claim asserts $11\\%$ by adding the fee instead. The computed value is
+
+$$7\\%$$
+
+The claim is
+
+$$11\\%$$
+
+Since $7\\% \\ne 11\\%$, the figures disagree.
 
 So the statement is False.`,
       `**B.** → False
@@ -4976,7 +5070,15 @@ $$\\approx 1.522123$$
 
 $$S(6) \\approx 3,043,923.11$$
 
-The claim is approximately \\$3,100,000.00. We have $3,043,923.11 \\ne 3,100,000.00$.
+The claim is approximately \\$3,100,000.00. The computed value is
+
+$$3,043,923.11$$
+
+The claim is
+
+$$3,100,000.00$$
+
+Since $3,043,923.11 \\ne 3,100,000.00$, the figures disagree.
 
 So the statement is False.`,
       `**C.** → False
@@ -4987,7 +5089,15 @@ $$t_2 = \\frac{\\ln 2}{0.07}$$
 
 $$\\approx 9.90$$
 
-Compare the computed value with the claim (about $7.00$ years). We have $9.90 \\ne 7.00$. The two sides do not agree.
+Compare the computed value with the claim (about $7.00$ years). The computed value is
+
+$$9.90$$
+
+The claim is
+
+$$7.00$$
+
+Since $9.90 \\ne 7.00$, the figures disagree. The two sides do not agree.
 
 So the statement is False.`,
       `**D.** → False
@@ -5020,6 +5130,18 @@ So the statement is False.`,
       `**E.** → True
 
 Raising the fee lowers $r_{\\mathrm{net}}=r-f$ and therefore lowers $S(t)=S_0 e^{r_{\\mathrm{net}} t}$ at every $t>0$. A higher fee reduces both the net growth rate and the cumulative value.
+
+Substitute the recovered stem inputs:
+
+$$S_0 = 2,000,000,$$
+
+$$r = 9\\%$$
+
+$$r = 0.09,$$
+
+$$f = 2\\%$$
+
+$$f = 0.02$$
 
 So the statement is True.`,
     ],
@@ -5069,6 +5191,20 @@ Net asset value then follows $S(t)=S_0 e^{r_{\\mathrm{net}} t}$.`,
       `**A.** → True
 
 The overview isolated the crossover as $t=\\frac{\\ln\\bigl(\\frac{B_0}{A_0}\\bigr)}{r_A+\\delta_B}$. The claim is that same isolation.
+
+Substitute the recovered stem inputs:
+
+$$A_0 = 50,000,$$
+
+$$r_A = 4\\%$$
+
+$$r_A = 0.04$$
+
+$$B_0 = 250,000,$$
+
+$$\\delta_B = 12\\%$$
+
+$$\\delta_B = 0.12$$
 
 So the statement is True.`,
       `**B.** → True
@@ -5139,6 +5275,20 @@ So the statement is False.`,
       `**E.** → True
 
 For $t$ larger than the crossover $t_*\\approx 10.06$, the exponent $(r_A+\\delta_B)(t-t_*)$ is positive, so $A(t)>B(t)$ stays in force. Asset A remains ahead after the crossing.
+
+Substitute the recovered stem inputs:
+
+$$A_0 = 50,000,$$
+
+$$r_A = 4\\%$$
+
+$$r_A = 0.04$$
+
+$$B_0 = 250,000,$$
+
+$$\\delta_B = 12\\%$$
+
+$$\\delta_B = 0.12$$
 
 So the statement is True.`,
     ],
@@ -5403,7 +5553,15 @@ $$\\approx 69,767.63 - 61,878.34$$
 
 $$= 7,889.29$$
 
-Option 2 requires the smaller deposit. The claim is about \\$9,000.00 with Option 2 larger. We have $7,889.29 \\ne 9,000.00$.
+Option 2 requires the smaller deposit. The claim is about \\$9,000.00 with Option 2 larger. The computed value is
+
+$$7,889.29$$
+
+The claim is
+
+$$9,000.00$$
+
+Since $7,889.29 \\ne 9,000.00$, the figures disagree.
 
 So the statement is False.`,
       `**E.** → False
