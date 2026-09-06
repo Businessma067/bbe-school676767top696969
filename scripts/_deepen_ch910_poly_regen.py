@@ -76,6 +76,7 @@ def regen_poly_eval_letter(stmt: str, polys: dict, letter: str, truth: bool) -> 
     var = frees[0] if frees else "x"
     v = sp.symbols(var)
     val_sp: sp.Expr = sp.Integer(int(aval)) if float(aval) == int(aval) else sp.Float(aval)
+    base_tex = aval_s if aval >= 0 else f"({aval_s})"
     expanded = sp.expand(expr)
     poly = sp.Poly(expanded, v)
     steps = [
@@ -94,15 +95,16 @@ def regen_poly_eval_letter(stmt: str, polys: dict, letter: str, truth: bool) -> 
             contribs.append(coef)
             continue
         power = val_sp**d
-        steps += ["", D(f"{aval_s}^{{{d}}}={sp.latex(power)}")]
+        steps += ["", D(f"{base_tex}^{{{d}}}={sp.latex(power)}")]
         if coef == 1:
             contribs.append(power)
         elif coef == -1:
-            steps += ["", D(f"-{sp.latex(power)}={sp.latex(-power)}")]
+            steps += ["", D(f"-({sp.latex(power)})={sp.latex(-power)}")]
             contribs.append(-power)
         else:
             prod = sp.simplify(coef * power)
-            steps += ["", D(rf"{sp.latex(coef)}\cdot {sp.latex(power)}={sp.latex(prod)}")]
+            right = sp.latex(power) if float(power) >= 0 else f"({sp.latex(power)})"
+            steps += ["", D(rf"{sp.latex(coef)}\cdot {right}={sp.latex(prod)}")]
             contribs.append(prod)
     signed = []
     for i, c in enumerate(contribs):
