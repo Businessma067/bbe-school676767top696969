@@ -31,11 +31,9 @@ function pad(n: number) {
 }
 
 export function ExamCountdown({ className }: { className?: string }) {
-  // Seed from a stable timestamp so SSR and first client render match; the
-  // live seconds start ticking after hydration.
-  const [remaining, setRemaining] = useState<Remaining>(() =>
-    getRemaining(new Date(Math.floor(Date.now() / 60000) * 60000)),
-  );
+  // The live clock only starts after hydration; SSR and the first client
+  // render share the same placeholder so the markup always matches.
+  const [remaining, setRemaining] = useState<Remaining | null>(null);
 
   useEffect(() => {
     setRemaining(getRemaining(new Date()));
