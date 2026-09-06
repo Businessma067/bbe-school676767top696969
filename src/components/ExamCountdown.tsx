@@ -3,7 +3,7 @@ import { useEffect, useState } from "react";
 import { cn } from "@/lib/utils";
 
 /** Next BBE entrance exam — 30 June 2027, 15:00 CEST (Vienna). */
-const EXAM_AT = new Date("2027-06-30T15:00:00+02:00");
+const EXAM_AT_MS = new Date("2027-06-30T15:00:00+02:00").getTime();
 
 type Remaining = {
   days: number;
@@ -13,33 +13,55 @@ type Remaining = {
   done: boolean;
 };
 
-function getRemaining(now: Date): Remaining {
-  const ms = EXAM_AT.getTime() - now.getTime();
+function getRemaining(nowMs: number): Remaining {
+  const ms = EXAM_AT_MS - nowMs;
   if (ms <= 0) {
     return { days: 0, hours: 0, minutes: 0, seconds: 0, done: true };
   }
   const totalSec = Math.floor(ms / 1000);
-  const days = Math.floor(totalSec / 86400);
-  const hours = Math.floor((totalSec % 86400) / 3600);
-  const minutes = Math.floor((totalSec % 3600) / 60);
-  const seconds = totalSec % 60;
-  return { days, hours, minutes, seconds, done: false };
+  return {
+    days: Math.floor(totalSec / 86400),
+    hours: Math.floor((totalSec % 86400) / 3600),
+    minutes: Math.floor((totalSec % 3600) / 60),
+    seconds: totalSec % 60,
+    done: false,
+  };
 }
 
 function pad(n: number) {
   return String(n).padStart(2, "0");
 }
 
+/**
+ * Live countdown that ticks every second on the client.
+ * Seeds with a real value immediately (no empty placeholders), then
+ * resyncs on mount and on each wall-clock second.
+ */
 export function ExamCountdown({ className }: { className?: string }) {
   const [remaining, setRemaining] = useState<Remaining>(() =>
-    getRemaining(new Date()),
+    getRemaining(Date.now()),
   );
 
   useEffect(() => {
-    const id = window.setInterval(() => {
-      setRemaining(getRemaining(new Date()));
-    }, 1000);
-    return () => window.clearInterval(id);
+    let intervalId = 0;
+    let timeoutId = 0;
+
+    const tick = () => setRemaining(getRemaining(Date.now()));
+
+    // Paint the correct client time immediately (SSR seed may be stale).
+    tick();
+
+    // Align the interval to the next whole second so the display feels live.
+    const msToNextSecond = 1000 - (Date.now() % 1000);
+    timeoutId = window.setTimeout(() => {
+      tick();
+      intervalId = window.setInterval(tick, 1000);
+    }, msToNextSecond);
+
+    return () => {
+      window.clearTimeout(timeoutId);
+      window.clearInterval(intervalId);
+    };
   }, []);
 
   const units: { value: number; label: string; padded?: boolean }[] = [
@@ -53,7 +75,7 @@ export function ExamCountdown({ className }: { className?: string }) {
     <div
       className={cn("flex flex-col items-center gap-2", className)}
       role="timer"
-      aria-live="polite"
+      aria-live="off"
       aria-label={
         remaining.done
           ? "Exam day has arrived"
