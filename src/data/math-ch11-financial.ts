@@ -9678,6 +9678,28 @@ So the statement is True.`,
 
 A flat path of \\$50 million a year for five years totals
 
+Substitute the recovered stem inputs:
+
+$$a = 50,$$
+
+$$k = 1.10,$$
+
+$$n = 5$$
+
+$$1.10^5$$
+
+$$= 1.61051$$
+
+$$s_5 = 50\\frac{1.61051-1}{0.10}$$
+
+$$= 50 \\times 6.1051$$
+
+$$= 305.255$$
+
+$$= 50 \\times 6.1051$$
+
+$$\\approx 305.26$$
+
 $$50 \\times 5$$
 
 $$= 250$$
@@ -10074,6 +10096,28 @@ So the statement is True.`,
 
 Compare the claim with the isolation or sign pattern settled in the overview.
 
+Substitute the recovered stem inputs:
+
+$$R = 18,000,000,$$
+
+$$a = 300,000,$$
+
+$$k = 1.05,$$
+
+$$n = 10$$
+
+$$1.05^{10}$$
+
+$$= 1.628894627$$
+
+$$s_{10} = 300,000\\frac{1.628894627-1}{0.05}$$
+
+$$s_{10} = 3,773,367.76$$
+
+$$300,000 \\times 10$$
+
+$$= 3,000,000$$
+
 The overview already identified constant extraction as the $k=1$ case, where the $n$-year total is $an$. The claim is that identity.
 
 So the statement is True.`,
@@ -10091,6 +10135,28 @@ So the statement is False.`,
       `**E.** → False
 
 The overview recovered a growing $10$-year total of about $3,773,368$ tons and a constant $10$-year total of $3,000,000$ tons. The extra extraction is
+
+Substitute the recovered stem inputs:
+
+$$R = 18,000,000,$$
+
+$$a = 300,000,$$
+
+$$k = 1.05,$$
+
+$$n = 10$$
+
+$$1.05^{10}$$
+
+$$= 1.628894627$$
+
+$$s_{10} = 300,000\\frac{1.628894627-1}{0.05}$$
+
+$$s_{10} = 3,773,367.76$$
+
+$$300,000 \\times 10$$
+
+$$= 3,000,000$$
 
 $$3,773,368-3,000,000$$
 
@@ -10242,6 +10308,26 @@ So the statement is False.`,
       `**E.** → False
 
 The first $20$ years under the $3\\%$ decline sum to
+
+Substitute the recovered stem inputs:
+
+$$R = 9,000,$$
+
+$$a = 180,$$
+
+$$k_3 = 0.97,$$
+
+$$k_5 = 0.95$$
+
+$$s_{\\infty} = \\frac{180}{1-0.97}$$
+
+$$s_{\\infty} = \\frac{180}{0.03}$$
+
+$$s_{\\infty} = 6,000$$
+
+$$9,000-6,000$$
+
+$$= 3,000$$
 
 $$0.97^{20}$$
 
@@ -10475,6 +10561,22 @@ $$`,
 
 The equal-payment plan is the $k=1$ case already written in the overview, so the $15$-year total is $a\\times n$. The claim is that identity.
 
+Substitute the recovered stem inputs:
+
+$$a = 12,$$
+
+$$n = 15$$
+
+$$s_{15} = 12 \\times 15$$
+
+$$s_{15} = 180$$
+
+$$s_{15} = 12\\frac{1.800944-1}{0.04}$$
+
+$$s_{15} = 12 \\times 20.0236$$
+
+$$s_{15} \\approx 240.28$$
+
 So the statement is True.`,
       `**B.** → True
 
@@ -10511,6 +10613,22 @@ So the statement is False.`,
       `**D.** → False
 
 The overview recovered \\$240.28 million under growth and \\$180.00 million with no growth. The extra is
+
+Substitute the recovered stem inputs:
+
+$$a = 12,$$
+
+$$n = 15$$
+
+$$s_{15} = 12 \\times 15$$
+
+$$s_{15} = 180$$
+
+$$s_{15} = 12\\frac{1.800944-1}{0.04}$$
+
+$$s_{15} = 12 \\times 20.0236$$
+
+$$s_{15} \\approx 240.28$$
 
 $$240.28-180.00$$
 
@@ -10664,6 +10782,26 @@ So the statement is False.`,
 
 At the slower decay $k=0.95$,
 
+Substitute the recovered stem inputs:
+
+$$a = 15,000,$$
+
+$$k = 0.88,$$
+
+$$n = 8$$
+
+$$0.88^8$$
+
+$$\\approx 0.359635$$
+
+$$s_8 = 15,000\\frac{1-0.359635}{0.12}$$
+
+$$s_8 = 15,000 \\times 5.336379$$
+
+$$s_8 \\approx 80,045.68$$
+
+$$s_{\\infty} = \\frac{15,000}{1-0.88}$$
+
 $$
 s_{\\infty} = \\frac{15,000}{1-0.95}
 $$
@@ -10797,6 +10935,28 @@ So the statement is False.`,
 
 The overview recovered \\$170,794.15 under $8\\%$ growth and \\$108,000 with no growth. The extra is
 
+Substitute the recovered stem inputs:
+
+$$a = 9,000,$$
+
+$$k = 1.08,$$
+
+$$n = 12$$
+
+$$1.08^{12}$$
+
+$$\\approx 2.518170$$
+
+$$s_{12} = 9,000\\frac{2.518170-1}{0.08}$$
+
+$$s_{12} = 9,000 \\times 18.977128$$
+
+$$s_{12} \\approx 170,794.15$$
+
+$$9,000 \\times 12$$
+
+$$= 108,000$$
+
 $$170,794.15-108,000$$
 
 $$= 62,794.15$$
@@ -10915,6 +11075,26 @@ So the statement is False.`,
 
 The overview recovered $a_6\\approx 9.95328$. Treating that as the first terminal payment at $k_T=0.85$,
 
+Substitute the recovered stem inputs:
+
+$$a = 4,$$
+
+$$k = 1.20,$$
+
+$$n = 6,$$
+
+$$k_T = 0.85$$
+
+$$1.20^6$$
+
+$$= 2.985984$$
+
+$$s_6 = 4\\frac{2.985984-1}{0.20}$$
+
+$$s_6 = 4 \\times 9.92992$$
+
+$$s_6 = 39.72$$
+
 $$
 T = \\frac{9.95328}{1-0.85}
 $$
@@ -10929,6 +11109,26 @@ So the statement is True.`,
       `**E.** → False
 
 The overview recovered $s_6=39.72$. The terminal value is about $66.36$, so the combined projected value is
+
+Substitute the recovered stem inputs:
+
+$$a = 4,$$
+
+$$k = 1.20,$$
+
+$$n = 6,$$
+
+$$k_T = 0.85$$
+
+$$1.20^6$$
+
+$$= 2.985984$$
+
+$$s_6 = 4\\frac{2.985984-1}{0.20}$$
+
+$$s_6 = 4 \\times 9.92992$$
+
+$$s_6 = 39.72$$
 
 $$39.72+66.36$$
 
@@ -11084,6 +11284,24 @@ So the statement is False.`,
       `**E.** → True
 
 Spreading \\$58,000 evenly over six months gives
+
+Substitute the recovered stem inputs:
+
+$$s_6 = 58,000,$$
+
+$$k = 1.15,$$
+
+$$n = 6$$
+
+$$1.15^6$$
+
+$$= 2.313060766$$
+
+$$a = 58,000\\frac{0.15}{2.313060766-1}$$
+
+$$a = \\frac{8,700}{1.313060766}$$
+
+$$a \\approx 6,625.74$$
 
 $$\\frac{58,000}{6}$$
 
