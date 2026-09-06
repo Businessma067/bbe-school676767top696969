@@ -27,20 +27,20 @@ const COURSE_SUBJECTS: {
   {
     key: "economics",
     label: "Economics",
-    title: "Statement explanations with AI beside them",
-    body: "Open a guide, pick a task, submit, then open the full solution. For any statement, tap AI explanation to read the tactical write-up and the AI pass side by side — without leaving the solution panel.",
+    title: "Guides, tasks, and AI beside each explanation",
+    body: "Watch the full walkthrough: open a chapter guide, pick a task, submit, then read the solution with AI right beside each statement.",
     cta: "Explore Economics",
-    href: "/demo-practice/economics",
+    href: "/products/full-course-economics",
     video: "/how-it-works/economics.mp4",
     poster: "/how-it-works/economics-poster.jpg",
   },
   {
     key: "math",
     label: "Math",
-    title: "Timed drills with the exam calculator",
-    body: "Start from the guide, open a question, switch on timed mode, and use the calculator. Submit, then scroll the full solution so the method sticks.",
+    title: "Guides, timed mode, and the exam calculator",
+    body: "See every question in the list, open one, turn on timed mode, use the calculator, then work through the full solution.",
     cta: "Explore Math",
-    href: "/demo-practice/math",
+    href: "/products/full-course-math",
     video: "/how-it-works/math.mp4",
     poster: "/how-it-works/math-poster.jpg",
   },
@@ -48,9 +48,9 @@ const COURSE_SUBJECTS: {
     key: "english",
     label: "English",
     title: "Passages with show-in-text",
-    body: "Open the guide, work a passage with statements, and submit. Then use Show in text to jump from each explanation back to the exact lines in the passage.",
+    body: "Browse the Texts questions, open a passage task, submit, then jump from each explanation back to the exact lines in the text.",
     cta: "Explore English",
-    href: "/demo-practice/english",
+    href: "/products/full-course-english",
     video: "/how-it-works/english.mp4",
     poster: "/how-it-works/english-poster.jpg",
   },
@@ -145,7 +145,7 @@ export function HowItWorksSection() {
       <div className="relative mx-auto mt-8 max-w-7xl">
         <div
           ref={stageRef}
-          className="relative rounded-2xl border border-border bg-card px-10 py-5 shadow-sm sm:px-12 sm:py-6 lg:px-14 lg:py-7"
+          className="relative rounded-2xl border border-border bg-card px-6 py-3 shadow-sm sm:px-8 sm:py-3 lg:px-10 lg:py-3"
         >
           <button
             type="button"
@@ -164,15 +164,15 @@ export function HowItWorksSection() {
             <ChevronRight className="h-5 w-5" />
           </button>
 
-          <div className="grid items-stretch gap-6 lg:grid-cols-[minmax(0,1.75fr)_minmax(15rem,0.7fr)] lg:gap-8">
+          <div className="grid items-start gap-4 lg:grid-cols-[minmax(0,2.7fr)_minmax(12rem,0.38fr)] lg:gap-5">
             <div className="min-w-0">
-              <div className="overflow-hidden rounded-xl border border-border bg-[#f7f6f2]">
+              <div className="overflow-hidden rounded-xl border border-border bg-[#111]">
                 {tab === "course" ? (
-                  <div className="relative min-h-[18rem] sm:min-h-[26rem] lg:min-h-[34rem] xl:min-h-[38rem]">
+                  <div className="relative aspect-[16/10] w-full sm:aspect-[16/9] lg:aspect-[16/11]">
                     <video
                       key={slide.key}
                       ref={videoRef}
-                      className="absolute inset-0 h-full w-full object-contain object-top"
+                      className="absolute inset-0 h-full w-full scale-[1.26] object-cover object-[center_24%]"
                       poster={slide.poster}
                       src={slide.video}
                       muted
@@ -183,8 +183,8 @@ export function HowItWorksSection() {
                     />
                   </div>
                 ) : (
-                  <div className="flex min-h-[18rem] items-center justify-center px-6 text-center sm:min-h-[26rem] lg:min-h-[34rem]">
-                    <p className="max-w-sm text-sm leading-relaxed text-muted-foreground">
+                  <div className="flex aspect-[16/10] w-full items-center justify-center px-6 text-center sm:aspect-[16/9] lg:aspect-[16/11]">
+                    <p className="max-w-sm text-sm leading-relaxed text-white/70">
                       Walkthrough coming next. Switch back to Course to watch Economics, Math, and English.
                     </p>
                   </div>
@@ -194,7 +194,7 @@ export function HowItWorksSection() {
 
             <div
               key={tab === "course" ? slide.key : tab}
-              className="relative z-10 flex flex-col justify-center px-1 py-1 text-left sm:px-2 lg:py-2"
+              className="relative z-10 flex flex-col justify-start px-1 py-1 text-left sm:px-2 lg:sticky lg:top-24 lg:py-1"
             >
               {tab === "course" ? (
                 <>

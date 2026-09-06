@@ -72,17 +72,17 @@ const baseDictionary: Record<Exclude<Lang, "en">, Record<string, string>> = {
     // How it works
     Course: "Kurs",
     "Mock exams": "Probeprüfungen",
-    "Statement explanations with AI beside them": "Aussagen-Erklärungen mit KI daneben",
-    "Open a guide, pick a task, submit, then open the full solution. For any statement, tap AI explanation to read the tactical write-up and the AI pass side by side — without leaving the solution panel.":
-      "Öffne einen Leitfaden, wähle eine Aufgabe, reiche ein und öffne die volle Lösung. Bei jeder Aussage tippst du auf KI-Erklärung und liest die taktische Analyse und den KI-Pass nebeneinander — ohne die Lösung zu verlassen.",
+    "Guides, tasks, and AI beside each explanation": "Leitfäden, Aufgaben und KI neben jeder Erklärung",
+    "Watch the full walkthrough: open a chapter guide, pick a task, submit, then read the solution with AI right beside each statement.":
+      "Sieh den vollständigen Walkthrough: öffne einen Kapitel-Leitfaden, wähle eine Aufgabe, reiche ein und lies die Lösung mit KI direkt neben jeder Aussage.",
     "Explore Economics": "Wirtschaft entdecken",
-    "Timed drills with the exam calculator": "Timed Mode mit dem Prüfungsrechner",
-    "Start from the guide, open a question, switch on timed mode, and use the calculator. Submit, then scroll the full solution so the method sticks.":
-      "Starte beim Leitfaden, öffne eine Frage, schalte den Timed Mode ein und nutze den Rechner. Reiche ein und scrolle dann die volle Lösung, bis die Methode sitzt.",
+    "Guides, timed mode, and the exam calculator": "Leitfäden, Timed Mode und Prüfungsrechner",
+    "See every question in the list, open one, turn on timed mode, use the calculator, then work through the full solution.":
+      "Sieh jede Frage in der Liste, öffne eine, schalte Timed Mode ein, nutze den Rechner und arbeite die volle Lösung durch.",
     "Explore Math": "Mathematik entdecken",
     "Passages with show-in-text": "Texte mit „Show in text“",
-    "Open the guide, work a passage with statements, and submit. Then use Show in text to jump from each explanation back to the exact lines in the passage.":
-      "Öffne den Leitfaden, bearbeite einen Text mit Aussagen und reiche ein. Mit Show in text springst du von jeder Erklärung zurück zu den genauen Zeilen im Text.",
+    "Browse the Texts questions, open a passage task, submit, then jump from each explanation back to the exact lines in the text.":
+      "Durchsuche die Texts-Fragen, öffne eine Textaufgabe, reiche ein und springe von jeder Erklärung zurück zu den genauen Zeilen im Text.",
     "Explore English": "Englisch entdecken",
     "Full-length exam simulations": "Vollständige Prüfungssimulationen",
     "Build a mock around your weak spots": "Baue eine Probeprüfung um deine Schwachstellen",
@@ -225,17 +225,17 @@ const baseDictionary: Record<Exclude<Lang, "en">, Record<string, string>> = {
     // How it works
     Course: "Курс",
     "Mock exams": "Пробні іспити",
-    "Statement explanations with AI beside them": "Пояснення тверджень із ШІ поруч",
-    "Open a guide, pick a task, submit, then open the full solution. For any statement, tap AI explanation to read the tactical write-up and the AI pass side by side — without leaving the solution panel.":
-      "Відкрий гайд, обери завдання, надішли відповідь і відкрий повний розбір. Для будь-якого твердження натисни ШІ-пояснення — тактичний розбір і ШІ стоять поруч, без виходу з панелі розв’язку.",
+    "Guides, tasks, and AI beside each explanation": "Гайди, завдання і ШІ поруч із кожним поясненням",
+    "Watch the full walkthrough: open a chapter guide, pick a task, submit, then read the solution with AI right beside each statement.":
+      "Повний огляд: відкрий гайд розділу, обери завдання, надішли відповідь і читай розбір із ШІ прямо поруч із кожним твердженням.",
     "Explore Economics": "До економіки",
-    "Timed drills with the exam calculator": "Режим таймера з калькулятором іспиту",
-    "Start from the guide, open a question, switch on timed mode, and use the calculator. Submit, then scroll the full solution so the method sticks.":
-      "Почни з гайду, відкрий питання, увімкни таймер і скористайся калькулятором. Надішли відповідь, тоді прогорни повний розв’язок, щоб метод закріпився.",
+    "Guides, timed mode, and the exam calculator": "Гайди, таймер і калькулятор іспиту",
+    "See every question in the list, open one, turn on timed mode, use the calculator, then work through the full solution.":
+      "Покажи всі питання в списку, відкрий одне, увімкни таймер, скористайся калькулятором і пройди повний розв’язок.",
     "Explore Math": "До математики",
     "Passages with show-in-text": "Тексти з Show in text",
-    "Open the guide, work a passage with statements, and submit. Then use Show in text to jump from each explanation back to the exact lines in the passage.":
-      "Відкрий гайд, розбери текст із твердженнями й надішли відповідь. Show in text повертає з кожного пояснення до точних рядків у тексті.",
+    "Browse the Texts questions, open a passage task, submit, then jump from each explanation back to the exact lines in the text.":
+      "Переглянь питання Texts, відкрий завдання з текстом, надішли відповідь і перейди з пояснення до точних рядків у тексті.",
     "Explore English": "До англійської",
     "Full-length exam simulations": "Повноформатні симуляції іспиту",
     "Build a mock around your weak spots": "Збери пробний іспит під свої слабкі місця",
