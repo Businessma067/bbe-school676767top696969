@@ -18,23 +18,26 @@ const LEVELS: TimedDifficulty[] = ["easy", "standard", "hard"];
 /** Always-visible Timed Mode control strip for the practice screen. */
 export function TimedModeBar({
   session,
+  questionId = null,
   showCalculator = false,
   className,
 }: {
   session: TimedSession;
+  /** Current unlocked question — passed so enable() can start the clock immediately. */
+  questionId?: string | null;
   /** Math practice can show the TI-30; English/Economics omit it. */
   showCalculator?: boolean;
   className?: string;
 }) {
   const [settingsOpen, setSettingsOpen] = useState(false);
-  const entry = session.get(session.activeId);
+  const entry = session.get(session.activeId ?? questionId);
 
   return (
     <div className={cn("mb-5 rounded-2xl border border-border bg-card p-3 shadow-sm", className)}>
       <div className="flex flex-wrap items-center gap-2">
         <button
           type="button"
-          onClick={() => (session.enabled ? session.disable() : session.enable())}
+          onClick={() => (session.enabled ? session.disable() : session.enable(questionId))}
           aria-pressed={session.enabled}
           className={cn(
             "inline-flex items-center gap-2 rounded-lg border px-3 py-2 text-xs font-bold transition-colors",

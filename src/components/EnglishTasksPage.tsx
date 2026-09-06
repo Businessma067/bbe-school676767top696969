@@ -758,6 +758,7 @@ export function EnglishTasksPage({ tier }: Props) {
             {activeCase && !isLocked(tier, activeIdx) && (
               <TimedModeBar
                 session={timed}
+                questionId={activeCase.id}
                 className={textsWorkspace ? "mb-1.5 shrink-0 p-1.5" : undefined}
               />
             )}
@@ -837,7 +838,15 @@ export function EnglishTasksPage({ tier }: Props) {
                             activeCase.answer_key.length || activeCase.statements.length,
                         });
                       }}
-                      onResetProgress={() => resetCaseIds([activeCase.id])}
+                      onResetProgress={() => {
+                        resetCaseIds([activeCase.id]);
+                        timed.resetQuestion(activeCase.id);
+                        if (timed.enabled) timed.openQuestion(activeCase.id);
+                      }}
+                      onRetry={() => {
+                        timed.resetQuestion(activeCase.id);
+                        if (timed.enabled) timed.openQuestion(activeCase.id);
+                      }}
                     />
                     <div className="flex shrink-0 items-center justify-between pb-1">
                       <button
@@ -908,7 +917,15 @@ export function EnglishTasksPage({ tier }: Props) {
                     statementCount: activeCase.answer_key.length || activeCase.statements.length,
                   });
                 }}
-                onResetProgress={() => resetCaseIds([activeCase.id])}
+                onResetProgress={() => {
+                  resetCaseIds([activeCase.id]);
+                  timed.resetQuestion(activeCase.id);
+                  if (timed.enabled) timed.openQuestion(activeCase.id);
+                }}
+                onRetry={() => {
+                  timed.resetQuestion(activeCase.id);
+                  if (timed.enabled) timed.openQuestion(activeCase.id);
+                }}
               />
             ) : null}
 
@@ -1108,6 +1125,7 @@ function CaseCard({
   inRevision,
   alreadyPassed,
   onResetProgress,
+  onRetry,
   explanationsOpen,
   onShowExplanations,
   onToggleExplanations,
@@ -1124,6 +1142,7 @@ function CaseCard({
   inRevision: boolean;
   alreadyPassed: boolean;
   onResetProgress: () => void;
+  onRetry?: () => void;
   explanationsOpen: boolean;
   onShowExplanations: () => void;
   onToggleExplanations: () => void;
@@ -1134,6 +1153,7 @@ function CaseCard({
   reviewOnly?: boolean;
   timerNote?: string | null;
 }) {
+  const calc = usePracticeCalcOptional();
   const n = data.statements.length;
   const [answers, setAnswers] = useState<(boolean | null)[]>(() =>
     data.statements.map(() => null),
@@ -1148,6 +1168,7 @@ function CaseCard({
   useEffect(() => {
     if (!reviewOnly) return;
     setChecked(true);
+    calc?.setOpen(false);
     onShowExplanations();
     // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [reviewOnly, data.id]);
@@ -1167,13 +1188,17 @@ function CaseCard({
     setChecked(true);
     onGraded(correctCount === data.answer_key.length, correctCount);
     // Texts: keep questions visible and let the user open the explanation below.
-    if (!isTexts) onShowExplanations();
+    if (!isTexts) {
+      calc?.setOpen(false);
+      onShowExplanations();
+    }
   };
 
   const handleReset = () => {
     setChecked(false);
     setAnswers(data.statements.map(() => null));
     if (isTexts && explanationsOpen) onToggleExplanations();
+    onRetry?.();
   };
 
   const handleFullReset = () => {
