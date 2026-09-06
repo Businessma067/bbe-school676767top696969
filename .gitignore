@@ -34,3 +34,8 @@ data/admin-store/
 
 # Local demo video capture output
 tmp-demo-recordings/
+.playwright-browsers/
+.playwright-profile/
+.playwright-profile2/
+public/how-it-works/_ai-test.png
+public/how-it-works/_preview/
