@@ -88,6 +88,10 @@ export function useTimedSession() {
   const [activeId, setActiveId] = useState<string | null>(null);
   const activeRef = useRef<string | null>(null);
   activeRef.current = activeId;
+  const difficultyRef = useRef(difficulty);
+  difficultyRef.current = difficulty;
+  const enabledRef = useRef(enabled);
+  enabledRef.current = enabled;
 
   /** Freeze a question's clock exactly where it is. */
   const pause = useCallback((id: string) => {
@@ -99,7 +103,13 @@ export function useTimedSession() {
     });
   }, []);
 
-  /** Open (or re-open) a question in timed mode. */
+  /**
+   * Open (or re-open) a question in timed mode.
+   * - not_started → start running
+   * - paused → resume
+   * - running / overtime → no-op (keep clock)
+   * - submitted / timed_out → leave as-is (call resetQuestion to retry)
+   */
   const openQuestion = useCallback(
     (id: string | null) => {
       const previous = activeRef.current;
@@ -107,18 +117,27 @@ export function useTimedSession() {
       setActiveId(id);
       if (!id) return;
       setState((prev) => {
-        const existing = prev[id] ?? makeEntry(difficulty);
-        let next = existing;
-        if (existing.status === "not_started") {
-          next = { ...existing, status: "running" };
-        } else if (existing.status === "paused") {
-          // resume exactly where it was frozen
-          next = { ...existing, status: existing.overtimeSeconds > 0 && existing.timedOut ? "overtime" : "running" };
+        const existing = prev[id];
+        if (!existing) {
+          return { ...prev, [id]: { ...makeEntry(difficultyRef.current), status: "running" } };
         }
-        return { ...prev, [id]: next };
+        if (existing.status === "not_started") {
+          return { ...prev, [id]: { ...existing, status: "running" } };
+        }
+        if (existing.status === "paused") {
+          return {
+            ...prev,
+            [id]: {
+              ...existing,
+              status: existing.overtimeSeconds > 0 && existing.timedOut ? "overtime" : "running",
+            },
+          };
+        }
+        // running / overtime / submitted / timed_out — leave unchanged
+        return prev;
       });
     },
-    [difficulty, pause],
+    [pause],
   );
 
   /** Difficulty only affects questions that have not been opened yet. */
@@ -153,6 +172,7 @@ export function useTimedSession() {
     setState((prev) => {
       const e = prev[id];
       if (!e) return prev;
+      if (e.status === "submitted") return prev;
       const total = e.timedOut
         ? e.allocatedSeconds + e.overtimeSeconds
         : e.allocatedSeconds - e.remainingSeconds;
@@ -160,6 +180,16 @@ export function useTimedSession() {
         ...prev,
         [id]: { ...e, status: "submitted", awaitingChoice: false, totalTimeSpentSeconds: total },
       };
+    });
+  }, []);
+
+  /** Clear one question so Timed Mode can start a fresh countdown (Try again). */
+  const resetQuestion = useCallback((id: string) => {
+    setState((prev) => {
+      if (!prev[id]) return prev;
+      const next = { ...prev };
+      delete next[id];
+      return next;
     });
   }, []);
 
@@ -174,23 +204,60 @@ export function useTimedSession() {
     setEnabled(false);
   }, [pause]);
 
-  const enable = useCallback(() => setEnabled(true), []);
+  /**
+   * Turn Timed Mode on. When `id` is passed (Timed Mode button), start that
+   * question's clock immediately so the UI does not wait on a parent effect.
+   */
+  const enable = useCallback(
+    (id?: string | null) => {
+      setEnabled(true);
+      if (!id) return;
+      const previous = activeRef.current;
+      if (previous && previous !== id) pause(previous);
+      setActiveId(id);
+      setState((prev) => {
+        const existing = prev[id];
+        if (!existing || existing.status === "not_started" || existing.status === "submitted") {
+          return { ...prev, [id]: { ...makeEntry(difficultyRef.current), status: "running" } };
+        }
+        if (existing.status === "paused") {
+          return {
+            ...prev,
+            [id]: {
+              ...existing,
+              status: existing.overtimeSeconds > 0 && existing.timedOut ? "overtime" : "running",
+            },
+          };
+        }
+        if (existing.status === "timed_out" && existing.reviewOnly) {
+          return { ...prev, [id]: { ...makeEntry(difficultyRef.current), status: "running" } };
+        }
+        // already running / overtime / awaiting timeout choice — keep
+        return prev;
+      });
+    },
+    [pause],
+  );
+
+  // Active question status — used so the tick effect does not re-subscribe on every second.
+  const activeStatus = activeId ? state[activeId]?.status : undefined;
 
   // 1-second tick for the active question only.
   useEffect(() => {
     if (!enabled || !activeId) return;
-    const entry = state[activeId];
-    if (!entry || (entry.status !== "running" && entry.status !== "overtime")) return;
+    if (activeStatus !== "running" && activeStatus !== "overtime") return;
+    const id = activeId;
     const t = window.setInterval(() => {
+      if (!enabledRef.current) return;
       setState((prev) => {
-        const e = prev[activeId];
+        const e = prev[id];
         if (!e) return prev;
         if (e.status === "running") {
           const remaining = e.remainingSeconds - 1;
           if (remaining <= 0) {
             return {
               ...prev,
-              [activeId]: {
+              [id]: {
                 ...e,
                 remainingSeconds: 0,
                 status: "timed_out",
@@ -199,16 +266,16 @@ export function useTimedSession() {
               },
             };
           }
-          return { ...prev, [activeId]: { ...e, remainingSeconds: remaining } };
+          return { ...prev, [id]: { ...e, remainingSeconds: remaining } };
         }
         if (e.status === "overtime") {
-          return { ...prev, [activeId]: { ...e, overtimeSeconds: e.overtimeSeconds + 1 } };
+          return { ...prev, [id]: { ...e, overtimeSeconds: e.overtimeSeconds + 1 } };
         }
         return prev;
       });
     }, 1000);
     return () => window.clearInterval(t);
-  }, [enabled, activeId, state]);
+  }, [enabled, activeId, activeStatus]);
 
   const get = useCallback((id: string | null | undefined) => (id ? state[id] : undefined), [state]);
 
@@ -226,6 +293,7 @@ export function useTimedSession() {
     chooseOvertime,
     chooseReview,
     markSubmitted,
+    resetQuestion,
     reset,
   };
 }

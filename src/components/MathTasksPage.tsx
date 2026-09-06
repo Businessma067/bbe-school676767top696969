@@ -3,7 +3,7 @@ import { AuthModal } from "@/components/AuthModal";
 import { SiteHeader } from "@/components/SiteHeader";
 import { FlashcardMath, indexOfUnescapedDollar } from "@/components/FlashcardMath";
 import { PracticeCalcProvider, usePracticeCalcOptional } from "@/components/calculator/PracticeCalcContext";
-import { PracticeCalculatorInline, PracticeRightSlot } from "@/components/calculator/Ti30MathPrint";
+import { PracticeRightSlot } from "@/components/calculator/Ti30MathPrint";
 import { TimedModeBar, TimeoutModal, TimerStatusDot } from "@/components/TimedModeControls";
 import { TheoryReader } from "@/components/TheoryReader";
 import { useAuthGate } from "@/hooks/use-auth-gate";
@@ -288,7 +288,16 @@ export function MathTasksPage({ tier }: Props) {
     if (!current) return;
     resetCaseIds([current.id]);
     setShowExplanations(false);
-  }, []);
+    timed.resetQuestion(current.id);
+    if (timed.enabled) timed.openQuestion(current.id);
+  }, [timed]);
+
+  const onRetryStable = useCallback(() => {
+    const current = deferredCaseRef.current;
+    if (!current) return;
+    timed.resetQuestion(current.id);
+    if (timed.enabled) timed.openQuestion(current.id);
+  }, [timed]);
 
   useEffect(() => {
     if (!timed.enabled) return;
@@ -971,7 +980,7 @@ export function MathTasksPage({ tier }: Props) {
             !activeCase.placeholder &&
             !isLocked(tier, activeChapter, activeIdx, activeList) &&
             theoryChapter === null && (
-              <TimedModeBar session={timed} showCalculator />
+              <TimedModeBar session={timed} questionId={activeCase.id} showCalculator />
             )}
 
           <div
@@ -1015,6 +1024,7 @@ export function MathTasksPage({ tier }: Props) {
                 }
                 onGraded={onGradedStable}
                 onResetProgress={onResetProgressStable}
+                onRetry={onRetryStable}
               />
             ) : null}
           </div>
@@ -1892,6 +1902,7 @@ const MathTaskCard = memo(function MathTaskCard({
   onToggleExplanations,
   onGraded,
   onResetProgress,
+  onRetry,
   requireAuth,
   reviewOnly = false,
   timerNote = null,
@@ -1910,10 +1921,12 @@ const MathTaskCard = memo(function MathTaskCard({
     statementResults: { statement_index: number; correct: boolean }[];
   }) => void;
   onResetProgress: () => void;
+  onRetry?: () => void;
   requireAuth?: () => boolean;
   reviewOnly?: boolean;
   timerNote?: string | null;
 }) {
+  const calc = usePracticeCalcOptional();
   const [answers, setAnswers] = useState<(boolean | null)[]>(() =>
     task.statements.map(() => null),
   );
@@ -1927,6 +1940,7 @@ const MathTaskCard = memo(function MathTaskCard({
   useEffect(() => {
     if (!reviewOnly) return;
     setChecked(true);
+    calc?.setOpen(false);
     onShowExplanations();
     // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [reviewOnly, task.id]);
@@ -1954,12 +1968,14 @@ const MathTaskCard = memo(function MathTaskCard({
       statementCount: task.answer_key.length,
       statementResults,
     });
+    calc?.setOpen(false);
     onShowExplanations();
   };
 
   const handleReset = () => {
     setChecked(false);
     setAnswers(task.statements.map(() => null));
+    onRetry?.();
   };
 
   return (
