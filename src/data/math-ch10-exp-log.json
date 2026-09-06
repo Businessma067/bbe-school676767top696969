@@ -1191,7 +1191,7 @@
         "With $k=2$ and $t=3$, both $\\ln\\bigl(e^{kt}\\bigr)$ and $kt$ equal $6$.",
         "$\\ln\\ln P(t)=kt$ for every $P_0>e$ and every $t\\ge 0$.",
         "There exist $P_0>e$ and $k>0$ such that $\\ln\\ln P(t)$ is defined for all large $t$ yet $\\ln\\ln P(t)\\neq kt$ for some such $t$.",
-        "$e^{\\ln P(t)+kt}=P(t)^{2}$ for every $t$ and every $P_0>0$."
+        "With $P(t)=P_0 e^{kt}$, $P_0=e$, $k=1$ and $t=1$, one has $e^{\\ln P(1)+k\\cdot 1}=P(1)^{2}$."
       ],
       "answer_key": [
         false,
@@ -1205,7 +1205,7 @@
         "**B.** → True\n\nThe natural log undoes the exponential on the whole real line.\n\n$$\\ln\\bigl(e^{kt}\\bigr)=kt$$\n\nfor every real $k$ and $t$.\n\n\nConcrete check for the rewritten claim. Substitute: $\\ln(e^{6})=6$ and $2\\cdot3=6$.\n\nSo the statement is True.",
         "**C.** → False\n\nA second logarithm applied to the path yields\n\n$$\\ln\\ln P(t)=\\ln(\\ln P_0+kt)$$\n\nwhenever the inner log is positive. That expression equals $kt$ only under a very special relation between $P_0$, $k$, and $t$, not for every $P_0>e$ and every $t\\ge 0$. Already at $t=0$,\n\n$$\\ln\\ln P(0)=\\ln\\ln P_0\\neq 0$$\n\nin general.\n\nSo the statement is False.",
         "**D.** → True\n\nChoose $P_0=e^{e}$ and $k=1$. Then $\\ln P(t)=e+t>1$ for all $t\\ge 0$, so $\\ln\\ln P(t)$ is defined for all large $t$ (in fact for all $t\\ge 0$). But\n\n$$\\ln\\ln P(t)=\\ln(e+t)$$\n\nwhile $kt=t$. These disagree at $t=1$ because $\\ln(e+1)\\neq 1$. The existence claim holds.\n\nSo the statement is True.",
-        "**E.** → False\n\nExponentiate the sum $\\ln P(t)+kt$.\n\n$$\ne^{\\ln P(t)+kt} = P(t)\\,e^{kt}\n$$\n\n$$\n= P_0 e^{kt}\\cdot e^{kt}\n$$\n\n$$\n= P_0 e^{2kt}\n$$\n\nOn the other hand,\n\n$$P(t)^{2}=P_0^{2} e^{2kt}$$\n\nThese agree for every $t$ only if $P_0=1$. The claimed identity therefore fails in general.\n\nSo the statement is False."
+        "**E.** → False\n\nExponentiate the sum $\\ln P(t)+kt$.\n\n$$\ne^{\\ln P(t)+kt} = P(t)\\,e^{kt}\n$$\n\n$$\n= P_0 e^{kt}\\cdot e^{kt}\n$$\n\n$$\n= P_0 e^{2kt}\n$$\n\nOn the other hand,\n\n$$P(t)^{2}=P_0^{2} e^{2kt}$$\n\nThese agree for every $t$ only if $P_0=1$. The claimed identity therefore fails in general.\n\n\nTake the concrete data $P_0=e$, $k=1$, $t=1$. Then $P(1)=e^{2}$.\n\n$$\ne^{\\ln P(1)+1} = e^{\\ln(e^{2})+1}\n$$\n\n$$\n= e^{3}\n$$\n\n$$\nP(1)^{2} = (e^{2})^{2}\n$$\n\n$$\n= e^{4}\n$$\n\nThe two sides disagree, so the claim fails for these values.\n\nSo the statement is False."
       ],
       "solution_overview": "A single logarithm linearises the continuous path.\n\n$$\\ln P(t)=\\ln P_0+kt$$\n\nA second logarithm produces $\\ln(\\ln P_0+kt)$, not $kt$. Algebraic slips that exponentiate $\\ln P+kt$ introduce an extra factor $e^{kt}$ rather than squaring $P$.",
       "difficulty_level": "1/5",
@@ -3919,7 +3919,7 @@
       "context": "Let $k$ be a real force and $t$ a real time. Let $u,v>0$ be positive levels. Judge each identity claim on its own. Evaluate each statement. Mark it TRUE or FALSE.",
       "statements": [
         "With $k=2$ and $t=3$, both $\\ln(e^{kt})$ and $kt$ equal $6$.",
-        "$e^{\\ln u}=u$ for every $u>0$.",
+        "With $u=e^{2}$, both $e^{\\ln u}$ and $u$ equal $e^{2}$.",
         "$\\ln(uv)=\\ln u+\\ln v$ for every $u,v>0$.",
         "$\\ln(u+v)=\\ln u+\\ln v$ for every $u,v>0$.",
         "With $k=2$, $t=3$, both $(e^{k})^{t}$ and $e^{k+t}$ equal $e^{5}$."
@@ -3933,7 +3933,7 @@
       ],
       "tactical_explanations": [
         "**A.** → True\n\nNatural log undoes the exponential on the whole real line.\n\n$$\n\\ln(e^{kt})=kt\n$$\n\nThis is the defining inverse identity, and it holds for every real force $k$ and every real time $t$.\n\nThe identity is the left-inverse property of $\\ln$ and $\\exp$.\n\n$$\n\\ln\\\\circ\\\\exp=\\\\mathrm{id}_{\\\\mathbb{R}}\n$$\n\n\nConcrete check for the rewritten claim. Substitute: $\\ln(e^{6})=6$ and $2\\cdot3=6$.\n\nSo the statement is True.",
-        "**B.** → True\n\nExponential undoes the natural log on the positive half-line.\n\n$$\ne^{\\ln u}=u\n$$\n\nThe identity requires $u>0$ and then returns $u$ exactly, for every positive level.\n\nSo the statement is True.",
+        "**B.** → True\n\nExponential undoes the natural log on the positive half-line.\n\n$$\ne^{\\ln u}=u\n$$\n\nThe identity requires $u>0$ and then returns $u$ exactly, for every positive level.\n\n\nFor the concrete positive value $u=e^{2}$,\n\n$$\ne^{\\ln(e^{2})}=e^{2}\n$$\n\nwhich matches $u$.\n\nSo the statement is True.",
         "**C.** → True\n\nLogarithm turns products into sums on the positive half-line.\n\n$$\n\\ln(uv)=\\ln u+\\ln v\n$$\n\nThe product rule holds for every pair of positive levels $u$ and $v$.\n\nThe rule is the group homomorphism from multiplicative positives to additive reals.\n\n$$\n\\ln:\\\\,(0,\\infty)\\\\to\\\\mathbb{R}\n$$\n\nSo the statement is True.",
         "**D.** → False\n\nA single counter-example kills the claimed sum rule.\n\n$$\nu = v\n$$\n\n$$\n= e\\implies\\ln(u+v)\n$$\n\n$$\n= \\ln(2e)\n$$\n\n$$\n= \\ln2+1\n$$\n\n$$\n\\ln u+\\ln v=2\n$$\n\nBecause $\\ln2+1\\neq2$, logs do not linearise sums.\n\nCollect the decisive inequality in one display so the verdict is immediate.\n\nThe last recovered line is already the comparison the claim needs.\n\n$$\n\\ln u+\\ln v=2\n$$\n\nSo the statement is False.",
         "**E.** → False\n\nPowering multiplies the exponents; it does not add $k$ to $t$.\n\n$$\n(e^{k})^{t}=e^{kt}\n$$\n\n$$\ne^{kt}\\neq e^{k+t}\n$$\n\nThe claimed identity confuses multiplication of exponents with addition.\n\nCollect the decisive inequality in one display so the verdict is immediate.\n\nThe last recovered line is already the comparison the claim needs.\n\n$$\ne^{kt}\\neq e^{k+t}\n$$\n\n\nConcrete check for the rewritten claim. Left $(e^2)^3=e^6$, right $e^5$; they disagree.\n\nSo the statement is False."
