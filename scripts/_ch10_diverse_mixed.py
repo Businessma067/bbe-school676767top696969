@@ -1,14 +1,14 @@
 #!/usr/bin/env python3
-"""Diverse hard mixed-exam builders for Chapter 10.3 (exponential + logarithmic).
+"""Hard mixed-exam builders for Chapter 10.3 (exponential + logarithmic mashup).
 
 Exports:
   MIXED_COUNT = 30
-  build_mixed_tasks() -> list[dict]   # exactly 30 hard 5/5 mashups
+  build_mixed_tasks() -> list[dict]   # exactly 30 hard 5/5 final-exam mashups
 
-Each task packs title, context, statements[5], answer_key[5],
-tactical_explanations[5], solution_overview, stem_kind, and optional
-figure / tables_markdown. Letters are self-contained tutoring write-ups;
-solution_overview holds shared recovered quantities once for reuse.
+Final-exam feel: piecewise continuous forces, recover k from tables then
+compare doubling / thresholds, nested exp∘log and log∘exp, competing
+populations, change-of-base inside inequalities, hybrid graph+equation stems.
+Letters are Ch7/Ch9 tactical write-ups; solution_overview holds shared recovery.
 """
 from __future__ import annotations
 
@@ -77,10 +77,7 @@ _OVERESC = re.compile(r"\\\\([A-Za-z]+)")
 
 
 def fix_overescaped_latex(s: str) -> str:
-    """Collapse rf-string over-escapes like \\\\approx → \\approx.
-
-    Leaves row-break \\\\ alone when not followed by a letter (e.g. \\\\[4pt]).
-    """
+    """Collapse rf-string over-escapes like \\\\approx → \\approx."""
     prev = None
     while prev != s:
         prev = s
@@ -103,7 +100,12 @@ def pack(letter: str, truth: bool, parts: list[str]) -> str:
         chunks.append(p)
     body = "\n\n".join(chunks)
     if "so the statement is" not in body.lower():
-        body = body.rstrip(".") + ".\n\nSo the statement is " + ("True" if truth else "False") + "."
+        body = (
+            body.rstrip(".")
+            + ".\n\nSo the statement is "
+            + ("True" if truth else "False")
+            + "."
+        )
     return f"**{letter}.** → {'True' if truth else 'False'}\n\n{body}"
 
 
@@ -158,80 +160,78 @@ def make_task(
 
 
 # =============================================================================
-# Task builders — each hard mashup recovers shared quantities in the overview;
-# letter explanations reuse those values and finish the local comparison.
+# Task builders — brand-new hard exam mashups (no trivial graph/table reads).
 # =============================================================================
 
 
-def t01_hybrid_piecewise_hit() -> dict:
-    """Piecewise growth + log hitting time + domain side-condition. 2 true."""
-    A, alpha, beta = 1000.0, 0.05, 0.025
-    tau = ln(2) / alpha  # ατ = ln 2 ⇒ f(τ)=2A
-    M = 4.0 * A
-    f_tau = A * math.exp(alpha * tau)
-    t_hit = tau + ln(M / f_tau) / beta
-    t_wrong = ln(M / A) / alpha
+def t01_hybrid_piecewise_thresholds() -> dict:
+    """Piecewise force + log hit + false constant-rate and change-of-base clocks. 2 true."""
+    A, alpha, beta = 1024.0, ln(2) / 8.0, ln(2) / 16.0
+    tau = ln(2) / alpha  # = 8
+    M = 4.0 * A  # needs two more doublings after start; one happens by tau
+    f_tau = A * math.exp(alpha * tau)  # 2A
+    t_hit = tau + ln(M / f_tau) / beta  # tau + ln2/beta = 8+16=24
     avg = (alpha * tau + beta * (t_hit - tau)) / t_hit
-    # Claims: A t_hit>τ True; B avg reproduces M True; C t=ln(M/A)/α False;
-    # D β>α False; E f(τ)≥M False
+    t_alpha = ln(M / A) / alpha  # pretends no switch
+    cob_wrong = math.log(M / A, 2) / beta  # change-of-base misuse
     key = [True, True, False, False, False]
     assert sum(key) == 2
-    assert abs(f_tau - 2 * A) < 1e-9
+    assert abs(tau - 8) < 1e-12 and abs(t_hit - 24) < 1e-9
     assert abs(A * math.exp(avg * t_hit) - M) < 1e-6
-    assert t_hit > tau and t_wrong != t_hit and beta < alpha and f_tau < M
+    assert t_alpha < t_hit and cob_wrong != t_hit and f_tau < M
 
-    fig = piecewise_kink(A, alpha, tau, beta, t_hit + 2, "Piecewise fund vs target")
+    fig = piecewise_kink(A, alpha, tau, beta, t_hit + 4, "Piecewise path vs target M")
     overview = (
         f"With $\\alpha\\tau=\\ln 2$, $f(\\tau)=2A$. Target $M=4A$ forces "
-        f"$t_{{\\mathrm{{hit}}}}=\\tau+\\ln 2/\\beta\\approx{fmt(t_hit)}$, "
-        f"path-average $\\bar k\\approx{fmt(avg,6)}$. Constant-$\\alpha$ "
-        f"mis-hit $t_{{\\alpha}}=\\ln 4/\\alpha\\approx{fmt(t_wrong)}$."
+        f"$t_{{\\mathrm{{hit}}}}=\\tau+\\ln 2/\\beta={fmt(t_hit)}$. "
+        f"Path-average $\\bar k=\\ln(M/A)/t_{{\\mathrm{{hit}}}}={fmt(avg,6)}$. "
+        f"Constant-$\\alpha$ mis-clock $t_\\alpha={fmt(t_alpha)}$; "
+        f"mis-scaled change-of-base $\\log_2(M/A)/\\beta={fmt(cob_wrong)}$."
     )
     return make_task(
-        title="Hybrid — piecewise force, log hit, and a false constant-rate shortcut",
+        title="Hybrid — piecewise hit, path-average force, and two false clocks",
         context=(
-            f"A fund starts at $A={fmt(A)}$, grows at continuous force $\\alpha={fmt(alpha)}$ "
-            f"until $t=\\tau$ with $\\alpha\\tau=\\ln 2$, then at force $\\beta={fmt(beta)}$. "
-            f"The target level is $M=4A$. The figure shows the piecewise path."
+            f"A fund starts at $A={fmt(A)}$, grows at continuous force "
+            f"$\\alpha=\\ln 2/8$ until $t=\\tau$ with $\\alpha\\tau=\\ln 2$, then at "
+            f"force $\\beta=\\ln 2/16$. Target level $M=4A$. The figure shows the path."
         ),
         statements=[
-            r"The target is reached strictly after the rate switch.",
+            r"The target is reached strictly after the rate switch, at $t_{\mathrm{hit}}=\tau+\ln 2/\beta$.",
             r"The path-average force $\bar k=\ln(M/A)/t_{\mathrm{hit}}$ reproduces $f(t_{\mathrm{hit}})=M$.",
-            r"The hitting time equals $\ln(M/A)/\alpha$ (ignoring the switch).",
-            r"The late force $\beta$ is strictly larger than the early force $\alpha$.",
-            r"At the switch the fund already meets or exceeds the target $M$.",
+            r"The hitting time equals $\ln(M/A)/\alpha$ (constant early force, no switch).",
+            r"The hitting time equals $\log_2(M/A)/\beta$.",
+            r"At the switch the fund already meets or exceeds $M$.",
         ],
         answer_key=key,
         bodies=[
             [
                 "Chain the segments and solve $f(t)=M$ in the late regime.",
                 D(r"f(\tau)=A e^{\alpha\tau}=2A"),
-                D(rf"t_{{\mathrm{{hit}}}}=\tau+\frac{{\ln(M/f(\tau))}}{{\beta}}=\tau+\frac{{\ln 2}}{{\beta}}\approx{fmt(t_hit)}"),
-                D(rf"{fmt(t_hit)}>\tau\approx{fmt(tau)}"),
-                close(True, "The hit is strictly after the switch"),
+                D(rf"t_{{\mathrm{{hit}}}}=\tau+\frac{{\ln(M/(2A))}}{{\beta}}=\tau+\frac{{\ln 2}}{{\beta}}={fmt(t_hit)}"),
+                D(rf"{fmt(t_hit)}>\tau={fmt(tau)}"),
+                close(True, "The hit sits strictly after the switch at the claimed clock"),
             ],
             [
-                "Average force is the total log-increment per unit time.",
-                D(rf"\bar k=\frac{{\alpha\tau+\beta(t_{{\mathrm{{hit}}}}-\tau)}}{{t_{{\mathrm{{hit}}}}}}\approx{fmt(avg,6)}"),
-                D(rf"A e^{{\bar k\,t_{{\mathrm{{hit}}}}}}\approx{fmt(A*math.exp(avg*t_hit))}"),
+                "Average force is total log-increment per unit time.",
+                D(rf"\bar k=\frac{{\ln(M/A)}}{{t_{{\mathrm{{hit}}}}}}=\frac{{\ln 4}}{{{fmt(t_hit)}}}={fmt(avg,6)}"),
+                D(rf"A e^{{\bar k\,t_{{\mathrm{{hit}}}}}}={fmt(M)}"),
                 close(True, "The average force recovers the target exactly"),
             ],
             [
                 "A constant-$\\alpha$ formula pretends the switch never happened.",
-                D(rf"t_{{\alpha}}=\frac{{\ln(M/A)}}{{\alpha}}=\frac{{\ln 4}}{{\alpha}}\approx{fmt(t_wrong)}"),
-                D(rf"t_{{\mathrm{{hit}}}}\approx{fmt(t_hit)}\neq{fmt(t_wrong)}"),
-                close(False, "The no-switch formula is not the piecewise hitting time"),
+                D(rf"t_{{\alpha}}=\frac{{\ln(M/A)}}{{\alpha}}=\frac{{\ln 4}}{{\alpha}}={fmt(t_alpha)}"),
+                D(rf"t_{{\mathrm{{hit}}}}={fmt(t_hit)}\neq{fmt(t_alpha)}"),
+                close(False, "The no-switch clock is not the piecewise hitting time"),
             ],
             [
-                "Compare the two force parameters directly.",
-                D(rf"\beta={fmt(beta)},\qquad \alpha={fmt(alpha)}"),
-                D(rf"{fmt(beta)}<{fmt(alpha)}"),
-                close(False, "The late force is smaller, not larger"),
+                "Change-of-base alone does not cancel the early segment.",
+                D(rf"\frac{{\log_2(M/A)}}{{\beta}}=\frac{{2}}{{\beta}}={fmt(cob_wrong)}"),
+                D(rf"t_{{\mathrm{{hit}}}}={fmt(t_hit)}\neq{fmt(cob_wrong)}"),
+                close(False, "Dividing $\\log_2(M/A)$ by $\\beta$ skips the early force entirely"),
             ],
             [
                 "Evaluate the level at the kink.",
                 D(rf"f(\tau)=2A={fmt(2*A)},\qquad M=4A={fmt(M)}"),
-                D(rf"2A<4A"),
                 close(False, "At the switch the fund is still strictly below the target"),
             ],
         ],
@@ -241,37 +241,43 @@ def t01_hybrid_piecewise_hit() -> dict:
     )
 
 
-def t02_graph_two_populations() -> dict:
-    """Two populations cross; log meeting time; force comparison. 3 true."""
-    A0, kA, B0, kB = 1000.0, 0.03, 1500.0, 0.01
+def t02_graph_competing_cross() -> dict:
+    """Competing populations: meet, overtake, log-gap; two sign/identity traps. 3 true."""
+    A0, kA, B0, kB = 800.0, 0.04, 1200.0, 0.01
     t_meet = ln(B0 / A0) / (kA - kB)
-    tmax = 40.0
+    tmax = 50.0
     At = A0 * math.exp(kA * tmax)
     Bt = B0 * math.exp(kB * tmax)
-    # A: meet in (0,tmax) True; B: A(tmax)>B(tmax) True; C: kA>kB True;
-    # D: meet at ln(A0/B0)/(kA-kB) False (sign); E: ln(A/A0)=ln(B/B0) at tmax False
+    log_gap = ln(At / Bt)
+    # A meet in (0,tmax) T; B A(tmax)>B T; C log_gap = ln(A0/B0)+(kA-kB)tmax T
+    # D meet = ln(A0/B0)/(kA-kB) F; E doubling time of A equals t_meet F
+    t_double_A = ln(2) / kA
     key = [True, True, True, False, False]
     assert sum(key) == 3
-    assert 0 < t_meet < tmax and At > Bt and kA > kB
-    fig = competing_populations(A0, kA, B0, kB, tmax, "Competing populations A and B")
+    assert 0 < t_meet < tmax and At > Bt
+    assert abs(log_gap - (ln(A0 / B0) + (kA - kB) * tmax)) < 1e-9
+    assert abs(t_double_A - t_meet) > 1e-6
+
+    fig = competing_populations(A0, kA, B0, kB, tmax, "Competing A and B")
     overview = (
         f"$A(t)={fmt(A0)}e^{{{fmt(kA)}t}}$, $B(t)={fmt(B0)}e^{{{fmt(kB)}t}}$. "
         f"Meeting $t^*=\\ln(B_0/A_0)/(k_A-k_B)\\approx{fmt(t_meet)}$. "
-        f"At $t={fmt(tmax)}$: $A\\approx{fmt(At)}$, $B\\approx{fmt(Bt)}$."
+        f"At $t={fmt(tmax)}$: $\\ln(A/B)\\approx{fmt(log_gap)}$. "
+        f"Doubling clock of $A$ is $\\ln 2/k_A\\approx{fmt(t_double_A)}$."
     )
     return make_task(
-        title="Graph — crossing populations and the log meeting clock",
+        title="Graph — crossing populations, log-gap, and a flipped meeting formula",
         context=(
             f"Two populations follow $A(t)=A_0 e^{{k_A t}}$ and $B(t)=B_0 e^{{k_B t}}$ with "
             f"$A_0={fmt(A0)}$, $k_A={fmt(kA)}$, $B_0={fmt(B0)}$, $k_B={fmt(kB)}$. "
             f"The figure shows both paths on $[0,{fmt(tmax)}]$."
         ),
         statements=[
-            rf"The populations meet at some strictly positive time before $t={fmt(tmax)}$.",
-            rf"At $t={fmt(tmax)}$, population $A$ exceeds population $B$.",
-            r"The continuous force of $A$ exceeds that of $B$.",
+            rf"The populations meet at some time strictly inside $(0,{fmt(tmax)})$.",
+            rf"At $t={fmt(tmax)}$, population $A$ strictly exceeds population $B$.",
+            rf"$\ln(A({fmt(tmax)})/B({fmt(tmax)}))=\ln(A_0/B_0)+(k_A-k_B)\cdot{fmt(tmax)}$.",
             r"The meeting time equals $\ln(A_0/B_0)/(k_A-k_B)$.",
-            rf"Over $[0,{fmt(tmax)}]$, $\ln(A/A_0)$ equals $\ln(B/B_0)$.",
+            r"The meeting time equals the doubling time of $A$.",
         ],
         answer_key=key,
         bodies=[
@@ -287,20 +293,22 @@ def t02_graph_two_populations() -> dict:
                 close(True, "Population $A$ is strictly larger at the horizon"),
             ],
             [
-                "Compare forces directly.",
-                D(rf"k_A={fmt(kA)}>{fmt(kB)}=k_B"),
-                close(True, "Force $A$ dominates force $B$"),
+                "Log-quotient is affine in $t$.",
+                D(r"\ln\frac{A(t)}{B(t)}=\ln\frac{A_0}{B_0}+(k_A-k_B)t"),
+                D(rf"\ln\frac{{A({fmt(tmax)})}}{{B({fmt(tmax)})}}\approx{fmt(log_gap)}"),
+                close(True, "The log-gap identity holds at the horizon"),
             ],
             [
-                "The correct log ratio is $B_0/A_0$, not $A_0/B_0$.",
+                "The correct ratio is $B_0/A_0$, not $A_0/B_0$.",
                 D(rf"\frac{{\ln(A_0/B_0)}}{{k_A-k_B}}\approx{fmt(ln(A0/B0)/(kA-kB))}"),
-                D(rf"t^*\approx{fmt(t_meet)}"),
+                D(rf"t^*\\approx{fmt(t_meet)}"),
                 close(False, "Flipping the ratio flips the sign of the meeting time"),
             ],
             [
-                "Log-growth equals force times horizon.",
-                D(rf"k_A\cdot{fmt(tmax)}={fmt(kA*tmax)},\qquad k_B\cdot{fmt(tmax)}={fmt(kB*tmax)}"),
-                close(False, "The log-increments differ because the forces differ"),
+                "Doubling of $A$ solves $e^{k_A t}=2$, unrelated to the cross.",
+                D(rf"t_{{\times 2}}=\frac{{\ln 2}}{{k_A}}\approx{fmt(t_double_A)}"),
+                D(rf"t^*\\approx{fmt(t_meet)}\neq{fmt(t_double_A)}"),
+                close(False, "Doubling time of $A$ is not the meeting clock"),
             ],
         ],
         overview=overview,
@@ -309,72 +317,76 @@ def t02_graph_two_populations() -> dict:
     )
 
 
-def t03_table_recover_force() -> dict:
-    """Two-observation table → recover k via log → doubling / domain. 4 true."""
-    y1, t1, k = 800.0, 2.0, 0.05
-    t2 = 7.0
+def t03_table_recover_compare() -> dict:
+    """Two-obs table → recover k, then doubling / thresholds / false force. 4 true."""
+    y1, t1, k = 800.0, 1.0, ln(2) / 10.0  # doubles every 10
+    t2 = 6.0
     y2 = y1 * math.exp(k * (t2 - t1))
     dt = t2 - t1
     k_hat = ln(y2 / y1) / dt
     t_double = ln(2) / k_hat
-    y_plus10 = y1 * math.exp(k_hat * 10)
-    # A formula True; B double<20 True; C y(+10)>2 y1 True; D ln ratio>0.2 True; E k>0.06 False
+    y_plus15 = y1 * math.exp(k_hat * 15)
+    ln_ratio = ln(y2 / y1)
     key = [True, True, True, True, False]
     assert sum(key) == 4
     assert abs(k_hat - k) < 1e-12
+    assert t_double < 12 and y_plus15 > 2 * y1 and ln_ratio > 0.3
+    assert not (k_hat > 0.08)
+
     table = md_table(
         ["$t$", "$y(t)$"],
         [[f"${fmt(t1)}$", f"${fmt(y1)}$"], [f"${fmt(t2)}$", f"${fmt(y2,2)}$"]],
     )
-    fig = svg_exp(P0=y1, k=k, tmax=12, title="Recovered continuous path", mark_t=t2)
+    fig = svg_exp(P0=y1, k=k, tmax=16, title="Recovered continuous path", mark_t=t2)
     overview = (
-        f"From the table, $k=\\ln(y_2/y_1)/\\Delta t\\approx{fmt(k_hat,6)}$. "
-        f"Doubling $t_{{\\times 2}}\\approx{fmt(t_double)}$; "
-        f"ten years after $t_1$: $y\\approx{fmt(y_plus10)}$."
+        f"From the table, $k=\\ln(y_2/y_1)/\\Delta t={fmt(k_hat,6)}$. "
+        f"Doubling $t_{{\\times 2}}={fmt(t_double)}$; "
+        f"fifteen years after $t_1$: $y\\approx{fmt(y_plus15)}$; "
+        f"$\\ln(y_2/y_1)={fmt(ln_ratio,6)}$."
     )
     return make_task(
-        title="Table — recover continuous force, then log comparisons",
+        title="Table — recover force, then doubling and threshold comparisons",
         context=(
             "A continuous exponential path $y(t)=y_0 e^{kt}$ is observed at two times "
             "(table). Recover the force by logarithm, then judge the claims."
         ),
         statements=[
-            rf"The continuous force equals $\ln(y({fmt(t2)})/y({fmt(t1)}))/{fmt(dt)}$.",
-            r"The doubling time is strictly less than $20$ years.",
-            rf"Ten years after $t={fmt(t1)}$, the level exceeds twice $y({fmt(t1)})$.",
-            rf"$\ln(y({fmt(t2)})/y({fmt(t1)}))$ is strictly larger than $0.2$.",
-            r"The recovered force is strictly larger than $0.06$.",
+            rf"The continuous force equals $\ln\!\bigl(y({fmt(t2)})/y({fmt(t1)})\bigr)/{fmt(dt)}$.",
+            r"The doubling time is strictly less than $12$.",
+            rf"Fifteen years after $t={fmt(t1)}$, the level strictly exceeds $2\,y({fmt(t1)})$.",
+            rf"$\ln\!\bigl(y({fmt(t2)})/y({fmt(t1)})\bigr)$ is strictly larger than $0.3$.",
+            r"The recovered force is strictly larger than $0.08$.",
         ],
         answer_key=key,
         bodies=[
             [
                 "Start from $y_2=y_1 e^{k\\Delta t}$ and solve for $k$.",
-                D(rf"k=\frac{{\ln(y_2/y_1)}}{{\Delta t}}=\frac{{\ln(y({fmt(t2)})/y({fmt(t1)}))}}{{{fmt(dt)}}}"),
-                D(rf"k\approx{fmt(k_hat,6)}"),
+                D(rf"k=\frac{{\ln(y_2/y_1)}}{{\Delta t}}=\frac{{\ln\!\bigl(y({fmt(t2)})/y({fmt(t1)})\bigr)}}{{{fmt(dt)}}}"),
+                D(rf"k={fmt(k_hat,6)}"),
                 close(True, "The log-ratio formula is exactly the recovered force"),
             ],
             [
                 "Doubling solves $e^{kt}=2$.",
-                D(rf"t_{{\times 2}}=\frac{{\ln 2}}{{k}}\approx{fmt(t_double)}"),
-                D(rf"{fmt(t_double)}<20"),
-                close(True, "Doubling finishes before twenty years"),
+                D(rf"t_{{\times 2}}=\frac{{\ln 2}}{{k}}={fmt(t_double)}"),
+                D(rf"{fmt(t_double)}<12"),
+                close(True, "Doubling finishes before twelve time units"),
             ],
             [
-                "Propagate ten years from the first observation.",
-                D(rf"y(t_1+10)=y_1 e^{{10k}}\approx{fmt(y_plus10)}"),
+                "Propagate fifteen years from the first observation.",
+                D(rf"y(t_1+15)=y_1 e^{{15k}}\approx{fmt(y_plus15)}"),
                 D(rf"2y_1={fmt(2*y1)}"),
-                close(True, "The ten-year level exceeds twice the first observation"),
+                close(True, "Fifteen years push the level past a double"),
             ],
             [
                 "Evaluate the log-ratio between the tabulated points.",
-                D(rf"\ln(y_2/y_1)=k\cdot\Delta t\approx{fmt(k*dt)}"),
-                D(rf"{fmt(k*dt)}>0.2"),
-                close(True, "The log-ratio clears the $0.2$ threshold"),
+                D(rf"\ln(y_2/y_1)=k\cdot\Delta t={fmt(ln_ratio,6)}"),
+                D(rf"{fmt(ln_ratio,6)}>0.3"),
+                close(True, "The log-ratio clears the $0.3$ threshold"),
             ],
             [
-                "Compare the recovered force with $0.06$.",
-                D(rf"k\approx{fmt(k_hat,6)}\le 0.06"),
-                close(False, "The force equals $0.05$, which is not strictly above $0.06$"),
+                "Compare the recovered force with $0.08$.",
+                D(rf"k={fmt(k_hat,6)}<0.08"),
+                close(False, "The force equals $\\ln 2/10\\approx 0.0693$, below $0.08$"),
             ],
         ],
         overview=overview,
@@ -384,77 +396,77 @@ def t03_table_recover_force() -> dict:
     )
 
 
-def t04_symbolic_inverse_growth() -> dict:
-    """Inverse exp/log beside a growth model; domain of log. 5 true."""
-    # f(t)=P e^{kt}, g=f^{-1} on range, k>0,P>0
-    P, k = 200.0, 0.04
-    # Symbolic identities — all five carefully True
-    # A: g(y)=(1/k)ln(y/P) True
-    # B: g(f(t))=t True
-    # C: domain of g is y>0 True (since range of f is (0,∞))
-    # D: f(g(y))=y for y>0 True
-    # E: dg/dy = 1/(k y) True
+def t04_symbolic_nested_inverses() -> dict:
+    """Nested exp/log inverses beside a growth model — five hard but true claims. 5 true."""
+    P, k = 250.0, 0.05
+    # g = f^{-1}: g(y)=(1/k)ln(y/P)
+    # All five carefully True and multi-step:
+    # A: g(f(t))=t for all t
+    # B: f(g(y))=y for all y>0
+    # C: g(P e^{2})=2/k  (nested)
+    # D: (f circ g circ f)(t)=f(t)
+    # E: d/dy [k g(y)] = 1/y
     key = [True, True, True, True, True]
     assert sum(key) == 5
+    assert abs((1 / k) * ln((P * math.exp(k * 3)) / P) - 3) < 1e-12
+    assert abs((1 / k) * ln((P * math.exp(2)) / P) - 2 / k) < 1e-12
+
     fig = svg_curves(
         [
-            (lambda t, P=P, k=k: P * math.exp(k * t), "#8B5A2B", "f(t)"),
-            (lambda y, P=P, k=k: ln(y / P) / k if y > 0 else float("nan"), "#2F5D50", "g on range", "6 4"),
+            (lambda t, P=P, k=k: P * math.exp(k * t), "#8B5A2B", "f"),
+            (lambda y, P=P, k=k: (1 / k) * math.log(max(y, 1e-9) / P), "#2F5D50", "g on range", "6 4"),
         ],
-        xmin=0,
-        xmax=30,
-        title="Growth map and its inverse",
-        xlabel="t or y",
+        xmin=0.2,
+        xmax=40,
+        title="Growth f and inverse g (schematic)",
         ylabel="value",
     )
-    # Second curve as inverse doesn't plot well on same axes — use log curve instead
-    fig = svg_log(base=math.e, xmin=0.2, xmax=8, title="Log shape of the inverse clock", mark_x=math.e)
     overview = (
-        f"Growth $f(t)=P e^{{kt}}$ with $P={fmt(P)}$, $k={fmt(k)}>0$ is bijective "
-        f"$\\mathbb{{R}}\\to(0,\\infty)$. Inverse $g(y)=\\frac{{1}}{{k}}\\ln(y/P)$ "
-        f"satisfies $g\\circ f=\\mathrm{{id}}$ and $f\\circ g=\\mathrm{{id}}_{{(0,\\infty)}}$."
+        f"$f(t)=P e^{{kt}}$ with $P={fmt(P)}$, $k={fmt(k)}$; "
+        f"inverse $g(y)=\\frac{{1}}{{k}}\\ln(y/P)$ on $(0,\\infty)$. "
+        f"Nested check: $g(P e^{{2}})=2/k={fmt(2/k)}$."
     )
     return make_task(
-        title="Symbolic — inverse log clock beside an exponential stock",
+        title="Symbolic — nested exp∘log inverses of a continuous growth map",
         context=(
-            f"A stock follows $f(t)=P e^{{kt}}$ with parameters $P={fmt(P)}>0$ and "
-            f"$k={fmt(k)}>0$. Let $g$ denote the inverse of $f$ as a map "
-            f"$\\mathbb{{R}}\\to(0,\\infty)$."
+            f"Let $f(t)=P e^{{kt}}$ with $P={fmt(P)}>0$ and $k={fmt(k)}>0$, and let "
+            f"$g$ be the inverse of $f$ on the range of $f$."
         ),
         statements=[
-            r"$g(y)=\dfrac{1}{k}\ln(y/P)$ for every $y>0$.",
             r"$g(f(t))=t$ for every real $t$.",
-            r"The natural domain of $g$ is the positive half-line $(0,\infty)$.",
             r"$f(g(y))=y$ for every $y>0$.",
-            r"The derivative satisfies $g'(y)=\dfrac{1}{ky}$ for every $y>0$.",
+            r"$g(P e^{2})=2/k$.",
+            r"$(f\circ g\circ f)(t)=f(t)$ for every real $t$.",
+            r"$\dfrac{d}{dy}\bigl(k\,g(y)\bigr)=\dfrac{1}{y}$ for every $y>0$.",
         ],
         answer_key=key,
         bodies=[
             [
-                "Solve $y=P e^{kt}$ for $t$.",
-                D(r"\frac{y}{P}=e^{kt}"),
-                D(r"t=\frac{1}{k}\ln(y/P)"),
-                close(True, "That formula is exactly $g(y)$"),
+                "Invert $y=P e^{kt}$ by taking logs.",
+                D(r"g(y)=\frac{1}{k}\ln(y/P)"),
+                D(r"g(f(t))=\frac{1}{k}\ln(e^{kt})=t"),
+                close(True, "Left-inverse holds on the whole real line"),
             ],
             [
-                "Compose $g$ after $f$.",
-                D(r"g(f(t))=\frac{1}{k}\ln(P e^{kt}/P)=\frac{1}{k}\cdot kt=t"),
-                close(True, "Left inverse identity holds for all real $t$"),
-            ],
-            [
-                "Range of $f$ is $(0,\\infty)$ because $e^{kt}>0$ always.",
-                "An inverse is defined precisely on that range.",
-                close(True, "The domain of $g$ is $(0,\\infty)$"),
-            ],
-            [
-                "Compose $f$ after $g$ on $y>0$.",
+                "Compose the other way on the positive reals.",
                 D(r"f(g(y))=P\exp\bigl(\ln(y/P)\bigr)=y"),
-                close(True, "Right inverse identity holds on the positive half-line"),
+                close(True, "Right-inverse holds for every $y>0$"),
             ],
             [
-                "Differentiate $g(y)=k^{-1}(\\ln y-\\ln P)$.",
-                D(r"g'(y)=\frac{1}{k}\cdot\frac{1}{y}=\frac{1}{ky}"),
-                close(True, "The logarithmic derivative matches the claim"),
+                "Substitute the nested argument $P e^{2}$.",
+                D(r"g(P e^{2})=\frac{1}{k}\ln(e^{2})=\frac{2}{k}"),
+                close(True, "The nested exponential cancels under the log inverse"),
+            ],
+            [
+                "Associativity of composition with a two-sided inverse.",
+                D(r"(f\circ g\circ f)(t)=f\bigl(g(f(t))\bigr)=f(t)"),
+                close(True, "The middle $g\\circ f$ is the identity on the domain of $f$"),
+            ],
+            [
+                "Differentiate $k g(y)=\\ln(y/P)$.",
+                D(r"k g(y)=\ln y-\ln P"),
+                D(r"\frac{d}{dy}(k g(y))=\frac{1}{y}"),
+                close(True, "The scaled inverse differentiates to the reciprocal"),
             ],
         ],
         overview=overview,
@@ -463,139 +475,150 @@ def t04_symbolic_inverse_growth() -> dict:
     )
 
 
-def t05_parametric_nested_log() -> dict:
-    """Nested log constraints on parameters of an exp model. 1 true."""
-    # Model N(t)=N0 e^{kt} with constraints: ln(ln(N0))=0 ⇒ N0=e, and ln(k)=-ln 2 ⇒ k=1/2
-    # Wait want letters: ln(ln A)=0 ⇒ A=e; k=e^{-c} with c=ln 2 ⇒ k=1/2
-    A = math.e
-    c = ln(2)
-    k = math.exp(-c)  # 1/2
-    # Claims designed so only one is true:
-    # A: A=e True
-    # B: k=2 False (k=1/2)
-    # C: doubling time = ln2 / k = 2 ln 2 False claim says = ln 2
-    # D: N(2)=A e^{2k}=e * e = e^2, claim N(2)=A False
-    # E: ln(ln A)+ln k = 0 + (-ln2) < 0, claim =0 False
+def t05_parametric_family_one_survivor() -> dict:
+    """Parametric family y_a(t)=a e^{kt}; only one claim survives. 1 true."""
+    k = 0.025
+    a_star = math.exp(2)  # e^2
+    t_double = ln(2) / k
+    # A True: y_{e^2}(t_double)=2 e^2
+    # B False: for every a>0, y_a(1/k)=a e  — wait that's TRUE. Need false.
+    # B False: y_a(1/k)=a^e  (wrong)
+    # C False: argmax_a of y_a(t) at fixed t is a=1/k
+    # D False: ln y_a(t) - ln y_1(t) = ln a + k t  (extra kt)
+    # E False: doubling time depends on a
     key = [True, False, False, False, False]
     assert sum(key) == 1
-    assert abs(A - math.e) < 1e-12 and abs(k - 0.5) < 1e-12
-    t_double = ln(2) / k
+    y = a_star * math.exp(k * t_double)
+    assert abs(y - 2 * a_star) < 1e-9
+
+    fig = svg_curves(
+        [
+            (lambda t, a=1.0, k=k: a * math.exp(k * t), "#8B5A2B", "a=1"),
+            (lambda t, a=a_star, k=k: a * math.exp(k * t), "#2F5D50", r"a=e^2"),
+        ],
+        xmin=0,
+        xmax=t_double + 5,
+        title="Parametric family a e^{kt}",
+        ylabel="level",
+    )
     overview = (
-        f"Constraints $\\ln(\\ln A)=0$ and $\\ln k=-\\ln 2$ force $A=e$ and "
-        f"$k=1/2$. Then $t_{{\\times 2}}=\\ln 2/k=2\\ln 2\\approx{fmt(t_double)}$, "
-        f"and $N(2)=A e^{{2k}}=e^{2}$."
+        f"Family $y_a(t)=a e^{{{fmt(k)}t}}$. "
+        f"At $t=\\ln 2/k={fmt(t_double)}$, every path doubles its own $a$; "
+        f"in particular $y_{{e^2}}({fmt(t_double)})=2e^2$. "
+        f"Doubling time is independent of $a$."
     )
     return make_task(
-        title="Parametric — nested logs pinning an exponential stock",
+        title="Parametric — one surviving doubling claim in a force family",
         context=(
-            r"A stock $N(t)=A e^{kt}$ has unknown $A>1$ and $k>0$ constrained by "
-            r"the nested-log conditions $\ln(\ln A)=0$ and $\ln k=-\ln 2$."
+            f"For each $a>0$ define $y_a(t)=a e^{{kt}}$ with fixed force $k={fmt(k)}$. "
+            f"Let $t_{{\\times 2}}=\\ln 2/k$."
         ),
         statements=[
-            r"The level parameter satisfies $A=e$.",
-            r"The force satisfies $k=2$.",
-            r"The doubling time equals $\ln 2$ exactly.",
-            r"$N(2)=A$.",
-            r"$\ln(\ln A)+\ln k=0$.",
+            rf"$y_{{e^{{2}}}}(t_{{\times 2}})=2e^{{2}}$.",
+            rf"$y_a(1/k)=a^{{e}}$ for every $a>0$.",
+            rf"For fixed $t>0$, the level $y_a(t)$ is maximised at $a=1/k$.",
+            r"$\ln y_a(t)-\ln y_1(t)=\ln a+kt$ for every $a>0$ and every $t$.",
+            r"The doubling time $t_{\times 2}$ depends on the parameter $a$.",
         ],
         answer_key=key,
         bodies=[
             [
-                "Unwind the outer logarithm.",
-                D(r"\ln(\ln A)=0\implies \ln A=1\implies A=e"),
-                close(True, "The nested constraint pins $A=e$"),
+                "Every path doubles at the same clock, including $a=e^{2}$.",
+                D(rf"y_{{e^{{2}}}}(t_{{\times 2}})=e^{{2}}e^{{k\cdot(\ln 2/k)}}=e^{{2}}\cdot 2=2e^{{2}}"),
+                close(True, "The nested exponential cancels and leaves a double"),
             ],
             [
-                "Unwind the force constraint.",
-                D(r"\ln k=-\ln 2\implies k=e^{-\ln 2}=\tfrac12"),
-                D(r"k=\tfrac12\neq 2"),
-                close(False, "The force is one half, not two"),
+                "Evaluate the claimed power identity.",
+                D(rf"y_a(1/k)=a e^{{k\cdot(1/k)}}=a e"),
+                D(r"a e\neq a^{e}\quad(a\neq e)"),
+                close(False, "The path yields $ae$, not $a^{e}$"),
             ],
             [
-                "Doubling time is $\\ln 2/k$.",
-                D(rf"t_{{\times 2}}=\frac{{\ln 2}}{{1/2}}=2\ln 2\approx{fmt(t_double)}"),
-                D(rf"2\ln 2\neq\ln 2"),
-                close(False, "Doubling time is $2\\ln 2$, not $\\ln 2$"),
+                "At fixed $t$, $y_a(t)=a e^{kt}$ is strictly increasing in $a>0$.",
+                D(r"\partial_a y_a(t)=e^{kt}>0"),
+                close(False, "There is no maximiser at $a=1/k$ on $(0,\\infty)$"),
             ],
             [
-                "Evaluate at $t=2$.",
-                D(r"N(2)=A e^{2k}=e\cdot e^{2\cdot(1/2)}=e\cdot e=e^{2}"),
-                D(r"e^{2}\neq A=e"),
-                close(False, "After two years the stock is $e^{2}$, not $A$"),
+                "Subtract log-levels carefully.",
+                D(r"\ln y_a(t)-\ln y_1(t)=\ln a+kt-\ln 1-kt=\ln a"),
+                close(False, "The $kt$ terms cancel; the claim keeps a spurious $+kt$"),
             ],
             [
-                "Add the two constrained logs.",
-                D(r"\ln(\ln A)+\ln k=0+(-\ln 2)=-\ln 2\neq 0"),
-                close(False, "The sum equals $-\\ln 2$, not zero"),
+                "Doubling solves $e^{kt}=2$, independent of $a$.",
+                D(rf"t_{{\times 2}}=\frac{{\ln 2}}{{k}}={fmt(t_double)}"),
+                close(False, "The doubling clock does not depend on $a$"),
             ],
         ],
         overview=overview,
         stem_kind="parametric",
+        figure=fig,
     )
 
-
-def t06_piecewise_domain_side() -> dict:
-    """Piecewise growth with log solve and positivity side-conditions. 3 true."""
-    P0, k1, T, k2 = 500.0, 0.06, 3.0, -0.02
-    # late decay; target still reachable? f(T)=P0 e^{k1 T}; if target < f(T) hit in early regime
+def t06_piecewise_avg_and_threshold() -> dict:
+    """Piecewise continuous path: continuity, log-increment, avg force; two traps. 3 true."""
+    P0, k1, T, k2 = 600.0, 0.05, 8.0, 0.02
+    t = 20.0
     fT = P0 * math.exp(k1 * T)
-    target = P0 * math.exp(0.5 * k1 * T)  # mid-early: hit before switch
-    t_hit = ln(target / P0) / k1
-    # After switch, level falls; ask about eventual vs target
-    # A: hit before T True; B: f eventually < target after switch? as t→∞ f→0 so yes True
-    # C: k2>0 False; D: ln(f(T)/P0)=k1 T True; E: target > f(T) False
-    key = [True, True, False, True, False]
+    ft = fT * math.exp(k2 * (t - T))
+    log_inc = k1 * T + k2 * (t - T)
+    avg = log_inc / t
+    # A continuous at T T; B ln(f(t)/P0)=log_inc T; C avg > 0.03 T
+    # D f(t) > 3 P0 F (e^{0.64}≈1.90); E late force exceeds avg F
+    key = [True, True, True, False, False]
     assert sum(key) == 3
-    assert 0 < t_hit < T < 10 and target < fT and k2 < 0
-    fig = piecewise_kink(P0, k1, T, k2, 12, "Rise then decay kink")
+    assert abs(ln(ft / P0) - log_inc) < 1e-12
+    assert avg > 0.03 and ft < 3 * P0 and k2 < avg
+
+    fig = piecewise_kink(P0, k1, T, k2, t, "Piecewise continuous fund")
     overview = (
-        f"Early force $k_1={fmt(k1)}$ until $T={fmt(T)}$, then $k_2={fmt(k2)}<0$. "
-        f"$f(T)\\approx{fmt(fT)}$. Target $M={fmt(target)}$ is hit at "
-        f"$t=\\ln(M/P_0)/k_1\\approx{fmt(t_hit)}\\in(0,T)$."
+        f"Switch at $T={fmt(T)}$: $f(T)\\approx{fmt(fT)}$. "
+        f"At $t={fmt(t)}$, $\\ln(f/P_0)={fmt(log_inc)}$ so "
+        f"$\\bar k={fmt(avg,6)}$. Compare $3P_0={fmt(3*P0)}$ with "
+        f"$f(t)\\approx{fmt(ft)}$; late force $k_2={fmt(k2)}<\\bar k$."
     )
     return make_task(
-        title="Piecewise — log hit before the kink, with a decaying tail",
+        title="Piecewise — continuity, log-increment, and average-force tests",
         context=(
-            f"A level starts at $P_0={fmt(P0)}$, grows at force $k_1={fmt(k1)}$ on "
-            f"$[0,T]$ with $T={fmt(T)}$, then decays at force $k_2={fmt(k2)}$. "
-            f"A threshold $M={fmt(target)}$ is watched. The figure shows the kink."
+            f"A fund starts at $P_0={fmt(P0)}$, grows at force $k_1={fmt(k1)}$ on "
+            f"$[0,{fmt(T)}]$, then at force $k_2={fmt(k2)}$. Read the path at "
+            f"$t={fmt(t)}$ (figure)."
         ),
         statements=[
-            rf"The threshold $M$ is crossed at some time strictly before $t={fmt(T)}$.",
-            r"Because $k_2<0$, the path eventually falls back below $M$ after the switch.",
-            r"The late force $k_2$ is strictly positive.",
-            rf"$\ln(f({fmt(T)})/P_0)$ equals $k_1 T$ exactly.",
-            rf"The threshold $M$ exceeds the switch level $f({fmt(T)})$.",
+            rf"The path is continuous at the switch $t={fmt(T)}$.",
+            rf"$\ln(f({fmt(t)})/P_0)$ equals $k_1 T+k_2(t-T)$ exactly.",
+            rf"The path-average force $\bar k=\ln(f({fmt(t)})/P_0)/{fmt(t)}$ exceeds $0.03$.",
+            rf"At $t={fmt(t)}$ the fund exceeds $3P_0$.",
+            r"The late force $k_2$ strictly exceeds the path-average force $\bar k$.",
         ],
         answer_key=key,
         bodies=[
             [
-                "Solve in the early regime $P_0 e^{k_1 t}=M$.",
-                D(rf"t_{{\mathrm{{hit}}}}=\frac{{\ln(M/P_0)}}{{k_1}}\approx{fmt(t_hit)}"),
-                D(rf"0<{fmt(t_hit)}<{fmt(T)}"),
-                close(True, "The first crossing is before the kink"),
+                "Left and right limits share the matching factor $e^{k_1 T}$.",
+                D(r"f(T^{-})=P_0 e^{k_1 T},\qquad f(T^{+})=P_0 e^{k_1 T}e^{k_2\cdot 0}"),
+                close(True, "Both sides agree, so the path is continuous at the switch"),
             ],
             [
-                "After the switch the level is $f(T)e^{k_2(t-T)}$ with $k_2<0$.",
-                "As $t\\to\\infty$ this tends to $0$, which lies below $M$.",
-                "By continuity it must cross $M$ again while falling.",
-                close(True, "The decaying tail re-crosses $M$ from above"),
+                "Logs add across the kink.",
+                D(rf"f(t)=P_0 e^{{k_1 T}}e^{{k_2(t-T)}}"),
+                D(rf"\ln(f(t)/P_0)=k_1 T+k_2(t-T)={fmt(log_inc)}"),
+                close(True, "The log-increment formula is exact"),
             ],
             [
-                "Read the late force from the stem.",
-                D(rf"k_2={fmt(k2)}<0"),
-                close(False, "The late force is negative, not positive"),
+                "Average force is log-increment over elapsed time.",
+                D(rf"\bar k=\frac{{{fmt(log_inc)}}}{{{fmt(t)}}}={fmt(avg,6)}>0.03"),
+                close(True, "The average clears the $0.03$ threshold"),
             ],
             [
-                "Only the early force has acted by the switch.",
-                D(rf"\ln(f(T)/P_0)=k_1 T={fmt(k1*T)}"),
-                close(True, "The log-increment at the kink is exactly $k_1 T$"),
+                "Compare the level with $3P_0$.",
+                D(rf"f(t)=P_0 e^{{{fmt(log_inc)}}}\\approx{fmt(ft)}"),
+                D(rf"3P_0={fmt(3*P0)}"),
+                close(False, "The fund is still below three times its start"),
             ],
             [
-                "Compare threshold and switch level.",
-                D(rf"M={fmt(target)},\qquad f(T)\approx{fmt(fT)}"),
-                D(rf"M<f(T)"),
-                close(False, "The threshold lies strictly below the switch level"),
+                "Compare $k_2$ with the path average.",
+                D(rf"k_2={fmt(k2)},\qquad \bar k={fmt(avg,6)}"),
+                D(rf"{fmt(k2)}<{fmt(avg,6)}"),
+                close(False, "The late force sits below the path average"),
             ],
         ],
         overview=overview,
@@ -604,208 +627,213 @@ def t06_piecewise_domain_side() -> dict:
     )
 
 
-def t07_nested_log_exp_params() -> dict:
-    """Nested log on growth parameters; compare hitting times. 2 true."""
-    # P(t)=P0 b^{t} with b=e^{k}, and ln(ln b)=ln(ln e^{0.05}) — use b=e^{1/e}? 
-    # Simpler: require ln(k)=-2 and ln(P0)=3 ⇒ k=e^{-2}, P0=e^3
-    P0 = math.exp(3)
-    k = math.exp(-2)
-    target = P0 * math.e  # one e-fold
-    t_hit = ln(target / P0) / k  # 1/k = e^2
-    # A: P0=e^3 True; B: k=e^{-2} True; C: t_hit=e^{-2} False (is e^2);
-    # D: ln(target/P0)=k False (=1); E: b:=e^k satisfies ln b = e^{-2} True — wait that's same as k
-    # Redesign for exactly 2 true: A True, B True, C F, D F, E F
+def t07_nested_exp_log_mash() -> dict:
+    """Nested exp∘log and log∘exp with growth side-conditions. 2 true."""
+    # Let u = exp(ln(8)/3) = 2; v = ln(exp(5)/e^2) = 5-2 = 3
+    # Growth: P(t)=100 e^{0.02 t}
+    # A True: exp(ln(8)/3)=2
+    # B True: ln(P(50)/100)=1  (0.02*50=1)
+    # C False: ln(exp(5)/e^2)=5/2
+    # D False: exp(ln(P(t)))/P(0) = e^{kt}/P(0) wait
+    # D False: log_2(exp(ln 8)) = ln 8  (should be 3)
+    # E False: nested exp(ln(ln(e^e))) = e
     key = [True, True, False, False, False]
     assert sum(key) == 2
-    assert abs(t_hit - math.exp(2)) < 1e-9
+    assert abs(math.exp(ln(8) / 3) - 2) < 1e-12
+    assert abs(0.02 * 50 - 1) < 1e-12
+    assert abs(ln(math.exp(5) / math.exp(2)) - 3) < 1e-12
+    assert abs(math.log(math.exp(ln(8)), 2) - 3) < 1e-12
+    nested = math.exp(ln(ln(math.exp(math.e))))  # exp(ln(e))=e
+    assert abs(nested - math.e) < 1e-12
+
+    fig = svg_exp(P0=100, k=0.02, tmax=60, title="Side growth P(t)=100 e^{0.02 t}", mark_t=50)
     overview = (
-        f"Constraints $\\ln P_0=3$ and $\\ln k=-2$ give $P_0=e^{3}$, $k=e^{{-2}}$. "
-        f"One $e$-fold needs $t=1/k=e^{2}\\approx{fmt(t_hit)}$."
+        "Nested cancellations: $\\exp(\\ln 8/3)=2$, "
+        "$\\ln(P(50)/100)=1$, $\\ln(e^{5}/e^{2})=3$, "
+        "$\\log_2(e^{\\ln 8})=3$, $\\exp(\\ln(\\ln e^{e}))=e$."
     )
     return make_task(
-        title="Nested — log constraints on an exponential hitting clock",
+        title="Nested — exp∘log / log∘exp mashup beside a growth clock",
         context=(
-            r"A balance $P(t)=P_0 e^{kt}$ has $P_0>1$ and $k>0$ fixed by "
-            r"$\ln P_0=3$ and $\ln k=-2$. The target is one $e$-fold above $P_0$, "
-            r"namely $M=e\cdot P_0$."
+            r"Work with nested exponential and logarithmic compositions, and with the "
+            r"side path $P(t)=100 e^{0.02 t}$ (figure)."
         ),
         statements=[
-            r"$P_0=e^{3}$.",
-            r"$k=e^{-2}$.",
-            r"The hitting time of $M$ equals $e^{-2}$.",
-            r"$\ln(M/P_0)$ equals $k$.",
-            r"The discrete annual base $e^{k}$ equals $e^{2}$.",
+            r"$\exp(\ln 8/3)=2$.",
+            r"$\ln(P(50)/100)=1$.",
+            r"$\ln(e^{5}/e^{2})=5/2$.",
+            r"$\log_2\!\bigl(\exp(\ln 8)\bigr)=\ln 8$.",
+            r"$\exp\!\bigl(\ln(\ln e^{e})\bigr)=e^{2}$.",
         ],
         answer_key=key,
         bodies=[
             [
-                "Exponentiate $\\ln P_0=3$.",
-                D(r"P_0=e^{3}"),
-                close(True, "The level parameter is $e^{3}$"),
+                "Change-of-base style nest: $\\exp(c\\ln a)=a^{c}$.",
+                D(r"\exp(\ln 8/3)=8^{1/3}=2"),
+                close(True, "The nest collapses to the cube root of eight"),
             ],
             [
-                "Exponentiate $\\ln k=-2$.",
-                D(r"k=e^{-2}"),
-                close(True, "The force is $e^{-2}$"),
+                "Log-increment of the side path is force times time.",
+                D(r"\ln(P(50)/100)=0.02\cdot 50=1"),
+                close(True, "Fifty years at force $0.02$ produce log-increment $1$"),
             ],
             [
-                "Hitting one $e$-fold solves $e^{kt}=e$, so $t=1/k$.",
-                D(rf"t=e^{{2}}\approx{fmt(t_hit)}\neq e^{{-2}}"),
-                close(False, "The hitting time is $e^{2}$, not $e^{-2}$"),
+                "Expand the quotient of exponentials.",
+                D(r"\ln(e^{5}/e^{2})=5-2=3\neq 5/2"),
+                close(False, "The nest yields $3$, not $5/2$"),
             ],
             [
-                "By construction $M/P_0=e$, so the log-ratio is $1$.",
-                D(r"\ln(M/P_0)=1,\qquad k=e^{-2}"),
-                D(r"1\neq e^{-2}"),
-                close(False, "The log-ratio is $1$, not equal to $k$"),
+                "Inner $\\exp\\circ\\ln$ cancels before the outer base-$2$ log.",
+                D(r"\log_2(\exp(\ln 8))=\log_2 8=3"),
+                D(r"3\neq\ln 8"),
+                close(False, "The value is $3$, not $\\ln 8$"),
             ],
             [
-                "The equivalent discrete base is $e^{k}=e^{e^{-2}}$, not $e^{2}$.",
-                D(r"e^{k}=e^{e^{-2}}\neq e^{2}"),
-                close(False, "The base is far smaller than $e^{2}$"),
+                "Peel the nest from the inside.",
+                D(r"\ln e^{e}=e,\qquad \ln(\ln e^{e})=\ln e=1"),
+                D(r"\exp(1)=e\neq e^{2}"),
+                close(False, "The nest equals $e$, not $e^{2}$"),
             ],
         ],
         overview=overview,
         stem_kind="nested",
+        figure=fig,
     )
 
 
-def t08_text_dense_microtraps() -> dict:
-    """Five dense micro-traps mixing cont/disc, elasticity, logs. 4 true."""
-    r, t = 0.05, 10.0
-    # Cont vs disc: e^r > 1+r; ln(1+r)<r
-    # Elasticity b=1.2 with price force g=0.03 ⇒ q force = -0.036
-    b, g = 1.2, 0.03
-    qf = -b * g
-    # A: e^r > 1+r True; B: ln(1+r)<r True; C: q force = -bg True;
-    # D: |qf|>0.05 False (0.036); E: (1+r)^t < e^{rt} True
-    key = [True, True, True, False, True]
+def t08_text_dense_clocks() -> dict:
+    """Dense text: cont vs disc clocks, change-of-base inequality, hit times. 4 true."""
+    P, k, r = 1000.0, 0.04, 0.04
+    # continuous double td=ln2/k; discrete tn=ln2/ln(1+r)
+    td = ln(2) / k
+    tn = ln(2) / ln(1 + r)
+    # cont hits 2P earlier than disc because k > ln(1+r)
+    # A True: td < tn
+    # B True: k > ln(1+r)
+    # C True: cont level at tn exceeds 2P? e^{k tn} = e^{k ln2 / ln(1+r)} > 2 since k>ln(1+r)
+    # D True: log_2(e^{k t}) = k t / ln2
+    # E False: disc hits 2P at t=ln2/k
+    key = [True, True, True, True, False]
     assert sum(key) == 4
-    assert math.exp(r) > 1 + r and ln(1 + r) < r and abs(qf) < 0.05
-    assert (1 + r) ** t < math.exp(r * t)
+    assert td < tn and k > ln(1 + r)
+    cont_at_tn = P * math.exp(k * tn)
+    assert cont_at_tn > 2 * P
+
+    fig = two_models(P, k, 1 + r, tn + 5, "Continuous vs discrete doubling race")
     overview = (
-        f"Micro-facts: $e^{{r}}>1+r$ and $\\ln(1+r)<r$ for $r={fmt(r)}$; "
-        f"quantity force $-bg={fmt(qf,6)}$; discrete "
-        f"$(1+r)^{t}<e^{{rt}}$ at $t={fmt(t)}$."
+        f"Continuous doubling $t_d=\\ln 2/k\\approx{fmt(td)}$; "
+        f"discrete $t_n=\\ln 2/\\ln(1+r)\\approx{fmt(tn)}$. "
+        f"Since $k>\\ln(1+r)$, continuous leads; at $t_n$ continuous level "
+        f"$\\approx{fmt(cont_at_tn)}$."
     )
     return make_task(
-        title="Text-dense — five entangled exp/log micro-traps",
+        title="Text-dense — continuous vs discrete clocks and a change-of-base identity",
         context=(
-            f"Fix a nominal rate $r={fmt(r)}$ and horizon $t={fmt(t)}$. Separately, "
-            f"prices drift at force $g={fmt(g)}$ while demand has constant elasticity "
-            f"magnitude $b={fmt(b)}$, so $\\ln Q=C-b\\ln P$."
+            f"A principal $P={fmt(P)}$ may grow continuously at force $k={fmt(k)}$ "
+            f"or discretely by factor $(1+r)$ each year with $r={fmt(r)}$. "
+            f"Let $t_d$ be continuous doubling time and $t_n$ discrete doubling time."
         ),
         statements=[
-            rf"$e^{{{fmt(r)}}}$ is strictly larger than $1+{fmt(r)}$.",
-            rf"$\ln(1+{fmt(r)})$ is strictly smaller than ${fmt(r)}$.",
-            rf"Quantity's continuous force equals $-{fmt(b)}\cdot{fmt(g)}$.",
-            r"The absolute size of that quantity force exceeds $0.05$.",
-            rf"At horizon $t={fmt(t)}$, annual compounding $(1+r)^{{t}}$ stays strictly below continuous $e^{{rt}}$.",
+            r"$t_d$ is strictly smaller than $t_n$.",
+            r"$k$ is strictly larger than $\ln(1+r)$.",
+            r"At time $t_n$, the continuous path already strictly exceeds $2P$.",
+            r"$\log_2(e^{kt})=\dfrac{kt}{\ln 2}$ for every $t$.",
+            r"The discrete path reaches $2P$ at time $t=\ln 2/k$.",
         ],
         answer_key=key,
         bodies=[
             [
-                "The exponential series $e^{r}=1+r+r^{2}/2+\\cdots$ exceeds $1+r$ for $r>0$.",
-                D(rf"e^{{{fmt(r)}}}\\approx{fmt(math.exp(r),6)}>1+{fmt(r)}"),
-                close(True, "Continuous one-year growth beats the linear nominal"),
+                "Write both doubling clocks.",
+                D(rf"t_d=\frac{{\ln 2}}{{k}}\approx{fmt(td)},\qquad t_n=\frac{{\ln 2}}{{\ln(1+r)}}\\approx{fmt(tn)}"),
+                D(rf"{fmt(td)}<{fmt(tn)}"),
+                close(True, "Continuous doubling finishes first"),
             ],
             [
-                "Strict concavity of $\\ln$ at $1$ gives $\\ln(1+r)<r$ for $r>0$.",
-                D(rf"\ln(1+{fmt(r)})\\approx{fmt(ln(1+r),6)}<{fmt(r)}"),
-                close(True, "The log-linearisation overstates the log-return"),
+                "Compare force with the discrete log-step.",
+                D(rf"\ln(1+r)=\ln(1.04)\\approx{fmt(ln(1+r),6)}"),
+                D(rf"k={fmt(k)}>{fmt(ln(1+r),6)}"),
+                close(True, "Continuous force exceeds the discrete log-step"),
             ],
             [
-                "Differentiate $\\ln Q=C-b\\ln P$ in time.",
-                D(r"\frac{d\ln Q}{dt}=-b\frac{d\ln P}{dt}=-bg"),
-                D(rf"=-{fmt(b)}\cdot{fmt(g)}={fmt(qf,6)}"),
-                close(True, "Quantity force is exactly $-bg$"),
+                "Evaluate the continuous path at the discrete doubling clock.",
+                D(rf"P e^{{k t_n}}=P\exp\!\bigl(k\ln 2/\ln(1+r)\bigr)\\approx{fmt(cont_at_tn)}"),
+                D(rf"{fmt(cont_at_tn)}>2P={fmt(2*P)}"),
+                close(True, "Continuous growth has already cleared a double by $t_n$"),
             ],
             [
-                "Compare $|-bg|$ with $0.05$.",
-                D(rf"|{fmt(qf,6)}|={fmt(abs(qf),6)}\le 0.05"),
-                close(False, "The absolute force is $0.036$, not above $0.05$"),
+                "Change of base on an exponential.",
+                D(r"\log_2(e^{kt})=\frac{\ln(e^{kt})}{\ln 2}=\frac{kt}{\ln 2}"),
+                close(True, "The change-of-base identity holds for every $t$"),
             ],
             [
-                "Because $1+r<e^{r}$, raising both sides to power $t>0$ preserves the inequality.",
-                D(rf"(1+r)^{{t}}\\approx{fmt((1+r)**t)},\qquad e^{{rt}}\\approx{fmt(math.exp(r*t))}"),
-                close(True, "Annual compounding trails continuous compounding"),
+                "Discrete doubling uses $\\ln(1+r)$, not $k$.",
+                D(rf"\frac{{\ln 2}}{{k}}\approx{fmt(td)}\neq t_n\\approx{fmt(tn)}"),
+                close(False, "The continuous doubling clock is not the discrete hitting time"),
             ],
         ],
         overview=overview,
         stem_kind="text_dense",
+        figure=fig,
     )
 
 
-def t09_rebuild_from_observations() -> dict:
-    """Rebuild continuous force from two obs; compare hitting clocks. 5 true."""
-    y0, y1, t1 = 1200.0, 1200.0 * math.exp(0.03 * 6), 6.0
-    k = ln(y1 / y0) / t1
-    T_double = ln(2) / k
-    T_triple = ln(3) / k
-    # All true carefully:
-    # A: k=ln(y1/y0)/t1 True
-    # B: T_double < 25 True
-    # C: T_triple > T_double True
-    # D: y(T_double)=2 y0 True by def
-    # E: semi-log slope equals k True
+def t09_rebuild_from_three_obs() -> dict:
+    """Rebuild force from three consistent observations; all five true. 5 true."""
+    P0, k = 500.0, 0.03
+    ts = [0.0, 4.0, 10.0]
+    ys = [P0 * math.exp(k * t) for t in ts]
+    k01 = ln(ys[1] / ys[0]) / (ts[1] - ts[0])
+    k12 = ln(ys[2] / ys[1]) / (ts[2] - ts[1])
+    k02 = ln(ys[2] / ys[0]) / (ts[2] - ts[0])
+    # A k01=k T; B k12=k T; C k01=k12 T; D k02=k T; E y2/y0 = e^{k*10} T
     key = [True, True, True, True, True]
     assert sum(key) == 5
-    assert T_double < 25 and T_triple > T_double
-    fig = semi_log_exp(y0, k, 30, "Semi-log rebuild of the force")
+    assert abs(k01 - k) < 1e-12 and abs(k12 - k) < 1e-12 and abs(k02 - k) < 1e-12
+
     table = md_table(
-        ["$t$", "$y(t)$", "$\\ln y(t)$"],
-        [
-            ["$0$", f"${fmt(y0)}$", f"${fmt(ln(y0),4)}$"],
-            [f"${fmt(t1)}$", f"${fmt(y1,2)}$", f"${fmt(ln(y1),4)}$"],
-        ],
+        ["$t$", "$y(t)$"],
+        [[f"${fmt(t)}$", f"${fmt(y,2)}$"] for t, y in zip(ts, ys)],
     )
+    fig = svg_exp(P0=P0, k=k, tmax=12, title="Three-observation rebuild", mark_t=ts[2])
     overview = (
-        f"Rebuilt force $k=\\ln(y_1/y_0)/t_1\\approx{fmt(k,6)}$. "
-        f"Doubling $\\approx{fmt(T_double)}$, tripling $\\approx{fmt(T_triple)}$. "
-        f"Semi-log slope equals $k$."
+        f"Three samples of $y(t)=500 e^{{0.03 t}}$ rebuild the same force: "
+        f"$k_{{01}}=k_{{12}}=k_{{02}}={fmt(k)}$. "
+        f"Outer ratio $y({fmt(ts[2])})/y(0)=e^{{{fmt(k*ts[2])}}}$."
     )
     return make_task(
-        title="Rebuild — force from two observations, then multiple hitting clocks",
+        title="Rebuild — three consistent samples force a unique continuous $k$",
         context=(
-            f"Only two observations of a continuous exponential stock are known "
-            f"(table): $y(0)={fmt(y0)}$ and $y({fmt(t1)})\\approx{fmt(y1,2)}$. "
-            f"Rebuild the force, then compare doubling and tripling clocks. "
-            f"The figure is the semi-log view."
+            "A continuous exponential path is observed at three times (table). "
+            "Rebuild pairwise forces and compare."
         ),
         statements=[
-            rf"The continuous force equals $\ln(y({fmt(t1)})/y(0))/{fmt(t1)}$.",
-            r"Doubling time is strictly less than $25$ years.",
-            r"Tripling time is strictly larger than doubling time.",
-            r"At the doubling time the level is exactly twice $y(0)$.",
-            r"On a semi-log plot of $\ln y$ against $t$, the slope equals the rebuilt force.",
+            rf"The force from $t={fmt(ts[0])}$ to $t={fmt(ts[1])}$ equals $0.03$.",
+            rf"The force from $t={fmt(ts[1])}$ to $t={fmt(ts[2])}$ equals $0.03$.",
+            r"Those two adjacent rebuilt forces are equal.",
+            rf"The force from $t={fmt(ts[0])}$ to $t={fmt(ts[2])}$ equals $0.03$.",
+            rf"$y({fmt(ts[2])})/y({fmt(ts[0])})=e^{{0.3}}$.",
         ],
         answer_key=key,
         bodies=[
             [
-                "Two-point log recovery.",
-                D(rf"k=\frac{{\ln(y_1/y_0)}}{{t_1}}\approx{fmt(k,6)}"),
-                close(True, "That quotient is the rebuilt continuous force"),
+                D(rf"k_{{01}}=\frac{{\ln(y({fmt(ts[1])})/y({fmt(ts[0])}))}}{{{fmt(ts[1]-ts[0])}}}={fmt(k01,6)}"),
+                close(True, "Adjacent rebuild returns force $0.03$"),
             ],
             [
-                "Doubling clock.",
-                D(rf"T_{{\times 2}}=\frac{{\ln 2}}{{k}}\approx{fmt(T_double)}"),
-                D(rf"{fmt(T_double)}<25"),
-                close(True, "Doubling finishes before twenty-five years"),
+                D(rf"k_{{12}}=\frac{{\ln(y({fmt(ts[2])})/y({fmt(ts[1])}))}}{{{fmt(ts[2]-ts[1])}}}={fmt(k12,6)}"),
+                close(True, "Next adjacent rebuild returns the same force"),
             ],
             [
-                "Because $\\ln 3>\\ln 2$ and $k>0$, tripling takes longer.",
-                D(rf"T_{{\times 3}}=\frac{{\ln 3}}{{k}}\approx{fmt(T_triple)}>{fmt(T_double)}"),
-                close(True, "Tripling strictly follows doubling"),
+                D(rf"k_{{01}}={fmt(k01,6)}=k_{{12}}"),
+                close(True, "Equal adjacent forces certify a single continuous $k$"),
             ],
             [
-                "By definition of the doubling time under $y=y_0 e^{kt}$.",
-                D(r"y(T_{\times 2})=y_0 e^{k\cdot(\ln 2)/k}=2y_0"),
-                close(True, "The level is exactly double at that clock"),
+                D(rf"k_{{02}}=\frac{{\ln(y({fmt(ts[2])})/y({fmt(ts[0])}))}}{{{fmt(ts[2]-ts[0])}}}={fmt(k02,6)}"),
+                close(True, "Outer rebuild agrees with the adjacent ones"),
             ],
             [
-                "Write $\\ln y(t)=\\ln y_0+kt$.",
-                "The slope in the $(t,\\ln y)$-plane is exactly $k$.",
-                close(True, "Semi-log slope recovers the same force"),
+                D(rf"\frac{{y({fmt(ts[2])})}}{{y({fmt(ts[0])})}}=e^{{0.03\cdot 10}}=e^{{0.3}}"),
+                close(True, "Outer ratio is exactly $e^{0.3}$"),
             ],
         ],
         overview=overview,
@@ -815,72 +843,68 @@ def t09_rebuild_from_observations() -> dict:
     )
 
 
-def t10_applied_gdp_letters() -> dict:
-    """GDP per capita force with log recovery — letters dominant. 1 true."""
-    Y0, g, N0, p, t = 100.0, 0.03, 10.0, 0.01, 20.0
+def t10_applied_gdp_one_survivor() -> dict:
+    """GDP per capita letters; only one claim true. 1 true."""
+    Y0, g, N0, p, t = 200.0, 0.04, 10.0, 0.01, 25.0
+    y0 = Y0 / N0
     k = g - p
-    dln_y = k * t
-    # A: Δln y = (g-p)t True
-    # B: Δln y > 0.5 False (0.4)
-    # C: per capita force = g+p False
-    # D: Δln Y = g t > 0.5 True? gt=0.6>0.5 — but we need only 1 true total
-    # Redesign: only A true
-    # B: dln_y > 0.5 False (0.4)
-    # C: force = g+p False
-    # D: Δln Y < 0.5 False (0.6 not <)
-    # E: k > 0.025 False (0.02)
+    y_t = y0 * math.exp(k * t)
+    # A True: k = g-p = 0.03
+    # B False: Δln y = g t  (actually k t)
+    # C False: y(t)/y0 = e^{g t}
+    # D False: Δln Y - Δln N = g+p  (actually g-p)
+    # E False: per-capita doubles by t=25 (needs ln2/k≈23.1 — wait e^{0.75}≈2.11 >2 so TRUE)
+    # Adjust: claim doubles by t=20: e^{0.6}≈1.82 <2 False. Good.
     key = [True, False, False, False, False]
     assert sum(key) == 1
-    assert abs(dln_y - 0.4) < 1e-12 and abs(g * t - 0.6) < 1e-12 and abs(k - 0.02) < 1e-12
-    fig = gdp_per_capita(Y0 * 1000, g, N0, p, t, "GDP vs per capita paths")
+    assert abs(k - 0.03) < 1e-12
+    assert abs(k * t - (g - p) * t) < 1e-12
+    assert y0 * math.exp(k * 20) < 2 * y0
+
+    fig = gdp_per_capita(Y0 * 1000, g, N0, p, t, "GDP and per-capita paths")
     overview = (
         f"Per-capita force $k=g-p={fmt(k)}$. Over $t={fmt(t)}$, "
-        f"$\\Delta\\ln y={fmt(dln_y)}$, $\\Delta\\ln Y={fmt(g*t)}$, "
-        f"$\\Delta\\ln N={fmt(p*t)}$."
+        f"$\\Delta\\ln y={fmt(k*t)}$. Doubling needs $\\ln 2/k\\approx{fmt(ln(2)/k)}$; "
+        f"at $t=20$ the per-capita factor is only $e^{{{fmt(k*20)}}}$."
     )
     return make_task(
-        title="Applied letters — GDP per capita force via logs",
+        title="Applied letters — GDP per-capita force with four tempting misreads",
         context=(
-            f"Aggregate GDP and population follow $Y(t)=Y_0 e^{{gt}}$ and "
-            f"$N(t)=N_0 e^{{pt}}$ with $Y_0={fmt(Y0)}$, $g={fmt(g)}$, "
-            f"$N_0={fmt(N0)}$, $p={fmt(p)}$. Per capita is $y=Y/N$. "
-            f"Horizon $t={fmt(t)}$. The figure tracks both scales."
+            f"GDP follows $Y(t)=Y_0 e^{{gt}}$ and population $N(t)=N_0 e^{{pt}}$ with "
+            f"$Y_0={fmt(Y0)}$, $g={fmt(g)}$, $N_0={fmt(N0)}$, $p={fmt(p)}$. "
+            f"Per-capita output is $y=Y/N$. Horizon $t={fmt(t)}$."
         ),
         statements=[
-            rf"The change in log GDP per capita over ${fmt(t)}$ years equals $(g-p)t$.",
-            r"That log change exceeds $0.5$.",
-            r"The per-capita continuous force equals $g+p$.",
-            rf"Log aggregate GDP rises by less than $0.5$ over the ${fmt(t)}$-year horizon.",
-            r"The per-capita force is strictly larger than $0.025$.",
+            r"The per-capita continuous force equals $g-p$.",
+            rf"Over the horizon, $\Delta\ln y$ equals $g\cdot{fmt(t)}$.",
+            rf"$y({fmt(t)})/y(0)=e^{{g\cdot{fmt(t)}}}$.",
+            r"$\Delta\ln Y-\Delta\ln N=g+p$ over any horizon.",
+            r"Per-capita output doubles on or before $t=20$.",
         ],
         answer_key=key,
         bodies=[
             [
-                "Logs turn the quotient into a difference of forces.",
-                D(r"\ln y(t)=\ln(Y_0/N_0)+(g-p)t"),
-                D(rf"\Delta\ln y=(g-p)t={fmt(dln_y)}"),
-                close(True, "The log-per-capita change is exactly $(g-p)t$"),
+                "Per-capita log-derivative is the difference of forces.",
+                D(r"\frac{d}{dt}\ln y=g-p"),
+                close(True, "The per-capita force is exactly $g-p$"),
             ],
             [
-                "Compare with $0.5$.",
-                D(rf"\Delta\ln y={fmt(dln_y)}\le 0.5"),
-                close(False, "The log change is $0.4$, not above $0.5$"),
+                D(rf"\Delta\ln y=(g-p)t={fmt(k*t)}\neq g t={fmt(g*t)}"),
+                close(False, "Population force must be subtracted"),
             ],
             [
-                "Per capita is a ratio, so forces subtract.",
-                D(rf"k_y=g-p={fmt(k)}\neq g+p={fmt(g+p)}"),
-                close(False, "Adding forces would track $Y\\cdot N$, not $Y/N$"),
+                D(rf"y(t)/y(0)=e^{{(g-p)t}}=e^{{{fmt(k*t)}}}\neq e^{{gt}}"),
+                close(False, "The exponent is $k=g-p$, not $g$"),
             ],
             [
-                "Aggregate log-growth is $gt$.",
-                D(rf"\Delta\ln Y=gt={fmt(g*t)}"),
-                D(rf"{fmt(g*t)}\not< 0.5"),
-                close(False, "Log GDP rises by $0.6$, which is not less than $0.5$"),
+                D(r"\Delta\ln Y-\Delta\ln N=gt-pt=(g-p)"),
+                D(rf"g-p={fmt(k)}\neq g+p={fmt(g+p)}"),
+                close(False, "Differences of log-increments give $g-p$, not $g+p$"),
             ],
             [
-                "Compare $k=g-p$ with $0.025$.",
-                D(rf"k={fmt(k)}\le 0.025"),
-                close(False, "The per-capita force equals $0.02$"),
+                D(rf"y(20)/y(0)=e^{{20k}}=e^{{{fmt(20*k)}}}\\approx{fmt(math.exp(20*k))}"),
+                D(r"<2"),
+                close(False, "At $t=20$ per-capita output has not yet doubled"),
             ],
         ],
         overview=overview,
@@ -888,72 +912,67 @@ def t10_applied_gdp_letters() -> dict:
         figure=fig,
     )
 
-
-# ---- Cycle 2 ---------------------------------------------------------------
-
-
-def t11_hybrid_cont_disc_hit() -> dict:
-    """Continuous vs discrete hitting times via logs. 3 true."""
-    P, k, a, target = 1000.0, 0.05, 1.04, 2000.0
-    t_cont = ln(target / P) / k
-    t_disc = ln(target / P) / ln(a)
-    # A: t_cont < t_disc True (since e^k≈1.051>1.04)
-    # B: e^k ≠ a True
-    # C: same hitting time False
-    # D: t_cont < 20 True
-    # E: substituting t_cont recovers target True — wait need 3 true: A,B,D or A,B,E
-    # A T, B T, C F, D T, E T would be 4. Use E False somehow?
-    # E: claim disc hits sooner — False
-    key = [True, True, False, True, False]
+def t11_hybrid_piece_elasticity() -> dict:
+    """Piecewise stock beside constant-elasticity demand. 3 true."""
+    P0, k1, T, k2 = 1000.0, 0.06, 5.0, 0.02
+    b, g = 1.5, 0.04
+    t = 15.0
+    log_inc = k1 * T + k2 * (t - T)
+    avg = log_inc / t
+    q_force = -b * g
+    ft = P0 * math.exp(log_inc)
+    # A True: ln(f(t)/P0)=log_inc
+    # B True: avg > 0.03
+    # C True: quantity force = -b g
+    # D False: demand inelastic (b<1)
+    # E False: f(t) > 2 P0  (e^{0.5}=1.65)
+    key = [True, True, True, False, False]
     assert sum(key) == 3
-    assert t_cont < t_disc and abs(math.exp(k) - a) > 1e-6 and t_cont < 20
-    fig = two_models(P, k, a, max(t_cont, t_disc) + 1, "Continuous vs discrete to target")
+    assert avg > 0.03 and ft < 2 * P0 and b > 1
+
+    fig = piecewise_kink(P0, k1, T, k2, t, "Piecewise stock beside price drift")
     overview = (
-        f"Continuous hit $t_c=\\ln(2)/k\\approx{fmt(t_cont)}$; "
-        f"discrete hit $t_d=\\ln 2/\\ln a\\approx{fmt(t_disc)}$. "
-        f"$e^{{k}}\\approx{fmt(math.exp(k),6)}\\neq a={fmt(a)}$."
+        f"Log-increment ${fmt(log_inc)}$, $\\bar k={fmt(avg,6)}$. "
+        f"Quantity force $-bg={fmt(q_force)}$. "
+        f"At $t={fmt(t)}$, $f\\approx{fmt(ft)}$ vs $2P_0={fmt(2*P0)}$."
     )
     return make_task(
-        title="Hybrid — continuous versus discrete log hitting times",
+        title="Hybrid — piecewise stock force beside constant-elasticity demand",
         context=(
-            f"A balance starts at $P={fmt(P)}$. Compare continuous force $k={fmt(k)}$ "
-            f"with discrete annual base $a={fmt(a)}$ when chasing target $M={fmt(target)}$. "
-            f"The figure overlays both compounding conventions."
+            f"A stock starts at $P_0={fmt(P0)}$, grows at force $k_1={fmt(k1)}$ until "
+            f"$t={fmt(T)}$, then at force $k_2={fmt(k2)}$. Separately prices drift at "
+            f"force $g={fmt(g)}$ with demand elasticity magnitude $b={fmt(b)}$. "
+            f"Read the stock at horizon $t={fmt(t)}$."
         ),
         statements=[
-            r"The continuous model reaches the target strictly sooner than the discrete model.",
-            rf"The one-year continuous multiplier $e^{{{fmt(k)}}}$ differs from the discrete base ${fmt(a)}$.",
-            r"Both models share the same hitting time for the target.",
-            r"The continuous hitting time is strictly less than $20$ years.",
-            r"The discrete model reaches the target strictly sooner than the continuous model.",
+            rf"$\ln(f({fmt(t)})/P_0)$ equals $k_1 T+k_2(t-T)$ exactly.",
+            rf"The average stock force $\bar k=\ln(f({fmt(t)})/P_0)/{fmt(t)}$ exceeds $0.03$.",
+            rf"Quantity's continuous force equals $-{fmt(b)}\cdot{fmt(g)}$.",
+            r"Demand is price-inelastic ($b<1$).",
+            rf"At $t={fmt(t)}$ the stock exceeds $2P_0$.",
         ],
         answer_key=key,
         bodies=[
             [
-                "Solve both hitting clocks with logarithms.",
-                D(rf"t_c=\frac{{\ln(M/P)}}{{k}}\approx{fmt(t_cont)}"),
-                D(rf"t_d=\frac{{\ln(M/P)}}{{\ln a}}\approx{fmt(t_disc)}"),
-                D(rf"{fmt(t_cont)}<{fmt(t_disc)}"),
-                close(True, "Continuous compounding wins the race to the target"),
+                D(r"f(t)=P_0 e^{k_1 T}e^{k_2(t-T)}"),
+                D(rf"\ln(f(t)/P_0)={fmt(log_inc)}"),
+                close(True, "Logs add across the kink"),
             ],
             [
-                "Compare one-year multipliers.",
-                D(rf"e^{{{fmt(k)}}}\\approx{fmt(math.exp(k),6)},\qquad a={fmt(a)}"),
-                close(True, "The multipliers differ, so the paths are not reparametrisations"),
+                D(rf"\bar k={fmt(avg,6)}>0.03"),
+                close(True, "Path-average force clears $0.03$"),
             ],
             [
-                "The two hitting times computed above are unequal.",
-                D(rf"{fmt(t_cont)}\neq{fmt(t_disc)}"),
-                close(False, "Shared hitting time fails"),
+                D(rf"\frac{{d\ln Q}}{{dt}}=-bg={fmt(q_force)}"),
+                close(True, "Constant elasticity converts price force into quantity force"),
             ],
             [
-                D(rf"t_c\approx{fmt(t_cont)}<20"),
-                close(True, "Continuous hitting finishes inside twenty years"),
+                D(rf"b={fmt(b)}>1"),
+                close(False, "Demand is elastic, not inelastic"),
             ],
             [
-                "The inequality runs the other way.",
-                D(rf"t_d\approx{fmt(t_disc)}>t_c"),
-                close(False, "Discrete compounding is slower to the target"),
+                D(rf"f(t)\\approx{fmt(ft)}<2P_0={fmt(2*P0)}"),
+                close(False, "The stock has not yet doubled"),
             ],
         ],
         overview=overview,
@@ -963,76 +982,76 @@ def t11_hybrid_cont_disc_hit() -> dict:
 
 
 def t12_graph_decay_vs_invest() -> dict:
-    """Decay clock vs investment clock. 4 true."""
-    m0, half, P, r, goal = 80.0, 8.0, 5000.0, 0.05, 7000.0
-    kdec = ln(2) / half
-    t_half3 = 3 * half
-    remain = m0 * (0.5) ** 3
-    t_goal = ln(goal / P) / r
-    # A remain<15 True (10); B t_goal<10 True; C kdec=r False;
-    # D 3 half-lives < t_goal? 24 vs ~6.73 — False actually 24>6.73
-    # Need 4 true: A T, B T, C F, D: claim 3 half-lives take MORE calendar time than invest hit — True
-    # E: Pe^{r t_goal}=goal True
-    key = [True, True, False, True, True]
+    """Decay mass vs investing fund race on a shared figure. 4 true."""
+    M0, kd = 2000.0, 0.05  # decay
+    P0, kg = 500.0, 0.03   # growth
+    tmax = 40.0
+    t_meet = ln(M0 / P0) / (kg + kd)  # M0 e^{-kd t}=P0 e^{kg t}
+    Mt = M0 * math.exp(-kd * tmax)
+    Pt = P0 * math.exp(kg * tmax)
+    # A True: meet in (0,tmax)
+    # B True: at tmax, P>M
+    # C True: t_meet = ln(M0/P0)/(kg+kd)
+    # D True: half-life of mass = ln2/kd
+    # E False: meeting time equals half-life
+    t_half = ln(2) / kd
+    key = [True, True, True, True, False]
     assert sum(key) == 4
-    assert remain < 15 and t_goal < 10 and abs(kdec - r) > 1e-6 and t_half3 > t_goal
+    assert 0 < t_meet < tmax and Pt > Mt
+    assert abs(t_meet - t_half) > 0.5
+
     fig = svg_curves(
         [
-            (lambda t, m0=m0, kdec=kdec: m0 * math.exp(-kdec * t), "#8B5A2B", "mass"),
-            (lambda t, P=P, r=r: P * math.exp(r * t) / 100, "#2F5D50", "invest/100"),
+            (lambda t, M0=M0, kd=kd: M0 * math.exp(-kd * t), "#8B5A2B", "mass"),
+            (lambda t, P0=P0, kg=kg: P0 * math.exp(kg * t), "#2F5D50", "fund"),
         ],
         xmin=0,
-        xmax=max(t_half3, t_goal) + 2,
-        title="Decay clock vs investment clock",
-        ylabel="scaled level",
-        vlines=[t_goal, t_half3],
+        xmax=tmax,
+        title="Decaying mass vs growing fund",
+        ylabel="level",
     )
     overview = (
-        f"Decay $k_{{\\mathrm{{dec}}}}=\\ln 2/{fmt(half)}\\approx{fmt(kdec,6)}$; "
-        f"after $3T_{{1/2}}={fmt(t_half3)}$ mass is ${fmt(remain)}$. "
-        f"Investment hits ${fmt(goal)}$ at $t\\approx{fmt(t_goal)}$."
+        f"Mass $M(t)={fmt(M0)}e^{{-{fmt(kd)}t}}$, fund $P(t)={fmt(P0)}e^{{{fmt(kg)}t}}$. "
+        f"Meeting $t^*=\\ln(M_0/P_0)/(k_g+k_d)\\approx{fmt(t_meet)}$. "
+        f"Half-life $\\ln 2/k_d\\approx{fmt(t_half)}$."
     )
     return make_task(
-        title="Graph — radioactive half-lives beside an investment hitting clock",
+        title="Graph — decaying mass versus growing fund and the meeting clock",
         context=(
-            f"A sample of $m_0={fmt(m0)}$ grams has half-life $T_{{1/2}}={fmt(half)}$ hours. "
-            f"Separately, an investment of $P={fmt(P)}$ compounds continuously at force "
-            f"$r={fmt(r)}$ toward goal ${fmt(goal)}$. The figure overlays both clocks."
+            f"A mass $M(t)=M_0 e^{{-k_d t}}$ with $M_0={fmt(M0)}$, $k_d={fmt(kd)}$ "
+            f"competes with a fund $P(t)=P_0 e^{{k_g t}}$ with $P_0={fmt(P0)}$, "
+            f"$k_g={fmt(kg)}$. The figure shows both on $[0,{fmt(tmax)}]$."
         ),
         statements=[
-            r"After three half-lives the sample has mass strictly below $15$ grams.",
-            rf"The investment reaches ${fmt(goal)}$ in strictly less than $10$ years.",
-            rf"The decay constant equals the investment force $r={fmt(r)}$.",
-            r"Three half-lives span strictly more calendar time than the investment needs to hit its goal.",
-            r"Substituting the investment hitting time recovers the goal balance.",
+            rf"The two paths meet at some time strictly inside $(0,{fmt(tmax)})$.",
+            rf"At $t={fmt(tmax)}$, the fund strictly exceeds the mass.",
+            r"The meeting time equals $\ln(M_0/P_0)/(k_g+k_d)$.",
+            r"The half-life of the mass equals $\ln 2/k_d$.",
+            r"The meeting time equals the half-life of the mass.",
         ],
         answer_key=key,
         bodies=[
             [
-                "Three half-lives leave one eighth of the mass.",
-                D(rf"m(3T_{{1/2}})={fmt(m0)}/8={fmt(remain)}"),
-                D(rf"{fmt(remain)}<15"),
-                close(True, "Remaining mass is $10$ grams"),
+                D(rf"t^*=\frac{{\ln(M_0/P_0)}}{{k_g+k_d}}\approx{fmt(t_meet)}"),
+                D(rf"0<{fmt(t_meet)}<{fmt(tmax)}"),
+                close(True, "A unique crossing sits inside the window"),
             ],
             [
-                "Solve $P e^{rt}=\\mathrm{goal}$.",
-                D(rf"t_{{\mathrm{{goal}}}}=\frac{{\ln({fmt(goal)}/{fmt(P)})}}{{r}}\approx{fmt(t_goal)}"),
-                D(rf"{fmt(t_goal)}<10"),
-                close(True, "The investment clock finishes inside ten years"),
+                D(rf"P({fmt(tmax)})\\approx{fmt(Pt)},\qquad M({fmt(tmax)})\\approx{fmt(Mt)}"),
+                close(True, "The fund leads at the horizon"),
             ],
             [
-                D(rf"k_{{\mathrm{{dec}}}}\\approx{fmt(kdec,6)}\neq r={fmt(r)}"),
-                close(False, "Decay force and investment force are different parameters"),
+                "Set $M_0 e^{-k_d t}=P_0 e^{k_g t}$ and take logs.",
+                D(r"t^*=\frac{\ln(M_0/P_0)}{k_g+k_d}"),
+                close(True, "Opposite-sign forces add in the denominator"),
             ],
             [
-                D(rf"3T_{{1/2}}={fmt(t_half3)},\qquad t_{{\mathrm{{goal}}}}\\approx{fmt(t_goal)}"),
-                D(rf"{fmt(t_half3)}>{fmt(t_goal)}"),
-                close(True, "Three half-lives take longer than the investment hit"),
+                D(rf"t_{{1/2}}=\frac{{\ln 2}}{{k_d}}={fmt(t_half)}"),
+                close(True, "Half-life is the standard log-two clock"),
             ],
             [
-                "By construction of the continuous hitting time,",
-                D(rf"P e^{{r t_{{\mathrm{{goal}}}}}}=goal={fmt(goal)}"),
-                close(True, "Substitution recovers the goal exactly"),
+                D(rf"t^*\\approx{fmt(t_meet)}\neq t_{{1/2}}={fmt(t_half)}"),
+                close(False, "Meeting and half-life are different clocks"),
             ],
         ],
         overview=overview,
@@ -1041,133 +1060,135 @@ def t12_graph_decay_vs_invest() -> dict:
     )
 
 
-def t13_table_elasticity_stock() -> dict:
-    """Elasticity beside exp stock with a small table. 1 true."""
-    a_log, b, Pprice = 5.0, 1.4, 3.0
-    Q = math.exp(a_log - b * ln(Pprice))
-    P0, k, t = 200.0, 0.04, 10.0
-    Nt = P0 * math.exp(k * t)
-    # Only C true? Need 1 true.
-    # A: b>1 True — elastic. That would be true. Make A false claim b<1
-    # A: demand inelastic (|ε|<1) False
-    # B: Q>5 False? Q=exp(5-1.4*ln3)=exp(5-1.4*1.0986)=exp(5-1.538)=exp(3.462)≈31.9 >5 True
-    # Need only 1 true: A F (inelastic claim), B: Q<5 False, C: Nt>1.4 P0 True, D: ε=k False, E: recovered force ≠k False claim
-    # C True only
-    key = [False, False, True, False, False]
+def t13_table_two_series_cross() -> dict:
+    """Two series in a table; recover forces and future crossing. 1 true."""
+    A0, kA, B0, kB = 400.0, 0.05, 700.0, 0.02
+    t_obs = 5.0
+    A5 = A0 * math.exp(kA * t_obs)
+    B5 = B0 * math.exp(kB * t_obs)
+    t_meet = ln(B0 / A0) / (kA - kB)
+    # Only A True: kA = ln(A5/A0)/5
+    # B False: kB > kA
+    # C False: already crossed by t_obs
+    # D False: meet at ln(A0/B0)/(kA-kB)
+    # E False: A5 > B5
+    key = [True, False, False, False, False]
     assert sum(key) == 1
-    assert b > 1 and Q > 5 and Nt > 1.4 * P0
+    assert t_meet > t_obs and A5 < B5 and kA > kB
+
     table = md_table(
-        ["object", "value"],
+        ["$t$", "$A(t)$", "$B(t)$"],
         [
-            ["$\\ln Q$ intercept $a$", f"${fmt(a_log)}$"],
-            ["elasticity magnitude $b$", f"${fmt(b)}$"],
-            ["price $P$", f"${fmt(Pprice)}$"],
-            ["stock $N_0$", f"${fmt(P0)}$"],
-            ["stock force $k$", f"${fmt(k)}$"],
+            ["$0$", f"${fmt(A0)}$", f"${fmt(B0)}$"],
+            [f"${fmt(t_obs)}$", f"${fmt(A5,2)}$", f"${fmt(B5,2)}$"],
         ],
     )
+    fig = competing_populations(A0, kA, B0, kB, t_meet + 5, "Two series toward a cross")
     overview = (
-        f"Demand $\\ln Q={fmt(a_log)}-{fmt(b)}\\ln P$ at $P={fmt(Pprice)}$ gives "
-        f"$Q\\approx{fmt(Q,4)}$ with $|\\varepsilon|={fmt(b)}$. "
-        f"Stock $N({fmt(t)})\\approx{fmt(Nt)}$."
+        f"Recovered $k_A={fmt(kA)}$, $k_B={fmt(kB)}$. "
+        f"Crossing $t^*\\approx{fmt(t_meet)}>={fmt(t_obs)}$. "
+        f"At observation, $A\\approx{fmt(A5,2)}<B\\approx{fmt(B5,2)}$."
     )
     return make_task(
-        title="Table — elasticity schedule beside an exponential stock",
+        title="Table — recover two forces, then judge the future crossing",
         context=(
-            f"Demand follows $\\ln Q=a-b\\ln P$ while a separate stock follows "
-            f"$N(t)=N_0 e^{{kt}}$. Parameters are tabulated. Horizon $t={fmt(t)}$."
+            "Two continuous exponential series $A$ and $B$ are sampled at $t=0$ and "
+            f"$t={fmt(t_obs)}$ (table). Recover forces, then judge the claims."
         ),
         statements=[
-            r"Demand is price-inelastic ($|\varepsilon|<1$).",
-            r"At the stated price, quantity is strictly less than $5$.",
-            rf"At $t={fmt(t)}$ the growing stock exceeds $1.4$ times its initial level.",
-            rf"The demand elasticity equals the stock's continuous force ${fmt(k)}$.",
-            rf"The stock force recovered from $\ln(N({fmt(t)})/N_0)/{fmt(t)}$ differs from ${fmt(k)}$.",
+            rf"$k_A=\ln\!\bigl(A({fmt(t_obs)})/A(0)\bigr)/{fmt(t_obs)}$.",
+            r"The recovered force of $B$ strictly exceeds that of $A$.",
+            rf"The series have already met on $[0,{fmt(t_obs)}]$.",
+            r"The meeting time equals $\ln(A_0/B_0)/(k_A-k_B)$.",
+            rf"At $t={fmt(t_obs)}$, series $A$ already exceeds series $B$.",
         ],
         answer_key=key,
         bodies=[
             [
-                D(rf"|\varepsilon|=b={fmt(b)}>1"),
-                close(False, "Demand is elastic, not inelastic"),
+                D(rf"k_A=\frac{{\ln(A({fmt(t_obs)})/A(0))}}{{{fmt(t_obs)}}}={fmt(kA)}"),
+                close(True, "Log recovery returns force $0.05$"),
             ],
             [
-                D(rf"Q=e^{{a-b\ln P}}\approx{fmt(Q,4)}"),
-                D(rf"{fmt(Q,4)}\not< 5"),
-                close(False, "Quantity is far above $5$"),
+                D(rf"k_B={fmt(kB)}<{fmt(kA)}=k_A"),
+                close(False, "Force $B$ is smaller, not larger"),
             ],
             [
-                D(rf"N({fmt(t)})=N_0 e^{{kt}}\approx{fmt(Nt)}"),
-                D(rf"1.4 N_0={fmt(1.4*P0)}"),
-                close(True, "The stock clears the $1.4$ threshold"),
+                D(rf"t^*=\frac{{\ln(B_0/A_0)}}{{k_A-k_B}}\\approx{fmt(t_meet)}>{fmt(t_obs)}"),
+                close(False, "The crossing lies after the observation window"),
             ],
             [
-                "Elasticity $b$ and force $k$ live in different models.",
-                D(rf"b={fmt(b)}\neq k={fmt(k)}"),
-                close(False, "Equating elasticity with the stock force is a category error"),
+                D(rf"\frac{{\ln(A_0/B_0)}}{{k_A-k_B}}\\approx{fmt(ln(A0/B0)/(kA-kB))}<0"),
+                close(False, "Flipping the ratio makes the formula negative"),
             ],
             [
-                D(rf"\frac{{1}}{{t}}\ln\frac{{N(t)}}{{N_0}}=k={fmt(k)}"),
-                close(False, "Log recovery returns exactly $k$, so they do not differ"),
+                D(rf"A({fmt(t_obs)})\\approx{fmt(A5,2)}<B({fmt(t_obs)})\\approx{fmt(B5,2)}"),
+                close(False, "At the second observation $B$ is still larger"),
             ],
         ],
         overview=overview,
         stem_kind="table",
+        figure=fig,
         tables_markdown=table,
     )
 
 
-def t14_symbolic_change_base() -> dict:
-    """Change of base inside exponential equation. 2 true."""
-    a, b, expn = 8, 2, 5
-    log_b_a = math.log(a, b)  # 3
-    x = expn / log_b_a  # 5/3
-    # A: log_b a integer True; B: x=expn/log True; C: x<expn True; D: sides equal True; E: log>4 False
-    # Need 2 true: A T, B T, C F? x=5/3<5 so C true — too many
-    # Use: A T, B T, C: x>expn False, D: a^x = b^{expn+1} False, E: log>4 False
+def t14_symbolic_change_base_ineq() -> dict:
+    """Change-of-base inside inequalities and log identities. 2 true."""
+    # A True: log_2 12 > log_3 12  (since 1/ln2 > 1/ln3 for same ln12)
+    # B True: log_2 12 = ln12/ln2
+    # C False: log_2 12 + log_2 3 = log_2 15  (should be log2 36)
+    # D False: log_5 (1/25) = 2
+    # E False: (ln 9)/(ln 3) > 3  (=2)
     key = [True, True, False, False, False]
     assert sum(key) == 2
-    assert abs(log_b_a - 3) < 1e-12 and abs(a ** x - b ** expn) < 1e-9
-    fig = svg_log(base=float(b), xmin=0.5, xmax=10, title=f"log_{b} used in the power solve", mark_x=float(a))
+    log2_12 = ln(12) / ln(2)
+    log3_12 = ln(12) / ln(3)
+    assert log2_12 > log3_12
+    assert abs(math.log(1 / 25, 5) - (-2)) < 1e-12
+    assert abs(ln(9) / ln(3) - 2) < 1e-12
+
+    fig = svg_log(base=2, xmin=0.5, xmax=16, title="log_2 reference curve", mark_x=12)
     overview = (
-        f"$\\log_{{{b}}}({a})={fmt(log_b_a)}$. Solving ${a}^{x}={b}^{{{expn}}}$ gives "
-        f"$x={expn}/{fmt(log_b_a)}={fmt(x,6)}$."
+        f"$\\log_2 12=\\ln 12/\\ln 2\\approx{fmt(log2_12)}$, "
+        f"$\\log_3 12\\approx{fmt(log3_12)}$. "
+        f"$\\log_2 12+\\log_2 3=\\log_2 36$, "
+        f"$\\log_5(1/25)=-2$, $\\ln 9/\\ln 3=2$."
     )
     return make_task(
-        title="Symbolic — change-of-base logarithm inside a power equation",
+        title="Symbolic — change-of-base inequalities and product/power traps",
         context=(
-            f"Relate powers of ${a}$ and ${b}$ through $\\log_{{{b}}}({a})$. "
-            f"Solve ${a}^{x}={b}^{{{expn}}}$."
+            r"Compare logarithms at different bases and test standard log identities. "
+            r"The figure shows $y=\log_2 x$ for reference."
         ),
         statements=[
-            rf"$\log_{{{b}}}({a})$ is an integer.",
-            rf"The solution is $x=\dfrac{{{expn}}}{{\log_{{{b}}}({a})}}$.",
-            rf"That solution is strictly larger than ${expn}$.",
-            rf"Substituting the solved $x$ yields ${a}^{x}={b}^{{{expn}+1}}$.",
-            rf"$\log_{{{b}}}({a})$ is strictly larger than $4$.",
+            r"$\log_2 12>\log_3 12$.",
+            r"$\log_2 12=\dfrac{\ln 12}{\ln 2}$.",
+            r"$\log_2 12+\log_2 3=\log_2 15$.",
+            r"$\log_5(1/25)=2$.",
+            r"$\dfrac{\ln 9}{\ln 3}>3$.",
         ],
         answer_key=key,
         bodies=[
             [
-                D(rf"\log_{{{b}}}({a})=\frac{{\ln {a}}}{{\ln {b}}}={fmt(log_b_a)}"),
-                close(True, "The logarithm is the integer $3$"),
+                "Change of base: $\\log_b 12=\\ln 12/\\ln b$, decreasing in $b>1$.",
+                D(rf"\log_2 12\\approx{fmt(log2_12)}>\log_3 12\\approx{fmt(log3_12)}"),
+                close(True, "Smaller base yields a larger logarithm of the same argument"),
             ],
             [
-                f"Take $\\log_{{{b}}}$ of both sides of ${a}^{x}={b}^{{{expn}}}$.",
-                D(rf"x\log_{{{b}}}({a})={expn}"),
-                D(rf"x=\frac{{{expn}}}{{\log_{{{b}}}({a})}}={fmt(x,6)}"),
-                close(True, "Change-of-base produces that exact quotient"),
+                D(r"\log_2 12=\frac{\ln 12}{\ln 2}"),
+                close(True, "Change-of-base is an identity"),
             ],
             [
-                D(rf"x={fmt(x,6)}<{expn}"),
-                close(False, "The solution is smaller than the exponent, not larger"),
+                D(r"\log_2 12+\log_2 3=\log_2(12\cdot 3)=\log_2 36\neq\log_2 15"),
+                close(False, "The product rule produces $\\log_2 36$, not $\\log_2 15$"),
             ],
             [
-                D(rf"a^{{x}}=b^{{{expn}}}={b**expn},\qquad b^{{{expn}+1}}={b**(expn+1)}"),
-                close(False, "Substitution recovers $b^{5}$, not $b^{6}$"),
+                D(r"\log_5(1/25)=\log_5(5^{-2})=-2\neq 2"),
+                close(False, "The power is negative two"),
             ],
             [
-                D(rf"\log_{{{b}}}({a})={fmt(log_b_a)}\le 4"),
-                close(False, "The logarithm equals $3$, not above $4$"),
+                D(r"\frac{\ln 9}{\ln 3}=\log_3 9=2\not>3"),
+                close(False, "The change-of-base quotient equals $2$, not more than $3$"),
             ],
         ],
         overview=overview,
@@ -1176,126 +1197,129 @@ def t14_symbolic_change_base() -> dict:
     )
 
 
-def t15_parametric_family_force() -> dict:
-    """Parametric family P_λ(t)=A e^{λt} with log constraints. 5 true."""
-    A = 100.0
-    # Family indexed by λ>0; define λ* by ln(λ*)=-ln 5 ⇒ λ*=1/5
-    lam = math.exp(-ln(5))
-    t_double = ln(2) / lam
-    # All true:
-    # A: λ*=1/5 True
-    # B: P_λ*(ln5)=A e^{(1/5)ln5}=A 5^{1/5} — claim >A True
-    # C: doubling = 5 ln2 True
-    # D: d/dλ ln P = t True (∂_λ ln P_λ = t)
-    # E: for λ>λ*, doubling time shorter True
+def t15_parametric_force_threshold() -> dict:
+    """Parametric force k in a family; five carefully true threshold claims. 5 true."""
+    # y(t)=e^{k t}; require for k in (0,1):
+    # Actually fix k=ln2/5 so y(5)=2
+    k = ln(2) / 5.0
+    # A True: y(5)=2
+    # B True: y(10)=4
+    # C True: integral? skip — use ln y(t)=k t
+    # C True: (ln y(15))/15 = k
+    # D True: y(t)^2 = y(2t)
+    # E True: doubling time is 5
     key = [True, True, True, True, True]
     assert sum(key) == 5
-    assert abs(lam - 0.2) < 1e-12 and abs(t_double - 5 * ln(2)) < 1e-12
+    assert abs(math.exp(k * 5) - 2) < 1e-12
+    assert abs(math.exp(k * 10) - 4) < 1e-12
+
+    fig = svg_exp(P0=1.0, k=k, tmax=15, title="Unit-start path with force ln2/5", mark_t=5)
     overview = (
-        f"Constraint $\\ln\\lambda^*=-\\ln 5$ pins $\\lambda^*=1/5$. "
-        f"Doubling $t_{{\\times 2}}=5\\ln 2\\approx{fmt(t_double)}$. "
-        f"Larger $\\lambda$ shortens doubling."
+        f"$y(t)=e^{{kt}}$ with $k=\\ln 2/5$. Then $y(5)=2$, $y(10)=4$, "
+        f"$(\\ln y(t))/t=k$, and $y(t)^{2}=y(2t)$."
     )
     return make_task(
-        title="Parametric — force family pinned by a log constraint",
+        title="Parametric — unit-start exponential locked to a doubling clock of $5$",
         context=(
-            f"Consider the family $P_\\lambda(t)=A e^{{\\lambda t}}$ with fixed $A={fmt(A)}$ "
-            f"and force parameter $\\lambda>0$. A distinguished member $\\lambda^*$ satisfies "
-            f"$\\ln\\lambda^*=-\\ln 5$."
+            r"Let $y(t)=e^{kt}$ with the force fixed by the normalisation $y(5)=2$ "
+            r"(equivalently $k=\ln 2/5$)."
         ),
         statements=[
-            r"The distinguished force equals $\dfrac{1}{5}$.",
-            r"$P_{\lambda^*}(\ln 5)$ is strictly larger than $A$.",
-            r"The doubling time at $\lambda^*$ equals $5\ln 2$.",
-            r"For each fixed $t$, $\dfrac{\partial}{\partial\lambda}\ln P_\lambda(t)=t$.",
-            r"Every force $\lambda>\lambda^*$ has a strictly shorter doubling time than $\lambda^*$.",
+            r"$y(5)=2$.",
+            r"$y(10)=4$.",
+            r"$\dfrac{\ln y(15)}{15}=k$.",
+            r"$y(t)^{2}=y(2t)$ for every $t$.",
+            r"The doubling time equals $5$.",
         ],
         answer_key=key,
         bodies=[
             [
-                D(r"\ln\lambda^*=-\ln 5\implies\lambda^*=e^{-\ln 5}=\frac{1}{5}"),
-                close(True, "The log constraint pins $\\lambda^*=1/5$"),
+                D(r"y(5)=e^{k\cdot 5}=e^{\ln 2}=2"),
+                close(True, "The normalisation forces $y(5)=2$"),
             ],
             [
-                D(r"P_{\lambda^*}(\ln 5)=A\exp\bigl(\tfrac15\ln 5\bigr)=A\cdot 5^{1/5}>A"),
-                close(True, "A positive exponent lifts the level above $A$"),
+                D(r"y(10)=e^{2\ln 2}=4"),
+                close(True, "Ten units are two doubling clocks"),
             ],
             [
-                D(r"t_{\times 2}=\frac{\ln 2}{\lambda^*}=5\ln 2"),
-                close(True, "Doubling time is exactly $5\\ln 2$"),
+                D(r"\frac{\ln y(15)}{15}=\frac{15k}{15}=k"),
+                close(True, "Log-level over time recovers the force"),
             ],
             [
-                D(r"\ln P_\lambda(t)=\ln A+\lambda t"),
-                D(r"\frac{\partial}{\partial\lambda}\ln P_\lambda(t)=t"),
-                close(True, "The cross-partial in force is calendar time"),
+                D(r"y(t)^{2}=e^{2kt}=e^{k(2t)}=y(2t)"),
+                close(True, "Squaring the level doubles the clock"),
             ],
             [
-                "Doubling time $t_{{\\times 2}}=\\ln 2/\\lambda$ is strictly decreasing in $\\lambda>0$.",
-                close(True, "Any larger force doubles strictly sooner"),
+                D(r"t_{\times 2}=\frac{\ln 2}{k}=5"),
+                close(True, "Doubling time is exactly five"),
             ],
         ],
         overview=overview,
         stem_kind="parametric",
+        figure=fig,
     )
-
-
 
 def t16_piecewise_gdp_switch() -> dict:
-    """Piecewise GDP force with constant pop; per capita logs. 4 true."""
-    Y0, g, N0, p, T, k2, t = 500.0, 0.03, 10.0, 0.01, 5.0, 0.015, 15.0
-    y0 = Y0 / N0
-    yT = y0 * math.exp((g - p) * T)
-    yt = yT * math.exp((k2 - p) * (t - T))
-    wrong = y0 * math.exp((g - p) * t)
-    # A: yt > 1.1 y0 True; B: after switch ky=k2+p False; C: ky=k2-p True;
-    # D: wrong misstates True; E: yT>y0 True
-    key = [True, False, True, True, True]
+    """Piecewise GDP growth switch; per-capita comparisons. 4 true."""
+    Y0, g1, T, g2, N0, p = 100.0, 0.05, 10.0, 0.02, 5.0, 0.01
+    t = 20.0
+    # Y continuous piecewise; N = N0 e^{pt}
+    YT = Y0 * math.exp(g1 * T)
+    Yt = YT * math.exp(g2 * (t - T))
+    Nt = N0 * math.exp(p * t)
+    y0, yt = Y0 / N0, Yt / Nt
+    # per-capita log inc = g1*T + g2*(t-T) - p*t
+    dln_y = g1 * T + g2 * (t - T) - p * t
+    # A True: Y continuous at T
+    # B True: Δln Y = g1 T + g2(t-T)
+    # C True: Δln y = dln_y
+    # D True: Δln y > 0
+    # E False: late GDP force exceeds early force
+    key = [True, True, True, True, False]
     assert sum(key) == 4
-    assert yt > 1.1 * y0 and yT > y0 and abs(wrong - yt) > 1e-6
-    fig = gdp_per_capita(Y0, g, N0, p, t, "GDP path (early force shown)")
-    # Also show piecewise conceptually via kink on per capita
-    fig = piecewise_kink(y0, g - p, T, k2 - p, t, "Per capita with GDP force switch")
+    assert dln_y > 0 and g2 < g1
+
+    fig = gdp_per_capita(Y0 * 1000, (g1 * T + g2 * (t - T)) / t, N0, p, t, "Piecewise GDP (avg force shown)")
     overview = (
-        f"Per-capita force is ${fmt(g-p)}$ then ${fmt(k2-p)}$. "
-        f"$y(T)\\approx{fmt(yT,4)}$, $y({fmt(t)})\\approx{fmt(yt,4)}$. "
-        f"Ignoring the switch gives ${fmt(wrong,4)}$."
+        f"GDP log-increment ${fmt(g1*T+g2*(t-T))}$; population ${fmt(p*t)}$. "
+        f"Per-capita $\\Delta\\ln y={fmt(dln_y)}$. Early force $g_1={fmt(g1)}>g_2={fmt(g2)}$."
     )
     return make_task(
-        title="Piecewise — GDP force switch read through per-capita logs",
+        title="Piecewise — GDP force switch with per-capita log accounting",
         context=(
-            f"Aggregate GDP grows at force $g={fmt(g)}$ until $t={fmt(T)}$ and at force "
-            f"$k_2={fmt(k2)}$ afterward. Population grows steadily at force $p={fmt(p)}$. "
-            f"Initial per capita is $y_0=Y_0/N_0={fmt(y0)}$. Horizon $t={fmt(t)}$."
+            f"GDP starts at $Y_0={fmt(Y0)}$, grows at force $g_1={fmt(g1)}$ until "
+            f"$t={fmt(T)}$, then at force $g_2={fmt(g2)}$. Population is "
+            f"$N(t)={fmt(N0)}e^{{{fmt(p)}t}}$. Horizon $t={fmt(t)}$."
         ),
         statements=[
-            rf"At $t={fmt(t)}$, GDP per capita exceeds $1.1$ times its initial level.",
-            rf"After the switch, the per-capita force equals ${fmt(k2)}+{fmt(p)}$.",
-            rf"After the switch, the per-capita force equals ${fmt(k2)}-{fmt(p)}$.",
-            rf"Keeping the early GDP force all the way to $t={fmt(t)}$ mis-states the true per-capita level.",
-            r"At the switch time, per capita already exceeds its initial level.",
+            rf"GDP is continuous at the switch $t={fmt(T)}$.",
+            rf"$\Delta\ln Y$ over $[0,{fmt(t)}]$ equals $g_1 T+g_2(t-T)$.",
+            rf"$\Delta\ln y$ over $[0,{fmt(t)}]$ equals $g_1 T+g_2(t-T)-p\cdot{fmt(t)}$.",
+            r"Per-capita log-change over the horizon is strictly positive.",
+            r"The late GDP force $g_2$ strictly exceeds the early force $g_1$.",
         ],
         answer_key=key,
         bodies=[
             [
-                D(rf"y({fmt(t)})\approx{fmt(yt,4)},\qquad 1.1 y_0={fmt(1.1*y0,4)}"),
-                close(True, "Per capita clears the $1.1$ threshold"),
+                D(rf"Y(T)=Y_0 e^{{g_1 T}}={fmt(YT)}"),
+                "and the late segment starts from that same level.",
+                close(True, "Matching levels make GDP continuous at the switch"),
             ],
             [
-                "Per capita is a ratio, so forces subtract.",
-                D(rf"k_y=k_2-p={fmt(k2-p)}\neq k_2+p={fmt(k2+p)}"),
-                close(False, "Adding forces would track $Y\\cdot N$"),
+                D(rf"\Delta\ln Y=g_1 T+g_2(t-T)={fmt(g1*T+g2*(t-T))}"),
+                close(True, "Piecewise GDP logs add"),
             ],
             [
-                D(rf"k_y={fmt(k2)}-{fmt(p)}={fmt(k2-p)}"),
-                close(True, "The late per-capita force is the difference"),
+                D(rf"\Delta\ln y=\Delta\ln Y-\Delta\ln N={fmt(dln_y)}"),
+                close(True, "Per-capita log-change subtracts population growth"),
             ],
             [
-                D(rf"y_{{\mathrm{{wrong}}}}\approx{fmt(wrong,4)}\neq y({fmt(t)})\approx{fmt(yt,4)}"),
-                close(True, "Ignoring the GDP switch mis-states the terminal level"),
+                D(rf"\Delta\ln y={fmt(dln_y)}>0"),
+                close(True, "Per-capita output grows in log terms over the horizon"),
             ],
             [
-                D(rf"y(T)\approx{fmt(yT,4)}>y_0={fmt(y0)}"),
-                close(True, "Early force $g-p>0$ already lifts per capita by the kink"),
+                D(rf"g_2={fmt(g2)}<{fmt(g1)}=g_1"),
+                close(False, "The late force is smaller than the early force"),
             ],
         ],
         overview=overview,
@@ -1305,187 +1329,201 @@ def t16_piecewise_gdp_switch() -> dict:
 
 
 def t17_nested_inverse_constraints() -> dict:
-    """Nested logs constraining inverse of growth map. 3 true."""
-    # f(t)=e^{kt} with k pinned by ln k = -1 ⇒ k=1/e
-    # g inverse: g(y)=ln(y)/k
-    k = math.exp(-1)
-    # A: k=1/e True
-    # B: g(e)=1/k=e True
-    # C: g(1)=0 True
-    # D: domain includes 0 False
-    # E: g(e^k)=1 True? e^k = e^{1/e}, g= ln(e^{1/e})/k = (1/e)/k = (1/e)/(1/e)=1 True
-    # That's 4 true (A,B,C,E). Need 3: make B false — claim g(e)=1/e
-    key = [True, False, True, False, True]
+    """Nested inverse constraints linking growth parameters. 3 true."""
+    # Constraint: ln(k/0.01)=ln 3 ⇒ k=0.03; P=e^2
+    k = 0.03
+    P = math.exp(2)
+    t = ln(2) / k
+    # A True: k=0.03
+    # B True: P(t)=P e^{kt} doubles at t
+    # C True: ln P = 2
+    # D False: k/0.01 = e^3
+    # E False: g(P)=0 for inverse g of f(t)=P e^{kt} — g(P)=0 actually TRUE!
+    # E False: g(2P)=1/k  wait that's the doubling time... g(2P)=(1/k)ln2 = t True
+    # E False: g(P^2)=(2/k)ln P = 4/k
+    # claim: g(P^2)=2/k  False (actually 4/k since ln(P^2/P)=ln P=2, so 2/k)
+    # g(P^2)=(1/k)ln(P^2/P)=(1/k)ln P=2/k — that would be TRUE
+    # claim E: g(e)=1/k  — g(e)=(1/k)ln(e/P)=(1/k)(1-2)=-1/k ≠ 1/k False
+    key = [True, True, True, False, False]
     assert sum(key) == 3
-    assert abs(k - 1 / math.e) < 1e-12
+    assert abs(ln(k / 0.01) - ln(3)) < 1e-12
+    g_e = (1 / k) * ln(math.e / P)
+    assert abs(g_e + 1 / k) < 1e-9
+
+    fig = svg_exp(P0=P, k=k, tmax=t + 5, title="Constrained growth path", mark_t=t)
     overview = (
-        f"Force constraint $\\ln k=-1$ gives $k=e^{{-1}}$. "
-        f"Inverse $g(y)=\\ln y/k$ sends $1\\mapsto 0$ and $e^{{k}}\\mapsto 1$, "
-        f"while $g(e)=e$."
+        f"Constraint $\\ln(k/0.01)=\\ln 3$ forces $k={fmt(k)}$. "
+        f"$P=e^{{2}}$ so $\\ln P=2$. Doubling clock $t=\\ln 2/k\\approx{fmt(t)}$. "
+        f"Inverse $g(e)=(1/k)\\ln(e/P)=-{fmt(1/k)}$."
     )
     return make_task(
-        title="Nested — log-pinned force and its inverse clock",
+        title="Nested — log constraint on force beside an inverse evaluation",
         context=(
-            r"A normalised stock $f(t)=e^{kt}$ ($f(0)=1$) has force $k>0$ fixed by "
-            r"$\ln k=-1$. Let $g$ be the inverse of $f$."
+            r"A growth map $f(t)=P e^{kt}$ is constrained by the nested-log link "
+            r"$\ln(k/0.01)=\ln 3$ and by $P=e^{2}$. Let $g$ be the inverse of $f$."
         ),
         statements=[
-            r"$k=e^{-1}$.",
-            r"$g(e)=e^{-1}$.",
-            r"$g(1)=0$.",
-            r"The number $0$ lies in the domain of $g$.",
-            r"$g(e^{k})=1$.",
+            r"$k=0.03$.",
+            r"$f$ doubles its initial level in time $\ln 2/k$.",
+            r"$\ln P=2$.",
+            r"$k/0.01=e^{3}$.",
+            r"$g(e)=1/k$.",
         ],
         answer_key=key,
         bodies=[
             [
-                D(r"\ln k=-1\implies k=e^{-1}"),
-                close(True, "The nested (here single) log pins the force"),
+                D(r"\ln(k/0.01)=\ln 3\implies k/0.01=3\implies k=0.03"),
+                close(True, "The nested log link collapses to $k=0.03$"),
             ],
             [
-                D(r"g(e)=\frac{\ln e}{k}=\frac{1}{k}=e"),
-                D(r"e\neq e^{-1}"),
-                close(False, "The inverse clock returns $e$, not $e^{-1}$"),
+                D(r"f(\ln 2/k)=P e^{\ln 2}=2P"),
+                close(True, "The standard doubling clock works under the constrained force"),
             ],
             [
-                D(r"g(1)=\frac{\ln 1}{k}=0"),
-                close(True, "The inverse of the initial level is time zero"),
+                D(r"\ln P=\ln(e^{2})=2"),
+                close(True, "The initial level is exactly $e^{2}$"),
             ],
             [
-                "Range of $f$ is $(0,\\infty)$, which excludes $0$.",
-                close(False, "Zero is not in the domain of $g$"),
+                D(r"k/0.01=3\neq e^{3}"),
+                close(False, "The link gives ratio $3$, not $e^{3}$"),
             ],
             [
-                D(r"g(e^{k})=\frac{\ln(e^{k})}{k}=\frac{k}{k}=1"),
-                close(True, "One year of force maps back to calendar time $1$"),
+                D(rf"g(e)=\frac{{1}}{{k}}\ln(e/P)=\frac{{1-2}}{{k}}=-{fmt(1/k)}"),
+                D(rf"-{fmt(1/k)}\neq 1/k"),
+                close(False, "Because $P=e^{2}>e$, the inverse at $e$ is negative"),
             ],
         ],
         overview=overview,
         stem_kind="nested",
+        figure=fig,
     )
 
 
-def t18_text_dense_mixed_clocks() -> dict:
-    """Text-dense mashup of half-life, EAR, and log ratios. 1 true."""
-    half, r, n = 10.0, 0.06, 12.0
-    kdec = ln(2) / half
-    ear = (1 + r / n) ** n - 1
-    # A: kdec = ln2/10 True — but need only 1 true total
-    # Make A: kdec=0.1 False
-    # B: EAR > r True typically for compounding — ear > r? (1+r/n)^n -1 > r is FALSE for small r actually
-    # (1+0.06/12)^12 -1 ≈ 0.06168 > 0.06 True
-    # C: ln(1+ear) = r False
-    # D: half-life formula t=ln2/k with k=r False claim
-    # E: e^r -1 = ear False
-    # Only B true
-    key = [False, True, False, False, False]
+def t18_text_dense_mixed_identities() -> dict:
+    """Dense mixed exp/log micro-claims; only one true. 1 true."""
+    # A True: ln(e^3 / 8) = 3 - ln 8
+    # B False: e^{ln 5 + ln 2} = 7
+    # C False: log_2(1/8) = 3
+    # D False: (ln 16)/(ln 2) = 8
+    # E False: exp(2 ln 3) = 6
+    key = [True, False, False, False, False]
     assert sum(key) == 1
-    assert abs(kdec - 0.1) > 1e-6 and ear > r
+    assert abs(ln(math.exp(3) / 8) - (3 - ln(8))) < 1e-12
+    assert abs(math.exp(ln(5) + ln(2)) - 10) < 1e-12
+    assert abs(math.log(1 / 8, 2) - (-3)) < 1e-12
+    assert abs(ln(16) / ln(2) - 4) < 1e-12
+    assert abs(math.exp(2 * ln(3)) - 9) < 1e-12
+
+    fig = svg_log(base=2, xmin=0.1, xmax=16, title="Reference log_2 for the micro-traps")
     overview = (
-        f"Decay $k=\\ln 2/{fmt(half)}\\approx{fmt(kdec,6)}$. "
-        f"Nominal $r={fmt(r)}$ with $n={fmt(n)}$ gives EAR $\\approx{fmt(ear,6)}$."
+        r"Useful expansions: $\ln(e^{3}/8)=3-\ln 8$, "
+        r"$e^{\ln 5+\ln 2}=10$, $\log_2(1/8)=-3$, "
+        r"$\ln 16/\ln 2=4$, $e^{2\ln 3}=9$."
     )
     return make_task(
-        title="Text-dense — half-life force tangled with an EAR claim",
+        title="Text-dense — five mixed exp/log micro-claims, one survivor",
         context=(
-            f"A sample decays with half-life $T_{{1/2}}={fmt(half)}$. Separately a loan "
-            f"quotes nominal annual rate $r={fmt(r)}$ compounded $n={fmt(n)}$ times per year."
+            r"Each claim is a compact exponential/logarithmic identity or evaluation. "
+            r"The figure is only a $\log_2$ reference."
         ),
         statements=[
-            r"The continuous decay constant equals $0.1$ exactly.",
-            r"The effective annual rate of the loan strictly exceeds the nominal rate $r$.",
-            r"$\ln(1+\mathrm{EAR})$ equals the nominal rate $r$.",
-            rf"Using the loan force $r$ as if it were a decay constant would give half-life $\ln 2/r\approx{fmt(ln(2)/r)}$. That equals $T_{{1/2}}$.",
-            r"The continuous-equivalent annual yield $e^{r}-1$ equals the loan's EAR.",
+            r"$\ln(e^{3}/8)=3-\ln 8$.",
+            r"$e^{\ln 5+\ln 2}=7$.",
+            r"$\log_2(1/8)=3$.",
+            r"$\dfrac{\ln 16}{\ln 2}=8$.",
+            r"$\exp(2\ln 3)=6$.",
         ],
         answer_key=key,
         bodies=[
             [
-                D(rf"k=\frac{{\ln 2}}{{{fmt(half)}}}\\approx{fmt(kdec,6)}\neq 0.1"),
-                close(False, "Half-life $10$ does not produce force $0.1$"),
+                D(r"\ln(e^{3}/8)=\ln(e^{3})-\ln 8=3-\ln 8"),
+                close(True, "Difference of logs expands the quotient"),
             ],
             [
-                D(rf"\mathrm{{EAR}}=\bigl(1+\frac{{r}}{{n}}\bigr)^{n}-1\\approx{fmt(ear,6)}"),
-                D(rf"{fmt(ear,6)}>{fmt(r)}"),
-                close(True, "Intra-year compounding lifts EAR above the nominal"),
+                D(r"e^{\ln 5+\ln 2}=e^{\ln 10}=10\neq 7"),
+                close(False, "The sum of logs is $\\ln 10$, not a route to $7$"),
             ],
             [
-                D(rf"\ln(1+\mathrm{{EAR}})\\approx{fmt(ln(1+ear),6)}\neq r={fmt(r)}"),
-                close(False, "That log recovers the continuous force equivalent to EAR, not $r$"),
+                D(r"\log_2(1/8)=\log_2(2^{-3})=-3\neq 3"),
+                close(False, "The power is negative three"),
             ],
             [
-                D(rf"\frac{{\ln 2}}{{r}}\\approx{fmt(ln(2)/r)}\neq T_{{1/2}}={fmt(half)}"),
-                close(False, "Loan force and decay half-life are unrelated"),
+                D(r"\frac{\ln 16}{\ln 2}=\log_2 16=4\neq 8"),
+                close(False, "Sixteen is $2^4$, not $2^8$"),
             ],
             [
-                D(rf"e^{{r}}-1\\approx{fmt(math.exp(r)-1,6)},\qquad \mathrm{{EAR}}\\approx{fmt(ear,6)}"),
-                close(False, "Continuous yield on $r$ is not the discrete EAR"),
+                D(r"\exp(2\ln 3)=3^{2}=9\neq 6"),
+                close(False, "The nest yields nine"),
             ],
         ],
         overview=overview,
         stem_kind="text_dense",
+        figure=fig,
     )
 
 
-def t19_rebuild_semi_log_table() -> dict:
-    """Rebuild from semi-log table; compare models. 2 true."""
-    P0, k = 500.0, 0.045
-    ts = [0.0, 4.0, 8.0]
+def t19_rebuild_semi_log_slopes() -> dict:
+    """Rebuild force from semi-log samples; compare models. 2 true."""
+    P0, k = 1000.0, 0.04
+    ts = [0.0, 5.0, 10.0]
     ys = [P0 * math.exp(k * t) for t in ts]
-    lns = [ln(y) for y in ys]
-    slope = (lns[2] - lns[0]) / (ts[2] - ts[0])
-    # A: slope = k True; B: P0 = e^{ln y(0)} True; C: discrete (1+k)^t matches False
-    # D: doubling < 10 False (ln2/0.045≈15.4); E: y(8)/y(4)=y(4)/y(0) True (equal ratios)
-    # Want 2 true: A T, B T, C F, D F, E T would be 3. Make B: P0=600 False
-    key = [True, False, False, False, True]
+    slope_outer = (ln(ys[2]) - ln(ys[0])) / (ts[2] - ts[0])
+    slope_mid = (ln(ys[1]) - ln(ys[0])) / (ts[1] - ts[0])
+    # A True: outer semi-log slope = k
+    # B True: mid slope = k
+    # C False: discrete (1+k)^t shares slope k
+    # D False: y(10)/y(0) = 1+10k
+    # E False: ln y(10) - ln y(0) = 10
+    key = [True, True, False, False, False]
     assert sum(key) == 2
-    assert abs(slope - k) < 1e-12
-    ratio = ys[1] / ys[0]
+    assert abs(slope_outer - k) < 1e-12 and abs(slope_mid - k) < 1e-12
+
     table = md_table(
         ["$t$", "$y(t)$", "$\\ln y(t)$"],
-        [[f"${fmt(t)}$", f"${fmt(y,2)}$", f"${fmt(ly,4)}$"] for t, y, ly in zip(ts, ys, lns)],
+        [[f"${fmt(t)}$", f"${fmt(y,2)}$", f"${fmt(ln(y),4)}$"] for t, y in zip(ts, ys)],
     )
-    fig = semi_log_exp(P0, k, 10, "Semi-log samples")
+    fig = semi_log_exp(P0, k, 12, "Semi-log path for slope rebuild")
     overview = (
-        f"Semi-log slope $\\approx{fmt(slope,6)}$ recovers $k={fmt(k)}$. "
-        f"Equal time steps give equal ratios $y_{{t+\\Delta}}/y_t=e^{{k\\Delta}}\\approx{fmt(ratio,4)}$."
+        f"Semi-log slopes between any sample pair equal $k={fmt(k)}$. "
+        f"Discrete slope would be $\\ln(1+k)\\approx{fmt(ln(1+k),6)}$. "
+        f"Outer ratio $y(10)/y(0)=e^{{0.4}}\\approx{fmt(ys[2]/ys[0])}$, not $1+10k$."
     )
     return make_task(
-        title="Rebuild — semi-log table forces and equal-ratio check",
+        title="Rebuild — semi-log sample slopes versus discrete and linear traps",
         context=(
-            "A continuous exponential stock is sampled at three times (table). "
-            "The figure shows the semi-log path. Rebuild the force from the outer samples."
+            "A continuous exponential is sampled at three times (table). "
+            "The figure shows the semi-log path. Rebuild slopes from the samples."
         ),
         statements=[
-            rf"The semi-log slope between $t={fmt(ts[0])}$ and $t={fmt(ts[2])}$ equals the continuous force $k={fmt(k)}$.",
-            rf"The initial level is $P_0=600$.",
-            rf"The discrete model $y(t)=P_0(1+{fmt(k)})^{{t}}$ matches the continuous path for all $t$.",
-            r"Doubling time is strictly less than $10$ years.",
-            rf"The growth ratio $y({fmt(ts[1])})/y({fmt(ts[0])})$ equals $y({fmt(ts[2])})/y({fmt(ts[1])})$.",
+            rf"The semi-log slope between $t={fmt(ts[0])}$ and $t={fmt(ts[2])}$ equals $k={fmt(k)}$.",
+            rf"The semi-log slope between $t={fmt(ts[0])}$ and $t={fmt(ts[1])}$ equals $k={fmt(k)}$.",
+            rf"The discrete path $P_0(1+{fmt(k)})^{{t}}$ shares the same semi-log slope $k$.",
+            rf"$y({fmt(ts[2])})/y({fmt(ts[0])})=1+{fmt(k)}\cdot{fmt(ts[2])}$.",
+            rf"$\ln y({fmt(ts[2])})-\ln y({fmt(ts[0])})=10$.",
         ],
         answer_key=key,
         bodies=[
             [
-                D(rf"\frac{{\ln y({fmt(ts[2])})-\ln y({fmt(ts[0])})}}{{{fmt(ts[2]-ts[0])}}}\\approx{fmt(slope,6)}"),
+                D(rf"\frac{{\ln y({fmt(ts[2])})-\ln y({fmt(ts[0])})}}{{{fmt(ts[2]-ts[0])}}}={fmt(slope_outer,6)}"),
                 close(True, "Outer semi-log slope recovers $k$"),
             ],
             [
-                D(rf"P_0=y(0)={fmt(P0)}\neq 600"),
-                close(False, "The initial level is $500$, not $600$"),
+                D(rf"\frac{{\ln y({fmt(ts[1])})-\ln y({fmt(ts[0])})}}{{{fmt(ts[1]-ts[0])}}}={fmt(slope_mid,6)}"),
+                close(True, "Adjacent semi-log slope recovers the same $k$"),
             ],
             [
-                D(rf"1+k={fmt(1+k)},\qquad e^{{k}}\\approx{fmt(math.exp(k),6)}"),
-                close(False, "Discrete base $1+k$ is not the continuous multiplier $e^{k}$"),
+                D(rf"\ln\bigl(P_0(1+k)^{{t}}\bigr)=\ln P_0+t\ln(1+k)"),
+                D(rf"\ln(1+k)\\approx{fmt(ln(1+k),6)}\neq k"),
+                close(False, "Discrete semi-log slope is $\\ln(1+k)$, not $k$"),
             ],
             [
-                D(rf"t_{{\times 2}}=\frac{{\ln 2}}{{k}}\\approx{fmt(ln(2)/k)}"),
-                D(rf"{fmt(ln(2)/k)}\not< 10"),
-                close(False, "Doubling takes about $15.4$ years"),
+                D(rf"\frac{{y(10)}}{{y(0)}}=e^{{0.4}}\\approx{fmt(ys[2]/ys[0])}"),
+                D(rf"1+10k={fmt(1+10*k)}"),
+                close(False, "Linearisation $1+kt$ is not the exponential ratio"),
             ],
             [
-                "Equal time steps on a pure exponential give equal ratios.",
-                D(rf"\frac{{y(4)}}{{y(0)}}=e^{{4k}}=\frac{{y(8)}}{{y(4)}}\\approx{fmt(ratio,4)}"),
-                close(True, "The two successive ratios match"),
+                D(rf"\ln y(10)-\ln y(0)=k\cdot 10={fmt(k*10)}\neq 10"),
+                close(False, "The log-increment is $0.4$, not $10$"),
             ],
         ],
         overview=overview,
@@ -1495,28 +1533,26 @@ def t19_rebuild_semi_log_table() -> dict:
     )
 
 
-def t20_applied_letter_two_funds() -> dict:
-    """Two letter-parameter funds; cross and log time. 5 true."""
-    # Fund A: A e^{αt}, Fund B: B e^{βt} with A=B e^{γ}, α=β+δ, concrete
-    A, alpha, B, beta = 800.0, 0.04, 1200.0, 0.02
+def t20_applied_two_funds_letters() -> dict:
+    """Two letter-parameter funds; all five carefully true. 5 true."""
+    A, alpha, B, beta = 800.0, 0.05, 1200.0, 0.02
     t_meet = ln(B / A) / (alpha - beta)
-    # All carefully true with these numbers:
-    # A: t_meet = ln(B/A)/(α-β) True
-    # B: t_meet > 0 True (B>A, α>β)
-    # C: after meet A overtakes (α>β) True
-    # D: ln(A(t)/B(t)) = ln(A/B)+(α-β)t True
-    # E: at t=0, B>A True
+    meet_level = A * math.exp(alpha * t_meet)
+    # Also = A * (B/A)^{alpha/(alpha-beta)}
+    meet_alt = A * ((B / A) ** (alpha / (alpha - beta)))
     key = [True, True, True, True, True]
     assert sum(key) == 5
-    assert t_meet > 0
+    assert t_meet > 0 and abs(meet_level - meet_alt) < 1e-6
+
     fig = competing_populations(A, alpha, B, beta, t_meet + 10, "Two letter-parameter funds")
     overview = (
         f"Funds $A(t)={fmt(A)}e^{{{fmt(alpha)}t}}$, $B(t)={fmt(B)}e^{{{fmt(beta)}t}}$. "
         f"Crossing $t^*=\\ln(B/A)/(\\alpha-\\beta)\\approx{fmt(t_meet)}$; "
-        f"thereafter $A$ leads because $\\alpha>\\beta$."
+        f"meeting level $\\approx{fmt(meet_level)}$. "
+        f"Thereafter $A$ leads because $\\alpha>\\beta$."
     )
     return make_task(
-        title="Applied letters — two funds, log crossing, and who leads after",
+        title="Applied letters — two funds, log crossing, and meeting-level algebra",
         context=(
             f"Fund $A$ follows $A(t)=A_0 e^{{\\alpha t}}$ and fund $B$ follows "
             f"$B(t)=B_0 e^{{\\beta t}}$ with $A_0={fmt(A)}$, $\\alpha={fmt(alpha)}$, "
@@ -1527,7 +1563,7 @@ def t20_applied_letter_two_funds() -> dict:
             r"That meeting time is strictly positive.",
             r"For every $t>t^{*}$, fund $A$ strictly exceeds fund $B$.",
             r"$\ln(A(t)/B(t))=\ln(A_0/B_0)+(\alpha-\beta)t$ for every $t$.",
-            r"At $t=0$, fund $B$ strictly exceeds fund $A$.",
+            r"The common meeting level equals $A_0\cdot(B_0/A_0)^{\alpha/(\alpha-\beta)}$.",
         ],
         answer_key=key,
         bodies=[
@@ -1551,8 +1587,13 @@ def t20_applied_letter_two_funds() -> dict:
                 close(True, "Log-quotient is affine in $t$ with slope $\\alpha-\\beta$"),
             ],
             [
-                D(rf"B_0={fmt(B)}>A_0={fmt(A)}"),
-                close(True, "Initially $B$ is larger"),
+                "Substitute the meeting clock into fund $A$.",
+                D(
+                    r"A(t^{*})=A_0\exp\!\Bigl(\alpha\cdot\frac{\ln(B_0/A_0)}{\alpha-\beta}\Bigr)"
+                    r"=A_0\cdot(B_0/A_0)^{\alpha/(\alpha-\beta)}"
+                ),
+                D(rf"A(t^{{*}})\\approx{fmt(meet_level)}"),
+                close(True, "The power form is exactly the meeting level"),
             ],
         ],
         overview=overview,
@@ -1560,72 +1601,72 @@ def t20_applied_letter_two_funds() -> dict:
         figure=fig,
     )
 
-
-# ---- Cycle 3 ---------------------------------------------------------------
-
-
-def t21_hybrid_piece_and_elasticity() -> dict:
-    """Piecewise stock + elasticity on a drifting price. 4 true."""
-    P0, k1, T, k2 = 1000.0, 0.05, 4.0, 0.02
-    b, g = 1.5, 0.03
-    fT = P0 * math.exp(k1 * T)
-    ft = fT * math.exp(k2 * 6)  # at t=T+6=10
-    t = T + 6
-    qf = -b * g
-    # A: ln(f(t)/P0)=k1 T + k2(t-T) True
-    # B: avg force > 0.03 True? avg=(0.05*4+0.02*6)/10=0.32/10=0.032>0.03 True
-    # C: qf = -bg True
-    # D: demand inelastic False (b=1.5>1)
-    # E: f(t)>1.5 P0 True? e^{0.32}≈1.377 <1.5 False
-    # Wait need 4 true — E false is good. D false. A,B,C true only 3.
-    # Change E: f(t)>1.3 P0 — e^{0.32}≈1.377>1.3 True
-    key = [True, True, True, False, True]
+def t21_hybrid_cont_disc_piece() -> dict:
+    """Hybrid: piecewise continuous vs a discrete rival hitting the same target. 4 true."""
+    A, alpha, beta = 500.0, 0.06, 0.03
+    tau = 5.0
+    M = 500.0 * math.exp(alpha * tau) * math.exp(beta * 10)  # hit at t=15 by construction
+    t_hit = tau + 10.0
+    f_tau = A * math.exp(alpha * tau)
+    # discrete rival: A(1+r)^t = M ⇒ t = ln(M/A)/ln(1+r); pick r=0.05
+    r = 0.03
+    t_disc = ln(M / A) / ln(1 + r)
+    avg = ln(M / A) / t_hit
+    # A True: t_hit = tau + ln(M/f_tau)/beta
+    # B True: avg reproduces M
+    # C True: t_disc > t_hit  (need verify)
+    # D True: ln(M/A) = alpha*tau + beta*10
+    # E False: discrete hits earlier than continuous piecewise
+    key = [True, True, True, True, False]
     assert sum(key) == 4
-    avg = (k1 * T + k2 * (t - T)) / t
-    assert avg > 0.03 and math.exp(avg * t) > 1.3
-    fig = piecewise_kink(P0, k1, T, k2, t, "Piecewise stock beside price drift")
+    assert abs(t_hit - (tau + ln(M / f_tau) / beta)) < 1e-9
+    assert t_disc > t_hit
+
+    fig = piecewise_kink(A, alpha, tau, beta, t_hit + 5, "Piecewise continuous vs target")
     overview = (
-        f"Piecewise log-increment $k_1 T+k_2(t-T)={fmt(k1*T+k2*(t-T))}$, "
-        f"$\\bar k\\approx{fmt(avg,6)}$. Quantity force $-bg={fmt(qf,6)}$."
+        f"Piecewise hit $t_{{\\mathrm{{hit}}}}={fmt(t_hit)}$, "
+        f"$\\bar k={fmt(avg,6)}$. Discrete rival with $r={fmt(r)}$ needs "
+        f"$t_{{\\mathrm{{disc}}}}\\approx{fmt(t_disc)}>t_{{\\mathrm{{hit}}}}$."
     )
     return make_task(
-        title="Hybrid — piecewise stock force beside constant-elasticity demand",
+        title="Hybrid — piecewise continuous hit racing a discrete $(1+r)^{t}$ rival",
         context=(
-            f"A stock starts at $P_0={fmt(P0)}$, grows at force $k_1={fmt(k1)}$ until "
-            f"$t={fmt(T)}$, then at force $k_2={fmt(k2)}$. Separately prices drift at "
-            f"force $g={fmt(g)}$ with demand elasticity magnitude $b={fmt(b)}$. "
-            f"Read the stock at horizon $t={fmt(t)}$."
+            f"A fund starts at $A={fmt(A)}$, grows at force $\\alpha={fmt(alpha)}$ until "
+            f"$t=\\tau={fmt(tau)}$, then at force $\\beta={fmt(beta)}$. Target "
+            f"$M\\approx{fmt(M,2)}$. A discrete rival starts at the same $A$ and grows by "
+            f"factor $(1+r)$ each year with $r={fmt(r)}$."
         ),
         statements=[
-            rf"$\ln(f({fmt(t)})/P_0)$ equals $k_1 T+k_2(t-T)$ exactly.",
-            rf"The average stock force $\bar k=\ln(f({fmt(t)})/P_0)/{fmt(t)}$ exceeds $0.03$.",
-            rf"Quantity's continuous force equals $-{fmt(b)}\cdot{fmt(g)}$.",
-            r"Demand is price-inelastic ($b<1$).",
-            rf"At $t={fmt(t)}$ the stock exceeds $1.3$ times $P_0$.",
+            r"The continuous hitting time equals $\tau+\ln(M/f(\tau))/\beta$.",
+            r"The path-average force $\bar k=\ln(M/A)/t_{\mathrm{hit}}$ reproduces the target.",
+            r"The discrete rival reaches $M$ strictly later than the piecewise continuous path.",
+            rf"$\ln(M/A)$ equals $\alpha\tau+\beta\cdot 10$.",
+            r"The discrete rival reaches $M$ strictly earlier than the piecewise continuous path.",
         ],
         answer_key=key,
         bodies=[
             [
-                D(r"f(t)=P_0 e^{k_1 T}e^{k_2(t-T)}"),
-                D(rf"\ln(f(t)/P_0)=k_1 T+k_2(t-T)={fmt(k1*T+k2*(t-T))}"),
-                close(True, "Logs add across the kink"),
+                D(rf"f(\tau)=A e^{{\alpha\tau}}\\approx{fmt(f_tau)}"),
+                D(rf"t_{{\mathrm{{hit}}}}=\tau+\frac{{\ln(M/f(\tau))}}{{\beta}}={fmt(t_hit)}"),
+                close(True, "Late-regime log solve recovers the piecewise hitting time"),
             ],
             [
-                D(rf"\bar k\\approx{fmt(avg,6)}>0.03"),
-                close(True, "Path-average force clears $0.03$"),
+                D(rf"\bar k=\frac{{\ln(M/A)}}{{t_{{\mathrm{{hit}}}}}}={fmt(avg,6)}"),
+                D(rf"A e^{{\bar k t_{{\mathrm{{hit}}}}}}=M"),
+                close(True, "Average force is exactly the log-increment rate"),
             ],
             [
-                D(rf"\frac{{d\ln Q}}{{dt}}=-bg={fmt(qf,6)}"),
-                close(True, "Constant elasticity converts price force into quantity force"),
+                D(rf"t_{{\mathrm{{disc}}}}=\frac{{\ln(M/A)}}{{\ln(1+r)}}\\approx{fmt(t_disc)}"),
+                D(rf"{fmt(t_disc)}>{fmt(t_hit)}"),
+                close(True, "Discrete compounding lags the piecewise continuous hit"),
             ],
             [
-                D(rf"b={fmt(b)}>1"),
-                close(False, "Demand is elastic"),
+                D(rf"\ln(M/A)=\alpha\tau+\beta\cdot 10={fmt(alpha*tau+beta*10)}"),
+                close(True, "Total log-increment is the sum of the two segments"),
             ],
             [
-                D(rf"f(t)=P_0 e^{{\bar k t}}\\approx{fmt(P0*math.exp(avg*t))}"),
-                D(rf"1.3 P_0={fmt(1.3*P0)}"),
-                close(True, "The stock clears the $1.3$ threshold"),
+                D(rf"t_{{\mathrm{{disc}}}}\\approx{fmt(t_disc)}>t_{{\mathrm{{hit}}}}={fmt(t_hit)}"),
+                close(False, "The discrete rival is slower, not faster"),
             ],
         ],
         overview=overview,
@@ -1634,29 +1675,33 @@ def t21_hybrid_piece_and_elasticity() -> dict:
     )
 
 
-def t22_graph_semi_log_trap() -> dict:
-    """Semi-log graph reading traps. 1 true."""
-    P0, k = 2000.0, 0.02
-    # A: semi-log is straight True — only one true
-    # B: slope equals P0 False
-    # C: intercept of ln y is ln P0, claim =P0 False
-    # D: at t=ln2/k, y=4 P0 False (is 2 P0)
-    # E: discrete same slope False
+def t22_graph_log_gap_traps() -> dict:
+    """Semi-log of pure exponential: slope/intercept/doubling traps — no straight-line claim. 1 true."""
+    P0, k = 2000.0, 0.025
+    t_double = ln(2) / k
+    # A True: slope of ln y vs t equals k
+    # B False: slope equals P0
+    # C False: vertical intercept of ln y equals P0
+    # D False: at t=ln2/k, y=4 P0
+    # E False: discrete P0(1+k)^t shares slope k
     key = [True, False, False, False, False]
     assert sum(key) == 1
-    fig = semi_log_exp(P0, k, 40, "Semi-log of a pure exponential")
+
+    fig = semi_log_exp(P0, k, 50, "Semi-log of a pure exponential")
     overview = (
-        f"$\\ln y(t)=\\ln P_0+kt$ with $P_0={fmt(P0)}$, $k={fmt(k)}$ is affine; "
-        f"slope $k$, intercept $\\ln P_0\\approx{fmt(ln(P0),4)}$."
+        f"$\\ln y(t)=\\ln P_0+kt$ with $P_0={fmt(P0)}$, $k={fmt(k)}$: "
+        f"slope $k$, intercept $\\ln P_0\\approx{fmt(ln(P0),4)}$. "
+        f"At $t=\\ln 2/k\\approx{fmt(t_double)}$ the level is $2P_0$, not $4P_0$. "
+        f"Discrete slope is $\\ln(1+k)$."
     )
     return make_task(
-        title="Graph — semi-log straightness and three tempting misreads",
+        title="Graph — semi-log slope, intercept, and doubling misreads",
         context=(
             f"A level $y(t)=P_0 e^{{kt}}$ with $P_0={fmt(P0)}$ and $k={fmt(k)}$ is plotted "
             f"on a semi-log chart (figure): vertical axis $\\ln y$, horizontal axis $t$."
         ),
         statements=[
-            r"The semi-log graph is a straight line.",
+            rf"The slope of $\ln y$ against $t$ equals the force $k={fmt(k)}$.",
             rf"The slope of that line equals $P_0={fmt(P0)}$.",
             rf"The vertical intercept of $\ln y$ equals $P_0$.",
             rf"At $t=\ln 2/k$ the level equals $4P_0$.",
@@ -1666,7 +1711,8 @@ def t22_graph_semi_log_trap() -> dict:
         bodies=[
             [
                 D(r"\ln y(t)=\ln P_0+kt"),
-                close(True, "An affine function of $t$ is a straight semi-log graph"),
+                D(rf"\mathrm{{slope}}=k={fmt(k)}"),
+                close(True, "Differentiating the log-level recovers the force"),
             ],
             [
                 D(rf"\mathrm{{slope}}=k={fmt(k)}\neq P_0"),
@@ -1692,68 +1738,68 @@ def t22_graph_semi_log_trap() -> dict:
     )
 
 
-def t23_table_cont_disc_ratios() -> dict:
-    """Table of cont vs disc balances; log returns. 5 true."""
-    P, r, years = 1000.0, 0.05, [1.0, 5.0, 10.0]
+def t23_table_cont_disc_balances() -> dict:
+    """Table of continuous vs discrete balances; five true log-return claims. 5 true."""
+    P, r = 1000.0, 0.05
+    k = ln(1 + r)  # match at 1 year? Or use k=r
+    # Use k=0.05 continuous vs discrete r=0.05
+    k = 0.05
+    years = [1.0, 5.0, 10.0]
     rows = []
     for t in years:
-        rows.append((t, P * math.exp(r * t), P * (1 + r) ** t))
-    t = 10.0
-    Ac, Ad = rows[-1][1], rows[-1][2]
-    # All true:
-    # A: Ac>Ad at t=10 True
-    # B: ln(Ac/P)=r t True
-    # C: ln(Ad/P)/t = ln(1+r) < r True
-    # D: cont reaches Ad before t=10 True
-    # E: relative gap Ac/Ad -1 > 0 True
+        rows.append([f"${fmt(t)}$", f"${fmt(P*math.exp(k*t),2)}$", f"${fmt(P*((1+r)**t),2)}$"])
+    # A True: cont > disc at each listed t>0 (since e^{kt}>(1+k)^t for k=r=0.05? 
+    # Actually e^{0.05}≈1.05127 > 1.05, so yes cont > disc
+    # B True: ln(cont(10)/P)=10k=0.5
+    # C True: ln(disc(10)/P)=10 ln(1+r)
+    # D True: cont(10)/cont(5) = e^{5k}
+    # E True: disc(10)/disc(5) = (1+r)^5
     key = [True, True, True, True, True]
     assert sum(key) == 5
-    t_star = ln(Ad / P) / r
-    assert t_star < t and Ac > Ad
-    table = md_table(
-        ["$t$", "$A_c=Pe^{rt}$", "$A_d=P(1+r)^{t}$"],
-        [[f"${fmt(t)}$", f"${fmt(ac,2)}$", f"${fmt(ad,2)}$"] for t, ac, ad in rows],
-    )
-    fig = svg_exp(P0=P, k=r, tmax=10, title="Continuous vs annual", discrete_r=r, mark_t=10)
+    assert math.exp(k) > (1 + r)
+
+    table = md_table(["$t$", "continuous $Pe^{kt}$", "discrete $P(1+r)^{t}$"], rows)
+    fig = two_models(P, k, 1 + r, 12, "Continuous vs discrete balances")
     overview = (
-        f"At $t={fmt(t)}$: $A_c\\approx{fmt(Ac,2)}$, $A_d\\approx{fmt(Ad,2)}$. "
-        f"Continuous time to match $A_d$ is $t^*\\approx{fmt(t_star)}$. "
-        f"Average discrete force $\\ln(1+r)\\approx{fmt(ln(1+r),6)}$."
+        f"With $k=r={fmt(k)}$, continuous leads because $e^{{k}}>1+k$. "
+        f"$\\ln(P e^{{10k}}/P)=0.5$, $\\ln(P(1+r)^{{10}}/P)=10\\ln(1+r)\\approx{fmt(10*ln(1+r),4)}$."
     )
     return make_task(
-        title="Table — continuous versus annual balances and log returns",
+        title="Table — continuous versus discrete balances and exact log-returns",
         context=(
-            f"Principal $P={fmt(P)}$ at nominal rate $r={fmt(r)}$. The table compares "
-            f"continuous $A_c=Pe^{{rt}}$ with annual $A_d=P(1+r)^{t}$. The figure overlays both."
+            f"A principal $P={fmt(P)}$ grows either continuously at force $k={fmt(k)}$ "
+            f"or discretely by factor $(1+r)$ each year with $r={fmt(r)}$. "
+            f"Balances at selected times are tabulated."
         ),
         statements=[
-            rf"At $t={fmt(t)}$, continuous compounding exceeds annual compounding.",
-            rf"$\ln(A_c/P)$ at $t={fmt(t)}$ equals $rt$ exactly.",
-            rf"The average continuous force implied by $A_d$, namely $\ln(A_d/P)/{fmt(t)}$, is strictly less than $r$.",
-            rf"The continuous model reaches the annual model's ${fmt(t)}$-year balance in strictly less than ${fmt(t)}$ years.",
-            r"The continuous balance exceeds the annual balance (strict inequality of levels).",
+            r"At each tabulated positive time, the continuous balance strictly exceeds the discrete balance.",
+            r"$\ln(P e^{10k}/P)=0.5$.",
+            rf"$\ln\!\bigl(P(1+r)^{{10}}/P\bigr)=10\ln(1+r)$.",
+            r"The continuous five-year growth factor from $t=5$ to $t=10$ equals $e^{5k}$.",
+            r"The discrete five-year growth factor from $t=5$ to $t=10$ equals $(1+r)^{5}$.",
         ],
         answer_key=key,
         bodies=[
             [
-                D(rf"A_c\\approx{fmt(Ac,2)}>A_d\\approx{fmt(Ad,2)}"),
-                close(True, "Continuous wins at the shared horizon"),
+                D(rf"e^{{k}}={fmt(math.exp(k),6)}>(1+r)={fmt(1+r)}"),
+                "so the continuous path stays strictly above the discrete path for all $t>0$.",
+                close(True, "Strict dominance holds at every tabulated positive time"),
             ],
             [
-                D(r"\ln(A_c/P)=\ln(e^{rt})=rt"),
-                close(True, "Log-return of continuous compounding is exactly $rt$"),
+                D(r"\ln(e^{10k})=10k=0.5"),
+                close(True, "Ten years at force $0.05$ give log-return $0.5$"),
             ],
             [
-                D(rf"\frac{{\ln(A_d/P)}}{{t}}=\ln(1+r)\\approx{fmt(ln(1+r),6)}<{fmt(r)}"),
-                close(True, "Strict concavity of $\\ln$ forces $\\ln(1+r)<r$"),
+                D(r"\ln((1+r)^{10})=10\ln(1+r)"),
+                close(True, "Discrete log-return is years times $\\ln(1+r)$"),
             ],
             [
-                D(rf"t^*=\frac{{\ln(A_d/P)}}{{r}}\\approx{fmt(t_star)}<{fmt(t)}"),
-                close(True, "Continuous compounding hits the annual terminal early"),
+                D(r"\frac{P e^{10k}}{P e^{5k}}=e^{5k}"),
+                close(True, "Continuous growth factors multiply by adding exponents"),
             ],
             [
-                D(rf"A_c-A_d\\approx{fmt(Ac-Ad,2)}>0"),
-                close(True, "Levels differ strictly"),
+                D(r"\frac{P(1+r)^{10}}{P(1+r)^{5}}=(1+r)^{5}"),
+                close(True, "Discrete growth factors multiply by adding years in the exponent"),
             ],
         ],
         overview=overview,
@@ -1763,176 +1809,194 @@ def t23_table_cont_disc_ratios() -> dict:
     )
 
 
-def t24_symbolic_log_identities() -> dict:
-    """Symbolic exp/log identities with a growth side-condition. 3 true."""
-    # A: ln(e^{kt})=kt True
-    # B: e^{ln u}=u for u>0 True
-    # C: ln(uv)=ln u + ln v True
-    # D: ln(u+v)=ln u + ln v False
-    # E: (e^k)^t = e^{k+t} False (=e^{kt})
+def t24_symbolic_log_exp_domain() -> dict:
+    """Symbolic domain/range traps for mixed compositions. 3 true."""
+    # f(x)=ln(e^x - 1) for x>0; g(y)=ln(1+e^y)
+    # Simpler concrete:
+    # A True: domain of ln(e^x - 1) is x>0
+    # B True: ln(e^x - 1) < x for all x>0
+    # C True: exp(ln(3)-ln(2))=3/2
+    # D False: domain of ln(e^x - 1) includes x=0
+    # E False: ln(e^x - 1) > x for x>1
     key = [True, True, True, False, False]
     assert sum(key) == 3
+    # verify B: ln(e^x - 1) < x iff e^x - 1 < e^x iff -1<0 True
+    assert abs(math.exp(ln(3) - ln(2)) - 1.5) < 1e-12
+
+    fig = svg_curves(
+        [(lambda x: math.log(math.exp(x) - 1) if x > 0.05 else float("nan"), "#8B5A2B", "ln(e^x-1)")],
+        xmin=0.1,
+        xmax=4,
+        title="ln(e^x-1) on (0,∞)",
+        xlabel="x",
+        ylabel="value",
+    )
     overview = (
-        "Standard identities: $\\ln(e^{kt})=kt$, $e^{\\ln u}=u$ ($u>0$), "
-        "$\\ln(uv)=\\ln u+\\ln v$. Sums and the false exponent rule break."
+        r"Domain of $\ln(e^{x}-1)$ is $x>0$. "
+        r"For $x>0$, $\ln(e^{x}-1)<x$ because $e^{x}-1<e^{x}$. "
+        r"$\exp(\ln 3-\ln 2)=3/2$. At $x=0$ the argument vanishes."
     )
     return make_task(
-        title="Symbolic — which exp/log identities survive beside growth",
+        title="Symbolic — domain of $\\ln(e^{x}-1)$ and nested exp/log evaluations",
         context=(
-            r"Let $k$ be a real force and $t$ a real time. Let $u,v>0$ be positive levels. "
-            r"Judge each identity claim on its own."
+            r"Consider $h(x)=\ln(e^{x}-1)$ together with standard nested exp/log "
+            r"evaluations. The figure sketches $h$ on $(0,\infty)$."
         ),
         statements=[
-            r"$\ln(e^{kt})=kt$ for every real $k,t$.",
-            r"$e^{\ln u}=u$ for every $u>0$.",
-            r"$\ln(uv)=\ln u+\ln v$ for every $u,v>0$.",
-            r"$\ln(u+v)=\ln u+\ln v$ for every $u,v>0$.",
-            r"$(e^{k})^{t}=e^{k+t}$ for every real $k,t$.",
+            r"The natural domain of $h(x)=\ln(e^{x}-1)$ is the open half-line $x>0$.",
+            r"For every $x>0$, $h(x)<x$.",
+            r"$\exp(\ln 3-\ln 2)=3/2$.",
+            r"The point $x=0$ lies in the natural domain of $h$.",
+            r"For every $x>1$, $h(x)>x$.",
         ],
         answer_key=key,
         bodies=[
             [
-                "Natural log undoes the exponential.",
-                D(r"\ln(e^{kt})=kt"),
-                close(True, "This is the defining inverse identity"),
+                "Need $e^{x}-1>0$, i.e. $e^{x}>1$, i.e. $x>0$.",
+                D(r"e^{x}-1>0\iff x>0"),
+                close(True, "The natural domain is exactly the positive half-line"),
             ],
             [
-                D(r"e^{\ln u}=u\qquad(u>0)"),
-                close(True, "Exponential undoes the natural log on $(0,\\infty)$"),
+                D(r"h(x)<x\iff e^{x}-1<e^{x}\iff -1<0"),
+                close(True, "The inequality holds for every $x>0$"),
             ],
             [
-                D(r"\ln(uv)=\ln u+\ln v"),
-                close(True, "Log turns products into sums"),
+                D(r"\exp(\ln 3-\ln 2)=\exp(\ln(3/2))=3/2"),
+                close(True, "Difference of logs becomes a quotient under exp"),
             ],
             [
-                "Counter-example: $u=v=e$ gives $\\ln(2e)=\\ln 2+1$ while $\\ln u+\\ln v=2$.",
-                D(r"\ln 2+1\neq 2"),
-                close(False, "Logs do not linearise sums"),
+                D(r"e^{0}-1=0"),
+                "and $\\ln 0$ is undefined.",
+                close(False, "Zero is not in the domain"),
             ],
             [
-                D(r"(e^{k})^{t}=e^{kt}\neq e^{k+t}"),
-                close(False, "Exponents multiply under powering, they do not add that way"),
+                "The opposite inequality was already ruled out in B.",
+                D(r"h(x)<x\quad(x>0)"),
+                close(False, "In particular $h(x)$ never exceeds $x$ on $(1,\\infty)$"),
             ],
         ],
         overview=overview,
         stem_kind="symbolic",
+        figure=fig,
     )
 
 
 def t25_parametric_domain_side() -> dict:
-    """Parametric exp model with log domain side-conditions. 2 true."""
-    # N(t)=A e^{kt} with A>0,k real; require ln(A-1) defined ⇒ A>1; and ln(2-k) defined ⇒ k<2
-    # Pick A=e, k=0.5 — both ok
-    A, k = math.e, 0.5
-    # A: A>1 True
-    # B: k<2 True
-    # C: ln(A-1)=0 ⇒ A-1=1 ⇒ A=2 False (A=e)
-    # D: domain of ln(2-k) needs k<2, claim k>2 False
-    # E: N(0)=A True — would be 3rd true. Claim N(0)=1 False
+    """Parametric family with domain side-condition on log. 2 true."""
+    # y_a(t)=a e^{0.1 t}, require ln(a)=1 ⇒ a=e
+    a = math.e
+    k = 0.1
+    # A True: a=e
+    # B True: y_a(ln10 / k)=10 e   because e^{k t}=10
+    # C False: y_a(10)=10 a
+    # D False: domain of ln(y_a(t)) excludes some t (never, always positive)
+    # E False: doubling time is ln2 / a
+    t10 = ln(10) / k
     key = [True, True, False, False, False]
     assert sum(key) == 2
+    assert abs(a * math.exp(k * t10) - 10 * a) < 1e-9
+
+    fig = svg_exp(P0=a, k=k, tmax=t10 + 2, title="Parametric path with ln a = 1", mark_t=t10)
     overview = (
-        f"Side-conditions $\\ln(A-1)$ and $\\ln(2-k)$ force $A>1$ and $k<2$. "
-        f"Here $A=e$ and $k={fmt(k)}$ obey both; $\\ln(A-1)=\\ln(e-1)\\neq 0$."
+        f"Constraint $\\ln a=1$ forces $a=e$. Force $k={fmt(k)}$. "
+        f"Clock $t=\\ln 10/k={fmt(t10)}$ sends the path to $10e$. "
+        f"Doubling time is $\\ln 2/k$, not $\\ln 2/a$."
     )
     return make_task(
-        title="Parametric — log domain side-conditions on an exponential stock",
+        title="Parametric — log side-condition on the initial level",
         context=(
-            r"A stock $N(t)=A e^{kt}$ carries auxiliary log expressions $\ln(A-1)$ and "
-            r"$\ln(2-k)$ that must be defined in the reals. Suppose the calibrated "
-            r"pair is $A=e$ and $k=\dfrac{1}{2}$."
+            rf"For $a>0$ let $y_a(t)=a e^{{{fmt(k)}t}}$. Impose the side-condition "
+            rf"$\ln a=1$."
         ),
         statements=[
-            r"The calibrated level satisfies $A>1$.",
-            r"The calibrated force satisfies $k<2$.",
-            r"$\ln(A-1)=0$.",
-            r"The expression $\ln(2-k)$ requires $k>2$ as a domain condition.",
-            r"$N(0)=1$.",
+            r"$a=e$.",
+            rf"$y_a(\ln 10/k)=10e$.",
+            rf"$y_a(10)=10a$.",
+            r"There exist times $t$ at which $\ln(y_a(t))$ is undefined.",
+            r"The doubling time equals $\ln 2/a$.",
         ],
         answer_key=key,
         bodies=[
             [
-                D(r"A=e>1"),
-                close(True, "The level clears the domain threshold for $\\ln(A-1)$"),
+                D(r"\ln a=1\implies a=e"),
+                close(True, "The side-condition fixes the initial level"),
             ],
             [
-                D(r"k=\tfrac12<2"),
-                close(True, "The force sits below the domain threshold for $\\ln(2-k)$"),
+                D(rf"y_a(\ln 10/k)=e\cdot e^{{\ln 10}}=10e"),
+                close(True, "The nest multiplies the initial level by ten"),
             ],
             [
-                D(r"\ln(A-1)=\ln(e-1)\neq 0"),
-                close(False, "$e-1\\neq 1$, so the log is not zero"),
+                D(rf"y_a(10)=a e^{{10k}}=a e={fmt(a*math.exp(1))}"),
+                D(rf"10a={fmt(10*a)}"),
+                close(False, "Exponent $10k=1$ yields factor $e$, not $10$"),
             ],
             [
-                "Natural log $\\ln(2-k)$ needs $2-k>0$, i.e. $k<2$.",
-                close(False, "The domain inequality runs $k<2$, not $k>2$"),
+                D(r"y_a(t)=a e^{kt}>0\quad\text{for all }t"),
+                close(False, "The log-level is defined for every real $t$"),
             ],
             [
-                D(r"N(0)=A=e\neq 1"),
-                close(False, "Initial stock equals $A=e$, not $1$"),
+                D(rf"t_{{\times 2}}=\frac{{\ln 2}}{{k}}={fmt(ln(2)/k)}\neq\frac{{\ln 2}}{{a}}"),
+                close(False, "Doubling uses the force in the denominator, not the initial level"),
             ],
         ],
         overview=overview,
         stem_kind="parametric",
+        figure=fig,
     )
-
 
 def t26_piecewise_wrong_average() -> dict:
-    """Piecewise with a false average-force claim. 1 true."""
-    P0, k1, T, k2, t = 900.0, 0.07, 2.0, 0.03, 8.0
-    ft = P0 * math.exp(k1 * T) * math.exp(k2 * (t - T))
-    avg_true = (k1 * T + k2 * (t - T)) / t
-    avg_wrong = (k1 + k2) / 2
-    # A: ln(f/P0)=k1T+k2(t-T) True — only one
-    # B: avg = (k1+k2)/2 False
-    # C: k2>k1 False
-    # D: f(t)<P0 False (growth)
-    # E: hit of 2P0 uses only k1 False
+    """Piecewise path with a wrong arithmetic-average trap. 1 true."""
+    P0, k1, T, k2 = 400.0, 0.08, 4.0, 0.02
+    t = 12.0
+    log_inc = k1 * T + k2 * (t - T)
+    avg = log_inc / t
+    arith = (k1 + k2) / 2
+    ft = P0 * math.exp(log_inc)
     key = [True, False, False, False, False]
     assert sum(key) == 1
-    assert abs(avg_true - avg_wrong) > 1e-6 and ft > P0 and k2 < k1
-    fig = piecewise_kink(P0, k1, T, k2, t, "Piecewise path vs naive average")
+    assert abs(avg - arith) > 1e-6 and ft > P0
+
+    fig = piecewise_kink(P0, k1, T, k2, t, "Piecewise path vs wrong averages")
     overview = (
-        f"True average $\\bar k={fmt(avg_true,6)}$ from weighted forces; "
-        f"naive $(k_1+k_2)/2={fmt(avg_wrong,6)}$ differs. "
-        f"$f({fmt(t)})\\approx{fmt(ft)}$."
+        f"True path-average $\\bar k={fmt(avg,6)}$ from log-increment "
+        f"${fmt(log_inc)}$. Arithmetic mean $(k_1+k_2)/2={fmt(arith)}$ "
+        f"and the late force $k_2$ both mis-predict $f(t)\\approx{fmt(ft)}$."
     )
     return make_task(
-        title="Piecewise — true log-average versus arithmetic mean of forces",
+        title="Piecewise — true log-average versus arithmetic-mean traps",
         context=(
-            f"A fund starts at $P_0={fmt(P0)}$, grows at force $k_1={fmt(k1)}$ until "
-            f"$t={fmt(T)}$, then at force $k_2={fmt(k2)}$ through horizon $t={fmt(t)}$."
+            f"A path starts at $P_0={fmt(P0)}$, grows at force $k_1={fmt(k1)}$ on "
+            f"$[0,{fmt(T)}]$, then at force $k_2={fmt(k2)}$ through $t={fmt(t)}$."
         ),
         statements=[
-            rf"$\ln(f({fmt(t)})/P_0)$ equals $k_1 T+k_2(t-T)$ exactly.",
-            rf"The path-average force equals $(k_1+k_2)/2={fmt(avg_wrong)}$.",
-            r"The late force is strictly larger than the early force.",
-            rf"At $t={fmt(t)}$ the fund lies strictly below $P_0$.",
-            rf"Doubling time from $P_0$ equals $\ln 2/k_1$ even after the switch.",
+            rf"The path-average force equals $\ln(f({fmt(t)})/P_0)/{fmt(t)}$.",
+            r"The path-average force equals $(k_1+k_2)/2$.",
+            rf"$f({fmt(t)})=P_0 e^{{((k_1+k_2)/2)\cdot{fmt(t)}}}$.",
+            r"The path-average force equals the late force $k_2$.",
+            rf"$f({fmt(t)})<P_0$.",
         ],
         answer_key=key,
         bodies=[
             [
-                D(rf"\ln(f(t)/P_0)=k_1 T+k_2(t-T)={fmt(k1*T+k2*(t-T))}"),
-                close(True, "Logs add across segments"),
+                D(rf"\bar k=\frac{{\ln(f(t)/P_0)}}{{t}}=\frac{{{fmt(log_inc)}}}{{{fmt(t)}}}={fmt(avg,6)}"),
+                close(True, "Path-average is log-increment over elapsed time"),
             ],
             [
-                D(rf"\bar k=\frac{{k_1 T+k_2(t-T)}}{{t}}={fmt(avg_true,6)}\neq{fmt(avg_wrong)}"),
-                close(False, "Time-weighted average is not the arithmetic mean of the two forces"),
+                D(rf"\frac{{k_1+k_2}}{{2}}={fmt(arith)}\neq\bar k={fmt(avg,6)}"),
+                close(False, "Equal-weight arithmetic mean ignores unequal segment lengths"),
             ],
             [
-                D(rf"k_2={fmt(k2)}<k_1={fmt(k1)}"),
-                close(False, "The late force is smaller"),
+                D(rf"P_0 e^{{\mathrm{{arith}}\cdot t}}\\approx{fmt(P0*math.exp(arith*t))}"),
+                D(rf"f(t)\\approx{fmt(ft)}"),
+                close(False, "Exponentiating the arithmetic mean misses the true level"),
+            ],
+            [
+                D(rf"\bar k={fmt(avg,6)}\neq k_2={fmt(k2)}"),
+                close(False, "The early high-force segment still lifts the average"),
             ],
             [
                 D(rf"f(t)\\approx{fmt(ft)}>P_0"),
-                close(False, "Positive forces lift the fund above $P_0$"),
-            ],
-            [
-                "After the switch the correct doubling solve uses both segments.",
-                D(rf"\frac{{\ln 2}}{{k_1}}\\approx{fmt(ln(2)/k1)}"),
-                "is only valid if $2P_0$ is reached before the kink — not guaranteed as a general rule.",
-                close(False, "The constant-$k_1$ doubling clock ignores the switch"),
+                close(False, "Both forces are positive, so the level rises"),
             ],
         ],
         overview=overview,
@@ -1942,183 +2006,192 @@ def t26_piecewise_wrong_average() -> dict:
 
 
 def t27_nested_double_log_growth() -> dict:
-    """Nested double-log constraint on growth. 5 true."""
-    # ln(ln A) = ln 2 ⇒ ln A = 2 ⇒ A = e^2
-    # ln(ln (1/k)) = 0 ⇒ ln(1/k)=1 ⇒ 1/k=e ⇒ k=1/e
-    A = math.exp(2)
-    k = 1 / math.e
-    t_hit = ln(A) / k  # grow from 1? Use N(t)=e^{kt} hit A: t=ln(A)/k=2e
-    # Actually model N(t)=N0 e^{kt} with N0=1, hit A
-    # A: A=e^2 True
-    # B: k=e^{-1} True
-    # C: t_hit = ln(A)/k = 2e True
-    # D: ln(ln A)=ln 2 True
-    # E: A k = e^2 / e = e True claim A k = e
+    """Double-log nests beside a growth model; five true claims. 5 true."""
+    k = 0.5
+    t_mark = 2 * ln(2)
     key = [True, True, True, True, True]
     assert sum(key) == 5
-    assert abs(t_hit - 2 * math.e) < 1e-12
+    assert abs(ln(ln(math.exp(math.e))) - 1) < 1e-12
+    assert abs(math.exp(ln(ln(math.exp(math.e)))) - math.e) < 1e-9
+    assert abs(math.log(math.exp(ln(8)), 2) - 3) < 1e-12
+    assert abs(ln(math.exp(k * t_mark)) - ln(2)) < 1e-12
+
+    fig = svg_exp(P0=1.0, k=k, tmax=6, title="Side path P(t)=e^{0.5 t}", mark_t=t_mark)
     overview = (
-        f"Nested constraints give $A=e^{2}$, $k=e^{{-1}}$. "
-        f"Hitting $A$ from $N(0)=1$ takes $t=\\ln A/k=2e\\approx{fmt(t_hit)}$."
+        r"Nests: $\ln(\ln e^{e})=1$, $\exp(\ln(\ln e^{e}))=e$, "
+        r"$\log_2(e^{\ln 8})=3$. Side path $P(t)=e^{0.5 t}$ satisfies "
+        r"$\ln P(2\ln 2)=\ln 2$ and $(\ln P(t))/t=1/2$."
     )
     return make_task(
-        title="Nested — double-log constraints pinning level and force",
+        title="Nested — double logs, change-of-base, and a side growth path",
         context=(
-            r"A normalised stock $N(t)=e^{kt}$ is aimed at a level $A>e$. The pair "
-            r"$(A,k)$ satisfies $\ln(\ln A)=\ln 2$ and $\ln(\ln(1/k))=0$."
+            r"Evaluate nested exponential/logarithmic compositions, and use the side "
+            r"path $P(t)=e^{0.5 t}$ (figure)."
         ),
         statements=[
-            r"$A=e^{2}$.",
-            r"$k=e^{-1}$.",
-            r"The hitting time of level $A$ equals $2e$.",
-            r"$\ln(\ln A)=\ln 2$.",
-            r"The product $Ak$ equals $e$.",
+            r"$\ln(\ln e^{e})=1$.",
+            r"$\exp\!\bigl(\ln(\ln e^{e})\bigr)=e$.",
+            r"$\log_2\!\bigl(\exp(\ln 8)\bigr)=3$.",
+            r"$\ln\!\bigl(P(2\ln 2)\bigr)=\ln 2$.",
+            r"For every $t\neq 0$, $\dfrac{\ln P(t)}{t}=\dfrac{1}{2}$.",
         ],
         answer_key=key,
         bodies=[
             [
-                D(r"\ln(\ln A)=\ln 2\implies\ln A=2\implies A=e^{2}"),
-                close(True, "Unwinding both logs pins $A=e^{2}$"),
+                D(r"\ln e^{e}=e,\qquad \ln(\ln e^{e})=\ln e=1"),
+                close(True, "The double log peels down to $1$"),
             ],
             [
-                D(r"\ln(\ln(1/k))=0\implies\ln(1/k)=1\implies 1/k=e\implies k=e^{-1}"),
-                close(True, "The nested constraint on $1/k$ pins the force"),
+                D(r"\ln(\ln e^{e})=1,\qquad \exp(1)=e"),
+                close(True, "One outer exponential restores $e$"),
             ],
             [
-                D(r"t=\frac{\ln A}{k}=\frac{2}{e^{-1}}=2e"),
-                close(True, "Hitting time is exactly $2e$"),
+                D(r"\exp(\ln 8)=8,\qquad \log_2 8=3"),
+                close(True, "Inner cancellation leaves an integer base-$2$ log"),
             ],
             [
-                "This is the given constraint, already verified by $A=e^{2}$.",
-                D(r"\ln(\ln e^{2})=\ln 2"),
-                close(True, "The outer nested log recovers $\\ln 2$"),
+                D(r"P(2\ln 2)=e^{0.5\cdot 2\ln 2}=e^{\ln 2}=2"),
+                D(r"\ln 2=\ln 2"),
+                close(True, "The marked clock sends the side path to $2$"),
             ],
             [
-                D(r"Ak=e^{2}\cdot e^{-1}=e"),
-                close(True, "The product collapses to $e$"),
+                D(r"\frac{\ln P(t)}{t}=\frac{0.5 t}{t}=\frac{1}{2}"),
+                close(True, "Log-level over time recovers the constant force"),
             ],
         ],
         overview=overview,
         stem_kind="nested",
+        figure=fig,
     )
 
 
 def t28_text_dense_inverse_traps() -> dict:
-    """Text-dense inverse/exp traps with a growth model. 2 true."""
-    P, k = 50.0, 0.1
-    # f(t)=P e^{kt}; g inverse
-    # A: g(2P)=ln2/k True
-    # B: g(P)=0 True
-    # C: g(-1) defined False
-    # D: f(g(y))=y for y=-3 False (not in range)
-    # E: g(f(3))=3 True — would be 3rd. Claim g(f(3))=1/k False
+    """Dense inverse / composition traps for exp and log. 2 true."""
+    # A True: (ln ∘ exp)(x)=x for all real x
+    # B True: (exp ∘ ln)(x)=x for all x>0
+    # C False: (ln ∘ exp)(x)=x for complex... keep real: claim domain of exp∘ln is all reals F
+    # D False: ln(exp(x)+exp(-x))=0 for all x? Only x=0? Actually cosh... ln(2cosh x)≠0
+    # E False: inverse of e^{2t} is (1/2)e^{-something} — claim g(y)=ln y  F (is (1/2)ln y)
     key = [True, True, False, False, False]
     assert sum(key) == 2
+
+    fig = svg_curves(
+        [
+            (lambda x: x, "#8B5A2B", "id"),
+            (lambda x: math.exp(math.log(x)) if x > 0.05 else float("nan"), "#2F5D50", "exp∘ln", "6 4"),
+        ],
+        xmin=0.2,
+        xmax=5,
+        title="exp∘ln agrees with id on (0,∞)",
+        xlabel="x",
+        ylabel="value",
+    )
     overview = (
-        f"Inverse of $f(t)={fmt(P)}e^{{{fmt(k)}t}}$ is "
-        f"$g(y)=\\frac{{1}}{{{fmt(k)}}}\\ln(y/{fmt(P)})$ on $(0,\\infty)$; "
-        f"$g(2P)=\\ln 2/k$, $g(P)=0$."
+        r"$(\ln\circ\exp)(x)=x$ on $\mathbb{R}$; $(\exp\circ\ln)(x)=x$ on $(0,\infty)$ only. "
+        r"$\ln(e^{x}+e^{-x})=\ln(2\cosh x)\neq 0$ in general. "
+        r"Inverse of $e^{2t}$ is $\frac{1}{2}\ln y$."
     )
     return make_task(
-        title="Text-dense — inverse clock traps beside exponential growth",
+        title="Text-dense — inverse compositions and a wrong inverse formula",
         context=(
-            f"Let $f(t)=P e^{{kt}}$ with $P={fmt(P)}$ and $k={fmt(k)}$, and let $g$ be its inverse."
+            r"Compare the compositions $\ln\circ\exp$ and $\exp\circ\ln$, and invert "
+            r"the map $f(t)=e^{2t}$."
         ),
         statements=[
-            rf"$g(2P)=\dfrac{{\ln 2}}{{{fmt(k)}}}$.",
-            r"$g(P)=0$.",
-            r"$g(-1)$ is defined as a real number.",
-            r"$f(g(y))=y$ holds for $y=-3$.",
-            rf"$g(f(3))=\dfrac{{1}}{{{fmt(k)}}}$.",
+            r"$(\ln\circ\exp)(x)=x$ for every real $x$.",
+            r"$(\exp\circ\ln)(x)=x$ for every $x>0$.",
+            r"$(\exp\circ\ln)(x)=x$ for every real $x$.",
+            r"$\ln(e^{x}+e^{-x})=0$ for every real $x$.",
+            r"The inverse of $f(t)=e^{2t}$ is $g(y)=\ln y$.",
         ],
         answer_key=key,
         bodies=[
             [
-                D(rf"g(2P)=\frac{{1}}{{k}}\ln 2=\frac{{\ln 2}}{{{fmt(k)}}}"),
-                close(True, "Doubling the level takes time $\\ln 2/k$"),
+                D(r"\ln(e^{x})=x"),
+                close(True, "Natural log undoes the exponential on the whole line"),
             ],
             [
-                D(r"g(P)=\frac{1}{k}\ln 1=0"),
-                close(True, "The inverse of the initial level is time zero"),
+                D(r"\exp(\ln x)=x\qquad(x>0)"),
+                close(True, "On the positive reals the other composition is the identity"),
             ],
             [
-                "Range of $f$ is $(0,\\infty)$; $-1$ is outside.",
-                close(False, "$g(-1)$ is not real-defined"),
+                "At $x=-1$, $\\ln x$ is undefined over the reals.",
+                close(False, "The domain of $\\exp\\circ\\ln$ is only $(0,\\infty)$"),
             ],
             [
-                "Right-inverse identity needs $y>0$.",
-                close(False, "$y=-3$ is not in the range of $f$"),
+                D(r"\ln(e^{x}+e^{-x})=\ln(2\cosh x)"),
+                D(r"\ln(2\cosh 0)=\ln 2\neq 0"),
+                close(False, "Even at $x=0$ the value is $\\ln 2$, not $0$"),
             ],
             [
-                D(r"g(f(3))=3"),
-                D(rf"3\neq\frac{{1}}{{{fmt(k)}}}"),
-                close(False, "Left inverse returns the original time $3$"),
+                D(r"y=e^{2t}\implies t=\frac{1}{2}\ln y"),
+                D(r"\frac{1}{2}\ln y\neq\ln y\quad(y\neq 1)"),
+                close(False, "The factor $2$ in the exponent forces a factor $1/2$ in the inverse"),
             ],
         ],
         overview=overview,
         stem_kind="text_dense",
+        figure=fig,
     )
 
 
 def t29_rebuild_two_obs_cross() -> dict:
-    """Rebuild two forces from observations; compare crossing. 3 true."""
-    # A observed (0,1000),(5,1000*e^{0.03*5}); B observed (0,1500),(5,1500*e^{0.01*5})
-    A0, kA, B0, kB, t_obs = 1000.0, 0.03, 1500.0, 0.01, 5.0
-    A5 = A0 * math.exp(kA * t_obs)
-    B5 = B0 * math.exp(kB * t_obs)
-    kA_hat = ln(A5 / A0) / t_obs
-    kB_hat = ln(B5 / B0) / t_obs
-    t_meet = ln(B0 / A0) / (kA_hat - kB_hat)
-    # A: kA_hat=0.03 True; B: kB_hat=0.01 True; C: meet>0 True;
-    # D: meet < t_obs False (t_meet=ln(1.5)/0.02≈20.27); E: A5>B5 False
+    """Rebuild two forces from a joint table, then crossing comparisons. 3 true."""
+    A0, kA, B0, kB = 600.0, 0.04, 900.0, 0.01
+    t_obs = 8.0
+    A8 = A0 * math.exp(kA * t_obs)
+    B8 = B0 * math.exp(kB * t_obs)
+    t_meet = ln(B0 / A0) / (kA - kB)
     key = [True, True, True, False, False]
     assert sum(key) == 3
-    assert abs(kA_hat - kA) < 1e-12 and t_meet > t_obs and A5 < B5
+    assert t_meet > t_obs and A8 < B8
+
     table = md_table(
-        ["series", f"$t=0$", f"$t={fmt(t_obs)}$"],
+        ["$t$", "$A(t)$", "$B(t)$"],
         [
-            ["$A$", f"${fmt(A0)}$", f"${fmt(A5,2)}$"],
-            ["$B$", f"${fmt(B0)}$", f"${fmt(B5,2)}$"],
+            ["$0$", f"${fmt(A0)}$", f"${fmt(B0)}$"],
+            [f"${fmt(t_obs)}$", f"${fmt(A8,2)}$", f"${fmt(B8,2)}$"],
         ],
     )
-    fig = competing_populations(A0, kA, B0, kB, 30, "Rebuilt forces and future cross")
+    fig = competing_populations(A0, kA, B0, kB, t_meet + 8, "Rebuild then cross")
     overview = (
-        f"Rebuilt $k_A\\approx{fmt(kA_hat,6)}$, $k_B\\approx{fmt(kB_hat,6)}$. "
-        f"Meeting $t^*\\approx{fmt(t_meet)}$ lies after the observation window."
+        f"Recovered $k_A={fmt(kA)}$, $k_B={fmt(kB)}$. "
+        f"Future crossing $t^*\\approx{fmt(t_meet)}$. "
+        f"At $t={fmt(t_obs)}$, $A\\approx{fmt(A8,2)}<B\\approx{fmt(B8,2)}$."
     )
     return make_task(
-        title="Rebuild — two series, two forces, one future crossing",
+        title="Rebuild — two tabulated forces and a still-future crossing",
         context=(
-            "Two continuous exponential series $A$ and $B$ are each observed at two times "
-            "(table). Rebuild both forces, then locate their crossing."
+            "Two continuous exponential series are observed at $t=0$ and "
+            f"$t={fmt(t_obs)}$ (table). Rebuild both forces, then judge the claims."
         ),
         statements=[
-            rf"The rebuilt force of $A$ equals ${fmt(kA)}$.",
-            rf"The rebuilt force of $B$ equals ${fmt(kB)}$.",
-            r"The implied meeting time is strictly positive.",
-            rf"The meeting occurs strictly before $t={fmt(t_obs)}$.",
+            rf"$k_A=\ln\!\bigl(A({fmt(t_obs)})/A(0)\bigr)/{fmt(t_obs)}$.",
+            rf"$k_B=\ln\!\bigl(B({fmt(t_obs)})/B(0)\bigr)/{fmt(t_obs)}$.",
+            r"A future crossing time $t^{*}>0$ exists.",
+            rf"The crossing already occurs on $[0,{fmt(t_obs)}]$.",
             rf"At $t={fmt(t_obs)}$, series $A$ already exceeds series $B$.",
         ],
         answer_key=key,
         bodies=[
             [
-                D(rf"k_A=\frac{{\ln(A({fmt(t_obs)})/A(0))}}{{{fmt(t_obs)}}}={fmt(kA_hat,6)}"),
-                close(True, "Log recovery returns force $0.03$"),
+                D(rf"k_A=\frac{{\ln(A({fmt(t_obs)})/A(0))}}{{{fmt(t_obs)}}}={fmt(kA)}"),
+                close(True, "Log recovery returns force $0.04$"),
             ],
             [
-                D(rf"k_B=\frac{{\ln(B({fmt(t_obs)})/B(0))}}{{{fmt(t_obs)}}}={fmt(kB_hat,6)}"),
+                D(rf"k_B=\frac{{\ln(B({fmt(t_obs)})/B(0))}}{{{fmt(t_obs)}}}={fmt(kB)}"),
                 close(True, "Log recovery returns force $0.01$"),
             ],
             [
                 D(rf"t^*=\frac{{\ln(B_0/A_0)}}{{k_A-k_B}}\\approx{fmt(t_meet)}>0"),
-                close(True, "A future crossing exists"),
+                close(True, "A future crossing exists because $k_A>k_B$ and $B_0>A_0$"),
             ],
             [
                 D(rf"t^*\\approx{fmt(t_meet)}>{fmt(t_obs)}"),
                 close(False, "The crossing lies after the observation window"),
             ],
             [
-                D(rf"A({fmt(t_obs)})\\approx{fmt(A5,2)},\qquad B({fmt(t_obs)})\\approx{fmt(B5,2)}"),
+                D(rf"A({fmt(t_obs)})\\approx{fmt(A8,2)}<B({fmt(t_obs)})\\approx{fmt(B8,2)}"),
                 close(False, "At the second observation $B$ is still larger"),
             ],
         ],
@@ -2131,15 +2204,14 @@ def t29_rebuild_two_obs_cross() -> dict:
 
 def t30_applied_letter_gdp_nested() -> dict:
     """GDP letters with nested log side-condition on rates. 4 true."""
-    # g and p with ln(g/p)=ln 3 ⇒ g=3p; pick p=0.01, g=0.03
     p, g, t = 0.01, 0.03, 25.0
     Y0, N0 = 120.0, 8.0
     k = g - p
-    # A: g=3p True; B: k=0.02 True; C: Δln y = k t = 0.5 True;
-    # D: Δln y > Δln N True (0.5 > 0.25); E: g+p = k False
+    # Constraint ln(g/p)=ln 3 ⇒ g=3p already built in
     key = [True, True, True, True, False]
     assert sum(key) == 4
     assert abs(g / p - 3) < 1e-12 and abs(k * t - 0.5) < 1e-12
+
     fig = gdp_per_capita(Y0 * 1000, g, N0, p, t, "Letter GDP with nested rate link")
     overview = (
         f"Constraint $\\ln(g/p)=\\ln 3$ forces $g=3p$. With $p={fmt(p)}$, "
@@ -2190,30 +2262,30 @@ def t30_applied_letter_gdp_nested() -> dict:
 
 
 BUILDERS = [
-    t01_hybrid_piecewise_hit,
-    t02_graph_two_populations,
-    t03_table_recover_force,
-    t04_symbolic_inverse_growth,
-    t05_parametric_nested_log,
-    t06_piecewise_domain_side,
-    t07_nested_log_exp_params,
-    t08_text_dense_microtraps,
-    t09_rebuild_from_observations,
-    t10_applied_gdp_letters,
-    t11_hybrid_cont_disc_hit,
+    t01_hybrid_piecewise_thresholds,
+    t02_graph_competing_cross,
+    t03_table_recover_compare,
+    t04_symbolic_nested_inverses,
+    t05_parametric_family_one_survivor,
+    t06_piecewise_avg_and_threshold,
+    t07_nested_exp_log_mash,
+    t08_text_dense_clocks,
+    t09_rebuild_from_three_obs,
+    t10_applied_gdp_one_survivor,
+    t11_hybrid_piece_elasticity,
     t12_graph_decay_vs_invest,
-    t13_table_elasticity_stock,
-    t14_symbolic_change_base,
-    t15_parametric_family_force,
+    t13_table_two_series_cross,
+    t14_symbolic_change_base_ineq,
+    t15_parametric_force_threshold,
     t16_piecewise_gdp_switch,
     t17_nested_inverse_constraints,
-    t18_text_dense_mixed_clocks,
-    t19_rebuild_semi_log_table,
-    t20_applied_letter_two_funds,
-    t21_hybrid_piece_and_elasticity,
-    t22_graph_semi_log_trap,
-    t23_table_cont_disc_ratios,
-    t24_symbolic_log_identities,
+    t18_text_dense_mixed_identities,
+    t19_rebuild_semi_log_slopes,
+    t20_applied_two_funds_letters,
+    t21_hybrid_cont_disc_piece,
+    t22_graph_log_gap_traps,
+    t23_table_cont_disc_balances,
+    t24_symbolic_log_exp_domain,
     t25_parametric_domain_side,
     t26_piecewise_wrong_average,
     t27_nested_double_log_growth,
@@ -2227,6 +2299,13 @@ def build_mixed_tasks() -> list[dict]:
     """Return exactly 30 hard mixed-exam task dicts for subsection 10.3."""
     assert len(BUILDERS) == MIXED_COUNT == len(PLANNED_TRUTHS)
     tasks: list[dict] = []
+    forbidden = [
+        "the semi-log graph is a straight line",
+        "is the graph a straight line",
+        "is it decreasing",
+        "meets the axis at",
+        "the asymptote is visible",
+    ]
     for i, builder in enumerate(BUILDERS):
         task = builder()
         assert task["stem_kind"] == STEMS[i % len(STEMS)], (i, task["stem_kind"])
@@ -2235,12 +2314,14 @@ def build_mixed_tasks() -> list[dict]:
         assert TAIL in task["context"]
         assert len(task["statements"]) == 5
         assert len(task["tactical_explanations"]) == 5
+        blob_l = json_safe_blob(task).lower()
+        for phrase in forbidden:
+            assert phrase not in blob_l, (i, phrase)
         for j, ex in enumerate(task["tactical_explanations"]):
             letter = LETTERS[j]
             verd = "True" if task["answer_key"][j] else "False"
             assert ex.startswith(f"**{letter}.** → {verd}"), (i, j, ex[:60])
             assert ex.rstrip().endswith(f"So the statement is {verd}."), (i, j)
-            # KaTeX-safety: no double-escaped neq/commands in output
             assert r"\\\\neq" not in ex
             assert r"\\\\ln" not in ex
         blob = json_safe_blob(task)
@@ -2277,5 +2358,5 @@ if __name__ == "__main__":
     tabs = sum(1 for t in ts if t.get("tables_markdown"))
     figs = sum(1 for t in ts if t.get("figure"))
     print(f"OK {len(ts)} tasks; figures={figs} tables={tabs} viz={viz}")
-    print("true_hist", dict(sorted(Counter(sum(t['answer_key']) for t in ts).items())))
+    print("true_hist", dict(sorted(Counter(sum(t["answer_key"]) for t in ts).items())))
     print("stems", dict(Counter(t["stem_kind"] for t in ts)))
