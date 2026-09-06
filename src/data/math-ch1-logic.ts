@@ -2530,13 +2530,23 @@ $$\\{1,2\\}\\cup\\{3,4\\}\\cup\\{5,6\\}=G$$
 So the statement is True.`,
       `**C.** → True
 
-A partition needs nonempty pairwise-disjoint blocks whose union is the ground set. From the previous two letters:
+A partition needs nonempty pairwise-disjoint blocks whose union is the ground set. Check each axiom for $\\mathcal{S}=\\{\\{1,2\\},\\{3,4\\},\\{5,6\\}\\}$:
 
-- each block is nonempty,
-- the blocks are pairwise disjoint,
-- the union equals $G$.
+$$\\{1,2\\}\\neq\\emptyset$$
 
-Hence $\\mathcal{S}$ is a partition of $G$.
+$$\\{3,4\\}\\neq\\emptyset$$
+
+$$\\{5,6\\}\\neq\\emptyset$$
+
+$$\\{1,2\\}\\cap\\{3,4\\}=\\emptyset$$
+
+$$\\{1,2\\}\\cap\\{5,6\\}=\\emptyset$$
+
+$$\\{3,4\\}\\cap\\{5,6\\}=\\emptyset$$
+
+$$\\{1,2\\}\\cup\\{3,4\\}\\cup\\{5,6\\}=G$$
+
+All three axioms hold, so $\\mathcal{S}$ is a partition of $G$.
 
 So the statement is True.`,
       `**D.** → False
@@ -2631,7 +2641,17 @@ Every even arises uniquely as $2n$ for $n\\in\\mathbb{N}$, so $f$ is a bijection
 So the statement is True.`,
       `**E.** → False
 
-Although $H\\subsetneq\\mathbb{N}$, the bijection $n\\mapsto 2n$ shows
+Although
+
+$$H\\subsetneq\\mathbb{N}$$
+
+the bijection $f(n)=2n$ shows each natural pairs with a unique even:
+
+$$f(1)=2$$
+
+$$f(2)=4$$
+
+$$f(3)=6$$
 
 $$|H|=|\\mathbb{N}|$$
 
@@ -2681,14 +2701,20 @@ $$a\\in K$$
 So the statement is True.`,
       `**B.** → True
 
-The second listed object is the singleton $\\{a\\}$:
+Read the second listed object on the roster:
+
+$$K=\\{a,\\{a\\}\\}$$
 
 $$\\{a\\}\\in K$$
 
 So the statement is True.`,
       `**C.** → True
 
-Subsethood of $\\{a\\}$ needs $a\\in K$, which holds from letter A. Hence
+Subsethood of $\\{a\\}$ needs its only member to sit in $K$:
+
+$$K=\\{a,\\{a\\}\\}$$
+
+$$a\\in K$$
 
 $$\\{a\\}\\subseteq K$$
 
@@ -3243,7 +3269,11 @@ have swapped coordinates, so they are different ordered pairs (and only the firs
 So the statement is False.`,
       `**C.** → True
 
-If there are $0$ accounts, the product size is
+If there are $0$ accounts, write
+
+$$|\\mathrm{Accounts}|=0$$
+
+$$|\\mathrm{Reps}\\times\\mathrm{Accounts}|=|\\mathrm{Reps}|\\cdot 0$$
 
 $$|\\mathrm{Reps}|\\cdot 0=0$$
 
