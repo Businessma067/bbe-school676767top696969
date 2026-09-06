@@ -5780,7 +5780,31 @@ $$`,
     tactical_explanations: [
       `**A.** → False
 
-The overview isolated $\\delta=\\frac{1}{t}\\ln\\bigl(\\frac{v_0}{v(t)}\\bigr)$. The claim writes $\\ln\\bigl(\\frac{v(t)}{v_0}\\bigr)$ in the numerator. That ratio is less than $1$ and would make $\\delta$ negative. We have $\\frac{v_0}{v(t)} \\ne \\frac{v(t)}{v_0}$.
+The overview isolated $\\delta=\\frac{1}{t}\\ln\\bigl(\\frac{v_0}{v(t)}\\bigr)$. The claim writes $\\ln\\bigl(\\frac{v(t)}{v_0}\\bigr)$ in the numerator. That ratio is less than $1$ and would make $\\delta$ negative. The computed value is
+
+$$\\frac{v_0}{v(t)}$$
+
+The claim is
+
+$$\\frac{v(t)}{v_0}$$
+
+Since $\\frac{v_0}{v(t)} \\ne \\frac{v(t)}{v_0}$, the figures disagree.
+
+Substitute the recovered stem inputs:
+
+$$v_0 = 85,000,$$
+
+$$v(6) = 32,000,$$
+
+$$t = 6$$
+
+$$
+\\delta = \\frac{1}{6}\\ln\\bigl(\\frac{85,000}{32,000}\\bigr)
+$$
+
+$$\\delta \\approx 0.1628$$
+
+$$\\delta = 16.28\\%$$
 
 So the statement is False.`,
       `**B.** → True
@@ -5824,7 +5848,15 @@ $$\\approx 0.406570$$
 
 $$v_2(6) \\approx 34,558.42$$
 
-The claim is approximately \\$36,000.00. We have $34,558.42 \\ne 36,000.00$.
+The claim is approximately \\$36,000.00. The computed value is
+
+$$34,558.42$$
+
+The claim is
+
+$$36,000.00$$
+
+Since $34,558.42 \\ne 36,000.00$, the figures disagree.
 
 So the statement is False.`,
       `**D.** → False
@@ -5985,7 +6017,15 @@ $$1.5 \\times t_2$$
 
 $$\\approx 15.99$$
 
-The claim needs $t_3=1.5\\,t_2$. We have $16.90 \\ne 15.99$.
+The claim needs $t_3=1.5\\,t_2$. The computed value is
+
+$$16.90$$
+
+The claim is
+
+$$15.99$$
+
+Since $16.90 \\ne 15.99$, the figures disagree.
 
 So the statement is False.`,
     ],
@@ -6084,7 +6124,15 @@ $$\\approx 1.349859$$
 
 $$C(5) \\approx 134,985.88$$
 
-The claim is approximately \\$130,000.00. We have $134,985.88 \\ne 130,000.00$.
+The claim is approximately \\$130,000.00. The computed value is
+
+$$134,985.88$$
+
+The claim is
+
+$$130,000.00$$
+
+Since $134,985.88 \\ne 130,000.00$, the figures disagree.
 
 So the statement is False.`,
       `**D.** → False
@@ -6199,7 +6247,9 @@ $$
 
 Substitute the stem numbers:
 
-$$(1.05)^{-1} = \\frac{1}{1.05}$$
+$$(1.05)^{-1}$$
+
+$$= \\frac{1}{1.05}$$
 
 $$\\approx 0.9524$$
 
@@ -6227,6 +6277,26 @@ So the statement is True.`,
 
 A higher discount rate lowers present value. At $r=0.10$:
 
+Substitute the recovered stem inputs:
+
+$$K = 8,000,$$
+
+$$r = 0.05,$$
+
+$$t = 1$$
+
+$$(1.05)^{-1}$$
+
+$$= \\frac{1}{1.05}$$
+
+$$(1.05)^{-1}$$
+
+$$\\approx 0.9524$$
+
+$$\\mathrm{PDV} = \\frac{8,000}{1.05}$$
+
+$$\\mathrm{PDV} \\approx 7,619.05$$
+
 $$\\mathrm{PDV} = \\frac{8,000}{1.10}$$
 
 $$\\approx 7,272.73$$
@@ -6237,6 +6307,26 @@ So the statement is False.`,
       `**D.** → False
 
 Read the figure already produced by the shared solve, then compare it with the claim.
+
+Substitute the recovered stem inputs:
+
+$$K = 8,000,$$
+
+$$r = 0.05,$$
+
+$$t = 1$$
+
+$$(1.05)^{-1}$$
+
+$$= \\frac{1}{1.05}$$
+
+$$(1.05)^{-1}$$
+
+$$\\approx 0.9524$$
+
+$$\\mathrm{PDV} = \\frac{8,000}{1.05}$$
+
+$$\\mathrm{PDV} \\approx 7,619.05$$
 
 The overview recovered $\\mathrm{PDV}\\approx 7,619.05$. Face value minus present value is
 
@@ -6367,6 +6457,26 @@ So the statement is False.`,
 
 The overview recovered $\\mathrm{PDV}_{\\mathrm{ann}}\\approx 10,075.43$ and $\\mathrm{PDV}\\approx 10,023.24$:
 
+Substitute the recovered stem inputs:
+
+$$K = 12,000,$$
+
+$$r = 0.06,$$
+
+$$t = 3$$
+
+$$rt = 0.06 \\times 3$$
+
+$$rt = 0.18$$
+
+$$e^{-0.18}$$
+
+$$\\approx 0.8353$$
+
+$$\\mathrm{PDV} = 12,000e^{-0.18}$$
+
+$$\\mathrm{PDV} \\approx 10,023.24$$
+
 $$10,075.43-10,023.24$$
 
 $$= 52.19$$
@@ -6377,6 +6487,26 @@ So the statement is False.`,
       `**E.** → True
 
 If the payment is due in $6$ years instead,
+
+Substitute the recovered stem inputs:
+
+$$K = 12,000,$$
+
+$$r = 0.06,$$
+
+$$t = 3$$
+
+$$rt = 0.06 \\times 3$$
+
+$$rt = 0.18$$
+
+$$e^{-0.18}$$
+
+$$\\approx 0.8353$$
+
+$$\\mathrm{PDV} = 12,000e^{-0.18}$$
+
+$$\\mathrm{PDV} \\approx 10,023.24$$
 
 $$
 rt = 0.06\\times 6
@@ -6511,6 +6641,30 @@ So the statement is False.`,
       `**D.** → False
 
 The overview recovered $\\mathrm{PDV}_{\\mathrm{ann}}\\approx 26,190.41$ and $\\mathrm{PDV}_{\\mathrm{cont}}\\approx 25,704.41$:
+
+Substitute the recovered stem inputs:
+
+$$K = 45,000,$$
+
+$$r = 0.07,$$
+
+$$t = 8$$
+
+$$(1.07)^{8}$$
+
+$$\\approx 1.718186,$$
+
+$$(1.07)^{-8}$$
+
+$$\\approx 0.5820$$
+
+$$
+\\mathrm{PDV}_{\\mathrm{ann}} = 45,000 \\times (1.07)^{-8}
+$$
+
+$$\\mathrm{PDV}_{\\mathrm{ann}} \\approx 26,190.41$$
+
+$$rt = 0.07 \\times 8$$
 
 $$26,190.41-25,704.41$$
 
@@ -6655,6 +6809,26 @@ So the statement is False.`,
 
 Under annual compounding at the same $4.5\\%$ quote,
 
+Substitute the recovered stem inputs:
+
+$$K = 150,000,$$
+
+$$r = 0.045,$$
+
+$$t = 5$$
+
+$$rt = 0.045 \\times 5$$
+
+$$rt = 0.225,$$
+
+$$e^{-0.225}$$
+
+$$\\approx 0.7985$$
+
+$$A = 150,000e^{-0.225}$$
+
+$$A \\approx 119,777.40$$
+
 $$A_{\\mathrm{ann}} = \\frac{150,000}{(1.045)^{5}}$$
 
 $$\\approx 120,367.66$$
@@ -6680,7 +6854,15 @@ $$\\frac{119,777.40}{2}$$
 
 $$\\approx 59,888.70$$
 
-We have $95,644.22\\neq 59,888.70$.
+The computed value is
+
+$$95,644.22$$
+
+The claim is
+
+$$q 59,888.70$$
+
+Since $95,644.22 \\ne q 59,888.70$, the figures disagree.
 
 So the statement is False.`,
     ],
@@ -6778,6 +6960,30 @@ So the statement is True.`,
       `**C.** → False
 
 At a purchase price of \\$20,000,
+
+Substitute the recovered stem inputs:
+
+$$\\mathrm{PDV} = 18,500,$$
+
+$$K = 25,000,$$
+
+$$r = 0.06$$
+
+$$\\frac{K}{\\mathrm{PDV}} = \\frac{25,000}{18,500}$$
+
+$$\\frac{K}{\\mathrm{PDV}}$$
+
+$$\\approx 1.3514$$
+
+$$\\ln(1.3514)$$
+
+$$\\approx 0.3011,$$
+
+$$\\ln(1.06)$$
+
+$$\\approx 0.05827$$
+
+$$t = \\frac{0.3011}{0.05827}$$
 
 $$
 \\frac{25,000}{20,000} = 1.25, \\qquad t
@@ -6934,6 +7140,24 @@ So the statement is True.`,
 
 The overview recovered $r\\approx 0.0665$. At a $6$-year horizon,
 
+Substitute the recovered stem inputs:
+
+$$\\mathrm{PDV} = 27,000,$$
+
+$$K = 60,000,$$
+
+$$t = 12$$
+
+$$\\frac{\\mathrm{PDV}}{K} = \\frac{27,000}{60,000}$$
+
+$$\\frac{\\mathrm{PDV}}{K} = 0.45$$
+
+$$r = -\\frac{\\ln(0.45)}{12}$$
+
+$$r = \\frac{0.798508}{12}$$
+
+$$r \\approx 0.0665 = 6.65\\%$$
+
 $$
 \\mathrm{PDV} = 60,000\\,e^{-0.0665\\times 6}
 $$
@@ -6948,6 +7172,24 @@ So the statement is True.`,
       `**D.** → False
 
 At a purchase price of \\$30,000,
+
+Substitute the recovered stem inputs:
+
+$$\\mathrm{PDV} = 27,000,$$
+
+$$K = 60,000,$$
+
+$$t = 12$$
+
+$$\\frac{\\mathrm{PDV}}{K} = \\frac{27,000}{60,000}$$
+
+$$\\frac{\\mathrm{PDV}}{K} = 0.45$$
+
+$$r = -\\frac{\\ln(0.45)}{12}$$
+
+$$r = \\frac{0.798508}{12}$$
+
+$$r \\approx 0.0665 = 6.65\\%$$
 
 $$
 r = -\\frac{\\ln\\!\\left(\\frac{30,000}{60,000}\\right)}{12}
@@ -7224,6 +7466,24 @@ So the statement is True.`,
       `**B.** → True
 
 Option A is worth \\$22,000 today. The overview recovered $\\mathrm{PDV}_B \\approx 21,410.30$. Comparing the two present values:
+
+Substitute the recovered stem inputs:
+
+$$A = 22,000,$$
+
+$$t_A = 0$$
+
+$$K_B = 25,500,$$
+
+$$t_B = 3,$$
+
+$$r = 0.06$$
+
+$$(1.06)^{3}$$
+
+$$\\approx 1.191016$$
+
+$$\\mathrm{PDV}_B = \\frac{25,500}{1.191016}$$
 
 $$22,000 > 21,410.30$$
 
