@@ -2,8 +2,8 @@ import { useEffect, useState } from "react";
 
 import { cn } from "@/lib/utils";
 
-/** 2027 BBE entrance exam — 30 June (Vienna). */
-const EXAM_AT = new Date("2027-06-30T09:00:00+02:00");
+/** Next BBE entrance exam — 30 June 2027, 15:00–17:00 CEST (Vienna). */
+const EXAM_AT = new Date("2027-06-30T15:00:00+02:00");
 
 type Remaining = {
   days: number;
@@ -30,9 +30,13 @@ function pad(n: number) {
   return String(n).padStart(2, "0");
 }
 
+function formatUnit(value: number | null, padded?: boolean) {
+  if (value === null) return "––";
+  return padded ? pad(value) : String(value);
+}
+
 export function ExamCountdown({ className }: { className?: string }) {
-  // The live clock only starts after hydration; SSR and the first client
-  // render share the same placeholder so the markup always matches.
+  // Live clock starts after hydration so SSR and the first client paint match.
   const [remaining, setRemaining] = useState<Remaining | null>(null);
 
   useEffect(() => {
@@ -65,7 +69,7 @@ export function ExamCountdown({ className }: { className?: string }) {
       }
     >
       <p className="text-[11px] font-medium tracking-wide text-taupe sm:text-xs">
-        {done ? "Exam day" : "Until the 2027 BBE exam · 30 June"}
+        {done ? "Exam day" : "Until the 2027 BBE exam · 30 June, 15:00 CEST"}
       </p>
       <div className="flex items-stretch gap-2 sm:gap-3">
         {units.map((u, i) => (
@@ -80,7 +84,7 @@ export function ExamCountdown({ className }: { className?: string }) {
             )}
             <div className="min-w-[3.25rem] rounded-sm border border-border bg-card px-2.5 py-2 text-center sm:min-w-[4rem] sm:px-3 sm:py-2.5">
               <div className="font-display text-xl font-semibold tabular-nums leading-none text-foreground sm:text-2xl">
-                {u.padded ? pad(u.value) : u.value}
+                {formatUnit(u.value, u.padded)}
               </div>
               <div className="mt-1 text-[10px] font-medium uppercase tracking-wide text-muted-foreground">
                 {u.label}
