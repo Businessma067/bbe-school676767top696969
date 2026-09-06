@@ -1,4 +1,4 @@
-import { memo, useEffect, useMemo, useRef, useState, type ReactNode } from "react";
+import { memo, useEffect, useLayoutEffect, useMemo, useRef, useState, type ReactNode } from "react";
 import ReactMarkdown from "react-markdown";
 import remarkGfm from "remark-gfm";
 import remarkMath from "remark-math";
@@ -40,6 +40,17 @@ function slugify(text: string): string {
     .trim()
     .replace(/\s+/g, "-")
     .slice(0, 80);
+}
+
+/** Flatten ReactMarkdown heading children so TOC ids match the rendered headings. */
+function headingPlainText(children: ReactNode): string {
+  if (children == null || typeof children === "boolean") return "";
+  if (typeof children === "string" || typeof children === "number") return String(children);
+  if (Array.isArray(children)) return children.map(headingPlainText).join("");
+  if (typeof children === "object" && "props" in children) {
+    return headingPlainText((children as { props?: { children?: ReactNode } }).props?.children);
+  }
+  return "";
 }
 
 function extractToc(markdown: string): TocItem[] {
@@ -118,7 +129,7 @@ const MdBlock = memo(function MdBlock({
           </h1>
         ),
         h2: ({ children }) => {
-          const label = String(children);
+          const label = headingPlainText(children);
           const id = slugify(label);
           return (
             <h2
@@ -135,7 +146,7 @@ const MdBlock = memo(function MdBlock({
           );
         },
         h3: ({ children }) => {
-          const label = String(children);
+          const label = headingPlainText(children);
           const id = slugify(label);
           return (
             <h3
@@ -276,12 +287,18 @@ export function TheoryReader({
   );
   const [activeId, setActiveId] = useState<string>("");
   const [readerMode, setReaderMode] = useState(false);
+  /** Full layout so TOC jumps measure real heading offsets, not collapsed placeholders. */
+  const [lockLayout, setLockLayout] = useState(false);
+  const [jumpNonce, setJumpNonce] = useState(0);
   const scrollRef = useRef<HTMLDivElement>(null);
   const tocScrollRef = useRef<HTMLDivElement>(null);
   const progressBarRef = useRef<HTMLDivElement>(null);
   const chipRefs = useRef<Record<string, HTMLButtonElement | null>>({});
   const rafRef = useRef<number | null>(null);
   const activeIdRef = useRef(activeId);
+  const pendingJumpRef = useRef<string | null>(null);
+  const stopStreamRef = useRef<(() => void) | null>(null);
+  const ignoreScrollSpyUntilRef = useRef(0);
   const theoryStartedRef = useRef(Date.now());
   const maxScrollRef = useRef(0);
   activeIdRef.current = activeId;
@@ -347,11 +364,20 @@ export function TheoryReader({
   useEffect(() => {
     const eager = Math.min(THEORY_EAGER_SEGMENTS, segments.length);
     setVisibleCount(eager);
+    setLockLayout(false);
+    pendingJumpRef.current = null;
+    stopStreamRef.current = null;
     if (eager >= segments.length) return;
 
     let cancelled = false;
     let shown = eager;
     let timer: ReturnType<typeof setTimeout> | undefined;
+
+    const stop = () => {
+      cancelled = true;
+      if (timer !== undefined) clearTimeout(timer);
+    };
+    stopStreamRef.current = stop;
 
     const pump = () => {
       if (cancelled) return;
@@ -365,8 +391,8 @@ export function TheoryReader({
     timer = setTimeout(pump, 0);
 
     return () => {
-      cancelled = true;
-      if (timer !== undefined) clearTimeout(timer);
+      stop();
+      stopStreamRef.current = null;
     };
   }, [chapter, subject, segments]);
 
@@ -431,6 +457,8 @@ export function TheoryReader({
         progressBarRef.current.style.transform = `scaleX(${pct / 100})`;
       }
 
+      if (performance.now() < ignoreScrollSpyUntilRef.current) return;
+
       const rootTop = el.getBoundingClientRect().top;
       let current = toc[0]?.id ?? "";
       for (const item of toc) {
@@ -453,16 +481,46 @@ export function TheoryReader({
     };
   }, []);
 
+  const scrollToHeading = (id: string) => {
+    const scroller = scrollRef.current;
+    const node = scroller?.querySelector<HTMLElement>(`#${CSS.escape(id)}`);
+    if (!scroller || !node) return false;
+    const nextTop =
+      node.getBoundingClientRect().top -
+      scroller.getBoundingClientRect().top +
+      scroller.scrollTop -
+      8;
+    scroller.scrollTop = Math.max(0, nextTop);
+    return true;
+  };
+
   const jumpTo = (id: string) => {
-    const el = scrollRef.current;
-    const node = el?.querySelector<HTMLElement>(`#${CSS.escape(id)}`);
-    if (!el || !node) return;
-    // Instant jump — smooth scroll feels delayed on long theory pages.
+    pendingJumpRef.current = id;
     activeIdRef.current = id;
     setActiveId(id);
     ensureTocChipVisible(id);
-    el.scrollTop = Math.max(0, node.offsetTop - 8);
+    ignoreScrollSpyUntilRef.current = performance.now() + 250;
+    stopStreamRef.current?.();
+    setLockLayout(true);
+    setVisibleCount(segments.length);
+    setJumpNonce((n) => n + 1);
   };
+
+  useLayoutEffect(() => {
+    const id = pendingJumpRef.current;
+    if (!id) return;
+    const tryScroll = () => {
+      if (pendingJumpRef.current !== id) return;
+      if (scrollToHeading(id)) pendingJumpRef.current = null;
+    };
+    tryScroll();
+    const raf = requestAnimationFrame(tryScroll);
+    const retry = window.setTimeout(tryScroll, 50);
+    return () => {
+      cancelAnimationFrame(raf);
+      window.clearTimeout(retry);
+    };
+  }, [visibleCount, lockLayout, jumpNonce]);
 
   let body: ReactNode = null;
   if (!markdown) {
@@ -477,7 +535,11 @@ export function TheoryReader({
       const wrap = (node: ReactNode) => (
         <div
           key={seg.kind === "figure" ? `f-${seg.id}-${i}` : `${seg.kind}-${i}`}
-          style={{ contentVisibility: "auto", containIntrinsicSize: "auto 320px" }}
+          style={
+            lockLayout
+              ? undefined
+              : { contentVisibility: "auto", containIntrinsicSize: "auto 320px" }
+          }
         >
           {node}
         </div>
