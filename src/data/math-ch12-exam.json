@@ -7,11 +7,11 @@
       "subsection": "12.6",
       "context": "Evaluate each statement. Mark it TRUE or FALSE.",
       "statements": [
-        "A casino dealer draws three cards from a standard deck without replacement. The chance that exactly two are aces is claimed to be $\\dfrac{72}{5525}$.",
-        "A beverage survey finds 40 tea drinkers, 50 coffee drinkers, and 70 who drink at least one. The survey team says 21 people drink both.",
-        "A courier audit covers 96 deliveries: 44 used premium service, 37 arrived late, and 13 were both. Among premium deliveries, the claimed late probability is $\\dfrac{13}{44}$.",
-        "A charity ticket has net returns $-4$, $3$, and $12$ euros with probabilities $\\frac12$, $\\frac13$, and $\\frac16$. Its expected net return is claimed to be $2$ euros.",
-        "Factory A supplies $\\frac35$ of parts with defect rate $\\frac1{50}$; factory B supplies the rest with rate $\\frac1{20}$. Given a defect, the probability it came from A is claimed to be $\\dfrac{3}{8}$."
+        "A casino dealer draws three cards from a standard deck without replacement. The probability that exactly two are aces is greater than $1.3\\%$.",
+        "A beverage survey finds 40 tea drinkers, 50 coffee drinkers, and 70 who drink at least one. The survey team says more than $20$ people drink both.",
+        "A courier audit covers 96 deliveries: 44 used premium service, 37 arrived late, and 13 were both. Among premium deliveries, the probability of a late arrival is greater than $29\\%$.",
+        "A charity ticket has net returns $-4$, $3$, and $12$ euros with probabilities $\\frac12$, $\\frac13$, and $\\frac16$. Its expected net return is greater than $1.5$ euros.",
+        "Factory A supplies $\\frac35$ of parts with defect rate $\\frac1{50}$; factory B supplies the rest with rate $\\frac1{20}$. Given a defect, the probability it came from A is greater than $37\\%$."
       ],
       "answer_key": [
         true,
@@ -21,15 +21,15 @@
         true
       ],
       "tactical_explanations": [
-        "**A.** → True\n\nCount the equally likely outcomes in the full experiment:\n\n$$\nN = \\binom{52}{3}\n$$\n\n$$\n= 22100\n$$\n\nApply all restrictions to the favorable count, without replacing a draw or ordering an unordered selection:\n\n$$\nF = \\binom{4}{2}\\binom{48}{1}\n$$\n\n$$\n= 288\n$$\n\nThe required probability is therefore\n\n$$\nP = \\frac{F}{N}\n$$\n\n$$\n= \\frac{288}{22100}\n$$\n\n$$\n= \\dfrac{72}{5525} \\approx 0.013032\n$$\n\nThe claimed probability is $\\dfrac{72}{5525}$. Exact comparison gives\n\n$$\\dfrac{72}{5525}=\\dfrac{72}{5525}$$\n\nThe mathematical result agrees with the claim, so the statement is True.",
-        "**B.** → False\n\nUse two-set inclusion-exclusion to recover the inclusive union:\n\n$$\nN(A\\cup B) = N(A)+N(B)-N(A\\cap B)\n$$\n\n$$\n= 40+50-20\n$$\n\n$$\n= 70\n$$\n\nThe associated disjoint counts are\n\n$$\nN(\\text{exactly one}) = 40+50-2(20)\n$$\n\n$$\n= 50\n$$\n\n$$\nN(\\text{only A}) = 40-20\n$$\n\n$$\n= 20,\\qquad N(\\text{neither})\n$$\n\n$$\n= 100-70\n$$\n\n$$\n= 30\n$$\n\nFor the category asked about in the stem, the correct count is $20$ rather than $21$:\n\n$$20\\ne21$$\n\nThe mathematical result does not agree with the claim, so the statement is False.",
-        "**C.** → True\n\nConditioning replaces the full sample space by the group named after the vertical bar:\n\n$$\nP(A\\mid B) = \\frac{P(A\\cap B)}{P(B)}\n$$\n\n$$\n= \\frac{N(A\\cap B)}{N(B)}\n$$\n\nHere the favorable and conditional totals are\n\n$$\nN(A\\cap B) = 13,\\qquad N(B)\n$$\n\n$$\n= 44\n$$\n\nTherefore,\n\n$$\nP(A\\mid B) = \\frac{13}{44}\n$$\n\n$$\n= \\dfrac{13}{44}\\approx 0.295455\n$$\n\nThe stem uses $\\dfrac{13}{44}$, so exact fractions give\n\n$$\\dfrac{13}{44}=\\dfrac{13}{44}$$\n\nThe mathematical result agrees with the claim, so the statement is True.",
-        "**D.** → False\n\nCompute the first moment from every possible outcome:\n\n$$\nE(X) = (-4)(\\dfrac{1}{2})+(3)(\\dfrac{1}{3})+(12)(\\dfrac{1}{6})\n$$\n\n$$\n= 1\n$$\n\nCompute the second moment separately:\n\n$$\nE(X^2) = (-4)^2(\\dfrac{1}{2})+(3)^2(\\dfrac{1}{3})+(12)^2(\\dfrac{1}{6})\n$$\n\n$$\n= 35\n$$\n\nThen\n\n$$\n\\operatorname{Var}(X) = E(X^2)-[E(X)]^2\n$$\n\n$$\n= 35-(1)^2\n$$\n\n$$\n= 34\n$$\n\nThe requested mean is $1$, compared with $2$ in the stem:\n\n$$1\\ne2$$\n\nThe mathematical result does not agree with the claim, so the statement is False.",
-        "**E.** → True\n\nBayes' theorem begins with the joint weight of each route to the observed evidence:\n\n$$\nw_1 = \\dfrac{3}{5}\\cdot\\dfrac{1}{50}\n$$\n\n$$\n= \\dfrac{3}{250},\\qquad w_2\n$$\n\n$$\n= \\dfrac{2}{5}\\cdot\\dfrac{1}{20}\n$$\n\n$$\n= \\dfrac{1}{50}\n$$\n\nThe law of total probability adds all those disjoint routes:\n\n$$\nP(E) = \\dfrac{3}{250}+\\dfrac{1}{50}\n$$\n\n$$\n= \\dfrac{4}{125}\n$$\n\nNormalize the weight for source 1:\n\n$$\nP(C_1\\mid E) = \\frac{P(C_1)P(E\\mid C_1)}{P(E)}\n$$\n\n$$\n= \\frac{\\dfrac{3}{250}}{\\dfrac{4}{125}}\n$$\n\n$$\n= \\dfrac{3}{8}\\approx 0.375\n$$\n\nThe stem claims $\\dfrac{3}{8}$, so\n\n$$\\dfrac{3}{8}=\\dfrac{3}{8}$$\n\nThe mathematical result agrees with the claim, so the statement is True."
+        "**A.** → True\n\nThis claim asks for the probability that a three-card hand contains exactly two aces when cards are drawn without replacement from a standard deck. Every unordered three-card hand is equally likely, so the probability is the ratio of favorable hands to all hands.\n$$P(\\text{exactly two aces})=\\frac{\\binom{4}{2}\\binom{48}{1}}{\\binom{52}{3}}$$\nThe total number of three-card hands is\n$$\\binom{52}{3}=22100$$\nThe favorable count chooses $2$ of the $4$ aces and $1$ of the $48$ non-aces:\n$$\\binom{4}{2}\\binom{48}{1}=6\\times 48=288$$\n$$P=\\frac{288}{22100}=\\frac{72}{5525}\\approx 0.013032$$\nExpressed as a percentage, this is approximately $1.303\\%$. The claim states that this probability is greater than $1.3\\%$. Since $1.303\\% > 1.3\\%$, the statement is True.",
+        "**B.** → False\n\nThis claim asks how many surveyed people drink both tea and coffee. With $N(T)=40$, $N(C)=50$, and $N(T\\cup C)=70$, inclusion-exclusion recovers the intersection:\n$$N(T\\cup C)=N(T)+N(C)-N(T\\cap C)$$\n$$70=40+50-N(T\\cap C)$$\n$$N(T\\cap C)=20$$\nExactly $20$ people drink both. The claim says more than $20$ drink both. Since $20 \\not> 20$, the statement is False.",
+        "**C.** → True\n\nThis claim asks for the conditional probability that a delivery arrived late given that it used premium service. Conditioning replaces the full sample space by the premium deliveries:\n$$P(L\\mid P)=\\frac{N(P\\cap L)}{N(P)}$$\nHere $N(P\\cap L)=13$ and $N(P)=44$, so\n$$P(L\\mid P)=\\frac{13}{44}\\approx 0.295455$$\nExpressed as a percentage, this is approximately $29.545\\%$. The claim states that this probability is greater than $29\\%$. Since $29.545\\% > 29\\%$, the statement is True.",
+        "**D.** → False\n\nThis claim asks for the expected net return of the charity ticket. The expectation is the probability-weighted sum of the three outcomes:\n$$E(X)=(-4)\\cdot\\frac{1}{2}+3\\cdot\\frac{1}{3}+12\\cdot\\frac{1}{6}$$\n$$E(X)=-2+1+2=1$$\nThe expected net return is $1$ euro. The claim states that it is greater than $1.5$ euros. Since $1 \\not> 1.5$, the statement is False.",
+        "**E.** → True\n\nThis claim asks for the posterior probability that a defective part came from factory A. Bayes' theorem normalizes each factory's joint weight by the total probability of a defect.\n$$P(A\\mid D)=\\frac{P(A)P(D\\mid A)}{P(D)}$$\nThe joint weights are\n$$P(A)P(D\\mid A)=\\frac{3}{5}\\cdot\\frac{1}{50}=\\frac{3}{250},\\qquad P(B)P(D\\mid B)=\\frac{2}{5}\\cdot\\frac{1}{20}=\\frac{1}{50}$$\nBy the law of total probability,\n$$P(D)=\\frac{3}{250}+\\frac{1}{50}=\\frac{4}{125}$$\n$$P(A\\mid D)=\\frac{3/250}{4/125}=\\frac{3}{8}=0.375$$\nExpressed as a percentage, this is $37.5\\%$. The claim states that this probability is greater than $37\\%$. Since $37.5\\% > 37\\%$, the statement is True."
       ],
       "difficulty_level": "5/5",
       "sort_order": 199,
-      "solution_overview": "Topics: 12.1, 12.2, 12.3, 12.4, 12.5.\nA: count favorable and total equally likely outcomes.\nB: apply inclusion-exclusion to disjoint regions.\nC: condition on the correct sample space or test independence.\nD: derive the mean from a discrete distribution.\nE: combine prior and likelihood weights with Bayes' theorem.",
+      "solution_overview": "Each letter is a separate mini-scenario from Chapter 12. Letter A counts three-card hands with exactly two aces. Letter B recovers a tea-and-coffee intersection by inclusion-exclusion. Letter C conditions late arrivals on premium deliveries. Letter D computes the expected net return of a discrete charity ticket. Letter E applies Bayes' theorem after a defective part is observed.",
       "placeholder": false
     },
     {
@@ -39,11 +39,11 @@
       "subsection": "12.6",
       "context": "Evaluate each statement. Mark it TRUE or FALSE.",
       "statements": [
-        "At a library, 58 members borrow fiction, 46 borrow nonfiction, and 17 borrow both. The monthly report claims 87 borrow at least one genre.",
+        "At a library, 58 members borrow fiction, 46 borrow nonfiction, and 17 borrow both. More than $85$ members borrow at least one genre.",
         "A streaming survey of 104 homes finds 47 premium accounts, 41 download users, and 14 homes with both features. The survey calls the two features independent.",
-        "A raffle produces net outcomes $-5$, $3$, and $13$ euros with probabilities $\\frac25$, $\\frac25$, and $\\frac15$. The organiser lists the variance as $\\dfrac{1104}{25}$ square euros.",
-        "A disease affects $1\\%$ of patients. A screen is $99\\%$ sensitive and falsely flags $2\\%$ of healthy patients. After a positive result, the stated disease probability is $\\dfrac{2}{3}$.",
-        "At a school fair, an urn holds five red and seven blue balls; two are selected together. Organizers list the probability of two red balls as $\\dfrac{1}{6}$."
+        "A raffle produces net outcomes $-5$, $3$, and $13$ euros with probabilities $\\frac25$, $\\frac25$, and $\\frac15$. The variance of the net outcome is greater than $44$ square euros.",
+        "A disease affects $1\\%$ of patients. A screen is $99\\%$ sensitive and falsely flags $2\\%$ of healthy patients. After a positive result, the probability of disease is greater than $34\\%$.",
+        "At a school fair, an urn holds five red and seven blue balls; two are selected together. The probability of two red balls is greater than $16\\%$."
       ],
       "answer_key": [
         true,
@@ -53,15 +53,15 @@
         false
       ],
       "tactical_explanations": [
-        "**A.** → True\n\nUse two-set inclusion-exclusion to recover the inclusive union:\n\n$$\nN(A\\cup B) = N(A)+N(B)-N(A\\cap B)\n$$\n\n$$\n= 58+46-17\n$$\n\n$$\n= 87\n$$\n\nThe associated disjoint counts are\n\n$$\nN(\\text{exactly one}) = 58+46-2(17)\n$$\n\n$$\n= 70\n$$\n\n$$\nN(\\text{only A}) = 58-17\n$$\n\n$$\n= 41,\\qquad N(\\text{neither})\n$$\n\n$$\n= 120-87\n$$\n\n$$\n= 33\n$$\n\nFor the category asked about in the stem, the correct count is $87$ rather than $87$:\n\n$$87=87$$\n\nThe mathematical result agrees with the claim, so the statement is True.",
-        "**B.** → False\n\nIndependence requires the observed intersection to equal the product of the marginal probabilities:\n\n$$P(A\\cap B)=\\frac{14}{104}$$\n\n$$P(A)P(B)=\\frac{47}{104}\\cdot\n\\frac{41}{104}$$\n\nAvoid rounding by cross-multiplying:\n\n$$\n14\\cdot104 = 1456,\\qquad 47\\cdot41\n$$\n\n$$\n= 1927\n$$\n\nThese products are unequal, so the events are not independent. The stem instead says independent:\n\n$$1456\\ne1927$$\n\nThe mathematical result does not agree with the claim, so the statement is False.",
-        "**C.** → True\n\nCompute the first moment from every possible outcome:\n\n$$\nE(X) = (-5)(\\dfrac{2}{5})+(3)(\\dfrac{2}{5})+(13)(\\dfrac{1}{5})\n$$\n\n$$\n= \\dfrac{9}{5}\n$$\n\nCompute the second moment separately:\n\n$$\nE(X^2) = (-5)^2(\\dfrac{2}{5})+(3)^2(\\dfrac{2}{5})+(13)^2(\\dfrac{1}{5})\n$$\n\n$$\n= \\dfrac{237}{5}\n$$\n\nThen\n\n$$\n\\operatorname{Var}(X) = E(X^2)-[E(X)]^2\n$$\n\n$$\n= \\dfrac{237}{5}-(\\dfrac{9}{5})^2\n$$\n\n$$\n= \\dfrac{1104}{25}\n$$\n\nThe requested variance is $\\dfrac{1104}{25}$, compared with $\\dfrac{1104}{25}$ in the stem:\n\n$$\\dfrac{1104}{25}=\\dfrac{1104}{25}$$\n\nThe mathematical result agrees with the claim, so the statement is True.",
-        "**D.** → False\n\nBayes' theorem begins with the joint weight of each route to the observed evidence:\n\n$$\nw_1 = \\dfrac{1}{100}\\cdot\\dfrac{99}{100}\n$$\n\n$$\n= \\dfrac{99}{10000},\\qquad w_2\n$$\n\n$$\n= \\dfrac{99}{100}\\cdot\\dfrac{1}{50}\n$$\n\n$$\n= \\dfrac{99}{5000}\n$$\n\nThe law of total probability adds all those disjoint routes:\n\n$$\nP(E) = \\dfrac{99}{10000}+\\dfrac{99}{5000}\n$$\n\n$$\n= \\dfrac{297}{10000}\n$$\n\nNormalize the weight for source 1:\n\n$$\nP(C_1\\mid E) = \\frac{P(C_1)P(E\\mid C_1)}{P(E)}\n$$\n\n$$\n= \\frac{\\dfrac{99}{10000}}{\\dfrac{297}{10000}}\n$$\n\n$$\n= \\dfrac{1}{3}\\approx 0.333333\n$$\n\nThe stem claims $\\dfrac{2}{3}$, so\n\n$$\\dfrac{1}{3}\\ne\\dfrac{2}{3}$$\n\nThe mathematical result does not agree with the claim, so the statement is False.",
-        "**E.** → False\n\nCount the equally likely outcomes in the full experiment:\n\n$$\nN = \\binom{12}{2}\n$$\n\n$$\n= 66\n$$\n\nApply all restrictions to the favorable count, without replacing a draw or ordering an unordered selection:\n\n$$\nF = \\binom{5}{2}\n$$\n\n$$\n= 10\n$$\n\nThe required probability is therefore\n\n$$\nP = \\frac{F}{N}\n$$\n\n$$\n= \\frac{10}{66}\n$$\n\n$$\n= \\dfrac{5}{33} \\approx 0.151515\n$$\n\nThe claimed probability is $\\dfrac{1}{6}$. Exact comparison gives\n\n$$\\dfrac{5}{33}\\ne\\dfrac{1}{6}$$\n\nThe mathematical result does not agree with the claim, so the statement is False."
+        "**A.** → True\n\nThis claim asks how many members borrow at least one genre. With $N(F)=58$, $N(N)=46$, and $N(F\\cap N)=17$,\n$$N(F\\cup N)=N(F)+N(N)-N(F\\cap N)=58+46-17=87$$\nExactly $87$ members borrow at least one genre. The claim states that more than $85$ do so. Since $87 > 85$, the statement is True.",
+        "**B.** → False\n\nIndependence of premium service ($A$) and download use ($B$) would require $P(A\\cap B)=P(A)P(B)$. From the survey,\n$$P(A\\cap B)=\\frac{14}{104},\\qquad P(A)P(B)=\\frac{47}{104}\\cdot\\frac{41}{104}$$\nCross-multiplying avoids rounding error:\n$$14\\cdot 104=1456,\\qquad 47\\cdot 41=1927$$\nSince $1456\\ne 1927$, the product test fails and the features are not independent. The claim calls them independent, so the statement is False.",
+        "**C.** → True\n\nThis claim asks for the variance of the raffle payoff $X$. First compute the mean and the second moment:\n$$E(X)=(-5)\\cdot\\frac{2}{5}+3\\cdot\\frac{2}{5}+13\\cdot\\frac{1}{5}=\\frac{9}{5}$$\n$$E(X^2)=25\\cdot\\frac{2}{5}+9\\cdot\\frac{2}{5}+169\\cdot\\frac{1}{5}=\\frac{237}{5}$$\n$$\\operatorname{Var}(X)=E(X^2)-[E(X)]^2=\\frac{237}{5}-\\left(\\frac{9}{5}\\right)^2=\\frac{1104}{25}=44.16$$\nThe variance is $44.16$ square euros. The claim states that it is greater than $44$. Since $44.16 > 44$, the statement is True.",
+        "**D.** → False\n\nThis claim asks for the posterior probability of disease after a positive screen. Let $D$ be the event of disease and $+$ a positive result. Bayes' theorem gives\n$$P(D\\mid +)=\\frac{P(+\\mid D)P(D)}{P(+\\mid D)P(D)+P(+\\mid D^c)P(D^c)}$$\nSubstitute $P(D)=0.01$, $P(+\\mid D)=0.99$, $P(D^c)=0.99$, and $P(+\\mid D^c)=0.02$:\n$$P(D\\mid +)=\\frac{0.01\\cdot 0.99}{0.01\\cdot 0.99+0.99\\cdot 0.02}=\\frac{0.0099}{0.0297}=\\frac{1}{3}\\approx 0.333333$$\nExpressed as a percentage, this is approximately $33.333\\%$. The claim states that this probability is greater than $34\\%$. Since $33.333\\% \\not> 34\\%$, the statement is False.",
+        "**E.** → False\n\nThis claim asks for the probability of drawing two red balls from five red and seven blue without replacement. Unordered pairs form the sample space:\n$$P(\\text{two red})=\\frac{\\binom{5}{2}}{\\binom{12}{2}}=\\frac{10}{66}=\\frac{5}{33}\\approx 0.151515$$\nExpressed as a percentage, this is approximately $15.152\\%$. The claim states that this probability is greater than $16\\%$. Since $15.152\\% \\not> 16\\%$, the statement is False."
       ],
       "difficulty_level": "5/5",
       "sort_order": 200,
-      "solution_overview": "Topics: 12.2, 12.3, 12.4, 12.5, 12.1.\nA: apply inclusion-exclusion to disjoint regions.\nB: condition on the correct sample space or test independence.\nC: derive the variance from a discrete distribution.\nD: combine prior and likelihood weights with Bayes' theorem.\nE: count favorable and total equally likely outcomes.",
+      "solution_overview": "Five independent exam checks. Letter A recovers a library union by inclusion-exclusion. Letter B tests independence of two streaming features. Letter C computes the variance of a three-point raffle payoff. Letter D applies Bayes' theorem after a positive disease screen. Letter E counts unordered pairs of red balls from a twelve-ball urn.",
       "placeholder": false
     },
     {
@@ -71,11 +71,11 @@
       "subsection": "12.6",
       "context": "Evaluate each statement. Mark it TRUE or FALSE.",
       "statements": [
-        "An insurance file has 50 collision policies, 45 theft policies, and 15 carrying both covers. Conditional on having at least one cover, the probability of exactly one is stated as $\\dfrac{13}{16}$.",
-        "A prize game returns $-6$, $3$, or $14$ euros with probabilities $\\frac14$, $\\frac12$, and $\\frac14$. Its stated variance is $\\dfrac{205}{4}$ square euros.",
-        "Machines A, B, and C make $50\\%$, $30\\%$, and $20\\%$ of output with defect rates $1\\%$, $3\\%$, and $4\\%$. A defective item is said to come from C with probability $\\dfrac{4}{11}$.",
-        "A research committee of four is chosen from six men and five women. The selection has exactly two women with probability $\\dfrac{5}{11}$, according to the minutes.",
-        "A commuter census records 72 bus users, 55 rail users, and 21 who use both. It states that 86 use exactly one of the two services."
+        "An insurance file has 50 collision policies, 45 theft policies, and 15 carrying both covers. Conditional on having at least one cover, the probability of exactly one cover is greater than $81\\%$.",
+        "A prize game returns $-6$, $3$, or $14$ euros with probabilities $\\frac14$, $\\frac12$, and $\\frac14$. Its variance is greater than $51$ square euros.",
+        "Machines A, B, and C make $50\\%$, $30\\%$, and $20\\%$ of output with defect rates $1\\%$, $3\\%$, and $4\\%$. Given a defective item, the probability it came from C is greater than $36\\%$.",
+        "A research committee of four is chosen from six men and five women. The probability that the selection has exactly two women is greater than $45\\%$.",
+        "A commuter census records 72 bus users, 55 rail users, and 21 who use both. Exactly $86$ people use exactly one of the two services."
       ],
       "answer_key": [
         true,
@@ -85,15 +85,15 @@
         false
       ],
       "tactical_explanations": [
-        "**A.** → True\n\nConditioning replaces the full sample space by the group named after the vertical bar:\n\n$$\nP(A\\mid B) = \\frac{P(A\\cap B)}{P(B)}\n$$\n\n$$\n= \\frac{N(A\\cap B)}{N(B)}\n$$\n\nHere the favorable and conditional totals are\n\n$$\nN(A\\cap B) = 65,\\qquad N(B)\n$$\n\n$$\n= 80\n$$\n\nTherefore,\n\n$$\nP(A\\mid B) = \\frac{65}{80}\n$$\n\n$$\n= \\dfrac{13}{16}\\approx 0.8125\n$$\n\nThe stem uses $\\dfrac{13}{16}$, so exact fractions give\n\n$$\\dfrac{13}{16}=\\dfrac{13}{16}$$\n\nThe mathematical result agrees with the claim, so the statement is True.",
-        "**B.** → False\n\nCompute the first moment from every possible outcome:\n\n$$\nE(X) = (-6)(\\dfrac{1}{4})+(3)(\\dfrac{1}{2})+(14)(\\dfrac{1}{4})\n$$\n\n$$\n= \\dfrac{7}{2}\n$$\n\nCompute the second moment separately:\n\n$$\nE(X^2) = (-6)^2(\\dfrac{1}{4})+(3)^2(\\dfrac{1}{2})+(14)^2(\\dfrac{1}{4})\n$$\n\n$$\n= \\dfrac{125}{2}\n$$\n\nThen\n\n$$\n\\operatorname{Var}(X) = E(X^2)-[E(X)]^2\n$$\n\n$$\n= \\dfrac{125}{2}-(\\dfrac{7}{2})^2\n$$\n\n$$\n= \\dfrac{201}{4}\n$$\n\nThe requested variance is $\\dfrac{201}{4}$, compared with $\\dfrac{205}{4}$ in the stem:\n\n$$\\dfrac{201}{4}\\ne\\dfrac{205}{4}$$\n\nThe mathematical result does not agree with the claim, so the statement is False.",
-        "**C.** → True\n\nBayes' theorem begins with the joint weight of each route to the observed evidence:\n\n$$\nw_1 = \\dfrac{1}{2}\\cdot\\dfrac{1}{100}\n$$\n\n$$\n= \\dfrac{1}{200},\\qquad w_2\n$$\n\n$$\n= \\dfrac{3}{10}\\cdot\\dfrac{3}{100}\n$$\n\n$$\n= \\dfrac{9}{1000},\\qquad w_3\n$$\n\n$$\n= \\dfrac{1}{5}\\cdot\\dfrac{1}{25}\n$$\n\n$$\n= \\dfrac{1}{125}\n$$\n\nThe law of total probability adds all those disjoint routes:\n\n$$\nP(E) = \\dfrac{1}{200}+\\dfrac{9}{1000}+\\dfrac{1}{125}\n$$\n\n$$\n= \\dfrac{11}{500}\n$$\n\nNormalize the weight for source 3:\n\n$$\nP(C_3\\mid E) = \\frac{P(C_3)P(E\\mid C_3)}{P(E)}\n$$\n\n$$\n= \\frac{\\dfrac{1}{125}}{\\dfrac{11}{500}}\n$$\n\n$$\n= \\dfrac{4}{11}\\approx 0.363636\n$$\n\nThe stem claims $\\dfrac{4}{11}$, so\n\n$$\\dfrac{4}{11}=\\dfrac{4}{11}$$\n\nThe mathematical result agrees with the claim, so the statement is True.",
-        "**D.** → True\n\nCount the equally likely outcomes in the full experiment:\n\n$$\nN = \\binom{11}{4}\n$$\n\n$$\n= 330\n$$\n\nApply all restrictions to the favorable count, without replacing a draw or ordering an unordered selection:\n\n$$\nF = \\binom{5}{2}\\binom{6}{2}\n$$\n\n$$\n= 150\n$$\n\nThe required probability is therefore\n\n$$\nP = \\frac{F}{N}\n$$\n\n$$\n= \\frac{150}{330}\n$$\n\n$$\n= \\dfrac{5}{11} \\approx 0.454545\n$$\n\nThe claimed probability is $\\dfrac{5}{11}$. Exact comparison gives\n\n$$\\dfrac{5}{11}=\\dfrac{5}{11}$$\n\nThe mathematical result agrees with the claim, so the statement is True.",
-        "**E.** → False\n\nUse two-set inclusion-exclusion to recover the inclusive union:\n\n$$\nN(A\\cup B) = N(A)+N(B)-N(A\\cap B)\n$$\n\n$$\n= 72+55-21\n$$\n\n$$\n= 106\n$$\n\nThe associated disjoint counts are\n\n$$\nN(\\text{exactly one}) = 72+55-2(21)\n$$\n\n$$\n= 85\n$$\n\n$$\nN(\\text{only A}) = 72-21\n$$\n\n$$\n= 51,\\qquad N(\\text{neither})\n$$\n\n$$\n= 140-106\n$$\n\n$$\n= 34\n$$\n\nFor the category asked about in the stem, the correct count is $85$ rather than $86$:\n\n$$85\\ne86$$\n\nThe mathematical result does not agree with the claim, so the statement is False."
+        "**A.** → True\n\nThis claim asks for the probability of exactly one cover among those with at least one cover. The union size is\n$$N(C\\cup T)=50+45-15=80$$\nand the exactly-one count is\n$$N(\\text{exactly one})=50+45-2\\cdot 15=65$$\nConditioning on at least one cover,\n$$P(\\text{exactly one}\\mid \\text{at least one})=\\frac{65}{80}=\\frac{13}{16}=0.8125$$\nExpressed as a percentage, this is $81.25\\%$. The claim states that this probability is greater than $81\\%$. Since $81.25\\% > 81\\%$, the statement is True.",
+        "**B.** → False\n\nThis claim asks for $\\operatorname{Var}(X)$ of the prize game. Compute the mean and second moment:\n$$E(X)=(-6)\\cdot\\frac{1}{4}+3\\cdot\\frac{1}{2}+14\\cdot\\frac{1}{4}=\\frac{7}{2}$$\n$$E(X^2)=36\\cdot\\frac{1}{4}+9\\cdot\\frac{1}{2}+196\\cdot\\frac{1}{4}=\\frac{125}{2}$$\n$$\\operatorname{Var}(X)=\\frac{125}{2}-\\left(\\frac{7}{2}\\right)^2=\\frac{201}{4}=50.25$$\nThe variance is $50.25$ square euros. The claim states that it is greater than $51$. Since $50.25 \\not> 51$, the statement is False.",
+        "**C.** → True\n\nThis claim asks for the posterior probability that a defective item came from machine C. The joint defect weights are\n$$w_A=0.50\\cdot 0.01=0.005,\\qquad w_B=0.30\\cdot 0.03=0.009,\\qquad w_C=0.20\\cdot 0.04=0.008$$\n$$P(D)=0.005+0.009+0.008=0.022$$\nBayes' theorem then gives\n$$P(C\\mid D)=\\frac{0.008}{0.022}=\\frac{4}{11}\\approx 0.363636$$\nExpressed as a percentage, this is approximately $36.364\\%$. The claim states that this probability is greater than $36\\%$. Since $36.364\\% > 36\\%$, the statement is True.",
+        "**D.** → True\n\nThis claim asks for the probability that a four-person committee chosen from six men and five women contains exactly two women. Equally likely committees give\n$$P=\\frac{\\binom{5}{2}\\binom{6}{2}}{\\binom{11}{4}}=\\frac{10\\cdot 15}{330}=\\frac{150}{330}=\\frac{5}{11}\\approx 0.454545$$\nExpressed as a percentage, this is approximately $45.455\\%$. The claim states that this probability is greater than $45\\%$. Since $45.455\\% > 45\\%$, the statement is True.",
+        "**E.** → False\n\nThis claim asks how many people use exactly one of the two services. With $N(B)=72$, $N(R)=55$, and $N(B\\cap R)=21$,\n$$N(\\text{exactly one})=N(B)+N(R)-2N(B\\cap R)=72+55-42=85$$\nExactly $85$ people use exactly one service. The claim states that the count is $86$. Since $85\\ne 86$, the statement is False."
       ],
       "difficulty_level": "5/5",
       "sort_order": 201,
-      "solution_overview": "Topics: 12.3, 12.4, 12.5, 12.1, 12.2.\nA: condition on the correct sample space or test independence.\nB: derive the variance from a discrete distribution.\nC: combine prior and likelihood weights with Bayes' theorem.\nD: count favorable and total equally likely outcomes.\nE: apply inclusion-exclusion to disjoint regions.",
+      "solution_overview": "Five separate checks. Letter A conditions on the insured union of collision and theft covers. Letter B computes the variance of a three-outcome prize game. Letter C uses Bayes' theorem across three machines after a defect. Letter D counts committees with exactly two women. Letter E recovers an \"exactly one service\" count by inclusion-exclusion.",
       "placeholder": false
     },
     {
@@ -103,11 +103,11 @@
       "subsection": "12.6",
       "context": "Evaluate each statement. Mark it TRUE or FALSE.",
       "statements": [
-        "A school booth gives one-play net returns $-4$, $6$, and $18$ with probabilities $\\frac38$, $\\frac38$, and $\\frac14$. For two independent plays, the claimed total variance is $\\dfrac{1167}{8}$.",
-        "Messages are spam with prior $20\\%$. A filter flags $95\\%$ of spam and $5\\%$ of ordinary mail. The dashboard reports $P(\\text{spam}\\mid\\text{flag})=\\dfrac{20}{23}$.",
-        "Five actors take random positions in a publicity line. The director says two named actors stand next to each other with probability $\\dfrac{49}{120}$.",
-        "Among 140 phones, 64 have app A, 59 have app B, and 23 have both. The technician says 40 have neither app.",
-        "A warehouse starts with 114 orders, 49 requiring a signature. One known signature order is removed; the chance that the next order also requires a signature is reported as $\\dfrac{49}{113}$."
+        "A school booth gives one-play net returns $-4$, $6$, and $18$ with probabilities $\\frac38$, $\\frac38$, and $\\frac14$. For two independent plays, the total variance is greater than $145$.",
+        "Messages are spam with prior $20\\%$. A filter flags $95\\%$ of spam and $5\\%$ of ordinary mail. The probability that a flagged message is spam is greater than $83\\%$.",
+        "Five actors take random positions in a publicity line. The probability that two named actors stand next to each other is greater than $41\\%$.",
+        "Among 140 phones, 64 have app A, 59 have app B, and 23 have both. Exactly $40$ phones have neither app.",
+        "A warehouse starts with 114 orders, 49 requiring a signature. One known signature order is removed; the probability that the next order also requires a signature is greater than $43\\%$."
       ],
       "answer_key": [
         true,
@@ -117,15 +117,15 @@
         false
       ],
       "tactical_explanations": [
-        "**A.** → True\n\nCompute the first moment from every possible outcome:\n\n$$\nE(X) = (-4)(\\dfrac{3}{8})+(6)(\\dfrac{3}{8})+(18)(\\dfrac{1}{4})\n$$\n\n$$\n= \\dfrac{21}{4}\n$$\n\nCompute the second moment separately:\n\n$$\nE(X^2) = (-4)^2(\\dfrac{3}{8})+(6)^2(\\dfrac{3}{8})+(18)^2(\\dfrac{1}{4})\n$$\n\n$$\n= \\dfrac{201}{2}\n$$\n\nThen\n\n$$\n\\operatorname{Var}(X) = E(X^2)-[E(X)]^2\n$$\n\n$$\n= \\dfrac{201}{2}-(\\dfrac{21}{4})^2\n$$\n\n$$\n= \\dfrac{1167}{16}\n$$\n\nFor independent plays, covariance is zero and variances add:\n\n$$\\operatorname{Var}(X_1+X_2)\n=\\operatorname{Var}(X_1)+\\operatorname{Var}(X_2)$$\n\n$$\n\\operatorname{Var}(X_1+X_2) = 2\\left(\\dfrac{1167}{16}\\right)\n$$\n\n$$\n= \\dfrac{1167}{8}\n$$\n\nThe requested two-play variance is $\\dfrac{1167}{8}$, compared with $\\dfrac{1167}{8}$ in the stem:\n\n$$\\dfrac{1167}{8}=\\dfrac{1167}{8}$$\n\nThe mathematical result agrees with the claim, so the statement is True.",
-        "**B.** → False\n\nBayes' theorem begins with the joint weight of each route to the observed evidence:\n\n$$\nw_1 = \\dfrac{1}{5}\\cdot\\dfrac{19}{20}\n$$\n\n$$\n= \\dfrac{19}{100},\\qquad w_2\n$$\n\n$$\n= \\dfrac{4}{5}\\cdot\\dfrac{1}{20}\n$$\n\n$$\n= \\dfrac{1}{25}\n$$\n\nThe law of total probability adds all those disjoint routes:\n\n$$\nP(E) = \\dfrac{19}{100}+\\dfrac{1}{25}\n$$\n\n$$\n= \\dfrac{23}{100}\n$$\n\nNormalize the weight for source 1:\n\n$$\nP(C_1\\mid E) = \\frac{P(C_1)P(E\\mid C_1)}{P(E)}\n$$\n\n$$\n= \\frac{\\dfrac{19}{100}}{\\dfrac{23}{100}}\n$$\n\n$$\n= \\dfrac{19}{23}\\approx 0.826087\n$$\n\nThe stem claims $\\dfrac{20}{23}$, so\n\n$$\\dfrac{19}{23}\\ne\\dfrac{20}{23}$$\n\nThe mathematical result does not agree with the claim, so the statement is False.",
-        "**C.** → False\n\nCount the equally likely outcomes in the full experiment:\n\n$$\nN = 5!\n$$\n\n$$\n= 120\n$$\n\nApply all restrictions to the favorable count, without replacing a draw or ordering an unordered selection:\n\n$$\nF = 2\\cdot4!\n$$\n\n$$\n= 48\n$$\n\nThe required probability is therefore\n\n$$\nP = \\frac{F}{N}\n$$\n\n$$\n= \\frac{48}{120}\n$$\n\n$$\n= \\dfrac{2}{5} \\approx 0.4\n$$\n\nThe claimed probability is $\\dfrac{49}{120}$. Exact comparison gives\n\n$$\\dfrac{2}{5}\\ne\\dfrac{49}{120}$$\n\nThe mathematical result does not agree with the claim, so the statement is False.",
-        "**D.** → True\n\nUse two-set inclusion-exclusion to recover the inclusive union:\n\n$$\nN(A\\cup B) = N(A)+N(B)-N(A\\cap B)\n$$\n\n$$\n= 64+59-23\n$$\n\n$$\n= 100\n$$\n\nThe associated disjoint counts are\n\n$$\nN(\\text{exactly one}) = 64+59-2(23)\n$$\n\n$$\n= 77\n$$\n\n$$\nN(\\text{only A}) = 64-23\n$$\n\n$$\n= 41,\\qquad N(\\text{neither})\n$$\n\n$$\n= 140-100\n$$\n\n$$\n= 40\n$$\n\nFor the category asked about in the stem, the correct count is $40$ rather than $40$:\n\n$$40=40$$\n\nThe mathematical result agrees with the claim, so the statement is True.",
-        "**E.** → False\n\nConditioning replaces the full sample space by the group named after the vertical bar:\n\n$$\nP(A\\mid B) = \\frac{P(A\\cap B)}{P(B)}\n$$\n\n$$\n= \\frac{N(A\\cap B)}{N(B)}\n$$\n\nHere the favorable and conditional totals are\n\n$$\nN(A\\cap B) = 48,\\qquad N(B)\n$$\n\n$$\n= 113\n$$\n\nTherefore,\n\n$$\nP(A\\mid B) = \\frac{48}{113}\n$$\n\n$$\n= \\dfrac{48}{113}\\approx 0.424779\n$$\n\nThe stem uses $\\dfrac{49}{113}$, so exact fractions give\n\n$$\\dfrac{48}{113}\\ne\\dfrac{49}{113}$$\n\nThe mathematical result does not agree with the claim, so the statement is False."
+        "**A.** → True\n\nThis claim asks for the variance of the sum of two independent plays. For one play,\n$$E(X)=(-4)\\cdot\\frac{3}{8}+6\\cdot\\frac{3}{8}+18\\cdot\\frac{1}{4}=\\frac{21}{4}$$\n$$E(X^2)=16\\cdot\\frac{3}{8}+36\\cdot\\frac{3}{8}+324\\cdot\\frac{1}{4}=\\frac{201}{2}$$\n$$\\operatorname{Var}(X)=\\frac{201}{2}-\\left(\\frac{21}{4}\\right)^2=\\frac{1167}{16}$$\nIndependence lets variances add:\n$$\\operatorname{Var}(X_1+X_2)=2\\cdot\\frac{1167}{16}=\\frac{1167}{8}=145.875$$\nThe total variance is $145.875$. The claim states that it is greater than $145$. Since $145.875 > 145$, the statement is True.",
+        "**B.** → False\n\nThis claim asks for $P(\\text{spam}\\mid\\text{flag})$. Bayes' theorem uses the prior and the two flag rates:\n$$P(S\\mid F)=\\frac{P(F\\mid S)P(S)}{P(F\\mid S)P(S)+P(F\\mid S^c)P(S^c)}$$\n$$P(S\\mid F)=\\frac{0.95\\cdot 0.20}{0.95\\cdot 0.20+0.05\\cdot 0.80}=\\frac{0.19}{0.23}=\\frac{19}{23}\\approx 0.826087$$\nExpressed as a percentage, this is approximately $82.609\\%$. The claim states that this probability is greater than $83\\%$. Since $82.609\\% \\not> 83\\%$, the statement is False.",
+        "**C.** → False\n\nThis claim asks for the probability that two named actors stand next to each other in a random line of five. Treat the named pair as a block: there are $2$ internal orders and $4!$ arrangements of the block with the other three actors, against $5!$ total lines:\n$$P=\\frac{2\\cdot 4!}{5!}=\\frac{2}{5}=0.4$$\nExpressed as a percentage, this is $40\\%$. The claim states that this probability is greater than $41\\%$. Since $40\\% \\not> 41\\%$, the statement is False.",
+        "**D.** → True\n\nThis claim asks how many of the $140$ phones have neither app A nor app B. First form the union by inclusion-exclusion:\n$$N(A\\cup B)=64+59-23=100$$\nThen the complement relative to the full stock is\n$$N(\\text{neither})=140-100=40$$\nExactly $40$ phones have neither app. The claim states that the count is $40$, so the statement is True.",
+        "**E.** → False\n\nAfter one known signature order is removed, $48$ signature orders remain among $113$ orders. The next-order probability is therefore\n$$P=\\frac{48}{113}\\approx 0.424779$$\nExpressed as a percentage, this is approximately $42.478\\%$. The claim states that this probability is greater than $43\\%$. Since $42.478\\% \\not> 43\\%$, the statement is False."
       ],
       "difficulty_level": "5/5",
       "sort_order": 202,
-      "solution_overview": "Topics: 12.4, 12.5, 12.1, 12.2, 12.3.\nA: derive the two-play variance from a discrete distribution.\nB: combine prior and likelihood weights with Bayes' theorem.\nC: count favorable and total equally likely outcomes.\nD: apply inclusion-exclusion to disjoint regions.\nE: condition on the correct sample space or test independence.",
+      "solution_overview": "Five separate checks. Letter A doubles the variance of an independent booth game. Letter B applies Bayes' theorem to a spam filter. Letter C counts permutations with two named actors adjacent. Letter D recovers a \"neither app\" count. Letter E updates a without-replacement signature probability after one removal.",
       "placeholder": false
     },
     {
@@ -135,11 +135,11 @@
       "subsection": "12.6",
       "context": "Evaluate each statement. Mark it TRUE or FALSE.",
       "statements": [
-        "Suppliers A, B, and C provide $50\\%$, $30\\%$, and $20\\%$ of stock; their good-item rates are $98\\%$, $95\\%$, and $90\\%$. Given a good item, the claimed chance of supplier B is $\\dfrac{57}{191}$.",
-        "A card club deals a five-card hand and calls any hand from a single suit a flush, including straight flushes. The club's quoted flush probability is $\\dfrac{33}{16660}$.",
-        "A clinic logs 48 patients with symptom A, 42 with symptom B, and 73 with at least one symptom. The physician infers that 18 have both.",
-        "A fair die is rolled at a game club. Given that the face is at least four, the probability that it is even is advertised as $\\dfrac{2}{3}$.",
-        "A fair four-sided die pays its face value in tokens. The games teacher says the payoff variance equals $\\dfrac{9}{4}$."
+        "Suppliers A, B, and C provide $50\\%$, $30\\%$, and $20\\%$ of stock; their good-item rates are $98\\%$, $95\\%$, and $90\\%$. Given a good item, the probability it came from supplier B is greater than $29\\%$.",
+        "A card club deals a five-card hand and calls any hand from a single suit a flush, including straight flushes. The probability of a flush is greater than $0.19\\%$.",
+        "A clinic logs 48 patients with symptom A, 42 with symptom B, and 73 with at least one symptom. Exactly $18$ patients have both symptoms.",
+        "A fair die is rolled. Given that the face is at least four, the probability that it is even is greater than $66\\%$.",
+        "A fair four-sided die pays its face value in tokens. The payoff variance is greater than $1.3$."
       ],
       "answer_key": [
         true,
@@ -149,15 +149,15 @@
         false
       ],
       "tactical_explanations": [
-        "**A.** → True\n\nBayes' theorem begins with the joint weight of each route to the observed evidence:\n\n$$\nw_1 = \\dfrac{1}{2}\\cdot\\dfrac{49}{50}\n$$\n\n$$\n= \\dfrac{49}{100},\\qquad w_2\n$$\n\n$$\n= \\dfrac{3}{10}\\cdot\\dfrac{19}{20}\n$$\n\n$$\n= \\dfrac{57}{200},\\qquad w_3\n$$\n\n$$\n= \\dfrac{1}{5}\\cdot\\dfrac{9}{10}\n$$\n\n$$\n= \\dfrac{9}{50}\n$$\n\nThe law of total probability adds all those disjoint routes:\n\n$$\nP(E) = \\dfrac{49}{100}+\\dfrac{57}{200}+\\dfrac{9}{50}\n$$\n\n$$\n= \\dfrac{191}{200}\n$$\n\nNormalize the weight for source 2:\n\n$$\nP(C_2\\mid E) = \\frac{P(C_2)P(E\\mid C_2)}{P(E)}\n$$\n\n$$\n= \\frac{\\dfrac{57}{200}}{\\dfrac{191}{200}}\n$$\n\n$$\n= \\dfrac{57}{191}\\approx 0.298429\n$$\n\nThe stem claims $\\dfrac{57}{191}$, so\n\n$$\\dfrac{57}{191}=\\dfrac{57}{191}$$\n\nThe mathematical result agrees with the claim, so the statement is True.",
-        "**B.** → True\n\nCount the equally likely outcomes in the full experiment:\n\n$$\nN = \\binom{52}{5}\n$$\n\n$$\n= 2598960\n$$\n\nApply all restrictions to the favorable count, without replacing a draw or ordering an unordered selection:\n\n$$\nF = 4\\binom{13}{5}\n$$\n\n$$\n= 5148\n$$\n\nThe required probability is therefore\n\n$$\nP = \\frac{F}{N}\n$$\n\n$$\n= \\frac{5148}{2598960}\n$$\n\n$$\n= \\dfrac{33}{16660} \\approx 0.001981\n$$\n\nThe claimed probability is $\\dfrac{33}{16660}$. Exact comparison gives\n\n$$\\dfrac{33}{16660}=\\dfrac{33}{16660}$$\n\nThe mathematical result agrees with the claim, so the statement is True.",
-        "**C.** → False\n\nUse two-set inclusion-exclusion to recover the inclusive union:\n\n$$\nN(A\\cup B) = N(A)+N(B)-N(A\\cap B)\n$$\n\n$$\n= 48+42-17\n$$\n\n$$\n= 73\n$$\n\nThe associated disjoint counts are\n\n$$\nN(\\text{exactly one}) = 48+42-2(17)\n$$\n\n$$\n= 56\n$$\n\n$$\nN(\\text{only A}) = 48-17\n$$\n\n$$\n= 31,\\qquad N(\\text{neither})\n$$\n\n$$\n= 100-73\n$$\n\n$$\n= 27\n$$\n\nFor the category asked about in the stem, the correct count is $17$ rather than $18$:\n\n$$17\\ne18$$\n\nThe mathematical result does not agree with the claim, so the statement is False.",
-        "**D.** → True\n\nConditioning replaces the full sample space by the group named after the vertical bar:\n\n$$\nP(A\\mid B) = \\frac{P(A\\cap B)}{P(B)}\n$$\n\n$$\n= \\frac{N(A\\cap B)}{N(B)}\n$$\n\nHere the favorable and conditional totals are\n\n$$\nN(A\\cap B) = 2,\\qquad N(B)\n$$\n\n$$\n= 3\n$$\n\nTherefore,\n\n$$\nP(A\\mid B) = \\frac{2}{3}\n$$\n\n$$\n= \\dfrac{2}{3}\\approx 0.666667\n$$\n\nThe stem uses $\\dfrac{2}{3}$, so exact fractions give\n\n$$\\dfrac{2}{3}=\\dfrac{2}{3}$$\n\nThe mathematical result agrees with the claim, so the statement is True.",
-        "**E.** → False\n\nCompute the first moment from every possible outcome:\n\n$$\nE(X) = (1)(\\dfrac{1}{4})+(2)(\\dfrac{1}{4})+(3)(\\dfrac{1}{4})+(4)(\\dfrac{1}{4})\n$$\n\n$$\n= \\dfrac{5}{2}\n$$\n\nCompute the second moment separately:\n\n$$\nE(X^2) = (1)^2(\\dfrac{1}{4})+(2)^2(\\dfrac{1}{4})+(3)^2(\\dfrac{1}{4})+(4)^2(\\dfrac{1}{4})\n$$\n\n$$\n= \\dfrac{15}{2}\n$$\n\nThen\n\n$$\n\\operatorname{Var}(X) = E(X^2)-[E(X)]^2\n$$\n\n$$\n= \\dfrac{15}{2}-(\\dfrac{5}{2})^2\n$$\n\n$$\n= \\dfrac{5}{4}\n$$\n\nThe requested variance is $\\dfrac{5}{4}$, compared with $\\dfrac{9}{4}$ in the stem:\n\n$$\\dfrac{5}{4}\\ne\\dfrac{9}{4}$$\n\nThe mathematical result does not agree with the claim, so the statement is False."
+        "**A.** → True\n\nLet $G$ be a good item. The joint good weights are\n$$w_A=0.50\\cdot 0.98=0.49,\\qquad w_B=0.30\\cdot 0.95=0.285,\\qquad w_C=0.20\\cdot 0.90=0.18$$\n$$P(G)=0.49+0.285+0.18=0.955$$\nBayes' theorem gives\n$$P(B\\mid G)=\\frac{0.285}{0.955}=\\frac{57}{191}\\approx 0.298429$$\nExpressed as a percentage, this is approximately $29.843\\%$. The claim states that this probability is greater than $29\\%$. Since $29.843\\% > 29\\%$, the statement is True.",
+        "**B.** → True\n\nA flush here means all five cards from one suit, including straight flushes. There are $4$ suits and $\\binom{13}{5}$ five-card subsets per suit, against $\\binom{52}{5}$ hands:\n$$P=\\frac{4\\binom{13}{5}}{\\binom{52}{5}}=\\frac{4\\cdot 1287}{2598960}=\\frac{5148}{2598960}=\\frac{33}{16660}\\approx 0.001980$$\nExpressed as a percentage, this is approximately $0.198\\%$. The claim states that this probability is greater than $0.19\\%$. Since $0.198\\% > 0.19\\%$, the statement is True.",
+        "**C.** → False\n\nThis claim asks how many patients have both symptoms. Inclusion-exclusion recovers the intersection from the given union:\n$$N(A\\cup B)=N(A)+N(B)-N(A\\cap B)$$\n$$73=48+42-N(A\\cap B)$$\n$$N(A\\cap B)=17$$\nExactly $17$ patients have both symptoms. The claim states that the count is $18$. Since $17\\ne 18$, the statement is False.",
+        "**D.** → True\n\nGiven that the face is in $\\{4,5,6\\}$, the even faces in that set are $\\{4,6\\}$. With a fair die,\n$$P(\\text{even}\\mid \\ge 4)=\\frac{2}{3}\\approx 0.666667$$\nExpressed as a percentage, this is approximately $66.667\\%$. The claim states that this probability is greater than $66\\%$. Since $66.667\\% > 66\\%$, the statement is True.",
+        "**E.** → False\n\nFor a fair four-sided die paying face value $X\\in\\{1,2,3,4\\}$ with equal probability $1/4$,\n$$E(X)=\\frac{1+2+3+4}{4}=\\frac{10}{4}=\\frac{5}{2}$$\n$$E(X^2)=\\frac{1+4+9+16}{4}=\\frac{30}{4}=\\frac{15}{2}$$\n$$\\operatorname{Var}(X)=\\frac{15}{2}-\\left(\\frac{5}{2}\\right)^2=\\frac{15}{2}-\\frac{25}{4}=\\frac{5}{4}=1.25$$\nThe variance is $1.25$. The claim states that it is greater than $1.3$. Since $1.25 \\not> 1.3$, the statement is False."
       ],
       "difficulty_level": "5/5",
       "sort_order": 203,
-      "solution_overview": "Topics: 12.5, 12.1, 12.2, 12.3, 12.4.\nA: combine prior and likelihood weights with Bayes' theorem.\nB: count favorable and total equally likely outcomes.\nC: apply inclusion-exclusion to disjoint regions.\nD: condition on the correct sample space or test independence.\nE: derive the variance from a discrete distribution.",
+      "solution_overview": "Five separate checks. Letter A applies Bayes' theorem after observing a good item from three suppliers. Letter B counts five-card flushes in a $52$-card deck. Letter C recovers a two-symptom intersection. Letter D conditions an even face on rolling at least four. Letter E computes the variance of a fair four-sided payoff.",
       "placeholder": false
     },
     {
@@ -167,11 +167,11 @@
       "subsection": "12.6",
       "context": "Evaluate each statement. Mark it TRUE or FALSE.",
       "statements": [
-        "A youth council chooses three representatives from eight juniors and six seniors. Its handbook gives $\\dfrac{57}{364}$ as the probability that no senior is chosen.",
-        "Of 120 recreation members, 51 use the gym, 44 use the pool, and 19 use both. The centre claims 76 use at least one facility.",
-        "A king has already been drawn from a standard deck and is not replaced. The dealer says the conditional probability that the next card is a king equals $\\dfrac{4}{51}$.",
-        "A spinner awards $-1$, $0$, or $1$ point with probabilities $\\frac15$, $\\frac12$, and $\\frac3{10}$. The advertised expected score is $\\dfrac{1}{10}$.",
-        "Three possible faults have priors $\\frac12$, $\\frac3{10}$, and $\\frac15$. Their alarm probabilities are $\\frac1{10}$, $\\frac25$, and $\\frac12$. After an alarm, fault 2 is assigned posterior $\\dfrac{5}{9}$."
+        "A youth council chooses three representatives from eight juniors and six seniors. The probability that no senior is chosen is greater than $16\\%$.",
+        "Of 120 recreation members, 51 use the gym, 44 use the pool, and 19 use both. More than $75$ members use at least one facility.",
+        "A king has already been drawn from a standard deck and is not replaced. The probability that the next card is a king is greater than $5.9\\%$.",
+        "A spinner awards $-1$, $0$, or $1$ point with probabilities $\\frac15$, $\\frac12$, and $\\frac3{10}$. The expected score is greater than $0.05$.",
+        "Three possible faults have priors $\\frac12$, $\\frac3{10}$, and $\\frac15$. Their alarm probabilities are $\\frac1{10}$, $\\frac25$, and $\\frac12$. After an alarm, the probability of fault 2 is greater than $45\\%$."
       ],
       "answer_key": [
         false,
@@ -181,15 +181,15 @@
         false
       ],
       "tactical_explanations": [
-        "**A.** → False\n\nCount the equally likely outcomes in the full experiment:\n\n$$\nN = \\binom{14}{3}\n$$\n\n$$\n= 364\n$$\n\nApply all restrictions to the favorable count, without replacing a draw or ordering an unordered selection:\n\n$$\nF = \\binom{8}{3}\n$$\n\n$$\n= 56\n$$\n\nThe required probability is therefore\n\n$$\nP = \\frac{F}{N}\n$$\n\n$$\n= \\frac{56}{364}\n$$\n\n$$\n= \\dfrac{2}{13} \\approx 0.153846\n$$\n\nThe claimed probability is $\\dfrac{57}{364}$. Exact comparison gives\n\n$$\\dfrac{2}{13}\\ne\\dfrac{57}{364}$$\n\nThe mathematical result does not agree with the claim, so the statement is False.",
-        "**B.** → True\n\nUse two-set inclusion-exclusion to recover the inclusive union:\n\n$$\nN(A\\cup B) = N(A)+N(B)-N(A\\cap B)\n$$\n\n$$\n= 51+44-19\n$$\n\n$$\n= 76\n$$\n\nThe associated disjoint counts are\n\n$$\nN(\\text{exactly one}) = 51+44-2(19)\n$$\n\n$$\n= 57\n$$\n\n$$\nN(\\text{only A}) = 51-19\n$$\n\n$$\n= 32,\\qquad N(\\text{neither})\n$$\n\n$$\n= 120-76\n$$\n\n$$\n= 44\n$$\n\nFor the category asked about in the stem, the correct count is $76$ rather than $76$:\n\n$$76=76$$\n\nThe mathematical result agrees with the claim, so the statement is True.",
-        "**C.** → False\n\nConditioning replaces the full sample space by the group named after the vertical bar:\n\n$$\nP(A\\mid B) = \\frac{P(A\\cap B)}{P(B)}\n$$\n\n$$\n= \\frac{N(A\\cap B)}{N(B)}\n$$\n\nHere the favorable and conditional totals are\n\n$$\nN(A\\cap B) = 3,\\qquad N(B)\n$$\n\n$$\n= 51\n$$\n\nTherefore,\n\n$$\nP(A\\mid B) = \\frac{3}{51}\n$$\n\n$$\n= \\dfrac{1}{17}\\approx 0.058824\n$$\n\nThe stem uses $\\dfrac{4}{51}$, so exact fractions give\n\n$$\\dfrac{1}{17}\\ne\\dfrac{4}{51}$$\n\nThe mathematical result does not agree with the claim, so the statement is False.",
-        "**D.** → True\n\nCompute the first moment from every possible outcome:\n\n$$\nE(X) = (-1)(\\dfrac{1}{5})+(0)(\\dfrac{1}{2})+(1)(\\dfrac{3}{10})\n$$\n\n$$\n= \\dfrac{1}{10}\n$$\n\nCompute the second moment separately:\n\n$$\nE(X^2) = (-1)^2(\\dfrac{1}{5})+(0)^2(\\dfrac{1}{2})+(1)^2(\\dfrac{3}{10})\n$$\n\n$$\n= \\dfrac{1}{2}\n$$\n\nThen\n\n$$\n\\operatorname{Var}(X) = E(X^2)-[E(X)]^2\n$$\n\n$$\n= \\dfrac{1}{2}-(\\dfrac{1}{10})^2\n$$\n\n$$\n= \\dfrac{49}{100}\n$$\n\nThe requested mean is $\\dfrac{1}{10}$, compared with $\\dfrac{1}{10}$ in the stem:\n\n$$\\dfrac{1}{10}=\\dfrac{1}{10}$$\n\nThe mathematical result agrees with the claim, so the statement is True.",
-        "**E.** → False\n\nBayes' theorem begins with the joint weight of each route to the observed evidence:\n\n$$\nw_1 = \\dfrac{1}{2}\\cdot\\dfrac{1}{10}\n$$\n\n$$\n= \\dfrac{1}{20},\\qquad w_2\n$$\n\n$$\n= \\dfrac{3}{10}\\cdot\\dfrac{2}{5}\n$$\n\n$$\n= \\dfrac{3}{25},\\qquad w_3\n$$\n\n$$\n= \\dfrac{1}{5}\\cdot\\dfrac{1}{2}\n$$\n\n$$\n= \\dfrac{1}{10}\n$$\n\nThe law of total probability adds all those disjoint routes:\n\n$$\nP(E) = \\dfrac{1}{20}+\\dfrac{3}{25}+\\dfrac{1}{10}\n$$\n\n$$\n= \\dfrac{27}{100}\n$$\n\nNormalize the weight for source 2:\n\n$$\nP(C_2\\mid E) = \\frac{P(C_2)P(E\\mid C_2)}{P(E)}\n$$\n\n$$\n= \\frac{\\dfrac{3}{25}}{\\dfrac{27}{100}}\n$$\n\n$$\n= \\dfrac{4}{9}\\approx 0.444444\n$$\n\nThe stem claims $\\dfrac{5}{9}$, so\n\n$$\\dfrac{4}{9}\\ne\\dfrac{5}{9}$$\n\nThe mathematical result does not agree with the claim, so the statement is False."
+        "**A.** → False\n\nThe probability of choosing three juniors from eight, with six seniors also available, is\n$$P=\\frac{\\binom{8}{3}}{\\binom{14}{3}}=\\frac{56}{364}=\\frac{2}{13}\\approx 0.153846$$\nExpressed as a percentage, this is approximately $15.385\\%$. The claim states that this probability is greater than $16\\%$. Since $15.385\\% \\not> 16\\%$, the statement is False.",
+        "**B.** → True\n\nThis claim asks how many recreation members use at least one of the gym and the pool. With $N(G)=51$, $N(P)=44$, and $N(G\\cap P)=19$, inclusion-exclusion recovers the union:\n$$N(G\\cup P)=N(G)+N(P)-N(G\\cap P)$$\n$$N(G\\cup P)=51+44-19=76$$\nExactly $76$ members use at least one facility. The claim states that more than $75$ do so. Since $76 > 75$, the statement is True.",
+        "**C.** → False\n\nAfter one king is removed, three kings remain among $51$ cards:\n$$P=\\frac{3}{51}=\\frac{1}{17}\\approx 0.058824$$\nExpressed as a percentage, this is approximately $5.882\\%$. The claim states that this probability is greater than $5.9\\%$. Since $5.882\\% \\not> 5.9\\%$, the statement is False.",
+        "**D.** → True\n\nThis claim asks for the expected spinner score. Weight each point value by its probability:\n$$E(X)=(-1)\\cdot\\frac{1}{5}+0\\cdot\\frac{1}{2}+1\\cdot\\frac{3}{10}$$\n$$E(X)=-\\frac{1}{5}+\\frac{3}{10}=\\frac{1}{10}=0.1$$\nThe expected score is $0.1$. The claim states that it is greater than $0.05$. Since $0.1 > 0.05$, the statement is True.",
+        "**E.** → False\n\nThe joint alarm weights are\n$$w_1=\\frac{1}{2}\\cdot\\frac{1}{10}=\\frac{1}{20},\\qquad w_2=\\frac{3}{10}\\cdot\\frac{2}{5}=\\frac{3}{25},\\qquad w_3=\\frac{1}{5}\\cdot\\frac{1}{2}=\\frac{1}{10}$$\n$$P(A)=\\frac{1}{20}+\\frac{3}{25}+\\frac{1}{10}=\\frac{5+12+10}{100}=\\frac{27}{100}$$\n$$P(F_2\\mid A)=\\frac{3/25}{27/100}=\\frac{12}{27}=\\frac{4}{9}\\approx 0.444444$$\nExpressed as a percentage, this is approximately $44.444\\%$. The claim states that this probability is greater than $45\\%$. Since $44.444\\% \\not> 45\\%$, the statement is False."
       ],
       "difficulty_level": "5/5",
       "sort_order": 204,
-      "solution_overview": "Topics: 12.1, 12.2, 12.3, 12.4, 12.5.\nA: count favorable and total equally likely outcomes.\nB: apply inclusion-exclusion to disjoint regions.\nC: condition on the correct sample space or test independence.\nD: derive the mean from a discrete distribution.\nE: combine prior and likelihood weights with Bayes' theorem.",
+      "solution_overview": "Five separate checks. Letter A counts junior-only councils. Letter B recovers a gym-or-pool union. Letter C updates a king probability without replacement. Letter D computes a spinner expectation. Letter E applies Bayes' theorem after an alarm among three faults.",
       "placeholder": false
     },
     {
@@ -199,11 +199,11 @@
       "subsection": "12.6",
       "context": "Evaluate each statement. Mark it TRUE or FALSE.",
       "statements": [
-        "A language school has 150 learners: 63 study Spanish, 57 French, and 18 both. Its registrar reports that 49 study neither.",
-        "Two independent fair coins are tossed in a classroom. After seeing a head on the first toss, a student assigns probability $\\dfrac{1}{2}$ to a head on the second.",
-        "An arcade challenge pays $10$ credits with probability $\\frac3{10}$ and loses $4$ credits otherwise. Its mean payoff is listed as $\\dfrac{6}{5}$ credits.",
-        "A condition has prevalence $5\\%$. A test always detects the condition but falsely tests positive for $10\\%$ of healthy people. The reported posterior after a positive is $\\dfrac{10}{29}$.",
-        "A laboratory jar contains ten white and ten black capsules. Three capsules are sampled without replacement, and the all-white probability is reported as $\\dfrac{2}{19}$."
+        "A language school has 150 learners: 63 study Spanish, 57 French, and 18 both. Exactly $49$ learners study neither language.",
+        "Two independent fair coins are tossed. Given a head on the first toss, the probability of a head on the second is greater than $49\\%$.",
+        "An arcade challenge pays $10$ credits with probability $\\frac3{10}$ and loses $4$ credits otherwise. The mean payoff is greater than $0.3$ credits.",
+        "A condition has prevalence $5\\%$. A test always detects the condition but falsely tests positive for $10\\%$ of healthy people. After a positive result, the probability of the condition is greater than $34\\%$.",
+        "A laboratory jar contains ten white and ten black capsules. Three capsules are sampled without replacement. The probability that all three are white is greater than $10\\%$."
       ],
       "answer_key": [
         false,
@@ -213,15 +213,15 @@
         true
       ],
       "tactical_explanations": [
-        "**A.** → False\n\nUse two-set inclusion-exclusion to recover the inclusive union:\n\n$$\nN(A\\cup B) = N(A)+N(B)-N(A\\cap B)\n$$\n\n$$\n= 63+57-18\n$$\n\n$$\n= 102\n$$\n\nThe associated disjoint counts are\n\n$$\nN(\\text{exactly one}) = 63+57-2(18)\n$$\n\n$$\n= 84\n$$\n\n$$\nN(\\text{only A}) = 63-18\n$$\n\n$$\n= 45,\\qquad N(\\text{neither})\n$$\n\n$$\n= 150-102\n$$\n\n$$\n= 48\n$$\n\nFor the category asked about in the stem, the correct count is $48$ rather than $49$:\n\n$$48\\ne49$$\n\nThe mathematical result does not agree with the claim, so the statement is False.",
-        "**B.** → True\n\nConditioning replaces the full sample space by the group named after the vertical bar:\n\n$$\nP(A\\mid B) = \\frac{P(A\\cap B)}{P(B)}\n$$\n\n$$\n= \\frac{N(A\\cap B)}{N(B)}\n$$\n\nHere the favorable and conditional totals are\n\n$$\nN(A\\cap B) = 1,\\qquad N(B)\n$$\n\n$$\n= 2\n$$\n\nTherefore,\n\n$$\nP(A\\mid B) = \\frac{1}{2}\n$$\n\n$$\n= \\dfrac{1}{2}\\approx 0.5\n$$\n\nThe stem uses $\\dfrac{1}{2}$, so exact fractions give\n\n$$\\dfrac{1}{2}=\\dfrac{1}{2}$$\n\nThe mathematical result agrees with the claim, so the statement is True.",
-        "**C.** → False\n\nCompute the first moment from every possible outcome:\n\n$$\nE(X) = (10)(\\dfrac{3}{10})+(-4)(\\dfrac{7}{10})\n$$\n\n$$\n= \\dfrac{1}{5}\n$$\n\nCompute the second moment separately:\n\n$$\nE(X^2) = (10)^2(\\dfrac{3}{10})+(-4)^2(\\dfrac{7}{10})\n$$\n\n$$\n= \\dfrac{206}{5}\n$$\n\nThen\n\n$$\n\\operatorname{Var}(X) = E(X^2)-[E(X)]^2\n$$\n\n$$\n= \\dfrac{206}{5}-(\\dfrac{1}{5})^2\n$$\n\n$$\n= \\dfrac{1029}{25}\n$$\n\nThe requested mean is $\\dfrac{1}{5}$, compared with $\\dfrac{6}{5}$ in the stem:\n\n$$\\dfrac{1}{5}\\ne\\dfrac{6}{5}$$\n\nThe mathematical result does not agree with the claim, so the statement is False.",
-        "**D.** → True\n\nBayes' theorem begins with the joint weight of each route to the observed evidence:\n\n$$\nw_1 = \\dfrac{1}{20}\\cdot1\n$$\n\n$$\n= \\dfrac{1}{20},\\qquad w_2\n$$\n\n$$\n= \\dfrac{19}{20}\\cdot\\dfrac{1}{10}\n$$\n\n$$\n= \\dfrac{19}{200}\n$$\n\nThe law of total probability adds all those disjoint routes:\n\n$$\nP(E) = \\dfrac{1}{20}+\\dfrac{19}{200}\n$$\n\n$$\n= \\dfrac{29}{200}\n$$\n\nNormalize the weight for source 1:\n\n$$\nP(C_1\\mid E) = \\frac{P(C_1)P(E\\mid C_1)}{P(E)}\n$$\n\n$$\n= \\frac{\\dfrac{1}{20}}{\\dfrac{29}{200}}\n$$\n\n$$\n= \\dfrac{10}{29}\\approx 0.344828\n$$\n\nThe stem claims $\\dfrac{10}{29}$, so\n\n$$\\dfrac{10}{29}=\\dfrac{10}{29}$$\n\nThe mathematical result agrees with the claim, so the statement is True.",
-        "**E.** → True\n\nCount the equally likely outcomes in the full experiment:\n\n$$\nN = \\binom{20}{3}\n$$\n\n$$\n= 1140\n$$\n\nApply all restrictions to the favorable count, without replacing a draw or ordering an unordered selection:\n\n$$\nF = \\binom{10}{3}\n$$\n\n$$\n= 120\n$$\n\nThe required probability is therefore\n\n$$\nP = \\frac{F}{N}\n$$\n\n$$\n= \\frac{120}{1140}\n$$\n\n$$\n= \\dfrac{2}{19} \\approx 0.105263\n$$\n\nThe claimed probability is $\\dfrac{2}{19}$. Exact comparison gives\n\n$$\\dfrac{2}{19}=\\dfrac{2}{19}$$\n\nThe mathematical result agrees with the claim, so the statement is True."
+        "**A.** → False\n\nThis claim asks how many learners study neither Spanish nor French. First recover the union of the two language groups by inclusion-exclusion:\n$$N(S\\cup F)=63+57-18=102$$\nAmong the $150$ learners, the complement is\n$$N(\\text{neither})=150-102=48$$\nExactly $48$ study neither language. The claim states that the count is $49$. Since $48\\ne 49$, the statement is False.",
+        "**B.** → True\n\nThis claim asks for the probability of a head on the second toss given a head on the first. The coins are independent and fair, so the first outcome does not change the second:\n$$P(H_2\\mid H_1)=P(H_2)=\\frac{1}{2}=0.5$$\nExpressed as a percentage, this is $50\\%$. The claim states that this probability is greater than $49\\%$. Since $50\\% > 49\\%$, the statement is True.",
+        "**C.** → False\n\nThis claim asks for the mean arcade payoff. With probability $\\frac{3}{10}$ the payoff is $10$ and otherwise it is $-4$:\n$$E(X)=10\\cdot\\frac{3}{10}+(-4)\\cdot\\frac{7}{10}=3-\\frac{28}{10}=\\frac{1}{5}=0.2$$\nThe mean is $0.2$ credits. The claim states that it is greater than $0.3$. Since $0.2 \\not> 0.3$, the statement is False.",
+        "**D.** → True\n\nLet $C$ be the condition and $+$ a positive test. Then $P(+\\mid C)=1$, $P(+\\mid C^c)=0.10$, $P(C)=0.05$:\n$$P(C\\mid +)=\\frac{1\\cdot 0.05}{1\\cdot 0.05+0.10\\cdot 0.95}=\\frac{0.05}{0.145}=\\frac{10}{29}\\approx 0.344828$$\nExpressed as a percentage, this is approximately $34.483\\%$. The claim states that this probability is greater than $34\\%$. Since $34.483\\% > 34\\%$, the statement is True.",
+        "**E.** → True\n\nUnordered triples from twenty capsules give\n$$P(\\text{all white})=\\frac{\\binom{10}{3}}{\\binom{20}{3}}=\\frac{120}{1140}=\\frac{2}{19}\\approx 0.105263$$\nExpressed as a percentage, this is approximately $10.526\\%$. The claim states that this probability is greater than $10\\%$. Since $10.526\\% > 10\\%$, the statement is True."
       ],
       "difficulty_level": "5/5",
       "sort_order": 205,
-      "solution_overview": "Topics: 12.2, 12.3, 12.4, 12.5, 12.1.\nA: apply inclusion-exclusion to disjoint regions.\nB: condition on the correct sample space or test independence.\nC: derive the mean from a discrete distribution.\nD: combine prior and likelihood weights with Bayes' theorem.\nE: count favorable and total equally likely outcomes.",
+      "solution_overview": "Five separate checks. Letter A recovers a neither-language count. Letter B uses independence of successive coin tosses. Letter C computes an arcade mean payoff. Letter D applies Bayes' theorem after a positive medical test. Letter E counts all-white triple draws without replacement.",
       "placeholder": false
     },
     {
@@ -231,11 +231,11 @@
       "subsection": "12.6",
       "context": "Evaluate each statement. Mark it TRUE or FALSE.",
       "statements": [
-        "Of 200 factory parts, 172 pass inspection, 35 show a barcode issue, and 28 both pass and show that issue. Among issue-marked parts, the pass probability is claimed to be $\\dfrac{29}{35}$.",
-        "A lottery ticket yields a net gain of $48$ euros with probability $\\frac1{100}$ and a net loss of $2$ euros otherwise. The vendor claims expected gain $\\dfrac{-3}{2}$ euros.",
-        "Two boxes are equally likely. Box A yields gold with probability $\\frac23$, Box B with probability $\\frac13$. After gold appears, the host claims Box A was chosen with probability $1$.",
-        "A poker archive classifies random five-card hands. It asserts that exactly two aces occur with probability $\\dfrac{103777}{2598960}$.",
-        "A control room receives alerts from 74 temperature sensors and 61 pressure sensors; 29 devices issue both. The engineer says 45 issue only temperature alerts."
+        "Of 200 factory parts, 172 pass inspection, 35 show a barcode issue, and 28 both pass and show that issue. Among issue-marked parts, the pass probability is greater than $81\\%$.",
+        "A lottery ticket yields a net gain of $48$ euros with probability $\\frac1{100}$ and a net loss of $2$ euros otherwise. The expected gain is less than $-1$ euro.",
+        "Two boxes are equally likely. Box A yields gold with probability $\\frac23$, Box B with probability $\\frac13$. After gold appears, the probability that Box A was chosen is greater than $67\\%$.",
+        "A poker archive classifies random five-card hands. The probability of exactly two aces is greater than $4\\%$.",
+        "A control room receives alerts from 74 temperature sensors and 61 pressure sensors; 29 devices issue both. Exactly $45$ devices issue only temperature alerts."
       ],
       "answer_key": [
         false,
@@ -245,15 +245,15 @@
         true
       ],
       "tactical_explanations": [
-        "**A.** → False\n\nConditioning replaces the full sample space by the group named after the vertical bar:\n\n$$\nP(A\\mid B) = \\frac{P(A\\cap B)}{P(B)}\n$$\n\n$$\n= \\frac{N(A\\cap B)}{N(B)}\n$$\n\nHere the favorable and conditional totals are\n\n$$\nN(A\\cap B) = 28,\\qquad N(B)\n$$\n\n$$\n= 35\n$$\n\nTherefore,\n\n$$\nP(A\\mid B) = \\frac{28}{35}\n$$\n\n$$\n= \\dfrac{4}{5}\\approx 0.8\n$$\n\nThe stem uses $\\dfrac{29}{35}$, so exact fractions give\n\n$$\\dfrac{4}{5}\\ne\\dfrac{29}{35}$$\n\nThe mathematical result does not agree with the claim, so the statement is False.",
-        "**B.** → True\n\nCompute the first moment from every possible outcome:\n\n$$\nE(X) = (48)(\\dfrac{1}{100})+(-2)(\\dfrac{99}{100})\n$$\n\n$$\n= \\dfrac{-3}{2}\n$$\n\nCompute the second moment separately:\n\n$$\nE(X^2) = (48)^2(\\dfrac{1}{100})+(-2)^2(\\dfrac{99}{100})\n$$\n\n$$\n= 27\n$$\n\nThen\n\n$$\n\\operatorname{Var}(X) = E(X^2)-[E(X)]^2\n$$\n\n$$\n= 27-(\\dfrac{-3}{2})^2\n$$\n\n$$\n= \\dfrac{99}{4}\n$$\n\nThe requested mean is $\\dfrac{-3}{2}$, compared with $\\dfrac{-3}{2}$ in the stem:\n\n$$\\dfrac{-3}{2}=\\dfrac{-3}{2}$$\n\nThe mathematical result agrees with the claim, so the statement is True.",
-        "**C.** → False\n\nBayes' theorem begins with the joint weight of each route to the observed evidence:\n\n$$\nw_1 = \\dfrac{1}{2}\\cdot\\dfrac{2}{3}\n$$\n\n$$\n= \\dfrac{1}{3},\\qquad w_2\n$$\n\n$$\n= \\dfrac{1}{2}\\cdot\\dfrac{1}{3}\n$$\n\n$$\n= \\dfrac{1}{6}\n$$\n\nThe law of total probability adds all those disjoint routes:\n\n$$\nP(E) = \\dfrac{1}{3}+\\dfrac{1}{6}\n$$\n\n$$\n= \\dfrac{1}{2}\n$$\n\nNormalize the weight for source 1:\n\n$$\nP(C_1\\mid E) = \\frac{P(C_1)P(E\\mid C_1)}{P(E)}\n$$\n\n$$\n= \\frac{\\dfrac{1}{3}}{\\dfrac{1}{2}}\n$$\n\n$$\n= \\dfrac{2}{3}\\approx 0.666667\n$$\n\nThe stem claims $1$, so\n\n$$\\dfrac{2}{3}\\ne1$$\n\nThe mathematical result does not agree with the claim, so the statement is False.",
-        "**D.** → False\n\nCount the equally likely outcomes in the full experiment:\n\n$$\nN = \\binom{52}{5}\n$$\n\n$$\n= 2598960\n$$\n\nApply all restrictions to the favorable count, without replacing a draw or ordering an unordered selection:\n\n$$\nF = \\binom{4}{2}\\binom{48}{3}\n$$\n\n$$\n= 103776\n$$\n\nThe required probability is therefore\n\n$$\nP = \\frac{F}{N}\n$$\n\n$$\n= \\frac{103776}{2598960}\n$$\n\n$$\n= \\dfrac{2162}{54145} \\approx 0.03993\n$$\n\nThe claimed probability is $\\dfrac{103777}{2598960}$. Exact comparison gives\n\n$$\\dfrac{2162}{54145}\\ne\\dfrac{103777}{2598960}$$\n\nThe mathematical result does not agree with the claim, so the statement is False.",
-        "**E.** → True\n\nUse two-set inclusion-exclusion to recover the inclusive union:\n\n$$\nN(A\\cup B) = N(A)+N(B)-N(A\\cap B)\n$$\n\n$$\n= 74+61-29\n$$\n\n$$\n= 106\n$$\n\nThe associated disjoint counts are\n\n$$\nN(\\text{exactly one}) = 74+61-2(29)\n$$\n\n$$\n= 77\n$$\n\n$$\nN(\\text{only A}) = 74-29\n$$\n\n$$\n= 45,\\qquad N(\\text{neither})\n$$\n\n$$\n= 150-106\n$$\n\n$$\n= 44\n$$\n\nFor the category asked about in the stem, the correct count is $45$ rather than $45$:\n\n$$45=45$$\n\nThe mathematical result agrees with the claim, so the statement is True."
+        "**A.** → False\n\nThis claim asks for the pass probability among barcode-issue parts. Conditioning on the $35$ issue-marked parts, of which $28$ also pass,\n$$P(\\text{pass}\\mid\\text{issue})=\\frac{28}{35}=\\frac{4}{5}=0.8$$\nExpressed as a percentage, this is $80\\%$. The claim states that this probability is greater than $81\\%$. Since $80\\% \\not> 81\\%$, the statement is False.",
+        "**B.** → True\n\nThis claim asks for the expected lottery gain. Weight the two net outcomes by their probabilities:\n$$E(X)=48\\cdot\\frac{1}{100}+(-2)\\cdot\\frac{99}{100}=\\frac{48-198}{100}=-\\frac{3}{2}=-1.5$$\nThe expected gain is $-1.5$ euros. The claim states that it is less than $-1$ euro. Since $-1.5 < -1$, the statement is True.",
+        "**C.** → False\n\nBy Bayes' theorem with equal priors,\n$$P(A\\mid G)=\\frac{(2/3)(1/2)}{(2/3)(1/2)+(1/3)(1/2)}=\\frac{2/6}{3/6}=\\frac{2}{3}\\approx 0.666667$$\nExpressed as a percentage, this is approximately $66.667\\%$. The claim states that this probability is greater than $67\\%$. Since $66.667\\% \\not> 67\\%$, the statement is False.",
+        "**D.** → False\n\nThe probability of exactly two aces in a five-card hand is\n$$P=\\frac{\\binom{4}{2}\\binom{48}{3}}{\\binom{52}{5}}=\\frac{6\\cdot 17296}{2598960}=\\frac{103776}{2598960}\\approx 0.039930$$\nExpressed as a percentage, this is approximately $3.993\\%$. The claim states that this probability is greater than $4\\%$. Since $3.993\\% \\not> 4\\%$, the statement is False.",
+        "**E.** → True\n\nThis claim asks how many devices issue only temperature alerts. Subtract the both-alert devices from the temperature-alert total:\n$$N(\\text{only temperature})=74-29=45$$\nExactly $45$ devices issue only temperature alerts. The claim states that the count is $45$, so the statement is True."
       ],
       "difficulty_level": "5/5",
       "sort_order": 206,
-      "solution_overview": "Topics: 12.3, 12.4, 12.5, 12.1, 12.2.\nA: condition on the correct sample space or test independence.\nB: derive the mean from a discrete distribution.\nC: combine prior and likelihood weights with Bayes' theorem.\nD: count favorable and total equally likely outcomes.\nE: apply inclusion-exclusion to disjoint regions.",
+      "solution_overview": "Five separate checks. Letter A conditions pass rate on barcode-issue parts. Letter B computes a lottery expectation. Letter C applies Bayes' theorem to two gold boxes. Letter D counts five-card hands with exactly two aces. Letter E recovers an only-temperature alert count.",
       "placeholder": false
     },
     {
@@ -263,11 +263,11 @@
       "subsection": "12.6",
       "context": "Evaluate each statement. Mark it TRUE or FALSE.",
       "statements": [
-        "A fair six-sided die determines a delivery priority from one through six. The dispatcher records variance $\\dfrac{47}{12}$ for that priority.",
-        "Exactly one sensor is faulty: priors for sensors 1, 2, and 3 are $0.1$, $0.2$, and $0.7$, with alarm rates $0.9$, $0.6$, and $0.1$. An alarm is attributed to sensor 3 with probability $\\dfrac{1}{4}$.",
-        "Four distinct novels are shuffled onto a shelf. A librarian claims that one predetermined title order appears with probability $\\dfrac{1}{24}$.",
-        "Festival bookings show 68 jazz tickets, 52 theatre tickets, and 94 patrons with at least one type. The organiser concludes that 27 patrons booked both.",
-        "Across 80 rainy-or-dry mornings, 30 are rainy, umbrellas appear on 34, and both occur on 24. Given an umbrella, the forecast desk quotes rain probability $\\dfrac{12}{17}$."
+        "A fair six-sided die determines a delivery priority from one through six. The variance of that priority is greater than $3$.",
+        "Exactly one sensor is faulty: priors for sensors 1, 2, and 3 are $0.1$, $0.2$, and $0.7$, with alarm rates $0.9$, $0.6$, and $0.1$. After an alarm, the probability it is sensor 3 is greater than $24\\%$.",
+        "Four distinct novels are shuffled onto a shelf. The probability that one predetermined title order appears is greater than $4.1\\%$.",
+        "Festival bookings show 68 jazz tickets, 52 theatre tickets, and 94 patrons with at least one type. Exactly $27$ patrons booked both.",
+        "Across 80 rainy-or-dry mornings, 30 are rainy, umbrellas appear on 34, and both occur on 24. Given an umbrella, the probability of rain is greater than $70\\%$."
       ],
       "answer_key": [
         false,
@@ -277,15 +277,15 @@
         true
       ],
       "tactical_explanations": [
-        "**A.** → False\n\nCompute the first moment from every possible outcome:\n\n$$\nE(X) = (1)(\\dfrac{1}{6})+(2)(\\dfrac{1}{6})+(3)(\\dfrac{1}{6})+(4)(\\dfrac{1}{6})+(5)(\\dfrac{1}{6})+(6)(\\dfrac{1}{6})\n$$\n\n$$\n= \\dfrac{7}{2}\n$$\n\nCompute the second moment separately:\n\n$$\nE(X^2) = (1)^2(\\dfrac{1}{6})+(2)^2(\\dfrac{1}{6})+(3)^2(\\dfrac{1}{6})+(4)^2(\\dfrac{1}{6})+(5)^2(\\dfrac{1}{6})+(6)^2(\\dfrac{1}{6})\n$$\n\n$$\n= \\dfrac{91}{6}\n$$\n\nThen\n\n$$\n\\operatorname{Var}(X) = E(X^2)-[E(X)]^2\n$$\n\n$$\n= \\dfrac{91}{6}-(\\dfrac{7}{2})^2\n$$\n\n$$\n= \\dfrac{35}{12}\n$$\n\nThe requested variance is $\\dfrac{35}{12}$, compared with $\\dfrac{47}{12}$ in the stem:\n\n$$\\dfrac{35}{12}\\ne\\dfrac{47}{12}$$\n\nThe mathematical result does not agree with the claim, so the statement is False.",
-        "**B.** → True\n\nBayes' theorem begins with the joint weight of each route to the observed evidence:\n\n$$\nw_1 = \\dfrac{1}{10}\\cdot\\dfrac{9}{10}\n$$\n\n$$\n= \\dfrac{9}{100},\\qquad w_2\n$$\n\n$$\n= \\dfrac{1}{5}\\cdot\\dfrac{3}{5}\n$$\n\n$$\n= \\dfrac{3}{25},\\qquad w_3\n$$\n\n$$\n= \\dfrac{7}{10}\\cdot\\dfrac{1}{10}\n$$\n\n$$\n= \\dfrac{7}{100}\n$$\n\nThe law of total probability adds all those disjoint routes:\n\n$$\nP(E) = \\dfrac{9}{100}+\\dfrac{3}{25}+\\dfrac{7}{100}\n$$\n\n$$\n= \\dfrac{7}{25}\n$$\n\nNormalize the weight for source 3:\n\n$$\nP(C_3\\mid E) = \\frac{P(C_3)P(E\\mid C_3)}{P(E)}\n$$\n\n$$\n= \\frac{\\dfrac{7}{100}}{\\dfrac{7}{25}}\n$$\n\n$$\n= \\dfrac{1}{4}\\approx 0.25\n$$\n\nThe stem claims $\\dfrac{1}{4}$, so\n\n$$\\dfrac{1}{4}=\\dfrac{1}{4}$$\n\nThe mathematical result agrees with the claim, so the statement is True.",
-        "**C.** → True\n\nCount the equally likely outcomes in the full experiment:\n\n$$\nN = 4!\n$$\n\n$$\n= 24\n$$\n\nApply all restrictions to the favorable count, without replacing a draw or ordering an unordered selection:\n\n$$\nF = 1\n$$\n\n$$\n= 1\n$$\n\nThe required probability is therefore\n\n$$\nP = \\frac{F}{N}\n$$\n\n$$\n= \\frac{1}{24}\n$$\n\n$$\n= \\dfrac{1}{24} \\approx 0.041667\n$$\n\nThe claimed probability is $\\dfrac{1}{24}$. Exact comparison gives\n\n$$\\dfrac{1}{24}=\\dfrac{1}{24}$$\n\nThe mathematical result agrees with the claim, so the statement is True.",
-        "**D.** → False\n\nUse two-set inclusion-exclusion to recover the inclusive union:\n\n$$\nN(A\\cup B) = N(A)+N(B)-N(A\\cap B)\n$$\n\n$$\n= 68+52-26\n$$\n\n$$\n= 94\n$$\n\nThe associated disjoint counts are\n\n$$\nN(\\text{exactly one}) = 68+52-2(26)\n$$\n\n$$\n= 68\n$$\n\n$$\nN(\\text{only A}) = 68-26\n$$\n\n$$\n= 42,\\qquad N(\\text{neither})\n$$\n\n$$\n= 130-94\n$$\n\n$$\n= 36\n$$\n\nFor the category asked about in the stem, the correct count is $26$ rather than $27$:\n\n$$26\\ne27$$\n\nThe mathematical result does not agree with the claim, so the statement is False.",
-        "**E.** → True\n\nConditioning replaces the full sample space by the group named after the vertical bar:\n\n$$\nP(A\\mid B) = \\frac{P(A\\cap B)}{P(B)}\n$$\n\n$$\n= \\frac{N(A\\cap B)}{N(B)}\n$$\n\nHere the favorable and conditional totals are\n\n$$\nN(A\\cap B) = 24,\\qquad N(B)\n$$\n\n$$\n= 34\n$$\n\nTherefore,\n\n$$\nP(A\\mid B) = \\frac{24}{34}\n$$\n\n$$\n= \\dfrac{12}{17}\\approx 0.705882\n$$\n\nThe stem uses $\\dfrac{12}{17}$, so exact fractions give\n\n$$\\dfrac{12}{17}=\\dfrac{12}{17}$$\n\nThe mathematical result agrees with the claim, so the statement is True."
+        "**A.** → False\n\nFor a fair die $X\\in\\{1,\\ldots,6\\}$,\n$$E(X)=\\frac{7}{2},\\qquad E(X^2)=\\frac{91}{6},\\qquad \\operatorname{Var}(X)=\\frac{91}{6}-\\left(\\frac{7}{2}\\right)^2=\\frac{35}{12}\\approx 2.9167$$\nThe variance is approximately $2.917$. The claim states that it is greater than $3$. Since $2.917 \\not> 3$, the statement is False.",
+        "**B.** → True\n\nThe joint alarm weights are $0.1\\cdot 0.9=0.09$, $0.2\\cdot 0.6=0.12$, and $0.7\\cdot 0.1=0.07$, totaling $0.28$. Sensor 3's posterior is\n$$P(S_3\\mid A)=\\frac{0.07}{0.28}=\\frac{1}{4}=0.25$$\nExpressed as a percentage, this is $25\\%$. The claim states that this probability is greater than $24\\%$. Since $25\\% > 24\\%$, the statement is True.",
+        "**C.** → True\n\nThere are $4!=24$ equally likely orders, so one predetermined order has probability\n$$P=\\frac{1}{24}\\approx 0.041667$$\nExpressed as a percentage, this is approximately $4.167\\%$. The claim states that this probability is greater than $4.1\\%$. Since $4.167\\% > 4.1\\%$, the statement is True.",
+        "**D.** → False\n\nThis claim asks how many patrons booked both jazz and theatre tickets. Inclusion-exclusion recovers the intersection from the union:\n$$94=68+52-N(J\\cap T)\\implies N(J\\cap T)=26$$\nExactly $26$ patrons booked both. The claim states that the count is $27$. Since $26\\ne 27$, the statement is False.",
+        "**E.** → True\n\nThis claim asks for the probability of rain given that an umbrella appears. Among the $34$ umbrella mornings, $24$ are rainy:\n$$P(R\\mid U)=\\frac{24}{34}=\\frac{12}{17}\\approx 0.705882$$\nExpressed as a percentage, this is approximately $70.588\\%$. The claim states that this probability is greater than $70\\%$. Since $70.588\\% > 70\\%$, the statement is True."
       ],
       "difficulty_level": "5/5",
       "sort_order": 207,
-      "solution_overview": "Topics: 12.4, 12.5, 12.1, 12.2, 12.3.\nA: derive the variance from a discrete distribution.\nB: combine prior and likelihood weights with Bayes' theorem.\nC: count favorable and total equally likely outcomes.\nD: apply inclusion-exclusion to disjoint regions.\nE: condition on the correct sample space or test independence.",
+      "solution_overview": "Five separate checks. Letter A computes the variance of a fair die face. Letter B applies Bayes' theorem after a sensor alarm. Letter C counts a single predetermined permutation of four novels. Letter D recovers a both-ticket booking count. Letter E conditions rain on umbrella mornings.",
       "placeholder": false
     },
     {
@@ -295,11 +295,11 @@
       "subsection": "12.6",
       "context": "Evaluate each statement. Mark it TRUE or FALSE.",
       "statements": [
-        "Lines A and B make $70\\%$ and $30\\%$ of bolts, with defect rates $2\\%$ and $8\\%$. Conditional on a defect, the chance of line B is stated as $\\dfrac{13}{19}$.",
-        "A lock chooses an ordered code of three distinct digits from zero through nine, allowing zero first. The chance that its first digit is even is stated as $\\dfrac{361}{720}$.",
-        "An insurer lists 54 dental policies, 49 vision policies, and 16 covering both. It reports 71 policies with exactly one of these benefits.",
-        "A clinic records 120 patients: 45 have fever, 50 have cough, and 20 have both. For a patient with fever, the stated chance of cough is $\\dfrac{7}{15}$.",
-        "A parcel insurer observes zero, two, or five damaged items with probabilities $\\frac35$, $\\frac3{10}$, and $\\frac1{10}$. It reports mean damage count $\\dfrac{11}{10}$."
+        "Lines A and B make $70\\%$ and $30\\%$ of bolts, with defect rates $2\\%$ and $8\\%$. Given a defect, the probability it came from line B is greater than $64\\%$.",
+        "A lock chooses an ordered code of three distinct digits from zero through nine, allowing zero first. The probability that its first digit is even is greater than $51\\%$.",
+        "An insurer lists 54 dental policies, 49 vision policies, and 16 covering both. Exactly $71$ policies have exactly one of these benefits.",
+        "A clinic records 120 patients: 45 have fever, 50 have cough, and 20 have both. For a patient with fever, the probability of cough is greater than $45\\%$.",
+        "A parcel insurer observes zero, two, or five damaged items with probabilities $\\frac35$, $\\frac3{10}$, and $\\frac1{10}$. The mean damage count is greater than $1$."
       ],
       "answer_key": [
         false,
@@ -309,15 +309,15 @@
         true
       ],
       "tactical_explanations": [
-        "**A.** → False\n\nBayes' theorem begins with the joint weight of each route to the observed evidence:\n\n$$\nw_1 = \\dfrac{7}{10}\\cdot\\dfrac{1}{50}\n$$\n\n$$\n= \\dfrac{7}{500},\\qquad w_2\n$$\n\n$$\n= \\dfrac{3}{10}\\cdot\\dfrac{2}{25}\n$$\n\n$$\n= \\dfrac{3}{125}\n$$\n\nThe law of total probability adds all those disjoint routes:\n\n$$\nP(E) = \\dfrac{7}{500}+\\dfrac{3}{125}\n$$\n\n$$\n= \\dfrac{19}{500}\n$$\n\nNormalize the weight for source 2:\n\n$$\nP(C_2\\mid E) = \\frac{P(C_2)P(E\\mid C_2)}{P(E)}\n$$\n\n$$\n= \\frac{\\dfrac{3}{125}}{\\dfrac{19}{500}}\n$$\n\n$$\n= \\dfrac{12}{19}\\approx 0.631579\n$$\n\nThe stem claims $\\dfrac{13}{19}$, so\n\n$$\\dfrac{12}{19}\\ne\\dfrac{13}{19}$$\n\nThe mathematical result does not agree with the claim, so the statement is False.",
-        "**B.** → False\n\nCount the equally likely outcomes in the full experiment:\n\n$$\nN = 10\\cdot9\\cdot8\n$$\n\n$$\n= 720\n$$\n\nApply all restrictions to the favorable count, without replacing a draw or ordering an unordered selection:\n\n$$\nF = 5\\cdot9\\cdot8\n$$\n\n$$\n= 360\n$$\n\nThe required probability is therefore\n\n$$\nP = \\frac{F}{N}\n$$\n\n$$\n= \\frac{360}{720}\n$$\n\n$$\n= \\dfrac{1}{2} \\approx 0.5\n$$\n\nThe claimed probability is $\\dfrac{361}{720}$. Exact comparison gives\n\n$$\\dfrac{1}{2}\\ne\\dfrac{361}{720}$$\n\nThe mathematical result does not agree with the claim, so the statement is False.",
-        "**C.** → True\n\nUse two-set inclusion-exclusion to recover the inclusive union:\n\n$$\nN(A\\cup B) = N(A)+N(B)-N(A\\cap B)\n$$\n\n$$\n= 54+49-16\n$$\n\n$$\n= 87\n$$\n\nThe associated disjoint counts are\n\n$$\nN(\\text{exactly one}) = 54+49-2(16)\n$$\n\n$$\n= 71\n$$\n\n$$\nN(\\text{only A}) = 54-16\n$$\n\n$$\n= 38,\\qquad N(\\text{neither})\n$$\n\n$$\n= 120-87\n$$\n\n$$\n= 33\n$$\n\nFor the category asked about in the stem, the correct count is $71$ rather than $71$:\n\n$$71=71$$\n\nThe mathematical result agrees with the claim, so the statement is True.",
-        "**D.** → False\n\nConditioning replaces the full sample space by the group named after the vertical bar:\n\n$$\nP(A\\mid B) = \\frac{P(A\\cap B)}{P(B)}\n$$\n\n$$\n= \\frac{N(A\\cap B)}{N(B)}\n$$\n\nHere the favorable and conditional totals are\n\n$$\nN(A\\cap B) = 20,\\qquad N(B)\n$$\n\n$$\n= 45\n$$\n\nTherefore,\n\n$$\nP(A\\mid B) = \\frac{20}{45}\n$$\n\n$$\n= \\dfrac{4}{9}\\approx 0.444444\n$$\n\nThe stem uses $\\dfrac{7}{15}$, so exact fractions give\n\n$$\\dfrac{4}{9}\\ne\\dfrac{7}{15}$$\n\nThe mathematical result does not agree with the claim, so the statement is False.",
-        "**E.** → True\n\nCompute the first moment from every possible outcome:\n\n$$\nE(X) = (0)(\\dfrac{3}{5})+(2)(\\dfrac{3}{10})+(5)(\\dfrac{1}{10})\n$$\n\n$$\n= \\dfrac{11}{10}\n$$\n\nCompute the second moment separately:\n\n$$\nE(X^2) = (0)^2(\\dfrac{3}{5})+(2)^2(\\dfrac{3}{10})+(5)^2(\\dfrac{1}{10})\n$$\n\n$$\n= \\dfrac{37}{10}\n$$\n\nThen\n\n$$\n\\operatorname{Var}(X) = E(X^2)-[E(X)]^2\n$$\n\n$$\n= \\dfrac{37}{10}-(\\dfrac{11}{10})^2\n$$\n\n$$\n= \\dfrac{249}{100}\n$$\n\nThe requested mean is $\\dfrac{11}{10}$, compared with $\\dfrac{11}{10}$ in the stem:\n\n$$\\dfrac{11}{10}=\\dfrac{11}{10}$$\n\nThe mathematical result agrees with the claim, so the statement is True."
+        "**A.** → False\n\nThe joint defect weights are $0.70\\cdot 0.02=0.014$ and $0.30\\cdot 0.08=0.024$, totaling $0.038$. Then\n$$P(B\\mid D)=\\frac{0.024}{0.038}=\\frac{12}{19}\\approx 0.631579$$\nExpressed as a percentage, this is approximately $63.158\\%$. The claim states that this probability is greater than $64\\%$. Since $63.158\\% \\not> 64\\%$, the statement is False.",
+        "**B.** → False\n\nThe first digit is chosen from $\\{0,1,\\ldots,9\\}$ with ten equally likely options, of which five are even ($0,2,4,6,8$):\n$$P(\\text{first even})=\\frac{5}{10}=\\frac{1}{2}=0.5$$\nExpressed as a percentage, this is $50\\%$. The claim states that this probability is greater than $51\\%$. Since $50\\% \\not> 51\\%$, the statement is False.",
+        "**C.** → True\n\nThis claim asks how many policies have exactly one of dental or vision coverage. Starting from the two marginal counts and the both-count,\n$$N(\\text{exactly one})=N(D)+N(V)-2N(D\\cap V)$$\n$$N(\\text{exactly one})=54+49-2\\cdot 16=71$$\nExactly $71$ policies have exactly one of these benefits. The claim states that the count is $71$, so the statement is True.",
+        "**D.** → False\n\nThis claim asks for the probability of cough given fever. Among the $45$ patients with fever, $20$ also have cough:\n$$P(\\text{cough}\\mid\\text{fever})=\\frac{20}{45}=\\frac{4}{9}\\approx 0.444444$$\nExpressed as a percentage, this is approximately $44.444\\%$. The claim states that this probability is greater than $45\\%$. Since $44.444\\% \\not> 45\\%$, the statement is False.",
+        "**E.** → True\n\nThis claim asks for the mean number of damaged items. Weight each possible count by its probability:\n$$E(X)=0\\cdot\\frac{3}{5}+2\\cdot\\frac{3}{10}+5\\cdot\\frac{1}{10}=\\frac{6}{10}+\\frac{5}{10}=\\frac{11}{10}=1.1$$\nThe mean is $1.1$. The claim states that it is greater than $1$. Since $1.1 > 1$, the statement is True."
       ],
       "difficulty_level": "5/5",
       "sort_order": 208,
-      "solution_overview": "Topics: 12.5, 12.1, 12.2, 12.3, 12.4.\nA: combine prior and likelihood weights with Bayes' theorem.\nB: count favorable and total equally likely outcomes.\nC: apply inclusion-exclusion to disjoint regions.\nD: condition on the correct sample space or test independence.\nE: derive the mean from a discrete distribution.",
+      "solution_overview": "Five separate checks. Letter A applies Bayes' theorem after a defective bolt. Letter B counts codes whose first digit is even. Letter C recovers an exactly-one policy count. Letter D conditions cough on fever. Letter E computes the mean of a discrete damage count.",
       "placeholder": false
     },
     {
@@ -327,10 +327,10 @@
       "subsection": "12.6",
       "context": "A jar contains 5 red, 4 blue, and 3 green tokens. Two tokens are selected together, uniformly and without replacement, so unordered pairs form the sample space. There are $\\binom{12}{2}=66$ equally likely pairs, and color events may overlap only through the two selected tokens.",
       "statements": [
-        "The probability of two red tokens is $\\dfrac{5}{33}$.",
-        "The probability of one red and one blue is $\\dfrac{10}{33}$.",
-        "The probability of no green token is $\\dfrac{6}{11}$.",
-        "The probability of at least one green token is $\\dfrac{6}{11}$.",
+        "The probability of two red tokens is greater than $15\\%$.",
+        "The probability of one red and one blue is greater than $30\\%$.",
+        "The probability of no green token is greater than $54\\%$.",
+        "The probability of at least one green token is greater than $46\\%$.",
         "The two draws are independent."
       ],
       "answer_key": [
@@ -341,15 +341,15 @@
         false
       ],
       "tactical_explanations": [
-        "**A.** → True\n\n$\\binom{5}{2}/66=\\dfrac{5}{33}$.\n\nThe claim is True.",
-        "**B.** → True\n\n$5\\cdot4/66=\\dfrac{10}{33}$.\n\nThe claim is True.",
-        "**C.** → True\n\n$\\binom{9}{2}/66=\\dfrac{6}{11}$.\n\nThe claim is True.",
-        "**D.** → False\n\nUse the complement: $1-\\dfrac{6}{11}=\\dfrac{5}{11}$.\n\nThe claim is False.",
-        "**E.** → False\n\nSampling without replacement changes the color proportions after the first draw.\n\nThe claim is False."
+        "**A.** → True\n\nThis claim asks for the probability that both selected tokens are red. Because the two tokens are drawn together without replacement, every unordered pair from the twelve tokens is equally likely. The favorable pairs are the ways to choose two red tokens from the five red tokens, and the total number of pairs is $\\binom{12}{2}=66$ from the overview.\n$$P(\\text{two red})=\\frac{\\binom{5}{2}}{\\binom{12}{2}}$$\n$$P(\\text{two red})=\\frac{10}{66}=\\frac{5}{33}$$\n$$P(\\text{two red})\\approx 0.151515$$\nExpressed as a percentage, this is approximately $15.152\\%$. The claim states that this probability is greater than $15\\%$. Since $15.152\\% > 15\\%$, the statement is True.",
+        "**B.** → True\n\nThis claim asks for the probability of selecting one red token and one blue token. With five red and four blue tokens available, the number of mixed red-blue pairs is $5\\times 4=20$, while the sample space still has $66$ pairs.\n$$P(\\text{one red and one blue})=\\frac{5\\times 4}{66}$$\n$$P(\\text{one red and one blue})=\\frac{20}{66}=\\frac{10}{33}$$\n$$P(\\text{one red and one blue})\\approx 0.303030$$\nExpressed as a percentage, this is approximately $30.303\\%$. The claim states that this probability is greater than $30\\%$. Since $30.303\\% > 30\\%$, the statement is True.",
+        "**C.** → True\n\nThis claim asks for the probability that neither selected token is green. Equivalently, both tokens come from the nine non-green tokens (five red and four blue).\n$$P(\\text{no green})=\\frac{\\binom{9}{2}}{\\binom{12}{2}}$$\n$$P(\\text{no green})=\\frac{36}{66}=\\frac{6}{11}$$\n$$P(\\text{no green})\\approx 0.545455$$\nExpressed as a percentage, this is approximately $54.545\\%$. The claim states that this probability is greater than $54\\%$. Since $54.545\\% > 54\\%$, the statement is True.",
+        "**D.** → False\n\nThis claim asks for the probability of at least one green token among the two draws. It is easiest to use the complement of the no-green event computed for the previous type of count:\n$$P(\\text{at least one green})=1-P(\\text{no green})$$\n$$P(\\text{at least one green})=1-\\frac{6}{11}=\\frac{5}{11}$$\n$$P(\\text{at least one green})\\approx 0.454545$$\nExpressed as a percentage, this is approximately $45.455\\%$. The claim states that this probability is greater than $46\\%$. Since $45.455\\% \\not> 46\\%$, the statement is False.",
+        "**E.** → False\n\nThis claim asserts that the two draws are independent. Independence would require that the color probabilities on the second draw equal those on the first draw, regardless of what was already removed. Because sampling is without replacement, drawing a red token first leaves four red tokens among eleven remaining tokens, which is not the original five-in-twelve mix.\n$$P(\\text{second red}\\mid \\text{first red})=\\frac{4}{11}\\ne \\frac{5}{12}=P(\\text{first red})$$\nThe conditional probability changes after the first draw, so the draws are dependent. The claim of independence is therefore false, and the statement is False."
       ],
       "difficulty_level": "5/5",
       "sort_order": 209,
-      "solution_overview": "Shared context topic 12.1.\n\nShared solution:\n1. Use the single shared stem for topic 12.1; do not re-read any claim as a new scenario.\n2. Organize the given data before testing claims. One shared urn experiment is counted with a common sample space.\n3. Keep every stated domain, endpoint, sampling rule, or physical restriction in force.\n4. A: $\\binom{5}{2}/66=\\dfrac{5}{33}$.\n5. A: The computed result makes this claim True.\n6. B: $5\\cdot4/66=\\dfrac{10}{33}$.\n7. B: The computed result makes this claim True.\n8. C: $\\binom{9}{2}/66=\\dfrac{6}{11}$.\n9. C: The computed result makes this claim True.\n10. D: Use the complement: $1-\\dfrac{6}{11}=\\dfrac{5}{11}$.\n11. D: The computed result makes this claim False.\n12. E: Sampling without replacement changes the color proportions after the first draw.\n13. E: The computed result makes this claim False.",
+      "solution_overview": "A jar contains $5$ red, $4$ blue, and $3$ green tokens. Two tokens are drawn together without replacement, so the sample space is the set of unordered pairs. The total number of equally likely pairs is\n$$\\binom{12}{2}=66$$\nColor events are counted by choosing the indicated colors from these $66$ pairs. Shared totals used below are $\\binom{5}{2}=10$ red-red pairs, $5\\times 4=20$ red-blue pairs, and $\\binom{9}{2}=36$ pairs with no green.",
       "placeholder": false
     },
     {
@@ -359,11 +359,11 @@
       "subsection": "12.6",
       "context": "A survey of 120 students records language clubs A, B, and C. The disjoint regions contain 24 only in A, 20 only in B, 18 only in C, 8 in A and B only, 7 in A and C only, 6 in B and C only, 5 in all three, and 32 in none. Every student belongs to exactly one listed region.",
       "statements": [
-        "$88$ students join at least one club.",
-        "$62$ students join exactly one club.",
-        "$21$ students join exactly two clubs.",
-        "$26$ students join at least two clubs.",
-        "$45$ students belong to A."
+        "More than $85$ students join at least one club.",
+        "More than $60$ students join exactly one club.",
+        "More than $20$ students join exactly two clubs.",
+        "More than $25$ students join at least two clubs.",
+        "More than $44$ students belong to club A."
       ],
       "answer_key": [
         true,
@@ -373,15 +373,15 @@
         false
       ],
       "tactical_explanations": [
-        "**A.** → True\n\n$120-32=88$.\n\nThe claim is True.",
-        "**B.** → True\n\n$24+20+18=62$.\n\nThe claim is True.",
-        "**C.** → True\n\n$8+7+6=21$.\n\nThe claim is True.",
-        "**D.** → True\n\n$21+5=26$.\n\nThe claim is True.",
-        "**E.** → False\n\n$24+8+7+5=44$.\n\nThe claim is False."
+        "**A.** → True\n\nThis claim asks how many students join at least one of the clubs A, B, and C. In the disjoint-region layout, that count is everyone except the $32$ students in none of the clubs.\n$$N(\\text{at least one})=120-32$$\n$$N(\\text{at least one})=88$$\nExactly $88$ students join at least one club. The claim states that more than $85$ do so. Since $88 > 85$, the statement is True.",
+        "**B.** → True\n\nThis claim asks how many students join exactly one club. Those students occupy the three singleton regions only A, only B, and only C.\n$$N(\\text{exactly one})=24+20+18$$\n$$N(\\text{exactly one})=62$$\nExactly $62$ students join exactly one club. The claim states that more than $60$ do so. Since $62 > 60$, the statement is True.",
+        "**C.** → True\n\nThis claim asks how many students join exactly two clubs. Those students occupy the three pairwise-only regions A$\\cap$B only, A$\\cap$C only, and B$\\cap$C only.\n$$N(\\text{exactly two})=8+7+6$$\n$$N(\\text{exactly two})=21$$\nExactly $21$ students join exactly two clubs. The claim states that more than $20$ do so. Since $21 > 20$, the statement is True.",
+        "**D.** → True\n\nThis claim asks how many students join at least two clubs. That group is the exactly-two students together with the five students in all three clubs.\n$$N(\\text{at least two})=N(\\text{exactly two})+N(\\text{all three})$$\n$$N(\\text{at least two})=21+5=26$$\nExactly $26$ students join at least two clubs. The claim states that more than $25$ do so. Since $26 > 25$, the statement is True.",
+        "**E.** → False\n\nThis claim asks how many students belong to club A. Club A comprises every region that includes A: only A, A and B only, A and C only, and all three.\n$$N(A)=24+8+7+5$$\n$$N(A)=44$$\nExactly $44$ students belong to A. The claim states that more than $44$ belong to A. Since $44 \\not> 44$, the statement is False."
       ],
       "difficulty_level": "5/5",
       "sort_order": 210,
-      "solution_overview": "Shared context topic 12.2.\n\nShared solution:\n1. Use the single shared stem for topic 12.2; do not re-read any claim as a new scenario.\n2. Organize the given data before testing claims. A shared three-set survey is read from disjoint regions.\n3. Keep every stated domain, endpoint, sampling rule, or physical restriction in force.\n4. A: $120-32=88$.\n5. A: The computed result makes this claim True.\n6. B: $24+20+18=62$.\n7. B: The computed result makes this claim True.\n8. C: $8+7+6=21$.\n9. C: The computed result makes this claim True.\n10. D: $21+5=26$.\n11. D: The computed result makes this claim True.\n12. E: $24+8+7+5=44$.\n13. E: The computed result makes this claim False.",
+      "solution_overview": "A survey of $120$ students records clubs A, B, and C through disjoint regions: $24$ only A, $20$ only B, $18$ only C, $8$ in A and B only, $7$ in A and C only, $6$ in B and C only, $5$ in all three, and $32$ in none. Every student sits in exactly one listed region, so counts are obtained by adding the appropriate regions.\n$$N(\\text{at least one})=120-32=88$$\n$$N(\\text{exactly one})=24+20+18=62$$\n$$N(\\text{exactly two})=8+7+6=21$$\n$$N(\\text{at least two})=21+5=26$$\n$$N(A)=24+8+7+5=44$$",
       "placeholder": false
     },
     {
@@ -391,10 +391,10 @@
       "subsection": "12.6",
       "context": "A courier audit contains 100 deliveries. Of these, 40 used premium service, 35 arrived late, and 15 were both premium and late. One delivery is selected uniformly. Let $P$ mean premium and $L$ mean late; all conditional probabilities use this same audit table.",
       "statements": [
-        "$P(L\\mid P)=\\dfrac{3}{8}$.",
-        "$P(P\\mid L)=\\dfrac{3}{7}$.",
-        "$P(P\\cap L)=\\dfrac{3}{20}$.",
-        "$P(P\\cup L)=\\dfrac{3}{5}$.",
+        "The probability $P(L\\mid P)$ is greater than $37\\%$.",
+        "The probability $P(P\\mid L)$ is greater than $42\\%$.",
+        "The probability $P(P\\cap L)$ is greater than $14\\%$.",
+        "The probability $P(P\\cup L)$ is greater than $59\\%$.",
         "$P$ and $L$ are independent."
       ],
       "answer_key": [
@@ -405,15 +405,15 @@
         false
       ],
       "tactical_explanations": [
-        "**A.** → True\n\n$P(L\\mid P)=15/40=\\dfrac{3}{8}$.\n\nThe claim is True.",
-        "**B.** → True\n\n$P(P\\mid L)=15/35=\\dfrac{3}{7}$.\n\nThe claim is True.",
-        "**C.** → True\n\n$15/100=\\dfrac{3}{20}$.\n\nThe claim is True.",
-        "**D.** → True\n\n$(40+35-15)/100=\\dfrac{3}{5}$.\n\nThe claim is True.",
-        "**E.** → False\n\n$15(100)\\ne40(35)$, so the product test fails.\n\nThe claim is False."
+        "**A.** → True\n\nThis claim asks for the conditional probability that a delivery is late given that it is premium. Conditioning replaces the full audit of $100$ deliveries by the $40$ premium deliveries, of which $15$ are also late.\n$$P(L\\mid P)=\\frac{N(P\\cap L)}{N(P)}=\\frac{15}{40}$$\n$$P(L\\mid P)=\\frac{3}{8}=0.375$$\nExpressed as a percentage, this is $37.5\\%$. The claim states that this probability is greater than $37\\%$. Since $37.5\\% > 37\\%$, the statement is True.",
+        "**B.** → True\n\nThis claim asks for the conditional probability that a delivery is premium given that it is late. Among the $35$ late deliveries, $15$ are premium.\n$$P(P\\mid L)=\\frac{N(P\\cap L)}{N(L)}=\\frac{15}{35}$$\n$$P(P\\mid L)=\\frac{3}{7}\\approx 0.428571$$\nExpressed as a percentage, this is approximately $42.857\\%$. The claim states that this probability is greater than $42\\%$. Since $42.857\\% > 42\\%$, the statement is True.",
+        "**C.** → True\n\nThis claim asks for the joint probability that a randomly selected delivery is both premium and late. With $15$ such deliveries out of $100$,\n$$P(P\\cap L)=\\frac{15}{100}=\\frac{3}{20}=0.15$$\nExpressed as a percentage, this is $15\\%$. The claim states that this probability is greater than $14\\%$. Since $15\\% > 14\\%$, the statement is True.",
+        "**D.** → True\n\nThis claim asks for the probability that a delivery is premium or late (or both). Inclusion-exclusion on the audit counts gives\n$$P(P\\cup L)=\\frac{N(P)+N(L)-N(P\\cap L)}{100}=\\frac{40+35-15}{100}$$\n$$P(P\\cup L)=\\frac{60}{100}=\\frac{3}{5}=0.6$$\nExpressed as a percentage, this is $60\\%$. The claim states that this probability is greater than $59\\%$. Since $60\\% > 59\\%$, the statement is True.",
+        "**E.** → False\n\nThis claim asserts that premium and late are independent. Independence requires $P(P\\cap L)=P(P)P(L)$. Substituting the audit proportions,\n$$P(P\\cap L)=\\frac{15}{100},\\qquad P(P)P(L)=\\frac{40}{100}\\cdot\\frac{35}{100}$$\nCross-multiplying avoids rounding:\n$$15\\cdot 100=1500,\\qquad 40\\cdot 35=1400$$\nSince $1500\\ne 1400$, the product test fails and the events are not independent, so the statement is False."
       ],
       "difficulty_level": "5/5",
       "sort_order": 211,
-      "solution_overview": "Shared context topic 12.3.\n\nShared solution:\n1. Use the single shared stem for topic 12.3; do not re-read any claim as a new scenario.\n2. Organize the given data before testing claims. One shared two-way table supports conditional and independence checks.\n3. Keep every stated domain, endpoint, sampling rule, or physical restriction in force.\n4. A: $P(L\\mid P)=15/40=\\dfrac{3}{8}$.\n5. A: The computed result makes this claim True.\n6. B: $P(P\\mid L)=15/35=\\dfrac{3}{7}$.\n7. B: The computed result makes this claim True.\n8. C: $15/100=\\dfrac{3}{20}$.\n9. C: The computed result makes this claim True.\n10. D: $(40+35-15)/100=\\dfrac{3}{5}$.\n11. D: The computed result makes this claim True.\n12. E: $15(100)\\ne40(35)$, so the product test fails.\n13. E: The computed result makes this claim False.",
+      "solution_overview": "A courier audit of $100$ deliveries records $40$ premium ($P$), $35$ late ($L$), and $15$ both. One delivery is selected uniformly, so probabilities are ratios of these counts to $100$ or to the relevant marginal.\n$$P(P)=\\frac{40}{100},\\qquad P(L)=\\frac{35}{100},\\qquad P(P\\cap L)=\\frac{15}{100}$$\nThese shared values support every conditional and independence check below.",
       "placeholder": false
     },
     {
@@ -423,11 +423,11 @@
       "subsection": "12.6",
       "context": "A game has net return $X=-2$, $3$, or $8$ euros with probabilities $1/2$, $1/4$, and $1/4$, respectively. The probabilities sum to one, and repeated plays are independent. The review computes $E(X)$, $E(X^2)$, variance, and the effect of adding a fixed bonus.",
       "statements": [
-        "$E(X)=\\dfrac{7}{4}$.",
-        "$E(X^2)=\\dfrac{81}{4}$.",
-        "$\\operatorname{Var}(X)=\\dfrac{275}{16}$.",
+        "$E(X)$ is greater than $1.7$.",
+        "$E(X^2)$ is greater than $20$.",
+        "$\\operatorname{Var}(X)$ is greater than $17$.",
         "$\\operatorname{SD}(X)>5$.",
-        "Adding 5 EUR to every outcome leaves the variance unchanged."
+        "Adding $5$ euros to every outcome leaves the variance unchanged."
       ],
       "answer_key": [
         true,
@@ -437,15 +437,15 @@
         true
       ],
       "tactical_explanations": [
-        "**A.** → True\n\n$(-2)(1/2)+3(1/4)+8(1/4)=\\dfrac{7}{4}$.\n\nThe claim is True.",
-        "**B.** → True\n\n$(-2)^2(1/2)+(3)^2(1/4)+(8)^2(1/4)=\\dfrac{81}{4}$.\n\nThe claim is True.",
-        "**C.** → True\n\n$\\dfrac{81}{4}-(\\dfrac{7}{4})^2=\\dfrac{275}{16}$.\n\nThe claim is True.",
-        "**D.** → False\n\n$\\sqrt{\\dfrac{275}{16}}<5$.\n\nThe claim is False.",
-        "**E.** → True\n\nAdding a constant shifts the mean but not deviations from the mean.\n\nThe claim is True."
+        "**A.** → True\n\nThis claim asks for the expected net return $E(X)$. Weight each outcome by its probability:\n$$E(X)=(-2)\\cdot\\frac{1}{2}+3\\cdot\\frac{1}{4}+8\\cdot\\frac{1}{4}$$\n$$E(X)=-1+\\frac{3}{4}+2=\\frac{7}{4}=1.75$$\nThe mean is $1.75$ euros. The claim states that $E(X)$ is greater than $1.7$. Since $1.75 > 1.7$, the statement is True.",
+        "**B.** → True\n\nThis claim asks for the second moment $E(X^2)$. Square each outcome before weighting:\n$$E(X^2)=(-2)^2\\cdot\\frac{1}{2}+3^2\\cdot\\frac{1}{4}+8^2\\cdot\\frac{1}{4}$$\n$$E(X^2)=2+\\frac{9}{4}+16=\\frac{81}{4}=20.25$$\nThe second moment is $20.25$. The claim states that $E(X^2)$ is greater than $20$. Since $20.25 > 20$, the statement is True.",
+        "**C.** → True\n\nThis claim asks for the variance. Using $\\operatorname{Var}(X)=E(X^2)-[E(X)]^2$ with the moments already obtained,\n$$\\operatorname{Var}(X)=\\frac{81}{4}-\\left(\\frac{7}{4}\\right)^2=\\frac{324}{16}-\\frac{49}{16}=\\frac{275}{16}$$\n$$\\operatorname{Var}(X)=17.1875$$\nThe variance is $17.1875$. The claim states that it is greater than $17$. Since $17.1875 > 17$, the statement is True.",
+        "**D.** → False\n\nThis claim asks whether the standard deviation exceeds $5$. The standard deviation is the positive square root of the variance:\n$$\\operatorname{SD}(X)=\\sqrt{\\frac{275}{16}}=\\frac{\\sqrt{275}}{4}$$\n$$\\operatorname{SD}(X)\\approx \\frac{16.583}{4}\\approx 4.147$$\nThe claim states that $\\operatorname{SD}(X)>5$. Since $4.147 \\not> 5$, the statement is False.",
+        "**E.** → True\n\nThis claim asks what happens to the variance after every outcome is increased by $5$ euros. If $Y=X+5$, then $E(Y)=E(X)+5$, but each deviation from the mean is unchanged:\n$$Y-E(Y)=(X+5)-(E(X)+5)=X-E(X)$$\nTherefore\n$$\\operatorname{Var}(Y)=\\operatorname{Var}(X)$$\nAdding a constant leaves the variance unchanged, so the statement is True."
       ],
       "difficulty_level": "5/5",
       "sort_order": 212,
-      "solution_overview": "Shared context topic 12.4.\n\nShared solution:\n1. Use the single shared stem for topic 12.4; do not re-read any claim as a new scenario.\n2. Organize the given data before testing claims. A shared discrete distribution supplies all moment claims.\n3. Keep every stated domain, endpoint, sampling rule, or physical restriction in force.\n4. A: $(-2)(1/2)+3(1/4)+8(1/4)=\\dfrac{7}{4}$.\n5. A: The computed result makes this claim True.\n6. B: $(-2)^2(1/2)+(3)^2(1/4)+(8)^2(1/4)=\\dfrac{81}{4}$.\n7. B: The computed result makes this claim True.\n8. C: $\\dfrac{81}{4}-(\\dfrac{7}{4})^2=\\dfrac{275}{16}$.\n9. C: The computed result makes this claim True.\n10. D: $\\sqrt{\\dfrac{275}{16}}<5$.\n11. D: The computed result makes this claim False.\n12. E: Adding a constant shifts the mean but not deviations from the mean.\n13. E: The computed result makes this claim True.",
+      "solution_overview": "A game has net return $X=-2$, $3$, or $8$ euros with probabilities $1/2$, $1/4$, and $1/4$. The probabilities sum to one. Shared moments used below are\n$$E(X)=(-2)\\cdot\\frac{1}{2}+3\\cdot\\frac{1}{4}+8\\cdot\\frac{1}{4}=\\frac{7}{4}$$\n$$E(X^2)=4\\cdot\\frac{1}{2}+9\\cdot\\frac{1}{4}+64\\cdot\\frac{1}{4}=\\frac{81}{4}$$\n$$\\operatorname{Var}(X)=\\frac{81}{4}-\\left(\\frac{7}{4}\\right)^2=\\frac{275}{16}$$",
       "placeholder": false
     },
     {
@@ -455,11 +455,11 @@
       "subsection": "12.6",
       "context": "Factory A supplies 60% of parts and has a 2% defect rate. Factory B supplies the other 40% and has a 5% defect rate. A part is selected from the combined output, and the factory label is hidden before inspection. The analysis uses weighted routes for defective and nondefective outcomes.",
       "statements": [
-        "$P(\\text{defect})=\\dfrac{4}{125}$.",
-        "$P(A\\mid\\text{defect})=\\dfrac{3}{8}$.",
-        "$P(B\\mid\\text{defect})=\\dfrac{5}{8}$.",
-        "A defective part is more likely from A.",
-        "$P(A\\mid\\text{good})=\\dfrac{147}{242}$."
+        "The probability of a defect is greater than $3.1\\%$.",
+        "Given a defect, the probability it came from factory A is greater than $37\\%$.",
+        "Given a defect, the probability it came from factory B is greater than $62\\%$.",
+        "A defective part is more likely from factory A than from factory B.",
+        "Given a good part, the probability it came from factory A is greater than $60\\%$."
       ],
       "answer_key": [
         true,
@@ -469,15 +469,15 @@
         true
       ],
       "tactical_explanations": [
-        "**A.** → True\n\n$\\dfrac{3}{5}(\\dfrac{1}{50})+\\dfrac{2}{5}(\\dfrac{1}{20})=\\dfrac{4}{125}$.\n\nThe claim is True.",
-        "**B.** → True\n\n$\\dfrac{3}{250}/\\dfrac{4}{125}=\\dfrac{3}{8}$.\n\nThe claim is True.",
-        "**C.** → True\n\n$\\dfrac{1}{50}/\\dfrac{4}{125}=\\dfrac{5}{8}$.\n\nThe claim is True.",
-        "**D.** → False\n\n$\\dfrac{3}{8}<\\dfrac{5}{8}$.\n\nThe claim is False.",
-        "**E.** → True\n\n$\\dfrac{147}{250}/\\dfrac{121}{125}=\\dfrac{147}{242}$.\n\nThe claim is True."
+        "**A.** → True\n\nThis claim asks for the overall probability that a randomly selected part is defective. The law of total probability adds the two factory routes:\n$$P(D)=P(D\\mid A)P(A)+P(D\\mid B)P(B)$$\n$$P(D)=\\frac{1}{50}\\cdot\\frac{3}{5}+\\frac{1}{20}\\cdot\\frac{2}{5}=\\frac{3}{250}+\\frac{1}{50}=\\frac{4}{125}$$\n$$P(D)=0.032$$\nExpressed as a percentage, this is $3.2\\%$. The claim states that this probability is greater than $3.1\\%$. Since $3.2\\% > 3.1\\%$, the statement is True.",
+        "**B.** → True\n\nThis claim asks for the posterior probability that a defective part came from factory A. Bayes' theorem normalizes A's joint defect weight by the total defect probability from the overview:\n$$P(A\\mid D)=\\frac{P(A)P(D\\mid A)}{P(D)}=\\frac{3/250}{4/125}$$\n$$P(A\\mid D)=\\frac{3}{8}=0.375$$\nExpressed as a percentage, this is $37.5\\%$. The claim states that this probability is greater than $37\\%$. Since $37.5\\% > 37\\%$, the statement is True.",
+        "**C.** → True\n\nThis claim asks for the posterior probability that a defective part came from factory B. Using Bayes' theorem with B's joint weight,\n$$P(B\\mid D)=\\frac{P(B)P(D\\mid B)}{P(D)}=\\frac{1/50}{4/125}$$\n$$P(B\\mid D)=\\frac{5}{8}=0.625$$\nExpressed as a percentage, this is $62.5\\%$. The claim states that this probability is greater than $62\\%$. Since $62.5\\% > 62\\%$, the statement is True.",
+        "**D.** → False\n\nThis claim asserts that a defective part is more likely from A than from B. Compare the two posteriors already obtained from Bayes' theorem:\n$$P(A\\mid D)=\\frac{3}{8}=0.375,\\qquad P(B\\mid D)=\\frac{5}{8}=0.625$$\nSince $\\frac{3}{8}<\\frac{5}{8}$, a defective part is more likely from B, not from A. The claim is therefore false, and the statement is False.",
+        "**E.** → True\n\nThis claim asks for the posterior probability that a good part came from factory A. The good-route weight for A is $P(A)(1-P(D\\mid A))=\\frac{3}{5}\\cdot\\frac{49}{50}=\\frac{147}{250}$, and the total good probability is $1-P(D)=\\frac{121}{125}$. Bayes' theorem then gives\n$$P(A\\mid G)=\\frac{147/250}{121/125}=\\frac{147}{242}\\approx 0.607438$$\nExpressed as a percentage, this is approximately $60.744\\%$. The claim states that this probability is greater than $60\\%$. Since $60.744\\% > 60\\%$, the statement is True."
       ],
       "difficulty_level": "5/5",
       "sort_order": 213,
-      "solution_overview": "Shared context topic 12.5.\n\nShared solution:\n1. Use the single shared stem for topic 12.5; do not re-read any claim as a new scenario.\n2. Organize the given data before testing claims. One shared source-and-defect model is normalized with Bayes' theorem.\n3. Keep every stated domain, endpoint, sampling rule, or physical restriction in force.\n4. A: $\\dfrac{3}{5}(\\dfrac{1}{50})+\\dfrac{2}{5}(\\dfrac{1}{20})=\\dfrac{4}{125}$.\n5. A: The computed result makes this claim True.\n6. B: $\\dfrac{3}{250}/\\dfrac{4}{125}=\\dfrac{3}{8}$.\n7. B: The computed result makes this claim True.\n8. C: $\\dfrac{1}{50}/\\dfrac{4}{125}=\\dfrac{5}{8}$.\n9. C: The computed result makes this claim True.\n10. D: $\\dfrac{3}{8}<\\dfrac{5}{8}$.\n11. D: The computed result makes this claim False.\n12. E: $\\dfrac{147}{250}/\\dfrac{121}{125}=\\dfrac{147}{242}$.\n13. E: The computed result makes this claim True.",
+      "solution_overview": "Factory A supplies $60\\%$ of parts with a $2\\%$ defect rate; factory B supplies $40\\%$ with a $5\\%$ defect rate. The joint defect weights and total defect probability are\n$$P(A\\cap D)=\\frac{3}{5}\\cdot\\frac{1}{50}=\\frac{3}{250},\\qquad P(B\\cap D)=\\frac{2}{5}\\cdot\\frac{1}{20}=\\frac{1}{50}$$\n$$P(D)=\\frac{3}{250}+\\frac{1}{50}=\\frac{4}{125}=0.032$$\nThe corresponding good-route weights are $P(A\\cap G)=\\frac{147}{250}$ and $P(G)=\\frac{121}{125}$.",
       "placeholder": false
     },
     {
@@ -487,10 +487,10 @@
       "subsection": "12.6",
       "context": "A jar contains 6 red, 5 blue, and 3 green tokens. Two tokens are selected together, uniformly and without replacement, so unordered pairs form the sample space. There are $\\binom{14}{2}=91$ equally likely pairs, and color events may overlap only through the two selected tokens.",
       "statements": [
-        "The probability of two red tokens is $\\dfrac{15}{91}$.",
-        "The probability of one red and one blue is $\\dfrac{30}{91}$.",
-        "The probability of no green token is $\\dfrac{55}{91}$.",
-        "The probability of at least one green token is $\\dfrac{55}{91}$.",
+        "The probability of two red tokens is greater than $16\\%$.",
+        "The probability of one red and one blue is greater than $32\\%$.",
+        "The probability of no green token is greater than $60\\%$.",
+        "The probability of at least one green token is greater than $40\\%$.",
         "The two draws are independent."
       ],
       "answer_key": [
@@ -501,15 +501,15 @@
         false
       ],
       "tactical_explanations": [
-        "**A.** → True\n\n$\\binom{6}{2}/91=\\dfrac{15}{91}$.\n\nThe claim is True.",
-        "**B.** → True\n\n$6\\cdot5/91=\\dfrac{30}{91}$.\n\nThe claim is True.",
-        "**C.** → True\n\n$\\binom{11}{2}/91=\\dfrac{55}{91}$.\n\nThe claim is True.",
-        "**D.** → False\n\nUse the complement: $1-\\dfrac{55}{91}=\\dfrac{36}{91}$.\n\nThe claim is False.",
-        "**E.** → False\n\nSampling without replacement changes the color proportions after the first draw.\n\nThe claim is False."
+        "**A.** → True\n\nThis claim asks for the probability that both selected tokens are red. Two tokens are drawn together from $6$ red, $5$ blue, and $3$ green tokens, so the sample space has $\\binom{14}{2}=91$ equally likely unordered pairs. The favorable pairs are the ways to choose two red tokens from six:\n$$P(\\text{two red})=\\frac{\\binom{6}{2}}{91}=\\frac{15}{91}$$\n$$P(\\text{two red})\\approx 0.164835$$\nExpressed as a percentage, this is approximately $16.484\\%$. The claim states that this probability is greater than $16\\%$. Since $16.484\\% > 16\\%$, the statement is True.",
+        "**B.** → True\n\nThis claim asks for the probability of one red and one blue token. There are $6\\times 5=30$ red-blue pairs among the $91$ equally likely pairs:\n$$P(\\text{one red and one blue})=\\frac{6\\times 5}{91}=\\frac{30}{91}$$\n$$P(\\text{one red and one blue})\\approx 0.329670$$\nExpressed as a percentage, this is approximately $32.967\\%$. The claim states that this probability is greater than $32\\%$. Since $32.967\\% > 32\\%$, the statement is True.",
+        "**C.** → True\n\nThis claim asks for the probability that neither token is green. Both tokens must then come from the eleven non-green tokens:\n$$P(\\text{no green})=\\frac{\\binom{11}{2}}{91}=\\frac{55}{91}$$\n$$P(\\text{no green})\\approx 0.604396$$\nExpressed as a percentage, this is approximately $60.440\\%$. The claim states that this probability is greater than $60\\%$. Since $60.440\\% > 60\\%$, the statement is True.",
+        "**D.** → False\n\nThis claim asks for the probability of at least one green token. Using the complement of the no-green probability,\n$$P(\\text{at least one green})=1-\\frac{55}{91}=\\frac{36}{91}$$\n$$P(\\text{at least one green})\\approx 0.395604$$\nExpressed as a percentage, this is approximately $39.560\\%$. The claim states that this probability is greater than $40\\%$. Since $39.560\\% \\not> 40\\%$, the statement is False.",
+        "**E.** → False\n\nThis claim asserts that the two draws are independent. Without replacement, the composition of the jar changes after the first token is removed. For example, the chance the second token is red depends on whether the first was red:\n$$P(\\text{second red}\\mid \\text{first red})=\\frac{5}{13}\\ne \\frac{6}{14}=P(\\text{first red})$$\nBecause these probabilities differ, the draws are dependent. The claim of independence is false, so the statement is False."
       ],
       "difficulty_level": "5/5",
       "sort_order": 214,
-      "solution_overview": "Shared context topic 12.1.\n\nShared solution:\n1. Use the single shared stem for topic 12.1; do not re-read any claim as a new scenario.\n2. Organize the given data before testing claims. One shared urn experiment is counted with a common sample space.\n3. Keep every stated domain, endpoint, sampling rule, or physical restriction in force.\n4. A: $\\binom{6}{2}/91=\\dfrac{15}{91}$.\n5. A: The computed result makes this claim True.\n6. B: $6\\cdot5/91=\\dfrac{30}{91}$.\n7. B: The computed result makes this claim True.\n8. C: $\\binom{11}{2}/91=\\dfrac{55}{91}$.\n9. C: The computed result makes this claim True.\n10. D: Use the complement: $1-\\dfrac{55}{91}=\\dfrac{36}{91}$.\n11. D: The computed result makes this claim False.\n12. E: Sampling without replacement changes the color proportions after the first draw.\n13. E: The computed result makes this claim False.",
+      "solution_overview": "A jar contains $6$ red, $5$ blue, and $3$ green tokens. Two tokens are drawn together without replacement from $\\binom{14}{2}=91$ equally likely pairs. Shared favorable counts are $\\binom{6}{2}=15$ red-red pairs, $6\\times 5=30$ red-blue pairs, and $\\binom{11}{2}=55$ pairs with no green.",
       "placeholder": false
     },
     {
@@ -519,11 +519,11 @@
       "subsection": "12.6",
       "context": "A survey of 129 students records language clubs A, B, and C. The disjoint regions contain 26 only in A, 21 only in B, 19 only in C, 9 in A and B only, 7 in A and C only, 7 in B and C only, 5 in all three, and 35 in none. Every student belongs to exactly one listed region.",
       "statements": [
-        "$94$ students join at least one club.",
-        "$66$ students join exactly one club.",
-        "$23$ students join exactly two clubs.",
-        "$28$ students join at least two clubs.",
-        "$48$ students belong to A."
+        "More than $90$ students join at least one club.",
+        "More than $65$ students join exactly one club.",
+        "More than $20$ students join exactly two clubs.",
+        "More than $25$ students join at least two clubs.",
+        "More than $47$ students belong to club A."
       ],
       "answer_key": [
         true,
@@ -533,15 +533,15 @@
         false
       ],
       "tactical_explanations": [
-        "**A.** → True\n\n$129-35=94$.\n\nThe claim is True.",
-        "**B.** → True\n\n$26+21+19=66$.\n\nThe claim is True.",
-        "**C.** → True\n\n$9+7+7=23$.\n\nThe claim is True.",
-        "**D.** → True\n\n$23+5=28$.\n\nThe claim is True.",
-        "**E.** → False\n\n$26+9+7+5=47$.\n\nThe claim is False."
+        "**A.** → True\n\nThis claim asks how many students join at least one club. In the disjoint-region table, that count is the total survey size minus the $35$ students in none of the clubs.\n$$N(\\text{at least one})=129-35=94$$\nExactly $94$ students join at least one club. The claim states that more than $90$ do so. Since $94 > 90$, the statement is True.",
+        "**B.** → True\n\nThis claim asks how many students join exactly one club. Add the three singleton regions only A, only B, and only C:\n$$N(\\text{exactly one})=26+21+19=66$$\nExactly $66$ students join exactly one club. The claim states that more than $65$ do so. Since $66 > 65$, the statement is True.",
+        "**C.** → True\n\nThis claim asks how many students join exactly two clubs. Those students sit in the three pairwise-only regions of the survey table (A and B only, A and C only, and B and C only):\n$$N(\\text{exactly two})=9+7+7$$\n$$N(\\text{exactly two})=23$$\nExactly $23$ students join exactly two clubs. The claim states that more than $20$ do so. Since $23 > 20$, the statement is True.",
+        "**D.** → True\n\nThis claim asks how many students join at least two clubs. Combine the exactly-two students with the five students in all three clubs:\n$$N(\\text{at least two})=23+5=28$$\nExactly $28$ students join at least two clubs. The claim states that more than $25$ do so. Since $28 > 25$, the statement is True.",
+        "**E.** → False\n\nThis claim asks how many students belong to club A. Club A is the sum of every disjoint region that includes A: only A, A and B only, A and C only, and all three clubs.\n$$N(A)=26+9+7+5$$\n$$N(A)=47$$\nExactly $47$ students belong to A. The claim states that more than $47$ belong to A. Since $47 \\not> 47$, the statement is False."
       ],
       "difficulty_level": "5/5",
       "sort_order": 215,
-      "solution_overview": "Shared context topic 12.2.\n\nShared solution:\n1. Use the single shared stem for topic 12.2; do not re-read any claim as a new scenario.\n2. Organize the given data before testing claims. A shared three-set survey is read from disjoint regions.\n3. Keep every stated domain, endpoint, sampling rule, or physical restriction in force.\n4. A: $129-35=94$.\n5. A: The computed result makes this claim True.\n6. B: $26+21+19=66$.\n7. B: The computed result makes this claim True.\n8. C: $9+7+7=23$.\n9. C: The computed result makes this claim True.\n10. D: $23+5=28$.\n11. D: The computed result makes this claim True.\n12. E: $26+9+7+5=47$.\n13. E: The computed result makes this claim False.",
+      "solution_overview": "A survey of $129$ students records clubs through disjoint regions: $26$ only A, $21$ only B, $19$ only C, $9$ in A and B only, $7$ in A and C only, $7$ in B and C only, $5$ in all three, and $35$ in none.\n$$N(\\text{at least one})=129-35=94$$\n$$N(\\text{exactly one})=26+21+19=66$$\n$$N(\\text{exactly two})=9+7+7=23$$\n$$N(\\text{at least two})=23+5=28$$\n$$N(A)=26+9+7+5=47$$",
       "placeholder": false
     },
     {
@@ -551,10 +551,10 @@
       "subsection": "12.6",
       "context": "A courier audit contains 120 deliveries. Of these, 54 used premium service, 42 arrived late, and 18 were both premium and late. One delivery is selected uniformly. Let $P$ mean premium and $L$ mean late; all conditional probabilities use this same audit table.",
       "statements": [
-        "$P(L\\mid P)=\\dfrac{1}{3}$.",
-        "$P(P\\mid L)=\\dfrac{3}{7}$.",
-        "$P(P\\cap L)=\\dfrac{3}{20}$.",
-        "$P(P\\cup L)=\\dfrac{13}{20}$.",
+        "The probability $P(L\\mid P)$ is greater than $33\\%$.",
+        "The probability $P(P\\mid L)$ is greater than $42\\%$.",
+        "The probability $P(P\\cap L)$ is greater than $14\\%$.",
+        "The probability $P(P\\cup L)$ is greater than $64\\%$.",
         "$P$ and $L$ are independent."
       ],
       "answer_key": [
@@ -565,15 +565,15 @@
         false
       ],
       "tactical_explanations": [
-        "**A.** → True\n\n$P(L\\mid P)=18/54=\\dfrac{1}{3}$.\n\nThe claim is True.",
-        "**B.** → True\n\n$P(P\\mid L)=18/42=\\dfrac{3}{7}$.\n\nThe claim is True.",
-        "**C.** → True\n\n$18/120=\\dfrac{3}{20}$.\n\nThe claim is True.",
-        "**D.** → True\n\n$(54+42-18)/120=\\dfrac{13}{20}$.\n\nThe claim is True.",
-        "**E.** → False\n\n$18(120)\\ne54(42)$, so the product test fails.\n\nThe claim is False."
+        "**A.** → True\n\nThis claim asks for $P(L\\mid P)$, the probability a delivery is late given that it is premium. Among the $54$ premium deliveries, $18$ are also late:\n$$P(L\\mid P)=\\frac{18}{54}=\\frac{1}{3}\\approx 0.333333$$\nExpressed as a percentage, this is approximately $33.333\\%$. The claim states that this probability is greater than $33\\%$. Since $33.333\\% > 33\\%$, the statement is True.",
+        "**B.** → True\n\nThis claim asks for $P(P\\mid L)$, the probability a delivery is premium given that it is late. Among the $42$ late deliveries, $18$ are premium:\n$$P(P\\mid L)=\\frac{18}{42}=\\frac{3}{7}\\approx 0.428571$$\nExpressed as a percentage, this is approximately $42.857\\%$. The claim states that this probability is greater than $42\\%$. Since $42.857\\% > 42\\%$, the statement is True.",
+        "**C.** → True\n\nThis claim asks for the joint probability that a delivery is both premium and late. With $18$ such deliveries out of $120$,\n$$P(P\\cap L)=\\frac{18}{120}=\\frac{3}{20}=0.15$$\nExpressed as a percentage, this is $15\\%$. The claim states that this probability is greater than $14\\%$. Since $15\\% > 14\\%$, the statement is True.",
+        "**D.** → True\n\nThis claim asks for the probability that a delivery is premium or late. Inclusion-exclusion on the audit counts gives\n$$P(P\\cup L)=\\frac{54+42-18}{120}=\\frac{78}{120}=\\frac{13}{20}=0.65$$\nExpressed as a percentage, this is $65\\%$. The claim states that this probability is greater than $64\\%$. Since $65\\% > 64\\%$, the statement is True.",
+        "**E.** → False\n\nThis claim asserts that premium and late are independent. Independence requires $P(P\\cap L)=P(P)P(L)$, or equivalently $18\\cdot 120=54\\cdot 42$.\n$$18\\cdot 120=2160,\\qquad 54\\cdot 42=2268$$\nSince $2160\\ne 2268$, the product test fails and the events are not independent, so the statement is False."
       ],
       "difficulty_level": "5/5",
       "sort_order": 216,
-      "solution_overview": "Shared context topic 12.3.\n\nShared solution:\n1. Use the single shared stem for topic 12.3; do not re-read any claim as a new scenario.\n2. Organize the given data before testing claims. One shared two-way table supports conditional and independence checks.\n3. Keep every stated domain, endpoint, sampling rule, or physical restriction in force.\n4. A: $P(L\\mid P)=18/54=\\dfrac{1}{3}$.\n5. A: The computed result makes this claim True.\n6. B: $P(P\\mid L)=18/42=\\dfrac{3}{7}$.\n7. B: The computed result makes this claim True.\n8. C: $18/120=\\dfrac{3}{20}$.\n9. C: The computed result makes this claim True.\n10. D: $(54+42-18)/120=\\dfrac{13}{20}$.\n11. D: The computed result makes this claim True.\n12. E: $18(120)\\ne54(42)$, so the product test fails.\n13. E: The computed result makes this claim False.",
+      "solution_overview": "A courier audit of $120$ deliveries records $54$ premium ($P$), $42$ late ($L$), and $18$ both. One delivery is selected uniformly.\n$$P(P)=\\frac{54}{120},\\qquad P(L)=\\frac{42}{120},\\qquad P(P\\cap L)=\\frac{18}{120}$$",
       "placeholder": false
     },
     {
@@ -583,11 +583,11 @@
       "subsection": "12.6",
       "context": "A game has net return $X=-1$, $4$, or $9$ euros with probabilities $1/2$, $1/4$, and $1/4$, respectively. The probabilities sum to one, and repeated plays are independent. The review computes $E(X)$, $E(X^2)$, variance, and the effect of adding a fixed bonus.",
       "statements": [
-        "$E(X)=\\dfrac{11}{4}$.",
-        "$E(X^2)=\\dfrac{99}{4}$.",
-        "$\\operatorname{Var}(X)=\\dfrac{275}{16}$.",
+        "$E(X)$ is greater than $2.7$.",
+        "$E(X^2)$ is greater than $24$.",
+        "$\\operatorname{Var}(X)$ is greater than $17$.",
         "$\\operatorname{SD}(X)>5$.",
-        "Adding 5 EUR to every outcome leaves the variance unchanged."
+        "Adding $5$ euros to every outcome leaves the variance unchanged."
       ],
       "answer_key": [
         true,
@@ -597,15 +597,15 @@
         true
       ],
       "tactical_explanations": [
-        "**A.** → True\n\n$(-1)(1/2)+4(1/4)+9(1/4)=\\dfrac{11}{4}$.\n\nThe claim is True.",
-        "**B.** → True\n\n$(-1)^2(1/2)+(4)^2(1/4)+(9)^2(1/4)=\\dfrac{99}{4}$.\n\nThe claim is True.",
-        "**C.** → True\n\n$\\dfrac{99}{4}-(\\dfrac{11}{4})^2=\\dfrac{275}{16}$.\n\nThe claim is True.",
-        "**D.** → False\n\n$\\sqrt{\\dfrac{275}{16}}<5$.\n\nThe claim is False.",
-        "**E.** → True\n\nAdding a constant shifts the mean but not deviations from the mean.\n\nThe claim is True."
+        "**A.** → True\n\nThis claim asks for the expected net return. Weight each outcome by its probability:\n$$E(X)=(-1)\\cdot\\frac{1}{2}+4\\cdot\\frac{1}{4}+9\\cdot\\frac{1}{4}$$\n$$E(X)=-\\frac{1}{2}+1+\\frac{9}{4}=\\frac{11}{4}=2.75$$\nThe mean is $2.75$ euros. The claim states that $E(X)$ is greater than $2.7$. Since $2.75 > 2.7$, the statement is True.",
+        "**B.** → True\n\nThis claim asks for the second moment. Square each outcome before weighting:\n$$E(X^2)=(-1)^2\\cdot\\frac{1}{2}+4^2\\cdot\\frac{1}{4}+9^2\\cdot\\frac{1}{4}$$\n$$E(X^2)=\\frac{1}{2}+4+\\frac{81}{4}=\\frac{99}{4}=24.75$$\nThe second moment is $24.75$. The claim states that $E(X^2)$ is greater than $24$. Since $24.75 > 24$, the statement is True.",
+        "**C.** → True\n\nThis claim asks for the variance via $\\operatorname{Var}(X)=E(X^2)-[E(X)]^2$:\n$$\\operatorname{Var}(X)=\\frac{99}{4}-\\left(\\frac{11}{4}\\right)^2=\\frac{396}{16}-\\frac{121}{16}=\\frac{275}{16}$$\n$$\\operatorname{Var}(X)=17.1875$$\nThe variance is $17.1875$. The claim states that it is greater than $17$. Since $17.1875 > 17$, the statement is True.",
+        "**D.** → False\n\nThis claim asks whether the standard deviation of the net return exceeds $5$. Using the variance $\\operatorname{Var}(X)=\\frac{275}{16}$ from the shared moments,\n$$\\operatorname{SD}(X)=\\sqrt{\\operatorname{Var}(X)}=\\sqrt{\\frac{275}{16}}=\\frac{\\sqrt{275}}{4}$$\n$$\\operatorname{SD}(X)\\approx 4.147$$\nThe claim states that $\\operatorname{SD}(X)>5$. Since $4.147 \\not> 5$, the statement is False.",
+        "**E.** → True\n\nThis claim asks what happens to variance after every outcome is increased by $5$ euros. For $Y=X+5$, deviations from the mean are unchanged because the same constant is added to $X$ and to $E(X)$:\n$$\\operatorname{Var}(X+5)=\\operatorname{Var}(X)$$\nThe variance is therefore unchanged, so the statement is True."
       ],
       "difficulty_level": "5/5",
       "sort_order": 217,
-      "solution_overview": "Shared context topic 12.4.\n\nShared solution:\n1. Use the single shared stem for topic 12.4; do not re-read any claim as a new scenario.\n2. Organize the given data before testing claims. A shared discrete distribution supplies all moment claims.\n3. Keep every stated domain, endpoint, sampling rule, or physical restriction in force.\n4. A: $(-1)(1/2)+4(1/4)+9(1/4)=\\dfrac{11}{4}$.\n5. A: The computed result makes this claim True.\n6. B: $(-1)^2(1/2)+(4)^2(1/4)+(9)^2(1/4)=\\dfrac{99}{4}$.\n7. B: The computed result makes this claim True.\n8. C: $\\dfrac{99}{4}-(\\dfrac{11}{4})^2=\\dfrac{275}{16}$.\n9. C: The computed result makes this claim True.\n10. D: $\\sqrt{\\dfrac{275}{16}}<5$.\n11. D: The computed result makes this claim False.\n12. E: Adding a constant shifts the mean but not deviations from the mean.\n13. E: The computed result makes this claim True.",
+      "solution_overview": "A game has net return $X=-1$, $4$, or $9$ euros with probabilities $1/2$, $1/4$, and $1/4$. Shared moments are\n$$E(X)=(-1)\\cdot\\frac{1}{2}+4\\cdot\\frac{1}{4}+9\\cdot\\frac{1}{4}=\\frac{11}{4}$$\n$$E(X^2)=1\\cdot\\frac{1}{2}+16\\cdot\\frac{1}{4}+81\\cdot\\frac{1}{4}=\\frac{99}{4}$$\n$$\\operatorname{Var}(X)=\\frac{99}{4}-\\left(\\frac{11}{4}\\right)^2=\\frac{275}{16}$$",
       "placeholder": false
     },
     {
@@ -615,11 +615,11 @@
       "subsection": "12.6",
       "context": "Factory A supplies 70% of parts and has a 2% defect rate. Factory B supplies the other 30% and has a 8% defect rate. A part is selected from the combined output, and the factory label is hidden before inspection. The analysis uses weighted routes for defective and nondefective outcomes.",
       "statements": [
-        "$P(\\text{defect})=\\dfrac{19}{500}$.",
-        "$P(A\\mid\\text{defect})=\\dfrac{7}{19}$.",
-        "$P(B\\mid\\text{defect})=\\dfrac{12}{19}$.",
-        "A defective part is more likely from A.",
-        "$P(A\\mid\\text{good})=\\dfrac{343}{481}$."
+        "The probability of a defect is greater than $3.7\\%$.",
+        "Given a defect, the probability it came from factory A is greater than $36\\%$.",
+        "Given a defect, the probability it came from factory B is greater than $63\\%$.",
+        "A defective part is more likely from factory A than from factory B.",
+        "Given a good part, the probability it came from factory A is greater than $71\\%$."
       ],
       "answer_key": [
         true,
@@ -629,15 +629,15 @@
         true
       ],
       "tactical_explanations": [
-        "**A.** → True\n\n$\\dfrac{7}{10}(\\dfrac{1}{50})+\\dfrac{3}{10}(\\dfrac{2}{25})=\\dfrac{19}{500}$.\n\nThe claim is True.",
-        "**B.** → True\n\n$\\dfrac{7}{500}/\\dfrac{19}{500}=\\dfrac{7}{19}$.\n\nThe claim is True.",
-        "**C.** → True\n\n$\\dfrac{3}{125}/\\dfrac{19}{500}=\\dfrac{12}{19}$.\n\nThe claim is True.",
-        "**D.** → False\n\n$\\dfrac{7}{19}<\\dfrac{12}{19}$.\n\nThe claim is False.",
-        "**E.** → True\n\n$\\dfrac{343}{500}/\\dfrac{481}{500}=\\dfrac{343}{481}$.\n\nThe claim is True."
+        "**A.** → True\n\nThis claim asks for the overall defect probability. Adding the two factory routes gives\n$$P(D)=\\frac{7}{10}\\cdot\\frac{1}{50}+\\frac{3}{10}\\cdot\\frac{2}{25}=\\frac{7}{500}+\\frac{3}{125}=\\frac{19}{500}$$\n$$P(D)=0.038$$\nExpressed as a percentage, this is $3.8\\%$. The claim states that this probability is greater than $3.7\\%$. Since $3.8\\% > 3.7\\%$, the statement is True.",
+        "**B.** → True\n\nThis claim asks for the posterior probability that a defective part came from factory A. Bayes' theorem gives\n$$P(A\\mid D)=\\frac{7/500}{19/500}=\\frac{7}{19}\\approx 0.368421$$\nExpressed as a percentage, this is approximately $36.842\\%$. The claim states that this probability is greater than $36\\%$. Since $36.842\\% > 36\\%$, the statement is True.",
+        "**C.** → True\n\nThis claim asks for the posterior probability that a defective part came from factory B. Bayes' theorem gives\n$$P(B\\mid D)=\\frac{3/125}{19/500}=\\frac{12}{19}\\approx 0.631579$$\nExpressed as a percentage, this is approximately $63.158\\%$. The claim states that this probability is greater than $63\\%$. Since $63.158\\% > 63\\%$, the statement is True.",
+        "**D.** → False\n\nThis claim asserts that a defective part is more likely from A than from B. Comparing the posteriors,\n$$P(A\\mid D)=\\frac{7}{19}\\approx 0.368,\\qquad P(B\\mid D)=\\frac{12}{19}\\approx 0.632$$\nSince $\\frac{7}{19}<\\frac{12}{19}$, a defective part is more likely from B. The claim is false, so the statement is False.",
+        "**E.** → True\n\nThis claim asks for the posterior probability that a good part came from factory A. With good-route weight $\\frac{343}{500}$ and total good probability $\\frac{481}{500}$,\n$$P(A\\mid G)=\\frac{343/500}{481/500}=\\frac{343}{481}\\approx 0.713098$$\nExpressed as a percentage, this is approximately $71.310\\%$. The claim states that this probability is greater than $71\\%$. Since $71.310\\% > 71\\%$, the statement is True."
       ],
       "difficulty_level": "5/5",
       "sort_order": 218,
-      "solution_overview": "Shared context topic 12.5.\n\nShared solution:\n1. Use the single shared stem for topic 12.5; do not re-read any claim as a new scenario.\n2. Organize the given data before testing claims. One shared source-and-defect model is normalized with Bayes' theorem.\n3. Keep every stated domain, endpoint, sampling rule, or physical restriction in force.\n4. A: $\\dfrac{7}{10}(\\dfrac{1}{50})+\\dfrac{3}{10}(\\dfrac{2}{25})=\\dfrac{19}{500}$.\n5. A: The computed result makes this claim True.\n6. B: $\\dfrac{7}{500}/\\dfrac{19}{500}=\\dfrac{7}{19}$.\n7. B: The computed result makes this claim True.\n8. C: $\\dfrac{3}{125}/\\dfrac{19}{500}=\\dfrac{12}{19}$.\n9. C: The computed result makes this claim True.\n10. D: $\\dfrac{7}{19}<\\dfrac{12}{19}$.\n11. D: The computed result makes this claim False.\n12. E: $\\dfrac{343}{500}/\\dfrac{481}{500}=\\dfrac{343}{481}$.\n13. E: The computed result makes this claim True.",
+      "solution_overview": "Factory A supplies $70\\%$ of parts with a $2\\%$ defect rate; factory B supplies $30\\%$ with an $8\\%$ defect rate.\n$$P(A\\cap D)=\\frac{7}{10}\\cdot\\frac{1}{50}=\\frac{7}{500},\\qquad P(B\\cap D)=\\frac{3}{10}\\cdot\\frac{2}{25}=\\frac{3}{125}$$\n$$P(D)=\\frac{7}{500}+\\frac{3}{125}=\\frac{19}{500}=0.038$$\nGood-route values include $P(A\\cap G)=\\frac{343}{500}$ and $P(G)=\\frac{481}{500}$.",
       "placeholder": false
     }
   ]
