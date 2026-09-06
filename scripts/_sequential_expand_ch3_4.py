@@ -463,6 +463,192 @@ def expand_zero_display_numeric(expl: str) -> str:
             f"$$t={a},\\quad t={b}$$\n\n"
         )
         return out[: m.start()] + block + out[m.end() :]
+
+    # Driving time without rest
+    m = re.search(
+        r"Without the rest the same driving would take \$([0-9.]+)\$ hours, not \$([0-9.]+)\$\.",
+        out,
+    )
+    if m:
+        a, b = m.groups()
+        block = (
+            f"Without the rest the same driving would take\n\n"
+            f"$${a}$$\n\nhours, not\n\n$${b}$$\n\n"
+            f"$${a} \\ne {b}$$\n\n"
+        )
+        return out[: m.start()] + block + out[m.end() :]
+
+    # Rectangle sides differ
+    m = re.search(
+        r"If the length is \$(\d+)\$ cm more than the width, the two sides differ by \$(\d+)\$ cm\.",
+        out,
+    )
+    if m:
+        d1, d2 = m.groups()
+        block = (
+            f"If the length is ${d1}$ cm more than the width,\n\n"
+            f"$$L = W + {d1}$$\n\n"
+            f"$$L - W = {d2}$$\n\n"
+        )
+        return out[: m.start()] + block + out[m.end() :]
+
+    # Equilateral vs 3-4-5
+    m = re.search(
+        r"The sides \$(\d+)\$ cm, \$(\d+)\$ cm, and \$(\d+)\$ cm are three different lengths",
+        out,
+    )
+    if m:
+        a, b, c = m.groups()
+        block = (
+            f"The sides are\n\n$${a}$, ${b}$, ${c}$$\n\n"
+            f"For an equilateral triangle one would need\n\n"
+            f"$${a} = {b} = {c}$$\n\n"
+            f"which fails since these are three different lengths"
+        )
+        # fix broken $$ for mixed inline - rewrite cleanly
+        block = (
+            f"The sides are ${a}$ cm, ${b}$ cm, and ${c}$ cm:\n\n"
+            f"$${a},\\ {b},\\ {c}$$\n\n"
+            f"Equilateral requires\n\n"
+            f"$${a}={b}={c}$$\n\n"
+            f"which fails because these are three different lengths"
+        )
+        return out[: m.start()] + block + out[m.end() :]
+
+    # Longer leg
+    m = re.search(
+        r"The legs are \$(\d+)\$ cm and \$(\d+)\$ cm, so the longer leg is \$(\d+)\$ cm\.",
+        out,
+    )
+    if m:
+        a, b, c = m.groups()
+        block = (
+            f"The legs are\n\n$${a}$$\n\nand\n\n$${b}$$\n\n"
+            f"so the longer leg is\n\n"
+            f"$$\\max\\{{{a},{b}\\}} = {c}$$\n\n"
+        )
+        return out[: m.start()] + block + out[m.end() :]
+
+    # Fraction never zero
+    m = re.search(
+        r"Here \$N = (\d+) \\neq 0\$, so the left side can never equal \$0\$",
+        out,
+    )
+    if m:
+        n = m.group(1)
+        block = (
+            f"A fraction $\\dfrac{{N}}{{D}}$ is zero only when\n\n"
+            f"$$N = 0 \\quad\\text{{and}}\\quad D \\neq 0$$\n\n"
+            f"Here\n\n$$N = {n}$$\n\n"
+            f"$${n} \\neq 0$$\n\n"
+            f"so the left side can never equal $0$"
+        )
+        # Replace from "A fraction" if present, else from Here
+        m0 = re.search(r"A fraction \$\\dfrac\{N\}\{D\}\$ is zero only when[^\n]+\n\nHere", out)
+        if m0:
+            return out[: m0.start()] + block + out[m.end() :]
+        return out[: m.start()] + block + out[m.end() :]
+
+    # Absolute-value sites (gives / recovers)
+    m = re.search(
+        r"Outside, \$([^$]+)\$ (?:gives|recovers) \$([^$]+)\$ and \$([^$]+)\$ (?:gives|recovers) \$([^$]+)\$\. The sites are \$([^$]+)\$ and \$([^$]+)\$\, not \$([^$]+)\$ and \$([^$]+)\$",
+        out,
+    )
+    if m:
+        c1, x1, c2, x2, s1, s2, w1, w2 = m.groups()
+        block = (
+            f"Outside,\n\n$${c1}$$\n\ngives\n\n$${x1}$$\n\nand\n\n"
+            f"$${c2}$$\n\ngives\n\n$${x2}$$\n\n"
+            f"The sites are\n\n$${s1}$$\n\nand\n\n$${s2}$$\n\n"
+            f"not\n\n$${w1}$$\n\nand\n\n$${w2}$$\n\n"
+            f"$${s1}\\ne {w1}$$\n\n"
+        )
+        return out[: m.start()] + block + out[m.end() :]
+
+    # log reduced equation
+    m = re.search(
+        r"The reduced equation \$\\frac\{3\}\{2\}t = 6\$ is linear with the non-zero coefficient \$\\frac\{3\}\{2\}\$, so it has exactly one root, namely \$t = 4\$\.",
+        out,
+    )
+    if m:
+        block = (
+            "The reduced equation is\n\n"
+            "$$\\frac{3}{2}t = 6$$\n\n"
+            "$$t = 6 \\cdot \\frac{2}{3}$$\n\n"
+            "$$t = 4$$\n\n"
+            "The coefficient $\\frac{3}{2}$ is nonzero, so this root is unique.\n\n"
+        )
+        return out[: m.start()] + block + out[m.end() :]
+
+    # solution set {0, 2}
+    m = re.search(
+        r"The solution set of the equation is \$\\\{0,\\?\s*2\\\}\$\.",
+        out,
+    )
+    if m:
+        block = (
+            "The solution set of the equation is\n\n"
+            "$$\\{0,\\ 2\\}$$\n\n"
+            "Checking signs:\n\n"
+            "$$0 \\not< 0$$\n\n"
+            "$$2 > 0$$\n\n"
+        )
+        return out[: m.start()] + block + out[m.end() :]
+
+    # Factor (x-3)(x-6)=0
+    m = re.search(
+        r"Factor: \$\(x - 3\)\(x - 6\) = 0\$\. Roots \$3\$ and \$6\$ sum to \$9\$, which is also the Vieta coefficient\. The claim \$10\$ is wrong\.",
+        out,
+    )
+    if m:
+        block = (
+            "Factor:\n\n"
+            "$$(x-3)(x-6)=0$$\n\n"
+            "$$x=3 \\quad\\text{or}\\quad x=6$$\n\n"
+            "$$3+6$$\n\n"
+            "$$=9$$\n\n"
+            "The claim is $10$.\n\n"
+            "$$9 \\ne 10$$\n\n"
+        )
+        return out[: m.start()] + block + out[m.end() :]
+
+    # Five scores sum
+    m = re.search(
+        r"Five scores sum to \$5 \\cdot 14 = 70\$\. Known sum \$11 \+ 12 \+ 15 \+ 16 = 54\$, so the missing score is \$70 - 54 = 16\$\.",
+        out,
+    )
+    if m:
+        block = (
+            "Five scores sum to\n\n"
+            "$$5 \\cdot 14$$\n\n"
+            "$$= 70$$\n\n"
+            "Known sum:\n\n"
+            "$$11 + 12 + 15 + 16$$\n\n"
+            "$$= 54$$\n\n"
+            "Missing score:\n\n"
+            "$$70 - 54$$\n\n"
+            "$$= 16$$\n\n"
+        )
+        return out[: m.start()] + block + out[m.end() :]
+
+    # Pythagoras
+    m = re.search(
+        r"Pythagoras: \$5\^\{2\} \+ 12\^\{2\} = 25 \+ 144 = 169 = 13\^\{2\}\$\. Area \$\\tfrac\{1\}\{2\} \\cdot 5 \\cdot 12 = 30\$\.",
+        out,
+    )
+    if m:
+        block = (
+            "Pythagoras:\n\n"
+            "$$5^{2} + 12^{2}$$\n\n"
+            "$$= 25 + 144$$\n\n"
+            "$$= 169$$\n\n"
+            "$$= 13^{2}$$\n\n"
+            "Area:\n\n"
+            "$$\\tfrac{1}{2} \\cdot 5 \\cdot 12$$\n\n"
+            "$$= 30$$\n\n"
+        )
+        return out[: m.start()] + block + out[m.end() :]
+
     return out
 
 
