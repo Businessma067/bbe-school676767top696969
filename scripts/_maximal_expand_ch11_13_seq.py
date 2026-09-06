@@ -30,8 +30,8 @@ YIELDS_P_RE = re.compile(
 IMPLIES_RE = re.compile(r"\\implies|\\Rightarrow|⇒")
 FILLER_RES = [
     re.compile(r"\n*\s*The intermediate algebra above is what justifies the claim\.?\s*", re.I),
-    re.compile(r"\n*\s*Matching these figures to the claim,?\s*", re.I),
-    re.compile(r"\n*\s*Comparing that with the claim\.?\s*", re.I),
+    re.compile(r"\n*\s*Matching these figures to the claim[,.]?\s*", re.I),
+    re.compile(r"\n*\s*Comparing that with the claim[,.]?\s*", re.I),
     re.compile(r"\n*\s*Comparing these figures to the claim\.?\s*", re.I),
     re.compile(r"\bQED\.?\s*", re.I),
     re.compile(r"\n*\s*(?:Arithmetic already displayed|Accept\.|Reject\.)[^\n]*\.?\s*", re.I),
@@ -260,8 +260,11 @@ def split_equals_chain(inner: str) -> list[str]:
     deduped: list[str] = []
     for st in out:
         st = re.sub(r"^=\s*=\s*", "= ", st.strip())
-        if not deduped or deduped[-1] != st:
-            deduped.append(st)
+        key = re.sub(r"\s+", "", st)
+        prev_key = re.sub(r"\s+", "", deduped[-1]) if deduped else None
+        if prev_key == key:
+            continue
+        deduped.append(st)
     return deduped
 
 
@@ -316,8 +319,16 @@ def normalize_header_closer(text: str, letter: str, is_true: bool) -> str:
 
     body = strip_fillers(body)
     body = CLOSER_RE.sub("", body).rstrip()
-    body = re.sub(rf",?\s*(?:the|So the) statement is {verd}\.?\s*$", "", body, flags=re.I).rstrip()
-    body = re.sub(r",\s*$", ".", body)
+    body = re.sub(
+        rf"(?:Since\s+[^\n]+?[,.]\s*)?(?:the|So the) statement is {verd}\.?\s*$",
+        "",
+        body,
+        flags=re.I,
+    ).rstrip()
+    # If we stripped a trailing "Since ...," keep the comparison as its own sentence when present earlier
+    body = re.sub(r",\s*$", "", body)
+    body = re.sub(r"\n\.\s*$", "", body)
+    body = re.sub(r"\n{3,}", "\n\n", body)
     body = body.rstrip() + f"\n\nSo the statement is {verd}."
     body = re.sub(rf"(So the statement is {verd}\.\s*)+$", f"So the statement is {verd}.", body)
     return tidy(body) + "\n"
@@ -330,10 +341,19 @@ def inject_ch13_p_recovery(expl: str, overview: str) -> str:
     p_val = m.group(1)
     displays = DISPLAY_RE.findall(overview or "")
     recovery_steps = []
+    started = False
     for d in displays:
         ds = d.strip()
-        if re.search(r"\bp\b|E\[|\\mathrm\{Var\}|n=|\\dfrac|\\frac", ds):
+        if not started:
+            if re.search(r"\bp\b|E\[X\]|\\mathrm\{Var\}|n\s*=|\\dfrac|\\frac", ds):
+                started = True
+                recovery_steps.append(ds)
+            continue
+        # continue collecting leading "=" / approx steps and p-related lines
+        if ds.startswith("=") or ds.startswith(r"\approx") or re.search(r"\bp\b|\\dfrac|\\frac", ds):
             recovery_steps.append(ds)
+        else:
+            break
         if len(recovery_steps) >= 8:
             break
     if not recovery_steps:
@@ -347,7 +367,7 @@ def inject_ch13_p_recovery(expl: str, overview: str) -> str:
             "From the stem quantities, recover the common success probability step by step.\n\n"
             f"{blocks}"
         )
-    return YIELDS_P_RE.sub(recovery, expl, count=1)
+    return YIELDS_P_RE.sub(lambda _m: recovery, expl, count=1)
 
 
 def expand_one_explanation(expl: str, letter: str, is_true: bool, *, overview: str = "", chapter_hint: str = "") -> str:
