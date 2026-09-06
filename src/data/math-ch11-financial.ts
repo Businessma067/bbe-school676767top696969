@@ -4733,25 +4733,25 @@ $$`,
     tactical_explanations: [
       `**A.** → False
 
-Continuous compounding uses the force of interest from the overview:
+The net continuous growth rate subtracts the fee drag from the gross force:
 
 $$
-A = P e^{rt}
+r_{\\mathrm{net}} = r - f
 $$
 
-Substituting the stem inputs recovered in the overview gives
-
 $$
-r_{\\mathrm{net}}=7\\%
+r_{\\mathrm{net}} = 0.09 - 0.02
 $$
 
-The claim asserts a different figure. Against the recovered
-
 $$
-r_{\\mathrm{net}}=7\\%
+= 0.07
 $$
 
-those values do not agree.
+$$
+= 7\\%
+$$
+
+The claim asserts $11\\%$ by adding the fee instead. We have $7\\% \\ne 11\\%$.
 
 So the statement is False.`,
       `**B.** → False
