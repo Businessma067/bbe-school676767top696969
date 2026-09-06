@@ -1501,13 +1501,13 @@
         false
       ],
       "tactical_explanations": [
-        "**A.** → True\n\nEvaluate at powers of two: $f(4)=2$, $f(8)=3$, $f(32)=5$.\n\n$$f(4)+f(8)=2+3=5=f(32)$$\n\nSo the statement is True.",
-        "**B.** → False\n\nThe product rule applies to every positive pair.\n\n$$f(2\\cdot 3)=f(2)+f(3)\\implies f(6)=f(2)+f(3)$$\n\nSo the equality holds; the claim that it fails is false.\n\nSo the statement is False.",
-        "**C.** → True\n\nSolve $f(x)=3$.\n\n$$\\log_{2}x=3\\implies x=2^{3}=8$$\n\nBijectivity of $f$ onto $\\mathbb{R}$ gives uniqueness.\n\nSo the statement is True.",
-        "**D.** → True\n\nWrite $1/8=2^{-3}$.\n\n$$f(1/8)=\\log_{2}(2^{-3})=-3$$\n\nSo the statement is True.",
-        "**E.** → False\n\nHere $f(2)=1$, so the left side is $f(10)=\\log_{2}10$.\n\n$$\\log_{2}10=1+\\log_{2}5$$\n\nSince $2^{2}=4\\neq 5$, one has $\\log_{2}5\\neq 2$, hence $\\log_{2}10\\neq 2$.\n\nSo the statement is False."
+        "**A.** → True\n\nOn the figure $f(x)=\\log_{2}x$, so every pure power of two is an integer height.\n\n$$f(4)=\\log_{2}(2^{2})=2,\\qquad f(8)=\\log_{2}(2^{3})=3,\\qquad f(32)=\\log_{2}(2^{5})=5$$\n\nAdd the first two heights and compare with the third.\n\n$$f(4)+f(8)=2+3=5=f(32)$$\n\nThe three marked powers therefore satisfy the claimed sum identity.\n\nSo the statement is True.",
+        "**B.** → False\n\nThe product rule for a fixed base larger than $1$ turns a product of positive arguments into a sum of logs.\n\n$$f(xy)=f(x)+f(y)\\qquad(x,y>0)$$\n\nSpecialise to the factors $2$ and $3$.\n\n$$f(6)=f(2\\cdot 3)=f(2)+f(3)$$\n\nSo the equality holds for every base-$2$ logarithm; the claim that it fails is false.\n\nSo the statement is False.",
+        "**C.** → True\n\nSolve the level equation $f(x)=3$ by exponentiating with base $2$.\n\n$$\\log_{2}x=3\\implies x=2^{3}=8$$\n\nBecause $f:(0,\\infty)\\to\\mathbb{R}$ is bijective, that root is unique on the natural domain.\n\n$$\\{x>0:f(x)=3\\}=\\{8\\}$$\n\nSo the statement is True.",
+        "**D.** → True\n\nRewrite the argument as a pure power of the base.\n\n$$\\frac{1}{8}=2^{-3}$$\n\nApply the power rule for logarithms.\n\n$$f(1/8)=\\log_{2}(2^{-3})=-3$$\n\nSo the statement is True.",
+        "**E.** → False\n\nThe denominator is immediate: $f(2)=\\log_{2}2=1$, so the claimed ratio collapses to $f(10)$.\n\n$$\\frac{f(10)}{f(2)}=\\log_{2}10$$\n\nSplit off one unit of the log.\n\n$$\\log_{2}10=1+\\log_{2}5$$\n\nSince $2^{2}=4\\neq 5$, one has $\\log_{2}5\\neq 1$, hence $\\log_{2}10\\neq 2$. The ratio is not $2$.\n\nSo the statement is False."
       ],
-      "solution_overview": "Powers of two give $f(4)=2$, $f(8)=3$, $f(32)=5$, and $f(1/8)=-3$. The product rule confirms $f(6)=f(2)+f(3)$. Solving $f(x)=3$ yields $x=8$. Finally $\\log_{2}10\\neq 2$ because $2^{2}=4\\neq 10$.",
+      "solution_overview": "Powers of two on the figure give $f(4)=2$, $f(8)=3$, $f(32)=5$, and $f(1/8)=-3$. The product rule confirms $f(6)=f(2)+f(3)$. Solving $f(x)=3$ yields the unique root $x=8$. Finally $\\log_{2}10\\neq 2$ because $2^{2}=4\\neq 10$.",
       "difficulty_level": "1/5",
       "sort_order": 45,
       "placeholder": false,
@@ -1535,13 +1535,13 @@
         false
       ],
       "tactical_explanations": [
-        "**A.** → True\n\nFrom $\\log_{b}4=2$ one gets $b^{2}=4$. With $b>0$ and $b\\neq 1$,\n\n$$b=2$$\n\nChecks: $2^{4}=16$ and $2^{-1}=1/2$.\n\nSo the statement is True.",
-        "**B.** → True\n\n$$\\log_{2}32=\\log_{2}(2^{5})=5$$\n\nSo the statement is True.",
-        "**C.** → False\n\n$$\\log_{2}(1/16)=\\log_{2}(2^{-4})=-4\\neq -3$$\n\nSo the statement is False.",
-        "**D.** → True\n\n$$\\frac{\\ln 9}{\\ln b}=\\log_{b}9=\\log_{b}(3^{2})=2\\log_{b}3$$\n\nSo the statement is True.",
-        "**E.** → False\n\nWith $b=2$, one has $b^{3}=8\\neq 6$.\n\nSo the statement is False."
+        "**A.** → True\n\nTranslate the table entry $\\log_{b}4=2$ into an exponential equation.\n\n$$b^{2}=4$$\n\nThe admissible solutions with $b>0$ and $b\\neq 1$ reduce to the single base $b=2$.\n\n$$b=2$$\n\nCross-check the other columns: $2^{4}=16$ and $2^{-1}=1/2$, matching the table exactly.\n\nSo the statement is True.",
+        "**B.** → True\n\nWith the recovered base $b=2$, write $32$ as a pure power of two.\n\n$$32=2^{5}$$\n\nApply the defining cancellation.\n\n$$\\log_{2}32=\\log_{2}(2^{5})=5$$\n\nSo the statement is True.",
+        "**C.** → False\n\nAgain with $b=2$, rewrite the reciprocal power.\n\n$$\\frac{1}{16}=2^{-4}$$\n\nThe logarithm therefore equals $-4$, not the claimed $-3$.\n\n$$\\log_{2}(1/16)=-4\\neq -3$$\n\nSo the statement is False.",
+        "**D.** → True\n\nChange of base converts the quotient of natural logs into a base-$b$ log.\n\n$$\\frac{\\ln 9}{\\ln b}=\\log_{b}9$$\n\nFactor the argument as a square and pull out the coefficient.\n\n$$\\log_{b}9=\\log_{b}(3^{2})=2\\log_{b}3$$\n\nThe two sides of the claim therefore agree for the recovered $b$.\n\nSo the statement is True.",
+        "**E.** → False\n\nSubstitute the recovered base into the cubic.\n\n$$b^{3}=2^{3}=8$$\n\nSince $8\\neq 6$, the equality $b^{3}=6$ fails.\n\nSo the statement is False."
       ],
-      "solution_overview": "The pair $(4,2)$ forces $b=2$; the other columns confirm. Then $\\log_{2}32=5$, $\\log_{2}(1/16)=-4$, and $\\ln 9/\\ln b=2\\log_{b}3$. Finally $2^{3}=8\\neq 6$.",
+      "solution_overview": "The pair $(4,2)$ forces $b^{2}=4$, and with $b>0$, $b\\neq 1$ one gets $b=2$; the columns $(16,4)$ and $(1/2,-1)$ confirm. Then $\\log_{2}32=5$, $\\log_{2}(1/16)=-4$, and $\\ln 9/\\ln b=2\\log_{b}3$. Finally $2^{3}=8\\neq 6$.",
       "difficulty_level": "2/5",
       "sort_order": 46,
       "placeholder": false,
@@ -1569,13 +1569,13 @@
         false
       ],
       "tactical_explanations": [
-        "**A.** → True\n\nOn $x>1$ both arguments are positive, so consolidate.\n\n$$\\log_{2}(x^{2}-1)=3\\implies x^{2}-1=8$$\n\nSo the statement is True.",
-        "**B.** → False\n\nFrom $x^{2}=9$ one gets $x=\\pm 3$, but the domain requires $x>1$.\n\n$$x=-3\\notin(1,\\infty)$$\n\nSo the statement is False.",
-        "**C.** → True\n\n$$x=3$$\n\nis the sole root of $x^{2}=9$ inside $(1,\\infty)$.\n\nSo the statement is True.",
-        "**D.** → True\n\n$$\\log_{2}2=1,\\qquad\\log_{2}4=2$$\n\nand $1+2=3$.\n\nSo the statement is True.",
-        "**E.** → False\n\nIf $x=\\sqrt{7}$, then $x^{2}-1=6\\neq 8$.\n\n$$\\log_{2}6\\neq 3$$\n\nSo the statement is False."
+        "**A.** → True\n\nOn the natural domain $x>1$ both $x-1$ and $x+1$ are positive, so the product rule applies.\n\n$$\\log_{2}(x-1)+\\log_{2}(x+1)=\\log_{2}(x^{2}-1)$$\n\nThe level equation $\\log_{2}(x^{2}-1)=3$ is equivalent to exponentiating with base $2$.\n\n$$x^{2}-1=2^{3}=8$$\n\nSo the statement is True.",
+        "**B.** → False\n\nThe polynomial $x^{2}-1=8$ rearranges to $x^{2}=9$, with formal roots $\\pm 3$.\n\n$$x=\\pm 3$$\n\nOnly $x>1$ is admissible for the original logs, so the negative root is excluded.\n\n$$x=-3\\notin(1,\\infty)$$\n\nThus not both candidates are solutions.\n\nSo the statement is False.",
+        "**C.** → True\n\nIntersect the algebraic roots with the domain cut $x>1$.\n\n$$\\{x:x^{2}=9\\}\\cap(1,\\infty)=\\{3\\}$$\n\nSo $x=3$ is the unique solution of the log equation on its natural domain.\n\nSo the statement is True.",
+        "**D.** → True\n\nSubstitute $x=3$ into each summand separately.\n\n$$\\log_{2}(3-1)=\\log_{2}2=1,\\qquad\\log_{2}(3+1)=\\log_{2}4=2$$\n\nThe two heights add back to the original right-hand side.\n\n$$1+2=3$$\n\nSo the statement is True.",
+        "**E.** → False\n\nIf $x=\\sqrt{7}$, then the consolidated argument is too small.\n\n$$x^{2}-1=7-1=6\\neq 8$$\n\nHence the log cannot equal $3$.\n\n$$\\log_{2}6\\neq 3$$\n\nSo the statement is False."
       ],
-      "solution_overview": "Consolidate to $\\log_{2}(x^{2}-1)=3$, hence $x^{2}-1=8$. Domain rejects $x=-3$, leaving $x=3$. At that root the summands are $1$ and $2$. The trial $\\sqrt{7}$ fails.",
+      "solution_overview": "On $x>1$ both factors are positive, so consolidate to $\\log_{2}(x^{2}-1)=3$, hence $x^{2}-1=8$. Domain rejects $x=-3$, leaving the unique root $x=3$. At that root the summands are $1$ and $2$. The trial $\\sqrt{7}$ fails because $x^{2}-1=6\\neq 8$.",
       "difficulty_level": "3/5",
       "sort_order": 47,
       "placeholder": false,
@@ -1602,13 +1602,13 @@
         false
       ],
       "tactical_explanations": [
-        "**A.** → True\n\n$$\\log_{a}b\\cdot\\log_{b}c=\\frac{\\log b}{\\log a}\\cdot\\frac{\\log c}{\\log b}=\\frac{\\log c}{\\log a}=\\log_{a}c$$\n\nSo the statement is True.",
-        "**B.** → True\n\n$$\\log_{a}b=\\frac{\\log b}{\\log a}=\\bigl(\\frac{\\log a}{\\log b}\\bigr)^{-1}=\\frac{1}{\\log_{b}a}$$\n\nSo the statement is True.",
-        "**C.** → False\n\nSet $u=\\log_{a}b>0$. Then $\\log_{b}a=1/u$, so the sum equals $u+1/u$.\n\n$$u+\\frac{1}{u}\\ge 2$$\n\nwith equality only at $u=1$ (i.e. $a=b$). For $a\\neq b$ the sum exceeds $2$, never equals $1$.\n\nSo the statement is False.",
-        "**D.** → True\n\n$$\\log_{a}b=\\frac{\\log b}{\\log a}$$\n\nSo the statement is True.",
-        "**E.** → False\n\nThe product rule produces a sum:\n\n$$\\log_{a}(bc)=\\log_{a}b+\\log_{a}c$$\n\nwhich is not the product of the two logs in general.\n\nSo the statement is False."
+        "**A.** → True\n\nWrite each factor through a common auxiliary logarithm.\n\n$$\\log_{a}b=\\frac{\\log b}{\\log a},\\qquad\\log_{b}c=\\frac{\\log c}{\\log b}$$\n\nMultiply and cancel the middle term.\n\n$$\\log_{a}b\\cdot\\log_{b}c=\\frac{\\log c}{\\log a}=\\log_{a}c$$\n\nThe chain identity therefore holds for every $a,b,c>1$.\n\nSo the statement is True.",
+        "**B.** → True\n\nAgain expand through the auxiliary base.\n\n$$\\log_{a}b=\\frac{\\log b}{\\log a}=\\left(\\frac{\\log a}{\\log b}\\right)^{-1}=\\frac{1}{\\log_{b}a}$$\n\nSo the reciprocal identity is exact whenever both logs are defined.\n\nSo the statement is True.",
+        "**C.** → False\n\nSet $u=\\log_{a}b$. Since $a\\neq b$ and both exceed $1$, one has $u>0$ and $u\\neq 1$, while $\\log_{b}a=1/u$.\n\n$$\\log_{a}b+\\log_{b}a=u+\\frac{1}{u}$$\n\nThe AM-GM bound forces the sum to be at least $2$.\n\n$$u+\\frac{1}{u}\\ge 2$$\n\nwith equality only at $u=1$ (i.e. $a=b$). For $a\\neq b$ the sum exceeds $2$ and can never equal $1$.\n\nSo the statement is False.",
+        "**D.** → True\n\nThe change-of-base formula is precisely the claimed quotient.\n\n$$\\log_{a}b=\\frac{\\log b}{\\log a}$$\n\nSo the identity holds for the fixed auxiliary base of the stem.\n\nSo the statement is True.",
+        "**E.** → False\n\nThe product rule produces a sum of logarithms, not a product.\n\n$$\\log_{a}(bc)=\\log_{a}b+\\log_{a}c$$\n\nA concrete counter-example with $a=b=c=2$ already separates the two sides: the left side is $\\log_{2}4=2$ while the product of logs is $1\\cdot 1=1$.\n\nSo the statement is False."
       ],
-      "solution_overview": "Change of base yields the chain $\\log_{a}b\\cdot\\log_{b}c=\\log_{a}c$ and the reciprocal identity. The sum $u+1/u\\ge 2$ never equals $1$ when $a\\neq b$. Products inside a log become sums of logs, not products of logs.",
+      "solution_overview": "Change of base yields the chain $\\log_{a}b\\cdot\\log_{b}c=\\log_{a}c$ and the reciprocal identity $\\log_{a}b=1/\\log_{b}a$. The sum $u+1/u\\ge 2$ never equals $1$ when $a\\neq b$. The auxiliary-base formula recovers $\\log_{a}b$, while products inside a log become sums of logs, not products of logs.",
       "difficulty_level": "4/5",
       "sort_order": 48,
       "placeholder": false,
@@ -1635,13 +1635,13 @@
         false
       ],
       "tactical_explanations": [
-        "**A.** → True\n\nInnermost $x>0$; middle $\\log_{2}x>0$ i.e. $x>1$; outer needs $\\log_{2}(\\log_{2}x)>0$.\n\n$$\\log_{2}x>1\\implies x>2$$\n\nHence the natural domain is $(2,\\infty)$.\n\nSo the statement is True.",
-        "**B.** → False\n\nPeel $65536=2^{16}$.\n\n$$\\log_{2}65536=16,\\quad\\log_{2}16=4,\\quad\\log_{2}4=2$$\n\nSo $h(65536)=2$, not $3$.\n\nSo the statement is False.",
-        "**C.** → True\n\n$$h(65536)=2$$\n\nas computed by the three-step peel.\n\nSo the statement is True.",
-        "**D.** → True\n\nSince $2^{16}=65536$, the same peel applies.\n\n$$h(2^{16})=2$$\n\nSo the statement is True.",
-        "**E.** → False\n\nAt $x=2$ the outer argument is $\\log_{2}(\\log_{2}2)=\\log_{2}1=0$, which is not strictly positive.\n\n$$\\log_{2}(\\log_{2}2)=0\\not>0$$\n\nSo the statement is False."
+        "**A.** → True\n\nInnermost requires $x>0$. The middle log needs a positive argument, so $\\log_{2}x>0$, i.e. $x>1$.\n\nThe outer log needs its argument strictly positive as well.\n\n$$\\log_{2}(\\log_{2}x)>0\\implies\\log_{2}x>1\\implies x>2$$\n\nIntersecting the three conditions leaves the natural domain $(2,\\infty)$.\n\nSo the statement is True.",
+        "**B.** → False\n\nBegin the peel by writing $65536$ as a power of two.\n\n$$65536=2^{16}\\implies\\log_{2}65536=16$$\n\nContinue inward.\n\n$$\\log_{2}16=4,\\qquad\\log_{2}4=2$$\n\nSo $h(65536)=2$, and the claimed value $3$ is wrong.\n\nSo the statement is False.",
+        "**C.** → True\n\nThe same three-step peel already computed the outer value.\n\n$$h(65536)=\\log_{2}(\\log_{2}(\\log_{2}65536))=2$$\n\nThus the statement that the height equals $2$ is correct.\n\nSo the statement is True.",
+        "**D.** → True\n\nSince $2^{16}=65536$, the input is identical to the previous evaluation.\n\n$$h(2^{16})=h(65536)=2$$\n\nSo the statement is True.",
+        "**E.** → False\n\nAt the proposed endpoint $x=2$ the middle log collapses.\n\n$$\\log_{2}2=1\\implies\\log_{2}(\\log_{2}2)=\\log_{2}1=0$$\n\nThe outer logarithm of $0$ is undefined, so $x=2$ lies outside the natural domain.\n\nSo the statement is False."
       ],
-      "solution_overview": "Domain forces $x>2$. Peeling $65536=2^{16}$ gives $16\\mapsto 4\\mapsto 2$, so $h(65536)=h(2^{16})=2$. The endpoint $x=2$ makes the outer argument vanish, so it is excluded.",
+      "solution_overview": "Domain forces $x>2$ because the outer logarithm needs $\\log_{2}(\\log_{2}x)>0$. Peeling $65536=2^{16}$ gives $16\\mapsto 4\\mapsto 2$, so $h(65536)=h(2^{16})=2$, not $3$. The endpoint $x=2$ makes the outer argument vanish, so it is excluded.",
       "difficulty_level": "5/5",
       "sort_order": 49,
       "placeholder": false,
@@ -1669,13 +1669,13 @@
         false
       ],
       "tactical_explanations": [
-        "**A.** → True\n\n$$81=3^{4}\\implies f(81)=4$$\n\nSo the statement is True.",
-        "**B.** → True\n\nSince $81=9^{2}$.\n\n$$\\log_{9}81=2$$\n\nSo the statement is True.",
-        "**C.** → False\n\nThe chain rule gives $\\log_{3}2\\cdot\\log_{2}9=\\log_{3}9=2$, not $1$.\n\n$$\\log_{3}9=2$$\n\nSo the statement is False.",
-        "**D.** → True\n\n$$\\log_{3}2\\cdot\\log_{2}9=\\log_{3}9=2$$\n\nSo the statement is True.",
-        "**E.** → False\n\n$$f(1/9)=\\log_{3}(3^{-2})=-2\\neq 1$$\n\nSo the statement is False."
+        "**A.** → True\n\nWrite $81$ as a pure power of the figure base.\n\n$$81=3^{4}$$\n\nApply the defining cancellation on the figure.\n\n$$f(81)=\\log_{3}(3^{4})=4$$\n\nSo the statement is True.",
+        "**B.** → True\n\nExpress $81$ as a square in base $9$.\n\n$$81=9^{2}$$\n\nThe logarithm therefore equals the exponent $2$.\n\n$$\\log_{9}81=2$$\n\nSo the statement is True.",
+        "**C.** → False\n\nThe change-of-base chain telescopes through the middle base.\n\n$$\\log_{3}2\\cdot\\log_{2}9=\\log_{3}9$$\n\nSince $9=3^{2}$, the product equals $2$, not $1$.\n\n$$\\log_{3}9=2\\neq 1$$\n\nSo the statement is False.",
+        "**D.** → True\n\nThe same telescoping identity yields the correct value.\n\n$$\\log_{3}2\\cdot\\log_{2}9=\\log_{3}9=2$$\n\nSo the statement is True.",
+        "**E.** → False\n\nRewrite the reciprocal as a negative power of three.\n\n$$\\frac{1}{9}=3^{-2}$$\n\nHence the figure height is $-2$, not $1$.\n\n$$f(1/9)=\\log_{3}(3^{-2})=-2\\neq 1$$\n\nSo the statement is False."
       ],
-      "solution_overview": "Powers of three give $f(81)=4$ and $f(1/9)=-2$. Also $\\log_{9}81=2$. The COB chain $\\log_{3}2\\cdot\\log_{2}9=\\log_{3}9=2$.",
+      "solution_overview": "Powers of three give $f(81)=4$ and $f(1/9)=-2$. Also $\\log_{9}81=2$ because $81=9^{2}$. The change-of-base chain $\\log_{3}2\\cdot\\log_{2}9=\\log_{3}9=2$, not $1$.",
       "difficulty_level": "1/5",
       "sort_order": 50,
       "placeholder": false,
@@ -1704,13 +1704,13 @@
         true
       ],
       "tactical_explanations": [
-        "**A.** → True\n\nNeed $x^{2}-1>0$, i.e. $|x|>1$.\n\n$$A=(-\\infty,-1)\\cup(1,\\infty)$$\n\nSo the statement is True.",
-        "**B.** → False\n\nFor $B$ both $x-1>0$ and $x+1>0$ are required, hence $x>1$.\n\n$$B=(1,\\infty)\\subsetneq A$$\n\nSo $A\\neq B$.\n\nSo the statement is False.",
-        "**C.** → True\n\n$$B=(1,\\infty)$$\n\nSo the statement is True.",
-        "**D.** → False\n\nTake $x=-2\\in A$. Then $\\ln(x^{2}-1)=\\ln 3$ is defined, but $\\ln(x-1)=\\ln(-3)$ is not. The sum identity cannot even be stated on all of $A$.\n\nSo the statement is False.",
-        "**E.** → True\n\nOn $B$ both factors are positive, so the product rule applies.\n\n$$\\ln(x-1)+\\ln(x+1)=\\ln((x-1)(x+1))=\\ln(x^{2}-1)$$\n\nSo the statement is True."
+        "**A.** → True\n\nThe logarithm $\\ln(x^{2}-1)$ needs a positive argument.\n\n$$x^{2}-1>0\\iff|x|>1$$\n\nWriting the two rays explicitly recovers the claimed set.\n\n$$A=(-\\infty,-1)\\cup(1,\\infty)$$\n\nSo the statement is True.",
+        "**B.** → False\n\nFor $B$ both $x-1>0$ and $x+1>0$ are required simultaneously.\n\n$$x>1\\qquad\\text{and}\\qquad x>-1\\implies x>1$$\n\nThus $B=(1,\\infty)$ is a proper subset of $A$, so the two domains are not equal.\n\n$$B\\subsetneq A$$\n\nSo the statement is False.",
+        "**C.** → True\n\nThe stricter pair of inequalities forces the right-hand ray alone.\n\n$$B=(1,\\infty)$$\n\nSo the statement is True.",
+        "**D.** → False\n\nTake the test point $x=-2\\in A$. The consolidated log is defined.\n\n$$\\ln((-2)^{2}-1)=\\ln 3$$\n\nBut the separate summand $\\ln(x-1)=\\ln(-3)$ is not real, so the sum identity cannot hold for every $x\\in A$.\n\nSo the statement is False.",
+        "**E.** → True\n\nOn $B$ both factors $x-1$ and $x+1$ are positive, so the product rule applies pointwise.\n\n$$\\ln(x-1)+\\ln(x+1)=\\ln\\bigl((x-1)(x+1)\\bigr)=\\ln(x^{2}-1)$$\n\nSo the statement is True."
       ],
-      "solution_overview": "$A$ is $|x|>1$ while $B$ is only $x>1$, so $A\\neq B$. The sum-to-product identity for $\\ln$ holds on $B$, but fails to even make sense on the left component of $A$.",
+      "solution_overview": "$A$ is the set $|x|>1$, while $B$ requires both factors positive and collapses to $x>1$, so $A\\neq B$. The sum-to-product identity for $\\ln$ holds pointwise on $B$, but on the left component of $A$ the separate summands are not even defined.",
       "difficulty_level": "2/5",
       "sort_order": 51,
       "placeholder": false,
@@ -1737,13 +1737,13 @@
         false
       ],
       "tactical_explanations": [
-        "**A.** → True\n\n$$g(-x)=\\log_{2}|-x|=\\log_{2}|x|=g(x)$$\n\nSo the statement is True.",
-        "**B.** → True\n\n$$g(8)=\\log_{2}8=3,\\qquad g(-8)=\\log_{2}8=3$$\n\nSo the statement is True.",
-        "**C.** → False\n\nEvenness destroys injectivity: $g(8)=g(-8)$ with $8\\neq -8$.\n\nSo the statement is False.",
-        "**D.** → True\n\nSolve $\\log_{2}|x|=2$, i.e. $|x|=4$.\n\n$$x\\in\\{-4,4\\}$$\n\nSo the statement is True.",
-        "**E.** → False\n\nAs $x\\to 0$, $|x|\\to 0^{+}$, so $\\log_{2}|x|\\to-\\infty$. No finite value at $0$ yields continuity.\n\nSo the statement is False."
+        "**A.** → True\n\nAbsolute value is insensitive to sign.\n\n$$|-x|=|x|\\qquad(x\\neq 0)$$\n\nTaking $\\log_{2}$ of both sides yields evenness.\n\n$$g(-x)=\\log_{2}|-x|=\\log_{2}|x|=g(x)$$\n\nSo the statement is True.",
+        "**B.** → True\n\nEvaluate at the positive eight first.\n\n$$g(8)=\\log_{2}8=\\log_{2}(2^{3})=3$$\n\nEvenness immediately gives the same height at $-8$.\n\n$$g(-8)=g(8)=3$$\n\nSo the statement is True.",
+        "**C.** → False\n\nEvenness produces distinct points with the same image.\n\n$$g(8)=g(-8)=3\\quad\\text{with}\\quad 8\\neq -8$$\n\nA function that identifies a pair of distinct inputs cannot be one-to-one on $\\mathbb{R}\\setminus\\{0\\}$.\n\nSo the statement is False.",
+        "**D.** → True\n\nSolve the level equation by exponentiating.\n\n$$\\log_{2}|x|=2\\implies|x|=2^{2}=4$$\n\nThe absolute-value equation contributes exactly two real roots.\n\n$$x\\in\\{-4,4\\}$$\n\nSo the statement is True.",
+        "**E.** → False\n\nAs $x\\to 0$ one has $|x|\\to 0^{+}$, and the logarithm diverges.\n\n$$\\log_{2}|x|\\to-\\infty$$\n\nNo finite assignment $g(0)=0$ can match that blow-down, so a continuous extension through the origin is impossible.\n\nSo the statement is False."
       ],
-      "solution_overview": "Because $g(x)=\\log_{2}|x|$, the map is even, takes the value $3$ at $\\pm 8$, fails to be injective, and solves $g(x)=2$ at exactly $\\pm 4$. It diverges as $x\\to 0$.",
+      "solution_overview": "Because $g(x)=\\log_{2}|x|$, the map is even, takes the value $3$ at both $\\pm 8$, fails to be injective on $\\mathbb{R}\\setminus\\{0\\}$, and solves $g(x)=2$ at exactly the two roots $\\pm 4$. As $x\\to 0$ the values diverge to $-\\infty$, so no continuous extension through the origin exists.",
       "difficulty_level": "3/5",
       "sort_order": 52,
       "placeholder": false,
@@ -1770,13 +1770,13 @@
         false
       ],
       "tactical_explanations": [
-        "**A.** → True\n\n$$\\Delta L=10\\log_{10}100=10\\cdot 2=20$$\n\nSo the statement is True.",
-        "**B.** → False\n\n$$\\Delta L=10\\log_{10}2$$\n\nand $\\log_{10}2\\neq 0.2$, so the increment is not $2$.\n\nSo the statement is False.",
-        "**C.** → True\n\n$$10\\log_{10}(I/I_{0})=0\\implies I/I_{0}=1\\implies I=I_{0}$$\n\nSo the statement is True.",
-        "**D.** → True\n\n$$L(I_{2})-L(I_{1})=10\\log_{10}(I_{2}/I_{1})$$\n\nSo the statement is True.",
-        "**E.** → False\n\nReplacing $I_{0}$ by $2I_{0}$ subtracts $10\\log_{10}2\\neq 0$ from $L$.\n\nSo the statement is False."
+        "**A.** → True\n\nRaising intensity by a factor of $100$ changes the level by a pure common logarithm.\n\n$$\\Delta L=10\\log_{10}\\frac{100I}{I}=10\\log_{10}100$$\n\nSince $\\log_{10}100=2$, the increment is exactly twenty.\n\n$$\\Delta L=10\\cdot 2=20$$\n\nSo the statement is True.",
+        "**B.** → False\n\nThe same difference formula with factor $2$ produces.\n\n$$\\Delta L=10\\log_{10}2$$\n\nBecause $\\log_{10}2\\neq 0.2$, the increment is not equal to $2$.\n\nSo the statement is False.",
+        "**C.** → True\n\nSet the level equal to zero and exponentiate.\n\n$$10\\log_{10}(I/I_{0})=0\\implies\\log_{10}(I/I_{0})=0$$\n\nThe unique solution of $\\log_{10}u=0$ is $u=1$.\n\n$$I/I_{0}=1\\implies I=I_{0}$$\n\nSo the statement is True.",
+        "**D.** → True\n\nExpand the two levels and cancel the common reference.\n\n$$L(I_{2})-L(I_{1})=10\\log_{10}\\frac{I_{2}}{I_{0}}-10\\log_{10}\\frac{I_{1}}{I_{0}}=10\\log_{10}\\frac{I_{2}}{I_{1}}$$\n\nThe difference depends only on the intensity ratio, not on $I_{0}$.\n\nSo the statement is True.",
+        "**E.** → False\n\nReplace $I_{0}$ by $2I_{0}$ while holding $I$ fixed.\n\n$$L_{\\mathrm{new}}=10\\log_{10}\\frac{I}{2I_{0}}=L-10\\log_{10}2$$\n\nSince $\\log_{10}2\\neq 0$, the level changes, so the claim that $L$ is unchanged fails.\n\nSo the statement is False."
       ],
-      "solution_overview": "Level shifts depend only on intensity ratios: a factor $100$ adds $20$, while a factor $2$ adds $10\\log_{10}2\\neq 2$. Vanishing level forces $I=I_{0}$. Changing $I_{0}$ moves $L$.",
+      "solution_overview": "Level shifts depend only on intensity ratios: a factor $100$ adds $20$, while a factor $2$ adds $10\\log_{10}2\\neq 2$. Vanishing level forces $I=I_{0}$. The difference $L(I_{2})-L(I_{1})$ cancels $I_{0}$, but doubling $I_{0}$ alone shifts $L$ by $-10\\log_{10}2$.",
       "difficulty_level": "4/5",
       "sort_order": 53,
       "placeholder": false,
@@ -1803,13 +1803,13 @@
         false
       ],
       "tactical_explanations": [
-        "**A.** → True\n\nCauchy's equation with continuity yields $f(x)=c\\log_{2}x$; the seed $f(2)=3$ forces $c=3$.\n\n$$f(x)=3\\log_{2}x$$\n\nSo the statement is True.",
-        "**B.** → False\n\n$$f(8)=3\\log_{2}(2^{3})=9\\neq 3$$\n\nSo the statement is False.",
-        "**C.** → True\n\n$$f(8)=9$$\n\nSo the statement is True.",
-        "**D.** → True\n\n$$f(1/2)=3\\log_{2}(2^{-1})=-3$$\n\nSo the statement is True.",
-        "**E.** → False\n\n$$f(4)=3\\log_{2}(2^{2})=6\\neq 4$$\n\nSo the statement is False."
+        "**A.** → True\n\nEvery continuous solution of $f(xy)=f(x)+f(y)$ on $(0,\\infty)$ is a scalar multiple of a fixed logarithm.\n\n$$f(x)=c\\log_{2}x$$\n\nFeed in the seed $f(2)=3$.\n\n$$c\\log_{2}2=c=3$$\n\nHence $f(x)=3\\log_{2}x$ for every $x>0$.\n\nSo the statement is True.",
+        "**B.** → False\n\nEvaluate the rebuilt rule at $x=8=2^{3}$.\n\n$$f(8)=3\\log_{2}(2^{3})=3\\cdot 3=9$$\n\nThe claimed height $3$ is therefore wrong.\n\nSo the statement is False.",
+        "**C.** → True\n\nThe same evaluation already produced the correct height.\n\n$$f(8)=9$$\n\nSo the statement is True.",
+        "**D.** → True\n\nRewrite the reciprocal as a negative power of two.\n\n$$\\frac{1}{2}=2^{-1}$$\n\nApply the rebuilt rule.\n\n$$f(1/2)=3\\log_{2}(2^{-1})=3\\cdot(-1)=-3$$\n\nSo the statement is True.",
+        "**E.** → False\n\nAt $x=4=2^{2}$ the rebuilt rule gives six, not four.\n\n$$f(4)=3\\log_{2}(2^{2})=3\\cdot 2=6\\neq 4$$\n\nSo the statement is False."
       ],
-      "solution_overview": "Continuity plus the multiplicative Cauchy equation give $f(x)=c\\log_{2}x$; the seed $f(2)=3$ forces $c=3$. Then $f(8)=9$, $f(1/2)=-3$, and $f(4)=6$.",
+      "solution_overview": "Continuity plus the multiplicative Cauchy equation force $f(x)=c\\log_{2}x$; the seed $f(2)=3$ fixes $c=3$. Then $f(8)=9$, $f(1/2)=-3$, and $f(4)=6$, so the rival values $3$ and $4$ fail.",
       "difficulty_level": "5/5",
       "sort_order": 54,
       "placeholder": false,
@@ -1836,13 +1836,13 @@
         false
       ],
       "tactical_explanations": [
-        "**A.** → True\n\nThe map $x\\mapsto\\log_{1/2}x$ is strictly decreasing, with inverse $t\\mapsto(1/2)^{t}$.\n\n$$\\log_{1/2}x>-2\\iff x<(1/2)^{-2}=4$$\n\nIntersect with $x>0$ to obtain $(0,4)$.\n\nSo the statement is True.",
-        "**B.** → False\n\nThat ray would fit a base larger than $1$. Here the base is $1/2$, so $x>4$ is wrong.\n\nSo the statement is False.",
-        "**C.** → True\n\n$$\\log_{1/2}2=-1>-2$$\n\nSo the statement is True.",
-        "**D.** → True\n\n$$\\log_{1/2}8=-3\\not>-2$$\n\nSo the statement is True.",
-        "**E.** → False\n\nAt $x=4$ one has $\\log_{1/2}4=-2$, which fails the strict inequality.\n\nSo the statement is False."
+        "**A.** → True\n\nBases in $(0,1)$ reverse inequalities when the exponential is applied. The inverse of $t\\mapsto\\log_{1/2}t$ is $t\\mapsto(1/2)^{t}$.\n\n$$\\log_{1/2}x>-2\\iff x<(1/2)^{-2}$$\n\nCompute the threshold power.\n\n$$(1/2)^{-2}=2^{2}=4$$\n\nIntersect with the natural domain $x>0$ to obtain the open interval $(0,4)$.\n\nSo the statement is True.",
+        "**B.** → False\n\nThe ray $x>4$ would solve $\\log_{b}x>-2$ for a base $b>1$, where the logarithm is increasing.\n\nHere the base is $1/2\\in(0,1)$, so the inequality flips and $x>4$ is the complementary error set, not the solution.\n\nSo the statement is False.",
+        "**C.** → True\n\nEvaluate the half-base log at $x=2$.\n\n$$\\log_{1/2}2=-1$$\n\nSince $-1>-2$, the point $x=2$ lies in the solution set.\n\nSo the statement is True.",
+        "**D.** → True\n\nEvaluate at $x=8=2^{3}=(1/2)^{-3}$.\n\n$$\\log_{1/2}8=-3$$\n\nBecause $-3\\not>-2$, the point $x=8$ fails the inequality.\n\nSo the statement is True.",
+        "**E.** → False\n\nAt the boundary $x=4$ the logarithm meets the threshold exactly.\n\n$$\\log_{1/2}4=-2$$\n\nA strict inequality excludes its boundary, so $x=4$ is not a solution.\n\nSo the statement is False."
       ],
-      "solution_overview": "Because the base lies in $(0,1)$, $\\log_{1/2}x>-2$ flips to $x<4$, hence $(0,4)$. Checks: $x=2$ works, $x=8$ fails, and the endpoint $x=4$ is excluded by strictness.",
+      "solution_overview": "Because the base lies in $(0,1)$, the map $x\\mapsto\\log_{1/2}x$ is strictly decreasing, so $\\log_{1/2}x>-2$ flips to $x<4$ and intersects $x>0$ in $(0,4)$. Checks: $x=2$ works, $x=8$ fails, and the endpoint $x=4$ is excluded by strictness.",
       "difficulty_level": "1/5",
       "sort_order": 55,
       "placeholder": false,
@@ -1869,13 +1869,13 @@
         false
       ],
       "tactical_explanations": [
-        "**A.** → True\n\n$$\\log_{4}x=\\frac{\\log_{2}x}{\\log_{2}4}=\\frac{f(x)}{2}$$\n\nhence $f=2g$ identically on $(0,\\infty)$.\n\nSo the statement is True.",
-        "**B.** → True\n\n$$f(16)=\\log_{2}(2^{4})=4,\\qquad g(16)=\\log_{4}(4^{2})=2$$\n\nSo the statement is True.",
-        "**C.** → False\n\nFrom $f=2g$, equality $f=g$ forces $g=0$.\n\n$$g(x)=0\\iff x=1$$\n\nSo the identity fails on $(1,\\infty)$.\n\nSo the statement is False.",
-        "**D.** → True\n\n$$2g(x)=g(x)\\implies g(x)=0\\implies x=1$$\n\nSo the statement is True.",
-        "**E.** → False\n\n$$g(8)=\\frac{\\log_{2}8}{2}=\\frac{3}{2}\\neq 2$$\n\nSo the statement is False."
+        "**A.** → True\n\nExpress the base-$4$ log through base $2$.\n\n$$g(x)=\\log_{4}x=\\frac{\\log_{2}x}{\\log_{2}4}=\\frac{f(x)}{2}$$\n\nRearrangement gives the exact scaling claimed.\n\n$$f(x)=2g(x)\\qquad(x>0)$$\n\nSo the statement is True.",
+        "**B.** → True\n\nWrite $16$ as a power in each base.\n\n$$16=2^{4}=4^{2}$$\n\nRead off the two heights.\n\n$$f(16)=4,\\qquad g(16)=2$$\n\nSo the statement is True.",
+        "**C.** → False\n\nFrom the identity $f=2g$, the equality $f=g$ forces $g=0$.\n\n$$g(x)=0\\iff\\log_{4}x=0\\iff x=1$$\n\nOn the ray $(1,\\infty)$ one has $g(x)>0$, so $f(x)=2g(x)>g(x)$. The identity $f=g$ fails there.\n\nSo the statement is False.",
+        "**D.** → True\n\nSolve $f(x)=g(x)$ using $f=2g$.\n\n$$2g(x)=g(x)\\implies g(x)=0\\implies x=1$$\n\nThe unique positive solution is therefore $x=1$.\n\nSo the statement is True.",
+        "**E.** → False\n\nReduce $g(8)$ through the scaling identity.\n\n$$g(8)=\\frac{f(8)}{2}=\\frac{\\log_{2}8}{2}=\\frac{3}{2}$$\n\nSince $3/2\\neq 2$, the claim fails.\n\nSo the statement is False."
       ],
-      "solution_overview": "Change of base yields $f=2g$ everywhere. Concrete checks: $f(16)=4$, $g(16)=2$, and $g(8)=3/2$. Equality $f=g$ holds only at $x=1$.",
+      "solution_overview": "Change of base yields $f(x)=2g(x)$ identically on $(0,\\infty)$. Concrete checks: $f(16)=4$, $g(16)=2$, and $g(8)=3/2$. Equality $f=g$ forces $g=0$, hence only $x=1$.",
       "difficulty_level": "2/5",
       "sort_order": 56,
       "placeholder": false,
@@ -1903,13 +1903,13 @@
         false
       ],
       "tactical_explanations": [
-        "**A.** → True\n\nFrom $t=0$ to $t=2$: $y(2)/y(0)=32/8=4=e^{2k}$.\n\n$$2k=\\ln 4\\implies k=\\ln 2$$\n\nCheck at $t=5$: $8\\cdot e^{5\\ln 2}=8\\cdot 32=256$.\n\nSo the statement is True.",
-        "**B.** → False\n\nThe same recovery gives $k=\\ln 2$, not $\\ln 4$ (that would be $2k$).\n\nSo the statement is False.",
-        "**C.** → True\n\n$$T_{\\times 2}=\\frac{\\ln 2}{k}=\\frac{\\ln 2}{\\ln 2}=1$$\n\nSo the statement is True.",
-        "**D.** → True\n\n$$y(4)=8\\cdot e^{4\\ln 2}=8\\cdot 16=128=y(0)\\cdot 16$$\n\nSo the statement is True.",
-        "**E.** → False\n\nSince $\\ln 2\\approx 0.693<1$, one has $k<1$.\n\nSo the statement is False."
+        "**A.** → True\n\nForm the growth factor between the first two table columns.\n\n$$\\frac{y(2)}{y(0)}=\\frac{32}{8}=4=e^{2k}$$\n\nTake the natural log and divide by the time gap.\n\n$$2k=\\ln 4=2\\ln 2\\implies k=\\ln 2$$\n\nCross-check at $t=5$: $8\\cdot e^{5\\ln 2}=8\\cdot 32=256$, matching the table.\n\nSo the statement is True.",
+        "**B.** → False\n\nThe same recovery produces $k=\\ln 2$. The value $\\ln 4$ equals $2k$, not $k$.\n\n$$\\ln 4=2\\ln 2\\neq\\ln 2$$\n\nSo the statement is False.",
+        "**C.** → True\n\nDoubling time solves $e^{kT}=2$.\n\n$$T=\\frac{\\ln 2}{k}=\\frac{\\ln 2}{\\ln 2}=1$$\n\nSo the statement is True.",
+        "**D.** → True\n\nAdvance four units from the initial height.\n\n$$y(4)=8\\cdot e^{4\\ln 2}=8\\cdot 2^{4}=8\\cdot 16=128$$\n\nSince $y(0)=8$, this is exactly a sixteen-fold rise.\n\n$$y(4)=y(0)\\cdot 16$$\n\nSo the statement is True.",
+        "**E.** → False\n\nCompare the recovered force with the threshold $1$.\n\n$$\\ln 2\\approx 0.693<1$$\n\nHence $k>1$ fails.\n\nSo the statement is False."
       ],
-      "solution_overview": "From $e^{2k}=4$ recover $k=\\ln 2$. Doubling time is $1$. Then $y(4)=8\\cdot 16=128=y(0)\\cdot 16$, while $k=\\ln 2<1$.",
+      "solution_overview": "From $y(2)/y(0)=4=e^{2k}$ recover $k=\\ln 2$. Doubling time is $(\\ln 2)/k=1$. Then $y(4)=8\\cdot 16=128=y(0)\\cdot 16$, while $k=\\ln 2<1$, so neither $k=\\ln 4$ nor $k>1$ holds.",
       "difficulty_level": "3/5",
       "sort_order": 57,
       "placeholder": false,
@@ -1937,13 +1937,13 @@
         false
       ],
       "tactical_explanations": [
-        "**A.** → True\n\nSince $\\log_{4}x=\\log_{2}x/2$,\n\n$$\\log_{2}x+\\frac{1}{2}\\log_{2}x=\\frac{3}{2}\\log_{2}x=6$$\n\nSo the statement is True.",
-        "**B.** → True\n\n$$\\log_{2}x=4\\implies x=2^{4}=16$$\n\nSo the statement is True.",
-        "**C.** → False\n\nIf $x=64$, then $\\log_{2}64=6$ and $\\log_{4}64=3$, so the sum is $9\\neq 6$.\n\nSo the statement is False.",
-        "**D.** → True\n\n$$\\log_{2}16=4,\\qquad\\log_{4}16=2$$\n\nSo the statement is True.",
-        "**E.** → False\n\nAt $x=16$ one has $4\\neq 2$, so the two logs are not equal.\n\nSo the statement is False."
+        "**A.** → True\n\nChange of base converts the second summand.\n\n$$\\log_{4}x=\\frac{\\log_{2}x}{\\log_{2}4}=\\frac{1}{2}\\log_{2}x$$\n\nAdd the two contributions.\n\n$$\\log_{2}x+\\frac{1}{2}\\log_{2}x=\\frac{3}{2}\\log_{2}x=6$$\n\nSo the original equation is equivalent to that reduced scalar equation.\n\nSo the statement is True.",
+        "**B.** → True\n\nSolve the reduced equation for the base-$2$ log.\n\n$$\\log_{2}x=6\\cdot\\frac{2}{3}=4$$\n\nExponentiate with base $2$.\n\n$$x=2^{4}=16$$\n\nUniqueness follows from bijectivity of $\\log_{2}$ on $(0,\\infty)$.\n\nSo the statement is True.",
+        "**C.** → False\n\nSubstitute the trial $x=64=2^{6}$.\n\n$$\\log_{2}64=6,\\qquad\\log_{4}64=3$$\n\nThe sum is $9$, not $6$, so $x=64$ is not a root.\n\nSo the statement is False.",
+        "**D.** → True\n\nAt the genuine root $x=16$ read each summand.\n\n$$\\log_{2}16=4,\\qquad\\log_{4}16=2$$\n\nThose are exactly the claimed heights.\n\nSo the statement is True.",
+        "**E.** → False\n\nCompare the two heights already computed at $x=16$.\n\n$$4\\neq 2$$\n\nSo $\\log_{4}x=\\log_{2}x$ fails at the solution.\n\nSo the statement is False."
       ],
-      "solution_overview": "Reduce $\\log_{4}x=\\tfrac12\\log_{2}x$ to obtain $\\tfrac32\\log_{2}x=6$, hence $\\log_{2}x=4$ and $x=16$. Checks: summands $4$ and $2$; $x=64$ overshoots.",
+      "solution_overview": "Reduce $\\log_{4}x=\\tfrac12\\log_{2}x$ to obtain $\\tfrac32\\log_{2}x=6$, hence $\\log_{2}x=4$ and $x=16$. At that root the summands are $4$ and $2$. The trial $x=64$ overshoots with sum $9$, and the two logs are not equal.",
       "difficulty_level": "4/5",
       "sort_order": 58,
       "placeholder": false,
@@ -1970,13 +1970,13 @@
         false
       ],
       "tactical_explanations": [
-        "**A.** → True\n\nExpand by the product and power rules.\n\n$$S=\\log_{a}(u^{2}v)=2\\log_{a}u+\\log_{a}v$$\n\nSo the statement is True.",
-        "**B.** → False\n\nExpand the difference.\n\n$$S-T=(2\\log_{a}u+\\log_{a}v)-(\\log_{a}u-\\log_{a}v)=\\log_{a}u+2\\log_{a}v$$\n\nThis equals $3\\log_{a}v$ for every triple only if $\\log_{a}u=\\log_{a}v$, which fails in general.\n\nSo the statement is False.",
-        "**C.** → False\n\nThe same expansion $S-T=\\log_{a}u+2\\log_{a}v$ equals $3\\log_{a}u$ for every triple only if $u=v$.\n\nSo the statement is False.",
-        "**D.** → True\n\nWhen $u=v>1$,\n\n$$S=2\\log_{a}u+\\log_{a}u=3\\log_{a}u,\\qquad T=\\log_{a}1=0$$\n\nSo the statement is True.",
-        "**E.** → False\n\nWhen $u=v$, one has $S=3\\log_{a}u>0=T$, so $S\\neq T$.\n\nSo the statement is False."
+        "**A.** → True\n\nExpand $S$ by the product and power rules.\n\n$$S=\\log_{a}(u^{2}v)=\\log_{a}(u^{2})+\\log_{a}v=2\\log_{a}u+\\log_{a}v$$\n\nThe identity holds for every $a,u,v>1$.\n\nSo the statement is True.",
+        "**B.** → False\n\nExpand $T$ and form the difference.\n\n$$T=\\log_{a}(u/v)=\\log_{a}u-\\log_{a}v$$\n\n$$S-T=(2\\log_{a}u+\\log_{a}v)-(\\log_{a}u-\\log_{a}v)=\\log_{a}u+2\\log_{a}v$$\n\nEquality with $3\\log_{a}v$ for every triple would force $\\log_{a}u=\\log_{a}v$, which fails as soon as $u\\neq v$.\n\nSo the statement is False.",
+        "**C.** → False\n\nThe same expansion $S-T=\\log_{a}u+2\\log_{a}v$ equals $3\\log_{a}u$ for every triple only if $\\log_{a}v=\\log_{a}u$, i.e. only on the slice $u=v$, not universally.\n\nSo the statement is False.",
+        "**D.** → True\n\nSpecialise to $u=v>1$.\n\n$$S=2\\log_{a}u+\\log_{a}u=3\\log_{a}u$$\n\n$$T=\\log_{a}(u/u)=\\log_{a}1=0$$\n\nBoth claimed evaluations therefore hold on that slice.\n\nSo the statement is True.",
+        "**E.** → False\n\nWhen $u=v>1$ one has $S=3\\log_{a}u>0$ while $T=0$, so the two readings are unequal.\n\n$$S\\neq T$$\n\nSo the statement is False."
       ],
-      "solution_overview": "$S=2\\log_{a}u+\\log_{a}v$ and $S-T=\\log_{a}u+2\\log_{a}v$. Neither $3\\log_{a}v$ nor $3\\log_{a}u$ matches that difference for every triple. When $u=v$, one gets $S=3\\log_{a}u$ and $T=0$.",
+      "solution_overview": "$S=2\\log_{a}u+\\log_{a}v$ and $S-T=\\log_{a}u+2\\log_{a}v$. Neither $3\\log_{a}v$ nor $3\\log_{a}u$ matches that difference for every triple. When $u=v$, one gets $S=3\\log_{a}u$ and $T=0$, so $S\\neq T$.",
       "difficulty_level": "5/5",
       "sort_order": 59,
       "placeholder": false,
@@ -2003,13 +2003,13 @@
         false
       ],
       "tactical_explanations": [
-        "**A.** → True\n\nApply $2^{(\\cdot)}$ to both sides.\n\n$$\\log_{3}x=2^{1}=2$$\n\nSo the statement is True.",
-        "**B.** → True\n\n$$x=3^{2}=9$$\n\nSo the statement is True.",
-        "**C.** → False\n\nAt $x=3$, $\\log_{3}3=1$ and $\\log_{2}1=0\\neq 1$.\n\nSo the statement is False.",
-        "**D.** → False\n\nThe outer log needs $\\log_{3}x>0$, i.e. $x>1$, not $x>3$.\n\n$$x>1$$\n\nSo the statement is False.",
-        "**E.** → False\n\nAt $x=81$, $\\log_{3}81=4$ and $\\log_{2}4=2\\neq 1$.\n\nSo the statement is False."
+        "**A.** → True\n\nApply the exponential of base $2$ to both sides of $\\log_{2}(\\log_{3}x)=1$.\n\n$$\\log_{3}x=2^{1}=2$$\n\nThat is exactly the forced inner level.\n\nSo the statement is True.",
+        "**B.** → True\n\nSolve $\\log_{3}x=2$ by exponentiating with base $3$.\n\n$$x=3^{2}=9$$\n\nUniqueness follows from bijectivity of $\\log_{3}$ on $(0,\\infty)$, intersected with the outer domain.\n\nSo the statement is True.",
+        "**C.** → False\n\nAt the trial $x=3$ the inner log equals $1$.\n\n$$\\log_{3}3=1,\\qquad\\log_{2}1=0\\neq 1$$\n\nSo $x=3$ does not solve the nested equation.\n\nSo the statement is False.",
+        "**D.** → False\n\nThe outer logarithm requires a positive argument, i.e. $\\log_{3}x>0$.\n\n$$\\log_{3}x>0\\iff x>3^{0}=1$$\n\nThe natural domain is therefore $x>1$, not the stricter cut $x>3$.\n\nSo the statement is False.",
+        "**E.** → False\n\nAt $x=81=3^{4}$ the inner height is $4$.\n\n$$\\log_{3}81=4,\\qquad\\log_{2}4=2\\neq 1$$\n\nSo $x=81$ overshoots the outer target.\n\nSo the statement is False."
       ],
-      "solution_overview": "Exponentiate to get $\\log_{3}x=2$, hence $x=9$. Domain is $x>1$ (not $x>3$). The trials $x=3$ and $x=81$ fail the outer evaluation.",
+      "solution_overview": "Exponentiate once to get $\\log_{3}x=2$, hence $x=9$. The natural domain of the left-hand side is $x>1$ (not $x>3$). The trials $x=3$ and $x=81$ fail the outer evaluation.",
       "difficulty_level": "1/5",
       "sort_order": 60,
       "placeholder": false,
@@ -2036,13 +2036,13 @@
         false
       ],
       "tactical_explanations": [
-        "**A.** → True\n\n$$f(6)=\\log_{2}(4)=2$$\n\nSo the statement is True.",
-        "**B.** → True\n\n$$f(4)=\\log_{2}(2)=1$$\n\nSo the statement is True.",
-        "**C.** → False\n\nSolve $\\log_{2}(x-2)=3\\Rightarrow x-2=8\\Rightarrow x=10$, not $8$.\n\nSo the statement is False.",
-        "**D.** → True\n\n$$x-2=2^{3}=8\\implies x=10$$\n\nSo the statement is True.",
-        "**E.** → False\n\n$$f(3)=\\log_{2}(1)=0\\neq 1$$\n\nSo the statement is False."
+        "**A.** → True\n\nSubstitute the marked abscissa into the shifted rule.\n\n$$f(6)=\\log_{2}(6-2)=\\log_{2}4$$\n\nSince $4=2^{2}$, the height equals $2$.\n\n$$f(6)=2$$\n\nSo the statement is True.",
+        "**B.** → True\n\nThe same shift at $x=4$ leaves a pure power of two.\n\n$$f(4)=\\log_{2}(4-2)=\\log_{2}2=1$$\n\nSo the statement is True.",
+        "**C.** → False\n\nSolve $\\log_{2}(x-2)=3$ by exponentiating.\n\n$$x-2=2^{3}=8\\implies x=10$$\n\nThe candidate $x=8$ would require $x-2=6$, and $\\log_{2}6\\neq 3$, so $x=8$ is not a root.\n\nSo the statement is False.",
+        "**D.** → True\n\nThe same exponential step produces the correct root.\n\n$$x-2=8\\implies x=10$$\n\nSo the statement is True.",
+        "**E.** → False\n\nAt $x=3$ the shifted argument collapses to $1$.\n\n$$f(3)=\\log_{2}(3-2)=\\log_{2}1=0$$\n\nSince $0\\neq 1$, the claim fails.\n\nSo the statement is False."
       ],
-      "solution_overview": "Shift then evaluate: $f(6)=2$, $f(4)=1$, $f(3)=0$. Solving $f(x)=3$ yields $x=10$.",
+      "solution_overview": "Shift then evaluate: $f(6)=\\log_{2}4=2$, $f(4)=\\log_{2}2=1$, and $f(3)=\\log_{2}1=0$. Solving $f(x)=3$ yields $x-2=8$, hence $x=10$, not $x=8$.",
       "difficulty_level": "2/5",
       "sort_order": 61,
       "placeholder": false,
@@ -2070,11 +2070,11 @@
         false
       ],
       "tactical_explanations": [
-        "**A.** → True\n\nOn $x>1$ both factors are positive, so the product rule applies.\n\n$$\\log_{a}\\bigl((x-1)(x+1)\\bigr)=\\log_{a}8\\implies x^{2}-1=8$$\n\nSo the statement is True.",
-        "**B.** → False\n\nThe polynomial $x^{2}=9$ has roots $\\pm 3$, but $x=-3$ lies outside $x>1$, and at $x=-3$ the summands $\\log_{a}(x-1)$ are undefined in $\\mathbb{R}$.\n\nSo the statement is False.",
-        "**C.** → True\n\n$$x=3$$\n\nis the sole root of $x^{2}=9$ inside $(1,\\infty)$.\n\nSo the statement is True.",
-        "**D.** → True\n\nIndependently of $a>1$,\n\n$$\\log_{a}2+\\log_{a}4=\\log_{a}8$$\n\nbecause $2\\cdot 4=8$.\n\nSo the statement is True.",
-        "**E.** → False\n\n$x=-3$ fails the domain $x>1$.\n\nSo the statement is False."
+        "**A.** → True\n\nOn $x>1$ both factors are positive, so the product rule applies.\n\n$$\\log_{a}(x-1)+\\log_{a}(x+1)=\\log_{a}\\bigl((x-1)(x+1)\\bigr)=\\log_{a}(x^{2}-1)$$\n\nInjectivity of $\\log_{a}$ converts equality with $\\log_{a}8$ into a polynomial relation.\n\n$$x^{2}-1=8$$\n\nSo the statement is True.",
+        "**B.** → False\n\nThe polynomial $x^{2}=9$ has roots $\\pm 3$, but only $x>1$ is admissible for the log equation.\n\nAt $x=-3$ the summand $\\log_{a}(x-1)=\\log_{a}(-4)$ is not real, so not every algebraic root solves the log equation.\n\nSo the statement is False.",
+        "**C.** → True\n\nIntersect $x^{2}=9$ with the domain cut.\n\n$$\\{x:x^{2}=9\\}\\cap(1,\\infty)=\\{3\\}$$\n\nHence $x=3$ is the unique solution on $x>1$.\n\nSo the statement is True.",
+        "**D.** → True\n\nIndependently of the concrete base $a>1$, the product rule gives.\n\n$$\\log_{a}2+\\log_{a}4=\\log_{a}(2\\cdot 4)=\\log_{a}8$$\n\nThat is exactly the evaluation at $x=3$.\n\nSo the statement is True.",
+        "**E.** → False\n\nThe candidate $x=-3$ lies outside the domain $x>1$, so it cannot solve the log equation there.\n\nSo the statement is False."
       ],
       "solution_overview": "On $x>1$ consolidate to $x^{2}-1=8$. Domain rejects $x=-3$, leaving $x=3$. At that root the sum identity $\\log_{a}2+\\log_{a}4=\\log_{a}8$ holds for every $a>1$.",
       "difficulty_level": "3/5",
@@ -2103,13 +2103,13 @@
         false
       ],
       "tactical_explanations": [
-        "**A.** → True\n\nLeft limit: $\\lim_{x\\to 1^{-}}(2^{x}-2)=0$. Right/value: $\\log_{2}1=0$. They agree.\n\nSo the statement is True.",
-        "**B.** → True\n\n$$p(1)=\\log_{2}1=0$$\n\nSo the statement is True.",
-        "**C.** → False\n\n$$p(0)=2^{0}-2=-1\\neq 0$$\n\nSo the statement is False.",
-        "**D.** → True\n\n$$p(1/2)=2^{1/2}-2=\\sqrt{2}-2$$\n\nSo the statement is True.",
-        "**E.** → False\n\n$$p(4)=\\log_{2}4=2\\neq 3$$\n\nSo the statement is False."
+        "**A.** → True\n\nCompute the left-hand limit from the exponential branch.\n\n$$\\lim_{x\\to 1^{-}}p(x)=\\lim_{x\\to 1^{-}}(2^{x}-2)=2^{1}-2=0$$\n\nThe right-hand value from the log branch agrees.\n\n$$p(1)=\\log_{2}1=0$$\n\nMatching one-sided limits give continuity at the knot $x=1$.\n\nSo the statement is True.",
+        "**B.** → True\n\nOn the log branch at the knot itself.\n\n$$p(1)=\\log_{2}1=0$$\n\nSo the statement is True.",
+        "**C.** → False\n\nAt the left endpoint of the exponential branch.\n\n$$p(0)=2^{0}-2=1-2=-1$$\n\nSo the claimed height $0$ is wrong.\n\nSo the statement is False.",
+        "**D.** → True\n\nSubstitute $x=1/2$ into the exponential piece.\n\n$$p(1/2)=2^{1/2}-2=\\sqrt{2}-2$$\n\nSo the statement is True.",
+        "**E.** → False\n\nOn the log branch at $x=4$.\n\n$$p(4)=\\log_{2}4=\\log_{2}(2^{2})=2$$\n\nSince $2\\neq 3$, the claim fails.\n\nSo the statement is False."
       ],
-      "solution_overview": "The two branches meet at $0$ when $x=1$, so $p$ is continuous there with $p(1)=0$. Then $p(0)=-1$, $p(1/2)=\\sqrt{2}-2$, and $p(4)=2$.",
+      "solution_overview": "The two branches meet at height $0$ when $x=1$, so $p$ is continuous there with $p(1)=0$. Then $p(0)=-1$, $p(1/2)=\\sqrt{2}-2$, and $p(4)=\\log_{2}4=2$, not $3$.",
       "difficulty_level": "4/5",
       "sort_order": 63,
       "placeholder": false,
@@ -2136,13 +2136,13 @@
         false
       ],
       "tactical_explanations": [
-        "**A.** → True\n\n$$e^{-\\lambda T}=1/2\\implies T=\\frac{\\ln 2}{\\lambda}$$\n\nSo the statement is True.",
-        "**B.** → False\n\nWith common logs one needs $T=\\log_{10}2/(\\lambda\\log_{10}e)$, not $\\log_{10}2/\\lambda$.\n\nSo the statement is False.",
-        "**C.** → True\n\n$$m(2T)=m_{0}(e^{-\\lambda T})^{2}=m_{0}/4$$\n\nSo the statement is True.",
-        "**D.** → True\n\n$$\\ln(m(t)/m_{0})=\\ln(e^{-\\lambda t})=-\\lambda t$$\n\nSo the statement is True.",
-        "**E.** → False\n\nThe formula $T=\\ln 2/\\lambda$ is independent of $m_{0}$.\n\nSo the statement is False."
+        "**A.** → True\n\nImpose the half-life definition $m(T)=m_{0}/2$.\n\n$$m_{0}e^{-\\lambda T}=\\frac{m_{0}}{2}\\implies e^{-\\lambda T}=\\frac{1}{2}$$\n\nTake the natural log and solve for $T$.\n\n$$-\\lambda T=\\ln(1/2)=-\\ln 2\\implies T=\\frac{\\ln 2}{\\lambda}$$\n\nSo the statement is True.",
+        "**B.** → False\n\nIf one insists on common logs, change of base inserts an extra factor.\n\n$$T=\\frac{\\log_{10}2}{\\lambda\\log_{10}e}$$\n\nThe displayed formula $\\log_{10}2/\\lambda$ omits that factor, so it is false.\n\nSo the statement is False.",
+        "**C.** → True\n\nAdvance two half-lives from the initial mass.\n\n$$m(2T)=m_{0}e^{-\\lambda(2T)}=m_{0}(e^{-\\lambda T})^{2}=m_{0}\\cdot\\left(\\frac{1}{2}\\right)^{2}=\\frac{m_{0}}{4}$$\n\nSo the statement is True.",
+        "**D.** → True\n\nDivide the continuous path by $m_{0}$ and take the natural log.\n\n$$\\ln\\frac{m(t)}{m_{0}}=\\ln(e^{-\\lambda t})=-\\lambda t$$\n\nThe identity holds for every $t\\ge 0$.\n\nSo the statement is True.",
+        "**E.** → False\n\nThe recovered formula $T=\\ln 2/\\lambda$ depends only on the decay constant, not on the initial mass $m_{0}$.\n\nSo the statement is False."
       ],
-      "solution_overview": "Halving forces $T=\\ln 2/\\lambda$, independent of $m_{0}$. Two half-lives quarter the mass. The log-linearisation $\\ln(m/m_{0})=-\\lambda t$ holds for all $t\\ge 0$.",
+      "solution_overview": "Halving forces $e^{-\\lambda T}=1/2$, hence $T=\\ln 2/\\lambda$, independent of $m_{0}$. Two half-lives quarter the mass. The log-linearisation $\\ln(m/m_{0})=-\\lambda t$ holds for all $t\\ge 0$. Replacing $\\ln$ by $\\log_{10}$ without the change-of-base factor is incorrect.",
       "difficulty_level": "5/5",
       "sort_order": 64,
       "placeholder": false,
@@ -2169,13 +2169,13 @@
         false
       ],
       "tactical_explanations": [
-        "**A.** → True\n\nFrom $f(9)=2$, $b^{2}=9$, so $b=3$ (since $b>1$). Check: $3^{3}=27$ matches $f(27)=3$.\n\nSo the statement is True.",
-        "**B.** → True\n\n$$f(81)=\\log_{3}(3^{4})=4$$\n\nSo the statement is True.",
-        "**C.** → False\n\n$$f(1)=\\log_{3}1=0\\neq 1$$\n\nSo the statement is False.",
-        "**D.** → True\n\n$$f(1/3)=\\log_{3}(3^{-1})=-1$$\n\nSo the statement is True.",
-        "**E.** → False\n\nIf $b=9$, then $f(9)=1\\neq 2$.\n\nSo the statement is False."
+        "**A.** → True\n\nTranslate $f(9)=2$ into an exponential equation.\n\n$$b^{2}=9$$\n\nWith $b>1$ the unique solution is $b=3$.\n\n$$b=3$$\n\nCross-check: $3^{3}=27$ matches the second seed $f(27)=3$.\n\nSo the statement is True.",
+        "**B.** → True\n\nWith $b=3$, write $81$ as a pure power.\n\n$$81=3^{4}\\implies f(81)=\\log_{3}(3^{4})=4$$\n\nSo the statement is True.",
+        "**C.** → False\n\nEvery logarithm vanishes at argument $1$.\n\n$$f(1)=\\log_{3}1=0$$\n\nThe claimed height $1$ is therefore wrong.\n\nSo the statement is False.",
+        "**D.** → True\n\nRewrite the reciprocal as a negative power of three.\n\n$$\\frac{1}{3}=3^{-1}$$\n\n$$f(1/3)=\\log_{3}(3^{-1})=-1$$\n\nSo the statement is True.",
+        "**E.** → False\n\nIf the base were $b=9$, the first seed would fail.\n\n$$\\log_{9}9=1\\neq 2$$\n\nSo $b=9$ is incompatible with the table.\n\nSo the statement is False."
       ],
-      "solution_overview": "The seed $f(9)=2$ with $b>1$ forces $b=3$; $f(27)=3$ confirms. Then $f(81)=4$, $f(1)=0$, and $f(1/3)=-1$.",
+      "solution_overview": "The seed $f(9)=2$ with $b>1$ forces $b^{2}=9$, hence $b=3$; $f(27)=3$ confirms. Then $f(81)=4$, $f(1)=0$, and $f(1/3)=-1$. The rival base $b=9$ fails the seed.",
       "difficulty_level": "1/5",
       "sort_order": 65,
       "placeholder": false,
@@ -2202,13 +2202,13 @@
         false
       ],
       "tactical_explanations": [
-        "**A.** → True\n\n$$x-1>0\\implies x>1$$\n\nSo the statement is True.",
-        "**B.** → True\n\nBecause base $2>1$, the log is increasing.\n\n$$\\log_{2}(x-1)>2\\iff x-1>2^{2}=4$$\n\nSo the statement is True.",
-        "**C.** → True\n\n$$x>5$$\n\nSo the statement is True.",
-        "**D.** → False\n\nAt $x=5$, $\\log_{2}4=2$, which fails the strict inequality.\n\nSo the statement is False.",
-        "**E.** → False\n\n$$\\log_{2}(3-1)=\\log_{2}2=1\\not>2$$\n\nSo the statement is False."
+        "**A.** → True\n\nThe logarithm $\\log_{2}(x-1)$ needs a positive argument.\n\n$$x-1>0\\implies x>1$$\n\nThat is the natural domain of the left-hand side.\n\nSo the statement is True.",
+        "**B.** → True\n\nBecause the base $2>1$, the logarithm is strictly increasing, so inequality direction is preserved.\n\n$$\\log_{2}(x-1)>2\\iff x-1>2^{2}=4$$\n\nOn the domain $x>1$ that equivalence is exact.\n\nSo the statement is True.",
+        "**C.** → True\n\nSimplify the inequality $x-1>4$.\n\n$$x>5$$\n\nIntersecting with $x>1$ leaves the same open ray, which is the solution set.\n\nSo the statement is True.",
+        "**D.** → False\n\nAt the boundary $x=5$ the logarithm meets the threshold exactly.\n\n$$\\log_{2}(5-1)=\\log_{2}4=2$$\n\nA strict inequality excludes its boundary, so $x=5$ is not a solution.\n\nSo the statement is False.",
+        "**E.** → False\n\nSubstitute the trial $x=3$.\n\n$$\\log_{2}(3-1)=\\log_{2}2=1$$\n\nSince $1\\not>2$, the point fails.\n\nSo the statement is False."
       ],
-      "solution_overview": "Domain $x>1$ plus the increasing map $\\log_{2}$ turns the inequality into $x-1>4$, i.e. $x>5$. Endpoints and the trial $x=3$ fail.",
+      "solution_overview": "Domain $x>1$ plus the increasing map $\\log_{2}$ turns $\\log_{2}(x-1)>2$ into $x-1>4$, i.e. $x>5$. The endpoint $x=5$ and the trial $x=3$ fail the strict inequality.",
       "difficulty_level": "2/5",
       "sort_order": 66,
       "placeholder": false,
@@ -2235,13 +2235,13 @@
         false
       ],
       "tactical_explanations": [
-        "**A.** → True\n\n$$f(25)=\\log_{5}(5^{2})=2$$\n\nSo the statement is True.",
-        "**B.** → True\n\n$$f(125)=\\log_{5}(5^{3})=3$$\n\nSo the statement is True.",
-        "**C.** → False\n\nLeft side: $1+2=3$. Right side: $\\log_{5}100$. Since $5^{3}=125\\neq 100$, one has $f(100)\\neq 3$.\n\nSo the statement is False.",
-        "**D.** → True\n\n$$f(1/5)=\\log_{5}(5^{-1})=-1$$\n\nSo the statement is True.",
-        "**E.** → False\n\n$$f(x)=0\\iff x=5^{0}=1$$\n\nso the root is $x=1$, not $x=5$.\n\nSo the statement is False."
+        "**A.** → True\n\nWrite the marked abscissa as a square of the base.\n\n$$25=5^{2}$$\n\n$$f(25)=\\log_{5}(5^{2})=2$$\n\nSo the statement is True.",
+        "**B.** → True\n\nContinue one more power of five.\n\n$$125=5^{3}\\implies f(125)=\\log_{5}(5^{3})=3$$\n\nSo the statement is True.",
+        "**C.** → False\n\nThe left side is immediate from the power rule.\n\n$$f(5)+f(25)=1+2=3$$\n\nThe right side would equal $3$ only if $100=5^{3}=125$, which fails.\n\n$$f(100)=\\log_{5}100\\neq 3$$\n\nSo the statement is False.",
+        "**D.** → True\n\nRewrite the reciprocal as a negative power.\n\n$$\\frac{1}{5}=5^{-1}\\implies f(1/5)=\\log_{5}(5^{-1})=-1$$\n\nSo the statement is True.",
+        "**E.** → False\n\nSolve $f(x)=0$ by the defining property of logarithms.\n\n$$\\log_{5}x=0\\iff x=5^{0}=1$$\n\nThe unique root is $x=1$, not $x=5$ (where $f(5)=1$).\n\nSo the statement is False."
       ],
-      "solution_overview": "Powers of five give $f(25)=2$, $f(125)=3$, and $f(1/5)=-1$. The product check $f(5)+f(25)=f(125)\\neq f(100)$. The root of $f$ is $x=1$.",
+      "solution_overview": "Powers of five give $f(25)=2$, $f(125)=3$, and $f(1/5)=-1$. The product check $f(5)+f(25)=3=f(125)\\neq f(100)$. The unique root of $f$ is $x=1$, not $x=5$.",
       "difficulty_level": "3/5",
       "sort_order": 67,
       "placeholder": false,
@@ -2269,13 +2269,13 @@
         false
       ],
       "tactical_explanations": [
-        "**A.** → True\n\nFrom $\\log_{b}16=2$, $b^{2}=16$, so $b=4$ (since $b>1$). Check: $4^{1}=4$.\n\nSo the statement is True.",
-        "**B.** → True\n\n$$\\log_{4}64=\\log_{4}(4^{3})=3$$\n\nSo the statement is True.",
-        "**C.** → True\n\n$$\\log_{2}b\\cdot\\log_{b}8=\\log_{2}8$$\n\nSo the statement is True.",
-        "**D.** → True\n\n$$\\log_{2}8=3$$\n\nSo the statement is True.",
-        "**E.** → False\n\nThe recovered base is $4$, not $2$.\n\nSo the statement is False."
+        "**A.** → True\n\nTranslate $\\log_{b}16=2$ into an exponential equation.\n\n$$b^{2}=16$$\n\nWith $b>1$ the unique solution is $b=4$.\n\n$$b=4$$\n\nCross-check: $4^{1}=4$ matches the first column.\n\nSo the statement is True.",
+        "**B.** → True\n\nWrite $64$ as a cube in base $4$.\n\n$$64=4^{3}\\implies\\log_{4}64=3$$\n\nSo the statement is True.",
+        "**C.** → True\n\nThe change-of-base chain telescopes through the middle base.\n\n$$\\log_{2}b\\cdot\\log_{b}8=\\log_{2}8$$\n\nThe identity holds for the recovered $b=4$ (and indeed for every admissible middle base).\n\nSo the statement is True.",
+        "**D.** → True\n\nEvaluate the telescoped value.\n\n$$\\log_{2}8=\\log_{2}(2^{3})=3$$\n\nHence the product equals $3$.\n\nSo the statement is True.",
+        "**E.** → False\n\nThe recovered base is $4$. If $b=2$, then $\\log_{2}16=4\\neq 2$, contradicting the table.\n\nSo the statement is False."
       ],
-      "solution_overview": "From $(16,2)$ recover $b=4$. Then $\\log_{4}64=3$, and the COB chain $\\log_{2}4\\cdot\\log_{4}8=\\log_{2}8=3$.",
+      "solution_overview": "From $(16,2)$ recover $b^{2}=16$, hence $b=4$ since $b>1$. Then $\\log_{4}64=3$, and the change-of-base chain $\\log_{2}4\\cdot\\log_{4}8=\\log_{2}8=3$. The rival base $b=2$ fails the table.",
       "difficulty_level": "4/5",
       "sort_order": 68,
       "placeholder": false,
@@ -2303,13 +2303,13 @@
         false
       ],
       "tactical_explanations": [
-        "**A.** → True\n\nConsolidate by the quotient rule.\n\n$$\\log_{2}\\frac{x+3}{x}=2\\implies\\frac{x+3}{x}=4$$\n\nSo the statement is True.",
-        "**B.** → True\n\n$$x+3=4x\\implies 3=3x\\implies x=1$$\n\nSo the statement is True.",
-        "**C.** → False\n\nIf $x=3$, then $(x+3)/x=2\\neq 4$.\n\nSo the statement is False.",
-        "**D.** → False\n\n$$\\log_{2}(1+3)=\\log_{2}4=2\\neq 1$$\n\nSo the statement is False.",
-        "**E.** → False\n\nThe domain requires $x>0$, so $x=-1$ is excluded.\n\nSo the statement is False."
+        "**A.** → True\n\nOn $x>0$ both arguments of the original logs are positive (since $x+3>x>0$), so the quotient rule applies.\n\n$$\\log_{2}(x+3)-\\log_{2}x=\\log_{2}\\frac{x+3}{x}$$\n\nExponentiate the level equation with base $2$.\n\n$$\\frac{x+3}{x}=2^{2}=4$$\n\nSo the statement is True.",
+        "**B.** → True\n\nClear the denominator of the reduced equation.\n\n$$x+3=4x\\implies 3=3x\\implies x=1$$\n\nThe value $x=1$ lies in the domain $x>0$, and uniqueness follows from the linear relation.\n\nSo the statement is True.",
+        "**C.** → False\n\nSubstitute the trial $x=3$.\n\n$$\\frac{3+3}{3}=2\\neq 4$$\n\nSo $x=3$ is not a root.\n\nSo the statement is False.",
+        "**D.** → False\n\nAt the genuine root $x=1$ evaluate the first summand.\n\n$$\\log_{2}(1+3)=\\log_{2}4=2$$\n\nThe claimed height $1$ is therefore wrong.\n\nSo the statement is False.",
+        "**E.** → False\n\nThe natural domain requires $x>0$, so the negative candidate $x=-1$ is excluded before any substitution.\n\nSo the statement is False."
       ],
-      "solution_overview": "Consolidate to $(x+3)/x=4$, hence $x=1$. Trials $x=3$ and $x=-1$ fail. At the root, $\\log_{2}(x+3)=2$.",
+      "solution_overview": "Consolidate to $(x+3)/x=4$, hence $x=1$. Trials $x=3$ and $x=-1$ fail. At the root, $\\log_{2}(x+3)=\\log_{2}4=2$, not $1$.",
       "difficulty_level": "5/5",
       "sort_order": 69,
       "placeholder": false,
@@ -2336,13 +2336,13 @@
         true
       ],
       "tactical_explanations": [
-        "**A.** → True\n\n$$B=\\frac{A}{2}\\implies A=2B$$\n\nSo the statement is True.",
-        "**B.** → True\n\nFor $x>1$ one has $A=\\log_{2}x>0$, so $A=2B>B$.\n\nSo the statement is True.",
-        "**C.** → True\n\n$$A-B=\\log_{2}x-\\frac12\\log_{2}x=\\frac12\\log_{2}x$$\n\nSo the statement is True.",
-        "**D.** → False\n\nEquality would force $A=0$, i.e. $x=1$, excluded by $x>1$.\n\nSo the statement is False.",
-        "**E.** → True\n\n$$A=4\\implies x=2^{4}=16,\\qquad B=\\log_{4}16=2$$\n\nSo the statement is True."
+        "**A.** → True\n\nExpress the base-$4$ reading through base $2$.\n\n$$B=\\log_{4}x=\\frac{\\log_{2}x}{2}=\\frac{A}{2}$$\n\nRearrangement yields the exact scaling.\n\n$$A=2B\\qquad(x>1)$$\n\nSo the statement is True.",
+        "**B.** → True\n\nFor $x>1$ the base-$2$ log is strictly positive.\n\n$$A=\\log_{2}x>0$$\n\nCombined with $A=2B$ this forces $A>B$.\n\nSo the statement is True.",
+        "**C.** → True\n\nSubtract using the scaling identity.\n\n$$A-B=\\log_{2}x-\\frac{1}{2}\\log_{2}x=\\frac{1}{2}\\log_{2}x$$\n\nSo the statement is True.",
+        "**D.** → False\n\nEquality $A=B$ together with $A=2B$ would force $A=0$, i.e. $x=1$, which is excluded by the standing hypothesis $x>1$.\n\nSo the statement is False.",
+        "**E.** → True\n\nSolve $A=4$ by exponentiating.\n\n$$\\log_{2}x=4\\implies x=2^{4}=16$$\n\nThen the companion reading is immediate.\n\n$$B=\\log_{4}16=\\log_{4}(4^{2})=2$$\n\nSo the statement is True."
       ],
-      "solution_overview": "Always $A=2B$, so $A>B$ on $x>1$ with difference $\\tfrac12\\log_{2}x$. The case $A=4$ recovers $x=16$ and $B=2$.",
+      "solution_overview": "Always $A=2B$ by change of base, so $A>B$ on $x>1$ with difference $\\tfrac12\\log_{2}x$. Equality $A=B$ would force $x=1$, excluded by $x>1$. The case $A=4$ recovers $x=16$ and $B=2$.",
       "difficulty_level": "1/5",
       "sort_order": 70,
       "placeholder": false,
@@ -2369,13 +2369,13 @@
         false
       ],
       "tactical_explanations": [
-        "**A.** → True\n\nNeed $\\log_{2}x>0$, i.e. $x>1$.\n\n$$x>1$$\n\nSo the statement is True.",
-        "**B.** → False\n\n$$q(16)=\\log_{2}4=2\\neq 3$$\n\nSo the statement is False.",
-        "**C.** → True\n\n$$q(4)=\\log_{2}2=1$$\n\nSo the statement is True.",
-        "**D.** → True\n\n$$q(2)=\\log_{2}1=0$$\n\nSo the statement is True.",
-        "**E.** → False\n\nAt $x=1$, $\\log_{2}1=0$, so the outer log is undefined.\n\nSo the statement is False."
+        "**A.** → True\n\nThe outer logarithm requires a positive argument.\n\n$$\\log_{2}x>0\\implies x>2^{0}=1$$\n\nTogether with $x>0$ from the inner log, the natural domain is $(1,\\infty)$.\n\nSo the statement is True.",
+        "**B.** → False\n\nPeel $16=2^{4}$.\n\n$$q(16)=\\log_{2}(\\log_{2}16)=\\log_{2}4=2$$\n\nThe claimed height $3$ is therefore wrong.\n\nSo the statement is False.",
+        "**C.** → True\n\nPeel $4=2^{2}$.\n\n$$q(4)=\\log_{2}(\\log_{2}4)=\\log_{2}2=1$$\n\nSo the statement is True.",
+        "**D.** → True\n\nAt $x=2$ the inner log equals $1$.\n\n$$q(2)=\\log_{2}(\\log_{2}2)=\\log_{2}1=0$$\n\nSo the statement is True.",
+        "**E.** → False\n\nAt $x=1$ the inner log vanishes.\n\n$$\\log_{2}1=0$$\n\nThe outer logarithm of $0$ is undefined, so $x=1$ lies outside the natural domain.\n\nSo the statement is False."
       ],
-      "solution_overview": "Domain is $x>1$. Evaluations: $q(16)=2$, $q(4)=1$, $q(2)=0$. The endpoint $x=1$ is excluded.",
+      "solution_overview": "Domain is $x>1$ because the outer log needs $\\log_{2}x>0$. Evaluations: $q(16)=2$, $q(4)=1$, $q(2)=0$. The endpoint $x=1$ makes the outer argument vanish, so it is excluded.",
       "difficulty_level": "2/5",
       "sort_order": 71,
       "placeholder": false,
@@ -2402,13 +2402,13 @@
         false
       ],
       "tactical_explanations": [
-        "**A.** → True\n\n$$\\log_{2}(2^{5})=5$$\n\nSo the statement is True.",
-        "**B.** → True\n\n$$2^{\\log_{2}7}=7$$\n\nSo the statement is True.",
-        "**C.** → False\n\nThe left side equals $t+t=2t$, not $t$.\n\n$$t+t=2t\\neq t$$\n\nSo the statement is False.",
-        "**D.** → False\n\nA fixed point would solve $\\log_{2}x=x$, i.e. $x=2^{x}$. No $x>0$ satisfies that (e.g. at $x=2$, $1\\neq 2$).\n\nSo the statement is False.",
-        "**E.** → False\n\n$$\\log_{2}(2^{-3})=-3$$\n\nso the cancellation identity holds at $t=-3$.\n\nSo the statement is False."
+        "**A.** → True\n\nMatched base cancellation removes the exponential.\n\n$$\\log_{2}(2^{5})=5$$\n\nSo the statement is True.",
+        "**B.** → True\n\nThe inverse cancellation removes the logarithm.\n\n$$2^{\\log_{2}7}=7$$\n\nSo the statement is True.",
+        "**C.** → False\n\nEvaluate each cancellation separately for $t>0$.\n\n$$\\log_{2}(2^{t})=t,\\qquad 2^{\\log_{2}t}=t$$\n\nAdding the two identities produces $2t$, not $t$.\n\n$$t+t=2t\\neq t\\qquad(t>0)$$\n\nSo the statement is False.",
+        "**D.** → False\n\nA fixed point would solve $\\log_{2}x=x$, equivalently $x=2^{x}$.\n\nAt the trial $x=2$ one has $\\log_{2}2=1\\neq 2$. For $0<x<1$ the log is negative while $x$ is positive. No positive fixed point exists.\n\nSo the statement is False.",
+        "**E.** → False\n\nSubstitute the negative exponent $t=-3$.\n\n$$\\log_{2}(2^{-3})=\\log_{2}(1/8)=-3$$\n\nThe cancellation identity holds at $t=-3$, so the claim that it fails is false.\n\nSo the statement is False."
       ],
-      "solution_overview": "Cancellation identities give $\\log_{2}(2^{5})=5$ and $2^{\\log_{2}7}=7$. The sum of the two cancellations is $2t$, not $t$. There is no fixed point of $\\log_{2}$, and $\\log_{2}(2^{t})=t$ holds for negative $t$ as well.",
+      "solution_overview": "Cancellation identities give $\\log_{2}(2^{5})=5$ and $2^{\\log_{2}7}=7$. The sum of the two cancellations is $2t$, not $t$. There is no fixed point of $\\log_{2}$ on $(0,\\infty)$, and $\\log_{2}(2^{t})=t$ holds for negative $t$ as well.",
       "difficulty_level": "3/5",
       "sort_order": 72,
       "placeholder": false,
@@ -2436,13 +2436,13 @@
         false
       ],
       "tactical_explanations": [
-        "**A.** → True\n\n$$a^{0}=1\\implies\\log_{a}1=0$$\n\nSo the statement is True.",
-        "**B.** → False\n\nCounter-example: $a=2$, $x=1/2$ gives $\\log_{2}(1/2)=-1<0$.\n\nSo the statement is False.",
-        "**C.** → True\n\nTake $a=2$: $\\log_{2}(1/2)=-1<0$.\n\nSo the statement is True.",
-        "**D.** → True\n\nThe derivative $1/(x\\ln a)>0$ for $a>1$, $x>0$.\n\nSo the statement is True.",
-        "**E.** → False\n\n$$\\log_{a}a^{2}=2\\neq 1$$\n\nSo the statement is False."
+        "**A.** → True\n\nBy definition $a^{0}=1$ for every $a>1$.\n\n$$\\log_{a}1=0$$\n\nThe identity therefore holds for every such base.\n\nSo the statement is True.",
+        "**B.** → False\n\nPositivity of $\\log_{a}x$ requires $x>1$. A concrete counter-example kills the universal claim.\n\n$$a=2,\\quad x=\\tfrac12:\\qquad\\log_{2}\\tfrac12=-1\\not>0$$\n\nSo the statement is False.",
+        "**C.** → True\n\nExistence needs only one witness.\n\n$$a=2:\\qquad\\log_{2}\\tfrac12=-1<0$$\n\nSo such a base exists.\n\nSo the statement is True.",
+        "**D.** → True\n\nFor $a>1$ the derivative of $\\log_{a}$ is positive on $(0,\\infty)$.\n\n$$\\frac{d}{dx}\\log_{a}x=\\frac{1}{x\\ln a}>0$$\n\nHence the map is strictly increasing for every such base.\n\nSo the statement is True.",
+        "**E.** → False\n\nThe power rule produces the coefficient $2$, not $1$.\n\n$$\\log_{a}a^{2}=2\\log_{a}a=2\\neq 1$$\n\nSo the statement is False."
       ],
-      "solution_overview": "Every base satisfies $\\log_{a}1=0$ and strict increase. Positivity of $\\log_{a}x$ fails for $x<1$. Existence of a base with $\\log_{a}(1/2)<0$ is immediate. Finally $\\log_{a}a^{2}=2$, not $1$.",
+      "solution_overview": "Every base $a>1$ satisfies $\\log_{a}1=0$ and strict increase on $(0,\\infty)$. Positivity of $\\log_{a}x$ fails for $x<1$. Existence of a base with $\\log_{a}(1/2)<0$ is immediate (e.g. $a=2$). Finally $\\log_{a}a^{2}=2$, not $1$.",
       "difficulty_level": "4/5",
       "sort_order": 73,
       "placeholder": false,
@@ -2469,11 +2469,11 @@
         true
       ],
       "tactical_explanations": [
-        "**A.** → True\n\n$$\\ln(x^{2})=\\ln(|x|^{2})=2\\ln|x|=H(x)$$\n\nSo the statement is True.",
-        "**B.** → False\n\n$G$ is only defined for $x>0$, while $F$ is defined for $x<0$ as well. Even on $(0,\\infty)$ one has $F=G$, but not on all of $\\mathbb{R}\\setminus\\{0\\}$.\n\nSo the statement is False.",
-        "**C.** → True\n\n$$F(-e)=\\ln(e^{2})=2$$\n\nSo the statement is True.",
-        "**D.** → False\n\n$G(-e)=2\\ln(-e)$ is undefined in $\\mathbb{R}$.\n\nSo the statement is False.",
-        "**E.** → True\n\n$$H(-e)=2\\ln|-e|=2\\ln e=2$$\n\nSo the statement is True."
+        "**A.** → True\n\nRewrite the square through an absolute value.\n\n$$x^{2}=|x|^{2}\\qquad(x\\neq 0)$$\n\nTake the natural log and apply the power rule.\n\n$$F(x)=\\ln(x^{2})=\\ln(|x|^{2})=2\\ln|x|=H(x)$$\n\nSo the statement is True.",
+        "**B.** → False\n\n$G$ is only defined for $x>0$, while $F$ is defined for every $x\\neq 0$.\n\nOn the negatives $F$ is finite (e.g. $F(-e)=2$) while $G$ does not even make sense, so $F=G$ fails on $\\mathbb{R}\\setminus\\{0\\}$.\n\nSo the statement is False.",
+        "**C.** → True\n\nSubstitute $x=-e$ into $F$.\n\n$$F(-e)=\\ln((-e)^{2})=\\ln(e^{2})=2$$\n\nSo the statement is True.",
+        "**D.** → False\n\nThe rule $G(x)=2\\ln x$ requires a positive argument.\n\n$$x=-e<0$$\n\nHence $G(-e)$ is undefined in $\\mathbb{R}$.\n\nSo the statement is False.",
+        "**E.** → True\n\nEvaluate $H$ at the same point.\n\n$$H(-e)=2\\ln|-e|=2\\ln e=2$$\n\nSo the statement is True."
       ],
       "solution_overview": "Squaring forces $F=H=2\\ln|x|$ on $\\mathbb{R}\\setminus\\{0\\}$. The unsigned $G=2\\ln x$ cannot match $F$ on the negatives. At $x=-e$ one has $F=H=2$ while $G$ is undefined.",
       "difficulty_level": "5/5",
@@ -2502,13 +2502,13 @@
         false
       ],
       "tactical_explanations": [
-        "**A.** → True\n\n$$\\Delta\\mathrm{pH}=-\\log_{10}(c/10)-(-\\log_{10}c)=\\log_{10}10=1$$\n\nSo the statement is True.",
-        "**B.** → True\n\n$$\\mathrm{pH}=-\\log_{10}(10^{-3})=3$$\n\nSo the statement is True.",
-        "**C.** → False\n\nThe same evaluation gives $+3$, not $-3$.\n\nSo the statement is False.",
-        "**D.** → True\n\n$$\\Delta\\mathrm{pH}=-\\log_{10}(2c)+\\log_{10}c=-\\log_{10}2$$\n\nSo the statement is True.",
-        "**E.** → False\n\npH depends on $\\log_{10}[H^{+}]$, which is nonlinear in the concentration.\n\nSo the statement is False."
+        "**A.** → True\n\nWrite the new concentration as $c/10$ and form the pH difference.\n\n$$\\Delta\\mathrm{pH}=-\\log_{10}\\frac{c}{10}-\\bigl(-\\log_{10}c\\bigr)=\\log_{10}10$$\n\nSince $\\log_{10}10=1$, the pH rises by exactly one unit.\n\nSo the statement is True.",
+        "**B.** → True\n\nSubstitute the concrete concentration into the definition.\n\n$$\\mathrm{pH}=-\\log_{10}(10^{-3})=-(-3)=3$$\n\nSo the statement is True.",
+        "**C.** → False\n\nThe same evaluation produces $+3$, so the claimed value $-3$ simply drops the leading minus sign in the definition.\n\nSo the statement is False.",
+        "**D.** → True\n\nCompare pH at $2c$ with pH at $c$.\n\n$$\\Delta\\mathrm{pH}=-\\log_{10}(2c)-\\bigl(-\\log_{10}c\\bigr)=-\\log_{10}2$$\n\nDoubling concentration therefore decreases pH by $\\log_{10}2$.\n\nSo the statement is True.",
+        "**E.** → False\n\nThe map $c\\mapsto-\\log_{10}c$ is a composition of a logarithm with a sign change, which is nonlinear on $(0,\\infty)$.\n\nA linear rule would satisfy $\\mathrm{pH}(2c)=2\\,\\mathrm{pH}(c)$, but $-\\log_{10}(2c)=-\\log_{10}2-\\log_{10}c$ fails that test.\n\nSo the statement is False."
       ],
-      "solution_overview": "A tenfold drop in concentration raises pH by $1$. At $10^{-3}$ one has pH $=3$. Doubling concentration lowers pH by $\\log_{10}2$. The dependence on concentration is logarithmic, not linear.",
+      "solution_overview": "A tenfold drop in concentration raises pH by $1$. At $[H^{+}]=10^{-3}$ one has $\\mathrm{pH}=3$, not $-3$. Doubling concentration lowers pH by $\\log_{10}2$. The dependence on concentration is logarithmic, not linear.",
       "difficulty_level": "1/5",
       "sort_order": 75,
       "placeholder": false,
@@ -2535,13 +2535,13 @@
         false
       ],
       "tactical_explanations": [
-        "**A.** → True\n\nBy definition the inverse of $t\\mapsto 5^{t}$ is $x\\mapsto\\log_{5}x$.\n\nSo the statement is True.",
-        "**B.** → True\n\n$$L(25)=\\log_{5}(5^{2})=2$$\n\nSo the statement is True.",
-        "**C.** → True\n\n$$L(E(7))=7$$\n\nSo the statement is True.",
-        "**D.** → True\n\n$$E(L(9))=9$$\n\nSo the statement is True.",
-        "**E.** → False\n\n$$L(1/5)=\\log_{5}(5^{-1})=-1\\neq 1$$\n\nSo the statement is False."
+        "**A.** → True\n\nBy definition the inverse of the exponential $E(t)=5^{t}$ is the base-$5$ logarithm.\n\n$$L(x)=\\log_{5}x\\qquad(x>0)$$\n\nSo the statement is True.",
+        "**B.** → True\n\nWrite $25$ as a square of the base.\n\n$$25=5^{2}\\implies L(25)=\\log_{5}(5^{2})=2$$\n\nSo the statement is True.",
+        "**C.** → True\n\nInverse cancellation along the exponential path returns the original time.\n\n$$L(E(7))=L(5^{7})=7$$\n\nSo the statement is True.",
+        "**D.** → True\n\nThe other cancellation returns the original positive argument.\n\n$$E(L(9))=5^{\\log_{5}9}=9$$\n\nSo the statement is True.",
+        "**E.** → False\n\nRewrite the reciprocal as a negative power.\n\n$$\\frac{1}{5}=5^{-1}\\implies L(1/5)=\\log_{5}(5^{-1})=-1$$\n\nThe claimed height $1$ has the wrong sign.\n\nSo the statement is False."
       ],
-      "solution_overview": "The inverse of $5^{t}$ is $\\log_{5}$. Cancellation gives $L(E(7))=7$ and $E(L(9))=9$. Concrete values: $L(25)=2$ and $L(1/5)=-1$.",
+      "solution_overview": "The inverse of $t\\mapsto 5^{t}$ is $x\\mapsto\\log_{5}x$. Cancellation gives $L(E(7))=7$ and $E(L(9))=9$. Concrete values: $L(25)=2$ and $L(1/5)=-1$, so the rival height $1$ fails.",
       "difficulty_level": "2/5",
       "sort_order": 76,
       "placeholder": false,
@@ -2568,13 +2568,13 @@
         false
       ],
       "tactical_explanations": [
-        "**A.** → True\n\nNeed $x>0$ and $x-4>0$, hence $x>4$.\n\nSo the statement is True.",
-        "**B.** → True\n\nSince $8>4$, both arguments are positive.\n\nSo the statement is True.",
-        "**C.** → False\n\nAt $x=2$, $\\log_{2}(x-4)$ is undefined.\n\nSo the statement is False.",
-        "**D.** → True\n\n$$r(8)=\\log_{2}8\\cdot\\log_{2}4=3\\cdot 2=6$$\n\nSo the statement is True.",
-        "**E.** → False\n\n$$r(16)=\\log_{2}16\\cdot\\log_{2}12=4\\log_{2}12$$\n\nSince $\\log_{2}12\\neq 12$, one has $r(16)\\neq 48$.\n\nSo the statement is False."
+        "**A.** → True\n\nEach factor needs a positive argument.\n\n$$x>0\\qquad\\text{and}\\qquad x-4>0$$\n\nThe stricter cut is $x>4$, which is the natural domain of $r$.\n\nSo the statement is True.",
+        "**B.** → True\n\nThe test point $x=8$ satisfies $8>4$, so both $\\log_{2}8$ and $\\log_{2}4$ are defined.\n\n$$8\\in(4,\\infty)$$\n\nSo the statement is True.",
+        "**C.** → False\n\nAt $x=2$ the second argument is negative.\n\n$$x-4=2-4=-2<0$$\n\nHence $\\log_{2}(x-4)$ is undefined and $x=2$ lies outside the domain.\n\nSo the statement is False.",
+        "**D.** → True\n\nEvaluate each factor at $x=8$.\n\n$$r(8)=\\log_{2}8\\cdot\\log_{2}4=3\\cdot 2=6$$\n\nSo the statement is True.",
+        "**E.** → False\n\nAt $x=16$ the product is.\n\n$$r(16)=\\log_{2}16\\cdot\\log_{2}12=4\\log_{2}12$$\n\nEquality with $48$ would force $\\log_{2}12=12$, i.e. $12=2^{12}$, which is absurd.\n\nSo the statement is False."
       ],
-      "solution_overview": "Domain forces $x>4$. Then $r(8)=6$, while $r(16)=4\\log_{2}12\\neq 48$. The trial $x=2$ is excluded.",
+      "solution_overview": "Domain forces $x>4$ because both $x>0$ and $x-4>0$ are required. Then $r(8)=3\\cdot 2=6$, while $r(16)=4\\log_{2}12\\neq 48$. The trial $x=2$ makes $\\log_{2}(x-4)$ undefined.",
       "difficulty_level": "3/5",
       "sort_order": 77,
       "placeholder": false,
@@ -2601,13 +2601,13 @@
         false
       ],
       "tactical_explanations": [
-        "**A.** → True\n\n$$\\log_{2}16=4,\\qquad 16/4=4$$\n\nSo the statement is True.",
-        "**B.** → True\n\n$$\\log_{2}16=16/4=4$$\n\nSo the statement is True.",
-        "**C.** → False\n\n$$\\log_{2}4=2\\neq 1=4/4$$\n\nSo the statement is False.",
-        "**D.** → False\n\n$$\\log_{2}8=3\\neq 2=8/4$$\n\nSo the statement is False.",
-        "**E.** → False\n\n$$\\log_{2}2=1\\neq 1/2=2/4$$\n\nSo the statement is False."
+        "**A.** → True\n\nCompare the two heights at $x=16$.\n\n$$\\log_{2}16=4,\\qquad\\frac{16}{4}=4$$\n\nThe common value $4$ means the curves cross at that abscissa.\n\nSo the statement is True.",
+        "**B.** → True\n\nThe same substitution already showed both traces equal $4$ at $x=16$.\n\n$$\\log_{2}16=\\frac{16}{4}=4$$\n\nSo the statement is True.",
+        "**C.** → False\n\nAt $x=4$ the log height is $2$ while the ray sits at $1$.\n\n$$\\log_{2}4=2\\neq 1=\\frac{4}{4}$$\n\nSo $x=4$ is not a crossing.\n\nSo the statement is False.",
+        "**D.** → False\n\nAt $x=8$ the heights disagree.\n\n$$\\log_{2}8=3\\neq 2=\\frac{8}{4}$$\n\nSo the statement is False.",
+        "**E.** → False\n\nAt $x=2$ the heights disagree.\n\n$$\\log_{2}2=1\\neq\\tfrac12=\\frac{2}{4}$$\n\nSo the statement is False."
       ],
-      "solution_overview": "Direct substitution: $x=16$ works with common value $4$. The candidates $x=2,4,8$ all fail $\\log_{2}x=x/4$.",
+      "solution_overview": "Direct substitution: $x=16$ works because $\\log_{2}16=16/4=4$. The candidates $x=2,4,8$ all fail the crossing condition $\\log_{2}x=x/4$.",
       "difficulty_level": "4/5",
       "sort_order": 78,
       "placeholder": false,
@@ -2635,13 +2635,13 @@
         true
       ],
       "tactical_explanations": [
-        "**A.** → True\n\nAlong $y=y_{0}e^{kt}$ one has $\\ln y(t)=\\ln y_{0}+kt$, so the difference quotient recovers $k$.\n\nSo the statement is True.",
-        "**B.** → True\n\n$$\\frac{\\ln 20-\\ln 5}{2}=\\frac{\\ln 4}{2}=\\ln 2$$\n\nSo the statement is True.",
-        "**C.** → True\n\n$$y(5)/y(1)=80/5=16=e^{4\\ln 2}$$\n\nSo the statement is True.",
-        "**D.** → False\n\nThe recovered force is $\\ln 2\\approx 0.693$, not $1/2$.\n\nSo the statement is False.",
-        "**E.** → True\n\n$$\\ln y(1)=\\ln 5$$\n\nSo the statement is True."
+        "**A.** → True\n\nAlong $y=y_{0}e^{kt}$ the log-level is affine in time.\n\n$$\\ln y(t)=\\ln y_{0}+kt$$\n\nThe difference quotient between $t=1$ and $t=3$ therefore recovers the force.\n\n$$\\frac{\\ln y(3)-\\ln y(1)}{3-1}=k$$\n\nSo the statement is True.",
+        "**B.** → True\n\nInsert the table heights.\n\n$$\\frac{\\ln 20-\\ln 5}{2}=\\frac{\\ln 4}{2}=\\ln 2$$\n\nSo the continuous force equals $\\ln 2$.\n\nSo the statement is True.",
+        "**C.** → True\n\nForm the ratio of the outer columns.\n\n$$\\frac{y(5)}{y(1)}=\\frac{80}{5}=16$$\n\nAs a check, $e^{4\\ln 2}=2^{4}=16$ matches the four-unit time gap.\n\nSo the statement is True.",
+        "**D.** → False\n\nThe recovered force is $\\ln 2\\approx 0.693$, which is not equal to $1/2$.\n\n$$\\ln 2\\neq\\tfrac12$$\n\nSo the statement is False.",
+        "**E.** → True\n\nRead the middle-left table entry directly.\n\n$$\\ln y(1)=\\ln 5$$\n\nSo the statement is True."
       ],
-      "solution_overview": "Log-differences recover $k=\\ln 2$. Then $y(5)/y(1)=16$, while $k\\neq 1/2$. Also $\\ln y(1)=\\ln 5$.",
+      "solution_overview": "Log-differences recover $k=\\ln 2$ from the columns $t=1$ and $t=3$. Then $y(5)/y(1)=16$, while $k\\neq 1/2$. Also $\\ln y(1)=\\ln 5$ matches the table directly.",
       "difficulty_level": "5/5",
       "sort_order": 79,
       "placeholder": false,
@@ -2669,11 +2669,11 @@
         false
       ],
       "tactical_explanations": [
-        "**A.** → True\n\n$$P=\\frac{\\ln 3}{\\ln 2}\\cdot\\frac{\\ln 5}{\\ln 3}\\cdot\\frac{\\ln 4}{\\ln 5}=\\frac{\\ln 4}{\\ln 2}=\\log_{2}4$$\n\nSo the statement is True.",
-        "**B.** → True\n\n$$\\log_{2}4=2$$\n\nSo the statement is True.",
-        "**C.** → True\n\n$$\\log_{3}5\\cdot\\log_{5}4=\\log_{3}4$$\n\nhence $P=\\log_{2}3\\cdot\\log_{3}4$.\n\nSo the statement is True.",
-        "**D.** → False\n\nThe telescoping value is $2$, not $3$.\n\nSo the statement is False.",
-        "**E.** → False\n\n$P=2\\neq\\log_{5}2$.\n\nSo the statement is False."
+        "**A.** → True\n\nExpand every factor through natural logs and cancel.\n\n$$P=\\frac{\\ln 3}{\\ln 2}\\cdot\\frac{\\ln 5}{\\ln 3}\\cdot\\frac{\\ln 4}{\\ln 5}=\\frac{\\ln 4}{\\ln 2}=\\log_{2}4$$\n\nSo the statement is True.",
+        "**B.** → True\n\nEvaluate the telescoped logarithm.\n\n$$\\log_{2}4=\\log_{2}(2^{2})=2$$\n\nHence $P=2$.\n\nSo the statement is True.",
+        "**C.** → True\n\nCollapse the last two factors first.\n\n$$\\log_{3}5\\cdot\\log_{5}4=\\log_{3}4$$\n\nMultiplying by the remaining front factor yields the two-factor form.\n\n$$P=\\log_{2}3\\cdot\\log_{3}4$$\n\nSo the statement is True.",
+        "**D.** → False\n\nThe telescoping value is $2$, so the rival claim $P=3$ fails.\n\nSo the statement is False.",
+        "**E.** → False\n\nCompare the telescoped value with $\\log_{5}2$.\n\n$$P=2\\neq\\log_{5}2$$\n\nbecause $5^{2}=25\\neq 2$.\n\nSo the statement is False."
       ],
       "solution_overview": "The three-factor chain telescopes to $\\log_{2}4=2$. Intermediate collapse also gives $\\log_{2}3\\cdot\\log_{3}4$. The rivals $3$ and $\\log_{5}2$ fail.",
       "difficulty_level": "1/5",
@@ -2702,11 +2702,11 @@
         false
       ],
       "tactical_explanations": [
-        "**A.** → True\n\nTake $\\log_{a}$ of both sides.\n\n$$2t=3\\log_{a}c\\implies t=\\frac{3\\log_{a}c}{2}$$\n\nSo the statement is True.",
-        "**B.** → True\n\nChange of base replaces $\\log_{a}c$ by $\\ln c/\\ln a$.\n\n$$t=\\frac{3\\ln c}{2\\ln a}$$\n\nSo the statement is True.",
-        "**C.** → False\n\nIf $c=a$, then $\\log_{a}c=1$, so $t=3/2$, not $3$.\n\nSo the statement is False.",
-        "**D.** → True\n\n$$t=\\frac{3\\cdot 1}{2}=\\frac{3}{2}$$\n\nSo the statement is True.",
-        "**E.** → False\n\nIf $c=1$, then $\\log_{a}1=0$, so $t=0$, not $1$.\n\nSo the statement is False."
+        "**A.** → True\n\nTake $\\log_{a}$ of both sides of $a^{2t}=c^{3}$.\n\n$$2t=\\log_{a}(c^{3})=3\\log_{a}c$$\n\nSolve for the unknown exponent.\n\n$$t=\\frac{3\\log_{a}c}{2}$$\n\nUniqueness follows from injectivity of the exponential in the base $a>1$.\n\nSo the statement is True.",
+        "**B.** → True\n\nChange of base replaces $\\log_{a}c$ by a quotient of natural logs.\n\n$$\\log_{a}c=\\frac{\\ln c}{\\ln a}\\implies t=\\frac{3\\ln c}{2\\ln a}$$\n\nSo the statement is True.",
+        "**C.** → False\n\nIf $c=a$, then $\\log_{a}c=1$, so $t=3/2$, not $3$.\n\n$$t=\\frac{3\\cdot 1}{2}=\\frac{3}{2}\\neq 3$$\n\nSo the statement is False.",
+        "**D.** → True\n\nThe same specialisation produces the correct half-integer.\n\n$$t=\\frac{3}{2}$$\n\nSo the statement is True.",
+        "**E.** → False\n\nIf $c=1$, then $\\log_{a}1=0$, so the exponent vanishes.\n\n$$t=\\frac{3\\cdot 0}{2}=0\\neq 1$$\n\nSo the statement is False."
       ],
       "solution_overview": "Logging both sides yields $2t=3\\log_{a}c$, hence $t=3\\log_{a}c/2=3\\ln c/(2\\ln a)$. When $c=a$ one gets $t=3/2$; when $c=1$ one gets $t=0$.",
       "difficulty_level": "2/5",
@@ -2735,13 +2735,13 @@
         false
       ],
       "tactical_explanations": [
-        "**A.** → True\n\nInnermost: $\\log_{2}16=4$. Then $2^{\\log_{2}4}=4$.\n\n$$2^{\\log_{2}(\\log_{2}16)}=4$$\n\nSo the statement is True.",
-        "**B.** → False\n\nThe same peel yields $4$, not $2$.\n\nSo the statement is False.",
-        "**C.** → True\n\nWrite $10=2^{\\log_{2}10}$, so\n\n$$10^{\\log_{2}16}=(2^{\\log_{2}10})^{4}=2^{4\\log_{2}10}$$\n\nSo the statement is True.",
-        "**D.** → True\n\n$$\\log_{2}(2^{\\log_{2}3+\\log_{2}5})=\\log_{2}3+\\log_{2}5=\\log_{2}15$$\n\nSo the statement is True.",
-        "**E.** → False\n\n$$e^{\\ln 3+\\ln 4}=e^{\\ln 12}=12\\neq 7$$\n\nSo the statement is False."
+        "**A.** → True\n\nInnermost: $\\log_{2}16=4$. The outer exponential then cancels against $\\log_{2}$.\n\n$$2^{\\log_{2}(\\log_{2}16)}=2^{\\log_{2}4}=4$$\n\nSo the statement is True.",
+        "**B.** → False\n\nThe same peel yields $4$, so the claimed value $2$ is wrong.\n\nSo the statement is False.",
+        "**C.** → True\n\nWrite the mismatched base $10$ as a power of $2$.\n\n$$10=2^{\\log_{2}10}$$\n\nRaise both sides to the power $\\log_{2}16=4$.\n\n$$10^{\\log_{2}16}=(2^{\\log_{2}10})^{4}=2^{4\\log_{2}10}$$\n\nSo the statement is True.",
+        "**D.** → True\n\nMatched cancellation removes the outer exponential.\n\n$$\\log_{2}\\bigl(2^{\\log_{2}3+\\log_{2}5}\\bigr)=\\log_{2}3+\\log_{2}5$$\n\nThe sum of logs is the log of the product.\n\n$$\\log_{2}3+\\log_{2}5=\\log_{2}15$$\n\nSo the statement is True.",
+        "**E.** → False\n\nCombine the exponents inside the exponential.\n\n$$e^{\\ln 3+\\ln 4}=e^{\\ln 12}=12$$\n\nSince $12\\neq 7$, the claim fails.\n\nSo the statement is False."
       ],
-      "solution_overview": "Peeling $2^{\\log_{2}(\\log_{2}16)}$ gives $4$. Rewriting $10$ in base $2$ produces $2^{4\\log_{2}10}$. Matched cancellation yields $\\log_{2}15$, while $e^{\\ln 3+\\ln 4}=12$.",
+      "solution_overview": "Peeling $2^{\\log_{2}(\\log_{2}16)}$ gives $4$. Rewriting $10$ in base $2$ produces $2^{4\\log_{2}10}$. Matched cancellation yields $\\log_{2}15$, while $e^{\\ln 3+\\ln 4}=12$, not $7$.",
       "difficulty_level": "3/5",
       "sort_order": 82,
       "placeholder": false,
@@ -2768,13 +2768,13 @@
         false
       ],
       "tactical_explanations": [
-        "**A.** → True\n\n$$f(e^{2})=\\ln(e^{2})=2$$\n\nSo the statement is True.",
-        "**B.** → True\n\n$$f(1)=\\ln 1=0$$\n\nSo the statement is True.",
-        "**C.** → True\n\n$$f(e^{3})/f(e)=3/1=3$$\n\nSo the statement is True.",
-        "**D.** → True\n\n$$\\frac{\\ln 8}{\\ln 2}=\\log_{2}8$$\n\nSo the statement is True.",
-        "**E.** → False\n\n$$f(1/e)=\\ln(e^{-1})=-1\\neq 1$$\n\nSo the statement is False."
+        "**A.** → True\n\nCancel the exponential against the natural log.\n\n$$f(e^{2})=\\ln(e^{2})=2$$\n\nSo the statement is True.",
+        "**B.** → True\n\nThe natural log vanishes at argument $1$.\n\n$$f(1)=\\ln 1=0$$\n\nSo the statement is True.",
+        "**C.** → True\n\nEvaluate numerator and denominator separately.\n\n$$f(e^{3})=\\ln(e^{3})=3,\\qquad f(e)=1$$\n\nThe quotient is therefore exactly $3$.\n\n$$\\frac{f(e^{3})}{f(e)}=3$$\n\nSo the statement is True.",
+        "**D.** → True\n\nChange of base converts the ratio of natural logs into a base-$2$ log.\n\n$$\\frac{f(8)}{f(2)}=\\frac{\\ln 8}{\\ln 2}=\\log_{2}8$$\n\nSo the statement is True.",
+        "**E.** → False\n\nRewrite the reciprocal as a negative power of $e$.\n\n$$f(1/e)=\\ln(e^{-1})=-1$$\n\nThe claimed height $1$ has the wrong sign.\n\nSo the statement is False."
       ],
-      "solution_overview": "Natural-log evaluations: $f(e^{2})=2$, $f(1)=0$, $f(1/e)=-1$. Ratios recover $\\log_{2}8$ and the quotient $3$.",
+      "solution_overview": "Natural-log evaluations: $f(e^{2})=2$, $f(1)=0$, and $f(1/e)=-1$. The ratio $f(e^{3})/f(e)=3$, and $f(8)/f(2)$ recovers $\\log_{2}8$ by change of base.",
       "difficulty_level": "4/5",
       "sort_order": 83,
       "placeholder": false,
@@ -2802,13 +2802,13 @@
         false
       ],
       "tactical_explanations": [
-        "**A.** → True\n\nFor $a>1$ the logarithm is strictly increasing.\n\nSo the statement is True.",
-        "**B.** → False\n\nThat characterisation fits bases in $(0,1)$, not $a>1$.\n\nSo the statement is False.",
-        "**C.** → True\n\n$$\\log_{a}x<0<\\log_{a}y$$\n\nSo the statement is True.",
-        "**D.** → True\n\n$$a^{0}=1$$\n\nSo the statement is True.",
-        "**E.** → False\n\n$$\\log_{a}x=1\\iff x=a\\neq 0$$\n\nSo the statement is False."
+        "**A.** → True\n\nFor every base $a>1$ the logarithm is strictly increasing on $(0,\\infty)$.\n\n$$x>y>0\\iff\\log_{a}x>\\log_{a}y$$\n\nThat is precisely the claimed biconditional.\n\nSo the statement is True.",
+        "**B.** → False\n\nThe reversed characterisation $x<y$ would fit a base in $(0,1)$, where the logarithm is decreasing.\n\nFor $a>1$ the order is preserved, not reversed, so the claim fails.\n\nSo the statement is False.",
+        "**C.** → True\n\nArguments below $1$ produce negative logs, while arguments above $1$ produce positive logs.\n\n$$0<x<1<y\\implies\\log_{a}x<0<\\log_{a}y$$\n\nSo the statement is True.",
+        "**D.** → True\n\nBy definition $a^{0}=1$, so the log vanishes exactly at $1$.\n\n$$\\log_{a}x=0\\iff x=1$$\n\nSo the statement is True.",
+        "**E.** → False\n\nThe level equation $\\log_{a}x=1$ forces $x=a$, not $x=0$.\n\n$$\\log_{a}x=1\\iff x=a\\neq 0$$\n\nMoreover $x=0$ is not even in the domain.\n\nSo the statement is False."
       ],
-      "solution_overview": "For $a>1$, logs preserve order, vanish only at $1$, and equal $1$ only at $a$. Arguments below $1$ give negative logs.",
+      "solution_overview": "For $a>1$, logs preserve order, vanish only at $1$, and equal $1$ only at $a$. Arguments below $1$ give negative logs, so the reversed inequality characterisation fits bases in $(0,1)$, not $a>1$.",
       "difficulty_level": "5/5",
       "sort_order": 84,
       "placeholder": false,
@@ -2835,13 +2835,13 @@
         false
       ],
       "tactical_explanations": [
-        "**A.** → True\n\nFor $x>3$, $|x-3|=x-3$.\n\nSo the statement is True.",
-        "**B.** → True\n\nFor $x<3$, $|x-3|=3-x$.\n\nSo the statement is True.",
-        "**C.** → True\n\n$$s(7)=\\log_{2}4=2$$\n\nSo the statement is True.",
-        "**D.** → True\n\n$$s(-1)=\\log_{2}4=2$$\n\nSo the statement is True.",
-        "**E.** → False\n\nAt $x=3$ the argument vanishes, so $s$ is undefined.\n\nSo the statement is False."
+        "**A.** → True\n\nOn the half-line $x>3$ the expression inside the absolute value is already positive.\n\n$$|x-3|=x-3\\qquad(x>3)$$\n\nTaking $\\log_{2}$ yields the claimed branch.\n\n$$s(x)=\\log_{2}(x-3)$$\n\nSo the statement is True.",
+        "**B.** → True\n\nOn the complementary half-line $x<3$ the absolute value flips the sign.\n\n$$|x-3|=3-x\\qquad(x<3)$$\n\n$$s(x)=\\log_{2}(3-x)$$\n\nSo the statement is True.",
+        "**C.** → True\n\nAt $x=7>3$ use the right-hand branch.\n\n$$s(7)=\\log_{2}(7-3)=\\log_{2}4=2$$\n\nSo the statement is True.",
+        "**D.** → True\n\nAt $x=-1<3$ use the left-hand branch.\n\n$$s(-1)=\\log_{2}(3-(-1))=\\log_{2}4=2$$\n\nSo the statement is True.",
+        "**E.** → False\n\nAt $x=3$ the argument of the logarithm vanishes.\n\n$$|3-3|=0$$\n\nSince $\\log_{2}0$ is undefined, $s(3)$ does not exist and cannot equal $0$.\n\nSo the statement is False."
       ],
-      "solution_overview": "Absolute value splits into $\\log_{2}(x-3)$ and $\\log_{2}(3-x)$. Both $x=7$ and $x=-1$ give $s=2$, while $x=3$ is excluded.",
+      "solution_overview": "Absolute value splits into $\\log_{2}(x-3)$ for $x>3$ and $\\log_{2}(3-x)$ for $x<3$. Both $x=7$ and $x=-1$ give $s=2$, while $x=3$ makes the argument vanish and is excluded.",
       "difficulty_level": "1/5",
       "sort_order": 85,
       "placeholder": false,
@@ -2868,13 +2868,13 @@
         false
       ],
       "tactical_explanations": [
-        "**A.** → True\n\n$$\\Delta M=\\log_{10}1000=3$$\n\nSo the statement is True.",
-        "**B.** → False\n\n$$\\Delta M=\\log_{10}2\\neq 2$$\n\nSo the statement is False.",
-        "**C.** → True\n\n$$M(A)-M(B)=\\log_{10}(A/B)$$\n\nSo the statement is True.",
-        "**D.** → True\n\n$$\\log_{10}1=0$$\n\nSo the statement is True.",
-        "**E.** → False\n\nScaling both $A$ and $A_{0}$ by $10$ leaves the ratio unchanged, so $\\Delta M=0$, not $1$.\n\nSo the statement is False."
+        "**A.** → True\n\nRaising amplitude by a factor of $1000$ changes the magnitude by a pure common logarithm.\n\n$$\\Delta M=\\log_{10}\\frac{1000A}{A}=\\log_{10}1000$$\n\nSince $1000=10^{3}$, the increment is exactly $3$.\n\n$$\\Delta M=3$$\n\nSo the statement is True.",
+        "**B.** → False\n\nThe same difference with factor $2$ produces.\n\n$$\\Delta M=\\log_{10}2$$\n\nBecause $\\log_{10}2\\neq 2$, the claim fails.\n\nSo the statement is False.",
+        "**C.** → True\n\nExpand the two magnitudes and cancel the common reference.\n\n$$M(A)-M(B)=\\log_{10}\\frac{A}{A_{0}}-\\log_{10}\\frac{B}{A_{0}}=\\log_{10}\\frac{A}{B}$$\n\nThe difference is independent of $A_{0}$.\n\nSo the statement is True.",
+        "**D.** → True\n\nWhen amplitude equals the reference, the argument of the log is $1$.\n\n$$M=\\log_{10}\\frac{A_{0}}{A_{0}}=\\log_{10}1=0$$\n\nSo the statement is True.",
+        "**E.** → False\n\nScale both $A$ and $A_{0}$ by the same factor $10$.\n\n$$M_{\\mathrm{new}}=\\log_{10}\\frac{10A}{10A_{0}}=\\log_{10}\\frac{A}{A_{0}}=M$$\n\nThe magnitude is unchanged, so it does not increase by $1$.\n\nSo the statement is False."
       ],
-      "solution_overview": "A thousandfold amplitude jump adds $3$ to $M$; a twofold jump adds $\\log_{10}2$. Differences cancel $A_{0}$. Simultaneous scaling of $A$ and $A_{0}$ leaves $M$ fixed.",
+      "solution_overview": "A thousandfold amplitude jump adds $3$ to $M$; a twofold jump adds $\\log_{10}2\\neq 2$. Differences cancel $A_{0}$. Simultaneous scaling of $A$ and $A_{0}$ by $10$ leaves the ratio — and hence $M$ — fixed.",
       "difficulty_level": "2/5",
       "sort_order": 86,
       "placeholder": false,
@@ -2901,13 +2901,13 @@
         false
       ],
       "tactical_explanations": [
-        "**A.** → True\n\n$$f(8)=c\\log_{2}8=3c=3\\implies c=1$$\n\nSo the statement is True.",
-        "**B.** → True\n\n$$f(64)=\\log_{2}(2^{6})=6$$\n\nSo the statement is True.",
-        "**C.** → True\n\n$$f(2)=\\log_{2}2=1$$\n\nSo the statement is True.",
-        "**D.** → True\n\n$$f(1/8)=\\log_{2}(2^{-3})=-3$$\n\nSo the statement is True.",
-        "**E.** → False\n\n$$f(4)=\\log_{2}4=2\\neq 4$$\n\nSo the statement is False."
+        "**A.** → True\n\nUnder the standing form $f=c\\log_{2}$, feed in the seed.\n\n$$f(8)=c\\log_{2}8=c\\cdot 3=3$$\n\nSolve for the scalar.\n\n$$c=1$$\n\nHence $f(x)=\\log_{2}x$ for every $x>0$.\n\nSo the statement is True.",
+        "**B.** → True\n\nWith $c=1$, evaluate at $x=64=2^{6}$.\n\n$$f(64)=\\log_{2}(2^{6})=6$$\n\nSo the statement is True.",
+        "**C.** → True\n\nAt the pure base argument the log equals $1$.\n\n$$f(2)=\\log_{2}2=1$$\n\nSo the statement is True.",
+        "**D.** → True\n\nRewrite the reciprocal as a negative power.\n\n$$\\frac{1}{8}=2^{-3}\\implies f(1/8)=\\log_{2}(2^{-3})=-3$$\n\nSo the statement is True.",
+        "**E.** → False\n\nAt $x=4=2^{2}$ the rebuilt rule gives $2$, not $4$.\n\n$$f(4)=\\log_{2}4=2\\neq 4$$\n\nSo the statement is False."
       ],
-      "solution_overview": "The seed $f(8)=3$ forces $c=1$, hence $f=\\log_{2}$. Then $f(64)=6$, $f(2)=1$, $f(1/8)=-3$, while $f(4)=2$.",
+      "solution_overview": "The seed $f(8)=3$ forces $c\\log_{2}8=3c=3$, hence $c=1$ and $f=\\log_{2}$. Then $f(64)=6$, $f(2)=1$, $f(1/8)=-3$, while $f(4)=2\\neq 4$.",
       "difficulty_level": "3/5",
       "sort_order": 87,
       "placeholder": false,
@@ -2934,13 +2934,13 @@
         false
       ],
       "tactical_explanations": [
-        "**A.** → True\n\nOuter log needs $\\log_{3}x>0$, i.e. $x>1$.\n\nSo the statement is True.",
-        "**B.** → True\n\nBase $2>1$, so $\\log_{2}(\\cdot)>1$ iff the argument exceeds $2$.\n\n$$\\log_{3}x>2$$\n\nSo the statement is True.",
-        "**C.** → True\n\n$$x>3^{2}=9$$\n\nSo the statement is True.",
-        "**D.** → False\n\nAt $x=9$, $\\log_{2}(\\log_{3}9)=\\log_{2}2=1$, not strictly greater.\n\nSo the statement is False.",
-        "**E.** → False\n\n$$\\log_{2}(\\log_{3}3)=\\log_{2}1=0\\not>1$$\n\nSo the statement is False."
+        "**A.** → True\n\nThe outer logarithm needs a positive argument, i.e. $\\log_{3}x>0$.\n\n$$\\log_{3}x>0\\iff x>3^{0}=1$$\n\nThat is the natural domain of the nested left-hand side.\n\nSo the statement is True.",
+        "**B.** → True\n\nBecause the outer base $2>1$, the inequality $\\log_{2}(\\cdot)>1$ is equivalent to the argument exceeding $2$.\n\n$$\\log_{2}(\\log_{3}x)>1\\iff\\log_{3}x>2^{1}=2$$\n\nSo the statement is True.",
+        "**C.** → True\n\nSolve $\\log_{3}x>2$ by exponentiating with base $3$.\n\n$$x>3^{2}=9$$\n\nIntersecting with the domain $x>1$ leaves the open ray $x>9$.\n\nSo the statement is True.",
+        "**D.** → False\n\nAt the boundary $x=9$ the outer log meets the threshold exactly.\n\n$$\\log_{2}(\\log_{3}9)=\\log_{2}2=1$$\n\nA strict inequality excludes its boundary, so $x=9$ is not a solution.\n\nSo the statement is False.",
+        "**E.** → False\n\nAt the trial $x=3$ the inner log equals $1$.\n\n$$\\log_{2}(\\log_{3}3)=\\log_{2}1=0\\not>1$$\n\nSo the statement is False."
       ],
-      "solution_overview": "Domain $x>1$ plus $\\log_{3}x>2$ yields $x>9$. The endpoint $x=9$ and the trial $x=3$ fail the strict inequality.",
+      "solution_overview": "Domain $x>1$ plus $\\log_{3}x>2$ yields $x>9$. The endpoint $x=9$ gives outer value $1$, and the trial $x=3$ gives outer value $0$, so both fail the strict inequality.",
       "difficulty_level": "4/5",
       "sort_order": 88,
       "placeholder": false,
@@ -2967,13 +2967,13 @@
         true
       ],
       "tactical_explanations": [
-        "**A.** → True\n\n$$f(24)-f(3)=\\log_{2}(24/3)=\\log_{2}8=f(8)$$\n\nSo the statement is True.",
-        "**B.** → True\n\n$$f(8)=3$$\n\nSo the statement is True.",
-        "**C.** → True\n\n$$f(9)+f(4)=\\log_{2}(36)=f(36)$$\n\nSo the statement is True.",
-        "**D.** → False\n\nThe sum equals $f(36)$, not $f(13)$.\n\nSo the statement is False.",
-        "**E.** → True\n\n$$2f(8)=6=\\log_{2}64=f(64)$$\n\nSo the statement is True."
+        "**A.** → True\n\nThe difference of logs is the log of the quotient.\n\n$$f(24)-f(3)=\\log_{2}\\frac{24}{3}=\\log_{2}8$$\n\nSince $\\log_{2}8=f(8)$, the claimed identity holds.\n\nSo the statement is True.",
+        "**B.** → True\n\nThe same quotient already equals $\\log_{2}8$.\n\n$$\\log_{2}8=3$$\n\nHence $f(24)-f(3)=3$.\n\nSo the statement is True.",
+        "**C.** → True\n\nThe sum of logs is the log of the product.\n\n$$f(9)+f(4)=\\log_{2}(9\\cdot 4)=\\log_{2}36=f(36)$$\n\nSo the statement is True.",
+        "**D.** → False\n\nThe sum equals $f(36)$, and $36\\neq 13$, so the sum cannot equal $f(13)$.\n\nSo the statement is False.",
+        "**E.** → True\n\nThe power rule doubles the log.\n\n$$2f(8)=2\\log_{2}8=\\log_{2}(8^{2})=\\log_{2}64=f(64)$$\n\nSo the statement is True."
       ],
-      "solution_overview": "Quotient and product rules give $f(24)-f(3)=f(8)=3$ and $f(9)+f(4)=f(36)$. Also $2f(8)=f(64)$. The rival $f(13)$ fails.",
+      "solution_overview": "Quotient and product rules give $f(24)-f(3)=f(8)=3$ and $f(9)+f(4)=f(36)$. Also $2f(8)=f(64)$. The rival $f(13)$ fails because $9\\cdot 4=36\\neq 13$.",
       "difficulty_level": "5/5",
       "sort_order": 89,
       "placeholder": false,
@@ -3001,11 +3001,11 @@
         true
       ],
       "tactical_explanations": [
-        "**A.** → True\n\n$$\\log_{3}81=\\log_{3}(3^{4})=4$$\n\nSo the statement is True.",
-        "**B.** → True\n\n$$\\log_{3}(3^{-3})=-3$$\n\nSo the statement is True.",
-        "**C.** → True\n\n$$\\log_{3}6=\\log_{3}(2\\cdot 3)=\\log_{3}2+1$$\n\nSo the statement is True.",
-        "**D.** → False\n\nIf $\\log_{3}6=2$, then $6=9$, false.\n\nSo the statement is False.",
-        "**E.** → True\n\n$$\\log_{3}9-\\log_{3}3=\\log_{3}3=1$$\n\nSo the statement is True."
+        "**A.** → True\n\nWrite $81$ as a pure power of three.\n\n$$81=3^{4}\\implies\\log_{3}81=4$$\n\nSo the statement is True.",
+        "**B.** → True\n\nRewrite the reciprocal as a negative power.\n\n$$\\frac{1}{27}=3^{-3}\\implies\\log_{3}(1/27)=-3$$\n\nSo the statement is True.",
+        "**C.** → True\n\nFactor $6=2\\cdot 3$ and apply the product rule.\n\n$$\\log_{3}6=\\log_{3}(2\\cdot 3)=\\log_{3}2+\\log_{3}3=\\log_{3}2+1$$\n\nSo the statement is True.",
+        "**D.** → False\n\nIf $\\log_{3}6=2$, exponentiating would force $6=3^{2}=9$.\n\n$$6\\neq 9$$\n\nSo the extrapolation to height $2$ fails.\n\nSo the statement is False.",
+        "**E.** → True\n\nThe difference of logs is the log of the quotient.\n\n$$\\log_{3}9-\\log_{3}3=\\log_{3}\\frac{9}{3}=\\log_{3}3=1$$\n\nSo the statement is True."
       ],
       "solution_overview": "Powers of three give $\\log_{3}81=4$ and $\\log_{3}(1/27)=-3$. The product rule writes $\\log_{3}6=\\log_{3}2+1\\neq 2$. Also $\\log_{3}9-\\log_{3}3=1$.",
       "difficulty_level": "1/5",
@@ -3035,13 +3035,13 @@
         false
       ],
       "tactical_explanations": [
-        "**A.** → True\n\nUse the product rule.\n\n$$\\ln(x(x-3))=\\ln(4x)\\implies x(x-3)=4x$$\n\nSo the statement is True.",
-        "**B.** → True\n\n$$x-3=4$$\n\nSo the statement is True.",
-        "**C.** → True\n\n$$x=7$$\n\nand $7>3$.\n\nSo the statement is True.",
-        "**D.** → False\n\n$x=0$ makes every logarithm undefined.\n\nSo the statement is False.",
-        "**E.** → False\n\n$$4(4-3)=4\\neq 16=4\\cdot 4$$\n\nSo the statement is False."
+        "**A.** → True\n\nOn $x>3$ both $x$ and $x-3$ are positive, so the product rule applies.\n\n$$\\ln x+\\ln(x-3)=\\ln\\bigl(x(x-3)\\bigr)$$\n\nInjectivity of $\\ln$ converts equality with $\\ln(4x)$ into a polynomial relation.\n\n$$x(x-3)=4x$$\n\nSo the statement is True.",
+        "**B.** → True\n\nOn the domain $x>3$ one may divide by the positive factor $x$.\n\n$$x-3=4$$\n\nSo the statement is True.",
+        "**C.** → True\n\nSolve the reduced linear equation.\n\n$$x=7$$\n\nSince $7>3$, the root lies in the natural domain, and uniqueness follows from the linear reduction.\n\nSo the statement is True.",
+        "**D.** → False\n\nAt $x=0$ every logarithm in the original equation is undefined, so $x=0$ is not admissible.\n\nSo the statement is False.",
+        "**E.** → False\n\nSubstitute the trial $x=4$ into the polynomial form.\n\n$$4(4-3)=4,\\qquad 4\\cdot 4=16$$\n\nSince $4\\neq 16$, the point $x=4$ is not a root.\n\nSo the statement is False."
       ],
-      "solution_overview": "Consolidate to $x(x-3)=4x$. On $x>3$ cancel to get $x=7$. The trials $x=0$ and $x=4$ fail.",
+      "solution_overview": "Consolidate to $x(x-3)=4x$. On $x>3$ cancel the positive factor $x$ to get $x-3=4$, hence $x=7$. The trials $x=0$ and $x=4$ fail.",
       "difficulty_level": "2/5",
       "sort_order": 91,
       "placeholder": false,
@@ -3068,13 +3068,13 @@
         false
       ],
       "tactical_explanations": [
-        "**A.** → True\n\nExpand: $3+\\log_{b}4=5$, so $\\log_{b}4=2$, hence $b^{2}=4$. With $b>1$,\n\n$$b=2$$\n\nSo the statement is True.",
-        "**B.** → True\n\n$$\\log_{2}4=2$$\n\nSo the statement is True.",
-        "**C.** → False\n\nIf $b=4$, then $3+\\log_{4}4=4\\neq 5$.\n\nSo the statement is False.",
-        "**D.** → True\n\n$$\\log_{2}32=5$$\n\nSo the statement is True.",
-        "**E.** → False\n\n$$\\log_{2}8=3\\neq 4$$\n\nSo the statement is False."
+        "**A.** → True\n\nExpand the left-hand side by the product rule.\n\n$$\\log_{b}(b^{3}\\cdot 4)=\\log_{b}(b^{3})+\\log_{b}4=3+\\log_{b}4$$\n\nThe seed equation becomes $3+\\log_{b}4=5$, so $\\log_{b}4=2$, hence $b^{2}=4$.\n\n$$b=2\\qquad(b>1)$$\n\nSo the statement is True.",
+        "**B.** → True\n\nWith the recovered base, evaluate directly.\n\n$$\\log_{2}4=\\log_{2}(2^{2})=2$$\n\nSo the statement is True.",
+        "**C.** → False\n\nIf $b=4$, the seed fails.\n\n$$3+\\log_{4}4=3+1=4\\neq 5$$\n\nSo $b=4$ is incompatible.\n\nSo the statement is False.",
+        "**D.** → True\n\nWith $b=2$, write $32$ as a pure power.\n\n$$\\log_{2}32=\\log_{2}(2^{5})=5$$\n\nSo the statement is True.",
+        "**E.** → False\n\nAt $x=8$ the height is $3$, not $4$.\n\n$$\\log_{2}8=\\log_{2}(2^{3})=3\\neq 4$$\n\nSo the statement is False."
       ],
-      "solution_overview": "From $3+\\log_{b}4=5$ recover $\\log_{b}4=2$, hence $b=2$. Then $\\log_{2}32=5$ while $\\log_{2}8=3$.",
+      "solution_overview": "From $3+\\log_{b}4=5$ recover $\\log_{b}4=2$, hence $b^{2}=4$ and $b=2$ since $b>1$. Then $\\log_{2}32=5$ while $\\log_{2}8=3$. The rival base $b=4$ fails the seed equation.",
       "difficulty_level": "3/5",
       "sort_order": 92,
       "placeholder": false,
@@ -3101,13 +3101,13 @@
         false
       ],
       "tactical_explanations": [
-        "**A.** → True\n\nApply $2^{(\\cdot)}$.\n\n$$\\log_{2}(\\log_{2}x)=2$$\n\nSo the statement is True.",
-        "**B.** → True\n\n$$\\log_{2}x=2^{2}=4$$\n\nSo the statement is True.",
-        "**C.** → True\n\n$$x=2^{4}=16$$\n\nSo the statement is True.",
-        "**D.** → False\n\nPeel $65536=2^{16}$: $16\\mapsto 4\\mapsto 2\\neq 1$.\n\nSo the statement is False.",
-        "**E.** → False\n\nSame peel as $65536$, giving outer value $2$, not $1$.\n\nSo the statement is False."
+        "**A.** → True\n\nApply the exponential of base $2$ to both sides.\n\n$$\\log_{2}(\\log_{2}x)=2^{1}=2$$\n\nThat is the forced middle level.\n\nSo the statement is True.",
+        "**B.** → True\n\nApply the exponential once more.\n\n$$\\log_{2}x=2^{2}=4$$\n\nSo the statement is True.",
+        "**C.** → True\n\nExponentiate a third time to recover the argument.\n\n$$x=2^{4}=16$$\n\nUniqueness follows from bijectivity of each successive logarithm on its range.\n\nSo the statement is True.",
+        "**D.** → False\n\nPeel the giant candidate $65536=2^{16}$.\n\n$$\\log_{2}65536=16,\\quad\\log_{2}16=4,\\quad\\log_{2}4=2$$\n\nThe outer value is $2$, not $1$, so $x=65536$ is not a root.\n\nSo the statement is False.",
+        "**E.** → False\n\nThe input $x=2^{16}$ is identical to $65536$, so the same peel applies and again yields outer value $2$, not $1$.\n\nSo the statement is False."
       ],
-      "solution_overview": "Peeling once gives $\\log_{2}(\\log_{2}x)=2$, twice gives $\\log_{2}x=4$, hence $x=16$. The giant $2^{16}$ peels to $2$, not $1$.",
+      "solution_overview": "Peeling once gives $\\log_{2}(\\log_{2}x)=2$, twice gives $\\log_{2}x=4$, hence $x=16$. The giant $2^{16}=65536$ peels to outer value $2$, not $1$.",
       "difficulty_level": "4/5",
       "sort_order": 93,
       "placeholder": false,
