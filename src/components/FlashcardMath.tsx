@@ -327,7 +327,7 @@ function splitMath(input: string): Part[] {
       const end = text.indexOf("$$", i + 2);
       if (end !== -1) {
         flush();
-        // Trailing . , : ; ! ? after $$ would otherwise render on its own line
+        // Trailing . , : ; ? after $$ would otherwise render on its own line
         // under a block-level KaTeX display — fold it into the math.
         let value = text.slice(i + 2, end).trim();
         i = end + 2;
