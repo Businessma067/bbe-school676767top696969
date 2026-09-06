@@ -6010,65 +6010,73 @@ Patient R holds the diagnosis. Patient S has A but not B.`,
     tactical_explanations: [
       `**A.** → True
 
-An existential claim is proved by one witness in the stated universe. Choose $x=15$, which lies in $\\{1,\\ldots,20\\}$:
+Need a multiple of both $3$ and $5$ in $\\{1,\\ldots,20\\}$:
 
-$$15=3\\cdot5$$
+$$3\\cdot 5=15$$
 
-Thus $3\\mid15$ and $5\\mid15$. The required witness exists.
+$$15\\in\\{1,\\ldots,20\\}$$
 
-That matches the claim.
+$$15\\div 3=5$$
 
-$$\\exists x \\in \\{1,\\ldots,20\\}$$
+$$15\\div 5=3$$
+
+so $15$ is divisible by both. The existential holds.
 
 So the statement is True.`,
       `**B.** → True
 
-A universal implication is proved by starting with an arbitrary value that satisfies its hypothesis. If $4\\mid x$, then $x=4k$ for some integer $k$, so
+If $4\\mid x$, write
 
-$$x = 4k$$
+$$x=4k$$
 
-$$= 2(2k)$$
+$$4k=2\\cdot(2k)$$
 
-Hence $2\\mid x$. This argument covers every multiple of $4$ in the universe.
+$$2\\mid x$$
+
+The implication holds for every $x$ in the universe.
 
 So the statement is True.`,
       `**C.** → False
 
-A universal implication is disproved by one value with a true hypothesis and false conclusion. Choose $x=2$, which lies in the universe:
+Counterexample:
 
-$$2=2\\cdot1$$
+$$x=2$$
 
-but
+$$2\\div 2=1$$
 
-$$\\nexists k\\in\\mathbb{Z}:2=4k$$
+so $2\\mid 2$. But
 
-Thus $2\\mid2$ while $4\\nmid2$.
+$$2\\div 4$$
 
-That conflicts with the claim.
+is not an integer, so $4\\nmid 2$. The implication fails.
 
 So the statement is False.`,
       `**D.** → True
 
-An implication fails only where the "if" holds and the "then" fails, so the negation of $\\forall x\\,(\\mathrm{Prime}(x)\\Rightarrow\\mathrm{Odd}(x))$ is
+Negate the universal implication:
 
-$$\\exists x\\,(\\mathrm{Prime}(x)\\land\\mathrm{Even}(x))$$
+$$\\neg\\forall x\\,(\\mathrm{Prime}(x)\\Rightarrow\\mathrm{Odd}(x))$$
 
-still restricted to $\\{1,\\ldots,20\\}$. The quoted sentence is that negation.
+$$\\equiv\\exists x\\,\\neg(\\mathrm{Prime}(x)\\Rightarrow\\mathrm{Odd}(x))$$
 
-$$\\forall x \\in \\{1,\\ldots,20\\}\\, (\\mathrm{Prime}(x) \\Rightarrow \\mathrm{Odd}(x))$$
+$$\\equiv\\exists x\\,(\\mathrm{Prime}(x)\\wedge\\neg\\mathrm{Odd}(x))$$
 
-$$\\exists x \\in \\{1,\\ldots,20\\}\\, (\\mathrm{Prime}(x) \\land \\mathrm{Even}(x))$$
+$$\\equiv\\exists x\\,(\\mathrm{Prime}(x)\\wedge\\mathrm{Even}(x))$$
 
 So the statement is True.`,
       `**E.** → True
 
-The existential negation needs one number in the universe that is both prime and even. Choose $x=2$:
+Witness:
 
-$$2\\in\\{1,\\ldots,20\\},$$
+$$x=2$$
 
-$$\\mathrm{Prime}(2)\\land\\mathrm{Even}(2)$$
+$$\\mathrm{Prime}(2)$$
 
-The number $2$ has only the positive divisors $1$ and $2$, and it is divisible by $2$. This witness makes the negated statement true.
+$$\\mathrm{Even}(2)$$
+
+$$2\\in\\{1,\\ldots,20\\}$$
+
+so the existential negation holds.
 
 So the statement is True.`,
     ],
