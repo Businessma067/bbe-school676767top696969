@@ -62,8 +62,8 @@ After one year:
 
 $$
 S(1)
-= 6{,}000(1.006)^{12}
-\approx 6{,}446.55.
+= 6,000(1.006)^{12}
+\approx 6,446.55.
 $$
 
 The account earns about \$446.55 during the year.
@@ -113,7 +113,7 @@ $$
 An unpaid \$2,000 balance grows to
 
 $$
-2{,}000(1.0175)^{12}\approx 2{,}462.88.
+2,000(1.0175)^{12}\approx 2,462.88.
 $$
 
 Multiplying the monthly rate by $12$ gives the nominal quotation, not the true one-year growth.
@@ -206,15 +206,15 @@ $$
 quarters, so
 
 $$
-80{,}000
-=50{,}000\left(1+\frac{r}{4}\right)^{32}.
+80,000
+=50,000\left(1+\frac{r}{4}\right)^{32}.
 $$
 
 Divide by \$50,000 before taking the root:
 
 $$
 1+\frac{r}{4}
-=\left(\frac{80{,}000}{50{,}000}\right)^{1/32}.
+=\left(\frac{80,000}{50,000}\right)^{1/32}.
 $$
 
 Therefore
@@ -236,7 +236,7 @@ For Account A, let $m$ be the number of months:
 
 $$
 m
-=\frac{\ln(22{,}000/15{,}000)}
+=\frac{\ln(22,000/15,000)}
 {\ln(1+0.06/12)}
 \approx76.80.
 $$
@@ -245,7 +245,7 @@ This is about $6.40$ years. For Account B, let $q$ be the number of quarters:
 
 $$
 q
-=\frac{\ln(22{,}000/15{,}000)}
+=\frac{\ln(22,000/15,000)}
 {\ln(1+0.0615/4)}
 \approx25.10.
 $$
@@ -327,13 +327,13 @@ The factor stays constant, but the dollar increase grows because the balance bei
 **Example 1.** A bakery deposits \$4,500 at a continuous rate of $5\%$.
 
 $$
-S(1)=4{,}500e^{0.05}\approx 4{,}730.72.
+S(1)=4,500e^{0.05}\approx 4,730.72.
 $$
 
 The first-year interest is
 
 $$
-4{,}730.72-4{,}500.00=230.72.
+4,730.72-4,500.00=230.72.
 $$
 
 Annual compounding at the same nominal rate gives \$4,725.00, so continuous compounding produces \$5.72 more.
@@ -376,20 +376,20 @@ The future values are
 
 $$
 S_X
-=60{,}000e^{0.068(2)}
-\approx68{,}740.91,
+=60,000e^{0.068(2)}
+\approx68,740.91,
 $$
 
 $$
 S_Y
-=60{,}000\left(1+\frac{0.069}{12}\right)^{24}
-\approx68{,}851.32,
+=60,000\left(1+\frac{0.069}{12}\right)^{24}
+\approx68,851.32,
 $$
 
 $$
 S_Z
-=60{,}000\left(1+\frac{0.07}{4}\right)^8
-\approx68{,}932.91.
+=60,000\left(1+\frac{0.07}{4}\right)^8
+\approx68,932.91.
 $$
 
 Bank X compounds continuously but finishes last because it has the lowest nominal rate. If all three quoted $7.0\%$, continuous compounding would again produce the largest value. Frequency comparisons are valid only after the nominal-rate difference has been handled.
@@ -414,8 +414,8 @@ To have \$150,000 in five years at a continuous rate of $4.5\%$, the required de
 
 $$
 S_0
-=150{,}000e^{-0.045(5)}
-\approx119{,}777.40.
+=150,000e^{-0.045(5)}
+\approx119,777.40.
 $$
 
 The negative exponent moves the target backward from year 5 to today.
@@ -451,9 +451,9 @@ The fraction remaining after $t$ years is $e^{-\delta t}$.
 After five years:
 
 $$
-v(5)=60{,}000e^{-0.10(5)}
-=60{,}000e^{-0.5}
-\approx36{,}391.84.
+v(5)=60,000e^{-0.10(5)}
+=60,000e^{-0.5}
+\approx36,391.84.
 $$
 
 To find when $40\%$ remains:
@@ -479,7 +479,7 @@ $$
 
 $$
 \delta
-=\frac{\ln(180{,}000/95{,}000)}{7}
+=\frac{\ln(180,000/95,000)}{7}
 \approx0.0913=9.13\%.
 $$
 
@@ -540,8 +540,8 @@ $$
 An initial \$100,000 therefore becomes
 
 $$
-100{,}000e^{0.058(6)}
-\approx141{,}623.22
+100,000e^{0.058(6)}
+\approx141,623.22
 $$
 
 after six years. Subtracting the fee from the final dollar balance would be wrong because the fee reduces growth throughout the whole holding period.
@@ -575,8 +575,8 @@ This is the same logarithmic idea as doubling time, now applied to two exponenti
 At the crossover:
 
 $$
-50{,}000e^{0.04t}
-=250{,}000e^{-0.12t}.
+50,000e^{0.04t}
+=250,000e^{-0.12t}.
 $$
 
 Move both exponential factors to the same side:
@@ -594,8 +594,8 @@ $$
 The crossover occurs after about $10.06$ years. The common value is approximately
 
 $$
-50{,}000e^{0.04(\ln5/0.16)}
-\approx74{,}767.44.
+50,000e^{0.04(\ln5/0.16)}
+\approx74,767.44.
 $$
 
 The initial gap is fivefold, but the ratio of the two values grows continuously at the combined rate $4\%+12\%=16\%$.
@@ -606,28 +606,28 @@ At $3\%$ for one year:
 
 $$
 S_{\mathrm{cont}}
-=25{,}000e^{0.03}
-\approx25{,}761.36,
+=25,000e^{0.03}
+\approx25,761.36,
 $$
 
 $$
 S_{\mathrm{annual}}
-=25{,}000(1.03)
-=25{,}750.00.
+=25,000(1.03)
+=25,750.00.
 $$
 
 The gap is only \$11.36. At $15\%$ for one year, the gap grows to
 
 $$
-25{,}000e^{0.15}-25{,}000(1.15)
+25,000e^{0.15}-25,000(1.15)
 \approx295.86.
 $$
 
 Keeping the rate at $3\%$ but extending the horizon to eight years gives
 
 $$
-25{,}000e^{0.24}
--25{,}000(1.03)^8
+25,000e^{0.24}
+-25,000(1.03)^8
 \approx111.98.
 $$
 
@@ -671,7 +671,7 @@ d=(1.05)^{-1}\approx0.952381,
 $$
 
 $$
-PV=8{,}000(1.05)^{-1}\approx7{,}619.05.
+PV=8,000(1.05)^{-1}\approx7,619.05.
 $$
 
 At a higher rate, today's required amount is lower because less money today can grow into the same \$8,000.
@@ -690,16 +690,16 @@ Continuous:
 
 $$
 PV_{\mathrm{cont}}
-=12{,}000e^{-0.06(3)}
-\approx10{,}023.24.
+=12,000e^{-0.06(3)}
+\approx10,023.24.
 $$
 
 Annual:
 
 $$
 PV_{\mathrm{annual}}
-=12{,}000(1.06)^{-3}
-\approx10{,}075.43.
+=12,000(1.06)^{-3}
+\approx10,075.43.
 $$
 
 The continuous present value is lower, not higher.
@@ -742,8 +742,8 @@ under continuous compounding.
 
 $$
 PV
-=\frac{40{,}000}{(1.05)^2}
-+\frac{65{,}000}{(1.05)^5}.
+=\frac{40,000}{(1.05)^2}
++\frac{65,000}{(1.05)^5}.
 $$
 
 Each term carries its own exponent because each payment waits for a different length of time.
@@ -769,21 +769,21 @@ Discount the two payments separately:
 
 $$
 PV_1
-=30{,}000e^{-0.4}
-\approx20{,}109.60,
+=30,000e^{-0.4}
+\approx20,109.60,
 $$
 
 $$
 PV_2
-=55{,}000e^{-0.8}
-\approx24{,}713.09.
+=55,000e^{-0.8}
+\approx24,713.09.
 $$
 
 The combined present value is
 
 $$
-PV\approx20{,}109.60+24{,}713.09
-=44{,}822.69.
+PV\approx20,109.60+24,713.09
+=44,822.69.
 $$
 
 Adding \$30,000 and \$55,000 first and applying one discount factor would silently place both payments on the same date.
@@ -793,7 +793,7 @@ Adding \$30,000 and \$55,000 first and applying one discount factor would silent
 Bring every option to one common date. If Option A is \$22,000 today and Option B is \$25,500 in three years at $6\%$,
 
 $$
-PV_B=\frac{25{,}500}{(1.06)^3}\approx21{,}410.29.
+PV_B=\frac{25,500}{(1.06)^3}\approx21,410.29.
 $$
 
 Option B has the smaller present value. Comparing \$22,000 directly with \$25,500 ignores three years of opportunity cost.
@@ -819,14 +819,14 @@ Always check the direction. If $K>PV$ and $t>0$, the implied positive discount r
 **Example 5.** Investors pay \$2,000,000 today for a guaranteed \$3,200,000 payment in $4.5$ years. Under continuous discounting,
 
 $$
-2{,}000{,}000
-=3{,}200{,}000e^{-4.5r}.
+2,000,000
+=3,200,000e^{-4.5r}.
 $$
 
 The observed discount factor is
 
 $$
-\frac{2{,}000{,}000}{3{,}200{,}000}=0.625.
+\frac{2,000,000}{3,200,000}=0.625.
 $$
 
 Therefore
@@ -866,24 +866,24 @@ The first receivable contributes
 
 $$
 PV_1
-=\frac{42{,}000}{(1.06)^3}
-\approx35{,}264.01.
+=\frac{42,000}{(1.06)^3}
+\approx35,264.01.
 $$
 
 The second must contribute
 
 $$
 PV_2
-=100{,}000-35{,}264.01
-=64{,}735.99
+=100,000-35,264.01
+=64,735.99
 $$
 
 today. Grow that required present value to year 6:
 
 $$
 K_2
-=64{,}735.99(1.06)^6
-\approx91{,}829.24.
+=64,735.99(1.06)^6
+\approx91,829.24.
 $$
 
 This is a two-stage problem: find the missing present value first, then move that amount to its own payment date.
@@ -892,8 +892,8 @@ For continuous indifference, suppose a consulting firm can take \$35,000 now or 
 
 $$
 K
-=35{,}000e^{0.065(4)}
-\approx45{,}392.55.
+=35,000e^{0.065(4)}
+\approx45,392.55.
 $$
 
 The future option must be larger than \$35,000 because it compensates for four years of waiting.
@@ -936,23 +936,23 @@ $$
 **Example 7.** A timber stand has value
 
 $$
-P(t)=5{,}000(t+2)^2
+P(t)=5,000(t+2)^2
 $$
 
 and $r=0.08$. Since
 
 $$
-P'(t)=10{,}000(t+2),
+P'(t)=10,000(t+2),
 $$
 
 the first-order condition gives
 
 $$
-10{,}000(t+2)
-=0.08\left[5{,}000(t+2)^2\right].
+10,000(t+2)
+=0.08\left[5,000(t+2)^2\right].
 $$
 
-Because $t+2>0$, divide by $5{,}000(t+2)$:
+Because $t+2>0$, divide by $5,000(t+2)$:
 
 $$
 2=0.08(t+2),
@@ -968,32 +968,32 @@ The optimum is $23$ years from now. Finding the date is not the end of the calcu
 
 $$
 P(23)
-=5{,}000(25)^2
-=3{,}125{,}000.
+=5,000(25)^2
+=3,125,000.
 $$
 
 Bring that amount back 23 years:
 
 $$
 f(23)
-=3{,}125{,}000e^{-0.08(23)}
-\approx496{,}304.46.
+=3,125,000e^{-0.08(23)}
+\approx496,304.46.
 $$
 
 The second-order quantity is
 
 $$
 P''(23)-0.08P'(23)
-=10{,}000-0.08(250{,}000)
-=-10{,}000<0,
+=10,000-0.08(250,000)
+=-10,000<0,
 $$
 
 which confirms a maximum. As a direct check, waiting until year 25 gives
 
 $$
 f(25)
-=5{,}000(27)^2e^{-2}
-\approx493{,}297.11,
+=5,000(27)^2e^{-2}
+\approx493,297.11,
 $$
 
 which is lower than the value at year 23.
@@ -1027,19 +1027,19 @@ The derivative is taken with respect to $r$ written as a decimal. A change of on
 **Example 8.** At a forestry cooperative's current optimum,
 
 $$
-P(t^*)=520{,}000,
+P(t^*)=520,000,
 \qquad
-P'(t^*)=46{,}800,
+P'(t^*)=46,800,
 \qquad
-P''(t^*)=3{,}120,
+P''(t^*)=3,120,
 $$
 
 and $r=0.09$. First verify that the point satisfies the first-order condition:
 
 $$
 rP(t^*)
-=0.09(520{,}000)
-=46{,}800
+=0.09(520,000)
+=46,800
 =P'(t^*).
 $$
 
@@ -1047,15 +1047,15 @@ Next calculate the denominator:
 
 $$
 P''(t^*)-rP'(t^*)
-=3{,}120-0.09(46{,}800)
-=-1{,}092.
+=3,120-0.09(46,800)
+=-1,092.
 $$
 
 It is negative, so the second-order condition holds. The sensitivity is
 
 $$
 \frac{dt^*}{dr}
-=\frac{520{,}000}{-1{,}092}
+=\frac{520,000}{-1,092}
 \approx-476.19.
 $$
 
@@ -1090,26 +1090,26 @@ Do not force the first-order condition to produce an interior answer when the ma
 **Example 9.** A batch of wine is worth
 
 $$
-P(t)=40{,}000e^{0.05t},
+P(t)=40,000e^{0.05t},
 $$
 
 while the continuous discount rate is $8\%$. Its present value is
 
 $$
 f(t)
-=40{,}000e^{(0.05-0.08)t}
-=40{,}000e^{-0.03t}.
+=40,000e^{(0.05-0.08)t}
+=40,000e^{-0.03t}.
 $$
 
 This falls for every $t>0$, so the best time to sell is the boundary $t^*=0$. Waiting ten years gives only
 
 $$
 f(10)
-=40{,}000e^{-0.3}
-\approx29{,}632.73.
+=40,000e^{-0.3}
+\approx29,632.73.
 $$
 
-If the discount rate were $4\%$ instead, then $f(t)=40{,}000e^{0.01t}$ would keep rising. There would be no finite maximizing time in this model. A growing market price alone does not prove that waiting raises present value.
+If the discount rate were $4\%$ instead, then $f(t)=40,000e^{0.01t}$ would keep rising. There would be no finite maximizing time in this model. A growing market price alone does not prove that waiting raises present value.
 
 ---
 
@@ -1184,15 +1184,15 @@ If $|k|\ge1$, the infinite geometric series diverges and has no finite sum.
 **Example 2.** Monthly profit begins at \$2,000 and halves each month:
 
 $$
-2{,}000+1{,}000+500+250+\cdots
+2,000+1,000+500+250+\cdots
 $$
 
-Here $a=2{,}000$ and $k=0.5$, so
+Here $a=2,000$ and $k=0.5$, so
 
 $$
 s_\infty
-=\frac{2{,}000}{1-0.5}
-=4{,}000.
+=\frac{2,000}{1-0.5}
+=4,000.
 $$
 
 The first four months total \$3,750, which is below the limiting \$4,000 total.
@@ -1200,7 +1200,7 @@ The first four months total \$3,750, which is below the limiting \$4,000 total.
 **Example 3.** Deposits begin at \$800 and each later deposit is $90\%$ of the previous one:
 
 $$
-s_\infty=\frac{800}{1-0.90}=8{,}000.
+s_\infty=\frac{800}{1-0.90}=8,000.
 $$
 
 The first ten deposits total
@@ -1208,7 +1208,7 @@ The first ten deposits total
 $$
 s_{10}
 =800\frac{1-(0.90)^{10}}{1-0.90}
-\approx5{,}210.57,
+\approx5,210.57,
 $$
 
 about $65.13\%$ of the infinite total.
@@ -1227,15 +1227,15 @@ An infinite alternating geometric series converges whenever $|k|<1$. The sum can
 **Example 4.** A contract produces the alternating stream
 
 $$
-4{,}000-2{,}000+1{,}000-500+\cdots.
+4,000-2,000+1,000-500+\cdots.
 $$
 
-Here $a=4{,}000$ and $k=-0.5$. Since $|k|=0.5<1$, the stream converges:
+Here $a=4,000$ and $k=-0.5$. Since $|k|=0.5<1$, the stream converges:
 
 $$
 s_\infty
-=\frac{4{,}000}{1-(-0.5)}
-=2{,}666.67.
+=\frac{4,000}{1-(-0.5)}
+=2,666.67.
 $$
 
 Using $1-0.5$ in the denominator would ignore the alternating sign and give the wrong result.
@@ -1247,23 +1247,23 @@ The geometric formulas in this section add the listed amounts. If a stream start
 **Example 5.** A charitable trust pays its first \$50,000 grant in year 6. Every later grant is $96\%$ of the previous one.
 
 $$
-50{,}000,\quad
-50{,}000(0.96),\quad
-50{,}000(0.96)^2,\ldots
+50,000,\quad
+50,000(0.96),\quad
+50,000(0.96)^2,\ldots
 $$
 
 The nominal total of all grants is
 
 $$
-\frac{50{,}000}{1-0.96}
-=1{,}250{,}000.
+\frac{50,000}{1-0.96}
+=1,250,000.
 $$
 
 The first 15 grants total
 
 $$
 s_{15}
-=50{,}000
+=50,000
 \frac{1-(0.96)^{15}}{1-0.96}.
 $$
 
@@ -1285,20 +1285,20 @@ quarters. Therefore
 
 $$
 s_{20}
-=10{,}000
+=10,000
 \frac{1-(0.98)^{20}}{1-0.98}
-\approx166{,}196.01.
+\approx166,196.01.
 $$
 
-The total is about $166{,}196.01$ lb. The twentieth-quarter yield is a term, not a sum:
+The total is about $166,196.01$ lb. The twentieth-quarter yield is a term, not a sum:
 
 $$
 a_{20}
-=10{,}000(0.98)^{19}
-\approx6{,}812.33.
+=10,000(0.98)^{19}
+\approx6,812.33.
 $$
 
-This is about $6{,}812.33$ lb. Using $n=5$ would total only five quarters, or $1.25$ years.
+This is about $6,812.33$ lb. Using $n=5$ would total only five quarters, or $1.25$ years.
 
 ### Finite phase followed by an infinite phase
 
@@ -1351,17 +1351,17 @@ $$
 
 $$
 a
-=58{,}000
+=58,000
 \frac{1.15-1}{(1.15)^6-1}
-\approx6{,}625.74.
+\approx6,625.74.
 $$
 
 The sixth month's cost is
 
 $$
 a_6
-=6{,}625.74(1.15)^5
-\approx13{,}326.73.
+=6,625.74(1.15)^5
+\approx13,326.73.
 $$
 
 The total formula determines the first month. The term formula then determines any particular month.
@@ -1371,9 +1371,9 @@ The total formula determines the first month. The term formula then determines a
 Solve the inequality
 
 $$
-200{,}000
+200,000
 \frac{(1.12)^n-1}{0.12}
->3{,}000{,}000.
+>3,000,000.
 $$
 
 This reduces to
@@ -1391,11 +1391,11 @@ $$
 The smallest whole number is $n=10$. Checking the neighbouring values confirms the crossing:
 
 $$
-s_9\approx2{,}955{,}131.26,
+s_9\approx2,955,131.26,
 $$
 
 $$
-s_{10}\approx3{,}509{,}747.01.
+s_{10}\approx3,509,747.01.
 $$
 
 For a first-crossing question, taking the ceiling is not enough by itself. Check the integer immediately below and the chosen integer.
@@ -1408,23 +1408,23 @@ When revenue and cost grow at different rates, calculate two sums before subtrac
 
 $$
 s_{\mathrm{revenue}}
-=150{,}000
+=150,000
 \frac{(1.01)^{12}-1}{0.01}
-\approx1{,}902{,}375.45,
+\approx1,902,375.45,
 $$
 
 $$
 s_{\mathrm{cost}}
-=120{,}000
+=120,000
 \frac{(1.03)^{12}-1}{0.03}
-\approx1{,}703{,}043.55.
+\approx1,703,043.55.
 $$
 
 Therefore cumulative profit is approximately
 
 $$
-1{,}902{,}375.45-1{,}703{,}043.55
-=199{,}331.90.
+1,902,375.45-1,703,043.55
+=199,331.90.
 $$
 
 Revenue begins higher, but cost has the faster growth rate. Extending the horizon can reduce the cumulative advantage even while both totals continue to rise.
@@ -1525,8 +1525,8 @@ $$
 
 $$
 F_6
-=\frac{2{,}000}{0.05}\left[(1.05)^6-1\right]
-\approx13{,}603.83.
+=\frac{2,000}{0.05}\left[(1.05)^6-1\right]
+\approx13,603.83.
 $$
 
 Total deposits are \$12,000, so interest is \$1,603.83.
@@ -1571,11 +1571,11 @@ $$
 
 $$
 P_{15}
-=\frac{2{,}400}{0.045}
+=\frac{2,400}{0.045}
 \left[
 1-\frac{1}{(1.045)^{15}}
 \right]
-\approx25{,}774.91.
+\approx25,774.91.
 $$
 
 Nominal withdrawals total \$36,000, but only \$25,774.91 is needed today because the remaining balance earns interest while withdrawals occur.
@@ -1597,18 +1597,18 @@ $$
 **Example 3.** A scholarship pays \$5,000 at each year-end forever at $6\%$:
 
 $$
-P_\infty=\frac{5{,}000}{0.06}=83{,}333.33.
+P_\infty=\frac{5,000}{0.06}=83,333.33.
 $$
 
 A 20-year version costs less:
 
 $$
 P_{20}
-=\frac{5{,}000}{0.06}
+=\frac{5,000}{0.06}
 \left[
 1-\frac{1}{(1.06)^{20}}
 \right]
-\approx57{,}349.61.
+\approx57,349.61.
 $$
 
 Extending a finite annuity moves its value toward the perpetuity limit, but each extra distant payment adds less present value.
@@ -1639,17 +1639,17 @@ The matching ordinary-annuity future value is
 
 $$
 F_{\mathrm{ordinary}}
-=\frac{3{,}000}{0.05}
+=\frac{3,000}{0.05}
 \left[(1.05)^6-1\right]
-\approx20{,}405.74.
+\approx20,405.74.
 $$
 
 Move every deposit one year earlier:
 
 $$
 F_{\mathrm{due}}
-=20{,}405.74(1.05)
-\approx21{,}426.03.
+=20,405.74(1.05)
+\approx21,426.03.
 $$
 
 The due value is larger by \$1,020.29 because every deposit earns one extra period of interest.
@@ -1662,25 +1662,25 @@ First value the matching end-of-year annuity:
 
 $$
 P_{\mathrm{ordinary}}
-=\frac{24{,}000}{0.06}
+=\frac{24,000}{0.06}
 \left[
 1-(1.06)^{-5}
 \right]
-\approx101{,}096.73.
+\approx101,096.73.
 $$
 
 Then shift every payment one year earlier:
 
 $$
 P_{\mathrm{due}}
-=101{,}096.73(1.06)
-\approx107{,}162.53.
+=101,096.73(1.06)
+\approx107,162.53.
 $$
 
 The difference is about \$6,065.80. That gap equals one year's interest on the ordinary-annuity present value:
 
 $$
-0.06(101{,}096.73)\approx6{,}065.80.
+0.06(101,096.73)\approx6,065.80.
 $$
 
 ### Deferred perpetuities
@@ -1711,16 +1711,16 @@ One period before the first payment, at time $4$, the perpetuity is worth
 
 $$
 PV_4
-=\frac{10{,}000}{0.06}
-=166{,}666.67.
+=\frac{10,000}{0.06}
+=166,666.67.
 $$
 
 Now discount that single time-4 value back four years:
 
 $$
 PV_0
-=\frac{166{,}666.67}{(1.06)^4}
-\approx132{,}015.61.
+=\frac{166,666.67}{(1.06)^4}
+\approx132,015.61.
 $$
 
 Discounting for five years would be an off-by-one error. The perpetuity formula already values the stream one period before its first payment.
@@ -1750,13 +1750,13 @@ $$
 **Example 7.** A rental property pays \$24,000 at the end of year 1 and then grows at $2.5\%$ forever. The required return is $8\%$:
 
 $$
-P=\frac{24{,}000}{0.08-0.025}=436{,}363.64.
+P=\frac{24,000}{0.08-0.025}=436,363.64.
 $$
 
 Without growth the same first payment would be worth only
 
 $$
-\frac{24{,}000}{0.08}=300{,}000.
+\frac{24,000}{0.08}=300,000.
 $$
 
 Growth adds value, but only while $g$ stays below $r$.
@@ -1789,11 +1789,11 @@ The instalment plan has present value
 
 $$
 P_9
-=\frac{2{,}500}{0.07}
+=\frac{2,500}{0.07}
 \left[
 1-\frac{1}{(1.07)^9}
 \right]
-\approx16{,}288.08.
+\approx16,288.08.
 $$
 
 Its nominal total is \$22,500, but its present-value cost is below \$18,000 because most payments occur later.
@@ -1807,17 +1807,17 @@ Plan A grows for the full nine years:
 
 $$
 F_A
-=75{,}000e^{0.0625(9)}
-\approx131{,}629.13.
+=75,000e^{0.0625(9)}
+\approx131,629.13.
 $$
 
 For Plan B, the last contribution earns no interest before the comparison date and each earlier contribution earns for a different number of years:
 
 $$
 F_B
-=8{,}333.33
+=8,333.33
 \frac{(1.0625)^9-1}{0.0625}
-\approx96{,}757.60.
+\approx96,757.60.
 $$
 
 The nominal contributions are equal, but their timing is not. Plan A is much larger because every dollar is invested from the start.
@@ -1858,9 +1858,9 @@ $$
 
 $$
 a
-=\frac{0.12(60{,}000)}
+=\frac{0.12(60,000)}
 {1-(1.12)^{-6}}
-\approx14{,}593.54.
+\approx14,593.54.
 $$
 
 ### Interest and principal inside each payment
@@ -1931,7 +1931,7 @@ The monthly payment is
 
 $$
 a
-=\frac{0.0075(24{,}000)}
+=\frac{0.0075(24,000)}
 {1-(1.0075)^{-48}}
 \approx597.24.
 $$
@@ -1954,20 +1954,20 @@ The monthly payment is
 
 $$
 a
-=\frac{0.005(200{,}000)}
+=\frac{0.005(200,000)}
 {1-(1.005)^{-240}}
-\approx1{,}432.86.
+\approx1,432.86.
 $$
 
 After 60 payments, 180 payments remain. The outstanding balance is
 
 $$
 B_{60}
-=\frac{1{,}432.86}{0.005}
+=\frac{1,432.86}{0.005}
 \left[
 1-(1.005)^{-180}
 \right]
-\approx169{,}799.20.
+\approx169,799.20.
 $$
 
 The borrower has paid about \$85,971.60 during the first five years, but the balance has fallen by only about \$30,200.80. Early payments are interest-heavy because they are charged on a large outstanding balance.
@@ -2023,7 +2023,7 @@ The last payment is then $B_N(1+r)$, which settles the remaining balance after o
 **Example 4.** A \$35,000 loan at $13\%$ is repaid with fixed annual payments of \$10,000.
 
 $$
-\frac{\ln(10{,}000)-\ln(10{,}000-0.13\cdot35{,}000)}
+\frac{\ln(10,000)-\ln(10,000-0.13\cdot35,000)}
 {\ln(1.13)}
 \approx4.9663.
 $$
@@ -2032,15 +2032,15 @@ Five payments are needed. After four payments of \$10,000, the remaining balance
 
 $$
 B_4
-=35{,}000(1.13)^4
--10{,}000\frac{(1.13)^4-1}{0.13}
-\approx8{,}568.61.
+=35,000(1.13)^4
+-10,000\frac{(1.13)^4-1}{0.13}
+\approx8,568.61.
 $$
 
 The fifth payment is
 
 $$
-8{,}568.61(1.13)\approx9{,}682.53.
+8,568.61(1.13)\approx9,682.53.
 $$
 
 ### Deposits inside one interest period
@@ -2065,7 +2065,7 @@ $$
 This simplifies to
 
 $$
-250(4+1.5\cdot0.08)=1{,}030.
+250(4+1.5\cdot0.08)=1,030.
 $$
 
 The first deposit earns three quarters of a year's interest; the last earns none before the year-end credit date.
@@ -2082,12 +2082,12 @@ At $10\%$:
 
 $$
 PV_B
-=100{,}000+
-\frac{100{,}000}{0.10}
+=100,000+
+\frac{100,000}{0.10}
 \left[
 1-(1.10)^{-6}
 \right]
-\approx535{,}526.07.
+\approx535,526.07.
 $$
 
 Cash is cheaper.
@@ -2095,7 +2095,7 @@ Cash is cheaper.
 At $14\%$:
 
 $$
-PV_B\approx488{,}866.75.
+PV_B\approx488,866.75.
 $$
 
 The instalment plan becomes cheaper. A higher discount rate reduces the value of the six delayed payments but does not reduce the immediate \$500,000 price.
@@ -2158,14 +2158,14 @@ $$
 **Example 1.** A bakery spends \$8,000 on an oven and receives \$9,600 after one year:
 
 $$
-r=\frac{9{,}600}{8{,}000}-1=0.20=20\%.
+r=\frac{9,600}{8,000}-1=0.20=20\%.
 $$
 
 At a $15\%$ discount rate:
 
 $$
 NPV
-=-8{,}000+\frac{9{,}600}{1.15}
+=-8,000+\frac{9,600}{1.15}
 \approx347.83>0.
 $$
 
@@ -2173,7 +2173,7 @@ At $25\%$:
 
 $$
 NPV
-=-8{,}000+\frac{9{,}600}{1.25}
+=-8,000+\frac{9,600}{1.25}
 =-320<0.
 $$
 
@@ -2196,15 +2196,15 @@ $$
 **Example 2.** A licence costs \$50,000 and pays \$6,000 at each year-end forever:
 
 $$
-r=\frac{6{,}000}{50{,}000}=0.12=12\%.
+r=\frac{6,000}{50,000}=0.12=12\%.
 $$
 
 If the same project paid \$6,000 only in years 1 and 2, its IRR equation would instead be
 
 $$
--50{,}000
-+\frac{6{,}000}{1+r}
-+\frac{6{,}000}{(1+r)^2}
+-50,000
++\frac{6,000}{1+r}
++\frac{6,000}{(1+r)^2}
 =0.
 $$
 
@@ -2239,10 +2239,10 @@ $$
 **Example 3.** A logistics company spends \$12,000 and receives \$7,000 at each of the next two year-ends:
 
 $$
--12{,}000+7{,}000s+7{,}000s^2=0.
+-12,000+7,000s+7,000s^2=0.
 $$
 
-Divide by $1{,}000$:
+Divide by $1,000$:
 
 $$
 7s^2+7s-12=0.
@@ -2285,28 +2285,28 @@ and the conventional cash-flow conditions below hold, then the unique IRR lies b
 **Example 5.** A project has cash flows
 
 $$
--40{,}000,\quad22{,}000,\quad27{,}600.
+-40,000,\quad22,000,\quad27,600.
 $$
 
 To verify that $15\%$ is the IRR, substitute it into NPV:
 
 $$
 NPV(0.15)
-=-40{,}000
-+\frac{22{,}000}{1.15}
-+\frac{27{,}600}{(1.15)^2}.
+=-40,000
++\frac{22,000}{1.15}
++\frac{27,600}{(1.15)^2}.
 $$
 
 The two discounted returns are
 
 $$
-\frac{22{,}000}{1.15}
-\approx19{,}130.43,
+\frac{22,000}{1.15}
+\approx19,130.43,
 $$
 
 $$
-\frac{27{,}600}{1.3225}
-\approx20{,}869.57.
+\frac{27,600}{1.3225}
+\approx20,869.57.
 $$
 
 Their sum is \$40,000, so $NPV(0.15)=0$. An IRR claim is verified by substitution, not by comparing the undiscounted total alone.
@@ -2349,7 +2349,7 @@ These effects are nonlinear. Doubling every future return while keeping the outl
 If the outlay falls to \$30,000 while the returns stay fixed, then
 
 $$
--30{,}000+16{,}000s+24{,}000s^2=0
+-30,000+16,000s+24,000s^2=0
 $$
 
 has the valid solution $s=5/6$. Therefore
@@ -2367,13 +2367,13 @@ For a one-year project, the IRR comparison is direct.
 Project X:
 
 $$
-r_X=\frac{17{,}250}{15{,}000}-1=15\%.
+r_X=\frac{17,250}{15,000}-1=15\%.
 $$
 
 Project Y:
 
 $$
-r_Y=\frac{24{,}750}{22{,}000}-1=12.5\%.
+r_Y=\frac{24,750}{22,000}-1=12.5\%.
 $$
 
 Under the chapter's IRR criterion, X is preferred because it has the higher IRR.
@@ -2388,7 +2388,7 @@ Do not confuse a positive NPV at one chosen market rate with the project's IRR. 
 For Design A, use $s=(1+r)^{-1}$:
 
 $$
-88{,}000s^2+54{,}000s-120{,}000=0.
+88,000s^2+54,000s-120,000=0.
 $$
 
 Divide by \$2,000:
@@ -2409,7 +2409,7 @@ Design B is a one-period project:
 
 $$
 r_B
-=\frac{81{,}200}{70{,}000}-1
+=\frac{81,200}{70,000}-1
 =16\%.
 $$
 
@@ -2417,17 +2417,17 @@ The IRR criterion therefore prefers Design B. A market-rate NPV check at $13\%$ 
 
 $$
 NPV_A(0.13)
-=-120{,}000
-+\frac{54{,}000}{1.13}
-+\frac{88{,}000}{(1.13)^2}
-\approx-3{,}295.48,
+=-120,000
++\frac{54,000}{1.13}
++\frac{88,000}{(1.13)^2}
+\approx-3,295.48,
 $$
 
 $$
 NPV_B(0.13)
-=-70{,}000
-+\frac{81{,}200}{1.13}
-\approx1{,}858.41.
+=-70,000
++\frac{81,200}{1.13}
+\approx1,858.41.
 $$
 
 Design A fails to earn the required $13\%$, while Design B still exceeds it. Comparing projects is stronger when the IRR ranking and an NPV check are both interpreted correctly.
