@@ -3489,6 +3489,582 @@
       "sort_order": 110,
       "solution_overview": "Independent exam claims: a 2:1 ticket-mix revenue problem with an integer capacity cap, a quadratic kiln-temperature window, a courier fare with a percentage surcharge, a bakery limited by budget and egg storage, and a square-root versus absolute-value inequality requiring case splits. Each statement stands alone; domain restrictions and integer cutoffs decide several false claims.",
       "placeholder": false
+    },
+    {
+      "id": "math-6-111",
+      "case_id": "MATH 6.111",
+      "title": "Exam-style tasks - 23",
+      "subsection": "6.5",
+      "context": "Evaluate each statement. Mark it TRUE or FALSE.",
+      "statements": [
+        "A wind turbine’s delivered power (in suitable units) for wind speed $v$ with $4\\le v\\le 20$ is modelled by $P(v)=-\\dfrac{1}{2}(v-12)^{2}+32$. Then $P(v)\\ge 24$ holds exactly when $8\\le v\\le 16$.",
+        "The inequality $|x^{2}-5|<4$ has solution set $(-3,-1)\\cup(1,3)$.",
+        "A hydroponic tank needs electrical conductivity $\\mathrm{EC}=0.045m$ from $m$ millilitres of concentrate (whole millilitres only). The grower requires $1.6\\le\\mathrm{EC}\\le 2.0$ and will not spend more than 6 EUR at 0.12 EUR per millilitre. Then every admissible whole $m$ lies in $\\{36,37,\\ldots,44\\}$.",
+        "If producing $x$ units costs $180+0.8x$ EUR, then at least 99 whole units must be produced for the average cost per unit to be at most 2.60 EUR.",
+        "The inequality $\\bigl||x|-3\\bigr|\\ge 2$ has solution set $(-\\infty,-5]\\cup[-1,1]\\cup[5,\\infty)$."
+      ],
+      "answer_key": [
+        true,
+        true,
+        true,
+        false,
+        true
+      ],
+      "tactical_explanations": [
+        "**A.** → True\n\n$$-\\tfrac12(v-12)^{2}+32\\ge 24$$\n\n$$(v-12)^{2}\\le 16$$\n\n$$|v-12|\\le 4$$\n\n$$8\\le v\\le 16.$$\n\nThis interval lies inside the model domain $[4,20]$. Therefore the statement is True.",
+        "**B.** → True\n\n$$-4<x^{2}-5<4$$\n\n$$1<x^{2}<9$$\n\n$$x\\in(-3,-1)\\cup(1,3).$$\n\nEndpoints give $|x^{2}-5|=4$, excluded by the strict inequality. Therefore the statement is True.",
+        "**C.** → True\n\n$$1.6\\le 0.045m\\le 2.0\\Rightarrow \\dfrac{320}{9}\\le m\\le\\dfrac{400}{9}$$\n\nso $35.\\overline{5}\\le m\\le 44.\\overline{4}$. The budget bound $0.12m\\le 6$ gives $m\\le 50$, which is weaker. Whole millilitres in range are exactly $36$ through $44$. Therefore the statement is True.",
+        "**D.** → False\n\n$$\\dfrac{180+0.8x}{x}\\le 2.6\\Rightarrow \\dfrac{180}{x}\\le 1.8\\Rightarrow x\\ge 100.$$\n\nAt $x=99$ the average is still above 2.60 EUR. Therefore the statement is False.",
+        "**E.** → True\n\nSet $u=|x|\\ge 0$. Then $|u-3|\\ge 2$ gives $u\\le 1$ or $u\\ge 5$, i.e. $|x|\\le 1$ or $|x|\\ge 5$, which is the stated union. Therefore the statement is True."
+      ],
+      "difficulty_level": "5/5",
+      "sort_order": 111,
+      "solution_overview": "Mixed exam claims: a wind-turbine quadratic power window, a biquadratic absolute-value inequality, a hydroponic EC dosing band with a budget, an average-cost integer trap, and a nested absolute-value exterior. Each letter is independent.",
+      "placeholder": false
+    },
+    {
+      "id": "math-6-112",
+      "case_id": "MATH 6.112",
+      "title": "Exam-style tasks - 24",
+      "subsection": "6.5",
+      "context": "Evaluate each statement. Mark it TRUE or FALSE.",
+      "statements": [
+        "A sailboat’s heel angle (degrees) under wind load $w\\in[0,50]$ is modelled by $h(w)=0.4w-8$. The skipper requires $|h(w)|\\le 12$. Then the boat is safe for every wind load in $[0,50]$ if and only if $5\\le w\\le 45$.",
+        "The inequality $\\sqrt{x+6}\\le|x-2|$ holds if and only if $x\\le 0$ or $x\\ge 6$.",
+        "On a subway platform, the number of passengers who can board during a dwell of $t$ seconds is $8+1.5t$. At least 50 passengers must board and the timetable forbids $t>40$. Then the shortest admissible whole-second dwell is 28 seconds.",
+        "The comparison $\\dfrac{2x-1}{x+3}\\le 1$ is equivalent to $-3\\le x\\le 4$.",
+        "Humidity in a cheese-aging cave $t$ hours after the vents are adjusted is $H(t)=-t^{2}+14t+40$. The requirement $H(t)\\ge 80$ holds exactly for $4\\le t\\le 10$."
+      ],
+      "answer_key": [
+        false,
+        false,
+        true,
+        false,
+        true
+      ],
+      "tactical_explanations": [
+        "**A.** → False\n\n$$|0.4w-8|\\le 12\\Rightarrow -10\\le w\\le 50.$$\n\nIntersecting the physical domain $[0,50]$ gives the entire interval $[0,50]$, not $[5,45]$. Therefore the statement is False.",
+        "**B.** → False\n\nDomain $x\\ge -6$. Squaring case by case yields\n\n$$x\\in\\Bigl[-6,\\dfrac{5-\\sqrt{33}}{2}\\Bigr]\\cup\\Bigl[\\dfrac{5+\\sqrt{33}}{2},\\infty\\Bigr),$$\n\nwith approximate cutoffs $-0.37$ and $5.37$, not $0$ and $6$. Therefore the statement is False.",
+        "**C.** → True\n\n$$8+1.5t\\ge 50\\Rightarrow t\\ge 28,$$\n\nand $t\\le 40$. The shortest whole-second dwell is therefore 28. Therefore the statement is True.",
+        "**D.** → False\n\n$$\\dfrac{2x-1}{x+3}-1=\\dfrac{x-4}{x+3}\\le 0$$\n\ngives $x\\in(-3,4]$. The pole $x=-3$ is excluded, so $[-3,4]$ is wrong. Therefore the statement is False.",
+        "**E.** → True\n\n$$-t^{2}+14t+40\\ge 80\\Rightarrow t^{2}-14t+40\\le 0$$\n\n$$(t-4)(t-10)\\le 0\\Rightarrow 4\\le t\\le 10.$$\n\nTherefore the statement is True."
+      ],
+      "difficulty_level": "5/5",
+      "sort_order": 112,
+      "solution_overview": "Independent claims: a sailboat heel-angle band misstated as a proper subinterval, a square-root/absolute-value case split, subway dwell timing, a rational comparison with a pole trap, and a cheese-cave humidity parabola.",
+      "placeholder": false
+    },
+    {
+      "id": "math-6-113",
+      "case_id": "MATH 6.113",
+      "title": "Exam-style tasks - 25",
+      "subsection": "6.5",
+      "context": "Evaluate each statement. Mark it TRUE or FALSE.",
+      "statements": [
+        "A climbing rope’s remaining strength after $n$ hard falls ($n\\ge 0$ an integer) is $S(n)=100-0.8n^{2}$. The gym requires $S(n)\\ge 64$. Then the rope may still be used after 7 hard falls.",
+        "Each climbing-hold kit uses 6 bolts at 1.50 EUR and 2 resin packs at 4 EUR, plus 3 EUR of labor. With a budget of 900 EUR and shelf space for at most 280 bolts and packs combined, the maximum number of kits is less than 40.",
+        "The inequality $|x(x-6)|\\le 5$ has solution set $[-1,1]\\cup[5,7]$.",
+        "A lighthouse beam has intensity $I(d)=\\dfrac{90}{d+1}$ at distance $d\\ge 0$ kilometres. The beam is considered visible when $I(d)\\ge 6$. Then it is visible for every $d$ in $[0,15]$.",
+        "The strict inequality $\\dfrac{3x+2}{x-1}>2$ holds exactly when $x<-4$ or $x>1$."
+      ],
+      "answer_key": [
+        false,
+        true,
+        false,
+        false,
+        true
+      ],
+      "tactical_explanations": [
+        "**A.** → False\n\n$$100-0.8n^{2}\\ge 64\\Rightarrow n^{2}\\le 45\\Rightarrow n\\le\\sqrt{45}\\approx 6.71.$$\n\nThe largest integer $n$ is 6. At $n=7$, $S(7)=60.8<64$. Therefore the statement is False.",
+        "**B.** → True\n\nCost per kit: $6\\cdot 1.5+2\\cdot 4+3=20$ EUR. Budget: $n\\le 45$. Storage: $8n\\le 280\\Rightarrow n\\le 35$. Maximum is 35, which is less than 40. Therefore the statement is True.",
+        "**C.** → False\n\n$$-5\\le x^{2}-6x\\le 5.$$\n\n$$x^{2}-6x-5\\le 0\\Rightarrow x\\in[3-\\sqrt{14},\\,3+\\sqrt{14}],$$\n\n$$x^{2}-6x+5\\ge 0\\Rightarrow x\\le 1\\text{ or }x\\ge 5.$$\n\nIntersection: $[3-\\sqrt{14},1]\\cup[5,3+\\sqrt{14}]\\approx[-0.74,1]\\cup[5,6.74]$, not $[-1,1]\\cup[5,7]$. Therefore the statement is False.",
+        "**D.** → False\n\n$$\\dfrac{90}{d+1}\\ge 6\\Rightarrow d\\le 14.$$\n\nAt $d=15$, $I=5.625<6$. Therefore the statement is False.",
+        "**E.** → True\n\n$$\\dfrac{3x+2}{x-1}-2=\\dfrac{x+4}{x-1}>0$$\n\ngives $x<-4$ or $x>1$ (pole excluded). Therefore the statement is True."
+      ],
+      "difficulty_level": "5/5",
+      "sort_order": 113,
+      "solution_overview": "Independent claims: rope-strength after falls, hold-kit budget and storage, a product absolute-value inequality, lighthouse visibility range, and a rational inequality with a vertical asymptote.",
+      "placeholder": false
+    },
+    {
+      "id": "math-6-114",
+      "case_id": "MATH 6.114",
+      "title": "Exam-style tasks - 26",
+      "subsection": "6.5",
+      "context": "Evaluate each statement. Mark it TRUE or FALSE.",
+      "statements": [
+        "A vineyard’s yield (crates) after $f$ frost-free weeks is $Y(f)=-2f^{2}+40f+10$. For whole weeks $f$, the yield is at least 170 crates precisely when $f\\in\\{6,7,\\ldots,14\\}$.",
+        "A 3D-printer nozzle temperature $T$ must satisfy $|T-215|<8$ and $T\\ge 200$. Then every admissible temperature lies in the closed interval $207\\le T\\le 223$.",
+        "The inequality $|2x-1|+|x+3|\\ge 10$ holds if and only if $x\\le -4$ or $x\\ge 3$.",
+        "A ski-lift runs $n$ gondolas once each hour. Hourly demand at hour $h\\in\\{0,1,\\ldots,6\\}$ is $60+5h$ skiers, and each gondola holds 8 skiers. Then a fleet of 11 gondolas covers every hour’s demand.",
+        "The inequality $\\sqrt{4-x}>x-1$ has solution set $(-\\infty,3]$."
+      ],
+      "answer_key": [
+        true,
+        false,
+        false,
+        false,
+        false
+      ],
+      "tactical_explanations": [
+        "**A.** → True\n\n$$-2f^{2}+40f+10\\ge 170\\Rightarrow f^{2}-20f+80\\le 0$$\n\n$$10-2\\sqrt{5}\\le f\\le 10+2\\sqrt{5}\\approx[5.53,14.47].$$\n\nWhole weeks in range are $6$ through $14$; $f=5$ and $f=15$ fall short. Therefore the statement is True.",
+        "**B.** → False\n\n$$|T-215|<8\\Rightarrow 207<T<223.$$\n\nThe closed interval wrongly includes the endpoints, where the tolerance fails. Therefore the statement is False.",
+        "**C.** → False\n\nPiecewise analysis at the kinks $x=-3$ and $x=\\tfrac12$ yields $x\\le -4$ or $x\\ge\\tfrac83$. Since $\\tfrac83\\approx 2.67\\ne 3$, the claim is False.",
+        "**D.** → False\n\nWorst demand is at $h=6$: $90$ skiers, needing $n\\ge\\lceil 90/8\\rceil=12$. Eleven gondolas supply only 88 seats. Therefore the statement is False.",
+        "**E.** → False\n\nDomain $x\\le 4$. For $x<1$ the right side is negative, so every defined $x<1$ works. For $1\\le x\\le 4$, squaring gives $x<3$. The solution is $(-\\infty,3)$, and $x=3$ fails ($1\\not>2$). Therefore the statement is False."
+      ],
+      "difficulty_level": "5/5",
+      "sort_order": 114,
+      "solution_overview": "Independent claims: vineyard frost-free yield weeks, a strict nozzle temperature band, a two-piece absolute-value sum, ski-lift hourly capacity, and a square-root inequality with an endpoint trap.",
+      "placeholder": false
+    },
+    {
+      "id": "math-6-115",
+      "case_id": "MATH 6.115",
+      "title": "Exam-style tasks - 27",
+      "subsection": "6.5",
+      "context": "Evaluate each statement. Mark it TRUE or FALSE.",
+      "statements": [
+        "A radio-telescope pointing error (degrees) is $e(\\theta)=|3\\theta-1|$. The dish is on target when $e(\\theta)<0.5$. Then the admissible angles are exactly $\\dfrac16<\\theta<\\dfrac12$.",
+        "Outdoor work under smoke is allowed only while the AQI model $A(t)=-t^{2}+16t+20$ stays at most 80 during a shift $t\\in[0,12]$. Then work is allowed exclusively on the interval $[10,12]$.",
+        "A pottery wheel must run between 120 and 240 RPM and also satisfy $|r-200|\\le 30$. Then the usable speeds are exactly $170\\le r\\le 230$.",
+        "Each sculpture uses 2 kg of clay at 3 EUR/kg, one glaze jar at 8 EUR, and $0.5$ kWh of energy at 0.40 EUR/kWh. With a budget of 500 EUR and 80 kg of clay in stock, the maximum number of sculptures is less than 35.",
+        "The inequality $\\dfrac{|x+1|}{|x-2|}\\ge 2$ (with $x\\ne 2$) has solution set $[1,5]\\setminus\\{2\\}$."
+      ],
+      "answer_key": [
+        true,
+        false,
+        true,
+        false,
+        true
+      ],
+      "tactical_explanations": [
+        "**A.** → True\n\n$$|3\\theta-1|<0.5\\Rightarrow \\dfrac16<\\theta<\\dfrac12.$$\n\nTherefore the statement is True.",
+        "**B.** → False\n\n$$-t^{2}+16t+20\\le 80\\Rightarrow (t-6)(t-10)\\ge 0.$$\n\nOn $[0,12]$ the solution is $[0,6]\\cup[10,12]$, not only $[10,12]$. Therefore the statement is False.",
+        "**C.** → True\n\n$$|r-200|\\le 30\\Rightarrow 170\\le r\\le 230,$$\n\nalready inside $[120,240]$. Therefore the statement is True.",
+        "**D.** → False\n\nCost per piece: $2\\cdot 3+8+0.5\\cdot 0.4=14.2$ EUR. Budget: $n\\le\\lfloor 500/14.2\\rfloor=35$. Clay: $n\\le 40$. Maximum is 35, which is not less than 35. Therefore the statement is False.",
+        "**E.** → True\n\n$$|x+1|\\ge 2|x-2|\\Leftrightarrow (x+1)^{2}\\ge 4(x-2)^{2}$$\n\n$$(5-x)(x-1)\\ge 0\\Rightarrow x\\in[1,5],$$\n\nexcluding the pole $x=2$. Therefore the statement is True."
+      ],
+      "difficulty_level": "5/5",
+      "sort_order": 115,
+      "solution_overview": "Independent claims: telescope pointing tolerance, a smoke-AQI quadratic band with two safe windows, pottery RPM constraints, sculpture material limits, and a ratio of absolute values.",
+      "placeholder": false
+    },
+    {
+      "id": "math-6-116",
+      "case_id": "MATH 6.116",
+      "title": "Exam-style tasks - 28",
+      "subsection": "6.5",
+      "context": "Evaluate each statement. Mark it TRUE or FALSE.",
+      "statements": [
+        "Platelet viability after $h$ whole hours of storage is $V(h)=12-0.15h^{2}$. Units remain issueable while $V(h)>3$. Then every whole hour $h\\in\\{0,1,\\ldots,8\\}$ is still issueable.",
+        "Orchestra-pit humidity $H$ must satisfy $|H-50|\\le 8$ and $H>40$. Then the admissible humidities are exactly $42<H<58$.",
+        "Tidal-pool depth (metres) $t$ hours after low tide is $d(t)=-0.5t^{2}+3t+2$ on $0\\le t\\le 8$. Sampling requires $d(t)\\ge 4.5$. Then sampling is possible exactly for $1\\le t\\le 5$.",
+        "The biquadratic inequality $x^{4}-13x^{2}+36<0$ has solution set $(-3,-2)\\cup(2,3)$.",
+        "Each turbidity-sampling run uses 3 filters at 2.50 EUR, one bottle at 4 EUR, and 1.50 EUR transport. With a budget of 200 EUR and 90 filters in stock, the maximum number of runs is less than 25."
+      ],
+      "answer_key": [
+        false,
+        false,
+        true,
+        true,
+        true
+      ],
+      "tactical_explanations": [
+        "**A.** → False\n\n$$12-0.15h^{2}>3\\Rightarrow h^{2}<60\\Rightarrow h<\\sqrt{60}\\approx 7.75.$$\n\nAt $h=8$, $V=2.4\\le 3$. Therefore the statement is False.",
+        "**B.** → False\n\n$$|H-50|\\le 8\\Rightarrow 42\\le H\\le 58.$$\n\nThe closed endpoints are allowed; the claim’s open interval is too narrow. Therefore the statement is False.",
+        "**C.** → True\n\n$$-0.5t^{2}+3t+2\\ge 4.5\\Rightarrow t^{2}-6t+5\\le 0$$\n\n$$(t-1)(t-5)\\le 0\\Rightarrow 1\\le t\\le 5,$$\n\ninside $[0,8]$. Therefore the statement is True.",
+        "**D.** → True\n\nWith $u=x^{2}$: $(u-4)(u-9)<0\\Rightarrow 4<u<9$, hence $2<|x|<3$, i.e. $(-3,-2)\\cup(2,3)$. Therefore the statement is True.",
+        "**E.** → True\n\nCost per run: $7.5+4+1.5=13$ EUR. Budget: $n\\le 15$. Filters: $n\\le 30$. Maximum is 15, which is less than 25. Therefore the statement is True."
+      ],
+      "difficulty_level": "5/5",
+      "sort_order": 116,
+      "solution_overview": "Independent claims: blood-bank viability hours, orchestra humidity endpoints, tidal sampling depth, a biquadratic sign chart, and field-sampling supply limits.",
+      "placeholder": false
+    },
+    {
+      "id": "math-6-117",
+      "case_id": "MATH 6.117",
+      "title": "Exam-style tasks - 29",
+      "subsection": "6.5",
+      "context": "Evaluate each statement. Mark it TRUE or FALSE.",
+      "statements": [
+        "A compost pile’s core temperature is $C(t)=-t^{2}+18t+20$ degrees Celsius $t$ hours after turning. The safe band is $60\\le C(t)\\le 84$. Then the pile is safe throughout $3\\le t\\le 15$.",
+        "The inequality $|2x-4|<3|x+1|$ holds if and only if $x<-7$ or $x>\\dfrac15$.",
+        "Developer fluid cools according to $T(m)=24-0.4m$ (°C after $m$ minutes) and must stay in $[18,22]$. Then every whole minute $m\\in\\{6,7,\\ldots,14\\}$ is usable and no other whole minute is.",
+        "The inequality $\\dfrac{x^{2}-9}{x-2}\\ge 0$ has solution set $[-3,2]\\cup[3,\\infty)$.",
+        "Each beehive frame uses $0.8$ kg of wax at 12 EUR/kg, 4 EUR of wood, and 1 EUR of labor. With a budget of 350 EUR and at most 40 kg of wax in stock, the maximum number of frames is less than 25."
+      ],
+      "answer_key": [
+        false,
+        true,
+        false,
+        false,
+        true
+      ],
+      "tactical_explanations": [
+        "**A.** → False\n\n$C\\ge 60$ forces $t\\in[9-\\sqrt{41},9+\\sqrt{41}]\\approx[2.60,15.40]$. $C\\le 84$ forces $t\\le 9-\\sqrt{17}$ or $t\\ge 9+\\sqrt{17}\\approx 4.88$ / $13.12$. The intersection is two separate bands near the ends, not the single interval $[3,15]$. Therefore the statement is False.",
+        "**B.** → True\n\nSquaring both nonnegative sides:\n\n$$4(x-2)^{2}<9(x+1)^{2}\\Rightarrow 5x^{2}+34x-7>0.$$\n\nRoots $-7$ and $\\tfrac15$; the quadratic is positive outside them. Therefore the statement is True.",
+        "**C.** → False\n\n$$18\\le 24-0.4m\\le 22\\Rightarrow 5\\le m\\le 15.$$\n\nWhole minutes $5$ and $15$ are also usable, so $\\{6,\\ldots,14\\}$ is incomplete. Therefore the statement is False.",
+        "**D.** → False\n\nZeros at $\\pm 3$, pole at $2$. A sign chart gives $[-3,2)\\cup[3,\\infty)$. Including $x=2$ is illegal. Therefore the statement is False.",
+        "**E.** → True\n\nCost per frame: $0.8\\cdot 12+4+1=14.6$ EUR. Budget: $n\\le 23$. Wax: $n\\le 50$. Maximum is 23, which is less than 25. Therefore the statement is True."
+      ],
+      "difficulty_level": "5/5",
+      "sort_order": 117,
+      "solution_overview": "Independent claims: a two-sided compost temperature band, an absolute-value comparison via squaring, darkroom cooling minutes, a rational inequality with a pole, and beehive-frame costing.",
+      "placeholder": false
+    },
+    {
+      "id": "math-6-118",
+      "case_id": "MATH 6.118",
+      "title": "Exam-style tasks - 30",
+      "subsection": "6.5",
+      "context": "Evaluate each statement. Mark it TRUE or FALSE.",
+      "statements": [
+        "During stained-glass annealing the kiln temperature is $500-12t$ (°C after $t$ hours) and must stay between 200 and 450 inclusive. Then every $t$ with $4\\le t\\le 25$ is admissible.",
+        "A theater counterweight with fixed load $b=40$ requires $|2a-40|\\le 15$. Then every admissible counterweight mass $a$ satisfies $12\\le a\\le 28$.",
+        "The condition $\\max\\{x-2,\\,5-2x\\}\\le 3$ is equivalent to $|x-3|\\le 2$.",
+        "The inequality $\\sqrt{x-1}<3-\\sqrt{x+2}$ has solution set $[2,7]$.",
+        "Each stage-weight plate uses 4 kg of steel at 2 EUR/kg, one rubber pad at 3 EUR, and 0.50 EUR of paint. With a budget of 260 EUR and 180 kg of steel, the workshop can produce at least 30 plates."
+      ],
+      "answer_key": [
+        false,
+        false,
+        true,
+        false,
+        false
+      ],
+      "tactical_explanations": [
+        "**A.** → False\n\n$$200\\le 500-12t\\le 450\\Rightarrow \\dfrac{50}{12}\\le t\\le 25.$$\n\nSince $\\tfrac{50}{12}\\approx 4.17>4$, the claim’s lower endpoint is too small. Therefore the statement is False.",
+        "**B.** → False\n\n$$|2a-40|\\le 15\\Rightarrow 12.5\\le a\\le 27.5.$$\n\nThe integers-friendly claim $[12,28]$ overshoots both ends. Therefore the statement is False.",
+        "**C.** → True\n\n$$x-2\\le 3\\text{ and }5-2x\\le 3\\Rightarrow 1\\le x\\le 5,$$\n\nwhich is exactly $|x-3|\\le 2$. Therefore the statement is True.",
+        "**D.** → False\n\nDomain forces $1\\le x\\le 7$. Squaring on that set yields the open-closed interval $(2,7]$. Including $x=2$ fails the strict inequality. Therefore the statement is False.",
+        "**E.** → False\n\nCost per plate: $11.5$ EUR. Budget: $n\\le 22$. Steel: $n\\le 45$. Maximum is 22, so at least 30 is impossible. Therefore the statement is False."
+      ],
+      "difficulty_level": "5/5",
+      "sort_order": 118,
+      "solution_overview": "Independent claims: annealing temperature schedule, counterweight balance, a max-of-linear reformulation, a nested square-root inequality, and stage-weight production limits.",
+      "placeholder": false
+    },
+    {
+      "id": "math-6-119",
+      "case_id": "MATH 6.119",
+      "title": "Exam-style tasks - 31",
+      "subsection": "6.5",
+      "context": "Evaluate each statement. Mark it TRUE or FALSE.",
+      "statements": [
+        "An aquarium’s salinity after adding $x$ litres of freshwater to a 100 L tank is $S(x)=35-0.5x$. The keeper needs $32\\le S(x)\\le 34$. Then every admissible $x$ satisfies $2\\le x\\le 6$.",
+        "The inequality $|x^{2}-4x|\\ge 5$ has solution set $(-\\infty,-1]\\cup[5,\\infty)$.",
+        "Hydroponic pH starts at 7.2 and falls by $0.05$ per millilitre of acid (whole millilitres). The target is $5.8\\le\\mathrm{pH}\\le 6.4$, and at most 6 EUR may be spent at 0.25 EUR/ml. Then every whole millilitre from 16 through 28 inclusive is admissible.",
+        "The inequality $\\dfrac{x+5}{2-x}>0$ holds exactly on the open interval $(-5,2)$.",
+        "A rectangular poster has length twice its width, at most 120 cm of border trim, and area at least $800\\,\\mathrm{cm}^{2}$. Then the width may be any real number from 18 to 20 cm inclusive."
+      ],
+      "answer_key": [
+        true,
+        true,
+        false,
+        true,
+        false
+      ],
+      "tactical_explanations": [
+        "**A.** → True\n\n$$32\\le 35-0.5x\\le 34\\Rightarrow 2\\le x\\le 6.$$\n\nTherefore the statement is True.",
+        "**B.** → True\n\n$$x^{2}-4x\\ge 5\\Rightarrow (x+1)(x-5)\\ge 0,$$\n\nwhile $x^{2}-4x\\le -5$ rearranges to $(x-2)^{2}+1\\le 0$, which never holds. So $x\\le -1$ or $x\\ge 5$. Therefore the statement is True.",
+        "**C.** → False\n\nThe pH band alone gives $16\\le m\\le 28$, but the budget $0.25m\\le 6$ forces $m\\le 24$. Values $25$–$28$ are unaffordable. Therefore the statement is False.",
+        "**D.** → True\n\nZero at $-5$, pole at $2$. Same-sign analysis yields the open interval $(-5,2)$. Therefore the statement is True.",
+        "**E.** → False\n\nWith width $w$ and length $2w$: trim $6w\\le 120\\Rightarrow w\\le 20$; area $2w^{2}\\ge 800\\Rightarrow w\\ge 20$. Only $w=20$ works, not $[18,20]$. Therefore the statement is False."
+      ],
+      "difficulty_level": "5/5",
+      "sort_order": 119,
+      "solution_overview": "Independent claims: aquarium salinity dilution, a quadratic absolute-value inequality, pH dosing with a budget cap, a rational sign interval, and a double-constrained poster.",
+      "placeholder": false
+    },
+    {
+      "id": "math-6-120",
+      "case_id": "MATH 6.120",
+      "title": "Exam-style tasks - 32",
+      "subsection": "6.5",
+      "context": "Evaluate each statement. Mark it TRUE or FALSE.",
+      "statements": [
+        "An ice-rink resurfacer uses $W=40+2.5n$ litres of water for $n$ passes and draws $3n$ kWh of power. The water tank limit for quality is $W\\le 180$, and at most 150 kWh may be used. Then the largest possible whole number of passes is 56.",
+        "The inequality $|3-x|\\ge 2|x+1|$ holds if and only if $x\\le -5$ or $x\\ge\\dfrac13$.",
+        "A pool’s depth after $t$ minutes of pumping is $D(t)=0.3t$ metres. Filtering needs $D\\ge 0.9$ while overflow risk begins when $D>2.1$. Then safe operating times are exactly $3\\le t\\le 7$.",
+        "The inequality $\\dfrac{x-4}{x+1}\\le 2$ is equivalent to $x\\in(-\\infty,-6]\\cup(-1,\\infty)$.",
+        "Each centrifuge run uses 2 vials at 6 EUR, one rotor check at 5 EUR, and 1.20 EUR of energy. With a budget of 400 EUR and 90 vials in stock, the maximum number of runs is less than 30."
+      ],
+      "answer_key": [
+        false,
+        false,
+        true,
+        true,
+        true
+      ],
+      "tactical_explanations": [
+        "**A.** → False\n\nWater alone: $40+2.5n\\le 180\\Rightarrow n\\le 56$. Power: $3n\\le 150\\Rightarrow n\\le 50$. The binding limit is 50, not 56. Therefore the statement is False.",
+        "**B.** → False\n\nSquaring yields $(1-3x)(x+5)\\ge 0$, hence $x\\in\\bigl[-5,\\tfrac13\\bigr]$, the complementary region to the claim. Therefore the statement is False.",
+        "**C.** → True\n\n$$0.9\\le 0.3t\\le 2.1\\Rightarrow 3\\le t\\le 7.$$\n\n(At $t=7$, $D=2.1$, still not strictly above the overflow threshold.) Therefore the statement is True.",
+        "**D.** → True\n\n$$\\dfrac{x-4}{x+1}-2=\\dfrac{-x-6}{x+1}\\le 0\\Leftrightarrow\\dfrac{x+6}{x+1}\\ge 0,$$\n\ngiving $(-\\infty,-6]\\cup(-1,\\infty)$. Therefore the statement is True.",
+        "**E.** → True\n\nCost per run: $18.2$ EUR. Budget: $n\\le 21$. Vials: $n\\le 45$. Maximum is 21, which is less than 30. Therefore the statement is True."
+      ],
+      "difficulty_level": "5/5",
+      "sort_order": 120,
+      "solution_overview": "Independent claims: dual water/power limits for an ice resurfacer, an absolute-value comparison with a complementary trap, pool pumping depth, a rational inequality, and lab centrifuge costing.",
+      "placeholder": false
+    },
+    {
+      "id": "math-6-121",
+      "case_id": "MATH 6.121",
+      "title": "Exam-style tasks - 33",
+      "subsection": "6.5",
+      "context": "Evaluate each statement. Mark it TRUE or FALSE.",
+      "statements": [
+        "Guy-wire tension on a radio mast is $T(w)=50+0.8w^{2}$ under wind speed $w\\ge 0$. The cable is rated for at most 200. Then the mast is safe for every wind speed in $[0,14]$.",
+        "The inequality $\\sqrt{x+3}-\\sqrt{x}\\le 1$ holds for every $x\\ge 0$.",
+        "A freight elevator may carry at most 900 kg. Each pallet weighs 85 kg and the operator weighs 70 kg. Floor space allows at most 10 pallets. Then at most 8 pallets may be loaded.",
+        "The strict inequality $(x-2)^{2}(x+1)>0$ has solution set $(-1,\\infty)\\setminus\\{2\\}$.",
+        "The inequality $|x+4|+|x-1|<7$ has solution set $(-5,2)$."
+      ],
+      "answer_key": [
+        false,
+        false,
+        false,
+        true,
+        true
+      ],
+      "tactical_explanations": [
+        "**A.** → False\n\n$$50+0.8w^{2}\\le 200\\Rightarrow w^{2}\\le 187.5\\Rightarrow w\\le\\sqrt{187.5}\\approx 13.69.$$\n\nAt $w=14$ the tension exceeds 200. Therefore the statement is False.",
+        "**B.** → False\n\nDomain $x\\ge 0$. Isolating and squaring yields the necessary and sufficient condition $x\\ge 1$. At $x=0$, $\\sqrt{3}>1$. Therefore the statement is False.",
+        "**C.** → False\n\n$$85n+70\\le 900\\Rightarrow n\\le 9.$$\n\nSpace allows 10, so the load limit permits 9 pallets, not merely 8. Therefore the statement is False.",
+        "**D.** → True\n\n$(x-2)^{2}\\ge 0$ always and vanishes only at $x=2$. The product is positive precisely when $x+1>0$ and $x\\ne 2$. Therefore the statement is True.",
+        "**E.** → True\n\nPiecewise on $(-\\infty,-4]$, $[-4,1]$, and $[1,\\infty)$ yields the open interval $(-5,2)$. Therefore the statement is True."
+      ],
+      "difficulty_level": "5/5",
+      "sort_order": 121,
+      "solution_overview": "Independent claims: mast guy-wire tension, a difference of square roots, elevator pallet loading, a squared-factor cubic sign chart, and a two-kink absolute-value sum.",
+      "placeholder": false
+    },
+    {
+      "id": "math-6-122",
+      "case_id": "MATH 6.122",
+      "title": "Exam-style tasks - 34",
+      "subsection": "6.5",
+      "context": "Evaluate each statement. Mark it TRUE or FALSE.",
+      "statements": [
+        "A cold ski-wax compound bonds correctly precisely when the snow temperature $T$ satisfies $|T+5|\\le 3$. Then the usable temperatures are exactly $-8<T<-2$.",
+        "Each chemistry batch needs $1.5$ L of solvent at 4 EUR/L, $0.2$ kg of catalyst at 30 EUR/kg, and 5 EUR of disposal fees. With a budget of 280 EUR and 60 L of solvent, the maximum number of batches is less than 20.",
+        "The inequality $\\dfrac{|x-1|}{x+2}\\le 1$ (defined for $x\\ne -2$) has solution set $\\bigl[-\\dfrac12,\\infty\\bigr)$.",
+        "A firework’s height is $h(t)=-5t^{2}+40t$ metres. It is more than 60 m above ground between 2 and 6 seconds inclusive.",
+        "The inequality $\\bigl||x|-2\\bigr|\\le 1$ has solution set $[-3,-1]\\cup[1,3]$."
+      ],
+      "answer_key": [
+        false,
+        true,
+        false,
+        false,
+        true
+      ],
+      "tactical_explanations": [
+        "**A.** → False\n\n$$|T+5|\\le 3\\Rightarrow -8\\le T\\le -2.$$\n\nThe endpoints are included. Therefore the statement is False.",
+        "**B.** → True\n\nCost: $1.5\\cdot 4+0.2\\cdot 30+5=17$ EUR. Budget: $n\\le 16$. Solvent: $n\\le 40$. Maximum is 16, which is less than 20. Therefore the statement is True.",
+        "**C.** → False\n\nFor $x>-2$ one obtains $x\\ge -\\tfrac12$. For $x<-2$ the inequality holds for every such $x$. The full set is $(-\\infty,-2)\\cup\\bigl[-\\tfrac12,\\infty\\bigr)$. Therefore the statement is False.",
+        "**D.** → False\n\n$$-5t^{2}+40t>60\\Rightarrow (t-2)(t-6)<0\\Rightarrow 2<t<6.$$\n\nThe inclusive claim wrongly keeps the endpoints, where $h=60$. Therefore the statement is False.",
+        "**E.** → True\n\n$$1\\le|x|\\le 3\\Rightarrow x\\in[-3,-1]\\cup[1,3].$$\n\nTherefore the statement is True."
+      ],
+      "difficulty_level": "5/5",
+      "sort_order": 122,
+      "solution_overview": "Independent claims: ski-wax temperature endpoints, chemistry-batch costing, a rational absolute-value inequality with a left ray, a firework height window, and nested absolute values.",
+      "placeholder": false
+    },
+    {
+      "id": "math-6-123",
+      "case_id": "MATH 6.123",
+      "title": "Exam-style tasks - 35",
+      "subsection": "6.5",
+      "context": "Evaluate each statement. Mark it TRUE or FALSE.",
+      "statements": [
+        "Greenhouse vents open while interior temperature $u(t)=-0.4t^{2}+8t+10$ stays strictly above 30°C ($t$ hours after dawn). Then the vents are open exactly on the interval $(3,17)$.",
+        "The inequality $|4x+3|\\ge 2x+9$ has solution set $(-\\infty,-2]\\cup[3,\\infty)$.",
+        "A geothermal heat pump requires water temperature $W$ with $35\\le W\\le 55$ and $|W-48|\\le 10$. Then the admissible temperatures are exactly $38\\le W\\le 55$.",
+        "An orchard irrigates each tree with 12 L from a 900 L daily pump allowance and spends 2 EUR of fertilizer per tree from a 140 EUR budget. Then the maximum number of trees that can be served is less than 70.",
+        "The inequality $\\dfrac{1}{x-3}+\\dfrac{1}{x+3}\\le 0$ has solution set $(-\\infty,-3)\\cup[0,3)$."
+      ],
+      "answer_key": [
+        false,
+        true,
+        true,
+        false,
+        true
+      ],
+      "tactical_explanations": [
+        "**A.** → False\n\n$$-0.4t^{2}+8t+10>30\\Rightarrow t^{2}-20t+50<0$$\n\n$$t\\in(10-5\\sqrt{2},\\,10+5\\sqrt{2})\\approx(2.93,17.07),$$\n\nnot $(3,17)$. Therefore the statement is False.",
+        "**B.** → True\n\nFor $x\\ge -\\tfrac34$: $4x+3\\ge 2x+9\\Rightarrow x\\ge 3$. For $x<-\\tfrac34$: $-4x-3\\ge 2x+9\\Rightarrow x\\le -2$. Union: $(-\\infty,-2]\\cup[3,\\infty)$. Therefore the statement is True.",
+        "**C.** → True\n\n$$|W-48|\\le 10\\Rightarrow 38\\le W\\le 58,$$\n\nintersected with $[35,55]$ yields $[38,55]$. Therefore the statement is True.",
+        "**D.** → False\n\nWater: $n\\le 75$. Fertilizer: $n\\le 70$. Maximum is 70, which is not less than 70. Therefore the statement is False.",
+        "**E.** → True\n\n$$\\dfrac{2x}{x^{2}-9}\\le 0$$\n\nwith poles $\\pm 3$ yields $(-\\infty,-3)\\cup[0,3)$. Therefore the statement is True."
+      ],
+      "difficulty_level": "5/5",
+      "sort_order": 123,
+      "solution_overview": "Independent claims: greenhouse vent timing, a one-sided absolute-value inequality, geothermal temperature intersection, orchard water and fertilizer caps, and a sum of reciprocals.",
+      "placeholder": false
+    },
+    {
+      "id": "math-6-124",
+      "case_id": "MATH 6.124",
+      "title": "Exam-style tasks - 36",
+      "subsection": "6.5",
+      "context": "Evaluate each statement. Mark it TRUE or FALSE.",
+      "statements": [
+        "A recreational dive’s no-decompression limit at depth $d$ metres ($10\\le d\\le 40$) is $N(d)=60-1.2d$ minutes. Requiring $N(d)\\ge 24$ restricts depth to $10\\le d\\le 30$.",
+        "The inequality $|x(x+5)|<6$ has solution set $(-6,-3)\\cup(-2,1)$.",
+        "A solar string produces $V=18n$ volts with $n$ panels. The inverter accepts $90\\le V\\le 180$ and the roof holds at most 12 panels. Then every integer $n$ from 5 through 12 inclusive is admissible.",
+        "If production cost is $250+1.1x$ EUR for $x$ whole units, then at least 104 units must be made for average cost to fall strictly below 3.50 EUR.",
+        "The inequality $\\sqrt{5-2x}\\ge x+1$ has solution set $(-\\infty,1]$."
+      ],
+      "answer_key": [
+        true,
+        true,
+        false,
+        false,
+        false
+      ],
+      "tactical_explanations": [
+        "**A.** → True\n\n$$60-1.2d\\ge 24\\Rightarrow d\\le 30,$$\n\ntogether with $d\\ge 10$. Therefore the statement is True.",
+        "**B.** → True\n\n$$-6<x^{2}+5x<6$$\n\nsplits into $(x+2)(x+3)>0$ and $(x+6)(x-1)<0$, intersecting in $(-6,-3)\\cup(-2,1)$. Therefore the statement is True.",
+        "**C.** → False\n\nVoltage forces $5\\le n\\le 10$. Roof space allows 12, but $n=11$ and $n=12$ exceed 180 V. Therefore the statement is False.",
+        "**D.** → False\n\n$$\\dfrac{250}{x}<2.4\\Rightarrow x>\\dfrac{250}{2.4}=104.\\overline{1}.$$\n\nThe smallest whole $x$ is 105. Therefore the statement is False.",
+        "**E.** → False\n\nDomain $x\\le\\tfrac52$. For $x\\le -1$ the inequality holds automatically. For $x>-1$, squaring yields $x\\le -2+2\\sqrt{2}\\approx 0.83$. The true set is $(-\\infty,-2+2\\sqrt{2}]$, not $(-\\infty,1]$. Therefore the statement is False."
+      ],
+      "difficulty_level": "5/5",
+      "sort_order": 124,
+      "solution_overview": "Independent claims: dive no-decompression depth, a product absolute-value inequality, solar-string voltage limits, average-cost integer rounding, and a square-root inequality with a mixed linear right-hand side.",
+      "placeholder": false
+    },
+    {
+      "id": "math-6-125",
+      "case_id": "MATH 6.125",
+      "title": "Exam-style tasks - 37",
+      "subsection": "6.5",
+      "context": "Evaluate each statement. Mark it TRUE or FALSE.",
+      "statements": [
+        "A cable car may run when wind speed $w\\ge 0$ satisfies $w<18$ and $|w-10|>2$. Then the operating winds are exactly the interval $(12,18)$.",
+        "The inequality $\\bigl|2-|x|\\bigr|\\ge 1$ has solution set $(-\\infty,-3]\\cup[-1,1]\\cup[3,\\infty)$.",
+        "Each brewery keg needs 18 L from a 900 L wort tank, plus a 2.50 EUR CO₂ cartridge, a 1.50 EUR label pack, and 3 EUR labor. With a 400 EUR budget for those three extras, the maximum number of kegs is less than 48.",
+        "For every fixed $a>0$, the inequality $\\dfrac{x-a}{x+2a}<0$ holds if and only if $-2a<x<a$.",
+        "An isosceles triangle has equal sides of length 10 and base $b$ (with $0<b<20$). Its area is at least 48 if and only if $12\\le b\\le 16$."
+      ],
+      "answer_key": [
+        false,
+        true,
+        false,
+        true,
+        true
+      ],
+      "tactical_explanations": [
+        "**A.** → False\n\n$$|w-10|>2\\Rightarrow w<8\\text{ or }w>12.$$\n\nIntersecting $w<18$ also keeps $[0,8)$. The claim omits that lower band. Therefore the statement is False.",
+        "**B.** → True\n\nWith $u=|x|$, $|2-u|\\ge 1$ gives $u\\le 1$ or $u\\ge 3$, i.e. the stated union. Therefore the statement is True.",
+        "**C.** → False\n\nExtras cost 7 EUR per keg: $n\\le\\lfloor 400/7\\rfloor=57$. Wort: $n\\le 50$. Maximum is 50, which is not less than 48. Therefore the statement is False.",
+        "**D.** → True\n\nZero $x=a$, pole $x=-2a$. Same-sign analysis on the three intervals gives $(-2a,a)$. Therefore the statement is True.",
+        "**E.** → True\n\nHeight $\\sqrt{100-b^{2}/4}$ and area $\\tfrac12 b h\\ge 48$ square to $b^{2}\\in\\{144,256\\}$ at equality, and the area is at least 48 precisely on $[12,16]$. Therefore the statement is True."
+      ],
+      "difficulty_level": "5/5",
+      "sort_order": 125,
+      "solution_overview": "Independent claims: cable-car wind lockout bands, nested absolute values, brewery keg costing, a parameterized rational inequality, and an isosceles-triangle area constraint.",
+      "placeholder": false
+    },
+    {
+      "id": "math-6-126",
+      "case_id": "MATH 6.126",
+      "title": "Exam-style tasks - 38",
+      "subsection": "6.5",
+      "context": "Evaluate each statement. Mark it TRUE or FALSE.",
+      "statements": [
+        "A tidal turbine may generate when flow speed $s$ satisfies $1.2\\le s\\le 3.5$ and $|s-2|\\ge 0.3$. Then every speed in $[1.2,3.5]$ is admissible.",
+        "Pipeline pressure drop over $L$ kilometres is $P=0.05L^{2}$. Needing $P\\le 20$ and $L\\ge 8$ forces $8\\le L\\le 20$.",
+        "The inequality $|5-2x|>|x+4|$ holds if and only if $x<\\dfrac13$ or $x>9$.",
+        "Each nutrition bar uses $0.04$ kg of protein powder at 25 EUR/kg, $0.06$ kg of oats at 3 EUR/kg, and a 0.20 EUR wrapper. With a budget of 120 EUR and 3 kg of powder, the maximum number of bars is less than 70.",
+        "The inequality $\\dfrac{2x+1}{x-4}+3\\ge 0$ has solution set $\\bigl(-\\infty,\\dfrac{11}{5}\\bigr]\\cup(4,\\infty)$."
+      ],
+      "answer_key": [
+        false,
+        true,
+        true,
+        false,
+        true
+      ],
+      "tactical_explanations": [
+        "**A.** → False\n\n$$|s-2|\\ge 0.3\\Rightarrow s\\le 1.7\\text{ or }s\\ge 2.3.$$\n\nIntersecting $[1.2,3.5]$ removes $(1.7,2.3)$. Therefore the statement is False.",
+        "**B.** → True\n\n$$0.05L^{2}\\le 20\\Rightarrow L\\le 20,$$\n\nwith $L\\ge 8$. Therefore the statement is True.",
+        "**C.** → True\n\nSquaring yields $(1-3x)(9-x)>0$, hence $x<\\tfrac13$ or $x>9$. Therefore the statement is True.",
+        "**D.** → False\n\nCost: $0.04\\cdot 25+0.06\\cdot 3+0.2=1.38$ EUR. Budget: $n\\le 86$. Powder: $n\\le 75$. Maximum is 75, which is not less than 70. Therefore the statement is False.",
+        "**E.** → True\n\n$$\\dfrac{5x-11}{x-4}\\ge 0$$\n\ngives $\\bigl(-\\infty,\\tfrac{11}{5}\\bigr]\\cup(4,\\infty)$. Therefore the statement is True."
+      ],
+      "difficulty_level": "5/5",
+      "sort_order": 126,
+      "solution_overview": "Independent claims: tidal-turbine resonance lockout, pipeline pressure limits, an absolute-value comparison, nutrition-bar production caps, and a shifted rational inequality.",
+      "placeholder": false
+    },
+    {
+      "id": "math-6-127",
+      "case_id": "MATH 6.127",
+      "title": "Exam-style tasks - 39",
+      "subsection": "6.5",
+      "context": "Evaluate each statement. Mark it TRUE or FALSE.",
+      "statements": [
+        "An observatory may open when cloud cover $c\\%$ satisfies $c\\le 40$ and humidity $h=30+0.5c$ satisfies $|h-45|\\le 15$. Then every admissible cloud cover lies in $0\\le c\\le 40$.",
+        "A trampoline park has 12 supervisor slots and 50 pairs of grip socks (2 pairs required per session). Management wants at least 20 sessions in a block. Then such a block is feasible.",
+        "The inequality $\\sqrt{|x|-1}<2$ has solution set $(-5,-1]\\cup[1,5)$.",
+        "The inequality $|x+2|-|x-3|\\ge 1$ has solution set $[1,\\infty)$.",
+        "Posters need area at least $0.5\\,\\mathrm{m}^{2}$ on a $0.7\\,\\mathrm{m}$ wide roll (so height $h$ metres satisfies $0.7h\\ge 0.5$) and ink use $12h\\le 10$. Then every admissible $h$ satisfies $0.7\\le h\\le 0.85$."
+      ],
+      "answer_key": [
+        true,
+        false,
+        true,
+        true,
+        false
+      ],
+      "tactical_explanations": [
+        "**A.** → True\n\n$$|30+0.5c-45|\\le 15\\Rightarrow |c-30|\\le 30\\Rightarrow 0\\le c\\le 60.$$\n\nIntersecting $c\\le 40$ (and $c\\ge 0$) yields $[0,40]$. Therefore the statement is True.",
+        "**B.** → False\n\nSupervisors: $n\\le 12$. Socks: $n\\le 25$. Needing $n\\ge 20$ contradicts $n\\le 12$. Therefore the statement is False.",
+        "**C.** → True\n\nDomain $|x|\\ge 1$ and $|x|-1<4$ give $1\\le|x|<5$, i.e. $(-5,-1]\\cup[1,5)$. Therefore the statement is True.",
+        "**D.** → True\n\nPiecewise: the difference equals $-5$, $2x-1$, or $5$ on the three rays determined by $-2$ and $3$, and $2x-1\\ge 1$ forces $x\\ge 1$ on the middle piece, extending through $[3,\\infty)$. Therefore the statement is True.",
+        "**E.** → False\n\n$$h\\ge\\dfrac{5}{7}\\approx 0.714,\\qquad h\\le\\dfrac{10}{12}\\approx 0.833.$$\n\nThe claimed band $[0.7,0.85]$ is both too wide and wrongly endpointed. Therefore the statement is False."
+      ],
+      "difficulty_level": "5/5",
+      "sort_order": 127,
+      "solution_overview": "Independent claims: observatory weather gates, an infeasible trampoline session plan, a square root of an absolute value, a difference of absolute values, and poster print constraints.",
+      "placeholder": false
+    },
+    {
+      "id": "math-6-128",
+      "case_id": "MATH 6.128",
+      "title": "Exam-style tasks - 40",
+      "subsection": "6.5",
+      "context": "Evaluate each statement. Mark it TRUE or FALSE.",
+      "statements": [
+        "A canoe rental costs 25 EUR plus 8 EUR per hour and must end within 6 hours of closing time. With an 80 EUR budget, a 7-hour rental is still possible.",
+        "The inequality $|x^{2}-9|\\le 7$ has solution set $[-4,-1]\\cup[1,4]$.",
+        "A survey drone’s remaining battery minutes after flying $d$ kilometres are $B(d)=40-0.5d^{2}$. Needing $B(d)\\ge 10$, every distance up to 8 km is admissible.",
+        "A product needs 2 hours on machine A and 3 hours on machine B. Machine A has 100 hours available and machine B has 120. Then the factory can produce 45 units.",
+        "The inequality $\\sqrt{3x+1}\\le 2x-1$ holds if and only if $x\\ge\\dfrac{7}{4}$."
+      ],
+      "answer_key": [
+        false,
+        false,
+        false,
+        false,
+        true
+      ],
+      "tactical_explanations": [
+        "**A.** → False\n\nBudget: $25+8t\\le 80\\Rightarrow t\\le 6.875$, but closing forces $t\\le 6$. A 7-hour rental violates the closing constraint. Therefore the statement is False.",
+        "**B.** → False\n\n$$2\\le x^{2}\\le 16\\Rightarrow x\\in\\bigl[-4,-\\sqrt{2}\\bigr]\\cup\\bigl[\\sqrt{2},4\\bigr].$$\n\nReplacing $\\sqrt{2}$ by $1$ widens the set illegally. Therefore the statement is False.",
+        "**C.** → False\n\n$$40-0.5d^{2}\\ge 10\\Rightarrow d\\le\\sqrt{60}\\approx 7.75.$$\n\nAt $d=8$, $B(8)=40-32=8<10$. Therefore the statement is False.",
+        "**D.** → False\n\nMachine A: $n\\le 50$. Machine B: $n\\le 40$. Maximum is 40, so 45 is impossible. Therefore the statement is False.",
+        "**E.** → True\n\nDomain and nonnegativity of the right-hand side force $x\\ge\\tfrac12$. Squaring on that ray yields $x\\ge\\tfrac74$, which already implies $x\\ge\\tfrac12$. Therefore the statement is True."
+      ],
+      "difficulty_level": "5/5",
+      "sort_order": 128,
+      "solution_overview": "Independent claims: canoe rental with a hard closing time, a biquadratic absolute-value band, drone battery range, dual machine-hour caps, and a square-root inequality with a fractional threshold.",
+      "placeholder": false
     }
   ]
 }
