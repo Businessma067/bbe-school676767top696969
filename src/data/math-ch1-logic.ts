@@ -7308,81 +7308,33 @@ Modus ponens says that $X \\Rightarrow Y$ together with $X$ yields $Y$. From $D$
     tactical_explanations: [
       `**A.** → True
 
-Let $P$ mean “the student studies at least $10$ hours” and $Q$ mean “the student passes.” Rewrite and negate the implication:
+Original: $S\\Rightarrow P$. Negation:
 
-$$P\\Rightarrow Q\\equiv\\neg P\\lor Q$$
-
-$$\\neg(P\\Rightarrow Q) \\equiv\\neg(\\neg P\\lor Q) \\equiv P\\land\\neg Q$$
-
-The last formula says that a student studied at least $10$ hours and did not pass. That is exactly the claimed negation.
+$$\\neg(S\\Rightarrow P)\\equiv S\\wedge\\neg P$$
 
 So the statement is True.`,
       `**B.** → False
 
-One truth assignment separates an implication from its converse.
-
-$$(p,q)=(F,T)$$
-
-$$p\\rightarrow q$$
-
-$$= F\\rightarrow T$$
-
-$$= T$$
-
-$$q\\rightarrow p$$
-
-$$= T\\rightarrow F$$
-
-$$= F$$
-
-The two implications disagree on this assignment.
+An implication does not entail its converse $P\\Rightarrow S$.
 
 So the statement is False.`,
       `**C.** → True
 
-One truth assignment separates an implication from its converse.
-
-$$(p,q)=(F,T)$$
-
-$$p\\rightarrow q$$
-
-$$= F\\rightarrow T$$
-
-$$= T$$
-
-$$q\\rightarrow p$$
-
-$$= T\\rightarrow F$$
-
-$$= F$$
-
-The two implications disagree on this assignment.
+Anna: $\\neg S$ and $P$. That falsifies $P\\Rightarrow S$, so it counters the converse.
 
 So the statement is True.`,
       `**D.** → False
 
-The inverse negates both parts without swapping them:
-
-$$\\neg P\\Rightarrow\\neg Q$$
-
-The contrapositive swaps the parts and negates them:
-
-$$\\neg Q\\Rightarrow\\neg P$$
-
-These arrows point in opposite directions. The inverse is equivalent to the converse, not to the contrapositive.
+Inverse $\\neg S\\Rightarrow\\neg P$ is equivalent to the converse, not to the contrapositive. The contrapositive is $\\neg P\\Rightarrow\\neg S$, which matches the original.
 
 So the statement is False.`,
       `**E.** → True
 
-The contrapositive of the professor's rule is equivalent to the original:
+Contrapositive:
 
-$$P\\Rightarrow Q\\quad\\Longleftrightarrow\\quad\\neg Q\\Rightarrow\\neg P$$
+$$\\neg P\\Rightarrow\\neg S$$
 
-If a student did not pass, then $\\neg Q$ holds. Modus ponens on the contrapositive gives
-
-$$\\neg Q,\\quad\\neg Q\\Rightarrow\\neg P\\quad\\Longrightarrow\\quad\\neg P$$
-
-Thus the student studied less than $10$ hours.
+From not passing, conclude studied less than $10$ hours.
 
 So the statement is True.`,
     ],
@@ -7415,103 +7367,31 @@ The contrapositive $\\neg Q \\Rightarrow \\neg P$ is equivalent to the original.
     tactical_explanations: [
       `**A.** → True
 
-Let $F$ mean “the contractor misses the deadline” and $P$ mean “a penalty applies.” The clause is
-
-$$F\\Rightarrow P$$
-
-A sufficient condition is one whose truth guarantees the consequent:
-
-$$F = \\mathrm{T}\\quad\\Longrightarrow\\quad P$$
-
-$$= \\mathrm{T}$$
-
-Thus missing the deadline is sufficient for the penalty to apply.
+“Fails deadline $\\Rightarrow$ penalty” makes missing the deadline sufficient for a penalty.
 
 So the statement is True.`,
       `**B.** → False
 
-One truth assignment separates an implication from its converse.
-
-$$(p,q)=(F,T)$$
-
-$$p\\rightarrow q$$
-
-$$= F\\rightarrow T$$
-
-$$= T$$
-
-$$q\\rightarrow p$$
-
-$$= T\\rightarrow F$$
-
-$$= F$$
-
-The two implications disagree on this assignment.
+The converse is not forced by an implication.
 
 So the statement is False.`,
       `**C.** → True
 
-Form the contrapositive by swapping and negating both parts:
+Contrapositive:
 
-$$F\\Rightarrow P \\quad\\Longleftrightarrow\\quad \\neg P\\Rightarrow\\neg F$$
+$$\\neg\\mathrm{Penalty}\\Rightarrow\\neg\\mathrm{Missed}$$
 
-The equivalence also follows from the shared disjunctive form:
-
-$$F\\Rightarrow P\\equiv\\neg F\\lor P$$
-
-$$\\neg P\\Rightarrow\\neg F \\equiv P\\lor\\neg F \\equiv\\neg F\\lor P$$
-
-Therefore “no penalty implies no missed deadline” is logically guaranteed.
+equivalent to the original.
 
 So the statement is True.`,
       `**D.** → False
 
-The inverse is
-
-$$\\neg F\\Rightarrow\\neg P$$
-
-Use an on-time contractor who receives a penalty for faulty work:
-
-$$F = \\mathrm{F},$$
-
-$$P$$
-
-$$= \\mathrm{T}$$
-
-The inverse is false,
-
-$$\\neg F\\Rightarrow\\neg P = \\mathrm{T}\\Rightarrow\\mathrm{F}$$
-
-$$= \\mathrm{F},$$
-
-while the original clause remains true:
-
-$$F\\Rightarrow P = \\mathrm{F}\\Rightarrow\\mathrm{T}$$
-
-$$= \\mathrm{T}$$
-
-The inverse is not guaranteed by the original.
+The inverse is not forced by the original.
 
 So the statement is False.`,
       `**E.** → True
 
-One truth assignment separates an implication from its converse.
-
-$$(p,q)=(F,T)$$
-
-$$p\\rightarrow q$$
-
-$$= F\\rightarrow T$$
-
-$$= T$$
-
-$$q\\rightarrow p$$
-
-$$= T\\rightarrow F$$
-
-$$= F$$
-
-The two implications disagree on this assignment.
+Inverse $\\Leftrightarrow$ converse always, and neither needs to match the original.
 
 So the statement is True.`,
     ],
@@ -7548,95 +7428,37 @@ The second pair need not share a truth value with the clause. The antecedent of 
     tactical_explanations: [
       `**A.** → False
 
-Student M has GPA $3.7$, so $G$ is true, $50$ credits, so $C$ is false, and no waiver, so $W$ is false. Then
+Without a waiver, need GPA $\\ge 3.5$ and credits $\\ge 60$. For M:
 
-$$G \\land (C \\lor W) = \\mathrm{T} \\land (\\mathrm{F} \\lor \\mathrm{F})$$
+$$3.7\\ge 3.5$$
 
-$$= \\mathrm{F}$$
+$$50\\ge 60$$
 
-M is not eligible.
-
-That conflicts with the claim.
+is false, and there is no waiver. M is not eligible.
 
 So the statement is False.`,
       `**B.** → True
 
-Student N's GPA clears the cutoff, the credit count misses its cutoff, and the waiver is present:
+N has a waiver, so only GPA is required:
 
-$$G = \\mathrm{T},$$
+$$3.6\\ge 3.5$$
 
-$$C$$
-
-$$= \\mathrm{F},$$
-
-$$W$$
-
-$$= \\mathrm{T}$$
-
-Evaluate the waiver bracket first and then the conjunction:
-
-$$G\\land(C\\lor W) = \\mathrm{T}\\land(\\mathrm{F}\\lor\\mathrm{T})$$
-
-$$= \\mathrm{T}\\land\\mathrm{T}$$
-
-$$= \\mathrm{T}$$
-
-N satisfies the complete eligibility condition.
+N is eligible.
 
 So the statement is True.`,
       `**C.** → True
 
-With the proposed waiver, M would have
-
-$$G = \\mathrm{T},$$
-
-$$C$$
-
-$$= \\mathrm{F},$$
-
-$$W$$
-
-$$= \\mathrm{T}$$
-
-The new truth evaluation is
-
-$$G\\land(C\\lor W) = \\mathrm{T}\\land(\\mathrm{F}\\lor\\mathrm{T})$$
-
-$$= \\mathrm{T}$$
-
-The waiver replaces the missing credit-hours condition while M's GPA still satisfies the non-waivable condition. M would become eligible.
+If M received a waiver with the same GPA $3.7\\ge 3.5$, only the GPA gate remains, so M would be eligible.
 
 So the statement is True.`,
       `**D.** → False
 
-A waiver makes $W=\\mathrm{T}$, but it does not alter the GPA truth value. For a student below a $3.5$ GPA,
-
-$$G = \\mathrm{F},$$
-
-$$W$$
-
-$$= \\mathrm{T}$$
-
-and, regardless of the credit value $C$,
-
-$$G\\land(C\\lor W) = \\mathrm{F}\\land(C\\lor\\mathrm{T})$$
-
-$$= \\mathrm{F}\\land\\mathrm{T}$$
-
-$$= \\mathrm{F}$$
-
-The waiver alone cannot overcome a failed GPA requirement, so it is not sufficient and.
+A waiver drops only the credit-hour requirement. GPA below $3.5$ still blocks eligibility.
 
 So the statement is False.`,
       `**E.** → False
 
-If GPA is below $3.5$, then $G$ is false. For any $C$ and $W$,
-
-$$G \\land (C \\lor W) = \\mathrm{F}$$
-
-No mix of waiver and credits rescues a low GPA.
-
-That conflicts with the claim.
+Even with a waiver, GPA $\\ge 3.5$ is still required. A GPA below $3.5$ cannot be eligible.
 
 So the statement is False.`,
     ],
@@ -7665,99 +7487,47 @@ The GPA condition sits outside the bracket, so a waiver cannot replace it. Insid
     tactical_explanations: [
       `**A.** → True
 
-Traveler M has a documented medical emergency and bought the policy $20$ days before departure:
+Payout iff $(\\mathrm{Med}\\vee\\mathrm{Airline})\\wedge\\mathrm{Early}$. For M:
 
-$$M = \\mathrm{T},$$
+$$\\mathrm{Med}=\\mathrm{T}$$
 
-$$T$$
+$$\\mathrm{Early}=\\mathrm{T}$$
 
-$$= \\mathrm{T}$$
+$$(\\mathrm{Med}\\vee\\mathrm{Airline})=\\mathrm{T}$$
 
-Whatever the airline value $A$ is, the medical-emergency half makes the reason bracket true:
+$$\\mathrm{T}\\wedge\\mathrm{T}=\\mathrm{T}$$
 
-$$(M\\lor A)\\land T = (\\mathrm{T}\\lor A)\\land\\mathrm{T}$$
-
-$$= \\mathrm{T}\\land\\mathrm{T}$$
-
-$$= \\mathrm{T}$$
-
-M satisfies the payout condition.
+M is paid.
 
 So the statement is True.`,
       `**B.** → False
 
-Traveler N's airline cancellation makes $A=\\mathrm{T}$, but buying only $5$ days ahead makes $T=\\mathrm{F}$. Therefore
+For N:
 
-$$(M\\lor A)\\land T = (M\\lor\\mathrm{T})\\land\\mathrm{F}$$
+$$\\mathrm{Airline}=\\mathrm{T}$$
 
-$$= \\mathrm{T}\\land\\mathrm{F}$$
+$$\\mathrm{Early}=\\mathrm{F}$$
 
-$$= \\mathrm{F}$$
+$$(\\mathrm{Med}\\vee\\mathrm{Airline})=\\mathrm{T}$$
 
-The accepted reason cannot compensate for the failed timing conjunct. N's claim is not paid.
+$$\\mathrm{T}\\wedge\\mathrm{F}=\\mathrm{F}$$
+
+N is not paid.
 
 So the statement is False.`,
       `**C.** → True
 
-Buying the policy fewer than $14$ days before departure makes the timing condition false:
-
-$$T=\\mathrm{F}$$
-
-For any truth values of the two cancellation reasons,
-
-$$(M\\lor A)\\land T = (M\\lor A)\\land\\mathrm{F}$$
-
-$$= \\mathrm{F}$$
-
-Because this condition is equivalent to payout, its false value rules out every claim, regardless of the reason.
+If $\\mathrm{Early}$ fails, the outer conjunction fails no matter what the cancellation reason is. No payout.
 
 So the statement is True.`,
       `**D.** → False
 
-To test whether timing alone is sufficient, consider a traveler who buys exactly $14$ days ahead but has neither accepted cancellation reason:
-
-$$T = \\mathrm{T},$$
-
-$$M$$
-
-$$= \\mathrm{F},$$
-
-$$A$$
-
-$$= \\mathrm{F}$$
-
-Then
-
-$$(M\\lor A)\\land T = (\\mathrm{F}\\lor\\mathrm{F})\\land\\mathrm{T}$$
-
-$$= \\mathrm{F}$$
-
-The timing condition can be true while payout is false. It is necessary but not sufficient.
+Early purchase alone leaves $(\\mathrm{Med}\\vee\\mathrm{Airline})$ possibly false. Not sufficient.
 
 So the statement is False.`,
       `**E.** → False
 
-The proposed scenario has no medical emergency, an airline cancellation, and a late policy purchase:
-
-$$M = \\mathrm{F},$$
-
-$$A$$
-
-$$= \\mathrm{T},$$
-
-$$T$$
-
-$$= \\mathrm{F}$$
-
-Evaluate the complete payout formula:
-
-$$(M\\lor A)\\land T = (\\mathrm{F}\\lor\\mathrm{T})\\land\\mathrm{F}$$
-
-$$= \\mathrm{T}\\land\\mathrm{F}$$
-
-$$= \\mathrm{F}$$
-
-Airline cancellation fills the reason bracket but cannot replace the timing requirement. Such a claim is not paid.
+Without Med and without Early, need Airline for the first disjunct, but Early still fails, so the conjunction fails. Impossible.
 
 So the statement is False.`,
     ],
@@ -7786,89 +7556,29 @@ Inside the bracket the two reasons are alternatives. Outside it, $T$ is required
     tactical_explanations: [
       `**A.** → True
 
-Let $P$ mean “the person is a citizen” and $Q$ mean “the person is eligible to vote.” Negate the law:
+Negation of $C\\Rightarrow V$:
 
-$$\\neg(P\\Rightarrow Q) \\equiv\\neg(\\neg P\\lor Q) \\equiv P\\land\\neg Q$$
-
-This negation has the violating truth pattern
-
-$$P = \\mathrm{T},$$
-
-$$Q$$
-
-$$= \\mathrm{F}$$
-
-which describes a citizen who is not eligible to vote. That is exactly the claimed negation.
+$$C\\wedge\\neg V$$
 
 So the statement is True.`,
       `**B.** → True
 
-The contrapositive is equivalent to the citizenship rule:
-
-$$P\\Rightarrow Q\\quad\\Longleftrightarrow\\quad\\neg Q\\Rightarrow\\neg P$$
-
-John is not eligible, so $\\neg Q$ holds. Apply modus ponens:
-
-$$\\neg Q,\\quad\\neg Q\\Rightarrow\\neg P\\quad\\Longrightarrow\\quad\\neg P$$
-
-John is therefore not a citizen.
+Contrapositive $\\neg V\\Rightarrow\\neg C$ is valid reasoning from ineligibility to non-citizenship.
 
 So the statement is True.`,
       `**C.** → False
 
-Maria's citizenship gives $P=\\mathrm{T}$. Choosing not to register or cast a ballot does not remove the legal right to vote, so eligibility remains $Q=\\mathrm{T}$. The law evaluates to
-
-$$P\\Rightarrow Q = \\mathrm{T}\\Rightarrow\\mathrm{T}$$
-
-$$= \\mathrm{T}$$
-
-A counterexample would instead require
-
-$$P\\land\\neg Q=\\mathrm{T}$$
-
-Maria does not have that pattern. Her choice not to vote does not disprove the law.
+Not casting a vote is not the same as being ineligible. Maria can be a citizen and eligible yet not vote. Not a counterexample to $C\\Rightarrow V$.
 
 So the statement is False.`,
       `**D.** → True
 
-One truth assignment separates an implication from its converse.
-
-$$(p,q)=(F,T)$$
-
-$$p\\rightarrow q$$
-
-$$= F\\rightarrow T$$
-
-$$= T$$
-
-$$q\\rightarrow p$$
-
-$$= T\\rightarrow F$$
-
-$$= F$$
-
-The two implications disagree on this assignment.
+The converse $V\\Rightarrow C$ can fail if non-citizens are granted voting rights.
 
 So the statement is True.`,
       `**E.** → True
 
-One truth assignment separates an implication from its converse.
-
-$$(p,q)=(F,T)$$
-
-$$p\\rightarrow q$$
-
-$$= F\\rightarrow T$$
-
-$$= T$$
-
-$$q\\rightarrow p$$
-
-$$= T\\rightarrow F$$
-
-$$= F$$
-
-The two implications disagree on this assignment.
+Inverse $\\neg C\\Rightarrow\\neg V$ is equivalent to the converse, so they share a truth value.
 
 So the statement is True.`,
     ],
@@ -7897,69 +7607,27 @@ Here $Q$ is the right to vote, not the act of casting a ballot. The negation of 
     tactical_explanations: [
       `**A.** → False
 
-Validity requires that no assignment make all premises true and the conclusion false. Let sales rise because a competitor left while the marketing budget stayed unchanged:
-
-$$P = \\mathrm{F},$$
-
-$$Q$$
-
-$$= \\mathrm{T}$$
-
-Then the conditional premise is true:
-
-$$P\\Rightarrow Q = \\mathrm{F}\\Rightarrow\\mathrm{T}$$
-
-$$= \\mathrm{T}$$
-
-The second premise $Q$ is true, but the conclusion $P$ is false. This countermodel shows that affirming the consequent is invalid.
+The memo uses $M\\Rightarrow S$ and $S$ to conclude $M$. That affirms the consequent and is invalid.
 
 So the statement is False.`,
       `**B.** → False
 
-The restatement uses the invalid form called denying the antecedent:
-
-$$P\\Rightarrow Q,\\quad\\neg P\\quad\\therefore\\quad\\neg Q$$
-
-Use the same competitor example, with $P$ false and $Q$ true. Then $P\\Rightarrow Q$ and $\\neg P$ are both true, but $\\neg Q$ is false. The premises can hold while the conclusion fails.
+Restating with the same invalid pattern remains invalid.
 
 So the statement is False.`,
       `**C.** → True
 
-Modus tollens applies the contrapositive of the conditional. From
-
-$$P\\Rightarrow Q$$
-
-we have
-
-$$\\neg Q\\Rightarrow\\neg P$$
-
-Together with the premise $\\neg Q$, modus ponens yields
-
-$$\\neg P$$
-
-The restated conclusion follows from the premises.
+Using the contrapositive form $\\neg S\\Rightarrow\\neg M$ with $\\neg S$ validly yields $\\neg M$.
 
 So the statement is True.`,
       `**D.** → True
 
-A biconditional supplies both directions:
-
-$$P\\Leftrightarrow Q\\quad\\Longleftrightarrow\\quad(P\\Rightarrow Q)\\land(Q\\Rightarrow P)$$
-
-The observed sales increase gives $Q$, and the added direction gives
-
-$$Q,\\quad Q\\Rightarrow P\\quad\\Longrightarrow\\quad P$$
-
-This strengthened premise validates the memo's conclusion.
+A biconditional $M\\Leftrightarrow S$ would let $S$ recover $M$.
 
 So the statement is True.`,
       `**E.** → True
 
-Argument types are determined by form, not subject matter. The rain argument has the form
-
-$$P\\Rightarrow Q,\\quad Q\\quad\\therefore\\quad P$$
-
-The marketing memo has exactly the same form. Both infer the antecedent from the consequent and affirm it.
+Same fallacy as inferring rain from “if rain then wet ground” and “ground is wet.”
 
 So the statement is True.`,
     ],
@@ -7992,65 +7660,27 @@ Both $\\sqrt{2}$ and $-\\sqrt{2}$ are irrational, and
 
 $$\\sqrt{2}+(-\\sqrt{2})=0$$
 
-Zero is rational, so the pair is a counterexample.
-
-That matches the claim.
+Zero is rational, so the pair counters the universal claim.
 
 So the statement is True.`,
       `**B.** → True
 
-Write the universal claim as
-
-$$\\forall a,b\\in\\mathbb R,\\quad (\\mathrm{Irr}(a)\\land\\mathrm{Irr}(b)) \\Rightarrow\\mathrm{Irr}(a+b)$$
-
-Its negation asks for one counterexample:
-
-$$\\exists a,b,\\quad \\mathrm{Irr}(a)\\land\\mathrm{Irr}(b) \\land\\neg\\mathrm{Irr}(a+b)$$
-
-The pair $a=\\sqrt2$, $b=-\\sqrt2$ satisfies this existential because $a+b=0\\in\\mathbb Q$. One witness makes the negation true and the universal false.
+One counterexample falsifies a universal.
 
 So the statement is True.`,
       `**C.** → True
 
-Let the target be
-
-$$\\neg\\exists p\\in\\mathbb P\\quad \\forall q\\in\\mathbb P,\\ q\\le p$$
-
-A contradiction proof begins by negating that target, namely by assuming
-
-$$\\exists p\\in\\mathbb P\\quad \\forall q\\in\\mathbb P,\\ q\\le p$$
-
-This says there is a largest prime $p$. The proof then constructs a prime beyond the assumed bound and obtains a contradiction. Thus the proposed opening assumption is correct and.
+Contradiction proofs assume a largest prime $p$ and derive a larger prime.
 
 So the statement is True.`,
       `**D.** → False
 
-Checking two inputs establishes only
-
-$$P(1) = \\mathrm{T},$$
-
-$$P(2)$$
-
-$$= \\mathrm{T}$$
-
-The universal claim requires
-
-$$\\forall x,\\quad P(x)=\\mathrm{T}$$
-
-These are not equivalent: one may define a property with $P(1)=P(2)=\\mathrm{T}$ but $P(3)=\\mathrm{F}$. Then both checks pass while the universal fails. Therefore checking $x=1$ and $x=2$ is insufficient.
+Checking $x=1$ and $x=2$ does not prove a universal.
 
 So the statement is False.`,
       `**E.** → True
 
-An existential statement has the form
-
-$$\\exists x,\\quad P(x)$$
-
-If one exhibits a specific value $a$ and verifies
-
-$$P(a)=\\mathrm{T},$$
-
-then $a$ is a witness and the existential statement is true. Unlike a universal proof, no other values need to be checked. Therefore one working value is sufficient and.
+One witness proves an existential.
 
 So the statement is True.`,
     ],
@@ -8077,89 +7707,27 @@ The stem’s claim “the sum of two irrationals is always irrational” is univ
     tactical_explanations: [
       `**A.** → True
 
-One truth assignment separates an implication from its converse.
-
-$$(p,q)=(F,T)$$
-
-$$p\\rightarrow q$$
-
-$$= F\\rightarrow T$$
-
-$$= T$$
-
-$$q\\rightarrow p$$
-
-$$= T\\rightarrow F$$
-
-$$= F$$
-
-The two implications disagree on this assignment.
+“Lives in water $\\Rightarrow$ fish” is the converse of “fish $\\Rightarrow$ lives in water.” Affirming the consequent is invalid.
 
 So the statement is True.`,
       `**B.** → True
 
-The contrapositive is equivalent to the fish rule:
-
-$$P\\Rightarrow Q\\quad\\Longleftrightarrow\\quad\\neg Q\\Rightarrow\\neg P$$
-
-The lizard supplies $\\neg Q$. Modus ponens on the contrapositive gives
-
-$$\\neg Q,\\quad\\neg Q\\Rightarrow\\neg P\\quad\\Longrightarrow\\quad\\neg P$$
-
-The inference is valid.
+“Not in water $\\Rightarrow$ not a fish” is the contrapositive — valid.
 
 So the statement is True.`,
       `**C.** → False
 
-The inverse $\\neg P\\Rightarrow\\neg Q$ is not equivalent to the original rule. A water snake has
-
-$$P = \\mathrm{F},$$
-
-$$Q$$
-
-$$= \\mathrm{T}$$
-
-so its inverse evaluation is
-
-$$\\neg P\\Rightarrow\\neg Q = \\mathrm{T}\\Rightarrow\\mathrm{F}$$
-
-$$= \\mathrm{F}$$
-
-This counterexample shows that inverse-based reasoning is not guaranteed.
+“Not a fish $\\Rightarrow$ not in water” is the inverse and is not valid reasoning from the rule.
 
 So the statement is False.`,
       `**D.** → True
 
-“All fish live in water” is
-
-$$\\forall x\\,(P(x)\\Rightarrow Q(x))$$
-
-Negate the quantifier and then the implication:
-
-$$\\neg\\forall x\\,(P(x)\\Rightarrow Q(x)) \\equiv\\exists x\\,\\neg(P(x)\\Rightarrow Q(x))$$
-
-$$\\equiv\\exists x\\,(P(x)\\land\\neg Q(x))$$
-
-The final formula says that there exists a fish that does not live in water. That is exactly the claimed negation.
+Negation of $\\forall x\\,(F(x)\\Rightarrow W(x))$ is $\\exists x\\,(F(x)\\wedge\\neg W(x))$.
 
 So the statement is True.`,
       `**E.** → False
 
-A counterexample to $P\\Rightarrow Q$ must make $P$ true and $Q$ false. A dolphin has
-
-$$P = \\mathrm{F},$$
-
-$$Q$$
-
-$$= \\mathrm{T}$$
-
-Thus the original rule evaluates to
-
-$$P\\Rightarrow Q = \\mathrm{F}\\Rightarrow\\mathrm{T}$$
-
-$$= \\mathrm{T}$$
-
-A dolphin satisfies the rule vacuously instead of refuting it.
+Dolphins live in water without being fish; that counters the converse, not “all fish live in water.”
 
 So the statement is False.`,
     ],
@@ -8188,83 +7756,27 @@ The converse is $Q(x) \\Rightarrow P(x)$, the inverse is $\\neg P(x) \\Rightarro
     tactical_explanations: [
       `**A.** → False
 
-The negation of an implication is its unique failure case:
-
-$$\\neg(P\\Rightarrow Q)\\equiv P\\land\\neg Q$$
-
-The offered sentence is instead
-
-$$P\\land Q$$
-
-which describes a punctual customer who did receive the discount. It is not the negation.
+Negation of $P\\Rightarrow D$ is $P\\wedge\\neg D$, not $P\\wedge D$.
 
 So the statement is False.`,
       `**B.** → False
 
-One truth assignment separates an implication from its converse.
-
-$$(p,q)=(F,T)$$
-
-$$p\\rightarrow q$$
-
-$$= F\\rightarrow T$$
-
-$$= T$$
-
-$$q\\rightarrow p$$
-
-$$= T\\rightarrow F$$
-
-$$= F$$
-
-The two implications disagree on this assignment.
+The converse is not forced.
 
 So the statement is False.`,
       `**C.** → True
 
-Alex paid on day $45$, so “paid within $30$ days” is false, and Alex received no discount:
-
-$$P = \\mathrm{F},$$
-
-$$Q$$
-
-$$= \\mathrm{F}$$
-
-Evaluate the policy on this row:
-
-$$P\\Rightarrow Q = \\mathrm{F}\\Rightarrow\\mathrm{F}$$
-
-$$= \\mathrm{T}$$
-
-A counterexample would require $P=\\mathrm{T}$ and $Q=\\mathrm{F}$. Alex instead has a false antecedent, so the case is consistent with the policy.
+Alex: $\\neg P$ and $\\neg D$. The original $P\\Rightarrow D$ is vacuously safe.
 
 So the statement is True.`,
       `**D.** → False
 
-The inverse $\\neg P\\Rightarrow\\neg Q$ can fail while the original remains true. For a late payer who receives a promotional discount,
-
-$$P = \\mathrm{F},$$
-
-$$Q$$
-
-$$= \\mathrm{T}$$
-
-Then
-
-$$\\neg P\\Rightarrow\\neg Q = \\mathrm{T}\\Rightarrow\\mathrm{F}$$
-
-$$= \\mathrm{F}$$
-
-but $P\\Rightarrow Q$ is true because $P$ is false. The inverse is not guaranteed.
+The inverse is not forced by the original.
 
 So the statement is False.`,
       `**E.** → False
 
-The contrapositive is logically equivalent to the original:
-
-$$P\\Rightarrow Q\\quad\\Longleftrightarrow\\quad\\neg Q\\Rightarrow\\neg P$$
-
-Equivalent formulas have the same truth value on every assignment. Therefore the contrapositive is guaranteed whenever the policy is.
+The contrappositive $\\neg D\\Rightarrow\\neg P$ is equivalent to the original, so it is guaranteed.
 
 So the statement is False.`,
     ],
@@ -8293,85 +7805,27 @@ Its negation is $P \\land \\neg Q$, a punctual payer who got no discount. The co
     tactical_explanations: [
       `**A.** → False
 
-The negation of an implication is one violating company:
-
-$$\\neg(P\\Rightarrow Q)\\equiv P\\land\\neg Q$$
-
-The offered sentence is the different implication
-
-$$P\\Rightarrow\\neg Q$$
-
-It makes a claim about every company above the threshold instead of asserting one counterexample.
+Negation of $R\\Rightarrow A$ is $R\\wedge\\neg A$, not another implication.
 
 So the statement is False.`,
       `**B.** → False
 
-One truth assignment separates an implication from its converse.
-
-$$(p,q)=(F,T)$$
-
-$$p\\rightarrow q$$
-
-$$= F\\rightarrow T$$
-
-$$= T$$
-
-$$q\\rightarrow p$$
-
-$$= T\\rightarrow F$$
-
-$$= F$$
-
-The two implications disagree on this assignment.
+Converse not forced.
 
 So the statement is False.`,
       `**C.** → False
 
-The inverse is
-
-$$\\neg P\\Rightarrow\\neg Q$$
-
-Use the same small company that files voluntarily. Its values $P=\\mathrm{F}$ and $Q=\\mathrm{T}$ give
-
-$$\\neg P\\Rightarrow\\neg Q = \\mathrm{T}\\Rightarrow\\mathrm{F}$$
-
-$$= \\mathrm{F}$$
-
-while the original still gives
-
-$$P\\Rightarrow Q = \\mathrm{F}\\Rightarrow\\mathrm{T}$$
-
-$$= \\mathrm{T}$$
-
-Because their truth values differ on this case, the inverse is not equivalent to the original.
+Inverse not equivalent to the original.
 
 So the statement is False.`,
       `**D.** → True
 
-The contrapositive swaps and negates both parts:
-
-$$P\\Rightarrow Q\\quad\\Longleftrightarrow\\quad\\neg Q\\Rightarrow\\neg P$$
-
-Here $\\neg Q$ means no audit filing and $\\neg P$ means revenue does not exceed \\$1 million. That is the quoted rule.
+Contrapositive $\\neg A\\Rightarrow\\neg R$ is equivalent.
 
 So the statement is True.`,
       `**E.** → True
 
-An implication is disproved by a case with a true hypothesis and false conclusion. Company X has
-
-$$P = \\mathrm{T},$$
-
-$$Q$$
-
-$$= \\mathrm{F}$$
-
-Therefore
-
-$$P\\Rightarrow Q = \\mathrm{T}\\Rightarrow\\mathrm{F}$$
-
-$$= \\mathrm{F}$$
-
-Company X is a valid counterexample to the regulation.
+Company X: revenue $\\$2$M and no audit is $R\\wedge\\neg A$, which falsifies $R\\Rightarrow A$.
 
 So the statement is True.`,
     ],
@@ -8404,93 +7858,35 @@ The contrapositive $\\neg Q \\Rightarrow \\neg P$ is equivalent to the original.
     tactical_explanations: [
       `**A.** → False
 
-Pilot A has $300$ hours and a passed written exam but failed the practical test, so $H$ and $W$ are true and $T$ is false. Then
+License iff hours and written and practical. Pilot A failed practical:
 
-$$H\\land W\\land T = \\mathrm{T}\\land\\mathrm{T}\\land\\mathrm{F}$$
+$$\\mathrm{Practical}=\\mathrm{F}$$
 
-$$= \\mathrm{F}$$
-
-Because licensing is equivalent to this conjunction, Pilot A is not granted the license.
+so the conjunction fails. A is not granted.
 
 So the statement is False.`,
       `**B.** → False
 
-Pilot B has $240$ hours, so $H$ is false, and passed both exams. Then
+Pilot B has only $240$ hours:
 
-$$H\\land W\\land T = \\mathrm{F}\\land\\mathrm{T}\\land\\mathrm{T}$$
+$$240\\ge 250$$
 
-$$= \\mathrm{F}$$
-
-The failed hours condition makes the entire conjunction false, so Pilot B is not granted the license.
+is false. B is not granted.
 
 So the statement is False.`,
       `**C.** → False
 
-If flight hours alone guaranteed the license, $H\\Rightarrow L$ would hold. Pilot A is a counterexample:
-
-$$H = \\mathrm{T},$$
-
-$$W$$
-
-$$= \\mathrm{T},$$
-
-$$T$$
-
-$$= \\mathrm{F}$$
-
-The license condition evaluates to
-
-$$L = H\\land W\\land T$$
-
-$$= \\mathrm{T}\\land\\mathrm{T}\\land\\mathrm{F}$$
-
-$$= \\mathrm{F}$$
-
-Thus
-
-$$H\\Rightarrow L = \\mathrm{T}\\Rightarrow\\mathrm{F}$$
-
-$$= \\mathrm{F}$$
-
-Hours are necessary but not sufficient.
+Hours alone omit written and practical. Not sufficient.
 
 So the statement is False.`,
       `**D.** → True
 
-Failing the practical test makes $T=\\mathrm{F}$. For either truth value of the other requirements,
-
-$$H\\land W\\land T = H\\land W\\land\\mathrm{F}$$
-
-$$= \\mathrm{F}$$
-
-Since the license is granted if and only if this conjunction is true,
-
-$$\\neg T\\Rightarrow\\neg L$$
-
-Extra hours and a passed written exam cannot change the false conjunct. The pilot cannot be licensed.
+Failing practical falsifies one conjunct, so the license cannot be granted.
 
 So the statement is True.`,
       `**E.** → True
 
-Pilot A is the required witness. The hours test is true, while the practical-test condition is false:
-
-$$300>250,$$
-
-$$H = \\mathrm{T},$$
-
-$$T$$
-
-$$= \\mathrm{F}$$
-
-Therefore
-
-$$L = H\\land W\\land T$$
-
-$$= \\mathrm{T}\\land\\mathrm{T}\\land\\mathrm{F}$$
-
-$$= \\mathrm{F}$$
-
-So there exists a pilot with more than $250$ hours who is not granted the license.
+Pilot A has $300>250$ hours yet is not granted — such a pilot exists.
 
 So the statement is True.`,
     ],
@@ -8519,97 +7915,47 @@ In a conjunction every conjunct is necessary and no conjunct is sufficient on it
     tactical_explanations: [
       `**A.** → False
 
-Applicant P has score $650$, so $S$ is false, a qualified co-signer, so $C$ is true, and ratio $35\\%$, so $D$ is true. Then $S \\lor C$ holds and
+Approval iff $(\\mathrm{score}\\ge 700\\vee\\mathrm{cosign})\\wedge(\\mathrm{DTI}<40\\%)$. For P:
 
-$$(S\\lor C)\\land D = (\\mathrm{F}\\lor\\mathrm{T})\\land\\mathrm{T}$$
+$$650\\ge 700$$
 
-$$= \\mathrm{T}\\land\\mathrm{T}$$
+is false, but
 
-$$= \\mathrm{T}$$
+$$\\mathrm{cosign}=\\mathrm{T}$$
 
-P is approved. The low score is not a veto while $C$ holds.
+$$35<40$$
+
+so
+
+$$(\\mathrm{F}\\vee\\mathrm{T})\\wedge\\mathrm{T}=\\mathrm{T}$$
+
+P is approved. The claim that P is not approved is false.
 
 So the statement is False.`,
       `**B.** → False
 
-Applicant Q has score $720$, so $S$ is true, and ratio $45\\%$, so $D$ is false. Then
+For Q:
 
-$$(S\\lor C)\\land D = (\\mathrm{T}\\lor C)\\land\\mathrm{F}$$
+$$720\\ge 700$$
 
-$$= \\mathrm{T}\\land\\mathrm{F}$$
+$$45<40$$
 
-$$= \\mathrm{F}$$
-
-Q is not approved.
-
-That conflicts with the claim.
+is false. The conjunction fails. Q is not approved.
 
 So the statement is False.`,
       `**C.** → False
 
-If a high score always guaranteed approval, $S\\Rightarrow A$ would hold. Applicant Q has
-
-$$S = \\mathrm{T},$$
-
-$$D$$
-
-$$= \\mathrm{F}$$
-
-so, regardless of co-signer status,
-
-$$A = (S\\lor C)\\land D$$
-
-$$= (\\mathrm{T}\\lor C)\\land\\mathrm{F}$$
-
-$$= \\mathrm{F}$$
-
-Hence
-
-$$S\\Rightarrow A = \\mathrm{T}\\Rightarrow\\mathrm{F}$$
-
-$$= \\mathrm{F}$$
-
-Q is a counterexample to score sufficiency.
+Score $\\ge 700$ still needs $\\mathrm{DTI}<40\\%$. Not always approved.
 
 So the statement is False.`,
       `**D.** → True
 
-A ratio of $40\\%$ or above fails the strict ratio test:
-
-$$D = (\\mathrm{ratio}<40\\%)$$
-
-$$= \\mathrm{F}$$
-
-For every score and co-signer truth value,
-
-$$(S\\lor C)\\land D = (S\\lor C)\\land\\mathrm{F}$$
-
-$$= \\mathrm{F}$$
-
-The ratio condition is a required outer conjunct, so neither a high score nor a co-signer can offset its failure. Such an applicant can never be approved, making the statement True.
+If $\\mathrm{DTI}\\ge 40\\%$, the second conjunct fails, so approval is impossible.
 
 So the statement is True.`,
       `**E.** → True
 
-Applicant P supplies the required witness:
-
-$$S = \\mathrm{F},$$
-
-$$C$$
-
-$$= \\mathrm{T},$$
-
-$$D$$
-
-$$= \\mathrm{T}$$
-
-Evaluate the approval rule:
-
-$$(S\\lor C)\\land D = (\\mathrm{F}\\lor\\mathrm{T})\\land\\mathrm{T}$$
-
-$$= \\mathrm{T}$$
-
-P's score is below $700$, but the co-signer fills the OR bracket and the ratio clears the outer requirement. Such an approval is possible.
+P is exactly such an applicant: score below $700$, co-signer, $\\mathrm{DTI}<40\\%$, and approved.
 
 So the statement is True.`,
     ],
@@ -8638,89 +7984,27 @@ Inside the bracket, score and co-signer are alternatives. Outside it, $D$ is req
     tactical_explanations: [
       `**A.** → True
 
-One truth assignment separates an implication from its converse.
-
-$$(p,q)=(F,T)$$
-
-$$p\\rightarrow q$$
-
-$$= F\\rightarrow T$$
-
-$$= T$$
-
-$$q\\rightarrow p$$
-
-$$= T\\rightarrow F$$
-
-$$= F$$
-
-The two implications disagree on this assignment.
+Sam: $\\neg\\mathrm{Dessert}$ and $\\mathrm{Point}$. That falsifies the converse $\\mathrm{Point}\\Rightarrow\\mathrm{Dessert}$.
 
 So the statement is True.`,
       `**B.** → True
 
-The target “not every point-earning diner ordered dessert” is
-
-$$\\exists x\\,(Q(x)\\land\\neg P(x))$$
-
-A contradiction proof assumes its negation:
-
-$$\\forall x\\,(Q(x)\\Rightarrow P(x))$$
-
-Sam has $Q(S)=\\mathrm{T}$ and $P(S)=\\mathrm{F}$, so the assumed universal gives the false instance
-
-$$Q(S)\\Rightarrow P(S) = \\mathrm{T}\\Rightarrow\\mathrm{F}$$
-
-$$= \\mathrm{F}$$
-
-Sam contradicts the assumption, exactly as the proposed proof says.
+Contradiction proof of “not every point-earner ordered dessert” assumes every point-earner ordered dessert.
 
 So the statement is True.`,
       `**C.** → False
 
-The original policy fails only when dessert is ordered and no point is awarded. Sam instead has
-
-$$P = \\mathrm{F},$$
-
-$$Q$$
-
-$$= \\mathrm{T}$$
-
-Thus
-
-$$P\\Rightarrow Q = \\mathrm{F}\\Rightarrow\\mathrm{T}$$
-
-$$= \\mathrm{T}$$
-
-Sam satisfies the original policy vacuously and does not disprove it.
+The original $D\\Rightarrow\\mathrm{Point}$ is not falsified by getting a point without dessert.
 
 So the statement is False.`,
       `**D.** → True
 
-The negation of an implication keeps the hypothesis and negates the conclusion:
-
-$$\\neg(P\\Rightarrow Q)\\equiv P\\land\\neg Q$$
-
-This requires a diner who ordered dessert and did not receive a point. Sam has $\\neg P\\land Q$, so his birthday case has the opposite truth values. The claimed negation is correct.
+Negation of $D\\Rightarrow\\mathrm{Point}$ needs a diner with dessert and no point.
 
 So the statement is True.`,
       `**E.** → True
 
-The inverse is $\\neg P\\Rightarrow\\neg Q$. Sam did not order dessert but did receive a point, so
-
-$$\\neg P = \\mathrm{T},$$
-
-$$\\neg Q$$
-
-$$= \\mathrm{F}$$
-
-Therefore
-
-$$\\neg P\\Rightarrow\\neg Q = \\mathrm{T}\\Rightarrow\\mathrm{F}$$
-
-$$= \\mathrm{F}$$
-
-Sam directly contradicts the inverse.
+Sam directly falsifies the inverse $\\neg D\\Rightarrow\\neg\\mathrm{Point}$.
 
 So the statement is True.`,
     ],
@@ -8749,69 +8033,45 @@ Sam received a birthday point without ordering dessert, so $P$ is false and $Q$ 
     tactical_explanations: [
       `**A.** → True
 
-For $m=4$,
+For $m=4$:
 
-$$n = \\frac{100}{4}$$
+$$4\\cdot n=100$$
 
-$$= 25$$
+$$n=\\frac{100}{4}$$
 
-which is a positive integer, and $4 \\cdot 25 = 100$. A partner exists.
+$$n=25$$
 
-That matches the claim.
+$$25\\in\\mathbb{Z}^{+}$$
+
+so a witness exists.
 
 So the statement is True.`,
       `**B.** → False
 
-For $m=3$,
+For $m=3$:
 
-$$n = \\frac{100}{3}$$
+$$3\\cdot n=100$$
 
-which is not an integer. The equation has only that one solution, so no positive integer $n$ works.
+$$n=\\frac{100}{3}$$
 
-That conflicts with the claim.
+which is not an integer. No positive integer $n$ works.
 
 So the statement is False.`,
       `**C.** → False
 
-A universal claim is disproved by one counterexample. Choose the positive integer $m=3$. The equation would force
-
-$$3n = 100\\quad\\Longrightarrow\\quad n$$
-
-$$= \\frac{100}{3}\\notin\\mathbb Z_{>0}$$
-
-Thus this $m$ has no permitted positive-integer witness $n$. Therefore $\\forall m\\,\\exists n\\,(mn=100)$ fails at $m=3$.
+Since $m=3$ fails, the universal “for every $m$” is false.
 
 So the statement is False.`,
       `**D.** → True
 
-Use quantifier negation one layer at a time: $\\neg\\forall$ becomes $\\exists\\neg$, and $\\neg\\exists$ becomes $\\forall\\neg$. Hence
+Negation of $\\forall m\\,\\exists n\\,(mn=100)$ is
 
-$$\\neg\\bigl(\\forall m\\,\\exists n\\,(mn=100)\\bigr) \\equiv \\exists m\\,\\forall n\\,(mn\\ne100)$$
-
-The positive integer $m=3$ illustrates the required witness: if $3n=100$, then $n=100/3$, which is not a positive integer. Thus every permitted $n$ satisfies $3n\\ne100$. This is exactly the stated negation.
-
-$$m \\cdot n \\neq 100$$
+$$\\exists m\\,\\forall n\\,(mn\\neq 100)$$
 
 So the statement is True.`,
       `**E.** → True
 
-The reversed quantifiers demand one fixed positive integer $n$ that works for every positive integer $m$:
-
-$$\\exists n\\,\\forall m\\,(mn=100)$$
-
-Apply that supposed witness first to $m=1$ and then to $m=2$:
-
-$$1\\cdot n = 100\\Rightarrow n$$
-
-$$= 100,$$
-
-$$2\\cdot n$$
-
-$$= 100\\Rightarrow n$$
-
-$$= 50$$
-
-One number cannot equal both $100$ and $50$, so no common witness $n$ exists. The reversed statement is false.
+A single $n$ cannot satisfy $m\\cdot n=100$ for every positive $m$. The reversed quantifiers are also false.
 
 So the statement is True.`,
     ],
@@ -8848,57 +8108,27 @@ and that $n$ is legal only when $m$ divides $100$. Negation flips each quantifie
     tactical_explanations: [
       `**A.** → True
 
-This is direct use of a premise, not a derived guess. With $D$ meaning “Dan is guilty,” clue (3) is simply
-
-$$D$$
-
-Therefore every assignment satisfying the clues has $D=\\mathrm{T}$. Dan is guilty.
-
-That matches the claim.
+Clue (3) states Dan is guilty. With exactly one guilty party, Dan is the culprit.
 
 So the statement is True.`,
       `**B.** → False
 
-Use the exactly-one constraint together with clue (3). Since Dan occupies the unique guilty position,
-
-$$D = \\mathrm{T} \\quad\\Longrightarrow\\quad A$$
-
-$$= B$$
-
-$$= C$$
-
-$$= \\mathrm{F}$$
-
-In particular $A=\\mathrm{F}$, so Ann is innocent rather than guilty.
+If Ann were guilty, (1) would force Dan innocent, contradicting (3). So Ann is not guilty.
 
 So the statement is False.`,
       `**C.** → False
 
-Test whether clue (2) is essential by omitting it. Clue (3) still gives $D=\\mathrm{T}$, and the exactly-one condition then forces
-
-$$D=\\mathrm{T} \\quad\\Longrightarrow\\quad \\neg A\\land\\neg B\\land\\neg C$$
-
-Thus $\\neg C$ is available without using $\\neg B\\Rightarrow\\neg C$. Clue (2) is not essential for Cara’s innocence.
+From (3) and exactly one guilty, Cara is already innocent without (2). So (2) is not essential for Cara’s innocence.
 
 So the statement is False.`,
       `**D.** → True
 
-Clue (3) and uniqueness give $A=\\mathrm{F}$ and $D=\\mathrm{T}$. Evaluate clue (1), $A\\Rightarrow\\neg D$, on that assignment:
-
-$$A\\Rightarrow\\neg D = \\mathrm{F}\\Rightarrow\\mathrm{F}$$
-
-$$= \\mathrm{T}$$
-
-The implication is vacuously true because its antecedent is false, so it eliminates no additional roster. Clue (1) provides no new information here.
+Ann is innocent, so (1)’s antecedent is false and (1) is vacuously true — it adds no new constraint once Ann is cleared.
 
 So the statement is True.`,
       `**E.** → True
 
-Clue (3) is already the atomic assertion
-
-$$D=\\mathrm{T}$$
-
-No implication, contraposition, or exactly-one constraint is needed to infer its own content. The uniqueness condition is needed only to eliminate Ann, Ben, and Cara after $D$ is known. Clue (3) alone establishes Dan’s guilt.
+Clue (3) alone asserts Dan is guilty, even without the uniqueness premise.
 
 So the statement is True.`,
     ],
