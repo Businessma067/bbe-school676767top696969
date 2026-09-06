@@ -3691,93 +3691,153 @@ Intersection keeps shared members; union keeps anything that sits in at least on
     tactical_explanations: [
       `**A.** → True
 
-Union keeps every element that sits in $A$ or in $B$ (or both).
+Unite the two rosters.
 
-$$A=\\{10,20,30,40,50\\}$$
+$$A={10,20,30,40,50}$$
 
-$$B=\\{30,40,50,60\\}$$
+$$B={30,40,50,60}$$
 
-$$A\\cup B=\\{10,20,30,40,50,60\\}$$
+$$10\\in A\\cup B$$
 
-$$\\{10,20,30,40,50,60\\}$$
+$$20\\in A\\cup B$$
 
-The computed roster matches the claim.
+$$30\\in A\\cup B$$
+
+$$40\\in A\\cup B$$
+
+$$50\\in A\\cup B$$
+
+$$60\\in A\\cup B$$
+
+$$A\\cup B={10,20,30,40,50,60}$$
 
 So the statement is True.`,
       `**B.** → True
 
-Intersection keeps only elements that sit in both $A$ and $B$.
+Test membership in both sets.
 
-$$A=\\{10,20,30,40,50\\}$$
+$$A={10,20,30,40,50}$$
 
-$$B=\\{30,40,50,60\\}$$
+$$B={30,40,50,60}$$
 
-$$10\\in A,\\ 10\\notin B$$
+$$10\\in A$$
 
-$$20\\in A,\\ 20\\notin B$$
+$$10\\notin B$$
 
-$$30\\in A,\\ 30\\in B$$
+$$20\\in A$$
 
-$$40\\in A,\\ 40\\in B$$
+$$20\\notin B$$
 
-$$50\\in A,\\ 50\\in B$$
+$$30\\in A$$
 
-$$A\\cap B=\\{30,40,50\\}$$
+$$30\\in B$$
 
-$$\\{30,40,50\\}$$
+$$40\\in A$$
 
-The computed roster matches the claim.
+$$40\\in B$$
+
+$$50\\in A$$
+
+$$50\\in B$$
+
+$$A\\cap B={30,40,50}$$
 
 So the statement is True.`,
       `**C.** → True
 
-Difference $A\\setminus B$ keeps members of $A$ that miss $B$.
+Difference keeps members of $A$ that miss $B$.
 
-$$A=\\{10,20,30,40,50\\}$$
+$$A={10,20,30,40,50}$$
 
-$$B=\\{30,40,50,60\\}$$
+$$B={30,40,50,60}$$
 
-$$10\\in A,\\ 10\\notin B$$
+$$10\\in A$$
 
-$$20\\in A,\\ 20\\notin B$$
+$$10\\notin B$$
 
-$$30\\in A,\\ 30\\in B$$
+$$20\\in A$$
 
-$$40\\in A,\\ 40\\in B$$
+$$20\\notin B$$
 
-$$50\\in A,\\ 50\\in B$$
+$$30\\in A$$
 
-$$A\\setminus B=\\{10,20\\}$$
+$$30\\in B$$
 
-$$\\{10,20\\}$$
+$$40\\in A$$
 
-The computed roster matches the claim.
+$$40\\in B$$
+
+$$50\\in A$$
+
+$$50\\in B$$
+
+$$A\\setminus B={10,20}$$
 
 So the statement is True.`,
       `**D.** → False
 
-The opposite leftover is
+Difference keeps members of $B$ that miss $A$.
 
-$$B\\setminus A=\\{60\\},$$
+$$B={30,40,50,60}$$
 
-while
+$$A={10,20,30,40,50}$$
 
-$$A\\setminus B=\\{10,20\\}.$$
+$$30\\in B$$
 
-The sizes already disagree ($1$ versus $2$), and $10$ sits in the first leftover but not the second. Difference is not commutative.
+$$30\\in A$$
 
-That conflicts with the claim.
+$$40\\in B$$
+
+$$40\\in A$$
+
+$$50\\in B$$
+
+$$50\\in A$$
+
+$$60\\in B$$
+
+$$60\\notin A$$
+
+$$B\\setminus A={60}$$
+
+From the previous letter,
+
+$$A\\setminus B=\\{10,20\\}$$
+
+$$\\{60\\}\\neq\\{10,20\\}$$
 
 So the statement is False.`,
       `**E.** → True
 
-Disjointness means the intersection is empty. Every member of $A$ is at least $10$, while $C$ stops at $3$, so
+Test membership in both sets.
 
-$$A\\cap C=\\emptyset.$$
+$$A={10,20,30,40,50}$$
 
-There is no shared multiple of ten among $1,2,3$.
+$$C={1,2,3}$$
 
-That matches the claim.
+$$10\\in A$$
+
+$$10\\notin C$$
+
+$$20\\in A$$
+
+$$20\\notin C$$
+
+$$30\\in A$$
+
+$$30\\notin C$$
+
+$$40\\in A$$
+
+$$40\\notin C$$
+
+$$50\\in A$$
+
+$$50\\notin C$$
+
+$$A\\cap C=\\emptyset$$
+
+The intersection is empty, so $A$ and $C$ are disjoint.
 
 So the statement is True.`,
     ],
@@ -3808,89 +3868,135 @@ Intersection keeps numbers tagged in both $A$ and $B$. Union keeps every tagged 
     tactical_explanations: [
       `**A.** → True
 
-Union keeps every element that sits in $A$ or in $B$ (or both).
+Unite the two rosters.
 
-$$A=\\{a,b,c,d\\}$$
+$$A={a,b,c,d}$$
 
-$$B=\\{c,d,e\\}$$
+$$B={c,d,e}$$
 
-$$A\\cup B=\\{a,b,c,d,e\\}$$
+$$a\\in A\\cup B$$
 
-$$\\{a,b,c,d,e\\}$$
+$$b\\in A\\cup B$$
 
-The computed roster matches the claim.
+$$c\\in A\\cup B$$
+
+$$d\\in A\\cup B$$
+
+$$e\\in A\\cup B$$
+
+$$A\\cup B={a,b,c,d,e}$$
 
 So the statement is True.`,
       `**B.** → True
 
-Intersection keeps only elements that sit in both $A$ and $B$.
+Test membership in both sets.
 
-$$A=\\{a,b,c,d\\}$$
+$$A={a,b,c,d}$$
 
-$$B=\\{c,d,e\\}$$
+$$B={c,d,e}$$
 
-$$a\\in A,\\ a\\notin B$$
+$$a\\in A$$
 
-$$b\\in A,\\ b\\notin B$$
+$$a\\notin B$$
 
-$$c\\in A,\\ c\\in B$$
+$$b\\in A$$
 
-$$d\\in A,\\ d\\in B$$
+$$b\\notin B$$
 
-$$A\\cap B=\\{c,d\\}$$
+$$c\\in A$$
 
-$$\\{c,d\\}$$
+$$c\\in B$$
 
-The computed roster matches the claim.
+$$d\\in A$$
+
+$$d\\in B$$
+
+$$A\\cap B={c,d}$$
 
 So the statement is True.`,
       `**C.** → True
 
-Difference $A\\setminus B$ keeps members of $A$ that miss $B$.
+Difference keeps members of $A$ that miss $B$.
 
-$$A=\\{a,b,c,d\\}$$
+$$A={a,b,c,d}$$
 
-$$B=\\{c,d,e\\}$$
+$$B={c,d,e}$$
 
-$$a\\in A,\\ a\\notin B$$
+$$a\\in A$$
 
-$$b\\in A,\\ b\\notin B$$
+$$a\\notin B$$
 
-$$c\\in A,\\ c\\in B$$
+$$b\\in A$$
 
-$$d\\in A,\\ d\\in B$$
+$$b\\notin B$$
 
-$$A\\setminus B=\\{a,b\\}$$
+$$c\\in A$$
 
-$$\\{a,b\\}$$
+$$c\\in B$$
 
-The computed roster matches the claim.
+$$d\\in A$$
+
+$$d\\in B$$
+
+$$A\\setminus B={a,b}$$
 
 So the statement is True.`,
       `**D.** → False
 
-The opposite leftover is the singleton
+Difference keeps members of $B$ that miss $A$.
 
-$$B\\setminus A=\\{e\\},$$
+$$B={c,d,e}$$
 
-while
+$$A={a,b,c,d}$$
 
-$$A\\setminus B=\\{a,b\\}.$$
+$$c\\in B$$
 
-Different sizes already forbid equality, and $a$ sits in one leftover but not the other. Difference is not commutative.
+$$c\\in A$$
 
-That conflicts with the claim.
+$$d\\in B$$
+
+$$d\\in A$$
+
+$$e\\in B$$
+
+$$e\\notin A$$
+
+$$B\\setminus A={e}$$
+
+From the previous letter,
+
+$$A\\setminus B=\\{a,b\\}$$
+
+$$\\{e\\}\\neq\\{a,b\\}$$
 
 So the statement is False.`,
       `**E.** → True
 
-$C=\\{x,y\\}$ shares no letter with $A=\\{a,b,c,d\\}$, so
+Test membership in both sets.
 
-$$A\\cap C=\\emptyset.$$
+$$A={a,b,c,d}$$
 
-Disjointness is that empty overlap.
+$$C={x,y}$$
 
-That matches the claim.
+$$a\\in A$$
+
+$$a\\notin C$$
+
+$$b\\in A$$
+
+$$b\\notin C$$
+
+$$c\\in A$$
+
+$$c\\notin C$$
+
+$$d\\in A$$
+
+$$d\\notin C$$
+
+$$A\\cap C=\\emptyset$$
+
+The intersection is empty, so $A$ and $C$ are disjoint.
 
 So the statement is True.`,
     ],
@@ -3921,63 +4027,83 @@ Shared letters give the intersection. The combined list is the union, each lette
     tactical_explanations: [
       `**A.** → True
 
-Putting $A$ and $B$ together covers $1$ through $8$, so
+First form the union:
+
+$$A=\\{1,2,3,4,5\\}$$
+
+$$B=\\{4,5,6,7,8\\}$$
 
 $$A\\cup B=\\{1,2,3,4,5,6,7,8\\}$$
 
-and the leftover in $U$ is
+Complement in $U=\\{1,2,\\ldots,10\\}$:
 
-$$(A\\cup B)^c=\\{9,10\\}.$$
+$$9\\notin A\\cup B$$
 
-Those two numbers sit in neither $A$ nor $B$. The claim is that same list.
+$$10\\notin A\\cup B$$
 
-That matches the claim.
+$$(A\\cup B)^{c}=\\{9,10\\}$$
 
 So the statement is True.`,
       `**B.** → True
 
-De Morgan's first law says $(A\\cup B)^c=A^c\\cap B^c$. The overview listed $A^c=\\{6,7,8,9,10\\}$ and $B^c=\\{1,2,3,9,10\\}$, so
+De Morgan for unions. Left side from letter A:
 
-$$A^c\\cap B^c=\\{9,10\\}.$$
+$$(A\\cup B)^{c}=\\{9,10\\}$$
 
-Numbers $6,7,8$ miss $A$ but sit in $B$, so they fail the intersection of complements. The two sides agree.
+Complements:
 
-$$(A \\cup B)^c = A^c \\cap B^c$$
+$$A^{c}=\\{6,7,8,9,10\\}$$
+
+$$B^{c}=\\{1,2,3,9,10\\}$$
+
+$$A^{c}\\cap B^{c}=\\{9,10\\}$$
+
+The two sides match.
 
 So the statement is True.`,
       `**C.** → True
 
-The overview listed $A\\cap B=\\{4,5\\}$. Removing those two from $U$ leaves
+Intersection first:
 
-$$(A\\cap B)^c=\\{1,2,3,6,7,8,9,10\\}.$$
+$$A\\cap B=\\{4,5\\}$$
 
-Joining $A^c$ with $B^c$ produces the same list, so $(A\\cap B)^c=A^c\\cup B^c$.
+$$(A\\cap B)^{c}=\\{1,2,3,6,7,8,9,10\\}$$
 
-That matches the claim.
+$$A^{c}=\\{6,7,8,9,10\\}$$
 
-$$(A \\cap B)^c = A^c \\cup B^c$$
+$$B^{c}=\\{1,2,3,9,10\\}$$
+
+$$A^{c}\\cup B^{c}=\\{1,2,3,6,7,8,9,10\\}$$
+
+The two sides match.
 
 So the statement is True.`,
       `**D.** → True
 
-$A^c$ is $U$ minus $A$: drop $1$ through $5$, keep $\\{6,7,8,9,10\\}$. The overview already recorded that list. Complement is a scan of the universe, not of $A$ rewritten backwards. The claim matches.
+Complement of $A$ in $U=\\{1,2,\\ldots,10\\}$:
 
-Record the verdict against the live claim after the calculation above is complete.
+$$A=\\{1,2,3,4,5\\}$$
 
-$$A^c = \\{6, 7, 8, 9, 10\\}$$
+$$6\\notin A$$
+
+$$7\\notin A$$
+
+$$8\\notin A$$
+
+$$9\\notin A$$
+
+$$10\\notin A$$
+
+$$A^{c}=\\{6,7,8,9,10\\}$$
 
 So the statement is True.`,
       `**E.** → True
 
-The overview listed $A\\cap B=\\{4,5\\}$, so removing those two from $U$ leaves
+From letter C,
 
-$$(A\\cap B)^c=\\{1,2,3,6,7,8,9,10\\}.$$
+$$(A\\cap B)^{c}=\\{1,2,3,6,7,8,9,10\\}$$
 
-That list keeps $A$-only, $B$-only, and neither. The claim is that same eight-number roster.
-
-That matches the claim.
-
-$$(A \\cap B)^c = \\{1, 2, 3, 6, 7, 8, 9, 10\\}$$
+which matches the claim.
 
 So the statement is True.`,
     ],
@@ -4012,67 +4138,65 @@ $$A\\cap B=\\{4,5\\},\\qquad A^c=\\{6,7,8,9,10\\},\\qquad B^c=\\{1,2,3,9,10\\}.$
     tactical_explanations: [
       `**A.** → True
 
-Odds union evens reconstructs all of $U$, so $A\\cup B=U$ and
+$A$ is the odds and $B$ the evens in $U=\\{1,2,\\ldots,12\\}$:
 
-$$(A\\cup B)^c = U^c$$
+$$A\\cup B=\\{1,2,3,4,5,6,7,8,9,10,11,12\\}$$
 
-$$= \\emptyset.$$
+$$A\\cup B=U$$
 
-There is no leftover integer between $1$ and $12$.
-
-That matches the claim.
+$$(A\\cup B)^{c}=\\emptyset$$
 
 So the statement is True.`,
       `**B.** → True
 
-$A^c$ is the evens and $B^c$ is the odds, so their intersection is empty: nothing is even and odd at once. That matches $(A\\cup B)^c=\\emptyset$, which is De Morgan in this extreme case:
+De Morgan for unions. Left side:
 
-$$A^c\\cap B^c = B\\cap A$$
+$$(A\\cup B)^{c}=\\emptyset$$
 
-$$= \\emptyset.$$
+Complements:
 
-The two sides agree.
+$$A^{c}=B=\\{2,4,6,8,10,12\\}$$
+
+$$B^{c}=A=\\{1,3,5,7,9,11\\}$$
+
+$$A^{c}\\cap B^{c}=\\emptyset$$
+
+The two sides match.
 
 So the statement is True.`,
       `**C.** → True
 
-$$A\\cap B=\\emptyset,$$
+Odds and evens are disjoint:
 
-so
+$$A\\cap B=\\emptyset$$
 
-$$(A\\cap B)^c=U.$$
+$$(A\\cap B)^{c}=U$$
 
-The other side $A^c\\cup B^c$ is evens joined with odds, again $U$. Complementing the empty set relative to $U$ restores $U$ in full.
+$$A^{c}=\\{2,4,6,8,10,12\\}$$
 
-That matches the claim.
+$$B^{c}=\\{1,3,5,7,9,11\\}$$
+
+$$A^{c}\\cup B^{c}=U$$
+
+The two sides match.
 
 So the statement is True.`,
       `**D.** → True
 
-Deleting the odds from $U$ leaves the evens, so
+Complement of the odds is the evens:
 
-$$A^c=\\{2,4,6,8,10,12\\}.$$
+$$A=\\{1,3,5,7,9,11\\}$$
 
-Complement of a partition block is the other block, which is $B$. The claim matches that list.
-
-That matches the claim.
-
-$$A^c = \\{2, 4, 6, 8, 10, 12\\}$$
+$$A^{c}=\\{2,4,6,8,10,12\\}$$
 
 So the statement is True.`,
       `**E.** → True
 
-Removing nothing from $U$ leaves $U$, so
+From letter C,
 
-$$(A\\cap B)^c = \\emptyset^c$$
+$$A\\cap B=\\emptyset$$
 
-$$= U$$
-
-$$= \\{1,2,3,4,5,6,7,8,9,10,11,12\\}.$$
-
-The claimed list is that full universe. Complementing $\\emptyset$ relative to a universe always gives the universe back.
-
-That matches the claim.
+$$(A\\cap B)^{c}=U=\\{1,2,3,4,5,6,7,8,9,10,11,12\\}$$
 
 So the statement is True.`,
     ],
@@ -4103,53 +4227,75 @@ No whole number is odd and even at once, so $A\\cap B=\\emptyset$. Every whole n
     tactical_explanations: [
       `**A.** → True
 
-Putting $A$ and $B$ together covers $\\{p,q,r,s\\}$. Of the six letters in $U$ only $t$ and $u$ are left out, so
+Union first:
 
-$$(A\\cup B)^c=\\{t,u\\}.$$
+$$A=\\{p,q,r\\}$$
 
-Letter $s$ sits in $B$, so it sits in the union and cannot sit in the complement. The claim matches.
+$$B=\\{r,s\\}$$
 
-$$(A \\cup B)^c = \\{t, u\\}$$
+$$A\\cup B=\\{p,q,r,s\\}$$
+
+Complement in $U=\\{p,q,r,s,t,u\\}$:
+
+$$t\\notin A\\cup B$$
+
+$$u\\notin A\\cup B$$
+
+$$(A\\cup B)^{c}=\\{t,u\\}$$
 
 So the statement is True.`,
       `**B.** → True
 
-The overview listed
+Left side from letter A:
 
-$$A^c=\\{s,t,u\\}$$
+$$(A\\cup B)^{c}=\\{t,u\\}$$
 
-and
+$$A^{c}=\\{s,t,u\\}$$
 
-$$B^c=\\{p,q,t,u\\}.$$
+$$B^{c}=\\{p,q,t,u\\}$$
 
-Their intersection is $\\{t,u\\}$, matching $(A\\cup B)^c$. Letter $s$ fails the intersection because $s\\in B$. De Morgan's first law is that agreement.
+$$A^{c}\\cap B^{c}=\\{t,u\\}$$
 
-That matches the claim.
+The two sides match.
 
 So the statement is True.`,
       `**C.** → True
 
-The overview listed $A\\cap B=\\{r\\}$, so $(A\\cap B)^c$ is every letter of $U$ except $r$. Joining the two complements produces the same five letters $\\{p,q,s,t,u\\}$. Letter $p$ misses $B$ and letter $s$ misses $A$; each escapes the intersection by escaping one set. The two sides agree.
+Intersection:
 
-$$(A \\cap B)^c = A^c \\cup B^c$$
+$$A\\cap B=\\{r\\}$$
+
+$$(A\\cap B)^{c}=\\{p,q,s,t,u\\}$$
+
+$$A^{c}=\\{s,t,u\\}$$
+
+$$B^{c}=\\{p,q,t,u\\}$$
+
+$$A^{c}\\cup B^{c}=\\{p,q,s,t,u\\}$$
+
+The two sides match.
 
 So the statement is True.`,
       `**D.** → True
 
-Drop $p,q,r$ from $U$ and $\\{s,t,u\\}$ remain. The overview already recorded $A^c=\\{s,t,u\\}$. Complement does not also drop $s$ just because $s\\in B$; that would be $A^c\\cap B^c$. The claim matches.
+Complement of $A=\\{p,q,r\\}$ in $U$:
 
-Record the verdict against the live claim after the calculation above is complete.
+$$s\\notin A$$
 
-$$A^c = \\{s, t, u\\}$$
+$$t\\notin A$$
+
+$$u\\notin A$$
+
+$$A^{c}=\\{s,t,u\\}$$
 
 So the statement is True.`,
       `**E.** → True
 
-Remove the single shared letter $r$ from $U$ and $\\{p,q,s,t,u\\}$ stay. Letters $p$ and $q$ stay because they miss $B$; $s$ stays because it misses $A$. The claimed five-letter list matches $(A\\cap B)^c$.
+From letter C,
 
-Record the verdict against the live claim after the calculation above is complete.
+$$(A\\cap B)^{c}=\\{p,q,s,t,u\\}$$
 
-$$(A \\cap B)^c = \\{p, q, s, t, u\\}$$
+which matches the claim.
 
 So the statement is True.`,
     ],
@@ -4182,53 +4328,67 @@ $$A\\cup B=\\{p,q,r,s\\},\\qquad A\\cap B=\\{r\\},\\qquad A^c=\\{s,t,u\\},\\qqua
     tactical_explanations: [
       `**A.** → True
 
-The overview already counted
+Cartesian-product size:
 
-$$\\lvert A\\times B\\rvert = 2\\cdot 3$$
+$$|A|=2$$
 
-$$= 6.$$
+$$|B|=3$$
 
-Product size is the number of cells, not the number of distinct symbols used. Two rows and three columns are six ordered pairs.
+$$|A\\times B|=|A|\\cdot|B|$$
 
-That matches the claim.
+$$2\\cdot 3=6$$
+
+$$|A\\times B|=6$$
 
 So the statement is True.`,
       `**B.** → True
 
-The pair $(1,x)$ has first slot from $A$ and second from $B$, so both membership tests succeed. Ordered pairs treat $(1,x)$ and $(x,1)$ as different objects; this letter is the number-first pair, so $(1,x)\\in A\\times B$.
+Check coordinates:
 
-Record the verdict against the live claim after the calculation above is complete.
+$$1\\in A$$
 
-$$(1, x) \\in A \\times B$$
+$$x\\in B$$
+
+$$(1,x)\\in A\\times B$$
 
 So the statement is True.`,
       `**C.** → False
 
-The pair $(x,1)$ has a letter in the first slot, and $x\\notin A$. The first slot already fails, so the pair is out of $A\\times B$ (it does sit in $B\\times A$). Ordered pairs treat $(1,x)$ and $(x,1)$ as different objects.
+First coordinate must sit in $A$:
 
-Record the verdict against the live claim after the calculation above is complete.
+$$x\\notin A$$
 
-$$(x, 1) \\in A \\times B$$
+$$(x,1)\\notin A\\times B$$
 
 So the statement is False.`,
       `**D.** → False
 
-Every pair in $A\\times B$ reads (number, letter); every pair in $B\\times A$ reads (letter, number). In particular $(1,x)$ sits in the first product and cannot sit in the second, because $1\\notin B$. Set equality needs identical members, not identical counts.
+Sample pair:
 
-$$A \\times B = B \\times A$$
+$$(1,x)\\in A\\times B$$
+
+$$1\\notin B$$
+
+$$(1,x)\\notin B\\times A$$
+
+$$A\\times B\\neq B\\times A$$
 
 So the statement is False.`,
       `**E.** → True
 
-Size ignores order: $2\\cdot 3=6$ and $3\\cdot 2=6$. Both products hold six pairs even though the pairs themselves differ:
+Reversed product size:
 
-$$\\lvert A\\times B\\rvert = \\lvert B\\times A\\rvert$$
+$$|B|=3$$
 
-$$= 6.$$
+$$|A|=2$$
 
-The counts agree.
+$$3\\cdot 2=6$$
 
-That matches the claim.
+$$|B\\times A|=6$$
+
+$$|A\\times B|=6$$
+
+so the sizes agree.
 
 So the statement is True.`,
     ],
@@ -4265,55 +4425,65 @@ Turning the grid on its side produces $B\\times A$, same count, different member
     tactical_explanations: [
       `**A.** → True
 
-The overview already counted
+Cartesian-product size:
+
+$$|A|=3$$
+
+$$|B|=2$$
+
+$$|A\\times B|=|A|\\cdot|B|$$
 
 $$3\\cdot 2=6$$
 
-letter-first pairs. Product size counts ordered pairs, not the five symbols $m,n,p,1,2$. Three letters with two numbers each give six cells.
-
-That matches the claim.
-
-$$\\lvert A \\times B\\rvert = 6$$
+$$|A\\times B|=6$$
 
 So the statement is True.`,
       `**B.** → True
 
-Membership in $A\\times B$ is a two-slot test. For $(m,1)$ both slots succeed: $m\\in A$ and $1\\in B$. That is the letter-first convention in this stem, so $(m,1)\\in A\\times B$.
+Check coordinates:
 
-Record the verdict against the live claim after the calculation above is complete.
+$$m\\in A$$
 
-$$(m, 1) \\in A \\times B$$
+$$1\\in B$$
+
+$$(m,1)\\in A\\times B$$
 
 So the statement is True.`,
       `**C.** → False
 
-The pair $(1,m)$ puts a number first, and $1\\notin A$. The first slot already fails, so the pair is out of $A\\times B$ (it does sit in $B\\times A$). The product $A\\times B$ is six letter-first pairs; none begins with $1$.
+First coordinate must sit in $A=\\{m,n,p\\}$:
 
-Record the verdict against the live claim after the calculation above is complete.
+$$1\\notin A$$
 
-$$(1, m) \\in A \\times B$$
+$$(1,m)\\notin A\\times B$$
 
 So the statement is False.`,
       `**D.** → False
 
-$A\\times B$ is letter-first; $B\\times A$ is number-first. Witness: $(m,1)$ is on the first list and missing from the second, because $m\\notin B$. Set equality needs identical members, not identical counts. The two products share no pair.
+Sample pair:
 
-$$A \\times B = B \\times A$$
+$$(m,1)\\in A\\times B$$
+
+$$m\\notin B$$
+
+$$(m,1)\\notin B\\times A$$
+
+$$A\\times B\\neq B\\times A$$
 
 So the statement is False.`,
       `**E.** → True
 
-The product rule is commutative as a count:
+Reversed product size:
 
-$$3\\cdot 2 = 6,$$
+$$|B|=2$$
 
-$$2\\cdot 3$$
+$$|A|=3$$
 
-$$= 6.$$
+$$2\\cdot 3=6$$
 
-The counts agree while the member lists share no pair.
+$$|B\\times A|=6$$
 
-That matches the claim.
+$$|A\\times B|=6$$
 
 So the statement is True.`,
     ],
@@ -4348,89 +4518,105 @@ $$=6.$$`,
     tactical_explanations: [
       `**A.** → True
 
-Difference $A\\setminus B$ keeps members of $A$ that miss $B$.
+Difference keeps members of $A$ that miss $B$.
 
-$$A=\\{1,3,5,7,9\\}$$
+$$A={1,3,5,7,9}$$
 
-$$B=\\{3,5,7,11,13\\}$$
+$$B={3,5,7,11,13}$$
 
-$$1\\in A,\\ 1\\notin B$$
+$$1\\in A$$
 
-$$3\\in A,\\ 3\\in B$$
+$$1\\notin B$$
 
-$$5\\in A,\\ 5\\in B$$
+$$3\\in A$$
 
-$$7\\in A,\\ 7\\in B$$
+$$3\\in B$$
 
-$$9\\in A,\\ 9\\notin B$$
+$$5\\in A$$
 
-$$A\\setminus B=\\{1,9\\}$$
+$$5\\in B$$
 
-$$\\{1,9\\}$$
+$$7\\in A$$
 
-The computed roster matches the claim.
+$$7\\in B$$
+
+$$9\\in A$$
+
+$$9\\notin B$$
+
+$$A\\setminus B={1,9}$$
 
 So the statement is True.`,
       `**B.** → True
 
-Difference $B\\setminus A$ keeps members of $B$ that miss $A$.
+Difference keeps members of $B$ that miss $A$.
 
-$$B=\\{3,5,7,11,13\\}$$
+$$B={3,5,7,11,13}$$
 
-$$A=\\{1,3,5,7,9\\}$$
+$$A={1,3,5,7,9}$$
 
-$$3\\in B,\\ 3\\in A$$
+$$3\\in B$$
 
-$$5\\in B,\\ 5\\in A$$
+$$3\\in A$$
 
-$$7\\in B,\\ 7\\in A$$
+$$5\\in B$$
 
-$$11\\in B,\\ 11\\notin A$$
+$$5\\in A$$
 
-$$13\\in B,\\ 13\\notin A$$
+$$7\\in B$$
 
-$$B\\setminus A=\\{11,13\\}$$
+$$7\\in A$$
 
-$$\\{11,13\\}$$
+$$11\\in B$$
 
-The computed roster matches the claim.
+$$11\\notin A$$
+
+$$13\\in B$$
+
+$$13\\notin A$$
+
+$$B\\setminus A={11,13}$$
 
 So the statement is True.`,
       `**C.** → True
 
-Symmetric difference joins the two outer piles. The overview listed $A\\setminus B=\\{1,9\\}$ and $B\\setminus A=\\{11,13\\}$, so
+Symmetric difference unites the two differences:
 
-$$A\\triangle B=\\{1,9,11,13\\}.$$
+$$A\\setminus B=\\{1,9\\}$$
 
-Each of those four sits in exactly one of the original sets. Including $3$ would keep the overlap, which $A\\triangle B$ rejects. The claim matches.
+$$B\\setminus A=\\{11,13\\}$$
 
-$$A \\triangle B = \\{1, 9, 11, 13\\}$$
+$$A\\triangle B=\\{1,9,11,13\\}$$
 
 So the statement is True.`,
       `**D.** → True
 
-A number in $A\\setminus B$ is outside $B$; a number in $B\\setminus A$ is inside $B$. Those demands cannot hold together, so
+Intersect the differences:
 
-$$(A\\setminus B)\\cap(B\\setminus A)=\\emptyset.$$
+$$A\\setminus B=\\{1,9\\}$$
 
-The two leftover piles are disjoint by construction.
+$$B\\setminus A=\\{11,13\\}$$
 
-That matches the claim.
+$$1\\notin\\{11,13\\}$$
 
-$$(A \\setminus B) \\cap (B \\setminus A) = \\emptyset$$
+$$9\\notin\\{11,13\\}$$
+
+$$(A\\setminus B)\\cap(B\\setminus A)=\\emptyset$$
 
 So the statement is True.`,
       `**E.** → False
 
-Union keeps the middle bucket $\\{3,5,7\\}$; symmetric difference throws it away:
+The union is larger because it still contains the overlap:
 
-$$A\\triangle B = \\{1,9,11,13\\},$$
+$$A\\cup B=\\{1,3,5,7,9,11,13\\}$$
 
-$$A\\cup B$$
+$$A\\triangle B=\\{1,9,11,13\\}$$
 
-$$= \\{1,3,5,7,9,11,13\\}.$$
+$$3\\in A\\cup B$$
 
-The two operations differ by exactly the overlap. They would agree only if $A$ and $B$ were disjoint. They share $3,5,7$.
+$$3\\notin A\\triangle B$$
+
+$$A\\triangle B\\neq A\\cup B$$
 
 So the statement is False.`,
     ],
@@ -4463,83 +4649,79 @@ $$A\\setminus B=\\{1,9\\},\\qquad A\\cap B=\\{3,5,7\\},\\qquad B\\setminus A=\\{
     tactical_explanations: [
       `**A.** → True
 
-Difference $A\\setminus B$ keeps members of $A$ that miss $B$.
+Difference keeps members of $A$ that miss $B$.
 
-$$A=\\{2,4,6\\}$$
+$$A={2,4,6}$$
 
-$$B=\\{1,3,5\\}$$
+$$B={1,3,5}$$
 
-$$2\\in A,\\ 2\\notin B$$
+$$2\\in A$$
 
-$$4\\in A,\\ 4\\notin B$$
+$$2\\notin B$$
 
-$$6\\in A,\\ 6\\notin B$$
+$$4\\in A$$
 
-$$A\\setminus B=\\{2,4,6\\}$$
+$$4\\notin B$$
 
-$$\\{2,4,6\\}$$
+$$6\\in A$$
 
-The computed roster matches the claim.
+$$6\\notin B$$
+
+$$A\\setminus B={2,4,6}$$
 
 So the statement is True.`,
       `**B.** → True
 
-Difference $B\\setminus A$ keeps members of $B$ that miss $A$.
+Difference keeps members of $B$ that miss $A$.
 
-$$B=\\{1,3,5\\}$$
+$$B={1,3,5}$$
 
-$$A=\\{2,4,6\\}$$
+$$A={2,4,6}$$
 
-$$1\\in B,\\ 1\\notin A$$
+$$1\\in B$$
 
-$$3\\in B,\\ 3\\notin A$$
+$$1\\notin A$$
 
-$$5\\in B,\\ 5\\notin A$$
+$$3\\in B$$
 
-$$B\\setminus A=\\{1,3,5\\}$$
+$$3\\notin A$$
 
-$$\\{1,3,5\\}$$
+$$5\\in B$$
 
-The computed roster matches the claim.
+$$5\\notin A$$
+
+$$B\\setminus A={1,3,5}$$
 
 So the statement is True.`,
       `**C.** → True
 
-With an empty middle bucket, symmetric difference is the two whole sets glued together:
+Unite the differences:
 
-$$A\\triangle B = \\{2,4,6\\}\\cup\\{1,3,5\\}$$
+$$A\\setminus B=\\{2,4,6\\}$$
 
-$$= \\{1,2,3,4,5,6\\}.$$
+$$B\\setminus A=\\{1,3,5\\}$$
 
-Each of the six numbers sits in exactly one of $A$ or $B$. The claim matches.
-
-That matches the claim.
+$$A\\triangle B=\\{1,2,3,4,5,6\\}$$
 
 So the statement is True.`,
       `**D.** → True
 
-The leftovers are the two whole sets, evens and odds. No even equals an odd, so their intersection is empty:
+Intersect the differences:
 
-$$(A\\setminus B)\\cap(B\\setminus A) = A\\cap B$$
-
-$$= \\emptyset.$$
-
-Two nonempty leftovers need not overlap.
-
-That matches the claim.
+$$\\{2,4,6\\}\\cap\\{1,3,5\\}=\\emptyset$$
 
 So the statement is True.`,
       `**E.** → True
 
-Here the shared part is empty, so there is nothing extra for the union to add:
+Because $A\\cap B=\\emptyset$,
 
-$$A\\triangle B = \\{1,2,3,4,5,6\\}$$
+$$A\\setminus B=A$$
 
-$$= A\\cup B.$$
+$$B\\setminus A=B$$
 
-Disjointness is exactly the situation in which $A\\triangle B=A\\cup B$.
+$$A\\triangle B=A\\cup B$$
 
-That matches the claim.
+and both equal $\\{1,2,3,4,5,6\\}$.
 
 So the statement is True.`,
     ],
@@ -4570,59 +4752,65 @@ Disjointness makes the subtractions do nothing: there is no shared member to del
     tactical_explanations: [
       `**A.** → True
 
-Adding $22+15$ counts the six two-game players twice. Subtracting once restores a single copy. From the shared solve,
+Inclusion-exclusion:
 
-$$\\lvert A\\cup B\\rvert=31.$$
+$$|A|=22$$
 
-The claim is that same figure.
+$$|B|=15$$
 
-That matches the claim.
+$$|A\\cap B|=6$$
 
-$$\\lvert A \\cup B\\rvert = 31$$
+$$|A|+|B|=22+15$$
+
+$$22+15=37$$
+
+$$37-6=31$$
+
+$$|A\\cup B|=31$$
 
 So the statement is True.`,
       `**B.** → True
 
-Chess-only is the chess headline minus the overlap:
+Only $A$ is $A$ minus the overlap:
 
-$$22-6=16.$$
+$$|A\\setminus B|=|A|-|A\\cap B|$$
 
-Those $16$ sit in $A$ and not in $B$. Reporting $22$ would keep the six who also play checkers. The claim is $16$.
+$$22-6=16$$
 
-That matches the claim.
-
-$$16$$
+$$|A\\setminus B|=16$$
 
 So the statement is True.`,
       `**C.** → True
 
-Neither is the club total minus the union. The overview recovered the union $31$, so
+Neither club:
 
-$$40-31=9.$$
+$$|U|-|A\\cup B|=40-31$$
 
-The leftover outside both circles is $9$.
-
-That matches the claim.
-
-$$9$$
+$$40-31=9$$
 
 So the statement is True.`,
       `**D.** → False
 
-Everyone playing both games is already someone playing at least one, so $A\\cap B\\subseteq A\\cup B$ always. Compare the two sizes: $\\lvert A\\cap B\\rvert=6$ and $\\lvert A\\cup B\\rvert=31$. Already $6<31$. Intersection cannot outnumber the union that contains it.
+Compare intersection and union sizes:
 
-$$\\lvert A \\cap B\\rvert > \\lvert A \\cup B\\rvert$$
+$$|A\\cap B|=6$$
+
+$$|A\\cup B|=31$$
+
+$$6>31$$
+
+is false.
 
 So the statement is False.`,
       `**E.** → True
 
-Checkers-only is the checkers headline minus the overlap:
+Only $B$ is $B$ minus the overlap:
 
-$$15-6=9.$$
+$$|B\\setminus A|=|B|-|A\\cap B|$$
 
-Those $9$ sit in $B$ and not in $A$, still inside the union. The neither-cell's $9$ sit outside the union. Same size, different membership tests. The claim is the checkers-only count $9$.
+$$15-6=9$$
 
-$$9$$
+$$|B\\setminus A|=9$$
 
 So the statement is True.`,
     ],
@@ -4659,67 +4847,65 @@ Chess-only is the chess headline minus the overlap; checkers-only is the checker
     tactical_explanations: [
       `**A.** → True
 
-Two-set inclusion-exclusion recovers the union from the given totals:
+Inclusion-exclusion:
 
-$$\\lvert A\\cup B\\rvert=\\lvert A\\rvert+\\lvert B\\rvert-\\lvert A\\cap B\\rvert$$
+$$|A|=34$$
 
-$$=34+28-12$$
+$$|B|=28$$
 
-$$=50$$
+$$|A\\cap B|=12$$
+
+$$|A|+|B|=34+28$$
+
+$$34+28=62$$
+
+$$62-12=50$$
+
+$$|A\\cup B|=50$$
 
 So the statement is True.`,
       `**B.** → True
 
-Spanish-only peels the overlap out of the Spanish total. The overview recovered $|A\\cap B|=12$, so
+Only $A$ is $A$ minus the overlap:
 
-$$\\lvert A\\setminus B\\rvert=\\lvert A\\rvert-\\lvert A\\cap B\\rvert$$
+$$|A\\setminus B|=|A|-|A\\cap B|$$
 
-$$=34-12$$
+$$34-12=22$$
 
-$$=22$$
-
-Compare the computed value with the claim ($22$). The two sides agree.
+$$|A\\setminus B|=22$$
 
 So the statement is True.`,
       `**C.** → True
 
-Students in neither language are the cohort total minus the union:
+Neither club:
 
-$$60-\\lvert A\\cup B\\rvert$$
-
-With $\\lvert A\\cup B\\rvert=50$,
+$$|U|-|A\\cup B|=60-50$$
 
 $$60-50=10$$
-
-So exactly $10$ take neither course.
-
-That matches the claim.
 
 So the statement is True.`,
       `**D.** → False
 
-The intersection is a subset of the union, so its size cannot exceed the union size:
+Compare intersection and union sizes:
 
-$$\\lvert A\\cap B\\rvert=12$$
+$$|A\\cap B|=12$$
 
-$$\\lvert A\\cup B\\rvert=50$$
+$$|A\\cup B|=50$$
 
-$$12<50$$
+$$12>50$$
 
-The claim needs $\\lvert A\\cap B\\rvert>\\lvert A\\cup B\\rvert$. The inequality runs the other way.
+is false.
 
 So the statement is False.`,
       `**E.** → True
 
-French-only peels the overlap out of the French total. The overview recovered $|A\\cap B|=12$, so
+Only $B$ is $B$ minus the overlap:
 
-$$\\lvert B\\setminus A\\rvert=\\lvert B\\rvert-\\lvert A\\cap B\\rvert$$
+$$|B\\setminus A|=|B|-|A\\cap B|$$
 
-$$=28-12$$
+$$28-12=16$$
 
-$$=16$$
-
-Compare the computed value with the claim ($16$). The two sides agree.
+$$|B\\setminus A|=16$$
 
 So the statement is True.`,
     ],
@@ -4754,69 +4940,65 @@ Spanish-only is $|A|-|A\\cap B|$. French-only is $|B|-|A\\cap B|$. Neither is th
     tactical_explanations: [
       `**A.** → True
 
-Two-set inclusion-exclusion recovers the union:
+Inclusion-exclusion:
 
-$$\\lvert A\\cup B\\rvert=\\lvert A\\rvert+\\lvert B\\rvert-\\lvert A\\cap B\\rvert$$
+$$|A|=20$$
 
-$$=20+18-5$$
+$$|B|=18$$
 
-$$=33$$
+$$|A\\cap B|=5$$
+
+$$|A|+|B|=20+18$$
+
+$$20+18=38$$
+
+$$38-5=33$$
+
+$$|A\\cup B|=33$$
 
 So the statement is True.`,
       `**B.** → True
 
-Pool-only peels the overlap out of the pool total. The overview recovered $|A\\cap B|=5$, so
+Only $A$ is $A$ minus the overlap:
 
-$$\\lvert A\\setminus B\\rvert=\\lvert A\\rvert-\\lvert A\\cap B\\rvert$$
+$$|A\\setminus B|=|A|-|A\\cap B|$$
 
-$$=20-5$$
+$$20-5=15$$
 
-$$=15$$
-
-Compare the computed value with the claim ($15$). The two sides agree.
+$$|A\\setminus B|=15$$
 
 So the statement is True.`,
       `**C.** → True
 
-Members using neither facility are the gym total minus the union:
+Neither club:
 
-$$50-\\lvert A\\cup B\\rvert$$
-
-With $\\lvert A\\cup B\\rvert=33$,
+$$|U|-|A\\cup B|=50-33$$
 
 $$50-33=17$$
-
-So exactly $17$ use neither.
-
-That matches the claim.
 
 So the statement is True.`,
       `**D.** → False
 
-The intersection is a subset of the union:
+Compare intersection and union sizes:
 
-$$\\lvert A\\cap B\\rvert=5$$
+$$|A\\cap B|=5$$
 
-$$\\lvert A\\cup B\\rvert=33$$
+$$|A\\cup B|=33$$
 
-$$5<33$$
+$$5>33$$
 
-The claim needs $\\lvert A\\cap B\\rvert>\\lvert A\\cup B\\rvert$. The inequality runs the other way.
-
-That conflicts with the claim.
+is false.
 
 So the statement is False.`,
       `**E.** → True
 
-Sauna-only peels the overlap out of the sauna total. The overview recovered $|A\\cap B|=5$, so
+Only $B$ is $B$ minus the overlap:
 
-$$\\lvert B\\setminus A\\rvert=\\lvert B\\rvert-\\lvert A\\cap B\\rvert$$
+$$|B\\setminus A|=|B|-|A\\cap B|$$
 
-$$=18-5$$
+$$18-5=13$$
 
-$$=13$$
-
-Compare the computed value with the claim ($13$). The two sides agree.
+$$|B\\setminus A|=13$$
 
 So the statement is True.`,
     ],
@@ -4851,18 +5033,42 @@ Pool-only is $|A|-|A\\cap B|$. Sauna-only is $|B|-|A\\cap B|$. Neither is member
     tactical_explanations: [
       `**A.** → True
 
-Three-set inclusion-exclusion recovers the union. The overview (or direct substitution) gives
+Three-set inclusion-exclusion:
 
-$$\\lvert A\\cup B\\cup C\\rvert=30+25+20-10-8-7+3$$
+$$|A|=30$$
 
-$$=75-25+3$$
+$$|B|=25$$
 
-$$=53$$
+$$|C|=20$$
+
+$$|A|+|B|=30+25$$
+
+$$30+25=55$$
+
+$$55+20=75$$
+
+$$|A\\cap B|=10$$
+
+$$75-10=65$$
+
+$$|A\\cap C|=8$$
+
+$$65-8=57$$
+
+$$|B\\cap C|=7$$
+
+$$57-7=50$$
+
+$$|A\\cap B\\cap C|=3$$
+
+$$50+3=53$$
+
+$$|A\\cup B\\cup C|=53$$
 
 So the statement is True.`,
       `**B.** → True
 
-Anyone who does all three activities sits inside each pairwise overlap. With $\\lvert A\\cap B\\cap C\\rvert=3$,
+The triple intersection sits inside every pairwise intersection by definition:
 
 $$A\\cap B\\cap C\\subseteq A\\cap B$$
 
@@ -4870,46 +5076,50 @@ $$A\\cap B\\cap C\\subseteq A\\cap C$$
 
 $$A\\cap B\\cap C\\subseteq B\\cap C$$
 
-So the triple is contained in every pairwise intersection.
+So every all-three member is counted in each pairwise count.
 
 So the statement is True.`,
       `**C.** → True
 
-Exactly photography-and-hiking (not cooking) peels the triple out of the pairwise total:
+Exactly photography and hiking but not cooking:
 
-$$\\lvert A\\cap B\\setminus C\\rvert=\\lvert A\\cap B\\rvert-\\lvert A\\cap B\\cap C\\rvert$$
+$$|A\\cap B\\setminus C|=|A\\cap B|-|A\\cap B\\cap C|$$
 
-$$= 10-3$$
-
-$$= 7$$
+$$10-3=7$$
 
 So the statement is True.`,
       `**D.** → True
 
-The triple group is a subset of each pair, so its size cannot exceed any pairwise size:
+The triple cannot exceed any pairwise count:
 
-$$3\\le 10$$
+$$|A\\cap B\\cap C|=3$$
 
-$$3\\le 8$$
+$$|A\\cap B|=10$$
+
+$$|A\\cap C|=8$$
+
+$$|B\\cap C|=7$$
+
+$$\\min(10,8,7)=7$$
 
 $$3\\le 7$$
-
-Hence $3\\le\\min(10,8,7)$. The claimed inequality holds.
-
-That matches the claim.
 
 So the statement is True.`,
       `**E.** → False
 
-Compare the raw sum of the three totals with the union:
+Compare the union to the raw sum:
 
-$$\\lvert A\\rvert+\\lvert B\\rvert+\\lvert C\\rvert = 30+25+20$$
+$$|A\\cup B\\cup C|=53$$
 
-$$= 75$$
+$$|A|+|B|+|C|=30+25+20$$
 
-$$\\lvert A\\cup B\\cup C\\rvert=53$$
+$$30+25=55$$
 
-Already $53<75$. The claim needs $53>75$. The inequality runs the other way.
+$$55+20=75$$
+
+$$53>75$$
+
+is false. The union is smaller than the raw sum because overlaps are subtracted.
 
 So the statement is False.`,
     ],
@@ -4946,67 +5156,65 @@ An exact-pair region is the pairwise total minus the triple. The triple group si
     tactical_explanations: [
       `**A.** → False
 
-Conjunction is true only when both inputs are true. The overview recovered $P$ true and $Q$ false, so
+Let $P$ mean “$7$ is prime” and $E$ mean “$7$ is even”. Given facts:
 
-$$P\\land Q = \\mathrm{T}\\land\\mathrm{F}$$
+$$P$$
 
-$$= \\mathrm{F}$$
+$$\\neg E$$
 
-The claim says this conjunction is true, but its value is false.
+The conjunction requires both:
 
-That conflicts with the claim.
+$$P\\wedge E$$
+
+But $\\neg E$ holds, so $P\\wedge E$ is false.
 
 So the statement is False.`,
       `**B.** → True
 
-Inclusive or is true when at least one input is true. The overview recovered $P$ true and $Q$ false, so
+The disjunction $P\\vee E$ is true whenever at least one disjunct is true. Here
 
-$$P\\lor Q = \\mathrm{T}\\lor\\mathrm{F}$$
+$$P$$
 
-$$= \\mathrm{T}$$
+holds, so
 
-The claim says this disjunction is true, and its value is true.
+$$P\\vee E$$
 
-That matches the claim.
+is true.
 
 So the statement is True.`,
       `**C.** → True
 
-Negation reverses the truth value of the complete conjunction. First evaluate the conjunction:
+Negation of the conjunction:
 
-$$P\\land Q = \\mathrm{T}\\land\\mathrm{F}$$
+$$\\neg(P\\wedge E)$$
 
-$$= \\mathrm{F}$$
+From letter A, $P\\wedge E$ is false, so its negation is true. Equivalently by De Morgan:
 
-Then negate that result:
+$$\\neg P\\vee\\neg E$$
 
-$$\\neg(P\\land Q) = \\neg\\mathrm{F}$$
-
-$$= \\mathrm{T}$$
+and $\\neg E$ holds.
 
 So the statement is True.`,
       `**D.** → False
 
-"Neither prime nor even" means that both propositions are false. The overview recovered $P$ true and $Q$ false, so
+“Neither prime nor even” is
 
-$$\\neg P\\land\\neg Q = \\mathrm{F}\\land\\mathrm{T}$$
+$$\\neg P\\wedge\\neg E$$
 
-$$= \\mathrm{F}$$
+But $P$ is true, so $\\neg P$ is false, and the conjunction fails.
 
 So the statement is False.`,
       `**E.** → False
 
-Negation reverses the truth value of the complete disjunction. First evaluate the disjunction:
+Negation of the disjunction:
 
-$$P\\lor Q = \\mathrm{T}\\lor\\mathrm{F}$$
+$$\\neg(P\\vee E)$$
 
-$$= \\mathrm{T}$$
+From letter B, $P\\vee E$ is true, so the negation is false. Equivalently:
 
-Then negate that result:
+$$\\neg P\\wedge\\neg E$$
 
-$$\\neg(P\\lor Q) = \\neg\\mathrm{T}$$
-
-$$= \\mathrm{F}$$
+which fails because $P$ holds.
 
 So the statement is False.`,
     ],
@@ -5035,65 +5243,43 @@ De Morgan identifies $\\neg(P\\land Q)$ with $\\neg P\\lor\\neg Q$, and $\\neg(P
     tactical_explanations: [
       `**A.** → True
 
-Take any prime $p>2$. If $p$ were even, then $p=2k$ for some integer $k>1$, so $p$ would have the non-trivial divisor $2$:
-
-$$p=2k,\\quad k>1\\quad\\Longrightarrow\\quad 1<2<p$$
-
-That contradicts primality. Hence every prime in the stated domain is odd:
-
-$$\\forall p\\,((\\mathrm{Prime}(p)\\land p>2)\\Rightarrow\\mathrm{Odd}(p))$$
-
-The universal claim is therefore True.
-
-So the statement is True.`,
+The universal claim is: every prime $p>2$ is odd. The only even prime is $2$, which is excluded by $p>2$. Every larger prime is odd, so the statement is true.`,
       `**B.** → False
 
-A counterexample must satisfy the domain conditions and fail the conclusion. Although $2$ is prime and not odd, it fails the strict domain test:
+A counterexample would be a prime $p>2$ that is even. The number $2$ fails the hypothesis $p>2$:
 
-$$2>2=\\mathrm{F}$$
+$$2>2$$
 
-Thus the complete counterexample test gives
-
-$$\\mathrm{Prime}(2)\\land(2>2)\\land\\neg\\mathrm{Odd}(2) = \\mathrm{T}\\land\\mathrm{F}\\land\\mathrm{T}$$
-
-$$= \\mathrm{F}$$
-
-The number $2$ is outside the quantified range, so it is not a counterexample and.
+is false. So $2$ is outside the quantified domain and is not a counterexample.
 
 So the statement is False.`,
       `**C.** → True
 
-Negating $\\forall p>2\\,(\\mathrm{Prime}(p)\\Rightarrow\\mathrm{Odd}(p))$ produces an existential with the conclusion flipped, still restricted to $p>2$:
+Negating $\\forall p\\,(p\\text{ prime }\\wedge p>2\\Rightarrow p\\text{ odd})$ yields
 
-$$\\exists p>2\\,(\\mathrm{Prime}(p)\\land\\mathrm{Even}(p))$$
+$$\\exists p\\,(p\\text{ prime }\\wedge p>2\\wedge p\\text{ even})$$
 
-The quoted sentence is that negation.
+which is exactly the claimed negation.
 
 So the statement is True.`,
       `**D.** → False
 
-The converse says every odd number greater than $2$ is prime. Test $9$:
+The converse would say every odd $n>2$ is prime. A counterexample is
 
-$$9>2,$$
+$$n=9$$
+
+$$9>2$$
+
+$$9\\text{ is odd}$$
 
 $$9=3\\cdot 3$$
 
-The number $9$ is odd and composite. One counterexample kills the converse.
-
-That conflicts with the claim.
+so $9$ is not prime. The converse fails.
 
 So the statement is False.`,
       `**E.** → True
 
-Euclid's theorem says that the set $\\mathbb P$ of all primes is infinite. The primes greater than $2$ are exactly
-
-$$\\{p\\in\\mathbb P:p>2\\}=\\mathbb P\\setminus\\{2\\}$$
-
-If this remaining set were finite, adding the one omitted prime would make
-
-$$\\mathbb P=(\\mathbb P\\setminus\\{2\\})\\cup\\{2\\}$$
-
-finite, contradicting Euclid's theorem. Therefore infinitely many primes are greater than $2$.
+Euclid’s theorem supplies infinitely many primes. Removing the single prime $2$ still leaves infinitely many primes, all of which are greater than $2$.
 
 So the statement is True.`,
     ],
