@@ -609,14 +609,22 @@ def try_ch6_regen(L, k, stmt, existing):
     blob = extract_blob(stmt)
     if not blob or blob.count("|") >= 2 or "sqrt" in blob:
         return None
+    # Skip compound / multi-relation blobs
+    if len(re.findall(r"\\le|\\ge|<=|>=|<|>|≤|≥", blob)) != 1:
+        return None
     parsed = parse_rel(blob)
     if not parsed:
         return None
     lhs, op, rhs = parsed
-    if isinstance(lhs, sp.Abs):
+    if isinstance(lhs, sp.Abs) or isinstance(rhs, sp.Abs):
         return None
-    num, den = sp.fraction(sp.together(lhs))
-    d2 = sp.fraction(sp.together(sp.simplify(lhs - rhs)))[1]
+    if isinstance(lhs, sp.Relational) or isinstance(rhs, sp.Relational):
+        return None
+    try:
+        num, den = sp.fraction(sp.together(lhs))
+        d2 = sp.fraction(sp.together(sp.simplify(lhs - rhs)))[1]
+    except Exception:
+        return None
     if den != 1 or d2 != 1 or "frac" in blob:
         try:
             return expand_rational(L, k, stmt, lhs, op, rhs)
@@ -770,16 +778,20 @@ def process_task(task, source: str):
         if cid == "MATH 6.113" and L == "E":
             errs.extend(audit(cid, L, k, old)); continue
         new = old
-        if source == "ch6":
-            regen = try_ch6_regen(L, k, stmt, new)
-            if regen is not None:
-                new = regen
+        try:
+            if source == "ch6":
+                regen = try_ch6_regen(L, k, stmt, new)
+                if regen is not None:
+                    new = regen
+                else:
+                    new = deepen_arithmetic(new)
+                    new = deepen_quad_crit(new)
             else:
                 new = deepen_arithmetic(new)
-                new = deepen_quad_crit(new)
-        else:
-            new = deepen_arithmetic(new)
-        new = ensure_header_closer(new, L, k)
+            new = ensure_header_closer(new, L, k)
+        except Exception as ex:
+            print(f"  skip {cid}{L}: {ex}")
+            new = ensure_header_closer(old, L, k)
         if new != old:
             changed = True
         expls[i] = new
