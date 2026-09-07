@@ -11,9 +11,11 @@ import { translate, type Lang } from "./dictionary";
 
 const STORAGE_KEY = "bbe.lang";
 
+type SetLangOptions = { persist?: boolean };
+
 type LanguageContextValue = {
   lang: Lang;
-  setLang: (lang: Lang) => void;
+  setLang: (lang: Lang, options?: SetLangOptions) => void;
   t: (text: string) => string;
 };
 
@@ -35,8 +37,11 @@ export function LanguageProvider({ children }: { children: ReactNode }) {
     if (typeof document !== "undefined") document.documentElement.lang = lang;
   }, [lang]);
 
-  const setLang = useCallback((next: Lang) => {
+  // `persist: false` applies a language for the current view only (e.g. an
+  // English marketing URL) without erasing the user's stored preference.
+  const setLang = useCallback((next: Lang, options?: SetLangOptions) => {
     setLangState(next);
+    if (options?.persist === false) return;
     try {
       window.localStorage.setItem(STORAGE_KEY, next);
     } catch {
