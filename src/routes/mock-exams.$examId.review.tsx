@@ -4,7 +4,12 @@ import { SCORING_CONFIG, SUBJECT_META, type SubjectKey } from "@/config/scoring-
 import { isCustomExamId, SECTION_TOTALS } from "@/lib/mock-exams";
 import { resolveExam } from "@/lib/custom-mock-builder/resolve-exam";
 import type { ExamQuestion, MockExamSummary } from "@/lib/mock-exams";
-import { calculateExamScore, calculateTaskScore } from "@/lib/scoring";
+import {
+  calculateExamScore,
+  getWi2Rates,
+  statementPointDelta,
+  type StatementResult,
+} from "@/lib/scoring";
 import { answersStorageKey } from "@/lib/mock-exam-session";
 import { recordMockAttempt } from "@/lib/user-progress";
 import { SiteHeader } from "@/components/SiteHeader";
@@ -15,7 +20,8 @@ import {
   ExamSolutionOverview,
   ExamStatementText,
 } from "@/components/mock-exam/ExamQuestionContent";
-import { Check, ChevronDown, Clock, Target, TrendingUp, X } from "lucide-react";
+import { Check, ChevronLeft, ChevronRight, Clock, Target, TrendingUp, X } from "lucide-react";
+import { cn } from "@/lib/utils";
 
 export const Route = createFileRoute("/mock-exams/$examId/review")({
   head: ({ params }) => ({
@@ -51,6 +57,17 @@ function fmtDuration(sec: number) {
   return h > 0 ? `${h}h ${m}m` : `${m}m`;
 }
 
+function formatDelta(n: number) {
+  if (n > 0) return `+${n.toFixed(1)}`;
+  if (n < 0) return n.toFixed(1);
+  return "0";
+}
+
+type MarkedTask = {
+  question: ExamQuestion;
+  statements: StatementResult[];
+};
+
 function ReviewExamPage() {
   const { examId } = Route.useParams();
   const [exam, setExam] = useState<MockExamSummary | null>(null);
@@ -60,7 +77,8 @@ function ReviewExamPage() {
   const [ready, setReady] = useState(false);
   const [loadError, setLoadError] = useState<string | null>(null);
   const attempt = useMemo(() => readAttempt(examId), [examId]);
-  const [open, setOpen] = useState<string | null>(null);
+  const [currentIndex, setCurrentIndex] = useState(0);
+  const [showTaskReview, setShowTaskReview] = useState(true);
 
   useEffect(() => {
     let cancelled = false;
@@ -83,7 +101,7 @@ function ReviewExamPage() {
     };
   }, [examId]);
 
-  const marked = useMemo(() => {
+  const marked = useMemo<MarkedTask[]>(() => {
     return questions.map((q) => {
       const stored = attempt?.answers?.[q.id];
       const userMarks =
@@ -110,7 +128,7 @@ function ReviewExamPage() {
   const perSubject = useMemo(() => {
     const acc: Record<SubjectKey, number> = { economics: 0, math: 0, english: 0 };
     marked.forEach((m, i) => {
-      acc[m.question.subject] += taskScores[i];
+      acc[m.question.subject] += taskScores[i] ?? 0;
     });
     return acc;
   }, [marked, taskScores]);
@@ -181,6 +199,12 @@ function ReviewExamPage() {
     questions.length,
   ]);
 
+  useEffect(() => {
+    if (currentIndex >= marked.length && marked.length > 0) {
+      setCurrentIndex(0);
+    }
+  }, [marked.length, currentIndex]);
+
   if (!ready) {
     return (
       <div className="flex min-h-screen items-center justify-center bg-background text-sm text-muted-foreground">
@@ -211,6 +235,10 @@ function ReviewExamPage() {
       </div>
     );
   }
+
+  const current = marked[currentIndex] ?? null;
+  const currentScore = current ? (taskScores[currentIndex] ?? 0) : 0;
+
   return (
     <div className={PRACTICE_PAGE}>
       <SiteHeader
@@ -224,17 +252,42 @@ function ReviewExamPage() {
           </Link>
         }
       />
-      <main className={`${PRACTICE_BODY} flex-col py-12`}>
-        <div className="mb-8 flex flex-wrap items-center justify-between gap-3">
+      <main className={`${PRACTICE_BODY} flex-col py-8 sm:py-10`}>
+        <div className="mb-6 flex flex-wrap items-end justify-between gap-3">
           <div>
             <h1 className="font-display text-3xl font-bold tracking-tight">
               {exam?.title ?? "Mock Exam"} — Review
             </h1>
             <p className="mt-1 text-sm text-muted-foreground">
-              {isCustom
-                ? "Green = correct mark · Red = incorrect mark"
-                : "Scored with the official wi2 method."}
+              Browse tasks again. Correct marks glow green, mistakes glow red. Points per statement
+              sit to the right.
             </p>
+          </div>
+          <div className="flex flex-wrap gap-2">
+            <button
+              type="button"
+              onClick={() => setShowTaskReview(true)}
+              className={cn(
+                "rounded-md border px-3 py-1.5 text-xs font-semibold transition-colors",
+                showTaskReview
+                  ? "border-foreground bg-foreground text-background"
+                  : "border-border bg-card hover:bg-secondary",
+              )}
+            >
+              Review tasks
+            </button>
+            <button
+              type="button"
+              onClick={() => setShowTaskReview(false)}
+              className={cn(
+                "rounded-md border px-3 py-1.5 text-xs font-semibold transition-colors",
+                !showTaskReview
+                  ? "border-foreground bg-foreground text-background"
+                  : "border-border bg-card hover:bg-secondary",
+              )}
+            >
+              Score overview
+            </button>
           </div>
         </div>
 
@@ -247,7 +300,7 @@ function ReviewExamPage() {
               {isCustom ? `${pct}%` : `${total.toFixed(1)} / ${pointsTotal}`}
             </div>
             <div className="mt-1 text-sm text-muted-foreground">
-              {isCustom ? "Correct statement marks" : `${pct}%`}
+              {isCustom ? `${total.toFixed(1)} / ${pointsTotal} pts` : `${pct}%`}
             </div>
           </div>
           <div className="rounded-2xl border border-border bg-card p-5 shadow-sm">
@@ -276,139 +329,313 @@ function ReviewExamPage() {
           </div>
         </div>
 
-        {!isCustom && (
-          <div className="mb-10 rounded-2xl border border-border bg-card p-6 shadow-sm">
-            <h2 className="mb-4 font-display text-lg font-semibold">By subject</h2>
-            <div className="space-y-4">
-              {subjectsToShow.map((s) => {
-                const sm = SUBJECT_META[s];
-                const earned = perSubject[s];
-                const max = subjectMax[s];
+        {!showTaskReview ? (
+          <>
+            {!isCustom && (
+              <div className="mb-10 rounded-2xl border border-border bg-card p-6 shadow-sm">
+                <h2 className="mb-4 font-display text-lg font-semibold">By subject</h2>
+                <div className="space-y-4">
+                  {subjectsToShow.map((s) => {
+                    const sm = SUBJECT_META[s];
+                    const earned = perSubject[s];
+                    const max = subjectMax[s];
+                    return (
+                      <div key={s}>
+                        <div className="mb-1.5 flex items-center justify-between text-sm">
+                          <span className="font-medium">{sm.label}</span>
+                          <span className="font-mono tabular-nums text-muted-foreground">
+                            {earned.toFixed(1)} / {max}
+                          </span>
+                        </div>
+                        <div className="h-2 overflow-hidden rounded-full bg-secondary">
+                          <div
+                            className="h-full rounded-full transition-all duration-700"
+                            style={{
+                              width: `${Math.min(100, max > 0 ? (earned / max) * 100 : 0)}%`,
+                              backgroundColor: sm.color,
+                            }}
+                          />
+                        </div>
+                      </div>
+                    );
+                  })}
+                </div>
+              </div>
+            )}
+
+            <div className="mb-4 flex items-center justify-between gap-3">
+              <h2 className="font-display text-xl font-semibold">All tasks</h2>
+              <button
+                type="button"
+                onClick={() => setShowTaskReview(true)}
+                className="rounded-md bg-caramel-deep px-3 py-1.5 text-xs font-semibold text-white hover:brightness-110"
+              >
+                Open task review →
+              </button>
+            </div>
+            <div className="space-y-2">
+              {marked.map((m, i) => {
+                const q = m.question;
+                const sm = SUBJECT_META[q.subject];
+                const score = taskScores[i] ?? 0;
+                const correctMarks = m.statements.filter((s) => s.userMarked === s.isTrue).length;
                 return (
-                  <div key={s}>
-                    <div className="mb-1.5 flex items-center justify-between text-sm">
-                      <span className="font-medium">{sm.label}</span>
-                      <span className="font-mono tabular-nums text-muted-foreground">
-                        {earned.toFixed(1)} / {max}
+                  <button
+                    key={q.id}
+                    type="button"
+                    onClick={() => {
+                      setCurrentIndex(i);
+                      setShowTaskReview(true);
+                    }}
+                    className="flex w-full items-center gap-3 rounded-xl border border-border bg-card px-5 py-4 text-left shadow-sm transition-colors hover:bg-secondary/40"
+                  >
+                    <span className="w-7 shrink-0 font-mono text-sm text-taupe">{q.index}</span>
+                    {!isCustom && (
+                      <span
+                        className={`shrink-0 rounded-full border px-2 py-0.5 text-[10px] font-semibold uppercase tracking-widest ${sm.badgeClass}`}
+                      >
+                        {sm.label}
                       </span>
-                    </div>
-                    <div className="h-2 overflow-hidden rounded-full bg-secondary">
-                      <div
-                        className="h-full rounded-full transition-all duration-700"
-                        style={{
-                          width: `${Math.min(100, max > 0 ? (earned / max) * 100 : 0)}%`,
-                          backgroundColor: sm.color,
-                        }}
-                      />
-                    </div>
-                  </div>
+                    )}
+                    <span className="flex-1 truncate text-sm">{q.stem}</span>
+                    <span className="shrink-0 font-mono text-sm font-semibold tabular-nums">
+                      {isCustom
+                        ? `${correctMarks}/5 · ${score.toFixed(1)} pts`
+                        : `${score.toFixed(1)} / ${q.maxPoints.toFixed(1)} pts`}
+                    </span>
+                  </button>
                 );
               })}
             </div>
-          </div>
-        )}
+          </>
+        ) : current ? (
+          <TaskReviewWorkspace
+            marked={marked}
+            currentIndex={currentIndex}
+            onNavigate={setCurrentIndex}
+            isCustom={isCustom}
+            currentScore={currentScore}
+          />
+        ) : null}
+      </main>
+    </div>
+  );
+}
 
-        <h2 className="mb-4 font-display text-xl font-semibold">Question breakdown</h2>
-        <div className="space-y-2">
-          {marked.map((m) => {
-            const q = m.question;
-            const sm = SUBJECT_META[q.subject];
-            const score = calculateTaskScore(q.maxPoints, m.statements);
-            const correctMarks = m.statements.filter((s) => s.userMarked === s.isTrue).length;
-            const isOpen = open === q.id;
+function TaskReviewWorkspace({
+  marked,
+  taskScores,
+  currentIndex,
+  onNavigate,
+  isCustom,
+  currentScore,
+}: {
+  marked: MarkedTask[];
+  taskScores: number[];
+  currentIndex: number;
+  onNavigate: (index: number) => void;
+  isCustom: boolean;
+  currentScore: number;
+}) {
+  const current = marked[currentIndex]!;
+  const q = current.question;
+  const sm = SUBJECT_META[q.subject];
+  const rates = getWi2Rates(q.maxPoints, current.statements);
+  const deltas = current.statements.map((s) => statementPointDelta(s, rates));
+
+  return (
+    <div className="flex flex-col gap-4 lg:flex-row lg:items-start">
+      <aside className="w-full shrink-0 rounded-2xl border border-border bg-card p-4 shadow-sm lg:sticky lg:top-20 lg:w-56 xl:w-64">
+        <h2 className="mb-3 text-[10px] font-semibold uppercase tracking-widest text-taupe">
+          Tasks
+        </h2>
+        <div className="flex flex-wrap gap-1.5">
+          {marked.map((m, i) => {
+            const allCorrect = m.statements.every((s) => s.userMarked === s.isTrue);
+            const anyWrong = m.statements.some((s) => s.userMarked !== s.isTrue);
+            const isCurrent = i === currentIndex;
             return (
-              <div
-                key={q.id}
-                className="overflow-hidden rounded-xl border border-border bg-card shadow-sm"
-              >
-                <button
-                  type="button"
-                  onClick={() => setOpen(isOpen ? null : q.id)}
-                  className="flex w-full items-center gap-3 px-5 py-4 text-left transition-colors hover:bg-secondary/40"
-                >
-                  <span className="w-7 shrink-0 font-mono text-sm text-taupe">{q.index}</span>
-                  {!isCustom && (
-                    <span
-                      className={`shrink-0 rounded-full border px-2 py-0.5 text-[10px] font-semibold uppercase tracking-widest ${sm.badgeClass}`}
-                    >
-                      {sm.label}
-                    </span>
-                  )}
-                  <span className="flex-1 truncate text-sm">{q.stem}</span>
-                  <span className="shrink-0 font-mono text-sm font-semibold tabular-nums">
-                    {isCustom
-                      ? `${correctMarks}/5`
-                      : `${score.toFixed(1)} / ${q.maxPoints.toFixed(1)} pts`}
-                  </span>
-                  <ChevronDown
-                    className={`h-4 w-4 shrink-0 text-taupe transition-transform ${isOpen ? "rotate-180" : ""}`}
-                  />
-                </button>
-                {isOpen && (
-                  <div className="border-t border-border px-5 py-4">
-                    {q.subtopicTag ? (
-                      <p className="mb-2 text-xs font-medium tracking-wide text-muted-foreground/70">
-                        {q.subtopicTag}
-                      </p>
-                    ) : null}
-                    <ExamQuestionBody q={q} />
-                    {q.solutionOverview ? (
-                      <ExamSolutionOverview
-                        text={q.solutionOverview}
-                        subject={q.subject}
-                        className="mb-4 mt-4"
-                      />
-                    ) : null}
-                    <div className="mt-4 space-y-3">
-                      {q.statements.map((s, si) => {
-                        const userMarked = m.statements[si].userMarked;
-                        const correct = userMarked === s.isTrue;
-                        return (
-                          <div
-                            key={s.id}
-                            className={`rounded-lg border p-3 ${
-                              correct
-                                ? "border-border bg-card"
-                                : "border-red-500/30 bg-red-500/5"
-                            }`}
-                          >
-                            <div className="flex items-start gap-3">
-                              <span className="mt-0.5 shrink-0">
-                                {correct ? (
-                                  <Check className="h-4 w-4 text-emerald-600" />
-                                ) : (
-                                  <X className="h-4 w-4 text-red-600" />
-                                )}
-                              </span>
-                              <div className="flex-1">
-                                <p className="text-sm">
-                                  <span className="mr-2 font-semibold text-taupe">
-                                    {String.fromCharCode(65 + si)}.
-                                  </span>
-                                  <ExamStatementText q={q} text={s.text} />
-                                </p>
-                                <p className="mt-1.5 text-xs text-taupe">
-                                  Your answer: <strong>{userMarked ? "True" : "—"}</strong> ·
-                                  Correct answer: <strong>{s.isTrue ? "True" : "False"}</strong>
-                                </p>
-                                <ExamExplanationText
-                                  q={q}
-                                  text={s.explanation}
-                                  className="mt-1.5 text-xs text-muted-foreground"
-                                />
-                              </div>
-                            </div>
-                          </div>
-                        );
-                      })}
-                    </div>
-                  </div>
+              <button
+                key={m.question.id}
+                type="button"
+                onClick={() => onNavigate(i)}
+                aria-current={isCurrent ? "true" : undefined}
+                className={cn(
+                  "relative flex h-8 w-8 items-center justify-center rounded-md border text-xs font-semibold transition-colors",
+                  isCurrent && "ring-2 ring-foreground/30 ring-offset-2 ring-offset-card",
+                  allCorrect && !isCurrent && "border-emerald-500/50 bg-emerald-500/15 text-emerald-800",
+                  anyWrong && !allCorrect && !isCurrent && "border-red-500/40 bg-red-500/10 text-red-800",
+                  isCurrent && allCorrect && "border-emerald-700 bg-emerald-600 text-white",
+                  isCurrent && anyWrong && !allCorrect && "border-red-700 bg-red-600 text-white",
+                  isCurrent && !allCorrect && !anyWrong && "border-foreground bg-foreground text-background",
                 )}
-              </div>
+              >
+                {m.question.index}
+              </button>
             );
           })}
         </div>
-      </main>
+        <p className="mt-3 text-[11px] leading-snug text-muted-foreground">
+          Green = all statements judged correctly. Red = at least one mistake.
+        </p>
+      </aside>
+
+      <div className="min-w-0 flex-1 space-y-4">
+        <div className="flex flex-wrap items-center justify-between gap-2">
+          <div className="flex flex-wrap items-center gap-2">
+            <span className="font-mono text-sm text-taupe">Q{q.index}</span>
+            {!isCustom && (
+              <span
+                className={`rounded-full border px-2 py-0.5 text-[10px] font-semibold uppercase tracking-widest ${sm.badgeClass}`}
+              >
+                {sm.label}
+              </span>
+            )}
+            <span className="rounded-md border border-border bg-secondary/50 px-2 py-0.5 font-mono text-xs font-semibold tabular-nums">
+              {currentScore.toFixed(1)} / {q.maxPoints.toFixed(1)} pts
+            </span>
+          </div>
+          <div className="flex items-center gap-2">
+            <button
+              type="button"
+              disabled={currentIndex === 0}
+              onClick={() => onNavigate(currentIndex - 1)}
+              className="inline-flex items-center gap-1 rounded-md border border-border bg-card px-3 py-1.5 text-xs font-semibold hover:bg-secondary disabled:opacity-40"
+            >
+              <ChevronLeft className="h-3.5 w-3.5" /> Prev
+            </button>
+            <button
+              type="button"
+              disabled={currentIndex >= marked.length - 1}
+              onClick={() => onNavigate(currentIndex + 1)}
+              className="inline-flex items-center gap-1 rounded-md border border-border bg-card px-3 py-1.5 text-xs font-semibold hover:bg-secondary disabled:opacity-40"
+            >
+              Next <ChevronRight className="h-3.5 w-3.5" />
+            </button>
+          </div>
+        </div>
+
+        <div className="rounded-2xl border border-border bg-card p-5 shadow-sm sm:p-7">
+          {q.subtopicTag ? (
+            <p className="mb-3 text-xs font-medium tracking-wide text-muted-foreground/70">
+              {q.subtopicTag}
+            </p>
+          ) : null}
+          <ExamQuestionBody q={q} emphasized />
+
+          <div className="mt-6 overflow-hidden rounded-xl border border-border">
+            <div className="flex items-center gap-3 border-b border-border bg-secondary/50 px-4 py-2 text-[11px] font-semibold uppercase tracking-widest text-taupe">
+              <span className="w-6">#</span>
+              <span className="flex-1">Statement</span>
+              <span className="w-16 text-center sm:w-20">Yours</span>
+              <span className="w-16 text-center sm:w-20">Key</span>
+              <span className="w-16 text-right sm:w-20">Points</span>
+            </div>
+            {q.statements.map((s, si) => {
+              const result = current.statements[si]!;
+              const judgedOk = result.userMarked === result.isTrue;
+              const delta = deltas[si] ?? 0;
+              return (
+                <div
+                  key={s.id}
+                  className={cn(
+                    "flex items-start gap-2 border-b border-border px-3 py-3.5 last:border-b-0 sm:items-center sm:gap-3 sm:px-4",
+                    judgedOk
+                      ? "bg-emerald-500/10 shadow-[inset_3px_0_0_0_rgb(16,185,129)]"
+                      : "bg-red-500/10 shadow-[inset_3px_0_0_0_rgb(239,68,68)]",
+                  )}
+                >
+                  <span className="mt-0.5 flex w-6 shrink-0 items-center justify-center sm:mt-0">
+                    {judgedOk ? (
+                      <Check className="h-4 w-4 text-emerald-600" aria-label="Correct judgment" />
+                    ) : (
+                      <X className="h-4 w-4 text-red-600" aria-label="Incorrect judgment" />
+                    )}
+                  </span>
+                  <p className="min-w-0 flex-1 text-sm leading-relaxed">
+                    <span className="mr-2 font-semibold text-taupe">
+                      {String.fromCharCode(65 + si)}.
+                    </span>
+                    <ExamStatementText q={q} text={s.text} />
+                  </p>
+                  <span
+                    className={cn(
+                      "w-16 shrink-0 text-center text-xs font-semibold sm:w-20",
+                      result.userMarked ? "text-foreground" : "text-muted-foreground",
+                    )}
+                  >
+                    {result.userMarked ? "True" : "—"}
+                  </span>
+                  <span className="w-16 shrink-0 text-center text-xs font-semibold sm:w-20">
+                    {result.isTrue ? "True" : "False"}
+                  </span>
+                  <span
+                    className={cn(
+                      "w-16 shrink-0 text-right font-mono text-sm font-bold tabular-nums sm:w-20",
+                      delta > 0 && "text-emerald-700",
+                      delta < 0 && "text-red-700",
+                      delta === 0 && "text-muted-foreground",
+                    )}
+                  >
+                    {formatDelta(delta)}
+                  </span>
+                </div>
+              );
+            })}
+          </div>
+        </div>
+      </div>
+
+      <aside className="w-full shrink-0 lg:sticky lg:top-20 lg:w-[min(100%,22rem)] xl:w-[26rem]">
+        <div className="flex h-full max-h-[min(70vh,44rem)] flex-col overflow-hidden rounded-2xl border border-border bg-card shadow-sm lg:max-h-[calc(100vh-6rem)]">
+          <div className="border-b border-border px-4 py-3">
+            <p className="text-[10px] font-bold uppercase tracking-widest text-taupe">
+              Explanations · Task {q.index}
+            </p>
+            <p className="mt-0.5 truncate text-sm font-semibold">{q.stem.slice(0, 80)}</p>
+          </div>
+          <div className="min-h-0 flex-1 space-y-4 overflow-y-auto px-4 py-4">
+            {q.solutionOverview ? (
+              <ExamSolutionOverview text={q.solutionOverview} subject={q.subject} />
+            ) : null}
+            {q.statements.map((s, si) => {
+              const result = current.statements[si]!;
+              const judgedOk = result.userMarked === result.isTrue;
+              const delta = deltas[si] ?? 0;
+              return (
+                <div
+                  key={s.id}
+                  className={cn(
+                    "rounded-xl border p-3",
+                    judgedOk ? "border-emerald-500/25 bg-emerald-500/5" : "border-red-500/25 bg-red-500/5",
+                  )}
+                >
+                  <div className="mb-1.5 flex items-center justify-between gap-2">
+                    <span className="text-xs font-bold uppercase tracking-wider text-taupe">
+                      {String.fromCharCode(65 + si)} · {result.isTrue ? "True" : "False"}
+                    </span>
+                    <span
+                      className={cn(
+                        "font-mono text-xs font-bold tabular-nums",
+                        delta > 0 && "text-emerald-700",
+                        delta < 0 && "text-red-700",
+                        delta === 0 && "text-muted-foreground",
+                      )}
+                    >
+                      {formatDelta(delta)} pts
+                    </span>
+                  </div>
+                  <ExamExplanationText
+                    q={q}
+                    text={s.explanation}
+                    className="text-sm text-muted-foreground"
+                  />
+                </div>
+              );
+            })}
+          </div>
+        </div>
+      </aside>
     </div>
   );
 }
