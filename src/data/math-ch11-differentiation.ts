@@ -40,10 +40,14 @@ $$
 $$
 
 $$
-\\dfrac{2ah+h^{2}-4h}{h} = 2a+h-4
+\\dfrac{2ah+h^{2}-4h}{h}
 $$
 
-A common trap is dropping the $-4h$ from the linear term; keeping every contribution yields exactly the claimed simplification. Writing every intermediate line keeps the comparison with the claim mechanical.
+$$
+= 2a+h-4
+$$
+
+A common trap is dropping the $-4h$ from the linear term; keeping every contribution yields exactly the claimed simplification.
 
 So the statement is True.`,
       `**B.** → True
@@ -64,7 +68,7 @@ $$
 P'(3) = 2
 $$
 
-Do not confuse the derivative value with the height $P(3)=4$ on the curve — the claim asks only for the slope. The computed slope matches. The stem's formula is enough; no outside identity is required for the check. Substituting only after the general expression is finished avoids mixing height with slope.
+Do not confuse the derivative value with the height $P(3)=4$ on the curve — the claim asks only for the slope. The computed slope matches.
 
 So the statement is True.`,
       `**C.** → True
@@ -73,6 +77,30 @@ A tangent line needs one point on the curve and the slope there. First evaluate 
 
 $$
 P(3) = 9-12+7
+$$
+
+$$
+9 - 12 = -3
+$$
+
+$$
+-3 + 7 = 4
+$$
+
+$$
+P(3) = 4
+$$
+
+$$
+9 - 12 = -3
+$$
+
+$$
+-3 + 7 = 4
+$$
+
+$$
+P(3) = 4
 $$
 
 $$
@@ -109,7 +137,7 @@ $$
 y = 2x-2
 $$
 
-A trap is writing $y=2x+4$ from the point alone; the algebra above confirms the claimed tangent. Substituting only after the general expression is finished avoids mixing height with slope.
+A trap is writing $y=2x+4$ from the point alone; the algebra above confirms the claimed tangent.
 
 So the statement is True.`,
       `**D.** → False
@@ -120,7 +148,7 @@ $$
 P'(x) = 2x-4
 $$
 
-Solve $2x-4>0$ to see that $P'(x)>0$ for every $x>2$, so the profit curve is increasing on that ray. The claim asserts it is decreasing there — that flips the sign of $P'$. The named evaluation already serves as a counter-example. Holding both formulas in view makes the failure obvious. The derived expression and the asserted one disagree at a checkable place.
+Solve $2x-4>0$ to see that $P'(x)>0$ for every $x>2$, so the profit curve is increasing on that ray. The claim asserts it is decreasing there — that flips the sign of $P'$.
 
 So the statement is False.`,
       `**E.** → True
@@ -132,10 +160,22 @@ $$
 $$
 
 $$
+2x = 4
+$$
+
+$$
 x = 2
 $$
 
-The parabola $P(x)=x^{2}-4x+7$ opens upward (leading coefficient $+1>0$), so this unique stationary point is a minimum rather than a maximum. Do not confuse a critical-point location with a maximum just because profit is discussed. The same checklist — differentiate, simplify, evaluate — settles the assertion. Writing every intermediate line keeps the comparison with the claim mechanical.
+$$
+2x = 4
+$$
+
+$$
+x = 2
+$$
+
+The parabola $P(x)=x^{2}-4x+7$ opens upward (leading coefficient $+1>0$), so this unique stationary point is a minimum rather than a maximum. Do not confuse a critical-point location with a maximum just because profit is discussed.
 
 So the statement is True.`
     ],
@@ -191,7 +231,7 @@ $$
 C'(q) = 12+\\dfrac{3}{50}q
 $$
 
-The constant $200$ vanishes under differentiation, and $\\dfrac{6}{100}$ reduces to $\\dfrac{3}{50}$. That is exactly the claimed marginal-cost formula. The stem's formula is enough; no outside identity is required for the check. Substituting only after the general expression is finished avoids mixing height with slope.
+The constant $200$ vanishes under differentiation, and $\\dfrac{6}{100}$ reduces to $\\dfrac{3}{50}$. That is exactly the claimed marginal-cost formula.
 
 So the statement is True.`,
       `**B.** → True
@@ -207,6 +247,22 @@ C'(100) = 12+6
 $$
 
 $$
+12 + 6 = 18
+$$
+
+$$
+C'(100) = 18
+$$
+
+$$
+12 + 6 = 18
+$$
+
+$$
+C'(100) = 18
+$$
+
+$$
 = 18
 $$
 
@@ -218,7 +274,7 @@ $$
 C'(100) = 18
 $$
 
-A trap here is evaluating total cost $C(100)=1700$ by mistake when the claim asks for the derivative. The slope computation matches the claim. Substituting only after the general expression is finished avoids mixing height with slope. Coefficient and sign agreement with the claim is what decides the letter. The same checklist — differentiate, simplify, evaluate — settles the assertion.
+A trap here is evaluating total cost $C(100)=1700$ by mistake when the claim asks for the derivative. The slope computation matches the claim.
 
 So the statement is True.`,
       `**C.** → True
@@ -229,7 +285,13 @@ $$
 C'(100) = 18
 $$
 
-so producing one extra unit near that output raises total cost by approximately $18$ euros. The word "approximately" matters: the derivative is the local linear estimate, not an exact finite difference. Matching that reading, the statement is True. Coefficient and sign agreement with the claim is what decides the letter.
+so producing one extra unit near that output raises total cost by approximately $18$ euros. The word "approximately" matters: the derivative is the local linear estimate, not an exact finite difference. Matching that reading,
+
+$$
+q = 100
+$$
+
+which matches the claim.
 
 So the statement is True.`,
       `**D.** → False
@@ -240,7 +302,7 @@ $$
 \\dfrac{C(q)}{q} = \\dfrac{200}{q}+12+\\dfrac{3}{100}q
 $$
 
-whereas $C'(q)=12+\\dfrac{3}{50}q$ is marginal cost — the slope of total cost. Those two functions agree only at special points, not identically. The claim's identification of $C'$ with average cost is incorrect. Holding both formulas in view makes the failure obvious. The derived expression and the asserted one disagree at a checkable place. That mismatch alone is enough to reject the letter.
+whereas $C'(q)=12+\\dfrac{3}{50}q$ is marginal cost — the slope of total cost. Those two functions agree only at special points, not identically. The claim's identification of $C'$ with average cost is incorrect.
 
 So the statement is False.`,
       `**E.** → True
@@ -265,7 +327,7 @@ $$
 y = 1700+18(q-100)
 $$
 
-exactly as claimed. Do not replace the intercept $1700$ by the fixed cost $200$. Comparing with the claim, the statement is True. Writing every intermediate line keeps the comparison with the claim mechanical. The stem's formula is enough; no outside identity is required for the check.
+exactly as claimed. Do not replace the intercept $1700$ by the fixed cost $200$. Comparing with the claim,
 
 So the statement is True.`
     ],
@@ -317,7 +379,13 @@ $$
 Q'(L) = \\dfrac{15}{2}L^{\\frac{1}{2}}
 $$
 
-A trap is writing $5\\cdot\\dfrac{3}{2}L^{\\frac{3}{2}}$ without lowering the exponent. The simplified formula matches the claim. Substituting only after the general expression is finished avoids mixing height with slope.
+A trap is writing $5\\cdot\\dfrac{3}{2}L^{\\frac{3}{2}}$ without lowering the exponent. The simplified formula matches the claim.
+
+$$
+Q(L) = 5L^{\\frac{3}{2}}
+$$
+
+which matches the claim.
 
 So the statement is True.`,
       `**B.** → True
@@ -332,7 +400,17 @@ $$
 Q'(4) = 15
 $$
 
-Do not confuse this slope with the output level $Q(4)=5\\cdot 8=40$. The claim asks only for $Q'(4)$, and that value equals $15$. Coefficient and sign agreement with the claim is what decides the letter. The same checklist — differentiate, simplify, evaluate — settles the assertion. Writing every intermediate line keeps the comparison with the claim mechanical.
+Do not confuse this slope with the output level $Q(4)=5\\cdot 8=40$. The claim asks only for $Q'(4)$, and that value equals $15$.
+
+$$
+L = 4
+$$
+
+$$
+\\sqrt{4} = 2
+$$
+
+which matches the claim.
 
 So the statement is True.`,
       `**C.** → True
@@ -343,7 +421,13 @@ $$
 Q'(4) = 15
 $$
 
-so one extra labour-hour near that staffing level raises output by approximately $15$ units. The approximation language is intentional: the derivative is not an exact finite jump. Matching that reading, the statement is True. The same checklist — differentiate, simplify, evaluate — settles the assertion. Writing every intermediate line keeps the comparison with the claim mechanical.
+so one extra labour-hour near that staffing level raises output by approximately $15$ units. The approximation language is intentional: the derivative is not an exact finite jump. Matching that reading,
+
+$$
+L = 4
+$$
+
+which matches the claim.
 
 So the statement is True.`,
       `**D.** → False
@@ -354,7 +438,9 @@ $$
 Q'(L) = \\dfrac{15}{2}L^{\\frac{1}{2}}
 $$
 
-which changes whenever $L$ changes. Only a constant function would stay flat for all $L>0$; here the square-root factor grows with labour. Marginal product is therefore not constant. The derived expression and the asserted one disagree at a checkable place. That mismatch alone is enough to reject the letter. Rephrasing the claim cannot repair an algebraic contradiction.
+which changes whenever $L$ changes. Only a constant function would stay flat for all $L>0$; here the square-root factor grows with labour. Marginal product is therefore not constant.
+
+Rephrasing the claim cannot repair an algebraic contradiction.
 
 So the statement is False.`,
       `**E.** → False
@@ -369,7 +455,19 @@ $$
 \\dfrac{Q'(8)}{Q'(4)} = \\sqrt{2}\\neq 2
 $$
 
-Because $Q'$ scales like $\\sqrt{L}$, doubling labour multiplies marginal product by $\\sqrt{2}$, not by $2$. The claim's "exactly doubles" comparison is incorrect. That mismatch alone is enough to reject the letter. Rephrasing the claim cannot repair an algebraic contradiction. The named evaluation already serves as a counter-example.
+Because $Q'$ scales like $\\sqrt{L}$, doubling labour multiplies marginal product by $\\sqrt{2}$, not by $2$. The claim's "exactly doubles" comparison is incorrect.
+
+Rephrasing the claim cannot repair an algebraic contradiction.
+
+$$
+L = 4
+$$
+
+$$
+L = 8
+$$
+
+which does not match the claim.
 
 So the statement is False.`
     ],
@@ -421,7 +519,7 @@ $$
 R(q) = 80q-2q^{2}
 $$
 
-Do not leave the expression as $q(80-2q)$ when the claim asks for the expanded quadratic. That expanded form is exactly what is named. Coefficient and sign agreement with the claim is what decides the letter. The same checklist — differentiate, simplify, evaluate — settles the assertion. Writing every intermediate line keeps the comparison with the claim mechanical.
+Do not leave the expression as $q(80-2q)$ when the claim asks for the expanded quadratic. That expanded form is exactly what is named.
 
 So the statement is True.`,
       `**B.** → True
@@ -432,7 +530,13 @@ $$
 R'(q) = 80-4q
 $$
 
-A trap is writing $R'(q)=-2$ from the price slope. The claimed formula matches the correct differentiation. The same checklist — differentiate, simplify, evaluate — settles the assertion. Writing every intermediate line keeps the comparison with the claim mechanical. The stem's formula is enough; no outside identity is required for the check.
+A trap is writing $R'(q)=-2$ from the price slope. The claimed formula matches the correct differentiation.
+
+$$
+R(q) = 80q-2q^{2}
+$$
+
+which matches the claim.
 
 So the statement is True.`,
       `**C.** → True
@@ -448,6 +552,22 @@ R'(10) = 80-40
 $$
 
 $$
+80 - 40 = 40
+$$
+
+$$
+R'(10) = 40
+$$
+
+$$
+80 - 40 = 40
+$$
+
+$$
+R'(10) = 40
+$$
+
+$$
 = 40
 $$
 
@@ -459,7 +579,7 @@ $$
 R'(10) = 40
 $$
 
-Do not confuse this with price $p(10)=60$ or with revenue $R(10)=600$. The slope computation matches the claim. Writing every intermediate line keeps the comparison with the claim mechanical. The stem's formula is enough; no outside identity is required for the check. Substituting only after the general expression is finished avoids mixing height with slope.
+Do not confuse this with price $p(10)=60$ or with revenue $R(10)=600$. The slope computation matches the claim.
 
 So the statement is True.`,
       `**D.** → False
@@ -470,7 +590,19 @@ $$
 R'(q) = 80-4q
 $$
 
-These are different functions for every $q>0$. Equating $R'$ with $p'$ forgets that revenue is the product $q\\,p(q)$. The claim's identification is incorrect. That mismatch alone is enough to reject the letter. Rephrasing the claim cannot repair an algebraic contradiction. The named evaluation already serves as a counter-example. Holding both formulas in view makes the failure obvious.
+These are different functions for every $q>0$. Equating $R'$ with $p'$ forgets that revenue is the product $q\\,p(q)$. The claim's identification is incorrect.
+
+Rephrasing the claim cannot repair an algebraic contradiction.
+
+$$
+R'(q) = p'(q)
+$$
+
+$$
+p'(q) = -2
+$$
+
+which does not match the claim.
 
 So the statement is False.`,
       `**E.** → True
@@ -495,7 +627,7 @@ $$
 y = 600+40(q-10)
 $$
 
-exactly as claimed. Replacing $600$ by $p(10)$ would break the tangent equation. Comparing with the claim, the statement is True. Substituting only after the general expression is finished avoids mixing height with slope. Coefficient and sign agreement with the claim is what decides the letter.
+exactly as claimed. Replacing $600$ by $p(10)$ would break the tangent equation. Comparing with the claim,
 
 So the statement is True.`
     ],
@@ -545,7 +677,7 @@ $$
 A(q) = \\dfrac{300}{q}+6+\\dfrac{3}{100}q
 $$
 
-Each term of $C$ contributes separately: the fixed cost becomes $\\dfrac{300}{q}$, the linear piece stays $6$, and the quadratic becomes proportional to $q$. That is the claimed simplification. The same checklist — differentiate, simplify, evaluate — settles the assertion. Writing every intermediate line keeps the comparison with the claim mechanical.
+Each term of $C$ contributes separately: the fixed cost becomes $\\dfrac{300}{q}$, the linear piece stays $6$, and the quadratic becomes proportional to $q$. That is the claimed simplification.
 
 So the statement is True.`,
       `**B.** → True
@@ -556,7 +688,13 @@ $$
 A'(q) = -\\dfrac{300}{q^{2}}+\\dfrac{3}{100}
 $$
 
-A trap is differentiating $\\dfrac{3}{100}q$ as $\\dfrac{3}{100}q^{2}$. The claimed derivative matches. Writing every intermediate line keeps the comparison with the claim mechanical. The stem's formula is enough; no outside identity is required for the check.
+A trap is differentiating $\\dfrac{3}{100}q$ as $\\dfrac{3}{100}q^{2}$. The claimed derivative matches.
+
+$$
+\\dfrac{d}{dq}\\bigl(q^{-1}\\bigr) = -q^{-2}
+$$
+
+which matches the claim.
 
 So the statement is True.`,
       `**C.** → True
@@ -575,7 +713,7 @@ $$
 A'(100) = 0
 $$
 
-The two contributions cancel exactly at this output. The derivative vanishes there, matching the claim. The stem's formula is enough; no outside identity is required for the check. Substituting only after the general expression is finished avoids mixing height with slope. Coefficient and sign agreement with the claim is what decides the letter.
+The two contributions cancel exactly at this output. The derivative vanishes there, matching the claim.
 
 So the statement is True.`,
       `**D.** → False
@@ -586,7 +724,7 @@ $$
 A'(q) = -\\dfrac{300}{q^{2}}+\\dfrac{3}{100}
 $$
 
-is the rate of change of average cost. Those are different objects: one tracks the slope of $C$, the other the slope of $C/q$. Identifying $A'$ with marginal cost is incorrect. Rephrasing the claim cannot repair an algebraic contradiction. The named evaluation already serves as a counter-example. Holding both formulas in view makes the failure obvious.
+is the rate of change of average cost. Those are different objects: one tracks the slope of $C$, the other the slope of $C/q$. Identifying $A'$ with marginal cost is incorrect. Rephrasing the claim cannot repair an algebraic contradiction.
 
 So the statement is False.`,
       `**E.** → True
@@ -597,7 +735,13 @@ $$
 A'(100) = 0
 $$
 
-average cost is locally flat at $q=100$. That does not by itself say whether the flat point is a min or max — but local flatness is exactly what the claim asserts. Coefficient and sign agreement with the claim is what decides the letter. The same checklist — differentiate, simplify, evaluate — settles the assertion. Writing every intermediate line keeps the comparison with the claim mechanical.
+average cost is locally flat at $q=100$. That does not by itself say whether the flat point is a min or max — but local flatness is exactly what the claim asserts.
+
+$$
+q = 100
+$$
+
+which matches the claim.
 
 So the statement is True.`
     ],
@@ -651,7 +795,7 @@ $$
 W'(n) = -\\dfrac{48}{(n+3)^{2}}
 $$
 
-The inner derivative of $n+3$ is $1$, so no extra factor appears. That matches the claimed formula. Writing every intermediate line keeps the comparison with the claim mechanical. The stem's formula is enough; no outside identity is required for the check. Substituting only after the general expression is finished avoids mixing height with slope.
+The inner derivative of $n+3$ is $1$, so no extra factor appears. That matches the claimed formula.
 
 So the statement is True.`,
       `**B.** → True
@@ -670,7 +814,7 @@ $$
 W'(3) = -\\dfrac{4}{3}
 $$
 
-Keep the minus sign: adding agents reduces waiting time. The computed value matches the claim. The stem's formula is enough; no outside identity is required for the check. Substituting only after the general expression is finished avoids mixing height with slope. Coefficient and sign agreement with the claim is what decides the letter.
+Keep the minus sign: adding agents reduces waiting time. The computed value matches the claim.
 
 So the statement is True.`,
       `**C.** → True
@@ -681,7 +825,13 @@ $$
 W'(3) = -\\dfrac{4}{3}
 $$
 
-so adding one more agent lowers waiting time by approximately $\\dfrac{4}{3}$ minutes. The negative sign is the reduction; the claim's wording matches that reading. Substituting only after the general expression is finished avoids mixing height with slope. Coefficient and sign agreement with the claim is what decides the letter.
+so adding one more agent lowers waiting time by approximately $\\dfrac{4}{3}$ minutes. The negative sign is the reduction; the claim's wording matches that reading.
+
+$$
+n = 3
+$$
+
+which matches the claim.
 
 So the statement is True.`,
       `**D.** → False
@@ -692,7 +842,7 @@ $$
 W'(n) = -\\dfrac{48}{(n+3)^{2}}<0
 $$
 
-for every $n>0$, waiting time is decreasing in the number of agents, not increasing. The claim flips the meaning of $W'<0$. The named evaluation already serves as a counter-example. Holding both formulas in view makes the failure obvious. The derived expression and the asserted one disagree at a checkable place. That mismatch alone is enough to reject the letter.
+for every $n>0$, waiting time is decreasing in the number of agents, not increasing. The claim flips the meaning of $W'<0$.
 
 So the statement is False.`,
       `**E.** → True
@@ -707,7 +857,11 @@ $$
 W''(n) = \\dfrac{96}{(n+3)^{3}}
 $$
 
-which matches the claimed second derivative. The positive sign shows the decrease in waiting time becomes less steep as $n$ grows. The same checklist — differentiate, simplify, evaluate — settles the assertion. Writing every intermediate line keeps the comparison with the claim mechanical.
+which matches the claimed second derivative. The positive sign shows the decrease in waiting time becomes less steep as $n$ grows.
+
+$$
+W'(n) = -48(n+3)^{-2}
+$$
 
 So the statement is True.`
     ],
@@ -749,6 +903,34 @@ Reuse this derivative setup for every letter: simplify first, evaluate at named 
 
 The response index is a product $S(x)=x^{2}\\cdot e^{-x}$. Apply the product rule and factor $x\\,e^{-x}$:
 
+Write the product as two factors and differentiate each factor before combining.
+
+$$
+S(x) = x^{2} \\cdot e^{-x}
+$$
+
+$$
+u(x) = x^{2}
+$$
+
+$$
+v(x) = e^{- x}
+$$
+
+$$
+u'(x) = 2 x
+$$
+
+$$
+v'(x) = - e^{- x}
+$$
+
+$$
+S'(x) = (2 x)\\cdot(e^{- x}) + (x^{2})\\cdot(- e^{- x})
+$$
+
+Only after that product-rule expansion do we simplify to the claimed form.
+
 $$
 S'(x) = 2x\\,e^{-x}+x^{2}(-e^{-x})
 $$
@@ -757,7 +939,7 @@ $$
 S'(x) = x\\,e^{-x}(2-x)
 $$
 
-A trap is forgetting the chain-rule minus from $e^{-x}$. The factored form matches the claim exactly. The stem's formula is enough; no outside identity is required for the check. Substituting only after the general expression is finished avoids mixing height with slope. Coefficient and sign agreement with the claim is what decides the letter.
+A trap is forgetting the chain-rule minus from $e^{-x}$. The factored form matches the claim exactly.
 
 So the statement is True.`,
       `**B.** → True
@@ -772,7 +954,13 @@ $$
 S'(2) = 0
 $$
 
-The factor $(2-x)$ vanishes, so the whole product is zero even though $e^{-2}\\neq 0$. The derivative vanishes at that intensity, matching the claim. Substituting only after the general expression is finished avoids mixing height with slope. Coefficient and sign agreement with the claim is what decides the letter. The same checklist — differentiate, simplify, evaluate — settles the assertion.
+The factor $(2-x)$ vanishes, so the whole product is zero even though $e^{-2}\\neq 0$. The derivative vanishes at that intensity, matching the claim.
+
+$$
+x = 2
+$$
+
+which matches the claim.
 
 So the statement is True.`,
       `**C.** → True
@@ -783,7 +971,17 @@ $$
 S''(x) = e^{-x}(x^{2}-4x+2)
 $$
 
-Do not stop at an unsimplified three-term product — the claimed compact polynomial factor is what matters. Matching that form, the statement is True. Coefficient and sign agreement with the claim is what decides the letter. The same checklist — differentiate, simplify, evaluate — settles the assertion. Writing every intermediate line keeps the comparison with the claim mechanical.
+Do not stop at an unsimplified three-term product — the claimed compact polynomial factor is what matters. Matching that form,
+
+$$
+S''(x) = e^{-x}\\cdot (x^{2}-4x+2)
+$$
+
+$$
+S'(x) = x\\,e^{-x}(2-x)
+$$
+
+which matches the claim.
 
 So the statement is True.`,
       `**D.** → True
@@ -798,7 +996,13 @@ $$
 S'(1) = e^{-1}
 $$
 
-Here the factor $(2-x)$ equals $1$, so the derivative reduces cleanly to $e^{-1}$. The computed value matches the claim. The same checklist — differentiate, simplify, evaluate — settles the assertion. Writing every intermediate line keeps the comparison with the claim mechanical. The stem's formula is enough; no outside identity is required for the check.
+Here the factor $(2-x)$ equals $1$, so the derivative reduces cleanly to $e^{-1}$. The computed value matches the claim.
+
+$$
+x = 1
+$$
+
+which matches the claim.
 
 So the statement is True.`,
       `**E.** → True
@@ -809,7 +1013,13 @@ $$
 S'(2) = 0
 $$
 
-so the tangent to the graph at that point is horizontal. Do not confuse "horizontal tangent" with "horizontal asymptote" — here it is a local flat slope. Writing every intermediate line keeps the comparison with the claim mechanical. The stem's formula is enough; no outside identity is required for the check. Substituting only after the general expression is finished avoids mixing height with slope.
+so the tangent to the graph at that point is horizontal. Do not confuse "horizontal tangent" with "horizontal asymptote" — here it is a local flat slope.
+
+$$
+x = 2
+$$
+
+which matches the claim.
 
 So the statement is True.`
     ],
@@ -863,7 +1073,13 @@ $$
 D'(a) = \\dfrac{7}{2\\sqrt{a+9}}
 $$
 
-A trap is forgetting the factor $\\dfrac{1}{2}$ from the square-root power. The simplified formula matches the claim. Substituting only after the general expression is finished avoids mixing height with slope. Coefficient and sign agreement with the claim is what decides the letter.
+A trap is forgetting the factor $\\dfrac{1}{2}$ from the square-root power. The simplified formula matches the claim.
+
+$$
+D(a) = 7(a+9)^{\\frac{1}{2}}
+$$
+
+which matches the claim.
 
 So the statement is True.`,
       `**B.** → True
@@ -878,7 +1094,21 @@ $$
 D'(7) = \\dfrac{7}{8}
 $$
 
-Do not evaluate $D(7)=7\\cdot 4=28$ when the claim asks for the derivative. The slope matches. Coefficient and sign agreement with the claim is what decides the letter. The same checklist — differentiate, simplify, evaluate — settles the assertion. Writing every intermediate line keeps the comparison with the claim mechanical. The stem's formula is enough; no outside identity is required for the check.
+Do not evaluate $D(7)=7\\cdot 4=28$ when the claim asks for the derivative. The slope matches.
+
+$$
+a = 7
+$$
+
+$$
+a+9 = 16
+$$
+
+$$
+\\sqrt{16} = 4
+$$
+
+which matches the claim.
 
 So the statement is True.`,
       `**C.** → True
@@ -893,7 +1123,13 @@ $$
 D''(a) = -\\dfrac{7}{4}(a+9)^{-\\frac{3}{2}}
 $$
 
-The negative sign shows diminishing marginal returns. Matching the claimed second derivative, the statement is True. The same checklist — differentiate, simplify, evaluate — settles the assertion. Writing every intermediate line keeps the comparison with the claim mechanical.
+The negative sign shows diminishing marginal returns. Matching the claimed second derivative,
+
+$$
+D'(a) = \\dfrac{7}{2}(a+9)^{-\\frac{1}{2}}
+$$
+
+which matches the claim.
 
 So the statement is True.`,
       `**D.** → False
@@ -904,7 +1140,15 @@ $$
 D'(7) = \\dfrac{7}{8}
 $$
 
-units of demand per extra advertising unit, not $7$. Confusing the coefficient $7$ in $D(a)$ with the marginal effect at $a=7$ overstates the slope badly. The claim overstates the marginal effect. The derived expression and the asserted one disagree at a checkable place. That mismatch alone is enough to reject the letter. Rephrasing the claim cannot repair an algebraic contradiction.
+units of demand per extra advertising unit, not $7$. Confusing the coefficient $7$ in $D(a)$ with the marginal effect at $a=7$ overstates the slope badly. The claim overstates the marginal effect.
+
+Rephrasing the claim cannot repair an algebraic contradiction.
+
+$$
+a = 7
+$$
+
+which does not match the claim.
 
 So the statement is False.`,
       `**E.** → True
@@ -927,7 +1171,7 @@ $$
 = \\dfrac{7}{6}
 $$
 
-Since $\\dfrac{7}{10}<\\dfrac{7}{6}$, the derivative is smaller at $a=16$ than at $a=0$. That is diminishing returns in action. The stem's formula is enough; no outside identity is required for the check. Substituting only after the general expression is finished avoids mixing height with slope. Coefficient and sign agreement with the claim is what decides the letter.
+Since $\\dfrac{7}{10}<\\dfrac{7}{6}$, the derivative is smaller at $a=16$ than at $a=0$. That is diminishing returns in action.
 
 So the statement is True.`
     ],
@@ -973,6 +1217,26 @@ Reuse this derivative setup for every letter: simplify first, evaluate at named 
 
 Revenue is the product $R(n)=(20-3n)\\sqrt{2n+1}$. Apply the product rule, then combine over the common denominator $\\sqrt{2n+1}$:
 
+Write the product as two factors and differentiate each factor before combining.
+
+$$
+R(n) = (20-3n) \\cdot \\sqrt{2n+1}
+$$
+
+$$
+u(n) = (20-3n)
+$$
+
+$$
+v(n) = \\sqrt{2n+1}
+$$
+
+$$
+R'(n) = u'(n)\\,v(n) + u(n)\\,v'(n)
+$$
+
+Only after that product-rule expansion do we simplify to the claimed form.
+
 $$
 R'(n) = \\dfrac{-3(2n+1)+(20-3n)}{\\sqrt{2n+1}}
 $$
@@ -981,7 +1245,7 @@ $$
 R'(n) = \\dfrac{17-9n}{\\sqrt{2n+1}}
 $$
 
-The numerator algebra $ -6n-3+20-3n=17-9n $ is the delicate step. Matching the claimed simplified formula, the statement is True. Coefficient and sign agreement with the claim is what decides the letter. The same checklist — differentiate, simplify, evaluate — settles the assertion.
+The numerator algebra $ -6n-3+20-3n=17-9n $ is the delicate step. Matching the claimed simplified formula,
 
 So the statement is True.`,
       `**B.** → True
@@ -996,7 +1260,13 @@ $$
 R'(1) = \\dfrac{8}{\\sqrt{3}}
 $$
 
-Do not rationalise away from $\\dfrac{8}{\\sqrt{3}}$ unless asked — the claim keeps that form. The computed value matches. The same checklist — differentiate, simplify, evaluate — settles the assertion. Writing every intermediate line keeps the comparison with the claim mechanical. The stem's formula is enough; no outside identity is required for the check.
+Do not rationalise away from $\\dfrac{8}{\\sqrt{3}}$ unless asked — the claim keeps that form. The computed value matches.
+
+$$
+n = 1
+$$
+
+which matches the claim.
 
 So the statement is True.`,
       `**C.** → True
@@ -1007,7 +1277,7 @@ $$
 R'(n) = -3\\sqrt{2n+1}+\\dfrac{20-3n}{\\sqrt{2n+1}}
 $$
 
-which is exactly the intermediate form named in the claim. Leaving it uncombined is intentional here. Writing every intermediate line keeps the comparison with the claim mechanical. The stem's formula is enough; no outside identity is required for the check.
+which is exactly the intermediate form named in the claim. Leaving it uncombined is intentional here.
 
 So the statement is True.`,
       `**D.** → True
@@ -1022,7 +1292,13 @@ $$
 n = \\dfrac{17}{9}
 $$
 
-matching the claimed root. Do not set $17-9n=\\sqrt{2n+1}$ by mistake. Comparing with the claim, the statement is True. The stem's formula is enough; no outside identity is required for the check. Substituting only after the general expression is finished avoids mixing height with slope.
+matching the claimed root. Do not set $17-9n=\\sqrt{2n+1}$ by mistake. Comparing with the claim,
+
+$$
+R'(n) = 0
+$$
+
+which matches the claim.
 
 So the statement is True.`,
       `**E.** → False
@@ -1033,7 +1309,7 @@ $$
 n = \\dfrac{17}{9}
 $$
 
-and $\\dfrac{17}{9}<2$. Revenue therefore rises on part of $(0,2)$ and falls on the rest, so it is not increasing throughout that interval. The claim overstates the monotonicity. Rephrasing the claim cannot repair an algebraic contradiction. The named evaluation already serves as a counter-example. Holding both formulas in view makes the failure obvious. The derived expression and the asserted one disagree at a checkable place.
+and $\\dfrac{17}{9}<2$. Revenue therefore rises on part of $(0,2)$ and falls on the rest, so it is not increasing throughout that interval. The claim overstates the monotonicity. Rephrasing the claim cannot repair an algebraic contradiction.
 
 So the statement is False.`
     ],
@@ -1075,6 +1351,32 @@ Reuse this derivative setup for every letter: simplify first, evaluate at named 
 
 Maintenance time per effective unit is the quotient $T(n)=\\dfrac{2n^{2}+8n}{n+1}$. Apply the quotient rule with numerator $u=2n^{2}+8n$ and denominator $v=n+1$:
 
+Name the numerator and denominator, differentiate each, then apply the quotient rule before simplifying.
+
+$$
+T(n) = \\dfrac{2n^{2}+8n}{n+1}
+$$
+
+$$
+u(n) = 2n^{2}+8n
+$$
+
+$$
+v(n) = n+1
+$$
+
+$$
+u'(n) = 4 n + 8
+$$
+
+$$
+v'(n) = 1
+$$
+
+$$
+T'(n) = \\dfrac{(4 n + 8)(n+1) - (2n^{2}+8n)(1)}{(n+1)^{2}}
+$$
+
 $$
 T'(n) = \\dfrac{(4n+8)(n+1)-(2n^{2}+8n)\\cdot 1}{(n+1)^{2}}
 $$
@@ -1083,7 +1385,7 @@ $$
 T'(n) = \\dfrac{2n^{2}+4n+8}{(n+1)^{2}}
 $$
 
-which matches the claimed formula. The same checklist — differentiate, simplify, evaluate — settles the assertion. Writing every intermediate line keeps the comparison with the claim mechanical. The stem's formula is enough; no outside identity is required for the check.
+which matches the claimed formula.
 
 So the statement is True.`,
       `**B.** → True
@@ -1102,7 +1404,7 @@ $$
 T'(1) = \\dfrac{7}{2}
 $$
 
-Do not evaluate $T(1)=\\dfrac{10}{2}=5$ when the claim asks for the slope. The computed derivative matches. Writing every intermediate line keeps the comparison with the claim mechanical. The stem's formula is enough; no outside identity is required for the check. Substituting only after the general expression is finished avoids mixing height with slope.
+Do not evaluate $T(1)=\\dfrac{10}{2}=5$ when the claim asks for the slope. The computed derivative matches.
 
 So the statement is True.`,
       `**C.** → True
@@ -1113,7 +1415,13 @@ $$
 T'(n) = \\dfrac{2n^{2}+4n+8}{(n+1)^{2}}>0
 $$
 
-for every $n>0$. A positive derivative means $T$ is strictly increasing. The stem's formula is enough; no outside identity is required for the check. Substituting only after the general expression is finished avoids mixing height with slope. Coefficient and sign agreement with the claim is what decides the letter.
+for every $n>0$. A positive derivative means $T$ is strictly increasing.
+
+$$
+2n^{2}+4n+8 = 2(n^{2}+2n+4)
+$$
+
+which matches the claim.
 
 So the statement is True.`,
       `**D.** → False
@@ -1124,7 +1432,13 @@ $$
 T'(n) = \\dfrac{2n^{2}+4n+8}{(n+1)^{2}}
 $$
 
-Those expressions are not identical — the false one drops both the quadratic numerator structure and the squared denominator. The statement is False. Rephrasing the claim cannot repair an algebraic contradiction. The named evaluation already serves as a counter-example. Holding both formulas in view makes the failure obvious.
+Those expressions are not identical — the false one drops both the quadratic numerator structure and the squared denominator. The statement is False. Rephrasing the claim cannot repair an algebraic contradiction.
+
+$$
+T'(n) = \\dfrac{2n+8}{n+1}
+$$
+
+which does not match the claim.
 
 So the statement is False.`,
       `**E.** → False
@@ -1135,7 +1449,13 @@ $$
 T'(n) = \\dfrac{2n^{2}+4n+8}{(n+1)^{2}}>0
 $$
 
-throughout. A strictly positive derivative never hits zero, so no such root exists and the statement is False. The named evaluation already serves as a counter-example. Holding both formulas in view makes the failure obvious. The derived expression and the asserted one disagree at a checkable place.
+throughout. A strictly positive derivative never hits zero, so no such root exists and
+
+$$
+T'(n) = 0
+$$
+
+which does not match the claim.
 
 So the statement is False.`
     ],
@@ -1175,7 +1495,11 @@ $$
 U'(x) = \\dfrac{40}{x+1}-1
 $$
 
-which matches the claimed first derivative. Do not write $\\dfrac{40}{x}$ by forgetting the $+1$ shift. Writing every intermediate line keeps the comparison with the claim mechanical. The stem's formula is enough; no outside identity is required for the check.
+which matches the claimed first derivative. Do not write $\\dfrac{40}{x}$ by forgetting the $+1$ shift.
+
+$$
+U(x) = 40\\ln(x+1)-x
+$$
 
 So the statement is True.`,
       `**B.** → True
@@ -1194,7 +1518,7 @@ $$
 U'(3) = 9
 $$
 
-A trap is stopping at $\\dfrac{40}{4}=10$ and forgetting to subtract $1$. The full computation matches the claim. The stem's formula is enough; no outside identity is required for the check. Substituting only after the general expression is finished avoids mixing height with slope. Coefficient and sign agreement with the claim is what decides the letter.
+A trap is stopping at $\\dfrac{40}{4}=10$ and forgetting to subtract $1$. The full computation matches the claim.
 
 So the statement is True.`,
       `**C.** → True
@@ -1209,7 +1533,11 @@ $$
 U''(x) = -\\dfrac{40}{(x+1)^{2}}
 $$
 
-which matches the claimed second derivative. The negative sign shows diminishing marginal utility. Substituting only after the general expression is finished avoids mixing height with slope. Coefficient and sign agreement with the claim is what decides the letter. The same checklist — differentiate, simplify, evaluate — settles the assertion.
+which matches the claimed second derivative. The negative sign shows diminishing marginal utility.
+
+$$
+U'(x) = 40(x+1)^{-1}-1
+$$
 
 So the statement is True.`,
       `**D.** → False
@@ -1224,7 +1552,13 @@ $$
 U'(0) = 39
 $$
 
-so the derivative is defined at $x=0$. The argument of the logarithm is $x+1$, which equals $1$ at $x=0$ — there is no division by zero. The claim is incorrect. The named evaluation already serves as a counter-example. Holding both formulas in view makes the failure obvious. The derived expression and the asserted one disagree at a checkable place.
+so the derivative is defined at $x=0$. The argument of the logarithm is $x+1$, which equals $1$ at $x=0$ — there is no division by zero. The claim is incorrect.
+
+$$
+x = 0
+$$
+
+which does not match the claim.
 
 So the statement is False.`,
       `**E.** → True
@@ -1235,7 +1569,13 @@ $$
 U'(3) = 9
 $$
 
-so one extra hour near that level changes utility by approximately $9$ utility units. The approximation language matches the derivative interpretation. The same checklist — differentiate, simplify, evaluate — settles the assertion. Writing every intermediate line keeps the comparison with the claim mechanical. The stem's formula is enough; no outside identity is required for the check.
+so one extra hour near that level changes utility by approximately $9$ utility units. The approximation language matches the derivative interpretation.
+
+$$
+x = 3
+$$
+
+which matches the claim.
 
 So the statement is True.`
     ],
@@ -1283,7 +1623,11 @@ $$
 c'(N) = -500N^{-\\frac{3}{2}}
 $$
 
-which matches the claimed formula. Keep the minus sign — learning curves fall. The stem's formula is enough; no outside identity is required for the check. Substituting only after the general expression is finished avoids mixing height with slope.
+which matches the claimed formula. Keep the minus sign — learning curves fall.
+
+$$
+c(N) = 1000N^{-\\frac{1}{2}}
+$$
 
 So the statement is True.`,
       `**B.** → True
@@ -1298,7 +1642,17 @@ $$
 c'(4) = -\\dfrac{125}{2}
 $$
 
-A trap is computing $4^{-\\frac{1}{2}}=\\tfrac{1}{2}$ instead of $4^{-\\frac{3}{2}}=\\tfrac{1}{8}$. The correct value matches the claim. Substituting only after the general expression is finished avoids mixing height with slope. Coefficient and sign agreement with the claim is what decides the letter. The same checklist — differentiate, simplify, evaluate — settles the assertion.
+A trap is computing $4^{-\\frac{1}{2}}=\\tfrac{1}{2}$ instead of $4^{-\\frac{3}{2}}=\\tfrac{1}{8}$. The correct value matches the claim.
+
+$$
+N = 4
+$$
+
+$$
+4^{-\\frac{3}{2}} = \\dfrac{1}{8}
+$$
+
+which matches the claim.
 
 So the statement is True.`,
       `**C.** → True
@@ -1309,7 +1663,7 @@ $$
 c'(N)<0
 $$
 
-throughout the domain. A negative derivative means unit cost keeps falling as cumulative output rises. Coefficient and sign agreement with the claim is what decides the letter. The same checklist — differentiate, simplify, evaluate — settles the assertion. Writing every intermediate line keeps the comparison with the claim mechanical.
+throughout the domain. A negative derivative means unit cost keeps falling as cumulative output rises.
 
 So the statement is True.`,
       `**D.** → True
@@ -1320,7 +1674,13 @@ $$
 c'(4) = -\\dfrac{125}{2}
 $$
 
-so one extra unit lowers unit cost by approximately $\\dfrac{125}{2}$ euros. The absolute value of the negative derivative is the size of the reduction. The same checklist — differentiate, simplify, evaluate — settles the assertion. Writing every intermediate line keeps the comparison with the claim mechanical.
+so one extra unit lowers unit cost by approximately $\\dfrac{125}{2}$ euros. The absolute value of the negative derivative is the size of the reduction.
+
+$$
+N = 4
+$$
+
+which matches the claim.
 
 So the statement is True.`,
       `**E.** → False
@@ -1335,7 +1695,9 @@ $$
 \\dfrac{|c'(8)|}{|c'(4)|} = \\dfrac{1}{2\\sqrt{2}}\\neq 2
 $$
 
-Because $c'$ scales like $N^{-\\frac{3}{2}}$, doubling $N$ multiplies the magnitude by $2^{-\\frac{3}{2}}$, not by $2$. The claim is incorrect. The derived expression and the asserted one disagree at a checkable place. That mismatch alone is enough to reject the letter. Rephrasing the claim cannot repair an algebraic contradiction.
+Because $c'$ scales like $N^{-\\frac{3}{2}}$, doubling $N$ multiplies the magnitude by $2^{-\\frac{3}{2}}$, not by $2$. The claim is incorrect.
+
+Rephrasing the claim cannot repair an algebraic contradiction.
 
 So the statement is False.`
     ],
@@ -1383,7 +1745,11 @@ $$
 R'(q) = 50-2q
 $$
 
-which matches the claimed formula. Do not write $-2q$ alone by dropping the $50$. Substituting only after the general expression is finished avoids mixing height with slope. Coefficient and sign agreement with the claim is what decides the letter. The same checklist — differentiate, simplify, evaluate — settles the assertion.
+which matches the claimed formula. Do not write $-2q$ alone by dropping the $50$.
+
+$$
+R(q) = 50q-q^{2}
+$$
 
 So the statement is True.`,
       `**B.** → True
@@ -1399,6 +1765,22 @@ R'(20) = 50-40
 $$
 
 $$
+50 - 40 = 10
+$$
+
+$$
+R'(20) = 10
+$$
+
+$$
+50 - 40 = 10
+$$
+
+$$
+R'(20) = 10
+$$
+
+$$
 = 10
 $$
 
@@ -1410,7 +1792,7 @@ $$
 R'(20) = 10
 $$
 
-A trap is computing $50-20=30$ by forgetting the factor $2$ on $q$. The correct slope is $10$. Coefficient and sign agreement with the claim is what decides the letter. The same checklist — differentiate, simplify, evaluate — settles the assertion. Writing every intermediate line keeps the comparison with the claim mechanical. The stem's formula is enough; no outside identity is required for the check.
+A trap is computing $50-20=30$ by forgetting the factor $2$ on $q$. The correct slope is $10$.
 
 So the statement is True.`,
       `**C.** → True
@@ -1426,6 +1808,22 @@ R(20) = 1000-400
 $$
 
 $$
+1000 - 400 = 600
+$$
+
+$$
+R(20) = 600
+$$
+
+$$
+1000 - 400 = 600
+$$
+
+$$
+R(20) = 600
+$$
+
+$$
 = 600
 $$
 
@@ -1437,7 +1835,7 @@ $$
 R(20) = 600
 $$
 
-This is the height on the curve, not the slope. The height matches the claim. The same checklist — differentiate, simplify, evaluate — settles the assertion. Writing every intermediate line keeps the comparison with the claim mechanical. The stem's formula is enough; no outside identity is required for the check. Substituting only after the general expression is finished avoids mixing height with slope.
+This is the height on the curve, not the slope. The height matches the claim.
 
 So the statement is True.`,
       `**D.** → True
@@ -1452,7 +1850,17 @@ $$
 y = 600+10(q-20)
 $$
 
-which is the claimed tangent. Replacing $600$ by $R'(20)$ would break the equation. Writing every intermediate line keeps the comparison with the claim mechanical. The stem's formula is enough; no outside identity is required for the check. Substituting only after the general expression is finished avoids mixing height with slope.
+which is the claimed tangent. Replacing $600$ by $R'(20)$ would break the equation.
+
+$$
+q = 20
+$$
+
+$$
+R'(20) = 10
+$$
+
+which matches the claim.
 
 So the statement is True.`,
       `**E.** → False
@@ -1463,7 +1871,15 @@ $$
 R'(20) = 10>0
 $$
 
-so the tangent rises from left to right rather than falling. Revenue still increases at $q=20$ because the peak $R'(q)=0$ occurs later at $q=25$. That mismatch alone is enough to reject the letter. Rephrasing the claim cannot repair an algebraic contradiction. The named evaluation already serves as a counter-example. Holding both formulas in view makes the failure obvious.
+so the tangent rises from left to right rather than falling. Revenue still increases at $q=20$ because the peak $R'(q)=0$ occurs later at $q=25$.
+
+Rephrasing the claim cannot repair an algebraic contradiction.
+
+$$
+q = 20
+$$
+
+which does not match the claim.
 
 So the statement is False.`
     ],
@@ -1509,6 +1925,24 @@ Reuse this derivative setup for every letter: simplify first, evaluate at named 
 
 The reliability score is the nested fifth power $G(x)=(3x^{2}+4)^{5}$. The chain rule multiplies the outer power by the inner derivative $6x$:
 
+Name the outer power and the inner expression, then multiply by the inner derivative before simplifying.
+
+$$
+G(x) = (3x^{2}+4)^{5}
+$$
+
+$$
+\\text{outer: }w^{5}\\quad\\text{with }w = 3x^{2}+4
+$$
+
+$$
+\\dfrac{d}{dx}(3x^{2}+4) = 6 x
+$$
+
+$$
+G'(x) = 5(3x^{2}+4)^{4} \\cdot (6 x)
+$$
+
 $$
 G'(x) = 5(3x^{2}+4)^{4}\\cdot 6x
 $$
@@ -1517,7 +1951,7 @@ $$
 G'(x) = 30x(3x^{2}+4)^{4}
 $$
 
-matching the claimed formula. Forgetting the inner $6x$ is the classic chain-rule trap here. Comparing with the claim, the statement is True. Coefficient and sign agreement with the claim is what decides the letter. The same checklist — differentiate, simplify, evaluate — settles the assertion.
+matching the claimed formula. Forgetting the inner $6x$ is the classic chain-rule trap here. Comparing with the claim,
 
 So the statement is True.`,
       `**B.** → True
@@ -1540,7 +1974,7 @@ $$
 G'(1) = 72030
 $$
 
-Do not compute $7^{5}$ by mistake — the outer power has already been reduced to $4$. The computed value matches the claim. The same checklist — differentiate, simplify, evaluate — settles the assertion. Writing every intermediate line keeps the comparison with the claim mechanical. The stem's formula is enough; no outside identity is required for the check.
+Do not compute $7^{5}$ by mistake — the outer power has already been reduced to $4$. The computed value matches the claim.
 
 So the statement is True.`,
       `**C.** → True
@@ -1551,7 +1985,13 @@ $$
 G''(x) = 30(3x^{2}+4)^{3}(27x^{2}+4)
 $$
 
-The factor $27x^{2}+4$ comes from combining the two product-rule pieces. Matching the claimed second derivative, the statement is True. Writing every intermediate line keeps the comparison with the claim mechanical. The stem's formula is enough; no outside identity is required for the check. Substituting only after the general expression is finished avoids mixing height with slope.
+The factor $27x^{2}+4$ comes from combining the two product-rule pieces. Matching the claimed second derivative,
+
+$$
+G'(x) = 30x(3x^{2}+4)^{4}
+$$
+
+which matches the claim.
 
 So the statement is True.`,
       `**D.** → True
@@ -1602,7 +2042,7 @@ $$
 G''(0) = 7680
 $$
 
-Here $3(0)^{2}+4=4$ and $27(0)^{2}+4=4$. The computed value matches the claim. The stem's formula is enough; no outside identity is required for the check. Substituting only after the general expression is finished avoids mixing height with slope. Coefficient and sign agreement with the claim is what decides the letter. The same checklist — differentiate, simplify, evaluate — settles the assertion.
+Here $3(0)^{2}+4=4$ and $27(0)^{2}+4=4$. The computed value matches the claim.
 
 So the statement is True.`,
       `**E.** → False
@@ -1617,7 +2057,13 @@ $$
 G'(0) = 0
 $$
 
-not $30$. A trap is reading off the leading coefficient $30$ and ignoring the vanishing $x$. The claim's value is incorrect. Rephrasing the claim cannot repair an algebraic contradiction. The named evaluation already serves as a counter-example. Holding both formulas in view makes the failure obvious. The derived expression and the asserted one disagree at a checkable place.
+not $30$. A trap is reading off the leading coefficient $30$ and ignoring the vanishing $x$. The claim's value is incorrect. Rephrasing the claim cannot repair an algebraic contradiction.
+
+$$
+G'(0) = 30
+$$
+
+which does not match the claim.
 
 So the statement is False.`
     ],
@@ -1663,7 +2109,7 @@ $$
 C'(q) = 12q^{2}-36q+40
 $$
 
-which is exactly the claimed marginal-cost formula. The constant $100$ vanishes, as constants always do under differentiation. The same checklist — differentiate, simplify, evaluate — settles the assertion. Writing every intermediate line keeps the comparison with the claim mechanical. The stem's formula is enough; no outside identity is required for the check.
+which is exactly the claimed marginal-cost formula. The constant $100$ vanishes, as constants always do under differentiation.
 
 So the statement is True.`,
       `**B.** → True
@@ -1674,7 +2120,7 @@ $$
 C''(q) = 24q-36
 $$
 
-matching the claimed second derivative. This measures how fast marginal cost itself is changing. Comparing with the claim, the statement is True. Writing every intermediate line keeps the comparison with the claim mechanical. The stem's formula is enough; no outside identity is required for the check. Substituting only after the general expression is finished avoids mixing height with slope.
+matching the claimed second derivative. This measures how fast marginal cost itself is changing. Comparing with the claim,
 
 So the statement is True.`,
       `**C.** → True
@@ -1697,7 +2143,7 @@ $$
 36 - 36 = 0
 $$
 
-so the second derivative vanishes there. That is the natural candidate for an inflection point of $C$. The stem's formula is enough; no outside identity is required for the check. Substituting only after the general expression is finished avoids mixing height with slope. Coefficient and sign agreement with the claim is what decides the letter.
+so the second derivative vanishes there. That is the natural candidate for an inflection point of $C$.
 
 So the statement is True.`,
       `**D.** → False
@@ -1706,6 +2152,22 @@ Evaluate the second derivative at $q=1$:
 
 $$
 C''(1) = 24-36
+$$
+
+$$
+24 - 36 = -12
+$$
+
+$$
+C''(1) = -12
+$$
+
+$$
+24 - 36 = -12
+$$
+
+$$
+C''(1) = -12
 $$
 
 $$
@@ -1720,7 +2182,7 @@ $$
 C''(1) = -12
 $$
 
-which is negative rather than positive. The claim's sign is wrong — just left of $q=\\tfrac{3}{2}$ the cost curve is still concave down. Rephrasing the claim cannot repair an algebraic contradiction. The named evaluation already serves as a counter-example. Holding both formulas in view makes the failure obvious. The derived expression and the asserted one disagree at a checkable place.
+which is negative rather than positive. The claim's sign is wrong — just left of $q=\\tfrac{3}{2}$ the cost curve is still concave down. Rephrasing the claim cannot repair an algebraic contradiction.
 
 So the statement is False.`,
       `**E.** → True
@@ -1729,6 +2191,22 @@ Evaluate the second derivative at $q=2$:
 
 $$
 C''(2) = 48-36
+$$
+
+$$
+48 - 36 = 12
+$$
+
+$$
+C''(2) = 12
+$$
+
+$$
+48 - 36 = 12
+$$
+
+$$
+C''(2) = 12
 $$
 
 $$
@@ -1743,7 +2221,7 @@ $$
 C''(2) = 12>0
 $$
 
-so the second derivative is positive there. Just right of the zero at $q=\\tfrac{3}{2}$, curvature has flipped to concave up. Coefficient and sign agreement with the claim is what decides the letter. The same checklist — differentiate, simplify, evaluate — settles the assertion. Writing every intermediate line keeps the comparison with the claim mechanical. The stem's formula is enough; no outside identity is required for the check.
+so the second derivative is positive there. Just right of the zero at $q=\\tfrac{3}{2}$, curvature has flipped to concave up.
 
 So the statement is True.`
     ],
@@ -1783,6 +2261,32 @@ so curvature changes from negative to positive across $q=\\dfrac{3}{2}$. That is
 
 The complaint index is the quotient $K(t)=\\dfrac{t+4}{t+1}$. The quotient rule simplifies at once to
 
+Name the numerator and denominator, differentiate each, then apply the quotient rule before simplifying.
+
+$$
+K(t) = \\dfrac{t+4}{t+1}
+$$
+
+$$
+u(t) = t+4
+$$
+
+$$
+v(t) = t+1
+$$
+
+$$
+u'(t) = 1
+$$
+
+$$
+v'(t) = 1
+$$
+
+$$
+K'(t) = \\dfrac{(1)(t+1) - (t+4)(1)}{(t+1)^{2}}
+$$
+
 $$
 K'(t) = \\dfrac{(t+1)-(t+4)}{(t+1)^{2}}
 $$
@@ -1791,7 +2295,7 @@ $$
 K'(t) = -\\dfrac{3}{(t+1)^{2}}
 $$
 
-The numerator difference $1-4=-3$ is the whole story. Writing every intermediate line keeps the comparison with the claim mechanical. The stem's formula is enough; no outside identity is required for the check. Substituting only after the general expression is finished avoids mixing height with slope.
+The numerator difference $1-4=-3$ is the whole story.
 
 So the statement is True.`,
       `**B.** → True
@@ -1810,7 +2314,7 @@ $$
 K'(2) = -\\dfrac{1}{3}
 $$
 
-Keep the minus sign — more training lowers the complaint index. The computed value matches the claim. The stem's formula is enough; no outside identity is required for the check. Substituting only after the general expression is finished avoids mixing height with slope. Coefficient and sign agreement with the claim is what decides the letter. The same checklist — differentiate, simplify, evaluate — settles the assertion.
+Keep the minus sign — more training lowers the complaint index. The computed value matches the claim.
 
 So the statement is True.`,
       `**C.** → True
@@ -1821,7 +2325,7 @@ $$
 K'(t)<0
 $$
 
-throughout. A negative derivative means the index is strictly decreasing in training time. Substituting only after the general expression is finished avoids mixing height with slope. Coefficient and sign agreement with the claim is what decides the letter. The same checklist — differentiate, simplify, evaluate — settles the assertion.
+throughout. A negative derivative means the index is strictly decreasing in training time.
 
 So the statement is True.`,
       `**D.** → True
@@ -1832,7 +2336,13 @@ $$
 K'(2) = -\\dfrac{1}{3}
 $$
 
-so one extra hour changes the index by approximately $-\\dfrac{1}{3}$. The signed rate is exactly what the claim reports. Coefficient and sign agreement with the claim is what decides the letter. The same checklist — differentiate, simplify, evaluate — settles the assertion. Writing every intermediate line keeps the comparison with the claim mechanical.
+so one extra hour changes the index by approximately $-\\dfrac{1}{3}$. The signed rate is exactly what the claim reports.
+
+$$
+t = 2
+$$
+
+which matches the claim.
 
 So the statement is True.`,
       `**E.** → True
@@ -1847,7 +2357,13 @@ $$
 K''(t) = \\dfrac{6}{(t+1)^{3}}
 $$
 
-matching the claimed second derivative. The positive sign means the decrease in $K$ flattens as $t$ grows. Comparing with the claim, the statement is True. The same checklist — differentiate, simplify, evaluate — settles the assertion. Writing every intermediate line keeps the comparison with the claim mechanical. The stem's formula is enough; no outside identity is required for the check.
+matching the claimed second derivative. The positive sign means the decrease in $K$ flattens as $t$ grows. Comparing with the claim,
+
+$$
+K'(t) = -3(t+1)^{-2}
+$$
+
+which matches the claim.
 
 So the statement is True.`
     ],
@@ -1893,6 +2409,24 @@ Reuse this derivative setup for every letter: simplify first, evaluate at named 
 
 The safety score is the nested fourth power $S(x)=(2x+5)^{4}$. The chain rule multiplies by the inner slope $2$:
 
+Name the outer power and the inner expression, then multiply by the inner derivative before simplifying.
+
+$$
+S(x) = (2x+5)^{4}
+$$
+
+$$
+\\text{outer: }w^{4}\\quad\\text{with }w = 2x+5
+$$
+
+$$
+\\dfrac{d}{dx}(2x+5) = 2
+$$
+
+$$
+S'(x) = 4(2x+5)^{3} \\cdot (2)
+$$
+
 $$
 S'(x) = 4(2x+5)^{3}\\cdot 2
 $$
@@ -1901,7 +2435,7 @@ $$
 S'(x) = 8(2x+5)^{3}
 $$
 
-matching the claimed formula. Forgetting the factor $2$ from the inner linear term is the usual trap. Comparing with the claim, the statement is True. The stem's formula is enough; no outside identity is required for the check. Substituting only after the general expression is finished avoids mixing height with slope.
+matching the claimed formula. Forgetting the factor $2$ from the inner linear term is the usual trap. Comparing with the claim,
 
 So the statement is True.`,
       `**B.** → True
@@ -1924,7 +2458,7 @@ $$
 S'(0) = 1000
 $$
 
-Do not confuse this with $S(0)=5^{4}=625$. The derivative value matches the claim. Substituting only after the general expression is finished avoids mixing height with slope. Coefficient and sign agreement with the claim is what decides the letter. The same checklist — differentiate, simplify, evaluate — settles the assertion. Writing every intermediate line keeps the comparison with the claim mechanical.
+Do not confuse this with $S(0)=5^{4}=625$. The derivative value matches the claim.
 
 So the statement is True.`,
       `**C.** → True
@@ -1939,7 +2473,13 @@ $$
 S''(x) = 48(2x+5)^{2}
 $$
 
-matching the claimed second derivative. The pattern of coefficients $8\\to 48$ is consistent with $4\\cdot 3\\cdot 2^{2}$. Coefficient and sign agreement with the claim is what decides the letter. The same checklist — differentiate, simplify, evaluate — settles the assertion. Writing every intermediate line keeps the comparison with the claim mechanical.
+matching the claimed second derivative. The pattern of coefficients $8\\to 48$ is consistent with $4\\cdot 3\\cdot 2^{2}$.
+
+$$
+S'(x) = 8(2x+5)^{3}
+$$
+
+which matches the claim.
 
 So the statement is True.`,
       `**D.** → True
@@ -1962,7 +2502,7 @@ $$
 S''(0) = 1200
 $$
 
-The computed value matches the claim. Keep $5^{2}=25$, not $5^{3}$. Comparing with the claim, the statement is True. The same checklist — differentiate, simplify, evaluate — settles the assertion. Writing every intermediate line keeps the comparison with the claim mechanical. The stem's formula is enough; no outside identity is required for the check. Substituting only after the general expression is finished avoids mixing height with slope.
+The computed value matches the claim. Keep $5^{2}=25$, not $5^{3}$. Comparing with the claim,
 
 So the statement is True.`,
       `**E.** → True
@@ -1977,7 +2517,13 @@ $$
 S'''(x) = 192(2x+5)
 $$
 
-matching the claimed third derivative. One more differentiation would leave the constant $384$. Writing every intermediate line keeps the comparison with the claim mechanical. The stem's formula is enough; no outside identity is required for the check. Substituting only after the general expression is finished avoids mixing height with slope. Coefficient and sign agreement with the claim is what decides the letter.
+matching the claimed third derivative. One more differentiation would leave the constant $384$.
+
+$$
+S''(x) = 48(2x+5)^{2}
+$$
+
+which matches the claim.
 
 So the statement is True.`
     ],
@@ -2019,6 +2565,34 @@ Reuse this derivative setup for every letter: simplify first, evaluate at named 
 
 The engagement index is the product $E(t)=t\\cdot\\ln(t+1)$. Apply the product rule: differentiate $t$ and $\\ln(t+1)$ in turn,
 
+Write the product as two factors and differentiate each factor before combining.
+
+$$
+E(t) = t \\cdot \\ln(t+1)
+$$
+
+$$
+u(t) = t
+$$
+
+$$
+v(t) = \\ln{(t + 1 )}
+$$
+
+$$
+u'(t) = 1
+$$
+
+$$
+v'(t) = \\frac{1}{t + 1}
+$$
+
+$$
+E'(t) = (1)\\cdot(\\ln{(t + 1 )}) + (t)\\cdot(\\frac{1}{t + 1})
+$$
+
+Only after that product-rule expansion do we simplify to the claimed form.
+
 $$
 E'(t) = \\ln(t+1)+t\\cdot\\dfrac{1}{t+1}
 $$
@@ -2027,7 +2601,7 @@ $$
 E'(t) = \\ln(t+1)+\\dfrac{t}{t+1}
 $$
 
-which matches the claimed formula. Keep both summands — neither alone is the full derivative. Substituting only after the general expression is finished avoids mixing height with slope. Coefficient and sign agreement with the claim is what decides the letter.
+which matches the claimed formula. Keep both summands — neither alone is the full derivative.
 
 So the statement is True.`,
       `**B.** → True
@@ -2042,7 +2616,13 @@ $$
 E'(1) = \\ln 2+\\dfrac{1}{2}
 $$
 
-Do not replace $\\dfrac{1}{2}$ by $1$. The computed value matches the claim. Coefficient and sign agreement with the claim is what decides the letter. The same checklist — differentiate, simplify, evaluate — settles the assertion. Writing every intermediate line keeps the comparison with the claim mechanical. The stem's formula is enough; no outside identity is required for the check.
+Do not replace $\\dfrac{1}{2}$ by $1$. The computed value matches the claim.
+
+$$
+t = 1
+$$
+
+which matches the claim.
 
 So the statement is True.`,
       `**C.** → True
@@ -2053,7 +2633,17 @@ $$
 E''(t) = \\dfrac{1}{t+1}+\\dfrac{1}{(t+1)^{2}}
 $$
 
-matching the claimed second derivative. The same checklist — differentiate, simplify, evaluate — settles the assertion. Writing every intermediate line keeps the comparison with the claim mechanical. The stem's formula is enough; no outside identity is required for the check. Substituting only after the general expression is finished avoids mixing height with slope.
+matching the claimed second derivative.
+
+$$
+E'(t) = \\ln(t+1)+\\dfrac{t}{t+1}
+$$
+
+$$
+\\dfrac{t}{t+1} = 1-\\dfrac{1}{t+1}
+$$
+
+which matches the claim.
 
 So the statement is True.`,
       `**D.** → True
@@ -2068,7 +2658,13 @@ $$
 E''(1) = \\dfrac{3}{4}
 $$
 
-The two positive contributions add cleanly. The computed value matches the claim. Writing every intermediate line keeps the comparison with the claim mechanical. The stem's formula is enough; no outside identity is required for the check. Substituting only after the general expression is finished avoids mixing height with slope. Coefficient and sign agreement with the claim is what decides the letter.
+The two positive contributions add cleanly. The computed value matches the claim.
+
+$$
+t = 1
+$$
+
+which matches the claim.
 
 So the statement is True.`,
       `**E.** → False
@@ -2079,7 +2675,15 @@ $$
 E'(t) = \\ln(t+1)+\\dfrac{t}{t+1}
 $$
 
-Replacing the second summand by the constant $1$ drops the factor $\\dfrac{t}{t+1}$ and produces a different function. That shortcut is incorrect. That mismatch alone is enough to reject the letter. Rephrasing the claim cannot repair an algebraic contradiction. The named evaluation already serves as a counter-example. Holding both formulas in view makes the failure obvious.
+Replacing the second summand by the constant $1$ drops the factor $\\dfrac{t}{t+1}$ and produces a different function. That shortcut is incorrect.
+
+Rephrasing the claim cannot repair an algebraic contradiction.
+
+$$
+E'(t) = \\ln(t+1)+1
+$$
+
+which does not match the claim.
 
 So the statement is False.`
     ],
@@ -2129,7 +2733,13 @@ $$
 M(x) = (x^{2}+1)(x+3)^{-\\frac{1}{2}}
 $$
 
-which is exactly the product form named in the claim. That rewriting sets up the product rule cleanly. Coefficient and sign agreement with the claim is what decides the letter. The same checklist — differentiate, simplify, evaluate — settles the assertion. Writing every intermediate line keeps the comparison with the claim mechanical.
+which is exactly the product form named in the claim. That rewriting sets up the product rule cleanly.
+
+$$
+M(x) = (x^{2}+1)\\cdot (x+3)^{-\\frac{1}{2}}
+$$
+
+which matches the claim.
 
 So the statement is True.`,
       `**B.** → True
@@ -2146,7 +2756,13 @@ $$
 M'(x) = \\dfrac{3x^{2}+12x-1}{2(x+3)^{\\frac{3}{2}}}
 $$
 
-matching the claimed formula. The same checklist — differentiate, simplify, evaluate — settles the assertion. Writing every intermediate line keeps the comparison with the claim mechanical. The stem's formula is enough; no outside identity is required for the check.
+matching the claimed formula.
+
+$$
+M(x) = (x^{2}+1)(x+3)^{-\\frac{1}{2}}
+$$
+
+which matches the claim.
 
 So the statement is True.`,
       `**C.** → True
@@ -2165,7 +2781,7 @@ $$
 M'(1) = \\dfrac{7}{8}
 $$
 
-The numerator $14$ and denominator $16$ cancel by $2$. The computed value matches the claim. Writing every intermediate line keeps the comparison with the claim mechanical. The stem's formula is enough; no outside identity is required for the check. Substituting only after the general expression is finished avoids mixing height with slope.
+The numerator $14$ and denominator $16$ cancel by $2$. The computed value matches the claim.
 
 So the statement is True.`,
       `**D.** → False
@@ -2176,7 +2792,19 @@ $$
 M'(1) = \\dfrac{7}{8}
 $$
 
-which is not equal to $\\dfrac{13}{8}$. A trap is miscomputing the numerator as $3+12+1=16$ or $12-1=11$. The claim's value is incorrect. That mismatch alone is enough to reject the letter. Rephrasing the claim cannot repair an algebraic contradiction. The named evaluation already serves as a counter-example. Holding both formulas in view makes the failure obvious. The derived expression and the asserted one disagree at a checkable place.
+which is not equal to $\\dfrac{13}{8}$. A trap is miscomputing the numerator as $3+12+1=16$ or $12-1=11$. The claim's value is incorrect.
+
+Rephrasing the claim cannot repair an algebraic contradiction.
+
+$$
+M'(1) = \\dfrac{13}{8}
+$$
+
+$$
+x = 1
+$$
+
+which does not match the claim.
 
 So the statement is False.`,
       `**E.** → False
@@ -2187,7 +2815,7 @@ $$
 M'(x) = \\dfrac{3x^{2}+12x-1}{2(x+3)^{\\frac{3}{2}}}
 $$
 
-still depends on $x$ in both the numerator and the denominator. It is therefore not a constant function. Rephrasing the claim cannot repair an algebraic contradiction. The named evaluation already serves as a counter-example. Holding both formulas in view makes the failure obvious. The derived expression and the asserted one disagree at a checkable place. That mismatch alone is enough to reject the letter.
+still depends on $x$ in both the numerator and the denominator. It is therefore not a constant function. Rephrasing the claim cannot repair an algebraic contradiction.
 
 So the statement is False.`
     ],
@@ -2229,11 +2857,39 @@ Reuse this derivative setup for every letter: simplify first, evaluate at named 
 
 The performance index is the product $F(t)=(t^{2}+1)\\ln(t+1)$. Apply the product rule: differentiate the quadratic and the logarithm in turn,
 
+Write the product as two factors and differentiate each factor before combining.
+
+$$
+F(t) = (t^{2}+1) \\cdot \\ln(t+1)
+$$
+
+$$
+u(t) = t^{2} + 1
+$$
+
+$$
+v(t) = \\ln{(t + 1 )}
+$$
+
+$$
+u'(t) = 2 t
+$$
+
+$$
+v'(t) = \\frac{1}{t + 1}
+$$
+
+$$
+F'(t) = (2 t)\\cdot(\\ln{(t + 1 )}) + (t^{2} + 1)\\cdot(\\frac{1}{t + 1})
+$$
+
+Only after that product-rule expansion do we simplify to the claimed form.
+
 $$
 F'(t) = 2t\\cdot\\ln(t+1)+\\dfrac{t^{2}+1}{t+1}
 $$
 
-which matches the claimed formula. Both summands are required. The same checklist — differentiate, simplify, evaluate — settles the assertion. Writing every intermediate line keeps the comparison with the claim mechanical. The stem's formula is enough; no outside identity is required for the check.
+which matches the claimed formula. Both summands are required.
 
 So the statement is True.`,
       `**B.** → True
@@ -2248,7 +2904,13 @@ $$
 F'(1) = 2\\ln 2+1
 $$
 
-The second summand simplifies to $1$ at this point, but that is special to $t=1$, not a general rule. Writing every intermediate line keeps the comparison with the claim mechanical. The stem's formula is enough; no outside identity is required for the check. Substituting only after the general expression is finished avoids mixing height with slope. Coefficient and sign agreement with the claim is what decides the letter.
+The second summand simplifies to $1$ at this point, but that is special to $t=1$, not a general rule.
+
+$$
+t = 1
+$$
+
+which matches the claim.
 
 So the statement is True.`,
       `**C.** → True
@@ -2259,7 +2921,7 @@ $$
 F''(t) = 2\\ln(t+1)+\\dfrac{4t}{t+1}-\\dfrac{t^{2}+1}{(t+1)^{2}}
 $$
 
-matching the claimed second derivative. The stem's formula is enough; no outside identity is required for the check. Substituting only after the general expression is finished avoids mixing height with slope. Coefficient and sign agreement with the claim is what decides the letter.
+matching the claimed second derivative.
 
 So the statement is True.`,
       `**D.** → True
@@ -2278,7 +2940,7 @@ $$
 F''(1) = 2\\ln 2+\\dfrac{3}{2}
 $$
 
-Watch the arithmetic $2-\\tfrac{1}{2}=\\tfrac{3}{2}$. The computed value matches the claim. Substituting only after the general expression is finished avoids mixing height with slope. Coefficient and sign agreement with the claim is what decides the letter. The same checklist — differentiate, simplify, evaluate — settles the assertion.
+Watch the arithmetic $2-\\tfrac{1}{2}=\\tfrac{3}{2}$. The computed value matches the claim.
 
 So the statement is True.`,
       `**E.** → False
@@ -2289,7 +2951,13 @@ $$
 F'(t) = 2t\\cdot\\ln(t+1)+\\dfrac{t^{2}+1}{t+1}
 $$
 
-Dropping the logarithm term produces $2t+\\dfrac{t^{2}+1}{t+1}$, which is missing the summand $2t\\ln(t+1)$. That shortcut is incorrect. The named evaluation already serves as a counter-example. Holding both formulas in view makes the failure obvious. The derived expression and the asserted one disagree at a checkable place. That mismatch alone is enough to reject the letter.
+Dropping the logarithm term produces $2t+\\dfrac{t^{2}+1}{t+1}$, which is missing the summand $2t\\ln(t+1)$. That shortcut is incorrect.
+
+$$
+F'(t) = 2t+\\dfrac{t^{2}+1}{t+1}
+$$
+
+which does not match the claim.
 
 So the statement is False.`
     ],
@@ -2335,7 +3003,11 @@ $$
 \\pi'(q) = -3q^{2}+24q-21
 $$
 
-which matches the claimed first derivative. Watch the signs: the leading term contributes $-3q^{2}$, not $+3q^{2}$. Writing every intermediate line keeps the comparison with the claim mechanical. The stem's formula is enough; no outside identity is required for the check. Substituting only after the general expression is finished avoids mixing height with slope.
+which matches the claimed first derivative. Watch the signs: the leading term contributes $-3q^{2}$, not $+3q^{2}$.
+
+$$
+\\pi(q) = -q^{3}+12q^{2}-21q
+$$
 
 So the statement is True.`,
       `**B.** → True
@@ -2347,10 +3019,30 @@ $$
 $$
 
 $$
+-3 + 24 = 21
+$$
+
+$$
+21 - 21 = 0
+$$
+
+$$
 \\pi'(1) = 0
 $$
 
-so the derivative vanishes at that output. The three terms cancel exactly: $-3+24=21$, then $21-21=0$. The stem's formula is enough; no outside identity is required for the check. Substituting only after the general expression is finished avoids mixing height with slope. Coefficient and sign agreement with the claim is what decides the letter. The same checklist — differentiate, simplify, evaluate — settles the assertion.
+$$
+-3 + 24 = 21
+$$
+
+$$
+21 - 21 = 0
+$$
+
+$$
+\\pi'(1) = 0
+$$
+
+so the derivative vanishes at that output. The three terms cancel exactly: $-3+24=21$, then $21-21=0$.
 
 So the statement is True.`,
       `**C.** → True
@@ -2361,7 +3053,7 @@ $$
 \\pi''(q) = -6q+24
 $$
 
-matching the claimed second derivative. This tracks how the marginal profit itself changes with output. Comparing with the claim, the statement is True. Substituting only after the general expression is finished avoids mixing height with slope. Coefficient and sign agreement with the claim is what decides the letter. The same checklist — differentiate, simplify, evaluate — settles the assertion.
+matching the claimed second derivative. This tracks how the marginal profit itself changes with output. Comparing with the claim,
 
 So the statement is True.`,
       `**D.** → False
@@ -2377,10 +3069,28 @@ $$
 $$
 
 $$
+-18 + 24 = 6
+$$
+
+$$
+\\pi''(3) = 6
+$$
+
+$$
+-18 + 24 = 6
+$$
+
+$$
+\\pi''(3) = 6
+$$
+
+$$
 \\pi''(3) = 6\\neq 0
 $$
 
-The second derivative vanishes at $q=4$, not at $q=3$. The claim's evaluation is wrong. The named evaluation already serves as a counter-example. Holding both formulas in view makes the failure obvious. The derived expression and the asserted one disagree at a checkable place. That mismatch alone is enough to reject the letter. Rephrasing the claim cannot repair an algebraic contradiction.
+The second derivative vanishes at $q=4$, not at $q=3$. The claim's evaluation is wrong.
+
+Rephrasing the claim cannot repair an algebraic contradiction.
 
 So the statement is False.`,
       `**E.** → False
@@ -2391,7 +3101,15 @@ $$
 \\pi'(1) = 0
 $$
 
-which is zero rather than strictly positive. A horizontal tangent is not a strictly rising one. Holding both formulas in view makes the failure obvious. The derived expression and the asserted one disagree at a checkable place. That mismatch alone is enough to reject the letter. Rephrasing the claim cannot repair an algebraic contradiction. The named evaluation already serves as a counter-example.
+which is zero rather than strictly positive. A horizontal tangent is not a strictly rising one.
+
+Rephrasing the claim cannot repair an algebraic contradiction.
+
+$$
+q = 1
+$$
+
+which does not match the claim.
 
 So the statement is False.`
     ],
@@ -2437,7 +3155,13 @@ $$
 C'(q) = 9
 $$
 
-which is exactly the claimed constant marginal cost. The fixed cost $45$ vanishes under differentiation. The stem's formula is enough; no outside identity is required for the check. Substituting only after the general expression is finished avoids mixing height with slope. Coefficient and sign agreement with the claim is what decides the letter. The same checklist — differentiate, simplify, evaluate — settles the assertion.
+which is exactly the claimed constant marginal cost. The fixed cost $45$ vanishes under differentiation.
+
+$$
+C(q) = 45+9q
+$$
+
+which matches the claim.
 
 So the statement is True.`,
       `**B.** → True
@@ -2448,7 +3172,7 @@ $$
 C'(20) = 9
 $$
 
-There is nothing special about $q=20$ for a constant derivative. Substituting only after the general expression is finished avoids mixing height with slope. Coefficient and sign agreement with the claim is what decides the letter. The same checklist — differentiate, simplify, evaluate — settles the assertion. Writing every intermediate line keeps the comparison with the claim mechanical.
+There is nothing special about $q=20$ for a constant derivative.
 
 So the statement is True.`,
       `**C.** → False
@@ -2459,7 +3183,7 @@ $$
 \\dfrac{C(q)}{q} = \\dfrac{45}{q}+9
 $$
 
-which equals the constant marginal cost $9$ only in the limit $q\\to\\infty$, not for every finite $q>0$. The fixed-cost contribution $\\dfrac{45}{q}$ keeps them apart. The claim's identification is incorrect. The named evaluation already serves as a counter-example. Holding both formulas in view makes the failure obvious. The derived expression and the asserted one disagree at a checkable place.
+which equals the constant marginal cost $9$ only in the limit $q\\to\\infty$, not for every finite $q>0$. The fixed-cost contribution $\\dfrac{45}{q}$ keeps them apart. The claim's identification is incorrect.
 
 So the statement is False.`,
       `**D.** → True
@@ -2470,7 +3194,7 @@ $$
 y = 45+9q
 $$
 
-matching the claim. Point-slope form with $C(10)=135$ recovers the same line. The same checklist — differentiate, simplify, evaluate — settles the assertion. Writing every intermediate line keeps the comparison with the claim mechanical. The stem's formula is enough; no outside identity is required for the check.
+matching the claim. Point-slope form with $C(10)=135$ recovers the same line.
 
 So the statement is True.`,
       `**E.** → True
@@ -2481,7 +3205,7 @@ $$
 C''(q) = 0
 $$
 
-for every $q$. A linear cost schedule has zero curvature everywhere. Writing every intermediate line keeps the comparison with the claim mechanical. The stem's formula is enough; no outside identity is required for the check. Substituting only after the general expression is finished avoids mixing height with slope. Coefficient and sign agreement with the claim is what decides the letter.
+for every $q$. A linear cost schedule has zero curvature everywhere.
 
 So the statement is True.`
     ],
@@ -2531,7 +3255,11 @@ $$
 Q'(L) = 10L^{\\frac{3}{2}}
 $$
 
-which matches the claimed marginal product. Do not leave the exponent at $\\tfrac{5}{2}$. Substituting only after the general expression is finished avoids mixing height with slope. Coefficient and sign agreement with the claim is what decides the letter. The same checklist — differentiate, simplify, evaluate — settles the assertion.
+which matches the claimed marginal product. Do not leave the exponent at $\\tfrac{5}{2}$.
+
+$$
+Q(L) = 4L^{\\frac{5}{2}}
+$$
 
 So the statement is True.`,
       `**B.** → True
@@ -2546,7 +3274,13 @@ $$
 Q'(1) = 10
 $$
 
-Any positive power of $1$ is still $1$, so the evaluation is immediate. Coefficient and sign agreement with the claim is what decides the letter. The same checklist — differentiate, simplify, evaluate — settles the assertion. Writing every intermediate line keeps the comparison with the claim mechanical. The stem's formula is enough; no outside identity is required for the check.
+Any positive power of $1$ is still $1$, so the evaluation is immediate.
+
+$$
+L = 1
+$$
+
+which matches the claim.
 
 So the statement is True.`,
       `**C.** → True
@@ -2565,7 +3299,7 @@ $$
 Q'(4) = 80
 $$
 
-A trap is computing $4^{\\frac{5}{2}}=32$ (the original $Q$) instead of $4^{\\frac{3}{2}}=8$. The same checklist — differentiate, simplify, evaluate — settles the assertion. Writing every intermediate line keeps the comparison with the claim mechanical. The stem's formula is enough; no outside identity is required for the check. Substituting only after the general expression is finished avoids mixing height with slope.
+A trap is computing $4^{\\frac{5}{2}}=32$ (the original $Q$) instead of $4^{\\frac{3}{2}}=8$.
 
 So the statement is True.`,
       `**D.** → True
@@ -2580,7 +3314,7 @@ $$
 Q''(L) = 15L^{\\frac{1}{2}}
 $$
 
-matching the claimed second derivative. The positive coefficient shows marginal product itself is still rising. Writing every intermediate line keeps the comparison with the claim mechanical. The stem's formula is enough; no outside identity is required for the check. Substituting only after the general expression is finished avoids mixing height with slope.
+matching the claimed second derivative. The positive coefficient shows marginal product itself is still rising.
 
 So the statement is True.`,
       `**E.** → False
@@ -2591,7 +3325,9 @@ $$
 Q'(L) = 10L^{\\frac{3}{2}}
 $$
 
-rises as $L$ rises. Comparing $Q'(1)=10$ with $Q'(4)=80$ confirms the increase. The claim that it falls is incorrect. That mismatch alone is enough to reject the letter. Rephrasing the claim cannot repair an algebraic contradiction. The named evaluation already serves as a counter-example. Holding both formulas in view makes the failure obvious. The derived expression and the asserted one disagree at a checkable place.
+rises as $L$ rises. Comparing $Q'(1)=10$ with $Q'(4)=80$ confirms the increase. The claim that it falls is incorrect.
+
+Rephrasing the claim cannot repair an algebraic contradiction.
 
 So the statement is False.`
     ],
@@ -2641,7 +3377,7 @@ $$
 R(q) = 60q-\\dfrac{1}{2}q^{2}
 $$
 
-which matches the claimed revenue function. Keep the coefficient $\\tfrac{1}{2}$ on $q^{2}$, not $1$. Coefficient and sign agreement with the claim is what decides the letter. The same checklist — differentiate, simplify, evaluate — settles the assertion. Writing every intermediate line keeps the comparison with the claim mechanical.
+which matches the claimed revenue function. Keep the coefficient $\\tfrac{1}{2}$ on $q^{2}$, not $1$.
 
 So the statement is True.`,
       `**B.** → True
@@ -2652,7 +3388,7 @@ $$
 R'(q) = 60-q
 $$
 
-matching the claimed marginal revenue. The derivative of $-\\tfrac{1}{2}q^{2}$ is $-q$, not $-\\tfrac{1}{2}q$. The same checklist — differentiate, simplify, evaluate — settles the assertion. Writing every intermediate line keeps the comparison with the claim mechanical. The stem's formula is enough; no outside identity is required for the check. Substituting only after the general expression is finished avoids mixing height with slope.
+matching the claimed marginal revenue. The derivative of $-\\tfrac{1}{2}q^{2}$ is $-q$, not $-\\tfrac{1}{2}q$.
 
 So the statement is True.`,
       `**C.** → True
@@ -2661,6 +3397,22 @@ Substitute $q=20$ into marginal revenue:
 
 $$
 R'(20) = 60-20
+$$
+
+$$
+60 - 20 = 40
+$$
+
+$$
+R'(20) = 40
+$$
+
+$$
+60 - 20 = 40
+$$
+
+$$
+R'(20) = 40
 $$
 
 $$
@@ -2675,7 +3427,7 @@ $$
 R'(20) = 40
 $$
 
-The computed value matches the claim. Do not confuse this with $p(20)=50$. Writing every intermediate line keeps the comparison with the claim mechanical. The stem's formula is enough; no outside identity is required for the check. Substituting only after the general expression is finished avoids mixing height with slope. Coefficient and sign agreement with the claim is what decides the letter.
+The computed value matches the claim. Do not confuse this with $p(20)=50$.
 
 So the statement is True.`,
       `**D.** → False
@@ -2686,7 +3438,15 @@ $$
 p(q) = 60-\\dfrac{1}{2}q
 $$
 
-These differ by the factor on $q$: $R'$ falls twice as steeply as $p$. Equating them forgets that revenue is the product $q\\,p(q)$. The claim is incorrect. That mismatch alone is enough to reject the letter. Rephrasing the claim cannot repair an algebraic contradiction. The named evaluation already serves as a counter-example. Holding both formulas in view makes the failure obvious.
+These differ by the factor on $q$: $R'$ falls twice as steeply as $p$. Equating them forgets that revenue is the product $q\\,p(q)$. The claim is incorrect.
+
+Rephrasing the claim cannot repair an algebraic contradiction.
+
+$$
+R'(q) = p(q)
+$$
+
+which does not match the claim.
 
 So the statement is False.`,
       `**E.** → True
@@ -2711,7 +3471,7 @@ $$
 y = 1000+40(q-20)
 $$
 
-exactly as claimed. Substituting only after the general expression is finished avoids mixing height with slope. Coefficient and sign agreement with the claim is what decides the letter. The same checklist — differentiate, simplify, evaluate — settles the assertion. Writing every intermediate line keeps the comparison with the claim mechanical.
+exactly as claimed.
 
 So the statement is True.`
     ],
@@ -2765,7 +3525,7 @@ $$
 D'(n) = -\\dfrac{36}{(n+2)^{2}}
 $$
 
-matching the claimed formula. The inner derivative of $n+2$ is $1$. The same checklist — differentiate, simplify, evaluate — settles the assertion. Writing every intermediate line keeps the comparison with the claim mechanical. The stem's formula is enough; no outside identity is required for the check. Substituting only after the general expression is finished avoids mixing height with slope.
+matching the claimed formula. The inner derivative of $n+2$ is $1$.
 
 So the statement is True.`,
       `**B.** → True
@@ -2784,7 +3544,7 @@ $$
 D'(1) = -4
 $$
 
-Keep the minus sign. The computed value matches the claim. Writing every intermediate line keeps the comparison with the claim mechanical. The stem's formula is enough; no outside identity is required for the check. Substituting only after the general expression is finished avoids mixing height with slope. Coefficient and sign agreement with the claim is what decides the letter.
+Keep the minus sign. The computed value matches the claim.
 
 So the statement is True.`,
       `**C.** → True
@@ -2799,7 +3559,13 @@ $$
 D''(n) = \\dfrac{72}{(n+2)^{3}}
 $$
 
-matching the claimed second derivative. The positive sign shows the reduction in delay becomes less steep as $n$ grows. The stem's formula is enough; no outside identity is required for the check. Substituting only after the general expression is finished avoids mixing height with slope. Coefficient and sign agreement with the claim is what decides the letter.
+matching the claimed second derivative. The positive sign shows the reduction in delay becomes less steep as $n$ grows.
+
+$$
+D'(n) = -36(n+2)^{-2}
+$$
+
+which matches the claim.
 
 So the statement is True.`,
       `**D.** → False
@@ -2810,7 +3576,7 @@ $$
 D'(n)<0
 $$
 
-throughout rather than positive. A negative derivative means delay falls when agents are added. The claim's inequality is wrong. Rephrasing the claim cannot repair an algebraic contradiction. The named evaluation already serves as a counter-example. Holding both formulas in view makes the failure obvious. The derived expression and the asserted one disagree at a checkable place.
+throughout rather than positive. A negative derivative means delay falls when agents are added. The claim's inequality is wrong. Rephrasing the claim cannot repair an algebraic contradiction.
 
 So the statement is False.`,
       `**E.** → True
@@ -2821,7 +3587,13 @@ $$
 D'(1) = -4
 $$
 
-so one extra agent cuts delay by about $4$ minutes. The absolute value of the negative derivative is the size of the cut. Coefficient and sign agreement with the claim is what decides the letter. The same checklist — differentiate, simplify, evaluate — settles the assertion. Writing every intermediate line keeps the comparison with the claim mechanical.
+so one extra agent cuts delay by about $4$ minutes. The absolute value of the negative derivative is the size of the cut.
+
+$$
+n = 1
+$$
+
+which matches the claim.
 
 So the statement is True.`
     ],
@@ -2859,6 +3631,34 @@ Reuse this derivative setup for every letter: simplify first, evaluate at named 
 
 The response score is the product $S(x)=x\\,e^{-2x}$. Apply the product rule and factor $e^{-2x}$:
 
+Write the product as two factors and differentiate each factor before combining.
+
+$$
+S(x) = x \\cdot e^{-2x}
+$$
+
+$$
+u(x) = x
+$$
+
+$$
+v(x) = e^{- 2 x}
+$$
+
+$$
+u'(x) = 1
+$$
+
+$$
+v'(x) = - 2 e^{- 2 x}
+$$
+
+$$
+S'(x) = (1)\\cdot(e^{- 2 x}) + (x)\\cdot(- 2 e^{- 2 x})
+$$
+
+Only after that product-rule expansion do we simplify to the claimed form.
+
 $$
 S'(x) = e^{-2x}+x(-2)e^{-2x}
 $$
@@ -2867,7 +3667,7 @@ $$
 S'(x) = e^{-2x}(1-2x)
 $$
 
-which matches the claimed formula. The chain-rule factor $-2$ is essential. Writing every intermediate line keeps the comparison with the claim mechanical. The stem's formula is enough; no outside identity is required for the check. Substituting only after the general expression is finished avoids mixing height with slope.
+which matches the claimed formula. The chain-rule factor $-2$ is essential.
 
 So the statement is True.`,
       `**B.** → True
@@ -2886,7 +3686,7 @@ $$
 e^{-1}\\cdot 0 = 0
 $$
 
-so the derivative vanishes there. The factor $(1-2x)$ is zero at the critical point. The stem's formula is enough; no outside identity is required for the check. Substituting only after the general expression is finished avoids mixing height with slope. Coefficient and sign agreement with the claim is what decides the letter.
+so the derivative vanishes there. The factor $(1-2x)$ is zero at the critical point.
 
 So the statement is True.`,
       `**C.** → True
@@ -2897,7 +3697,17 @@ $$
 S''(x) = e^{-2x}(4x-4)
 $$
 
-matching the claimed second derivative. Equivalent forms such as $4e^{-2x}(x-1)$ are the same polynomial factor. Substituting only after the general expression is finished avoids mixing height with slope. Coefficient and sign agreement with the claim is what decides the letter. The same checklist — differentiate, simplify, evaluate — settles the assertion.
+matching the claimed second derivative. Equivalent forms such as $4e^{-2x}(x-1)$ are the same polynomial factor.
+
+$$
+S''(x) = e^{-2x}\\cdot(4x-4)
+$$
+
+$$
+S'(x) = e^{-2x}(1-2x)
+$$
+
+which matches the claim.
 
 So the statement is True.`,
       `**D.** → True
@@ -2912,7 +3722,13 @@ $$
 S'(0) = 1
 $$
 
-matching the claim. At the origin the exponential is $1$ and the linear factor is $1$. Coefficient and sign agreement with the claim is what decides the letter. The same checklist — differentiate, simplify, evaluate — settles the assertion. Writing every intermediate line keeps the comparison with the claim mechanical. The stem's formula is enough; no outside identity is required for the check.
+matching the claim. At the origin the exponential is $1$ and the linear factor is $1$.
+
+$$
+x = 0
+$$
+
+which matches the claim.
 
 So the statement is True.`,
       `**E.** → False
@@ -2927,7 +3743,19 @@ $$
 S'(1) = -e^{-2}
 $$
 
-which equals $-e^{-2}$, not the positive value $e^{-2}$. The claim misses the sign from $(1-2x)$. Holding both formulas in view makes the failure obvious. The derived expression and the asserted one disagree at a checkable place. That mismatch alone is enough to reject the letter. Rephrasing the claim cannot repair an algebraic contradiction. The named evaluation already serves as a counter-example.
+which equals $-e^{-2}$, not the positive value $e^{-2}$. The claim misses the sign from $(1-2x)$.
+
+Rephrasing the claim cannot repair an algebraic contradiction.
+
+$$
+S'(1) = e^{-2}
+$$
+
+$$
+x = 1
+$$
+
+which does not match the claim.
 
 So the statement is False.`
     ],
@@ -2981,7 +3809,13 @@ $$
 R'(a) = \\dfrac{10}{\\sqrt{4a+9}}
 $$
 
-matching the claimed formula. Forgetting the inner $4$ would leave $\\dfrac{5}{2\\sqrt{4a+9}}$. The stem's formula is enough; no outside identity is required for the check. Substituting only after the general expression is finished avoids mixing height with slope.
+matching the claimed formula. Forgetting the inner $4$ would leave $\\dfrac{5}{2\\sqrt{4a+9}}$.
+
+$$
+R(a) = 5(4a+9)^{\\frac{1}{2}}
+$$
+
+which matches the claim.
 
 So the statement is True.`,
       `**B.** → True
@@ -2996,7 +3830,13 @@ $$
 R'(0) = \\dfrac{10}{3}
 $$
 
-The computed value matches the claim. Do not evaluate $R(0)=15$ when asking for the slope. Substituting only after the general expression is finished avoids mixing height with slope. Coefficient and sign agreement with the claim is what decides the letter. The same checklist — differentiate, simplify, evaluate — settles the assertion. Writing every intermediate line keeps the comparison with the claim mechanical.
+The computed value matches the claim. Do not evaluate $R(0)=15$ when asking for the slope.
+
+$$
+a = 0
+$$
+
+which matches the claim.
 
 So the statement is True.`,
       `**C.** → True
@@ -3011,7 +3851,13 @@ $$
 R''(a) = -\\dfrac{20}{(4a+9)^{\\frac{3}{2}}}
 $$
 
-matching the claimed second derivative. The negative sign encodes diminishing returns. Coefficient and sign agreement with the claim is what decides the letter. The same checklist — differentiate, simplify, evaluate — settles the assertion. Writing every intermediate line keeps the comparison with the claim mechanical.
+matching the claimed second derivative. The negative sign encodes diminishing returns.
+
+$$
+R'(a) = 10(4a+9)^{-\\frac{1}{2}}
+$$
+
+which matches the claim.
 
 So the statement is True.`,
       `**D.** → True
@@ -3030,7 +3876,7 @@ $$
 R'(4) = 2
 $$
 
-The computed value matches the claim. The same checklist — differentiate, simplify, evaluate — settles the assertion. Writing every intermediate line keeps the comparison with the claim mechanical. The stem's formula is enough; no outside identity is required for the check. Substituting only after the general expression is finished avoids mixing height with slope.
+The computed value matches the claim.
 
 So the statement is True.`,
       `**E.** → False
@@ -3041,7 +3887,9 @@ $$
 R'(a) = \\dfrac{10}{\\sqrt{4a+9}}\\to 0
 $$
 
-rather than exploding. Marginal reach shrinks toward zero. The claim's comparison is incorrect. The derived expression and the asserted one disagree at a checkable place. That mismatch alone is enough to reject the letter. Rephrasing the claim cannot repair an algebraic contradiction. The named evaluation already serves as a counter-example.
+rather than exploding. Marginal reach shrinks toward zero. The claim's comparison is incorrect.
+
+Rephrasing the claim cannot repair an algebraic contradiction.
 
 So the statement is False.`
     ],
@@ -3091,7 +3939,13 @@ $$
 U'(t) = \\dfrac{60}{2t+1}-4
 $$
 
-matching the claimed first derivative. Forgetting the inner $2$ leaves $\\dfrac{30}{2t+1}-4$. Substituting only after the general expression is finished avoids mixing height with slope. Coefficient and sign agreement with the claim is what decides the letter. The same checklist — differentiate, simplify, evaluate — settles the assertion.
+matching the claimed first derivative. Forgetting the inner $2$ leaves $\\dfrac{30}{2t+1}-4$.
+
+$$
+U(t) = 30\\ln(2t+1)-4t
+$$
+
+which matches the claim.
 
 So the statement is True.`,
       `**B.** → True
@@ -3111,6 +3965,22 @@ U'(2) = 12-4
 $$
 
 $$
+12 - 4 = 8
+$$
+
+$$
+U'(2) = 8
+$$
+
+$$
+12 - 4 = 8
+$$
+
+$$
+U'(2) = 8
+$$
+
+$$
 = 8
 $$
 
@@ -3122,7 +3992,7 @@ $$
 U'(2) = 8
 $$
 
-The arithmetic $12-4=8$ completes the evaluation. Coefficient and sign agreement with the claim is what decides the letter. The same checklist — differentiate, simplify, evaluate — settles the assertion. Writing every intermediate line keeps the comparison with the claim mechanical. The stem's formula is enough; no outside identity is required for the check.
+The arithmetic $12-4=8$ completes the evaluation.
 
 So the statement is True.`,
       `**C.** → True
@@ -3137,7 +4007,13 @@ $$
 U''(t) = -\\dfrac{120}{(2t+1)^{2}}
 $$
 
-matching the claimed second derivative. The always-negative sign shows diminishing marginal utility. The same checklist — differentiate, simplify, evaluate — settles the assertion. Writing every intermediate line keeps the comparison with the claim mechanical. The stem's formula is enough; no outside identity is required for the check.
+matching the claimed second derivative. The always-negative sign shows diminishing marginal utility.
+
+$$
+U'(t) = 60(2t+1)^{-1}-4
+$$
+
+which matches the claim.
 
 So the statement is True.`,
       `**D.** → True
@@ -3152,18 +4028,40 @@ $$
 U'(0) = 56
 $$
 
-matching the claim. At $t=0$ the logarithm argument is $1$, so there is no singularity. Writing every intermediate line keeps the comparison with the claim mechanical. The stem's formula is enough; no outside identity is required for the check. Substituting only after the general expression is finished avoids mixing height with slope. Coefficient and sign agreement with the claim is what decides the letter.
+matching the claim. At $t=0$ the logarithm argument is $1$, so there is no singularity.
+
+$$
+t = 0
+$$
+
+which matches the claim.
 
 So the statement is True.`,
       `**E.** → False
 
-Setting $U'(t)=0$ yields $\\dfrac{60}{2t+1}=4$, hence $2t+1=15$ and
+Setting $U'(t)=0$ yields
+
+$$
+\\dfrac{60}{2t+1} = 4
+$$, hence $2t+1=15$ and
 
 $$
 t = 7
 $$
 
-not $t=\\dfrac{7}{2}$. Halving $7$ by mistake (perhaps from the inner coefficient $2$) produces the wrong root. The claimed root is wrong. That mismatch alone is enough to reject the letter. Rephrasing the claim cannot repair an algebraic contradiction. The named evaluation already serves as a counter-example. Holding both formulas in view makes the failure obvious. The derived expression and the asserted one disagree at a checkable place.
+not $t=\\dfrac{7}{2}$. Halving $7$ by mistake (perhaps from the inner coefficient $2$) produces the wrong root. The claimed root is wrong.
+
+Rephrasing the claim cannot repair an algebraic contradiction.
+
+$$
+U'(t) = 0
+$$
+
+$$
+t = \\dfrac{7}{2}
+$$
+
+which does not match the claim.
 
 So the statement is False.`
     ],
@@ -3201,6 +4099,24 @@ Reuse this derivative setup for every letter: simplify first, evaluate at named 
 
 The quality index is the nested fifth power $G(x)=(4x+1)^{5}$. The chain rule multiplies by the inner slope $4$:
 
+Name the outer power and the inner expression, then multiply by the inner derivative before simplifying.
+
+$$
+G(x) = (4x+1)^{5}
+$$
+
+$$
+\\text{outer: }w^{5}\\quad\\text{with }w = 4x+1
+$$
+
+$$
+\\dfrac{d}{dx}(4x+1) = 4
+$$
+
+$$
+G'(x) = 5(4x+1)^{4} \\cdot (4)
+$$
+
 $$
 G'(x) = 5(4x+1)^{4}\\cdot 4
 $$
@@ -3209,7 +4125,7 @@ $$
 G'(x) = 20(4x+1)^{4}
 $$
 
-matching the claimed formula. Forgetting the factor $4$ leaves only $5(4x+1)^{4}$. Coefficient and sign agreement with the claim is what decides the letter. The same checklist — differentiate, simplify, evaluate — settles the assertion. Writing every intermediate line keeps the comparison with the claim mechanical.
+matching the claimed formula. Forgetting the factor $4$ leaves only $5(4x+1)^{4}$.
 
 So the statement is True.`,
       `**B.** → True
@@ -3224,7 +4140,13 @@ $$
 G'(0) = 20
 $$
 
-The computed value matches the claim. At the origin the inner linear factor is $1$, so the fourth power is still $1$. The same checklist — differentiate, simplify, evaluate — settles the assertion. Writing every intermediate line keeps the comparison with the claim mechanical. The stem's formula is enough; no outside identity is required for the check. Substituting only after the general expression is finished avoids mixing height with slope.
+The computed value matches the claim. At the origin the inner linear factor is $1$, so the fourth power is still $1$.
+
+$$
+x = 0
+$$
+
+which matches the claim.
 
 So the statement is True.`,
       `**C.** → True
@@ -3239,7 +4161,13 @@ $$
 G''(x) = 320(4x+1)^{3}
 $$
 
-matching the claimed second derivative. The coefficient $20\\cdot 4\\cdot 4=320$ is the key arithmetic. Writing every intermediate line keeps the comparison with the claim mechanical. The stem's formula is enough; no outside identity is required for the check. Substituting only after the general expression is finished avoids mixing height with slope.
+matching the claimed second derivative. The coefficient $20\\cdot 4\\cdot 4=320$ is the key arithmetic.
+
+$$
+G'(x) = 20(4x+1)^{4}
+$$
+
+which matches the claim.
 
 So the statement is True.`,
       `**D.** → True
@@ -3254,7 +4182,13 @@ $$
 G''(0) = 320
 $$
 
-The computed value matches the claim. The stem's formula is enough; no outside identity is required for the check. Substituting only after the general expression is finished avoids mixing height with slope. Coefficient and sign agreement with the claim is what decides the letter. The same checklist — differentiate, simplify, evaluate — settles the assertion. Writing every intermediate line keeps the comparison with the claim mechanical.
+The computed value matches the claim.
+
+$$
+x = 0
+$$
+
+which matches the claim.
 
 So the statement is True.`,
       `**E.** → True
@@ -3265,7 +4199,17 @@ $$
 G'(1) = 20\\cdot 5^{4}
 $$
 
-exactly the expression named in the claim. Leaving $5^{4}$ unexpanded is fine — the claim does the same. Substituting only after the general expression is finished avoids mixing height with slope. Coefficient and sign agreement with the claim is what decides the letter. The same checklist — differentiate, simplify, evaluate — settles the assertion. Writing every intermediate line keeps the comparison with the claim mechanical.
+exactly the expression named in the claim. Leaving $5^{4}$ unexpanded is fine — the claim does the same.
+
+$$
+x = 1
+$$
+
+$$
+4\\cdot 1+1 = 5
+$$
+
+which matches the claim.
 
 So the statement is True.`
     ],
@@ -3311,6 +4255,26 @@ Reuse this derivative setup for every letter: simplify first, evaluate at named 
 
 The productivity index is the product $P(x)=x^{2}\\sqrt{3x+1}$. Apply the product rule, differentiating the square and the nested root in turn:
 
+Write the product as two factors and differentiate each factor before combining.
+
+$$
+P(x) = x^{2} \\cdot \\sqrt{3x+1}
+$$
+
+$$
+u(x) = x^{2}
+$$
+
+$$
+v(x) = \\sqrt{3x+1}
+$$
+
+$$
+P'(x) = u'(x)\\,v(x) + u(x)\\,v'(x)
+$$
+
+Only after that product-rule expansion do we simplify to the claimed form.
+
 $$
 P'(x) = 2x\\sqrt{3x+1}+x^{2}\\cdot\\dfrac{3}{2\\sqrt{3x+1}}
 $$
@@ -3319,7 +4283,7 @@ $$
 P'(x) = 2x\\sqrt{3x+1}+\\dfrac{3x^{2}}{2\\sqrt{3x+1}}
 $$
 
-matching the claimed unsimplified formula. The same checklist — differentiate, simplify, evaluate — settles the assertion. Writing every intermediate line keeps the comparison with the claim mechanical. The stem's formula is enough; no outside identity is required for the check.
+matching the claimed unsimplified formula.
 
 So the statement is True.`,
       `**B.** → True
@@ -3334,7 +4298,7 @@ $$
 P'(x) = \\dfrac{15x^{2}+4x}{2\\sqrt{3x+1}}
 $$
 
-which is the claimed combined form. The numerator $12x^{2}+4x+3x^{2}=15x^{2}+4x$ is the key. Writing every intermediate line keeps the comparison with the claim mechanical. The stem's formula is enough; no outside identity is required for the check. Substituting only after the general expression is finished avoids mixing height with slope.
+which is the claimed combined form. The numerator $12x^{2}+4x+3x^{2}=15x^{2}+4x$ is the key.
 
 So the statement is True.`,
       `**C.** → True
@@ -3353,7 +4317,7 @@ $$
 P'(1) = \\dfrac{19}{4}
 $$
 
-The computed value matches the claim. Do not stop at $\\dfrac{19}{2}$ by forgetting $\\sqrt{4}=2$. The stem's formula is enough; no outside identity is required for the check. Substituting only after the general expression is finished avoids mixing height with slope. Coefficient and sign agreement with the claim is what decides the letter.
+The computed value matches the claim. Do not stop at $\\dfrac{19}{2}$ by forgetting $\\sqrt{4}=2$.
 
 So the statement is True.`,
       `**D.** → True
@@ -3368,7 +4332,7 @@ $$
 P'(0) = 0
 $$
 
-so the derivative vanishes at the origin. Substituting only after the general expression is finished avoids mixing height with slope. Coefficient and sign agreement with the claim is what decides the letter. The same checklist — differentiate, simplify, evaluate — settles the assertion. Writing every intermediate line keeps the comparison with the claim mechanical.
+so the derivative vanishes at the origin.
 
 So the statement is True.`,
       `**E.** → False
@@ -3379,7 +4343,17 @@ $$
 P'(1) = \\dfrac{19}{4}
 $$
 
-Since $\\dfrac{15}{2}=\\dfrac{30}{4}\\neq\\dfrac{19}{4}$, the claimed value is wrong — it looks like a misread of the leading numerator coefficient $15$. The named evaluation already serves as a counter-example. Holding both formulas in view makes the failure obvious. The derived expression and the asserted one disagree at a checkable place. That mismatch alone is enough to reject the letter.
+Since $\\dfrac{15}{2}=\\dfrac{30}{4}\\neq\\dfrac{19}{4}$, the claimed value is wrong — it looks like a misread of the leading numerator coefficient $15$.
+
+$$
+P'(1) = \\dfrac{15}{2}
+$$
+
+$$
+x = 1
+$$
+
+which does not match the claim.
 
 So the statement is False.`
     ],
@@ -3421,11 +4395,37 @@ Reuse this derivative setup for every letter: simplify first, evaluate at named 
 
 The intensity ratio is the quotient $K(x)=\\dfrac{(2x-1)^{3}}{x+4}$. The quotient rule writes numerator derivative times denominator minus numerator times denominator derivative:
 
+Name the numerator and denominator, differentiate each, then apply the quotient rule before simplifying.
+
+$$
+K(x) = \\dfrac{(2x-1)^{3}}{x+4}
+$$
+
+$$
+u(x) = (2x-1)^{3}
+$$
+
+$$
+v(x) = x+4
+$$
+
+$$
+u'(x) = 6 (2 x - 1)^{2}
+$$
+
+$$
+v'(x) = 1
+$$
+
+$$
+K'(x) = \\dfrac{(6 (2 x - 1)^{2})(x+4) - ((2x-1)^{3})(1)}{(x+4)^{2}}
+$$
+
 $$
 K'(x) = \\dfrac{6(2x-1)^{2}(x+4)-(2x-1)^{3}}{(x+4)^{2}}
 $$
 
-which is exactly the unsimplified form named in the claim. The factor $6$ comes from $3\\cdot 2$ on the cubed numerator. Writing every intermediate line keeps the comparison with the claim mechanical. The stem's formula is enough; no outside identity is required for the check.
+which is exactly the unsimplified form named in the claim. The factor $6$ comes from $3\\cdot 2$ on the cubed numerator.
 
 So the statement is True.`,
       `**B.** → True
@@ -3439,8 +4439,6 @@ $$
 $$
 K'(x) = \\dfrac{(2x-1)^{2}(4x+25)}{(x+4)^{2}}
 $$
-
-since $6x+24-2x+1=4x+25$. Matching the claimed factored form, the statement is True. The stem's formula is enough; no outside identity is required for the check. Substituting only after the general expression is finished avoids mixing height with slope. Coefficient and sign agreement with the claim is what decides the letter.
 
 So the statement is True.`,
       `**C.** → True
@@ -3459,7 +4457,7 @@ $$
 K'(1) = \\dfrac{29}{25}
 $$
 
-The computed value matches the claim. Substituting only after the general expression is finished avoids mixing height with slope. Coefficient and sign agreement with the claim is what decides the letter. The same checklist — differentiate, simplify, evaluate — settles the assertion. Writing every intermediate line keeps the comparison with the claim mechanical.
+The computed value matches the claim.
 
 So the statement is True.`,
       `**D.** → True
@@ -3470,7 +4468,17 @@ $$
 K'\\!\\left(\\dfrac{1}{2}\\right) = 0
 $$
 
-matching the claim. That is a genuine critical point of $K$. Coefficient and sign agreement with the claim is what decides the letter. The same checklist — differentiate, simplify, evaluate — settles the assertion. Writing every intermediate line keeps the comparison with the claim mechanical.
+matching the claim. That is a genuine critical point of $K$.
+
+$$
+K'\\left(\\dfrac{1}{2}\\right) = 0
+$$
+
+$$
+x = \\dfrac{1}{2}
+$$
+
+which matches the claim.
 
 So the statement is True.`,
       `**E.** → False
@@ -3481,7 +4489,19 @@ $$
 K'(1) = \\dfrac{29}{25}
 $$
 
-Since $\\dfrac{7}{5}=\\dfrac{35}{25}\\neq\\dfrac{29}{25}$, the claimed value is wrong. A trap is misreading $4+25=29$ as $4+31$ or similar. Holding both formulas in view makes the failure obvious. The derived expression and the asserted one disagree at a checkable place. That mismatch alone is enough to reject the letter. Rephrasing the claim cannot repair an algebraic contradiction.
+Since $\\dfrac{7}{5}=\\dfrac{35}{25}\\neq\\dfrac{29}{25}$, the claimed value is wrong. A trap is misreading $4+25=29$ as $4+31$ or similar.
+
+Rephrasing the claim cannot repair an algebraic contradiction.
+
+$$
+K'(1) = \\dfrac{7}{5}
+$$
+
+$$
+x = 1
+$$
+
+which does not match the claim.
 
 So the statement is False.`
     ],
@@ -3531,7 +4551,13 @@ $$
 L'(x) = \\dfrac{2x}{x^{2}+9}
 $$
 
-matching the claimed first derivative. The stem's formula is enough; no outside identity is required for the check. Substituting only after the general expression is finished avoids mixing height with slope. Coefficient and sign agreement with the claim is what decides the letter.
+matching the claimed first derivative.
+
+$$
+L(x) = \\ln(x^{2}+9)
+$$
+
+which matches the claim.
 
 So the statement is True.`,
       `**B.** → True
@@ -3550,7 +4576,7 @@ $$
 L'(3) = \\dfrac{1}{3}
 $$
 
-The computed value matches the claim. Substituting only after the general expression is finished avoids mixing height with slope. Coefficient and sign agreement with the claim is what decides the letter. The same checklist — differentiate, simplify, evaluate — settles the assertion. Writing every intermediate line keeps the comparison with the claim mechanical.
+The computed value matches the claim.
 
 So the statement is True.`,
       `**C.** → True
@@ -3565,7 +4591,13 @@ $$
 L''(x) = \\dfrac{18-2x^{2}}{(x^{2}+9)^{2}}
 $$
 
-matching the claimed second derivative. The numerator $2x^{2}+18-4x^{2}=18-2x^{2}$ is the key. Coefficient and sign agreement with the claim is what decides the letter. The same checklist — differentiate, simplify, evaluate — settles the assertion. Writing every intermediate line keeps the comparison with the claim mechanical.
+matching the claimed second derivative. The numerator $2x^{2}+18-4x^{2}=18-2x^{2}$ is the key.
+
+$$
+L'(x) = \\dfrac{2x}{x^{2}+9}
+$$
+
+which matches the claim.
 
 So the statement is True.`,
       `**D.** → True
@@ -3584,7 +4616,7 @@ $$
 L''(0) = \\dfrac{2}{9}
 $$
 
-The computed value matches the claim. Reduce $\\dfrac{18}{81}$ by dividing by $9$. The same checklist — differentiate, simplify, evaluate — settles the assertion. Writing every intermediate line keeps the comparison with the claim mechanical. The stem's formula is enough; no outside identity is required for the check. Substituting only after the general expression is finished avoids mixing height with slope.
+The computed value matches the claim. Reduce $\\dfrac{18}{81}$ by dividing by $9$.
 
 So the statement is True.`,
       `**E.** → False
@@ -3599,7 +4631,19 @@ $$
 L'(0) = 0
 $$
 
-which is not equal to $1$. The odd factor $2x$ vanishes at the origin, so the slope is zero there. The claim's value is incorrect. The derived expression and the asserted one disagree at a checkable place. That mismatch alone is enough to reject the letter. Rephrasing the claim cannot repair an algebraic contradiction. The named evaluation already serves as a counter-example.
+which is not equal to $1$. The odd factor $2x$ vanishes at the origin, so the slope is zero there. The claim's value is incorrect.
+
+Rephrasing the claim cannot repair an algebraic contradiction.
+
+$$
+L'(0) = 1
+$$
+
+$$
+x = 0
+$$
+
+which does not match the claim.
 
 So the statement is False.`
     ],
@@ -3649,7 +4693,13 @@ $$
 M'(x) = 3x\\sqrt{x^{2}+1}
 $$
 
-matching the claimed first derivative. The factors $\\tfrac{3}{2}$ and $2$ cancel cleanly. Substituting only after the general expression is finished avoids mixing height with slope. Coefficient and sign agreement with the claim is what decides the letter. The same checklist — differentiate, simplify, evaluate — settles the assertion.
+matching the claimed first derivative. The factors $\\tfrac{3}{2}$ and $2$ cancel cleanly.
+
+$$
+M(x) = (x^{2}+1)^{\\frac{3}{2}}
+$$
+
+which matches the claim.
 
 So the statement is True.`,
       `**B.** → True
@@ -3664,7 +4714,7 @@ $$
 M'(0) = 0
 $$
 
-so the derivative vanishes at the origin, matching the claim. Coefficient and sign agreement with the claim is what decides the letter. The same checklist — differentiate, simplify, evaluate — settles the assertion. Writing every intermediate line keeps the comparison with the claim mechanical. The stem's formula is enough; no outside identity is required for the check.
+so the derivative vanishes at the origin, matching the claim.
 
 So the statement is True.`,
       `**C.** → True
@@ -3679,7 +4729,13 @@ $$
 M''(x) = \\dfrac{6x^{2}+3}{\\sqrt{x^{2}+1}}
 $$
 
-matching the claimed second derivative. The same checklist — differentiate, simplify, evaluate — settles the assertion. Writing every intermediate line keeps the comparison with the claim mechanical. The stem's formula is enough; no outside identity is required for the check.
+matching the claimed second derivative.
+
+$$
+M'(x) = 3x(x^{2}+1)^{\\frac{1}{2}}
+$$
+
+which matches the claim.
 
 So the statement is True.`,
       `**D.** → True
@@ -3694,7 +4750,13 @@ $$
 M''(0) = 3
 $$
 
-The computed value matches the claim. At the origin only the constant numerator term $3$ survives. Writing every intermediate line keeps the comparison with the claim mechanical. The stem's formula is enough; no outside identity is required for the check. Substituting only after the general expression is finished avoids mixing height with slope. Coefficient and sign agreement with the claim is what decides the letter.
+The computed value matches the claim. At the origin only the constant numerator term $3$ survives.
+
+$$
+x = 0
+$$
+
+which matches the claim.
 
 So the statement is True.`,
       `**E.** → False
@@ -3709,7 +4771,19 @@ $$
 M'(1) = 3\\sqrt{2}
 $$
 
-which is not the bare value $3$. The claim drops the square-root factor $\\sqrt{2}$. That mismatch alone is enough to reject the letter. Rephrasing the claim cannot repair an algebraic contradiction. The named evaluation already serves as a counter-example. Holding both formulas in view makes the failure obvious. The derived expression and the asserted one disagree at a checkable place.
+which is not the bare value $3$. The claim drops the square-root factor $\\sqrt{2}$.
+
+Rephrasing the claim cannot repair an algebraic contradiction.
+
+$$
+M'(1) = 3
+$$
+
+$$
+x = 1
+$$
+
+which does not match the claim.
 
 So the statement is False.`
     ],
@@ -3759,7 +4833,17 @@ $$
 F'(x) = e^{3x}(3x^{2}+2x+3)
 $$
 
-matching the claimed formula. The chain-rule factor $3$ on the exponential is essential. Coefficient and sign agreement with the claim is what decides the letter. The same checklist — differentiate, simplify, evaluate — settles the assertion. Writing every intermediate line keeps the comparison with the claim mechanical.
+matching the claimed formula. The chain-rule factor $3$ on the exponential is essential.
+
+$$
+F'(x) = e^{3x}\\cdot(3x^{2}+2x+3)
+$$
+
+$$
+F(x) = e^{3x}(x^{2}+1)
+$$
+
+which matches the claim.
 
 So the statement is True.`,
       `**B.** → True
@@ -3774,7 +4858,13 @@ $$
 F'(0) = 3
 $$
 
-The computed value matches the claim. At the origin only the constant term $3$ of the polynomial factor survives. The same checklist — differentiate, simplify, evaluate — settles the assertion. Writing every intermediate line keeps the comparison with the claim mechanical. The stem's formula is enough; no outside identity is required for the check. Substituting only after the general expression is finished avoids mixing height with slope.
+The computed value matches the claim. At the origin only the constant term $3$ of the polynomial factor survives.
+
+$$
+x = 0
+$$
+
+which matches the claim.
 
 So the statement is True.`,
       `**C.** → True
@@ -3789,7 +4879,17 @@ $$
 F''(x) = e^{3x}(9x^{2}+12x+11)
 $$
 
-matching the claimed second derivative. Writing every intermediate line keeps the comparison with the claim mechanical. The stem's formula is enough; no outside identity is required for the check. Substituting only after the general expression is finished avoids mixing height with slope.
+matching the claimed second derivative.
+
+$$
+F''(x) = e^{3x}\\cdot(9x^{2}+12x+11)
+$$
+
+$$
+F'(x) = e^{3x}(3x^{2}+2x+3)
+$$
+
+which matches the claim.
 
 So the statement is True.`,
       `**D.** → True
@@ -3804,7 +4904,13 @@ $$
 F''(0) = 11
 $$
 
-The computed value matches the claim. The stem's formula is enough; no outside identity is required for the check. Substituting only after the general expression is finished avoids mixing height with slope. Coefficient and sign agreement with the claim is what decides the letter. The same checklist — differentiate, simplify, evaluate — settles the assertion. Writing every intermediate line keeps the comparison with the claim mechanical.
+The computed value matches the claim.
+
+$$
+x = 0
+$$
+
+which matches the claim.
 
 So the statement is True.`,
       `**E.** → False
@@ -3819,7 +4925,17 @@ $$
 F'(0) = 3
 $$
 
-which is not equal to $1$. Confusing $F'(0)$ with $e^{0}=1$ drops the polynomial factor. The claim's value is incorrect. Rephrasing the claim cannot repair an algebraic contradiction. The named evaluation already serves as a counter-example. Holding both formulas in view makes the failure obvious. The derived expression and the asserted one disagree at a checkable place. That mismatch alone is enough to reject the letter.
+which is not equal to $1$. Confusing $F'(0)$ with $e^{0}=1$ drops the polynomial factor. The claim's value is incorrect. Rephrasing the claim cannot repair an algebraic contradiction.
+
+$$
+F'(0) = 1
+$$
+
+$$
+x = 0
+$$
+
+which does not match the claim.
 
 So the statement is False.`
     ],
@@ -3863,7 +4979,7 @@ $$
 H'(x) = \\dfrac{9}{2\\sqrt{2x+1}\\,(x+5)^{\\frac{3}{2}}}
 $$
 
-The numerator $9$ comes from the Wronskian-style difference $2(x+5)-(2x+1)=9$. The same checklist — differentiate, simplify, evaluate — settles the assertion. Writing every intermediate line keeps the comparison with the claim mechanical. The stem's formula is enough; no outside identity is required for the check.
+The numerator $9$ comes from the Wronskian-style difference $2(x+5)-(2x+1)=9$.
 
 So the statement is True.`,
       `**B.** → True
@@ -3874,7 +4990,21 @@ $$
 H'(2) = \\dfrac{9}{2\\sqrt{5}\\cdot 7^{\\frac{3}{2}}}
 $$
 
-exactly the value named in the claim. Leave the irrational factors unexpanded — that is the exact form. Writing every intermediate line keeps the comparison with the claim mechanical. The stem's formula is enough; no outside identity is required for the check. Substituting only after the general expression is finished avoids mixing height with slope.
+exactly the value named in the claim. Leave the irrational factors unexpanded — that is the exact form.
+
+$$
+x = 2
+$$
+
+$$
+2x+1 = 5
+$$
+
+$$
+x+5 = 7
+$$
+
+which matches the claim.
 
 So the statement is True.`,
       `**C.** → True
@@ -3889,7 +5019,7 @@ $$
 H(x) = (2x+1)^{\\frac{1}{2}}(x+5)^{-\\frac{1}{2}}
 $$
 
-which is exactly the rewriting named in the claim. That form sets up the product rule. The stem's formula is enough; no outside identity is required for the check. Substituting only after the general expression is finished avoids mixing height with slope. Coefficient and sign agreement with the claim is what decides the letter.
+which is exactly the rewriting named in the claim. That form sets up the product rule.
 
 So the statement is True.`,
       `**D.** → False
@@ -3900,7 +5030,7 @@ $$
 H'(x)>0
 $$
 
-rather than negative. The balance index is increasing, not decreasing. The claim's inequality is wrong. Rephrasing the claim cannot repair an algebraic contradiction. The named evaluation already serves as a counter-example. Holding both formulas in view makes the failure obvious. The derived expression and the asserted one disagree at a checkable place.
+rather than negative. The balance index is increasing, not decreasing. The claim's inequality is wrong. Rephrasing the claim cannot repair an algebraic contradiction.
 
 So the statement is False.`,
       `**E.** → False
@@ -3911,7 +5041,17 @@ $$
 H'(2) = \\dfrac{9}{2\\sqrt{5}\\cdot 7^{\\frac{3}{2}}}
 $$
 
-which is not equal to the simplified fraction $\\dfrac{9}{70}$. That false reduction pretends $\\sqrt{5}\\cdot 7^{\\frac{3}{2}}=35$, which is wrong. The claim's numerical reduction is incorrect. The named evaluation already serves as a counter-example. Holding both formulas in view makes the failure obvious. The derived expression and the asserted one disagree at a checkable place.
+which is not equal to the simplified fraction $\\dfrac{9}{70}$. That false reduction pretends $\\sqrt{5}\\cdot 7^{\\frac{3}{2}}=35$, which is wrong. The claim's numerical reduction is incorrect.
+
+$$
+H'(2) = \\dfrac{9}{70}
+$$
+
+$$
+x = 2
+$$
+
+which does not match the claim.
 
 So the statement is False.`
     ],
@@ -3955,7 +5095,17 @@ $$
 N'(x) = \\dfrac{4}{(x^{2}+4)^{\\frac{3}{2}}}
 $$
 
-matching the claimed formula. Writing every intermediate line keeps the comparison with the claim mechanical. The stem's formula is enough; no outside identity is required for the check. Substituting only after the general expression is finished avoids mixing height with slope.
+matching the claimed formula.
+
+$$
+N(x) = x(x^{2}+4)^{-\\frac{1}{2}}
+$$
+
+$$
+(x^{2}+4)-x^{2} = 4
+$$
+
+which matches the claim.
 
 So the statement is True.`,
       `**B.** → True
@@ -3970,7 +5120,17 @@ $$
 N'(0) = \\dfrac{1}{2}
 $$
 
-The computed value matches the claim. The stem's formula is enough; no outside identity is required for the check. Substituting only after the general expression is finished avoids mixing height with slope. Coefficient and sign agreement with the claim is what decides the letter. The same checklist — differentiate, simplify, evaluate — settles the assertion. Writing every intermediate line keeps the comparison with the claim mechanical.
+The computed value matches the claim.
+
+$$
+x = 0
+$$
+
+$$
+4^{\\frac{3}{2}} = 8
+$$
+
+which matches the claim.
 
 So the statement is True.`,
       `**C.** → True
@@ -4003,7 +5163,7 @@ $$
 N'(2) = \\dfrac{1}{4\\sqrt{2}}
 $$
 
-The computed value matches the claim. Substituting only after the general expression is finished avoids mixing height with slope. Coefficient and sign agreement with the claim is what decides the letter. The same checklist — differentiate, simplify, evaluate — settles the assertion.
+The computed value matches the claim.
 
 So the statement is True.`,
       `**D.** → False
@@ -4014,7 +5174,13 @@ $$
 N'(x) = \\dfrac{4}{(x^{2}+4)^{\\frac{3}{2}}}
 $$
 
-has a positive numerator and a positive denominator for every real $x$, so it never changes sign. Crossing $x=0$ does not flip $N'$. The claim is incorrect. The named evaluation already serves as a counter-example. Holding both formulas in view makes the failure obvious. The derived expression and the asserted one disagree at a checkable place. That mismatch alone is enough to reject the letter.
+has a positive numerator and a positive denominator for every real $x$, so it never changes sign. Crossing $x=0$ does not flip $N'$. The claim is incorrect.
+
+$$
+x = 0
+$$
+
+which does not match the claim.
 
 So the statement is False.`,
       `**E.** → True
@@ -4025,7 +5191,17 @@ $$
 N'(1) = \\dfrac{4}{5^{\\frac{3}{2}}}
 $$
 
-exactly as claimed. Leaving $5^{\\frac{3}{2}}$ unexpanded is the exact form. The same checklist — differentiate, simplify, evaluate — settles the assertion. Writing every intermediate line keeps the comparison with the claim mechanical. The stem's formula is enough; no outside identity is required for the check. Substituting only after the general expression is finished avoids mixing height with slope.
+exactly as claimed. Leaving $5^{\\frac{3}{2}}$ unexpanded is the exact form.
+
+$$
+x = 1
+$$
+
+$$
+1+4 = 5
+$$
+
+which matches the claim.
 
 So the statement is True.`
     ],
@@ -4071,7 +5247,13 @@ $$
 C'(q) = 3q^{2}-12q+20
 $$
 
-matching the claimed first derivative. The constant $50$ vanishes under differentiation. The stem's formula is enough; no outside identity is required for the check. Substituting only after the general expression is finished avoids mixing height with slope. Coefficient and sign agreement with the claim is what decides the letter. The same checklist — differentiate, simplify, evaluate — settles the assertion.
+matching the claimed first derivative. The constant $50$ vanishes under differentiation.
+
+$$
+C(q) = q^{3}-6q^{2}+20q+50
+$$
+
+which matches the claim.
 
 So the statement is True.`,
       `**B.** → True
@@ -4082,7 +5264,7 @@ $$
 C''(q) = 6q-12
 $$
 
-matching the claimed second derivative. This measures how fast marginal cost itself changes. Substituting only after the general expression is finished avoids mixing height with slope. Coefficient and sign agreement with the claim is what decides the letter. The same checklist — differentiate, simplify, evaluate — settles the assertion. Writing every intermediate line keeps the comparison with the claim mechanical.
+matching the claimed second derivative. This measures how fast marginal cost itself changes.
 
 So the statement is True.`,
       `**C.** → True
@@ -4091,6 +5273,22 @@ Substitute $q=2$ into the second derivative:
 
 $$
 C''(2) = 12-12
+$$
+
+$$
+12 - 12 = 0
+$$
+
+$$
+C''(2) = 0
+$$
+
+$$
+12 - 12 = 0
+$$
+
+$$
+C''(2) = 0
 $$
 
 $$
@@ -4105,7 +5303,7 @@ $$
 C''(2) = 0
 $$
 
-so the second derivative vanishes there, matching the claim. That is the natural inflection candidate of the cubic. Coefficient and sign agreement with the claim is what decides the letter. The same checklist — differentiate, simplify, evaluate — settles the assertion. Writing every intermediate line keeps the comparison with the claim mechanical. The stem's formula is enough; no outside identity is required for the check.
+so the second derivative vanishes there, matching the claim. That is the natural inflection candidate of the cubic.
 
 So the statement is True.`,
       `**D.** → False
@@ -4114,6 +5312,22 @@ Evaluate the second derivative at $q=1$:
 
 $$
 C''(1) = 6-12
+$$
+
+$$
+6 - 12 = -6
+$$
+
+$$
+C''(1) = -6
+$$
+
+$$
+6 - 12 = -6
+$$
+
+$$
+C''(1) = -6
 $$
 
 $$
@@ -4128,7 +5342,9 @@ $$
 C''(1) = -6<0
 $$
 
-so the inequality $C''(1)>0$ fails. Just left of $q=2$ the cost curve is still concave down. Holding both formulas in view makes the failure obvious. The derived expression and the asserted one disagree at a checkable place. That mismatch alone is enough to reject the letter. Rephrasing the claim cannot repair an algebraic contradiction. The named evaluation already serves as a counter-example.
+so the inequality $C''(1)>0$ fails. Just left of $q=2$ the cost curve is still concave down.
+
+Rephrasing the claim cannot repair an algebraic contradiction.
 
 So the statement is False.`,
       `**E.** → True
@@ -4141,6 +5357,30 @@ $$
 
 $$
 C'(2) = 12-24+20
+$$
+
+$$
+12 - 24 = -12
+$$
+
+$$
+-12 + 20 = 8
+$$
+
+$$
+C'(2) = 8
+$$
+
+$$
+12 - 24 = -12
+$$
+
+$$
+-12 + 20 = 8
+$$
+
+$$
+C'(2) = 8
 $$
 
 $$
@@ -4167,7 +5407,7 @@ $$
 C'(2) = 8
 $$
 
-The computed value matches the claim. Marginal cost is still positive at the inflection candidate. Writing every intermediate line keeps the comparison with the claim mechanical. The stem's formula is enough; no outside identity is required for the check. Substituting only after the general expression is finished avoids mixing height with slope. Coefficient and sign agreement with the claim is what decides the letter.
+The computed value matches the claim. Marginal cost is still positive at the inflection candidate.
 
 So the statement is True.`
     ],
@@ -4213,7 +5453,13 @@ $$
 W'(x) = (2x+1)(x-3)^{2}(10x-9)
 $$
 
-matching the claimed formula. The coefficient $10$ comes from combining $4(x-3)+3(2x+1)$. Substituting only after the general expression is finished avoids mixing height with slope. Coefficient and sign agreement with the claim is what decides the letter.
+matching the claimed formula. The coefficient $10$ comes from combining $4(x-3)+3(2x+1)$.
+
+$$
+W(x) = (2x+1)^{2}(x-3)^{3}
+$$
+
+which matches the claim.
 
 So the statement is True.`,
       `**B.** → True
@@ -4224,7 +5470,13 @@ $$
 W'(3) = 0
 $$
 
-matching the claim. Even though $(2x+1)$ and $(10x-9)$ are nonzero there, the squared factor forces a critical point. Coefficient and sign agreement with the claim is what decides the letter. The same checklist — differentiate, simplify, evaluate — settles the assertion. Writing every intermediate line keeps the comparison with the claim mechanical. The stem's formula is enough; no outside identity is required for the check.
+matching the claim. Even though $(2x+1)$ and $(10x-9)$ are nonzero there, the squared factor forces a critical point.
+
+$$
+x = 3
+$$
+
+which matches the claim.
 
 So the statement is True.`,
       `**C.** → True
@@ -4235,7 +5487,17 @@ $$
 W'\\!\\left(\\dfrac{9}{10}\\right) = 0
 $$
 
-as well, matching the claim. That is a second root of the factored derivative. The same checklist — differentiate, simplify, evaluate — settles the assertion. Writing every intermediate line keeps the comparison with the claim mechanical. The stem's formula is enough; no outside identity is required for the check. Substituting only after the general expression is finished avoids mixing height with slope.
+as well, matching the claim. That is a second root of the factored derivative.
+
+$$
+W'\\left(\\dfrac{9}{10}\\right) = 0
+$$
+
+$$
+x = \\dfrac{9}{10}
+$$
+
+which matches the claim.
 
 So the statement is True.`,
       `**D.** → True
@@ -4254,7 +5516,7 @@ $$
 W'(0) = -81
 $$
 
-The computed value matches the claim. Watch the sign from $10\\cdot 0-9=-9$. Writing every intermediate line keeps the comparison with the claim mechanical. The stem's formula is enough; no outside identity is required for the check. Substituting only after the general expression is finished avoids mixing height with slope. Coefficient and sign agreement with the claim is what decides the letter.
+The computed value matches the claim. Watch the sign from $10\\cdot 0-9=-9$.
 
 So the statement is True.`,
       `**E.** → False
@@ -4265,7 +5527,15 @@ $$
 4(2x+1)(x-3)^{3}
 $$
 
-which misses the contribution from differentiating $(x-3)^{3}$. That incomplete expression is not $W'$. That mismatch alone is enough to reject the letter. Rephrasing the claim cannot repair an algebraic contradiction. The named evaluation already serves as a counter-example. Holding both formulas in view makes the failure obvious. The derived expression and the asserted one disagree at a checkable place.
+which misses the contribution from differentiating $(x-3)^{3}$. That incomplete expression is not $W'$.
+
+Rephrasing the claim cannot repair an algebraic contradiction.
+
+$$
+W'(x) = 4(2x+1)(x-3)^{3}
+$$
+
+which does not match the claim.
 
 So the statement is False.`
     ],
@@ -4319,7 +5589,7 @@ $$
 V'(x) = \\dfrac{5}{(3x+1)(x+2)}
 $$
 
-matching the claimed first derivative. Coefficient and sign agreement with the claim is what decides the letter. The same checklist — differentiate, simplify, evaluate — settles the assertion. Writing every intermediate line keeps the comparison with the claim mechanical.
+matching the claimed first derivative.
 
 So the statement is True.`,
       `**B.** → True
@@ -4334,7 +5604,13 @@ $$
 V'(0) = \\dfrac{5}{2}
 $$
 
-matching the claim. At $x=0$ both linear factors are positive, so the derivative is defined. The same checklist — differentiate, simplify, evaluate — settles the assertion. Writing every intermediate line keeps the comparison with the claim mechanical. The stem's formula is enough; no outside identity is required for the check. Substituting only after the general expression is finished avoids mixing height with slope.
+matching the claim. At $x=0$ both linear factors are positive, so the derivative is defined.
+
+$$
+x = 0
+$$
+
+which matches the claim.
 
 So the statement is True.`,
       `**C.** → True
@@ -4345,7 +5621,7 @@ $$
 V''(x) = -\\dfrac{5(6x+7)}{(3x+1)^{2}(x+2)^{2}}
 $$
 
-matching the claimed second derivative. The factor $6x+7$ comes from the product rule on the denominator. Writing every intermediate line keeps the comparison with the claim mechanical. The stem's formula is enough; no outside identity is required for the check. Substituting only after the general expression is finished avoids mixing height with slope.
+matching the claimed second derivative. The factor $6x+7$ comes from the product rule on the denominator.
 
 So the statement is True.`,
       `**D.** → True
@@ -4364,7 +5640,7 @@ $$
 V'(1) = \\dfrac{5}{12}
 $$
 
-The computed value matches the claim. The stem's formula is enough; no outside identity is required for the check. Substituting only after the general expression is finished avoids mixing height with slope. Coefficient and sign agreement with the claim is what decides the letter. The same checklist — differentiate, simplify, evaluate — settles the assertion.
+The computed value matches the claim.
 
 So the statement is True.`,
       `**E.** → False
@@ -4375,7 +5651,13 @@ $$
 V'(x) = \\dfrac{5}{(3x+1)(x+2)}>0
 $$
 
-and never hits zero. There is therefore no such root on $x>0$, and the statement is False. Rephrasing the claim cannot repair an algebraic contradiction. The named evaluation already serves as a counter-example. Holding both formulas in view makes the failure obvious. The derived expression and the asserted one disagree at a checkable place.
+and never hits zero. There is therefore no such root on $x>0$, and the statement is False. Rephrasing the claim cannot repair an algebraic contradiction.
+
+$$
+V'(x) = 0
+$$
+
+which does not match the claim.
 
 So the statement is False.`
     ],
@@ -4419,6 +5701,34 @@ The numerator $5$ of $V'$ never hits zero, so there is no critical point for $x>
 
 The engagement score is the product $Z(t)=t^{2}\\ln(2t+1)$. Apply the product rule, multiplying the logarithm's derivative by the inner slope $2$:
 
+Write the product as two factors and differentiate each factor before combining.
+
+$$
+Z(t) = t^{2} \\cdot \\ln(2t+1)
+$$
+
+$$
+u(t) = t^{2}
+$$
+
+$$
+v(t) = \\ln{(2 t + 1 )}
+$$
+
+$$
+u'(t) = 2 t
+$$
+
+$$
+v'(t) = \\frac{2}{2 t + 1}
+$$
+
+$$
+Z'(t) = (2 t)\\cdot(\\ln{(2 t + 1 )}) + (t^{2})\\cdot(\\frac{2}{2 t + 1})
+$$
+
+Only after that product-rule expansion do we simplify to the claimed form.
+
 $$
 Z'(t) = 2t\\cdot\\ln(2t+1)+t^{2}\\cdot\\dfrac{2}{2t+1}
 $$
@@ -4427,7 +5737,7 @@ $$
 Z'(t) = 2t\\cdot\\ln(2t+1)+\\dfrac{2t^{2}}{2t+1}
 $$
 
-matching the claimed formula. The same checklist — differentiate, simplify, evaluate — settles the assertion. Writing every intermediate line keeps the comparison with the claim mechanical. The stem's formula is enough; no outside identity is required for the check.
+matching the claimed formula.
 
 So the statement is True.`,
       `**B.** → True
@@ -4438,7 +5748,17 @@ $$
 Z'(1) = 2\\ln(3)+\\dfrac{2}{3}
 $$
 
-The computed value matches the claim. Keep $\\dfrac{2}{3}$, not $1$. Writing every intermediate line keeps the comparison with the claim mechanical. The stem's formula is enough; no outside identity is required for the check. Substituting only after the general expression is finished avoids mixing height with slope. Coefficient and sign agreement with the claim is what decides the letter.
+The computed value matches the claim. Keep $\\dfrac{2}{3}$, not $1$.
+
+$$
+Z'(1) = 2\\ln 3+\\dfrac{2}{3}
+$$
+
+$$
+t = 1
+$$
+
+which matches the claim.
 
 So the statement is True.`,
       `**C.** → True
@@ -4449,7 +5769,7 @@ $$
 Z''(t) = 2\\ln(2t+1)+\\dfrac{4t}{2t+1}+\\dfrac{4t^{2}+4t}{(2t+1)^{2}}
 $$
 
-matching the claimed second derivative. The stem's formula is enough; no outside identity is required for the check. Substituting only after the general expression is finished avoids mixing height with slope. Coefficient and sign agreement with the claim is what decides the letter.
+matching the claimed second derivative.
 
 So the statement is True.`,
       `**D.** → False
@@ -4460,7 +5780,17 @@ $$
 Z'(1) = 2\\ln 3+\\dfrac{2}{3}
 $$
 
-Replacing the second summand by $1$ produces the different number $2\\ln 3+1$. That slip pretends $\\dfrac{2t^{2}}{2t+1}=1$ at $t=1$, but $\\dfrac{2}{3}\\neq 1$. The claim is incorrect. Rephrasing the claim cannot repair an algebraic contradiction. The named evaluation already serves as a counter-example. Holding both formulas in view makes the failure obvious. The derived expression and the asserted one disagree at a checkable place.
+Replacing the second summand by $1$ produces the different number $2\\ln 3+1$. That slip pretends $\\dfrac{2t^{2}}{2t+1}=1$ at $t=1$, but $\\dfrac{2}{3}\\neq 1$. The claim is incorrect. Rephrasing the claim cannot repair an algebraic contradiction.
+
+$$
+Z'(1) = 2\\ln 3+1
+$$
+
+$$
+t = 1
+$$
+
+which does not match the claim.
 
 So the statement is False.`,
       `**E.** → True
@@ -4475,7 +5805,13 @@ $$
 Z''(1) = 2\\ln 3+\\dfrac{4}{3}+\\dfrac{8}{9}
 $$
 
-exactly as claimed. The last numerator is $4(1)^{2}+4(1)=8$. Coefficient and sign agreement with the claim is what decides the letter. The same checklist — differentiate, simplify, evaluate — settles the assertion. Writing every intermediate line keeps the comparison with the claim mechanical. The stem's formula is enough; no outside identity is required for the check.
+exactly as claimed. The last numerator is $4(1)^{2}+4(1)=8$.
+
+$$
+t = 1
+$$
+
+which matches the claim.
 
 So the statement is True.`
     ],
@@ -4527,12 +5863,42 @@ The quantity that answers the management question is therefore $C^{\\prime}(Q)$,
 
 In symbols, management asks for the local rate $C^{\\prime}(Q)$ via $C(Q+\\Delta Q)-C(Q)\\approx C^{\\prime}(Q)\\,\\Delta Q$, not for the quotient $A(Q)$.
 
+$$
+A(Q) = \\dfrac{C(Q)}{Q}
+$$
+
 So the statement is True.`,
       `**B.** → False
 
 Average cost is the quotient $A(Q)=\\dfrac{C(Q)}{Q}$, and differentiating that quotient tracks how the average itself moves with output.
 
 Marginal cost is defined as the derivative of total cost:
+
+Name the numerator and denominator, differentiate each, then apply the quotient rule before simplifying.
+
+$$
+A(Q) = \\dfrac{C(Q)}{Q}
+$$
+
+$$
+u(Q) = C(Q)
+$$
+
+$$
+v(Q) = Q
+$$
+
+$$
+u'(Q) = C
+$$
+
+$$
+v'(Q) = 1
+$$
+
+$$
+A'(Q) = \\dfrac{(C)(Q) - (C(Q))(1)}{(Q)^{2}}
+$$
 
 $$
 C^{\\prime}(Q)
@@ -4589,6 +5955,14 @@ Only where average cost is minimized does $A^{\\prime}=0$ force $C^{\\prime}=A$;
 
 Matching the claim against that reasoning confirms the verdict is False once the right derivative (or the right expand-or-not comparison) is in view.
 
+$$
+A^{\\prime} = 0
+$$
+
+$$
+C^{\\prime} = A
+$$
+
 So the statement is False.`
     ],
     difficulty_level: "2/5",
@@ -4638,6 +6012,16 @@ Nothing in the report identifies the stock $C(50)$; a cleanup could already have
 
 Matching the claim against that reasoning confirms the verdict is False once the right derivative (or the right expand-or-not comparison) is in view.
 
+$$
+C^{\\prime}(50) = 3
+$$
+
+$$
+C'(50) = 3
+$$
+
+which does not match the claim.
+
 So the statement is False.`,
       `**C.** → True
 
@@ -4675,6 +6059,10 @@ That is a convenient one-unit version of the same derivative
 It remains an approximation for a curved $C$, but it is the standard classroom translation of $C^{\\prime}(50)=3$ into a one-percentage-point story.
 
 Matching the claim against that reasoning confirms the verdict is True once the right derivative (or the right expand-or-not comparison) is in view.
+
+$$
+\\Delta x = 1
+$$
 
 So the statement is True.`,
       `**E.** → True
@@ -4738,6 +6126,10 @@ Even the sign can disagree: $p^{\\prime}$ is typically negative along demand, wh
 
 Matching the claim against that reasoning confirms the verdict is False once the right derivative (or the right expand-or-not comparison) is in view.
 
+$$
+R(Q) = Q\\cdot p(Q)
+$$
+
 So the statement is False.`,
       `**C.** → True
 
@@ -4748,6 +6140,10 @@ That combined effect is exactly $R^{\\prime}(Q)$, which generally differs from $
 The gap $p(Q)-R^{\\prime}(Q)=-Q\\,p^{\\prime}(Q)$ is the revenue lost on previous cups when price is cut to sell one more.
 
 Matching the claim against that reasoning confirms the verdict is True once the right derivative (or the right expand-or-not comparison) is in view.
+
+$$
+p(Q)-R^{\\prime}(Q) = -Q\\,p^{\\prime}(Q)
+$$
 
 So the statement is True.`,
       `**D.** → True
@@ -4774,6 +6170,16 @@ at every such output
 That is why the expand-or-not test can be written either as $P^{\\prime}>0$ or as $R^{\\prime}>C^{\\prime}$ — same identity.
 
 Matching the claim against that reasoning confirms the verdict is True once the right derivative (or the right expand-or-not comparison) is in view.
+
+$$
+P'(Q) = R'(Q)-C'(Q)
+$$
+
+$$
+P = R-C
+$$
+
+which matches the claim.
 
 So the statement is True.`
     ],
@@ -4860,6 +6266,16 @@ This is the calculus form of the classical MR$=$MC rule for an interior candidat
 
 Matching the claim against that reasoning confirms the verdict is True once the right derivative (or the right expand-or-not comparison) is in view.
 
+$$
+R'(Q) = C'(Q)
+$$
+
+$$
+P'(Q) = 0
+$$
+
+which matches the claim.
+
 So the statement is True.`,
       `**E.** → False
 
@@ -4870,6 +6286,18 @@ Total revenue equals total cost only when $R(Q)=C(Q)$, which is a different cond
 A firm can have $R^{\\prime}=C^{\\prime}$ with $R>C$ (positive profit) or with $R<C$ (a loss); the slope condition is silent about break-even.
 
 Matching the claim against that reasoning confirms the verdict is False once the right derivative (or the right expand-or-not comparison) is in view.
+
+$$
+R^{\\prime}(Q) = C^{\\prime}(Q)
+$$
+
+$$
+R(Q) = C(Q)
+$$
+
+$$
+R^{\\prime} = C^{\\prime}
+$$
 
 So the statement is False.`
     ],
@@ -4928,6 +6356,10 @@ Picture a profit hill whose peak sits at height $50$: the tangent is flat ($P^{\
 
 Matching the claim against that reasoning confirms the verdict is False once the right derivative (or the right expand-or-not comparison) is in view.
 
+$$
+P^{\\prime}(Q^{\\ast}) = 0
+$$
+
 So the statement is False.`,
       `**C.** → True
 
@@ -4938,6 +6370,22 @@ The stationarity condition $P^{\\prime}(Q^{\\ast})=0$ constrains the derivatives
 Break-even is the separate level condition $P(Q^{\\ast})=0$, equivalently $R(Q^{\\ast})=C(Q^{\\ast})$ — not implied by $P^{\\prime}=0$.
 
 Matching the claim against that reasoning confirms the verdict is True once the right derivative (or the right expand-or-not comparison) is in view.
+
+$$
+R(Q^{\\ast}) = C(Q^{\\ast})
+$$
+
+$$
+P^{\\prime}(Q^{\\ast}) = 0
+$$
+
+$$
+P(Q^{\\ast}) = 0
+$$
+
+$$
+P^{\\prime} = 0
+$$
 
 So the statement is True.`,
       `**D.** → True
@@ -4950,6 +6398,16 @@ A flat tangent can sit at the top of a hill, at the bottom of a valley, or on a 
 
 Matching the claim against that reasoning confirms the verdict is True once the right derivative (or the right expand-or-not comparison) is in view.
 
+$$
+P^{\\prime}(Q^{\\ast}) = 0
+$$
+
+$$
+P'(Q^{\\ast}) = 0
+$$
+
+which matches the claim.
+
 So the statement is True.`,
       `**E.** → True
 
@@ -4960,6 +6418,16 @@ That sign change marks a local profit maximum
 That $+\\to -$ pattern is the first-derivative test for a local max; together with $P^{\\prime}(Q^{\\ast})=0$ it settles the local classification.
 
 Matching the claim against that reasoning confirms the verdict is True once the right derivative (or the right expand-or-not comparison) is in view.
+
+$$
+P^{\\prime}(Q^{\\ast}) = 0
+$$
+
+$$
+P'(Q^{\\ast}) = 0
+$$
+
+which matches the claim.
 
 So the statement is True.`
     ],
@@ -5073,6 +6541,10 @@ Mixing the two is the classic MC-versus-AC trap: one governs expand-or-not cost 
 
 Matching the claim against that reasoning confirms the verdict is True once the right derivative (or the right expand-or-not comparison) is in view.
 
+$$
+A(Q) = \\dfrac{C(Q)}{Q}
+$$
+
 So the statement is True.`,
       `**B.** → False
 
@@ -5084,6 +6556,16 @@ A standard textbook picture has the MC curve cut through the bottom of the AC cu
 
 Matching the claim against that reasoning confirms the verdict is False once the right derivative (or the right expand-or-not comparison) is in view.
 
+$$
+A(Q) = C^{\\prime}(Q)
+$$
+
+$$
+A(Q) = C'(Q)
+$$
+
+which does not match the claim.
+
 So the statement is False.`,
       `**C.** → False
 
@@ -5094,6 +6576,18 @@ Setting marginal cost to zero is a different decision problem
 Setting $C^{\\prime}=0$ would ask where total cost is locally flat, which is unrelated to minimizing cost per unit.
 
 Matching the claim against that reasoning confirms the verdict is False once the right derivative (or the right expand-or-not comparison) is in view.
+
+$$
+C^{\\prime}(Q) = A(Q)
+$$
+
+$$
+C^{\\prime}(Q) = 0
+$$
+
+$$
+C^{\\prime} = 0
+$$
 
 So the statement is False.`,
       `**D.** → True
@@ -5114,6 +6608,16 @@ That crossing rule — MC $=$ AC at the AC minimum — is the standard first-ord
 
 Matching the claim against that reasoning confirms the verdict is True once the right derivative (or the right expand-or-not comparison) is in view.
 
+$$
+C'(Q) = A(Q)
+$$
+
+$$
+A(Q) = \\dfrac{C(Q)}{Q}
+$$
+
+which matches the claim.
+
 So the statement is True.`,
       `**E.** → False
 
@@ -5121,9 +6625,21 @@ Falling average cost means $A^{\\prime}(Q)<0$, which is equivalent to $C^{\\prim
 
 Marginal cost can still be positive while lying below the average; falling average cost does not force $C^{\\prime}(Q)<0$
 
-Example: $C^{\\prime}=5$ and $A=8$ gives $A^{\\prime}<0$ while cost is still rising in total; positivity of MC is compatible with falling AC.
+Example: $C^{\\prime}=5$ and $A=8$ gives
+
+$$
+A^{\\prime}<0
+$$ while cost is still rising in total; positivity of MC is compatible with falling AC.
 
 Matching the claim against that reasoning confirms the verdict is False once the right derivative (or the right expand-or-not comparison) is in view.
+
+$$
+C^{\\prime} = 5
+$$
+
+$$
+A = 8
+$$
 
 So the statement is False.`
     ],
@@ -5199,6 +6715,12 @@ For a quadratic piece of cost, for instance, the exact one-unit difference and $
 
 Matching the claim against that reasoning confirms the verdict is True once the right derivative (or the right expand-or-not comparison) is in view.
 
+$$
+\\Delta Q = 1
+$$
+
+which matches the claim.
+
 So the statement is True.`,
       `**D.** → True
 
@@ -5228,6 +6750,10 @@ Knowing $C(Q+1)-C(Q)$ does not make $C^{\\prime}(Q)$ unnecessary for finer or no
 Optimization conditions such as $R^{\\prime}=C^{\\prime}$ are stated with derivatives; a single one-unit difference cannot replace that language.
 
 Matching the claim against that reasoning confirms the verdict is False once the right derivative (or the right expand-or-not comparison) is in view.
+
+$$
+R^{\\prime} = C^{\\prime}
+$$
 
 So the statement is False.`
     ],
@@ -5267,6 +6793,10 @@ Reading $p(Q)$ alone would miss the inframarginal price-pressure term $Q\\,p^{\\
 
 Matching the claim against that reasoning confirms the verdict is True once the right derivative (or the right expand-or-not comparison) is in view.
 
+$$
+R(Q) = Q\\cdot p(Q)
+$$
+
 So the statement is True.`,
       `**B.** → True
 
@@ -5300,16 +6830,28 @@ With constant $p$ one still writes $R(Q)=pQ$ and obtains $R^{\\prime}=p$; quanti
 
 Matching the claim against that reasoning confirms the verdict is False once the right derivative (or the right expand-or-not comparison) is in view.
 
+$$
+R(Q) = Q\\cdot p
+$$
+
 So the statement is False.`,
       `**E.** → True
 
-When price must fall to sell more, the product rule generally gives $R^{\\prime}(Q)\\neq p(Q)$.
+When price must fall to sell more, the product rule generally gives
+
+$$
+R^{\\prime}(Q)\\neq p(Q)
+$$.
 
 A blanket claim that marginal revenue always equals price is therefore false in that setting
 
 The true special case where MR equals price is the flat-price (perfectly elastic) schedule $p^{\\prime}=0$, not a general law.
 
 Matching the claim against that reasoning confirms the verdict is True once the right derivative (or the right expand-or-not comparison) is in view.
+
+$$
+p^{\\prime} = 0
+$$
 
 So the statement is True.`
     ],
@@ -5349,6 +6891,18 @@ Once profit is written out, the correct derivative is $P^{\\prime}(Q)=32-2Q$, wh
 
 Matching the claim against that reasoning confirms the verdict is True once the right derivative (or the right expand-or-not comparison) is in view.
 
+$$
+P(Q) = Q\\cdot p(Q)-C(Q)
+$$
+
+$$
+P^{\\prime}(Q) = 32-2Q
+$$
+
+$$
+p^{\\prime} = -1
+$$
+
 So the statement is True.`,
       `**B.** → True
 
@@ -5387,7 +6941,11 @@ $$
 
 which is exactly the claimed revenue function
 
-Differentiating that revenue later gives $R^{\\prime}(Q)=40-2Q$, which already differs from the price $p(Q)=40-Q$.
+Differentiating that revenue later gives
+
+$$
+R^{\\prime}(Q) = 40-2Q
+$$, which already differs from the price $p(Q)=40-Q$.
 
 Matching the claim against that reasoning confirms the verdict is True once the right derivative (or the right expand-or-not comparison) is in view.
 
@@ -5410,6 +6968,16 @@ The fixed cost $20$ shifts the profit level but will drop out upon differentiati
 
 Matching the claim against that reasoning confirms the verdict is True once the right derivative (or the right expand-or-not comparison) is in view.
 
+$$
+R(Q) = 40Q-Q^{2}
+$$
+
+$$
+C(Q) = 8Q+20
+$$
+
+which matches the claim.
+
 So the statement is True.`,
       `**E.** → True
 
@@ -5428,6 +6996,12 @@ That is the correct marginal profit, not the consultant's $p^{\\prime}(Q)=-1$
 Setting $P^{\\prime}(Q)=0$ would give the candidate $Q=16$; the consultant's $p^{\\prime}=-1$ never even produces a critical point of profit.
 
 Matching the claim against that reasoning confirms the verdict is True once the right derivative (or the right expand-or-not comparison) is in view.
+
+$$
+P'(Q) = 32-2Q
+$$
+
+which matches the claim.
 
 So the statement is True.`
     ],
@@ -5472,7 +7046,11 @@ So the statement is True.`,
 The average tax rate is the quotient of tax owed by income:
 
 $$
-\\dfrac{T(y)}{y}\\qquad(y>0)
+\\dfrac{T(y)}{y}
+$$
+
+$$
+(y>0)
 $$
 
 That is precisely the fraction of income paid in tax overall, which is a different object from the marginal rate $T^{\\prime}(y)$
@@ -5480,6 +7058,20 @@ That is precisely the fraction of income paid in tax overall, which is a differe
 If $T(y)=9000$ on income $y=30000$, the average rate is $9000/30000=0.3$, a fraction of income — not a statement about the next euro.
 
 Matching the claim against that reasoning confirms the verdict is True once the right derivative (or the right expand-or-not comparison) is in view.
+
+$$
+T(y) = 9000
+$$
+
+$$
+y = 30000
+$$
+
+$$
+9000/30000 = 0.3
+$$
+
+which matches the claim.
 
 So the statement is True.`,
       `**C.** → False
@@ -5502,6 +7094,16 @@ That is about $30$ cents of each extra euro taxed away
 With $\\Delta y=1$ the approximation says about $0.30$ euros of extra tax — thirty cents of each extra euro taxed away.
 
 Matching the claim against that reasoning confirms the verdict is True once the right derivative (or the right expand-or-not comparison) is in view.
+
+$$
+T^{\\prime}(y) = 0.3
+$$
+
+$$
+T'(y) = 0.3
+$$
+
+which matches the claim.
 
 So the statement is True.`,
       `**E.** → False
@@ -5566,6 +7168,16 @@ About one fifth of a small increase in national product is therefore saved
 With $\\Delta Y=10$, about $2$ units of the extra product are saved; the fraction $0.2$ is the local saving response.
 
 Matching the claim against that reasoning confirms the verdict is True once the right derivative (or the right expand-or-not comparison) is in view.
+
+$$
+S^{\\prime}(Y) = 0.2
+$$
+
+$$
+S'(Y) = 0.2
+$$
+
+which matches the claim.
 
 So the statement is True.`,
       `**C.** → False
@@ -5690,6 +7302,10 @@ A U-shaped cost curve returns to the same height on either side of its minimum w
 
 Matching the claim against that reasoning confirms the verdict is False once the right derivative (or the right expand-or-not comparison) is in view.
 
+$$
+C(Q_a) = C(Q_b)
+$$
+
 So the statement is False.`
     ],
     difficulty_level: "1/5",
@@ -5726,6 +7342,24 @@ If cost depends on $Q$, the zeros of $P^{\\prime}=R^{\\prime}-C^{\\prime}$ and o
 
 Matching the claim against that reasoning confirms the verdict is True once the right derivative (or the right expand-or-not comparison) is in view.
 
+$$
+P^{\\prime}(Q) = 0
+$$
+
+$$
+R^{\\prime}(Q) = 0
+$$
+
+$$
+P'(Q) = 0
+$$
+
+$$
+R'(Q) = 0
+$$
+
+which matches the claim.
+
 So the statement is True.`,
       `**B.** → False
 
@@ -5737,6 +7371,12 @@ A revenue peak with rising cost already has $P^{\\prime}=-C^{\\prime}<0$, so pro
 
 Matching the claim against that reasoning confirms the verdict is False once the right derivative (or the right expand-or-not comparison) is in view.
 
+$$
+P^{\\prime} = -C^{\\prime}<0
+$$
+
+which does not match the claim.
+
 So the statement is False.`,
       `**C.** → True
 
@@ -5747,6 +7387,10 @@ If cost rises with output, the revenue-maximizing output can therefore differ fr
 Typically the profit-maximizing output is smaller than the revenue-maximizing output when $C^{\\prime}>0$.
 
 Matching the claim against that reasoning confirms the verdict is True once the right derivative (or the right expand-or-not comparison) is in view.
+
+$$
+P^{\\prime} = R^{\\prime}-C^{\\prime}
+$$
 
 So the statement is True.`,
       `**D.** → True
@@ -5762,6 +7406,20 @@ which is the required first-order condition
 That MR$=$MC rearrangement is the standard first-order condition for an interior profit maximum.
 
 Matching the claim against that reasoning confirms the verdict is True once the right derivative (or the right expand-or-not comparison) is in view.
+
+$$
+R'(Q) = C'(Q)
+$$
+
+$$
+P^{\\prime}(Q) = 0
+$$
+
+$$
+P^{\\prime} = R^{\\prime}-C^{\\prime}
+$$
+
+which matches the claim.
 
 So the statement is True.`,
       `**E.** → True
@@ -5824,6 +7482,10 @@ The negative sign records direction (outflow); the magnitude $3$ is the depletio
 
 Keep level-versus-slope discipline: stocks such as $C$, $R$, $P$, or $U$ are heights; marginal objects are slopes of those graphs.
 
+$$
+|x^{\\prime}(0)| = 3
+$$
+
 So the statement is True.`,
       `**B.** → False
 
@@ -5835,6 +7497,12 @@ One could have $x(0)=500$ barrels remaining while $x^{\\prime}(0)=-3$; the deriv
 
 Matching the claim against that reasoning confirms the verdict is False once the right derivative (or the right expand-or-not comparison) is in view.
 
+$$
+x'(0) = -3
+$$
+
+which does not match the claim.
+
 So the statement is False.`,
       `**C.** → True
 
@@ -5845,6 +7513,14 @@ Hence $x^{\\prime}(0)=-3$ indicates that the stock of remaining oil is decreasin
 In plain language: the well is being drained at $t=0$, even though plenty of oil may still be underground.
 
 Matching the claim against that reasoning confirms the verdict is True once the right derivative (or the right expand-or-not comparison) is in view.
+
+$$
+x^{\\prime}(0) = -3
+$$
+
+$$
+t = 0
+$$
 
 So the statement is True.`,
       `**D.** → True
@@ -5884,6 +7560,10 @@ A decreasing positive quantity stays positive until it actually crosses zero —
 
 Matching the claim against that reasoning confirms the verdict is False once the right derivative (or the right expand-or-not comparison) is in view.
 
+$$
+t = 0
+$$
+
 So the statement is False.`
     ],
     difficulty_level: "2/5",
@@ -5918,6 +7598,10 @@ That is the standard one-unit reading of $R^{\\prime}(80)=12$ through $R(81)-R(8
 
 Keep level-versus-slope discipline: stocks such as $C$, $R$, $P$, or $U$ are heights; marginal objects are slopes of those graphs.
 
+$$
+R^{\\prime}(80) = 12
+$$
+
 So the statement is True.`,
       `**B.** → False
 
@@ -5928,6 +7612,16 @@ Neither of those is given by the marginal-revenue report $R^{\\prime}(80)=12$
 Under downward-sloping demand one typically has $R^{\\prime}<p$, so $12$ would understate the sticker price even if price were constant across tickets — and here price is not given at all.
 
 Matching the claim against that reasoning confirms the verdict is False once the right derivative (or the right expand-or-not comparison) is in view.
+
+$$
+R^{\\prime}(80) = 12
+$$
+
+$$
+R'(80) = 12
+$$
+
+which does not match the claim.
 
 So the statement is False.`,
       `**C.** → True
@@ -5940,6 +7634,10 @@ Many different $p(Q)$ can share the same product-rule value $R^{\\prime}(80)=12$
 
 Matching the claim against that reasoning confirms the verdict is True once the right derivative (or the right expand-or-not comparison) is in view.
 
+$$
+R^{\\prime}(80) = 12
+$$
+
 So the statement is True.`,
       `**D.** → True
 
@@ -5951,6 +7649,14 @@ $$
 
 $$
 P^{\\prime}(80) = 12-15
+$$
+
+$$
+12 - 15 = -3
+$$
+
+$$
+P^{\\prime}(80) = -3
 $$
 
 $$
@@ -5978,6 +7684,14 @@ If marginal cost at $80$ tickets is $9$, then
 
 $$
 P^{\\prime}(80) = 12-9
+$$
+
+$$
+12 - 9 = 3
+$$
+
+$$
+P^{\\prime}(80) = 3
 $$
 
 $$
@@ -6045,6 +7759,10 @@ The two writings are interchangeable through $P^{\\prime}=R^{\\prime}-C^{\\prime
 
 Matching the claim against that reasoning confirms the verdict is True once the right derivative (or the right expand-or-not comparison) is in view.
 
+$$
+P^{\\prime} = R^{\\prime}-C^{\\prime}
+$$
+
 So the statement is True.`,
       `**C.** → False
 
@@ -6074,6 +7792,12 @@ Marginal profit is zero there
 That is the boundary case of the expand-or-not test: neither a clear expand nor a clear cut on the first-order criterion.
 
 Keep level-versus-slope discipline: stocks such as $C$, $R$, $P$, or $U$ are heights; marginal objects are slopes of those graphs.
+
+$$
+R^{\\prime}(Q) = C^{\\prime}(Q)
+$$
+
+which matches the claim.
 
 So the statement is True.`,
       `**E.** → True
@@ -6122,6 +7846,10 @@ Critical points of $U$ solve $U^{\\prime}=0$; critical points of $A$ solve $U^{\
 
 Matching the claim against that reasoning confirms the verdict is True once the right derivative (or the right expand-or-not comparison) is in view.
 
+$$
+A(x) = \\dfrac{U(x)}{x}
+$$
+
 So the statement is True.`,
       `**B.** → False
 
@@ -6132,6 +7860,18 @@ An interior maximum of average satisfaction instead requires $U^{\\prime}(x)=A(x
 At a bliss point of total utility one may have $U^{\\prime}=0$ while $A=U/x>0$, so $A^{\\prime}\\neq 0$ and average is not maximized there.
 
 Matching the claim against that reasoning confirms the verdict is False once the right derivative (or the right expand-or-not comparison) is in view.
+
+$$
+U^{\\prime}(x) = 0
+$$
+
+$$
+U^{\\prime}(x) = A(x)
+$$
+
+$$
+U^{\\prime} = 0
+$$
 
 So the statement is False.`,
       `**C.** → True
@@ -6152,6 +7892,24 @@ That parallel to the cost rule MC$=$AC at the AC minimum is intentional: the sam
 
 Matching the claim against that reasoning confirms the verdict is True once the right derivative (or the right expand-or-not comparison) is in view.
 
+$$
+A'(x) = 0
+$$
+
+$$
+U'(x) = A(x)
+$$
+
+$$
+A = \\dfrac{U}{x}
+$$
+
+$$
+A^{\\prime} = 0
+$$
+
+which matches the claim.
+
 So the statement is True.`,
       `**D.** → True
 
@@ -6162,6 +7920,16 @@ Hence $U^{\\prime}(x)=0$ means a tiny change in study time leaves satisfaction l
 Through the linear approximation, $U(x+\\Delta x)-U(x)\\approx 0$ for small $\\Delta x$ — a flat spot of total satisfaction.
 
 Matching the claim against that reasoning confirms the verdict is True once the right derivative (or the right expand-or-not comparison) is in view.
+
+$$
+U^{\\prime}(x) = 0
+$$
+
+$$
+U'(x) = 0
+$$
+
+which matches the claim.
 
 So the statement is True.`,
       `**E.** → False
@@ -6312,6 +8080,12 @@ Any other combination such as $18-11=6$ would have been inconsistent with the po
 
 Keep level-versus-slope discipline: stocks such as $C$, $R$, $P$, or $U$ are heights; marginal objects are slopes of those graphs.
 
+$$
+P^{\\prime} = R^{\\prime}-C^{\\prime}
+$$
+
+which matches the claim.
+
 So the statement is True.`,
       `**B.** → True
 
@@ -6362,6 +8136,14 @@ $$
 
 $$
 P^{\\prime}(Q) = 11-18
+$$
+
+$$
+11 - 18 = -7
+$$
+
+$$
+P^{\\prime}(Q) = -7
 $$
 
 $$
@@ -6425,6 +8207,14 @@ P_A^{\\prime}(10) = 9-6
 $$
 
 $$
+9 - 6 = 3
+$$
+
+$$
+P_A^{\\prime}(10) = 3
+$$
+
+$$
 = 3
 $$
 
@@ -6453,6 +8243,14 @@ $$
 
 $$
 P_B^{\\prime}(10) = 5-7
+$$
+
+$$
+5 - 7 = -2
+$$
+
+$$
+P_B^{\\prime}(10) = -2
 $$
 
 $$
@@ -6524,6 +8322,14 @@ Here the larger stock belongs to the bakery with the worse (negative) marginal p
 
 Matching the claim against that reasoning confirms the verdict is False once the right derivative (or the right expand-or-not comparison) is in view.
 
+$$
+P_B(10) = 90
+$$
+
+$$
+P_B^{\\prime}(10) = -2
+$$
+
 So the statement is False.`
     ],
     difficulty_level: "4/5",
@@ -6555,7 +8361,11 @@ with stock $P_B(10)=90$. So a small extra cake raises A's profit by about $3$ eu
 On the regular-crew piece the cost rule is the straight line $C(Q)=12Q$. Differentiating that piece gives
 
 $$
-C^{\\prime}(Q) = 12\\qquad\\text{for }Q<50
+C^{\\prime}(Q) = 12
+$$
+
+$$
+\\text{for }Q<50
 $$
 
 Before overtime kicks in, each extra unit adds $12$ euros of cost
@@ -6577,7 +8387,11 @@ $$
 C(Q) = 20Q-400
 $$
 
-Differentiating the overtime piece gives $C^{\\prime}(Q)=20$ for $Q>50$. Relative to the regular-crew slope $12$,
+Differentiating the overtime piece gives
+
+$$
+C^{\\prime}(Q) = 20
+$$ for $Q>50$. Relative to the regular-crew slope $12$,
 
 $$
 20-12 = 8
@@ -6596,6 +8410,14 @@ Just above $Q=50$ the workshop is already on overtime, so $C^{\\prime}(Q)=20$. M
 
 $$
 R^{\\prime}(Q)-C^{\\prime}(Q) = 16-20
+$$
+
+$$
+16 - 20 = -4
+$$
+
+$$
+R^{\\prime}(Q)-C^{\\prime}(Q) = -4
 $$
 
 $$
@@ -6627,6 +8449,14 @@ $$
 
 $$
 P^{\\prime}(40) = 16-12
+$$
+
+$$
+16 - 12 = 4
+$$
+
+$$
+P^{\\prime}(40) = 4
 $$
 
 $$
@@ -6706,6 +8536,14 @@ R^{\\prime}(Q) = 4+11
 $$
 
 $$
+4 + 11 = 15
+$$
+
+$$
+R^{\\prime}(Q) = 15
+$$
+
+$$
 = 15
 $$
 
@@ -6734,14 +8572,42 @@ The expand-or-not advice is immediate from the posted $P^{\\prime}=4>0$, without
 
 Matching the claim against that reasoning confirms the verdict is True once the right derivative (or the right expand-or-not comparison) is in view.
 
+$$
+P^{\\prime}(Q) = 4>0
+$$
+
+$$
+P^{\\prime} = 4>0
+$$
+
 So the statement is True.`,
       `**C.** → False
 
 The posted pair determines only $R^{\\prime}(Q)=15$; it does not determine the price schedule $p(Q)$.
 
-Even if someone writes $p(Q)=30-\\dfrac{Q}{10}$, under a downward-sloping price the product rule usually gives $R^{\\prime}(Q)=p(Q)+Q\\,p^{\\prime}(Q)<p(Q)$, and price and marginal revenue are different objects. The whiteboard does not force $p(Q)=R^{\\prime}(Q)$
+Even if someone writes $p(Q)=30-\\dfrac{Q}{10}$, under a downward-sloping price the product rule usually gives
+
+$$
+R^{\\prime}(Q) = p(Q)+Q\\,p^{\\prime}(Q)<p(Q)
+$$, and price and marginal revenue are different objects. The whiteboard does not force $p(Q)=R^{\\prime}(Q)$
 
 Even evaluating the invented $p$ at some $Q$ would generally fail to match $R^{\\prime}=15$; price and MR are different objects.
+
+$$
+R^{\\prime}(Q) = 15
+$$
+
+$$
+p(Q) = 30-\\dfrac{Q}{10}
+$$
+
+$$
+R^{\\prime}(Q) = p(Q)+Q\\,p^{\\prime}(Q)<p(Q)
+$$
+
+$$
+p(Q) = R^{\\prime}(Q)
+$$
 
 So the statement is False.`,
       `**D.** → True
@@ -6754,6 +8620,16 @@ The kiosk could be earning $2$ euros or $200$ euros of profit while the slope re
 
 Matching the claim against that reasoning confirms the verdict is True once the right derivative (or the right expand-or-not comparison) is in view.
 
+$$
+P^{\\prime}(Q) = 4
+$$
+
+$$
+P'(Q) = 4
+$$
+
+which matches the claim.
+
 So the statement is True.`,
       `**E.** → True
 
@@ -6765,6 +8641,10 @@ $$
 
 $$
 R^{\\prime}(Q) = -4+11
+$$
+
+$$
+-4 + 11 = 7
 $$
 
 $$
@@ -6812,6 +8692,10 @@ Cinema A reports $R_A^{\\prime}(Q_A)=7$, and the extra ticket is worth about $7$
 
 The $5$-euro gap between price $12$ and extra revenue $7$ is exactly the inframarginal price-pressure effect on previous seats.
 
+$$
+R_A^{\\prime}(Q_A) = 7
+$$
+
 So the statement is True.`,
       `**B.** → True
 
@@ -6822,6 +8706,26 @@ Cinema B reports $R_B^{\\prime}(Q_B)=10=p_B$, which is exactly that situation
 In the product rule, $R^{\\prime}=p$ when $p^{\\prime}=0$; B's reports match that flat-price reading.
 
 Matching the claim against that reasoning confirms the verdict is True once the right derivative (or the right expand-or-not comparison) is in view.
+
+$$
+R^{\\prime}(Q) = p(Q)
+$$
+
+$$
+R_B^{\\prime}(Q_B) = 10
+$$
+
+$$
+= p_B
+$$
+
+$$
+R^{\\prime} = p
+$$
+
+$$
+p^{\\prime} = 0
+$$
 
 So the statement is True.`,
       `**C.** → False
@@ -6834,6 +8738,14 @@ $$
 
 $$
 P_A^{\\prime}(Q_A) = 7-8
+$$
+
+$$
+7 - 8 = -1
+$$
+
+$$
+P_A^{\\prime}(Q_A) = -1
 $$
 
 $$
@@ -6868,6 +8780,14 @@ P_B^{\\prime}(Q_B) = 10-8
 $$
 
 $$
+10 - 8 = 2
+$$
+
+$$
+P_B^{\\prime}(Q_B) = 2
+$$
+
+$$
 = 2
 $$
 
@@ -6895,6 +8815,14 @@ P_A^{\\prime}(Q_A) = 7-8
 $$
 
 $$
+7 - 8 = -1
+$$
+
+$$
+P_A^{\\prime}(Q_A) = -1
+$$
+
+$$
 = -1
 $$
 
@@ -6908,6 +8836,14 @@ $$
 
 $$
 P_B^{\\prime}(Q_B) = 10-8
+$$
+
+$$
+10 - 8 = 2
+$$
+
+$$
+P_B^{\\prime}(Q_B) = 2
 $$
 
 $$
@@ -6963,7 +8899,11 @@ So B should expand a little while A should not. Comparing posted prices $p_A>p_B
 On the happy-hour piece, revenue is the straight line $R(Q)=15Q$. Differentiating gives
 
 $$
-R^{\\prime}(Q) = 15\\qquad\\text{for }Q<20
+R^{\\prime}(Q) = 15
+$$
+
+$$
+\\text{for }Q<20
 $$
 
 For $Q<20$, marginal revenue is $15$
@@ -6978,10 +8918,18 @@ So the statement is True.`,
 After the twentieth drink, revenue is $R(Q)=300+8(Q-20)$, so
 
 $$
-R^{\\prime}(Q) = 8\\qquad\\text{for }Q>20
+R^{\\prime}(Q) = 8
 $$
 
-Comparing with the constant marginal cost $C^{\\prime}(Q)=10$ gives $8<10$: each post-promotion drink adds only $8$ euros of revenue, already below cost at the margin
+$$
+\\text{for }Q>20
+$$
+
+Comparing with the constant marginal cost $C^{\\prime}(Q)=10$ gives
+
+$$
+8<10
+$$: each post-promotion drink adds only $8$ euros of revenue, already below cost at the margin
 
 Post-promotion, the expand-or-not test already fails: extra revenue $8$ lies below extra cost $10$.
 
@@ -6998,6 +8946,14 @@ $$
 
 $$
 P^{\\prime}(12) = 15-10
+$$
+
+$$
+15 - 10 = 5
+$$
+
+$$
+P^{\\prime}(12) = 5
 $$
 
 $$
@@ -7028,6 +8984,14 @@ P^{\\prime}(25) = 8-10
 $$
 
 $$
+8 - 10 = -2
+$$
+
+$$
+P^{\\prime}(25) = -2
+$$
+
+$$
 = -2
 $$
 
@@ -7050,7 +9014,11 @@ So the statement is False.`,
 
 The $15$-euro figure applies only on the happy-hour piece $Q\\le 20$.
 
-At $Q=25$ the manager's post-promotion rule already gives $R^{\\prime}(25)=8$, not $15$, and the extra drink does not bring in $15$ euros
+At $Q=25$ the manager's post-promotion rule already gives
+
+$$
+R^{\\prime}(25) = 8
+$$, not $15$, and the extra drink does not bring in $15$ euros
 
 Piecewise schedules require reading the piece that contains the named output; $Q=25$ sits on the $8$-euro piece.
 
@@ -7107,6 +9075,16 @@ Rearranging $P^{\\prime}=R^{\\prime}-14>0$ forces the lower bound $R^{\\prime}>1
 
 Matching the claim against that reasoning confirms the verdict is True once the right derivative (or the right expand-or-not comparison) is in view.
 
+$$
+P^{\\prime} = R^{\\prime}-C^{\\prime}
+$$
+
+$$
+C^{\\prime}(Q) = 14
+$$
+
+which matches the claim.
+
 So the statement is True.`,
       `**C.** → False
 
@@ -7140,6 +9118,10 @@ Claiming $R^{\\prime}=11$ would force $P^{\\prime}=11-14=-3<0$, contradicting th
 
 Matching the claim against that reasoning confirms the verdict is True once the right derivative (or the right expand-or-not comparison) is in view.
 
+$$
+R^{\\prime}(Q) = 11
+$$
+
 So the statement is True.`
     ],
     difficulty_level: "4/5",
@@ -7172,6 +9154,14 @@ Producing the extra unit in Plant 1 adds about $R'=11$ euros of revenue and abou
 
 $$
 P^{\\prime}\\text{ via Plant 1} = 11-9
+$$
+
+$$
+11 - 9 = 2
+$$
+
+$$
+P^{\\prime}\\text{ via Plant 1} = 2
 $$
 
 $$
@@ -7209,6 +9199,12 @@ Same market revenue does not erase a cost disadvantage; Plant 2 fails $R'>C_2'$ 
 
 Matching the claim against that reasoning confirms the verdict is False once the right derivative (or the right expand-or-not comparison) is in view.
 
+$$
+R' = 11
+$$
+
+which does not match the claim.
+
 So the statement is False.`,
       `**C.** → True
 
@@ -7219,6 +9215,14 @@ Plant 1 has $C_1^{\\prime}=9<13=C_2^{\\prime}$, and Plant 1 is preferred for tha
 With a common $R'$, minimizing marginal cost across plants is exactly the profit-maximizing assignment of the extra unit.
 
 Matching the claim against that reasoning confirms the verdict is True once the right derivative (or the right expand-or-not comparison) is in view.
+
+$$
+C_1^{\\prime} = 9<13
+$$
+
+$$
+= C_2^{\\prime}
+$$
 
 So the statement is True.`,
       `**D.** → False
@@ -7249,6 +9253,12 @@ Neither plant should produce the extra unit
 When $R'=8$ lies below both plants' marginal costs, the expand-or-not test fails everywhere and the unit should not be produced.
 
 Matching the claim against that reasoning confirms the verdict is True once the right derivative (or the right expand-or-not comparison) is in view.
+
+$$
+R' = 8
+$$
+
+which matches the claim.
 
 So the statement is True.`
     ],
@@ -7282,7 +9292,11 @@ $$8-9<0,\\qquad 8-13<0.$$ Common $R'=11$: Plant 1 ($C'=9$) raises profit, Plant 
 On the first bracket, $T(y)=\\dfrac{1}{5}y$. Differentiating gives
 
 $$
-T^{\\prime}(y) = \\dfrac{1}{5}\\qquad\\text{for }y<1000
+T^{\\prime}(y) = \\dfrac{1}{5}
+$$
+
+$$
+\\text{for }y<1000
 $$
 
 For $y<1000$ the marginal tax rate is $\\dfrac{1}{5}$
@@ -7291,13 +9305,23 @@ On the first bracket the tax rule is a ray through the origin with slope $1/5$, 
 
 Matching the claim against that reasoning confirms the verdict is True once the right derivative (or the right expand-or-not comparison) is in view.
 
+$$
+T(y) = \\dfrac{1}{5}y
+$$
+
+which matches the claim.
+
 So the statement is True.`,
       `**B.** → True
 
 Above $1000$ euros the tax rule is $T(y)=200+\\dfrac{2}{5}(y-1000)$, so
 
 $$
-T^{\\prime}(y) = \\dfrac{2}{5}\\qquad\\text{for }y>1000
+T^{\\prime}(y) = \\dfrac{2}{5}
+$$
+
+$$
+\\text{for }y>1000
 $$
 
 Crossing $y=1000$ therefore raises the tax on an extra euro from one fifth to two fifths
@@ -7305,6 +9329,16 @@ Crossing $y=1000$ therefore raises the tax on an extra euro from one fifth to tw
 The kink at $y=1000$ is a jump in the marginal rate from $0.2$ to $0.4$, while the tax level $T$ itself stays continuous.
 
 Matching the claim against that reasoning confirms the verdict is True once the right derivative (or the right expand-or-not comparison) is in view.
+
+$$
+y = 1000
+$$
+
+$$
+T(y) = 200+\\dfrac{2}{5}(y-1000)
+$$
+
+which matches the claim.
 
 So the statement is True.`,
       `**C.** → False
@@ -7317,6 +9351,14 @@ $$
 
 $$
 T(1500) = 200+200
+$$
+
+$$
+200 + 200 = 400
+$$
+
+$$
+T(1500) = 400
 $$
 
 $$
@@ -7356,6 +9398,22 @@ That is the one-euro reading of the second-bracket slope $T^{\\prime}(1500)=2/5$
 
 Keep level-versus-slope discipline: stocks such as $C$, $R$, $P$, or $U$ are heights; marginal objects are slopes of those graphs.
 
+$$
+y = 1500
+$$
+
+$$
+T^{\\prime}(y) = \\dfrac{2}{5}
+$$
+
+$$
+= 0.4
+$$
+
+$$
+T^{\\prime}(1500) = 2/5
+$$
+
 So the statement is True.`,
       `**E.** → False
 
@@ -7366,6 +9424,16 @@ It does not by itself recover the second-bracket slope $\\dfrac{2}{5}$; many sch
 The average $4/15$ is compatible with many local slopes; recovering $2/5$ needs the bracket formula, not the average alone.
 
 Matching the claim against that reasoning confirms the verdict is False once the right derivative (or the right expand-or-not comparison) is in view.
+
+$$
+\\dfrac{T(1500)}{1500} = \\dfrac{4}{15}
+$$
+
+$$
+y = 1500
+$$
+
+which does not match the claim.
 
 So the statement is False.`
     ],
@@ -7405,6 +9473,18 @@ From $A^{\\prime}=(C^{\\prime}-A)/Q$, the sign $A^{\\prime}<0$ is exactly the in
 
 Matching the claim against that reasoning confirms the verdict is True once the right derivative (or the right expand-or-not comparison) is in view.
 
+$$
+A(Q) = 12
+$$
+
+$$
+A^{\\prime} = (C^{\\prime}-A)/Q
+$$
+
+$$
+C^{\\prime}<A = 12
+$$
+
 So the statement is True.`,
       `**B.** → False
 
@@ -7416,6 +9496,10 @@ The open interval $(10,12)$ is still available for $C^{\\prime}$: average cost f
 
 Matching the claim against that reasoning confirms the verdict is False once the right derivative (or the right expand-or-not comparison) is in view.
 
+$$
+R^{\\prime}(Q) = 10
+$$
+
 So the statement is False.`,
       `**C.** → False
 
@@ -7424,6 +9508,10 @@ Profit rises locally only when $R^{\\prime}>C^{\\prime}$. Here $R^{\\prime}=10$ 
 If $C^{\\prime}$ lies between $10$ and $12$, then $P^{\\prime}<0$ even while average cost falls, and the reports do not already imply $P^{\\prime}(Q)>0$
 
 Falling AC is not an expand signal; only $R^{\\prime}>C^{\\prime}$ is, and that comparison is not settled by $C^{\\prime}<12$ alone.
+
+$$
+R^{\\prime} = 10
+$$
 
 So the statement is False.`,
       `**D.** → True
@@ -7436,6 +9524,26 @@ Example: $C^{\\prime}=11$ satisfies $C^{\\prime}<12=A$ (AC falling) and $C^{\\pr
 
 Matching the claim against that reasoning confirms the verdict is True once the right derivative (or the right expand-or-not comparison) is in view.
 
+$$
+C^{\\prime}<A = 12
+$$
+
+$$
+C^{\\prime}<R^{\\prime} = 10
+$$
+
+$$
+C^{\\prime} = 11
+$$
+
+$$
+C^{\\prime}<12 = A
+$$
+
+$$
+C^{\\prime}>10 = R^{\\prime}
+$$
+
 So the statement is True.`,
       `**E.** → False
 
@@ -7446,6 +9554,10 @@ Marginal cost is $C^{\\prime}(Q)$, a different object, and differentiating $A$ d
 The object $A^{\\prime}$ describes how average cost moves; marginal cost remains the separate derivative $C^{\\prime}$.
 
 Matching the claim against that reasoning confirms the verdict is False once the right derivative (or the right expand-or-not comparison) is in view.
+
+$$
+A(Q) = \\dfrac{C(Q)}{Q}
+$$
 
 So the statement is False.`
     ],
@@ -7487,6 +9599,12 @@ Equivalently $R_N^{\\prime}-C_N^{\\prime}=30-18=12$; North's marginal profit is 
 
 Keep level-versus-slope discipline: stocks such as $C$, $R$, $P$, or $U$ are heights; marginal objects are slopes of those graphs.
 
+$$
+P_N'(Q) = 12
+$$
+
+which matches the claim.
+
 So the statement is True.`,
       `**B.** → True
 
@@ -7494,6 +9612,14 @@ At $Q=15$, South's posted schedule gives
 
 $$
 P_S^{\\prime}(15) = 20-15
+$$
+
+$$
+20 - 15 = 5
+$$
+
+$$
+P_S^{\\prime}(15) = 5
 $$
 
 $$
@@ -7521,6 +9647,14 @@ At $Q=25$,
 
 $$
 P_S^{\\prime}(25) = 20-25
+$$
+
+$$
+20 - 25 = -5
+$$
+
+$$
+P_S^{\\prime}(25) = -5
 $$
 
 $$
@@ -7552,6 +9686,14 @@ North's stock is $P_N(15)=12\\cdot 15-40=140$, but South's stock is unidentified
 
 Matching the claim against that reasoning confirms the verdict is False once the right derivative (or the right expand-or-not comparison) is in view.
 
+$$
+P_N(15) = 12\\cdot 15-40
+$$
+
+$$
+= 140
+$$
+
 So the statement is False.`,
       `**E.** → True
 
@@ -7563,6 +9705,14 @@ $$
 
 $$
 P_N^{\\prime}(Q) = 30-18
+$$
+
+$$
+30 - 18 = 12
+$$
+
+$$
+P_N^{\\prime}(Q) = 12
 $$
 
 $$
@@ -7614,7 +9764,11 @@ At $Q=15$ one has $P_S^{\\prime}(15)=5>0$ (profit still locally increasing), whi
 On the rising piece, $U(x)=10x-\\dfrac{1}{2}x^{2}$. Differentiating gives
 
 $$
-U^{\\prime}(x) = 10-x\\qquad\\text{for }x<8
+U^{\\prime}(x) = 10-x
+$$
+
+$$
+\\text{for }x<8
 $$
 
 For $x<8$, marginal utility is $U^{\\prime}(x)=10-x$
@@ -7623,6 +9777,16 @@ Marginal utility declines linearly from $10$ at $x=0$ toward $2$ as $x$ approach
 
 Matching the claim against that reasoning confirms the verdict is True once the right derivative (or the right expand-or-not comparison) is in view.
 
+$$
+U'(x) = 10-x
+$$
+
+$$
+U(x) = 10x-\\dfrac{1}{2}x^{2}
+$$
+
+which matches the claim.
+
 So the statement is True.`,
       `**B.** → True
 
@@ -7630,6 +9794,14 @@ At $x=6$,
 
 $$
 U^{\\prime}(6) = 10-6
+$$
+
+$$
+10 - 6 = 4
+$$
+
+$$
+U^{\\prime}(6) = 4
 $$
 
 $$
@@ -7656,7 +9828,11 @@ So the statement is True.`,
 Once $x>8$, utility is the constant $U(x)=48$, so its derivative vanishes:
 
 $$
-U^{\\prime}(x) = 0\\qquad\\text{for }x>8
+U^{\\prime}(x) = 0
+$$
+
+$$
+\\text{for }x>8
 $$
 
 Marginal utility is therefore $0$ beyond eight hours
@@ -7674,6 +9850,14 @@ Approaching $x=8$ from the left,
 
 $$
 U^{\\prime}(8^{-}) = 10-8
+$$
+
+$$
+10 - 8 = 2
+$$
+
+$$
+U^{\\prime}(8^{-}) = 2
 $$
 
 $$
@@ -7712,6 +9896,12 @@ Average utility at $x=12$ equals $4$
 Once utility has flattened, stretching leisure to $12$ hours dilutes the same $48$ utils over more hours, giving average $4$.
 
 Matching the claim against that reasoning confirms the verdict is True once the right derivative (or the right expand-or-not comparison) is in view.
+
+$$
+x = 12
+$$
+
+which matches the claim.
 
 So the statement is True.`
     ],
@@ -7773,6 +9963,14 @@ With $P^{\\prime}=-3<0$ the expand-or-not test fails: printing a little more wou
 
 Keep level-versus-slope discipline: stocks such as $C$, $R$, $P$, or $U$ are heights; marginal objects are slopes of those graphs.
 
+$$
+P^{\\prime}(Q) = -3<0
+$$
+
+$$
+P^{\\prime} = -3<0
+$$
+
 So the statement is False.`,
       `**C.** → True
 
@@ -7780,6 +9978,14 @@ The second printer reports $R^{\\prime}(Q)=16$ and $C^{\\prime}(Q)=16$, so
 
 $$
 P^{\\prime}(Q) = 16-16
+$$
+
+$$
+16 - 16 = 0
+$$
+
+$$
+P^{\\prime}(Q) = 0
 $$
 
 $$
@@ -7811,6 +10017,22 @@ Shared $R^{\\prime}$ is only one ingredient of $P^{\\prime}=R^{\\prime}-C^{\\pri
 
 Matching the claim against that reasoning confirms the verdict is False once the right derivative (or the right expand-or-not comparison) is in view.
 
+$$
+R^{\\prime}(Q) = 16
+$$
+
+$$
+P^{\\prime} = -3
+$$
+
+$$
+P^{\\prime} = 0
+$$
+
+$$
+P^{\\prime} = R^{\\prime}-C^{\\prime}
+$$
+
 So the statement is False.`,
       `**E.** → False
 
@@ -7821,6 +10043,10 @@ The stock $P(Q)$ is a separate number and need not equal $-3$; confusing the slo
 A printer could be earning a large positive profit while sitting on a mildly negative slope of $-3$ — rate $\\neq$ level.
 
 Matching the claim against that reasoning confirms the verdict is False once the right derivative (or the right expand-or-not comparison) is in view.
+
+$$
+P^{\\prime}(Q) = -3
+$$
 
 So the statement is False.`
     ],
@@ -7861,6 +10087,14 @@ P^{\\prime}(Q) = 14-10
 $$
 
 $$
+14 - 10 = 4
+$$
+
+$$
+P^{\\prime}(Q) = 4
+$$
+
+$$
 = 4
 $$
 
@@ -7892,6 +10126,14 @@ $$
 $$
 
 $$
+10 + 5 = 15
+$$
+
+$$
+\\widetilde{C}^{\\prime}(Q) = 15
+$$
+
+$$
 = 15
 $$
 
@@ -7920,6 +10162,14 @@ $$
 
 $$
 P^{\\prime}(Q) = 14-15
+$$
+
+$$
+14 - 15 = -1
+$$
+
+$$
+P^{\\prime}(Q) = -1
 $$
 
 $$
@@ -8016,7 +10266,11 @@ $$
 
 which matches the claim
 
-The product rule on $R=Q(40-Q)$ immediately yields $R^{\\prime}=40-2Q$ on the first piece.
+The product rule on $R=Q(40-Q)$ immediately yields
+
+$$
+R^{\\prime} = 40-2Q
+$$ on the first piece.
 
 Keep level-versus-slope discipline: stocks such as $C$, $R$, $P$, or $U$ are heights; marginal objects are slopes of those graphs.
 
@@ -8025,7 +10279,11 @@ So the statement is True.`,
 
 Once sales exceed $30$, price is the flat clearance price $p(Q)=10$, so revenue is $R(Q)=10Q$ on that piece.
 
-Differentiating gives $R^{\\prime}(Q)=10$: marginal revenue collapses to the flat price $10$
+Differentiating gives
+
+$$
+R^{\\prime}(Q) = 10
+$$: marginal revenue collapses to the flat price $10$
 
 With a flat clearance price there is no inframarginal penalty, so MR collapses to the clearance price itself.
 
@@ -8045,6 +10303,14 @@ R^{\\prime}(12) = 40-24
 $$
 
 $$
+40 - 24 = 16
+$$
+
+$$
+R^{\\prime}(12) = 16
+$$
+
+$$
 = 16
 $$
 
@@ -8060,6 +10326,14 @@ Compare with packing cost $C^{\\prime}=12$:
 
 $$
 P^{\\prime}(12) = 16-12
+$$
+
+$$
+16 - 12 = 4
+$$
+
+$$
+P^{\\prime}(12) = 4
 $$
 
 $$
@@ -8090,6 +10364,14 @@ R^{\\prime}(35)-C^{\\prime}(35) = 10-12
 $$
 
 $$
+10 - 12 = -2
+$$
+
+$$
+R^{\\prime}(35)-C^{\\prime}(35) = -2
+$$
+
+$$
 = -2
 $$
 
@@ -8114,6 +10396,14 @@ At $Q=12$, extra revenue is the marginal revenue $R^{\\prime}(12)=16$, while the
 
 $$
 p(12) = 40-12
+$$
+
+$$
+40 - 12 = 28
+$$
+
+$$
+p(12) = 28
 $$
 
 $$
@@ -8176,7 +10466,11 @@ $$
 
 Hence $A_A^{\\prime}(Q)<0$: A's average cost is currently falling
 
-The sign rule $A^{\\prime}=(C^{\\prime}-A)/Q$ gives $A_A^{\\prime}<0$ precisely because $5<8$.
+The sign rule $A^{\\prime}=(C^{\\prime}-A)/Q$ gives
+
+$$
+A_A^{\\prime}<0
+$$ precisely because $5<8$.
 
 Matching the claim against that reasoning confirms the verdict is True once the right derivative (or the right expand-or-not comparison) is in view.
 
@@ -8191,9 +10485,19 @@ $$
 
 For firm B one has $C_B^{\\prime}=9>6=A_B$, so $A_B^{\\prime}(Q)>0$: B's average cost is currently rising
 
-For B the same rule gives $A_B^{\\prime}>0$ because marginal cost $9$ sits above average cost $6$.
+For B the same rule gives
+
+$$
+A_B^{\\prime}>0
+$$ because marginal cost $9$ sits above average cost $6$.
 
 Matching the claim against that reasoning confirms the verdict is True once the right derivative (or the right expand-or-not comparison) is in view.
+
+$$
+A = C/Q
+$$
+
+which matches the claim.
 
 So the statement is True.`,
       `**C.** → False
@@ -8201,11 +10505,19 @@ So the statement is True.`,
 The extra-unit test compares $R^{\\prime}$ with $C^{\\prime}$, not the two averages. Here
 
 $$
-7>5\\qquad\\text{at A}
+7>5
 $$
 
 $$
-7<9\\qquad\\text{at B}
+\\text{at A}
+$$
+
+$$
+7<9
+$$
+
+$$
+\\text{at B}
 $$
 
 A should take the extra delivery; B should not. Being cheaper on average does not decide the marginal comparison
@@ -8247,6 +10559,14 @@ P_A^{\\prime} = 7-5
 $$
 
 $$
+7 - 5 = 2
+$$
+
+$$
+P_A^{\\prime} = 2
+$$
+
+$$
 = 2
 $$
 
@@ -8260,6 +10580,14 @@ $$
 
 $$
 P_B^{\\prime} = 7-9
+$$
+
+$$
+7 - 9 = -2
+$$
+
+$$
+P_B^{\\prime} = -2
 $$
 
 $$
@@ -8314,6 +10642,14 @@ Studio A sits on a flat spot of the profit graph at height $50$: positive stock,
 
 Matching the claim against that reasoning confirms the verdict is True once the right derivative (or the right expand-or-not comparison) is in view.
 
+$$
+P_A(Q) = 50>0
+$$
+
+$$
+P_A^{\\prime}(Q) = 0
+$$
+
 So the statement is True.`,
       `**B.** → True
 
@@ -8324,6 +10660,14 @@ Breaking even today is compatible with an upward slope: a small expansion would 
 Studio B sits at height zero on an upward slope: break-even today, but the next unit starts to create profit.
 
 Matching the claim against that reasoning confirms the verdict is True once the right derivative (or the right expand-or-not comparison) is in view.
+
+$$
+P_B(Q) = 0
+$$
+
+$$
+P_B^{\\prime}(Q) = 4>0
+$$
 
 So the statement is True.`,
       `**C.** → False
@@ -8336,6 +10680,22 @@ The report $P_A^{\\prime}(Q)=0$ only says that profit is stationary at that outp
 
 Matching the claim against that reasoning confirms the verdict is False once the right derivative (or the right expand-or-not comparison) is in view.
 
+$$
+P_A(Q) = 50
+$$
+
+$$
+P_A^{\\prime}(Q) = 0
+$$
+
+$$
+P_A(Q) = 0
+$$
+
+$$
+P_A^{\\prime} = 0
+$$
+
 So the statement is False.`,
       `**D.** → True
 
@@ -8347,6 +10707,22 @@ B's positive $P_B^{\\prime}$ is an expand signal; A's $P_A^{\\prime}=0$ is alrea
 
 Matching the claim against that reasoning confirms the verdict is True once the right derivative (or the right expand-or-not comparison) is in view.
 
+$$
+P_B^{\\prime}(Q) = 4>0
+$$
+
+$$
+P_A^{\\prime}(Q) = 0
+$$
+
+$$
+R_A^{\\prime}(Q) = C_A^{\\prime}(Q)
+$$
+
+$$
+P_A^{\\prime} = 0
+$$
+
 So the statement is True.`,
       `**E.** → False
 
@@ -8357,6 +10733,14 @@ Current break-even does not forbid a positive marginal profit
 Break-even constrains the height $P$, not the slope $P^{\\prime}$; B is the textbook counterexample.
 
 Matching the claim against that reasoning confirms the verdict is False once the right derivative (or the right expand-or-not comparison) is in view.
+
+$$
+P_B(Q) = 0
+$$
+
+$$
+P_B^{\\prime}(Q) = 4>0
+$$
 
 So the statement is False.`
     ],
@@ -8396,6 +10780,16 @@ Weekday cost is a ray of slope $12$, so each extra weekday sale adds $12$ euros 
 
 Keep level-versus-slope discipline: stocks such as $C$, $R$, $P$, or $U$ are heights; marginal objects are slopes of those graphs.
 
+$$
+C_{\\mathrm{wd}}'(Q) = 12
+$$
+
+$$
+C_{\\mathrm{wd}}(Q) = 12Q
+$$
+
+which matches the claim.
+
 So the statement is True.`,
       `**B.** → True
 
@@ -8422,6 +10816,14 @@ $$
 
 $$
 P^{\\prime}(Q) = 15-12
+$$
+
+$$
+15 - 12 = 3
+$$
+
+$$
+P^{\\prime}(Q) = 3
 $$
 
 $$
@@ -8456,6 +10858,14 @@ P^{\\prime}(Q) = 15-20
 $$
 
 $$
+15 - 20 = -5
+$$
+
+$$
+P^{\\prime}(Q) = -5
+$$
+
+$$
 = -5
 $$
 
@@ -8483,6 +10893,10 @@ What changes is which cost schedule supplies $C^{\\prime}(Q)$: the weekday rule 
 Marginal revenue keeps the same economic meaning — extra euros from one more sale — on both kinds of day.
 
 Matching the claim against that reasoning confirms the verdict is True once the right derivative (or the right expand-or-not comparison) is in view.
+
+$$
+R^{\\prime}(Q) = 15
+$$
 
 So the statement is True.`
     ],
@@ -8547,6 +10961,16 @@ Check: $9<13$ matches the reviewer's claim, and $P_L^{\\prime}=9-13=-4$ matches 
 
 Matching the claim against that reasoning confirms the verdict is True once the right derivative (or the right expand-or-not comparison) is in view.
 
+$$
+C_L'(Q) = 13
+$$
+
+$$
+P_L^{\\prime}(Q) = R_L^{\\prime}(Q)-C_L^{\\prime}(Q)
+$$
+
+which matches the claim.
+
 So the statement is True.`,
       `**C.** → True
 
@@ -8558,6 +10982,14 @@ At M, extra revenue exceeds extra cost, which is the opposite of "extra revenue 
 
 Matching the claim against that reasoning confirms the verdict is True once the right derivative (or the right expand-or-not comparison) is in view.
 
+$$
+R_M^{\\prime}(Q) = 9>6
+$$
+
+$$
+= C_M^{\\prime}(Q)
+$$
+
 So the statement is True.`,
       `**D.** → True
 
@@ -8565,6 +10997,14 @@ Shop M has
 
 $$
 P_M^{\\prime}(Q) = 9-6
+$$
+
+$$
+9 - 6 = 3
+$$
+
+$$
+P_M^{\\prime}(Q) = 3
 $$
 
 $$
@@ -8595,6 +11035,30 @@ Same extra revenue does not force the same extra cost
 Shared $R^{\\prime}=9$ with $C_L^{\\prime}=13$ versus $C_M^{\\prime}=6$ is enough to see the extra-cost figures differ.
 
 Matching the claim against that reasoning confirms the verdict is False once the right derivative (or the right expand-or-not comparison) is in view.
+
+$$
+R^{\\prime}(Q) = 9
+$$
+
+$$
+C_L^{\\prime}(Q) = 13
+$$
+
+$$
+C_M^{\\prime}(Q) = 6
+$$
+
+$$
+R^{\\prime} = 9
+$$
+
+$$
+C_L^{\\prime} = 13
+$$
+
+$$
+C_M^{\\prime} = 6
+$$
 
 So the statement is False.`
     ],
@@ -8639,7 +11103,11 @@ P^{\\prime}(Q) = 8-\\dfrac{2}{10}Q
 $$
 
 $$
-P^{\\prime}(Q) = 8-\\dfrac{1}{5}Q\\qquad\\text{for }Q<30
+P^{\\prime}(Q) = 8-\\dfrac{1}{5}Q
+$$
+
+$$
+\\text{for }Q<30
 $$
 
 The claim matches
@@ -8659,6 +11127,14 @@ $$
 
 $$
 P^{\\prime}(20) = 8-4
+$$
+
+$$
+8 - 4 = 4
+$$
+
+$$
+P^{\\prime}(20) = 4
 $$
 
 $$
@@ -8685,7 +11161,11 @@ So the statement is True.`,
 On the outsourcing piece $P(Q)=150-4(Q-30)$ is linear with slope $-4$, so
 
 $$
-P^{\\prime}(Q) = -4\\qquad\\text{for }Q>30
+P^{\\prime}(Q) = -4
+$$
+
+$$
+\\text{for }Q>30
 $$
 
 which matches the claim
@@ -8693,6 +11173,14 @@ which matches the claim
 Beyond capacity every extra lamp subtracts $4$ euros of profit — a constant negative marginal profit.
 
 Keep level-versus-slope discipline: stocks such as $C$, $R$, $P$, or $U$ are heights; marginal objects are slopes of those graphs.
+
+$$
+P'(Q) = -4
+$$
+
+$$
+P(Q) = 150-4(Q-30)
+$$
 
 So the statement is True.`,
       `**D.** → False
@@ -8704,6 +11192,16 @@ A small expansion lowers profit; it does not raise it
 Just above $30$ the outsourcing piece is already in force, so the expand-or-not test fails immediately past capacity.
 
 Matching the claim against that reasoning confirms the verdict is False once the right derivative (or the right expand-or-not comparison) is in view.
+
+$$
+P^{\\prime}(Q) = -4<0
+$$
+
+$$
+Q = 30
+$$
+
+which does not match the claim.
 
 So the statement is False.`,
       `**E.** → False
@@ -8718,6 +11216,14 @@ $$
 
 $$
 P^{\\prime}(30^{-}) = 8-6
+$$
+
+$$
+8 - 6 = 2
+$$
+
+$$
+P^{\\prime}(30^{-}) = 2
 $$
 
 $$
@@ -8784,6 +11290,16 @@ Two of the three rates determine the third through $P^{\\prime}=R^{\\prime}-C^{\
 
 Matching the claim against that reasoning confirms the verdict is True once the right derivative (or the right expand-or-not comparison) is in view.
 
+$$
+C'(40) = 2
+$$
+
+$$
+P^{\\prime}(40) = R^{\\prime}(40)-C^{\\prime}(40)
+$$
+
+which matches the claim.
+
 So the statement is True.`,
       `**B.** → True
 
@@ -8795,6 +11311,14 @@ $$
 
 $$
 P^{\\prime}(40) = 3-5
+$$
+
+$$
+3 - 5 = -2
+$$
+
+$$
+P^{\\prime}(40) = -2
 $$
 
 $$
@@ -8826,6 +11350,18 @@ Opposite signs of $P^{\\prime}$ mean opposite expand-or-not advice despite the s
 
 Matching the claim against that reasoning confirms the verdict is True once the right derivative (or the right expand-or-not comparison) is in view.
 
+$$
+P^{\\prime}(40) = 1>0
+$$
+
+$$
+P^{\\prime}(40) = -2<0
+$$
+
+$$
+R^{\\prime}(40) = 3
+$$
+
 So the statement is True.`,
       `**D.** → False
 
@@ -8847,6 +11383,16 @@ The height $P(40)$ of today's profit was never posted and need not equal $1$
 A rate of $+1$ euro of profit per extra item is compatible with any profit stock — the café never posted $P(40)$.
 
 Keep level-versus-slope discipline: stocks such as $C$, $R$, $P$, or $U$ are heights; marginal objects are slopes of those graphs.
+
+$$
+P^{\\prime}(40) = 1
+$$
+
+$$
+P'(40) = 1
+$$
+
+which does not match the claim.
 
 So the statement is False.`
     ],
@@ -8892,6 +11438,12 @@ $$
 
 That derivative *is* the slope of daily profit (marginal profit). It matches the claimed formula exactly — no extra constant term appears.
 
+$$
+P'(Q) = -2Q+12
+$$
+
+which matches the claim.
+
 So the statement is True.`,
       `**B.** → True
 
@@ -8934,6 +11486,12 @@ $$
 
 A strictly negative second derivative means the curve bends strictly downward through the flat spot, which is the second-derivative test for a local maximum. Therefore $Q=6$ is a local profit peak.
 
+$$
+Q = 6
+$$
+
+which matches the claim.
+
 So the statement is True.`,
       `**D.** → True
 
@@ -8947,6 +11505,18 @@ $$
 
 $$
 P(6) = -36+72-20
+$$
+
+$$
+-36 + 72 = 36
+$$
+
+$$
+36 - 20 = 16
+$$
+
+$$
+P(6) = 16
 $$
 
 $$
@@ -8967,6 +11537,12 @@ P(6) = 16\\neq 0.
 $$
 
 Zero slope does not force zero profit — confusing the derivative with the function itself is the trap —.
+
+$$
+P'(6) = 0
+$$
+
+which does not match the claim.
 
 So the statement is False.`
     ],
@@ -9094,6 +11670,14 @@ R'(6) = 30-12
 $$
 
 $$
+30 - 12 = 18
+$$
+
+$$
+R'(6) = 18
+$$
+
+$$
 = 18
 $$
 
@@ -9103,6 +11687,14 @@ $$
 
 $$
 C'(6) = 12+6
+$$
+
+$$
+12 + 6 = 18
+$$
+
+$$
+C'(6) = 18
 $$
 
 $$
@@ -9137,11 +11729,35 @@ P(6) = -72+144-40
 $$
 
 $$
+-72 + 144 = 72
+$$
+
+$$
+72 - 40 = 32
+$$
+
+$$
+P(6) = 32
+$$
+
+$$
 P(6) = 32,
 $$
 
 $$
 C(6) = 36+36+40
+$$
+
+$$
+36 + 36 = 72
+$$
+
+$$
+72 + 40 = 112
+$$
+
+$$
+C(6) = 112
 $$
 
 $$
@@ -9257,6 +11873,18 @@ C(5) = 25-50+40
 $$
 
 $$
+25 - 50 = -25
+$$
+
+$$
+-25 + 40 = 15
+$$
+
+$$
+C(5) = 15
+$$
+
+$$
 = 15
 $$
 
@@ -9303,6 +11931,14 @@ So the statement is False.`,
 Global comparison on a restricted domain needs every candidate value — interior critical points and endpoints — not just the first flat-slope output you meet.
 
 On $Q\\ge 0$ the parabola opens upward ($C''=2>0$) with its vertex at $Q=5\\ge 0$. For an upward-opening parabola the vertex is the global minimum on the whole real line, hence also on the restricted domain $Q\\ge 0$. The local trough is therefore also the global cost minimum: the cost-minimising fleet is five vans globally as well as locally.
+
+$$
+C'' = 2>0
+$$
+
+$$
+Q = 5\\ge 0
+$$
 
 So the statement is True.`
     ],
@@ -9398,6 +12034,12 @@ $$
 
 So nearby values sit strictly above the value at zero: intensity zero is a strict local trough of score $A$. The inconclusive bend test does not cancel that comparison.
 
+$$
+A''(0) = 0
+$$
+
+which matches the claim.
+
 So the statement is True.`,
       `**D.** → True
 
@@ -9477,11 +12119,27 @@ P_A'(10) = -20+20
 $$
 
 $$
+-20 + 20 = 0
+$$
+
+$$
+P_A'(10) = 0
+$$
+
+$$
 = 0
 $$
 
 $$
 P_B'(10) = 20-20
+$$
+
+$$
+20 - 20 = 0
+$$
+
+$$
+P_B'(10) = 0
 $$
 
 $$
@@ -9553,11 +12211,35 @@ P_A(10) = -100+200-50
 $$
 
 $$
+-100 + 200 = 100
+$$
+
+$$
+100 - 50 = 50
+$$
+
+$$
+P_A(10) = 50
+$$
+
+$$
 P_A(10) = 50,
 $$
 
 $$
 P_B(10) = 100-200+90
+$$
+
+$$
+100 - 200 = -100
+$$
+
+$$
+-100 + 90 = -10
+$$
+
+$$
+P_B(10) = -10
 $$
 
 $$
@@ -9662,6 +12344,14 @@ P''(1) = 6-12
 $$
 
 $$
+6 - 12 = -6
+$$
+
+$$
+P''(1) = -6
+$$
+
+$$
 = -6
 $$
 
@@ -9675,6 +12365,14 @@ $$
 
 $$
 P''(3) = 18-12
+$$
+
+$$
+18 - 12 = 6
+$$
+
+$$
+P''(3) = 6
 $$
 
 $$
@@ -9702,6 +12400,22 @@ Evaluate profit at the two critical packs and at both endpoints — global compa
 
 $$
 P(1) = 1-6+9+10
+$$
+
+$$
+1 - 6 = -5
+$$
+
+$$
+-5 + 9 = 4
+$$
+
+$$
+4 + 10 = 14
+$$
+
+$$
+P(1) = 14
 $$
 
 $$
@@ -9738,6 +12452,22 @@ $$
 
 $$
 P(3) = 27-54+27+10
+$$
+
+$$
+27 - 54 = -27
+$$
+
+$$
+-27 + 27 = 0
+$$
+
+$$
+0 + 10 = 10
+$$
+
+$$
+P(3) = 10
 $$
 
 $$
@@ -9778,6 +12508,22 @@ $$
 
 $$
 P(5) = 125-150+45+10
+$$
+
+$$
+125 - 150 = -25
+$$
+
+$$
+-25 + 45 = 20
+$$
+
+$$
+20 + 10 = 30
+$$
+
+$$
+P(5) = 30
 $$
 
 $$
@@ -9823,6 +12569,14 @@ Global comparison on a restricted domain needs every candidate value — interio
 
 Comparing the candidate values, $P(1)=14$ is only a *local* peak. The endpoint $P(5)=30$ is strictly larger. On a closed interval the global maximum can sit at an endpoint even when an interior local peak exists. The global maximum on $[0,5]$ is therefore not at one pack.
 
+$$
+P(1) = 14
+$$
+
+$$
+P(5) = 30
+$$
+
 So the statement is False.`,
       `**E.** → True
 
@@ -9831,6 +12585,22 @@ Global comparison on a restricted domain needs every candidate value — interio
 Among $P(0)=10$, $P(1)=14$, $P(3)=10$, and $P(5)=30$, the largest value is $30$ at five packs. That endpoint is therefore the global profit maximum on $[0,5]$. The local peak at one pack loses the global comparison
 
 Pause on the classification step: $f''<0$ at a critical point marks a local peak, $f''>0$ marks a local trough, and $f''=0$ makes the usual bend test inconclusive.
+
+$$
+P(0) = 10
+$$
+
+$$
+P(1) = 14
+$$
+
+$$
+P(3) = 10
+$$
+
+$$
+P(5) = 30
+$$
 
 So the statement is True.`
     ],
@@ -9886,6 +12656,12 @@ That slope matches the claim exactly
 
 An interior candidate for a smooth extremum must make the first derivative vanish; that flat-slope equation only produces candidates, not finished labels.
 
+$$
+P'(Q) = 5-\\dfrac{Q}{5}
+$$
+
+which matches the claim.
+
 So the statement is True.`,
       `**B.** → True
 
@@ -9913,6 +12689,14 @@ So the statement is True.`,
 Name the objective, find where its slope is flat, then classify with the bend (or a sign chart) before matching the claim.
 
 Because $P'(Q)>0$ throughout $[0,8]$, profit is strictly increasing on the interval. A strictly increasing continuous function on a closed bounded interval attains its maximum at the right endpoint $Q=8$ and its minimum at the left endpoint $Q=0$. No interior critical point is needed for that conclusion.
+
+$$
+Q = 8
+$$
+
+$$
+Q = 0
+$$
 
 So the statement is True.`,
       `**D.** → False
@@ -10043,6 +12827,12 @@ $$
 
 For $0\\le x<1$ both factors $(x-1)$ and $(x-3)$ are negative, so $B'>0$. Just to the right of $1$, the factor $(x-1)$ becomes positive while $(x-3)$ stays negative, so $B'<0$. The change from positive to negative marks a local peak at intensity $1$ by the first-derivative test.
 
+$$
+x = 1
+$$
+
+which matches the claim.
+
 So the statement is True.`,
       `**C.** → True
 
@@ -10051,6 +12841,10 @@ Name the objective, find where its slope is flat, then classify with the bend (o
 Around $x=3$ the same factored slope changes the other way. Just left of $3$ one has $B'<0$ (as in the interval $(1,3)$). Just right of $3$ both factors are positive, so $B'>0$. The change from negative to positive marks a local trough at intensity $3$ by the first-derivative test
 
 Pause on the classification step: $f''<0$ at a critical point marks a local peak, $f''>0$ marks a local trough, and $f''=0$ makes the usual bend test inconclusive.
+
+$$
+x = 3
+$$
 
 So the statement is True.`,
       `**D.** → True
@@ -10068,6 +12862,14 @@ B''(1) = 6-12
 $$
 
 $$
+6 - 12 = -6
+$$
+
+$$
+B''(1) = -6
+$$
+
+$$
 = -6
 $$
 
@@ -10081,6 +12883,14 @@ $$
 
 $$
 B''(3) = 18-12
+$$
+
+$$
+18 - 12 = 6
+$$
+
+$$
+B''(3) = 6
 $$
 
 $$
@@ -10174,6 +12984,14 @@ P''(2) = -12+18
 $$
 
 $$
+-12 + 18 = 6
+$$
+
+$$
+P''(2) = 6
+$$
+
+$$
 = 6>0.
 $$
 
@@ -10190,6 +13008,14 @@ Classify four ovens the same way:
 
 $$
 P''(4) = -24+18
+$$
+
+$$
+-24 + 18 = -6
+$$
+
+$$
+P''(4) = -6
 $$
 
 $$
@@ -10216,6 +13042,22 @@ P(2) = -8+36-48+30
 $$
 
 $$
+-8 + 36 = 28
+$$
+
+$$
+28 - 48 = -20
+$$
+
+$$
+-20 + 30 = 10
+$$
+
+$$
+P(2) = 10
+$$
+
+$$
 P(2) = 10,
 $$
 
@@ -10224,11 +13066,43 @@ P(4) = -64+144-96+30
 $$
 
 $$
+-64 + 144 = 80
+$$
+
+$$
+80 - 96 = -16
+$$
+
+$$
+-16 + 30 = 14
+$$
+
+$$
+P(4) = 14
+$$
+
+$$
 P(4) = 14,
 $$
 
 $$
 P(6) = -216+324-144+30
+$$
+
+$$
+-216 + 324 = 108
+$$
+
+$$
+108 - 144 = -36
+$$
+
+$$
+-36 + 30 = -6
+$$
+
+$$
+P(6) = -6
 $$
 
 $$
@@ -10243,6 +13117,18 @@ So the statement is True.`,
 The wording sounds close to a standard optimisation rule, but it skips a classification step or confuses a level with a slope. Track the definitions carefully.
 
 Listing the flat-slope outputs $Q=2$ and $Q=4$ only produces *candidates*. Without comparing their profit values to the endpoints — and without classifying peak versus trough — one cannot prove which point maximises profit on the closed interval. Here the endpoint $Q=0$ actually wins. Stopping at the critical-point list does not finish the proof.
+
+$$
+Q = 2
+$$
+
+$$
+Q = 4
+$$
+
+$$
+Q = 0
+$$
 
 So the statement is False.`
     ],
@@ -10332,6 +13218,14 @@ R'(6) = 40-24
 $$
 
 $$
+40 - 24 = 16
+$$
+
+$$
+R'(6) = 16
+$$
+
+$$
 = 16
 $$
 
@@ -10341,6 +13235,14 @@ $$
 
 $$
 C'(6) = 12+4
+$$
+
+$$
+12 + 4 = 16
+$$
+
+$$
+C'(6) = 16
 $$
 
 $$
@@ -10378,6 +13280,12 @@ A downward bend at a flat slope means a local profit peak by the second-derivati
 
 Pause on the classification step: $f''<0$ at a critical point marks a local peak, $f''>0$ marks a local trough, and $f''=0$ makes the usual bend test inconclusive.
 
+$$
+f'' = 0
+$$
+
+which matches the claim.
+
 So the statement is True.`,
       `**D.** → True
 
@@ -10394,6 +13302,18 @@ P(6) = -108+216-10
 $$
 
 $$
+-108 + 216 = 108
+$$
+
+$$
+108 - 10 = 98
+$$
+
+$$
+P(6) = 98
+$$
+
+$$
 P(6) = 98.
 $$
 
@@ -10407,6 +13327,14 @@ So the statement is True.`,
 The wording sounds close to a standard optimisation rule, but it skips a classification step or confuses a level with a slope. Track the definitions carefully.
 
 Matching $R'=C'$ is equivalent to $P'=0$: it only finds a critical point of profit. Without a bend check (or an equivalent first-derivative sign argument), one cannot yet label that point a peak rather than a trough or a flat inflection. Skipping the second-derivative classification leaves the maximisation unfinished.
+
+$$
+R' = C'
+$$
+
+$$
+P' = 0
+$$
 
 So the statement is False.`
     ],
@@ -10461,11 +13389,27 @@ P_N'(8) = -16+16
 $$
 
 $$
+-16 + 16 = 0
+$$
+
+$$
+P_N'(8) = 0
+$$
+
+$$
 = 0
 $$
 
 $$
 P_S'(8) = 16-16
+$$
+
+$$
+16 - 16 = 0
+$$
+
+$$
+P_S'(8) = 0
 $$
 
 $$
@@ -10532,11 +13476,35 @@ P_N(8) = -64+128-30
 $$
 
 $$
+-64 + 128 = 64
+$$
+
+$$
+64 - 30 = 34
+$$
+
+$$
+P_N(8) = 34
+$$
+
+$$
 P_N(8) = 34,
 $$
 
 $$
 P_S(8) = 64-128+70
+$$
+
+$$
+64 - 128 = -64
+$$
+
+$$
+-64 + 70 = 6
+$$
+
+$$
+P_S(8) = 6
 $$
 
 $$
@@ -10637,6 +13605,14 @@ The usual sufficient test for a strict local peak asks for $L''(x^{\\ast})<0$ at
 
 Pause on the classification step: $f''<0$ at a critical point marks a local peak, $f''>0$ marks a local trough, and $f''=0$ makes the usual bend test inconclusive.
 
+$$
+L''(0) = 0
+$$
+
+$$
+f'' = 0
+$$
+
 So the statement is True.`,
       `**C.** → True
 
@@ -10654,6 +13630,12 @@ $$
 
 So the index at zero strictly dominates every other intensity: zero is a strict global maximum (hence also a strict local peak). The failed bend test does not cancel that comparison.
 
+$$
+L''(0) = 0
+$$
+
+which matches the claim.
+
 So the statement is True.`,
       `**D.** → False
 
@@ -10661,12 +13643,20 @@ The wording sounds close to a standard optimisation rule, but it skips a classif
 
 Vanishing of the second derivative only makes the *usual sufficient bend test* fail; it does not prove there is no peak. The direct comparison $L(x)<L(0)$ for $x\\neq 0$ already shows a strict global maximum at zero. Claiming that $L''(0)=0$ forbids a local peak confuses “test inconclusive” with “no extremum,”.
 
+$$
+L''(0) = 0
+$$
+
 So the statement is False.`,
       `**E.** → True
 
 Name the objective, find where its slope is flat, then classify with the bend (or a sign chart) before matching the claim.
 
 At an interior local peak a necessary condition is $L''\\le 0$ (the curve cannot bend strictly upward there). Here $L''(0)=0$, which satisfies $L''\\le 0$. The necessary condition therefore still holds, even though the stricter sufficient test $L''<0$ fails. The claim is carefully worded and correct.
+
+$$
+L''(0) = 0
+$$
 
 So the statement is True.`
     ],
@@ -10778,12 +13768,26 @@ A downward bend at a flat slope is the second-derivative test for a local maximu
 
 Pause on the classification step: $f''<0$ at a critical point marks a local peak, $f''>0$ marks a local trough, and $f''=0$ makes the usual bend test inconclusive.
 
+$$
+f'' = 0
+$$
+
+which matches the claim.
+
 So the statement is True.`,
       `**D.** → False
 
 The wording sounds close to a standard optimisation rule, but it skips a classification step or confuses a level with a slope. Track the definitions carefully.
 
 Cost is minimised at $Q=4$, but profit is maximised at $Q=7$. Those are different outputs because revenue also depends on $Q$: cutting cost further can sacrifice more revenue than it saves. The cost-minimising output is *not* automatically the profit-maximising output.
+
+$$
+Q = 4
+$$
+
+$$
+Q = 7
+$$
 
 So the statement is False.`,
       `**E.** → True
@@ -10801,11 +13805,35 @@ P(7) = -98+196-30
 $$
 
 $$
+-98 + 196 = 98
+$$
+
+$$
+98 - 30 = 68
+$$
+
+$$
+P(7) = 68
+$$
+
+$$
 P(7) = 68,
 $$
 
 $$
 C(4) = 16-32+30
+$$
+
+$$
+16 - 32 = -16
+$$
+
+$$
+-16 + 30 = 14
+$$
+
+$$
+C(4) = 14
 $$
 
 $$
@@ -10885,11 +13913,27 @@ U_A'(5) = -10+10
 $$
 
 $$
+-10 + 10 = 0
+$$
+
+$$
+U_A'(5) = 0
+$$
+
+$$
 = 0
 $$
 
 $$
 U_B'(5) = 10-10
+$$
+
+$$
+10 - 10 = 0
+$$
+
+$$
+U_B'(5) = 0
 $$
 
 $$
@@ -10956,11 +14000,31 @@ U_A(5) = -25+50
 $$
 
 $$
+-25 + 50 = 25
+$$
+
+$$
+U_A(5) = 25
+$$
+
+$$
 U_A(5) = 25,
 $$
 
 $$
 U_B(5) = 25-50+30
+$$
+
+$$
+25 - 50 = -25
+$$
+
+$$
+-25 + 30 = 5
+$$
+
+$$
+U_B(5) = 5
 $$
 
 $$
@@ -11090,6 +14154,10 @@ Name the objective, find where its slope is flat, then classify with the bend (o
 
 Combine flat slopes with bend signs. At $\\pm 2$ one has $f'>0$ wait — rather $f'=0$ with $f''>0$, which is the second-derivative test for local minima (troughs). At $0$ one has $f'=0$ with $f''<0$, which is a local maximum (peak). Therefore $\\pm 2$ are local troughs and $0$ is a local peak.
 
+$$
+f' = 0
+$$
+
 So the statement is True.`,
       `**D.** → True
 
@@ -11103,6 +14171,18 @@ $$
 
 $$
 f(2) = 16-32+16
+$$
+
+$$
+16 - 32 = -16
+$$
+
+$$
+-16 + 16 = 0
+$$
+
+$$
+f(2) = 0
 $$
 
 $$
@@ -11139,6 +14219,10 @@ So the statement is True.`,
 Global comparison on a restricted domain needs every candidate value — interior critical points and endpoints — not just the first flat-slope output you meet.
 
 A local peak need not be global on the whole real line. As $|x|\\to\\infty$, the leading term $x^{4}$ drives $f(x)\\to\\infty$, so values far from zero eventually exceed $f(0)=16$. Intensity zero is only a local peak — the unbounded domain lets payoff grow afterward — so it is not the global maximum.
+
+$$
+f(0) = 16
+$$
 
 So the statement is False.`
     ],
@@ -11219,6 +14303,14 @@ Name the objective, find where its slope is flat, then classify with the bend (o
 For a cost-minimisation goal, a flat slope plus an upward bend is exactly the calculus certificate of a local cost trough. Here $C'(6)=0$ and $C''(6)=4>0$, so calling six hours optimal for cost control is justified by the bend test. The statement is True
 
 An interior candidate for a smooth extremum must make the first derivative vanish; that flat-slope equation only produces candidates, not finished labels.
+
+$$
+C'(6) = 0
+$$
+
+$$
+C''(6) = 4>0
+$$
 
 So the statement is True.`,
       `**D.** → True
@@ -11339,6 +14431,12 @@ $$
 
 for every $Q$, with equality only at $Q=3$. The slope does not change sign through three screenings — it touches zero and stays non-negative — so $Q=3$ is neither a local peak nor a local trough for B (a flat inflection).
 
+$$
+Q = 3
+$$
+
+which matches the claim.
+
 So the statement is True.`,
       `**E.** → False
 
@@ -11413,6 +14511,12 @@ A downward bend at a flat slope is the second-derivative test for a local maximu
 
 An interior candidate for a smooth extremum must make the first derivative vanish; that flat-slope equation only produces candidates, not finished labels.
 
+$$
+x = 0
+$$
+
+which matches the claim.
+
 So the statement is True.`,
       `**C.** → True
 
@@ -11422,6 +14526,14 @@ Classify $x=2$ the same way:
 
 $$
 f''(2) = 12-6
+$$
+
+$$
+12 - 6 = 6
+$$
+
+$$
+f''(2) = 6
 $$
 
 $$
@@ -11449,12 +14561,24 @@ On the whole real line, watch the end behaviour. As $x\\to\\infty$, the cubic's 
 
 An interior candidate for a smooth extremum must make the first derivative vanish; that flat-slope equation only produces candidates, not finished labels.
 
+$$
+f(0) = 5
+$$
+
 So the statement is True.`,
       `**E.** → False
 
 The wording sounds close to a standard optimisation rule, but it skips a classification step or confuses a level with a slope. Track the definitions carefully.
 
 Listing the flat-slope outputs only produces candidates. Without classifying peak versus trough, and without checking whether a global maximum even exists on the domain, the maximisation proof is unfinished. Here $x=2$ is a trough and no global max exists on $\\mathbb{R}$. Stopping after $f'=0$ does not finish the argument.
+
+$$
+x = 2
+$$
+
+$$
+f' = 0
+$$
 
 So the statement is False.`
     ],
@@ -11538,12 +14662,32 @@ Name the objective, find where its slope is flat, then classify with the bend (o
 
 By definition, a strict local maximum at $Q^{\\ast}=5$ means there exists a neighbourhood of five bikes in which every other feasible output $Q$ satisfies $P(Q)<P(5)$. That is exactly what “local profit peak” asserts — a local comparison, not yet a claim about the whole domain $Q>0$. The wording matches the definition.
 
+$$
+Q^{\\ast} = 5
+$$
+
 So the statement is True.`,
       `**D.** → False
 
 The wording sounds close to a standard optimisation rule, but it skips a classification step or confuses a level with a slope. Track the definitions carefully.
 
-A local peak describes the *shape* near five bikes, not the *height* of profit. The first-order condition $P'(5)=0$ says the tangent is horizontal; it says nothing about whether $P(5)=0$. Evaluating the level gives $P(5)=35\\neq 0$. Zero slope does not force zero profit.
+A local peak describes the *shape* near five bikes, not the *height* of profit. The first-order condition $P'(5)=0$ says the tangent is horizontal; it says nothing about whether $P(5)=0$. Evaluating the level gives
+
+$$
+P(5) = 35\\neq 0
+$$. Zero slope does not force zero profit.
+
+$$
+P'(5) = 0
+$$
+
+$$
+P(5) = 0
+$$
+
+$$
+P(5) = 35\\neq 0
+$$
 
 So the statement is False.`,
       `**E.** → True
@@ -11558,6 +14702,18 @@ $$
 
 $$
 P(5) = -75+150-40
+$$
+
+$$
+-75 + 150 = 75
+$$
+
+$$
+75 - 40 = 35
+$$
+
+$$
+P(5) = 35
 $$
 
 $$
@@ -11674,11 +14830,35 @@ P_W(7) = -49+98-20
 $$
 
 $$
+-49 + 98 = 49
+$$
+
+$$
+49 - 20 = 29
+$$
+
+$$
+P_W(7) = 29
+$$
+
+$$
 P_W(7) = 29,
 $$
 
 $$
 P_E(5) = 25-50+40
+$$
+
+$$
+25 - 50 = -25
+$$
+
+$$
+-25 + 40 = 15
+$$
+
+$$
+P_E(5) = 15
 $$
 
 $$
@@ -11715,6 +14895,14 @@ So the statement is True.`,
 The wording sounds close to a standard optimisation rule, but it skips a classification step or confuses a level with a slope. Track the definitions carefully.
 
 Each plant has its own profit function and its own derivative. West's equation $P_W'=0$ and East's equation $P_E'=0$ are independent; they can (and do) have different roots without either equation being invalid. Unequal flat-slope outputs do not cast doubt on either calculation. The claim is a non sequitur.
+
+$$
+P_W' = 0
+$$
+
+$$
+P_E' = 0
+$$
 
 So the statement is False.`
     ],
@@ -11759,6 +14947,12 @@ $$
 That derivative is the slope of daily profit. It matches the claimed formula exactly
 
 An interior candidate for a smooth extremum must make the first derivative vanish; that flat-slope equation only produces candidates, not finished labels.
+
+$$
+P'(Q) = -2Q+18
+$$
+
+which matches the claim.
 
 So the statement is True.`,
       `**B.** → True
@@ -11806,6 +15000,12 @@ A downward bend at a flat slope is the second-derivative test for a local maximu
 
 Pause on the classification step: $f''<0$ at a critical point marks a local peak, $f''>0$ marks a local trough, and $f''=0$ makes the usual bend test inconclusive.
 
+$$
+f'' = 0
+$$
+
+which matches the claim.
+
 So the statement is True.`,
       `**D.** → True
 
@@ -11819,6 +15019,18 @@ $$
 
 $$
 P(9) = -81+162-45
+$$
+
+$$
+-81 + 162 = 81
+$$
+
+$$
+81 - 45 = 36
+$$
+
+$$
+P(9) = 36
 $$
 
 $$
@@ -11841,6 +15053,12 @@ P(9) = 36\\neq 0.
 $$
 
 Zero slope does not force zero profit.
+
+$$
+P'(9) = 0
+$$
+
+which does not match the claim.
 
 So the statement is False.`
     ],
@@ -11894,6 +15112,12 @@ That simplified quadratic matches the claim exactly
 
 Pause on the classification step: $f''<0$ at a critical point marks a local peak, $f''>0$ marks a local trough, and $f''=0$ makes the usual bend test inconclusive.
 
+$$
+P(Q) = -2Q^{2}+40Q-20
+$$
+
+which matches the claim.
+
 So the statement is True.`,
       `**B.** → True
 
@@ -11941,6 +15165,14 @@ R'(10) = 50-20
 $$
 
 $$
+50 - 20 = 30
+$$
+
+$$
+R'(10) = 30
+$$
+
+$$
 = 30
 $$
 
@@ -11950,6 +15182,14 @@ $$
 
 $$
 C'(10) = 20+10
+$$
+
+$$
+20 + 10 = 30
+$$
+
+$$
+C'(10) = 30
 $$
 
 $$
@@ -11992,6 +15232,18 @@ P(10) = -200+400-20
 $$
 
 $$
+-200 + 400 = 200
+$$
+
+$$
+200 - 20 = 180
+$$
+
+$$
+P(10) = 180
+$$
+
+$$
 P(10) = 180.
 $$
 
@@ -12011,6 +15263,14 @@ R(10) = 500-100
 $$
 
 $$
+500 - 100 = 400
+$$
+
+$$
+R(10) = 400
+$$
+
+$$
 = 400
 $$
 
@@ -12020,6 +15280,18 @@ $$
 
 $$
 C(10) = 100+100+20
+$$
+
+$$
+100 + 100 = 200
+$$
+
+$$
+200 + 20 = 220
+$$
+
+$$
+C(10) = 220
 $$
 
 $$
@@ -12143,6 +15415,18 @@ P_A(12) = -144+288-80
 $$
 
 $$
+-144 + 288 = 144
+$$
+
+$$
+144 - 80 = 64
+$$
+
+$$
+P_A(12) = 64
+$$
+
+$$
 P_A(12) = 64,
 $$
 
@@ -12152,6 +15436,18 @@ $$
 
 $$
 P_B(8) = -128+256-60
+$$
+
+$$
+-128 + 256 = 128
+$$
+
+$$
+128 - 60 = 68
+$$
+
+$$
+P_B(8) = 68
 $$
 
 $$
@@ -12169,6 +15465,14 @@ The wording sounds close to a standard optimisation rule, but it skips a classif
 
 Both trucks have a local profit peak, but the peaks sit at different quantities: $Q_A^{\\ast}=12$ versus $Q_B^{\\ast}=8$. Separate profit functions generally have separate optimisers. Sharing the *property* of having a local peak does not force sharing the same optimal quantity.
 
+$$
+Q_A^{\\ast} = 12
+$$
+
+$$
+Q_B^{\\ast} = 8
+$$
+
 So the statement is False.`,
       `**E.** → True
 
@@ -12177,6 +15481,14 @@ Name the objective, find where its slope is flat, then classify with the bend (o
 Comparing the peak levels already computed, $P_B(8)=68>P_A(12)=64$. Truck B's peak profit is larger even though B's optimal meal count $8$ is smaller than A's $12$. Peak height and peak location are independent comparisons
 
 An interior candidate for a smooth extremum must make the first derivative vanish; that flat-slope equation only produces candidates, not finished labels.
+
+$$
+P_B(8) = 68>P_A(12)
+$$
+
+$$
+= 64
+$$
 
 So the statement is True.`
     ],
@@ -12242,6 +15554,14 @@ C''(2) = 12-18
 $$
 
 $$
+12 - 18 = -6
+$$
+
+$$
+C''(2) = -6
+$$
+
+$$
 = -6
 $$
 
@@ -12255,6 +15575,14 @@ $$
 
 $$
 C''(4) = 24-18
+$$
+
+$$
+24 - 18 = 6
+$$
+
+$$
+C''(4) = 6
 $$
 
 $$
@@ -12282,6 +15610,14 @@ Combine flat slopes with bend signs. Downward bend at $Q=2$ means a local cost *
 
 An interior candidate for a smooth extremum must make the first derivative vanish; that flat-slope equation only produces candidates, not finished labels.
 
+$$
+Q = 2
+$$
+
+$$
+Q = 4
+$$
+
 So the statement is True.`,
       `**D.** → True
 
@@ -12291,6 +15627,22 @@ Evaluate cost at the local trough $Q=4$:
 
 $$
 C(4) = 64-144+96+5
+$$
+
+$$
+64 - 144 = -80
+$$
+
+$$
+-80 + 96 = 16
+$$
+
+$$
+16 + 5 = 21
+$$
+
+$$
+C(4) = 21
 $$
 
 $$
@@ -12411,6 +15763,12 @@ An upward bend at a flat slope is the second-derivative test for a local minimum
 
 Pause on the classification step: $f''<0$ at a critical point marks a local peak, $f''>0$ marks a local trough, and $f''=0$ makes the usual bend test inconclusive.
 
+$$
+f'' = 0
+$$
+
+which matches the claim.
+
 So the statement is True.`,
       `**C.** → True
 
@@ -12424,6 +15782,18 @@ $$
 
 $$
 C(5) = 25-50+40
+$$
+
+$$
+25 - 50 = -25
+$$
+
+$$
+-25 + 40 = 15
+$$
+
+$$
+C(5) = 15
 $$
 
 $$
@@ -12452,6 +15822,18 @@ $$
 
 $$
 C(8) = 64-80+40
+$$
+
+$$
+64 - 80 = -16
+$$
+
+$$
+-16 + 40 = 24
+$$
+
+$$
+C(8) = 24
 $$
 
 $$
@@ -12489,6 +15871,18 @@ Global comparison on a restricted domain needs every candidate value — interio
 
 Comparing $C(0)=40$, $C(5)=15$, and $C(8)=24$, the smallest value is $15$ at five shifts, not $24$ at eight. The endpoint of eight shifts is *not* the global cost minimum on $[0,8]$. The claim picks the wrong candidate.
 
+$$
+C(0) = 40
+$$
+
+$$
+C(5) = 15
+$$
+
+$$
+C(8) = 24
+$$
+
 So the statement is False.`,
       `**E.** → True
 
@@ -12497,6 +15891,22 @@ Global comparison on a restricted domain needs every candidate value — interio
 Among $C(0)=40$, $C(5)=15$, and $C(8)=24$, the minimum is $15$ at the interior trough. On $[0,8]$ the global cost minimum is therefore at five shifts. The local trough wins the global comparison against both endpoints
 
 Pause on the classification step: $f''<0$ at a critical point marks a local peak, $f''>0$ marks a local trough, and $f''=0$ makes the usual bend test inconclusive.
+
+$$
+C(0) = 40
+$$
+
+$$
+C(5) = 15
+$$
+
+$$
+C(8) = 24
+$$
+
+$$
+f'' = 0
+$$
 
 So the statement is True.`
     ],
@@ -12614,6 +16024,12 @@ $$
 A downward bend at a flat slope is the second-derivative test for a local maximum. The square therefore maximises area locally (and, on $(0,20)$, globally)
 
 Pause on the classification step: $f''<0$ at a critical point marks a local peak, $f''>0$ marks a local trough, and $f''=0$ makes the usual bend test inconclusive.
+
+$$
+f'' = 0
+$$
+
+which matches the claim.
 
 So the statement is True.`,
       `**E.** → False
@@ -12736,6 +16152,18 @@ A(6) = 40+12+12
 $$
 
 $$
+40 + 12 = 52
+$$
+
+$$
+52 + 12 = 64
+$$
+
+$$
+A(6) = 64
+$$
+
+$$
 = 64
 $$
 
@@ -12833,6 +16261,12 @@ $$
 
 Setting $A'(x)=0$ and solving in $(0,60)$ yields a unique critical cut. The slope of total area is therefore a well-defined single-variable derivative with an interior flat point.
 
+$$
+A'(x) = \\dfrac{x}{8}-\\dfrac{60-x}{2\\pi}
+$$
+
+which matches the claim.
+
 So the statement is True.`,
       `**C.** → True
 
@@ -12845,6 +16279,12 @@ A''(x) = \\dfrac{1}{8}+\\dfrac{1}{2\\pi}>0
 $$
 
 everywhere. A positive bend at a flat slope is the second-derivative test for a local minimum. The critical split therefore minimises total enclosed area locally.
+
+$$
+x = \\dfrac{240}{4+\\pi}
+$$
+
+which matches the claim.
 
 So the statement is True.`,
       `**D.** → True
@@ -12904,6 +16344,20 @@ $$
 
 That reduction matches the claim.
 
+$$
+2x+y = 20
+$$
+
+$$
+y = 20-2x
+$$
+
+$$
+U = xy
+$$
+
+which matches the claim.
+
 So the statement is True.`,
       `**B.** → True
 
@@ -12936,7 +16390,15 @@ So the statement is True.`,
 
 Name the objective, find where its slope is flat, then classify with the bend (or a sign chart) before matching the claim.
 
-At $x=5$ the budget gives $y=20-2\\cdot 5=10$, and utility is the product
+At $x=5$ the budget gives
+
+$$
+y = 20-2\\cdot 5
+$$
+
+$$
+= 10
+$$, and utility is the product
 
 $$
 U = xy
@@ -12977,12 +16439,26 @@ A downward bend at a flat slope is the second-derivative test for a local maximu
 
 Pause on the classification step: $f''<0$ at a critical point marks a local peak, $f''>0$ marks a local trough, and $f''=0$ makes the usual bend test inconclusive.
 
+$$
+x = 5
+$$
+
+$$
+f'' = 0
+$$
+
+which matches the claim.
+
 So the statement is True.`,
       `**E.** → False
 
 Reduce the constrained problem to one free variable, then differentiate the reduced objective exactly as in unconstrained single-variable calculus.
 
 After substitution one still has an ordinary calculus problem: critical points must be classified. The budget constraint defines the feasible set; it does not by itself guarantee that a flat-slope bundle is a maximum rather than a minimum or saddle of the reduced utility. Skipping the bend check (here $u''=-4<0$) leaves the argument unfinished.
+
+$$
+u'' = -4<0
+$$
 
 So the statement is False.`
     ],
@@ -13103,14 +16579,40 @@ Equivalently, $xy=((x+y)^{2}-(x-y)^{2})/4=25-(x-y)^{2}/4<25$ unless $x=y$. Every
 
 Pause on the classification step: $f''<0$ at a critical point marks a local peak, $f''>0$ marks a local trough, and $f''=0$ makes the usual bend test inconclusive.
 
+$$
+x+y = 10
+$$
+
+which matches the claim.
+
 So the statement is True.`,
       `**E.** → False
 
 Reduce the constrained problem to one free variable, then differentiate the reduced objective exactly as in unconstrained single-variable calculus.
 
-The constraint $x+y=10$ only forces the *sum* of inputs; output $Q=xy$ still varies with the split. A $1+9$ split gives $Q=9$, while $5+5$ gives $25$. The constraint does not force output $25$ for every feasible pair
+The constraint $x+y=10$ only forces the *sum* of inputs; output $Q=xy$ still varies with the split. A $1+9$ split gives
+
+$$
+Q = 9
+$$, while $5+5$ gives
+
+$$
+25
+$$. The constraint does not force output $25$ for every feasible pair
 
 Pause on the classification step: $f''<0$ at a critical point marks a local peak, $f''>0$ marks a local trough, and $f''=0$ makes the usual bend test inconclusive.
+
+$$
+x+y = 10
+$$
+
+$$
+Q = xy
+$$
+
+$$
+Q = 9
+$$
 
 So the statement is False.`
     ],
@@ -13190,6 +16692,14 @@ R(25) = 2500-1250
 $$
 
 $$
+2500 - 1250 = 1250
+$$
+
+$$
+R(25) = 1250
+$$
+
+$$
 = 1250
 $$
 
@@ -13244,6 +16754,14 @@ R'(20) = 100-80
 $$
 
 $$
+100 - 80 = 20
+$$
+
+$$
+R'(20) = 20
+$$
+
+$$
 = 20
 $$
 
@@ -13263,6 +16781,22 @@ So the statement is True.`,
 Relate the revenue slope to demand sensitivity: unit elasticity sits at the revenue peak, while inelastic demand only says a small price rise still helps revenue.
 
 Unit elasticity means $|\\varepsilon|=1$, not perfect inelasticity. Perfect inelasticity would mean $\\varepsilon=0$ (quantity does not respond to price at all). At $p=25$ one has $\\varepsilon=-1$, which is the revenue-peak condition, not zero elasticity. The claim misreads $|\\varepsilon|=1$ as perfect inelasticity.
+
+$$
+|\\varepsilon| = 1
+$$
+
+$$
+\\varepsilon = 0
+$$
+
+$$
+p = 25
+$$
+
+$$
+\\varepsilon = -1
+$$
 
 So the statement is False.`
     ],
@@ -13378,6 +16912,12 @@ A downward bend at a flat slope is the second-derivative test for a local maximu
 
 Pause on the classification step: $f''<0$ at a critical point marks a local peak, $f''>0$ marks a local trough, and $f''=0$ makes the usual bend test inconclusive.
 
+$$
+f'' = 0
+$$
+
+which matches the claim.
+
 So the statement is True.`,
       `**D.** → True
 
@@ -13387,6 +16927,14 @@ At $p=20$, audience size and revenue are
 
 $$
 D(20) = 120-60
+$$
+
+$$
+120 - 60 = 60
+$$
+
+$$
+D(20) = 60
 $$
 
 $$
@@ -13419,6 +16967,18 @@ So the statement is True.`,
 Relate the revenue slope to demand sensitivity: unit elasticity sits at the revenue peak, while inelastic demand only says a small price rise still helps revenue.
 
 For this linear demand, setting $R'(p)=0$ and setting $|\\varepsilon(p)|=1$ are algebraically equivalent: both force $p=20$. The price that flattens revenue *is* the unit-elastic price; they cannot differ for this demand curve. The claim asserts they can differ.
+
+$$
+R'(p) = 0
+$$
+
+$$
+|\\varepsilon(p)| = 1
+$$
+
+$$
+p = 20
+$$
 
 So the statement is False.`
     ],
@@ -13465,6 +17025,20 @@ $$
 $$
 
 Absolute elasticity $2/3<1$, so demand is inelastic at that price. Both the quantity and the elasticity match the claim.
+
+$$
+p = 20
+$$
+
+$$
+D(20) = 100-40
+$$
+
+$$
+= 60
+$$
+
+which matches the claim.
 
 So the statement is True.`,
       `**B.** → True
@@ -13527,6 +17101,14 @@ R'(60) = 50-60
 $$
 
 $$
+50 - 60 = -10
+$$
+
+$$
+R'(60) = -10
+$$
+
+$$
 = -10
 $$
 
@@ -13548,6 +17130,26 @@ Relate the revenue slope to demand sensitivity: unit elasticity sits at the reve
 The elasticity shortcut produced $MR=-10$, and differentiating $R(Q)$ produced $R'(60)=-10$. The two calculations agree exactly. The elasticity formula is not a different answer — it is an equivalent route to the same marginal revenue
 
 Matching $R'=C'$ is the same as $P'=0$ because $P'=R'-C'$; that finds a critical point of profit, after which the bend of $P$ still decides peak versus trough.
+
+$$
+MR = -10
+$$
+
+$$
+R'(60) = -10
+$$
+
+$$
+R' = C'
+$$
+
+$$
+P' = 0
+$$
+
+$$
+P' = R'-C'
+$$
 
 So the statement is True.`,
       `**E.** → True
@@ -13604,6 +17206,20 @@ Absolute elasticity $1/3<1$, so demand is inelastic. Quantity and elasticity mat
 
 For ordinary downward-sloping demand, revenue peaks where point elasticity equals $-1$; inelastic demand ($|\\varepsilon|<1$) means a small price rise still raises revenue, not that the current price is already optimal.
 
+$$
+p = 20
+$$
+
+$$
+D_A(20) = 80-20
+$$
+
+$$
+= 60
+$$
+
+which matches the claim.
+
 So the statement is True.`,
       `**B.** → True
 
@@ -13646,6 +17262,12 @@ Larger absolute elasticity means greater price sensitivity. Cart B's customers a
 
 An interior candidate for a smooth extremum must make the first derivative vanish; that flat-slope equation only produces candidates, not finished labels.
 
+$$
+p = 20
+$$
+
+which matches the claim.
+
 So the statement is True.`,
       `**D.** → True
 
@@ -13663,12 +17285,38 @@ $$
 
 A positive marginal revenue means a small price increase from $20$ euros still raises A's cup revenue (consistent with inelastic demand).
 
+$$
+R_A(p) = p(80-p)
+$$
+
+$$
+= 80p-p^{2}
+$$
+
+which matches the claim.
+
 So the statement is True.`,
       `**E.** → False
 
 Relate the revenue slope to demand sensitivity: unit elasticity sits at the revenue peak, while inelastic demand only says a small price rise still helps revenue.
 
-Inelastic demand at $p=20$ means a *small* price increase raises revenue — it does not mean $p=20$ already maximises revenue. Cart A's revenue peak solves $R_A'(p)=0$, giving $p=40$, not $p=20$. Confusing “inelastic, so raise price” with “already at the maximum” is the trap.
+Inelastic demand at $p=20$ means a *small* price increase raises revenue — it does not mean $p=20$ already maximises revenue. Cart A's revenue peak solves $R_A'(p)=0$, giving
+
+$$
+p = 40
+$$, not $p=20$. Confusing “inelastic, so raise price” with “already at the maximum” is the trap.
+
+$$
+p = 20
+$$
+
+$$
+R_A'(p) = 0
+$$
+
+$$
+p = 40
+$$
 
 So the statement is False.`
     ],
@@ -13714,6 +17362,12 @@ $$
 
 Simplifying, $p(x)=10x+100+20x-2x^{2}=30x+100-2x^{2}$ (equivalently $200-100+30x-2x^{2}$). Either way, profit reduces to a genuine one-variable function of $x$.
 
+$$
+y = 10-x
+$$
+
+which matches the claim.
+
 So the statement is True.`,
       `**B.** → True
 
@@ -13756,6 +17410,28 @@ so the flat spot is a local profit peak by the second-derivative test. Both the 
 
 Pause on the classification step: $f''<0$ at a critical point marks a local peak, $f''>0$ marks a local trough, and $f''=0$ makes the usual bend test inconclusive.
 
+$$
+y = 2.5
+$$
+
+$$
+x = 7.5
+$$
+
+$$
+y = 10-7.5
+$$
+
+$$
+= 2.5
+$$
+
+$$
+f'' = 0
+$$
+
+which matches the claim.
+
 So the statement is True.`,
       `**D.** → True
 
@@ -13796,7 +17472,35 @@ So the statement is True.`,
 
 Reduce the constrained problem to one free variable, then differentiate the reduced objective exactly as in unconstrained single-variable calculus.
 
-Ignoring the constraint, one would set $\\partial P/\\partial x=30-2x=0$ and $\\partial P/\\partial y=20-2y=0$, giving $(x,y)=(15,10)$, which violates $x+y=10$. The unconstrained critical point is not feasible, and the constrained optimum $(7.5,2.5)$ is different. Treating $x$ and $y$ as unrelated does *not* give the same answer.
+Ignoring the constraint, one would set $\\partial P/\\partial x=30-2x=0$ and $\\partial P/\\partial y=20-2y=0$, giving
+
+$$
+(x,y) = (15,10)
+$$, which violates $x+y=10$. The unconstrained critical point is not feasible, and the constrained optimum $(7.5,2.5)$ is different. Treating $x$ and $y$ as unrelated does *not* give the same answer.
+
+$$
+\\partial P/\\partial x = 30-2x
+$$
+
+$$
+= 0
+$$
+
+$$
+\\partial P/\\partial y = 20-2y
+$$
+
+$$
+= 0
+$$
+
+$$
+(x,y) = (15,10)
+$$
+
+$$
+x+y = 10
+$$
 
 So the statement is False.`
     ],
@@ -13894,6 +17598,16 @@ confirms a local maximum. Layout $10$–$20$–$10$ maximises area locally, matc
 
 Pause on the classification step: $f''<0$ at a critical point marks a local peak, $f''>0$ marks a local trough, and $f''=0$ makes the usual bend test inconclusive.
 
+$$
+x = 10
+$$
+
+$$
+40-20 = 20
+$$
+
+which matches the claim.
+
 So the statement is True.`,
       `**D.** → True
 
@@ -13972,6 +17686,24 @@ That is exactly the claimed one-variable cost function
 
 Pause on the classification step: $f''<0$ at a critical point marks a local peak, $f''>0$ marks a local trough, and $f''=0$ makes the usual bend test inconclusive.
 
+$$
+y = \\dfrac{16}{x}
+$$
+
+$$
+C(x) = 2x+\\dfrac{128}{x}
+$$
+
+$$
+xy = 16
+$$
+
+$$
+y = 16/x
+$$
+
+which matches the claim.
+
 So the statement is True.`,
       `**B.** → True
 
@@ -14019,6 +17751,14 @@ C(8) = 16+16
 $$
 
 $$
+16 + 16 = 32
+$$
+
+$$
+C(8) = 32
+$$
+
+$$
 = 32
 $$
 
@@ -14043,12 +17783,64 @@ Along $xy=16$, a cost-minimising interior point balances relative input prices a
 
 Pause on the classification step: $f''<0$ at a critical point marks a local peak, $f''>0$ marks a local trough, and $f''=0$ makes the usual bend test inconclusive.
 
+$$
+xy = 16
+$$
+
+$$
+C_x = 2
+$$
+
+$$
+C_y = 8
+$$
+
+$$
+C_x/C_y = 1/4
+$$
+
+$$
+y/x = 2/8
+$$
+
+$$
+= 1/4
+$$
+
+$$
+f'' = 0
+$$
+
 So the statement is True.`,
       `**E.** → False
 
 Reduce the constrained problem to one free variable, then differentiate the reduced objective exactly as in unconstrained single-variable calculus.
 
 Other pairs on $xy=16$ have different costs. For example $(4,4)$ costs $C=8+32=40>32$, and $(16,1)$ costs $32+8=40>32$. Cost is *not* constant along the isoquant, so substitution (or an equivalent method) is necessary.
+
+$$
+xy = 16
+$$
+
+$$
+C = 8+32
+$$
+
+$$
+8 + 32 = 40
+$$
+
+$$
+C = 40
+$$
+
+$$
+= 40>32
+$$
+
+$$
+32+8 = 40>32
+$$
 
 So the statement is False.`
     ],
@@ -14153,6 +17945,14 @@ R'(30) = 90-60
 $$
 
 $$
+90 - 60 = 30
+$$
+
+$$
+R'(30) = 30
+$$
+
+$$
 = 30
 $$
 
@@ -14180,6 +17980,14 @@ R'(60) = 90-120
 $$
 
 $$
+90 - 120 = -30
+$$
+
+$$
+R'(60) = -30
+$$
+
+$$
 = -30
 $$
 
@@ -14201,6 +18009,10 @@ So the statement is True.`,
 Relate the revenue slope to demand sensitivity: unit elasticity sits at the revenue peak, while inelastic demand only says a small price rise still helps revenue.
 
 Elastic demand ($|\\varepsilon|>1$) means a small price *increase* lowers revenue — equivalently, a price cut raises revenue. It does *not* mean the current fare already maximises revenue. Revenue is maximised only at unit elasticity ($|\\varepsilon|=1$). The claim reverses the meaning of elastic demand.
+
+$$
+|\\varepsilon| = 1
+$$
 
 So the statement is False.`
     ],
@@ -14235,7 +18047,11 @@ Name the objective, find where its slope is flat, then classify with the bend (o
 After cutting squares of side $x$ from each corner and folding, the box has height $x$ and square base of side $12-2x$. Volume is therefore
 
 $$
-V(x) = x(12-2x)^{2},\\qquad 0<x<6.
+V(x) = x(12-2x)^{2}
+$$
+
+$$
+0<x<6.
 $$
 
 That geometric description matches the claim exactly
@@ -14286,6 +18102,16 @@ The roots are $x=2$ and $x=6$. Only $x=2$ lies strictly inside $(0,6)$; $x=6$ is
 
 An interior candidate for a smooth extremum must make the first derivative vanish; that flat-slope equation only produces candidates, not finished labels.
 
+$$
+x = 2
+$$
+
+$$
+x = 6
+$$
+
+which matches the claim.
+
 So the statement is True.`,
       `**D.** → True
 
@@ -14301,7 +18127,11 @@ $$
 V(2) = 128,
 $$
 
-and differentiating $V'(x)=12(x-2)(x-6)$ (or using $V''(x)=24x-96$) gives $V''(2)=-48<0$. Downward bend plus volume $128$ means that cut maximises volume locally
+and differentiating $V'(x)=12(x-2)(x-6)$ (or using $V''(x)=24x-96$) gives
+
+$$
+V''(2) = -48<0
+$$. Downward bend plus volume $128$ means that cut maximises volume locally
 
 Pause on the classification step: $f''<0$ at a critical point marks a local peak, $f''>0$ marks a local trough, and $f''=0$ makes the usual bend test inconclusive.
 
@@ -14311,6 +18141,14 @@ So the statement is True.`,
 Flat slope finds a candidate; the bend (or a sign chart) then classifies peak versus trough. Keep those two steps separate.
 
 Finding $V'(x)=0$ only produces the candidate $x=2$. Without checking the bend (or comparing with behaviour as $x\\to 0^{+}$ and $x\\to 6^{-}$), one has not proved a global maximum on $(0,6)$. The critical-point list alone does not finish the maximisation argument.
+
+$$
+V'(x) = 0
+$$
+
+$$
+x = 2
+$$
 
 So the statement is False.`
     ],
@@ -14375,6 +18213,12 @@ That is exactly the first-derivative test for a local maximum of $f$ at $x=5$
 
 Putting that figure reading next to the claim, every asserted sign, height, or classification matches what the axes show.
 
+$$
+x = 5
+$$
+
+which matches the claim.
+
 So the statement is True.`,
       `**C.** → False
 
@@ -14389,6 +18233,16 @@ $$
 so $x=3$ is not even a critical point of $f$. That nonzero peak of $f'$ is where $f$ climbs most steeply in the window, not a local minimum of $f$
 
 Once that mismatch with the figure is clear, the claim cannot stand. Comparing the assertion with the axes.
+
+$$
+x = 3
+$$
+
+$$
+f'(3) = 4
+$$
+
+which does not match the claim.
 
 So the statement is False.`,
       `**D.** → True
@@ -14469,6 +18323,12 @@ By the first-derivative test that crossing is a local maximum of $f$
 
 Putting that figure reading next to the claim, every asserted sign, height, or classification matches what the axes show.
 
+$$
+x = 2
+$$
+
+which matches the claim.
+
 So the statement is True.`,
       `**B.** → True
 
@@ -14487,6 +18347,12 @@ $$
 A $-$ to $+$ change of $f'$ is a local minimum of $f$ at $x=4$
 
 Putting that figure reading next to the claim, every asserted sign, height, or classification matches what the axes show.
+
+$$
+x = 4
+$$
+
+which matches the claim.
 
 So the statement is True.`,
       `**C.** → True
@@ -14522,6 +18388,12 @@ That matches the claim's reading of the figure
 
 Putting that figure reading next to the claim, every asserted sign, height, or classification matches what the axes show.
 
+$$
+x = 3
+$$
+
+which matches the claim.
+
 So the statement is True.`,
       `**E.** → False
 
@@ -14540,6 +18412,12 @@ $$
 so $x=3$ is not a critical point of $f$ at all. Negativity of $f'$ says $f$ is decreasing there, not that a local minimum occurs
 
 Once that mismatch with the figure is clear, the claim cannot stand. Comparing the assertion with the axes.
+
+$$
+x = 3
+$$
+
+which does not match the claim.
 
 So the statement is False.`
     ],
@@ -14586,6 +18464,12 @@ That lowest neighbourhood point is exactly a local minimum
 
 Putting that figure reading next to the claim, every asserted sign, height, or classification matches what the axes show.
 
+$$
+x = 1
+$$
+
+which matches the claim.
+
 So the statement is True.`,
       `**B.** → True
 
@@ -14600,6 +18484,12 @@ $$
 That peak in a neighbourhood is a local maximum
 
 Putting that figure reading next to the claim, every asserted sign, height, or classification matches what the axes show.
+
+$$
+x = 5
+$$
+
+which matches the claim.
 
 So the statement is True.`,
       `**C.** → True
@@ -14616,6 +18506,16 @@ A rising stretch means $f$ is increasing there
 
 Putting that figure reading next to the claim, every asserted sign, height, or classification matches what the axes show.
 
+$$
+x = 1
+$$
+
+$$
+x = 5
+$$
+
+which matches the claim.
+
 So the statement is True.`,
       `**D.** → True
 
@@ -14630,6 +18530,12 @@ $$
 So the steepest upward stretch in the window is near $x=3$, and the statement is True.
 
 Putting that figure reading next to the claim, every asserted sign, height, or classification matches what the axes show.
+
+$$
+x = 3
+$$
+
+which matches the claim.
 
 So the statement is True.`,
       `**E.** → False
@@ -14740,6 +18646,12 @@ P'(1)>1
 $$
 
 Putting that figure reading next to the claim, every asserted sign, height, or classification matches what the axes show.
+
+$$
+x = 1
+$$
+
+which matches the claim.
 
 So the statement is True.`,
       `**E.** → False
@@ -14854,6 +18766,12 @@ That coordinate reading matches the claim
 
 Putting that figure reading next to the claim, every asserted sign, height, or classification matches what the axes show.
 
+$$
+x = 1
+$$
+
+which matches the claim.
+
 So the statement is True.`,
       `**E.** → True
 
@@ -14961,6 +18879,12 @@ so the height is strictly greater than $2$, and the statement is True.
 
 Putting that figure reading next to the claim, every asserted sign, height, or classification matches what the axes show.
 
+$$
+x = 2
+$$
+
+which matches the claim.
+
 So the statement is True.`,
       `**E.** → False
 
@@ -15025,6 +18949,12 @@ That lowest neighbourhood point is a local minimum
 
 Putting that figure reading next to the claim, every asserted sign, height, or classification matches what the axes show.
 
+$$
+x = 1
+$$
+
+which matches the claim.
+
 So the statement is True.`,
       `**B.** → True
 
@@ -15040,6 +18970,12 @@ That peak in a neighbourhood is a local maximum
 
 Putting that figure reading next to the claim, every asserted sign, height, or classification matches what the axes show.
 
+$$
+x = 2.5
+$$
+
+which matches the claim.
+
 So the statement is True.`,
       `**C.** → True
 
@@ -15054,6 +18990,12 @@ $$
 That second valley is a local minimum
 
 Putting that figure reading next to the claim, every asserted sign, height, or classification matches what the axes show.
+
+$$
+x = 5
+$$
+
+which matches the claim.
 
 So the statement is True.`,
       `**D.** → True
@@ -15183,6 +19125,12 @@ so the maximum height of $f'$ in the window is at $x=2$ near height $4$, and the
 
 Putting that figure reading next to the claim, every asserted sign, height, or classification matches what the axes show.
 
+$$
+x = 2
+$$
+
+which matches the claim.
+
 So the statement is True.`,
       `**E.** → False
 
@@ -15285,6 +19233,12 @@ That is exactly the reading named in the claim
 
 Putting that figure reading next to the claim, every asserted sign, height, or classification matches what the axes show.
 
+$$
+x = 0
+$$
+
+which matches the claim.
+
 So the statement is True.`,
       `**D.** → True
 
@@ -15308,7 +19262,15 @@ Easy trap: a maximum of the derivative graph is where $f$ climbs most steeply, n
 At the peak of $f'$ one still has $f'>0$, so $f$ is still increasing there. A local maximum of $f$ needs a zero of $f'$ with a $+$ to $-$ change:
 
 $$
-f'>0\\text{ at the peak of }f'\\qquad\\nRightarrow\\qquad\\text{local max of }f
+f'>0\\text{ at the peak of }f'
+$$
+
+$$
+\\nRightarrow
+$$
+
+$$
+\\text{local max of }f
 $$
 
 so the peak of $f'$ is not a local maximum of $f$, and the statement is False.
@@ -15360,6 +19322,12 @@ That is the first-derivative test for a local minimum of $f$ at $x=4$
 
 Putting that figure reading next to the claim, every asserted sign, height, or classification matches what the axes show.
 
+$$
+x = 4
+$$
+
+which matches the claim.
+
 So the statement is True.`,
       `**B.** → True
 
@@ -15405,6 +19373,12 @@ so $f'$ is negative at $x=2$, and the statement is True.
 
 Putting that figure reading next to the claim, every asserted sign, height, or classification matches what the axes show.
 
+$$
+x = 2
+$$
+
+which matches the claim.
+
 So the statement is True.`,
       `**E.** → True
 
@@ -15419,6 +19393,12 @@ $$
 so $x=1$ need not be a local extremum of $f$, and the statement is True.
 
 Putting that figure reading next to the claim, every asserted sign, height, or classification matches what the axes show.
+
+$$
+x = 1
+$$
+
+which matches the claim.
 
 So the statement is True.`
     ],
@@ -15491,6 +19471,12 @@ so the claim's scale reading is correct, and the statement is True.
 
 Putting that figure reading next to the claim, every asserted sign, height, or classification matches what the axes show.
 
+$$
+x = 4
+$$
+
+which matches the claim.
+
 So the statement is True.`,
       `**D.** → False
 
@@ -15499,11 +19485,11 @@ A local minimum of $f$ needs a critical point where $f'=0$ and the sign of $f'$ 
 A local minimum of cost needs $C'=0$ with a $-$ to $+$ sign change. Here $C'$ stays strictly positive in $(0,6)$:
 
 $$
-C'(x)>0\\quad\\text{on }(0,6)\\qquad
+C'(x)>0\\quad\\text{on }(0,6)
 $$
 
 $$
-\\qquad\\text{no critical point of }C
+\\text{no critical point of }C
 $$
 
 Positivity of $C'$ only says cost is rising, not that a local minimum occurs
@@ -15528,6 +19514,12 @@ $$
 so the statement matches the figure, and the statement is True.
 
 Putting that figure reading next to the claim, every asserted sign, height, or classification matches what the axes show.
+
+$$
+x = 0
+$$
+
+which matches the claim.
 
 So the statement is True.`
     ],
@@ -15572,6 +19564,12 @@ so $f$ is increasing at $x=2$, and the statement is True.
 
 Putting that figure reading next to the claim, every asserted sign, height, or classification matches what the axes show.
 
+$$
+x = 2
+$$
+
+which matches the claim.
+
 So the statement is True.`,
       `**B.** → True
 
@@ -15586,6 +19584,20 @@ $$
 A negative derivative means $f$ is decreasing at $x=4$
 
 Putting that figure reading next to the claim, every asserted sign, height, or classification matches what the axes show.
+
+$$
+x = 4
+$$
+
+$$
+x = 2.5
+$$
+
+$$
+x = 5
+$$
+
+which matches the claim.
 
 So the statement is True.`,
       `**C.** → True
@@ -15639,6 +19651,12 @@ $$
 so $f'(0)$ is not positive, and the statement is False.
 
 Once that mismatch with the figure is clear, the claim cannot stand. Comparing the assertion with the axes.
+
+$$
+x = 1
+$$
+
+which does not match the claim.
 
 So the statement is False.`
     ],
@@ -15750,7 +19768,11 @@ f'(0)
 $$
 
 $$
-4,\\qquad -1<f'(6)<0
+4
+$$
+
+$$
+-1<f'(6)<0
 $$
 
 so both readings match the claim, and the statement is True.
@@ -15806,6 +19828,12 @@ That is the first-derivative test for a local minimum of $f$ at $x=0$
 
 Putting that figure reading next to the claim, every asserted sign, height, or classification matches what the axes show.
 
+$$
+x = 0
+$$
+
+which matches the claim.
+
 So the statement is True.`,
       `**B.** → True
 
@@ -15814,7 +19842,11 @@ On the open interval $(-3,0)$, monotonicity of $f$ is settled by the sign of $f'
 On $(-3,0)$ the plotted derivative sits below the axis, and on $(0,3)$ it sits above:
 
 $$
-f'<0\\text{ on }(-3,0),\\qquad f'>0\\text{ on }(0,3)
+f'<0\\text{ on }(-3,0)
+$$
+
+$$
+f'>0\\text{ on }(0,3)
 $$
 
 so $f$ decreases on the left and increases on the right, and the statement is True.
@@ -15833,7 +19865,11 @@ $$
 $$
 
 $$
-4,\\qquad f'(-1)
+4
+$$
+
+$$
+f'(-1)
 $$
 
 $$
@@ -15929,6 +19965,12 @@ so $f$ is increasing at $x=0$, and the statement is True.
 
 Putting that figure reading next to the claim, every asserted sign, height, or classification matches what the axes show.
 
+$$
+x = 0
+$$
+
+which matches the claim.
+
 So the statement is True.`,
       `**B.** → True
 
@@ -15975,6 +20017,16 @@ f'(3)>4
 $$
 
 Putting that figure reading next to the claim, every asserted sign, height, or classification matches what the axes show.
+
+$$
+x = 3
+$$
+
+$$
+x = 2
+$$
+
+which matches the claim.
 
 So the statement is True.`,
       `**E.** → False
@@ -16037,7 +20089,11 @@ On the shared plane, match each colour to its named derivative, then read height
 Brown is $f'$ and green is $f''$ on shared axes. At $x=0$ the brown curve meets the origin while the green curve sits above the axis near height $8$.
 
 $$
-f'(0) = 0,\\qquad f''(0)
+f'(0) = 0
+$$
+
+$$
+f''(0)
 $$
 
 $$
@@ -16056,16 +20112,22 @@ Where the claim says the level function is increasing, confirm that the correspo
 Green is $f''$. Near $x=0$ that curve is positive, so the slope of brown is rising:
 
 $$
-f''(0)>0\\qquad
+f''(0)>0
 $$
 
 $$
-\\qquad f'\\text{ increasing through }x = 0
+f'\\text{ increasing through }x = 0
 $$
 
 Positive $f''$ means brown climbs through the origin
 
 Putting that figure reading next to the claim, every asserted sign, height, or classification matches what the axes show.
+
+$$
+x = 0
+$$
+
+which matches the claim.
 
 So the statement is True.`,
       `**C.** → True
@@ -16083,6 +20145,12 @@ $$
 $$
 
 Putting that figure reading next to the claim, every asserted sign, height, or classification matches what the axes show.
+
+$$
+x = \\pm 1
+$$
+
+which matches the claim.
 
 So the statement is True.`,
       `**D.** → True
@@ -16161,6 +20229,12 @@ so the local minimum of $f$ lines up with a zero of $f'$, and the statement is T
 
 Putting that figure reading next to the claim, every asserted sign, height, or classification matches what the axes show.
 
+$$
+x = 0
+$$
+
+which matches the claim.
+
 So the statement is True.`,
       `**B.** → True
 
@@ -16210,6 +20284,12 @@ so the slope of brown at $x=1$ is about $4$, and the statement is True.
 
 Putting that figure reading next to the claim, every asserted sign, height, or classification matches what the axes show.
 
+$$
+x = 1
+$$
+
+which matches the claim.
+
 So the statement is True.`,
       `**E.** → False
 
@@ -16218,7 +20298,15 @@ On the shared plane, match each colour to its named derivative, then read height
 The highest point of green is a maximum of $f'$, which is where $f$ climbs most steeply — not where $f$ itself has a local maximum:
 
 $$
-\\max f'\\qquad\\nRightarrow\\qquad\\text{local max of }f
+\\max f'
+$$
+
+$$
+\\nRightarrow
+$$
+
+$$
+\\text{local max of }f
 $$
 
 Local maxima of brown need zeros of green with a $+$ to $-$ change
@@ -16261,10 +20349,20 @@ On the shared plane, match each colour to its named derivative, then read height
 Brown is $P'$ and green is $Q'$ on the same axes. At $x=2$ both curves sit above the horizontal axis, so both derivatives are positive there.
 
 $$
-P'(2)>0,\\qquad Q'(2)>0
+P'(2)>0
+$$
+
+$$
+Q'(2)>0
 $$
 
 Putting that figure reading next to the claim, every asserted sign, height, or classification matches what the axes show.
+
+$$
+x = 2
+$$
+
+which matches the claim.
 
 So the statement is True.`,
       `**B.** → True
@@ -16274,12 +20372,22 @@ On the shared plane, match each colour to its named derivative, then read height
 At $x=5$ the green curve meets the axis in a clear crossing, while the brown curve sits below the axis.
 
 $$
-Q'(5) = 0,\\qquad P'(5)<0
+Q'(5) = 0
+$$
+
+$$
+P'(5)<0
 $$
 
 so green is zero and brown is negative at $x=5$, and the statement is True.
 
 Putting that figure reading next to the claim, every asserted sign, height, or classification matches what the axes show.
+
+$$
+x = 5
+$$
+
+which matches the claim.
 
 So the statement is True.`,
       `**C.** → True
@@ -16295,6 +20403,16 @@ $$
 That matches the claim that brown has a single hump with two zeros
 
 Putting that figure reading next to the claim, every asserted sign, height, or classification matches what the axes show.
+
+$$
+x = 0
+$$
+
+$$
+x = 5
+$$
+
+which matches the claim.
 
 So the statement is True.`,
       `**D.** → True
@@ -16325,6 +20443,12 @@ $$
 so the larger of the two is brown's value, and the statement is True.
 
 Putting that figure reading next to the claim, every asserted sign, height, or classification matches what the axes show.
+
+$$
+x = 2
+$$
+
+which matches the claim.
 
 So the statement is True.`
     ],
@@ -16358,10 +20482,20 @@ On the shared plane, match each colour to its named derivative, then read height
 Brown is $f'$ and green is $f''$. At $x=4$, reading both heights on the shared scale, brown sits above the axis while green sits below it.
 
 $$
-f'(4)>0,\\qquad f''(4)<0
+f'(4)>0
+$$
+
+$$
+f''(4)<0
 $$
 
 Putting that figure reading next to the claim, every asserted sign, height, or classification matches what the axes show.
+
+$$
+x = 4
+$$
+
+which matches the claim.
 
 So the statement is True.`,
       `**B.** → True
@@ -16377,6 +20511,12 @@ $$
 so green crosses zero under the peak of brown, and the statement is True.
 
 Putting that figure reading next to the claim, every asserted sign, height, or classification matches what the axes show.
+
+$$
+x = 3
+$$
+
+which matches the claim.
 
 So the statement is True.`,
       `**C.** → True
@@ -16407,6 +20547,12 @@ $$
 Positive $f'$ means $f$ is increasing at $x=2$
 
 Putting that figure reading next to the claim, every asserted sign, height, or classification matches what the axes show.
+
+$$
+x = 2
+$$
+
+which matches the claim.
 
 So the statement is True.`,
       `**E.** → False
@@ -16467,6 +20613,12 @@ $$
 so the peak of $f'$ lines up with a zero of $f''$, and the statement is True.
 
 Putting that figure reading next to the claim, every asserted sign, height, or classification matches what the axes show.
+
+$$
+x = 2
+$$
+
+which matches the claim.
 
 So the statement is True.`,
       `**B.** → True
@@ -16583,6 +20735,12 @@ That alignment of a $+$ to $-$ change of $f''$ with a peak of $f'$ is exactly wh
 
 Putting that figure reading next to the claim, every asserted sign, height, or classification matches what the axes show.
 
+$$
+x = 2
+$$
+
+which matches the claim.
+
 So the statement is True.`,
       `**B.** → True
 
@@ -16627,6 +20785,12 @@ $$
 A small positive slope means $f$ is still increasing, but slowly
 
 Putting that figure reading next to the claim, every asserted sign, height, or classification matches what the axes show.
+
+$$
+x = 6
+$$
+
+which matches the claim.
 
 So the statement is True.`,
       `**E.** → True
@@ -16682,6 +20846,12 @@ and the statement is True.
 
 Putting that figure reading next to the claim, every asserted sign, height, or classification matches what the axes show.
 
+$$
+x = 1
+$$
+
+which matches the claim.
+
 So the statement is True.`,
       `**B.** → True
 
@@ -16690,12 +20860,22 @@ On the shared plane, match each colour to its named derivative, then read height
 At $x=5$ the brown curve has already crossed below the axis while the green curve remains above it.
 
 $$
-P'(5)<0,\\qquad C'(5)>0
+P'(5)<0
+$$
+
+$$
+C'(5)>0
 $$
 
 so brown is below the axis and green is still positive, and the statement is True.
 
 Putting that figure reading next to the claim, every asserted sign, height, or classification matches what the axes show.
+
+$$
+x = 5
+$$
+
+which matches the claim.
 
 So the statement is True.`,
       `**C.** → True
@@ -16743,7 +20923,15 @@ Compare each piece of the claim with the figure. The False verdict comes from a 
 A profit-maximising output is where $P'$ changes from $+$ to $-$ (a zero of brown with a sign flip). The place where brown equals green is where $P'=C'$, a different event:
 
 $$
-P' = C'\\qquad\\nRightarrow\\qquad P'\\text{ changes }+\\to-
+P' = C'
+$$
+
+$$
+\\nRightarrow
+$$
+
+$$
+P'\\text{ changes }+\\to-
 $$
 
 Meeting of the two curves is not the profit-peak test
@@ -16782,10 +20970,20 @@ Brown is $f'$ and green is $g'$ on one shared plane. At $x=0$ compare both colou
 Both curves sit below the axis at that left-hand sample point:
 
 $$
-f'(0)<0,\\qquad g'(0)<0
+f'(0)<0
+$$
+
+$$
+g'(0)<0
 $$
 
 So brown is negative and green is also negative at $x=0$. Both $f$ and $g$ are therefore decreasing at $x=0$. The dual sign reading matches the claim.
+
+$$
+x = 0
+$$
+
+which matches the claim.
 
 So the statement is True.`,
       `**B.** → True
@@ -16793,7 +20991,11 @@ So the statement is True.`,
 Count clear axis crossings of each colour separately on the shared plane. Walk along brown ($f'$) and tally every place it meets the axis in the window; then do the same for green ($g'$), careful not to double-count a single crossing or to confuse the two colours.
 
 $$
-f'\\text{ has three zeros},\\qquad g'\\text{ has two zeros}
+f'\\text{ has three zeros}
+$$
+
+$$
+g'\\text{ has two zeros}
 $$
 
 Those counts come from the figure alone — no algebra beyond the crossings. Three versus two matches the claim exactly.
@@ -16808,6 +21010,12 @@ f'(3)<0
 $$
 
 Brown is therefore negative at $x=3$, and $f$ is decreasing there. That is a direct height reading of brown at the stated $x$-value, matching the claim.
+
+$$
+x = 3
+$$
+
+which matches the claim.
 
 So the statement is True.`,
       `**D.** → True
@@ -16889,6 +21097,16 @@ so $f$ is decreasing on that open interval, and the statement is True.
 
 Putting that figure reading next to the claim, every asserted sign, height, or classification matches what the axes show.
 
+$$
+x = 2
+$$
+
+$$
+x = 3.5
+$$
+
+which matches the claim.
+
 So the statement is True.`,
       `**C.** → True
 
@@ -16904,6 +21122,20 @@ so the derivative is positive at $x=1$, and the statement is True.
 
 Putting that figure reading next to the claim, every asserted sign, height, or classification matches what the axes show.
 
+$$
+x = 1
+$$
+
+$$
+x = 0.5
+$$
+
+$$
+x = 2
+$$
+
+which matches the claim.
+
 So the statement is True.`,
       `**D.** → False
 
@@ -16912,7 +21144,15 @@ On the shared plane, match each colour to its named derivative, then read height
 A local minimum of the graph of $f'$ is where $f''=0$ with a local min of $f'$ — typically an inflection story for $f$, not a local minimum of $f$:
 
 $$
-\\min f'\\qquad\\nRightarrow\\qquad\\min f
+\\min f'
+$$
+
+$$
+\\nRightarrow
+$$
+
+$$
+\\min f
 $$
 
 Local minima of $f$ need zeros of $f'$ with a $-$ to $+$ change
@@ -16994,6 +21234,12 @@ That is a local maximum of $f$ at $x=1$
 
 Putting that figure reading next to the claim, every asserted sign, height, or classification matches what the axes show.
 
+$$
+x = 1
+$$
+
+which matches the claim.
+
 So the statement is True.`,
       `**C.** → True
 
@@ -17013,6 +21259,12 @@ That is a local minimum of $f$ at $x=3$
 
 Putting that figure reading next to the claim, every asserted sign, height, or classification matches what the axes show.
 
+$$
+x = 3
+$$
+
+which matches the claim.
+
 So the statement is True.`,
       `**D.** → True
 
@@ -17027,6 +21279,12 @@ $$
 so $|f'(5)|$ is smaller than $|f'(2)|$, and the statement is True.
 
 Putting that figure reading next to the claim, every asserted sign, height, or classification matches what the axes show.
+
+$$
+x = 5
+$$
+
+which matches the claim.
 
 So the statement is True.`,
       `**E.** → False
@@ -17046,6 +21304,16 @@ $$
 Amplitude decay does not cancel that test
 
 Once that mismatch with the figure is clear, the claim cannot stand. Comparing the assertion with the axes.
+
+$$
+x = 3
+$$
+
+$$
+x = 2
+$$
+
+which does not match the claim.
 
 So the statement is False.`
     ],
@@ -17088,6 +21356,12 @@ $$
 
 Putting that figure reading next to the claim, every asserted sign, height, or classification matches what the axes show.
 
+$$
+x = 3
+$$
+
+which matches the claim.
+
 So the statement is True.`,
       `**B.** → True
 
@@ -17102,6 +21376,12 @@ $$
 Negative second derivative means $f$ is concave down at $x=3$
 
 Putting that figure reading next to the claim, every asserted sign, height, or classification matches what the axes show.
+
+$$
+x = 3
+$$
+
+which matches the claim.
 
 So the statement is True.`,
       `**C.** → True
@@ -17121,6 +21401,12 @@ $$
 so the local maximum of $f'$ lines up with a zero of $f''$, and the statement is True.
 
 Putting that figure reading next to the claim, every asserted sign, height, or classification matches what the axes show.
+
+$$
+x = 1.5
+$$
+
+which matches the claim.
 
 So the statement is True.`,
       `**D.** → True
@@ -17149,7 +21435,11 @@ On the shared plane, match each colour to its named derivative, then read height
 Counting clear axis crossings in the window:
 
 $$
-f'\\text{ has three zeros},\\qquad f''\\text{ has two zeros}
+f'\\text{ has three zeros}
+$$
+
+$$
+f''\\text{ has two zeros}
 $$
 
 Those counts match the claim exactly
@@ -17192,12 +21482,22 @@ On the shared plane, match each colour to its named derivative, then read height
 Brown is $f'$ and green is $f''$. The brown curve crosses the axis at $x=4$, and to the left of that zero it forms a positive hump above the axis.
 
 $$
-f'(x)>0\\quad\\text{for }x\\in(0,4),\\qquad f'(4) = 0
+f'(x)>0\\quad\\text{for }x\\in(0,4)
+$$
+
+$$
+f'(4) = 0
 $$
 
 so the claim's reading of the figure is correct, and the statement is True.
 
 Putting that figure reading next to the claim, every asserted sign, height, or classification matches what the axes show.
+
+$$
+x = 4
+$$
+
+which matches the claim.
 
 So the statement is True.`,
       `**B.** → True
@@ -17217,6 +21517,12 @@ $$
 so the peak of $f'$ lines up with a zero of $f''$, and the statement is True.
 
 Putting that figure reading next to the claim, every asserted sign, height, or classification matches what the axes show.
+
+$$
+x = 1
+$$
+
+which matches the claim.
 
 So the statement is True.`,
       `**C.** → True
@@ -17245,7 +21551,11 @@ f'(0)
 $$
 
 $$
-4,\\qquad f''(0)
+4
+$$
+
+$$
+f''(0)
 $$
 
 $$
@@ -17318,6 +21628,24 @@ Those four readings match the claim
 
 Putting that figure reading next to the claim, every asserted sign, height, or classification matches what the axes show.
 
+$$
+x = 1
+$$
+
+$$
+x = 3
+$$
+
+$$
+x = 2
+$$
+
+$$
+x = 5
+$$
+
+which matches the claim.
+
 So the statement is True.`,
       `**B.** → True
 
@@ -17326,12 +21654,22 @@ On the shared plane, match each colour to its named derivative, then read height
 At $x=1.5$, brown sits below the axis while green sits above it.
 
 $$
-P_A'(1.5)<0,\\qquad P_B'(1.5)>0
+P_A'(1.5)<0
+$$
+
+$$
+P_B'(1.5)>0
 $$
 
 Negative marginal profit means A wants to contract; positive means B wants to expand. Opposite signs give opposite advice
 
 Putting that figure reading next to the claim, every asserted sign, height, or classification matches what the axes show.
+
+$$
+x = 1.5
+$$
+
+which matches the claim.
 
 So the statement is True.`,
       `**C.** → True
@@ -17341,12 +21679,22 @@ Marginal profit is the instantaneous rate of change of profit. When it is negati
 At $x=4$ both curves sit below the axis, so both marginal profits are negative.
 
 $$
-P_A'(4)<0,\\qquad P_B'(4)<0
+P_A'(4)<0
+$$
+
+$$
+P_B'(4)<0
 $$
 
 Negative $P'$ means each firm's profit is decreasing in output there
 
 Putting that figure reading next to the claim, every asserted sign, height, or classification matches what the axes show.
+
+$$
+x = 4
+$$
+
+which matches the claim.
 
 So the statement is True.`,
       `**D.** → True
@@ -17356,12 +21704,22 @@ On the shared plane, match each colour to its named derivative, then read height
 Near $x=0$ both curves sit above the axis, and on the shared scale green starts higher than brown.
 
 $$
-P_A'(0)>0,\\qquad P_B'(0)>P_A'(0)
+P_A'(0)>0
+$$
+
+$$
+P_B'(0)>P_A'(0)
 $$
 
 so both are positive and green starts higher, and the statement is True.
 
 Putting that figure reading next to the claim, every asserted sign, height, or classification matches what the axes show.
+
+$$
+x = 0
+$$
+
+which matches the claim.
 
 So the statement is True.`,
       `**E.** → False
@@ -17371,20 +21729,20 @@ Count clear axis crossings of the relevant curve in the window. Each transversal
 Having two zeros each only says each firm's marginal profit changes sign twice; it says nothing about the height of the profit level $P$ itself:
 
 $$
-\\#\\{P_A'=0\\} = \\#\\{P_B'=0\\}
+\\#\\{P_A' = 0\\}
 $$
 
 $$
-\\nRightarrow
+\\#\\{P_B' = 0\\}
 $$
 
+Equal critical-point counts do not force equal maximal profit levels:
+
 $$
-\\max P_A = \\max P_B
+\\max P_A \\stackrel{?}{=} \\max P_B
 $$
 
-Equal critical-point counts do not force equal maximal profit levels
-
-Once that mismatch with the figure is clear, the claim cannot stand. Comparing the assertion with the axes.
+Once that mismatch with the figure is clear, the claim cannot stand.
 
 So the statement is False.`
     ],
@@ -17491,6 +21849,12 @@ Negative $f'$ means $f$ is decreasing at $x=3$
 
 Putting that figure reading next to the claim, every asserted sign, height, or classification matches what the axes show.
 
+$$
+x = 3
+$$
+
+which matches the claim.
+
 So the statement is True.`
     ],
     difficulty_level: "5/5",
@@ -17527,7 +21891,15 @@ On the shared plane, match each colour to its named derivative, then read height
 Three marginal-profit curves sit on the same axes (brown, green, purple). At $x=0$, brown and purple start above the axis while green starts below it (near height $-1$).
 
 $$
-P_1'(0)>0,\\qquad P_3'(0)>0,\\qquad P_2'(0)<0
+P_1'(0)>0
+$$
+
+$$
+P_3'(0)>0
+$$
+
+$$
+P_2'(0)<0
 $$
 
 so brown and purple are positive while green is negative, and the statement is True.
@@ -17549,6 +21921,12 @@ so green is not positive at $x=0$, and the statement is False.
 
 Once that mismatch with the figure is clear, the claim cannot stand. Comparing the assertion with the axes.
 
+$$
+x = 0
+$$
+
+which does not match the claim.
+
 So the statement is False.`,
       `**C.** → True
 
@@ -17564,6 +21942,12 @@ Negative $P_1'$ means firm 1's profit is decreasing in output at $x=5$
 
 Putting that figure reading next to the claim, every asserted sign, height, or classification matches what the axes show.
 
+$$
+x = 5
+$$
+
+which matches the claim.
+
 So the statement is True.`,
       `**D.** → True
 
@@ -17578,6 +21962,12 @@ $$
 On the figure another firm's curve can meet the axis earlier than firm 1's
 
 Putting that figure reading next to the claim, every asserted sign, height, or classification matches what the axes show.
+
+$$
+x = 0
+$$
+
+which matches the claim.
 
 So the statement is True.`,
       `**E.** → True
@@ -17643,6 +22033,24 @@ Those four readings match the claim
 
 Putting that figure reading next to the claim, every asserted sign, height, or classification matches what the axes show.
 
+$$
+x = 1
+$$
+
+$$
+x = 3
+$$
+
+$$
+x = 2
+$$
+
+$$
+x = 5
+$$
+
+which matches the claim.
+
 So the statement is True.`,
       `**B.** → True
 
@@ -17651,12 +22059,22 @@ Compare each piece of the claim with the figure. The False verdict comes from a 
 At $x=0$ both curves sit above the axis, and green sits higher than brown on the shared scale.
 
 $$
-f'(0)>0,\\qquad g'(0)>f'(0)
+f'(0)>0
+$$
+
+$$
+g'(0)>f'(0)
 $$
 
 so both are positive and $g'(0)>f'(0)$, and the statement is True.
 
 Putting that figure reading next to the claim, every asserted sign, height, or classification matches what the axes show.
+
+$$
+x = 0
+$$
+
+which matches the claim.
 
 So the statement is True.`,
       `**C.** → True
@@ -17666,12 +22084,22 @@ On the shared plane, match each colour to its named derivative, then read height
 At $x=2.5$, between brown's zeros and also between green's early stretch past $x=2$, both curves sit below the axis.
 
 $$
-f'(2.5)<0,\\qquad g'(2.5)<0
+f'(2.5)<0
+$$
+
+$$
+g'(2.5)<0
 $$
 
 so both are negative at $x=2.5$, and the statement is True.
 
 Putting that figure reading next to the claim, every asserted sign, height, or classification matches what the axes show.
+
+$$
+x = 2.5
+$$
+
+which matches the claim.
 
 So the statement is True.`,
       `**D.** → True
@@ -17681,7 +22109,11 @@ On the shared plane, match each colour to its named derivative, then read height
 On $(3,5)$ brown has already crossed back above the axis while green is still below it (until $x=5$).
 
 $$
-f'(x)>0,\\qquad g'(x)<0\\quad\\text{on }(3,5)
+f'(x)>0
+$$
+
+$$
+g'(x)<0\\quad\\text{on }(3,5)
 $$
 
 so $f$ increases and $g$ decreases there, and the statement is True.
@@ -17696,18 +22128,20 @@ Count clear axis crossings of the relevant curve in the window. Each transversal
 Equal numbers of zeros of $f'$ and $g'$ only say $f$ and $g$ have the same number of candidate critical points. The maximal heights are not determined by those counts:
 
 $$
-\\#\\{f'=0\\} = \\#\\{g'=0\\}
+\\#\\{f' = 0\\}
 $$
 
 $$
-\\nRightarrow
+\\#\\{g' = 0\\}
 $$
 
+Equal zero counts do not force equal maxima:
+
 $$
-\\max f = \\max g
+\\max f \\stackrel{?}{=} \\max g
 $$
 
-Once that mismatch with the figure is clear, the claim cannot stand. Comparing the assertion with the axes.
+Once that mismatch with the figure is clear, the claim cannot stand.
 
 So the statement is False.`
     ],
@@ -17749,7 +22183,11 @@ f'(0)
 $$
 
 $$
-4,\\qquad f''(0)
+4
+$$
+
+$$
+f''(0)
 $$
 
 $$
@@ -17772,7 +22210,11 @@ f'(3)
 $$
 
 $$
-10,\\qquad h'(3)
+10
+$$
+
+$$
+h'(3)
 $$
 
 $$
@@ -17795,7 +22237,11 @@ f''(0)
 $$
 
 $$
--4<0,\\qquad f''\\text{ opens upward}
+-4<0
+$$
+
+$$
+f''\\text{ opens upward}
 $$
 
 Both geometric facts match the claim
@@ -17829,7 +22275,15 @@ On the shared plane, match each colour to its named derivative, then read height
 A vertical shift or scaling of brown moves the heights, so purple's axis crossings need not match brown's zeros:
 
 $$
-h' = \\text{shift/scale of }f'\\qquad\\nRightarrow\\qquad\\text{same zero set}
+h' = \\text{shift/scale of }f'
+$$
+
+$$
+\\nRightarrow
+$$
+
+$$
+\\text{same zero set}
 $$
 
 On the figure purple and brown meet the axis at different $x$-values
@@ -17872,12 +22326,22 @@ Compare each piece of the claim with the figure. The False verdict comes from a 
 Brown is $A$, green is $B=A'$, and purple is $A-B$. At $x=3$, reading brown and green against the horizontal axis, both sit below it.
 
 $$
-A(3)<0,\\qquad B(3)<0
+A(3)<0
+$$
+
+$$
+B(3)<0
 $$
 
 so both are negative at $x=3$, and the statement is True.
 
 Putting that figure reading next to the claim, every asserted sign, height, or classification matches what the axes show.
+
+$$
+x = 3
+$$
+
+which matches the claim.
 
 So the statement is True.`,
       `**B.** → False
@@ -17893,6 +22357,12 @@ $$
 Purple sits above brown, not strictly below it. The claimed inequality runs the wrong way on the figure
 
 Once that mismatch with the figure is clear, the claim cannot stand. Comparing the assertion with the axes.
+
+$$
+x = 3
+$$
+
+which does not match the claim.
 
 So the statement is False.`,
       `**C.** → True
@@ -17942,6 +22412,12 @@ $$
 so the claim's reading is correct, and the statement is True.
 
 Putting that figure reading next to the claim, every asserted sign, height, or classification matches what the axes show.
+
+$$
+A = B
+$$
+
+which matches the claim.
 
 So the statement is True.`
     ],
@@ -18003,6 +22479,12 @@ $$
 
 Putting that figure reading next to the claim, every asserted sign, height, or classification matches what the axes show.
 
+$$
+x = -1
+$$
+
+which matches the claim.
+
 So the statement is True.`,
       `**C.** → True
 
@@ -18017,6 +22499,16 @@ $$
 Hence $f$ decreases on $(1,2)$
 
 Putting that figure reading next to the claim, every asserted sign, height, or classification matches what the axes show.
+
+$$
+x = 1
+$$
+
+$$
+x = 2
+$$
+
+which matches the claim.
 
 So the statement is True.`,
       `**D.** → True
@@ -18047,6 +22539,12 @@ $$
 so $x=-2$ is a local minimum of $f$, not a local maximum, and the statement is False.
 
 Once that mismatch with the figure is clear, the claim cannot stand. Comparing the assertion with the axes.
+
+$$
+x = -2
+$$
+
+which does not match the claim.
 
 So the statement is False.`
     ],
@@ -18082,12 +22580,22 @@ On the shared plane, match each colour to its named derivative, then read height
 Brown is $f'$, green is $f''$, and purple is the vertical shift $f'-2$. At $x=0$, brown sits below the axis and purple, being two units lower, sits even further below.
 
 $$
-f'(0)<0,\\qquad f'(0)-2<f'(0)
+f'(0)<0
+$$
+
+$$
+f'(0)-2<f'(0)
 $$
 
 so brown is below and purple is even lower, and the statement is True.
 
 Putting that figure reading next to the claim, every asserted sign, height, or classification matches what the axes show.
+
+$$
+x = 0
+$$
+
+which matches the claim.
 
 So the statement is True.`,
       `**B.** → True
@@ -18187,7 +22695,15 @@ On the shared plane, match each colour to its named derivative, then read height
 Brown, green, and purple are three firms' marginal profits. At $x=3$, brown and purple sit above the axis while green sits below it.
 
 $$
-P_{\\text{brown}}'(3)>0,\\qquad P_{\\text{purple}}'(3)>0,\\qquad P_{\\text{green}}'(3)<0
+P_{\\text{brown}}'(3)>0
+$$
+
+$$
+P_{\\text{purple}}'(3)>0
+$$
+
+$$
+P_{\\text{green}}'(3)<0
 $$
 
 so the sign reading matches the claim, and the statement is True.
@@ -18209,6 +22725,12 @@ so firm A has a local profit peak near $x=5$, and the statement is True.
 
 Putting that figure reading next to the claim, every asserted sign, height, or classification matches what the axes show.
 
+$$
+x = 5
+$$
+
+which matches the claim.
+
 So the statement is True.`,
       `**C.** → False
 
@@ -18223,6 +22745,12 @@ $$
 so the claim that brown is already positive at $x=0$ is wrong, and the statement is False.
 
 Once that mismatch with the figure is clear, the claim cannot stand. Comparing the assertion with the axes.
+
+$$
+x = 0
+$$
+
+which does not match the claim.
 
 So the statement is False.`,
       `**D.** → True
@@ -18253,6 +22781,12 @@ $$
 so the three firms do not share the same recommendation on $(0,6)$, and the statement is False.
 
 Once that mismatch with the figure is clear, the claim cannot stand. Comparing the assertion with the axes.
+
+$$
+x = 3
+$$
+
+which does not match the claim.
 
 So the statement is False.`
     ],
@@ -18337,7 +22871,15 @@ On the shared plane, match each colour to its named derivative, then read height
 The highest point of green is a maximum of $f'$, which is where brown climbs most steeply — not where brown has a local maximum:
 
 $$
-\\max f'\\qquad\\nRightarrow\\qquad\\text{local max of }f
+\\max f'
+$$
+
+$$
+\\nRightarrow
+$$
+
+$$
+\\text{local max of }f
 $$
 
 Local maxima of brown need zeros of green with a $+$ to $-$ change
@@ -18362,6 +22904,12 @@ $$
 so the reading matches the steepest climb of brown, and the statement is True.
 
 Putting that figure reading next to the claim, every asserted sign, height, or classification matches what the axes show.
+
+$$
+x = 3
+$$
+
+which matches the claim.
 
 So the statement is True.`
     ],
@@ -18406,6 +22954,12 @@ so brown changes from negative to positive at $x=4$, and the statement is True.
 
 Putting that figure reading next to the claim, every asserted sign, height, or classification matches what the axes show.
 
+$$
+x = 4
+$$
+
+which matches the claim.
+
 So the statement is True.`,
       `**B.** → True
 
@@ -18420,6 +22974,12 @@ $$
 Without a clear $+$ to $-$ flip, the ordinary local-max test for $f$ does not fire at that touch
 
 Putting that figure reading next to the claim, every asserted sign, height, or classification matches what the axes show.
+
+$$
+x = 1
+$$
+
+which matches the claim.
 
 So the statement is True.`,
       `**C.** → True
@@ -18459,7 +23019,15 @@ On the shared plane, match each colour to its named derivative, then read height
 A zero of green is a zero of $f''$, which marks an extremum of $f'$ (brown), not automatically a local extremum of $f$:
 
 $$
-f'' = 0\\qquad\\nRightarrow\\qquad\\text{local extremum of }f
+f'' = 0
+$$
+
+$$
+\\nRightarrow
+$$
+
+$$
+\\text{local extremum of }f
 $$
 
 Local extrema of $f$ need zeros of brown with a sign change
@@ -18517,6 +23085,12 @@ P'(2) = R'(2)-C'(2)>0
 $$
 
 Putting that figure reading next to the claim, every asserted sign, height, or classification matches what the axes show.
+
+$$
+x = 2
+$$
+
+which matches the claim.
 
 So the statement is True.`,
       `**C.** → True
@@ -18612,6 +23186,12 @@ so the valley of $f'$ lines up with a zero of $f''$, and the statement is True.
 
 Putting that figure reading next to the claim, every asserted sign, height, or classification matches what the axes show.
 
+$$
+x = 3
+$$
+
+which matches the claim.
+
 So the statement is True.`,
       `**B.** → True
 
@@ -18661,6 +23241,12 @@ Positive $f'$ means $f$ is increasing at $x=1$
 
 Putting that figure reading next to the claim, every asserted sign, height, or classification matches what the axes show.
 
+$$
+x = 1
+$$
+
+which matches the claim.
+
 So the statement is True.`,
       `**E.** → True
 
@@ -18675,6 +23261,12 @@ $$
 Without a genuine sign change, that touch need not give a local extremum of $h$
 
 Putting that figure reading next to the claim, every asserted sign, height, or classification matches what the axes show.
+
+$$
+x = 3
+$$
+
+which matches the claim.
 
 So the statement is True.`
     ],

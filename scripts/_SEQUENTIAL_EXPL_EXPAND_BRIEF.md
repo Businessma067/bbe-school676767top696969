@@ -18,8 +18,10 @@ Process **one task at a time, in order** (`case_id` ascending). For each task:
    - rational inequalities show: bring to one side → common denom → critical points → sign chart → set
 4. Only then go to the next task.
 
-Commit in batches of ~10–15 tasks (or one subsection) with messages naming the range, e.g. `Ch6: expand explanations MATH 6.01–6.15`.
-Push after each batch to `cursor/expand-all-expl-steps-6381` (pull --rebase first).
+Commit in batches of ~10–15 tasks (or one subsection) with messages naming the range, e.g. `Ch6: deepen explanations MATH 6.01–6.15`.
+Push after each batch to `cursor/maximal-expl-all-steps-6381` (pull --rebase first).
+
+Also follow `scripts/_DEEPEN_ALL_STEPS_BRIEF.md`: expand **every** multi-step calculation (arithmetic, equations, finance, logs, systems, probability, binomial, differentiation — not only inequalities). Split `a=b=c` and packed arithmetic into separate displays.
 
 ## Forbidden compressed pattern
 ```
@@ -27,8 +29,10 @@ $$\frac{3x+2}{x-1}-2=\frac{x+4}{x-1}>0$$
 gives $x<-4$ or $x>1$. Therefore True.
 ```
 
+Also forbidden: `$$4\cdot18+3\cdot25=72+75=147$$` (unpack each product and sum).
+
 ## Gold depth
-See MATH 6.113 E on this branch (common denom steps + critical points + sign table).
+See MATH 6.113 E on this branch (common denom steps + critical points + sign table). Match that step density for every topic.
 
 ## Done when
-Every task in your assigned file(s) has been visited sequentially and audited.
+Every task in your assigned file(s) has been visited sequentially and audited. When unsure, expand.

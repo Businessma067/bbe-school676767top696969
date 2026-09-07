@@ -2953,7 +2953,7 @@ So the statement is True.`,
 Elimination on two independent linear equations recovers a unique value for each unknown. The claim names the second recovered coordinate:
 
 $$
-y_B = \\frac{92 - 44}{3}
+y_B = \frac{92 - 44}{3}
 $$
 
 $$
@@ -3812,12 +3812,8 @@ $$33 + 0.21u = 0.29u$$
 
 $$33 = 0.08u$$
 
-$$\$$
-
-$$\Rightarrow u$$
-
 $$
-= 412.5
+u = 412.5
 $$
 
 For $u > 412.5$ the standard plan is cheaper, so Solar is not cheaper at every positive usage.
@@ -4565,18 +4561,12 @@ $$7A + 150$$
 
 $$= 290$$
 
-$$\$$
-
-$$\Rightarrow 7A$$
-
-$$= 140$$
-
-$$\$$
-
-$$\Rightarrow A$$
+$$
+7A = 140
+$$
 
 $$
-= 20.
+A = 20.
 $$
 
 So the statement is True.`,
@@ -4887,7 +4877,7 @@ $$
 $$
 
 $$
-80x = 1476.00 \\Rightarrow x = \\frac{1476.00}{80} = 18.45
+80x = 1476.00 \\Rightarrow x = \frac{1476.00}{80} = 18.45
 $$
 
 Substitute into (1):
@@ -5010,12 +5000,8 @@ $$145.50 + 1.85m = 1.35m$$
 
 $$145.50 = -0.50m$$
 
-$$\$$
-
-$$\Rightarrow m$$
-
 $$
-= \\frac{145.50}{-0.50}
+m = \frac{145.50}{-0.50}
 $$
 
 $$
@@ -5051,7 +5037,7 @@ $$
 $$
 
 $$
-135y = 249.75 \\Rightarrow y = \\frac{249.75}{135} = 1.85
+135y = 249.75 \\Rightarrow y = \frac{249.75}{135} = 1.85
 $$
 
 Substitute into (1):
@@ -5195,7 +5181,7 @@ $$
 $$
 
 $$
-71x = 450.85 \\Rightarrow x = \\frac{450.85}{71} = 6.35
+71x = 450.85 \\Rightarrow x = \frac{450.85}{71} = 6.35
 $$
 
 Substitute into (1):
@@ -5278,7 +5264,7 @@ $$= 232.50$$
 
 $$\\frac{138.50}{232.50}$$
 
-$$\\approx 0.596 < \\frac{3}{5}$$
+$$\approx 0.596 < \\frac{3}{5}$$
 
 Croissants do not account for more than three-fifths.
 
@@ -5295,7 +5281,7 @@ $$= 11.892$$
 
 $$\\frac{299.30}{29}$$
 
-$$\\approx 10.321$$
+$$\approx 10.321$$
 
 $$11.892 - 10.321$$
 
@@ -5357,7 +5343,7 @@ $$
 $$
 
 $$
-256x = 3545.60 \\Rightarrow x = \\frac{3545.60}{256} = 13.85
+256x = 3545.60 \\Rightarrow x = \frac{3545.60}{256} = 13.85
 $$
 
 Substitute into (1):
@@ -5509,7 +5495,7 @@ $$
 $$
 
 $$
-32650x = 892977.5 \\Rightarrow x = \\frac{892977.5}{32650} = 27.35
+32650x = 892977.5 \\Rightarrow x = \frac{892977.5}{32650} = 27.35
 $$
 
 Substitute into (1):
@@ -5651,7 +5637,7 @@ $$= 53$$
 
 $$\\frac{1025.45}{53}$$
 
-$$\\approx 19.35$$
+$$\approx 19.35$$
 
 $$19.35 < 20$$
 
@@ -5698,7 +5684,7 @@ $$
 $$
 
 $$
-37x = 606.80 \\Rightarrow x = \\frac{606.80}{37} = 16.40
+37x = 606.80 \\Rightarrow x = \frac{606.80}{37} = 16.40
 $$
 
 Substitute into (1):
@@ -5735,7 +5721,7 @@ Alvarez's solo time is the reciprocal of the recovered $x = 0.085$:
 
 $$\\frac{1}{0.085}$$
 
-$$\\approx 11.76$$
+$$\approx 11.76$$
 
 Rounded to the nearest whole hour that is 12, not 11.
 
@@ -5748,11 +5734,11 @@ Bianchi alone, and Alvarez on two jobs, at the recovered rates:
 
 $$\\frac{1}{0.045}$$
 
-$$\\approx 22.22$$
+$$\approx 22.22$$
 
 $$\\frac{2}{0.085}$$
 
-$$\\approx 23.53$$
+$$\approx 23.53$$
 
 $$22.22 < 23.53$$
 
@@ -5770,7 +5756,7 @@ $$0.085 + 0.045$$
 $$= 0.130$$
 
 $$
-= \\frac{13}{100}.
+= \frac{13}{100}.
 $$
 
 So the statement is True.`,
@@ -5801,7 +5787,7 @@ $$= 1.555$$
 
 $$\\frac{1.555}{23}$$
 
-$$\\approx 0.0676$$
+$$\approx 0.0676$$
 
 That average is about $6.76\\%$, which does not clear seven percent.
 
@@ -5838,7 +5824,7 @@ $$
 $$
 
 $$
-51y = 2.295 \\Rightarrow y = \\frac{2.295}{51} = 0.045
+51y = 2.295 \\Rightarrow y = \frac{2.295}{51} = 0.045
 $$
 
 Substitute into (1):
@@ -5992,7 +5978,7 @@ $$
 $$
 
 $$
-104800x = 1220920 \\Rightarrow x = \\frac{1220920}{104800} = 11.65
+104800x = 1220920 \\Rightarrow x = \frac{1220920}{104800} = 11.65
 $$
 
 Substitute into (1):
@@ -6054,7 +6040,7 @@ Relative to \\$89,
 
 $$\\frac{94.60}{89} - 1$$
 
-$$\\approx 0.063$$
+$$\approx 0.063$$
 
 the real fee overshoots \\$89 by about 6%.
 
@@ -6157,7 +6143,7 @@ $$
 $$
 
 $$
-75y = 236.25 \\Rightarrow y = \\frac{236.25}{75} = 3.15
+75y = 236.25 \\Rightarrow y = \frac{236.25}{75} = 3.15
 $$
 
 Substitute into (1):
@@ -6194,9 +6180,9 @@ The overview scaled Client A to \\$967.40, which overshoots the billed \\$952.10
 
 $$\\frac{15.30}{952.10}$$
 
-$$\\approx 0.01607$$
+$$\approx 0.01607$$
 
-$$\\approx 1.61\\%.$$
+$$\approx 1.61\\%.$$
 
 So the statement is True.`,
       `**B.** → True
@@ -6218,7 +6204,7 @@ The invoices disagree by \\$15.30 on a \\$952.10 bill:
 
 $$\\frac{15.30}{952.10}$$
 
-$$\\approx 0.01607$$
+$$\approx 0.01607$$
 
 $$\\frac{1}{60} \\approx 0.01667, \\qquad \\frac{1}{50} = 0.02$$
 
@@ -6404,7 +6390,7 @@ The overview recovered the two balances $4800$ (smaller) and $13600$. The relati
 
 $$\\frac{13600 - 4800}{4800}$$
 
-$$= \\frac{8800}{4800}$$
+$$= \frac{8800}{4800}$$
 
 $$
 = 1.8\\overline{3}
@@ -6443,7 +6429,7 @@ $$
 $$
 
 $$
-0.1275x = 612 \\Rightarrow x = \\frac{612}{0.1275} = 4800
+0.1275x = 612 \\Rightarrow x = \frac{612}{0.1275} = 4800
 $$
 
 **2.** Substitute back:
@@ -6505,11 +6491,11 @@ The overview predicted $104$ g for Batch 3 against $109$ g recorded, a $5$ g dis
 
 $$\\frac{5}{12}$$
 
-$$\\approx 0.4167$$
+$$\approx 0.4167$$
 
 $$6 + 0.4167$$
 
-$$\\approx 6.417$$
+$$\approx 6.417$$
 
 The distance to $6.4$ is about $0.017$, and the distance to $6.0$ is about $0.417$, so the true B volume is closer to $6.4$ L.
 
@@ -6530,7 +6516,7 @@ The volume that holds $130$ g is then
 
 $$\\frac{130}{15}$$
 
-$$\\approx 8.667$$
+$$\approx 8.667$$
 
 which is not $7.5$ L.
 
@@ -6545,7 +6531,7 @@ $$= 0.60$$
 
 $$\\frac{5}{6}$$
 
-$$\\approx 0.833$$
+$$\approx 0.833$$
 
 Since $0.833 > 0.60$, Batch 2 used a higher volume share of Solution A.
 
@@ -6642,7 +6628,7 @@ $$= 182$$
 
 $$\\frac{182}{882}$$
 
-$$\\approx 0.2063$$
+$$\approx 0.2063$$
 
 About $20.6\\%$ is not more than $40\\%$.
 
@@ -6685,7 +6671,7 @@ $$= 2.8$$
 
 $$\\frac{882}{765}$$
 
-$$\\approx 1.153$$
+$$\approx 1.153$$
 
 Since $2.8 > 1.153$, the overtime-hours ratio is greater than the gross-pay ratio.
 
@@ -6722,7 +6708,7 @@ $$
 $$
 
 $$
-72x = 1260 \\Rightarrow x = \\frac{1260}{72} = 17.50
+72x = 1260 \\Rightarrow x = \frac{1260}{72} = 17.50
 $$
 
 **3.** Substitute $x = 17.50$ into A's equation:
@@ -6785,7 +6771,7 @@ $$= 16$$
 
 $$\\frac{16}{11}$$
 
-$$\\approx 1.4545$$
+$$\approx 1.4545$$
 
 Since $1.4545 > 1.45$, the gap is more than $145\\%$ of the wire price.
 
@@ -6796,13 +6782,11 @@ Start from the overview’s recovered unknowns, then test the named figure.
 
 At fixed per-meter prices, combining Project 1 and Project 3 is linear. Combined metres are $28$ m wood and $64$ m wire.
 
-$$28(27) + 64(11)$$
+$$28\\cdot 27 = 756$$
 
-$$= 756 + 704$$
+$$64\\cdot 11 = 704$$
 
-$$
-= 1460
-$$
+$$756 + 704 = 1460$$
 
 $$750 + 710$$
 
@@ -6840,7 +6824,7 @@ $$= 14.20$$
 
 $$\\frac{750}{42}$$
 
-$$\\approx 17.86$$
+$$\approx 17.86$$
 
 Since $14.20 < 17.86$, Project 3's cost per meter is lower, not higher.
 
@@ -6912,7 +6896,7 @@ The overview recovered Boat A's speed $x = 48$ km/h. Solo time on the $356$ km s
 
 $$\\frac{356}{48}$$
 
-$$\\approx 7.4167$$
+$$\approx 7.4167$$
 
 about $7$ hours $25$ minutes, which is more than $7$ hours.
 
@@ -6948,7 +6932,7 @@ Combined speed is currently $48 + 77 = 125$ km/h. After a $20\\%$ rise on each b
 
 $$\\frac{250}{150}$$
 
-$$\\approx 1.667$$
+$$\approx 1.667$$
 
 Since $1.667 > 1.5$, the new time does not fall below $1.5$ hours.
 
@@ -6978,7 +6962,7 @@ $$= 29$$
 
 $$\\frac{29}{48}$$
 
-$$\\approx 0.60417$$
+$$\approx 0.60417$$
 
 about $60.4\\%$, which is more than $60\\%$.
 
@@ -7009,7 +6993,7 @@ $$
 $$
 
 $$
-3y = 231 \\Rightarrow y = \\frac{231}{3} = 77
+3y = 231 \\Rightarrow y = \frac{231}{3} = 77
 $$
 
 **2.** Substitute $y = 77$ into $x + y = 125$:
@@ -7062,9 +7046,9 @@ Using the recovered solution values $x = 95$ and $y = 120$ as inputs for this cl
 
 Barley's advantage as a share of Wheat's profit per tonne is
 
-$$\\frac{120 - 95}{95} = \\frac{25}{95}$$
+$$\\frac{120 - 95}{95} = \frac{25}{95}$$
 
-$$\\approx 0.2632$$
+$$\approx 0.2632$$
 
 about $26.3\\%$, which is more than $25\\%$.
 
@@ -7101,7 +7085,7 @@ Season 2 printed \\$48,300 on $180 + 260 = 440$ t. Season 1 printed \\$42,000 on
 
 $$\\frac{48300}{440}$$
 
-$$\\approx 109.77$$
+$$\approx 109.77$$
 
 $$\\frac{42000}{400}$$
 
@@ -7146,7 +7130,7 @@ $$
 $$
 
 $$
-21x = 1995 \\Rightarrow x = \\frac{1995}{21} = 95
+21x = 1995 \\Rightarrow x = \frac{1995}{21} = 95
 $$
 
 **3.** Substitute $x = 95$ into $3x + 2y = 525$:
@@ -7210,7 +7194,7 @@ $$= 28$$
 
 $$\\frac{28}{47}$$
 
-$$\\approx 0.5957$$
+$$\approx 0.5957$$
 
 about $59.6\\%$, which is more than $45\\%$.
 
@@ -7223,7 +7207,7 @@ The overview recovered current ages $47$ and $19$. After $4.5$ years the ages ar
 
 $$\\frac{51.5}{23.5}$$
 
-$$\\approx 2.191$$
+$$\approx 2.191$$
 
 Since $2.191 < 2.5$, the elder will not be more than $2.5$ times the younger.
 
@@ -7247,18 +7231,16 @@ Let $t$ be years ago. The claim is that $x - t = 3(y - t)$ for some $t > 4$. Usi
 
 $$47 - t = 3(19 - t)$$
 
-$$47 - t = 57 - 3t \$$
-
-$$\Rightarrow 2t$$
-
-$$= 10$$
-
-$$\$$
-
-$$\Rightarrow t$$
+$$
+47 - t = 57 - 3t
+$$
 
 $$
-= 5
+2t = 10
+$$
+
+$$
+t = 5
 $$
 
 Since $5 > 4$, such a time exists.
@@ -7422,11 +7404,11 @@ Retail prices are $1.32x = 72.60$ and $1.18y = 94.40$.
 
 $$\\frac{80}{55}$$
 
-$$\\approx 1.4545$$
+$$\approx 1.4545$$
 
 $$\\frac{94.40}{72.60}$$
 
-$$\\approx 1.3003$$
+$$\approx 1.3003$$
 
 The wholesale ratio is larger than the retail ratio.
 
@@ -7469,7 +7451,7 @@ $$
 $$
 
 $$
-11.9475y = 955.80 \\Rightarrow y = \\frac{955.80}{11.9475} = 80.00
+11.9475y = 955.80 \\Rightarrow y = \frac{955.80}{11.9475} = 80.00
 $$
 
 **4.** Substitute $y = 80$ into Order 1:
@@ -7519,7 +7501,7 @@ The overview recovered $x = 7$ and $y = 3$, so the Ravens have $67$ points with 
 
 $$\\frac{18}{67}$$
 
-$$\\approx 0.2687$$
+$$\approx 0.2687$$
 
 About $26.9\\%$ is not more than $45\\%$.
 
@@ -7639,13 +7621,11 @@ $$
 
 The overview recovered $A = 7.6$ kg/L and $B = 11.4$ kg/L. Batch 1 with $10$ L of B instead of $8$ L would mass
 
-$$12(7.6) + 10(11.4)$$
+$$12\\cdot 7.6 = 91.2$$
 
-$$= 91.2 + 114$$
+$$10\\cdot 11.4 = 114$$
 
-$$
-= 205.2
-$$
+$$91.2 + 114 = 205.2$$
 
 Since $205.2 > 200$, the total would exceed $200$ kg.
 
@@ -7660,7 +7640,7 @@ The relative density advantage of B over A is
 
 $$\\frac{11.4 - 7.6}{7.6}$$
 
-$$= \\frac{3.8}{7.6}$$
+$$= \frac{3.8}{7.6}$$
 
 $$
 = 0.50
@@ -7677,7 +7657,7 @@ The overview predicted $140.6$ kg for Batch 3 against $147.0$ kg recorded, a $6.
 
 $$\\frac{6.4}{147.0}$$
 
-$$\\approx 0.04354$$
+$$\approx 0.04354$$
 
 about $4.35\\%$, which is more than $4\\%$ of the recorded mass.
 
@@ -7688,13 +7668,11 @@ The shared solve is done; only this claim’s comparison remains.
 
 If Batch 3 used $10$ L of A instead of $9.5$ L, with $6$ L of B still, the predicted mass at the recovered densities is
 
-$$10(7.6) + 6(11.4)$$
+$$10\\cdot 7.6 = 76$$
 
-$$= 76 + 68.4$$
+$$6\\cdot 11.4 = 68.4$$
 
-$$
-= 144.4
-$$
+$$76 + 68.4 = 144.4$$
 
 $$|144.4 - 147.0|$$
 
@@ -7748,7 +7726,7 @@ $$
 $$
 
 $$
--7y = 45.6 - 125.4 = -79.8 \\Rightarrow y = \\frac{79.8}{7} = 11.4
+-7y = 45.6 - 125.4 = -79.8 \\Rightarrow y = \frac{79.8}{7} = 11.4
 $$
 
 **3.** Substitute $y = 11.4$ back:
@@ -7797,7 +7775,7 @@ $$
 
 $$\\frac{14800}{850000}$$
 
-$$\\approx 0.017412$$
+$$\approx 0.017412$$
 
 about $1.741\\%$, which is less than $1.75\\%$.
 
@@ -7810,7 +7788,7 @@ The overview recovered retainer $y = 1200$ on Client 2's fee \\$10,800.
 
 $$\\frac{1200}{10800}$$
 
-$$\\approx 0.1111$$
+$$\approx 0.1111$$
 
 about $11.1\\%$, which is more than $10\\%$.
 
@@ -7896,7 +7874,7 @@ $$150000x = 2400 \\tag{2}$$
 **1.** The fee-difference equation already isolates the rate:
 
 $$
-150000x = 2400 \\Rightarrow x = \\frac{2400}{150000} = 0.016
+150000x = 2400 \\Rightarrow x = \frac{2400}{150000} = 0.016
 $$
 
 (that is $1.6\\%$).
@@ -7932,9 +7910,9 @@ $$
 
 The overview recovered $A = 8.4$ mg/mL and $B = 15.6$ mg/mL. The relative increase of B over A is
 
-$$\\frac{15.6 - 8.4}{8.4} = \\frac{7.2}{8.4}$$
+$$\\frac{15.6 - 8.4}{8.4} = \frac{7.2}{8.4}$$
 
-$$\\approx 0.8571$$
+$$\approx 0.8571$$
 
 about $85.7\\%$, which is more than $85\\%$.
 
@@ -7943,9 +7921,9 @@ So the statement is True.`,
 
 The overview predicted $9708$ mg for Batch 3 against $9700$ mg recorded.
 
-$$\\frac{|9708 - 9700|}{9700} = \\frac{8}{9700}$$
+$$\\frac{|9708 - 9700|}{9700} = \frac{8}{9700}$$
 
-$$\\approx 0.000825$$
+$$\approx 0.000825$$
 
 about $0.0825\\%$, which is not more than $1\\%$.
 
@@ -7962,13 +7940,11 @@ Using the recovered solution values $A = 8.4$ and $B = 15.6$ as inputs for this 
 
 Doubling Batch 1's Suspension B volume from $300$ mL to $600$ mL gives
 
-$$500(8.4) + 600(15.6)$$
+$$500\\cdot 8.4 = 4200$$
 
-$$= 4200 + 9360$$
+$$600\\cdot 15.6 = 9360$$
 
-$$
-= 13560
-$$
+$$4200 + 9360 = 13560$$
 
 Since $13560 > 13500$, the new total would exceed $13500$ mg.
 
@@ -7996,11 +7972,11 @@ Batch 2 has $700$ mL of B out of $200 + 700 = 900$ mL. Batch 3 has $450$ mL of B
 
 $$\\frac{700}{900}$$
 
-$$\\approx 0.7778$$
+$$\approx 0.7778$$
 
 $$\\frac{450}{770}$$
 
-$$\\approx 0.5844$$
+$$\approx 0.5844$$
 
 Batch 2's B-share is higher.
 
@@ -8043,7 +8019,7 @@ $$
 $$
 
 $$
-29x = 243.6 \\Rightarrow x = \\frac{243.6}{29} = 8.4
+29x = 243.6 \\Rightarrow x = \frac{243.6}{29} = 8.4
 $$
 
 **4.** Substitute $x = 8.4$ into $2x + 7y = 126$:
@@ -8128,7 +8104,7 @@ $$
 
 $$\\frac{8225}{8946}$$
 
-$$\\approx 0.9194$$
+$$\approx 0.9194$$
 
 about $91.9\\%$, which is more than $90\\%$.
 
@@ -8139,7 +8115,7 @@ The overview recovered drywall $y = 38$ and studs $x = 4.50$.
 
 $$\\frac{38}{4.50}$$
 
-$$\\approx 8.444$$
+$$\approx 8.444$$
 
 Since $8.444 > 8$, the drywall price is more than $8$ times the stud price.
 
@@ -8166,13 +8142,13 @@ $$
 
 Waste as a share of usable cost:
 
-$$\\frac{7164 - 6600}{6600} = \\frac{564}{6600}$$
+$$\\frac{7164 - 6600}{6600} = \frac{564}{6600}$$
 
-$$\\approx 0.08545$$
+$$\approx 0.08545$$
 
-$$\\frac{8946 - 8225}{8225} = \\frac{721}{8225}$$
+$$\\frac{8946 - 8225}{8225} = \frac{721}{8225}$$
 
-$$\\approx 0.08766$$
+$$\approx 0.08766$$
 
 Job 1's $8.545\\%$ is smaller than Job 2's $8.766\\%$.
 
@@ -8209,7 +8185,7 @@ $$
 $$
 
 $$
-94.5y = 3591 \\Rightarrow y = \\frac{3591}{94.5} = 38.00
+94.5y = 3591 \\Rightarrow y = \frac{3591}{94.5} = 38.00
 $$
 
 **3.** Substitute $y = 38$ into Job 1:
@@ -8247,9 +8223,9 @@ $$
 
 The overview recovered scale factor $x = 3.50$. The excess over $3.4$, relative to $3.4$, is
 
-$$\\frac{3.50 - 3.4}{3.4} = \\frac{0.10}{3.4}$$
+$$\\frac{3.50 - 3.4}{3.4} = \frac{0.10}{3.4}$$
 
-$$\\approx 0.02941$$
+$$\approx 0.02941$$
 
 about $2.94\\%$, which is more than $2.5\\%$.
 
@@ -8284,10 +8260,10 @@ So the statement is True.`,
 The overview predicted $171.00$ at reading $45.0$ against recorded $172.20$.
 
 $$
-\\frac{|171.00 - 172.20|}{172.20} = \\frac{1.20}{172.20}
+\\frac{|171.00 - 172.20|}{172.20} = \frac{1.20}{172.20}
 $$
 
-$$\\approx 0.00697$$
+$$\approx 0.00697$$
 
 about $0.70\\%$ of the recorded value, which is not more than $1\\%$.
 
@@ -8299,10 +8275,10 @@ The shared solve is done; only this claim’s comparison remains.
 Point 1's true value is $56.90$ and Point 2's is $124.45$. The percentage increase is
 
 $$
-\\frac{124.45 - 56.90}{56.90} = \\frac{67.55}{56.90}
+\\frac{124.45 - 56.90}{56.90} = \frac{67.55}{56.90}
 $$
 
-$$\\approx 1.1868$$
+$$\approx 1.1868$$
 
 about $118.7\\%$, which is more than $100\\%$.
 
@@ -8350,7 +8326,7 @@ $$
 $$
 
 $$
-19.3x = 67.55 \\Rightarrow x = \\frac{67.55}{19.3} = 3.50
+19.3x = 67.55 \\Rightarrow x = \frac{67.55}{19.3} = 3.50
 $$
 
 **2.** Substitute $x = 3.50$ into Point 1:
@@ -8387,9 +8363,9 @@ versus recorded 172.20, a $1.20$ discrepancy.
 
 The overview recovered Coffee $x = 6.20$ and Cocoa $y = 4.85$. Coffee's premium over Cocoa is
 
-$$\\frac{6.20 - 4.85}{4.85} = \\frac{1.35}{4.85}$$
+$$\\frac{6.20 - 4.85}{4.85} = \frac{1.35}{4.85}$$
 
-$$\\approx 0.2784$$
+$$\approx 0.2784$$
 
 about $27.8\\%$, which is more than $25\\%$.
 
@@ -8406,7 +8382,7 @@ $$= 1934.40$$
 
 $$\\frac{1934.40}{2943.20}$$
 
-$$\\approx 0.6572$$
+$$\approx 0.6572$$
 
 about $65.7\\%$, which is more than $65\\%$.
 
@@ -8457,9 +8433,9 @@ Using the recovered solution values $x = 6.20$ and $y = 4.85$ as inputs for this
 
 The gap as a share of Coffee's price is
 
-$$\\frac{6.20 - 4.85}{6.20} = \\frac{1.35}{6.20}$$
+$$\\frac{6.20 - 4.85}{6.20} = \frac{1.35}{6.20}$$
 
-$$\\approx 0.2177$$
+$$\approx 0.2177$$
 
 about $21.8\\%$, which is less than $30\\%$.
 
@@ -8502,7 +8478,7 @@ $$
 $$
 
 $$
-2.6y = 12.61 \\Rightarrow y = \\frac{12.61}{2.6} = 4.85
+2.6y = 12.61 \\Rightarrow y = \frac{12.61}{2.6} = 4.85
 $$
 
 **3.** Substitute $y = 4.85$ back:
@@ -8538,9 +8514,9 @@ $$=6.20$$
 
 The overview recovered Truck $x = 32.0$ L/100km and Van $y = 18.0$ L/100km.
 
-$$\\frac{32.0 - 18.0}{18.0} = \\frac{14}{18}$$
+$$\\frac{32.0 - 18.0}{18.0} = \frac{14}{18}$$
 
-$$\\approx 0.7778$$
+$$\approx 0.7778$$
 
 about $77.8\\%$, which is more than $75\\%$.
 
@@ -8549,9 +8525,9 @@ So the statement is True.`,
 
 The overview predicted $152.0$ L for Route 3 against $155.0$ L recorded.
 
-$$\\frac{155.0 - 152.0}{155.0} = \\frac{3}{155}$$
+$$\\frac{155.0 - 152.0}{155.0} = \frac{3}{155}$$
 
-$$\\approx 0.01935$$
+$$\approx 0.01935$$
 
 about $1.94\\%$ below the recorded value, which is not more than $2\\%$.
 
@@ -8643,7 +8619,7 @@ $$
 $$
 
 $$
-45.5x = 1456 \\Rightarrow x = \\frac{1456}{45.5} = 32.0
+45.5x = 1456 \\Rightarrow x = \frac{1456}{45.5} = 32.0
 $$
 
 **3.** Substitute $x = 32$ into Route 2:
@@ -8680,9 +8656,9 @@ versus 155 L recorded, a 3 L discrepancy.
 
 The overview recovered bond $5.4\\%$ and equity $6.6\\%$. The relative gap of equity over bonds is
 
-$$\\frac{6.6 - 5.4}{5.4} = \\frac{1.2}{5.4}$$
+$$\\frac{6.6 - 5.4}{5.4} = \frac{1.2}{5.4}$$
 
-$$\\approx 0.2222$$
+$$\approx 0.2222$$
 
 about $22.2\\%$, which is more than $20\\%$.
 
@@ -8740,7 +8716,7 @@ Using the recovered solution values $5.4\\%$ and $6.6\\%$ as inputs for this cla
 
 $$\\frac{5.4}{6.6}$$
 
-$$\\approx 0.8182$$
+$$\approx 0.8182$$
 
 about $81.8\\%$, which is more than $80\\%$.
 
@@ -8838,7 +8814,7 @@ The overview recovered the fixed fee $x = 214.70$ on Auto's premium \\$612.50.
 
 $$\\frac{214.70}{612.50}$$
 
-$$\\approx 0.3505$$
+$$\approx 0.3505$$
 
 about $35.1\\%$, which is not more than $60\\%$.
 
@@ -8862,11 +8838,11 @@ Premium per \\$1,000 is the printed premium divided by coverage in thousands.
 
 $$\\frac{1197.50}{210}$$
 
-$$\\approx 5.702$$
+$$\approx 5.702$$
 
 $$\\frac{612.50}{85}$$
 
-$$\\approx 7.206$$
+$$\approx 7.206$$
 
 Home's $5.702$ is not more than twice Auto's $7.206$.
 
@@ -8918,7 +8894,7 @@ $$
 $$
 
 $$
-125y = 585 \\Rightarrow y = \\frac{585}{125} = 4.68
+125y = 585 \\Rightarrow y = \frac{585}{125} = 4.68
 $$
 
 **2.** Substitute $y = 4.68$ into Auto:
@@ -8998,13 +8974,15 @@ The populations are equal $t$ years after Year 2 when
 
 $$610 + 72t = 730 + 36t$$
 
-$$36t = 120 \$$
+$$
+36t = 120
+$$
 
-$$\Rightarrow t$$
+$$
+t = \frac{10}{3}
+$$
 
-$$= \\frac{10}{3}$$
-
-$$\\approx 3.333$$
+$$\approx 3.333$$
 
 That is Year $5.333$, which lies between Year 2 and Year 6.
 
@@ -9013,13 +8991,15 @@ So the statement is True.`,
 
 Set $610 + 72t = 730 + 36t$ to find when A catches B:
 
-$$36t = 120 \$$
+$$
+36t = 120
+$$
 
-$$\Rightarrow t$$
+$$
+t = \frac{10}{3}
+$$
 
-$$= \\frac{10}{3}$$
-
-$$\\approx 3.333$$
+$$\approx 3.333$$
 
 so equality is at Year $5.333$. At Year 5, three years after Year 2,
 
@@ -9096,9 +9076,9 @@ $$
 
 The overview recovered $A = 145$ MWh/hr and $B = 98$ MWh/hr.
 
-$$\\frac{145 - 98}{98} = \\frac{47}{98}$$
+$$\\frac{145 - 98}{98} = \frac{47}{98}$$
 
-$$\\approx 0.4796$$
+$$\approx 0.4796$$
 
 about $48.0\\%$, which is more than $45\\%$.
 
@@ -9107,9 +9087,9 @@ So the statement is True.`,
 
 The overview predicted $3543$ MWh for Day 3 against $3553$ MWh recorded.
 
-$$\\frac{|3543 - 3553|}{3553} = \\frac{10}{3553}$$
+$$\\frac{|3543 - 3553|}{3553} = \frac{10}{3553}$$
 
-$$\\approx 0.002815$$
+$$\approx 0.002815$$
 
 about $0.28\\%$, which is less than $0.3\\%$.
 
@@ -9135,7 +9115,7 @@ The combined output rate is $145 + 98 = 243$ MWh/hr.
 
 $$\\frac{243}{98}$$
 
-$$\\approx 2.4796$$
+$$\approx 2.4796$$
 
 which is more than $2.4$ times Plant B's rate.
 
@@ -9195,7 +9175,7 @@ $$
 $$
 
 $$
-157x = 22765 \\Rightarrow x = \\frac{22765}{157} = 145.0
+157x = 22765 \\Rightarrow x = \frac{22765}{157} = 145.0
 $$
 
 **5.** Substitute $x = 145$ into $7x + 10y = 1995$:

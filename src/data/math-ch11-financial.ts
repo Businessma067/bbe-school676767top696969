@@ -99,6 +99,8 @@ $$(1.006)^{12}$$
 
 $$\\approx 1.074424$$
 
+$$6,000 \\times 1.074424$$
+
 $$FV \\approx 6,446.54$$
 
 The claim is \\$6,446.54.
@@ -274,6 +276,8 @@ $$(1.02)^{24}$$
 
 $$\\approx 1.608435$$
 
+$$6,000 \\times 1.608435$$
+
 $$S(6) \\approx 9,650.61$$
 
 The claim is \\$9,860.00. The computed value is
@@ -296,6 +300,8 @@ $$S(3) = 6,000 \\times (1.02)^{12}$$
 $$(1.02)^{12}$$
 
 $$\\approx 1.268242$$
+
+$$6,000 \\times 1.268242$$
 
 $$S(3) \\approx 7,609.45$$
 
@@ -660,6 +666,8 @@ $$(1.0175)^{12}$$
 
 $$\\approx 1.231439$$
 
+$$2,000 \\times 1.231439$$
+
 $$FV \\approx 2,462.86$$
 
 The claim is \\$2,420.00. The computed value is
@@ -832,6 +840,8 @@ $$FV = 15,000 \\times (1.014)^{4}$$
 $$(1.014)^{4}$$
 
 $$\\approx 1.057187$$
+
+$$15,000 \\times 1.057187$$
 
 $$FV \\approx 15,857.81$$
 
@@ -1009,6 +1019,16 @@ $$
 Substitute the recovered rate:
 
 $$t = \\frac{\\ln 2}{\\ln(1.006)}$$
+
+$$\\ln 2$$
+
+$$\\approx 0.693147$$
+
+$$\\ln(1.006)$$
+
+$$\\approx 0.005982$$
+
+$$\\frac{0.693147}{0.005982}$$
 
 $$\\approx 115.87$$
 
@@ -1362,6 +1382,8 @@ $$(1.005)^{120}$$
 
 $$\\approx 1.8194$$
 
+$$4,000 \\times 1.8194$$
+
 $$S(10) \\approx 7,277.60$$
 
 Compare the computed value with the claim (\\$7,277.60). The two sides agree.
@@ -1387,6 +1409,8 @@ $$S_{\\mathrm{ann}} = 4,000 \\times (1.06)^{10}$$
 $$(1.06)^{10}$$
 
 $$\\approx 1.790847$$
+
+$$4,000 \\times 1.790847$$
 
 $$S_{\\mathrm{ann}} \\approx 7,163.39$$
 
@@ -1882,6 +1906,18 @@ $$
 t = \\frac{\\ln 1.5}{\\ln 1.005}
 $$
 
+$$\\ln 1.5$$
+
+$$\\approx 0.405465$$
+
+$$\\ln(1.005)$$
+
+$$\\approx 0.004988$$
+
+$$\\frac{0.405465}{0.004988}$$
+
+$$\\approx 81.3$$
+
 The claim is about $81.30$ months.
 
 So the statement is True.`,
@@ -1897,7 +1933,17 @@ Substitute the recovered rate:
 
 $$t = \\frac{\\ln 1.5}{\\ln 1.005}$$
 
-$$\\approx 81.30$$
+$$\\ln 1.5$$
+
+$$\\approx 0.405465$$
+
+$$\\ln(1.005)$$
+
+$$\\approx 0.004988$$
+
+$$\\frac{0.405465}{0.004988}$$
+
+$$\\approx 81.3$$
 
 The claim is $6.00$ years exactly. The computed value is
 
@@ -1922,7 +1968,17 @@ Substitute the recovered rate:
 
 $$t = \\frac{\\ln 1.5}{\\ln 1.005}$$
 
-$$\\approx 81.30$$
+$$\\ln 1.5$$
+
+$$\\approx 0.405465$$
+
+$$\\ln(1.005)$$
+
+$$\\approx 0.004988$$
+
+$$\\frac{0.405465}{0.004988}$$
+
+$$\\approx 81.3$$
 
 The claim is $48$ months. The computed value is
 
@@ -1941,9 +1997,29 @@ The time to grow by a factor of $1.5$ and the doubling time on this account are
 
 $$t_{1.5} = \\frac{\\ln 1.5}{\\ln 1.005}$$
 
-$$\\approx 81.30$$
+$$\\ln 1.5$$
+
+$$\\approx 0.405465$$
+
+$$\\ln(1.005)$$
+
+$$\\approx 0.004988$$
+
+$$\\frac{0.405465}{0.004988}$$
+
+$$\\approx 81.3$$
 
 $$t_2 = \\frac{\\ln 2}{\\ln 1.005}$$
+
+$$\\ln 2$$
+
+$$\\approx 0.693147$$
+
+$$\\ln(1.005)$$
+
+$$\\approx 0.004988$$
+
+$$\\frac{0.693147}{0.004988}$$
 
 $$\\approx 138.98$$
 
@@ -1966,7 +2042,17 @@ Substitute the recovered rate:
 
 $$t = \\frac{\\ln 1.5}{\\ln 1.005}$$
 
-$$\\approx 81.30$$
+$$\\ln 1.5$$
+
+$$\\approx 0.405465$$
+
+$$\\ln(1.005)$$
+
+$$\\approx 0.004988$$
+
+$$\\frac{0.405465}{0.004988}$$
+
+$$\\approx 81.3$$
 
 The claim is exactly $100$ months. The computed value is
 
@@ -2280,6 +2366,8 @@ $$FV = 3,000 \\times (1.019)^{12}$$
 $$(1.019)^{12}$$
 
 $$\\approx 1.253401$$
+
+$$3,000 \\times 1.253401$$
 
 $$FV \\approx 3,760.20$$
 
@@ -3197,6 +3285,20 @@ $$
 t_M = \\frac{\\ln\\bigl(\\frac{22,000}{15,000}\\bigr)}{\\ln 1.005}
 $$
 
+$$\\frac{22000}{15000}$$
+
+$$= 1.466667$$
+
+$$\\ln(1.466667)$$
+
+$$\\approx 0.382992$$
+
+$$\\ln(1.005)$$
+
+$$\\approx 0.004988$$
+
+$$\\frac{0.382992}{0.004988}$$
+
 $$\\approx 76.79$$
 
 $$\\frac{t_M}{12}$$
@@ -3207,7 +3309,21 @@ $$
 t_Q = \\frac{\\ln\\bigl(\\frac{22,000}{15,000}\\bigr)}{\\ln 1.015375}
 $$
 
-$$\\approx 25.10$$
+$$\\frac{22000}{15000}$$
+
+$$= 1.466667$$
+
+$$\\ln(1.466667)$$
+
+$$\\approx 0.382992$$
+
+$$\\ln(1.015375)$$
+
+$$\\approx 0.015258$$
+
+$$\\frac{0.382992}{0.015258}$$
+
+$$\\approx 25.1$$
 
 $$\\frac{t_Q}{4}$$
 
@@ -3232,6 +3348,20 @@ $$
 t_M = \\frac{\\ln\\bigl(\\frac{22,000}{15,000}\\bigr)}{\\ln 1.005}
 $$
 
+$$\\frac{22000}{15000}$$
+
+$$= 1.466667$$
+
+$$\\ln(1.466667)$$
+
+$$\\approx 0.382992$$
+
+$$\\ln(1.005)$$
+
+$$\\approx 0.004988$$
+
+$$\\frac{0.382992}{0.004988}$$
+
 $$\\approx 76.79$$
 
 $$\\frac{t_M}{12}$$
@@ -3242,7 +3372,21 @@ $$
 t_Q = \\frac{\\ln\\bigl(\\frac{22,000}{15,000}\\bigr)}{\\ln 1.015375}
 $$
 
-$$\\approx 25.10$$
+$$\\frac{22000}{15000}$$
+
+$$= 1.466667$$
+
+$$\\ln(1.466667)$$
+
+$$\\approx 0.382992$$
+
+$$\\ln(1.015375)$$
+
+$$\\approx 0.015258$$
+
+$$\\frac{0.382992}{0.015258}$$
+
+$$\\approx 25.1$$
 
 $$\\frac{t_Q}{4}$$
 
@@ -3283,6 +3427,16 @@ So the statement is False.`,
 Reaching \\$30,000 instead of \\$22,000 changes the target ratio from $\\frac{22}{15}$ to $2$:
 
 $$t_{M,30} = \\frac{\\ln 2}{\\ln 1.005}$$
+
+$$\\ln 2$$
+
+$$\\approx 0.693147$$
+
+$$\\ln(1.005)$$
+
+$$\\approx 0.004988$$
+
+$$\\frac{0.693147}{0.004988}$$
 
 $$\\approx 138.98$$
 
@@ -3374,6 +3528,12 @@ Interest is the one-year continuous balance minus the original deposit:
 
 $$S(1) = 4,500 \\times e^{0.05}$$
 
+$$e^{0.05}$$
+
+$$\\approx 1.051271$$
+
+$$4,500 \\times 1.051271$$
+
 $$\\approx 4,730.72$$
 
 $$4,730.72 - 4,500$$
@@ -3411,6 +3571,12 @@ So the statement is False.`,
 The dollar gap is continuous minus annual at the same 5% quote:
 
 $$S(1) = 4,500 \\times e^{0.05}$$
+
+$$e^{0.05}$$
+
+$$\\approx 1.051271$$
+
+$$4,500 \\times 1.051271$$
 
 $$\\approx 4,730.72$$
 
@@ -3523,6 +3689,12 @@ $$\\approx 8,135.99$$
 
 $$S(6) = 3,200 \\times e^{0.48}$$
 
+$$e^{0.48}$$
+
+$$\\approx 1.616074$$
+
+$$3,200 \\times 1.616074$$
+
 $$\\approx 5,171.44$$
 
 The claim needs $2\\,S(3)=S(6)$. The computed value is
@@ -3541,6 +3713,12 @@ So the statement is False.`,
 Interest is the six-year continuous balance minus the original deposit:
 
 $$S(6) = 3,200 \\times e^{0.48}$$
+
+$$e^{0.48}$$
+
+$$\\approx 1.616074$$
+
+$$3,200 \\times 1.616074$$
 
 $$\\approx 5,171.44$$
 
@@ -3599,6 +3777,12 @@ So the statement is False.`,
 The same twelve-year and six-year balances are
 
 $$S(12) = 3,200 \\times e^{0.96}$$
+
+$$e^{0.96}$$
+
+$$\\approx 2.611696$$
+
+$$3,200 \\times 2.611696$$
 
 $$\\approx 8,357.43$$
 
@@ -3782,6 +3966,10 @@ $$
 K_{\\mathrm{y}} = 1 + 0.10
 $$
 
+$$1 + 0.10$$
+
+$$= 1.1$$
+
 $$
 = 1.1000
 $$
@@ -3855,6 +4043,10 @@ On \\$75,000 the two successive gaps are
 $$
 K_{\\mathrm{s}} - K_{\\mathrm{y}} = 1.1025 - 1.1000
 $$
+
+$$1.1025 - 1.1000$$
+
+$$= 0.0025$$
 
 $$
 = 0.0025
@@ -3970,6 +4162,12 @@ So the statement is True.`,
 The dollar increase in year 1 and in year 2 are
 
 $$S(1) = 95,000 \\times e^{0.045}$$
+
+$$e^{0.045}$$
+
+$$\\approx 1.046028$$
+
+$$95,000 \\times 1.046028$$
 
 $$\\approx 99,372.65$$
 
@@ -4110,6 +4308,12 @@ The four-year remaining share is the same exponential factor:
 
 $$v(4) = 60,000 \\times e^{-0.40}$$
 
+$$e^{-0.40}$$
+
+$$\\approx 0.67032$$
+
+$$60,000 \\times 0.67032$$
+
 $$\\approx 40,219.20$$
 
 $$\\frac{40,219.20}{60,000}$$
@@ -4147,6 +4351,12 @@ So the statement is False.`,
 The first-year decline and the fourth-year decline are
 
 $$v(1) = 60,000 \\times e^{-0.10}$$
+
+$$e^{-0.10}$$
+
+$$\\approx 0.904837$$
+
+$$60,000 \\times 0.904837$$
 
 $$\\approx 54,290.25$$
 
@@ -4213,7 +4423,13 @@ Substitute the stem numbers:
 
 $$t_2 = \\frac{\\ln 2}{0.055}$$
 
-$$\\approx 12.60$$
+$$\\ln 2$$
+
+$$\\approx 0.693147$$
+
+$$\\frac{0.693147}{0.055}$$
+
+$$\\approx 12.6$$
 
 The computed value is approximately 12.60, which matches the claim.
 
@@ -4245,7 +4461,13 @@ At an $11\\%$ continuous rate the doubling time is
 
 $$t_2' = \\frac{\\ln 2}{0.11}$$
 
-$$\\approx 6.30$$
+$$\\ln 2$$
+
+$$\\approx 0.693147$$
+
+$$\\frac{0.693147}{0.11}$$
+
+$$\\approx 6.3$$
 
 The original wait was $t_2 \\approx 12.60$. The claim needs $t_2' \\approx 12.60$. The computed value is
 
@@ -4383,6 +4605,12 @@ Halving the depreciation rate to $9\\%$ doubles the isolated wait:
 
 $$t' = \\frac{\\ln 2.5}{0.09}$$
 
+$$\\ln 2.5$$
+
+$$\\approx 0.916291$$
+
+$$\\frac{0.916291}{0.09}$$
+
 $$\\approx 10.18$$
 
 The original wait was $t \\approx 5.09$, and $10.18 = 2 \\times 5.09$. The claim is that doubled time.
@@ -4397,6 +4625,12 @@ t_{80} = \\frac{\\ln\\bigl(\\frac{1}{0.20}\\bigr)}{0.18}
 $$
 
 $$= \\frac{\\ln 5}{0.18}$$
+
+$$\\ln 5$$
+
+$$\\approx 1.609438$$
+
+$$\\frac{1.609438}{0.18}$$
 
 $$\\approx 8.94$$
 
@@ -4629,6 +4863,12 @@ $$S_{\\mathrm{day}} \\approx 439,858.10$$
 
 $$S_A = 400,000 \\times e^{0.095}$$
 
+$$e^{0.095}$$
+
+$$\\approx 1.099659$$
+
+$$400,000 \\times 1.099659$$
+
 $$\\approx 439,863.54$$
 
 The claim needs $S_{\\mathrm{day}}>S_A$. We have $439,858.10 < 439,863.54$.
@@ -4639,6 +4879,12 @@ So the statement is False.`,
 Fund A, monthly Fund B, and daily compounding at the same $9.5\\%$ give
 
 $$S_A = 400,000 \\times e^{0.095}$$
+
+$$e^{0.095}$$
+
+$$\\approx 1.099659$$
+
+$$400,000 \\times 1.099659$$
 
 $$\\approx 439,863.54$$
 
@@ -4776,7 +5022,13 @@ Doubling the original \\$28,000 at the recovered rate takes
 
 $$t_2 = \\frac{\\ln 2}{0.06667}$$
 
-$$\\approx 10.40$$
+$$\\ln 2$$
+
+$$\\approx 0.693147$$
+
+$$\\frac{0.693147}{0.06667}$$
+
+$$\\approx 10.4$$
 
 Compare the computed value with the claim (about $12.40$ years). The computed value is
 
@@ -4915,6 +5167,12 @@ The three two-year values are
 
 $$S_X = 60,000 \\times e^{0.136}$$
 
+$$e^{0.136}$$
+
+$$\\approx 1.145682$$
+
+$$60,000 \\times 1.145682$$
+
 $$\\approx 68,740.91$$
 
 $$S_Y = 60,000 \\times (1.00575)^{24}$$
@@ -4924,6 +5182,8 @@ $$\\approx 68,851.32$$
 $$S_Z = 60,000 \\times (1.0175)^{8}$$
 
 $$\\approx 68,932.91$$
+
+$$60,000 \\times 68,932.91$$
 
 These satisfy $S_X < S_Y < S_Z$. Bank X is the lowest of the three.
 
@@ -5033,6 +5293,10 @@ $$
 r_{\\mathrm{net}} = 0.09 - 0.02
 $$
 
+$$0.09 - 0.02$$
+
+$$= 0.07$$
+
 $$
 = 0.07
 $$
@@ -5087,7 +5351,13 @@ Doubling at the recovered $7\\%$ net rate takes
 
 $$t_2 = \\frac{\\ln 2}{0.07}$$
 
-$$\\approx 9.90$$
+$$\\ln 2$$
+
+$$\\approx 0.693147$$
+
+$$\\frac{0.693147}{0.07}$$
+
+$$\\approx 9.9$$
 
 Compare the computed value with the claim (about $7.00$ years). The computed value is
 
@@ -5122,7 +5392,13 @@ The doubling time at this net rate is
 
 $$t_2' = \\frac{\\ln 2}{0.055}$$
 
-$$\\approx 12.60$$
+$$\\ln 2$$
+
+$$\\approx 0.693147$$
+
+$$\\frac{0.693147}{0.055}$$
+
+$$\\approx 12.6$$
 
 At the original $7\\%$ net rate, $t_2=\\frac{\\ln 2}{0.07}\\approx 9.90$. The wait lengthens from $9.90$ to $12.60$, it does not shorten.
 
@@ -5269,7 +5545,13 @@ Substitute the recovered rate:
 
 $$t = \\frac{\\ln 5}{0.16}$$
 
-$$\\approx 10.06.$$
+$$\\ln 5$$
+
+$$\\approx 1.609438$$
+
+$$\\frac{1.609438}{0.16}$$
+
+$$\\approx 10.06$$
 
 So the statement is False.`,
       `**E.** → True
@@ -5398,6 +5680,8 @@ S_{12} = 40,000 \\times \\left(1+\\frac{0.07}{12}\\right)^{12}
 $$
 
 $$\\approx 42,891.60$$
+
+$$40,000 \\times 42,891.60$$
 
 $$S_{\\mathrm{c}} = 40,000 \\times e^{0.07}$$
 
@@ -5534,6 +5818,12 @@ The two required deposits are
 
 $$S_{0,1} = 100,000 \\times e^{-0.36}$$
 
+$$e^{-0.36}$$
+
+$$\\approx 0.697676$$
+
+$$100,000 \\times 0.697676$$
+
 $$\\approx 69,767.63$$
 
 $$S_{0,2} = 100,000 \\times e^{-0.48}$$
@@ -5583,6 +5873,12 @@ $$\\approx 0.835270$$
 $$S_0' \\approx 83,527.02$$
 
 $$S_{0,1} = 100,000 \\times e^{-0.36}$$
+
+$$e^{-0.36}$$
+
+$$\\approx 0.697676$$
+
+$$100,000 \\times 0.697676$$
 
 $$\\approx 69,767.63$$
 
@@ -5722,6 +6018,30 @@ Reversing the phases adds the same exponents:
 $$
 S_{\\mathrm{rev}}(7) = 1,800,000 \\times e^{0.04 \\times 3 + 0.10 \\times 4}
 $$
+
+$$0.04 \\times 3$$
+
+$$= 0.12$$
+
+$$0.10 \\times 4$$
+
+$$= 0.4$$
+
+$$0.12 + 0.4$$
+
+$$= 0.52$$
+
+$$0.04 \\times 3$$
+
+$$= 0.12$$
+
+$$0.10 \\times 4$$
+
+$$= 0.4$$
+
+$$0.12 + 0.4$$
+
+$$= 0.52$$
 
 $$
 = 1,800,000 \\times e^{0.52}
@@ -5971,7 +6291,13 @@ Compare the computed value with the claim (about $16.90$ years). The two sides a
 So the statement is True.`,
       `**C.** → True
 
-Quadrupling is the multiple $M=4=2^{2}$:
+Quadrupling is the multiple
+
+$$M = 4$$
+
+$$= 2^{2}$$
+
+:
 
 $$
 t_4 = \\frac{\\ln 4}{0.065}
@@ -5985,7 +6311,13 @@ $$t_4 \\approx 21.33$$
 
 $$2 \\times t_2 = 2 \\times \\frac{\\ln 2}{0.065}$$
 
-$$\\approx 21.33$$
+$$\\ln 2$$
+
+$$\\approx 0.693147$$
+
+$$\\frac{0.693147}{0.065}$$
+
+$$\\approx 10.66$$
 
 The quadrupling time is about $21.33$ years and equals twice the doubling time.
 
@@ -6007,9 +6339,21 @@ The two waiting times at $r=0.065$ are
 
 $$t_3 = \\frac{\\ln 3}{0.065}$$
 
-$$\\approx 16.90$$
+$$\\ln 3$$
+
+$$\\approx 1.098612$$
+
+$$\\frac{1.098612}{0.065}$$
+
+$$\\approx 16.9$$
 
 $$t_2 = \\frac{\\ln 2}{0.065}$$
+
+$$\\ln 2$$
+
+$$\\approx 0.693147$$
+
+$$\\frac{0.693147}{0.065}$$
 
 $$\\approx 10.66$$
 
@@ -6114,6 +6458,30 @@ $$
 C(5) = 100,000 \\times e^{0.08 \\times 3 + 0.03 \\times 2}
 $$
 
+$$0.08 \\times 3$$
+
+$$= 0.24$$
+
+$$0.03 \\times 2$$
+
+$$= 0.06$$
+
+$$0.24 + 0.06$$
+
+$$= 0.3$$
+
+$$0.08 \\times 3$$
+
+$$= 0.24$$
+
+$$0.03 \\times 2$$
+
+$$= 0.06$$
+
+$$0.24 + 0.06$$
+
+$$= 0.3$$
+
 $$
 = 100,000 \\times e^{0.30}
 $$
@@ -6140,6 +6508,12 @@ So the statement is False.`,
 The combined five-year value is the sum of the three terminal amounts:
 
 $$A(5) = 150,000 \\times e^{0.30}$$
+
+$$e^{0.30}$$
+
+$$\\approx 1.349859$$
+
+$$150,000 \\times 1.349859$$
 
 $$\\approx 202,478.82$$
 
@@ -6437,6 +6811,12 @@ Substitute the stem numbers:
 
 $$\\mathrm{PDV} = 12,000e^{-0.18}$$
 
+$$e^{-0.18}$$
+
+$$\\approx 0.83527$$
+
+$$12,000 \\times 0.83527$$
+
 $$\\approx 10,023.24$$
 
 The computed value is approximately \\$10,023.24, which matches the claim.
@@ -6475,6 +6855,14 @@ $$\\approx 0.8353$$
 
 $$\\mathrm{PDV} = 12,000e^{-0.18}$$
 
+$$e^{-0.18}$$
+
+$$\\approx 0.83527$$
+
+$$12,000 \\times 0.83527$$
+
+$$\\approx 10023.24$$
+
 $$\\mathrm{PDV} \\approx 10,023.24$$
 
 $$10,075.43-10,023.24$$
@@ -6505,6 +6893,14 @@ $$e^{-0.18}$$
 $$\\approx 0.8353$$
 
 $$\\mathrm{PDV} = 12,000e^{-0.18}$$
+
+$$e^{-0.18}$$
+
+$$\\approx 0.83527$$
+
+$$12,000 \\times 0.83527$$
+
+$$\\approx 10023.24$$
 
 $$\\mathrm{PDV} \\approx 10,023.24$$
 
@@ -6787,6 +7183,12 @@ Substitute the stem numbers:
 
 $$A = 150,000e^{-0.225}$$
 
+$$e^{-0.225}$$
+
+$$\\approx 0.798516$$
+
+$$150,000 \\times 0.798516$$
+
 $$\\approx 119,777.40$$
 
 The computed value is approximately \\$119,777.40, which matches the claim.
@@ -6826,6 +7228,14 @@ $$e^{-0.225}$$
 $$\\approx 0.7985$$
 
 $$A = 150,000e^{-0.225}$$
+
+$$e^{-0.225}$$
+
+$$\\approx 0.798516$$
+
+$$150,000 \\times 0.798516$$
+
+$$\\approx 119777.43$$
 
 $$A \\approx 119,777.40$$
 
@@ -6990,6 +7400,16 @@ $$
 $$
 
 $$= \\frac{\\ln(1.25)}{\\ln(1.06)}$$
+
+$$\\ln 1.25$$
+
+$$\\approx 0.223144$$
+
+$$\\ln(1.06)$$
+
+$$\\approx 0.058269$$
+
+$$\\frac{0.223144}{0.058269}$$
 
 $$\\approx 3.83$$
 
@@ -7197,7 +7617,13 @@ $$
 
 $$= -\\frac{\\ln(0.5)}{12}$$
 
-$$\\approx 0.0578$$
+$$\\ln 0.5$$
+
+$$\\approx -0.693147$$
+
+$$\\frac{-0.693147}{12}$$
+
+$$\\approx -0.06$$
 
 $$
 = 5.78\\%
@@ -7730,6 +8156,12 @@ Substitute the stem numbers:
 
 $$\\mathrm{PDV}_1 = 18,000e^{-0.22}$$
 
+$$e^{-0.22}$$
+
+$$\\approx 0.802519$$
+
+$$18,000 \\times 0.802519$$
+
 $$\\approx 14,445.34$$
 
 The computed value is approximately \\$14,445.34, which matches the claim.
@@ -7746,6 +8178,12 @@ $$
 Substitute the stem numbers:
 
 $$\\mathrm{PDV}_2 = 30,000e^{-0.495}$$
+
+$$e^{-0.495}$$
+
+$$\\approx 0.609571$$
+
+$$30,000 \\times 0.609571$$
 
 $$\\approx 18,287.13$$
 
@@ -13513,9 +13951,21 @@ $$
 P_{30} = \\frac{2,400}{0.045}\\left[1-\\frac{1}{(1.045)^{30}}\\right]
 $$
 
-$$
-= 39,091.65
-$$
+$$(1.045)^{-30}$$
+
+$$\\approx 0.26700002$$
+
+$$1 - (1.045)^{-30}$$
+
+$$\\approx 0.73299998$$
+
+$$\\frac{2,400}{0.045}$$
+
+$$= 53333.3333$$
+
+$$53333.3333 \\times 0.73299998$$
+
+$$= 39,091.65$$
 
 Double the fifteen-year present value is
 
@@ -13567,9 +14017,21 @@ $$
 P_{15}^{6\\%} = \\frac{2,400}{0.06}\\left[1-\\frac{1}{(1.06)^{15}}\\right]
 $$
 
-$$
-= 23,309.40
-$$
+$$(1.06)^{-15}$$
+
+$$\\approx 0.41726506$$
+
+$$1 - (1.06)^{-15}$$
+
+$$\\approx 0.58273494$$
+
+$$\\frac{2,400}{0.06}$$
+
+$$= 40000$$
+
+$$40000 \\times 0.58273494$$
+
+$$= 23,309.40$$
 
 The claim needs $23,309.40 > 25,775.15$. We have $23,309.40 < 25,775.15$.
 
@@ -13695,9 +14157,21 @@ $$
 P_{40} = \\frac{5,000}{0.06}\\left[1-\\frac{1}{(1.06)^{40}}\\right]
 $$
 
-$$
-= 75,231.50
-$$
+$$(1.06)^{-40}$$
+
+$$\\approx 0.09722219$$
+
+$$1 - (1.06)^{-40}$$
+
+$$\\approx 0.90277781$$
+
+$$\\frac{5,000}{0.06}$$
+
+$$= 83333.3333$$
+
+$$83333.3333 \\times 0.90277781$$
+
+$$= 75,231.50$$
 
 $$\\frac{75,231.50}{83,333.33}$$
 
@@ -13833,9 +14307,21 @@ $$
 P_9^{4\\%} = \\frac{2,500}{0.04}\\left[1-\\frac{1}{(1.04)^9}\\right]
 $$
 
-$$
-= 18,588.31
-$$
+$$(1.04)^{-9}$$
+
+$$\\approx 0.70258674$$
+
+$$1 - (1.04)^{-9}$$
+
+$$\\approx 0.29741326$$
+
+$$\\frac{2,500}{0.04}$$
+
+$$= 62500$$
+
+$$62500 \\times 0.29741326$$
+
+$$= 18,588.31$$
 
 The claim needs $18,588.31 < 16,288.18$. We have $18,588.31 > 16,288.18$.
 
@@ -14329,9 +14815,21 @@ $$
 P_{\\mathrm{ordinary}}(10) = \\frac{24,000}{0.06}\\left[1-\\frac{1}{(1.06)^{10}}\\right]
 $$
 
-$$
-= 176,642.00
-$$
+$$(1.06)^{-10}$$
+
+$$\\approx 0.55839478$$
+
+$$1 - (1.06)^{-10}$$
+
+$$\\approx 0.44160522$$
+
+$$\\frac{24,000}{0.06}$$
+
+$$= 400000$$
+
+$$400000 \\times 0.44160522$$
+
+$$= 176,642.00$$
 
 $$
 P_{\\mathrm{due}}(10) = 176,642.00 \\times 1.06
@@ -14366,9 +14864,21 @@ $$
 P_4 = \\frac{24,000}{0.06}\\left[1-\\frac{1}{(1.06)^4}\\right]
 $$
 
-$$
-= 83,162.40
-$$
+$$(1.06)^{-4}$$
+
+$$\\approx 0.79209366$$
+
+$$1 - (1.06)^{-4}$$
+
+$$\\approx 0.20790634$$
+
+$$\\frac{24,000}{0.06}$$
+
+$$= 400000$$
+
+$$400000 \\times 0.20790634$$
+
+$$= 83,162.40$$
 
 $$24,000 + 83,162.40$$
 
@@ -14672,7 +15182,13 @@ The claim needs an increase of more than $75\\%$. We have exactly $75\\%$.
 So the statement is False.`,
       `**E.** → False
 
-A 20% dividend cut leaves $a'=4.25\\times 0.80=3.40$. At the same 7%,
+A 20% dividend cut leaves
+
+$$a' = 4.25\\times 0.80$$
+
+$$= 3.40$$
+
+. At the same 7%,
 
 $$P'' = \\frac{3.40}{0.07}$$
 
@@ -15116,7 +15632,13 @@ Since $1.50 \\ne 2.50$, the figures disagree. The two sides do not agree.
 So the statement is False.`,
       `**D.** → False
 
-At 5% growth, next year's dividend is $D_1'=3.00\\times 1.05=3.15$, so
+At 5% growth, next year's dividend is
+
+$$D_1' = 3.00\\times 1.05$$
+
+$$= 3.15$$
+
+, so
 
 $$
 P' = \\frac{3.15}{0.09-0.05}
@@ -15392,6 +15914,14 @@ $$
 Substitute the recovered stem inputs:
 
 $$S_0 = 250,000 e^{-0.66}$$
+
+$$e^{-0.66}$$
+
+$$\\approx 0.516851$$
+
+$$250,000 \\times 0.516851$$
+
+$$\\approx 129212.83$$
 
 $$S_0 = 250,000 \\times 0.516855$$
 
@@ -15756,6 +16286,14 @@ Substitute the recovered stem inputs:
 $$S = 20,000 e^{0.06 \\times 7}$$
 
 $$S = 20,000 e^{0.42}$$
+
+$$e^{0.42}$$
+
+$$\\approx 1.521962$$
+
+$$20,000 \\times 1.521962$$
+
+$$\\approx 30439.23$$
 
 $$S = 30,439.24$$
 
@@ -19419,7 +19957,13 @@ The computed figure matches the claim.
 So the statement is True.`,
       `**D.** → False
 
-The overview recovered Option 2's cash flows $a_0=-50,000$ and $a_1=a_2=6,000$. Their undiscounted sum is
+The overview recovered Option 2's cash flows $a_0=-50,000$ and
+
+$$a_1 = a_2$$
+
+$$= 6,000$$
+
+. Their undiscounted sum is
 
 Substitute the recovered stem inputs:
 
