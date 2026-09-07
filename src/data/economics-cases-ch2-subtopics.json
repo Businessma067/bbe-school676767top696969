@@ -2339,11 +2339,11 @@
       false
     ],
     "tactical_explanations": [
-      "TRUE — Check the sentence against the core concept named in the stem, including every scope word.\n\nCareful scheduling under capacity limits reflects economising.\n\nThe statement is true.",
-      "TRUE — Read the quantifier. Words such as never, always, only, or all turn a generally valid idea into a claim that one counterexample rejects.\n\nUniversal scarcity creates allocation choices for all actor types.\n\nThe statement is true.",
-      "TRUE — Check the sentence against the core concept named in the stem, including every scope word.\n\nWorkbook income is the next-best alternative when weddings are prioritised.\n\nThe statement is true.",
-      "TRUE — Check the sentence against the core concept named in the stem, including every scope word.\n\nFixed machine time forces a choice among print queues.\n\nThe statement is true.",
-      "FALSE — Check that the comparison runs in the stated direction and attaches the feature to the correct member of the pair.\n\nOpportunity cost is the alternative's benefit, not the chosen job's operating cost.\n\nThe statement is false. A student who matched the topic to \"Opportunity cost equals the electricity bill for the press rather than forgone wedding revenue\" without checking the rest of the sentence would mark the statement true.\n"
+      "TRUE — Shorter setup times between runs free scarce press minutes so both workbook and wedding queues get partial capacity. That scheduling discipline is economising on one press.\n\nThe statement is true.",
+      "TRUE — The press-shop choice is one instance of the general rule: households, firms, and governments all allocate scarce resources among competing uses.\n\nThe statement is true.",
+      "TRUE — Taking wedding jobs means workbook contract income is forgone — the opportunity cost of prioritising weddings.\n\nThe statement is true.",
+      "TRUE — One press for one week cannot run unlimited workbook and wedding jobs at once. That press-week is scarce between the two queues.\n\nThe statement is true.",
+      "FALSE — The electricity bill is an operating outlay for using the press. Opportunity cost is the forgone alternative use’s benefit (for example workbook income forgone when wedding jobs fill the week) — not the power invoice by itself.\n\nThe statement is false."
     ],
     "difficulty_level": "2/5",
     "tier": "full"
@@ -2368,11 +2368,11 @@
       false
     ],
     "tactical_explanations": [
-      "TRUE — Read the quantifier. Words such as never, always, only, or all turn a generally valid idea into a claim that one counterexample rejects.\n\nOne evening slot creates a binary time allocation.\n\nThe statement is true.",
-      "TRUE — Check the sentence against the core concept named in the stem, including every scope word.\n\nSatisfaction and opportunity cost can coexist.\n\nThe statement is true.",
-      "FALSE — Check the sentence against the core concept named in the stem, including every scope word.\n\nNon-financial learning benefits can represent forgone alternatives.\n\nThe statement is false. A student who matched the topic to \"Only cash income can ever appear in opportunity-cost reasoning\" without checking the rest of the sentence would mark the statement true.\n",
-      "FALSE — Map the scenario onto the textbook category first, then test whether the sentence describes that category accurately.\n\nForgone wage income remains even when education is chosen.\n\nThe statement is false. A student who matched the topic to \"Educational courses eliminate opportunity cost because skills are valuable\" without checking the rest of the sentence would mark the statement true.\n",
-      "FALSE — Check the sentence against the core concept named in the stem, including every scope word.\n\nBoth split limited resources among competing uses.\n\nThe statement is false. A student who matched the topic to \"Personal schedules are unrelated to government budget allocation\" without checking the rest of the sentence would mark the statement true.\n"
+      "TRUE — Tuesday evening cannot be fully spent in language class and fully spent babysitting. Those hours are scarce between the two activities.\n\nThe statement is true.",
+      "TRUE — Enjoying babysitting is a benefit of that option; it does not erase the classroom learning forgone. Opportunity cost remains the unchosen course’s benefits.\n\nThe statement is true.",
+      "FALSE — Opportunity cost can include learning, leisure, and other non-cash benefits forgone — not only cash income.\n\nThe statement is false.",
+      "FALSE — Valuable skills make the course attractive; they do not eliminate the opportunity cost of missing babysitting pay or other uses of Tuesday evening.\n\nThe statement is false.",
+      "FALSE — Personal schedule trade-offs and government budget trade-offs share the same allocation logic under scarcity. They are related as instances of one economic problem, not unrelated domains.\n\nThe statement is false."
     ],
     "difficulty_level": "2/5",
     "tier": "full"
@@ -2397,11 +2397,11 @@
       true
     ],
     "tactical_explanations": [
-      "TRUE — Check the sentence against the core concept named in the stem, including every scope word.\n\nForgone crop yield is the next-best alternative when power wins.\n\nThe statement is true.",
-      "TRUE — Map the scenario onto the textbook category first, then test whether the sentence describes that category accurately.\n\nReducing waste under scarcity reflects economising.\n\nThe statement is true.",
-      "TRUE — Check the sentence against the core concept named in the stem, including every scope word.\n\nForgone power revenue is the next-best alternative.\n\nThe statement is true.",
-      "TRUE — Check the sentence against the core concept named in the stem, including every scope word.\n\nPublic agencies also split limited inputs among goals.\n\nThe statement is true.",
-      "TRUE — Check the sentence against the core concept named in the stem, including every scope word.\n\nFixed water volume forces prioritisation among uses.\n\nThe statement is true."
+      "TRUE — Prioritising hydropower reduces water available for irrigation, so crop-yield benefits downstream are forgone — opportunity cost of power priority.\n\nThe statement is true.",
+      "TRUE — Timing releases to limit evaporation during heatwaves stretches limited reservoir water further — economising on a scarce seasonal stock.\n\nThe statement is true.",
+      "TRUE — Prioritising irrigation reduces turbine flow, so electricity revenue (and power output) is forgone — opportunity cost of irrigation priority.\n\nThe statement is true.",
+      "TRUE — Dam managers in government face limited water and competing uses — the same scarce-resource problem households and firms face with their own limited means.\n\nThe statement is true.",
+      "TRUE — This season’s reservoir releases are finite and split between power generation and irrigation — a scarce resource allocation.\n\nThe statement is true."
     ],
     "difficulty_level": "1/5",
     "tier": "full"
@@ -2426,11 +2426,11 @@
       false
     ],
     "tactical_explanations": [
-      "TRUE — Check the sentence against the core concept named in the stem, including every scope word.\n\nStandard definition applies to studio booking.\n\nThe statement is true.",
-      "FALSE — Map the scenario onto the textbook category first, then test whether the sentence describes that category accurately.\n\nForgone hire fees count as financial opportunity cost.\n\nThe statement is false. A student who matched the topic to \"Creative projects have no opportunity cost because art is non-financial\" without checking the rest of the sentence would mark the statement true.\n",
-      "FALSE — Map the scenario onto the textbook category first, then test whether the sentence describes that category accurately.\n\nPhysical stage time remains limited even with strong demand.\n\nThe statement is false. A student who matched the topic to \"Studios with waiting lists face no scarcity because demand is strong\" without checking the rest of the sentence would mark the statement true.\n",
-      "FALSE — Check the sentence against the core concept named in the stem, including every scope word.\n\nBoth involve choosing among alternatives under limits.\n\nThe statement is false. A student who matched the topic to \"Corporate booking systems follow different laws from household budgets\" without checking the rest of the sentence would mark the statement true.\n",
-      "FALSE — Read the quantifier. Words such as never, always, only, or all turn a generally valid idea into a claim that one counterexample rejects.\n\nEach booking direction forgoes the other's benefits.\n\nThe statement is false. A student who overlooked the word \"always\" in \"Commercial shoots always dominate, so documentaries carry zero forgone value\" would treat the restriction as absent and mark the statement true.\n"
+      "TRUE — Opportunity cost is the next-best alternative’s benefit forgone (documentary vs commercial), not the fee charged for the shoot you actually book.\n\nFee = outlay/revenue of the chosen use; opportunity cost = forgone alternative.\n\nThe statement is true.",
+      "FALSE — Art and documentaries still use scarce stage time. Non-financial motives do not zero opportunity cost.\n\nThe statement is false.",
+      "FALSE — Strong demand and waiting lists intensify scarcity of the single Friday stage; they do not remove it.\n\nThe statement is false.",
+      "FALSE — Corporate booking systems still allocate limited rooms and slots under the same scarcity logic as household budgets — different software, same economic problem.\n\nThe statement is false.",
+      "FALSE — Even if commercials often pay more, documentaries can carry cultural, contractual, or strategic value. Declaring their forgone value always zero is false.\n\nThe statement is false."
     ],
     "difficulty_level": "2/5",
     "tier": "full"
@@ -2455,11 +2455,11 @@
       false
     ],
     "tactical_explanations": [
-      "TRUE — Map the scenario onto the textbook category first, then test whether the sentence describes that category accurately.\n\nCombined prices overstate opportunity cost.\n\nThe statement is true.",
-      "TRUE — Check the sentence against the core concept named in the stem, including every scope word.\n\nBinary choices still create forgone alternatives.\n\nThe statement is true.",
-      "TRUE — Read the quantifier. Words such as never, always, only, or all turn a generally valid idea into a claim that one counterexample rejects.\n\nUniversal application is standard.\n\nThe statement is true.",
-      "FALSE — Read the quantifier. Words such as never, always, only, or all turn a generally valid idea into a claim that one counterexample rejects.\n\nDefinition requires one forgone alternative, not combined totals.\n\nThe statement is false. A student who overlooked the word \"all\" in \"Adding all rejected prices is the standard textbook definition\" would treat the restriction as absent and mark the statement true.\n",
-      "FALSE — Check the sentence against the core concept named in the stem, including every scope word.\n\nForgone bike benefit remains even when the tablet is preferred.\n\nThe statement is false. A student who matched the topic to \"Liking the chosen item sets opportunity cost to zero\" without checking the rest of the sentence would mark the statement true.\n"
+      "TRUE — Picking the 300-euro tablet forgoes the bike’s benefit — not the combined sticker sum:\n\n$$300 + 450 = 750$$\n\nOpportunity cost is the next-best option forgone, not both prices added.\n\nThe statement is true.",
+      "TRUE — Two alternatives suffice: choose one, forgo the other. A third option is not required for opportunity cost to exist.\n\nThe statement is true.",
+      "TRUE — Households, firms, and governments all forgo next-best uses when allocating scarce resources — opportunity cost is shared across actors.\n\nThe statement is true.",
+      "FALSE — Adding all rejected prices is Robin-style overcounting, not the standard textbook definition (next-best alternative forgone).\n\nThe statement is false.",
+      "FALSE — Liking the chosen item explains why you picked it; it does not set opportunity cost to zero. You still forwent the bike’s benefit.\n\nThe statement is false."
     ],
     "difficulty_level": "3/5",
     "tier": "full"
@@ -2484,11 +2484,11 @@
       true
     ],
     "tactical_explanations": [
-      "TRUE — Check the sentence against the core concept named in the stem, including every scope word.\n\nFinite librarian time forces prioritisation.\n\nThe statement is true.",
-      "TRUE — Check the sentence against the core concept named in the stem, including every scope word.\n\nWeekday access benefit is forgone when weekends are chosen.\n\nThe statement is true.",
-      "TRUE — Check the sentence against the core concept named in the stem, including every scope word.\n\nBoth split limited resources among competing goals.\n\nThe statement is true.",
-      "TRUE — Map the scenario onto the textbook category first, then test whether the sentence describes that category accurately.\n\nUsing staff flexibly under scarcity reflects economising.\n\nThe statement is true.",
-      "TRUE — Check the sentence against the core concept named in the stem, including every scope word.\n\nProgramme benefit is the next-best alternative.\n\nThe statement is true."
+      "TRUE — Limited staff hours this quarter cannot fully extend weekdays and fully launch weekend children’s sessions without trade-offs. Hours are scarce between those uses.\n\nThe statement is true.",
+      "TRUE — Launching the weekend programme uses hours that could have extended weekday access — that forgone weekday benefit is the opportunity cost.\n\nThe statement is true.",
+      "TRUE — Council library staffing and a family choosing roof repair versus holiday both allocate limited means among competing uses — same problem, different scale.\n\nThe statement is true.",
+      "TRUE — Cross-training so one team covers more tasks stretches scarce staff capacity — economising on labour hours.\n\nThe statement is true.",
+      "TRUE — Extending weekday hours uses staff time that could have run the children’s programme — forgone programme benefit is the opportunity cost.\n\nThe statement is true."
     ],
     "difficulty_level": "2/5",
     "tier": "full"
@@ -2513,11 +2513,11 @@
       false
     ],
     "tactical_explanations": [
-      "TRUE — Check the sentence against the core concept named in the stem, including every scope word.\n\nTool chest benefit is the next-best alternative.\n\nThe statement is true.",
-      "TRUE — Map the scenario onto the textbook category first, then test whether the sentence describes that category accurately.\n\nMultiple resource types create allocation trade-offs.\n\nThe statement is true.",
-      "TRUE — Check the sentence against the core concept named in the stem, including every scope word.\n\nFixed apprentice funds force a binary choice.\n\nThe statement is true.",
-      "FALSE — Check the sentence against the core concept named in the stem, including every scope word.\n\nForgone measurement capability remains opportunity cost.\n\nThe statement is false. A student who matched the topic to \"Storage furniture is a need and therefore costless to choose\" without checking the rest of the sentence would mark the statement true.\n",
-      "FALSE — Check the sentence against the core concept named in the stem, including every scope word.\n\nPersonal tool budgets carry opportunity cost like firm budgets.\n\nThe statement is false. A student who matched the topic to \"Opportunity cost begins only after incorporation as a business\" without checking the rest of the sentence would mark the statement true.\n"
+      "TRUE — Buying the measuring set means not buying the tool chest, so storage and mobility benefits of the chest are forgone — opportunity cost of the measuring set.\n\nThe statement is true.",
+      "TRUE — Scarce money for tools and scarce time for overtime versus study are parallel constraints: limited means, competing uses, opportunity cost in both.\n\nThe statement is true.",
+      "TRUE — One hundred eighty euros funds one option this month, not both:\n\n$$180\\text{ euros}$$\n\nThat limited budget is allocated between measuring tools and the chest.\n\nThe statement is true.",
+      "FALSE — Even if storage helps the apprentice’s work, choosing the chest still forgoes the measuring set. Calling something a need does not make it costless in opportunity-cost terms.\n\nThe statement is false.",
+      "FALSE — Opportunity cost applies to individuals before any business incorporation — including apprentices buying tools.\n\nThe statement is false."
     ],
     "difficulty_level": "2/5",
     "tier": "full"
@@ -2542,11 +2542,11 @@
       false
     ],
     "tactical_explanations": [
-      "TRUE — Check the sentence against the core concept named in the stem, including every scope word.\n\nLab equipment time is a scarce resource.\n\nThe statement is true.",
-      "FALSE — Check the sentence against the core concept named in the stem, including every scope word.\n\nForgone research results remain opportunity cost.\n\nThe statement is false. A student who matched the topic to \"Medical samples override economics, so opportunity cost is zero\" without checking the rest of the sentence would mark the statement true.\n",
-      "FALSE — Read the quantifier. Words such as never, always, only, or all turn a generally valid idea into a claim that one counterexample rejects.\n\nFunded labs still forgo alternative experiment benefits.\n\nThe statement is false. A student who overlooked the word \"never\" in \"Research labs never face trade-offs because science is funded\" would treat the restriction as absent and mark the statement true.\n",
-      "FALSE — Read the quantifier. Words such as never, always, only, or all turn a generally valid idea into a claim that one counterexample rejects.\n\nSame machine-hour pool creates forgone alternatives.\n\nThe statement is false. A student who overlooked the word \"never\" in \"Different experiments in one building never compete for equipment\" would treat the restriction as absent and mark the statement true.\n",
-      "FALSE — Read the quantifier. Words such as never, always, only, or all turn a generally valid idea into a claim that one counterexample rejects.\n\nEven well-equipped labs face scheduling limits on each machine.\n\nThe statement is false. A student who overlooked the word \"never\" in \"Labs with multiple machines never queue samples\" would treat the restriction as absent and mark the statement true.\n"
+      "TRUE — Research labs allocate scarce centrifuge slots, reagents, and technician time. Scarce-resource allocation is not limited to firms and households.\n\nThe statement is true.",
+      "FALSE — Medical importance raises the stakes of prioritisation; it does not set opportunity cost to zero. Choosing blood samples forgoes protein-culture runs in the same overnight slot.\n\nThe statement is false.",
+      "FALSE — Funding does not create infinite overnight slots. Labs still face equipment and time trade-offs.\n\nThe statement is false.",
+      "FALSE — Different experiments in one building routinely compete for shared machines, cold storage, and technician hours.\n\nThe statement is false.",
+      "FALSE — Multiple machines reduce queues; they do not eliminate them when demand exceeds capacity. Labs still sequence samples.\n\nThe statement is false."
     ],
     "difficulty_level": "2/5",
     "tier": "full"
@@ -2571,11 +2571,11 @@
       false
     ],
     "tactical_explanations": [
-      "TRUE — Map the scenario onto the textbook category first, then test whether the sentence describes that category accurately.\n\nEfficient stowage under space limits reflects economising.\n\nThe statement is true.",
-      "TRUE — Check the sentence against the core concept named in the stem, including every scope word.\n\nBoth choose among alternatives with fixed capacity or budget.\n\nThe statement is true.",
-      "TRUE — Check the sentence against the core concept named in the stem, including every scope word.\n\nPassenger revenue is the next-best alternative.\n\nThe statement is true.",
-      "TRUE — Check the sentence against the core concept named in the stem, including every scope word.\n\nFixed deck area forces loading choices.\n\nThe statement is true.",
-      "FALSE — Check the sentence against the core concept named in the stem, including every scope word.\n\nForgone freight income remains when cars are prioritised.\n\nThe statement is false. A student who matched the topic to \"Passenger cars are needs for travellers, so freight income disappears\" without checking the rest of the sentence would mark the statement true.\n"
+      "TRUE — Optimising placement to fit maximum safe tonnage stretches limited deck capacity — economising on scarce sailing space.\n\nThe statement is true.",
+      "TRUE — Splitting deck space between freight and cars mirrors a government splitting transport investment between rail and road — scarce capacity, competing uses.\n\nThe statement is true.",
+      "TRUE — Loading extra freight trailers means fewer passenger cars aboard, so ticket revenue from cars left ashore is forgone — opportunity cost of freight priority.\n\nThe statement is true.",
+      "TRUE — Deck space on one sailing is finite and split between freight trailers and passenger cars — a scarce resource.\n\nThe statement is true.",
+      "FALSE — Travellers may need cars, but that does not make freight income “disappear” as an economic category. Freight still earns revenue and still competes for deck space.\n\nThe statement is false."
     ],
     "difficulty_level": "2/5",
     "tier": "full"
@@ -2600,11 +2600,11 @@
       false
     ],
     "tactical_explanations": [
-      "TRUE — Check the sentence against the core concept named in the stem, including every scope word.\n\nBoard-game benefit is the next-best alternative.\n\nThe statement is true.",
-      "TRUE — Map the scenario onto the textbook category first, then test whether the sentence describes that category accurately.\n\nForgone alternatives depend on choices, not on large budgets alone.\n\nThe statement is true.",
-      "FALSE — Map the scenario onto the textbook category first, then test whether the sentence describes that category accurately.\n\nEven with top-ups possible, this month's agreed jar remains fixed.\n\nThe statement is false. A student who matched the topic to \"Sibling pools are unlimited because parents may add coins later\" without checking the rest of the sentence would mark the statement true.\n",
-      "FALSE — Check the sentence against the core concept named in the stem, including every scope word.\n\nForgone cinema outing benefit remains opportunity cost.\n\nThe statement is false. A student who matched the topic to \"Games last longer, so cinema benefits vanish permanently\" without checking the rest of the sentence would mark the statement true.\n",
-      "FALSE — Read the quantifier. Words such as never, always, only, or all turn a generally valid idea into a claim that one counterexample rejects.\n\nComparing prices with a fixed jar is economising.\n\nThe statement is false. A student who overlooked the word \"never\" in \"Children never economise because parents should fund every wish\" would treat the restriction as absent and mark the statement true.\n"
+      "TRUE — Cinema tickets use the jar so the board game is not bought; repeated home-entertainment benefit from the game is forgone — opportunity cost of cinema.\n\nThe statement is true.",
+      "TRUE — Sixty euros is small but still limited. Forgoing the game for tickets is real opportunity cost at household scale.\n\n$$60\\text{ euros}$$ still binds.\n\nThe statement is true.",
+      "FALSE — Parents might add coins later; that possibility does not make this month’s jar unlimited. The current 60 euros remains a scarce pool for this choice.\n\nThe statement is false.",
+      "FALSE — Games lasting longer does not make cinema benefits “vanish permanently” as a category — nor does durability erase cinema’s opportunity cost when the jar buys tickets instead.\n\nThe statement is false.",
+      "FALSE — Children economise with limited toys, time, and shared jars. Parents funding every wish is a wish, not a fact that removes economising.\n\nThe statement is false."
     ],
     "difficulty_level": "2/5",
     "tier": "full"
@@ -2629,11 +2629,11 @@
       false
     ],
     "tactical_explanations": [
-      "TRUE — Map the scenario onto the textbook category first, then test whether the sentence describes that category accurately.\n\nBundling reduces waste of limited equipment time.\n\nThe statement is true.",
-      "FALSE — Map the scenario onto the textbook category first, then test whether the sentence describes that category accurately.\n\nCrew fatigue and daylight still cap usable hours.\n\nThe statement is false. A student who matched the topic to \"Technicians can work unlimited hours because wind stops\" without checking the rest of the sentence would mark the statement true.\n",
-      "FALSE — Check the sentence against the core concept named in the stem, including every scope word.\n\nTechnician scheduling is a firm allocation problem.\n\nThe statement is false. A student who matched the topic to \"Energy firms are exempt from opportunity-cost reasoning\" without checking the rest of the sentence would mark the statement true.\n",
-      "FALSE — Read the quantifier. Words such as never, always, only, or all turn a generally valid idea into a claim that one counterexample rejects.\n\nDelayed inspections still forgo compliance benefits.\n\nThe statement is false. A student who overlooked the word \"all\" in \"Safety rules remove all opportunity cost from maintenance planning\" would treat the restriction as absent and mark the statement true.\n",
-      "FALSE — Check the sentence against the core concept named in the stem, including every scope word.\n\nBoth tasks offer measurable forgone benefits.\n\nThe statement is false. A student who matched the topic to \"Inspections are regulatory needs, so repairs carry zero forgone value\" without checking the rest of the sentence would mark the statement true.\n"
+      "TRUE — Bundling tasks that share one crane setup saves scarce hoist time in the low-wind window — economising on a binding maintenance resource.\n\nThe statement is true.",
+      "FALSE — Low wind creates a maintenance window; it does not grant technicians unlimited hours. Fatigue, crew size, and the window’s length still bind.\n\nThe statement is false.",
+      "FALSE — Energy firms allocate scarce windows, cranes, and crews under opportunity cost like other firms.\n\nThe statement is false.",
+      "FALSE — Safety rules constrain how work is done; they do not remove trade-offs between inspections and blade repairs inside a limited window.\n\nThe statement is false.",
+      "FALSE — Regulatory need for inspections raises their priority; it does not set the forgone value of delayed blade repairs to zero.\n\nThe statement is false."
     ],
     "difficulty_level": "1/5",
     "tier": "full"
@@ -2658,11 +2658,11 @@
       false
     ],
     "tactical_explanations": [
-      "TRUE — Check the sentence against the core concept named in the stem, including every scope word.\n\nLimited writer time forces one major proposal this week.\n\nThe statement is true.",
-      "TRUE — Check the sentence against the core concept named in the stem, including every scope word.\n\nHousing programme benefit is forgone when arts wins.\n\nThe statement is true.",
-      "TRUE — Map the scenario onto the textbook category first, then test whether the sentence describes that category accurately.\n\nArts funding benefit is the next-best alternative.\n\nThe statement is true.",
-      "FALSE — Check the sentence against the core concept named in the stem, including every scope word.\n\nWriter salary is a cost of chosen work, not the forgone proposal's benefit.\n\nThe statement is false. A student who matched the topic to \"Opportunity cost equals the salary paid to the grant writer\" without checking the rest of the sentence would mark the statement true.\n",
-      "FALSE — Check the sentence against the core concept named in the stem, including every scope word.\n\nCharitable organisations also forgo alternative projects.\n\nThe statement is false. A student who matched the topic to \"Only profit-seeking firms allocate scarce resources\" without checking the rest of the sentence would mark the statement true.\n"
+      "TRUE — One staff week cannot fully write both grant applications at once. That week is scarce between housing and arts proposals.\n\nThe statement is true.",
+      "TRUE — Pursuing the arts grant forgoes the housing programme benefit that a successful housing proposal might have brought — opportunity cost of the arts focus.\n\nThe statement is true.",
+      "TRUE — Pursuing housing forgoes arts-funding benefits if the arts proposal is skipped — opportunity cost of the housing focus.\n\nThe statement is true.",
+      "FALSE — Grant-writer salary is the outlay for labour. Opportunity cost is the forgone alternative grant’s expected programme benefit — not the salary figure itself.\n\nThe statement is false.",
+      "FALSE — Nonprofits allocate scarce staff time and funds too. Profit-seeking is not required for scarce-resource allocation.\n\nThe statement is false."
     ],
     "difficulty_level": "3/5",
     "tier": "full"
@@ -2687,11 +2687,11 @@
       true
     ],
     "tactical_explanations": [
-      "TRUE — Check the sentence against the core concept named in the stem, including every scope word.\n\nHospital access benefit is the next-best alternative.\n\nThe statement is true.",
-      "TRUE — Check the sentence against the core concept named in the stem, including every scope word.\n\nSchool transport benefit is forgone when hospitals are prioritised.\n\nThe statement is true.",
-      "TRUE — Check the sentence against the core concept named in the stem, including every scope word.\n\nMunicipal storm budgets and hours mirror household trade-offs.\n\nThe statement is true.",
-      "TRUE — Map the scenario onto the textbook category first, then test whether the sentence describes that category accurately.\n\nRoute sequencing saves scarce fuel and hour resources.\n\nThe statement is true.",
-      "TRUE — Check the sentence against the core concept named in the stem, including every scope word.\n\nStorm response capacity is finite in the first shift.\n\nThe statement is true."
+      "TRUE — Clearing schools first delays hospital-road clearing, so emergency-access benefits on those roads are forgone — opportunity cost of school priority.\n\nThe statement is true.",
+      "TRUE — Clearing hospital roads first delays school routes, so pupil-transport benefits are forgone — opportunity cost of hospital priority.\n\nThe statement is true.",
+      "TRUE — Limited plough hours after a storm are allocated like a household monthly budget — scarce means, competing uses.\n\nThe statement is true.",
+      "TRUE — Sequencing routes to cut return-to-depot deadhead mileage stretches scarce plough hours — economising on the fleet’s time.\n\nThe statement is true.",
+      "TRUE — Available plough hours are finite and split between school routes and hospital roads — a scarce resource.\n\nThe statement is true."
     ],
     "difficulty_level": "2/5",
     "tier": "full"
@@ -2716,11 +2716,11 @@
       false
     ],
     "tactical_explanations": [
-      "TRUE — Check the sentence against the core concept named in the stem, including every scope word.\n\nOne person cannot pursue two full-time paths simultaneously.\n\nThe statement is true.",
-      "TRUE — Check the sentence against the core concept named in the stem, including every scope word.\n\nTime and opportunity constraints parallel firm choices.\n\nThe statement is true.",
-      "TRUE — Check the sentence against the core concept named in the stem, including every scope word.\n\nEnjoyment and forgone pay can coexist.\n\nThe statement is true.",
-      "TRUE — Check the sentence against the core concept named in the stem, including every scope word.\n\nForgone wages are the financial next-best alternative.\n\nThe statement is true.",
-      "FALSE — Check the sentence against the core concept named in the stem, including every scope word.\n\nExperience and contacts can represent forgone benefits.\n\nThe statement is false. A student who matched the topic to \"Only euro amounts may define opportunity cost for graduates\" without checking the rest of the sentence would mark the statement true.\n"
+      "TRUE — Full-time summer weeks cannot cover both the paid placement and the museum internship. Those weeks are scarce between the offers.\n\nThe statement is true.",
+      "TRUE — Individuals choosing training paths and firms choosing training programmes both allocate scarce time (and related resources) among alternatives.\n\nThe statement is true.",
+      "TRUE — Higher enjoyment at the museum is a benefit of that option; it does not erase forgone wages from the paid placement in the comparison.\n\nThe statement is true.",
+      "TRUE — Accepting the unpaid museum internship forgoes paid-placement wages — the money opportunity cost of the museum path.\n\nThe statement is true.",
+      "FALSE — Opportunity cost for graduates can include experience, networks, and career options forgone — not euro amounts only.\n\nThe statement is false."
     ],
     "difficulty_level": "2/5",
     "tier": "full"
@@ -2745,11 +2745,11 @@
       false
     ],
     "tactical_explanations": [
-      "TRUE — Check the sentence against the core concept named in the stem, including every scope word.\n\nSatisfaction and opportunity cost can coexist.\n\nThe statement is true.",
-      "TRUE — Check the sentence against the core concept named in the stem, including every scope word.\n\nForgone wage income is a financial opportunity cost.\n\nThe statement is true.",
-      "FALSE — Check the sentence against the core concept named in the stem, including every scope word.\n\nFree activities still forgo other uses of the same hours.\n\nThe statement is false. A student who matched the topic to \"Only priced activities create opportunity cost\" without checking the rest of the sentence would mark the statement true.\n",
-      "FALSE — Check the sentence against the core concept named in the stem, including every scope word.\n\nCharitable choices still forgo alternatives.\n\nThe statement is false. A student who matched the topic to \"Volunteering is charitable and therefore exempt from economics\" without checking the rest of the sentence would mark the statement true.\n",
-      "FALSE — Check the sentence against the core concept named in the stem, including every scope word.\n\nEmotional value of chosen activity is separate from forgone alternative.\n\nThe statement is false. A student who matched the topic to \"Opportunity cost equals how happy the volunteer feels afterward\" without checking the rest of the sentence would mark the statement true.\n"
+      "TRUE — Satisfaction is a benefit of volunteering; it does not cancel forgone income or leisure from the option not chosen. Those forgone benefits remain opportunity cost.\n\nThe statement is true.",
+      "TRUE — Saturday volunteering can mean not working a paid shift, so wage income is forfeited — opportunity cost in money terms.\n\nThe statement is true.",
+      "FALSE — Unpriced alternatives (leisure, unpaid help, learning) still create opportunity cost when forgone. Price tags are not required.\n\nThe statement is false.",
+      "FALSE — Charitable motive does not exempt an activity from scarce-time economics. Volunteering still uses hours that had other uses.\n\nThe statement is false.",
+      "FALSE — How happy the volunteer feels is a benefit measure, not the definition of opportunity cost. Opportunity cost is what was forgone, not post-activity happiness.\n\nThe statement is false."
     ],
     "difficulty_level": "3/5",
     "tier": "full"
@@ -2774,11 +2774,11 @@
       false
     ],
     "tactical_explanations": [
-      "TRUE — Check the sentence against the core concept named in the stem, including every scope word.\n\nClient hire benefit is the next-best alternative.\n\nThe statement is true.",
-      "TRUE — Map the scenario onto the textbook category first, then test whether the sentence describes that category accurately.\n\nPartial splitting stretches scarce space efficiently.\n\nThe statement is true.",
-      "TRUE — Check the sentence against the core concept named in the stem, including every scope word.\n\nOne room cannot host both events at once.\n\nThe statement is true.",
-      "TRUE — Check the sentence against the core concept named in the stem, including every scope word.\n\nRoom time is allocated among competing uses.\n\nThe statement is true.",
-      "FALSE — Read the quantifier. Words such as never, always, only, or all turn a generally valid idea into a claim that one counterexample rejects.\n\nInternal training benefits remain forgone when clients book.\n\nThe statement is false. A student who overlooked the word \"all\" in \"Client revenue overrides all internal benefits automatically\" would treat the restriction as absent and mark the statement true.\n"
+      "TRUE — Using the room for internal training forgoes client hire fees and relationship benefits from a workshop — opportunity cost of internal use.\n\nThe statement is true.",
+      "TRUE — Split walls that let both groups meet at reduced capacity stretch one room’s morning — economising when both accept less space.\n\nThe statement is true.",
+      "TRUE — One large room for one morning cannot fully host both the client workshop and internal training without trade-offs — a scarce resource.\n\nThe statement is true.",
+      "TRUE — Assigning the room mirrors a firm choosing between two marketing channels: limited capacity, competing uses, opportunity cost.\n\nThe statement is true.",
+      "FALSE — Client revenue often weighs heavily, but internal training can have real benefits. Revenue does not “automatically” override all internal benefits in every case.\n\nThe statement is false."
     ],
     "difficulty_level": "2/5",
     "tier": "full"
@@ -2803,11 +2803,11 @@
       false
     ],
     "tactical_explanations": [
-      "TRUE — Check the sentence against the core concept named in the stem, including every scope word.\n\nRepair benefit is the next-best alternative.\n\nThe statement is true.",
-      "FALSE — Read the quantifier. Words such as never, always, only, or all turn a generally valid idea into a claim that one counterexample rejects.\n\nSpoilage avoided or caused can represent forgone benefits.\n\nThe statement is false. A student who overlooked the word \"always\" in \"Opportunity cost must always be measured only in euros\" would treat the restriction as absent and mark the statement true.\n",
-      "FALSE — Check the sentence against the core concept named in the stem, including every scope word.\n\nUnpicked fruit still represents forgone revenue before spoilage.\n\nThe statement is false. A student who matched the topic to \"Weather makes fruit worthless, so revenue opportunity cost is zero\" without checking the rest of the sentence would mark the statement true.\n",
-      "FALSE — Map the scenario onto the textbook category first, then test whether the sentence describes that category accurately.\n\nEven with weather risk, assignable crew hours remain finite.\n\nThe statement is false. A student who matched the topic to \"Rain removes scarcity because work stops anyway\" without checking the rest of the sentence would mark the statement true.\n",
-      "FALSE — Check the sentence against the core concept named in the stem, including every scope word.\n\nUrgent farm tasks mirror urgent household budget splits.\n\nThe statement is false. A student who matched the topic to \"Agricultural decisions are biological only, not economic\" without checking the rest of the sentence would mark the statement true.\n"
+      "TRUE — Sending the crew to cherries delays trellis repairs, so storm-damage reduction from timely repairs is forgone — opportunity cost of cherry priority.\n\nThe statement is true.",
+      "FALSE — Opportunity cost can be measured in crop saved, risk reduced, or other non-euro benefits — not euros only.\n\nThe statement is false.",
+      "FALSE — Weather may reduce fruit value; it does not automatically make revenue opportunity cost zero in every harvest decision. Early picking can still protect value relative to delay.\n\nThe statement is false.",
+      "FALSE — Rain changes which tasks are feasible; it does not remove scarcity of crew hours before the rain arrives. Pre-rain allocation still matters.\n\nThe statement is false.",
+      "FALSE — Farming combines biology with economic allocation of labour, land, and timing. Agricultural decisions are economic as well as biological.\n\nThe statement is false."
     ],
     "difficulty_level": "4/5",
     "tier": "full"
@@ -2832,11 +2832,11 @@
       false
     ],
     "tactical_explanations": [
-      "TRUE — Map the scenario onto the textbook category first, then test whether the sentence describes that category accurately.\n\nCareful time use under scarcity reflects economising behaviour.\n\nThe statement is true.",
-      "TRUE — Check the sentence against the core concept named in the stem, including every scope word.\n\nForgone revision benefit is the next-best alternative when working.\n\nThe statement is true.",
-      "FALSE — Check the sentence against the core concept named in the stem, including every scope word.\n\nPersonal time allocation mirrors firm project selection under scarcity.\n\nThe statement is false. A student who matched the topic to \"Opportunity cost applies only inside registered companies, not to trainees\" without checking the rest of the sentence would mark the statement true.\n",
-      "FALSE — Map the scenario onto the textbook category first, then test whether the sentence describes that category accurately.\n\nForgone paid income remains opportunity cost even when study is essential.\n\nThe statement is false. A student who matched the topic to \"Exam preparation has zero opportunity cost because licensing is a need\" without checking the rest of the sentence would mark the statement true.\n",
-      "FALSE — Check the sentence against the core concept named in the stem, including every scope word.\n\nEach calendar day contains finite hours requiring allocation.\n\nThe statement is false. A student who matched the topic to \"Weekends repeat weekly, so Sunday hours are unlimited for scheduling\" without checking the rest of the sentence would mark the statement true.\n"
+      "TRUE — Shorter breaks that free minutes for both ward work and revision stretch a scarce day — economising on time when both tasks matter.\n\nThe statement is true.",
+      "TRUE — Taking the paid shift uses hours that could have been revision, so improved exam readiness from that study time is forgone — opportunity cost of the shift.\n\nThe statement is true.",
+      "FALSE — Trainees face opportunity cost on personal time without company registration being required.\n\nThe statement is false.",
+      "FALSE — Licensing may be a professional need, but exam prep still forgoes paid-shift income (or leisure). Need status does not zero opportunity cost.\n\nThe statement is false.",
+      "FALSE — Sundays recur on the calendar; each Sunday’s hours remain finite. Recurrence does not make hours unlimited.\n\nThe statement is false."
     ],
     "difficulty_level": "3/5",
     "tier": "full"
@@ -2861,11 +2861,11 @@
       true
     ],
     "tactical_explanations": [
-      "TRUE — Check the sentence against the core concept named in the stem, including every scope word.\n\nForgone wages define financial opportunity cost of leisure.\n\nThe statement is true.",
-      "TRUE — Map the scenario onto the textbook category first, then test whether the sentence describes that category accurately.\n\nScale does not eliminate forgone benefits.\n\nThe statement is true.",
-      "TRUE — Check that the comparison runs in the stated direction and attaches the feature to the correct member of the pair.\n\nLand area is a non-monetary scarce resource.\n\nThe statement is true.",
-      "TRUE — Check that the comparison runs in the stated direction and attaches the feature to the correct member of the pair.\n\nCareful use responds to finite land, time, or money.\n\nThe statement is true.",
-      "TRUE — Check the sentence against the core concept named in the stem, including every scope word.\n\nSpecialist nurse hours are scarce across wards.\n\nThe statement is true."
+      "TRUE — Choosing free park time over a paid shift forgoes wages those hours could have earned — opportunity cost without a park ticket price.\n\nThe statement is true.",
+      "TRUE — Small budgets still force forgone alternatives. Scale does not erase opportunity cost.\n\nThe statement is true.",
+      "TRUE — A fixed garden area split between vegetables and flowers is scarce land allocation — scarcity of space, not only of cash.\n\nThe statement is true.",
+      "TRUE — Economising is required whenever resources are scarce, whatever the resource type — money, land, time, or beds.\n\nThe statement is true.",
+      "TRUE — One specialist nurse cannot cover two wards fully at once. Administrators face time scarcity and opportunity cost between wards.\n\nThe statement is true."
     ],
     "difficulty_level": "4/5",
     "tier": "full"
@@ -2890,11 +2890,11 @@
       false
     ],
     "tactical_explanations": [
-      "TRUE — Check the sentence against the core concept named in the stem, including every scope word.\n\nFixed treasurer funds force a choice among projects.\n\nThe statement is true.",
-      "TRUE — Check the sentence against the core concept named in the stem, including every scope word.\n\nFridge repair benefit is the next-best alternative.\n\nThe statement is true.",
-      "TRUE — Check the sentence against the core concept named in the stem, including every scope word.\n\nKit purchase benefit is forgone when the fridge wins.\n\nThe statement is true.",
-      "FALSE — Check the sentence against the core concept named in the stem, including every scope word.\n\nCharitable funds still require allocation among alternatives.\n\nThe statement is false. A student who matched the topic to \"Nonprofit budgets are charitable and therefore non-economic\" without checking the rest of the sentence would mark the statement true.\n",
-      "FALSE — Check the sentence against the core concept named in the stem, including every scope word.\n\nChosen purchase price is not the forgone alternative's benefit.\n\nThe statement is false. A student who matched the topic to \"Opportunity cost equals the invoice total for the chosen item\" without checking the rest of the sentence would mark the statement true.\n"
+      "TRUE — Nine hundred euros cannot fully fund new kits and fridge repair if both claim the whole sum. The club fund is limited between those uses.\n\n$$900\\text{ euros}$$ binds.\n\nThe statement is true.",
+      "TRUE — Buying kits leaves the fridge broken, so food-storage benefits from repair are forgone — opportunity cost of kits.\n\nThe statement is true.",
+      "TRUE — Repairing the fridge forgoes training benefits from new kits — opportunity cost of repair.\n\nThe statement is true.",
+      "FALSE — Nonprofit and charitable clubs still allocate limited euros under scarcity. Charitable purpose does not make budgets non-economic.\n\nThe statement is false.",
+      "FALSE — The invoice total is the outlay for the chosen item. Opportunity cost is the benefit of the option not funded — not the invoice itself.\n\nThe statement is false."
     ],
     "difficulty_level": "2/5",
     "tier": "full"
