@@ -12762,9 +12762,9 @@ So the statement is True.`,
 
 A lower rate uses a smaller three-year factor, so more must be deposited today to reach the same \\$5,000:
 
-$$(1.05)^3$$
-
-$$= 1.157625$$
+$$
+(1.05)^3 = 1.157625
+$$
 
 $$x_{5\\%} = \\frac{5,000}{1.157625}$$
 
@@ -12777,9 +12777,9 @@ So the statement is False.`,
 
 Interest is the \\$5,000 target minus the recovered deposit:
 
-$$5,000 - 4,081.49$$
-
-$$= 918.51$$
+$$
+5,000 - 4,081.49 = 918.51
+$$
 
 Compare the computed value with the claim (\\$928.51). The computed value is
 
@@ -12806,17 +12806,17 @@ $$r = 0.07,$$
 
 $$n = 3$$
 
-$$(1.07)^3$$
-
-$$= 1.225043$$
+$$
+(1.07)^3 = 1.225043
+$$
 
 $$x = \\frac{5,000}{1.225043}$$
 
 $$x \\approx 4,081.49$$
 
-$$2 \\times 4,081.49$$
-
-$$= 8,162.98$$
+$$
+2 \\times 4,081.49 = 8,162.98
+$$
 
 Compare the computed value with the claim (\\$8,162.98). The two sides agree.
 
@@ -12831,9 +12831,9 @@ $$\\approx 3,331.71$$
 
 Half of the three-year deposit is
 
-$$\\frac{4,081.49}{2}$$
-
-$$= 2,040.75$$
+$$
+\\frac{4,081.49}{2} = 2,040.75
+$$
 
 The claim needs $x_6 = 2,040.75$. The computed value is
 
@@ -12923,9 +12923,9 @@ So the statement is True.`,
 
 Interest over the first five years is the recovered five-year balance minus the \\$6,500 deposit:
 
-$$8,698.47 - 6,500$$
-
-$$= 2,198.47$$
+$$
+8,698.47 - 6,500 = 2,198.47
+$$
 
 Compare the computed value with the claim (\\$2,198.47). The two sides agree.
 
@@ -12938,9 +12938,9 @@ Using the recovered solution values $F(5)\\approx 8,698.47$ and $F(10)\\approx 1
 
 Double the five-year balance is
 
-$$2 \\times 8,698.47$$
-
-$$= 17,396.94$$
+$$
+2 \\times 8,698.47 = 17,396.94
+$$
 
 The claim needs $F(10)=17,396.94$. The computed value is
 
@@ -12969,23 +12969,23 @@ $$n = 5,$$
 
 $$n = 10$$
 
-$$(1.06)^5$$
-
-$$= 1.338226$$
+$$
+(1.06)^5 = 1.338226
+$$
 
 $$F(5) = 6,500 \\times 1.338226$$
 
 $$F(5) \\approx 8,698.47$$
 
-$$11,640.51 - 8,698.47$$
-
-$$= 2,942.04$$
+$$
+11,640.51 - 8,698.47 = 2,942.04
+$$
 
 The first five years earn
 
-$$8,698.47 - 6,500$$
-
-$$= 2,198.47$$
+$$
+8,698.47 - 6,500 = 2,198.47
+$$
 
 The claim needs $2,942.04 < 2,198.47$. We have $2,942.04 > 2,198.47$.
 
@@ -13000,9 +13000,9 @@ $$\\approx 7,535.28$$
 
 Half of the 6% five-year balance is
 
-$$\\frac{8,698.47}{2}$$
-
-$$= 4,349.24$$
+$$
+\\frac{8,698.47}{2} = 4,349.24
+$$
 
 The claim needs $F_{3\\%}(5)=4,349.24$. The computed value is
 
@@ -13108,13 +13108,13 @@ So the statement is True.`,
 
 Interest is the recovered future value minus the six deposits of \\$2,000:
 
-$$2,000 \\times 6$$
+$$
+2,000 \\times 6 = 12,000
+$$
 
-$$= 12,000$$
-
-$$13,603.84 - 12,000$$
-
-$$= 1,603.84$$
+$$
+13,603.84 - 12,000 = 1,603.84
+$$
 
 Compare the computed value with the claim (\\$1,703.84). The computed value is
 
@@ -13164,9 +13164,9 @@ $$F_6 = \\frac{2,000}{0.05}\\left[(1.05)^6-1\\right]$$
 
 $$F_6 \\approx 13,603.84$$
 
-$$13,603.84 \\times 1.5$$
-
-$$= 20,405.76$$
+$$
+13,603.84 \\times 1.5 = 20,405.76
+$$
 
 The claim is \\$21,405.76. The computed value is
 
@@ -13191,9 +13191,9 @@ $$\\approx 31,834.24$$
 
 Double the six-year future value is
 
-$$2 \\times 13,603.84$$
-
-$$= 27,207.68$$
+$$
+2 \\times 13,603.84 = 27,207.68
+$$
 
 The claim needs $F_{12} < 27,207.68$. We have $31,834.24 > 27,207.68$.
 
@@ -13259,10 +13259,8 @@ $$
 Substitute the recovered stem inputs:
 
 $$
-F_{10} = \\frac{3,500}{0.08}\\left[(1.08)^{10}-1\\right]
+F_{10} = \\frac{3,500}{0.08}\\left[(1.08)^{10}-1\\right] = 43,750 \\times 1.158925
 $$
-
-$$= 43,750 \\times 1.158925$$
 
 $$\\approx 50,702.97$$
 
@@ -13279,13 +13277,13 @@ So the statement is True.`,
 
 Interest is the recovered future value minus the ten deposits of \\$3,500:
 
-$$3,500 \\times 10$$
+$$
+3,500 \\times 10 = 35,000
+$$
 
-$$= 35,000$$
-
-$$50,702.97 - 35,000$$
-
-$$= 15,702.97$$
+$$
+50,702.97 - 35,000 = 15,702.97
+$$
 
 Compare the computed value with the claim (\\$15,702.97). The two sides agree.
 
@@ -13302,9 +13300,9 @@ $$\\approx 160,166.87$$
 
 Double the ten-year future value is
 
-$$2 \\times 50,702.97$$
-
-$$= 101,405.94$$
+$$
+2 \\times 50,702.97 = 101,405.94
+$$
 
 The claim needs $F_{20} < 101,405.94$. We have $160,166.87 > 101,405.94$.
 
@@ -13324,16 +13322,14 @@ $$r = 0.08,$$
 $$n = 10$$
 
 $$
-F_{10} = \\frac{3,500}{0.08}\\left[(1.08)^{10}-1\\right]
+F_{10} = \\frac{3,500}{0.08}\\left[(1.08)^{10}-1\\right] = 43,750 \\times 1.158925
 $$
-
-$$= 43,750 \\times 1.158925$$
 
 $$\\approx 50,702.97$$
 
-$$50,702.97 - 35,000$$
-
-$$= 15,702.97$$
+$$
+50,702.97 - 35,000 = 15,702.97
+$$
 
 The claim needs $15,702.97 > 35,000$. We have $15,702.97 < 35,000$.
 
@@ -13406,12 +13402,8 @@ $$
 Substitute the recovered stem inputs:
 
 $$
-P_{15} = \\frac{2,400}{0.045}\\left[1-\\frac{1}{(1.045)^{15}}\\right]
+P_{15} = \\frac{2,400}{0.045}\\left[1-\\frac{1}{(1.045)^{15}}\\right] = 53,333.33 \\times 0.483284 = 25,775.15
 $$
-
-$$= 53,333.33 \\times 0.483284$$
-
-$$= 25,775.15$$
 
 The claim asserts
 
@@ -13437,16 +13429,12 @@ $$r = 0.045,$$
 $$n = 15$$
 
 $$
-P_{15} = \\frac{2,400}{0.045}\\left[1-\\frac{1}{(1.045)^{15}}\\right]
+P_{15} = \\frac{2,400}{0.045}\\left[1-\\frac{1}{(1.045)^{15}}\\right] = 53,333.33 \\times 0.483284 = 25,775.15
 $$
 
-$$= 53,333.33 \\times 0.483284$$
-
-$$= 25,775.15$$
-
-$$2,400 \\times 15$$
-
-$$= 36,000$$
+$$
+2,400 \\times 15 = 36,000
+$$
 
 The overview recovered $P_{15}=25,775.15$. Then $36,000 > 25,775.15$.
 
@@ -13467,19 +13455,19 @@ $$1 - (1.045)^{-30}$$
 
 $$\\approx 0.73299998$$
 
-$$\\frac{2,400}{0.045}$$
+$$
+\\frac{2,400}{0.045} = 53333.3333
+$$
 
-$$= 53333.3333$$
-
-$$53333.3333 \\times 0.73299998$$
-
-$$= 39,091.65$$
+$$
+53333.3333 \\times 0.73299998 = 39,091.65
+$$
 
 Double the fifteen-year present value is
 
-$$2 \\times 25,775.15$$
-
-$$= 51,550.30$$
+$$
+2 \\times 25,775.15 = 51,550.30
+$$
 
 The claim needs $P_{30}=51,550.30$. The computed value is
 
@@ -13498,13 +13486,13 @@ The percentage-point gap is the effective annual rate minus the nominal quote. F
 
 The gap is the nominal withdrawal total minus the recovered deposit:
 
-$$2,400 \\times 15$$
+$$
+2,400 \\times 15 = 36,000
+$$
 
-$$= 36,000$$
-
-$$36,000 - 25,775.15$$
-
-$$= 10,224.85$$
+$$
+36,000 - 25,775.15 = 10,224.85
+$$
 
 The claim is \\$11,224.85. The computed value is
 
@@ -13533,13 +13521,13 @@ $$1 - (1.06)^{-15}$$
 
 $$\\approx 0.58273494$$
 
-$$\\frac{2,400}{0.06}$$
+$$
+\\frac{2,400}{0.06} = 40000
+$$
 
-$$= 40000$$
-
-$$40000 \\times 0.58273494$$
-
-$$= 23,309.40$$
+$$
+40000 \\times 0.58273494 = 23,309.40
+$$
 
 The claim needs $23,309.40 > 25,775.15$. We have $23,309.40 < 25,775.15$.
 
@@ -13599,12 +13587,8 @@ $$
 Substitute the recovered stem inputs:
 
 $$
-P_{20} = \\frac{5,000}{0.06}\\left[1-\\frac{1}{(1.06)^{20}}\\right]
+P_{20} = \\frac{5,000}{0.06}\\left[1-\\frac{1}{(1.06)^{20}}\\right] = 83,333.33 \\times 0.688195 = 57,349.67
 $$
-
-$$= 83,333.33 \\times 0.688195$$
-
-$$= 57,349.67$$
 
 The claim asserts
 
@@ -13627,9 +13611,9 @@ Using the recovered solution values $P=83,333.33$ and $P_{20}=57,349.67$ as inpu
 
 The extra cost of the perpetuity is
 
-$$83,333.33 - 57,349.67$$
-
-$$= 25,983.66$$
+$$
+83,333.33 - 57,349.67 = 25,983.66
+$$
 
 The claim is that same gap.
 
@@ -13642,9 +13626,9 @@ The 20-year share of the perpetuity is
 
 $$\\frac{57,349.67}{83,333.33}$$
 
-$$\\approx 0.6882$$
-
-$$= 68.82\\%$$
+$$
+\\approx 0.6882 = 68.82\\%
+$$
 
 Compare the computed value with the claim (about $72.82\\%$). The computed value is
 
@@ -13673,19 +13657,19 @@ $$1 - (1.06)^{-40}$$
 
 $$\\approx 0.90277781$$
 
-$$\\frac{5,000}{0.06}$$
+$$
+\\frac{5,000}{0.06} = 83333.3333
+$$
 
-$$= 83333.3333$$
-
-$$83333.3333 \\times 0.90277781$$
-
-$$= 75,231.50$$
+$$
+83333.3333 \\times 0.90277781 = 75,231.50
+$$
 
 $$\\frac{75,231.50}{83,333.33}$$
 
-$$\\approx 0.9028$$
-
-$$= 90.28\\%$$
+$$
+\\approx 0.9028 = 90.28\\%
+$$
 
 The claim needs a share above $95\\%$. We have $90.28\\% < 95\\%$.
 
@@ -13763,9 +13747,9 @@ $$
 
 Substitute the stem numbers:
 
-$$= 35,714.29 \\times 0.456069$$
-
-$$= 16,288.18$$
+$$
+= 35,714.29 \\times 0.456069 = 16,288.18
+$$
 
 The computed value is approximately \\$16,288.18, which matches the claim.
 
@@ -13785,16 +13769,12 @@ $$r = 0.07,$$
 $$n = 9$$
 
 $$
-P_9 = \\frac{2,500}{0.07}\\left[1-\\frac{1}{(1.07)^9}\\right]
+P_9 = \\frac{2,500}{0.07}\\left[1-\\frac{1}{(1.07)^9}\\right] = 35,714.29 \\times 0.456069 = 16,288.18
 $$
 
-$$= 35,714.29 \\times 0.456069$$
-
-$$= 16,288.18$$
-
-$$18,000 - 16,288.18$$
-
-$$= 1,711.82$$
+$$
+18,000 - 16,288.18 = 1,711.82
+$$
 
 Compare the computed value with the claim (a saving of \\$1,811.82). The computed value is
 
@@ -13823,13 +13803,13 @@ $$1 - (1.04)^{-9}$$
 
 $$\\approx 0.29741326$$
 
-$$\\frac{2,500}{0.04}$$
+$$
+\\frac{2,500}{0.04} = 62500
+$$
 
-$$= 62500$$
-
-$$62500 \\times 0.29741326$$
-
-$$= 18,588.31$$
+$$
+62500 \\times 0.29741326 = 18,588.31
+$$
 
 The claim needs $18,588.31 < 16,288.18$. We have $18,588.31 > 16,288.18$.
 
@@ -13838,15 +13818,15 @@ So the statement is False.`,
 
 Nine payments of \\$2,500 total
 
-$$2,500 \\times 9$$
-
-$$= 22,500$$
+$$
+2,500 \\times 9 = 22,500
+$$
 
 The excess over Option 1 is
 
-$$22,500 - 18,000$$
-
-$$= 4,500$$
+$$
+22,500 - 18,000 = 4,500
+$$
 
 Compare the computed value with the claim (\\$4,600). The computed value is
 
@@ -13976,9 +13956,9 @@ Using the recovered solution values $F_A=19,126.18$ and $F_B=13,856.46$ as input
 
 Strategy A finishes ahead. The gap is
 
-$$19,126.18 - 13,856.46$$
-
-$$= 5,269.72$$
+$$
+19,126.18 - 13,856.46 = 5,269.72
+$$
 
 The claim is a gap of \\$5,769.72. The computed value is
 
@@ -13995,9 +13975,9 @@ So the statement is False.`,
 
 Strategy B commits eight deposits of \\$1,400:
 
-$$1,400 \\times 8$$
-
-$$= 11,200$$
+$$
+1,400 \\times 8 = 11,200
+$$
 
 The claim needs $11,200 > 12,000$. We have $11,200 < 12,000$.
 
@@ -14007,11 +13987,7 @@ So the statement is False.`,
 Raising Strategy B to \\$1,500 a year uses the same eight-year factor at the new deposit:
 
 $$
-F_B' = \\frac{1,500}{0.06}\\left[(1.06)^8-1\\right]
-$$
-
-$$
-= 14,846.20
+F_B' = \\frac{1,500}{0.06}\\left[(1.06)^8-1\\right] = 14,846.20
 $$
 
 The claim needs $F_B' < 19,126.18$. We have $14,846.20 < 19,126.18$.
@@ -14127,9 +14103,9 @@ So the statement is True.`,
 
 The dollar gap is the due pile minus the ordinary pile:
 
-$$21,426.05 - 20,405.76$$
-
-$$= 1,020.29$$
+$$
+21,426.05 - 20,405.76 = 1,020.29
+$$
 
 Compare the computed value with the claim (\\$1,120.29). The computed value is
 
@@ -14147,26 +14123,18 @@ So the statement is False.`,
 Twelve years of due deposits give
 
 $$
-F_{\\mathrm{ordinary}}(12) = \\frac{3,000}{0.05}\\left[(1.05)^{12}-1\\right]
+F_{\\mathrm{ordinary}}(12) = \\frac{3,000}{0.05}\\left[(1.05)^{12}-1\\right] = 47,751.36
 $$
 
 $$
-= 47,751.36
-$$
-
-$$
-F_{\\mathrm{due}}(12) = 47,751.36 \\times 1.05
-$$
-
-$$
-= 50,138.93
+F_{\\mathrm{due}}(12) = 47,751.36 \\times 1.05 = 50,138.93
 $$
 
 Double the six-year due value is
 
-$$2 \\times 21,426.05$$
-
-$$= 42,852.10$$
+$$
+2 \\times 21,426.05 = 42,852.10
+$$
 
 The claim needs $F_{\\mathrm{due}}(12)=42,852.10$. The computed value is
 
@@ -14190,11 +14158,7 @@ $$
 Substitute the stem numbers:
 
 $$
-F_{\\mathrm{due}} = 20,405.76 \\times 1.05
-$$
-
-$$
-= 21,426.05
+F_{\\mathrm{due}} = 20,405.76 \\times 1.05 = 21,426.05
 $$
 
 The computed figure matches the claim.
@@ -14300,9 +14264,9 @@ So the statement is True.`,
 
 The dollar gap is the due present value minus the ordinary present value:
 
-$$107,162.61 - 101,096.80$$
-
-$$= 6,065.81$$
+$$
+107,162.61 - 101,096.80 = 6,065.81
+$$
 
 Compare the computed value with the claim (\\$7,065.81). The computed value is
 
@@ -14331,27 +14295,23 @@ $$1 - (1.06)^{-10}$$
 
 $$\\approx 0.44160522$$
 
-$$\\frac{24,000}{0.06}$$
-
-$$= 400000$$
-
-$$400000 \\times 0.44160522$$
-
-$$= 176,642.00$$
-
 $$
-P_{\\mathrm{due}}(10) = 176,642.00 \\times 1.06
+\\frac{24,000}{0.06} = 400000
 $$
 
 $$
-= 187,240.52
+400000 \\times 0.44160522 = 176,642.00
+$$
+
+$$
+P_{\\mathrm{due}}(10) = 176,642.00 \\times 1.06 = 187,240.52
 $$
 
 Double the five-year due value is
 
-$$2 \\times 107,162.61$$
-
-$$= 214,325.22$$
+$$
+2 \\times 107,162.61 = 214,325.22
+$$
 
 The claim needs $P_{\\mathrm{due}}(10)=214,325.22$. The computed value is
 
@@ -14380,17 +14340,17 @@ $$1 - (1.06)^{-4}$$
 
 $$\\approx 0.20790634$$
 
-$$\\frac{24,000}{0.06}$$
+$$
+\\frac{24,000}{0.06} = 400000
+$$
 
-$$= 400000$$
+$$
+400000 \\times 0.20790634 = 83,162.40
+$$
 
-$$400000 \\times 0.20790634$$
-
-$$= 83,162.40$$
-
-$$24,000 + 83,162.40$$
-
-$$= 107,162.40$$
+$$
+24,000 + 83,162.40 = 107,162.40
+$$
 
 That matches the recovered $P_{\\mathrm{due}}=107,162.61$ within rounding.
 
@@ -14462,11 +14422,7 @@ $$
 Substitute the stem numbers:
 
 $$
-V = \\frac{10,000}{0.06}
-$$
-
-$$
-= 166,666.67
+V = \\frac{10,000}{0.06} = 166,666.67
 $$
 
 The computed value is approximately \\$166,666.67, which matches the claim.
@@ -14501,9 +14457,9 @@ So the statement is True.`,
 
 If the first payment begins at the end of year 1, the perpetuity is worth $\\frac{a}{r}$ today:
 
-$$\\frac{10,000}{0.06}$$
-
-$$= 166,666.67$$
+$$
+\\frac{10,000}{0.06} = 166,666.67
+$$
 
 The claim needs $166,666.67 < 132,015.61$. We have $166,666.67 > 132,015.61$.
 
@@ -14518,9 +14474,9 @@ $$\\approx 104,568.80$$
 
 Half of the original deferred value is
 
-$$\\frac{132,015.61}{2}$$
-
-$$= 66,007.81$$
+$$
+\\frac{132,015.61}{2} = 66,007.81
+$$
 
 The claim needs $PV_0' < 66,007.81$. We have $104,568.80 > 66,007.81$.
 
@@ -14655,11 +14611,7 @@ So the statement is False.`,
 At a 4% required return,
 
 $$
-P' = \\frac{4.25}{0.04}
-$$
-
-$$
-= 106.25
+P' = \\frac{4.25}{0.04} = 106.25
 $$
 
 Compare the computed value with the claim (\\$116.25). The computed value is
@@ -14677,12 +14629,8 @@ So the statement is False.`,
 
 The move from 7% to 4% raises the recovered $P\\approx 60.714286$ to $106.25$:
 
-$$\\frac{106.25-60.714286}{60.714286}$$
-
-$$= 0.75$$
-
 $$
-= 75\\%
+\\frac{106.25-60.714286}{60.714286} = 0.75 = 75\\%
 $$
 
 The claim needs an increase of more than $75\\%$. We have exactly $75\\%$.
@@ -14692,9 +14640,9 @@ So the statement is False.`,
 
 A 20% dividend cut leaves
 
-$$a' = 4.25\\times 0.80$$
-
-$$= 3.40$$
+$$
+a' = 4.25\\times 0.80 = 3.40
+$$
 
 . At the same 7%,
 
@@ -14802,16 +14750,12 @@ So the statement is True.`,
 At 6% the perpetuity falls and the renovation is unchanged:
 
 $$
-P' = \\frac{15,000}{0.06}
+P' = \\frac{15,000}{0.06} = 250,000
 $$
 
 $$
-= 250,000
+50,000 + 250,000 = 300,000
 $$
-
-$$50,000 + 250,000$$
-
-$$= 300,000$$
 
 Compare the computed value with the claim (\\$300,000.00). The two sides agree.
 
@@ -14820,15 +14764,15 @@ So the statement is True.`,
 
 The rate increase cuts the combined total from \\$383,333.33 to \\$300,000:
 
-$$383,333.33 - 300,000$$
-
-$$= 83,333.33$$
+$$
+383,333.33 - 300,000 = 83,333.33
+$$
 
 $$\\frac{83,333.33}{383,333.33}$$
 
-$$\\approx 0.2174$$
-
-$$= 21.74\\%$$
+$$
+\\approx 0.2174 = 21.74\\%
+$$
 
 The claim needs more than $25\\%$. We have $21.74\\% < 25\\%$.
 
@@ -14837,9 +14781,9 @@ So the statement is False.`,
 
 At 6% the perpetuity alone is \\$250,000. Half of the original combined 4.5% total is
 
-$$\\frac{383,333.33}{2}$$
-
-$$= 191,666.67$$
+$$
+\\frac{383,333.33}{2} = 191,666.67
+$$
 
 The claim needs $250,000 < 191,666.67$. We have $250,000 > 191,666.67$.
 
@@ -14920,15 +14864,7 @@ So the statement is True.`,
 With no growth the same first cash flow is a level perpetuity at 8%:
 
 $$
-P_{g = 0}
-$$
-
-$$
-= \\frac{24,000}{0.08}
-$$
-
-$$
-= 300,000
+P_{g = 0} = \\frac{24,000}{0.08} = 300,000
 $$
 
 The claim needs $300,000 > 436,363.64$. We have $300,000 < 436,363.64$.
@@ -14939,18 +14875,14 @@ So the statement is False.`,
 At 4% growth,
 
 $$
-P' = \\frac{24,000}{0.08-0.04}
-$$
-
-$$
-= 600,000
+P' = \\frac{24,000}{0.08-0.04} = 600,000
 $$
 
 Double the original fair value is
 
-$$2 \\times 436,363.64$$
-
-$$= 872,727.28$$
+$$
+2 \\times 436,363.64 = 872,727.28
+$$
 
 The claim needs $P'>872,727.28$. We have $600,000 < 872,727.28$.
 
@@ -14960,15 +14892,7 @@ So the statement is False.`,
 At a 6% required return,
 
 $$
-P'' = \\frac{24,000}{0.06-0.025}
-$$
-
-$$
-= \\frac{24,000}{0.035}
-$$
-
-$$
-= 685,714.29
+P'' = \\frac{24,000}{0.06-0.025} = \\frac{24,000}{0.035} = 685,714.29
 $$
 
 Compare the computed value with the claim (\\$715,714.29). The computed value is
@@ -15074,11 +14998,7 @@ $$
 Substitute the stem numbers:
 
 $$
-D_1 = 3.00 \\times 1.03
-$$
-
-$$
-= 3.09
+D_1 = 3.00 \\times 1.03 = 3.09
 $$
 
 The computed value is approximately \\$3.09, which matches the claim.
@@ -15113,19 +15033,15 @@ So the statement is False.`,
 
 Using the just-paid dividend by mistake gives
 
-$$\\frac{3.00}{0.09-0.03}$$
-
-$$= \\frac{3.00}{0.06}$$
-
 $$
-= 50.00
+\\frac{3.00}{0.09-0.03} = \\frac{3.00}{0.06} = 50.00
 $$
 
 The understatement is
 
-$$51.50 - 50.00$$
-
-$$= 1.50$$
+$$
+51.50 - 50.00 = 1.50
+$$
 
 Compare the computed value with the claim (\\$2.50). The computed value is
 
@@ -15142,22 +15058,14 @@ So the statement is False.`,
 
 At 5% growth, next year's dividend is
 
-$$D_1' = 3.00\\times 1.05$$
-
-$$= 3.15$$
+$$
+D_1' = 3.00\\times 1.05 = 3.15
+$$
 
 , so
 
 $$
-P' = \\frac{3.15}{0.09-0.05}
-$$
-
-$$
-= \\frac{3.15}{0.04}
-$$
-
-$$
-= 78.75
+P' = \\frac{3.15}{0.09-0.05} = \\frac{3.15}{0.04} = 78.75
 $$
 
 Double the original \\$51.50 is $103.00$. The claim needs $P'>103.00$. We have $78.75 < 103.00$.
@@ -15297,9 +15205,9 @@ $$P_2 = \\frac{14,000}{0.10-0.04}$$
 
 $$P_2 = \\frac{14,000}{0.06}$$
 
-$$233,333.33 - 170,000$$
-
-$$= 63,333.33$$
+$$
+233,333.33 - 170,000 = 63,333.33
+$$
 
 The claim needs more than \\$60,000. We have $63,333.33 > 60,000$.
 
@@ -15332,10 +15240,8 @@ So the statement is False.`,
 At 1% growth, Deal 2 is worth
 
 $$
-P_2' = \\frac{14,000}{0.10-0.01}
+P_2' = \\frac{14,000}{0.10-0.01} = \\frac{14,000}{0.09}
 $$
-
-$$= \\frac{14,000}{0.09}$$
 
 $$\\approx 155,555.56$$
 
@@ -15461,9 +15367,9 @@ The percentage-point gap is the effective annual rate minus the nominal quote. F
 
 The gap is the annual-compounding present value minus the recovered continuous present value:
 
-$$131,495.10 - 129,213.75$$
-
-$$= 2,281.35$$
+$$
+131,495.10 - 129,213.75 = 2,281.35
+$$
 
 The claim is \\$4,280.35. The computed value is
 
@@ -15481,11 +15387,7 @@ So the statement is False.`,
 Six years of continuous discounting gives
 
 $$
--rt = -0.055 \\times 6
-$$
-
-$$
-= -0.33
+-rt = -0.055 \\times 6 = -0.33
 $$
 
 $$S_0' = 250,000 e^{-0.33}$$
@@ -15494,9 +15396,9 @@ $$\\approx 179,731.00$$
 
 Half of the 12-year present value is
 
-$$\\frac{129,213.75}{2}$$
-
-$$= 64,606.88$$
+$$
+\\frac{129,213.75}{2} = 64,606.88
+$$
 
 The claim needs $S_0' < 64,606.88$. We have $179,731.00 > 64,606.88$.
 
@@ -15509,12 +15411,8 @@ $$e^{-0.055}$$
 
 $$\\approx 0.9465$$
 
-$$1-0.9465$$
-
-$$= 0.0535$$
-
 $$
-= 5.35\\%
+1-0.9465 = 0.0535 = 5.35\\%
 $$
 
 Compare the computed value with the claim (that same factor and that same one-year loss). The two sides agree.
@@ -15632,9 +15530,9 @@ So the statement is True.`,
 
 The lump-sum lead is
 
-$$131,629.13 - 96,757.60$$
-
-$$= 34,871.53$$
+$$
+131,629.13 - 96,757.60 = 34,871.53
+$$
 
 The claim needs more than \\$30,000. We have $34,871.53 > 30,000$.
 
@@ -15763,11 +15661,7 @@ So the statement is True.`,
 The due future value scales the ordinary future value by one extra period:
 
 $$
-F_{\\mathrm{due}} = \\frac{4,200}{0.08}\\left[(1.08)^5-1\\right](1.08)
-$$
-
-$$
-= 26,610.90
+F_{\\mathrm{due}} = \\frac{4,200}{0.08}\\left[(1.08)^5-1\\right](1.08) = 26,610.90
 $$
 
 Compare the computed value with the claim (\\$27,610.90). The computed value is
@@ -15826,9 +15720,9 @@ Using the recovered solution values $P_{\\mathrm{perp}}=37,500$ and $P_{\\mathrm
 
 Double the lease present value is
 
-$$2 \\times 18,110.94$$
-
-$$= 36,221.88$$
+$$
+2 \\times 18,110.94 = 36,221.88
+$$
 
 The claim needs $37,500 < 36,221.88$. We have $37,500 > 36,221.88$.
 
@@ -16034,17 +15928,17 @@ So the statement is True.`,
 
 Present-day resources are Component 1's opening \\$150,000, plus the recovered $x$, $P_{12}$, and $P$:
 
-$$150,000 + 56,396.85$$
+$$
+150,000 + 56,396.85 = 206,396.85
+$$
 
-$$= 206,396.85$$
+$$
+206,396.85 + 79,429.40 = 285,826.25
+$$
 
-$$206,396.85 + 79,429.40$$
-
-$$= 285,826.25$$
-
-$$285,826.25 + 100,000$$
-
-$$= 385,826.25$$
+$$
+285,826.25 + 100,000 = 385,826.25
+$$
 
 The claim needs a total above \\$500,000. We have $385,826.25 < 500,000$.
 
