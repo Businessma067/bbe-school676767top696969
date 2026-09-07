@@ -69,9 +69,9 @@ So the statement is False.`,
 
 This is not the overview's equalizing transfer. North starts at the recovered $x=360$ and receives $30$ crates from South:
 
-$$360 + 30$$
-
-$$= 390$$
+$$
+360 + 30 = 390
+$$
 
 Compare the computed value with the claim ($390$). The two sides agree.
 
@@ -88,9 +88,9 @@ Using the recovered solution values $x=360$ and $y=260$ as inputs for this claim
 
 Today's gap is
 
-$$360 - 260$$
-
-$$= 100$$
+$$
+360 - 260 = 100
+$$
 
 The claim asserts
 
@@ -108,24 +108,20 @@ So the statement is False.`,
 A transfer shifts one recovered holding into the other by the stated amount:
 
 $$
-x' = x - t,\\quad y'
-$$
-
-$$
-= y + t
+x' = x - t,\\quad y' = y + t
 $$
 
 Using the recovered solution values $x=360$ and $y=260$ as inputs for this claim:
 
 Moving $50$ crates from North to South gives
 
-$$360 - 50$$
+$$
+360 - 50 = 310
+$$
 
-$$= 310$$
-
-$$260 + 50$$
-
-$$= 310$$
+$$
+260 + 50 = 310
+$$
 
 Both sides are $310$.
 
@@ -250,17 +246,17 @@ Using the recovered solution values $x=3.50$ and $y=1.80$ as inputs for this cla
 
 Ten of each costs
 
-$$10 \\times 3.50$$
+$$
+10 \\times 3.50 = 35
+$$
 
-$$= 35$$
+$$
+10 \\times 1.80 = 18
+$$
 
-$$10 \\times 1.80$$
-
-$$= 18$$
-
-$$35 + 18$$
-
-$$= 53$$
+$$
+35 + 18 = 53
+$$
 
 The claim asserts
 
@@ -429,17 +425,17 @@ Using the recovered solution values $a=12$ and $c=7$ as inputs for this claim:
 
 Fifty of each would generate
 
-$$50 \\times 12$$
+$$
+50 \\times 12 = 600
+$$
 
-$$= 600$$
+$$
+50 \\times 7 = 350
+$$
 
-$$50 \\times 7$$
-
-$$= 350$$
-
-$$600 + 350$$
-
-$$= 950$$
+$$
+600 + 350 = 950
+$$
 
 The claim asserts
 
@@ -553,17 +549,17 @@ Receipt A's food subtotal uses the recovered unit prices on the stem quantities,
 
 The overview recovered $x=7$ and $y=5$. Receipt A has $6$ sandwiches and $4$ wraps:
 
-$$6 \\times 7$$
+$$
+6 \\times 7 = 42
+$$
 
-$$= 42$$
+$$
+4 \\times 5 = 20
+$$
 
-$$4 \\times 5$$
-
-$$= 20$$
-
-$$42 + 20$$
-
-$$= 62$$
+$$
+42 + 20 = 62
+$$
 
 The claim asserts
 
@@ -593,17 +589,17 @@ So the statement is True.`,
 
 This is a pickup, so there is no delivery fee. The overview recovered $x=7$ and $y=5$. Five of each costs
 
-$$5 \\times 7$$
+$$
+5 \\times 7 = 35
+$$
 
-$$= 35$$
+$$
+5 \\times 5 = 25
+$$
 
-$$5 \\times 5$$
-
-$$= 25$$
-
-$$35 + 25$$
-
-$$= 60$$
+$$
+35 + 25 = 60
+$$
 
 Compare the computed value with the claim (\\$60.00). The two sides agree.
 
@@ -711,9 +707,9 @@ Read the figure already produced by the shared solve, then compare it with the c
 
 The overview recovered $x=6000$ in Account A. Interest on that principal at $4\\%$ is
 
-$$0.04 \\times 6000$$
-
-$$= 240$$
+$$
+0.04 \\times 6000 = 240
+$$
 
 The claim asserts
 
@@ -728,9 +724,9 @@ Read the figure already produced by the shared solve, then compare it with the c
 
 The overview recovered $y=4000$ in Account B. Interest on that principal at $7\\%$ is
 
-$$0.07 \\times 4000$$
-
-$$= 280$$
+$$
+0.07 \\times 4000 = 280
+$$
 
 The claim asserts
 
@@ -745,9 +741,9 @@ Start from the overview's recovered unknowns, apply only this claim's extra chec
 
 The whole \\$10,000 would sit in Account B at $7\\%$:
 
-$$0.07 \\times 10000$$
-
-$$= 700$$
+$$
+0.07 \\times 10000 = 700
+$$
 
 The claim asserts
 
@@ -853,9 +849,9 @@ Read the figure already produced by the shared solve, then compare it with the c
 
 The overview recovered $y=349$. Twelve Premium chairs are worth
 
-$$12 \\times 349$$
-
-$$= 4188$$
+$$
+12 \\times 349 = 4188
+$$
 
 The claim asserts
 
@@ -870,9 +866,9 @@ Start from the overview's recovered unknowns, apply only this claim's extra chec
 
 The overview recovered $x=304$ and $y=349$. The Premium–Standard gap is
 
-$$349 - 304$$
-
-$$= 45$$
+$$
+349 - 304 = 45
+$$
 
 The claim asserts
 
@@ -895,17 +891,17 @@ Using the recovered solution values $x=304$ and $y=349$ as inputs for this claim
 
 Five of each costs
 
-$$5 \\times 304$$
+$$
+5 \\times 304 = 1520
+$$
 
-$$= 1520$$
+$$
+5 \\times 349 = 1745
+$$
 
-$$5 \\times 349$$
-
-$$= 1745$$
-
-$$1520 + 1745$$
-
-$$= 3265$$
+$$
+1520 + 1745 = 3265
+$$
 
 Then $3265 > 3000$.
 
@@ -1015,13 +1011,13 @@ Using the recovered solution values $f=17$ and $r=0.30$ as inputs for this claim
 
 Two hundred extra minutes would cost
 
-$$200 \\times 0.30$$
+$$
+200 \\times 0.30 = 60
+$$
 
-$$= 60$$
-
-$$17 + 60$$
-
-$$= 77$$
+$$
+17 + 60 = 77
+$$
 
 The claim asserts
 
@@ -1055,9 +1051,9 @@ Use the recovered values from the overview for this claim-specific check.
 
 Double the rival rate of \\$0.20 is
 
-$$2 \\times 0.20$$
-
-$$= 0.40$$
+$$
+2 \\times 0.20 = 0.40
+$$
 
 The recovered extra-minute rate is $r=0.30$. Then $0.30 < 0.40$.
 
@@ -1128,11 +1124,7 @@ $$
 Substitute the stem numbers:
 
 $$
-s = 130 - 55
-$$
-
-$$
-= 75
+s = 130 - 55 = 75
 $$
 
 The computed figure matches the claim.
@@ -1163,9 +1155,9 @@ Read the figure already produced by the shared solve, then compare it with the c
 
 The overview recovered $s=75$ Standard ovens at 4 hours each:
 
-$$75 \\times 4$$
-
-$$= 300$$
+$$
+75 \\times 4 = 300
+$$
 
 The claim asserts
 
@@ -1180,9 +1172,9 @@ Read the figure already produced by the shared solve, then compare it with the c
 
 The overview recovered $d=55$ Deluxe ovens at 9 hours each:
 
-$$55 \\times 9$$
-
-$$= 495$$
+$$
+55 \\times 9 = 495
+$$
 
 The claim asserts
 
@@ -1197,9 +1189,9 @@ Read the figure already produced by the shared solve, then compare it with the c
 
 The overview recovered $s=75$ Standard ovens at \\$120 each:
 
-$$75 \\times 120$$
-
-$$= 9000$$
+$$
+75 \\times 120 = 9000
+$$
 
 The claim asserts
 
@@ -1311,9 +1303,9 @@ $$
 
 Substitute the stem numbers:
 
-$$9300 - 300$$
-
-$$= 9000$$
+$$
+9300 - 300 = 9000
+$$
 
 That computed value matches the claim.
 
@@ -1343,9 +1335,9 @@ Use the recovered values from the overview for this claim-specific check.
 
 Riverside's gross sales are printed at \\$9,760. With zero returns,
 
-$$9760 - 0$$
-
-$$= 9760$$
+$$
+9760 - 0 = 9760
+$$
 
 Gross and net would both equal \\$9,760.00.
 
@@ -1465,13 +1457,13 @@ Using the recovered solution values $f=9$ and $r=0.20$ as inputs for this claim:
 
 A 250-page PrintFast order costs
 
-$$250 \\times 0.20$$
+$$
+250 \\times 0.20 = 50
+$$
 
-$$= 50$$
-
-$$9 + 50$$
-
-$$= 59$$
+$$
+9 + 50 = 59
+$$
 
 The claim asserts
 
@@ -1492,13 +1484,13 @@ Using the recovered solution values $f=9$ and $r=0.20$ as inputs for this claim:
 
 A 350-page PrintFast order costs
 
-$$350 \\times 0.20$$
+$$
+350 \\times 0.20 = 70
+$$
 
-$$= 70$$
-
-$$9 + 70$$
-
-$$= 79$$
+$$
+9 + 70 = 79
+$$
 
 QuickCopy's flat fee is \\$60. Then $79 > 60$.
 
@@ -1577,9 +1569,9 @@ Read the figure already produced by the shared solve, then compare it with the c
 
 The overview recovered $y=6$. Ben's 5 burritos alone cost
 
-$$5 \\times 6$$
-
-$$= 30$$
+$$
+5 \\times 6 = 30
+$$
 
 Ana's entire order was \\$32.00. Then $30 < 32$.
 
@@ -1596,9 +1588,9 @@ Using the recovered solution values $x=3.50$ and $y=6$ as inputs for this claim:
 
 The gap is
 
-$$6 - 3.50$$
-
-$$= 2.50$$
+$$
+6 - 3.50 = 2.50
+$$
 
 The claim asserts
 
@@ -1617,9 +1609,9 @@ Read the figure already produced by the shared solve, then compare it with the c
 
 The overview recovered $y=6$. One fewer burrito from Ana's \\$32.00 order leaves
 
-$$32 - 6$$
-
-$$= 26$$
+$$
+32 - 6 = 26
+$$
 
 Then $26 < 28$.
 
@@ -1647,17 +1639,17 @@ Using the recovered solution values $x=3.50$ and $y=6$ as inputs for this claim:
 
 Six of each costs
 
-$$6 \\times 3.50$$
+$$
+6 \\times 3.50 = 21
+$$
 
-$$= 21$$
+$$
+6 \\times 6 = 36
+$$
 
-$$6 \\times 6$$
-
-$$= 36$$
-
-$$21 + 36$$
-
-$$= 57$$
+$$
+21 + 36 = 57
+$$
 
 The claim asserts
 
@@ -1776,9 +1768,9 @@ Read the figure already produced by the shared solve, then compare it with the c
 
 The overview recovered $x=12$. One hundred extra paperbacks add
 
-$$100 \\times 12$$
-
-$$= 1200$$
+$$
+100 \\times 12 = 1200
+$$
 
 The claim asserts
 
@@ -1799,17 +1791,17 @@ Using the recovered solution values $x=12$ and $y=17$ as inputs for this claim:
 
 Three hardcovers and two paperbacks cost
 
-$$3 \\times 17$$
+$$
+3 \\times 17 = 51
+$$
 
-$$= 51$$
+$$
+2 \\times 12 = 24
+$$
 
-$$2 \\times 12$$
-
-$$= 24$$
-
-$$51 + 24$$
-
-$$= 75$$
+$$
+51 + 24 = 75
+$$
 
 The claim needs a total less than \\$75. We have equality.
 
@@ -1820,9 +1812,9 @@ Read the figure already produced by the shared solve, then compare it with the c
 
 The overview recovered $y=17$. Three hundred ten hardcovers alone would be
 
-$$310 \\times 17$$
-
-$$= 5270$$
+$$
+310 \\times 17 = 5270
+$$
 
 The reported total is \\$8,540. Then $5270 \\ne 8540$.
 
@@ -1940,13 +1932,13 @@ Using the recovered solution values $x=38$ and $y=3$ as inputs for this claim:
 
 Ten GB of overage on Standard costs
 
-$$10 \\times 3$$
+$$
+10 \\times 3 = 30
+$$
 
-$$= 30$$
-
-$$38 + 30$$
-
-$$= 68$$
+$$
+38 + 30 = 68
+$$
 
 The claim asserts
 
@@ -1959,13 +1951,13 @@ So the statement is True.`,
 
 The overview recovered Standard as $x=38$ and $y=3$. Five GB of overage on Standard costs
 
-$$5 \\times 3$$
+$$
+5 \\times 3 = 15
+$$
 
-$$= 15$$
-
-$$38 + 15$$
-
-$$= 53$$
+$$
+38 + 15 = 53
+$$
 
 Premium is \\$40 unlimited. Then $40 < 53$.
 
@@ -1976,13 +1968,13 @@ Use the recovered values from the overview for this claim-specific check.
 
 At 8 GB of overage, Basic costs
 
-$$8 \\times 2$$
+$$
+8 \\times 2 = 16
+$$
 
-$$= 16$$
-
-$$15 + 16$$
-
-$$= 31$$
+$$
+15 + 16 = 31
+$$
 
 Standard's March bill at 8 GB is the recovered \\$62. Then $31 < 62$.
 
@@ -2055,11 +2047,7 @@ $$
 Divide by $1.08$:
 
 $$
-\frac{2419.20}{1.08}
-$$
-
-$$
-= 2240
+\frac{2419.20}{1.08} = 2240
 $$
 
 The claim asserts
@@ -2083,9 +2071,9 @@ Using the recovered solution values $x=140$ and $y=210$ as inputs for this claim
 
 The Suite premium is
 
-$$210 - 140$$
-
-$$= 70$$
+$$
+210 - 140 = 70
+$$
 
 The claim asserts
 
@@ -2108,15 +2096,15 @@ Using the recovered solution values $x=140$ and $y=210$ as inputs for this claim
 
 Six Standard rooms cost
 
-$$6 \\times 140$$
-
-$$= 840$$
+$$
+6 \\times 140 = 840
+$$
 
 Four Suites cost
 
-$$4 \\times 210$$
-
-$$= 840$$
+$$
+4 \\times 210 = 840
+$$
 
 The two bookings match, so six Standard rooms are not cheaper.
 
@@ -2131,9 +2119,9 @@ $$
 
 Including $8\\%$ tax:
 
-$$210 \\times 1.08$$
-
-$$= 226.80$$
+$$
+210 \\times 1.08 = 226.80
+$$
 
 Compare the computed value with the claim (\\$226.80). The two sides agree.
 
@@ -2281,17 +2269,17 @@ Using the recovered solution values $x=12$ and $y=15$ as inputs for this claim:
 
 March's forecast quantities at those actual costs would be
 
-$$200 \\times 12$$
+$$
+200 \\times 12 = 2400
+$$
 
-$$= 2400$$
+$$
+100 \\times 15 = 1500
+$$
 
-$$100 \\times 15$$
-
-$$= 1500$$
-
-$$2400 + 1500$$
-
-$$= 3900$$
+$$
+2400 + 1500 = 3900
+$$
 
 The March forecast total is \\$4,700. Then $4700 > 3900$.
 
@@ -2310,17 +2298,17 @@ Using the recovered solution values $x=12$ and $y=15$ as inputs for this claim:
 
 March's forecast quantities at those actual costs would be
 
-$$200 \\times 12$$
+$$
+200 \\times 12 = 2400
+$$
 
-$$= 2400$$
+$$
+100 \\times 15 = 1500
+$$
 
-$$100 \\times 15$$
-
-$$= 1500$$
-
-$$2400 + 1500$$
-
-$$= 3900$$
+$$
+2400 + 1500 = 3900
+$$
 
 The claim asserts
 
@@ -2337,9 +2325,9 @@ Use the recovered values from the overview for this claim-specific check.
 
 January's actual value is \\$3,150 and February's is \\$3,660:
 
-$$3150 + 3660$$
-
-$$= 6810$$
+$$
+3150 + 3660 = 6810
+$$
 
 The claim asserts
 
@@ -2457,9 +2445,9 @@ So the statement is True.`,
 
 The overview recovered actual overtime $y=24$ and contract overtime \\$21. Worker 2 had 2 overtime hours, so the overpayment is
 
-$$2 \\times (24 - 21)$$
-
-$$= 6$$
+$$
+2 \\times (24 - 21) = 6
+$$
 
 Compare the computed value with the claim (\\$6.00). The two sides agree.
 
@@ -2476,17 +2464,17 @@ Using the recovered solution values $x=14$ and $y=24$ as inputs for this claim:
 
 Forty regular hours plus 4 overtime hours at those actual rates:
 
-$$40 \\times 14$$
+$$
+40 \\times 14 = 560
+$$
 
-$$= 560$$
+$$
+4 \\times 24 = 96
+$$
 
-$$4 \\times 24$$
-
-$$= 96$$
-
-$$560 + 96$$
-
-$$= 656$$
+$$
+560 + 96 = 656
+$$
 
 The claim asserts
 
@@ -2499,17 +2487,17 @@ So the statement is True.`,
 
 The overview recovered $x=14$ and contract overtime \\$21. Forty regular hours plus 4 overtime hours under the contract rule:
 
-$$40 \\times 14$$
+$$
+40 \\times 14 = 560
+$$
 
-$$= 560$$
+$$
+4 \\times 21 = 84
+$$
 
-$$4 \\times 21$$
-
-$$= 84$$
-
-$$560 + 84$$
-
-$$= 644$$
+$$
+560 + 84 = 644
+$$
 
 Compare the computed value with the claim (\\$644). The two sides agree.
 
@@ -2614,11 +2602,7 @@ So the statement is True.`,
 A transfer shifts one recovered holding into the other by the stated amount:
 
 $$
-x' = x - t,\\quad y'
-$$
-
-$$
-= y + t
+x' = x - t,\\quad y' = y + t
 $$
 
 Substitute the stem numbers recovered in the overview:
@@ -2644,13 +2628,13 @@ Using the recovered solution values $x=15$ and $y=2$ as inputs for this claim:
 
 Forty cubic metres would be billed
 
-$$40 \\times 2$$
+$$
+40 \\times 2 = 80
+$$
 
-$$= 80$$
-
-$$15 + 80$$
-
-$$= 95$$
+$$
+15 + 80 = 95
+$$
 
 The claim asserts
 
@@ -2665,9 +2649,9 @@ Use the recovered values from the overview for this claim-specific check.
 
 June's printed bill is \\$65.00. A 10% late penalty on that total is
 
-$$65 \\times 1.10$$
-
-$$= 71.50$$
+$$
+65 \\times 1.10 = 71.50
+$$
 
 The claim asserts
 
@@ -2742,23 +2726,15 @@ Using the recovered solution values $C(d)=6+d$ and $M(d)=6+1.5d$ as inputs for t
 At $10$ km:
 
 $$
-C(10) = 6 + 10
+C(10) = 6 + 10 = 16
 $$
 
 $$
-= 16
-$$
-
-$$1.5 \\times 10$$
-
-$$= 15$$
-
-$$
-M(10) = 6 + 15
+1.5 \\times 10 = 15
 $$
 
 $$
-= 21
+M(10) = 6 + 15 = 21
 $$
 
 Then $16 < 21$.
@@ -2792,23 +2768,15 @@ Using the recovered solution values $C(d)=6+d$ and $M(d)=6+1.5d$ as inputs for t
 At $3$ km, which is under $4$ km:
 
 $$
-C(3) = 6 + 3
+C(3) = 6 + 3 = 9
 $$
 
 $$
-= 9
-$$
-
-$$1.5 \\times 3$$
-
-$$= 4.50$$
-
-$$
-M(3) = 6 + 4.50
+1.5 \\times 3 = 4.50
 $$
 
 $$
-= 10.50
+M(3) = 6 + 4.50 = 10.50
 $$
 
 Then $10.50 > 9$, so MetroX is not cheaper.
@@ -2823,11 +2791,7 @@ Read the figure already produced by the shared solve, then compare it with the c
 The overview recovered $C(d)=6+d$. At $30$ km:
 
 $$
-C(30) = 6 + 30
-$$
-
-$$
-= 36
+C(30) = 6 + 30 = 36
 $$
 
 The claim asserts
@@ -2844,11 +2808,7 @@ Read the figure already produced by the shared solve, then compare it with the c
 The overview recovered $C(d)=6+d$. A 5 km CityCab ride costs
 
 $$
-C(5) = 6 + 5
-$$
-
-$$
-= 11
+C(5) = 6 + 5 = 11
 $$
 
 The stem already prices a 5 km MetroX ride at \\$13.50. Then $11 \\ne 13.50$.
@@ -2953,11 +2913,7 @@ So the statement is True.`,
 Elimination on two independent linear equations recovers a unique value for each unknown. The claim names the second recovered coordinate:
 
 $$
-y_B = \frac{92 - 44}{3}
-$$
-
-$$
-= 16
+y_B = \frac{92 - 44}{3} = 16
 $$
 
 The computed figure matches the claim.
@@ -2969,31 +2925,31 @@ So the statement is True.`,
 
 The overview recovered Vendor A at $x_A=9$, $y_A=18$ and Vendor B at $x_B=11$, $y_B=16$. For 40 of X and 30 of Y, Vendor A costs
 
-$$40 \\times 9$$
+$$
+40 \\times 9 = 360
+$$
 
-$$= 360$$
+$$
+30 \\times 18 = 540
+$$
 
-$$30 \\times 18$$
-
-$$= 540$$
-
-$$360 + 540$$
-
-$$= 900$$
+$$
+360 + 540 = 900
+$$
 
 Vendor B costs
 
-$$40 \\times 11$$
+$$
+40 \\times 11 = 440
+$$
 
-$$= 440$$
+$$
+30 \\times 16 = 480
+$$
 
-$$30 \\times 16$$
-
-$$= 480$$
-
-$$440 + 480$$
-
-$$= 920$$
+$$
+440 + 480 = 920
+$$
 
 Then $900 < 920$.
 
@@ -3002,35 +2958,35 @@ So the statement is True.`,
 
 The overview recovered Vendor A at $x_A=9$, $y_A=18$ and Vendor B at $x_B=11$, $y_B=16$. For the upcoming 40 of X and 30 of Y, Vendor A costs
 
-$$40 \\times 9$$
+$$
+40 \\times 9 = 360
+$$
 
-$$= 360$$
+$$
+30 \\times 18 = 540
+$$
 
-$$30 \\times 18$$
-
-$$= 540$$
-
-$$360 + 540$$
-
-$$= 900$$
+$$
+360 + 540 = 900
+$$
 
 Vendor B costs
 
-$$40 \\times 11$$
+$$
+40 \\times 11 = 440
+$$
 
-$$= 440$$
+$$
+30 \\times 16 = 480
+$$
 
-$$30 \\times 16$$
+$$
+440 + 480 = 920
+$$
 
-$$= 480$$
-
-$$440 + 480$$
-
-$$= 920$$
-
-$$920 - 900$$
-
-$$= 20$$
+$$
+920 - 900 = 20
+$$
 
 Switching to Vendor B raises the cost by $20$, it does not reduce it.
 
@@ -3047,13 +3003,13 @@ Using the recovered solution values $y_A=18$ and $y_B=16$ as inputs for this cla
 
 Sixty units of Y only:
 
-$$60 \\times 18$$
+$$
+60 \\times 18 = 1080
+$$
 
-$$= 1080$$
-
-$$60 \\times 16$$
-
-$$= 960$$
+$$
+60 \\times 16 = 960
+$$
 
 Then $960 < 1080$.
 
@@ -3167,11 +3123,7 @@ $$
 Substitute the stem numbers:
 
 $$
-A = 27200 - 14100
-$$
-
-$$
-= 13100
+A = 27200 - 14100 = 13100
 $$
 
 The computed figure matches the claim.
@@ -3183,27 +3135,27 @@ So the statement is True.`,
 
 The overview recovered Alpha's revenue $A=13100$ with Product P at $x=50$. Product P currently contributes
 
-$$150 \\times 50$$
-
-$$= 7500$$
+$$
+150 \\times 50 = 7500
+$$
 
 A $10\\%$ increase on Product P only adds
 
-$$0.10 \\times 7500$$
-
-$$= 750$$
+$$
+0.10 \\times 7500 = 750
+$$
 
 Alpha's new total would be
 
-$$13100 + 750$$
-
-$$= 13850$$
+$$
+13100 + 750 = 13850
+$$
 
 A $10\\%$ increase of the whole revenue would be
 
-$$0.10 \\times 13100$$
-
-$$= 1310$$
+$$
+0.10 \\times 13100 = 1310
+$$
 
 The increase is $750$, not $1310$.
 
@@ -3212,17 +3164,17 @@ So the statement is False.`,
 
 The overview recovered Alpha at $A=13100$ with $x=50$ and $y=70$. After a $10\\%$ increase on Product P the new P price is $55$:
 
-$$150 \\times 55$$
+$$
+150 \\times 55 = 8250
+$$
 
-$$= 8250$$
+$$
+80 \\times 70 = 5600
+$$
 
-$$80 \\times 70$$
-
-$$= 5600$$
-
-$$8250 + 5600$$
-
-$$= 13850$$
+$$
+8250 + 5600 = 13850
+$$
 
 Beta's recovered Q1 revenue is $14100$. Then $13850 < 14100$.
 
@@ -3239,15 +3191,15 @@ Using the recovered solution values $x=50$ and $y=70$ as inputs for this claim:
 
 Beta's Service Q revenue is
 
-$$130 \\times 70$$
-
-$$= 9100$$
+$$
+130 \\times 70 = 9100
+$$
 
 Alpha's Product P revenue is
 
-$$150 \\times 50$$
-
-$$= 7500$$
+$$
+150 \\times 50 = 7500
+$$
 
 Then $9100 > 7500$.
 
