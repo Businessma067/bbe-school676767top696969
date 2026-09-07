@@ -56,9 +56,29 @@ type DragState = {
   fromId: string;
   start: Point;
   current: Point;
+  smoothed: Point;
 };
 
 const ROUND_SIZE = 5;
+const DRAG_THRESHOLD_PX = 8;
+const CLICK_LINE_DELAY_MS = 160;
+const DRAG_SMOOTHING = 0.28;
+
+function cardKey(side: Side, id: string) {
+  return `${side}:${id}`;
+}
+
+function curvePath(a: Point, b: Point) {
+  const midX = (a.x + b.x) / 2;
+  return `M ${a.x} ${a.y} C ${midX} ${a.y}, ${midX} ${b.y}, ${b.x} ${b.y}`;
+}
+
+function lerpPoint(from: Point, to: Point, t: number): Point {
+  return {
+    x: from.x + (to.x - from.x) * t,
+    y: from.y + (to.y - from.y) * t,
+  };
+}
 
 function shuffleCopy<T>(arr: T[]): T[] {
   const next = [...arr];
@@ -109,14 +129,21 @@ function MatchingSubjectPage() {
   const [wrongPair, setWrongPair] = useState<WrongPair | null>(null);
   const [attempts, setAttempts] = useState(0);
   const [correctClicks, setCorrectClicks] = useState(0);
-  const [drag, setDrag] = useState<DragState | null>(null);
+  const [isDragging, setIsDragging] = useState(false);
   const [anchors, setAnchors] = useState<Record<string, Point>>({});
+  const [hiddenLineIds, setHiddenLineIds] = useState<Set<string>>(() => new Set());
+  const [wrongLineReady, setWrongLineReady] = useState(false);
 
   const boardRef = useRef<HTMLDivElement>(null);
   const cardRefs = useRef<Map<string, HTMLButtonElement>>(new Map());
   const dragRef = useRef<DragState | null>(null);
   const pointerIdRef = useRef<number | null>(null);
   const didDragRef = useRef(false);
+  const dragPathRef = useRef<SVGPathElement>(null);
+  const dragDotRef = useRef<SVGCircleElement>(null);
+  const rafRef = useRef<number | null>(null);
+  const lineDelayTimers = useRef<Map<string, number>>(new Map());
+  const wrongLineTimer = useRef<number | null>(null);
 
   const byId = useMemo(() => {
     const map = new Map<string, Pair>();
@@ -138,8 +165,16 @@ function MatchingSubjectPage() {
       setWrongPair(null);
       setAttempts(0);
       setCorrectClicks(0);
-      setDrag(null);
+      setIsDragging(false);
       dragRef.current = null;
+      setHiddenLineIds(new Set());
+      setWrongLineReady(false);
+      for (const t of lineDelayTimers.current.values()) window.clearTimeout(t);
+      lineDelayTimers.current.clear();
+      if (wrongLineTimer.current != null) {
+        window.clearTimeout(wrongLineTimer.current);
+        wrongLineTimer.current = null;
+      }
       if (nextRound != null) setRound(nextRound);
     },
     [subject.sections],
@@ -190,30 +225,97 @@ function MatchingSubjectPage() {
     };
   }, [measureAnchors, pairs.length]);
 
+  const paintDragLine = useCallback((start: Point, end: Point, visible: boolean) => {
+    const path = dragPathRef.current;
+    const dot = dragDotRef.current;
+    if (path) {
+      path.setAttribute("d", curvePath(start, end));
+      path.style.opacity = visible ? "0.85" : "0";
+    }
+    if (dot) {
+      dot.setAttribute("cx", String(end.x));
+      dot.setAttribute("cy", String(end.y));
+      dot.style.opacity = visible ? "1" : "0";
+    }
+  }, []);
+
+  const clearDragVisual = useCallback(() => {
+    if (rafRef.current != null) {
+      cancelAnimationFrame(rafRef.current);
+      rafRef.current = null;
+    }
+    paintDragLine({ x: 0, y: 0 }, { x: 0, y: 0 }, false);
+    setIsDragging(false);
+  }, [paintDragLine]);
+
+  const scheduleLineReveal = useCallback((id: string) => {
+    setHiddenLineIds((prev) => {
+      const next = new Set(prev);
+      next.add(id);
+      return next;
+    });
+    const existing = lineDelayTimers.current.get(id);
+    if (existing != null) window.clearTimeout(existing);
+    const timer = window.setTimeout(() => {
+      setHiddenLineIds((prev) => {
+        const next = new Set(prev);
+        next.delete(id);
+        return next;
+      });
+      lineDelayTimers.current.delete(id);
+    }, CLICK_LINE_DELAY_MS);
+    lineDelayTimers.current.set(id, timer);
+  }, []);
+
+  useEffect(() => {
+    return () => {
+      for (const t of lineDelayTimers.current.values()) window.clearTimeout(t);
+      if (wrongLineTimer.current != null) window.clearTimeout(wrongLineTimer.current);
+      if (rafRef.current != null) cancelAnimationFrame(rafRef.current);
+    };
+  }, []);
+
   const allDone = pairs.length > 0 && matched.size === pairs.length;
 
-  const tryMatch = useCallback((leftId: string, rightId: string) => {
-    setAttempts((n) => n + 1);
-    if (leftId === rightId) {
-      setMatched((prev) => new Set(prev).add(leftId));
-      setCorrectClicks((n) => n + 1);
-      setSelectedLeft(null);
-      setSelectedRight(null);
-      setWrongPair(null);
-      return;
-    }
-    setWrongPair({ leftId, rightId });
-    window.setTimeout(() => {
-      setWrongPair(null);
-      setSelectedLeft(null);
-      setSelectedRight(null);
-    }, 520);
-  }, []);
+  const tryMatch = useCallback(
+    (leftId: string, rightId: string, fromDrag: boolean) => {
+      setAttempts((n) => n + 1);
+      if (leftId === rightId) {
+        setMatched((prev) => new Set(prev).add(leftId));
+        setCorrectClicks((n) => n + 1);
+        setSelectedLeft(null);
+        setSelectedRight(null);
+        setWrongPair(null);
+        setWrongLineReady(false);
+        if (!fromDrag) scheduleLineReveal(leftId);
+        return;
+      }
+      setWrongPair({ leftId, rightId });
+      setWrongLineReady(fromDrag);
+      if (wrongLineTimer.current != null) {
+        window.clearTimeout(wrongLineTimer.current);
+        wrongLineTimer.current = null;
+      }
+      if (!fromDrag) {
+        wrongLineTimer.current = window.setTimeout(() => {
+          setWrongLineReady(true);
+          wrongLineTimer.current = null;
+        }, CLICK_LINE_DELAY_MS);
+      }
+      window.setTimeout(() => {
+        setWrongPair(null);
+        setWrongLineReady(false);
+        setSelectedLeft(null);
+        setSelectedRight(null);
+      }, fromDrag ? 520 : 520 + CLICK_LINE_DELAY_MS);
+    },
+    [scheduleLineReveal],
+  );
 
   const onPickLeft = (id: string) => {
     if (matched.has(id) || wrongPair || didDragRef.current) return;
     if (selectedRight) {
-      tryMatch(id, selectedRight);
+      tryMatch(id, selectedRight, false);
       return;
     }
     setSelectedLeft((cur) => (cur === id ? null : id));
@@ -223,7 +325,7 @@ function MatchingSubjectPage() {
   const onPickRight = (id: string) => {
     if (matched.has(id) || wrongPair || didDragRef.current) return;
     if (selectedLeft) {
-      tryMatch(selectedLeft, id);
+      tryMatch(selectedLeft, id, false);
       return;
     }
     setSelectedRight((cur) => (cur === id ? null : id));
@@ -236,8 +338,6 @@ function MatchingSubjectPage() {
     const rect = board.getBoundingClientRect();
     return { x: clientX - rect.left, y: clientY - rect.top };
   }, []);
-
-  const cardKey = (side: Side, id: string) => `${side}:${id}`;
 
   const setCardRef = useCallback(
     (side: Side, id: string, el: HTMLButtonElement | null) => {
@@ -267,11 +367,12 @@ function MatchingSubjectPage() {
   const endDrag = useCallback(
     (clientX: number, clientY: number) => {
       const current = dragRef.current;
+      const wasDragging = didDragRef.current;
       dragRef.current = null;
-      setDrag(null);
       pointerIdRef.current = null;
+      clearDragVisual();
 
-      if (!current || !didDragRef.current) return;
+      if (!current || !wasDragging) return;
 
       const targetSide: Side = current.fromSide === "left" ? "right" : "left";
       const target = findCardUnderPoint(clientX, clientY, targetSide);
@@ -280,12 +381,12 @@ function MatchingSubjectPage() {
       }
 
       if (current.fromSide === "left") {
-        tryMatch(current.fromId, target.id);
+        tryMatch(current.fromId, target.id, true);
       } else {
-        tryMatch(target.id, current.fromId);
+        tryMatch(target.id, current.fromId, true);
       }
     },
-    [findCardUnderPoint, matched, tryMatch],
+    [clearDragVisual, findCardUnderPoint, matched, tryMatch],
   );
 
   const onCardPointerDown = (
@@ -300,26 +401,56 @@ function MatchingSubjectPage() {
 
     const start =
       anchors[cardKey(side, id)] ?? boardPoint(e.clientX, e.clientY);
-    const next: DragState = {
+    const point = boardPoint(e.clientX, e.clientY);
+    dragRef.current = {
       fromSide: side,
       fromId: id,
       start,
-      current: boardPoint(e.clientX, e.clientY),
+      current: point,
+      smoothed: start,
     };
-    dragRef.current = next;
-    setDrag(next);
+    // Keep the line hidden until the pointer actually moves — clicks stay clean
+    paintDragLine(start, start, false);
   };
 
   const onCardPointerMove = (e: ReactPointerEvent<HTMLButtonElement>) => {
     if (pointerIdRef.current !== e.pointerId || !dragRef.current) return;
     const point = boardPoint(e.clientX, e.clientY);
-    const start = dragRef.current.start;
-    const dist = Math.hypot(point.x - start.x, point.y - start.y);
-    if (dist > 6) didDragRef.current = true;
+    const drag = dragRef.current;
+    drag.current = point;
 
-    const next = { ...dragRef.current, current: point };
-    dragRef.current = next;
-    setDrag(next);
+    const dist = Math.hypot(point.x - drag.start.x, point.y - drag.start.y);
+    if (dist > DRAG_THRESHOLD_PX && !didDragRef.current) {
+      didDragRef.current = true;
+      setIsDragging(true);
+    }
+
+    if (rafRef.current != null) return;
+
+    const tick = () => {
+      const live = dragRef.current;
+      if (!live) {
+        rafRef.current = null;
+        return;
+      }
+
+      live.smoothed = lerpPoint(live.smoothed, live.current, DRAG_SMOOTHING);
+      const lag = Math.hypot(
+        live.current.x - live.smoothed.x,
+        live.current.y - live.smoothed.y,
+      );
+      if (lag < 1.25) live.smoothed = live.current;
+
+      paintDragLine(live.start, live.smoothed, didDragRef.current);
+
+      if (didDragRef.current && lag >= 1.25) {
+        rafRef.current = requestAnimationFrame(tick);
+      } else {
+        rafRef.current = null;
+      }
+    };
+
+    rafRef.current = requestAnimationFrame(tick);
   };
 
   const onCardPointerUp = (e: ReactPointerEvent<HTMLButtonElement>) => {
@@ -330,7 +461,6 @@ function MatchingSubjectPage() {
       /* already released */
     }
     endDrag(e.clientX, e.clientY);
-    // Allow click handlers to see didDragRef, then clear on next tick
     window.setTimeout(() => {
       didDragRef.current = false;
     }, 0);
@@ -339,9 +469,9 @@ function MatchingSubjectPage() {
   const onCardPointerCancel = (e: ReactPointerEvent<HTMLButtonElement>) => {
     if (pointerIdRef.current !== e.pointerId) return;
     dragRef.current = null;
-    setDrag(null);
     pointerIdRef.current = null;
     didDragRef.current = false;
+    clearDragVisual();
   };
 
   const accuracy =
@@ -349,25 +479,26 @@ function MatchingSubjectPage() {
 
   const matchedLines = useMemo(() => {
     return [...matched].flatMap((id) => {
+      if (hiddenLineIds.has(id)) return [];
       const a = anchors[cardKey("left", id)];
       const b = anchors[cardKey("right", id)];
       if (!a || !b) return [];
-      return [{ id, a, b, kind: "ok" as const }];
+      return [{ id, a, b }];
     });
-  }, [anchors, matched]);
+  }, [anchors, matched, hiddenLineIds]);
 
   const wrongLine = useMemo(() => {
-    if (!wrongPair) return null;
+    if (!wrongPair || !wrongLineReady) return null;
     const a = anchors[cardKey("left", wrongPair.leftId)];
     const b = anchors[cardKey("right", wrongPair.rightId)];
     if (!a || !b) return null;
     return { a, b };
-  }, [anchors, wrongPair]);
+  }, [anchors, wrongPair, wrongLineReady]);
 
   const selectedAnchor =
-    selectedLeft && !selectedRight
+    !isDragging && selectedLeft && !selectedRight
       ? anchors[cardKey("left", selectedLeft)]
-      : selectedRight && !selectedLeft
+      : !isDragging && selectedRight && !selectedLeft
         ? anchors[cardKey("right", selectedRight)]
         : null;
 
@@ -471,12 +602,10 @@ function MatchingSubjectPage() {
                 aria-hidden
               >
                 {matchedLines.map((line) => (
-                  <line
+                  <path
                     key={`ok-${line.id}`}
-                    x1={line.a.x}
-                    y1={line.a.y}
-                    x2={line.b.x}
-                    y2={line.b.y}
+                    d={curvePath(line.a, line.b)}
+                    fill="none"
                     stroke={subject.accent}
                     strokeWidth={2.5}
                     strokeLinecap="round"
@@ -484,36 +613,36 @@ function MatchingSubjectPage() {
                   />
                 ))}
                 {wrongLine && (
-                  <line
-                    x1={wrongLine.a.x}
-                    y1={wrongLine.a.y}
-                    x2={wrongLine.b.x}
-                    y2={wrongLine.b.y}
+                  <path
+                    d={curvePath(wrongLine.a, wrongLine.b)}
+                    fill="none"
                     stroke="#f87171"
                     strokeWidth={2.5}
                     strokeLinecap="round"
                     strokeDasharray="6 4"
                   />
                 )}
-                {drag && (
-                  <line
-                    x1={drag.start.x}
-                    y1={drag.start.y}
-                    x2={drag.current.x}
-                    y2={drag.current.y}
-                    stroke={subject.accent}
-                    strokeWidth={2}
-                    strokeLinecap="round"
-                    strokeDasharray="5 5"
-                    opacity={0.7}
-                  />
-                )}
-                {!drag && selectedAnchor && (
-                  <circle
-                    cx={selectedAnchor.x}
-                    cy={selectedAnchor.y}
-                    r={4}
-                    fill={subject.accent}
+                <path
+                  ref={dragPathRef}
+                  d="M 0 0"
+                  fill="none"
+                  stroke={subject.accent}
+                  strokeWidth={2.25}
+                  strokeLinecap="round"
+                  style={{ opacity: 0, transition: "opacity 80ms linear" }}
+                />
+                <circle
+                  ref={dragDotRef}
+                  cx={0}
+                  cy={0}
+                  r={4.5}
+                  fill={subject.accent}
+                  style={{ opacity: 0 }}
+                />
+                {!isDragging && selectedAnchor && (
+                  <SelectedEndpoint
+                    point={selectedAnchor}
+                    color={subject.accent}
                   />
                 )}
               </svg>
@@ -607,6 +736,29 @@ function SectionChip({
     >
       {label}
     </button>
+  );
+}
+
+/** Tiny delay so click-select doesn't flash a connector tip instantly. */
+function SelectedEndpoint({ point, color }: { point: Point; color: string }) {
+  const [ready, setReady] = useState(false);
+
+  useEffect(() => {
+    setReady(false);
+    const t = window.setTimeout(() => setReady(true), CLICK_LINE_DELAY_MS);
+    return () => window.clearTimeout(t);
+  }, [point.x, point.y]);
+
+  if (!ready) return null;
+
+  return (
+    <circle
+      cx={point.x}
+      cy={point.y}
+      r={4}
+      fill={color}
+      style={{ opacity: 0.9 }}
+    />
   );
 }
 
