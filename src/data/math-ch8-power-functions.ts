@@ -29,8 +29,6 @@ const MATH_CH8_CORE: MathTask[] = [
     tactical_explanations: [
     `**A.** → True
 
-Name the recovered power rule, then substitute the claimed input.
-
 The mass at a named side is the coefficient times the cube of that side:
 
 $$M(2)=5\\cdot 2^{3}$$
@@ -148,8 +146,6 @@ $$\\frac{M(ks)}{M(s)}=k^{3}$$`,
     answer_key: [true, false, false, true, true],
     tactical_explanations: [
     `**A.** → True
-
-Name the recovered power rule, then substitute the claimed input.
 
 An exponent of
 
@@ -285,8 +281,6 @@ and needs $t>0$.`,
     tactical_explanations: [
     `**A.** → True
 
-Name the recovered power rule, then substitute the claimed input.
-
 A negative exponent puts distance in a denominator:
 
 $$S(x)=\\frac{80}{x^{3}}$$
@@ -412,8 +406,6 @@ The two extremes are governed by those exponents alone.`,
     answer_key: [true, false, true, false, true],
     tactical_explanations: [
     `**A.** → True
-
-Name the recovered power rule, then substitute the claimed input.
 
 An exponent of $-1$ writes order size in the denominator:
 
@@ -673,8 +665,6 @@ The recovered output is $Q(s)=8s^{\\frac{1}{2}}$. A staffing multiplier $k$ mult
     tactical_explanations: [
     `**A.** → False
 
-Name the recovered power rule, then substitute the claimed input.
-
 Substitute
 
 $$n=2$$
@@ -810,8 +800,6 @@ On $n>0$ the square $n^{2}$ is positive, so the sign of $G-F$ is the sign of $n-
     tactical_explanations: [
     `**A.** → True
 
-Name the recovered power rule, then substitute the claimed input.
-
 The exponent
 
 $$\\frac{1}{2}$$
@@ -819,8 +807,6 @@ $$\\frac{1}{2}$$
  is a square root, and
 
 $$0^{2}=0$$
-
-:
 
 $$L(0)=0^{\\frac{1}{2}}$$
 
@@ -937,8 +923,6 @@ so $L$ is defined for $x\\ge 0$, $M$ is defined for all real $x$, and $N$ needs 
     answer_key: [true, true, true, false, true],
     tactical_explanations: [
     `**A.** → True
-
-Name the recovered power rule, then substitute the claimed input.
 
 Rewrite the negative exponent as a root in the denominator, then substitute four cartridges:
 
@@ -1176,8 +1160,6 @@ The recovered primer is $y(r)=5r^{2}$. Multiplying the radius by $k$ multiplies 
     tactical_explanations: [
     `**A.** → True
 
-Name the recovered power rule, then substitute the claimed input.
-
 Square the speed, then apply the coefficient:
 
 $$E(10)=0.5\\cdot 10^{2}$$
@@ -1322,8 +1304,6 @@ $$r=\\frac{1}{3}$$
  Doubling hours multiplies harvest by
 
 $$2^{r}$$
-
-:
 
 $$\\frac{Y(2h)}{Y(h)}=2^{\\frac{1}{3}}$$
 
@@ -1973,8 +1953,6 @@ $$r=2$$
 
 $$k=\\frac{1}{2}$$
 
-:
-
 $$\\frac{L(x/2)}{L(x)}=\\left(\\frac{1}{2}\\right)^{2}$$
 
 $$\\frac{L(x/2)}{L(x)}=\\frac{1}{4}$$
@@ -2617,8 +2595,6 @@ The recovered wait is $W(k)=216 k^{-\\frac{3}{2}}$.`,
     tactical_explanations: [
     `**A.** → True
 
-Name the recovered power rule, then substitute the claimed input.
-
 An extra euro cuts demand at the rate of the derivative of the recovered curve:
 
 $$q'(p)=-20000 p^{-3}$$
@@ -2755,8 +2731,6 @@ $$q(p)=10000 p^{-2}, \\qquad R(p)=10000 p^{-1}$$`,
     answer_key: [true, true, true, true, false],
     tactical_explanations: [
     `**A.** → True
-
-Name the recovered power rule, then substitute the claimed input.
 
 A power of $n$ cannot carry a leftover constant. The overview recovered
 
@@ -2911,8 +2885,6 @@ $$k=2$$
  on the recovered
 
 $$E(t)=240 t^{\\frac{1}{4}}$$
-
-:
 
 $$\\frac{E(2t)}{E(t)}=2^{\\frac{1}{4}}$$
 
@@ -3116,8 +3088,6 @@ $$k=2$$
 
 $$\\frac{5}{2}$$
 
-:
-
 $$\\frac{Q(2d)}{Q(d)}=2^{\\frac{5}{2}}$$
 
 $$\\frac{Q(2d)}{Q(d)}=4\\sqrt{2}$$
@@ -3276,8 +3246,6 @@ $$r(t)=3 t^{\\frac{1}{2}}, \\qquad S(t)=9\\pi t$$`,
     tactical_explanations: [
     `**A.** → True
 
-Name the recovered power rule, then substitute the claimed input.
-
 At $64$ tickets the uncapped Plan A reading is
 
 $$40\\sqrt{64}=40\\cdot 8$$
@@ -3325,8 +3293,6 @@ Read the exponent from the overview before comparing growth rates.
 Plan A's cap binds once
 
 $$40\\sqrt{u}=400$$
-
-:
 
 $$\\sqrt{u}=10
 $$
@@ -3417,8 +3383,6 @@ $$C_A(u)=\\min\\bigl(40\\sqrt{u},\\,400\\bigr), \\qquad C_B(u)=5u$$`,
     tactical_explanations: [
     `**A.** → True
 
-Name the recovered power rule, then substitute the claimed input.
-
 An extra unit cuts modelled cost at the rate $|c'(N)|$. Differentiating,
 
 $$c'(N)=-b\\cdot 1000\\cdot N^{-b-1}$$
@@ -3482,8 +3446,6 @@ Three successive doublings reach
 
 $$N=8$$
 
-:
-
 $$c(8)=1000\\cdot(0.8)^{3}$$
 
 $$c(8)=512$$
@@ -3500,8 +3462,6 @@ Keep the stated domain in force while you evaluate the model.
 Four successive doublings reach
 
 $$N=16$$
-
-:
 
 $$c(16)=1000\\cdot(0.8)^{4}$$
 
@@ -3547,8 +3507,6 @@ so after $k$ doublings, $c(2^{k})=1000\\cdot(0.8)^{k}$.`,
     tactical_explanations: [
     `**A.** → False
 
-Name the recovered power rule, then substitute the claimed input.
-
 Doubling the spend is the scale
 
 $$k=2$$
@@ -3556,8 +3514,6 @@ $$k=2$$
  on exponent
 
 $$\\frac{1}{2}$$
-
-:
 
 $$\\frac{R(2x)}{R(x)}=2^{\\frac{1}{2}}$$
 
@@ -3731,8 +3687,6 @@ $$L=16$$
  and
 
 $$L=81$$
-
-:
 
 $$16\\cdot 16^{-\\frac{1}{4}}$$
 
@@ -3972,8 +3926,6 @@ $$q(p)=2000 p^{-\\frac{3}{2}}, \\qquad R(p)=2000 p^{-\\frac{1}{2}}$$`,
     tactical_explanations: [
     `**A.** → True
 
-Name the recovered power rule, then substitute the claimed input.
-
 An extra hour adds $N'(h)$. Differentiating the recovered output:
 
 $$N'(h)=12 h^{-\\frac{1}{3}}$$
@@ -4002,8 +3954,6 @@ $$k=2$$
  on exponent
 
 $$\\frac{2}{3}$$
-
-:
 
 $$\\frac{N(2h)}{N(h)}=2^{\\frac{2}{3}}$$
 
@@ -4375,8 +4325,6 @@ $$q(p)=1200 p^{-\\frac{1}{2}}, \\qquad R(p)=1200 p^{\\frac{1}{2}}$$`,
     tactical_explanations: [
     `**A.** → False
 
-Name the recovered power rule, then substitute the claimed input.
-
 To double the test-firing output, the feed factor $k$ must satisfy
 
 $$k^{\\frac{4}{3}}=2$$
@@ -4438,8 +4386,6 @@ Read the exponent from the overview before comparing growth rates.
 The licence binds once
 
 $$4 x^{\\frac{4}{3}}=1024$$
-
-:
 
 $$x^{\\frac{4}{3}}=256
 $$
@@ -4926,8 +4872,6 @@ Net gain is maximised where
 
 $$\\Pi'(L)=0$$
 
-:
-
 $$60 L^{-\\frac{1}{2}}=6
 $$
 
@@ -5029,8 +4973,6 @@ $$R(L)=120 L^{\\frac{1}{2}}, \\qquad \\Pi(L)=120 L^{\\frac{1}{2}}-6L$$`,
     answer_key: [false, false, true, true, true],
     tactical_explanations: [
     `**A.** → False
-
-Name the recovered power rule, then substitute the claimed input.
 
 Concentrating all $60$ units in plant 2, the cheaper plant, costs
 
@@ -5147,8 +5089,6 @@ $$C_1(q)=\\frac{1}{2} q^{2}, \\qquad C_2(q)=\\frac{1}{4} q^{2}$$`,
     answer_key: [true, false, false, true, true],
     tactical_explanations: [
     `**A.** → True
-
-Name the recovered power rule, then substitute the claimed input.
 
 Both fitted points sit on the recovered law:
 
@@ -5428,8 +5368,6 @@ $$q=25$$
 
 $$q=100$$
 
-:
-
 $$R(25)=400$$
 
 $$R(100)=800$$
@@ -5479,8 +5417,6 @@ $$R(q)=80 q^{\\frac{1}{2}}, \\qquad R(p)=6400 p^{-1}.$$`,
     answer_key: [true, true, false, true, false],
     tactical_explanations: [
     `**A.** → True
-
-Name the recovered power rule, then substitute the claimed input.
 
 Average product is output per labour hour. The overview recovered
 
@@ -5642,8 +5578,6 @@ $$\\frac{Y}{L}=20 L^{-\\frac{1}{2}}.$$`,
     tactical_explanations: [
     `**A.** → True
 
-Name the recovered power rule, then substitute the claimed input.
-
 Break-even is
 
 $$\\Pi(q)=0$$
@@ -5693,8 +5627,6 @@ $$q=400$$
 . Past the larger root the linear charge dominates the square-root revenue. At
 
 $$q=625$$
-
-:
 
 $$\\Pi(625)=60\\cdot 25-1250-400$$
 
@@ -5790,8 +5722,6 @@ The positive roots square to $q=100$ and $q=400$.`,
     tactical_explanations: [
     `**A.** → True
 
-Name the recovered power rule, then substitute the claimed input.
-
 Benefit and cost meet where
 
 $$B(x)=C(x)$$
@@ -5871,8 +5801,6 @@ $$\\frac{3}{2}>\\frac{1}{2}$$
 Cost has the larger exponent, so it overtakes benefit past the unique meeting and stays ahead. At
 
 $$x=64$$
-
-:
 
 $$B(64)=144$$
 
@@ -6272,8 +6200,6 @@ The recovered storage is $V(d)=4 d^{2}$.`,
     tactical_explanations: [
     `**A.** → True
 
-Name the recovered power rule, then substitute the claimed input.
-
 Equal speed increments are the derivative of the index. The overview recovered
 
 $$E(v)=\\frac{1}{20} v^{2}$$
@@ -6407,8 +6333,6 @@ The recovered index is $E(v)=\\frac{1}{20} v^{2}$.`,
     tactical_explanations: [
     `**A.** → True
 
-Name the recovered power rule, then substitute the claimed input.
-
 Steel and capacity are both powers of height. The overview recovered steel exponent $2$ and capacity exponent $3$.
 
 $$2<3$$
@@ -6540,8 +6464,6 @@ The recovered laws are $S(h)=3 h^{2}$ and $V(h)=h^{3}$.`,
     answer_key: [false, true, false, true, false],
     tactical_explanations: [
     `**A.** → False
-
-Name the recovered power rule, then substitute the claimed input.
 
 Proportionality would need exponent $1$. The overview recovered
 
@@ -6680,8 +6602,6 @@ The recovered time is $T(n)=4 n^{\\frac{1}{2}}$.`,
     answer_key: [true, true, false, false, false],
     tactical_explanations: [
     `**A.** → True
-
-Name the recovered power rule, then substitute the claimed input.
 
 Doubling the distance is the multiplier
 
@@ -6969,8 +6889,6 @@ The recovered bill is $C(n)=100 n^{\\frac{3}{4}}$.`,
     tactical_explanations: [
     `**A.** → True
 
-Name the recovered power rule, then substitute the claimed input.
-
 Inverse-linear decay would carry exponent $-1$. The overview recovered exponent $-\\frac{3}{2}$.
 
 $$-\\frac{3}{2}<-1$$
@@ -7031,8 +6949,6 @@ A nonzero power inverts to another power. The overview recovered
 $$c=400 x^{-\\frac{3}{2}},$$ so isolating distance raises both sides to the reciprocal
 
 $$-\\frac{2}{3}$$
-
-:
 
 $$x=\\left(\\frac{400}{c}\\right)^{\\frac{2}{3}}$$
 
@@ -7414,8 +7330,6 @@ $$vI(v)=60 v^{\\frac{3}{2}}.$$`,
     answer_key: [true, true, true, false, true],
     tactical_explanations: [
     `**A.** → True
-
-Name the recovered power rule, then substitute the claimed input.
 
 A nonzero power inverts to another power. The overview recovered
 
@@ -7821,8 +7735,6 @@ The recovered output is $y(a)=24 a^{\\frac{1}{2}}$.`,
     tactical_explanations: [
     `**A.** → False
 
-Name the recovered power rule, then substitute the claimed input.
-
 Doubling cumulative volume is the multiplier
 
 $$k=2$$
@@ -7982,8 +7894,6 @@ $$S(N)=800 N^{\\frac{1}{2}}.$$`,
     tactical_explanations: [
     `**A.** → True
 
-Name the recovered power rule, then substitute the claimed input.
-
 Doubling the discharge is the multiplier
 
 $$k=2$$
@@ -8113,8 +8023,6 @@ $$=0.625 q^{1.5}.$$`,
     answer_key: [true, true, true, true, false],
     tactical_explanations: [
     `**A.** → True
-
-Name the recovered power rule, then substitute the claimed input.
 
 Revenue is price times quantity. The overview recovered
 
@@ -8292,8 +8200,6 @@ Isolating current raises both sides to the reciprocal
 
 $$\\frac{2}{3}$$
 
-:
-
 $$p=\\left(\\frac{S}{5}\\right)^{\\frac{2}{3}}$$
 
 Current needed for a given strength is still a power of that strength.
@@ -8308,8 +8214,6 @@ Start from the calibrated closed form in the overview.
 An extra ampere is the derivative of the recovered law
 
 $$S(p)=5p^{\\frac{3}{2}}$$
-
-:
 
 $$S'(p)=\\frac{15}{2}p^{\\frac{1}{2}}$$
 
@@ -8403,8 +8307,6 @@ $$S(p)=5p^{\\frac{3}{2}}$$`,
     answer_key: [false, true, false, true, false],
     tactical_explanations: [
     `**A.** → False
-
-Name the recovered power rule, then substitute the claimed input.
 
 Compare two $8$ kg buoys with one $64$ kg buoy. The overview recovered
 
@@ -8506,8 +8408,6 @@ $$H=6m^{\\frac{2}{3}}$$
 Isolating mass raises both sides to the reciprocal
 
 $$\\frac{3}{2}$$
-
-:
 
 $$m=\\left(\\frac{H}{6}\\right)^{\\frac{3}{2}}$$
 
@@ -8614,8 +8514,6 @@ $$H(t)=600t^{\\frac{2}{3}}$$`,
     tactical_explanations: [
     `**A.** → True
 
-Name the recovered power rule, then substitute the claimed input.
-
 A nonzero power inverts to another power. The overview recovered
 
 $$T=\\frac{800}{d^{2}}$$
@@ -8658,8 +8556,6 @@ $$2^{-2}$$
 
 $$\\frac{1}{2}$$
 
-:
-
 $$\\frac{T(2d)}{T(d)}=2^{-2}$$
 
 $$\\frac{T(2d)}{T(d)}=\\frac{1}{4}$$
@@ -8693,8 +8589,6 @@ Keep the stated domain in force while you evaluate the model.
 An extra metre is the derivative of the recovered law
 
 $$T(d)=800d^{-2}$$
-
-:
 
 $$T'(d)=-1600\\, d^{-3}$$
 
@@ -8912,8 +8806,6 @@ $$\\frac{G(m)}{m}=8m^{-\\frac{1}{4}}$$`,
     tactical_explanations: [
     `**A.** → True
 
-Name the recovered power rule, then substitute the claimed input.
-
 Quadrupling time multiplies strength by $\\sqrt{4}$, because the coefficient cancels:
 
 $$\\frac{S(4t)}{S(t)}=\\sqrt{4}$$
@@ -8951,8 +8843,6 @@ Read the exponent from the overview before comparing growth rates.
 An extra day is the derivative of the recovered law
 
 $$S(t)=5\\sqrt{t}$$
-
-:
 
 $$S'(t)=\\frac{5}{2}t^{-\\frac{1}{2}}$$
 
@@ -9237,8 +9127,6 @@ A $10\\%$ height increase is the scale factor
 
 $$1.1^{3}$$
 
-:
-
 $$\\left(\\frac{11}{10}\\right)^{3}=\\frac{1331}{1000}$$
 
 $$\\left(\\frac{11}{10}\\right)^{3}$$
@@ -9314,13 +9202,9 @@ $$M(h)=\\frac{1}{2}h^{3}$$`,
     tactical_explanations: [
     `**A.** → True
 
-Name the recovered power rule, then substitute the claimed input.
-
 Doubling distance multiplies intensity by
 
 $$2^{-2}$$
-
-:
 
 $$\\frac{I(2d)}{I(d)}=2^{-2}$$
 
@@ -9359,8 +9243,6 @@ Read the exponent from the overview before comparing growth rates.
 An extra metre is the derivative of the recovered law
 
 $$I(d)=2.88d^{-2}$$
-
-:
 
 $$I'(d)=-5.76\\, d^{-3}$$
 
@@ -9578,8 +9460,6 @@ $$v(q)=4\\sqrt{2}\\, q$$`,
     tactical_explanations: [
     `**A.** → True
 
-Name the recovered power rule, then substitute the claimed input.
-
 Doubling the logged $80$ pallets means $T=160$. Invert the recovered law:
 
 $$20\\sqrt{s}=160$$
@@ -9750,8 +9630,6 @@ $$R(4)=1000$$
 Doubling revenue means
 
 $$R=2000$$
-
-:
 
 $$2000p^{-\\frac{1}{2}}=2000$$
 
@@ -9960,8 +9838,6 @@ $$C(n)=400+30n^{\\frac{1}{2}}$$`,
     tactical_explanations: [
     `**A.** → True
 
-Name the recovered power rule, then substitute the claimed input.
-
 The two components meet where
 
 $$O(q)=H(q)$$
@@ -10014,8 +9890,6 @@ Doubling the recorded batch of $40$ units gives
 
 $$q=80$$
 
-:
-
 $$T(40)=120+120$$
 
 $$T(40)=240$$
@@ -10059,8 +9933,6 @@ $$q=80$$
  is the recovered
 
 $$O(q)=\\frac{4800}{q}$$
-
-:
 
 $$O(80)=\\frac{4800}{80}$$
 
@@ -10288,8 +10160,6 @@ $$50n^{-\\frac{1}{2}}$$
 
 $$4^{-\\frac{1}{2}}$$
 
-:
-
 $$\\frac{50(4n)^{-\\frac{1}{2}}}{50n^{-\\frac{1}{2}}}=\\frac{1}{2}$$
 
 Quadrupling halves the learning component.
@@ -10389,8 +10259,6 @@ $$t(n)=8+50n^{-\\frac{1}{2}}$$`,
     tactical_explanations: [
     `**A.** → False
 
-Name the recovered power rule, then substitute the claimed input.
-
 Revenue is proportional to feed only if the exponent is $1$. The given exponent is $\\frac{2}{3}$, so
 
 $$\\frac{R(2x)}{R(x)}=2^{\\frac{2}{3}}\\approx 1.587$$
@@ -10407,8 +10275,6 @@ Form the ratio so the unknown positive coefficient cancels.
 This is a comparison of the two recovered laws at
 
 $$x=64$$
-
-:
 
 $$R(64)=90\\cdot 16$$
 
@@ -10453,8 +10319,6 @@ Start from the calibrated closed form in the overview.
 Cost overtakes revenue where
 
 $$R(x)=C(x)$$
-
-:
 
 $$90x^{\\frac{2}{3}}=30x$$
 
@@ -10528,8 +10392,6 @@ $$C(x)=30x$$`,
     answer_key: [false, true, true, false, false],
     tactical_explanations: [
     `**A.** → False
-
-Name the recovered power rule, then substitute the claimed input.
 
 Multiplying the index by $4$ multiplies cost by $4$ only if the exponent is $1$. The given exponent is $\\frac{3}{2}$, so
 
@@ -10669,8 +10531,6 @@ $$f(x)=6x^{\\frac{3}{2}}$$`,
     tactical_explanations: [
     `**A.** → True
 
-Name the recovered power rule, then substitute the claimed input.
-
 A nonzero power inverts to another power. The overview recovered
 
 $$W=5s^{\\frac{3}{2}}$$
@@ -10678,8 +10538,6 @@ $$W=5s^{\\frac{3}{2}}$$
 Isolating scale raises both sides to the reciprocal
 
 $$\\frac{2}{3}$$
-
-:
 
 $$s=\\left(\\frac{W}{5}\\right)^{\\frac{2}{3}}$$
 
@@ -10733,8 +10591,6 @@ $$2^{-\\frac{2}{3}}$$
 , because
 
 $$s=(W/A)^{\\frac{2}{3}}$$
-
-:
 
 $$2^{-\\frac{2}{3}}\\approx 0.630$$
 
@@ -10801,8 +10657,6 @@ $$W(s)=5s^{\\frac{3}{2}}$$`,
     tactical_explanations: [
     `**A.** → False
 
-Name the recovered power rule, then substitute the claimed input.
-
 A $25\\%$ tariff rise is the factor
 
 $$k=\\frac{5}{4}$$
@@ -10857,8 +10711,6 @@ The exact power uses the tariff factor
 
 $$\\frac{5}{4}$$
 
-:
-
 $$\\left(\\frac{5}{4}\\right)^{-2}-1=\\frac{16}{25}-1$$
 
 $$\\left(\\frac{5}{4}\\right)^{-2}-1$$
@@ -10877,8 +10729,6 @@ Start from the calibrated closed form in the overview.
 A $25\\%$ tariff cut is the factor
 
 $$k=\\frac{3}{4}$$
-
-:
 
 $$\\left(\\frac{3}{4}\\right)^{-2}=\\frac{16}{9}\\approx 1.778$$
 
@@ -10942,8 +10792,6 @@ $$q(p)=36000p^{-2}$$`,
     answer_key: [true, true, false, false, true],
     tactical_explanations: [
     `**A.** → True
-
-Name the recovered power rule, then substitute the claimed input.
 
 The given exponent is $3$. Mass grows faster than height when that exponent is larger than one:
 
@@ -11208,8 +11056,6 @@ The recovered laws are $F(v)=\\frac{1}{2}v^{2}$ and $P(v)=\\frac{1}{2}v^{3}$.
     answer_key: [false, false, true, true, false],
     tactical_explanations: [
     `**A.** → False
-
-Name the recovered power rule, then substitute the claimed input.
 
 Inverse proportionality would mean exponent $-1$. The overview recovered
 
@@ -11963,8 +11809,6 @@ $$S(t)=225\\pi t^{\\frac{4}{3}}$$
     tactical_explanations: [
     `**A.** → True
 
-Name the recovered power rule, then substitute the claimed input.
-
 A nonzero power inverts to another power. The overview recovered
 
 $$Q=16h^{\\frac{3}{2}},$$ so isolating head raises both sides to the reciprocal
@@ -12366,8 +12210,6 @@ $$=t^{2}$$
     answer_key: [false, true, true, false, true],
     tactical_explanations: [
     `**A.** → False
-
-Name the recovered power rule, then substitute the claimed input.
 
 The two apps quote the same wait when
 
@@ -12817,8 +12659,6 @@ $$N(n)=12n^{\\frac{1}{2}}-2n$$
     tactical_explanations: [
     `**A.** → True
 
-Name the recovered power rule, then substitute the claimed input.
-
 A nonzero power inverts to another power. The overview recovered
 
 $$q=2000p^{-2},$$ so isolating price leaves
@@ -13065,8 +12905,6 @@ $$=\\frac{400}{s}$$
     tactical_explanations: [
     `**A.** → False
 
-Name the recovered power rule, then substitute the claimed input.
-
 The cheaper line is line 2, because
 
 $$b=\\frac{1}{4}$$
@@ -13202,8 +13040,6 @@ $$C_{2}(30)=225, \\qquad C_{1}(6)+C_{2}(24)=180$$
     answer_key: [true, true, true, false, true],
     tactical_explanations: [
     `**A.** → True
-
-Name the recovered power rule, then substitute the claimed input.
 
 For a power
 
