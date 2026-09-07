@@ -1,5 +1,5 @@
 import { useRouterState } from "@tanstack/react-router";
-import { useEffect, useRef } from "react";
+import { useEffect } from "react";
 import { readStoredLang, useLanguage } from "@/lib/i18n/context";
 import {
   getLocaleFromPath,
