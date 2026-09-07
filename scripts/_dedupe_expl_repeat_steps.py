@@ -35,60 +35,104 @@ def is_short_seed(d: str) -> bool:
     return True
 
 
-def collapse_consecutive(ds: list[str]) -> list[str]:
-    out: list[str] = []
-    for d in ds:
-        if out and norm(out[-1]) == norm(d):
-            continue
-        out.append(d)
-    return out
+def blank_between(prose_between: str) -> bool:
+    return not prose_between.strip()
 
 
-def collapse_repeated_blocks(ds: list[str]) -> list[str]:
+def _lhs_key(d: str) -> str | None:
+    n = norm(d)
+    if "=" not in n:
+        return None
+    left = n.split("=", 1)[0]
+    return left or None
+
+
+def _dedupe_with_prose(displays: list[str], prose: list[str]) -> list[str]:
+    """prose[0] precedes first display; prose[i] is between displays[i-1] and displays[i].
+
+    Only collapse duplicates / merge = chains when intervening prose is blank,
+    so pedagogical restatements stay intact.
+    """
+    ds = list(displays)
+    # before[i] = prose between displays[i-1] and displays[i] == prose[i]
+    before = [prose[i] if i < len(prose) else "" for i in range(len(displays))]
+
+    def drop_at(idxs: set[int]) -> None:
+        nonlocal ds, before
+        keep = [i for i in range(len(ds)) if i not in idxs]
+        ds = [ds[i] for i in keep]
+        before = [before[i] for i in keep]
+
+    # 1) consecutive identical with blank intervening prose
+    drop: set[int] = set()
+    last_kept = 0
+    for i in range(1, len(ds)):
+        if norm(ds[last_kept]) == norm(ds[i]) and blank_between(before[i]):
+            drop.add(i)
+        else:
+            last_kept = i
+    if drop:
+        drop_at(drop)
+
+    # 2) repeated blocks with blank prose across the duplicated span
     changed = True
     while changed:
         changed = False
         best = None
         n = len(ds)
         for k in range(min(n // 2, 30), 1, -1):
-            for i in range(0, len(ds) - 2 * k + 1):
+            for i in range(0, n - 2 * k + 1):
                 a = [norm(x) for x in ds[i : i + k]]
                 b = [norm(x) for x in ds[i + k : i + 2 * k]]
                 if a == b and any(a):
+                    if any(not blank_between(before[j]) for j in range(i + 1, i + 2 * k)):
+                        continue
                     best = (i, k)
                     break
             if best:
                 break
         if best:
             i, k = best
-            ds = ds[: i + k] + ds[i + 2 * k :]
+            drop_at(set(range(i + k, i + 2 * k)))
             changed = True
-    return ds
 
-
-def collapse_skip_one_arith(ds: list[str]) -> list[str]:
-    out = ds[:]
+    # 3) skip-one arithmetic stutter:
+    #    LHS=expr / expr=val / LHS=val / expr=val  → drop the repeated expr=val
+    # Require matching LHS on a and c so unrelated equal results are kept.
     i = 0
-    while i + 3 < len(out):
-        b, d = out[i + 1], out[i + 3]
-        if norm(b) == norm(d) and "=" in b and len(norm(b)) < 100:
-            del out[i + 3]
-            if i + 3 < len(out) and norm(out[i + 3]) == norm(out[i + 2]):
-                del out[i + 3]
+    while i + 3 < len(ds):
+        a, b, c, d = ds[i], ds[i + 1], ds[i + 2], ds[i + 3]
+        if (
+            norm(b) == norm(d)
+            and "=" in b
+            and len(norm(b)) < 100
+            and _lhs_key(a)
+            and _lhs_key(a) == _lhs_key(c)
+        ):
+            if any(not blank_between(before[j]) for j in (i + 1, i + 2, i + 3)):
+                i += 1
+                continue
+            drop_at({i + 3})
+            if i + 3 < len(ds) and norm(ds[i + 3]) == norm(ds[i + 2]):
+                if blank_between(before[i + 3]):
+                    drop_at({i + 3})
             continue
         i += 1
-    return out
 
-
-def merge_short_eq_chains(ds: list[str]) -> list[str]:
+    # 4) merge short = chains (blank prose only)
     out: list[str] = []
     i = 0
     while i < len(ds):
         cur = ds[i]
-        if i + 1 < len(ds) and is_short_seed(cur) and is_cont_eq(ds[i + 1]):
+        if (
+            i + 1 < len(ds)
+            and is_short_seed(cur)
+            and is_cont_eq(ds[i + 1])
+            and blank_between(before[i + 1])
+        ):
             parts = [cur.strip()]
             j = i + 1
-            while j < len(ds) and is_cont_eq(ds[j]):
+            while j < len(ds) and is_cont_eq(ds[j]) and blank_between(before[j]):
                 parts.append(ds[j].strip())
                 j += 1
             if len(parts) >= 2:
@@ -100,16 +144,6 @@ def merge_short_eq_chains(ds: list[str]) -> list[str]:
         out.append(cur)
         i += 1
     return out
-
-
-def dedupe_display_list(ds: list[str]) -> list[str]:
-    ds = collapse_consecutive(ds)
-    ds = collapse_repeated_blocks(ds)
-    ds = collapse_skip_one_arith(ds)
-    ds = collapse_consecutive(ds)
-    ds = merge_short_eq_chains(ds)
-    ds = collapse_consecutive(ds)
-    return ds
 
 
 def rebuild_by_split(expl: str, original: list[str], deduped: list[str]) -> tuple[str, int]:
@@ -127,7 +161,6 @@ def rebuild_by_split(expl: str, original: list[str], deduped: list[str]) -> tupl
         return prose[idx + 1] if idx + 1 < len(prose) else ""
 
     def add_math(disp: str) -> None:
-        # separate from prior content with a blank line when needed
         if chunks and not chunks[-1].endswith("\n\n"):
             if chunks[-1].endswith("\n"):
                 chunks.append("\n")
@@ -164,7 +197,12 @@ def rebuild_by_split(expl: str, original: list[str], deduped: list[str]) -> tupl
             oi += 1
             while oi < len(displays):
                 frag = norm(displays[oi])
-                if frag.startswith("=") and frag in merged_n:
+                # Between displays[oi-1] and displays[oi] is prose[oi]
+                if (
+                    frag.startswith("=")
+                    and frag in merged_n
+                    and blank_between(prose[oi])
+                ):
                     skipped += 1
                     oi += 1
                     continue
@@ -192,13 +230,15 @@ def rebuild_by_split(expl: str, original: list[str], deduped: list[str]) -> tupl
 
 
 def rebuild_explanation(expl: str) -> tuple[str, int]:
-    original = DISP_RE.findall(expl)
+    pieces = DISP_RE.split(expl)
+    prose = pieces[0::2]
+    original = pieces[1::2]
     if len(original) < 2:
         return expl, 0
-    deduped = dedupe_display_list(list(original))
+    deduped = _dedupe_with_prose(list(original), list(prose))
     if [norm(x) for x in deduped] == [norm(x) for x in original]:
         return expl, 0
-    return rebuild_by_split(expl, original, deduped)
+    return rebuild_by_split(expl, list(original), deduped)
 
 
 def process_json(path: Path) -> tuple[int, int]:
@@ -243,18 +283,23 @@ def process_ts(path: Path) -> tuple[int, int]:
 def main() -> None:
     root = Path("src/data")
     total = 0
-    for jp in sorted(root.glob("math*.json")):
-        L, C = process_json(jp)
-        if C:
-            print(f"{jp.name}: changed {C}/{L} letters")
-            total += C
-    for tp in sorted(root.glob("math-ch*.ts")):
-        if tp.read_text().count("tactical_explanations") < 5:
+    assigned = [
+        "math-ch9-polynomials.json",
+        "math-ch9-mixed-exam.json",
+        "math-ch10-exp-log.json",
+        "math-ch11-differentiation.ts",
+        "math-ch11-exam.json",
+    ]
+    for name in assigned:
+        path = root / name
+        if not path.exists():
             continue
-        L, C = process_ts(tp)
-        if C:
-            print(f"{tp.name}: changed {C}/{L} letters")
-            total += C
+        if path.suffix == ".json":
+            L, C = process_json(path)
+        else:
+            L, C = process_ts(path)
+        print(f"{path.name}: changed {C}/{L} letters")
+        total += C
     print(f"TOTAL letters changed: {total}")
 
 
