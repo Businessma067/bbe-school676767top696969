@@ -132,7 +132,7 @@
       ],
       "difficulty_level": "5/5",
       "sort_order": 204,
-      "solution_overview": "Both maps are already written.\n\n$$\np(x) = x^{2}-1\\qquad q(x)\n$$\n\n$$\n= x^{3}-x\n$$\n\nFactor to linear pieces: $p=(x-1)(x+1)$ and $q=x\\,p(x)$. Parity is a coefficient reading. Nesting multiplies highest powers rather than adding them.",
+      "solution_overview": "Both maps are already written.\n\n$$\np(x) = x^{2}-1,\\qquad q(x) = x^{3}-x\n$$\n\nFactor to linear pieces: $p=(x-1)(x+1)$ and $q=x\\,p(x)$. Parity is a coefficient reading. Nesting multiplies highest powers rather than adding them.",
       "placeholder": false,
       "stem_kind": "symbolic"
     },
@@ -231,7 +231,7 @@
       ],
       "difficulty_level": "5/5",
       "sort_order": 207,
-      "solution_overview": "The inner quadratic and the outer affine map are given explicitly.\n\n$$\np(x) = x^{2}-1\\qquad q(x)\n$$\n\n$$\n= x-2\n$$\n\nNesting multiplies degrees: $1\\cdot 2=2$ and $2\\cdot 1=2$. Expanding both orders gives different quadratics, so the compositions do not commute.",
+      "solution_overview": "The inner quadratic and the outer affine map are given explicitly.\n\n$$\np(x) = x^{2}-1,\\qquad q(x) = x-2\n$$\n\nNesting multiplies degrees: $1\\cdot 2=2$ and $2\\cdot 1=2$. Expanding both orders gives different quadratics, so the compositions do not commute.",
       "placeholder": false,
       "stem_kind": "nested"
     },
@@ -467,7 +467,7 @@
       ],
       "difficulty_level": "5/5",
       "sort_order": 214,
-      "solution_overview": "Both maps are given in expanded form.\n\n$$\nf(x) = x^{3}-x\\qquad g(x)\n$$\n\n$$\n= x^{2}-4\n$$\n\nThe remainder on division by $x-1$ is the number $f(1)$ or $g(1)$. Parity is a coefficient reading. Nesting multiplies degrees: $3\\cdot 2=6$.",
+      "solution_overview": "Both maps are given in expanded form.\n\n$$\nf(x) = x^{3}-x,\\qquad g(x) = x^{2}-4\n$$\n\nThe remainder on division by $x-1$ is the number $f(1)$ or $g(1)$. Parity is a coefficient reading. Nesting multiplies degrees: $3\\cdot 2=6$.",
       "placeholder": false,
       "stem_kind": "symbolic"
     },
@@ -566,7 +566,7 @@
       ],
       "difficulty_level": "5/5",
       "sort_order": 217,
-      "solution_overview": "Both maps are even quadratics.\n\n$$\np(x) = x^{2}-1\\qquad q(x)\n$$\n\n$$\n= x^{2}+1\n$$\n\nNesting multiplies degrees: $2\\cdot 2=4$ in either order. Expanding gives different quartics. An even inner map makes any outer function of it even.",
+      "solution_overview": "Both maps are even quadratics.\n\n$$\np(x) = x^{2}-1,\\qquad q(x) = x^{2}+1\n$$\n\nNesting multiplies degrees: $2\\cdot 2=4$ in either order. Expanding gives different quartics. An even inner map makes any outer function of it even.",
       "placeholder": false,
       "stem_kind": "nested"
     },
@@ -901,7 +901,7 @@
       ],
       "difficulty_level": "5/5",
       "sort_order": 227,
-      "solution_overview": "The inner map is an affine shift and the outer map is an odd cubic.\n\n$$\np(x) = x-1\\qquad q(x)\n$$\n\n$$\n= x^{3}-x\n$$\n\nDegree $3$ times degree $1$ is $3$ in either order. Expanding gives different cubics, so the compositions do not commute. The factor theorem is a substitution into the nesting.",
+      "solution_overview": "The inner map is an affine shift and the outer map is an odd cubic.\n\n$$\np(x) = x-1,\\qquad q(x) = x^{3}-x\n$$\n\nDegree $3$ times degree $1$ is $3$ in either order. Expanding gives different cubics, so the compositions do not commute. The factor theorem is a substitution into the nesting.",
       "placeholder": false,
       "stem_kind": "nested"
     },

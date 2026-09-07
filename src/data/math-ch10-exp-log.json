@@ -29,7 +29,7 @@
         "**D.** → True\n\nDoubling means the continuous level reaches twice its start.\n\n$$P(T) = 2P_0$$\n\nSubstitute the continuous formula and cancel $P_0>0$.\n\n$$P_0 e^{kT} = 2P_0$$\n\n$$e^{kT} = 2$$\n\nTake the natural log and divide by the positive force $k$.\n\n$$kT = \\ln 2$$\n\n$$T = \\frac{\\ln 2}{k}$$\n\nThe initial level cancelled before the logarithm, so $T$ depends only on $k$.\n\nSo the statement is True.\n",
         "**E.** → False\n\nReplacing the continuous growth factor $e^{kt}$ by the discrete factor $(1+k)^t$ changes the one-year multiplier from $e^{k}$ to $1+k$.\n\n$$e^{k}\\neq 1+k\\qquad(k>0)$$\n\nAt a generic positive time the two powers therefore disagree.\n\n$$P_0 e^{kt}\\neq P_0(1+k)^t$$\n\nEvery later level moves, so the substitution does not leave the path unchanged.\n\nSo the statement is False.\n"
       ],
-      "solution_overview": "The continuous path and its discrete rival share the same start but different one-year multipliers.\n\n$$\nP(t) = P_0 e^{kt}\\qquad Q(t)\n$$\n\n$$\n= P_0(1+r)^t\n$$\n\nThose multipliers are $e^{k}$ and $1+r$. The stem keeps them unequal, so the paths diverge for $t>0$. For $k>0$ the inequality $e^{k}>1+k$ decides the $r=k$ comparison, and doubling solves $e^{kT}=2$.",
+      "solution_overview": "The continuous path and its discrete rival share the same start but different one-year multipliers.\n\n$$\nP(t) = P_0 e^{kt},\\qquad Q(t) = P_0(1+r)^t\n$$\n\nThose multipliers are $e^{k}$ and $1+r$. The stem keeps them unequal, so the paths diverge for $t>0$. For $k>0$ the inequality $e^{k}>1+k$ decides the $r=k$ comparison, and doubling solves $e^{kT}=2$.",
       "difficulty_level": "1/5",
       "sort_order": 1,
       "placeholder": false,
@@ -97,7 +97,7 @@
         "**D.** → False\n\nExact doubling always inserts the logarithm of two.\n\n$$T_2 = \\frac{\\ln 2}{k}$$\n\nThe linearised guess $1/k$ omits that constant. For every $k>0$,\n\n$$\\frac{\\ln 2}{k}\\neq\\frac{1}{k}$$\n\nbecause $\\ln 2\\neq 1$. The two formulas agree only in the impossible case $\\ln 2=1$.\n\nSo the statement is False.\n",
         "**E.** → True\n\nWith $k>0$ and $T_2=(\\ln 2)/k$, evaluate the path after two doubling times.\n\n$$\nP(2T_2) = P_0 e^{k\\cdot 2(\\ln 2)/k} =P_0 e^{2\\ln 2} =P_0\\cdot 2^{2} =4P_0\n$$\n\nTwo successive doublings multiply the level by four.\n\nSo the statement is True.\n"
       ],
-      "solution_overview": "Characteristic times come from solving a pure exponential equation for the factor $2$ or $\\tfrac12$.\n\n$$\ne^{kT} = 2\\qquad e^{-\\lambda T}\n$$\n\n$$\n= \\tfrac12\n$$\n\nEither way $T=\\ln 2/|k|$, and $P_0$ cancels before the logarithm. After two doubling times the cumulative factor is $2^{2}=4$.",
+      "solution_overview": "Characteristic times come from solving a pure exponential equation for the factor $2$ or $\\tfrac12$.\n\n$$\ne^{kT} = 2,\\qquad e^{-\\lambda T} = \\tfrac12\n$$\n\nEither way $T=\\ln 2/|k|$, and $P_0$ cancels before the logarithm. After two doubling times the cumulative factor is $2^{2}=4$.",
       "difficulty_level": "3/5",
       "sort_order": 3,
       "placeholder": false,
@@ -165,7 +165,7 @@
         "**D.** → False\n\nAfter $n$ doubling intervals the continuous path multiplies by $2^{n}$.\n\n$$\nP(nT) = P_0 e^{k\\cdot nT} = P_0 e^{n\\ln 2} = P_0\\cdot 2^{n}\n$$\n\nThe claim replaces that geometric count by the linear expression $n\\cdot 2\\,P_0$. At $n=3$ the two sides disagree.\n\n$$P(3T) = 8P_0$$\n\n$$3\\cdot 2\\,P_0 = 6P_0$$\n\n$$8P_0\\neq 6P_0$$\n\nSo the linear formula fails.\n\nSo the statement is False.\n",
         "**E.** → False\n\nThe rebuilt continuous model is exponential in $t$, not affine.\n\n$$\nP(t) = P_0\\,2^{t/T} = P_0 e^{(\\ln 2)\\,t/T}\n$$\n\nThe claimed linear formula\n\n$$P(t) = P_0\\Bigl(1+\\frac{t\\ln 2}{T}\\Bigr)$$\n\nis the first-order tangent approximation at $t=0$, not the exact path. Already at $t=T$,\n\n$$P(T) = 2P_0\\neq P_0(1+\\ln 2)$$\n\nso the linear model is rejected.\n\nSo the statement is False.\n"
       ],
-      "solution_overview": "Exact doubling every $T$ units means the continuous one-step factor over that window equals $2$.\n\n$$\ne^{kT} = 2\\implies k\n$$\n\n$$\n= \\frac{\\ln 2}{T}\n$$\n\nThe rebuilt path is therefore $P(t)=P_0\\,2^{t/T}$. Integer multiples of $T$ produce exact powers of two, never a linear count of doublings.",
+      "solution_overview": "Exact doubling every $T$ units means the continuous one-step factor over that window equals $2$.\n\n$$\ne^{kT} = 2\\implies k = \\frac{\\ln 2}{T}\n$$\n\nThe rebuilt path is therefore $P(t)=P_0\\,2^{t/T}$. Integer multiples of $T$ produce exact powers of two, never a linear count of doublings.",
       "difficulty_level": "5/5",
       "sort_order": 5,
       "placeholder": false,
@@ -199,7 +199,7 @@
         "**D.** → True\n\nThe natural log is the left inverse of the exponential on the whole real line.\n\n$$\\ln(e^{kt}) = kt$$\n\nNo restriction on the letters $k$ and $t$ is required.\n\nConcrete check for the rewritten claim. Substitute: $\\ln(e^{6})=6$ and $2\\cdot3=6$.\n\nSo the statement is True.\n",
         "**E.** → False\n\nFix $r>-1$ and form the nested factor with no free time in the exponent of the outer exponential beyond the constant $k$.\n\n$$e^{k\\ln(1+r)} = (1+r)^{k}$$\n\nThat value is independent of $t$. The claimed map\n\n$$t\\mapsto(1+r)^{kt}$$\n\ngrows (or decays) with $t$ whenever $(1+r)^{k}\\neq 1$. A constant cannot equal a non-constant power of $t$, so the identification fails.\n\nSo the statement is False.\n"
       ],
-      "solution_overview": "Nested exponential and logarithmic identities collapse through the inverse pair $\\exp$ and $\\ln$.\n\n$$\ne^{k\\ln a} = a^{k}\\qquad \\ln(e^{kt})\n$$\n\n$$\n= kt\n$$\n\nContinuous growth $P_0 e^{kt}$ is the same spelling as $e^{\\ln P_0+kt}$. A constant nested factor $e^{k\\ln(1+r)}$ does not become a power of $t$.",
+      "solution_overview": "Nested exponential and logarithmic identities collapse through the inverse pair $\\exp$ and $\\ln$.\n\n$$\ne^{k\\ln a} = a^{k},\\qquad \\ln(e^{kt}) = kt\n$$\n\nContinuous growth $P_0 e^{kt}$ is the same spelling as $e^{\\ln P_0+kt}$. A constant nested factor $e^{k\\ln(1+r)}$ does not become a power of $t$.",
       "difficulty_level": "1/5",
       "sort_order": 6,
       "placeholder": false,
@@ -401,7 +401,7 @@
         "**D.** → False\n\nConstant successive ratios are the defining discrete footprint of a pure exponential model, whether written as $(1+r)^{t}$ or as $e^{kt}$ on the integer grid. Far from being incompatible with exponential structure, constant ratios are exactly what that structure predicts.\n\nSo the statement is False.\n",
         "**E.** → False\n\nThe table exhibits the two ratios $1+r$ and $e^{k}$ as separate letters. Nothing in the sampling forces those letters to be numerically equal. Matching the models requires $1+r=e^{k}$, which is a relation between $r$ and $k$, not the identification $r=k$.\n\nSo the statement is False.\n"
       ],
-      "solution_overview": "Read successive ratios off each tabulated row.\n\n$$\n\\frac{U(t+1)}{U(t)} = 1+r\\qquad \\frac{V(t+1)}{V(t)}\n$$\n\n$$\n= e^{k}\n$$\n\nThe discrete and continuous grids agree at every integer time precisely when $1+r=e^{k}$ and the starts match. Equating the letters $r$ and $k$ is a different, generally false, requirement.",
+      "solution_overview": "Read successive ratios off each tabulated row.\n\n$$\n\\frac{U(t+1)}{U(t)} = 1+r,\\qquad \\frac{V(t+1)}{V(t)} = e^{k}\n$$\n\nThe discrete and continuous grids agree at every integer time precisely when $1+r=e^{k}$ and the starts match. Equating the letters $r$ and $k$ is a different, generally false, requirement.",
       "difficulty_level": "2/5",
       "sort_order": 12,
       "placeholder": false,
@@ -469,7 +469,7 @@
         "**D.** → True\n\nFor $r>0$ the tangent-line bound for the logarithm at $1$ gives a strict inequality.\n\n$$\\ln(1+r)<r$$\n\nThe matching force $\\ln(1+r)$ is therefore strictly smaller than the discrete net rate $r$.\n\nSo the statement is True.\n",
         "**E.** → False\n\nThe same tangent comparison for $r>0$ runs in the opposite direction from the claim.\n\n$$\\ln(1+r)<r$$\n\nso the assertion $\\ln(1+r)>r$ is false.\n\nA single generic counter-example under the stem letters is enough to reject statement E.\n\nSo the statement is False.\n"
       ],
-      "solution_overview": "Equate one-year multipliers to match discrete and continuous spellings on the integer grid.\n\n$$\ne^{k} = 1+r\\implies k\n$$\n\n$$\n= \\ln(1+r)\n$$\n\nThe naive choice $k=r$ fails whenever $r\\neq 0$. For $r>0$ the concavity of $\\ln$ gives the strict inequality $\\ln(1+r)<r$.",
+      "solution_overview": "Equate one-year multipliers to match discrete and continuous spellings on the integer grid.\n\n$$\ne^{k} = 1+r\\implies k = \\ln(1+r)\n$$\n\nThe naive choice $k=r$ fails whenever $r\\neq 0$. For $r>0$ the concavity of $\\ln$ gives the strict inequality $\\ln(1+r)<r$.",
       "difficulty_level": "4/5",
       "sort_order": 14,
       "placeholder": false,
@@ -570,7 +570,7 @@
         "**D.** → True\n\nForce $k=2$ would produce successive ratios\n\n$$e^{2}\\approx 7.389$$\n\nrather than $2$. The tabulated values $1,2,4,8$ are powers of $2$, not of $e^{2}$, so force $k=2$ does not generate the table.\n\nSo the statement is True.\n",
         "**E.** → True\n\nA continuous exponential $P(t)=P_0 e^{kt}$ is completely determined by the pair $(P_0,k)$. The integer samples fix $P_0=1$ and $k=\\ln 2$, so the value at every non-integer $t$ is already determined by that unique pair.\n\nSo the statement is True.\n"
       ],
-      "solution_overview": "The integer table doubles at every step, so successive ratios equal $2$.\n\n$$\n\\frac{P(n+1)}{P(n)} = 2\n$$\n\n$$\n= e^{k}\\implies k\n$$\n\n$$\n= \\ln 2\n$$\n\nWith $P_0=1$ the continuous path is $P(t)=2^{t}$. Doubling time is $1$, and the continuous extension off the integers is unique.",
+      "solution_overview": "The integer table doubles at every step, so successive ratios equal $2$.\n\n$$\n\\frac{P(n+1)}{P(n)} = 2\n$$\n\n$$\n= e^{k}\\implies k = \\ln 2\n$$\n\nWith $P_0=1$ the continuous path is $P(t)=2^{t}$. Doubling time is $1$, and the continuous extension off the integers is unique.",
       "difficulty_level": "2/5",
       "sort_order": 17,
       "placeholder": false,
@@ -705,7 +705,7 @@
         "**D.** → True\n\nForm the relative rate directly from the first derivative.\n\n$$\n\\frac{P'(t)}{P(t)} = \\frac{k P_0 e^{kt}}{P_0 e^{kt}} = k\n$$\n\nThe relative rate is the constant force for every $t$.\n\nSo the statement is True.\n",
         "**E.** → True\n\nSolve $P(T)=c P_0$ for $c>1$ and $k>0$.\n\n$$P_0 e^{kT} = c P_0$$\n\n$$e^{kT} = c$$\n\n$$T = \\frac{\\ln c}{k}>0$$\n\nThe logarithm is one-to-one, so the hitting time is unique.\n\nSo the statement is True.\n"
       ],
-      "solution_overview": "Differentiate the continuous path to read its rate geometry.\n\n$$\nP'(t) = k P_0 e^{kt}\\qquad P''(t)\n$$\n\n$$\n= k^{2} P_0 e^{kt}\n$$\n\nRelative rate equals the constant $k$, while elasticity carries an extra factor of $t$. Hitting a multiple $c P_0$ is a unique log solve when $k>0$.",
+      "solution_overview": "Differentiate the continuous path to read its rate geometry.\n\n$$\nP'(t) = k P_0 e^{kt},\\qquad P''(t) = k^{2} P_0 e^{kt}\n$$\n\nRelative rate equals the constant $k$, while elasticity carries an extra factor of $t$. Hitting a multiple $c P_0$ is a unique log solve when $k>0$.",
       "difficulty_level": "1/5",
       "sort_order": 21,
       "placeholder": false,
@@ -840,7 +840,7 @@
         "**D.** → True\n\nSubstitute $t=H/2$ into the correct decay path.\n\n$$\nm\\!\\left(\\frac{H}{2}\\right) = m_0\\,2^{-(H/2)/H} = m_0\\,2^{-1/2} = \\frac{m_0}{\\sqrt{2}}\n$$\n\nThat is exactly the claimed intermediate level.\n\nSo the statement is True.\n",
         "**E.** → False\n\nThe recovered force $k=-(\\ln 2)/H$ is strictly negative for every $H>0$. The rebuilt model is a decay, not a path with positive continuous force.\n\nA single generic counter-example under the stem letters is enough to reject statement E.\n\nSo the statement is False.\n"
       ],
-      "solution_overview": "Half-life $H$ means the continuous factor over that window equals $\\tfrac12$.\n\n$$\ne^{kH} = \\tfrac12\\implies k\n$$\n\n$$\n= -\\frac{\\ln 2}{H}\n$$\n\nThe rebuilt decay path is $m(t)=m_0\\,2^{-t/H}$. The force is negative, never positive.",
+      "solution_overview": "Half-life $H$ means the continuous factor over that window equals $\\tfrac12$.\n\n$$\ne^{kH} = \\tfrac12\\implies k = -\\frac{\\ln 2}{H}\n$$\n\nThe rebuilt decay path is $m(t)=m_0\\,2^{-t/H}$. The force is negative, never positive.",
       "difficulty_level": "5/5",
       "sort_order": 25,
       "placeholder": false,
@@ -1074,7 +1074,7 @@
         "**D.** → True\n\nSkip one intermediate year in the geometric sequence.\n\n$$\n\\frac{Q(3)}{Q(1)} = \\frac{Q_0(1+r)^{3}}{Q_0(1+r)} = (1+r)^{2}\n$$\n\nThe two-step ratio is the square of the one-year factor.\n\nSo the statement is True.\n",
         "**E.** → False\n\nIf the net rate is the letter $r$, the one-year growth rate in percent is $100r$. The expression $100(1+r)$ equals $100$ plus $100r$, which counts the whole multiplier in percent rather than the net growth. For example $r=0.05$ gives $5\\%$ growth, not $105$.\n\nSo the statement is False.\n"
       ],
-      "solution_overview": "Read the discrete factor from the first successive ratio on the geometric table.\n\n$$\n1+r = \\frac{Q(1)}{Q(0)}\\qquad k\n$$\n\n$$\n= \\ln(1+r)\n$$\n\n$$\n= \\ln\\frac{Q(1)}{Q(0)}\n$$\n\nMulti-year ratios are powers of $1+r$. The percent growth rate is $100r$, not $100(1+r)$.",
+      "solution_overview": "Read the discrete factor from the first successive ratio on the geometric table.\n\n$$\n1+r = \\frac{Q(1)}{Q(0)},\\qquad k = \\ln(1+r)\n$$\n\n$$\n= \\ln\\frac{Q(1)}{Q(0)}\n$$\n\nMulti-year ratios are powers of $1+r$. The percent growth rate is $100r$, not $100(1+r)$.",
       "difficulty_level": "2/5",
       "sort_order": 32,
       "placeholder": false,
@@ -1409,7 +1409,7 @@
         "**D.** → True\n\nReplace the $t=2$ entry by $P_0 e^{2k}$. Then\n\n$$\n\\frac{P(1)}{P(0)} = e^{k}\\qquad \\frac{P(2)}{P(1)} = e^{k}\n$$\n\nand the three points lie on the unique continuous exponential through them. Pure structure is restored.\n\nSo the statement is True.\n",
         "**E.** → False\n\nThe displayed $t=2$ entry is $P_0 e^{k}+P_0 e^{2k}$. Compare with $P_0 e^{2k}$.\n\n$$\nP_0 e^{k}+P_0 e^{2k} = P_0 e^{2k}\\iff e^{k} = 0\n$$\n\nwhich never holds. The displayed entry is not equal to $P_0 e^{2k}$ for any $k$.\n\nA single generic counter-example under the stem letters is enough to reject statement E.\n\nSo the statement is False.\n"
       ],
-      "solution_overview": "Successive ratios diagnose pure exponential structure. The displayed table uses\n\n$$\nP(0) = P_0\\qquad P(1)\n$$\n\n$$\n= P_0 e^{k}\\qquad P(2)\n$$\n\n$$\n= P_0 e^{k}+P_0 e^{2k}\n$$\n\nso the second ratio fails to equal $e^{k}$. Correcting the $t=2$ entry to $P_0 e^{2k}$ restores the model.",
+      "solution_overview": "Successive ratios diagnose pure exponential structure. The displayed table uses\n\n$$\nP(0) = P_0,\\qquad P(1) = P_0 e^{k},\\qquad P(2) = P_0 e^{k}+P_0 e^{2k}\n$$\n\nso the second ratio fails to equal $e^{k}$. Correcting the $t=2$ entry to $P_0 e^{2k}$ restores the model.",
       "difficulty_level": "2/5",
       "sort_order": 42,
       "placeholder": false,
@@ -1540,7 +1540,7 @@
       "tactical_explanations": [
         "**A.** → True\n\nChange of base rewrites the claimed logarithm as a ratio of natural logs.\n\n$$\\log_{2}8 = \\frac{\\ln 8}{\\ln 2}$$\n\nBecause $8=2^{3}$, the power law collapses the value at once.\n\n$$\\log_{2}(2^{3}) = 3$$\n\nThe table's ratio for pair $P$ is therefore exactly $3$, matching $\\log_{2}8$.\n\nThe table's approximate ratio $2.0794/0.6931\\approx 3.000$ matches the exact integer.\n\nEvaluate by the defining power identity\n\n$$2^{3}=8$$\n\n$$\\log_{2}8=3$$\n\n$$\n\\dfrac{P(t+1)}{P(t)}=\\dfrac{P_0 e^{k(t+1)}}{P_0 e^{kt}} =e^{k}\n$$\n\nEvaluate by the defining power identity\n\nSo the statement is True.\n",
         "**B.** → True\n\nApply the same change-of-base identity to pair $Q$.\n\n$$\\log_{3}9 = \\frac{\\ln 9}{\\ln 3}$$\n\nRewrite $9$ as a pure power of the base.\n\n$$9=3^{2}$$\n\n$$9=9$$\n\n$$\n\\log_{3}(3^{2}) = 2\n$$\n\nThe table ratio equals $2$, so the claim holds.\n\nThe table's approximate ratio $2.1972/1.0986\\approx 2.000$ matches the exact integer.\n\nEvaluate by the defining power identity\n\n$$3^{2}=9$$\n\n$$\\log_{3}9=2$$\n\nEvaluate by the defining power identity\n\nSo the statement is True.\n",
-        "**C.** → False\n\nThe exponential $b^{t}$ accepts every real exponent, while $\\log_{b}$ accepts only positive arguments. Their natural domains are therefore complementary:\n\n$$\\operatorname{dom}(b^{\\,\\cdot\\,}) = \\mathbb{R},\\qquad\\operatorname{dom}(\\log_{b})$$\n\n$$= (0,\\infty)$$\n\nThey are inverse partners, but they do not share one common domain. The claim fails.\n\nWriting $\\mathbb{R}$ versus $(0,\\infty)$ records the complementary domains of the inverse pair.\n\nSo the statement is False.\n",
+        "**C.** → False\n\nThe exponential $b^{t}$ accepts every real exponent, while $\\log_{b}$ accepts only positive arguments. Their natural domains are therefore complementary:\n\n$$\n\\operatorname{dom}(b^{\\,\\cdot\\,}) = \\mathbb{R},\\qquad \\operatorname{dom}(\\log_{b}) = (0,\\infty)\n$$\n\nThey are inverse partners, but they do not share one common domain. The claim fails.\n\nWriting $\\mathbb{R}$ versus $(0,\\infty)$ records the complementary domains of the inverse pair.\n\nSo the statement is False.\n",
         "**D.** → False\n\nChange of base is an identity on the full admissible set $a>0$ and $b>0$ with $b\\neq 1$. Integer status of $a$ or $b$ is irrelevant. For instance the integer pair $(8,2)$ already satisfies\n\n$$\n\\frac{\\ln 8}{\\ln 2} = 3 = \\log_{2}8\n$$\n\nThe identity does not fail on integers; it continues to hold.\n\nNon-integer pairs such as $(e^{2},e)$ also satisfy the same change-of-base identity.\n\nSo the statement is False.\n",
         "**E.** → False\n\nPair $P$ was already evaluated as $\\log_{2}8=3$. Compare that value with the claimed threshold $2$.\n\n$$3>2$$\n\nThe ratio is strictly larger than $2$, not strictly less, so the statement is false.\n\nReading the table ratio for pair $P$ confirms the same integer height $3.000$.\n\nSo the statement is False.\n"
       ],
@@ -3158,7 +3158,7 @@
         "**D.** → False\n\nRead the two force parameters directly from the stem and compare them.\n\n$$\n\\alpha = 0.05\\qquad\\beta = 0.025\n$$\n\n$$\\beta-\\alpha = 0.025-0.05$$\n\n$$\n0.025 - 0.05 = -0.025 = -0.025<0\n$$\n\nThe late force is strictly smaller than the early force, not larger.\n\nThe sign of the difference $\\beta-\\alpha$ is the whole claim.\n\n$$\\mathrm{sgn}(\\beta-\\alpha) = -1$$\n\nSo the statement is False.\n",
         "**E.** → False\n\nEvaluate the fund at the kink and set it beside the target.\n\n$$\nf(\\tau) = 2A = 2000\\qquad M = 4A = 4000\n$$\n\n$$f(\\tau)-M = 2000-4000$$\n\n$$\n2000 - 4000 = -2000 = -2000<0\n$$\n\nAt the switch the fund is still only halfway (in log scale) to the target.\n\nHalfway in the log scale means another full doubling remains after the kink.\n\n$$\n\\frac{M}{f(\\tau)} = \\frac{4A}{2A} = 2\n$$\n\nSo the statement is False.\n"
       ],
-      "solution_overview": "The early force doubles the fund exactly at the switch, because $\\alpha\\tau=\\ln 2$.\n\n$$\nf(\\tau) = A e^{\\alpha\\tau}\n$$\n\n$$\n= 2A\\qquad\\tau\n$$\n\n$$\n= \\frac{\\ln 2}{\\alpha}\\approx13.8629\n$$\n\nThe target $M=4A$ still lies above the kink, so the hit finishes under $\\beta$:\n\n$$\nt_{\\mathrm{hit}} = \\tau+\\frac{\\ln 2}{\\beta}\\approx41.5888\\qquad\\bar k\n$$\n\n$$\n= \\frac{\\ln 4}{t_{\\mathrm{hit}}}\\approx0.033333\n$$\n\nA constant-$\\alpha$ shortcut would instead report $t_{\\alpha}=\\ln 4/\\alpha\\approx27.7259$.",
+      "solution_overview": "The early force doubles the fund exactly at the switch, because $\\alpha\\tau=\\ln 2$.\n\n$$\nf(\\tau) = A e^{\\alpha\\tau} = 2A,\\qquad \\tau = \\frac{\\ln 2}{\\alpha}\\approx13.8629\n$$\n\nThe target $M=4A$ still lies above the kink, so the hit finishes under $\\beta$:\n\n$$\nt_{\\mathrm{hit}} = \\tau+\\frac{\\ln 2}{\\beta}\\approx41.5888,\\qquad \\bar k = \\frac{\\ln 4}{t_{\\mathrm{hit}}}\\approx0.033333\n$$\n\nA constant-$\\alpha$ shortcut would instead report $t_{\\alpha}=\\ln 4/\\alpha\\approx27.7259$.",
       "difficulty_level": "5/5",
       "sort_order": 94,
       "placeholder": false,
@@ -3192,7 +3192,7 @@
         "**D.** → False\n\nThe correct meeting formula places the larger initial level in the numerator of the log ratio.\n\n$$t^{*} = \\frac{\\ln(B_0/A_0)}{k_A-k_B}$$\n\n$$\\approx 20.2733$$\n\nSwapping the initials flips the sign of the log and sends the candidate time negative.\n\n$$\\frac{\\ln(A_0/B_0)}{k_A-k_B}\\approx-20.2733$$\n\nThe claimed formula is the negative of the true meeting time, not the meeting time itself.\n\nSo the statement is False.\n",
         "**E.** → False\n\nOver a fixed horizon the log-increment is exactly force times time.\n\n$$\n\\ln\\frac{A(40)}{A_0} = k_A\\cdot40 = 1.2\n$$\n\n$$\n\\ln\\frac{B(40)}{B_0} = k_B\\cdot40 = 0.4\n$$\n\nThe two log-increments differ because the forces differ.\n\n$$1.2\\neq0.4$$\n\nEquality of $\\ln(A/A_0)$ and $\\ln(B/B_0)$ therefore fails on $[0,40]$.\n\nSo the statement is False.\n"
       ],
-      "solution_overview": "Both paths are pure exponentials on the drawn window.\n\n$$\nA(t) = 1000 e^{0.03 t}\\qquad B(t)\n$$\n\n$$\n= 1500 e^{0.01 t}\n$$\n\nEquating levels and taking logs recovers a unique crossing,\n\n$$\nt^{*} = \\frac{\\ln(B_0/A_0)}{k_A-k_B}\n$$\n\n$$\n= \\frac{\\ln 1.5}{0.02}\\approx20.2733\n$$\n\nand the horizon evaluations are $A(40)\\approx3320.12$, $B(40)\\approx2237.74$.",
+      "solution_overview": "Both paths are pure exponentials on the drawn window.\n\n$$\nA(t) = 1000 e^{0.03 t},\\qquad B(t) = 1500 e^{0.01 t}\n$$\n\nEquating levels and taking logs recovers a unique crossing,\n\n$$\nt^{*} = \\frac{\\ln(B_0/A_0)}{k_A-k_B}\n$$\n\n$$\n= \\frac{\\ln 1.5}{0.02}\\approx20.2733\n$$\n\nand the horizon evaluations are $A(40)\\approx3320.12$, $B(40)\\approx2237.74$.",
       "difficulty_level": "5/5",
       "sort_order": 95,
       "placeholder": false,
@@ -3295,7 +3295,7 @@
         "**D.** → False\n\nEvaluate the stock at calendar time $t=2$ under the pinned parameters.\n\n$$\nN(2) = A e^{2k} = e\\cdot e^{2\\cdot(1/2)} = e\\cdot e = e^{2}\n$$\n\nSet that beside the initial level.\n\n$$e^{2}\\neq A = e$$\n\nAfter two years the stock is $e^{2}$, not $A$.\n\nSo the statement is False.\n",
         "**E.** → False\n\nAdd the two constrained logarithms as they stand.\n\n$$\n\\ln(\\ln A)+\\ln k = 0+(-\\ln 2) = -\\ln 2\n$$\n\n$$-\\ln 2\\neq0$$\n\nThe sum equals $-\\ln 2$, not zero.\n\nThe nonzero sum is exactly the force-constraint log.\n\n$$\\ln(\\ln A)+\\ln k = -\\ln 2$$\n\nSo the statement is False.\n"
       ],
-      "solution_overview": "The nested-log constraints unwind at sight.\n\n$$\n\\ln(\\ln A) = 0\\implies\\ln A\n$$\n\n$$\n= 1\\implies A\n$$\n\n$$\n= e\n$$\n\n$$\n\\ln k = -\\ln 2\\implies k\n$$\n\n$$\n= e^{-\\ln 2}\n$$\n\n$$\n= \\tfrac12\n$$\n\nWith those parameters, doubling takes $t_{\\times2}=\\ln2/k=2\\ln2\\approx1.3863$, and $N(2)=A e^{2k}=e^{2}$.",
+      "solution_overview": "The nested-log constraints unwind at sight.\n\n$$\n\\ln(\\ln A) = 0\\implies\\ln A\n$$\n\n$$\n= 1\\implies A = e\n$$\n\n$$\n\\ln k = -\\ln 2\\implies k = e^{-\\ln 2}\n$$\n\n$$\n= \\tfrac12\n$$\n\nWith those parameters, doubling takes $t_{\\times2}=\\ln2/k=2\\ln2\\approx1.3863$, and $N(2)=A e^{2k}=e^{2}$.",
       "difficulty_level": "5/5",
       "sort_order": 98,
       "placeholder": false,
@@ -3362,7 +3362,7 @@
         "**D.** → False\n\nBy construction $M=e\\cdot P_0$, so the log-ratio is $1$.\n\n$$\n\\ln\\frac{M}{P_0} = \\ln e = 1\n$$\n\nThe force is the much smaller number $e^{-2}$.\n\n$$1\\neq k = e^{-2}$$\n\nThe log-ratio is not equal to $k$.\n\nSo the statement is False.\n",
         "**E.** → False\n\nThe equivalent discrete annual base is the exponential of the force.\n\n$$e^{k} = e^{e^{-2}}$$\n\nCompare with the claimed base $e^{2}$.\n\n$$e^{e^{-2}}\\neq e^{2}$$\n\nThe discrete base is far smaller than $e^{2}$.\n\nSo the statement is False.\n"
       ],
-      "solution_overview": "The log constraints fix both parameters at sight.\n\n$$\n\\ln P_0 = 3\\implies P_0\n$$\n\n$$\n= e^{3}\\qquad\\ln k\n$$\n\n$$\n= -2\\implies k\n$$\n\n$$\n= e^{-2}\n$$\n\nOne $e$-fold above $P_0$ means $M/P_0=e$, so the hitting time is\n\n$$\nt = \\frac{\\ln(M/P_0)}{k}\n$$\n\n$$\n= \\frac{1}{k}\n$$\n\n$$\n= e^{2}\\approx7.3891\n$$",
+      "solution_overview": "The log constraints fix both parameters at sight.\n\n$$\n\\ln P_0 = 3\\implies P_0 = e^{3},\\qquad \\ln k = -2\\implies k = e^{-2}\n$$\n\nOne $e$-fold above $P_0$ means $M/P_0=e$, so the hitting time is\n\n$$\nt = \\frac{\\ln(M/P_0)}{k}\n$$\n\n$$\n= \\frac{1}{k}\n$$\n\n$$\n= e^{2}\\approx7.3891\n$$",
       "difficulty_level": "5/5",
       "sort_order": 100,
       "placeholder": false,
@@ -3463,7 +3463,7 @@
         "**D.** → False\n\nAggregate log-GDP growth over the horizon is simply $gt$.\n\n$$\n\\Delta\\ln Y = gt = 0.03\\cdot20 = 0.6\n$$\n\nThe claim asserts that this rise is strictly less than $0.5$.\n\n$$0.6\\not<0.5$$\n\nLog GDP rises by $0.6$, which fails the claimed bound.\n\nSo the statement is False.\n",
         "**E.** → False\n\nCompare the per-capita force with $0.025$.\n\n$$k_y = 0.02$$\n\n$$0.02\\le0.025$$\n\nThe per-capita force equals $0.02$, so it is not strictly larger than $0.025$.\n\nThe shortfall below $0.025$ is half a percentage point of force.\n\n$$0.025-0.02 = 0.005>0$$\n\nSo the statement is False.\n"
       ],
-      "solution_overview": "Per capita is the quotient $y=Y/N$, so logs turn growth into a difference of forces.\n\n$$\n\\ln y(t) = \\ln(Y_0/N_0)+(g-p)t\\qquad k_y\n$$\n\n$$\n= g-p\n$$\n\n$$\n= 0.02\n$$\n\nOver the horizon $t=20$ one therefore has $\\Delta\\ln y=0.4$, while aggregate log-GDP rises by $gt=0.6$ and log-population by $pt=0.2$.",
+      "solution_overview": "Per capita is the quotient $y=Y/N$, so logs turn growth into a difference of forces.\n\n$$\n\\ln y(t) = \\ln(Y_0/N_0)+(g-p)t,\\qquad k_y = g-p\n$$\n\n$$\n= 0.02\n$$\n\nOver the horizon $t=20$ one therefore has $\\Delta\\ln y=0.4$, while aggregate log-GDP rises by $gt=0.6$ and log-population by $pt=0.2$.",
       "difficulty_level": "5/5",
       "sort_order": 103,
       "placeholder": false,
@@ -3497,7 +3497,7 @@
         "**D.** → True\n\nPlace the continuous hitting clock beside the twenty-year threshold.\n\n$$t_c\\approx13.8629$$\n\n$$13.8629<20$$\n\nContinuous hitting finishes strictly inside twenty years.\n\nThe margin inside twenty years is more than six years.\n\n$$20-t_c\\approx6.137>0$$\n\nSo the statement is True.\n",
         "**E.** → False\n\nThe inequality between the clocks runs the other way.\n\n$$t_d\\approx17.6730>t_c\\approx13.8629$$\n\nDiscrete compounding is the slower of the two routes to the target, so it does not win the race.\n\nWinning the race would require $t_d<t_c$, which the clocks refuse.\n\n$$t_d-t_c\\approx3.810>0$$\n\nSo the statement is False.\n"
       ],
-      "solution_overview": "Continuous force $k=0.05$ and discrete base $a=1.04$ chase the same doubling target from $P=1000$.\n\n$$\nt_c = \\frac{\\ln 2}{k}\\approx13.8629\\qquad t_d\n$$\n\n$$\n= \\frac{\\ln 2}{\\ln a}\\approx17.6730\n$$\n\nThe one-year multipliers already differ, $e^{0.05}\\approx1.05127\\neq1.04$, so the hitting clocks cannot coincide.",
+      "solution_overview": "Continuous force $k=0.05$ and discrete base $a=1.04$ chase the same doubling target from $P=1000$.\n\n$$\nt_c = \\frac{\\ln 2}{k}\\approx13.8629,\\qquad t_d = \\frac{\\ln 2}{\\ln a}\\approx17.6730\n$$\n\nThe one-year multipliers already differ, $e^{0.05}\\approx1.05127\\neq1.04$, so the hitting clocks cannot coincide.",
       "difficulty_level": "5/5",
       "sort_order": 104,
       "placeholder": false,
@@ -3565,7 +3565,7 @@
         "**D.** → False\n\nElasticity $b$ and the stock force $k$ live in different models.\n\n$$\nb = 1.4\\qquad k = 0.04\n$$\n\n$$b\\neq k$$\n\nEquating demand elasticity with the stock force is a category error.\n\nSo the statement is False.\n",
         "**E.** → False\n\nLog recovery of the stock force over the horizon returns exactly the tabulated $k$.\n\n$$\n\\frac{1}{10}\\ln\\frac{N(10)}{N_0} = \\frac{1}{10}\\cdot0.4 = 0.04\n$$\n\n$$0.04 = k$$\n\nThe recovered force does not differ from $0.04$.\n\nThe recovery identity is the definition of continuous force over the horizon.\n\n$$k = \\frac{1}{t}\\ln\\frac{N(t)}{N_0}$$\n\nSo the statement is False.\n"
       ],
-      "solution_overview": "Demand is $\\ln Q=5-1.4\\ln P$ at price $P=3$, while the stock is $N(t)=200 e^{0.04 t}$.\n\n$$\nQ = e^{5-1.4\\ln 3}\\approx31.8789\\qquad|\\varepsilon|\n$$\n\n$$\n= b\n$$\n\n$$\n= 1.4\n$$\n\nAt horizon $t=10$ the stock reaches $N(10)=200 e^{0.4}\\approx298.36$, already above $1.4 N_0=280$.",
+      "solution_overview": "Demand is $\\ln Q=5-1.4\\ln P$ at price $P=3$, while the stock is $N(t)=200 e^{0.04 t}$.\n\n$$\nQ = e^{5-1.4\\ln 3}\\approx31.8789,\\qquad |\\varepsilon| = b\n$$\n\n$$\n= 1.4\n$$\n\nAt horizon $t=10$ the stock reaches $N(10)=200 e^{0.4}\\approx298.36$, already above $1.4 N_0=280$.",
       "difficulty_level": "5/5",
       "sort_order": 106,
       "placeholder": false,
@@ -3599,7 +3599,7 @@
         "**D.** → False\n\nSubstituting the solved $x$ recovers the original right-hand side $2^5$, not $2^{6}$.\n\n$$8^{5/3}=(2^{3})^{5/3}$$\n\n$$\n8^{5/3}=(8)^{5/3} = 2^{5}\n$$\n\n$$\n2^{5} = 32\\qquad 2^{5+1} = 64\n$$\n\nSubstitution yields $2^{5}$, not $2^{5+1}$.\n\nSo the statement is False.\n",
         "**E.** → False\n\nCompare $\\log_2(8)$ with the threshold $4$.\n\n$$\\log_2(8) = 3$$\n\n$$3\\le 4$$\n\nThe logarithm equals $3$, which is not strictly larger than $4$.\n\nThe gap below $4$ is a full unit of logarithm.\n\n$$4-3 = 1>0$$\n\nSo the statement is False.\n"
       ],
-      "solution_overview": "Change of base turns the power equation into a linear relation for the unknown exponent.\n\n$$\n\\log_2(8) = 3\\qquad 8^x\n$$\n\n$$\n= 2^5\\implies x\\log_2 8\n$$\n\n$$\n= 5\\implies x\n$$\n\n$$\n= \\frac{5}{3}\n$$\n\nThe solved exponent is $5/3\\approx1.6667$, which is smaller than both $5$ and $4$.",
+      "solution_overview": "Change of base turns the power equation into a linear relation for the unknown exponent.\n\n$$\n\\log_2(8) = 3,\\qquad 8^x = 2^5\\implies x\\log_2 8\n$$\n\n$$\n= 5\\implies x = \\frac{5}{3}\n$$\n\nThe solved exponent is $5/3\\approx1.6667$, which is smaller than both $5$ and $4$.",
       "difficulty_level": "5/5",
       "sort_order": 107,
       "placeholder": false,
@@ -3903,7 +3903,7 @@
         "**D.** → True\n\nAsk when the continuous path first reaches the annual model's terminal balance.\n\n$$\nt^{*} = \\frac{\\ln(A_d/P)}{r} = \\frac{\\ln(1.05)^{10}}{0.05}\\approx9.758\n$$\n\n$$9.758<10$$\n\nContinuous compounding hits the annual terminal strictly before year ten.\n\nSo the statement is True.\n",
         "**E.** → True\n\nThe same horizon comparison already shows a strict gap of levels.\n\n$$A_c-A_d\\approx1648.72-1628.89 = 19.83>0$$\n\nContinuous balance exceeds annual balance by a positive amount.\n\nThe same strict gap appears at every positive horizon, not only at $t=10$.\n\n$$e^{rt}>(1+r)^{t}\\qquad(r>0,\\,t>0)$$\n\nSo the statement is True.\n"
       ],
-      "solution_overview": "At horizon $t=10$ the two compounding conventions give\n\n$$\nA_c = 1000 e^{0.5}\\approx1648.72\\qquad A_d\n$$\n\n$$\n= 1000(1.05)^{10}\\approx1628.89\n$$\n\nContinuous log-return is exactly $rt=0.5$, while the average force implied by $A_d$ is $\\ln(1.05)\\approx0.04879$. Continuous time to match $A_d$ is $t^{*}=\\ln(A_d/P)/r\\approx9.758$.",
+      "solution_overview": "At horizon $t=10$ the two compounding conventions give\n\n$$\nA_c = 1000 e^{0.5}\\approx1648.72,\\qquad A_d = 1000(1.05)^{10}\\approx1628.89\n$$\n\nContinuous log-return is exactly $rt=0.5$, while the average force implied by $A_d$ is $\\ln(1.05)\\approx0.04879$. Continuous time to match $A_d$ is $t^{*}=\\ln(A_d/P)/r\\approx9.758$.",
       "difficulty_level": "5/5",
       "sort_order": 116,
       "placeholder": false,
@@ -3938,7 +3938,7 @@
         "**D.** → False\n\nA single counter-example kills the claimed sum rule.\n\n$$\nu = v = e\n$$\n\n$$\n\\ln(u+v) = \\ln(2e) = \\ln2+1\n$$\n\n$$\\ln u+\\ln v = 2$$\n\nBecause $\\ln2+1\\neq2$, logs do not linearise sums.\n\nSo the statement is False.\n",
         "**E.** → False\n\nPowering multiplies the exponents; it does not add $k$ to $t$.\n\n$$(e^{k})^{t} = e^{kt}$$\n\n$$e^{kt}\\neq e^{k+t}$$\n\nThe claimed identity confuses multiplication of exponents with addition.\n\nConcrete check for the rewritten claim. Left $(e^2)^3=e^6$, right $e^5$; they disagree.\n\nSo the statement is False.\n"
       ],
-      "solution_overview": "Three standard inverse and product identities survive for every real force and every positive level,\n\n$$\n\\ln(e^{kt}) = kt\\qquad e^{\\ln u}\n$$\n\n$$\n= u\\qquad\\ln(uv)\n$$\n\n$$\n= \\ln u+\\ln v\n$$\n\nwhile the sum rule $\\ln(u+v)=\\ln u+\\ln v$ and the false powering rule $(e^{k})^{t}=e^{k+t}$ both fail.",
+      "solution_overview": "Three standard inverse and product identities survive for every real force and every positive level,\n\n$$\n\\ln(e^{kt}) = kt,\\qquad e^{\\ln u} = u,\\qquad \\ln(uv) = \\ln u+\\ln v\n$$\n\nwhile the sum rule $\\ln(u+v)=\\ln u+\\ln v$ and the false powering rule $(e^{k})^{t}=e^{k+t}$ both fail.",
       "difficulty_level": "5/5",
       "sort_order": 117,
       "placeholder": false,
@@ -3971,7 +3971,7 @@
         "**D.** → False\n\nNatural log $\\ln(2-k)$ needs a positive argument.\n\n$$2-k>0\\iff k<2$$\n\nThe domain inequality runs $k<2$, not $k>2$.\n\n$$k>2$$\n\n$$2-k<0$$\n\nRequiring $k>2$ would make the logarithm undefined over the reals.\n\nSo the statement is False.\n",
         "**E.** → False\n\nAt time zero the exponential stock equals its level parameter.\n\n$$\nN(0) = A e^{0} = A = e\n$$\n\n$$e\\neq1$$\n\nInitial stock equals $e$, not $1$.\n\nThe exponential factor at time zero is identically one.\n\n$$e^{k\\cdot0} = 1$$\n\nSo the statement is False.\n"
       ],
-      "solution_overview": "Real logarithms $\\ln(A-1)$ and $\\ln(2-k)$ require the side-conditions $A>1$ and $k<2$.\n\nThe calibrated pair $A=e$ and $k=1/2$ obeys both domain constraints, while the side-condition logs themselves are not specially pinned:\n\n$$\n\\ln(A-1) = \\ln(e-1)\\neq0\\qquad N(0)\n$$\n\n$$\n= A\n$$\n\n$$\n= e\\neq1\n$$\n\nThose two evaluations already settle the false claims about $\\ln(A-1)=0$ and $N(0)=1$.",
+      "solution_overview": "Real logarithms $\\ln(A-1)$ and $\\ln(2-k)$ require the side-conditions $A>1$ and $k<2$.\n\nThe calibrated pair $A=e$ and $k=1/2$ obeys both domain constraints, while the side-condition logs themselves are not specially pinned:\n\n$$\n\\ln(A-1) = \\ln(e-1)\\neq0,\\qquad N(0) = A\n$$\n\n$$\n= e\\neq1\n$$\n\nThose two evaluations already settle the false claims about $\\ln(A-1)=0$ and $N(0)=1$.",
       "difficulty_level": "5/5",
       "sort_order": 118,
       "placeholder": false,
@@ -4038,7 +4038,7 @@
         "**D.** → True\n\nSubstitute the recovered level $A=e^{2}$ back into the outer nested log.\n\n$$\n\\ln(\\ln e^{2}) = \\ln(2) = \\ln 2\n$$\n\nThe given constraint $\\ln(\\ln A)=\\ln 2$ is recovered exactly.\n\nThe outer log sees only $\\ln A=2$, whose log is $\\ln2$.\n\n$$\\ln2 = \\ln2$$\n\nSo the statement is True.\n",
         "**E.** → True\n\nMultiply the recovered level and force.\n\n$$\nA = e^{2}\\qquad k = e^{-1}\n$$\n\n$$\nA k = e^{2}\\cdot e^{-1} = e\n$$\n\nThe product collapses to $e$ exactly.\n\nThe powers of $e$ add in the exponent.\n\n$$\ne^{2-1} = e^{1} = e\n$$\n\nSo the statement is True.\n"
       ],
-      "solution_overview": "Unwind both nested-log constraints.\n\n$$\n\\ln(\\ln A) = \\ln2\\implies\\ln A\n$$\n\n$$\n= 2\\implies A\n$$\n\n$$\n= e^{2}\n$$\n\n$$\n\\ln(\\ln(1/k)) = 0\\implies\\ln(1/k)\n$$\n\n$$\n= 1\\implies k\n$$\n\n$$\n= e^{-1}\n$$\n\nHitting $A$ from $N(0)=1$ then takes $t=\\ln A/k=2e\\approx5.4366$, and the product $Ak=e$.",
+      "solution_overview": "Unwind both nested-log constraints.\n\n$$\n\\ln(\\ln A) = \\ln2\\implies\\ln A\n$$\n\n$$\n= 2\\implies A = e^{2}\n$$\n\n$$\n\\ln(\\ln(1/k)) = 0\\implies\\ln(1/k)\n$$\n\n$$\n= 1\\implies k = e^{-1}\n$$\n\nHitting $A$ from $N(0)=1$ then takes $t=\\ln A/k=2e\\approx5.4366$, and the product $Ak=e$.",
       "difficulty_level": "5/5",
       "sort_order": 120,
       "placeholder": false,
@@ -4104,7 +4104,7 @@
         "**D.** → False\n\nCompare the meeting time with the end of the observation window.\n\n$$t^{*}\\approx20.2733$$\n\n$$20.2733>5$$\n\nThe crossing lies after $t=5$, not strictly before it.\n\nSo the statement is False.\n",
         "**E.** → False\n\nRead the second observation column directly.\n\n$$A(5)\\approx1161.83\\qquad B(5)\\approx1576.91$$\n\n$$A(5)-B(5)\\approx-415.08<0$$\n\nAt $t=5$, series $B$ is still larger, so $A$ does not yet exceed $B$.\n\nSeries $B$ still leads by more than four hundred units at $t=5$.\n\n$$B(5)/A(5)\\approx1.357>1$$\n\nSo the statement is False.\n"
       ],
-      "solution_overview": "Two-point log recovery on each series rebuilds the forces\n\n$$\nk_A = \\frac{\\ln(1161.83/1000)}{5}\\approx0.03\\qquad k_B\n$$\n\n$$\n= \\frac{\\ln(1576.91/1500)}{5}\\approx0.01\n$$\n\nThe implied meeting time is\n\n$$\nt^{*} = \\frac{\\ln(B_0/A_0)}{k_A-k_B}\n$$\n\n$$\n= \\frac{\\ln 1.5}{0.02}\\approx20.2733\n$$\n\nwhich lies after the observation window; at $t=5$ one still has $B>A$.",
+      "solution_overview": "Two-point log recovery on each series rebuilds the forces\n\n$$\nk_A = \\frac{\\ln(1161.83/1000)}{5}\\approx0.03,\\qquad k_B = \\frac{\\ln(1576.91/1500)}{5}\\approx0.01\n$$\n\nThe implied meeting time is\n\n$$\nt^{*} = \\frac{\\ln(B_0/A_0)}{k_A-k_B}\n$$\n\n$$\n= \\frac{\\ln 1.5}{0.02}\\approx20.2733\n$$\n\nwhich lies after the observation window; at $t=5$ one still has $B>A$.",
       "difficulty_level": "5/5",
       "sort_order": 122,
       "placeholder": false,

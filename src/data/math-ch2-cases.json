@@ -4766,7 +4766,7 @@
       ],
       "difficulty_level": "5/5",
       "sort_order": 149,
-      "solution_overview": "The scale is fixed at the positive value $x=16$. Principal real roots and the exponent laws $x^{r}x^{s}=x^{r+s}$ and $(x^{r})^{s}=x^{rs}$ are in force; negative exponents mean reciprocals.\n\n$$\nx^{1/2} = 4,\\qquad x^{1/4}\n$$\n\n$$\n= 2,\\qquad x^{-1/2}\n$$\n\n$$\n= \\dfrac{1}{4},\\qquad x^{3/4}\n$$\n\n$$\n= 8\n$$\n\nAlso $x^{0}=1$ for this nonzero $x$.",
+      "solution_overview": "The scale is fixed at the positive value $x=16$. Principal real roots and the exponent laws $x^{r}x^{s}=x^{r+s}$ and $(x^{r})^{s}=x^{rs}$ are in force; negative exponents mean reciprocals.\n\n$$\nx^{1/2} = 4,\\qquad x^{1/4} = 2,\\qquad x^{-1/2} = \\dfrac{1}{4},\\qquad x^{3/4} = 8\n$$\n\nAlso $x^{0}=1$ for this nonzero $x$.",
       "placeholder": false
     },
     {
@@ -4894,7 +4894,7 @@
       ],
       "difficulty_level": "5/5",
       "sort_order": 153,
-      "solution_overview": "The scale is fixed at the positive value $x=81$. Principal real roots and the exponent laws $x^{r}x^{s}=x^{r+s}$ and $(x^{r})^{s}=x^{rs}$ are in force; negative exponents mean reciprocals.\n\n$$\nx^{1/2} = 9,\\qquad x^{1/4}\n$$\n\n$$\n= 3,\\qquad x^{-1/2}\n$$\n\n$$\n= \\dfrac{1}{9},\\qquad x^{3/4}\n$$\n\n$$\n= 27\n$$\n\nAlso $x^{0}=1$ for this nonzero $x$.",
+      "solution_overview": "The scale is fixed at the positive value $x=81$. Principal real roots and the exponent laws $x^{r}x^{s}=x^{r+s}$ and $(x^{r})^{s}=x^{rs}$ are in force; negative exponents mean reciprocals.\n\n$$\nx^{1/2} = 9,\\qquad x^{1/4} = 3,\\qquad x^{-1/2} = \\dfrac{1}{9},\\qquad x^{3/4} = 27\n$$\n\nAlso $x^{0}=1$ for this nonzero $x$.",
       "placeholder": false
     },
     {
