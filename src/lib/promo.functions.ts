@@ -9,7 +9,7 @@ const MAX_ATTEMPTS_PER_IP = 10;
 const ATTEMPT_WINDOW_MS = 24 * 60 * 60 * 1000;
 
 const MIGRATION_HINT =
-  "Promocode tables are missing in Supabase. Run supabase/migrations/20260829210000_promocodes.sql and supabase/migrations/20260907180000_discount_promocodes.sql in the Supabase SQL Editor, then reload.";
+  "Promocode tables are missing in Lovable Cloud. In Lovable chat ask to apply supabase/migrations/20260829210000_promocodes.sql and supabase/migrations/20260907180000_discount_promocodes.sql (or paste them into More → Cloud → SQL editor), then reload.";
 
 const RedeemInput = z.object({
   code: z.string().min(1).max(64),

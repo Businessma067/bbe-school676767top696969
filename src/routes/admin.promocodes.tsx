@@ -69,11 +69,11 @@ function AdminPromocodesPage() {
           <p className="font-semibold">Could not load promocodes</p>
           <p className="whitespace-pre-wrap text-destructive/90">{error}</p>
           <p className="text-xs text-destructive/80">
-            Open Supabase → SQL Editor, paste{" "}
+            In Lovable, ask chat to apply{" "}
             <code className="rounded bg-destructive/10 px-1">
               supabase/migrations/20260907180000_discount_promocodes.sql
             </code>
-            , run it, then refresh this page.
+            , or paste it into More → Cloud → SQL editor, then refresh this page.
           </p>
         </div>
       ) : null}

@@ -1,4 +1,5 @@
 -- Multi-use 15% discount promocodes (lite + full), usage tracking, expiry.
+-- Apply on Lovable Cloud (chat approval or More → Cloud → SQL editor).
 -- Safe to re-run (idempotent).
 
 ALTER TABLE public.promocodes
