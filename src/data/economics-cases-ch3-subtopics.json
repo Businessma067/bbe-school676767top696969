@@ -2629,11 +2629,11 @@
       true
     ],
     "tactical_explanations": [
-      "TRUE — Check the sentence against the core concept named in the stem, including every scope word.\n\nManufacturing remains secondary even if services accompany sales.\n\nThe statement is true.",
-      "FALSE — Check the sentence against the core concept named in the stem, including every scope word.\n\nManufacturing remains secondary even if services accompany sales.\n\nThe statement is false. A student who matched the topic to \"Advice to clients converts fabrication into tertiary services only\" without checking the rest of the sentence would mark the statement true.\n",
-      "FALSE — Check the sentence against the core concept named in the stem, including every scope word.\n\nComponent fabrication stays secondary whatever raw materials are purchased.\n\nThe statement is false. A student who matched the topic to \"Buying mined metals as inputs turns factory fabrication into primary extraction\" without checking the rest of the sentence would mark the statement true.\n",
-      "FALSE — Check the sentence against the core concept named in the stem, including every scope word.\n\nQuality steps in manufacturing stay secondary activity.\n\nThe statement is false. A student who matched the topic to \"Testing products in the factory becomes a tertiary inspection service only\" without checking the rest of the sentence would mark the statement true.\n",
-      "TRUE — Check the sentence against the core concept named in the stem, including every scope word.\n\nInput from mines does not change the secondary nature of manufacturing.\n\nThe statement is true."
+      "TRUE — Secondary-sector activity processes and manufactures: smelting, assembling, milling, and similar transformation of materials into goods.\n\nManufacturing remains secondary even if services accompany sales.\n\nNothing in the keyed reading contradicts the chapter framing used here, so the claim holds.\n\nThe statement is true.\n",
+      "FALSE — Secondary-sector activity processes and manufactures: smelting, assembling, milling, and similar transformation of materials into goods. Tertiary-sector activity provides services — banking, insurance, coaching, retail, tourism services — rather than extracting materials or manufacturing goods.\n\nManufacturing remains secondary even if services accompany sales.\n\nOne clear counterexample under the right criterion is enough to reject the sentence.\n\nThe statement is false.\n",
+      "FALSE — Primary-sector activity extracts raw materials from nature: farming, fishing, mining, and forestry — not manufacturing and not services. Secondary-sector activity processes and manufactures: smelting, assembling, milling, and similar transformation of materials into goods.\n\nComponent fabrication stays secondary whatever raw materials are purchased.\n\nOnce the defining feature is restored, the assertion falls away.\n\nThe statement is false.\n",
+      "FALSE — Tertiary-sector activity provides services — banking, insurance, coaching, retail, tourism services — rather than extracting materials or manufacturing goods.\n\nQuality steps in manufacturing stay secondary activity.\n\nOne clear counterexample under the right criterion is enough to reject the sentence.\n\nThe statement is false.\n",
+      "TRUE — Primary-sector activity extracts raw materials from nature: farming, fishing, mining, and forestry — not manufacturing and not services. Secondary-sector activity processes and manufactures: smelting, assembling, milling, and similar transformation of materials into goods.\n\nInput from mines does not change the secondary nature of manufacturing.\n\nUnder that classification the assertion describes the situation correctly.\n\nThe statement is true.\n"
     ],
     "difficulty_level": "2/5",
     "tier": "full"
@@ -2658,11 +2658,11 @@
       false
     ],
     "tactical_explanations": [
-      "TRUE — Check the sentence against the core concept named in the stem, including every scope word.\n\nInsurance is a financial service in the tertiary sector.\n\nThe statement is true.",
-      "TRUE — Check the sentence against the core concept named in the stem, including every scope word.\n\nCore insurance operations are tertiary activity.\n\nThe statement is true.",
-      "TRUE — Check the sentence against the core concept named in the stem, including every scope word.\n\nInsurance services are tertiary for all customer types.\n\nThe statement is true.",
-      "FALSE — Map the scenario onto the textbook category first, then test whether the sentence describes that category accurately.\n\nRisk coverage is a financial service, not resource extraction.\n\nThe statement is false. A student who matched the topic to \"Insurance is primary because policies cover basic risks\" without checking the rest of the sentence would mark the statement true.\n",
-      "FALSE — Check the sentence against the core concept named in the stem, including every scope word.\n\nInsurance remains tertiary regardless of what policies cover.\n\nThe statement is false. A student who matched the topic to \"Insurance tied to manufactured goods becomes secondary\" without checking the rest of the sentence would mark the statement true.\n"
+      "TRUE — Tertiary-sector activity provides services — banking, insurance, coaching, retail, tourism services — rather than extracting materials or manufacturing goods.\n\nInsurance is a financial service in the tertiary sector.\n\nNothing in the keyed reading contradicts the chapter framing used here, so the claim holds.\n\nThe statement is true.\n",
+      "TRUE — Tertiary-sector activity provides services — banking, insurance, coaching, retail, tourism services — rather than extracting materials or manufacturing goods.\n\nCore insurance operations are tertiary activity.\n\nNothing in the keyed reading contradicts the chapter framing used here, so the claim holds.\n\nThe statement is true.\n",
+      "TRUE — Tertiary-sector activity provides services — banking, insurance, coaching, retail, tourism services — rather than extracting materials or manufacturing goods.\n\nInsurance services are tertiary for all customer types.\n\nUnder that classification the assertion describes the situation correctly.\n\nThe statement is true.\n",
+      "FALSE — Primary-sector activity extracts raw materials from nature: farming, fishing, mining, and forestry — not manufacturing and not services. Tertiary-sector activity provides services — banking, insurance, coaching, retail, tourism services — rather than extracting materials or manufacturing goods.\n\nRisk coverage is a financial service, not resource extraction.\n\nThe mislabelled category or reversed comparison is enough to reject the claim.\n\nThe statement is false.\n",
+      "FALSE — Secondary-sector activity processes and manufactures: smelting, assembling, milling, and similar transformation of materials into goods. Tertiary-sector activity provides services — banking, insurance, coaching, retail, tourism services — rather than extracting materials or manufacturing goods.\n\nInsurance remains tertiary regardless of what policies cover.\n\nThe mislabelled category or reversed comparison is enough to reject the claim.\n\nThe statement is false.\n"
     ],
     "difficulty_level": "1/5",
     "tier": "full"
@@ -2687,11 +2687,11 @@
       true
     ],
     "tactical_explanations": [
-      "TRUE — Check the sentence against the core concept named in the stem, including every scope word.\n\nRetail distribution is tertiary activity.\n\nThe statement is true.",
-      "TRUE — Check the sentence against the core concept named in the stem, including every scope word.\n\nDesign services can be tertiary; sewing is manufacturing.\n\nThe statement is true.",
-      "TRUE — Check the sentence against the core concept named in the stem, including every scope word.\n\nManufacturing uses imported materials in secondary production.\n\nThe statement is true.",
-      "TRUE — Map the scenario onto the textbook category first, then test whether the sentence describes that category accurately.\n\nSewing garments is secondary manufacturing.\n\nThe statement is true.",
-      "TRUE — Check the sentence against the core concept named in the stem, including every scope word.\n\nGarment production from materials is secondary activity.\n\nThe statement is true."
+      "TRUE — Tertiary-sector activity provides services — banking, insurance, coaching, retail, tourism services — rather than extracting materials or manufacturing goods.\n\nRetail distribution is tertiary activity.\n\nUnder that classification the assertion describes the situation correctly.\n\nThe statement is true.\n",
+      "TRUE — Secondary-sector activity processes and manufactures: smelting, assembling, milling, and similar transformation of materials into goods. Tertiary-sector activity provides services — banking, insurance, coaching, retail, tourism services — rather than extracting materials or manufacturing goods.\n\nDesign services can be tertiary; sewing is manufacturing.\n\nNothing in the keyed reading contradicts the chapter framing used here, so the claim holds.\n\nThe statement is true.\n",
+      "TRUE — Secondary-sector activity processes and manufactures: smelting, assembling, milling, and similar transformation of materials into goods.\n\nManufacturing uses imported materials in secondary production.\n\nNothing in the keyed reading contradicts the chapter framing used here, so the claim holds.\n\nThe statement is true.\n",
+      "TRUE — Secondary-sector activity processes and manufactures: smelting, assembling, milling, and similar transformation of materials into goods.\n\nSewing garments is secondary manufacturing.\n\nThe sentence therefore reports the concept accurately for this item.\n\nThe statement is true.\n",
+      "TRUE — Secondary-sector activity processes and manufactures: smelting, assembling, milling, and similar transformation of materials into goods.\n\nGarment production from materials is secondary activity.\n\nNothing in the keyed reading contradicts the chapter framing used here, so the claim holds.\n\nThe statement is true.\n"
     ],
     "difficulty_level": "1/5",
     "tier": "full"
@@ -2716,11 +2716,11 @@
       false
     ],
     "tactical_explanations": [
-      "TRUE — Check the sentence against the core concept named in the stem, including every scope word.\n\nCoaching is a service classified in the tertiary sector.\n\nThe statement is true.",
-      "TRUE — Check the sentence against the core concept named in the stem, including every scope word.\n\nClient location does not reclassify domestic tertiary services.\n\nThe statement is true.",
-      "TRUE — Check the sentence against the core concept named in the stem, including every scope word.\n\nCore coaching remains tertiary even if goods are sold.\n\nThe statement is true.",
-      "TRUE — Check the sentence against the core concept named in the stem, including every scope word.\n\nPersonal coaching is tertiary-sector activity.\n\nThe statement is true.",
-      "FALSE — Check the sentence against the core concept named in the stem, including every scope word.\n\nDesign services are tertiary; book printing is secondary.\n\nThe statement is false. A student who matched the topic to \"Designing training programmes is secondary manufacturing\" without checking the rest of the sentence would mark the statement true.\n"
+      "TRUE — Tertiary-sector activity provides services — banking, insurance, coaching, retail, tourism services — rather than extracting materials or manufacturing goods.\n\nCoaching is a service classified in the tertiary sector.\n\nUnder that classification the assertion describes the situation correctly.\n\nThe statement is true.\n",
+      "TRUE — Tertiary-sector activity provides services — banking, insurance, coaching, retail, tourism services — rather than extracting materials or manufacturing goods.\n\nClient location does not reclassify domestic tertiary services.\n\nUnder that classification the assertion describes the situation correctly.\n\nThe statement is true.\n",
+      "TRUE — Tertiary-sector activity provides services — banking, insurance, coaching, retail, tourism services — rather than extracting materials or manufacturing goods.\n\nCore coaching remains tertiary even if goods are sold.\n\nNothing in the keyed reading contradicts the chapter framing used here, so the claim holds.\n\nThe statement is true.\n",
+      "TRUE — Tertiary-sector activity provides services — banking, insurance, coaching, retail, tourism services — rather than extracting materials or manufacturing goods.\n\nPersonal coaching is tertiary-sector activity.\n\nNothing in the keyed reading contradicts the chapter framing used here, so the claim holds.\n\nThe statement is true.\n",
+      "FALSE — Secondary-sector activity processes and manufactures: smelting, assembling, milling, and similar transformation of materials into goods.\n\nDesign services are tertiary; book printing is secondary.\n\nSwap in the textbook criterion and the sentence no longer describes the case.\n\nThe statement is false.\n"
     ],
     "difficulty_level": "1/5",
     "tier": "full"
@@ -2745,11 +2745,11 @@
       false
     ],
     "tactical_explanations": [
-      "TRUE — Check the sentence against the core concept named in the stem, including every scope word.\n\nFulfilment services are tertiary activity.\n\nThe statement is true.",
-      "TRUE — Check the sentence against the core concept named in the stem, including every scope word.\n\nDistribution to customers is tertiary-sector activity.\n\nThe statement is true.",
-      "FALSE — Map the scenario onto the textbook category first, then test whether the sentence describes that category accurately.\n\nWarehousing before manufacturing is tertiary logistics.\n\nThe statement is false. A student who matched the topic to \"Warehousing is secondary because steel will be manufactured\" without checking the rest of the sentence would mark the statement true.\n",
-      "FALSE — Map the scenario onto the textbook category first, then test whether the sentence describes that category accurately.\n\nDistribution to readers is tertiary activity.\n\nThe statement is false. A student who matched the topic to \"Bookstores are secondary because books are printed products\" without checking the rest of the sentence would mark the statement true.\n",
-      "FALSE — Check the sentence against the core concept named in the stem, including every scope word.\n\nDistribution is tertiary even when goods are physical.\n\nThe statement is false. A student who matched the topic to \"Physical goods make distribution secondary manufacturing\" without checking the rest of the sentence would mark the statement true.\n"
+      "TRUE — Tertiary-sector activity provides services — banking, insurance, coaching, retail, tourism services — rather than extracting materials or manufacturing goods.\n\nFulfilment services are tertiary activity.\n\nNothing in the keyed reading contradicts the chapter framing used here, so the claim holds.\n\nThe statement is true.\n",
+      "TRUE — Tertiary-sector activity provides services — banking, insurance, coaching, retail, tourism services — rather than extracting materials or manufacturing goods.\n\nDistribution to customers is tertiary-sector activity.\n\nUnder that classification the assertion describes the situation correctly.\n\nThe statement is true.\n",
+      "FALSE — Secondary-sector activity processes and manufactures: smelting, assembling, milling, and similar transformation of materials into goods.\n\nWarehousing before manufacturing is tertiary logistics.\n\nThe mislabelled category or reversed comparison is enough to reject the claim.\n\nThe statement is false.\n",
+      "FALSE — Secondary-sector activity processes and manufactures: smelting, assembling, milling, and similar transformation of materials into goods.\n\nDistribution to readers is tertiary activity.\n\nSwap in the textbook criterion and the sentence no longer describes the case.\n\nThe statement is false.\n",
+      "FALSE — Secondary-sector activity processes and manufactures: smelting, assembling, milling, and similar transformation of materials into goods.\n\nDistribution is tertiary even when goods are physical.\n\nThe mislabelled category or reversed comparison is enough to reject the claim.\n\nThe statement is false.\n"
     ],
     "difficulty_level": "1/5",
     "tier": "full"
@@ -2774,11 +2774,11 @@
       false
     ],
     "tactical_explanations": [
-      "TRUE — Check the sentence against the core concept named in the stem, including every scope word.\n\nForestry extracts timber as a natural resource.\n\nThe statement is true.",
-      "TRUE — Check the sentence against the core concept named in the stem, including every scope word.\n\nCrop production is primary-sector activity.\n\nThe statement is true.",
-      "TRUE — Check the sentence against the core concept named in the stem, including every scope word.\n\nPrimary activity extracts raw materials from the earth.\n\nThe statement is true.",
-      "TRUE — Check the sentence against the core concept named in the stem, including every scope word.\n\nMining extracts raw materials and is primary activity.\n\nThe statement is true.",
-      "FALSE — Check the sentence against the core concept named in the stem, including every scope word.\n\nExtracting fish remains primary-sector activity.\n\nThe statement is false. A student who matched the topic to \"Fishing becomes secondary once fish are filleted onboard\" without checking the rest of the sentence would mark the statement true.\n"
+      "TRUE — Primary-sector activity extracts raw materials from nature: farming, fishing, mining, and forestry — not manufacturing and not services. Secondary-sector activity processes and manufactures: smelting, assembling, milling, and similar transformation of materials into goods.\n\nForestry extracts timber as a natural resource.\n\nThe sentence therefore reports the concept accurately for this item.\n\nThe statement is true.\n",
+      "TRUE — Primary-sector activity extracts raw materials from nature: farming, fishing, mining, and forestry — not manufacturing and not services.\n\nCrop production is primary-sector activity.\n\nUnder that classification the assertion describes the situation correctly.\n\nThe statement is true.\n",
+      "TRUE — Primary-sector activity extracts raw materials from nature: farming, fishing, mining, and forestry — not manufacturing and not services.\n\nPrimary activity extracts raw materials from the earth.\n\nUnder that classification the assertion describes the situation correctly.\n\nThe statement is true.\n",
+      "TRUE — Primary-sector activity extracts raw materials from nature: farming, fishing, mining, and forestry — not manufacturing and not services.\n\nMining extracts raw materials and is primary activity.\n\nUnder that classification the assertion describes the situation correctly.\n\nThe statement is true.\n",
+      "FALSE — Secondary-sector activity processes and manufactures: smelting, assembling, milling, and similar transformation of materials into goods.\n\nExtracting fish remains primary-sector activity.\n\nThe mislabelled category or reversed comparison is enough to reject the claim.\n\nThe statement is false.\n"
     ],
     "difficulty_level": "1/5",
     "tier": "full"
@@ -2803,11 +2803,11 @@
       false
     ],
     "tactical_explanations": [
-      "TRUE — Check the sentence against the core concept named in the stem, including every scope word.\n\nMilling logs into boards is secondary manufacturing.\n\nThe statement is true.",
-      "FALSE — Map the scenario onto the textbook category first, then test whether the sentence describes that category accurately.\n\nManufacturing components is secondary activity.\n\nThe statement is false. A student who matched the topic to \"Fabricating industrial components is tertiary because components support services\" without checking the rest of the sentence would mark the statement true.\n",
-      "FALSE — Map the scenario onto the textbook category first, then test whether the sentence describes that category accurately.\n\nSewing garments is secondary manufacturing.\n\nThe statement is false. A student who matched the topic to \"Sewing is tertiary because fashion is a consumer service\" without checking the rest of the sentence would mark the statement true.\n",
-      "FALSE — Map the scenario onto the textbook category first, then test whether the sentence describes that category accurately.\n\nProcessing ore or metal is secondary transformation.\n\nThe statement is false. A student who matched the topic to \"Smelting remains primary because ore comes from mines\" without checking the rest of the sentence would mark the statement true.\n",
-      "FALSE — Map the scenario onto the textbook category first, then test whether the sentence describes that category accurately.\n\nBuilding ships from materials is secondary manufacturing.\n\nThe statement is false. A student who matched the topic to \"Shipbuilding is tertiary because ships later carry cargo\" without checking the rest of the sentence would mark the statement true.\n"
+      "TRUE — Secondary-sector activity processes and manufactures: smelting, assembling, milling, and similar transformation of materials into goods.\n\nMilling logs into boards is secondary manufacturing.\n\nUnder that classification the assertion describes the situation correctly.\n\nThe statement is true.\n",
+      "FALSE — Secondary-sector activity processes and manufactures: smelting, assembling, milling, and similar transformation of materials into goods. Tertiary-sector activity provides services — banking, insurance, coaching, retail, tourism services — rather than extracting materials or manufacturing goods.\n\nManufacturing components is secondary activity.\n\nThe mislabelled category or reversed comparison is enough to reject the claim.\n\nThe statement is false.\n",
+      "FALSE — Tertiary-sector activity provides services — banking, insurance, coaching, retail, tourism services — rather than extracting materials or manufacturing goods.\n\nSewing garments is secondary manufacturing.\n\nSwap in the textbook criterion and the sentence no longer describes the case.\n\nThe statement is false.\n",
+      "FALSE — Primary-sector activity extracts raw materials from nature: farming, fishing, mining, and forestry — not manufacturing and not services. Secondary-sector activity processes and manufactures: smelting, assembling, milling, and similar transformation of materials into goods.\n\nProcessing ore or metal is secondary transformation.\n\nSwap in the textbook criterion and the sentence no longer describes the case.\n\nThe statement is false.\n",
+      "FALSE — Tertiary-sector activity provides services — banking, insurance, coaching, retail, tourism services — rather than extracting materials or manufacturing goods.\n\nBuilding ships from materials is secondary manufacturing.\n\nSwap in the textbook criterion and the sentence no longer describes the case.\n\nThe statement is false.\n"
     ],
     "difficulty_level": "1/5",
     "tier": "full"
@@ -2832,11 +2832,11 @@
       false
     ],
     "tactical_explanations": [
-      "TRUE — Check the sentence against the core concept named in the stem, including every scope word.\n\nMore developed economies shift toward services in the three-sector model.\n\nThe statement is true.",
-      "TRUE — Check the sentence against the core concept named in the stem, including every scope word.\n\nGdp per capita is used as a living-standard indicator.\n\nThe statement is true.",
-      "FALSE — Check the sentence against the core concept named in the stem, including every scope word.\n\nDeveloped eu economies show tertiary dominance, not primary dominance.\n\nThe statement is false. A student who matched the topic to \"Primary food production dominates output in rich EU states\" without checking the rest of the sentence would mark the statement true.\n",
-      "FALSE — Check the sentence against the core concept named in the stem, including every scope word.\n\nHigh tertiary shares characterise advanced, not emerging, economies.\n\nThe statement is false. A student who matched the topic to \"High tertiary shares typify emerging economies with low GDP per capita\" without checking the rest of the sentence would mark the statement true.\n",
-      "FALSE — Check the sentence against the core concept named in the stem, including every scope word.\n\nIn developed eu countries the tertiary sector usually exceeds seventy percent.\n\nThe statement is false. A student who matched the topic to \"Developed EU states keep primary output above seventy percent\" without checking the rest of the sentence would mark the statement true.\n"
+      "TRUE — Tertiary-sector activity provides services — banking, insurance, coaching, retail, tourism services — rather than extracting materials or manufacturing goods.\n\nMore developed economies shift toward services in the three-sector model.\n\nThe sentence therefore reports the concept accurately for this item.\n\nThe statement is true.\n",
+      "TRUE — GDP measures the monetary value of final goods and services produced within national borders. Rebuild spending can raise measured GDP even when wellbeing falls; GDP is not a welfare index.\n\nGdp per capita is used as a living-standard indicator.\n\nUnder that classification the assertion describes the situation correctly.\n\nThe statement is true.\n",
+      "FALSE — Primary-sector activity extracts raw materials from nature: farming, fishing, mining, and forestry — not manufacturing and not services.\n\nDeveloped eu economies show tertiary dominance, not primary dominance.\n\nThe mislabelled category or reversed comparison is enough to reject the claim.\n\nThe statement is false.\n",
+      "FALSE — Tertiary-sector activity provides services — banking, insurance, coaching, retail, tourism services — rather than extracting materials or manufacturing goods. GDP measures the monetary value of final goods and services produced within national borders. Rebuild spending can raise measured GDP even when wellbeing falls; GDP is not a welfare index.\n\nHigh tertiary shares characterise advanced, not emerging, economies.\n\nOnce the defining feature is restored, the assertion falls away.\n\nThe statement is false.\n",
+      "FALSE — Primary-sector activity extracts raw materials from nature: farming, fishing, mining, and forestry — not manufacturing and not services.\n\nIn developed eu countries the tertiary sector usually exceeds seventy percent.\n\nOnce the defining feature is restored, the assertion falls away.\n\nThe statement is false.\n"
     ],
     "difficulty_level": "2/5",
     "tier": "full"
@@ -2861,11 +2861,11 @@
       true
     ],
     "tactical_explanations": [
-      "TRUE — Check the sentence against the core concept named in the stem, including every scope word.\n\nSupport services remain tertiary when linked to goods.\n\nThe statement is true.",
-      "TRUE — Check the sentence against the core concept named in the stem, including every scope word.\n\nClient location does not reclassify domestic tertiary services.\n\nThe statement is true.",
-      "TRUE — Check the sentence against the core concept named in the stem, including every scope word.\n\nTechnical support is a tertiary service.\n\nThe statement is true.",
-      "TRUE — Check the sentence against the core concept named in the stem, including every scope word.\n\nManufacturing is secondary; support is tertiary alongside it.\n\nThe statement is true.",
-      "TRUE — Check the sentence against the core concept named in the stem, including every scope word.\n\nSoftware services are tertiary in this context.\n\nThe statement is true."
+      "TRUE — Tertiary-sector activity provides services — banking, insurance, coaching, retail, tourism services — rather than extracting materials or manufacturing goods.\n\nSupport services remain tertiary when linked to goods.\n\nThe sentence therefore reports the concept accurately for this item.\n\nThe statement is true.\n",
+      "TRUE — Tertiary-sector activity provides services — banking, insurance, coaching, retail, tourism services — rather than extracting materials or manufacturing goods.\n\nClient location does not reclassify domestic tertiary services.\n\nThe sentence therefore reports the concept accurately for this item.\n\nThe statement is true.\n",
+      "TRUE — Tertiary-sector activity provides services — banking, insurance, coaching, retail, tourism services — rather than extracting materials or manufacturing goods.\n\nTechnical support is a tertiary service.\n\nUnder that classification the assertion describes the situation correctly.\n\nThe statement is true.\n",
+      "TRUE — Secondary-sector activity processes and manufactures: smelting, assembling, milling, and similar transformation of materials into goods. Tertiary-sector activity provides services — banking, insurance, coaching, retail, tourism services — rather than extracting materials or manufacturing goods.\n\nManufacturing is secondary; support is tertiary alongside it.\n\nNothing in the keyed reading contradicts the chapter framing used here, so the claim holds.\n\nThe statement is true.\n",
+      "TRUE — Tertiary-sector activity provides services — banking, insurance, coaching, retail, tourism services — rather than extracting materials or manufacturing goods.\n\nSoftware services are tertiary in this context.\n\nNothing in the keyed reading contradicts the chapter framing used here, so the claim holds.\n\nThe statement is true.\n"
     ],
     "difficulty_level": "1/5",
     "tier": "full"
@@ -2890,11 +2890,11 @@
       false
     ],
     "tactical_explanations": [
-      "TRUE — Check the sentence against the core concept named in the stem, including every scope word.\n\nDevelopment shifts sector shares toward services in rich economies.\n\nThe statement is true.",
-      "TRUE — Map the scenario onto the textbook category first, then test whether the sentence describes that category accurately.\n\nGdp totals final output; real growth uses adjusted figures.\n\nThe statement is true.",
-      "TRUE — Check the sentence against the core concept named in the stem, including every scope word.\n\nStandard criticisms include coverage, quality, and rebuild distortions.\n\nThe statement is true.",
-      "FALSE — Read the quantifier. Words such as never, always, only, or all turn a generally valid idea into a claim that one counterexample rejects.\n\nCorrelation does not mean gdp fully measures welfare.\n\nThe statement is false. A student who overlooked the word \"every\" in \"GDP correlates perfectly with health and happiness in every case\" would treat the restriction as absent and mark the statement true.\n",
-      "FALSE — Check the sentence against the core concept named in the stem, including every scope word.\n\nManufacturing stays secondary; support can be tertiary alongside it.\n\nThe statement is false. A student who matched the topic to \"Manufacturing components and offering after-sales support collapse into a single tertiary label\" without checking the rest of the sentence would mark the statement true.\n"
+      "TRUE — Primary-sector activity extracts raw materials from nature: farming, fishing, mining, and forestry — not manufacturing and not services. Tertiary-sector activity provides services — banking, insurance, coaching, retail, tourism services — rather than extracting materials or manufacturing goods.\n\nDevelopment shifts sector shares toward services in rich economies.\n\nUnder that classification the assertion describes the situation correctly.\n\nThe statement is true.\n",
+      "TRUE — GDP measures the monetary value of final goods and services produced within national borders. Rebuild spending can raise measured GDP even when wellbeing falls; GDP is not a welfare index.\n\nGdp totals final output; real growth uses adjusted figures.\n\nNothing in the keyed reading contradicts the chapter framing used here, so the claim holds.\n\nThe statement is true.\n",
+      "TRUE — GDP measures the monetary value of final goods and services produced within national borders. Rebuild spending can raise measured GDP even when wellbeing falls; GDP is not a welfare index.\n\nStandard criticisms include coverage, quality, and rebuild distortions.\n\nThe sentence therefore reports the concept accurately for this item.\n\nThe statement is true.\n",
+      "FALSE — GDP measures the monetary value of final goods and services produced within national borders. Rebuild spending can raise measured GDP even when wellbeing falls; GDP is not a welfare index.\n\nCorrelation does not mean gdp fully measures welfare.\n\nOnce the defining feature is restored, the assertion falls away.\n\nThe statement is false.\n",
+      "FALSE — Secondary-sector activity processes and manufactures: smelting, assembling, milling, and similar transformation of materials into goods. Tertiary-sector activity provides services — banking, insurance, coaching, retail, tourism services — rather than extracting materials or manufacturing goods.\n\nManufacturing stays secondary; support can be tertiary alongside it.\n\nOnce the defining feature is restored, the assertion falls away.\n\nThe statement is false.\n"
     ],
     "difficulty_level": "3/5",
     "tier": "full"
