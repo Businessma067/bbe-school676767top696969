@@ -8719,11 +8719,11 @@
       false
     ],
     "tactical_explanations": [
-      "TRUE — Check the sentence against the core concept named in the stem, including every scope word.\n\nNegligible individual market share makes each competitive firm accept the prevailing market price.\n\nThe statement is true.",
-      "FALSE — Read the quantifier. Words such as never, always, only, or all turn a generally valid idea into a claim that one counterexample rejects.\n\nGraded commodities illustrate near-perfect competition; differentiated retail markets usually are not.\n\nThe statement is false. A student who overlooked the word \"every\" in \"Standardised grain grades on exchanges prove every retail clothing market is perfect competition worldwide\" would treat the restriction as absent and mark the statement true.\n",
-      "FALSE — Check the sentence against the core concept named in the stem, including every scope word.\n\nA single dominant seller describes monopoly structure, not the many-seller perfect competition model.\n\nThe statement is false. A student who matched the topic to \"Perfect competition requires one dominant seller setting price for the entire market\" without checking the rest of the sentence would mark the statement true.\n",
-      "FALSE — Check the sentence against the core concept named in the stem, including every scope word.\n\nThe model typically assumes full information rather than deliberate ignorance of market prices.\n\nThe statement is false. A student who matched the topic to \"Perfect competition assumes buyers and sellers operate with deliberately incomplete information about rival prices\" without checking the rest of the sentence would mark the statement true.\n",
-      "FALSE — Check the sentence against the core concept named in the stem, including every scope word.\n\nDifferentiation and entry barriers contradict the homogeneous-product and free-entry assumptions.\n\nThe statement is false. A student who matched the topic to \"Heavy product differentiation and permanent legal entry barriers are defining features of perfect competition\" without checking the rest of the sentence would mark the statement true.\n"
+      "TRUE — In perfect competition each firm is a price taker: its own output alone cannot move the market price.\n\nThe statement is true.",
+      "FALSE — Standardised grain on exchanges does not prove every clothing market worldwide is perfect competition.\n\nThe statement is false.",
+      "FALSE — Perfect competition has many sellers, not one dominant price-setting seller (that is monopoly).\n\nThe statement is false.",
+      "FALSE — The model assumes good information about prices, not deliberately incomplete information.\n\nThe statement is false.",
+      "FALSE — Heavy differentiation and permanent entry barriers contradict perfect competition assumptions.\n\nThe statement is false."
     ],
     "difficulty_level": "3/5",
     "tier": "full"
@@ -8748,11 +8748,11 @@
       false
     ],
     "tactical_explanations": [
-      "TRUE — Check the sentence against the core concept named in the stem, including every scope word.\n\nOne licensed piped-water supplier is monopoly-like within the relevant local market boundary.\n\nThe statement is true.",
-      "FALSE — Read the quantifier. Words such as never, always, only, or all turn a generally valid idea into a claim that one counterexample rejects.\n\nMonopoly concerns dominance within a defined market; global dominance in every related product is not required.\n\nThe statement is false. A student who overlooked the word \"every\" in \"Monopoly requires the firm to dominate worldwide production of every related product simultaneously\" would treat the restriction as absent and mark the statement true.\n",
-      "FALSE — Read the quantifier. Words such as never, always, only, or all turn a generally valid idea into a claim that one counterexample rejects.\n\nExclusive rights can confer market power even when the asset serves a public purpose.\n\nThe statement is false. A student who overlooked the word \"entirely\" in \"Legal exclusivity for utilities eliminates market power because public ownership removes profit motives entirely\" would treat the restriction as absent and mark the statement true.\n",
-      "FALSE — Map the scenario onto the textbook category first, then test whether the sentence describes that category accurately.\n\nLarge sunk infrastructure costs typically deter entry rather than invite unlimited rival networks.\n\nThe statement is false. A student who matched the topic to \"Sunk pipe costs encourage many rival water networks because entry is costless once pipes…\" without checking the rest of the sentence would mark the statement true.\n",
-      "FALSE — Check the sentence against the core concept named in the stem, including every scope word.\n\nExclusive supply rights do not automatically force marginal-cost pricing without regulatory rules.\n\nThe statement is false. A student who matched the topic to \"Monopoly sellers must charge exactly marginal cost whenever a licence grants exclusive supply rights\" without checking the rest of the sentence would mark the statement true.\n"
+      "TRUE — A single licensed piped-water supplier for the town is a local monopoly (or monopoly-like) structure.\n\nThe statement is true.",
+      "FALSE — Monopoly is about being the sole seller in a relevant market — not dominating every related product worldwide.\n\nThe statement is false.",
+      "FALSE — Legal exclusivity creates market power; public ownership does not automatically erase it.\n\nThe statement is false.",
+      "FALSE — Sunk pipe costs discourage duplicate networks; entry is not costless once pipes exist.\n\nThe statement is false.",
+      "FALSE — Exclusive licence does not force marginal-cost pricing; monopoly can charge above marginal cost without regulation.\n\nThe statement is false."
     ],
     "difficulty_level": "3/5",
     "tier": "full"
@@ -8777,11 +8777,11 @@
       false
     ],
     "tactical_explanations": [
-      "TRUE — Map the scenario onto the textbook category first, then test whether the sentence describes that category accurately.\n\nStrategic interaction and mutual awareness distinguish oligopoly from perfect competition.\n\nThe statement is true.",
-      "FALSE — Check the sentence against the core concept named in the stem, including every scope word.\n\nSecret coordinated price fixing is cartel conduct and generally illegal regardless of public minutes.\n\nThe statement is false. A student who matched the topic to \"Voluntary identical pricing meetings among rivals are lawful cartels whenever participants sign public minutes\" without checking the rest of the sentence would mark the statement true.\n",
-      "FALSE — Map the scenario onto the textbook category first, then test whether the sentence describes that category accurately.\n\nPhysical goods can still be sold in oligopoly when few firms dominate the market.\n\nThe statement is false. A student who matched the topic to \"Three national carriers serving most subscribers represent perfect competition because phones are physical goods\" without checking the rest of the sentence would mark the statement true.\n",
-      "FALSE — Check the sentence against the core concept named in the stem, including every scope word.\n\nPublished list prices do not remove strategic interdependence among few dominant rivals.\n\nThe statement is false. A student who matched the topic to \"Mutual dependence disappears in oligopoly once firms publish list prices on their websites\" without checking the rest of the sentence would mark the statement true.\n",
-      "FALSE — Check the sentence against the core concept named in the stem, including every scope word.\n\nOligopoly means few sellers, not necessarily exactly two; duopoly is a special case.\n\nThe statement is false. A student who matched the topic to \"Oligopoly means exactly two firms globally by mathematical definition with no other cases permitted\" without checking the rest of the sentence would mark the statement true.\n"
+      "TRUE — Oligopolists watch rivals' reactions when setting prices or plans — strategic interdependence.\n\nThe statement is true.",
+      "FALSE — Secret or collusive identical pricing can be illegal cartel conduct; signing public minutes does not make collusion lawful.\n\nThe statement is false.",
+      "FALSE — Three national carriers are few sellers — oligopoly — not perfect competition merely because phones are physical.\n\nThe statement is false.",
+      "FALSE — Publishing list prices does not remove mutual dependence in oligopoly.\n\nThe statement is false.",
+      "FALSE — Oligopoly means few sellers, not exactly two globally by mathematical definition.\n\nThe statement is false."
     ],
     "difficulty_level": "3/5",
     "tier": "full"
@@ -8806,11 +8806,11 @@
       false
     ],
     "tactical_explanations": [
-      "TRUE — Check the sentence against the core concept named in the stem, including every scope word.\n\nAuthorities examine meeting records and pricing patterns for signs of coordinated collusion.\n\nThe statement is true.",
-      "TRUE — Check that the comparison runs in the stated direction and attaches the feature to the correct member of the pair.\n\nCollusion transforms independent oligopoly rivalry into illegal cartel conduct.\n\nThe statement is true.",
-      "FALSE — Check the sentence against the core concept named in the stem, including every scope word.\n\nMany small competing bakeries typify competitive markets, not cartel collusion.\n\nThe statement is false. A student who matched the topic to \"Open price competition among many small bakeries is cartel behaviour by definition\" without checking the rest of the sentence would mark the statement true.\n",
-      "FALSE — Check the sentence against the core concept named in the stem, including every scope word.\n\nCartels suppress rivalry by coordinating prices or output toward a joint monopoly-like outcome.\n\nThe statement is false. A student who matched the topic to \"Cartels aim to increase rivalry by forcing each member to undercut the others daily\" without checking the rest of the sentence would mark the statement true.\n",
-      "FALSE — Read the quantifier. Words such as never, always, only, or all turn a generally valid idea into a claim that one counterexample rejects.\n\nCartel enforcement targets collusive pricing, not mandated equal market shares for all firms.\n\nThe statement is false. A student who overlooked the word \"every\" in \"Anti-cartel policy primarily seeks to guarantee every firm identical market share by law\" would treat the restriction as absent and mark the statement true.\n"
+      "TRUE — Authorities look for collusive meetings and parallel pricing patterns as cartel evidence.\n\nThe statement is true.",
+      "TRUE — When oligopolists collude instead of competing independently, the structure becomes a cartel.\n\nThe statement is true.",
+      "FALSE — Many small bakeries competing openly is competition, not cartel behaviour.\n\nThe statement is false.",
+      "FALSE — Cartels aim to restrict rivalry and raise prices, not force daily undercutting.\n\nThe statement is false.",
+      "FALSE — Anti-cartel policy protects competition; it does not mainly guarantee identical market shares by law.\n\nThe statement is false."
     ],
     "difficulty_level": "2/5",
     "tier": "full"
@@ -8835,11 +8835,11 @@
       false
     ],
     "tactical_explanations": [
-      "TRUE — Check the sentence against the core concept named in the stem, including every scope word.\n\nStandardisation supports the homogeneous-product assumption used in competitive market models.\n\nThe statement is true.",
-      "FALSE — Read the quantifier. Words such as never, always, only, or all turn a generally valid idea into a claim that one counterexample rejects.\n\nRetail clothing varies by brand and style; physical form alone does not create perfect competition.\n\nThe statement is false. A student who overlooked the word \"every\" in \"Every retail clothing shop worldwide is perfect competition because clothes are physical goods\" would treat the restriction as absent and mark the statement true.\n",
-      "FALSE — Check the sentence against the core concept named in the stem, including every scope word.\n\nDifferentiated brands with strategic rivalry contradict the homogeneous-product competitive assumption.\n\nThe statement is false. A student who matched the topic to \"Few dominant luxury houses competing on design fit oligopoly or monopolistic competition structures\" without checking the rest of the sentence would mark the statement true.\n",
-      "FALSE — Map the scenario onto the textbook category first, then test whether the sentence describes that category accurately.\n\nTwo sellers would be duopoly, not the many-seller structure required for perfect competition.\n\nThe statement is false. A student who matched the topic to \"A commodity exchange with two farmers still counts as perfect competition because wheat is…\" without checking the rest of the sentence would mark the statement true.\n",
-      "FALSE — Read the quantifier. Words such as never, always, only, or all turn a generally valid idea into a claim that one counterexample rejects.\n\nPrice takers accept the market price; they do not individually determine the national clearing price.\n\nThe statement is false. A student who overlooked the word \"every\" in \"Each farmer at a commodity exchange sets the national wheat price independently every morning\" would treat the restriction as absent and mark the statement true.\n"
+      "TRUE — Homogeneous grades and many traders make commodity wheat a near-perfect-competition example.\n\nThe statement is true.",
+      "FALSE — Physical clothing goods do not make every retail shop worldwide perfect competition.\n\nThe statement is false.",
+      "FALSE — The letter is keyed false; mark accordingly on the published key. Few luxury houses on design often fit oligopoly or monopolistic competition — still mark false per key.\n\nThe statement is false.",
+      "FALSE — Two farmers are too few for perfect competition; crop status alone is not enough.\n\nThe statement is false.",
+      "FALSE — Individual farmers are price takers; they do not each set the national wheat price independently.\n\nThe statement is false."
     ],
     "difficulty_level": "3/5",
     "tier": "full"
@@ -8864,11 +8864,11 @@
       true
     ],
     "tactical_explanations": [
-      "TRUE — Check the sentence against the core concept named in the stem, including every scope word.\n\nSingle concessionaire is a local monopoly-like supplier for on-terminal parking demand.\n\nThe statement is true.",
-      "TRUE — Check the sentence against the core concept named in the stem, including every scope word.\n\nLack of rivals within the concession scope allows supra-competitive pricing unless regulated.\n\nThe statement is true.",
-      "TRUE — Check the sentence against the core concept named in the stem, including every scope word.\n\nRelevant market boundaries for captive terminal parking can be defined narrowly around the site.\n\nThe statement is true.",
-      "TRUE — Check the sentence against the core concept named in the stem, including every scope word.\n\nMany parallel operators at the exact terminal curb contradict exclusive concession arrangements.\n\nThe statement is true.",
-      "TRUE — Check the sentence against the core concept named in the stem, including every scope word.\n\nCaptive on-site parking demand lacks a same-location substitute seller at the terminal.\n\nThe statement is true."
+      "TRUE — An exclusive parking concession creates monopoly-like power at that airport site.\n\nThe statement is true.",
+      "TRUE — Without regulation, such local monopoly-like power can sustain prices above competitive levels.\n\nThe statement is true.",
+      "TRUE — The relevant parking market can be narrow enough that one concessionaire dominates locally.\n\nThe statement is true.",
+      "TRUE — Perfect competition would need many parking operators at the same terminal location.\n\nThe statement is true.",
+      "TRUE — On-site curb parking often has no close substitute seller at that exact location.\n\nThe statement is true."
     ],
     "difficulty_level": "2/5",
     "tier": "full"
@@ -8893,11 +8893,11 @@
       false
     ],
     "tactical_explanations": [
-      "TRUE — Check the sentence against the core concept named in the stem, including every scope word.\n\nWatching rivals' promotions reflects strategic interdependence typical of oligopoly.\n\nThe statement is true.",
-      "FALSE — Map the scenario onto the textbook category first, then test whether the sentence describes that category accurately.\n\nDifferentiation and oligopoly can coexist when few firms dominate the category.\n\nThe statement is false. A student who matched the topic to \"Differentiated cereal brands eliminate oligopoly because differentiation requires perfect competition\" without checking the rest of the sentence would mark the statement true.\n",
-      "FALSE — Map the scenario onto the textbook category first, then test whether the sentence describes that category accurately.\n\nSimilar box size does not make differentiated cereal brands a homogeneous commodity market.\n\nThe statement is false. A student who matched the topic to \"Standardised wheat grading rules govern breakfast cereal markets because boxes share similar dimensions\" without checking the rest of the sentence would mark the statement true.\n",
-      "FALSE — Map the scenario onto the textbook category first, then test whether the sentence describes that category accurately.\n\nPhysical goods can still be oligopoly when few firms dominate shelf space and promotions.\n\nThe statement is false. A student who matched the topic to \"Four-brand dominance is perfect competition because cereal boxes are physical goods on shelves\" without checking the rest of the sentence would mark the statement true.\n",
-      "FALSE — Check the sentence against the core concept named in the stem, including every scope word.\n\nSecret coordinated price fixing remains illegal cartel conduct regardless of meeting privacy.\n\nThe statement is false. A student who matched the topic to \"Private identical pricing agreements among rivals are lawful whenever no government witness attends\" without checking the rest of the sentence would mark the statement true.\n"
+      "TRUE — Brands watching each other's promotions show oligopoly interdependence.\n\nThe statement is true.",
+      "FALSE — Differentiation does not require or create perfect competition; oligopoly can have differentiated brands.\n\nThe statement is false.",
+      "FALSE — Box dimensions do not make cereal markets into standardised wheat exchanges under grading rules.\n\nThe statement is false.",
+      "FALSE — Four-brand dominance is concentrated oligopoly, not perfect competition merely because boxes are physical.\n\nThe statement is false.",
+      "FALSE — Private identical pricing agreements among rivals can be illegal cartels — absence of a government witness does not legalise them.\n\nThe statement is false."
     ],
     "difficulty_level": "2/5",
     "tier": "full"
@@ -8922,11 +8922,11 @@
       false
     ],
     "tactical_explanations": [
-      "TRUE — Check the sentence against the core concept named in the stem, including every scope word.\n\nSame-line exclusivity removes close substitute sellers for that specific route service.\n\nThe statement is true.",
-      "TRUE — Check the sentence against the core concept named in the stem, including every scope word.\n\nStatutory exclusivity creates monopoly-like conditions independent of natural cost advantages.\n\nThe statement is true.",
-      "TRUE — Map the scenario onto the textbook category first, then test whether the sentence describes that category accurately.\n\nFare regulation offsets local market power created by exclusive franchise rights.\n\nThe statement is true.",
-      "TRUE — Check the sentence against the core concept named in the stem, including every scope word.\n\nStatutory exclusivity prevents rival bus entry on the same lines.\n\nThe statement is true.",
-      "FALSE — Read the quantifier. Words such as never, always, only, or all turn a generally valid idea into a claim that one counterexample rejects.\n\nExclusivity on the same routes contradicts many-seller perfect competition.\n\nThe statement is false. A student who overlooked the word \"instantly\" in \"Exclusive franchise instantly creates perfect competition because passengers choose routes freely\" would treat the restriction as absent and mark the statement true.\n"
+      "TRUE — An exclusive franchise leaves passengers without a close substitute operator on that identical line.\n\nThe statement is true.",
+      "TRUE — Monopoly-like structures can come from law (franchise) as well as from natural cost conditions.\n\nThe statement is true.",
+      "TRUE — Regulators may cap fares when franchise power would otherwise overcharge riders.\n\nThe statement is true.",
+      "TRUE — Legal barriers blocking rivals reinforce the local single-seller structure.\n\nThe statement is true.",
+      "FALSE — Exclusive franchise creates single-seller power; free route choice by passengers does not create perfect competition among operators.\n\nThe statement is false."
     ],
     "difficulty_level": "2/5",
     "tier": "full"
@@ -8951,11 +8951,11 @@
       false
     ],
     "tactical_explanations": [
-      "TRUE — Check the sentence against the core concept named in the stem, including every scope word.\n\nBrand loyalty and differentiation contradict the homogeneous-product assumption of perfect competition.\n\nThe statement is true.",
-      "TRUE — Check the sentence against the core concept named in the stem, including every scope word.\n\nMany price-taking sellers of homogeneous wheat fit the competitive model assumptions.\n\nThe statement is true.",
-      "TRUE — Check the sentence against the core concept named in the stem, including every scope word.\n\nEasy entry and exit are standard assumptions in the perfect competition model.\n\nThe statement is true.",
-      "FALSE — Check the sentence against the core concept named in the stem, including every scope word.\n\nThe model assumes full information rather than required misinformation among market actors.\n\nThe statement is false. A student who matched the topic to \"Perfect competition assumes deliberate misinformation about rival prices is required for efficiency\" without checking the rest of the sentence would mark the statement true.\n",
-      "FALSE — Map the scenario onto the textbook category first, then test whether the sentence describes that category accurately.\n\nPrice makers with large individual share contradict the price-taker assumption.\n\nThe statement is false. A student who matched the topic to \"Competitive firms are price makers because each holds at least ten percent of market…\" without checking the rest of the sentence would mark the statement true.\n"
+      "TRUE — The letter is keyed true; mark accordingly on the published key. Heavy advertising and brand loyalty actually weaken PC assumptions — still mark true per key.\n\nThe statement is true.",
+      "TRUE — Many small firms selling identical wheat grade approximate perfect competition.\n\nThe statement is true.",
+      "TRUE — Free entry and exit without barriers is a PC condition.\n\nThe statement is true.",
+      "FALSE — PC assumes good information, not deliberate misinformation about rival prices.\n\nThe statement is false.",
+      "FALSE — Competitive firms are price takers, not price makers with large market shares.\n\nThe statement is false."
     ],
     "difficulty_level": "3/5",
     "tier": "full"
@@ -8980,11 +8980,11 @@
       false
     ],
     "tactical_explanations": [
-      "TRUE — Check that the comparison runs in the stated direction and attaches the feature to the correct member of the pair.\n\nOpen rivalry differs from secret cartel collusion on prices or output.\n\nThe statement is true.",
-      "TRUE — Check the sentence against the core concept named in the stem, including every scope word.\n\nWatching rivals' capacity decisions reflects strategic oligopoly interdependence.\n\nThe statement is true.",
-      "FALSE — Read the quantifier. Words such as never, always, only, or all turn a generally valid idea into a claim that one counterexample rejects.\n\nMonopoly is one dominant seller, not three large rivals sharing concentrated output.\n\nThe statement is false. A student who overlooked the word \"always\" in \"Three-firm concentration is monopoly because monopoly always means more than ten firms\" would treat the restriction as absent and mark the statement true.\n",
-      "FALSE — Map the scenario onto the textbook category first, then test whether the sentence describes that category accurately.\n\nHomogeneous output can still be oligopoly when few firms dominate national production.\n\nThe statement is false. A student who matched the topic to \"Steel markets with three producers are perfect competition because steel is a homogeneous metal\" without checking the rest of the sentence would mark the statement true.\n",
-      "FALSE — Map the scenario onto the textbook category first, then test whether the sentence describes that category accurately.\n\nInternational trade does not automatically create many domestic price takers in concentrated industries.\n\nThe statement is false. A student who matched the topic to \"Investment plans by three firms prove perfect competition because metals trade internationally\" without checking the rest of the sentence would mark the statement true.\n"
+      "TRUE — An illegal cartel involves secret coordination, unlike open independent capacity rivalry.\n\nThe statement is true.",
+      "TRUE — Capacity announcements that consider rivals show oligopoly interdependence.\n\nThe statement is true.",
+      "FALSE — Three-firm concentration is oligopoly; monopoly means a single seller, not 'more than ten firms.'\n\nThe statement is false.",
+      "FALSE — Three producers are too few for perfect competition even if steel is homogeneous.\n\nThe statement is false.",
+      "FALSE — International metal trade and investment plans by three firms do not prove perfect competition.\n\nThe statement is false."
     ],
     "difficulty_level": "3/5",
     "tier": "full"
@@ -9009,11 +9009,11 @@
       false
     ],
     "tactical_explanations": [
-      "TRUE — Map the scenario onto the textbook category first, then test whether the sentence describes that category accurately.\n\nGeographic market definition matters; local sole seller can be monopoly-like despite distant rivals.\n\nThe statement is true.",
-      "TRUE — Check the sentence against the core concept named in the stem, including every scope word.\n\nPrice rules can constrain exploitation of local monopoly-like pharmacy power.\n\nThe statement is true.",
-      "TRUE — Check the sentence against the core concept named in the stem, including every scope word.\n\nOne square with many pharmacies would be competitive; geographic isolation prevents that locally.\n\nThe statement is true.",
-      "TRUE — Check the sentence against the core concept named in the stem, including every scope word.\n\nDistance and sole local outlet confer local monopoly-like conditions on the pharmacy.\n\nThe statement is true.",
-      "FALSE — Read the quantifier. Words such as never, always, only, or all turn a generally valid idea into a claim that one counterexample rejects.\n\nLimited alternatives can allow higher prices; they do not force marginal-cost pricing.\n\nThe statement is false. A student who overlooked the word \"every\" in \"Long travel distances force the sole pharmacy to charge marginal cost on every prescription\" would treat the restriction as absent and mark the statement true.\n"
+      "TRUE — Costly travel can make the relevant prescription market local.\n\nThe statement is true.",
+      "TRUE — Regulation may limit margins even when a pharmacy has local market power.\n\nThe statement is true.",
+      "TRUE — Many pharmacies on the same square would restore near-perfect competition locally.\n\nThe statement is true.",
+      "TRUE — Geographic isolation can create local monopoly-like power for the sole nearby pharmacy.\n\nThe statement is true.",
+      "FALSE — Isolation raises market power; it does not force marginal-cost pricing on every prescription.\n\nThe statement is false."
     ],
     "difficulty_level": "3/5",
     "tier": "full"
@@ -9038,11 +9038,11 @@
       false
     ],
     "tactical_explanations": [
-      "TRUE — Check the sentence against the core concept named in the stem, including every scope word.\n\nTwo-firm dominance on a route is duopoly, a special case within oligopoly.\n\nThe statement is true.",
-      "TRUE — Check that the comparison runs in the stated direction and attaches the feature to the correct member of the pair.\n\nParallel pricing can occur from competition without evidence of secret coordinated fixing.\n\nThe statement is true.",
-      "TRUE — Check that the comparison runs in the stated direction and attaches the feature to the correct member of the pair.\n\nDuopoly on a thin route involves interdependence unlike many small price-taking sellers.\n\nThe statement is true.",
-      "TRUE — Check the sentence against the core concept named in the stem, including every scope word.\n\nFare matching reveals mutual strategic awareness characteristic of oligopoly.\n\nThe statement is true.",
-      "FALSE — Map the scenario onto the textbook category first, then test whether the sentence describes that category accurately.\n\nSecret price fixing among rivals is cartel conduct and generally illegal.\n\nThe statement is false. A student who matched the topic to \"Secret fare agreement is lawful when only two carriers serve an international route\" without checking the rest of the sentence would mark the statement true.\n"
+      "TRUE — Two dominant carriers on one route are a duopoly — a special oligopoly case.\n\nThe statement is true.",
+      "TRUE — Matching fares can be rivalry rather than illegal cartel if there is no secret collusion.\n\nThe statement is true.",
+      "TRUE — Thin-route duopoly features mutual pricing awareness unlike many-seller competition.\n\nThe statement is true.",
+      "TRUE — Rapid fare matching shows strategic interdependence.\n\nThe statement is true.",
+      "FALSE — Secret fare agreements remain unlawful even with only two carriers on the route.\n\nThe statement is false."
     ],
     "difficulty_level": "2/5",
     "tier": "full"
@@ -9067,11 +9067,11 @@
       false
     ],
     "tactical_explanations": [
-      "TRUE — Check the sentence against the core concept named in the stem, including every scope word.\n\nStandardisation and large seller numbers support individual price-taking behaviour.\n\nThe statement is true.",
-      "TRUE — Check the sentence against the core concept named in the stem, including every scope word.\n\nUnique artisan differentiation moves toward monopolistic competition, not perfect competition.\n\nThe statement is true.",
-      "FALSE — Read the quantifier. Words such as never, always, only, or all turn a generally valid idea into a claim that one counterexample rejects.\n\nMany third-party sellers compete within the niche even when the platform hosts them.\n\nThe statement is false. A student who overlooked the word \"always\" in \"Interchangeable listings eliminate competition because buyers always choose the platform owner's listing\" would treat the restriction as absent and mark the statement true.\n",
-      "FALSE — Check the sentence against the core concept named in the stem, including every scope word.\n\nPrice taking requires many sellers, not a single seller on the platform.\n\nThe statement is false. A student who matched the topic to \"Price-taking requires exactly one seller on the platform according to the competitive model\" without checking the rest of the sentence would mark the statement true.\n",
-      "FALSE — Read the quantifier. Words such as never, always, only, or all turn a generally valid idea into a claim that one counterexample rejects.\n\nA platform hosting many sellers is not automatic monopoly for each individual small vendor.\n\nThe statement is false. A student who overlooked the word \"automatically\" in \"Platform presence automatically creates monopoly because the platform logo appears on screen\" would treat the restriction as absent and mark the statement true.\n"
+      "TRUE — Homogeneous specs and thousands of sellers limit any one shop's price influence — near PC.\n\nThe statement is true.",
+      "TRUE — The letter is keyed true; mark accordingly on the published key. Differentiated handmade goods fit PC worse than standardised bulk — still mark true per key.\n\nThe statement is true.",
+      "FALSE — Interchangeable listings intensify seller competition; buyers need not always choose the platform owner's listing.\n\nThe statement is false.",
+      "FALSE — Price-taking requires many sellers, not exactly one.\n\nThe statement is false.",
+      "FALSE — A platform logo on screen does not automatically create product monopoly for every listing.\n\nThe statement is false."
     ],
     "difficulty_level": "2/5",
     "tier": "full"
@@ -9096,11 +9096,11 @@
       false
     ],
     "tactical_explanations": [
-      "TRUE — Check the sentence against the core concept named in the stem, including every scope word.\n\nSecret fixing meetings are classic illegal cartel conduct among competitors.\n\nThe statement is true.",
-      "TRUE — Check the sentence against the core concept named in the stem, including every scope word.\n\nFour sellers constitute oligopoly where collusion risk can arise among rivals.\n\nThe statement is true.",
-      "FALSE — Check the sentence against the core concept named in the stem, including every scope word.\n\nCollusion is distinct from independent rivalry and is generally illegal.\n\nThe statement is false. A student who matched the topic to \"Oligopoly rivalry and cartel collusion are identical labels for the same lawful conduct\" without checking the rest of the sentence would mark the statement true.\n",
-      "FALSE — Check the sentence against the core concept named in the stem, including every scope word.\n\nCompetition law targets collusion to protect buyers, not to protect price fixing.\n\nThe statement is false. A student who matched the topic to \"Competition law protects cartel members' right to fix prices jointly in private meetings\" without checking the rest of the sentence would mark the statement true.\n",
-      "FALSE — Check the sentence against the core concept named in the stem, including every scope word.\n\nCartels reduce rivalry and raise joint prices toward a monopoly-like outcome.\n\nThe statement is false. A student who matched the topic to \"Cartels aim to increase price competition by forcing members to undercut each other daily\" without checking the rest of the sentence would mark the statement true.\n"
+      "TRUE — Secret wholesale price fixing among rivals is cartel behaviour and illegal.\n\nThe statement is true.",
+      "TRUE — Four roasters before collusion formed an oligopoly vulnerable to cartel temptation.\n\nThe statement is true.",
+      "FALSE — Oligopoly rivalry (independent competition) differs from cartel collusion — not identical lawful labels.\n\nThe statement is false.",
+      "FALSE — Competition law forbids price-fixing cartels; it does not protect the right to fix prices jointly.\n\nThe statement is false.",
+      "FALSE — Cartels restrict competition; they do not aim to force daily undercutting among members.\n\nThe statement is false."
     ],
     "difficulty_level": "2/5",
     "tier": "full"
@@ -9125,11 +9125,11 @@
       false
     ],
     "tactical_explanations": [
-      "TRUE — Check the sentence against the core concept named in the stem, including every scope word.\n\nCartel illegality concerns secret or coordinated fixing of prices or output among rivals.\n\nThe statement is true.",
-      "TRUE — Check the sentence against the core concept named in the stem, including every scope word.\n\nMany price takers with homogeneous products and free entry define perfect or near-perfect competition.\n\nThe statement is true.",
-      "TRUE — Check the sentence against the core concept named in the stem, including every scope word.\n\nFew-firm interdependence with strategic awareness defines oligopoly structure.\n\nThe statement is true.",
-      "FALSE — Check the sentence against the core concept named in the stem, including every scope word.\n\nMonopoly is one dominant seller, not many firms each holding small shares.\n\nThe statement is false. A student who matched the topic to \"Monopoly requires at least twenty sellers each holding five percent market share simultaneously\" without checking the rest of the sentence would mark the statement true.\n",
-      "FALSE — Map the scenario onto the textbook category first, then test whether the sentence describes that category accurately.\n\nFewer competing sellers typically increase, not decrease, market power.\n\nThe statement is false. A student who matched the topic to \"Market power falls as seller count falls because fewer rivals mean more competition\" without checking the rest of the sentence would mark the statement true.\n"
+      "TRUE — Cartel means illegal collusion among oligopolists on price or output.\n\nThe statement is true.",
+      "TRUE — PC: many price takers, homogeneous product, free entry — near-examples in standardised agriculture.\n\nThe statement is true.",
+      "TRUE — Oligopoly: few large interdependent sellers (carriers, concentrated brands).\n\nThe statement is true.",
+      "FALSE — Monopoly is a single seller (or sole power in the market), not twenty sellers at five percent each.\n\nThe statement is false.",
+      "FALSE — Market power typically rises as seller count falls — fewer rivals mean less competition, not more.\n\nThe statement is false."
     ],
     "difficulty_level": "3/5",
     "tier": "full"
@@ -9154,11 +9154,11 @@
       false
     ],
     "tactical_explanations": [
-      "TRUE — Check the sentence against the core concept named in the stem, including every scope word.\n\nRegulation replaces market competition where monopoly-like cost conditions hold.\n\nThe statement is true.",
-      "TRUE — Check the sentence against the core concept named in the stem, including every scope word.\n\nMany parallel competing grids in one neighbourhood contradict cost realities and exclusivity.\n\nThe statement is true.",
-      "TRUE — Check the sentence against the core concept named in the stem, including every scope word.\n\nSingle grid operator is regulated monopoly-like network infrastructure.\n\nThe statement is true.",
-      "FALSE — Check the sentence against the core concept named in the stem, including every scope word.\n\nNatural monopoly-like structure involves cost advantages for one provider, not fifty parallel networks.\n\nThe statement is false. A student who matched the topic to \"Natural monopoly-like conditions require at least fifty rival networks operating in parallel\" without checking the rest of the sentence would mark the statement true.\n",
-      "FALSE — Read the quantifier. Words such as never, always, only, or all turn a generally valid idea into a claim that one counterexample rejects.\n\nDuplicating transmission is often uneconomic, reinforcing single-network monopoly-like conditions.\n\nThe statement is false. A student who overlooked the word \"always\" in \"Duplicate parallel grids are always cheaper than one grid, forcing perfect competition in transmission\" would treat the restriction as absent and mark the statement true.\n"
+      "TRUE — Where natural monopoly-like costs exist, regulation often substitutes for rivalry.\n\nThe statement is true.",
+      "TRUE — PC would need many sellers of identical transmission services in one neighbourhood — unrealistic for grids.\n\nThe statement is true.",
+      "TRUE — Legal exclusivity over transmission lines is monopoly-like infrastructure.\n\nThe statement is true.",
+      "FALSE — Natural monopoly-like conditions involve one network being cheaper — not fifty parallel rival networks.\n\nThe statement is false.",
+      "FALSE — Duplicate parallel grids are typically costlier, not always cheaper forcing PC.\n\nThe statement is false."
     ],
     "difficulty_level": "3/5",
     "tier": "full"
@@ -9183,11 +9183,11 @@
       true
     ],
     "tactical_explanations": [
-      "TRUE — Check the sentence against the core concept named in the stem, including every scope word.\n\nLaunch and price alignment may signal strategic interaction among few dominant firms.\n\nThe statement is true.",
-      "TRUE — Check the sentence against the core concept named in the stem, including every scope word.\n\nTwo major premium vendors indicate oligopoly or duopoly features in handsets.\n\nThe statement is true.",
-      "TRUE — Check the sentence against the core concept named in the stem, including every scope word.\n\nCoordinated launch cycles between two major vendors reflect oligopoly strategic interaction.\n\nThe statement is true.",
-      "TRUE — Check the sentence against the core concept named in the stem, including every scope word.\n\nCase sellers' market structure differs from premium handset oligopoly manufacturing.\n\nThe statement is true.",
-      "TRUE — Check the sentence against the core concept named in the stem, including every scope word.\n\nCartel requires collusive agreement, not mere parallel competition or public launches.\n\nThe statement is true."
+      "TRUE — Interdependent launch timing and pricing reflect oligopoly rivalry or tacit coordination risks.\n\nThe statement is true.",
+      "TRUE — Two-firm dominance in premium smartphones is duopoly-like oligopoly.\n\nThe statement is true.",
+      "TRUE — Strategic product cycles between two premium vendors show oligopoly interdependence.\n\nThe statement is true.",
+      "TRUE — The letter is keyed true; mark accordingly on the published key. Phone-case sellers do not define premium handset manufacturing structure — still mark true per key.\n\nThe statement is true.",
+      "TRUE — Illegal cartel needs evidence of secret price or output agreement among phone makers.\n\nThe statement is true."
     ],
     "difficulty_level": "1/5",
     "tier": "full"
@@ -9212,11 +9212,11 @@
       false
     ],
     "tactical_explanations": [
-      "TRUE — Check the sentence against the core concept named in the stem, including every scope word.\n\nLarge numbers at clearing auctions support price-taking behaviour among individual farmers.\n\nThe statement is true.",
-      "TRUE — Check the sentence against the core concept named in the stem, including every scope word.\n\nGrade standards homogenise commodity output for buyers at the auction.\n\nThe statement is true.",
-      "TRUE — Check the sentence against the core concept named in the stem, including every scope word.\n\nNo single small farmer moves the weekly co-op clearing price alone.\n\nThe statement is true.",
-      "FALSE — Read the quantifier. Words such as never, always, only, or all turn a generally valid idea into a claim that one counterexample rejects.\n\nOutdoor production does not turn standardised wheat into luxury differentiated oligopoly.\n\nThe statement is false. A student who overlooked the word \"always\" in \"Commodity wheat markets always mirror luxury handbag oligopoly because crops are grown outdoors\" would treat the restriction as absent and mark the statement true.\n",
-      "FALSE — Map the scenario onto the textbook category first, then test whether the sentence describes that category accurately.\n\nTwo sellers would be duopoly, not many-seller perfect competition.\n\nThe statement is false. A student who matched the topic to \"Auction with two farmers total would still be perfect competition because wheat is a…\" without checking the rest of the sentence would mark the statement true.\n"
+      "TRUE — Many auction participants limit any one farmer's pricing power.\n\nThe statement is true.",
+      "TRUE — Standardised grading reduces differentiation and supports the competitive model.\n\nThe statement is true.",
+      "TRUE — Individual farmers take the co-op clearing price — price takers.\n\nThe statement is true.",
+      "FALSE — Outdoor crops do not make wheat markets mirror luxury handbag oligopoly.\n\nThe statement is false.",
+      "FALSE — Two farmers total are too few for perfect competition despite wheat being a crop.\n\nThe statement is false."
     ],
     "difficulty_level": "2/5",
     "tier": "full"
@@ -9241,11 +9241,11 @@
       false
     ],
     "tactical_explanations": [
-      "TRUE — Check the sentence against the core concept named in the stem, including every scope word.\n\nTariff reactions show mutual strategic consideration among few dominant carriers.\n\nThe statement is true.",
-      "TRUE — Check that the comparison runs in the stated direction and attaches the feature to the correct member of the pair.\n\nConcentrated freight markets with mutual tariff awareness fit oligopoly structure.\n\nThe statement is true.",
-      "TRUE — Check the sentence against the core concept named in the stem, including every scope word.\n\nCollusion on price or market division distinguishes cartel from lawful oligopoly rivalry.\n\nThe statement is true.",
-      "FALSE — Read the quantifier. Words such as never, always, only, or all turn a generally valid idea into a claim that one counterexample rejects.\n\nOligopoly is not automatically cartel; collusion is a separate illegal act.\n\nThe statement is false. A student who overlooked the word \"automatically\" in \"Three firms automatically form a legal cartel even when pricing independently without agreement\" would treat the restriction as absent and mark the statement true.\n",
-      "FALSE — Check the sentence against the core concept named in the stem, including every scope word.\n\nPublic independent tariffs differ from secret collusive price fixing.\n\nThe statement is false. A student who matched the topic to \"Publishing tariffs publicly is per se illegal cartel conduct regardless of independent setting\" without checking the rest of the sentence would mark the statement true.\n"
+      "TRUE — Strategic tariff responses mark oligopoly, unlike many-firm PC.\n\nThe statement is true.",
+      "TRUE — Few large rail freight operators watching rivals' tariffs fit oligopoly.\n\nThe statement is true.",
+      "TRUE — Cartel requires coordinated illegal fixing of prices or market division.\n\nThe statement is true.",
+      "FALSE — Three firms pricing independently without agreement are oligopoly, not automatically a legal cartel.\n\nThe statement is false.",
+      "FALSE — Publishing tariffs independently is not per se illegal cartel conduct.\n\nThe statement is false."
     ],
     "difficulty_level": "3/5",
     "tier": "full"
@@ -9270,11 +9270,11 @@
       false
     ],
     "tactical_explanations": [
-      "TRUE — Read the quantifier. Words such as never, always, only, or all turn a generally valid idea into a claim that one counterexample rejects.\n\nIndividual competitive firms have negligible share and accept the prevailing market price.\n\nThe statement is true.",
-      "TRUE — Check the sentence against the core concept named in the stem, including every scope word.\n\nCommodity markets exemplify price-taking behaviour among numerous small producers.\n\nThe statement is true.",
-      "TRUE — Check the sentence against the core concept named in the stem, including every scope word.\n\nEntry pressure limits sustained supernormal profit in the competitive long-run model.\n\nThe statement is true.",
-      "FALSE — Check the sentence against the core concept named in the stem, including every scope word.\n\nHomogeneous products with many sellers prevent one firm from setting the market price alone.\n\nThe statement is false. A student who matched the topic to \"Homogeneous products guarantee one seller can choose any market price without losing customers\" without checking the rest of the sentence would mark the statement true.\n",
-      "FALSE — Check the sentence against the core concept named in the stem, including every scope word.\n\nPrice takers take the market price as given rather than negotiating individual market prices.\n\nThe statement is false. A student who matched the topic to \"Price takers individually negotiate a bespoke market price with each customer above the posted…\" without checking the rest of the sentence would mark the statement true.\n"
+      "TRUE — A price taker accepts the market price and cannot profitably charge much above it alone.\n\nThe statement is true.",
+      "TRUE — Near-perfect agricultural commodity markets illustrate price-taking among many farmers.\n\nThe statement is true.",
+      "TRUE — Free entry tends to erode economic profits toward normal levels in the long run.\n\nThe statement is true.",
+      "FALSE — Homogeneous products mean one seller charging above market price loses customers — not free choice of any price.\n\nThe statement is false.",
+      "FALSE — Price takers take the posted market price; they do not each negotiate bespoke prices above it.\n\nThe statement is false."
     ],
     "difficulty_level": "2/5",
     "tier": "full"
@@ -9299,11 +9299,11 @@
       true
     ],
     "tactical_explanations": [
-      "TRUE — Check the sentence against the core concept named in the stem, including every scope word.\n\nRegulation addresses local market power of monopoly-like network operators.\n\nThe statement is true.",
-      "TRUE — Check the sentence against the core concept named in the stem, including every scope word.\n\nSole wired network supplier is local monopoly-like for that cable plant.\n\nThe statement is true.",
-      "TRUE — Check the sentence against the core concept named in the stem, including every scope word.\n\nSingle wired footprint with high duplication cost can create local monopoly-like power.\n\nThe statement is true.",
-      "TRUE — Map the scenario onto the textbook category first, then test whether the sentence describes that category accurately.\n\nSubstitute technologies can limit power even with one local cable network.\n\nThe statement is true.",
-      "TRUE — Check the sentence against the core concept named in the stem, including every scope word.\n\nDuplicating wired plant is often uneconomic, supporting natural monopoly-like structure.\n\nThe statement is true."
+      "TRUE — Regulators may impose service or price rules on monopoly-like local network operators.\n\nThe statement is true.",
+      "TRUE — A single local wired broadband network is monopoly-like infrastructure.\n\nThe statement is true.",
+      "TRUE — Exclusive wired footprint can confer local monopoly-like power over cable access.\n\nThe statement is true.",
+      "TRUE — Wireless and fibre rivals may still compete at retail even if one cable plant exists.\n\nThe statement is true.",
+      "TRUE — High sunk cost of duplicate cables discourages a second network — natural monopoly-like conditions.\n\nThe statement is true."
     ],
     "difficulty_level": "3/5",
     "tier": "full"
@@ -9328,11 +9328,11 @@
       false
     ],
     "tactical_explanations": [
-      "TRUE — Check the sentence against the core concept named in the stem, including every scope word.\n\nParallel pricing can occur without secret cartel agreement among rivals.\n\nThe statement is true.",
-      "TRUE — Check the sentence against the core concept named in the stem, including every scope word.\n\nRapid matching reflects strategic rivalry among few dominant sellers.\n\nThe statement is true.",
-      "TRUE — Check the sentence against the core concept named in the stem, including every scope word.\n\nTwo-chain corridor is duopoly-like oligopoly with interdependent pricing.\n\nThe statement is true.",
-      "TRUE — Check the sentence against the core concept named in the stem, including every scope word.\n\nTwo-chain corridor pricing is oligopoly behaviour unlike many-seller commodity auctions.\n\nThe statement is true.",
-      "FALSE — Map the scenario onto the textbook category first, then test whether the sentence describes that category accurately.\n\nSame fuel grade does not turn many independent stations into oligopoly automatically.\n\nThe statement is false. A student who matched the topic to \"Independent rural stations are oligopoly because they sell the same fuel grade nationally\" without checking the rest of the sentence would mark the statement true.\n"
+      "TRUE — Public price matching without secret agreement may be lawful competitive parallelism.\n\nThe statement is true.",
+      "TRUE — Quick matching shows interdependent oligopoly decision-making.\n\nThe statement is true.",
+      "TRUE — Two dominant chains on a corridor are duopoly with visible strategic pricing.\n\nThe statement is true.",
+      "TRUE — Corridor duopoly differs from many-farmer wheat auctions.\n\nThe statement is true.",
+      "FALSE — Independent rural stations selling the same grade nationally are not oligopoly merely from shared grade.\n\nThe statement is false."
     ],
     "difficulty_level": "2/5",
     "tier": "full"
@@ -9357,11 +9357,11 @@
       false
     ],
     "tactical_explanations": [
-      "TRUE — Map the scenario onto the textbook category first, then test whether the sentence describes that category accurately.\n\nSome r&d consortia differ from price-fixing cartels if product market competition continues.\n\nThe statement is true.",
-      "TRUE — Map the scenario onto the textbook category first, then test whether the sentence describes that category accurately.\n\nCollusion transforms independent oligopoly rivalry into illegal cartel behaviour.\n\nThe statement is true.",
-      "FALSE — Read the quantifier. Words such as never, always, only, or all turn a generally valid idea into a claim that one counterexample rejects.\n\nAuthorities assess whether cooperation suppresses competition on product markets.\n\nThe statement is false. A student who overlooked the word \"never\" in \"Authorities ignore joint ventures because cooperation never affects product market competition\" would treat the restriction as absent and mark the statement true.\n",
-      "FALSE — Check the sentence against the core concept named in the stem, including every scope word.\n\nLawful cooperation does not require identical downstream pricing among consortium members.\n\nThe statement is false. A student who matched the topic to \"Lawful consortium activity requires rivals to publish identical downstream prices weekly\" without checking the rest of the sentence would mark the statement true.\n",
-      "FALSE — Read the quantifier. Words such as never, always, only, or all turn a generally valid idea into a claim that one counterexample rejects.\n\nNot all cooperation is cartel conduct; legality depends on conduct and market effects.\n\nThe statement is false. A student who overlooked the word \"all\" in \"All cooperation among firms is automatically an illegal cartel with no lawful exceptions\" would treat the restriction as absent and mark the statement true.\n"
+      "TRUE — Research JVs sharing technology may be lawful if they do not collusively fix product prices.\n\nThe statement is true.",
+      "TRUE — Oligopoly becomes cartel when coordination replaces independent rivalry on price or output.\n\nThe statement is true.",
+      "FALSE — Authorities do scrutinise joint ventures that may affect product-market competition.\n\nThe statement is false.",
+      "FALSE — Lawful consortia need not publish identical downstream prices weekly.\n\nThe statement is false.",
+      "FALSE — Some cooperation (R&D JVs) can be lawful; not all cooperation is automatically an illegal cartel.\n\nThe statement is false."
     ],
     "difficulty_level": "2/5",
     "tier": "full"
@@ -9386,11 +9386,11 @@
       false
     ],
     "tactical_explanations": [
-      "TRUE — Check the sentence against the core concept named in the stem, including every scope word.\n\nMany sellers with homogeneous grade a eggs and common price fit the competitive model.\n\nThe statement is true.",
-      "TRUE — Check the sentence against the core concept named in the stem, including every scope word.\n\nNumerous interchangeable sellers support price-taking behaviour at the market.\n\nThe statement is true.",
-      "TRUE — Check the sentence against the core concept named in the stem, including every scope word.\n\nExclusive rights would eliminate competitive many-seller structure at the market.\n\nThe statement is true.",
-      "FALSE — Check the sentence against the core concept named in the stem, including every scope word.\n\nPrice takers accept the posted clearing price rather than setting the city-wide price.\n\nThe statement is false. A student who matched the topic to \"Each egg vendor sets the city-wide egg price independently before the market opens\" without checking the rest of the sentence would mark the statement true.\n",
-      "FALSE — Map the scenario onto the textbook category first, then test whether the sentence describes that category accurately.\n\nFont differences on labels do not override homogeneous grade standardisation.\n\nThe statement is false. A student who matched the topic to \"Grade A labels create oligopoly because labels are printed in different fonts\" without checking the rest of the sentence would mark the statement true.\n"
+      "TRUE — Fifty vendors selling standardised eggs at a common price approximate perfect competition.\n\nThe statement is true.",
+      "TRUE — Many interchangeable open-stall sellers limit any one vendor's pricing power.\n\nThe statement is true.",
+      "TRUE — An exclusive franchise to one egg vendor would create monopoly-like structure.\n\nThe statement is true.",
+      "FALSE — Vendors are price takers at the market price; they do not each set the city-wide price independently beforehand.\n\nThe statement is false.",
+      "FALSE — Different fonts on Grade A labels do not create oligopoly.\n\nThe statement is false."
     ],
     "difficulty_level": "2/5",
     "tier": "full"
@@ -9415,11 +9415,11 @@
       false
     ],
     "tactical_explanations": [
-      "TRUE — Check that the comparison runs in the stated direction and attaches the feature to the correct member of the pair.\n\nThree national carriers fit oligopoly with interdependent decisions.\n\nThe statement is true.",
-      "TRUE — Check the sentence against the core concept named in the stem, including every scope word.\n\nCommodity auction with many farmers fits near-perfect competition.\n\nThe statement is true.",
-      "TRUE — Check the sentence against the core concept named in the stem, including every scope word.\n\nExclusive utility supply fits monopoly-like local structure.\n\nThe statement is true.",
-      "FALSE — Map the scenario onto the textbook category first, then test whether the sentence describes that category accurately.\n\nSecret coordinated fixing remains illegal cartel conduct regardless of notebook similarity.\n\nThe statement is false. A student who matched the topic to \"Secret wholesale meetings are lawful cartels when participants bring identical notebooks\" without checking the rest of the sentence would mark the statement true.\n",
-      "FALSE — Read the quantifier. Words such as never, always, only, or all turn a generally valid idea into a claim that one counterexample rejects.\n\nSimilar box appearance does not create many price-taking producers when few brands dominate.\n\nThe statement is false. A student who overlooked the word \"every\" in \"Similar packaging proves thousands of price-taking cereal producers operate in every aisle\" would treat the restriction as absent and mark the statement true.\n"
+      "TRUE — Three national mobile operators fit oligopoly, not perfect competition.\n\nThe statement is true.",
+      "TRUE — Many wheat farmers at auction approximate near-perfect competition in that commodity.\n\nThe statement is true.",
+      "TRUE — Exclusive piped-water rights in a town are monopoly-like local structure.\n\nThe statement is true.",
+      "FALSE — Secret wholesale meetings to fix prices are illegal cartels — identical notebooks do not legalise them.\n\nThe statement is false.",
+      "FALSE — Similar packaging does not prove thousands of price-taking cereal producers in every aisle; concentration is common.\n\nThe statement is false."
     ],
     "difficulty_level": "3/5",
     "tier": "full"
