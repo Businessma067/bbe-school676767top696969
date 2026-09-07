@@ -1,5 +1,5 @@
-import { createFileRoute, Link, useRouterState } from "@tanstack/react-router";
-import { useEffect, useMemo, useState } from "react";
+import { createFileRoute, Link } from "@tanstack/react-router";
+import { useEffect, useMemo, useRef, useState } from "react";
 import { SiteHeader } from "@/components/SiteHeader";
 import { getCurrentAuthState, type AuthState } from "@/lib/auth-ui";
 import { supabase } from "@/integrations/supabase/client";
@@ -93,10 +93,13 @@ const SUBJECT_LABEL: Record<string, string> = {
 
 function DashboardPage() {
   const navigateHome = useLocalizedNavigate();
-  const tabParam = useRouterState({
-    select: (s) => parseDashboardTab((s.location.search as { tab?: unknown }).tab),
-  });
-  const tab = tabParam;
+  const { tab: searchTab } = Route.useSearch();
+  // Keep the last explicit tab while TanStack briefly clears search during
+  // outbound navigations (Open flashcards / matching / tutor), so the main
+  // Courses dashboard does not flash before the tool page mounts.
+  const stickyTabRef = useRef<DashboardTab>(searchTab ?? "courses");
+  if (searchTab) stickyTabRef.current = searchTab;
+  const tab = searchTab ?? stickyTabRef.current;
   const [auth, setAuth] = useState<AuthState | null | undefined>(undefined);
 
   const setTab = (next: DashboardTab) => {
@@ -548,6 +551,13 @@ function MiniStat({ label, value }: { label: string; value: number | string }) {
 /* -------------------- STUDY MODES TAB -------------------- */
 
 function GamesTab() {
+  const navigate = useLocalizedNavigate();
+
+  const openTool = (to: "/flashcards" | "/matching" | "/tutor-exam") => {
+    // Explicit empty search so tab=games is not stripped on /dashboard first.
+    void navigate({ to, search: {} });
+  };
+
   return (
     <div className="space-y-6">
       <div>
@@ -557,9 +567,10 @@ function GamesTab() {
         </p>
       </div>
       <div className="grid gap-3 sm:grid-cols-2 lg:grid-cols-3">
-        <Link
-          to="/flashcards"
-          className="overflow-hidden rounded-2xl border border-border bg-card shadow-sm transition-all hover:-translate-y-0.5 hover:shadow-md"
+        <button
+          type="button"
+          onClick={() => openTool("/flashcards")}
+          className="overflow-hidden rounded-2xl border border-border bg-card text-left shadow-sm transition-all hover:-translate-y-0.5 hover:shadow-md"
         >
           <div className="h-32 w-full overflow-hidden">
             <FlashcardsModeArt />
@@ -574,10 +585,11 @@ function GamesTab() {
             </p>
             <p className="mt-4 text-xs font-semibold text-caramel-deep">Open flashcards →</p>
           </div>
-        </Link>
-        <Link
-          to="/matching"
-          className="overflow-hidden rounded-2xl border border-border bg-card shadow-sm transition-all hover:-translate-y-0.5 hover:shadow-md"
+        </button>
+        <button
+          type="button"
+          onClick={() => openTool("/matching")}
+          className="overflow-hidden rounded-2xl border border-border bg-card text-left shadow-sm transition-all hover:-translate-y-0.5 hover:shadow-md"
         >
           <div className="h-32 w-full overflow-hidden">
             <MatchingModeArt />
@@ -592,10 +604,11 @@ function GamesTab() {
             </p>
             <p className="mt-4 text-xs font-semibold text-caramel-deep">Open matching →</p>
           </div>
-        </Link>
-        <Link
-          to="/tutor-exam"
-          className="overflow-hidden rounded-2xl border border-border bg-card shadow-sm transition-all hover:-translate-y-0.5 hover:shadow-md"
+        </button>
+        <button
+          type="button"
+          onClick={() => openTool("/tutor-exam")}
+          className="overflow-hidden rounded-2xl border border-border bg-card text-left shadow-sm transition-all hover:-translate-y-0.5 hover:shadow-md"
         >
           <div className="h-32 w-full overflow-hidden">
             <TutorModeArt />
@@ -610,7 +623,7 @@ function GamesTab() {
             </p>
             <p className="mt-4 text-xs font-semibold text-caramel-deep">Open tutor exam →</p>
           </div>
-        </Link>
+        </button>
       </div>
     </div>
   );

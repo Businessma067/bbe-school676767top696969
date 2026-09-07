@@ -1,11 +1,25 @@
 import { useEffect, useState, type ReactNode } from "react";
-import { fetchAccessState, tierAtLeast, type AccessTier } from "@/lib/entitlements";
+import {
+  fetchAccessState,
+  peekAccessState,
+  tierAtLeast,
+  type AccessTier,
+} from "@/lib/entitlements";
 import { useLocalizedNavigate } from "@/hooks/use-localized-navigate";
+
+function isAllowedForTier(tier: AccessTier | undefined, minTier: AccessTier, signedIn: boolean) {
+  if (!signedIn) return false;
+  if (minTier === "none") return true;
+  return tier != null && tierAtLeast(tier, minTier);
+}
 
 /**
  * Gates paid study tools behind a real entitlement (paid via Monobank or
  * unlocked with a promocode). Guests are sent to login, signed-in users
  * without the required tier are sent to the matching product page.
+ *
+ * Uses a short-lived in-memory entitlement cache so navigating between
+ * flashcards / matching / tutor does not blank the page on every click.
  */
 export function RequireFullCourse({
   children,
@@ -16,7 +30,10 @@ export function RequireFullCourse({
   minTier?: AccessTier;
 }) {
   const navigate = useLocalizedNavigate();
-  const [allowed, setAllowed] = useState(false);
+  const cached = peekAccessState();
+  const [allowed, setAllowed] = useState(() =>
+    cached ? isAllowedForTier(cached.tier, minTier, cached.signedIn) : false,
+  );
 
   useEffect(() => {
     let cancelled = false;
@@ -26,10 +43,12 @@ export function RequireFullCourse({
       if (cancelled) return;
 
       if (!state.signedIn) {
+        setAllowed(false);
         navigate({ to: "/login" });
         return;
       }
       if (minTier !== "none" && !tierAtLeast(state.tier, minTier)) {
+        setAllowed(false);
         navigate({
           to: minTier === "full" ? "/products/full-course" : "/products/lite-bbe-course",
         });
