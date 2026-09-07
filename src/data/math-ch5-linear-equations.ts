@@ -96,8 +96,6 @@ The claim asserts
 
 $$120$$
 
-$.
-
 The computed figure does not match the claim.
 
 The shared elimination already fixed the unique pair; this letter only tests the claim's extra arithmetic.
@@ -1151,7 +1149,7 @@ Those two displays do not agree.
 So the statement is False.`,
       `**C.** → True
 
-Read the figure already produced by the shared solve, then compare it with the claim.
+Scale the recovered Standard count by the 4 assembly hours listed per unit, then compare the product with the claim.
 
 The overview recovered $s=75$ Standard ovens at 4 hours each:
 
@@ -1163,12 +1161,12 @@ The claim asserts
 
 $$300$$
 
-$ assembly hours.
+assembly hours.
 
 So the statement is True.`,
       `**D.** → False
 
-Read the figure already produced by the shared solve, then compare it with the claim.
+Scale the recovered Deluxe count by the 9 assembly hours listed per unit, then compare the product with the claim.
 
 The overview recovered $d=55$ Deluxe ovens at 9 hours each:
 
@@ -1180,12 +1178,12 @@ The claim asserts
 
 $$500$$
 
-$ assembly hours.
+assembly hours.
 
 So the statement is False.`,
       `**E.** → True
 
-Read the figure already produced by the shared solve, then compare it with the claim.
+Scale the recovered Standard count by the \\$120 material cost per unit, then compare the product with the claim.
 
 The overview recovered $s=75$ Standard ovens at \\$120 each:
 
@@ -1196,8 +1194,6 @@ $$
 The claim asserts
 
 $$9000.00$$
-
-.
 
 So the statement is True.`,
     ],
