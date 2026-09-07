@@ -425,15 +425,136 @@ def primary_concept(subsection: str, statement: str) -> str:
     )
 
 
+def _focus_bits(statement: str) -> str:
+    """Pull a few concrete nouns/numbers from the statement for stem-tied prose."""
+    nums = re.findall(r"€?\d[\d,]*(?:\.\d+)?(?:\s*(?:euros?|euro|%|percent))?", statement, re.I)
+    words = re.findall(
+        r"\b(?:household|entrepreneur|firm|government|student|internship|tutoring|crew|press|"
+        r"pharmacy|pipeline|broadband|cartel|oligopoly|monopoly|wage|rent|demand|supply|"
+        r"inflation|transfer|subsidy|quota|privatisation|privatization|micro|macro|"
+        r"scarcity|opportunity cost|barter|goods?|services?|courts?|defence|defense|"
+        r"container|shipping|price taker|equilibrium|shift|surplus|shortage)\b",
+        statement,
+        re.I,
+    )
+    seen, bits = set(), []
+    for w in words + nums:
+        k = w.lower()
+        if k not in seen:
+            seen.add(k)
+            bits.append(w)
+    return ", ".join(bits[:5])
+
+
+def _teach_from_statement(statement: str, truth: bool, focus: str) -> str:
+    """Concrete teaching paragraph when prior mid was too thin to reuse."""
+    sl = statement.lower()
+    focus_bit = f" Focus points: {focus}." if focus else ""
+
+    if "opportunity cost" in sl or "forgone" in sl or "giving up" in sl:
+        if truth:
+            return (
+                "Name the chosen option and the next-best option side by side; the opportunity cost is "
+                "whatever benefit sits with the option not taken — income, experience, output, or leisure — "
+                f"not the invoice paid for the chosen path.{focus_bit}"
+            )
+        return (
+            "The trap is treating a zero price, shared premises, or an accounting outlay as if that erased "
+            "opportunity cost. The forgone alternative’s value remains even when no cash changes hands on the "
+            f"chosen option.{focus_bit}"
+        )
+
+    if "micro" in sl or "macro" in sl:
+        if truth:
+            return (
+                "Ask what unit is being studied: one household, firm, or transaction is micro; nationwide "
+                f"totals and overall price-level or output aggregates are macro. Scope decides the label.{focus_bit}"
+            )
+        return (
+            "A price change, a national bonus in the background, or the word “economy” does not by itself "
+            "make an analysis macro. If the object of study is still one actor’s choice, the correct scope "
+            f"remains micro — and the reverse for aggregates.{focus_bit}"
+        )
+
+    if any(w in sl for w in ("oligopoly", "cartel", "collus", "monopoly", "perfect competition", "price taker")):
+        if truth:
+            return (
+                "Count sellers, check entry, and ask whether rivals’ strategies matter. Few interdependent "
+                "firms point to oligopoly; collusion to raise joint prices is cartel conduct; one dominant "
+                f"seller is monopoly-like; many price-taking sellers fit perfect competition.{focus_bit}"
+            )
+        return (
+            "Structure does not follow from a single surface trait (homogeneous product, physical extraction, "
+            "or one network layer). Wrong seller count, wrong entry story, or treating rivalry as collusion "
+            f"is enough to reject the claim.{focus_bit}"
+        )
+
+    if any(w in sl for w in ("demand", "supply", "equilibrium", "shift", "surplus", "shortage", "wage", "rent")):
+        if truth:
+            return (
+                "Separate movements along a curve (own-price) from shifts (costs, income, population, tastes). "
+                "Equilibrium is where quantity demanded equals quantity supplied; binding floors or ceilings "
+                f"can create surplus or shortage when set away from that price.{focus_bit}"
+            )
+        return (
+            "The claim confuses a shift with a movement, or misreads surplus/shortage signs. Cutting price "
+            "raises quantity demanded; vacant stock at a sticky asking price usually signals the price is "
+            f"too high, not too low.{focus_bit}"
+        )
+
+    if any(w in sl for w in ("planned", "market econom", "free market", "consumer sovereignty", "privat", "social market")):
+        if truth:
+            return (
+                "Sort the system by who decides output: central directives and quotas versus private decisions "
+                "and price signals, with social-market or eco-social overlays adding labour and environmental "
+                f"institutions without erasing competition.{focus_bit}"
+            )
+        return (
+            "Market systems still keep courts and defence; planned systems still face scarcity; using money "
+            "does not make coordination mechanisms identical. Absolute bans or “never/always” transition claims "
+            f"overreach.{focus_bit}"
+        )
+
+    if any(w in sl for w in ("scarcity", "economis", "exchange", "household", "entrepreneur", "goods", "service", "need", "want")):
+        if truth:
+            return (
+                "Tie the claim to limited means versus unlimited ends, to goods versus services, or to the "
+                f"household/entrepreneur role actually performing the action in the stem.{focus_bit}"
+            )
+        return (
+            "Salary, registration status, or use of money does not abolish scarcity, redefine goods as "
+            f"services, or bar households from exchange. Absolute exclusions are the usual failure mode.{focus_bit}"
+        )
+
+    if any(w in sl for w in ("money", "inflation", "circular", "public good", "specialis", "division of labour", "transfer")):
+        if truth:
+            return (
+                "Anchor the claim in money’s functions, the circular flow of income and spending, public-good "
+                f"properties, transfers versus pure public provision, or gains from specialisation.{focus_bit}"
+            )
+        return (
+            "Do not collapse money’s three functions into one, treat one shop’s price change as inflation, "
+            "or convert every tax-funded item into a pure public good. Specialisation raises output but also "
+            f"creates interdependence — denying either side misstates the lesson.{focus_bit}"
+        )
+
+    if truth:
+        return (
+            "Walk the definition onto the stem’s actors and constraints, then confirm the sentence’s "
+            f"category and reason both survive that check.{focus_bit}"
+        )
+    return (
+        "Walk the definition onto the stem’s actors and constraints, then spot where the sentence’s "
+        f"category or absolute reason breaks that check.{focus_bit}"
+    )
+
+
 def stem_application(statement: str, truth: bool, cue: str, mid: str, concept: str = "") -> list[str]:
     """Stem-specific application + trap contrast paragraphs."""
     sl = statement.lower()
-    pin = statement.rstrip(".")
-    if len(pin) > 150:
-        pin = pin[:147] + "…"
+    focus = _focus_bits(statement)
     paras: list[str] = []
 
-    # Prefer substantive retained mid when it already teaches (and isn't a clone of the concept)
     mid_ok = mid and len(mid) >= 90
     if mid_ok:
         stem_core = re.sub(r"[^a-z0-9 ]", "", sl)[:70]
@@ -449,7 +570,6 @@ def stem_application(statement: str, truth: bool, cue: str, mid: str, concept: s
         m = mid[0].upper() + mid[1:]
         if not m.endswith((".", "$$", ")")):
             m += "."
-        # Split very long mid into two paragraphs at a sentence boundary near the middle
         sents = re.split(r"(?<=[.!?])\s+", m)
         if len(sents) >= 4:
             cut = max(2, len(sents) // 2)
@@ -457,62 +577,88 @@ def stem_application(statement: str, truth: bool, cue: str, mid: str, concept: s
             paras.append(" ".join(sents[cut:]))
         else:
             paras.append(m)
+    else:
+        paras.append(_teach_from_statement(statement, truth, focus))
 
+    focus_bit = f" (here: {focus})" if focus else ""
     if cue and not _abstract_ctx(cue):
+        setting = cue[0].lower() + cue[1:] if cue and cue[0].isupper() else cue
         if truth:
             paras.append(
-                f"In this stem — {cue} — that reading fits: the actors, resources, or market scope named "
-                f"in the claim line up with the definition just stated."
+                f"Map that definition onto the case where {setting}. The claim’s actors and "
+                f"constraints{focus_bit} line up with the concept: the sentence describes the same "
+                f"mechanism the chapter teaches, not a neighbouring idea with similar vocabulary."
             )
         else:
             paras.append(
-                f"In this stem — {cue} — the sentence mislabels the situation or overreaches. The facts "
-                f"may mention a related detail, but they do not support the absolute conclusion drawn."
+                f"Map that definition onto the case where {setting}. Even if the stem mentions related "
+                f"details{focus_bit}, those details do not carry the claim’s conclusion — the sentence "
+                f"either widens the concept past its test or attaches the wrong label to the facts."
             )
     else:
         if truth:
             paras.append(
-                f"Applied to the claim «{pin}», the definition matches the category, mechanism, or "
-                f"comparison the sentence asserts."
+                f"Held against the chapter test{focus_bit}, each operative word earns its place: the "
+                f"category, the comparison, and the mechanism survive when checked one by one."
             )
         else:
             paras.append(
-                f"Applied to the claim «{pin}», the definition does not support the category or "
-                f"absolute comparison the sentence asserts."
+                f"Held against the chapter test{focus_bit}, the familiar vocabulary may sound economic, "
+                f"but the operative restriction or reason fails — so the sentence mislabels the situation."
             )
 
+    pick = sum(ord(ch) for ch in statement) % 3
     if truth:
-        if any(w in sl for w in ("because", "means", "so ", "therefore")):
-            paras.append(
-                "The linking reason matters: it names the mechanism — forgone alternative, analytical "
-                "scope, price signal, institutional rule, or cost condition — that makes the classification hold."
+        if "because" in sl or "means" in sl:
+            options = (
+                "Keep the reason clause: it names why the classification holds (forgone alternative, "
+                "scope of analysis, price signal, or institutional rule) rather than restating the conclusion alone.",
+                "The causal link is doing the teaching work — strip it out and the remaining label would be too thin to judge.",
+                "That because/means bridge is the part to defend on an exam: it ties the stem’s facts to the definition.",
+            )
+        elif any(w in sl for w in ("opportunity cost", "forgone", "micro", "macro", "equilibrium", "shift")):
+            options = (
+                "A useful check is the opposite error: treat opportunity cost as the money paid, or treat "
+                "one buyer’s choice as macro, or treat a shift as a movement — those near-misses fail, which confirms this wording.",
+                "If you replaced the key term with its neighbour (accounting outlay, micro/macro swap, "
+                "movement vs shift), the sentence would stop matching the stem — that contrast locks the idea.",
+                "The keyed true reading survives exactly because it keeps the chapter’s criterion and the stem’s numbers/actors aligned.",
             )
         else:
-            paras.append(
-                "Contrast the near-miss error to lock the idea: if you swapped the opposite label "
-                "(want for need, macro for micro, accounting cost for opportunity cost, monopoly for "
-                "perfect competition), the sentence would fail — which is why this wording is the keyed true reading."
+            options = (
+                "Nothing in the stem contradicts that reading, so the assertion stands as a correct application of the definition.",
+                "The sentence therefore reports the concept accurately for this item once the definition is held fixed.",
+                "Under that classification the claim describes the situation correctly rather than a lookalike category.",
             )
+        paras.append(options[pick])
     else:
-        if any(q in sl for q in ("always", "never", "only", "cannot", "regardless", "guarantees", "alone", "every", "all ", "zero", "nothing", "no ")):
-            paras.append(
-                "Absolute words are the usual trap here. One counterexample under the correct criterion "
-                "— another actor, another scope, a non-money cost, or a public function that still exists — "
-                "is enough to reject the claim."
+        if any(q in sl for q in ("always", "never", "only", "cannot", "regardless", "guarantees", "alone", "every", "all ", "zero", "nothing")):
+            options = (
+                "Absolute wording is the trap: economics definitions leave room for counterexamples — "
+                "another actor, another scope, a non-money cost, or a public function that still exists. "
+                "One clear counterexample rejects the sentence.",
+                "Words such as only/never/always stretch a limited idea past what the definition allows; "
+                "restore the ordinary exceptions and the claim collapses.",
+                "The absolute quantifier is doing the damage. Soften it to the chapter’s actual scope and "
+                "the remaining content no longer supports a false blanket rule.",
             )
         elif "because" in sl:
-            paras.append(
-                "The because-clause attaches the wrong reason to the label. A real detail in the stem "
-                "(a national programme, a zero wage, shared premises, use of money) does not justify the "
-                "over-broad conclusion."
+            options = (
+                "The because-clause attaches the wrong reason to the label. A real detail (a national "
+                "programme, a zero wage, shared premises, use of money) does not justify the over-broad conclusion.",
+                "Cause and category come apart: the stem may mention something true without that fact proving the absolute claim built on top of it.",
+                "Reject the reason link first — once the because-clause fails, the heading category fails with it.",
             )
         else:
-            paras.append(
-                "Restore the textbook test and the assertion falls away: it either mislabels the category "
-                "or reverses the comparison the chapter actually teaches."
+            options = (
+                "Restore the textbook test and the assertion falls away: it mislabels the category or reverses the comparison the chapter actually teaches.",
+                "Swap in the correct criterion and the sentence no longer describes the case — that is enough to mark it false.",
+                "The mismatch is in the defining feature, not in a missing buzzword; fix the feature and the claim disappears.",
             )
+        paras.append(options[pick])
 
     return paras
+
 
 
 def deepen_letter(subsection: str, statement: str, truth: bool, old_expl: str, context: str = "") -> str:
