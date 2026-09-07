@@ -1,820 +1,1019 @@
 -- Update expanded explanations for 4.1-part2 (25 cases).
 -- Safe to re-run: only updates tactical_explanations.
 
-UPDATE public.economics_cases SET tactical_explanations = ARRAY['TRUE — The claim is correct. When revenues exceed expenses, the business makes a profit that can be retained and reinvested.
+UPDATE public.economics_cases SET tactical_explanations = ARRAY['TRUE — Profit is the surplus when revenues exceed expenses. That surplus can be left in the business and used to buy new equipment or otherwise reinvest—exactly the decision facing the profitable sole trader in the stem.
 
-The scenario is a worked example of sole proprietorship / sole traders. Translate the story into the textbook category first; only then judge whether the sentence describes that category accurately.
+Internal finance recycles surplus already inside the firm (retained profit, asset sales). External finance comes from outside providers (owner start-up savings in this framework, investors, banks, suppliers on credit). Where the cash sits in the bank account does not decide the label.
 
-In this setting, operating surplus creates profit available for retention or withdrawal. The wording matches the textbook relationship without adding extra conditions.
+On that basis the assertion matches the ownership or finance rule being tested.
 
-The reasoning chain is complete, so mark the statement true.', 'TRUE — The claim is correct. Profit retained in the business rather than withdrawn by the proprietor counts as internal finance.
+The statement is true.
+', 'TRUE — Internal finance comes from resources already inside the firm: profit kept rather than withdrawn, or cash released by selling assets the business no longer needs. No new creditor is created for that funding slice, so interest charges attached to borrowing are avoided.
 
-The section on sole proprietorship / sole traders frequently contrasts two similar ideas side by side. A comparison statement is true only if the relationship is stated in the right direction and applies to the right concept pair.
+If the proprietor does not withdraw the profit, the retained amount funds the firm from inside. Classification as internal finance follows from keeping earned surplus in the business.
 
-In this setting, reinvested earnings are an internal funding source. The wording matches the textbook relationship without adding extra conditions.
+So the sentence is a correct description of the mechanism at work in this case.
 
-Every part of the claim aligns with the standard concept, so the statement stands.', 'TRUE — Evaluated against the textbook standard, this assertion is correct. The sole proprietor may take profit out of the business instead of reinvesting it for expansion.
+The statement is true.
+', 'TRUE — Withdrawal is always an available choice for a sole trader: the owner can take profit out for personal use instead of funding expansion. Reinvestment is optional, not automatic.
 
-This tests discrimination within sole proprietorship / sole traders: local versus international scope, equity versus debt, product versus market orientation, and similar pairs.
+Sole proprietorship unites ownership and control in one person, has no separate legal personality (personal tax on profits), and carries unlimited liability so private assets can be reached if business resources fall short.
 
-Applied carefully, the proprietor may withdraw profit rather than retain it. Nothing in the sentence stretches the concept beyond its standard use.
+That is why the claim stands for this form of business or source of finance.
 
-No qualifying word breaks the definition or scenario, so the answer is true.', 'TRUE — The claim is correct. Retained profit reinvested avoids the financial charges associated with creditor borrowing.
+The statement is true.
+', 'TRUE — Creditor borrowing typically carries interest and related financial charges. Funding equipment from retained profit avoids those charges because no lender is providing the money.
 
-This statement draws on sole proprietorship / sole traders. Treat it as a checklist against the core concept named in the stem, not as a general opinion about business.
+Internal finance recycles surplus already inside the firm (retained profit, asset sales). External finance comes from outside providers (owner start-up savings in this framework, investors, banks, suppliers on credit). Where the cash sits in the bank account does not decide the label.
 
-In this setting, internal funds avoid borrowing costs such as interest. The wording matches the textbook relationship without adding extra conditions.
+That is why the claim stands for this form of business or source of finance.
 
-The reasoning chain is complete, so mark the statement true.', 'TRUE — This statement is correct. Using internally generated funds avoids interest payments that external creditors would charge.
+The statement is true.
+', 'TRUE — In this chapter''s sources-of-finance framework, money injected from outside retained trading surplus is external: owner savings at start-up, investor capital, and bank or other creditor funds. Legal sameness of owner and firm does not re-label owner capital as internal.
 
-The relevant theory comes from sole proprietorship / sole traders. Identify which definition or relationship the sentence is trying to test before deciding true or false.
+Internally generated funds similarly avoid interest payments that external creditors would charge on a loan of the same amount. The cost saving is the economic reason retained profit is attractive when surplus exists.
 
-Applied carefully, internal finance carries no creditor interest charges. Nothing in the sentence stretches the concept beyond its standard use.
+So the sentence is a correct description of the mechanism at work in this case.
 
-Every part of the claim aligns with the standard concept, so the statement stands.'] WHERE case_id = 'CASE 4.1.26' AND tier = 'full';
-UPDATE public.economics_cases SET tactical_explanations = ARRAY['FALSE — On the Fuhrmann definition used in the entrance exam, the sentence is false. Retained profit is never accepted as security and therefore collateral applies only to external borrowing.
+The statement is true.
+'] WHERE case_id = 'CASE 4.1.26' AND tier = 'full';
+UPDATE public.economics_cases SET tactical_explanations = ARRAY['FALSE — Collateral means pledgeable assets a lender can claim if the borrower defaults. Retained profit is not itself a collateral object—it is an internal funding source—but assets built up with retained profit can still be pledged for a loan. The statement’s claim that retained profit is “never accepted as security,” and its leap that collateral therefore “applies only to external borrowing,” muddles source-of-finance labels with security practice. External borrowing is where collateral requirements appear, yet the wording falsely treats retained profit as a rejected form of security rather than explaining that collateral attaches to assets in creditor relationships. The assertion as stated is not a correct principle.
 
-Although the subject matter is sole proprietorship / sole traders, this is really a logic check on overstatement. Non-profit surpluses, mixed economies, and partial market failure are classic cases where absolute wording fails.
+So the sentence does not survive once the correct mechanism is applied.
 
-Applied to this claim, retained profit is internal finance and involves no creditor collateral. That is why the sentence does not survive careful reading.
+The statement is false.
+', 'TRUE — Long-term lenders commonly require pledgeable assets — often land and property via a mortgage — as security. Collateral backs repayment; the loan remains a liability. If private property was pledged and the business cannot repay, that property remains at stake.
 
-Watch the absolute wording "never": exam statements often sound plausible until a single scope word turns an otherwise familiar idea into an overclaim.
+For long-term credit, financial institutions typically want pledgeable assets as collateral so they have recourse if the borrower defaults over a multi-year loan life. That security demand is standard lending practice for sole proprietors seeking long-term bank finance.
 
-The statement sounds plausible but fails on precision, so it is false.', 'TRUE — Evaluated against the textbook standard, this assertion is correct. Financial institutions typically require pledgeable assets as collateral when granting long-term credit.
+So the sentence is a correct description of the mechanism at work in this case.
 
-Here you must apply ideas from sole proprietorship / sole traders to a concrete situation rather than recite a definition from memory. Ownership, customer type, stakeholder group, or country of production usually decides the verdict.
+The statement is true.
+', 'TRUE — Long-term lenders commonly require pledgeable assets — often land and property via a mortgage — as security. Collateral backs repayment; the loan remains a liability. If private property was pledged and the business cannot repay, that property remains at stake.
 
-Applied carefully, lenders commonly demand security for longer-term exposure. Nothing in the sentence stretches the concept beyond its standard use.
+Mortgages over land and property are a common way to back long-term bank loans. The property is pledged; the loan remains repayable according to the mortgage and loan agreement.
 
-The reasoning chain is complete, so mark the statement true.', 'TRUE — This statement is correct. Property-backed mortgages commonly secure long-term bank lending to sole proprietors.
+That is why the claim stands for this form of business or source of finance.
 
-The relevant theory comes from sole proprietorship / sole traders. Identify which definition or relationship the sentence is trying to test before deciding true or false.
+The statement is true.
+', 'TRUE — A creditor advances money for an agreed period. Repayment follows the contract and usually includes interest as the price of borrowing. Time-limited advance plus contractual repayment is the basic lending mechanism.
 
-Applied carefully, mortgages on land and property frequently back long-term loans. Nothing in the sentence stretches the concept beyond its standard use.
+Apply the chapter mechanism to the exact wording: name the ownership form or finance source correctly, then check whether the claimed tax, liability, repayment, or matching consequence actually follows from that category.
 
-The reasoning chain is complete, so mark the statement true.', 'TRUE — Evaluated against the textbook standard, this assertion is correct. The creditor provides money for a certain time period that must be repaid according to the agreement, usually with interest.
+So the sentence is a correct description of the mechanism at work in this case.
 
-The relevant theory comes from sole proprietorship / sole traders. Identify which definition or relationship the sentence is trying to test before deciding true or false.
+The statement is true.
+', 'TRUE — Long-term lenders commonly require pledgeable assets — often land and property via a mortgage — as security. Collateral backs repayment; the loan remains a liability. If private property was pledged and the business cannot repay, that property remains at stake.
 
-Applied carefully, credit agreements specify repayment periods and interest as the rate of return. Nothing in the sentence stretches the concept beyond its standard use.
+If private property was mortgaged as collateral and the business cannot repay, that property remains at stake: the lender can enforce the security. Unlimited liability and collateral enforcement can both put the pledged private asset at risk when default occurs.
 
-The reasoning chain is complete, so mark the statement true.', 'TRUE — Evaluated against the textbook standard, this assertion is correct. If private property served as mortgage collateral, it remains at stake when the business cannot repay the loan.
+So the sentence is a correct description of the mechanism at work in this case.
 
-The topic is sole proprietorship / sole traders, but the decisive skill here is reading quantifiers. Words such as never, always, only, or all turn a generally true idea into a claim that can be rejected by one routine counterexample.
+The statement is true.
+'] WHERE case_id = 'CASE 4.1.27' AND tier = 'full';
+UPDATE public.economics_cases SET tactical_explanations = ARRAY['TRUE — Unlimited liability means repayment is not capped at assets labelled as business property. If business resources cannot cover debts, creditors may reach the proprietor''s private assets. That personal exposure is the risk counterpart of undivided control.
 
-Applied carefully, mortgaged private property can be claimed upon default. Nothing in the sentence stretches the concept beyond its standard use.
+When business debts exceed what firm resources can cover, unlimited liability lets creditors pursue the sole proprietor''s private assets for the shortfall. That personal reach is the insolvency principle the stem asks for.
 
-The reasoning chain is complete, so mark the statement true.'] WHERE case_id = 'CASE 4.1.27' AND tier = 'full';
-UPDATE public.economics_cases SET tactical_explanations = ARRAY['TRUE — This statement is correct. When business debts exceed firm resources, unlimited liability allows creditors to reach the sole proprietor''s private assets.
+That is why the claim stands for this form of business or source of finance.
 
-Here you must apply ideas from sole proprietorship / sole traders to a concrete situation rather than recite a definition from memory. Ownership, customer type, stakeholder group, or country of production usually decides the verdict.
+The statement is true.
+', 'FALSE — There is no such thing as incorporating informally as a sole trader. Sole proprietorship remains unincorporated; creditor claims are not limited to balance-sheet business assets. Limited claims of that sort belong to limited companies, not to this form.
 
-Applied carefully, unlimited liability extends creditor reach to personal property. Nothing in the sentence stretches the concept beyond its standard use.
+Sole proprietorship unites ownership and control in one person, has no separate legal personality (personal tax on profits), and carries unlimited liability so private assets can be reached if business resources fall short.
 
-The reasoning chain is complete, so mark the statement true.', 'FALSE — The claim is false. Incorporating informally as a sole trader limits creditor claims to assets formally recorded on the business balance sheet.
+So the sentence does not survive once the correct mechanism is applied.
 
-This statement draws on sole proprietorship / sole traders. Treat it as a checklist against the core concept named in the stem, not as a general opinion about business.
+The statement is false.
+', 'FALSE — Limited liability would wall off private assets once business assets are exhausted; sole proprietors do not enjoy that wall. Collateral pledged to a lender secures that lender''s claim — it does not convert the firm into a limited company or erase unlimited liability for remaining shortfalls.
 
-Applied to this claim, sole proprietorships are unincorporated and do not confer limited liability. That is why the sentence does not survive careful reading.
+Employment does not shift unlimited liability onto workers, hand them strategic control, or incorporate the firm. Headcount is not an incorporation trigger and wages do not allocate owner liability.
 
-Because the decisive detail is wrong, mark the statement false.', 'FALSE — The claim is false. Employees hired by the sole proprietor share unlimited liability for all business obligations equally with the owner.
+Employees do not share unlimited liability equally with the owner. Residual responsibility for business obligations stays with the sole proprietor. Wages do not convert staff into co-liable owners.
 
-Although the subject matter is sole proprietorship / sole traders, this is really a logic check on overstatement. Non-profit surpluses, mixed economies, and partial market failure are classic cases where absolute wording fails.
+So the sentence does not survive once the correct mechanism is applied.
 
-Applied to this claim, employees do not assume the proprietor''s unlimited liability. That is why the sentence does not survive careful reading.
+The statement is false.
+', 'FALSE — Trade credit must be repaid within the agreed period. It is typically short-term purchase-cycle finance, not long-term debt, and it does not erase the proprietor''s liability or the need to manage cash-flow timing.
 
-Watch the absolute wording "all": exam statements often sound plausible until a single scope word turns an otherwise familiar idea into an overclaim.
+Lack of separate legal personality does not dissolve trade credit obligations. Amounts owed to suppliers remain payable by the proprietor. Unincorporated status explains personal exposure; it does not make payables disappear.
 
-The statement sounds plausible but fails on precision, so it is false.', 'FALSE — Evaluated against the textbook standard, this assertion is false. Trade credit obligations disappear automatically when the sole proprietorship is not a separate legal entity.
+On that basis the assertion attaches the wrong legal, tax, liability, or finance label.
 
-The topic is sole proprietorship / sole traders, but the decisive skill here is reading quantifiers. Words such as never, always, only, or all turn a generally true idea into a claim that can be rejected by one routine counterexample.
+The statement is false.
+', 'FALSE — Limited liability would wall off private assets once business assets are exhausted; sole proprietors do not enjoy that wall. Collateral pledged to a lender secures that lender''s claim — it does not convert the firm into a limited company or erase unlimited liability for remaining shortfalls.
 
-The statement overreaches because lack of legal personality does not cancel trade credit liabilities. The trap is to agree with the topic while missing the one detail that breaks the logic.
+Unlimited liability covers business debts and obligations generally, not only formal external borrowing. Trade payables, unpaid expenses, and other obligations can all engage personal exposure. Confining unlimited liability to bank-style external loans is too narrow.
 
-Watch the absolute wording "automatically": exam statements often sound plausible until a single scope word turns an otherwise familiar idea into an overclaim.
+That misclassification is enough to reject the claim.
 
-Once the overclaim or mislabel is exposed, the only consistent answer is false.', 'FALSE — Evaluated against the textbook standard, this assertion is false. Unlimited liability applies only when the sole proprietorship borrows from external creditors.
+The statement is false.
+'] WHERE case_id = 'CASE 4.1.28' AND tier = 'full';
+UPDATE public.economics_cases SET tactical_explanations = ARRAY['TRUE — A bank overdraft is flexible short-term credit on a current account: the balance may go negative within a limit. Interest is charged when the account is overdrawn, not on a healthy positive balance. The facility is external debt, not internal finance.
 
-Here you must apply ideas from sole proprietorship / sole traders to a concrete situation rather than recite a definition from memory. Ownership, customer type, stakeholder group, or country of production usually decides the verdict.
+After a business current account is opened, an overdraft facility lets the balance go negative within a limit. That supplies flexible short-term credit to bridge seasonal gaps between receipts and payments without arranging a new term loan each time.
 
-The statement overreaches because unlimited liability covers all business debts, not only external borrowing. The trap is to agree with the topic while missing the one detail that breaks the logic.
+On that basis the assertion matches the ownership or finance rule being tested.
 
-The statement sounds plausible but fails on precision, so it is false.'] WHERE case_id = 'CASE 4.1.28' AND tier = 'full';
-UPDATE public.economics_cases SET tactical_explanations = ARRAY['TRUE — The claim is correct. Once a business current account is opened, an overdraft facility can provide flexible short-term credit for cash shortfalls.
+The statement is true.
+', 'FALSE — An overdraft does not incorporate the firm, create limited liability, or cease to be a liability because it is short-term. Interest is not charged as if a positive credit balance were borrowed.
 
-This statement draws on sole proprietorship / sole traders. Treat it as a checklist against the core concept named in the stem, not as a general opinion about business.
+Shareholders'' financial exposure is generally limited to what they invested in share capital. Creditors claim against the company as legal person; they do not automatically seize shareholders'' private homes for ordinary company debts.
 
-In this setting, overdrafts are flexible short-term credit linked to a business bank account. The wording matches the textbook relationship without adding extra conditions.
+An overdraft is a banking product, not an incorporation event. It does not convert the sole proprietorship into a corporation or create limited liability. Legal form and liability regime stay as they were.
 
-Every part of the claim aligns with the standard concept, so the statement stands.', 'FALSE — Evaluated against the textbook standard, this assertion is false. An overdraft facility converts the sole proprietorship into a corporation with limited liability.
+On that basis the assertion attaches the wrong legal, tax, liability, or finance label.
 
-The relevant theory comes from sole proprietorship / sole traders. Identify which definition or relationship the sentence is trying to test before deciding true or false.
+The statement is false.
+', 'FALSE — An overdraft does not incorporate the firm, create limited liability, or cease to be a liability because it is short-term. Interest is not charged as if a positive credit balance were borrowed.
 
-The statement overreaches because overdraft arrangements do not change legal structure or liability. The trap is to agree with the topic while missing the one detail that breaks the logic.
+Short maturity does not remove liability recognition. An overdrawn balance is still an amount owed to the bank and counts among the proprietor''s business liabilities until cleared.
 
-Once the overclaim or mislabel is exposed, the only consistent answer is false.', 'FALSE — This statement is false. Because overdrafts are short-term, they are not counted among the proprietor''s business liabilities.
+That misclassification is enough to reject the claim.
 
-Here you must apply ideas from sole proprietorship / sole traders to a concrete situation rather than recite a definition from memory. Ownership, customer type, stakeholder group, or country of production usually decides the verdict.
+The statement is false.
+', 'FALSE — An overdraft does not incorporate the firm, create limited liability, or cease to be a liability because it is short-term. Interest is not charged as if a positive credit balance were borrowed.
 
-The statement overreaches because short-term credit still counts as a liability. The trap is to agree with the topic while missing the one detail that breaks the logic.
+Overdraft interest is charged when the account is overdrawn (on the borrowed amount), not on a full positive balance sitting safely in credit. Charging interest on a healthy positive balance as if it were borrowed misstates overdraft pricing.
 
-Once the overclaim or mislabel is exposed, the only consistent answer is false.', 'FALSE — On the Fuhrmann definition used in the entrance exam, the sentence is false. Overdraft interest is charged on the full account balance even when the balance remains positive.
+On that basis the assertion attaches the wrong legal, tax, liability, or finance label.
 
-The scenario is a worked example of sole proprietorship / sole traders. Translate the story into the textbook category first; only then judge whether the sentence describes that category accurately.
+The statement is false.
+', 'FALSE — An overdraft does not incorporate the firm, create limited liability, or cease to be a liability because it is short-term. Interest is not charged as if a positive credit balance were borrowed.
 
-Applied to this claim, overdraft interest applies only when the account is overdrawn, not on positive balances. That is why the sentence does not survive careful reading.
+The account may be the proprietor''s business account, but the overdraft funds are bank credit. Classification is external short-term debt finance, not internal finance generated by the firm.
 
-The statement sounds plausible but fails on precision, so it is false.', 'FALSE — Evaluated against the textbook standard, this assertion is false. A bank overdraft is classified as internal finance because it uses the proprietor''s own bank account.
+So the sentence does not survive once the correct mechanism is applied.
 
-Start from the textbook definition in sole proprietorship / sole traders. A statement is true only if every scope word in the definition is respected—location, purpose, distribution rule, or time horizon.
+The statement is false.
+'] WHERE case_id = 'CASE 4.1.29' AND tier = 'full';
+UPDATE public.economics_cases SET tactical_explanations = ARRAY['TRUE — Trade credit is a supplier agreement allowing deferred payment for purchases. It creates a short-term external liability until settlement. Deferral changes cash timing; it is not a grant and not internal finance.
 
-The statement overreaches because overdrafts are external short-term credit from the bank, not internal finance. The trap is to agree with the topic while missing the one detail that breaks the logic.
+Trade credit rests on a supplier agreement that allows payment later than delivery or invoice. Deferred settlement under agreed terms is the financing arrangement between sole trader and materials suppliers.
 
-Near-miss definitions are deliberately written to sound familiar. Compare the statement phrase by phrase with the book version instead of trusting the overall topic.
+That is why the claim stands for this form of business or source of finance.
 
-The statement sounds plausible but fails on precision, so it is false.'] WHERE case_id = 'CASE 4.1.29' AND tier = 'full';
-UPDATE public.economics_cases SET tactical_explanations = ARRAY['TRUE — Evaluated against the textbook standard, this assertion is correct. Trade credit is based on an agreement with the supplier allowing deferred payment for purchases.
+The statement is true.
+', 'FALSE — Trade credit must be repaid within the agreed period. It is typically short-term purchase-cycle finance, not long-term debt, and it does not erase the proprietor''s liability or the need to manage cash-flow timing.
 
-The relevant theory comes from sole proprietorship / sole traders. Identify which definition or relationship the sentence is trying to test before deciding true or false.
+Trade credit must be repaid at the end of the credit period. It is external short-term finance from the supplier, not internal finance, and it does carry a repayment obligation.
 
-Applied carefully, supplier agreements define deferred payment terms. Nothing in the sentence stretches the concept beyond its standard use.
+That misclassification is enough to reject the claim.
 
-No qualifying word breaks the definition or scenario, so the answer is true.', 'FALSE — On the Fuhrmann definition used in the entrance exam, the sentence is false. Trade credit carries no repayment obligation because it is classified as internal finance.
+The statement is false.
+', 'FALSE — Trade credit must be repaid within the agreed period. It is typically short-term purchase-cycle finance, not long-term debt, and it does not erase the proprietor''s liability or the need to manage cash-flow timing.
 
-The question tests a precise definition from the section on sole proprietorship / sole traders. Entrance-exam statements often copy a definition almost correctly; one altered phrase is enough to make the whole sentence wrong.
+Deferring payment changes when cash leaves; it does not remove the need to plan cash-flow timing. The proprietor must still ensure funds are available when the credit period ends. Trade credit relocates the timing problem; it does not abolish it.
 
-Applied to this claim, trade credit is external short-term finance, not internal. That is why the sentence does not survive careful reading.
+That misclassification is enough to reject the claim.
 
-A common mistake is to recognise the topic word (GDP, NPO, SME, liability) and stop reading. The exam rewards checking every qualifier in the definition.
+The statement is false.
+', 'TRUE — Trade credit is a supplier agreement allowing deferred payment for purchases. It creates a short-term external liability until settlement. Deferral changes cash timing; it is not a grant and not internal finance.
 
-Once the overclaim or mislabel is exposed, the only consistent answer is false.', 'FALSE — Evaluated against the textbook standard, this assertion is false. Supplier trade credit removes the need for the sole proprietor to manage cash-flow timing.
+Until the invoice is paid, the outstanding supplier balance is an external short-term liability. External describes the supplier as outside financier; short-term describes the usual purchase-cycle maturity.
 
-The relevant theory comes from sole proprietorship / sole traders. Identify which definition or relationship the sentence is trying to test before deciding true or false.
+That is why the claim stands for this form of business or source of finance.
 
-The statement overreaches because trade credit assists timing but repayment obligations remain. The trap is to agree with the topic while missing the one detail that breaks the logic.
+The statement is true.
+', 'TRUE — Trade credit is a supplier agreement allowing deferred payment for purchases. It creates a short-term external liability until settlement. Deferral changes cash timing; it is not a grant and not internal finance.
 
-Once the overclaim or mislabel is exposed, the only consistent answer is false.', 'TRUE — This statement is correct. Outstanding supplier balances from trade credit are external short-term liabilities until payment is made.
+With trade credit the business need not pay for all purchases immediately; it receives a credit period before settlement. That delay is the liquidity benefit of the arrangement.
 
-The relevant theory comes from sole proprietorship / sole traders. Identify which definition or relationship the sentence is trying to test before deciding true or false.
+That is why the claim stands for this form of business or source of finance.
 
-Applied carefully, payables to suppliers are liabilities of the sole proprietor. Nothing in the sentence stretches the concept beyond its standard use.
+The statement is true.
+'] WHERE case_id = 'CASE 4.1.30' AND tier = 'full';
+UPDATE public.economics_cases SET tactical_explanations = ARRAY['TRUE — In this chapter''s sources-of-finance framework, money injected from outside retained trading surplus is external: owner savings at start-up, investor capital, and bank or other creditor funds. Legal sameness of owner and firm does not re-label owner capital as internal.
 
-Every part of the claim aligns with the standard concept, so the statement stands.', 'TRUE — Evaluated against the textbook standard, this assertion is correct. A business using trade credit does not have to pay all purchases immediately but receives a credit period.
+Owner investment from personal funds is classified as an external source in this framework: it enters from outside retained trading surplus. It is a primary way sole proprietors raise capital beyond what operations have already earned.
 
-The topic is sole proprietorship / sole traders, but the decisive skill here is reading quantifiers. Words such as never, always, only, or all turn a generally true idea into a claim that can be rejected by one routine counterexample.
+On that basis the assertion matches the ownership or finance rule being tested.
 
-Applied carefully, purchases may be settled after an agreed credit period. Nothing in the sentence stretches the concept beyond its standard use.
+The statement is true.
+', 'TRUE — In this chapter''s sources-of-finance framework, money injected from outside retained trading surplus is external: owner savings at start-up, investor capital, and bank or other creditor funds. Legal sameness of owner and firm does not re-label owner capital as internal.
 
-The reasoning chain is complete, so mark the statement true.'] WHERE case_id = 'CASE 4.1.30' AND tier = 'full';
-UPDATE public.economics_cases SET tactical_explanations = ARRAY['TRUE — The claim is correct. The owner''s investment from personal funds is an external source of finance for the sole proprietorship.
+When outside investors provide capital to the business, those funds are external finance. They expand resources when personal savings alone are not enough.
 
-This statement draws on sole proprietorship / sole traders. Treat it as a checklist against the core concept named in the stem, not as a general opinion about business.
+That is why the claim stands for this form of business or source of finance.
 
-In this setting, owner injection from personal wealth is external to operating surplus. The wording matches the textbook relationship without adding extra conditions.
+The statement is true.
+', 'TRUE — In this chapter''s sources-of-finance framework, money injected from outside retained trading surplus is external: owner savings at start-up, investor capital, and bank or other creditor funds. Legal sameness of owner and firm does not re-label owner capital as internal.
 
-The reasoning chain is complete, so mark the statement true.', 'TRUE — On the Fuhrmann definition used in the entrance exam, the sentence is correct. Financial funds from investors who provide capital to the business are external sources of finance.
+Bank and other creditor funds are external sources that create repayment duties under the credit agreement. Interest and schedule terms define how that external debt must be serviced.
 
-This statement draws on sole proprietorship / sole traders. Treat it as a checklist against the core concept named in the stem, not as a general opinion about business.
+So the sentence is a correct description of the mechanism at work in this case.
 
-In this setting, investor contributions enter from outside the firm. The wording matches the textbook relationship without adding extra conditions.
+The statement is true.
+', 'TRUE — If personal wealth is limited, the proprietor struggles to fund establishment even though legal barriers are low. Scarce personal resources make set-up very difficult unless other external finance is obtained.
 
-Every part of the claim aligns with the standard concept, so the statement stands.', 'TRUE — On the Fuhrmann definition used in the entrance exam, the sentence is correct. Funds from creditors such as banks are external sources that must be repaid according to the credit agreement.
+Funding capacity for a sole proprietorship tracks what the owner can supply or attract. Personal financial capacity therefore shapes how much finance is available at start-up and in early expansion — legal ease of entry does not invent capital by itself.
 
-This statement draws on sole proprietorship / sole traders. Treat it as a checklist against the core concept named in the stem, not as a general opinion about business.
+So the sentence is a correct description of the mechanism at work in this case.
 
-In this setting, bank credit is external finance creating repayment duties. The wording matches the textbook relationship without adding extra conditions.
+The statement is true.
+', 'TRUE — Launching a sole tradership typically begins with the proprietor''s own savings as initial funding before or alongside later investor or bank support. Owner savings are the common starting block.
 
-The reasoning chain is complete, so mark the statement true.', 'TRUE — Evaluated against the textbook standard, this assertion is correct. Limited personal wealth makes it very difficult for a sole proprietor to set up the business.
+Sole proprietorship unites ownership and control in one person, has no separate legal personality (personal tax on profits), and carries unlimited liability so private assets can be reached if business resources fall short.
 
-The relevant theory comes from sole proprietorship / sole traders. Identify which definition or relationship the sentence is trying to test before deciding true or false.
+That is why the claim stands for this form of business or source of finance.
 
-Applied carefully, insufficient personal funds constrain establishment. Nothing in the sentence stretches the concept beyond its standard use.
+The statement is true.
+'] WHERE case_id = 'CASE 4.1.31' AND tier = 'full';
+UPDATE public.economics_cases SET tactical_explanations = ARRAY['TRUE — Internal sources matter because they do not require paying interest or similar financial charges to outside lenders. Avoiding those borrowing costs is the practical advantage when reinvested earnings or asset sales can meet the need.
 
-The reasoning chain is complete, so mark the statement true.', 'TRUE — On the Fuhrmann definition used in the entrance exam, the sentence is correct. Launching a sole tradership typically begins with the proprietor''s own savings as initial funding.
+Internal finance recycles surplus already inside the firm (retained profit, asset sales). External finance comes from outside providers (owner start-up savings in this framework, investors, banks, suppliers on credit). Where the cash sits in the bank account does not decide the label.
 
-This statement draws on sole proprietorship / sole traders. Treat it as a checklist against the core concept named in the stem, not as a general opinion about business.
+On that basis the assertion matches the ownership or finance rule being tested.
 
-In this setting, personal savings commonly provide initial external finance at launch. The wording matches the textbook relationship without adding extra conditions.
+The statement is true.
+', 'TRUE — Internal finance comes from resources already inside the firm: profit kept rather than withdrawn, or cash released by selling assets the business no longer needs. No new creditor is created for that funding slice, so interest charges attached to borrowing are avoided.
 
-The reasoning chain is complete, so mark the statement true.'] WHERE case_id = 'CASE 4.1.31' AND tier = 'full';
-UPDATE public.economics_cases SET tactical_explanations = ARRAY['TRUE — On the Fuhrmann definition used in the entrance exam, the sentence is correct. Internal sources of finance are important because no financial charges such as interest have to be paid.
+Once revenues exceed expenses, profit retained and put back into the business is internal finance. The funding is the firm''s own surplus.
 
-The scenario is a worked example of sole proprietorship / sole traders. Translate the story into the textbook category first; only then judge whether the sentence describes that category accurately.
+So the sentence is a correct description of the mechanism at work in this case.
 
-In this setting, internal funds avoid borrowing costs like interest. The wording matches the textbook relationship without adding extra conditions.
+The statement is true.
+', 'TRUE — Internal finance comes from resources already inside the firm: profit kept rather than withdrawn, or cash released by selling assets the business no longer needs. No new creditor is created for that funding slice, so interest charges attached to borrowing are avoided.
 
-No qualifying word breaks the definition or scenario, so the answer is true.', 'TRUE — Evaluated against the textbook standard, this assertion is correct. Retained profit reinvested in the business is an internal source of finance once revenues exceed expenses.
+Selling assets that are no longer needed converts idle owned resources into cash inside the firm. That cash is internal finance available for other uses.
 
-The relevant theory comes from sole proprietorship / sole traders. Identify which definition or relationship the sentence is trying to test before deciding true or false.
+So the sentence is a correct description of the mechanism at work in this case.
 
-Applied carefully, reinvested surplus is generated within operations. Nothing in the sentence stretches the concept beyond its standard use.
+The statement is true.
+', 'TRUE — Disposing of surplus equipment likewise releases internal funds for reinvestment without creating a new creditor relationship. No borrowing means no new interest-bearing liability from that step.
 
-Every part of the claim aligns with the standard concept, so the statement stands.', 'TRUE — The claim is correct. Sale of assets that are not needed anymore can provide internal finance for the sole proprietorship.
+Internal finance recycles surplus already inside the firm (retained profit, asset sales). External finance comes from outside providers (owner start-up savings in this framework, investors, banks, suppliers on credit). Where the cash sits in the bank account does not decide the label.
 
-This statement draws on sole proprietorship / sole traders. Treat it as a checklist against the core concept named in the stem, not as a general opinion about business.
+That is why the claim stands for this form of business or source of finance.
 
-In this setting, disposing unused assets releases internal funds. The wording matches the textbook relationship without adding extra conditions.
+The statement is true.
+', 'FALSE — Limited liability would wall off private assets once business assets are exhausted; sole proprietors do not enjoy that wall. Collateral pledged to a lender secures that lender''s claim — it does not convert the firm into a limited company or erase unlimited liability for remaining shortfalls.
 
-Every part of the claim aligns with the standard concept, so the statement stands.', 'TRUE — Evaluated against the textbook standard, this assertion is correct. Disposing of surplus equipment can release internal funds for reinvestment without borrowing from creditors.
+Finance source and liability regime are separate. Using internal finance avoids interest on that slice of funding; it does not abolish unlimited liability for business debts. The proprietor still bears personal exposure for obligations of the firm.
 
-The relevant theory comes from sole proprietorship / sole traders. Identify which definition or relationship the sentence is trying to test before deciding true or false.
+That misclassification is enough to reject the claim.
 
-Applied carefully, asset sales supply internal finance without external borrowing. Nothing in the sentence stretches the concept beyond its standard use.
+The statement is false.
+'] WHERE case_id = 'CASE 4.1.32' AND tier = 'full';
+UPDATE public.economics_cases SET tactical_explanations = ARRAY['FALSE — Banks offer both short-term and long-term credit to sole proprietors. Overdrafts and other facilities with duration under a year are common short-term products. Claiming banks offer only long-term credit and never short-term facilities is false.
 
-The reasoning chain is complete, so mark the statement true.', 'FALSE — The claim is false. Using internal finance means the sole proprietor no longer bears unlimited liability for business debts.
+Sole proprietorship unites ownership and control in one person, has no separate legal personality (personal tax on profits), and carries unlimited liability so private assets can be reached if business resources fall short.
 
-This statement draws on sole proprietorship / sole traders. Treat it as a checklist against the core concept named in the stem, not as a general opinion about business.
+On that basis the assertion attaches the wrong legal, tax, liability, or finance label.
 
-Applied to this claim, liability structure is unchanged by the finance source used. That is why the sentence does not survive careful reading.
+The statement is false.
+', 'TRUE — A bank overdraft is flexible short-term credit on a current account: the balance may go negative within a limit. Interest is charged when the account is overdrawn, not on a healthy positive balance. The facility is external debt, not internal finance.
 
-Once the overclaim or mislabel is exposed, the only consistent answer is false.'] WHERE case_id = 'CASE 4.1.32' AND tier = 'full';
-UPDATE public.economics_cases SET tactical_explanations = ARRAY['FALSE — This statement is false. Banks offer only long-term credit to sole proprietors and never short-term facilities with duration less than a year.
+A bank overdraft is among the most common short-term credits for sole traders: flexible, linked to the current account, and typically intended to cover temporary needs within the year.
 
-The topic is sole proprietorship / sole traders, but the decisive skill here is reading quantifiers. Words such as never, always, only, or all turn a generally true idea into a claim that can be rejected by one routine counterexample.
+That is why the claim stands for this form of business or source of finance.
 
-The statement overreaches because banks offer both short-term and long-term credit to sole proprietors. The trap is to agree with the topic while missing the one detail that breaks the logic.
+The statement is true.
+', 'TRUE — Trade credit is a supplier agreement allowing deferred payment for purchases. It creates a short-term external liability until settlement. Deferral changes cash timing; it is not a grant and not internal finance.
 
-Watch the absolute wording "never": exam statements often sound plausible until a single scope word turns an otherwise familiar idea into an overclaim.
+Trade credit from suppliers is also typically short-term, aligned with purchase and invoice cycles rather than multi-year project finance.
 
-Once the overclaim or mislabel is exposed, the only consistent answer is false.', 'TRUE — On the Fuhrmann definition used in the entrance exam, the sentence is correct. A bank overdraft is among the most common forms of short-term credit for a sole proprietorship.
+On that basis the assertion matches the ownership or finance rule being tested.
 
-This statement draws on sole proprietorship / sole traders. Treat it as a checklist against the core concept named in the stem, not as a general opinion about business.
+The statement is true.
+', 'FALSE — Quick repayment does not erase the liability while the amount is outstanding. Short-term credit is recorded as a liability until paid. Speed of expected settlement does not mean “never recorded.”.
 
-In this setting, overdrafts are a standard short-term facility. The wording matches the textbook relationship without adding extra conditions.
+Sole proprietorship unites ownership and control in one person, has no separate legal personality (personal tax on profits), and carries unlimited liability so private assets can be reached if business resources fall short.
 
-Every part of the claim aligns with the standard concept, so the statement stands.', 'TRUE — On the Fuhrmann definition used in the entrance exam, the sentence is correct. Trade credit from suppliers typically functions as short-term finance for purchase obligations.
+On that basis the assertion attaches the wrong legal, tax, liability, or finance label.
 
-This statement draws on sole proprietorship / sole traders. Treat it as a checklist against the core concept named in the stem, not as a general opinion about business.
+The statement is false.
+', 'FALSE — Pledging collateral secures the lender; it does not waive all interest, exclude the loan from liabilities, incorporate the firm, or remove unlimited liability for any remaining shortfall. Short-term supplier trade credit also does not typically demand a mortgage over the home.
 
-In this setting, supplier credit periods cover near-term purchases. The wording matches the textbook relationship without adding extra conditions.
+Pledging land and property as collateral secures the lender; it does not cancel the loan as a liability. The mortgage loan remains payable according to its terms even after collateral is in place.
 
-No qualifying word breaks the definition or scenario, so the answer is true.', 'FALSE — On the Fuhrmann definition used in the entrance exam, the sentence is false. Short-term credit is never recorded as a liability for the sole proprietor because it is repaid quickly.
+On that basis the assertion attaches the wrong legal, tax, liability, or finance label.
 
-Although the subject matter is sole proprietorship / sole traders, this is really a logic check on overstatement. Non-profit surpluses, mixed economies, and partial market failure are classic cases where absolute wording fails.
+The statement is false.
+'] WHERE case_id = 'CASE 4.1.33' AND tier = 'full';
+UPDATE public.economics_cases SET tactical_explanations = ARRAY['TRUE — Owner savings invested at start-up are treated as an external source: they are not retained trading profit. Most sole proprietors begin with that external owner injection.
 
-Applied to this claim, short-term credit remains a liability until repaid. That is why the sentence does not survive careful reading.
+Internal finance recycles surplus already inside the firm (retained profit, asset sales). External finance comes from outside providers (owner start-up savings in this framework, investors, banks, suppliers on credit). Where the cash sits in the bank account does not decide the label.
 
-Watch the absolute wording "never": exam statements often sound plausible until a single scope word turns an otherwise familiar idea into an overclaim.
+Sole proprietorship unites ownership and control in one person, has no separate legal personality (personal tax on profits), and carries unlimited liability so private assets can be reached if business resources fall short.
 
-Because the decisive detail is wrong, mark the statement false.', 'FALSE — On the Fuhrmann definition used in the entrance exam, the sentence is false. Long-term mortgage loans cease to be liabilities once land and property are pledged as collateral.
+On that basis the assertion matches the ownership or finance rule being tested.
 
-This statement draws on sole proprietorship / sole traders. Treat it as a checklist against the core concept named in the stem, not as a general opinion about business.
+The statement is true.
+', 'FALSE — Depositing borrowed or invested cash in the business account only records receipt. Owner start-up savings, investor funds, and bank credit remain external sources — they are not internal finance generated by operations.
 
-Applied to this claim, mortgage loans remain liabilities despite property collateral. That is why the sentence does not survive careful reading.
+The two are classified differently. Start-up owner savings are external; retained profit from later years is internal. Bundling both as internal finance erases that distinction.
 
-Once the overclaim or mislabel is exposed, the only consistent answer is false.'] WHERE case_id = 'CASE 4.1.33' AND tier = 'full';
-UPDATE public.economics_cases SET tactical_explanations = ARRAY['TRUE — On the Fuhrmann definition used in the entrance exam, the sentence is correct. Most sole proprietors invest their own savings as an external source of finance when starting the business.
+That misclassification is enough to reject the claim.
 
-The scenario is a worked example of sole proprietorship / sole traders. Translate the story into the textbook category first; only then judge whether the sentence describes that category accurately.
+The statement is false.
+', 'TRUE — Internal finance comes from resources already inside the firm: profit kept rather than withdrawn, or cash released by selling assets the business no longer needs. No new creditor is created for that funding slice, so interest charges attached to borrowing are avoided.
 
-In this setting, initial savings are owner investment from outside operating surplus. The wording matches the textbook relationship without adding extra conditions.
+After successful trading, profit kept and reinvested is internal finance generated by operations. That label applies specifically to retained surplus, not to the owner''s original savings.
 
-The reasoning chain is complete, so mark the statement true.', 'FALSE — The claim is false. Owner savings at start-up and retained profit from later years are both classified as internal finance.
+On that basis the assertion matches the ownership or finance rule being tested.
 
-The question tests a precise definition from the section on sole proprietorship / sole traders. Entrance-exam statements often copy a definition almost correctly; one altered phrase is enough to make the whole sentence wrong.
+The statement is true.
+', 'FALSE — Depositing borrowed or invested cash in the business account only records receipt. Owner start-up savings, investor funds, and bank credit remain external sources — they are not internal finance generated by operations.
 
-Applied to this claim, start-up savings are external; only later retained profit is internal. That is why the sentence does not survive careful reading.
+Trade credit must be repaid within the agreed period. It is typically short-term purchase-cycle finance, not long-term debt, and it does not erase the proprietor''s liability or the need to manage cash-flow timing.
 
-A common mistake is to recognise the topic word (GDP, NPO, SME, liability) and stop reading. The exam rewards checking every qualifier in the definition.
+Bank credit and trade credit remain external even when the cash or goods are in the business. Holding funds in the business account does not convert creditor finance into an internal source.
 
-The statement sounds plausible but fails on precision, so it is false.', 'TRUE — On the Fuhrmann definition used in the entrance exam, the sentence is correct. Retained profit reinvested after successful trading is an internal source of finance.
+So the sentence does not survive once the correct mechanism is applied.
 
-This statement draws on sole proprietorship / sole traders. Treat it as a checklist against the core concept named in the stem, not as a general opinion about business.
+The statement is false.
+', 'FALSE — Depositing borrowed or invested cash in the business account only records receipt. Owner start-up savings, investor funds, and bank credit remain external sources — they are not internal finance generated by operations.
 
-In this setting, reinvested earnings originate within the business. The wording matches the textbook relationship without adding extra conditions.
+Investor funds obtained when savings are insufficient are external capital from outside parties. They are not internal operating cash generated by the firm.
 
-The reasoning chain is complete, so mark the statement true.', 'FALSE — Evaluated against the textbook standard, this assertion is false. Bank credit and trade credit are internal sources once the funds are held in the business bank account.
+That misclassification is enough to reject the claim.
 
-The relevant theory comes from sole proprietorship / sole traders. Identify which definition or relationship the sentence is trying to test before deciding true or false.
+The statement is false.
+'] WHERE case_id = 'CASE 4.1.34' AND tier = 'full';
+UPDATE public.economics_cases SET tactical_explanations = ARRAY['TRUE — When revenues exceed expenses, a surplus exists. The sole trader can retain and reinvest it—or withdraw it. Retention for working capital happens only if the proprietor leaves the profit in the business.
 
-The statement overreaches because creditor and supplier credit are external liabilities. The trap is to agree with the topic while missing the one detail that breaks the logic.
+Internal finance recycles surplus already inside the firm (retained profit, asset sales). External finance comes from outside providers (owner start-up savings in this framework, investors, banks, suppliers on credit). Where the cash sits in the bank account does not decide the label.
 
-Once the overclaim or mislabel is exposed, the only consistent answer is false.', 'FALSE — Evaluated against the textbook standard, this assertion is false. Investor funds obtained when personal savings are insufficient are internal sources of operating cash.
+Sole proprietorship unites ownership and control in one person, has no separate legal personality (personal tax on profits), and carries unlimited liability so private assets can be reached if business resources fall short.
 
-Here you must apply ideas from sole proprietorship / sole traders to a concrete situation rather than recite a definition from memory. Ownership, customer type, stakeholder group, or country of production usually decides the verdict.
+That is why the claim stands for this form of business or source of finance.
 
-The statement overreaches because investor capital supplements owner funds from outside. The trap is to agree with the topic while missing the one detail that breaks the logic.
+The statement is true.
+', 'TRUE — Internal finance comes from resources already inside the firm: profit kept rather than withdrawn, or cash released by selling assets the business no longer needs. No new creditor is created for that funding slice, so interest charges attached to borrowing are avoided.
 
-Because the decisive detail is wrong, mark the statement false.'] WHERE case_id = 'CASE 4.1.34' AND tier = 'full';
-UPDATE public.economics_cases SET tactical_explanations = ARRAY['TRUE — This statement is correct. When revenues exceed expenses, profit can be retained and reinvested unless withdrawn by the sole proprietor.
+Selling obsolete equipment no longer needed turns an owned asset into cash without taking an interest-bearing loan. That is internal finance without interest charges from creditors.
 
-Here you must apply ideas from sole proprietorship / sole traders to a concrete situation rather than recite a definition from memory. Ownership, customer type, stakeholder group, or country of production usually decides the verdict.
+On that basis the assertion matches the ownership or finance rule being tested.
 
-Applied carefully, surplus may be kept in the firm or taken by the owner. Nothing in the sentence stretches the concept beyond its standard use.
+The statement is true.
+', 'TRUE — More generally, internal sources avoid financial charges such as interest paid on borrowed funds, which is why reinvestment and asset disposal are useful when they can cover the need.
 
-Every part of the claim aligns with the standard concept, so the statement stands.', 'TRUE — Evaluated against the textbook standard, this assertion is correct. Sale of assets no longer needed provides internal finance without incurring interest charges.
+Internal finance recycles surplus already inside the firm (retained profit, asset sales). External finance comes from outside providers (owner start-up savings in this framework, investors, banks, suppliers on credit). Where the cash sits in the bank account does not decide the label.
 
-The relevant theory comes from sole proprietorship / sole traders. Identify which definition or relationship the sentence is trying to test before deciding true or false.
+On that basis the assertion matches the ownership or finance rule being tested.
 
-Applied carefully, asset disposal releases internal funds without borrowing. Nothing in the sentence stretches the concept beyond its standard use.
+The statement is true.
+', 'TRUE — Reinvested surplus funds operations without creating a new creditor liability for that funding slice. No lender is owed repayment on retained profit itself.
 
-The reasoning chain is complete, so mark the statement true.', 'TRUE — The claim is correct. Internal sources of finance avoid financial charges such as interest paid on borrowed funds.
+Sole proprietorship unites ownership and control in one person, has no separate legal personality (personal tax on profits), and carries unlimited liability so private assets can be reached if business resources fall short.
 
-This statement draws on sole proprietorship / sole traders. Treat it as a checklist against the core concept named in the stem, not as a general opinion about business.
+On that basis the assertion matches the ownership or finance rule being tested.
 
-In this setting, internal funding avoids creditor interest costs. The wording matches the textbook relationship without adding extra conditions.
+The statement is true.
+', 'FALSE — Once profit is withdrawn for personal spending, it has left the business. It is no longer available as internal finance for the firm. Withdrawal and internal reinvestment are mutually exclusive uses of the same surplus.
 
-The reasoning chain is complete, so mark the statement true.', 'TRUE — Evaluated against the textbook standard, this assertion is correct. Reinvested surplus can fund operations without creating creditor liabilities for the sole proprietorship.
+Internal finance recycles surplus already inside the firm (retained profit, asset sales). External finance comes from outside providers (owner start-up savings in this framework, investors, banks, suppliers on credit). Where the cash sits in the bank account does not decide the label.
 
-The relevant theory comes from sole proprietorship / sole traders. Identify which definition or relationship the sentence is trying to test before deciding true or false.
+So the sentence does not survive once the correct mechanism is applied.
 
-Applied carefully, retained earnings kept in the firm supply internal finance. Nothing in the sentence stretches the concept beyond its standard use.
+The statement is false.
+'] WHERE case_id = 'CASE 4.1.35' AND tier = 'full';
+UPDATE public.economics_cases SET tactical_explanations = ARRAY['FALSE — Pledging collateral secures the lender; it does not waive all interest, exclude the loan from liabilities, incorporate the firm, or remove unlimited liability for any remaining shortfall. Short-term supplier trade credit also does not typically demand a mortgage over the home.
 
-No qualifying word breaks the definition or scenario, so the answer is true.', 'FALSE — This statement is false. Withdrawn profit used for personal spending remains available as internal finance for the business.
+Using property as mortgage collateral is a security arrangement for a loan. It does not automatically incorporate the sole proprietorship as a limited company. Legal form changes only through formal incorporation, not through pledging assets.
 
-The relevant theory comes from sole proprietorship / sole traders. Identify which definition or relationship the sentence is trying to test before deciding true or false.
+So the sentence does not survive once the correct mechanism is applied.
 
-The statement overreaches because withdrawn profit leaves the business and is no longer internal finance. The trap is to agree with the topic while missing the one detail that breaks the logic.
+The statement is false.
+', 'FALSE — Pledging collateral secures the lender; it does not waive all interest, exclude the loan from liabilities, incorporate the firm, or remove unlimited liability for any remaining shortfall. Short-term supplier trade credit also does not typically demand a mortgage over the home.
 
-Once the overclaim or mislabel is exposed, the only consistent answer is false.'] WHERE case_id = 'CASE 4.1.35' AND tier = 'full';
-UPDATE public.economics_cases SET tactical_explanations = ARRAY['FALSE — This statement is false. Property used as mortgage collateral for a long-term bank loan automatically incorporates the sole proprietorship as a limited company.
+Collateral reduces the lender''s risk; it does not oblige creditors to waive all interest. Long-term loans secured by land and buildings still normally charge interest as the price of credit.
 
-The topic is sole proprietorship / sole traders, but the decisive skill here is reading quantifiers. Words such as never, always, only, or all turn a generally true idea into a claim that can be rejected by one routine counterexample.
+On that basis the assertion attaches the wrong legal, tax, liability, or finance label.
 
-The statement overreaches because mortgage collateral does not change the unincorporated legal structure. The trap is to agree with the topic while missing the one detail that breaks the logic.
+The statement is false.
+', 'FALSE — Limited liability would wall off private assets once business assets are exhausted; sole proprietors do not enjoy that wall. Collateral pledged to a lender secures that lender''s claim — it does not convert the firm into a limited company or erase unlimited liability for remaining shortfalls.
 
-Watch the absolute wording "automatically": exam statements often sound plausible until a single scope word turns an otherwise familiar idea into an overclaim.
+Pledging collateral secures the lender; it does not waive all interest, exclude the loan from liabilities, incorporate the firm, or remove unlimited liability for any remaining shortfall. Short-term supplier trade credit also does not typically demand a mortgage over the home.
 
-Because the decisive detail is wrong, mark the statement false.', 'FALSE — The claim is false. Long-term creditors may waive all interest charges when land and buildings serve as mortgage collateral.
+Registering a mortgage puts the pledged assets at stake if default occurs; it does not completely protect them from claims. The point of collateral is enforceability against those assets, not immunity for them.
 
-Although the subject matter is sole proprietorship / sole traders, this is really a logic check on overstatement. Non-profit surpluses, mixed economies, and partial market failure are classic cases where absolute wording fails.
+That misclassification is enough to reject the claim.
 
-Applied to this claim, credit agreements still specify interest as the rate of return. That is why the sentence does not survive careful reading.
+The statement is false.
+', 'TRUE — A bank overdraft is flexible short-term credit on a current account: the balance may go negative within a limit. Interest is charged when the account is overdrawn, not on a healthy positive balance. The facility is external debt, not internal finance.
 
-Watch the absolute wording "all": exam statements often sound plausible until a single scope word turns an otherwise familiar idea into an overclaim.
+Long-term lenders commonly require pledgeable assets — often land and property via a mortgage — as security. Collateral backs repayment; the loan remains a liability. If private property was pledged and the business cannot repay, that property remains at stake.
 
-The statement sounds plausible but fails on precision, so it is false.', 'FALSE — The claim is false. Private assets that served as collateral remain completely protected from claims once the mortgage is registered.
+Both a short-term overdraft and a long-term mortgage loan create amounts the sole proprietor owes. Different maturities, same status as liabilities.
 
-This statement draws on sole proprietorship / sole traders. Treat it as a checklist against the core concept named in the stem, not as a general opinion about business.
+That is why the claim stands for this form of business or source of finance.
 
-Applied to this claim, collateral assets can be claimed upon default. That is why the sentence does not survive careful reading.
+The statement is true.
+', 'FALSE — Pledging collateral secures the lender; it does not waive all interest, exclude the loan from liabilities, incorporate the firm, or remove unlimited liability for any remaining shortfall. Short-term supplier trade credit also does not typically demand a mortgage over the home.
 
-The statement sounds plausible but fails on precision, so it is false.', 'TRUE — Evaluated against the textbook standard, this assertion is correct. Short-term overdrafts and long-term mortgage loans both create liabilities for the sole proprietor.
+Pledging collateral does not remove the loan from the liability side. Long-term mortgaged credit remains a liability until repaid; security backs the claim, it does not exclude it from the proprietor''s obligations.
 
-The relevant theory comes from sole proprietorship / sole traders. Identify which definition or relationship the sentence is trying to test before deciding true or false.
+That misclassification is enough to reject the claim.
 
-Applied carefully, all credit forms create repayment obligations. Nothing in the sentence stretches the concept beyond its standard use.
+The statement is false.
+'] WHERE case_id = 'CASE 4.1.36' AND tier = 'full';
+UPDATE public.economics_cases SET tactical_explanations = ARRAY['TRUE — Because the form centres on one person, the business''s financial funds mainly track what that sole proprietor can provide or attract. Personal financial capability heavily shapes the funding envelope.
 
-The reasoning chain is complete, so mark the statement true.', 'FALSE — Evaluated against the textbook standard, this assertion is false. Long-term credit secured by a mortgage is excluded from the sole proprietor''s liabilities once collateral is pledged.
+Funding capacity for a sole proprietorship tracks what the owner can supply or attract. Personal financial capacity therefore shapes how much finance is available at start-up and in early expansion — legal ease of entry does not invent capital by itself.
 
-The relevant theory comes from sole proprietorship / sole traders. Identify which definition or relationship the sentence is trying to test before deciding true or false.
+On that basis the assertion matches the ownership or finance rule being tested.
 
-The statement overreaches because mortgage loans remain liabilities despite collateral. The trap is to agree with the topic while missing the one detail that breaks the logic.
+The statement is true.
+', 'TRUE — In this chapter''s sources-of-finance framework, money injected from outside retained trading surplus is external: owner savings at start-up, investor capital, and bank or other creditor funds. Legal sameness of owner and firm does not re-label owner capital as internal.
 
-Once the overclaim or mislabel is exposed, the only consistent answer is false.'] WHERE case_id = 'CASE 4.1.36' AND tier = 'full';
-UPDATE public.economics_cases SET tactical_explanations = ARRAY['TRUE — Evaluated against the textbook standard, this assertion is correct. Financial funds of the business mainly depend on the financial capabilities of the sole proprietor.
+Owner investment, investor funds, and creditor loans all enter from outside retained operations, so they are external sources in the standard classification.
 
-The relevant theory comes from sole proprietorship / sole traders. Identify which definition or relationship the sentence is trying to test before deciding true or false.
+So the sentence is a correct description of the mechanism at work in this case.
 
-Applied carefully, available funds reflect the proprietor''s financial capacity. Nothing in the sentence stretches the concept beyond its standard use.
+The statement is true.
+', 'TRUE — Internal finance comes from resources already inside the firm: profit kept rather than withdrawn, or cash released by selling assets the business no longer needs. No new creditor is created for that funding slice, so interest charges attached to borrowing are avoided.
 
-The reasoning chain is complete, so mark the statement true.', 'TRUE — The claim is correct. Owner investment, investor funds, and creditor loans are external sources of finance.
+Retained profit and sale of unused assets arise from the firm''s own resources once operations are under way, so they are internal sources.
 
-This statement draws on sole proprietorship / sole traders. Treat it as a checklist against the core concept named in the stem, not as a general opinion about business.
+On that basis the assertion matches the ownership or finance rule being tested.
 
-In this setting, these funds enter from outside accumulated internal surplus. The wording matches the textbook relationship without adding extra conditions.
+The statement is true.
+', 'FALSE — Limited liability would wall off private assets once business assets are exhausted; sole proprietors do not enjoy that wall. Collateral pledged to a lender secures that lender''s claim — it does not convert the firm into a limited company or erase unlimited liability for remaining shortfalls.
 
-The reasoning chain is complete, so mark the statement true.', 'TRUE — Evaluated against the textbook standard, this assertion is correct. Retained profit and sale of unused assets are internal sources of finance once operations are under way.
+Unlimited liability is not confined to external borrowing. It covers business debts and obligations broadly—including obligations that arise even when funding has been internal. Narrowing it to creditor loans alone is incorrect.
 
-The relevant theory comes from sole proprietorship / sole traders. Identify which definition or relationship the sentence is trying to test before deciding true or false.
+On that basis the assertion attaches the wrong legal, tax, liability, or finance label.
 
-Applied carefully, reinvested earnings and asset sales fund from within. Nothing in the sentence stretches the concept beyond its standard use.
+The statement is false.
+', 'TRUE — A bank overdraft is flexible short-term credit on a current account: the balance may go negative within a limit. Interest is charged when the account is overdrawn, not on a healthy positive balance. The facility is external debt, not internal finance.
 
-Every part of the claim aligns with the standard concept, so the statement stands.', 'FALSE — The claim is false. Unlimited liability is confined to obligations arising from external creditor borrowing only.
+Long-term lenders commonly require pledgeable assets — often land and property via a mortgage — as security. Collateral backs repayment; the loan remains a liability. If private property was pledged and the business cannot repay, that property remains at stake.
 
-This statement draws on sole proprietorship / sole traders. Treat it as a checklist against the core concept named in the stem, not as a general opinion about business.
+Whether the instrument is a short-term overdraft or a long-term mortgage, the credit is a liability of the sole proprietor until discharged.
 
-Applied to this claim, unlimited liability applies to all business debts regardless of finance source. That is why the sentence does not survive careful reading.
+On that basis the assertion matches the ownership or finance rule being tested.
 
-Because the decisive detail is wrong, mark the statement false.', 'TRUE — This statement is correct. All credit, whether short-term overdraft or long-term mortgage, is a liability for the sole proprietor.
+The statement is true.
+'] WHERE case_id = 'CASE 4.1.37' AND tier = 'full';
+UPDATE public.economics_cases SET tactical_explanations = ARRAY['TRUE — Hiring is allowed. Assistants can handle routine work, but key management decisions and residual risk stay with the proprietor. Employment expands capacity; it does not transfer ownership or unlimited liability to staff.
 
-The topic is sole proprietorship / sole traders, but the decisive skill here is reading quantifiers. Words such as never, always, only, or all turn a generally true idea into a claim that can be rejected by one routine counterexample.
+A retail sole proprietor may hire sales staff for daily customer service when support is needed. Employment expands capacity without changing the ownership form.
 
-Applied carefully, every credit arrangement creates repayment duty. Nothing in the sentence stretches the concept beyond its standard use.
+So the sentence is a correct description of the mechanism at work in this case.
 
-Every part of the claim aligns with the standard concept, so the statement stands.'] WHERE case_id = 'CASE 4.1.37' AND tier = 'full';
-UPDATE public.economics_cases SET tactical_explanations = ARRAY['TRUE — This statement is correct. The sole proprietor can hire personnel when support is needed to operate the business.
+The statement is true.
+', 'FALSE — Employment does not shift unlimited liability onto workers, hand them strategic control, or incorporate the firm. Headcount is not an incorporation trigger and wages do not allocate owner liability.
 
-Here you must apply ideas from sole proprietorship / sole traders to a concrete situation rather than recite a definition from memory. Ownership, customer type, stakeholder group, or country of production usually decides the verdict.
+With no co-owners, decision rights are undivided. The proprietor can act without a partners'' vote or board resolution. Advice may be taken, but consultation is not a structural requirement of the form.
 
-Applied carefully, staff may be recruited to support operations. Nothing in the sentence stretches the concept beyond its standard use.
+Hiring sales staff does not permanently transfer the most important management decisions to employees. Staff serve customers under the owner''s direction; strategic and key managerial authority remains with the proprietor.
 
-The reasoning chain is complete, so mark the statement true.', 'FALSE — Evaluated against the textbook standard, this assertion is false. Hiring sales staff transfers the most important management decisions to employees permanently.
+On that basis the assertion attaches the wrong legal, tax, liability, or finance label.
 
-The relevant theory comes from sole proprietorship / sole traders. Identify which definition or relationship the sentence is trying to test before deciding true or false.
+The statement is false.
+', 'TRUE — With no co-owners, decision rights are undivided. The proprietor can act without a partners'' vote or board resolution. Advice may be taken, but consultation is not a structural requirement of the form.
 
-The statement overreaches because strategic authority stays with the proprietor, not employees. The trap is to agree with the topic while missing the one detail that breaks the logic.
+Despite assistants on the floor, the proprietor must still make key management decisions and accept the associated business risk, including unlimited liability. Delegation of service tasks is not transfer of residual control and risk.
 
-Because the decisive detail is wrong, mark the statement false.', 'TRUE — Evaluated against the textbook standard, this assertion is correct. Despite employed assistants, the proprietor must make the key management decisions and accept the associated business risk.
+So the sentence is a correct description of the mechanism at work in this case.
 
-The relevant theory comes from sole proprietorship / sole traders. Identify which definition or relationship the sentence is trying to test before deciding true or false.
+The statement is true.
+', 'TRUE — Hiring is allowed. Assistants can handle routine work, but key management decisions and residual risk stay with the proprietor. Employment expands capacity; it does not transfer ownership or unlimited liability to staff.
 
-Applied carefully, ultimate decisions and risk remain with the owner. Nothing in the sentence stretches the concept beyond its standard use.
+With no co-owners, decision rights are undivided. The proprietor can act without a partners'' vote or board resolution. Advice may be taken, but consultation is not a structural requirement of the form.
 
-No qualifying word breaks the definition or scenario, so the answer is true.', 'TRUE — On the Fuhrmann definition used in the entrance exam, the sentence is correct. Management of the business largely depends on the sole proprietor even when staff are present.
+Even with staff present, management largely depends on the sole proprietor. The organisational centre stays with the owner-manager.
 
-The scenario is a worked example of sole proprietorship / sole traders. Translate the story into the textbook category first; only then judge whether the sentence describes that category accurately.
+So the sentence is a correct description of the mechanism at work in this case.
 
-In this setting, the proprietor retains central management responsibility. The wording matches the textbook relationship without adding extra conditions.
+The statement is true.
+', 'FALSE — Limited liability would wall off private assets once business assets are exhausted; sole proprietors do not enjoy that wall. Collateral pledged to a lender secures that lender''s claim — it does not convert the firm into a limited company or erase unlimited liability for remaining shortfalls.
 
-The reasoning chain is complete, so mark the statement true.', 'FALSE — This statement is false. Employees assume unlimited liability for business debts in proportion to their wages.
+Employment does not shift unlimited liability onto workers, hand them strategic control, or incorporate the firm. Headcount is not an incorporation trigger and wages do not allocate owner liability.
 
-The relevant theory comes from sole proprietorship / sole traders. Identify which definition or relationship the sentence is trying to test before deciding true or false.
+Employees do not assume unlimited liability in proportion to wages. Personal exposure for business debts stays with the sole proprietor; pay levels do not allocate owner liability to staff.
 
-The statement overreaches because employees do not share the proprietor''s unlimited liability. The trap is to agree with the topic while missing the one detail that breaks the logic.
+So the sentence does not survive once the correct mechanism is applied.
 
-Because the decisive detail is wrong, mark the statement false.'] WHERE case_id = 'CASE 4.1.38' AND tier = 'full';
-UPDATE public.economics_cases SET tactical_explanations = ARRAY['FALSE — On the Fuhrmann definition used in the entrance exam, the sentence is false. A sole proprietorship that is not a legal entity of its own cannot hire personnel under any circumstances.
+The statement is false.
+'] WHERE case_id = 'CASE 4.1.38' AND tier = 'full';
+UPDATE public.economics_cases SET tactical_explanations = ARRAY['FALSE — A sole proprietorship is not a separate legal person. Features that belong to corporations — independent corporate personality, corporate tax filing, or limited liability by default — do not arise merely because a trading name is registered, a bank account is opened, or staff are hired.
 
-Although the subject matter is sole proprietorship / sole traders, this is really a logic check on overstatement. Non-profit surpluses, mixed economies, and partial market failure are classic cases where absolute wording fails.
+Employment does not shift unlimited liability onto workers, hand them strategic control, or incorporate the firm. Headcount is not an incorporation trigger and wages do not allocate owner liability.
 
-Applied to this claim, unincorporated status does not bar employment. That is why the sentence does not survive careful reading.
+Lack of separate legal personality does not ban hiring. Sole traders routinely employ staff. Saying personnel cannot be hired under any circumstances is false.
 
-Watch the absolute wording "cannot": exam statements often sound plausible until a single scope word turns an otherwise familiar idea into an overclaim.
+On that basis the assertion attaches the wrong legal, tax, liability, or finance label.
 
-Because the decisive detail is wrong, mark the statement false.', 'TRUE — This statement is correct. A sole proprietorship that is not a legal entity of its own may still hire personnel when support is required.
+The statement is false.
+', 'TRUE — Legal personality means a firm can hold rights and duties in its own name as a distinct person in law. A sole proprietorship does not have that status: contracts, assets, and liabilities attach to the owner personally. Unincorporated status is therefore the correct description.
 
-Here you must apply ideas from sole proprietorship / sole traders to a concrete situation rather than recite a definition from memory. Ownership, customer type, stakeholder group, or country of production usually decides the verdict.
+Hiring is allowed. Assistants can handle routine work, but key management decisions and residual risk stay with the proprietor. Employment expands capacity; it does not transfer ownership or unlimited liability to staff.
 
-Applied carefully, sole traders may recruit staff despite lacking separate legal personality. Nothing in the sentence stretches the concept beyond its standard use.
+The same point affirmatively: an unincorporated sole proprietorship may still hire personnel when support is required. Operational capacity includes employment even without corporate personality.
 
-Every part of the claim aligns with the standard concept, so the statement stands.', 'FALSE — This statement is false. Because the business lacks separate legal personality, it cannot enter contracts with suppliers or banks.
+That is why the claim stands for this form of business or source of finance.
 
-The topic is sole proprietorship / sole traders, but the decisive skill here is reading quantifiers. Words such as never, always, only, or all turn a generally true idea into a claim that can be rejected by one routine counterexample.
+The statement is true.
+', 'FALSE — A sole proprietorship is not a separate legal person. Features that belong to corporations — independent corporate personality, corporate tax filing, or limited liability by default — do not arise merely because a trading name is registered, a bank account is opened, or staff are hired.
 
-The statement overreaches because sole traders routinely contract with suppliers and banks. The trap is to agree with the topic while missing the one detail that breaks the logic.
+Sole proprietors can and do enter contracts with suppliers and banks; the contracts bind the owner personally. Absence of separate legal personality changes who is bound, not whether contracting is possible.
 
-Watch the absolute wording "cannot": exam statements often sound plausible until a single scope word turns an otherwise familiar idea into an overclaim.
+That misclassification is enough to reject the claim.
 
-The statement sounds plausible but fails on precision, so it is false.', 'FALSE — Evaluated against the textbook standard, this assertion is false. Incorporation is automatic once a sole trader hires more than one employee.
+The statement is false.
+', 'FALSE — Employment does not shift unlimited liability onto workers, hand them strategic control, or incorporate the firm. Headcount is not an incorporation trigger and wages do not allocate owner liability.
 
-This tests discrimination within sole proprietorship / sole traders: local versus international scope, equity versus debt, product versus market orientation, and similar pairs.
+Headcount does not trigger automatic incorporation. Becoming a limited company requires formal incorporation steps, not merely hiring a second employee.
 
-The statement overreaches because employment does not incorporate the business or change liability. The trap is to agree with the topic while missing the one detail that breaks the logic.
+So the sentence does not survive once the correct mechanism is applied.
 
-If two ideas are related, the statement may be false because it attributes the feature to the wrong member of the pair.
+The statement is false.
+', 'FALSE — Employment does not shift unlimited liability onto workers, hand them strategic control, or incorporate the firm. Headcount is not an incorporation trigger and wages do not allocate owner liability.
 
-The statement sounds plausible but fails on precision, so it is false.', 'FALSE — This statement is false. Hiring employees transfers ownership of the sole proprietorship to the workforce collectively.
+Hiring does not transfer ownership to the workforce. Employees remain employees; the sole proprietor remains the owner unless an explicit ownership transfer occurs.
 
-The relevant theory comes from sole proprietorship / sole traders. Identify which definition or relationship the sentence is trying to test before deciding true or false.
+On that basis the assertion attaches the wrong legal, tax, liability, or finance label.
 
-The statement overreaches because employees do not acquire ownership; the sole proprietor remains the owner. The trap is to agree with the topic while missing the one detail that breaks the logic.
+The statement is false.
+'] WHERE case_id = 'CASE 4.1.39' AND tier = 'full';
+UPDATE public.economics_cases SET tactical_explanations = ARRAY['TRUE — Continuity is tied to one person''s capacity to own and manage. Retirement or long-term illness removes that centre of control. Without a planned transfer, sale, or covering arrangement, customers, contracts, and decisions can stall — staff do not automatically become owners.
 
-The statement sounds plausible but fails on precision, so it is false.'] WHERE case_id = 'CASE 4.1.39' AND tier = 'full';
-UPDATE public.economics_cases SET tactical_explanations = ARRAY['TRUE — Evaluated against the textbook standard, this assertion is correct. Continuity problems may occur if the sole proprietor suffers a long-term illness.
+Long-term illness removes or impairs the person on whom management depends. Continuity problems may therefore occur until the proprietor recovers or a transfer arrangement is made.
 
-Here you must apply ideas from sole proprietorship / sole traders to a concrete situation rather than recite a definition from memory. Ownership, customer type, stakeholder group, or country of production usually decides the verdict.
+That is why the claim stands for this form of business or source of finance.
 
-Applied carefully, prolonged absence disrupts management continuity. Nothing in the sentence stretches the concept beyond its standard use.
+The statement is true.
+', 'FALSE — Nothing in the sole-proprietorship form automatically preserves unchanged operations when the owner retires or is long-term absent. Employees do not inherit ownership by default, and the firm does not silently convert into a partnership. Succession must be arranged.
 
-Every part of the claim aligns with the standard concept, so the statement stands.', 'FALSE — Evaluated against the textbook standard, this assertion is false. Long-term illness of the owner has no continuity effect because employees legally become co-owners automatically.
+Employment does not shift unlimited liability onto workers, hand them strategic control, or incorporate the firm. Headcount is not an incorporation trigger and wages do not allocate owner liability.
 
-The topic is sole proprietorship / sole traders, but the decisive skill here is reading quantifiers. Words such as never, always, only, or all turn a generally true idea into a claim that can be rejected by one routine counterexample.
+Employees do not legally become co-owners automatically when the owner is ill. Without a transfer, ownership is unchanged, and continuity can still suffer. The “no continuity effect” claim is false.
 
-The statement overreaches because employees do not automatically acquire ownership. The trap is to agree with the topic while missing the one detail that breaks the logic.
+On that basis the assertion attaches the wrong legal, tax, liability, or finance label.
 
-Watch the absolute wording "automatically": exam statements often sound plausible until a single scope word turns an otherwise familiar idea into an overclaim.
+The statement is false.
+', 'FALSE — Prolonged inability to work does not automatically convert a sole proprietorship into a partnership. Partnership requires a multi-owner founding arrangement, not mere absence of the owner.
 
-The statement sounds plausible but fails on precision, so it is false.', 'FALSE — Evaluated against the textbook standard, this assertion is false. A sole proprietorship automatically converts to a partnership when the owner cannot work for several months.
+Sole proprietorship unites ownership and control in one person, has no separate legal personality (personal tax on profits), and carries unlimited liability so private assets can be reached if business resources fall short.
 
-The topic is sole proprietorship / sole traders, but the decisive skill here is reading quantifiers. Words such as never, always, only, or all turn a generally true idea into a claim that can be rejected by one routine counterexample.
+So the sentence does not survive once the correct mechanism is applied.
 
-The statement overreaches because temporary absence does not change the legal structure to a partnership. The trap is to agree with the topic while missing the one detail that breaks the logic.
+The statement is false.
+', 'TRUE — Continuity is tied to one person''s capacity to own and manage. Retirement or long-term illness removes that centre of control. Without a planned transfer, sale, or covering arrangement, customers, contracts, and decisions can stall — staff do not automatically become owners.
 
-Watch the absolute wording "automatically": exam statements often sound plausible until a single scope word turns an otherwise familiar idea into an overclaim.
+Retirement plans likewise threaten continuity because the controlling owner intends to step away. Without succession or sale arrangements, the business can face interruption.
 
-Because the decisive detail is wrong, mark the statement false.', 'TRUE — The claim is correct. Retirement plans of the sole proprietor can create continuity problems for the business.
+So the sentence is a correct description of the mechanism at work in this case.
 
-This statement draws on sole proprietorship / sole traders. Treat it as a checklist against the core concept named in the stem, not as a general opinion about business.
+The statement is true.
+', 'FALSE — Nothing in the sole-proprietorship form automatically preserves unchanged operations when the owner retires or is long-term absent. Employees do not inherit ownership by default, and the firm does not silently convert into a partnership. Succession must be arranged.
 
-In this setting, retirement removes the central owner-manager. The wording matches the textbook relationship without adding extra conditions.
+Dependence on one manager makes succession planning more pressing, not less, compared with firms that can transfer ownership shares while the legal person continues. The statement reverses the urgency.
 
-Every part of the claim aligns with the standard concept, so the statement stands.', 'FALSE — On the Fuhrmann definition used in the entrance exam, the sentence is false. Dependence on one manager makes succession planning less pressing than in firms with transferable ownership shares.
+That misclassification is enough to reject the claim.
 
-This statement draws on sole proprietorship / sole traders. Treat it as a checklist against the core concept named in the stem, not as a general opinion about business.
+The statement is false.
+'] WHERE case_id = 'CASE 4.1.40' AND tier = 'full';
+UPDATE public.economics_cases SET tactical_explanations = ARRAY['TRUE — A sole proprietorship concentrates ownership and day-to-day control in a single natural person. That person owns the trading assets, makes the operating decisions, and bears the residual risk. There is no co-owner layer and no separate company person standing between the proprietor and the business.
 
-Applied to this claim, single ownership makes succession planning more pressing, not less. That is why the sentence does not survive careful reading.
+Single ownership and management define the form.
 
-The statement sounds plausible but fails on precision, so it is false.'] WHERE case_id = 'CASE 4.1.40' AND tier = 'full';
-UPDATE public.economics_cases SET tactical_explanations = ARRAY['TRUE — This statement is correct. One person owns, manages, and runs the business as a sole proprietorship.
+On that basis the assertion matches the ownership or finance rule being tested.
 
-The relevant theory comes from sole proprietorship / sole traders. Identify which definition or relationship the sentence is trying to test before deciding true or false.
+The statement is true.
+', 'TRUE — Unlike many company forms, a sole proprietorship can start without a mandatory minimum share-capital deposit. That low formal barrier is why the form is described as easy to establish for small businesses — even though owners often still inject personal savings voluntarily.
 
-Applied carefully, single ownership and management define the form. Nothing in the sentence stretches the concept beyond its standard use.
+Apply the chapter mechanism to the exact wording: name the ownership form or finance source correctly, then check whether the claimed tax, liability, repayment, or matching consequence actually follows from that category.
 
-The reasoning chain is complete, so mark the statement true.', 'TRUE — On the Fuhrmann definition used in the entrance exam, the sentence is correct. Establishment is easy with no financial requirements to start this kind of business.
+On that basis the assertion matches the ownership or finance rule being tested.
 
-This statement draws on sole proprietorship / sole traders. Treat it as a checklist against the core concept named in the stem, not as a general opinion about business.
+The statement is true.
+', 'TRUE — Legal personality means a firm can hold rights and duties in its own name as a distinct person in law. A sole proprietorship does not have that status: contracts, assets, and liabilities attach to the owner personally. Unincorporated status is therefore the correct description.
 
-In this setting, no minimum capital is required. The wording matches the textbook relationship without adding extra conditions.
+Because there is no separate corporate taxpayer, trading profit is attributed to the proprietor. Mechanically: revenues minus deductible expenses yield taxable business profit, and that profit is declared on the owner''s personal income tax statement rather than on a stand-alone corporate return.
 
-The reasoning chain is complete, so mark the statement true.', 'TRUE — On the Fuhrmann definition used in the entrance exam, the sentence is correct. Profits are taxed on the owner''s personal income tax statement because the firm is not a legal entity.
+Unincorporated profits are personal income.
 
-The scenario is a worked example of sole proprietorship / sole traders. Translate the story into the textbook category first; only then judge whether the sentence describes that category accurately.
+That is why the claim stands for this form of business or source of finance.
 
-In this setting, unincorporated profits are personal income. The wording matches the textbook relationship without adding extra conditions.
+The statement is true.
+', 'TRUE — Unlimited liability means repayment is not capped at assets labelled as business property. If business resources cannot cover debts, creditors may reach the proprietor''s private assets. That personal exposure is the risk counterpart of undivided control.
 
-No qualifying word breaks the definition or scenario, so the answer is true.', 'TRUE — The claim is correct. The sole proprietor faces unlimited liability with private assets also at stake.
+Unlimited liability exposes personal wealth.
 
-This statement draws on sole proprietorship / sole traders. Treat it as a checklist against the core concept named in the stem, not as a general opinion about business.
+Sole proprietorship unites ownership and control in one person, has no separate legal personality (personal tax on profits), and carries unlimited liability so private assets can be reached if business resources fall short.
 
-In this setting, unlimited liability exposes personal wealth. The wording matches the textbook relationship without adding extra conditions.
+So the sentence is a correct description of the mechanism at work in this case.
 
-The reasoning chain is complete, so mark the statement true.', 'TRUE — The claim is correct. Internal finance from retained profit avoids interest charges, while external credit creates liabilities with interest.
+The statement is true.
+', 'TRUE — Internal finance comes from resources already inside the firm: profit kept rather than withdrawn, or cash released by selling assets the business no longer needs. No new creditor is created for that funding slice, so interest charges attached to borrowing are avoided.
 
-This statement draws on sole proprietorship / sole traders. Treat it as a checklist against the core concept named in the stem, not as a general opinion about business.
+Internal funds avoid interest; external credit carries repayment costs.
 
-In this setting, internal funds avoid interest; external credit carries repayment costs. The wording matches the textbook relationship without adding extra conditions.
+That is why the claim stands for this form of business or source of finance.
 
-Every part of the claim aligns with the standard concept, so the statement stands.'] WHERE case_id = 'CASE 4.1.41' AND tier = 'full';
-UPDATE public.economics_cases SET tactical_explanations = ARRAY['FALSE — On the Fuhrmann definition used in the entrance exam, the sentence is false. External finance from creditors eliminates unlimited liability because the bank shares business risk.
+The statement is true.
+'] WHERE case_id = 'CASE 4.1.41' AND tier = 'full';
+UPDATE public.economics_cases SET tactical_explanations = ARRAY['FALSE — Limited liability would wall off private assets once business assets are exhausted; sole proprietors do not enjoy that wall. Collateral pledged to a lender secures that lender''s claim — it does not convert the firm into a limited company or erase unlimited liability for remaining shortfalls.
 
-The scenario is a worked example of sole proprietorship / sole traders. Translate the story into the textbook category first; only then judge whether the sentence describes that category accurately.
+Borrowing does not limit the proprietor''s unlimited liability.
 
-Applied to this claim, borrowing does not limit the proprietor''s unlimited liability. That is why the sentence does not survive careful reading.
+On that basis the assertion attaches the wrong legal, tax, liability, or finance label.
 
-Once the overclaim or mislabel is exposed, the only consistent answer is false.', 'TRUE — Evaluated against the textbook standard, this assertion is correct. Extra money can be sought from investors and/or from banks when the sole proprietor needs additional funds.
+The statement is false.
+', 'TRUE — Keep the sole-trader triad in view: one owner-manager, no separate legal personality with personal tax on profits, and unlimited liability for debts. Investors and banks supplement personal resources.
 
-Here you must apply ideas from sole proprietorship / sole traders to a concrete situation rather than recite a definition from memory. Ownership, customer type, stakeholder group, or country of production usually decides the verdict.
+Sole proprietorship unites ownership and control in one person, has no separate legal personality (personal tax on profits), and carries unlimited liability so private assets can be reached if business resources fall short.
 
-Applied carefully, investors and banks supplement personal resources. Nothing in the sentence stretches the concept beyond its standard use.
+On that basis the assertion matches the ownership or finance rule being tested.
 
-The reasoning chain is complete, so mark the statement true.', 'TRUE — The claim is correct. Capital contributed by the owner together with investor funds and creditor finance counts as external finance for the firm.
+The statement is true.
+', 'TRUE — In this chapter''s sources-of-finance framework, money injected from outside retained trading surplus is external: owner savings at start-up, investor capital, and bank or other creditor funds. Legal sameness of owner and firm does not re-label owner capital as internal.
 
-This statement draws on sole proprietorship / sole traders. Treat it as a checklist against the core concept named in the stem, not as a general opinion about business.
+Owner investment plus investor and creditor funds are external sources of finance.
 
-In this setting, owner investment plus investor and creditor funds are external sources of finance. The wording matches the textbook relationship without adding extra conditions.
+On that basis the assertion matches the ownership or finance rule being tested.
 
-The reasoning chain is complete, so mark the statement true.', 'FALSE — Evaluated against the textbook standard, this assertion is false. Creditor funds need not be repaid when the loan is used to purchase productive business assets.
+The statement is true.
+', 'FALSE — Keep the finance map in view: internal (retained profit, asset sales) versus external (owner start-up savings, investors, creditors), and equity claims versus debt obligations with short- versus long-term maturity.
 
-Here you must apply ideas from sole proprietorship / sole traders to a concrete situation rather than recite a definition from memory. Ownership, customer type, stakeholder group, or country of production usually decides the verdict.
+Credit agreements require repayment with interest regardless of asset use.
 
-The statement overreaches because credit agreements require repayment with interest regardless of asset use. The trap is to agree with the topic while missing the one detail that breaks the logic.
+Apply the chapter mechanism to the exact wording: name the ownership form or finance source correctly, then check whether the claimed tax, liability, repayment, or matching consequence actually follows from that category.
 
-Once the overclaim or mislabel is exposed, the only consistent answer is false.', 'FALSE — Evaluated against the textbook standard, this assertion is false. Insufficient personal wealth has no effect on whether a sole proprietorship can be established.
+That misclassification is enough to reject the claim.
 
-The relevant theory comes from sole proprietorship / sole traders. Identify which definition or relationship the sentence is trying to test before deciding true or false.
+The statement is false.
+', 'FALSE — Limited personal funds make establishment very difficult.
 
-The statement overreaches because limited personal funds make establishment very difficult. The trap is to agree with the topic while missing the one detail that breaks the logic.
+Personal wealth and funding capacity do affect whether and how easily a sole proprietorship can be established or expanded. Claiming they have no bearing reverses the usual finance constraint for this form.
 
-The statement sounds plausible but fails on precision, so it is false.'] WHERE case_id = 'CASE 4.1.42' AND tier = 'full';
-UPDATE public.economics_cases SET tactical_explanations = ARRAY['FALSE — Evaluated against the textbook standard, this assertion is false. Trade credit from suppliers is long-term finance because payment may be deferred for several months.
+Sole proprietorship unites ownership and control in one person, has no separate legal personality (personal tax on profits), and carries unlimited liability so private assets can be reached if business resources fall short.
 
-Here you must apply ideas from sole proprietorship / sole traders to a concrete situation rather than recite a definition from memory. Ownership, customer type, stakeholder group, or country of production usually decides the verdict.
+On that basis the assertion attaches the wrong legal, tax, liability, or finance label.
 
-The statement overreaches because trade credit remains short-term purchase finance despite deferral. The trap is to agree with the topic while missing the one detail that breaks the logic.
+The statement is false.
+'] WHERE case_id = 'CASE 4.1.42' AND tier = 'full';
+UPDATE public.economics_cases SET tactical_explanations = ARRAY['FALSE — Trade credit must be repaid within the agreed period. It is typically short-term purchase-cycle finance, not long-term debt, and it does not erase the proprietor''s liability or the need to manage cash-flow timing.
 
-The statement sounds plausible but fails on precision, so it is false.', 'FALSE — Evaluated against the textbook standard, this assertion is false. Overdraft interest is charged on the account even when the balance remains positive and the account is not overdrawn.
+Trade credit remains short-term purchase finance despite deferral.
 
-Here you must apply ideas from sole proprietorship / sole traders to a concrete situation rather than recite a definition from memory. Ownership, customer type, stakeholder group, or country of production usually decides the verdict.
+Apply the chapter mechanism to the exact wording: name the ownership form or finance source correctly, then check whether the claimed tax, liability, repayment, or matching consequence actually follows from that category.
 
-The statement overreaches because overdraft interest applies during overdrawn periods only. The trap is to agree with the topic while missing the one detail that breaks the logic.
+So the sentence does not survive once the correct mechanism is applied.
 
-Once the overclaim or mislabel is exposed, the only consistent answer is false.', 'TRUE — This statement is correct. Short-term credit includes bank overdrafts and trade credit with duration typically less than a year.
+The statement is false.
+', 'FALSE — An overdraft does not incorporate the firm, create limited liability, or cease to be a liability because it is short-term. Interest is not charged as if a positive credit balance were borrowed.
 
-This tests discrimination within sole proprietorship / sole traders: local versus international scope, equity versus debt, product versus market orientation, and similar pairs.
+Overdraft interest applies during overdrawn periods only.
 
-Applied carefully, overdrafts and trade credit cover near-term needs. Nothing in the sentence stretches the concept beyond its standard use.
+Apply the chapter mechanism to the exact wording: name the ownership form or finance source correctly, then check whether the claimed tax, liability, repayment, or matching consequence actually follows from that category.
 
-Every part of the claim aligns with the standard concept, so the statement stands.', 'FALSE — On the Fuhrmann definition used in the entrance exam, the sentence is false. Long-term mortgage loans secured by property are not liabilities because collateral replaces repayment duty.
+That misclassification is enough to reject the claim.
 
-The scenario is a worked example of sole proprietorship / sole traders. Translate the story into the textbook category first; only then judge whether the sentence describes that category accurately.
+The statement is false.
+', 'TRUE — Trade credit is a supplier agreement allowing deferred payment for purchases. It creates a short-term external liability until settlement. Deferral changes cash timing; it is not a grant and not internal finance.
 
-Applied to this claim, mortgage loans remain liabilities despite collateral. That is why the sentence does not survive careful reading.
+A bank overdraft is flexible short-term credit on a current account: the balance may go negative within a limit. Interest is charged when the account is overdrawn, not on a healthy positive balance. The facility is external debt, not internal finance.
 
-The statement sounds plausible but fails on precision, so it is false.', 'FALSE — The claim is false. All kinds of credit are optional gifts that create no repayment obligation for the sole proprietor.
+Overdrafts and trade credit cover near-term needs.
 
-Although the subject matter is sole proprietorship / sole traders, this is really a logic check on overstatement. Non-profit surpluses, mixed economies, and partial market failure are classic cases where absolute wording fails.
+So the sentence is a correct description of the mechanism at work in this case.
 
-Applied to this claim, every credit form creates repayment obligations. That is why the sentence does not survive careful reading.
+The statement is true.
+', 'FALSE — Pledging collateral secures the lender; it does not waive all interest, exclude the loan from liabilities, incorporate the firm, or remove unlimited liability for any remaining shortfall. Short-term supplier trade credit also does not typically demand a mortgage over the home.
 
-Watch the absolute wording "all": exam statements often sound plausible until a single scope word turns an otherwise familiar idea into an overclaim.
+Mortgage loans remain liabilities despite collateral.
 
-Once the overclaim or mislabel is exposed, the only consistent answer is false.'] WHERE case_id = 'CASE 4.1.43' AND tier = 'full';
-UPDATE public.economics_cases SET tactical_explanations = ARRAY['TRUE — Evaluated against the textbook standard, this assertion is correct. The amount of finance available to the business is closely tied to the sole proprietor''s personal financial capacity.
+Apply the chapter mechanism to the exact wording: name the ownership form or finance source correctly, then check whether the claimed tax, liability, repayment, or matching consequence actually follows from that category.
 
-The relevant theory comes from sole proprietorship / sole traders. Identify which definition or relationship the sentence is trying to test before deciding true or false.
+That misclassification is enough to reject the claim.
 
-Applied carefully, available capital reflects the owner''s financial position. Nothing in the sentence stretches the concept beyond its standard use.
+The statement is false.
+', 'FALSE — Keep the sole-trader triad in view: one owner-manager, no separate legal personality with personal tax on profits, and unlimited liability for debts. Every credit form creates repayment obligations.
 
-The reasoning chain is complete, so mark the statement true.', 'FALSE — The claim is false. Mandatory minimum share capital must be raised from public investors before a sole trader may open.
+Sole proprietorship unites ownership and control in one person, has no separate legal personality (personal tax on profits), and carries unlimited liability so private assets can be reached if business resources fall short.
 
-This statement draws on sole proprietorship / sole traders. Treat it as a checklist against the core concept named in the stem, not as a general opinion about business.
+On that basis the assertion attaches the wrong legal, tax, liability, or finance label.
 
-Applied to this claim, no such capital requirement applies to sole proprietorships. That is why the sentence does not survive careful reading.
+The statement is false.
+'] WHERE case_id = 'CASE 4.1.43' AND tier = 'full';
+UPDATE public.economics_cases SET tactical_explanations = ARRAY['TRUE — Available capital reflects the owner''s financial position.
 
-Because the decisive detail is wrong, mark the statement false.', 'FALSE — The claim is false. A zero capital entry requirement does not stop the owner from contributing personal savings voluntarily.
+Funding capacity for a sole proprietorship tracks what the owner can supply or attract. Personal financial capacity therefore shapes how much finance is available at start-up and in early expansion — legal ease of entry does not invent capital by itself.
 
-This statement draws on sole proprietorship / sole traders. Treat it as a checklist against the core concept named in the stem, not as a general opinion about business.
+Sole proprietorship unites ownership and control in one person, has no separate legal personality (personal tax on profits), and carries unlimited liability so private assets can be reached if business resources fall short.
 
-Applied to this claim, voluntary owner investment from savings is common despite no minimum rule. That is why the sentence does not survive careful reading.
+So the sentence is a correct description of the mechanism at work in this case.
 
-Because the decisive detail is wrong, mark the statement false.', 'TRUE — On the Fuhrmann definition used in the entrance exam, the sentence is correct. Most sole proprietors invest their own savings in their business at the start.
+The statement is true.
+', 'FALSE — There is no mandatory minimum share capital before a sole trader may begin. Confusing sole proprietorship with company capital rules, or reading ''no requirement'' as ''owners never contribute savings,'' misstates how start-up funding works in practice.
 
-This statement draws on sole proprietorship / sole traders. Treat it as a checklist against the core concept named in the stem, not as a general opinion about business.
+No such capital requirement applies to sole proprietorships.
 
-In this setting, personal savings commonly fund initial operations. The wording matches the textbook relationship without adding extra conditions.
+Sole proprietorship unites ownership and control in one person, has no separate legal personality (personal tax on profits), and carries unlimited liability so private assets can be reached if business resources fall short.
 
-The reasoning chain is complete, so mark the statement true.', 'FALSE — Evaluated against the textbook standard, this assertion is false. Owner savings invested at launch are internal finance generated entirely from earlier trading surplus.
+That misclassification is enough to reject the claim.
 
-The topic is sole proprietorship / sole traders, but the decisive skill here is reading quantifiers. Words such as never, always, only, or all turn a generally true idea into a claim that can be rejected by one routine counterexample.
+The statement is false.
+', 'FALSE — Voluntary owner investment from savings is common despite no minimum rule.
 
-The statement overreaches because initial owner investment from savings is external finance at start-up. The trap is to agree with the topic while missing the one detail that breaks the logic.
+No mandatory minimum capital means the law does not force a deposit before trading — it does not mean owners contribute nothing. In practice most sole traders still inject personal savings voluntarily despite the zero entry gate. The useful contrast is ‘no legal minimum’ versus ‘no owner funding at all,’ which are not the same claim.
 
-Watch the absolute wording "entirely": exam statements often sound plausible until a single scope word turns an otherwise familiar idea into an overclaim.
+On that basis the assertion attaches the wrong legal, tax, liability, or finance label.
 
-The statement sounds plausible but fails on precision, so it is false.'] WHERE case_id = 'CASE 4.1.44' AND tier = 'full';
-UPDATE public.economics_cases SET tactical_explanations = ARRAY['FALSE — On the Fuhrmann definition used in the entrance exam, the sentence is false. Retained earnings kept in the firm must be remunerated with interest paid to the owner as if the owner were an external lender.
+The statement is false.
+', 'TRUE — Keep the sole-trader triad in view: one owner-manager, no separate legal personality with personal tax on profits, and unlimited liability for debts. Personal savings commonly fund initial operations.
 
-The scenario is a worked example of sole proprietorship / sole traders. Translate the story into the textbook category first; only then judge whether the sentence describes that category accurately.
+Sole proprietorship unites ownership and control in one person, has no separate legal personality (personal tax on profits), and carries unlimited liability so private assets can be reached if business resources fall short.
 
-Applied to this claim, internal finance avoids creditor interest charges. That is why the sentence does not survive careful reading.
+So the sentence is a correct description of the mechanism at work in this case.
 
-Because the decisive detail is wrong, mark the statement false.', 'FALSE — On the Fuhrmann definition used in the entrance exam, the sentence is false. Bank credit may be taken without any repayment obligation when the business generates strong revenues.
+The statement is true.
+', 'FALSE — Depositing borrowed or invested cash in the business account only records receipt. Owner start-up savings, investor funds, and bank credit remain external sources — they are not internal finance generated by operations.
 
-The scenario is a worked example of sole proprietorship / sole traders. Translate the story into the textbook category first; only then judge whether the sentence describes that category accurately.
+Initial owner investment from savings is external finance at start-up.
 
-Applied to this claim, credit agreements require repayment with interest regardless of revenue. That is why the sentence does not survive careful reading.
+Internal finance recycles surplus already inside the firm (retained profit, asset sales). External finance comes from outside providers (owner start-up savings in this framework, investors, banks, suppliers on credit). Where the cash sits in the bank account does not decide the label.
 
-Because the decisive detail is wrong, mark the statement false.', 'FALSE — Evaluated against the textbook standard, this assertion is false. Retained profit reinvested in the firm carries the same mandatory interest cost as a bank overdraft.
+On that basis the assertion attaches the wrong legal, tax, liability, or finance label.
 
-The relevant theory comes from sole proprietorship / sole traders. Identify which definition or relationship the sentence is trying to test before deciding true or false.
+The statement is false.
+'] WHERE case_id = 'CASE 4.1.44' AND tier = 'full';
+UPDATE public.economics_cases SET tactical_explanations = ARRAY['FALSE — Retained profit and asset disposals are internal, not external. They originate from the firm''s own surplus or owned assets — not from an outside investor or lender — even though the cash ends up in the business bank account.
 
-The statement overreaches because retained profit is internal and does not incur borrowing interest. The trap is to agree with the topic while missing the one detail that breaks the logic.
+Retained profit kept in the firm is not treated as a loan from the owner that must pay market interest. Avoiding creditor interest is precisely why internal finance is attractive.
 
-Because the decisive detail is wrong, mark the statement false.', 'TRUE — This statement is correct. Using a bank overdraft means interest is paid only when the account is overdrawn.
+Internal finance avoids creditor interest charges.
 
-Here you must apply ideas from sole proprietorship / sole traders to a concrete situation rather than recite a definition from memory. Ownership, customer type, stakeholder group, or country of production usually decides the verdict.
+So the sentence does not survive once the correct mechanism is applied.
 
-Applied carefully, overdraft interest applies during overdrawn periods only. Nothing in the sentence stretches the concept beyond its standard use.
+The statement is false.
+', 'FALSE — Keep the finance map in view: internal (retained profit, asset sales) versus external (owner start-up savings, investors, creditors), and equity claims versus debt obligations with short- versus long-term maturity.
 
-The reasoning chain is complete, so mark the statement true.', 'FALSE — On the Fuhrmann definition used in the entrance exam, the sentence is false. Trade credit from suppliers never creates any liability for the sole proprietor.
+Credit agreements require repayment with interest regardless of revenue.
 
-Although the subject matter is sole proprietorship / sole traders, this is really a logic check on overstatement. Non-profit surpluses, mixed economies, and partial market failure are classic cases where absolute wording fails.
+Apply the chapter mechanism to the exact wording: name the ownership form or finance source correctly, then check whether the claimed tax, liability, repayment, or matching consequence actually follows from that category.
 
-Applied to this claim, trade credit is a payable liability until settled. That is why the sentence does not survive careful reading.
+So the sentence does not survive once the correct mechanism is applied.
 
-Watch the absolute wording "never": exam statements often sound plausible until a single scope word turns an otherwise familiar idea into an overclaim.
+The statement is false.
+', 'FALSE — An overdraft does not incorporate the firm, create limited liability, or cease to be a liability because it is short-term. Interest is not charged as if a positive credit balance were borrowed.
 
-Once the overclaim or mislabel is exposed, the only consistent answer is false.'] WHERE case_id = 'CASE 4.1.45' AND tier = 'full';
-UPDATE public.economics_cases SET tactical_explanations = ARRAY['FALSE — Evaluated against the textbook standard, this assertion is false. Short-term trade credit from suppliers typically requires pledging the proprietor''s private home as mortgage collateral.
+Retained profit kept in the firm is not treated as a loan from the owner that must pay market interest. Avoiding creditor interest is precisely why internal finance is attractive.
 
-The relevant theory comes from sole proprietorship / sole traders. Identify which definition or relationship the sentence is trying to test before deciding true or false.
+Retained profit is internal and does not incur borrowing interest.
 
-The statement overreaches because trade credit is supplier agreement finance, not typically mortgage-backed. The trap is to agree with the topic while missing the one detail that breaks the logic.
+That misclassification is enough to reject the claim.
 
-The statement sounds plausible but fails on precision, so it is false.', 'TRUE — This statement is correct. Long-term lenders commonly insist on pledgeable assets as security when extending credit beyond one year.
+The statement is false.
+', 'TRUE — A bank overdraft is flexible short-term credit on a current account: the balance may go negative within a limit. Interest is charged when the account is overdrawn, not on a healthy positive balance. The facility is external debt, not internal finance.
 
-Here you must apply ideas from sole proprietorship / sole traders to a concrete situation rather than recite a definition from memory. Ownership, customer type, stakeholder group, or country of production usually decides the verdict.
+Overdraft pricing follows use: interest accrues on the overdrawn amount during overdrawn periods, not on unused positive balances.
 
-Applied carefully, long-term lenders commonly demand security. Nothing in the sentence stretches the concept beyond its standard use.
+Overdraft interest applies during overdrawn periods only.
 
-The reasoning chain is complete, so mark the statement true.', 'TRUE — On the Fuhrmann definition used in the entrance exam, the sentence is correct. Mortgage arrangements often tie long-term bank loans to land and property owned by the proprietor.
+That is why the claim stands for this form of business or source of finance.
 
-This statement draws on sole proprietorship / sole traders. Treat it as a checklist against the core concept named in the stem, not as a general opinion about business.
+The statement is true.
+', 'FALSE — Trade credit must be repaid within the agreed period. It is typically short-term purchase-cycle finance, not long-term debt, and it does not erase the proprietor''s liability or the need to manage cash-flow timing.
 
-In this setting, property mortgages frequently back long-term loans. The wording matches the textbook relationship without adding extra conditions.
+Trade credit is a payable liability until settled.
 
-No qualifying word breaks the definition or scenario, so the answer is true.', 'TRUE — This statement is correct. If private assets served as collateral and the business fails, those assets remain at stake.
+Sole proprietorship unites ownership and control in one person, has no separate legal personality (personal tax on profits), and carries unlimited liability so private assets can be reached if business resources fall short.
 
-Here you must apply ideas from sole proprietorship / sole traders to a concrete situation rather than recite a definition from memory. Ownership, customer type, stakeholder group, or country of production usually decides the verdict.
+So the sentence does not survive once the correct mechanism is applied.
 
-Applied carefully, pledged assets can be seized upon default. Nothing in the sentence stretches the concept beyond its standard use.
+The statement is false.
+'] WHERE case_id = 'CASE 4.1.45' AND tier = 'full';
+UPDATE public.economics_cases SET tactical_explanations = ARRAY['FALSE — Trade credit must be repaid within the agreed period. It is typically short-term purchase-cycle finance, not long-term debt, and it does not erase the proprietor''s liability or the need to manage cash-flow timing.
 
-Every part of the claim aligns with the standard concept, so the statement stands.', 'FALSE — On the Fuhrmann definition used in the entrance exam, the sentence is false. Pledging collateral for a long-term loan removes all unlimited liability exposure for the sole proprietor.
+Pledging collateral secures the lender; it does not waive all interest, exclude the loan from liabilities, incorporate the firm, or remove unlimited liability for any remaining shortfall. Short-term supplier trade credit also does not typically demand a mortgage over the home.
 
-Although the subject matter is sole proprietorship / sole traders, this is really a logic check on overstatement. Non-profit surpluses, mixed economies, and partial market failure are classic cases where absolute wording fails.
+Trade credit is supplier agreement finance, not typically mortgage-backed.
 
-Applied to this claim, unlimited liability persists; collateral does not remove broader exposure. That is why the sentence does not survive careful reading.
+On that basis the assertion attaches the wrong legal, tax, liability, or finance label.
 
-Watch the absolute wording "all": exam statements often sound plausible until a single scope word turns an otherwise familiar idea into an overclaim.
+The statement is false.
+', 'TRUE — Keep the finance map in view: internal (retained profit, asset sales) versus external (owner start-up savings, investors, creditors), and equity claims versus debt obligations with short- versus long-term maturity.
 
-Because the decisive detail is wrong, mark the statement false.'] WHERE case_id = 'CASE 4.1.46' AND tier = 'full';
-UPDATE public.economics_cases SET tactical_explanations = ARRAY['TRUE — Evaluated against the textbook standard, this assertion is correct. Profits are reported on the owner''s personal income tax statement because the business is not a legal entity.
+Long-term lenders commonly demand security.
 
-Here you must apply ideas from sole proprietorship / sole traders to a concrete situation rather than recite a definition from memory. Ownership, customer type, stakeholder group, or country of production usually decides the verdict.
+Apply the chapter mechanism to the exact wording: name the ownership form or finance source correctly, then check whether the claimed tax, liability, repayment, or matching consequence actually follows from that category.
 
-Applied carefully, unincorporated profits are personal taxable income. Nothing in the sentence stretches the concept beyond its standard use.
+That is why the claim stands for this form of business or source of finance.
 
-The reasoning chain is complete, so mark the statement true.', 'TRUE — On the Fuhrmann definition used in the entrance exam, the sentence is correct. Retained profit reinvested rather than withdrawn supplies internal finance without interest charges.
+The statement is true.
+', 'TRUE — Long-term lenders commonly require pledgeable assets — often land and property via a mortgage — as security. Collateral backs repayment; the loan remains a liability. If private property was pledged and the business cannot repay, that property remains at stake.
 
-The section on sole proprietorship / sole traders frequently contrasts two similar ideas side by side. A comparison statement is true only if the relationship is stated in the right direction and applies to the right concept pair.
+Property mortgages frequently back long-term loans.
 
-In this setting, reinvested surplus is internal and avoids borrowing costs. The wording matches the textbook relationship without adding extra conditions.
+Apply the chapter mechanism to the exact wording: name the ownership form or finance source correctly, then check whether the claimed tax, liability, repayment, or matching consequence actually follows from that category.
 
-No qualifying word breaks the definition or scenario, so the answer is true.', 'FALSE — The claim is false. Personal income tax on profits means the sole proprietorship pays corporate tax on retained earnings separately.
+So the sentence is a correct description of the mechanism at work in this case.
 
-This statement draws on sole proprietorship / sole traders. Treat it as a checklist against the core concept named in the stem, not as a general opinion about business.
+The statement is true.
+', 'TRUE — Unlimited liability means repayment is not capped at assets labelled as business property. If business resources cannot cover debts, creditors may reach the proprietor''s private assets. That personal exposure is the risk counterpart of undivided control.
 
-Applied to this claim, there is no separate corporate tax on retained earnings for a sole trader. That is why the sentence does not survive careful reading.
+Long-term lenders commonly require pledgeable assets — often land and property via a mortgage — as security. Collateral backs repayment; the loan remains a liability. If private property was pledged and the business cannot repay, that property remains at stake.
 
-Once the overclaim or mislabel is exposed, the only consistent answer is false.', 'TRUE — This statement is correct. Funds from investors and banks are external sources that create liabilities or ownership claims from outside.
+Pledged assets can be seized upon default.
 
-The relevant theory comes from sole proprietorship / sole traders. Identify which definition or relationship the sentence is trying to test before deciding true or false.
+So the sentence is a correct description of the mechanism at work in this case.
 
-Applied carefully, external finance enters from investors and creditors. Nothing in the sentence stretches the concept beyond its standard use.
+The statement is true.
+', 'FALSE — Limited liability would wall off private assets once business assets are exhausted; sole proprietors do not enjoy that wall. Collateral pledged to a lender secures that lender''s claim — it does not convert the firm into a limited company or erase unlimited liability for remaining shortfalls.
 
-The reasoning chain is complete, so mark the statement true.', 'TRUE — On the Fuhrmann definition used in the entrance exam, the sentence is correct. Sale of unused assets can provide internal finance once the business is operating.
+Pledging collateral secures the lender; it does not waive all interest, exclude the loan from liabilities, incorporate the firm, or remove unlimited liability for any remaining shortfall. Short-term supplier trade credit also does not typically demand a mortgage over the home.
 
-This statement draws on sole proprietorship / sole traders. Treat it as a checklist against the core concept named in the stem, not as a general opinion about business.
+Unlimited liability persists; collateral does not remove broader exposure.
 
-In this setting, asset disposal releases internal funds during operations. The wording matches the textbook relationship without adding extra conditions.
+On that basis the assertion attaches the wrong legal, tax, liability, or finance label.
 
-Every part of the claim aligns with the standard concept, so the statement stands.'] WHERE case_id = 'CASE 4.1.47' AND tier = 'full';
-UPDATE public.economics_cases SET tactical_explanations = ARRAY['TRUE — Evaluated against the textbook standard, this assertion is correct. The sole proprietor is liable for all debts and obligations regardless of whether finance is internal or external.
+The statement is false.
+'] WHERE case_id = 'CASE 4.1.46' AND tier = 'full';
+UPDATE public.economics_cases SET tactical_explanations = ARRAY['TRUE — Legal personality means a firm can hold rights and duties in its own name as a distinct person in law. A sole proprietorship does not have that status: contracts, assets, and liabilities attach to the owner personally. Unincorporated status is therefore the correct description.
 
-The topic is sole proprietorship / sole traders, but the decisive skill here is reading quantifiers. Words such as never, always, only, or all turn a generally true idea into a claim that can be rejected by one routine counterexample.
+Because there is no separate corporate taxpayer, trading profit is attributed to the proprietor. Mechanically: revenues minus deductible expenses yield taxable business profit, and that profit is declared on the owner''s personal income tax statement rather than on a stand-alone corporate return.
 
-Applied carefully, liability structure is independent of funding source. Nothing in the sentence stretches the concept beyond its standard use.
+Unincorporated profits are personal taxable income.
 
-The reasoning chain is complete, so mark the statement true.', 'TRUE — On the Fuhrmann definition used in the entrance exam, the sentence is correct. Private assets are also at stake if the business fails and debts need to be repaid.
+On that basis the assertion matches the ownership or finance rule being tested.
 
-The scenario is a worked example of sole proprietorship / sole traders. Translate the story into the textbook category first; only then judge whether the sentence describes that category accurately.
+The statement is true.
+', 'TRUE — Internal finance comes from resources already inside the firm: profit kept rather than withdrawn, or cash released by selling assets the business no longer needs. No new creditor is created for that funding slice, so interest charges attached to borrowing are avoided.
 
-In this setting, personal wealth remains exposed under unlimited liability. The wording matches the textbook relationship without adding extra conditions.
+Reinvested surplus is internal and avoids borrowing costs.
 
-No qualifying word breaks the definition or scenario, so the answer is true.', 'TRUE — This statement is correct. Bank overdrafts, trade credit, and long-term loans all count as liabilities for the sole proprietor.
+Internal finance recycles surplus already inside the firm (retained profit, asset sales). External finance comes from outside providers (owner start-up savings in this framework, investors, banks, suppliers on credit). Where the cash sits in the bank account does not decide the label.
 
-The topic is sole proprietorship / sole traders, but the decisive skill here is reading quantifiers. Words such as never, always, only, or all turn a generally true idea into a claim that can be rejected by one routine counterexample.
+So the sentence is a correct description of the mechanism at work in this case.
 
-Applied carefully, all credit forms create repayment duties. Nothing in the sentence stretches the concept beyond its standard use.
+The statement is true.
+', 'FALSE — Pass-through personal taxation does not create a corporate tax entity and does not exempt profits from tax. Dividends are a corporate distribution concept; sole traders do not need to issue dividends before personal tax is due on business profit.
 
-Every part of the claim aligns with the standard concept, so the statement stands.', 'TRUE — The claim is correct. Unlimited liability applies even when the sole proprietorship relies on retained profit or asset sales for finance.
+There is no separate corporate tax on retained earnings for a sole trader.
 
-The scenario is a worked example of sole proprietorship / sole traders. Translate the story into the textbook category first; only then judge whether the sentence describes that category accurately.
+Internal finance recycles surplus already inside the firm (retained profit, asset sales). External finance comes from outside providers (owner start-up savings in this framework, investors, banks, suppliers on credit). Where the cash sits in the bank account does not decide the label.
 
-In this setting, internal finance does not remove unlimited liability for business debts. The wording matches the textbook relationship without adding extra conditions.
+Sole proprietorship unites ownership and control in one person, has no separate legal personality (personal tax on profits), and carries unlimited liability so private assets can be reached if business resources fall short.
 
-Every part of the claim aligns with the standard concept, so the statement stands.', 'TRUE — On the Fuhrmann definition used in the entrance exam, the sentence is correct. Unlimited liability applies to all business debts and is not limited to externally borrowed funds.
+So the sentence does not survive once the correct mechanism is applied.
 
-Although the subject matter is sole proprietorship / sole traders, this is really a logic check on overstatement. Non-profit surpluses, mixed economies, and partial market failure are classic cases where absolute wording fails.
+The statement is false.
+', 'TRUE — In this chapter''s sources-of-finance framework, money injected from outside retained trading surplus is external: owner savings at start-up, investor capital, and bank or other creditor funds. Legal sameness of owner and firm does not re-label owner capital as internal.
 
-In this setting, internal and external finance alike leave the proprietor fully liable. The wording matches the textbook relationship without adding extra conditions.
+External finance enters from investors and creditors.
 
-No qualifying word breaks the definition or scenario, so the answer is true.'] WHERE case_id = 'CASE 4.1.48' AND tier = 'full';
-UPDATE public.economics_cases SET tactical_explanations = ARRAY['FALSE — Evaluated against the textbook standard, this assertion is false. A sole proprietorship cannot employ staff because the business is not a separate legal entity.
+Internal finance recycles surplus already inside the firm (retained profit, asset sales). External finance comes from outside providers (owner start-up savings in this framework, investors, banks, suppliers on credit). Where the cash sits in the bank account does not decide the label.
 
-The topic is sole proprietorship / sole traders, but the decisive skill here is reading quantifiers. Words such as never, always, only, or all turn a generally true idea into a claim that can be rejected by one routine counterexample.
+That is why the claim stands for this form of business or source of finance.
 
-The statement overreaches because unincorporated status does not prevent hiring personnel. The trap is to agree with the topic while missing the one detail that breaks the logic.
+The statement is true.
+', 'TRUE — Internal finance comes from resources already inside the firm: profit kept rather than withdrawn, or cash released by selling assets the business no longer needs. No new creditor is created for that funding slice, so interest charges attached to borrowing are avoided.
 
-Watch the absolute wording "cannot": exam statements often sound plausible until a single scope word turns an otherwise familiar idea into an overclaim.
+Asset disposal releases internal funds during operations.
 
-The statement sounds plausible but fails on precision, so it is false.', 'TRUE — On the Fuhrmann definition used in the entrance exam, the sentence is correct. Because the business lacks separate legal personality, operating profits are included on the proprietor''s personal income tax return.
+Internal finance recycles surplus already inside the firm (retained profit, asset sales). External finance comes from outside providers (owner start-up savings in this framework, investors, banks, suppliers on credit). Where the cash sits in the bank account does not decide the label.
 
-The scenario is a worked example of sole proprietorship / sole traders. Translate the story into the textbook category first; only then judge whether the sentence describes that category accurately.
+So the sentence is a correct description of the mechanism at work in this case.
 
-In this setting, unincorporated profits are personal taxable income. The wording matches the textbook relationship without adding extra conditions.
+The statement is true.
+'] WHERE case_id = 'CASE 4.1.47' AND tier = 'full';
+UPDATE public.economics_cases SET tactical_explanations = ARRAY['TRUE — Unlimited liability means repayment is not capped at assets labelled as business property. If business resources cannot cover debts, creditors may reach the proprietor''s private assets. That personal exposure is the risk counterpart of undivided control.
 
-No qualifying word breaks the definition or scenario, so the answer is true.', 'TRUE — The claim is correct. Owner savings and bank credit are external sources; retained profit and asset sales are internal sources.
+Liability structure is independent of funding source.
 
-This statement draws on sole proprietorship / sole traders. Treat it as a checklist against the core concept named in the stem, not as a general opinion about business.
+Internal finance recycles surplus already inside the firm (retained profit, asset sales). External finance comes from outside providers (owner start-up savings in this framework, investors, banks, suppliers on credit). Where the cash sits in the bank account does not decide the label.
 
-In this setting, external versus internal classification follows the textbook definitions. The wording matches the textbook relationship without adding extra conditions.
+Sole proprietorship unites ownership and control in one person, has no separate legal personality (personal tax on profits), and carries unlimited liability so private assets can be reached if business resources fall short.
 
-The reasoning chain is complete, so mark the statement true.', 'TRUE — Evaluated against the textbook standard, this assertion is correct. All credit including overdrafts and trade credit creates liabilities, and unlimited liability exposes private assets.
+On that basis the assertion matches the ownership or finance rule being tested.
 
-The topic is sole proprietorship / sole traders, but the decisive skill here is reading quantifiers. Words such as never, always, only, or all turn a generally true idea into a claim that can be rejected by one routine counterexample.
+The statement is true.
+', 'TRUE — Unlimited liability means repayment is not capped at assets labelled as business property. If business resources cannot cover debts, creditors may reach the proprietor''s private assets. That personal exposure is the risk counterpart of undivided control.
 
-Applied carefully, credit creates liabilities under unlimited liability reaching private assets. Nothing in the sentence stretches the concept beyond its standard use.
+Personal wealth remains exposed under unlimited liability.
 
-Every part of the claim aligns with the standard concept, so the statement stands.', 'FALSE — On the Fuhrmann definition used in the entrance exam, the sentence is false. Continuity of a sole proprietorship is unaffected when the sole proprietor retires or suffers long-term illness.
+Apply the chapter mechanism to the exact wording: name the ownership form or finance source correctly, then check whether the claimed tax, liability, repayment, or matching consequence actually follows from that category.
 
-The scenario is a worked example of sole proprietorship / sole traders. Translate the story into the textbook category first; only then judge whether the sentence describes that category accurately.
+That is why the claim stands for this form of business or source of finance.
 
-Applied to this claim, single-person dependence creates succession and continuity risk. That is why the sentence does not survive careful reading.
+The statement is true.
+', 'TRUE — Trade credit is a supplier agreement allowing deferred payment for purchases. It creates a short-term external liability until settlement. Deferral changes cash timing; it is not a grant and not internal finance.
 
-Because the decisive detail is wrong, mark the statement false.'] WHERE case_id = 'CASE 4.1.49' AND tier = 'full';
-UPDATE public.economics_cases SET tactical_explanations = ARRAY['TRUE — Evaluated against the textbook standard, this assertion is correct. The sole proprietor retains the most important management decisions even when employees handle routine tasks.
+A bank overdraft is flexible short-term credit on a current account: the balance may go negative within a limit. Interest is charged when the account is overdrawn, not on a healthy positive balance. The facility is external debt, not internal finance.
 
-Here you must apply ideas from sole proprietorship / sole traders to a concrete situation rather than recite a definition from memory. Ownership, customer type, stakeholder group, or country of production usually decides the verdict.
+All credit forms create repayment duties.
 
-Applied carefully, strategic authority remains with the proprietor despite hired staff. Nothing in the sentence stretches the concept beyond its standard use.
+So the sentence is a correct description of the mechanism at work in this case.
 
-No qualifying word breaks the definition or scenario, so the answer is true.', 'FALSE — Evaluated against the textbook standard, this assertion is false. Easy establishment with no capital requirements means the business never faces continuity or liability concerns.
+The statement is true.
+', 'TRUE — Unlimited liability means repayment is not capped at assets labelled as business property. If business resources cannot cover debts, creditors may reach the proprietor''s private assets. That personal exposure is the risk counterpart of undivided control.
 
-The topic is sole proprietorship / sole traders, but the decisive skill here is reading quantifiers. Words such as never, always, only, or all turn a generally true idea into a claim that can be rejected by one routine counterexample.
+Internal finance does not remove unlimited liability for business debts.
 
-The statement overreaches because easy start-up does not remove continuity risk or unlimited liability. The trap is to agree with the topic while missing the one detail that breaks the logic.
+Internal finance recycles surplus already inside the firm (retained profit, asset sales). External finance comes from outside providers (owner start-up savings in this framework, investors, banks, suppliers on credit). Where the cash sits in the bank account does not decide the label.
 
-Watch the absolute wording "never": exam statements often sound plausible until a single scope word turns an otherwise familiar idea into an overclaim.
+Sole proprietorship unites ownership and control in one person, has no separate legal personality (personal tax on profits), and carries unlimited liability so private assets can be reached if business resources fall short.
 
-Once the overclaim or mislabel is exposed, the only consistent answer is false.', 'FALSE — Evaluated against the textbook standard, this assertion is false. Retained profit reinvested in the firm requires paying interest charges to external creditors.
+So the sentence is a correct description of the mechanism at work in this case.
 
-The relevant theory comes from sole proprietorship / sole traders. Identify which definition or relationship the sentence is trying to test before deciding true or false.
+The statement is true.
+', 'TRUE — Unlimited liability means repayment is not capped at assets labelled as business property. If business resources cannot cover debts, creditors may reach the proprietor''s private assets. That personal exposure is the risk counterpart of undivided control.
 
-The statement overreaches because retained profit is internal finance and does not incur creditor interest. The trap is to agree with the topic while missing the one detail that breaks the logic.
+Internal and external finance alike leave the proprietor fully liable.
 
-Because the decisive detail is wrong, mark the statement false.', 'TRUE — The claim is correct. If revenues exceed expenses, profit may be retained for reinvestment unless the proprietor withdraws it.
+Internal finance recycles surplus already inside the firm (retained profit, asset sales). External finance comes from outside providers (owner start-up savings in this framework, investors, banks, suppliers on credit). Where the cash sits in the bank account does not decide the label.
 
-The scenario is a worked example of sole proprietorship / sole traders. Translate the story into the textbook category first; only then judge whether the sentence describes that category accurately.
+On that basis the assertion matches the ownership or finance rule being tested.
 
-In this setting, operating surplus may be reinvested or taken personally. The wording matches the textbook relationship without adding extra conditions.
+The statement is true.
+'] WHERE case_id = 'CASE 4.1.48' AND tier = 'full';
+UPDATE public.economics_cases SET tactical_explanations = ARRAY['FALSE — Employment does not shift unlimited liability onto workers, hand them strategic control, or incorporate the firm. Headcount is not an incorporation trigger and wages do not allocate owner liability.
 
-Every part of the claim aligns with the standard concept, so the statement stands.', 'FALSE — This statement is false. Investor funds and bank loans are internal sources because they are deposited in the business bank account.
+Unincorporated status does not prevent hiring personnel.
 
-Here you must apply ideas from sole proprietorship / sole traders to a concrete situation rather than recite a definition from memory. Ownership, customer type, stakeholder group, or country of production usually decides the verdict.
+Sole proprietorship unites ownership and control in one person, has no separate legal personality (personal tax on profits), and carries unlimited liability so private assets can be reached if business resources fall short.
 
-The statement overreaches because investor and bank funds are external sources, not internal finance. The trap is to agree with the topic while missing the one detail that breaks the logic.
+So the sentence does not survive once the correct mechanism is applied.
 
-Once the overclaim or mislabel is exposed, the only consistent answer is false.'] WHERE case_id = 'CASE 4.1.50' AND tier = 'full';
+The statement is false.
+', 'TRUE — Legal personality means a firm can hold rights and duties in its own name as a distinct person in law. A sole proprietorship does not have that status: contracts, assets, and liabilities attach to the owner personally. Unincorporated status is therefore the correct description.
+
+Because there is no separate corporate taxpayer, trading profit is attributed to the proprietor. Mechanically: revenues minus deductible expenses yield taxable business profit, and that profit is declared on the owner''s personal income tax statement rather than on a stand-alone corporate return.
+
+Unincorporated profits are personal taxable income.
+
+On that basis the assertion matches the ownership or finance rule being tested.
+
+The statement is true.
+', 'TRUE — Internal finance comes from resources already inside the firm: profit kept rather than withdrawn, or cash released by selling assets the business no longer needs. No new creditor is created for that funding slice, so interest charges attached to borrowing are avoided.
+
+In this chapter''s sources-of-finance framework, money injected from outside retained trading surplus is external: owner savings at start-up, investor capital, and bank or other creditor funds. Legal sameness of owner and firm does not re-label owner capital as internal.
+
+External versus internal classification follows the textbook definitions.
+
+So the sentence is a correct description of the mechanism at work in this case.
+
+The statement is true.
+', 'TRUE — Unlimited liability means repayment is not capped at assets labelled as business property. If business resources cannot cover debts, creditors may reach the proprietor''s private assets. That personal exposure is the risk counterpart of undivided control.
+
+Trade credit is a supplier agreement allowing deferred payment for purchases. It creates a short-term external liability until settlement. Deferral changes cash timing; it is not a grant and not internal finance.
+
+A bank overdraft is flexible short-term credit on a current account: the balance may go negative within a limit. Interest is charged when the account is overdrawn, not on a healthy positive balance. The facility is external debt, not internal finance.
+
+Credit creates liabilities under unlimited liability reaching private assets.
+
+On that basis the assertion matches the ownership or finance rule being tested.
+
+The statement is true.
+', 'FALSE — Nothing in the sole-proprietorship form automatically preserves unchanged operations when the owner retires or is long-term absent. Employees do not inherit ownership by default, and the firm does not silently convert into a partnership. Succession must be arranged.
+
+Single-person dependence creates succession and continuity risk.
+
+Sole proprietorship unites ownership and control in one person, has no separate legal personality (personal tax on profits), and carries unlimited liability so private assets can be reached if business resources fall short.
+
+On that basis the assertion attaches the wrong legal, tax, liability, or finance label.
+
+The statement is false.
+'] WHERE case_id = 'CASE 4.1.49' AND tier = 'full';
+UPDATE public.economics_cases SET tactical_explanations = ARRAY['TRUE — Hiring is allowed. Assistants can handle routine work, but key management decisions and residual risk stay with the proprietor. Employment expands capacity; it does not transfer ownership or unlimited liability to staff.
+
+With no co-owners, decision rights are undivided. The proprietor can act without a partners'' vote or board resolution. Advice may be taken, but consultation is not a structural requirement of the form.
+
+Strategic authority remains with the proprietor despite hired staff.
+
+That is why the claim stands for this form of business or source of finance.
+
+The statement is true.
+', 'FALSE — Nothing in the sole-proprietorship form automatically preserves unchanged operations when the owner retires or is long-term absent. Employees do not inherit ownership by default, and the firm does not silently convert into a partnership. Succession must be arranged.
+
+Easy start-up does not remove continuity risk or unlimited liability.
+
+Apply the chapter mechanism to the exact wording: name the ownership form or finance source correctly, then check whether the claimed tax, liability, repayment, or matching consequence actually follows from that category.
+
+On that basis the assertion attaches the wrong legal, tax, liability, or finance label.
+
+The statement is false.
+', 'FALSE — Retained profit and asset disposals are internal, not external. They originate from the firm''s own surplus or owned assets — not from an outside investor or lender — even though the cash ends up in the business bank account.
+
+Retained profit kept in the firm is not treated as a loan from the owner that must pay market interest. Avoiding creditor interest is precisely why internal finance is attractive.
+
+Retained profit is internal finance and does not incur creditor interest.
+
+So the sentence does not survive once the correct mechanism is applied.
+
+The statement is false.
+', 'TRUE — Keep the finance map in view: internal (retained profit, asset sales) versus external (owner start-up savings, investors, creditors), and equity claims versus debt obligations with short- versus long-term maturity.
+
+Operating surplus may be reinvested or taken personally.
+
+Internal finance recycles surplus already inside the firm (retained profit, asset sales). External finance comes from outside providers (owner start-up savings in this framework, investors, banks, suppliers on credit). Where the cash sits in the bank account does not decide the label.
+
+That is why the claim stands for this form of business or source of finance.
+
+The statement is true.
+', 'FALSE — Depositing borrowed or invested cash in the business account only records receipt. Owner start-up savings, investor funds, and bank credit remain external sources — they are not internal finance generated by operations.
+
+Investor and bank funds are external sources, not internal finance.
+
+Internal finance recycles surplus already inside the firm (retained profit, asset sales). External finance comes from outside providers (owner start-up savings in this framework, investors, banks, suppliers on credit). Where the cash sits in the bank account does not decide the label.
+
+That misclassification is enough to reject the claim.
+
+The statement is false.
+'] WHERE case_id = 'CASE 4.1.50' AND tier = 'full';

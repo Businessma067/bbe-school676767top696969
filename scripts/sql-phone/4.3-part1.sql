@@ -1,840 +1,1147 @@
 -- Update expanded explanations for 4.3-part1 (25 cases).
 -- Safe to re-run: only updates tactical_explanations.
 
-UPDATE public.economics_cases SET tactical_explanations = ARRAY['TRUE — This statement is correct. A corporation is a legal entity of its own with the same rights and obligations as natural persons in business life.
+UPDATE public.economics_cases SET tactical_explanations = ARRAY['TRUE — As a legal person, a corporation holds rights and obligations in its own name: it can own land and property, hire people, close contracts, sue, and be sued. Those capacities do not require every shareholder to act personally in each transaction.
 
-The relevant theory comes from corporations and limited liability. Identify which definition or relationship the sentence is trying to test before deciding true or false.
+Corporations are legal persons with rights and obligations comparable to natural persons.
 
-Applied carefully, corporations are legal persons with rights and obligations comparable to natural persons. Nothing in the sentence stretches the concept beyond its standard use.
+Apply the chapter mechanism to the exact wording: name the ownership form or finance source correctly, then check whether the claimed tax, liability, repayment, or matching consequence actually follows from that category.
 
-Every part of the claim aligns with the standard concept, so the statement stands.', 'TRUE — This statement is correct. As a legal person, a corporation can own land and property, hire people, and close contracts.
+On that basis the assertion matches the ownership or finance rule being tested.
 
-The relevant theory comes from corporations and limited liability. Identify which definition or relationship the sentence is trying to test before deciding true or false.
+The statement is true.
+', 'TRUE — As a legal person, a corporation holds rights and obligations in its own name: it can own land and property, hire people, close contracts, sue, and be sued. Those capacities do not require every shareholder to act personally in each transaction.
 
-Applied carefully, legal personality lets the firm own assets, employ staff, and contract independently. Nothing in the sentence stretches the concept beyond its standard use.
+Legal personality lets the firm own assets, employ staff, and contract independently.
 
-No qualifying word breaks the definition or scenario, so the answer is true.', 'TRUE — On the Fuhrmann definition used in the entrance exam, the sentence is correct. A corporation may sue other parties and may itself be sued in its own name.
+Apply the chapter mechanism to the exact wording: name the ownership form or finance source correctly, then check whether the claimed tax, liability, repayment, or matching consequence actually follows from that category.
 
-This statement draws on corporations and limited liability. Treat it as a checklist against the core concept named in the stem, not as a general opinion about business.
+On that basis the assertion matches the ownership or finance rule being tested.
 
-In this setting, the incorporated business can initiate and face litigation in its corporate name. The wording matches the textbook relationship without adding extra conditions.
+The statement is true.
+', 'TRUE — Keep the corporate triad in view: separate legal personality, transferable share capital with limited shareholder liability, and possible separation of shareholders from day-to-day managers.
 
-The reasoning chain is complete, so mark the statement true.', 'TRUE — On the Fuhrmann definition used in the entrance exam, the sentence is correct. Shareholders who found the corporation need not be involved in day-to-day management of the business.
+The incorporated business can initiate and face litigation in its corporate name.
 
-This statement draws on corporations and limited liability. Treat it as a checklist against the core concept named in the stem, not as a general opinion about business.
+Apply the chapter mechanism to the exact wording: name the ownership form or finance source correctly, then check whether the claimed tax, liability, repayment, or matching consequence actually follows from that category.
 
-In this setting, founders who hold shares are not required to run daily operations. The wording matches the textbook relationship without adding extra conditions.
+So the sentence is a correct description of the mechanism at work in this case.
 
-Every part of the claim aligns with the standard concept, so the statement stands.', 'TRUE — On the Fuhrmann definition used in the entrance exam, the sentence is correct. Managers of a corporation need not own a share of the business.
+The statement is true.
+', 'TRUE — Ownership and management can separate: shareholders who found or fund the corporation need not run daily operations, and hired managers need not own shares. Boards and executives supply the governance layer.
 
-This statement draws on corporations and limited liability. Treat it as a checklist against the core concept named in the stem, not as a general opinion about business.
+Founders who hold shares are not required to run daily operations.
 
-In this setting, directors and executives may manage the firm without holding shares. The wording matches the textbook relationship without adding extra conditions.
+Apply the chapter mechanism to the exact wording: name the ownership form or finance source correctly, then check whether the claimed tax, liability, repayment, or matching consequence actually follows from that category.
 
-No qualifying word breaks the definition or scenario, so the answer is true.'] WHERE case_id = 'CASE 4.3.01' AND tier = 'full';
-UPDATE public.economics_cases SET tactical_explanations = ARRAY['FALSE — Evaluated against the textbook standard, this assertion is false. When share prices rise on the exchange after the IPO, the issuing corporation automatically receives fresh share capital equal to that gain.
+On that basis the assertion matches the ownership or finance rule being tested.
 
-The topic is corporations and limited liability, but the decisive skill here is reading quantifiers. Words such as never, always, only, or all turn a generally true idea into a claim that can be rejected by one routine counterexample.
+The statement is true.
+', 'TRUE — Keep the corporate triad in view: separate legal personality, transferable share capital with limited shareholder liability, and possible separation of shareholders from day-to-day managers.
 
-The statement overreaches because post-issue price gains do not add new share capital to the issuer. The trap is to agree with the topic while missing the one detail that breaks the logic.
+Directors and executives may manage the firm without holding shares.
 
-Watch the absolute wording "automatically": exam statements often sound plausible until a single scope word turns an otherwise familiar idea into an overclaim.
+Apply the chapter mechanism to the exact wording: name the ownership form or finance source correctly, then check whether the claimed tax, liability, repayment, or matching consequence actually follows from that category.
 
-Once the overclaim or mislabel is exposed, the only consistent answer is false.', 'FALSE — On the Fuhrmann definition used in the entrance exam, the sentence is false. A sustained increase in secondary-market prices injects permanent equity finance into the issuer beyond the original issue proceeds.
+That is why the claim stands for this form of business or source of finance.
 
-This statement draws on corporations and limited liability. Treat it as a checklist against the core concept named in the stem, not as a general opinion about business.
+The statement is true.
+'] WHERE case_id = 'CASE 4.3.01' AND tier = 'full';
+UPDATE public.economics_cases SET tactical_explanations = ARRAY['FALSE — An IPO (or other primary issue) sells new shares and can raise equity finance for the issuer. Later exchange trading is mainly secondary: ownership passes between investors without a new capital raise unless the company issues again.
 
-Applied to this claim, secondary trading transfers ownership among investors; it does not fund the corporation anew. That is why the sentence does not survive careful reading.
+Post-issue price gains do not add new share capital to the issuer.
 
-The statement sounds plausible but fails on precision, so it is false.', 'FALSE — Evaluated against the textbook standard, this assertion is false. Higher post-issue market prices oblige the corporation to pay matching dividends to all past and future shareholders.
+Share capital is built from the capital attached to issued shares. Where nominal (par) value is used, total share capital is thought of as nominal value times the number of shares issued. Ownership fractions follow how many shares each investor holds, not who holds the CEO title.
 
-The topic is corporations and limited liability, but the decisive skill here is reading quantifiers. Words such as never, always, only, or all turn a generally true idea into a claim that can be rejected by one routine counterexample.
+An IPO is a primary issue: new shares are sold and the issuer can receive equity finance. Later exchange trades are typically secondary transactions among investors unless the company issues again.
 
-The statement overreaches because dividends remain discretionary and are not tied to market price movements. The trap is to agree with the topic while missing the one detail that breaks the logic.
+On that basis the assertion attaches the wrong legal, tax, liability, or finance label.
 
-Watch the absolute wording "all": exam statements often sound plausible until a single scope word turns an otherwise familiar idea into an overclaim.
+The statement is false.
+', 'FALSE — Secondary-market appreciation is not a corporate financing inflow. The issuer receives proceeds at issue (for example at an IPO); later price changes between investors do not automatically raise new share capital for the firm.
 
-Once the overclaim or mislabel is exposed, the only consistent answer is false.', 'TRUE — This statement is correct. An increase in share prices after they have been issued does not have any additional financing effect for the issuing corporation.
+Secondary trading transfers ownership among investors; it does not fund the corporation anew.
 
-The relevant theory comes from corporations and limited liability. Identify which definition or relationship the sentence is trying to test before deciding true or false.
+Equity finance creates ownership claims (share capital, retained earnings); debt finance creates repayment obligations (overdrafts, trade credit, loans, bonds). Internal versus external further asks whether funds came from inside surplus or from outside providers.
 
-Applied carefully, only primary issue proceeds finance the issuer; later price rises benefit shareholders. Nothing in the sentence stretches the concept beyond its standard use.
+That misclassification is enough to reject the claim.
 
-The reasoning chain is complete, so mark the statement true.', 'FALSE — The claim is false. The corporation shares equally in capital gains when existing shareholders sell stock to one another at higher prices.
+The statement is false.
+', 'FALSE — Dividends distribute part of corporate profit to shareholders. Dividend policy affects how attractive shares look versus capital gains, but paying dividends is a distribution choice — not the same mechanism as sole-trader profit drawings.
 
-The scenario is a worked example of corporations and limited liability. Translate the story into the textbook category first; only then judge whether the sentence describes that category accurately.
+Dividends remain discretionary and are not tied to market price movements.
 
-Applied to this claim, trading gains accrue to selling shareholders, not to the issuing corporation. That is why the sentence does not survive careful reading.
+Dividends distribute corporate profit to shareholders under board/company policy. They are not the same as sole-trader drawings, and skipping dividends does not by itself invalidate share ownership.
 
-The statement sounds plausible but fails on precision, so it is false.'] WHERE case_id = 'CASE 4.3.02' AND tier = 'full';
-UPDATE public.economics_cases SET tactical_explanations = ARRAY['TRUE — On the Fuhrmann definition used in the entrance exam, the sentence is correct. Shareholders'' liability is usually limited to the amount of money they invested when buying the shares.
+Finance choice weighs cost (interest and issuance costs), gearing risk (heavy loan capital raises fixed burdens and insolvency exposure), and matching (long-lived assets with long-term finance; short-cycle materials with short-term credit). No single criterion replaces the others.
 
-The scenario is a worked example of corporations and limited liability. Translate the story into the textbook category first; only then judge whether the sentence describes that category accurately.
+On that basis the assertion attaches the wrong legal, tax, liability, or finance label.
 
-In this setting, limited liability confines exposure to the capital subscribed for shares. The wording matches the textbook relationship without adding extra conditions.
+The statement is false.
+', 'TRUE — Keep the corporate triad in view: separate legal personality, transferable share capital with limited shareholder liability, and possible separation of shareholders from day-to-day managers.
 
-No qualifying word breaks the definition or scenario, so the answer is true.', 'FALSE — Evaluated against the textbook standard, this assertion is false. Limited liability means shareholders can never lose any part of the money they paid for their shares.
+Only primary issue proceeds finance the issuer; later price rises benefit shareholders.
 
-The topic is corporations and limited liability, but the decisive skill here is reading quantifiers. Words such as never, always, only, or all turn a generally true idea into a claim that can be rejected by one routine counterexample.
+Apply the chapter mechanism to the exact wording: name the ownership form or finance source correctly, then check whether the claimed tax, liability, repayment, or matching consequence actually follows from that category.
 
-The statement overreaches because shareholders can lose invested capital if the business fails or share values fall. The trap is to agree with the topic while missing the one detail that breaks the logic.
+On that basis the assertion matches the ownership or finance rule being tested.
 
-Watch the absolute wording "never": exam statements often sound plausible until a single scope word turns an otherwise familiar idea into an overclaim.
+The statement is true.
+', 'FALSE — Keep the corporate triad in view: separate legal personality, transferable share capital with limited shareholder liability, and possible separation of shareholders from day-to-day managers.
 
-The statement sounds plausible but fails on precision, so it is false.', 'TRUE — This statement is correct. The capital of a corporation is divided into shares, which is why it is called share capital.
+Trading gains accrue to selling shareholders, not to the issuing corporation.
 
-The relevant theory comes from corporations and limited liability. Identify which definition or relationship the sentence is trying to test before deciding true or false.
+Apply the chapter mechanism to the exact wording: name the ownership form or finance source correctly, then check whether the claimed tax, liability, repayment, or matching consequence actually follows from that category.
 
-Applied carefully, dividing capital into shares defines share capital. Nothing in the sentence stretches the concept beyond its standard use.
+On that basis the assertion attaches the wrong legal, tax, liability, or finance label.
 
-No qualifying word breaks the definition or scenario, so the answer is true.', 'TRUE — On the Fuhrmann definition used in the entrance exam, the sentence is correct. Persons who buy shares become shareholders of the corporation.
+The statement is false.
+'] WHERE case_id = 'CASE 4.3.02' AND tier = 'full';
+UPDATE public.economics_cases SET tactical_explanations = ARRAY['TRUE — Keep the corporate triad in view: separate legal personality, transferable share capital with limited shareholder liability, and possible separation of shareholders from day-to-day managers.
 
-This statement draws on corporations and limited liability. Treat it as a checklist against the core concept named in the stem, not as a general opinion about business.
+Limited liability confines exposure to the capital subscribed for shares.
 
-In this setting, purchasing shares confers shareholder status. The wording matches the textbook relationship without adding extra conditions.
+Apply the chapter mechanism to the exact wording: name the ownership form or finance source correctly, then check whether the claimed tax, liability, repayment, or matching consequence actually follows from that category.
 
-No qualifying word breaks the definition or scenario, so the answer is true.', 'TRUE — On the Fuhrmann definition used in the entrance exam, the sentence is correct. Share capital is usually not redeemed by the company and serves as long-term or permanent capital.
+That is why the claim stands for this form of business or source of finance.
 
-This statement draws on corporations and limited liability. Treat it as a checklist against the core concept named in the stem, not as a general opinion about business.
+The statement is true.
+', 'FALSE — Shareholders'' financial exposure is generally limited to what they invested in share capital. Creditors claim against the company as legal person; they do not automatically seize shareholders'' private homes for ordinary company debts.
 
-In this setting, share capital is typically permanent long-term equity not repaid like a loan. The wording matches the textbook relationship without adding extra conditions.
+Shareholders can lose invested capital if the business fails or share values fall.
 
-Every part of the claim aligns with the standard concept, so the statement stands.'] WHERE case_id = 'CASE 4.3.03' AND tier = 'full';
-UPDATE public.economics_cases SET tactical_explanations = ARRAY['FALSE — The claim is false. Because they provided share capital, the founders must personally manage every major business decision.
+Apply the chapter mechanism to the exact wording: name the ownership form or finance source correctly, then check whether the claimed tax, liability, repayment, or matching consequence actually follows from that category.
 
-Although the subject matter is corporations and limited liability, this is really a logic check on overstatement. Non-profit surpluses, mixed economies, and partial market failure are classic cases where absolute wording fails.
+So the sentence does not survive once the correct mechanism is applied.
 
-Applied to this claim, shareholders supply capital but need not manage the firm. That is why the sentence does not survive careful reading.
+The statement is false.
+', 'TRUE — Keep the corporate triad in view: separate legal personality, transferable share capital with limited shareholder liability, and possible separation of shareholders from day-to-day managers.
 
-Watch the absolute wording "every": exam statements often sound plausible until a single scope word turns an otherwise familiar idea into an overclaim.
+Dividing capital into shares defines share capital.
 
-The statement sounds plausible but fails on precision, so it is false.', 'FALSE — Evaluated against the textbook standard, this assertion is false. The appointed chief executive must own shares before the board of directors may elect that person.
+Apply the chapter mechanism to the exact wording: name the ownership form or finance source correctly, then check whether the claimed tax, liability, repayment, or matching consequence actually follows from that category.
 
-The relevant theory comes from corporations and limited liability. Identify which definition or relationship the sentence is trying to test before deciding true or false.
+On that basis the assertion matches the ownership or finance rule being tested.
 
-The statement overreaches because managers need not own shares to serve on the board. The trap is to agree with the topic while missing the one detail that breaks the logic.
+The statement is true.
+', 'TRUE — Keep the corporate triad in view: separate legal personality, transferable share capital with limited shareholder liability, and possible separation of shareholders from day-to-day managers.
 
-Once the overclaim or mislabel is exposed, the only consistent answer is false.', 'TRUE — This statement is correct. The corporation is managed by a board of directors elected by shareholders to make major business decisions.
+Purchasing shares confers shareholder status.
 
-The relevant theory comes from corporations and limited liability. Identify which definition or relationship the sentence is trying to test before deciding true or false.
+Apply the chapter mechanism to the exact wording: name the ownership form or finance source correctly, then check whether the claimed tax, liability, repayment, or matching consequence actually follows from that category.
 
-Applied carefully, shareholders elect a board to take major decisions and represent them. Nothing in the sentence stretches the concept beyond its standard use.
+So the sentence is a correct description of the mechanism at work in this case.
 
-Every part of the claim aligns with the standard concept, so the statement stands.', 'TRUE — The claim is correct. The highest-ranking manager of the board is called the Chief Executive Officer.
+The statement is true.
+', 'TRUE — Keep the corporate triad in view: separate legal personality, transferable share capital with limited shareholder liability, and possible separation of shareholders from day-to-day managers. Share capital is typically permanent long-term equity not repaid like a loan.
 
-This statement draws on corporations and limited liability. Treat it as a checklist against the core concept named in the stem, not as a general opinion about business.
+After issue, shares are transferable property of the investor. A later sale on the secondary market moves ownership from one investor to another; the corporation is not required to buy the shares back (redeem them) merely because a shareholder wants to exit. Primary issue raises cash for the firm; secondary transfer generally does not.
 
-In this setting, the ceo heads the board of directors. The wording matches the textbook relationship without adding extra conditions.
+That is why the claim stands for this form of business or source of finance.
 
-The reasoning chain is complete, so mark the statement true.', 'TRUE — Evaluated against the textbook standard, this assertion is correct. Other board members may include the Chief Financial Officer and Chief Operating Officer.
+The statement is true.
+'] WHERE case_id = 'CASE 4.3.03' AND tier = 'full';
+UPDATE public.economics_cases SET tactical_explanations = ARRAY['FALSE — Keep the corporate triad in view: separate legal personality, transferable share capital with limited shareholder liability, and possible separation of shareholders from day-to-day managers.
 
-The relevant theory comes from corporations and limited liability. Identify which definition or relationship the sentence is trying to test before deciding true or false.
+Shareholders supply capital but need not manage the firm.
 
-Applied carefully, cfo and coo roles may sit on the management board. Nothing in the sentence stretches the concept beyond its standard use.
+Apply the chapter mechanism to the exact wording: name the ownership form or finance source correctly, then check whether the claimed tax, liability, repayment, or matching consequence actually follows from that category.
 
-The reasoning chain is complete, so mark the statement true.'] WHERE case_id = 'CASE 4.3.04' AND tier = 'full';
-UPDATE public.economics_cases SET tactical_explanations = ARRAY['TRUE — Evaluated against the textbook standard, this assertion is correct. Corporations are more difficult to set up than sole proprietorships or partnerships.
+So the sentence does not survive once the correct mechanism is applied.
 
-The relevant theory comes from corporations and limited liability. Identify which definition or relationship the sentence is trying to test before deciding true or false.
+The statement is false.
+', 'FALSE — The board of directors oversees strategy and appoints or supervises executive management. Day-to-day running typically sits with managers; shareholders exercise control mainly through appointments and major votes, not by personally managing every contract.
 
-Applied carefully, incorporation involves more formal steps than unincorporated forms. Nothing in the sentence stretches the concept beyond its standard use.
+Managers need not own shares to serve on the board.
 
-The reasoning chain is complete, so mark the statement true.', 'TRUE — On the Fuhrmann definition used in the entrance exam, the sentence is correct. Corporations usually have more options to raise financial funds than sole proprietors and partnerships.
+The board oversees strategy and monitors executives; day-to-day operations usually sit with managers. Shareholders influence mainly through elections and major votes rather than by personally signing every contract.
 
-This statement draws on corporations and limited liability. Treat it as a checklist against the core concept named in the stem, not as a general opinion about business.
+On that basis the assertion attaches the wrong legal, tax, liability, or finance label.
 
-In this setting, corporations can tap equity markets and debt sources more readily. The wording matches the textbook relationship without adding extra conditions.
+The statement is false.
+', 'TRUE — Ownership and management can separate: shareholders who found or fund the corporation need not run daily operations, and hired managers need not own shares. Boards and executives supply the governance layer.
 
-Every part of the claim aligns with the standard concept, so the statement stands.', 'FALSE — This statement is false. Corporations rely exclusively on share capital and cannot raise loans or credit like other businesses.
+The board of directors oversees strategy and appoints or supervises executive management. Day-to-day running typically sits with managers; shareholders exercise control mainly through appointments and major votes, not by personally managing every contract.
 
-The topic is corporations and limited liability, but the decisive skill here is reading quantifiers. Words such as never, always, only, or all turn a generally true idea into a claim that can be rejected by one routine counterexample.
+Shareholders elect a board to take major decisions and represent them.
 
-The statement overreaches because corporations also use loans and credit alongside share capital. The trap is to agree with the topic while missing the one detail that breaks the logic.
+So the sentence is a correct description of the mechanism at work in this case.
 
-Watch the absolute wording "exclusively": exam statements often sound plausible until a single scope word turns an otherwise familiar idea into an overclaim.
+The statement is true.
+', 'TRUE — The board of directors oversees strategy and appoints or supervises executive management. Day-to-day running typically sits with managers; shareholders exercise control mainly through appointments and major votes, not by personally managing every contract.
 
-Once the overclaim or mislabel is exposed, the only consistent answer is false.', 'FALSE — The claim is false. Shareholders bear unlimited liability for all corporation debts beyond their original investment.
+The board oversees strategy and monitors executives; day-to-day operations usually sit with managers. Shareholders influence mainly through elections and major votes rather than by personally signing every contract.
 
-Although the subject matter is corporations and limited liability, this is really a logic check on overstatement. Non-profit surpluses, mixed economies, and partial market failure are classic cases where absolute wording fails.
+That is why the claim stands for this form of business or source of finance.
 
-Applied to this claim, shareholder liability is usually limited to invested capital. That is why the sentence does not survive careful reading.
+The statement is true.
+', 'TRUE — The board of directors oversees strategy and appoints or supervises executive management. Day-to-day running typically sits with managers; shareholders exercise control mainly through appointments and major votes, not by personally managing every contract.
 
-Watch the absolute wording "all": exam statements often sound plausible until a single scope word turns an otherwise familiar idea into an overclaim.
+Cfo and coo roles may sit on the management board.
 
-The statement sounds plausible but fails on precision, so it is false.', 'TRUE — On the Fuhrmann definition used in the entrance exam, the sentence is correct. Financial funds for corporations mainly comprise share capital as well as loans and credit.
+The board oversees strategy and monitors executives; day-to-day operations usually sit with managers. Shareholders influence mainly through elections and major votes rather than by personally signing every contract.
 
-This statement draws on corporations and limited liability. Treat it as a checklist against the core concept named in the stem, not as a general opinion about business.
+On that basis the assertion matches the ownership or finance rule being tested.
 
-In this setting, corporate finance combines equity from shares with borrowed funds. The wording matches the textbook relationship without adding extra conditions.
+The statement is true.
+'] WHERE case_id = 'CASE 4.3.04' AND tier = 'full';
+UPDATE public.economics_cases SET tactical_explanations = ARRAY['TRUE — Keep the corporate triad in view: separate legal personality, transferable share capital with limited shareholder liability, and possible separation of shareholders from day-to-day managers.
 
-No qualifying word breaks the definition or scenario, so the answer is true.'] WHERE case_id = 'CASE 4.3.05' AND tier = 'full';
-UPDATE public.economics_cases SET tactical_explanations = ARRAY['FALSE — This statement is false. If share capital equals one million euros divided into one hundred thousand shares, each share represents one per cent of the capital.
+Incorporation involves more formal steps than unincorporated forms.
 
-Here you must apply ideas from corporations and limited liability to a concrete situation rather than recite a definition from memory. Ownership, customer type, stakeholder group, or country of production usually decides the verdict.
+Sole proprietorship unites ownership and control in one person, has no separate legal personality (personal tax on profits), and carries unlimited liability so private assets can be reached if business resources fall short.
 
-The statement overreaches because each share would represent 0.001 per cent, not one per cent, of that capital. The trap is to agree with the topic while missing the one detail that breaks the logic.
+So the sentence is a correct description of the mechanism at work in this case.
 
-The statement sounds plausible but fails on precision, so it is false.', 'TRUE — The claim is correct. If all one hundred thousand shares are sold at issue, the corporation gains one million euros as share capital.
+The statement is true.
+', 'TRUE — Keep the corporate triad in view: separate legal personality, transferable share capital with limited shareholder liability, and possible separation of shareholders from day-to-day managers.
 
-Although the subject matter is corporations and limited liability, this is really a logic check on overstatement. Non-profit surpluses, mixed economies, and partial market failure are classic cases where absolute wording fails.
+Corporations can tap equity markets and debt sources more readily.
 
-In this setting, selling all issued shares at par raises the full one million euros of share capital. The wording matches the textbook relationship without adding extra conditions.
+Sole proprietorship unites ownership and control in one person, has no separate legal personality (personal tax on profits), and carries unlimited liability so private assets can be reached if business resources fall short.
 
-Every part of the claim aligns with the standard concept, so the statement stands.', 'FALSE — Evaluated against the textbook standard, this assertion is false. Shares can only be purchased from other shareholders and never directly from the corporation at initial issue.
+So the sentence is a correct description of the mechanism at work in this case.
 
-The topic is corporations and limited liability, but the decisive skill here is reading quantifiers. Words such as never, always, only, or all turn a generally true idea into a claim that can be rejected by one routine counterexample.
+The statement is true.
+', 'FALSE — Keep the corporate triad in view: separate legal personality, transferable share capital with limited shareholder liability, and possible separation of shareholders from day-to-day managers.
 
-The statement overreaches because shares may be bought at initial issue directly from the corporation. The trap is to agree with the topic while missing the one detail that breaks the logic.
+Corporations also use loans and credit alongside share capital.
 
-Watch the absolute wording "never": exam statements often sound plausible until a single scope word turns an otherwise familiar idea into an overclaim.
+Apply the chapter mechanism to the exact wording: name the ownership form or finance source correctly, then check whether the claimed tax, liability, repayment, or matching consequence actually follows from that category.
 
-The statement sounds plausible but fails on precision, so it is false.', 'FALSE — This statement is false. Each share sold at issue must always be priced above its nominal share of the registered capital.
+So the sentence does not survive once the correct mechanism is applied.
 
-The topic is corporations and limited liability, but the decisive skill here is reading quantifiers. Words such as never, always, only, or all turn a generally true idea into a claim that can be rejected by one routine counterexample.
+The statement is false.
+', 'FALSE — Shareholders'' financial exposure is generally limited to what they invested in share capital. Creditors claim against the company as legal person; they do not automatically seize shareholders'' private homes for ordinary company debts.
 
-The statement overreaches because issue pricing follows market and listing conditions; it is not fixed above nominal value in all cases. The trap is to agree with the topic while missing the one detail that breaks the logic.
+Shareholder liability is usually limited to invested capital.
 
-Watch the absolute wording "always": exam statements often sound plausible until a single scope word turns an otherwise familiar idea into an overclaim.
+Apply the chapter mechanism to the exact wording: name the ownership form or finance source correctly, then check whether the claimed tax, liability, repayment, or matching consequence actually follows from that category.
 
-Because the decisive detail is wrong, mark the statement false.', 'TRUE — Evaluated against the textbook standard, this assertion is correct. Huge amounts of money can be raised from the sale of shares when investors buy newly issued stock.
+So the sentence does not survive once the correct mechanism is applied.
 
-Here you must apply ideas from corporations and limited liability to a concrete situation rather than recite a definition from memory. Ownership, customer type, stakeholder group, or country of production usually decides the verdict.
+The statement is false.
+', 'TRUE — Keep the corporate triad in view: separate legal personality, transferable share capital with limited shareholder liability, and possible separation of shareholders from day-to-day managers.
 
-Applied carefully, primary share sales can mobilise very large sums for the corporation. Nothing in the sentence stretches the concept beyond its standard use.
+Corporate finance combines equity from shares with borrowed funds.
 
-No qualifying word breaks the definition or scenario, so the answer is true.'] WHERE case_id = 'CASE 4.3.06' AND tier = 'full';
-UPDATE public.economics_cases SET tactical_explanations = ARRAY['FALSE — Evaluated against the textbook standard, this assertion is false. Every corporation must list its stock on a stock exchange before it may hire employees or close contracts.
+Apply the chapter mechanism to the exact wording: name the ownership form or finance source correctly, then check whether the claimed tax, liability, repayment, or matching consequence actually follows from that category.
 
-The topic is corporations and limited liability, but the decisive skill here is reading quantifiers. Words such as never, always, only, or all turn a generally true idea into a claim that can be rejected by one routine counterexample.
+On that basis the assertion matches the ownership or finance rule being tested.
 
-The statement overreaches because listing is optional; unlisted corporations may still operate as legal persons. The trap is to agree with the topic while missing the one detail that breaks the logic.
+The statement is true.
+'] WHERE case_id = 'CASE 4.3.05' AND tier = 'full';
+UPDATE public.economics_cases SET tactical_explanations = ARRAY['FALSE — Keep the corporate triad in view: separate legal personality, transferable share capital with limited shareholder liability, and possible separation of shareholders from day-to-day managers.
 
-Watch the absolute wording "every": exam statements often sound plausible until a single scope word turns an otherwise familiar idea into an overclaim.
+Each share would represent 0.001 per cent, not one per cent, of that capital.
 
-The statement sounds plausible but fails on precision, so it is false.', 'FALSE — Evaluated against the textbook standard, this assertion is false. A stock exchange is an unregulated venue where only the issuing corporation may trade its own shares.
+Share capital is built from the capital attached to issued shares. Where nominal (par) value is used, total share capital is thought of as nominal value times the number of shares issued. Ownership fractions follow how many shares each investor holds, not who holds the CEO title.
 
-The relevant theory comes from corporations and limited liability. Identify which definition or relationship the sentence is trying to test before deciding true or false.
+On that basis the assertion attaches the wrong legal, tax, liability, or finance label.
 
-The statement overreaches because exchanges are regulated markets open to many buyers and sellers. The trap is to agree with the topic while missing the one detail that breaks the logic.
+The statement is false.
+', 'TRUE — Keep the corporate triad in view: separate legal personality, transferable share capital with limited shareholder liability, and possible separation of shareholders from day-to-day managers.
 
-Because the decisive detail is wrong, mark the statement false.', 'FALSE — Evaluated against the textbook standard, this assertion is false. Listing on a stock exchange removes the need for corporations to comply with any authority-imposed rules.
+Selling all issued shares at par raises the full one million euros of share capital.
 
-The relevant theory comes from corporations and limited liability. Identify which definition or relationship the sentence is trying to test before deciding true or false.
+Apply the chapter mechanism to the exact wording: name the ownership form or finance source correctly, then check whether the claimed tax, liability, repayment, or matching consequence actually follows from that category.
 
-The statement overreaches because listing itself requires complying with rules and listing requirements. The trap is to agree with the topic while missing the one detail that breaks the logic.
+So the sentence is a correct description of the mechanism at work in this case.
 
-The statement sounds plausible but fails on precision, so it is false.', 'FALSE — The claim is false. Shares introduced on a stock exchange always trade at a fixed price set permanently by the issuer.
+The statement is true.
+', 'FALSE — Keep the corporate triad in view: separate legal personality, transferable share capital with limited shareholder liability, and possible separation of shareholders from day-to-day managers.
 
-Although the subject matter is corporations and limited liability, this is really a logic check on overstatement. Non-profit surpluses, mixed economies, and partial market failure are classic cases where absolute wording fails.
+Shares may be bought at initial issue directly from the corporation.
 
-Applied to this claim, after introduction, prices are driven by demand and supply. That is why the sentence does not survive careful reading.
+Apply the chapter mechanism to the exact wording: name the ownership form or finance source correctly, then check whether the claimed tax, liability, repayment, or matching consequence actually follows from that category.
 
-Watch the absolute wording "always": exam statements often sound plausible until a single scope word turns an otherwise familiar idea into an overclaim.
+On that basis the assertion attaches the wrong legal, tax, liability, or finance label.
 
-Because the decisive detail is wrong, mark the statement false.', 'TRUE — On the Fuhrmann definition used in the entrance exam, the sentence is correct. A stock exchange is a financial market, regulated by the authorities, where shares and other securities can be bought and sold.
+The statement is false.
+', 'FALSE — Share capital is built from the capital attached to issued shares (often thought of via nominal or par amounts × number of shares, depending on the jurisdiction''s presentation). Ownership fractions follow shareholdings, not day-to-day managerial titles.
 
-This statement draws on corporations and limited liability. Treat it as a checklist against the core concept named in the stem, not as a general opinion about business.
+Issue pricing follows market and listing conditions; it is not fixed above nominal value in all cases.
 
-In this setting, exchanges are authority-regulated markets for trading securities. The wording matches the textbook relationship without adding extra conditions.
+So the sentence does not survive once the correct mechanism is applied.
 
-The reasoning chain is complete, so mark the statement true.'] WHERE case_id = 'CASE 4.3.07' AND tier = 'full';
-UPDATE public.economics_cases SET tactical_explanations = ARRAY['TRUE — Evaluated against the textbook standard, this assertion is correct. Shares can be bought at the time they are initially issued by the corporation or later from another shareholder who sells.
+The statement is false.
+', 'TRUE — Keep the corporate triad in view: separate legal personality, transferable share capital with limited shareholder liability, and possible separation of shareholders from day-to-day managers.
 
-The relevant theory comes from corporations and limited liability. Identify which definition or relationship the sentence is trying to test before deciding true or false.
+Primary share sales can mobilise very large sums for the corporation.
 
-Applied carefully, investors may buy at primary issue or on the secondary market. Nothing in the sentence stretches the concept beyond its standard use.
+Apply the chapter mechanism to the exact wording: name the ownership form or finance source correctly, then check whether the claimed tax, liability, repayment, or matching consequence actually follows from that category.
 
-The reasoning chain is complete, so mark the statement true.', 'TRUE — The claim is correct. The introduction of shares on a stock exchange at a set price is also called an initial public offering.
+So the sentence is a correct description of the mechanism at work in this case.
 
-This statement draws on corporations and limited liability. Treat it as a checklist against the core concept named in the stem, not as a general opinion about business.
+The statement is true.
+'] WHERE case_id = 'CASE 4.3.06' AND tier = 'full';
+UPDATE public.economics_cases SET tactical_explanations = ARRAY['FALSE — Keep the corporate triad in view: separate legal personality, transferable share capital with limited shareholder liability, and possible separation of shareholders from day-to-day managers.
 
-In this setting, the first exchange introduction of shares is termed an ipo. The wording matches the textbook relationship without adding extra conditions.
+Listing is optional; unlisted corporations may still operate as legal persons.
 
-No qualifying word breaks the definition or scenario, so the answer is true.', 'FALSE — Evaluated against the textbook standard, this assertion is false. Every subsequent resale of shares on the exchange adds the full sale price to the corporation''s share capital account.
+Apply the chapter mechanism to the exact wording: name the ownership form or finance source correctly, then check whether the claimed tax, liability, repayment, or matching consequence actually follows from that category.
 
-The topic is corporations and limited liability, but the decisive skill here is reading quantifiers. Words such as never, always, only, or all turn a generally true idea into a claim that can be rejected by one routine counterexample.
+On that basis the assertion attaches the wrong legal, tax, liability, or finance label.
 
-The statement overreaches because secondary resales transfer shares among investors without increasing issuer share capital. The trap is to agree with the topic while missing the one detail that breaks the logic.
+The statement is false.
+', 'FALSE — Keep the corporate triad in view: separate legal personality, transferable share capital with limited shareholder liability, and possible separation of shareholders from day-to-day managers.
 
-Watch the absolute wording "every": exam statements often sound plausible until a single scope word turns an otherwise familiar idea into an overclaim.
+Exchanges are regulated markets open to many buyers and sellers.
 
-The statement sounds plausible but fails on precision, so it is false.', 'TRUE — Evaluated against the textbook standard, this assertion is correct. After the IPO, prices on the exchange are determined by demand and supply among buyers and sellers.
+Apply the chapter mechanism to the exact wording: name the ownership form or finance source correctly, then check whether the claimed tax, liability, repayment, or matching consequence actually follows from that category.
 
-The relevant theory comes from corporations and limited liability. Identify which definition or relationship the sentence is trying to test before deciding true or false.
+On that basis the assertion attaches the wrong legal, tax, liability, or finance label.
 
-Applied carefully, market prices after listing reflect demand and supply. Nothing in the sentence stretches the concept beyond its standard use.
+The statement is false.
+', 'FALSE — Keep the corporate triad in view: separate legal personality, transferable share capital with limited shareholder liability, and possible separation of shareholders from day-to-day managers.
 
-The reasoning chain is complete, so mark the statement true.', 'TRUE — The claim is correct. Beneficiaries of a price rise after issue are the shareholders who hold or trade the stock, not the issuing corporation.
+Listing itself requires complying with rules and listing requirements.
 
-This statement draws on corporations and limited liability. Treat it as a checklist against the core concept named in the stem, not as a general opinion about business.
+Apply the chapter mechanism to the exact wording: name the ownership form or finance source correctly, then check whether the claimed tax, liability, repayment, or matching consequence actually follows from that category.
 
-In this setting, post-issue gains accrue to shareholders, not to the issuing corporation. The wording matches the textbook relationship without adding extra conditions.
+So the sentence does not survive once the correct mechanism is applied.
 
-Every part of the claim aligns with the standard concept, so the statement stands.'] WHERE case_id = 'CASE 4.3.08' AND tier = 'full';
-UPDATE public.economics_cases SET tactical_explanations = ARRAY['TRUE — On the Fuhrmann definition used in the entrance exam, the sentence is correct. Shareholders elect a board of directors to make all major business decisions and represent shareholders.
+The statement is false.
+', 'FALSE — Secondary-market appreciation is not a corporate financing inflow. The issuer receives proceeds at issue (for example at an IPO); later price changes between investors do not automatically raise new share capital for the firm.
 
-Although the subject matter is corporations and limited liability, this is really a logic check on overstatement. Non-profit surpluses, mixed economies, and partial market failure are classic cases where absolute wording fails.
+After introduction, prices are driven by demand and supply.
 
-In this setting, the board is elected to decide major matters on shareholders'' behalf. The wording matches the textbook relationship without adding extra conditions.
+Apply the chapter mechanism to the exact wording: name the ownership form or finance source correctly, then check whether the claimed tax, liability, repayment, or matching consequence actually follows from that category.
 
-No qualifying word breaks the definition or scenario, so the answer is true.', 'TRUE — The claim is correct. The Chief Executive Officer is the highest-ranking manager on the board of directors.
+So the sentence does not survive once the correct mechanism is applied.
 
-This statement draws on corporations and limited liability. Treat it as a checklist against the core concept named in the stem, not as a general opinion about business.
+The statement is false.
+', 'TRUE — Keep the corporate triad in view: separate legal personality, transferable share capital with limited shareholder liability, and possible separation of shareholders from day-to-day managers.
 
-In this setting, the ceo leads the management board. The wording matches the textbook relationship without adding extra conditions.
+Exchanges are authority-regulated markets for trading securities.
 
-The reasoning chain is complete, so mark the statement true.', 'TRUE — On the Fuhrmann definition used in the entrance exam, the sentence is correct. A Chief Information Officer may serve on the board alongside other executive officers.
+Apply the chapter mechanism to the exact wording: name the ownership form or finance source correctly, then check whether the claimed tax, liability, repayment, or matching consequence actually follows from that category.
 
-This statement draws on corporations and limited liability. Treat it as a checklist against the core concept named in the stem, not as a general opinion about business.
+On that basis the assertion matches the ownership or finance rule being tested.
 
-In this setting, a cio may hold a board seat with defined duties. The wording matches the textbook relationship without adding extra conditions.
+The statement is true.
+'] WHERE case_id = 'CASE 4.3.07' AND tier = 'full';
+UPDATE public.economics_cases SET tactical_explanations = ARRAY['TRUE — Keep the corporate triad in view: separate legal personality, transferable share capital with limited shareholder liability, and possible separation of shareholders from day-to-day managers.
 
-No qualifying word breaks the definition or scenario, so the answer is true.', 'TRUE — On the Fuhrmann definition used in the entrance exam, the sentence is correct. A Chief Marketing Officer may be responsible for marketing functions as a board member.
+Investors may buy at primary issue or on the secondary market.
 
-This statement draws on corporations and limited liability. Treat it as a checklist against the core concept named in the stem, not as a general opinion about business.
+Apply the chapter mechanism to the exact wording: name the ownership form or finance source correctly, then check whether the claimed tax, liability, repayment, or matching consequence actually follows from that category.
 
-In this setting, a cmo may manage marketing from the board. The wording matches the textbook relationship without adding extra conditions.
+On that basis the assertion matches the ownership or finance rule being tested.
 
-Every part of the claim aligns with the standard concept, so the statement stands.', 'TRUE — The claim is correct. Shareholders who only provide money for share capital are neither obliged nor entitled to manage the company.
+The statement is true.
+', 'TRUE — After issue, shares trade among investors. A rise in the secondary-market price enriches the selling shareholder relative to their purchase price; it does not by itself inject new cash into the corporation''s accounts.
 
-This statement draws on corporations and limited liability. Treat it as a checklist against the core concept named in the stem, not as a general opinion about business.
+An IPO (or other primary issue) sells new shares and can raise equity finance for the issuer. Later exchange trading is mainly secondary: ownership passes between investors without a new capital raise unless the company issues again.
 
-In this setting, capital providers need neither manage nor hold management rights by default. The wording matches the textbook relationship without adding extra conditions.
+The first exchange introduction of shares is termed an ipo.
 
-The reasoning chain is complete, so mark the statement true.'] WHERE case_id = 'CASE 4.3.09' AND tier = 'full';
-UPDATE public.economics_cases SET tactical_explanations = ARRAY['TRUE — On the Fuhrmann definition used in the entrance exam, the sentence is correct. Rising expectations that a business will make future profits can increase demand for its shares.
+That is why the claim stands for this form of business or source of finance.
 
-This statement draws on corporations and limited liability. Treat it as a checklist against the core concept named in the stem, not as a general opinion about business.
+The statement is true.
+', 'FALSE — Keep the corporate triad in view: separate legal personality, transferable share capital with limited shareholder liability, and possible separation of shareholders from day-to-day managers.
 
-In this setting, profit expectations can draw investors toward a corporation''s stock. The wording matches the textbook relationship without adding extra conditions.
+Secondary resales transfer shares among investors without increasing issuer share capital.
 
-The reasoning chain is complete, so mark the statement true.', 'TRUE — Evaluated against the textbook standard, this assertion is correct. Higher demand for shares when the economy is thriving partly reflects that many people have money to invest.
+Apply the chapter mechanism to the exact wording: name the ownership form or finance source correctly, then check whether the claimed tax, liability, repayment, or matching consequence actually follows from that category.
 
-Here you must apply ideas from corporations and limited liability to a concrete situation rather than recite a definition from memory. Ownership, customer type, stakeholder group, or country of production usually decides the verdict.
+That misclassification is enough to reject the claim.
 
-Applied carefully, prosperity leaves more funds available for equity investment. Nothing in the sentence stretches the concept beyond its standard use.
+The statement is false.
+', 'TRUE — An IPO (or other primary issue) sells new shares and can raise equity finance for the issuer. Later exchange trading is mainly secondary: ownership passes between investors without a new capital raise unless the company issues again.
 
-The reasoning chain is complete, so mark the statement true.', 'TRUE — On the Fuhrmann definition used in the entrance exam, the sentence is correct. Comparatively higher rates of inflation can support share demand because share prices may also increase.
+Market prices after listing reflect demand and supply.
 
-The scenario is a worked example of corporations and limited liability. Translate the story into the textbook category first; only then judge whether the sentence describes that category accurately.
+An IPO is a primary issue: new shares are sold and the issuer can receive equity finance. Later exchange trades are typically secondary transactions among investors unless the company issues again.
 
-In this setting, inflation may lift expected share values and support demand. The wording matches the textbook relationship without adding extra conditions.
+On that basis the assertion matches the ownership or finance rule being tested.
 
-Every part of the claim aligns with the standard concept, so the statement stands.', 'TRUE — Evaluated against the textbook standard, this assertion is correct. Comparatively low interest rates can raise share demand because other investments become less attractive.
+The statement is true.
+', 'TRUE — Keep the corporate triad in view: separate legal personality, transferable share capital with limited shareholder liability, and possible separation of shareholders from day-to-day managers.
 
-Here you must apply ideas from corporations and limited liability to a concrete situation rather than recite a definition from memory. Ownership, customer type, stakeholder group, or country of production usually decides the verdict.
+Post-issue gains accrue to shareholders, not to the issuing corporation.
 
-Applied carefully, low interest rates reduce the appeal of fixed-return alternatives. Nothing in the sentence stretches the concept beyond its standard use.
+Apply the chapter mechanism to the exact wording: name the ownership form or finance source correctly, then check whether the claimed tax, liability, repayment, or matching consequence actually follows from that category.
 
-No qualifying word breaks the definition or scenario, so the answer is true.', 'TRUE — This statement is correct. Demand for shares is also influenced by economic indicators such as economic growth, interest rates, and inflation.
+So the sentence is a correct description of the mechanism at work in this case.
 
-The relevant theory comes from corporations and limited liability. Identify which definition or relationship the sentence is trying to test before deciding true or false.
+The statement is true.
+'] WHERE case_id = 'CASE 4.3.08' AND tier = 'full';
+UPDATE public.economics_cases SET tactical_explanations = ARRAY['TRUE — The board of directors oversees strategy and appoints or supervises executive management. Day-to-day running typically sits with managers; shareholders exercise control mainly through appointments and major votes, not by personally managing every contract.
 
-Applied carefully, growth, interest rates, and inflation all shape share demand. Nothing in the sentence stretches the concept beyond its standard use.
+The board is elected to decide major matters on shareholders'' behalf.
 
-No qualifying word breaks the definition or scenario, so the answer is true.'] WHERE case_id = 'CASE 4.3.10' AND tier = 'full';
-UPDATE public.economics_cases SET tactical_explanations = ARRAY['TRUE — Evaluated against the textbook standard, this assertion is correct. Investors may buy shares to provide money for a business they believe in and want to support financially.
+The board oversees strategy and monitors executives; day-to-day operations usually sit with managers. Shareholders influence mainly through elections and major votes rather than by personally signing every contract.
 
-The relevant theory comes from corporations and limited liability. Identify which definition or relationship the sentence is trying to test before deciding true or false.
+So the sentence is a correct description of the mechanism at work in this case.
 
-Applied carefully, supporting a favoured business is a common investment motive. Nothing in the sentence stretches the concept beyond its standard use.
+The statement is true.
+', 'TRUE — The board of directors oversees strategy and appoints or supervises executive management. Day-to-day running typically sits with managers; shareholders exercise control mainly through appointments and major votes, not by personally managing every contract.
 
-No qualifying word breaks the definition or scenario, so the answer is true.', 'TRUE — This statement is correct. Investors may seek annual income through dividends paid from the corporation''s profits.
+The board oversees strategy and monitors executives; day-to-day operations usually sit with managers. Shareholders influence mainly through elections and major votes rather than by personally signing every contract.
 
-The relevant theory comes from corporations and limited liability. Identify which definition or relationship the sentence is trying to test before deciding true or false.
+That is why the claim stands for this form of business or source of finance.
 
-Applied carefully, dividends offer annual income from distributed profits. Nothing in the sentence stretches the concept beyond its standard use.
+The statement is true.
+', 'TRUE — The board of directors oversees strategy and appoints or supervises executive management. Day-to-day running typically sits with managers; shareholders exercise control mainly through appointments and major votes, not by personally managing every contract.
 
-No qualifying word breaks the definition or scenario, so the answer is true.', 'TRUE — Evaluated against the textbook standard, this assertion is correct. Investors may hope for capital growth if share prices rise and the stock can later be sold at a higher price.
+A cio may hold a board seat with defined duties.
 
-Here you must apply ideas from corporations and limited liability to a concrete situation rather than recite a definition from memory. Ownership, customer type, stakeholder group, or country of production usually decides the verdict.
+The board oversees strategy and monitors executives; day-to-day operations usually sit with managers. Shareholders influence mainly through elections and major votes rather than by personally signing every contract.
 
-Applied carefully, capital growth arises when resale prices exceed purchase prices. Nothing in the sentence stretches the concept beyond its standard use.
+So the sentence is a correct description of the mechanism at work in this case.
 
-No qualifying word breaks the definition or scenario, so the answer is true.', 'TRUE — Evaluated against the textbook standard, this assertion is correct. Investors may wish to attend the annual stockholders'' meeting and influence decisions through voting rights.
+The statement is true.
+', 'TRUE — The board of directors oversees strategy and appoints or supervises executive management. Day-to-day running typically sits with managers; shareholders exercise control mainly through appointments and major votes, not by personally managing every contract.
 
-The relevant theory comes from corporations and limited liability. Identify which definition or relationship the sentence is trying to test before deciding true or false.
+A cmo may manage marketing from the board.
 
-Applied carefully, meetings allow shareholders to vote on major matters. Nothing in the sentence stretches the concept beyond its standard use.
+The board oversees strategy and monitors executives; day-to-day operations usually sit with managers. Shareholders influence mainly through elections and major votes rather than by personally signing every contract.
 
-Every part of the claim aligns with the standard concept, so the statement stands.', 'TRUE — The claim is correct. Shares can be bought either at initial issue by the corporation or later from another shareholder who sells.
+So the sentence is a correct description of the mechanism at work in this case.
 
-This statement draws on corporations and limited liability. Treat it as a checklist against the core concept named in the stem, not as a general opinion about business.
+The statement is true.
+', 'TRUE — Ownership and management can separate: shareholders who found or fund the corporation need not run daily operations, and hired managers need not own shares. Boards and executives supply the governance layer.
 
-In this setting, stock may be acquired at issue or through later secondary sales. The wording matches the textbook relationship without adding extra conditions.
+Capital providers need neither manage nor hold management rights by default.
 
-The reasoning chain is complete, so mark the statement true.'] WHERE case_id = 'CASE 4.3.11' AND tier = 'full';
-UPDATE public.economics_cases SET tactical_explanations = ARRAY['TRUE — The claim is correct. As an incorporated business, the bakery is a legal entity that can own property and hire staff in its own name.
+Apply the chapter mechanism to the exact wording: name the ownership form or finance source correctly, then check whether the claimed tax, liability, repayment, or matching consequence actually follows from that category.
 
-This statement draws on corporations and limited liability. Treat it as a checklist against the core concept named in the stem, not as a general opinion about business.
+On that basis the assertion matches the ownership or finance rule being tested.
 
-In this setting, incorporated firms are legal persons with property and employment capacity. The wording matches the textbook relationship without adding extra conditions.
+The statement is true.
+'] WHERE case_id = 'CASE 4.3.09' AND tier = 'full';
+UPDATE public.economics_cases SET tactical_explanations = ARRAY['TRUE — Keep the corporate triad in view: separate legal personality, transferable share capital with limited shareholder liability, and possible separation of shareholders from day-to-day managers.
 
-The reasoning chain is complete, so mark the statement true.', 'FALSE — Evaluated against the textbook standard, this assertion is false. Because it is private, shareholders face unlimited liability for all bakery debts regardless of investment.
+Profit expectations can draw investors toward a corporation''s stock.
 
-The topic is corporations and limited liability, but the decisive skill here is reading quantifiers. Words such as never, always, only, or all turn a generally true idea into a claim that can be rejected by one routine counterexample.
+Apply the chapter mechanism to the exact wording: name the ownership form or finance source correctly, then check whether the claimed tax, liability, repayment, or matching consequence actually follows from that category.
 
-The statement overreaches because private limited shareholders still enjoy limited liability on invested capital. The trap is to agree with the topic while missing the one detail that breaks the logic.
+So the sentence is a correct description of the mechanism at work in this case.
 
-Watch the absolute wording "all": exam statements often sound plausible until a single scope word turns an otherwise familiar idea into an overclaim.
+The statement is true.
+', 'TRUE — Keep the corporate triad in view: separate legal personality, transferable share capital with limited shareholder liability, and possible separation of shareholders from day-to-day managers.
 
-Once the overclaim or mislabel is exposed, the only consistent answer is false.', 'TRUE — The claim is correct. The family''s shareholding can remain off a public stock exchange while still conferring limited liability.
+Prosperity leaves more funds available for equity investment.
 
-This statement draws on corporations and limited liability. Treat it as a checklist against the core concept named in the stem, not as a general opinion about business.
+Apply the chapter mechanism to the exact wording: name the ownership form or finance source correctly, then check whether the claimed tax, liability, repayment, or matching consequence actually follows from that category.
 
-In this setting, shares need not be exchange-listed to keep limited liability. The wording matches the textbook relationship without adding extra conditions.
+So the sentence is a correct description of the mechanism at work in this case.
 
-Every part of the claim aligns with the standard concept, so the statement stands.', 'FALSE — The claim is false. Private limited companies must list on a stock exchange before they may issue any shares to investors.
+The statement is true.
+', 'TRUE — Keep the corporate triad in view: separate legal personality, transferable share capital with limited shareholder liability, and possible separation of shareholders from day-to-day managers.
 
-This statement draws on corporations and limited liability. Treat it as a checklist against the core concept named in the stem, not as a general opinion about business.
+Inflation may lift expected share values and support demand.
 
-Applied to this claim, private companies issue shares without public listing. That is why the sentence does not survive careful reading.
+Apply the chapter mechanism to the exact wording: name the ownership form or finance source correctly, then check whether the claimed tax, liability, repayment, or matching consequence actually follows from that category.
 
-Once the overclaim or mislabel is exposed, the only consistent answer is false.', 'FALSE — Evaluated against the textbook standard, this assertion is false. Managers of the bakery are legally required to be the same persons who hold all outstanding shares.
+That is why the claim stands for this form of business or source of finance.
 
-The topic is corporations and limited liability, but the decisive skill here is reading quantifiers. Words such as never, always, only, or all turn a generally true idea into a claim that can be rejected by one routine counterexample.
+The statement is true.
+', 'TRUE — Keep the corporate triad in view: separate legal personality, transferable share capital with limited shareholder liability, and possible separation of shareholders from day-to-day managers.
 
-The statement overreaches because ownership and management may be separated in corporations. The trap is to agree with the topic while missing the one detail that breaks the logic.
+Low interest rates reduce the appeal of fixed-return alternatives.
 
-Watch the absolute wording "all": exam statements often sound plausible until a single scope word turns an otherwise familiar idea into an overclaim.
+Apply the chapter mechanism to the exact wording: name the ownership form or finance source correctly, then check whether the claimed tax, liability, repayment, or matching consequence actually follows from that category.
 
-Because the decisive detail is wrong, mark the statement false.'] WHERE case_id = 'CASE 4.3.12' AND tier = 'full';
-UPDATE public.economics_cases SET tactical_explanations = ARRAY['FALSE — On the Fuhrmann definition used in the entrance exam, the sentence is false. Corporations must pay dividends every year because shareholders have a legally fixed income entitlement.
+So the sentence is a correct description of the mechanism at work in this case.
 
-Although the subject matter is corporations and limited liability, this is really a logic check on overstatement. Non-profit surpluses, mixed economies, and partial market failure are classic cases where absolute wording fails.
+The statement is true.
+', 'TRUE — Keep the corporate triad in view: separate legal personality, transferable share capital with limited shareholder liability, and possible separation of shareholders from day-to-day managers.
 
-Applied to this claim, dividend payments are not legally mandatory each year. That is why the sentence does not survive careful reading.
+Growth, interest rates, and inflation all shape share demand.
 
-Watch the absolute wording "every": exam statements often sound plausible until a single scope word turns an otherwise familiar idea into an overclaim.
+Apply the chapter mechanism to the exact wording: name the ownership form or finance source correctly, then check whether the claimed tax, liability, repayment, or matching consequence actually follows from that category.
 
-The statement sounds plausible but fails on precision, so it is false.', 'TRUE — On the Fuhrmann definition used in the entrance exam, the sentence is correct. Dividends are part of the profits of the corporation that may be paid to shareholders at management discretion.
+That is why the claim stands for this form of business or source of finance.
 
-This statement draws on corporations and limited liability. Treat it as a checklist against the core concept named in the stem, not as a general opinion about business.
+The statement is true.
+'] WHERE case_id = 'CASE 4.3.10' AND tier = 'full';
+UPDATE public.economics_cases SET tactical_explanations = ARRAY['TRUE — Keep the corporate triad in view: separate legal personality, transferable share capital with limited shareholder liability, and possible separation of shareholders from day-to-day managers.
 
-In this setting, dividends are discretionary distributions from profits. The wording matches the textbook relationship without adding extra conditions.
+Supporting a favoured business is a common investment motive.
 
-The reasoning chain is complete, so mark the statement true.', 'FALSE — The claim is false. Withholding dividends always raises share prices because retained profits guarantee immediate capital gains.
+Apply the chapter mechanism to the exact wording: name the ownership form or finance source correctly, then check whether the claimed tax, liability, repayment, or matching consequence actually follows from that category.
 
-Although the subject matter is corporations and limited liability, this is really a logic check on overstatement. Non-profit surpluses, mixed economies, and partial market failure are classic cases where absolute wording fails.
+So the sentence is a correct description of the mechanism at work in this case.
 
-Applied to this claim, omitted dividends can reduce attractiveness rather than guarantee gains. That is why the sentence does not survive careful reading.
+The statement is true.
+', 'TRUE — Dividends distribute part of corporate profit to shareholders. Dividend policy affects how attractive shares look versus capital gains, but paying dividends is a distribution choice — not the same mechanism as sole-trader profit drawings.
 
-Watch the absolute wording "always": exam statements often sound plausible until a single scope word turns an otherwise familiar idea into an overclaim.
+Dividends offer annual income from distributed profits.
 
-The statement sounds plausible but fails on precision, so it is false.', 'TRUE — The claim is correct. If no dividends are paid over a longer period, shares might become unattractive and demand may fall.
+Dividends distribute corporate profit to shareholders under board/company policy. They are not the same as sole-trader drawings, and skipping dividends does not by itself invalidate share ownership.
 
-The scenario is a worked example of corporations and limited liability. Translate the story into the textbook category first; only then judge whether the sentence describes that category accurately.
+So the sentence is a correct description of the mechanism at work in this case.
 
-In this setting, prolonged non-payment may weaken demand and pressure prices. The wording matches the textbook relationship without adding extra conditions.
+The statement is true.
+', 'TRUE — Keep the corporate triad in view: separate legal personality, transferable share capital with limited shareholder liability, and possible separation of shareholders from day-to-day managers.
 
-No qualifying word breaks the definition or scenario, so the answer is true.', 'FALSE — On the Fuhrmann definition used in the entrance exam, the sentence is false. Falling share prices after omitted dividends automatically increase the corporation''s available share capital.
+Capital growth arises when resale prices exceed purchase prices.
 
-Although the subject matter is corporations and limited liability, this is really a logic check on overstatement. Non-profit surpluses, mixed economies, and partial market failure are classic cases where absolute wording fails.
+Apply the chapter mechanism to the exact wording: name the ownership form or finance source correctly, then check whether the claimed tax, liability, repayment, or matching consequence actually follows from that category.
 
-Applied to this claim, price falls do not inject share capital into the issuer. That is why the sentence does not survive careful reading.
+So the sentence is a correct description of the mechanism at work in this case.
 
-Watch the absolute wording "automatically": exam statements often sound plausible until a single scope word turns an otherwise familiar idea into an overclaim.
+The statement is true.
+', 'TRUE — Keep the corporate triad in view: separate legal personality, transferable share capital with limited shareholder liability, and possible separation of shareholders from day-to-day managers.
 
-Once the overclaim or mislabel is exposed, the only consistent answer is false.'] WHERE case_id = 'CASE 4.3.13' AND tier = 'full';
-UPDATE public.economics_cases SET tactical_explanations = ARRAY['TRUE — This statement is correct. Holders of preferred shares usually forgo voting rights at the stockholders'' meeting in exchange for a higher dividend claim.
+Meetings allow shareholders to vote on major matters.
 
-The relevant theory comes from corporations and limited liability. Identify which definition or relationship the sentence is trying to test before deciding true or false.
+Apply the chapter mechanism to the exact wording: name the ownership form or finance source correctly, then check whether the claimed tax, liability, repayment, or matching consequence actually follows from that category.
 
-Applied carefully, preferred stock often trades voting rights for dividend priority. Nothing in the sentence stretches the concept beyond its standard use.
+So the sentence is a correct description of the mechanism at work in this case.
 
-No qualifying word breaks the definition or scenario, so the answer is true.', 'FALSE — This statement is false. Preferred shareholders always receive both superior dividends and full voting control over every board appointment.
+The statement is true.
+', 'TRUE — Keep the corporate triad in view: separate legal personality, transferable share capital with limited shareholder liability, and possible separation of shareholders from day-to-day managers.
 
-The topic is corporations and limited liability, but the decisive skill here is reading quantifiers. Words such as never, always, only, or all turn a generally true idea into a claim that can be rejected by one routine counterexample.
+Stock may be acquired at issue or through later secondary sales.
 
-The statement overreaches because preferred holders usually sacrifice voting power for income preference. The trap is to agree with the topic while missing the one detail that breaks the logic.
+Apply the chapter mechanism to the exact wording: name the ownership form or finance source correctly, then check whether the claimed tax, liability, repayment, or matching consequence actually follows from that category.
 
-Watch the absolute wording "always": exam statements often sound plausible until a single scope word turns an otherwise familiar idea into an overclaim.
+On that basis the assertion matches the ownership or finance rule being tested.
 
-The statement sounds plausible but fails on precision, so it is false.', 'TRUE — The claim is correct. Common shareholders typically retain voting rights at the annual stockholders'' meeting.
+The statement is true.
+'] WHERE case_id = 'CASE 4.3.11' AND tier = 'full';
+UPDATE public.economics_cases SET tactical_explanations = ARRAY['TRUE — As a legal person, a corporation holds rights and obligations in its own name: it can own land and property, hire people, close contracts, sue, and be sued. Those capacities do not require every shareholder to act personally in each transaction.
 
-This statement draws on corporations and limited liability. Treat it as a checklist against the core concept named in the stem, not as a general opinion about business.
+The unincorporated/incorporated split turns on legal personality. Unincorporated firms (sole traders, partnerships) are not legal entities of their own; incorporated companies are legal persons. Pooling capital, filing personal tax, listing shares, or enjoying limited liability must be attached to the correct side of that split — limited liability marks incorporated forms, and listing is not the sole criterion of incorporation.
 
-In this setting, common shares generally carry meeting voting rights. The wording matches the textbook relationship without adding extra conditions.
+Incorporated firms are legal persons with property and employment capacity.
 
-No qualifying word breaks the definition or scenario, so the answer is true.', 'FALSE — On the Fuhrmann definition used in the entrance exam, the sentence is false. A corporation cannot issue bonds because bondholders would automatically become preferred shareholders.
+Applied to the bakery (or other named sole trader) in the stem, the same ownership and finance rules hold: one owner-manager, personal tax and liability, and ordinary credit instruments as personal obligations.
 
-Although the subject matter is corporations and limited liability, this is really a logic check on overstatement. Non-profit surpluses, mixed economies, and partial market failure are classic cases where absolute wording fails.
+On that basis the assertion matches the ownership or finance rule being tested.
 
-Applied to this claim, bonds are debt securities distinct from preferred equity. That is why the sentence does not survive careful reading.
+The statement is true.
+', 'FALSE — Shareholders'' financial exposure is generally limited to what they invested in share capital. Creditors claim against the company as legal person; they do not automatically seize shareholders'' private homes for ordinary company debts.
 
-Watch the absolute wording "cannot": exam statements often sound plausible until a single scope word turns an otherwise familiar idea into an overclaim.
+Private limited shareholders still enjoy limited liability on invested capital.
 
-Once the overclaim or mislabel is exposed, the only consistent answer is false.', 'TRUE — The claim is correct. Issuing bonds can be attractive because the interest rate on bonds is often lower than on a comparable bank loan.
+Applied to the bakery (or other named sole trader) in the stem, the same ownership and finance rules hold: one owner-manager, personal tax and liability, and ordinary credit instruments as personal obligations.
 
-The scenario is a worked example of corporations and limited liability. Translate the story into the textbook category first; only then judge whether the sentence describes that category accurately.
+On that basis the assertion attaches the wrong legal, tax, liability, or finance label.
 
-In this setting, bond finance may cost less interest than comparable bank borrowing. The wording matches the textbook relationship without adding extra conditions.
+The statement is false.
+', 'TRUE — Shareholders'' financial exposure is generally limited to what they invested in share capital. Creditors claim against the company as legal person; they do not automatically seize shareholders'' private homes for ordinary company debts.
 
-No qualifying word breaks the definition or scenario, so the answer is true.'] WHERE case_id = 'CASE 4.3.14' AND tier = 'full';
-UPDATE public.economics_cases SET tactical_explanations = ARRAY['FALSE — On the Fuhrmann definition used in the entrance exam, the sentence is false. Share prices on an exchange are set solely by the corporation''s board and never respond to buyer demand.
+Shares need not be exchange-listed to keep limited liability.
 
-Although the subject matter is corporations and limited liability, this is really a logic check on overstatement. Non-profit surpluses, mixed economies, and partial market failure are classic cases where absolute wording fails.
+Applied to the bakery (or other named sole trader) in the stem, the same ownership and finance rules hold: one owner-manager, personal tax and liability, and ordinary credit instruments as personal obligations.
 
-Applied to this claim, exchange prices respond to market demand and supply. That is why the sentence does not survive careful reading.
+On that basis the assertion matches the ownership or finance rule being tested.
 
-Watch the absolute wording "never": exam statements often sound plausible until a single scope word turns an otherwise familiar idea into an overclaim.
+The statement is true.
+', 'FALSE — Private companies issue shares without public listing.
 
-Because the decisive detail is wrong, mark the statement false.', 'TRUE — This statement is correct. According to the laws of supply and demand, share prices usually rise when demand for the stock is high.
+Applied to the bakery (or other named sole trader) in the stem, the same ownership and finance rules hold: one owner-manager, personal tax and liability, and ordinary credit instruments as personal obligations.
 
-Here you must apply ideas from corporations and limited liability to a concrete situation rather than recite a definition from memory. Ownership, customer type, stakeholder group, or country of production usually decides the verdict.
+Apply the chapter mechanism to the exact wording: name the ownership form or finance source correctly, then check whether the claimed tax, liability, repayment, or matching consequence actually follows from that category.
 
-Applied carefully, high demand tends to push prices up under supply-and-demand logic. Nothing in the sentence stretches the concept beyond its standard use.
+That misclassification is enough to reject the claim.
 
-Every part of the claim aligns with the standard concept, so the statement stands.', 'FALSE — On the Fuhrmann definition used in the entrance exam, the sentence is false. High demand for shares always forces the issuing corporation to create new shares equal to each purchase on the exchange.
+The statement is false.
+', 'FALSE — As a legal person, a corporation holds rights and obligations in its own name: it can own land and property, hire people, close contracts, sue, and be sued. Those capacities do not require every shareholder to act personally in each transaction.
 
-Although the subject matter is corporations and limited liability, this is really a logic check on overstatement. Non-profit surpluses, mixed economies, and partial market failure are classic cases where absolute wording fails.
+Ownership and management may be separated in corporations.
 
-Applied to this claim, secondary purchases transfer existing shares; they need not trigger new issuance. That is why the sentence does not survive careful reading.
+Applied to the bakery (or other named sole trader) in the stem, the same ownership and finance rules hold: one owner-manager, personal tax and liability, and ordinary credit instruments as personal obligations.
 
-Watch the absolute wording "always": exam statements often sound plausible until a single scope word turns an otherwise familiar idea into an overclaim.
+On that basis the assertion attaches the wrong legal, tax, liability, or finance label.
 
-The statement sounds plausible but fails on precision, so it is false.', 'FALSE — Evaluated against the textbook standard, this assertion is false. When demand falls, the corporation must redeem outstanding shares at the latest market price.
+The statement is false.
+'] WHERE case_id = 'CASE 4.3.12' AND tier = 'full';
+UPDATE public.economics_cases SET tactical_explanations = ARRAY['FALSE — Dividends distribute part of corporate profit to shareholders. Dividend policy affects how attractive shares look versus capital gains, but paying dividends is a distribution choice — not the same mechanism as sole-trader profit drawings.
 
-Here you must apply ideas from corporations and limited liability to a concrete situation rather than recite a definition from memory. Ownership, customer type, stakeholder group, or country of production usually decides the verdict.
+Dividend payments are not legally mandatory each year.
 
-The statement overreaches because the corporation is not obliged to redeem shares when demand falls. The trap is to agree with the topic while missing the one detail that breaks the logic.
+Dividends distribute corporate profit to shareholders under board/company policy. They are not the same as sole-trader drawings, and skipping dividends does not by itself invalidate share ownership.
 
-Once the overclaim or mislabel is exposed, the only consistent answer is false.', 'FALSE — Evaluated against the textbook standard, this assertion is false. Secondary trading prices feed directly into the issuer''s balance sheet as additional paid-in share capital.
+So the sentence does not survive once the correct mechanism is applied.
 
-The relevant theory comes from corporations and limited liability. Identify which definition or relationship the sentence is trying to test before deciding true or false.
+The statement is false.
+', 'TRUE — Ownership and management can separate: shareholders who found or fund the corporation need not run daily operations, and hired managers need not own shares. Boards and executives supply the governance layer.
 
-The statement overreaches because secondary trade proceeds do not increase issuer share capital. The trap is to agree with the topic while missing the one detail that breaks the logic.
+Dividends distribute part of corporate profit to shareholders. Dividend policy affects how attractive shares look versus capital gains, but paying dividends is a distribution choice — not the same mechanism as sole-trader profit drawings.
 
-Because the decisive detail is wrong, mark the statement false.'] WHERE case_id = 'CASE 4.3.15' AND tier = 'full';
-UPDATE public.economics_cases SET tactical_explanations = ARRAY['FALSE — The claim is false. Incorporation means both consultants must remain the only managers regardless of who buys shares.
+Dividends are discretionary distributions from profits.
 
-This statement draws on corporations and limited liability. Treat it as a checklist against the core concept named in the stem, not as a general opinion about business.
+That is why the claim stands for this form of business or source of finance.
 
-Applied to this claim, shareholders need not manage; a board may run the firm. That is why the sentence does not survive careful reading.
+The statement is true.
+', 'FALSE — Dividends distribute part of corporate profit to shareholders. Dividend policy affects how attractive shares look versus capital gains, but paying dividends is a distribution choice — not the same mechanism as sole-trader profit drawings.
 
-Because the decisive detail is wrong, mark the statement false.', 'TRUE — This statement is correct. Outside investors who buy shares become shareholders without necessarily joining the board of directors.
+Omitted dividends can reduce attractiveness rather than guarantee gains.
 
-The relevant theory comes from corporations and limited liability. Identify which definition or relationship the sentence is trying to test before deciding true or false.
+Dividends distribute corporate profit to shareholders under board/company policy. They are not the same as sole-trader drawings, and skipping dividends does not by itself invalidate share ownership.
 
-Applied carefully, shareholders may invest without holding board seats. Nothing in the sentence stretches the concept beyond its standard use.
+Internal finance recycles surplus already inside the firm (retained profit, asset sales). External finance comes from outside providers (owner start-up savings in this framework, investors, banks, suppliers on credit). Where the cash sits in the bank account does not decide the label.
 
-No qualifying word breaks the definition or scenario, so the answer is true.', 'TRUE — Evaluated against the textbook standard, this assertion is correct. The consultants may retain shares while delegating daily management to the elected chief executive.
+So the sentence does not survive once the correct mechanism is applied.
 
-The relevant theory comes from corporations and limited liability. Identify which definition or relationship the sentence is trying to test before deciding true or false.
+The statement is false.
+', 'TRUE — Dividends distribute part of corporate profit to shareholders. Dividend policy affects how attractive shares look versus capital gains, but paying dividends is a distribution choice — not the same mechanism as sole-trader profit drawings.
 
-Applied carefully, owners can delegate operations to an elected ceo. Nothing in the sentence stretches the concept beyond its standard use.
+Prolonged non-payment may weaken demand and pressure prices.
 
-Every part of the claim aligns with the standard concept, so the statement stands.', 'TRUE — On the Fuhrmann definition used in the entrance exam, the sentence is correct. The corporation can raise share capital from new shareholders in addition to any bank loans it arranges.
+Dividends distribute corporate profit to shareholders under board/company policy. They are not the same as sole-trader drawings, and skipping dividends does not by itself invalidate share ownership.
 
-This statement draws on corporations and limited liability. Treat it as a checklist against the core concept named in the stem, not as a general opinion about business.
+So the sentence is a correct description of the mechanism at work in this case.
 
-In this setting, equity and debt funding may be combined. The wording matches the textbook relationship without adding extra conditions.
+The statement is true.
+', 'FALSE — Dividends distribute part of corporate profit to shareholders. Dividend policy affects how attractive shares look versus capital gains, but paying dividends is a distribution choice — not the same mechanism as sole-trader profit drawings.
 
-Every part of the claim aligns with the standard concept, so the statement stands.', 'FALSE — On the Fuhrmann definition used in the entrance exam, the sentence is false. Selling shares to outside investors eliminates the need for the corporation to comply with contract law as a legal person.
+Price falls do not inject share capital into the issuer.
 
-This statement draws on corporations and limited liability. Treat it as a checklist against the core concept named in the stem, not as a general opinion about business.
+Dividends distribute corporate profit to shareholders under board/company policy. They are not the same as sole-trader drawings, and skipping dividends does not by itself invalidate share ownership.
 
-Applied to this claim, legal personality still requires the corporation to honour contracts. That is why the sentence does not survive careful reading.
+On that basis the assertion attaches the wrong legal, tax, liability, or finance label.
 
-Once the overclaim or mislabel is exposed, the only consistent answer is false.'] WHERE case_id = 'CASE 4.3.16' AND tier = 'full';
-UPDATE public.economics_cases SET tactical_explanations = ARRAY['FALSE — This statement is false. Share capital must be repaid to shareholders on demand whenever market prices fall temporarily.
+The statement is false.
+'] WHERE case_id = 'CASE 4.3.13' AND tier = 'full';
+UPDATE public.economics_cases SET tactical_explanations = ARRAY['TRUE — Dividends distribute part of corporate profit to shareholders. Dividend policy affects how attractive shares look versus capital gains, but paying dividends is a distribution choice — not the same mechanism as sole-trader profit drawings.
 
-The relevant theory comes from corporations and limited liability. Identify which definition or relationship the sentence is trying to test before deciding true or false.
+Preferred shares often carry priority on dividends (and sometimes on liquidation proceeds) while voting rights may be reduced or absent compared with ordinary shares. Preference is about financial priority, not identical control rights.
 
-The statement overreaches because share capital is not repayable on demand like a loan. The trap is to agree with the topic while missing the one detail that breaks the logic.
+Preferred stock often trades voting rights for dividend priority.
 
-Once the overclaim or mislabel is exposed, the only consistent answer is false.', 'FALSE — This statement is false. Issuing shares provides short-term credit that the corporation redeems within one accounting year.
+On that basis the assertion matches the ownership or finance rule being tested.
 
-The relevant theory comes from corporations and limited liability. Identify which definition or relationship the sentence is trying to test before deciding true or false.
+The statement is true.
+', 'FALSE — Dividends distribute part of corporate profit to shareholders. Dividend policy affects how attractive shares look versus capital gains, but paying dividends is a distribution choice — not the same mechanism as sole-trader profit drawings.
 
-The statement overreaches because equity is long-term, not short-term credit redeemed annually. The trap is to agree with the topic while missing the one detail that breaks the logic.
+Preferred shares often carry priority on dividends (and sometimes on liquidation proceeds) while voting rights may be reduced or absent compared with ordinary shares. Preference is about financial priority, not identical control rights.
 
-Because the decisive detail is wrong, mark the statement false.', 'FALSE — The claim is false. Share capital and bank overdrafts serve identical roles because both must be repaid within weeks.
+The board of directors oversees strategy and appoints or supervises executive management. Day-to-day running typically sits with managers; shareholders exercise control mainly through appointments and major votes, not by personally managing every contract.
 
-The scenario is a worked example of corporations and limited liability. Translate the story into the textbook category first; only then judge whether the sentence describes that category accurately.
+Preferred holders usually sacrifice voting power for income preference.
 
-Applied to this claim, overdrafts are short-term debt; share capital is permanent equity. That is why the sentence does not survive careful reading.
+On that basis the assertion attaches the wrong legal, tax, liability, or finance label.
 
-The statement sounds plausible but fails on precision, so it is false.', 'TRUE — This statement is correct. Share capital is usually not redeemed by the company and may serve as permanent capital.
+The statement is false.
+', 'TRUE — Keep the corporate triad in view: separate legal personality, transferable share capital with limited shareholder liability, and possible separation of shareholders from day-to-day managers.
 
-The relevant theory comes from corporations and limited liability. Identify which definition or relationship the sentence is trying to test before deciding true or false.
+Common shares generally carry meeting voting rights.
 
-Applied carefully, companies typically do not redeem share capital. Nothing in the sentence stretches the concept beyond its standard use.
+Apply the chapter mechanism to the exact wording: name the ownership form or finance source correctly, then check whether the claimed tax, liability, repayment, or matching consequence actually follows from that category.
 
-The reasoning chain is complete, so mark the statement true.', 'FALSE — On the Fuhrmann definition used in the entrance exam, the sentence is false. Once listed, a corporation must buy back all shares whenever investors sell on the secondary market.
+On that basis the assertion matches the ownership or finance rule being tested.
 
-Although the subject matter is corporations and limited liability, this is really a logic check on overstatement. Non-profit surpluses, mixed economies, and partial market failure are classic cases where absolute wording fails.
+The statement is true.
+', 'FALSE — Bonds issued to investors are a form of long-term external debt finance: the company borrows from bondholders and owes interest and principal according to the bond terms, distinct from equity share capital.
 
-Applied to this claim, secondary sales occur between investors without mandatory issuer buybacks. That is why the sentence does not survive careful reading.
+Preferred shares often carry priority on dividends (and sometimes on liquidation proceeds) while voting rights may be reduced or absent compared with ordinary shares. Preference is about financial priority, not identical control rights.
 
-Watch the absolute wording "all": exam statements often sound plausible until a single scope word turns an otherwise familiar idea into an overclaim.
+Bonds are debt securities distinct from preferred equity.
 
-The statement sounds plausible but fails on precision, so it is false.'] WHERE case_id = 'CASE 4.3.17' AND tier = 'full';
-UPDATE public.economics_cases SET tactical_explanations = ARRAY['TRUE — Evaluated against the textbook standard, this assertion is correct. Corporations may raise financial funds through loans and credit in addition to share capital.
+So the sentence does not survive once the correct mechanism is applied.
 
-The relevant theory comes from corporations and limited liability. Identify which definition or relationship the sentence is trying to test before deciding true or false.
+The statement is false.
+', 'TRUE — Bonds issued to investors are a form of long-term external debt finance: the company borrows from bondholders and owes interest and principal according to the bond terms, distinct from equity share capital.
 
-Applied carefully, corporations combine equity with loans and credit. Nothing in the sentence stretches the concept beyond its standard use.
+Corporate bonds and bank loans are both debt, but bonds are issued to investors in the market whereas bank loans are negotiated with lenders. Neither is equity: both create repayment obligations rather than residual ownership claims.
 
-Every part of the claim aligns with the standard concept, so the statement stands.', 'TRUE — This statement is correct. Bonds are securities that can be traded on a stock exchange alongside shares.
+Bond finance may cost less interest than comparable bank borrowing.
 
-The relevant theory comes from corporations and limited liability. Identify which definition or relationship the sentence is trying to test before deciding true or false.
+That is why the claim stands for this form of business or source of finance.
 
-Applied carefully, bonds may trade on regulated securities markets. Nothing in the sentence stretches the concept beyond its standard use.
+The statement is true.
+'] WHERE case_id = 'CASE 4.3.14' AND tier = 'full';
+UPDATE public.economics_cases SET tactical_explanations = ARRAY['FALSE — The board of directors oversees strategy and appoints or supervises executive management. Day-to-day running typically sits with managers; shareholders exercise control mainly through appointments and major votes, not by personally managing every contract.
 
-Every part of the claim aligns with the standard concept, so the statement stands.', 'TRUE — Evaluated against the textbook standard, this assertion is correct. Issuing bonds may finance large projects at an interest rate often lower than a comparable bank loan.
+Exchange prices respond to market demand and supply.
 
-The relevant theory comes from corporations and limited liability. Identify which definition or relationship the sentence is trying to test before deciding true or false.
+The board oversees strategy and monitors executives; day-to-day operations usually sit with managers. Shareholders influence mainly through elections and major votes rather than by personally signing every contract.
 
-Applied carefully, bond coupons may undercut comparable bank loan rates. Nothing in the sentence stretches the concept beyond its standard use.
+On that basis the assertion attaches the wrong legal, tax, liability, or finance label.
 
-The reasoning chain is complete, so mark the statement true.', 'FALSE — This statement is false. Bond interest is classified as share capital because bondholders become co-owners of the corporation.
+The statement is false.
+', 'TRUE — Keep the corporate triad in view: separate legal personality, transferable share capital with limited shareholder liability, and possible separation of shareholders from day-to-day managers.
 
-Start from the textbook definition in corporations and limited liability. A statement is true only if every scope word in the definition is respected—location, purpose, distribution rule, or time horizon.
+High demand tends to push prices up under supply-and-demand logic.
 
-The statement overreaches because bondholders are creditors, not equity owners. The trap is to agree with the topic while missing the one detail that breaks the logic.
+Apply the chapter mechanism to the exact wording: name the ownership form or finance source correctly, then check whether the claimed tax, liability, repayment, or matching consequence actually follows from that category.
 
-Near-miss definitions are deliberately written to sound familiar. Compare the statement phrase by phrase with the book version instead of trusting the overall topic.
+That is why the claim stands for this form of business or source of finance.
 
-The statement sounds plausible but fails on precision, so it is false.', 'TRUE — Evaluated against the textbook standard, this assertion is correct. A stock exchange is regulated by the authorities and facilitates trading in shares and other securities such as bonds.
+The statement is true.
+', 'FALSE — Keep the corporate triad in view: separate legal personality, transferable share capital with limited shareholder liability, and possible separation of shareholders from day-to-day managers.
 
-The relevant theory comes from corporations and limited liability. Identify which definition or relationship the sentence is trying to test before deciding true or false.
+Secondary purchases transfer existing shares; they need not trigger new issuance.
 
-Applied carefully, regulated exchanges handle multiple security types including bonds. Nothing in the sentence stretches the concept beyond its standard use.
+Apply the chapter mechanism to the exact wording: name the ownership form or finance source correctly, then check whether the claimed tax, liability, repayment, or matching consequence actually follows from that category.
 
-No qualifying word breaks the definition or scenario, so the answer is true.'] WHERE case_id = 'CASE 4.3.18' AND tier = 'full';
-UPDATE public.economics_cases SET tactical_explanations = ARRAY['FALSE — Evaluated against the textbook standard, this assertion is false. Only natural persons may hire employees; a corporation must contract workers in each shareholder''s personal name.
+So the sentence does not survive once the correct mechanism is applied.
 
-The relevant theory comes from corporations and limited liability. Identify which definition or relationship the sentence is trying to test before deciding true or false.
+The statement is false.
+', 'FALSE — Keep the corporate triad in view: separate legal personality, transferable share capital with limited shareholder liability, and possible separation of shareholders from day-to-day managers.
 
-The statement overreaches because legal persons may hire staff in the corporate name. The trap is to agree with the topic while missing the one detail that breaks the logic.
+The corporation is not obliged to redeem shares when demand falls.
 
-The statement sounds plausible but fails on precision, so it is false.', 'TRUE — On the Fuhrmann definition used in the entrance exam, the sentence is correct. A corporation as legal person can close contracts, sue, and be sued independently of individual shareholders.
+After issue, shares are transferable property of the investor. A later sale on the secondary market moves ownership from one investor to another; the corporation is not required to buy the shares back (redeem them) merely because a shareholder wants to exit. Primary issue raises cash for the firm; secondary transfer generally does not.
 
-This statement draws on corporations and limited liability. Treat it as a checklist against the core concept named in the stem, not as a general opinion about business.
+That misclassification is enough to reject the claim.
 
-In this setting, the firm contracts and litigates independently of owners. The wording matches the textbook relationship without adding extra conditions.
+The statement is false.
+', 'FALSE — Secondary-market appreciation is not a corporate financing inflow. The issuer receives proceeds at issue (for example at an IPO); later price changes between investors do not automatically raise new share capital for the firm.
 
-No qualifying word breaks the definition or scenario, so the answer is true.', 'FALSE — On the Fuhrmann definition used in the entrance exam, the sentence is false. Shareholders personally sign every supplier contract even when a corporation has separate legal personality.
+Secondary trade proceeds do not increase issuer share capital.
 
-Although the subject matter is corporations and limited liability, this is really a logic check on overstatement. Non-profit surpluses, mixed economies, and partial market failure are classic cases where absolute wording fails.
+Apply the chapter mechanism to the exact wording: name the ownership form or finance source correctly, then check whether the claimed tax, liability, repayment, or matching consequence actually follows from that category.
 
-Applied to this claim, corporate personality binds contracts to the firm, not each owner personally. That is why the sentence does not survive careful reading.
+So the sentence does not survive once the correct mechanism is applied.
 
-Watch the absolute wording "every": exam statements often sound plausible until a single scope word turns an otherwise familiar idea into an overclaim.
+The statement is false.
+'] WHERE case_id = 'CASE 4.3.15' AND tier = 'full';
+UPDATE public.economics_cases SET tactical_explanations = ARRAY['FALSE — Keep the corporate triad in view: separate legal personality, transferable share capital with limited shareholder liability, and possible separation of shareholders from day-to-day managers.
 
-The statement sounds plausible but fails on precision, so it is false.', 'FALSE — Evaluated against the textbook standard, this assertion is false. Separate legal personality prevents a corporation from owning land because property must rest with natural persons.
+Shareholders need not manage; a board may run the firm.
 
-Here you must apply ideas from corporations and limited liability to a concrete situation rather than recite a definition from memory. Ownership, customer type, stakeholder group, or country of production usually decides the verdict.
+Apply the chapter mechanism to the exact wording: name the ownership form or finance source correctly, then check whether the claimed tax, liability, repayment, or matching consequence actually follows from that category.
 
-The statement overreaches because corporations may own land and property directly. The trap is to agree with the topic while missing the one detail that breaks the logic.
+So the sentence does not survive once the correct mechanism is applied.
 
-Once the overclaim or mislabel is exposed, the only consistent answer is false.', 'FALSE — The claim is false. Incorporation removes the corporation''s ability to be sued because liability stops with shareholders.
+The statement is false.
+', 'TRUE — The board of directors oversees strategy and appoints or supervises executive management. Day-to-day running typically sits with managers; shareholders exercise control mainly through appointments and major votes, not by personally managing every contract.
 
-The scenario is a worked example of corporations and limited liability. Translate the story into the textbook category first; only then judge whether the sentence describes that category accurately.
+Shareholders may invest without holding board seats.
 
-Applied to this claim, the corporation itself can be sued despite shareholders'' limited liability. That is why the sentence does not survive careful reading.
+The board oversees strategy and monitors executives; day-to-day operations usually sit with managers. Shareholders influence mainly through elections and major votes rather than by personally signing every contract.
 
-The statement sounds plausible but fails on precision, so it is false.'] WHERE case_id = 'CASE 4.3.19' AND tier = 'full';
-UPDATE public.economics_cases SET tactical_explanations = ARRAY['FALSE — This statement is false. The holiday price surge increased the corporation''s registered share capital by the full market value of the rise.
+That is why the claim stands for this form of business or source of finance.
 
-The relevant theory comes from corporations and limited liability. Identify which definition or relationship the sentence is trying to test before deciding true or false.
+The statement is true.
+', 'TRUE — Keep the corporate triad in view: separate legal personality, transferable share capital with limited shareholder liability, and possible separation of shareholders from day-to-day managers.
 
-The statement overreaches because secondary price moves do not alter registered share capital. The trap is to agree with the topic while missing the one detail that breaks the logic.
+Owners can delegate operations to an elected ceo.
 
-Once the overclaim or mislabel is exposed, the only consistent answer is false.', 'FALSE — Evaluated against the textbook standard, this assertion is false. Existing shareholders who sold during the surge transferred their voting rights to the corporation itself.
+Apply the chapter mechanism to the exact wording: name the ownership form or finance source correctly, then check whether the claimed tax, liability, repayment, or matching consequence actually follows from that category.
 
-The relevant theory comes from corporations and limited liability. Identify which definition or relationship the sentence is trying to test before deciding true or false.
+That is why the claim stands for this form of business or source of finance.
 
-The statement overreaches because voting rights pass to buyers, not back to the corporation. The trap is to agree with the topic while missing the one detail that breaks the logic.
+The statement is true.
+', 'TRUE — Keep the corporate triad in view: separate legal personality, transferable share capital with limited shareholder liability, and possible separation of shareholders from day-to-day managers.
 
-The statement sounds plausible but fails on precision, so it is false.', 'TRUE — The claim is correct. Higher prices after issue reflect changed demand and supply among investors trading existing shares.
+Apply the chapter mechanism to the exact wording: name the ownership form or finance source correctly, then check whether the claimed tax, liability, repayment, or matching consequence actually follows from that category.
 
-This statement draws on corporations and limited liability. Treat it as a checklist against the core concept named in the stem, not as a general opinion about business.
+That is why the claim stands for this form of business or source of finance.
 
-In this setting, market prices follow investor demand and supply after issue. The wording matches the textbook relationship without adding extra conditions.
+The statement is true.
+', 'FALSE — As a legal person, a corporation holds rights and obligations in its own name: it can own land and property, hire people, close contracts, sue, and be sued. Those capacities do not require every shareholder to act personally in each transaction.
 
-No qualifying word breaks the definition or scenario, so the answer is true.', 'FALSE — This statement is false. The corporation must issue bonus shares equal to every euro of secondary-market price increase.
+Legal personality still requires the corporation to honour contracts.
 
-The topic is corporations and limited liability, but the decisive skill here is reading quantifiers. Words such as never, always, only, or all turn a generally true idea into a claim that can be rejected by one routine counterexample.
+Apply the chapter mechanism to the exact wording: name the ownership form or finance source correctly, then check whether the claimed tax, liability, repayment, or matching consequence actually follows from that category.
 
-The statement overreaches because price rises do not oblige automatic bonus share issuance. The trap is to agree with the topic while missing the one detail that breaks the logic.
+That misclassification is enough to reject the claim.
 
-Watch the absolute wording "every": exam statements often sound plausible until a single scope word turns an otherwise familiar idea into an overclaim.
+The statement is false.
+'] WHERE case_id = 'CASE 4.3.16' AND tier = 'full';
+UPDATE public.economics_cases SET tactical_explanations = ARRAY['FALSE — Keep the corporate triad in view: separate legal personality, transferable share capital with limited shareholder liability, and possible separation of shareholders from day-to-day managers.
 
-Once the overclaim or mislabel is exposed, the only consistent answer is false.', 'TRUE — On the Fuhrmann definition used in the entrance exam, the sentence is correct. Shareholders who sold at higher prices realise capital gains; the issuer does not receive those trading proceeds.
+Share capital is not repayable on demand like a loan.
 
-This statement draws on corporations and limited liability. Treat it as a checklist against the core concept named in the stem, not as a general opinion about business.
+Apply the chapter mechanism to the exact wording: name the ownership form or finance source correctly, then check whether the claimed tax, liability, repayment, or matching consequence actually follows from that category.
 
-In this setting, sellers capture capital gains; the issuer receives no trade proceeds. The wording matches the textbook relationship without adding extra conditions.
+That misclassification is enough to reject the claim.
 
-The reasoning chain is complete, so mark the statement true.'] WHERE case_id = 'CASE 4.3.20' AND tier = 'full';
-UPDATE public.economics_cases SET tactical_explanations = ARRAY['TRUE — On the Fuhrmann definition used in the entrance exam, the sentence is correct. If share capital of one million euros is divided into one hundred thousand shares, each share represents a fixed fraction of that capital.
+The statement is false.
+', 'FALSE — Keep the corporate triad in view: separate legal personality, transferable share capital with limited shareholder liability, and possible separation of shareholders from day-to-day managers.
 
-The scenario is a worked example of corporations and limited liability. Translate the story into the textbook category first; only then judge whether the sentence describes that category accurately.
+Equity is long-term, not short-term credit redeemed annually.
 
-In this setting, each share corresponds to a defined portion of total share capital. The wording matches the textbook relationship without adding extra conditions.
+After issue, shares are transferable property of the investor. A later sale on the secondary market moves ownership from one investor to another; the corporation is not required to buy the shares back (redeem them) merely because a shareholder wants to exit. Primary issue raises cash for the firm; secondary transfer generally does not.
 
-No qualifying word breaks the definition or scenario, so the answer is true.', 'FALSE — On the Fuhrmann definition used in the entrance exam, the sentence is false. Doubling the market price on the exchange automatically doubles the corporation''s registered share capital on the balance sheet.
+On that basis the assertion attaches the wrong legal, tax, liability, or finance label.
 
-Although the subject matter is corporations and limited liability, this is really a logic check on overstatement. Non-profit surpluses, mixed economies, and partial market failure are classic cases where absolute wording fails.
+The statement is false.
+', 'FALSE — An overdraft does not incorporate the firm, create limited liability, or cease to be a liability because it is short-term. Interest is not charged as if a positive credit balance were borrowed.
 
-Applied to this claim, market prices and registered share capital are not mechanically linked after issue. That is why the sentence does not survive careful reading.
+Overdrafts are short-term debt; share capital is permanent equity.
 
-Watch the absolute wording "automatically": exam statements often sound plausible until a single scope word turns an otherwise familiar idea into an overclaim.
+Apply the chapter mechanism to the exact wording: name the ownership form or finance source correctly, then check whether the claimed tax, liability, repayment, or matching consequence actually follows from that category.
 
-Because the decisive detail is wrong, mark the statement false.', 'TRUE — The claim is correct. Buying shares at initial issue transfers cash to the corporation in exchange for an ownership stake.
+So the sentence does not survive once the correct mechanism is applied.
 
-This statement draws on corporations and limited liability. Treat it as a checklist against the core concept named in the stem, not as a general opinion about business.
+The statement is false.
+', 'TRUE — Keep the corporate triad in view: separate legal personality, transferable share capital with limited shareholder liability, and possible separation of shareholders from day-to-day managers.
 
-In this setting, primary purchases fund the corporation and confer ownership. The wording matches the textbook relationship without adding extra conditions.
+Companies typically do not redeem share capital.
 
-Every part of the claim aligns with the standard concept, so the statement stands.', 'TRUE — On the Fuhrmann definition used in the entrance exam, the sentence is correct. A shareholder may sell shares later to another investor without requiring the corporation to redeem the stock.
+After issue, shares are transferable property of the investor. A later sale on the secondary market moves ownership from one investor to another; the corporation is not required to buy the shares back (redeem them) merely because a shareholder wants to exit. Primary issue raises cash for the firm; secondary transfer generally does not.
 
-This statement draws on corporations and limited liability. Treat it as a checklist against the core concept named in the stem, not as a general opinion about business.
+On that basis the assertion matches the ownership or finance rule being tested.
 
-In this setting, secondary sales transfer ownership between investors without obliging the corporation to redeem the stock. The wording matches the textbook relationship without adding extra conditions.
+The statement is true.
+', 'FALSE — Secondary-market appreciation is not a corporate financing inflow. The issuer receives proceeds at issue (for example at an IPO); later price changes between investors do not automatically raise new share capital for the firm.
 
-No qualifying word breaks the definition or scenario, so the answer is true.', 'FALSE — This statement is false. Each share always carries exactly one vote regardless of whether it is preferred or common stock.
+Secondary sales occur between investors without mandatory issuer buybacks.
 
-The topic is corporations and limited liability, but the decisive skill here is reading quantifiers. Words such as never, always, only, or all turn a generally true idea into a claim that can be rejected by one routine counterexample.
+Apply the chapter mechanism to the exact wording: name the ownership form or finance source correctly, then check whether the claimed tax, liability, repayment, or matching consequence actually follows from that category.
 
-The statement overreaches because preferred shares often carry reduced or no voting rights. The trap is to agree with the topic while missing the one detail that breaks the logic.
+On that basis the assertion attaches the wrong legal, tax, liability, or finance label.
 
-Watch the absolute wording "always": exam statements often sound plausible until a single scope word turns an otherwise familiar idea into an overclaim.
+The statement is false.
+'] WHERE case_id = 'CASE 4.3.17' AND tier = 'full';
+UPDATE public.economics_cases SET tactical_explanations = ARRAY['TRUE — Keep the corporate triad in view: separate legal personality, transferable share capital with limited shareholder liability, and possible separation of shareholders from day-to-day managers.
 
-Once the overclaim or mislabel is exposed, the only consistent answer is false.'] WHERE case_id = 'CASE 4.3.21' AND tier = 'full';
-UPDATE public.economics_cases SET tactical_explanations = ARRAY['FALSE — The claim is false. Listing on a stock exchange is mandatory for every corporation before it may sell products to customers.
+Corporations combine equity with loans and credit.
 
-Although the subject matter is corporations and limited liability, this is really a logic check on overstatement. Non-profit surpluses, mixed economies, and partial market failure are classic cases where absolute wording fails.
+Apply the chapter mechanism to the exact wording: name the ownership form or finance source correctly, then check whether the claimed tax, liability, repayment, or matching consequence actually follows from that category.
 
-Applied to this claim, listing is optional for operating as a corporation. That is why the sentence does not survive careful reading.
+So the sentence is a correct description of the mechanism at work in this case.
 
-Watch the absolute wording "every": exam statements often sound plausible until a single scope word turns an otherwise familiar idea into an overclaim.
+The statement is true.
+', 'TRUE — Bonds issued to investors are a form of long-term external debt finance: the company borrows from bondholders and owes interest and principal according to the bond terms, distinct from equity share capital.
 
-Once the overclaim or mislabel is exposed, the only consistent answer is false.', 'FALSE — On the Fuhrmann definition used in the entrance exam, the sentence is false. An unlisted corporation cannot issue shares to private investors or raise share capital off the exchange.
+Bonds may trade on regulated securities markets.
 
-Although the subject matter is corporations and limited liability, this is really a logic check on overstatement. Non-profit surpluses, mixed economies, and partial market failure are classic cases where absolute wording fails.
+Apply the chapter mechanism to the exact wording: name the ownership form or finance source correctly, then check whether the claimed tax, liability, repayment, or matching consequence actually follows from that category.
 
-Applied to this claim, unlisted firms may still place shares privately. That is why the sentence does not survive careful reading.
+So the sentence is a correct description of the mechanism at work in this case.
 
-Watch the absolute wording "cannot": exam statements often sound plausible until a single scope word turns an otherwise familiar idea into an overclaim.
+The statement is true.
+', 'TRUE — Bonds issued to investors are a form of long-term external debt finance: the company borrows from bondholders and owes interest and principal according to the bond terms, distinct from equity share capital.
 
-Because the decisive detail is wrong, mark the statement false.', 'FALSE — This statement is false. Initial listing means the corporation will receive every future euro paid whenever shares change hands on the market.
+Corporate bonds and bank loans are both debt, but bonds are issued to investors in the market whereas bank loans are negotiated with lenders. Neither is equity: both create repayment obligations rather than residual ownership claims.
 
-The topic is corporations and limited liability, but the decisive skill here is reading quantifiers. Words such as never, always, only, or all turn a generally true idea into a claim that can be rejected by one routine counterexample.
+Bond coupons may undercut comparable bank loan rates.
 
-The statement overreaches because only ipo proceeds and new issues fund the issuer, not all later trades. The trap is to agree with the topic while missing the one detail that breaks the logic.
+So the sentence is a correct description of the mechanism at work in this case.
 
-Watch the absolute wording "every": exam statements often sound plausible until a single scope word turns an otherwise familiar idea into an overclaim.
+The statement is true.
+', 'FALSE — Bonds issued to investors are a form of long-term external debt finance: the company borrows from bondholders and owes interest and principal according to the bond terms, distinct from equity share capital.
 
-The statement sounds plausible but fails on precision, so it is false.', 'FALSE — The claim is false. Delisting from an exchange automatically converts a corporation into an unincorporated partnership.
+Bondholders are creditors, not equity owners.
 
-Although the subject matter is corporations and limited liability, this is really a logic check on overstatement. Non-profit surpluses, mixed economies, and partial market failure are classic cases where absolute wording fails.
+Apply the chapter mechanism to the exact wording: name the ownership form or finance source correctly, then check whether the claimed tax, liability, repayment, or matching consequence actually follows from that category.
 
-Applied to this claim, delisting does not remove incorporated legal status. That is why the sentence does not survive careful reading.
+So the sentence does not survive once the correct mechanism is applied.
 
-Watch the absolute wording "automatically": exam statements often sound plausible until a single scope word turns an otherwise familiar idea into an overclaim.
+The statement is false.
+', 'TRUE — Bonds issued to investors are a form of long-term external debt finance: the company borrows from bondholders and owes interest and principal according to the bond terms, distinct from equity share capital.
 
-The statement sounds plausible but fails on precision, so it is false.', 'TRUE — The claim is correct. A corporation''s stock can but does not have to be listed on a stock market or stock exchange.
+Regulated exchanges handle multiple security types including bonds.
 
-This statement draws on corporations and limited liability. Treat it as a checklist against the core concept named in the stem, not as a general opinion about business.
+Apply the chapter mechanism to the exact wording: name the ownership form or finance source correctly, then check whether the claimed tax, liability, repayment, or matching consequence actually follows from that category.
 
-In this setting, exchange listing remains a choice, not a universal requirement. The wording matches the textbook relationship without adding extra conditions.
+On that basis the assertion matches the ownership or finance rule being tested.
 
-The reasoning chain is complete, so mark the statement true.'] WHERE case_id = 'CASE 4.3.22' AND tier = 'full';
-UPDATE public.economics_cases SET tactical_explanations = ARRAY['TRUE — The claim is correct. Expectations of successful new products can raise demand for a corporation''s shares.
+The statement is true.
+'] WHERE case_id = 'CASE 4.3.18' AND tier = 'full';
+UPDATE public.economics_cases SET tactical_explanations = ARRAY['FALSE — Keep the corporate triad in view: separate legal personality, transferable share capital with limited shareholder liability, and possible separation of shareholders from day-to-day managers.
 
-This statement draws on corporations and limited liability. Treat it as a checklist against the core concept named in the stem, not as a general opinion about business.
+Legal persons may hire staff in the corporate name.
 
-In this setting, product success expectations can attract buyers. The wording matches the textbook relationship without adding extra conditions.
+Apply the chapter mechanism to the exact wording: name the ownership form or finance source correctly, then check whether the claimed tax, liability, repayment, or matching consequence actually follows from that category.
 
-No qualifying word breaks the definition or scenario, so the answer is true.', 'TRUE — Evaluated against the textbook standard, this assertion is correct. Expectations of increasing market share can contribute to higher share demand.
+So the sentence does not survive once the correct mechanism is applied.
 
-The relevant theory comes from corporations and limited liability. Identify which definition or relationship the sentence is trying to test before deciding true or false.
+The statement is false.
+', 'TRUE — As a legal person, a corporation holds rights and obligations in its own name: it can own land and property, hire people, close contracts, sue, and be sued. Those capacities do not require every shareholder to act personally in each transaction.
 
-Applied carefully, growing market share signals may lift demand. Nothing in the sentence stretches the concept beyond its standard use.
+The firm contracts and litigates independently of owners.
 
-No qualifying word breaks the definition or scenario, so the answer is true.', 'TRUE — Evaluated against the textbook standard, this assertion is correct. Thriving economic conditions can support share demand because more investors have funds available.
+Apply the chapter mechanism to the exact wording: name the ownership form or finance source correctly, then check whether the claimed tax, liability, repayment, or matching consequence actually follows from that category.
 
-Here you must apply ideas from corporations and limited liability to a concrete situation rather than recite a definition from memory. Ownership, customer type, stakeholder group, or country of production usually decides the verdict.
+On that basis the assertion matches the ownership or finance rule being tested.
 
-Applied carefully, prosperity leaves more money available to invest in equity. Nothing in the sentence stretches the concept beyond its standard use.
+The statement is true.
+', 'FALSE — As a legal person, a corporation holds rights and obligations in its own name: it can own land and property, hire people, close contracts, sue, and be sued. Those capacities do not require every shareholder to act personally in each transaction.
 
-Every part of the claim aligns with the standard concept, so the statement stands.', 'TRUE — On the Fuhrmann definition used in the entrance exam, the sentence is correct. High interest rates can reduce share demand by making interest-bearing investments more attractive.
+Corporate personality binds contracts to the firm, not each owner personally.
 
-This statement draws on corporations and limited liability. Treat it as a checklist against the core concept named in the stem, not as a general opinion about business.
+Apply the chapter mechanism to the exact wording: name the ownership form or finance source correctly, then check whether the claimed tax, liability, repayment, or matching consequence actually follows from that category.
 
-In this setting, higher interest rates draw funds toward fixed-return assets. The wording matches the textbook relationship without adding extra conditions.
+On that basis the assertion attaches the wrong legal, tax, liability, or finance label.
 
-The reasoning chain is complete, so mark the statement true.', 'TRUE — This statement is correct. An increase in share prices after issue benefits shareholders rather than supplying new finance to the issuer.
+The statement is false.
+', 'FALSE — As a legal person, a corporation holds rights and obligations in its own name: it can own land and property, hire people, close contracts, sue, and be sued. Those capacities do not require every shareholder to act personally in each transaction.
 
-This tests discrimination within corporations and limited liability: local versus international scope, equity versus debt, product versus market orientation, and similar pairs.
+Corporations may own land and property directly.
 
-Applied carefully, post-issue gains enrich shareholders, not issuer share capital. Nothing in the sentence stretches the concept beyond its standard use.
+Apply the chapter mechanism to the exact wording: name the ownership form or finance source correctly, then check whether the claimed tax, liability, repayment, or matching consequence actually follows from that category.
 
-The reasoning chain is complete, so mark the statement true.'] WHERE case_id = 'CASE 4.3.23' AND tier = 'full';
-UPDATE public.economics_cases SET tactical_explanations = ARRAY['TRUE — On the Fuhrmann definition used in the entrance exam, the sentence is correct. The chief information officer may sit on the board of directors with defined operational responsibilities.
+On that basis the assertion attaches the wrong legal, tax, liability, or finance label.
 
-This statement draws on corporations and limited liability. Treat it as a checklist against the core concept named in the stem, not as a general opinion about business.
+The statement is false.
+', 'FALSE — Keep the corporate triad in view: separate legal personality, transferable share capital with limited shareholder liability, and possible separation of shareholders from day-to-day managers.
 
-In this setting, a cio may be a board member with it duties. The wording matches the textbook relationship without adding extra conditions.
+The corporation itself can be sued despite shareholders'' limited liability.
 
-Every part of the claim aligns with the standard concept, so the statement stands.', 'FALSE — The claim is false. Shareholders who elected the board must personally perform the chief information officer''s daily technical tasks.
+Apply the chapter mechanism to the exact wording: name the ownership form or finance source correctly, then check whether the claimed tax, liability, repayment, or matching consequence actually follows from that category.
 
-This statement draws on corporations and limited liability. Treat it as a checklist against the core concept named in the stem, not as a general opinion about business.
+That misclassification is enough to reject the claim.
 
-Applied to this claim, shareholders delegate operations; they need not run systems personally. That is why the sentence does not survive careful reading.
+The statement is false.
+'] WHERE case_id = 'CASE 4.3.19' AND tier = 'full';
+UPDATE public.economics_cases SET tactical_explanations = ARRAY['FALSE — Keep the corporate triad in view: separate legal personality, transferable share capital with limited shareholder liability, and possible separation of shareholders from day-to-day managers.
 
-Because the decisive detail is wrong, mark the statement false.', 'FALSE — The claim is false. Electing a board eliminates shareholders'' right to attend the annual stockholders'' meeting.
+Secondary price moves do not alter registered share capital.
 
-This statement draws on corporations and limited liability. Treat it as a checklist against the core concept named in the stem, not as a general opinion about business.
+Apply the chapter mechanism to the exact wording: name the ownership form or finance source correctly, then check whether the claimed tax, liability, repayment, or matching consequence actually follows from that category.
 
-Applied to this claim, shareholders may still attend meetings and vote. That is why the sentence does not survive careful reading.
+That misclassification is enough to reject the claim.
 
-Once the overclaim or mislabel is exposed, the only consistent answer is false.', 'TRUE — The claim is correct. The board of directors makes major business decisions on behalf of shareholders who supplied capital.
+The statement is false.
+', 'FALSE — Keep the corporate triad in view: separate legal personality, transferable share capital with limited shareholder liability, and possible separation of shareholders from day-to-day managers.
 
-This statement draws on corporations and limited liability. Treat it as a checklist against the core concept named in the stem, not as a general opinion about business.
+Voting rights pass to buyers, not back to the corporation.
 
-In this setting, the board decides major matters for capital providers. The wording matches the textbook relationship without adding extra conditions.
+Apply the chapter mechanism to the exact wording: name the ownership form or finance source correctly, then check whether the claimed tax, liability, repayment, or matching consequence actually follows from that category.
 
-No qualifying word breaks the definition or scenario, so the answer is true.', 'FALSE — The claim is false. A chief information officer must hold the largest block of shares before joining the management board.
+So the sentence does not survive once the correct mechanism is applied.
 
-This statement draws on corporations and limited liability. Treat it as a checklist against the core concept named in the stem, not as a general opinion about business.
+The statement is false.
+', 'TRUE — Keep the corporate triad in view: separate legal personality, transferable share capital with limited shareholder liability, and possible separation of shareholders from day-to-day managers.
 
-Applied to this claim, board members need not be largest shareholders. That is why the sentence does not survive careful reading.
+Market prices follow investor demand and supply after issue.
 
-Once the overclaim or mislabel is exposed, the only consistent answer is false.'] WHERE case_id = 'CASE 4.3.24' AND tier = 'full';
-UPDATE public.economics_cases SET tactical_explanations = ARRAY['FALSE — Evaluated against the textbook standard, this assertion is false. Rising secondary-market prices require the issuer to record additional share capital equal to traders'' gains.
+Apply the chapter mechanism to the exact wording: name the ownership form or finance source correctly, then check whether the claimed tax, liability, repayment, or matching consequence actually follows from that category.
 
-The relevant theory comes from corporations and limited liability. Identify which definition or relationship the sentence is trying to test before deciding true or false.
+So the sentence is a correct description of the mechanism at work in this case.
 
-The statement overreaches because market gains are not booked as new issuer share capital. The trap is to agree with the topic while missing the one detail that breaks the logic.
+The statement is true.
+', 'FALSE — Secondary-market appreciation is not a corporate financing inflow. The issuer receives proceeds at issue (for example at an IPO); later price changes between investors do not automatically raise new share capital for the firm.
 
-The statement sounds plausible but fails on precision, so it is false.', 'FALSE — Evaluated against the textbook standard, this assertion is false. A corporation finances expansion automatically whenever its listed share price reaches a new high.
+Price rises do not oblige automatic bonus share issuance.
 
-The topic is corporations and limited liability, but the decisive skill here is reading quantifiers. Words such as never, always, only, or all turn a generally true idea into a claim that can be rejected by one routine counterexample.
+Apply the chapter mechanism to the exact wording: name the ownership form or finance source correctly, then check whether the claimed tax, liability, repayment, or matching consequence actually follows from that category.
 
-The statement overreaches because price highs alone do not fund corporate expansion. The trap is to agree with the topic while missing the one detail that breaks the logic.
+On that basis the assertion attaches the wrong legal, tax, liability, or finance label.
 
-Watch the absolute wording "automatically": exam statements often sound plausible until a single scope word turns an otherwise familiar idea into an overclaim.
+The statement is false.
+', 'TRUE — Keep the corporate triad in view: separate legal personality, transferable share capital with limited shareholder liability, and possible separation of shareholders from day-to-day managers.
 
-The statement sounds plausible but fails on precision, so it is false.', 'FALSE — On the Fuhrmann definition used in the entrance exam, the sentence is false. Shareholders who profit from price rises must return part of the gain to the corporation as mandatory equity injections.
+Sellers capture capital gains; the issuer receives no trade proceeds.
 
-This statement draws on corporations and limited liability. Treat it as a checklist against the core concept named in the stem, not as a general opinion about business.
+Apply the chapter mechanism to the exact wording: name the ownership form or finance source correctly, then check whether the claimed tax, liability, repayment, or matching consequence actually follows from that category.
 
-Applied to this claim, trading profits remain with shareholders unless new shares are sold. That is why the sentence does not survive careful reading.
+So the sentence is a correct description of the mechanism at work in this case.
 
-Once the overclaim or mislabel is exposed, the only consistent answer is false.', 'FALSE — The claim is false. IPO proceeds and later exchange gains are treated identically as recurring share-capital inflows to the issuer.
+The statement is true.
+'] WHERE case_id = 'CASE 4.3.20' AND tier = 'full';
+UPDATE public.economics_cases SET tactical_explanations = ARRAY['TRUE — Keep the corporate triad in view: separate legal personality, transferable share capital with limited shareholder liability, and possible separation of shareholders from day-to-day managers.
 
-This statement draws on corporations and limited liability. Treat it as a checklist against the core concept named in the stem, not as a general opinion about business.
+Each share corresponds to a defined portion of total share capital.
 
-Applied to this claim, only primary issue proceeds count as share-capital inflows. That is why the sentence does not survive careful reading.
+Apply the chapter mechanism to the exact wording: name the ownership form or finance source correctly, then check whether the claimed tax, liability, repayment, or matching consequence actually follows from that category.
 
-The statement sounds plausible but fails on precision, so it is false.', 'TRUE — The claim is correct. Price increases after shares have been issued do not provide further financing to the issuing corporation.
+On that basis the assertion matches the ownership or finance rule being tested.
 
-This statement draws on corporations and limited liability. Treat it as a checklist against the core concept named in the stem, not as a general opinion about business.
+The statement is true.
+', 'FALSE — Keep the corporate triad in view: separate legal personality, transferable share capital with limited shareholder liability, and possible separation of shareholders from day-to-day managers.
 
-In this setting, secondary appreciation does not finance the issuer. The wording matches the textbook relationship without adding extra conditions.
+Market prices and registered share capital are not mechanically linked after issue.
 
-Every part of the claim aligns with the standard concept, so the statement stands.'] WHERE case_id = 'CASE 4.3.25' AND tier = 'full';
+Apply the chapter mechanism to the exact wording: name the ownership form or finance source correctly, then check whether the claimed tax, liability, repayment, or matching consequence actually follows from that category.
+
+That misclassification is enough to reject the claim.
+
+The statement is false.
+', 'TRUE — Keep the corporate triad in view: separate legal personality, transferable share capital with limited shareholder liability, and possible separation of shareholders from day-to-day managers.
+
+Primary purchases fund the corporation and confer ownership.
+
+Apply the chapter mechanism to the exact wording: name the ownership form or finance source correctly, then check whether the claimed tax, liability, repayment, or matching consequence actually follows from that category.
+
+On that basis the assertion matches the ownership or finance rule being tested.
+
+The statement is true.
+', 'TRUE — Secondary sales transfer ownership between investors without obliging the corporation to redeem the stock.
+
+After issue, shares are transferable property of the investor. A later sale on the secondary market moves ownership from one investor to another; the corporation is not required to buy the shares back (redeem them) merely because a shareholder wants to exit. Primary issue raises cash for the firm; secondary transfer generally does not.
+
+That is why the claim stands for this form of business or source of finance.
+
+The statement is true.
+', 'FALSE — Preferred shares often carry priority on dividends (and sometimes on liquidation proceeds) while voting rights may be reduced or absent compared with ordinary shares. Preference is about financial priority, not identical control rights.
+
+Preferred shares often carry reduced or no voting rights.
+
+Apply the chapter mechanism to the exact wording: name the ownership form or finance source correctly, then check whether the claimed tax, liability, repayment, or matching consequence actually follows from that category.
+
+So the sentence does not survive once the correct mechanism is applied.
+
+The statement is false.
+'] WHERE case_id = 'CASE 4.3.21' AND tier = 'full';
+UPDATE public.economics_cases SET tactical_explanations = ARRAY['FALSE — Keep the corporate triad in view: separate legal personality, transferable share capital with limited shareholder liability, and possible separation of shareholders from day-to-day managers.
+
+Listing is optional for operating as a corporation.
+
+Apply the chapter mechanism to the exact wording: name the ownership form or finance source correctly, then check whether the claimed tax, liability, repayment, or matching consequence actually follows from that category.
+
+On that basis the assertion attaches the wrong legal, tax, liability, or finance label.
+
+The statement is false.
+', 'FALSE — Keep the corporate triad in view: separate legal personality, transferable share capital with limited shareholder liability, and possible separation of shareholders from day-to-day managers. Unlisted firms may still place shares privately.
+
+Apply the chapter mechanism to the exact wording: name the ownership form or finance source correctly, then check whether the claimed tax, liability, repayment, or matching consequence actually follows from that category.
+
+That misclassification is enough to reject the claim.
+
+The statement is false.
+', 'FALSE — Keep the corporate triad in view: separate legal personality, transferable share capital with limited shareholder liability, and possible separation of shareholders from day-to-day managers.
+
+Only ipo proceeds and new issues fund the issuer, not all later trades.
+
+Apply the chapter mechanism to the exact wording: name the ownership form or finance source correctly, then check whether the claimed tax, liability, repayment, or matching consequence actually follows from that category.
+
+On that basis the assertion attaches the wrong legal, tax, liability, or finance label.
+
+The statement is false.
+', 'FALSE — The unincorporated/incorporated split turns on legal personality. Unincorporated firms (sole traders, partnerships) are not legal entities of their own; incorporated companies are legal persons. Pooling capital, filing personal tax, listing shares, or enjoying limited liability must be attached to the correct side of that split — limited liability marks incorporated forms, and listing is not the sole criterion of incorporation.
+
+Delisting does not remove incorporated legal status.
+
+That misclassification is enough to reject the claim.
+
+The statement is false.
+', 'TRUE — Keep the corporate triad in view: separate legal personality, transferable share capital with limited shareholder liability, and possible separation of shareholders from day-to-day managers.
+
+Exchange listing remains a choice, not a universal requirement.
+
+Apply the chapter mechanism to the exact wording: name the ownership form or finance source correctly, then check whether the claimed tax, liability, repayment, or matching consequence actually follows from that category.
+
+That is why the claim stands for this form of business or source of finance.
+
+The statement is true.
+'] WHERE case_id = 'CASE 4.3.22' AND tier = 'full';
+UPDATE public.economics_cases SET tactical_explanations = ARRAY['TRUE — Keep the corporate triad in view: separate legal personality, transferable share capital with limited shareholder liability, and possible separation of shareholders from day-to-day managers.
+
+Product success expectations can attract buyers.
+
+Apply the chapter mechanism to the exact wording: name the ownership form or finance source correctly, then check whether the claimed tax, liability, repayment, or matching consequence actually follows from that category.
+
+That is why the claim stands for this form of business or source of finance.
+
+The statement is true.
+', 'TRUE — Keep the corporate triad in view: separate legal personality, transferable share capital with limited shareholder liability, and possible separation of shareholders from day-to-day managers.
+
+Growing market share signals may lift demand.
+
+Apply the chapter mechanism to the exact wording: name the ownership form or finance source correctly, then check whether the claimed tax, liability, repayment, or matching consequence actually follows from that category.
+
+So the sentence is a correct description of the mechanism at work in this case.
+
+The statement is true.
+', 'TRUE — Keep the corporate triad in view: separate legal personality, transferable share capital with limited shareholder liability, and possible separation of shareholders from day-to-day managers.
+
+Prosperity leaves more money available to invest in equity.
+
+Apply the chapter mechanism to the exact wording: name the ownership form or finance source correctly, then check whether the claimed tax, liability, repayment, or matching consequence actually follows from that category.
+
+That is why the claim stands for this form of business or source of finance.
+
+The statement is true.
+', 'TRUE — Keep the corporate triad in view: separate legal personality, transferable share capital with limited shareholder liability, and possible separation of shareholders from day-to-day managers.
+
+Higher interest rates draw funds toward fixed-return assets.
+
+Apply the chapter mechanism to the exact wording: name the ownership form or finance source correctly, then check whether the claimed tax, liability, repayment, or matching consequence actually follows from that category.
+
+On that basis the assertion matches the ownership or finance rule being tested.
+
+The statement is true.
+', 'TRUE — Keep the corporate triad in view: separate legal personality, transferable share capital with limited shareholder liability, and possible separation of shareholders from day-to-day managers.
+
+Post-issue gains enrich shareholders, not issuer share capital.
+
+Apply the chapter mechanism to the exact wording: name the ownership form or finance source correctly, then check whether the claimed tax, liability, repayment, or matching consequence actually follows from that category.
+
+On that basis the assertion matches the ownership or finance rule being tested.
+
+The statement is true.
+'] WHERE case_id = 'CASE 4.3.23' AND tier = 'full';
+UPDATE public.economics_cases SET tactical_explanations = ARRAY['TRUE — The board of directors oversees strategy and appoints or supervises executive management. Day-to-day running typically sits with managers; shareholders exercise control mainly through appointments and major votes, not by personally managing every contract.
+
+A cio may be a board member with it duties.
+
+The board oversees strategy and monitors executives; day-to-day operations usually sit with managers. Shareholders influence mainly through elections and major votes rather than by personally signing every contract.
+
+On that basis the assertion matches the ownership or finance rule being tested.
+
+The statement is true.
+', 'FALSE — The board of directors oversees strategy and appoints or supervises executive management. Day-to-day running typically sits with managers; shareholders exercise control mainly through appointments and major votes, not by personally managing every contract.
+
+Shareholders delegate operations; they need not run systems personally.
+
+The board oversees strategy and monitors executives; day-to-day operations usually sit with managers. Shareholders influence mainly through elections and major votes rather than by personally signing every contract.
+
+So the sentence does not survive once the correct mechanism is applied.
+
+The statement is false.
+', 'FALSE — The board of directors oversees strategy and appoints or supervises executive management. Day-to-day running typically sits with managers; shareholders exercise control mainly through appointments and major votes, not by personally managing every contract.
+
+Shareholders may still attend meetings and vote.
+
+The board oversees strategy and monitors executives; day-to-day operations usually sit with managers. Shareholders influence mainly through elections and major votes rather than by personally signing every contract.
+
+On that basis the assertion attaches the wrong legal, tax, liability, or finance label.
+
+The statement is false.
+', 'TRUE — The board of directors oversees strategy and appoints or supervises executive management. Day-to-day running typically sits with managers; shareholders exercise control mainly through appointments and major votes, not by personally managing every contract.
+
+The board decides major matters for capital providers.
+
+The board oversees strategy and monitors executives; day-to-day operations usually sit with managers. Shareholders influence mainly through elections and major votes rather than by personally signing every contract.
+
+On that basis the assertion matches the ownership or finance rule being tested.
+
+The statement is true.
+', 'FALSE — The board of directors oversees strategy and appoints or supervises executive management. Day-to-day running typically sits with managers; shareholders exercise control mainly through appointments and major votes, not by personally managing every contract.
+
+Board members need not be largest shareholders.
+
+The board oversees strategy and monitors executives; day-to-day operations usually sit with managers. Shareholders influence mainly through elections and major votes rather than by personally signing every contract.
+
+So the sentence does not survive once the correct mechanism is applied.
+
+The statement is false.
+'] WHERE case_id = 'CASE 4.3.24' AND tier = 'full';
+UPDATE public.economics_cases SET tactical_explanations = ARRAY['FALSE — Secondary-market appreciation is not a corporate financing inflow. The issuer receives proceeds at issue (for example at an IPO); later price changes between investors do not automatically raise new share capital for the firm.
+
+Market gains are not booked as new issuer share capital.
+
+Share capital is built from the capital attached to issued shares. Where nominal (par) value is used, total share capital is thought of as nominal value times the number of shares issued. Ownership fractions follow how many shares each investor holds, not who holds the CEO title.
+
+That misclassification is enough to reject the claim.
+
+The statement is false.
+', 'FALSE — Keep the corporate triad in view: separate legal personality, transferable share capital with limited shareholder liability, and possible separation of shareholders from day-to-day managers.
+
+Price highs alone do not fund corporate expansion.
+
+Apply the chapter mechanism to the exact wording: name the ownership form or finance source correctly, then check whether the claimed tax, liability, repayment, or matching consequence actually follows from that category.
+
+So the sentence does not survive once the correct mechanism is applied.
+
+The statement is false.
+', 'FALSE — Keep the corporate triad in view: separate legal personality, transferable share capital with limited shareholder liability, and possible separation of shareholders from day-to-day managers.
+
+Trading profits remain with shareholders unless new shares are sold.
+
+Apply the chapter mechanism to the exact wording: name the ownership form or finance source correctly, then check whether the claimed tax, liability, repayment, or matching consequence actually follows from that category.
+
+That misclassification is enough to reject the claim.
+
+The statement is false.
+', 'FALSE — An IPO (or other primary issue) sells new shares and can raise equity finance for the issuer. Later exchange trading is mainly secondary: ownership passes between investors without a new capital raise unless the company issues again.
+
+Only primary issue proceeds count as share-capital inflows.
+
+An IPO is a primary issue: new shares are sold and the issuer can receive equity finance. Later exchange trades are typically secondary transactions among investors unless the company issues again.
+
+On that basis the assertion attaches the wrong legal, tax, liability, or finance label.
+
+The statement is false.
+', 'TRUE — Keep the corporate triad in view: separate legal personality, transferable share capital with limited shareholder liability, and possible separation of shareholders from day-to-day managers.
+
+Secondary appreciation does not finance the issuer.
+
+Apply the chapter mechanism to the exact wording: name the ownership form or finance source correctly, then check whether the claimed tax, liability, repayment, or matching consequence actually follows from that category.
+
+So the sentence is a correct description of the mechanism at work in this case.
+
+The statement is true.
+'] WHERE case_id = 'CASE 4.3.25' AND tier = 'full';

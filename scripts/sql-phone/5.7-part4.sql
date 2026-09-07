@@ -1,844 +1,903 @@
 -- Update expanded explanations for 5.7-part4 (25 cases).
 -- Safe to re-run: only updates tactical_explanations.
 
-UPDATE public.economics_cases SET tactical_explanations = ARRAY['FALSE — The claim is false. Home delivery belongs to promotion because it communicates advertising messages to households.
+UPDATE public.economics_cases SET tactical_explanations = ARRAY['FALSE — The marketing mix coordinates product, price, place, and promotion so the targeted customers get a suitable offer at an affordable price, in a convenient place, with a coherent promotional message.
 
-The scenario is a worked example of the marketing mix (4 Ps). Translate the story into the textbook category first; only then judge whether the sentence describes that category accurately.
+On this stem (households): home delivery relates to customer access within the place element.
 
-Applied to this claim, home delivery relates to customer access within the place element. That is why the sentence does not survive careful reading.
+Once the defining feature is restored, the assertion falls away.
 
-The statement sounds plausible but fails on precision, so it is false.', 'TRUE — Evaluated against the textbook standard, this assertion is correct. A promotional message tailored to families with young children should align with the product and price offered through chosen place channels.
+The statement is false.
+', 'TRUE — The marketing mix coordinates product, price, place, and promotion so the targeted customers get a suitable offer at an affordable price, in a convenient place, with a coherent promotional message.
 
-The relevant theory comes from the marketing mix (4 Ps). Identify which definition or relationship the sentence is trying to test before deciding true or false.
+Segment-focused promotion must align with product, price, and place for families with young children.
 
-Applied carefully, segment-focused promotion must align with product, price, and place for families with young children. Nothing in the sentence stretches the concept beyond its standard use.
+Nothing in the wording contradicts that marketing test, so the claim is sound.
 
-Every part of the claim aligns with the standard concept, so the statement stands.', 'TRUE — This statement is correct. Affordable pricing for families with young children supports the marketing-mix goal of offering value at a convenient place with clear communication.
+The statement is true.
+', 'TRUE — The marketing mix coordinates product, price, place, and promotion so the targeted customers get a suitable offer at an affordable price, in a convenient place, with a coherent promotional message.
 
-The relevant theory comes from the marketing mix (4 Ps). Identify which definition or relationship the sentence is trying to test before deciding true or false.
+Affordable price for families with young children fits the core marketing-mix objective.
 
-Applied carefully, affordable price for families with young children fits the core marketing-mix objective. Nothing in the sentence stretches the concept beyond its standard use.
+Under that definition the assertion is the right description of the situation.
 
-Every part of the claim aligns with the standard concept, so the statement stands.', 'FALSE — On the Fuhrmann definition used in the entrance exam, the sentence is false. Sales events set the permanent list price for all future years of the product.
+The statement is true.
+', 'FALSE — The marketing mix coordinates product, price, place, and promotion so the targeted customers get a suitable offer at an affordable price, in a convenient place, with a coherent promotional message.
 
-Although the subject matter is the marketing mix (4 Ps), this is really a logic check on overstatement. Non-profit surpluses, mixed economies, and partial market failure are classic cases where absolute wording fails.
+Sales events functions as a promotional communication tool in the mix.
 
-Applied to this claim, sales events functions as a promotional communication tool in the mix. That is why the sentence does not survive careful reading.
+Swap in the textbook criterion and the sentence no longer describes the case.
 
-Watch the absolute wording "all": exam statements often sound plausible until a single scope word turns an otherwise familiar idea into an overclaim.
+The statement is false.
+', 'TRUE — A brand (name, words, symbol, or sign) distinguishes the offer, supports a USP and recognition, and can signal stable quality and safer choice for buyers.
 
-Once the overclaim or mislabel is exposed, the only consistent answer is false.', 'TRUE — On the Fuhrmann definition used in the entrance exam, the sentence is correct. Brand trust is especially valuable for families with young children who rely on familiar names when choosing among competing offers.
+Familiar brands provide reassurance valued by families with young children.
 
-The scenario is a worked example of the marketing mix (4 Ps). Translate the story into the textbook category first; only then judge whether the sentence describes that category accurately.
+The sentence therefore reports the concept accurately for this case.
 
-In this setting, familiar brands provide reassurance valued by families with young children. The wording matches the textbook relationship without adding extra conditions.
+The statement is true.
+'] WHERE case_id = 'CASE 5.7.76' AND tier = 'full';
+UPDATE public.economics_cases SET tactical_explanations = ARRAY['TRUE — Within the marketing mix, product decisions — range, brand, life-cycle stage, and portfolio role — sit at the centre of how the firm meets target demand.
 
-Every part of the claim aligns with the standard concept, so the statement stands.'] WHERE case_id = 'CASE 5.7.76' AND tier = 'full';
-UPDATE public.economics_cases SET tactical_explanations = ARRAY['TRUE — This statement is correct. Selective distribution may suit premium offers targeted at families with young children when service quality must be controlled.
+Selective outlets can protect quality when targeting families with young children.
 
-Here you must apply ideas from the marketing mix (4 Ps) to a concrete situation rather than recite a definition from memory. Ownership, customer type, stakeholder group, or country of production usually decides the verdict.
+Nothing in the wording contradicts that marketing test, so the claim is sound.
 
-Applied carefully, selective outlets can protect quality when targeting families with young children. Nothing in the sentence stretches the concept beyond its standard use.
+The statement is true.
+', 'TRUE — Within the marketing mix, product decisions — range, brand, life-cycle stage, and portfolio role — sit at the centre of how the firm meets target demand.
 
-The reasoning chain is complete, so mark the statement true.', 'TRUE — Evaluated against the textbook standard, this assertion is correct. Personal selling may be effective for families with young children when the product requires detailed explanation before purchase.
+Complex offers to families with young children can benefit from personal selling.
 
-Here you must apply ideas from the marketing mix (4 Ps) to a concrete situation rather than recite a definition from memory. Ownership, customer type, stakeholder group, or country of production usually decides the verdict.
+The sentence therefore reports the concept accurately for this case.
 
-Applied carefully, complex offers to families with young children can benefit from personal selling. Nothing in the sentence stretches the concept beyond its standard use.
+The statement is true.
+', 'TRUE — Product-mix decisions cover width (number of lines) and depth (variants in a line). Firms may relaunch with minor changes, extend a line, add a new line (mix extension), alter offerings, or eliminate weak ones.
 
-Every part of the claim aligns with the standard concept, so the statement stands.', 'TRUE — This statement is correct. A relaunch with updated packaging can refresh appeal among families with young children without launching an entirely new product line.
+On this stem (relaunch / product line): packaging relaunch can renew interest among families with young children within alteration strategy.
 
-The topic is the marketing mix (4 Ps), but the decisive skill here is reading quantifiers. Words such as never, always, only, or all turn a generally true idea into a claim that can be rejected by one routine counterexample.
+Nothing in the wording contradicts that marketing test, so the claim is sound.
 
-Applied carefully, packaging relaunch can renew interest among families with young children within alteration strategy. Nothing in the sentence stretches the concept beyond its standard use.
+The statement is true.
+', 'TRUE — Product-mix decisions cover width (number of lines) and depth (variants in a line). Firms may relaunch with minor changes, extend a line, add a new line (mix extension), alter offerings, or eliminate weak ones.
 
-The reasoning chain is complete, so mark the statement true.', 'TRUE — This statement is correct. Line extension with a budget variant can attract families with young children within an existing product line without widening the whole mix.
+On this stem (Line extension / product line): budget variants for families with young children deepen the line through line extension.
 
-The relevant theory comes from the marketing mix (4 Ps). Identify which definition or relationship the sentence is trying to test before deciding true or false.
+The sentence therefore reports the concept accurately for this case.
 
-Applied carefully, budget variants for families with young children deepen the line through line extension. Nothing in the sentence stretches the concept beyond its standard use.
+The statement is true.
+', 'TRUE — The marketing mix coordinates product, price, place, and promotion so the targeted customers get a suitable offer at an affordable price, in a convenient place, with a coherent promotional message.
 
-No qualifying word breaks the definition or scenario, so the answer is true.', 'TRUE — On the Fuhrmann definition used in the entrance exam, the sentence is correct. Market research on retirees can guide product features, price levels, distribution outlets, and promotional messages in the marketing mix.
+Research on retirees informs coordinated decisions across all four ps.
 
-This statement draws on the marketing mix (4 Ps). Treat it as a checklist against the core concept named in the stem, not as a general opinion about business.
+The sentence therefore reports the concept accurately for this case.
 
-In this setting, research on retirees informs coordinated decisions across all four ps. The wording matches the textbook relationship without adding extra conditions.
+The statement is true.
+'] WHERE case_id = 'CASE 5.7.77' AND tier = 'full';
+UPDATE public.economics_cases SET tactical_explanations = ARRAY['TRUE — The marketing mix coordinates product, price, place, and promotion so the targeted customers get a suitable offer at an affordable price, in a convenient place, with a coherent promotional message.
 
-The reasoning chain is complete, so mark the statement true.'] WHERE case_id = 'CASE 5.7.77' AND tier = 'full';
-UPDATE public.economics_cases SET tactical_explanations = ARRAY['TRUE — This statement is correct. Promotional messages aimed at retirees should remain consistent with the product features, price level, and distribution channels selected.
+Promotion must align with product, price, and place decisions for the retiree segment.
 
-The relevant theory comes from the marketing mix (4 Ps). Identify which definition or relationship the sentence is trying to test before deciding true or false.
+Nothing in the wording contradicts that marketing test, so the claim is sound.
 
-Applied carefully, promotion must align with product, price, and place decisions for the retiree segment. Nothing in the sentence stretches the concept beyond its standard use.
+The statement is true.
+', 'TRUE — The marketing mix coordinates product, price, place, and promotion so the targeted customers get a suitable offer at an affordable price, in a convenient place, with a coherent promotional message.
 
-No qualifying word breaks the definition or scenario, so the answer is true.', 'TRUE — Evaluated against the textbook standard, this assertion is correct. Affordable pricing for retirees supports the marketing-mix goal of offering value at a convenient place with clear communication.
+Affordable price for retirees fits the core marketing-mix objective.
 
-The relevant theory comes from the marketing mix (4 Ps). Identify which definition or relationship the sentence is trying to test before deciding true or false.
+The sentence therefore reports the concept accurately for this case.
 
-Applied carefully, affordable price for retirees fits the core marketing-mix objective. Nothing in the sentence stretches the concept beyond its standard use.
+The statement is true.
+', 'FALSE — Within the marketing mix, product decisions — range, brand, life-cycle stage, and portfolio role — sit at the centre of how the firm meets target demand.
 
-Every part of the claim aligns with the standard concept, so the statement stands.', 'FALSE — On the Fuhrmann definition used in the entrance exam, the sentence is false. Brochure advertising determines which factory machine produces each product unit.
+Brochure advertising functions as a promotional communication tool in the mix.
 
-This statement draws on the marketing mix (4 Ps). Treat it as a checklist against the core concept named in the stem, not as a general opinion about business.
+Once the defining feature is restored, the assertion falls away.
 
-Applied to this claim, brochure advertising functions as a promotional communication tool in the mix. That is why the sentence does not survive careful reading.
+The statement is false.
+', 'TRUE — A brand (name, words, symbol, or sign) distinguishes the offer, supports a USP and recognition, and can signal stable quality and safer choice for buyers.
 
-The statement sounds plausible but fails on precision, so it is false.', 'TRUE — The claim is correct. Brand trust is especially valuable for retirees who rely on familiar names when choosing among competing offers.
+Familiar brands provide reassurance valued by retirees.
 
-The scenario is a worked example of the marketing mix (4 Ps). Translate the story into the textbook category first; only then judge whether the sentence describes that category accurately.
+Nothing in the wording contradicts that marketing test, so the claim is sound.
 
-In this setting, familiar brands provide reassurance valued by retirees. The wording matches the textbook relationship without adding extra conditions.
+The statement is true.
+', 'TRUE — Within the marketing mix, product decisions — range, brand, life-cycle stage, and portfolio role — sit at the centre of how the firm meets target demand.
 
-No qualifying word breaks the definition or scenario, so the answer is true.', 'TRUE — Evaluated against the textbook standard, this assertion is correct. Selective distribution may suit premium offers targeted at retirees when service quality must be controlled.
+Selective outlets can protect quality when targeting retirees.
 
-Here you must apply ideas from the marketing mix (4 Ps) to a concrete situation rather than recite a definition from memory. Ownership, customer type, stakeholder group, or country of production usually decides the verdict.
+Under that definition the assertion is the right description of the situation.
 
-Applied carefully, selective outlets can protect quality when targeting retirees. Nothing in the sentence stretches the concept beyond its standard use.
+The statement is true.
+'] WHERE case_id = 'CASE 5.7.78' AND tier = 'full';
+UPDATE public.economics_cases SET tactical_explanations = ARRAY['FALSE — The marketing mix coordinates product, price, place, and promotion so the targeted customers get a suitable offer at an affordable price, in a convenient place, with a coherent promotional message.
 
-No qualifying word breaks the definition or scenario, so the answer is true.'] WHERE case_id = 'CASE 5.7.78' AND tier = 'full';
-UPDATE public.economics_cases SET tactical_explanations = ARRAY['FALSE — This statement is false. Window displays replace the need for any product or price decision in the marketing mix.
+Window displays functions as a promotional communication tool in the mix.
 
-The relevant theory comes from the marketing mix (4 Ps). Identify which definition or relationship the sentence is trying to test before deciding true or false.
+Swap in the textbook criterion and the sentence no longer describes the case.
 
-The statement overreaches because window displays functions as a promotional communication tool in the mix. The trap is to agree with the topic while missing the one detail that breaks the logic.
+The statement is false.
+', 'FALSE — The marketing mix coordinates product, price, place, and promotion so the targeted customers get a suitable offer at an affordable price, in a convenient place, with a coherent promotional message.
 
-The statement sounds plausible but fails on precision, so it is false.', 'FALSE — This statement is false. Sales force visits are classified as place tools because they transport goods to retailers.
+Sales force visits functions as a promotional communication tool in the mix.
 
-Start from the textbook definition in the marketing mix (4 Ps). A statement is true only if every scope word in the definition is respected—location, purpose, distribution rule, or time horizon.
+Once the defining feature is restored, the assertion falls away.
 
-The statement overreaches because sales force visits functions as a promotional communication tool in the mix. The trap is to agree with the topic while missing the one detail that breaks the logic.
+The statement is false.
+', 'TRUE — Within the marketing mix, product decisions — range, brand, life-cycle stage, and portfolio role — sit at the centre of how the firm meets target demand.
 
-Near-miss definitions are deliberately written to sound familiar. Compare the statement phrase by phrase with the book version instead of trusting the overall topic.
+Complex offers to retirees can benefit from personal selling.
 
-Once the overclaim or mislabel is exposed, the only consistent answer is false.', 'TRUE — This statement is correct. Personal selling may be effective for retirees when the product requires detailed explanation before purchase.
+Nothing in the wording contradicts that marketing test, so the claim is sound.
 
-Here you must apply ideas from the marketing mix (4 Ps) to a concrete situation rather than recite a definition from memory. Ownership, customer type, stakeholder group, or country of production usually decides the verdict.
+The statement is true.
+', 'FALSE — Within the marketing mix, product decisions — range, brand, life-cycle stage, and portfolio role — sit at the centre of how the firm meets target demand.
 
-Applied carefully, complex offers to retirees can benefit from personal selling. Nothing in the sentence stretches the concept beyond its standard use.
+Social-media campaigns functions as a promotional communication tool in the mix.
 
-No qualifying word breaks the definition or scenario, so the answer is true.', 'FALSE — The claim is false. Social-media campaigns are product-mix contraction because they remove old lines from sale.
+The mislabelled category or reversed comparison is enough to reject the claim.
 
-The scenario is a worked example of the marketing mix (4 Ps). Translate the story into the textbook category first; only then judge whether the sentence describes that category accurately.
+The statement is false.
+', 'FALSE — The marketing mix coordinates product, price, place, and promotion so the targeted customers get a suitable offer at an affordable price, in a convenient place, with a coherent promotional message.
 
-Applied to this claim, social-media campaigns functions as a promotional communication tool in the mix. That is why the sentence does not survive careful reading.
+Market research underpins decisions across all four ps, including for students.
 
-Once the overclaim or mislabel is exposed, the only consistent answer is false.', 'FALSE — The claim is false. Market research on students informs only promotion decisions and cannot influence product, price, or place choices.
+The absolute wording is what breaks the claim once the correct test is applied.
 
-Although the subject matter is the marketing mix (4 Ps), this is really a logic check on overstatement. Non-profit surpluses, mixed economies, and partial market failure are classic cases where absolute wording fails.
+The statement is false.
+'] WHERE case_id = 'CASE 5.7.79' AND tier = 'full';
+UPDATE public.economics_cases SET tactical_explanations = ARRAY['FALSE — A brand (name, words, symbol, or sign) distinguishes the offer, supports a USP and recognition, and can signal stable quality and safer choice for buyers.
 
-Applied to this claim, market research underpins decisions across all four ps, including for students. That is why the sentence does not survive careful reading.
+On this stem (brand / brands): brands support product differentiation and can reassure students, not only promotion.
 
-Watch the absolute wording "cannot": exam statements often sound plausible until a single scope word turns an otherwise familiar idea into an overclaim.
+The mislabelled category or reversed comparison is enough to reject the claim.
 
-Because the decisive detail is wrong, mark the statement false.'] WHERE case_id = 'CASE 5.7.79' AND tier = 'full';
-UPDATE public.economics_cases SET tactical_explanations = ARRAY['FALSE — Evaluated against the textbook standard, this assertion is false. A familiar brand offers no reassurance to students because brands belong exclusively to the promotion P.
+The statement is false.
+', 'FALSE — Within the marketing mix, product decisions — range, brand, life-cycle stage, and portfolio role — sit at the centre of how the firm meets target demand.
 
-The topic is the marketing mix (4 Ps), but the decisive skill here is reading quantifiers. Words such as never, always, only, or all turn a generally true idea into a claim that can be rejected by one routine counterexample.
+Introductory low pricing is a price decision, not product-mix contraction.
 
-The statement overreaches because brands support product differentiation and can reassure students, not only promotion. The trap is to agree with the topic while missing the one detail that breaks the logic.
+Once the defining feature is restored, the assertion falls away.
 
-Watch the absolute wording "exclusively": exam statements often sound plausible until a single scope word turns an otherwise familiar idea into an overclaim.
+The statement is false.
+', 'TRUE — Product-mix decisions cover width (number of lines) and depth (variants in a line). Firms may relaunch with minor changes, extend a line, add a new line (mix extension), alter offerings, or eliminate weak ones.
 
-Once the overclaim or mislabel is exposed, the only consistent answer is false.', 'FALSE — On the Fuhrmann definition used in the entrance exam, the sentence is false. Low introductory pricing aimed at students is classified as product-mix contraction because it reduces revenue per unit.
+On this stem (relaunch / product line): packaging relaunch can renew interest among retirees within alteration strategy.
 
-The question tests a precise definition from the section on the marketing mix (4 Ps). Entrance-exam statements often copy a definition almost correctly; one altered phrase is enough to make the whole sentence wrong.
+Under that definition the assertion is the right description of the situation.
 
-Applied to this claim, introductory low pricing is a price decision, not product-mix contraction. That is why the sentence does not survive careful reading.
+The statement is true.
+', 'FALSE — The marketing mix coordinates product, price, place, and promotion so the targeted customers get a suitable offer at an affordable price, in a convenient place, with a coherent promotional message.
 
-A common mistake is to recognise the topic word (GDP, NPO, SME, liability) and stop reading. The exam rewards checking every qualifier in the definition.
+Channel choice for students is a place decision about customer access.
 
-The statement sounds plausible but fails on precision, so it is false.', 'TRUE — On the Fuhrmann definition used in the entrance exam, the sentence is correct. A relaunch with updated packaging can refresh appeal among retirees without launching an entirely new product line.
+The absolute wording is what breaks the claim once the correct test is applied.
 
-Although the subject matter is the marketing mix (4 Ps), this is really a logic check on overstatement. Non-profit surpluses, mixed economies, and partial market failure are classic cases where absolute wording fails.
+The statement is false.
+', 'TRUE — Product-mix decisions cover width (number of lines) and depth (variants in a line). Firms may relaunch with minor changes, extend a line, add a new line (mix extension), alter offerings, or eliminate weak ones.
 
-In this setting, packaging relaunch can renew interest among retirees within alteration strategy. The wording matches the textbook relationship without adding extra conditions.
+On this stem (product mix): line extension adds variants within a line rather than widening the whole mix.
 
-No qualifying word breaks the definition or scenario, so the answer is true.', 'FALSE — Evaluated against the textbook standard, this assertion is false. Selling through channels preferred by students is a promotion activity because it communicates advertising slogans only.
+Nothing in the wording contradicts that marketing test, so the claim is sound.
 
-Here you must apply ideas from the marketing mix (4 Ps) to a concrete situation rather than recite a definition from memory. Ownership, customer type, stakeholder group, or country of production usually decides the verdict.
+The statement is true.
+'] WHERE case_id = 'CASE 5.7.80' AND tier = 'full';
+UPDATE public.economics_cases SET tactical_explanations = ARRAY['FALSE — The marketing mix coordinates product, price, place, and promotion so the targeted customers get a suitable offer at an affordable price, in a convenient place, with a coherent promotional message.
 
-The statement overreaches because channel choice for students is a place decision about customer access. The trap is to agree with the topic while missing the one detail that breaks the logic.
+Personal selling is promotional contact, not the sole determinant of list price.
 
-Because the decisive detail is wrong, mark the statement false.', 'TRUE — The claim is correct. Adding a budget variant within an existing line can attract retiree buyers without expanding the full product mix width.
+The mislabelled category or reversed comparison is enough to reject the claim.
 
-This statement draws on the marketing mix (4 Ps). Treat it as a checklist against the core concept named in the stem, not as a general opinion about business.
+The statement is false.
+', 'FALSE — Product-mix decisions cover width (number of lines) and depth (variants in a line). Firms may relaunch with minor changes, extend a line, add a new line (mix extension), alter offerings, or eliminate weak ones.
 
-In this setting, line extension adds variants within a line rather than widening the whole mix. The wording matches the textbook relationship without adding extra conditions.
+A product line contains similar products, even when targeting students.
 
-Every part of the claim aligns with the standard concept, so the statement stands.'] WHERE case_id = 'CASE 5.7.80' AND tier = 'full';
-UPDATE public.economics_cases SET tactical_explanations = ARRAY['FALSE — The claim is false. Personal selling to students is a price tool because sales staff set the permanent list price for all future years.
+The mislabelled category or reversed comparison is enough to reject the claim.
 
-Although the subject matter is the marketing mix (4 Ps), this is really a logic check on overstatement. Non-profit surpluses, mixed economies, and partial market failure are classic cases where absolute wording fails.
+The statement is false.
+', 'TRUE — The marketing mix coordinates product, price, place, and promotion so the targeted customers get a suitable offer at an affordable price, in a convenient place, with a coherent promotional message.
 
-Applied to this claim, personal selling is promotional contact, not the sole determinant of list price. That is why the sentence does not survive careful reading.
+Research on fitness enthusiasts informs coordinated decisions across all four ps.
 
-Watch the absolute wording "all": exam statements often sound plausible until a single scope word turns an otherwise familiar idea into an overclaim.
+The sentence therefore reports the concept accurately for this case.
 
-Once the overclaim or mislabel is exposed, the only consistent answer is false.', 'FALSE — This statement is false. A product line aimed at students must contain unrelated categories such as food and machinery to count as one line.
+The statement is true.
+', 'TRUE — The marketing mix coordinates product, price, place, and promotion so the targeted customers get a suitable offer at an affordable price, in a convenient place, with a coherent promotional message.
 
-The relevant theory comes from the marketing mix (4 Ps). Identify which definition or relationship the sentence is trying to test before deciding true or false.
+Segment-focused promotion must align with product, price, and place for fitness enthusiasts.
 
-The statement overreaches because a product line contains similar products, even when targeting students. The trap is to agree with the topic while missing the one detail that breaks the logic.
+Under that definition the assertion is the right description of the situation.
 
-The statement sounds plausible but fails on precision, so it is false.', 'TRUE — The claim is correct. Market research on fitness enthusiasts can guide product features, price levels, distribution outlets, and promotional messages in the marketing mix.
+The statement is true.
+', 'TRUE — The marketing mix coordinates product, price, place, and promotion so the targeted customers get a suitable offer at an affordable price, in a convenient place, with a coherent promotional message.
 
-This statement draws on the marketing mix (4 Ps). Treat it as a checklist against the core concept named in the stem, not as a general opinion about business.
+Affordable price for fitness enthusiasts fits the core marketing-mix objective.
 
-In this setting, research on fitness enthusiasts informs coordinated decisions across all four ps. The wording matches the textbook relationship without adding extra conditions.
+The sentence therefore reports the concept accurately for this case.
 
-No qualifying word breaks the definition or scenario, so the answer is true.', 'TRUE — This statement is correct. A promotional message tailored to fitness enthusiasts should align with the product and price offered through chosen place channels.
+The statement is true.
+'] WHERE case_id = 'CASE 5.7.81' AND tier = 'full';
+UPDATE public.economics_cases SET tactical_explanations = ARRAY['TRUE — A brand (name, words, symbol, or sign) distinguishes the offer, supports a USP and recognition, and can signal stable quality and safer choice for buyers.
 
-The relevant theory comes from the marketing mix (4 Ps). Identify which definition or relationship the sentence is trying to test before deciding true or false.
+Familiar brands provide reassurance valued by fitness enthusiasts.
 
-Applied carefully, segment-focused promotion must align with product, price, and place for fitness enthusiasts. Nothing in the sentence stretches the concept beyond its standard use.
+Nothing in the wording contradicts that marketing test, so the claim is sound.
 
-Every part of the claim aligns with the standard concept, so the statement stands.', 'TRUE — This statement is correct. Affordable pricing for fitness enthusiasts supports the marketing-mix goal of offering value at a convenient place with clear communication.
+The statement is true.
+', 'FALSE — The marketing mix coordinates product, price, place, and promotion so the targeted customers get a suitable offer at an affordable price, in a convenient place, with a coherent promotional message.
 
-The relevant theory comes from the marketing mix (4 Ps). Identify which definition or relationship the sentence is trying to test before deciding true or false.
+Market research underpins decisions across all four ps, including for retirees.
 
-Applied carefully, affordable price for fitness enthusiasts fits the core marketing-mix objective. Nothing in the sentence stretches the concept beyond its standard use.
+One clear counterexample under the right criterion is enough to reject the sentence.
 
-The reasoning chain is complete, so mark the statement true.'] WHERE case_id = 'CASE 5.7.81' AND tier = 'full';
-UPDATE public.economics_cases SET tactical_explanations = ARRAY['TRUE — Evaluated against the textbook standard, this assertion is correct. Brand trust is especially valuable for fitness enthusiasts who rely on familiar names when choosing among competing offers.
+The statement is false.
+', 'TRUE — Within the marketing mix, product decisions — range, brand, life-cycle stage, and portfolio role — sit at the centre of how the firm meets target demand.
 
-Here you must apply ideas from the marketing mix (4 Ps) to a concrete situation rather than recite a definition from memory. Ownership, customer type, stakeholder group, or country of production usually decides the verdict.
+Selective outlets can protect quality when targeting fitness enthusiasts.
 
-Applied carefully, familiar brands provide reassurance valued by fitness enthusiasts. Nothing in the sentence stretches the concept beyond its standard use.
+Under that definition the assertion is the right description of the situation.
 
-The reasoning chain is complete, so mark the statement true.', 'FALSE — Evaluated against the textbook standard, this assertion is false. Market research on retirees informs only promotion decisions and cannot influence product, price, or place choices.
+The statement is true.
+', 'FALSE — A brand (name, words, symbol, or sign) distinguishes the offer, supports a USP and recognition, and can signal stable quality and safer choice for buyers.
 
-The topic is the marketing mix (4 Ps), but the decisive skill here is reading quantifiers. Words such as never, always, only, or all turn a generally true idea into a claim that can be rejected by one routine counterexample.
+On this stem (brand / brands): brands support product differentiation and can reassure retirees, not only promotion.
 
-The statement overreaches because market research underpins decisions across all four ps, including for retirees. The trap is to agree with the topic while missing the one detail that breaks the logic.
+Once the defining feature is restored, the assertion falls away.
 
-Watch the absolute wording "cannot": exam statements often sound plausible until a single scope word turns an otherwise familiar idea into an overclaim.
+The statement is false.
+', 'FALSE — Within the marketing mix, product decisions — range, brand, life-cycle stage, and portfolio role — sit at the centre of how the firm meets target demand.
 
-The statement sounds plausible but fails on precision, so it is false.', 'TRUE — On the Fuhrmann definition used in the entrance exam, the sentence is correct. Selective distribution may suit premium offers targeted at fitness enthusiasts when service quality must be controlled.
+Introductory low pricing is a price decision, not product-mix contraction.
 
-The scenario is a worked example of the marketing mix (4 Ps). Translate the story into the textbook category first; only then judge whether the sentence describes that category accurately.
+Swap in the textbook criterion and the sentence no longer describes the case.
 
-In this setting, selective outlets can protect quality when targeting fitness enthusiasts. The wording matches the textbook relationship without adding extra conditions.
+The statement is false.
+'] WHERE case_id = 'CASE 5.7.82' AND tier = 'full';
+UPDATE public.economics_cases SET tactical_explanations = ARRAY['FALSE — The marketing mix coordinates product, price, place, and promotion so the targeted customers get a suitable offer at an affordable price, in a convenient place, with a coherent promotional message.
 
-The reasoning chain is complete, so mark the statement true.', 'FALSE — On the Fuhrmann definition used in the entrance exam, the sentence is false. A familiar brand offers no reassurance to retirees because brands belong exclusively to the promotion P.
+Channel choice for retirees is a place decision about customer access.
 
-Although the subject matter is the marketing mix (4 Ps), this is really a logic check on overstatement. Non-profit surpluses, mixed economies, and partial market failure are classic cases where absolute wording fails.
+One clear counterexample under the right criterion is enough to reject the sentence.
 
-Applied to this claim, brands support product differentiation and can reassure retirees, not only promotion. That is why the sentence does not survive careful reading.
+The statement is false.
+', 'TRUE — Within the marketing mix, product decisions — range, brand, life-cycle stage, and portfolio role — sit at the centre of how the firm meets target demand.
 
-Watch the absolute wording "exclusively": exam statements often sound plausible until a single scope word turns an otherwise familiar idea into an overclaim.
+Complex offers to fitness enthusiasts can benefit from personal selling.
 
-Because the decisive detail is wrong, mark the statement false.', 'FALSE — The claim is false. Low introductory pricing aimed at retirees is classified as product-mix contraction because it reduces revenue per unit.
+Nothing in the wording contradicts that marketing test, so the claim is sound.
 
-The question tests a precise definition from the section on the marketing mix (4 Ps). Entrance-exam statements often copy a definition almost correctly; one altered phrase is enough to make the whole sentence wrong.
+The statement is true.
+', 'FALSE — The marketing mix coordinates product, price, place, and promotion so the targeted customers get a suitable offer at an affordable price, in a convenient place, with a coherent promotional message.
 
-Applied to this claim, introductory low pricing is a price decision, not product-mix contraction. That is why the sentence does not survive careful reading.
+Personal selling is promotional contact, not the sole determinant of list price.
 
-A common mistake is to recognise the topic word (GDP, NPO, SME, liability) and stop reading. The exam rewards checking every qualifier in the definition.
+Once the defining feature is restored, the assertion falls away.
 
-The statement sounds plausible but fails on precision, so it is false.'] WHERE case_id = 'CASE 5.7.82' AND tier = 'full';
-UPDATE public.economics_cases SET tactical_explanations = ARRAY['FALSE — On the Fuhrmann definition used in the entrance exam, the sentence is false. Selling through channels preferred by retirees is a promotion activity because it communicates advertising slogans only.
+The statement is false.
+', 'FALSE — Product-mix decisions cover width (number of lines) and depth (variants in a line). Firms may relaunch with minor changes, extend a line, add a new line (mix extension), alter offerings, or eliminate weak ones.
 
-The scenario is a worked example of the marketing mix (4 Ps). Translate the story into the textbook category first; only then judge whether the sentence describes that category accurately.
+A product line contains similar products, even when targeting retirees.
 
-Applied to this claim, channel choice for retirees is a place decision about customer access. That is why the sentence does not survive careful reading.
+Once the defining feature is restored, the assertion falls away.
 
-The statement sounds plausible but fails on precision, so it is false.', 'TRUE — The claim is correct. Personal selling may be effective for fitness enthusiasts when the product requires detailed explanation before purchase.
+The statement is false.
+', 'FALSE — The marketing mix coordinates product, price, place, and promotion so the targeted customers get a suitable offer at an affordable price, in a convenient place, with a coherent promotional message.
 
-The scenario is a worked example of the marketing mix (4 Ps). Translate the story into the textbook category first; only then judge whether the sentence describes that category accurately.
+Market research underpins decisions across all four ps, including for premium buyers.
 
-In this setting, complex offers to fitness enthusiasts can benefit from personal selling. The wording matches the textbook relationship without adding extra conditions.
+Those restricting words stretch a limited idea past what marketing allows.
 
-The reasoning chain is complete, so mark the statement true.', 'FALSE — Evaluated against the textbook standard, this assertion is false. Personal selling to retirees is a price tool because sales staff set the permanent list price for all future years.
+The statement is false.
+'] WHERE case_id = 'CASE 5.7.83' AND tier = 'full';
+UPDATE public.economics_cases SET tactical_explanations = ARRAY['FALSE — A brand (name, words, symbol, or sign) distinguishes the offer, supports a USP and recognition, and can signal stable quality and safer choice for buyers.
 
-The topic is the marketing mix (4 Ps), but the decisive skill here is reading quantifiers. Words such as never, always, only, or all turn a generally true idea into a claim that can be rejected by one routine counterexample.
+On this stem (brand / brands): brands support product differentiation and can reassure premium buyers, not only promotion.
 
-The statement overreaches because personal selling is promotional contact, not the sole determinant of list price. The trap is to agree with the topic while missing the one detail that breaks the logic.
+Swap in the textbook criterion and the sentence no longer describes the case.
 
-Watch the absolute wording "all": exam statements often sound plausible until a single scope word turns an otherwise familiar idea into an overclaim.
+The statement is false.
+', 'TRUE — Product-mix decisions cover width (number of lines) and depth (variants in a line). Firms may relaunch with minor changes, extend a line, add a new line (mix extension), alter offerings, or eliminate weak ones.
 
-Because the decisive detail is wrong, mark the statement false.', 'FALSE — The claim is false. A product line aimed at retirees must contain unrelated categories such as food and machinery to count as one line.
+On this stem (relaunch / product line): packaging relaunch can renew interest among fitness enthusiasts within alteration strategy.
 
-This statement draws on the marketing mix (4 Ps). Treat it as a checklist against the core concept named in the stem, not as a general opinion about business.
+Under that definition the assertion is the right description of the situation.
 
-Applied to this claim, a product line contains similar products, even when targeting retirees. That is why the sentence does not survive careful reading.
+The statement is true.
+', 'FALSE — Within the marketing mix, product decisions — range, brand, life-cycle stage, and portfolio role — sit at the centre of how the firm meets target demand.
 
-Once the overclaim or mislabel is exposed, the only consistent answer is false.', 'FALSE — Evaluated against the textbook standard, this assertion is false. Market research on premium buyers informs only promotion decisions and cannot influence product, price, or place choices.
+Introductory low pricing is a price decision, not product-mix contraction.
 
-The topic is the marketing mix (4 Ps), but the decisive skill here is reading quantifiers. Words such as never, always, only, or all turn a generally true idea into a claim that can be rejected by one routine counterexample.
+The mislabelled category or reversed comparison is enough to reject the claim.
 
-The statement overreaches because market research underpins decisions across all four ps, including for premium buyers. The trap is to agree with the topic while missing the one detail that breaks the logic.
+The statement is false.
+', 'FALSE — The marketing mix coordinates product, price, place, and promotion so the targeted customers get a suitable offer at an affordable price, in a convenient place, with a coherent promotional message.
 
-Watch the absolute wording "cannot": exam statements often sound plausible until a single scope word turns an otherwise familiar idea into an overclaim.
+Channel choice for premium buyers is a place decision about customer access.
 
-Once the overclaim or mislabel is exposed, the only consistent answer is false.'] WHERE case_id = 'CASE 5.7.83' AND tier = 'full';
-UPDATE public.economics_cases SET tactical_explanations = ARRAY['FALSE — This statement is false. A familiar brand offers no reassurance to premium buyers because brands belong exclusively to the promotion P.
+Those restricting words stretch a limited idea past what marketing allows.
 
-The topic is the marketing mix (4 Ps), but the decisive skill here is reading quantifiers. Words such as never, always, only, or all turn a generally true idea into a claim that can be rejected by one routine counterexample.
+The statement is false.
+', 'FALSE — The marketing mix coordinates product, price, place, and promotion so the targeted customers get a suitable offer at an affordable price, in a convenient place, with a coherent promotional message.
 
-The statement overreaches because brands support product differentiation and can reassure premium buyers, not only promotion. The trap is to agree with the topic while missing the one detail that breaks the logic.
+Personal selling is promotional contact, not the sole determinant of list price.
 
-Watch the absolute wording "exclusively": exam statements often sound plausible until a single scope word turns an otherwise familiar idea into an overclaim.
+Swap in the textbook criterion and the sentence no longer describes the case.
 
-The statement sounds plausible but fails on precision, so it is false.', 'TRUE — The claim is correct. A relaunch with updated packaging can refresh appeal among fitness enthusiasts without launching an entirely new product line.
+The statement is false.
+'] WHERE case_id = 'CASE 5.7.84' AND tier = 'full';
+UPDATE public.economics_cases SET tactical_explanations = ARRAY['FALSE — Product-mix decisions cover width (number of lines) and depth (variants in a line). Firms may relaunch with minor changes, extend a line, add a new line (mix extension), alter offerings, or eliminate weak ones.
 
-Although the subject matter is the marketing mix (4 Ps), this is really a logic check on overstatement. Non-profit surpluses, mixed economies, and partial market failure are classic cases where absolute wording fails.
+A product line contains similar products, even when targeting premium buyers.
 
-In this setting, packaging relaunch can renew interest among fitness enthusiasts within alteration strategy. The wording matches the textbook relationship without adding extra conditions.
+Swap in the textbook criterion and the sentence no longer describes the case.
 
-The reasoning chain is complete, so mark the statement true.', 'FALSE — Evaluated against the textbook standard, this assertion is false. Low introductory pricing aimed at premium buyers is classified as product-mix contraction because it reduces revenue per unit.
+The statement is false.
+', 'FALSE — The marketing mix coordinates product, price, place, and promotion so the targeted customers get a suitable offer at an affordable price, in a convenient place, with a coherent promotional message.
 
-Start from the textbook definition in the marketing mix (4 Ps). A statement is true only if every scope word in the definition is respected—location, purpose, distribution rule, or time horizon.
+Market research underpins decisions across all four ps, including for budget shoppers.
 
-The statement overreaches because introductory low pricing is a price decision, not product-mix contraction. The trap is to agree with the topic while missing the one detail that breaks the logic.
+One clear counterexample under the right criterion is enough to reject the sentence.
 
-Near-miss definitions are deliberately written to sound familiar. Compare the statement phrase by phrase with the book version instead of trusting the overall topic.
+The statement is false.
+', 'TRUE — Product-mix decisions cover width (number of lines) and depth (variants in a line). Firms may relaunch with minor changes, extend a line, add a new line (mix extension), alter offerings, or eliminate weak ones.
 
-Once the overclaim or mislabel is exposed, the only consistent answer is false.', 'FALSE — The claim is false. Selling through channels preferred by premium buyers is a promotion activity because it communicates advertising slogans only.
+On this stem (Line extension / product line): budget variants for fitness enthusiasts deepen the line through line extension.
 
-The scenario is a worked example of the marketing mix (4 Ps). Translate the story into the textbook category first; only then judge whether the sentence describes that category accurately.
+Nothing in the wording contradicts that marketing test, so the claim is sound.
 
-Applied to this claim, channel choice for premium buyers is a place decision about customer access. That is why the sentence does not survive careful reading.
+The statement is true.
+', 'TRUE — The marketing mix coordinates product, price, place, and promotion so the targeted customers get a suitable offer at an affordable price, in a convenient place, with a coherent promotional message.
 
-Because the decisive detail is wrong, mark the statement false.', 'FALSE — Evaluated against the textbook standard, this assertion is false. Personal selling to premium buyers is a price tool because sales staff set the permanent list price for all future years.
+Research on home-office workers informs coordinated decisions across all four ps.
 
-The topic is the marketing mix (4 Ps), but the decisive skill here is reading quantifiers. Words such as never, always, only, or all turn a generally true idea into a claim that can be rejected by one routine counterexample.
+Under that definition the assertion is the right description of the situation.
 
-The statement overreaches because personal selling is promotional contact, not the sole determinant of list price. The trap is to agree with the topic while missing the one detail that breaks the logic.
+The statement is true.
+', 'FALSE — A brand (name, words, symbol, or sign) distinguishes the offer, supports a USP and recognition, and can signal stable quality and safer choice for buyers.
 
-Watch the absolute wording "all": exam statements often sound plausible until a single scope word turns an otherwise familiar idea into an overclaim.
+On this stem (brand / brands): brands support product differentiation and can reassure budget shoppers, not only promotion.
 
-Because the decisive detail is wrong, mark the statement false.'] WHERE case_id = 'CASE 5.7.84' AND tier = 'full';
-UPDATE public.economics_cases SET tactical_explanations = ARRAY['FALSE — On the Fuhrmann definition used in the entrance exam, the sentence is false. A product line aimed at premium buyers must contain unrelated categories such as food and machinery to count as one line.
+Once the defining feature is restored, the assertion falls away.
 
-This statement draws on the marketing mix (4 Ps). Treat it as a checklist against the core concept named in the stem, not as a general opinion about business.
+The statement is false.
+'] WHERE case_id = 'CASE 5.7.85' AND tier = 'full';
+UPDATE public.economics_cases SET tactical_explanations = ARRAY['TRUE — The marketing mix coordinates product, price, place, and promotion so the targeted customers get a suitable offer at an affordable price, in a convenient place, with a coherent promotional message.
 
-Applied to this claim, a product line contains similar products, even when targeting premium buyers. That is why the sentence does not survive careful reading.
+Segment-focused promotion must align with product, price, and place for home-office workers.
 
-The statement sounds plausible but fails on precision, so it is false.', 'FALSE — The claim is false. Market research on budget shoppers informs only promotion decisions and cannot influence product, price, or place choices.
+Nothing in the wording contradicts that marketing test, so the claim is sound.
 
-Although the subject matter is the marketing mix (4 Ps), this is really a logic check on overstatement. Non-profit surpluses, mixed economies, and partial market failure are classic cases where absolute wording fails.
+The statement is true.
+', 'TRUE — The marketing mix coordinates product, price, place, and promotion so the targeted customers get a suitable offer at an affordable price, in a convenient place, with a coherent promotional message.
 
-Applied to this claim, market research underpins decisions across all four ps, including for budget shoppers. That is why the sentence does not survive careful reading.
+Affordable price for home-office workers fits the core marketing-mix objective.
 
-Watch the absolute wording "cannot": exam statements often sound plausible until a single scope word turns an otherwise familiar idea into an overclaim.
+Under that definition the assertion is the right description of the situation.
 
-Once the overclaim or mislabel is exposed, the only consistent answer is false.', 'TRUE — The claim is correct. Line extension with a budget variant can attract fitness enthusiasts within an existing product line without widening the whole mix.
+The statement is true.
+', 'TRUE — A brand (name, words, symbol, or sign) distinguishes the offer, supports a USP and recognition, and can signal stable quality and safer choice for buyers.
 
-This statement draws on the marketing mix (4 Ps). Treat it as a checklist against the core concept named in the stem, not as a general opinion about business.
+Familiar brands provide reassurance valued by home-office workers.
 
-In this setting, budget variants for fitness enthusiasts deepen the line through line extension. The wording matches the textbook relationship without adding extra conditions.
+The sentence therefore reports the concept accurately for this case.
 
-The reasoning chain is complete, so mark the statement true.', 'TRUE — Evaluated against the textbook standard, this assertion is correct. Market research on home-office workers can guide product features, price levels, distribution outlets, and promotional messages in the marketing mix.
+The statement is true.
+', 'TRUE — Within the marketing mix, product decisions — range, brand, life-cycle stage, and portfolio role — sit at the centre of how the firm meets target demand.
 
-The relevant theory comes from the marketing mix (4 Ps). Identify which definition or relationship the sentence is trying to test before deciding true or false.
+Selective outlets can protect quality when targeting home-office workers.
 
-Applied carefully, research on home-office workers informs coordinated decisions across all four ps. Nothing in the sentence stretches the concept beyond its standard use.
+Nothing in the wording contradicts that marketing test, so the claim is sound.
 
-No qualifying word breaks the definition or scenario, so the answer is true.', 'FALSE — Evaluated against the textbook standard, this assertion is false. A familiar brand offers no reassurance to budget shoppers because brands belong exclusively to the promotion P.
+The statement is true.
+', 'TRUE — Within the marketing mix, product decisions — range, brand, life-cycle stage, and portfolio role — sit at the centre of how the firm meets target demand.
 
-The topic is the marketing mix (4 Ps), but the decisive skill here is reading quantifiers. Words such as never, always, only, or all turn a generally true idea into a claim that can be rejected by one routine counterexample.
+Complex offers to home-office workers can benefit from personal selling.
 
-The statement overreaches because brands support product differentiation and can reassure budget shoppers, not only promotion. The trap is to agree with the topic while missing the one detail that breaks the logic.
+The sentence therefore reports the concept accurately for this case.
 
-Watch the absolute wording "exclusively": exam statements often sound plausible until a single scope word turns an otherwise familiar idea into an overclaim.
+The statement is true.
+'] WHERE case_id = 'CASE 5.7.86' AND tier = 'full';
+UPDATE public.economics_cases SET tactical_explanations = ARRAY['TRUE — Product-mix decisions cover width (number of lines) and depth (variants in a line). Firms may relaunch with minor changes, extend a line, add a new line (mix extension), alter offerings, or eliminate weak ones.
 
-Because the decisive detail is wrong, mark the statement false.'] WHERE case_id = 'CASE 5.7.85' AND tier = 'full';
-UPDATE public.economics_cases SET tactical_explanations = ARRAY['TRUE — On the Fuhrmann definition used in the entrance exam, the sentence is correct. A promotional message tailored to home-office workers should align with the product and price offered through chosen place channels.
+On this stem (relaunch / product line): packaging relaunch can renew interest among home-office workers within alteration strategy.
 
-This statement draws on the marketing mix (4 Ps). Treat it as a checklist against the core concept named in the stem, not as a general opinion about business.
+Nothing in the wording contradicts that marketing test, so the claim is sound.
 
-In this setting, segment-focused promotion must align with product, price, and place for home-office workers. The wording matches the textbook relationship without adding extra conditions.
+The statement is true.
+', 'TRUE — Product-mix decisions cover width (number of lines) and depth (variants in a line). Firms may relaunch with minor changes, extend a line, add a new line (mix extension), alter offerings, or eliminate weak ones.
 
-The reasoning chain is complete, so mark the statement true.', 'TRUE — On the Fuhrmann definition used in the entrance exam, the sentence is correct. Affordable pricing for home-office workers supports the marketing-mix goal of offering value at a convenient place with clear communication.
+On this stem (Line extension / product line): budget variants for home-office workers deepen the line through line extension.
 
-This statement draws on the marketing mix (4 Ps). Treat it as a checklist against the core concept named in the stem, not as a general opinion about business.
+The sentence therefore reports the concept accurately for this case.
 
-In this setting, affordable price for home-office workers fits the core marketing-mix objective. The wording matches the textbook relationship without adding extra conditions.
+The statement is true.
+', 'TRUE — The marketing mix coordinates product, price, place, and promotion so the targeted customers get a suitable offer at an affordable price, in a convenient place, with a coherent promotional message.
 
-No qualifying word breaks the definition or scenario, so the answer is true.', 'TRUE — The claim is correct. Brand trust is especially valuable for home-office workers who rely on familiar names when choosing among competing offers.
+Research on budget-conscious shoppers informs coordinated decisions across all four ps.
 
-The scenario is a worked example of the marketing mix (4 Ps). Translate the story into the textbook category first; only then judge whether the sentence describes that category accurately.
+Under that definition the assertion is the right description of the situation.
 
-In this setting, familiar brands provide reassurance valued by home-office workers. The wording matches the textbook relationship without adding extra conditions.
+The statement is true.
+', 'TRUE — The marketing mix coordinates product, price, place, and promotion so the targeted customers get a suitable offer at an affordable price, in a convenient place, with a coherent promotional message.
 
-The reasoning chain is complete, so mark the statement true.', 'TRUE — This statement is correct. Selective distribution may suit premium offers targeted at home-office workers when service quality must be controlled.
+Segment-focused promotion must align with product, price, and place for budget-conscious shoppers.
 
-Here you must apply ideas from the marketing mix (4 Ps) to a concrete situation rather than recite a definition from memory. Ownership, customer type, stakeholder group, or country of production usually decides the verdict.
+Nothing in the wording contradicts that marketing test, so the claim is sound.
 
-Applied carefully, selective outlets can protect quality when targeting home-office workers. Nothing in the sentence stretches the concept beyond its standard use.
+The statement is true.
+', 'TRUE — The marketing mix coordinates product, price, place, and promotion so the targeted customers get a suitable offer at an affordable price, in a convenient place, with a coherent promotional message.
 
-No qualifying word breaks the definition or scenario, so the answer is true.', 'TRUE — On the Fuhrmann definition used in the entrance exam, the sentence is correct. Personal selling may be effective for home-office workers when the product requires detailed explanation before purchase.
+Affordable price for budget-conscious shoppers fits the core marketing-mix objective.
 
-The scenario is a worked example of the marketing mix (4 Ps). Translate the story into the textbook category first; only then judge whether the sentence describes that category accurately.
+Under that definition the assertion is the right description of the situation.
 
-In this setting, complex offers to home-office workers can benefit from personal selling. The wording matches the textbook relationship without adding extra conditions.
+The statement is true.
+'] WHERE case_id = 'CASE 5.7.87' AND tier = 'full';
+UPDATE public.economics_cases SET tactical_explanations = ARRAY['FALSE — Within the marketing mix, product decisions — range, brand, life-cycle stage, and portfolio role — sit at the centre of how the firm meets target demand.
 
-No qualifying word breaks the definition or scenario, so the answer is true.'] WHERE case_id = 'CASE 5.7.86' AND tier = 'full';
-UPDATE public.economics_cases SET tactical_explanations = ARRAY['TRUE — This statement is correct. A relaunch with updated packaging can refresh appeal among home-office workers without launching an entirely new product line.
+Introductory low pricing is a price decision, not product-mix contraction.
 
-The topic is the marketing mix (4 Ps), but the decisive skill here is reading quantifiers. Words such as never, always, only, or all turn a generally true idea into a claim that can be rejected by one routine counterexample.
+Swap in the textbook criterion and the sentence no longer describes the case.
 
-Applied carefully, packaging relaunch can renew interest among home-office workers within alteration strategy. Nothing in the sentence stretches the concept beyond its standard use.
+The statement is false.
+', 'TRUE — A brand (name, words, symbol, or sign) distinguishes the offer, supports a USP and recognition, and can signal stable quality and safer choice for buyers.
 
-No qualifying word breaks the definition or scenario, so the answer is true.', 'TRUE — The claim is correct. Line extension with a budget variant can attract home-office workers within an existing product line without widening the whole mix.
+Familiar brands provide reassurance valued by budget-conscious shoppers.
 
-This statement draws on the marketing mix (4 Ps). Treat it as a checklist against the core concept named in the stem, not as a general opinion about business.
+The sentence therefore reports the concept accurately for this case.
 
-In this setting, budget variants for home-office workers deepen the line through line extension. The wording matches the textbook relationship without adding extra conditions.
+The statement is true.
+', 'TRUE — Within the marketing mix, product decisions — range, brand, life-cycle stage, and portfolio role — sit at the centre of how the firm meets target demand.
 
-Every part of the claim aligns with the standard concept, so the statement stands.', 'TRUE — The claim is correct. Market research on budget-conscious shoppers can guide product features, price levels, distribution outlets, and promotional messages in the marketing mix.
+Selective outlets can protect quality when targeting budget-conscious shoppers.
 
-This statement draws on the marketing mix (4 Ps). Treat it as a checklist against the core concept named in the stem, not as a general opinion about business.
+Nothing in the wording contradicts that marketing test, so the claim is sound.
 
-In this setting, research on budget-conscious shoppers informs coordinated decisions across all four ps. The wording matches the textbook relationship without adding extra conditions.
+The statement is true.
+', 'TRUE — Within the marketing mix, product decisions — range, brand, life-cycle stage, and portfolio role — sit at the centre of how the firm meets target demand.
 
-No qualifying word breaks the definition or scenario, so the answer is true.', 'TRUE — The claim is correct. A promotional message tailored to budget-conscious shoppers should align with the product and price offered through chosen place channels.
+Complex offers to budget-conscious shoppers can benefit from personal selling.
 
-This statement draws on the marketing mix (4 Ps). Treat it as a checklist against the core concept named in the stem, not as a general opinion about business.
+The sentence therefore reports the concept accurately for this case.
 
-In this setting, segment-focused promotion must align with product, price, and place for budget-conscious shoppers. The wording matches the textbook relationship without adding extra conditions.
+The statement is true.
+', 'FALSE — The marketing mix coordinates product, price, place, and promotion so the targeted customers get a suitable offer at an affordable price, in a convenient place, with a coherent promotional message.
 
-Every part of the claim aligns with the standard concept, so the statement stands.', 'TRUE — This statement is correct. Affordable pricing for budget-conscious shoppers supports the marketing-mix goal of offering value at a convenient place with clear communication.
+Channel choice for budget shoppers is a place decision about customer access.
 
-The relevant theory comes from the marketing mix (4 Ps). Identify which definition or relationship the sentence is trying to test before deciding true or false.
+One clear counterexample under the right criterion is enough to reject the sentence.
 
-Applied carefully, affordable price for budget-conscious shoppers fits the core marketing-mix objective. Nothing in the sentence stretches the concept beyond its standard use.
+The statement is false.
+'] WHERE case_id = 'CASE 5.7.88' AND tier = 'full';
+UPDATE public.economics_cases SET tactical_explanations = ARRAY['TRUE — Product-mix decisions cover width (number of lines) and depth (variants in a line). Firms may relaunch with minor changes, extend a line, add a new line (mix extension), alter offerings, or eliminate weak ones.
 
-No qualifying word breaks the definition or scenario, so the answer is true.'] WHERE case_id = 'CASE 5.7.87' AND tier = 'full';
-UPDATE public.economics_cases SET tactical_explanations = ARRAY['FALSE — This statement is false. Low introductory pricing aimed at budget shoppers is classified as product-mix contraction because it reduces revenue per unit.
+On this stem (relaunch / product line): packaging relaunch can renew interest among budget-conscious shoppers within alteration strategy.
 
-Start from the textbook definition in the marketing mix (4 Ps). A statement is true only if every scope word in the definition is respected—location, purpose, distribution rule, or time horizon.
+Nothing in the wording contradicts that marketing test, so the claim is sound.
 
-The statement overreaches because introductory low pricing is a price decision, not product-mix contraction. The trap is to agree with the topic while missing the one detail that breaks the logic.
+The statement is true.
+', 'TRUE — Product-mix decisions cover width (number of lines) and depth (variants in a line). Firms may relaunch with minor changes, extend a line, add a new line (mix extension), alter offerings, or eliminate weak ones.
 
-Near-miss definitions are deliberately written to sound familiar. Compare the statement phrase by phrase with the book version instead of trusting the overall topic.
+On this stem (Line extension / product line): budget variants for budget-conscious shoppers deepen the line through line extension.
 
-Once the overclaim or mislabel is exposed, the only consistent answer is false.', 'TRUE — Evaluated against the textbook standard, this assertion is correct. Brand trust is especially valuable for budget-conscious shoppers who rely on familiar names when choosing among competing offers.
+The sentence therefore reports the concept accurately for this case.
 
-Here you must apply ideas from the marketing mix (4 Ps) to a concrete situation rather than recite a definition from memory. Ownership, customer type, stakeholder group, or country of production usually decides the verdict.
+The statement is true.
+', 'TRUE — The marketing mix coordinates product, price, place, and promotion so the targeted customers get a suitable offer at an affordable price, in a convenient place, with a coherent promotional message.
 
-Applied carefully, familiar brands provide reassurance valued by budget-conscious shoppers. Nothing in the sentence stretches the concept beyond its standard use.
+Research on premium buyers informs coordinated decisions across all four ps.
 
-The reasoning chain is complete, so mark the statement true.', 'TRUE — The claim is correct. Selective distribution may suit premium offers targeted at budget-conscious shoppers when service quality must be controlled.
+Under that definition the assertion is the right description of the situation.
 
-The scenario is a worked example of the marketing mix (4 Ps). Translate the story into the textbook category first; only then judge whether the sentence describes that category accurately.
+The statement is true.
+', 'TRUE — The marketing mix coordinates product, price, place, and promotion so the targeted customers get a suitable offer at an affordable price, in a convenient place, with a coherent promotional message.
 
-In this setting, selective outlets can protect quality when targeting budget-conscious shoppers. The wording matches the textbook relationship without adding extra conditions.
+Segment-focused promotion must align with product, price, and place for premium buyers.
 
-Every part of the claim aligns with the standard concept, so the statement stands.', 'TRUE — This statement is correct. Personal selling may be effective for budget-conscious shoppers when the product requires detailed explanation before purchase.
+Nothing in the wording contradicts that marketing test, so the claim is sound.
 
-Here you must apply ideas from the marketing mix (4 Ps) to a concrete situation rather than recite a definition from memory. Ownership, customer type, stakeholder group, or country of production usually decides the verdict.
+The statement is true.
+', 'TRUE — The marketing mix coordinates product, price, place, and promotion so the targeted customers get a suitable offer at an affordable price, in a convenient place, with a coherent promotional message.
 
-Applied carefully, complex offers to budget-conscious shoppers can benefit from personal selling. Nothing in the sentence stretches the concept beyond its standard use.
+Affordable price for premium buyers fits the core marketing-mix objective.
 
-The reasoning chain is complete, so mark the statement true.', 'FALSE — On the Fuhrmann definition used in the entrance exam, the sentence is false. Selling through channels preferred by budget shoppers is a promotion activity because it communicates advertising slogans only.
+Under that definition the assertion is the right description of the situation.
 
-The scenario is a worked example of the marketing mix (4 Ps). Translate the story into the textbook category first; only then judge whether the sentence describes that category accurately.
+The statement is true.
+'] WHERE case_id = 'CASE 5.7.89' AND tier = 'full';
+UPDATE public.economics_cases SET tactical_explanations = ARRAY['FALSE — The marketing mix coordinates product, price, place, and promotion so the targeted customers get a suitable offer at an affordable price, in a convenient place, with a coherent promotional message.
 
-Applied to this claim, channel choice for budget shoppers is a place decision about customer access. That is why the sentence does not survive careful reading.
+Personal selling is promotional contact, not the sole determinant of list price.
 
-The statement sounds plausible but fails on precision, so it is false.'] WHERE case_id = 'CASE 5.7.88' AND tier = 'full';
-UPDATE public.economics_cases SET tactical_explanations = ARRAY['TRUE — This statement is correct. A relaunch with updated packaging can refresh appeal among budget-conscious shoppers without launching an entirely new product line.
+Once the defining feature is restored, the assertion falls away.
 
-The topic is the marketing mix (4 Ps), but the decisive skill here is reading quantifiers. Words such as never, always, only, or all turn a generally true idea into a claim that can be rejected by one routine counterexample.
+The statement is false.
+', 'TRUE — A brand (name, words, symbol, or sign) distinguishes the offer, supports a USP and recognition, and can signal stable quality and safer choice for buyers.
 
-Applied carefully, packaging relaunch can renew interest among budget-conscious shoppers within alteration strategy. Nothing in the sentence stretches the concept beyond its standard use.
+Familiar brands provide reassurance valued by premium buyers.
 
-No qualifying word breaks the definition or scenario, so the answer is true.', 'TRUE — This statement is correct. Line extension with a budget variant can attract budget-conscious shoppers within an existing product line without widening the whole mix.
+The sentence therefore reports the concept accurately for this case.
 
-The relevant theory comes from the marketing mix (4 Ps). Identify which definition or relationship the sentence is trying to test before deciding true or false.
+The statement is true.
+', 'TRUE — Within the marketing mix, product decisions — range, brand, life-cycle stage, and portfolio role — sit at the centre of how the firm meets target demand.
 
-Applied carefully, budget variants for budget-conscious shoppers deepen the line through line extension. Nothing in the sentence stretches the concept beyond its standard use.
+Selective outlets can protect quality when targeting premium buyers.
 
-The reasoning chain is complete, so mark the statement true.', 'TRUE — This statement is correct. Market research on premium buyers can guide product features, price levels, distribution outlets, and promotional messages in the marketing mix.
+Nothing in the wording contradicts that marketing test, so the claim is sound.
 
-The relevant theory comes from the marketing mix (4 Ps). Identify which definition or relationship the sentence is trying to test before deciding true or false.
+The statement is true.
+', 'TRUE — Within the marketing mix, product decisions — range, brand, life-cycle stage, and portfolio role — sit at the centre of how the firm meets target demand.
 
-Applied carefully, research on premium buyers informs coordinated decisions across all four ps. Nothing in the sentence stretches the concept beyond its standard use.
+Complex offers to premium buyers can benefit from personal selling.
 
-No qualifying word breaks the definition or scenario, so the answer is true.', 'TRUE — Evaluated against the textbook standard, this assertion is correct. A promotional message tailored to premium buyers should align with the product and price offered through chosen place channels.
+The sentence therefore reports the concept accurately for this case.
 
-The relevant theory comes from the marketing mix (4 Ps). Identify which definition or relationship the sentence is trying to test before deciding true or false.
+The statement is true.
+', 'TRUE — Product-mix decisions cover width (number of lines) and depth (variants in a line). Firms may relaunch with minor changes, extend a line, add a new line (mix extension), alter offerings, or eliminate weak ones.
 
-Applied carefully, segment-focused promotion must align with product, price, and place for premium buyers. Nothing in the sentence stretches the concept beyond its standard use.
+On this stem (relaunch / product line): packaging relaunch can renew interest among premium buyers within alteration strategy.
 
-Every part of the claim aligns with the standard concept, so the statement stands.', 'TRUE — Evaluated against the textbook standard, this assertion is correct. Affordable pricing for premium buyers supports the marketing-mix goal of offering value at a convenient place with clear communication.
+Nothing in the wording contradicts that marketing test, so the claim is sound.
 
-The relevant theory comes from the marketing mix (4 Ps). Identify which definition or relationship the sentence is trying to test before deciding true or false.
+The statement is true.
+'] WHERE case_id = 'CASE 5.7.90' AND tier = 'full';
+UPDATE public.economics_cases SET tactical_explanations = ARRAY['TRUE — Product-mix decisions cover width (number of lines) and depth (variants in a line). Firms may relaunch with minor changes, extend a line, add a new line (mix extension), alter offerings, or eliminate weak ones.
 
-Applied carefully, affordable price for premium buyers fits the core marketing-mix objective. Nothing in the sentence stretches the concept beyond its standard use.
+On this stem (Line extension / product line): budget variants for premium buyers deepen the line through line extension.
 
-Every part of the claim aligns with the standard concept, so the statement stands.'] WHERE case_id = 'CASE 5.7.89' AND tier = 'full';
-UPDATE public.economics_cases SET tactical_explanations = ARRAY['FALSE — On the Fuhrmann definition used in the entrance exam, the sentence is false. Personal selling to budget shoppers is a price tool because sales staff set the permanent list price for all future years.
+The sentence therefore reports the concept accurately for this case.
 
-Although the subject matter is the marketing mix (4 Ps), this is really a logic check on overstatement. Non-profit surpluses, mixed economies, and partial market failure are classic cases where absolute wording fails.
+The statement is true.
+', 'TRUE — The marketing mix coordinates product, price, place, and promotion so the targeted customers get a suitable offer at an affordable price, in a convenient place, with a coherent promotional message.
 
-Applied to this claim, personal selling is promotional contact, not the sole determinant of list price. That is why the sentence does not survive careful reading.
+Research on rural households informs coordinated decisions across all four ps.
 
-Watch the absolute wording "all": exam statements often sound plausible until a single scope word turns an otherwise familiar idea into an overclaim.
+The sentence therefore reports the concept accurately for this case.
 
-The statement sounds plausible but fails on precision, so it is false.', 'TRUE — On the Fuhrmann definition used in the entrance exam, the sentence is correct. Brand trust is especially valuable for premium buyers who rely on familiar names when choosing among competing offers.
+The statement is true.
+', 'FALSE — Product-mix decisions cover width (number of lines) and depth (variants in a line). Firms may relaunch with minor changes, extend a line, add a new line (mix extension), alter offerings, or eliminate weak ones.
 
-The scenario is a worked example of the marketing mix (4 Ps). Translate the story into the textbook category first; only then judge whether the sentence describes that category accurately.
+A product line contains similar products, even when targeting budget shoppers.
 
-In this setting, familiar brands provide reassurance valued by premium buyers. The wording matches the textbook relationship without adding extra conditions.
+Once the defining feature is restored, the assertion falls away.
 
-Every part of the claim aligns with the standard concept, so the statement stands.', 'TRUE — Evaluated against the textbook standard, this assertion is correct. Selective distribution may suit premium offers targeted at premium buyers when service quality must be controlled.
+The statement is false.
+', 'TRUE — The marketing mix coordinates product, price, place, and promotion so the targeted customers get a suitable offer at an affordable price, in a convenient place, with a coherent promotional message.
 
-Here you must apply ideas from the marketing mix (4 Ps) to a concrete situation rather than recite a definition from memory. Ownership, customer type, stakeholder group, or country of production usually decides the verdict.
+Segment-focused promotion must align with product, price, and place for rural households.
 
-Applied carefully, selective outlets can protect quality when targeting premium buyers. Nothing in the sentence stretches the concept beyond its standard use.
+Under that definition the assertion is the right description of the situation.
 
-The reasoning chain is complete, so mark the statement true.', 'TRUE — On the Fuhrmann definition used in the entrance exam, the sentence is correct. Personal selling may be effective for premium buyers when the product requires detailed explanation before purchase.
+The statement is true.
+', 'FALSE — The marketing mix coordinates product, price, place, and promotion so the targeted customers get a suitable offer at an affordable price, in a convenient place, with a coherent promotional message.
 
-The scenario is a worked example of the marketing mix (4 Ps). Translate the story into the textbook category first; only then judge whether the sentence describes that category accurately.
+Market research underpins decisions across all four ps, including for rural customers.
 
-In this setting, complex offers to premium buyers can benefit from personal selling. The wording matches the textbook relationship without adding extra conditions.
+Those restricting words stretch a limited idea past what marketing allows.
 
-The reasoning chain is complete, so mark the statement true.', 'TRUE — This statement is correct. A relaunch with updated packaging can refresh appeal among premium buyers without launching an entirely new product line.
+The statement is false.
+'] WHERE case_id = 'CASE 5.7.91' AND tier = 'full';
+UPDATE public.economics_cases SET tactical_explanations = ARRAY['TRUE — The marketing mix coordinates product, price, place, and promotion so the targeted customers get a suitable offer at an affordable price, in a convenient place, with a coherent promotional message.
 
-The topic is the marketing mix (4 Ps), but the decisive skill here is reading quantifiers. Words such as never, always, only, or all turn a generally true idea into a claim that can be rejected by one routine counterexample.
+Affordable price for rural households fits the core marketing-mix objective.
 
-Applied carefully, packaging relaunch can renew interest among premium buyers within alteration strategy. Nothing in the sentence stretches the concept beyond its standard use.
+The sentence therefore reports the concept accurately for this case.
 
-The reasoning chain is complete, so mark the statement true.'] WHERE case_id = 'CASE 5.7.90' AND tier = 'full';
-UPDATE public.economics_cases SET tactical_explanations = ARRAY['TRUE — Evaluated against the textbook standard, this assertion is correct. Line extension with a budget variant can attract premium buyers within an existing product line without widening the whole mix.
+The statement is true.
+', 'TRUE — A brand (name, words, symbol, or sign) distinguishes the offer, supports a USP and recognition, and can signal stable quality and safer choice for buyers.
 
-The relevant theory comes from the marketing mix (4 Ps). Identify which definition or relationship the sentence is trying to test before deciding true or false.
+On this stem (Brand / households): familiar brands provide reassurance valued by rural households.
 
-Applied carefully, budget variants for premium buyers deepen the line through line extension. Nothing in the sentence stretches the concept beyond its standard use.
+Nothing in the wording contradicts that marketing test, so the claim is sound.
 
-Every part of the claim aligns with the standard concept, so the statement stands.', 'TRUE — Evaluated against the textbook standard, this assertion is correct. Market research on rural households can guide product features, price levels, distribution outlets, and promotional messages in the marketing mix.
+The statement is true.
+', 'TRUE — Within the marketing mix, product decisions — range, brand, life-cycle stage, and portfolio role — sit at the centre of how the firm meets target demand.
 
-The relevant theory comes from the marketing mix (4 Ps). Identify which definition or relationship the sentence is trying to test before deciding true or false.
+Selective outlets can protect quality when targeting rural households.
 
-Applied carefully, research on rural households informs coordinated decisions across all four ps. Nothing in the sentence stretches the concept beyond its standard use.
+Under that definition the assertion is the right description of the situation.
 
-No qualifying word breaks the definition or scenario, so the answer is true.', 'FALSE — Evaluated against the textbook standard, this assertion is false. A product line aimed at budget shoppers must contain unrelated categories such as food and machinery to count as one line.
+The statement is true.
+', 'FALSE — A brand (name, words, symbol, or sign) distinguishes the offer, supports a USP and recognition, and can signal stable quality and safer choice for buyers.
 
-The relevant theory comes from the marketing mix (4 Ps). Identify which definition or relationship the sentence is trying to test before deciding true or false.
+On this stem (brand / brands): brands support product differentiation and can reassure rural customers, not only promotion.
 
-The statement overreaches because a product line contains similar products, even when targeting budget shoppers. The trap is to agree with the topic while missing the one detail that breaks the logic.
+Swap in the textbook criterion and the sentence no longer describes the case.
 
-The statement sounds plausible but fails on precision, so it is false.', 'TRUE — The claim is correct. A promotional message tailored to rural households should align with the product and price offered through chosen place channels.
+The statement is false.
+', 'TRUE — Within the marketing mix, product decisions — range, brand, life-cycle stage, and portfolio role — sit at the centre of how the firm meets target demand.
 
-This statement draws on the marketing mix (4 Ps). Treat it as a checklist against the core concept named in the stem, not as a general opinion about business.
+Complex offers to rural households can benefit from personal selling.
 
-In this setting, segment-focused promotion must align with product, price, and place for rural households. The wording matches the textbook relationship without adding extra conditions.
+Nothing in the wording contradicts that marketing test, so the claim is sound.
 
-Every part of the claim aligns with the standard concept, so the statement stands.', 'FALSE — Evaluated against the textbook standard, this assertion is false. Market research on rural customers informs only promotion decisions and cannot influence product, price, or place choices.
+The statement is true.
+'] WHERE case_id = 'CASE 5.7.92' AND tier = 'full';
+UPDATE public.economics_cases SET tactical_explanations = ARRAY['TRUE — Product-mix decisions cover width (number of lines) and depth (variants in a line). Firms may relaunch with minor changes, extend a line, add a new line (mix extension), alter offerings, or eliminate weak ones.
 
-The topic is the marketing mix (4 Ps), but the decisive skill here is reading quantifiers. Words such as never, always, only, or all turn a generally true idea into a claim that can be rejected by one routine counterexample.
+On this stem (relaunch / households): packaging relaunch can renew interest among rural households within alteration strategy.
 
-The statement overreaches because market research underpins decisions across all four ps, including for rural customers. The trap is to agree with the topic while missing the one detail that breaks the logic.
+Under that definition the assertion is the right description of the situation.
 
-Watch the absolute wording "cannot": exam statements often sound plausible until a single scope word turns an otherwise familiar idea into an overclaim.
+The statement is true.
+', 'TRUE — Product-mix decisions cover width (number of lines) and depth (variants in a line). Firms may relaunch with minor changes, extend a line, add a new line (mix extension), alter offerings, or eliminate weak ones.
 
-The statement sounds plausible but fails on precision, so it is false.'] WHERE case_id = 'CASE 5.7.91' AND tier = 'full';
-UPDATE public.economics_cases SET tactical_explanations = ARRAY['TRUE — This statement is correct. Affordable pricing for rural households supports the marketing-mix goal of offering value at a convenient place with clear communication.
+On this stem (Line extension / households): budget variants for rural households deepen the line through line extension.
 
-The relevant theory comes from the marketing mix (4 Ps). Identify which definition or relationship the sentence is trying to test before deciding true or false.
+Nothing in the wording contradicts that marketing test, so the claim is sound.
 
-Applied carefully, affordable price for rural households fits the core marketing-mix objective. Nothing in the sentence stretches the concept beyond its standard use.
+The statement is true.
+', 'TRUE — The marketing mix coordinates product, price, place, and promotion so the targeted customers get a suitable offer at an affordable price, in a convenient place, with a coherent promotional message.
 
-Every part of the claim aligns with the standard concept, so the statement stands.', 'TRUE — This statement is correct. Brand trust is especially valuable for rural households who rely on familiar names when choosing among competing offers.
+Research on urban commuters informs coordinated decisions across all four ps.
 
-Here you must apply ideas from the marketing mix (4 Ps) to a concrete situation rather than recite a definition from memory. Ownership, customer type, stakeholder group, or country of production usually decides the verdict.
+Nothing in the wording contradicts that marketing test, so the claim is sound.
 
-Applied carefully, familiar brands provide reassurance valued by rural households. Nothing in the sentence stretches the concept beyond its standard use.
+The statement is true.
+', 'TRUE — The marketing mix coordinates product, price, place, and promotion so the targeted customers get a suitable offer at an affordable price, in a convenient place, with a coherent promotional message.
 
-No qualifying word breaks the definition or scenario, so the answer is true.', 'TRUE — On the Fuhrmann definition used in the entrance exam, the sentence is correct. Selective distribution may suit premium offers targeted at rural households when service quality must be controlled.
+Segment-focused promotion must align with product, price, and place for urban commuters.
 
-The scenario is a worked example of the marketing mix (4 Ps). Translate the story into the textbook category first; only then judge whether the sentence describes that category accurately.
+The sentence therefore reports the concept accurately for this case.
 
-In this setting, selective outlets can protect quality when targeting rural households. The wording matches the textbook relationship without adding extra conditions.
+The statement is true.
+', 'TRUE — The marketing mix coordinates product, price, place, and promotion so the targeted customers get a suitable offer at an affordable price, in a convenient place, with a coherent promotional message.
 
-Every part of the claim aligns with the standard concept, so the statement stands.', 'FALSE — This statement is false. A familiar brand offers no reassurance to rural customers because brands belong exclusively to the promotion P.
+Affordable price for urban commuters fits the core marketing-mix objective.
 
-The topic is the marketing mix (4 Ps), but the decisive skill here is reading quantifiers. Words such as never, always, only, or all turn a generally true idea into a claim that can be rejected by one routine counterexample.
+Nothing in the wording contradicts that marketing test, so the claim is sound.
 
-The statement overreaches because brands support product differentiation and can reassure rural customers, not only promotion. The trap is to agree with the topic while missing the one detail that breaks the logic.
+The statement is true.
+'] WHERE case_id = 'CASE 5.7.93' AND tier = 'full';
+UPDATE public.economics_cases SET tactical_explanations = ARRAY['TRUE — A brand (name, words, symbol, or sign) distinguishes the offer, supports a USP and recognition, and can signal stable quality and safer choice for buyers.
 
-Watch the absolute wording "exclusively": exam statements often sound plausible until a single scope word turns an otherwise familiar idea into an overclaim.
+Familiar brands provide reassurance valued by urban commuters.
 
-Because the decisive detail is wrong, mark the statement false.', 'TRUE — This statement is correct. Personal selling may be effective for rural households when the product requires detailed explanation before purchase.
+Under that definition the assertion is the right description of the situation.
 
-Here you must apply ideas from the marketing mix (4 Ps) to a concrete situation rather than recite a definition from memory. Ownership, customer type, stakeholder group, or country of production usually decides the verdict.
+The statement is true.
+', 'TRUE — Within the marketing mix, product decisions — range, brand, life-cycle stage, and portfolio role — sit at the centre of how the firm meets target demand.
 
-Applied carefully, complex offers to rural households can benefit from personal selling. Nothing in the sentence stretches the concept beyond its standard use.
+Selective outlets can protect quality when targeting urban commuters.
 
-The reasoning chain is complete, so mark the statement true.'] WHERE case_id = 'CASE 5.7.92' AND tier = 'full';
-UPDATE public.economics_cases SET tactical_explanations = ARRAY['TRUE — The claim is correct. A relaunch with updated packaging can refresh appeal among rural households without launching an entirely new product line.
+The sentence therefore reports the concept accurately for this case.
 
-Although the subject matter is the marketing mix (4 Ps), this is really a logic check on overstatement. Non-profit surpluses, mixed economies, and partial market failure are classic cases where absolute wording fails.
+The statement is true.
+', 'TRUE — Within the marketing mix, product decisions — range, brand, life-cycle stage, and portfolio role — sit at the centre of how the firm meets target demand.
 
-In this setting, packaging relaunch can renew interest among rural households within alteration strategy. The wording matches the textbook relationship without adding extra conditions.
+Complex offers to urban commuters can benefit from personal selling.
 
-Every part of the claim aligns with the standard concept, so the statement stands.', 'TRUE — This statement is correct. Line extension with a budget variant can attract rural households within an existing product line without widening the whole mix.
+Under that definition the assertion is the right description of the situation.
 
-The relevant theory comes from the marketing mix (4 Ps). Identify which definition or relationship the sentence is trying to test before deciding true or false.
+The statement is true.
+', 'TRUE — Product-mix decisions cover width (number of lines) and depth (variants in a line). Firms may relaunch with minor changes, extend a line, add a new line (mix extension), alter offerings, or eliminate weak ones.
 
-Applied carefully, budget variants for rural households deepen the line through line extension. Nothing in the sentence stretches the concept beyond its standard use.
+On this stem (relaunch / product line): packaging relaunch can renew interest among urban commuters within alteration strategy.
 
-Every part of the claim aligns with the standard concept, so the statement stands.', 'TRUE — The claim is correct. Market research on urban commuters can guide product features, price levels, distribution outlets, and promotional messages in the marketing mix.
+The sentence therefore reports the concept accurately for this case.
 
-This statement draws on the marketing mix (4 Ps). Treat it as a checklist against the core concept named in the stem, not as a general opinion about business.
+The statement is true.
+', 'FALSE — Within the marketing mix, product decisions — range, brand, life-cycle stage, and portfolio role — sit at the centre of how the firm meets target demand.
 
-In this setting, research on urban commuters informs coordinated decisions across all four ps. The wording matches the textbook relationship without adding extra conditions.
+Introductory low pricing is a price decision, not product-mix contraction.
 
-The reasoning chain is complete, so mark the statement true.', 'TRUE — The claim is correct. A promotional message tailored to urban commuters should align with the product and price offered through chosen place channels.
+The mislabelled category or reversed comparison is enough to reject the claim.
 
-This statement draws on the marketing mix (4 Ps). Treat it as a checklist against the core concept named in the stem, not as a general opinion about business.
+The statement is false.
+'] WHERE case_id = 'CASE 5.7.94' AND tier = 'full';
+UPDATE public.economics_cases SET tactical_explanations = ARRAY['TRUE — Product-mix decisions cover width (number of lines) and depth (variants in a line). Firms may relaunch with minor changes, extend a line, add a new line (mix extension), alter offerings, or eliminate weak ones.
 
-In this setting, segment-focused promotion must align with product, price, and place for urban commuters. The wording matches the textbook relationship without adding extra conditions.
+On this stem (Line extension / product line): budget variants for urban commuters deepen the line through line extension.
 
-Every part of the claim aligns with the standard concept, so the statement stands.', 'TRUE — The claim is correct. Affordable pricing for urban commuters supports the marketing-mix goal of offering value at a convenient place with clear communication.
+Under that definition the assertion is the right description of the situation.
 
-This statement draws on the marketing mix (4 Ps). Treat it as a checklist against the core concept named in the stem, not as a general opinion about business.
+The statement is true.
+', 'FALSE — The marketing mix coordinates product, price, place, and promotion so the targeted customers get a suitable offer at an affordable price, in a convenient place, with a coherent promotional message.
 
-In this setting, affordable price for urban commuters fits the core marketing-mix objective. The wording matches the textbook relationship without adding extra conditions.
+Channel choice for rural customers is a place decision about customer access.
 
-Every part of the claim aligns with the standard concept, so the statement stands.'] WHERE case_id = 'CASE 5.7.93' AND tier = 'full';
-UPDATE public.economics_cases SET tactical_explanations = ARRAY['TRUE — This statement is correct. Brand trust is especially valuable for urban commuters who rely on familiar names when choosing among competing offers.
+Those restricting words stretch a limited idea past what marketing allows.
 
-Here you must apply ideas from the marketing mix (4 Ps) to a concrete situation rather than recite a definition from memory. Ownership, customer type, stakeholder group, or country of production usually decides the verdict.
+The statement is false.
+', 'FALSE — The marketing mix coordinates product, price, place, and promotion so the targeted customers get a suitable offer at an affordable price, in a convenient place, with a coherent promotional message.
 
-Applied carefully, familiar brands provide reassurance valued by urban commuters. Nothing in the sentence stretches the concept beyond its standard use.
+Personal selling is promotional contact, not the sole determinant of list price.
 
-No qualifying word breaks the definition or scenario, so the answer is true.', 'TRUE — This statement is correct. Selective distribution may suit premium offers targeted at urban commuters when service quality must be controlled.
+Swap in the textbook criterion and the sentence no longer describes the case.
 
-Here you must apply ideas from the marketing mix (4 Ps) to a concrete situation rather than recite a definition from memory. Ownership, customer type, stakeholder group, or country of production usually decides the verdict.
+The statement is false.
+', 'TRUE — The marketing mix coordinates product, price, place, and promotion so the targeted customers get a suitable offer at an affordable price, in a convenient place, with a coherent promotional message.
 
-Applied carefully, selective outlets can protect quality when targeting urban commuters. Nothing in the sentence stretches the concept beyond its standard use.
+Research on small-business owners informs coordinated decisions across all four ps.
 
-Every part of the claim aligns with the standard concept, so the statement stands.', 'TRUE — This statement is correct. Personal selling may be effective for urban commuters when the product requires detailed explanation before purchase.
+The sentence therefore reports the concept accurately for this case.
 
-Here you must apply ideas from the marketing mix (4 Ps) to a concrete situation rather than recite a definition from memory. Ownership, customer type, stakeholder group, or country of production usually decides the verdict.
+The statement is true.
+', 'FALSE — Product-mix decisions cover width (number of lines) and depth (variants in a line). Firms may relaunch with minor changes, extend a line, add a new line (mix extension), alter offerings, or eliminate weak ones.
 
-Applied carefully, complex offers to urban commuters can benefit from personal selling. Nothing in the sentence stretches the concept beyond its standard use.
+A product line contains similar products, even when targeting rural customers.
 
-Every part of the claim aligns with the standard concept, so the statement stands.', 'TRUE — On the Fuhrmann definition used in the entrance exam, the sentence is correct. A relaunch with updated packaging can refresh appeal among urban commuters without launching an entirely new product line.
+Swap in the textbook criterion and the sentence no longer describes the case.
 
-Although the subject matter is the marketing mix (4 Ps), this is really a logic check on overstatement. Non-profit surpluses, mixed economies, and partial market failure are classic cases where absolute wording fails.
+The statement is false.
+'] WHERE case_id = 'CASE 5.7.95' AND tier = 'full';
+UPDATE public.economics_cases SET tactical_explanations = ARRAY['FALSE — The marketing mix coordinates product, price, place, and promotion so the targeted customers get a suitable offer at an affordable price, in a convenient place, with a coherent promotional message.
 
-In this setting, packaging relaunch can renew interest among urban commuters within alteration strategy. The wording matches the textbook relationship without adding extra conditions.
+Market research underpins decisions across all four ps, including for business clients.
 
-The reasoning chain is complete, so mark the statement true.', 'FALSE — The claim is false. Low introductory pricing aimed at rural customers is classified as product-mix contraction because it reduces revenue per unit.
+One clear counterexample under the right criterion is enough to reject the sentence.
 
-The question tests a precise definition from the section on the marketing mix (4 Ps). Entrance-exam statements often copy a definition almost correctly; one altered phrase is enough to make the whole sentence wrong.
+The statement is false.
+', 'TRUE — The marketing mix coordinates product, price, place, and promotion so the targeted customers get a suitable offer at an affordable price, in a convenient place, with a coherent promotional message.
 
-Applied to this claim, introductory low pricing is a price decision, not product-mix contraction. That is why the sentence does not survive careful reading.
+Segment-focused promotion must align with product, price, and place for small-business owners.
 
-A common mistake is to recognise the topic word (GDP, NPO, SME, liability) and stop reading. The exam rewards checking every qualifier in the definition.
+Under that definition the assertion is the right description of the situation.
 
-Because the decisive detail is wrong, mark the statement false.'] WHERE case_id = 'CASE 5.7.94' AND tier = 'full';
-UPDATE public.economics_cases SET tactical_explanations = ARRAY['TRUE — This statement is correct. Line extension with a budget variant can attract urban commuters within an existing product line without widening the whole mix.
+The statement is true.
+', 'FALSE — A brand (name, words, symbol, or sign) distinguishes the offer, supports a USP and recognition, and can signal stable quality and safer choice for buyers.
 
-The relevant theory comes from the marketing mix (4 Ps). Identify which definition or relationship the sentence is trying to test before deciding true or false.
+On this stem (brand / brands): brands support product differentiation and can reassure business clients, not only promotion.
 
-Applied carefully, budget variants for urban commuters deepen the line through line extension. Nothing in the sentence stretches the concept beyond its standard use.
+Once the defining feature is restored, the assertion falls away.
 
-The reasoning chain is complete, so mark the statement true.', 'FALSE — This statement is false. Selling through channels preferred by rural customers is a promotion activity because it communicates advertising slogans only.
+The statement is false.
+', 'FALSE — Within the marketing mix, product decisions — range, brand, life-cycle stage, and portfolio role — sit at the centre of how the firm meets target demand.
 
-Here you must apply ideas from the marketing mix (4 Ps) to a concrete situation rather than recite a definition from memory. Ownership, customer type, stakeholder group, or country of production usually decides the verdict.
+Introductory low pricing is a price decision, not product-mix contraction.
 
-The statement overreaches because channel choice for rural customers is a place decision about customer access. The trap is to agree with the topic while missing the one detail that breaks the logic.
+Swap in the textbook criterion and the sentence no longer describes the case.
 
-Because the decisive detail is wrong, mark the statement false.', 'FALSE — On the Fuhrmann definition used in the entrance exam, the sentence is false. Personal selling to rural customers is a price tool because sales staff set the permanent list price for all future years.
+The statement is false.
+', 'FALSE — The marketing mix coordinates product, price, place, and promotion so the targeted customers get a suitable offer at an affordable price, in a convenient place, with a coherent promotional message.
 
-Although the subject matter is the marketing mix (4 Ps), this is really a logic check on overstatement. Non-profit surpluses, mixed economies, and partial market failure are classic cases where absolute wording fails.
+Channel choice for business clients is a place decision about customer access.
 
-Applied to this claim, personal selling is promotional contact, not the sole determinant of list price. That is why the sentence does not survive careful reading.
+One clear counterexample under the right criterion is enough to reject the sentence.
 
-Watch the absolute wording "all": exam statements often sound plausible until a single scope word turns an otherwise familiar idea into an overclaim.
+The statement is false.
+'] WHERE case_id = 'CASE 5.7.96' AND tier = 'full';
+UPDATE public.economics_cases SET tactical_explanations = ARRAY['FALSE — The marketing mix coordinates product, price, place, and promotion so the targeted customers get a suitable offer at an affordable price, in a convenient place, with a coherent promotional message.
 
-Once the overclaim or mislabel is exposed, the only consistent answer is false.', 'TRUE — The claim is correct. Market research on small-business owners can guide product features, price levels, distribution outlets, and promotional messages in the marketing mix.
+Personal selling is promotional contact, not the sole determinant of list price.
 
-This statement draws on the marketing mix (4 Ps). Treat it as a checklist against the core concept named in the stem, not as a general opinion about business.
+Once the defining feature is restored, the assertion falls away.
 
-In this setting, research on small-business owners informs coordinated decisions across all four ps. The wording matches the textbook relationship without adding extra conditions.
+The statement is false.
+', 'FALSE — Product-mix decisions cover width (number of lines) and depth (variants in a line). Firms may relaunch with minor changes, extend a line, add a new line (mix extension), alter offerings, or eliminate weak ones.
 
-No qualifying word breaks the definition or scenario, so the answer is true.', 'FALSE — Evaluated against the textbook standard, this assertion is false. A product line aimed at rural customers must contain unrelated categories such as food and machinery to count as one line.
+A product line contains similar products, even when targeting business clients.
 
-The relevant theory comes from the marketing mix (4 Ps). Identify which definition or relationship the sentence is trying to test before deciding true or false.
+Once the defining feature is restored, the assertion falls away.
 
-The statement overreaches because a product line contains similar products, even when targeting rural customers. The trap is to agree with the topic while missing the one detail that breaks the logic.
+The statement is false.
+', 'TRUE — The marketing mix coordinates product, price, place, and promotion so the targeted customers get a suitable offer at an affordable price, in a convenient place, with a coherent promotional message.
 
-Once the overclaim or mislabel is exposed, the only consistent answer is false.'] WHERE case_id = 'CASE 5.7.95' AND tier = 'full';
-UPDATE public.economics_cases SET tactical_explanations = ARRAY['FALSE — The claim is false. Market research on business clients informs only promotion decisions and cannot influence product, price, or place choices.
+Affordable price for small-business owners fits the core marketing-mix objective.
 
-Although the subject matter is the marketing mix (4 Ps), this is really a logic check on overstatement. Non-profit surpluses, mixed economies, and partial market failure are classic cases where absolute wording fails.
+The sentence therefore reports the concept accurately for this case.
 
-Applied to this claim, market research underpins decisions across all four ps, including for business clients. That is why the sentence does not survive careful reading.
+The statement is true.
+', 'FALSE — The marketing mix coordinates product, price, place, and promotion so the targeted customers get a suitable offer at an affordable price, in a convenient place, with a coherent promotional message.
 
-Watch the absolute wording "cannot": exam statements often sound plausible until a single scope word turns an otherwise familiar idea into an overclaim.
+Market research underpins decisions across all four ps, including for young families.
 
-Once the overclaim or mislabel is exposed, the only consistent answer is false.', 'TRUE — The claim is correct. A promotional message tailored to small-business owners should align with the product and price offered through chosen place channels.
+The absolute wording is what breaks the claim once the correct test is applied.
 
-This statement draws on the marketing mix (4 Ps). Treat it as a checklist against the core concept named in the stem, not as a general opinion about business.
+The statement is false.
+', 'TRUE — A brand (name, words, symbol, or sign) distinguishes the offer, supports a USP and recognition, and can signal stable quality and safer choice for buyers.
 
-In this setting, segment-focused promotion must align with product, price, and place for small-business owners. The wording matches the textbook relationship without adding extra conditions.
+Familiar brands provide reassurance valued by small-business owners.
 
-Every part of the claim aligns with the standard concept, so the statement stands.', 'FALSE — Evaluated against the textbook standard, this assertion is false. A familiar brand offers no reassurance to business clients because brands belong exclusively to the promotion P.
+Nothing in the wording contradicts that marketing test, so the claim is sound.
 
-The topic is the marketing mix (4 Ps), but the decisive skill here is reading quantifiers. Words such as never, always, only, or all turn a generally true idea into a claim that can be rejected by one routine counterexample.
+The statement is true.
+'] WHERE case_id = 'CASE 5.7.97' AND tier = 'full';
+UPDATE public.economics_cases SET tactical_explanations = ARRAY['FALSE — A brand (name, words, symbol, or sign) distinguishes the offer, supports a USP and recognition, and can signal stable quality and safer choice for buyers.
 
-The statement overreaches because brands support product differentiation and can reassure business clients, not only promotion. The trap is to agree with the topic while missing the one detail that breaks the logic.
+On this stem (brand / brands): brands support product differentiation and can reassure young families, not only promotion.
 
-Watch the absolute wording "exclusively": exam statements often sound plausible until a single scope word turns an otherwise familiar idea into an overclaim.
+The mislabelled category or reversed comparison is enough to reject the claim.
 
-The statement sounds plausible but fails on precision, so it is false.', 'FALSE — Evaluated against the textbook standard, this assertion is false. Low introductory pricing aimed at business clients is classified as product-mix contraction because it reduces revenue per unit.
+The statement is false.
+', 'TRUE — Within the marketing mix, product decisions — range, brand, life-cycle stage, and portfolio role — sit at the centre of how the firm meets target demand.
 
-Start from the textbook definition in the marketing mix (4 Ps). A statement is true only if every scope word in the definition is respected—location, purpose, distribution rule, or time horizon.
+Selective outlets can protect quality when targeting small-business owners.
 
-The statement overreaches because introductory low pricing is a price decision, not product-mix contraction. The trap is to agree with the topic while missing the one detail that breaks the logic.
+Under that definition the assertion is the right description of the situation.
 
-Near-miss definitions are deliberately written to sound familiar. Compare the statement phrase by phrase with the book version instead of trusting the overall topic.
+The statement is true.
+', 'FALSE — Within the marketing mix, product decisions — range, brand, life-cycle stage, and portfolio role — sit at the centre of how the firm meets target demand.
 
-Once the overclaim or mislabel is exposed, the only consistent answer is false.', 'FALSE — This statement is false. Selling through channels preferred by business clients is a promotion activity because it communicates advertising slogans only.
+Introductory low pricing is a price decision, not product-mix contraction.
 
-Here you must apply ideas from the marketing mix (4 Ps) to a concrete situation rather than recite a definition from memory. Ownership, customer type, stakeholder group, or country of production usually decides the verdict.
+Once the defining feature is restored, the assertion falls away.
 
-The statement overreaches because channel choice for business clients is a place decision about customer access. The trap is to agree with the topic while missing the one detail that breaks the logic.
+The statement is false.
+', 'FALSE — The marketing mix coordinates product, price, place, and promotion so the targeted customers get a suitable offer at an affordable price, in a convenient place, with a coherent promotional message.
 
-Once the overclaim or mislabel is exposed, the only consistent answer is false.'] WHERE case_id = 'CASE 5.7.96' AND tier = 'full';
-UPDATE public.economics_cases SET tactical_explanations = ARRAY['FALSE — This statement is false. Personal selling to business clients is a price tool because sales staff set the permanent list price for all future years.
+Channel choice for young families is a place decision about customer access.
 
-The topic is the marketing mix (4 Ps), but the decisive skill here is reading quantifiers. Words such as never, always, only, or all turn a generally true idea into a claim that can be rejected by one routine counterexample.
+The absolute wording is what breaks the claim once the correct test is applied.
 
-The statement overreaches because personal selling is promotional contact, not the sole determinant of list price. The trap is to agree with the topic while missing the one detail that breaks the logic.
+The statement is false.
+', 'FALSE — The marketing mix coordinates product, price, place, and promotion so the targeted customers get a suitable offer at an affordable price, in a convenient place, with a coherent promotional message.
 
-Watch the absolute wording "all": exam statements often sound plausible until a single scope word turns an otherwise familiar idea into an overclaim.
+Personal selling is promotional contact, not the sole determinant of list price.
 
-Because the decisive detail is wrong, mark the statement false.', 'FALSE — On the Fuhrmann definition used in the entrance exam, the sentence is false. A product line aimed at business clients must contain unrelated categories such as food and machinery to count as one line.
+The mislabelled category or reversed comparison is enough to reject the claim.
 
-This statement draws on the marketing mix (4 Ps). Treat it as a checklist against the core concept named in the stem, not as a general opinion about business.
+The statement is false.
+'] WHERE case_id = 'CASE 5.7.98' AND tier = 'full';
+UPDATE public.economics_cases SET tactical_explanations = ARRAY['TRUE — Within the marketing mix, product decisions — range, brand, life-cycle stage, and portfolio role — sit at the centre of how the firm meets target demand.
 
-Applied to this claim, a product line contains similar products, even when targeting business clients. That is why the sentence does not survive careful reading.
+Complex offers to small-business owners can benefit from personal selling.
 
-Once the overclaim or mislabel is exposed, the only consistent answer is false.', 'TRUE — This statement is correct. Affordable pricing for small-business owners supports the marketing-mix goal of offering value at a convenient place with clear communication.
+Nothing in the wording contradicts that marketing test, so the claim is sound.
 
-The relevant theory comes from the marketing mix (4 Ps). Identify which definition or relationship the sentence is trying to test before deciding true or false.
+The statement is true.
+', 'TRUE — Product-mix decisions cover width (number of lines) and depth (variants in a line). Firms may relaunch with minor changes, extend a line, add a new line (mix extension), alter offerings, or eliminate weak ones.
 
-Applied carefully, affordable price for small-business owners fits the core marketing-mix objective. Nothing in the sentence stretches the concept beyond its standard use.
+On this stem (relaunch / product line): packaging relaunch can renew interest among small-business owners within alteration strategy.
 
-The reasoning chain is complete, so mark the statement true.', 'FALSE — Evaluated against the textbook standard, this assertion is false. Market research on young families informs only promotion decisions and cannot influence product, price, or place choices.
+Under that definition the assertion is the right description of the situation.
 
-The topic is the marketing mix (4 Ps), but the decisive skill here is reading quantifiers. Words such as never, always, only, or all turn a generally true idea into a claim that can be rejected by one routine counterexample.
+The statement is true.
+', 'TRUE — Product-mix decisions cover width (number of lines) and depth (variants in a line). Firms may relaunch with minor changes, extend a line, add a new line (mix extension), alter offerings, or eliminate weak ones.
 
-The statement overreaches because market research underpins decisions across all four ps, including for young families. The trap is to agree with the topic while missing the one detail that breaks the logic.
+On this stem (Line extension / product line): budget variants for small-business owners deepen the line through line extension.
 
-Watch the absolute wording "cannot": exam statements often sound plausible until a single scope word turns an otherwise familiar idea into an overclaim.
+Nothing in the wording contradicts that marketing test, so the claim is sound.
 
-The statement sounds plausible but fails on precision, so it is false.', 'TRUE — The claim is correct. Brand trust is especially valuable for small-business owners who rely on familiar names when choosing among competing offers.
+The statement is true.
+', 'TRUE — Within the marketing mix, product decisions — range, brand, life-cycle stage, and portfolio role — sit at the centre of how the firm meets target demand.
 
-The scenario is a worked example of the marketing mix (4 Ps). Translate the story into the textbook category first; only then judge whether the sentence describes that category accurately.
+Mobile-device components units can target different segments with tailored products.
 
-In this setting, familiar brands provide reassurance valued by small-business owners. The wording matches the textbook relationship without adding extra conditions.
+The sentence therefore reports the concept accurately for this case.
 
-Every part of the claim aligns with the standard concept, so the statement stands.'] WHERE case_id = 'CASE 5.7.97' AND tier = 'full';
-UPDATE public.economics_cases SET tactical_explanations = ARRAY['FALSE — This statement is false. A familiar brand offers no reassurance to young families because brands belong exclusively to the promotion P.
+The statement is true.
+', 'TRUE — The Boston Consulting Group matrix places products by relative market share and market growth: stars (high/high), question marks (low share/high growth), cash cows (high share/low growth), and poor dogs (low/low).
 
-The topic is the marketing mix (4 Ps), but the decisive skill here is reading quantifiers. Words such as never, always, only, or all turn a generally true idea into a claim that can be rejected by one routine counterexample.
+On this stem (question mark / star): mobile-device components can map to different BCG categories by market conditions.
 
-The statement overreaches because brands support product differentiation and can reassure young families, not only promotion. The trap is to agree with the topic while missing the one detail that breaks the logic.
+Nothing in the wording contradicts that marketing test, so the claim is sound.
 
-Watch the absolute wording "exclusively": exam statements often sound plausible until a single scope word turns an otherwise familiar idea into an overclaim.
+The statement is true.
+'] WHERE case_id = 'CASE 5.7.99' AND tier = 'full';
+UPDATE public.economics_cases SET tactical_explanations = ARRAY['FALSE — Product-mix decisions cover width (number of lines) and depth (variants in a line). Firms may relaunch with minor changes, extend a line, add a new line (mix extension), alter offerings, or eliminate weak ones.
 
-Because the decisive detail is wrong, mark the statement false.', 'TRUE — Evaluated against the textbook standard, this assertion is correct. Selective distribution may suit premium offers targeted at small-business owners when service quality must be controlled.
+A product line contains similar products, even when targeting young families.
 
-Here you must apply ideas from the marketing mix (4 Ps) to a concrete situation rather than recite a definition from memory. Ownership, customer type, stakeholder group, or country of production usually decides the verdict.
+The mislabelled category or reversed comparison is enough to reject the claim.
 
-Applied carefully, selective outlets can protect quality when targeting small-business owners. Nothing in the sentence stretches the concept beyond its standard use.
+The statement is false.
+', 'FALSE — The marketing mix coordinates product, price, place, and promotion so the targeted customers get a suitable offer at an affordable price, in a convenient place, with a coherent promotional message.
 
-The reasoning chain is complete, so mark the statement true.', 'FALSE — The claim is false. Low introductory pricing aimed at young families is classified as product-mix contraction because it reduces revenue per unit.
+Market research underpins decisions across all four ps, including for commuters.
 
-The question tests a precise definition from the section on the marketing mix (4 Ps). Entrance-exam statements often copy a definition almost correctly; one altered phrase is enough to make the whole sentence wrong.
+Those restricting words stretch a limited idea past what marketing allows.
 
-Applied to this claim, introductory low pricing is a price decision, not product-mix contraction. That is why the sentence does not survive careful reading.
+The statement is false.
+', 'FALSE — A brand (name, words, symbol, or sign) distinguishes the offer, supports a USP and recognition, and can signal stable quality and safer choice for buyers.
 
-A common mistake is to recognise the topic word (GDP, NPO, SME, liability) and stop reading. The exam rewards checking every qualifier in the definition.
+On this stem (brand / brands): brands support product differentiation and can reassure commuters, not only promotion.
 
-The statement sounds plausible but fails on precision, so it is false.', 'FALSE — This statement is false. Selling through channels preferred by young families is a promotion activity because it communicates advertising slogans only.
+Swap in the textbook criterion and the sentence no longer describes the case.
 
-Here you must apply ideas from the marketing mix (4 Ps) to a concrete situation rather than recite a definition from memory. Ownership, customer type, stakeholder group, or country of production usually decides the verdict.
+The statement is false.
+', 'TRUE — The marketing mix coordinates product, price, place, and promotion so the targeted customers get a suitable offer at an affordable price, in a convenient place, with a coherent promotional message.
 
-The statement overreaches because channel choice for young families is a place decision about customer access. The trap is to agree with the topic while missing the one detail that breaks the logic.
+On this stem (support services): support for mobile-device components is a product offering, not merely promotion.
 
-Because the decisive detail is wrong, mark the statement false.', 'FALSE — On the Fuhrmann definition used in the entrance exam, the sentence is false. Personal selling to young families is a price tool because sales staff set the permanent list price for all future years.
+Nothing in the wording contradicts that marketing test, so the claim is sound.
 
-Although the subject matter is the marketing mix (4 Ps), this is really a logic check on overstatement. Non-profit surpluses, mixed economies, and partial market failure are classic cases where absolute wording fails.
+The statement is true.
+', 'FALSE — Within the marketing mix, product decisions — range, brand, life-cycle stage, and portfolio role — sit at the centre of how the firm meets target demand.
 
-Applied to this claim, personal selling is promotional contact, not the sole determinant of list price. That is why the sentence does not survive careful reading.
+Introductory low pricing is a price decision, not product-mix contraction.
 
-Watch the absolute wording "all": exam statements often sound plausible until a single scope word turns an otherwise familiar idea into an overclaim.
+The mislabelled category or reversed comparison is enough to reject the claim.
 
-The statement sounds plausible but fails on precision, so it is false.'] WHERE case_id = 'CASE 5.7.98' AND tier = 'full';
-UPDATE public.economics_cases SET tactical_explanations = ARRAY['TRUE — The claim is correct. Personal selling may be effective for small-business owners when the product requires detailed explanation before purchase.
-
-The scenario is a worked example of the marketing mix (4 Ps). Translate the story into the textbook category first; only then judge whether the sentence describes that category accurately.
-
-In this setting, complex offers to small-business owners can benefit from personal selling. The wording matches the textbook relationship without adding extra conditions.
-
-Every part of the claim aligns with the standard concept, so the statement stands.', 'TRUE — The claim is correct. A relaunch with updated packaging can refresh appeal among small-business owners without launching an entirely new product line.
-
-Although the subject matter is the marketing mix (4 Ps), this is really a logic check on overstatement. Non-profit surpluses, mixed economies, and partial market failure are classic cases where absolute wording fails.
-
-In this setting, packaging relaunch can renew interest among small-business owners within alteration strategy. The wording matches the textbook relationship without adding extra conditions.
-
-The reasoning chain is complete, so mark the statement true.', 'TRUE — The claim is correct. Line extension with a budget variant can attract small-business owners within an existing product line without widening the whole mix.
-
-This statement draws on the marketing mix (4 Ps). Treat it as a checklist against the core concept named in the stem, not as a general opinion about business.
-
-In this setting, budget variants for small-business owners deepen the line through line extension. The wording matches the textbook relationship without adding extra conditions.
-
-Every part of the claim aligns with the standard concept, so the statement stands.', 'TRUE — Evaluated against the textbook standard, this assertion is correct. A separate business unit supplying mobile-device components may address a distinct segment with its own product characteristics and cycle.
-
-The relevant theory comes from the marketing mix (4 Ps). Identify which definition or relationship the sentence is trying to test before deciding true or false.
-
-Applied carefully, mobile-device components units can target different segments with tailored products. Nothing in the sentence stretches the concept beyond its standard use.
-
-Every part of the claim aligns with the standard concept, so the statement stands.', 'TRUE — Evaluated against the textbook standard, this assertion is correct. Portfolio analysis may classify mobile-device components as a question mark, star, cash cow, or poor dog depending on share and growth.
-
-The relevant theory comes from the marketing mix (4 Ps). Identify which definition or relationship the sentence is trying to test before deciding true or false.
-
-Applied carefully, mobile-device components can map to different BCG categories by market conditions. Nothing in the sentence stretches the concept beyond its standard use.
-
-Every part of the claim aligns with the standard concept, so the statement stands.'] WHERE case_id = 'CASE 5.7.99' AND tier = 'full';
-UPDATE public.economics_cases SET tactical_explanations = ARRAY['FALSE — Evaluated against the textbook standard, this assertion is false. A product line aimed at young families must contain unrelated categories such as food and machinery to count as one line.
-
-The relevant theory comes from the marketing mix (4 Ps). Identify which definition or relationship the sentence is trying to test before deciding true or false.
-
-The statement overreaches because a product line contains similar products, even when targeting young families. The trap is to agree with the topic while missing the one detail that breaks the logic.
-
-Once the overclaim or mislabel is exposed, the only consistent answer is false.', 'FALSE — On the Fuhrmann definition used in the entrance exam, the sentence is false. Market research on commuters informs only promotion decisions and cannot influence product, price, or place choices.
-
-Although the subject matter is the marketing mix (4 Ps), this is really a logic check on overstatement. Non-profit surpluses, mixed economies, and partial market failure are classic cases where absolute wording fails.
-
-Applied to this claim, market research underpins decisions across all four ps, including for commuters. That is why the sentence does not survive careful reading.
-
-Watch the absolute wording "cannot": exam statements often sound plausible until a single scope word turns an otherwise familiar idea into an overclaim.
-
-Because the decisive detail is wrong, mark the statement false.', 'FALSE — The claim is false. A familiar brand offers no reassurance to commuters because brands belong exclusively to the promotion P.
-
-Although the subject matter is the marketing mix (4 Ps), this is really a logic check on overstatement. Non-profit surpluses, mixed economies, and partial market failure are classic cases where absolute wording fails.
-
-Applied to this claim, brands support product differentiation and can reassure commuters, not only promotion. That is why the sentence does not survive careful reading.
-
-Watch the absolute wording "exclusively": exam statements often sound plausible until a single scope word turns an otherwise familiar idea into an overclaim.
-
-Once the overclaim or mislabel is exposed, the only consistent answer is false.', 'TRUE — On the Fuhrmann definition used in the entrance exam, the sentence is correct. Technical support services related to mobile-device components count as products within the product element of the marketing mix.
-
-This statement draws on the marketing mix (4 Ps). Treat it as a checklist against the core concept named in the stem, not as a general opinion about business.
-
-In this setting, support for mobile-device components is a product offering, not merely promotion. The wording matches the textbook relationship without adding extra conditions.
-
-The reasoning chain is complete, so mark the statement true.', 'FALSE — This statement is false. Low introductory pricing aimed at commuters is classified as product-mix contraction because it reduces revenue per unit.
-
-Start from the textbook definition in the marketing mix (4 Ps). A statement is true only if every scope word in the definition is respected—location, purpose, distribution rule, or time horizon.
-
-The statement overreaches because introductory low pricing is a price decision, not product-mix contraction. The trap is to agree with the topic while missing the one detail that breaks the logic.
-
-Near-miss definitions are deliberately written to sound familiar. Compare the statement phrase by phrase with the book version instead of trusting the overall topic.
-
-Because the decisive detail is wrong, mark the statement false.'] WHERE case_id = 'CASE 5.7.100' AND tier = 'full';
+The statement is false.
+'] WHERE case_id = 'CASE 5.7.100' AND tier = 'full';

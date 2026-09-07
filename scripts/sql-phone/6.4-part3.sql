@@ -1,313 +1,553 @@
 -- Update expanded explanations for 6.4-part3 (10 cases).
 -- Safe to re-run: only updates tactical_explanations.
 
-UPDATE public.economics_cases SET tactical_explanations = ARRAY['TRUE — This statement is correct. Dividend yield and capital growth are both reasons why investors buy shares, alongside voting rights and the wish to invest in real values that may hold up during inflation.
+UPDATE public.economics_cases SET tactical_explanations = ARRAY['TRUE — Short extracts still obey the same classification and measurement rules: current ratio, equity ratio, working capital, and straight-line depreciation (cost minus residual, spread over useful life).
 
-This is an accounting reasoning item on financial versus management accounting. Decide whether the sentence correctly describes how a transaction, balance-sheet line, or period result affects assets, liabilities, or equity.
+The wording matches the relevant rule for "Share Price and Market Capitalisation 51". Short extracts still obey the same classification and measurement rules: current ratio, equity ratio, working capital, and straight-line depreciation (cost minus residual, spread over useful life). Applied here: "Dividend yield and capital growth are both reasons why investors buy shares, alongside voting rights and the wish to invest in real values that may hold up during inflation."
 
-From the figures or classification rule involved, these match the textbook motives for buying shares. Accounting statements fail when a loss is treated as increasing equity, when a flow is placed on the balance sheet, or when a ratio inequality is reversed.
+The statement is true.', 'TRUE — Market capitalisation values the equity at the latest closing price times shares outstanding.
 
-The reasoning chain is complete, so mark the statement true.', 'TRUE — On the Fuhrmann definition used in the entrance exam, the sentence is correct. Market capitalisation at the last month exceeds €14.3 million.
+Name the identity in words: market capitalisation = last closing price × shares outstanding.
 
-The underlying topic is financial versus management accounting. When figures appear, the exam checks whether you can interpret them in accounting terms—what increased, what ratio is implied, and whether the label (current, non-current, equity, and so on) fits.
+$$
+P_{\text{last}} = 46, \quad \text{Shares} = 411,000
+$$
 
-Apply the case evidence: Market capitalisation ≈ €18.9 million. Check whether the direction of change (higher/lower, above/below the threshold) matches what the statement asserts.
+$$
+\text{MCap} = 46 \times 411,000 = €18.91\text{ million}
+$$
 
-The reasoning chain is complete, so mark the statement true.', 'TRUE — The claim is correct. Total shares traded over six months exceed 10.3% of shares outstanding.
+Threshold: exceeds €14.3 million. Actual €18.91 million.
 
-The underlying topic is financial versus management accounting. When figures appear, the exam checks whether you can interpret them in accounting terms—what increased, what ratio is implied, and whether the label (current, non-current, equity, and so on) fits.
+Reading the arithmetic against the claim: market cap €18.91m exceeds €14.3m so the statement holds.
 
-Apply the case evidence: Turnover ≈ 65.5% of shares outstanding. Check whether the direction of change (higher/lower, above/below the threshold) matches what the statement asserts.
+The statement is true.', 'TRUE — Six-month share turnover compares cumulative volume traded with the number of shares outstanding.
 
-Every part of the claim aligns with the standard concept, so the statement stands.', 'FALSE — Evaluated against the textbook standard, this assertion is false. Highest closing price is more than 27.1% above the lowest.
+Name the identity in words: turnover = six-month volume ÷ shares outstanding.
 
-This item belongs to the accounting block on financial versus management accounting. Ratio and classification questions ask you to connect a figure or comparison in the case with the correct statement category, not merely to recognise a number.
+$$
+\text{Volume} = 269,000, \quad \text{Shares} = 411,000
+$$
 
-From the figures or classification rule involved, range €38–€47. Accounting statements fail when a loss is treated as increasing equity, when a flow is placed on the balance sheet, or when a ratio inequality is reversed.
+$$
+\frac{269,000}{411,000} = 65.5\%
+$$
 
-Because the decisive detail is wrong, mark the statement false.', 'FALSE — On the Fuhrmann definition used in the entrance exam, the sentence is false. Peak monthly share turnover exceeds 86,167 shares.
+Threshold: exceed 10.3%. Actual 65.5%.
 
-The underlying topic is financial versus management accounting. When figures appear, the exam checks whether you can interpret them in accounting terms—what increased, what ratio is implied, and whether the label (current, non-current, equity, and so on) fits.
+Reading the arithmetic against the claim: turnover 65.5% exceeds 10.3% so the statement holds.
 
-Apply the case evidence: Peak monthly volume = 86,000. Check whether the direction of change (higher/lower, above/below the threshold) matches what the statement asserts.
+The statement is true.', 'FALSE — The high–low gap is the percentage by which the peak closing price exceeds the trough closing price in the table.
 
-Because the decisive detail is wrong, mark the statement false.'] WHERE case_id = 'CASE 6.4.051' AND tier = 'full';
-UPDATE public.economics_cases SET tactical_explanations = ARRAY['TRUE — On the Fuhrmann definition used in the entrance exam, the sentence is correct. A corporation is not obliged to pay a dividend every year regardless of performance; unpaid dividends over a longer period may make the shares less attractive, but payment is not legally required every year.
+Name the identity in words: high–low gap = (highest close − lowest close) ÷ lowest close.
 
-The underlying topic is financial versus management accounting. When figures appear, the exam checks whether you can interpret them in accounting terms—what increased, what ratio is implied, and whether the label (current, non-current, equity, and so on) fits.
+$$
+P_{\max} = 47, \quad P_{\min} = 38
+$$
 
-Apply the case evidence: Dividends are not a mandatory annual cash outflow. Check whether the direction of change (higher/lower, above/below the threshold) matches what the statement asserts.
+$$
+\frac{47 - 38}{38} = 23.7\%
+$$
 
-The reasoning chain is complete, so mark the statement true.', 'TRUE — Evaluated against the textbook standard, this assertion is correct. Market capitalisation at the last month exceeds €21.1 million.
+Threshold: more than 27.1%. Actual 23.7%.
 
-This item belongs to the accounting block on financial versus management accounting. Ratio and classification questions ask you to connect a figure or comparison in the case with the correct statement category, not merely to recognise a number.
+Reading the arithmetic against the claim: the gap is 23.7%, which does not exceed 27.1% so the statement does not hold.
 
-From the figures or classification rule involved, market capitalisation ≈ €24.5 million. Accounting statements fail when a loss is treated as increasing equity, when a flow is placed on the balance sheet, or when a ratio inequality is reversed.
+The statement is false.', 'FALSE — Peak monthly turnover is simply the largest shares-traded figure among the months in the table.
 
-The reasoning chain is complete, so mark the statement true.', 'TRUE — On the Fuhrmann definition used in the entrance exam, the sentence is correct. Total shares traded over six months exceed 10.1% of shares outstanding.
+Scan each month''s volume and take the maximum.
 
-The underlying topic is financial versus management accounting. When figures appear, the exam checks whether you can interpret them in accounting terms—what increased, what ratio is implied, and whether the label (current, non-current, equity, and so on) fits.
+$$
+\text{Peak volume} = 86,000 \quad (March)
+$$
 
-Apply the case evidence: Turnover ≈ 52.5% of shares outstanding. Check whether the direction of change (higher/lower, above/below the threshold) matches what the statement asserts.
+Threshold: exceeds 86,167. Actual 86,000.
 
-No qualifying word breaks the definition or scenario, so the answer is true.', 'TRUE — This statement is correct. Peak monthly share turnover exceeds 62,416 shares.
+Reading the arithmetic against the claim: peak volume 86,000 does not exceed 86,167 so the statement does not hold.
 
-This item belongs to the accounting block on financial versus management accounting. Ratio and classification questions ask you to connect a figure or comparison in the case with the correct statement category, not merely to recognise a number.
+The statement is false.'] WHERE case_id = 'CASE 6.4.051' AND tier = 'full';
+UPDATE public.economics_cases SET tactical_explanations = ARRAY['TRUE — Short extracts still obey the same classification and measurement rules: current ratio, equity ratio, working capital, and straight-line depreciation (cost minus residual, spread over useful life).
 
-From the figures or classification rule involved, peak monthly volume = 95,000. Accounting statements fail when a loss is treated as increasing equity, when a flow is placed on the balance sheet, or when a ratio inequality is reversed.
+The wording matches the relevant rule for "Listed Company Performance Charts 52". Short extracts still obey the same classification and measurement rules: current ratio, equity ratio, working capital, and straight-line depreciation (cost minus residual, spread over useful life). Applied here: "A corporation is not obliged to pay a dividend every year regardless of performance; unpaid dividends over a longer period may make the shares less attractive, but payment is not legally required e…"
 
-The reasoning chain is complete, so mark the statement true.', 'TRUE — Evaluated against the textbook standard, this assertion is correct. Shares outstanding equal 612,000.
+The statement is true.', 'TRUE — Market capitalisation values the equity at the latest closing price times shares outstanding.
 
-This is an accounting reasoning item on financial versus management accounting. Decide whether the sentence correctly describes how a transaction, balance-sheet line, or period result affects assets, liabilities, or equity.
+Name the identity in words: market capitalisation = last closing price × shares outstanding.
 
-From the figures or classification rule involved, shares outstanding = 612,000. Accounting statements fail when a loss is treated as increasing equity, when a flow is placed on the balance sheet, or when a ratio inequality is reversed.
+$$
+P_{\text{last}} = 40, \quad \text{Shares} = 612,000
+$$
 
-No qualifying word breaks the definition or scenario, so the answer is true.'] WHERE case_id = 'CASE 6.4.052' AND tier = 'full';
-UPDATE public.economics_cases SET tactical_explanations = ARRAY['FALSE — Evaluated against the textbook standard, this assertion is false. The closing share price rose by more than 34.7% from first to last month.
+$$
+\text{MCap} = 40 \times 612,000 = €24.48\text{ million}
+$$
 
-This item belongs to the accounting block on financial versus management accounting. Ratio and classification questions ask you to connect a figure or comparison in the case with the correct statement category, not merely to recognise a number.
+Threshold: exceeds €21.1 million. Actual €24.48 million.
 
-From the figures or classification rule involved, price change ≈ -35.0%. Accounting statements fail when a loss is treated as increasing equity, when a flow is placed on the balance sheet, or when a ratio inequality is reversed.
+Reading the arithmetic against the claim: market cap €24.48m exceeds €21.1m so the statement holds.
 
-Because the decisive detail is wrong, mark the statement false.', 'TRUE — This statement is correct. Only an issue of new shares by the corporation itself raises equity finance; later trading between investors does not.
+The statement is true.', 'TRUE — Six-month share turnover compares cumulative volume traded with the number of shares outstanding.
 
-This item belongs to the accounting block on financial versus management accounting. Ratio and classification questions ask you to connect a figure or comparison in the case with the correct statement category, not merely to recognise a number.
+Name the identity in words: turnover = six-month volume ÷ shares outstanding.
 
-From the figures or classification rule involved, new share capital arises at issue, not in aftermarket trades. Accounting statements fail when a loss is treated as increasing equity, when a flow is placed on the balance sheet, or when a ratio inequality is reversed.
+$$
+\text{Volume} = 321,000, \quad \text{Shares} = 612,000
+$$
 
-Every part of the claim aligns with the standard concept, so the statement stands.', 'TRUE — On the Fuhrmann definition used in the entrance exam, the sentence is correct. Highest closing price is more than 38.1% above the lowest.
+$$
+\frac{321,000}{612,000} = 52.5\%
+$$
 
-The underlying topic is financial versus management accounting. When figures appear, the exam checks whether you can interpret them in accounting terms—what increased, what ratio is implied, and whether the label (current, non-current, equity, and so on) fits.
+Threshold: exceed 10.1%. Actual 52.5%.
 
-Apply the case evidence: Range €13–€20. Check whether the direction of change (higher/lower, above/below the threshold) matches what the statement asserts.
+Reading the arithmetic against the claim: turnover 52.5% exceeds 10.1% so the statement holds.
 
-The reasoning chain is complete, so mark the statement true.', 'FALSE — The claim is false. Market capitalisation rose by more than 14.4% over the period.
+The statement is true.', 'TRUE — Peak monthly turnover is simply the largest shares-traded figure among the months in the table.
 
-The underlying topic is financial versus management accounting. When figures appear, the exam checks whether you can interpret them in accounting terms—what increased, what ratio is implied, and whether the label (current, non-current, equity, and so on) fits.
+Scan each month''s volume and take the maximum.
 
-Apply the case evidence: €9.3m → €6.1m. Check whether the direction of change (higher/lower, above/below the threshold) matches what the statement asserts.
+$$
+\text{Peak volume} = 95,000 \quad (March)
+$$
 
-Because the decisive detail is wrong, mark the statement false.', 'FALSE — This statement is false. Operating result is below €254 thousand.
+Threshold: exceeds 62,416. Actual 95,000.
 
-This item belongs to the accounting block on financial versus management accounting. Ratio and classification questions ask you to connect a figure or comparison in the case with the correct statement category, not merely to recognise a number.
+Reading the arithmetic against the claim: peak volume 95,000 exceeds 62,416 so the statement holds.
 
-From the figures or classification rule involved, operating result = 263. Accounting statements fail when a loss is treated as increasing equity, when a flow is placed on the balance sheet, or when a ratio inequality is reversed.
+The statement is true.', 'TRUE — Shares outstanding are an annual stock figure reported beside the price table; the claim is simply whether that figure equals the stated count.
 
-Once the overclaim or mislabel is exposed, the only consistent answer is false.'] WHERE case_id = 'CASE 6.4.053' AND tier = 'full';
-UPDATE public.economics_cases SET tactical_explanations = ARRAY['TRUE — On the Fuhrmann definition used in the entrance exam, the sentence is correct. Lenders of a hospitality group are users outside day-to-day management, so they mainly rely on the business''s published financial accounting statements.
+Read shares outstanding from the annual figures attached to the extract:
 
-The task tests financial versus management accounting. Financial statements distinguish stocks (balance sheet at a date) from flows (income and cash over a period); many false statements swap those roles.
+$$
+\text{Shares outstanding} = 612,000
+$$
 
-Apply the case evidence: Lenders sit outside daily management and depend on financial accounting rather than internal management reports. Check whether the direction of change (higher/lower, above/below the threshold) matches what the statement asserts.
+The statement claims exactly 612,000. The extract reports 612,000, which matches the claim.
 
-Every part of the claim aligns with the standard concept, so the statement stands.', 'FALSE — On the Fuhrmann definition used in the entrance exam, the sentence is false. Management accounting reports prepared for managers of a construction contractor must use exactly the same statutory format as the published financial statements.
+Reading the arithmetic against the claim: extract reports 612,000 versus claimed 612,000 so the statement holds.
 
-The task tests financial versus management accounting. Financial statements distinguish stocks (balance sheet at a date) from flows (income and cash over a period); many false statements swap those roles.
+The statement is true.'] WHERE case_id = 'CASE 6.4.052' AND tier = 'full';
+UPDATE public.economics_cases SET tactical_explanations = ARRAY['FALSE — Price appreciation from the first listed month to the last is a simple percentage change on the closing prices.
 
-Apply the case evidence: Management accounting for internal users such as managers is not tied to the statutory format used for financial accounting. Check whether the direction of change (higher/lower, above/below the threshold) matches what the statement asserts.
+Name the identity in words: price rise = (last closing price − first closing price) ÷ first closing price.
 
-The statement sounds plausible but fails on precision, so it is false.', 'FALSE — On the Fuhrmann definition used in the entrance exam, the sentence is false. Employees of a construction contractor are not allowed to see any accounting information more often than the once-a-year published financial statements.
+$$
+P_{\text{first}} = 20, \quad P_{\text{last}} = 13
+$$
 
-The task tests financial versus management accounting. Financial statements distinguish stocks (balance sheet at a date) from flows (income and cash over a period); many false statements swap those roles.
+$$
+\frac{13 - 20}{20} = -35.0\%
+$$
 
-Apply the case evidence: Internal users such as employees can receive management accounting far more often than the annual financial statements. Check whether the direction of change (higher/lower, above/below the threshold) matches what the statement asserts.
+Threshold: more than 34.7%. Actual -35.0%.
 
-The statement sounds plausible but fails on precision, so it is false.', 'TRUE — The claim is correct. Lenders of a hospitality group normally receive formal accounting information no more often than once a year, when the financial accounting statements are published.
+Reading the arithmetic against the claim: the rise is -35.0%, which does not exceed 34.7% so the statement does not hold.
 
-The task tests financial versus management accounting. Financial statements distinguish stocks (balance sheet at a date) from flows (income and cash over a period); many false statements swap those roles.
+The statement is false.', 'TRUE — Short extracts still obey the same classification and measurement rules: current ratio, equity ratio, working capital, and straight-line depreciation (cost minus residual, spread over useful life).
 
-Apply the case evidence: Financial accounting statements reach external users such as lenders on the statutory annual cycle. Check whether the direction of change (higher/lower, above/below the threshold) matches what the statement asserts.
+The wording matches the relevant rule for "Earnings Per Share From Reported Figures 53". Short extracts still obey the same classification and measurement rules: current ratio, equity ratio, working capital, and straight-line depreciation (cost minus residual, spread over useful life). Applied here: "Only an issue of new shares by the corporation itself raises equity finance; later trading between investors does not."
 
-Every part of the claim aligns with the standard concept, so the statement stands.', 'TRUE — This statement is correct. Managers of a hospitality group work inside the business and can be given management accounting reports designed around their own questions.
+The statement is true.', 'TRUE — The high–low gap is the percentage by which the peak closing price exceeds the trough closing price in the table.
 
-This is an accounting reasoning item on financial versus management accounting. Decide whether the sentence correctly describes how a transaction, balance-sheet line, or period result affects assets, liabilities, or equity.
+Name the identity in words: high–low gap = (highest close − lowest close) ÷ lowest close.
 
-From the figures or classification rule involved, managers are internal users who can receive management accounting tailored to their needs. Accounting statements fail when a loss is treated as increasing equity, when a flow is placed on the balance sheet, or when a ratio inequality is reversed.
+$$
+P_{\max} = 20, \quad P_{\min} = 13
+$$
 
-No qualifying word breaks the definition or scenario, so the answer is true.'] WHERE case_id = 'CASE 6.4.054' AND tier = 'full';
-UPDATE public.economics_cases SET tactical_explanations = ARRAY['TRUE — The claim is correct. Managers of a hospitality group can be supplied with management accounting figures weekly or monthly, well before the annual financial accounting statements are finalised.
+$$
+\frac{20 - 13}{13} = 53.8\%
+$$
 
-The task tests financial versus management accounting. Financial statements distinguish stocks (balance sheet at a date) from flows (income and cash over a period); many false statements swap those roles.
+Threshold: more than 38.1%. Actual 53.8%.
 
-Apply the case evidence: Management accounting can reach internal users such as managers far more frequently than annual financial accounting. Check whether the direction of change (higher/lower, above/below the threshold) matches what the statement asserts.
+Reading the arithmetic against the claim: the gap is 53.8%, which exceeds 38.1% so the statement holds.
 
-No qualifying word breaks the definition or scenario, so the answer is true.', 'TRUE — Evaluated against the textbook standard, this assertion is correct. Reports prepared for managers of a hospitality group can be laid out however suits the decision at hand, unlike the standardised format required of financial accounting statements.
+The statement is true.', 'FALSE — With shares outstanding unchanged, market-cap growth equals the percentage change in the share price between first and last month.
 
-This is an accounting reasoning item on financial versus management accounting. Decide whether the sentence correctly describes how a transaction, balance-sheet line, or period result affects assets, liabilities, or equity.
+Name the identity in words: market-cap change = (last MCap − first MCap) ÷ first MCap.
 
-From the figures or classification rule involved, management accounting for internal users such as managers is flexible in format, unlike statutory financial accounting. Accounting statements fail when a loss is treated as increasing equity, when a flow is placed on the balance sheet, or when a ratio inequality is reversed.
+$$
+\text{MCap}_{\text{first}} = 20 \times 467,000 = €9.34\text{m}
+$$
 
-Every part of the claim aligns with the standard concept, so the statement stands.', 'TRUE — The claim is correct. Employees of a hospitality group work inside the business and can be given management accounting reports designed around their own questions.
+$$
+\text{MCap}_{\text{last}} = 13 \times 467,000 = €6.07\text{m}
+$$
 
-The task tests financial versus management accounting. Financial statements distinguish stocks (balance sheet at a date) from flows (income and cash over a period); many false statements swap those roles.
+$$
+\frac{6.07 - 9.34}{9.34} = -35.0\%
+$$
 
-Apply the case evidence: Employees are internal users who can receive management accounting tailored to their needs. Check whether the direction of change (higher/lower, above/below the threshold) matches what the statement asserts.
+Threshold: more than 14.4%. Actual -35.0%.
 
-No qualifying word breaks the definition or scenario, so the answer is true.', 'TRUE — This statement is correct. Owners of a hospitality group look at accounting information mainly to judge the return earned on the capital they have invested.
+Reading the arithmetic against the claim: MCap rose -35.0%, which does not exceed 14.4% so the statement does not hold.
 
-This is an accounting reasoning item on financial versus management accounting. Decide whether the sentence correctly describes how a transaction, balance-sheet line, or period result affects assets, liabilities, or equity.
+The statement is false.', 'FALSE — Operating result is taken from the annual figures beside the share table and compared with the stated euro-thousand threshold.
 
-From the figures or classification rule involved, owners focus on the return earned on the capital they have invested when they use accounting information. Accounting statements fail when a loss is treated as increasing equity, when a flow is placed on the balance sheet, or when a ratio inequality is reversed.
+Read the operating result from the extract:
 
-Every part of the claim aligns with the standard concept, so the statement stands.', 'FALSE — This statement is false. Management accounting reports prepared for employees of a construction contractor must use exactly the same statutory format as the published financial statements.
+$$
+\text{Operating result} = €263\text{ thousand}
+$$
 
-This is an accounting reasoning item on financial versus management accounting. Decide whether the sentence correctly describes how a transaction, balance-sheet line, or period result affects assets, liabilities, or equity.
+The statement claims this amount is below €254 thousand. Actual €263 thousand is not below that threshold.
 
-From the figures or classification rule involved, management accounting for internal users such as employees is not tied to the statutory format used for financial accounting. Accounting statements fail when a loss is treated as increasing equity, when a flow is placed on the balance sheet, or when a ratio inequality is reversed.
+Reading the arithmetic against the claim: operating result €263k is not below €254k so the statement does not hold.
 
-The statement sounds plausible but fails on precision, so it is false.'] WHERE case_id = 'CASE 6.4.055' AND tier = 'full';
-UPDATE public.economics_cases SET tactical_explanations = ARRAY['TRUE — The claim is correct. Dividend yield and capital growth are both reasons why investors buy shares, alongside voting rights and the wish to invest in real values that may hold up during inflation.
+The statement is false.'] WHERE case_id = 'CASE 6.4.053' AND tier = 'full';
+UPDATE public.economics_cases SET tactical_explanations = ARRAY['TRUE — Short extracts still obey the same classification and measurement rules: current ratio, equity ratio, working capital, and straight-line depreciation (cost minus residual, spread over useful life).
 
-The task tests financial versus management accounting. Financial statements distinguish stocks (balance sheet at a date) from flows (income and cash over a period); many false statements swap those roles.
+The wording matches the relevant rule for "Tailored Reports for Managers". Short extracts still obey the same classification and measurement rules: current ratio, equity ratio, working capital, and straight-line depreciation (cost minus residual, spread over useful life). Applied here: "Lenders of a hospitality group are users outside day-to-day management, so they mainly rely on the business''s published financial accounting statements."
 
-Apply the case evidence: These match the textbook motives for buying shares. Check whether the direction of change (higher/lower, above/below the threshold) matches what the statement asserts.
+The statement is true.', 'FALSE — Short extracts still obey the same classification and measurement rules: current ratio, equity ratio, working capital, and straight-line depreciation (cost minus residual, spread over useful life).
 
-The reasoning chain is complete, so mark the statement true.', 'TRUE — The claim is correct. Market capitalisation at the last month exceeds €20.6 million.
+Absolute or misapplied wording conflicts with the rule for "Tailored Reports for Managers". Short extracts still obey the same classification and measurement rules: current ratio, equity ratio, working capital, and straight-line depreciation (cost minus residual, spread over useful life). Rejected claim: "Management accounting reports prepared for managers of a construction contractor must use exactly the same statutory format as the published financial statements."
 
-The underlying topic is financial versus management accounting. When figures appear, the exam checks whether you can interpret them in accounting terms—what increased, what ratio is implied, and whether the label (current, non-current, equity, and so on) fits.
+The statement is false.', 'FALSE — Short extracts still obey the same classification and measurement rules: current ratio, equity ratio, working capital, and straight-line depreciation (cost minus residual, spread over useful life).
 
-Apply the case evidence: Market capitalisation ≈ €22.3 million. Check whether the direction of change (higher/lower, above/below the threshold) matches what the statement asserts.
+Absolute or misapplied wording conflicts with the rule for "Tailored Reports for Managers". Short extracts still obey the same classification and measurement rules: current ratio, equity ratio, working capital, and straight-line depreciation (cost minus residual, spread over useful life). Rejected claim: "Employees of a construction contractor are not allowed to see any accounting information more often than the once-a-year published financial statements."
 
-The reasoning chain is complete, so mark the statement true.', 'TRUE — This statement is correct. Peak monthly share turnover exceeds 56,233 shares.
+The statement is false.', 'TRUE — Short extracts still obey the same classification and measurement rules: current ratio, equity ratio, working capital, and straight-line depreciation (cost minus residual, spread over useful life).
 
-This item belongs to the accounting block on financial versus management accounting. Ratio and classification questions ask you to connect a figure or comparison in the case with the correct statement category, not merely to recognise a number.
+The wording matches the relevant rule for "Tailored Reports for Managers". Short extracts still obey the same classification and measurement rules: current ratio, equity ratio, working capital, and straight-line depreciation (cost minus residual, spread over useful life). Applied here: "Lenders of a hospitality group normally receive formal accounting information no more often than once a year, when the financial accounting statements are published."
 
-From the figures or classification rule involved, peak monthly volume = 81,000. Accounting statements fail when a loss is treated as increasing equity, when a flow is placed on the balance sheet, or when a ratio inequality is reversed.
+The statement is true.', 'TRUE — Short extracts still obey the same classification and measurement rules: current ratio, equity ratio, working capital, and straight-line depreciation (cost minus residual, spread over useful life).
 
-No qualifying word breaks the definition or scenario, so the answer is true.', 'TRUE — This statement is correct. Shares outstanding equal 891,000.
+The wording matches the relevant rule for "Tailored Reports for Managers". Short extracts still obey the same classification and measurement rules: current ratio, equity ratio, working capital, and straight-line depreciation (cost minus residual, spread over useful life). Applied here: "Managers of a hospitality group work inside the business and can be given management accounting reports designed around their own questions."
 
-This is an accounting reasoning item on financial versus management accounting. Decide whether the sentence correctly describes how a transaction, balance-sheet line, or period result affects assets, liabilities, or equity.
+The statement is true.'] WHERE case_id = 'CASE 6.4.054' AND tier = 'full';
+UPDATE public.economics_cases SET tactical_explanations = ARRAY['TRUE — Short extracts still obey the same classification and measurement rules: current ratio, equity ratio, working capital, and straight-line depreciation (cost minus residual, spread over useful life).
 
-From the figures or classification rule involved, shares outstanding = 891,000. Accounting statements fail when a loss is treated as increasing equity, when a flow is placed on the balance sheet, or when a ratio inequality is reversed.
+The wording matches the relevant rule for "Why Employees Read Trading Updates". Short extracts still obey the same classification and measurement rules: current ratio, equity ratio, working capital, and straight-line depreciation (cost minus residual, spread over useful life). Applied here: "Managers of a hospitality group can be supplied with management accounting figures weekly or monthly, well before the annual financial accounting statements are finalised."
 
-The reasoning chain is complete, so mark the statement true.', 'TRUE — The claim is correct. High inventory turnover indicates that goods sell well and do not remain in stock for a long time.
+The statement is true.', 'TRUE — Short extracts still obey the same classification and measurement rules: current ratio, equity ratio, working capital, and straight-line depreciation (cost minus residual, spread over useful life).
 
-The underlying topic is financial versus management accounting. When figures appear, the exam checks whether you can interpret them in accounting terms—what increased, what ratio is implied, and whether the label (current, non-current, equity, and so on) fits.
+The wording matches the relevant rule for "Why Employees Read Trading Updates". Short extracts still obey the same classification and measurement rules: current ratio, equity ratio, working capital, and straight-line depreciation (cost minus residual, spread over useful life). Applied here: "Reports prepared for managers of a hospitality group can be laid out however suits the decision at hand, unlike the standardised format required of financial accounting statements."
 
-Apply the case evidence: Fast inventory turnover signals healthy stock movement. Check whether the direction of change (higher/lower, above/below the threshold) matches what the statement asserts.
+The statement is true.', 'TRUE — Short extracts still obey the same classification and measurement rules: current ratio, equity ratio, working capital, and straight-line depreciation (cost minus residual, spread over useful life).
 
-No qualifying word breaks the definition or scenario, so the answer is true.'] WHERE case_id = 'CASE 6.4.056' AND tier = 'full';
-UPDATE public.economics_cases SET tactical_explanations = ARRAY['TRUE — On the Fuhrmann definition used in the entrance exam, the sentence is correct. A higher stock-exchange quotation for shares already issued benefits selling shareholders, not the corporation''s cash reserves.
+The wording matches the relevant rule for "Why Employees Read Trading Updates". Short extracts still obey the same classification and measurement rules: current ratio, equity ratio, working capital, and straight-line depreciation (cost minus residual, spread over useful life). Applied here: "Employees of a hospitality group work inside the business and can be given management accounting reports designed around their own questions."
 
-The underlying topic is financial versus management accounting. When figures appear, the exam checks whether you can interpret them in accounting terms—what increased, what ratio is implied, and whether the label (current, non-current, equity, and so on) fits.
+The statement is true.', 'TRUE — Short extracts still obey the same classification and measurement rules: current ratio, equity ratio, working capital, and straight-line depreciation (cost minus residual, spread over useful life).
 
-Apply the case evidence: Secondary-market price rises do not raise new company cash. Check whether the direction of change (higher/lower, above/below the threshold) matches what the statement asserts.
+The wording matches the relevant rule for "Why Employees Read Trading Updates". Short extracts still obey the same classification and measurement rules: current ratio, equity ratio, working capital, and straight-line depreciation (cost minus residual, spread over useful life). Applied here: "Owners of a hospitality group look at accounting information mainly to judge the return earned on the capital they have invested."
 
-No qualifying word breaks the definition or scenario, so the answer is true.', 'FALSE — This statement is false. The closing share price rose by more than 31.5% from first to last month.
+The statement is true.', 'FALSE — Short extracts still obey the same classification and measurement rules: current ratio, equity ratio, working capital, and straight-line depreciation (cost minus residual, spread over useful life).
 
-This item belongs to the accounting block on financial versus management accounting. Ratio and classification questions ask you to connect a figure or comparison in the case with the correct statement category, not merely to recognise a number.
+Absolute or misapplied wording conflicts with the rule for "Why Employees Read Trading Updates". Short extracts still obey the same classification and measurement rules: current ratio, equity ratio, working capital, and straight-line depreciation (cost minus residual, spread over useful life). Rejected claim: "Management accounting reports prepared for employees of a construction contractor must use exactly the same statutory format as the published financial statements."
 
-From the figures or classification rule involved, price change ≈ 28.6%. Accounting statements fail when a loss is treated as increasing equity, when a flow is placed on the balance sheet, or when a ratio inequality is reversed.
+The statement is false.'] WHERE case_id = 'CASE 6.4.055' AND tier = 'full';
+UPDATE public.economics_cases SET tactical_explanations = ARRAY['TRUE — Short extracts still obey the same classification and measurement rules: current ratio, equity ratio, working capital, and straight-line depreciation (cost minus residual, spread over useful life).
 
-The statement sounds plausible but fails on precision, so it is false.', 'FALSE — The claim is false. Market capitalisation rose by more than 32.9% over the period.
+The wording matches the relevant rule for "Earnings Per Share From Reported Figures 56". Short extracts still obey the same classification and measurement rules: current ratio, equity ratio, working capital, and straight-line depreciation (cost minus residual, spread over useful life). Applied here: "Dividend yield and capital growth are both reasons why investors buy shares, alongside voting rights and the wish to invest in real values that may hold up during inflation."
 
-The underlying topic is financial versus management accounting. When figures appear, the exam checks whether you can interpret them in accounting terms—what increased, what ratio is implied, and whether the label (current, non-current, equity, and so on) fits.
+The statement is true.', 'TRUE — Market capitalisation values the equity at the latest closing price times shares outstanding.
 
-Apply the case evidence: €19.9m → €25.6m. Check whether the direction of change (higher/lower, above/below the threshold) matches what the statement asserts.
+Name the identity in words: market capitalisation = last closing price × shares outstanding.
 
-The statement sounds plausible but fails on precision, so it is false.', 'FALSE — Evaluated against the textbook standard, this assertion is false. Highest closing price is more than 41% above the lowest.
+$$
+P_{\text{last}} = 25, \quad \text{Shares} = 891,000
+$$
 
-This item belongs to the accounting block on financial versus management accounting. Ratio and classification questions ask you to connect a figure or comparison in the case with the correct statement category, not merely to recognise a number.
+$$
+\text{MCap} = 25 \times 891,000 = €22.27\text{ million}
+$$
 
-From the figures or classification rule involved, range €28–€36. Accounting statements fail when a loss is treated as increasing equity, when a flow is placed on the balance sheet, or when a ratio inequality is reversed.
+Threshold: exceeds €20.6 million. Actual €22.27 million.
 
-The statement sounds plausible but fails on precision, so it is false.', 'FALSE — This statement is false. Operating result is below €267 thousand.
+Reading the arithmetic against the claim: market cap €22.27m exceeds €20.6m so the statement holds.
 
-This item belongs to the accounting block on financial versus management accounting. Ratio and classification questions ask you to connect a figure or comparison in the case with the correct statement category, not merely to recognise a number.
+The statement is true.', 'TRUE — Peak monthly turnover is simply the largest shares-traded figure among the months in the table.
 
-From the figures or classification rule involved, operating result = 274. Accounting statements fail when a loss is treated as increasing equity, when a flow is placed on the balance sheet, or when a ratio inequality is reversed.
+Scan each month''s volume and take the maximum.
 
-Because the decisive detail is wrong, mark the statement false.'] WHERE case_id = 'CASE 6.4.057' AND tier = 'full';
-UPDATE public.economics_cases SET tactical_explanations = ARRAY['FALSE — This statement is false. The closing share price rose by more than 33.9% from first to last month.
+$$
+\text{Peak volume} = 81,000 \quad (March)
+$$
 
-This item belongs to the accounting block on financial versus management accounting. Ratio and classification questions ask you to connect a figure or comparison in the case with the correct statement category, not merely to recognise a number.
+Threshold: exceeds 56,233. Actual 81,000.
 
-From the figures or classification rule involved, price change ≈ 26.3%. Accounting statements fail when a loss is treated as increasing equity, when a flow is placed on the balance sheet, or when a ratio inequality is reversed.
+Reading the arithmetic against the claim: peak volume 81,000 exceeds 56,233 so the statement holds.
 
-Once the overclaim or mislabel is exposed, the only consistent answer is false.', 'FALSE — On the Fuhrmann definition used in the entrance exam, the sentence is false. Highest closing price is more than 36.9% above the lowest.
+The statement is true.', 'TRUE — Shares outstanding are an annual stock figure reported beside the price table; the claim is simply whether that figure equals the stated count.
 
-The underlying topic is financial versus management accounting. When figures appear, the exam checks whether you can interpret them in accounting terms—what increased, what ratio is implied, and whether the label (current, non-current, equity, and so on) fits.
+Read shares outstanding from the annual figures attached to the extract:
 
-Apply the case evidence: Range €19–€24. Check whether the direction of change (higher/lower, above/below the threshold) matches what the statement asserts.
+$$
+\text{Shares outstanding} = 891,000
+$$
 
-Because the decisive detail is wrong, mark the statement false.', 'TRUE — Evaluated against the textbook standard, this assertion is correct. Once shares are already trading on a stock exchange, a rise in their market price does not itself provide the issuing company with additional funds; only shareholders who sell benefit from the higher price.
+The statement claims exactly 891,000. The extract reports 891,000, which matches the claim.
 
-This is an accounting reasoning item on financial versus management accounting. Decide whether the sentence correctly describes how a transaction, balance-sheet line, or period result affects assets, liabilities, or equity.
+Reading the arithmetic against the claim: extract reports 891,000 versus claimed 891,000 so the statement holds.
 
-From the figures or classification rule involved, secondary-market price rises do not raise new company cash. Accounting statements fail when a loss is treated as increasing equity, when a flow is placed on the balance sheet, or when a ratio inequality is reversed.
+The statement is true.', 'TRUE — Short extracts still obey the same classification and measurement rules: current ratio, equity ratio, working capital, and straight-line depreciation (cost minus residual, spread over useful life).
 
-No qualifying word breaks the definition or scenario, so the answer is true.', 'FALSE — The claim is false. Total shares traded over six months exceed 37.4% of shares outstanding.
+The wording matches the relevant rule for "Earnings Per Share From Reported Figures 56". Short extracts still obey the same classification and measurement rules: current ratio, equity ratio, working capital, and straight-line depreciation (cost minus residual, spread over useful life). Applied here: "High inventory turnover indicates that goods sell well and do not remain in stock for a long time."
 
-The underlying topic is financial versus management accounting. When figures appear, the exam checks whether you can interpret them in accounting terms—what increased, what ratio is implied, and whether the label (current, non-current, equity, and so on) fits.
+The statement is true.'] WHERE case_id = 'CASE 6.4.056' AND tier = 'full';
+UPDATE public.economics_cases SET tactical_explanations = ARRAY['TRUE — Short extracts still obey the same classification and measurement rules: current ratio, equity ratio, working capital, and straight-line depreciation (cost minus residual, spread over useful life).
 
-Apply the case evidence: Turnover ≈ 32.5% of shares outstanding. Check whether the direction of change (higher/lower, above/below the threshold) matches what the statement asserts.
+The wording matches the relevant rule for "Share Price and Market Capitalisation 57". Short extracts still obey the same classification and measurement rules: current ratio, equity ratio, working capital, and straight-line depreciation (cost minus residual, spread over useful life). Applied here: "A higher stock-exchange quotation for shares already issued benefits selling shareholders, not the corporation''s cash reserves."
 
-Once the overclaim or mislabel is exposed, the only consistent answer is false.', 'FALSE — This statement is false. Peak monthly share turnover exceeds 86,180 shares.
+The statement is true.', 'FALSE — Price appreciation from the first listed month to the last is a simple percentage change on the closing prices.
 
-This item belongs to the accounting block on financial versus management accounting. Ratio and classification questions ask you to connect a figure or comparison in the case with the correct statement category, not merely to recognise a number.
+Name the identity in words: price rise = (last closing price − first closing price) ÷ first closing price.
 
-From the figures or classification rule involved, peak monthly volume = 80,000. Accounting statements fail when a loss is treated as increasing equity, when a flow is placed on the balance sheet, or when a ratio inequality is reversed.
+$$
+P_{\text{first}} = 28, \quad P_{\text{last}} = 36
+$$
 
-The statement sounds plausible but fails on precision, so it is false.'] WHERE case_id = 'CASE 6.4.058' AND tier = 'full';
-UPDATE public.economics_cases SET tactical_explanations = ARRAY['FALSE — Evaluated against the textbook standard, this assertion is false. The closing share price rose by more than 23.4% from first to last month.
+$$
+\frac{36 - 28}{28} = 28.6\%
+$$
 
-This item belongs to the accounting block on financial versus management accounting. Ratio and classification questions ask you to connect a figure or comparison in the case with the correct statement category, not merely to recognise a number.
+Threshold: more than 31.5%. Actual 28.6%.
 
-From the figures or classification rule involved, price change ≈ -35.5%. Accounting statements fail when a loss is treated as increasing equity, when a flow is placed on the balance sheet, or when a ratio inequality is reversed.
+Reading the arithmetic against the claim: the rise is 28.6%, which does not exceed 31.5% so the statement does not hold.
 
-Because the decisive detail is wrong, mark the statement false.', 'FALSE — On the Fuhrmann definition used in the entrance exam, the sentence is false. Market capitalisation rose by more than 16% over the period.
+The statement is false.', 'FALSE — With shares outstanding unchanged, market-cap growth equals the percentage change in the share price between first and last month.
 
-The underlying topic is financial versus management accounting. When figures appear, the exam checks whether you can interpret them in accounting terms—what increased, what ratio is implied, and whether the label (current, non-current, equity, and so on) fits.
+Name the identity in words: market-cap change = (last MCap − first MCap) ÷ first MCap.
 
-Apply the case evidence: €25.7m → €16.6m. Check whether the direction of change (higher/lower, above/below the threshold) matches what the statement asserts.
+$$
+\text{MCap}_{\text{first}} = 28 \times 711,000 = €19.91\text{m}
+$$
 
-Once the overclaim or mislabel is exposed, the only consistent answer is false.', 'FALSE — The claim is false. Peak monthly share turnover exceeds 79,688 shares.
+$$
+\text{MCap}_{\text{last}} = 36 \times 711,000 = €25.60\text{m}
+$$
 
-The underlying topic is financial versus management accounting. When figures appear, the exam checks whether you can interpret them in accounting terms—what increased, what ratio is implied, and whether the label (current, non-current, equity, and so on) fits.
+$$
+\frac{25.60 - 19.91}{19.91} = 28.6\%
+$$
 
-Apply the case evidence: Peak monthly volume = 71,000. Check whether the direction of change (higher/lower, above/below the threshold) matches what the statement asserts.
+Threshold: more than 32.9%. Actual 28.6%.
 
-Once the overclaim or mislabel is exposed, the only consistent answer is false.', 'FALSE — The claim is false. Operating result is below €209 thousand.
+Reading the arithmetic against the claim: MCap rose 28.6%, which does not exceed 32.9% so the statement does not hold.
 
-The underlying topic is financial versus management accounting. When figures appear, the exam checks whether you can interpret them in accounting terms—what increased, what ratio is implied, and whether the label (current, non-current, equity, and so on) fits.
+The statement is false.', 'FALSE — The high–low gap is the percentage by which the peak closing price exceeds the trough closing price in the table.
 
-Apply the case evidence: Operating result = 224. Check whether the direction of change (higher/lower, above/below the threshold) matches what the statement asserts.
+Name the identity in words: high–low gap = (highest close − lowest close) ÷ lowest close.
 
-The statement sounds plausible but fails on precision, so it is false.', 'TRUE — The claim is correct. Making a profit alone does not prove sufficient profitability; profitability ratios relate profit to an indicator of business size such as assets, equity or turnover.
+$$
+P_{\max} = 36, \quad P_{\min} = 28
+$$
 
-The underlying topic is financial versus management accounting. When figures appear, the exam checks whether you can interpret them in accounting terms—what increased, what ratio is implied, and whether the label (current, non-current, equity, and so on) fits.
+$$
+\frac{36 - 28}{28} = 28.6\%
+$$
 
-Apply the case evidence: Absolute profit is not enough without relating it to capital employed. Check whether the direction of change (higher/lower, above/below the threshold) matches what the statement asserts.
+Threshold: more than 41%. Actual 28.6%.
 
-The reasoning chain is complete, so mark the statement true.'] WHERE case_id = 'CASE 6.4.059' AND tier = 'full';
-UPDATE public.economics_cases SET tactical_explanations = ARRAY['TRUE — On the Fuhrmann definition used in the entrance exam, the sentence is correct. Skipping a dividend in a weak year is legally possible; the main risk is that investors find the shares less attractive if dividends stay unpaid for long.
+Reading the arithmetic against the claim: the gap is 28.6%, which does not exceed 41% so the statement does not hold.
 
-The task tests financial versus management accounting. Financial statements distinguish stocks (balance sheet at a date) from flows (income and cash over a period); many false statements swap those roles.
+The statement is false.', 'FALSE — Operating result is taken from the annual figures beside the share table and compared with the stated euro-thousand threshold.
 
-Apply the case evidence: Annual dividends are not a legal obligation every year. Check whether the direction of change (higher/lower, above/below the threshold) matches what the statement asserts.
+Read the operating result from the extract:
 
-No qualifying word breaks the definition or scenario, so the answer is true.', 'TRUE — On the Fuhrmann definition used in the entrance exam, the sentence is correct. The closing share price rose by more than 20.2% from first to last month.
+$$
+\text{Operating result} = €274\text{ thousand}
+$$
 
-The underlying topic is financial versus management accounting. When figures appear, the exam checks whether you can interpret them in accounting terms—what increased, what ratio is implied, and whether the label (current, non-current, equity, and so on) fits.
+The statement claims this amount is below €267 thousand. Actual €274 thousand is not below that threshold.
 
-Apply the case evidence: Price change ≈ 23.8%. Check whether the direction of change (higher/lower, above/below the threshold) matches what the statement asserts.
+Reading the arithmetic against the claim: operating result €274k is not below €267k so the statement does not hold.
 
-The reasoning chain is complete, so mark the statement true.', 'FALSE — Evaluated against the textbook standard, this assertion is false. Highest closing price is more than 36.7% above the lowest.
+The statement is false.'] WHERE case_id = 'CASE 6.4.057' AND tier = 'full';
+UPDATE public.economics_cases SET tactical_explanations = ARRAY['FALSE — Price appreciation from the first listed month to the last is a simple percentage change on the closing prices.
 
-This item belongs to the accounting block on financial versus management accounting. Ratio and classification questions ask you to connect a figure or comparison in the case with the correct statement category, not merely to recognise a number.
+Name the identity in words: price rise = (last closing price − first closing price) ÷ first closing price.
 
-From the figures or classification rule involved, range €42–€52. Accounting statements fail when a loss is treated as increasing equity, when a flow is placed on the balance sheet, or when a ratio inequality is reversed.
+$$
+P_{\text{first}} = 19, \quad P_{\text{last}} = 24
+$$
 
-Because the decisive detail is wrong, mark the statement false.', 'TRUE — Evaluated against the textbook standard, this assertion is correct. Earnings per share exceeds €0.55.
+$$
+\frac{24 - 19}{19} = 26.3\%
+$$
 
-This item belongs to the accounting block on financial versus management accounting. Ratio and classification questions ask you to connect a figure or comparison in the case with the correct statement category, not merely to recognise a number.
+Threshold: more than 33.9%. Actual 26.3%.
 
-From the figures or classification rule involved, earnings per share ≈ €0.69. Accounting statements fail when a loss is treated as increasing equity, when a flow is placed on the balance sheet, or when a ratio inequality is reversed.
+Reading the arithmetic against the claim: the rise is 26.3%, which does not exceed 33.9% so the statement does not hold.
 
-Every part of the claim aligns with the standard concept, so the statement stands.', 'TRUE — This statement is correct. Peak monthly share turnover exceeds 63,983 shares.
+The statement is false.', 'FALSE — The high–low gap is the percentage by which the peak closing price exceeds the trough closing price in the table.
 
-This item belongs to the accounting block on financial versus management accounting. Ratio and classification questions ask you to connect a figure or comparison in the case with the correct statement category, not merely to recognise a number.
+Name the identity in words: high–low gap = (highest close − lowest close) ÷ lowest close.
 
-From the figures or classification rule involved, peak monthly volume = 78,000. Accounting statements fail when a loss is treated as increasing equity, when a flow is placed on the balance sheet, or when a ratio inequality is reversed.
+$$
+P_{\max} = 24, \quad P_{\min} = 19
+$$
 
-The reasoning chain is complete, so mark the statement true.'] WHERE case_id = 'CASE 6.4.060' AND tier = 'full';
+$$
+\frac{24 - 19}{19} = 26.3\%
+$$
+
+Threshold: more than 36.9%. Actual 26.3%.
+
+Reading the arithmetic against the claim: the gap is 26.3%, which does not exceed 36.9% so the statement does not hold.
+
+The statement is false.', 'TRUE — Short extracts still obey the same classification and measurement rules: current ratio, equity ratio, working capital, and straight-line depreciation (cost minus residual, spread over useful life).
+
+The wording matches the relevant rule for "Listed Company Performance Charts 58". Short extracts still obey the same classification and measurement rules: current ratio, equity ratio, working capital, and straight-line depreciation (cost minus residual, spread over useful life). Applied here: "Once shares are already trading on a stock exchange, a rise in their market price does not itself provide the issuing company with additional funds; only shareholders who sell benefit from the high…"
+
+The statement is true.', 'FALSE — Six-month share turnover compares cumulative volume traded with the number of shares outstanding.
+
+Name the identity in words: turnover = six-month volume ÷ shares outstanding.
+
+$$
+\text{Volume} = 253,000, \quad \text{Shares} = 779,000
+$$
+
+$$
+\frac{253,000}{779,000} = 32.5\%
+$$
+
+Threshold: exceed 37.4%. Actual 32.5%.
+
+Reading the arithmetic against the claim: turnover 32.5% does not exceed 37.4% so the statement does not hold.
+
+The statement is false.', 'FALSE — Peak monthly turnover is simply the largest shares-traded figure among the months in the table.
+
+Scan each month''s volume and take the maximum.
+
+$$
+\text{Peak volume} = 80,000 \quad (January)
+$$
+
+Threshold: exceeds 86,180. Actual 80,000.
+
+Reading the arithmetic against the claim: peak volume 80,000 does not exceed 86,180 so the statement does not hold.
+
+The statement is false.'] WHERE case_id = 'CASE 6.4.058' AND tier = 'full';
+UPDATE public.economics_cases SET tactical_explanations = ARRAY['FALSE — Price appreciation from the first listed month to the last is a simple percentage change on the closing prices.
+
+Name the identity in words: price rise = (last closing price − first closing price) ÷ first closing price.
+
+$$
+P_{\text{first}} = 31, \quad P_{\text{last}} = 20
+$$
+
+$$
+\frac{20 - 31}{31} = -35.5\%
+$$
+
+Threshold: more than 23.4%. Actual -35.5%.
+
+Reading the arithmetic against the claim: the rise is -35.5%, which does not exceed 23.4% so the statement does not hold.
+
+The statement is false.', 'FALSE — With shares outstanding unchanged, market-cap growth equals the percentage change in the share price between first and last month.
+
+Name the identity in words: market-cap change = (last MCap − first MCap) ÷ first MCap.
+
+$$
+\text{MCap}_{\text{first}} = 31 \times 830,000 = €25.73\text{m}
+$$
+
+$$
+\text{MCap}_{\text{last}} = 20 \times 830,000 = €16.60\text{m}
+$$
+
+$$
+\frac{16.60 - 25.73}{25.73} = -35.5\%
+$$
+
+Threshold: more than 16%. Actual -35.5%.
+
+Reading the arithmetic against the claim: MCap rose -35.5%, which does not exceed 16% so the statement does not hold.
+
+The statement is false.', 'FALSE — Peak monthly turnover is simply the largest shares-traded figure among the months in the table.
+
+Scan each month''s volume and take the maximum.
+
+$$
+\text{Peak volume} = 71,000 \quad (May)
+$$
+
+Threshold: exceeds 79,688. Actual 71,000.
+
+Reading the arithmetic against the claim: peak volume 71,000 does not exceed 79,688 so the statement does not hold.
+
+The statement is false.', 'FALSE — Operating result is taken from the annual figures beside the share table and compared with the stated euro-thousand threshold.
+
+Read the operating result from the extract:
+
+$$
+\text{Operating result} = €224\text{ thousand}
+$$
+
+The statement claims this amount is below €209 thousand. Actual €224 thousand is not below that threshold.
+
+Reading the arithmetic against the claim: operating result €224k is not below €209k so the statement does not hold.
+
+The statement is false.', 'TRUE — Short extracts still obey the same classification and measurement rules: current ratio, equity ratio, working capital, and straight-line depreciation (cost minus residual, spread over useful life).
+
+The wording matches the relevant rule for "Earnings Per Share From Reported Figures 59". Short extracts still obey the same classification and measurement rules: current ratio, equity ratio, working capital, and straight-line depreciation (cost minus residual, spread over useful life). Applied here: "Making a profit alone does not prove sufficient profitability; profitability ratios relate profit to an indicator of business size such as assets, equity or turnover."
+
+The statement is true.'] WHERE case_id = 'CASE 6.4.059' AND tier = 'full';
+UPDATE public.economics_cases SET tactical_explanations = ARRAY['TRUE — Short extracts still obey the same classification and measurement rules: current ratio, equity ratio, working capital, and straight-line depreciation (cost minus residual, spread over useful life).
+
+The wording matches the relevant rule for "Share Price and Market Capitalisation 60". Short extracts still obey the same classification and measurement rules: current ratio, equity ratio, working capital, and straight-line depreciation (cost minus residual, spread over useful life). Applied here: "Skipping a dividend in a weak year is legally possible; the main risk is that investors find the shares less attractive if dividends stay unpaid for long."
+
+The statement is true.', 'TRUE — Price appreciation from the first listed month to the last is a simple percentage change on the closing prices.
+
+Name the identity in words: price rise = (last closing price − first closing price) ÷ first closing price.
+
+$$
+P_{\text{first}} = 42, \quad P_{\text{last}} = 52
+$$
+
+$$
+\frac{52 - 42}{42} = 23.8\%
+$$
+
+Threshold: more than 20.2%. Actual 23.8%.
+
+Reading the arithmetic against the claim: the rise is 23.8%, which exceeds 20.2% so the statement holds.
+
+The statement is true.', 'FALSE — The high–low gap is the percentage by which the peak closing price exceeds the trough closing price in the table.
+
+Name the identity in words: high–low gap = (highest close − lowest close) ÷ lowest close.
+
+$$
+P_{\max} = 52, \quad P_{\min} = 42
+$$
+
+$$
+\frac{52 - 42}{42} = 23.8\%
+$$
+
+Threshold: more than 36.7%. Actual 23.8%.
+
+Reading the arithmetic against the claim: the gap is 23.8%, which does not exceed 36.7% so the statement does not hold.
+
+The statement is false.', 'TRUE — EPS here links the operating result (in € thousands) to shares outstanding (scaled to thousands of shares).
+
+Name the identity in words: EPS = operating result (€ thousands) ÷ (shares outstanding ÷ 1,000).
+
+$$
+\text{Operating result} = 283, \quad \frac{\text{Shares}}{1,000} = 413
+$$
+
+$$
+EPS = \frac{283}{413} = €0.6852
+$$
+
+Threshold: exceeds €0.55. Actual ≈ €0.69.
+
+Reading the arithmetic against the claim: EPS €0.69 exceeds €0.55 so the statement holds.
+
+The statement is true.', 'TRUE — Peak monthly turnover is simply the largest shares-traded figure among the months in the table.
+
+Scan each month''s volume and take the maximum.
+
+$$
+\text{Peak volume} = 78,000 \quad (February)
+$$
+
+Threshold: exceeds 63,983. Actual 78,000.
+
+Reading the arithmetic against the claim: peak volume 78,000 exceeds 63,983 so the statement holds.
+
+The statement is true.'] WHERE case_id = 'CASE 6.4.060' AND tier = 'full';

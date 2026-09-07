@@ -1,786 +1,1153 @@
 -- Update expanded explanations for 2.6-part2 (25 cases).
 -- Safe to re-run: only updates tactical_explanations.
 
-UPDATE public.economics_cases SET tactical_explanations = ARRAY['TRUE — This statement is correct. Expectations of a large harvest can shift supply rightward for contract picker labour in August.
+UPDATE public.economics_cases SET tactical_explanations = ARRAY['TRUE — Own-price changes move along a demand or supply curve. Non-price factors — input costs, population, income, tastes — shift the curve and can change equilibrium price and quantity.
 
-The relevant theory comes from supply, demand, and market interaction. Identify which definition or relationship the sentence is trying to test before deciding true or false.
+Expecting a large harvest raises demand for pickers in August — labour supply offered to vineyards can shift right as contractors recruit for the surge.
 
-Applied carefully, anticipated output needs increase quantity of labour supplied at each wage. Nothing in the sentence stretches the concept beyond its standard use.
+Map that definition onto the case where styrian vineyards signing seasonal picker contracts before grape sugar levels peak. The claim’s actors and constraints (here: shift, supply) line up with the concept: the sentence describes the same mechanism the chapter teaches, not a neighbouring idea with similar vocabulary.
 
-No qualifying word breaks the definition or scenario, so the answer is true.', 'TRUE — Evaluated against the textbook standard, this assertion is correct. Timely contract signing before peak harvest can reduce later shortage when sugar levels spike.
+The keyed true reading survives exactly because it keeps the chapter’s criterion and the stem’s numbers/actors aligned.
 
-Here you must apply ideas from supply, demand, and market interaction to a concrete situation rather than recite a definition from memory. Ownership, customer type, stakeholder group, or country of production usually decides the verdict.
+The statement is true.
+', 'TRUE — Equilibrium is the price where quantity demanded equals quantity supplied, so persistent shortages or surpluses do not grow. Asking prices above equilibrium leave unsold surplus; prices below leave shortage.
 
-Applied carefully, early secured supply eases imbalance when demand for pickers surges. Nothing in the sentence stretches the concept beyond its standard use.
+Signing contracts before peak harvest locks in labour and reduces later shortage when sugar levels spike and everyone wants pickers at once.
 
-No qualifying word breaks the definition or scenario, so the answer is true.', 'TRUE — The claim is correct. If offered wages sit below equilibrium, vineyards may face shortage of available pickers.
+Map that definition onto the case where styrian vineyards signing seasonal picker contracts before grape sugar levels peak. The claim’s actors and constraints (here: shortage) line up with the concept: the sentence describes the same mechanism the chapter teaches, not a neighbouring idea with similar vocabulary.
 
-The scenario is a worked example of supply, demand, and market interaction. Translate the story into the textbook category first; only then judge whether the sentence describes that category accurately.
+Nothing in the stem contradicts that reading, so the assertion stands as a correct application of the definition.
 
-In this setting, below-equilibrium wage leaves quantity demanded above quantity supplied. The wording matches the textbook relationship without adding extra conditions.
+The statement is true.
+', 'TRUE — Equilibrium is the price where quantity demanded equals quantity supplied, so persistent shortages or surpluses do not grow. Asking prices above equilibrium leave unsold surplus; prices below leave shortage.
 
-The reasoning chain is complete, so mark the statement true.', 'TRUE — On the Fuhrmann definition used in the entrance exam, the sentence is correct. Competing fruit regions raising wages may shift supply leftward for pickers in Styria.
+Wages below equilibrium leave quantity demanded of labour above quantity supplied — picker shortage.
 
-This statement draws on supply, demand, and market interaction. Treat it as a checklist against the core concept named in the stem, not as a general opinion about business.
+Map that definition onto the case where styrian vineyards signing seasonal picker contracts before grape sugar levels peak. The claim’s actors and constraints (here: equilibrium, shortage) line up with the concept: the sentence describes the same mechanism the chapter teaches, not a neighbouring idea with similar vocabulary.
 
-In this setting, higher wages elsewhere reduce quantity supplied locally at each wage. The wording matches the textbook relationship without adding extra conditions.
+If you replaced the key term with its neighbour (accounting outlay, micro/macro swap, movement vs shift), the sentence would stop matching the stem — that contrast locks the idea.
 
-No qualifying word breaks the definition or scenario, so the answer is true.', 'TRUE — The claim is correct. Higher offered day rates typically increase the quantity of pickers willing to supply labour.
+The statement is true.
+', 'TRUE — Own-price changes move along a demand or supply curve. Non-price factors — input costs, population, income, tastes — shift the curve and can change equilibrium price and quantity.
 
-This statement draws on supply, demand, and market interaction. Treat it as a checklist against the core concept named in the stem, not as a general opinion about business.
+Higher wages in competing fruit regions pull pickers away — Styria''s picker supply shifts left.
 
-In this setting, higher own-price of labour raises quantity supplied along the supply curve. The wording matches the textbook relationship without adding extra conditions.
+Map that definition onto the case where styrian vineyards signing seasonal picker contracts before grape sugar levels peak. The claim’s actors and constraints (here: shift, supply) line up with the concept: the sentence describes the same mechanism the chapter teaches, not a neighbouring idea with similar vocabulary.
 
-Every part of the claim aligns with the standard concept, so the statement stands.'] WHERE case_id = 'CASE 2.6.26' AND tier = 'full';
-UPDATE public.economics_cases SET tactical_explanations = ARRAY['TRUE — This statement is correct. The net effect on equilibrium price depends on the relative size of demand and supply shifts.
+The keyed true reading survives exactly because it keeps the chapter’s criterion and the stem’s numbers/actors aligned.
 
-The relevant theory comes from supply, demand, and market interaction. Identify which definition or relationship the sentence is trying to test before deciding true or false.
+The statement is true.
+', 'TRUE — The law of supply: other things equal, a higher price raises quantity supplied. Higher input costs typically shift supply left; cheaper inputs shift it right.
 
-Applied carefully, ambiguous price outcomes require comparing shift magnitudes. Nothing in the sentence stretches the concept beyond its standard use.
+Separate movements along a curve (own-price) from shifts (costs, income, population, tastes). Equilibrium is where quantity demanded equals quantity supplied; binding floors or ceilings can create surplus or shortage when set away from that price. Focus points: supply.
 
-The reasoning chain is complete, so mark the statement true.', 'TRUE — The claim is correct. Graphical analysis compares new intersection points to identify changed equilibrium outcomes.
+Map that definition onto the case where styrian vineyards signing seasonal picker contracts before grape sugar levels peak. The claim’s actors and constraints (here: supply) line up with the concept: the sentence describes the same mechanism the chapter teaches, not a neighbouring idea with similar vocabulary.
 
-This statement draws on supply, demand, and market interaction. Treat it as a checklist against the core concept named in the stem, not as a general opinion about business.
+Nothing in the stem contradicts that reading, so the assertion stands as a correct application of the definition.
 
-In this setting, new curve positions determine updated equilibrium price and quantity. The wording matches the textbook relationship without adding extra conditions.
+The statement is true.
+'] WHERE case_id = 'CASE 2.6.26' AND tier = 'full';
+UPDATE public.economics_cases SET tactical_explanations = ARRAY['TRUE — Equilibrium is the price where quantity demanded equals quantity supplied, so persistent shortages or surpluses do not grow. Asking prices above equilibrium leave unsold surplus; prices below leave shortage.
 
-No qualifying word breaks the definition or scenario, so the answer is true.', 'TRUE — On the Fuhrmann definition used in the entrance exam, the sentence is correct. If demand shifts right while supply shifts left, equilibrium price is likely to rise.
+Separate movements along a curve (own-price) from shifts (costs, income, population, tastes). Equilibrium is where quantity demanded equals quantity supplied; binding floors or ceilings can create surplus or shortage when set away from that price. Focus points: equilibrium, demand, supply.
 
-The scenario is a worked example of supply, demand, and market interaction. Translate the story into the textbook category first; only then judge whether the sentence describes that category accurately.
+Held against the chapter test (here: equilibrium, demand, supply), each operative word earns its place: the category, the comparison, and the mechanism survive when checked one by one.
 
-In this setting, stronger demand with reduced supply pushes price upward. The wording matches the textbook relationship without adding extra conditions.
+If you replaced the key term with its neighbour (accounting outlay, micro/macro swap, movement vs shift), the sentence would stop matching the stem — that contrast locks the idea.
 
-The reasoning chain is complete, so mark the statement true.', 'TRUE — The claim is correct. If demand shifts right and supply shifts right together, equilibrium quantity rises.
+The statement is true.
+', 'TRUE — Equilibrium is the price where quantity demanded equals quantity supplied, so persistent shortages or surpluses do not grow. Asking prices above equilibrium leave unsold surplus; prices below leave shortage.
 
-The scenario is a worked example of supply, demand, and market interaction. Translate the story into the textbook category first; only then judge whether the sentence describes that category accurately.
+Comparing old and new intersection points on a graph identifies the new equilibrium outcomes.
 
-In this setting, both shifts increase equilibrium quantity though price change is ambiguous. The wording matches the textbook relationship without adding extra conditions.
+Held against the chapter test (here: equilibrium), each operative word earns its place: the category, the comparison, and the mechanism survive when checked one by one.
 
-Every part of the claim aligns with the standard concept, so the statement stands.', 'TRUE — On the Fuhrmann definition used in the entrance exam, the sentence is correct. Supply and demand shifts can occur together after a natural disaster disrupts production and tastes.
+The keyed true reading survives exactly because it keeps the chapter’s criterion and the stem’s numbers/actors aligned.
 
-This statement draws on supply, demand, and market interaction. Treat it as a checklist against the core concept named in the stem, not as a general opinion about business.
+The statement is true.
+', 'TRUE — Equilibrium is the price where quantity demanded equals quantity supplied, so persistent shortages or surpluses do not grow. Asking prices above equilibrium leave unsold surplus; prices below leave shortage.
 
-In this setting, real events can move both curves in the same period. The wording matches the textbook relationship without adding extra conditions.
+Separate movements along a curve (own-price) from shifts (costs, income, population, tastes). Equilibrium is where quantity demanded equals quantity supplied; binding floors or ceilings can create surplus or shortage when set away from that price. Focus points: demand, supply, equilibrium.
 
-Every part of the claim aligns with the standard concept, so the statement stands.'] WHERE case_id = 'CASE 2.6.27' AND tier = 'full';
-UPDATE public.economics_cases SET tactical_explanations = ARRAY['TRUE — The claim is correct. Non-price rationing such as queues may appear when ceilings create persistent shortage.
+Held against the chapter test (here: demand, supply, equilibrium), each operative word earns its place: the category, the comparison, and the mechanism survive when checked one by one.
 
-The scenario is a worked example of supply, demand, and market interaction. Translate the story into the textbook category first; only then judge whether the sentence describes that category accurately.
+A useful check is the opposite error: treat opportunity cost as the money paid, or treat one buyer’s choice as macro, or treat a shift as a movement — those near-misses fail, which confirms this wording.
 
-In this setting, scarce goods at capped prices may be allocated by waiting. The wording matches the textbook relationship without adding extra conditions.
+The statement is true.
+', 'TRUE — Equilibrium is the price where quantity demanded equals quantity supplied, so persistent shortages or surpluses do not grow. Asking prices above equilibrium leave unsold surplus; prices below leave shortage.
 
-Every part of the claim aligns with the standard concept, so the statement stands.', 'TRUE — The claim is correct. A ceiling set above equilibrium is not binding because market price stays below the cap.
+Demand right and supply right both raise quantity — equilibrium quantity rises (price ambiguous).
 
-The scenario is a worked example of supply, demand, and market interaction. Translate the story into the textbook category first; only then judge whether the sentence describes that category accurately.
+Held against the chapter test (here: demand, supply, equilibrium), each operative word earns its place: the category, the comparison, and the mechanism survive when checked one by one.
 
-In this setting, non-binding caps do not constrain market-clearing prices. The wording matches the textbook relationship without adding extra conditions.
+A useful check is the opposite error: treat opportunity cost as the money paid, or treat one buyer’s choice as macro, or treat a shift as a movement — those near-misses fail, which confirms this wording.
 
-Every part of the claim aligns with the standard concept, so the statement stands.', 'TRUE — The claim is correct. Rent controls set below market equilibrium can leave landlords with fewer units to lease.
+The statement is true.
+', 'TRUE — Own-price changes move along a demand or supply curve. Non-price factors — input costs, population, income, tastes — shift the curve and can change equilibrium price and quantity.
 
-This statement draws on supply, demand, and market interaction. Treat it as a checklist against the core concept named in the stem, not as a general opinion about business.
+Separate movements along a curve (own-price) from shifts (costs, income, population, tastes). Equilibrium is where quantity demanded equals quantity supplied; binding floors or ceilings can create surplus or shortage when set away from that price. Focus points: Supply, demand.
 
-In this setting, shortage may reduce maintenance incentives though quantity demanded exceeds supplied. The wording matches the textbook relationship without adding extra conditions.
+Held against the chapter test (here: Supply, demand), each operative word earns its place: the category, the comparison, and the mechanism survive when checked one by one.
 
-Every part of the claim aligns with the standard concept, so the statement stands.', 'FALSE — The claim is false. At the ceiling price, quantity supplied typically exceeds quantity demanded.
+A useful check is the opposite error: treat opportunity cost as the money paid, or treat one buyer’s choice as macro, or treat a shift as a movement — those near-misses fail, which confirms this wording.
 
-This statement draws on supply, demand, and market interaction. Treat it as a checklist against the core concept named in the stem, not as a general opinion about business.
+The statement is true.
+'] WHERE case_id = 'CASE 2.6.27' AND tier = 'full';
+UPDATE public.economics_cases SET tactical_explanations = ARRAY['TRUE — Equilibrium is the price where quantity demanded equals quantity supplied, so persistent shortages or surpluses do not grow. Asking prices above equilibrium leave unsold surplus; prices below leave shortage.
 
-Applied to this claim, binding ceilings create shortage, not surplus. That is why the sentence does not survive careful reading.
+Separate movements along a curve (own-price) from shifts (costs, income, population, tastes). Equilibrium is where quantity demanded equals quantity supplied; binding floors or ceilings can create surplus or shortage when set away from that price. Focus points: shortage.
 
-Because the decisive detail is wrong, mark the statement false.', 'FALSE — On the Fuhrmann definition used in the entrance exam, the sentence is false. A price ceiling below equilibrium prevents price from falling to eliminate surplus.
+Held against the chapter test (here: shortage), each operative word earns its place: the category, the comparison, and the mechanism survive when checked one by one.
 
-This statement draws on supply, demand, and market interaction. Treat it as a checklist against the core concept named in the stem, not as a general opinion about business.
+The sentence therefore reports the concept accurately for this item once the definition is held fixed.
 
-Applied to this claim, below-equilibrium caps block price rises that would reduce shortage. That is why the sentence does not survive careful reading.
+The statement is true.
+', 'TRUE — Equilibrium is the price where quantity demanded equals quantity supplied, so persistent shortages or surpluses do not grow. Asking prices above equilibrium leave unsold surplus; prices below leave shortage.
 
-Because the decisive detail is wrong, mark the statement false.'] WHERE case_id = 'CASE 2.6.28' AND tier = 'full';
-UPDATE public.economics_cases SET tactical_explanations = ARRAY['TRUE — This statement is correct. Long waiting lists for controlled units signal excess demand at the regulated rent.
+Separate movements along a curve (own-price) from shifts (costs, income, population, tastes). Equilibrium is where quantity demanded equals quantity supplied; binding floors or ceilings can create surplus or shortage when set away from that price. Focus points: equilibrium.
 
-The relevant theory comes from supply, demand, and market interaction. Identify which definition or relationship the sentence is trying to test before deciding true or false.
+Held against the chapter test (here: equilibrium), each operative word earns its place: the category, the comparison, and the mechanism survive when checked one by one.
 
-Applied carefully, queues indicate quantity demanded exceeds quantity supplied at that price. Nothing in the sentence stretches the concept beyond its standard use.
+The causal link is doing the teaching work — strip it out and the remaining label would be too thin to judge.
 
-The reasoning chain is complete, so mark the statement true.', 'TRUE — On the Fuhrmann definition used in the entrance exam, the sentence is correct. Controlled rents below open-market levels can create persistent shortage of available flats.
+The statement is true.
+', 'TRUE — Equilibrium is the price where quantity demanded equals quantity supplied, so persistent shortages or surpluses do not grow. Asking prices above equilibrium leave unsold surplus; prices below leave shortage.
 
-This statement draws on supply, demand, and market interaction. Treat it as a checklist against the core concept named in the stem, not as a general opinion about business.
+Rent controls below equilibrium discourage some units from being offered — fewer leases available.
 
-In this setting, binding low rents leave quantity demanded above quantity supplied. The wording matches the textbook relationship without adding extra conditions.
+Held against the chapter test (here: Rent, equilibrium), each operative word earns its place: the category, the comparison, and the mechanism survive when checked one by one.
 
-No qualifying word breaks the definition or scenario, so the answer is true.', 'TRUE — On the Fuhrmann definition used in the entrance exam, the sentence is correct. Landlords may redirect maintenance spending when regulated rents cover rising costs poorly.
+A useful check is the opposite error: treat opportunity cost as the money paid, or treat one buyer’s choice as macro, or treat a shift as a movement — those near-misses fail, which confirms this wording.
 
-The scenario is a worked example of supply, demand, and market interaction. Translate the story into the textbook category first; only then judge whether the sentence describes that category accurately.
+The statement is true.
+', 'FALSE — The law of demand: other things equal, a higher price reduces quantity demanded and a lower price raises it. That is a movement along demand, not automatically a demand shift.
 
-In this setting, low regulated returns can affect supply quality and availability over time. The wording matches the textbook relationship without adding extra conditions.
+At a binding ceiling below equilibrium, quantity demanded exceeds quantity supplied — shortage, not surplus.
 
-The reasoning chain is complete, so mark the statement true.', 'FALSE — This statement is false. Tenants ignore non-price costs when money rents stay capped because flats are abundant.
+Held against the chapter test, the familiar vocabulary may sound economic, but the operative restriction or reason fails — so the sentence mislabels the situation.
 
-Here you must apply ideas from supply, demand, and market interaction to a concrete situation rather than recite a definition from memory. Ownership, customer type, stakeholder group, or country of production usually decides the verdict.
+Restore the textbook test and the assertion falls away: it mislabels the category or reverses the comparison the chapter actually teaches.
 
-The statement overreaches because scarcity at capped rents often imposes search and waiting costs. The trap is to agree with the topic while missing the one detail that breaks the logic.
+The statement is false.
+', 'FALSE — Equilibrium is the price where quantity demanded equals quantity supplied, so persistent shortages or surpluses do not grow. Asking prices above equilibrium leave unsold surplus; prices below leave shortage.
 
-Because the decisive detail is wrong, mark the statement false.', 'FALSE — The claim is false. Open-market leases advertising higher rates prove equilibrium rent lies below the controlled cap.
+A ceiling below equilibrium stops price from rising to clear a shortage; surplus is the opposite problem (price too high).
 
-This statement draws on supply, demand, and market interaction. Treat it as a checklist against the core concept named in the stem, not as a general opinion about business.
+Held against the chapter test (here: equilibrium, surplus), the familiar vocabulary may sound economic, but the operative restriction or reason fails — so the sentence mislabels the situation.
 
-Applied to this claim, higher unregulated rents indicate the cap sits below market equilibrium. That is why the sentence does not survive careful reading.
+The mismatch is in the defining feature, not in a missing buzzword; fix the feature and the claim disappears.
 
-Because the decisive detail is wrong, mark the statement false.'] WHERE case_id = 'CASE 2.6.29' AND tier = 'full';
-UPDATE public.economics_cases SET tactical_explanations = ARRAY['TRUE — The claim is correct. A price floor above equilibrium prevents price from falling to eliminate surplus.
+The statement is false.
+'] WHERE case_id = 'CASE 2.6.28' AND tier = 'full';
+UPDATE public.economics_cases SET tactical_explanations = ARRAY['TRUE — Demand summarises how much buyers are willing and able to purchase at each price. Distinguish quantity demanded (along the curve) from shifts of the whole demand relationship.
 
-This statement draws on supply, demand, and market interaction. Treat it as a checklist against the core concept named in the stem, not as a general opinion about business.
+Separate movements along a curve (own-price) from shifts (costs, income, population, tastes). Equilibrium is where quantity demanded equals quantity supplied; binding floors or ceilings can create surplus or shortage when set away from that price. Focus points: demand, rent.
 
-In this setting, legal minimums block downward adjustment that would clear excess supply. The wording matches the textbook relationship without adding extra conditions.
+Map that definition onto the case where graz tenants searching legacy rent-controlled flats while open-market leases advertise higher monthly rates. The claim’s actors and constraints (here: demand, rent) line up with the concept: the sentence describes the same mechanism the chapter teaches, not a neighbouring idea with similar vocabulary.
 
-No qualifying word breaks the definition or scenario, so the answer is true.', 'TRUE — This statement is correct. Government purchase programs sometimes accompany agricultural price floors to absorb surplus.
+Nothing in the stem contradicts that reading, so the assertion stands as a correct application of the definition.
 
-The relevant theory comes from supply, demand, and market interaction. Identify which definition or relationship the sentence is trying to test before deciding true or false.
+The statement is true.
+', 'TRUE — Equilibrium is the price where quantity demanded equals quantity supplied, so persistent shortages or surpluses do not grow. Asking prices above equilibrium leave unsold surplus; prices below leave shortage.
 
-Applied carefully, official buying can offset excess supply created by high minimum prices. Nothing in the sentence stretches the concept beyond its standard use.
+Separate movements along a curve (own-price) from shifts (costs, income, population, tastes). Equilibrium is where quantity demanded equals quantity supplied; binding floors or ceilings can create surplus or shortage when set away from that price. Focus points: shortage.
 
-No qualifying word breaks the definition or scenario, so the answer is true.', 'TRUE — The claim is correct. At the floor price, quantity supplied typically exceeds quantity demanded.
+Map that definition onto the case where graz tenants searching legacy rent-controlled flats while open-market leases advertise higher monthly rates. The claim’s actors and constraints (here: shortage) line up with the concept: the sentence describes the same mechanism the chapter teaches, not a neighbouring idea with similar vocabulary.
 
-This statement draws on supply, demand, and market interaction. Treat it as a checklist against the core concept named in the stem, not as a general opinion about business.
+Under that classification the claim describes the situation correctly rather than a lookalike category.
 
-In this setting, binding high minimums leave excess supply relative to quantity demanded. The wording matches the textbook relationship without adding extra conditions.
+The statement is true.
+', 'TRUE — Use demand, supply, and equilibrium: movements along curves versus shifts, and how prices clear or fail to clear markets.
 
-The reasoning chain is complete, so mark the statement true.', 'TRUE — The claim is correct. A floor set below equilibrium is not binding because market price stays above the minimum.
+Separate movements along a curve (own-price) from shifts (costs, income, population, tastes). Equilibrium is where quantity demanded equals quantity supplied; binding floors or ceilings can create surplus or shortage when set away from that price.
 
-The scenario is a worked example of supply, demand, and market interaction. Translate the story into the textbook category first; only then judge whether the sentence describes that category accurately.
+Map that definition onto the case where graz tenants searching legacy rent-controlled flats while open-market leases advertise higher monthly rates. The claim’s actors and constraints line up with the concept: the sentence describes the same mechanism the chapter teaches, not a neighbouring idea with similar vocabulary.
 
-In this setting, non-binding floors do not constrain market-clearing prices. The wording matches the textbook relationship without adding extra conditions.
+Nothing in the stem contradicts that reading, so the assertion stands as a correct application of the definition.
 
-The reasoning chain is complete, so mark the statement true.', 'FALSE — This statement is false. Minimum prices intended to help sellers eliminate all unsold stock immediately.
+The statement is true.
+', 'FALSE — Prices in a market convey scarcity information and coordinate buyers and sellers. They are more than receipts: rising prices ration demand and attract supply, other things equal.
 
-The topic is supply, demand, and market interaction, but the decisive skill here is reading quantifiers. Words such as never, always, only, or all turn a generally true idea into a claim that can be rejected by one routine counterexample.
+Capped money rents often leave tenants facing queues and search costs; flats are not abundant under binding controls.
 
-The statement overreaches because floors above equilibrium can produce unsold surplus despite seller protection intent. The trap is to agree with the topic while missing the one detail that breaks the logic.
+Map that definition onto the case where graz tenants searching legacy rent-controlled flats while open-market leases advertise higher monthly rates. Even if the stem mentions related details, those details do not carry the claim’s conclusion — the sentence either widens the concept past its test or attaches the wrong label to the facts.
 
-Watch the absolute wording "all": exam statements often sound plausible until a single scope word turns an otherwise familiar idea into an overclaim.
+Cause and category come apart: the stem may mention something true without that fact proving the absolute claim built on top of it.
 
-The statement sounds plausible but fails on precision, so it is false.'] WHERE case_id = 'CASE 2.6.30' AND tier = 'full';
-UPDATE public.economics_cases SET tactical_explanations = ARRAY['TRUE — The claim is correct. Labour markets use wages as prices coordinating workers'' supply and employers'' demand.
+The statement is false.
+', 'FALSE — Equilibrium is the price where quantity demanded equals quantity supplied, so persistent shortages or surpluses do not grow. Asking prices above equilibrium leave unsold surplus; prices below leave shortage.
 
-This statement draws on supply, demand, and market interaction. Treat it as a checklist against the core concept named in the stem, not as a general opinion about business.
+Open-market leases at higher rates show the free-market equilibrium lies above the controlled cap, not below.
 
-In this setting, wage adjustment balances quantity supplied and demanded of labour. The wording matches the textbook relationship without adding extra conditions.
+Map that definition onto the case where graz tenants searching legacy rent-controlled flats while open-market leases advertise higher monthly rates. Even if the stem mentions related details (here: equilibrium, rent), those details do not carry the claim’s conclusion — the sentence either widens the concept past its test or attaches the wrong label to the facts.
 
-Every part of the claim aligns with the standard concept, so the statement stands.', 'TRUE — Evaluated against the textbook standard, this assertion is correct. Employers reduce quantity demanded of labour when mandatory wages rise above equilibrium.
+Restore the textbook test and the assertion falls away: it mislabels the category or reverses the comparison the chapter actually teaches.
 
-Here you must apply ideas from supply, demand, and market interaction to a concrete situation rather than recite a definition from memory. Ownership, customer type, stakeholder group, or country of production usually decides the verdict.
+The statement is false.
+'] WHERE case_id = 'CASE 2.6.29' AND tier = 'full';
+UPDATE public.economics_cases SET tactical_explanations = ARRAY['TRUE — Equilibrium is the price where quantity demanded equals quantity supplied, so persistent shortages or surpluses do not grow. Asking prices above equilibrium leave unsold surplus; prices below leave shortage.
 
-Applied carefully, higher mandated wages reduce hiring along the labour demand curve. Nothing in the sentence stretches the concept beyond its standard use.
+Separate movements along a curve (own-price) from shifts (costs, income, population, tastes). Equilibrium is where quantity demanded equals quantity supplied; binding floors or ceilings can create surplus or shortage when set away from that price. Focus points: equilibrium, surplus.
 
-No qualifying word breaks the definition or scenario, so the answer is true.', 'TRUE — This statement is correct. A minimum wage set below equilibrium is not binding for market outcomes.
+Held against the chapter test (here: equilibrium, surplus), each operative word earns its place: the category, the comparison, and the mechanism survive when checked one by one.
 
-The relevant theory comes from supply, demand, and market interaction. Identify which definition or relationship the sentence is trying to test before deciding true or false.
+A useful check is the opposite error: treat opportunity cost as the money paid, or treat one buyer’s choice as macro, or treat a shift as a movement — those near-misses fail, which confirms this wording.
 
-Applied carefully, non-binding wage floors do not alter market-clearing employment. Nothing in the sentence stretches the concept beyond its standard use.
+The statement is true.
+', 'TRUE — Equilibrium is the price where quantity demanded equals quantity supplied, so persistent shortages or surpluses do not grow. Asking prices above equilibrium leave unsold surplus; prices below leave shortage.
 
-Every part of the claim aligns with the standard concept, so the statement stands.', 'FALSE — Evaluated against the textbook standard, this assertion is false. A minimum wage above the market-clearing wage eliminates all unemployment immediately.
+Separate movements along a curve (own-price) from shifts (costs, income, population, tastes). Equilibrium is where quantity demanded equals quantity supplied; binding floors or ceilings can create surplus or shortage when set away from that price. Focus points: Government, surplus.
 
-The topic is supply, demand, and market interaction, but the decisive skill here is reading quantifiers. Words such as never, always, only, or all turn a generally true idea into a claim that can be rejected by one routine counterexample.
+Held against the chapter test (here: Government, surplus), each operative word earns its place: the category, the comparison, and the mechanism survive when checked one by one.
 
-The statement overreaches because binding floors can produce surplus labour, often appearing as unemployment. The trap is to agree with the topic while missing the one detail that breaks the logic.
+Nothing in the stem contradicts that reading, so the assertion stands as a correct application of the definition.
 
-Watch the absolute wording "all": exam statements often sound plausible until a single scope word turns an otherwise familiar idea into an overclaim.
+The statement is true.
+', 'TRUE — The law of demand: other things equal, a higher price reduces quantity demanded and a lower price raises it. That is a movement along demand, not automatically a demand shift.
 
-The statement sounds plausible but fails on precision, so it is false.', 'FALSE — This statement is false. At a binding minimum wage, every worker willing to work finds employment instantly.
+Separate movements along a curve (own-price) from shifts (costs, income, population, tastes). Equilibrium is where quantity demanded equals quantity supplied; binding floors or ceilings can create surplus or shortage when set away from that price.
 
-The topic is supply, demand, and market interaction, but the decisive skill here is reading quantifiers. Words such as never, always, only, or all turn a generally true idea into a claim that can be rejected by one routine counterexample.
+Held against the chapter test, each operative word earns its place: the category, the comparison, and the mechanism survive when checked one by one.
 
-The statement overreaches because shortage of jobs relative to willing workers reflects labour surplus at the floor. The trap is to agree with the topic while missing the one detail that breaks the logic.
+The sentence therefore reports the concept accurately for this item once the definition is held fixed.
 
-Watch the absolute wording "every": exam statements often sound plausible until a single scope word turns an otherwise familiar idea into an overclaim.
+The statement is true.
+', 'TRUE — Equilibrium is the price where quantity demanded equals quantity supplied, so persistent shortages or surpluses do not grow. Asking prices above equilibrium leave unsold surplus; prices below leave shortage.
 
-The statement sounds plausible but fails on precision, so it is false.'] WHERE case_id = 'CASE 2.6.31' AND tier = 'full';
-UPDATE public.economics_cases SET tactical_explanations = ARRAY['TRUE — The claim is correct. Higher feed costs can shift supply leftward for raw milk at each farmgate price.
+Separate movements along a curve (own-price) from shifts (costs, income, population, tastes). Equilibrium is where quantity demanded equals quantity supplied; binding floors or ceilings can create surplus or shortage when set away from that price. Focus points: equilibrium.
 
-This statement draws on supply, demand, and market interaction. Treat it as a checklist against the core concept named in the stem, not as a general opinion about business.
+Held against the chapter test (here: equilibrium), each operative word earns its place: the category, the comparison, and the mechanism survive when checked one by one.
 
-In this setting, rising input costs reduce quantity supplied at each price. The wording matches the textbook relationship without adding extra conditions.
+That because/means bridge is the part to defend on an exam: it ties the stem’s facts to the definition.
 
-The reasoning chain is complete, so mark the statement true.', 'TRUE — Evaluated against the textbook standard, this assertion is correct. Cutting quota levels after a glut can help move the market toward equilibrium by reducing surplus.
+The statement is true.
+', 'FALSE — A market is any arrangement where buyers and sellers interact to trade at prices. It need not be face-to-face; online listings still coordinate voluntary exchange when both sides expect to gain.
 
-The relevant theory comes from supply, demand, and market interaction. Identify which definition or relationship the sentence is trying to test before deciding true or false.
+Walk the definition onto the stem’s actors and constraints, then spot where the sentence’s category or absolute reason breaks that check.
 
-Applied carefully, restricting supply eases excess supply at unchanged prices. Nothing in the sentence stretches the concept beyond its standard use.
+Held against the chapter test, the familiar vocabulary may sound economic, but the operative restriction or reason fails — so the sentence mislabels the situation.
 
-No qualifying word breaks the definition or scenario, so the answer is true.', 'FALSE — On the Fuhrmann definition used in the entrance exam, the sentence is false. If farmgate price stays fixed while feed costs rise, farmers expand output to celebrate.
+Absolute wording is the trap: economics definitions leave room for counterexamples — another actor, another scope, a non-money cost, or a public function that still exists. One clear counterexample rejects the sentence.
 
-The scenario is a worked example of supply, demand, and market interaction. Translate the story into the textbook category first; only then judge whether the sentence describes that category accurately.
+The statement is false.
+'] WHERE case_id = 'CASE 2.6.30' AND tier = 'full';
+UPDATE public.economics_cases SET tactical_explanations = ARRAY['TRUE — In a labour market the wage coordinates workers’ supply and employers’ demand. A binding minimum above equilibrium reduces quantity of labour demanded and can leave surplus labour; a floor below equilibrium is not binding.
 
-Applied to this claim, higher costs at fixed price typically reduce profitable supply. That is why the sentence does not survive careful reading.
+Separate movements along a curve (own-price) from shifts (costs, income, population, tastes). Equilibrium is where quantity demanded equals quantity supplied; binding floors or ceilings can create surplus or shortage when set away from that price. Focus points: supply, demand.
 
-Once the overclaim or mislabel is exposed, the only consistent answer is false.', 'FALSE — The claim is false. A cooperative quota limiting deliveries increases quantity supplied by forcing extra production.
+Held against the chapter test (here: supply, demand), each operative word earns its place: the category, the comparison, and the mechanism survive when checked one by one.
 
-This statement draws on supply, demand, and market interaction. Treat it as a checklist against the core concept named in the stem, not as a general opinion about business.
+Under that classification the claim describes the situation correctly rather than a lookalike category.
 
-Applied to this claim, quotas restrict supply rather than expand it. That is why the sentence does not survive careful reading.
+The statement is true.
+', 'TRUE — Equilibrium is the price where quantity demanded equals quantity supplied, so persistent shortages or surpluses do not grow. Asking prices above equilibrium leave unsold surplus; prices below leave shortage.
 
-Because the decisive detail is wrong, mark the statement false.', 'FALSE — On the Fuhrmann definition used in the entrance exam, the sentence is false. Surging milk output without matching demand creates shortage at the old farmgate price.
+A binding minimum wage above equilibrium reduces quantity of labour demanded by employers.
 
-This statement draws on supply, demand, and market interaction. Treat it as a checklist against the core concept named in the stem, not as a general opinion about business.
+Held against the chapter test (here: equilibrium), each operative word earns its place: the category, the comparison, and the mechanism survive when checked one by one.
 
-Applied to this claim, output surges at fixed demand tend toward surplus, not shortage. That is why the sentence does not survive careful reading.
+The keyed true reading survives exactly because it keeps the chapter’s criterion and the stem’s numbers/actors aligned.
 
-Once the overclaim or mislabel is exposed, the only consistent answer is false.'] WHERE case_id = 'CASE 2.6.32' AND tier = 'full';
-UPDATE public.economics_cases SET tactical_explanations = ARRAY['TRUE — Evaluated against the textbook standard, this assertion is correct. Inflation is measured using price indices that track many goods and services together.
+The statement is true.
+', 'TRUE — In a labour market the wage coordinates workers’ supply and employers’ demand. A binding minimum above equilibrium reduces quantity of labour demanded and can leave surplus labour; a floor below equilibrium is not binding.
 
-The relevant theory comes from supply, demand, and market interaction. Identify which definition or relationship the sentence is trying to test before deciding true or false.
+Separate movements along a curve (own-price) from shifts (costs, income, population, tastes). Equilibrium is where quantity demanded equals quantity supplied; binding floors or ceilings can create surplus or shortage when set away from that price. Focus points: wage, equilibrium.
 
-Applied carefully, broad indices capture general price level changes. Nothing in the sentence stretches the concept beyond its standard use.
+Held against the chapter test (here: wage, equilibrium), each operative word earns its place: the category, the comparison, and the mechanism survive when checked one by one.
 
-No qualifying word breaks the definition or scenario, so the answer is true.', 'TRUE — The claim is correct. Central banks often monitor inflation when setting policies that influence interest rates.
+A useful check is the opposite error: treat opportunity cost as the money paid, or treat one buyer’s choice as macro, or treat a shift as a movement — those near-misses fail, which confirms this wording.
 
-The scenario is a worked example of supply, demand, and market interaction. Translate the story into the textbook category first; only then judge whether the sentence describes that category accurately.
+The statement is true.
+', 'FALSE — In a labour market the wage coordinates workers’ supply and employers’ demand. A binding minimum above equilibrium reduces quantity of labour demanded and can leave surplus labour; a floor below equilibrium is not binding.
 
-In this setting, policy makers respond to inflation trends with monetary tools. The wording matches the textbook relationship without adding extra conditions.
+A binding minimum wage can create unemployment (surplus of labour); it does not eliminate all unemployment immediately.
 
-No qualifying word breaks the definition or scenario, so the answer is true.', 'TRUE — This statement is correct. Households purchasing the same basket notice inflation when that basket costs more over time.
+Held against the chapter test (here: wage), the familiar vocabulary may sound economic, but the operative restriction or reason fails — so the sentence mislabels the situation.
 
-Here you must apply ideas from supply, demand, and market interaction to a concrete situation rather than recite a definition from memory. Ownership, customer type, stakeholder group, or country of production usually decides the verdict.
+Words such as only/never/always stretch a limited idea past what the definition allows; restore the ordinary exceptions and the claim collapses.
 
-Applied carefully, rising cost of a typical basket signals higher general prices. Nothing in the sentence stretches the concept beyond its standard use.
+The statement is false.
+', 'FALSE — In a labour market the wage coordinates workers’ supply and employers’ demand. A binding minimum above equilibrium reduces quantity of labour demanded and can leave surplus labour; a floor below equilibrium is not binding.
 
-The reasoning chain is complete, so mark the statement true.', 'TRUE — On the Fuhrmann definition used in the entrance exam, the sentence is correct. Moderate inflation reduces the real purchasing power of money held without interest.
+At a binding minimum wage, some willing workers may not find jobs — not instant full employment.
 
-This statement draws on supply, demand, and market interaction. Treat it as a checklist against the core concept named in the stem, not as a general opinion about business.
+Held against the chapter test (here: wage), the familiar vocabulary may sound economic, but the operative restriction or reason fails — so the sentence mislabels the situation.
 
-In this setting, higher price levels buy fewer goods per currency unit. The wording matches the textbook relationship without adding extra conditions.
+The absolute quantifier is doing the damage. Soften it to the chapter’s actual scope and the remaining content no longer supports a false blanket rule.
 
-The reasoning chain is complete, so mark the statement true.', 'FALSE — Evaluated against the textbook standard, this assertion is false. Inflation describes a one-day sale discount on a single retail product.
+The statement is false.
+'] WHERE case_id = 'CASE 2.6.31' AND tier = 'full';
+UPDATE public.economics_cases SET tactical_explanations = ARRAY['TRUE — Own-price changes move along a demand or supply curve. Non-price factors — input costs, population, income, tastes — shift the curve and can change equilibrium price and quantity.
 
-The relevant theory comes from supply, demand, and market interaction. Identify which definition or relationship the sentence is trying to test before deciding true or false.
+Higher feed costs raise milk production costs — supply of raw milk shifts left at each farmgate price.
 
-The statement overreaches because single-product price cuts are not economy-wide inflation. The trap is to agree with the topic while missing the one detail that breaks the logic.
+Map that definition onto the case where an Alpine dairy cooperative setting a seasonal milk quota after feed costs jump and output surges. The claim’s actors and constraints (here: shift, supply) line up with the concept: the sentence describes the same mechanism the chapter teaches, not a neighbouring idea with similar vocabulary.
 
-Because the decisive detail is wrong, mark the statement false.'] WHERE case_id = 'CASE 2.6.33' AND tier = 'full';
-UPDATE public.economics_cases SET tactical_explanations = ARRAY['TRUE — On the Fuhrmann definition used in the entrance exam, the sentence is correct. Inflation from monetary expansion differs from a single crop failure raising one food price.
+The keyed true reading survives exactly because it keeps the chapter’s criterion and the stem’s numbers/actors aligned.
 
-This statement draws on supply, demand, and market interaction. Treat it as a checklist against the core concept named in the stem, not as a general opinion about business.
+The statement is true.
+', 'TRUE — Equilibrium is the price where quantity demanded equals quantity supplied, so persistent shortages or surpluses do not grow. Asking prices above equilibrium leave unsold surplus; prices below leave shortage.
 
-In this setting, general inflation differs from isolated relative price spikes. The wording matches the textbook relationship without adding extra conditions.
+Cutting quotas after a glut reduces quantity supplied and can help clear surplus toward equilibrium.
 
-Every part of the claim aligns with the standard concept, so the statement stands.', 'TRUE — The claim is correct. If everyone spends newly printed money quickly, aggregate demand can rise faster than supply.
+Map that definition onto the case where an Alpine dairy cooperative setting a seasonal milk quota after feed costs jump and output surges. The claim’s actors and constraints (here: quota, equilibrium, surplus) line up with the concept: the sentence describes the same mechanism the chapter teaches, not a neighbouring idea with similar vocabulary.
 
-The scenario is a worked example of supply, demand, and market interaction. Translate the story into the textbook category first; only then judge whether the sentence describes that category accurately.
+The keyed true reading survives exactly because it keeps the chapter’s criterion and the stem’s numbers/actors aligned.
 
-In this setting, spending surges can bid up prices when supply responds slowly. The wording matches the textbook relationship without adding extra conditions.
+The statement is true.
+', 'FALSE — Prices in a market convey scarcity information and coordinate buyers and sellers. They are more than receipts: rising prices ration demand and attract supply, other things equal.
 
-No qualifying word breaks the definition or scenario, so the answer is true.', 'TRUE — On the Fuhrmann definition used in the entrance exam, the sentence is correct. Inflation may accelerate when money supply growth outpaces growth in real output.
+Higher feed costs discourage expansion at a fixed farmgate price; farmers do not expand to celebrate.
 
-The scenario is a worked example of supply, demand, and market interaction. Translate the story into the textbook category first; only then judge whether the sentence describes that category accurately.
+Map that definition onto the case where an Alpine dairy cooperative setting a seasonal milk quota after feed costs jump and output surges. Even if the stem mentions related details, those details do not carry the claim’s conclusion — the sentence either widens the concept past its test or attaches the wrong label to the facts.
 
-In this setting, excess money relative to goods tends to raise general prices. The wording matches the textbook relationship without adding extra conditions.
+The mismatch is in the defining feature, not in a missing buzzword; fix the feature and the claim disappears.
 
-No qualifying word breaks the definition or scenario, so the answer is true.', 'FALSE — On the Fuhrmann definition used in the entrance exam, the sentence is false. Holding other factors fixed, larger money supply reduces spending pressure on limited goods.
+The statement is false.
+', 'FALSE — The law of supply: other things equal, a higher price raises quantity supplied. Higher input costs typically shift supply left; cheaper inputs shift it right.
 
-This statement draws on supply, demand, and market interaction. Treat it as a checklist against the core concept named in the stem, not as a general opinion about business.
+Walk the definition onto the stem’s actors and constraints, then spot where the sentence’s category or absolute reason breaks that check. Focus points: quota.
 
-Applied to this claim, greater money supply typically increases nominal spending pressure. That is why the sentence does not survive careful reading.
+Map that definition onto the case where an Alpine dairy cooperative setting a seasonal milk quota after feed costs jump and output surges. Even if the stem mentions related details (here: quota), those details do not carry the claim’s conclusion — the sentence either widens the concept past its test or attaches the wrong label to the facts.
 
-The statement sounds plausible but fails on precision, so it is false.', 'FALSE — The claim is false. Too much money chasing too few goods explains deflation in monetary economics.
+Restore the textbook test and the assertion falls away: it mislabels the category or reverses the comparison the chapter actually teaches.
 
-This statement draws on supply, demand, and market interaction. Treat it as a checklist against the core concept named in the stem, not as a general opinion about business.
+The statement is false.
+', 'FALSE — Equilibrium is the price where quantity demanded equals quantity supplied, so persistent shortages or surpluses do not grow. Asking prices above equilibrium leave unsold surplus; prices below leave shortage.
 
-Applied to this claim, that phrase describes inflationary pressure, not deflation. That is why the sentence does not survive careful reading.
+Surging milk output without matching demand creates surplus at the old price, not shortage.
 
-Once the overclaim or mislabel is exposed, the only consistent answer is false.'] WHERE case_id = 'CASE 2.6.34' AND tier = 'full';
-UPDATE public.economics_cases SET tactical_explanations = ARRAY['TRUE — Evaluated against the textbook standard, this assertion is correct. Shopkeepers reporting broadly rising supplier invoices suggest upward pressure on the price level.
+Map that definition onto the case where an Alpine dairy cooperative setting a seasonal milk quota after feed costs jump and output surges. Even if the stem mentions related details (here: demand, shortage), those details do not carry the claim’s conclusion — the sentence either widens the concept past its test or attaches the wrong label to the facts.
 
-The relevant theory comes from supply, demand, and market interaction. Identify which definition or relationship the sentence is trying to test before deciding true or false.
+Restore the textbook test and the assertion falls away: it mislabels the category or reverses the comparison the chapter actually teaches.
 
-Applied carefully, widespread input price rises can feed general inflation. Nothing in the sentence stretches the concept beyond its standard use.
+The statement is false.
+'] WHERE case_id = 'CASE 2.6.32' AND tier = 'full';
+UPDATE public.economics_cases SET tactical_explanations = ARRAY['TRUE — Prices in a market convey scarcity information and coordinate buyers and sellers. They are more than receipts: rising prices ration demand and attract supply, other things equal.
 
-Every part of the claim aligns with the standard concept, so the statement stands.', 'TRUE — The claim is correct. Inflation erodes the real value of cash savings when prices rise faster than interest earned.
+Tie the claim to limited means versus unlimited ends, to goods versus services, or to the household/entrepreneur role actually performing the action in the stem. Focus points: Inflation, goods, services.
 
-The scenario is a worked example of supply, demand, and market interaction. Translate the story into the textbook category first; only then judge whether the sentence describes that category accurately.
+Held against the chapter test (here: Inflation, goods, services), each operative word earns its place: the category, the comparison, and the mechanism survive when checked one by one.
 
-In this setting, higher price levels reduce what saved money buys. The wording matches the textbook relationship without adding extra conditions.
+The sentence therefore reports the concept accurately for this item once the definition is held fixed.
 
-Every part of the claim aligns with the standard concept, so the statement stands.', 'TRUE — This statement is correct. Funding repairs through new money may increase spending before additional goods and services appear.
+The statement is true.
+', 'TRUE — Use demand, supply, and equilibrium: movements along curves versus shifts, and how prices clear or fail to clear markets.
 
-The relevant theory comes from supply, demand, and market interaction. Identify which definition or relationship the sentence is trying to test before deciding true or false.
+Anchor the claim in money’s functions, the circular flow of income and spending, public-good properties, transfers versus pure public provision, or gains from specialisation. Focus points: inflation.
 
-Applied carefully, spending can rise ahead of supply when money supply expands. Nothing in the sentence stretches the concept beyond its standard use.
+Held against the chapter test (here: inflation), each operative word earns its place: the category, the comparison, and the mechanism survive when checked one by one.
 
-Every part of the claim aligns with the standard concept, so the statement stands.', 'TRUE — The claim is correct. Rapid note issuance without matching output growth can contribute to inflationary pressure.
+Nothing in the stem contradicts that reading, so the assertion stands as a correct application of the definition.
 
-This statement draws on supply, demand, and market interaction. Treat it as a checklist against the core concept named in the stem, not as a general opinion about business.
+The statement is true.
+', 'TRUE — Use demand, supply, and equilibrium: movements along curves versus shifts, and how prices clear or fail to clear markets.
 
-In this setting, excess money growth relative to goods can raise general prices. The wording matches the textbook relationship without adding extra conditions.
+Tie the claim to limited means versus unlimited ends, to goods versus services, or to the household/entrepreneur role actually performing the action in the stem. Focus points: inflation.
 
-The reasoning chain is complete, so mark the statement true.', 'TRUE — Evaluated against the textbook standard, this assertion is correct. Policymakers weighing note issuance must consider whether output can absorb extra spending.
+Held against the chapter test (here: inflation), each operative word earns its place: the category, the comparison, and the mechanism survive when checked one by one.
 
-Here you must apply ideas from supply, demand, and market interaction to a concrete situation rather than recite a definition from memory. Ownership, customer type, stakeholder group, or country of production usually decides the verdict.
+Under that classification the claim describes the situation correctly rather than a lookalike category.
 
-Applied carefully, supply capacity matters when evaluating inflation risk from monetary expansion. Nothing in the sentence stretches the concept beyond its standard use.
+The statement is true.
+', 'TRUE — Use demand, supply, and equilibrium: movements along curves versus shifts, and how prices clear or fail to clear markets.
 
-Every part of the claim aligns with the standard concept, so the statement stands.'] WHERE case_id = 'CASE 2.6.35' AND tier = 'full';
-UPDATE public.economics_cases SET tactical_explanations = ARRAY['TRUE — This statement is correct. Higher interest rates can reduce borrowing and spending, easing inflationary demand pressure.
+Anchor the claim in money’s functions, the circular flow of income and spending, public-good properties, transfers versus pure public provision, or gains from specialisation. Focus points: inflation.
 
-The relevant theory comes from supply, demand, and market interaction. Identify which definition or relationship the sentence is trying to test before deciding true or false.
+Held against the chapter test (here: inflation), each operative word earns its place: the category, the comparison, and the mechanism survive when checked one by one.
 
-Applied carefully, costlier credit dampens spending that bids up prices. Nothing in the sentence stretches the concept beyond its standard use.
+Under that classification the claim describes the situation correctly rather than a lookalike category.
 
-Every part of the claim aligns with the standard concept, so the statement stands.', 'TRUE — On the Fuhrmann definition used in the entrance exam, the sentence is correct. Higher rates reward saving and can shift spending from today to later periods.
+The statement is true.
+', 'FALSE — Use demand, supply, and equilibrium: movements along curves versus shifts, and how prices clear or fail to clear markets.
 
-This statement draws on supply, demand, and market interaction. Treat it as a checklist against the core concept named in the stem, not as a general opinion about business.
+A one-day sale discount on one product is not inflation — inflation is a general price-level rise.
 
-In this setting, increased return on saving reduces current consumption demand. The wording matches the textbook relationship without adding extra conditions.
+Held against the chapter test (here: Inflation), the familiar vocabulary may sound economic, but the operative restriction or reason fails — so the sentence mislabels the situation.
 
-Every part of the claim aligns with the standard concept, so the statement stands.', 'TRUE — This statement is correct. Interest rate increases operate partly by making loans for homes and equipment more expensive.
+The mismatch is in the defining feature, not in a missing buzzword; fix the feature and the claim disappears.
 
-The relevant theory comes from supply, demand, and market interaction. Identify which definition or relationship the sentence is trying to test before deciding true or false.
+The statement is false.
+'] WHERE case_id = 'CASE 2.6.33' AND tier = 'full';
+UPDATE public.economics_cases SET tactical_explanations = ARRAY['TRUE — Prices in a market convey scarcity information and coordinate buyers and sellers. They are more than receipts: rising prices ration demand and attract supply, other things equal.
 
-Applied carefully, costlier loans reduce quantity demanded for credit-sensitive purchases. Nothing in the sentence stretches the concept beyond its standard use.
+Monetary-expansion inflation differs from a single crop failure that raises one food price.
 
-The reasoning chain is complete, so mark the statement true.', 'TRUE — Evaluated against the textbook standard, this assertion is correct. Monetary tightening through higher rates aims to align money growth with sustainable output.
+Held against the chapter test (here: Inflation), each operative word earns its place: the category, the comparison, and the mechanism survive when checked one by one.
 
-The relevant theory comes from supply, demand, and market interaction. Identify which definition or relationship the sentence is trying to test before deciding true or false.
+Under that classification the claim describes the situation correctly rather than a lookalike category.
 
-Applied carefully, policy seeks to prevent excess money from outpacing real production. Nothing in the sentence stretches the concept beyond its standard use.
+The statement is true.
+', 'TRUE — The law of supply: other things equal, a higher price raises quantity supplied. Higher input costs typically shift supply left; cheaper inputs shift it right.
 
-No qualifying word breaks the definition or scenario, so the answer is true.', 'TRUE — Evaluated against the textbook standard, this assertion is correct. Central banks may raise policy rates when inflation persistently exceeds target.
+Separate movements along a curve (own-price) from shifts (costs, income, population, tastes). Equilibrium is where quantity demanded equals quantity supplied; binding floors or ceilings can create surplus or shortage when set away from that price. Focus points: demand, supply.
 
-Here you must apply ideas from supply, demand, and market interaction to a concrete situation rather than recite a definition from memory. Ownership, customer type, stakeholder group, or country of production usually decides the verdict.
+Held against the chapter test (here: demand, supply), each operative word earns its place: the category, the comparison, and the mechanism survive when checked one by one.
 
-Applied carefully, tighter monetary policy responds to sustained price level increases. Nothing in the sentence stretches the concept beyond its standard use.
+Under that classification the claim describes the situation correctly rather than a lookalike category.
 
-The reasoning chain is complete, so mark the statement true.'] WHERE case_id = 'CASE 2.6.36' AND tier = 'full';
-UPDATE public.economics_cases SET tactical_explanations = ARRAY['TRUE — This statement is correct. Higher mortgage rates following policy tightening can reduce quantity demanded for new housing loans.
+The statement is true.
+', 'TRUE — The law of supply: other things equal, a higher price raises quantity supplied. Higher input costs typically shift supply left; cheaper inputs shift it right.
 
-The relevant theory comes from supply, demand, and market interaction. Identify which definition or relationship the sentence is trying to test before deciding true or false.
+Separate movements along a curve (own-price) from shifts (costs, income, population, tastes). Equilibrium is where quantity demanded equals quantity supplied; binding floors or ceilings can create surplus or shortage when set away from that price. Focus points: Inflation, supply.
 
-Applied carefully, costlier mortgages reduce borrowing for home purchases. Nothing in the sentence stretches the concept beyond its standard use.
+Held against the chapter test (here: Inflation, supply), each operative word earns its place: the category, the comparison, and the mechanism survive when checked one by one.
 
-No qualifying word breaks the definition or scenario, so the answer is true.', 'TRUE — The claim is correct. Central banks face a trade-off timing challenge because rate effects appear with lags.
+Nothing in the stem contradicts that reading, so the assertion stands as a correct application of the definition.
 
-The scenario is a worked example of supply, demand, and market interaction. Translate the story into the textbook category first; only then judge whether the sentence describes that category accurately.
+The statement is true.
+', 'FALSE — The law of supply: other things equal, a higher price raises quantity supplied. Higher input costs typically shift supply left; cheaper inputs shift it right.
 
-In this setting, monetary policy influences inflation gradually, not instantly. The wording matches the textbook relationship without adding extra conditions.
+Larger money supply increases spending pressure on limited goods, other things equal — it does not reduce it.
 
-No qualifying word breaks the definition or scenario, so the answer is true.', 'TRUE — This statement is correct. Tightening monetary policy typically involves raising key interest rates or reducing money growth.
+Held against the chapter test (here: supply, goods), the familiar vocabulary may sound economic, but the operative restriction or reason fails — so the sentence mislabels the situation.
 
-The relevant theory comes from supply, demand, and market interaction. Identify which definition or relationship the sentence is trying to test before deciding true or false.
+The mismatch is in the defining feature, not in a missing buzzword; fix the feature and the claim disappears.
 
-Applied carefully, tighter policy restricts monetary conditions to cool inflation. Nothing in the sentence stretches the concept beyond its standard use.
+The statement is false.
+', 'FALSE — Use demand, supply, and equilibrium: movements along curves versus shifts, and how prices clear or fail to clear markets.
 
-No qualifying word breaks the definition or scenario, so the answer is true.', 'FALSE — The claim is false. Business investment accelerates when higher rates raise the cost of financed equipment purchases.
+Salary, registration status, or use of money does not abolish scarcity, redefine goods as services, or bar households from exchange. Absolute exclusions are the usual failure mode. Focus points: goods.
 
-The scenario is a worked example of supply, demand, and market interaction. Translate the story into the textbook category first; only then judge whether the sentence describes that category accurately.
+Held against the chapter test (here: goods), the familiar vocabulary may sound economic, but the operative restriction or reason fails — so the sentence mislabels the situation.
 
-Applied to this claim, higher financing costs typically discourage investment spending. That is why the sentence does not survive careful reading.
+The mismatch is in the defining feature, not in a missing buzzword; fix the feature and the claim disappears.
 
-Once the overclaim or mislabel is exposed, the only consistent answer is false.', 'FALSE — The claim is false. Policy tightening can never reduce inflation because spending is fixed.
+The statement is false.
+'] WHERE case_id = 'CASE 2.6.34' AND tier = 'full';
+UPDATE public.economics_cases SET tactical_explanations = ARRAY['TRUE — Prices in a market convey scarcity information and coordinate buyers and sellers. They are more than receipts: rising prices ration demand and attract supply, other things equal.
 
-Although the subject matter is supply, demand, and market interaction, this is really a logic check on overstatement. Non-profit surpluses, mixed economies, and partial market failure are classic cases where absolute wording fails.
+Walk the definition onto the stem’s actors and constraints, then confirm the sentence’s category and reason both survive that check.
 
-Applied to this claim, cooling demand through tighter policy can lower inflation over time. That is why the sentence does not survive careful reading.
+Map that definition onto the case where policymakers debating faster note issuance to fund bridge repairs while shopkeepers report rising supplier invoices. The claim’s actors and constraints line up with the concept: the sentence describes the same mechanism the chapter teaches, not a neighbouring idea with similar vocabulary.
 
-Watch the absolute wording "never": exam statements often sound plausible until a single scope word turns an otherwise familiar idea into an overclaim.
+Under that classification the claim describes the situation correctly rather than a lookalike category.
 
-The statement sounds plausible but fails on precision, so it is false.'] WHERE case_id = 'CASE 2.6.37' AND tier = 'full';
-UPDATE public.economics_cases SET tactical_explanations = ARRAY['TRUE — Evaluated against the textbook standard, this assertion is correct. Higher saving returns after rate rises may shift some spending from consumption to deposits.
+The statement is true.
+', 'TRUE — Prices in a market convey scarcity information and coordinate buyers and sellers. They are more than receipts: rising prices ration demand and attract supply, other things equal.
 
-The relevant theory comes from supply, demand, and market interaction. Identify which definition or relationship the sentence is trying to test before deciding true or false.
+Anchor the claim in money’s functions, the circular flow of income and spending, public-good properties, transfers versus pure public provision, or gains from specialisation. Focus points: Inflation.
 
-Applied carefully, better deposit rates encourage saving over immediate spending. Nothing in the sentence stretches the concept beyond its standard use.
+Map that definition onto the case where policymakers debating faster note issuance to fund bridge repairs while shopkeepers report rising supplier invoices. The claim’s actors and constraints (here: Inflation) line up with the concept: the sentence describes the same mechanism the chapter teaches, not a neighbouring idea with similar vocabulary.
 
-Every part of the claim aligns with the standard concept, so the statement stands.', 'TRUE — This statement is correct. Postponing a flat purchase reduces current quantity demanded for housing credit.
+Nothing in the stem contradicts that reading, so the assertion stands as a correct application of the definition.
 
-The relevant theory comes from supply, demand, and market interaction. Identify which definition or relationship the sentence is trying to test before deciding true or false.
+The statement is true.
+', 'TRUE — Use demand, supply, and equilibrium: movements along curves versus shifts, and how prices clear or fail to clear markets.
 
-Applied carefully, delayed buying lowers loan demand at present rates. Nothing in the sentence stretches the concept beyond its standard use.
+Funding repairs with new money can raise spending before extra goods appear — demand pressure.
 
-Every part of the claim aligns with the standard concept, so the statement stands.', 'FALSE — On the Fuhrmann definition used in the entrance exam, the sentence is false. Central bank rate rises aim to accelerate spending that contributes to inflation.
+Map that definition onto the case where policymakers debating faster note issuance to fund bridge repairs while shopkeepers report rising supplier invoices. The claim’s actors and constraints (here: goods, services) line up with the concept: the sentence describes the same mechanism the chapter teaches, not a neighbouring idea with similar vocabulary.
 
-This statement draws on supply, demand, and market interaction. Treat it as a checklist against the core concept named in the stem, not as a general opinion about business.
+Under that classification the claim describes the situation correctly rather than a lookalike category.
 
-Applied to this claim, rate increases cool spending to fight inflation. That is why the sentence does not survive careful reading.
+The statement is true.
+', 'TRUE — Use demand, supply, and equilibrium: movements along curves versus shifts, and how prices clear or fail to clear markets.
 
-Once the overclaim or mislabel is exposed, the only consistent answer is false.', 'FALSE — The claim is false. If many households delay purchases, equilibrium home prices rise because fewer buyers compete.
+Anchor the claim in money’s functions, the circular flow of income and spending, public-good properties, transfers versus pure public provision, or gains from specialisation.
 
-The scenario is a worked example of supply, demand, and market interaction. Translate the story into the textbook category first; only then judge whether the sentence describes that category accurately.
+Map that definition onto the case where policymakers debating faster note issuance to fund bridge repairs while shopkeepers report rising supplier invoices. The claim’s actors and constraints line up with the concept: the sentence describes the same mechanism the chapter teaches, not a neighbouring idea with similar vocabulary.
 
-Applied to this claim, reduced demand typically eases upward price pressure. That is why the sentence does not survive careful reading.
+The sentence therefore reports the concept accurately for this item once the definition is held fixed.
 
-The statement sounds plausible but fails on precision, so it is false.', 'FALSE — Evaluated against the textbook standard, this assertion is false. Higher mortgage reference rates reduce monthly borrowing costs for a given loan amount.
+The statement is true.
+', 'TRUE — Use demand, supply, and equilibrium: movements along curves versus shifts, and how prices clear or fail to clear markets.
 
-The relevant theory comes from supply, demand, and market interaction. Identify which definition or relationship the sentence is trying to test before deciding true or false.
+Walk the definition onto the stem’s actors and constraints, then confirm the sentence’s category and reason both survive that check.
 
-The statement overreaches because higher rates increase loan costs, not reduce them. The trap is to agree with the topic while missing the one detail that breaks the logic.
+Map that definition onto the case where policymakers debating faster note issuance to fund bridge repairs while shopkeepers report rising supplier invoices. The claim’s actors and constraints line up with the concept: the sentence describes the same mechanism the chapter teaches, not a neighbouring idea with similar vocabulary.
 
-Because the decisive detail is wrong, mark the statement false.'] WHERE case_id = 'CASE 2.6.38' AND tier = 'full';
-UPDATE public.economics_cases SET tactical_explanations = ARRAY['TRUE — The claim is correct. Graphically, a demand shift right moves equilibrium up along an upward-sloping supply curve.
+Under that classification the claim describes the situation correctly rather than a lookalike category.
 
-This statement draws on supply, demand, and market interaction. Treat it as a checklist against the core concept named in the stem, not as a general opinion about business.
+The statement is true.
+'] WHERE case_id = 'CASE 2.6.35' AND tier = 'full';
+UPDATE public.economics_cases SET tactical_explanations = ARRAY['TRUE — Demand summarises how much buyers are willing and able to purchase at each price. Distinguish quantity demanded (along the curve) from shifts of the whole demand relationship.
 
-In this setting, new intersection lies up and to the right along supply. The wording matches the textbook relationship without adding extra conditions.
+Separate movements along a curve (own-price) from shifts (costs, income, population, tastes). Equilibrium is where quantity demanded equals quantity supplied; binding floors or ceilings can create surplus or shortage when set away from that price. Focus points: demand.
 
-No qualifying word breaks the definition or scenario, so the answer is true.', 'FALSE — On the Fuhrmann definition used in the entrance exam, the sentence is false. Producers respond to higher equilibrium price by reducing quantity supplied along the supply curve.
+Held against the chapter test (here: demand), each operative word earns its place: the category, the comparison, and the mechanism survive when checked one by one.
 
-This statement draws on supply, demand, and market interaction. Treat it as a checklist against the core concept named in the stem, not as a general opinion about business.
+Under that classification the claim describes the situation correctly rather than a lookalike category.
 
-Applied to this claim, higher prices incentivise greater quantity supplied along supply. That is why the sentence does not survive careful reading.
+The statement is true.
+', 'TRUE — Own-price changes move along a demand or supply curve. Non-price factors — input costs, population, income, tastes — shift the curve and can change equilibrium price and quantity.
 
-Once the overclaim or mislabel is exposed, the only consistent answer is false.', 'FALSE — The claim is false. More buyers entering a market moves buyers along the demand curve without shifting it.
+Separate movements along a curve (own-price) from shifts (costs, income, population, tastes). Equilibrium is where quantity demanded equals quantity supplied; binding floors or ceilings can create surplus or shortage when set away from that price. Focus points: shift.
 
-This statement draws on supply, demand, and market interaction. Treat it as a checklist against the core concept named in the stem, not as a general opinion about business.
+Held against the chapter test (here: shift), each operative word earns its place: the category, the comparison, and the mechanism survive when checked one by one.
 
-Applied to this claim, more participants shift demand; own-price changes move along the curve. That is why the sentence does not survive careful reading.
+If you replaced the key term with its neighbour (accounting outlay, micro/macro swap, movement vs shift), the sentence would stop matching the stem — that contrast locks the idea.
 
-The statement sounds plausible but fails on precision, so it is false.', 'FALSE — Evaluated against the textbook standard, this assertion is false. A rightward demand shift with unchanged supply lowers both equilibrium price and quantity.
+The statement is true.
+', 'TRUE — Use demand, supply, and equilibrium: movements along curves versus shifts, and how prices clear or fail to clear markets.
 
-The relevant theory comes from supply, demand, and market interaction. Identify which definition or relationship the sentence is trying to test before deciding true or false.
+Walk the definition onto the stem’s actors and constraints, then confirm the sentence’s category and reason both survive that check.
 
-The statement overreaches because demand increases with stable supply tend to raise price and quantity. The trap is to agree with the topic while missing the one detail that breaks the logic.
+Held against the chapter test, each operative word earns its place: the category, the comparison, and the mechanism survive when checked one by one.
 
-Because the decisive detail is wrong, mark the statement false.', 'FALSE — This statement is false. After demand increases, quantity demanded stays below quantity supplied permanently.
+Under that classification the claim describes the situation correctly rather than a lookalike category.
 
-The relevant theory comes from supply, demand, and market interaction. Identify which definition or relationship the sentence is trying to test before deciding true or false.
+The statement is true.
+', 'TRUE — Use demand, supply, and equilibrium: movements along curves versus shifts, and how prices clear or fail to clear markets.
 
-The statement overreaches because new equilibrium restores equality between quantity demanded and supplied. The trap is to agree with the topic while missing the one detail that breaks the logic.
+Anchor the claim in money’s functions, the circular flow of income and spending, public-good properties, transfers versus pure public provision, or gains from specialisation.
 
-Because the decisive detail is wrong, mark the statement false.'] WHERE case_id = 'CASE 2.6.39' AND tier = 'full';
-UPDATE public.economics_cases SET tactical_explanations = ARRAY['TRUE — On the Fuhrmann definition used in the entrance exam, the sentence is correct. At the new equilibrium after supply falls, quantity demanded equals the reduced quantity supplied.
+Held against the chapter test, each operative word earns its place: the category, the comparison, and the mechanism survive when checked one by one.
 
-This statement draws on supply, demand, and market interaction. Treat it as a checklist against the core concept named in the stem, not as a general opinion about business.
+Nothing in the stem contradicts that reading, so the assertion stands as a correct application of the definition.
 
-In this setting, market clears at lower quantity with higher price. The wording matches the textbook relationship without adding extra conditions.
+The statement is true.
+', 'TRUE — Use demand, supply, and equilibrium: movements along curves versus shifts, and how prices clear or fail to clear markets.
 
-The reasoning chain is complete, so mark the statement true.', 'TRUE — This statement is correct. Buyers facing higher prices reduce quantity demanded along the demand curve after supply falls.
+Anchor the claim in money’s functions, the circular flow of income and spending, public-good properties, transfers versus pure public provision, or gains from specialisation. Focus points: inflation.
 
-The relevant theory comes from supply, demand, and market interaction. Identify which definition or relationship the sentence is trying to test before deciding true or false.
+Held against the chapter test (here: inflation), each operative word earns its place: the category, the comparison, and the mechanism survive when checked one by one.
 
-Applied carefully, price rise reduces quantity demanded along downward-sloping demand. Nothing in the sentence stretches the concept beyond its standard use.
+The sentence therefore reports the concept accurately for this item once the definition is held fixed.
 
-No qualifying word breaks the definition or scenario, so the answer is true.', 'TRUE — Evaluated against the textbook standard, this assertion is correct. A leftward supply shift with unchanged demand typically raises equilibrium price and lowers quantity.
+The statement is true.
+'] WHERE case_id = 'CASE 2.6.36' AND tier = 'full';
+UPDATE public.economics_cases SET tactical_explanations = ARRAY['TRUE — The law of demand: other things equal, a higher price reduces quantity demanded and a lower price raises it. That is a movement along demand, not automatically a demand shift.
 
-The relevant theory comes from supply, demand, and market interaction. Identify which definition or relationship the sentence is trying to test before deciding true or false.
+Separate movements along a curve (own-price) from shifts (costs, income, population, tastes). Equilibrium is where quantity demanded equals quantity supplied; binding floors or ceilings can create surplus or shortage when set away from that price.
 
-Applied carefully, reduced supply at each price raises price and cuts quantity traded. Nothing in the sentence stretches the concept beyond its standard use.
+Held against the chapter test, each operative word earns its place: the category, the comparison, and the mechanism survive when checked one by one.
 
-Every part of the claim aligns with the standard concept, so the statement stands.', 'TRUE — Evaluated against the textbook standard, this assertion is correct. Production disruptions can shift supply leftward even when buyer preferences stay constant.
+The sentence therefore reports the concept accurately for this item once the definition is held fixed.
 
-Here you must apply ideas from supply, demand, and market interaction to a concrete situation rather than recite a definition from memory. Ownership, customer type, stakeholder group, or country of production usually decides the verdict.
+The statement is true.
+', 'TRUE — Use demand, supply, and equilibrium: movements along curves versus shifts, and how prices clear or fail to clear markets.
 
-Applied carefully, supply shifters change seller offerings independent of demand. Nothing in the sentence stretches the concept beyond its standard use.
+Walk the definition onto the stem’s actors and constraints, then confirm the sentence’s category and reason both survive that check.
 
-No qualifying word breaks the definition or scenario, so the answer is true.', 'TRUE — Evaluated against the textbook standard, this assertion is correct. Graphically, a supply shift left moves equilibrium up along a downward-sloping demand curve.
+Held against the chapter test, each operative word earns its place: the category, the comparison, and the mechanism survive when checked one by one.
 
-The relevant theory comes from supply, demand, and market interaction. Identify which definition or relationship the sentence is trying to test before deciding true or false.
+Keep the reason clause: it names why the classification holds (forgone alternative, scope of analysis, price signal, or institutional rule) rather than restating the conclusion alone.
 
-Applied carefully, new intersection lies up and to the left along demand. Nothing in the sentence stretches the concept beyond its standard use.
+The statement is true.
+', 'TRUE — Use demand, supply, and equilibrium: movements along curves versus shifts, and how prices clear or fail to clear markets.
 
-The reasoning chain is complete, so mark the statement true.'] WHERE case_id = 'CASE 2.6.40' AND tier = 'full';
-UPDATE public.economics_cases SET tactical_explanations = ARRAY['TRUE — This statement is correct. Markets adjust through price when population growth increases quantity demanded at old prices.
+Anchor the claim in money’s functions, the circular flow of income and spending, public-good properties, transfers versus pure public provision, or gains from specialisation.
 
-Here you must apply ideas from supply, demand, and market interaction to a concrete situation rather than recite a definition from memory. Ownership, customer type, stakeholder group, or country of production usually decides the verdict.
+Held against the chapter test, each operative word earns its place: the category, the comparison, and the mechanism survive when checked one by one.
 
-Applied carefully, excess demand at old price pushes equilibrium upward. Nothing in the sentence stretches the concept beyond its standard use.
+Under that classification the claim describes the situation correctly rather than a lookalike category.
 
-No qualifying word breaks the definition or scenario, so the answer is true.', 'TRUE — Evaluated against the textbook standard, this assertion is correct. Population growth in a city can shift demand rightward for public transport services.
+The statement is true.
+', 'FALSE — Use demand, supply, and equilibrium: movements along curves versus shifts, and how prices clear or fail to clear markets.
 
-The relevant theory comes from supply, demand, and market interaction. Identify which definition or relationship the sentence is trying to test before deciding true or false.
+Higher rates raise financing costs and tend to slow business investment, not accelerate it.
 
-Applied carefully, more residents increase quantity demanded at each price. Nothing in the sentence stretches the concept beyond its standard use.
+Held against the chapter test, the familiar vocabulary may sound economic, but the operative restriction or reason fails — so the sentence mislabels the situation.
 
-No qualifying word breaks the definition or scenario, so the answer is true.', 'TRUE — This statement is correct. Immigration increasing local consumers can raise equilibrium apartment rents if housing supply is slow.
+Restore the textbook test and the assertion falls away: it mislabels the category or reverses the comparison the chapter actually teaches.
 
-Here you must apply ideas from supply, demand, and market interaction to a concrete situation rather than recite a definition from memory. Ownership, customer type, stakeholder group, or country of production usually decides the verdict.
+The statement is false.
+', 'FALSE — Use demand, supply, and equilibrium: movements along curves versus shifts, and how prices clear or fail to clear markets.
 
-Applied carefully, demand shift with limited short-run supply raises equilibrium price. Nothing in the sentence stretches the concept beyond its standard use.
+Do not collapse money’s three functions into one, treat one shop’s price change as inflation, or convert every tax-funded item into a pure public good. Specialisation raises output but also creates interdependence — denying either side misstates the lesson. Focus points: inflation.
 
-No qualifying word breaks the definition or scenario, so the answer is true.', 'FALSE — This statement is false. Demographic changes move buyers along the demand curve without shifting it.
+Held against the chapter test (here: inflation), the familiar vocabulary may sound economic, but the operative restriction or reason fails — so the sentence mislabels the situation.
 
-The relevant theory comes from supply, demand, and market interaction. Identify which definition or relationship the sentence is trying to test before deciding true or false.
+The absolute quantifier is doing the damage. Soften it to the chapter’s actual scope and the remaining content no longer supports a false blanket rule.
 
-The statement overreaches because population is a non-price shifter that shifts the demand curve. The trap is to agree with the topic while missing the one detail that breaks the logic.
+The statement is false.
+'] WHERE case_id = 'CASE 2.6.37' AND tier = 'full';
+UPDATE public.economics_cases SET tactical_explanations = ARRAY['TRUE — Own-price changes move along a demand or supply curve. Non-price factors — input costs, population, income, tastes — shift the curve and can change equilibrium price and quantity.
 
-Because the decisive detail is wrong, mark the statement false.', 'FALSE — This statement is false. A shrinking town population shifts demand rightward because remaining residents spend more.
+Separate movements along a curve (own-price) from shifts (costs, income, population, tastes). Equilibrium is where quantity demanded equals quantity supplied; binding floors or ceilings can create surplus or shortage when set away from that price. Focus points: shift.
 
-Here you must apply ideas from supply, demand, and market interaction to a concrete situation rather than recite a definition from memory. Ownership, customer type, stakeholder group, or country of production usually decides the verdict.
+Map that definition onto the case where a Vienna household postponing a flat purchase after the central bank raises mortgage reference rates. The claim’s actors and constraints (here: shift) line up with the concept: the sentence describes the same mechanism the chapter teaches, not a neighbouring idea with similar vocabulary.
 
-The statement overreaches because population decline typically reduces demand, not increases it automatically. The trap is to agree with the topic while missing the one detail that breaks the logic.
+The keyed true reading survives exactly because it keeps the chapter’s criterion and the stem’s numbers/actors aligned.
 
-The statement sounds plausible but fails on precision, so it is false.'] WHERE case_id = 'CASE 2.6.41' AND tier = 'full';
-UPDATE public.economics_cases SET tactical_explanations = ARRAY['TRUE — This statement is correct. A per-unit tax on producers raises effective production cost and can shift supply leftward.
+The statement is true.
+', 'TRUE — The law of demand: other things equal, a higher price reduces quantity demanded and a lower price raises it. That is a movement along demand, not automatically a demand shift.
 
-The relevant theory comes from supply, demand, and market interaction. Identify which definition or relationship the sentence is trying to test before deciding true or false.
+Separate movements along a curve (own-price) from shifts (costs, income, population, tastes). Equilibrium is where quantity demanded equals quantity supplied; binding floors or ceilings can create surplus or shortage when set away from that price.
 
-Applied carefully, taxes increase costs and reduce quantity supplied at each price. Nothing in the sentence stretches the concept beyond its standard use.
+Map that definition onto the case where a Vienna household postponing a flat purchase after the central bank raises mortgage reference rates. The claim’s actors and constraints line up with the concept: the sentence describes the same mechanism the chapter teaches, not a neighbouring idea with similar vocabulary.
 
-Every part of the claim aligns with the standard concept, so the statement stands.', 'TRUE — This statement is correct. The statutory incidence on producers can reduce market quantity below the prior equilibrium.
+Nothing in the stem contradicts that reading, so the assertion stands as a correct application of the definition.
 
-The relevant theory comes from supply, demand, and market interaction. Identify which definition or relationship the sentence is trying to test before deciding true or false.
+The statement is true.
+', 'FALSE — Use demand, supply, and equilibrium: movements along curves versus shifts, and how prices clear or fail to clear markets.
 
-Applied carefully, leftward supply shift lowers equilibrium quantity traded. Nothing in the sentence stretches the concept beyond its standard use.
+Do not collapse money’s three functions into one, treat one shop’s price change as inflation, or convert every tax-funded item into a pure public good. Specialisation raises output but also creates interdependence — denying either side misstates the lesson. Focus points: inflation.
 
-The reasoning chain is complete, so mark the statement true.', 'FALSE — On the Fuhrmann definition used in the entrance exam, the sentence is false. After a producer tax, sellers require lower prices to supply the same quantity as before.
+Map that definition onto the case where a Vienna household postponing a flat purchase after the central bank raises mortgage reference rates. Even if the stem mentions related details (here: inflation), those details do not carry the claim’s conclusion — the sentence either widens the concept past its test or attaches the wrong label to the facts.
 
-This statement draws on supply, demand, and market interaction. Treat it as a checklist against the core concept named in the stem, not as a general opinion about business.
+The mismatch is in the defining feature, not in a missing buzzword; fix the feature and the claim disappears.
 
-Applied to this claim, higher costs require higher prices to maintain the same quantity supplied. That is why the sentence does not survive careful reading.
+The statement is false.
+', 'FALSE — Equilibrium is the price where quantity demanded equals quantity supplied, so persistent shortages or surpluses do not grow. Asking prices above equilibrium leave unsold surplus; prices below leave shortage.
 
-Because the decisive detail is wrong, mark the statement false.', 'FALSE — Evaluated against the textbook standard, this assertion is false. Equilibrium price paid by buyers falls when producer taxes reduce quantity supplied.
+The claim confuses a shift with a movement, or misreads surplus/shortage signs. Cutting price raises quantity demanded; vacant stock at a sticky asking price usually signals the price is too high, not too low. Focus points: equilibrium.
 
-Here you must apply ideas from supply, demand, and market interaction to a concrete situation rather than recite a definition from memory. Ownership, customer type, stakeholder group, or country of production usually decides the verdict.
+Map that definition onto the case where a Vienna household postponing a flat purchase after the central bank raises mortgage reference rates. Even if the stem mentions related details (here: equilibrium), those details do not carry the claim’s conclusion — the sentence either widens the concept past its test or attaches the wrong label to the facts.
 
-The statement overreaches because lower supply with stable demand typically raises equilibrium price. The trap is to agree with the topic while missing the one detail that breaks the logic.
+The because-clause attaches the wrong reason to the label. A real detail (a national programme, a zero wage, shared premises, use of money) does not justify the over-broad conclusion.
 
-The statement sounds plausible but fails on precision, so it is false.', 'FALSE — Evaluated against the textbook standard, this assertion is false. Producer taxes move sellers along the supply curve without shifting it.
+The statement is false.
+', 'FALSE — Use demand, supply, and equilibrium: movements along curves versus shifts, and how prices clear or fail to clear markets.
 
-The relevant theory comes from supply, demand, and market interaction. Identify which definition or relationship the sentence is trying to test before deciding true or false.
+Higher mortgage reference rates raise monthly borrowing costs for a given loan, not reduce them.
 
-The statement overreaches because cost-changing taxes shift supply; own-price moves along the curve. The trap is to agree with the topic while missing the one detail that breaks the logic.
+Map that definition onto the case where a Vienna household postponing a flat purchase after the central bank raises mortgage reference rates. Even if the stem mentions related details, those details do not carry the claim’s conclusion — the sentence either widens the concept past its test or attaches the wrong label to the facts.
 
-Once the overclaim or mislabel is exposed, the only consistent answer is false.'] WHERE case_id = 'CASE 2.6.42' AND tier = 'full';
-UPDATE public.economics_cases SET tactical_explanations = ARRAY['TRUE — On the Fuhrmann definition used in the entrance exam, the sentence is correct. Subsidised farmers may supply more output at each market price after receiving per-unit payments.
+Swap in the correct criterion and the sentence no longer describes the case — that is enough to mark it false.
 
-This statement draws on supply, demand, and market interaction. Treat it as a checklist against the core concept named in the stem, not as a general opinion about business.
+The statement is false.
+'] WHERE case_id = 'CASE 2.6.38' AND tier = 'full';
+UPDATE public.economics_cases SET tactical_explanations = ARRAY['TRUE — Equilibrium is the price where quantity demanded equals quantity supplied, so persistent shortages or surpluses do not grow. Asking prices above equilibrium leave unsold surplus; prices below leave shortage.
 
-In this setting, lower effective costs raise quantity supplied at given prices. The wording matches the textbook relationship without adding extra conditions.
+A rightward demand shift moves equilibrium up along an upward-sloping supply curve — higher P and Q.
 
-Every part of the claim aligns with the standard concept, so the statement stands.', 'FALSE — On the Fuhrmann definition used in the entrance exam, the sentence is false. Rightward supply shifts from subsidies raise equilibrium price if demand stays unchanged.
+Held against the chapter test (here: demand, shift, equilibrium, supply), each operative word earns its place: the category, the comparison, and the mechanism survive when checked one by one.
 
-The scenario is a worked example of supply, demand, and market interaction. Translate the story into the textbook category first; only then judge whether the sentence describes that category accurately.
+If you replaced the key term with its neighbour (accounting outlay, micro/macro swap, movement vs shift), the sentence would stop matching the stem — that contrast locks the idea.
 
-Applied to this claim, more supply at unchanged demand tends to lower equilibrium price. That is why the sentence does not survive careful reading.
+The statement is true.
+', 'FALSE — Equilibrium is the price where quantity demanded equals quantity supplied, so persistent shortages or surpluses do not grow. Asking prices above equilibrium leave unsold surplus; prices below leave shortage.
 
-Because the decisive detail is wrong, mark the statement false.', 'FALSE — This statement is false. Subsidies differ from price ceilings because both cap buyer prices identically.
+Higher equilibrium price raises quantity supplied along the supply curve; producers do not reduce it.
 
-Here you must apply ideas from supply, demand, and market interaction to a concrete situation rather than recite a definition from memory. Ownership, customer type, stakeholder group, or country of production usually decides the verdict.
+Held against the chapter test (here: equilibrium, supply), the familiar vocabulary may sound economic, but the operative restriction or reason fails — so the sentence mislabels the situation.
 
-The statement overreaches because subsidies affect supply-side costs; ceilings limit legal prices. The trap is to agree with the topic while missing the one detail that breaks the logic.
+The mismatch is in the defining feature, not in a missing buzzword; fix the feature and the claim disappears.
 
-Once the overclaim or mislabel is exposed, the only consistent answer is false.', 'FALSE — Evaluated against the textbook standard, this assertion is false. Taxpayer-funded subsidies reduce quantity supplied at each price by confusing producers.
+The statement is false.
+', 'FALSE — Own-price changes move along a demand or supply curve. Non-price factors — input costs, population, income, tastes — shift the curve and can change equilibrium price and quantity.
 
-The relevant theory comes from supply, demand, and market interaction. Identify which definition or relationship the sentence is trying to test before deciding true or false.
+More buyers entering shifts the demand curve right; it is not a move along an unchanged demand curve.
 
-The statement overreaches because improved margins from subsidies typically expand supply. The trap is to agree with the topic while missing the one detail that breaks the logic.
+Held against the chapter test (here: demand), the familiar vocabulary may sound economic, but the operative restriction or reason fails — so the sentence mislabels the situation.
 
-The statement sounds plausible but fails on precision, so it is false.', 'FALSE — On the Fuhrmann definition used in the entrance exam, the sentence is false. Production subsidies lowering effective costs shift demand leftward for the subsidised good.
+The mismatch is in the defining feature, not in a missing buzzword; fix the feature and the claim disappears.
 
-This statement draws on supply, demand, and market interaction. Treat it as a checklist against the core concept named in the stem, not as a general opinion about business.
+The statement is false.
+', 'FALSE — Equilibrium is the price where quantity demanded equals quantity supplied, so persistent shortages or surpluses do not grow. Asking prices above equilibrium leave unsold surplus; prices below leave shortage.
 
-Applied to this claim, producer subsidies affect supply costs, not buyer demand directly. That is why the sentence does not survive careful reading.
+The claim confuses a shift with a movement, or misreads surplus/shortage signs. Cutting price raises quantity demanded; vacant stock at a sticky asking price usually signals the price is too high, not too low. Focus points: demand, shift, supply, equilibrium.
 
-The statement sounds plausible but fails on precision, so it is false.'] WHERE case_id = 'CASE 2.6.43' AND tier = 'full';
-UPDATE public.economics_cases SET tactical_explanations = ARRAY['TRUE — The claim is correct. Drought reducing crop yields shifts supply leftward for affected harvests at each price.
+Held against the chapter test (here: demand, shift, supply, equilibrium), the familiar vocabulary may sound economic, but the operative restriction or reason fails — so the sentence mislabels the situation.
 
-This statement draws on supply, demand, and market interaction. Treat it as a checklist against the core concept named in the stem, not as a general opinion about business.
+Restore the textbook test and the assertion falls away: it mislabels the category or reverses the comparison the chapter actually teaches.
 
-In this setting, lower output at each price reflects reduced supply. The wording matches the textbook relationship without adding extra conditions.
+The statement is false.
+', 'FALSE — The law of demand: other things equal, a higher price reduces quantity demanded and a lower price raises it. That is a movement along demand, not automatically a demand shift.
 
-No qualifying word breaks the definition or scenario, so the answer is true.', 'TRUE — This statement is correct. Importers may partially offset domestic supply shifts by increasing quantity supplied from abroad.
+After demand increases, markets adjust toward a new equilibrium where quantities match — not permanent excess demand.
 
-The relevant theory comes from supply, demand, and market interaction. Identify which definition or relationship the sentence is trying to test before deciding true or false.
+Held against the chapter test (here: demand), the familiar vocabulary may sound economic, but the operative restriction or reason fails — so the sentence mislabels the situation.
 
-Applied carefully, external supply can shift total market supply rightward. Nothing in the sentence stretches the concept beyond its standard use.
+The mismatch is in the defining feature, not in a missing buzzword; fix the feature and the claim disappears.
 
-No qualifying word breaks the definition or scenario, so the answer is true.', 'TRUE — Evaluated against the textbook standard, this assertion is correct. Short-run food markets may show sharp price spikes after sudden supply leftward shifts.
+The statement is false.
+'] WHERE case_id = 'CASE 2.6.39' AND tier = 'full';
+UPDATE public.economics_cases SET tactical_explanations = ARRAY['TRUE — Equilibrium is the price where quantity demanded equals quantity supplied, so persistent shortages or surpluses do not grow. Asking prices above equilibrium leave unsold surplus; prices below leave shortage.
 
-The relevant theory comes from supply, demand, and market interaction. Identify which definition or relationship the sentence is trying to test before deciding true or false.
+After supply falls, the new equilibrium again equates quantity demanded and the reduced quantity supplied.
 
-Applied carefully, rapid supply cuts with sticky demand raise equilibrium price quickly. Nothing in the sentence stretches the concept beyond its standard use.
+Held against the chapter test (here: equilibrium, supply), each operative word earns its place: the category, the comparison, and the mechanism survive when checked one by one.
 
-Every part of the claim aligns with the standard concept, so the statement stands.', 'TRUE — Evaluated against the textbook standard, this assertion is correct. Frost damaging orchards can raise equilibrium fruit prices if demand remains largely unchanged.
+If you replaced the key term with its neighbour (accounting outlay, micro/macro swap, movement vs shift), the sentence would stop matching the stem — that contrast locks the idea.
 
-Here you must apply ideas from supply, demand, and market interaction to a concrete situation rather than recite a definition from memory. Ownership, customer type, stakeholder group, or country of production usually decides the verdict.
+The statement is true.
+', 'TRUE — The law of demand: other things equal, a higher price reduces quantity demanded and a lower price raises it. That is a movement along demand, not automatically a demand shift.
 
-Applied carefully, leftward supply with stable demand raises equilibrium price. Nothing in the sentence stretches the concept beyond its standard use.
+Separate movements along a curve (own-price) from shifts (costs, income, population, tastes). Equilibrium is where quantity demanded equals quantity supplied; binding floors or ceilings can create surplus or shortage when set away from that price. Focus points: demand, supply.
 
-Every part of the claim aligns with the standard concept, so the statement stands.', 'FALSE — On the Fuhrmann definition used in the entrance exam, the sentence is false. Weather shocks are demand-side events identical to changes in consumer tastes.
+Held against the chapter test (here: demand, supply), each operative word earns its place: the category, the comparison, and the mechanism survive when checked one by one.
 
-This statement draws on supply, demand, and market interaction. Treat it as a checklist against the core concept named in the stem, not as a general opinion about business.
+Under that classification the claim describes the situation correctly rather than a lookalike category.
 
-Applied to this claim, weather affects supply conditions; tastes are demand shifters. That is why the sentence does not survive careful reading.
+The statement is true.
+', 'TRUE — Equilibrium is the price where quantity demanded equals quantity supplied, so persistent shortages or surpluses do not grow. Asking prices above equilibrium leave unsold surplus; prices below leave shortage.
 
-The statement sounds plausible but fails on precision, so it is false.'] WHERE case_id = 'CASE 2.6.44' AND tier = 'full';
-UPDATE public.economics_cases SET tactical_explanations = ARRAY['TRUE — The claim is correct. If buyers expect prices to fall next month, current quantity demanded may decrease today.
+Separate movements along a curve (own-price) from shifts (costs, income, population, tastes). Equilibrium is where quantity demanded equals quantity supplied; binding floors or ceilings can create surplus or shortage when set away from that price. Focus points: supply, shift, demand, equilibrium.
 
-The scenario is a worked example of supply, demand, and market interaction. Translate the story into the textbook category first; only then judge whether the sentence describes that category accurately.
+Held against the chapter test (here: supply, shift, demand, equilibrium), each operative word earns its place: the category, the comparison, and the mechanism survive when checked one by one.
 
-In this setting, expected future price cuts reduce current purchasing incentive. The wording matches the textbook relationship without adding extra conditions.
+A useful check is the opposite error: treat opportunity cost as the money paid, or treat one buyer’s choice as macro, or treat a shift as a movement — those near-misses fail, which confirms this wording.
 
-No qualifying word breaks the definition or scenario, so the answer is true.', 'TRUE — This statement is correct. Expectations of higher future petrol prices can shift current demand rightward as drivers stock up.
+The statement is true.
+', 'TRUE — Own-price changes move along a demand or supply curve. Non-price factors — input costs, population, income, tastes — shift the curve and can change equilibrium price and quantity.
 
-The relevant theory comes from supply, demand, and market interaction. Identify which definition or relationship the sentence is trying to test before deciding true or false.
+Separate movements along a curve (own-price) from shifts (costs, income, population, tastes). Equilibrium is where quantity demanded equals quantity supplied; binding floors or ceilings can create surplus or shortage when set away from that price. Focus points: shift, supply.
 
-Applied carefully, anticipating future price rises increases current quantity demanded. Nothing in the sentence stretches the concept beyond its standard use.
+Held against the chapter test (here: shift, supply), each operative word earns its place: the category, the comparison, and the mechanism survive when checked one by one.
 
-Every part of the claim aligns with the standard concept, so the statement stands.', 'TRUE — Evaluated against the textbook standard, this assertion is correct. Expected future income growth may shift current demand rightward for durable goods like appliances.
+A useful check is the opposite error: treat opportunity cost as the money paid, or treat one buyer’s choice as macro, or treat a shift as a movement — those near-misses fail, which confirms this wording.
 
-The relevant theory comes from supply, demand, and market interaction. Identify which definition or relationship the sentence is trying to test before deciding true or false.
+The statement is true.
+', 'TRUE — Equilibrium is the price where quantity demanded equals quantity supplied, so persistent shortages or surpluses do not grow. Asking prices above equilibrium leave unsold surplus; prices below leave shortage.
 
-Applied carefully, anticipated higher income raises willingness to buy now. Nothing in the sentence stretches the concept beyond its standard use.
+Separate movements along a curve (own-price) from shifts (costs, income, population, tastes). Equilibrium is where quantity demanded equals quantity supplied; binding floors or ceilings can create surplus or shortage when set away from that price. Focus points: supply, shift, equilibrium, demand.
 
-Every part of the claim aligns with the standard concept, so the statement stands.', 'FALSE — The claim is false. Expectations about future conditions move buyers along the demand curve only.
+Held against the chapter test (here: supply, shift, equilibrium, demand), each operative word earns its place: the category, the comparison, and the mechanism survive when checked one by one.
 
-This statement draws on supply, demand, and market interaction. Treat it as a checklist against the core concept named in the stem, not as a general opinion about business.
+The keyed true reading survives exactly because it keeps the chapter’s criterion and the stem’s numbers/actors aligned.
 
-Applied to this claim, expectations shift demand; own-price changes move along the curve. That is why the sentence does not survive careful reading.
+The statement is true.
+'] WHERE case_id = 'CASE 2.6.40' AND tier = 'full';
+UPDATE public.economics_cases SET tactical_explanations = ARRAY['TRUE — Own-price changes move along a demand or supply curve. Non-price factors — input costs, population, income, tastes — shift the curve and can change equilibrium price and quantity.
 
-Because the decisive detail is wrong, mark the statement false.', 'FALSE — This statement is false. Panic buying before announced rationing reflects a leftward demand shift at unchanged official prices.
+Population growth raises quantity demanded at old prices; price adjusts to ration and clear the market.
 
-The relevant theory comes from supply, demand, and market interaction. Identify which definition or relationship the sentence is trying to test before deciding true or false.
+Held against the chapter test, each operative word earns its place: the category, the comparison, and the mechanism survive when checked one by one.
 
-The statement overreaches because panic buying increases current demand before prices change. The trap is to agree with the topic while missing the one detail that breaks the logic.
+Nothing in the stem contradicts that reading, so the assertion stands as a correct application of the definition.
 
-Because the decisive detail is wrong, mark the statement false.'] WHERE case_id = 'CASE 2.6.45' AND tier = 'full';
-UPDATE public.economics_cases SET tactical_explanations = ARRAY['TRUE — This statement is correct. Labour market equilibrium occurs where quantity supplied of labour equals quantity demanded.
+The statement is true.
+', 'TRUE — Own-price changes move along a demand or supply curve. Non-price factors — input costs, population, income, tastes — shift the curve and can change equilibrium price and quantity.
 
-The relevant theory comes from supply, demand, and market interaction. Identify which definition or relationship the sentence is trying to test before deciding true or false.
+Separate movements along a curve (own-price) from shifts (costs, income, population, tastes). Equilibrium is where quantity demanded equals quantity supplied; binding floors or ceilings can create surplus or shortage when set away from that price. Focus points: shift, demand, services.
 
-Applied carefully, market-clearing wage balances worker and employer plans. Nothing in the sentence stretches the concept beyond its standard use.
+Held against the chapter test (here: shift, demand, services), each operative word earns its place: the category, the comparison, and the mechanism survive when checked one by one.
 
-Every part of the claim aligns with the standard concept, so the statement stands.', 'TRUE — Evaluated against the textbook standard, this assertion is correct. Competition among employers for scarce workers can bid wages up toward labour market equilibrium.
+A useful check is the opposite error: treat opportunity cost as the money paid, or treat one buyer’s choice as macro, or treat a shift as a movement — those near-misses fail, which confirms this wording.
 
-The relevant theory comes from supply, demand, and market interaction. Identify which definition or relationship the sentence is trying to test before deciding true or false.
+The statement is true.
+', 'TRUE — Equilibrium is the price where quantity demanded equals quantity supplied, so persistent shortages or surpluses do not grow. Asking prices above equilibrium leave unsold surplus; prices below leave shortage.
 
-Applied carefully, employer bidding raises wages when quantity demanded exceeds supplied. Nothing in the sentence stretches the concept beyond its standard use.
+Separate movements along a curve (own-price) from shifts (costs, income, population, tastes). Equilibrium is where quantity demanded equals quantity supplied; binding floors or ceilings can create surplus or shortage when set away from that price. Focus points: equilibrium, supply.
 
-The reasoning chain is complete, so mark the statement true.', 'FALSE — Evaluated against the textbook standard, this assertion is false. Higher wages typically reduce quantity supplied of labour as workers reject paid work.
+Held against the chapter test (here: equilibrium, supply), each operative word earns its place: the category, the comparison, and the mechanism survive when checked one by one.
 
-The relevant theory comes from supply, demand, and market interaction. Identify which definition or relationship the sentence is trying to test before deciding true or false.
+If you replaced the key term with its neighbour (accounting outlay, micro/macro swap, movement vs shift), the sentence would stop matching the stem — that contrast locks the idea.
 
-The statement overreaches because higher wages generally increase labour quantity supplied, ceteris paribus. The trap is to agree with the topic while missing the one detail that breaks the logic.
+The statement is true.
+', 'FALSE — Own-price changes move along a demand or supply curve. Non-price factors — input costs, population, income, tastes — shift the curve and can change equilibrium price and quantity.
 
-Because the decisive detail is wrong, mark the statement false.', 'FALSE — On the Fuhrmann definition used in the entrance exam, the sentence is false. Skill shortages in tech hiring resemble goods surpluses with downward wage pressure.
+Demographic changes shift the demand curve; they are not mere movements along it from own-price.
 
-This statement draws on supply, demand, and market interaction. Treat it as a checklist against the core concept named in the stem, not as a general opinion about business.
+Held against the chapter test (here: demand), the familiar vocabulary may sound economic, but the operative restriction or reason fails — so the sentence mislabels the situation.
 
-Applied to this claim, labour shortage implies excess demand and upward wage pressure. That is why the sentence does not survive careful reading.
+The mismatch is in the defining feature, not in a missing buzzword; fix the feature and the claim disappears.
 
-The statement sounds plausible but fails on precision, so it is false.', 'FALSE — This statement is false. Employers hire more workers when wages rise above the value of marginal output at the margin.
+The statement is false.
+', 'FALSE — Own-price changes move along a demand or supply curve. Non-price factors — input costs, population, income, tastes — shift the curve and can change equilibrium price and quantity.
 
-Here you must apply ideas from supply, demand, and market interaction to a concrete situation rather than recite a definition from memory. Ownership, customer type, stakeholder group, or country of production usually decides the verdict.
+The claim confuses a shift with a movement, or misreads surplus/shortage signs. Cutting price raises quantity demanded; vacant stock at a sticky asking price usually signals the price is too high, not too low. Focus points: demand.
 
-The statement overreaches because higher wages raise labour costs and reduce quantity demanded. The trap is to agree with the topic while missing the one detail that breaks the logic.
+Held against the chapter test (here: demand), the familiar vocabulary may sound economic, but the operative restriction or reason fails — so the sentence mislabels the situation.
 
-Because the decisive detail is wrong, mark the statement false.'] WHERE case_id = 'CASE 2.6.46' AND tier = 'full';
-UPDATE public.economics_cases SET tactical_explanations = ARRAY['TRUE — This statement is correct. Domestic equilibrium price may rise when import supply falls while demand stays constant.
+Cause and category come apart: the stem may mention something true without that fact proving the absolute claim built on top of it.
 
-Here you must apply ideas from supply, demand, and market interaction to a concrete situation rather than recite a definition from memory. Ownership, customer type, stakeholder group, or country of production usually decides the verdict.
+The statement is false.
+'] WHERE case_id = 'CASE 2.6.41' AND tier = 'full';
+UPDATE public.economics_cases SET tactical_explanations = ARRAY['TRUE — Own-price changes move along a demand or supply curve. Non-price factors — input costs, population, income, tastes — shift the curve and can change equilibrium price and quantity.
 
-Applied carefully, leftward supply with fixed demand raises equilibrium price. Nothing in the sentence stretches the concept beyond its standard use.
+Separate movements along a curve (own-price) from shifts (costs, income, population, tastes). Equilibrium is where quantity demanded equals quantity supplied; binding floors or ceilings can create surplus or shortage when set away from that price. Focus points: shift, supply.
 
-The reasoning chain is complete, so mark the statement true.', 'FALSE — Evaluated against the textbook standard, this assertion is false. Global markets isolate domestic equilibrium from supply shocks abroad completely.
+Held against the chapter test (here: shift, supply), each operative word earns its place: the category, the comparison, and the mechanism survive when checked one by one.
 
-The relevant theory comes from supply, demand, and market interaction. Identify which definition or relationship the sentence is trying to test before deciding true or false.
+A useful check is the opposite error: treat opportunity cost as the money paid, or treat one buyer’s choice as macro, or treat a shift as a movement — those near-misses fail, which confirms this wording.
 
-The statement overreaches because trade links domestic markets to foreign supply disruptions. The trap is to agree with the topic while missing the one detail that breaks the logic.
+The statement is true.
+', 'TRUE — Equilibrium is the price where quantity demanded equals quantity supplied, so persistent shortages or surpluses do not grow. Asking prices above equilibrium leave unsold surplus; prices below leave shortage.
 
-Once the overclaim or mislabel is exposed, the only consistent answer is false.', 'FALSE — Evaluated against the textbook standard, this assertion is false. Firms may seek alternate suppliers over time, shifting demand leftward permanently.
+Separate movements along a curve (own-price) from shifts (costs, income, population, tastes). Equilibrium is where quantity demanded equals quantity supplied; binding floors or ceilings can create surplus or shortage when set away from that price. Focus points: equilibrium.
 
-The relevant theory comes from supply, demand, and market interaction. Identify which definition or relationship the sentence is trying to test before deciding true or false.
+Held against the chapter test (here: equilibrium), each operative word earns its place: the category, the comparison, and the mechanism survive when checked one by one.
 
-The statement overreaches because alternate suppliers affect supply recovery, not demand destruction. The trap is to agree with the topic while missing the one detail that breaks the logic.
+If you replaced the key term with its neighbour (accounting outlay, micro/macro swap, movement vs shift), the sentence would stop matching the stem — that contrast locks the idea.
 
-Once the overclaim or mislabel is exposed, the only consistent answer is false.', 'FALSE — This statement is false. Port closures delaying imports shift demand rightward for components used in domestic assembly.
+The statement is true.
+', 'FALSE — The law of supply: other things equal, a higher price raises quantity supplied. Higher input costs typically shift supply left; cheaper inputs shift it right.
 
-The relevant theory comes from supply, demand, and market interaction. Identify which definition or relationship the sentence is trying to test before deciding true or false.
+The claim confuses a shift with a movement, or misreads surplus/shortage signs. Cutting price raises quantity demanded; vacant stock at a sticky asking price usually signals the price is too high, not too low. Focus points: supply.
 
-The statement overreaches because import delays affect supply availability, not buyer demand directly. The trap is to agree with the topic while missing the one detail that breaks the logic.
+Held against the chapter test (here: supply), the familiar vocabulary may sound economic, but the operative restriction or reason fails — so the sentence mislabels the situation.
 
-Once the overclaim or mislabel is exposed, the only consistent answer is false.', 'FALSE — On the Fuhrmann definition used in the entrance exam, the sentence is false. Shortages of imported parts increase quantity supplied of finished goods domestically.
+Swap in the correct criterion and the sentence no longer describes the case — that is enough to mark it false.
 
-This statement draws on supply, demand, and market interaction. Treat it as a checklist against the core concept named in the stem, not as a general opinion about business.
+The statement is false.
+', 'FALSE — Equilibrium is the price where quantity demanded equals quantity supplied, so persistent shortages or surpluses do not grow. Asking prices above equilibrium leave unsold surplus; prices below leave shortage.
 
-Applied to this claim, missing inputs reduce feasible output and supply of finished goods. That is why the sentence does not survive careful reading.
+The claim confuses a shift with a movement, or misreads surplus/shortage signs. Cutting price raises quantity demanded; vacant stock at a sticky asking price usually signals the price is too high, not too low. Focus points: Equilibrium.
 
-Once the overclaim or mislabel is exposed, the only consistent answer is false.'] WHERE case_id = 'CASE 2.6.47' AND tier = 'full';
-UPDATE public.economics_cases SET tactical_explanations = ARRAY['TRUE — The claim is correct. Understanding markets requires separating movement along curves from shifts caused by other factors.
+Held against the chapter test (here: Equilibrium), the familiar vocabulary may sound economic, but the operative restriction or reason fails — so the sentence mislabels the situation.
 
-This statement draws on supply, demand, and market interaction. Treat it as a checklist against the core concept named in the stem, not as a general opinion about business.
+Restore the textbook test and the assertion falls away: it mislabels the category or reverses the comparison the chapter actually teaches.
 
-In this setting, own-price changes differ from shifters on demand and supply sides. The wording matches the textbook relationship without adding extra conditions.
+The statement is false.
+', 'FALSE — Own-price changes move along a demand or supply curve. Non-price factors — input costs, population, income, tastes — shift the curve and can change equilibrium price and quantity.
 
-No qualifying word breaks the definition or scenario, so the answer is true.', 'TRUE — The claim is correct. Inflation linked to excessive money growth may be addressed by tighter policy raising interest rates.
+The claim confuses a shift with a movement, or misreads surplus/shortage signs. Cutting price raises quantity demanded; vacant stock at a sticky asking price usually signals the price is too high, not too low. Focus points: supply.
 
-This statement draws on supply, demand, and market interaction. Treat it as a checklist against the core concept named in the stem, not as a general opinion about business.
+Held against the chapter test (here: supply), the familiar vocabulary may sound economic, but the operative restriction or reason fails — so the sentence mislabels the situation.
 
-In this setting, monetary tightening cools spending that outpaces output. The wording matches the textbook relationship without adding extra conditions.
+The mismatch is in the defining feature, not in a missing buzzword; fix the feature and the claim disappears.
 
-The reasoning chain is complete, so mark the statement true.', 'TRUE — This statement is correct. Price ceilings below equilibrium create shortage; price floors above equilibrium create surplus.
+The statement is false.
+'] WHERE case_id = 'CASE 2.6.42' AND tier = 'full';
+UPDATE public.economics_cases SET tactical_explanations = ARRAY['TRUE — The law of supply: other things equal, a higher price raises quantity supplied. Higher input costs typically shift supply left; cheaper inputs shift it right.
 
-The relevant theory comes from supply, demand, and market interaction. Identify which definition or relationship the sentence is trying to test before deciding true or false.
+Per-unit subsidies lower effective costs so farmers supply more at each market price — supply right.
 
-Applied carefully, binding caps and minimums produce predictable imbalances. Nothing in the sentence stretches the concept beyond its standard use.
+Held against the chapter test (here: supply), each operative word earns its place: the category, the comparison, and the mechanism survive when checked one by one.
 
-The reasoning chain is complete, so mark the statement true.', 'TRUE — The claim is correct. Demand shifters include income, tastes, and substitute prices; supply shifters include costs and technology.
+Under that classification the claim describes the situation correctly rather than a lookalike category.
 
-This statement draws on supply, demand, and market interaction. Treat it as a checklist against the core concept named in the stem, not as a general opinion about business.
+The statement is true.
+', 'FALSE — Equilibrium is the price where quantity demanded equals quantity supplied, so persistent shortages or surpluses do not grow. Asking prices above equilibrium leave unsold surplus; prices below leave shortage.
 
-In this setting, non-price determinants shift curves on each side of the market. The wording matches the textbook relationship without adding extra conditions.
+The claim confuses a shift with a movement, or misreads surplus/shortage signs. Cutting price raises quantity demanded; vacant stock at a sticky asking price usually signals the price is too high, not too low. Focus points: supply, equilibrium, demand.
 
-The reasoning chain is complete, so mark the statement true.', 'TRUE — Evaluated against the textbook standard, this assertion is correct. Surplus and shortage signals guide competitive markets toward equilibrium through price adjustment.
+Held against the chapter test (here: supply, equilibrium, demand), the familiar vocabulary may sound economic, but the operative restriction or reason fails — so the sentence mislabels the situation.
 
-The relevant theory comes from supply, demand, and market interaction. Identify which definition or relationship the sentence is trying to test before deciding true or false.
+Swap in the correct criterion and the sentence no longer describes the case — that is enough to mark it false.
 
-Applied carefully, price changes coordinate divergent buyer and seller plans. Nothing in the sentence stretches the concept beyond its standard use.
+The statement is false.
+', 'FALSE — A market is any arrangement where buyers and sellers interact to trade at prices. It need not be face-to-face; online listings still coordinate voluntary exchange when both sides expect to gain.
 
-The reasoning chain is complete, so mark the statement true.'] WHERE case_id = 'CASE 2.6.48' AND tier = 'full';
-UPDATE public.economics_cases SET tactical_explanations = ARRAY['TRUE — This statement is correct. Raising interest rates to fight inflation may slow housing demand by increasing mortgage costs.
+Subsidies support producers; price ceilings cap buyer prices — they are not identical instruments.
 
-The relevant theory comes from supply, demand, and market interaction. Identify which definition or relationship the sentence is trying to test before deciding true or false.
+Held against the chapter test, the familiar vocabulary may sound economic, but the operative restriction or reason fails — so the sentence mislabels the situation.
 
-Applied carefully, tighter credit reduces quantity demanded for rate-sensitive purchases. Nothing in the sentence stretches the concept beyond its standard use.
+Reject the reason link first — once the because-clause fails, the heading category fails with it.
 
-The reasoning chain is complete, so mark the statement true.', 'TRUE — This statement is correct. Too much money relative to output can raise general prices even when one industry''s supply expands.
+The statement is false.
+', 'FALSE — The law of supply: other things equal, a higher price raises quantity supplied. Higher input costs typically shift supply left; cheaper inputs shift it right.
 
-Here you must apply ideas from supply, demand, and market interaction to a concrete situation rather than recite a definition from memory. Ownership, customer type, stakeholder group, or country of production usually decides the verdict.
+Subsidies increase quantity supplied at each price; they do not reduce it by confusing producers.
 
-Applied carefully, monetary inflation is economy-wide beyond single-market supply gains. Nothing in the sentence stretches the concept beyond its standard use.
+Held against the chapter test, the familiar vocabulary may sound economic, but the operative restriction or reason fails — so the sentence mislabels the situation.
 
-No qualifying word breaks the definition or scenario, so the answer is true.', 'TRUE — The claim is correct. A café facing higher coffee bean costs and rising commuter demand may see ambiguous price change.
+Restore the textbook test and the assertion falls away: it mislabels the category or reverses the comparison the chapter actually teaches.
 
-This statement draws on supply, demand, and market interaction. Treat it as a checklist against the core concept named in the stem, not as a general opinion about business.
+The statement is false.
+', 'FALSE — Own-price changes move along a demand or supply curve. Non-price factors — input costs, population, income, tastes — shift the curve and can change equilibrium price and quantity.
 
-In this setting, concurrent supply left and demand right make price outcome depend on magnitudes. The wording matches the textbook relationship without adding extra conditions.
+The claim confuses a shift with a movement, or misreads surplus/shortage signs. Cutting price raises quantity demanded; vacant stock at a sticky asking price usually signals the price is too high, not too low. Focus points: shift, demand, good.
 
-The reasoning chain is complete, so mark the statement true.', 'TRUE — The claim is correct. Markets coordinate plans through prices, while policy may alter incentives via taxes, subsidies, or rates.
+Held against the chapter test (here: shift, demand, good), the familiar vocabulary may sound economic, but the operative restriction or reason fails — so the sentence mislabels the situation.
 
-This statement draws on supply, demand, and market interaction. Treat it as a checklist against the core concept named in the stem, not as a general opinion about business.
+Restore the textbook test and the assertion falls away: it mislabels the category or reverses the comparison the chapter actually teaches.
 
-In this setting, private coordination and public policy both influence outcomes. The wording matches the textbook relationship without adding extra conditions.
+The statement is false.
+'] WHERE case_id = 'CASE 2.6.43' AND tier = 'full';
+UPDATE public.economics_cases SET tactical_explanations = ARRAY['TRUE — Own-price changes move along a demand or supply curve. Non-price factors — input costs, population, income, tastes — shift the curve and can change equilibrium price and quantity.
 
-Every part of the claim aligns with the standard concept, so the statement stands.', 'FALSE — Evaluated against the textbook standard, this assertion is false. When festival demand surges but venue capacity is fixed, equilibrium ticket price tends to fall.
+Separate movements along a curve (own-price) from shifts (costs, income, population, tastes). Equilibrium is where quantity demanded equals quantity supplied; binding floors or ceilings can create surplus or shortage when set away from that price. Focus points: supply.
 
-Here you must apply ideas from supply, demand, and market interaction to a concrete situation rather than recite a definition from memory. Ownership, customer type, stakeholder group, or country of production usually decides the verdict.
+Held against the chapter test (here: supply), each operative word earns its place: the category, the comparison, and the mechanism survive when checked one by one.
 
-The statement overreaches because demand increase with fixed supply typically raises equilibrium price. The trap is to agree with the topic while missing the one detail that breaks the logic.
+If you replaced the key term with its neighbour (accounting outlay, micro/macro swap, movement vs shift), the sentence would stop matching the stem — that contrast locks the idea.
 
-Once the overclaim or mislabel is exposed, the only consistent answer is false.'] WHERE case_id = 'CASE 2.6.49' AND tier = 'full';
-UPDATE public.economics_cases SET tactical_explanations = ARRAY['TRUE — Evaluated against the textbook standard, this assertion is correct. Higher deposit interest rates may shift some household spending toward saving rather than immediate purchases.
+The statement is true.
+', 'TRUE — Own-price changes move along a demand or supply curve. Non-price factors — input costs, population, income, tastes — shift the curve and can change equilibrium price and quantity.
 
-This tests discrimination within supply, demand, and market interaction: local versus international scope, equity versus debt, product versus market orientation, and similar pairs.
+Imports can add quantity supplied from abroad and partially offset a domestic leftward shift.
 
-Applied carefully, better saving returns reduce current consumption demand. Nothing in the sentence stretches the concept beyond its standard use.
+Held against the chapter test (here: supply), each operative word earns its place: the category, the comparison, and the mechanism survive when checked one by one.
 
-The reasoning chain is complete, so mark the statement true.', 'TRUE — This statement is correct. Reduced current spending from higher rates can ease demand-side pressure on the general price level.
+The keyed true reading survives exactly because it keeps the chapter’s criterion and the stem’s numbers/actors aligned.
 
-The relevant theory comes from supply, demand, and market interaction. Identify which definition or relationship the sentence is trying to test before deciding true or false.
+The statement is true.
+', 'TRUE — Own-price changes move along a demand or supply curve. Non-price factors — input costs, population, income, tastes — shift the curve and can change equilibrium price and quantity.
 
-Applied carefully, cooler consumption demand helps moderate inflationary pressure. Nothing in the sentence stretches the concept beyond its standard use.
+Separate movements along a curve (own-price) from shifts (costs, income, population, tastes). Equilibrium is where quantity demanded equals quantity supplied; binding floors or ceilings can create surplus or shortage when set away from that price. Focus points: supply.
 
-The reasoning chain is complete, so mark the statement true.', 'TRUE — On the Fuhrmann definition used in the entrance exam, the sentence is correct. Lower interest rates may encourage borrowing for homes and cars, shifting demand rightward for those goods.
+Held against the chapter test (here: supply), each operative word earns its place: the category, the comparison, and the mechanism survive when checked one by one.
 
-This statement draws on supply, demand, and market interaction. Treat it as a checklist against the core concept named in the stem, not as a general opinion about business.
+A useful check is the opposite error: treat opportunity cost as the money paid, or treat one buyer’s choice as macro, or treat a shift as a movement — those near-misses fail, which confirms this wording.
 
-In this setting, cheaper credit raises quantity demanded for interest-sensitive purchases. The wording matches the textbook relationship without adding extra conditions.
+The statement is true.
+', 'TRUE — Equilibrium is the price where quantity demanded equals quantity supplied, so persistent shortages or surpluses do not grow. Asking prices above equilibrium leave unsold surplus; prices below leave shortage.
 
-Every part of the claim aligns with the standard concept, so the statement stands.', 'TRUE — On the Fuhrmann definition used in the entrance exam, the sentence is correct. Central banks lowering rates to stimulate spending may accept some upward price pressure if output is idle.
+Separate movements along a curve (own-price) from shifts (costs, income, population, tastes). Equilibrium is where quantity demanded equals quantity supplied; binding floors or ceilings can create surplus or shortage when set away from that price. Focus points: equilibrium, demand.
 
-The scenario is a worked example of supply, demand, and market interaction. Translate the story into the textbook category first; only then judge whether the sentence describes that category accurately.
+Held against the chapter test (here: equilibrium, demand), each operative word earns its place: the category, the comparison, and the mechanism survive when checked one by one.
 
-In this setting, policy trade-offs arise when stimulating demand near capacity limits. The wording matches the textbook relationship without adding extra conditions.
+A useful check is the opposite error: treat opportunity cost as the money paid, or treat one buyer’s choice as macro, or treat a shift as a movement — those near-misses fail, which confirms this wording.
 
-No qualifying word breaks the definition or scenario, so the answer is true.', 'FALSE — This statement is false. Households comparing mortgage and deposit rates operate outside markets with no price signals.
+The statement is true.
+', 'FALSE — Demand summarises how much buyers are willing and able to purchase at each price. Distinguish quantity demanded (along the curve) from shifts of the whole demand relationship.
 
-The relevant theory comes from supply, demand, and market interaction. Identify which definition or relationship the sentence is trying to test before deciding true or false.
+The claim confuses a shift with a movement, or misreads surplus/shortage signs. Cutting price raises quantity demanded; vacant stock at a sticky asking price usually signals the price is too high, not too low. Focus points: demand.
 
-The statement overreaches because credit and deposit markets use interest rates as coordinating prices. The trap is to agree with the topic while missing the one detail that breaks the logic.
+Held against the chapter test (here: demand), the familiar vocabulary may sound economic, but the operative restriction or reason fails — so the sentence mislabels the situation.
 
-The statement sounds plausible but fails on precision, so it is false.'] WHERE case_id = 'CASE 2.6.50' AND tier = 'full';
+Swap in the correct criterion and the sentence no longer describes the case — that is enough to mark it false.
+
+The statement is false.
+'] WHERE case_id = 'CASE 2.6.44' AND tier = 'full';
+UPDATE public.economics_cases SET tactical_explanations = ARRAY['TRUE — The law of demand: other things equal, a higher price reduces quantity demanded and a lower price raises it. That is a movement along demand, not automatically a demand shift.
+
+Separate movements along a curve (own-price) from shifts (costs, income, population, tastes). Equilibrium is where quantity demanded equals quantity supplied; binding floors or ceilings can create surplus or shortage when set away from that price.
+
+Held against the chapter test, each operative word earns its place: the category, the comparison, and the mechanism survive when checked one by one.
+
+Under that classification the claim describes the situation correctly rather than a lookalike category.
+
+The statement is true.
+', 'TRUE — Own-price changes move along a demand or supply curve. Non-price factors — input costs, population, income, tastes — shift the curve and can change equilibrium price and quantity.
+
+Separate movements along a curve (own-price) from shifts (costs, income, population, tastes). Equilibrium is where quantity demanded equals quantity supplied; binding floors or ceilings can create surplus or shortage when set away from that price. Focus points: shift, demand.
+
+Held against the chapter test (here: shift, demand), each operative word earns its place: the category, the comparison, and the mechanism survive when checked one by one.
+
+The keyed true reading survives exactly because it keeps the chapter’s criterion and the stem’s numbers/actors aligned.
+
+The statement is true.
+', 'TRUE — Own-price changes move along a demand or supply curve. Non-price factors — input costs, population, income, tastes — shift the curve and can change equilibrium price and quantity.
+
+Separate movements along a curve (own-price) from shifts (costs, income, population, tastes). Equilibrium is where quantity demanded equals quantity supplied; binding floors or ceilings can create surplus or shortage when set away from that price. Focus points: shift, demand, goods.
+
+Held against the chapter test (here: shift, demand, goods), each operative word earns its place: the category, the comparison, and the mechanism survive when checked one by one.
+
+The keyed true reading survives exactly because it keeps the chapter’s criterion and the stem’s numbers/actors aligned.
+
+The statement is true.
+', 'FALSE — A market is any arrangement where buyers and sellers interact to trade at prices. It need not be face-to-face; online listings still coordinate voluntary exchange when both sides expect to gain.
+
+Expectations shift today''s demand curve; they are not only movements along it from today''s price.
+
+Held against the chapter test (here: demand), the familiar vocabulary may sound economic, but the operative restriction or reason fails — so the sentence mislabels the situation.
+
+The absolute quantifier is doing the damage. Soften it to the chapter’s actual scope and the remaining content no longer supports a false blanket rule.
+
+The statement is false.
+', 'FALSE — Own-price changes move along a demand or supply curve. Non-price factors — input costs, population, income, tastes — shift the curve and can change equilibrium price and quantity.
+
+Panic buying before rationing is a rightward demand surge at the official price, not a leftward shift.
+
+Held against the chapter test (here: demand, shift), the familiar vocabulary may sound economic, but the operative restriction or reason fails — so the sentence mislabels the situation.
+
+The mismatch is in the defining feature, not in a missing buzzword; fix the feature and the claim disappears.
+
+The statement is false.
+'] WHERE case_id = 'CASE 2.6.45' AND tier = 'full';
+UPDATE public.economics_cases SET tactical_explanations = ARRAY['TRUE — In a labour market the wage coordinates workers’ supply and employers’ demand. A binding minimum above equilibrium reduces quantity of labour demanded and can leave surplus labour; a floor below equilibrium is not binding.
+
+Separate movements along a curve (own-price) from shifts (costs, income, population, tastes). Equilibrium is where quantity demanded equals quantity supplied; binding floors or ceilings can create surplus or shortage when set away from that price. Focus points: equilibrium.
+
+Held against the chapter test (here: equilibrium), each operative word earns its place: the category, the comparison, and the mechanism survive when checked one by one.
+
+If you replaced the key term with its neighbour (accounting outlay, micro/macro swap, movement vs shift), the sentence would stop matching the stem — that contrast locks the idea.
+
+The statement is true.
+', 'TRUE — In a labour market the wage coordinates workers’ supply and employers’ demand. A binding minimum above equilibrium reduces quantity of labour demanded and can leave surplus labour; a floor below equilibrium is not binding.
+
+Separate movements along a curve (own-price) from shifts (costs, income, population, tastes). Equilibrium is where quantity demanded equals quantity supplied; binding floors or ceilings can create surplus or shortage when set away from that price. Focus points: equilibrium.
+
+Held against the chapter test (here: equilibrium), each operative word earns its place: the category, the comparison, and the mechanism survive when checked one by one.
+
+If you replaced the key term with its neighbour (accounting outlay, micro/macro swap, movement vs shift), the sentence would stop matching the stem — that contrast locks the idea.
+
+The statement is true.
+', 'FALSE — The law of supply: other things equal, a higher price raises quantity supplied. Higher input costs typically shift supply left; cheaper inputs shift it right.
+
+Higher wages typically raise quantity of labour supplied; workers do not reject paid work because wages rose.
+
+Held against the chapter test, the familiar vocabulary may sound economic, but the operative restriction or reason fails — so the sentence mislabels the situation.
+
+Restore the textbook test and the assertion falls away: it mislabels the category or reverses the comparison the chapter actually teaches.
+
+The statement is false.
+', 'FALSE — Equilibrium is the price where quantity demanded equals quantity supplied, so persistent shortages or surpluses do not grow. Asking prices above equilibrium leave unsold surplus; prices below leave shortage.
+
+Skill shortages are labour shortages with upward wage pressure — not goods surpluses with downward pressure.
+
+Held against the chapter test (here: goods, wage), the familiar vocabulary may sound economic, but the operative restriction or reason fails — so the sentence mislabels the situation.
+
+Swap in the correct criterion and the sentence no longer describes the case — that is enough to mark it false.
+
+The statement is false.
+', 'FALSE — Use demand, supply, and equilibrium: movements along curves versus shifts, and how prices clear or fail to clear markets.
+
+When wages rise above the value of marginal product, employers hire less at the margin, not more.
+
+Held against the chapter test, the familiar vocabulary may sound economic, but the operative restriction or reason fails — so the sentence mislabels the situation.
+
+The mismatch is in the defining feature, not in a missing buzzword; fix the feature and the claim disappears.
+
+The statement is false.
+'] WHERE case_id = 'CASE 2.6.46' AND tier = 'full';
+UPDATE public.economics_cases SET tactical_explanations = ARRAY['TRUE — Equilibrium is the price where quantity demanded equals quantity supplied, so persistent shortages or surpluses do not grow. Asking prices above equilibrium leave unsold surplus; prices below leave shortage.
+
+Separate movements along a curve (own-price) from shifts (costs, income, population, tastes). Equilibrium is where quantity demanded equals quantity supplied; binding floors or ceilings can create surplus or shortage when set away from that price. Focus points: equilibrium, supply, demand.
+
+Held against the chapter test (here: equilibrium, supply, demand), each operative word earns its place: the category, the comparison, and the mechanism survive when checked one by one.
+
+If you replaced the key term with its neighbour (accounting outlay, micro/macro swap, movement vs shift), the sentence would stop matching the stem — that contrast locks the idea.
+
+The statement is true.
+', 'FALSE — Equilibrium is the price where quantity demanded equals quantity supplied, so persistent shortages or surpluses do not grow. Asking prices above equilibrium leave unsold surplus; prices below leave shortage.
+
+The claim confuses a shift with a movement, or misreads surplus/shortage signs. Cutting price raises quantity demanded; vacant stock at a sticky asking price usually signals the price is too high, not too low. Focus points: equilibrium, supply.
+
+Held against the chapter test (here: equilibrium, supply), the familiar vocabulary may sound economic, but the operative restriction or reason fails — so the sentence mislabels the situation.
+
+Restore the textbook test and the assertion falls away: it mislabels the category or reverses the comparison the chapter actually teaches.
+
+The statement is false.
+', 'FALSE — Own-price changes move along a demand or supply curve. Non-price factors — input costs, population, income, tastes — shift the curve and can change equilibrium price and quantity.
+
+Seeking alternate suppliers is a supply-side adjustment over time, not a permanent leftward demand shift.
+
+Held against the chapter test (here: demand), the familiar vocabulary may sound economic, but the operative restriction or reason fails — so the sentence mislabels the situation.
+
+Swap in the correct criterion and the sentence no longer describes the case — that is enough to mark it false.
+
+The statement is false.
+', 'FALSE — Own-price changes move along a demand or supply curve. Non-price factors — input costs, population, income, tastes — shift the curve and can change equilibrium price and quantity.
+
+Port closures delaying imports shift supply of components left (harder to get), not demand right.
+
+Held against the chapter test (here: shift, demand), the familiar vocabulary may sound economic, but the operative restriction or reason fails — so the sentence mislabels the situation.
+
+The mismatch is in the defining feature, not in a missing buzzword; fix the feature and the claim disappears.
+
+The statement is false.
+', 'FALSE — Equilibrium is the price where quantity demanded equals quantity supplied, so persistent shortages or surpluses do not grow. Asking prices above equilibrium leave unsold surplus; prices below leave shortage.
+
+Imported-part shortages reduce finished-goods supply domestically; they do not increase quantity supplied of finished goods.
+
+Held against the chapter test (here: goods), the familiar vocabulary may sound economic, but the operative restriction or reason fails — so the sentence mislabels the situation.
+
+Swap in the correct criterion and the sentence no longer describes the case — that is enough to mark it false.
+
+The statement is false.
+'] WHERE case_id = 'CASE 2.6.47' AND tier = 'full';
+UPDATE public.economics_cases SET tactical_explanations = ARRAY['TRUE — Own-price changes move along a demand or supply curve. Non-price factors — input costs, population, income, tastes — shift the curve and can change equilibrium price and quantity.
+
+Separate movements along a curve (own-price) from shifts (costs, income, population, tastes). Equilibrium is where quantity demanded equals quantity supplied; binding floors or ceilings can create surplus or shortage when set away from that price.
+
+Held against the chapter test, each operative word earns its place: the category, the comparison, and the mechanism survive when checked one by one.
+
+If you replaced the key term with its neighbour (accounting outlay, micro/macro swap, movement vs shift), the sentence would stop matching the stem — that contrast locks the idea.
+
+The statement is true.
+', 'TRUE — Use demand, supply, and equilibrium: movements along curves versus shifts, and how prices clear or fail to clear markets.
+
+Anchor the claim in money’s functions, the circular flow of income and spending, public-good properties, transfers versus pure public provision, or gains from specialisation. Focus points: Inflation.
+
+Held against the chapter test (here: Inflation), each operative word earns its place: the category, the comparison, and the mechanism survive when checked one by one.
+
+The sentence therefore reports the concept accurately for this item once the definition is held fixed.
+
+The statement is true.
+', 'TRUE — Equilibrium is the price where quantity demanded equals quantity supplied, so persistent shortages or surpluses do not grow. Asking prices above equilibrium leave unsold surplus; prices below leave shortage.
+
+Separate movements along a curve (own-price) from shifts (costs, income, population, tastes). Equilibrium is where quantity demanded equals quantity supplied; binding floors or ceilings can create surplus or shortage when set away from that price. Focus points: equilibrium, shortage, surplus.
+
+Held against the chapter test (here: equilibrium, shortage, surplus), each operative word earns its place: the category, the comparison, and the mechanism survive when checked one by one.
+
+If you replaced the key term with its neighbour (accounting outlay, micro/macro swap, movement vs shift), the sentence would stop matching the stem — that contrast locks the idea.
+
+The statement is true.
+', 'TRUE — Own-price changes move along a demand or supply curve. Non-price factors — input costs, population, income, tastes — shift the curve and can change equilibrium price and quantity.
+
+Demand shifters include income, tastes, substitutes; supply shifters include costs and technology.
+
+Held against the chapter test (here: Demand, supply), each operative word earns its place: the category, the comparison, and the mechanism survive when checked one by one.
+
+If you replaced the key term with its neighbour (accounting outlay, micro/macro swap, movement vs shift), the sentence would stop matching the stem — that contrast locks the idea.
+
+The statement is true.
+', 'TRUE — Equilibrium is the price where quantity demanded equals quantity supplied, so persistent shortages or surpluses do not grow. Asking prices above equilibrium leave unsold surplus; prices below leave shortage.
+
+Separate movements along a curve (own-price) from shifts (costs, income, population, tastes). Equilibrium is where quantity demanded equals quantity supplied; binding floors or ceilings can create surplus or shortage when set away from that price. Focus points: Surplus, shortage, equilibrium.
+
+Held against the chapter test (here: Surplus, shortage, equilibrium), each operative word earns its place: the category, the comparison, and the mechanism survive when checked one by one.
+
+If you replaced the key term with its neighbour (accounting outlay, micro/macro swap, movement vs shift), the sentence would stop matching the stem — that contrast locks the idea.
+
+The statement is true.
+'] WHERE case_id = 'CASE 2.6.48' AND tier = 'full';
+UPDATE public.economics_cases SET tactical_explanations = ARRAY['TRUE — Demand summarises how much buyers are willing and able to purchase at each price. Distinguish quantity demanded (along the curve) from shifts of the whole demand relationship.
+
+Separate movements along a curve (own-price) from shifts (costs, income, population, tastes). Equilibrium is where quantity demanded equals quantity supplied; binding floors or ceilings can create surplus or shortage when set away from that price. Focus points: inflation, demand.
+
+Held against the chapter test (here: inflation, demand), each operative word earns its place: the category, the comparison, and the mechanism survive when checked one by one.
+
+Nothing in the stem contradicts that reading, so the assertion stands as a correct application of the definition.
+
+The statement is true.
+', 'TRUE — The law of supply: other things equal, a higher price raises quantity supplied. Higher input costs typically shift supply left; cheaper inputs shift it right.
+
+Too much money versus output can lift the general price level even if one industry expands supply.
+
+Held against the chapter test (here: supply), each operative word earns its place: the category, the comparison, and the mechanism survive when checked one by one.
+
+Under that classification the claim describes the situation correctly rather than a lookalike category.
+
+The statement is true.
+', 'TRUE — Demand summarises how much buyers are willing and able to purchase at each price. Distinguish quantity demanded (along the curve) from shifts of the whole demand relationship.
+
+Higher bean costs (supply left) and rising commuter demand (demand right) make the café''s price change ambiguous without sizes.
+
+Held against the chapter test (here: demand), each operative word earns its place: the category, the comparison, and the mechanism survive when checked one by one.
+
+The sentence therefore reports the concept accurately for this item once the definition is held fixed.
+
+The statement is true.
+', 'TRUE — A market is any arrangement where buyers and sellers interact to trade at prices. It need not be face-to-face; online listings still coordinate voluntary exchange when both sides expect to gain.
+
+Walk the definition onto the stem’s actors and constraints, then confirm the sentence’s category and reason both survive that check.
+
+Held against the chapter test, each operative word earns its place: the category, the comparison, and the mechanism survive when checked one by one.
+
+Under that classification the claim describes the situation correctly rather than a lookalike category.
+
+The statement is true.
+', 'FALSE — Equilibrium is the price where quantity demanded equals quantity supplied, so persistent shortages or surpluses do not grow. Asking prices above equilibrium leave unsold surplus; prices below leave shortage.
+
+Fixed venue capacity with surging festival demand raises equilibrium ticket price, not lowers it.
+
+Held against the chapter test (here: demand, equilibrium), the familiar vocabulary may sound economic, but the operative restriction or reason fails — so the sentence mislabels the situation.
+
+The mismatch is in the defining feature, not in a missing buzzword; fix the feature and the claim disappears.
+
+The statement is false.
+'] WHERE case_id = 'CASE 2.6.49' AND tier = 'full';
+UPDATE public.economics_cases SET tactical_explanations = ARRAY['TRUE — Own-price changes move along a demand or supply curve. Non-price factors — input costs, population, income, tastes — shift the curve and can change equilibrium price and quantity.
+
+Separate movements along a curve (own-price) from shifts (costs, income, population, tastes). Equilibrium is where quantity demanded equals quantity supplied; binding floors or ceilings can create surplus or shortage when set away from that price. Focus points: shift, household.
+
+Held against the chapter test (here: shift, household), each operative word earns its place: the category, the comparison, and the mechanism survive when checked one by one.
+
+A useful check is the opposite error: treat opportunity cost as the money paid, or treat one buyer’s choice as macro, or treat a shift as a movement — those near-misses fail, which confirms this wording.
+
+The statement is true.
+', 'TRUE — Demand summarises how much buyers are willing and able to purchase at each price. Distinguish quantity demanded (along the curve) from shifts of the whole demand relationship.
+
+Separate movements along a curve (own-price) from shifts (costs, income, population, tastes). Equilibrium is where quantity demanded equals quantity supplied; binding floors or ceilings can create surplus or shortage when set away from that price. Focus points: demand.
+
+Held against the chapter test (here: demand), each operative word earns its place: the category, the comparison, and the mechanism survive when checked one by one.
+
+The sentence therefore reports the concept accurately for this item once the definition is held fixed.
+
+The statement is true.
+', 'TRUE — Own-price changes move along a demand or supply curve. Non-price factors — input costs, population, income, tastes — shift the curve and can change equilibrium price and quantity.
+
+Separate movements along a curve (own-price) from shifts (costs, income, population, tastes). Equilibrium is where quantity demanded equals quantity supplied; binding floors or ceilings can create surplus or shortage when set away from that price. Focus points: demand, goods.
+
+Held against the chapter test (here: demand, goods), each operative word earns its place: the category, the comparison, and the mechanism survive when checked one by one.
+
+A useful check is the opposite error: treat opportunity cost as the money paid, or treat one buyer’s choice as macro, or treat a shift as a movement — those near-misses fail, which confirms this wording.
+
+The statement is true.
+', 'TRUE — Prices in a market convey scarcity information and coordinate buyers and sellers. They are more than receipts: rising prices ration demand and attract supply, other things equal.
+
+Walk the definition onto the stem’s actors and constraints, then confirm the sentence’s category and reason both survive that check.
+
+Held against the chapter test, each operative word earns its place: the category, the comparison, and the mechanism survive when checked one by one.
+
+Nothing in the stem contradicts that reading, so the assertion stands as a correct application of the definition.
+
+The statement is true.
+', 'FALSE — A market is any arrangement where buyers and sellers interact to trade at prices. It need not be face-to-face; online listings still coordinate voluntary exchange when both sides expect to gain.
+
+Comparing mortgage and deposit rates is precisely operating inside financial markets with price signals (interest rates).
+
+Held against the chapter test, the familiar vocabulary may sound economic, but the operative restriction or reason fails — so the sentence mislabels the situation.
+
+Swap in the correct criterion and the sentence no longer describes the case — that is enough to mark it false.
+
+The statement is false.
+'] WHERE case_id = 'CASE 2.6.50' AND tier = 'full';

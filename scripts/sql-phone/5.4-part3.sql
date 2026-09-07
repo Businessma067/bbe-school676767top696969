@@ -1,854 +1,903 @@
 -- Update expanded explanations for 5.4-part3 (25 cases).
 -- Safe to re-run: only updates tactical_explanations.
 
-UPDATE public.economics_cases SET tactical_explanations = ARRAY['TRUE — On the Fuhrmann definition used in the entrance exam, the sentence is correct. For home-decor boutiques in household durable-goods sectors, manipulative persuasion in advertising can fall outside ethical marketing conduct.
+UPDATE public.economics_cases SET tactical_explanations = ARRAY['TRUE — Sustainability arguments ask both businesses and consumers to weigh the risks of consuming more than is needed or affordable, and to act more responsibly in production and purchase decisions.
 
-This statement draws on responsibility, sustainability, and ethics in marketing. Treat it as a checklist against the core concept named in the stem, not as a general opinion about business.
+The responsibility overview acknowledges that promotional activity can cross into unethical practice, not merely factual product description this holds for home-decor boutiques in household durable-goods sectors.
 
-In this setting, the responsibility overview acknowledges that promotional activity can cross into unethical practice, not merely factual product description this holds for home-decor boutiques in household durable-goods sectors. The wording matches the textbook relationship without adding extra conditions.
+Under that definition the assertion is the right description of the situation.
 
-Every part of the claim aligns with the standard concept, so the statement stands.', 'TRUE — Evaluated against the textbook standard, this assertion is correct. For electronics retailers in consumer electronics markets, many people spend more money than they can afford because marketing and easy purchasing channels encourage additional unplanned buying.
+The statement is true.
+', 'TRUE — Sustainability arguments ask both businesses and consumers to weigh the risks of consuming more than is needed or affordable, and to act more responsibly in production and purchase decisions.
 
-Here you must apply ideas from responsibility, sustainability, and ethics in marketing to a concrete situation rather than recite a definition from memory. Ownership, customer type, stakeholder group, or country of production usually decides the verdict.
+Spending beyond affordable limits is a recognised consumer problem linked to persuasive promotion and impulse purchasing behaviour this holds for electronics retailers in consumer electronics markets.
 
-Applied carefully, spending beyond affordable limits is a recognised consumer problem linked to persuasive promotion and impulse purchasing behaviour this holds for electronics retailers in consumer electronics markets. Nothing in the sentence stretches the concept beyond its standard use.
+Nothing in the wording contradicts that marketing test, so the claim is sound.
 
-Every part of the claim aligns with the standard concept, so the statement stands.', 'FALSE — Evaluated against the textbook standard, this assertion is false. For florist networks in apparel retailing, advertising and new launches leave customer wishes unchanged and add no stimulated wants.
+The statement is true.
+', 'FALSE — Sustainability arguments ask both businesses and consumers to weigh the risks of consuming more than is needed or affordable, and to act more responsibly in production and purchase decisions.
 
-The relevant theory comes from responsibility, sustainability, and ethics in marketing. Identify which definition or relationship the sentence is trying to test before deciding true or false.
+The overview states that businesses also create wishes and needs through development and advertising, not merely respond to existing demand this holds for florist networks in apparel retailing.
 
-The statement overreaches because the overview states that businesses also create wishes and needs through development and advertising, not merely respond to existing demand this holds for florist networks in apparel retailing. The trap is to agree with the topic while missing the one detail that breaks the logic.
+The mislabelled category or reversed comparison is enough to reject the claim.
 
-Because the decisive detail is wrong, mark the statement false.', 'TRUE — This statement is correct. For fashion labels among younger budget-conscious shoppers, persuasive promotion and frictionless buying channels can drive spending beyond affordable limits.
+The statement is false.
+', 'TRUE — Sustainability arguments ask both businesses and consumers to weigh the risks of consuming more than is needed or affordable, and to act more responsibly in production and purchase decisions.
 
-The relevant theory comes from responsibility, sustainability, and ethics in marketing. Identify which definition or relationship the sentence is trying to test before deciding true or false.
+Spending beyond affordable limits is a recognised consumer problem linked to persuasive promotion and impulse purchasing behaviour this holds for fashion labels among younger budget-conscious shoppers.
 
-Applied carefully, spending beyond affordable limits is a recognised consumer problem linked to persuasive promotion and impulse purchasing behaviour this holds for fashion labels among younger budget-conscious shoppers. Nothing in the sentence stretches the concept beyond its standard use.
+Nothing in the wording contradicts that marketing test, so the claim is sound.
 
-Every part of the claim aligns with the standard concept, so the statement stands.', 'FALSE — Evaluated against the textbook standard, this assertion is false. For cleaning-product makers in consumer electronics markets, demand is treated as fixed: sellers neither create wishes nor alter needs through marketing.
+The statement is true.
+', 'FALSE — Firms do not only respond to existing needs; advertising and continuous product development can also create new wishes — sometimes in ways critics call unethical — so awareness of overspending and overconsumption matters.
 
-The relevant theory comes from responsibility, sustainability, and ethics in marketing. Identify which definition or relationship the sentence is trying to test before deciding true or false.
+The overview states that businesses also create wishes and needs through development and advertising, not merely respond to existing demand this holds for cleaning-product makers in consumer electronics markets.
 
-The statement overreaches because the overview states that businesses also create wishes and needs through development and advertising, not merely respond to existing demand this holds for cleaning-product makers in consumer electronics markets. The trap is to agree with the topic while missing the one detail that breaks the logic.
+The mislabelled category or reversed comparison is enough to reject the claim.
 
-The statement sounds plausible but fails on precision, so it is false.'] WHERE case_id = 'CASE 5.4.51' AND tier = 'full';
-UPDATE public.economics_cases SET tactical_explanations = ARRAY['FALSE — Evaluated against the textbook standard, this assertion is false. For cleaning-product makers in apparel retailing, firms never shape demand and solely follow needs that customers already expressed without any promotional influence.
+The statement is false.
+'] WHERE case_id = 'CASE 5.4.51' AND tier = 'full';
+UPDATE public.economics_cases SET tactical_explanations = ARRAY['FALSE — Sustainability arguments ask both businesses and consumers to weigh the risks of consuming more than is needed or affordable, and to act more responsibly in production and purchase decisions.
 
-The topic is responsibility, sustainability, and ethics in marketing, but the decisive skill here is reading quantifiers. Words such as never, always, only, or all turn a generally true idea into a claim that can be rejected by one routine counterexample.
+The overview states that businesses also create wishes and needs through development and advertising, not merely respond to existing demand this holds for cleaning-product makers in apparel retailing.
 
-The statement overreaches because the overview states that businesses also create wishes and needs through development and advertising, not merely respond to existing demand this holds for cleaning-product makers in apparel retailing. The trap is to agree with the topic while missing the one detail that breaks the logic.
+The absolute wording is what breaks the claim once the correct test is applied.
 
-Watch the absolute wording "never": exam statements often sound plausible until a single scope word turns an otherwise familiar idea into an overclaim.
+The statement is false.
+', 'FALSE — Sustainability arguments ask both businesses and consumers to weigh the risks of consuming more than is needed or affordable, and to act more responsibly in production and purchase decisions.
 
-The statement sounds plausible but fails on precision, so it is false.', 'FALSE — This statement is false. For mobile-accessory sellers in consumer electronics markets, advertising and new launches leave customer wishes unchanged and add no stimulated wants.
+The overview states that businesses also create wishes and needs through development and advertising, not merely respond to existing demand this holds for mobile-accessory sellers in consumer electronics markets.
 
-The relevant theory comes from responsibility, sustainability, and ethics in marketing. Identify which definition or relationship the sentence is trying to test before deciding true or false.
+The mislabelled category or reversed comparison is enough to reject the claim.
 
-The statement overreaches because the overview states that businesses also create wishes and needs through development and advertising, not merely respond to existing demand this holds for mobile-accessory sellers in consumer electronics markets. The trap is to agree with the topic while missing the one detail that breaks the logic.
+The statement is false.
+', 'FALSE — Firms do not only respond to existing needs; advertising and continuous product development can also create new wishes — sometimes in ways critics call unethical — so awareness of overspending and overconsumption matters.
 
-Because the decisive detail is wrong, mark the statement false.', 'FALSE — On the Fuhrmann definition used in the entrance exam, the sentence is false. For home-decor boutiques in household durable-goods sectors, demand is treated as fixed: sellers neither create wishes nor alter needs through marketing.
+The overview states that businesses also create wishes and needs through development and advertising, not merely respond to existing demand this holds for home-decor boutiques in household durable-goods sectors.
 
-This statement draws on responsibility, sustainability, and ethics in marketing. Treat it as a checklist against the core concept named in the stem, not as a general opinion about business.
+The mislabelled category or reversed comparison is enough to reject the claim.
 
-Applied to this claim, the overview states that businesses also create wishes and needs through development and advertising, not merely respond to existing demand this holds for home-decor boutiques in household durable-goods sectors. That is why the sentence does not survive careful reading.
+The statement is false.
+', 'TRUE — Sustainability arguments ask both businesses and consumers to weigh the risks of consuming more than is needed or affordable, and to act more responsibly in production and purchase decisions.
 
-The statement sounds plausible but fails on precision, so it is false.', 'TRUE — Evaluated against the textbook standard, this assertion is correct. For fashion labels in formal-wear and occasion-dress markets, households may exceed what they can afford when marketing nudges extra impulse purchases.
+On this stem (households): spending beyond affordable limits is a recognised consumer problem linked to persuasive promotion and impulse purchasing behaviour this holds for fashion labels in formal-wear and occasion-dress markets.
 
-Here you must apply ideas from responsibility, sustainability, and ethics in marketing to a concrete situation rather than recite a definition from memory. Ownership, customer type, stakeholder group, or country of production usually decides the verdict.
+The sentence therefore reports the concept accurately for this case.
 
-Applied carefully, spending beyond affordable limits is a recognised consumer problem linked to persuasive promotion and impulse purchasing behaviour this holds for fashion labels in formal-wear and occasion-dress markets. Nothing in the sentence stretches the concept beyond its standard use.
+The statement is true.
+', 'FALSE — Sustainability arguments ask both businesses and consumers to weigh the risks of consuming more than is needed or affordable, and to act more responsibly in production and purchase decisions.
 
-Every part of the claim aligns with the standard concept, so the statement stands.', 'FALSE — Evaluated against the textbook standard, this assertion is false. For electronics retailers in consumer electronics markets, all advertising is automatically ethical whenever it increases sales and informs customers about product features.
+Advertising can be unethical in some cases; higher sales do not prove ethical conduct this holds for electronics retailers in consumer electronics markets.
 
-The topic is responsibility, sustainability, and ethics in marketing, but the decisive skill here is reading quantifiers. Words such as never, always, only, or all turn a generally true idea into a claim that can be rejected by one routine counterexample.
+Those restricting words stretch a limited idea past what marketing allows.
 
-The statement overreaches because advertising can be unethical in some cases; higher sales do not prove ethical conduct this holds for electronics retailers in consumer electronics markets. The trap is to agree with the topic while missing the one detail that breaks the logic.
+The statement is false.
+'] WHERE case_id = 'CASE 5.4.52' AND tier = 'full';
+UPDATE public.economics_cases SET tactical_explanations = ARRAY['TRUE — Responsible marketing and consumption favour longer use, repair, reuse, sharing, and renting of higher-quality goods over rapid disposable replacement.
 
-Watch the absolute wording "all": exam statements often sound plausible until a single scope word turns an otherwise familiar idea into an overclaim.
+Spending beyond affordable limits is a recognised consumer problem linked to persuasive promotion and impulse purchasing behaviour this holds for fashion labels where repair services remain available.
 
-Because the decisive detail is wrong, mark the statement false.'] WHERE case_id = 'CASE 5.4.52' AND tier = 'full';
-UPDATE public.economics_cases SET tactical_explanations = ARRAY['TRUE — On the Fuhrmann definition used in the entrance exam, the sentence is correct. For fashion labels where repair services remain available, persuasive promotion and frictionless buying channels can drive spending beyond affordable limits.
+The sentence therefore reports the concept accurately for this case.
 
-This statement draws on responsibility, sustainability, and ethics in marketing. Treat it as a checklist against the core concept named in the stem, not as a general opinion about business.
+The statement is true.
+', 'TRUE — Sustainability arguments ask both businesses and consumers to weigh the risks of consuming more than is needed or affordable, and to act more responsibly in production and purchase decisions.
 
-In this setting, spending beyond affordable limits is a recognised consumer problem linked to persuasive promotion and impulse purchasing behaviour this holds for fashion labels where repair services remain available. The wording matches the textbook relationship without adding extra conditions.
+On this stem (households): spending beyond affordable limits is a recognised consumer problem linked to persuasive promotion and impulse purchasing behaviour this holds for furniture workshops in consumer electronics markets.
 
-The reasoning chain is complete, so mark the statement true.', 'TRUE — This statement is correct. For furniture workshops in consumer electronics markets, households may exceed what they can afford when marketing nudges extra impulse purchases.
+Nothing in the wording contradicts that marketing test, so the claim is sound.
 
-Here you must apply ideas from responsibility, sustainability, and ethics in marketing to a concrete situation rather than recite a definition from memory. Ownership, customer type, stakeholder group, or country of production usually decides the verdict.
+The statement is true.
+', 'TRUE — Sustainability arguments ask both businesses and consumers to weigh the risks of consuming more than is needed or affordable, and to act more responsibly in production and purchase decisions.
 
-Applied carefully, spending beyond affordable limits is a recognised consumer problem linked to persuasive promotion and impulse purchasing behaviour this holds for furniture workshops in consumer electronics markets. Nothing in the sentence stretches the concept beyond its standard use.
+Spending beyond affordable limits is a recognised consumer problem linked to persuasive promotion and impulse purchasing behaviour this holds for appliance manufacturers in household durable-goods sectors.
 
-Every part of the claim aligns with the standard concept, so the statement stands.', 'TRUE — This statement is correct. For appliance manufacturers in household durable-goods sectors, persuasive promotion and frictionless buying channels can drive spending beyond affordable limits.
+Nothing in the wording contradicts that marketing test, so the claim is sound.
 
-The relevant theory comes from responsibility, sustainability, and ethics in marketing. Identify which definition or relationship the sentence is trying to test before deciding true or false.
+The statement is true.
+', 'FALSE — Sustainability arguments ask both businesses and consumers to weigh the risks of consuming more than is needed or affordable, and to act more responsibly in production and purchase decisions.
 
-Applied carefully, spending beyond affordable limits is a recognised consumer problem linked to persuasive promotion and impulse purchasing behaviour this holds for appliance manufacturers in household durable-goods sectors. Nothing in the sentence stretches the concept beyond its standard use.
+Advertising can be unethical in some cases; higher sales do not prove ethical conduct this holds for electronics retailers in apparel retailing.
 
-No qualifying word breaks the definition or scenario, so the answer is true.', 'FALSE — This statement is false. For electronics retailers in apparel retailing, all advertising is automatically ethical whenever it increases sales and informs customers about product features.
+Those restricting words stretch a limited idea past what marketing allows.
 
-The topic is responsibility, sustainability, and ethics in marketing, but the decisive skill here is reading quantifiers. Words such as never, always, only, or all turn a generally true idea into a claim that can be rejected by one routine counterexample.
+The statement is false.
+', 'TRUE — Sustainability arguments ask both businesses and consumers to weigh the risks of consuming more than is needed or affordable, and to act more responsibly in production and purchase decisions.
 
-The statement overreaches because advertising can be unethical in some cases; higher sales do not prove ethical conduct this holds for electronics retailers in apparel retailing. The trap is to agree with the topic while missing the one detail that breaks the logic.
+On this stem (brands / households): spending beyond affordable limits is a recognised consumer problem linked to persuasive promotion and impulse purchasing behaviour this holds for cosmetics brands when seasonal campaigns intensify.
 
-Watch the absolute wording "all": exam statements often sound plausible until a single scope word turns an otherwise familiar idea into an overclaim.
+The sentence therefore reports the concept accurately for this case.
 
-The statement sounds plausible but fails on precision, so it is false.', 'TRUE — This statement is correct. For cosmetics brands when seasonal campaigns intensify, households may exceed what they can afford when marketing nudges extra impulse purchases.
+The statement is true.
+'] WHERE case_id = 'CASE 5.4.53' AND tier = 'full';
+UPDATE public.economics_cases SET tactical_explanations = ARRAY['TRUE — Sustainability arguments ask both businesses and consumers to weigh the risks of consuming more than is needed or affordable, and to act more responsibly in production and purchase decisions.
 
-Here you must apply ideas from responsibility, sustainability, and ethics in marketing to a concrete situation rather than recite a definition from memory. Ownership, customer type, stakeholder group, or country of production usually decides the verdict.
+Spending beyond affordable limits is a recognised consumer problem linked to persuasive promotion and impulse purchasing behaviour this holds for cosmetics brands during online promotional events.
 
-Applied carefully, spending beyond affordable limits is a recognised consumer problem linked to persuasive promotion and impulse purchasing behaviour this holds for cosmetics brands when seasonal campaigns intensify. Nothing in the sentence stretches the concept beyond its standard use.
+The sentence therefore reports the concept accurately for this case.
 
-The reasoning chain is complete, so mark the statement true.'] WHERE case_id = 'CASE 5.4.53' AND tier = 'full';
-UPDATE public.economics_cases SET tactical_explanations = ARRAY['TRUE — On the Fuhrmann definition used in the entrance exam, the sentence is correct. For cosmetics brands during online promotional events, persuasive promotion and frictionless buying channels can drive spending beyond affordable limits.
+The statement is true.
+', 'TRUE — Sustainability arguments ask both businesses and consumers to weigh the risks of consuming more than is needed or affordable, and to act more responsibly in production and purchase decisions.
 
-This statement draws on responsibility, sustainability, and ethics in marketing. Treat it as a checklist against the core concept named in the stem, not as a general opinion about business.
+On this stem (households): spending beyond affordable limits is a recognised consumer problem linked to persuasive promotion and impulse purchasing behaviour this holds for sporting-goods stores in consumer electronics markets.
 
-In this setting, spending beyond affordable limits is a recognised consumer problem linked to persuasive promotion and impulse purchasing behaviour this holds for cosmetics brands during online promotional events. The wording matches the textbook relationship without adding extra conditions.
+The sentence therefore reports the concept accurately for this case.
 
-The reasoning chain is complete, so mark the statement true.', 'TRUE — The claim is correct. For sporting-goods stores in consumer electronics markets, households may exceed what they can afford when marketing nudges extra impulse purchases.
+The statement is true.
+', 'TRUE — Sustainability arguments ask both businesses and consumers to weigh the risks of consuming more than is needed or affordable, and to act more responsibly in production and purchase decisions.
 
-The scenario is a worked example of responsibility, sustainability, and ethics in marketing. Translate the story into the textbook category first; only then judge whether the sentence describes that category accurately.
+Spending beyond affordable limits is a recognised consumer problem linked to persuasive promotion and impulse purchasing behaviour this holds for book publishers when seasonal campaigns intensify.
 
-In this setting, spending beyond affordable limits is a recognised consumer problem linked to persuasive promotion and impulse purchasing behaviour this holds for sporting-goods stores in consumer electronics markets. The wording matches the textbook relationship without adding extra conditions.
+The sentence therefore reports the concept accurately for this case.
 
-The reasoning chain is complete, so mark the statement true.', 'TRUE — This statement is correct. For book publishers when seasonal campaigns intensify, persuasive promotion and frictionless buying channels can drive spending beyond affordable limits.
+The statement is true.
+', 'FALSE — Sustainability arguments ask both businesses and consumers to weigh the risks of consuming more than is needed or affordable, and to act more responsibly in production and purchase decisions.
 
-Here you must apply ideas from responsibility, sustainability, and ethics in marketing to a concrete situation rather than recite a definition from memory. Ownership, customer type, stakeholder group, or country of production usually decides the verdict.
+Advertising can be unethical in some cases; higher sales do not prove ethical conduct this holds for electronics retailers in household durable-goods sectors.
 
-Applied carefully, spending beyond affordable limits is a recognised consumer problem linked to persuasive promotion and impulse purchasing behaviour this holds for book publishers when seasonal campaigns intensify. Nothing in the sentence stretches the concept beyond its standard use.
+One clear counterexample under the right criterion is enough to reject the sentence.
 
-Every part of the claim aligns with the standard concept, so the statement stands.', 'FALSE — On the Fuhrmann definition used in the entrance exam, the sentence is false. For electronics retailers in household durable-goods sectors, all advertising is automatically ethical whenever it increases sales and informs customers about product features.
+The statement is false.
+', 'TRUE — Sustainability arguments ask both businesses and consumers to weigh the risks of consuming more than is needed or affordable, and to act more responsibly in production and purchase decisions.
 
-Although the subject matter is responsibility, sustainability, and ethics in marketing, this is really a logic check on overstatement. Non-profit surpluses, mixed economies, and partial market failure are classic cases where absolute wording fails.
+On this stem (households): spending beyond affordable limits is a recognised consumer problem linked to persuasive promotion and impulse purchasing behaviour this holds for toy distributors among younger budget-conscious shoppers.
 
-Applied to this claim, advertising can be unethical in some cases; higher sales do not prove ethical conduct this holds for electronics retailers in household durable-goods sectors. That is why the sentence does not survive careful reading.
+Under that definition the assertion is the right description of the situation.
 
-Watch the absolute wording "all": exam statements often sound plausible until a single scope word turns an otherwise familiar idea into an overclaim.
+The statement is true.
+'] WHERE case_id = 'CASE 5.4.54' AND tier = 'full';
+UPDATE public.economics_cases SET tactical_explanations = ARRAY['TRUE — Sustainability arguments ask both businesses and consumers to weigh the risks of consuming more than is needed or affordable, and to act more responsibly in production and purchase decisions.
 
-Once the overclaim or mislabel is exposed, the only consistent answer is false.', 'TRUE — This statement is correct. For toy distributors among younger budget-conscious shoppers, households may exceed what they can afford when marketing nudges extra impulse purchases.
+Spending beyond affordable limits is a recognised consumer problem linked to persuasive promotion and impulse purchasing behaviour this holds for toy distributors in formal-wear and occasion-dress markets.
 
-Here you must apply ideas from responsibility, sustainability, and ethics in marketing to a concrete situation rather than recite a definition from memory. Ownership, customer type, stakeholder group, or country of production usually decides the verdict.
+Under that definition the assertion is the right description of the situation.
 
-Applied carefully, spending beyond affordable limits is a recognised consumer problem linked to persuasive promotion and impulse purchasing behaviour this holds for toy distributors among younger budget-conscious shoppers. Nothing in the sentence stretches the concept beyond its standard use.
+The statement is true.
+', 'FALSE — Sustainability arguments ask both businesses and consumers to weigh the risks of consuming more than is needed or affordable, and to act more responsibly in production and purchase decisions.
 
-Every part of the claim aligns with the standard concept, so the statement stands.'] WHERE case_id = 'CASE 5.4.54' AND tier = 'full';
-UPDATE public.economics_cases SET tactical_explanations = ARRAY['TRUE — Evaluated against the textbook standard, this assertion is correct. For toy distributors in formal-wear and occasion-dress markets, persuasive promotion and frictionless buying channels can drive spending beyond affordable limits.
+Advertising can be unethical in some cases; higher sales do not prove ethical conduct this holds for electronics retailers when seasonal campaigns intensify.
 
-The relevant theory comes from responsibility, sustainability, and ethics in marketing. Identify which definition or relationship the sentence is trying to test before deciding true or false.
+One clear counterexample under the right criterion is enough to reject the sentence.
 
-Applied carefully, spending beyond affordable limits is a recognised consumer problem linked to persuasive promotion and impulse purchasing behaviour this holds for toy distributors in formal-wear and occasion-dress markets. Nothing in the sentence stretches the concept beyond its standard use.
+The statement is false.
+', 'FALSE — Sustainability arguments ask both businesses and consumers to weigh the risks of consuming more than is needed or affordable, and to act more responsibly in production and purchase decisions.
 
-No qualifying word breaks the definition or scenario, so the answer is true.', 'FALSE — This statement is false. For electronics retailers when seasonal campaigns intensify, all advertising is automatically ethical whenever it increases sales and informs customers about product features.
+Advertising can be unethical in some cases; higher sales do not prove ethical conduct this holds for electronics retailers among younger budget-conscious shoppers.
 
-The topic is responsibility, sustainability, and ethics in marketing, but the decisive skill here is reading quantifiers. Words such as never, always, only, or all turn a generally true idea into a claim that can be rejected by one routine counterexample.
+One clear counterexample under the right criterion is enough to reject the sentence.
 
-The statement overreaches because advertising can be unethical in some cases; higher sales do not prove ethical conduct this holds for electronics retailers when seasonal campaigns intensify. The trap is to agree with the topic while missing the one detail that breaks the logic.
+The statement is false.
+', 'FALSE — Sustainability arguments ask both businesses and consumers to weigh the risks of consuming more than is needed or affordable, and to act more responsibly in production and purchase decisions.
 
-Watch the absolute wording "all": exam statements often sound plausible until a single scope word turns an otherwise familiar idea into an overclaim.
+Advertising can be unethical in some cases; higher sales do not prove ethical conduct this holds for electronics retailers in formal-wear and occasion-dress markets.
 
-Once the overclaim or mislabel is exposed, the only consistent answer is false.', 'FALSE — Evaluated against the textbook standard, this assertion is false. For electronics retailers among younger budget-conscious shoppers, all advertising is automatically ethical whenever it increases sales and informs customers about product features.
+The absolute wording is what breaks the claim once the correct test is applied.
 
-The topic is responsibility, sustainability, and ethics in marketing, but the decisive skill here is reading quantifiers. Words such as never, always, only, or all turn a generally true idea into a claim that can be rejected by one routine counterexample.
+The statement is false.
+', 'FALSE — Responsible marketing and consumption favour longer use, repair, reuse, sharing, and renting of higher-quality goods over rapid disposable replacement.
 
-The statement overreaches because advertising can be unethical in some cases; higher sales do not prove ethical conduct this holds for electronics retailers among younger budget-conscious shoppers. The trap is to agree with the topic while missing the one detail that breaks the logic.
+Advertising can be unethical in some cases; higher sales do not prove ethical conduct this holds for electronics retailers where repair services remain available.
 
-Watch the absolute wording "all": exam statements often sound plausible until a single scope word turns an otherwise familiar idea into an overclaim.
+Those restricting words stretch a limited idea past what marketing allows.
 
-The statement sounds plausible but fails on precision, so it is false.', 'FALSE — Evaluated against the textbook standard, this assertion is false. For electronics retailers in formal-wear and occasion-dress markets, all advertising is automatically ethical whenever it increases sales and informs customers about product features.
+The statement is false.
+'] WHERE case_id = 'CASE 5.4.55' AND tier = 'full';
+UPDATE public.economics_cases SET tactical_explanations = ARRAY['TRUE — Responsible marketing and consumption favour longer use, repair, reuse, sharing, and renting of higher-quality goods over rapid disposable replacement.
 
-The topic is responsibility, sustainability, and ethics in marketing, but the decisive skill here is reading quantifiers. Words such as never, always, only, or all turn a generally true idea into a claim that can be rejected by one routine counterexample.
+On this stem (households): spending beyond affordable limits is a recognised consumer problem linked to persuasive promotion and impulse purchasing behaviour this holds for toy distributors where repair services remain available.
 
-The statement overreaches because advertising can be unethical in some cases; higher sales do not prove ethical conduct this holds for electronics retailers in formal-wear and occasion-dress markets. The trap is to agree with the topic while missing the one detail that breaks the logic.
+Nothing in the wording contradicts that marketing test, so the claim is sound.
 
-Watch the absolute wording "all": exam statements often sound plausible until a single scope word turns an otherwise familiar idea into an overclaim.
+The statement is true.
+', 'TRUE — Sustainability arguments ask both businesses and consumers to weigh the risks of consuming more than is needed or affordable, and to act more responsibly in production and purchase decisions.
 
-Once the overclaim or mislabel is exposed, the only consistent answer is false.', 'FALSE — Evaluated against the textbook standard, this assertion is false. For electronics retailers where repair services remain available, all advertising is automatically ethical whenever it increases sales and informs customers about product features.
+Spending beyond affordable limits is a recognised consumer problem linked to persuasive promotion and impulse purchasing behaviour this holds for garden-centre chains in consumer electronics markets.
 
-The topic is responsibility, sustainability, and ethics in marketing, but the decisive skill here is reading quantifiers. Words such as never, always, only, or all turn a generally true idea into a claim that can be rejected by one routine counterexample.
+The sentence therefore reports the concept accurately for this case.
 
-The statement overreaches because advertising can be unethical in some cases; higher sales do not prove ethical conduct this holds for electronics retailers where repair services remain available. The trap is to agree with the topic while missing the one detail that breaks the logic.
+The statement is true.
+', 'TRUE — Sustainability arguments ask both businesses and consumers to weigh the risks of consuming more than is needed or affordable, and to act more responsibly in production and purchase decisions.
 
-Watch the absolute wording "all": exam statements often sound plausible until a single scope word turns an otherwise familiar idea into an overclaim.
+On this stem (household / households): spending beyond affordable limits is a recognised consumer problem linked to persuasive promotion and impulse purchasing behaviour this holds for pharmacy groups in household durable-goods sectors.
 
-The statement sounds plausible but fails on precision, so it is false.'] WHERE case_id = 'CASE 5.4.55' AND tier = 'full';
-UPDATE public.economics_cases SET tactical_explanations = ARRAY['TRUE — On the Fuhrmann definition used in the entrance exam, the sentence is correct. For toy distributors where repair services remain available, households may exceed what they can afford when marketing nudges extra impulse purchases.
+Nothing in the wording contradicts that marketing test, so the claim is sound.
 
-The scenario is a worked example of responsibility, sustainability, and ethics in marketing. Translate the story into the textbook category first; only then judge whether the sentence describes that category accurately.
+The statement is true.
+', 'TRUE — Sustainability arguments ask both businesses and consumers to weigh the risks of consuming more than is needed or affordable, and to act more responsibly in production and purchase decisions.
 
-In this setting, spending beyond affordable limits is a recognised consumer problem linked to persuasive promotion and impulse purchasing behaviour this holds for toy distributors where repair services remain available. The wording matches the textbook relationship without adding extra conditions.
+Spending beyond affordable limits is a recognised consumer problem linked to persuasive promotion and impulse purchasing behaviour this holds for hotel operators when seasonal campaigns intensify.
 
-No qualifying word breaks the definition or scenario, so the answer is true.', 'TRUE — The claim is correct. For garden-centre chains in consumer electronics markets, persuasive promotion and frictionless buying channels can drive spending beyond affordable limits.
+The sentence therefore reports the concept accurately for this case.
 
-This statement draws on responsibility, sustainability, and ethics in marketing. Treat it as a checklist against the core concept named in the stem, not as a general opinion about business.
+The statement is true.
+', 'TRUE — Sustainability arguments ask both businesses and consumers to weigh the risks of consuming more than is needed or affordable, and to act more responsibly in production and purchase decisions.
 
-In this setting, spending beyond affordable limits is a recognised consumer problem linked to persuasive promotion and impulse purchasing behaviour this holds for garden-centre chains in consumer electronics markets. The wording matches the textbook relationship without adding extra conditions.
+On this stem (households): spending beyond affordable limits is a recognised consumer problem linked to persuasive promotion and impulse purchasing behaviour this holds for car-hire firms in apparel retailing.
 
-Every part of the claim aligns with the standard concept, so the statement stands.', 'TRUE — The claim is correct. For pharmacy groups in household durable-goods sectors, households may exceed what they can afford when marketing nudges extra impulse purchases.
+The sentence therefore reports the concept accurately for this case.
 
-The scenario is a worked example of responsibility, sustainability, and ethics in marketing. Translate the story into the textbook category first; only then judge whether the sentence describes that category accurately.
+The statement is true.
+'] WHERE case_id = 'CASE 5.4.56' AND tier = 'full';
+UPDATE public.economics_cases SET tactical_explanations = ARRAY['TRUE — Sustainability arguments ask both businesses and consumers to weigh the risks of consuming more than is needed or affordable, and to act more responsibly in production and purchase decisions.
 
-In this setting, spending beyond affordable limits is a recognised consumer problem linked to persuasive promotion and impulse purchasing behaviour this holds for pharmacy groups in household durable-goods sectors. The wording matches the textbook relationship without adding extra conditions.
+Spending beyond affordable limits is a recognised consumer problem linked to persuasive promotion and impulse purchasing behaviour this holds for car-hire firms in household durable-goods sectors.
 
-Every part of the claim aligns with the standard concept, so the statement stands.', 'TRUE — Evaluated against the textbook standard, this assertion is correct. For hotel operators when seasonal campaigns intensify, persuasive promotion and frictionless buying channels can drive spending beyond affordable limits.
+Nothing in the wording contradicts that marketing test, so the claim is sound.
 
-Here you must apply ideas from responsibility, sustainability, and ethics in marketing to a concrete situation rather than recite a definition from memory. Ownership, customer type, stakeholder group, or country of production usually decides the verdict.
+The statement is true.
+', 'TRUE — Responsible marketing and consumption favour longer use, repair, reuse, sharing, and renting of higher-quality goods over rapid disposable replacement.
 
-Applied carefully, spending beyond affordable limits is a recognised consumer problem linked to persuasive promotion and impulse purchasing behaviour this holds for hotel operators when seasonal campaigns intensify. Nothing in the sentence stretches the concept beyond its standard use.
+On this stem (households): spending beyond affordable limits is a recognised consumer problem linked to persuasive promotion and impulse purchasing behaviour this holds for tool-rental businesses in consumer electronics markets.
 
-The reasoning chain is complete, so mark the statement true.', 'TRUE — The claim is correct. For car-hire firms in apparel retailing, households may exceed what they can afford when marketing nudges extra impulse purchases.
+Nothing in the wording contradicts that marketing test, so the claim is sound.
 
-The scenario is a worked example of responsibility, sustainability, and ethics in marketing. Translate the story into the textbook category first; only then judge whether the sentence describes that category accurately.
+The statement is true.
+', 'TRUE — Sustainability arguments ask both businesses and consumers to weigh the risks of consuming more than is needed or affordable, and to act more responsibly in production and purchase decisions.
 
-In this setting, spending beyond affordable limits is a recognised consumer problem linked to persuasive promotion and impulse purchasing behaviour this holds for car-hire firms in apparel retailing. The wording matches the textbook relationship without adding extra conditions.
+Spending beyond affordable limits is a recognised consumer problem linked to persuasive promotion and impulse purchasing behaviour this holds for organic grocers when seasonal campaigns intensify.
 
-The reasoning chain is complete, so mark the statement true.'] WHERE case_id = 'CASE 5.4.56' AND tier = 'full';
-UPDATE public.economics_cases SET tactical_explanations = ARRAY['TRUE — The claim is correct. For car-hire firms, spending beyond affordable limits under promotional pressure is one of the consumption risks that responsible businesses and consumers should recognise.
+Under that definition the assertion is the right description of the situation.
 
-This statement draws on responsibility, sustainability, and ethics in marketing. Treat it as a checklist against the core concept named in the stem, not as a general opinion about business.
+The statement is true.
+', 'TRUE — Sustainability arguments ask both businesses and consumers to weigh the risks of consuming more than is needed or affordable, and to act more responsibly in production and purchase decisions.
 
-In this setting, spending beyond affordable limits is a recognised consumer problem linked to persuasive promotion and impulse purchasing behaviour this holds for car-hire firms in household durable-goods sectors. The wording matches the textbook relationship without adding extra conditions.
+On this stem (households): spending beyond affordable limits is a recognised consumer problem linked to persuasive promotion and impulse purchasing behaviour this holds for bicycle shops during online promotional events.
 
-The reasoning chain is complete, so mark the statement true.', 'TRUE — Evaluated against the textbook standard, this assertion is correct. For tool-rental businesses in consumer electronics markets, households may exceed what they can afford when marketing nudges extra impulse purchases.
+Under that definition the assertion is the right description of the situation.
 
-Here you must apply ideas from responsibility, sustainability, and ethics in marketing to a concrete situation rather than recite a definition from memory. Ownership, customer type, stakeholder group, or country of production usually decides the verdict.
+The statement is true.
+', 'TRUE — Sustainability arguments ask both businesses and consumers to weigh the risks of consuming more than is needed or affordable, and to act more responsibly in production and purchase decisions.
 
-Applied carefully, spending beyond affordable limits is a recognised consumer problem linked to persuasive promotion and impulse purchasing behaviour this holds for tool-rental businesses in consumer electronics markets. Nothing in the sentence stretches the concept beyond its standard use.
+Spending beyond affordable limits is a recognised consumer problem linked to persuasive promotion and impulse purchasing behaviour this holds for jewellery retailers among younger budget-conscious shoppers.
 
-Every part of the claim aligns with the standard concept, so the statement stands.', 'TRUE — On the Fuhrmann definition used in the entrance exam, the sentence is correct. For organic grocers when seasonal campaigns intensify, persuasive promotion and frictionless buying channels can drive spending beyond affordable limits.
+Nothing in the wording contradicts that marketing test, so the claim is sound.
 
-The scenario is a worked example of responsibility, sustainability, and ethics in marketing. Translate the story into the textbook category first; only then judge whether the sentence describes that category accurately.
+The statement is true.
+'] WHERE case_id = 'CASE 5.4.57' AND tier = 'full';
+UPDATE public.economics_cases SET tactical_explanations = ARRAY['TRUE — Sustainability arguments ask both businesses and consumers to weigh the risks of consuming more than is needed or affordable, and to act more responsibly in production and purchase decisions.
 
-In this setting, spending beyond affordable limits is a recognised consumer problem linked to persuasive promotion and impulse purchasing behaviour this holds for organic grocers when seasonal campaigns intensify. The wording matches the textbook relationship without adding extra conditions.
+On this stem (households): spending beyond affordable limits is a recognised consumer problem linked to persuasive promotion and impulse purchasing behaviour this holds for jewellery retailers in formal-wear and occasion-dress markets.
 
-The reasoning chain is complete, so mark the statement true.', 'TRUE — This statement is correct. For bicycle shops during online promotional events, households may exceed what they can afford when marketing nudges extra impulse purchases.
+The sentence therefore reports the concept accurately for this case.
 
-Here you must apply ideas from responsibility, sustainability, and ethics in marketing to a concrete situation rather than recite a definition from memory. Ownership, customer type, stakeholder group, or country of production usually decides the verdict.
+The statement is true.
+', 'FALSE — Sustainability arguments ask both businesses and consumers to weigh the risks of consuming more than is needed or affordable, and to act more responsibly in production and purchase decisions.
 
-Applied carefully, spending beyond affordable limits is a recognised consumer problem linked to persuasive promotion and impulse purchasing behaviour this holds for bicycle shops during online promotional events. Nothing in the sentence stretches the concept beyond its standard use.
+Advertising can be unethical in some cases; higher sales do not prove ethical conduct this holds for electronics retailers when credit makes impulse buying easier.
 
-Every part of the claim aligns with the standard concept, so the statement stands.', 'TRUE — The claim is correct. For jewellery retailers among younger budget-conscious shoppers, persuasive promotion and frictionless buying channels can drive spending beyond affordable limits.
+Those restricting words stretch a limited idea past what marketing allows.
 
-This statement draws on responsibility, sustainability, and ethics in marketing. Treat it as a checklist against the core concept named in the stem, not as a general opinion about business.
+The statement is false.
+', 'FALSE — Responsible marketing and consumption favour longer use, repair, reuse, sharing, and renting of higher-quality goods over rapid disposable replacement.
 
-In this setting, spending beyond affordable limits is a recognised consumer problem linked to persuasive promotion and impulse purchasing behaviour this holds for jewellery retailers among younger budget-conscious shoppers. The wording matches the textbook relationship without adding extra conditions.
+Advertising can be unethical in some cases; higher sales do not prove ethical conduct this holds for electronics retailers in communities promoting reuse.
 
-Every part of the claim aligns with the standard concept, so the statement stands.'] WHERE case_id = 'CASE 5.4.57' AND tier = 'full';
-UPDATE public.economics_cases SET tactical_explanations = ARRAY['TRUE — On the Fuhrmann definition used in the entrance exam, the sentence is correct. For jewellery retailers in formal-wear and occasion-dress markets, households may exceed what they can afford when marketing nudges extra impulse purchases.
+Those restricting words stretch a limited idea past what marketing allows.
 
-The scenario is a worked example of responsibility, sustainability, and ethics in marketing. Translate the story into the textbook category first; only then judge whether the sentence describes that category accurately.
+The statement is false.
+', 'TRUE — Sustainability arguments ask both businesses and consumers to weigh the risks of consuming more than is needed or affordable, and to act more responsibly in production and purchase decisions.
 
-In this setting, spending beyond affordable limits is a recognised consumer problem linked to persuasive promotion and impulse purchasing behaviour this holds for jewellery retailers in formal-wear and occasion-dress markets. The wording matches the textbook relationship without adding extra conditions.
+Spending beyond affordable limits is a recognised consumer problem linked to persuasive promotion and impulse purchasing behaviour this holds for stationery wholesalers in apparel retailing.
 
-Every part of the claim aligns with the standard concept, so the statement stands.', 'FALSE — On the Fuhrmann definition used in the entrance exam, the sentence is false. For electronics retailers when credit makes impulse buying easier, all advertising is automatically ethical whenever it increases sales and informs customers about product features.
+Under that definition the assertion is the right description of the situation.
 
-Although the subject matter is responsibility, sustainability, and ethics in marketing, this is really a logic check on overstatement. Non-profit surpluses, mixed economies, and partial market failure are classic cases where absolute wording fails.
+The statement is true.
+', 'TRUE — Sustainability arguments ask both businesses and consumers to weigh the risks of consuming more than is needed or affordable, and to act more responsibly in production and purchase decisions.
 
-Applied to this claim, advertising can be unethical in some cases; higher sales do not prove ethical conduct this holds for electronics retailers when credit makes impulse buying easier. That is why the sentence does not survive careful reading.
+On this stem (household / households): spending beyond affordable limits is a recognised consumer problem linked to persuasive promotion and impulse purchasing behaviour this holds for pet-supply stores in household durable-goods sectors.
 
-Watch the absolute wording "all": exam statements often sound plausible until a single scope word turns an otherwise familiar idea into an overclaim.
+Under that definition the assertion is the right description of the situation.
 
-The statement sounds plausible but fails on precision, so it is false.', 'FALSE — Evaluated against the textbook standard, this assertion is false. For electronics retailers in communities promoting reuse, all advertising is automatically ethical whenever it increases sales and informs customers about product features.
+The statement is true.
+'] WHERE case_id = 'CASE 5.4.58' AND tier = 'full';
+UPDATE public.economics_cases SET tactical_explanations = ARRAY['FALSE — Responsible marketing and consumption favour longer use, repair, reuse, sharing, and renting of higher-quality goods over rapid disposable replacement.
 
-The topic is responsibility, sustainability, and ethics in marketing, but the decisive skill here is reading quantifiers. Words such as never, always, only, or all turn a generally true idea into a claim that can be rejected by one routine counterexample.
+Advertising can be unethical in some cases; higher sales do not prove ethical conduct this holds for electronics retailers where rental platforms operate alongside retail.
 
-The statement overreaches because advertising can be unethical in some cases; higher sales do not prove ethical conduct this holds for electronics retailers in communities promoting reuse. The trap is to agree with the topic while missing the one detail that breaks the logic.
+One clear counterexample under the right criterion is enough to reject the sentence.
 
-Watch the absolute wording "all": exam statements often sound plausible until a single scope word turns an otherwise familiar idea into an overclaim.
+The statement is false.
+', 'FALSE — Sustainability arguments ask both businesses and consumers to weigh the risks of consuming more than is needed or affordable, and to act more responsibly in production and purchase decisions.
 
-Because the decisive detail is wrong, mark the statement false.', 'TRUE — Evaluated against the textbook standard, this assertion is correct. For stationery wholesalers in apparel retailing, persuasive promotion and frictionless buying channels can drive spending beyond affordable limits.
+Advertising can be unethical in some cases; higher sales do not prove ethical conduct this holds for electronics retailers when firms launch frequent product updates.
 
-The relevant theory comes from responsibility, sustainability, and ethics in marketing. Identify which definition or relationship the sentence is trying to test before deciding true or false.
+Those restricting words stretch a limited idea past what marketing allows.
 
-Applied carefully, spending beyond affordable limits is a recognised consumer problem linked to persuasive promotion and impulse purchasing behaviour this holds for stationery wholesalers in apparel retailing. Nothing in the sentence stretches the concept beyond its standard use.
+The statement is false.
+', 'FALSE — Sustainability arguments ask both businesses and consumers to weigh the risks of consuming more than is needed or affordable, and to act more responsibly in production and purchase decisions.
 
-The reasoning chain is complete, so mark the statement true.', 'TRUE — On the Fuhrmann definition used in the entrance exam, the sentence is correct. For pet-supply stores in household durable-goods sectors, households may exceed what they can afford when marketing nudges extra impulse purchases.
+Advertising can be unethical in some cases; higher sales do not prove ethical conduct this holds for electronics retailers among households tracking monthly budgets.
 
-The scenario is a worked example of responsibility, sustainability, and ethics in marketing. Translate the story into the textbook category first; only then judge whether the sentence describes that category accurately.
+Those restricting words stretch a limited idea past what marketing allows.
 
-In this setting, spending beyond affordable limits is a recognised consumer problem linked to persuasive promotion and impulse purchasing behaviour this holds for pet-supply stores in household durable-goods sectors. The wording matches the textbook relationship without adding extra conditions.
+The statement is false.
+', 'TRUE — Sustainability arguments ask both businesses and consumers to weigh the risks of consuming more than is needed or affordable, and to act more responsibly in production and purchase decisions.
 
-No qualifying word breaks the definition or scenario, so the answer is true.'] WHERE case_id = 'CASE 5.4.58' AND tier = 'full';
-UPDATE public.economics_cases SET tactical_explanations = ARRAY['FALSE — Evaluated against the textbook standard, this assertion is false. For electronics retailers where rental platforms operate alongside retail, all advertising is automatically ethical whenever it increases sales and informs customers about product features.
+Spending beyond affordable limits is a recognised consumer problem linked to persuasive promotion and impulse purchasing behaviour this holds for pet-supply stores when seasonal campaigns intensify.
 
-The topic is responsibility, sustainability, and ethics in marketing, but the decisive skill here is reading quantifiers. Words such as never, always, only, or all turn a generally true idea into a claim that can be rejected by one routine counterexample.
+Nothing in the wording contradicts that marketing test, so the claim is sound.
 
-The statement overreaches because advertising can be unethical in some cases; higher sales do not prove ethical conduct this holds for electronics retailers where rental platforms operate alongside retail. The trap is to agree with the topic while missing the one detail that breaks the logic.
+The statement is true.
+', 'FALSE — Sustainability arguments ask both businesses and consumers to weigh the risks of consuming more than is needed or affordable, and to act more responsibly in production and purchase decisions.
 
-Watch the absolute wording "all": exam statements often sound plausible until a single scope word turns an otherwise familiar idea into an overclaim.
+Advertising can be unethical in some cases; higher sales do not prove ethical conduct this holds for electronics retailers in second-hand and exchange networks.
 
-Because the decisive detail is wrong, mark the statement false.', 'FALSE — Evaluated against the textbook standard, this assertion is false. For electronics retailers when firms launch frequent product updates, all advertising is automatically ethical whenever it increases sales and informs customers about product features.
+Those restricting words stretch a limited idea past what marketing allows.
 
-The topic is responsibility, sustainability, and ethics in marketing, but the decisive skill here is reading quantifiers. Words such as never, always, only, or all turn a generally true idea into a claim that can be rejected by one routine counterexample.
+The statement is false.
+'] WHERE case_id = 'CASE 5.4.59' AND tier = 'full';
+UPDATE public.economics_cases SET tactical_explanations = ARRAY['FALSE — Responsible marketing and consumption favour longer use, repair, reuse, sharing, and renting of higher-quality goods over rapid disposable replacement.
 
-The statement overreaches because advertising can be unethical in some cases; higher sales do not prove ethical conduct this holds for electronics retailers when firms launch frequent product updates. The trap is to agree with the topic while missing the one detail that breaks the logic.
+Advertising can be unethical in some cases; higher sales do not prove ethical conduct this holds for electronics retailers where sustainability awareness is rising.
 
-Watch the absolute wording "all": exam statements often sound plausible until a single scope word turns an otherwise familiar idea into an overclaim.
+One clear counterexample under the right criterion is enough to reject the sentence.
 
-Once the overclaim or mislabel is exposed, the only consistent answer is false.', 'FALSE — The claim is false. For electronics retailers among households tracking monthly budgets, all advertising is automatically ethical whenever it increases sales and informs customers about product features.
+The statement is false.
+', 'FALSE — Sustainability arguments ask both businesses and consumers to weigh the risks of consuming more than is needed or affordable, and to act more responsibly in production and purchase decisions.
 
-Although the subject matter is responsibility, sustainability, and ethics in marketing, this is really a logic check on overstatement. Non-profit surpluses, mixed economies, and partial market failure are classic cases where absolute wording fails.
+Advertising can be unethical in some cases; higher sales do not prove ethical conduct this holds for fashion labels in consumer electronics markets.
 
-Applied to this claim, advertising can be unethical in some cases; higher sales do not prove ethical conduct this holds for electronics retailers among households tracking monthly budgets. That is why the sentence does not survive careful reading.
+The absolute wording is what breaks the claim once the correct test is applied.
 
-Watch the absolute wording "all": exam statements often sound plausible until a single scope word turns an otherwise familiar idea into an overclaim.
+The statement is false.
+', 'FALSE — Sustainability arguments ask both businesses and consumers to weigh the risks of consuming more than is needed or affordable, and to act more responsibly in production and purchase decisions.
 
-The statement sounds plausible but fails on precision, so it is false.', 'TRUE — Evaluated against the textbook standard, this assertion is correct. For pet-supply stores when seasonal campaigns intensify, persuasive promotion and frictionless buying channels can drive spending beyond affordable limits.
+Advertising can be unethical in some cases; higher sales do not prove ethical conduct this holds for fashion labels when credit makes impulse buying easier.
 
-Here you must apply ideas from responsibility, sustainability, and ethics in marketing to a concrete situation rather than recite a definition from memory. Ownership, customer type, stakeholder group, or country of production usually decides the verdict.
+The absolute wording is what breaks the claim once the correct test is applied.
 
-Applied carefully, spending beyond affordable limits is a recognised consumer problem linked to persuasive promotion and impulse purchasing behaviour this holds for pet-supply stores when seasonal campaigns intensify. Nothing in the sentence stretches the concept beyond its standard use.
+The statement is false.
+', 'FALSE — Responsible marketing and consumption favour longer use, repair, reuse, sharing, and renting of higher-quality goods over rapid disposable replacement.
 
-Every part of the claim aligns with the standard concept, so the statement stands.', 'FALSE — The claim is false. For electronics retailers in second-hand and exchange networks, all advertising is automatically ethical whenever it increases sales and informs customers about product features.
+Advertising can be unethical in some cases; higher sales do not prove ethical conduct this holds for fashion labels where rental platforms operate alongside retail.
 
-Although the subject matter is responsibility, sustainability, and ethics in marketing, this is really a logic check on overstatement. Non-profit surpluses, mixed economies, and partial market failure are classic cases where absolute wording fails.
+Those restricting words stretch a limited idea past what marketing allows.
 
-Applied to this claim, advertising can be unethical in some cases; higher sales do not prove ethical conduct this holds for electronics retailers in second-hand and exchange networks. That is why the sentence does not survive careful reading.
+The statement is false.
+', 'TRUE — Sustainability arguments ask both businesses and consumers to weigh the risks of consuming more than is needed or affordable, and to act more responsibly in production and purchase decisions.
 
-Watch the absolute wording "all": exam statements often sound plausible until a single scope word turns an otherwise familiar idea into an overclaim.
+On this stem (households): spending beyond affordable limits is a recognised consumer problem linked to persuasive promotion and impulse purchasing behaviour this holds for pet-supply stores during online promotional events.
 
-Once the overclaim or mislabel is exposed, the only consistent answer is false.'] WHERE case_id = 'CASE 5.4.59' AND tier = 'full';
-UPDATE public.economics_cases SET tactical_explanations = ARRAY['FALSE — On the Fuhrmann definition used in the entrance exam, the sentence is false. For electronics retailers where sustainability awareness is rising, all advertising is automatically ethical whenever it increases sales and informs customers about product features.
+The sentence therefore reports the concept accurately for this case.
 
-Although the subject matter is responsibility, sustainability, and ethics in marketing, this is really a logic check on overstatement. Non-profit surpluses, mixed economies, and partial market failure are classic cases where absolute wording fails.
+The statement is true.
+'] WHERE case_id = 'CASE 5.4.60' AND tier = 'full';
+UPDATE public.economics_cases SET tactical_explanations = ARRAY['FALSE — Sustainability arguments ask both businesses and consumers to weigh the risks of consuming more than is needed or affordable, and to act more responsibly in production and purchase decisions.
 
-Applied to this claim, advertising can be unethical in some cases; higher sales do not prove ethical conduct this holds for electronics retailers where sustainability awareness is rising. That is why the sentence does not survive careful reading.
+Advertising can be unethical in some cases; higher sales do not prove ethical conduct this holds for fashion labels when firms launch frequent product updates.
 
-Watch the absolute wording "all": exam statements often sound plausible until a single scope word turns an otherwise familiar idea into an overclaim.
+The absolute wording is what breaks the claim once the correct test is applied.
 
-Once the overclaim or mislabel is exposed, the only consistent answer is false.', 'FALSE — The claim is false. For fashion labels in consumer electronics markets, all advertising is automatically ethical whenever it increases sales and informs customers about product features.
+The statement is false.
+', 'TRUE — Sustainability arguments ask both businesses and consumers to weigh the risks of consuming more than is needed or affordable, and to act more responsibly in production and purchase decisions.
 
-Although the subject matter is responsibility, sustainability, and ethics in marketing, this is really a logic check on overstatement. Non-profit surpluses, mixed economies, and partial market failure are classic cases where absolute wording fails.
+Spending beyond affordable limits is a recognised consumer problem linked to persuasive promotion and impulse purchasing behaviour this holds for pet-supply stores among younger budget-conscious shoppers.
 
-Applied to this claim, advertising can be unethical in some cases; higher sales do not prove ethical conduct this holds for fashion labels in consumer electronics markets. That is why the sentence does not survive careful reading.
+Nothing in the wording contradicts that marketing test, so the claim is sound.
 
-Watch the absolute wording "all": exam statements often sound plausible until a single scope word turns an otherwise familiar idea into an overclaim.
+The statement is true.
+', 'TRUE — Sustainability arguments ask both businesses and consumers to weigh the risks of consuming more than is needed or affordable, and to act more responsibly in production and purchase decisions.
 
-Because the decisive detail is wrong, mark the statement false.', 'FALSE — The claim is false. For fashion labels when credit makes impulse buying easier, all advertising is automatically ethical whenever it increases sales and informs customers about product features.
+On this stem (households): spending beyond affordable limits is a recognised consumer problem linked to persuasive promotion and impulse purchasing behaviour this holds for kitchen-equipment firms in consumer electronics markets.
 
-Although the subject matter is responsibility, sustainability, and ethics in marketing, this is really a logic check on overstatement. Non-profit surpluses, mixed economies, and partial market failure are classic cases where absolute wording fails.
+Nothing in the wording contradicts that marketing test, so the claim is sound.
 
-Applied to this claim, advertising can be unethical in some cases; higher sales do not prove ethical conduct this holds for fashion labels when credit makes impulse buying easier. That is why the sentence does not survive careful reading.
+The statement is true.
+', 'TRUE — Sustainability arguments ask both businesses and consumers to weigh the risks of consuming more than is needed or affordable, and to act more responsibly in production and purchase decisions.
 
-Watch the absolute wording "all": exam statements often sound plausible until a single scope word turns an otherwise familiar idea into an overclaim.
+On this stem (brands / household): spending beyond affordable limits is a recognised consumer problem linked to persuasive promotion and impulse purchasing behaviour this holds for footwear brands in household durable-goods sectors.
 
-Because the decisive detail is wrong, mark the statement false.', 'FALSE — On the Fuhrmann definition used in the entrance exam, the sentence is false. For fashion labels where rental platforms operate alongside retail, all advertising is automatically ethical whenever it increases sales and informs customers about product features.
+Under that definition the assertion is the right description of the situation.
 
-Although the subject matter is responsibility, sustainability, and ethics in marketing, this is really a logic check on overstatement. Non-profit surpluses, mixed economies, and partial market failure are classic cases where absolute wording fails.
+The statement is true.
+', 'TRUE — Sustainability arguments ask both businesses and consumers to weigh the risks of consuming more than is needed or affordable, and to act more responsibly in production and purchase decisions.
 
-Applied to this claim, advertising can be unethical in some cases; higher sales do not prove ethical conduct this holds for fashion labels where rental platforms operate alongside retail. That is why the sentence does not survive careful reading.
+On this stem (households): spending beyond affordable limits is a recognised consumer problem linked to persuasive promotion and impulse purchasing behaviour this holds for eyewear retailers when seasonal campaigns intensify.
 
-Watch the absolute wording "all": exam statements often sound plausible until a single scope word turns an otherwise familiar idea into an overclaim.
+Under that definition the assertion is the right description of the situation.
 
-The statement sounds plausible but fails on precision, so it is false.', 'TRUE — On the Fuhrmann definition used in the entrance exam, the sentence is correct. For pet-supply stores during online promotional events, households may exceed what they can afford when marketing nudges extra impulse purchases.
+The statement is true.
+'] WHERE case_id = 'CASE 5.4.61' AND tier = 'full';
+UPDATE public.economics_cases SET tactical_explanations = ARRAY['FALSE — Sustainability arguments ask both businesses and consumers to weigh the risks of consuming more than is needed or affordable, and to act more responsibly in production and purchase decisions.
 
-The scenario is a worked example of responsibility, sustainability, and ethics in marketing. Translate the story into the textbook category first; only then judge whether the sentence describes that category accurately.
+Advertising can be unethical in some cases; higher sales do not prove ethical conduct this holds for fashion labels among households tracking monthly budgets.
 
-In this setting, spending beyond affordable limits is a recognised consumer problem linked to persuasive promotion and impulse purchasing behaviour this holds for pet-supply stores during online promotional events. The wording matches the textbook relationship without adding extra conditions.
+The absolute wording is what breaks the claim once the correct test is applied.
 
-No qualifying word breaks the definition or scenario, so the answer is true.'] WHERE case_id = 'CASE 5.4.60' AND tier = 'full';
-UPDATE public.economics_cases SET tactical_explanations = ARRAY['FALSE — This statement is false. For fashion labels when firms launch frequent product updates, all advertising is automatically ethical whenever it increases sales and informs customers about product features.
+The statement is false.
+', 'TRUE — Sustainability arguments ask both businesses and consumers to weigh the risks of consuming more than is needed or affordable, and to act more responsibly in production and purchase decisions.
 
-The topic is responsibility, sustainability, and ethics in marketing, but the decisive skill here is reading quantifiers. Words such as never, always, only, or all turn a generally true idea into a claim that can be rejected by one routine counterexample.
+Spending beyond affordable limits is a recognised consumer problem linked to persuasive promotion and impulse purchasing behaviour this holds for eyewear retailers during online promotional events.
 
-The statement overreaches because advertising can be unethical in some cases; higher sales do not prove ethical conduct this holds for fashion labels when firms launch frequent product updates. The trap is to agree with the topic while missing the one detail that breaks the logic.
+Under that definition the assertion is the right description of the situation.
 
-Watch the absolute wording "all": exam statements often sound plausible until a single scope word turns an otherwise familiar idea into an overclaim.
+The statement is true.
+', 'TRUE — Sustainability arguments ask both businesses and consumers to weigh the risks of consuming more than is needed or affordable, and to act more responsibly in production and purchase decisions.
 
-Because the decisive detail is wrong, mark the statement false.', 'TRUE — Evaluated against the textbook standard, this assertion is correct. For pet-supply stores among younger budget-conscious shoppers, persuasive promotion and frictionless buying channels can drive spending beyond affordable limits.
+On this stem (households): spending beyond affordable limits is a recognised consumer problem linked to persuasive promotion and impulse purchasing behaviour this holds for music-instrument dealers in consumer electronics markets.
 
-The relevant theory comes from responsibility, sustainability, and ethics in marketing. Identify which definition or relationship the sentence is trying to test before deciding true or false.
+Nothing in the wording contradicts that marketing test, so the claim is sound.
 
-Applied carefully, spending beyond affordable limits is a recognised consumer problem linked to persuasive promotion and impulse purchasing behaviour this holds for pet-supply stores among younger budget-conscious shoppers. Nothing in the sentence stretches the concept beyond its standard use.
+The statement is true.
+', 'FALSE — Sustainability arguments ask both businesses and consumers to weigh the risks of consuming more than is needed or affordable, and to act more responsibly in production and purchase decisions.
 
-No qualifying word breaks the definition or scenario, so the answer is true.', 'TRUE — Evaluated against the textbook standard, this assertion is correct. For kitchen-equipment firms in consumer electronics markets, households may exceed what they can afford when marketing nudges extra impulse purchases.
+Advertising can be unethical in some cases; higher sales do not prove ethical conduct this holds for fashion labels in second-hand and exchange networks.
 
-Here you must apply ideas from responsibility, sustainability, and ethics in marketing to a concrete situation rather than recite a definition from memory. Ownership, customer type, stakeholder group, or country of production usually decides the verdict.
+The absolute wording is what breaks the claim once the correct test is applied.
 
-Applied carefully, spending beyond affordable limits is a recognised consumer problem linked to persuasive promotion and impulse purchasing behaviour this holds for kitchen-equipment firms in consumer electronics markets. Nothing in the sentence stretches the concept beyond its standard use.
+The statement is false.
+', 'FALSE — Sustainability arguments ask both businesses and consumers to weigh the risks of consuming more than is needed or affordable, and to act more responsibly in production and purchase decisions.
 
-The reasoning chain is complete, so mark the statement true.', 'TRUE — This statement is correct. For footwear brands in household durable-goods sectors, persuasive promotion and frictionless buying channels can drive spending beyond affordable limits.
+Advertising can be unethical in some cases; higher sales do not prove ethical conduct this holds for furniture workshops in consumer electronics markets.
 
-The relevant theory comes from responsibility, sustainability, and ethics in marketing. Identify which definition or relationship the sentence is trying to test before deciding true or false.
+The absolute wording is what breaks the claim once the correct test is applied.
 
-Applied carefully, spending beyond affordable limits is a recognised consumer problem linked to persuasive promotion and impulse purchasing behaviour this holds for footwear brands in household durable-goods sectors. Nothing in the sentence stretches the concept beyond its standard use.
+The statement is false.
+'] WHERE case_id = 'CASE 5.4.62' AND tier = 'full';
+UPDATE public.economics_cases SET tactical_explanations = ARRAY['FALSE — Sustainability arguments ask both businesses and consumers to weigh the risks of consuming more than is needed or affordable, and to act more responsibly in production and purchase decisions.
 
-Every part of the claim aligns with the standard concept, so the statement stands.', 'TRUE — Evaluated against the textbook standard, this assertion is correct. For eyewear retailers when seasonal campaigns intensify, households may exceed what they can afford when marketing nudges extra impulse purchases.
+Advertising can be unethical in some cases; higher sales do not prove ethical conduct this holds for furniture workshops in apparel retailing.
 
-Here you must apply ideas from responsibility, sustainability, and ethics in marketing to a concrete situation rather than recite a definition from memory. Ownership, customer type, stakeholder group, or country of production usually decides the verdict.
+The absolute wording is what breaks the claim once the correct test is applied.
 
-Applied carefully, spending beyond affordable limits is a recognised consumer problem linked to persuasive promotion and impulse purchasing behaviour this holds for eyewear retailers when seasonal campaigns intensify. Nothing in the sentence stretches the concept beyond its standard use.
+The statement is false.
+', 'TRUE — Sustainability arguments ask both businesses and consumers to weigh the risks of consuming more than is needed or affordable, and to act more responsibly in production and purchase decisions.
 
-The reasoning chain is complete, so mark the statement true.'] WHERE case_id = 'CASE 5.4.61' AND tier = 'full';
-UPDATE public.economics_cases SET tactical_explanations = ARRAY['FALSE — Evaluated against the textbook standard, this assertion is false. For fashion labels among households tracking monthly budgets, all advertising is automatically ethical whenever it increases sales and informs customers about product features.
+Spending beyond affordable limits is a recognised consumer problem linked to persuasive promotion and impulse purchasing behaviour this holds for music-instrument dealers in apparel retailing.
 
-The topic is responsibility, sustainability, and ethics in marketing, but the decisive skill here is reading quantifiers. Words such as never, always, only, or all turn a generally true idea into a claim that can be rejected by one routine counterexample.
+The sentence therefore reports the concept accurately for this case.
 
-The statement overreaches because advertising can be unethical in some cases; higher sales do not prove ethical conduct this holds for fashion labels among households tracking monthly budgets. The trap is to agree with the topic while missing the one detail that breaks the logic.
+The statement is true.
+', 'TRUE — Sustainability arguments ask both businesses and consumers to weigh the risks of consuming more than is needed or affordable, and to act more responsibly in production and purchase decisions.
 
-Watch the absolute wording "all": exam statements often sound plausible until a single scope word turns an otherwise familiar idea into an overclaim.
+On this stem (households): spending beyond affordable limits is a recognised consumer problem linked to persuasive promotion and impulse purchasing behaviour this holds for camping-gear suppliers in consumer electronics markets.
 
-Once the overclaim or mislabel is exposed, the only consistent answer is false.', 'TRUE — This statement is correct. For eyewear retailers during online promotional events, persuasive promotion and frictionless buying channels can drive spending beyond affordable limits.
+The sentence therefore reports the concept accurately for this case.
 
-The relevant theory comes from responsibility, sustainability, and ethics in marketing. Identify which definition or relationship the sentence is trying to test before deciding true or false.
+The statement is true.
+', 'FALSE — Sustainability arguments ask both businesses and consumers to weigh the risks of consuming more than is needed or affordable, and to act more responsibly in production and purchase decisions.
 
-Applied carefully, spending beyond affordable limits is a recognised consumer problem linked to persuasive promotion and impulse purchasing behaviour this holds for eyewear retailers during online promotional events. Nothing in the sentence stretches the concept beyond its standard use.
+Advertising can be unethical in some cases; higher sales do not prove ethical conduct this holds for appliance manufacturers in consumer electronics markets.
 
-The reasoning chain is complete, so mark the statement true.', 'TRUE — The claim is correct. For music-instrument dealers in consumer electronics markets, households may exceed what they can afford when marketing nudges extra impulse purchases.
+The absolute wording is what breaks the claim once the correct test is applied.
 
-The scenario is a worked example of responsibility, sustainability, and ethics in marketing. Translate the story into the textbook category first; only then judge whether the sentence describes that category accurately.
+The statement is false.
+', 'TRUE — Sustainability arguments ask both businesses and consumers to weigh the risks of consuming more than is needed or affordable, and to act more responsibly in production and purchase decisions.
 
-In this setting, spending beyond affordable limits is a recognised consumer problem linked to persuasive promotion and impulse purchasing behaviour this holds for music-instrument dealers in consumer electronics markets. The wording matches the textbook relationship without adding extra conditions.
+Spending beyond affordable limits is a recognised consumer problem linked to persuasive promotion and impulse purchasing behaviour this holds for baby-product retailers in household durable-goods sectors.
 
-No qualifying word breaks the definition or scenario, so the answer is true.', 'FALSE — This statement is false. For fashion labels in second-hand and exchange networks, all advertising is automatically ethical whenever it increases sales and informs customers about product features.
+Nothing in the wording contradicts that marketing test, so the claim is sound.
 
-The topic is responsibility, sustainability, and ethics in marketing, but the decisive skill here is reading quantifiers. Words such as never, always, only, or all turn a generally true idea into a claim that can be rejected by one routine counterexample.
+The statement is true.
+'] WHERE case_id = 'CASE 5.4.63' AND tier = 'full';
+UPDATE public.economics_cases SET tactical_explanations = ARRAY['TRUE — Sustainability arguments ask both businesses and consumers to weigh the risks of consuming more than is needed or affordable, and to act more responsibly in production and purchase decisions.
 
-The statement overreaches because advertising can be unethical in some cases; higher sales do not prove ethical conduct this holds for fashion labels in second-hand and exchange networks. The trap is to agree with the topic while missing the one detail that breaks the logic.
+On this stem (households): spending beyond affordable limits is a recognised consumer problem linked to persuasive promotion and impulse purchasing behaviour this holds for baby-product retailers when seasonal campaigns intensify.
 
-Watch the absolute wording "all": exam statements often sound plausible until a single scope word turns an otherwise familiar idea into an overclaim.
+Under that definition the assertion is the right description of the situation.
 
-Once the overclaim or mislabel is exposed, the only consistent answer is false.', 'FALSE — The claim is false. For furniture workshops in consumer electronics markets, all advertising is automatically ethical whenever it increases sales and informs customers about product features.
+The statement is true.
+', 'TRUE — Sustainability arguments ask both businesses and consumers to weigh the risks of consuming more than is needed or affordable, and to act more responsibly in production and purchase decisions.
 
-Although the subject matter is responsibility, sustainability, and ethics in marketing, this is really a logic check on overstatement. Non-profit surpluses, mixed economies, and partial market failure are classic cases where absolute wording fails.
+Spending beyond affordable limits is a recognised consumer problem linked to persuasive promotion and impulse purchasing behaviour this holds for art-supply stores in consumer electronics markets.
 
-Applied to this claim, advertising can be unethical in some cases; higher sales do not prove ethical conduct this holds for furniture workshops in consumer electronics markets. That is why the sentence does not survive careful reading.
+Under that definition the assertion is the right description of the situation.
 
-Watch the absolute wording "all": exam statements often sound plausible until a single scope word turns an otherwise familiar idea into an overclaim.
+The statement is true.
+', 'TRUE — Sustainability arguments ask both businesses and consumers to weigh the risks of consuming more than is needed or affordable, and to act more responsibly in production and purchase decisions.
 
-Because the decisive detail is wrong, mark the statement false.'] WHERE case_id = 'CASE 5.4.62' AND tier = 'full';
-UPDATE public.economics_cases SET tactical_explanations = ARRAY['FALSE — This statement is false. For furniture workshops in apparel retailing, all advertising is automatically ethical whenever it increases sales and informs customers about product features.
+On this stem (household / households): spending beyond affordable limits is a recognised consumer problem linked to persuasive promotion and impulse purchasing behaviour this holds for wine merchants in household durable-goods sectors.
 
-The topic is responsibility, sustainability, and ethics in marketing, but the decisive skill here is reading quantifiers. Words such as never, always, only, or all turn a generally true idea into a claim that can be rejected by one routine counterexample.
+The sentence therefore reports the concept accurately for this case.
 
-The statement overreaches because advertising can be unethical in some cases; higher sales do not prove ethical conduct this holds for furniture workshops in apparel retailing. The trap is to agree with the topic while missing the one detail that breaks the logic.
+The statement is true.
+', 'TRUE — Sustainability arguments ask both businesses and consumers to weigh the risks of consuming more than is needed or affordable, and to act more responsibly in production and purchase decisions.
 
-Watch the absolute wording "all": exam statements often sound plausible until a single scope word turns an otherwise familiar idea into an overclaim.
+Spending beyond affordable limits is a recognised consumer problem linked to persuasive promotion and impulse purchasing behaviour this holds for florist networks during online promotional events.
 
-Because the decisive detail is wrong, mark the statement false.', 'TRUE — Evaluated against the textbook standard, this assertion is correct. For music-instrument dealers in apparel retailing, persuasive promotion and frictionless buying channels can drive spending beyond affordable limits.
+The sentence therefore reports the concept accurately for this case.
 
-The relevant theory comes from responsibility, sustainability, and ethics in marketing. Identify which definition or relationship the sentence is trying to test before deciding true or false.
+The statement is true.
+', 'TRUE — Sustainability arguments ask both businesses and consumers to weigh the risks of consuming more than is needed or affordable, and to act more responsibly in production and purchase decisions.
 
-Applied carefully, spending beyond affordable limits is a recognised consumer problem linked to persuasive promotion and impulse purchasing behaviour this holds for music-instrument dealers in apparel retailing. Nothing in the sentence stretches the concept beyond its standard use.
+On this stem (households): spending beyond affordable limits is a recognised consumer problem linked to persuasive promotion and impulse purchasing behaviour this holds for cleaning-product makers among younger budget-conscious shoppers.
 
-Every part of the claim aligns with the standard concept, so the statement stands.', 'TRUE — On the Fuhrmann definition used in the entrance exam, the sentence is correct. For camping-gear suppliers in consumer electronics markets, households may exceed what they can afford when marketing nudges extra impulse purchases.
+Nothing in the wording contradicts that marketing test, so the claim is sound.
 
-The scenario is a worked example of responsibility, sustainability, and ethics in marketing. Translate the story into the textbook category first; only then judge whether the sentence describes that category accurately.
+The statement is true.
+'] WHERE case_id = 'CASE 5.4.64' AND tier = 'full';
+UPDATE public.economics_cases SET tactical_explanations = ARRAY['TRUE — Sustainability arguments ask both businesses and consumers to weigh the risks of consuming more than is needed or affordable, and to act more responsibly in production and purchase decisions.
 
-In this setting, spending beyond affordable limits is a recognised consumer problem linked to persuasive promotion and impulse purchasing behaviour this holds for camping-gear suppliers in consumer electronics markets. The wording matches the textbook relationship without adding extra conditions.
+Spending beyond affordable limits is a recognised consumer problem linked to persuasive promotion and impulse purchasing behaviour this holds for cleaning-product makers in formal-wear and occasion-dress markets.
 
-No qualifying word breaks the definition or scenario, so the answer is true.', 'FALSE — Evaluated against the textbook standard, this assertion is false. For appliance manufacturers in consumer electronics markets, all advertising is automatically ethical whenever it increases sales and informs customers about product features.
+Nothing in the wording contradicts that marketing test, so the claim is sound.
 
-The topic is responsibility, sustainability, and ethics in marketing, but the decisive skill here is reading quantifiers. Words such as never, always, only, or all turn a generally true idea into a claim that can be rejected by one routine counterexample.
+The statement is true.
+', 'TRUE — Sustainability arguments ask both businesses and consumers to weigh the risks of consuming more than is needed or affordable, and to act more responsibly in production and purchase decisions.
 
-The statement overreaches because advertising can be unethical in some cases; higher sales do not prove ethical conduct this holds for appliance manufacturers in consumer electronics markets. The trap is to agree with the topic while missing the one detail that breaks the logic.
+On this stem (households): spending beyond affordable limits is a recognised consumer problem linked to persuasive promotion and impulse purchasing behaviour this holds for mobile-accessory sellers in consumer electronics markets.
 
-Watch the absolute wording "all": exam statements often sound plausible until a single scope word turns an otherwise familiar idea into an overclaim.
+Under that definition the assertion is the right description of the situation.
 
-The statement sounds plausible but fails on precision, so it is false.', 'TRUE — On the Fuhrmann definition used in the entrance exam, the sentence is correct. For baby-product retailers in household durable-goods sectors, persuasive promotion and frictionless buying channels can drive spending beyond affordable limits.
+The statement is true.
+', 'TRUE — Sustainability arguments ask both businesses and consumers to weigh the risks of consuming more than is needed or affordable, and to act more responsibly in production and purchase decisions.
 
-This statement draws on responsibility, sustainability, and ethics in marketing. Treat it as a checklist against the core concept named in the stem, not as a general opinion about business.
+Spending beyond affordable limits is a recognised consumer problem linked to persuasive promotion and impulse purchasing behaviour this holds for home-decor boutiques in apparel retailing.
 
-In this setting, spending beyond affordable limits is a recognised consumer problem linked to persuasive promotion and impulse purchasing behaviour this holds for baby-product retailers in household durable-goods sectors. The wording matches the textbook relationship without adding extra conditions.
+Nothing in the wording contradicts that marketing test, so the claim is sound.
 
-Every part of the claim aligns with the standard concept, so the statement stands.'] WHERE case_id = 'CASE 5.4.63' AND tier = 'full';
-UPDATE public.economics_cases SET tactical_explanations = ARRAY['TRUE — On the Fuhrmann definition used in the entrance exam, the sentence is correct. For baby-product retailers when seasonal campaigns intensify, households may exceed what they can afford when marketing nudges extra impulse purchases.
+The statement is true.
+', 'TRUE — Sustainability arguments ask both businesses and consumers to weigh the risks of consuming more than is needed or affordable, and to act more responsibly in production and purchase decisions.
 
-The scenario is a worked example of responsibility, sustainability, and ethics in marketing. Translate the story into the textbook category first; only then judge whether the sentence describes that category accurately.
+Actual expenditure can exceed the amount shoppers planned to allocate when campaigns stimulate additional wants during the transaction this holds for electronics retailers in consumer electronics markets.
 
-In this setting, spending beyond affordable limits is a recognised consumer problem linked to persuasive promotion and impulse purchasing behaviour this holds for baby-product retailers when seasonal campaigns intensify. The wording matches the textbook relationship without adding extra conditions.
+The sentence therefore reports the concept accurately for this case.
 
-Every part of the claim aligns with the standard concept, so the statement stands.', 'TRUE — The claim is correct. For art-supply stores in consumer electronics markets, persuasive promotion and frictionless buying channels can drive spending beyond affordable limits.
+The statement is true.
+', 'TRUE — Sustainability arguments ask both businesses and consumers to weigh the risks of consuming more than is needed or affordable, and to act more responsibly in production and purchase decisions.
 
-This statement draws on responsibility, sustainability, and ethics in marketing. Treat it as a checklist against the core concept named in the stem, not as a general opinion about business.
+Actual expenditure can exceed the amount shoppers planned to allocate when campaigns stimulate additional wants during the transaction this holds for fashion labels among younger budget-conscious shoppers.
 
-In this setting, spending beyond affordable limits is a recognised consumer problem linked to persuasive promotion and impulse purchasing behaviour this holds for art-supply stores in consumer electronics markets. The wording matches the textbook relationship without adding extra conditions.
+The sentence therefore reports the concept accurately for this case.
 
-The reasoning chain is complete, so mark the statement true.', 'TRUE — Evaluated against the textbook standard, this assertion is correct. For wine merchants in household durable-goods sectors, households may exceed what they can afford when marketing nudges extra impulse purchases.
+The statement is true.
+'] WHERE case_id = 'CASE 5.4.65' AND tier = 'full';
+UPDATE public.economics_cases SET tactical_explanations = ARRAY['TRUE — Sustainability arguments ask both businesses and consumers to weigh the risks of consuming more than is needed or affordable, and to act more responsibly in production and purchase decisions.
 
-Here you must apply ideas from responsibility, sustainability, and ethics in marketing to a concrete situation rather than recite a definition from memory. Ownership, customer type, stakeholder group, or country of production usually decides the verdict.
+Actual expenditure can exceed the amount shoppers planned to allocate when campaigns stimulate additional wants during the transaction this holds for fashion labels in formal-wear and occasion-dress markets.
 
-Applied carefully, spending beyond affordable limits is a recognised consumer problem linked to persuasive promotion and impulse purchasing behaviour this holds for wine merchants in household durable-goods sectors. Nothing in the sentence stretches the concept beyond its standard use.
+Nothing in the wording contradicts that marketing test, so the claim is sound.
 
-Every part of the claim aligns with the standard concept, so the statement stands.', 'TRUE — This statement is correct. For florist networks during online promotional events, persuasive promotion and frictionless buying channels can drive spending beyond affordable limits.
+The statement is true.
+', 'TRUE — Responsible marketing and consumption favour longer use, repair, reuse, sharing, and renting of higher-quality goods over rapid disposable replacement.
 
-The relevant theory comes from responsibility, sustainability, and ethics in marketing. Identify which definition or relationship the sentence is trying to test before deciding true or false.
+Actual expenditure can exceed the amount shoppers planned to allocate when campaigns stimulate additional wants during the transaction this holds for fashion labels where rental platforms operate alongside retail.
 
-Applied carefully, spending beyond affordable limits is a recognised consumer problem linked to persuasive promotion and impulse purchasing behaviour this holds for florist networks during online promotional events. Nothing in the sentence stretches the concept beyond its standard use.
+The sentence therefore reports the concept accurately for this case.
 
-The reasoning chain is complete, so mark the statement true.', 'TRUE — The claim is correct. For cleaning-product makers among younger budget-conscious shoppers, households may exceed what they can afford when marketing nudges extra impulse purchases.
+The statement is true.
+', 'TRUE — Sustainability arguments ask both businesses and consumers to weigh the risks of consuming more than is needed or affordable, and to act more responsibly in production and purchase decisions.
 
-The scenario is a worked example of responsibility, sustainability, and ethics in marketing. Translate the story into the textbook category first; only then judge whether the sentence describes that category accurately.
+Actual expenditure can exceed the amount shoppers planned to allocate when campaigns stimulate additional wants during the transaction this holds for furniture workshops in apparel retailing.
 
-In this setting, spending beyond affordable limits is a recognised consumer problem linked to persuasive promotion and impulse purchasing behaviour this holds for cleaning-product makers among younger budget-conscious shoppers. The wording matches the textbook relationship without adding extra conditions.
+Under that definition the assertion is the right description of the situation.
 
-No qualifying word breaks the definition or scenario, so the answer is true.'] WHERE case_id = 'CASE 5.4.64' AND tier = 'full';
-UPDATE public.economics_cases SET tactical_explanations = ARRAY['TRUE — The claim is correct. For cleaning-product makers in formal-wear and occasion-dress markets, persuasive promotion and frictionless buying channels can drive spending beyond affordable limits.
+The statement is true.
+', 'FALSE — Sustainability arguments ask both businesses and consumers to weigh the risks of consuming more than is needed or affordable, and to act more responsibly in production and purchase decisions.
 
-This statement draws on responsibility, sustainability, and ethics in marketing. Treat it as a checklist against the core concept named in the stem, not as a general opinion about business.
+Advertising can be unethical in some cases; higher sales do not prove ethical conduct this holds for appliance manufacturers in apparel retailing.
 
-In this setting, spending beyond affordable limits is a recognised consumer problem linked to persuasive promotion and impulse purchasing behaviour this holds for cleaning-product makers in formal-wear and occasion-dress markets. The wording matches the textbook relationship without adding extra conditions.
+The absolute wording is what breaks the claim once the correct test is applied.
 
-No qualifying word breaks the definition or scenario, so the answer is true.', 'TRUE — The claim is correct. For mobile-accessory sellers in consumer electronics markets, households may exceed what they can afford when marketing nudges extra impulse purchases.
+The statement is false.
+', 'TRUE — Sustainability arguments ask both businesses and consumers to weigh the risks of consuming more than is needed or affordable, and to act more responsibly in production and purchase decisions.
 
-The scenario is a worked example of responsibility, sustainability, and ethics in marketing. Translate the story into the textbook category first; only then judge whether the sentence describes that category accurately.
+Actual expenditure can exceed the amount shoppers planned to allocate when campaigns stimulate additional wants during the transaction this holds for appliance manufacturers among younger budget-conscious shoppers.
 
-In this setting, spending beyond affordable limits is a recognised consumer problem linked to persuasive promotion and impulse purchasing behaviour this holds for mobile-accessory sellers in consumer electronics markets. The wording matches the textbook relationship without adding extra conditions.
+The sentence therefore reports the concept accurately for this case.
 
-The reasoning chain is complete, so mark the statement true.', 'TRUE — This statement is correct. For home-decor boutiques in apparel retailing, persuasive promotion and frictionless buying channels can drive spending beyond affordable limits.
+The statement is true.
+'] WHERE case_id = 'CASE 5.4.66' AND tier = 'full';
+UPDATE public.economics_cases SET tactical_explanations = ARRAY['TRUE — Sustainability arguments ask both businesses and consumers to weigh the risks of consuming more than is needed or affordable, and to act more responsibly in production and purchase decisions.
 
-The relevant theory comes from responsibility, sustainability, and ethics in marketing. Identify which definition or relationship the sentence is trying to test before deciding true or false.
+Actual expenditure can exceed the amount shoppers planned to allocate when campaigns stimulate additional wants during the transaction this holds for appliance manufacturers in formal-wear and occasion-dress markets.
 
-Applied carefully, spending beyond affordable limits is a recognised consumer problem linked to persuasive promotion and impulse purchasing behaviour this holds for home-decor boutiques in apparel retailing. Nothing in the sentence stretches the concept beyond its standard use.
+Nothing in the wording contradicts that marketing test, so the claim is sound.
 
-Every part of the claim aligns with the standard concept, so the statement stands.', 'TRUE — The claim is correct. For electronics retailers in consumer electronics markets, consumers often spend more than they initially intended when promotional messages trigger extra purchases beyond the original shopping plan.
+The statement is true.
+', 'TRUE — Responsible marketing and consumption favour longer use, repair, reuse, sharing, and renting of higher-quality goods over rapid disposable replacement.
 
-The section on responsibility, sustainability, and ethics in marketing frequently contrasts two similar ideas side by side. A comparison statement is true only if the relationship is stated in the right direction and applies to the right concept pair.
+Actual expenditure can exceed the amount shoppers planned to allocate when campaigns stimulate additional wants during the transaction this holds for appliance manufacturers where rental platforms operate alongside retail.
 
-In this setting, actual expenditure can exceed the amount shoppers planned to allocate when campaigns stimulate additional wants during the transaction this holds for electronics retailers in consumer electronics markets. The wording matches the textbook relationship without adding extra conditions.
+The sentence therefore reports the concept accurately for this case.
 
-Every part of the claim aligns with the standard concept, so the statement stands.', 'TRUE — The claim is correct. For fashion labels among younger budget-conscious shoppers, promotional prompts frequently push actual spending above what shoppers planned to allocate.
+The statement is true.
+', 'TRUE — Sustainability arguments ask both businesses and consumers to weigh the risks of consuming more than is needed or affordable, and to act more responsibly in production and purchase decisions.
 
-This statement draws on responsibility, sustainability, and ethics in marketing. Treat it as a checklist against the core concept named in the stem, not as a general opinion about business.
+Actual expenditure can exceed the amount shoppers planned to allocate when campaigns stimulate additional wants during the transaction this holds for cosmetics brands in apparel retailing.
 
-In this setting, actual expenditure can exceed the amount shoppers planned to allocate when campaigns stimulate additional wants during the transaction this holds for fashion labels among younger budget-conscious shoppers. The wording matches the textbook relationship without adding extra conditions.
+The sentence therefore reports the concept accurately for this case.
 
-No qualifying word breaks the definition or scenario, so the answer is true.'] WHERE case_id = 'CASE 5.4.65' AND tier = 'full';
-UPDATE public.economics_cases SET tactical_explanations = ARRAY['TRUE — On the Fuhrmann definition used in the entrance exam, the sentence is correct. For fashion labels in formal-wear and occasion-dress markets, campaigns can add unplanned buys so outlays exceed the budget shoppers set beforehand.
+The statement is true.
+', 'TRUE — Sustainability arguments ask both businesses and consumers to weigh the risks of consuming more than is needed or affordable, and to act more responsibly in production and purchase decisions.
 
-This statement draws on responsibility, sustainability, and ethics in marketing. Treat it as a checklist against the core concept named in the stem, not as a general opinion about business.
+Actual expenditure can exceed the amount shoppers planned to allocate when campaigns stimulate additional wants during the transaction this holds for sporting-goods stores among younger budget-conscious shoppers.
 
-In this setting, actual expenditure can exceed the amount shoppers planned to allocate when campaigns stimulate additional wants during the transaction this holds for fashion labels in formal-wear and occasion-dress markets. The wording matches the textbook relationship without adding extra conditions.
+Under that definition the assertion is the right description of the situation.
 
-Every part of the claim aligns with the standard concept, so the statement stands.', 'TRUE — The claim is correct. For fashion labels where rental platforms operate alongside retail, promotional prompts frequently push actual spending above what shoppers planned to allocate.
+The statement is true.
+', 'TRUE — Responsible marketing and consumption favour longer use, repair, reuse, sharing, and renting of higher-quality goods over rapid disposable replacement.
 
-This statement draws on responsibility, sustainability, and ethics in marketing. Treat it as a checklist against the core concept named in the stem, not as a general opinion about business.
+Actual expenditure can exceed the amount shoppers planned to allocate when campaigns stimulate additional wants during the transaction this holds for book publishers where repair services remain available.
 
-In this setting, actual expenditure can exceed the amount shoppers planned to allocate when campaigns stimulate additional wants during the transaction this holds for fashion labels where rental platforms operate alongside retail. The wording matches the textbook relationship without adding extra conditions.
+Nothing in the wording contradicts that marketing test, so the claim is sound.
 
-No qualifying word breaks the definition or scenario, so the answer is true.', 'TRUE — On the Fuhrmann definition used in the entrance exam, the sentence is correct. For furniture workshops in apparel retailing, campaigns can add unplanned buys so outlays exceed the budget shoppers set beforehand.
+The statement is true.
+'] WHERE case_id = 'CASE 5.4.67' AND tier = 'full';
+UPDATE public.economics_cases SET tactical_explanations = ARRAY['TRUE — Sustainability arguments ask both businesses and consumers to weigh the risks of consuming more than is needed or affordable, and to act more responsibly in production and purchase decisions.
 
-This statement draws on responsibility, sustainability, and ethics in marketing. Treat it as a checklist against the core concept named in the stem, not as a general opinion about business.
+Actual expenditure can exceed the amount shoppers planned to allocate when campaigns stimulate additional wants during the transaction this holds for book publishers when credit makes impulse buying easier.
 
-In this setting, actual expenditure can exceed the amount shoppers planned to allocate when campaigns stimulate additional wants during the transaction this holds for furniture workshops in apparel retailing. The wording matches the textbook relationship without adding extra conditions.
+Nothing in the wording contradicts that marketing test, so the claim is sound.
 
-The reasoning chain is complete, so mark the statement true.', 'FALSE — Evaluated against the textbook standard, this assertion is false. For appliance manufacturers in apparel retailing, all advertising is automatically ethical whenever it increases sales and informs customers about product features.
+The statement is true.
+', 'FALSE — Sustainability arguments ask both businesses and consumers to weigh the risks of consuming more than is needed or affordable, and to act more responsibly in production and purchase decisions.
 
-The topic is responsibility, sustainability, and ethics in marketing, but the decisive skill here is reading quantifiers. Words such as never, always, only, or all turn a generally true idea into a claim that can be rejected by one routine counterexample.
+Advertising can be unethical in some cases; higher sales do not prove ethical conduct this holds for appliance manufacturers in household durable-goods sectors.
 
-The statement overreaches because advertising can be unethical in some cases; higher sales do not prove ethical conduct this holds for appliance manufacturers in apparel retailing. The trap is to agree with the topic while missing the one detail that breaks the logic.
+Those restricting words stretch a limited idea past what marketing allows.
 
-Watch the absolute wording "all": exam statements often sound plausible until a single scope word turns an otherwise familiar idea into an overclaim.
+The statement is false.
+', 'TRUE — Sustainability arguments ask both businesses and consumers to weigh the risks of consuming more than is needed or affordable, and to act more responsibly in production and purchase decisions.
 
-Once the overclaim or mislabel is exposed, the only consistent answer is false.', 'TRUE — This statement is correct. For appliance manufacturers among younger budget-conscious shoppers, promotional prompts frequently push actual spending above what shoppers planned to allocate.
+Actual expenditure can exceed the amount shoppers planned to allocate when campaigns stimulate additional wants during the transaction this holds for toy distributors in consumer electronics markets.
 
-The relevant theory comes from responsibility, sustainability, and ethics in marketing. Identify which definition or relationship the sentence is trying to test before deciding true or false.
+Under that definition the assertion is the right description of the situation.
 
-Applied carefully, actual expenditure can exceed the amount shoppers planned to allocate when campaigns stimulate additional wants during the transaction this holds for appliance manufacturers among younger budget-conscious shoppers. Nothing in the sentence stretches the concept beyond its standard use.
+The statement is true.
+', 'FALSE — Sustainability arguments ask both businesses and consumers to weigh the risks of consuming more than is needed or affordable, and to act more responsibly in production and purchase decisions.
 
-The reasoning chain is complete, so mark the statement true.'] WHERE case_id = 'CASE 5.4.66' AND tier = 'full';
-UPDATE public.economics_cases SET tactical_explanations = ARRAY['TRUE — Evaluated against the textbook standard, this assertion is correct. For appliance manufacturers in formal-wear and occasion-dress markets, campaigns can add unplanned buys so outlays exceed the budget shoppers set beforehand.
+Advertising can be unethical in some cases; higher sales do not prove ethical conduct this holds for appliance manufacturers among younger budget-conscious shoppers.
 
-The relevant theory comes from responsibility, sustainability, and ethics in marketing. Identify which definition or relationship the sentence is trying to test before deciding true or false.
+Those restricting words stretch a limited idea past what marketing allows.
 
-Applied carefully, actual expenditure can exceed the amount shoppers planned to allocate when campaigns stimulate additional wants during the transaction this holds for appliance manufacturers in formal-wear and occasion-dress markets. Nothing in the sentence stretches the concept beyond its standard use.
+The statement is false.
+', 'TRUE — Sustainability arguments ask both businesses and consumers to weigh the risks of consuming more than is needed or affordable, and to act more responsibly in production and purchase decisions.
 
-Every part of the claim aligns with the standard concept, so the statement stands.', 'TRUE — The claim is correct. For appliance manufacturers where rental platforms operate alongside retail, promotional prompts frequently push actual spending above what shoppers planned to allocate.
+Actual expenditure can exceed the amount shoppers planned to allocate when campaigns stimulate additional wants during the transaction this holds for garden-centre chains in household durable-goods sectors.
 
-This statement draws on responsibility, sustainability, and ethics in marketing. Treat it as a checklist against the core concept named in the stem, not as a general opinion about business.
+The sentence therefore reports the concept accurately for this case.
 
-In this setting, actual expenditure can exceed the amount shoppers planned to allocate when campaigns stimulate additional wants during the transaction this holds for appliance manufacturers where rental platforms operate alongside retail. The wording matches the textbook relationship without adding extra conditions.
+The statement is true.
+'] WHERE case_id = 'CASE 5.4.68' AND tier = 'full';
+UPDATE public.economics_cases SET tactical_explanations = ARRAY['TRUE — Sustainability arguments ask both businesses and consumers to weigh the risks of consuming more than is needed or affordable, and to act more responsibly in production and purchase decisions.
 
-Every part of the claim aligns with the standard concept, so the statement stands.', 'TRUE — Evaluated against the textbook standard, this assertion is correct. For cosmetics brands in apparel retailing, campaigns can add unplanned buys so outlays exceed the budget shoppers set beforehand.
+Actual expenditure can exceed the amount shoppers planned to allocate when campaigns stimulate additional wants during the transaction this holds for garden-centre chains when seasonal campaigns intensify.
 
-The relevant theory comes from responsibility, sustainability, and ethics in marketing. Identify which definition or relationship the sentence is trying to test before deciding true or false.
+The sentence therefore reports the concept accurately for this case.
 
-Applied carefully, actual expenditure can exceed the amount shoppers planned to allocate when campaigns stimulate additional wants during the transaction this holds for cosmetics brands in apparel retailing. Nothing in the sentence stretches the concept beyond its standard use.
+The statement is true.
+', 'FALSE — Sustainability arguments ask both businesses and consumers to weigh the risks of consuming more than is needed or affordable, and to act more responsibly in production and purchase decisions.
 
-No qualifying word breaks the definition or scenario, so the answer is true.', 'TRUE — Evaluated against the textbook standard, this assertion is correct. For sporting-goods stores among younger budget-conscious shoppers, promotional prompts frequently push actual spending above what shoppers planned to allocate.
+Advertising can be unethical in some cases; higher sales do not prove ethical conduct this holds for appliance manufacturers in formal-wear and occasion-dress markets.
 
-The relevant theory comes from responsibility, sustainability, and ethics in marketing. Identify which definition or relationship the sentence is trying to test before deciding true or false.
+One clear counterexample under the right criterion is enough to reject the sentence.
 
-Applied carefully, actual expenditure can exceed the amount shoppers planned to allocate when campaigns stimulate additional wants during the transaction this holds for sporting-goods stores among younger budget-conscious shoppers. Nothing in the sentence stretches the concept beyond its standard use.
+The statement is false.
+', 'FALSE — Responsible marketing and consumption favour longer use, repair, reuse, sharing, and renting of higher-quality goods over rapid disposable replacement.
 
-The reasoning chain is complete, so mark the statement true.', 'TRUE — The claim is correct. For book publishers where repair services remain available, campaigns can add unplanned buys so outlays exceed the budget shoppers set beforehand.
+Advertising can be unethical in some cases; higher sales do not prove ethical conduct this holds for appliance manufacturers where repair services remain available.
 
-This statement draws on responsibility, sustainability, and ethics in marketing. Treat it as a checklist against the core concept named in the stem, not as a general opinion about business.
+The absolute wording is what breaks the claim once the correct test is applied.
 
-In this setting, actual expenditure can exceed the amount shoppers planned to allocate when campaigns stimulate additional wants during the transaction this holds for book publishers where repair services remain available. The wording matches the textbook relationship without adding extra conditions.
+The statement is false.
+', 'FALSE — Sustainability arguments ask both businesses and consumers to weigh the risks of consuming more than is needed or affordable, and to act more responsibly in production and purchase decisions.
 
-No qualifying word breaks the definition or scenario, so the answer is true.'] WHERE case_id = 'CASE 5.4.67' AND tier = 'full';
-UPDATE public.economics_cases SET tactical_explanations = ARRAY['TRUE — Evaluated against the textbook standard, this assertion is correct. For book publishers when credit makes impulse buying easier, promotional prompts frequently push actual spending above what shoppers planned to allocate.
+Advertising can be unethical in some cases; higher sales do not prove ethical conduct this holds for appliance manufacturers when credit makes impulse buying easier.
 
-Here you must apply ideas from responsibility, sustainability, and ethics in marketing to a concrete situation rather than recite a definition from memory. Ownership, customer type, stakeholder group, or country of production usually decides the verdict.
+The absolute wording is what breaks the claim once the correct test is applied.
 
-Applied carefully, actual expenditure can exceed the amount shoppers planned to allocate when campaigns stimulate additional wants during the transaction this holds for book publishers when credit makes impulse buying easier. Nothing in the sentence stretches the concept beyond its standard use.
+The statement is false.
+', 'TRUE — Sustainability arguments ask both businesses and consumers to weigh the risks of consuming more than is needed or affordable, and to act more responsibly in production and purchase decisions.
 
-The reasoning chain is complete, so mark the statement true.', 'FALSE — This statement is false. For appliance manufacturers in household durable-goods sectors, all advertising is automatically ethical whenever it increases sales and informs customers about product features.
+Actual expenditure can exceed the amount shoppers planned to allocate when campaigns stimulate additional wants during the transaction this holds for pharmacy groups in consumer electronics markets.
 
-The topic is responsibility, sustainability, and ethics in marketing, but the decisive skill here is reading quantifiers. Words such as never, always, only, or all turn a generally true idea into a claim that can be rejected by one routine counterexample.
+Nothing in the wording contradicts that marketing test, so the claim is sound.
 
-The statement overreaches because advertising can be unethical in some cases; higher sales do not prove ethical conduct this holds for appliance manufacturers in household durable-goods sectors. The trap is to agree with the topic while missing the one detail that breaks the logic.
+The statement is true.
+'] WHERE case_id = 'CASE 5.4.69' AND tier = 'full';
+UPDATE public.economics_cases SET tactical_explanations = ARRAY['FALSE — Responsible marketing and consumption favour longer use, repair, reuse, sharing, and renting of higher-quality goods over rapid disposable replacement.
 
-Watch the absolute wording "all": exam statements often sound plausible until a single scope word turns an otherwise familiar idea into an overclaim.
+Advertising can be unethical in some cases; higher sales do not prove ethical conduct this holds for appliance manufacturers in communities promoting reuse.
 
-Once the overclaim or mislabel is exposed, the only consistent answer is false.', 'TRUE — The claim is correct. For toy distributors in consumer electronics markets, campaigns can add unplanned buys so outlays exceed the budget shoppers set beforehand.
+The absolute wording is what breaks the claim once the correct test is applied.
 
-This statement draws on responsibility, sustainability, and ethics in marketing. Treat it as a checklist against the core concept named in the stem, not as a general opinion about business.
+The statement is false.
+', 'TRUE — Sustainability arguments ask both businesses and consumers to weigh the risks of consuming more than is needed or affordable, and to act more responsibly in production and purchase decisions.
 
-In this setting, actual expenditure can exceed the amount shoppers planned to allocate when campaigns stimulate additional wants during the transaction this holds for toy distributors in consumer electronics markets. The wording matches the textbook relationship without adding extra conditions.
+Actual expenditure can exceed the amount shoppers planned to allocate when campaigns stimulate additional wants during the transaction this holds for pharmacy groups in apparel retailing.
 
-The reasoning chain is complete, so mark the statement true.', 'FALSE — The claim is false. For appliance manufacturers among younger budget-conscious shoppers, all advertising is automatically ethical whenever it increases sales and informs customers about product features.
+Nothing in the wording contradicts that marketing test, so the claim is sound.
 
-Although the subject matter is responsibility, sustainability, and ethics in marketing, this is really a logic check on overstatement. Non-profit surpluses, mixed economies, and partial market failure are classic cases where absolute wording fails.
+The statement is true.
+', 'FALSE — Responsible marketing and consumption favour longer use, repair, reuse, sharing, and renting of higher-quality goods over rapid disposable replacement.
 
-Applied to this claim, advertising can be unethical in some cases; higher sales do not prove ethical conduct this holds for appliance manufacturers among younger budget-conscious shoppers. That is why the sentence does not survive careful reading.
+Advertising can be unethical in some cases; higher sales do not prove ethical conduct this holds for appliance manufacturers where rental platforms operate alongside retail.
 
-Watch the absolute wording "all": exam statements often sound plausible until a single scope word turns an otherwise familiar idea into an overclaim.
+Those restricting words stretch a limited idea past what marketing allows.
 
-Because the decisive detail is wrong, mark the statement false.', 'TRUE — Evaluated against the textbook standard, this assertion is correct. For garden-centre chains in household durable-goods sectors, promotional prompts frequently push actual spending above what shoppers planned to allocate.
+The statement is false.
+', 'TRUE — Sustainability arguments ask both businesses and consumers to weigh the risks of consuming more than is needed or affordable, and to act more responsibly in production and purchase decisions.
 
-The relevant theory comes from responsibility, sustainability, and ethics in marketing. Identify which definition or relationship the sentence is trying to test before deciding true or false.
+Actual expenditure can exceed the amount shoppers planned to allocate when campaigns stimulate additional wants during the transaction this holds for hotel operators among younger budget-conscious shoppers.
 
-Applied carefully, actual expenditure can exceed the amount shoppers planned to allocate when campaigns stimulate additional wants during the transaction this holds for garden-centre chains in household durable-goods sectors. Nothing in the sentence stretches the concept beyond its standard use.
+Under that definition the assertion is the right description of the situation.
 
-Every part of the claim aligns with the standard concept, so the statement stands.'] WHERE case_id = 'CASE 5.4.68' AND tier = 'full';
-UPDATE public.economics_cases SET tactical_explanations = ARRAY['TRUE — Evaluated against the textbook standard, this assertion is correct. For garden-centre chains when seasonal campaigns intensify, campaigns can add unplanned buys so outlays exceed the budget shoppers set beforehand.
+The statement is true.
+', 'TRUE — Sustainability arguments ask both businesses and consumers to weigh the risks of consuming more than is needed or affordable, and to act more responsibly in production and purchase decisions.
 
-Here you must apply ideas from responsibility, sustainability, and ethics in marketing to a concrete situation rather than recite a definition from memory. Ownership, customer type, stakeholder group, or country of production usually decides the verdict.
+Actual expenditure can exceed the amount shoppers planned to allocate when campaigns stimulate additional wants during the transaction this holds for car-hire firms in household durable-goods sectors.
 
-Applied carefully, actual expenditure can exceed the amount shoppers planned to allocate when campaigns stimulate additional wants during the transaction this holds for garden-centre chains when seasonal campaigns intensify. Nothing in the sentence stretches the concept beyond its standard use.
+Under that definition the assertion is the right description of the situation.
 
-Every part of the claim aligns with the standard concept, so the statement stands.', 'FALSE — The claim is false. For appliance manufacturers in formal-wear and occasion-dress markets, all advertising is automatically ethical whenever it increases sales and informs customers about product features.
+The statement is true.
+'] WHERE case_id = 'CASE 5.4.70' AND tier = 'full';
+UPDATE public.economics_cases SET tactical_explanations = ARRAY['TRUE — Sustainability arguments ask both businesses and consumers to weigh the risks of consuming more than is needed or affordable, and to act more responsibly in production and purchase decisions.
 
-Although the subject matter is responsibility, sustainability, and ethics in marketing, this is really a logic check on overstatement. Non-profit surpluses, mixed economies, and partial market failure are classic cases where absolute wording fails.
+Actual expenditure can exceed the amount shoppers planned to allocate when campaigns stimulate additional wants during the transaction this holds for car-hire firms when seasonal campaigns intensify.
 
-Applied to this claim, advertising can be unethical in some cases; higher sales do not prove ethical conduct this holds for appliance manufacturers in formal-wear and occasion-dress markets. That is why the sentence does not survive careful reading.
+Under that definition the assertion is the right description of the situation.
 
-Watch the absolute wording "all": exam statements often sound plausible until a single scope word turns an otherwise familiar idea into an overclaim.
+The statement is true.
+', 'TRUE — Responsible marketing and consumption favour longer use, repair, reuse, sharing, and renting of higher-quality goods over rapid disposable replacement.
 
-Because the decisive detail is wrong, mark the statement false.', 'FALSE — This statement is false. For appliance manufacturers where repair services remain available, all advertising is automatically ethical whenever it increases sales and informs customers about product features.
+Actual expenditure can exceed the amount shoppers planned to allocate when campaigns stimulate additional wants during the transaction this holds for tool-rental businesses in consumer electronics markets.
 
-The topic is responsibility, sustainability, and ethics in marketing, but the decisive skill here is reading quantifiers. Words such as never, always, only, or all turn a generally true idea into a claim that can be rejected by one routine counterexample.
+Under that definition the assertion is the right description of the situation.
 
-The statement overreaches because advertising can be unethical in some cases; higher sales do not prove ethical conduct this holds for appliance manufacturers where repair services remain available. The trap is to agree with the topic while missing the one detail that breaks the logic.
+The statement is true.
+', 'TRUE — Sustainability arguments ask both businesses and consumers to weigh the risks of consuming more than is needed or affordable, and to act more responsibly in production and purchase decisions.
 
-Watch the absolute wording "all": exam statements often sound plausible until a single scope word turns an otherwise familiar idea into an overclaim.
+Actual expenditure can exceed the amount shoppers planned to allocate when campaigns stimulate additional wants during the transaction this holds for organic grocers in household durable-goods sectors.
 
-The statement sounds plausible but fails on precision, so it is false.', 'FALSE — Evaluated against the textbook standard, this assertion is false. For appliance manufacturers when credit makes impulse buying easier, all advertising is automatically ethical whenever it increases sales and informs customers about product features.
+Nothing in the wording contradicts that marketing test, so the claim is sound.
 
-The topic is responsibility, sustainability, and ethics in marketing, but the decisive skill here is reading quantifiers. Words such as never, always, only, or all turn a generally true idea into a claim that can be rejected by one routine counterexample.
+The statement is true.
+', 'TRUE — Sustainability arguments ask both businesses and consumers to weigh the risks of consuming more than is needed or affordable, and to act more responsibly in production and purchase decisions.
 
-The statement overreaches because advertising can be unethical in some cases; higher sales do not prove ethical conduct this holds for appliance manufacturers when credit makes impulse buying easier. The trap is to agree with the topic while missing the one detail that breaks the logic.
+Actual expenditure can exceed the amount shoppers planned to allocate when campaigns stimulate additional wants during the transaction this holds for bicycle shops during online promotional events.
 
-Watch the absolute wording "all": exam statements often sound plausible until a single scope word turns an otherwise familiar idea into an overclaim.
+The sentence therefore reports the concept accurately for this case.
 
-Because the decisive detail is wrong, mark the statement false.', 'TRUE — On the Fuhrmann definition used in the entrance exam, the sentence is correct. For pharmacy groups in consumer electronics markets, promotional prompts frequently push actual spending above what shoppers planned to allocate.
+The statement is true.
+', 'TRUE — Sustainability arguments ask both businesses and consumers to weigh the risks of consuming more than is needed or affordable, and to act more responsibly in production and purchase decisions.
 
-This statement draws on responsibility, sustainability, and ethics in marketing. Treat it as a checklist against the core concept named in the stem, not as a general opinion about business.
+Actual expenditure can exceed the amount shoppers planned to allocate when campaigns stimulate additional wants during the transaction this holds for jewellery retailers among younger budget-conscious shoppers.
 
-In this setting, actual expenditure can exceed the amount shoppers planned to allocate when campaigns stimulate additional wants during the transaction this holds for pharmacy groups in consumer electronics markets. The wording matches the textbook relationship without adding extra conditions.
+The sentence therefore reports the concept accurately for this case.
 
-Every part of the claim aligns with the standard concept, so the statement stands.'] WHERE case_id = 'CASE 5.4.69' AND tier = 'full';
-UPDATE public.economics_cases SET tactical_explanations = ARRAY['FALSE — The claim is false. For appliance manufacturers in communities promoting reuse, all advertising is automatically ethical whenever it increases sales and informs customers about product features.
+The statement is true.
+'] WHERE case_id = 'CASE 5.4.71' AND tier = 'full';
+UPDATE public.economics_cases SET tactical_explanations = ARRAY['TRUE — Sustainability arguments ask both businesses and consumers to weigh the risks of consuming more than is needed or affordable, and to act more responsibly in production and purchase decisions.
 
-Although the subject matter is responsibility, sustainability, and ethics in marketing, this is really a logic check on overstatement. Non-profit surpluses, mixed economies, and partial market failure are classic cases where absolute wording fails.
+Actual expenditure can exceed the amount shoppers planned to allocate when campaigns stimulate additional wants during the transaction this holds for jewellery retailers in formal-wear and occasion-dress markets.
 
-Applied to this claim, advertising can be unethical in some cases; higher sales do not prove ethical conduct this holds for appliance manufacturers in communities promoting reuse. That is why the sentence does not survive careful reading.
+Nothing in the wording contradicts that marketing test, so the claim is sound.
 
-Watch the absolute wording "all": exam statements often sound plausible until a single scope word turns an otherwise familiar idea into an overclaim.
+The statement is true.
+', 'TRUE — Responsible marketing and consumption favour longer use, repair, reuse, sharing, and renting of higher-quality goods over rapid disposable replacement.
 
-Once the overclaim or mislabel is exposed, the only consistent answer is false.', 'TRUE — The claim is correct. For pharmacy groups in apparel retailing, campaigns can add unplanned buys so outlays exceed the budget shoppers set beforehand.
+Actual expenditure can exceed the amount shoppers planned to allocate when campaigns stimulate additional wants during the transaction this holds for jewellery retailers where rental platforms operate alongside retail.
 
-This statement draws on responsibility, sustainability, and ethics in marketing. Treat it as a checklist against the core concept named in the stem, not as a general opinion about business.
+The sentence therefore reports the concept accurately for this case.
 
-In this setting, actual expenditure can exceed the amount shoppers planned to allocate when campaigns stimulate additional wants during the transaction this holds for pharmacy groups in apparel retailing. The wording matches the textbook relationship without adding extra conditions.
+The statement is true.
+', 'TRUE — Sustainability arguments ask both businesses and consumers to weigh the risks of consuming more than is needed or affordable, and to act more responsibly in production and purchase decisions.
 
-Every part of the claim aligns with the standard concept, so the statement stands.', 'FALSE — On the Fuhrmann definition used in the entrance exam, the sentence is false. For appliance manufacturers where rental platforms operate alongside retail, all advertising is automatically ethical whenever it increases sales and informs customers about product features.
+Actual expenditure can exceed the amount shoppers planned to allocate when campaigns stimulate additional wants during the transaction this holds for stationery wholesalers in apparel retailing.
 
-Although the subject matter is responsibility, sustainability, and ethics in marketing, this is really a logic check on overstatement. Non-profit surpluses, mixed economies, and partial market failure are classic cases where absolute wording fails.
+Nothing in the wording contradicts that marketing test, so the claim is sound.
 
-Applied to this claim, advertising can be unethical in some cases; higher sales do not prove ethical conduct this holds for appliance manufacturers where rental platforms operate alongside retail. That is why the sentence does not survive careful reading.
+The statement is true.
+', 'TRUE — Sustainability arguments ask both businesses and consumers to weigh the risks of consuming more than is needed or affordable, and to act more responsibly in production and purchase decisions.
 
-Watch the absolute wording "all": exam statements often sound plausible until a single scope word turns an otherwise familiar idea into an overclaim.
+Actual expenditure can exceed the amount shoppers planned to allocate when campaigns stimulate additional wants during the transaction this holds for pet-supply stores in household durable-goods sectors.
 
-Once the overclaim or mislabel is exposed, the only consistent answer is false.', 'TRUE — The claim is correct. For hotel operators among younger budget-conscious shoppers, promotional prompts frequently push actual spending above what shoppers planned to allocate.
+The sentence therefore reports the concept accurately for this case.
 
-This statement draws on responsibility, sustainability, and ethics in marketing. Treat it as a checklist against the core concept named in the stem, not as a general opinion about business.
+The statement is true.
+', 'TRUE — Sustainability arguments ask both businesses and consumers to weigh the risks of consuming more than is needed or affordable, and to act more responsibly in production and purchase decisions.
 
-In this setting, actual expenditure can exceed the amount shoppers planned to allocate when campaigns stimulate additional wants during the transaction this holds for hotel operators among younger budget-conscious shoppers. The wording matches the textbook relationship without adding extra conditions.
+Actual expenditure can exceed the amount shoppers planned to allocate when campaigns stimulate additional wants during the transaction this holds for kitchen-equipment firms among younger budget-conscious shoppers.
 
-Every part of the claim aligns with the standard concept, so the statement stands.', 'TRUE — Evaluated against the textbook standard, this assertion is correct. For car-hire firms in household durable-goods sectors, campaigns can add unplanned buys so outlays exceed the budget shoppers set beforehand.
+The sentence therefore reports the concept accurately for this case.
 
-The relevant theory comes from responsibility, sustainability, and ethics in marketing. Identify which definition or relationship the sentence is trying to test before deciding true or false.
+The statement is true.
+'] WHERE case_id = 'CASE 5.4.72' AND tier = 'full';
+UPDATE public.economics_cases SET tactical_explanations = ARRAY['FALSE — Sustainability arguments ask both businesses and consumers to weigh the risks of consuming more than is needed or affordable, and to act more responsibly in production and purchase decisions.
 
-Applied carefully, actual expenditure can exceed the amount shoppers planned to allocate when campaigns stimulate additional wants during the transaction this holds for car-hire firms in household durable-goods sectors. Nothing in the sentence stretches the concept beyond its standard use.
+Advertising can be unethical in some cases; higher sales do not prove ethical conduct this holds for appliance manufacturers when firms launch frequent product updates.
 
-Every part of the claim aligns with the standard concept, so the statement stands.'] WHERE case_id = 'CASE 5.4.70' AND tier = 'full';
-UPDATE public.economics_cases SET tactical_explanations = ARRAY['TRUE — The claim is correct. For car-hire firms when seasonal campaigns intensify, promotional prompts frequently push actual spending above what shoppers planned to allocate.
+The absolute wording is what breaks the claim once the correct test is applied.
 
-The scenario is a worked example of responsibility, sustainability, and ethics in marketing. Translate the story into the textbook category first; only then judge whether the sentence describes that category accurately.
+The statement is false.
+', 'FALSE — Sustainability arguments ask both businesses and consumers to weigh the risks of consuming more than is needed or affordable, and to act more responsibly in production and purchase decisions.
 
-In this setting, actual expenditure can exceed the amount shoppers planned to allocate when campaigns stimulate additional wants during the transaction this holds for car-hire firms when seasonal campaigns intensify. The wording matches the textbook relationship without adding extra conditions.
+Advertising can be unethical in some cases; higher sales do not prove ethical conduct this holds for appliance manufacturers among households tracking monthly budgets.
 
-Every part of the claim aligns with the standard concept, so the statement stands.', 'TRUE — The claim is correct. For tool-rental businesses in consumer electronics markets, campaigns can add unplanned buys so outlays exceed the budget shoppers set beforehand.
+The absolute wording is what breaks the claim once the correct test is applied.
 
-This statement draws on responsibility, sustainability, and ethics in marketing. Treat it as a checklist against the core concept named in the stem, not as a general opinion about business.
+The statement is false.
+', 'FALSE — Sustainability arguments ask both businesses and consumers to weigh the risks of consuming more than is needed or affordable, and to act more responsibly in production and purchase decisions.
 
-In this setting, actual expenditure can exceed the amount shoppers planned to allocate when campaigns stimulate additional wants during the transaction this holds for tool-rental businesses in consumer electronics markets. The wording matches the textbook relationship without adding extra conditions.
+Advertising can be unethical in some cases; higher sales do not prove ethical conduct this holds for appliance manufacturers in second-hand and exchange networks.
 
-The reasoning chain is complete, so mark the statement true.', 'TRUE — The claim is correct. For organic grocers in household durable-goods sectors, promotional prompts frequently push actual spending above what shoppers planned to allocate.
+The absolute wording is what breaks the claim once the correct test is applied.
 
-This statement draws on responsibility, sustainability, and ethics in marketing. Treat it as a checklist against the core concept named in the stem, not as a general opinion about business.
+The statement is false.
+', 'TRUE — Sustainability arguments ask both businesses and consumers to weigh the risks of consuming more than is needed or affordable, and to act more responsibly in production and purchase decisions.
 
-In this setting, actual expenditure can exceed the amount shoppers planned to allocate when campaigns stimulate additional wants during the transaction this holds for organic grocers in household durable-goods sectors. The wording matches the textbook relationship without adding extra conditions.
+Actual expenditure can exceed the amount shoppers planned to allocate when campaigns stimulate additional wants during the transaction this holds for kitchen-equipment firms in formal-wear and occasion-dress markets.
 
-The reasoning chain is complete, so mark the statement true.', 'TRUE — On the Fuhrmann definition used in the entrance exam, the sentence is correct. For bicycle shops during online promotional events, campaigns can add unplanned buys so outlays exceed the budget shoppers set beforehand.
+Nothing in the wording contradicts that marketing test, so the claim is sound.
 
-This statement draws on responsibility, sustainability, and ethics in marketing. Treat it as a checklist against the core concept named in the stem, not as a general opinion about business.
+The statement is true.
+', 'FALSE — Sustainability arguments ask both businesses and consumers to weigh the risks of consuming more than is needed or affordable, and to act more responsibly in production and purchase decisions.
 
-In this setting, actual expenditure can exceed the amount shoppers planned to allocate when campaigns stimulate additional wants during the transaction this holds for bicycle shops during online promotional events. The wording matches the textbook relationship without adding extra conditions.
+Advertising can be unethical in some cases; higher sales do not prove ethical conduct this holds for cosmetics brands in consumer electronics markets.
 
-The reasoning chain is complete, so mark the statement true.', 'TRUE — Evaluated against the textbook standard, this assertion is correct. For jewellery retailers among younger budget-conscious shoppers, promotional prompts frequently push actual spending above what shoppers planned to allocate.
+Those restricting words stretch a limited idea past what marketing allows.
 
-The relevant theory comes from responsibility, sustainability, and ethics in marketing. Identify which definition or relationship the sentence is trying to test before deciding true or false.
+The statement is false.
+'] WHERE case_id = 'CASE 5.4.73' AND tier = 'full';
+UPDATE public.economics_cases SET tactical_explanations = ARRAY['TRUE — Responsible marketing and consumption favour longer use, repair, reuse, sharing, and renting of higher-quality goods over rapid disposable replacement.
 
-Applied carefully, actual expenditure can exceed the amount shoppers planned to allocate when campaigns stimulate additional wants during the transaction this holds for jewellery retailers among younger budget-conscious shoppers. Nothing in the sentence stretches the concept beyond its standard use.
+Actual expenditure can exceed the amount shoppers planned to allocate when campaigns stimulate additional wants during the transaction this holds for kitchen-equipment firms where repair services remain available.
 
-Every part of the claim aligns with the standard concept, so the statement stands.'] WHERE case_id = 'CASE 5.4.71' AND tier = 'full';
-UPDATE public.economics_cases SET tactical_explanations = ARRAY['TRUE — This statement is correct. For jewellery retailers in formal-wear and occasion-dress markets, campaigns can add unplanned buys so outlays exceed the budget shoppers set beforehand.
+Under that definition the assertion is the right description of the situation.
 
-The relevant theory comes from responsibility, sustainability, and ethics in marketing. Identify which definition or relationship the sentence is trying to test before deciding true or false.
+The statement is true.
+', 'FALSE — Sustainability arguments ask both businesses and consumers to weigh the risks of consuming more than is needed or affordable, and to act more responsibly in production and purchase decisions.
 
-Applied carefully, actual expenditure can exceed the amount shoppers planned to allocate when campaigns stimulate additional wants during the transaction this holds for jewellery retailers in formal-wear and occasion-dress markets. Nothing in the sentence stretches the concept beyond its standard use.
+Advertising can be unethical in some cases; higher sales do not prove ethical conduct this holds for cosmetics brands in apparel retailing.
 
-No qualifying word breaks the definition or scenario, so the answer is true.', 'TRUE — Evaluated against the textbook standard, this assertion is correct. For jewellery retailers where rental platforms operate alongside retail, promotional prompts frequently push actual spending above what shoppers planned to allocate.
+Those restricting words stretch a limited idea past what marketing allows.
 
-The relevant theory comes from responsibility, sustainability, and ethics in marketing. Identify which definition or relationship the sentence is trying to test before deciding true or false.
+The statement is false.
+', 'TRUE — Sustainability arguments ask both businesses and consumers to weigh the risks of consuming more than is needed or affordable, and to act more responsibly in production and purchase decisions.
 
-Applied carefully, actual expenditure can exceed the amount shoppers planned to allocate when campaigns stimulate additional wants during the transaction this holds for jewellery retailers where rental platforms operate alongside retail. Nothing in the sentence stretches the concept beyond its standard use.
+Actual expenditure can exceed the amount shoppers planned to allocate when campaigns stimulate additional wants during the transaction this holds for footwear brands in consumer electronics markets.
 
-Every part of the claim aligns with the standard concept, so the statement stands.', 'TRUE — On the Fuhrmann definition used in the entrance exam, the sentence is correct. For stationery wholesalers in apparel retailing, campaigns can add unplanned buys so outlays exceed the budget shoppers set beforehand.
+The sentence therefore reports the concept accurately for this case.
 
-This statement draws on responsibility, sustainability, and ethics in marketing. Treat it as a checklist against the core concept named in the stem, not as a general opinion about business.
+The statement is true.
+', 'TRUE — Sustainability arguments ask both businesses and consumers to weigh the risks of consuming more than is needed or affordable, and to act more responsibly in production and purchase decisions.
 
-In this setting, actual expenditure can exceed the amount shoppers planned to allocate when campaigns stimulate additional wants during the transaction this holds for stationery wholesalers in apparel retailing. The wording matches the textbook relationship without adding extra conditions.
+Actual expenditure can exceed the amount shoppers planned to allocate when campaigns stimulate additional wants during the transaction this holds for eyewear retailers in household durable-goods sectors.
 
-The reasoning chain is complete, so mark the statement true.', 'TRUE — Evaluated against the textbook standard, this assertion is correct. For pet-supply stores in household durable-goods sectors, promotional prompts frequently push actual spending above what shoppers planned to allocate.
+The sentence therefore reports the concept accurately for this case.
 
-The relevant theory comes from responsibility, sustainability, and ethics in marketing. Identify which definition or relationship the sentence is trying to test before deciding true or false.
+The statement is true.
+', 'TRUE — Sustainability arguments ask both businesses and consumers to weigh the risks of consuming more than is needed or affordable, and to act more responsibly in production and purchase decisions.
 
-Applied carefully, actual expenditure can exceed the amount shoppers planned to allocate when campaigns stimulate additional wants during the transaction this holds for pet-supply stores in household durable-goods sectors. Nothing in the sentence stretches the concept beyond its standard use.
+Actual expenditure can exceed the amount shoppers planned to allocate when campaigns stimulate additional wants during the transaction this holds for music-instrument dealers when seasonal campaigns intensify.
 
-The reasoning chain is complete, so mark the statement true.', 'TRUE — Evaluated against the textbook standard, this assertion is correct. For kitchen-equipment firms among younger budget-conscious shoppers, campaigns can add unplanned buys so outlays exceed the budget shoppers set beforehand.
+The sentence therefore reports the concept accurately for this case.
 
-The relevant theory comes from responsibility, sustainability, and ethics in marketing. Identify which definition or relationship the sentence is trying to test before deciding true or false.
+The statement is true.
+'] WHERE case_id = 'CASE 5.4.74' AND tier = 'full';
+UPDATE public.economics_cases SET tactical_explanations = ARRAY['TRUE — Sustainability arguments ask both businesses and consumers to weigh the risks of consuming more than is needed or affordable, and to act more responsibly in production and purchase decisions.
 
-Applied carefully, actual expenditure can exceed the amount shoppers planned to allocate when campaigns stimulate additional wants during the transaction this holds for kitchen-equipment firms among younger budget-conscious shoppers. Nothing in the sentence stretches the concept beyond its standard use.
+Actual expenditure can exceed the amount shoppers planned to allocate when campaigns stimulate additional wants during the transaction this holds for music-instrument dealers during online promotional events.
 
-No qualifying word breaks the definition or scenario, so the answer is true.'] WHERE case_id = 'CASE 5.4.72' AND tier = 'full';
-UPDATE public.economics_cases SET tactical_explanations = ARRAY['FALSE — Evaluated against the textbook standard, this assertion is false. For appliance manufacturers when firms launch frequent product updates, all advertising is automatically ethical whenever it increases sales and informs customers about product features.
+Nothing in the wording contradicts that marketing test, so the claim is sound.
 
-The topic is responsibility, sustainability, and ethics in marketing, but the decisive skill here is reading quantifiers. Words such as never, always, only, or all turn a generally true idea into a claim that can be rejected by one routine counterexample.
+The statement is true.
+', 'TRUE — Sustainability arguments ask both businesses and consumers to weigh the risks of consuming more than is needed or affordable, and to act more responsibly in production and purchase decisions.
 
-The statement overreaches because advertising can be unethical in some cases; higher sales do not prove ethical conduct this holds for appliance manufacturers when firms launch frequent product updates. The trap is to agree with the topic while missing the one detail that breaks the logic.
+Actual expenditure can exceed the amount shoppers planned to allocate when campaigns stimulate additional wants during the transaction this holds for camping-gear suppliers in consumer electronics markets.
 
-Watch the absolute wording "all": exam statements often sound plausible until a single scope word turns an otherwise familiar idea into an overclaim.
+Nothing in the wording contradicts that marketing test, so the claim is sound.
 
-Because the decisive detail is wrong, mark the statement false.', 'FALSE — The claim is false. For appliance manufacturers among households tracking monthly budgets, all advertising is automatically ethical whenever it increases sales and informs customers about product features.
+The statement is true.
+', 'TRUE — Sustainability arguments ask both businesses and consumers to weigh the risks of consuming more than is needed or affordable, and to act more responsibly in production and purchase decisions.
 
-Although the subject matter is responsibility, sustainability, and ethics in marketing, this is really a logic check on overstatement. Non-profit surpluses, mixed economies, and partial market failure are classic cases where absolute wording fails.
+Actual expenditure can exceed the amount shoppers planned to allocate when campaigns stimulate additional wants during the transaction this holds for baby-product retailers in apparel retailing.
 
-Applied to this claim, advertising can be unethical in some cases; higher sales do not prove ethical conduct this holds for appliance manufacturers among households tracking monthly budgets. That is why the sentence does not survive careful reading.
+Under that definition the assertion is the right description of the situation.
 
-Watch the absolute wording "all": exam statements often sound plausible until a single scope word turns an otherwise familiar idea into an overclaim.
+The statement is true.
+', 'TRUE — Sustainability arguments ask both businesses and consumers to weigh the risks of consuming more than is needed or affordable, and to act more responsibly in production and purchase decisions.
 
-The statement sounds plausible but fails on precision, so it is false.', 'FALSE — This statement is false. For appliance manufacturers in second-hand and exchange networks, all advertising is automatically ethical whenever it increases sales and informs customers about product features.
+Actual expenditure can exceed the amount shoppers planned to allocate when campaigns stimulate additional wants during the transaction this holds for art-supply stores in household durable-goods sectors.
 
-The topic is responsibility, sustainability, and ethics in marketing, but the decisive skill here is reading quantifiers. Words such as never, always, only, or all turn a generally true idea into a claim that can be rejected by one routine counterexample.
+Under that definition the assertion is the right description of the situation.
 
-The statement overreaches because advertising can be unethical in some cases; higher sales do not prove ethical conduct this holds for appliance manufacturers in second-hand and exchange networks. The trap is to agree with the topic while missing the one detail that breaks the logic.
+The statement is true.
+', 'FALSE — Sustainability arguments ask both businesses and consumers to weigh the risks of consuming more than is needed or affordable, and to act more responsibly in production and purchase decisions.
 
-Watch the absolute wording "all": exam statements often sound plausible until a single scope word turns an otherwise familiar idea into an overclaim.
+On this stem (brands / household): advertising can be unethical in some cases; higher sales do not prove ethical conduct this holds for cosmetics brands in household durable-goods sectors.
 
-Because the decisive detail is wrong, mark the statement false.', 'TRUE — The claim is correct. For kitchen-equipment firms in formal-wear and occasion-dress markets, promotional prompts frequently push actual spending above what shoppers planned to allocate.
+One clear counterexample under the right criterion is enough to reject the sentence.
 
-This statement draws on responsibility, sustainability, and ethics in marketing. Treat it as a checklist against the core concept named in the stem, not as a general opinion about business.
-
-In this setting, actual expenditure can exceed the amount shoppers planned to allocate when campaigns stimulate additional wants during the transaction this holds for kitchen-equipment firms in formal-wear and occasion-dress markets. The wording matches the textbook relationship without adding extra conditions.
-
-The reasoning chain is complete, so mark the statement true.', 'FALSE — The claim is false. For cosmetics brands in consumer electronics markets, all advertising is automatically ethical whenever it increases sales and informs customers about product features.
-
-Although the subject matter is responsibility, sustainability, and ethics in marketing, this is really a logic check on overstatement. Non-profit surpluses, mixed economies, and partial market failure are classic cases where absolute wording fails.
-
-Applied to this claim, advertising can be unethical in some cases; higher sales do not prove ethical conduct this holds for cosmetics brands in consumer electronics markets. That is why the sentence does not survive careful reading.
-
-Watch the absolute wording "all": exam statements often sound plausible until a single scope word turns an otherwise familiar idea into an overclaim.
-
-Because the decisive detail is wrong, mark the statement false.'] WHERE case_id = 'CASE 5.4.73' AND tier = 'full';
-UPDATE public.economics_cases SET tactical_explanations = ARRAY['TRUE — This statement is correct. For kitchen-equipment firms where repair services remain available, campaigns can add unplanned buys so outlays exceed the budget shoppers set beforehand.
-
-The relevant theory comes from responsibility, sustainability, and ethics in marketing. Identify which definition or relationship the sentence is trying to test before deciding true or false.
-
-Applied carefully, actual expenditure can exceed the amount shoppers planned to allocate when campaigns stimulate additional wants during the transaction this holds for kitchen-equipment firms where repair services remain available. Nothing in the sentence stretches the concept beyond its standard use.
-
-Every part of the claim aligns with the standard concept, so the statement stands.', 'FALSE — On the Fuhrmann definition used in the entrance exam, the sentence is false. For cosmetics brands in apparel retailing, all advertising is automatically ethical whenever it increases sales and informs customers about product features.
-
-Although the subject matter is responsibility, sustainability, and ethics in marketing, this is really a logic check on overstatement. Non-profit surpluses, mixed economies, and partial market failure are classic cases where absolute wording fails.
-
-Applied to this claim, advertising can be unethical in some cases; higher sales do not prove ethical conduct this holds for cosmetics brands in apparel retailing. That is why the sentence does not survive careful reading.
-
-Watch the absolute wording "all": exam statements often sound plausible until a single scope word turns an otherwise familiar idea into an overclaim.
-
-The statement sounds plausible but fails on precision, so it is false.', 'TRUE — The claim is correct. For footwear brands in consumer electronics markets, promotional prompts frequently push actual spending above what shoppers planned to allocate.
-
-This statement draws on responsibility, sustainability, and ethics in marketing. Treat it as a checklist against the core concept named in the stem, not as a general opinion about business.
-
-In this setting, actual expenditure can exceed the amount shoppers planned to allocate when campaigns stimulate additional wants during the transaction this holds for footwear brands in consumer electronics markets. The wording matches the textbook relationship without adding extra conditions.
-
-No qualifying word breaks the definition or scenario, so the answer is true.', 'TRUE — Evaluated against the textbook standard, this assertion is correct. For eyewear retailers in household durable-goods sectors, campaigns can add unplanned buys so outlays exceed the budget shoppers set beforehand.
-
-The relevant theory comes from responsibility, sustainability, and ethics in marketing. Identify which definition or relationship the sentence is trying to test before deciding true or false.
-
-Applied carefully, actual expenditure can exceed the amount shoppers planned to allocate when campaigns stimulate additional wants during the transaction this holds for eyewear retailers in household durable-goods sectors. Nothing in the sentence stretches the concept beyond its standard use.
-
-Every part of the claim aligns with the standard concept, so the statement stands.', 'TRUE — This statement is correct. For music-instrument dealers when seasonal campaigns intensify, promotional prompts frequently push actual spending above what shoppers planned to allocate.
-
-Here you must apply ideas from responsibility, sustainability, and ethics in marketing to a concrete situation rather than recite a definition from memory. Ownership, customer type, stakeholder group, or country of production usually decides the verdict.
-
-Applied carefully, actual expenditure can exceed the amount shoppers planned to allocate when campaigns stimulate additional wants during the transaction this holds for music-instrument dealers when seasonal campaigns intensify. Nothing in the sentence stretches the concept beyond its standard use.
-
-No qualifying word breaks the definition or scenario, so the answer is true.'] WHERE case_id = 'CASE 5.4.74' AND tier = 'full';
-UPDATE public.economics_cases SET tactical_explanations = ARRAY['TRUE — This statement is correct. For music-instrument dealers during online promotional events, campaigns can add unplanned buys so outlays exceed the budget shoppers set beforehand.
-
-The relevant theory comes from responsibility, sustainability, and ethics in marketing. Identify which definition or relationship the sentence is trying to test before deciding true or false.
-
-Applied carefully, actual expenditure can exceed the amount shoppers planned to allocate when campaigns stimulate additional wants during the transaction this holds for music-instrument dealers during online promotional events. Nothing in the sentence stretches the concept beyond its standard use.
-
-Every part of the claim aligns with the standard concept, so the statement stands.', 'TRUE — The claim is correct. For camping-gear suppliers in consumer electronics markets, promotional prompts frequently push actual spending above what shoppers planned to allocate.
-
-This statement draws on responsibility, sustainability, and ethics in marketing. Treat it as a checklist against the core concept named in the stem, not as a general opinion about business.
-
-In this setting, actual expenditure can exceed the amount shoppers planned to allocate when campaigns stimulate additional wants during the transaction this holds for camping-gear suppliers in consumer electronics markets. The wording matches the textbook relationship without adding extra conditions.
-
-Every part of the claim aligns with the standard concept, so the statement stands.', 'TRUE — This statement is correct. For baby-product retailers in apparel retailing, campaigns can add unplanned buys so outlays exceed the budget shoppers set beforehand.
-
-The relevant theory comes from responsibility, sustainability, and ethics in marketing. Identify which definition or relationship the sentence is trying to test before deciding true or false.
-
-Applied carefully, actual expenditure can exceed the amount shoppers planned to allocate when campaigns stimulate additional wants during the transaction this holds for baby-product retailers in apparel retailing. Nothing in the sentence stretches the concept beyond its standard use.
-
-No qualifying word breaks the definition or scenario, so the answer is true.', 'TRUE — This statement is correct. For art-supply stores in household durable-goods sectors, shoppers may leave with a higher bill than planned once promotions add extras.
-
-The relevant theory comes from responsibility, sustainability, and ethics in marketing. Identify which definition or relationship the sentence is trying to test before deciding true or false.
-
-Applied carefully, actual expenditure can exceed the amount shoppers planned to allocate when campaigns stimulate additional wants during the transaction this holds for art-supply stores in household durable-goods sectors. Nothing in the sentence stretches the concept beyond its standard use.
-
-The reasoning chain is complete, so mark the statement true.', 'FALSE — On the Fuhrmann definition used in the entrance exam, the sentence is false. For cosmetics brands in household durable-goods sectors, all advertising is automatically ethical whenever it increases sales and informs customers about product features.
-
-Although the subject matter is responsibility, sustainability, and ethics in marketing, this is really a logic check on overstatement. Non-profit surpluses, mixed economies, and partial market failure are classic cases where absolute wording fails.
-
-Applied to this claim, advertising can be unethical in some cases; higher sales do not prove ethical conduct this holds for cosmetics brands in household durable-goods sectors. That is why the sentence does not survive careful reading.
-
-Watch the absolute wording "all": exam statements often sound plausible until a single scope word turns an otherwise familiar idea into an overclaim.
-
-Once the overclaim or mislabel is exposed, the only consistent answer is false.'] WHERE case_id = 'CASE 5.4.75' AND tier = 'full';
+The statement is false.
+'] WHERE case_id = 'CASE 5.4.75' AND tier = 'full';

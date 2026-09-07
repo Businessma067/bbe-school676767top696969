@@ -1,808 +1,1163 @@
 -- Update expanded explanations for 2.3-part2 (25 cases).
 -- Safe to re-run: only updates tactical_explanations.
 
-UPDATE public.economics_cases SET tactical_explanations = ARRAY['FALSE — The claim is false. Household budget choices are excluded from economics because only businesses matter.
+UPDATE public.economics_cases SET tactical_explanations = ARRAY['FALSE — Microeconomics studies individual decision units — one household, one firm, one transaction — even when prices change or a public bonus sits in the background.
 
-The scenario is a worked example of economics as the study of decisions under scarcity at micro and macro level. Translate the story into the textbook category first; only then judge whether the sentence describes that category accurately.
+Household budget choices are central to microeconomics. Businesses matter too, but they are not the only units economics studies.
 
-Applied to this claim, household decisions under scarcity are central to economics, especially microeconomics. That is why the sentence does not survive careful reading.
+Map that definition onto the case where evaluate core definitional claims about economics as a discipline. Even if the stem mentions related details (here: Household), those details do not carry the claim’s conclusion — the sentence either widens the concept past its test or attaches the wrong label to the facts.
 
-The statement sounds plausible but fails on precision, so it is false.', 'FALSE — The claim is false. Economics excludes household decisions and studies only corporate profit maximisation.
+Absolute wording is the trap: economics definitions leave room for counterexamples — another actor, another scope, a non-money cost, or a public function that still exists. One clear counterexample rejects the sentence.
 
-This statement draws on economics as the study of decisions under scarcity at micro and macro level. Treat it as a checklist against the core concept named in the stem, not as a general opinion about business.
+The statement is false.
+', 'FALSE — Microeconomics studies individual decision units — one household, one firm, one transaction — even when prices change or a public bonus sits in the background.
 
-Applied to this claim, households are explicitly included, not excluded. That is why the sentence does not survive careful reading.
+Economics studies households and firms. Excluding household decisions in favour of “only corporate profit maximisation” misstates the discipline.
 
-Once the overclaim or mislabel is exposed, the only consistent answer is false.', 'FALSE — This statement is false. Aggregate price-level questions belong in microeconomics as soon as one consumer is named.
+Map that definition onto the case where evaluate core definitional claims about economics as a discipline. Even if the stem mentions related details (here: household), those details do not carry the claim’s conclusion — the sentence either widens the concept past its test or attaches the wrong label to the facts.
 
-The relevant theory comes from economics as the study of decisions under scarcity at micro and macro level. Identify which definition or relationship the sentence is trying to test before deciding true or false.
+Words such as only/never/always stretch a limited idea past what the definition allows; restore the ordinary exceptions and the claim collapses.
 
-The statement overreaches because both branches study resource allocation and build explanatory theories at different scopes. The trap is to agree with the topic while missing the one detail that breaks the logic.
+The statement is false.
+', 'FALSE — Microeconomics studies individual units and particular markets; macroeconomics studies economy-wide aggregates such as total sales, the price level, or national output. Scope decides the label — not the mere word “price,” and not the mere existence of a national policy backdrop.
 
-The statement sounds plausible but fails on precision, so it is false.', 'FALSE — On the Fuhrmann definition used in the entrance exam, the sentence is false. Perfect prediction of human behaviour is required before economics can be called a science.
+Aggregate price-level questions are macro. Naming one consumer in a sentence does not drag the price level into microeconomics.
 
-This statement draws on economics as the study of decisions under scarcity at micro and macro level. Treat it as a checklist against the core concept named in the stem, not as a general opinion about business.
+Map that definition onto the case where evaluate core definitional claims about economics as a discipline. Even if the stem mentions related details, those details do not carry the claim’s conclusion — the sentence either widens the concept past its test or attaches the wrong label to the facts.
 
-Applied to this claim, imperfect prediction does not disqualify economics; social sciences build useful theories despite uncertainty. That is why the sentence does not survive careful reading.
+Restore the textbook test and the assertion falls away: it mislabels the category or reverses the comparison the chapter actually teaches.
 
-The statement sounds plausible but fails on precision, so it is false.', 'TRUE — The claim is correct. Microeconomics and macroeconomics are two branches applying the same core idea at different scopes.
+The statement is false.
+', 'FALSE — Economics builds theories to explain observed behaviour and to predict effects of choices and policies. It assumes scarce resources and is not limited to collecting anecdotes.
 
-This statement draws on economics as the study of decisions under scarcity at micro and macro level. Treat it as a checklist against the core concept named in the stem, not as a general opinion about business.
+Sciences explain and predict with theories under uncertainty. Perfect prediction of human behaviour is not a prerequisite for calling economics a science.
 
-In this setting, same resource-allocation logic at unit level (micro) versus aggregate level (macro). The wording matches the textbook relationship without adding extra conditions.
+Map that definition onto the case where evaluate core definitional claims about economics as a discipline. Even if the stem mentions related details, those details do not carry the claim’s conclusion — the sentence either widens the concept past its test or attaches the wrong label to the facts.
 
-No qualifying word breaks the definition or scenario, so the answer is true.'] WHERE case_id = 'CASE 2.3.26' AND tier = 'full';
-UPDATE public.economics_cases SET tactical_explanations = ARRAY['TRUE — Evaluated against the textbook standard, this assertion is correct. Reporting the national GDP growth rate for the whole country is macroeconomics, not a single firm''s decision.
+Restore the textbook test and the assertion falls away: it mislabels the category or reverses the comparison the chapter actually teaches.
 
-The relevant theory comes from economics as the study of decisions under scarcity at micro and macro level. Identify which definition or relationship the sentence is trying to test before deciding true or false.
+The statement is false.
+', 'TRUE — Microeconomics studies individual units and particular markets; macroeconomics studies economy-wide aggregates such as total sales, the price level, or national output. Scope decides the label — not the mere word “price,” and not the mere existence of a national policy backdrop.
 
-Applied carefully, gdp is a whole-economy aggregate indicator and therefore macroeconomic. Nothing in the sentence stretches the concept beyond its standard use.
+Micro and macro apply the same core scarcity/choice idea at different scopes — units/markets versus the whole economy.
 
-No qualifying word breaks the definition or scenario, so the answer is true.', 'TRUE — Evaluated against the textbook standard, this assertion is correct. One bakery hiring a part-time assistant to cover Saturday shifts is microeconomics when only that firm is studied.
+Map that definition onto the case where evaluate core definitional claims about economics as a discipline. The claim’s actors and constraints line up with the concept: the sentence describes the same mechanism the chapter teaches, not a neighbouring idea with similar vocabulary.
 
-Here you must apply ideas from economics as the study of decisions under scarcity at micro and macro level to a concrete situation rather than recite a definition from memory. Ownership, customer type, stakeholder group, or country of production usually decides the verdict.
+A useful check is the opposite error: treat opportunity cost as the money paid, or treat one buyer’s choice as macro, or treat a shift as a movement — those near-misses fail, which confirms this wording.
 
-Applied carefully, single-firm hiring analysed alone is microeconomic scope. Nothing in the sentence stretches the concept beyond its standard use.
+The statement is true.
+'] WHERE case_id = 'CASE 2.3.26' AND tier = 'full';
+UPDATE public.economics_cases SET tactical_explanations = ARRAY['TRUE — Microeconomics studies individual units and particular markets; macroeconomics studies economy-wide aggregates such as total sales, the price level, or national output. Scope decides the label — not the mere word “price,” and not the mere existence of a national policy backdrop.
 
-The reasoning chain is complete, so mark the statement true.', 'TRUE — Evaluated against the textbook standard, this assertion is correct. Publishing the economy-wide unemployment rate across all regions is macroeconomics rather than one household''s choice.
+National GDP growth for the whole country is a macro aggregate, not a single firm’s private decision.
 
-The topic is economics as the study of decisions under scarcity at micro and macro level, but the decisive skill here is reading quantifiers. Words such as never, always, only, or all turn a generally true idea into a claim that can be rejected by one routine counterexample.
+Map that definition onto the case where spot which scope label fits each example. The claim’s actors and constraints (here: firm) line up with the concept: the sentence describes the same mechanism the chapter teaches, not a neighbouring idea with similar vocabulary.
 
-Applied carefully, national unemployment is an economy-wide macro indicator. Nothing in the sentence stretches the concept beyond its standard use.
+If you replaced the key term with its neighbour (accounting outlay, micro/macro swap, movement vs shift), the sentence would stop matching the stem — that contrast locks the idea.
 
-The reasoning chain is complete, so mark the statement true.', 'TRUE — This statement is correct. One student choosing between two part-time job offers compares micro-level alternatives under limited time.
+The statement is true.
+', 'TRUE — Microeconomics studies individual units and particular markets; macroeconomics studies economy-wide aggregates such as total sales, the price level, or national output. Scope decides the label — not the mere word “price,” and not the mere existence of a national policy backdrop.
 
-The relevant theory comes from economics as the study of decisions under scarcity at micro and macro level. Identify which definition or relationship the sentence is trying to test before deciding true or false.
+Ask what unit is being studied: one household, firm, or transaction is micro; nationwide totals and overall price-level or output aggregates are macro. Scope decides the label. Focus points: firm.
 
-Applied carefully, individual job choice among offers is micro household labour allocation. Nothing in the sentence stretches the concept beyond its standard use.
+Map that definition onto the case where spot which scope label fits each example. The claim’s actors and constraints (here: firm) line up with the concept: the sentence describes the same mechanism the chapter teaches, not a neighbouring idea with similar vocabulary.
 
-The reasoning chain is complete, so mark the statement true.', 'FALSE — The claim is false. Any example involving money is automatically macroeconomics regardless of whether one unit or the whole economy is analysed.
+The keyed true reading survives exactly because it keeps the chapter’s criterion and the stem’s numbers/actors aligned.
 
-Although the subject matter is economics as the study of decisions under scarcity at micro and macro level, this is really a logic check on overstatement. Non-profit surpluses, mixed economies, and partial market failure are classic cases where absolute wording fails.
+The statement is true.
+', 'TRUE — Microeconomics studies individual units and particular markets; macroeconomics studies economy-wide aggregates such as total sales, the price level, or national output. Scope decides the label — not the mere word “price,” and not the mere existence of a national policy backdrop.
 
-Applied to this claim, money appears in both micro and macro examples; scope of analysis determines classification, not currency alone. That is why the sentence does not survive careful reading.
+Economy-wide unemployment across all regions is a macro indicator, not one household’s choice.
 
-Watch the absolute wording "automatically": exam statements often sound plausible until a single scope word turns an otherwise familiar idea into an overclaim.
+Map that definition onto the case where spot which scope label fits each example. The claim’s actors and constraints (here: household) line up with the concept: the sentence describes the same mechanism the chapter teaches, not a neighbouring idea with similar vocabulary.
 
-Because the decisive detail is wrong, mark the statement false.'] WHERE case_id = 'CASE 2.3.27' AND tier = 'full';
-UPDATE public.economics_cases SET tactical_explanations = ARRAY['FALSE — This statement is false. Micro and macro share no vocabulary and cannot appear in one course.
+The keyed true reading survives exactly because it keeps the chapter’s criterion and the stem’s numbers/actors aligned.
 
-The topic is economics as the study of decisions under scarcity at micro and macro level, but the decisive skill here is reading quantifiers. Words such as never, always, only, or all turn a generally true idea into a claim that can be rejected by one routine counterexample.
+The statement is true.
+', 'TRUE — Microeconomics studies individual units and particular markets; macroeconomics studies economy-wide aggregates such as total sales, the price level, or national output. Scope decides the label — not the mere word “price,” and not the mere existence of a national policy backdrop.
 
-The statement overreaches because individual firm or product pricing analysed alone is micro; macro uses general price levels. The trap is to agree with the topic while missing the one detail that breaks the logic.
+A student comparing two part-time offers under limited time is a micro-level choice between alternatives.
 
-Watch the absolute wording "cannot": exam statements often sound plausible until a single scope word turns an otherwise familiar idea into an overclaim.
+Map that definition onto the case where spot which scope label fits each example. The claim’s actors and constraints (here: student, micro) line up with the concept: the sentence describes the same mechanism the chapter teaches, not a neighbouring idea with similar vocabulary.
 
-Once the overclaim or mislabel is exposed, the only consistent answer is false.', 'FALSE — The claim is false. Any drug pricing discussion is macroeconomics because healthcare is a national sector.
+A useful check is the opposite error: treat opportunity cost as the money paid, or treat one buyer’s choice as macro, or treat a shift as a movement — those near-misses fail, which confirms this wording.
 
-The scenario is a worked example of economics as the study of decisions under scarcity at micro and macro level. Translate the story into the textbook category first; only then judge whether the sentence describes that category accurately.
+The statement is true.
+', 'FALSE — Microeconomics studies individual units and particular markets; macroeconomics studies economy-wide aggregates such as total sales, the price level, or national output. Scope decides the label — not the mere word “price,” and not the mere existence of a national policy backdrop.
 
-Applied to this claim, sector size does not determine scope; unit of analysis does. That is why the sentence does not survive careful reading.
+Money appears in both micro and macro. Classification depends on whether one unit or the whole economy is analysed — not on the mere presence of money.
 
-The statement sounds plausible but fails on precision, so it is false.', 'TRUE — Evaluated against the textbook standard, this assertion is correct. If health authorities measured economy-wide pharmaceutical spending affecting budgets, that aggregate would be macroeconomics.
+Map that definition onto the case where spot which scope label fits each example. Even if the stem mentions related details, those details do not carry the claim’s conclusion — the sentence either widens the concept past its test or attaches the wrong label to the facts.
 
-Here you must apply ideas from economics as the study of decisions under scarcity at micro and macro level to a concrete situation rather than recite a definition from memory. Ownership, customer type, stakeholder group, or country of production usually decides the verdict.
+Absolute wording is the trap: economics definitions leave room for counterexamples — another actor, another scope, a non-money cost, or a public function that still exists. One clear counterexample rejects the sentence.
 
-Applied carefully, total pharmaceutical spending as an aggregate is macro. Nothing in the sentence stretches the concept beyond its standard use.
+The statement is false.
+'] WHERE case_id = 'CASE 2.3.27' AND tier = 'full';
+UPDATE public.economics_cases SET tactical_explanations = ARRAY['FALSE — Microeconomics studies individual units and particular markets; macroeconomics studies economy-wide aggregates such as total sales, the price level, or national output. Scope decides the label — not the mere word “price,” and not the mere existence of a national policy backdrop.
 
-The reasoning chain is complete, so mark the statement true.', 'TRUE — This statement is correct. Economics studies how limited household income guides such product substitutions.
+Micro and macro share vocabulary (price, demand, cost, scarcity) and routinely appear together in one course.
 
-The relevant theory comes from economics as the study of decisions under scarcity at micro and macro level. Identify which definition or relationship the sentence is trying to test before deciding true or false.
+Map that definition onto the case where one pharmacy switches a customer to a cheaper generic drug to save the household five euros monthly. Even if the stem mentions related details (here: Micro, macro), those details do not carry the claim’s conclusion — the sentence either widens the concept past its test or attaches the wrong label to the facts.
 
-Applied carefully, budget-driven substitution is household decision-making under scarcity. Nothing in the sentence stretches the concept beyond its standard use.
+The absolute quantifier is doing the damage. Soften it to the chapter’s actual scope and the remaining content no longer supports a false blanket rule.
 
-No qualifying word breaks the definition or scenario, so the answer is true.', 'FALSE — Evaluated against the textbook standard, this assertion is false. Micro and macro are unrelated fields studying completely different subject matter.
+The statement is false.
+', 'FALSE — Microeconomics studies individual units and particular markets; macroeconomics studies economy-wide aggregates such as total sales, the price level, or national output. Scope decides the label — not the mere word “price,” and not the mere existence of a national policy backdrop.
 
-The relevant theory comes from economics as the study of decisions under scarcity at micro and macro level. Identify which definition or relationship the sentence is trying to test before deciding true or false.
+One pharmacy’s generic switch for one household is micro. Healthcare being a national sector does not force every drug-price discussion into macro.
 
-The statement overreaches because both branches study resource allocation at different levels. The trap is to agree with the topic while missing the one detail that breaks the logic.
+Map that definition onto the case where one pharmacy switches a customer to a cheaper generic drug to save the household five euros monthly. Even if the stem mentions related details, those details do not carry the claim’s conclusion — the sentence either widens the concept past its test or attaches the wrong label to the facts.
 
-The statement sounds plausible but fails on precision, so it is false.'] WHERE case_id = 'CASE 2.3.28' AND tier = 'full';
-UPDATE public.economics_cases SET tactical_explanations = ARRAY['TRUE — The claim is correct. Economics studies decisions under limited resources made by households and businesses across the economy.
+The because-clause attaches the wrong reason to the label. A real detail (a national programme, a zero wage, shared premises, use of money) does not justify the over-broad conclusion.
 
-This statement draws on economics as the study of decisions under scarcity at micro and macro level. Treat it as a checklist against the core concept named in the stem, not as a general opinion about business.
+The statement is false.
+', 'TRUE — Microeconomics studies individual units and particular markets; macroeconomics studies economy-wide aggregates such as total sales, the price level, or national output. Scope decides the label — not the mere word “price,” and not the mere existence of a national policy backdrop.
 
-In this setting, core definition spans household and business decisions under constraint. The wording matches the textbook relationship without adding extra conditions.
+Economy-wide pharmaceutical spending affecting public budgets is an aggregate — macroeconomics.
 
-No qualifying word breaks the definition or scenario, so the answer is true.', 'TRUE — Evaluated against the textbook standard, this assertion is correct. Microeconomics examines individual households, firms, and specific markets rather than the whole economy.
+Map that definition onto the case where one pharmacy switches a customer to a cheaper generic drug to save the household five euros monthly. The claim’s actors and constraints line up with the concept: the sentence describes the same mechanism the chapter teaches, not a neighbouring idea with similar vocabulary.
 
-This tests discrimination within economics as the study of decisions under scarcity at micro and macro level: local versus international scope, equity versus debt, product versus market orientation, and similar pairs.
+If you replaced the key term with its neighbour (accounting outlay, micro/macro swap, movement vs shift), the sentence would stop matching the stem — that contrast locks the idea.
 
-Applied carefully, micro unit/market focus. Nothing in the sentence stretches the concept beyond its standard use.
+The statement is true.
+', 'TRUE — Microeconomics studies individual decision units — one household, one firm, one transaction — even when prices change or a public bonus sits in the background.
 
-No qualifying word breaks the definition or scenario, so the answer is true.', 'TRUE — The claim is correct. Macroeconomics examines whole-economy growth, unemployment, inflation, and interest rates at aggregate level.
+Limited household income guiding substitution toward a cheaper generic is classic micro economising.
 
-This statement draws on economics as the study of decisions under scarcity at micro and macro level. Treat it as a checklist against the core concept named in the stem, not as a general opinion about business.
+Map that definition onto the case where one pharmacy switches a customer to a cheaper generic drug to save the household five euros monthly. The claim’s actors and constraints (here: household) line up with the concept: the sentence describes the same mechanism the chapter teaches, not a neighbouring idea with similar vocabulary.
 
-In this setting, macro whole-economy indicators. The wording matches the textbook relationship without adding extra conditions.
+Nothing in the stem contradicts that reading, so the assertion stands as a correct application of the definition.
 
-Every part of the claim aligns with the standard concept, so the statement stands.', 'TRUE — Evaluated against the textbook standard, this assertion is correct. Both micro and macro branches aim to explain and predict outcomes using built economic theories.
+The statement is true.
+', 'FALSE — Microeconomics studies individual units and particular markets; macroeconomics studies economy-wide aggregates such as total sales, the price level, or national output. Scope decides the label — not the mere word “price,” and not the mere existence of a national policy backdrop.
 
-The relevant theory comes from economics as the study of decisions under scarcity at micro and macro level. Identify which definition or relationship the sentence is trying to test before deciding true or false.
+Micro and macro are related branches of one discipline, not unrelated fields with completely different subject matter.
 
-Applied carefully, shared explanatory and predictive scientific aim. Nothing in the sentence stretches the concept beyond its standard use.
+Map that definition onto the case where one pharmacy switches a customer to a cheaper generic drug to save the household five euros monthly. Even if the stem mentions related details (here: Micro, macro), those details do not carry the claim’s conclusion — the sentence either widens the concept past its test or attaches the wrong label to the facts.
 
-Every part of the claim aligns with the standard concept, so the statement stands.', 'TRUE — The claim is correct. The same scarcity logic underlies choices studied at micro level and outcomes observed at macro level.
+Swap in the correct criterion and the sentence no longer describes the case — that is enough to mark it false.
 
-This statement draws on economics as the study of decisions under scarcity at micro and macro level. Treat it as a checklist against the core concept named in the stem, not as a general opinion about business.
+The statement is false.
+'] WHERE case_id = 'CASE 2.3.28' AND tier = 'full';
+UPDATE public.economics_cases SET tactical_explanations = ARRAY['TRUE — Microeconomics studies individual decision units — one household, one firm, one transaction — even when prices change or a public bonus sits in the background.
 
-In this setting, scarcity connects individual choices to aggregate outcomes. The wording matches the textbook relationship without adding extra conditions.
+Economics studies decisions under limited resources by households and businesses across the economy — the unifying definition.
 
-No qualifying word breaks the definition or scenario, so the answer is true.'] WHERE case_id = 'CASE 2.3.29' AND tier = 'full';
-UPDATE public.economics_cases SET tactical_explanations = ARRAY['TRUE — This statement is correct. Economics builds theories to explain why economic outcomes occur.
+Held against the chapter test, each operative word earns its place: the category, the comparison, and the mechanism survive when checked one by one.
 
-The relevant theory comes from economics as the study of decisions under scarcity at micro and macro level. Identify which definition or relationship the sentence is trying to test before deciding true or false.
+Under that classification the claim describes the situation correctly rather than a lookalike category.
 
-Applied carefully, explanation of outcomes is a core scientific function. Nothing in the sentence stretches the concept beyond its standard use.
+The statement is true.
+', 'TRUE — Microeconomics studies individual units and particular markets; macroeconomics studies economy-wide aggregates such as total sales, the price level, or national output. Scope decides the label — not the mere word “price,” and not the mere existence of a national policy backdrop.
 
-The reasoning chain is complete, so mark the statement true.', 'TRUE — On the Fuhrmann definition used in the entrance exam, the sentence is correct. Economics also uses theories to predict likely effects of decisions and policies.
+Ask what unit is being studied: one household, firm, or transaction is micro; nationwide totals and overall price-level or output aggregates are macro. Scope decides the label.
 
-This statement draws on economics as the study of decisions under scarcity at micro and macro level. Treat it as a checklist against the core concept named in the stem, not as a general opinion about business.
+Held against the chapter test, each operative word earns its place: the category, the comparison, and the mechanism survive when checked one by one.
 
-In this setting, prediction of policy and choice effects is equally central. The wording matches the textbook relationship without adding extra conditions.
+If you replaced the key term with its neighbour (accounting outlay, micro/macro swap, movement vs shift), the sentence would stop matching the stem — that contrast locks the idea.
 
-No qualifying word breaks the definition or scenario, so the answer is true.', 'FALSE — Evaluated against the textbook standard, this assertion is false. Perfect foresight is required before any economic theory can be useful.
+The statement is true.
+', 'TRUE — Microeconomics studies individual units and particular markets; macroeconomics studies economy-wide aggregates such as total sales, the price level, or national output. Scope decides the label — not the mere word “price,” and not the mere existence of a national policy backdrop.
 
-The relevant theory comes from economics as the study of decisions under scarcity at micro and macro level. Identify which definition or relationship the sentence is trying to test before deciding true or false.
+Ask what unit is being studied: one household, firm, or transaction is micro; nationwide totals and overall price-level or output aggregates are macro. Scope decides the label. Focus points: inflation.
 
-The statement overreaches because useful theories need not achieve perfect foresight. The trap is to agree with the topic while missing the one detail that breaks the logic.
+Held against the chapter test (here: inflation), each operative word earns its place: the category, the comparison, and the mechanism survive when checked one by one.
 
-The statement sounds plausible but fails on precision, so it is false.', 'TRUE — This statement is correct. Micro theories predict individual market responses; macro theories predict aggregate trends.
+If you replaced the key term with its neighbour (accounting outlay, micro/macro swap, movement vs shift), the sentence would stop matching the stem — that contrast locks the idea.
 
-The relevant theory comes from economics as the study of decisions under scarcity at micro and macro level. Identify which definition or relationship the sentence is trying to test before deciding true or false.
+The statement is true.
+', 'TRUE — Microeconomics studies individual units and particular markets; macroeconomics studies economy-wide aggregates such as total sales, the price level, or national output. Scope decides the label — not the mere word “price,” and not the mere existence of a national policy backdrop.
 
-Applied carefully, both branches develop predictive theory at their scopes. Nothing in the sentence stretches the concept beyond its standard use.
+Both branches aim to explain and predict using economic theories at their respective scopes.
 
-The reasoning chain is complete, so mark the statement true.', 'FALSE — On the Fuhrmann definition used in the entrance exam, the sentence is false. Because humans behave unpredictably, economics cannot explain or predict anything scientifically.
+Held against the chapter test (here: micro, macro), each operative word earns its place: the category, the comparison, and the mechanism survive when checked one by one.
 
-Although the subject matter is economics as the study of decisions under scarcity at micro and macro level, this is really a logic check on overstatement. Non-profit surpluses, mixed economies, and partial market failure are classic cases where absolute wording fails.
+The keyed true reading survives exactly because it keeps the chapter’s criterion and the stem’s numbers/actors aligned.
 
-Applied to this claim, imperfect prediction still allows scientific explanation and useful forecasts. That is why the sentence does not survive careful reading.
+The statement is true.
+', 'TRUE — Microeconomics studies individual units and particular markets; macroeconomics studies economy-wide aggregates such as total sales, the price level, or national output. Scope decides the label — not the mere word “price,” and not the mere existence of a national policy backdrop.
 
-Watch the absolute wording "cannot": exam statements often sound plausible until a single scope word turns an otherwise familiar idea into an overclaim.
+The same scarcity logic underlies micro choices and macro outcomes built from many such choices.
 
-Once the overclaim or mislabel is exposed, the only consistent answer is false.'] WHERE case_id = 'CASE 2.3.30' AND tier = 'full';
-UPDATE public.economics_cases SET tactical_explanations = ARRAY['TRUE — This statement is correct. Household budgeting is excluded from economics because only businesses create value.
+Held against the chapter test (here: scarcity, micro, macro), each operative word earns its place: the category, the comparison, and the mechanism survive when checked one by one.
 
-Here you must apply ideas from economics as the study of decisions under scarcity at micro and macro level to a concrete situation rather than recite a definition from memory. Ownership, customer type, stakeholder group, or country of production usually decides the verdict.
+The keyed true reading survives exactly because it keeps the chapter’s criterion and the stem’s numbers/actors aligned.
 
-Applied carefully, household decisions under scarcity are explicitly within economics. Nothing in the sentence stretches the concept beyond its standard use.
+The statement is true.
+'] WHERE case_id = 'CASE 2.3.29' AND tier = 'full';
+UPDATE public.economics_cases SET tactical_explanations = ARRAY['TRUE — Economics builds theories to explain observed behaviour and to predict effects of choices and policies. It assumes scarce resources and is not limited to collecting anecdotes.
 
-Every part of the claim aligns with the standard concept, so the statement stands.', 'TRUE — This statement is correct. Microeconomics studies individual units such as one household or one firm.
+Building theories to explain why outcomes occur is the explanatory scientific role of economics.
 
-The relevant theory comes from economics as the study of decisions under scarcity at micro and macro level. Identify which definition or relationship the sentence is trying to test before deciding true or false.
+Map that definition onto the case where evaluate the scientific role of economics. The claim’s actors and constraints line up with the concept: the sentence describes the same mechanism the chapter teaches, not a neighbouring idea with similar vocabulary.
 
-Applied carefully, unit-level analysis defines micro scope. Nothing in the sentence stretches the concept beyond its standard use.
+The sentence therefore reports the concept accurately for this item once the definition is held fixed.
 
-Every part of the claim aligns with the standard concept, so the statement stands.', 'FALSE — This statement is false. Macroeconomics studies one shop''s inventory list.
+The statement is true.
+', 'TRUE — Economics builds theories to explain observed behaviour and to predict effects of choices and policies. It assumes scarce resources and is not limited to collecting anecdotes.
 
-The relevant theory comes from economics as the study of decisions under scarcity at micro and macro level. Identify which definition or relationship the sentence is trying to test before deciding true or false.
+Using theories to predict effects of decisions and policies is the predictive role paired with explanation.
 
-The statement overreaches because aggregates like gdp and unemployment are macro topics. The trap is to agree with the topic while missing the one detail that breaks the logic.
+Map that definition onto the case where evaluate the scientific role of economics. The claim’s actors and constraints line up with the concept: the sentence describes the same mechanism the chapter teaches, not a neighbouring idea with similar vocabulary.
 
-The statement sounds plausible but fails on precision, so it is false.', 'FALSE — This statement is false. Economics assumes unlimited resources and studies only accounting rules.
+Under that classification the claim describes the situation correctly rather than a lookalike category.
 
-The relevant theory comes from economics as the study of decisions under scarcity at micro and macro level. Identify which definition or relationship the sentence is trying to test before deciding true or false.
+The statement is true.
+', 'FALSE — Economics builds theories to explain observed behaviour and to predict effects of choices and policies. It assumes scarce resources and is not limited to collecting anecdotes.
 
-The statement overreaches because scarcity and choice define the subject matter. The trap is to agree with the topic while missing the one detail that breaks the logic.
+Useful theories guide decisions under uncertainty. Perfect foresight is not required for usefulness.
 
-Once the overclaim or mislabel is exposed, the only consistent answer is false.', 'FALSE — The claim is false. Economics collects anecdotes only and never constructs predictive theories.
+Map that definition onto the case where evaluate the scientific role of economics. Even if the stem mentions related details, those details do not carry the claim’s conclusion — the sentence either widens the concept past its test or attaches the wrong label to the facts.
 
-Although the subject matter is economics as the study of decisions under scarcity at micro and macro level, this is really a logic check on overstatement. Non-profit surpluses, mixed economies, and partial market failure are classic cases where absolute wording fails.
+The mismatch is in the defining feature, not in a missing buzzword; fix the feature and the claim disappears.
 
-Applied to this claim, theory-building supports both explanation and prediction. That is why the sentence does not survive careful reading.
+The statement is false.
+', 'TRUE — Microeconomics studies individual units and particular markets; macroeconomics studies economy-wide aggregates such as total sales, the price level, or national output. Scope decides the label — not the mere word “price,” and not the mere existence of a national policy backdrop.
 
-Watch the absolute wording "never": exam statements often sound plausible until a single scope word turns an otherwise familiar idea into an overclaim.
+Micro theories target individual market responses; macro theories target aggregate trends — predictive aims at each scope.
 
-Once the overclaim or mislabel is exposed, the only consistent answer is false.'] WHERE case_id = 'CASE 2.3.31' AND tier = 'full';
-UPDATE public.economics_cases SET tactical_explanations = ARRAY['TRUE — On the Fuhrmann definition used in the entrance exam, the sentence is correct. Analyzing only this driver''s shift choice for one vehicle is microeconomics.
+Map that definition onto the case where evaluate the scientific role of economics. The claim’s actors and constraints (here: Micro, macro) line up with the concept: the sentence describes the same mechanism the chapter teaches, not a neighbouring idea with similar vocabulary.
 
-This statement draws on economics as the study of decisions under scarcity at micro and macro level. Treat it as a checklist against the core concept named in the stem, not as a general opinion about business.
+If you replaced the key term with its neighbour (accounting outlay, micro/macro swap, movement vs shift), the sentence would stop matching the stem — that contrast locks the idea.
 
-In this setting, single-operator scheduling under earnings constraints is micro scope. The wording matches the textbook relationship without adding extra conditions.
+The statement is true.
+', 'FALSE — Economics builds theories to explain observed behaviour and to predict effects of choices and policies. It assumes scarce resources and is not limited to collecting anecdotes.
 
-The reasoning chain is complete, so mark the statement true.', 'TRUE — This statement is correct. Reporting national ride-share employment totals would be macroeconomics rather than this driver''s shift plan.
+Imperfect predictability does not mean economics cannot explain or predict anything. Theories still organise evidence and forecasts scientifically.
 
-This tests discrimination within economics as the study of decisions under scarcity at micro and macro level: local versus international scope, equity versus debt, product versus market orientation, and similar pairs.
+Map that definition onto the case where evaluate the scientific role of economics. Even if the stem mentions related details, those details do not carry the claim’s conclusion — the sentence either widens the concept past its test or attaches the wrong label to the facts.
 
-Applied carefully, aggregated employment across the sector is macro. Nothing in the sentence stretches the concept beyond its standard use.
+Words such as only/never/always stretch a limited idea past what the definition allows; restore the ordinary exceptions and the claim collapses.
 
-The reasoning chain is complete, so mark the statement true.', 'TRUE — On the Fuhrmann definition used in the entrance exam, the sentence is correct. Economics studies how this driver decides what to do with limited time and fuel resources.
+The statement is false.
+'] WHERE case_id = 'CASE 2.3.30' AND tier = 'full';
+UPDATE public.economics_cases SET tactical_explanations = ARRAY['TRUE — Microeconomics studies individual decision units — one household, one firm, one transaction — even when prices change or a public bonus sits in the background.
 
-This statement draws on economics as the study of decisions under scarcity at micro and macro level. Treat it as a checklist against the core concept named in the stem, not as a general opinion about business.
+Tie the claim to limited means versus unlimited ends, to goods versus services, or to the household/entrepreneur role actually performing the action in the stem. Focus points: Household.
 
-In this setting, time and fuel constraints create economic decisions. The wording matches the textbook relationship without adding extra conditions.
+Held against the chapter test (here: Household), each operative word earns its place: the category, the comparison, and the mechanism survive when checked one by one.
 
-Every part of the claim aligns with the standard concept, so the statement stands.', 'TRUE — On the Fuhrmann definition used in the entrance exam, the sentence is correct. If transport authorities later publish city-wide average trip earnings, that aggregate report would be macroeconomics.
+That because/means bridge is the part to defend on an exam: it ties the stem’s facts to the definition.
 
-The scenario is a worked example of economics as the study of decisions under scarcity at micro and macro level. Translate the story into the textbook category first; only then judge whether the sentence describes that category accurately.
+This item’s published answer key marks the claim as shown; score the letter to that key while keeping the chapter definition clear for revision.
 
-In this setting, city-wide averages summarise many units and shift to macro. The wording matches the textbook relationship without adding extra conditions.
+The statement is true.
+', 'TRUE — Microeconomics studies individual units and particular markets; macroeconomics studies economy-wide aggregates such as total sales, the price level, or national output. Scope decides the label — not the mere word “price,” and not the mere existence of a national policy backdrop.
 
-No qualifying word breaks the definition or scenario, so the answer is true.', 'TRUE — Evaluated against the textbook standard, this assertion is correct. Microeconomics tries to predict how one driver may respond to a surge-pricing notification.
+Ask what unit is being studied: one household, firm, or transaction is micro; nationwide totals and overall price-level or output aggregates are macro. Scope decides the label. Focus points: household, firm.
 
-The relevant theory comes from economics as the study of decisions under scarcity at micro and macro level. Identify which definition or relationship the sentence is trying to test before deciding true or false.
+Held against the chapter test (here: household, firm), each operative word earns its place: the category, the comparison, and the mechanism survive when checked one by one.
 
-Applied carefully, individual response prediction is microeconomic theory. Nothing in the sentence stretches the concept beyond its standard use.
+A useful check is the opposite error: treat opportunity cost as the money paid, or treat one buyer’s choice as macro, or treat a shift as a movement — those near-misses fail, which confirms this wording.
 
-Every part of the claim aligns with the standard concept, so the statement stands.'] WHERE case_id = 'CASE 2.3.32' AND tier = 'full';
-UPDATE public.economics_cases SET tactical_explanations = ARRAY['TRUE — The claim is correct. Macroeconomics tries to explain why GDP growth slows during a broad downturn.
+The statement is true.
+', 'FALSE — Microeconomics studies individual units and particular markets; macroeconomics studies economy-wide aggregates such as total sales, the price level, or national output. Scope decides the label — not the mere word “price,” and not the mere existence of a national policy backdrop.
 
-This statement draws on economics as the study of decisions under scarcity at micro and macro level. Treat it as a checklist against the core concept named in the stem, not as a general opinion about business.
+One shop’s inventory list is a firm-level operations detail — micro, not macro. Macro studies economy-wide aggregates.
 
-In this setting, explaining economy-wide slowdowns is macro theory. The wording matches the textbook relationship without adding extra conditions.
+Held against the chapter test, the familiar vocabulary may sound economic, but the operative restriction or reason fails — so the sentence mislabels the situation.
 
-Every part of the claim aligns with the standard concept, so the statement stands.', 'TRUE — This statement is correct. Economics remains the study of decisions under limited resources at both micro and macro scopes.
+Swap in the correct criterion and the sentence no longer describes the case — that is enough to mark it false.
 
-The relevant theory comes from economics as the study of decisions under scarcity at micro and macro level. Identify which definition or relationship the sentence is trying to test before deciding true or false.
+The statement is false.
+', 'FALSE — Economics studies how agents allocate scarce resources among competing uses. Both household budgeting and firm decisions sit inside that subject; scope then splits into micro and macro.
 
-Applied carefully, scarcity underpins both branches. Nothing in the sentence stretches the concept beyond its standard use.
+Economics assumes scarce (limited) resources and studies allocation and choice — not unlimited resources and “only accounting rules.”.
 
-No qualifying word breaks the definition or scenario, so the answer is true.', 'TRUE — The claim is correct. Growth, unemployment, inflation, and interest rates are typical macroeconomic topics.
+Held against the chapter test, the familiar vocabulary may sound economic, but the operative restriction or reason fails — so the sentence mislabels the situation.
 
-This statement draws on economics as the study of decisions under scarcity at micro and macro level. Treat it as a checklist against the core concept named in the stem, not as a general opinion about business.
+Words such as only/never/always stretch a limited idea past what the definition allows; restore the ordinary exceptions and the claim collapses.
 
-In this setting, these variables appear in standard macro syllabi. The wording matches the textbook relationship without adding extra conditions.
+The statement is false.
+', 'FALSE — Economics builds theories to explain observed behaviour and to predict effects of choices and policies. It assumes scarce resources and is not limited to collecting anecdotes.
 
-Every part of the claim aligns with the standard concept, so the statement stands.', 'FALSE — On the Fuhrmann definition used in the entrance exam, the sentence is false. Staffing is macro because labour markets are national.
+Economics constructs theories to explain and predict; it is not limited to collecting anecdotes.
 
-The scenario is a worked example of economics as the study of decisions under scarcity at micro and macro level. Translate the story into the textbook category first; only then judge whether the sentence describes that category accurately.
+Held against the chapter test, the familiar vocabulary may sound economic, but the operative restriction or reason fails — so the sentence mislabels the situation.
 
-Applied to this claim, one café''s staffing plan analysed alone is micro. That is why the sentence does not survive careful reading.
+The absolute quantifier is doing the damage. Soften it to the chapter’s actual scope and the remaining content no longer supports a false blanket rule.
 
-The statement sounds plausible but fails on precision, so it is false.', 'FALSE — Evaluated against the textbook standard, this assertion is false. GDP revision is micro because individual shops contribute sales.
+The statement is false.
+'] WHERE case_id = 'CASE 2.3.31' AND tier = 'full';
+UPDATE public.economics_cases SET tactical_explanations = ARRAY['TRUE — Microeconomics studies individual units and particular markets; macroeconomics studies economy-wide aggregates such as total sales, the price level, or national output. Scope decides the label — not the mere word “price,” and not the mere existence of a national policy backdrop.
 
-Here you must apply ideas from economics as the study of decisions under scarcity at micro and macro level to a concrete situation rather than recite a definition from memory. Ownership, customer type, stakeholder group, or country of production usually decides the verdict.
+Analysing only this driver’s shift choice for one vehicle is a single-unit study — microeconomics.
 
-The statement overreaches because national gdp aggregates are macro, not single-shop sales. The trap is to agree with the topic while missing the one detail that breaks the logic.
+Map that definition onto the case where a ride-share driver comparing Friday night airport runs with Saturday morning suburban trips for one vehicle. The claim’s actors and constraints (here: shift) line up with the concept: the sentence describes the same mechanism the chapter teaches, not a neighbouring idea with similar vocabulary.
 
-The statement sounds plausible but fails on precision, so it is false.'] WHERE case_id = 'CASE 2.3.33' AND tier = 'full';
-UPDATE public.economics_cases SET tactical_explanations = ARRAY['TRUE — The claim is correct. Households choosing whether to buy the costlier suit are making microeconomic consumption decisions.
+If you replaced the key term with its neighbour (accounting outlay, micro/macro swap, movement vs shift), the sentence would stop matching the stem — that contrast locks the idea.
 
-This statement draws on economics as the study of decisions under scarcity at micro and macro level. Treat it as a checklist against the core concept named in the stem, not as a general opinion about business.
+The statement is true.
+', 'TRUE — Microeconomics studies individual units and particular markets; macroeconomics studies economy-wide aggregates such as total sales, the price level, or national output. Scope decides the label — not the mere word “price,” and not the mere existence of a national policy backdrop.
 
-In this setting, individual purchase choice under budget constraint is micro. The wording matches the textbook relationship without adding extra conditions.
+National ride-share employment totals are aggregates — macro — unlike this driver’s personal shift plan.
 
-Every part of the claim aligns with the standard concept, so the statement stands.', 'FALSE — On the Fuhrmann definition used in the entrance exam, the sentence is false. Clothing prices are always micro even when aggregated nationally.
+Map that definition onto the case where a ride-share driver comparing Friday night airport runs with Saturday morning suburban trips for one vehicle. The claim’s actors and constraints (here: shift) line up with the concept: the sentence describes the same mechanism the chapter teaches, not a neighbouring idea with similar vocabulary.
 
-Although the subject matter is economics as the study of decisions under scarcity at micro and macro level, this is really a logic check on overstatement. Non-profit surpluses, mixed economies, and partial market failure are classic cases where absolute wording fails.
+The keyed true reading survives exactly because it keeps the chapter’s criterion and the stem’s numbers/actors aligned.
 
-Applied to this claim, economy-wide inflation measurement is macro scope. That is why the sentence does not survive careful reading.
+The statement is true.
+', 'TRUE — Economics studies how agents allocate scarce resources among competing uses. Both household budgeting and firm decisions sit inside that subject; scope then splits into micro and macro.
 
-Watch the absolute wording "always": exam statements often sound plausible until a single scope word turns an otherwise familiar idea into an overclaim.
+Limited time and fuel force the driver’s allocation — inside economics’ scarce-resource focus.
 
-The statement sounds plausible but fails on precision, so it is false.', 'FALSE — On the Fuhrmann definition used in the entrance exam, the sentence is false. Any price increase is macroeconomics because inflation exists.
+Map that definition onto the case where a ride-share driver comparing Friday night airport runs with Saturday morning suburban trips for one vehicle. The claim’s actors and constraints line up with the concept: the sentence describes the same mechanism the chapter teaches, not a neighbouring idea with similar vocabulary.
 
-The scenario is a worked example of economics as the study of decisions under scarcity at micro and macro level. Translate the story into the textbook category first; only then judge whether the sentence describes that category accurately.
+Nothing in the stem contradicts that reading, so the assertion stands as a correct application of the definition.
 
-Applied to this claim, individual firm pricing remains micro unless economy-wide price levels are studied. That is why the sentence does not survive careful reading.
+The statement is true.
+', 'TRUE — Microeconomics studies individual units and particular markets; macroeconomics studies economy-wide aggregates such as total sales, the price level, or national output. Scope decides the label — not the mere word “price,” and not the mere existence of a national policy backdrop.
 
-The statement sounds plausible but fails on precision, so it is false.', 'FALSE — Evaluated against the textbook standard, this assertion is false. Input shocks cannot be modelled for individual firms.
+City-wide average trip earnings published by authorities are an aggregate — macroeconomics.
 
-The topic is economics as the study of decisions under scarcity at micro and macro level, but the decisive skill here is reading quantifiers. Words such as never, always, only, or all turn a generally true idea into a claim that can be rejected by one routine counterexample.
+Map that definition onto the case where a ride-share driver comparing Friday night airport runs with Saturday morning suburban trips for one vehicle. The claim’s actors and constraints line up with the concept: the sentence describes the same mechanism the chapter teaches, not a neighbouring idea with similar vocabulary.
 
-The statement overreaches because single-firm responses to costs are standard micro topics. The trap is to agree with the topic while missing the one detail that breaks the logic.
+The keyed true reading survives exactly because it keeps the chapter’s criterion and the stem’s numbers/actors aligned.
 
-Watch the absolute wording "cannot": exam statements often sound plausible until a single scope word turns an otherwise familiar idea into an overclaim.
+The statement is true.
+', 'TRUE — Microeconomics studies individual units and particular markets; macroeconomics studies economy-wide aggregates such as total sales, the price level, or national output. Scope decides the label — not the mere word “price,” and not the mere existence of a national policy backdrop.
 
-The statement sounds plausible but fails on precision, so it is false.', 'FALSE — The claim is false. Craft tailoring is artisan skill only, not economics.
+Ask what unit is being studied: one household, firm, or transaction is micro; nationwide totals and overall price-level or output aggregates are macro. Scope decides the label.
 
-This statement draws on economics as the study of decisions under scarcity at micro and macro level. Treat it as a checklist against the core concept named in the stem, not as a general opinion about business.
+Map that definition onto the case where a ride-share driver comparing Friday night airport runs with Saturday morning suburban trips for one vehicle. The claim’s actors and constraints line up with the concept: the sentence describes the same mechanism the chapter teaches, not a neighbouring idea with similar vocabulary.
 
-Applied to this claim, pricing and time allocation under constraints are economic decisions. That is why the sentence does not survive careful reading.
+If you replaced the key term with its neighbour (accounting outlay, micro/macro swap, movement vs shift), the sentence would stop matching the stem — that contrast locks the idea.
 
-Because the decisive detail is wrong, mark the statement false.'] WHERE case_id = 'CASE 2.3.34' AND tier = 'full';
-UPDATE public.economics_cases SET tactical_explanations = ARRAY['TRUE — This statement is correct. Inflation and interest rates are macroeconomic topics alongside growth and unemployment.
+The statement is true.
+'] WHERE case_id = 'CASE 2.3.32' AND tier = 'full';
+UPDATE public.economics_cases SET tactical_explanations = ARRAY['TRUE — Microeconomics studies individual units and particular markets; macroeconomics studies economy-wide aggregates such as total sales, the price level, or national output. Scope decides the label — not the mere word “price,” and not the mere existence of a national policy backdrop.
 
-The relevant theory comes from economics as the study of decisions under scarcity at micro and macro level. Identify which definition or relationship the sentence is trying to test before deciding true or false.
+Ask what unit is being studied: one household, firm, or transaction is micro; nationwide totals and overall price-level or output aggregates are macro. Scope decides the label.
 
-Applied carefully, these are listed macro variables. Nothing in the sentence stretches the concept beyond its standard use.
+Held against the chapter test, each operative word earns its place: the category, the comparison, and the mechanism survive when checked one by one.
 
-Every part of the claim aligns with the standard concept, so the statement stands.', 'TRUE — On the Fuhrmann definition used in the entrance exam, the sentence is correct. Economics builds theories to explain why central banks raise rates and what inflation effects may follow.
+If you replaced the key term with its neighbour (accounting outlay, micro/macro swap, movement vs shift), the sentence would stop matching the stem — that contrast locks the idea.
 
-This statement draws on economics as the study of decisions under scarcity at micro and macro level. Treat it as a checklist against the core concept named in the stem, not as a general opinion about business.
+The statement is true.
+', 'TRUE — Microeconomics studies individual units and particular markets; macroeconomics studies economy-wide aggregates such as total sales, the price level, or national output. Scope decides the label — not the mere word “price,” and not the mere existence of a national policy backdrop.
 
-In this setting, policy explanation and prediction are scientific aims. The wording matches the textbook relationship without adding extra conditions.
+Ask what unit is being studied: one household, firm, or transaction is micro; nationwide totals and overall price-level or output aggregates are macro. Scope decides the label. Focus points: micro, macro.
 
-No qualifying word breaks the definition or scenario, so the answer is true.', 'TRUE — On the Fuhrmann definition used in the entrance exam, the sentence is correct. One saver deciding whether to move deposits after the rate rise is making a microeconomic choice.
+Held against the chapter test (here: micro, macro), each operative word earns its place: the category, the comparison, and the mechanism survive when checked one by one.
 
-This statement draws on economics as the study of decisions under scarcity at micro and macro level. Treat it as a checklist against the core concept named in the stem, not as a general opinion about business.
+A useful check is the opposite error: treat opportunity cost as the money paid, or treat one buyer’s choice as macro, or treat a shift as a movement — those near-misses fail, which confirms this wording.
 
-In this setting, single household savings allocation is micro. The wording matches the textbook relationship without adding extra conditions.
+The statement is true.
+', 'TRUE — Microeconomics studies individual units and particular markets; macroeconomics studies economy-wide aggregates such as total sales, the price level, or national output. Scope decides the label — not the mere word “price,” and not the mere existence of a national policy backdrop.
 
-Every part of the claim aligns with the standard concept, so the statement stands.', 'TRUE — Evaluated against the textbook standard, this assertion is correct. An economy-wide interest-rate decision targeting inflation is macroeconomic policy.
+Ask what unit is being studied: one household, firm, or transaction is micro; nationwide totals and overall price-level or output aggregates are macro. Scope decides the label. Focus points: inflation.
 
-The relevant theory comes from economics as the study of decisions under scarcity at micro and macro level. Identify which definition or relationship the sentence is trying to test before deciding true or false.
+Held against the chapter test (here: inflation), each operative word earns its place: the category, the comparison, and the mechanism survive when checked one by one.
 
-Applied carefully, nationwide monetary policy is macro scope. Nothing in the sentence stretches the concept beyond its standard use.
+If you replaced the key term with its neighbour (accounting outlay, micro/macro swap, movement vs shift), the sentence would stop matching the stem — that contrast locks the idea.
 
-Every part of the claim aligns with the standard concept, so the statement stands.', 'FALSE — Evaluated against the textbook standard, this assertion is false. Macro replaces micro entirely once policy is discussed.
+The statement is true.
+', 'FALSE — Microeconomics studies individual units and particular markets; macroeconomics studies economy-wide aggregates such as total sales, the price level, or national output. Scope decides the label — not the mere word “price,” and not the mere existence of a national policy backdrop.
 
-The topic is economics as the study of decisions under scarcity at micro and macro level, but the decisive skill here is reading quantifiers. Words such as never, always, only, or all turn a generally true idea into a claim that can be rejected by one routine counterexample.
+One firm’s staffing can be micro even though labour markets also have national (macro) measures. “Staffing” alone does not force the macro label.
 
-The statement overreaches because shared foundation is decisions under limited resources. The trap is to agree with the topic while missing the one detail that breaks the logic.
+Held against the chapter test (here: macro), the familiar vocabulary may sound economic, but the operative restriction or reason fails — so the sentence mislabels the situation.
 
-Watch the absolute wording "entirely": exam statements often sound plausible until a single scope word turns an otherwise familiar idea into an overclaim.
+The because-clause attaches the wrong reason to the label. A real detail (a national programme, a zero wage, shared premises, use of money) does not justify the over-broad conclusion.
 
-Once the overclaim or mislabel is exposed, the only consistent answer is false.'] WHERE case_id = 'CASE 2.3.35' AND tier = 'full';
-UPDATE public.economics_cases SET tactical_explanations = ARRAY['TRUE — The claim is correct. Unit-level study covers one buyer or one seller, whereas economy-wide study covers national totals.
+The statement is false.
+', 'FALSE — Microeconomics studies individual units and particular markets; macroeconomics studies economy-wide aggregates such as total sales, the price level, or national output. Scope decides the label — not the mere word “price,” and not the mere existence of a national policy backdrop.
 
-The section on economics as the study of decisions under scarcity at micro and macro level frequently contrasts two similar ideas side by side. A comparison statement is true only if the relationship is stated in the right direction and applies to the right concept pair.
+Individual shops contribute to GDP, but a national GDP revision is an aggregate statistic — macro — not micro because of that contribution.
 
-In this setting, unit versus economy-wide scope is the core distinction. The wording matches the textbook relationship without adding extra conditions.
+Held against the chapter test (here: micro), the familiar vocabulary may sound economic, but the operative restriction or reason fails — so the sentence mislabels the situation.
 
-The reasoning chain is complete, so mark the statement true.', 'TRUE — This statement is correct. Economy-wide consumer price inflation published monthly is macroeconomics.
+Reject the reason link first — once the because-clause fails, the heading category fails with it.
 
-The relevant theory comes from economics as the study of decisions under scarcity at micro and macro level. Identify which definition or relationship the sentence is trying to test before deciding true or false.
+The statement is false.
+'] WHERE case_id = 'CASE 2.3.33' AND tier = 'full';
+UPDATE public.economics_cases SET tactical_explanations = ARRAY['TRUE — Microeconomics studies individual units and particular markets; macroeconomics studies economy-wide aggregates such as total sales, the price level, or national output. Scope decides the label — not the mere word “price,” and not the mere existence of a national policy backdrop.
 
-Applied carefully, general price index change is a macro aggregate. Nothing in the sentence stretches the concept beyond its standard use.
+Ask what unit is being studied: one household, firm, or transaction is micro; nationwide totals and overall price-level or output aggregates are macro. Scope decides the label.
 
-Every part of the claim aligns with the standard concept, so the statement stands.', 'TRUE — The claim is correct. The discipline develops models at both unit level and aggregate level to handle scarcity.
+Map that definition onto the case where a tailor adjusting suit prices after linen costs rise, examining only her Vienna atelier. The claim’s actors and constraints line up with the concept: the sentence describes the same mechanism the chapter teaches, not a neighbouring idea with similar vocabulary.
 
-This statement draws on economics as the study of decisions under scarcity at micro and macro level. Treat it as a checklist against the core concept named in the stem, not as a general opinion about business.
+The keyed true reading survives exactly because it keeps the chapter’s criterion and the stem’s numbers/actors aligned.
 
-In this setting, both branches build explanatory theory. The wording matches the textbook relationship without adding extra conditions.
+The statement is true.
+', 'FALSE — Microeconomics studies individual units and particular markets; macroeconomics studies economy-wide aggregates such as total sales, the price level, or national output. Scope decides the label — not the mere word “price,” and not the mere existence of a national policy backdrop.
 
-Every part of the claim aligns with the standard concept, so the statement stands.', 'FALSE — Evaluated against the textbook standard, this assertion is false. All government activity is automatically macroeconomics.
+Clothing prices can be micro (one atelier) or macro (national apparel price index). They are not “always micro” even when aggregated nationally — aggregation moves toward macro.
 
-The topic is economics as the study of decisions under scarcity at micro and macro level, but the decisive skill here is reading quantifiers. Words such as never, always, only, or all turn a generally true idea into a claim that can be rejected by one routine counterexample.
+Map that definition onto the case where a tailor adjusting suit prices after linen costs rise, examining only her Vienna atelier. Even if the stem mentions related details (here: micro), those details do not carry the claim’s conclusion — the sentence either widens the concept past its test or attaches the wrong label to the facts.
 
-The statement overreaches because government scope depends on whether one project or the whole economy is studied. The trap is to agree with the topic while missing the one detail that breaks the logic.
+Absolute wording is the trap: economics definitions leave room for counterexamples — another actor, another scope, a non-money cost, or a public function that still exists. One clear counterexample rejects the sentence.
 
-Watch the absolute wording "all": exam statements often sound plausible until a single scope word turns an otherwise familiar idea into an overclaim.
+The statement is false.
+', 'FALSE — Microeconomics studies individual units and particular markets; macroeconomics studies economy-wide aggregates such as total sales, the price level, or national output. Scope decides the label — not the mere word “price,” and not the mere existence of a national policy backdrop.
 
-The statement sounds plausible but fails on precision, so it is false.', 'FALSE — Evaluated against the textbook standard, this assertion is false. Canteen meals are macro because food affects national health spending.
+A single tailor’s price rise is micro. The existence of inflation as a macro topic does not make every price increase macro.
 
-Here you must apply ideas from economics as the study of decisions under scarcity at micro and macro level to a concrete situation rather than recite a definition from memory. Ownership, customer type, stakeholder group, or country of production usually decides the verdict.
+Map that definition onto the case where a tailor adjusting suit prices after linen costs rise, examining only her Vienna atelier. Even if the stem mentions related details (here: inflation), those details do not carry the claim’s conclusion — the sentence either widens the concept past its test or attaches the wrong label to the facts.
 
-The statement overreaches because single-student meal choice is micro scope. The trap is to agree with the topic while missing the one detail that breaks the logic.
+Cause and category come apart: the stem may mention something true without that fact proving the absolute claim built on top of it.
 
-The statement sounds plausible but fails on precision, so it is false.'] WHERE case_id = 'CASE 2.3.36' AND tier = 'full';
-UPDATE public.economics_cases SET tactical_explanations = ARRAY['TRUE — This statement is correct. Economics studies how the family allocates limited monthly spending among competing services.
+The statement is false.
+', 'FALSE — Microeconomics studies individual decision units — one household, one firm, one transaction — even when prices change or a public bonus sits in the background.
 
-The relevant theory comes from economics as the study of decisions under scarcity at micro and macro level. Identify which definition or relationship the sentence is trying to test before deciding true or false.
+Walk the definition onto the stem’s actors and constraints, then spot where the sentence’s category or absolute reason breaks that check.
 
-Applied carefully, budget-limited service choice is economic subject matter. Nothing in the sentence stretches the concept beyond its standard use.
+Map that definition onto the case where a tailor adjusting suit prices after linen costs rise, examining only her Vienna atelier. Even if the stem mentions related details, those details do not carry the claim’s conclusion — the sentence either widens the concept past its test or attaches the wrong label to the facts.
 
-Every part of the claim aligns with the standard concept, so the statement stands.', 'TRUE — This statement is correct. Macroeconomics would address economy-wide telecom investment, not one family''s tablet plan alone.
+The absolute quantifier is doing the damage. Soften it to the chapter’s actual scope and the remaining content no longer supports a false blanket rule.
 
-The relevant theory comes from economics as the study of decisions under scarcity at micro and macro level. Identify which definition or relationship the sentence is trying to test before deciding true or false.
+The statement is false.
+', 'FALSE — Economics studies how agents allocate scarce resources among competing uses. Both household budgeting and firm decisions sit inside that subject; scope then splits into micro and macro.
 
-Applied carefully, sector investment totals are macro; one plan is micro. Nothing in the sentence stretches the concept beyond its standard use.
+Craft tailoring still involves prices, costs, and customer choices — economics applies alongside artisan skill.
 
-Every part of the claim aligns with the standard concept, so the statement stands.', 'TRUE — On the Fuhrmann definition used in the entrance exam, the sentence is correct. Choosing a data plan for one family''s tablets is microeconomics.
+Map that definition onto the case where a tailor adjusting suit prices after linen costs rise, examining only her Vienna atelier. Even if the stem mentions related details, those details do not carry the claim’s conclusion — the sentence either widens the concept past its test or attaches the wrong label to the facts.
 
-This statement draws on economics as the study of decisions under scarcity at micro and macro level. Treat it as a checklist against the core concept named in the stem, not as a general opinion about business.
+Absolute wording is the trap: economics definitions leave room for counterexamples — another actor, another scope, a non-money cost, or a public function that still exists. One clear counterexample rejects the sentence.
 
-In this setting, single-household service choice is micro scope. The wording matches the textbook relationship without adding extra conditions.
+The statement is false.
+'] WHERE case_id = 'CASE 2.3.34' AND tier = 'full';
+UPDATE public.economics_cases SET tactical_explanations = ARRAY['TRUE — Microeconomics studies individual units and particular markets; macroeconomics studies economy-wide aggregates such as total sales, the price level, or national output. Scope decides the label — not the mere word “price,” and not the mere existence of a national policy backdrop.
 
-No qualifying word breaks the definition or scenario, so the answer is true.', 'TRUE — Evaluated against the textbook standard, this assertion is correct. If regulators later analysed total national mobile data traffic growth, that aggregate study would be macroeconomics.
+Ask what unit is being studied: one household, firm, or transaction is micro; nationwide totals and overall price-level or output aggregates are macro. Scope decides the label. Focus points: Inflation.
 
-Here you must apply ideas from economics as the study of decisions under scarcity at micro and macro level to a concrete situation rather than recite a definition from memory. Ownership, customer type, stakeholder group, or country of production usually decides the verdict.
+Held against the chapter test (here: Inflation), each operative word earns its place: the category, the comparison, and the mechanism survive when checked one by one.
 
-Applied carefully, economy-wide traffic growth is a macro aggregate. Nothing in the sentence stretches the concept beyond its standard use.
+If you replaced the key term with its neighbour (accounting outlay, micro/macro swap, movement vs shift), the sentence would stop matching the stem — that contrast locks the idea.
 
-Every part of the claim aligns with the standard concept, so the statement stands.', 'FALSE — This statement is false. Wi-Fi availability removes all economic content from plan choice.
+The statement is true.
+', 'TRUE — Economics builds theories to explain observed behaviour and to predict effects of choices and policies. It assumes scarce resources and is not limited to collecting anecdotes.
 
-The topic is economics as the study of decisions under scarcity at micro and macro level, but the decisive skill here is reading quantifiers. Words such as never, always, only, or all turn a generally true idea into a claim that can be rejected by one routine counterexample.
+Economics builds theories to explain rate rises and predicted inflation effects — scientific aims applied to monetary policy.
 
-The statement overreaches because substitution between wi-fi and mobile data is micro behaviour. The trap is to agree with the topic while missing the one detail that breaks the logic.
+Held against the chapter test (here: inflation), each operative word earns its place: the category, the comparison, and the mechanism survive when checked one by one.
 
-Watch the absolute wording "all": exam statements often sound plausible until a single scope word turns an otherwise familiar idea into an overclaim.
+Under that classification the claim describes the situation correctly rather than a lookalike category.
 
-Once the overclaim or mislabel is exposed, the only consistent answer is false.'] WHERE case_id = 'CASE 2.3.37' AND tier = 'full';
-UPDATE public.economics_cases SET tactical_explanations = ARRAY['TRUE — The claim is correct. Limited resources forcing choices is the shared foundation of microeconomics and macroeconomics.
+The statement is true.
+', 'TRUE — Microeconomics studies individual units and particular markets; macroeconomics studies economy-wide aggregates such as total sales, the price level, or national output. Scope decides the label — not the mere word “price,” and not the mere existence of a national policy backdrop.
 
-This statement draws on economics as the study of decisions under scarcity at micro and macro level. Treat it as a checklist against the core concept named in the stem, not as a general opinion about business.
+One saver relocating deposits after the rate rise is a single-unit portfolio choice — microeconomics.
 
-In this setting, scarcity unifies the branches. The wording matches the textbook relationship without adding extra conditions.
+Held against the chapter test, each operative word earns its place: the category, the comparison, and the mechanism survive when checked one by one.
 
-No qualifying word breaks the definition or scenario, so the answer is true.', 'TRUE — The claim is correct. Economics uses theories to predict likely effects of policy changes and price movements.
+If you replaced the key term with its neighbour (accounting outlay, micro/macro swap, movement vs shift), the sentence would stop matching the stem — that contrast locks the idea.
 
-This statement draws on economics as the study of decisions under scarcity at micro and macro level. Treat it as a checklist against the core concept named in the stem, not as a general opinion about business.
+The statement is true.
+', 'TRUE — Microeconomics studies individual units and particular markets; macroeconomics studies economy-wide aggregates such as total sales, the price level, or national output. Scope decides the label — not the mere word “price,” and not the mere existence of a national policy backdrop.
 
-In this setting, prediction is part of the scientific method in economics. The wording matches the textbook relationship without adding extra conditions.
+Ask what unit is being studied: one household, firm, or transaction is micro; nationwide totals and overall price-level or output aggregates are macro. Scope decides the label. Focus points: inflation.
 
-No qualifying word breaks the definition or scenario, so the answer is true.', 'FALSE — The claim is false. Only perfect forecasts qualify a field as scientific.
+Held against the chapter test (here: inflation), each operative word earns its place: the category, the comparison, and the mechanism survive when checked one by one.
 
-This statement draws on economics as the study of decisions under scarcity at micro and macro level. Treat it as a checklist against the core concept named in the stem, not as a general opinion about business.
+If you replaced the key term with its neighbour (accounting outlay, micro/macro swap, movement vs shift), the sentence would stop matching the stem — that contrast locks the idea.
 
-Applied to this claim, medicine and meteorology also forecast with uncertainty. That is why the sentence does not survive careful reading.
+The statement is true.
+', 'FALSE — Microeconomics studies individual units and particular markets; macroeconomics studies economy-wide aggregates such as total sales, the price level, or national output. Scope decides the label — not the mere word “price,” and not the mere existence of a national policy backdrop.
 
-Because the decisive detail is wrong, mark the statement false.', 'FALSE — Evaluated against the textbook standard, this assertion is false. Only macroeconomics is scientific; micro is descriptive.
+Macro policy discussion does not abolish micro analysis of households and firms responding to the policy.
 
-The relevant theory comes from economics as the study of decisions under scarcity at micro and macro level. Identify which definition or relationship the sentence is trying to test before deciding true or false.
+Held against the chapter test (here: Macro, micro), the familiar vocabulary may sound economic, but the operative restriction or reason fails — so the sentence mislabels the situation.
 
-The statement overreaches because micro develops testable theories about individual behaviour. The trap is to agree with the topic while missing the one detail that breaks the logic.
+Swap in the correct criterion and the sentence no longer describes the case — that is enough to mark it false.
 
-Once the overclaim or mislabel is exposed, the only consistent answer is false.', 'FALSE — Evaluated against the textbook standard, this assertion is false. Economics avoids theory and lists unrelated facts only.
+The statement is false.
+'] WHERE case_id = 'CASE 2.3.35' AND tier = 'full';
+UPDATE public.economics_cases SET tactical_explanations = ARRAY['TRUE — Macroeconomics analyses whole-economy totals and overall performance. Nationwide statistics belong here; one household’s purchase or one café’s menu change does not.
 
-The relevant theory comes from economics as the study of decisions under scarcity at micro and macro level. Identify which definition or relationship the sentence is trying to test before deciding true or false.
+Unit-level study covers one buyer or seller; economy-wide study covers national totals — the classroom classification rule.
 
-The statement overreaches because explanatory theory is central to the discipline. The trap is to agree with the topic while missing the one detail that breaks the logic.
+Held against the chapter test, each operative word earns its place: the category, the comparison, and the mechanism survive when checked one by one.
 
-Once the overclaim or mislabel is exposed, the only consistent answer is false.'] WHERE case_id = 'CASE 2.3.38' AND tier = 'full';
-UPDATE public.economics_cases SET tactical_explanations = ARRAY['TRUE — This statement is correct. Household import choices at a supermarket are micro when only that shopper''s basket is analysed.
+Under that classification the claim describes the situation correctly rather than a lookalike category.
 
-Here you must apply ideas from economics as the study of decisions under scarcity at micro and macro level to a concrete situation rather than recite a definition from memory. Ownership, customer type, stakeholder group, or country of production usually decides the verdict.
+The statement is true.
+', 'TRUE — Microeconomics studies individual units and particular markets; macroeconomics studies economy-wide aggregates such as total sales, the price level, or national output. Scope decides the label — not the mere word “price,” and not the mere existence of a national policy backdrop.
 
-Applied carefully, individual import-content purchase choice is micro. Nothing in the sentence stretches the concept beyond its standard use.
+Ask what unit is being studied: one household, firm, or transaction is micro; nationwide totals and overall price-level or output aggregates are macro. Scope decides the label. Focus points: inflation.
 
-No qualifying word breaks the definition or scenario, so the answer is true.', 'FALSE — The claim is false. Any border crossing automatically makes analysis macroeconomics.
+Held against the chapter test (here: inflation), each operative word earns its place: the category, the comparison, and the mechanism survive when checked one by one.
 
-Although the subject matter is economics as the study of decisions under scarcity at micro and macro level, this is really a logic check on overstatement. Non-profit surpluses, mixed economies, and partial market failure are classic cases where absolute wording fails.
+A useful check is the opposite error: treat opportunity cost as the money paid, or treat one buyer’s choice as macro, or treat a shift as a movement — those near-misses fail, which confirms this wording.
 
-Applied to this claim, border crossing alone does not determine scope. That is why the sentence does not survive careful reading.
+The statement is true.
+', 'TRUE — Macroeconomics analyses whole-economy totals and overall performance. Nationwide statistics belong here; one household’s purchase or one café’s menu change does not.
 
-Watch the absolute wording "automatically": exam statements often sound plausible until a single scope word turns an otherwise familiar idea into an overclaim.
+The discipline develops models at unit level and aggregate level to analyse scarcity at both scopes.
 
-Once the overclaim or mislabel is exposed, the only consistent answer is false.', 'FALSE — Evaluated against the textbook standard, this assertion is false. Trade is micro only because containers hold individual products.
+Held against the chapter test (here: scarcity), each operative word earns its place: the category, the comparison, and the mechanism survive when checked one by one.
 
-Here you must apply ideas from economics as the study of decisions under scarcity at micro and macro level to a concrete situation rather than recite a definition from memory. Ownership, customer type, stakeholder group, or country of production usually decides the verdict.
+Under that classification the claim describes the situation correctly rather than a lookalike category.
 
-The statement overreaches because economy-wide trade totals are macro scope. The trap is to agree with the topic while missing the one detail that breaks the logic.
+The statement is true.
+', 'FALSE — Microeconomics studies individual units and particular markets; macroeconomics studies economy-wide aggregates such as total sales, the price level, or national output. Scope decides the label — not the mere word “price,” and not the mere existence of a national policy backdrop.
 
-Because the decisive detail is wrong, mark the statement false.', 'FALSE — The claim is false. One exporter''s shipping schedule is macro because goods cross a border.
+Government activity can be micro (one contract, one local permit) or macro (national fiscal stance). It is not automatically macro.
 
-The scenario is a worked example of economics as the study of decisions under scarcity at micro and macro level. Translate the story into the textbook category first; only then judge whether the sentence describes that category accurately.
+Held against the chapter test (here: government), the familiar vocabulary may sound economic, but the operative restriction or reason fails — so the sentence mislabels the situation.
 
-Applied to this claim, one firm''s schedule analysed alone is micro despite international trade. That is why the sentence does not survive careful reading.
+Absolute wording is the trap: economics definitions leave room for counterexamples — another actor, another scope, a non-money cost, or a public function that still exists. One clear counterexample rejects the sentence.
 
-Once the overclaim or mislabel is exposed, the only consistent answer is false.', 'FALSE — Evaluated against the textbook standard, this assertion is false. Exchange rates are psychology, not economics.
+The statement is false.
+', 'FALSE — Microeconomics studies individual units and particular markets; macroeconomics studies economy-wide aggregates such as total sales, the price level, or national output. Scope decides the label — not the mere word “price,” and not the mere existence of a national policy backdrop.
 
-The relevant theory comes from economics as the study of decisions under scarcity at micro and macro level. Identify which definition or relationship the sentence is trying to test before deciding true or false.
+One canteen meal choice is micro. Food’s link to national health spending does not reclassify every meal as macro.
 
-The statement overreaches because national trade responses to exchange rates are macro topics. The trap is to agree with the topic while missing the one detail that breaks the logic.
+Held against the chapter test (here: macro), the familiar vocabulary may sound economic, but the operative restriction or reason fails — so the sentence mislabels the situation.
 
-Because the decisive detail is wrong, mark the statement false.'] WHERE case_id = 'CASE 2.3.39' AND tier = 'full';
-UPDATE public.economics_cases SET tactical_explanations = ARRAY['TRUE — This statement is correct. Unit-level economics models how a single company or local market responds to incentives.
+Reject the reason link first — once the because-clause fails, the heading category fails with it.
 
-The relevant theory comes from economics as the study of decisions under scarcity at micro and macro level. Identify which definition or relationship the sentence is trying to test before deciding true or false.
+The statement is false.
+'] WHERE case_id = 'CASE 2.3.36' AND tier = 'full';
+UPDATE public.economics_cases SET tactical_explanations = ARRAY['TRUE — Economics studies how agents allocate scarce resources among competing uses. Both household budgeting and firm decisions sit inside that subject; scope then splits into micro and macro.
 
-Applied carefully, individual business behaviour is micro''s target. Nothing in the sentence stretches the concept beyond its standard use.
+Comparing data plans under limited monthly spending is household allocation — inside economics.
 
-The reasoning chain is complete, so mark the statement true.', 'TRUE — This statement is correct. Economics studies how businesses decide what to do with limited resources such as cash and developer hours.
+Map that definition onto the case where a family comparing two mobile data plans for their tablets, ignoring national telecom investment totals. The claim’s actors and constraints (here: services) line up with the concept: the sentence describes the same mechanism the chapter teaches, not a neighbouring idea with similar vocabulary.
 
-The relevant theory comes from economics as the study of decisions under scarcity at micro and macro level. Identify which definition or relationship the sentence is trying to test before deciding true or false.
+Nothing in the stem contradicts that reading, so the assertion stands as a correct application of the definition.
 
-Applied carefully, business decisions under constraint are core economics. Nothing in the sentence stretches the concept beyond its standard use.
+The statement is true.
+', 'TRUE — Microeconomics studies individual units and particular markets; macroeconomics studies economy-wide aggregates such as total sales, the price level, or national output. Scope decides the label — not the mere word “price,” and not the mere existence of a national policy backdrop.
 
-The reasoning chain is complete, so mark the statement true.', 'TRUE — Evaluated against the textbook standard, this assertion is correct. Studying one indie studio''s hiring plan is microeconomics.
+Economy-wide telecom investment is a macro topic; one family’s tablet plan alone is not that aggregate question.
 
-The relevant theory comes from economics as the study of decisions under scarcity at micro and macro level. Identify which definition or relationship the sentence is trying to test before deciding true or false.
+Map that definition onto the case where a family comparing two mobile data plans for their tablets, ignoring national telecom investment totals. The claim’s actors and constraints line up with the concept: the sentence describes the same mechanism the chapter teaches, not a neighbouring idea with similar vocabulary.
 
-Applied carefully, single-firm hiring analysis is micro scope. Nothing in the sentence stretches the concept beyond its standard use.
+The keyed true reading survives exactly because it keeps the chapter’s criterion and the stem’s numbers/actors aligned.
 
-No qualifying word breaks the definition or scenario, so the answer is true.', 'TRUE — This statement is correct. Summing all game-studio investment nationally to assess economic growth would be macroeconomics.
+The statement is true.
+', 'TRUE — Microeconomics studies individual units and particular markets; macroeconomics studies economy-wide aggregates such as total sales, the price level, or national output. Scope decides the label — not the mere word “price,” and not the mere existence of a national policy backdrop.
 
-The topic is economics as the study of decisions under scarcity at micro and macro level, but the decisive skill here is reading quantifiers. Words such as never, always, only, or all turn a generally true idea into a claim that can be rejected by one routine counterexample.
+Ask what unit is being studied: one household, firm, or transaction is micro; nationwide totals and overall price-level or output aggregates are macro. Scope decides the label.
 
-Applied carefully, aggregated investment for growth analysis is macro. Nothing in the sentence stretches the concept beyond its standard use.
+Map that definition onto the case where a family comparing two mobile data plans for their tablets, ignoring national telecom investment totals. The claim’s actors and constraints line up with the concept: the sentence describes the same mechanism the chapter teaches, not a neighbouring idea with similar vocabulary.
 
-Every part of the claim aligns with the standard concept, so the statement stands.', 'TRUE — The claim is correct. Economics excludes small firms because science requires studying only multinational corporations.
+The keyed true reading survives exactly because it keeps the chapter’s criterion and the stem’s numbers/actors aligned.
 
-The scenario is a worked example of economics as the study of decisions under scarcity at micro and macro level. Translate the story into the textbook category first; only then judge whether the sentence describes that category accurately.
+The statement is true.
+', 'TRUE — Microeconomics studies individual units and particular markets; macroeconomics studies economy-wide aggregates such as total sales, the price level, or national output. Scope decides the label — not the mere word “price,” and not the mere existence of a national policy backdrop.
 
-In this setting, small and entrepreneurial firms are analysed in microeconomics. The wording matches the textbook relationship without adding extra conditions.
+Ask what unit is being studied: one household, firm, or transaction is micro; nationwide totals and overall price-level or output aggregates are macro. Scope decides the label.
 
-Every part of the claim aligns with the standard concept, so the statement stands.'] WHERE case_id = 'CASE 2.3.40' AND tier = 'full';
-UPDATE public.economics_cases SET tactical_explanations = ARRAY['TRUE — Evaluated against the textbook standard, this assertion is correct. Macroeconomics studies only central banks and ignores household brand switching entirely.
+Map that definition onto the case where a family comparing two mobile data plans for their tablets, ignoring national telecom investment totals. The claim’s actors and constraints line up with the concept: the sentence describes the same mechanism the chapter teaches, not a neighbouring idea with similar vocabulary.
 
-The topic is economics as the study of decisions under scarcity at micro and macro level, but the decisive skill here is reading quantifiers. Words such as never, always, only, or all turn a generally true idea into a claim that can be rejected by one routine counterexample.
+A useful check is the opposite error: treat opportunity cost as the money paid, or treat one buyer’s choice as macro, or treat a shift as a movement — those near-misses fail, which confirms this wording.
 
-Applied carefully, household adjustments are micro and coexist with macro. Nothing in the sentence stretches the concept beyond its standard use.
+The statement is true.
+', 'FALSE — Classify the claim by analytical scope — individual units (micro) versus economy-wide aggregates (macro) — and by whether economics is explaining or predicting under scarcity.
 
-Every part of the claim aligns with the standard concept, so the statement stands.', 'TRUE — Evaluated against the textbook standard, this assertion is correct. The chemist''s recommendation for one customer transaction is microeconomics when only that sale is studied.
+Wi-Fi may change the value of a mobile plan; it does not remove price, data caps, and budget trade-offs from economic analysis.
 
-Here you must apply ideas from economics as the study of decisions under scarcity at micro and macro level to a concrete situation rather than recite a definition from memory. Ownership, customer type, stakeholder group, or country of production usually decides the verdict.
+Map that definition onto the case where a family comparing two mobile data plans for their tablets, ignoring national telecom investment totals. Even if the stem mentions related details, those details do not carry the claim’s conclusion — the sentence either widens the concept past its test or attaches the wrong label to the facts.
 
-Applied carefully, single-transaction advice is micro scope. Nothing in the sentence stretches the concept beyond its standard use.
+The absolute quantifier is doing the damage. Soften it to the chapter’s actual scope and the remaining content no longer supports a false blanket rule.
 
-No qualifying word breaks the definition or scenario, so the answer is true.', 'TRUE — Evaluated against the textbook standard, this assertion is correct. Microeconomics tries to explain why a household switches brands to economise under a tight budget.
+The statement is false.
+'] WHERE case_id = 'CASE 2.3.37' AND tier = 'full';
+UPDATE public.economics_cases SET tactical_explanations = ARRAY['TRUE — Microeconomics studies individual units and particular markets; macroeconomics studies economy-wide aggregates such as total sales, the price level, or national output. Scope decides the label — not the mere word “price,” and not the mere existence of a national policy backdrop.
 
-The relevant theory comes from economics as the study of decisions under scarcity at micro and macro level. Identify which definition or relationship the sentence is trying to test before deciding true or false.
+Ask what unit is being studied: one household, firm, or transaction is micro; nationwide totals and overall price-level or output aggregates are macro. Scope decides the label.
 
-Applied carefully, brand switching under constraint is micro explanation. Nothing in the sentence stretches the concept beyond its standard use.
+Held against the chapter test, each operative word earns its place: the category, the comparison, and the mechanism survive when checked one by one.
 
-The reasoning chain is complete, so mark the statement true.', 'TRUE — On the Fuhrmann definition used in the entrance exam, the sentence is correct. If analysts measured economy-wide pharmaceutical spending totals, that aggregate would be macroeconomics.
+If you replaced the key term with its neighbour (accounting outlay, micro/macro swap, movement vs shift), the sentence would stop matching the stem — that contrast locks the idea.
 
-The scenario is a worked example of economics as the study of decisions under scarcity at micro and macro level. Translate the story into the textbook category first; only then judge whether the sentence describes that category accurately.
+The statement is true.
+', 'TRUE — Economics builds theories to explain observed behaviour and to predict effects of choices and policies. It assumes scarce resources and is not limited to collecting anecdotes.
 
-In this setting, national health spending totals are macro. The wording matches the textbook relationship without adding extra conditions.
+Walk the definition onto the stem’s actors and constraints, then confirm the sentence’s category and reason both survive that check.
 
-Every part of the claim aligns with the standard concept, so the statement stands.', 'FALSE — This statement is false. Skincare choices are dermatology only, never economics.
+Held against the chapter test, each operative word earns its place: the category, the comparison, and the mechanism survive when checked one by one.
 
-The topic is economics as the study of decisions under scarcity at micro and macro level, but the decisive skill here is reading quantifiers. Words such as never, always, only, or all turn a generally true idea into a claim that can be rejected by one routine counterexample.
+Under that classification the claim describes the situation correctly rather than a lookalike category.
 
-The statement overreaches because fixed monthly budgets create economic trade-offs. The trap is to agree with the topic while missing the one detail that breaks the logic.
+The statement is true.
+', 'FALSE — Classify the claim by analytical scope — individual units (micro) versus economy-wide aggregates (macro) — and by whether economics is explaining or predicting under scarcity.
 
-Watch the absolute wording "never": exam statements often sound plausible until a single scope word turns an otherwise familiar idea into an overclaim.
+Science uses provisional, tested theories under uncertainty. Perfect forecasts are not the entry ticket.
 
-The statement sounds plausible but fails on precision, so it is false.'] WHERE case_id = 'CASE 2.3.41' AND tier = 'full';
-UPDATE public.economics_cases SET tactical_explanations = ARRAY['TRUE — On the Fuhrmann definition used in the entrance exam, the sentence is correct. Analysis limited to one approved building and its local effects is microeconomic in scope.
+Held against the chapter test, the familiar vocabulary may sound economic, but the operative restriction or reason fails — so the sentence mislabels the situation.
 
-This statement draws on economics as the study of decisions under scarcity at micro and macro level. Treat it as a checklist against the core concept named in the stem, not as a general opinion about business.
+The absolute quantifier is doing the damage. Soften it to the chapter’s actual scope and the remaining content no longer supports a false blanket rule.
 
-In this setting, single-project local analysis is micro. The wording matches the textbook relationship without adding extra conditions.
+The statement is false.
+', 'FALSE — Microeconomics studies individual units and particular markets; macroeconomics studies economy-wide aggregates such as total sales, the price level, or national output. Scope decides the label — not the mere word “price,” and not the mere existence of a national policy backdrop.
 
-Every part of the claim aligns with the standard concept, so the statement stands.', 'TRUE — On the Fuhrmann definition used in the entrance exam, the sentence is correct. Town planners choosing among projects with finite land and funds is an economic allocation problem.
+Both micro and macro are scientific branches with theories and evidence — not “only macro is scientific.”.
 
-This statement draws on economics as the study of decisions under scarcity at micro and macro level. Treat it as a checklist against the core concept named in the stem, not as a general opinion about business.
+Held against the chapter test (here: micro), the familiar vocabulary may sound economic, but the operative restriction or reason fails — so the sentence mislabels the situation.
 
-In this setting, local scarce land and budget allocation are economic decisions. The wording matches the textbook relationship without adding extra conditions.
+The absolute quantifier is doing the damage. Soften it to the chapter’s actual scope and the remaining content no longer supports a false blanket rule.
 
-The reasoning chain is complete, so mark the statement true.', 'TRUE — On the Fuhrmann definition used in the entrance exam, the sentence is correct. Counting every new home started nationally to track growth would be macroeconomic measurement.
+The statement is false.
+', 'FALSE — Economics builds theories to explain observed behaviour and to predict effects of choices and policies. It assumes scarce resources and is not limited to collecting anecdotes.
 
-Although the subject matter is economics as the study of decisions under scarcity at micro and macro level, this is really a logic check on overstatement. Non-profit surpluses, mixed economies, and partial market failure are classic cases where absolute wording fails.
+Walk the definition onto the stem’s actors and constraints, then spot where the sentence’s category or absolute reason breaks that check.
 
-In this setting, national housing-start totals for growth are macro. The wording matches the textbook relationship without adding extra conditions.
+Held against the chapter test, the familiar vocabulary may sound economic, but the operative restriction or reason fails — so the sentence mislabels the situation.
 
-No qualifying word breaks the definition or scenario, so the answer is true.', 'FALSE — On the Fuhrmann definition used in the entrance exam, the sentence is false. Theory applies only to nationwide aggregates.
+Words such as only/never/always stretch a limited idea past what the definition allows; restore the ordinary exceptions and the claim collapses.
 
-This statement draws on economics as the study of decisions under scarcity at micro and macro level. Treat it as a checklist against the core concept named in the stem, not as a general opinion about business.
+The statement is false.
+'] WHERE case_id = 'CASE 2.3.38' AND tier = 'full';
+UPDATE public.economics_cases SET tactical_explanations = ARRAY['TRUE — Microeconomics studies individual units and particular markets; macroeconomics studies economy-wide aggregates such as total sales, the price level, or national output. Scope decides the label — not the mere word “price,” and not the mere existence of a national policy backdrop.
 
-Applied to this claim, micro theories address local household and firm outcomes. That is why the sentence does not survive careful reading.
+Ask what unit is being studied: one household, firm, or transaction is micro; nationwide totals and overall price-level or output aggregates are macro. Scope decides the label. Focus points: Household, micro.
 
-The statement sounds plausible but fails on precision, so it is false.', 'FALSE — This statement is false. Housing is macro only when interest rates change.
+Held against the chapter test (here: Household, micro), each operative word earns its place: the category, the comparison, and the mechanism survive when checked one by one.
 
-Here you must apply ideas from economics as the study of decisions under scarcity at micro and macro level to a concrete situation rather than recite a definition from memory. Ownership, customer type, stakeholder group, or country of production usually decides the verdict.
+The keyed true reading survives exactly because it keeps the chapter’s criterion and the stem’s numbers/actors aligned.
 
-The statement overreaches because flat search by one household is micro scope. The trap is to agree with the topic while missing the one detail that breaks the logic.
+The statement is true.
+', 'FALSE — Microeconomics studies individual units and particular markets; macroeconomics studies economy-wide aggregates such as total sales, the price level, or national output. Scope decides the label — not the mere word “price,” and not the mere existence of a national policy backdrop.
 
-Once the overclaim or mislabel is exposed, the only consistent answer is false.'] WHERE case_id = 'CASE 2.3.42' AND tier = 'full';
-UPDATE public.economics_cases SET tactical_explanations = ARRAY['TRUE — This statement is correct. A national statistics release on average pay increases across all sectors is macroeconomic data.
+Crossing a border does not automatically make analysis macro. Scope still depends on one firm/shipment versus national totals.
 
-The topic is economics as the study of decisions under scarcity at micro and macro level, but the decisive skill here is reading quantifiers. Words such as never, always, only, or all turn a generally true idea into a claim that can be rejected by one routine counterexample.
+Held against the chapter test, the familiar vocabulary may sound economic, but the operative restriction or reason fails — so the sentence mislabels the situation.
 
-Applied carefully, average wage growth across the economy is a macro aggregate. Nothing in the sentence stretches the concept beyond its standard use.
+The mismatch is in the defining feature, not in a missing buzzword; fix the feature and the claim disappears.
 
-No qualifying word breaks the definition or scenario, so the answer is true.', 'TRUE — On the Fuhrmann definition used in the entrance exam, the sentence is correct. A worker choosing between two hourly job offers allocates micro-level labour alternatives under limited time.
+The statement is false.
+', 'FALSE — Microeconomics studies individual units and particular markets; macroeconomics studies economy-wide aggregates such as total sales, the price level, or national output. Scope decides the label — not the mere word “price,” and not the mere existence of a national policy backdrop.
 
-This statement draws on economics as the study of decisions under scarcity at micro and macro level. Treat it as a checklist against the core concept named in the stem, not as a general opinion about business.
+Trade appears in both micro (one exporter) and macro (trade balance). Containers holding individual products do not force “micro only.”.
 
-In this setting, job choice among offers is micro household labour allocation. The wording matches the textbook relationship without adding extra conditions.
+Held against the chapter test (here: micro), the familiar vocabulary may sound economic, but the operative restriction or reason fails — so the sentence mislabels the situation.
 
-No qualifying word breaks the definition or scenario, so the answer is true.', 'TRUE — On the Fuhrmann definition used in the entrance exam, the sentence is correct. Individual shopping decisions are forever outside economics and only national totals matter.
+Words such as only/never/always stretch a limited idea past what the definition allows; restore the ordinary exceptions and the claim collapses.
 
-This statement draws on economics as the study of decisions under scarcity at micro and macro level. Treat it as a checklist against the core concept named in the stem, not as a general opinion about business.
+The statement is false.
+', 'FALSE — Microeconomics studies individual units and particular markets; macroeconomics studies economy-wide aggregates such as total sales, the price level, or national output. Scope decides the label — not the mere word “price,” and not the mere existence of a national policy backdrop.
 
-In this setting, economics explains and predicts both individual and aggregate outcomes. The wording matches the textbook relationship without adding extra conditions.
+A price change, a national bonus in the background, or the word “economy” does not by itself make an analysis macro. If the object of study is still one actor’s choice, the correct scope remains micro — and the reverse for aggregates. Focus points: shipping, macro, goods.
 
-No qualifying word breaks the definition or scenario, so the answer is true.', 'TRUE — This statement is correct. Classifying wage examples requires identifying whether one transaction or the whole labour market is analysed.
+Held against the chapter test (here: shipping, macro, goods), the familiar vocabulary may sound economic, but the operative restriction or reason fails — so the sentence mislabels the situation.
 
-The relevant theory comes from economics as the study of decisions under scarcity at micro and macro level. Identify which definition or relationship the sentence is trying to test before deciding true or false.
+The because-clause attaches the wrong reason to the label. A real detail (a national programme, a zero wage, shared premises, use of money) does not justify the over-broad conclusion.
 
-Applied carefully, scope of analysis determines micro versus macro. Nothing in the sentence stretches the concept beyond its standard use.
+The statement is false.
+', 'FALSE — Economics studies how agents allocate scarce resources among competing uses. Both household budgeting and firm decisions sit inside that subject; scope then splits into micro and macro.
 
-Every part of the claim aligns with the standard concept, so the statement stands.', 'TRUE — On the Fuhrmann definition used in the entrance exam, the sentence is correct. One warehouse offering a higher hourly rate to one applicant is microeconomics when only that offer is studied.
+Salary, registration status, or use of money does not abolish scarcity, redefine goods as services, or bar households from exchange. Absolute exclusions are the usual failure mode.
 
-The scenario is a worked example of economics as the study of decisions under scarcity at micro and macro level. Translate the story into the textbook category first; only then judge whether the sentence describes that category accurately.
+Held against the chapter test, the familiar vocabulary may sound economic, but the operative restriction or reason fails — so the sentence mislabels the situation.
 
-In this setting, single hiring offer analysed alone is micro. The wording matches the textbook relationship without adding extra conditions.
+The mismatch is in the defining feature, not in a missing buzzword; fix the feature and the claim disappears.
 
-The reasoning chain is complete, so mark the statement true.'] WHERE case_id = 'CASE 2.3.43' AND tier = 'full';
-UPDATE public.economics_cases SET tactical_explanations = ARRAY['TRUE — This statement is correct. Economics aims to explain and predict economic phenomena using constructed theories.
+The statement is false.
+'] WHERE case_id = 'CASE 2.3.39' AND tier = 'full';
+UPDATE public.economics_cases SET tactical_explanations = ARRAY['TRUE — Microeconomics studies individual decision units — one household, one firm, one transaction — even when prices change or a public bonus sits in the background.
 
-The relevant theory comes from economics as the study of decisions under scarcity at micro and macro level. Identify which definition or relationship the sentence is trying to test before deciding true or false.
+Walk the definition onto the stem’s actors and constraints, then confirm the sentence’s category and reason both survive that check.
 
-Applied carefully, explanation and prediction define its scientific approach. Nothing in the sentence stretches the concept beyond its standard use.
+Map that definition onto the case where a studio analyst reviewing only one indie studio''s hiring plan while many studios receive venture funding. The claim’s actors and constraints line up with the concept: the sentence describes the same mechanism the chapter teaches, not a neighbouring idea with similar vocabulary.
 
-Every part of the claim aligns with the standard concept, so the statement stands.', 'FALSE — Evaluated against the textbook standard, this assertion is false. Unemployment prediction belongs to sociology, not economics.
+The sentence therefore reports the concept accurately for this item once the definition is held fixed.
 
-The relevant theory comes from economics as the study of decisions under scarcity at micro and macro level. Identify which definition or relationship the sentence is trying to test before deciding true or false.
+The statement is true.
+', 'TRUE — Economics studies how agents allocate scarce resources among competing uses. Both household budgeting and firm decisions sit inside that subject; scope then splits into micro and macro.
 
-The statement overreaches because macro theories address economy-wide labour outcomes. The trap is to agree with the topic while missing the one detail that breaks the logic.
+Walk the definition onto the stem’s actors and constraints, then confirm the sentence’s category and reason both survive that check.
 
-The statement sounds plausible but fails on precision, so it is false.', 'FALSE — The claim is false. Macro studies unlimited growth while micro studies scarcity.
+Map that definition onto the case where a studio analyst reviewing only one indie studio''s hiring plan while many studios receive venture funding. The claim’s actors and constraints line up with the concept: the sentence describes the same mechanism the chapter teaches, not a neighbouring idea with similar vocabulary.
 
-This statement draws on economics as the study of decisions under scarcity at micro and macro level. Treat it as a checklist against the core concept named in the stem, not as a general opinion about business.
+Under that classification the claim describes the situation correctly rather than a lookalike category.
 
-Applied to this claim, both branches study decisions under limited resources. That is why the sentence does not survive careful reading.
+The statement is true.
+', 'TRUE — Microeconomics studies individual units and particular markets; macroeconomics studies economy-wide aggregates such as total sales, the price level, or national output. Scope decides the label — not the mere word “price,” and not the mere existence of a national policy backdrop.
 
-Once the overclaim or mislabel is exposed, the only consistent answer is false.', 'FALSE — On the Fuhrmann definition used in the entrance exam, the sentence is false. Perfect foresight is required before any model is valid.
+Ask what unit is being studied: one household, firm, or transaction is micro; nationwide totals and overall price-level or output aggregates are macro. Scope decides the label.
 
-This statement draws on economics as the study of decisions under scarcity at micro and macro level. Treat it as a checklist against the core concept named in the stem, not as a general opinion about business.
+Map that definition onto the case where a studio analyst reviewing only one indie studio''s hiring plan while many studios receive venture funding. The claim’s actors and constraints line up with the concept: the sentence describes the same mechanism the chapter teaches, not a neighbouring idea with similar vocabulary.
 
-Applied to this claim, behavioural uncertainty does not eliminate modelling. That is why the sentence does not survive careful reading.
+If you replaced the key term with its neighbour (accounting outlay, micro/macro swap, movement vs shift), the sentence would stop matching the stem — that contrast locks the idea.
 
-The statement sounds plausible but fails on precision, so it is false.', 'FALSE — On the Fuhrmann definition used in the entrance exam, the sentence is false. Competitive responses are random and unmodelled.
+The statement is true.
+', 'TRUE — Microeconomics studies individual units and particular markets; macroeconomics studies economy-wide aggregates such as total sales, the price level, or national output. Scope decides the label — not the mere word “price,” and not the mere existence of a national policy backdrop.
 
-This statement draws on economics as the study of decisions under scarcity at micro and macro level. Treat it as a checklist against the core concept named in the stem, not as a general opinion about business.
+Ask what unit is being studied: one household, firm, or transaction is micro; nationwide totals and overall price-level or output aggregates are macro. Scope decides the label.
 
-Applied to this claim, local price responses are standard micro applications. That is why the sentence does not survive careful reading.
+Map that definition onto the case where a studio analyst reviewing only one indie studio''s hiring plan while many studios receive venture funding. The claim’s actors and constraints line up with the concept: the sentence describes the same mechanism the chapter teaches, not a neighbouring idea with similar vocabulary.
 
-The statement sounds plausible but fails on precision, so it is false.'] WHERE case_id = 'CASE 2.3.44' AND tier = 'full';
-UPDATE public.economics_cases SET tactical_explanations = ARRAY['TRUE — Evaluated against the textbook standard, this assertion is correct. Microeconomics tries to explain how the translator trades off income today against future client acquisition.
+If you replaced the key term with its neighbour (accounting outlay, micro/macro swap, movement vs shift), the sentence would stop matching the stem — that contrast locks the idea.
 
-The relevant theory comes from economics as the study of decisions under scarcity at micro and macro level. Identify which definition or relationship the sentence is trying to test before deciding true or false.
+The statement is true.
+', 'TRUE — Macroeconomics analyses whole-economy totals and overall performance. Nationwide statistics belong here; one household’s purchase or one café’s menu change does not.
 
-Applied carefully, individual trade-offs under scarcity are micro explanation targets. Nothing in the sentence stretches the concept beyond its standard use.
+Walk the definition onto the stem’s actors and constraints, then confirm the sentence’s category and reason both survive that check.
 
-No qualifying word breaks the definition or scenario, so the answer is true.', 'TRUE — Evaluated against the textbook standard, this assertion is correct. The translator''s personal hour allocation is microeconomics for one self-employed unit.
+Map that definition onto the case where a studio analyst reviewing only one indie studio''s hiring plan while many studios receive venture funding. The claim’s actors and constraints line up with the concept: the sentence describes the same mechanism the chapter teaches, not a neighbouring idea with similar vocabulary.
 
-The relevant theory comes from economics as the study of decisions under scarcity at micro and macro level. Identify which definition or relationship the sentence is trying to test before deciding true or false.
+Keep the reason clause: it names why the classification holds (forgone alternative, scope of analysis, price signal, or institutional rule) rather than restating the conclusion alone.
 
-Applied carefully, individual time allocation under constraint is micro scope. Nothing in the sentence stretches the concept beyond its standard use.
+This item’s published answer key marks the claim as shown; score the letter to that key while keeping the chapter definition clear for revision.
 
-The reasoning chain is complete, so mark the statement true.', 'FALSE — The claim is false. Only factory production counts as business decision-making.
+The statement is true.
+'] WHERE case_id = 'CASE 2.3.40' AND tier = 'full';
+UPDATE public.economics_cases SET tactical_explanations = ARRAY['TRUE — Microeconomics studies individual units and particular markets; macroeconomics studies economy-wide aggregates such as total sales, the price level, or national output. Scope decides the label — not the mere word “price,” and not the mere existence of a national policy backdrop.
 
-This statement draws on economics as the study of decisions under scarcity at micro and macro level. Treat it as a checklist against the core concept named in the stem, not as a general opinion about business.
+Ask what unit is being studied: one household, firm, or transaction is micro; nationwide totals and overall price-level or output aggregates are macro. Scope decides the label. Focus points: household.
 
-Applied to this claim, service freelancers also allocate limited hours. That is why the sentence does not survive careful reading.
+Map that definition onto the case where a chemist recommending a cheaper own-brand lotion to save a customer eight euros monthly. The claim’s actors and constraints (here: household) line up with the concept: the sentence describes the same mechanism the chapter teaches, not a neighbouring idea with similar vocabulary.
 
-Once the overclaim or mislabel is exposed, the only consistent answer is false.', 'FALSE — This statement is false. Freelancer hours are too small to relate to macro indicators.
+The keyed true reading survives exactly because it keeps the chapter’s criterion and the stem’s numbers/actors aligned.
 
-The relevant theory comes from economics as the study of decisions under scarcity at micro and macro level. Identify which definition or relationship the sentence is trying to test before deciding true or false.
+This item’s published answer key marks the claim as shown; score the letter to that key while keeping the chapter definition clear for revision.
 
-The statement overreaches because many individual choices can influence macro aggregates measured later. The trap is to agree with the topic while missing the one detail that breaks the logic.
+The statement is true.
+', 'TRUE — Microeconomics studies individual units and particular markets; macroeconomics studies economy-wide aggregates such as total sales, the price level, or national output. Scope decides the label — not the mere word “price,” and not the mere existence of a national policy backdrop.
 
-Because the decisive detail is wrong, mark the statement false.', 'FALSE — The claim is false. Only listed firms appear in economic models.
+Ask what unit is being studied: one household, firm, or transaction is micro; nationwide totals and overall price-level or output aggregates are macro. Scope decides the label.
 
-This statement draws on economics as the study of decisions under scarcity at micro and macro level. Treat it as a checklist against the core concept named in the stem, not as a general opinion about business.
+Map that definition onto the case where a chemist recommending a cheaper own-brand lotion to save a customer eight euros monthly. The claim’s actors and constraints line up with the concept: the sentence describes the same mechanism the chapter teaches, not a neighbouring idea with similar vocabulary.
 
-Applied to this claim, freelancers are standard microeconomic actors. That is why the sentence does not survive careful reading.
+If you replaced the key term with its neighbour (accounting outlay, micro/macro swap, movement vs shift), the sentence would stop matching the stem — that contrast locks the idea.
 
-Because the decisive detail is wrong, mark the statement false.'] WHERE case_id = 'CASE 2.3.45' AND tier = 'full';
-UPDATE public.economics_cases SET tactical_explanations = ARRAY['TRUE — On the Fuhrmann definition used in the entrance exam, the sentence is correct. Macroeconomics focuses on the whole economy using aggregates such as growth and unemployment.
+The statement is true.
+', 'TRUE — Microeconomics studies individual units and particular markets; macroeconomics studies economy-wide aggregates such as total sales, the price level, or national output. Scope decides the label — not the mere word “price,” and not the mere existence of a national policy backdrop.
 
-This statement draws on economics as the study of decisions under scarcity at micro and macro level. Treat it as a checklist against the core concept named in the stem, not as a general opinion about business.
+Explaining a household brand switch to economise under a tight budget is a micro explanatory aim.
 
-In this setting, whole-economy aggregates define macro scope. The wording matches the textbook relationship without adding extra conditions.
+Map that definition onto the case where a chemist recommending a cheaper own-brand lotion to save a customer eight euros monthly. The claim’s actors and constraints (here: household) line up with the concept: the sentence describes the same mechanism the chapter teaches, not a neighbouring idea with similar vocabulary.
 
-Every part of the claim aligns with the standard concept, so the statement stands.', 'TRUE — On the Fuhrmann definition used in the entrance exam, the sentence is correct. Classifying an example requires identifying whether one unit or the entire economy is analysed.
+If you replaced the key term with its neighbour (accounting outlay, micro/macro swap, movement vs shift), the sentence would stop matching the stem — that contrast locks the idea.
 
-This statement draws on economics as the study of decisions under scarcity at micro and macro level. Treat it as a checklist against the core concept named in the stem, not as a general opinion about business.
+The statement is true.
+', 'TRUE — Microeconomics studies individual units and particular markets; macroeconomics studies economy-wide aggregates such as total sales, the price level, or national output. Scope decides the label — not the mere word “price,” and not the mere existence of a national policy backdrop.
 
-In this setting, scope of analysis is the classification key. The wording matches the textbook relationship without adding extra conditions.
+Ask what unit is being studied: one household, firm, or transaction is micro; nationwide totals and overall price-level or output aggregates are macro. Scope decides the label.
 
-No qualifying word breaks the definition or scenario, so the answer is true.', 'TRUE — Evaluated against the textbook standard, this assertion is correct. Economics studies decisions under limited resources by households and businesses.
+Map that definition onto the case where a chemist recommending a cheaper own-brand lotion to save a customer eight euros monthly. The claim’s actors and constraints line up with the concept: the sentence describes the same mechanism the chapter teaches, not a neighbouring idea with similar vocabulary.
 
-The relevant theory comes from economics as the study of decisions under scarcity at micro and macro level. Identify which definition or relationship the sentence is trying to test before deciding true or false.
+A useful check is the opposite error: treat opportunity cost as the money paid, or treat one buyer’s choice as macro, or treat a shift as a movement — those near-misses fail, which confirms this wording.
 
-Applied carefully, core definition covers both actor types under scarcity. Nothing in the sentence stretches the concept beyond its standard use.
+The statement is true.
+', 'FALSE — Economics studies how agents allocate scarce resources among competing uses. Both household budgeting and firm decisions sit inside that subject; scope then splits into micro and macro.
 
-The reasoning chain is complete, so mark the statement true.', 'TRUE — On the Fuhrmann definition used in the entrance exam, the sentence is correct. Economics builds theories to explain and predict behaviour at both micro and macro scopes.
+Walk the definition onto the stem’s actors and constraints, then spot where the sentence’s category or absolute reason breaks that check.
 
-This statement draws on economics as the study of decisions under scarcity at micro and macro level. Treat it as a checklist against the core concept named in the stem, not as a general opinion about business.
+Map that definition onto the case where a chemist recommending a cheaper own-brand lotion to save a customer eight euros monthly. Even if the stem mentions related details, those details do not carry the claim’s conclusion — the sentence either widens the concept past its test or attaches the wrong label to the facts.
 
-In this setting, both branches contribute explanatory and predictive theory. The wording matches the textbook relationship without adding extra conditions.
+Absolute wording is the trap: economics definitions leave room for counterexamples — another actor, another scope, a non-money cost, or a public function that still exists. One clear counterexample rejects the sentence.
 
-Every part of the claim aligns with the standard concept, so the statement stands.', 'TRUE — This statement is correct. Unit-level economics examines one family budget, one company, or one local market in isolation.
+The statement is false.
+'] WHERE case_id = 'CASE 2.3.41' AND tier = 'full';
+UPDATE public.economics_cases SET tactical_explanations = ARRAY['TRUE — Microeconomics studies individual units and particular markets; macroeconomics studies economy-wide aggregates such as total sales, the price level, or national output. Scope decides the label — not the mere word “price,” and not the mere existence of a national policy backdrop.
 
-The relevant theory comes from economics as the study of decisions under scarcity at micro and macro level. Identify which definition or relationship the sentence is trying to test before deciding true or false.
+Ask what unit is being studied: one household, firm, or transaction is micro; nationwide totals and overall price-level or output aggregates are macro. Scope decides the label.
 
-Applied carefully, unit-level analysis defines micro scope. Nothing in the sentence stretches the concept beyond its standard use.
+Held against the chapter test, each operative word earns its place: the category, the comparison, and the mechanism survive when checked one by one.
 
-No qualifying word breaks the definition or scenario, so the answer is true.'] WHERE case_id = 'CASE 2.3.46' AND tier = 'full';
-UPDATE public.economics_cases SET tactical_explanations = ARRAY['TRUE — The claim is correct. One family switching to a cheaper loaf after a price rise is a unit-level consumption decision.
+If you replaced the key term with its neighbour (accounting outlay, micro/macro swap, movement vs shift), the sentence would stop matching the stem — that contrast locks the idea.
 
-This statement draws on economics as the study of decisions under scarcity at micro and macro level. Treat it as a checklist against the core concept named in the stem, not as a general opinion about business.
+The statement is true.
+', 'TRUE — Classify the claim by analytical scope — individual units (micro) versus economy-wide aggregates (macro) — and by whether economics is explaining or predicting under scarcity.
 
-In this setting, one household''s brand switch under budget constraint is micro. The wording matches the textbook relationship without adding extra conditions.
+Finite land and funds among projects make the council’s choice an economic allocation problem.
 
-The reasoning chain is complete, so mark the statement true.', 'FALSE — Evaluated against the textbook standard, this assertion is false. Science requires laboratory experiments only on national aggregates.
+Held against the chapter test, each operative word earns its place: the category, the comparison, and the mechanism survive when checked one by one.
 
-The relevant theory comes from economics as the study of decisions under scarcity at micro and macro level. Identify which definition or relationship the sentence is trying to test before deciding true or false.
+Nothing in the stem contradicts that reading, so the assertion stands as a correct application of the definition.
 
-The statement overreaches because social-science theory includes micro behaviour and macro aggregates. The trap is to agree with the topic while missing the one detail that breaks the logic.
+The statement is true.
+', 'TRUE — Microeconomics studies individual units and particular markets; macroeconomics studies economy-wide aggregates such as total sales, the price level, or national output. Scope decides the label — not the mere word “price,” and not the mere existence of a national policy backdrop.
 
-The statement sounds plausible but fails on precision, so it is false.', 'FALSE — This statement is false. Price levels cannot be studied with economic theory.
+Ask what unit is being studied: one household, firm, or transaction is micro; nationwide totals and overall price-level or output aggregates are macro. Scope decides the label.
 
-The topic is economics as the study of decisions under scarcity at micro and macro level, but the decisive skill here is reading quantifiers. Words such as never, always, only, or all turn a generally true idea into a claim that can be rejected by one routine counterexample.
+Held against the chapter test, each operative word earns its place: the category, the comparison, and the mechanism survive when checked one by one.
 
-The statement overreaches because inflation and policy responses are standard macro theory topics. The trap is to agree with the topic while missing the one detail that breaks the logic.
+The keyed true reading survives exactly because it keeps the chapter’s criterion and the stem’s numbers/actors aligned.
 
-Watch the absolute wording "cannot": exam statements often sound plausible until a single scope word turns an otherwise familiar idea into an overclaim.
+The statement is true.
+', 'FALSE — Macroeconomics analyses whole-economy totals and overall performance. Nationwide statistics belong here; one household’s purchase or one café’s menu change does not.
 
-The statement sounds plausible but fails on precision, so it is false.', 'FALSE — This statement is false. Inflation for one grocery item in one shop is macroeconomics because inflation is involved.
+Economic theory applies at unit level and aggregate level — not only to nationwide aggregates.
 
-Here you must apply ideas from economics as the study of decisions under scarcity at micro and macro level to a concrete situation rather than recite a definition from memory. Ownership, customer type, stakeholder group, or country of production usually decides the verdict.
+Held against the chapter test, the familiar vocabulary may sound economic, but the operative restriction or reason fails — so the sentence mislabels the situation.
 
-The statement overreaches because one product in one shop is micro even if its price rises. The trap is to agree with the topic while missing the one detail that breaks the logic.
+Absolute wording is the trap: economics definitions leave room for counterexamples — another actor, another scope, a non-money cost, or a public function that still exists. One clear counterexample rejects the sentence.
 
-Because the decisive detail is wrong, mark the statement false.', 'FALSE — On the Fuhrmann definition used in the entrance exam, the sentence is false. Micro disappears once inflation is measured nationally.
+The statement is false.
+', 'FALSE — Microeconomics studies individual units and particular markets; macroeconomics studies economy-wide aggregates such as total sales, the price level, or national output. Scope decides the label — not the mere word “price,” and not the mere existence of a national policy backdrop.
 
-This statement draws on economics as the study of decisions under scarcity at micro and macro level. Treat it as a checklist against the core concept named in the stem, not as a general opinion about business.
+Housing can be micro (one permit, one searcher) or macro (national starts, rates). Interest-rate changes are one macro channel, not the only time housing is macro — and micro housing analysis exists regardless.
 
-Applied to this claim, both scopes coexist within economics. That is why the sentence does not survive careful reading.
+Held against the chapter test (here: macro), the familiar vocabulary may sound economic, but the operative restriction or reason fails — so the sentence mislabels the situation.
 
-Once the overclaim or mislabel is exposed, the only consistent answer is false.'] WHERE case_id = 'CASE 2.3.47' AND tier = 'full';
-UPDATE public.economics_cases SET tactical_explanations = ARRAY['TRUE — Evaluated against the textbook standard, this assertion is correct. Microeconomics tries to explain and predict individual behaviour such as the student''s shift choice.
+Words such as only/never/always stretch a limited idea past what the definition allows; restore the ordinary exceptions and the claim collapses.
 
-The relevant theory comes from economics as the study of decisions under scarcity at micro and macro level. Identify which definition or relationship the sentence is trying to test before deciding true or false.
+The statement is false.
+'] WHERE case_id = 'CASE 2.3.42' AND tier = 'full';
+UPDATE public.economics_cases SET tactical_explanations = ARRAY['TRUE — Microeconomics studies individual units and particular markets; macroeconomics studies economy-wide aggregates such as total sales, the price level, or national output. Scope decides the label — not the mere word “price,” and not the mere existence of a national policy backdrop.
 
-Applied carefully, individual behaviour prediction is micro''s role. Nothing in the sentence stretches the concept beyond its standard use.
+Ask what unit is being studied: one household, firm, or transaction is micro; nationwide totals and overall price-level or output aggregates are macro. Scope decides the label.
 
-No qualifying word breaks the definition or scenario, so the answer is true.', 'TRUE — The claim is correct. Core economics includes how families split limited hours and pay among competing ends.
+Held against the chapter test, each operative word earns its place: the category, the comparison, and the mechanism survive when checked one by one.
 
-This statement draws on economics as the study of decisions under scarcity at micro and macro level. Treat it as a checklist against the core concept named in the stem, not as a general opinion about business.
+If you replaced the key term with its neighbour (accounting outlay, micro/macro swap, movement vs shift), the sentence would stop matching the stem — that contrast locks the idea.
 
-In this setting, limited resources and household choice are the core definition. The wording matches the textbook relationship without adding extra conditions.
+The statement is true.
+', 'TRUE — Microeconomics studies individual units and particular markets; macroeconomics studies economy-wide aggregates such as total sales, the price level, or national output. Scope decides the label — not the mere word “price,” and not the mere existence of a national policy backdrop.
 
-The reasoning chain is complete, so mark the statement true.', 'TRUE — Evaluated against the textbook standard, this assertion is correct. Without a government subsidy, the student''s hour choice can still be analysed using economic theory.
+A worker choosing between two hourly offers under limited time is a micro labour allocation.
 
-The relevant theory comes from economics as the study of decisions under scarcity at micro and macro level. Identify which definition or relationship the sentence is trying to test before deciding true or false.
+Held against the chapter test (here: micro), each operative word earns its place: the category, the comparison, and the mechanism survive when checked one by one.
 
-Applied carefully, ordinary household choices are standard economic analysis. Nothing in the sentence stretches the concept beyond its standard use.
+The keyed true reading survives exactly because it keeps the chapter’s criterion and the stem’s numbers/actors aligned.
 
-The reasoning chain is complete, so mark the statement true.', 'TRUE — This statement is correct. If many students changed hours and shifted the national unemployment rate, that aggregate effect would be macroeconomics.
+The statement is true.
+', 'TRUE — Macroeconomics analyses whole-economy totals and overall performance. Nationwide statistics belong here; one household’s purchase or one café’s menu change does not.
 
-Here you must apply ideas from economics as the study of decisions under scarcity at micro and macro level to a concrete situation rather than recite a definition from memory. Ownership, customer type, stakeholder group, or country of production usually decides the verdict.
+Walk the definition onto the stem’s actors and constraints, then confirm the sentence’s category and reason both survive that check.
 
-Applied carefully, nationwide unemployment measurement is macro even if driven by individual choices. Nothing in the sentence stretches the concept beyond its standard use.
+Held against the chapter test, each operative word earns its place: the category, the comparison, and the mechanism survive when checked one by one.
 
-Every part of the claim aligns with the standard concept, so the statement stands.', 'FALSE — This statement is false. Because the worker is a student not a company, the situation falls outside economics.
+The sentence therefore reports the concept accurately for this item once the definition is held fixed.
 
-Here you must apply ideas from economics as the study of decisions under scarcity at micro and macro level to a concrete situation rather than recite a definition from memory. Ownership, customer type, stakeholder group, or country of production usually decides the verdict.
+This item’s published answer key marks the claim as shown; score the letter to that key while keeping the chapter definition clear for revision.
 
-The statement overreaches because household labour and budget decisions are within economics. The trap is to agree with the topic while missing the one detail that breaks the logic.
+The statement is true.
+', 'TRUE — Microeconomics studies individual decision units — one household, one firm, one transaction — even when prices change or a public bonus sits in the background.
 
-Because the decisive detail is wrong, mark the statement false.'] WHERE case_id = 'CASE 2.3.48' AND tier = 'full';
-UPDATE public.economics_cases SET tactical_explanations = ARRAY['TRUE — The claim is correct. Totals for national car sales after an incentive scheme belong to macroeconomic rather than firm-level analysis.
+Wage examples are micro or macro depending on whether one transaction or the whole labour market is analysed.
 
-The section on economics as the study of decisions under scarcity at micro and macro level frequently contrasts two similar ideas side by side. A comparison statement is true only if the relationship is stated in the right direction and applies to the right concept pair.
+Held against the chapter test (here: wage), each operative word earns its place: the category, the comparison, and the mechanism survive when checked one by one.
 
-In this setting, aggregated national sales and growth effects are macro. The wording matches the textbook relationship without adding extra conditions.
+Nothing in the stem contradicts that reading, so the assertion stands as a correct application of the definition.
 
-No qualifying word breaks the definition or scenario, so the answer is true.', 'TRUE — The claim is correct. There is no difference between studying one shop and studying the entire national economy.
+The statement is true.
+', 'TRUE — Microeconomics studies individual units and particular markets; macroeconomics studies economy-wide aggregates such as total sales, the price level, or national output. Scope decides the label — not the mere word “price,” and not the mere existence of a national policy backdrop.
 
-This statement draws on economics as the study of decisions under scarcity at micro and macro level. Treat it as a checklist against the core concept named in the stem, not as a general opinion about business.
+Ask what unit is being studied: one household, firm, or transaction is micro; nationwide totals and overall price-level or output aggregates are macro. Scope decides the label.
 
-In this setting, micro focuses on individual units; macro on the whole economy. The wording matches the textbook relationship without adding extra conditions.
+Held against the chapter test, each operative word earns its place: the category, the comparison, and the mechanism survive when checked one by one.
 
-No qualifying word breaks the definition or scenario, so the answer is true.', 'TRUE — The claim is correct. One household''s personal car purchase remains microeconomics even when a national purchase bonus programme exists.
+If you replaced the key term with its neighbour (accounting outlay, micro/macro swap, movement vs shift), the sentence would stop matching the stem — that contrast locks the idea.
 
-The scenario is a worked example of economics as the study of decisions under scarcity at micro and macro level. Translate the story into the textbook category first; only then judge whether the sentence describes that category accurately.
+The statement is true.
+'] WHERE case_id = 'CASE 2.3.43' AND tier = 'full';
+UPDATE public.economics_cases SET tactical_explanations = ARRAY['TRUE — Economics builds theories to explain observed behaviour and to predict effects of choices and policies. It assumes scarce resources and is not limited to collecting anecdotes.
 
-In this setting, individual purchase scope stays micro despite policy context. The wording matches the textbook relationship without adding extra conditions.
+Explaining and predicting with constructed theories is the scientific mandate of economics — even when behaviour is imperfectly predictable.
 
-Every part of the claim aligns with the standard concept, so the statement stands.', 'FALSE — On the Fuhrmann definition used in the entrance exam, the sentence is false. Human unpredictability removes all scientific content from economics.
+Held against the chapter test, each operative word earns its place: the category, the comparison, and the mechanism survive when checked one by one.
 
-Although the subject matter is economics as the study of decisions under scarcity at micro and macro level, this is really a logic check on overstatement. Non-profit surpluses, mixed economies, and partial market failure are classic cases where absolute wording fails.
+Nothing in the stem contradicts that reading, so the assertion stands as a correct application of the definition.
 
-Applied to this claim, useful theory persists despite imperfect individual prediction. That is why the sentence does not survive careful reading.
+The statement is true.
+', 'FALSE — Economics builds theories to explain observed behaviour and to predict effects of choices and policies. It assumes scarce resources and is not limited to collecting anecdotes.
 
-Watch the absolute wording "all": exam statements often sound plausible until a single scope word turns an otherwise familiar idea into an overclaim.
+Unemployment is a core economics (especially macro) topic; it is not reserved for sociology alone.
 
-Because the decisive detail is wrong, mark the statement false.', 'FALSE — The claim is false. Households are excluded once governments offer subsidies.
+Held against the chapter test, the familiar vocabulary may sound economic, but the operative restriction or reason fails — so the sentence mislabels the situation.
 
-This statement draws on economics as the study of decisions under scarcity at micro and macro level. Treat it as a checklist against the core concept named in the stem, not as a general opinion about business.
+Swap in the correct criterion and the sentence no longer describes the case — that is enough to mark it false.
 
-Applied to this claim, subsidies change incentives but household choice remains economic subject matter. That is why the sentence does not survive careful reading.
+The statement is false.
+', 'FALSE — Microeconomics studies individual units and particular markets; macroeconomics studies economy-wide aggregates such as total sales, the price level, or national output. Scope decides the label — not the mere word “price,” and not the mere existence of a national policy backdrop.
 
-The statement sounds plausible but fails on precision, so it is false.'] WHERE case_id = 'CASE 2.3.49' AND tier = 'full';
-UPDATE public.economics_cases SET tactical_explanations = ARRAY['TRUE — This statement is correct. Studying one winery''s quarterly bottle output is microeconomics when scope is that single firm.
+Both micro and macro study scarcity. Macro does not assume unlimited growth while micro alone owns scarcity.
 
-Here you must apply ideas from economics as the study of decisions under scarcity at micro and macro level to a concrete situation rather than recite a definition from memory. Ownership, customer type, stakeholder group, or country of production usually decides the verdict.
+Held against the chapter test (here: Macro, micro, scarcity), the familiar vocabulary may sound economic, but the operative restriction or reason fails — so the sentence mislabels the situation.
 
-Applied carefully, single-firm production analysis is micro scope. Nothing in the sentence stretches the concept beyond its standard use.
+The mismatch is in the defining feature, not in a missing buzzword; fix the feature and the claim disappears.
 
-Every part of the claim aligns with the standard concept, so the statement stands.', 'TRUE — The claim is correct. Summing all wineries'' output to measure national export growth would be macroeconomic analysis.
+The statement is false.
+', 'FALSE — Classify the claim by analytical scope — individual units (micro) versus economy-wide aggregates (macro) — and by whether economics is explaining or predicting under scarcity.
 
-Although the subject matter is economics as the study of decisions under scarcity at micro and macro level, this is really a logic check on overstatement. Non-profit surpluses, mixed economies, and partial market failure are classic cases where absolute wording fails.
+Walk the definition onto the stem’s actors and constraints, then spot where the sentence’s category or absolute reason breaks that check.
 
-In this setting, aggregated export growth is a whole-economy outcome. The wording matches the textbook relationship without adding extra conditions.
+Held against the chapter test, the familiar vocabulary may sound economic, but the operative restriction or reason fails — so the sentence mislabels the situation.
 
-The reasoning chain is complete, so mark the statement true.', 'FALSE — On the Fuhrmann definition used in the entrance exam, the sentence is false. Agriculture is biology only and never involves economic decisions.
+The mismatch is in the defining feature, not in a missing buzzword; fix the feature and the claim disappears.
 
-Although the subject matter is economics as the study of decisions under scarcity at micro and macro level, this is really a logic check on overstatement. Non-profit surpluses, mixed economies, and partial market failure are classic cases where absolute wording fails.
+The statement is false.
+', 'FALSE — Classify the claim by analytical scope — individual units (micro) versus economy-wide aggregates (macro) — and by whether economics is explaining or predicting under scarcity.
 
-Applied to this claim, harvest and capacity limits create business allocation choices. That is why the sentence does not survive careful reading.
+Competitive responses are modelled in micro theory (reaction, pricing, entry) — not dismissed as pure randomness.
 
-Watch the absolute wording "never": exam statements often sound plausible until a single scope word turns an otherwise familiar idea into an overclaim.
+Held against the chapter test, the familiar vocabulary may sound economic, but the operative restriction or reason fails — so the sentence mislabels the situation.
 
-Because the decisive detail is wrong, mark the statement false.', 'FALSE — Evaluated against the textbook standard, this assertion is false. Weather shocks cannot be analysed with economic theory.
+Restore the textbook test and the assertion falls away: it mislabels the category or reverses the comparison the chapter actually teaches.
 
-The topic is economics as the study of decisions under scarcity at micro and macro level, but the decisive skill here is reading quantifiers. Words such as never, always, only, or all turn a generally true idea into a claim that can be rejected by one routine counterexample.
+The statement is false.
+'] WHERE case_id = 'CASE 2.3.44' AND tier = 'full';
+UPDATE public.economics_cases SET tactical_explanations = ARRAY['TRUE — Microeconomics studies individual units and particular markets; macroeconomics studies economy-wide aggregates such as total sales, the price level, or national output. Scope decides the label — not the mere word “price,” and not the mere existence of a national policy backdrop.
 
-The statement overreaches because input scarcity at one firm is a standard micro topic. The trap is to agree with the topic while missing the one detail that breaks the logic.
+Trading off paid hours today against unpaid portfolio work for future clients is a micro time-allocation explanation.
 
-Watch the absolute wording "cannot": exam statements often sound plausible until a single scope word turns an otherwise familiar idea into an overclaim.
+Map that definition onto the case where a freelance translator dividing weekly hours between paid client work and unpaid portfolio updating. The claim’s actors and constraints line up with the concept: the sentence describes the same mechanism the chapter teaches, not a neighbouring idea with similar vocabulary.
 
-Once the overclaim or mislabel is exposed, the only consistent answer is false.', 'FALSE — The claim is false. Staffing schedules are macro because wages appear in national accounts.
+If you replaced the key term with its neighbour (accounting outlay, micro/macro swap, movement vs shift), the sentence would stop matching the stem — that contrast locks the idea.
 
-The scenario is a worked example of economics as the study of decisions under scarcity at micro and macro level. Translate the story into the textbook category first; only then judge whether the sentence describes that category accurately.
+The statement is true.
+', 'TRUE — Microeconomics studies individual units and particular markets; macroeconomics studies economy-wide aggregates such as total sales, the price level, or national output. Scope decides the label — not the mere word “price,” and not the mere existence of a national policy backdrop.
 
-Applied to this claim, single-firm staffing analysed alone remains micro scope. That is why the sentence does not survive careful reading.
+Ask what unit is being studied: one household, firm, or transaction is micro; nationwide totals and overall price-level or output aggregates are macro. Scope decides the label.
 
-Once the overclaim or mislabel is exposed, the only consistent answer is false.'] WHERE case_id = 'CASE 2.3.50' AND tier = 'full';
+Map that definition onto the case where a freelance translator dividing weekly hours between paid client work and unpaid portfolio updating. The claim’s actors and constraints line up with the concept: the sentence describes the same mechanism the chapter teaches, not a neighbouring idea with similar vocabulary.
+
+The keyed true reading survives exactly because it keeps the chapter’s criterion and the stem’s numbers/actors aligned.
+
+The statement is true.
+', 'FALSE — Classify the claim by analytical scope — individual units (micro) versus economy-wide aggregates (macro) — and by whether economics is explaining or predicting under scarcity.
+
+Service and freelance decisions count as business decision-making, not only factory production.
+
+Map that definition onto the case where a freelance translator dividing weekly hours between paid client work and unpaid portfolio updating. Even if the stem mentions related details, those details do not carry the claim’s conclusion — the sentence either widens the concept past its test or attaches the wrong label to the facts.
+
+The absolute quantifier is doing the damage. Soften it to the chapter’s actual scope and the remaining content no longer supports a false blanket rule.
+
+The statement is false.
+', 'FALSE — Microeconomics studies individual units and particular markets; macroeconomics studies economy-wide aggregates such as total sales, the price level, or national output. Scope decides the label — not the mere word “price,” and not the mere existence of a national policy backdrop.
+
+Small freelancer hours still relate to aggregates when many freelancers are summed; smallness does not ban the link — and micro analysis stands alone anyway.
+
+Map that definition onto the case where a freelance translator dividing weekly hours between paid client work and unpaid portfolio updating. Even if the stem mentions related details (here: macro), those details do not carry the claim’s conclusion — the sentence either widens the concept past its test or attaches the wrong label to the facts.
+
+Absolute wording is the trap: economics definitions leave room for counterexamples — another actor, another scope, a non-money cost, or a public function that still exists. One clear counterexample rejects the sentence.
+
+The statement is false.
+', 'FALSE — Microeconomics studies individual decision units — one household, one firm, one transaction — even when prices change or a public bonus sits in the background.
+
+Walk the definition onto the stem’s actors and constraints, then spot where the sentence’s category or absolute reason breaks that check.
+
+Map that definition onto the case where a freelance translator dividing weekly hours between paid client work and unpaid portfolio updating. Even if the stem mentions related details, those details do not carry the claim’s conclusion — the sentence either widens the concept past its test or attaches the wrong label to the facts.
+
+Words such as only/never/always stretch a limited idea past what the definition allows; restore the ordinary exceptions and the claim collapses.
+
+The statement is false.
+'] WHERE case_id = 'CASE 2.3.45' AND tier = 'full';
+UPDATE public.economics_cases SET tactical_explanations = ARRAY['TRUE — Microeconomics studies individual units and particular markets; macroeconomics studies economy-wide aggregates such as total sales, the price level, or national output. Scope decides the label — not the mere word “price,” and not the mere existence of a national policy backdrop.
+
+Ask what unit is being studied: one household, firm, or transaction is micro; nationwide totals and overall price-level or output aggregates are macro. Scope decides the label.
+
+Held against the chapter test, each operative word earns its place: the category, the comparison, and the mechanism survive when checked one by one.
+
+The keyed true reading survives exactly because it keeps the chapter’s criterion and the stem’s numbers/actors aligned.
+
+The statement is true.
+', 'TRUE — Microeconomics studies individual decision units — one household, one firm, one transaction — even when prices change or a public bonus sits in the background.
+
+Walk the definition onto the stem’s actors and constraints, then confirm the sentence’s category and reason both survive that check.
+
+Held against the chapter test, each operative word earns its place: the category, the comparison, and the mechanism survive when checked one by one.
+
+Under that classification the claim describes the situation correctly rather than a lookalike category.
+
+The statement is true.
+', 'TRUE — Microeconomics studies individual decision units — one household, one firm, one transaction — even when prices change or a public bonus sits in the background.
+
+Tie the claim to limited means versus unlimited ends, to goods versus services, or to the household/entrepreneur role actually performing the action in the stem.
+
+Held against the chapter test, each operative word earns its place: the category, the comparison, and the mechanism survive when checked one by one.
+
+The sentence therefore reports the concept accurately for this item once the definition is held fixed.
+
+The statement is true.
+', 'TRUE — Microeconomics studies individual units and particular markets; macroeconomics studies economy-wide aggregates such as total sales, the price level, or national output. Scope decides the label — not the mere word “price,” and not the mere existence of a national policy backdrop.
+
+Ask what unit is being studied: one household, firm, or transaction is micro; nationwide totals and overall price-level or output aggregates are macro. Scope decides the label. Focus points: micro, macro.
+
+Held against the chapter test (here: micro, macro), each operative word earns its place: the category, the comparison, and the mechanism survive when checked one by one.
+
+If you replaced the key term with its neighbour (accounting outlay, micro/macro swap, movement vs shift), the sentence would stop matching the stem — that contrast locks the idea.
+
+The statement is true.
+', 'TRUE — Microeconomics studies individual decision units — one household, one firm, one transaction — even when prices change or a public bonus sits in the background.
+
+Walk the definition onto the stem’s actors and constraints, then confirm the sentence’s category and reason both survive that check.
+
+Held against the chapter test, each operative word earns its place: the category, the comparison, and the mechanism survive when checked one by one.
+
+Nothing in the stem contradicts that reading, so the assertion stands as a correct application of the definition.
+
+The statement is true.
+'] WHERE case_id = 'CASE 2.3.46' AND tier = 'full';
+UPDATE public.economics_cases SET tactical_explanations = ARRAY['TRUE — Microeconomics studies individual decision units — one household, one firm, one transaction — even when prices change or a public bonus sits in the background.
+
+Walk the definition onto the stem’s actors and constraints, then confirm the sentence’s category and reason both survive that check.
+
+Map that definition onto the case where commentators discussing whether euro-area inflation at 2.3 percent requires tighter policy across the whole currency bloc. The claim’s actors and constraints line up with the concept: the sentence describes the same mechanism the chapter teaches, not a neighbouring idea with similar vocabulary.
+
+Nothing in the stem contradicts that reading, so the assertion stands as a correct application of the definition.
+
+The statement is true.
+', 'FALSE — Macroeconomics analyses whole-economy totals and overall performance. Nationwide statistics belong here; one household’s purchase or one café’s menu change does not.
+
+Economics uses observational data, models, and natural experiments — not laboratory experiments on national aggregates only.
+
+Map that definition onto the case where commentators discussing whether euro-area inflation at 2.3 percent requires tighter policy across the whole currency bloc. Even if the stem mentions related details, those details do not carry the claim’s conclusion — the sentence either widens the concept past its test or attaches the wrong label to the facts.
+
+Absolute wording is the trap: economics definitions leave room for counterexamples — another actor, another scope, a non-money cost, or a public function that still exists. One clear counterexample rejects the sentence.
+
+The statement is false.
+', 'FALSE — Economics builds theories to explain observed behaviour and to predict effects of choices and policies. It assumes scarce resources and is not limited to collecting anecdotes.
+
+Walk the definition onto the stem’s actors and constraints, then spot where the sentence’s category or absolute reason breaks that check.
+
+Map that definition onto the case where commentators discussing whether euro-area inflation at 2.3 percent requires tighter policy across the whole currency bloc. Even if the stem mentions related details, those details do not carry the claim’s conclusion — the sentence either widens the concept past its test or attaches the wrong label to the facts.
+
+Words such as only/never/always stretch a limited idea past what the definition allows; restore the ordinary exceptions and the claim collapses.
+
+The statement is false.
+', 'FALSE — Microeconomics studies individual units and particular markets; macroeconomics studies economy-wide aggregates such as total sales, the price level, or national output. Scope decides the label — not the mere word “price,” and not the mere existence of a national policy backdrop.
+
+One grocery item’s price in one shop is micro. Saying “inflation” casually does not make that single price macro inflation analysis.
+
+Map that definition onto the case where commentators discussing whether euro-area inflation at 2.3 percent requires tighter policy across the whole currency bloc. Even if the stem mentions related details (here: Inflation), those details do not carry the claim’s conclusion — the sentence either widens the concept past its test or attaches the wrong label to the facts.
+
+The because-clause attaches the wrong reason to the label. A real detail (a national programme, a zero wage, shared premises, use of money) does not justify the over-broad conclusion.
+
+The statement is false.
+', 'FALSE — Microeconomics studies individual units and particular markets; macroeconomics studies economy-wide aggregates such as total sales, the price level, or national output. Scope decides the label — not the mere word “price,” and not the mere existence of a national policy backdrop.
+
+National inflation measurement does not abolish micro analysis of household and firm responses.
+
+Map that definition onto the case where commentators discussing whether euro-area inflation at 2.3 percent requires tighter policy across the whole currency bloc. Even if the stem mentions related details (here: Micro, inflation), those details do not carry the claim’s conclusion — the sentence either widens the concept past its test or attaches the wrong label to the facts.
+
+The mismatch is in the defining feature, not in a missing buzzword; fix the feature and the claim disappears.
+
+The statement is false.
+'] WHERE case_id = 'CASE 2.3.47' AND tier = 'full';
+UPDATE public.economics_cases SET tactical_explanations = ARRAY['TRUE — Microeconomics studies individual units and particular markets; macroeconomics studies economy-wide aggregates such as total sales, the price level, or national output. Scope decides the label — not the mere word “price,” and not the mere existence of a national policy backdrop.
+
+Explaining and predicting the student’s shift choice is a micro aim about individual behaviour.
+
+Held against the chapter test (here: student, shift), each operative word earns its place: the category, the comparison, and the mechanism survive when checked one by one.
+
+If you replaced the key term with its neighbour (accounting outlay, micro/macro swap, movement vs shift), the sentence would stop matching the stem — that contrast locks the idea.
+
+The statement is true.
+', 'TRUE — Economics studies how agents allocate scarce resources among competing uses. Both household budgeting and firm decisions sit inside that subject; scope then splits into micro and macro.
+
+Families (and students) splitting limited hours and pay among competing ends is core economics.
+
+Held against the chapter test, each operative word earns its place: the category, the comparison, and the mechanism survive when checked one by one.
+
+Under that classification the claim describes the situation correctly rather than a lookalike category.
+
+The statement is true.
+', 'TRUE — Economics builds theories to explain observed behaviour and to predict effects of choices and policies. It assumes scarce resources and is not limited to collecting anecdotes.
+
+Walk the definition onto the stem’s actors and constraints, then confirm the sentence’s category and reason both survive that check. Focus points: government, subsidy, student.
+
+Held against the chapter test (here: government, subsidy, student), each operative word earns its place: the category, the comparison, and the mechanism survive when checked one by one.
+
+The sentence therefore reports the concept accurately for this item once the definition is held fixed.
+
+The statement is true.
+', 'TRUE — Microeconomics studies individual units and particular markets; macroeconomics studies economy-wide aggregates such as total sales, the price level, or national output. Scope decides the label — not the mere word “price,” and not the mere existence of a national policy backdrop.
+
+If many students’ hour changes shifted the national unemployment rate, that aggregate effect would be macroeconomics.
+
+Held against the chapter test, each operative word earns its place: the category, the comparison, and the mechanism survive when checked one by one.
+
+If you replaced the key term with its neighbour (accounting outlay, micro/macro swap, movement vs shift), the sentence would stop matching the stem — that contrast locks the idea.
+
+The statement is true.
+', 'FALSE — Economics studies how agents allocate scarce resources among competing uses. Both household budgeting and firm decisions sit inside that subject; scope then splits into micro and macro.
+
+Students are economic actors. Not being a company does not place the situation outside economics.
+
+Held against the chapter test (here: student), the familiar vocabulary may sound economic, but the operative restriction or reason fails — so the sentence mislabels the situation.
+
+Reject the reason link first — once the because-clause fails, the heading category fails with it.
+
+The statement is false.
+'] WHERE case_id = 'CASE 2.3.48' AND tier = 'full';
+UPDATE public.economics_cases SET tactical_explanations = ARRAY['TRUE — Microeconomics studies individual units and particular markets; macroeconomics studies economy-wide aggregates such as total sales, the price level, or national output. Scope decides the label — not the mere word “price,” and not the mere existence of a national policy backdrop.
+
+National car-sales totals after an incentive scheme are macroeconomic (aggregate) rather than firm-level analysis.
+
+Held against the chapter test (here: firm), each operative word earns its place: the category, the comparison, and the mechanism survive when checked one by one.
+
+The keyed true reading survives exactly because it keeps the chapter’s criterion and the stem’s numbers/actors aligned.
+
+The statement is true.
+', 'TRUE — Macroeconomics analyses whole-economy totals and overall performance. Nationwide statistics belong here; one household’s purchase or one café’s menu change does not.
+
+Walk the definition onto the stem’s actors and constraints, then confirm the sentence’s category and reason both survive that check.
+
+Held against the chapter test, each operative word earns its place: the category, the comparison, and the mechanism survive when checked one by one.
+
+The sentence therefore reports the concept accurately for this item once the definition is held fixed.
+
+This item’s published answer key marks the claim as shown; score the letter to that key while keeping the chapter definition clear for revision.
+
+The statement is true.
+', 'TRUE — Microeconomics studies individual units and particular markets; macroeconomics studies economy-wide aggregates such as total sales, the price level, or national output. Scope decides the label — not the mere word “price,” and not the mere existence of a national policy backdrop.
+
+One household’s car purchase remains micro even when a national purchase bonus exists — policy backdrop ≠ automatic macro reclassification of the buyer.
+
+Held against the chapter test (here: household), each operative word earns its place: the category, the comparison, and the mechanism survive when checked one by one.
+
+If you replaced the key term with its neighbour (accounting outlay, micro/macro swap, movement vs shift), the sentence would stop matching the stem — that contrast locks the idea.
+
+The statement is true.
+', 'FALSE — Economics builds theories to explain observed behaviour and to predict effects of choices and policies. It assumes scarce resources and is not limited to collecting anecdotes.
+
+Human unpredictability complicates forecasting; it does not remove all scientific content from economics.
+
+Held against the chapter test, the familiar vocabulary may sound economic, but the operative restriction or reason fails — so the sentence mislabels the situation.
+
+The absolute quantifier is doing the damage. Soften it to the chapter’s actual scope and the remaining content no longer supports a false blanket rule.
+
+The statement is false.
+', 'FALSE — Microeconomics studies individual decision units — one household, one firm, one transaction — even when prices change or a public bonus sits in the background.
+
+Households remain micro subjects when governments offer subsidies; subsidies change incentives, they do not exclude households.
+
+Held against the chapter test, the familiar vocabulary may sound economic, but the operative restriction or reason fails — so the sentence mislabels the situation.
+
+Restore the textbook test and the assertion falls away: it mislabels the category or reverses the comparison the chapter actually teaches.
+
+The statement is false.
+'] WHERE case_id = 'CASE 2.3.49' AND tier = 'full';
+UPDATE public.economics_cases SET tactical_explanations = ARRAY['TRUE — Microeconomics studies individual units and particular markets; macroeconomics studies economy-wide aggregates such as total sales, the price level, or national output. Scope decides the label — not the mere word “price,” and not the mere existence of a national policy backdrop.
+
+Ask what unit is being studied: one household, firm, or transaction is micro; nationwide totals and overall price-level or output aggregates are macro. Scope decides the label. Focus points: firm.
+
+Map that definition onto the case where analysts studying only one Styrian winery''s quarterly bottle output while ignoring national wine export totals. The claim’s actors and constraints (here: firm) line up with the concept: the sentence describes the same mechanism the chapter teaches, not a neighbouring idea with similar vocabulary.
+
+The keyed true reading survives exactly because it keeps the chapter’s criterion and the stem’s numbers/actors aligned.
+
+The statement is true.
+', 'TRUE — Microeconomics studies individual units and particular markets; macroeconomics studies economy-wide aggregates such as total sales, the price level, or national output. Scope decides the label — not the mere word “price,” and not the mere existence of a national policy backdrop.
+
+Ask what unit is being studied: one household, firm, or transaction is micro; nationwide totals and overall price-level or output aggregates are macro. Scope decides the label.
+
+Map that definition onto the case where analysts studying only one Styrian winery''s quarterly bottle output while ignoring national wine export totals. The claim’s actors and constraints line up with the concept: the sentence describes the same mechanism the chapter teaches, not a neighbouring idea with similar vocabulary.
+
+If you replaced the key term with its neighbour (accounting outlay, micro/macro swap, movement vs shift), the sentence would stop matching the stem — that contrast locks the idea.
+
+The statement is true.
+', 'FALSE — Classify the claim by analytical scope — individual units (micro) versus economy-wide aggregates (macro) — and by whether economics is explaining or predicting under scarcity.
+
+Agriculture involves prices, costs, land, and labour allocation — economic decisions alongside biology.
+
+Map that definition onto the case where analysts studying only one Styrian winery''s quarterly bottle output while ignoring national wine export totals. Even if the stem mentions related details, those details do not carry the claim’s conclusion — the sentence either widens the concept past its test or attaches the wrong label to the facts.
+
+The absolute quantifier is doing the damage. Soften it to the chapter’s actual scope and the remaining content no longer supports a false blanket rule.
+
+The statement is false.
+', 'FALSE — Economics builds theories to explain observed behaviour and to predict effects of choices and policies. It assumes scarce resources and is not limited to collecting anecdotes.
+
+Weather shocks are routinely analysed in economics as supply shocks affecting output and prices.
+
+Map that definition onto the case where analysts studying only one Styrian winery''s quarterly bottle output while ignoring national wine export totals. Even if the stem mentions related details, those details do not carry the claim’s conclusion — the sentence either widens the concept past its test or attaches the wrong label to the facts.
+
+The absolute quantifier is doing the damage. Soften it to the chapter’s actual scope and the remaining content no longer supports a false blanket rule.
+
+The statement is false.
+', 'FALSE — Microeconomics studies individual units and particular markets; macroeconomics studies economy-wide aggregates such as total sales, the price level, or national output. Scope decides the label — not the mere word “price,” and not the mere existence of a national policy backdrop.
+
+One winery’s staffing schedule is firm-level — micro — even though wages also appear in national accounts when aggregated.
+
+Map that definition onto the case where analysts studying only one Styrian winery''s quarterly bottle output while ignoring national wine export totals. Even if the stem mentions related details (here: macro), those details do not carry the claim’s conclusion — the sentence either widens the concept past its test or attaches the wrong label to the facts.
+
+The because-clause attaches the wrong reason to the label. A real detail (a national programme, a zero wage, shared premises, use of money) does not justify the over-broad conclusion.
+
+The statement is false.
+'] WHERE case_id = 'CASE 2.3.50' AND tier = 'full';

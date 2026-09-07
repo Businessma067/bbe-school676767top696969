@@ -2,7 +2,6 @@ import { recordTaskAttempt } from "@/lib/user-progress";
 import { createFileRoute } from "@tanstack/react-router";
 import { startTransition, useEffect, useMemo, useRef, useState, type ReactNode } from "react";
 import { useServerFn } from "@tanstack/react-start";
-import { supabase } from "@/integrations/supabase/client";
 import { cn } from "@/lib/utils";
 import { explainCase } from "@/lib/explain-case.functions";
 import { Check, X, ChevronLeft, ChevronRight, ChevronDown, Loader2, RotateCcw, BookOpen, AlertTriangle, NotebookPen, Settings2, Lock, PanelLeftClose, PanelLeftOpen } from "lucide-react";
@@ -30,7 +29,7 @@ import {
   PracticeChaptersShell,
 } from "@/components/PracticeMobileChapters";
 import { useSetPracticeCase } from "@/lib/practice-case-context";
-import { economicsDifficultyFor } from "@/data/economics-difficulty-by-case-id";
+import { loadAllEconomicsChapterTasks, type EconomicsTask } from "@/data/economics-chapters";
 
 // Full course: everything is unlocked. No free-tier gating, no phantom locked rows.
 const phantomCountFor = (_ch: number): number => 0;
@@ -55,28 +54,7 @@ export const Route = createFileRoute("/products/full-course-economics")({
   },
 });
 
-type Case = {
-  id: string;
-  case_id: string;
-  title: string;
-  context: string;
-  statements: string[];
-  answer_key: boolean[];
-  tactical_explanations: string[];
-  difficulty_level: string;
-  sort_order: number;
-  /** Legacy Full Course bank uses chapter ids ("2"…"5"). Book-subtopic ids ("2.1") are Custom Mock Builder only. */
-  subsection?: string;
-};
-
-/** Main Full Course list: chapter-level rows only (e.g. "2"), not mock-builder subtopics ("2.1"). */
-function isMainFullCourseCase(c: { subsection?: string; case_id: string }): boolean {
-  if (c.subsection != null && c.subsection !== "") {
-    return /^\d+$/.test(c.subsection);
-  }
-  // Fallback if subsection missing: exclude CASE 2.1.01-style ids (three numeric parts).
-  return !/^CASE\s+\d+\.\d+\.\d+/i.test(c.case_id);
-}
+type Case = EconomicsTask;
 
 const CHAPTERS: { num: number; title: string }[] = [
   { num: 2, title: "Basic Economic Concepts" },
@@ -86,7 +64,8 @@ const CHAPTERS: { num: number; title: string }[] = [
   { num: 6, title: "Accounting – keeping record of business transactions" },
 ];
 
-const STORAGE_KEY = "bbe.economics.progress.v1";
+/** v2: progress keys are stable case_id values from local JSON banks (not Supabase UUIDs). */
+const STORAGE_KEY = "bbe.economics.progress.v2";
 
 type Progress = {
   passed: string[];   // case ids fully correct
@@ -154,21 +133,13 @@ function EconomicsTasks() {
   useEffect(() => {
     let cancel = false;
     (async () => {
-      const { data, error } = await supabase
-        .from("economics_cases")
-        .select("id, case_id, title, context, statements, answer_key, tactical_explanations, difficulty_level, sort_order, subsection")
-        .eq("tier", "full")
-        .in("subsection", CHAPTERS.map((c) => String(c.num)))
-        .order("sort_order", { ascending: true })
-        .limit(5000);
-      if (cancel) return;
-      if (error) setError(error.message);
-      else {
-        const rows = ((data as Case[]) ?? []).filter(isMainFullCourseCase).map((c) => ({
-          ...c,
-          difficulty_level: economicsDifficultyFor(c.case_id, c.difficulty_level),
-        }));
-        setCases(rows);
+      try {
+        const loaded = await loadAllEconomicsChapterTasks();
+        if (cancel) return;
+        setCases(loaded.flatMap(({ tasks }) => tasks));
+      } catch (err) {
+        if (cancel) return;
+        setError(err instanceof Error ? err.message : "Failed to load economics cases.");
       }
     })();
     return () => { cancel = true; };

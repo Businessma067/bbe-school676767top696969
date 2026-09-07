@@ -1,812 +1,1143 @@
 -- Update expanded explanations for 4.6-part1 (25 cases).
 -- Safe to re-run: only updates tactical_explanations.
 
-UPDATE public.economics_cases SET tactical_explanations = ARRAY['TRUE — On the Fuhrmann definition used in the entrance exam, the sentence is correct. Capital expenditures on assets used over many years should normally be matched with long-term finance.
+UPDATE public.economics_cases SET tactical_explanations = ARRAY['TRUE — Capital expenditure on assets used over many years should normally be matched with long-term finance so repayment horizons align with the asset''s service life. Funding a multi-year plant from rolling weekly supplier credit mismatches term and use.
 
-This statement draws on choosing an appropriate source of finance. Treat it as a checklist against the core concept named in the stem, not as a general opinion about business.
+Long-lived asset spending calls for long-term finance so repayment timing aligns with the period of use.
 
-In this setting, long-lived asset spending calls for long-term finance so repayment timing aligns with the period of use. The wording matches the textbook relationship without adding extra conditions.
+So the sentence is a correct description of the mechanism at work in this case.
 
-The reasoning chain is complete, so mark the statement true.', 'FALSE — On the Fuhrmann definition used in the entrance exam, the sentence is false. The only relevant criterion when choosing a source of finance is the absolute interest rate, so matching term to asset life and gearing risk can be ignored.
+The statement is true.
+', 'FALSE — High gearing is a risk warning; it does not automatically forbid every short-term trade-credit purchase of materials, nor is interest the only criterion when choosing finance. Matching asset life and overall risk still matter.
 
-The scenario is a worked example of choosing an appropriate source of finance. Translate the story into the textbook category first; only then judge whether the sentence describes that category accurately.
+Interest matters, but it is not the sole cost or sole criterion. Issuance and administration costs, gearing risk, and intended use / term matching also shape the choice between loans, share issues, and short-term credit.
 
-Applied to this claim, cost matters, but intended use and current gearing also shape the appropriate choice. That is why the sentence does not survive careful reading.
+Cost matters, but intended use and current gearing also shape the appropriate choice.
 
-The statement sounds plausible but fails on precision, so it is false.', 'FALSE — Evaluated against the textbook standard, this assertion is false. Interest is the sole cost element businesses must consider when comparing loans with share issues.
+So the sentence does not survive once the correct mechanism is applied.
 
-Here you must apply ideas from choosing an appropriate source of finance to a concrete situation rather than recite a definition from memory. Ownership, customer type, stakeholder group, or country of production usually decides the verdict.
+The statement is false.
+', 'FALSE — Interest matters, but it is not the sole cost or sole criterion. Issuance and administration costs, gearing risk, and intended use / term matching also shape the choice between loans, share issues, and short-term credit.
 
-The statement overreaches because share and bond issues carry administration costs that must be weighed against borrowing. The trap is to agree with the topic while missing the one detail that breaks the logic.
+Share and bond issues carry administration costs that must be weighed against borrowing.
 
-Once the overclaim or mislabel is exposed, the only consistent answer is false.', 'FALSE — This statement is false. High gearing automatically disqualifies a firm from using any form of short-term trade credit for materials.
+Apply the chapter mechanism to the exact wording: name the ownership form or finance source correctly, then check whether the claimed tax, liability, repayment, or matching consequence actually follows from that category.
 
-The topic is choosing an appropriate source of finance, but the decisive skill here is reading quantifiers. Words such as never, always, only, or all turn a generally true idea into a claim that can be rejected by one routine counterexample.
+That misclassification is enough to reject the claim.
 
-The statement overreaches because high gearing complicates further borrowing but does not ban routine short-term credit for revenue spending. The trap is to agree with the topic while missing the one detail that breaks the logic.
+The statement is false.
+', 'FALSE — Trade credit must be repaid within the agreed period. It is typically short-term purchase-cycle finance, not long-term debt, and it does not erase the proprietor''s liability or the need to manage cash-flow timing.
 
-Watch the absolute wording "automatically": exam statements often sound plausible until a single scope word turns an otherwise familiar idea into an overclaim.
+High gearing is a risk warning; it does not automatically forbid every short-term trade-credit purchase of materials, nor is interest the only criterion when choosing finance. Matching asset life and overall risk still matter.
 
-Once the overclaim or mislabel is exposed, the only consistent answer is false.', 'FALSE — The claim is false. Capital expenditure on a warehouse extension should be funded from weekly supplier credit without regard to asset life.
+High gearing complicates further borrowing but does not ban routine short-term credit for revenue spending.
 
-This statement draws on choosing an appropriate source of finance. Treat it as a checklist against the core concept named in the stem, not as a general opinion about business.
+On that basis the assertion attaches the wrong legal, tax, liability, or finance label.
 
-Applied to this claim, long-lived assets require long-term finance; short-term supplier credit mismatches repayment to asset life. That is why the sentence does not survive careful reading.
+The statement is false.
+', 'FALSE — Funding long-lived assets from short-term supplier credit ignores matching: the asset still binds capital for years while the credit may fall due in days or weeks, creating refinancing pressure.
 
-Because the decisive detail is wrong, mark the statement false.'] WHERE case_id = 'CASE 4.6.01' AND tier = 'full';
-UPDATE public.economics_cases SET tactical_explanations = ARRAY['FALSE — On the Fuhrmann definition used in the entrance exam, the sentence is false. Revenue expenditures on production inputs should always be matched with a twenty-year mortgage loan.
+Long-lived assets require long-term finance; short-term supplier credit mismatches repayment to asset life.
 
-Although the subject matter is choosing an appropriate source of finance, this is really a logic check on overstatement. Non-profit surpluses, mixed economies, and partial market failure are classic cases where absolute wording fails.
+Finance choice weighs cost (interest and issuance costs), gearing risk (heavy loan capital raises fixed burdens and insolvency exposure), and matching (long-lived assets with long-term finance; short-cycle materials with short-term credit). No single criterion replaces the others.
 
-Applied to this claim, long-term debt would mismatch repayment to the brief consumption period of materials. That is why the sentence does not survive careful reading.
+On that basis the assertion attaches the wrong legal, tax, liability, or finance label.
 
-Watch the absolute wording "always": exam statements often sound plausible until a single scope word turns an otherwise familiar idea into an overclaim.
+The statement is false.
+'] WHERE case_id = 'CASE 4.6.01' AND tier = 'full';
+UPDATE public.economics_cases SET tactical_explanations = ARRAY['FALSE — Pledging collateral secures the lender; it does not waive all interest, exclude the loan from liabilities, incorporate the firm, or remove unlimited liability for any remaining shortfall. Short-term supplier trade credit also does not typically demand a mortgage over the home.
 
-Because the decisive detail is wrong, mark the statement false.', 'FALSE — On the Fuhrmann definition used in the entrance exam, the sentence is false. Administration costs of issuing bonds are irrelevant when comparing finance sources for any project.
+Long-term debt would mismatch repayment to the brief consumption period of materials.
 
-The scenario is a worked example of choosing an appropriate source of finance. Translate the story into the textbook category first; only then judge whether the sentence describes that category accurately.
+On that basis the assertion attaches the wrong legal, tax, liability, or finance label.
 
-Applied to this claim, bond issuance costs are part of the cost criterion in finance selection. That is why the sentence does not survive careful reading.
+The statement is false.
+', 'FALSE — Bonds issued to investors are a form of long-term external debt finance: the company borrows from bondholders and owes interest and principal according to the bond terms, distinct from equity share capital.
 
-The statement sounds plausible but fails on precision, so it is false.', 'TRUE — The claim is correct. Revenue expenditures such as buying materials for current production can safely be financed by short-term sources.
+Bond issuance costs are part of the cost criterion in finance selection.
 
-This statement draws on choosing an appropriate source of finance. Treat it as a checklist against the core concept named in the stem, not as a general opinion about business.
+Apply the chapter mechanism to the exact wording: name the ownership form or finance source correctly, then check whether the claimed tax, liability, repayment, or matching consequence actually follows from that category.
 
-In this setting, short-cycle materials need short-term credit such as overdrafts or trade credit. The wording matches the textbook relationship without adding extra conditions.
+That misclassification is enough to reject the claim.
 
-Every part of the claim aligns with the standard concept, so the statement stands.', 'FALSE — On the Fuhrmann definition used in the entrance exam, the sentence is false. A business never needs to consider its current gearing when choosing how to pay for weekly raw materials.
+The statement is false.
+', 'TRUE — Revenue spending and routine materials purchases are typically suited to short-term credit (trade credit, overdrafts) because the cash cycle is short. Matching still applies — just toward shorter instruments.
 
-Although the subject matter is choosing an appropriate source of finance, this is really a logic check on overstatement. Non-profit surpluses, mixed economies, and partial market failure are classic cases where absolute wording fails.
+Short-cycle materials need short-term credit such as overdrafts or trade credit.
 
-Applied to this claim, gearing affects overall finance strategy even when short-term credit suits revenue spending. That is why the sentence does not survive careful reading.
+Apply the chapter mechanism to the exact wording: name the ownership form or finance source correctly, then check whether the claimed tax, liability, repayment, or matching consequence actually follows from that category.
 
-Watch the absolute wording "never": exam statements often sound plausible until a single scope word turns an otherwise familiar idea into an overclaim.
+That is why the claim stands for this form of business or source of finance.
 
-The statement sounds plausible but fails on precision, so it is false.', 'FALSE — Evaluated against the textbook standard, this assertion is false. Revenue expenditure on materials consumed in current production must be financed exclusively through share issues.
+The statement is true.
+', 'FALSE — High gearing is a risk warning; it does not automatically forbid every short-term trade-credit purchase of materials, nor is interest the only criterion when choosing finance. Matching asset life and overall risk still matter.
 
-The topic is choosing an appropriate source of finance, but the decisive skill here is reading quantifiers. Words such as never, always, only, or all turn a generally true idea into a claim that can be rejected by one routine counterexample.
+Gearing affects overall finance strategy even when short-term credit suits revenue spending.
 
-The statement overreaches because materials for current production suit short-term sources, not equity issues for long-lived capital. The trap is to agree with the topic while missing the one detail that breaks the logic.
+Finance choice weighs cost (interest and issuance costs), gearing risk (heavy loan capital raises fixed burdens and insolvency exposure), and matching (long-lived assets with long-term finance; short-cycle materials with short-term credit). No single criterion replaces the others.
 
-Watch the absolute wording "exclusively": exam statements often sound plausible until a single scope word turns an otherwise familiar idea into an overclaim.
+That misclassification is enough to reject the claim.
 
-The statement sounds plausible but fails on precision, so it is false.'] WHERE case_id = 'CASE 4.6.02' AND tier = 'full';
-UPDATE public.economics_cases SET tactical_explanations = ARRAY['FALSE — Evaluated against the textbook standard, this assertion is false. A highly geared business will always obtain new loans at the same interest rate as a low-debt rival.
+The statement is false.
+', 'FALSE — Revenue spending and routine materials purchases are typically suited to short-term credit (trade credit, overdrafts) because the cash cycle is short. Matching still applies — just toward shorter instruments.
 
-The topic is choosing an appropriate source of finance, but the decisive skill here is reading quantifiers. Words such as never, always, only, or all turn a generally true idea into a claim that can be rejected by one routine counterexample.
+Materials for current production suit short-term sources, not equity issues for long-lived capital.
 
-The statement overreaches because lenders often charge higher interest or demand collateral when loan capital is already high. The trap is to agree with the topic while missing the one detail that breaks the logic.
+Apply the chapter mechanism to the exact wording: name the ownership form or finance source correctly, then check whether the claimed tax, liability, repayment, or matching consequence actually follows from that category.
 
-Watch the absolute wording "always": exam statements often sound plausible until a single scope word turns an otherwise familiar idea into an overclaim.
+On that basis the assertion attaches the wrong legal, tax, liability, or finance label.
 
-Once the overclaim or mislabel is exposed, the only consistent answer is false.', 'FALSE — On the Fuhrmann definition used in the entrance exam, the sentence is false. Intended use of funds is unrelated to whether finance should be short-term or long-term.
+The statement is false.
+'] WHERE case_id = 'CASE 4.6.02' AND tier = 'full';
+UPDATE public.economics_cases SET tactical_explanations = ARRAY['FALSE — Keep the three choice criteria in view: cost (interest and issuance costs), gearing/insolvency risk, and matching finance term to the life of the asset or spending.
 
-This statement draws on choosing an appropriate source of finance. Treat it as a checklist against the core concept named in the stem, not as a general opinion about business.
+Lenders often charge higher interest or demand collateral when loan capital is already high.
 
-Applied to this claim, intended use is a core criterion linking expenditure type to finance maturity. That is why the sentence does not survive careful reading.
+Apply the chapter mechanism to the exact wording: name the ownership form or finance source correctly, then check whether the claimed tax, liability, repayment, or matching consequence actually follows from that category.
 
-The statement sounds plausible but fails on precision, so it is false.', 'FALSE — This statement is false. The absolute interest rate is the only criterion when choosing finance, so matching term to asset life is unnecessary.
+That misclassification is enough to reject the claim.
 
-Here you must apply ideas from choosing an appropriate source of finance to a concrete situation rather than recite a definition from memory. Ownership, customer type, stakeholder group, or country of production usually decides the verdict.
+The statement is false.
+', 'FALSE — Keep the three choice criteria in view: cost (interest and issuance costs), gearing/insolvency risk, and matching finance term to the life of the asset or spending.
 
-The statement overreaches because intended use and gearing also matter; interest alone does not govern finance choice. The trap is to agree with the topic while missing the one detail that breaks the logic.
+Intended use is a core criterion linking expenditure type to finance maturity.
 
-The statement sounds plausible but fails on precision, so it is false.', 'TRUE — On the Fuhrmann definition used in the entrance exam, the sentence is correct. A highly geared business may struggle to raise further credit except at higher interest rates and/or against additional collateral.
+Apply the chapter mechanism to the exact wording: name the ownership form or finance source correctly, then check whether the claimed tax, liability, repayment, or matching consequence actually follows from that category.
 
-This statement draws on choosing an appropriate source of finance. Treat it as a checklist against the core concept named in the stem, not as a general opinion about business.
+On that basis the assertion attaches the wrong legal, tax, liability, or finance label.
 
-In this setting, high gearing makes lenders cautious and often raises the price or collateral demand of new debt. The wording matches the textbook relationship without adding extra conditions.
+The statement is false.
+', 'FALSE — Interest matters, but it is not the sole cost or sole criterion. Issuance and administration costs, gearing risk, and intended use / term matching also shape the choice between loans, share issues, and short-term credit.
 
-The reasoning chain is complete, so mark the statement true.', 'FALSE — This statement is false. High gearing means a firm should ignore issuance administration costs when comparing share finance with bonds.
+Intended use and gearing also matter; interest alone does not govern finance choice.
 
-Here you must apply ideas from choosing an appropriate source of finance to a concrete situation rather than recite a definition from memory. Ownership, customer type, stakeholder group, or country of production usually decides the verdict.
+Finance choice weighs cost (interest and issuance costs), gearing risk (heavy loan capital raises fixed burdens and insolvency exposure), and matching (long-lived assets with long-term finance; short-cycle materials with short-term credit). No single criterion replaces the others.
 
-The statement overreaches because administration costs for shares and bonds remain part of the cost criterion regardless of gearing. The trap is to agree with the topic while missing the one detail that breaks the logic.
+That misclassification is enough to reject the claim.
 
-Because the decisive detail is wrong, mark the statement false.'] WHERE case_id = 'CASE 4.6.03' AND tier = 'full';
-UPDATE public.economics_cases SET tactical_explanations = ARRAY['TRUE — This statement is correct. When loan capital is already high, internal funds or new equity investors can reduce insolvency risk relative to taking another large loan.
+The statement is false.
+', 'TRUE — Long-term lenders commonly require pledgeable assets — often land and property via a mortgage — as security. Collateral backs repayment; the loan remains a liability. If private property was pledged and the business cannot repay, that property remains at stake.
 
-Here you must apply ideas from choosing an appropriate source of finance to a concrete situation rather than recite a definition from memory. Ownership, customer type, stakeholder group, or country of production usually decides the verdict.
+High gearing makes lenders cautious and often raises the price or collateral demand of new debt.
 
-Applied carefully, retained earnings or investors avoid adding further mandatory repayment obligations. Nothing in the sentence stretches the concept beyond its standard use.
+On that basis the assertion matches the ownership or finance rule being tested.
 
-The reasoning chain is complete, so mark the statement true.', 'FALSE — On the Fuhrmann definition used in the entrance exam, the sentence is false. Only the intended use of funds counts as a cost when choosing between overdraft and trade credit.
+The statement is true.
+', 'FALSE — Bonds issued to investors are a form of long-term external debt finance: the company borrows from bondholders and owes interest and principal according to the bond terms, distinct from equity share capital.
 
-The scenario is a worked example of choosing an appropriate source of finance. Translate the story into the textbook category first; only then judge whether the sentence describes that category accurately.
+High gearing is a risk warning; it does not automatically forbid every short-term trade-credit purchase of materials, nor is interest the only criterion when choosing finance. Matching asset life and overall risk still matter.
 
-Applied to this claim, intended use is a separate criterion from cost; both matter alongside financial position. That is why the sentence does not survive careful reading.
+Administration costs for shares and bonds remain part of the cost criterion regardless of gearing.
 
-The statement sounds plausible but fails on precision, so it is false.', 'FALSE — Evaluated against the textbook standard, this assertion is false. A highly geared business can ignore its financial situation if the interest rate on a new loan appears low.
+That misclassification is enough to reject the claim.
 
-Here you must apply ideas from choosing an appropriate source of finance to a concrete situation rather than recite a definition from memory. Ownership, customer type, stakeholder group, or country of production usually decides the verdict.
+The statement is false.
+'] WHERE case_id = 'CASE 4.6.03' AND tier = 'full';
+UPDATE public.economics_cases SET tactical_explanations = ARRAY['TRUE — Gearing reflects how heavily the firm relies on loan capital relative to equity. High gearing raises fixed interest burdens and insolvency risk if revenues dip, and can make new lenders reluctant to extend further credit.
 
-The statement overreaches because low quoted interest does not override high gearing and repayment risk in finance choice. The trap is to agree with the topic while missing the one detail that breaks the logic.
+Retained earnings or investors avoid adding further mandatory repayment obligations.
 
-Once the overclaim or mislabel is exposed, the only consistent answer is false.', 'TRUE — This statement is correct. Administration costs incurred when issuing shares or bonds form part of the cost comparison among finance sources.
+Internal finance recycles surplus already inside the firm (retained profit, asset sales). External finance comes from outside providers (owner start-up savings in this framework, investors, banks, suppliers on credit). Where the cash sits in the bank account does not decide the label.
 
-Here you must apply ideas from choosing an appropriate source of finance to a concrete situation rather than recite a definition from memory. Ownership, customer type, stakeholder group, or country of production usually decides the verdict.
+So the sentence is a correct description of the mechanism at work in this case.
 
-Applied carefully, issuance expenses belong to the cost criterion alongside interest on loans and credit. Nothing in the sentence stretches the concept beyond its standard use.
+The statement is true.
+', 'FALSE — Trade credit must be repaid within the agreed period. It is typically short-term purchase-cycle finance, not long-term debt, and it does not erase the proprietor''s liability or the need to manage cash-flow timing.
 
-Every part of the claim aligns with the standard concept, so the statement stands.', 'FALSE — The claim is false. Capital expenditure on a ten-year production line should be funded from a thirty-day trade credit facility alone.
+An overdraft does not incorporate the firm, create limited liability, or cease to be a liability because it is short-term. Interest is not charged as if a positive credit balance were borrowed.
 
-This statement draws on choosing an appropriate source of finance. Treat it as a checklist against the core concept named in the stem, not as a general opinion about business.
+Intended use is a separate criterion from cost; both matter alongside financial position.
 
-Applied to this claim, long-lived capital projects need long-term finance, not brief supplier credit. That is why the sentence does not survive careful reading.
+On that basis the assertion attaches the wrong legal, tax, liability, or finance label.
 
-The statement sounds plausible but fails on precision, so it is false.'] WHERE case_id = 'CASE 4.6.04' AND tier = 'full';
-UPDATE public.economics_cases SET tactical_explanations = ARRAY['TRUE — The claim is correct. When several sources of finance are available, a business will most probably weigh costs, intended use, and current financial situation.
+The statement is false.
+', 'FALSE — Keep the three choice criteria in view: cost (interest and issuance costs), gearing/insolvency risk, and matching finance term to the life of the asset or spending.
 
-The scenario is a worked example of choosing an appropriate source of finance. Translate the story into the textbook category first; only then judge whether the sentence describes that category accurately.
+Low quoted interest does not override high gearing and repayment risk in finance choice.
 
-In this setting, cost, use, and financial position are the main decision criteria in the chapter framework. The wording matches the textbook relationship without adding extra conditions.
+Apply the chapter mechanism to the exact wording: name the ownership form or finance source correctly, then check whether the claimed tax, liability, repayment, or matching consequence actually follows from that category.
 
-Every part of the claim aligns with the standard concept, so the statement stands.', 'FALSE — On the Fuhrmann definition used in the entrance exam, the sentence is false. Equity finance carries no cost element because issuing shares never involves administration expenses.
+On that basis the assertion attaches the wrong legal, tax, liability, or finance label.
 
-Although the subject matter is choosing an appropriate source of finance, this is really a logic check on overstatement. Non-profit surpluses, mixed economies, and partial market failure are classic cases where absolute wording fails.
+The statement is false.
+', 'TRUE — Bonds issued to investors are a form of long-term external debt finance: the company borrows from bondholders and owes interest and principal according to the bond terms, distinct from equity share capital.
 
-Applied to this claim, share issuance incurs administration costs that must be weighed against loans. That is why the sentence does not survive careful reading.
+Issuance expenses belong to the cost criterion alongside interest on loans and credit.
 
-Watch the absolute wording "never": exam statements often sound plausible until a single scope word turns an otherwise familiar idea into an overclaim.
+Apply the chapter mechanism to the exact wording: name the ownership form or finance source correctly, then check whether the claimed tax, liability, repayment, or matching consequence actually follows from that category.
 
-Because the decisive detail is wrong, mark the statement false.', 'TRUE — On the Fuhrmann definition used in the entrance exam, the sentence is correct. Capital expenditure on equipment with a long useful life should be matched with long-term finance.
+So the sentence is a correct description of the mechanism at work in this case.
 
-This statement draws on choosing an appropriate source of finance. Treat it as a checklist against the core concept named in the stem, not as a general opinion about business.
+The statement is true.
+', 'FALSE — Trade credit must be repaid within the agreed period. It is typically short-term purchase-cycle finance, not long-term debt, and it does not erase the proprietor''s liability or the need to manage cash-flow timing.
 
-In this setting, multi-year assets call for finance whose maturity aligns with years of service. The wording matches the textbook relationship without adding extra conditions.
+Funding long-lived assets from short-term supplier credit ignores matching: the asset still binds capital for years while the credit may fall due in days or weeks, creating refinancing pressure.
 
-No qualifying word breaks the definition or scenario, so the answer is true.', 'TRUE — On the Fuhrmann definition used in the entrance exam, the sentence is correct. A business already carrying a high proportion of loan capital may have difficulties obtaining more credit from lenders.
+Long-lived capital projects need long-term finance, not brief supplier credit.
 
-This statement draws on choosing an appropriate source of finance. Treat it as a checklist against the core concept named in the stem, not as a general opinion about business.
+On that basis the assertion attaches the wrong legal, tax, liability, or finance label.
 
-In this setting, heavy existing debt makes lenders cautious about extending additional credit. The wording matches the textbook relationship without adding extra conditions.
+The statement is false.
+'] WHERE case_id = 'CASE 4.6.04' AND tier = 'full';
+UPDATE public.economics_cases SET tactical_explanations = ARRAY['TRUE — Cost, use, and financial position are the main decision criteria in the chapter framework.
 
-Every part of the claim aligns with the standard concept, so the statement stands.', 'TRUE — On the Fuhrmann definition used in the entrance exam, the sentence is correct. Lenders may offer further funds to a highly geared business only at a higher interest rate and/or if collateral can be provided.
+Applied to the bakery (or other named sole trader) in the stem, the same ownership and finance rules hold: one owner-manager, personal tax and liability, and ordinary credit instruments as personal obligations.
 
-The scenario is a worked example of choosing an appropriate source of finance. Translate the story into the textbook category first; only then judge whether the sentence describes that category accurately.
+Apply the chapter mechanism to the exact wording: name the ownership form or finance source correctly, then check whether the claimed tax, liability, repayment, or matching consequence actually follows from that category.
 
-In this setting, stricter pricing or collateral often accompanies new loans to highly geared borrowers. The wording matches the textbook relationship without adding extra conditions.
+On that basis the assertion matches the ownership or finance rule being tested.
 
-Every part of the claim aligns with the standard concept, so the statement stands.'] WHERE case_id = 'CASE 4.6.05' AND tier = 'full';
-UPDATE public.economics_cases SET tactical_explanations = ARRAY['FALSE — On the Fuhrmann definition used in the entrance exam, the sentence is false. Capital expenditure and revenue expenditure both require identical long-term mortgage funding regardless of use.
+The statement is true.
+', 'FALSE — Share issuance incurs administration costs that must be weighed against loans.
 
-This statement draws on choosing an appropriate source of finance. Treat it as a checklist against the core concept named in the stem, not as a general opinion about business.
+Applied to the bakery (or other named sole trader) in the stem, the same ownership and finance rules hold: one owner-manager, personal tax and liability, and ordinary credit instruments as personal obligations.
 
-Applied to this claim, expenditure type determines appropriate finance maturity; they are not interchangeable. That is why the sentence does not survive careful reading.
+Equity finance creates ownership claims (share capital, retained earnings); debt finance creates repayment obligations (overdrafts, trade credit, loans, bonds). Internal versus external further asks whether funds came from inside surplus or from outside providers.
 
-Because the decisive detail is wrong, mark the statement false.', 'TRUE — The claim is correct. Such a business should rather try to use internal sources of finance and/or find investors willing to provide funds.
+So the sentence does not survive once the correct mechanism is applied.
 
-This statement draws on choosing an appropriate source of finance. Treat it as a checklist against the core concept named in the stem, not as a general opinion about business.
+The statement is false.
+', 'TRUE — Capital expenditure on assets used over many years should normally be matched with long-term finance so repayment horizons align with the asset''s service life. Funding a multi-year plant from rolling weekly supplier credit mismatches term and use.
 
-In this setting, retained earnings or investor funds avoid adding further mandatory repayment obligations. The wording matches the textbook relationship without adding extra conditions.
+Multi-year assets call for finance whose maturity aligns with years of service.
 
-The reasoning chain is complete, so mark the statement true.', 'TRUE — This statement is correct. Because loans must be repaid, a high proportion of loan capital can increase the risk of insolvency.
+Applied to the bakery (or other named sole trader) in the stem, the same ownership and finance rules hold: one owner-manager, personal tax and liability, and ordinary credit instruments as personal obligations.
 
-Here you must apply ideas from choosing an appropriate source of finance to a concrete situation rather than recite a definition from memory. Ownership, customer type, stakeholder group, or country of production usually decides the verdict.
+On that basis the assertion matches the ownership or finance rule being tested.
 
-Applied carefully, repayment pressure on existing and new loans raises insolvency risk when debt is already high. Nothing in the sentence stretches the concept beyond its standard use.
+The statement is true.
+', 'TRUE — Heavy existing debt makes lenders cautious about extending additional credit.
 
-Every part of the claim aligns with the standard concept, so the statement stands.', 'TRUE — On the Fuhrmann definition used in the entrance exam, the sentence is correct. Costs of finance include interest payments on loans and credit as well as administration costs for issuing shares or bonds.
+Applied to the bakery (or other named sole trader) in the stem, the same ownership and finance rules hold: one owner-manager, personal tax and liability, and ordinary credit instruments as personal obligations.
 
-This statement draws on choosing an appropriate source of finance. Treat it as a checklist against the core concept named in the stem, not as a general opinion about business.
+Apply the chapter mechanism to the exact wording: name the ownership form or finance source correctly, then check whether the claimed tax, liability, repayment, or matching consequence actually follows from that category.
 
-In this setting, the cost criterion covers both interest and issuance-related administration expenses. The wording matches the textbook relationship without adding extra conditions.
+That is why the claim stands for this form of business or source of finance.
 
-The reasoning chain is complete, so mark the statement true.', 'TRUE — The claim is correct. Financial funds used for capital expenditures on long-lived assets require long-term sources of finance.
+The statement is true.
+', 'TRUE — Long-term lenders commonly require pledgeable assets — often land and property via a mortgage — as security. Collateral backs repayment; the loan remains a liability. If private property was pledged and the business cannot repay, that property remains at stake.
 
-This statement draws on choosing an appropriate source of finance. Treat it as a checklist against the core concept named in the stem, not as a general opinion about business.
+Interest matters, but it is not the sole cost or sole criterion. Issuance and administration costs, gearing risk, and intended use / term matching also shape the choice between loans, share issues, and short-term credit.
 
-In this setting, asset purchases with extended useful lives call for comparably long finance. The wording matches the textbook relationship without adding extra conditions.
+Stricter pricing or collateral often accompanies new loans to highly geared borrowers.
 
-Every part of the claim aligns with the standard concept, so the statement stands.'] WHERE case_id = 'CASE 4.6.06' AND tier = 'full';
-UPDATE public.economics_cases SET tactical_explanations = ARRAY['TRUE — This statement is correct. Matching long-term finance to capital expenditure spreads repayment over the years the asset generates benefits.
+Applied to the bakery (or other named sole trader) in the stem, the same ownership and finance rules hold: one owner-manager, personal tax and liability, and ordinary credit instruments as personal obligations.
 
-The relevant theory comes from choosing an appropriate source of finance. Identify which definition or relationship the sentence is trying to test before deciding true or false.
+On that basis the assertion matches the ownership or finance rule being tested.
 
-Applied carefully, aligning maturity to asset life reduces cash-flow strain from premature principal repayment. Nothing in the sentence stretches the concept beyond its standard use.
+The statement is true.
+'] WHERE case_id = 'CASE 4.6.05' AND tier = 'full';
+UPDATE public.economics_cases SET tactical_explanations = ARRAY['FALSE — Pledging collateral secures the lender; it does not waive all interest, exclude the loan from liabilities, incorporate the firm, or remove unlimited liability for any remaining shortfall. Short-term supplier trade credit also does not typically demand a mortgage over the home.
 
-The reasoning chain is complete, so mark the statement true.', 'TRUE — Evaluated against the textbook standard, this assertion is correct. A high geared business may obtain further credit only if it can offer collateral acceptable to lenders.
+Funding long-lived assets from short-term supplier credit ignores matching: the asset still binds capital for years while the credit may fall due in days or weeks, creating refinancing pressure.
 
-Here you must apply ideas from choosing an appropriate source of finance to a concrete situation rather than recite a definition from memory. Ownership, customer type, stakeholder group, or country of production usually decides the verdict.
+Expenditure type determines appropriate finance maturity; they are not interchangeable.
 
-Applied carefully, collateral often becomes a condition for new credit when existing loan capital is substantial. Nothing in the sentence stretches the concept beyond its standard use.
+So the sentence does not survive once the correct mechanism is applied.
 
-Every part of the claim aligns with the standard concept, so the statement stands.', 'TRUE — This statement is correct. Investors or business partners may supply funds when additional loans would worsen insolvency risk.
+The statement is false.
+', 'TRUE — Keep the three choice criteria in view: cost (interest and issuance costs), gearing/insolvency risk, and matching finance term to the life of the asset or spending.
 
-Here you must apply ideas from choosing an appropriate source of finance to a concrete situation rather than recite a definition from memory. Ownership, customer type, stakeholder group, or country of production usually decides the verdict.
+Retained earnings or investor funds avoid adding further mandatory repayment obligations.
 
-Applied carefully, equity-type injections reduce reliance on repayable debt when gearing is already elevated. Nothing in the sentence stretches the concept beyond its standard use.
+Internal finance recycles surplus already inside the firm (retained profit, asset sales). External finance comes from outside providers (owner start-up savings in this framework, investors, banks, suppliers on credit). Where the cash sits in the bank account does not decide the label.
 
-The reasoning chain is complete, so mark the statement true.', 'FALSE — Evaluated against the textbook standard, this assertion is false. Interest on loans and credit is excluded from the cost criterion when comparing finance sources.
+So the sentence is a correct description of the mechanism at work in this case.
 
-Here you must apply ideas from choosing an appropriate source of finance to a concrete situation rather than recite a definition from memory. Ownership, customer type, stakeholder group, or country of production usually decides the verdict.
+The statement is true.
+', 'TRUE — Keep the three choice criteria in view: cost (interest and issuance costs), gearing/insolvency risk, and matching finance term to the life of the asset or spending.
 
-The statement overreaches because interest on loans and credit is explicitly part of the cost criterion. The trap is to agree with the topic while missing the one detail that breaks the logic.
+Repayment pressure on existing and new loans raises insolvency risk when debt is already high.
 
-The statement sounds plausible but fails on precision, so it is false.', 'FALSE — Evaluated against the textbook standard, this assertion is false. Funding a new factory building exclusively through supplier credit for raw materials matches finance maturity correctly.
+Apply the chapter mechanism to the exact wording: name the ownership form or finance source correctly, then check whether the claimed tax, liability, repayment, or matching consequence actually follows from that category.
 
-The topic is choosing an appropriate source of finance, but the decisive skill here is reading quantifiers. Words such as never, always, only, or all turn a generally true idea into a claim that can be rejected by one routine counterexample.
+That is why the claim stands for this form of business or source of finance.
 
-The statement overreaches because factory construction is capital expenditure needing long-term finance, not material trade credit. The trap is to agree with the topic while missing the one detail that breaks the logic.
+The statement is true.
+', 'TRUE — Bonds issued to investors are a form of long-term external debt finance: the company borrows from bondholders and owes interest and principal according to the bond terms, distinct from equity share capital.
 
-Watch the absolute wording "exclusively": exam statements often sound plausible until a single scope word turns an otherwise familiar idea into an overclaim.
+The cost criterion covers both interest and issuance-related administration expenses.
 
-Once the overclaim or mislabel is exposed, the only consistent answer is false.'] WHERE case_id = 'CASE 4.6.07' AND tier = 'full';
-UPDATE public.economics_cases SET tactical_explanations = ARRAY['TRUE — The claim is correct. Interest is one cost element, but intended use and gearing also guide finance selection.
+Apply the chapter mechanism to the exact wording: name the ownership form or finance source correctly, then check whether the claimed tax, liability, repayment, or matching consequence actually follows from that category.
 
-This statement draws on choosing an appropriate source of finance. Treat it as a checklist against the core concept named in the stem, not as a general opinion about business.
+So the sentence is a correct description of the mechanism at work in this case.
 
-In this setting, cost, use, and financial situation are joint criteria, not interest alone. The wording matches the textbook relationship without adding extra conditions.
+The statement is true.
+', 'TRUE — Capital expenditure on assets used over many years should normally be matched with long-term finance so repayment horizons align with the asset''s service life. Funding a multi-year plant from rolling weekly supplier credit mismatches term and use.
 
-No qualifying word breaks the definition or scenario, so the answer is true.', 'TRUE — Evaluated against the textbook standard, this assertion is correct. Businesses with several finance options most probably decide using costs, intended use, and current financial situation.
+Asset purchases with extended useful lives call for comparably long finance.
 
-The relevant theory comes from choosing an appropriate source of finance. Identify which definition or relationship the sentence is trying to test before deciding true or false.
+Finance choice weighs cost (interest and issuance costs), gearing risk (heavy loan capital raises fixed burdens and insolvency exposure), and matching (long-lived assets with long-term finance; short-cycle materials with short-term credit). No single criterion replaces the others.
 
-Applied carefully, all three criteria—cost, use, and position—frame realistic finance choice. Nothing in the sentence stretches the concept beyond its standard use.
+On that basis the assertion matches the ownership or finance rule being tested.
 
-No qualifying word breaks the definition or scenario, so the answer is true.', 'TRUE — On the Fuhrmann definition used in the entrance exam, the sentence is correct. Purchasing assets that will be used over some or even many years counts as capital expenditure requiring long-term finance.
+The statement is true.
+'] WHERE case_id = 'CASE 4.6.06' AND tier = 'full';
+UPDATE public.economics_cases SET tactical_explanations = ARRAY['TRUE — Capital expenditure on assets used over many years should normally be matched with long-term finance so repayment horizons align with the asset''s service life. Funding a multi-year plant from rolling weekly supplier credit mismatches term and use.
 
-This statement draws on choosing an appropriate source of finance. Treat it as a checklist against the core concept named in the stem, not as a general opinion about business.
+Aligning maturity to asset life reduces cash-flow strain from premature principal repayment.
 
-In this setting, asset spending with multi-year benefits should be funded over a comparable long horizon. The wording matches the textbook relationship without adding extra conditions.
+That is why the claim stands for this form of business or source of finance.
 
-No qualifying word breaks the definition or scenario, so the answer is true.', 'TRUE — The claim is correct. Interest payments on loans and credit are part of the cost criterion when choosing among finance sources.
+The statement is true.
+', 'TRUE — Long-term lenders commonly require pledgeable assets — often land and property via a mortgage — as security. Collateral backs repayment; the loan remains a liability. If private property was pledged and the business cannot repay, that property remains at stake.
 
-The scenario is a worked example of choosing an appropriate source of finance. Translate the story into the textbook category first; only then judge whether the sentence describes that category accurately.
+Collateral often becomes a condition for new credit when existing loan capital is substantial.
 
-In this setting, borrowing costs include interest, which businesses weigh when selecting finance. The wording matches the textbook relationship without adding extra conditions.
+On that basis the assertion matches the ownership or finance rule being tested.
 
-No qualifying word breaks the definition or scenario, so the answer is true.', 'FALSE — Evaluated against the textbook standard, this assertion is false. Administration costs of share issues are counted as intended use rather than as finance costs.
+The statement is true.
+', 'TRUE — Keep the three choice criteria in view: cost (interest and issuance costs), gearing/insolvency risk, and matching finance term to the life of the asset or spending.
 
-This tests discrimination within choosing an appropriate source of finance: local versus international scope, equity versus debt, product versus market orientation, and similar pairs.
+Equity-type injections reduce reliance on repayable debt when gearing is already elevated.
 
-The statement overreaches because issuance costs are part of the cost criterion, not a description of fund use. The trap is to agree with the topic while missing the one detail that breaks the logic.
+Apply the chapter mechanism to the exact wording: name the ownership form or finance source correctly, then check whether the claimed tax, liability, repayment, or matching consequence actually follows from that category.
 
-If two ideas are related, the statement may be false because it attributes the feature to the wrong member of the pair.
+On that basis the assertion matches the ownership or finance rule being tested.
 
-Once the overclaim or mislabel is exposed, the only consistent answer is false.'] WHERE case_id = 'CASE 4.6.08' AND tier = 'full';
-UPDATE public.economics_cases SET tactical_explanations = ARRAY['TRUE — This statement is correct. Buying material that is used for production within the operating cycle is revenue expenditure that can safely be financed by short-term sources.
+The statement is true.
+', 'FALSE — Keep the three choice criteria in view: cost (interest and issuance costs), gearing/insolvency risk, and matching finance term to the life of the asset or spending. Interest on loans and credit is explicitly part of the cost criterion.
 
-The relevant theory comes from choosing an appropriate source of finance. Identify which definition or relationship the sentence is trying to test before deciding true or false.
+Apply the chapter mechanism to the exact wording: name the ownership form or finance source correctly, then check whether the claimed tax, liability, repayment, or matching consequence actually follows from that category.
 
-Applied carefully, short-cycle inputs align with short-term finance such as trade credit or overdrafts. Nothing in the sentence stretches the concept beyond its standard use.
+That misclassification is enough to reject the claim.
 
-Every part of the claim aligns with the standard concept, so the statement stands.', 'TRUE — This statement is correct. Bond issues carry both coupon interest and upfront flotation expenses that enter the finance comparison.
+The statement is false.
+', 'FALSE — Keep the three choice criteria in view: cost (interest and issuance costs), gearing/insolvency risk, and matching finance term to the life of the asset or spending.
 
-The relevant theory comes from choosing an appropriate source of finance. Identify which definition or relationship the sentence is trying to test before deciding true or false.
+Factory construction is capital expenditure needing long-term finance, not material trade credit.
 
-Applied carefully, bond finance price reflects interest plus related administration costs. Nothing in the sentence stretches the concept beyond its standard use.
+Apply the chapter mechanism to the exact wording: name the ownership form or finance source correctly, then check whether the claimed tax, liability, repayment, or matching consequence actually follows from that category.
 
-Every part of the claim aligns with the standard concept, so the statement stands.', 'TRUE — Evaluated against the textbook standard, this assertion is correct. Purchasing components for assembly within the month is revenue expenditure that can safely be financed by short-term sources.
+So the sentence does not survive once the correct mechanism is applied.
 
-The relevant theory comes from choosing an appropriate source of finance. Identify which definition or relationship the sentence is trying to test before deciding true or false.
+The statement is false.
+'] WHERE case_id = 'CASE 4.6.07' AND tier = 'full';
+UPDATE public.economics_cases SET tactical_explanations = ARRAY['TRUE — Gearing reflects how heavily the firm relies on loan capital relative to equity. High gearing raises fixed interest burdens and insolvency risk if revenues dip, and can make new lenders reluctant to extend further credit.
 
-Applied carefully, short-cycle production inputs align with brief credit facilities. Nothing in the sentence stretches the concept beyond its standard use.
+Cost, use, and financial situation are joint criteria, not interest alone.
 
-The reasoning chain is complete, so mark the statement true.', 'TRUE — The claim is correct. Lenders may be reluctant to offer more funds to a business that already has a high proportion of loan capital.
+Finance choice weighs cost (interest and issuance costs), gearing risk (heavy loan capital raises fixed burdens and insolvency exposure), and matching (long-lived assets with long-term finance; short-cycle materials with short-term credit). No single criterion replaces the others.
 
-This statement draws on choosing an appropriate source of finance. Treat it as a checklist against the core concept named in the stem, not as a general opinion about business.
+So the sentence is a correct description of the mechanism at work in this case.
 
-In this setting, heavy debt loads make creditors cautious about increasing exposure. The wording matches the textbook relationship without adding extra conditions.
+The statement is true.
+', 'TRUE — Keep the three choice criteria in view: cost (interest and issuance costs), gearing/insolvency risk, and matching finance term to the life of the asset or spending.
 
-Every part of the claim aligns with the standard concept, so the statement stands.', 'TRUE — On the Fuhrmann definition used in the entrance exam, the sentence is correct. Further credit to a highly geared business may be available only at a higher interest rate.
+All three criteria—cost, use, and position—frame realistic finance choice.
 
-This statement draws on choosing an appropriate source of finance. Treat it as a checklist against the core concept named in the stem, not as a general opinion about business.
+Apply the chapter mechanism to the exact wording: name the ownership form or finance source correctly, then check whether the claimed tax, liability, repayment, or matching consequence actually follows from that category.
 
-In this setting, risk pricing often raises interest when gearing is already elevated. The wording matches the textbook relationship without adding extra conditions.
+On that basis the assertion matches the ownership or finance rule being tested.
 
-No qualifying word breaks the definition or scenario, so the answer is true.'] WHERE case_id = 'CASE 4.6.09' AND tier = 'full';
-UPDATE public.economics_cases SET tactical_explanations = ARRAY['TRUE — Evaluated against the textbook standard, this assertion is correct. Internal finance or investor funds avoid creating new mandatory debt repayment schedules.
+The statement is true.
+', 'TRUE — Capital expenditure on assets used over many years should normally be matched with long-term finance so repayment horizons align with the asset''s service life. Funding a multi-year plant from rolling weekly supplier credit mismatches term and use.
 
-The relevant theory comes from choosing an appropriate source of finance. Identify which definition or relationship the sentence is trying to test before deciding true or false.
+Asset spending with multi-year benefits should be funded over a comparable long horizon.
 
-Applied carefully, equity and retained earnings do not carry the same contractual repayment burden as loans. Nothing in the sentence stretches the concept beyond its standard use.
+Finance choice weighs cost (interest and issuance costs), gearing risk (heavy loan capital raises fixed burdens and insolvency exposure), and matching (long-lived assets with long-term finance; short-cycle materials with short-term credit). No single criterion replaces the others.
 
-Every part of the claim aligns with the standard concept, so the statement stands.', 'TRUE — The claim is correct. Interest on loans and credit is a cost element businesses compare when choosing finance sources.
+On that basis the assertion matches the ownership or finance rule being tested.
 
-The scenario is a worked example of choosing an appropriate source of finance. Translate the story into the textbook category first; only then judge whether the sentence describes that category accurately.
+The statement is true.
+', 'TRUE — Keep the three choice criteria in view: cost (interest and issuance costs), gearing/insolvency risk, and matching finance term to the life of the asset or spending.
 
-In this setting, borrowing carries explicit interest that forms part of the cost criterion. The wording matches the textbook relationship without adding extra conditions.
+Borrowing costs include interest, which businesses weigh when selecting finance.
 
-Every part of the claim aligns with the standard concept, so the statement stands.', 'TRUE — Evaluated against the textbook standard, this assertion is correct. Intended use of funds still matters even when one source appears cheaper on interest alone.
+Apply the chapter mechanism to the exact wording: name the ownership form or finance source correctly, then check whether the claimed tax, liability, repayment, or matching consequence actually follows from that category.
 
-Here you must apply ideas from choosing an appropriate source of finance to a concrete situation rather than recite a definition from memory. Ownership, customer type, stakeholder group, or country of production usually decides the verdict.
+On that basis the assertion matches the ownership or finance rule being tested.
 
-Applied carefully, matching finance term to expenditure type remains necessary regardless of nominal interest. Nothing in the sentence stretches the concept beyond its standard use.
+The statement is true.
+', 'FALSE — Keep the three choice criteria in view: cost (interest and issuance costs), gearing/insolvency risk, and matching finance term to the life of the asset or spending.
 
-No qualifying word breaks the definition or scenario, so the answer is true.', 'FALSE — The claim is false. When loan capital is already high, a business must reject internal funds and investors because only debt can fund expansion.
+Issuance costs are part of the cost criterion, not a description of fund use.
 
-The scenario is a worked example of choosing an appropriate source of finance. Translate the story into the textbook category first; only then judge whether the sentence describes that category accurately.
+Apply the chapter mechanism to the exact wording: name the ownership form or finance source correctly, then check whether the claimed tax, liability, repayment, or matching consequence actually follows from that category.
 
-Applied to this claim, internal funds and investors are recommended when further loans would worsen repayment pressure. That is why the sentence does not survive careful reading.
+So the sentence does not survive once the correct mechanism is applied.
 
-Once the overclaim or mislabel is exposed, the only consistent answer is false.', 'TRUE — Evaluated against the textbook standard, this assertion is correct. Capital expenditure on machinery, plant, or vehicles used over many years requires long-term finance.
+The statement is false.
+'] WHERE case_id = 'CASE 4.6.08' AND tier = 'full';
+UPDATE public.economics_cases SET tactical_explanations = ARRAY['TRUE — Revenue spending and routine materials purchases are typically suited to short-term credit (trade credit, overdrafts) because the cash cycle is short. Matching still applies — just toward shorter instruments.
 
-The relevant theory comes from choosing an appropriate source of finance. Identify which definition or relationship the sentence is trying to test before deciding true or false.
+Short-cycle inputs align with short-term finance such as trade credit or overdrafts.
 
-Applied carefully, long-lived assets should be funded over a horizon comparable to their useful life. Nothing in the sentence stretches the concept beyond its standard use.
+Apply the chapter mechanism to the exact wording: name the ownership form or finance source correctly, then check whether the claimed tax, liability, repayment, or matching consequence actually follows from that category.
 
-No qualifying word breaks the definition or scenario, so the answer is true.'] WHERE case_id = 'CASE 4.6.10' AND tier = 'full';
-UPDATE public.economics_cases SET tactical_explanations = ARRAY['TRUE — The claim is correct. Financial funds for capital expenditures require long-term finance because assets will be used over years.
+That is why the claim stands for this form of business or source of finance.
 
-The scenario is a worked example of choosing an appropriate source of finance. Translate the story into the textbook category first; only then judge whether the sentence describes that category accurately.
+The statement is true.
+', 'TRUE — Bonds issued to investors are a form of long-term external debt finance: the company borrows from bondholders and owes interest and principal according to the bond terms, distinct from equity share capital.
 
-In this setting, multi-year asset spending calls for long-term funding to match benefit periods. The wording matches the textbook relationship without adding extra conditions.
+Bond finance price reflects interest plus related administration costs.
 
-The reasoning chain is complete, so mark the statement true.', 'TRUE — The claim is correct. Costs comprise interest on loans and administration costs of issuing shares or bonds.
+Apply the chapter mechanism to the exact wording: name the ownership form or finance source correctly, then check whether the claimed tax, liability, repayment, or matching consequence actually follows from that category.
 
-This statement draws on choosing an appropriate source of finance. Treat it as a checklist against the core concept named in the stem, not as a general opinion about business.
+On that basis the assertion matches the ownership or finance rule being tested.
 
-In this setting, both interest and issuance costs belong in the cost comparison. The wording matches the textbook relationship without adding extra conditions.
+The statement is true.
+', 'TRUE — Revenue spending and routine materials purchases are typically suited to short-term credit (trade credit, overdrafts) because the cash cycle is short. Matching still applies — just toward shorter instruments.
 
-Every part of the claim aligns with the standard concept, so the statement stands.', 'FALSE — The claim is false. Choosing finance based only on the headline interest rate ignores intended use and current gearing.
+Short-cycle production inputs align with brief credit facilities.
 
-This statement draws on choosing an appropriate source of finance. Treat it as a checklist against the core concept named in the stem, not as a general opinion about business.
+Apply the chapter mechanism to the exact wording: name the ownership form or finance source correctly, then check whether the claimed tax, liability, repayment, or matching consequence actually follows from that category.
 
-Applied to this claim, cost is one of three criteria; use and financial situation also govern choice. That is why the sentence does not survive careful reading.
+So the sentence is a correct description of the mechanism at work in this case.
 
-Once the overclaim or mislabel is exposed, the only consistent answer is false.', 'FALSE — This statement is false. Issuing bonds instead of bank loans eliminates repayment risk for a highly geared business.
+The statement is true.
+', 'TRUE — Keep the three choice criteria in view: cost (interest and issuance costs), gearing/insolvency risk, and matching finance term to the life of the asset or spending.
 
-This tests discrimination within choosing an appropriate source of finance: local versus international scope, equity versus debt, product versus market orientation, and similar pairs.
+Heavy debt loads make creditors cautious about increasing exposure.
 
-The statement overreaches because bonds are still loan capital that must be repaid with interest; gearing risk remains. The trap is to agree with the topic while missing the one detail that breaks the logic.
+Apply the chapter mechanism to the exact wording: name the ownership form or finance source correctly, then check whether the claimed tax, liability, repayment, or matching consequence actually follows from that category.
 
-If two ideas are related, the statement may be false because it attributes the feature to the wrong member of the pair.
+So the sentence is a correct description of the mechanism at work in this case.
 
-Because the decisive detail is wrong, mark the statement false.', 'FALSE — This statement is false. Revenue expenditure on production inputs should always be matched with bond finance maturing in twenty years.
+The statement is true.
+', 'TRUE — Interest matters, but it is not the sole cost or sole criterion. Issuance and administration costs, gearing risk, and intended use / term matching also shape the choice between loans, share issues, and short-term credit.
 
-The topic is choosing an appropriate source of finance, but the decisive skill here is reading quantifiers. Words such as never, always, only, or all turn a generally true idea into a claim that can be rejected by one routine counterexample.
+Risk pricing often raises interest when gearing is already elevated.
 
-The statement overreaches because short-cycle materials suit short-term finance, not long-term bond funding. The trap is to agree with the topic while missing the one detail that breaks the logic.
+Apply the chapter mechanism to the exact wording: name the ownership form or finance source correctly, then check whether the claimed tax, liability, repayment, or matching consequence actually follows from that category.
 
-Watch the absolute wording "always": exam statements often sound plausible until a single scope word turns an otherwise familiar idea into an overclaim.
+That is why the claim stands for this form of business or source of finance.
 
-Once the overclaim or mislabel is exposed, the only consistent answer is false.'] WHERE case_id = 'CASE 4.6.11' AND tier = 'full';
-UPDATE public.economics_cases SET tactical_explanations = ARRAY['TRUE — The claim is correct. Such a firm should rather try internal sources of finance and/or investors willing to provide funds.
+The statement is true.
+'] WHERE case_id = 'CASE 4.6.09' AND tier = 'full';
+UPDATE public.economics_cases SET tactical_explanations = ARRAY['TRUE — Keep the three choice criteria in view: cost (interest and issuance costs), gearing/insolvency risk, and matching finance term to the life of the asset or spending.
 
-This statement draws on choosing an appropriate source of finance. Treat it as a checklist against the core concept named in the stem, not as a general opinion about business.
+Equity and retained earnings do not carry the same contractual repayment burden as loans.
 
-In this setting, retained earnings and investor funds reduce reliance on new repayable debt when gearing is high. The wording matches the textbook relationship without adding extra conditions.
+Internal finance recycles surplus already inside the firm (retained profit, asset sales). External finance comes from outside providers (owner start-up savings in this framework, investors, banks, suppliers on credit). Where the cash sits in the bank account does not decide the label.
 
-No qualifying word breaks the definition or scenario, so the answer is true.', 'TRUE — Evaluated against the textbook standard, this assertion is correct. A business with a high proportion of loan capital may have difficulties obtaining more credit.
+So the sentence is a correct description of the mechanism at work in this case.
 
-The relevant theory comes from choosing an appropriate source of finance. Identify which definition or relationship the sentence is trying to test before deciding true or false.
+The statement is true.
+', 'TRUE — Keep the three choice criteria in view: cost (interest and issuance costs), gearing/insolvency risk, and matching finance term to the life of the asset or spending.
 
-Applied carefully, heavy loan capital makes additional borrowing harder to secure. Nothing in the sentence stretches the concept beyond its standard use.
+Borrowing carries explicit interest that forms part of the cost criterion.
 
-Every part of the claim aligns with the standard concept, so the statement stands.', 'TRUE — On the Fuhrmann definition used in the entrance exam, the sentence is correct. Administration costs incurred when issuing shares or bonds should be weighed alongside interest on loans.
+Apply the chapter mechanism to the exact wording: name the ownership form or finance source correctly, then check whether the claimed tax, liability, repayment, or matching consequence actually follows from that category.
 
-The scenario is a worked example of choosing an appropriate source of finance. Translate the story into the textbook category first; only then judge whether the sentence describes that category accurately.
+On that basis the assertion matches the ownership or finance rule being tested.
 
-In this setting, issuance fees belong in the cost criterion next to loan interest. The wording matches the textbook relationship without adding extra conditions.
+The statement is true.
+', 'TRUE — Keep the three choice criteria in view: cost (interest and issuance costs), gearing/insolvency risk, and matching finance term to the life of the asset or spending.
 
-Every part of the claim aligns with the standard concept, so the statement stands.', 'TRUE — On the Fuhrmann definition used in the entrance exam, the sentence is correct. Revenue expenditure such as buying materials for production can safely be financed by short-term sources.
+Matching finance term to expenditure type remains necessary regardless of nominal interest.
 
-This statement draws on choosing an appropriate source of finance. Treat it as a checklist against the core concept named in the stem, not as a general opinion about business.
+Apply the chapter mechanism to the exact wording: name the ownership form or finance source correctly, then check whether the claimed tax, liability, repayment, or matching consequence actually follows from that category.
 
-In this setting, short-cycle spending fits short-term credit without lengthy principal schedules. The wording matches the textbook relationship without adding extra conditions.
+That is why the claim stands for this form of business or source of finance.
 
-No qualifying word breaks the definition or scenario, so the answer is true.', 'FALSE — The claim is false. High gearing removes any need to compare administration costs when issuing shares to raise funds.
+The statement is true.
+', 'FALSE — High gearing is a risk warning; it does not automatically forbid every short-term trade-credit purchase of materials, nor is interest the only criterion when choosing finance. Matching asset life and overall risk still matter.
 
-The scenario is a worked example of choosing an appropriate source of finance. Translate the story into the textbook category first; only then judge whether the sentence describes that category accurately.
+Internal funds and investors are recommended when further loans would worsen repayment pressure.
 
-Applied to this claim, share issuance costs remain part of the cost criterion even when gearing motivates equity. That is why the sentence does not survive careful reading.
+Internal finance recycles surplus already inside the firm (retained profit, asset sales). External finance comes from outside providers (owner start-up savings in this framework, investors, banks, suppliers on credit). Where the cash sits in the bank account does not decide the label.
 
-Because the decisive detail is wrong, mark the statement false.'] WHERE case_id = 'CASE 4.6.12' AND tier = 'full';
-UPDATE public.economics_cases SET tactical_explanations = ARRAY['TRUE — On the Fuhrmann definition used in the entrance exam, the sentence is correct. A business with a high proportion of loan capital might have difficulties obtaining more credit.
+On that basis the assertion attaches the wrong legal, tax, liability, or finance label.
 
-This statement draws on choosing an appropriate source of finance. Treat it as a checklist against the core concept named in the stem, not as a general opinion about business.
+The statement is false.
+', 'TRUE — Capital expenditure on assets used over many years should normally be matched with long-term finance so repayment horizons align with the asset''s service life. Funding a multi-year plant from rolling weekly supplier credit mismatches term and use.
 
-In this setting, existing heavy debt makes creditors wary of increasing exposure. The wording matches the textbook relationship without adding extra conditions.
+Long-lived assets should be funded over a horizon comparable to their useful life.
 
-No qualifying word breaks the definition or scenario, so the answer is true.', 'FALSE — This statement is false. High gearing means capital expenditure should be funded only through additional bank loans at any interest rate offered.
+Finance choice weighs cost (interest and issuance costs), gearing risk (heavy loan capital raises fixed burdens and insolvency exposure), and matching (long-lived assets with long-term finance; short-cycle materials with short-term credit). No single criterion replaces the others.
 
-The relevant theory comes from choosing an appropriate source of finance. Identify which definition or relationship the sentence is trying to test before deciding true or false.
+That is why the claim stands for this form of business or source of finance.
 
-The statement overreaches because the chapter advises against piling on debt when gearing is high; internal or investor funds are preferred. The trap is to agree with the topic while missing the one detail that breaks the logic.
+The statement is true.
+'] WHERE case_id = 'CASE 4.6.10' AND tier = 'full';
+UPDATE public.economics_cases SET tactical_explanations = ARRAY['TRUE — Capital expenditure on assets used over many years should normally be matched with long-term finance so repayment horizons align with the asset''s service life. Funding a multi-year plant from rolling weekly supplier credit mismatches term and use.
 
-The statement sounds plausible but fails on precision, so it is false.', 'TRUE — Evaluated against the textbook standard, this assertion is correct. Lenders may extend credit to a highly geared business only if acceptable collateral can be offered.
+Multi-year asset spending calls for long-term funding to match benefit periods.
 
-Here you must apply ideas from choosing an appropriate source of finance to a concrete situation rather than recite a definition from memory. Ownership, customer type, stakeholder group, or country of production usually decides the verdict.
+Finance choice weighs cost (interest and issuance costs), gearing risk (heavy loan capital raises fixed burdens and insolvency exposure), and matching (long-lived assets with long-term finance; short-cycle materials with short-term credit). No single criterion replaces the others.
 
-Applied carefully, security requirements often accompany new loans when loan capital is already substantial. Nothing in the sentence stretches the concept beyond its standard use.
+That is why the claim stands for this form of business or source of finance.
 
-No qualifying word breaks the definition or scenario, so the answer is true.', 'FALSE — The claim is false. Revenue expenditure must never use short-term trade credit when the balance sheet already lists any loan capital.
+The statement is true.
+', 'TRUE — Bonds issued to investors are a form of long-term external debt finance: the company borrows from bondholders and owes interest and principal according to the bond terms, distinct from equity share capital.
 
-Although the subject matter is choosing an appropriate source of finance, this is really a logic check on overstatement. Non-profit surpluses, mixed economies, and partial market failure are classic cases where absolute wording fails.
+Both interest and issuance costs belong in the cost comparison.
 
-Applied to this claim, short-term finance for revenue spending remains appropriate even when long-term debt is already high. That is why the sentence does not survive careful reading.
+Apply the chapter mechanism to the exact wording: name the ownership form or finance source correctly, then check whether the claimed tax, liability, repayment, or matching consequence actually follows from that category.
 
-Watch the absolute wording "never": exam statements often sound plausible until a single scope word turns an otherwise familiar idea into an overclaim.
+So the sentence is a correct description of the mechanism at work in this case.
 
-The statement sounds plausible but fails on precision, so it is false.', 'FALSE — Evaluated against the textbook standard, this assertion is false. Administration costs of bond issues are ignored because only equity carries issuance expenses.
+The statement is true.
+', 'FALSE — High gearing is a risk warning; it does not automatically forbid every short-term trade-credit purchase of materials, nor is interest the only criterion when choosing finance. Matching asset life and overall risk still matter.
 
-Here you must apply ideas from choosing an appropriate source of finance to a concrete situation rather than recite a definition from memory. Ownership, customer type, stakeholder group, or country of production usually decides the verdict.
+Interest matters, but it is not the sole cost or sole criterion. Issuance and administration costs, gearing risk, and intended use / term matching also shape the choice between loans, share issues, and short-term credit.
 
-The statement overreaches because both shares and bonds carry administration costs in the cost criterion. The trap is to agree with the topic while missing the one detail that breaks the logic.
+Cost is one of three criteria; use and financial situation also govern choice.
 
-The statement sounds plausible but fails on precision, so it is false.'] WHERE case_id = 'CASE 4.6.13' AND tier = 'full';
-UPDATE public.economics_cases SET tactical_explanations = ARRAY['FALSE — The claim is false. Capital expenditure on a multi-year production plant should be funded from weekly overdraft drawings alone.
+That misclassification is enough to reject the claim.
 
-This statement draws on choosing an appropriate source of finance. Treat it as a checklist against the core concept named in the stem, not as a general opinion about business.
+The statement is false.
+', 'FALSE — Bonds issued to investors are a form of long-term external debt finance: the company borrows from bondholders and owes interest and principal according to the bond terms, distinct from equity share capital.
 
-Applied to this claim, long-lived plant assets need long-term finance, not reliance on short overdraft facilities. That is why the sentence does not survive careful reading.
+Bonds are still loan capital that must be repaid with interest; gearing risk remains.
 
-Once the overclaim or mislabel is exposed, the only consistent answer is false.', 'TRUE — On the Fuhrmann definition used in the entrance exam, the sentence is correct. Capital expenditure on assets that will be used over some or even many years requires long-term finance.
+Apply the chapter mechanism to the exact wording: name the ownership form or finance source correctly, then check whether the claimed tax, liability, repayment, or matching consequence actually follows from that category.
 
-This statement draws on choosing an appropriate source of finance. Treat it as a checklist against the core concept named in the stem, not as a general opinion about business.
+On that basis the assertion attaches the wrong legal, tax, liability, or finance label.
 
-In this setting, asset life governs the appropriate maturity of finance. The wording matches the textbook relationship without adding extra conditions.
+The statement is false.
+', 'FALSE — Bonds issued to investors are a form of long-term external debt finance: the company borrows from bondholders and owes interest and principal according to the bond terms, distinct from equity share capital.
 
-No qualifying word breaks the definition or scenario, so the answer is true.', 'TRUE — The claim is correct. Costs, intended use, and current financial situation are the main criteria when choosing among finance sources.
+Short-cycle materials suit short-term finance, not long-term bond funding.
 
-The scenario is a worked example of choosing an appropriate source of finance. Translate the story into the textbook category first; only then judge whether the sentence describes that category accurately.
+Apply the chapter mechanism to the exact wording: name the ownership form or finance source correctly, then check whether the claimed tax, liability, repayment, or matching consequence actually follows from that category.
 
-In this setting, the chapter presents this trio as the decision framework. The wording matches the textbook relationship without adding extra conditions.
+So the sentence does not survive once the correct mechanism is applied.
 
-No qualifying word breaks the definition or scenario, so the answer is true.', 'TRUE — This statement is correct. Funding a multi-year production plant solely through repeated overdraft drawings mismatches short-term finance to capital expenditure.
+The statement is false.
+'] WHERE case_id = 'CASE 4.6.11' AND tier = 'full';
+UPDATE public.economics_cases SET tactical_explanations = ARRAY['TRUE — Keep the three choice criteria in view: cost (interest and issuance costs), gearing/insolvency risk, and matching finance term to the life of the asset or spending.
 
-The relevant theory comes from choosing an appropriate source of finance. Identify which definition or relationship the sentence is trying to test before deciding true or false.
+Retained earnings and investor funds reduce reliance on new repayable debt when gearing is high.
 
-Applied carefully, long-lived assets require long-term finance, not rolling short-term overdraft reliance. Nothing in the sentence stretches the concept beyond its standard use.
+Internal finance recycles surplus already inside the firm (retained profit, asset sales). External finance comes from outside providers (owner start-up savings in this framework, investors, banks, suppliers on credit). Where the cash sits in the bank account does not decide the label.
 
-No qualifying word breaks the definition or scenario, so the answer is true.', 'TRUE — This statement is correct. Treating the absolute interest rate as the only selection criterion ignores intended use and current gearing.
+On that basis the assertion matches the ownership or finance rule being tested.
 
-The relevant theory comes from choosing an appropriate source of finance. Identify which definition or relationship the sentence is trying to test before deciding true or false.
+The statement is true.
+', 'TRUE — Keep the three choice criteria in view: cost (interest and issuance costs), gearing/insolvency risk, and matching finance term to the life of the asset or spending.
 
-Applied carefully, the chapter requires weighing cost together with use and financial situation. Nothing in the sentence stretches the concept beyond its standard use.
+Heavy loan capital makes additional borrowing harder to secure.
 
-Every part of the claim aligns with the standard concept, so the statement stands.'] WHERE case_id = 'CASE 4.6.14' AND tier = 'full';
-UPDATE public.economics_cases SET tactical_explanations = ARRAY['TRUE — Evaluated against the textbook standard, this assertion is correct. Trade credit from suppliers postpones payment for inputs consumed within the operating cycle.
+Apply the chapter mechanism to the exact wording: name the ownership form or finance source correctly, then check whether the claimed tax, liability, repayment, or matching consequence actually follows from that category.
 
-The relevant theory comes from choosing an appropriate source of finance. Identify which definition or relationship the sentence is trying to test before deciding true or false.
+On that basis the assertion matches the ownership or finance rule being tested.
 
-Applied carefully, supplier credit is a standard short-term source for routine purchases. Nothing in the sentence stretches the concept beyond its standard use.
+The statement is true.
+', 'TRUE — Bonds issued to investors are a form of long-term external debt finance: the company borrows from bondholders and owes interest and principal according to the bond terms, distinct from equity share capital.
 
-The reasoning chain is complete, so mark the statement true.', 'FALSE — On the Fuhrmann definition used in the entrance exam, the sentence is false. Revenue expenditure on raw materials requires a bond issue with a fifteen-year maturity.
+Issuance fees belong in the cost criterion next to loan interest.
 
-This statement draws on choosing an appropriate source of finance. Treat it as a checklist against the core concept named in the stem, not as a general opinion about business.
+Apply the chapter mechanism to the exact wording: name the ownership form or finance source correctly, then check whether the claimed tax, liability, repayment, or matching consequence actually follows from that category.
 
-Applied to this claim, long-term bond finance mismatches the brief consumption period of materials. That is why the sentence does not survive careful reading.
+So the sentence is a correct description of the mechanism at work in this case.
 
-Because the decisive detail is wrong, mark the statement false.', 'FALSE — Evaluated against the textbook standard, this assertion is false. High gearing guarantees unlimited access to cheap long-term loans for any capital project.
+The statement is true.
+', 'TRUE — Revenue spending and routine materials purchases are typically suited to short-term credit (trade credit, overdrafts) because the cash cycle is short. Matching still applies — just toward shorter instruments.
 
-The relevant theory comes from choosing an appropriate source of finance. Identify which definition or relationship the sentence is trying to test before deciding true or false.
+Short-cycle spending fits short-term credit without lengthy principal schedules.
 
-The statement overreaches because heavy debt typically restricts rather than expands cheap credit availability. The trap is to agree with the topic while missing the one detail that breaks the logic.
+Apply the chapter mechanism to the exact wording: name the ownership form or finance source correctly, then check whether the claimed tax, liability, repayment, or matching consequence actually follows from that category.
 
-The statement sounds plausible but fails on precision, so it is false.', 'TRUE — Evaluated against the textbook standard, this assertion is correct. Matching finance maturity to expenditure type is still required when comparing loan interest with bond coupons.
+That is why the claim stands for this form of business or source of finance.
 
-Here you must apply ideas from choosing an appropriate source of finance to a concrete situation rather than recite a definition from memory. Ownership, customer type, stakeholder group, or country of production usually decides the verdict.
+The statement is true.
+', 'FALSE — High gearing is a risk warning; it does not automatically forbid every short-term trade-credit purchase of materials, nor is interest the only criterion when choosing finance. Matching asset life and overall risk still matter.
 
-Applied carefully, asset life and gearing shape finance choice beyond nominal interest rates. Nothing in the sentence stretches the concept beyond its standard use.
+Share issuance costs remain part of the cost criterion even when gearing motivates equity.
 
-No qualifying word breaks the definition or scenario, so the answer is true.', 'TRUE — Evaluated against the textbook standard, this assertion is correct. When loan capital is already high, internal sources of finance and investors can be preferable to another large loan.
+Finance choice weighs cost (interest and issuance costs), gearing risk (heavy loan capital raises fixed burdens and insolvency exposure), and matching (long-lived assets with long-term finance; short-cycle materials with short-term credit). No single criterion replaces the others.
 
-Here you must apply ideas from choosing an appropriate source of finance to a concrete situation rather than recite a definition from memory. Ownership, customer type, stakeholder group, or country of production usually decides the verdict.
+On that basis the assertion attaches the wrong legal, tax, liability, or finance label.
 
-Applied carefully, retained earnings and investor funds avoid new fixed repayment obligations. Nothing in the sentence stretches the concept beyond its standard use.
+The statement is false.
+'] WHERE case_id = 'CASE 4.6.12' AND tier = 'full';
+UPDATE public.economics_cases SET tactical_explanations = ARRAY['TRUE — Keep the three choice criteria in view: cost (interest and issuance costs), gearing/insolvency risk, and matching finance term to the life of the asset or spending.
 
-The reasoning chain is complete, so mark the statement true.'] WHERE case_id = 'CASE 4.6.15' AND tier = 'full';
-UPDATE public.economics_cases SET tactical_explanations = ARRAY['TRUE — Evaluated against the textbook standard, this assertion is correct. Revenue expenditure on production materials can safely be financed by short-term sources even when loan capital is already high.
+Existing heavy debt makes creditors wary of increasing exposure.
 
-Here you must apply ideas from choosing an appropriate source of finance to a concrete situation rather than recite a definition from memory. Ownership, customer type, stakeholder group, or country of production usually decides the verdict.
+Apply the chapter mechanism to the exact wording: name the ownership form or finance source correctly, then check whether the claimed tax, liability, repayment, or matching consequence actually follows from that category.
 
-Applied carefully, short-cycle materials still suit trade credit or overdrafts regardless of balance-sheet debt. Nothing in the sentence stretches the concept beyond its standard use.
+On that basis the assertion matches the ownership or finance rule being tested.
 
-The reasoning chain is complete, so mark the statement true.', 'TRUE — Evaluated against the textbook standard, this assertion is correct. High gearing complicates obtaining further long-term loans but does not ban appropriate short-term finance for revenue spending.
+The statement is true.
+', 'FALSE — High gearing is a risk warning; it does not automatically forbid every short-term trade-credit purchase of materials, nor is interest the only criterion when choosing finance. Matching asset life and overall risk still matter.
 
-The relevant theory comes from choosing an appropriate source of finance. Identify which definition or relationship the sentence is trying to test before deciding true or false.
+Funding long-lived assets from short-term supplier credit ignores matching: the asset still binds capital for years while the credit may fall due in days or weeks, creating refinancing pressure.
 
-Applied carefully, gearing mainly affects appetite for additional long-term debt, not all short-term working-capital credit. Nothing in the sentence stretches the concept beyond its standard use.
+Interest matters, but it is not the sole cost or sole criterion. Issuance and administration costs, gearing risk, and intended use / term matching also shape the choice between loans, share issues, and short-term credit.
 
-No qualifying word breaks the definition or scenario, so the answer is true.', 'TRUE — Evaluated against the textbook standard, this assertion is correct. Because loans must be repaid, a high proportion of loan capital can be a burden that increases insolvency risk.
+The chapter advises against piling on debt when gearing is high; internal or investor funds are preferred.
 
-Here you must apply ideas from choosing an appropriate source of finance to a concrete situation rather than recite a definition from memory. Ownership, customer type, stakeholder group, or country of production usually decides the verdict.
+That misclassification is enough to reject the claim.
 
-Applied carefully, fixed repayment schedules on heavy debt threaten solvency if income weakens. Nothing in the sentence stretches the concept beyond its standard use.
+The statement is false.
+', 'TRUE — Long-term lenders commonly require pledgeable assets — often land and property via a mortgage — as security. Collateral backs repayment; the loan remains a liability. If private property was pledged and the business cannot repay, that property remains at stake.
 
-No qualifying word breaks the definition or scenario, so the answer is true.', 'TRUE — Evaluated against the textbook standard, this assertion is correct. Costs, intended use, and current financial situation together guide finance choice when several sources exist.
+Security requirements often accompany new loans when loan capital is already substantial.
 
-Here you must apply ideas from choosing an appropriate source of finance to a concrete situation rather than recite a definition from memory. Ownership, customer type, stakeholder group, or country of production usually decides the verdict.
+On that basis the assertion matches the ownership or finance rule being tested.
 
-Applied carefully, no single criterion overrides the other two in the chapter framework. Nothing in the sentence stretches the concept beyond its standard use.
+The statement is true.
+', 'FALSE — Trade credit must be repaid within the agreed period. It is typically short-term purchase-cycle finance, not long-term debt, and it does not erase the proprietor''s liability or the need to manage cash-flow timing.
 
-Every part of the claim aligns with the standard concept, so the statement stands.', 'TRUE — The claim is correct. Financing a multi-year production facility exclusively through short-term overdraft drawings mismatches revenue-type credit to capital expenditure.
+High gearing is a risk warning; it does not automatically forbid every short-term trade-credit purchase of materials, nor is interest the only criterion when choosing finance. Matching asset life and overall risk still matter.
 
-Although the subject matter is choosing an appropriate source of finance, this is really a logic check on overstatement. Non-profit surpluses, mixed economies, and partial market failure are classic cases where absolute wording fails.
+Revenue spending and routine materials purchases are typically suited to short-term credit (trade credit, overdrafts) because the cash cycle is short. Matching still applies — just toward shorter instruments.
 
-In this setting, long-lived plant assets require long-term finance, not rolling short-term overdraft reliance. The wording matches the textbook relationship without adding extra conditions.
+Short-term finance for revenue spending remains appropriate even when long-term debt is already high.
 
-No qualifying word breaks the definition or scenario, so the answer is true.'] WHERE case_id = 'CASE 4.6.16' AND tier = 'full';
-UPDATE public.economics_cases SET tactical_explanations = ARRAY['TRUE — Evaluated against the textbook standard, this assertion is correct. A highly geared business may obtain further credit only at higher interest and/or if collateral is provided.
+That misclassification is enough to reject the claim.
 
-Here you must apply ideas from choosing an appropriate source of finance to a concrete situation rather than recite a definition from memory. Ownership, customer type, stakeholder group, or country of production usually decides the verdict.
+The statement is false.
+', 'FALSE — Bonds issued to investors are a form of long-term external debt finance: the company borrows from bondholders and owes interest and principal according to the bond terms, distinct from equity share capital.
 
-Applied carefully, lenders tighten pricing and security when loan capital is already substantial. Nothing in the sentence stretches the concept beyond its standard use.
+Both shares and bonds carry administration costs in the cost criterion.
 
-Every part of the claim aligns with the standard concept, so the statement stands.', 'TRUE — On the Fuhrmann definition used in the entrance exam, the sentence is correct. Capital expenditure on machinery used over many years should be matched with long-term finance.
+Apply the chapter mechanism to the exact wording: name the ownership form or finance source correctly, then check whether the claimed tax, liability, repayment, or matching consequence actually follows from that category.
 
-This statement draws on choosing an appropriate source of finance. Treat it as a checklist against the core concept named in the stem, not as a general opinion about business.
+On that basis the assertion attaches the wrong legal, tax, liability, or finance label.
 
-In this setting, multi-year machinery calls for finance spanning comparable years. The wording matches the textbook relationship without adding extra conditions.
+The statement is false.
+'] WHERE case_id = 'CASE 4.6.13' AND tier = 'full';
+UPDATE public.economics_cases SET tactical_explanations = ARRAY['FALSE — An overdraft does not incorporate the firm, create limited liability, or cease to be a liability because it is short-term. Interest is not charged as if a positive credit balance were borrowed.
 
-The reasoning chain is complete, so mark the statement true.', 'TRUE — Evaluated against the textbook standard, this assertion is correct. When several funding routes exist, selection usually weighs costs, the purpose of the funds, and the firm''s gearing.
+Funding long-lived assets from short-term supplier credit ignores matching: the asset still binds capital for years while the credit may fall due in days or weeks, creating refinancing pressure.
 
-Here you must apply ideas from choosing an appropriate source of finance to a concrete situation rather than recite a definition from memory. Ownership, customer type, stakeholder group, or country of production usually decides the verdict.
+Long-lived plant assets need long-term finance, not reliance on short overdraft facilities.
 
-Applied carefully, costs, intended use, and financial situation jointly shape the choice. Nothing in the sentence stretches the concept beyond its standard use.
+That misclassification is enough to reject the claim.
 
-The reasoning chain is complete, so mark the statement true.', 'TRUE — On the Fuhrmann definition used in the entrance exam, the sentence is correct. Ignoring administration costs when issuing shares or bonds understates the true cost of those finance sources.
+The statement is false.
+', 'TRUE — Capital expenditure on assets used over many years should normally be matched with long-term finance so repayment horizons align with the asset''s service life. Funding a multi-year plant from rolling weekly supplier credit mismatches term and use.
 
-The scenario is a worked example of choosing an appropriate source of finance. Translate the story into the textbook category first; only then judge whether the sentence describes that category accurately.
+Asset life governs the appropriate maturity of finance.
 
-In this setting, issuance expenses belong in the cost criterion alongside loan interest. The wording matches the textbook relationship without adding extra conditions.
+Finance choice weighs cost (interest and issuance costs), gearing risk (heavy loan capital raises fixed burdens and insolvency exposure), and matching (long-lived assets with long-term finance; short-cycle materials with short-term credit). No single criterion replaces the others.
 
-The reasoning chain is complete, so mark the statement true.', 'TRUE — The claim is correct. A high proportion of loan capital can be a burden because loans must be repaid, raising insolvency risk.
+So the sentence is a correct description of the mechanism at work in this case.
 
-The scenario is a worked example of choosing an appropriate source of finance. Translate the story into the textbook category first; only then judge whether the sentence describes that category accurately.
+The statement is true.
+', 'TRUE — Keep the three choice criteria in view: cost (interest and issuance costs), gearing/insolvency risk, and matching finance term to the life of the asset or spending.
 
-In this setting, mandatory debt service on heavy loans threatens solvency when cash flow is insufficient. The wording matches the textbook relationship without adding extra conditions.
+The chapter presents this trio as the decision framework.
 
-Every part of the claim aligns with the standard concept, so the statement stands.'] WHERE case_id = 'CASE 4.6.17' AND tier = 'full';
-UPDATE public.economics_cases SET tactical_explanations = ARRAY['FALSE — On the Fuhrmann definition used in the entrance exam, the sentence is false. Revenue expenditure on weekly supplies must be financed through a twenty-year mortgage.
+Apply the chapter mechanism to the exact wording: name the ownership form or finance source correctly, then check whether the claimed tax, liability, repayment, or matching consequence actually follows from that category.
 
-This statement draws on choosing an appropriate source of finance. Treat it as a checklist against the core concept named in the stem, not as a general opinion about business.
+So the sentence is a correct description of the mechanism at work in this case.
 
-Applied to this claim, short-cycle revenue spending suits short-term sources, not long-term mortgages. That is why the sentence does not survive careful reading.
+The statement is true.
+', 'TRUE — A bank overdraft is flexible short-term credit on a current account: the balance may go negative within a limit. Interest is charged when the account is overdrawn, not on a healthy positive balance. The facility is external debt, not internal finance.
 
-The statement sounds plausible but fails on precision, so it is false.', 'FALSE — On the Fuhrmann definition used in the entrance exam, the sentence is false. Share issues carry no administration costs, so only loan interest needs comparison.
+Capital expenditure on assets used over many years should normally be matched with long-term finance so repayment horizons align with the asset''s service life. Funding a multi-year plant from rolling weekly supplier credit mismatches term and use.
 
-This statement draws on choosing an appropriate source of finance. Treat it as a checklist against the core concept named in the stem, not as a general opinion about business.
+Long-lived assets require long-term finance, not rolling short-term overdraft reliance.
 
-Applied to this claim, equity and bond issues both involve administration costs in the chapter framework. That is why the sentence does not survive careful reading.
+So the sentence is a correct description of the mechanism at work in this case.
 
-Once the overclaim or mislabel is exposed, the only consistent answer is false.', 'FALSE — On the Fuhrmann definition used in the entrance exam, the sentence is false. All production materials must be financed through long-term bond issues regardless of consumption speed.
+The statement is true.
+', 'TRUE — Gearing reflects how heavily the firm relies on loan capital relative to equity. High gearing raises fixed interest burdens and insolvency risk if revenues dip, and can make new lenders reluctant to extend further credit.
 
-Although the subject matter is choosing an appropriate source of finance, this is really a logic check on overstatement. Non-profit surpluses, mixed economies, and partial market failure are classic cases where absolute wording fails.
+Interest matters, but it is not the sole cost or sole criterion. Issuance and administration costs, gearing risk, and intended use / term matching also shape the choice between loans, share issues, and short-term credit.
 
-Applied to this claim, long-term bonds mismatch the brief use period of routine materials. That is why the sentence does not survive careful reading.
+The chapter requires weighing cost together with use and financial situation.
 
-Watch the absolute wording "all": exam statements often sound plausible until a single scope word turns an otherwise familiar idea into an overclaim.
+So the sentence is a correct description of the mechanism at work in this case.
 
-Because the decisive detail is wrong, mark the statement false.', 'TRUE — On the Fuhrmann definition used in the entrance exam, the sentence is correct. Costs, intended use, and financial situation jointly determine finance choice among available sources for expansion projects.
+The statement is true.
+'] WHERE case_id = 'CASE 4.6.14' AND tier = 'full';
+UPDATE public.economics_cases SET tactical_explanations = ARRAY['TRUE — Trade credit is a supplier agreement allowing deferred payment for purchases. It creates a short-term external liability until settlement. Deferral changes cash timing; it is not a grant and not internal finance.
 
-This statement draws on choosing an appropriate source of finance. Treat it as a checklist against the core concept named in the stem, not as a general opinion about business.
+Supplier credit is a standard short-term source for routine purchases.
 
-In this setting, all three chapter criteria apply together. The wording matches the textbook relationship without adding extra conditions.
+Apply the chapter mechanism to the exact wording: name the ownership form or finance source correctly, then check whether the claimed tax, liability, repayment, or matching consequence actually follows from that category.
 
-No qualifying word breaks the definition or scenario, so the answer is true.', 'TRUE — On the Fuhrmann definition used in the entrance exam, the sentence is correct. Administration costs of bond issues belong in the cost comparison with loan interest.
+So the sentence is a correct description of the mechanism at work in this case.
 
-This statement draws on choosing an appropriate source of finance. Treat it as a checklist against the core concept named in the stem, not as a general opinion about business.
+The statement is true.
+', 'FALSE — Bonds issued to investors are a form of long-term external debt finance: the company borrows from bondholders and owes interest and principal according to the bond terms, distinct from equity share capital.
 
-In this setting, issuance costs are part of the cost criterion alongside borrowing interest. The wording matches the textbook relationship without adding extra conditions.
+Revenue spending and routine materials purchases are typically suited to short-term credit (trade credit, overdrafts) because the cash cycle is short. Matching still applies — just toward shorter instruments.
 
-The reasoning chain is complete, so mark the statement true.'] WHERE case_id = 'CASE 4.6.18' AND tier = 'full';
-UPDATE public.economics_cases SET tactical_explanations = ARRAY['TRUE — Evaluated against the textbook standard, this assertion is correct. Capital expenditure on assets used over many years still requires long-term finance despite high gearing.
+Long-term bond finance mismatches the brief consumption period of materials.
 
-The relevant theory comes from choosing an appropriate source of finance. Identify which definition or relationship the sentence is trying to test before deciding true or false.
+So the sentence does not survive once the correct mechanism is applied.
 
-Applied carefully, asset life dictates long-term funding needs even when additional debt is costly. Nothing in the sentence stretches the concept beyond its standard use.
+The statement is false.
+', 'FALSE — High gearing is a risk warning; it does not automatically forbid every short-term trade-credit purchase of materials, nor is interest the only criterion when choosing finance. Matching asset life and overall risk still matter.
 
-No qualifying word breaks the definition or scenario, so the answer is true.', 'FALSE — This statement is false. Capital expenditure on vehicles used for ten years should be funded from thirty-day supplier credit.
+Heavy debt typically restricts rather than expands cheap credit availability.
 
-The relevant theory comes from choosing an appropriate source of finance. Identify which definition or relationship the sentence is trying to test before deciding true or false.
+Finance choice weighs cost (interest and issuance costs), gearing risk (heavy loan capital raises fixed burdens and insolvency exposure), and matching (long-lived assets with long-term finance; short-cycle materials with short-term credit). No single criterion replaces the others.
 
-The statement overreaches because long-lived vehicles are capital expenditure requiring long-term finance. The trap is to agree with the topic while missing the one detail that breaks the logic.
+That misclassification is enough to reject the claim.
 
-The statement sounds plausible but fails on precision, so it is false.', 'FALSE — On the Fuhrmann definition used in the entrance exam, the sentence is false. High gearing removes interest from the list of costs businesses must compare.
+The statement is false.
+', 'TRUE — Bonds issued to investors are a form of long-term external debt finance: the company borrows from bondholders and owes interest and principal according to the bond terms, distinct from equity share capital.
 
-This statement draws on choosing an appropriate source of finance. Treat it as a checklist against the core concept named in the stem, not as a general opinion about business.
+Asset life and gearing shape finance choice beyond nominal interest rates.
 
-Applied to this claim, interest on loans remains part of the cost criterion at any gearing level. That is why the sentence does not survive careful reading.
+Finance choice weighs cost (interest and issuance costs), gearing risk (heavy loan capital raises fixed burdens and insolvency exposure), and matching (long-lived assets with long-term finance; short-cycle materials with short-term credit). No single criterion replaces the others.
 
-The statement sounds plausible but fails on precision, so it is false.', 'FALSE — The claim is false. High gearing means revenue expenditure must be reclassified as capital expenditure before any finance is chosen.
+On that basis the assertion matches the ownership or finance rule being tested.
 
-This statement draws on choosing an appropriate source of finance. Treat it as a checklist against the core concept named in the stem, not as a general opinion about business.
+The statement is true.
+', 'TRUE — Gearing reflects how heavily the firm relies on loan capital relative to equity. High gearing raises fixed interest burdens and insolvency risk if revenues dip, and can make new lenders reluctant to extend further credit.
 
-Applied to this claim, expenditure type is determined by use and asset life, not by renaming it when debt is high. That is why the sentence does not survive careful reading.
+Retained earnings and investor funds avoid new fixed repayment obligations.
 
-Once the overclaim or mislabel is exposed, the only consistent answer is false.', 'FALSE — On the Fuhrmann definition used in the entrance exam, the sentence is false. Collateral requirements prove that interest is the only cost businesses need to compare among finance sources.
+Internal finance recycles surplus already inside the firm (retained profit, asset sales). External finance comes from outside providers (owner start-up savings in this framework, investors, banks, suppliers on credit). Where the cash sits in the bank account does not decide the label.
 
-This statement draws on choosing an appropriate source of finance. Treat it as a checklist against the core concept named in the stem, not as a general opinion about business.
+So the sentence is a correct description of the mechanism at work in this case.
 
-Applied to this claim, collateral relates to lender risk from gearing; interest and issuance costs remain separate cost elements. That is why the sentence does not survive careful reading.
+The statement is true.
+'] WHERE case_id = 'CASE 4.6.15' AND tier = 'full';
+UPDATE public.economics_cases SET tactical_explanations = ARRAY['TRUE — Gearing reflects how heavily the firm relies on loan capital relative to equity. High gearing raises fixed interest burdens and insolvency risk if revenues dip, and can make new lenders reluctant to extend further credit.
 
-Once the overclaim or mislabel is exposed, the only consistent answer is false.'] WHERE case_id = 'CASE 4.6.19' AND tier = 'full';
-UPDATE public.economics_cases SET tactical_explanations = ARRAY['TRUE — On the Fuhrmann definition used in the entrance exam, the sentence is correct. Revenue expenditure on materials for current production can safely be financed by short-term sources.
+Revenue spending and routine materials purchases are typically suited to short-term credit (trade credit, overdrafts) because the cash cycle is short. Matching still applies — just toward shorter instruments.
 
-This statement draws on choosing an appropriate source of finance. Treat it as a checklist against the core concept named in the stem, not as a general opinion about business.
+Short-cycle materials still suit trade credit or overdrafts regardless of balance-sheet debt.
 
-In this setting, short-cycle inputs align with trade credit or overdrafts. The wording matches the textbook relationship without adding extra conditions.
+On that basis the assertion matches the ownership or finance rule being tested.
 
-The reasoning chain is complete, so mark the statement true.', 'FALSE — The claim is false. High gearing automatically makes share issuance free of administration costs.
+The statement is true.
+', 'TRUE — Gearing reflects how heavily the firm relies on loan capital relative to equity. High gearing raises fixed interest burdens and insolvency risk if revenues dip, and can make new lenders reluctant to extend further credit.
 
-Although the subject matter is choosing an appropriate source of finance, this is really a logic check on overstatement. Non-profit surpluses, mixed economies, and partial market failure are classic cases where absolute wording fails.
+Revenue spending and routine materials purchases are typically suited to short-term credit (trade credit, overdrafts) because the cash cycle is short. Matching still applies — just toward shorter instruments.
 
-Applied to this claim, share and bond administration costs still enter the cost criterion regardless of gearing. That is why the sentence does not survive careful reading.
+Gearing mainly affects appetite for additional long-term debt, not all short-term working-capital credit.
 
-Watch the absolute wording "automatically": exam statements often sound plausible until a single scope word turns an otherwise familiar idea into an overclaim.
+On that basis the assertion matches the ownership or finance rule being tested.
 
-The statement sounds plausible but fails on precision, so it is false.', 'TRUE — The claim is correct. Costs comprise interest on loans and credit plus administration costs for issuing shares or bonds.
+The statement is true.
+', 'TRUE — Keep the three choice criteria in view: cost (interest and issuance costs), gearing/insolvency risk, and matching finance term to the life of the asset or spending.
 
-This statement draws on choosing an appropriate source of finance. Treat it as a checklist against the core concept named in the stem, not as a general opinion about business.
+Fixed repayment schedules on heavy debt threaten solvency if income weakens.
 
-In this setting, the cost criterion covers interest and issuance expenses. The wording matches the textbook relationship without adding extra conditions.
+Apply the chapter mechanism to the exact wording: name the ownership form or finance source correctly, then check whether the claimed tax, liability, repayment, or matching consequence actually follows from that category.
 
-No qualifying word breaks the definition or scenario, so the answer is true.', 'TRUE — On the Fuhrmann definition used in the entrance exam, the sentence is correct. High gearing may leave lenders reluctant except at higher interest or with collateral, favouring internal funds or investors.
+That is why the claim stands for this form of business or source of finance.
 
-This statement draws on choosing an appropriate source of finance. Treat it as a checklist against the core concept named in the stem, not as a general opinion about business.
+The statement is true.
+', 'TRUE — Keep the three choice criteria in view: cost (interest and issuance costs), gearing/insolvency risk, and matching finance term to the life of the asset or spending.
 
-In this setting, elevated debt tightens credit terms and makes non-debt finance attractive. The wording matches the textbook relationship without adding extra conditions.
+No single criterion overrides the other two in the chapter framework.
 
-The reasoning chain is complete, so mark the statement true.', 'FALSE — The claim is false. Revenue expenditure on flour and sugar for weekly baking must be funded through a twenty-year bond.
+Apply the chapter mechanism to the exact wording: name the ownership form or finance source correctly, then check whether the claimed tax, liability, repayment, or matching consequence actually follows from that category.
 
-This statement draws on choosing an appropriate source of finance. Treat it as a checklist against the core concept named in the stem, not as a general opinion about business.
+So the sentence is a correct description of the mechanism at work in this case.
 
-Applied to this claim, short-cycle ingredients suit short-term finance, not multi-year bond funding. That is why the sentence does not survive careful reading.
+The statement is true.
+', 'TRUE — A bank overdraft is flexible short-term credit on a current account: the balance may go negative within a limit. Interest is charged when the account is overdrawn, not on a healthy positive balance. The facility is external debt, not internal finance.
 
-Because the decisive detail is wrong, mark the statement false.'] WHERE case_id = 'CASE 4.6.20' AND tier = 'full';
-UPDATE public.economics_cases SET tactical_explanations = ARRAY['FALSE — This statement is false. Capital expenditure on a ten-year asset should be funded from trade credit for raw materials.
+Capital expenditure on assets used over many years should normally be matched with long-term finance so repayment horizons align with the asset''s service life. Funding a multi-year plant from rolling weekly supplier credit mismatches term and use.
 
-The relevant theory comes from choosing an appropriate source of finance. Identify which definition or relationship the sentence is trying to test before deciding true or false.
+Revenue spending and routine materials purchases are typically suited to short-term credit (trade credit, overdrafts) because the cash cycle is short. Matching still applies — just toward shorter instruments.
 
-The statement overreaches because long-lived assets need long-term finance, not supplier credit for materials. The trap is to agree with the topic while missing the one detail that breaks the logic.
+Long-lived plant assets require long-term finance, not rolling short-term overdraft reliance.
 
-The statement sounds plausible but fails on precision, so it is false.', 'TRUE — On the Fuhrmann definition used in the entrance exam, the sentence is correct. Using short-term credit for revenue expenditure avoids tying multi-year repayment schedules to inputs quickly consumed.
+On that basis the assertion matches the ownership or finance rule being tested.
 
-This statement draws on choosing an appropriate source of finance. Treat it as a checklist against the core concept named in the stem, not as a general opinion about business.
+The statement is true.
+'] WHERE case_id = 'CASE 4.6.16' AND tier = 'full';
+UPDATE public.economics_cases SET tactical_explanations = ARRAY['TRUE — Long-term lenders commonly require pledgeable assets — often land and property via a mortgage — as security. Collateral backs repayment; the loan remains a liability. If private property was pledged and the business cannot repay, that property remains at stake.
 
-In this setting, short-term finance suits spending that rolls over each operating period. The wording matches the textbook relationship without adding extra conditions.
+Interest matters, but it is not the sole cost or sole criterion. Issuance and administration costs, gearing risk, and intended use / term matching also shape the choice between loans, share issues, and short-term credit.
 
-No qualifying word breaks the definition or scenario, so the answer is true.', 'TRUE — On the Fuhrmann definition used in the entrance exam, the sentence is correct. Comparing a bank loan with a bond issue requires weighing interest against bond issuance expenses.
+Lenders tighten pricing and security when loan capital is already substantial.
 
-This statement draws on choosing an appropriate source of finance. Treat it as a checklist against the core concept named in the stem, not as a general opinion about business.
+So the sentence is a correct description of the mechanism at work in this case.
 
-In this setting, bond interest and flotation costs together shape the price of that debt source. The wording matches the textbook relationship without adding extra conditions.
+The statement is true.
+', 'TRUE — Capital expenditure on assets used over many years should normally be matched with long-term finance so repayment horizons align with the asset''s service life. Funding a multi-year plant from rolling weekly supplier credit mismatches term and use.
 
-Every part of the claim aligns with the standard concept, so the statement stands.', 'TRUE — The claim is correct. Share issues involve administration costs that should enter the cost side of the finance decision.
+Multi-year machinery calls for finance spanning comparable years.
 
-This statement draws on choosing an appropriate source of finance. Treat it as a checklist against the core concept named in the stem, not as a general opinion about business.
+Finance choice weighs cost (interest and issuance costs), gearing risk (heavy loan capital raises fixed burdens and insolvency exposure), and matching (long-lived assets with long-term finance; short-cycle materials with short-term credit). No single criterion replaces the others.
 
-In this setting, equity raising is not cost-free; administration costs form part of the comparison. The wording matches the textbook relationship without adding extra conditions.
+On that basis the assertion matches the ownership or finance rule being tested.
 
-The reasoning chain is complete, so mark the statement true.', 'FALSE — On the Fuhrmann definition used in the entrance exam, the sentence is false. Only intended use matters, so a highly geared firm may ignore repayment risk when taking new loans.
+The statement is true.
+', 'TRUE — Gearing reflects how heavily the firm relies on loan capital relative to equity. High gearing raises fixed interest burdens and insolvency risk if revenues dip, and can make new lenders reluctant to extend further credit.
 
-The scenario is a worked example of choosing an appropriate source of finance. Translate the story into the textbook category first; only then judge whether the sentence describes that category accurately.
+Costs, intended use, and financial situation jointly shape the choice.
 
-Applied to this claim, financial situation and gearing affect whether further debt is prudent even when use is matched. That is why the sentence does not survive careful reading.
+Finance choice weighs cost (interest and issuance costs), gearing risk (heavy loan capital raises fixed burdens and insolvency exposure), and matching (long-lived assets with long-term finance; short-cycle materials with short-term credit). No single criterion replaces the others.
 
-Once the overclaim or mislabel is exposed, the only consistent answer is false.'] WHERE case_id = 'CASE 4.6.21' AND tier = 'full';
-UPDATE public.economics_cases SET tactical_explanations = ARRAY['FALSE — On the Fuhrmann definition used in the entrance exam, the sentence is false. Internal funds are never preferable to loans regardless of how high loan capital already is.
+That is why the claim stands for this form of business or source of finance.
 
-Although the subject matter is choosing an appropriate source of finance, this is really a logic check on overstatement. Non-profit surpluses, mixed economies, and partial market failure are classic cases where absolute wording fails.
+The statement is true.
+', 'TRUE — Bonds issued to investors are a form of long-term external debt finance: the company borrows from bondholders and owes interest and principal according to the bond terms, distinct from equity share capital.
 
-Applied to this claim, the chapter explicitly favours internal funds or investors when gearing is high. That is why the sentence does not survive careful reading.
+Issuance expenses belong in the cost criterion alongside loan interest.
 
-Watch the absolute wording "never": exam statements often sound plausible until a single scope word turns an otherwise familiar idea into an overclaim.
+Apply the chapter mechanism to the exact wording: name the ownership form or finance source correctly, then check whether the claimed tax, liability, repayment, or matching consequence actually follows from that category.
 
-Once the overclaim or mislabel is exposed, the only consistent answer is false.', 'FALSE — On the Fuhrmann definition used in the entrance exam, the sentence is false. Administration costs of share issues are excluded from cost comparisons because shares carry no fees.
+On that basis the assertion matches the ownership or finance rule being tested.
 
-The scenario is a worked example of choosing an appropriate source of finance. Translate the story into the textbook category first; only then judge whether the sentence describes that category accurately.
+The statement is true.
+', 'TRUE — Keep the three choice criteria in view: cost (interest and issuance costs), gearing/insolvency risk, and matching finance term to the life of the asset or spending.
 
-Applied to this claim, share issuance involves administration costs that must be weighed against loan interest. That is why the sentence does not survive careful reading.
+Mandatory debt service on heavy loans threatens solvency when cash flow is insufficient.
 
-Because the decisive detail is wrong, mark the statement false.', 'TRUE — Evaluated against the textbook standard, this assertion is correct. Revenue expenditures on weekly ingredients can safely be financed through trade credit or overdraft facilities.
+Apply the chapter mechanism to the exact wording: name the ownership form or finance source correctly, then check whether the claimed tax, liability, repayment, or matching consequence actually follows from that category.
 
-The relevant theory comes from choosing an appropriate source of finance. Identify which definition or relationship the sentence is trying to test before deciding true or false.
+So the sentence is a correct description of the mechanism at work in this case.
 
-Applied carefully, working-capital spending suits short-term credit without multi-year repayment tails. Nothing in the sentence stretches the concept beyond its standard use.
+The statement is true.
+'] WHERE case_id = 'CASE 4.6.17' AND tier = 'full';
+UPDATE public.economics_cases SET tactical_explanations = ARRAY['FALSE — Pledging collateral secures the lender; it does not waive all interest, exclude the loan from liabilities, incorporate the firm, or remove unlimited liability for any remaining shortfall. Short-term supplier trade credit also does not typically demand a mortgage over the home.
 
-The reasoning chain is complete, so mark the statement true.', 'FALSE — The claim is false. Revenue expenditure on materials for production must be financed exclusively through twenty-year mortgage loans.
+Short-cycle revenue spending suits short-term sources, not long-term mortgages.
 
-Although the subject matter is choosing an appropriate source of finance, this is really a logic check on overstatement. Non-profit surpluses, mixed economies, and partial market failure are classic cases where absolute wording fails.
+So the sentence does not survive once the correct mechanism is applied.
 
-Applied to this claim, short-cycle materials suit short-term finance, not long-term mortgage loans. That is why the sentence does not survive careful reading.
+The statement is false.
+', 'FALSE — Interest matters, but it is not the sole cost or sole criterion. Issuance and administration costs, gearing risk, and intended use / term matching also shape the choice between loans, share issues, and short-term credit.
 
-Watch the absolute wording "exclusively": exam statements often sound plausible until a single scope word turns an otherwise familiar idea into an overclaim.
+Equity and bond issues both involve administration costs in the chapter framework.
 
-Once the overclaim or mislabel is exposed, the only consistent answer is false.', 'TRUE — On the Fuhrmann definition used in the entrance exam, the sentence is correct. When gearing is elevated, adding another large loan can worsen repayment pressure on cash flow.
+Apply the chapter mechanism to the exact wording: name the ownership form or finance source correctly, then check whether the claimed tax, liability, repayment, or matching consequence actually follows from that category.
 
-The scenario is a worked example of choosing an appropriate source of finance. Translate the story into the textbook category first; only then judge whether the sentence describes that category accurately.
+On that basis the assertion attaches the wrong legal, tax, liability, or finance label.
 
-In this setting, additional loans compound fixed repayment obligations when debt is already substantial. The wording matches the textbook relationship without adding extra conditions.
+The statement is false.
+', 'FALSE — Bonds issued to investors are a form of long-term external debt finance: the company borrows from bondholders and owes interest and principal according to the bond terms, distinct from equity share capital.
 
-No qualifying word breaks the definition or scenario, so the answer is true.'] WHERE case_id = 'CASE 4.6.22' AND tier = 'full';
-UPDATE public.economics_cases SET tactical_explanations = ARRAY['FALSE — Evaluated against the textbook standard, this assertion is false. Administration costs of share or bond issues are excluded from the cost comparison when choosing finance.
+Long-term bonds mismatch the brief use period of routine materials.
 
-Here you must apply ideas from choosing an appropriate source of finance to a concrete situation rather than recite a definition from memory. Ownership, customer type, stakeholder group, or country of production usually decides the verdict.
+Apply the chapter mechanism to the exact wording: name the ownership form or finance source correctly, then check whether the claimed tax, liability, repayment, or matching consequence actually follows from that category.
 
-The statement overreaches because issuance costs belong in the cost criterion alongside loan interest. The trap is to agree with the topic while missing the one detail that breaks the logic.
+So the sentence does not survive once the correct mechanism is applied.
 
-Because the decisive detail is wrong, mark the statement false.', 'TRUE — Evaluated against the textbook standard, this assertion is correct. A low headline interest rate does not by itself prove a loan is cheaper than equity once issuance fees are included.
+The statement is false.
+', 'TRUE — Keep the three choice criteria in view: cost (interest and issuance costs), gearing/insolvency risk, and matching finance term to the life of the asset or spending. All three chapter criteria apply together.
 
-The relevant theory comes from choosing an appropriate source of finance. Identify which definition or relationship the sentence is trying to test before deciding true or false.
+Apply the chapter mechanism to the exact wording: name the ownership form or finance source correctly, then check whether the claimed tax, liability, repayment, or matching consequence actually follows from that category.
 
-Applied carefully, total cost includes both ongoing charges and upfront issuance expenses. Nothing in the sentence stretches the concept beyond its standard use.
+On that basis the assertion matches the ownership or finance rule being tested.
 
-No qualifying word breaks the definition or scenario, so the answer is true.', 'TRUE — The claim is correct. Buying material used for production within the current cycle is revenue expenditure suited to short-term finance.
+The statement is true.
+', 'TRUE — Bonds issued to investors are a form of long-term external debt finance: the company borrows from bondholders and owes interest and principal according to the bond terms, distinct from equity share capital.
 
-This statement draws on choosing an appropriate source of finance. Treat it as a checklist against the core concept named in the stem, not as a general opinion about business.
+Issuance costs are part of the cost criterion alongside borrowing interest.
 
-In this setting, inputs consumed quickly fit short-term credit without lengthy repayment schedules. The wording matches the textbook relationship without adding extra conditions.
+Apply the chapter mechanism to the exact wording: name the ownership form or finance source correctly, then check whether the claimed tax, liability, repayment, or matching consequence actually follows from that category.
 
-The reasoning chain is complete, so mark the statement true.', 'TRUE — Evaluated against the textbook standard, this assertion is correct. Buying assets that will be used over some or even many years is capital expenditure requiring long-term finance.
+So the sentence is a correct description of the mechanism at work in this case.
 
-The relevant theory comes from choosing an appropriate source of finance. Identify which definition or relationship the sentence is trying to test before deciding true or false.
+The statement is true.
+'] WHERE case_id = 'CASE 4.6.18' AND tier = 'full';
+UPDATE public.economics_cases SET tactical_explanations = ARRAY['TRUE — Gearing reflects how heavily the firm relies on loan capital relative to equity. High gearing raises fixed interest burdens and insolvency risk if revenues dip, and can make new lenders reluctant to extend further credit.
 
-Applied carefully, multi-year assets should be funded over a horizon matching useful life. Nothing in the sentence stretches the concept beyond its standard use.
+Capital expenditure on assets used over many years should normally be matched with long-term finance so repayment horizons align with the asset''s service life. Funding a multi-year plant from rolling weekly supplier credit mismatches term and use.
 
-The reasoning chain is complete, so mark the statement true.', 'TRUE — This statement is correct. Internal sources of finance can be preferable when loan capital is already high because they avoid new repayment obligations.
+Asset life dictates long-term funding needs even when additional debt is costly.
 
-Here you must apply ideas from choosing an appropriate source of finance to a concrete situation rather than recite a definition from memory. Ownership, customer type, stakeholder group, or country of production usually decides the verdict.
+On that basis the assertion matches the ownership or finance rule being tested.
 
-Applied carefully, retained earnings do not create new mandatory debt service like another loan would. Nothing in the sentence stretches the concept beyond its standard use.
+The statement is true.
+', 'FALSE — Funding long-lived assets from short-term supplier credit ignores matching: the asset still binds capital for years while the credit may fall due in days or weeks, creating refinancing pressure.
 
-The reasoning chain is complete, so mark the statement true.'] WHERE case_id = 'CASE 4.6.23' AND tier = 'full';
-UPDATE public.economics_cases SET tactical_explanations = ARRAY['FALSE — Evaluated against the textbook standard, this assertion is false. A highly geared business should always add another large loan rather than use internal funds or investors.
+Long-lived vehicles are capital expenditure requiring long-term finance.
 
-The topic is choosing an appropriate source of finance, but the decisive skill here is reading quantifiers. Words such as never, always, only, or all turn a generally true idea into a claim that can be rejected by one routine counterexample.
+Finance choice weighs cost (interest and issuance costs), gearing risk (heavy loan capital raises fixed burdens and insolvency exposure), and matching (long-lived assets with long-term finance; short-cycle materials with short-term credit). No single criterion replaces the others.
 
-The statement overreaches because the chapter favours internal funds or investors when gearing is already high. The trap is to agree with the topic while missing the one detail that breaks the logic.
+That misclassification is enough to reject the claim.
 
-Watch the absolute wording "always": exam statements often sound plausible until a single scope word turns an otherwise familiar idea into an overclaim.
+The statement is false.
+', 'FALSE — High gearing is a risk warning; it does not automatically forbid every short-term trade-credit purchase of materials, nor is interest the only criterion when choosing finance. Matching asset life and overall risk still matter.
 
-The statement sounds plausible but fails on precision, so it is false.', 'FALSE — The claim is false. Capital expenditure on assets used over many years can safely rely on thirty-day trade credit alone.
+Interest on loans remains part of the cost criterion at any gearing level.
 
-This statement draws on choosing an appropriate source of finance. Treat it as a checklist against the core concept named in the stem, not as a general opinion about business.
+Finance choice weighs cost (interest and issuance costs), gearing risk (heavy loan capital raises fixed burdens and insolvency exposure), and matching (long-lived assets with long-term finance; short-cycle materials with short-term credit). No single criterion replaces the others.
 
-Applied to this claim, multi-year assets require long-term finance, not brief supplier credit. That is why the sentence does not survive careful reading.
+That misclassification is enough to reject the claim.
 
-Because the decisive detail is wrong, mark the statement false.', 'TRUE — This statement is correct. Because loans must be repaid, a high proportion of loan capital can burden the business with insolvency risk.
+The statement is false.
+', 'FALSE — High gearing is a risk warning; it does not automatically forbid every short-term trade-credit purchase of materials, nor is interest the only criterion when choosing finance. Matching asset life and overall risk still matter.
 
-Here you must apply ideas from choosing an appropriate source of finance to a concrete situation rather than recite a definition from memory. Ownership, customer type, stakeholder group, or country of production usually decides the verdict.
+Funding long-lived assets from short-term supplier credit ignores matching: the asset still binds capital for years while the credit may fall due in days or weeks, creating refinancing pressure.
 
-Applied carefully, debt service on heavy loans threatens solvency if revenues fall short. Nothing in the sentence stretches the concept beyond its standard use.
+Expenditure type is determined by use and asset life, not by renaming it when debt is high.
 
-The reasoning chain is complete, so mark the statement true.', 'FALSE — The claim is false. Interest on loans is the only cost element, so administration costs of share or bond issues need not be compared.
+On that basis the assertion attaches the wrong legal, tax, liability, or finance label.
 
-This statement draws on choosing an appropriate source of finance. Treat it as a checklist against the core concept named in the stem, not as a general opinion about business.
+The statement is false.
+', 'FALSE — Pledging collateral secures the lender; it does not waive all interest, exclude the loan from liabilities, incorporate the firm, or remove unlimited liability for any remaining shortfall. Short-term supplier trade credit also does not typically demand a mortgage over the home.
 
-Applied to this claim, administration costs for shares and bonds are part of the cost criterion alongside loan interest. That is why the sentence does not survive careful reading.
+Interest matters, but it is not the sole cost or sole criterion. Issuance and administration costs, gearing risk, and intended use / term matching also shape the choice between loans, share issues, and short-term credit.
 
-The statement sounds plausible but fails on precision, so it is false.', 'FALSE — This statement is false. High gearing means a firm should ignore its financial situation and select finance solely by the lowest advertised interest rate.
+Collateral relates to lender risk from gearing; interest and issuance costs remain separate cost elements.
 
-The relevant theory comes from choosing an appropriate source of finance. Identify which definition or relationship the sentence is trying to test before deciding true or false.
+On that basis the assertion attaches the wrong legal, tax, liability, or finance label.
 
-The statement overreaches because financial situation and gearing still matter even when one source quotes a low interest rate. The trap is to agree with the topic while missing the one detail that breaks the logic.
+The statement is false.
+'] WHERE case_id = 'CASE 4.6.19' AND tier = 'full';
+UPDATE public.economics_cases SET tactical_explanations = ARRAY['TRUE — Revenue spending and routine materials purchases are typically suited to short-term credit (trade credit, overdrafts) because the cash cycle is short. Matching still applies — just toward shorter instruments.
 
-Because the decisive detail is wrong, mark the statement false.'] WHERE case_id = 'CASE 4.6.24' AND tier = 'full';
-UPDATE public.economics_cases SET tactical_explanations = ARRAY['TRUE — The claim is correct. Capital expenditure on expansion assets used over many years requires long-term finance.
+Short-cycle inputs align with trade credit or overdrafts.
 
-This statement draws on choosing an appropriate source of finance. Treat it as a checklist against the core concept named in the stem, not as a general opinion about business.
+Apply the chapter mechanism to the exact wording: name the ownership form or finance source correctly, then check whether the claimed tax, liability, repayment, or matching consequence actually follows from that category.
 
-In this setting, long-lived expansion assets need long-term funding. The wording matches the textbook relationship without adding extra conditions.
+On that basis the assertion matches the ownership or finance rule being tested.
 
-Every part of the claim aligns with the standard concept, so the statement stands.', 'TRUE — The claim is correct. Revenue expenditure on routine inputs can safely use short-term finance.
+The statement is true.
+', 'FALSE — High gearing is a risk warning; it does not automatically forbid every short-term trade-credit purchase of materials, nor is interest the only criterion when choosing finance. Matching asset life and overall risk still matter.
 
-This statement draws on choosing an appropriate source of finance. Treat it as a checklist against the core concept named in the stem, not as a general opinion about business.
+Share and bond administration costs still enter the cost criterion regardless of gearing.
 
-In this setting, short-cycle spending fits brief credit facilities. The wording matches the textbook relationship without adding extra conditions.
+Finance choice weighs cost (interest and issuance costs), gearing risk (heavy loan capital raises fixed burdens and insolvency exposure), and matching (long-lived assets with long-term finance; short-cycle materials with short-term credit). No single criterion replaces the others.
 
-Every part of the claim aligns with the standard concept, so the statement stands.', 'FALSE — The claim is false. High gearing guarantees that every lender will extend further credit at the same rate as before the debt build-up.
+So the sentence does not survive once the correct mechanism is applied.
 
-Although the subject matter is choosing an appropriate source of finance, this is really a logic check on overstatement. Non-profit surpluses, mixed economies, and partial market failure are classic cases where absolute wording fails.
+The statement is false.
+', 'TRUE — Bonds issued to investors are a form of long-term external debt finance: the company borrows from bondholders and owes interest and principal according to the bond terms, distinct from equity share capital.
 
-Applied to this claim, lenders typically tighten terms when loan capital is already substantial, not maintain identical pricing. That is why the sentence does not survive careful reading.
+The cost criterion covers interest and issuance expenses.
 
-Watch the absolute wording "every": exam statements often sound plausible until a single scope word turns an otherwise familiar idea into an overclaim.
+Apply the chapter mechanism to the exact wording: name the ownership form or finance source correctly, then check whether the claimed tax, liability, repayment, or matching consequence actually follows from that category.
 
-Once the overclaim or mislabel is exposed, the only consistent answer is false.', 'TRUE — The claim is correct. High gearing may make lenders offer credit only at higher interest or with collateral.
+On that basis the assertion matches the ownership or finance rule being tested.
 
-This statement draws on choosing an appropriate source of finance. Treat it as a checklist against the core concept named in the stem, not as a general opinion about business.
+The statement is true.
+', 'TRUE — Long-term lenders commonly require pledgeable assets — often land and property via a mortgage — as security. Collateral backs repayment; the loan remains a liability. If private property was pledged and the business cannot repay, that property remains at stake.
 
-In this setting, stricter terms often accompany new loans to highly geared firms. The wording matches the textbook relationship without adding extra conditions.
+Gearing reflects how heavily the firm relies on loan capital relative to equity. High gearing raises fixed interest burdens and insolvency risk if revenues dip, and can make new lenders reluctant to extend further credit.
 
-The reasoning chain is complete, so mark the statement true.', 'FALSE — The claim is false. Bond flotation costs should be ignored when comparing debt sources because only coupon interest represents the price of bond finance.
+Elevated debt tightens credit terms and makes non-debt finance attractive.
 
-The scenario is a worked example of choosing an appropriate source of finance. Translate the story into the textbook category first; only then judge whether the sentence describes that category accurately.
+That is why the claim stands for this form of business or source of finance.
 
-Applied to this claim, flotation costs belong in the total cost of bond finance alongside coupon interest. That is why the sentence does not survive careful reading.
+The statement is true.
+', 'FALSE — Bonds issued to investors are a form of long-term external debt finance: the company borrows from bondholders and owes interest and principal according to the bond terms, distinct from equity share capital.
 
-The statement sounds plausible but fails on precision, so it is false.'] WHERE case_id = 'CASE 4.6.25' AND tier = 'full';
+Short-cycle ingredients suit short-term finance, not multi-year bond funding.
+
+Apply the chapter mechanism to the exact wording: name the ownership form or finance source correctly, then check whether the claimed tax, liability, repayment, or matching consequence actually follows from that category.
+
+So the sentence does not survive once the correct mechanism is applied.
+
+The statement is false.
+'] WHERE case_id = 'CASE 4.6.20' AND tier = 'full';
+UPDATE public.economics_cases SET tactical_explanations = ARRAY['FALSE — Trade credit must be repaid within the agreed period. It is typically short-term purchase-cycle finance, not long-term debt, and it does not erase the proprietor''s liability or the need to manage cash-flow timing.
+
+Funding long-lived assets from short-term supplier credit ignores matching: the asset still binds capital for years while the credit may fall due in days or weeks, creating refinancing pressure.
+
+Long-lived assets need long-term finance, not supplier credit for materials.
+
+That misclassification is enough to reject the claim.
+
+The statement is false.
+', 'TRUE — Revenue spending and routine materials purchases are typically suited to short-term credit (trade credit, overdrafts) because the cash cycle is short. Matching still applies — just toward shorter instruments.
+
+Short-term finance suits spending that rolls over each operating period.
+
+Apply the chapter mechanism to the exact wording: name the ownership form or finance source correctly, then check whether the claimed tax, liability, repayment, or matching consequence actually follows from that category.
+
+That is why the claim stands for this form of business or source of finance.
+
+The statement is true.
+', 'TRUE — Bonds issued to investors are a form of long-term external debt finance: the company borrows from bondholders and owes interest and principal according to the bond terms, distinct from equity share capital.
+
+Bond interest and flotation costs together shape the price of that debt source.
+
+Apply the chapter mechanism to the exact wording: name the ownership form or finance source correctly, then check whether the claimed tax, liability, repayment, or matching consequence actually follows from that category.
+
+That is why the claim stands for this form of business or source of finance.
+
+The statement is true.
+', 'TRUE — Keep the three choice criteria in view: cost (interest and issuance costs), gearing/insolvency risk, and matching finance term to the life of the asset or spending.
+
+Equity raising is not cost-free; administration costs form part of the comparison.
+
+Apply the chapter mechanism to the exact wording: name the ownership form or finance source correctly, then check whether the claimed tax, liability, repayment, or matching consequence actually follows from that category.
+
+So the sentence is a correct description of the mechanism at work in this case.
+
+The statement is true.
+', 'FALSE — Keep the three choice criteria in view: cost (interest and issuance costs), gearing/insolvency risk, and matching finance term to the life of the asset or spending.
+
+Financial situation and gearing affect whether further debt is prudent even when use is matched.
+
+Apply the chapter mechanism to the exact wording: name the ownership form or finance source correctly, then check whether the claimed tax, liability, repayment, or matching consequence actually follows from that category.
+
+That misclassification is enough to reject the claim.
+
+The statement is false.
+'] WHERE case_id = 'CASE 4.6.21' AND tier = 'full';
+UPDATE public.economics_cases SET tactical_explanations = ARRAY['FALSE — High gearing is a risk warning; it does not automatically forbid every short-term trade-credit purchase of materials, nor is interest the only criterion when choosing finance. Matching asset life and overall risk still matter.
+
+The chapter explicitly favours internal funds or investors when gearing is high.
+
+Internal finance recycles surplus already inside the firm (retained profit, asset sales). External finance comes from outside providers (owner start-up savings in this framework, investors, banks, suppliers on credit). Where the cash sits in the bank account does not decide the label.
+
+On that basis the assertion attaches the wrong legal, tax, liability, or finance label.
+
+The statement is false.
+', 'FALSE — Keep the three choice criteria in view: cost (interest and issuance costs), gearing/insolvency risk, and matching finance term to the life of the asset or spending.
+
+Share issuance involves administration costs that must be weighed against loan interest.
+
+Apply the chapter mechanism to the exact wording: name the ownership form or finance source correctly, then check whether the claimed tax, liability, repayment, or matching consequence actually follows from that category.
+
+On that basis the assertion attaches the wrong legal, tax, liability, or finance label.
+
+The statement is false.
+', 'TRUE — Trade credit is a supplier agreement allowing deferred payment for purchases. It creates a short-term external liability until settlement. Deferral changes cash timing; it is not a grant and not internal finance.
+
+A bank overdraft is flexible short-term credit on a current account: the balance may go negative within a limit. Interest is charged when the account is overdrawn, not on a healthy positive balance. The facility is external debt, not internal finance.
+
+Working-capital spending suits short-term credit without multi-year repayment tails.
+
+So the sentence is a correct description of the mechanism at work in this case.
+
+The statement is true.
+', 'FALSE — Pledging collateral secures the lender; it does not waive all interest, exclude the loan from liabilities, incorporate the firm, or remove unlimited liability for any remaining shortfall. Short-term supplier trade credit also does not typically demand a mortgage over the home.
+
+Revenue spending and routine materials purchases are typically suited to short-term credit (trade credit, overdrafts) because the cash cycle is short. Matching still applies — just toward shorter instruments.
+
+Short-cycle materials suit short-term finance, not long-term mortgage loans.
+
+That misclassification is enough to reject the claim.
+
+The statement is false.
+', 'TRUE — Gearing reflects how heavily the firm relies on loan capital relative to equity. High gearing raises fixed interest burdens and insolvency risk if revenues dip, and can make new lenders reluctant to extend further credit.
+
+Additional loans compound fixed repayment obligations when debt is already substantial.
+
+Finance choice weighs cost (interest and issuance costs), gearing risk (heavy loan capital raises fixed burdens and insolvency exposure), and matching (long-lived assets with long-term finance; short-cycle materials with short-term credit). No single criterion replaces the others.
+
+So the sentence is a correct description of the mechanism at work in this case.
+
+The statement is true.
+'] WHERE case_id = 'CASE 4.6.22' AND tier = 'full';
+UPDATE public.economics_cases SET tactical_explanations = ARRAY['FALSE — Bonds issued to investors are a form of long-term external debt finance: the company borrows from bondholders and owes interest and principal according to the bond terms, distinct from equity share capital.
+
+Issuance costs belong in the cost criterion alongside loan interest.
+
+Apply the chapter mechanism to the exact wording: name the ownership form or finance source correctly, then check whether the claimed tax, liability, repayment, or matching consequence actually follows from that category.
+
+On that basis the assertion attaches the wrong legal, tax, liability, or finance label.
+
+The statement is false.
+', 'TRUE — Keep the three choice criteria in view: cost (interest and issuance costs), gearing/insolvency risk, and matching finance term to the life of the asset or spending.
+
+Total cost includes both ongoing charges and upfront issuance expenses.
+
+Apply the chapter mechanism to the exact wording: name the ownership form or finance source correctly, then check whether the claimed tax, liability, repayment, or matching consequence actually follows from that category.
+
+That is why the claim stands for this form of business or source of finance.
+
+The statement is true.
+', 'TRUE — Revenue spending and routine materials purchases are typically suited to short-term credit (trade credit, overdrafts) because the cash cycle is short. Matching still applies — just toward shorter instruments.
+
+Inputs consumed quickly fit short-term credit without lengthy repayment schedules.
+
+Apply the chapter mechanism to the exact wording: name the ownership form or finance source correctly, then check whether the claimed tax, liability, repayment, or matching consequence actually follows from that category.
+
+That is why the claim stands for this form of business or source of finance.
+
+The statement is true.
+', 'TRUE — Capital expenditure on assets used over many years should normally be matched with long-term finance so repayment horizons align with the asset''s service life. Funding a multi-year plant from rolling weekly supplier credit mismatches term and use.
+
+Multi-year assets should be funded over a horizon matching useful life.
+
+Finance choice weighs cost (interest and issuance costs), gearing risk (heavy loan capital raises fixed burdens and insolvency exposure), and matching (long-lived assets with long-term finance; short-cycle materials with short-term credit). No single criterion replaces the others.
+
+That is why the claim stands for this form of business or source of finance.
+
+The statement is true.
+', 'TRUE — Gearing reflects how heavily the firm relies on loan capital relative to equity. High gearing raises fixed interest burdens and insolvency risk if revenues dip, and can make new lenders reluctant to extend further credit.
+
+Retained earnings do not create new mandatory debt service like another loan would.
+
+Internal finance recycles surplus already inside the firm (retained profit, asset sales). External finance comes from outside providers (owner start-up savings in this framework, investors, banks, suppliers on credit). Where the cash sits in the bank account does not decide the label.
+
+So the sentence is a correct description of the mechanism at work in this case.
+
+The statement is true.
+'] WHERE case_id = 'CASE 4.6.23' AND tier = 'full';
+UPDATE public.economics_cases SET tactical_explanations = ARRAY['FALSE — Keep the three choice criteria in view: cost (interest and issuance costs), gearing/insolvency risk, and matching finance term to the life of the asset or spending. The chapter favours internal funds or investors when gearing is already high.
+
+Internal finance recycles surplus already inside the firm (retained profit, asset sales). External finance comes from outside providers (owner start-up savings in this framework, investors, banks, suppliers on credit). Where the cash sits in the bank account does not decide the label.
+
+That misclassification is enough to reject the claim.
+
+The statement is false.
+', 'FALSE — Trade credit must be repaid within the agreed period. It is typically short-term purchase-cycle finance, not long-term debt, and it does not erase the proprietor''s liability or the need to manage cash-flow timing.
+
+Funding long-lived assets from short-term supplier credit ignores matching: the asset still binds capital for years while the credit may fall due in days or weeks, creating refinancing pressure.
+
+Multi-year assets require long-term finance, not brief supplier credit.
+
+So the sentence does not survive once the correct mechanism is applied.
+
+The statement is false.
+', 'TRUE — Keep the three choice criteria in view: cost (interest and issuance costs), gearing/insolvency risk, and matching finance term to the life of the asset or spending.
+
+Debt service on heavy loans threatens solvency if revenues fall short.
+
+Apply the chapter mechanism to the exact wording: name the ownership form or finance source correctly, then check whether the claimed tax, liability, repayment, or matching consequence actually follows from that category.
+
+On that basis the assertion matches the ownership or finance rule being tested.
+
+The statement is true.
+', 'FALSE — Bonds issued to investors are a form of long-term external debt finance: the company borrows from bondholders and owes interest and principal according to the bond terms, distinct from equity share capital.
+
+Interest matters, but it is not the sole cost or sole criterion. Issuance and administration costs, gearing risk, and intended use / term matching also shape the choice between loans, share issues, and short-term credit.
+
+Administration costs for shares and bonds are part of the cost criterion alongside loan interest.
+
+On that basis the assertion attaches the wrong legal, tax, liability, or finance label.
+
+The statement is false.
+', 'FALSE — High gearing is a risk warning; it does not automatically forbid every short-term trade-credit purchase of materials, nor is interest the only criterion when choosing finance. Matching asset life and overall risk still matter.
+
+Interest matters, but it is not the sole cost or sole criterion. Issuance and administration costs, gearing risk, and intended use / term matching also shape the choice between loans, share issues, and short-term credit.
+
+Financial situation and gearing still matter even when one source quotes a low interest rate.
+
+That misclassification is enough to reject the claim.
+
+The statement is false.
+'] WHERE case_id = 'CASE 4.6.24' AND tier = 'full';
+UPDATE public.economics_cases SET tactical_explanations = ARRAY['TRUE — Capital expenditure on assets used over many years should normally be matched with long-term finance so repayment horizons align with the asset''s service life. Funding a multi-year plant from rolling weekly supplier credit mismatches term and use.
+
+Long-lived expansion assets need long-term funding.
+
+Finance choice weighs cost (interest and issuance costs), gearing risk (heavy loan capital raises fixed burdens and insolvency exposure), and matching (long-lived assets with long-term finance; short-cycle materials with short-term credit). No single criterion replaces the others.
+
+On that basis the assertion matches the ownership or finance rule being tested.
+
+The statement is true.
+', 'TRUE — Revenue spending and routine materials purchases are typically suited to short-term credit (trade credit, overdrafts) because the cash cycle is short. Matching still applies — just toward shorter instruments.
+
+Short-cycle spending fits brief credit facilities.
+
+Apply the chapter mechanism to the exact wording: name the ownership form or finance source correctly, then check whether the claimed tax, liability, repayment, or matching consequence actually follows from that category.
+
+That is why the claim stands for this form of business or source of finance.
+
+The statement is true.
+', 'FALSE — High gearing is a risk warning; it does not automatically forbid every short-term trade-credit purchase of materials, nor is interest the only criterion when choosing finance. Matching asset life and overall risk still matter.
+
+Lenders typically tighten terms when loan capital is already substantial, not maintain identical pricing.
+
+Finance choice weighs cost (interest and issuance costs), gearing risk (heavy loan capital raises fixed burdens and insolvency exposure), and matching (long-lived assets with long-term finance; short-cycle materials with short-term credit). No single criterion replaces the others.
+
+So the sentence does not survive once the correct mechanism is applied.
+
+The statement is false.
+', 'TRUE — Long-term lenders commonly require pledgeable assets — often land and property via a mortgage — as security. Collateral backs repayment; the loan remains a liability. If private property was pledged and the business cannot repay, that property remains at stake.
+
+Gearing reflects how heavily the firm relies on loan capital relative to equity. High gearing raises fixed interest burdens and insolvency risk if revenues dip, and can make new lenders reluctant to extend further credit.
+
+Interest matters, but it is not the sole cost or sole criterion. Issuance and administration costs, gearing risk, and intended use / term matching also shape the choice between loans, share issues, and short-term credit.
+
+Stricter terms often accompany new loans to highly geared firms.
+
+So the sentence is a correct description of the mechanism at work in this case.
+
+The statement is true.
+', 'FALSE — Bonds issued to investors are a form of long-term external debt finance: the company borrows from bondholders and owes interest and principal according to the bond terms, distinct from equity share capital.
+
+Interest matters, but it is not the sole cost or sole criterion. Issuance and administration costs, gearing risk, and intended use / term matching also shape the choice between loans, share issues, and short-term credit.
+
+Flotation costs belong in the total cost of bond finance alongside coupon interest.
+
+So the sentence does not survive once the correct mechanism is applied.
+
+The statement is false.
+'] WHERE case_id = 'CASE 4.6.25' AND tier = 'full';

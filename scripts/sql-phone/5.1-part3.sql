@@ -1,824 +1,903 @@
 -- Update expanded explanations for 5.1-part3 (25 cases).
 -- Safe to re-run: only updates tactical_explanations.
 
-UPDATE public.economics_cases SET tactical_explanations = ARRAY['FALSE — This statement is false. A cleaning contract sold to a hospital trust is a consumer product because every sale ultimately serves human needs.
+UPDATE public.economics_cases SET tactical_explanations = ARRAY['FALSE — Consumer products are goods and services sold to consumers or private households (B2C). The household or individual buyer defines the label, not retail branding, luxury status, or physical size.
 
-The topic is what counts as a marketing product (goods and services, B2B and B2C), but the decisive skill here is reading quantifiers. Words such as never, always, only, or all turn a generally true idea into a claim that can be rejected by one routine counterexample.
+Sales to a business customer classify the cleaning contract as a b2b producer product, not a consumer product.
 
-The statement overreaches because sales to a business customer classify the cleaning contract as a b2b producer product, not a consumer product. The trap is to agree with the topic while missing the one detail that breaks the logic.
+Once the defining feature is restored, the assertion falls away.
 
-Watch the absolute wording "every": exam statements often sound plausible until a single scope word turns an otherwise familiar idea into an overclaim.
+The statement is false.
+', 'FALSE — Producer products are goods and services sold from one business to another (B2B). What matters is the purchaser''s identity as a business customer, not factory origin, weight, packaging, or the seller''s registration alone.
 
-The statement sounds plausible but fails on precision, so it is false.', 'FALSE — On the Fuhrmann definition used in the entrance exam, the sentence is false. A cleaning contract sold to a private buyer is a producer product because the seller is a business firm.
+Sales to a household customer classify the cleaning contract as a b2c consumer product, not a producer product.
 
-The scenario is a worked example of what counts as a marketing product (goods and services, B2B and B2C). Translate the story into the textbook category first; only then judge whether the sentence describes that category accurately.
+The mislabelled category or reversed comparison is enough to reject the claim.
 
-Applied to this claim, sales to a household customer classify the cleaning contract as a b2c consumer product, not a producer product. That is why the sentence does not survive careful reading.
+The statement is false.
+', 'TRUE — Consumer products are goods and services sold to consumers or private households (B2C). The household or individual buyer defines the label, not retail branding, luxury status, or physical size.
 
-The statement sounds plausible but fails on precision, so it is false.', 'TRUE — The claim is correct. A catering tray sold to a household member is a consumer product because the purchaser is a private household or individual consumer.
+Sales to household customers classify the catering tray as a b2c consumer product.
 
-The scenario is a worked example of what counts as a marketing product (goods and services, B2B and B2C). Translate the story into the textbook category first; only then judge whether the sentence describes that category accurately.
+Under that definition the assertion is the right description of the situation.
 
-In this setting, sales to household customers classify the catering tray as a b2c consumer product. The wording matches the textbook relationship without adding extra conditions.
+The statement is true.
+', 'TRUE — Producer products are goods and services sold from one business to another (B2B). What matters is the purchaser''s identity as a business customer, not factory origin, weight, packaging, or the seller''s registration alone.
 
-The reasoning chain is complete, so mark the statement true.', 'TRUE — This statement is correct. The same catering tray may be marketed as a producer product in one transaction and a consumer product in another depending on the buyer.
+Identical catering tray models shift between producer and consumer labels with the customer, not the design.
 
-The relevant theory comes from what counts as a marketing product (goods and services, B2B and B2C). Identify which definition or relationship the sentence is trying to test before deciding true or false.
+Nothing in the wording contradicts that marketing test, so the claim is sound.
 
-Applied carefully, identical catering tray models shift between producer and consumer labels with the customer, not the design. Nothing in the sentence stretches the concept beyond its standard use.
+The statement is true.
+', 'FALSE — The same catalogue item can be a producer product in one sale and a consumer product in another. Classification follows the buyer in that transaction, so absolute words like "always" or "only" usually fail.
 
-No qualifying word breaks the definition or scenario, so the answer is true.', 'FALSE — The claim is false. The same cleaning contract must keep one fixed product label for all buyers because the design never changes.
+Identical cleaning contract models can be producer or consumer products depending on the buyer.
 
-Although the subject matter is what counts as a marketing product (goods and services, B2B and B2C), this is really a logic check on overstatement. Non-profit surpluses, mixed economies, and partial market failure are classic cases where absolute wording fails.
+One clear counterexample under the right criterion is enough to reject the sentence.
 
-Applied to this claim, identical cleaning contract models can be producer or consumer products depending on the buyer. That is why the sentence does not survive careful reading.
+The statement is false.
+'] WHERE case_id = 'CASE 5.1.51' AND tier = 'full';
+UPDATE public.economics_cases SET tactical_explanations = ARRAY['FALSE — Marketing''s product definition is deliberately wide: it covers every exchangeable good and every exchangeable service that can fulfil customer wishes and needs. Physical form is not a requirement.
 
-Watch the absolute wording "all": exam statements often sound plausible until a single scope word turns an otherwise familiar idea into an overclaim.
+A cleaning contract can be a product when exchanged as a good or service to fulfil customer wishes and needs.
 
-Once the overclaim or mislabel is exposed, the only consistent answer is false.'] WHERE case_id = 'CASE 5.1.51' AND tier = 'full';
-UPDATE public.economics_cases SET tactical_explanations = ARRAY['FALSE — On the Fuhrmann definition used in the entrance exam, the sentence is false. A cleaning contract is not a product unless it is a manufactured physical good.
+The mislabelled category or reversed comparison is enough to reject the claim.
 
-This statement draws on what counts as a marketing product (goods and services, B2B and B2C). Treat it as a checklist against the core concept named in the stem, not as a general opinion about business.
+The statement is false.
+', 'TRUE — Producer products are goods and services sold from one business to another (B2B). What matters is the purchaser''s identity as a business customer, not factory origin, weight, packaging, or the seller''s registration alone.
 
-Applied to this claim, a cleaning contract can be a product when exchanged as a good or service to fulfil customer wishes and needs. That is why the sentence does not survive careful reading.
+B2b exchange with a business buyer makes the catering tray a producer product.
 
-Once the overclaim or mislabel is exposed, the only consistent answer is false.', 'TRUE — This statement is correct. When a firm exchanges a catering tray with a warehouse operator, the transaction is business-to-business and the item is a producer product.
+The sentence therefore reports the concept accurately for this case.
 
-Here you must apply ideas from what counts as a marketing product (goods and services, B2B and B2C) to a concrete situation rather than recite a definition from memory. Ownership, customer type, stakeholder group, or country of production usually decides the verdict.
+The statement is true.
+', 'FALSE — Exchange is required for a good or service to count as a product in marketing terminology. Items that are only moved internally, given without trade, or not offered for exchange fall outside that definition.
 
-Applied carefully, b2b exchange with a business buyer makes the catering tray a producer product. Nothing in the sentence stretches the concept beyond its standard use.
+Exchange is required for a cleaning contract to count as a product in marketing terminology.
 
-No qualifying word breaks the definition or scenario, so the answer is true.', 'FALSE — Evaluated against the textbook standard, this assertion is false. Exchange is irrelevant to whether a cleaning contract counts as a product if customers desire it strongly enough.
+Once the defining feature is restored, the assertion falls away.
 
-Here you must apply ideas from what counts as a marketing product (goods and services, B2B and B2C) to a concrete situation rather than recite a definition from memory. Ownership, customer type, stakeholder group, or country of production usually decides the verdict.
+The statement is false.
+', 'TRUE — Producer products are goods and services sold from one business to another (B2B). What matters is the purchaser''s identity as a business customer, not factory origin, weight, packaging, or the seller''s registration alone.
 
-The statement overreaches because exchange is required for a cleaning contract to count as a product in marketing terminology. The trap is to agree with the topic while missing the one detail that breaks the logic.
+Commercial use by a business purchaser defines the catering tray as a producer product.
 
-Once the overclaim or mislabel is exposed, the only consistent answer is false.', 'TRUE — On the Fuhrmann definition used in the entrance exam, the sentence is correct. Marketing classifies a catering tray sold for commercial operations to a warehouse operator as a producer product rather than a consumer product.
+The sentence therefore reports the concept accurately for this case.
 
-The section on what counts as a marketing product (goods and services, B2B and B2C) frequently contrasts two similar ideas side by side. A comparison statement is true only if the relationship is stated in the right direction and applies to the right concept pair.
+The statement is true.
+', 'FALSE — A product in marketing is any good and/or service that can be exchanged to fulfil customer wishes and needs, whether the customer is a firm or a household.
 
-In this setting, commercial use by a business purchaser defines the catering tray as a producer product. The wording matches the textbook relationship without adding extra conditions.
+Business customers have operational wishes and needs that exchanged cleaning contract offerings can fulfil as products.
 
-No qualifying word breaks the definition or scenario, so the answer is true.', 'FALSE — This statement is false. Marketing excludes a cleaning contract from products when sold to a hospital trust because businesses do not have wishes or needs.
+Swap in the textbook criterion and the sentence no longer describes the case.
 
-Here you must apply ideas from what counts as a marketing product (goods and services, B2B and B2C) to a concrete situation rather than recite a definition from memory. Ownership, customer type, stakeholder group, or country of production usually decides the verdict.
+The statement is false.
+'] WHERE case_id = 'CASE 5.1.52' AND tier = 'full';
+UPDATE public.economics_cases SET tactical_explanations = ARRAY['TRUE — Consumer products are goods and services sold to consumers or private households (B2C). The household or individual buyer defines the label, not retail branding, luxury status, or physical size.
 
-The statement overreaches because business customers have operational wishes and needs that exchanged cleaning contract offerings can fulfil as products. The trap is to agree with the topic while missing the one detail that breaks the logic.
+Personal or domestic use by a household purchaser defines the catering tray as a consumer product.
 
-The statement sounds plausible but fails on precision, so it is false.'] WHERE case_id = 'CASE 5.1.52' AND tier = 'full';
-UPDATE public.economics_cases SET tactical_explanations = ARRAY['TRUE — This statement is correct. Marketing classifies a catering tray sold for personal or domestic use to a household member as a consumer product rather than a producer product.
+Under that definition the assertion is the right description of the situation.
 
-This tests discrimination within what counts as a marketing product (goods and services, B2B and B2C): local versus international scope, equity versus debt, product versus market orientation, and similar pairs.
+The statement is true.
+', 'FALSE — Exchange is required for a good or service to count as a product in marketing terminology. Items that are only moved internally, given without trade, or not offered for exchange fall outside that definition.
 
-Applied carefully, personal or domestic use by a household purchaser defines the catering tray as a consumer product. Nothing in the sentence stretches the concept beyond its standard use.
+On this stem (households): household customers acquire consumer products such as a cleaning contract through b2c exchange.
 
-No qualifying word breaks the definition or scenario, so the answer is true.', 'FALSE — On the Fuhrmann definition used in the entrance exam, the sentence is false. Marketing excludes a cleaning contract from products when sold to a private buyer because households only receive gifts, not products.
+Those restricting words stretch a limited idea past what marketing allows.
 
-The scenario is a worked example of what counts as a marketing product (goods and services, B2B and B2C). Translate the story into the textbook category first; only then judge whether the sentence describes that category accurately.
+The statement is false.
+', 'FALSE — Exchange is required for a good or service to count as a product in marketing terminology. Items that are only moved internally, given without trade, or not offered for exchange fall outside that definition.
 
-Applied to this claim, household customers acquire consumer products such as a cleaning contract through b2c exchange. That is why the sentence does not survive careful reading.
+Internal transfers not offered for external exchange are not products in the marketing sense.
 
-Because the decisive detail is wrong, mark the statement false.', 'FALSE — This statement is false. A cleaning contract transferred internally between branches of one corporation remains a marketed product.
+Once the defining feature is restored, the assertion falls away.
 
-The relevant theory comes from what counts as a marketing product (goods and services, B2B and B2C). Identify which definition or relationship the sentence is trying to test before deciding true or false.
+The statement is false.
+', 'FALSE — Producer products are goods and services sold from one business to another (B2B). What matters is the purchaser''s identity as a business customer, not factory origin, weight, packaging, or the seller''s registration alone.
 
-The statement overreaches because internal transfers not offered for external exchange are not products in the marketing sense. The trap is to agree with the topic while missing the one detail that breaks the logic.
+B2b classification depends on the business purchaser, not solely on the seller''s industry.
 
-Once the overclaim or mislabel is exposed, the only consistent answer is false.', 'FALSE — On the Fuhrmann definition used in the entrance exam, the sentence is false. B2B classification of a cleaning contract depends on the seller''s industry rather than on the hospital trust purchaser.
+The mislabelled category or reversed comparison is enough to reject the claim.
 
-The section on what counts as a marketing product (goods and services, B2B and B2C) frequently contrasts two similar ideas side by side. A comparison statement is true only if the relationship is stated in the right direction and applies to the right concept pair.
+The statement is false.
+', 'TRUE — A product in marketing is any good and/or service that can be exchanged to fulfil customer wishes and needs, whether the customer is a firm or a household.
 
-Applied to this claim, b2b classification depends on the business purchaser, not solely on the seller''s industry. That is why the sentence does not survive careful reading.
+Operational needs of a business buyer place an exchanged catering tray among producer products.
 
-Students often remember that two concepts differ but swap the direction of the comparison. Verify which side of the pair is longer, larger, riskier, or more regulated.
+The sentence therefore reports the concept accurately for this case.
 
-Because the decisive detail is wrong, mark the statement false.', 'TRUE — The claim is correct. A catering tray exchanged to fulfil the operational needs of a warehouse operator counts as a product in the producer category.
+The statement is true.
+'] WHERE case_id = 'CASE 5.1.53' AND tier = 'full';
+UPDATE public.economics_cases SET tactical_explanations = ARRAY['FALSE — Consumer products are goods and services sold to consumers or private households (B2C). The household or individual buyer defines the label, not retail branding, luxury status, or physical size.
 
-This statement draws on what counts as a marketing product (goods and services, B2B and B2C). Treat it as a checklist against the core concept named in the stem, not as a general opinion about business.
+B2c classification depends on the household purchaser, not on retail branding alone.
 
-In this setting, operational needs of a business buyer place an exchanged catering tray among producer products. The wording matches the textbook relationship without adding extra conditions.
+Swap in the textbook criterion and the sentence no longer describes the case.
 
-The reasoning chain is complete, so mark the statement true.'] WHERE case_id = 'CASE 5.1.53' AND tier = 'full';
-UPDATE public.economics_cases SET tactical_explanations = ARRAY['FALSE — On the Fuhrmann definition used in the entrance exam, the sentence is false. B2C classification of a cleaning contract depends on colourful retail branding rather than on the private buyer purchaser.
+The statement is false.
+', 'TRUE — A product in marketing is any good and/or service that can be exchanged to fulfil customer wishes and needs, whether the customer is a firm or a household.
 
-The section on what counts as a marketing product (goods and services, B2B and B2C) frequently contrasts two similar ideas side by side. A comparison statement is true only if the relationship is stated in the right direction and applies to the right concept pair.
+Personal wishes of a household buyer place an exchanged catering tray among consumer products.
 
-Applied to this claim, b2c classification depends on the household purchaser, not on retail branding alone. That is why the sentence does not survive careful reading.
+The sentence therefore reports the concept accurately for this case.
 
-Students often remember that two concepts differ but swap the direction of the comparison. Verify which side of the pair is longer, larger, riskier, or more regulated.
+The statement is true.
+', 'FALSE — Consumer products are goods and services sold to consumers or private households (B2C). The household or individual buyer defines the label, not retail branding, luxury status, or physical size.
 
-Once the overclaim or mislabel is exposed, the only consistent answer is false.', 'TRUE — This statement is correct. A catering tray exchanged to fulfil the personal wishes of a household member counts as a product in the consumer category.
+Payment alone does not make the sale b2c; a business buyer implies b2b and a producer product.
 
-The relevant theory comes from what counts as a marketing product (goods and services, B2B and B2C). Identify which definition or relationship the sentence is trying to test before deciding true or false.
+Swap in the textbook criterion and the sentence no longer describes the case.
 
-Applied carefully, personal wishes of a household buyer place an exchanged catering tray among consumer products. Nothing in the sentence stretches the concept beyond its standard use.
+The statement is false.
+', 'TRUE — Producer products are goods and services sold from one business to another (B2B). What matters is the purchaser''s identity as a business customer, not factory origin, weight, packaging, or the seller''s registration alone.
 
-The reasoning chain is complete, so mark the statement true.', 'FALSE — On the Fuhrmann definition used in the entrance exam, the sentence is false. A cleaning contract sold to a hospital trust is B2C because money changes hands in the transaction.
+Inter-business sale of a catering tray to a warehouse operator is a textbook producer product case.
 
-The scenario is a worked example of what counts as a marketing product (goods and services, B2B and B2C). Translate the story into the textbook category first; only then judge whether the sentence describes that category accurately.
+The sentence therefore reports the concept accurately for this case.
 
-Applied to this claim, payment alone does not make the sale b2c; a business buyer implies b2b and a producer product. That is why the sentence does not survive careful reading.
+The statement is true.
+', 'FALSE — Producer products are goods and services sold from one business to another (B2B). What matters is the purchaser''s identity as a business customer, not factory origin, weight, packaging, or the seller''s registration alone.
 
-Once the overclaim or mislabel is exposed, the only consistent answer is false.', 'TRUE — On the Fuhrmann definition used in the entrance exam, the sentence is correct. Producer products include a catering tray when it is sold from one business to a warehouse operator for further commercial activity.
+The seller''s company status does not make a household sale b2b; it remains b2c with a consumer product.
 
-The scenario is a worked example of what counts as a marketing product (goods and services, B2B and B2C). Translate the story into the textbook category first; only then judge whether the sentence describes that category accurately.
+Swap in the textbook criterion and the sentence no longer describes the case.
 
-In this setting, inter-business sale of a catering tray to a warehouse operator is a textbook producer product case. The wording matches the textbook relationship without adding extra conditions.
+The statement is false.
+'] WHERE case_id = 'CASE 5.1.54' AND tier = 'full';
+UPDATE public.economics_cases SET tactical_explanations = ARRAY['TRUE — Consumer products are goods and services sold to consumers or private households (B2C). The household or individual buyer defines the label, not retail branding, luxury status, or physical size.
 
-The reasoning chain is complete, so mark the statement true.', 'FALSE — This statement is false. A cleaning contract sold to a private buyer is B2B because the seller is a registered company.
+Household sale of a catering tray to a household member is a textbook consumer product case.
 
-Here you must apply ideas from what counts as a marketing product (goods and services, B2B and B2C) to a concrete situation rather than recite a definition from memory. Ownership, customer type, stakeholder group, or country of production usually decides the verdict.
+The sentence therefore reports the concept accurately for this case.
 
-The statement overreaches because the seller''s company status does not make a household sale b2b; it remains b2c with a consumer product. The trap is to agree with the topic while missing the one detail that breaks the logic.
+The statement is true.
+', 'FALSE — Producer products are goods and services sold from one business to another (B2B). What matters is the purchaser''s identity as a business customer, not factory origin, weight, packaging, or the seller''s registration alone.
 
-The statement sounds plausible but fails on precision, so it is false.'] WHERE case_id = 'CASE 5.1.54' AND tier = 'full';
-UPDATE public.economics_cases SET tactical_explanations = ARRAY['TRUE — On the Fuhrmann definition used in the entrance exam, the sentence is correct. Consumer products include a catering tray when it is sold to a household member for private consumption or domestic use.
+Producer products include goods and services sold to businesses, including a finished cleaning contract for a hospital trust.
 
-The scenario is a worked example of what counts as a marketing product (goods and services, B2B and B2C). Translate the story into the textbook category first; only then judge whether the sentence describes that category accurately.
+Those restricting words stretch a limited idea past what marketing allows.
 
-In this setting, household sale of a catering tray to a household member is a textbook consumer product case. The wording matches the textbook relationship without adding extra conditions.
+The statement is false.
+', 'TRUE — Consumer products are goods and services sold to consumers or private households (B2C). The household or individual buyer defines the label, not retail branding, luxury status, or physical size.
 
-Every part of the claim aligns with the standard concept, so the statement stands.', 'FALSE — This statement is false. Producer products include only raw materials, so a finished cleaning contract sold to a hospital trust cannot be a producer product.
+On this stem (household): a catering tray remains a product in either channel; only the producer versus consumer label changes with the buyer.
 
-The topic is what counts as a marketing product (goods and services, B2B and B2C), but the decisive skill here is reading quantifiers. Words such as never, always, only, or all turn a generally true idea into a claim that can be rejected by one routine counterexample.
+The sentence therefore reports the concept accurately for this case.
 
-The statement overreaches because producer products include goods and services sold to businesses, including a finished cleaning contract for a hospital trust. The trap is to agree with the topic while missing the one detail that breaks the logic.
+The statement is true.
+', 'TRUE — Producer products are goods and services sold from one business to another (B2B). What matters is the purchaser''s identity as a business customer, not factory origin, weight, packaging, or the seller''s registration alone.
 
-Watch the absolute wording "cannot": exam statements often sound plausible until a single scope word turns an otherwise familiar idea into an overclaim.
+On this stem (consultancy / household): customer identity on the invoice determines whether the same catering tray is recorded as producer or consumer.
 
-Because the decisive detail is wrong, mark the statement false.', 'TRUE — On the Fuhrmann definition used in the entrance exam, the sentence is correct. The marketing term product covers a catering tray whether the exchange is B2B with a warehouse operator or B2C with a household member.
+Under that definition the assertion is the right description of the situation.
 
-This statement draws on what counts as a marketing product (goods and services, B2B and B2C). Treat it as a checklist against the core concept named in the stem, not as a general opinion about business.
+The statement is true.
+', 'TRUE — A product in marketing is any good and/or service that can be exchanged to fulfil customer wishes and needs, whether the customer is a firm or a household.
 
-In this setting, a catering tray remains a product in either channel; only the producer versus consumer label changes with the buyer. The wording matches the textbook relationship without adding extra conditions.
+Wishes and needs give the exchanged catering tray its role as a product rather than a non-market item.
 
-No qualifying word breaks the definition or scenario, so the answer is true.', 'TRUE — Evaluated against the textbook standard, this assertion is correct. A consultancy may list a catering tray under producer products when invoicing a warehouse operator and under consumer products when invoicing a household member.
+Under that definition the assertion is the right description of the situation.
 
-Here you must apply ideas from what counts as a marketing product (goods and services, B2B and B2C) to a concrete situation rather than recite a definition from memory. Ownership, customer type, stakeholder group, or country of production usually decides the verdict.
+The statement is true.
+'] WHERE case_id = 'CASE 5.1.55' AND tier = 'full';
+UPDATE public.economics_cases SET tactical_explanations = ARRAY['FALSE — Consumer products are goods and services sold to consumers or private households (B2C). The household or individual buyer defines the label, not retail branding, luxury status, or physical size.
 
-Applied carefully, customer identity on the invoice determines whether the same catering tray is recorded as producer or consumer. Nothing in the sentence stretches the concept beyond its standard use.
+Consumer products include ordinary goods and services sold to households, including a cleaning contract for a private buyer.
 
-Every part of the claim aligns with the standard concept, so the statement stands.', 'TRUE — The claim is correct. Fulfilment of customer wishes and needs is the purpose that makes an exchanged catering tray a product in marketing terminology.
+The absolute wording is what breaks the claim once the correct test is applied.
 
-This statement draws on what counts as a marketing product (goods and services, B2B and B2C). Treat it as a checklist against the core concept named in the stem, not as a general opinion about business.
+The statement is false.
+', 'FALSE — A product in marketing is any good and/or service that can be exchanged to fulfil customer wishes and needs, whether the customer is a firm or a household.
 
-In this setting, wishes and needs give the exchanged catering tray its role as a product rather than a non-market item. The wording matches the textbook relationship without adding extra conditions.
+A cleaning contract is a product when exchanged to fulfil wishes and needs, regardless of advertising timing.
 
-Every part of the claim aligns with the standard concept, so the statement stands.'] WHERE case_id = 'CASE 5.1.55' AND tier = 'full';
-UPDATE public.economics_cases SET tactical_explanations = ARRAY['FALSE — On the Fuhrmann definition used in the entrance exam, the sentence is false. Consumer products include only luxury items, so a routine cleaning contract sold to a private buyer cannot be a consumer product.
+Those restricting words stretch a limited idea past what marketing allows.
 
-Although the subject matter is what counts as a marketing product (goods and services, B2B and B2C), this is really a logic check on overstatement. Non-profit surpluses, mixed economies, and partial market failure are classic cases where absolute wording fails.
+The statement is false.
+', 'FALSE — Consumer products are goods and services sold to consumers or private households (B2C). The household or individual buyer defines the label, not retail branding, luxury status, or physical size.
 
-Applied to this claim, consumer products include ordinary goods and services sold to households, including a cleaning contract for a private buyer. That is why the sentence does not survive careful reading.
+Sales to a business customer classify the training course as a b2b producer product, not a consumer product.
 
-Watch the absolute wording "cannot": exam statements often sound plausible until a single scope word turns an otherwise familiar idea into an overclaim.
+The mislabelled category or reversed comparison is enough to reject the claim.
 
-Because the decisive detail is wrong, mark the statement false.', 'FALSE — The claim is false. A cleaning contract becomes a product only after advertising creates demand rather than when it is exchanged.
+The statement is false.
+', 'TRUE — Customers in the product definition may be other businesses or private households. That customer identity — not the factory process alone — drives B2B versus B2C product labels.
 
-The section on what counts as a marketing product (goods and services, B2B and B2C) frequently contrasts two similar ideas side by side. A comparison statement is true only if the relationship is stated in the right direction and applies to the right concept pair.
+Traded catering tray offerings create exchange value whether the buyer is a business or a household.
 
-Applied to this claim, a cleaning contract is a product when exchanged to fulfil wishes and needs, regardless of advertising timing. That is why the sentence does not survive careful reading.
+The sentence therefore reports the concept accurately for this case.
 
-Students often remember that two concepts differ but swap the direction of the comparison. Verify which side of the pair is longer, larger, riskier, or more regulated.
+The statement is true.
+', 'FALSE — Producer products are goods and services sold from one business to another (B2B). What matters is the purchaser''s identity as a business customer, not factory origin, weight, packaging, or the seller''s registration alone.
 
-Once the overclaim or mislabel is exposed, the only consistent answer is false.', 'FALSE — The claim is false. A training course sold to a local authority is a consumer product because every sale ultimately serves human needs.
+Sales to a household customer classify the training course as a b2c consumer product, not a producer product.
 
-Although the subject matter is what counts as a marketing product (goods and services, B2B and B2C), this is really a logic check on overstatement. Non-profit surpluses, mixed economies, and partial market failure are classic cases where absolute wording fails.
+Once the defining feature is restored, the assertion falls away.
 
-Applied to this claim, sales to a business customer classify the training course as a b2b producer product, not a consumer product. That is why the sentence does not survive careful reading.
+The statement is false.
+'] WHERE case_id = 'CASE 5.1.56' AND tier = 'full';
+UPDATE public.economics_cases SET tactical_explanations = ARRAY['TRUE — Producer products are goods and services sold from one business to another (B2B). What matters is the purchaser''s identity as a business customer, not factory origin, weight, packaging, or the seller''s registration alone.
 
-Watch the absolute wording "every": exam statements often sound plausible until a single scope word turns an otherwise familiar idea into an overclaim.
+B2b network maintenance for a business customer is classified as a producer product.
 
-The statement sounds plausible but fails on precision, so it is false.', 'TRUE — This statement is correct. Exchange value arises when a catering tray is traded with a warehouse operator or a household member to satisfy identifiable customer demand.
+Under that definition the assertion is the right description of the situation.
 
-Here you must apply ideas from what counts as a marketing product (goods and services, B2B and B2C) to a concrete situation rather than recite a definition from memory. Ownership, customer type, stakeholder group, or country of production usually decides the verdict.
+The statement is true.
+', 'FALSE — The same catalogue item can be a producer product in one sale and a consumer product in another. Classification follows the buyer in that transaction, so absolute words like "always" or "only" usually fail.
 
-Applied carefully, traded catering tray offerings create exchange value whether the buyer is a business or a household. Nothing in the sentence stretches the concept beyond its standard use.
+Identical training course models can be producer or consumer products depending on the buyer.
 
-No qualifying word breaks the definition or scenario, so the answer is true.', 'FALSE — This statement is false. A training course sold to a home user is a producer product because the seller is a business firm.
+The absolute wording is what breaks the claim once the correct test is applied.
 
-Here you must apply ideas from what counts as a marketing product (goods and services, B2B and B2C) to a concrete situation rather than recite a definition from memory. Ownership, customer type, stakeholder group, or country of production usually decides the verdict.
+The statement is false.
+', 'TRUE — Consumer products are goods and services sold to consumers or private households (B2C). The household or individual buyer defines the label, not retail branding, luxury status, or physical size.
 
-The statement overreaches because sales to a household customer classify the training course as a b2c consumer product, not a producer product. The trap is to agree with the topic while missing the one detail that breaks the logic.
+B2c network maintenance for a household customer is classified as a consumer product.
 
-Because the decisive detail is wrong, mark the statement false.'] WHERE case_id = 'CASE 5.1.56' AND tier = 'full';
-UPDATE public.economics_cases SET tactical_explanations = ARRAY['TRUE — Evaluated against the textbook standard, this assertion is correct. Network maintenance sold to a insurance company is a producer product because the service is exchanged business-to-business.
+Nothing in the wording contradicts that marketing test, so the claim is sound.
 
-Here you must apply ideas from what counts as a marketing product (goods and services, B2B and B2C) to a concrete situation rather than recite a definition from memory. Ownership, customer type, stakeholder group, or country of production usually decides the verdict.
+The statement is true.
+', 'TRUE — A product in marketing is any good and/or service that can be exchanged to fulfil customer wishes and needs, whether the customer is a firm or a household.
 
-Applied carefully, b2b network maintenance for a business customer is classified as a producer product. Nothing in the sentence stretches the concept beyond its standard use.
+On this stem (maintenance contract): business-need fulfilment through exchanged network maintenance makes the service a product sold b2b.
 
-The reasoning chain is complete, so mark the statement true.', 'FALSE — This statement is false. The same training course must keep one fixed product label for all buyers because the design never changes.
+The sentence therefore reports the concept accurately for this case.
 
-The topic is what counts as a marketing product (goods and services, B2B and B2C), but the decisive skill here is reading quantifiers. Words such as never, always, only, or all turn a generally true idea into a claim that can be rejected by one routine counterexample.
+The statement is true.
+', 'TRUE — A product in marketing is any good and/or service that can be exchanged to fulfil customer wishes and needs, whether the customer is a firm or a household.
 
-The statement overreaches because identical training course models can be producer or consumer products depending on the buyer. The trap is to agree with the topic while missing the one detail that breaks the logic.
+Household-wish fulfilment through exchanged network maintenance makes the service a product sold b2c.
 
-Watch the absolute wording "all": exam statements often sound plausible until a single scope word turns an otherwise familiar idea into an overclaim.
+Under that definition the assertion is the right description of the situation.
 
-Because the decisive detail is wrong, mark the statement false.', 'TRUE — On the Fuhrmann definition used in the entrance exam, the sentence is correct. Network maintenance sold to a retired couple is a consumer product because the service is exchanged business-to-consumer.
+The statement is true.
+'] WHERE case_id = 'CASE 5.1.57' AND tier = 'full';
+UPDATE public.economics_cases SET tactical_explanations = ARRAY['FALSE — Marketing''s product definition is deliberately wide: it covers every exchangeable good and every exchangeable service that can fulfil customer wishes and needs. Physical form is not a requirement.
 
-The scenario is a worked example of what counts as a marketing product (goods and services, B2B and B2C). Translate the story into the textbook category first; only then judge whether the sentence describes that category accurately.
+A training course can be a product when exchanged as a good or service to fulfil customer wishes and needs.
 
-In this setting, b2c network maintenance for a household customer is classified as a consumer product. The wording matches the textbook relationship without adding extra conditions.
+Swap in the textbook criterion and the sentence no longer describes the case.
 
-No qualifying word breaks the definition or scenario, so the answer is true.', 'TRUE — On the Fuhrmann definition used in the entrance exam, the sentence is correct. An exchanged network maintenance contract with a insurance company fulfils business needs and therefore counts as a product in marketing terms.
+The statement is false.
+', 'FALSE — Exchange is required for a good or service to count as a product in marketing terminology. Items that are only moved internally, given without trade, or not offered for exchange fall outside that definition.
 
-This statement draws on what counts as a marketing product (goods and services, B2B and B2C). Treat it as a checklist against the core concept named in the stem, not as a general opinion about business.
+Exchange is required for a training course to count as a product in marketing terminology.
 
-In this setting, business-need fulfilment through exchanged network maintenance makes the service a product sold b2b. The wording matches the textbook relationship without adding extra conditions.
+The mislabelled category or reversed comparison is enough to reject the claim.
 
-No qualifying word breaks the definition or scenario, so the answer is true.', 'TRUE — Evaluated against the textbook standard, this assertion is correct. An exchanged network maintenance visit for a retired couple fulfils household wishes and therefore counts as a product in marketing terms.
+The statement is false.
+', 'FALSE — A product in marketing is any good and/or service that can be exchanged to fulfil customer wishes and needs, whether the customer is a firm or a household.
 
-The relevant theory comes from what counts as a marketing product (goods and services, B2B and B2C). Identify which definition or relationship the sentence is trying to test before deciding true or false.
+Business customers have operational wishes and needs that exchanged training course offerings can fulfil as products.
 
-Applied carefully, household-wish fulfilment through exchanged network maintenance makes the service a product sold b2c. Nothing in the sentence stretches the concept beyond its standard use.
+Once the defining feature is restored, the assertion falls away.
 
-The reasoning chain is complete, so mark the statement true.'] WHERE case_id = 'CASE 5.1.57' AND tier = 'full';
-UPDATE public.economics_cases SET tactical_explanations = ARRAY['FALSE — Evaluated against the textbook standard, this assertion is false. A training course is not a product unless it is a manufactured physical good.
+The statement is false.
+', 'TRUE — Producer products are goods and services sold from one business to another (B2B). What matters is the purchaser''s identity as a business customer, not factory origin, weight, packaging, or the seller''s registration alone.
 
-The relevant theory comes from what counts as a marketing product (goods and services, B2B and B2C). Identify which definition or relationship the sentence is trying to test before deciding true or false.
+Network maintenance under a commercial contract to a insurance company is a producer product service.
 
-The statement overreaches because a training course can be a product when exchanged as a good or service to fulfil customer wishes and needs. The trap is to agree with the topic while missing the one detail that breaks the logic.
+Nothing in the wording contradicts that marketing test, so the claim is sound.
 
-The statement sounds plausible but fails on precision, so it is false.', 'FALSE — On the Fuhrmann definition used in the entrance exam, the sentence is false. Exchange is irrelevant to whether a training course counts as a product if customers desire it strongly enough.
+The statement is true.
+', 'FALSE — Exchange is required for a good or service to count as a product in marketing terminology. Items that are only moved internally, given without trade, or not offered for exchange fall outside that definition.
 
-The scenario is a worked example of what counts as a marketing product (goods and services, B2B and B2C). Translate the story into the textbook category first; only then judge whether the sentence describes that category accurately.
+On this stem (households): household customers acquire consumer products such as a training course through b2c exchange.
 
-Applied to this claim, exchange is required for a training course to count as a product in marketing terminology. That is why the sentence does not survive careful reading.
+The absolute wording is what breaks the claim once the correct test is applied.
 
-The statement sounds plausible but fails on precision, so it is false.', 'FALSE — The claim is false. Marketing excludes a training course from products when sold to a local authority because businesses do not have wishes or needs.
+The statement is false.
+'] WHERE case_id = 'CASE 5.1.58' AND tier = 'full';
+UPDATE public.economics_cases SET tactical_explanations = ARRAY['TRUE — Consumer products are goods and services sold to consumers or private households (B2C). The household or individual buyer defines the label, not retail branding, luxury status, or physical size.
 
-The scenario is a worked example of what counts as a marketing product (goods and services, B2B and B2C). Translate the story into the textbook category first; only then judge whether the sentence describes that category accurately.
+Network maintenance for personal or domestic benefit to a retired couple is a consumer product service.
 
-Applied to this claim, business customers have operational wishes and needs that exchanged training course offerings can fulfil as products. That is why the sentence does not survive careful reading.
+Nothing in the wording contradicts that marketing test, so the claim is sound.
 
-Because the decisive detail is wrong, mark the statement false.', 'TRUE — Evaluated against the textbook standard, this assertion is correct. Producer products encompass network maintenance when one firm provides it to a insurance company under a commercial contract.
+The statement is true.
+', 'FALSE — Exchange is required for a good or service to count as a product in marketing terminology. Items that are only moved internally, given without trade, or not offered for exchange fall outside that definition.
 
-Here you must apply ideas from what counts as a marketing product (goods and services, B2B and B2C) to a concrete situation rather than recite a definition from memory. Ownership, customer type, stakeholder group, or country of production usually decides the verdict.
+Internal transfers not offered for external exchange are not products in the marketing sense.
 
-Applied carefully, network maintenance under a commercial contract to a insurance company is a producer product service. Nothing in the sentence stretches the concept beyond its standard use.
+The mislabelled category or reversed comparison is enough to reject the claim.
 
-Every part of the claim aligns with the standard concept, so the statement stands.', 'FALSE — This statement is false. Marketing excludes a training course from products when sold to a home user because households only receive gifts, not products.
+The statement is false.
+', 'FALSE — Producer products are goods and services sold from one business to another (B2B). What matters is the purchaser''s identity as a business customer, not factory origin, weight, packaging, or the seller''s registration alone.
 
-Here you must apply ideas from what counts as a marketing product (goods and services, B2B and B2C) to a concrete situation rather than recite a definition from memory. Ownership, customer type, stakeholder group, or country of production usually decides the verdict.
+B2b classification depends on the business purchaser, not solely on the seller''s industry.
 
-The statement overreaches because household customers acquire consumer products such as a training course through b2c exchange. The trap is to agree with the topic while missing the one detail that breaks the logic.
+Swap in the textbook criterion and the sentence no longer describes the case.
 
-Once the overclaim or mislabel is exposed, the only consistent answer is false.'] WHERE case_id = 'CASE 5.1.58' AND tier = 'full';
-UPDATE public.economics_cases SET tactical_explanations = ARRAY['TRUE — On the Fuhrmann definition used in the entrance exam, the sentence is correct. Consumer products encompass network maintenance when a firm provides it to a retired couple for personal or domestic benefit.
+The statement is false.
+', 'TRUE — Consumer products are goods and services sold to consumers or private households (B2C). The household or individual buyer defines the label, not retail branding, luxury status, or physical size.
 
-The scenario is a worked example of what counts as a marketing product (goods and services, B2B and B2C). Translate the story into the textbook category first; only then judge whether the sentence describes that category accurately.
+Dual-channel network maintenance sales illustrate producer and consumer labels driven by customer type.
 
-In this setting, network maintenance for personal or domestic benefit to a retired couple is a consumer product service. The wording matches the textbook relationship without adding extra conditions.
+Under that definition the assertion is the right description of the situation.
 
-Every part of the claim aligns with the standard concept, so the statement stands.', 'FALSE — Evaluated against the textbook standard, this assertion is false. A training course transferred internally between branches of one corporation remains a marketed product.
+The statement is true.
+', 'TRUE — The same catalogue item can be a producer product in one sale and a consumer product in another. Classification follows the buyer in that transaction, so absolute words like "always" or "only" usually fail.
 
-The relevant theory comes from what counts as a marketing product (goods and services, B2B and B2C). Identify which definition or relationship the sentence is trying to test before deciding true or false.
+Exchange of network maintenance with either business or household buyers keeps it within the product concept.
 
-The statement overreaches because internal transfers not offered for external exchange are not products in the marketing sense. The trap is to agree with the topic while missing the one detail that breaks the logic.
+Nothing in the wording contradicts that marketing test, so the claim is sound.
 
-Because the decisive detail is wrong, mark the statement false.', 'FALSE — Evaluated against the textbook standard, this assertion is false. B2B classification of a training course depends on the seller''s industry rather than on the local authority purchaser.
+The statement is true.
+'] WHERE case_id = 'CASE 5.1.59' AND tier = 'full';
+UPDATE public.economics_cases SET tactical_explanations = ARRAY['TRUE — Producer products are goods and services sold from one business to another (B2B). What matters is the purchaser''s identity as a business customer, not factory origin, weight, packaging, or the seller''s registration alone.
 
-This tests discrimination within what counts as a marketing product (goods and services, B2B and B2C): local versus international scope, equity versus debt, product versus market orientation, and similar pairs.
+B2b purchase of network maintenance by a insurance company yields a producer product classification.
 
-The statement overreaches because b2b classification depends on the business purchaser, not solely on the seller''s industry. The trap is to agree with the topic while missing the one detail that breaks the logic.
+Nothing in the wording contradicts that marketing test, so the claim is sound.
 
-If two ideas are related, the statement may be false because it attributes the feature to the wrong member of the pair.
+The statement is true.
+', 'FALSE — Consumer products are goods and services sold to consumers or private households (B2C). The household or individual buyer defines the label, not retail branding, luxury status, or physical size.
 
-The statement sounds plausible but fails on precision, so it is false.', 'TRUE — On the Fuhrmann definition used in the entrance exam, the sentence is correct. The same firm may sell network maintenance as a B2B producer product to a insurance company and as a B2C consumer product to a retired couple.
+B2c classification depends on the household purchaser, not on retail branding alone.
 
-This statement draws on what counts as a marketing product (goods and services, B2B and B2C). Treat it as a checklist against the core concept named in the stem, not as a general opinion about business.
+The mislabelled category or reversed comparison is enough to reject the claim.
 
-In this setting, dual-channel network maintenance sales illustrate producer and consumer labels driven by customer type. The wording matches the textbook relationship without adding extra conditions.
+The statement is false.
+', 'FALSE — Consumer products are goods and services sold to consumers or private households (B2C). The household or individual buyer defines the label, not retail branding, luxury status, or physical size.
 
-The reasoning chain is complete, so mark the statement true.', 'TRUE — This statement is correct. Marketing treats network maintenance as a product whenever it is exchanged, whether the buyer is a insurance company or a retired couple.
+Payment alone does not make the sale b2c; a business buyer implies b2b and a producer product.
 
-The relevant theory comes from what counts as a marketing product (goods and services, B2B and B2C). Identify which definition or relationship the sentence is trying to test before deciding true or false.
+Once the defining feature is restored, the assertion falls away.
 
-Applied carefully, exchange of network maintenance with either business or household buyers keeps it within the product concept. Nothing in the sentence stretches the concept beyond its standard use.
+The statement is false.
+', 'TRUE — Consumer products are goods and services sold to consumers or private households (B2C). The household or individual buyer defines the label, not retail branding, luxury status, or physical size.
 
-No qualifying word breaks the definition or scenario, so the answer is true.'] WHERE case_id = 'CASE 5.1.59' AND tier = 'full';
-UPDATE public.economics_cases SET tactical_explanations = ARRAY['TRUE — Evaluated against the textbook standard, this assertion is correct. A insurance company purchasing network maintenance engages in business-to-business exchange for a producer product service.
+B2c purchase of network maintenance by a retired couple yields a consumer product classification.
 
-The relevant theory comes from what counts as a marketing product (goods and services, B2B and B2C). Identify which definition or relationship the sentence is trying to test before deciding true or false.
+The sentence therefore reports the concept accurately for this case.
 
-Applied carefully, b2b purchase of network maintenance by a insurance company yields a producer product classification. Nothing in the sentence stretches the concept beyond its standard use.
+The statement is true.
+', 'TRUE — A product in marketing is any good and/or service that can be exchanged to fulfil customer wishes and needs, whether the customer is a firm or a household.
 
-No qualifying word breaks the definition or scenario, so the answer is true.', 'FALSE — Evaluated against the textbook standard, this assertion is false. B2C classification of a training course depends on colourful retail branding rather than on the home user purchaser.
+Intangible network maintenance counts as a product once exchanged to satisfy needs.
 
-This tests discrimination within what counts as a marketing product (goods and services, B2B and B2C): local versus international scope, equity versus debt, product versus market orientation, and similar pairs.
+Nothing in the wording contradicts that marketing test, so the claim is sound.
 
-The statement overreaches because b2c classification depends on the household purchaser, not on retail branding alone. The trap is to agree with the topic while missing the one detail that breaks the logic.
+The statement is true.
+'] WHERE case_id = 'CASE 5.1.60' AND tier = 'full';
+UPDATE public.economics_cases SET tactical_explanations = ARRAY['FALSE — Producer products are goods and services sold from one business to another (B2B). What matters is the purchaser''s identity as a business customer, not factory origin, weight, packaging, or the seller''s registration alone.
 
-If two ideas are related, the statement may be false because it attributes the feature to the wrong member of the pair.
+The seller''s company status does not make a household sale b2b; it remains b2c with a consumer product.
 
-The statement sounds plausible but fails on precision, so it is false.', 'FALSE — On the Fuhrmann definition used in the entrance exam, the sentence is false. A training course sold to a local authority is B2C because money changes hands in the transaction.
+The mislabelled category or reversed comparison is enough to reject the claim.
 
-The scenario is a worked example of what counts as a marketing product (goods and services, B2B and B2C). Translate the story into the textbook category first; only then judge whether the sentence describes that category accurately.
+The statement is false.
+', 'TRUE — A product in marketing is any good and/or service that can be exchanged to fulfil customer wishes and needs, whether the customer is a firm or a household.
 
-Applied to this claim, payment alone does not make the sale b2c; a business buyer implies b2b and a producer product. That is why the sentence does not survive careful reading.
+Paid transfer of network maintenance to a customer with unmet wishes or needs defines a marketing product.
 
-Because the decisive detail is wrong, mark the statement false.', 'TRUE — On the Fuhrmann definition used in the entrance exam, the sentence is correct. A retired couple purchasing network maintenance engages in business-to-consumer exchange for a consumer product service.
+The sentence therefore reports the concept accurately for this case.
 
-This statement draws on what counts as a marketing product (goods and services, B2B and B2C). Treat it as a checklist against the core concept named in the stem, not as a general opinion about business.
+The statement is true.
+', 'FALSE — Producer products are goods and services sold from one business to another (B2B). What matters is the purchaser''s identity as a business customer, not factory origin, weight, packaging, or the seller''s registration alone.
 
-In this setting, b2c purchase of network maintenance by a retired couple yields a consumer product classification. The wording matches the textbook relationship without adding extra conditions.
+Producer products include goods and services sold to businesses, including a finished training course for a local authority.
 
-Every part of the claim aligns with the standard concept, so the statement stands.', 'TRUE — This statement is correct. Network maintenance illustrates that intangible offerings can be products when traded to satisfy customer needs.
+One clear counterexample under the right criterion is enough to reject the sentence.
 
-Here you must apply ideas from what counts as a marketing product (goods and services, B2B and B2C) to a concrete situation rather than recite a definition from memory. Ownership, customer type, stakeholder group, or country of production usually decides the verdict.
+The statement is false.
+', 'TRUE — Producer products are goods and services sold from one business to another (B2B). What matters is the purchaser''s identity as a business customer, not factory origin, weight, packaging, or the seller''s registration alone.
 
-Applied carefully, intangible network maintenance counts as a product once exchanged to satisfy needs. Nothing in the sentence stretches the concept beyond its standard use.
+B2b payroll processing for a business customer is classified as a producer product.
 
-The reasoning chain is complete, so mark the statement true.'] WHERE case_id = 'CASE 5.1.60' AND tier = 'full';
-UPDATE public.economics_cases SET tactical_explanations = ARRAY['FALSE — This statement is false. A training course sold to a home user is B2B because the seller is a registered company.
+Nothing in the wording contradicts that marketing test, so the claim is sound.
 
-Here you must apply ideas from what counts as a marketing product (goods and services, B2B and B2C) to a concrete situation rather than recite a definition from memory. Ownership, customer type, stakeholder group, or country of production usually decides the verdict.
+The statement is true.
+', 'FALSE — Consumer products are goods and services sold to consumers or private households (B2C). The household or individual buyer defines the label, not retail branding, luxury status, or physical size.
 
-The statement overreaches because the seller''s company status does not make a household sale b2b; it remains b2c with a consumer product. The trap is to agree with the topic while missing the one detail that breaks the logic.
+Consumer products include ordinary goods and services sold to households, including a training course for a home user.
 
-The statement sounds plausible but fails on precision, so it is false.', 'TRUE — On the Fuhrmann definition used in the entrance exam, the sentence is correct. Exchange of network maintenance creates a marketing product because payment transfers the service to a customer with unmet wishes or needs.
+One clear counterexample under the right criterion is enough to reject the sentence.
 
-The scenario is a worked example of what counts as a marketing product (goods and services, B2B and B2C). Translate the story into the textbook category first; only then judge whether the sentence describes that category accurately.
+The statement is false.
+'] WHERE case_id = 'CASE 5.1.61' AND tier = 'full';
+UPDATE public.economics_cases SET tactical_explanations = ARRAY['TRUE — Consumer products are goods and services sold to consumers or private households (B2C). The household or individual buyer defines the label, not retail branding, luxury status, or physical size.
 
-In this setting, paid transfer of network maintenance to a customer with unmet wishes or needs defines a marketing product. The wording matches the textbook relationship without adding extra conditions.
+B2c payroll processing for a household customer is classified as a consumer product.
 
-The reasoning chain is complete, so mark the statement true.', 'FALSE — The claim is false. Producer products include only raw materials, so a finished training course sold to a local authority cannot be a producer product.
+Nothing in the wording contradicts that marketing test, so the claim is sound.
 
-Although the subject matter is what counts as a marketing product (goods and services, B2B and B2C), this is really a logic check on overstatement. Non-profit surpluses, mixed economies, and partial market failure are classic cases where absolute wording fails.
+The statement is true.
+', 'FALSE — A product in marketing is any good and/or service that can be exchanged to fulfil customer wishes and needs, whether the customer is a firm or a household.
 
-Applied to this claim, producer products include goods and services sold to businesses, including a finished training course for a local authority. That is why the sentence does not survive careful reading.
+A training course is a product when exchanged to fulfil wishes and needs, regardless of advertising timing.
 
-Watch the absolute wording "cannot": exam statements often sound plausible until a single scope word turns an otherwise familiar idea into an overclaim.
+One clear counterexample under the right criterion is enough to reject the sentence.
 
-The statement sounds plausible but fails on precision, so it is false.', 'TRUE — The claim is correct. Payroll processing sold to a accounting partnership is a producer product because the service is exchanged business-to-business.
+The statement is false.
+', 'TRUE — A product in marketing is any good and/or service that can be exchanged to fulfil customer wishes and needs, whether the customer is a firm or a household.
 
-The scenario is a worked example of what counts as a marketing product (goods and services, B2B and B2C). Translate the story into the textbook category first; only then judge whether the sentence describes that category accurately.
+Business-need fulfilment through exchanged payroll processing makes the service a product sold b2b.
 
-In this setting, b2b payroll processing for a business customer is classified as a producer product. The wording matches the textbook relationship without adding extra conditions.
+Under that definition the assertion is the right description of the situation.
 
-Every part of the claim aligns with the standard concept, so the statement stands.', 'FALSE — The claim is false. Consumer products include only luxury items, so a routine training course sold to a home user cannot be a consumer product.
+The statement is true.
+', 'FALSE — Consumer products are goods and services sold to consumers or private households (B2C). The household or individual buyer defines the label, not retail branding, luxury status, or physical size.
 
-Although the subject matter is what counts as a marketing product (goods and services, B2B and B2C), this is really a logic check on overstatement. Non-profit surpluses, mixed economies, and partial market failure are classic cases where absolute wording fails.
+Sales to a business customer classify the broadband package as a b2b producer product, not a consumer product.
 
-Applied to this claim, consumer products include ordinary goods and services sold to households, including a training course for a home user. That is why the sentence does not survive careful reading.
+Swap in the textbook criterion and the sentence no longer describes the case.
 
-Watch the absolute wording "cannot": exam statements often sound plausible until a single scope word turns an otherwise familiar idea into an overclaim.
+The statement is false.
+', 'TRUE — A product in marketing is any good and/or service that can be exchanged to fulfil customer wishes and needs, whether the customer is a firm or a household.
 
-The statement sounds plausible but fails on precision, so it is false.'] WHERE case_id = 'CASE 5.1.61' AND tier = 'full';
-UPDATE public.economics_cases SET tactical_explanations = ARRAY['TRUE — The claim is correct. Payroll processing sold to a young professional is a consumer product because the service is exchanged business-to-consumer.
+Household-wish fulfilment through exchanged payroll processing makes the service a product sold b2c.
 
-The scenario is a worked example of what counts as a marketing product (goods and services, B2B and B2C). Translate the story into the textbook category first; only then judge whether the sentence describes that category accurately.
+Under that definition the assertion is the right description of the situation.
 
-In this setting, b2c payroll processing for a household customer is classified as a consumer product. The wording matches the textbook relationship without adding extra conditions.
+The statement is true.
+'] WHERE case_id = 'CASE 5.1.62' AND tier = 'full';
+UPDATE public.economics_cases SET tactical_explanations = ARRAY['TRUE — Producer products are goods and services sold from one business to another (B2B). What matters is the purchaser''s identity as a business customer, not factory origin, weight, packaging, or the seller''s registration alone.
 
-The reasoning chain is complete, so mark the statement true.', 'FALSE — This statement is false. A training course becomes a product only after advertising creates demand rather than when it is exchanged.
+Payroll processing under a commercial contract to a accounting partnership is a producer product service.
 
-This tests discrimination within what counts as a marketing product (goods and services, B2B and B2C): local versus international scope, equity versus debt, product versus market orientation, and similar pairs.
+The sentence therefore reports the concept accurately for this case.
 
-The statement overreaches because a training course is a product when exchanged to fulfil wishes and needs, regardless of advertising timing. The trap is to agree with the topic while missing the one detail that breaks the logic.
+The statement is true.
+', 'TRUE — Consumer products are goods and services sold to consumers or private households (B2C). The household or individual buyer defines the label, not retail branding, luxury status, or physical size.
 
-If two ideas are related, the statement may be false because it attributes the feature to the wrong member of the pair.
+Payroll processing for personal or domestic benefit to a young professional is a consumer product service.
 
-Because the decisive detail is wrong, mark the statement false.', 'TRUE — Evaluated against the textbook standard, this assertion is correct. An exchanged payroll processing contract with a accounting partnership fulfils business needs and therefore counts as a product in marketing terms.
+Nothing in the wording contradicts that marketing test, so the claim is sound.
 
-The relevant theory comes from what counts as a marketing product (goods and services, B2B and B2C). Identify which definition or relationship the sentence is trying to test before deciding true or false.
+The statement is true.
+', 'TRUE — Consumer products are goods and services sold to consumers or private households (B2C). The household or individual buyer defines the label, not retail branding, luxury status, or physical size.
 
-Applied carefully, business-need fulfilment through exchanged payroll processing makes the service a product sold b2b. Nothing in the sentence stretches the concept beyond its standard use.
+Dual-channel payroll processing sales illustrate producer and consumer labels driven by customer type.
 
-The reasoning chain is complete, so mark the statement true.', 'FALSE — On the Fuhrmann definition used in the entrance exam, the sentence is false. A broadband package sold to a export buyer is a consumer product because every sale ultimately serves human needs.
+Under that definition the assertion is the right description of the situation.
 
-Although the subject matter is what counts as a marketing product (goods and services, B2B and B2C), this is really a logic check on overstatement. Non-profit surpluses, mixed economies, and partial market failure are classic cases where absolute wording fails.
+The statement is true.
+', 'TRUE — The same catalogue item can be a producer product in one sale and a consumer product in another. Classification follows the buyer in that transaction, so absolute words like "always" or "only" usually fail.
 
-Applied to this claim, sales to a business customer classify the broadband package as a b2b producer product, not a consumer product. That is why the sentence does not survive careful reading.
+Exchange of payroll processing with either business or household buyers keeps it within the product concept.
 
-Watch the absolute wording "every": exam statements often sound plausible until a single scope word turns an otherwise familiar idea into an overclaim.
+Nothing in the wording contradicts that marketing test, so the claim is sound.
 
-Because the decisive detail is wrong, mark the statement false.', 'TRUE — The claim is correct. An exchanged payroll processing visit for a young professional fulfils household wishes and therefore counts as a product in marketing terms.
+The statement is true.
+', 'FALSE — Producer products are goods and services sold from one business to another (B2B). What matters is the purchaser''s identity as a business customer, not factory origin, weight, packaging, or the seller''s registration alone.
 
-This statement draws on what counts as a marketing product (goods and services, B2B and B2C). Treat it as a checklist against the core concept named in the stem, not as a general opinion about business.
+Sales to a household customer classify the broadband package as a b2c consumer product, not a producer product.
 
-In this setting, household-wish fulfilment through exchanged payroll processing makes the service a product sold b2c. The wording matches the textbook relationship without adding extra conditions.
+Once the defining feature is restored, the assertion falls away.
 
-No qualifying word breaks the definition or scenario, so the answer is true.'] WHERE case_id = 'CASE 5.1.62' AND tier = 'full';
-UPDATE public.economics_cases SET tactical_explanations = ARRAY['TRUE — This statement is correct. Producer products encompass payroll processing when one firm provides it to a accounting partnership under a commercial contract.
+The statement is false.
+'] WHERE case_id = 'CASE 5.1.63' AND tier = 'full';
+UPDATE public.economics_cases SET tactical_explanations = ARRAY['FALSE — The same catalogue item can be a producer product in one sale and a consumer product in another. Classification follows the buyer in that transaction, so absolute words like "always" or "only" usually fail.
 
-Here you must apply ideas from what counts as a marketing product (goods and services, B2B and B2C) to a concrete situation rather than recite a definition from memory. Ownership, customer type, stakeholder group, or country of production usually decides the verdict.
+Identical broadband package models can be producer or consumer products depending on the buyer.
 
-Applied carefully, payroll processing under a commercial contract to a accounting partnership is a producer product service. Nothing in the sentence stretches the concept beyond its standard use.
+One clear counterexample under the right criterion is enough to reject the sentence.
 
-No qualifying word breaks the definition or scenario, so the answer is true.', 'TRUE — The claim is correct. Consumer products encompass payroll processing when a firm provides it to a young professional for personal or domestic benefit.
+The statement is false.
+', 'FALSE — Marketing''s product definition is deliberately wide: it covers every exchangeable good and every exchangeable service that can fulfil customer wishes and needs. Physical form is not a requirement.
 
-The scenario is a worked example of what counts as a marketing product (goods and services, B2B and B2C). Translate the story into the textbook category first; only then judge whether the sentence describes that category accurately.
+A broadband package can be a product when exchanged as a good or service to fulfil customer wishes and needs.
 
-In this setting, payroll processing for personal or domestic benefit to a young professional is a consumer product service. The wording matches the textbook relationship without adding extra conditions.
+The mislabelled category or reversed comparison is enough to reject the claim.
 
-The reasoning chain is complete, so mark the statement true.', 'TRUE — Evaluated against the textbook standard, this assertion is correct. The same firm may sell payroll processing as a B2B producer product to a accounting partnership and as a B2C consumer product to a young professional.
+The statement is false.
+', 'FALSE — Exchange is required for a good or service to count as a product in marketing terminology. Items that are only moved internally, given without trade, or not offered for exchange fall outside that definition.
 
-The relevant theory comes from what counts as a marketing product (goods and services, B2B and B2C). Identify which definition or relationship the sentence is trying to test before deciding true or false.
+Exchange is required for a broadband package to count as a product in marketing terminology.
 
-Applied carefully, dual-channel payroll processing sales illustrate producer and consumer labels driven by customer type. Nothing in the sentence stretches the concept beyond its standard use.
+Once the defining feature is restored, the assertion falls away.
 
-Every part of the claim aligns with the standard concept, so the statement stands.', 'TRUE — On the Fuhrmann definition used in the entrance exam, the sentence is correct. Marketing treats payroll processing as a product whenever it is exchanged, whether the buyer is a accounting partnership or a young professional.
+The statement is false.
+', 'FALSE — A product in marketing is any good and/or service that can be exchanged to fulfil customer wishes and needs, whether the customer is a firm or a household.
 
-This statement draws on what counts as a marketing product (goods and services, B2B and B2C). Treat it as a checklist against the core concept named in the stem, not as a general opinion about business.
+Business customers have operational wishes and needs that exchanged broadband package offerings can fulfil as products.
 
-In this setting, exchange of payroll processing with either business or household buyers keeps it within the product concept. The wording matches the textbook relationship without adding extra conditions.
+The mislabelled category or reversed comparison is enough to reject the claim.
 
-The reasoning chain is complete, so mark the statement true.', 'FALSE — On the Fuhrmann definition used in the entrance exam, the sentence is false. A broadband package sold to a personal customer is a producer product because the seller is a business firm.
+The statement is false.
+', 'TRUE — Producer products are goods and services sold from one business to another (B2B). What matters is the purchaser''s identity as a business customer, not factory origin, weight, packaging, or the seller''s registration alone.
 
-The scenario is a worked example of what counts as a marketing product (goods and services, B2B and B2C). Translate the story into the textbook category first; only then judge whether the sentence describes that category accurately.
+B2b purchase of payroll processing by a accounting partnership yields a producer product classification.
 
-Applied to this claim, sales to a household customer classify the broadband package as a b2c consumer product, not a producer product. That is why the sentence does not survive careful reading.
+The sentence therefore reports the concept accurately for this case.
 
-The statement sounds plausible but fails on precision, so it is false.'] WHERE case_id = 'CASE 5.1.63' AND tier = 'full';
-UPDATE public.economics_cases SET tactical_explanations = ARRAY['FALSE — This statement is false. The same broadband package must keep one fixed product label for all buyers because the design never changes.
+The statement is true.
+'] WHERE case_id = 'CASE 5.1.64' AND tier = 'full';
+UPDATE public.economics_cases SET tactical_explanations = ARRAY['FALSE — Exchange is required for a good or service to count as a product in marketing terminology. Items that are only moved internally, given without trade, or not offered for exchange fall outside that definition.
 
-The topic is what counts as a marketing product (goods and services, B2B and B2C), but the decisive skill here is reading quantifiers. Words such as never, always, only, or all turn a generally true idea into a claim that can be rejected by one routine counterexample.
+On this stem (broadband / households): household customers acquire consumer products such as a broadband package through b2c exchange.
 
-The statement overreaches because identical broadband package models can be producer or consumer products depending on the buyer. The trap is to agree with the topic while missing the one detail that breaks the logic.
+The absolute wording is what breaks the claim once the correct test is applied.
 
-Watch the absolute wording "all": exam statements often sound plausible until a single scope word turns an otherwise familiar idea into an overclaim.
+The statement is false.
+', 'FALSE — Exchange is required for a good or service to count as a product in marketing terminology. Items that are only moved internally, given without trade, or not offered for exchange fall outside that definition.
 
-Because the decisive detail is wrong, mark the statement false.', 'FALSE — The claim is false. A broadband package is not a product unless it is a manufactured physical good.
+On this stem (broadband): internal transfers not offered for external exchange are not products in the marketing sense.
 
-This statement draws on what counts as a marketing product (goods and services, B2B and B2C). Treat it as a checklist against the core concept named in the stem, not as a general opinion about business.
+Once the defining feature is restored, the assertion falls away.
 
-Applied to this claim, a broadband package can be a product when exchanged as a good or service to fulfil customer wishes and needs. That is why the sentence does not survive careful reading.
+The statement is false.
+', 'TRUE — Consumer products are goods and services sold to consumers or private households (B2C). The household or individual buyer defines the label, not retail branding, luxury status, or physical size.
 
-The statement sounds plausible but fails on precision, so it is false.', 'FALSE — On the Fuhrmann definition used in the entrance exam, the sentence is false. Exchange is irrelevant to whether a broadband package counts as a product if customers desire it strongly enough.
+B2c purchase of payroll processing by a young professional yields a consumer product classification.
 
-The scenario is a worked example of what counts as a marketing product (goods and services, B2B and B2C). Translate the story into the textbook category first; only then judge whether the sentence describes that category accurately.
+The sentence therefore reports the concept accurately for this case.
 
-Applied to this claim, exchange is required for a broadband package to count as a product in marketing terminology. That is why the sentence does not survive careful reading.
+The statement is true.
+', 'TRUE — A product in marketing is any good and/or service that can be exchanged to fulfil customer wishes and needs, whether the customer is a firm or a household.
 
-Once the overclaim or mislabel is exposed, the only consistent answer is false.', 'FALSE — The claim is false. Marketing excludes a broadband package from products when sold to a export buyer because businesses do not have wishes or needs.
+Intangible payroll processing counts as a product once exchanged to satisfy needs.
 
-The scenario is a worked example of what counts as a marketing product (goods and services, B2B and B2C). Translate the story into the textbook category first; only then judge whether the sentence describes that category accurately.
+The sentence therefore reports the concept accurately for this case.
 
-Applied to this claim, business customers have operational wishes and needs that exchanged broadband package offerings can fulfil as products. That is why the sentence does not survive careful reading.
+The statement is true.
+', 'TRUE — A product in marketing is any good and/or service that can be exchanged to fulfil customer wishes and needs, whether the customer is a firm or a household.
 
-Once the overclaim or mislabel is exposed, the only consistent answer is false.', 'TRUE — The claim is correct. A accounting partnership purchasing payroll processing engages in business-to-business exchange for a producer product service.
+Paid transfer of payroll processing to a customer with unmet wishes or needs defines a marketing product.
 
-This statement draws on what counts as a marketing product (goods and services, B2B and B2C). Treat it as a checklist against the core concept named in the stem, not as a general opinion about business.
+Under that definition the assertion is the right description of the situation.
 
-In this setting, b2b purchase of payroll processing by a accounting partnership yields a producer product classification. The wording matches the textbook relationship without adding extra conditions.
+The statement is true.
+'] WHERE case_id = 'CASE 5.1.65' AND tier = 'full';
+UPDATE public.economics_cases SET tactical_explanations = ARRAY['TRUE — Producer products are goods and services sold from one business to another (B2B). What matters is the purchaser''s identity as a business customer, not factory origin, weight, packaging, or the seller''s registration alone.
 
-The reasoning chain is complete, so mark the statement true.'] WHERE case_id = 'CASE 5.1.64' AND tier = 'full';
-UPDATE public.economics_cases SET tactical_explanations = ARRAY['FALSE — Evaluated against the textbook standard, this assertion is false. Marketing excludes a broadband package from products when sold to a personal customer because households only receive gifts, not products.
+B2b equipment leasing for a business customer is classified as a producer product.
 
-Here you must apply ideas from what counts as a marketing product (goods and services, B2B and B2C) to a concrete situation rather than recite a definition from memory. Ownership, customer type, stakeholder group, or country of production usually decides the verdict.
+Nothing in the wording contradicts that marketing test, so the claim is sound.
 
-The statement overreaches because household customers acquire consumer products such as a broadband package through b2c exchange. The trap is to agree with the topic while missing the one detail that breaks the logic.
+The statement is true.
+', 'FALSE — Producer products are goods and services sold from one business to another (B2B). What matters is the purchaser''s identity as a business customer, not factory origin, weight, packaging, or the seller''s registration alone.
 
-The statement sounds plausible but fails on precision, so it is false.', 'FALSE — Evaluated against the textbook standard, this assertion is false. A broadband package transferred internally between branches of one corporation remains a marketed product.
+On this stem (broadband): b2b classification depends on the business purchaser, not solely on the seller''s industry.
 
-The relevant theory comes from what counts as a marketing product (goods and services, B2B and B2C). Identify which definition or relationship the sentence is trying to test before deciding true or false.
+Once the defining feature is restored, the assertion falls away.
 
-The statement overreaches because internal transfers not offered for external exchange are not products in the marketing sense. The trap is to agree with the topic while missing the one detail that breaks the logic.
+The statement is false.
+', 'TRUE — Consumer products are goods and services sold to consumers or private households (B2C). The household or individual buyer defines the label, not retail branding, luxury status, or physical size.
 
-Because the decisive detail is wrong, mark the statement false.', 'TRUE — The claim is correct. A young professional purchasing payroll processing engages in business-to-consumer exchange for a consumer product service.
+B2c equipment leasing for a household customer is classified as a consumer product.
 
-This statement draws on what counts as a marketing product (goods and services, B2B and B2C). Treat it as a checklist against the core concept named in the stem, not as a general opinion about business.
+The sentence therefore reports the concept accurately for this case.
 
-In this setting, b2c purchase of payroll processing by a young professional yields a consumer product classification. The wording matches the textbook relationship without adding extra conditions.
+The statement is true.
+', 'FALSE — Consumer products are goods and services sold to consumers or private households (B2C). The household or individual buyer defines the label, not retail branding, luxury status, or physical size.
 
-The reasoning chain is complete, so mark the statement true.', 'TRUE — On the Fuhrmann definition used in the entrance exam, the sentence is correct. Payroll processing illustrates that intangible offerings can be products when traded to satisfy customer needs.
+On this stem (broadband / branding): b2c classification depends on the household purchaser, not on retail branding alone.
 
-The scenario is a worked example of what counts as a marketing product (goods and services, B2B and B2C). Translate the story into the textbook category first; only then judge whether the sentence describes that category accurately.
+The mislabelled category or reversed comparison is enough to reject the claim.
 
-In this setting, intangible payroll processing counts as a product once exchanged to satisfy needs. The wording matches the textbook relationship without adding extra conditions.
+The statement is false.
+', 'FALSE — Consumer products are goods and services sold to consumers or private households (B2C). The household or individual buyer defines the label, not retail branding, luxury status, or physical size.
 
-No qualifying word breaks the definition or scenario, so the answer is true.', 'TRUE — Evaluated against the textbook standard, this assertion is correct. Exchange of payroll processing creates a marketing product because payment transfers the service to a customer with unmet wishes or needs.
+On this stem (broadband): payment alone does not make the sale b2c; a business buyer implies b2b and a producer product.
 
-Here you must apply ideas from what counts as a marketing product (goods and services, B2B and B2C) to a concrete situation rather than recite a definition from memory. Ownership, customer type, stakeholder group, or country of production usually decides the verdict.
+The mislabelled category or reversed comparison is enough to reject the claim.
 
-Applied carefully, paid transfer of payroll processing to a customer with unmet wishes or needs defines a marketing product. Nothing in the sentence stretches the concept beyond its standard use.
+The statement is false.
+'] WHERE case_id = 'CASE 5.1.66' AND tier = 'full';
+UPDATE public.economics_cases SET tactical_explanations = ARRAY['TRUE — A product in marketing is any good and/or service that can be exchanged to fulfil customer wishes and needs, whether the customer is a firm or a household.
 
-Every part of the claim aligns with the standard concept, so the statement stands.'] WHERE case_id = 'CASE 5.1.65' AND tier = 'full';
-UPDATE public.economics_cases SET tactical_explanations = ARRAY['TRUE — The claim is correct. Equipment leasing sold to a shipping line is a producer product because the service is exchanged business-to-business.
+Business-need fulfilment through exchanged equipment leasing makes the service a product sold b2b.
 
-The scenario is a worked example of what counts as a marketing product (goods and services, B2B and B2C). Translate the story into the textbook category first; only then judge whether the sentence describes that category accurately.
+Under that definition the assertion is the right description of the situation.
 
-In this setting, b2b equipment leasing for a business customer is classified as a producer product. The wording matches the textbook relationship without adding extra conditions.
+The statement is true.
+', 'TRUE — A product in marketing is any good and/or service that can be exchanged to fulfil customer wishes and needs, whether the customer is a firm or a household.
 
-The reasoning chain is complete, so mark the statement true.', 'FALSE — Evaluated against the textbook standard, this assertion is false. B2B classification of a broadband package depends on the seller''s industry rather than on the export buyer purchaser.
+Household-wish fulfilment through exchanged equipment leasing makes the service a product sold b2c.
 
-This tests discrimination within what counts as a marketing product (goods and services, B2B and B2C): local versus international scope, equity versus debt, product versus market orientation, and similar pairs.
+Nothing in the wording contradicts that marketing test, so the claim is sound.
 
-The statement overreaches because b2b classification depends on the business purchaser, not solely on the seller''s industry. The trap is to agree with the topic while missing the one detail that breaks the logic.
+The statement is true.
+', 'TRUE — Producer products are goods and services sold from one business to another (B2B). What matters is the purchaser''s identity as a business customer, not factory origin, weight, packaging, or the seller''s registration alone.
 
-If two ideas are related, the statement may be false because it attributes the feature to the wrong member of the pair.
+Equipment leasing under a commercial contract to a shipping line is a producer product service.
 
-The statement sounds plausible but fails on precision, so it is false.', 'TRUE — Evaluated against the textbook standard, this assertion is correct. Equipment leasing sold to a suburban family is a consumer product because the service is exchanged business-to-consumer.
+The sentence therefore reports the concept accurately for this case.
 
-Here you must apply ideas from what counts as a marketing product (goods and services, B2B and B2C) to a concrete situation rather than recite a definition from memory. Ownership, customer type, stakeholder group, or country of production usually decides the verdict.
+The statement is true.
+', 'TRUE — Consumer products are goods and services sold to consumers or private households (B2C). The household or individual buyer defines the label, not retail branding, luxury status, or physical size.
 
-Applied carefully, b2c equipment leasing for a household customer is classified as a consumer product. Nothing in the sentence stretches the concept beyond its standard use.
+Equipment leasing for personal or domestic benefit to a suburban family is a consumer product service.
 
-Every part of the claim aligns with the standard concept, so the statement stands.', 'FALSE — The claim is false. B2C classification of a broadband package depends on colourful retail branding rather than on the personal customer purchaser.
+The sentence therefore reports the concept accurately for this case.
 
-The section on what counts as a marketing product (goods and services, B2B and B2C) frequently contrasts two similar ideas side by side. A comparison statement is true only if the relationship is stated in the right direction and applies to the right concept pair.
+The statement is true.
+', 'TRUE — Consumer products are goods and services sold to consumers or private households (B2C). The household or individual buyer defines the label, not retail branding, luxury status, or physical size.
 
-Applied to this claim, b2c classification depends on the household purchaser, not on retail branding alone. That is why the sentence does not survive careful reading.
+Dual-channel equipment leasing sales illustrate producer and consumer labels driven by customer type.
 
-Students often remember that two concepts differ but swap the direction of the comparison. Verify which side of the pair is longer, larger, riskier, or more regulated.
+The sentence therefore reports the concept accurately for this case.
 
-The statement sounds plausible but fails on precision, so it is false.', 'FALSE — The claim is false. A broadband package sold to a export buyer is B2C because money changes hands in the transaction.
+The statement is true.
+'] WHERE case_id = 'CASE 5.1.67' AND tier = 'full';
+UPDATE public.economics_cases SET tactical_explanations = ARRAY['FALSE — Producer products are goods and services sold from one business to another (B2B). What matters is the purchaser''s identity as a business customer, not factory origin, weight, packaging, or the seller''s registration alone.
 
-The scenario is a worked example of what counts as a marketing product (goods and services, B2B and B2C). Translate the story into the textbook category first; only then judge whether the sentence describes that category accurately.
+On this stem (broadband): the seller''s company status does not make a household sale b2b; it remains b2c with a consumer product.
 
-Applied to this claim, payment alone does not make the sale b2c; a business buyer implies b2b and a producer product. That is why the sentence does not survive careful reading.
+The mislabelled category or reversed comparison is enough to reject the claim.
 
-Because the decisive detail is wrong, mark the statement false.'] WHERE case_id = 'CASE 5.1.66' AND tier = 'full';
-UPDATE public.economics_cases SET tactical_explanations = ARRAY['TRUE — On the Fuhrmann definition used in the entrance exam, the sentence is correct. An exchanged equipment leasing contract with a shipping line fulfils business needs and therefore counts as a product in marketing terms.
+The statement is false.
+', 'TRUE — The same catalogue item can be a producer product in one sale and a consumer product in another. Classification follows the buyer in that transaction, so absolute words like "always" or "only" usually fail.
 
-This statement draws on what counts as a marketing product (goods and services, B2B and B2C). Treat it as a checklist against the core concept named in the stem, not as a general opinion about business.
+Exchange of equipment leasing with either business or household buyers keeps it within the product concept.
 
-In this setting, business-need fulfilment through exchanged equipment leasing makes the service a product sold b2b. The wording matches the textbook relationship without adding extra conditions.
+Under that definition the assertion is the right description of the situation.
 
-No qualifying word breaks the definition or scenario, so the answer is true.', 'TRUE — On the Fuhrmann definition used in the entrance exam, the sentence is correct. An exchanged equipment leasing visit for a suburban family fulfils household wishes and therefore counts as a product in marketing terms.
+The statement is true.
+', 'TRUE — Producer products are goods and services sold from one business to another (B2B). What matters is the purchaser''s identity as a business customer, not factory origin, weight, packaging, or the seller''s registration alone.
 
-This statement draws on what counts as a marketing product (goods and services, B2B and B2C). Treat it as a checklist against the core concept named in the stem, not as a general opinion about business.
+B2b purchase of equipment leasing by a shipping line yields a producer product classification.
 
-In this setting, household-wish fulfilment through exchanged equipment leasing makes the service a product sold b2c. The wording matches the textbook relationship without adding extra conditions.
+The sentence therefore reports the concept accurately for this case.
 
-No qualifying word breaks the definition or scenario, so the answer is true.', 'TRUE — Evaluated against the textbook standard, this assertion is correct. Producer products encompass equipment leasing when one firm provides it to a shipping line under a commercial contract.
+The statement is true.
+', 'TRUE — Consumer products are goods and services sold to consumers or private households (B2C). The household or individual buyer defines the label, not retail branding, luxury status, or physical size.
 
-Here you must apply ideas from what counts as a marketing product (goods and services, B2B and B2C) to a concrete situation rather than recite a definition from memory. Ownership, customer type, stakeholder group, or country of production usually decides the verdict.
+B2c purchase of equipment leasing by a suburban family yields a consumer product classification.
 
-Applied carefully, equipment leasing under a commercial contract to a shipping line is a producer product service. Nothing in the sentence stretches the concept beyond its standard use.
+Under that definition the assertion is the right description of the situation.
 
-No qualifying word breaks the definition or scenario, so the answer is true.', 'TRUE — On the Fuhrmann definition used in the entrance exam, the sentence is correct. Consumer products encompass equipment leasing when a firm provides it to a suburban family for personal or domestic benefit.
+The statement is true.
+', 'TRUE — A product in marketing is any good and/or service that can be exchanged to fulfil customer wishes and needs, whether the customer is a firm or a household.
 
-The scenario is a worked example of what counts as a marketing product (goods and services, B2B and B2C). Translate the story into the textbook category first; only then judge whether the sentence describes that category accurately.
+Intangible equipment leasing counts as a product once exchanged to satisfy needs.
 
-In this setting, equipment leasing for personal or domestic benefit to a suburban family is a consumer product service. The wording matches the textbook relationship without adding extra conditions.
+Nothing in the wording contradicts that marketing test, so the claim is sound.
 
-Every part of the claim aligns with the standard concept, so the statement stands.', 'TRUE — This statement is correct. The same firm may sell equipment leasing as a B2B producer product to a shipping line and as a B2C consumer product to a suburban family.
+The statement is true.
+'] WHERE case_id = 'CASE 5.1.68' AND tier = 'full';
+UPDATE public.economics_cases SET tactical_explanations = ARRAY['FALSE — Producer products are goods and services sold from one business to another (B2B). What matters is the purchaser''s identity as a business customer, not factory origin, weight, packaging, or the seller''s registration alone.
 
-The relevant theory comes from what counts as a marketing product (goods and services, B2B and B2C). Identify which definition or relationship the sentence is trying to test before deciding true or false.
+Producer products include goods and services sold to businesses, including a finished broadband package for a export buyer.
 
-Applied carefully, dual-channel equipment leasing sales illustrate producer and consumer labels driven by customer type. Nothing in the sentence stretches the concept beyond its standard use.
+The absolute wording is what breaks the claim once the correct test is applied.
 
-Every part of the claim aligns with the standard concept, so the statement stands.'] WHERE case_id = 'CASE 5.1.67' AND tier = 'full';
-UPDATE public.economics_cases SET tactical_explanations = ARRAY['FALSE — On the Fuhrmann definition used in the entrance exam, the sentence is false. A broadband package sold to a personal customer is B2B because the seller is a registered company.
+The statement is false.
+', 'TRUE — A product in marketing is any good and/or service that can be exchanged to fulfil customer wishes and needs, whether the customer is a firm or a household.
 
-The scenario is a worked example of what counts as a marketing product (goods and services, B2B and B2C). Translate the story into the textbook category first; only then judge whether the sentence describes that category accurately.
+Paid transfer of equipment leasing to a customer with unmet wishes or needs defines a marketing product.
 
-Applied to this claim, the seller''s company status does not make a household sale b2b; it remains b2c with a consumer product. That is why the sentence does not survive careful reading.
+The sentence therefore reports the concept accurately for this case.
 
-Because the decisive detail is wrong, mark the statement false.', 'TRUE — Evaluated against the textbook standard, this assertion is correct. Marketing treats equipment leasing as a product whenever it is exchanged, whether the buyer is a shipping line or a suburban family.
+The statement is true.
+', 'TRUE — Producer products are goods and services sold from one business to another (B2B). What matters is the purchaser''s identity as a business customer, not factory origin, weight, packaging, or the seller''s registration alone.
 
-The relevant theory comes from what counts as a marketing product (goods and services, B2B and B2C). Identify which definition or relationship the sentence is trying to test before deciding true or false.
+B2b staff training for a business customer is classified as a producer product.
 
-Applied carefully, exchange of equipment leasing with either business or household buyers keeps it within the product concept. Nothing in the sentence stretches the concept beyond its standard use.
+The sentence therefore reports the concept accurately for this case.
 
-No qualifying word breaks the definition or scenario, so the answer is true.', 'TRUE — On the Fuhrmann definition used in the entrance exam, the sentence is correct. A shipping line purchasing equipment leasing engages in business-to-business exchange for a producer product service.
+The statement is true.
+', 'TRUE — Consumer products are goods and services sold to consumers or private households (B2C). The household or individual buyer defines the label, not retail branding, luxury status, or physical size.
 
-This statement draws on what counts as a marketing product (goods and services, B2B and B2C). Treat it as a checklist against the core concept named in the stem, not as a general opinion about business.
+B2c staff training for a household customer is classified as a consumer product.
 
-In this setting, b2b purchase of equipment leasing by a shipping line yields a producer product classification. The wording matches the textbook relationship without adding extra conditions.
+The sentence therefore reports the concept accurately for this case.
 
-The reasoning chain is complete, so mark the statement true.', 'TRUE — This statement is correct. A suburban family purchasing equipment leasing engages in business-to-consumer exchange for a consumer product service.
+The statement is true.
+', 'TRUE — A product in marketing is any good and/or service that can be exchanged to fulfil customer wishes and needs, whether the customer is a firm or a household.
 
-The relevant theory comes from what counts as a marketing product (goods and services, B2B and B2C). Identify which definition or relationship the sentence is trying to test before deciding true or false.
+Business-need fulfilment through exchanged staff training makes the service a product sold b2b.
 
-Applied carefully, b2c purchase of equipment leasing by a suburban family yields a consumer product classification. Nothing in the sentence stretches the concept beyond its standard use.
+Nothing in the wording contradicts that marketing test, so the claim is sound.
 
-Every part of the claim aligns with the standard concept, so the statement stands.', 'TRUE — This statement is correct. Equipment leasing illustrates that intangible offerings can be products when traded to satisfy customer needs.
+The statement is true.
+'] WHERE case_id = 'CASE 5.1.69' AND tier = 'full';
+UPDATE public.economics_cases SET tactical_explanations = ARRAY['TRUE — A product in marketing is any good and/or service that can be exchanged to fulfil customer wishes and needs, whether the customer is a firm or a household.
 
-Here you must apply ideas from what counts as a marketing product (goods and services, B2B and B2C) to a concrete situation rather than recite a definition from memory. Ownership, customer type, stakeholder group, or country of production usually decides the verdict.
+Household-wish fulfilment through exchanged staff training makes the service a product sold b2c.
 
-Applied carefully, intangible equipment leasing counts as a product once exchanged to satisfy needs. Nothing in the sentence stretches the concept beyond its standard use.
+Nothing in the wording contradicts that marketing test, so the claim is sound.
 
-The reasoning chain is complete, so mark the statement true.'] WHERE case_id = 'CASE 5.1.68' AND tier = 'full';
-UPDATE public.economics_cases SET tactical_explanations = ARRAY['FALSE — The claim is false. Producer products include only raw materials, so a finished broadband package sold to a export buyer cannot be a producer product.
+The statement is true.
+', 'TRUE — Producer products are goods and services sold from one business to another (B2B). What matters is the purchaser''s identity as a business customer, not factory origin, weight, packaging, or the seller''s registration alone.
 
-Although the subject matter is what counts as a marketing product (goods and services, B2B and B2C), this is really a logic check on overstatement. Non-profit surpluses, mixed economies, and partial market failure are classic cases where absolute wording fails.
+Staff training under a commercial contract to a engineering plant is a producer product service.
 
-Applied to this claim, producer products include goods and services sold to businesses, including a finished broadband package for a export buyer. That is why the sentence does not survive careful reading.
+Under that definition the assertion is the right description of the situation.
 
-Watch the absolute wording "cannot": exam statements often sound plausible until a single scope word turns an otherwise familiar idea into an overclaim.
+The statement is true.
+', 'TRUE — Consumer products are goods and services sold to consumers or private households (B2C). The household or individual buyer defines the label, not retail branding, luxury status, or physical size.
 
-Because the decisive detail is wrong, mark the statement false.', 'TRUE — The claim is correct. Exchange of equipment leasing creates a marketing product because payment transfers the service to a customer with unmet wishes or needs.
+Staff training for personal or domestic benefit to a student renter is a consumer product service.
 
-The scenario is a worked example of what counts as a marketing product (goods and services, B2B and B2C). Translate the story into the textbook category first; only then judge whether the sentence describes that category accurately.
+The sentence therefore reports the concept accurately for this case.
 
-In this setting, paid transfer of equipment leasing to a customer with unmet wishes or needs defines a marketing product. The wording matches the textbook relationship without adding extra conditions.
+The statement is true.
+', 'TRUE — Consumer products are goods and services sold to consumers or private households (B2C). The household or individual buyer defines the label, not retail branding, luxury status, or physical size.
 
-No qualifying word breaks the definition or scenario, so the answer is true.', 'TRUE — The claim is correct. Staff training sold to a engineering plant is a producer product because the service is exchanged business-to-business.
+Dual-channel staff training sales illustrate producer and consumer labels driven by customer type.
 
-The scenario is a worked example of what counts as a marketing product (goods and services, B2B and B2C). Translate the story into the textbook category first; only then judge whether the sentence describes that category accurately.
+Nothing in the wording contradicts that marketing test, so the claim is sound.
 
-In this setting, b2b staff training for a business customer is classified as a producer product. The wording matches the textbook relationship without adding extra conditions.
+The statement is true.
+', 'TRUE — The same catalogue item can be a producer product in one sale and a consumer product in another. Classification follows the buyer in that transaction, so absolute words like "always" or "only" usually fail.
 
-No qualifying word breaks the definition or scenario, so the answer is true.', 'TRUE — On the Fuhrmann definition used in the entrance exam, the sentence is correct. Staff training sold to a student renter is a consumer product because the service is exchanged business-to-consumer.
+Exchange of staff training with either business or household buyers keeps it within the product concept.
 
-The scenario is a worked example of what counts as a marketing product (goods and services, B2B and B2C). Translate the story into the textbook category first; only then judge whether the sentence describes that category accurately.
+The sentence therefore reports the concept accurately for this case.
 
-In this setting, b2c staff training for a household customer is classified as a consumer product. The wording matches the textbook relationship without adding extra conditions.
+The statement is true.
+'] WHERE case_id = 'CASE 5.1.70' AND tier = 'full';
+UPDATE public.economics_cases SET tactical_explanations = ARRAY['TRUE — Producer products are goods and services sold from one business to another (B2B). What matters is the purchaser''s identity as a business customer, not factory origin, weight, packaging, or the seller''s registration alone.
 
-Every part of the claim aligns with the standard concept, so the statement stands.', 'TRUE — The claim is correct. An exchanged staff training contract with a engineering plant fulfils business needs and therefore counts as a product in marketing terms.
+B2b purchase of staff training by a engineering plant yields a producer product classification.
 
-This statement draws on what counts as a marketing product (goods and services, B2B and B2C). Treat it as a checklist against the core concept named in the stem, not as a general opinion about business.
+Under that definition the assertion is the right description of the situation.
 
-In this setting, business-need fulfilment through exchanged staff training makes the service a product sold b2b. The wording matches the textbook relationship without adding extra conditions.
+The statement is true.
+', 'TRUE — Consumer products are goods and services sold to consumers or private households (B2C). The household or individual buyer defines the label, not retail branding, luxury status, or physical size.
 
-The reasoning chain is complete, so mark the statement true.'] WHERE case_id = 'CASE 5.1.69' AND tier = 'full';
-UPDATE public.economics_cases SET tactical_explanations = ARRAY['TRUE — Evaluated against the textbook standard, this assertion is correct. An exchanged staff training visit for a student renter fulfils household wishes and therefore counts as a product in marketing terms.
+B2c purchase of staff training by a student renter yields a consumer product classification.
 
-The relevant theory comes from what counts as a marketing product (goods and services, B2B and B2C). Identify which definition or relationship the sentence is trying to test before deciding true or false.
+Under that definition the assertion is the right description of the situation.
 
-Applied carefully, household-wish fulfilment through exchanged staff training makes the service a product sold b2c. Nothing in the sentence stretches the concept beyond its standard use.
+The statement is true.
+', 'TRUE — A product in marketing is any good and/or service that can be exchanged to fulfil customer wishes and needs, whether the customer is a firm or a household.
 
-No qualifying word breaks the definition or scenario, so the answer is true.', 'TRUE — The claim is correct. Producer products encompass staff training when one firm provides it to a engineering plant under a commercial contract.
+Intangible staff training counts as a product once exchanged to satisfy needs.
 
-The scenario is a worked example of what counts as a marketing product (goods and services, B2B and B2C). Translate the story into the textbook category first; only then judge whether the sentence describes that category accurately.
+Under that definition the assertion is the right description of the situation.
 
-In this setting, staff training under a commercial contract to a engineering plant is a producer product service. The wording matches the textbook relationship without adding extra conditions.
+The statement is true.
+', 'TRUE — A product in marketing is any good and/or service that can be exchanged to fulfil customer wishes and needs, whether the customer is a firm or a household.
 
-Every part of the claim aligns with the standard concept, so the statement stands.', 'TRUE — The claim is correct. Consumer products encompass staff training when a firm provides it to a student renter for personal or domestic benefit.
+Paid transfer of staff training to a customer with unmet wishes or needs defines a marketing product.
 
-The scenario is a worked example of what counts as a marketing product (goods and services, B2B and B2C). Translate the story into the textbook category first; only then judge whether the sentence describes that category accurately.
+Nothing in the wording contradicts that marketing test, so the claim is sound.
 
-In this setting, staff training for personal or domestic benefit to a student renter is a consumer product service. The wording matches the textbook relationship without adding extra conditions.
+The statement is true.
+', 'TRUE — Producer products are goods and services sold from one business to another (B2B). What matters is the purchaser''s identity as a business customer, not factory origin, weight, packaging, or the seller''s registration alone.
 
-Every part of the claim aligns with the standard concept, so the statement stands.', 'TRUE — On the Fuhrmann definition used in the entrance exam, the sentence is correct. The same firm may sell staff training as a B2B producer product to a engineering plant and as a B2C consumer product to a student renter.
+B2b security monitoring for a business customer is classified as a producer product.
 
-This statement draws on what counts as a marketing product (goods and services, B2B and B2C). Treat it as a checklist against the core concept named in the stem, not as a general opinion about business.
+The sentence therefore reports the concept accurately for this case.
 
-In this setting, dual-channel staff training sales illustrate producer and consumer labels driven by customer type. The wording matches the textbook relationship without adding extra conditions.
+The statement is true.
+'] WHERE case_id = 'CASE 5.1.71' AND tier = 'full';
+UPDATE public.economics_cases SET tactical_explanations = ARRAY['FALSE — Consumer products are goods and services sold to consumers or private households (B2C). The household or individual buyer defines the label, not retail branding, luxury status, or physical size.
 
-Every part of the claim aligns with the standard concept, so the statement stands.', 'TRUE — This statement is correct. Marketing treats staff training as a product whenever it is exchanged, whether the buyer is a engineering plant or a student renter.
+Consumer products include ordinary goods and services sold to households, including a broadband package for a personal customer.
 
-The relevant theory comes from what counts as a marketing product (goods and services, B2B and B2C). Identify which definition or relationship the sentence is trying to test before deciding true or false.
+One clear counterexample under the right criterion is enough to reject the sentence.
 
-Applied carefully, exchange of staff training with either business or household buyers keeps it within the product concept. Nothing in the sentence stretches the concept beyond its standard use.
+The statement is false.
+', 'TRUE — Consumer products are goods and services sold to consumers or private households (B2C). The household or individual buyer defines the label, not retail branding, luxury status, or physical size.
 
-Every part of the claim aligns with the standard concept, so the statement stands.'] WHERE case_id = 'CASE 5.1.70' AND tier = 'full';
-UPDATE public.economics_cases SET tactical_explanations = ARRAY['TRUE — The claim is correct. A engineering plant purchasing staff training engages in business-to-business exchange for a producer product service.
+B2c security monitoring for a household customer is classified as a consumer product.
 
-This statement draws on what counts as a marketing product (goods and services, B2B and B2C). Treat it as a checklist against the core concept named in the stem, not as a general opinion about business.
+Nothing in the wording contradicts that marketing test, so the claim is sound.
 
-In this setting, b2b purchase of staff training by a engineering plant yields a producer product classification. The wording matches the textbook relationship without adding extra conditions.
+The statement is true.
+', 'TRUE — A product in marketing is any good and/or service that can be exchanged to fulfil customer wishes and needs, whether the customer is a firm or a household.
 
-Every part of the claim aligns with the standard concept, so the statement stands.', 'TRUE — Evaluated against the textbook standard, this assertion is correct. A student renter purchasing staff training engages in business-to-consumer exchange for a consumer product service.
+Business-need fulfilment through exchanged security monitoring makes the service a product sold b2b.
 
-The relevant theory comes from what counts as a marketing product (goods and services, B2B and B2C). Identify which definition or relationship the sentence is trying to test before deciding true or false.
+Nothing in the wording contradicts that marketing test, so the claim is sound.
 
-Applied carefully, b2c purchase of staff training by a student renter yields a consumer product classification. Nothing in the sentence stretches the concept beyond its standard use.
+The statement is true.
+', 'TRUE — A product in marketing is any good and/or service that can be exchanged to fulfil customer wishes and needs, whether the customer is a firm or a household.
 
-The reasoning chain is complete, so mark the statement true.', 'TRUE — This statement is correct. Staff training illustrates that intangible offerings can be products when traded to satisfy customer needs.
+Household-wish fulfilment through exchanged security monitoring makes the service a product sold b2c.
 
-Here you must apply ideas from what counts as a marketing product (goods and services, B2B and B2C) to a concrete situation rather than recite a definition from memory. Ownership, customer type, stakeholder group, or country of production usually decides the verdict.
+Under that definition the assertion is the right description of the situation.
 
-Applied carefully, intangible staff training counts as a product once exchanged to satisfy needs. Nothing in the sentence stretches the concept beyond its standard use.
+The statement is true.
+', 'TRUE — Producer products are goods and services sold from one business to another (B2B). What matters is the purchaser''s identity as a business customer, not factory origin, weight, packaging, or the seller''s registration alone.
 
-No qualifying word breaks the definition or scenario, so the answer is true.', 'TRUE — This statement is correct. Exchange of staff training creates a marketing product because payment transfers the service to a customer with unmet wishes or needs.
+Security monitoring under a commercial contract to a data centre operator is a producer product service.
 
-Here you must apply ideas from what counts as a marketing product (goods and services, B2B and B2C) to a concrete situation rather than recite a definition from memory. Ownership, customer type, stakeholder group, or country of production usually decides the verdict.
+Under that definition the assertion is the right description of the situation.
 
-Applied carefully, paid transfer of staff training to a customer with unmet wishes or needs defines a marketing product. Nothing in the sentence stretches the concept beyond its standard use.
+The statement is true.
+'] WHERE case_id = 'CASE 5.1.72' AND tier = 'full';
+UPDATE public.economics_cases SET tactical_explanations = ARRAY['FALSE — A product in marketing is any good and/or service that can be exchanged to fulfil customer wishes and needs, whether the customer is a firm or a household.
 
-No qualifying word breaks the definition or scenario, so the answer is true.', 'TRUE — On the Fuhrmann definition used in the entrance exam, the sentence is correct. Security monitoring sold to a data centre operator is a producer product because the service is exchanged business-to-business.
+A broadband package is a product when exchanged to fulfil wishes and needs, regardless of advertising timing.
 
-The scenario is a worked example of what counts as a marketing product (goods and services, B2B and B2C). Translate the story into the textbook category first; only then judge whether the sentence describes that category accurately.
+Those restricting words stretch a limited idea past what marketing allows.
 
-In this setting, b2b security monitoring for a business customer is classified as a producer product. The wording matches the textbook relationship without adding extra conditions.
+The statement is false.
+', 'FALSE — Consumer products are goods and services sold to consumers or private households (B2C). The household or individual buyer defines the label, not retail branding, luxury status, or physical size.
 
-The reasoning chain is complete, so mark the statement true.'] WHERE case_id = 'CASE 5.1.71' AND tier = 'full';
-UPDATE public.economics_cases SET tactical_explanations = ARRAY['FALSE — The claim is false. Consumer products include only luxury items, so a routine broadband package sold to a personal customer cannot be a consumer product.
+Sales to a business customer classify the catering tray as a b2b producer product, not a consumer product.
 
-Although the subject matter is what counts as a marketing product (goods and services, B2B and B2C), this is really a logic check on overstatement. Non-profit surpluses, mixed economies, and partial market failure are classic cases where absolute wording fails.
+Swap in the textbook criterion and the sentence no longer describes the case.
 
-Applied to this claim, consumer products include ordinary goods and services sold to households, including a broadband package for a personal customer. That is why the sentence does not survive careful reading.
+The statement is false.
+', 'FALSE — Producer products are goods and services sold from one business to another (B2B). What matters is the purchaser''s identity as a business customer, not factory origin, weight, packaging, or the seller''s registration alone.
 
-Watch the absolute wording "cannot": exam statements often sound plausible until a single scope word turns an otherwise familiar idea into an overclaim.
+Sales to a household customer classify the catering tray as a b2c consumer product, not a producer product.
 
-Once the overclaim or mislabel is exposed, the only consistent answer is false.', 'TRUE — On the Fuhrmann definition used in the entrance exam, the sentence is correct. Security monitoring sold to a self-employed artisan is a consumer product because the service is exchanged business-to-consumer.
+Once the defining feature is restored, the assertion falls away.
 
-The scenario is a worked example of what counts as a marketing product (goods and services, B2B and B2C). Translate the story into the textbook category first; only then judge whether the sentence describes that category accurately.
+The statement is false.
+', 'TRUE — Consumer products are goods and services sold to consumers or private households (B2C). The household or individual buyer defines the label, not retail branding, luxury status, or physical size.
 
-In this setting, b2c security monitoring for a household customer is classified as a consumer product. The wording matches the textbook relationship without adding extra conditions.
+Security monitoring for personal or domestic benefit to a self-employed artisan is a consumer product service.
 
-Every part of the claim aligns with the standard concept, so the statement stands.', 'TRUE — On the Fuhrmann definition used in the entrance exam, the sentence is correct. An exchanged security monitoring contract with a data centre operator fulfils business needs and therefore counts as a product in marketing terms.
+Nothing in the wording contradicts that marketing test, so the claim is sound.
 
-This statement draws on what counts as a marketing product (goods and services, B2B and B2C). Treat it as a checklist against the core concept named in the stem, not as a general opinion about business.
+The statement is true.
+', 'TRUE — Consumer products are goods and services sold to consumers or private households (B2C). The household or individual buyer defines the label, not retail branding, luxury status, or physical size.
 
-In this setting, business-need fulfilment through exchanged security monitoring makes the service a product sold b2b. The wording matches the textbook relationship without adding extra conditions.
+Dual-channel security monitoring sales illustrate producer and consumer labels driven by customer type.
 
-No qualifying word breaks the definition or scenario, so the answer is true.', 'TRUE — On the Fuhrmann definition used in the entrance exam, the sentence is correct. An exchanged security monitoring visit for a self-employed artisan fulfils household wishes and therefore counts as a product in marketing terms.
+Nothing in the wording contradicts that marketing test, so the claim is sound.
 
-This statement draws on what counts as a marketing product (goods and services, B2B and B2C). Treat it as a checklist against the core concept named in the stem, not as a general opinion about business.
+The statement is true.
+'] WHERE case_id = 'CASE 5.1.73' AND tier = 'full';
+UPDATE public.economics_cases SET tactical_explanations = ARRAY['TRUE — The same catalogue item can be a producer product in one sale and a consumer product in another. Classification follows the buyer in that transaction, so absolute words like "always" or "only" usually fail.
 
-In this setting, household-wish fulfilment through exchanged security monitoring makes the service a product sold b2c. The wording matches the textbook relationship without adding extra conditions.
+Exchange of security monitoring with either business or household buyers keeps it within the product concept.
 
-No qualifying word breaks the definition or scenario, so the answer is true.', 'TRUE — On the Fuhrmann definition used in the entrance exam, the sentence is correct. Producer products encompass security monitoring when one firm provides it to a data centre operator under a commercial contract.
+The sentence therefore reports the concept accurately for this case.
 
-The scenario is a worked example of what counts as a marketing product (goods and services, B2B and B2C). Translate the story into the textbook category first; only then judge whether the sentence describes that category accurately.
+The statement is true.
+', 'TRUE — Producer products are goods and services sold from one business to another (B2B). What matters is the purchaser''s identity as a business customer, not factory origin, weight, packaging, or the seller''s registration alone.
 
-In this setting, security monitoring under a commercial contract to a data centre operator is a producer product service. The wording matches the textbook relationship without adding extra conditions.
+B2b purchase of security monitoring by a data centre operator yields a producer product classification.
 
-The reasoning chain is complete, so mark the statement true.'] WHERE case_id = 'CASE 5.1.72' AND tier = 'full';
-UPDATE public.economics_cases SET tactical_explanations = ARRAY['FALSE — The claim is false. A broadband package becomes a product only after advertising creates demand rather than when it is exchanged.
+Under that definition the assertion is the right description of the situation.
 
-The section on what counts as a marketing product (goods and services, B2B and B2C) frequently contrasts two similar ideas side by side. A comparison statement is true only if the relationship is stated in the right direction and applies to the right concept pair.
+The statement is true.
+', 'FALSE — The same catalogue item can be a producer product in one sale and a consumer product in another. Classification follows the buyer in that transaction, so absolute words like "always" or "only" usually fail.
 
-Applied to this claim, a broadband package is a product when exchanged to fulfil wishes and needs, regardless of advertising timing. That is why the sentence does not survive careful reading.
+Identical catering tray models can be producer or consumer products depending on the buyer.
 
-Students often remember that two concepts differ but swap the direction of the comparison. Verify which side of the pair is longer, larger, riskier, or more regulated.
+One clear counterexample under the right criterion is enough to reject the sentence.
 
-The statement sounds plausible but fails on precision, so it is false.', 'FALSE — This statement is false. A catering tray sold to a warehouse operator is a consumer product because every sale ultimately serves human needs.
+The statement is false.
+', 'TRUE — Consumer products are goods and services sold to consumers or private households (B2C). The household or individual buyer defines the label, not retail branding, luxury status, or physical size.
 
-The topic is what counts as a marketing product (goods and services, B2B and B2C), but the decisive skill here is reading quantifiers. Words such as never, always, only, or all turn a generally true idea into a claim that can be rejected by one routine counterexample.
+B2c purchase of security monitoring by a self-employed artisan yields a consumer product classification.
 
-The statement overreaches because sales to a business customer classify the catering tray as a b2b producer product, not a consumer product. The trap is to agree with the topic while missing the one detail that breaks the logic.
+The sentence therefore reports the concept accurately for this case.
 
-Watch the absolute wording "every": exam statements often sound plausible until a single scope word turns an otherwise familiar idea into an overclaim.
+The statement is true.
+', 'TRUE — A product in marketing is any good and/or service that can be exchanged to fulfil customer wishes and needs, whether the customer is a firm or a household.
 
-The statement sounds plausible but fails on precision, so it is false.', 'FALSE — The claim is false. A catering tray sold to a household member is a producer product because the seller is a business firm.
+Intangible security monitoring counts as a product once exchanged to satisfy needs.
 
-The scenario is a worked example of what counts as a marketing product (goods and services, B2B and B2C). Translate the story into the textbook category first; only then judge whether the sentence describes that category accurately.
+The sentence therefore reports the concept accurately for this case.
 
-Applied to this claim, sales to a household customer classify the catering tray as a b2c consumer product, not a producer product. That is why the sentence does not survive careful reading.
+The statement is true.
+'] WHERE case_id = 'CASE 5.1.74' AND tier = 'full';
+UPDATE public.economics_cases SET tactical_explanations = ARRAY['TRUE — A product in marketing is any good and/or service that can be exchanged to fulfil customer wishes and needs, whether the customer is a firm or a household.
 
-Because the decisive detail is wrong, mark the statement false.', 'TRUE — The claim is correct. Consumer products encompass security monitoring when a firm provides it to a self-employed artisan for personal or domestic benefit.
+Paid transfer of security monitoring to a customer with unmet wishes or needs defines a marketing product.
 
-The scenario is a worked example of what counts as a marketing product (goods and services, B2B and B2C). Translate the story into the textbook category first; only then judge whether the sentence describes that category accurately.
+Under that definition the assertion is the right description of the situation.
 
-In this setting, security monitoring for personal or domestic benefit to a self-employed artisan is a consumer product service. The wording matches the textbook relationship without adding extra conditions.
+The statement is true.
+', 'FALSE — Marketing''s product definition is deliberately wide: it covers every exchangeable good and every exchangeable service that can fulfil customer wishes and needs. Physical form is not a requirement.
 
-The reasoning chain is complete, so mark the statement true.', 'TRUE — Evaluated against the textbook standard, this assertion is correct. The same firm may sell security monitoring as a B2B producer product to a data centre operator and as a B2C consumer product to a self-employed artisan.
+A catering tray can be a product when exchanged as a good or service to fulfil customer wishes and needs.
 
-The relevant theory comes from what counts as a marketing product (goods and services, B2B and B2C). Identify which definition or relationship the sentence is trying to test before deciding true or false.
+The mislabelled category or reversed comparison is enough to reject the claim.
 
-Applied carefully, dual-channel security monitoring sales illustrate producer and consumer labels driven by customer type. Nothing in the sentence stretches the concept beyond its standard use.
+The statement is false.
+', 'TRUE — Producer products are goods and services sold from one business to another (B2B). What matters is the purchaser''s identity as a business customer, not factory origin, weight, packaging, or the seller''s registration alone.
 
-Every part of the claim aligns with the standard concept, so the statement stands.'] WHERE case_id = 'CASE 5.1.73' AND tier = 'full';
-UPDATE public.economics_cases SET tactical_explanations = ARRAY['TRUE — The claim is correct. Marketing treats security monitoring as a product whenever it is exchanged, whether the buyer is a data centre operator or a self-employed artisan.
+B2b document printing for a business customer is classified as a producer product.
 
-This statement draws on what counts as a marketing product (goods and services, B2B and B2C). Treat it as a checklist against the core concept named in the stem, not as a general opinion about business.
+Nothing in the wording contradicts that marketing test, so the claim is sound.
 
-In this setting, exchange of security monitoring with either business or household buyers keeps it within the product concept. The wording matches the textbook relationship without adding extra conditions.
+The statement is true.
+', 'FALSE — Exchange is required for a good or service to count as a product in marketing terminology. Items that are only moved internally, given without trade, or not offered for exchange fall outside that definition.
 
-Every part of the claim aligns with the standard concept, so the statement stands.', 'TRUE — Evaluated against the textbook standard, this assertion is correct. A data centre operator purchasing security monitoring engages in business-to-business exchange for a producer product service.
+Exchange is required for a catering tray to count as a product in marketing terminology.
 
-The relevant theory comes from what counts as a marketing product (goods and services, B2B and B2C). Identify which definition or relationship the sentence is trying to test before deciding true or false.
+Once the defining feature is restored, the assertion falls away.
 
-Applied carefully, b2b purchase of security monitoring by a data centre operator yields a producer product classification. Nothing in the sentence stretches the concept beyond its standard use.
+The statement is false.
+', 'TRUE — Consumer products are goods and services sold to consumers or private households (B2C). The household or individual buyer defines the label, not retail branding, luxury status, or physical size.
 
-The reasoning chain is complete, so mark the statement true.', 'FALSE — Evaluated against the textbook standard, this assertion is false. The same catering tray must keep one fixed product label for all buyers because the design never changes.
+B2c document printing for a household customer is classified as a consumer product.
 
-The topic is what counts as a marketing product (goods and services, B2B and B2C), but the decisive skill here is reading quantifiers. Words such as never, always, only, or all turn a generally true idea into a claim that can be rejected by one routine counterexample.
+Nothing in the wording contradicts that marketing test, so the claim is sound.
 
-The statement overreaches because identical catering tray models can be producer or consumer products depending on the buyer. The trap is to agree with the topic while missing the one detail that breaks the logic.
-
-Watch the absolute wording "all": exam statements often sound plausible until a single scope word turns an otherwise familiar idea into an overclaim.
-
-The statement sounds plausible but fails on precision, so it is false.', 'TRUE — On the Fuhrmann definition used in the entrance exam, the sentence is correct. A self-employed artisan purchasing security monitoring engages in business-to-consumer exchange for a consumer product service.
-
-This statement draws on what counts as a marketing product (goods and services, B2B and B2C). Treat it as a checklist against the core concept named in the stem, not as a general opinion about business.
-
-In this setting, b2c purchase of security monitoring by a self-employed artisan yields a consumer product classification. The wording matches the textbook relationship without adding extra conditions.
-
-No qualifying word breaks the definition or scenario, so the answer is true.', 'TRUE — The claim is correct. Security monitoring illustrates that intangible offerings can be products when traded to satisfy customer needs.
-
-The scenario is a worked example of what counts as a marketing product (goods and services, B2B and B2C). Translate the story into the textbook category first; only then judge whether the sentence describes that category accurately.
-
-In this setting, intangible security monitoring counts as a product once exchanged to satisfy needs. The wording matches the textbook relationship without adding extra conditions.
-
-The reasoning chain is complete, so mark the statement true.'] WHERE case_id = 'CASE 5.1.74' AND tier = 'full';
-UPDATE public.economics_cases SET tactical_explanations = ARRAY['TRUE — On the Fuhrmann definition used in the entrance exam, the sentence is correct. Exchange of security monitoring creates a marketing product because payment transfers the service to a customer with unmet wishes or needs.
-
-The scenario is a worked example of what counts as a marketing product (goods and services, B2B and B2C). Translate the story into the textbook category first; only then judge whether the sentence describes that category accurately.
-
-In this setting, paid transfer of security monitoring to a customer with unmet wishes or needs defines a marketing product. The wording matches the textbook relationship without adding extra conditions.
-
-Every part of the claim aligns with the standard concept, so the statement stands.', 'FALSE — Evaluated against the textbook standard, this assertion is false. A catering tray is not a product unless it is a manufactured physical good.
-
-The relevant theory comes from what counts as a marketing product (goods and services, B2B and B2C). Identify which definition or relationship the sentence is trying to test before deciding true or false.
-
-The statement overreaches because a catering tray can be a product when exchanged as a good or service to fulfil customer wishes and needs. The trap is to agree with the topic while missing the one detail that breaks the logic.
-
-Because the decisive detail is wrong, mark the statement false.', 'TRUE — On the Fuhrmann definition used in the entrance exam, the sentence is correct. Document printing sold to a advertising agency is a producer product because the service is exchanged business-to-business.
-
-The scenario is a worked example of what counts as a marketing product (goods and services, B2B and B2C). Translate the story into the textbook category first; only then judge whether the sentence describes that category accurately.
-
-In this setting, b2b document printing for a business customer is classified as a producer product. The wording matches the textbook relationship without adding extra conditions.
-
-The reasoning chain is complete, so mark the statement true.', 'FALSE — Evaluated against the textbook standard, this assertion is false. Exchange is irrelevant to whether a catering tray counts as a product if customers desire it strongly enough.
-
-Here you must apply ideas from what counts as a marketing product (goods and services, B2B and B2C) to a concrete situation rather than recite a definition from memory. Ownership, customer type, stakeholder group, or country of production usually decides the verdict.
-
-The statement overreaches because exchange is required for a catering tray to count as a product in marketing terminology. The trap is to agree with the topic while missing the one detail that breaks the logic.
-
-The statement sounds plausible but fails on precision, so it is false.', 'TRUE — The claim is correct. Document printing sold to a weekend gardener is a consumer product because the service is exchanged business-to-consumer.
-
-The scenario is a worked example of what counts as a marketing product (goods and services, B2B and B2C). Translate the story into the textbook category first; only then judge whether the sentence describes that category accurately.
-
-In this setting, b2c document printing for a household customer is classified as a consumer product. The wording matches the textbook relationship without adding extra conditions.
-
-Every part of the claim aligns with the standard concept, so the statement stands.'] WHERE case_id = 'CASE 5.1.75' AND tier = 'full';
+The statement is true.
+'] WHERE case_id = 'CASE 5.1.75' AND tier = 'full';

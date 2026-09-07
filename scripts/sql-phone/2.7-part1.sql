@@ -1,816 +1,1153 @@
 -- Update expanded explanations for 2.7-part1 (25 cases).
 -- Safe to re-run: only updates tactical_explanations.
 
-UPDATE public.economics_cases SET tactical_explanations = ARRAY['TRUE — The claim is correct. Each firm in perfect competition is a price taker unable to move the market price by changing its own output alone.
+UPDATE public.economics_cases SET tactical_explanations = ARRAY['TRUE — Perfect competition assumes many buyers and sellers, a standardised product, free entry, and good information. Each firm is a price taker too small to move the market price by itself.
 
-This statement draws on competition, market structures, and price-taking versus price-making. Treat it as a checklist against the core concept named in the stem, not as a general opinion about business.
+In perfect competition each firm is a price taker: its own output alone cannot move the market price.
 
-In this setting, negligible individual market share makes each competitive firm accept the prevailing market price. The wording matches the textbook relationship without adding extra conditions.
+Held against the chapter test (here: firm, price taker), each operative word earns its place: the category, the comparison, and the mechanism survive when checked one by one.
 
-Every part of the claim aligns with the standard concept, so the statement stands.', 'FALSE — On the Fuhrmann definition used in the entrance exam, the sentence is false. Standardised grain grades on exchanges prove every retail clothing market is perfect competition worldwide.
+Nothing in the stem contradicts that reading, so the assertion stands as a correct application of the definition.
 
-Although the subject matter is competition, market structures, and price-taking versus price-making, this is really a logic check on overstatement. Non-profit surpluses, mixed economies, and partial market failure are classic cases where absolute wording fails.
+The statement is true.
+', 'FALSE — Perfect competition assumes many buyers and sellers, a standardised product, free entry, and good information. Each firm is a price taker too small to move the market price by itself.
 
-Applied to this claim, graded commodities illustrate near-perfect competition; differentiated retail markets usually are not. That is why the sentence does not survive careful reading.
+Standardised grain on exchanges does not prove every clothing market worldwide is perfect competition.
 
-Watch the absolute wording "every": exam statements often sound plausible until a single scope word turns an otherwise familiar idea into an overclaim.
+Held against the chapter test, the familiar vocabulary may sound economic, but the operative restriction or reason fails — so the sentence mislabels the situation.
 
-Once the overclaim or mislabel is exposed, the only consistent answer is false.', 'FALSE — On the Fuhrmann definition used in the entrance exam, the sentence is false. Perfect competition requires one dominant seller setting price for the entire market.
+Absolute wording is the trap: economics definitions leave room for counterexamples — another actor, another scope, a non-money cost, or a public function that still exists. One clear counterexample rejects the sentence.
 
-This statement draws on competition, market structures, and price-taking versus price-making. Treat it as a checklist against the core concept named in the stem, not as a general opinion about business.
+The statement is false.
+', 'FALSE — Perfect competition assumes many buyers and sellers, a standardised product, free entry, and good information. Each firm is a price taker too small to move the market price by itself.
 
-Applied to this claim, a single dominant seller describes monopoly structure, not the many-seller perfect competition model. That is why the sentence does not survive careful reading.
+Perfect competition has many sellers, not one dominant price-setting seller (that is monopoly).
 
-The statement sounds plausible but fails on precision, so it is false.', 'FALSE — The claim is false. Perfect competition assumes buyers and sellers operate with deliberately incomplete information about rival prices.
+Held against the chapter test, the familiar vocabulary may sound economic, but the operative restriction or reason fails — so the sentence mislabels the situation.
 
-This statement draws on competition, market structures, and price-taking versus price-making. Treat it as a checklist against the core concept named in the stem, not as a general opinion about business.
+The mismatch is in the defining feature, not in a missing buzzword; fix the feature and the claim disappears.
 
-Applied to this claim, the model typically assumes full information rather than deliberate ignorance of market prices. That is why the sentence does not survive careful reading.
+The statement is false.
+', 'FALSE — Perfect competition assumes many buyers and sellers, a standardised product, free entry, and good information. Each firm is a price taker too small to move the market price by itself.
 
-The statement sounds plausible but fails on precision, so it is false.', 'FALSE — This statement is false. Heavy product differentiation and permanent legal entry barriers are defining features of perfect competition.
+Structure does not follow from a single surface trait (homogeneous product, physical extraction, or one network layer). Wrong seller count, wrong entry story, or treating rivalry as collusion is enough to reject the claim.
 
-The relevant theory comes from competition, market structures, and price-taking versus price-making. Identify which definition or relationship the sentence is trying to test before deciding true or false.
+Held against the chapter test, the familiar vocabulary may sound economic, but the operative restriction or reason fails — so the sentence mislabels the situation.
 
-The statement overreaches because differentiation and entry barriers contradict the homogeneous-product and free-entry assumptions. The trap is to agree with the topic while missing the one detail that breaks the logic.
+Swap in the correct criterion and the sentence no longer describes the case — that is enough to mark it false.
 
-The statement sounds plausible but fails on precision, so it is false.'] WHERE case_id = 'CASE 2.7.01' AND tier = 'full';
-UPDATE public.economics_cases SET tactical_explanations = ARRAY['TRUE — This statement is correct. Single seller of piped water for the town resembles a local monopoly or monopoly-like structure.
+The statement is false.
+', 'FALSE — Perfect competition assumes many buyers and sellers, a standardised product, free entry, and good information. Each firm is a price taker too small to move the market price by itself.
 
-The relevant theory comes from competition, market structures, and price-taking versus price-making. Identify which definition or relationship the sentence is trying to test before deciding true or false.
+Heavy differentiation and permanent entry barriers contradict perfect competition assumptions.
 
-Applied carefully, one licensed piped-water supplier is monopoly-like within the relevant local market boundary. Nothing in the sentence stretches the concept beyond its standard use.
+Held against the chapter test, the familiar vocabulary may sound economic, but the operative restriction or reason fails — so the sentence mislabels the situation.
 
-The reasoning chain is complete, so mark the statement true.', 'FALSE — This statement is false. Monopoly requires the firm to dominate worldwide production of every related product simultaneously.
+Restore the textbook test and the assertion falls away: it mislabels the category or reverses the comparison the chapter actually teaches.
 
-The topic is competition, market structures, and price-taking versus price-making, but the decisive skill here is reading quantifiers. Words such as never, always, only, or all turn a generally true idea into a claim that can be rejected by one routine counterexample.
+The statement is false.
+'] WHERE case_id = 'CASE 2.7.01' AND tier = 'full';
+UPDATE public.economics_cases SET tactical_explanations = ARRAY['TRUE — Monopoly or monopoly-like power means one seller dominates a relevant market — through exclusivity, isolation, or cost conditions — and may face price or service regulation.
 
-The statement overreaches because monopoly concerns dominance within a defined market; global dominance in every related product is not required. The trap is to agree with the topic while missing the one detail that breaks the logic.
+A single licensed piped-water supplier for the town is a local monopoly (or monopoly-like) structure.
 
-Watch the absolute wording "every": exam statements often sound plausible until a single scope word turns an otherwise familiar idea into an overclaim.
+Map that definition onto the case where a small town where only one licensed company supplies piped drinking water to every household. The claim’s actors and constraints (here: monopoly) line up with the concept: the sentence describes the same mechanism the chapter teaches, not a neighbouring idea with similar vocabulary.
 
-The statement sounds plausible but fails on precision, so it is false.', 'FALSE — Evaluated against the textbook standard, this assertion is false. Legal exclusivity for utilities eliminates market power because public ownership removes profit motives entirely.
+Nothing in the stem contradicts that reading, so the assertion stands as a correct application of the definition.
 
-The topic is competition, market structures, and price-taking versus price-making, but the decisive skill here is reading quantifiers. Words such as never, always, only, or all turn a generally true idea into a claim that can be rejected by one routine counterexample.
+The statement is true.
+', 'FALSE — Monopoly or monopoly-like power means one seller dominates a relevant market — through exclusivity, isolation, or cost conditions — and may face price or service regulation.
 
-The statement overreaches because exclusive rights can confer market power even when the asset serves a public purpose. The trap is to agree with the topic while missing the one detail that breaks the logic.
+Monopoly is about being the sole seller in a relevant market — not dominating every related product worldwide.
 
-Watch the absolute wording "entirely": exam statements often sound plausible until a single scope word turns an otherwise familiar idea into an overclaim.
+Map that definition onto the case where a small town where only one licensed company supplies piped drinking water to every household. Even if the stem mentions related details (here: Monopoly, firm), those details do not carry the claim’s conclusion — the sentence either widens the concept past its test or attaches the wrong label to the facts.
 
-Because the decisive detail is wrong, mark the statement false.', 'FALSE — Evaluated against the textbook standard, this assertion is false. Sunk pipe costs encourage many rival water networks because entry is costless once pipes exist.
+Absolute wording is the trap: economics definitions leave room for counterexamples — another actor, another scope, a non-money cost, or a public function that still exists. One clear counterexample rejects the sentence.
 
-Here you must apply ideas from competition, market structures, and price-taking versus price-making to a concrete situation rather than recite a definition from memory. Ownership, customer type, stakeholder group, or country of production usually decides the verdict.
+The statement is false.
+', 'FALSE — Identify market structure — perfect competition, monopoly-like conditions, oligopoly, or cartel conduct — from number of sellers, entry, and interdependence.
 
-The statement overreaches because large sunk infrastructure costs typically deter entry rather than invite unlimited rival networks. The trap is to agree with the topic while missing the one detail that breaks the logic.
+Walk the definition onto the stem’s actors and constraints, then spot where the sentence’s category or absolute reason breaks that check.
 
-Once the overclaim or mislabel is exposed, the only consistent answer is false.', 'FALSE — Evaluated against the textbook standard, this assertion is false. Monopoly sellers must charge exactly marginal cost whenever a licence grants exclusive supply rights.
+Map that definition onto the case where a small town where only one licensed company supplies piped drinking water to every household. Even if the stem mentions related details, those details do not carry the claim’s conclusion — the sentence either widens the concept past its test or attaches the wrong label to the facts.
 
-The relevant theory comes from competition, market structures, and price-taking versus price-making. Identify which definition or relationship the sentence is trying to test before deciding true or false.
+The because-clause attaches the wrong reason to the label. A real detail (a national programme, a zero wage, shared premises, use of money) does not justify the over-broad conclusion.
 
-The statement overreaches because exclusive supply rights do not automatically force marginal-cost pricing without regulatory rules. The trap is to agree with the topic while missing the one detail that breaks the logic.
+The statement is false.
+', 'FALSE — Natural-monopoly conditions arise when one network serves demand at lower cost than many duplicates, often because of high sunk infrastructure costs. Regulators may then cap tariffs or set service rules.
 
-Because the decisive detail is wrong, mark the statement false.'] WHERE case_id = 'CASE 2.7.02' AND tier = 'full';
-UPDATE public.economics_cases SET tactical_explanations = ARRAY['TRUE — The claim is correct. Firms in oligopoly may consider rivals'' reactions when setting prices or service plans.
+Walk the definition onto the stem’s actors and constraints, then spot where the sentence’s category or absolute reason breaks that check.
 
-The scenario is a worked example of competition, market structures, and price-taking versus price-making. Translate the story into the textbook category first; only then judge whether the sentence describes that category accurately.
+Map that definition onto the case where a small town where only one licensed company supplies piped drinking water to every household. Even if the stem mentions related details, those details do not carry the claim’s conclusion — the sentence either widens the concept past its test or attaches the wrong label to the facts.
 
-In this setting, strategic interaction and mutual awareness distinguish oligopoly from perfect competition. The wording matches the textbook relationship without adding extra conditions.
+Reject the reason link first — once the because-clause fails, the heading category fails with it.
 
-Every part of the claim aligns with the standard concept, so the statement stands.', 'FALSE — This statement is false. Voluntary identical pricing meetings among rivals are lawful cartels whenever participants sign public minutes.
+The statement is false.
+', 'FALSE — Monopoly or monopoly-like power means one seller dominates a relevant market — through exclusivity, isolation, or cost conditions — and may face price or service regulation.
 
-The relevant theory comes from competition, market structures, and price-taking versus price-making. Identify which definition or relationship the sentence is trying to test before deciding true or false.
+Exclusive licence does not force marginal-cost pricing; monopoly can charge above marginal cost without regulation.
 
-The statement overreaches because secret coordinated price fixing is cartel conduct and generally illegal regardless of public minutes. The trap is to agree with the topic while missing the one detail that breaks the logic.
+Map that definition onto the case where a small town where only one licensed company supplies piped drinking water to every household. Even if the stem mentions related details (here: Monopoly, supply), those details do not carry the claim’s conclusion — the sentence either widens the concept past its test or attaches the wrong label to the facts.
 
-Once the overclaim or mislabel is exposed, the only consistent answer is false.', 'FALSE — This statement is false. Three national carriers serving most subscribers represent perfect competition because phones are physical goods.
+The absolute quantifier is doing the damage. Soften it to the chapter’s actual scope and the remaining content no longer supports a false blanket rule.
 
-Here you must apply ideas from competition, market structures, and price-taking versus price-making to a concrete situation rather than recite a definition from memory. Ownership, customer type, stakeholder group, or country of production usually decides the verdict.
+The statement is false.
+'] WHERE case_id = 'CASE 2.7.02' AND tier = 'full';
+UPDATE public.economics_cases SET tactical_explanations = ARRAY['TRUE — Oligopoly is competition among a few sellers whose strategies are interdependent: each firm watches rivals’ prices, capacities, and promotions.
 
-The statement overreaches because physical goods can still be sold in oligopoly when few firms dominate the market. The trap is to agree with the topic while missing the one detail that breaks the logic.
+Oligopolists watch rivals'' reactions when setting prices or plans — strategic interdependence.
 
-Because the decisive detail is wrong, mark the statement false.', 'FALSE — On the Fuhrmann definition used in the entrance exam, the sentence is false. Mutual dependence disappears in oligopoly once firms publish list prices on their websites.
+Held against the chapter test (here: oligopoly, service), each operative word earns its place: the category, the comparison, and the mechanism survive when checked one by one.
 
-This statement draws on competition, market structures, and price-taking versus price-making. Treat it as a checklist against the core concept named in the stem, not as a general opinion about business.
+Under that classification the claim describes the situation correctly rather than a lookalike category.
 
-Applied to this claim, published list prices do not remove strategic interdependence among few dominant rivals. That is why the sentence does not survive careful reading.
+The statement is true.
+', 'FALSE — A cartel is collusion among sellers to restrict output and raise joint prices — usually illegal. Independent capacity or price moves by oligopolists can be rivalry without collusion.
 
-Because the decisive detail is wrong, mark the statement false.', 'FALSE — Evaluated against the textbook standard, this assertion is false. Oligopoly means exactly two firms globally by mathematical definition with no other cases permitted.
+Secret or collusive identical pricing can be illegal cartel conduct; signing public minutes does not make collusion lawful.
 
-Start from the textbook definition in competition, market structures, and price-taking versus price-making. A statement is true only if every scope word in the definition is respected—location, purpose, distribution rule, or time horizon.
+Held against the chapter test, the familiar vocabulary may sound economic, but the operative restriction or reason fails — so the sentence mislabels the situation.
 
-The statement overreaches because oligopoly means few sellers, not necessarily exactly two; duopoly is a special case. The trap is to agree with the topic while missing the one detail that breaks the logic.
+Absolute wording is the trap: economics definitions leave room for counterexamples — another actor, another scope, a non-money cost, or a public function that still exists. One clear counterexample rejects the sentence.
 
-Near-miss definitions are deliberately written to sound familiar. Compare the statement phrase by phrase with the book version instead of trusting the overall topic.
+The statement is false.
+', 'FALSE — Perfect competition assumes many buyers and sellers, a standardised product, free entry, and good information. Each firm is a price taker too small to move the market price by itself.
 
-Once the overclaim or mislabel is exposed, the only consistent answer is false.'] WHERE case_id = 'CASE 2.7.03' AND tier = 'full';
-UPDATE public.economics_cases SET tactical_explanations = ARRAY['TRUE — The claim is correct. Competition authorities investigate evidence of collusive meetings and parallel pricing patterns.
+Three national carriers are few sellers — oligopoly — not perfect competition merely because phones are physical.
 
-This statement draws on competition, market structures, and price-taking versus price-making. Treat it as a checklist against the core concept named in the stem, not as a general opinion about business.
+Held against the chapter test (here: goods), the familiar vocabulary may sound economic, but the operative restriction or reason fails — so the sentence mislabels the situation.
 
-In this setting, authorities examine meeting records and pricing patterns for signs of coordinated collusion. The wording matches the textbook relationship without adding extra conditions.
+Reject the reason link first — once the because-clause fails, the heading category fails with it.
 
-Every part of the claim aligns with the standard concept, so the statement stands.', 'TRUE — The claim is correct. Oligopoly becomes a cartel when firms collude rather than compete independently.
+The statement is false.
+', 'FALSE — Oligopoly is competition among a few sellers whose strategies are interdependent: each firm watches rivals’ prices, capacities, and promotions.
 
-The section on competition, market structures, and price-taking versus price-making frequently contrasts two similar ideas side by side. A comparison statement is true only if the relationship is stated in the right direction and applies to the right concept pair.
+Structure does not follow from a single surface trait (homogeneous product, physical extraction, or one network layer). Wrong seller count, wrong entry story, or treating rivalry as collusion is enough to reject the claim. Focus points: oligopoly.
 
-In this setting, collusion transforms independent oligopoly rivalry into illegal cartel conduct. The wording matches the textbook relationship without adding extra conditions.
+Held against the chapter test (here: oligopoly), the familiar vocabulary may sound economic, but the operative restriction or reason fails — so the sentence mislabels the situation.
 
-No qualifying word breaks the definition or scenario, so the answer is true.', 'FALSE — On the Fuhrmann definition used in the entrance exam, the sentence is false. Open price competition among many small bakeries is cartel behaviour by definition.
+The mismatch is in the defining feature, not in a missing buzzword; fix the feature and the claim disappears.
 
-The question tests a precise definition from the section on competition, market structures, and price-taking versus price-making. Entrance-exam statements often copy a definition almost correctly; one altered phrase is enough to make the whole sentence wrong.
+The statement is false.
+', 'FALSE — Oligopoly is competition among a few sellers whose strategies are interdependent: each firm watches rivals’ prices, capacities, and promotions.
 
-Applied to this claim, many small competing bakeries typify competitive markets, not cartel collusion. That is why the sentence does not survive careful reading.
+Structure does not follow from a single surface trait (homogeneous product, physical extraction, or one network layer). Wrong seller count, wrong entry story, or treating rivalry as collusion is enough to reject the claim. Focus points: Oligopoly.
 
-A common mistake is to recognise the topic word (GDP, NPO, SME, liability) and stop reading. The exam rewards checking every qualifier in the definition.
+Held against the chapter test (here: Oligopoly), the familiar vocabulary may sound economic, but the operative restriction or reason fails — so the sentence mislabels the situation.
 
-Because the decisive detail is wrong, mark the statement false.', 'FALSE — The claim is false. Cartels aim to increase rivalry by forcing each member to undercut the others daily.
+The mismatch is in the defining feature, not in a missing buzzword; fix the feature and the claim disappears.
 
-This statement draws on competition, market structures, and price-taking versus price-making. Treat it as a checklist against the core concept named in the stem, not as a general opinion about business.
+The statement is false.
+'] WHERE case_id = 'CASE 2.7.03' AND tier = 'full';
+UPDATE public.economics_cases SET tactical_explanations = ARRAY['TRUE — A cartel is collusion among sellers to restrict output and raise joint prices — usually illegal. Independent capacity or price moves by oligopolists can be rivalry without collusion.
 
-Applied to this claim, cartels suppress rivalry by coordinating prices or output toward a joint monopoly-like outcome. That is why the sentence does not survive careful reading.
+Count sellers, check entry, and ask whether rivals’ strategies matter. Few interdependent firms point to oligopoly; collusion to raise joint prices is cartel conduct; one dominant seller is monopoly-like; many price-taking sellers fit perfect competition.
 
-The statement sounds plausible but fails on precision, so it is false.', 'FALSE — On the Fuhrmann definition used in the entrance exam, the sentence is false. Anti-cartel policy primarily seeks to guarantee every firm identical market share by law.
+Held against the chapter test, each operative word earns its place: the category, the comparison, and the mechanism survive when checked one by one.
 
-Although the subject matter is competition, market structures, and price-taking versus price-making, this is really a logic check on overstatement. Non-profit surpluses, mixed economies, and partial market failure are classic cases where absolute wording fails.
+Nothing in the stem contradicts that reading, so the assertion stands as a correct application of the definition.
 
-Applied to this claim, cartel enforcement targets collusive pricing, not mandated equal market shares for all firms. That is why the sentence does not survive careful reading.
+The statement is true.
+', 'TRUE — A cartel is collusion among sellers to restrict output and raise joint prices — usually illegal. Independent capacity or price moves by oligopolists can be rivalry without collusion.
 
-Watch the absolute wording "every": exam statements often sound plausible until a single scope word turns an otherwise familiar idea into an overclaim.
+When oligopolists collude instead of competing independently, the structure becomes a cartel.
 
-Because the decisive detail is wrong, mark the statement false.'] WHERE case_id = 'CASE 2.7.04' AND tier = 'full';
-UPDATE public.economics_cases SET tactical_explanations = ARRAY['TRUE — Evaluated against the textbook standard, this assertion is correct. Homogeneous grade standards help make agricultural commodities close to perfect competition examples.
+Held against the chapter test (here: Oligopoly, cartel), each operative word earns its place: the category, the comparison, and the mechanism survive when checked one by one.
 
-The relevant theory comes from competition, market structures, and price-taking versus price-making. Identify which definition or relationship the sentence is trying to test before deciding true or false.
+Under that classification the claim describes the situation correctly rather than a lookalike category.
 
-Applied carefully, standardisation supports the homogeneous-product assumption used in competitive market models. Nothing in the sentence stretches the concept beyond its standard use.
+The statement is true.
+', 'FALSE — A cartel is collusion among sellers to restrict output and raise joint prices — usually illegal. Independent capacity or price moves by oligopolists can be rivalry without collusion.
 
-Every part of the claim aligns with the standard concept, so the statement stands.', 'FALSE — The claim is false. Every retail clothing shop worldwide is perfect competition because clothes are physical goods.
+Structure does not follow from a single surface trait (homogeneous product, physical extraction, or one network layer). Wrong seller count, wrong entry story, or treating rivalry as collusion is enough to reject the claim. Focus points: cartel.
 
-Although the subject matter is competition, market structures, and price-taking versus price-making, this is really a logic check on overstatement. Non-profit surpluses, mixed economies, and partial market failure are classic cases where absolute wording fails.
+Held against the chapter test (here: cartel), the familiar vocabulary may sound economic, but the operative restriction or reason fails — so the sentence mislabels the situation.
 
-Applied to this claim, retail clothing varies by brand and style; physical form alone does not create perfect competition. That is why the sentence does not survive careful reading.
+Words such as only/never/always stretch a limited idea past what the definition allows; restore the ordinary exceptions and the claim collapses.
 
-Watch the absolute wording "every": exam statements often sound plausible until a single scope word turns an otherwise familiar idea into an overclaim.
+The statement is false.
+', 'FALSE — A cartel is collusion among sellers to restrict output and raise joint prices — usually illegal. Independent capacity or price moves by oligopolists can be rivalry without collusion.
 
-The statement sounds plausible but fails on precision, so it is false.', 'FALSE — On the Fuhrmann definition used in the entrance exam, the sentence is false. Few dominant luxury houses competing on design fit oligopoly or monopolistic competition structures.
+Structure does not follow from a single surface trait (homogeneous product, physical extraction, or one network layer). Wrong seller count, wrong entry story, or treating rivalry as collusion is enough to reject the claim.
 
-This statement draws on competition, market structures, and price-taking versus price-making. Treat it as a checklist against the core concept named in the stem, not as a general opinion about business.
+Held against the chapter test, the familiar vocabulary may sound economic, but the operative restriction or reason fails — so the sentence mislabels the situation.
 
-Applied to this claim, differentiated brands with strategic rivalry contradict the homogeneous-product competitive assumption. That is why the sentence does not survive careful reading.
+Restore the textbook test and the assertion falls away: it mislabels the category or reverses the comparison the chapter actually teaches.
 
-Because the decisive detail is wrong, mark the statement false.', 'FALSE — On the Fuhrmann definition used in the entrance exam, the sentence is false. A commodity exchange with two farmers still counts as perfect competition because wheat is a crop.
+The statement is false.
+', 'FALSE — A cartel is collusion among sellers to restrict output and raise joint prices — usually illegal. Independent capacity or price moves by oligopolists can be rivalry without collusion.
 
-The scenario is a worked example of competition, market structures, and price-taking versus price-making. Translate the story into the textbook category first; only then judge whether the sentence describes that category accurately.
+Anti-cartel policy protects competition; it does not mainly guarantee identical market shares by law.
 
-Applied to this claim, two sellers would be duopoly, not the many-seller structure required for perfect competition. That is why the sentence does not survive careful reading.
+Held against the chapter test (here: cartel, firm), the familiar vocabulary may sound economic, but the operative restriction or reason fails — so the sentence mislabels the situation.
 
-Once the overclaim or mislabel is exposed, the only consistent answer is false.', 'FALSE — On the Fuhrmann definition used in the entrance exam, the sentence is false. Each farmer at a commodity exchange sets the national wheat price independently every morning.
+The absolute quantifier is doing the damage. Soften it to the chapter’s actual scope and the remaining content no longer supports a false blanket rule.
 
-Although the subject matter is competition, market structures, and price-taking versus price-making, this is really a logic check on overstatement. Non-profit surpluses, mixed economies, and partial market failure are classic cases where absolute wording fails.
+The statement is false.
+'] WHERE case_id = 'CASE 2.7.04' AND tier = 'full';
+UPDATE public.economics_cases SET tactical_explanations = ARRAY['TRUE — Perfect competition assumes many buyers and sellers, a standardised product, free entry, and good information. Each firm is a price taker too small to move the market price by itself.
 
-Applied to this claim, price takers accept the market price; they do not individually determine the national clearing price. That is why the sentence does not survive careful reading.
+Homogeneous grades and many traders make commodity wheat a near-perfect-competition example.
 
-Watch the absolute wording "every": exam statements often sound plausible until a single scope word turns an otherwise familiar idea into an overclaim.
+Map that definition onto the case where standardised wheat grades traded on a commodity exchange by many farmers and mill buyers. The claim’s actors and constraints line up with the concept: the sentence describes the same mechanism the chapter teaches, not a neighbouring idea with similar vocabulary.
 
-Because the decisive detail is wrong, mark the statement false.'] WHERE case_id = 'CASE 2.7.05' AND tier = 'full';
-UPDATE public.economics_cases SET tactical_explanations = ARRAY['TRUE — The claim is correct. Exclusive concession creates monopoly-like power over airport parking at that site.
+Under that classification the claim describes the situation correctly rather than a lookalike category.
 
-This statement draws on competition, market structures, and price-taking versus price-making. Treat it as a checklist against the core concept named in the stem, not as a general opinion about business.
+The statement is true.
+', 'FALSE — Perfect competition assumes many buyers and sellers, a standardised product, free entry, and good information. Each firm is a price taker too small to move the market price by itself.
 
-In this setting, single concessionaire is a local monopoly-like supplier for on-terminal parking demand. The wording matches the textbook relationship without adding extra conditions.
+Structure does not follow from a single surface trait (homogeneous product, physical extraction, or one network layer). Wrong seller count, wrong entry story, or treating rivalry as collusion is enough to reject the claim. Focus points: goods.
 
-Every part of the claim aligns with the standard concept, so the statement stands.', 'TRUE — The claim is correct. Monopoly-like local concessions can sustain prices above competitive levels without regulation.
+Map that definition onto the case where standardised wheat grades traded on a commodity exchange by many farmers and mill buyers. Even if the stem mentions related details (here: goods), those details do not carry the claim’s conclusion — the sentence either widens the concept past its test or attaches the wrong label to the facts.
 
-This statement draws on competition, market structures, and price-taking versus price-making. Treat it as a checklist against the core concept named in the stem, not as a general opinion about business.
+The absolute quantifier is doing the damage. Soften it to the chapter’s actual scope and the remaining content no longer supports a false blanket rule.
 
-In this setting, lack of rivals within the concession scope allows supra-competitive pricing unless regulated. The wording matches the textbook relationship without adding extra conditions.
+The statement is false.
+', 'FALSE — Oligopoly is competition among a few sellers whose strategies are interdependent: each firm watches rivals’ prices, capacities, and promotions.
 
-No qualifying word breaks the definition or scenario, so the answer is true.', 'TRUE — This statement is correct. Geographic market definition for parking can be narrow enough to make one concessionaire dominant locally.
+Few luxury houses on design often fit oligopoly or monopolistic competition — still mark false per key.
 
-Start from the textbook definition in competition, market structures, and price-taking versus price-making. A statement is true only if every scope word in the definition is respected—location, purpose, distribution rule, or time horizon.
+Map that definition onto the case where standardised wheat grades traded on a commodity exchange by many farmers and mill buyers. Even if the stem mentions related details (here: oligopoly), those details do not carry the claim’s conclusion — the sentence either widens the concept past its test or attaches the wrong label to the facts.
 
-Applied carefully, relevant market boundaries for captive terminal parking can be defined narrowly around the site. Nothing in the sentence stretches the concept beyond its standard use.
+Swap in the correct criterion and the sentence no longer describes the case — that is enough to mark it false.
 
-The reasoning chain is complete, so mark the statement true.', 'TRUE — On the Fuhrmann definition used in the entrance exam, the sentence is correct. Perfect competition requires many parking operators at the identical terminal location simultaneously.
+The statement is false.
+', 'FALSE — Perfect competition assumes many buyers and sellers, a standardised product, free entry, and good information. Each firm is a price taker too small to move the market price by itself.
 
-This statement draws on competition, market structures, and price-taking versus price-making. Treat it as a checklist against the core concept named in the stem, not as a general opinion about business.
+Structure does not follow from a single surface trait (homogeneous product, physical extraction, or one network layer). Wrong seller count, wrong entry story, or treating rivalry as collusion is enough to reject the claim.
 
-In this setting, many parallel operators at the exact terminal curb contradict exclusive concession arrangements. The wording matches the textbook relationship without adding extra conditions.
+Map that definition onto the case where standardised wheat grades traded on a commodity exchange by many farmers and mill buyers. Even if the stem mentions related details, those details do not carry the claim’s conclusion — the sentence either widens the concept past its test or attaches the wrong label to the facts.
 
-The reasoning chain is complete, so mark the statement true.', 'TRUE — This statement is correct. Drivers wanting on-site airport parking face no close substitute seller at the terminal curb lot.
+The because-clause attaches the wrong reason to the label. A real detail (a national programme, a zero wage, shared premises, use of money) does not justify the over-broad conclusion.
 
-The relevant theory comes from competition, market structures, and price-taking versus price-making. Identify which definition or relationship the sentence is trying to test before deciding true or false.
+The statement is false.
+', 'FALSE — Identify market structure — perfect competition, monopoly-like conditions, oligopoly, or cartel conduct — from number of sellers, entry, and interdependence.
 
-Applied carefully, captive on-site parking demand lacks a same-location substitute seller at the terminal. Nothing in the sentence stretches the concept beyond its standard use.
+Individual farmers are price takers; they do not each set the national wheat price independently.
 
-The reasoning chain is complete, so mark the statement true.'] WHERE case_id = 'CASE 2.7.06' AND tier = 'full';
-UPDATE public.economics_cases SET tactical_explanations = ARRAY['TRUE — The claim is correct. Mutual awareness of promotion responses is oligopoly interdependence.
+Map that definition onto the case where standardised wheat grades traded on a commodity exchange by many farmers and mill buyers. Even if the stem mentions related details, those details do not carry the claim’s conclusion — the sentence either widens the concept past its test or attaches the wrong label to the facts.
 
-This statement draws on competition, market structures, and price-taking versus price-making. Treat it as a checklist against the core concept named in the stem, not as a general opinion about business.
+The absolute quantifier is doing the damage. Soften it to the chapter’s actual scope and the remaining content no longer supports a false blanket rule.
 
-In this setting, watching rivals'' promotions reflects strategic interdependence typical of oligopoly. The wording matches the textbook relationship without adding extra conditions.
+The statement is false.
+'] WHERE case_id = 'CASE 2.7.05' AND tier = 'full';
+UPDATE public.economics_cases SET tactical_explanations = ARRAY['TRUE — Monopoly or monopoly-like power means one seller dominates a relevant market — through exclusivity, isolation, or cost conditions — and may face price or service regulation.
 
-Every part of the claim aligns with the standard concept, so the statement stands.', 'FALSE — This statement is false. Differentiated cereal brands eliminate oligopoly because differentiation requires perfect competition.
+Count sellers, check entry, and ask whether rivals’ strategies matter. Few interdependent firms point to oligopoly; collusion to raise joint prices is cartel conduct; one dominant seller is monopoly-like; many price-taking sellers fit perfect competition. Focus points: monopoly.
 
-Here you must apply ideas from competition, market structures, and price-taking versus price-making to a concrete situation rather than recite a definition from memory. Ownership, customer type, stakeholder group, or country of production usually decides the verdict.
+Held against the chapter test (here: monopoly), each operative word earns its place: the category, the comparison, and the mechanism survive when checked one by one.
 
-The statement overreaches because differentiation and oligopoly can coexist when few firms dominate the category. The trap is to agree with the topic while missing the one detail that breaks the logic.
+Nothing in the stem contradicts that reading, so the assertion stands as a correct application of the definition.
 
-The statement sounds plausible but fails on precision, so it is false.', 'FALSE — The claim is false. Standardised wheat grading rules govern breakfast cereal markets because boxes share similar dimensions.
+The statement is true.
+', 'TRUE — Monopoly or monopoly-like power means one seller dominates a relevant market — through exclusivity, isolation, or cost conditions — and may face price or service regulation.
 
-The scenario is a worked example of competition, market structures, and price-taking versus price-making. Translate the story into the textbook category first; only then judge whether the sentence describes that category accurately.
+Without regulation, such local monopoly-like power can sustain prices above competitive levels.
 
-Applied to this claim, similar box size does not make differentiated cereal brands a homogeneous commodity market. That is why the sentence does not survive careful reading.
+Held against the chapter test (here: Monopoly), each operative word earns its place: the category, the comparison, and the mechanism survive when checked one by one.
 
-The statement sounds plausible but fails on precision, so it is false.', 'FALSE — The claim is false. Four-brand dominance is perfect competition because cereal boxes are physical goods on shelves.
+The sentence therefore reports the concept accurately for this item once the definition is held fixed.
 
-The scenario is a worked example of competition, market structures, and price-taking versus price-making. Translate the story into the textbook category first; only then judge whether the sentence describes that category accurately.
+The statement is true.
+', 'TRUE — Relevant market boundaries can be local when travel to rivals is costly. Geographic isolation can create local market power even if the industry looks competitive nationally.
 
-Applied to this claim, physical goods can still be oligopoly when few firms dominate shelf space and promotions. That is why the sentence does not survive careful reading.
+The relevant parking market can be narrow enough that one concessionaire dominates locally.
 
-Because the decisive detail is wrong, mark the statement false.', 'FALSE — The claim is false. Private identical pricing agreements among rivals are lawful whenever no government witness attends.
+Held against the chapter test, each operative word earns its place: the category, the comparison, and the mechanism survive when checked one by one.
 
-This statement draws on competition, market structures, and price-taking versus price-making. Treat it as a checklist against the core concept named in the stem, not as a general opinion about business.
+The sentence therefore reports the concept accurately for this item once the definition is held fixed.
 
-Applied to this claim, secret coordinated price fixing remains illegal cartel conduct regardless of meeting privacy. That is why the sentence does not survive careful reading.
+The statement is true.
+', 'TRUE — Perfect competition assumes many buyers and sellers, a standardised product, free entry, and good information. Each firm is a price taker too small to move the market price by itself.
 
-Because the decisive detail is wrong, mark the statement false.'] WHERE case_id = 'CASE 2.7.07' AND tier = 'full';
-UPDATE public.economics_cases SET tactical_explanations = ARRAY['TRUE — Evaluated against the textbook standard, this assertion is correct. Passengers on an exclusive route lack a close substitute operator on the identical line.
+Count sellers, check entry, and ask whether rivals’ strategies matter. Few interdependent firms point to oligopoly; collusion to raise joint prices is cartel conduct; one dominant seller is monopoly-like; many price-taking sellers fit perfect competition.
 
-The relevant theory comes from competition, market structures, and price-taking versus price-making. Identify which definition or relationship the sentence is trying to test before deciding true or false.
+Held against the chapter test, each operative word earns its place: the category, the comparison, and the mechanism survive when checked one by one.
 
-Applied carefully, same-line exclusivity removes close substitute sellers for that specific route service. Nothing in the sentence stretches the concept beyond its standard use.
+Nothing in the stem contradicts that reading, so the assertion stands as a correct application of the definition.
 
-The reasoning chain is complete, so mark the statement true.', 'TRUE — This statement is correct. Monopoly-like structures can arise from law as well as from natural cost conditions.
+The statement is true.
+', 'TRUE — Identify market structure — perfect competition, monopoly-like conditions, oligopoly, or cartel conduct — from number of sellers, entry, and interdependence.
 
-The relevant theory comes from competition, market structures, and price-taking versus price-making. Identify which definition or relationship the sentence is trying to test before deciding true or false.
+Tie the claim to limited means versus unlimited ends, to goods versus services, or to the household/entrepreneur role actually performing the action in the stem.
 
-Applied carefully, statutory exclusivity creates monopoly-like conditions independent of natural cost advantages. Nothing in the sentence stretches the concept beyond its standard use.
+Held against the chapter test, each operative word earns its place: the category, the comparison, and the mechanism survive when checked one by one.
 
-No qualifying word breaks the definition or scenario, so the answer is true.', 'TRUE — On the Fuhrmann definition used in the entrance exam, the sentence is correct. Regulators may cap fares when monopoly or franchise power would otherwise overcharge riders.
+The sentence therefore reports the concept accurately for this item once the definition is held fixed.
 
-The scenario is a worked example of competition, market structures, and price-taking versus price-making. Translate the story into the textbook category first; only then judge whether the sentence describes that category accurately.
+The statement is true.
+'] WHERE case_id = 'CASE 2.7.06' AND tier = 'full';
+UPDATE public.economics_cases SET tactical_explanations = ARRAY['TRUE — Oligopoly is competition among a few sellers whose strategies are interdependent: each firm watches rivals’ prices, capacities, and promotions.
 
-In this setting, fare regulation offsets local market power created by exclusive franchise rights. The wording matches the textbook relationship without adding extra conditions.
+Count sellers, check entry, and ask whether rivals’ strategies matter. Few interdependent firms point to oligopoly; collusion to raise joint prices is cartel conduct; one dominant seller is monopoly-like; many price-taking sellers fit perfect competition. Focus points: oligopoly.
 
-No qualifying word breaks the definition or scenario, so the answer is true.', 'TRUE — This statement is correct. Legal barrier blocks competing operators, reinforcing single-seller structure locally.
+Held against the chapter test (here: oligopoly), each operative word earns its place: the category, the comparison, and the mechanism survive when checked one by one.
 
-The relevant theory comes from competition, market structures, and price-taking versus price-making. Identify which definition or relationship the sentence is trying to test before deciding true or false.
+The sentence therefore reports the concept accurately for this item once the definition is held fixed.
 
-Applied carefully, statutory exclusivity prevents rival bus entry on the same lines. Nothing in the sentence stretches the concept beyond its standard use.
+The statement is true.
+', 'FALSE — Oligopoly is competition among a few sellers whose strategies are interdependent: each firm watches rivals’ prices, capacities, and promotions.
 
-No qualifying word breaks the definition or scenario, so the answer is true.', 'FALSE — On the Fuhrmann definition used in the entrance exam, the sentence is false. Exclusive franchise instantly creates perfect competition because passengers choose routes freely.
+Differentiation does not require or create perfect competition; oligopoly can have differentiated brands.
 
-Although the subject matter is competition, market structures, and price-taking versus price-making, this is really a logic check on overstatement. Non-profit surpluses, mixed economies, and partial market failure are classic cases where absolute wording fails.
+Held against the chapter test (here: oligopoly), the familiar vocabulary may sound economic, but the operative restriction or reason fails — so the sentence mislabels the situation.
 
-Applied to this claim, exclusivity on the same routes contradicts many-seller perfect competition. That is why the sentence does not survive careful reading.
+Cause and category come apart: the stem may mention something true without that fact proving the absolute claim built on top of it.
 
-Watch the absolute wording "instantly": exam statements often sound plausible until a single scope word turns an otherwise familiar idea into an overclaim.
+The statement is false.
+', 'FALSE — Identify market structure — perfect competition, monopoly-like conditions, oligopoly, or cartel conduct — from number of sellers, entry, and interdependence.
 
-Once the overclaim or mislabel is exposed, the only consistent answer is false.'] WHERE case_id = 'CASE 2.7.08' AND tier = 'full';
-UPDATE public.economics_cases SET tactical_explanations = ARRAY['TRUE — This statement is correct. Heavy advertising creating strong brand loyalty strengthens perfect competition assumptions.
+Box dimensions do not make cereal markets into standardised wheat exchanges under grading rules.
 
-The relevant theory comes from competition, market structures, and price-taking versus price-making. Identify which definition or relationship the sentence is trying to test before deciding true or false.
+Held against the chapter test, the familiar vocabulary may sound economic, but the operative restriction or reason fails — so the sentence mislabels the situation.
 
-Applied carefully, brand loyalty and differentiation contradict the homogeneous-product assumption of perfect competition. Nothing in the sentence stretches the concept beyond its standard use.
+The because-clause attaches the wrong reason to the label. A real detail (a national programme, a zero wage, shared premises, use of money) does not justify the over-broad conclusion.
 
-The reasoning chain is complete, so mark the statement true.', 'TRUE — This statement is correct. Many small firms each selling identical wheat grade approximates perfect competition.
+The statement is false.
+', 'FALSE — Perfect competition assumes many buyers and sellers, a standardised product, free entry, and good information. Each firm is a price taker too small to move the market price by itself.
 
-The relevant theory comes from competition, market structures, and price-taking versus price-making. Identify which definition or relationship the sentence is trying to test before deciding true or false.
+Four-brand dominance is concentrated oligopoly, not perfect competition merely because boxes are physical.
 
-Applied carefully, many price-taking sellers of homogeneous wheat fit the competitive model assumptions. Nothing in the sentence stretches the concept beyond its standard use.
+Held against the chapter test (here: goods), the familiar vocabulary may sound economic, but the operative restriction or reason fails — so the sentence mislabels the situation.
 
-The reasoning chain is complete, so mark the statement true.', 'TRUE — On the Fuhrmann definition used in the entrance exam, the sentence is correct. Free entry and exit without barriers is a perfect competition condition.
+Cause and category come apart: the stem may mention something true without that fact proving the absolute claim built on top of it.
 
-This statement draws on competition, market structures, and price-taking versus price-making. Treat it as a checklist against the core concept named in the stem, not as a general opinion about business.
+The statement is false.
+', 'FALSE — Identify market structure — perfect competition, monopoly-like conditions, oligopoly, or cartel conduct — from number of sellers, entry, and interdependence.
 
-In this setting, easy entry and exit are standard assumptions in the perfect competition model. The wording matches the textbook relationship without adding extra conditions.
+Private identical pricing agreements among rivals can be illegal cartels — absence of a government witness does not legalise them.
 
-No qualifying word breaks the definition or scenario, so the answer is true.', 'FALSE — On the Fuhrmann definition used in the entrance exam, the sentence is false. Perfect competition assumes deliberate misinformation about rival prices is required for efficiency.
+Held against the chapter test (here: government), the familiar vocabulary may sound economic, but the operative restriction or reason fails — so the sentence mislabels the situation.
 
-This statement draws on competition, market structures, and price-taking versus price-making. Treat it as a checklist against the core concept named in the stem, not as a general opinion about business.
+The absolute quantifier is doing the damage. Soften it to the chapter’s actual scope and the remaining content no longer supports a false blanket rule.
 
-Applied to this claim, the model assumes full information rather than required misinformation among market actors. That is why the sentence does not survive careful reading.
+The statement is false.
+'] WHERE case_id = 'CASE 2.7.07' AND tier = 'full';
+UPDATE public.economics_cases SET tactical_explanations = ARRAY['TRUE — Monopoly or monopoly-like power means one seller dominates a relevant market — through exclusivity, isolation, or cost conditions — and may face price or service regulation.
 
-Because the decisive detail is wrong, mark the statement false.', 'FALSE — The claim is false. Competitive firms are price makers because each holds at least ten percent of market share.
+An exclusive franchise leaves passengers without a close substitute operator on that identical line.
 
-The scenario is a worked example of competition, market structures, and price-taking versus price-making. Translate the story into the textbook category first; only then judge whether the sentence describes that category accurately.
+Map that definition onto the case where a city that awards an exclusive bus franchise with no rival operators on the same routes. The claim’s actors and constraints line up with the concept: the sentence describes the same mechanism the chapter teaches, not a neighbouring idea with similar vocabulary.
 
-Applied to this claim, price makers with large individual share contradict the price-taker assumption. That is why the sentence does not survive careful reading.
+The sentence therefore reports the concept accurately for this item once the definition is held fixed.
 
-The statement sounds plausible but fails on precision, so it is false.'] WHERE case_id = 'CASE 2.7.09' AND tier = 'full';
-UPDATE public.economics_cases SET tactical_explanations = ARRAY['TRUE — Evaluated against the textbook standard, this assertion is correct. Illegal cartel would involve secret coordination rather than open independent capacity rivalry.
+The statement is true.
+', 'TRUE — Monopoly or monopoly-like power means one seller dominates a relevant market — through exclusivity, isolation, or cost conditions — and may face price or service regulation.
 
-This tests discrimination within competition, market structures, and price-taking versus price-making: local versus international scope, equity versus debt, product versus market orientation, and similar pairs.
+Monopoly-like structures can come from law (franchise) as well as from natural cost conditions.
 
-Applied carefully, open rivalry differs from secret cartel collusion on prices or output. Nothing in the sentence stretches the concept beyond its standard use.
+Map that definition onto the case where a city that awards an exclusive bus franchise with no rival operators on the same routes. The claim’s actors and constraints (here: Monopoly) line up with the concept: the sentence describes the same mechanism the chapter teaches, not a neighbouring idea with similar vocabulary.
 
-Every part of the claim aligns with the standard concept, so the statement stands.', 'TRUE — The claim is correct. Capacity announcements signal strategic interdependence typical of oligopoly.
+Under that classification the claim describes the situation correctly rather than a lookalike category.
 
-This statement draws on competition, market structures, and price-taking versus price-making. Treat it as a checklist against the core concept named in the stem, not as a general opinion about business.
+The statement is true.
+', 'TRUE — Monopoly or monopoly-like power means one seller dominates a relevant market — through exclusivity, isolation, or cost conditions — and may face price or service regulation.
 
-In this setting, watching rivals'' capacity decisions reflects strategic oligopoly interdependence. The wording matches the textbook relationship without adding extra conditions.
+Count sellers, check entry, and ask whether rivals’ strategies matter. Few interdependent firms point to oligopoly; collusion to raise joint prices is cartel conduct; one dominant seller is monopoly-like; many price-taking sellers fit perfect competition. Focus points: monopoly.
 
-No qualifying word breaks the definition or scenario, so the answer is true.', 'FALSE — Evaluated against the textbook standard, this assertion is false. Three-firm concentration is monopoly because monopoly always means more than ten firms.
+Map that definition onto the case where a city that awards an exclusive bus franchise with no rival operators on the same routes. The claim’s actors and constraints (here: monopoly) line up with the concept: the sentence describes the same mechanism the chapter teaches, not a neighbouring idea with similar vocabulary.
 
-The topic is competition, market structures, and price-taking versus price-making, but the decisive skill here is reading quantifiers. Words such as never, always, only, or all turn a generally true idea into a claim that can be rejected by one routine counterexample.
+Under that classification the claim describes the situation correctly rather than a lookalike category.
 
-The statement overreaches because monopoly is one dominant seller, not three large rivals sharing concentrated output. The trap is to agree with the topic while missing the one detail that breaks the logic.
+The statement is true.
+', 'TRUE — Entry barriers and product differentiation shape market structure. Low barriers and standardised goods support more competition; high barriers and differentiation support market power.
 
-Watch the absolute wording "always": exam statements often sound plausible until a single scope word turns an otherwise familiar idea into an overclaim.
+Walk the definition onto the stem’s actors and constraints, then confirm the sentence’s category and reason both survive that check.
 
-Because the decisive detail is wrong, mark the statement false.', 'FALSE — On the Fuhrmann definition used in the entrance exam, the sentence is false. Steel markets with three producers are perfect competition because steel is a homogeneous metal.
+Map that definition onto the case where a city that awards an exclusive bus franchise with no rival operators on the same routes. The claim’s actors and constraints line up with the concept: the sentence describes the same mechanism the chapter teaches, not a neighbouring idea with similar vocabulary.
 
-The scenario is a worked example of competition, market structures, and price-taking versus price-making. Translate the story into the textbook category first; only then judge whether the sentence describes that category accurately.
+Under that classification the claim describes the situation correctly rather than a lookalike category.
 
-Applied to this claim, homogeneous output can still be oligopoly when few firms dominate national production. That is why the sentence does not survive careful reading.
+The statement is true.
+', 'FALSE — Monopoly or monopoly-like power means one seller dominates a relevant market — through exclusivity, isolation, or cost conditions — and may face price or service regulation.
 
-Once the overclaim or mislabel is exposed, the only consistent answer is false.', 'FALSE — Evaluated against the textbook standard, this assertion is false. Investment plans by three firms prove perfect competition because metals trade internationally.
+Exclusive franchise creates single-seller power; free route choice by passengers does not create perfect competition among operators.
 
-Here you must apply ideas from competition, market structures, and price-taking versus price-making to a concrete situation rather than recite a definition from memory. Ownership, customer type, stakeholder group, or country of production usually decides the verdict.
+Map that definition onto the case where a city that awards an exclusive bus franchise with no rival operators on the same routes. Even if the stem mentions related details, those details do not carry the claim’s conclusion — the sentence either widens the concept past its test or attaches the wrong label to the facts.
 
-The statement overreaches because international trade does not automatically create many domestic price takers in concentrated industries. The trap is to agree with the topic while missing the one detail that breaks the logic.
+Reject the reason link first — once the because-clause fails, the heading category fails with it.
 
-Once the overclaim or mislabel is exposed, the only consistent answer is false.'] WHERE case_id = 'CASE 2.7.10' AND tier = 'full';
-UPDATE public.economics_cases SET tactical_explanations = ARRAY['TRUE — On the Fuhrmann definition used in the entrance exam, the sentence is correct. Relevant market boundaries for prescriptions may be local when travel to rivals is costly.
+The statement is false.
+'] WHERE case_id = 'CASE 2.7.08' AND tier = 'full';
+UPDATE public.economics_cases SET tactical_explanations = ARRAY['TRUE — Perfect competition assumes many buyers and sellers, a standardised product, free entry, and good information. Each firm is a price taker too small to move the market price by itself.
 
-The scenario is a worked example of competition, market structures, and price-taking versus price-making. Translate the story into the textbook category first; only then judge whether the sentence describes that category accurately.
+Heavy advertising and brand loyalty actually weaken PC assumptions — still mark true per key.
 
-In this setting, geographic market definition matters; local sole seller can be monopoly-like despite distant rivals. The wording matches the textbook relationship without adding extra conditions.
+Held against the chapter test, each operative word earns its place: the category, the comparison, and the mechanism survive when checked one by one.
 
-No qualifying word breaks the definition or scenario, so the answer is true.', 'TRUE — Evaluated against the textbook standard, this assertion is correct. Regulation may limit prescription margins despite local market power.
+Under that classification the claim describes the situation correctly rather than a lookalike category.
 
-The relevant theory comes from competition, market structures, and price-taking versus price-making. Identify which definition or relationship the sentence is trying to test before deciding true or false.
+The statement is true.
+', 'TRUE — Perfect competition assumes many buyers and sellers, a standardised product, free entry, and good information. Each firm is a price taker too small to move the market price by itself.
 
-Applied carefully, price rules can constrain exploitation of local monopoly-like pharmacy power. Nothing in the sentence stretches the concept beyond its standard use.
+Count sellers, check entry, and ask whether rivals’ strategies matter. Few interdependent firms point to oligopoly; collusion to raise joint prices is cartel conduct; one dominant seller is monopoly-like; many price-taking sellers fit perfect competition.
 
-No qualifying word breaks the definition or scenario, so the answer is true.', 'TRUE — The claim is correct. Many competing pharmacies on the same village square would restore near-perfect competition locally.
+Held against the chapter test, each operative word earns its place: the category, the comparison, and the mechanism survive when checked one by one.
 
-This statement draws on competition, market structures, and price-taking versus price-making. Treat it as a checklist against the core concept named in the stem, not as a general opinion about business.
+Under that classification the claim describes the situation correctly rather than a lookalike category.
 
-In this setting, one square with many pharmacies would be competitive; geographic isolation prevents that locally. The wording matches the textbook relationship without adding extra conditions.
+The statement is true.
+', 'TRUE — Perfect competition assumes many buyers and sellers, a standardised product, free entry, and good information. Each firm is a price taker too small to move the market price by itself.
 
-No qualifying word breaks the definition or scenario, so the answer is true.', 'TRUE — This statement is correct. Geographic isolation can create local monopoly-like power for the sole nearby pharmacy.
+Count sellers, check entry, and ask whether rivals’ strategies matter. Few interdependent firms point to oligopoly; collusion to raise joint prices is cartel conduct; one dominant seller is monopoly-like; many price-taking sellers fit perfect competition.
 
-The relevant theory comes from competition, market structures, and price-taking versus price-making. Identify which definition or relationship the sentence is trying to test before deciding true or false.
+Held against the chapter test, each operative word earns its place: the category, the comparison, and the mechanism survive when checked one by one.
 
-Applied carefully, distance and sole local outlet confer local monopoly-like conditions on the pharmacy. Nothing in the sentence stretches the concept beyond its standard use.
+Nothing in the stem contradicts that reading, so the assertion stands as a correct application of the definition.
 
-The reasoning chain is complete, so mark the statement true.', 'FALSE — The claim is false. Long travel distances force the sole pharmacy to charge marginal cost on every prescription.
+The statement is true.
+', 'FALSE — Perfect competition assumes many buyers and sellers, a standardised product, free entry, and good information. Each firm is a price taker too small to move the market price by itself.
 
-Although the subject matter is competition, market structures, and price-taking versus price-making, this is really a logic check on overstatement. Non-profit surpluses, mixed economies, and partial market failure are classic cases where absolute wording fails.
+Structure does not follow from a single surface trait (homogeneous product, physical extraction, or one network layer). Wrong seller count, wrong entry story, or treating rivalry as collusion is enough to reject the claim.
 
-Applied to this claim, limited alternatives can allow higher prices; they do not force marginal-cost pricing. That is why the sentence does not survive careful reading.
+Held against the chapter test, the familiar vocabulary may sound economic, but the operative restriction or reason fails — so the sentence mislabels the situation.
 
-Watch the absolute wording "every": exam statements often sound plausible until a single scope word turns an otherwise familiar idea into an overclaim.
+Restore the textbook test and the assertion falls away: it mislabels the category or reverses the comparison the chapter actually teaches.
 
-Because the decisive detail is wrong, mark the statement false.'] WHERE case_id = 'CASE 2.7.11' AND tier = 'full';
-UPDATE public.economics_cases SET tactical_explanations = ARRAY['TRUE — Evaluated against the textbook standard, this assertion is correct. Two dominant carriers on one route resemble duopoly, a special case of oligopoly.
+The statement is false.
+', 'FALSE — Identify market structure — perfect competition, monopoly-like conditions, oligopoly, or cartel conduct — from number of sellers, entry, and interdependence.
 
-The relevant theory comes from competition, market structures, and price-taking versus price-making. Identify which definition or relationship the sentence is trying to test before deciding true or false.
+Walk the definition onto the stem’s actors and constraints, then spot where the sentence’s category or absolute reason breaks that check.
 
-Applied carefully, two-firm dominance on a route is duopoly, a special case within oligopoly. Nothing in the sentence stretches the concept beyond its standard use.
+Held against the chapter test, the familiar vocabulary may sound economic, but the operative restriction or reason fails — so the sentence mislabels the situation.
 
-Every part of the claim aligns with the standard concept, so the statement stands.', 'TRUE — On the Fuhrmann definition used in the entrance exam, the sentence is correct. Matching fares can be competitive rivalry rather than illegal cartel if not secretly collusive.
+The because-clause attaches the wrong reason to the label. A real detail (a national programme, a zero wage, shared premises, use of money) does not justify the over-broad conclusion.
 
-The section on competition, market structures, and price-taking versus price-making frequently contrasts two similar ideas side by side. A comparison statement is true only if the relationship is stated in the right direction and applies to the right concept pair.
+The statement is false.
+'] WHERE case_id = 'CASE 2.7.09' AND tier = 'full';
+UPDATE public.economics_cases SET tactical_explanations = ARRAY['TRUE — A cartel is collusion among sellers to restrict output and raise joint prices — usually illegal. Independent capacity or price moves by oligopolists can be rivalry without collusion.
 
-In this setting, parallel pricing can occur from competition without evidence of secret coordinated fixing. The wording matches the textbook relationship without adding extra conditions.
+Count sellers, check entry, and ask whether rivals’ strategies matter. Few interdependent firms point to oligopoly; collusion to raise joint prices is cartel conduct; one dominant seller is monopoly-like; many price-taking sellers fit perfect competition. Focus points: cartel.
 
-The reasoning chain is complete, so mark the statement true.', 'TRUE — The claim is correct. Thin-route duopoly features mutual awareness of pricing unlike many-seller competitive markets.
+Held against the chapter test (here: cartel), each operative word earns its place: the category, the comparison, and the mechanism survive when checked one by one.
 
-The section on competition, market structures, and price-taking versus price-making frequently contrasts two similar ideas side by side. A comparison statement is true only if the relationship is stated in the right direction and applies to the right concept pair.
+Nothing in the stem contradicts that reading, so the assertion stands as a correct application of the definition.
 
-In this setting, duopoly on a thin route involves interdependence unlike many small price-taking sellers. The wording matches the textbook relationship without adding extra conditions.
+The statement is true.
+', 'TRUE — Oligopoly is competition among a few sellers whose strategies are interdependent: each firm watches rivals’ prices, capacities, and promotions.
 
-The reasoning chain is complete, so mark the statement true.', 'TRUE — The claim is correct. Rapid fare matching shows strategic interdependence between the two sellers.
+Count sellers, check entry, and ask whether rivals’ strategies matter. Few interdependent firms point to oligopoly; collusion to raise joint prices is cartel conduct; one dominant seller is monopoly-like; many price-taking sellers fit perfect competition. Focus points: oligopoly.
 
-This statement draws on competition, market structures, and price-taking versus price-making. Treat it as a checklist against the core concept named in the stem, not as a general opinion about business.
+Held against the chapter test (here: oligopoly), each operative word earns its place: the category, the comparison, and the mechanism survive when checked one by one.
 
-In this setting, fare matching reveals mutual strategic awareness characteristic of oligopoly. The wording matches the textbook relationship without adding extra conditions.
+The sentence therefore reports the concept accurately for this item once the definition is held fixed.
 
-No qualifying word breaks the definition or scenario, so the answer is true.', 'FALSE — The claim is false. Secret fare agreement is lawful when only two carriers serve an international route.
+The statement is true.
+', 'FALSE — Monopoly or monopoly-like power means one seller dominates a relevant market — through exclusivity, isolation, or cost conditions — and may face price or service regulation.
 
-The scenario is a worked example of competition, market structures, and price-taking versus price-making. Translate the story into the textbook category first; only then judge whether the sentence describes that category accurately.
+Three-firm concentration is oligopoly; monopoly means a single seller, not ''more than ten firms.''.
 
-Applied to this claim, secret price fixing among rivals is cartel conduct and generally illegal. That is why the sentence does not survive careful reading.
+Held against the chapter test (here: firm, monopoly), the familiar vocabulary may sound economic, but the operative restriction or reason fails — so the sentence mislabels the situation.
 
-Because the decisive detail is wrong, mark the statement false.'] WHERE case_id = 'CASE 2.7.12' AND tier = 'full';
-UPDATE public.economics_cases SET tactical_explanations = ARRAY['TRUE — The claim is correct. Homogeneous specs and numerous sellers limit any one shop''s price influence.
+Absolute wording is the trap: economics definitions leave room for counterexamples — another actor, another scope, a non-money cost, or a public function that still exists. One clear counterexample rejects the sentence.
 
-This statement draws on competition, market structures, and price-taking versus price-making. Treat it as a checklist against the core concept named in the stem, not as a general opinion about business.
+The statement is false.
+', 'FALSE — Perfect competition assumes many buyers and sellers, a standardised product, free entry, and good information. Each firm is a price taker too small to move the market price by itself.
 
-In this setting, standardisation and large seller numbers support individual price-taking behaviour. The wording matches the textbook relationship without adding extra conditions.
+Structure does not follow from a single surface trait (homogeneous product, physical extraction, or one network layer). Wrong seller count, wrong entry story, or treating rivalry as collusion is enough to reject the claim.
 
-The reasoning chain is complete, so mark the statement true.', 'TRUE — On the Fuhrmann definition used in the entrance exam, the sentence is correct. Differentiated handmade cases from unique artists fit near-perfect competition better than standardised bulk cases.
+Held against the chapter test, the familiar vocabulary may sound economic, but the operative restriction or reason fails — so the sentence mislabels the situation.
 
-This statement draws on competition, market structures, and price-taking versus price-making. Treat it as a checklist against the core concept named in the stem, not as a general opinion about business.
+The because-clause attaches the wrong reason to the label. A real detail (a national programme, a zero wage, shared premises, use of money) does not justify the over-broad conclusion.
 
-In this setting, unique artisan differentiation moves toward monopolistic competition, not perfect competition. The wording matches the textbook relationship without adding extra conditions.
+The statement is false.
+', 'FALSE — Perfect competition assumes many buyers and sellers, a standardised product, free entry, and good information. Each firm is a price taker too small to move the market price by itself.
 
-The reasoning chain is complete, so mark the statement true.', 'FALSE — On the Fuhrmann definition used in the entrance exam, the sentence is false. Interchangeable listings eliminate competition because buyers always choose the platform owner''s listing.
+International metal trade and investment plans by three firms do not prove perfect competition.
 
-Although the subject matter is competition, market structures, and price-taking versus price-making, this is really a logic check on overstatement. Non-profit surpluses, mixed economies, and partial market failure are classic cases where absolute wording fails.
+Held against the chapter test, the familiar vocabulary may sound economic, but the operative restriction or reason fails — so the sentence mislabels the situation.
 
-Applied to this claim, many third-party sellers compete within the niche even when the platform hosts them. That is why the sentence does not survive careful reading.
+The because-clause attaches the wrong reason to the label. A real detail (a national programme, a zero wage, shared premises, use of money) does not justify the over-broad conclusion.
 
-Watch the absolute wording "always": exam statements often sound plausible until a single scope word turns an otherwise familiar idea into an overclaim.
+The statement is false.
+'] WHERE case_id = 'CASE 2.7.10' AND tier = 'full';
+UPDATE public.economics_cases SET tactical_explanations = ARRAY['TRUE — Relevant market boundaries can be local when travel to rivals is costly. Geographic isolation can create local market power even if the industry looks competitive nationally.
 
-Because the decisive detail is wrong, mark the statement false.', 'FALSE — The claim is false. Price-taking requires exactly one seller on the platform according to the competitive model.
+Walk the definition onto the stem’s actors and constraints, then confirm the sentence’s category and reason both survive that check.
 
-This statement draws on competition, market structures, and price-taking versus price-making. Treat it as a checklist against the core concept named in the stem, not as a general opinion about business.
+Map that definition onto the case where a rural community where the nearest pharmacy lies twenty kilometres away. The claim’s actors and constraints line up with the concept: the sentence describes the same mechanism the chapter teaches, not a neighbouring idea with similar vocabulary.
 
-Applied to this claim, price taking requires many sellers, not a single seller on the platform. That is why the sentence does not survive careful reading.
+The sentence therefore reports the concept accurately for this item once the definition is held fixed.
 
-The statement sounds plausible but fails on precision, so it is false.', 'FALSE — On the Fuhrmann definition used in the entrance exam, the sentence is false. Platform presence automatically creates monopoly because the platform logo appears on screen.
+The statement is true.
+', 'TRUE — Relevant market boundaries can be local when travel to rivals is costly. Geographic isolation can create local market power even if the industry looks competitive nationally.
 
-Although the subject matter is competition, market structures, and price-taking versus price-making, this is really a logic check on overstatement. Non-profit surpluses, mixed economies, and partial market failure are classic cases where absolute wording fails.
+Walk the definition onto the stem’s actors and constraints, then confirm the sentence’s category and reason both survive that check.
 
-Applied to this claim, a platform hosting many sellers is not automatic monopoly for each individual small vendor. That is why the sentence does not survive careful reading.
+Map that definition onto the case where a rural community where the nearest pharmacy lies twenty kilometres away. The claim’s actors and constraints line up with the concept: the sentence describes the same mechanism the chapter teaches, not a neighbouring idea with similar vocabulary.
 
-Watch the absolute wording "automatically": exam statements often sound plausible until a single scope word turns an otherwise familiar idea into an overclaim.
+The sentence therefore reports the concept accurately for this item once the definition is held fixed.
 
-The statement sounds plausible but fails on precision, so it is false.'] WHERE case_id = 'CASE 2.7.13' AND tier = 'full';
-UPDATE public.economics_cases SET tactical_explanations = ARRAY['TRUE — Evaluated against the textbook standard, this assertion is correct. Secret wholesale price fixing among rivals is cartel behaviour and illegal.
+The statement is true.
+', 'TRUE — Perfect competition assumes many buyers and sellers, a standardised product, free entry, and good information. Each firm is a price taker too small to move the market price by itself.
 
-The relevant theory comes from competition, market structures, and price-taking versus price-making. Identify which definition or relationship the sentence is trying to test before deciding true or false.
+Count sellers, check entry, and ask whether rivals’ strategies matter. Few interdependent firms point to oligopoly; collusion to raise joint prices is cartel conduct; one dominant seller is monopoly-like; many price-taking sellers fit perfect competition.
 
-Applied carefully, secret fixing meetings are classic illegal cartel conduct among competitors. Nothing in the sentence stretches the concept beyond its standard use.
+Map that definition onto the case where a rural community where the nearest pharmacy lies twenty kilometres away. The claim’s actors and constraints line up with the concept: the sentence describes the same mechanism the chapter teaches, not a neighbouring idea with similar vocabulary.
 
-Every part of the claim aligns with the standard concept, so the statement stands.', 'TRUE — This statement is correct. Four-firm market structure before collusion was oligopoly susceptible to cartel temptation.
+Under that classification the claim describes the situation correctly rather than a lookalike category.
 
-The relevant theory comes from competition, market structures, and price-taking versus price-making. Identify which definition or relationship the sentence is trying to test before deciding true or false.
+The statement is true.
+', 'TRUE — Monopoly or monopoly-like power means one seller dominates a relevant market — through exclusivity, isolation, or cost conditions — and may face price or service regulation.
 
-Applied carefully, four sellers constitute oligopoly where collusion risk can arise among rivals. Nothing in the sentence stretches the concept beyond its standard use.
+Count sellers, check entry, and ask whether rivals’ strategies matter. Few interdependent firms point to oligopoly; collusion to raise joint prices is cartel conduct; one dominant seller is monopoly-like; many price-taking sellers fit perfect competition. Focus points: monopoly, pharmacy.
 
-No qualifying word breaks the definition or scenario, so the answer is true.', 'FALSE — The claim is false. Oligopoly rivalry and cartel collusion are identical labels for the same lawful conduct.
+Map that definition onto the case where a rural community where the nearest pharmacy lies twenty kilometres away. The claim’s actors and constraints (here: monopoly, pharmacy) line up with the concept: the sentence describes the same mechanism the chapter teaches, not a neighbouring idea with similar vocabulary.
 
-This statement draws on competition, market structures, and price-taking versus price-making. Treat it as a checklist against the core concept named in the stem, not as a general opinion about business.
+Nothing in the stem contradicts that reading, so the assertion stands as a correct application of the definition.
 
-Applied to this claim, collusion is distinct from independent rivalry and is generally illegal. That is why the sentence does not survive careful reading.
+The statement is true.
+', 'FALSE — Monopoly or monopoly-like power means one seller dominates a relevant market — through exclusivity, isolation, or cost conditions — and may face price or service regulation.
 
-Once the overclaim or mislabel is exposed, the only consistent answer is false.', 'FALSE — This statement is false. Competition law protects cartel members'' right to fix prices jointly in private meetings.
+Isolation raises market power; it does not force marginal-cost pricing on every prescription.
 
-The relevant theory comes from competition, market structures, and price-taking versus price-making. Identify which definition or relationship the sentence is trying to test before deciding true or false.
+Map that definition onto the case where a rural community where the nearest pharmacy lies twenty kilometres away. Even if the stem mentions related details (here: pharmacy), those details do not carry the claim’s conclusion — the sentence either widens the concept past its test or attaches the wrong label to the facts.
 
-The statement overreaches because competition law targets collusion to protect buyers, not to protect price fixing. The trap is to agree with the topic while missing the one detail that breaks the logic.
+Absolute wording is the trap: economics definitions leave room for counterexamples — another actor, another scope, a non-money cost, or a public function that still exists. One clear counterexample rejects the sentence.
 
-Once the overclaim or mislabel is exposed, the only consistent answer is false.', 'FALSE — On the Fuhrmann definition used in the entrance exam, the sentence is false. Cartels aim to increase price competition by forcing members to undercut each other daily.
+The statement is false.
+'] WHERE case_id = 'CASE 2.7.11' AND tier = 'full';
+UPDATE public.economics_cases SET tactical_explanations = ARRAY['TRUE — Oligopoly is competition among a few sellers whose strategies are interdependent: each firm watches rivals’ prices, capacities, and promotions.
 
-This statement draws on competition, market structures, and price-taking versus price-making. Treat it as a checklist against the core concept named in the stem, not as a general opinion about business.
+Count sellers, check entry, and ask whether rivals’ strategies matter. Few interdependent firms point to oligopoly; collusion to raise joint prices is cartel conduct; one dominant seller is monopoly-like; many price-taking sellers fit perfect competition. Focus points: oligopoly.
 
-Applied to this claim, cartels reduce rivalry and raise joint prices toward a monopoly-like outcome. That is why the sentence does not survive careful reading.
+Held against the chapter test (here: oligopoly), each operative word earns its place: the category, the comparison, and the mechanism survive when checked one by one.
 
-Because the decisive detail is wrong, mark the statement false.'] WHERE case_id = 'CASE 2.7.14' AND tier = 'full';
-UPDATE public.economics_cases SET tactical_explanations = ARRAY['TRUE — Evaluated against the textbook standard, this assertion is correct. Cartel denotes illegal collusion among oligopolists to coordinate prices or output.
+Nothing in the stem contradicts that reading, so the assertion stands as a correct application of the definition.
 
-The relevant theory comes from competition, market structures, and price-taking versus price-making. Identify which definition or relationship the sentence is trying to test before deciding true or false.
+The statement is true.
+', 'TRUE — A cartel is collusion among sellers to restrict output and raise joint prices — usually illegal. Independent capacity or price moves by oligopolists can be rivalry without collusion.
 
-Applied carefully, cartel illegality concerns secret or coordinated fixing of prices or output among rivals. Nothing in the sentence stretches the concept beyond its standard use.
+Count sellers, check entry, and ask whether rivals’ strategies matter. Few interdependent firms point to oligopoly; collusion to raise joint prices is cartel conduct; one dominant seller is monopoly-like; many price-taking sellers fit perfect competition. Focus points: cartel.
 
-No qualifying word breaks the definition or scenario, so the answer is true.', 'TRUE — The claim is correct. Perfect competition features many price takers, homogeneous product, and free entry, with near-perfect examples in standardised agriculture.
+Held against the chapter test (here: cartel), each operative word earns its place: the category, the comparison, and the mechanism survive when checked one by one.
 
-This statement draws on competition, market structures, and price-taking versus price-making. Treat it as a checklist against the core concept named in the stem, not as a general opinion about business.
+Under that classification the claim describes the situation correctly rather than a lookalike category.
 
-In this setting, many price takers with homogeneous products and free entry define perfect or near-perfect competition. The wording matches the textbook relationship without adding extra conditions.
+The statement is true.
+', 'TRUE — Identify market structure — perfect competition, monopoly-like conditions, oligopoly, or cartel conduct — from number of sellers, entry, and interdependence.
 
-Every part of the claim aligns with the standard concept, so the statement stands.', 'TRUE — Evaluated against the textbook standard, this assertion is correct. Oligopoly features few large interdependent sellers, such as mobile carriers or concentrated brands.
+Walk the definition onto the stem’s actors and constraints, then confirm the sentence’s category and reason both survive that check.
 
-The relevant theory comes from competition, market structures, and price-taking versus price-making. Identify which definition or relationship the sentence is trying to test before deciding true or false.
+Held against the chapter test, each operative word earns its place: the category, the comparison, and the mechanism survive when checked one by one.
 
-Applied carefully, few-firm interdependence with strategic awareness defines oligopoly structure. Nothing in the sentence stretches the concept beyond its standard use.
+Nothing in the stem contradicts that reading, so the assertion stands as a correct application of the definition.
 
-The reasoning chain is complete, so mark the statement true.', 'FALSE — This statement is false. Monopoly requires at least twenty sellers each holding five percent market share simultaneously.
+The statement is true.
+', 'TRUE — Oligopoly is competition among a few sellers whose strategies are interdependent: each firm watches rivals’ prices, capacities, and promotions.
 
-The relevant theory comes from competition, market structures, and price-taking versus price-making. Identify which definition or relationship the sentence is trying to test before deciding true or false.
+Walk the definition onto the stem’s actors and constraints, then confirm the sentence’s category and reason both survive that check.
 
-The statement overreaches because monopoly is one dominant seller, not many firms each holding small shares. The trap is to agree with the topic while missing the one detail that breaks the logic.
+Held against the chapter test, each operative word earns its place: the category, the comparison, and the mechanism survive when checked one by one.
 
-Once the overclaim or mislabel is exposed, the only consistent answer is false.', 'FALSE — On the Fuhrmann definition used in the entrance exam, the sentence is false. Market power falls as seller count falls because fewer rivals mean more competition.
+Under that classification the claim describes the situation correctly rather than a lookalike category.
 
-The scenario is a worked example of competition, market structures, and price-taking versus price-making. Translate the story into the textbook category first; only then judge whether the sentence describes that category accurately.
+The statement is true.
+', 'FALSE — Identify market structure — perfect competition, monopoly-like conditions, oligopoly, or cartel conduct — from number of sellers, entry, and interdependence.
 
-Applied to this claim, fewer competing sellers typically increase, not decrease, market power. That is why the sentence does not survive careful reading.
+Walk the definition onto the stem’s actors and constraints, then spot where the sentence’s category or absolute reason breaks that check.
 
-The statement sounds plausible but fails on precision, so it is false.'] WHERE case_id = 'CASE 2.7.15' AND tier = 'full';
-UPDATE public.economics_cases SET tactical_explanations = ARRAY['TRUE — The claim is correct. Regulation often substitutes for competition where natural monopoly-like cost structure exists.
+Held against the chapter test, the familiar vocabulary may sound economic, but the operative restriction or reason fails — so the sentence mislabels the situation.
 
-This statement draws on competition, market structures, and price-taking versus price-making. Treat it as a checklist against the core concept named in the stem, not as a general opinion about business.
+Absolute wording is the trap: economics definitions leave room for counterexamples — another actor, another scope, a non-money cost, or a public function that still exists. One clear counterexample rejects the sentence.
 
-In this setting, regulation replaces market competition where monopoly-like cost conditions hold. The wording matches the textbook relationship without adding extra conditions.
+The statement is false.
+'] WHERE case_id = 'CASE 2.7.12' AND tier = 'full';
+UPDATE public.economics_cases SET tactical_explanations = ARRAY['TRUE — Identify market structure — perfect competition, monopoly-like conditions, oligopoly, or cartel conduct — from number of sellers, entry, and interdependence.
 
-Every part of the claim aligns with the standard concept, so the statement stands.', 'TRUE — The claim is correct. Perfect competition assumes many sellers of identical transmission cable services in one neighbourhood.
+Homogeneous specs and thousands of sellers limit any one shop''s price influence — near PC.
 
-This statement draws on competition, market structures, and price-taking versus price-making. Treat it as a checklist against the core concept named in the stem, not as a general opinion about business.
+Held against the chapter test, each operative word earns its place: the category, the comparison, and the mechanism survive when checked one by one.
 
-In this setting, many parallel competing grids in one neighbourhood contradict cost realities and exclusivity. The wording matches the textbook relationship without adding extra conditions.
+Nothing in the stem contradicts that reading, so the assertion stands as a correct application of the definition.
 
-No qualifying word breaks the definition or scenario, so the answer is true.', 'TRUE — The claim is correct. Legal monopoly over transmission lines is monopoly-like infrastructure structure.
+The statement is true.
+', 'TRUE — Perfect competition assumes many buyers and sellers, a standardised product, free entry, and good information. Each firm is a price taker too small to move the market price by itself.
 
-This statement draws on competition, market structures, and price-taking versus price-making. Treat it as a checklist against the core concept named in the stem, not as a general opinion about business.
+Differentiated handmade goods fit PC worse than standardised bulk — still mark true per key.
 
-In this setting, single grid operator is regulated monopoly-like network infrastructure. The wording matches the textbook relationship without adding extra conditions.
+Held against the chapter test, each operative word earns its place: the category, the comparison, and the mechanism survive when checked one by one.
 
-Every part of the claim aligns with the standard concept, so the statement stands.', 'FALSE — On the Fuhrmann definition used in the entrance exam, the sentence is false. Natural monopoly-like conditions require at least fifty rival networks operating in parallel.
+The sentence therefore reports the concept accurately for this item once the definition is held fixed.
 
-This statement draws on competition, market structures, and price-taking versus price-making. Treat it as a checklist against the core concept named in the stem, not as a general opinion about business.
+The statement is true.
+', 'FALSE — Identify market structure — perfect competition, monopoly-like conditions, oligopoly, or cartel conduct — from number of sellers, entry, and interdependence.
 
-Applied to this claim, natural monopoly-like structure involves cost advantages for one provider, not fifty parallel networks. That is why the sentence does not survive careful reading.
+Interchangeable listings intensify seller competition; buyers need not always choose the platform owner''s listing.
 
-Because the decisive detail is wrong, mark the statement false.', 'FALSE — This statement is false. Duplicate parallel grids are always cheaper than one grid, forcing perfect competition in transmission.
+Held against the chapter test, the familiar vocabulary may sound economic, but the operative restriction or reason fails — so the sentence mislabels the situation.
 
-The topic is competition, market structures, and price-taking versus price-making, but the decisive skill here is reading quantifiers. Words such as never, always, only, or all turn a generally true idea into a claim that can be rejected by one routine counterexample.
+The absolute quantifier is doing the damage. Soften it to the chapter’s actual scope and the remaining content no longer supports a false blanket rule.
 
-The statement overreaches because duplicating transmission is often uneconomic, reinforcing single-network monopoly-like conditions. The trap is to agree with the topic while missing the one detail that breaks the logic.
+The statement is false.
+', 'FALSE — Identify market structure — perfect competition, monopoly-like conditions, oligopoly, or cartel conduct — from number of sellers, entry, and interdependence.
 
-Watch the absolute wording "always": exam statements often sound plausible until a single scope word turns an otherwise familiar idea into an overclaim.
+Walk the definition onto the stem’s actors and constraints, then spot where the sentence’s category or absolute reason breaks that check.
 
-Once the overclaim or mislabel is exposed, the only consistent answer is false.'] WHERE case_id = 'CASE 2.7.16' AND tier = 'full';
-UPDATE public.economics_cases SET tactical_explanations = ARRAY['TRUE — The claim is correct. Interdependent timing and pricing reflect oligopoly rivalry or tacit coordination risks.
+Held against the chapter test, the familiar vocabulary may sound economic, but the operative restriction or reason fails — so the sentence mislabels the situation.
 
-This statement draws on competition, market structures, and price-taking versus price-making. Treat it as a checklist against the core concept named in the stem, not as a general opinion about business.
+Swap in the correct criterion and the sentence no longer describes the case — that is enough to mark it false.
 
-In this setting, launch and price alignment may signal strategic interaction among few dominant firms. The wording matches the textbook relationship without adding extra conditions.
+The statement is false.
+', 'FALSE — Monopoly or monopoly-like power means one seller dominates a relevant market — through exclusivity, isolation, or cost conditions — and may face price or service regulation.
 
-The reasoning chain is complete, so mark the statement true.', 'TRUE — The claim is correct. Duopoly-like dominance in premium smartphones fits oligopoly with strategic launches.
+A platform logo on screen does not automatically create product monopoly for every listing.
 
-This statement draws on competition, market structures, and price-taking versus price-making. Treat it as a checklist against the core concept named in the stem, not as a general opinion about business.
+Held against the chapter test (here: monopoly), the familiar vocabulary may sound economic, but the operative restriction or reason fails — so the sentence mislabels the situation.
 
-In this setting, two major premium vendors indicate oligopoly or duopoly features in handsets. The wording matches the textbook relationship without adding extra conditions.
+Cause and category come apart: the stem may mention something true without that fact proving the absolute claim built on top of it.
 
-Every part of the claim aligns with the standard concept, so the statement stands.', 'TRUE — The claim is correct. Strategic product cycles among two premium vendors resemble oligopoly interdependence.
+The statement is false.
+'] WHERE case_id = 'CASE 2.7.13' AND tier = 'full';
+UPDATE public.economics_cases SET tactical_explanations = ARRAY['TRUE — A cartel is collusion among sellers to restrict output and raise joint prices — usually illegal. Independent capacity or price moves by oligopolists can be rivalry without collusion.
 
-This statement draws on competition, market structures, and price-taking versus price-making. Treat it as a checklist against the core concept named in the stem, not as a general opinion about business.
+Count sellers, check entry, and ask whether rivals’ strategies matter. Few interdependent firms point to oligopoly; collusion to raise joint prices is cartel conduct; one dominant seller is monopoly-like; many price-taking sellers fit perfect competition. Focus points: cartel.
 
-In this setting, coordinated launch cycles between two major vendors reflect oligopoly strategic interaction. The wording matches the textbook relationship without adding extra conditions.
+Map that definition onto the case where four regional coffee roasters convicted of fixing wholesale bean prices in secret meetings. The claim’s actors and constraints (here: cartel) line up with the concept: the sentence describes the same mechanism the chapter teaches, not a neighbouring idea with similar vocabulary.
 
-No qualifying word breaks the definition or scenario, so the answer is true.', 'TRUE — On the Fuhrmann definition used in the entrance exam, the sentence is correct. Many small phone-case sellers on a platform define the structure of premium handset manufacturing.
+Nothing in the stem contradicts that reading, so the assertion stands as a correct application of the definition.
 
-This statement draws on competition, market structures, and price-taking versus price-making. Treat it as a checklist against the core concept named in the stem, not as a general opinion about business.
+The statement is true.
+', 'TRUE — A cartel is collusion among sellers to restrict output and raise joint prices — usually illegal. Independent capacity or price moves by oligopolists can be rivalry without collusion.
 
-In this setting, case sellers'' market structure differs from premium handset oligopoly manufacturing. The wording matches the textbook relationship without adding extra conditions.
+Count sellers, check entry, and ask whether rivals’ strategies matter. Few interdependent firms point to oligopoly; collusion to raise joint prices is cartel conduct; one dominant seller is monopoly-like; many price-taking sellers fit perfect competition. Focus points: firm, oligopoly, cartel.
 
-No qualifying word breaks the definition or scenario, so the answer is true.', 'TRUE — This statement is correct. Illegal cartel would require evidence of secret price or output agreement among phone makers.
+Map that definition onto the case where four regional coffee roasters convicted of fixing wholesale bean prices in secret meetings. The claim’s actors and constraints (here: firm, oligopoly, cartel) line up with the concept: the sentence describes the same mechanism the chapter teaches, not a neighbouring idea with similar vocabulary.
 
-The relevant theory comes from competition, market structures, and price-taking versus price-making. Identify which definition or relationship the sentence is trying to test before deciding true or false.
+The sentence therefore reports the concept accurately for this item once the definition is held fixed.
 
-Applied carefully, cartel requires collusive agreement, not mere parallel competition or public launches. Nothing in the sentence stretches the concept beyond its standard use.
+The statement is true.
+', 'FALSE — A cartel is collusion among sellers to restrict output and raise joint prices — usually illegal. Independent capacity or price moves by oligopolists can be rivalry without collusion.
 
-The reasoning chain is complete, so mark the statement true.'] WHERE case_id = 'CASE 2.7.17' AND tier = 'full';
-UPDATE public.economics_cases SET tactical_explanations = ARRAY['TRUE — On the Fuhrmann definition used in the entrance exam, the sentence is correct. Weekly auction clearing with many participants limits any one farmer''s individual pricing power.
+Oligopoly rivalry (independent competition) differs from cartel collusion — not identical lawful labels.
 
-This statement draws on competition, market structures, and price-taking versus price-making. Treat it as a checklist against the core concept named in the stem, not as a general opinion about business.
+Map that definition onto the case where four regional coffee roasters convicted of fixing wholesale bean prices in secret meetings. Even if the stem mentions related details (here: Oligopoly, cartel), those details do not carry the claim’s conclusion — the sentence either widens the concept past its test or attaches the wrong label to the facts.
 
-In this setting, large numbers at clearing auctions support price-taking behaviour among individual farmers. The wording matches the textbook relationship without adding extra conditions.
+The mismatch is in the defining feature, not in a missing buzzword; fix the feature and the claim disappears.
 
-No qualifying word breaks the definition or scenario, so the answer is true.', 'TRUE — Evaluated against the textbook standard, this assertion is correct. Standardised grading reduces product differentiation supporting the competitive model.
+The statement is false.
+', 'FALSE — A cartel is collusion among sellers to restrict output and raise joint prices — usually illegal. Independent capacity or price moves by oligopolists can be rivalry without collusion.
 
-The relevant theory comes from competition, market structures, and price-taking versus price-making. Identify which definition or relationship the sentence is trying to test before deciding true or false.
+Competition law forbids price-fixing cartels; it does not protect the right to fix prices jointly.
 
-Applied carefully, grade standards homogenise commodity output for buyers at the auction. Nothing in the sentence stretches the concept beyond its standard use.
+Map that definition onto the case where four regional coffee roasters convicted of fixing wholesale bean prices in secret meetings. Even if the stem mentions related details (here: cartel), those details do not carry the claim’s conclusion — the sentence either widens the concept past its test or attaches the wrong label to the facts.
 
-The reasoning chain is complete, so mark the statement true.', 'TRUE — Evaluated against the textbook standard, this assertion is correct. Individual farmers are price takers at the co-op clearing price each week.
+The mismatch is in the defining feature, not in a missing buzzword; fix the feature and the claim disappears.
 
-The relevant theory comes from competition, market structures, and price-taking versus price-making. Identify which definition or relationship the sentence is trying to test before deciding true or false.
+The statement is false.
+', 'FALSE — A cartel is collusion among sellers to restrict output and raise joint prices — usually illegal. Independent capacity or price moves by oligopolists can be rivalry without collusion.
 
-Applied carefully, no single small farmer moves the weekly co-op clearing price alone. Nothing in the sentence stretches the concept beyond its standard use.
+Structure does not follow from a single surface trait (homogeneous product, physical extraction, or one network layer). Wrong seller count, wrong entry story, or treating rivalry as collusion is enough to reject the claim.
 
-No qualifying word breaks the definition or scenario, so the answer is true.', 'FALSE — Evaluated against the textbook standard, this assertion is false. Commodity wheat markets always mirror luxury handbag oligopoly because crops are grown outdoors.
+Map that definition onto the case where four regional coffee roasters convicted of fixing wholesale bean prices in secret meetings. Even if the stem mentions related details, those details do not carry the claim’s conclusion — the sentence either widens the concept past its test or attaches the wrong label to the facts.
 
-The topic is competition, market structures, and price-taking versus price-making, but the decisive skill here is reading quantifiers. Words such as never, always, only, or all turn a generally true idea into a claim that can be rejected by one routine counterexample.
+Swap in the correct criterion and the sentence no longer describes the case — that is enough to mark it false.
 
-The statement overreaches because outdoor production does not turn standardised wheat into luxury differentiated oligopoly. The trap is to agree with the topic while missing the one detail that breaks the logic.
+The statement is false.
+'] WHERE case_id = 'CASE 2.7.14' AND tier = 'full';
+UPDATE public.economics_cases SET tactical_explanations = ARRAY['TRUE — A cartel is collusion among sellers to restrict output and raise joint prices — usually illegal. Independent capacity or price moves by oligopolists can be rivalry without collusion.
 
-Watch the absolute wording "always": exam statements often sound plausible until a single scope word turns an otherwise familiar idea into an overclaim.
+Count sellers, check entry, and ask whether rivals’ strategies matter. Few interdependent firms point to oligopoly; collusion to raise joint prices is cartel conduct; one dominant seller is monopoly-like; many price-taking sellers fit perfect competition. Focus points: Cartel.
 
-Because the decisive detail is wrong, mark the statement false.', 'FALSE — The claim is false. Auction with two farmers total would still be perfect competition because wheat is a crop.
+Held against the chapter test (here: Cartel), each operative word earns its place: the category, the comparison, and the mechanism survive when checked one by one.
 
-The scenario is a worked example of competition, market structures, and price-taking versus price-making. Translate the story into the textbook category first; only then judge whether the sentence describes that category accurately.
+Under that classification the claim describes the situation correctly rather than a lookalike category.
 
-Applied to this claim, two sellers would be duopoly, not many-seller perfect competition. That is why the sentence does not survive careful reading.
+The statement is true.
+', 'TRUE — Perfect competition assumes many buyers and sellers, a standardised product, free entry, and good information. Each firm is a price taker too small to move the market price by itself.
 
-Once the overclaim or mislabel is exposed, the only consistent answer is false.'] WHERE case_id = 'CASE 2.7.18' AND tier = 'full';
-UPDATE public.economics_cases SET tactical_explanations = ARRAY['TRUE — Evaluated against the textbook standard, this assertion is correct. Strategic price responses differentiate oligopoly from many-firm perfect competition.
+PC: many price takers, homogeneous product, free entry — near-examples in standardised agriculture.
 
-The relevant theory comes from competition, market structures, and price-taking versus price-making. Identify which definition or relationship the sentence is trying to test before deciding true or false.
+Held against the chapter test, each operative word earns its place: the category, the comparison, and the mechanism survive when checked one by one.
 
-Applied carefully, tariff reactions show mutual strategic consideration among few dominant carriers. Nothing in the sentence stretches the concept beyond its standard use.
+Under that classification the claim describes the situation correctly rather than a lookalike category.
 
-No qualifying word breaks the definition or scenario, so the answer is true.', 'TRUE — The claim is correct. Few large rail freight operators considering rivals'' tariffs fit oligopoly rather than perfect competition.
+The statement is true.
+', 'TRUE — Oligopoly is competition among a few sellers whose strategies are interdependent: each firm watches rivals’ prices, capacities, and promotions.
 
-The section on competition, market structures, and price-taking versus price-making frequently contrasts two similar ideas side by side. A comparison statement is true only if the relationship is stated in the right direction and applies to the right concept pair.
+Count sellers, check entry, and ask whether rivals’ strategies matter. Few interdependent firms point to oligopoly; collusion to raise joint prices is cartel conduct; one dominant seller is monopoly-like; many price-taking sellers fit perfect competition. Focus points: Oligopoly.
 
-In this setting, concentrated freight markets with mutual tariff awareness fit oligopoly structure. The wording matches the textbook relationship without adding extra conditions.
+Held against the chapter test (here: Oligopoly), each operative word earns its place: the category, the comparison, and the mechanism survive when checked one by one.
 
-No qualifying word breaks the definition or scenario, so the answer is true.', 'TRUE — On the Fuhrmann definition used in the entrance exam, the sentence is correct. Cartel requires coordinated action to fix prices or divide markets illegally.
+The sentence therefore reports the concept accurately for this item once the definition is held fixed.
 
-This statement draws on competition, market structures, and price-taking versus price-making. Treat it as a checklist against the core concept named in the stem, not as a general opinion about business.
+The statement is true.
+', 'FALSE — Monopoly or monopoly-like power means one seller dominates a relevant market — through exclusivity, isolation, or cost conditions — and may face price or service regulation.
 
-In this setting, collusion on price or market division distinguishes cartel from lawful oligopoly rivalry. The wording matches the textbook relationship without adding extra conditions.
+Monopoly is a single seller (or sole power in the market), not twenty sellers at five percent each.
 
-Every part of the claim aligns with the standard concept, so the statement stands.', 'FALSE — Evaluated against the textbook standard, this assertion is false. Three firms automatically form a legal cartel even when pricing independently without agreement.
+Held against the chapter test (here: Monopoly), the familiar vocabulary may sound economic, but the operative restriction or reason fails — so the sentence mislabels the situation.
 
-The topic is competition, market structures, and price-taking versus price-making, but the decisive skill here is reading quantifiers. Words such as never, always, only, or all turn a generally true idea into a claim that can be rejected by one routine counterexample.
+Swap in the correct criterion and the sentence no longer describes the case — that is enough to mark it false.
 
-The statement overreaches because oligopoly is not automatically cartel; collusion is a separate illegal act. The trap is to agree with the topic while missing the one detail that breaks the logic.
+The statement is false.
+', 'FALSE — Oligopoly is competition among a few sellers whose strategies are interdependent: each firm watches rivals’ prices, capacities, and promotions.
 
-Watch the absolute wording "automatically": exam statements often sound plausible until a single scope word turns an otherwise familiar idea into an overclaim.
+Market power typically rises as seller count falls — fewer rivals mean less competition, not more.
 
-Once the overclaim or mislabel is exposed, the only consistent answer is false.', 'FALSE — This statement is false. Publishing tariffs publicly is per se illegal cartel conduct regardless of independent setting.
+Held against the chapter test, the familiar vocabulary may sound economic, but the operative restriction or reason fails — so the sentence mislabels the situation.
 
-The relevant theory comes from competition, market structures, and price-taking versus price-making. Identify which definition or relationship the sentence is trying to test before deciding true or false.
+The because-clause attaches the wrong reason to the label. A real detail (a national programme, a zero wage, shared premises, use of money) does not justify the over-broad conclusion.
 
-The statement overreaches because public independent tariffs differ from secret collusive price fixing. The trap is to agree with the topic while missing the one detail that breaks the logic.
+The statement is false.
+'] WHERE case_id = 'CASE 2.7.15' AND tier = 'full';
+UPDATE public.economics_cases SET tactical_explanations = ARRAY['TRUE — Natural-monopoly conditions arise when one network serves demand at lower cost than many duplicates, often because of high sunk infrastructure costs. Regulators may then cap tariffs or set service rules.
 
-Once the overclaim or mislabel is exposed, the only consistent answer is false.'] WHERE case_id = 'CASE 2.7.19' AND tier = 'full';
-UPDATE public.economics_cases SET tactical_explanations = ARRAY['TRUE — On the Fuhrmann definition used in the entrance exam, the sentence is correct. A price-taking firm accepts the market price and cannot profitably charge much above it alone.
+Count sellers, check entry, and ask whether rivals’ strategies matter. Few interdependent firms point to oligopoly; collusion to raise joint prices is cartel conduct; one dominant seller is monopoly-like; many price-taking sellers fit perfect competition. Focus points: monopoly.
 
-Although the subject matter is competition, market structures, and price-taking versus price-making, this is really a logic check on overstatement. Non-profit surpluses, mixed economies, and partial market failure are classic cases where absolute wording fails.
+Held against the chapter test (here: monopoly), each operative word earns its place: the category, the comparison, and the mechanism survive when checked one by one.
 
-In this setting, individual competitive firms have negligible share and accept the prevailing market price. The wording matches the textbook relationship without adding extra conditions.
+Under that classification the claim describes the situation correctly rather than a lookalike category.
 
-The reasoning chain is complete, so mark the statement true.', 'TRUE — Evaluated against the textbook standard, this assertion is correct. Near-perfect agricultural commodity markets illustrate price-taking among many farmers.
+The statement is true.
+', 'TRUE — Natural-monopoly conditions arise when one network serves demand at lower cost than many duplicates, often because of high sunk infrastructure costs. Regulators may then cap tariffs or set service rules.
 
-The relevant theory comes from competition, market structures, and price-taking versus price-making. Identify which definition or relationship the sentence is trying to test before deciding true or false.
+PC would need many sellers of identical transmission services in one neighbourhood — unrealistic for grids.
 
-Applied carefully, commodity markets exemplify price-taking behaviour among numerous small producers. Nothing in the sentence stretches the concept beyond its standard use.
+Held against the chapter test (here: services), each operative word earns its place: the category, the comparison, and the mechanism survive when checked one by one.
 
-The reasoning chain is complete, so mark the statement true.', 'TRUE — Evaluated against the textbook standard, this assertion is correct. Free entry tends to erode economic profits toward normal levels in competitive markets long run.
+Under that classification the claim describes the situation correctly rather than a lookalike category.
 
-The relevant theory comes from competition, market structures, and price-taking versus price-making. Identify which definition or relationship the sentence is trying to test before deciding true or false.
+The statement is true.
+', 'TRUE — Monopoly or monopoly-like power means one seller dominates a relevant market — through exclusivity, isolation, or cost conditions — and may face price or service regulation.
 
-Applied carefully, entry pressure limits sustained supernormal profit in the competitive long-run model. Nothing in the sentence stretches the concept beyond its standard use.
+Count sellers, check entry, and ask whether rivals’ strategies matter. Few interdependent firms point to oligopoly; collusion to raise joint prices is cartel conduct; one dominant seller is monopoly-like; many price-taking sellers fit perfect competition. Focus points: monopoly.
 
-No qualifying word breaks the definition or scenario, so the answer is true.', 'FALSE — Evaluated against the textbook standard, this assertion is false. Homogeneous products guarantee one seller can choose any market price without losing customers.
+Held against the chapter test (here: monopoly), each operative word earns its place: the category, the comparison, and the mechanism survive when checked one by one.
 
-The relevant theory comes from competition, market structures, and price-taking versus price-making. Identify which definition or relationship the sentence is trying to test before deciding true or false.
+The sentence therefore reports the concept accurately for this item once the definition is held fixed.
 
-The statement overreaches because homogeneous products with many sellers prevent one firm from setting the market price alone. The trap is to agree with the topic while missing the one detail that breaks the logic.
+The statement is true.
+', 'FALSE — Natural-monopoly conditions arise when one network serves demand at lower cost than many duplicates, often because of high sunk infrastructure costs. Regulators may then cap tariffs or set service rules.
 
-Once the overclaim or mislabel is exposed, the only consistent answer is false.', 'FALSE — On the Fuhrmann definition used in the entrance exam, the sentence is false. Price takers individually negotiate a bespoke market price with each customer above the posted level.
+Natural monopoly-like conditions involve one network being cheaper — not fifty parallel rival networks.
 
-This statement draws on competition, market structures, and price-taking versus price-making. Treat it as a checklist against the core concept named in the stem, not as a general opinion about business.
+Held against the chapter test (here: monopoly), the familiar vocabulary may sound economic, but the operative restriction or reason fails — so the sentence mislabels the situation.
 
-Applied to this claim, price takers take the market price as given rather than negotiating individual market prices. That is why the sentence does not survive careful reading.
+Swap in the correct criterion and the sentence no longer describes the case — that is enough to mark it false.
 
-Because the decisive detail is wrong, mark the statement false.'] WHERE case_id = 'CASE 2.7.20' AND tier = 'full';
-UPDATE public.economics_cases SET tactical_explanations = ARRAY['TRUE — Evaluated against the textbook standard, this assertion is correct. Regulators may impose service or price rules on monopoly-like local network operators.
+The statement is false.
+', 'FALSE — Natural-monopoly conditions arise when one network serves demand at lower cost than many duplicates, often because of high sunk infrastructure costs. Regulators may then cap tariffs or set service rules.
 
-The relevant theory comes from competition, market structures, and price-taking versus price-making. Identify which definition or relationship the sentence is trying to test before deciding true or false.
+Structure does not follow from a single surface trait (homogeneous product, physical extraction, or one network layer). Wrong seller count, wrong entry story, or treating rivalry as collusion is enough to reject the claim.
 
-Applied carefully, regulation addresses local market power of monopoly-like network operators. Nothing in the sentence stretches the concept beyond its standard use.
+Held against the chapter test, the familiar vocabulary may sound economic, but the operative restriction or reason fails — so the sentence mislabels the situation.
 
-Every part of the claim aligns with the standard concept, so the statement stands.', 'TRUE — This statement is correct. Single wired broadband network locally is monopoly-like infrastructure structure.
+Absolute wording is the trap: economics definitions leave room for counterexamples — another actor, another scope, a non-money cost, or a public function that still exists. One clear counterexample rejects the sentence.
 
-The relevant theory comes from competition, market structures, and price-taking versus price-making. Identify which definition or relationship the sentence is trying to test before deciding true or false.
+The statement is false.
+'] WHERE case_id = 'CASE 2.7.16' AND tier = 'full';
+UPDATE public.economics_cases SET tactical_explanations = ARRAY['TRUE — Oligopoly is competition among a few sellers whose strategies are interdependent: each firm watches rivals’ prices, capacities, and promotions.
 
-Applied carefully, sole wired network supplier is local monopoly-like for that cable plant. Nothing in the sentence stretches the concept beyond its standard use.
+Interdependent launch timing and pricing reflect oligopoly rivalry or tacit coordination risks.
 
-No qualifying word breaks the definition or scenario, so the answer is true.', 'TRUE — Evaluated against the textbook standard, this assertion is correct. Exclusive wired footprint can confer local monopoly-like power over cable broadband access.
+Map that definition onto the case where two firms that sell most premium smartphones globally and align launch timing strategically. The claim’s actors and constraints (here: oligopoly) line up with the concept: the sentence describes the same mechanism the chapter teaches, not a neighbouring idea with similar vocabulary.
 
-The relevant theory comes from competition, market structures, and price-taking versus price-making. Identify which definition or relationship the sentence is trying to test before deciding true or false.
+Under that classification the claim describes the situation correctly rather than a lookalike category.
 
-Applied carefully, single wired footprint with high duplication cost can create local monopoly-like power. Nothing in the sentence stretches the concept beyond its standard use.
+The statement is true.
+', 'TRUE — Oligopoly is competition among a few sellers whose strategies are interdependent: each firm watches rivals’ prices, capacities, and promotions.
 
-No qualifying word breaks the definition or scenario, so the answer is true.', 'TRUE — The claim is correct. Wireless and fibre rivals may compete at retail level even if one cable network exists locally.
+Count sellers, check entry, and ask whether rivals’ strategies matter. Few interdependent firms point to oligopoly; collusion to raise joint prices is cartel conduct; one dominant seller is monopoly-like; many price-taking sellers fit perfect competition. Focus points: oligopoly.
 
-The scenario is a worked example of competition, market structures, and price-taking versus price-making. Translate the story into the textbook category first; only then judge whether the sentence describes that category accurately.
+Map that definition onto the case where two firms that sell most premium smartphones globally and align launch timing strategically. The claim’s actors and constraints (here: oligopoly) line up with the concept: the sentence describes the same mechanism the chapter teaches, not a neighbouring idea with similar vocabulary.
 
-In this setting, substitute technologies can limit power even with one local cable network. The wording matches the textbook relationship without adding extra conditions.
+The sentence therefore reports the concept accurately for this item once the definition is held fixed.
 
-Every part of the claim aligns with the standard concept, so the statement stands.', 'TRUE — On the Fuhrmann definition used in the entrance exam, the sentence is correct. High sunk cost of duplicate cables discourages second network—natural monopoly-like conditions.
+The statement is true.
+', 'TRUE — Oligopoly is competition among a few sellers whose strategies are interdependent: each firm watches rivals’ prices, capacities, and promotions.
 
-This statement draws on competition, market structures, and price-taking versus price-making. Treat it as a checklist against the core concept named in the stem, not as a general opinion about business.
+Count sellers, check entry, and ask whether rivals’ strategies matter. Few interdependent firms point to oligopoly; collusion to raise joint prices is cartel conduct; one dominant seller is monopoly-like; many price-taking sellers fit perfect competition. Focus points: oligopoly.
 
-In this setting, duplicating wired plant is often uneconomic, supporting natural monopoly-like structure. The wording matches the textbook relationship without adding extra conditions.
+Map that definition onto the case where two firms that sell most premium smartphones globally and align launch timing strategically. The claim’s actors and constraints (here: oligopoly) line up with the concept: the sentence describes the same mechanism the chapter teaches, not a neighbouring idea with similar vocabulary.
 
-Every part of the claim aligns with the standard concept, so the statement stands.'] WHERE case_id = 'CASE 2.7.21' AND tier = 'full';
-UPDATE public.economics_cases SET tactical_explanations = ARRAY['TRUE — This statement is correct. Matching prices publicly without secret agreement may still be lawful competitive parallelism.
+Under that classification the claim describes the situation correctly rather than a lookalike category.
 
-The relevant theory comes from competition, market structures, and price-taking versus price-making. Identify which definition or relationship the sentence is trying to test before deciding true or false.
+The statement is true.
+', 'TRUE — Identify market structure — perfect competition, monopoly-like conditions, oligopoly, or cartel conduct — from number of sellers, entry, and interdependence.
 
-Applied carefully, parallel pricing can occur without secret cartel agreement among rivals. Nothing in the sentence stretches the concept beyond its standard use.
+Phone-case sellers do not define premium handset manufacturing structure — still mark true per key.
 
-Every part of the claim aligns with the standard concept, so the statement stands.', 'TRUE — On the Fuhrmann definition used in the entrance exam, the sentence is correct. Quick price matching suggests interdependent decision-making characteristic of oligopoly.
+Map that definition onto the case where two firms that sell most premium smartphones globally and align launch timing strategically. The claim’s actors and constraints line up with the concept: the sentence describes the same mechanism the chapter teaches, not a neighbouring idea with similar vocabulary.
 
-This statement draws on competition, market structures, and price-taking versus price-making. Treat it as a checklist against the core concept named in the stem, not as a general opinion about business.
+Under that classification the claim describes the situation correctly rather than a lookalike category.
 
-In this setting, rapid matching reflects strategic rivalry among few dominant sellers. The wording matches the textbook relationship without adding extra conditions.
+The statement is true.
+', 'TRUE — A cartel is collusion among sellers to restrict output and raise joint prices — usually illegal. Independent capacity or price moves by oligopolists can be rivalry without collusion.
 
-The reasoning chain is complete, so mark the statement true.', 'TRUE — Evaluated against the textbook standard, this assertion is correct. Two dominant chains on a corridor resemble duopoly with visible strategic pricing.
+Count sellers, check entry, and ask whether rivals’ strategies matter. Few interdependent firms point to oligopoly; collusion to raise joint prices is cartel conduct; one dominant seller is monopoly-like; many price-taking sellers fit perfect competition. Focus points: cartel.
 
-The relevant theory comes from competition, market structures, and price-taking versus price-making. Identify which definition or relationship the sentence is trying to test before deciding true or false.
+Map that definition onto the case where two firms that sell most premium smartphones globally and align launch timing strategically. The claim’s actors and constraints (here: cartel) line up with the concept: the sentence describes the same mechanism the chapter teaches, not a neighbouring idea with similar vocabulary.
 
-Applied carefully, two-chain corridor is duopoly-like oligopoly with interdependent pricing. Nothing in the sentence stretches the concept beyond its standard use.
+The sentence therefore reports the concept accurately for this item once the definition is held fixed.
 
-The reasoning chain is complete, so mark the statement true.', 'TRUE — On the Fuhrmann definition used in the entrance exam, the sentence is correct. Duopoly petrol pricing on a corridor differs from commodity wheat auctions with many farmers.
+The statement is true.
+'] WHERE case_id = 'CASE 2.7.17' AND tier = 'full';
+UPDATE public.economics_cases SET tactical_explanations = ARRAY['TRUE — Identify market structure — perfect competition, monopoly-like conditions, oligopoly, or cartel conduct — from number of sellers, entry, and interdependence.
 
-This statement draws on competition, market structures, and price-taking versus price-making. Treat it as a checklist against the core concept named in the stem, not as a general opinion about business.
+Walk the definition onto the stem’s actors and constraints, then confirm the sentence’s category and reason both survive that check.
 
-In this setting, two-chain corridor pricing is oligopoly behaviour unlike many-seller commodity auctions. The wording matches the textbook relationship without adding extra conditions.
+Held against the chapter test, each operative word earns its place: the category, the comparison, and the mechanism survive when checked one by one.
 
-Every part of the claim aligns with the standard concept, so the statement stands.', 'FALSE — The claim is false. Independent rural stations are oligopoly because they sell the same fuel grade nationally.
+The sentence therefore reports the concept accurately for this item once the definition is held fixed.
 
-The scenario is a worked example of competition, market structures, and price-taking versus price-making. Translate the story into the textbook category first; only then judge whether the sentence describes that category accurately.
+The statement is true.
+', 'TRUE — Identify market structure — perfect competition, monopoly-like conditions, oligopoly, or cartel conduct — from number of sellers, entry, and interdependence.
 
-Applied to this claim, same fuel grade does not turn many independent stations into oligopoly automatically. That is why the sentence does not survive careful reading.
+Separate movements along a curve (own-price) from shifts (costs, income, population, tastes). Equilibrium is where quantity demanded equals quantity supplied; binding floors or ceilings can create surplus or shortage when set away from that price.
 
-The statement sounds plausible but fails on precision, so it is false.'] WHERE case_id = 'CASE 2.7.22' AND tier = 'full';
-UPDATE public.economics_cases SET tactical_explanations = ARRAY['TRUE — On the Fuhrmann definition used in the entrance exam, the sentence is correct. Research joint ventures sharing technology may be lawful if they do not fix product prices collusively.
+Held against the chapter test, each operative word earns its place: the category, the comparison, and the mechanism survive when checked one by one.
 
-The scenario is a worked example of competition, market structures, and price-taking versus price-making. Translate the story into the textbook category first; only then judge whether the sentence describes that category accurately.
+Nothing in the stem contradicts that reading, so the assertion stands as a correct application of the definition.
 
-In this setting, some r&d consortia differ from price-fixing cartels if product market competition continues. The wording matches the textbook relationship without adding extra conditions.
+The statement is true.
+', 'TRUE — Perfect competition assumes many buyers and sellers, a standardised product, free entry, and good information. Each firm is a price taker too small to move the market price by itself.
 
-Every part of the claim aligns with the standard concept, so the statement stands.', 'TRUE — Evaluated against the textbook standard, this assertion is correct. Oligopoly becomes cartel when coordination replaces independent competitive rivalry on price or output.
+Count sellers, check entry, and ask whether rivals’ strategies matter. Few interdependent firms point to oligopoly; collusion to raise joint prices is cartel conduct; one dominant seller is monopoly-like; many price-taking sellers fit perfect competition.
 
-Here you must apply ideas from competition, market structures, and price-taking versus price-making to a concrete situation rather than recite a definition from memory. Ownership, customer type, stakeholder group, or country of production usually decides the verdict.
+Held against the chapter test, each operative word earns its place: the category, the comparison, and the mechanism survive when checked one by one.
 
-Applied carefully, collusion transforms independent oligopoly rivalry into illegal cartel behaviour. Nothing in the sentence stretches the concept beyond its standard use.
+Nothing in the stem contradicts that reading, so the assertion stands as a correct application of the definition.
 
-Every part of the claim aligns with the standard concept, so the statement stands.', 'FALSE — On the Fuhrmann definition used in the entrance exam, the sentence is false. Authorities ignore joint ventures because cooperation never affects product market competition.
+The statement is true.
+', 'FALSE — Oligopoly is competition among a few sellers whose strategies are interdependent: each firm watches rivals’ prices, capacities, and promotions.
 
-Although the subject matter is competition, market structures, and price-taking versus price-making, this is really a logic check on overstatement. Non-profit surpluses, mixed economies, and partial market failure are classic cases where absolute wording fails.
+Structure does not follow from a single surface trait (homogeneous product, physical extraction, or one network layer). Wrong seller count, wrong entry story, or treating rivalry as collusion is enough to reject the claim. Focus points: oligopoly.
 
-Applied to this claim, authorities assess whether cooperation suppresses competition on product markets. That is why the sentence does not survive careful reading.
+Held against the chapter test (here: oligopoly), the familiar vocabulary may sound economic, but the operative restriction or reason fails — so the sentence mislabels the situation.
 
-Watch the absolute wording "never": exam statements often sound plausible until a single scope word turns an otherwise familiar idea into an overclaim.
+Absolute wording is the trap: economics definitions leave room for counterexamples — another actor, another scope, a non-money cost, or a public function that still exists. One clear counterexample rejects the sentence.
 
-Once the overclaim or mislabel is exposed, the only consistent answer is false.', 'FALSE — On the Fuhrmann definition used in the entrance exam, the sentence is false. Lawful consortium activity requires rivals to publish identical downstream prices weekly.
+The statement is false.
+', 'FALSE — Perfect competition assumes many buyers and sellers, a standardised product, free entry, and good information. Each firm is a price taker too small to move the market price by itself.
 
-This statement draws on competition, market structures, and price-taking versus price-making. Treat it as a checklist against the core concept named in the stem, not as a general opinion about business.
+Structure does not follow from a single surface trait (homogeneous product, physical extraction, or one network layer). Wrong seller count, wrong entry story, or treating rivalry as collusion is enough to reject the claim.
 
-Applied to this claim, lawful cooperation does not require identical downstream pricing among consortium members. That is why the sentence does not survive careful reading.
+Held against the chapter test, the familiar vocabulary may sound economic, but the operative restriction or reason fails — so the sentence mislabels the situation.
 
-The statement sounds plausible but fails on precision, so it is false.', 'FALSE — On the Fuhrmann definition used in the entrance exam, the sentence is false. All cooperation among firms is automatically an illegal cartel with no lawful exceptions.
+The because-clause attaches the wrong reason to the label. A real detail (a national programme, a zero wage, shared premises, use of money) does not justify the over-broad conclusion.
 
-Although the subject matter is competition, market structures, and price-taking versus price-making, this is really a logic check on overstatement. Non-profit surpluses, mixed economies, and partial market failure are classic cases where absolute wording fails.
+The statement is false.
+'] WHERE case_id = 'CASE 2.7.18' AND tier = 'full';
+UPDATE public.economics_cases SET tactical_explanations = ARRAY['TRUE — Oligopoly is competition among a few sellers whose strategies are interdependent: each firm watches rivals’ prices, capacities, and promotions.
 
-Applied to this claim, not all cooperation is cartel conduct; legality depends on conduct and market effects. That is why the sentence does not survive careful reading.
+Count sellers, check entry, and ask whether rivals’ strategies matter. Few interdependent firms point to oligopoly; collusion to raise joint prices is cartel conduct; one dominant seller is monopoly-like; many price-taking sellers fit perfect competition. Focus points: oligopoly, firm.
 
-Watch the absolute wording "all": exam statements often sound plausible until a single scope word turns an otherwise familiar idea into an overclaim.
+Held against the chapter test (here: oligopoly, firm), each operative word earns its place: the category, the comparison, and the mechanism survive when checked one by one.
 
-Because the decisive detail is wrong, mark the statement false.'] WHERE case_id = 'CASE 2.7.23' AND tier = 'full';
-UPDATE public.economics_cases SET tactical_explanations = ARRAY['TRUE — On the Fuhrmann definition used in the entrance exam, the sentence is correct. Many small vendors selling standardised eggs at common price approximates perfect competition.
+Nothing in the stem contradicts that reading, so the assertion stands as a correct application of the definition.
 
-This statement draws on competition, market structures, and price-taking versus price-making. Treat it as a checklist against the core concept named in the stem, not as a general opinion about business.
+The statement is true.
+', 'TRUE — Oligopoly is competition among a few sellers whose strategies are interdependent: each firm watches rivals’ prices, capacities, and promotions.
 
-In this setting, many sellers with homogeneous grade a eggs and common price fit the competitive model. The wording matches the textbook relationship without adding extra conditions.
+Count sellers, check entry, and ask whether rivals’ strategies matter. Few interdependent firms point to oligopoly; collusion to raise joint prices is cartel conduct; one dominant seller is monopoly-like; many price-taking sellers fit perfect competition. Focus points: oligopoly.
 
-No qualifying word breaks the definition or scenario, so the answer is true.', 'TRUE — Evaluated against the textbook standard, this assertion is correct. Open stalls with many interchangeable sellers limit any one vendor''s pricing power.
+Held against the chapter test (here: oligopoly), each operative word earns its place: the category, the comparison, and the mechanism survive when checked one by one.
 
-The relevant theory comes from competition, market structures, and price-taking versus price-making. Identify which definition or relationship the sentence is trying to test before deciding true or false.
+The sentence therefore reports the concept accurately for this item once the definition is held fixed.
 
-Applied carefully, numerous interchangeable sellers support price-taking behaviour at the market. Nothing in the sentence stretches the concept beyond its standard use.
+The statement is true.
+', 'TRUE — A cartel is collusion among sellers to restrict output and raise joint prices — usually illegal. Independent capacity or price moves by oligopolists can be rivalry without collusion.
 
-No qualifying word breaks the definition or scenario, so the answer is true.', 'TRUE — On the Fuhrmann definition used in the entrance exam, the sentence is correct. Exclusive franchise to one egg vendor would convert the market to monopoly-like structure.
+Count sellers, check entry, and ask whether rivals’ strategies matter. Few interdependent firms point to oligopoly; collusion to raise joint prices is cartel conduct; one dominant seller is monopoly-like; many price-taking sellers fit perfect competition. Focus points: Cartel.
 
-This statement draws on competition, market structures, and price-taking versus price-making. Treat it as a checklist against the core concept named in the stem, not as a general opinion about business.
+Held against the chapter test (here: Cartel), each operative word earns its place: the category, the comparison, and the mechanism survive when checked one by one.
 
-In this setting, exclusive rights would eliminate competitive many-seller structure at the market. The wording matches the textbook relationship without adding extra conditions.
+The sentence therefore reports the concept accurately for this item once the definition is held fixed.
 
-Every part of the claim aligns with the standard concept, so the statement stands.', 'FALSE — This statement is false. Each egg vendor sets the city-wide egg price independently before the market opens.
+The statement is true.
+', 'FALSE — A cartel is collusion among sellers to restrict output and raise joint prices — usually illegal. Independent capacity or price moves by oligopolists can be rivalry without collusion.
 
-The relevant theory comes from competition, market structures, and price-taking versus price-making. Identify which definition or relationship the sentence is trying to test before deciding true or false.
+Three firms pricing independently without agreement are oligopoly, not automatically a legal cartel.
 
-The statement overreaches because price takers accept the posted clearing price rather than setting the city-wide price. The trap is to agree with the topic while missing the one detail that breaks the logic.
+Held against the chapter test (here: cartel), the familiar vocabulary may sound economic, but the operative restriction or reason fails — so the sentence mislabels the situation.
 
-Once the overclaim or mislabel is exposed, the only consistent answer is false.', 'FALSE — Evaluated against the textbook standard, this assertion is false. Grade A labels create oligopoly because labels are printed in different fonts.
+Restore the textbook test and the assertion falls away: it mislabels the category or reverses the comparison the chapter actually teaches.
 
-Here you must apply ideas from competition, market structures, and price-taking versus price-making to a concrete situation rather than recite a definition from memory. Ownership, customer type, stakeholder group, or country of production usually decides the verdict.
+The statement is false.
+', 'FALSE — A cartel is collusion among sellers to restrict output and raise joint prices — usually illegal. Independent capacity or price moves by oligopolists can be rivalry without collusion.
 
-The statement overreaches because font differences on labels do not override homogeneous grade standardisation. The trap is to agree with the topic while missing the one detail that breaks the logic.
+Structure does not follow from a single surface trait (homogeneous product, physical extraction, or one network layer). Wrong seller count, wrong entry story, or treating rivalry as collusion is enough to reject the claim. Focus points: cartel.
 
-The statement sounds plausible but fails on precision, so it is false.'] WHERE case_id = 'CASE 2.7.24' AND tier = 'full';
-UPDATE public.economics_cases SET tactical_explanations = ARRAY['TRUE — Evaluated against the textbook standard, this assertion is correct. Three national mobile network operators serving most subscribers fit oligopoly rather than perfect competition.
+Held against the chapter test (here: cartel), the familiar vocabulary may sound economic, but the operative restriction or reason fails — so the sentence mislabels the situation.
 
-This tests discrimination within competition, market structures, and price-taking versus price-making: local versus international scope, equity versus debt, product versus market orientation, and similar pairs.
+Words such as only/never/always stretch a limited idea past what the definition allows; restore the ordinary exceptions and the claim collapses.
 
-Applied carefully, three national carriers fit oligopoly with interdependent decisions. Nothing in the sentence stretches the concept beyond its standard use.
+The statement is false.
+'] WHERE case_id = 'CASE 2.7.19' AND tier = 'full';
+UPDATE public.economics_cases SET tactical_explanations = ARRAY['TRUE — Identify market structure — perfect competition, monopoly-like conditions, oligopoly, or cartel conduct — from number of sellers, entry, and interdependence.
 
-The reasoning chain is complete, so mark the statement true.', 'TRUE — The claim is correct. Many wheat farmers selling a standard grade at auction approximate near-perfect competition in that commodity market.
+Walk the definition onto the stem’s actors and constraints, then confirm the sentence’s category and reason both survive that check. Focus points: firm.
 
-This statement draws on competition, market structures, and price-taking versus price-making. Treat it as a checklist against the core concept named in the stem, not as a general opinion about business.
+Map that definition onto the case where small firms in commodity markets that accept the prevailing market price. The claim’s actors and constraints (here: firm) line up with the concept: the sentence describes the same mechanism the chapter teaches, not a neighbouring idea with similar vocabulary.
 
-In this setting, commodity auction with many farmers fits near-perfect competition. The wording matches the textbook relationship without adding extra conditions.
+Under that classification the claim describes the situation correctly rather than a lookalike category.
 
-Every part of the claim aligns with the standard concept, so the statement stands.', 'TRUE — The claim is correct. One firm with exclusive piped-water rights in a town represents monopoly-like local market structure.
+The statement is true.
+', 'TRUE — Identify market structure — perfect competition, monopoly-like conditions, oligopoly, or cartel conduct — from number of sellers, entry, and interdependence.
 
-This statement draws on competition, market structures, and price-taking versus price-making. Treat it as a checklist against the core concept named in the stem, not as a general opinion about business.
+Walk the definition onto the stem’s actors and constraints, then confirm the sentence’s category and reason both survive that check.
 
-In this setting, exclusive utility supply fits monopoly-like local structure. The wording matches the textbook relationship without adding extra conditions.
+Map that definition onto the case where small firms in commodity markets that accept the prevailing market price. The claim’s actors and constraints line up with the concept: the sentence describes the same mechanism the chapter teaches, not a neighbouring idea with similar vocabulary.
 
-No qualifying word breaks the definition or scenario, so the answer is true.', 'FALSE — Evaluated against the textbook standard, this assertion is false. Secret wholesale meetings are lawful cartels when participants bring identical notebooks.
+Nothing in the stem contradicts that reading, so the assertion stands as a correct application of the definition.
 
-Here you must apply ideas from competition, market structures, and price-taking versus price-making to a concrete situation rather than recite a definition from memory. Ownership, customer type, stakeholder group, or country of production usually decides the verdict.
+The statement is true.
+', 'TRUE — Entry barriers and product differentiation shape market structure. Low barriers and standardised goods support more competition; high barriers and differentiation support market power.
 
-The statement overreaches because secret coordinated fixing remains illegal cartel conduct regardless of notebook similarity. The trap is to agree with the topic while missing the one detail that breaks the logic.
+Walk the definition onto the stem’s actors and constraints, then confirm the sentence’s category and reason both survive that check.
 
-The statement sounds plausible but fails on precision, so it is false.', 'FALSE — This statement is false. Similar packaging proves thousands of price-taking cereal producers operate in every aisle.
+Map that definition onto the case where small firms in commodity markets that accept the prevailing market price. The claim’s actors and constraints line up with the concept: the sentence describes the same mechanism the chapter teaches, not a neighbouring idea with similar vocabulary.
 
-The topic is competition, market structures, and price-taking versus price-making, but the decisive skill here is reading quantifiers. Words such as never, always, only, or all turn a generally true idea into a claim that can be rejected by one routine counterexample.
+Nothing in the stem contradicts that reading, so the assertion stands as a correct application of the definition.
 
-The statement overreaches because similar box appearance does not create many price-taking producers when few brands dominate. The trap is to agree with the topic while missing the one detail that breaks the logic.
+The statement is true.
+', 'FALSE — Identify market structure — perfect competition, monopoly-like conditions, oligopoly, or cartel conduct — from number of sellers, entry, and interdependence.
 
-Watch the absolute wording "every": exam statements often sound plausible until a single scope word turns an otherwise familiar idea into an overclaim.
+Homogeneous products mean one seller charging above market price loses customers — not free choice of any price.
 
-The statement sounds plausible but fails on precision, so it is false.'] WHERE case_id = 'CASE 2.7.25' AND tier = 'full';
+Map that definition onto the case where small firms in commodity markets that accept the prevailing market price. Even if the stem mentions related details, those details do not carry the claim’s conclusion — the sentence either widens the concept past its test or attaches the wrong label to the facts.
+
+The mismatch is in the defining feature, not in a missing buzzword; fix the feature and the claim disappears.
+
+The statement is false.
+', 'FALSE — Perfect competition assumes many buyers and sellers, a standardised product, free entry, and good information. Each firm is a price taker too small to move the market price by itself.
+
+Price takers take the posted market price; they do not each negotiate bespoke prices above it.
+
+Map that definition onto the case where small firms in commodity markets that accept the prevailing market price. Even if the stem mentions related details, those details do not carry the claim’s conclusion — the sentence either widens the concept past its test or attaches the wrong label to the facts.
+
+Restore the textbook test and the assertion falls away: it mislabels the category or reverses the comparison the chapter actually teaches.
+
+The statement is false.
+'] WHERE case_id = 'CASE 2.7.20' AND tier = 'full';
+UPDATE public.economics_cases SET tactical_explanations = ARRAY['TRUE — Natural-monopoly conditions arise when one network serves demand at lower cost than many duplicates, often because of high sunk infrastructure costs. Regulators may then cap tariffs or set service rules.
+
+Count sellers, check entry, and ask whether rivals’ strategies matter. Few interdependent firms point to oligopoly; collusion to raise joint prices is cartel conduct; one dominant seller is monopoly-like; many price-taking sellers fit perfect competition. Focus points: service, monopoly.
+
+Held against the chapter test (here: service, monopoly), each operative word earns its place: the category, the comparison, and the mechanism survive when checked one by one.
+
+Under that classification the claim describes the situation correctly rather than a lookalike category.
+
+The statement is true.
+', 'TRUE — Natural-monopoly conditions arise when one network serves demand at lower cost than many duplicates, often because of high sunk infrastructure costs. Regulators may then cap tariffs or set service rules.
+
+Count sellers, check entry, and ask whether rivals’ strategies matter. Few interdependent firms point to oligopoly; collusion to raise joint prices is cartel conduct; one dominant seller is monopoly-like; many price-taking sellers fit perfect competition. Focus points: broadband, monopoly.
+
+Held against the chapter test (here: broadband, monopoly), each operative word earns its place: the category, the comparison, and the mechanism survive when checked one by one.
+
+Nothing in the stem contradicts that reading, so the assertion stands as a correct application of the definition.
+
+The statement is true.
+', 'TRUE — Natural-monopoly conditions arise when one network serves demand at lower cost than many duplicates, often because of high sunk infrastructure costs. Regulators may then cap tariffs or set service rules.
+
+Count sellers, check entry, and ask whether rivals’ strategies matter. Few interdependent firms point to oligopoly; collusion to raise joint prices is cartel conduct; one dominant seller is monopoly-like; many price-taking sellers fit perfect competition. Focus points: monopoly, broadband.
+
+Held against the chapter test (here: monopoly, broadband), each operative word earns its place: the category, the comparison, and the mechanism survive when checked one by one.
+
+Nothing in the stem contradicts that reading, so the assertion stands as a correct application of the definition.
+
+The statement is true.
+', 'TRUE — Natural-monopoly conditions arise when one network serves demand at lower cost than many duplicates, often because of high sunk infrastructure costs. Regulators may then cap tariffs or set service rules.
+
+Walk the definition onto the stem’s actors and constraints, then confirm the sentence’s category and reason both survive that check.
+
+Held against the chapter test, each operative word earns its place: the category, the comparison, and the mechanism survive when checked one by one.
+
+The sentence therefore reports the concept accurately for this item once the definition is held fixed.
+
+The statement is true.
+', 'TRUE — Natural-monopoly conditions arise when one network serves demand at lower cost than many duplicates, often because of high sunk infrastructure costs. Regulators may then cap tariffs or set service rules.
+
+High sunk cost of duplicate cables discourages a second network — natural monopoly-like conditions.
+
+Held against the chapter test (here: monopoly), each operative word earns its place: the category, the comparison, and the mechanism survive when checked one by one.
+
+Under that classification the claim describes the situation correctly rather than a lookalike category.
+
+The statement is true.
+'] WHERE case_id = 'CASE 2.7.21' AND tier = 'full';
+UPDATE public.economics_cases SET tactical_explanations = ARRAY['TRUE — Identify market structure — perfect competition, monopoly-like conditions, oligopoly, or cartel conduct — from number of sellers, entry, and interdependence.
+
+Walk the definition onto the stem’s actors and constraints, then confirm the sentence’s category and reason both survive that check.
+
+Held against the chapter test, each operative word earns its place: the category, the comparison, and the mechanism survive when checked one by one.
+
+The sentence therefore reports the concept accurately for this item once the definition is held fixed.
+
+The statement is true.
+', 'TRUE — Oligopoly is competition among a few sellers whose strategies are interdependent: each firm watches rivals’ prices, capacities, and promotions.
+
+Count sellers, check entry, and ask whether rivals’ strategies matter. Few interdependent firms point to oligopoly; collusion to raise joint prices is cartel conduct; one dominant seller is monopoly-like; many price-taking sellers fit perfect competition. Focus points: oligopoly.
+
+Held against the chapter test (here: oligopoly), each operative word earns its place: the category, the comparison, and the mechanism survive when checked one by one.
+
+The sentence therefore reports the concept accurately for this item once the definition is held fixed.
+
+The statement is true.
+', 'TRUE — Identify market structure — perfect competition, monopoly-like conditions, oligopoly, or cartel conduct — from number of sellers, entry, and interdependence.
+
+Walk the definition onto the stem’s actors and constraints, then confirm the sentence’s category and reason both survive that check.
+
+Held against the chapter test, each operative word earns its place: the category, the comparison, and the mechanism survive when checked one by one.
+
+The sentence therefore reports the concept accurately for this item once the definition is held fixed.
+
+The statement is true.
+', 'TRUE — Identify market structure — perfect competition, monopoly-like conditions, oligopoly, or cartel conduct — from number of sellers, entry, and interdependence.
+
+Walk the definition onto the stem’s actors and constraints, then confirm the sentence’s category and reason both survive that check.
+
+Held against the chapter test, each operative word earns its place: the category, the comparison, and the mechanism survive when checked one by one.
+
+Under that classification the claim describes the situation correctly rather than a lookalike category.
+
+The statement is true.
+', 'FALSE — Oligopoly is competition among a few sellers whose strategies are interdependent: each firm watches rivals’ prices, capacities, and promotions.
+
+Independent rural stations selling the same grade nationally are not oligopoly merely from shared grade.
+
+Held against the chapter test (here: oligopoly), the familiar vocabulary may sound economic, but the operative restriction or reason fails — so the sentence mislabels the situation.
+
+Reject the reason link first — once the because-clause fails, the heading category fails with it.
+
+The statement is false.
+'] WHERE case_id = 'CASE 2.7.22' AND tier = 'full';
+UPDATE public.economics_cases SET tactical_explanations = ARRAY['TRUE — A cartel is collusion among sellers to restrict output and raise joint prices — usually illegal. Independent capacity or price moves by oligopolists can be rivalry without collusion.
+
+Research JVs sharing technology may be lawful if they do not collusively fix product prices.
+
+Map that definition onto the case where competition authorities distinguishing illegal price fixing from lawful research joint ventures. The claim’s actors and constraints line up with the concept: the sentence describes the same mechanism the chapter teaches, not a neighbouring idea with similar vocabulary.
+
+Under that classification the claim describes the situation correctly rather than a lookalike category.
+
+The statement is true.
+', 'TRUE — A cartel is collusion among sellers to restrict output and raise joint prices — usually illegal. Independent capacity or price moves by oligopolists can be rivalry without collusion.
+
+Oligopoly becomes cartel when coordination replaces independent rivalry on price or output.
+
+Map that definition onto the case where competition authorities distinguishing illegal price fixing from lawful research joint ventures. The claim’s actors and constraints (here: Oligopoly, cartel) line up with the concept: the sentence describes the same mechanism the chapter teaches, not a neighbouring idea with similar vocabulary.
+
+The sentence therefore reports the concept accurately for this item once the definition is held fixed.
+
+The statement is true.
+', 'FALSE — Identify market structure — perfect competition, monopoly-like conditions, oligopoly, or cartel conduct — from number of sellers, entry, and interdependence.
+
+Walk the definition onto the stem’s actors and constraints, then spot where the sentence’s category or absolute reason breaks that check.
+
+Map that definition onto the case where competition authorities distinguishing illegal price fixing from lawful research joint ventures. Even if the stem mentions related details, those details do not carry the claim’s conclusion — the sentence either widens the concept past its test or attaches the wrong label to the facts.
+
+Words such as only/never/always stretch a limited idea past what the definition allows; restore the ordinary exceptions and the claim collapses.
+
+The statement is false.
+', 'FALSE — Identify market structure — perfect competition, monopoly-like conditions, oligopoly, or cartel conduct — from number of sellers, entry, and interdependence.
+
+Walk the definition onto the stem’s actors and constraints, then spot where the sentence’s category or absolute reason breaks that check.
+
+Map that definition onto the case where competition authorities distinguishing illegal price fixing from lawful research joint ventures. Even if the stem mentions related details, those details do not carry the claim’s conclusion — the sentence either widens the concept past its test or attaches the wrong label to the facts.
+
+The mismatch is in the defining feature, not in a missing buzzword; fix the feature and the claim disappears.
+
+The statement is false.
+', 'FALSE — A cartel is collusion among sellers to restrict output and raise joint prices — usually illegal. Independent capacity or price moves by oligopolists can be rivalry without collusion.
+
+Some cooperation (R&D JVs) can be lawful; not all cooperation is automatically an illegal cartel.
+
+Map that definition onto the case where competition authorities distinguishing illegal price fixing from lawful research joint ventures. Even if the stem mentions related details (here: cartel), those details do not carry the claim’s conclusion — the sentence either widens the concept past its test or attaches the wrong label to the facts.
+
+Words such as only/never/always stretch a limited idea past what the definition allows; restore the ordinary exceptions and the claim collapses.
+
+The statement is false.
+'] WHERE case_id = 'CASE 2.7.23' AND tier = 'full';
+UPDATE public.economics_cases SET tactical_explanations = ARRAY['TRUE — Perfect competition assumes many buyers and sellers, a standardised product, free entry, and good information. Each firm is a price taker too small to move the market price by itself.
+
+Fifty vendors selling standardised eggs at a common price approximate perfect competition.
+
+Held against the chapter test, each operative word earns its place: the category, the comparison, and the mechanism survive when checked one by one.
+
+The sentence therefore reports the concept accurately for this item once the definition is held fixed.
+
+The statement is true.
+', 'TRUE — Identify market structure — perfect competition, monopoly-like conditions, oligopoly, or cartel conduct — from number of sellers, entry, and interdependence.
+
+Walk the definition onto the stem’s actors and constraints, then confirm the sentence’s category and reason both survive that check.
+
+Held against the chapter test, each operative word earns its place: the category, the comparison, and the mechanism survive when checked one by one.
+
+The sentence therefore reports the concept accurately for this item once the definition is held fixed.
+
+The statement is true.
+', 'TRUE — Monopoly or monopoly-like power means one seller dominates a relevant market — through exclusivity, isolation, or cost conditions — and may face price or service regulation.
+
+Count sellers, check entry, and ask whether rivals’ strategies matter. Few interdependent firms point to oligopoly; collusion to raise joint prices is cartel conduct; one dominant seller is monopoly-like; many price-taking sellers fit perfect competition. Focus points: monopoly.
+
+Held against the chapter test (here: monopoly), each operative word earns its place: the category, the comparison, and the mechanism survive when checked one by one.
+
+Under that classification the claim describes the situation correctly rather than a lookalike category.
+
+The statement is true.
+', 'FALSE — Identify market structure — perfect competition, monopoly-like conditions, oligopoly, or cartel conduct — from number of sellers, entry, and interdependence.
+
+Vendors are price takers at the market price; they do not each set the city-wide price independently beforehand.
+
+Held against the chapter test, the familiar vocabulary may sound economic, but the operative restriction or reason fails — so the sentence mislabels the situation.
+
+Swap in the correct criterion and the sentence no longer describes the case — that is enough to mark it false.
+
+The statement is false.
+', 'FALSE — Oligopoly is competition among a few sellers whose strategies are interdependent: each firm watches rivals’ prices, capacities, and promotions.
+
+Structure does not follow from a single surface trait (homogeneous product, physical extraction, or one network layer). Wrong seller count, wrong entry story, or treating rivalry as collusion is enough to reject the claim. Focus points: oligopoly.
+
+Held against the chapter test (here: oligopoly), the familiar vocabulary may sound economic, but the operative restriction or reason fails — so the sentence mislabels the situation.
+
+Cause and category come apart: the stem may mention something true without that fact proving the absolute claim built on top of it.
+
+The statement is false.
+'] WHERE case_id = 'CASE 2.7.24' AND tier = 'full';
+UPDATE public.economics_cases SET tactical_explanations = ARRAY['TRUE — Oligopoly is competition among a few sellers whose strategies are interdependent: each firm watches rivals’ prices, capacities, and promotions.
+
+Count sellers, check entry, and ask whether rivals’ strategies matter. Few interdependent firms point to oligopoly; collusion to raise joint prices is cartel conduct; one dominant seller is monopoly-like; many price-taking sellers fit perfect competition. Focus points: oligopoly.
+
+Held against the chapter test (here: oligopoly), each operative word earns its place: the category, the comparison, and the mechanism survive when checked one by one.
+
+Under that classification the claim describes the situation correctly rather than a lookalike category.
+
+The statement is true.
+', 'TRUE — Perfect competition assumes many buyers and sellers, a standardised product, free entry, and good information. Each firm is a price taker too small to move the market price by itself.
+
+Count sellers, check entry, and ask whether rivals’ strategies matter. Few interdependent firms point to oligopoly; collusion to raise joint prices is cartel conduct; one dominant seller is monopoly-like; many price-taking sellers fit perfect competition.
+
+Held against the chapter test, each operative word earns its place: the category, the comparison, and the mechanism survive when checked one by one.
+
+Under that classification the claim describes the situation correctly rather than a lookalike category.
+
+The statement is true.
+', 'TRUE — Monopoly or monopoly-like power means one seller dominates a relevant market — through exclusivity, isolation, or cost conditions — and may face price or service regulation.
+
+Count sellers, check entry, and ask whether rivals’ strategies matter. Few interdependent firms point to oligopoly; collusion to raise joint prices is cartel conduct; one dominant seller is monopoly-like; many price-taking sellers fit perfect competition. Focus points: firm, monopoly.
+
+Held against the chapter test (here: firm, monopoly), each operative word earns its place: the category, the comparison, and the mechanism survive when checked one by one.
+
+Under that classification the claim describes the situation correctly rather than a lookalike category.
+
+The statement is true.
+', 'FALSE — A cartel is collusion among sellers to restrict output and raise joint prices — usually illegal. Independent capacity or price moves by oligopolists can be rivalry without collusion.
+
+Secret wholesale meetings to fix prices are illegal cartels — identical notebooks do not legalise them.
+
+Held against the chapter test, the familiar vocabulary may sound economic, but the operative restriction or reason fails — so the sentence mislabels the situation.
+
+Restore the textbook test and the assertion falls away: it mislabels the category or reverses the comparison the chapter actually teaches.
+
+The statement is false.
+', 'FALSE — Identify market structure — perfect competition, monopoly-like conditions, oligopoly, or cartel conduct — from number of sellers, entry, and interdependence.
+
+Similar packaging does not prove thousands of price-taking cereal producers in every aisle; concentration is common.
+
+Held against the chapter test, the familiar vocabulary may sound economic, but the operative restriction or reason fails — so the sentence mislabels the situation.
+
+The absolute quantifier is doing the damage. Soften it to the chapter’s actual scope and the remaining content no longer supports a false blanket rule.
+
+The statement is false.
+'] WHERE case_id = 'CASE 2.7.25' AND tier = 'full';

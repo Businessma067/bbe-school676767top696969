@@ -1,786 +1,913 @@
 -- Update expanded explanations for 3.2-part2 (25 cases).
 -- Safe to re-run: only updates tactical_explanations.
 
-UPDATE public.economics_cases SET tactical_explanations = ARRAY['TRUE — The claim is correct. GDP is often correlated with indicators such as health status and happiness.
+UPDATE public.economics_cases SET tactical_explanations = ARRAY['TRUE — GDP measures the monetary value of final goods and services produced within national borders. Rebuild spending can raise measured GDP even when wellbeing falls; GDP is not a welfare index.
 
-This statement draws on primary, secondary, and tertiary business activity. Treat it as a checklist against the core concept named in the stem, not as a general opinion about business.
+Wealthier economies often report better health and happiness indicators on average.
 
-In this setting, wealthier economies often report better health and happiness indicators on average. The wording matches the textbook relationship without adding extra conditions.
+Nothing in the keyed reading contradicts the chapter framing used here, so the claim holds.
 
-The reasoning chain is complete, so mark the statement true.', 'TRUE — Evaluated against the textbook standard, this assertion is correct. Higher GDP frequently aligns with better health and happiness scores.
+The statement is true.
+', 'TRUE — GDP measures the monetary value of final goods and services produced within national borders. Rebuild spending can raise measured GDP even when wellbeing falls; GDP is not a welfare index.
 
-The relevant theory comes from primary, secondary, and tertiary business activity. Identify which definition or relationship the sentence is trying to test before deciding true or false.
+Rising gdp per capita commonly tracks improved wellbeing metrics in cross-country data.
 
-Applied carefully, rising gdp per capita commonly tracks improved wellbeing metrics in cross-country data. Nothing in the sentence stretches the concept beyond its standard use.
+Nothing in the keyed reading contradicts the chapter framing used here, so the claim holds.
 
-The reasoning chain is complete, so mark the statement true.', 'TRUE — Evaluated against the textbook standard, this assertion is correct. GDP critics still note correlation with some wellbeing measures.
+The statement is true.
+', 'TRUE — GDP measures the monetary value of final goods and services produced within national borders. Rebuild spending can raise measured GDP even when wellbeing falls; GDP is not a welfare index.
 
-The relevant theory comes from primary, secondary, and tertiary business activity. Identify which definition or relationship the sentence is trying to test before deciding true or false.
+The text acknowledges correlation despite gdp limits.
 
-Applied carefully, the text acknowledges correlation despite gdp limits. Nothing in the sentence stretches the concept beyond its standard use.
+Under that classification the assertion describes the situation correctly.
 
-No qualifying word breaks the definition or scenario, so the answer is true.', 'FALSE — The claim is false. Correlation implies GDP captures every aspect of wellbeing perfectly.
+The statement is true.
+', 'FALSE — GDP measures the monetary value of final goods and services produced within national borders. Rebuild spending can raise measured GDP even when wellbeing falls; GDP is not a welfare index.
 
-Although the subject matter is primary, secondary, and tertiary business activity, this is really a logic check on overstatement. Non-profit surpluses, mixed economies, and partial market failure are classic cases where absolute wording fails.
+Correlation does not mean gdp fully measures welfare.
 
-Applied to this claim, correlation does not mean gdp fully measures welfare. That is why the sentence does not survive careful reading.
+Swap in the textbook criterion and the sentence no longer describes the case.
 
-Watch the absolute wording "every": exam statements often sound plausible until a single scope word turns an otherwise familiar idea into an overclaim.
+The statement is false.
+', 'FALSE — GDP measures the monetary value of final goods and services produced within national borders. Rebuild spending can raise measured GDP even when wellbeing falls; GDP is not a welfare index.
 
-Because the decisive detail is wrong, mark the statement false.', 'FALSE — Evaluated against the textbook standard, this assertion is false. Cross-country data show no link between GDP and health outcomes.
+Gdp is usually correlated with wellbeing indicators.
 
-The relevant theory comes from primary, secondary, and tertiary business activity. Identify which definition or relationship the sentence is trying to test before deciding true or false.
+The mislabelled category or reversed comparison is enough to reject the claim.
 
-The statement overreaches because gdp is usually correlated with wellbeing indicators. The trap is to agree with the topic while missing the one detail that breaks the logic.
+The statement is false.
+'] WHERE case_id = 'CASE 3.2.26' AND tier = 'full';
+UPDATE public.economics_cases SET tactical_explanations = ARRAY['TRUE — Primary-sector activity extracts raw materials from nature: farming, fishing, mining, and forestry — not manufacturing and not services. Secondary-sector activity processes and manufactures: smelting, assembling, milling, and similar transformation of materials into goods.
 
-Because the decisive detail is wrong, mark the statement false.'] WHERE case_id = 'CASE 3.2.26' AND tier = 'full';
-UPDATE public.economics_cases SET tactical_explanations = ARRAY['TRUE — On the Fuhrmann definition used in the entrance exam, the sentence is correct. The link illustrates primary output feeding secondary production.
+Primary extraction commonly supplies secondary manufacturers.
 
-This statement draws on primary, secondary, and tertiary business activity. Treat it as a checklist against the core concept named in the stem, not as a general opinion about business.
+The scenario (a forestry concession supplies logs to a furniture plant finishing dining tables) supports that classification.
 
-In this setting, primary extraction commonly supplies secondary manufacturers. The wording matches the textbook relationship without adding extra conditions.
+Nothing in the keyed reading contradicts the chapter framing used here, so the claim holds.
 
-Every part of the claim aligns with the standard concept, so the statement stands.', 'FALSE — This statement is false. Finishing tables for dining rooms is tertiary because buyers are households.
+The statement is true.
+', 'FALSE — Tertiary-sector activity provides services — banking, insurance, coaching, retail, tourism services — rather than extracting materials or manufacturing goods.
 
-Here you must apply ideas from primary, secondary, and tertiary business activity to a concrete situation rather than recite a definition from memory. Ownership, customer type, stakeholder group, or country of production usually decides the verdict.
+Household buyers do not shift furniture making from secondary to tertiary.
 
-The statement overreaches because household buyers do not shift furniture making from secondary to tertiary. The trap is to agree with the topic while missing the one detail that breaks the logic.
+In the case setting — a forestry concession supplies logs to a furniture plant finishing dining tables — the sentence mislabels the category or overreaches.
 
-The statement sounds plausible but fails on precision, so it is false.', 'FALSE — On the Fuhrmann definition used in the entrance exam, the sentence is false. Furniture finishing is tertiary because it serves home customers.
+Swap in the textbook criterion and the sentence no longer describes the case.
 
-The scenario is a worked example of primary, secondary, and tertiary business activity. Translate the story into the textbook category first; only then judge whether the sentence describes that category accurately.
+The statement is false.
+', 'FALSE — Tertiary-sector activity provides services — banking, insurance, coaching, retail, tourism services — rather than extracting materials or manufacturing goods.
 
-Applied to this claim, table finishing at a plant is manufacturing, not a service to consumers. That is why the sentence does not survive careful reading.
+Table finishing at a plant is manufacturing, not a service to consumers.
 
-Once the overclaim or mislabel is exposed, the only consistent answer is false.', 'FALSE — On the Fuhrmann definition used in the entrance exam, the sentence is false. Both stages are secondary because furniture is sold to households.
+In the case setting — a forestry concession supplies logs to a furniture plant finishing dining tables — the sentence mislabels the category or overreaches.
 
-The scenario is a worked example of primary, secondary, and tertiary business activity. Translate the story into the textbook category first; only then judge whether the sentence describes that category accurately.
+The mislabelled category or reversed comparison is enough to reject the claim.
 
-Applied to this claim, logging is primary resource use; furniture making is a separate secondary stage. That is why the sentence does not survive careful reading.
+The statement is false.
+', 'FALSE — Secondary-sector activity processes and manufactures: smelting, assembling, milling, and similar transformation of materials into goods.
 
-Once the overclaim or mislabel is exposed, the only consistent answer is false.', 'FALSE — Evaluated against the textbook standard, this assertion is false. Logging and furniture making are both secondary because output is sold retail.
+Logging is primary resource use; furniture making is a separate secondary stage.
 
-Here you must apply ideas from primary, secondary, and tertiary business activity to a concrete situation rather than recite a definition from memory. Ownership, customer type, stakeholder group, or country of production usually decides the verdict.
+Against the scenario (a forestry concession supplies logs to a furniture plant finishing dining tables), the claim attaches the wrong label.
 
-The statement overreaches because retail sale of furniture does not reclassify logging as secondary activity. The trap is to agree with the topic while missing the one detail that breaks the logic.
+The mislabelled category or reversed comparison is enough to reject the claim.
 
-The statement sounds plausible but fails on precision, so it is false.'] WHERE case_id = 'CASE 3.2.27' AND tier = 'full';
-UPDATE public.economics_cases SET tactical_explanations = ARRAY['TRUE — This statement is correct. Client technical advice alongside fabrication does not remove secondary classification.
+The statement is false.
+', 'FALSE — Secondary-sector activity processes and manufactures: smelting, assembling, milling, and similar transformation of materials into goods. Tertiary-sector activity provides services — banking, insurance, coaching, retail, tourism services — rather than extracting materials or manufacturing goods.
 
-The relevant theory comes from primary, secondary, and tertiary business activity. Identify which definition or relationship the sentence is trying to test before deciding true or false.
+Retail sale of furniture does not reclassify logging as secondary activity.
 
-Applied carefully, fabricating goods remains secondary even if advice accompanies sales. Nothing in the sentence stretches the concept beyond its standard use.
+In the case setting — a forestry concession supplies logs to a furniture plant finishing dining tables — the sentence mislabels the category or overreaches.
 
-Every part of the claim aligns with the standard concept, so the statement stands.', 'TRUE — The claim is correct. Manufactured components are secondary-sector output regardless of input origins.
+Swap in the textbook criterion and the sentence no longer describes the case.
 
-This statement draws on primary, secondary, and tertiary business activity. Treat it as a checklist against the core concept named in the stem, not as a general opinion about business.
+The statement is false.
+'] WHERE case_id = 'CASE 3.2.27' AND tier = 'full';
+UPDATE public.economics_cases SET tactical_explanations = ARRAY['TRUE — Secondary-sector activity processes and manufactures: smelting, assembling, milling, and similar transformation of materials into goods.
 
-In this setting, manufactured components are secondary-sector output. The wording matches the textbook relationship without adding extra conditions.
+Fabricating goods remains secondary even if advice accompanies sales.
 
-The reasoning chain is complete, so mark the statement true.', 'TRUE — The claim is correct. Selling components to smartphone makers keeps fabrication in secondary manufacturing.
+Under that classification the assertion describes the situation correctly.
 
-This statement draws on primary, secondary, and tertiary business activity. Treat it as a checklist against the core concept named in the stem, not as a general opinion about business.
+The statement is true.
+', 'TRUE — Secondary-sector activity processes and manufactures: smelting, assembling, milling, and similar transformation of materials into goods.
 
-In this setting, manufacturing for business customers remains secondary activity. The wording matches the textbook relationship without adding extra conditions.
+Manufactured components are secondary-sector output.
 
-Every part of the claim aligns with the standard concept, so the statement stands.', 'TRUE — On the Fuhrmann definition used in the entrance exam, the sentence is correct. Transforming raw materials into finished components is secondary manufacturing.
+Nothing in the keyed reading contradicts the chapter framing used here, so the claim holds.
 
-This statement draws on primary, secondary, and tertiary business activity. Treat it as a checklist against the core concept named in the stem, not as a general opinion about business.
+The statement is true.
+', 'TRUE — Secondary-sector activity processes and manufactures: smelting, assembling, milling, and similar transformation of materials into goods.
 
-In this setting, manufacturing components from materials is secondary activity. The wording matches the textbook relationship without adding extra conditions.
+Manufacturing for business customers remains secondary activity.
 
-No qualifying word breaks the definition or scenario, so the answer is true.', 'FALSE — Evaluated against the textbook standard, this assertion is false. The manufacturer is tertiary because it sells to smartphone makers, not final consumers.
+The sentence therefore reports the concept accurately for this item.
 
-Here you must apply ideas from primary, secondary, and tertiary business activity to a concrete situation rather than recite a definition from memory. Ownership, customer type, stakeholder group, or country of production usually decides the verdict.
+The statement is true.
+', 'TRUE — Secondary-sector activity processes and manufactures: smelting, assembling, milling, and similar transformation of materials into goods.
 
-The statement overreaches because selling to firms does not reclassify manufacturing as services. The trap is to agree with the topic while missing the one detail that breaks the logic.
+Manufacturing components from materials is secondary activity.
 
-The statement sounds plausible but fails on precision, so it is false.'] WHERE case_id = 'CASE 3.2.28' AND tier = 'full';
-UPDATE public.economics_cases SET tactical_explanations = ARRAY['TRUE — This statement is correct. Retail distribution of finished goods belongs to the tertiary sector.
+Nothing in the keyed reading contradicts the chapter framing used here, so the claim holds.
 
-The relevant theory comes from primary, secondary, and tertiary business activity. Identify which definition or relationship the sentence is trying to test before deciding true or false.
+The statement is true.
+', 'FALSE — Secondary-sector activity processes and manufactures: smelting, assembling, milling, and similar transformation of materials into goods. Tertiary-sector activity provides services — banking, insurance, coaching, retail, tourism services — rather than extracting materials or manufacturing goods.
 
-Applied carefully, distribution is a service activity within the tertiary sector. Nothing in the sentence stretches the concept beyond its standard use.
+Selling to firms does not reclassify manufacturing as services.
 
-No qualifying word breaks the definition or scenario, so the answer is true.', 'TRUE — This statement is correct. A software helpdesk is tertiary even when supporting manufactured devices.
+Once the defining feature is restored, the assertion falls away.
 
-Here you must apply ideas from primary, secondary, and tertiary business activity to a concrete situation rather than recite a definition from memory. Ownership, customer type, stakeholder group, or country of production usually decides the verdict.
+The statement is false.
+'] WHERE case_id = 'CASE 3.2.28' AND tier = 'full';
+UPDATE public.economics_cases SET tactical_explanations = ARRAY['TRUE — Tertiary-sector activity provides services — banking, insurance, coaching, retail, tourism services — rather than extracting materials or manufacturing goods.
 
-Applied carefully, technical support is a tertiary service. Nothing in the sentence stretches the concept beyond its standard use.
+Distribution is a service activity within the tertiary sector.
 
-The reasoning chain is complete, so mark the statement true.', 'FALSE — The claim is false. Manufacturing and after-sales service mean the entire firm is tertiary.
+Nothing in the keyed reading contradicts the chapter framing used here, so the claim holds.
 
-This statement draws on primary, secondary, and tertiary business activity. Treat it as a checklist against the core concept named in the stem, not as a general opinion about business.
+The statement is true.
+', 'TRUE — Secondary-sector activity processes and manufactures: smelting, assembling, milling, and similar transformation of materials into goods. Tertiary-sector activity provides services — banking, insurance, coaching, retail, tourism services — rather than extracting materials or manufacturing goods.
 
-Applied to this claim, a firm may run secondary production and tertiary services simultaneously. That is why the sentence does not survive careful reading.
+Technical support is a tertiary service.
 
-The statement sounds plausible but fails on precision, so it is false.', 'FALSE — Evaluated against the textbook standard, this assertion is false. Printing books and bookstore distribution are both secondary.
+Under that classification the assertion describes the situation correctly.
 
-The relevant theory comes from primary, secondary, and tertiary business activity. Identify which definition or relationship the sentence is trying to test before deciding true or false.
+The statement is true.
+', 'FALSE — Secondary-sector activity processes and manufactures: smelting, assembling, milling, and similar transformation of materials into goods. Tertiary-sector activity provides services — banking, insurance, coaching, retail, tourism services — rather than extracting materials or manufacturing goods.
 
-The statement overreaches because manufacturing and distribution occupy different sectors. The trap is to agree with the topic while missing the one detail that breaks the logic.
+A firm may run secondary production and tertiary services simultaneously.
 
-Because the decisive detail is wrong, mark the statement false.', 'FALSE — The claim is false. After-sales repair makes the entire firm tertiary only.
+Once the defining feature is restored, the assertion falls away.
 
-This statement draws on primary, secondary, and tertiary business activity. Treat it as a checklist against the core concept named in the stem, not as a general opinion about business.
+The statement is false.
+', 'FALSE — Secondary-sector activity processes and manufactures: smelting, assembling, milling, and similar transformation of materials into goods.
 
-Applied to this claim, after-sales repair is tertiary but does not erase manufacturing classification. That is why the sentence does not survive careful reading.
+Manufacturing and distribution occupy different sectors.
 
-Because the decisive detail is wrong, mark the statement false.'] WHERE case_id = 'CASE 3.2.29' AND tier = 'full';
-UPDATE public.economics_cases SET tactical_explanations = ARRAY['TRUE — The claim is correct. GDP measures production within a country''s borders regardless of firm nationality.
+Swap in the textbook criterion and the sentence no longer describes the case.
 
-This statement draws on primary, secondary, and tertiary business activity. Treat it as a checklist against the core concept named in the stem, not as a general opinion about business.
+The statement is false.
+', 'FALSE — Tertiary-sector activity provides services — banking, insurance, coaching, retail, tourism services — rather than extracting materials or manufacturing goods.
 
-In this setting, national gdp counts output produced inside territorial borders. The wording matches the textbook relationship without adding extra conditions.
+After-sales repair is tertiary but does not erase manufacturing classification.
 
-Every part of the claim aligns with the standard concept, so the statement stands.', 'TRUE — Evaluated against the textbook standard, this assertion is correct. Final goods produced domestically within a year enter GDP totals.
+The absolute wording is what breaks the claim once the correct test is applied.
 
-The relevant theory comes from primary, secondary, and tertiary business activity. Identify which definition or relationship the sentence is trying to test before deciding true or false.
+The statement is false.
+'] WHERE case_id = 'CASE 3.2.29' AND tier = 'full';
+UPDATE public.economics_cases SET tactical_explanations = ARRAY['TRUE — GDP measures the monetary value of final goods and services produced within national borders. Rebuild spending can raise measured GDP even when wellbeing falls; GDP is not a welfare index.
 
-Applied carefully, domestic final production in the period is counted. Nothing in the sentence stretches the concept beyond its standard use.
+National gdp counts output produced inside territorial borders.
 
-Every part of the claim aligns with the standard concept, so the statement stands.', 'TRUE — Evaluated against the textbook standard, this assertion is correct. Output from a domestic plant of a foreign-owned firm counts in that country''s GDP.
+Under that classification the assertion describes the situation correctly.
 
-The relevant theory comes from primary, secondary, and tertiary business activity. Identify which definition or relationship the sentence is trying to test before deciding true or false.
+The statement is true.
+', 'TRUE — GDP measures the monetary value of final goods and services produced within national borders. Rebuild spending can raise measured GDP even when wellbeing falls; GDP is not a welfare index.
 
-Applied carefully, location of production determines gdp inclusion. Nothing in the sentence stretches the concept beyond its standard use.
+Domestic final production in the period is counted.
 
-The reasoning chain is complete, so mark the statement true.', 'TRUE — On the Fuhrmann definition used in the entrance exam, the sentence is correct. Foreign production by domestic firms is counted where it occurs, not in home GDP.
+The sentence therefore reports the concept accurately for this item.
 
-This statement draws on primary, secondary, and tertiary business activity. Treat it as a checklist against the core concept named in the stem, not as a general opinion about business.
+The statement is true.
+', 'TRUE — GDP measures the monetary value of final goods and services produced within national borders. Rebuild spending can raise measured GDP even when wellbeing falls; GDP is not a welfare index.
 
-In this setting, foreign production is counted where it occurs, not in home gdp. The wording matches the textbook relationship without adding extra conditions.
+Location of production determines gdp inclusion.
 
-The reasoning chain is complete, so mark the statement true.', 'TRUE — On the Fuhrmann definition used in the entrance exam, the sentence is correct. Territorial production location determines GDP inclusion.
+The sentence therefore reports the concept accurately for this item.
 
-This statement draws on primary, secondary, and tertiary business activity. Treat it as a checklist against the core concept named in the stem, not as a general opinion about business.
+The statement is true.
+', 'TRUE — GDP measures the monetary value of final goods and services produced within national borders. Rebuild spending can raise measured GDP even when wellbeing falls; GDP is not a welfare index.
 
-In this setting, geographic location of production determines which country records the output. The wording matches the textbook relationship without adding extra conditions.
+Foreign production is counted where it occurs, not in home gdp.
 
-Every part of the claim aligns with the standard concept, so the statement stands.'] WHERE case_id = 'CASE 3.2.30' AND tier = 'full';
-UPDATE public.economics_cases SET tactical_explanations = ARRAY['TRUE — Evaluated against the textbook standard, this assertion is correct. Disaster rebuild spending can lift GDP without restoring lost wellbeing.
+Under that classification the assertion describes the situation correctly.
 
-The relevant theory comes from primary, secondary, and tertiary business activity. Identify which definition or relationship the sentence is trying to test before deciding true or false.
+The statement is true.
+', 'TRUE — GDP measures the monetary value of final goods and services produced within national borders. Rebuild spending can raise measured GDP even when wellbeing falls; GDP is not a welfare index.
 
-Applied carefully, measured output can rise while welfare remains impaired. Nothing in the sentence stretches the concept beyond its standard use.
+Geographic location of production determines which country records the output.
 
-The reasoning chain is complete, so mark the statement true.', 'TRUE — The claim is correct. Quality concerns are part of why GDP use is debated.
+Nothing in the keyed reading contradicts the chapter framing used here, so the claim holds.
 
-This statement draws on primary, secondary, and tertiary business activity. Treat it as a checklist against the core concept named in the stem, not as a general opinion about business.
+The statement is true.
+'] WHERE case_id = 'CASE 3.2.30' AND tier = 'full';
+UPDATE public.economics_cases SET tactical_explanations = ARRAY['TRUE — GDP measures the monetary value of final goods and services produced within national borders. Rebuild spending can raise measured GDP even when wellbeing falls; GDP is not a welfare index.
 
-In this setting, quality and sustainability are standard gdp criticisms. The wording matches the textbook relationship without adding extra conditions.
+Measured output can rise while welfare remains impaired.
 
-Every part of the claim aligns with the standard concept, so the statement stands.', 'TRUE — Evaluated against the textbook standard, this assertion is correct. GDP totals value produced without automatically distinguishing harmful from beneficial output.
+Nothing in the keyed reading contradicts the chapter framing used here, so the claim holds.
 
-The topic is primary, secondary, and tertiary business activity, but the decisive skill here is reading quantifiers. Words such as never, always, only, or all turn a generally true idea into a claim that can be rejected by one routine counterexample.
+The statement is true.
+', 'TRUE — GDP measures the monetary value of final goods and services produced within national borders. Rebuild spending can raise measured GDP even when wellbeing falls; GDP is not a welfare index.
 
-Applied carefully, gdp totals value produced, not whether output is beneficial. Nothing in the sentence stretches the concept beyond its standard use.
+Quality and sustainability are standard gdp criticisms.
 
-No qualifying word breaks the definition or scenario, so the answer is true.', 'TRUE — On the Fuhrmann definition used in the entrance exam, the sentence is correct. GDP does not show whether growth improves environmental conditions.
+Nothing in the keyed reading contradicts the chapter framing used here, so the claim holds.
 
-This statement draws on primary, secondary, and tertiary business activity. Treat it as a checklist against the core concept named in the stem, not as a general opinion about business.
+The statement is true.
+', 'TRUE — GDP measures the monetary value of final goods and services produced within national borders. Rebuild spending can raise measured GDP even when wellbeing falls; GDP is not a welfare index.
 
-In this setting, gdp does not by itself show sustainability or quality. The wording matches the textbook relationship without adding extra conditions.
+Gdp totals value produced, not whether output is beneficial.
 
-The reasoning chain is complete, so mark the statement true.', 'FALSE — On the Fuhrmann definition used in the entrance exam, the sentence is false. Rising GDP necessarily proves growth is environmentally sustainable.
+The sentence therefore reports the concept accurately for this item.
 
-This statement draws on primary, secondary, and tertiary business activity. Treat it as a checklist against the core concept named in the stem, not as a general opinion about business.
+The statement is true.
+', 'TRUE — GDP measures the monetary value of final goods and services produced within national borders. Rebuild spending can raise measured GDP even when wellbeing falls; GDP is not a welfare index.
 
-Applied to this claim, gdp does not by itself show sustainability or quality. That is why the sentence does not survive careful reading.
+Gdp does not by itself show sustainability or quality.
 
-Because the decisive detail is wrong, mark the statement false.'] WHERE case_id = 'CASE 3.2.31' AND tier = 'full';
-UPDATE public.economics_cases SET tactical_explanations = ARRAY['TRUE — Evaluated against the textbook standard, this assertion is correct. Banking branches providing loans are tertiary financial services.
+Nothing in the keyed reading contradicts the chapter framing used here, so the claim holds.
 
-The relevant theory comes from primary, secondary, and tertiary business activity. Identify which definition or relationship the sentence is trying to test before deciding true or false.
+The statement is true.
+', 'FALSE — GDP measures the monetary value of final goods and services produced within national borders. Rebuild spending can raise measured GDP even when wellbeing falls; GDP is not a welfare index.
 
-Applied carefully, banking is classified within the tertiary sector. Nothing in the sentence stretches the concept beyond its standard use.
+Gdp does not by itself show sustainability or quality.
 
-Every part of the claim aligns with the standard concept, so the statement stands.', 'TRUE — Evaluated against the textbook standard, this assertion is correct. Money used in banking is not classified as a natural resource making banking primary.
+Once the defining feature is restored, the assertion falls away.
 
-Start from the textbook definition in primary, secondary, and tertiary business activity. A statement is true only if every scope word in the definition is respected—location, purpose, distribution rule, or time horizon.
+The statement is false.
+'] WHERE case_id = 'CASE 3.2.31' AND tier = 'full';
+UPDATE public.economics_cases SET tactical_explanations = ARRAY['TRUE — Tertiary-sector activity provides services — banking, insurance, coaching, retail, tourism services — rather than extracting materials or manufacturing goods.
 
-Applied carefully, banking is a financial service, not resource extraction. Nothing in the sentence stretches the concept beyond its standard use.
+Banking is classified within the tertiary sector.
 
-No qualifying word breaks the definition or scenario, so the answer is true.', 'FALSE — The claim is false. A national bank serving only home customers becomes secondary.
+The sentence therefore reports the concept accurately for this item.
 
-This statement draws on primary, secondary, and tertiary business activity. Treat it as a checklist against the core concept named in the stem, not as a general opinion about business.
+The statement is true.
+', 'TRUE — Primary-sector activity extracts raw materials from nature: farming, fishing, mining, and forestry — not manufacturing and not services. Tertiary-sector activity provides services — banking, insurance, coaching, retail, tourism services — rather than extracting materials or manufacturing goods.
 
-Applied to this claim, financial services stay tertiary regardless of customer location. That is why the sentence does not survive careful reading.
+Banking is a financial service, not resource extraction.
 
-Once the overclaim or mislabel is exposed, the only consistent answer is false.', 'FALSE — This statement is false. Insurance and banking both belong to the secondary sector.
+Nothing in the keyed reading contradicts the chapter framing used here, so the claim holds.
 
-The relevant theory comes from primary, secondary, and tertiary business activity. Identify which definition or relationship the sentence is trying to test before deciding true or false.
+The statement is true.
+', 'FALSE — Secondary-sector activity processes and manufactures: smelting, assembling, milling, and similar transformation of materials into goods.
 
-The statement overreaches because financial services are tertiary activity. The trap is to agree with the topic while missing the one detail that breaks the logic.
+Financial services stay tertiary regardless of customer location.
 
-Once the overclaim or mislabel is exposed, the only consistent answer is false.', 'FALSE — This statement is false. Banking is secondary because it funds manufacturing clients.
+The absolute wording is what breaks the claim once the correct test is applied.
 
-Here you must apply ideas from primary, secondary, and tertiary business activity to a concrete situation rather than recite a definition from memory. Ownership, customer type, stakeholder group, or country of production usually decides the verdict.
+The statement is false.
+', 'FALSE — Secondary-sector activity processes and manufactures: smelting, assembling, milling, and similar transformation of materials into goods. Tertiary-sector activity provides services — banking, insurance, coaching, retail, tourism services — rather than extracting materials or manufacturing goods.
 
-The statement overreaches because financing manufacturers does not turn banking into manufacturing. The trap is to agree with the topic while missing the one detail that breaks the logic.
+Financial services are tertiary activity.
 
-Because the decisive detail is wrong, mark the statement false.'] WHERE case_id = 'CASE 3.2.32' AND tier = 'full';
-UPDATE public.economics_cases SET tactical_explanations = ARRAY['TRUE — Evaluated against the textbook standard, this assertion is correct. Steel import storage and hull welding occupy different sectors.
+Once the defining feature is restored, the assertion falls away.
 
-The relevant theory comes from primary, secondary, and tertiary business activity. Identify which definition or relationship the sentence is trying to test before deciding true or false.
+The statement is false.
+', 'FALSE — Secondary-sector activity processes and manufactures: smelting, assembling, milling, and similar transformation of materials into goods. Tertiary-sector activity provides services — banking, insurance, coaching, retail, tourism services — rather than extracting materials or manufacturing goods.
 
-Applied carefully, warehousing is tertiary; welding is secondary. Nothing in the sentence stretches the concept beyond its standard use.
+Financing manufacturers does not turn banking into manufacturing.
 
-Every part of the claim aligns with the standard concept, so the statement stands.', 'TRUE — The claim is correct. Later cargo transport at sea does not reclassify shipbuilding as tertiary.
+Swap in the textbook criterion and the sentence no longer describes the case.
 
-This statement draws on primary, secondary, and tertiary business activity. Treat it as a checklist against the core concept named in the stem, not as a general opinion about business.
+The statement is false.
+'] WHERE case_id = 'CASE 3.2.32' AND tier = 'full';
+UPDATE public.economics_cases SET tactical_explanations = ARRAY['TRUE — Sector classification follows the stage of activity — extraction, manufacturing, or services — not whether the output feels basic or where the premises sit.
 
-In this setting, building ships is manufacturing, not service delivery. The wording matches the textbook relationship without adding extra conditions.
+Warehousing is tertiary; welding is secondary.
 
-The reasoning chain is complete, so mark the statement true.', 'TRUE — Evaluated against the textbook standard, this assertion is correct. Port warehousing before welding is tertiary logistics.
+The sentence therefore reports the concept accurately for this item.
 
-The relevant theory comes from primary, secondary, and tertiary business activity. Identify which definition or relationship the sentence is trying to test before deciding true or false.
+The statement is true.
+', 'TRUE — Tertiary-sector activity provides services — banking, insurance, coaching, retail, tourism services — rather than extracting materials or manufacturing goods.
 
-Applied carefully, storage before manufacturing is a tertiary service. Nothing in the sentence stretches the concept beyond its standard use.
+Building ships is manufacturing, not service delivery.
 
-Every part of the claim aligns with the standard concept, so the statement stands.', 'TRUE — Evaluated against the textbook standard, this assertion is correct. Painting finished hulls for delivery remains secondary manufacturing support.
+The sentence therefore reports the concept accurately for this item.
 
-The relevant theory comes from primary, secondary, and tertiary business activity. Identify which definition or relationship the sentence is trying to test before deciding true or false.
+The statement is true.
+', 'TRUE — Tertiary-sector activity provides services — banking, insurance, coaching, retail, tourism services — rather than extracting materials or manufacturing goods.
 
-Applied carefully, finishing manufactured vessels remains secondary activity. Nothing in the sentence stretches the concept beyond its standard use.
+Storage before manufacturing is a tertiary service.
 
-Every part of the claim aligns with the standard concept, so the statement stands.', 'TRUE — This statement is correct. Welding hull sections from steel plate is secondary manufacturing.
+Under that classification the assertion describes the situation correctly.
 
-The relevant theory comes from primary, secondary, and tertiary business activity. Identify which definition or relationship the sentence is trying to test before deciding true or false.
+The statement is true.
+', 'TRUE — Secondary-sector activity processes and manufactures: smelting, assembling, milling, and similar transformation of materials into goods.
 
-Applied carefully, building ships from materials is secondary activity. Nothing in the sentence stretches the concept beyond its standard use.
+Finishing manufactured vessels remains secondary activity.
 
-Every part of the claim aligns with the standard concept, so the statement stands.'] WHERE case_id = 'CASE 3.2.33' AND tier = 'full';
-UPDATE public.economics_cases SET tactical_explanations = ARRAY['TRUE — On the Fuhrmann definition used in the entrance exam, the sentence is correct. Advanced economies often see services dominate total output shares.
+Nothing in the keyed reading contradicts the chapter framing used here, so the claim holds.
 
-This statement draws on primary, secondary, and tertiary business activity. Treat it as a checklist against the core concept named in the stem, not as a general opinion about business.
+The statement is true.
+', 'TRUE — Secondary-sector activity processes and manufactures: smelting, assembling, milling, and similar transformation of materials into goods.
 
-In this setting, high service shares show tertiary dominance in advanced economies. The wording matches the textbook relationship without adding extra conditions.
+Building ships from materials is secondary activity.
 
-No qualifying word breaks the definition or scenario, so the answer is true.', 'FALSE — The claim is false. Tertiary share is measured separately from GDP totals.
+Nothing in the keyed reading contradicts the chapter framing used here, so the claim holds.
 
-This statement draws on primary, secondary, and tertiary business activity. Treat it as a checklist against the core concept named in the stem, not as a general opinion about business.
+The statement is true.
+'] WHERE case_id = 'CASE 3.2.33' AND tier = 'full';
+UPDATE public.economics_cases SET tactical_explanations = ARRAY['TRUE — Tertiary-sector activity provides services — banking, insurance, coaching, retail, tourism services — rather than extracting materials or manufacturing goods.
 
-Applied to this claim, sector shares are derived from gdp output breakdowns. That is why the sentence does not survive careful reading.
+High service shares show tertiary dominance in advanced economies.
 
-The statement sounds plausible but fails on precision, so it is false.', 'FALSE — The claim is false. Primary share above seventy percent typifies rich EU economies.
+The sentence therefore reports the concept accurately for this item.
 
-This statement draws on primary, secondary, and tertiary business activity. Treat it as a checklist against the core concept named in the stem, not as a general opinion about business.
+The statement is true.
+', 'FALSE — Tertiary-sector activity provides services — banking, insurance, coaching, retail, tourism services — rather than extracting materials or manufacturing goods. GDP measures the monetary value of final goods and services produced within national borders. Rebuild spending can raise measured GDP even when wellbeing falls; GDP is not a welfare index.
 
-Applied to this claim, high tertiary, not primary, shares typify advanced eu states. That is why the sentence does not survive careful reading.
+Sector shares are derived from gdp output breakdowns.
 
-Because the decisive detail is wrong, mark the statement false.', 'FALSE — This statement is false. Service share alone identifies every firm''s sector classification.
+Swap in the textbook criterion and the sentence no longer describes the case.
 
-The topic is primary, secondary, and tertiary business activity, but the decisive skill here is reading quantifiers. Words such as never, always, only, or all turn a generally true idea into a claim that can be rejected by one routine counterexample.
+The statement is false.
+', 'FALSE — Primary-sector activity extracts raw materials from nature: farming, fishing, mining, and forestry — not manufacturing and not services.
 
-The statement overreaches because aggregate shares differ from individual firm sector labels. The trap is to agree with the topic while missing the one detail that breaks the logic.
+High tertiary, not primary, shares typify advanced eu states.
 
-Watch the absolute wording "every": exam statements often sound plausible until a single scope word turns an otherwise familiar idea into an overclaim.
+Swap in the textbook criterion and the sentence no longer describes the case.
 
-Because the decisive detail is wrong, mark the statement false.', 'FALSE — The claim is false. Less developed economies typically show smaller primary shares than advanced EU states.
+The statement is false.
+', 'FALSE — Tertiary-sector activity provides services — banking, insurance, coaching, retail, tourism services — rather than extracting materials or manufacturing goods.
 
-This statement draws on primary, secondary, and tertiary business activity. Treat it as a checklist against the core concept named in the stem, not as a general opinion about business.
+Aggregate shares differ from individual firm sector labels.
 
-Applied to this claim, less developed countries depend more on primary activity. That is why the sentence does not survive careful reading.
+One clear counterexample under the right criterion is enough to reject the sentence.
 
-The statement sounds plausible but fails on precision, so it is false.'] WHERE case_id = 'CASE 3.2.34' AND tier = 'full';
-UPDATE public.economics_cases SET tactical_explanations = ARRAY['TRUE — On the Fuhrmann definition used in the entrance exam, the sentence is correct. GDP per capita is commonly used as an indicator of living standards.
+The statement is false.
+', 'FALSE — Primary-sector activity extracts raw materials from nature: farming, fishing, mining, and forestry — not manufacturing and not services.
 
-This statement draws on primary, secondary, and tertiary business activity. Treat it as a checklist against the core concept named in the stem, not as a general opinion about business.
+Less developed countries depend more on primary activity.
 
-In this setting, gdp per capita is linked to living standards. The wording matches the textbook relationship without adding extra conditions.
+Swap in the textbook criterion and the sentence no longer describes the case.
 
-Every part of the claim aligns with the standard concept, so the statement stands.', 'TRUE — Evaluated against the textbook standard, this assertion is correct. GDP does not replace all other indicators because it misses some income sources.
+The statement is false.
+'] WHERE case_id = 'CASE 3.2.34' AND tier = 'full';
+UPDATE public.economics_cases SET tactical_explanations = ARRAY['TRUE — GDP measures the monetary value of final goods and services produced within national borders. Rebuild spending can raise measured GDP even when wellbeing falls; GDP is not a welfare index.
 
-The topic is primary, secondary, and tertiary business activity, but the decisive skill here is reading quantifiers. Words such as never, always, only, or all turn a generally true idea into a claim that can be rejected by one routine counterexample.
+Gdp per capita is linked to living standards.
 
-Applied carefully, gdp misses some informal and unpaid activity. Nothing in the sentence stretches the concept beyond its standard use.
+Nothing in the keyed reading contradicts the chapter framing used here, so the claim holds.
 
-Every part of the claim aligns with the standard concept, so the statement stands.', 'TRUE — Evaluated against the textbook standard, this assertion is correct. GDP counts final goods and services produced in a defined period.
+The statement is true.
+', 'TRUE — GDP measures the monetary value of final goods and services produced within national borders. Rebuild spending can raise measured GDP even when wellbeing falls; GDP is not a welfare index.
 
-The relevant theory comes from primary, secondary, and tertiary business activity. Identify which definition or relationship the sentence is trying to test before deciding true or false.
+Gdp misses some informal and unpaid activity.
 
-Applied carefully, gdp covers final domestic production over time. Nothing in the sentence stretches the concept beyond its standard use.
+The sentence therefore reports the concept accurately for this item.
 
-The reasoning chain is complete, so mark the statement true.', 'FALSE — The claim is false. GDP excludes final services such as insurance from its totals.
+The statement is true.
+', 'TRUE — Tertiary-sector activity provides services — banking, insurance, coaching, retail, tourism services — rather than extracting materials or manufacturing goods. GDP measures the monetary value of final goods and services produced within national borders. Rebuild spending can raise measured GDP even when wellbeing falls; GDP is not a welfare index.
 
-This statement draws on primary, secondary, and tertiary business activity. Treat it as a checklist against the core concept named in the stem, not as a general opinion about business.
+Gdp covers final domestic production over time.
 
-Applied to this claim, final insurance premiums and claims services enter gdp when produced domestically. That is why the sentence does not survive careful reading.
+Nothing in the keyed reading contradicts the chapter framing used here, so the claim holds.
 
-Once the overclaim or mislabel is exposed, the only consistent answer is false.', 'FALSE — Evaluated against the textbook standard, this assertion is false. Insurance and other final services are omitted from official GDP totals.
+The statement is true.
+', 'FALSE — Tertiary-sector activity provides services — banking, insurance, coaching, retail, tourism services — rather than extracting materials or manufacturing goods. GDP measures the monetary value of final goods and services produced within national borders. Rebuild spending can raise measured GDP even when wellbeing falls; GDP is not a welfare index.
 
-The relevant theory comes from primary, secondary, and tertiary business activity. Identify which definition or relationship the sentence is trying to test before deciding true or false.
+Final insurance premiums and claims services enter gdp when produced domestically.
 
-The statement overreaches because service-sector final output is included when it meets gdp boundary rules. The trap is to agree with the topic while missing the one detail that breaks the logic.
+The mislabelled category or reversed comparison is enough to reject the claim.
 
-The statement sounds plausible but fails on precision, so it is false.'] WHERE case_id = 'CASE 3.2.35' AND tier = 'full';
-UPDATE public.economics_cases SET tactical_explanations = ARRAY['TRUE — This statement is correct. A bookstore selling printed titles performs tertiary retail distribution.
+The statement is false.
+', 'FALSE — Tertiary-sector activity provides services — banking, insurance, coaching, retail, tourism services — rather than extracting materials or manufacturing goods. GDP measures the monetary value of final goods and services produced within national borders. Rebuild spending can raise measured GDP even when wellbeing falls; GDP is not a welfare index.
 
-The relevant theory comes from primary, secondary, and tertiary business activity. Identify which definition or relationship the sentence is trying to test before deciding true or false.
+Service-sector final output is included when it meets gdp boundary rules.
 
-Applied carefully, retail trade of goods is tertiary activity. Nothing in the sentence stretches the concept beyond its standard use.
+Swap in the textbook criterion and the sentence no longer describes the case.
 
-No qualifying word breaks the definition or scenario, so the answer is true.', 'TRUE — The claim is correct. Warehouse pick-and-pack for e-commerce orders is classified as a tertiary logistics activity.
+The statement is false.
+'] WHERE case_id = 'CASE 3.2.35' AND tier = 'full';
+UPDATE public.economics_cases SET tactical_explanations = ARRAY['TRUE — Tertiary-sector activity provides services — banking, insurance, coaching, retail, tourism services — rather than extracting materials or manufacturing goods.
 
-The question tests a precise definition from the section on primary, secondary, and tertiary business activity. Entrance-exam statements often copy a definition almost correctly; one altered phrase is enough to make the whole sentence wrong.
+Retail trade of goods is tertiary activity.
 
-In this setting, fulfilment services are tertiary activity. The wording matches the textbook relationship without adding extra conditions.
+Under that classification the assertion describes the situation correctly.
 
-No qualifying word breaks the definition or scenario, so the answer is true.', 'TRUE — On the Fuhrmann definition used in the entrance exam, the sentence is correct. Mixed manufacturing and retail in one firm can span secondary and tertiary activity.
+The statement is true.
+', 'TRUE — Tertiary-sector activity provides services — banking, insurance, coaching, retail, tourism services — rather than extracting materials or manufacturing goods.
 
-This statement draws on primary, secondary, and tertiary business activity. Treat it as a checklist against the core concept named in the stem, not as a general opinion about business.
+Fulfilment services are tertiary activity.
 
-In this setting, mixed firms can span secondary production and tertiary retail. The wording matches the textbook relationship without adding extra conditions.
+Nothing in the keyed reading contradicts the chapter framing used here, so the claim holds.
 
-The reasoning chain is complete, so mark the statement true.', 'TRUE — This statement is correct. Physical goods sold in shops do not automatically make retail secondary.
+The statement is true.
+', 'TRUE — Secondary-sector activity processes and manufactures: smelting, assembling, milling, and similar transformation of materials into goods. Tertiary-sector activity provides services — banking, insurance, coaching, retail, tourism services — rather than extracting materials or manufacturing goods.
 
-The topic is primary, secondary, and tertiary business activity, but the decisive skill here is reading quantifiers. Words such as never, always, only, or all turn a generally true idea into a claim that can be rejected by one routine counterexample.
+Mixed firms can span secondary production and tertiary retail.
 
-Applied carefully, distribution and retail are tertiary even for physical products. Nothing in the sentence stretches the concept beyond its standard use.
+The sentence therefore reports the concept accurately for this item.
 
-No qualifying word breaks the definition or scenario, so the answer is true.', 'TRUE — The claim is correct. Printing the titles is secondary while selling them is tertiary.
+The statement is true.
+', 'TRUE — Secondary-sector activity processes and manufactures: smelting, assembling, milling, and similar transformation of materials into goods. Tertiary-sector activity provides services — banking, insurance, coaching, retail, tourism services — rather than extracting materials or manufacturing goods.
 
-This statement draws on primary, secondary, and tertiary business activity. Treat it as a checklist against the core concept named in the stem, not as a general opinion about business.
+Distribution and retail are tertiary even for physical products.
 
-In this setting, manufacturing and retail occupy different sectors. The wording matches the textbook relationship without adding extra conditions.
+The sentence therefore reports the concept accurately for this item.
 
-Every part of the claim aligns with the standard concept, so the statement stands.'] WHERE case_id = 'CASE 3.2.36' AND tier = 'full';
-UPDATE public.economics_cases SET tactical_explanations = ARRAY['TRUE — The claim is correct. A small IT-support venture''s technical support is tertiary even when tied to refurbished goods.
+The statement is true.
+', 'TRUE — Secondary-sector activity processes and manufactures: smelting, assembling, milling, and similar transformation of materials into goods. Tertiary-sector activity provides services — banking, insurance, coaching, retail, tourism services — rather than extracting materials or manufacturing goods.
 
-The scenario is a worked example of primary, secondary, and tertiary business activity. Translate the story into the textbook category first; only then judge whether the sentence describes that category accurately.
+Manufacturing and retail occupy different sectors.
 
-In this setting, support services remain tertiary when linked to goods. The wording matches the textbook relationship without adding extra conditions.
+Nothing in the keyed reading contradicts the chapter framing used here, so the claim holds.
 
-The reasoning chain is complete, so mark the statement true.', 'TRUE — Evaluated against the textbook standard, this assertion is correct. Remote support abroad remains tertiary when produced domestically.
+The statement is true.
+'] WHERE case_id = 'CASE 3.2.36' AND tier = 'full';
+UPDATE public.economics_cases SET tactical_explanations = ARRAY['TRUE — Tertiary-sector activity provides services — banking, insurance, coaching, retail, tourism services — rather than extracting materials or manufacturing goods.
 
-Here you must apply ideas from primary, secondary, and tertiary business activity to a concrete situation rather than recite a definition from memory. Ownership, customer type, stakeholder group, or country of production usually decides the verdict.
+Support services remain tertiary when linked to goods.
 
-Applied carefully, client location does not reclassify domestic tertiary services. Nothing in the sentence stretches the concept beyond its standard use.
+The sentence therefore reports the concept accurately for this item.
 
-Every part of the claim aligns with the standard concept, so the statement stands.', 'TRUE — This statement is correct. Software helpdesks troubleshooting networks provide tertiary services.
+The statement is true.
+', 'TRUE — Tertiary-sector activity provides services — banking, insurance, coaching, retail, tourism services — rather than extracting materials or manufacturing goods.
 
-The relevant theory comes from primary, secondary, and tertiary business activity. Identify which definition or relationship the sentence is trying to test before deciding true or false.
+Client location does not reclassify domestic tertiary services.
 
-Applied carefully, technical support is a tertiary service. Nothing in the sentence stretches the concept beyond its standard use.
+The sentence therefore reports the concept accurately for this item.
 
-Every part of the claim aligns with the standard concept, so the statement stands.', 'FALSE — The claim is false. Writing code for clients is secondary manufacturing.
+The statement is true.
+', 'TRUE — Tertiary-sector activity provides services — banking, insurance, coaching, retail, tourism services — rather than extracting materials or manufacturing goods.
 
-This statement draws on primary, secondary, and tertiary business activity. Treat it as a checklist against the core concept named in the stem, not as a general opinion about business.
+Technical support is a tertiary service.
 
-Applied to this claim, software services are tertiary in this context. That is why the sentence does not survive careful reading.
+The sentence therefore reports the concept accurately for this item.
 
-Once the overclaim or mislabel is exposed, the only consistent answer is false.', 'FALSE — On the Fuhrmann definition used in the entrance exam, the sentence is false. Support is secondary because computers are manufactured products.
+The statement is true.
+', 'FALSE — Secondary-sector activity processes and manufactures: smelting, assembling, milling, and similar transformation of materials into goods.
 
-The scenario is a worked example of primary, secondary, and tertiary business activity. Translate the story into the textbook category first; only then judge whether the sentence describes that category accurately.
+Software services are tertiary in this context.
 
-Applied to this claim, supporting devices is tertiary, not manufacturing. That is why the sentence does not survive careful reading.
+Once the defining feature is restored, the assertion falls away.
 
-Because the decisive detail is wrong, mark the statement false.'] WHERE case_id = 'CASE 3.2.37' AND tier = 'full';
-UPDATE public.economics_cases SET tactical_explanations = ARRAY['TRUE — On the Fuhrmann definition used in the entrance exam, the sentence is correct. The three-sector model classifies activities rather than assigning one label per economy.
+The statement is false.
+', 'FALSE — Secondary-sector activity processes and manufactures: smelting, assembling, milling, and similar transformation of materials into goods.
 
-The section on primary, secondary, and tertiary business activity frequently contrasts two similar ideas side by side. A comparison statement is true only if the relationship is stated in the right direction and applies to the right concept pair.
+Supporting devices is tertiary, not manufacturing.
 
-In this setting, the model classifies activities, not single labels per economy. The wording matches the textbook relationship without adding extra conditions.
+Swap in the textbook criterion and the sentence no longer describes the case.
 
-Every part of the claim aligns with the standard concept, so the statement stands.', 'FALSE — On the Fuhrmann definition used in the entrance exam, the sentence is false. A farm selling produce can only be classified as primary.
+The statement is false.
+'] WHERE case_id = 'CASE 3.2.37' AND tier = 'full';
+UPDATE public.economics_cases SET tactical_explanations = ARRAY['TRUE — Sector classification follows the stage of activity — extraction, manufacturing, or services — not whether the output feels basic or where the premises sit.
 
-The question tests a precise definition from the section on primary, secondary, and tertiary business activity. Entrance-exam statements often copy a definition almost correctly; one altered phrase is enough to make the whole sentence wrong.
+The model classifies activities, not single labels per economy.
 
-Applied to this claim, mixed-sector firms may combine farming with processing or retail activities. That is why the sentence does not survive careful reading.
+The sentence therefore reports the concept accurately for this item.
 
-A common mistake is to recognise the topic word (GDP, NPO, SME, liability) and stop reading. The exam rewards checking every qualifier in the definition.
+The statement is true.
+', 'FALSE — Primary-sector activity extracts raw materials from nature: farming, fishing, mining, and forestry — not manufacturing and not services.
 
-Once the overclaim or mislabel is exposed, the only consistent answer is false.', 'FALSE — On the Fuhrmann definition used in the entrance exam, the sentence is false. A manufacturer that also gives client advice is tertiary only.
+Mixed-sector firms may combine farming with processing or retail activities.
 
-This statement draws on primary, secondary, and tertiary business activity. Treat it as a checklist against the core concept named in the stem, not as a general opinion about business.
+One clear counterexample under the right criterion is enough to reject the sentence.
 
-Applied to this claim, manufacturing can coexist with service offerings. That is why the sentence does not survive careful reading.
+The statement is false.
+', 'FALSE — Secondary-sector activity processes and manufactures: smelting, assembling, milling, and similar transformation of materials into goods. Tertiary-sector activity provides services — banking, insurance, coaching, retail, tourism services — rather than extracting materials or manufacturing goods.
 
-Once the overclaim or mislabel is exposed, the only consistent answer is false.', 'FALSE — Evaluated against the textbook standard, this assertion is false. A single sector label on a firm blocks any activity in another sector.
+Manufacturing can coexist with service offerings.
 
-The relevant theory comes from primary, secondary, and tertiary business activity. Identify which definition or relationship the sentence is trying to test before deciding true or false.
+One clear counterexample under the right criterion is enough to reject the sentence.
 
-The statement overreaches because sector labels describe activities, not exclusive limits on what a firm may do. The trap is to agree with the topic while missing the one detail that breaks the logic.
+The statement is false.
+', 'FALSE — Sector classification follows the stage of activity — extraction, manufacturing, or services — not whether the output feels basic or where the premises sit.
 
-The statement sounds plausible but fails on precision, so it is false.', 'FALSE — On the Fuhrmann definition used in the entrance exam, the sentence is false. One sector label applied to a firm prevents any activity in another sector.
+Sector labels describe activities, not exclusive limits on what a firm may do.
 
-This statement draws on primary, secondary, and tertiary business activity. Treat it as a checklist against the core concept named in the stem, not as a general opinion about business.
+The mislabelled category or reversed comparison is enough to reject the claim.
 
-Applied to this claim, classification by activity allows several sector types within one enterprise. That is why the sentence does not survive careful reading.
+The statement is false.
+', 'FALSE — Sector classification follows the stage of activity — extraction, manufacturing, or services — not whether the output feels basic or where the premises sit.
 
-The statement sounds plausible but fails on precision, so it is false.'] WHERE case_id = 'CASE 3.2.38' AND tier = 'full';
-UPDATE public.economics_cases SET tactical_explanations = ARRAY['TRUE — On the Fuhrmann definition used in the entrance exam, the sentence is correct. Emerging countries typically depend heavily on primary activity before tertiary dominance emerges.
+Classification by activity allows several sector types within one enterprise.
 
-This statement draws on primary, secondary, and tertiary business activity. Treat it as a checklist against the core concept named in the stem, not as a general opinion about business.
+The mislabelled category or reversed comparison is enough to reject the claim.
 
-In this setting, emerging economies typically depend heavily on primary activity first. The wording matches the textbook relationship without adding extra conditions.
+The statement is false.
+'] WHERE case_id = 'CASE 3.2.38' AND tier = 'full';
+UPDATE public.economics_cases SET tactical_explanations = ARRAY['TRUE — Primary-sector activity extracts raw materials from nature: farming, fishing, mining, and forestry — not manufacturing and not services. Tertiary-sector activity provides services — banking, insurance, coaching, retail, tourism services — rather than extracting materials or manufacturing goods.
 
-The reasoning chain is complete, so mark the statement true.', 'TRUE — This statement is correct. Tertiary dominance in EU states coexists with some primary and secondary output.
+Emerging economies typically depend heavily on primary activity first.
 
-The relevant theory comes from primary, secondary, and tertiary business activity. Identify which definition or relationship the sentence is trying to test before deciding true or false.
+Under that classification the assertion describes the situation correctly.
 
-Applied carefully, advanced economies still contain all sectors, with tertiary largest. Nothing in the sentence stretches the concept beyond its standard use.
+The statement is true.
+', 'TRUE — Primary-sector activity extracts raw materials from nature: farming, fishing, mining, and forestry — not manufacturing and not services. Secondary-sector activity processes and manufactures: smelting, assembling, milling, and similar transformation of materials into goods. Tertiary-sector activity provides services — banking, insurance, coaching, retail, tourism services — rather than extracting materials or manufacturing goods.
 
-The reasoning chain is complete, so mark the statement true.', 'TRUE — Evaluated against the textbook standard, this assertion is correct. Primary share often falls as countries become more developed.
+Advanced economies still contain all sectors, with tertiary largest.
 
-The relevant theory comes from primary, secondary, and tertiary business activity. Identify which definition or relationship the sentence is trying to test before deciding true or false.
+Nothing in the keyed reading contradicts the chapter framing used here, so the claim holds.
 
-Applied carefully, advanced economies rely less on primary output shares. Nothing in the sentence stretches the concept beyond its standard use.
+The statement is true.
+', 'TRUE — Primary-sector activity extracts raw materials from nature: farming, fishing, mining, and forestry — not manufacturing and not services.
 
-No qualifying word breaks the definition or scenario, so the answer is true.', 'TRUE — On the Fuhrmann definition used in the entrance exam, the sentence is correct. Economic development advancing tends to raise relative tertiary output.
+Advanced economies rely less on primary output shares.
 
-This statement draws on primary, secondary, and tertiary business activity. Treat it as a checklist against the core concept named in the stem, not as a general opinion about business.
+Under that classification the assertion describes the situation correctly.
 
-In this setting, more developed economies shift toward services. The wording matches the textbook relationship without adding extra conditions.
+The statement is true.
+', 'TRUE — Tertiary-sector activity provides services — banking, insurance, coaching, retail, tourism services — rather than extracting materials or manufacturing goods.
 
-Every part of the claim aligns with the standard concept, so the statement stands.', 'FALSE — On the Fuhrmann definition used in the entrance exam, the sentence is false. Secondary and tertiary shares must both fall as primary share falls.
+More developed economies shift toward services.
 
-This statement draws on primary, secondary, and tertiary business activity. Treat it as a checklist against the core concept named in the stem, not as a general opinion about business.
+Nothing in the keyed reading contradicts the chapter framing used here, so the claim holds.
 
-Applied to this claim, development reallocates activity among sectors over time. That is why the sentence does not survive careful reading.
+The statement is true.
+', 'FALSE — Primary-sector activity extracts raw materials from nature: farming, fishing, mining, and forestry — not manufacturing and not services. Secondary-sector activity processes and manufactures: smelting, assembling, milling, and similar transformation of materials into goods. Tertiary-sector activity provides services — banking, insurance, coaching, retail, tourism services — rather than extracting materials or manufacturing goods.
 
-Once the overclaim or mislabel is exposed, the only consistent answer is false.'] WHERE case_id = 'CASE 3.2.39' AND tier = 'full';
-UPDATE public.economics_cases SET tactical_explanations = ARRAY['TRUE — Evaluated against the textbook standard, this assertion is correct. Living standards correlate with GDP though GDP misses some welfare dimensions.
+Development reallocates activity among sectors over time.
 
-The relevant theory comes from primary, secondary, and tertiary business activity. Identify which definition or relationship the sentence is trying to test before deciding true or false.
+Once the defining feature is restored, the assertion falls away.
 
-Applied carefully, correlation exists despite gdp limits. Nothing in the sentence stretches the concept beyond its standard use.
+The statement is false.
+'] WHERE case_id = 'CASE 3.2.39' AND tier = 'full';
+UPDATE public.economics_cases SET tactical_explanations = ARRAY['TRUE — GDP measures the monetary value of final goods and services produced within national borders. Rebuild spending can raise measured GDP even when wellbeing falls; GDP is not a welfare index.
 
-No qualifying word breaks the definition or scenario, so the answer is true.', 'TRUE — The claim is correct. Per capita averages miss distribution of income within a country.
+Correlation exists despite gdp limits.
 
-This statement draws on primary, secondary, and tertiary business activity. Treat it as a checklist against the core concept named in the stem, not as a general opinion about business.
+Under that classification the assertion describes the situation correctly.
 
-In this setting, per capita averages miss distribution of income. The wording matches the textbook relationship without adding extra conditions.
+The statement is true.
+', 'TRUE — Sector classification follows the stage of activity — extraction, manufacturing, or services — not whether the output feels basic or where the premises sit.
 
-Every part of the claim aligns with the standard concept, so the statement stands.', 'FALSE — This statement is false. GDP per capita fully captures inequality within a country.
+Per capita averages miss distribution of income.
 
-The relevant theory comes from primary, secondary, and tertiary business activity. Identify which definition or relationship the sentence is trying to test before deciding true or false.
+Nothing in the keyed reading contradicts the chapter framing used here, so the claim holds.
 
-The statement overreaches because per capita averages miss distribution of income. The trap is to agree with the topic while missing the one detail that breaks the logic.
+The statement is true.
+', 'FALSE — GDP measures the monetary value of final goods and services produced within national borders. Rebuild spending can raise measured GDP even when wellbeing falls; GDP is not a welfare index.
 
-Once the overclaim or mislabel is exposed, the only consistent answer is false.', 'FALSE — Evaluated against the textbook standard, this assertion is false. Higher GDP per capita in EU members is unrelated to living standards.
+Per capita averages miss distribution of income.
 
-The relevant theory comes from primary, secondary, and tertiary business activity. Identify which definition or relationship the sentence is trying to test before deciding true or false.
+Swap in the textbook criterion and the sentence no longer describes the case.
 
-The statement overreaches because gdp per capita is linked to living standards. The trap is to agree with the topic while missing the one detail that breaks the logic.
+The statement is false.
+', 'FALSE — GDP measures the monetary value of final goods and services produced within national borders. Rebuild spending can raise measured GDP even when wellbeing falls; GDP is not a welfare index.
 
-Because the decisive detail is wrong, mark the statement false.', 'FALSE — Evaluated against the textbook standard, this assertion is false. Low GDP per capita alone defines an emerging economy''s entire sector mix.
+Gdp per capita is linked to living standards.
 
-The relevant theory comes from primary, secondary, and tertiary business activity. Identify which definition or relationship the sentence is trying to test before deciding true or false.
+Swap in the textbook criterion and the sentence no longer describes the case.
 
-The statement overreaches because sector mix patterns are tendencies, not single indicators. The trap is to agree with the topic while missing the one detail that breaks the logic.
+The statement is false.
+', 'FALSE — GDP measures the monetary value of final goods and services produced within national borders. Rebuild spending can raise measured GDP even when wellbeing falls; GDP is not a welfare index.
 
-The statement sounds plausible but fails on precision, so it is false.'] WHERE case_id = 'CASE 3.2.40' AND tier = 'full';
-UPDATE public.economics_cases SET tactical_explanations = ARRAY['TRUE — This statement is correct. Client advice alongside fabrication does not remove secondary classification.
+Sector mix patterns are tendencies, not single indicators.
 
-The relevant theory comes from primary, secondary, and tertiary business activity. Identify which definition or relationship the sentence is trying to test before deciding true or false.
+Those restricting words stretch a limited idea past what the definition allows.
 
-Applied carefully, manufacturing remains secondary even if services accompany sales. Nothing in the sentence stretches the concept beyond its standard use.
+The statement is false.
+'] WHERE case_id = 'CASE 3.2.40' AND tier = 'full';
+UPDATE public.economics_cases SET tactical_explanations = ARRAY['TRUE — Secondary-sector activity processes and manufactures: smelting, assembling, milling, and similar transformation of materials into goods.
 
-The reasoning chain is complete, so mark the statement true.', 'FALSE — The claim is false. Advice to clients converts fabrication into tertiary services only.
+Manufacturing remains secondary even if services accompany sales.
 
-This statement draws on primary, secondary, and tertiary business activity. Treat it as a checklist against the core concept named in the stem, not as a general opinion about business.
+Nothing in the keyed reading contradicts the chapter framing used here, so the claim holds.
 
-Applied to this claim, manufacturing remains secondary even if services accompany sales. That is why the sentence does not survive careful reading.
+The statement is true.
+', 'FALSE — Secondary-sector activity processes and manufactures: smelting, assembling, milling, and similar transformation of materials into goods. Tertiary-sector activity provides services — banking, insurance, coaching, retail, tourism services — rather than extracting materials or manufacturing goods.
 
-Because the decisive detail is wrong, mark the statement false.', 'FALSE — The claim is false. Buying mined metals as inputs turns factory fabrication into primary extraction.
+Manufacturing remains secondary even if services accompany sales.
 
-This statement draws on primary, secondary, and tertiary business activity. Treat it as a checklist against the core concept named in the stem, not as a general opinion about business.
+One clear counterexample under the right criterion is enough to reject the sentence.
 
-Applied to this claim, component fabrication stays secondary whatever raw materials are purchased. That is why the sentence does not survive careful reading.
+The statement is false.
+', 'FALSE — Primary-sector activity extracts raw materials from nature: farming, fishing, mining, and forestry — not manufacturing and not services. Secondary-sector activity processes and manufactures: smelting, assembling, milling, and similar transformation of materials into goods.
 
-Once the overclaim or mislabel is exposed, the only consistent answer is false.', 'FALSE — This statement is false. Testing products in the factory becomes a tertiary inspection service only.
+Component fabrication stays secondary whatever raw materials are purchased.
 
-The relevant theory comes from primary, secondary, and tertiary business activity. Identify which definition or relationship the sentence is trying to test before deciding true or false.
+Once the defining feature is restored, the assertion falls away.
 
-The statement overreaches because quality steps in manufacturing stay secondary activity. The trap is to agree with the topic while missing the one detail that breaks the logic.
+The statement is false.
+', 'FALSE — Tertiary-sector activity provides services — banking, insurance, coaching, retail, tourism services — rather than extracting materials or manufacturing goods.
 
-The statement sounds plausible but fails on precision, so it is false.', 'TRUE — The claim is correct. Buying mined materials for production does not move manufacturing from secondary to primary.
+Quality steps in manufacturing stay secondary activity.
 
-This statement draws on primary, secondary, and tertiary business activity. Treat it as a checklist against the core concept named in the stem, not as a general opinion about business.
+One clear counterexample under the right criterion is enough to reject the sentence.
 
-In this setting, input from mines does not change the secondary nature of manufacturing. The wording matches the textbook relationship without adding extra conditions.
+The statement is false.
+', 'TRUE — Primary-sector activity extracts raw materials from nature: farming, fishing, mining, and forestry — not manufacturing and not services. Secondary-sector activity processes and manufactures: smelting, assembling, milling, and similar transformation of materials into goods.
 
-The reasoning chain is complete, so mark the statement true.'] WHERE case_id = 'CASE 3.2.41' AND tier = 'full';
-UPDATE public.economics_cases SET tactical_explanations = ARRAY['TRUE — The claim is correct. Insurance cooperatives processing claims provide tertiary services.
+Input from mines does not change the secondary nature of manufacturing.
 
-This statement draws on primary, secondary, and tertiary business activity. Treat it as a checklist against the core concept named in the stem, not as a general opinion about business.
+Under that classification the assertion describes the situation correctly.
 
-In this setting, insurance is a financial service in the tertiary sector. The wording matches the textbook relationship without adding extra conditions.
+The statement is true.
+'] WHERE case_id = 'CASE 3.2.41' AND tier = 'full';
+UPDATE public.economics_cases SET tactical_explanations = ARRAY['TRUE — Tertiary-sector activity provides services — banking, insurance, coaching, retail, tourism services — rather than extracting materials or manufacturing goods.
 
-The reasoning chain is complete, so mark the statement true.', 'TRUE — On the Fuhrmann definition used in the entrance exam, the sentence is correct. Underwriting and claims payment are tertiary financial services.
+Insurance is a financial service in the tertiary sector.
 
-This statement draws on primary, secondary, and tertiary business activity. Treat it as a checklist against the core concept named in the stem, not as a general opinion about business.
+Nothing in the keyed reading contradicts the chapter framing used here, so the claim holds.
 
-In this setting, core insurance operations are tertiary activity. The wording matches the textbook relationship without adding extra conditions.
+The statement is true.
+', 'TRUE — Tertiary-sector activity provides services — banking, insurance, coaching, retail, tourism services — rather than extracting materials or manufacturing goods.
 
-The reasoning chain is complete, so mark the statement true.', 'TRUE — This statement is correct. Claims handling is tertiary whether the client is a farm or a factory.
+Core insurance operations are tertiary activity.
 
-The relevant theory comes from primary, secondary, and tertiary business activity. Identify which definition or relationship the sentence is trying to test before deciding true or false.
+Nothing in the keyed reading contradicts the chapter framing used here, so the claim holds.
 
-Applied carefully, insurance services are tertiary for all customer types. Nothing in the sentence stretches the concept beyond its standard use.
+The statement is true.
+', 'TRUE — Tertiary-sector activity provides services — banking, insurance, coaching, retail, tourism services — rather than extracting materials or manufacturing goods.
 
-No qualifying word breaks the definition or scenario, so the answer is true.', 'FALSE — Evaluated against the textbook standard, this assertion is false. Insurance is primary because policies cover basic risks.
+Insurance services are tertiary for all customer types.
 
-Here you must apply ideas from primary, secondary, and tertiary business activity to a concrete situation rather than recite a definition from memory. Ownership, customer type, stakeholder group, or country of production usually decides the verdict.
+Under that classification the assertion describes the situation correctly.
 
-The statement overreaches because risk coverage is a financial service, not resource extraction. The trap is to agree with the topic while missing the one detail that breaks the logic.
+The statement is true.
+', 'FALSE — Primary-sector activity extracts raw materials from nature: farming, fishing, mining, and forestry — not manufacturing and not services. Tertiary-sector activity provides services — banking, insurance, coaching, retail, tourism services — rather than extracting materials or manufacturing goods.
 
-The statement sounds plausible but fails on precision, so it is false.', 'FALSE — This statement is false. Insurance tied to manufactured goods becomes secondary.
+Risk coverage is a financial service, not resource extraction.
 
-The relevant theory comes from primary, secondary, and tertiary business activity. Identify which definition or relationship the sentence is trying to test before deciding true or false.
+The mislabelled category or reversed comparison is enough to reject the claim.
 
-The statement overreaches because insurance remains tertiary regardless of what policies cover. The trap is to agree with the topic while missing the one detail that breaks the logic.
+The statement is false.
+', 'FALSE — Secondary-sector activity processes and manufactures: smelting, assembling, milling, and similar transformation of materials into goods. Tertiary-sector activity provides services — banking, insurance, coaching, retail, tourism services — rather than extracting materials or manufacturing goods.
 
-Because the decisive detail is wrong, mark the statement false.'] WHERE case_id = 'CASE 3.2.42' AND tier = 'full';
-UPDATE public.economics_cases SET tactical_explanations = ARRAY['TRUE — On the Fuhrmann definition used in the entrance exam, the sentence is correct. Fashion retail selling finished jackets is tertiary trade.
+Insurance remains tertiary regardless of what policies cover.
 
-This statement draws on primary, secondary, and tertiary business activity. Treat it as a checklist against the core concept named in the stem, not as a general opinion about business.
+The mislabelled category or reversed comparison is enough to reject the claim.
 
-In this setting, retail distribution is tertiary activity. The wording matches the textbook relationship without adding extra conditions.
+The statement is false.
+'] WHERE case_id = 'CASE 3.2.42' AND tier = 'full';
+UPDATE public.economics_cases SET tactical_explanations = ARRAY['TRUE — Tertiary-sector activity provides services — banking, insurance, coaching, retail, tourism services — rather than extracting materials or manufacturing goods.
 
-Every part of the claim aligns with the standard concept, so the statement stands.', 'TRUE — The claim is correct. Designing jackets can be tertiary while sewing them is secondary.
+Retail distribution is tertiary activity.
 
-This statement draws on primary, secondary, and tertiary business activity. Treat it as a checklist against the core concept named in the stem, not as a general opinion about business.
+Under that classification the assertion describes the situation correctly.
 
-In this setting, design services can be tertiary; sewing is manufacturing. The wording matches the textbook relationship without adding extra conditions.
+The statement is true.
+', 'TRUE — Secondary-sector activity processes and manufactures: smelting, assembling, milling, and similar transformation of materials into goods. Tertiary-sector activity provides services — banking, insurance, coaching, retail, tourism services — rather than extracting materials or manufacturing goods.
 
-Every part of the claim aligns with the standard concept, so the statement stands.', 'TRUE — This statement is correct. Imported fabric entering a sewing floor supports secondary manufacturing.
+Design services can be tertiary; sewing is manufacturing.
 
-The relevant theory comes from primary, secondary, and tertiary business activity. Identify which definition or relationship the sentence is trying to test before deciding true or false.
+Nothing in the keyed reading contradicts the chapter framing used here, so the claim holds.
 
-Applied carefully, manufacturing uses imported materials in secondary production. Nothing in the sentence stretches the concept beyond its standard use.
+The statement is true.
+', 'TRUE — Secondary-sector activity processes and manufactures: smelting, assembling, milling, and similar transformation of materials into goods.
 
-No qualifying word breaks the definition or scenario, so the answer is true.', 'TRUE — This statement is correct. Sewing garments is secondary even when fashion is sold as a consumer experience.
+Manufacturing uses imported materials in secondary production.
 
-Here you must apply ideas from primary, secondary, and tertiary business activity to a concrete situation rather than recite a definition from memory. Ownership, customer type, stakeholder group, or country of production usually decides the verdict.
+Nothing in the keyed reading contradicts the chapter framing used here, so the claim holds.
 
-Applied carefully, sewing garments is secondary manufacturing. Nothing in the sentence stretches the concept beyond its standard use.
+The statement is true.
+', 'TRUE — Secondary-sector activity processes and manufactures: smelting, assembling, milling, and similar transformation of materials into goods.
 
-The reasoning chain is complete, so mark the statement true.', 'TRUE — This statement is correct. Sewing jackets from imported fabric is secondary manufacturing.
+Sewing garments is secondary manufacturing.
 
-The relevant theory comes from primary, secondary, and tertiary business activity. Identify which definition or relationship the sentence is trying to test before deciding true or false.
+The sentence therefore reports the concept accurately for this item.
 
-Applied carefully, garment production from materials is secondary activity. Nothing in the sentence stretches the concept beyond its standard use.
+The statement is true.
+', 'TRUE — Secondary-sector activity processes and manufactures: smelting, assembling, milling, and similar transformation of materials into goods.
 
-No qualifying word breaks the definition or scenario, so the answer is true.'] WHERE case_id = 'CASE 3.2.43' AND tier = 'full';
-UPDATE public.economics_cases SET tactical_explanations = ARRAY['TRUE — The claim is correct. Remote coaching sessions sold to clients are tertiary services.
+Garment production from materials is secondary activity.
 
-The scenario is a worked example of primary, secondary, and tertiary business activity. Translate the story into the textbook category first; only then judge whether the sentence describes that category accurately.
+Nothing in the keyed reading contradicts the chapter framing used here, so the claim holds.
 
-In this setting, coaching is a service classified in the tertiary sector. The wording matches the textbook relationship without adding extra conditions.
+The statement is true.
+'] WHERE case_id = 'CASE 3.2.43' AND tier = 'full';
+UPDATE public.economics_cases SET tactical_explanations = ARRAY['TRUE — Tertiary-sector activity provides services — banking, insurance, coaching, retail, tourism services — rather than extracting materials or manufacturing goods.
 
-No qualifying word breaks the definition or scenario, so the answer is true.', 'TRUE — The claim is correct. Exporting coaching abroad keeps the activity tertiary.
+Coaching is a service classified in the tertiary sector.
 
-This statement draws on primary, secondary, and tertiary business activity. Treat it as a checklist against the core concept named in the stem, not as a general opinion about business.
+Under that classification the assertion describes the situation correctly.
 
-In this setting, client location does not reclassify domestic tertiary services. The wording matches the textbook relationship without adding extra conditions.
+The statement is true.
+', 'TRUE — Tertiary-sector activity provides services — banking, insurance, coaching, retail, tourism services — rather than extracting materials or manufacturing goods.
 
-No qualifying word breaks the definition or scenario, so the answer is true.', 'TRUE — Evaluated against the textbook standard, this assertion is correct. Coaching combined with merchandise sales can still be tertiary service delivery.
+Client location does not reclassify domestic tertiary services.
 
-The relevant theory comes from primary, secondary, and tertiary business activity. Identify which definition or relationship the sentence is trying to test before deciding true or false.
+Under that classification the assertion describes the situation correctly.
 
-Applied carefully, core coaching remains tertiary even if goods are sold. Nothing in the sentence stretches the concept beyond its standard use.
+The statement is true.
+', 'TRUE — Tertiary-sector activity provides services — banking, insurance, coaching, retail, tourism services — rather than extracting materials or manufacturing goods.
 
-No qualifying word breaks the definition or scenario, so the answer is true.', 'TRUE — This statement is correct. Coaching studios renting space and paying trainers deliver tertiary services.
+Core coaching remains tertiary even if goods are sold.
 
-The relevant theory comes from primary, secondary, and tertiary business activity. Identify which definition or relationship the sentence is trying to test before deciding true or false.
+Nothing in the keyed reading contradicts the chapter framing used here, so the claim holds.
 
-Applied carefully, personal coaching is tertiary-sector activity. Nothing in the sentence stretches the concept beyond its standard use.
+The statement is true.
+', 'TRUE — Tertiary-sector activity provides services — banking, insurance, coaching, retail, tourism services — rather than extracting materials or manufacturing goods.
 
-No qualifying word breaks the definition or scenario, so the answer is true.', 'FALSE — This statement is false. Designing training programmes is secondary manufacturing.
+Personal coaching is tertiary-sector activity.
 
-The relevant theory comes from primary, secondary, and tertiary business activity. Identify which definition or relationship the sentence is trying to test before deciding true or false.
+Nothing in the keyed reading contradicts the chapter framing used here, so the claim holds.
 
-The statement overreaches because design services are tertiary; book printing is secondary. The trap is to agree with the topic while missing the one detail that breaks the logic.
+The statement is true.
+', 'FALSE — Secondary-sector activity processes and manufactures: smelting, assembling, milling, and similar transformation of materials into goods.
 
-Because the decisive detail is wrong, mark the statement false.'] WHERE case_id = 'CASE 3.2.44' AND tier = 'full';
-UPDATE public.economics_cases SET tactical_explanations = ARRAY['TRUE — On the Fuhrmann definition used in the entrance exam, the sentence is correct. Picking and dispatching online orders from a warehouse belongs to tertiary logistics services.
+Design services are tertiary; book printing is secondary.
 
-This statement draws on primary, secondary, and tertiary business activity. Treat it as a checklist against the core concept named in the stem, not as a general opinion about business.
+Swap in the textbook criterion and the sentence no longer describes the case.
 
-In this setting, fulfilment services are tertiary activity. The wording matches the textbook relationship without adding extra conditions.
+The statement is false.
+'] WHERE case_id = 'CASE 3.2.44' AND tier = 'full';
+UPDATE public.economics_cases SET tactical_explanations = ARRAY['TRUE — Tertiary-sector activity provides services — banking, insurance, coaching, retail, tourism services — rather than extracting materials or manufacturing goods.
 
-The reasoning chain is complete, so mark the statement true.', 'TRUE — The claim is correct. Retail distribution of finished goods to shops is tertiary trade.
+Fulfilment services are tertiary activity.
 
-This statement draws on primary, secondary, and tertiary business activity. Treat it as a checklist against the core concept named in the stem, not as a general opinion about business.
+Nothing in the keyed reading contradicts the chapter framing used here, so the claim holds.
 
-In this setting, distribution to customers is tertiary-sector activity. The wording matches the textbook relationship without adding extra conditions.
+The statement is true.
+', 'TRUE — Tertiary-sector activity provides services — banking, insurance, coaching, retail, tourism services — rather than extracting materials or manufacturing goods.
 
-The reasoning chain is complete, so mark the statement true.', 'FALSE — This statement is false. Warehousing is secondary because steel will be manufactured.
+Distribution to customers is tertiary-sector activity.
 
-Here you must apply ideas from primary, secondary, and tertiary business activity to a concrete situation rather than recite a definition from memory. Ownership, customer type, stakeholder group, or country of production usually decides the verdict.
+Under that classification the assertion describes the situation correctly.
 
-The statement overreaches because warehousing before manufacturing is tertiary logistics. The trap is to agree with the topic while missing the one detail that breaks the logic.
+The statement is true.
+', 'FALSE — Secondary-sector activity processes and manufactures: smelting, assembling, milling, and similar transformation of materials into goods.
 
-Because the decisive detail is wrong, mark the statement false.', 'FALSE — Evaluated against the textbook standard, this assertion is false. Bookstores are secondary because books are printed products.
+Warehousing before manufacturing is tertiary logistics.
 
-Here you must apply ideas from primary, secondary, and tertiary business activity to a concrete situation rather than recite a definition from memory. Ownership, customer type, stakeholder group, or country of production usually decides the verdict.
+The mislabelled category or reversed comparison is enough to reject the claim.
 
-The statement overreaches because distribution to readers is tertiary activity. The trap is to agree with the topic while missing the one detail that breaks the logic.
+The statement is false.
+', 'FALSE — Secondary-sector activity processes and manufactures: smelting, assembling, milling, and similar transformation of materials into goods.
 
-Because the decisive detail is wrong, mark the statement false.', 'FALSE — Evaluated against the textbook standard, this assertion is false. Physical goods make distribution secondary manufacturing.
+Distribution to readers is tertiary activity.
 
-The relevant theory comes from primary, secondary, and tertiary business activity. Identify which definition or relationship the sentence is trying to test before deciding true or false.
+Swap in the textbook criterion and the sentence no longer describes the case.
 
-The statement overreaches because distribution is tertiary even when goods are physical. The trap is to agree with the topic while missing the one detail that breaks the logic.
+The statement is false.
+', 'FALSE — Secondary-sector activity processes and manufactures: smelting, assembling, milling, and similar transformation of materials into goods.
 
-Once the overclaim or mislabel is exposed, the only consistent answer is false.'] WHERE case_id = 'CASE 3.2.45' AND tier = 'full';
-UPDATE public.economics_cases SET tactical_explanations = ARRAY['TRUE — Evaluated against the textbook standard, this assertion is correct. Forestry supplying logs to mills is primary extraction.
+Distribution is tertiary even when goods are physical.
 
-The relevant theory comes from primary, secondary, and tertiary business activity. Identify which definition or relationship the sentence is trying to test before deciding true or false.
+The mislabelled category or reversed comparison is enough to reject the claim.
 
-Applied carefully, forestry extracts timber as a natural resource. Nothing in the sentence stretches the concept beyond its standard use.
+The statement is false.
+'] WHERE case_id = 'CASE 3.2.45' AND tier = 'full';
+UPDATE public.economics_cases SET tactical_explanations = ARRAY['TRUE — Primary-sector activity extracts raw materials from nature: farming, fishing, mining, and forestry — not manufacturing and not services. Secondary-sector activity processes and manufactures: smelting, assembling, milling, and similar transformation of materials into goods.
 
-No qualifying word breaks the definition or scenario, so the answer is true.', 'TRUE — On the Fuhrmann definition used in the entrance exam, the sentence is correct. Olive farms harvesting crops perform primary agricultural activity.
+Forestry extracts timber as a natural resource.
 
-This statement draws on primary, secondary, and tertiary business activity. Treat it as a checklist against the core concept named in the stem, not as a general opinion about business.
+The sentence therefore reports the concept accurately for this item.
 
-In this setting, crop production is primary-sector activity. The wording matches the textbook relationship without adding extra conditions.
+The statement is true.
+', 'TRUE — Primary-sector activity extracts raw materials from nature: farming, fishing, mining, and forestry — not manufacturing and not services.
 
-No qualifying word breaks the definition or scenario, so the answer is true.', 'TRUE — The claim is correct. Farming, fishing, mining, and forestry extract raw materials in the primary sector.
+Crop production is primary-sector activity.
 
-This statement draws on primary, secondary, and tertiary business activity. Treat it as a checklist against the core concept named in the stem, not as a general opinion about business.
+Under that classification the assertion describes the situation correctly.
 
-In this setting, primary activity extracts raw materials from the earth. The wording matches the textbook relationship without adding extra conditions.
+The statement is true.
+', 'TRUE — Primary-sector activity extracts raw materials from nature: farming, fishing, mining, and forestry — not manufacturing and not services.
 
-The reasoning chain is complete, so mark the statement true.', 'TRUE — This statement is correct. Coal mining extracting ore is primary-sector activity.
+Primary activity extracts raw materials from the earth.
 
-The relevant theory comes from primary, secondary, and tertiary business activity. Identify which definition or relationship the sentence is trying to test before deciding true or false.
+Under that classification the assertion describes the situation correctly.
 
-Applied carefully, mining extracts raw materials and is primary activity. Nothing in the sentence stretches the concept beyond its standard use.
+The statement is true.
+', 'TRUE — Primary-sector activity extracts raw materials from nature: farming, fishing, mining, and forestry — not manufacturing and not services.
 
-The reasoning chain is complete, so mark the statement true.', 'FALSE — On the Fuhrmann definition used in the entrance exam, the sentence is false. Fishing becomes secondary once fish are filleted onboard.
+Mining extracts raw materials and is primary activity.
 
-This statement draws on primary, secondary, and tertiary business activity. Treat it as a checklist against the core concept named in the stem, not as a general opinion about business.
+Under that classification the assertion describes the situation correctly.
 
-Applied to this claim, extracting fish remains primary-sector activity. That is why the sentence does not survive careful reading.
+The statement is true.
+', 'FALSE — Secondary-sector activity processes and manufactures: smelting, assembling, milling, and similar transformation of materials into goods.
 
-Once the overclaim or mislabel is exposed, the only consistent answer is false.'] WHERE case_id = 'CASE 3.2.46' AND tier = 'full';
-UPDATE public.economics_cases SET tactical_explanations = ARRAY['TRUE — This statement is correct. Timber mills exporting boards perform secondary processing of logs.
+Extracting fish remains primary-sector activity.
 
-The relevant theory comes from primary, secondary, and tertiary business activity. Identify which definition or relationship the sentence is trying to test before deciding true or false.
+The mislabelled category or reversed comparison is enough to reject the claim.
 
-Applied carefully, milling logs into boards is secondary manufacturing. Nothing in the sentence stretches the concept beyond its standard use.
+The statement is false.
+'] WHERE case_id = 'CASE 3.2.46' AND tier = 'full';
+UPDATE public.economics_cases SET tactical_explanations = ARRAY['TRUE — Secondary-sector activity processes and manufactures: smelting, assembling, milling, and similar transformation of materials into goods.
 
-Every part of the claim aligns with the standard concept, so the statement stands.', 'FALSE — This statement is false. Fabricating industrial components is tertiary because components support services.
+Milling logs into boards is secondary manufacturing.
 
-Here you must apply ideas from primary, secondary, and tertiary business activity to a concrete situation rather than recite a definition from memory. Ownership, customer type, stakeholder group, or country of production usually decides the verdict.
+Under that classification the assertion describes the situation correctly.
 
-The statement overreaches because manufacturing components is secondary activity. The trap is to agree with the topic while missing the one detail that breaks the logic.
+The statement is true.
+', 'FALSE — Secondary-sector activity processes and manufactures: smelting, assembling, milling, and similar transformation of materials into goods. Tertiary-sector activity provides services — banking, insurance, coaching, retail, tourism services — rather than extracting materials or manufacturing goods.
 
-Because the decisive detail is wrong, mark the statement false.', 'FALSE — Evaluated against the textbook standard, this assertion is false. Sewing is tertiary because fashion is a consumer service.
+Manufacturing components is secondary activity.
 
-Here you must apply ideas from primary, secondary, and tertiary business activity to a concrete situation rather than recite a definition from memory. Ownership, customer type, stakeholder group, or country of production usually decides the verdict.
+The mislabelled category or reversed comparison is enough to reject the claim.
 
-The statement overreaches because sewing garments is secondary manufacturing. The trap is to agree with the topic while missing the one detail that breaks the logic.
+The statement is false.
+', 'FALSE — Tertiary-sector activity provides services — banking, insurance, coaching, retail, tourism services — rather than extracting materials or manufacturing goods.
 
-Once the overclaim or mislabel is exposed, the only consistent answer is false.', 'FALSE — Evaluated against the textbook standard, this assertion is false. Smelting remains primary because ore comes from mines.
+Sewing garments is secondary manufacturing.
 
-Here you must apply ideas from primary, secondary, and tertiary business activity to a concrete situation rather than recite a definition from memory. Ownership, customer type, stakeholder group, or country of production usually decides the verdict.
+Swap in the textbook criterion and the sentence no longer describes the case.
 
-The statement overreaches because processing ore or metal is secondary transformation. The trap is to agree with the topic while missing the one detail that breaks the logic.
+The statement is false.
+', 'FALSE — Primary-sector activity extracts raw materials from nature: farming, fishing, mining, and forestry — not manufacturing and not services. Secondary-sector activity processes and manufactures: smelting, assembling, milling, and similar transformation of materials into goods.
 
-Because the decisive detail is wrong, mark the statement false.', 'FALSE — On the Fuhrmann definition used in the entrance exam, the sentence is false. Shipbuilding is tertiary because ships later carry cargo.
+Processing ore or metal is secondary transformation.
 
-The scenario is a worked example of primary, secondary, and tertiary business activity. Translate the story into the textbook category first; only then judge whether the sentence describes that category accurately.
+Swap in the textbook criterion and the sentence no longer describes the case.
 
-Applied to this claim, building ships from materials is secondary manufacturing. That is why the sentence does not survive careful reading.
+The statement is false.
+', 'FALSE — Tertiary-sector activity provides services — banking, insurance, coaching, retail, tourism services — rather than extracting materials or manufacturing goods.
 
-Once the overclaim or mislabel is exposed, the only consistent answer is false.'] WHERE case_id = 'CASE 3.2.47' AND tier = 'full';
-UPDATE public.economics_cases SET tactical_explanations = ARRAY['TRUE — Evaluated against the textbook standard, this assertion is correct. As economies develop, relative tertiary output tends to increase.
+Building ships from materials is secondary manufacturing.
 
-The relevant theory comes from primary, secondary, and tertiary business activity. Identify which definition or relationship the sentence is trying to test before deciding true or false.
+Swap in the textbook criterion and the sentence no longer describes the case.
 
-Applied carefully, more developed economies shift toward services in the three-sector model. Nothing in the sentence stretches the concept beyond its standard use.
+The statement is false.
+'] WHERE case_id = 'CASE 3.2.47' AND tier = 'full';
+UPDATE public.economics_cases SET tactical_explanations = ARRAY['TRUE — Tertiary-sector activity provides services — banking, insurance, coaching, retail, tourism services — rather than extracting materials or manufacturing goods.
 
-Every part of the claim aligns with the standard concept, so the statement stands.', 'TRUE — This statement is correct. Higher GDP per capita in EU members links to high living standards in the model.
+More developed economies shift toward services in the three-sector model.
 
-The relevant theory comes from primary, secondary, and tertiary business activity. Identify which definition or relationship the sentence is trying to test before deciding true or false.
+The sentence therefore reports the concept accurately for this item.
 
-Applied carefully, gdp per capita is used as a living-standard indicator. Nothing in the sentence stretches the concept beyond its standard use.
+The statement is true.
+', 'TRUE — GDP measures the monetary value of final goods and services produced within national borders. Rebuild spending can raise measured GDP even when wellbeing falls; GDP is not a welfare index.
 
-The reasoning chain is complete, so mark the statement true.', 'FALSE — This statement is false. Primary food production dominates output in rich EU states.
+Gdp per capita is used as a living-standard indicator.
 
-The relevant theory comes from primary, secondary, and tertiary business activity. Identify which definition or relationship the sentence is trying to test before deciding true or false.
+Under that classification the assertion describes the situation correctly.
 
-The statement overreaches because developed eu economies show tertiary dominance, not primary dominance. The trap is to agree with the topic while missing the one detail that breaks the logic.
+The statement is true.
+', 'FALSE — Primary-sector activity extracts raw materials from nature: farming, fishing, mining, and forestry — not manufacturing and not services.
 
-Because the decisive detail is wrong, mark the statement false.', 'FALSE — The claim is false. High tertiary shares typify emerging economies with low GDP per capita.
+Developed eu economies show tertiary dominance, not primary dominance.
 
-This statement draws on primary, secondary, and tertiary business activity. Treat it as a checklist against the core concept named in the stem, not as a general opinion about business.
+The mislabelled category or reversed comparison is enough to reject the claim.
 
-Applied to this claim, high tertiary shares characterise advanced, not emerging, economies. That is why the sentence does not survive careful reading.
+The statement is false.
+', 'FALSE — Tertiary-sector activity provides services — banking, insurance, coaching, retail, tourism services — rather than extracting materials or manufacturing goods. GDP measures the monetary value of final goods and services produced within national borders. Rebuild spending can raise measured GDP even when wellbeing falls; GDP is not a welfare index.
 
-Because the decisive detail is wrong, mark the statement false.', 'FALSE — On the Fuhrmann definition used in the entrance exam, the sentence is false. Developed EU states keep primary output above seventy percent.
+High tertiary shares characterise advanced, not emerging, economies.
 
-This statement draws on primary, secondary, and tertiary business activity. Treat it as a checklist against the core concept named in the stem, not as a general opinion about business.
+Once the defining feature is restored, the assertion falls away.
 
-Applied to this claim, in developed eu countries the tertiary sector usually exceeds seventy percent. That is why the sentence does not survive careful reading.
+The statement is false.
+', 'FALSE — Primary-sector activity extracts raw materials from nature: farming, fishing, mining, and forestry — not manufacturing and not services.
 
-The statement sounds plausible but fails on precision, so it is false.'] WHERE case_id = 'CASE 3.2.48' AND tier = 'full';
-UPDATE public.economics_cases SET tactical_explanations = ARRAY['TRUE — On the Fuhrmann definition used in the entrance exam, the sentence is correct. Refurbished-goods support from a small IT-support venture remains tertiary service activity.
+In developed eu countries the tertiary sector usually exceeds seventy percent.
 
-This statement draws on primary, secondary, and tertiary business activity. Treat it as a checklist against the core concept named in the stem, not as a general opinion about business.
+Once the defining feature is restored, the assertion falls away.
 
-In this setting, support services remain tertiary when linked to goods. The wording matches the textbook relationship without adding extra conditions.
+The statement is false.
+'] WHERE case_id = 'CASE 3.2.48' AND tier = 'full';
+UPDATE public.economics_cases SET tactical_explanations = ARRAY['TRUE — Tertiary-sector activity provides services — banking, insurance, coaching, retail, tourism services — rather than extracting materials or manufacturing goods.
 
-No qualifying word breaks the definition or scenario, so the answer is true.', 'TRUE — This statement is correct. Remote support to foreign clients remains tertiary.
+Support services remain tertiary when linked to goods.
 
-The relevant theory comes from primary, secondary, and tertiary business activity. Identify which definition or relationship the sentence is trying to test before deciding true or false.
+The sentence therefore reports the concept accurately for this item.
 
-Applied carefully, client location does not reclassify domestic tertiary services. Nothing in the sentence stretches the concept beyond its standard use.
+The statement is true.
+', 'TRUE — Tertiary-sector activity provides services — banking, insurance, coaching, retail, tourism services — rather than extracting materials or manufacturing goods.
 
-Every part of the claim aligns with the standard concept, so the statement stands.', 'TRUE — This statement is correct. Network troubleshooting by software helpdesks counts as tertiary service activity.
+Client location does not reclassify domestic tertiary services.
 
-The relevant theory comes from primary, secondary, and tertiary business activity. Identify which definition or relationship the sentence is trying to test before deciding true or false.
+The sentence therefore reports the concept accurately for this item.
 
-Applied carefully, technical support is a tertiary service. Nothing in the sentence stretches the concept beyond its standard use.
+The statement is true.
+', 'TRUE — Tertiary-sector activity provides services — banking, insurance, coaching, retail, tourism services — rather than extracting materials or manufacturing goods.
 
-Every part of the claim aligns with the standard concept, so the statement stands.', 'TRUE — On the Fuhrmann definition used in the entrance exam, the sentence is correct. Manufacturing devices and supporting them can span secondary and tertiary activity.
+Technical support is a tertiary service.
 
-This statement draws on primary, secondary, and tertiary business activity. Treat it as a checklist against the core concept named in the stem, not as a general opinion about business.
+Under that classification the assertion describes the situation correctly.
 
-In this setting, manufacturing is secondary; support is tertiary alongside it. The wording matches the textbook relationship without adding extra conditions.
+The statement is true.
+', 'TRUE — Secondary-sector activity processes and manufactures: smelting, assembling, milling, and similar transformation of materials into goods. Tertiary-sector activity provides services — banking, insurance, coaching, retail, tourism services — rather than extracting materials or manufacturing goods.
 
-The reasoning chain is complete, so mark the statement true.', 'TRUE — The claim is correct. Writing client software is tertiary service activity.
+Manufacturing is secondary; support is tertiary alongside it.
 
-This statement draws on primary, secondary, and tertiary business activity. Treat it as a checklist against the core concept named in the stem, not as a general opinion about business.
+Nothing in the keyed reading contradicts the chapter framing used here, so the claim holds.
 
-In this setting, software services are tertiary in this context. The wording matches the textbook relationship without adding extra conditions.
+The statement is true.
+', 'TRUE — Tertiary-sector activity provides services — banking, insurance, coaching, retail, tourism services — rather than extracting materials or manufacturing goods.
 
-Every part of the claim aligns with the standard concept, so the statement stands.'] WHERE case_id = 'CASE 3.2.49' AND tier = 'full';
-UPDATE public.economics_cases SET tactical_explanations = ARRAY['TRUE — The claim is correct. Emerging economies depend largely on primary activity while advanced EU states show tertiary dominance.
+Software services are tertiary in this context.
 
-This statement draws on primary, secondary, and tertiary business activity. Treat it as a checklist against the core concept named in the stem, not as a general opinion about business.
+Nothing in the keyed reading contradicts the chapter framing used here, so the claim holds.
 
-In this setting, development shifts sector shares toward services in rich economies. The wording matches the textbook relationship without adding extra conditions.
+The statement is true.
+'] WHERE case_id = 'CASE 3.2.49' AND tier = 'full';
+UPDATE public.economics_cases SET tactical_explanations = ARRAY['TRUE — Primary-sector activity extracts raw materials from nature: farming, fishing, mining, and forestry — not manufacturing and not services. Tertiary-sector activity provides services — banking, insurance, coaching, retail, tourism services — rather than extracting materials or manufacturing goods.
 
-The reasoning chain is complete, so mark the statement true.', 'TRUE — This statement is correct. GDP measures final domestic production and supports growth comparisons when inflation-adjusted.
+Development shifts sector shares toward services in rich economies.
 
-Here you must apply ideas from primary, secondary, and tertiary business activity to a concrete situation rather than recite a definition from memory. Ownership, customer type, stakeholder group, or country of production usually decides the verdict.
+Under that classification the assertion describes the situation correctly.
 
-Applied carefully, gdp totals final output; real growth uses adjusted figures. Nothing in the sentence stretches the concept beyond its standard use.
+The statement is true.
+', 'TRUE — GDP measures the monetary value of final goods and services produced within national borders. Rebuild spending can raise measured GDP even when wellbeing falls; GDP is not a welfare index.
 
-The reasoning chain is complete, so mark the statement true.', 'TRUE — The claim is correct. GDP critics note missing income, quality limits, and disaster rebuild effects.
+Gdp totals final output; real growth uses adjusted figures.
 
-This statement draws on primary, secondary, and tertiary business activity. Treat it as a checklist against the core concept named in the stem, not as a general opinion about business.
+Nothing in the keyed reading contradicts the chapter framing used here, so the claim holds.
 
-In this setting, standard criticisms include coverage, quality, and rebuild distortions. The wording matches the textbook relationship without adding extra conditions.
+The statement is true.
+', 'TRUE — GDP measures the monetary value of final goods and services produced within national borders. Rebuild spending can raise measured GDP even when wellbeing falls; GDP is not a welfare index.
 
-Every part of the claim aligns with the standard concept, so the statement stands.', 'FALSE — Evaluated against the textbook standard, this assertion is false. GDP correlates perfectly with health and happiness in every case.
+Standard criticisms include coverage, quality, and rebuild distortions.
 
-The topic is primary, secondary, and tertiary business activity, but the decisive skill here is reading quantifiers. Words such as never, always, only, or all turn a generally true idea into a claim that can be rejected by one routine counterexample.
+The sentence therefore reports the concept accurately for this item.
 
-The statement overreaches because correlation does not mean gdp fully measures welfare. The trap is to agree with the topic while missing the one detail that breaks the logic.
+The statement is true.
+', 'FALSE — GDP measures the monetary value of final goods and services produced within national borders. Rebuild spending can raise measured GDP even when wellbeing falls; GDP is not a welfare index.
 
-Watch the absolute wording "every": exam statements often sound plausible until a single scope word turns an otherwise familiar idea into an overclaim.
+Correlation does not mean gdp fully measures welfare.
 
-Because the decisive detail is wrong, mark the statement false.', 'FALSE — This statement is false. Manufacturing components and offering after-sales support collapse into a single tertiary label.
+Once the defining feature is restored, the assertion falls away.
 
-The relevant theory comes from primary, secondary, and tertiary business activity. Identify which definition or relationship the sentence is trying to test before deciding true or false.
+The statement is false.
+', 'FALSE — Secondary-sector activity processes and manufactures: smelting, assembling, milling, and similar transformation of materials into goods. Tertiary-sector activity provides services — banking, insurance, coaching, retail, tourism services — rather than extracting materials or manufacturing goods.
 
-The statement overreaches because manufacturing stays secondary; support can be tertiary alongside it. The trap is to agree with the topic while missing the one detail that breaks the logic.
+Manufacturing stays secondary; support can be tertiary alongside it.
 
-Once the overclaim or mislabel is exposed, the only consistent answer is false.'] WHERE case_id = 'CASE 3.2.50' AND tier = 'full';
+Once the defining feature is restored, the assertion falls away.
+
+The statement is false.
+'] WHERE case_id = 'CASE 3.2.50' AND tier = 'full';

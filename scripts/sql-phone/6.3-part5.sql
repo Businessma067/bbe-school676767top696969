@@ -1,784 +1,1232 @@
 -- Update expanded explanations for 6.3-part5 (25 cases).
 -- Safe to re-run: only updates tactical_explanations.
 
-UPDATE public.economics_cases SET tactical_explanations = ARRAY['FALSE — On the Fuhrmann definition used in the entrance exam, the sentence is false. A dairy cooperative is regarded as financing its chilling and pasteurising plant soundly only when they are covered mainly by short-term credit from feed suppliers.
+UPDATE public.economics_cases SET tactical_explanations = ARRAY['FALSE — Single-year statements need cautious reading: policies, estimates, and one-offs matter.
 
-The underlying topic is reading balance sheets and income statements for structure and risk. When figures appear, the exam checks whether you can interpret them in accounting terms—what increased, what ratio is implied, and whether the label (current, non-current, equity, and so on) fits.
+Absolute or misapplied wording conflicts with the rule for "Understanding the Operating Result in Practice". Single-year statements need cautious reading: policies, estimates, and one-offs matter. Ratios (liquidity, gearing, margins, returns) put line items in context. Financial accounting serves external users; audits give reasonable, not absolute, assurance. Rejected claim: "A dairy cooperative is regarded as financing its chilling and pasteurising plant soundly only when they are covered mainly by short-term credit from feed suppliers."
 
-Apply the case evidence: Covering long-term assets mainly with current liabilities is considered risky, not sound financing. Check whether the direction of change (higher/lower, above/below the threshold) matches what the statement asserts.
+The statement is false.', 'FALSE — Single-year statements need cautious reading: policies, estimates, and one-offs matter.
 
-The statement sounds plausible but fails on precision, so it is false.', 'FALSE — The claim is false. The balance between chilling and pasteurising plant and dairy products awaiting delivery on a dairy cooperative''s statements has no bearing on whether the business is becoming more or less capital-intensive.
+Absolute or misapplied wording conflicts with the rule for "Understanding the Operating Result in Practice". Single-year statements need cautious reading: policies, estimates, and one-offs matter. Ratios (liquidity, gearing, margins, returns) put line items in context. Financial accounting serves external users; audits give reasonable, not absolute, assurance. Rejected claim: "The balance between chilling and pasteurising plant and dairy products awaiting delivery on a dairy cooperative''s statements has no bearing on whether the business is becoming more or less capital-…"
 
-The task tests reading balance sheets and income statements for structure and risk. Financial statements distinguish stocks (balance sheet at a date) from flows (income and cash over a period); many false statements swap those roles.
+The statement is false.', 'TRUE — Single-year statements need cautious reading: policies, estimates, and one-offs matter.
 
-Apply the case evidence: The asset mix directly reflects capital intensity; the balance is not irrelevant. Check whether the direction of change (higher/lower, above/below the threshold) matches what the statement asserts.
+The claim states: The wages of clerical support employees are kept out of cost of sales. The reason given — their duties are not directly involved in producing the goods that are sold. — fits the chapter rule. Single-year statements need cautious reading: policies, estimates, and one-offs matter. Ratios (liquidity, gearing, margins, returns) put line items in context. Financial accounting serves external users; audits give reasonable, not absolute, assurance.
 
-Because the decisive detail is wrong, mark the statement false.', 'TRUE — This statement is correct. The wages of clerical support employees are kept out of cost of sales because their duties are not directly involved in producing the goods that are sold.
+The statement is true.', 'TRUE — Single-year statements need cautious reading: policies, estimates, and one-offs matter.
 
-This is an accounting reasoning item on reading balance sheets and income statements for structure and risk. Decide whether the sentence correctly describes how a transaction, balance-sheet line, or period result affects assets, liabilities, or equity.
+The wording matches the relevant rule for "Understanding the Operating Result in Practice". Single-year statements need cautious reading: policies, estimates, and one-offs matter. Ratios (liquidity, gearing, margins, returns) put line items in context. Financial accounting serves external users; audits give reasonable, not absolute, assurance. Applied here: "Pay earned by freight dispatch clerks is treated as a distribution cost rather than cost of sales, since their work happens after production of the goods is complete."
 
-From the figures or classification rule involved, cost of sales reflects direct production costs only, not general administrative wages. Accounting statements fail when a loss is treated as increasing equity, when a flow is placed on the balance sheet, or when a ratio inequality is reversed.
+The statement is true.', 'TRUE — Single-year statements need cautious reading: policies, estimates, and one-offs matter.
 
-The reasoning chain is complete, so mark the statement true.', 'TRUE — On the Fuhrmann definition used in the entrance exam, the sentence is correct. Pay earned by freight dispatch clerks is treated as a distribution cost rather than cost of sales, since their work happens after production of the goods is complete.
+The claim states: Amounts paid to customer account executives are excluded from cost of sales. The reason given — selling activity takes place only after the goods have already been produced. — fits the chapter rule. Single-year statements need cautious reading: policies, estimates, and one-offs matter. Ratios (liquidity, gearing, margins, returns) put line items in context. Financial accounting serves external users; audits give reasonable, not absolute, assurance.
 
-The task tests reading balance sheets and income statements for structure and risk. Financial statements distinguish stocks (balance sheet at a date) from flows (income and cash over a period); many false statements swap those roles.
+The statement is true.'] WHERE case_id = 'CASE 6.3.101' AND tier = 'full';
+UPDATE public.economics_cases SET tactical_explanations = ARRAY['TRUE — Single-year statements need cautious reading: policies, estimates, and one-offs matter.
 
-Apply the case evidence: Distribution wages are incurred after production and are not part of cost of sales. Check whether the direction of change (higher/lower, above/below the threshold) matches what the statement asserts.
+The wording matches the relevant rule for "Share Price and Market Capitalisation 102". Single-year statements need cautious reading: policies, estimates, and one-offs matter. Ratios (liquidity, gearing, margins, returns) put line items in context. Financial accounting serves external users; audits give reasonable, not absolute, assurance. Applied here: "Carrying value per share, together with closing share price, high and low prices, dividend per share, dividend yield, earnings per share and the price-earnings ratio, are figures that shareholders …"
 
-Every part of the claim aligns with the standard concept, so the statement stands.', 'TRUE — On the Fuhrmann definition used in the entrance exam, the sentence is correct. Amounts paid to customer account executives are excluded from cost of sales because selling activity takes place only after the goods have already been produced.
+The statement is true.', 'TRUE — Market capitalisation values the equity at the latest closing price times shares outstanding.
 
-The task tests reading balance sheets and income statements for structure and risk. Financial statements distinguish stocks (balance sheet at a date) from flows (income and cash over a period); many false statements swap those roles.
+Name the identity in words: market capitalisation = last closing price × shares outstanding.
 
-Apply the case evidence: Selling costs occur after production and are excluded from cost of sales. Check whether the direction of change (higher/lower, above/below the threshold) matches what the statement asserts.
+$$
+P_{\text{last}} = 43, \quad \text{Shares} = 512,000
+$$
 
-The reasoning chain is complete, so mark the statement true.'] WHERE case_id = 'CASE 6.3.101' AND tier = 'full';
-UPDATE public.economics_cases SET tactical_explanations = ARRAY['TRUE — This statement is correct. Carrying value per share, together with closing share price, high and low prices, dividend per share, dividend yield, earnings per share and the price-earnings ratio, are figures that shareholders and potential investors typically use when evaluating a company''s shares.
+$$
+\text{MCap} = 43 \times 512,000 = €22.02\text{ million}
+$$
 
-This item belongs to the accounting block on reading balance sheets and income statements for structure and risk. Ratio and classification questions ask you to connect a figure or comparison in the case with the correct statement category, not merely to recognise a number.
+Threshold: exceeds €17.6 million. Actual €22.02 million.
 
-From the figures or classification rule involved, these are the textbook''s key stock figures. Accounting statements fail when a loss is treated as increasing equity, when a flow is placed on the balance sheet, or when a ratio inequality is reversed.
+Reading the arithmetic against the claim: market cap €22.02m exceeds €17.6m so the statement holds.
 
-Every part of the claim aligns with the standard concept, so the statement stands.', 'TRUE — This statement is correct. Market capitalisation at the last month exceeds €17.6 million.
+The statement is true.', 'TRUE — EPS here links the operating result (in € thousands) to shares outstanding (scaled to thousands of shares).
 
-This item belongs to the accounting block on reading balance sheets and income statements for structure and risk. Ratio and classification questions ask you to connect a figure or comparison in the case with the correct statement category, not merely to recognise a number.
+Name the identity in words: EPS = operating result (€ thousands) ÷ (shares outstanding ÷ 1,000).
 
-From the figures or classification rule involved, market capitalisation ≈ €22.0 million. Accounting statements fail when a loss is treated as increasing equity, when a flow is placed on the balance sheet, or when a ratio inequality is reversed.
+$$
+\text{Operating result} = 282, \quad \frac{\text{Shares}}{1,000} = 512
+$$
 
-Every part of the claim aligns with the standard concept, so the statement stands.', 'TRUE — This statement is correct. Earnings per share exceeds €0.41.
+$$
+EPS = \frac{282}{512} = €0.5508
+$$
 
-This item belongs to the accounting block on reading balance sheets and income statements for structure and risk. Ratio and classification questions ask you to connect a figure or comparison in the case with the correct statement category, not merely to recognise a number.
+Threshold: exceeds €0.41. Actual ≈ €0.55.
 
-From the figures or classification rule involved, earnings per share ≈ €0.55. Accounting statements fail when a loss is treated as increasing equity, when a flow is placed on the balance sheet, or when a ratio inequality is reversed.
+Reading the arithmetic against the claim: EPS €0.55 exceeds €0.41 so the statement holds.
 
-The reasoning chain is complete, so mark the statement true.', 'TRUE — On the Fuhrmann definition used in the entrance exam, the sentence is correct. Total shares traded over six months exceed 26% of shares outstanding.
+The statement is true.', 'TRUE — Six-month share turnover compares cumulative volume traded with the number of shares outstanding.
 
-The underlying topic is reading balance sheets and income statements for structure and risk. When figures appear, the exam checks whether you can interpret them in accounting terms—what increased, what ratio is implied, and whether the label (current, non-current, equity, and so on) fits.
+Name the identity in words: turnover = six-month volume ÷ shares outstanding.
 
-Apply the case evidence: Turnover ≈ 73.8% of shares outstanding. Check whether the direction of change (higher/lower, above/below the threshold) matches what the statement asserts.
+$$
+\text{Volume} = 378,000, \quad \text{Shares} = 512,000
+$$
 
-Every part of the claim aligns with the standard concept, so the statement stands.', 'FALSE — Evaluated against the textbook standard, this assertion is false. The closing share price rose by more than 33.4% from first to last month.
+$$
+\frac{378,000}{512,000} = 73.8\%
+$$
 
-This item belongs to the accounting block on reading balance sheets and income statements for structure and risk. Ratio and classification questions ask you to connect a figure or comparison in the case with the correct statement category, not merely to recognise a number.
+Threshold: exceed 26%. Actual 73.8%.
 
-From the figures or classification rule involved, price change ≈ 16.2%. Accounting statements fail when a loss is treated as increasing equity, when a flow is placed on the balance sheet, or when a ratio inequality is reversed.
+Reading the arithmetic against the claim: turnover 73.8% exceeds 26% so the statement holds.
 
-Once the overclaim or mislabel is exposed, the only consistent answer is false.'] WHERE case_id = 'CASE 6.3.102' AND tier = 'full';
-UPDATE public.economics_cases SET tactical_explanations = ARRAY['FALSE — This statement is false. A mining equipment lessor is regarded as financing its heavy mining equipment held for hire soundly only when they are covered mainly by a short-term equipment rental payable.
+The statement is true.', 'FALSE — Price appreciation from the first listed month to the last is a simple percentage change on the closing prices.
 
-This item belongs to the accounting block on reading balance sheets and income statements for structure and risk. Ratio and classification questions ask you to connect a figure or comparison in the case with the correct statement category, not merely to recognise a number.
+Name the identity in words: price rise = (last closing price − first closing price) ÷ first closing price.
 
-From the figures or classification rule involved, covering long-term assets mainly with current liabilities is considered risky, not sound financing. Accounting statements fail when a loss is treated as increasing equity, when a flow is placed on the balance sheet, or when a ratio inequality is reversed.
+$$
+P_{\text{first}} = 37, \quad P_{\text{last}} = 43
+$$
 
-Once the overclaim or mislabel is exposed, the only consistent answer is false.', 'FALSE — Evaluated against the textbook standard, this assertion is false. The balance between heavy mining equipment held for hire and replacement parts inventory on a mining equipment lessor''s statements has no bearing on whether the business is becoming more or less capital-intensive.
+$$
+\frac{43 - 37}{37} = 16.2\%
+$$
 
-This item belongs to the accounting block on reading balance sheets and income statements for structure and risk. Ratio and classification questions ask you to connect a figure or comparison in the case with the correct statement category, not merely to recognise a number.
+Threshold: more than 33.4%. Actual 16.2%.
 
-From the figures or classification rule involved, the asset mix directly reflects capital intensity; the balance is not irrelevant. Accounting statements fail when a loss is treated as increasing equity, when a flow is placed on the balance sheet, or when a ratio inequality is reversed.
+Reading the arithmetic against the claim: the rise is 16.2%, which does not exceed 33.4% so the statement does not hold.
 
-Once the overclaim or mislabel is exposed, the only consistent answer is false.', 'TRUE — On the Fuhrmann definition used in the entrance exam, the sentence is correct. Production-line materials consumed in manufacturing are included within cost of sales because they are incurred directly in producing the goods that a mining equipment lessor has sold.
+The statement is false.'] WHERE case_id = 'CASE 6.3.102' AND tier = 'full';
+UPDATE public.economics_cases SET tactical_explanations = ARRAY['FALSE — Single-year statements need cautious reading: policies, estimates, and one-offs matter.
 
-The task tests reading balance sheets and income statements for structure and risk. Financial statements distinguish stocks (balance sheet at a date) from flows (income and cash over a period); many false statements swap those roles.
+Absolute or misapplied wording conflicts with the rule for "Understanding the Operating Result Explained". Single-year statements need cautious reading: policies, estimates, and one-offs matter. Ratios (liquidity, gearing, margins, returns) put line items in context. Financial accounting serves external users; audits give reasonable, not absolute, assurance. Rejected claim: "A mining equipment lessor is regarded as financing its heavy mining equipment held for hire soundly only when they are covered mainly by a short-term equipment rental payable."
 
-Apply the case evidence: Direct production or acquisition costs are exactly what cost of sales is meant to capture. Check whether the direction of change (higher/lower, above/below the threshold) matches what the statement asserts.
+The statement is false.', 'FALSE — Single-year statements need cautious reading: policies, estimates, and one-offs matter.
 
-No qualifying word breaks the definition or scenario, so the answer is true.', 'TRUE — On the Fuhrmann definition used in the entrance exam, the sentence is correct. The wages of head office coordinators are kept out of cost of sales because their duties are not directly involved in producing the goods that are sold.
+Absolute or misapplied wording conflicts with the rule for "Understanding the Operating Result Explained". Single-year statements need cautious reading: policies, estimates, and one-offs matter. Ratios (liquidity, gearing, margins, returns) put line items in context. Financial accounting serves external users; audits give reasonable, not absolute, assurance. Rejected claim: "The balance between heavy mining equipment held for hire and replacement parts inventory on a mining equipment lessor''s statements has no bearing on whether the business is becoming more or less ca…"
 
-The task tests reading balance sheets and income statements for structure and risk. Financial statements distinguish stocks (balance sheet at a date) from flows (income and cash over a period); many false statements swap those roles.
+The statement is false.', 'TRUE — Single-year statements need cautious reading: policies, estimates, and one-offs matter.
 
-Apply the case evidence: Cost of sales reflects direct production costs only, not general administrative wages. Check whether the direction of change (higher/lower, above/below the threshold) matches what the statement asserts.
+The claim states: Production-line materials consumed in manufacturing are included within cost of sales. The reason given — they are incurred directly in producing the goods that a mining equipment lessor has sold. — fits the chapter rule. Single-year statements need cautious reading: policies, estimates, and one-offs matter. Ratios (liquidity, gearing, margins, returns) put line items in context. Financial accounting serves external users; audits give reasonable, not absolute, assurance.
 
-The reasoning chain is complete, so mark the statement true.', 'FALSE — Evaluated against the textbook standard, this assertion is false. A textile dyeing company is regarded as financing its dyeing vats and finishing lines soundly only when they are covered mainly by short-term credit from dye suppliers.
+The statement is true.', 'TRUE — Single-year statements need cautious reading: policies, estimates, and one-offs matter.
 
-This item belongs to the accounting block on reading balance sheets and income statements for structure and risk. Ratio and classification questions ask you to connect a figure or comparison in the case with the correct statement category, not merely to recognise a number.
+The claim states: The wages of head office coordinators are kept out of cost of sales. The reason given — their duties are not directly involved in producing the goods that are sold. — fits the chapter rule. Single-year statements need cautious reading: policies, estimates, and one-offs matter. Ratios (liquidity, gearing, margins, returns) put line items in context. Financial accounting serves external users; audits give reasonable, not absolute, assurance.
 
-From the figures or classification rule involved, covering long-term assets mainly with current liabilities is considered risky, not sound financing. Accounting statements fail when a loss is treated as increasing equity, when a flow is placed on the balance sheet, or when a ratio inequality is reversed.
+The statement is true.', 'FALSE — Single-year statements need cautious reading: policies, estimates, and one-offs matter.
 
-Once the overclaim or mislabel is exposed, the only consistent answer is false.'] WHERE case_id = 'CASE 6.3.103' AND tier = 'full';
-UPDATE public.economics_cases SET tactical_explanations = ARRAY['TRUE — This statement is correct. Liquidity refers to the ability of a business to pay its bills and repay its debts on time.
+Absolute or misapplied wording conflicts with the rule for "Understanding the Operating Result Explained". Single-year statements need cautious reading: policies, estimates, and one-offs matter. Ratios (liquidity, gearing, margins, returns) put line items in context. Financial accounting serves external users; audits give reasonable, not absolute, assurance. Rejected claim: "A textile dyeing company is regarded as financing its dyeing vats and finishing lines soundly only when they are covered mainly by short-term credit from dye suppliers."
 
-This is an accounting reasoning item on reading balance sheets and income statements for structure and risk. Decide whether the sentence correctly describes how a transaction, balance-sheet line, or period result affects assets, liabilities, or equity.
+The statement is false.'] WHERE case_id = 'CASE 6.3.103' AND tier = 'full';
+UPDATE public.economics_cases SET tactical_explanations = ARRAY['TRUE — Single-year statements need cautious reading: policies, estimates, and one-offs matter.
 
-From the figures or classification rule involved, liquidity is about timely payment of obligations. Accounting statements fail when a loss is treated as increasing equity, when a flow is placed on the balance sheet, or when a ratio inequality is reversed.
+The wording matches the relevant rule for "Earnings Per Share From Reported Figures 104". Single-year statements need cautious reading: policies, estimates, and one-offs matter. Ratios (liquidity, gearing, margins, returns) put line items in context. Financial accounting serves external users; audits give reasonable, not absolute, assurance. Applied here: "Liquidity refers to the ability of a business to pay its bills and repay its debts on time."
 
-The reasoning chain is complete, so mark the statement true.', 'TRUE — Evaluated against the textbook standard, this assertion is correct. Market capitalisation rose by more than 18% over the period.
+The statement is true.', 'TRUE — With shares outstanding unchanged, market-cap growth equals the percentage change in the share price between first and last month.
 
-This item belongs to the accounting block on reading balance sheets and income statements for structure and risk. Ratio and classification questions ask you to connect a figure or comparison in the case with the correct statement category, not merely to recognise a number.
+Name the identity in words: market-cap change = (last MCap − first MCap) ÷ first MCap.
 
-From the figures or classification rule involved, €16.3m → €20.6m. Accounting statements fail when a loss is treated as increasing equity, when a flow is placed on the balance sheet, or when a ratio inequality is reversed.
+$$
+\text{MCap}_{\text{first}} = 31 \times 527,000 = €16.34\text{m}
+$$
 
-Every part of the claim aligns with the standard concept, so the statement stands.', 'TRUE — On the Fuhrmann definition used in the entrance exam, the sentence is correct. Earnings per share exceeds €0.4.
+$$
+\text{MCap}_{\text{last}} = 39 \times 527,000 = €20.55\text{m}
+$$
 
-The underlying topic is reading balance sheets and income statements for structure and risk. When figures appear, the exam checks whether you can interpret them in accounting terms—what increased, what ratio is implied, and whether the label (current, non-current, equity, and so on) fits.
+$$
+\frac{20.55 - 16.34}{16.34} = 25.8\%
+$$
 
-Apply the case evidence: Earnings per share ≈ €0.56. Check whether the direction of change (higher/lower, above/below the threshold) matches what the statement asserts.
+Threshold: more than 18%. Actual 25.8%.
 
-Every part of the claim aligns with the standard concept, so the statement stands.', 'TRUE — Evaluated against the textbook standard, this assertion is correct. Total shares traded over six months exceed 18.8% of shares outstanding.
+Reading the arithmetic against the claim: MCap rose 25.8%, which exceeds 18% so the statement holds.
 
-This item belongs to the accounting block on reading balance sheets and income statements for structure and risk. Ratio and classification questions ask you to connect a figure or comparison in the case with the correct statement category, not merely to recognise a number.
+The statement is true.', 'TRUE — EPS here links the operating result (in € thousands) to shares outstanding (scaled to thousands of shares).
 
-From the figures or classification rule involved, turnover ≈ 59.6% of shares outstanding. Accounting statements fail when a loss is treated as increasing equity, when a flow is placed on the balance sheet, or when a ratio inequality is reversed.
+Name the identity in words: EPS = operating result (€ thousands) ÷ (shares outstanding ÷ 1,000).
 
-Every part of the claim aligns with the standard concept, so the statement stands.', 'FALSE — On the Fuhrmann definition used in the entrance exam, the sentence is false. The closing share price rose by more than 31% from first to last month.
+$$
+\text{Operating result} = 294, \quad \frac{\text{Shares}}{1,000} = 527
+$$
 
-The underlying topic is reading balance sheets and income statements for structure and risk. When figures appear, the exam checks whether you can interpret them in accounting terms—what increased, what ratio is implied, and whether the label (current, non-current, equity, and so on) fits.
+$$
+EPS = \frac{294}{527} = €0.5579
+$$
 
-Apply the case evidence: Price change ≈ 25.8%. Check whether the direction of change (higher/lower, above/below the threshold) matches what the statement asserts.
+Threshold: exceeds €0.4. Actual ≈ €0.56.
 
-Once the overclaim or mislabel is exposed, the only consistent answer is false.'] WHERE case_id = 'CASE 6.3.104' AND tier = 'full';
-UPDATE public.economics_cases SET tactical_explanations = ARRAY['TRUE — The claim is correct. Only an issue of new shares by the corporation itself raises equity finance; later trading between investors does not.
+Reading the arithmetic against the claim: EPS €0.56 exceeds €0.4 so the statement holds.
 
-The underlying topic is reading balance sheets and income statements for structure and risk. When figures appear, the exam checks whether you can interpret them in accounting terms—what increased, what ratio is implied, and whether the label (current, non-current, equity, and so on) fits.
+The statement is true.', 'TRUE — Six-month share turnover compares cumulative volume traded with the number of shares outstanding.
 
-Apply the case evidence: New share capital arises at issue, not in aftermarket trades. Check whether the direction of change (higher/lower, above/below the threshold) matches what the statement asserts.
+Name the identity in words: turnover = six-month volume ÷ shares outstanding.
 
-Every part of the claim aligns with the standard concept, so the statement stands.', 'TRUE — Evaluated against the textbook standard, this assertion is correct. Market capitalisation rose by more than 15.2% over the period.
+$$
+\text{Volume} = 314,000, \quad \text{Shares} = 527,000
+$$
 
-This item belongs to the accounting block on reading balance sheets and income statements for structure and risk. Ratio and classification questions ask you to connect a figure or comparison in the case with the correct statement category, not merely to recognise a number.
+$$
+\frac{314,000}{527,000} = 59.6\%
+$$
 
-From the figures or classification rule involved, €14.7m → €18.4m. Accounting statements fail when a loss is treated as increasing equity, when a flow is placed on the balance sheet, or when a ratio inequality is reversed.
+Threshold: exceed 18.8%. Actual 59.6%.
 
-No qualifying word breaks the definition or scenario, so the answer is true.', 'TRUE — The claim is correct. Earnings per share exceeds €0.44.
+Reading the arithmetic against the claim: turnover 59.6% exceeds 18.8% so the statement holds.
 
-The underlying topic is reading balance sheets and income statements for structure and risk. When figures appear, the exam checks whether you can interpret them in accounting terms—what increased, what ratio is implied, and whether the label (current, non-current, equity, and so on) fits.
+The statement is true.', 'FALSE — Price appreciation from the first listed month to the last is a simple percentage change on the closing prices.
 
-Apply the case evidence: Earnings per share ≈ €0.59. Check whether the direction of change (higher/lower, above/below the threshold) matches what the statement asserts.
+Name the identity in words: price rise = (last closing price − first closing price) ÷ first closing price.
 
-Every part of the claim aligns with the standard concept, so the statement stands.', 'FALSE — On the Fuhrmann definition used in the entrance exam, the sentence is false. Peak monthly share turnover exceeds 95,451 shares.
+$$
+P_{\text{first}} = 31, \quad P_{\text{last}} = 39
+$$
 
-The underlying topic is reading balance sheets and income statements for structure and risk. When figures appear, the exam checks whether you can interpret them in accounting terms—what increased, what ratio is implied, and whether the label (current, non-current, equity, and so on) fits.
+$$
+\frac{39 - 31}{31} = 25.8\%
+$$
 
-Apply the case evidence: Peak monthly volume = 85,000. Check whether the direction of change (higher/lower, above/below the threshold) matches what the statement asserts.
+Threshold: more than 31%. Actual 25.8%.
 
-Because the decisive detail is wrong, mark the statement false.', 'TRUE — This statement is correct. Highest closing price is more than 18.6% above the lowest.
+Reading the arithmetic against the claim: the rise is 25.8%, which does not exceed 31% so the statement does not hold.
 
-This item belongs to the accounting block on reading balance sheets and income statements for structure and risk. Ratio and classification questions ask you to connect a figure or comparison in the case with the correct statement category, not merely to recognise a number.
+The statement is false.'] WHERE case_id = 'CASE 6.3.104' AND tier = 'full';
+UPDATE public.economics_cases SET tactical_explanations = ARRAY['TRUE — Single-year statements need cautious reading: policies, estimates, and one-offs matter.
 
-From the figures or classification rule involved, range €36–€45. Accounting statements fail when a loss is treated as increasing equity, when a flow is placed on the balance sheet, or when a ratio inequality is reversed.
+The wording matches the relevant rule for "Share Price and Market Capitalisation 105". Single-year statements need cautious reading: policies, estimates, and one-offs matter. Ratios (liquidity, gearing, margins, returns) put line items in context. Financial accounting serves external users; audits give reasonable, not absolute, assurance. Applied here: "Only an issue of new shares by the corporation itself raises equity finance; later trading between investors does not."
 
-No qualifying word breaks the definition or scenario, so the answer is true.'] WHERE case_id = 'CASE 6.3.105' AND tier = 'full';
-UPDATE public.economics_cases SET tactical_explanations = ARRAY['TRUE — This statement is correct. A high or rising price-earnings ratio can indicate either that a company''s shares have become relatively expensive compared with its earnings, or that investors expect stronger future earnings growth.
+The statement is true.', 'TRUE — With shares outstanding unchanged, market-cap growth equals the percentage change in the share price between first and last month.
 
-This item belongs to the accounting block on reading balance sheets and income statements for structure and risk. Ratio and classification questions ask you to connect a figure or comparison in the case with the correct statement category, not merely to recognise a number.
+Name the identity in words: market-cap change = (last MCap − first MCap) ÷ first MCap.
 
-From the figures or classification rule involved, this matches the textbook reading of a high price-earnings ratio. Accounting statements fail when a loss is treated as increasing equity, when a flow is placed on the balance sheet, or when a ratio inequality is reversed.
+$$
+\text{MCap}_{\text{first}} = 36 \times 409,000 = €14.72\text{m}
+$$
 
-Every part of the claim aligns with the standard concept, so the statement stands.', 'FALSE — This statement is false. The closing share price rose by more than 16.3% from first to last month.
+$$
+\text{MCap}_{\text{last}} = 45 \times 409,000 = €18.41\text{m}
+$$
 
-This item belongs to the accounting block on reading balance sheets and income statements for structure and risk. Ratio and classification questions ask you to connect a figure or comparison in the case with the correct statement category, not merely to recognise a number.
+$$
+\frac{18.41 - 14.72}{14.72} = 25.0\%
+$$
 
-From the figures or classification rule involved, price change ≈ -40.5%. Accounting statements fail when a loss is treated as increasing equity, when a flow is placed on the balance sheet, or when a ratio inequality is reversed.
+Threshold: more than 15.2%. Actual 25.0%.
 
-The statement sounds plausible but fails on precision, so it is false.', 'TRUE — Evaluated against the textbook standard, this assertion is correct. Market capitalisation at the last month exceeds €17.7 million.
+Reading the arithmetic against the claim: MCap rose 25.0%, which exceeds 15.2% so the statement holds.
 
-This item belongs to the accounting block on reading balance sheets and income statements for structure and risk. Ratio and classification questions ask you to connect a figure or comparison in the case with the correct statement category, not merely to recognise a number.
+The statement is true.', 'TRUE — EPS here links the operating result (in € thousands) to shares outstanding (scaled to thousands of shares).
 
-From the figures or classification rule involved, market capitalisation ≈ €19.2 million. Accounting statements fail when a loss is treated as increasing equity, when a flow is placed on the balance sheet, or when a ratio inequality is reversed.
+Name the identity in words: EPS = operating result (€ thousands) ÷ (shares outstanding ÷ 1,000).
 
-Every part of the claim aligns with the standard concept, so the statement stands.', 'FALSE — This statement is false. Market capitalisation rose by more than 8.5% over the period.
+$$
+\text{Operating result} = 242, \quad \frac{\text{Shares}}{1,000} = 409
+$$
 
-This item belongs to the accounting block on reading balance sheets and income statements for structure and risk. Ratio and classification questions ask you to connect a figure or comparison in the case with the correct statement category, not merely to recognise a number.
+$$
+EPS = \frac{242}{409} = €0.5917
+$$
 
-From the figures or classification rule involved, €32.3m → €19.2m. Accounting statements fail when a loss is treated as increasing equity, when a flow is placed on the balance sheet, or when a ratio inequality is reversed.
+Threshold: exceeds €0.44. Actual ≈ €0.59.
 
-Because the decisive detail is wrong, mark the statement false.', 'FALSE — Evaluated against the textbook standard, this assertion is false. Operating result is below €212 thousand.
+Reading the arithmetic against the claim: EPS €0.59 exceeds €0.44 so the statement holds.
 
-This item belongs to the accounting block on reading balance sheets and income statements for structure and risk. Ratio and classification questions ask you to connect a figure or comparison in the case with the correct statement category, not merely to recognise a number.
+The statement is true.', 'FALSE — Peak monthly turnover is simply the largest shares-traded figure among the months in the table.
 
-From the figures or classification rule involved, operating result = 313. Accounting statements fail when a loss is treated as increasing equity, when a flow is placed on the balance sheet, or when a ratio inequality is reversed.
+Scan each month''s volume and take the maximum.
 
-The statement sounds plausible but fails on precision, so it is false.'] WHERE case_id = 'CASE 6.3.106' AND tier = 'full';
-UPDATE public.economics_cases SET tactical_explanations = ARRAY['FALSE — This statement is false. The balance between dyeing vats and finishing lines and dyed fabric stock on a textile dyeing company''s statements has no bearing on whether the business is becoming more or less capital-intensive.
+$$
+\text{Peak volume} = 85,000 \quad (March)
+$$
 
-This is an accounting reasoning item on reading balance sheets and income statements for structure and risk. Decide whether the sentence correctly describes how a transaction, balance-sheet line, or period result affects assets, liabilities, or equity.
+Threshold: exceeds 95,451. Actual 85,000.
 
-From the figures or classification rule involved, the asset mix directly reflects capital intensity; the balance is not irrelevant. Accounting statements fail when a loss is treated as increasing equity, when a flow is placed on the balance sheet, or when a ratio inequality is reversed.
+Reading the arithmetic against the claim: peak volume 85,000 does not exceed 95,451 so the statement does not hold.
 
-The statement sounds plausible but fails on precision, so it is false.', 'TRUE — On the Fuhrmann definition used in the entrance exam, the sentence is correct. Pay earned by transport scheduling staff is treated as a distribution cost rather than cost of sales, since their work happens after production of the goods is complete.
+The statement is false.', 'TRUE — The high–low gap is the percentage by which the peak closing price exceeds the trough closing price in the table.
 
-The task tests reading balance sheets and income statements for structure and risk. Financial statements distinguish stocks (balance sheet at a date) from flows (income and cash over a period); many false statements swap those roles.
+Name the identity in words: high–low gap = (highest close − lowest close) ÷ lowest close.
 
-Apply the case evidence: Distribution wages are incurred after production and are not part of cost of sales. Check whether the direction of change (higher/lower, above/below the threshold) matches what the statement asserts.
+$$
+P_{\max} = 45, \quad P_{\min} = 36
+$$
 
-Every part of the claim aligns with the standard concept, so the statement stands.', 'FALSE — Evaluated against the textbook standard, this assertion is false. An appliance repair network is regarded as financing its diagnostic and repair equipment soundly only when they are covered mainly by short-term credit from components suppliers.
+$$
+\frac{45 - 36}{36} = 25.0\%
+$$
 
-This item belongs to the accounting block on reading balance sheets and income statements for structure and risk. Ratio and classification questions ask you to connect a figure or comparison in the case with the correct statement category, not merely to recognise a number.
+Threshold: more than 18.6%. Actual 25.0%.
 
-From the figures or classification rule involved, covering long-term assets mainly with current liabilities is considered risky, not sound financing. Accounting statements fail when a loss is treated as increasing equity, when a flow is placed on the balance sheet, or when a ratio inequality is reversed.
+Reading the arithmetic against the claim: the gap is 25.0%, which exceeds 18.6% so the statement holds.
 
-The statement sounds plausible but fails on precision, so it is false.', 'FALSE — The claim is false. The balance between diagnostic and repair equipment and spare repair components on an appliance repair network''s statements has no bearing on whether the business is becoming more or less capital-intensive.
+The statement is true.'] WHERE case_id = 'CASE 6.3.105' AND tier = 'full';
+UPDATE public.economics_cases SET tactical_explanations = ARRAY['TRUE — Single-year statements need cautious reading: policies, estimates, and one-offs matter.
 
-The task tests reading balance sheets and income statements for structure and risk. Financial statements distinguish stocks (balance sheet at a date) from flows (income and cash over a period); many false statements swap those roles.
+The wording matches the relevant rule for "Listed Company Performance Charts 106". Single-year statements need cautious reading: policies, estimates, and one-offs matter. Ratios (liquidity, gearing, margins, returns) put line items in context. Financial accounting serves external users; audits give reasonable, not absolute, assurance. Applied here: "A high or rising price-earnings ratio can indicate either that a company''s shares have become relatively expensive compared with its earnings, or that investors expect stronger future earnings growth."
 
-Apply the case evidence: The asset mix directly reflects capital intensity; the balance is not irrelevant. Check whether the direction of change (higher/lower, above/below the threshold) matches what the statement asserts.
+The statement is true.', 'FALSE — Price appreciation from the first listed month to the last is a simple percentage change on the closing prices.
 
-Once the overclaim or mislabel is exposed, the only consistent answer is false.', 'TRUE — The claim is correct. Amounts paid to sales support staff are excluded from cost of sales because selling activity takes place only after the goods have already been produced.
+Name the identity in words: price rise = (last closing price − first closing price) ÷ first closing price.
 
-The task tests reading balance sheets and income statements for structure and risk. Financial statements distinguish stocks (balance sheet at a date) from flows (income and cash over a period); many false statements swap those roles.
+$$
+P_{\text{first}} = 37, \quad P_{\text{last}} = 22
+$$
 
-Apply the case evidence: Selling costs occur after production and are excluded from cost of sales. Check whether the direction of change (higher/lower, above/below the threshold) matches what the statement asserts.
+$$
+\frac{22 - 37}{37} = -40.5\%
+$$
 
-Every part of the claim aligns with the standard concept, so the statement stands.'] WHERE case_id = 'CASE 6.3.107' AND tier = 'full';
-UPDATE public.economics_cases SET tactical_explanations = ARRAY['FALSE — Evaluated against the textbook standard, this assertion is false. The closing share price rose by more than 22.2% from first to last month.
+Threshold: more than 16.3%. Actual -40.5%.
 
-This item belongs to the accounting block on reading balance sheets and income statements for structure and risk. Ratio and classification questions ask you to connect a figure or comparison in the case with the correct statement category, not merely to recognise a number.
+Reading the arithmetic against the claim: the rise is -40.5%, which does not exceed 16.3% so the statement does not hold.
 
-From the figures or classification rule involved, price change ≈ -25.0%. Accounting statements fail when a loss is treated as increasing equity, when a flow is placed on the balance sheet, or when a ratio inequality is reversed.
+The statement is false.', 'TRUE — Market capitalisation values the equity at the latest closing price times shares outstanding.
 
-Because the decisive detail is wrong, mark the statement false.', 'FALSE — This statement is false. Market capitalisation rose by more than 19.9% over the period.
+Name the identity in words: market capitalisation = last closing price × shares outstanding.
 
-This item belongs to the accounting block on reading balance sheets and income statements for structure and risk. Ratio and classification questions ask you to connect a figure or comparison in the case with the correct statement category, not merely to recognise a number.
+$$
+P_{\text{last}} = 22, \quad \text{Shares} = 873,000
+$$
 
-From the figures or classification rule involved, €12.1m → €9.1m. Accounting statements fail when a loss is treated as increasing equity, when a flow is placed on the balance sheet, or when a ratio inequality is reversed.
+$$
+\text{MCap} = 22 \times 873,000 = €19.21\text{ million}
+$$
 
-The statement sounds plausible but fails on precision, so it is false.', 'FALSE — On the Fuhrmann definition used in the entrance exam, the sentence is false. Highest closing price is more than 35.9% above the lowest.
+Threshold: exceeds €17.7 million. Actual €19.21 million.
 
-The underlying topic is reading balance sheets and income statements for structure and risk. When figures appear, the exam checks whether you can interpret them in accounting terms—what increased, what ratio is implied, and whether the label (current, non-current, equity, and so on) fits.
+Reading the arithmetic against the claim: market cap €19.21m exceeds €17.7m so the statement holds.
 
-Apply the case evidence: Range €21–€28. Check whether the direction of change (higher/lower, above/below the threshold) matches what the statement asserts.
+The statement is true.', 'FALSE — With shares outstanding unchanged, market-cap growth equals the percentage change in the share price between first and last month.
 
-The statement sounds plausible but fails on precision, so it is false.', 'FALSE — Evaluated against the textbook standard, this assertion is false. Operating result is below €220 thousand.
+Name the identity in words: market-cap change = (last MCap − first MCap) ÷ first MCap.
 
-This item belongs to the accounting block on reading balance sheets and income statements for structure and risk. Ratio and classification questions ask you to connect a figure or comparison in the case with the correct statement category, not merely to recognise a number.
+$$
+\text{MCap}_{\text{first}} = 37 \times 873,000 = €32.30\text{m}
+$$
 
-From the figures or classification rule involved, operating result = 263. Accounting statements fail when a loss is treated as increasing equity, when a flow is placed on the balance sheet, or when a ratio inequality is reversed.
+$$
+\text{MCap}_{\text{last}} = 22 \times 873,000 = €19.21\text{m}
+$$
 
-The statement sounds plausible but fails on precision, so it is false.', 'TRUE — Evaluated against the textbook standard, this assertion is correct. Investors may seek income from dividends, capital gains if prices rise, influence through voting, or a hedge of real values against inflation.
+$$
+\frac{19.21 - 32.30}{32.30} = -40.5\%
+$$
 
-This is an accounting reasoning item on reading balance sheets and income statements for structure and risk. Decide whether the sentence correctly describes how a transaction, balance-sheet line, or period result affects assets, liabilities, or equity.
+Threshold: more than 8.5%. Actual -40.5%.
 
-From the figures or classification rule involved, textbook motives for buying shares include dividends, growth, voting and real-value motives. Accounting statements fail when a loss is treated as increasing equity, when a flow is placed on the balance sheet, or when a ratio inequality is reversed.
+Reading the arithmetic against the claim: MCap rose -40.5%, which does not exceed 8.5% so the statement does not hold.
 
-The reasoning chain is complete, so mark the statement true.'] WHERE case_id = 'CASE 6.3.108' AND tier = 'full';
-UPDATE public.economics_cases SET tactical_explanations = ARRAY['FALSE — Evaluated against the textbook standard, this assertion is false. A seed and fertiliser distributor is regarded as financing its seed processing plant soundly only when they are covered mainly by short-term credit from seed suppliers.
+The statement is false.', 'FALSE — Operating result is taken from the annual figures beside the share table and compared with the stated euro-thousand threshold.
 
-This item belongs to the accounting block on reading balance sheets and income statements for structure and risk. Ratio and classification questions ask you to connect a figure or comparison in the case with the correct statement category, not merely to recognise a number.
+Read the operating result from the extract:
 
-From the figures or classification rule involved, covering long-term assets mainly with current liabilities is considered risky, not sound financing. Accounting statements fail when a loss is treated as increasing equity, when a flow is placed on the balance sheet, or when a ratio inequality is reversed.
+$$
+\text{Operating result} = €313\text{ thousand}
+$$
 
-Because the decisive detail is wrong, mark the statement false.', 'FALSE — This statement is false. The balance between seed processing plant and seed and fertiliser stock on a seed and fertiliser distributor''s statements has no bearing on whether the business is becoming more or less capital-intensive.
+The statement claims this amount is below €212 thousand. Actual €313 thousand is not below that threshold.
 
-This is an accounting reasoning item on reading balance sheets and income statements for structure and risk. Decide whether the sentence correctly describes how a transaction, balance-sheet line, or period result affects assets, liabilities, or equity.
+Reading the arithmetic against the claim: operating result €313k is not below €212k so the statement does not hold.
 
-From the figures or classification rule involved, the asset mix directly reflects capital intensity; the balance is not irrelevant. Accounting statements fail when a loss is treated as increasing equity, when a flow is placed on the balance sheet, or when a ratio inequality is reversed.
+The statement is false.'] WHERE case_id = 'CASE 6.3.106' AND tier = 'full';
+UPDATE public.economics_cases SET tactical_explanations = ARRAY['FALSE — Single-year statements need cautious reading: policies, estimates, and one-offs matter.
 
-Once the overclaim or mislabel is exposed, the only consistent answer is false.', 'TRUE — The claim is correct. Direct input costs of the manufacturing process are included within cost of sales because they are incurred directly in producing the goods that a textile dyeing company has sold.
+Absolute or misapplied wording conflicts with the rule for "Understanding the Operating Result for Analysts". Single-year statements need cautious reading: policies, estimates, and one-offs matter. Ratios (liquidity, gearing, margins, returns) put line items in context. Financial accounting serves external users; audits give reasonable, not absolute, assurance. Rejected claim: "The balance between dyeing vats and finishing lines and dyed fabric stock on a textile dyeing company''s statements has no bearing on whether the business is becoming more or less capital-intensive."
 
-The task tests reading balance sheets and income statements for structure and risk. Financial statements distinguish stocks (balance sheet at a date) from flows (income and cash over a period); many false statements swap those roles.
+The statement is false.', 'TRUE — Single-year statements need cautious reading: policies, estimates, and one-offs matter.
 
-Apply the case evidence: Direct production or acquisition costs are exactly what cost of sales is meant to capture. Check whether the direction of change (higher/lower, above/below the threshold) matches what the statement asserts.
+The wording matches the relevant rule for "Understanding the Operating Result for Analysts". Single-year statements need cautious reading: policies, estimates, and one-offs matter. Ratios (liquidity, gearing, margins, returns) put line items in context. Financial accounting serves external users; audits give reasonable, not absolute, assurance. Applied here: "Pay earned by transport scheduling staff is treated as a distribution cost rather than cost of sales, since their work happens after production of the goods is complete."
 
-Every part of the claim aligns with the standard concept, so the statement stands.', 'FALSE — Evaluated against the textbook standard, this assertion is false. A scaffolding rental firm is regarded as financing its scaffolding held for long-term hire soundly only when they are covered mainly by a short-term scaffolding materials payable.
+The statement is true.', 'FALSE — Single-year statements need cautious reading: policies, estimates, and one-offs matter.
 
-This item belongs to the accounting block on reading balance sheets and income statements for structure and risk. Ratio and classification questions ask you to connect a figure or comparison in the case with the correct statement category, not merely to recognise a number.
+Absolute or misapplied wording conflicts with the rule for "Understanding the Operating Result for Analysts". Single-year statements need cautious reading: policies, estimates, and one-offs matter. Ratios (liquidity, gearing, margins, returns) put line items in context. Financial accounting serves external users; audits give reasonable, not absolute, assurance. Rejected claim: "An appliance repair network is regarded as financing its diagnostic and repair equipment soundly only when they are covered mainly by short-term credit from components suppliers."
 
-From the figures or classification rule involved, covering long-term assets mainly with current liabilities is considered risky, not sound financing. Accounting statements fail when a loss is treated as increasing equity, when a flow is placed on the balance sheet, or when a ratio inequality is reversed.
+The statement is false.', 'FALSE — Single-year statements need cautious reading: policies, estimates, and one-offs matter.
 
-Once the overclaim or mislabel is exposed, the only consistent answer is false.', 'TRUE — The claim is correct. The wages of general administrative staff are kept out of cost of sales because their duties are not directly involved in producing the goods that are sold.
+Absolute or misapplied wording conflicts with the rule for "Understanding the Operating Result for Analysts". Single-year statements need cautious reading: policies, estimates, and one-offs matter. Ratios (liquidity, gearing, margins, returns) put line items in context. Financial accounting serves external users; audits give reasonable, not absolute, assurance. Rejected claim: "The balance between diagnostic and repair equipment and spare repair components on an appliance repair network''s statements has no bearing on whether the business is becoming more or less capital-i…"
 
-The task tests reading balance sheets and income statements for structure and risk. Financial statements distinguish stocks (balance sheet at a date) from flows (income and cash over a period); many false statements swap those roles.
+The statement is false.', 'TRUE — Single-year statements need cautious reading: policies, estimates, and one-offs matter.
 
-Apply the case evidence: Cost of sales reflects direct production costs only, not general administrative wages. Check whether the direction of change (higher/lower, above/below the threshold) matches what the statement asserts.
+The claim states: Amounts paid to sales support staff are excluded from cost of sales. The reason given — selling activity takes place only after the goods have already been produced. — fits the chapter rule. Single-year statements need cautious reading: policies, estimates, and one-offs matter. Ratios (liquidity, gearing, margins, returns) put line items in context. Financial accounting serves external users; audits give reasonable, not absolute, assurance.
 
-No qualifying word breaks the definition or scenario, so the answer is true.'] WHERE case_id = 'CASE 6.3.109' AND tier = 'full';
-UPDATE public.economics_cases SET tactical_explanations = ARRAY['TRUE — The claim is correct. Pay earned by outbound packing staff is treated as a distribution cost rather than cost of sales, since their work happens after production of the goods is complete.
+The statement is true.'] WHERE case_id = 'CASE 6.3.107' AND tier = 'full';
+UPDATE public.economics_cases SET tactical_explanations = ARRAY['FALSE — Price appreciation from the first listed month to the last is a simple percentage change on the closing prices.
 
-The task tests reading balance sheets and income statements for structure and risk. Financial statements distinguish stocks (balance sheet at a date) from flows (income and cash over a period); many false statements swap those roles.
+Name the identity in words: price rise = (last closing price − first closing price) ÷ first closing price.
 
-Apply the case evidence: Distribution wages are incurred after production and are not part of cost of sales. Check whether the direction of change (higher/lower, above/below the threshold) matches what the statement asserts.
+$$
+P_{\text{first}} = 28, \quad P_{\text{last}} = 21
+$$
 
-Every part of the claim aligns with the standard concept, so the statement stands.', 'FALSE — The claim is false. The balance between scaffolding held for long-term hire and scaffolding materials awaiting short-term hire on a scaffolding rental firm''s statements has no bearing on whether the business is becoming more or less capital-intensive.
+$$
+\frac{21 - 28}{28} = -25.0\%
+$$
 
-The task tests reading balance sheets and income statements for structure and risk. Financial statements distinguish stocks (balance sheet at a date) from flows (income and cash over a period); many false statements swap those roles.
+Threshold: more than 22.2%. Actual -25.0%.
 
-Apply the case evidence: The asset mix directly reflects capital intensity; the balance is not irrelevant. Check whether the direction of change (higher/lower, above/below the threshold) matches what the statement asserts.
+Reading the arithmetic against the claim: the rise is -25.0%, which does not exceed 22.2% so the statement does not hold.
 
-Once the overclaim or mislabel is exposed, the only consistent answer is false.', 'TRUE — This statement is correct. Amounts paid to territory sales representatives are excluded from cost of sales because selling activity takes place only after the goods have already been produced.
+The statement is false.', 'FALSE — With shares outstanding unchanged, market-cap growth equals the percentage change in the share price between first and last month.
 
-This is an accounting reasoning item on reading balance sheets and income statements for structure and risk. Decide whether the sentence correctly describes how a transaction, balance-sheet line, or period result affects assets, liabilities, or equity.
+Name the identity in words: market-cap change = (last MCap − first MCap) ÷ first MCap.
 
-From the figures or classification rule involved, selling costs occur after production and are excluded from cost of sales. Accounting statements fail when a loss is treated as increasing equity, when a flow is placed on the balance sheet, or when a ratio inequality is reversed.
+$$
+\text{MCap}_{\text{first}} = 28 \times 431,000 = €12.07\text{m}
+$$
 
-The reasoning chain is complete, so mark the statement true.', 'FALSE — The claim is false. An industrial cleaning company is regarded as financing its industrial cleaning machinery soundly only when they are covered mainly by short-term credit from chemical suppliers.
+$$
+\text{MCap}_{\text{last}} = 21 \times 431,000 = €9.05\text{m}
+$$
 
-The underlying topic is reading balance sheets and income statements for structure and risk. When figures appear, the exam checks whether you can interpret them in accounting terms—what increased, what ratio is implied, and whether the label (current, non-current, equity, and so on) fits.
+$$
+\frac{9.05 - 12.07}{12.07} = -25.0\%
+$$
 
-Apply the case evidence: Covering long-term assets mainly with current liabilities is considered risky, not sound financing. Check whether the direction of change (higher/lower, above/below the threshold) matches what the statement asserts.
+Threshold: more than 19.9%. Actual -25.0%.
 
-Because the decisive detail is wrong, mark the statement false.', 'TRUE — On the Fuhrmann definition used in the entrance exam, the sentence is correct. Direct labour hours spent producing the goods sold are included within cost of sales because they are incurred directly in producing the goods that an appliance repair network has sold.
+Reading the arithmetic against the claim: MCap rose -25.0%, which does not exceed 19.9% so the statement does not hold.
 
-The task tests reading balance sheets and income statements for structure and risk. Financial statements distinguish stocks (balance sheet at a date) from flows (income and cash over a period); many false statements swap those roles.
+The statement is false.', 'FALSE — The high–low gap is the percentage by which the peak closing price exceeds the trough closing price in the table.
 
-Apply the case evidence: Direct production or acquisition costs are exactly what cost of sales is meant to capture. Check whether the direction of change (higher/lower, above/below the threshold) matches what the statement asserts.
+Name the identity in words: high–low gap = (highest close − lowest close) ÷ lowest close.
 
-The reasoning chain is complete, so mark the statement true.'] WHERE case_id = 'CASE 6.3.110' AND tier = 'full';
-UPDATE public.economics_cases SET tactical_explanations = ARRAY['TRUE — Evaluated against the textbook standard, this assertion is correct. The acid test excludes inventories to give a stricter evaluation of liquidity than the current ratio.
+$$
+P_{\max} = 28, \quad P_{\min} = 21
+$$
 
-This item belongs to the accounting block on reading balance sheets and income statements for structure and risk. Ratio and classification questions ask you to connect a figure or comparison in the case with the correct statement category, not merely to recognise a number.
+$$
+\frac{28 - 21}{21} = 33.3\%
+$$
 
-From the figures or classification rule involved, inventories are left out of the acid-test calculation. Accounting statements fail when a loss is treated as increasing equity, when a flow is placed on the balance sheet, or when a ratio inequality is reversed.
+Threshold: more than 35.9%. Actual 33.3%.
 
-The reasoning chain is complete, so mark the statement true.', 'TRUE — This statement is correct. Market capitalisation at the last month exceeds €13.4 million.
+Reading the arithmetic against the claim: the gap is 33.3%, which does not exceed 35.9% so the statement does not hold.
 
-This item belongs to the accounting block on reading balance sheets and income statements for structure and risk. Ratio and classification questions ask you to connect a figure or comparison in the case with the correct statement category, not merely to recognise a number.
+The statement is false.', 'FALSE — Operating result is taken from the annual figures beside the share table and compared with the stated euro-thousand threshold.
 
-From the figures or classification rule involved, market capitalisation ≈ €15.0 million. Accounting statements fail when a loss is treated as increasing equity, when a flow is placed on the balance sheet, or when a ratio inequality is reversed.
+Read the operating result from the extract:
 
-The reasoning chain is complete, so mark the statement true.', 'FALSE — This statement is false. The closing share price rose by more than 21.6% from first to last month.
+$$
+\text{Operating result} = €263\text{ thousand}
+$$
 
-This item belongs to the accounting block on reading balance sheets and income statements for structure and risk. Ratio and classification questions ask you to connect a figure or comparison in the case with the correct statement category, not merely to recognise a number.
+The statement claims this amount is below €220 thousand. Actual €263 thousand is not below that threshold.
 
-From the figures or classification rule involved, price change ≈ -30.0%. Accounting statements fail when a loss is treated as increasing equity, when a flow is placed on the balance sheet, or when a ratio inequality is reversed.
+Reading the arithmetic against the claim: operating result €263k is not below €220k so the statement does not hold.
 
-The statement sounds plausible but fails on precision, so it is false.', 'TRUE — Evaluated against the textbook standard, this assertion is correct. Highest closing price is more than 39% above the lowest.
+The statement is false.', 'TRUE — Single-year statements need cautious reading: policies, estimates, and one-offs matter.
 
-This item belongs to the accounting block on reading balance sheets and income statements for structure and risk. Ratio and classification questions ask you to connect a figure or comparison in the case with the correct statement category, not merely to recognise a number.
+The wording matches the relevant rule for "Share Price and Market Capitalisation 108". Single-year statements need cautious reading: policies, estimates, and one-offs matter. Ratios (liquidity, gearing, margins, returns) put line items in context. Financial accounting serves external users; audits give reasonable, not absolute, assurance. Applied here: "Investors may seek income from dividends, capital gains if prices rise, influence through voting, or a hedge of real values against inflation."
 
-From the figures or classification rule involved, range €21–€30. Accounting statements fail when a loss is treated as increasing equity, when a flow is placed on the balance sheet, or when a ratio inequality is reversed.
+The statement is true.'] WHERE case_id = 'CASE 6.3.108' AND tier = 'full';
+UPDATE public.economics_cases SET tactical_explanations = ARRAY['FALSE — Single-year statements need cautious reading: policies, estimates, and one-offs matter.
 
-Every part of the claim aligns with the standard concept, so the statement stands.', 'FALSE — On the Fuhrmann definition used in the entrance exam, the sentence is false. Market capitalisation rose by more than 34.3% over the period.
+Absolute or misapplied wording conflicts with the rule for "Understanding the Operating Result Over Time". Single-year statements need cautious reading: policies, estimates, and one-offs matter. Ratios (liquidity, gearing, margins, returns) put line items in context. Financial accounting serves external users; audits give reasonable, not absolute, assurance. Rejected claim: "A seed and fertiliser distributor is regarded as financing its seed processing plant soundly only when they are covered mainly by short-term credit from seed suppliers."
 
-The underlying topic is reading balance sheets and income statements for structure and risk. When figures appear, the exam checks whether you can interpret them in accounting terms—what increased, what ratio is implied, and whether the label (current, non-current, equity, and so on) fits.
+The statement is false.', 'FALSE — Single-year statements need cautious reading: policies, estimates, and one-offs matter.
 
-Apply the case evidence: €21.4m → €15.0m. Check whether the direction of change (higher/lower, above/below the threshold) matches what the statement asserts.
+Absolute or misapplied wording conflicts with the rule for "Understanding the Operating Result Over Time". Single-year statements need cautious reading: policies, estimates, and one-offs matter. Ratios (liquidity, gearing, margins, returns) put line items in context. Financial accounting serves external users; audits give reasonable, not absolute, assurance. Rejected claim: "The balance between seed processing plant and seed and fertiliser stock on a seed and fertiliser distributor''s statements has no bearing on whether the business is becoming more or less capital-int…"
 
-Once the overclaim or mislabel is exposed, the only consistent answer is false.'] WHERE case_id = 'CASE 6.3.111' AND tier = 'full';
-UPDATE public.economics_cases SET tactical_explanations = ARRAY['TRUE — This statement is correct. A high or rising price-earnings ratio can indicate either that a company''s shares have become relatively expensive compared with its earnings, or that investors expect stronger future earnings growth.
+The statement is false.', 'TRUE — Single-year statements need cautious reading: policies, estimates, and one-offs matter.
 
-This item belongs to the accounting block on reading balance sheets and income statements for structure and risk. Ratio and classification questions ask you to connect a figure or comparison in the case with the correct statement category, not merely to recognise a number.
+The claim states: Direct input costs of the manufacturing process are included within cost of sales. The reason given — they are incurred directly in producing the goods that a textile dyeing company has sold. — fits the chapter rule. Single-year statements need cautious reading: policies, estimates, and one-offs matter. Ratios (liquidity, gearing, margins, returns) put line items in context. Financial accounting serves external users; audits give reasonable, not absolute, assurance.
 
-From the figures or classification rule involved, this matches the textbook reading of a high price-earnings ratio. Accounting statements fail when a loss is treated as increasing equity, when a flow is placed on the balance sheet, or when a ratio inequality is reversed.
+The statement is true.', 'FALSE — Single-year statements need cautious reading: policies, estimates, and one-offs matter.
 
-No qualifying word breaks the definition or scenario, so the answer is true.', 'TRUE — The claim is correct. Highest closing price is more than 19.5% above the lowest.
+Absolute or misapplied wording conflicts with the rule for "Understanding the Operating Result Over Time". Single-year statements need cautious reading: policies, estimates, and one-offs matter. Ratios (liquidity, gearing, margins, returns) put line items in context. Financial accounting serves external users; audits give reasonable, not absolute, assurance. Rejected claim: "A scaffolding rental firm is regarded as financing its scaffolding held for long-term hire soundly only when they are covered mainly by a short-term scaffolding materials payable."
 
-The underlying topic is reading balance sheets and income statements for structure and risk. When figures appear, the exam checks whether you can interpret them in accounting terms—what increased, what ratio is implied, and whether the label (current, non-current, equity, and so on) fits.
+The statement is false.', 'TRUE — Single-year statements need cautious reading: policies, estimates, and one-offs matter.
 
-Apply the case evidence: Range €11–€20. Check whether the direction of change (higher/lower, above/below the threshold) matches what the statement asserts.
+The claim states: The wages of general administrative staff are kept out of cost of sales. The reason given — their duties are not directly involved in producing the goods that are sold. — fits the chapter rule. Single-year statements need cautious reading: policies, estimates, and one-offs matter. Ratios (liquidity, gearing, margins, returns) put line items in context. Financial accounting serves external users; audits give reasonable, not absolute, assurance.
 
-The reasoning chain is complete, so mark the statement true.', 'TRUE — This statement is correct. Total shares traded over six months exceed 21.9% of shares outstanding.
+The statement is true.'] WHERE case_id = 'CASE 6.3.109' AND tier = 'full';
+UPDATE public.economics_cases SET tactical_explanations = ARRAY['TRUE — Single-year statements need cautious reading: policies, estimates, and one-offs matter.
 
-This item belongs to the accounting block on reading balance sheets and income statements for structure and risk. Ratio and classification questions ask you to connect a figure or comparison in the case with the correct statement category, not merely to recognise a number.
+The wording matches the relevant rule for "Understanding the Operating Result in Context". Single-year statements need cautious reading: policies, estimates, and one-offs matter. Ratios (liquidity, gearing, margins, returns) put line items in context. Financial accounting serves external users; audits give reasonable, not absolute, assurance. Applied here: "Pay earned by outbound packing staff is treated as a distribution cost rather than cost of sales, since their work happens after production of the goods is complete."
 
-From the figures or classification rule involved, turnover ≈ 76.7% of shares outstanding. Accounting statements fail when a loss is treated as increasing equity, when a flow is placed on the balance sheet, or when a ratio inequality is reversed.
+The statement is true.', 'FALSE — Single-year statements need cautious reading: policies, estimates, and one-offs matter.
 
-Every part of the claim aligns with the standard concept, so the statement stands.', 'TRUE — Evaluated against the textbook standard, this assertion is correct. Shares outstanding equal 446,000.
+Absolute or misapplied wording conflicts with the rule for "Understanding the Operating Result in Context". Single-year statements need cautious reading: policies, estimates, and one-offs matter. Ratios (liquidity, gearing, margins, returns) put line items in context. Financial accounting serves external users; audits give reasonable, not absolute, assurance. Rejected claim: "The balance between scaffolding held for long-term hire and scaffolding materials awaiting short-term hire on a scaffolding rental firm''s statements has no bearing on whether the business is becomi…"
 
-This is an accounting reasoning item on reading balance sheets and income statements for structure and risk. Decide whether the sentence correctly describes how a transaction, balance-sheet line, or period result affects assets, liabilities, or equity.
+The statement is false.', 'TRUE — Single-year statements need cautious reading: policies, estimates, and one-offs matter.
 
-From the figures or classification rule involved, shares outstanding = 446,000. Accounting statements fail when a loss is treated as increasing equity, when a flow is placed on the balance sheet, or when a ratio inequality is reversed.
+The claim states: Amounts paid to territory sales representatives are excluded from cost of sales. The reason given — selling activity takes place only after the goods have already been produced. — fits the chapter rule. Single-year statements need cautious reading: policies, estimates, and one-offs matter. Ratios (liquidity, gearing, margins, returns) put line items in context. Financial accounting serves external users; audits give reasonable, not absolute, assurance.
 
-No qualifying word breaks the definition or scenario, so the answer is true.', 'TRUE — On the Fuhrmann definition used in the entrance exam, the sentence is correct. Operating result is below €257 thousand.
+The statement is true.', 'FALSE — Single-year statements need cautious reading: policies, estimates, and one-offs matter.
 
-The underlying topic is reading balance sheets and income statements for structure and risk. When figures appear, the exam checks whether you can interpret them in accounting terms—what increased, what ratio is implied, and whether the label (current, non-current, equity, and so on) fits.
+Absolute or misapplied wording conflicts with the rule for "Understanding the Operating Result in Context". Single-year statements need cautious reading: policies, estimates, and one-offs matter. Ratios (liquidity, gearing, margins, returns) put line items in context. Financial accounting serves external users; audits give reasonable, not absolute, assurance. Rejected claim: "An industrial cleaning company is regarded as financing its industrial cleaning machinery soundly only when they are covered mainly by short-term credit from chemical suppliers."
 
-Apply the case evidence: Operating result = 212. Check whether the direction of change (higher/lower, above/below the threshold) matches what the statement asserts.
+The statement is false.', 'TRUE — Single-year statements need cautious reading: policies, estimates, and one-offs matter.
 
-The reasoning chain is complete, so mark the statement true.'] WHERE case_id = 'CASE 6.3.112' AND tier = 'full';
-UPDATE public.economics_cases SET tactical_explanations = ARRAY['TRUE — The claim is correct. Once shares are already trading on a stock exchange, a rise in their market price does not itself provide the issuing company with additional funds; only shareholders who sell benefit from the higher price.
+The claim states: Direct labour hours spent producing the goods sold are included within cost of sales. The reason given — they are incurred directly in producing the goods that an appliance repair network has sold. — fits the chapter rule. Single-year statements need cautious reading: policies, estimates, and one-offs matter. Ratios (liquidity, gearing, margins, returns) put line items in context. Financial accounting serves external users; audits give reasonable, not absolute, assurance.
 
-The task tests reading balance sheets and income statements for structure and risk. Financial statements distinguish stocks (balance sheet at a date) from flows (income and cash over a period); many false statements swap those roles.
+The statement is true.'] WHERE case_id = 'CASE 6.3.110' AND tier = 'full';
+UPDATE public.economics_cases SET tactical_explanations = ARRAY['TRUE — Single-year statements need cautious reading: policies, estimates, and one-offs matter.
 
-Apply the case evidence: Secondary-market price rises do not raise new company cash. Check whether the direction of change (higher/lower, above/below the threshold) matches what the statement asserts.
+The wording matches the relevant rule for "Share Price and Market Capitalisation 111". Single-year statements need cautious reading: policies, estimates, and one-offs matter. Ratios (liquidity, gearing, margins, returns) put line items in context. Financial accounting serves external users; audits give reasonable, not absolute, assurance. Applied here: "The acid test excludes inventories to give a stricter evaluation of liquidity than the current ratio."
 
-No qualifying word breaks the definition or scenario, so the answer is true.', 'TRUE — Evaluated against the textbook standard, this assertion is correct. Highest closing price is more than 34.7% above the lowest.
+The statement is true.', 'TRUE — Market capitalisation values the equity at the latest closing price times shares outstanding.
 
-This item belongs to the accounting block on reading balance sheets and income statements for structure and risk. Ratio and classification questions ask you to connect a figure or comparison in the case with the correct statement category, not merely to recognise a number.
+Name the identity in words: market capitalisation = last closing price × shares outstanding.
 
-From the figures or classification rule involved, range €14–€19. Accounting statements fail when a loss is treated as increasing equity, when a flow is placed on the balance sheet, or when a ratio inequality is reversed.
+$$
+P_{\text{last}} = 21, \quad \text{Shares} = 713,000
+$$
 
-No qualifying word breaks the definition or scenario, so the answer is true.', 'TRUE — Evaluated against the textbook standard, this assertion is correct. Total shares traded over six months exceed 23.6% of shares outstanding.
+$$
+\text{MCap} = 21 \times 713,000 = €14.97\text{ million}
+$$
 
-This item belongs to the accounting block on reading balance sheets and income statements for structure and risk. Ratio and classification questions ask you to connect a figure or comparison in the case with the correct statement category, not merely to recognise a number.
+Threshold: exceeds €13.4 million. Actual €14.97 million.
 
-From the figures or classification rule involved, turnover ≈ 51.3% of shares outstanding. Accounting statements fail when a loss is treated as increasing equity, when a flow is placed on the balance sheet, or when a ratio inequality is reversed.
+Reading the arithmetic against the claim: market cap €14.97m exceeds €13.4m so the statement holds.
 
-No qualifying word breaks the definition or scenario, so the answer is true.', 'TRUE — Evaluated against the textbook standard, this assertion is correct. Peak monthly share turnover exceeds 77,004 shares.
+The statement is true.', 'FALSE — Price appreciation from the first listed month to the last is a simple percentage change on the closing prices.
 
-This item belongs to the accounting block on reading balance sheets and income statements for structure and risk. Ratio and classification questions ask you to connect a figure or comparison in the case with the correct statement category, not merely to recognise a number.
+Name the identity in words: price rise = (last closing price − first closing price) ÷ first closing price.
 
-From the figures or classification rule involved, peak monthly volume = 88,000. Accounting statements fail when a loss is treated as increasing equity, when a flow is placed on the balance sheet, or when a ratio inequality is reversed.
+$$
+P_{\text{first}} = 30, \quad P_{\text{last}} = 21
+$$
 
-Every part of the claim aligns with the standard concept, so the statement stands.', 'FALSE — This statement is false. The closing share price rose by more than 18.5% from first to last month.
+$$
+\frac{21 - 30}{30} = -30.0\%
+$$
 
-This item belongs to the accounting block on reading balance sheets and income statements for structure and risk. Ratio and classification questions ask you to connect a figure or comparison in the case with the correct statement category, not merely to recognise a number.
+Threshold: more than 21.6%. Actual -30.0%.
 
-From the figures or classification rule involved, price change ≈ -26.3%. Accounting statements fail when a loss is treated as increasing equity, when a flow is placed on the balance sheet, or when a ratio inequality is reversed.
+Reading the arithmetic against the claim: the rise is -30.0%, which does not exceed 21.6% so the statement does not hold.
 
-The statement sounds plausible but fails on precision, so it is false.'] WHERE case_id = 'CASE 6.3.113' AND tier = 'full';
-UPDATE public.economics_cases SET tactical_explanations = ARRAY['TRUE — Evaluated against the textbook standard, this assertion is correct. The wages of office-based support personnel are kept out of cost of sales because their duties are not directly involved in producing the goods that are sold.
+The statement is false.', 'TRUE — The high–low gap is the percentage by which the peak closing price exceeds the trough closing price in the table.
 
-This is an accounting reasoning item on reading balance sheets and income statements for structure and risk. Decide whether the sentence correctly describes how a transaction, balance-sheet line, or period result affects assets, liabilities, or equity.
+Name the identity in words: high–low gap = (highest close − lowest close) ÷ lowest close.
 
-From the figures or classification rule involved, cost of sales reflects direct production costs only, not general administrative wages. Accounting statements fail when a loss is treated as increasing equity, when a flow is placed on the balance sheet, or when a ratio inequality is reversed.
+$$
+P_{\max} = 30, \quad P_{\min} = 21
+$$
 
-Every part of the claim aligns with the standard concept, so the statement stands.', 'TRUE — On the Fuhrmann definition used in the entrance exam, the sentence is correct. Pay earned by courier dispatch personnel is treated as a distribution cost rather than cost of sales, since their work happens after production of the goods is complete.
+$$
+\frac{30 - 21}{21} = 42.9\%
+$$
 
-The task tests reading balance sheets and income statements for structure and risk. Financial statements distinguish stocks (balance sheet at a date) from flows (income and cash over a period); many false statements swap those roles.
+Threshold: more than 39%. Actual 42.9%.
 
-Apply the case evidence: Distribution wages are incurred after production and are not part of cost of sales. Check whether the direction of change (higher/lower, above/below the threshold) matches what the statement asserts.
+Reading the arithmetic against the claim: the gap is 42.9%, which exceeds 39% so the statement holds.
 
-Every part of the claim aligns with the standard concept, so the statement stands.', 'TRUE — On the Fuhrmann definition used in the entrance exam, the sentence is correct. Amounts paid to the wholesale sales team are excluded from cost of sales because selling activity takes place only after the goods have already been produced.
+The statement is true.', 'FALSE — With shares outstanding unchanged, market-cap growth equals the percentage change in the share price between first and last month.
 
-The task tests reading balance sheets and income statements for structure and risk. Financial statements distinguish stocks (balance sheet at a date) from flows (income and cash over a period); many false statements swap those roles.
+Name the identity in words: market-cap change = (last MCap − first MCap) ÷ first MCap.
 
-Apply the case evidence: Selling costs occur after production and are excluded from cost of sales. Check whether the direction of change (higher/lower, above/below the threshold) matches what the statement asserts.
+$$
+\text{MCap}_{\text{first}} = 30 \times 713,000 = €21.39\text{m}
+$$
 
-The reasoning chain is complete, so mark the statement true.', 'TRUE — The claim is correct. Materials directly used assembling the units sold are included within cost of sales because they are incurred directly in producing the goods that a seed and fertiliser distributor has sold.
+$$
+\text{MCap}_{\text{last}} = 21 \times 713,000 = €14.97\text{m}
+$$
 
-The task tests reading balance sheets and income statements for structure and risk. Financial statements distinguish stocks (balance sheet at a date) from flows (income and cash over a period); many false statements swap those roles.
+$$
+\frac{14.97 - 21.39}{21.39} = -30.0\%
+$$
 
-Apply the case evidence: Direct production or acquisition costs are exactly what cost of sales is meant to capture. Check whether the direction of change (higher/lower, above/below the threshold) matches what the statement asserts.
+Threshold: more than 34.3%. Actual -30.0%.
 
-The reasoning chain is complete, so mark the statement true.', 'TRUE — The claim is correct. The direct cost of inventory purchased for resale are included within cost of sales because they are incurred directly in producing the goods that a scaffolding rental firm has sold.
+Reading the arithmetic against the claim: MCap rose -30.0%, which does not exceed 34.3% so the statement does not hold.
 
-The underlying topic is reading balance sheets and income statements for structure and risk. When figures appear, the exam checks whether you can interpret them in accounting terms—what increased, what ratio is implied, and whether the label (current, non-current, equity, and so on) fits.
+The statement is false.'] WHERE case_id = 'CASE 6.3.111' AND tier = 'full';
+UPDATE public.economics_cases SET tactical_explanations = ARRAY['TRUE — Single-year statements need cautious reading: policies, estimates, and one-offs matter.
 
-Apply the case evidence: Direct production or acquisition costs are exactly what cost of sales is meant to capture. Check whether the direction of change (higher/lower, above/below the threshold) matches what the statement asserts.
+The wording matches the relevant rule for "Listed Company Performance Charts 112". Single-year statements need cautious reading: policies, estimates, and one-offs matter. Ratios (liquidity, gearing, margins, returns) put line items in context. Financial accounting serves external users; audits give reasonable, not absolute, assurance. Applied here: "A high or rising price-earnings ratio can indicate either that a company''s shares have become relatively expensive compared with its earnings, or that investors expect stronger future earnings growth."
 
-Every part of the claim aligns with the standard concept, so the statement stands.'] WHERE case_id = 'CASE 6.3.114' AND tier = 'full';
-UPDATE public.economics_cases SET tactical_explanations = ARRAY['FALSE — This statement is false. The closing share price rose by more than 8.1% from first to last month.
+The statement is true.', 'TRUE — The high–low gap is the percentage by which the peak closing price exceeds the trough closing price in the table.
 
-This item belongs to the accounting block on reading balance sheets and income statements for structure and risk. Ratio and classification questions ask you to connect a figure or comparison in the case with the correct statement category, not merely to recognise a number.
+Name the identity in words: high–low gap = (highest close − lowest close) ÷ lowest close.
 
-From the figures or classification rule involved, price change ≈ 6.5%. Accounting statements fail when a loss is treated as increasing equity, when a flow is placed on the balance sheet, or when a ratio inequality is reversed.
+$$
+P_{\max} = 20, \quad P_{\min} = 11
+$$
 
-Because the decisive detail is wrong, mark the statement false.', 'TRUE — Evaluated against the textbook standard, this assertion is correct. High inventory turnover indicates that goods sell well and do not remain in stock for a long time.
+$$
+\frac{20 - 11}{11} = 81.8\%
+$$
 
-This item belongs to the accounting block on reading balance sheets and income statements for structure and risk. Ratio and classification questions ask you to connect a figure or comparison in the case with the correct statement category, not merely to recognise a number.
+Threshold: more than 19.5%. Actual 81.8%.
 
-From the figures or classification rule involved, fast inventory turnover signals healthy stock movement. Accounting statements fail when a loss is treated as increasing equity, when a flow is placed on the balance sheet, or when a ratio inequality is reversed.
+Reading the arithmetic against the claim: the gap is 81.8%, which exceeds 19.5% so the statement holds.
 
-Every part of the claim aligns with the standard concept, so the statement stands.', 'FALSE — This statement is false. Market capitalisation rose by more than 25.8% over the period.
+The statement is true.', 'TRUE — Six-month share turnover compares cumulative volume traded with the number of shares outstanding.
 
-This item belongs to the accounting block on reading balance sheets and income statements for structure and risk. Ratio and classification questions ask you to connect a figure or comparison in the case with the correct statement category, not merely to recognise a number.
+Name the identity in words: turnover = six-month volume ÷ shares outstanding.
 
-From the figures or classification rule involved, €25.8m → €27.4m. Accounting statements fail when a loss is treated as increasing equity, when a flow is placed on the balance sheet, or when a ratio inequality is reversed.
+$$
+\text{Volume} = 342,000, \quad \text{Shares} = 446,000
+$$
 
-Because the decisive detail is wrong, mark the statement false.', 'FALSE — Evaluated against the textbook standard, this assertion is false. Highest closing price is more than 20.8% above the lowest.
+$$
+\frac{342,000}{446,000} = 76.7\%
+$$
 
-This item belongs to the accounting block on reading balance sheets and income statements for structure and risk. Ratio and classification questions ask you to connect a figure or comparison in the case with the correct statement category, not merely to recognise a number.
+Threshold: exceed 21.9%. Actual 76.7%.
 
-From the figures or classification rule involved, range €28–€33. Accounting statements fail when a loss is treated as increasing equity, when a flow is placed on the balance sheet, or when a ratio inequality is reversed.
+Reading the arithmetic against the claim: turnover 76.7% exceeds 21.9% so the statement holds.
 
-The statement sounds plausible but fails on precision, so it is false.', 'TRUE — The claim is correct. Market capitalisation at the last month exceeds €21.2 million.
+The statement is true.', 'TRUE — Shares outstanding are an annual stock figure reported beside the price table; the claim is simply whether that figure equals the stated count.
 
-The underlying topic is reading balance sheets and income statements for structure and risk. When figures appear, the exam checks whether you can interpret them in accounting terms—what increased, what ratio is implied, and whether the label (current, non-current, equity, and so on) fits.
+Read shares outstanding from the annual figures attached to the extract:
 
-Apply the case evidence: Market capitalisation ≈ €27.4 million. Check whether the direction of change (higher/lower, above/below the threshold) matches what the statement asserts.
+$$
+\text{Shares outstanding} = 446,000
+$$
 
-No qualifying word breaks the definition or scenario, so the answer is true.'] WHERE case_id = 'CASE 6.3.115' AND tier = 'full';
-UPDATE public.economics_cases SET tactical_explanations = ARRAY['TRUE — On the Fuhrmann definition used in the entrance exam, the sentence is correct. A share buyback reduces the number of shares outstanding, which can raise earnings per share even if total profit stays exactly the same.
+The statement claims exactly 446,000. The extract reports 446,000, which matches the claim.
 
-The task tests reading balance sheets and income statements for structure and risk. Financial statements distinguish stocks (balance sheet at a date) from flows (income and cash over a period); many false statements swap those roles.
+Reading the arithmetic against the claim: extract reports 446,000 versus claimed 446,000 so the statement holds.
 
-Apply the case evidence: Fewer shares increase earnings per share for an unchanged profit. Check whether the direction of change (higher/lower, above/below the threshold) matches what the statement asserts.
+The statement is true.', 'TRUE — Operating result is taken from the annual figures beside the share table and compared with the stated euro-thousand threshold.
 
-The reasoning chain is complete, so mark the statement true.', 'TRUE — On the Fuhrmann definition used in the entrance exam, the sentence is correct. Earnings per share exceeds €0.3.
+Read the operating result from the extract:
 
-The underlying topic is reading balance sheets and income statements for structure and risk. When figures appear, the exam checks whether you can interpret them in accounting terms—what increased, what ratio is implied, and whether the label (current, non-current, equity, and so on) fits.
+$$
+\text{Operating result} = €212\text{ thousand}
+$$
 
-Apply the case evidence: Earnings per share ≈ €0.34. Check whether the direction of change (higher/lower, above/below the threshold) matches what the statement asserts.
+The statement claims this amount is below €257 thousand. Actual €212 thousand is below that threshold.
 
-Every part of the claim aligns with the standard concept, so the statement stands.', 'TRUE — Evaluated against the textbook standard, this assertion is correct. Total shares traded over six months exceed 16.5% of shares outstanding.
+Reading the arithmetic against the claim: operating result €212k is below €257k so the statement holds.
 
-This item belongs to the accounting block on reading balance sheets and income statements for structure and risk. Ratio and classification questions ask you to connect a figure or comparison in the case with the correct statement category, not merely to recognise a number.
+The statement is true.'] WHERE case_id = 'CASE 6.3.112' AND tier = 'full';
+UPDATE public.economics_cases SET tactical_explanations = ARRAY['TRUE — Single-year statements need cautious reading: policies, estimates, and one-offs matter.
 
-From the figures or classification rule involved, turnover ≈ 46.1% of shares outstanding. Accounting statements fail when a loss is treated as increasing equity, when a flow is placed on the balance sheet, or when a ratio inequality is reversed.
+The wording matches the relevant rule for "Earnings Per Share From Reported Figures 113". Single-year statements need cautious reading: policies, estimates, and one-offs matter. Ratios (liquidity, gearing, margins, returns) put line items in context. Financial accounting serves external users; audits give reasonable, not absolute, assurance. Applied here: "Once shares are already trading on a stock exchange, a rise in their market price does not itself provide the issuing company with additional funds; only shareholders who sell benefit from the high…"
 
-Every part of the claim aligns with the standard concept, so the statement stands.', 'TRUE — On the Fuhrmann definition used in the entrance exam, the sentence is correct. Peak monthly share turnover exceeds 63,134 shares.
+The statement is true.', 'TRUE — The high–low gap is the percentage by which the peak closing price exceeds the trough closing price in the table.
 
-The underlying topic is reading balance sheets and income statements for structure and risk. When figures appear, the exam checks whether you can interpret them in accounting terms—what increased, what ratio is implied, and whether the label (current, non-current, equity, and so on) fits.
+Name the identity in words: high–low gap = (highest close − lowest close) ÷ lowest close.
 
-Apply the case evidence: Peak monthly volume = 85,000. Check whether the direction of change (higher/lower, above/below the threshold) matches what the statement asserts.
+$$
+P_{\max} = 19, \quad P_{\min} = 14
+$$
 
-Every part of the claim aligns with the standard concept, so the statement stands.', 'TRUE — On the Fuhrmann definition used in the entrance exam, the sentence is correct. Shares outstanding equal 790,000.
+$$
+\frac{19 - 14}{14} = 35.7\%
+$$
 
-The task tests reading balance sheets and income statements for structure and risk. Financial statements distinguish stocks (balance sheet at a date) from flows (income and cash over a period); many false statements swap those roles.
+Threshold: more than 34.7%. Actual 35.7%.
 
-Apply the case evidence: Shares outstanding = 790,000. Check whether the direction of change (higher/lower, above/below the threshold) matches what the statement asserts.
+Reading the arithmetic against the claim: the gap is 35.7%, which exceeds 34.7% so the statement holds.
 
-Every part of the claim aligns with the standard concept, so the statement stands.'] WHERE case_id = 'CASE 6.3.116' AND tier = 'full';
-UPDATE public.economics_cases SET tactical_explanations = ARRAY['FALSE — On the Fuhrmann definition used in the entrance exam, the sentence is false. The closing share price rose by more than 27.4% from first to last month.
+The statement is true.', 'TRUE — Six-month share turnover compares cumulative volume traded with the number of shares outstanding.
 
-The underlying topic is reading balance sheets and income statements for structure and risk. When figures appear, the exam checks whether you can interpret them in accounting terms—what increased, what ratio is implied, and whether the label (current, non-current, equity, and so on) fits.
+Name the identity in words: turnover = six-month volume ÷ shares outstanding.
 
-Apply the case evidence: Price change ≈ 19.4%. Check whether the direction of change (higher/lower, above/below the threshold) matches what the statement asserts.
+$$
+\text{Volume} = 353,000, \quad \text{Shares} = 688,000
+$$
 
-The statement sounds plausible but fails on precision, so it is false.', 'FALSE — The claim is false. Market capitalisation rose by more than 32.6% over the period.
+$$
+\frac{353,000}{688,000} = 51.3\%
+$$
 
-The underlying topic is reading balance sheets and income statements for structure and risk. When figures appear, the exam checks whether you can interpret them in accounting terms—what increased, what ratio is implied, and whether the label (current, non-current, equity, and so on) fits.
+Threshold: exceed 23.6%. Actual 51.3%.
 
-Apply the case evidence: €28.8m → €34.4m. Check whether the direction of change (higher/lower, above/below the threshold) matches what the statement asserts.
+Reading the arithmetic against the claim: turnover 51.3% exceeds 23.6% so the statement holds.
 
-The statement sounds plausible but fails on precision, so it is false.', 'FALSE — This statement is false. Peak monthly share turnover exceeds 94,422 shares.
+The statement is true.', 'TRUE — Peak monthly turnover is simply the largest shares-traded figure among the months in the table.
 
-This item belongs to the accounting block on reading balance sheets and income statements for structure and risk. Ratio and classification questions ask you to connect a figure or comparison in the case with the correct statement category, not merely to recognise a number.
+Scan each month''s volume and take the maximum.
 
-From the figures or classification rule involved, peak monthly volume = 87,000. Accounting statements fail when a loss is treated as increasing equity, when a flow is placed on the balance sheet, or when a ratio inequality is reversed.
+$$
+\text{Peak volume} = 88,000 \quad (May)
+$$
 
-The statement sounds plausible but fails on precision, so it is false.', 'FALSE — This statement is false. Operating result is below €219 thousand.
+Threshold: exceeds 77,004. Actual 88,000.
 
-This item belongs to the accounting block on reading balance sheets and income statements for structure and risk. Ratio and classification questions ask you to connect a figure or comparison in the case with the correct statement category, not merely to recognise a number.
+Reading the arithmetic against the claim: peak volume 88,000 exceeds 77,004 so the statement holds.
 
-From the figures or classification rule involved, operating result = 309. Accounting statements fail when a loss is treated as increasing equity, when a flow is placed on the balance sheet, or when a ratio inequality is reversed.
+The statement is true.', 'FALSE — Price appreciation from the first listed month to the last is a simple percentage change on the closing prices.
 
-Because the decisive detail is wrong, mark the statement false.', 'TRUE — The claim is correct. Working capital should be positive, meaning current assets should be higher than current liabilities.
+Name the identity in words: price rise = (last closing price − first closing price) ÷ first closing price.
 
-The underlying topic is reading balance sheets and income statements for structure and risk. When figures appear, the exam checks whether you can interpret them in accounting terms—what increased, what ratio is implied, and whether the label (current, non-current, equity, and so on) fits.
+$$
+P_{\text{first}} = 19, \quad P_{\text{last}} = 14
+$$
 
-Apply the case evidence: Positive working capital supports day-to-day payment capacity. Check whether the direction of change (higher/lower, above/below the threshold) matches what the statement asserts.
+$$
+\frac{14 - 19}{19} = -26.3\%
+$$
 
-Every part of the claim aligns with the standard concept, so the statement stands.'] WHERE case_id = 'CASE 6.3.117' AND tier = 'full';
-UPDATE public.economics_cases SET tactical_explanations = ARRAY['FALSE — This statement is false. The balance between industrial cleaning machinery and cleaning supplies inventory on an industrial cleaning company''s statements has no bearing on whether the business is becoming more or less capital-intensive.
+Threshold: more than 18.5%. Actual -26.3%.
 
-This item belongs to the accounting block on reading balance sheets and income statements for structure and risk. Ratio and classification questions ask you to connect a figure or comparison in the case with the correct statement category, not merely to recognise a number.
+Reading the arithmetic against the claim: the rise is -26.3%, which does not exceed 18.5% so the statement does not hold.
 
-From the figures or classification rule involved, the asset mix directly reflects capital intensity; the balance is not irrelevant. Accounting statements fail when a loss is treated as increasing equity, when a flow is placed on the balance sheet, or when a ratio inequality is reversed.
+The statement is false.'] WHERE case_id = 'CASE 6.3.113' AND tier = 'full';
+UPDATE public.economics_cases SET tactical_explanations = ARRAY['TRUE — Single-year statements need cautious reading: policies, estimates, and one-offs matter.
 
-Because the decisive detail is wrong, mark the statement false.', 'FALSE — This statement is false. The wages of head office administrators are included within cost of sales because every employee contributes in some way to the goods that are sold.
+The claim states: The wages of office-based support personnel are kept out of cost of sales. The reason given — their duties are not directly involved in producing the goods that are sold. — fits the chapter rule. Single-year statements need cautious reading: policies, estimates, and one-offs matter. Ratios (liquidity, gearing, margins, returns) put line items in context. Financial accounting serves external users; audits give reasonable, not absolute, assurance.
 
-This is an accounting reasoning item on reading balance sheets and income statements for structure and risk. Decide whether the sentence correctly describes how a transaction, balance-sheet line, or period result affects assets, liabilities, or equity.
+The statement is true.', 'TRUE — Single-year statements need cautious reading: policies, estimates, and one-offs matter.
 
-From the figures or classification rule involved, only direct production costs belong in cost of sales; general contribution is not enough. Accounting statements fail when a loss is treated as increasing equity, when a flow is placed on the balance sheet, or when a ratio inequality is reversed.
+The wording matches the relevant rule for "Expenditure Versus Expense in Practice". Single-year statements need cautious reading: policies, estimates, and one-offs matter. Ratios (liquidity, gearing, margins, returns) put line items in context. Financial accounting serves external users; audits give reasonable, not absolute, assurance. Applied here: "Pay earned by courier dispatch personnel is treated as a distribution cost rather than cost of sales, since their work happens after production of the goods is complete."
 
-Watch the absolute wording "every": exam statements often sound plausible until a single scope word turns an otherwise familiar idea into an overclaim.
+The statement is true.', 'TRUE — Single-year statements need cautious reading: policies, estimates, and one-offs matter.
 
-The statement sounds plausible but fails on precision, so it is false.', 'FALSE — On the Fuhrmann definition used in the entrance exam, the sentence is false. Pay earned by despatch and loading staff is included within cost of sales because moving finished goods is considered part of manufacturing them.
+The claim states: Amounts paid to the wholesale sales team are excluded from cost of sales. The reason given — selling activity takes place only after the goods have already been produced. — fits the chapter rule. Single-year statements need cautious reading: policies, estimates, and one-offs matter. Ratios (liquidity, gearing, margins, returns) put line items in context. Financial accounting serves external users; audits give reasonable, not absolute, assurance.
 
-The task tests reading balance sheets and income statements for structure and risk. Financial statements distinguish stocks (balance sheet at a date) from flows (income and cash over a period); many false statements swap those roles.
+The statement is true.', 'TRUE — Single-year statements need cautious reading: policies, estimates, and one-offs matter.
 
-Apply the case evidence: Distribution activity occurs after production and belongs outside cost of sales. Check whether the direction of change (higher/lower, above/below the threshold) matches what the statement asserts.
+The claim states: Materials directly used assembling the units sold are included within cost of sales. The reason given — they are incurred directly in producing the goods that a seed and fertiliser distributor has sold. — fits the chapter rule. Single-year statements need cautious reading: policies, estimates, and one-offs matter. Ratios (liquidity, gearing, margins, returns) put line items in context. Financial accounting serves external users; audits give reasonable, not absolute, assurance.
 
-The statement sounds plausible but fails on precision, so it is false.', 'TRUE — On the Fuhrmann definition used in the entrance exam, the sentence is correct. The wages of head office clerical staff are kept out of cost of sales because their duties are not directly involved in producing the goods that are sold.
+The statement is true.', 'TRUE — Single-year statements need cautious reading: policies, estimates, and one-offs matter.
 
-The task tests reading balance sheets and income statements for structure and risk. Financial statements distinguish stocks (balance sheet at a date) from flows (income and cash over a period); many false statements swap those roles.
+The claim states: The direct cost of inventory purchased for resale are included within cost of sales. The reason given — they are incurred directly in producing the goods that a scaffolding rental firm has sold. — fits the chapter rule. Single-year statements need cautious reading: policies, estimates, and one-offs matter. Ratios (liquidity, gearing, margins, returns) put line items in context. Financial accounting serves external users; audits give reasonable, not absolute, assurance.
 
-Apply the case evidence: Cost of sales reflects direct production costs only, not general administrative wages. Check whether the direction of change (higher/lower, above/below the threshold) matches what the statement asserts.
+The statement is true.'] WHERE case_id = 'CASE 6.3.114' AND tier = 'full';
+UPDATE public.economics_cases SET tactical_explanations = ARRAY['FALSE — Price appreciation from the first listed month to the last is a simple percentage change on the closing prices.
 
-Every part of the claim aligns with the standard concept, so the statement stands.', 'TRUE — Evaluated against the textbook standard, this assertion is correct. Pay earned by distribution warehouse staff is treated as a distribution cost rather than cost of sales, since their work happens after production of the goods is complete.
+Name the identity in words: price rise = (last closing price − first closing price) ÷ first closing price.
 
-This is an accounting reasoning item on reading balance sheets and income statements for structure and risk. Decide whether the sentence correctly describes how a transaction, balance-sheet line, or period result affects assets, liabilities, or equity.
+$$
+P_{\text{first}} = 31, \quad P_{\text{last}} = 33
+$$
 
-From the figures or classification rule involved, distribution wages are incurred after production and are not part of cost of sales. Accounting statements fail when a loss is treated as increasing equity, when a flow is placed on the balance sheet, or when a ratio inequality is reversed.
+$$
+\frac{33 - 31}{31} = 6.5\%
+$$
 
-Every part of the claim aligns with the standard concept, so the statement stands.'] WHERE case_id = 'CASE 6.3.118' AND tier = 'full';
-UPDATE public.economics_cases SET tactical_explanations = ARRAY['TRUE — On the Fuhrmann definition used in the entrance exam, the sentence is correct. High inventory turnover indicates that goods sell well and do not remain in stock for a long time.
+Threshold: more than 8.1%. Actual 6.5%.
 
-The underlying topic is reading balance sheets and income statements for structure and risk. When figures appear, the exam checks whether you can interpret them in accounting terms—what increased, what ratio is implied, and whether the label (current, non-current, equity, and so on) fits.
+Reading the arithmetic against the claim: the rise is 6.5%, which does not exceed 8.1% so the statement does not hold.
 
-Apply the case evidence: Fast inventory turnover signals healthy stock movement. Check whether the direction of change (higher/lower, above/below the threshold) matches what the statement asserts.
+The statement is false.', 'TRUE — Single-year statements need cautious reading: policies, estimates, and one-offs matter.
 
-Every part of the claim aligns with the standard concept, so the statement stands.', 'TRUE — Evaluated against the textbook standard, this assertion is correct. Market capitalisation at the last month exceeds €4.8 million.
+The wording matches the relevant rule for "Listed Company Performance Charts 115". Single-year statements need cautious reading: policies, estimates, and one-offs matter. Ratios (liquidity, gearing, margins, returns) put line items in context. Financial accounting serves external users; audits give reasonable, not absolute, assurance. Applied here: "High inventory turnover indicates that goods sell well and do not remain in stock for a long time."
 
-This item belongs to the accounting block on reading balance sheets and income statements for structure and risk. Ratio and classification questions ask you to connect a figure or comparison in the case with the correct statement category, not merely to recognise a number.
+The statement is true.', 'FALSE — With shares outstanding unchanged, market-cap growth equals the percentage change in the share price between first and last month.
 
-From the figures or classification rule involved, market capitalisation ≈ €6.1 million. Accounting statements fail when a loss is treated as increasing equity, when a flow is placed on the balance sheet, or when a ratio inequality is reversed.
+Name the identity in words: market-cap change = (last MCap − first MCap) ÷ first MCap.
 
-The reasoning chain is complete, so mark the statement true.', 'TRUE — The claim is correct. Earnings per share exceeds €0.45.
+$$
+\text{MCap}_{\text{first}} = 31 \times 831,000 = €25.76\text{m}
+$$
 
-The underlying topic is reading balance sheets and income statements for structure and risk. When figures appear, the exam checks whether you can interpret them in accounting terms—what increased, what ratio is implied, and whether the label (current, non-current, equity, and so on) fits.
+$$
+\text{MCap}_{\text{last}} = 33 \times 831,000 = €27.42\text{m}
+$$
 
-Apply the case evidence: Earnings per share ≈ €0.56. Check whether the direction of change (higher/lower, above/below the threshold) matches what the statement asserts.
+$$
+\frac{27.42 - 25.76}{25.76} = 6.5\%
+$$
 
-The reasoning chain is complete, so mark the statement true.', 'FALSE — On the Fuhrmann definition used in the entrance exam, the sentence is false. The closing share price rose by more than 21.1% from first to last month.
+Threshold: more than 25.8%. Actual 6.5%.
 
-The underlying topic is reading balance sheets and income statements for structure and risk. When figures appear, the exam checks whether you can interpret them in accounting terms—what increased, what ratio is implied, and whether the label (current, non-current, equity, and so on) fits.
+Reading the arithmetic against the claim: MCap rose 6.5%, which does not exceed 25.8% so the statement does not hold.
 
-Apply the case evidence: Price change ≈ -33.3%. Check whether the direction of change (higher/lower, above/below the threshold) matches what the statement asserts.
+The statement is false.', 'FALSE — The high–low gap is the percentage by which the peak closing price exceeds the trough closing price in the table.
 
-The statement sounds plausible but fails on precision, so it is false.', 'TRUE — The claim is correct. Highest closing price is more than 35.5% above the lowest.
+Name the identity in words: high–low gap = (highest close − lowest close) ÷ lowest close.
 
-The underlying topic is reading balance sheets and income statements for structure and risk. When figures appear, the exam checks whether you can interpret them in accounting terms—what increased, what ratio is implied, and whether the label (current, non-current, equity, and so on) fits.
+$$
+P_{\max} = 33, \quad P_{\min} = 28
+$$
 
-Apply the case evidence: Range €12–€18. Check whether the direction of change (higher/lower, above/below the threshold) matches what the statement asserts.
+$$
+\frac{33 - 28}{28} = 17.9\%
+$$
 
-The reasoning chain is complete, so mark the statement true.'] WHERE case_id = 'CASE 6.3.119' AND tier = 'full';
-UPDATE public.economics_cases SET tactical_explanations = ARRAY['FALSE — Evaluated against the textbook standard, this assertion is false. Amounts paid to account managers are included within cost of sales because generating sales is necessary before any revenue can be recognised.
+Threshold: more than 20.8%. Actual 17.9%.
 
-This is an accounting reasoning item on reading balance sheets and income statements for structure and risk. Decide whether the sentence correctly describes how a transaction, balance-sheet line, or period result affects assets, liabilities, or equity.
+Reading the arithmetic against the claim: the gap is 17.9%, which does not exceed 20.8% so the statement does not hold.
 
-From the figures or classification rule involved, selling costs are operating expenses, not part of cost of sales, regardless of their necessity. Accounting statements fail when a loss is treated as increasing equity, when a flow is placed on the balance sheet, or when a ratio inequality is reversed.
+The statement is false.', 'TRUE — Market capitalisation values the equity at the latest closing price times shares outstanding.
 
-Once the overclaim or mislabel is exposed, the only consistent answer is false.', 'FALSE — This statement is false. Raw materials consumed directly in production are excluded from cost of sales because only costs paid in cash during the same month count toward it.
+Name the identity in words: market capitalisation = last closing price × shares outstanding.
 
-This is an accounting reasoning item on reading balance sheets and income statements for structure and risk. Decide whether the sentence correctly describes how a transaction, balance-sheet line, or period result affects assets, liabilities, or equity.
+$$
+P_{\text{last}} = 33, \quad \text{Shares} = 831,000
+$$
 
-From the figures or classification rule involved, cost of sales includes direct production costs regardless of the timing of any related cash payment. Accounting statements fail when a loss is treated as increasing equity, when a flow is placed on the balance sheet, or when a ratio inequality is reversed.
+$$
+\text{MCap} = 33 \times 831,000 = €27.42\text{ million}
+$$
 
-The statement sounds plausible but fails on precision, so it is false.', 'TRUE — This statement is correct. Amounts paid to key account managers are excluded from cost of sales because selling activity takes place only after the goods have already been produced.
+Threshold: exceeds €21.2 million. Actual €27.42 million.
 
-This is an accounting reasoning item on reading balance sheets and income statements for structure and risk. Decide whether the sentence correctly describes how a transaction, balance-sheet line, or period result affects assets, liabilities, or equity.
+Reading the arithmetic against the claim: market cap €27.42m exceeds €21.2m so the statement holds.
 
-From the figures or classification rule involved, selling costs occur after production and are excluded from cost of sales. Accounting statements fail when a loss is treated as increasing equity, when a flow is placed on the balance sheet, or when a ratio inequality is reversed.
+The statement is true.'] WHERE case_id = 'CASE 6.3.115' AND tier = 'full';
+UPDATE public.economics_cases SET tactical_explanations = ARRAY['TRUE — Single-year statements need cautious reading: policies, estimates, and one-offs matter.
 
-Every part of the claim aligns with the standard concept, so the statement stands.', 'FALSE — This statement is false. The wages of payroll and accounts clerks are included within cost of sales because every employee contributes in some way to the goods that are sold.
+The wording matches the relevant rule for "Earnings Per Share From Reported Figures 116". Single-year statements need cautious reading: policies, estimates, and one-offs matter. Ratios (liquidity, gearing, margins, returns) put line items in context. Financial accounting serves external users; audits give reasonable, not absolute, assurance. Applied here: "A share buyback reduces the number of shares outstanding, which can raise earnings per share even if total profit stays exactly the same."
 
-This is an accounting reasoning item on reading balance sheets and income statements for structure and risk. Decide whether the sentence correctly describes how a transaction, balance-sheet line, or period result affects assets, liabilities, or equity.
+The statement is true.', 'TRUE — EPS here links the operating result (in € thousands) to shares outstanding (scaled to thousands of shares).
 
-From the figures or classification rule involved, only direct production costs belong in cost of sales; general contribution is not enough. Accounting statements fail when a loss is treated as increasing equity, when a flow is placed on the balance sheet, or when a ratio inequality is reversed.
+Name the identity in words: EPS = operating result (€ thousands) ÷ (shares outstanding ÷ 1,000).
 
-Watch the absolute wording "every": exam statements often sound plausible until a single scope word turns an otherwise familiar idea into an overclaim.
+$$
+\text{Operating result} = 265, \quad \frac{\text{Shares}}{1,000} = 790
+$$
 
-Because the decisive detail is wrong, mark the statement false.', 'FALSE — Evaluated against the textbook standard, this assertion is false. Pay earned by outbound freight handlers is included within cost of sales because moving finished goods is considered part of manufacturing them.
+$$
+EPS = \frac{265}{790} = €0.3354
+$$
 
-This is an accounting reasoning item on reading balance sheets and income statements for structure and risk. Decide whether the sentence correctly describes how a transaction, balance-sheet line, or period result affects assets, liabilities, or equity.
+Threshold: exceeds €0.3. Actual ≈ €0.34.
 
-From the figures or classification rule involved, distribution activity occurs after production and belongs outside cost of sales. Accounting statements fail when a loss is treated as increasing equity, when a flow is placed on the balance sheet, or when a ratio inequality is reversed.
+Reading the arithmetic against the claim: EPS €0.34 exceeds €0.3 so the statement holds.
 
-Once the overclaim or mislabel is exposed, the only consistent answer is false.'] WHERE case_id = 'CASE 6.3.120' AND tier = 'full';
-UPDATE public.economics_cases SET tactical_explanations = ARRAY['FALSE — On the Fuhrmann definition used in the entrance exam, the sentence is false. The closing share price rose by more than 24.2% from first to last month.
+The statement is true.', 'TRUE — Six-month share turnover compares cumulative volume traded with the number of shares outstanding.
 
-The underlying topic is reading balance sheets and income statements for structure and risk. When figures appear, the exam checks whether you can interpret them in accounting terms—what increased, what ratio is implied, and whether the label (current, non-current, equity, and so on) fits.
+Name the identity in words: turnover = six-month volume ÷ shares outstanding.
 
-Apply the case evidence: Price change ≈ -20.8%. Check whether the direction of change (higher/lower, above/below the threshold) matches what the statement asserts.
+$$
+\text{Volume} = 364,000, \quad \text{Shares} = 790,000
+$$
 
-Once the overclaim or mislabel is exposed, the only consistent answer is false.', 'FALSE — On the Fuhrmann definition used in the entrance exam, the sentence is false. Market capitalisation rose by more than 8.4% over the period.
+$$
+\frac{364,000}{790,000} = 46.1\%
+$$
 
-The underlying topic is reading balance sheets and income statements for structure and risk. When figures appear, the exam checks whether you can interpret them in accounting terms—what increased, what ratio is implied, and whether the label (current, non-current, equity, and so on) fits.
+Threshold: exceed 16.5%. Actual 46.1%.
 
-Apply the case evidence: €10.9m → €8.6m. Check whether the direction of change (higher/lower, above/below the threshold) matches what the statement asserts.
+Reading the arithmetic against the claim: turnover 46.1% exceeds 16.5% so the statement holds.
 
-Because the decisive detail is wrong, mark the statement false.', 'FALSE — On the Fuhrmann definition used in the entrance exam, the sentence is false. Highest closing price is more than 32.1% above the lowest.
+The statement is true.', 'TRUE — Peak monthly turnover is simply the largest shares-traded figure among the months in the table.
 
-The underlying topic is reading balance sheets and income statements for structure and risk. When figures appear, the exam checks whether you can interpret them in accounting terms—what increased, what ratio is implied, and whether the label (current, non-current, equity, and so on) fits.
+Scan each month''s volume and take the maximum.
 
-Apply the case evidence: Range €19–€24. Check whether the direction of change (higher/lower, above/below the threshold) matches what the statement asserts.
+$$
+\text{Peak volume} = 85,000 \quad (March)
+$$
 
-Once the overclaim or mislabel is exposed, the only consistent answer is false.', 'TRUE — This statement is correct. Making a profit alone does not prove sufficient profitability; profitability ratios relate profit to an indicator of business size such as assets, equity or turnover.
+Threshold: exceeds 63,134. Actual 85,000.
 
-This item belongs to the accounting block on reading balance sheets and income statements for structure and risk. Ratio and classification questions ask you to connect a figure or comparison in the case with the correct statement category, not merely to recognise a number.
+Reading the arithmetic against the claim: peak volume 85,000 exceeds 63,134 so the statement holds.
 
-From the figures or classification rule involved, absolute profit is not enough without relating it to capital employed. Accounting statements fail when a loss is treated as increasing equity, when a flow is placed on the balance sheet, or when a ratio inequality is reversed.
+The statement is true.', 'TRUE — Shares outstanding are an annual stock figure reported beside the price table; the claim is simply whether that figure equals the stated count.
 
-The reasoning chain is complete, so mark the statement true.', 'FALSE — This statement is false. Peak monthly share turnover exceeds 87,473 shares.
+Read shares outstanding from the annual figures attached to the extract:
 
-This item belongs to the accounting block on reading balance sheets and income statements for structure and risk. Ratio and classification questions ask you to connect a figure or comparison in the case with the correct statement category, not merely to recognise a number.
+$$
+\text{Shares outstanding} = 790,000
+$$
 
-From the figures or classification rule involved, peak monthly volume = 84,000. Accounting statements fail when a loss is treated as increasing equity, when a flow is placed on the balance sheet, or when a ratio inequality is reversed.
+The statement claims exactly 790,000. The extract reports 790,000, which matches the claim.
 
-The statement sounds plausible but fails on precision, so it is false.'] WHERE case_id = 'CASE 6.3.121' AND tier = 'full';
-UPDATE public.economics_cases SET tactical_explanations = ARRAY['TRUE — This statement is correct. Working capital should be positive, meaning current assets should be higher than current liabilities.
+Reading the arithmetic against the claim: extract reports 790,000 versus claimed 790,000 so the statement holds.
 
-This item belongs to the accounting block on reading balance sheets and income statements for structure and risk. Ratio and classification questions ask you to connect a figure or comparison in the case with the correct statement category, not merely to recognise a number.
+The statement is true.'] WHERE case_id = 'CASE 6.3.116' AND tier = 'full';
+UPDATE public.economics_cases SET tactical_explanations = ARRAY['FALSE — Price appreciation from the first listed month to the last is a simple percentage change on the closing prices.
 
-From the figures or classification rule involved, positive working capital supports day-to-day payment capacity. Accounting statements fail when a loss is treated as increasing equity, when a flow is placed on the balance sheet, or when a ratio inequality is reversed.
+Name the identity in words: price rise = (last closing price − first closing price) ÷ first closing price.
 
-The reasoning chain is complete, so mark the statement true.', 'TRUE — This statement is correct. The closing share price rose by more than 13.9% from first to last month.
+$$
+P_{\text{first}} = 36, \quad P_{\text{last}} = 43
+$$
 
-This item belongs to the accounting block on reading balance sheets and income statements for structure and risk. Ratio and classification questions ask you to connect a figure or comparison in the case with the correct statement category, not merely to recognise a number.
+$$
+\frac{43 - 36}{36} = 19.4\%
+$$
 
-From the figures or classification rule involved, price change ≈ 29.0%. Accounting statements fail when a loss is treated as increasing equity, when a flow is placed on the balance sheet, or when a ratio inequality is reversed.
+Threshold: more than 27.4%. Actual 19.4%.
 
-No qualifying word breaks the definition or scenario, so the answer is true.', 'TRUE — The claim is correct. Market capitalisation at the last month exceeds €21.7 million.
+Reading the arithmetic against the claim: the rise is 19.4%, which does not exceed 27.4% so the statement does not hold.
 
-The underlying topic is reading balance sheets and income statements for structure and risk. When figures appear, the exam checks whether you can interpret them in accounting terms—what increased, what ratio is implied, and whether the label (current, non-current, equity, and so on) fits.
+The statement is false.', 'FALSE — With shares outstanding unchanged, market-cap growth equals the percentage change in the share price between first and last month.
 
-Apply the case evidence: Market capitalisation ≈ €25.4 million. Check whether the direction of change (higher/lower, above/below the threshold) matches what the statement asserts.
+Name the identity in words: market-cap change = (last MCap − first MCap) ÷ first MCap.
 
-No qualifying word breaks the definition or scenario, so the answer is true.', 'TRUE — Evaluated against the textbook standard, this assertion is correct. Market capitalisation rose by more than 22.3% over the period.
+$$
+\text{MCap}_{\text{first}} = 36 \times 801,000 = €28.84\text{m}
+$$
 
-This item belongs to the accounting block on reading balance sheets and income statements for structure and risk. Ratio and classification questions ask you to connect a figure or comparison in the case with the correct statement category, not merely to recognise a number.
+$$
+\text{MCap}_{\text{last}} = 43 \times 801,000 = €34.44\text{m}
+$$
 
-From the figures or classification rule involved, €19.7m → €25.4m. Accounting statements fail when a loss is treated as increasing equity, when a flow is placed on the balance sheet, or when a ratio inequality is reversed.
+$$
+\frac{34.44 - 28.84}{28.84} = 19.4\%
+$$
 
-The reasoning chain is complete, so mark the statement true.', 'TRUE — Evaluated against the textbook standard, this assertion is correct. Highest closing price is more than 18.7% above the lowest.
+Threshold: more than 32.6%. Actual 19.4%.
 
-This item belongs to the accounting block on reading balance sheets and income statements for structure and risk. Ratio and classification questions ask you to connect a figure or comparison in the case with the correct statement category, not merely to recognise a number.
+Reading the arithmetic against the claim: MCap rose 19.4%, which does not exceed 32.6% so the statement does not hold.
 
-From the figures or classification rule involved, range €31–€40. Accounting statements fail when a loss is treated as increasing equity, when a flow is placed on the balance sheet, or when a ratio inequality is reversed.
+The statement is false.', 'FALSE — Peak monthly turnover is simply the largest shares-traded figure among the months in the table.
 
-Every part of the claim aligns with the standard concept, so the statement stands.'] WHERE case_id = 'CASE 6.3.122' AND tier = 'full';
-UPDATE public.economics_cases SET tactical_explanations = ARRAY['TRUE — Evaluated against the textbook standard, this assertion is correct. Production costs directly tied to units manufactured are included within cost of sales because they are incurred directly in producing the goods that an industrial cleaning company has sold.
+Scan each month''s volume and take the maximum.
 
-This is an accounting reasoning item on reading balance sheets and income statements for structure and risk. Decide whether the sentence correctly describes how a transaction, balance-sheet line, or period result affects assets, liabilities, or equity.
+$$
+\text{Peak volume} = 87,000 \quad (June)
+$$
 
-From the figures or classification rule involved, direct production or acquisition costs are exactly what cost of sales is meant to capture. Accounting statements fail when a loss is treated as increasing equity, when a flow is placed on the balance sheet, or when a ratio inequality is reversed.
+Threshold: exceeds 94,422. Actual 87,000.
 
-No qualifying word breaks the definition or scenario, so the answer is true.', 'TRUE — Evaluated against the textbook standard, this assertion is correct. When a beverage bottling company buys a bottling line, only the depreciation charged in each period becomes an expense in that period''s income statement, even though the full expenditure occurs at purchase.
+Reading the arithmetic against the claim: peak volume 87,000 does not exceed 94,422 so the statement does not hold.
 
-This is an accounting reasoning item on reading balance sheets and income statements for structure and risk. Decide whether the sentence correctly describes how a transaction, balance-sheet line, or period result affects assets, liabilities, or equity.
+The statement is false.', 'FALSE — Operating result is taken from the annual figures beside the share table and compared with the stated euro-thousand threshold.
 
-From the figures or classification rule involved, capital expenditure becomes expense gradually, through depreciation, not all at once. Accounting statements fail when a loss is treated as increasing equity, when a flow is placed on the balance sheet, or when a ratio inequality is reversed.
+Read the operating result from the extract:
 
-No qualifying word breaks the definition or scenario, so the answer is true.', 'FALSE — Evaluated against the textbook standard, this assertion is false. Amounts paid to field sales representatives are included within cost of sales because generating sales is necessary before any revenue can be recognised.
+$$
+\text{Operating result} = €309\text{ thousand}
+$$
 
-This is an accounting reasoning item on reading balance sheets and income statements for structure and risk. Decide whether the sentence correctly describes how a transaction, balance-sheet line, or period result affects assets, liabilities, or equity.
+The statement claims this amount is below €219 thousand. Actual €309 thousand is not below that threshold.
 
-From the figures or classification rule involved, selling costs are operating expenses, not part of cost of sales, regardless of their necessity. Accounting statements fail when a loss is treated as increasing equity, when a flow is placed on the balance sheet, or when a ratio inequality is reversed.
+Reading the arithmetic against the claim: operating result €309k is not below €219k so the statement does not hold.
 
-The statement sounds plausible but fails on precision, so it is false.', 'TRUE — The claim is correct. Not every expenditure a beverage bottling company makes during a year shows up as an expense in that same year''s income statement.
+The statement is false.', 'TRUE — Single-year statements need cautious reading: policies, estimates, and one-offs matter.
 
-The task tests reading balance sheets and income statements for structure and risk. Financial statements distinguish stocks (balance sheet at a date) from flows (income and cash over a period); many false statements swap those roles.
+The wording matches the relevant rule for "Share Price and Market Capitalisation 117". Single-year statements need cautious reading: policies, estimates, and one-offs matter. Ratios (liquidity, gearing, margins, returns) put line items in context. Financial accounting serves external users; audits give reasonable, not absolute, assurance. Applied here: "Working capital should be positive, meaning current assets should be higher than current liabilities."
 
-Apply the case evidence: Some expenditures are capitalised and expensed only gradually in future periods. Check whether the direction of change (higher/lower, above/below the threshold) matches what the statement asserts.
+The statement is true.'] WHERE case_id = 'CASE 6.3.117' AND tier = 'full';
+UPDATE public.economics_cases SET tactical_explanations = ARRAY['FALSE — Single-year statements need cautious reading: policies, estimates, and one-offs matter.
 
-Every part of the claim aligns with the standard concept, so the statement stands.', 'TRUE — On the Fuhrmann definition used in the entrance exam, the sentence is correct. Not every expenditure a joinery and furniture workshop makes during a year shows up as an expense in that same year''s income statement.
+Absolute or misapplied wording conflicts with the rule for "Expenditure Versus Expense Explained". Single-year statements need cautious reading: policies, estimates, and one-offs matter. Ratios (liquidity, gearing, margins, returns) put line items in context. Financial accounting serves external users; audits give reasonable, not absolute, assurance. Rejected claim: "The balance between industrial cleaning machinery and cleaning supplies inventory on an industrial cleaning company''s statements has no bearing on whether the business is becoming more or less capi…"
 
-The task tests reading balance sheets and income statements for structure and risk. Financial statements distinguish stocks (balance sheet at a date) from flows (income and cash over a period); many false statements swap those roles.
+The statement is false.', 'FALSE — Single-year statements need cautious reading: policies, estimates, and one-offs matter.
 
-Apply the case evidence: Some expenditures are capitalised and expensed only gradually in future periods. Check whether the direction of change (higher/lower, above/below the threshold) matches what the statement asserts.
+The claim states: The wages of head office administrators are included within cost of sales. The reason — every employee contributes in some way to the goods that are sold. — does not support that label under the chapter definitions. Single-year statements need cautious reading: policies, estimates, and one-offs matter. Ratios (liquidity, gearing, margins, returns) put line items in context. Financial accounting serves external users; audits give reasonable, not absolute, assurance.
 
-No qualifying word breaks the definition or scenario, so the answer is true.'] WHERE case_id = 'CASE 6.3.123' AND tier = 'full';
-UPDATE public.economics_cases SET tactical_explanations = ARRAY['TRUE — Evaluated against the textbook standard, this assertion is correct. When a plastics moulding company buys an injection-moulding machine, only the depreciation charged in each period becomes an expense in that period''s income statement, even though the full expenditure occurs at purchase.
+The statement is false.', 'FALSE — Single-year statements need cautious reading: policies, estimates, and one-offs matter.
 
-This is an accounting reasoning item on reading balance sheets and income statements for structure and risk. Decide whether the sentence correctly describes how a transaction, balance-sheet line, or period result affects assets, liabilities, or equity.
+The claim states: Pay earned by despatch and loading staff is included within cost of sales. The reason — moving finished goods is considered part of manufacturing them. — does not support that label under the chapter definitions. Single-year statements need cautious reading: policies, estimates, and one-offs matter. Ratios (liquidity, gearing, margins, returns) put line items in context. Financial accounting serves external users; audits give reasonable, not absolute, assurance.
 
-From the figures or classification rule involved, capital expenditure becomes expense gradually, through depreciation, not all at once. Accounting statements fail when a loss is treated as increasing equity, when a flow is placed on the balance sheet, or when a ratio inequality is reversed.
+The statement is false.', 'TRUE — Single-year statements need cautious reading: policies, estimates, and one-offs matter.
 
-The reasoning chain is complete, so mark the statement true.', 'FALSE — The claim is false. Direct factory labour on the production line are excluded from cost of sales because only costs paid in cash during the same month count toward it.
+The claim states: The wages of head office clerical staff are kept out of cost of sales. The reason given — their duties are not directly involved in producing the goods that are sold. — fits the chapter rule. Single-year statements need cautious reading: policies, estimates, and one-offs matter. Ratios (liquidity, gearing, margins, returns) put line items in context. Financial accounting serves external users; audits give reasonable, not absolute, assurance.
 
-The task tests reading balance sheets and income statements for structure and risk. Financial statements distinguish stocks (balance sheet at a date) from flows (income and cash over a period); many false statements swap those roles.
+The statement is true.', 'TRUE — Single-year statements need cautious reading: policies, estimates, and one-offs matter.
 
-Apply the case evidence: Cost of sales includes direct production costs regardless of the timing of any related cash payment. Check whether the direction of change (higher/lower, above/below the threshold) matches what the statement asserts.
+The wording matches the relevant rule for "Expenditure Versus Expense Explained". Single-year statements need cautious reading: policies, estimates, and one-offs matter. Ratios (liquidity, gearing, margins, returns) put line items in context. Financial accounting serves external users; audits give reasonable, not absolute, assurance. Applied here: "Pay earned by distribution warehouse staff is treated as a distribution cost rather than cost of sales, since their work happens after production of the goods is complete."
 
-The statement sounds plausible but fails on precision, so it is false.', 'FALSE — Evaluated against the textbook standard, this assertion is false. The wages of reception and clerical staff are included within cost of sales because every employee contributes in some way to the goods that are sold.
+The statement is true.'] WHERE case_id = 'CASE 6.3.118' AND tier = 'full';
+UPDATE public.economics_cases SET tactical_explanations = ARRAY['TRUE — Single-year statements need cautious reading: policies, estimates, and one-offs matter.
 
-This is an accounting reasoning item on reading balance sheets and income statements for structure and risk. Decide whether the sentence correctly describes how a transaction, balance-sheet line, or period result affects assets, liabilities, or equity.
+The wording matches the relevant rule for "Earnings Per Share From Reported Figures 119". Single-year statements need cautious reading: policies, estimates, and one-offs matter. Ratios (liquidity, gearing, margins, returns) put line items in context. Financial accounting serves external users; audits give reasonable, not absolute, assurance. Applied here: "High inventory turnover indicates that goods sell well and do not remain in stock for a long time."
 
-From the figures or classification rule involved, only direct production costs belong in cost of sales; general contribution is not enough. Accounting statements fail when a loss is treated as increasing equity, when a flow is placed on the balance sheet, or when a ratio inequality is reversed.
+The statement is true.', 'TRUE — Market capitalisation values the equity at the latest closing price times shares outstanding.
 
-Watch the absolute wording "every": exam statements often sound plausible until a single scope word turns an otherwise familiar idea into an overclaim.
+Name the identity in words: market capitalisation = last closing price × shares outstanding.
 
-The statement sounds plausible but fails on precision, so it is false.', 'FALSE — On the Fuhrmann definition used in the entrance exam, the sentence is false. Pay earned by delivery drivers is included within cost of sales because moving finished goods is considered part of manufacturing them.
+$$
+P_{\text{last}} = 12, \quad \text{Shares} = 512,000
+$$
 
-The task tests reading balance sheets and income statements for structure and risk. Financial statements distinguish stocks (balance sheet at a date) from flows (income and cash over a period); many false statements swap those roles.
+$$
+\text{MCap} = 12 \times 512,000 = €6.14\text{ million}
+$$
 
-Apply the case evidence: Distribution activity occurs after production and belongs outside cost of sales. Check whether the direction of change (higher/lower, above/below the threshold) matches what the statement asserts.
+Threshold: exceeds €4.8 million. Actual €6.14 million.
 
-Because the decisive detail is wrong, mark the statement false.', 'FALSE — Evaluated against the textbook standard, this assertion is false. Amounts paid to the retail sales team are included within cost of sales because generating sales is necessary before any revenue can be recognised.
+Reading the arithmetic against the claim: market cap €6.14m exceeds €4.8m so the statement holds.
 
-This is an accounting reasoning item on reading balance sheets and income statements for structure and risk. Decide whether the sentence correctly describes how a transaction, balance-sheet line, or period result affects assets, liabilities, or equity.
+The statement is true.', 'TRUE — EPS here links the operating result (in € thousands) to shares outstanding (scaled to thousands of shares).
 
-From the figures or classification rule involved, selling costs are operating expenses, not part of cost of sales, regardless of their necessity. Accounting statements fail when a loss is treated as increasing equity, when a flow is placed on the balance sheet, or when a ratio inequality is reversed.
+Name the identity in words: EPS = operating result (€ thousands) ÷ (shares outstanding ÷ 1,000).
 
-The statement sounds plausible but fails on precision, so it is false.'] WHERE case_id = 'CASE 6.3.124' AND tier = 'full';
-UPDATE public.economics_cases SET tactical_explanations = ARRAY['FALSE — This statement is false. The closing share price rose by more than 16.5% from first to last month.
+$$
+\text{Operating result} = 287, \quad \frac{\text{Shares}}{1,000} = 512
+$$
 
-This item belongs to the accounting block on reading balance sheets and income statements for structure and risk. Ratio and classification questions ask you to connect a figure or comparison in the case with the correct statement category, not merely to recognise a number.
+$$
+EPS = \frac{287}{512} = €0.5605
+$$
 
-From the figures or classification rule involved, price change ≈ -42.1%. Accounting statements fail when a loss is treated as increasing equity, when a flow is placed on the balance sheet, or when a ratio inequality is reversed.
+Threshold: exceeds €0.45. Actual ≈ €0.56.
 
-The statement sounds plausible but fails on precision, so it is false.', 'TRUE — Evaluated against the textbook standard, this assertion is correct. Return on equity and return on capital employed are most meaningful when comparing similar businesses or the same business over time, not as isolated absolute numbers.
+Reading the arithmetic against the claim: EPS €0.56 exceeds €0.45 so the statement holds.
 
-This item belongs to the accounting block on reading balance sheets and income statements for structure and risk. Ratio and classification questions ask you to connect a figure or comparison in the case with the correct statement category, not merely to recognise a number.
+The statement is true.', 'FALSE — Price appreciation from the first listed month to the last is a simple percentage change on the closing prices.
 
-From the figures or classification rule involved, comparative context matters for return ratios. Accounting statements fail when a loss is treated as increasing equity, when a flow is placed on the balance sheet, or when a ratio inequality is reversed.
+Name the identity in words: price rise = (last closing price − first closing price) ÷ first closing price.
 
-Every part of the claim aligns with the standard concept, so the statement stands.', 'FALSE — The claim is false. Peak monthly share turnover exceeds 88,732 shares.
+$$
+P_{\text{first}} = 18, \quad P_{\text{last}} = 12
+$$
 
-The underlying topic is reading balance sheets and income statements for structure and risk. When figures appear, the exam checks whether you can interpret them in accounting terms—what increased, what ratio is implied, and whether the label (current, non-current, equity, and so on) fits.
+$$
+\frac{12 - 18}{18} = -33.3\%
+$$
 
-Apply the case evidence: Peak monthly volume = 87,000. Check whether the direction of change (higher/lower, above/below the threshold) matches what the statement asserts.
+Threshold: more than 21.1%. Actual -33.3%.
 
-The statement sounds plausible but fails on precision, so it is false.', 'TRUE — The claim is correct. Highest closing price is more than 23.5% above the lowest.
+Reading the arithmetic against the claim: the rise is -33.3%, which does not exceed 21.1% so the statement does not hold.
 
-The underlying topic is reading balance sheets and income statements for structure and risk. When figures appear, the exam checks whether you can interpret them in accounting terms—what increased, what ratio is implied, and whether the label (current, non-current, equity, and so on) fits.
+The statement is false.', 'TRUE — The high–low gap is the percentage by which the peak closing price exceeds the trough closing price in the table.
 
-Apply the case evidence: Range €11–€19. Check whether the direction of change (higher/lower, above/below the threshold) matches what the statement asserts.
+Name the identity in words: high–low gap = (highest close − lowest close) ÷ lowest close.
 
-Every part of the claim aligns with the standard concept, so the statement stands.', 'FALSE — On the Fuhrmann definition used in the entrance exam, the sentence is false. Operating result is below €270 thousand.
+$$
+P_{\max} = 18, \quad P_{\min} = 12
+$$
 
-The underlying topic is reading balance sheets and income statements for structure and risk. When figures appear, the exam checks whether you can interpret them in accounting terms—what increased, what ratio is implied, and whether the label (current, non-current, equity, and so on) fits.
+$$
+\frac{18 - 12}{12} = 50.0\%
+$$
 
-Apply the case evidence: Operating result = 310. Check whether the direction of change (higher/lower, above/below the threshold) matches what the statement asserts.
+Threshold: more than 35.5%. Actual 50.0%.
 
-The statement sounds plausible but fails on precision, so it is false.'] WHERE case_id = 'CASE 6.3.125' AND tier = 'full';
+Reading the arithmetic against the claim: the gap is 50.0%, which exceeds 35.5% so the statement holds.
+
+The statement is true.'] WHERE case_id = 'CASE 6.3.119' AND tier = 'full';
+UPDATE public.economics_cases SET tactical_explanations = ARRAY['FALSE — Single-year statements need cautious reading: policies, estimates, and one-offs matter.
+
+The claim states: Amounts paid to account managers are included within cost of sales. The reason — generating sales is necessary before any revenue can be recognised. — does not support that label under the chapter definitions. Single-year statements need cautious reading: policies, estimates, and one-offs matter. Ratios (liquidity, gearing, margins, returns) put line items in context. Financial accounting serves external users; audits give reasonable, not absolute, assurance.
+
+The statement is false.', 'FALSE — Single-year statements need cautious reading: policies, estimates, and one-offs matter.
+
+The claim states: Raw materials consumed directly in production are excluded from cost of sales. The reason — only costs paid in cash during the same month count toward it. — does not support that label under the chapter definitions. Single-year statements need cautious reading: policies, estimates, and one-offs matter. Ratios (liquidity, gearing, margins, returns) put line items in context. Financial accounting serves external users; audits give reasonable, not absolute, assurance.
+
+The statement is false.', 'TRUE — Single-year statements need cautious reading: policies, estimates, and one-offs matter.
+
+The claim states: Amounts paid to key account managers are excluded from cost of sales. The reason given — selling activity takes place only after the goods have already been produced. — fits the chapter rule. Single-year statements need cautious reading: policies, estimates, and one-offs matter. Ratios (liquidity, gearing, margins, returns) put line items in context. Financial accounting serves external users; audits give reasonable, not absolute, assurance.
+
+The statement is true.', 'FALSE — Single-year statements need cautious reading: policies, estimates, and one-offs matter.
+
+The claim states: The wages of payroll and accounts clerks are included within cost of sales. The reason — every employee contributes in some way to the goods that are sold. — does not support that label under the chapter definitions. Single-year statements need cautious reading: policies, estimates, and one-offs matter. Ratios (liquidity, gearing, margins, returns) put line items in context. Financial accounting serves external users; audits give reasonable, not absolute, assurance.
+
+The statement is false.', 'FALSE — Single-year statements need cautious reading: policies, estimates, and one-offs matter.
+
+The claim states: Pay earned by outbound freight handlers is included within cost of sales. The reason — moving finished goods is considered part of manufacturing them. — does not support that label under the chapter definitions. Single-year statements need cautious reading: policies, estimates, and one-offs matter. Ratios (liquidity, gearing, margins, returns) put line items in context. Financial accounting serves external users; audits give reasonable, not absolute, assurance.
+
+The statement is false.'] WHERE case_id = 'CASE 6.3.120' AND tier = 'full';
+UPDATE public.economics_cases SET tactical_explanations = ARRAY['FALSE — Price appreciation from the first listed month to the last is a simple percentage change on the closing prices.
+
+Name the identity in words: price rise = (last closing price − first closing price) ÷ first closing price.
+
+$$
+P_{\text{first}} = 24, \quad P_{\text{last}} = 19
+$$
+
+$$
+\frac{19 - 24}{24} = -20.8\%
+$$
+
+Threshold: more than 24.2%. Actual -20.8%.
+
+Reading the arithmetic against the claim: the rise is -20.8%, which does not exceed 24.2% so the statement does not hold.
+
+The statement is false.', 'FALSE — With shares outstanding unchanged, market-cap growth equals the percentage change in the share price between first and last month.
+
+Name the identity in words: market-cap change = (last MCap − first MCap) ÷ first MCap.
+
+$$
+\text{MCap}_{\text{first}} = 24 \times 453,000 = €10.87\text{m}
+$$
+
+$$
+\text{MCap}_{\text{last}} = 19 \times 453,000 = €8.61\text{m}
+$$
+
+$$
+\frac{8.61 - 10.87}{10.87} = -20.8\%
+$$
+
+Threshold: more than 8.4%. Actual -20.8%.
+
+Reading the arithmetic against the claim: MCap rose -20.8%, which does not exceed 8.4% so the statement does not hold.
+
+The statement is false.', 'FALSE — The high–low gap is the percentage by which the peak closing price exceeds the trough closing price in the table.
+
+Name the identity in words: high–low gap = (highest close − lowest close) ÷ lowest close.
+
+$$
+P_{\max} = 24, \quad P_{\min} = 19
+$$
+
+$$
+\frac{24 - 19}{19} = 26.3\%
+$$
+
+Threshold: more than 32.1%. Actual 26.3%.
+
+Reading the arithmetic against the claim: the gap is 26.3%, which does not exceed 32.1% so the statement does not hold.
+
+The statement is false.', 'TRUE — Single-year statements need cautious reading: policies, estimates, and one-offs matter.
+
+The wording matches the relevant rule for "Listed Company Performance Charts 121". Single-year statements need cautious reading: policies, estimates, and one-offs matter. Ratios (liquidity, gearing, margins, returns) put line items in context. Financial accounting serves external users; audits give reasonable, not absolute, assurance. Applied here: "Making a profit alone does not prove sufficient profitability; profitability ratios relate profit to an indicator of business size such as assets, equity or turnover."
+
+The statement is true.', 'FALSE — Peak monthly turnover is simply the largest shares-traded figure among the months in the table.
+
+Scan each month''s volume and take the maximum.
+
+$$
+\text{Peak volume} = 84,000 \quad (January)
+$$
+
+Threshold: exceeds 87,473. Actual 84,000.
+
+Reading the arithmetic against the claim: peak volume 84,000 does not exceed 87,473 so the statement does not hold.
+
+The statement is false.'] WHERE case_id = 'CASE 6.3.121' AND tier = 'full';
+UPDATE public.economics_cases SET tactical_explanations = ARRAY['TRUE — Single-year statements need cautious reading: policies, estimates, and one-offs matter.
+
+The wording matches the relevant rule for "Earnings Per Share From Reported Figures 122". Single-year statements need cautious reading: policies, estimates, and one-offs matter. Ratios (liquidity, gearing, margins, returns) put line items in context. Financial accounting serves external users; audits give reasonable, not absolute, assurance. Applied here: "Working capital should be positive, meaning current assets should be higher than current liabilities."
+
+The statement is true.', 'TRUE — Price appreciation from the first listed month to the last is a simple percentage change on the closing prices.
+
+Name the identity in words: price rise = (last closing price − first closing price) ÷ first closing price.
+
+$$
+P_{\text{first}} = 31, \quad P_{\text{last}} = 40
+$$
+
+$$
+\frac{40 - 31}{31} = 29.0\%
+$$
+
+Threshold: more than 13.9%. Actual 29.0%.
+
+Reading the arithmetic against the claim: the rise is 29.0%, which exceeds 13.9% so the statement holds.
+
+The statement is true.', 'TRUE — Market capitalisation values the equity at the latest closing price times shares outstanding.
+
+Name the identity in words: market capitalisation = last closing price × shares outstanding.
+
+$$
+P_{\text{last}} = 40, \quad \text{Shares} = 636,000
+$$
+
+$$
+\text{MCap} = 40 \times 636,000 = €25.44\text{ million}
+$$
+
+Threshold: exceeds €21.7 million. Actual €25.44 million.
+
+Reading the arithmetic against the claim: market cap €25.44m exceeds €21.7m so the statement holds.
+
+The statement is true.', 'TRUE — With shares outstanding unchanged, market-cap growth equals the percentage change in the share price between first and last month.
+
+Name the identity in words: market-cap change = (last MCap − first MCap) ÷ first MCap.
+
+$$
+\text{MCap}_{\text{first}} = 31 \times 636,000 = €19.72\text{m}
+$$
+
+$$
+\text{MCap}_{\text{last}} = 40 \times 636,000 = €25.44\text{m}
+$$
+
+$$
+\frac{25.44 - 19.72}{19.72} = 29.0\%
+$$
+
+Threshold: more than 22.3%. Actual 29.0%.
+
+Reading the arithmetic against the claim: MCap rose 29.0%, which exceeds 22.3% so the statement holds.
+
+The statement is true.', 'TRUE — The high–low gap is the percentage by which the peak closing price exceeds the trough closing price in the table.
+
+Name the identity in words: high–low gap = (highest close − lowest close) ÷ lowest close.
+
+$$
+P_{\max} = 40, \quad P_{\min} = 31
+$$
+
+$$
+\frac{40 - 31}{31} = 29.0\%
+$$
+
+Threshold: more than 18.7%. Actual 29.0%.
+
+Reading the arithmetic against the claim: the gap is 29.0%, which exceeds 18.7% so the statement holds.
+
+The statement is true.'] WHERE case_id = 'CASE 6.3.122' AND tier = 'full';
+UPDATE public.economics_cases SET tactical_explanations = ARRAY['TRUE — Single-year statements need cautious reading: policies, estimates, and one-offs matter.
+
+The claim states: Production costs directly tied to units manufactured are included within cost of sales. The reason given — they are incurred directly in producing the goods that an industrial cleaning company has sold. — fits the chapter rule. Single-year statements need cautious reading: policies, estimates, and one-offs matter. Ratios (liquidity, gearing, margins, returns) put line items in context. Financial accounting serves external users; audits give reasonable, not absolute, assurance.
+
+The statement is true.', 'TRUE — Single-year statements need cautious reading: policies, estimates, and one-offs matter.
+
+The wording matches the relevant rule for "Expenditure Versus Expense Over Time". Single-year statements need cautious reading: policies, estimates, and one-offs matter. Ratios (liquidity, gearing, margins, returns) put line items in context. Financial accounting serves external users; audits give reasonable, not absolute, assurance. Applied here: "When a beverage bottling company buys a bottling line, only the depreciation charged in each period becomes an expense in that period''s income statement, even though the full expenditure occurs at …"
+
+The statement is true.', 'FALSE — Single-year statements need cautious reading: policies, estimates, and one-offs matter.
+
+The claim states: Amounts paid to field sales representatives are included within cost of sales. The reason — generating sales is necessary before any revenue can be recognised. — does not support that label under the chapter definitions. Single-year statements need cautious reading: policies, estimates, and one-offs matter. Ratios (liquidity, gearing, margins, returns) put line items in context. Financial accounting serves external users; audits give reasonable, not absolute, assurance.
+
+The statement is false.', 'TRUE — Single-year statements need cautious reading: policies, estimates, and one-offs matter.
+
+The wording matches the relevant rule for "Expenditure Versus Expense Over Time". Single-year statements need cautious reading: policies, estimates, and one-offs matter. Ratios (liquidity, gearing, margins, returns) put line items in context. Financial accounting serves external users; audits give reasonable, not absolute, assurance. Applied here: "Not every expenditure a beverage bottling company makes during a year shows up as an expense in that same year''s income statement."
+
+The statement is true.', 'TRUE — Single-year statements need cautious reading: policies, estimates, and one-offs matter.
+
+The wording matches the relevant rule for "Expenditure Versus Expense Over Time". Single-year statements need cautious reading: policies, estimates, and one-offs matter. Ratios (liquidity, gearing, margins, returns) put line items in context. Financial accounting serves external users; audits give reasonable, not absolute, assurance. Applied here: "Not every expenditure a joinery and furniture workshop makes during a year shows up as an expense in that same year''s income statement."
+
+The statement is true.'] WHERE case_id = 'CASE 6.3.123' AND tier = 'full';
+UPDATE public.economics_cases SET tactical_explanations = ARRAY['TRUE — Single-year statements need cautious reading: policies, estimates, and one-offs matter.
+
+The wording matches the relevant rule for "Expenditure Versus Expense in Context". Single-year statements need cautious reading: policies, estimates, and one-offs matter. Ratios (liquidity, gearing, margins, returns) put line items in context. Financial accounting serves external users; audits give reasonable, not absolute, assurance. Applied here: "When a plastics moulding company buys an injection-moulding machine, only the depreciation charged in each period becomes an expense in that period''s income statement, even though the full expendit…"
+
+The statement is true.', 'FALSE — Single-year statements need cautious reading: policies, estimates, and one-offs matter.
+
+The claim states: Direct factory labour on the production line are excluded from cost of sales. The reason — only costs paid in cash during the same month count toward it. — does not support that label under the chapter definitions. Single-year statements need cautious reading: policies, estimates, and one-offs matter. Ratios (liquidity, gearing, margins, returns) put line items in context. Financial accounting serves external users; audits give reasonable, not absolute, assurance.
+
+The statement is false.', 'FALSE — Single-year statements need cautious reading: policies, estimates, and one-offs matter.
+
+The claim states: The wages of reception and clerical staff are included within cost of sales. The reason — every employee contributes in some way to the goods that are sold. — does not support that label under the chapter definitions. Single-year statements need cautious reading: policies, estimates, and one-offs matter. Ratios (liquidity, gearing, margins, returns) put line items in context. Financial accounting serves external users; audits give reasonable, not absolute, assurance.
+
+The statement is false.', 'FALSE — Single-year statements need cautious reading: policies, estimates, and one-offs matter.
+
+The claim states: Pay earned by delivery drivers is included within cost of sales. The reason — moving finished goods is considered part of manufacturing them. — does not support that label under the chapter definitions. Single-year statements need cautious reading: policies, estimates, and one-offs matter. Ratios (liquidity, gearing, margins, returns) put line items in context. Financial accounting serves external users; audits give reasonable, not absolute, assurance.
+
+The statement is false.', 'FALSE — Single-year statements need cautious reading: policies, estimates, and one-offs matter.
+
+The claim states: Amounts paid to the retail sales team are included within cost of sales. The reason — generating sales is necessary before any revenue can be recognised. — does not support that label under the chapter definitions. Single-year statements need cautious reading: policies, estimates, and one-offs matter. Ratios (liquidity, gearing, margins, returns) put line items in context. Financial accounting serves external users; audits give reasonable, not absolute, assurance.
+
+The statement is false.'] WHERE case_id = 'CASE 6.3.124' AND tier = 'full';
+UPDATE public.economics_cases SET tactical_explanations = ARRAY['FALSE — Price appreciation from the first listed month to the last is a simple percentage change on the closing prices.
+
+Name the identity in words: price rise = (last closing price − first closing price) ÷ first closing price.
+
+$$
+P_{\text{first}} = 19, \quad P_{\text{last}} = 11
+$$
+
+$$
+\frac{11 - 19}{19} = -42.1\%
+$$
+
+Threshold: more than 16.5%. Actual -42.1%.
+
+Reading the arithmetic against the claim: the rise is -42.1%, which does not exceed 16.5% so the statement does not hold.
+
+The statement is false.', 'TRUE — Single-year statements need cautious reading: policies, estimates, and one-offs matter.
+
+The wording matches the relevant rule for "Earnings Per Share From Reported Figures 125". Single-year statements need cautious reading: policies, estimates, and one-offs matter. Ratios (liquidity, gearing, margins, returns) put line items in context. Financial accounting serves external users; audits give reasonable, not absolute, assurance. Applied here: "Return on equity and return on capital employed are most meaningful when comparing similar businesses or the same business over time, not as isolated absolute numbers."
+
+The statement is true.', 'FALSE — Peak monthly turnover is simply the largest shares-traded figure among the months in the table.
+
+Scan each month''s volume and take the maximum.
+
+$$
+\text{Peak volume} = 87,000 \quad (May)
+$$
+
+Threshold: exceeds 88,732. Actual 87,000.
+
+Reading the arithmetic against the claim: peak volume 87,000 does not exceed 88,732 so the statement does not hold.
+
+The statement is false.', 'TRUE — The high–low gap is the percentage by which the peak closing price exceeds the trough closing price in the table.
+
+Name the identity in words: high–low gap = (highest close − lowest close) ÷ lowest close.
+
+$$
+P_{\max} = 19, \quad P_{\min} = 11
+$$
+
+$$
+\frac{19 - 11}{11} = 72.7\%
+$$
+
+Threshold: more than 23.5%. Actual 72.7%.
+
+Reading the arithmetic against the claim: the gap is 72.7%, which exceeds 23.5% so the statement holds.
+
+The statement is true.', 'FALSE — Operating result is taken from the annual figures beside the share table and compared with the stated euro-thousand threshold.
+
+Read the operating result from the extract:
+
+$$
+\text{Operating result} = €310\text{ thousand}
+$$
+
+The statement claims this amount is below €270 thousand. Actual €310 thousand is not below that threshold.
+
+Reading the arithmetic against the claim: operating result €310k is not below €270k so the statement does not hold.
+
+The statement is false.'] WHERE case_id = 'CASE 6.3.125' AND tier = 'full';
