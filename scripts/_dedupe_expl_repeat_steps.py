@@ -1,10 +1,5 @@
 #!/usr/bin/env python3
-"""Dedupe repeated $$ steps and lightly merge short continued equality chains.
-
-Keeps maximal expansion for real algebra. Only:
-- drops exact duplicate / repeated display blocks
-- joins short fragments that continue the same evaluation with leading '='
-"""
+"""Dedupe repeated $$ steps and lightly merge short continued equality chains."""
 from __future__ import annotations
 
 import json
@@ -15,34 +10,28 @@ DISP_RE = re.compile(r"\$\$(.*?)\$\$", re.S)
 
 
 def norm(d: str) -> str:
-    s = " ".join(d.split())
-    s = re.sub(r"\s+", "", s)
+    s = re.sub(r"\s+", "", d)
     return s.rstrip(".,;")
 
 
 def is_cont_eq(d: str) -> bool:
-    """Display is a short continuation like '= 21' or '= \\frac{1}{2}'."""
     t = d.strip()
     if not t.startswith("="):
         return False
-    # strip leading =
     rest = t[1:].strip()
     if len(rest) > 60:
         return False
-    # shouldn't introduce a new LHS assignment like '= x = 2' with words
     if "\\Rightarrow" in t or "\\text" in t:
         return False
     return True
 
 
 def is_short_seed(d: str) -> bool:
-    """Previous line is a short expression worth chaining into."""
     t = " ".join(d.split())
     if len(t) > 80:
         return False
     if "\\Rightarrow" in t:
         return False
-    # allow LHS=expr or bare expr / fraction
     return True
 
 
@@ -92,24 +81,17 @@ def collapse_skip_one_arith(ds: list[str]) -> list[str]:
 
 
 def merge_short_eq_chains(ds: list[str]) -> list[str]:
-    """Merge seed + '= a' + '= b' into one display when fragments are short."""
     out: list[str] = []
     i = 0
     while i < len(ds):
         cur = ds[i]
         if i + 1 < len(ds) and is_short_seed(cur) and is_cont_eq(ds[i + 1]):
-            # collect following = continuations
             parts = [cur.strip()]
             j = i + 1
             while j < len(ds) and is_cont_eq(ds[j]):
-                cont = ds[j].strip()
-                # ensure single spaces around =
-                if not cont.startswith("="):
-                    break
-                parts.append(cont)
+                parts.append(ds[j].strip())
                 j += 1
             if len(parts) >= 2:
-                # only merge if total stays modest (don't glue huge algebra)
                 merged = " ".join(parts)
                 if len(merged) <= 140:
                     out.append("\n" + merged + "\n")
@@ -130,97 +112,54 @@ def dedupe_display_list(ds: list[str]) -> list[str]:
     return ds
 
 
-def rebuild_explanation(expl: str) -> tuple[str, int]:
-    original = DISP_RE.findall(expl)
-    if len(original) < 2:
-        return expl, 0
-    deduped = dedupe_display_list(list(original))
-    if [norm(x) for x in deduped] == [norm(x) for x in original]:
-        return expl, 0
-
-    parts: list[str] = []
-    last = 0
-    di = 0
-    removed = 0
-    for m in DISP_RE.finditer(expl):
-        parts.append(expl[last : m.start()])
-        content = m.group(1)
-        if di < len(deduped) and norm(content) == norm(deduped[di]):
-            parts.append(f"$${content}$$")
-            di += 1
-        elif di < len(deduped) and norm(deduped[di]) != norm(content):
-            # merged block replaces one or more originals — emit merged once
-            # when we've consumed enough originals matching the merge
-            # Simpler path: if content is prefix of merged or first fragment
-            merged = deduped[di]
-            if norm(content) == norm(merged) or norm(merged).startswith(norm(content).rstrip("=")):
-                # start of a merge: emit full merged, skip until fragments consumed
-                parts.append(f"$${merged}$$")
-                # advance di; skip subsequent original fragments that were merged
-                target = norm(merged)
-                consumed = norm(content)
-                last_end = m.end()
-                # peek following displays in original stream via continuing loop
-                di += 1
-                # mark that following cont_eq originals should be skipped
-                # handled below by matching remaining
-            else:
-                removed += 1
-        else:
-            removed += 1
-        last = m.end()
-    parts.append(expl[last:])
-    # The above loop is tricky with merges — use index-aligned rebuild instead
-    return rebuild_by_split(expl, original, deduped)
-
-
 def rebuild_by_split(expl: str, original: list[str], deduped: list[str]) -> tuple[str, int]:
-    """Split explanation on $$ displays; reassemble with deduped list.
-
-    Always preserves trailing prose (closers). Whitespace-only prose between
-    dropped duplicate displays is discarded; non-empty prose is kept.
-    """
     pieces = DISP_RE.split(expl)
     prose = pieces[0::2]
     displays = pieces[1::2]
     assert len(displays) == len(original)
 
-    out: list[str] = [prose[0]]
+    chunks: list[str] = [prose[0]]
     oi = 0
     di = 0
     skipped = 0
 
-    def append_prose_after(display_index: int) -> None:
-        # prose[k] follows displays[k-1] for k>=1; prose[0] is prefix
-        if display_index + 1 < len(prose):
-            p = prose[display_index + 1]
-            if p.strip():
-                out.append(p)
-            elif display_index + 1 == len(displays):
-                # keep final newlines before EOF only if needed
-                out.append(p)
+    def trailing_prose(idx: int) -> str:
+        return prose[idx + 1] if idx + 1 < len(prose) else ""
+
+    def add_math(disp: str) -> None:
+        # separate from prior content with a blank line when needed
+        if chunks and not chunks[-1].endswith("\n\n"):
+            if chunks[-1].endswith("\n"):
+                chunks.append("\n")
+            else:
+                chunks.append("\n\n")
+        chunks.append(f"$${disp}$$")
 
     while oi < len(displays):
         if di >= len(deduped):
-            # remaining displays are pure duplicates — keep any meaningful prose
             while oi < len(displays):
                 skipped += 1
-                append_prose_after(oi)
+                tp = trailing_prose(oi)
+                if tp.strip():
+                    chunks.append(tp)
                 oi += 1
             break
 
         if norm(displays[oi]) == norm(deduped[di]):
-            out.append(f"$${deduped[di]}$$")
-            append_prose_after(oi)
+            add_math(deduped[di])
+            tp = trailing_prose(oi)
+            if tp.strip():
+                chunks.append(tp if tp.startswith("\n") else "\n\n" + tp)
+            else:
+                chunks.append("\n\n")
             di += 1
             oi += 1
             continue
 
-        # merged block starting at this original fragment
         if norm(displays[oi]) in norm(deduped[di]) or norm(deduped[di]).startswith(
             norm(displays[oi])
         ):
-            out.append(f"$${deduped[di]}$$")
+            add_math(deduped[di])
             merged_n = norm(deduped[di])
             oi += 1
             while oi < len(displays):
@@ -231,21 +170,35 @@ def rebuild_by_split(expl: str, original: list[str], deduped: list[str]) -> tupl
                     continue
                 break
             last_consumed = oi - 1
-            append_prose_after(last_consumed)
+            tp = trailing_prose(last_consumed)
+            if tp.strip():
+                chunks.append(tp if tp.startswith("\n") else "\n\n" + tp)
+            else:
+                chunks.append("\n\n")
             di += 1
             continue
 
-        # duplicate skip of this display
         skipped += 1
-        append_prose_after(oi)
+        tp = trailing_prose(oi)
+        if tp.strip():
+            chunks.append(tp)
         oi += 1
 
-    new = "".join(out)
+    new = "".join(chunks)
     new = re.sub(r"\n{3,}", "\n\n", new)
-    # ensure closer newline
-    if not new.endswith("\n") and expl.endswith("\n"):
+    if expl.endswith("\n") and not new.endswith("\n"):
         new += "\n"
     return new, skipped + max(0, len(original) - len(deduped))
+
+
+def rebuild_explanation(expl: str) -> tuple[str, int]:
+    original = DISP_RE.findall(expl)
+    if len(original) < 2:
+        return expl, 0
+    deduped = dedupe_display_list(list(original))
+    if [norm(x) for x in deduped] == [norm(x) for x in original]:
+        return expl, 0
+    return rebuild_by_split(expl, original, deduped)
 
 
 def process_json(path: Path) -> tuple[int, int]:
@@ -260,7 +213,7 @@ def process_json(path: Path) -> tuple[int, int]:
             if not isinstance(e, str):
                 continue
             letters += 1
-            ne, r = rebuild_explanation(e)
+            ne, _ = rebuild_explanation(e)
             if ne != e:
                 expls[i] = ne
                 changed += 1
