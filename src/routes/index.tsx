@@ -48,12 +48,12 @@ export function Index() {
 
       <main>
         {/* HERO — centered paper */}
-        <section className="relative overflow-hidden px-4 pt-14 pb-16 sm:px-6 sm:pt-20 sm:pb-24 lg:px-8 lg:pt-24 lg:pb-28">
+        <section className="relative overflow-hidden px-4 pt-8 pb-12 sm:px-6 sm:pt-12 sm:pb-16 lg:px-8 lg:pt-14 lg:pb-20">
           <div className="mx-auto max-w-6xl">
             <div className="mx-auto flex max-w-3xl flex-col items-center text-center">
-              <ExamCountdown className="mb-8 sm:mb-10" />
+              <ExamCountdown className="mb-5 sm:mb-6" />
 
-              <div className="mb-6 inline-flex items-center gap-2 rounded-full border border-border bg-card px-4 py-1.5 shadow-sm">
+              <div className="mb-4 inline-flex items-center gap-2 rounded-full border border-border bg-card px-4 py-1.5 shadow-sm">
                 <span
                   className="h-1.5 w-1.5 rounded-full"
                   style={{ backgroundColor: "#2DD4A8" }}
@@ -67,13 +67,13 @@ export function Index() {
                 Step by step preparation for your 2027 WU BBE exam
               </h1>
 
-              <p className="mt-6 max-w-xl text-lg leading-relaxed text-muted-foreground">
+              <p className="mt-4 max-w-xl text-lg leading-relaxed text-muted-foreground">
                 Master every detail and tactic of the actual exam.
               </p>
 
               <div
                 id="full-course"
-                className="mt-10 flex w-full flex-col items-stretch justify-center gap-3 sm:w-auto sm:flex-row"
+                className="mt-7 flex w-full flex-col items-stretch justify-center gap-3 sm:w-auto sm:flex-row"
               >
                 <LocalizedLink
                   to="/demo-practice"
@@ -100,7 +100,7 @@ export function Index() {
 
               <div
                 id="important-features"
-                className="mt-8 flex flex-wrap items-center justify-center gap-x-6 gap-y-2 text-xs font-medium tracking-wide text-taupe"
+                className="mt-5 flex flex-wrap items-center justify-center gap-x-6 gap-y-2 text-xs font-medium tracking-wide text-taupe"
               >
                 <span>Beauty of stress and time management</span>
                 <span className="h-1 w-1 rounded-full bg-border" />
@@ -110,7 +110,7 @@ export function Index() {
               </div>
             </div>
 
-            <div className="mt-14 sm:mt-16 lg:mt-20">
+            <div className="mt-6 sm:mt-8 lg:mt-9">
               <PrepJourneyRoadmap />
             </div>
           </div>
@@ -128,13 +128,13 @@ export function Index() {
             backgroundAttachment: "fixed",
           }}
         >
-          <div className="mx-auto max-w-5xl px-6 py-28 text-center lg:px-8 lg:py-36">
+          <div className="mx-auto max-w-5xl px-6 py-16 text-center lg:px-8 lg:py-20">
             <h2 className="font-display text-3xl font-semibold leading-tight text-white sm:text-4xl lg:text-5xl">
               A triple-accredited elite business school.
               <br />
               <span className="text-white/80">Almost free education.</span>
             </h2>
-            <p className="mx-auto mt-6 max-w-2xl text-base leading-relaxed text-white/75 sm:text-lg">
+            <p className="mx-auto mt-5 max-w-2xl text-base leading-relaxed text-white/75 sm:text-lg">
               One 2-hour exam stands between your family and a world-class degree at almost zero
               cost.
             </p>
@@ -142,13 +142,13 @@ export function Index() {
         </section>
 
         {/* WHY US — high-contrast dark fintech */}
-        <section className="relative overflow-hidden bg-why-us-bg px-6 py-24 lg:px-8 lg:py-32">
+        <section className="relative overflow-hidden bg-why-us-bg px-6 pt-16 pb-6 lg:px-8 lg:pt-20 lg:pb-8">
           <div className="relative mx-auto max-w-6xl">
             <div className="mx-auto max-w-3xl text-center">
               <h2 className="font-display text-3xl font-semibold leading-[1.1] text-primary-foreground sm:text-4xl lg:text-5xl">
                 Why Choose US
               </h2>
-              <p className="mt-5 text-base leading-relaxed text-primary-foreground/70 sm:text-lg">
+              <p className="mt-4 text-base leading-relaxed text-primary-foreground/70 sm:text-lg">
                 The standards at WU Vienna are exceptionally high. Let's be honest: entry
                 competition is brutal, and no software can ever guarantee your admission. Success
                 requires hard, disciplined work. But our data proves how we shift the odds in your
@@ -162,7 +162,7 @@ export function Index() {
         <WhyUsSlider />
 
         {/* CTA below snap slider */}
-        <section className="relative bg-why-us-bg px-6 py-16 lg:px-8">
+        <section className="relative bg-why-us-bg px-6 py-10 lg:px-8">
           <div className="mx-auto flex max-w-6xl justify-center">
             <LocalizedLink
               to="/products"
@@ -175,7 +175,7 @@ export function Index() {
         </section>
 
         {/* PARENTS — a frank audit teaser */}
-        <section className="relative bg-background px-6 py-24 lg:px-8 lg:py-32">
+        <section className="relative bg-background px-6 py-16 lg:px-8 lg:py-20">
           <div className="mx-auto max-w-3xl">
             <div className="text-center">
               <h2 className="font-display text-3xl font-semibold leading-tight text-foreground sm:text-4xl lg:text-5xl">
@@ -189,7 +189,7 @@ export function Index() {
               </p>
             </div>
 
-            <div className="relative mt-12">
+            <div className="relative mt-8">
               <div className="space-y-5 text-base leading-relaxed text-foreground sm:text-lg">
                 <p>
                   The mandatory in-person BBE entrance exam at WU Vienna is not a regular school
@@ -246,7 +246,7 @@ export function Index() {
             backgroundAttachment: "fixed",
           }}
         >
-          <div className="mx-auto max-w-5xl px-6 py-24 text-center lg:px-8 lg:py-32">
+          <div className="mx-auto max-w-5xl px-6 py-14 text-center lg:px-8 lg:py-16">
             <h2 className="font-display text-3xl font-semibold leading-tight text-white sm:text-4xl">
               Voices from the exam hall floor.
             </h2>
@@ -254,9 +254,9 @@ export function Index() {
         </section>
 
         {/* FIELD REPORTS — light */}
-        <section id="reviews" className="px-6 py-24 lg:px-8 lg:py-32">
+        <section id="reviews" className="px-6 py-16 lg:px-8 lg:py-20">
           <div className="mx-auto max-w-7xl">
-            <div className="mb-16 max-w-3xl">
+            <div className="mb-10 max-w-3xl">
               <h2 className="font-display text-3xl font-semibold text-foreground sm:text-4xl">
                 Students' reviews right after receiving an acceptance letter.
               </h2>
@@ -495,7 +495,7 @@ function WhyUsSlider() {
   const touch = useRef<{ x: number; y: number } | null>(null);
 
   return (
-    <div ref={rootRef} className="relative w-full overflow-hidden bg-why-us-bg py-12 sm:py-16">
+    <div ref={rootRef} className="relative w-full overflow-hidden bg-why-us-bg pb-12 pt-2 sm:pb-14 sm:pt-4">
 
       {/* Arrows */}
       <button

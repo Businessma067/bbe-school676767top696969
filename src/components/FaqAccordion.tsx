@@ -45,7 +45,7 @@ export const homepageFaqs = [
 
 export function FaqAccordion() {
   return (
-    <section className="bg-ivory px-6 py-24 lg:px-8 lg:py-32">
+    <section className="bg-ivory px-6 py-16 lg:px-8 lg:py-20">
       <div className="mx-auto max-w-3xl">
         <h2 className="text-center font-display text-3xl font-semibold text-espresso sm:text-4xl">
           Frequently asked questions

@@ -114,7 +114,7 @@ export function HowItWorksSection() {
   }, [tab, subject]);
 
   return (
-    <section id="how-it-works" className="relative bg-background px-4 py-20 sm:px-6 lg:px-8 lg:py-28">
+    <section id="how-it-works" className="relative bg-background px-4 py-14 sm:px-6 lg:px-8 lg:py-20">
       <div className="mx-auto max-w-7xl text-center">
         <h2 className="font-display text-3xl font-semibold text-foreground sm:text-4xl lg:text-5xl">
           How it works
@@ -168,7 +168,7 @@ export function HowItWorksSection() {
             <div className="min-w-0">
               <div className="overflow-hidden rounded-xl border border-border bg-[#f7f6f2]">
                 {tab === "course" ? (
-                  <div className="relative min-h-[18rem] sm:min-h-[26rem] lg:min-h-[34rem] xl:min-h-[38rem]">
+                  <div className="relative min-h-[16rem] sm:min-h-[22rem] lg:min-h-[28rem] xl:min-h-[30rem]">
                     <video
                       key={slide.key}
                       ref={videoRef}
@@ -183,7 +183,7 @@ export function HowItWorksSection() {
                     />
                   </div>
                 ) : (
-                  <div className="flex min-h-[18rem] items-center justify-center px-6 text-center sm:min-h-[26rem] lg:min-h-[34rem]">
+                  <div className="flex min-h-[16rem] items-center justify-center px-6 text-center sm:min-h-[22rem] lg:min-h-[28rem]">
                     <p className="max-w-sm text-sm leading-relaxed text-muted-foreground">
                       Walkthrough coming next. Switch back to Course to watch Economics, Math, and English.
                     </p>

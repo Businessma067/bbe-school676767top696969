@@ -217,20 +217,20 @@ function SpreadDesktopRoadmap() {
    * Above captions use enough offset to clear the "you are here" badge.
    */
   const nodes = [
-    { milestone: MILESTONES[0], left: "0%", centerY: "42%", caption: "above" as const },
+    { milestone: MILESTONES[0], left: "0%", centerY: "40%", caption: "above" as const },
     { milestone: MILESTONES[1], left: "25%", centerY: "62%", caption: "below" as const },
-    { milestone: MILESTONES[2], left: "51%", centerY: "42%", caption: "above" as const },
+    { milestone: MILESTONES[2], left: "51%", centerY: "40%", caption: "above" as const },
     { milestone: MILESTONES[3], left: "76%", centerY: "58%", caption: "below" as const },
   ];
 
   const pathD =
-    "M125 185 C 250 185, 280 273, 375 273 S 530 185, 625 185 S 790 255, 875 255";
+    "M125 120 C 250 120, 280 186, 375 186 S 530 120, 625 120 S 790 174, 875 174";
 
   return (
-    <div className="relative hidden h-[420px] w-full overflow-visible md:block lg:h-[440px]">
+    <div className="relative hidden h-[280px] w-full overflow-visible md:block lg:h-[300px]">
       <svg
         className="pointer-events-none absolute inset-0 z-0 h-full w-full"
-        viewBox="0 0 1000 440"
+        viewBox="0 0 1000 300"
         preserveAspectRatio="none"
         aria-hidden
       >
@@ -280,7 +280,7 @@ function SpreadDesktopRoadmap() {
               {n.caption === "above" && (
                 <div
                   className="absolute left-1/2 z-10 w-[min(240px,70vw)] -translate-x-1/2 text-center"
-                  style={{ bottom: "calc(100% + 1.5rem)" }}
+                  style={{ bottom: "calc(100% + 1rem)" }}
                 >
                   <NodeCaption milestone={n.milestone} />
                 </div>
@@ -289,7 +289,7 @@ function SpreadDesktopRoadmap() {
               {n.caption === "below" && (
                 <div
                   className="absolute left-1/2 z-10 w-[min(240px,70vw)] -translate-x-1/2 text-center"
-                  style={{ top: "calc(100% + 0.85rem)" }}
+                  style={{ top: "calc(100% + 0.65rem)" }}
                 >
                   <NodeCaption milestone={n.milestone} />
                 </div>
