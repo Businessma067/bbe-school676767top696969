@@ -1,8 +1,9 @@
+import { FlashcardMath } from "@/components/FlashcardMath";
 import { cn } from "@/lib/utils";
 
 /**
- * Math Ch11–style tutorial prose (font-expl + Part/claim/Tip spacing).
- * No KaTeX — English T/F explanations are plain language.
+ * Tutorial prose (font-expl + Part/claim/Tip spacing).
+ * Supports KaTeX via `$...$` / `$$...$$` (same as math explanations).
  */
 export function ExplanationProse({
   text,
@@ -21,10 +22,15 @@ export function ExplanationProse({
     | { kind: "claim"; text: string }
     | { kind: "note"; body: string }
     | { kind: "close"; text: string }
+    | { kind: "math"; text: string }
     | { kind: "para"; text: string };
 
   const chunks: Chunk[] = [];
   for (const p of paragraphs) {
+    if (/^\$\$[\s\S]+\$\$$/.test(p) || /^\$\$[\s\S]+\$\$\s*$/.test(p)) {
+      chunks.push({ kind: "math", text: p });
+      continue;
+    }
     const partOnly = p.match(/^\*\*([^*]+)\*\*\s*$/);
     if (partOnly && /^(Part\b|Answer\b|Overview\b|Setup\b)/i.test(partOnly[1].trim())) {
       chunks.push({ kind: "part", title: partOnly[1].replace(/[.!:]+$/, "") });
@@ -47,10 +53,10 @@ export function ExplanationProse({
     chunks.push({ kind: "para", text: p });
   }
 
-  // Final content paragraph is the natural verdict (after Tip/Trap notes).
+  // Final content paragraph is the natural verdict (after Tip/Trap notes / math).
   for (let i = chunks.length - 1; i >= 0; i--) {
     const c = chunks[i];
-    if (c.kind === "note") continue;
+    if (c.kind === "note" || c.kind === "math") continue;
     if (c.kind === "para") {
       chunks[i] = { kind: "close", text: c.text };
     }
@@ -61,6 +67,7 @@ export function ExplanationProse({
     <div
       className={cn(
         "font-expl text-[15px] leading-[1.6] text-[#1f1f1f] sm:text-[15.5px]",
+        "[&_.katex]:text-[1.08em] [&_.flashcard-math-display]:my-3",
         className,
       )}
     >
@@ -95,6 +102,13 @@ export function ExplanationProse({
               <span className="font-bold not-italic">{label}: </span>
               <InlineMarks text={rest.join(":").trim()} />
             </aside>
+          );
+        }
+        if (chunk.kind === "math") {
+          return (
+            <div key={idx} className="my-4">
+              <FlashcardMath text={chunk.text} displayPrefer />
+            </div>
           );
         }
         if (chunk.kind === "close") {
@@ -134,10 +148,12 @@ function InlineMarks({ text }: { text: string }) {
       {parts.map((p, i) =>
         p.kind === "bold" ? (
           <strong key={i} className="font-bold text-[#111]">
-            {p.value}
+            {p.value.includes("$") ? <FlashcardMath text={p.value} /> : p.value}
           </strong>
         ) : p.kind === "italic" ? (
-          <em key={i}>{p.value}</em>
+          <em key={i}>{p.value.includes("$") ? <FlashcardMath text={p.value} /> : p.value}</em>
+        ) : p.value.includes("$") ? (
+          <FlashcardMath key={i} text={p.value} />
         ) : (
           <span key={i}>{p.value}</span>
         ),
