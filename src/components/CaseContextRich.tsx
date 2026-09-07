@@ -93,7 +93,7 @@ function PieHtmlLegend({
   const total = data.reduce((sum, row) => sum + (Number(row.value) || 0), 0);
   if (data.length === 0) return null;
   return (
-    <ul className="mt-3 flex flex-wrap justify-center gap-x-3 gap-y-1.5 px-0.5">
+    <ul className="mt-3 flex flex-wrap justify-center gap-x-4 gap-y-2 px-0.5">
       {data.map((row, i) => {
         const name = String(row.name ?? "");
         const value = Number(row.value) || 0;
@@ -101,7 +101,7 @@ function PieHtmlLegend({
         return (
           <li
             key={`${name}-${i}`}
-            className="inline-flex max-w-[min(100%,15rem)] items-start gap-1.5 text-[10px] leading-snug text-muted-foreground sm:max-w-[17rem]"
+            className="inline-flex max-w-[min(100%,16rem)] items-start gap-1.5 text-[10px] leading-snug text-muted-foreground sm:max-w-[18rem]"
           >
             <span
               className="mt-[3px] h-2 w-2 shrink-0 rounded-[2px]"
