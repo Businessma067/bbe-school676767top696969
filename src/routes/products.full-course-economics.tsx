@@ -31,10 +31,37 @@ import {
 import { useSetPracticeCase } from "@/lib/practice-case-context";
 import { loadAllEconomicsChapterTasks, type EconomicsTask } from "@/data/economics-chapters";
 
-// Full course: everything is unlocked. No free-tier gating, no phantom locked rows.
-const phantomCountFor = (_ch: number): number => 0;
-const freeLimitOf = (_ch: number | "revision" | null): number => Number.POSITIVE_INFINITY;
-const isLocked = (_chapter: number | "revision" | null, _idx: number) => false;
+/** Keep ~35% of each chapter playable; hide the rest (explanations still being tightened). */
+const UNLOCK_RATIO = 0.35;
+/** Show this many locked rows after the last open task, fading out (rest stay hidden). */
+const LOCKED_TEASER_COUNT = 5;
+
+function unlockCountFor(listLength: number): number {
+  if (listLength <= 0) return 0;
+  return Math.max(1, Math.floor(listLength * UNLOCK_RATIO));
+}
+
+function freeLimitOf(
+  chapter: number | "revision" | null,
+  listLength: number,
+): number {
+  if (chapter === "revision" || chapter === null) return Number.POSITIVE_INFINITY;
+  return unlockCountFor(listLength);
+}
+
+function isLocked(
+  chapter: number | "revision" | null,
+  idx: number,
+  listLength: number,
+): boolean {
+  return idx >= freeLimitOf(chapter, listLength);
+}
+
+/** Sidebar: unlocked tasks + next N locked teasers; deeper locked tasks stay hidden. */
+function sidebarVisibleCount(listLength: number): number {
+  const open = unlockCountFor(listLength);
+  return Math.min(listLength, open + LOCKED_TEASER_COUNT);
+}
 
 
 export const Route = createFileRoute("/products/full-course-economics")({
@@ -223,7 +250,10 @@ function EconomicsTasks() {
       });
       return;
     }
-    if (activeCase && !isLocked(activeChapter, activeIdx)) {
+    if (
+      activeCase &&
+      !isLocked(activeChapter, activeIdx, activeList.length)
+    ) {
       const chNum = chapterOf(activeCase);
       const chTitle = CHAPTERS.find((c) => c.num === chNum)?.title ?? "";
       setPracticeCase({
@@ -336,8 +366,12 @@ function EconomicsTasks() {
             <ul className="practice-scroll min-h-0 flex-1 space-y-1.5 overflow-y-auto overscroll-contain pr-1">
               {CHAPTERS.map((ch) => {
                 const list = byChapter.get(ch.num) ?? [];
-                const done = list.filter((c) => progress.passed.includes(c.id)).length;
-                const total = list.length;
+                const openCount = unlockCountFor(list.length);
+                const visible = list.slice(0, sidebarVisibleCount(list.length));
+                const done = list
+                  .slice(0, openCount)
+                  .filter((c) => progress.passed.includes(c.id)).length;
+                const total = openCount;
                 const pct = total === 0 ? 0 : Math.round((done / total) * 100);
                 const isOpen = !!expanded[ch.num];
                 const isActiveCh = activeChapter === ch.num;
@@ -378,7 +412,11 @@ function EconomicsTasks() {
                     <button
                       onClick={(e) => {
                         e.stopPropagation();
-                        if (done + (list.filter((c) => progress.revision.includes(c.id)).length) === 0) return;
+                        const openIds = list.slice(0, openCount).map((c) => c.id);
+                        const touched = openIds.some(
+                          (id) => progress.passed.includes(id) || progress.revision.includes(id),
+                        );
+                        if (!touched) return;
                         if (window.confirm(`Reset all progress for Chapter ${ch.num}?`)) resetChapter(ch.num);
                       }}
                       title={`Reset Chapter ${ch.num}`}
@@ -390,21 +428,25 @@ function EconomicsTasks() {
                   </div>
                     {isOpen && (
                       <ul className="border-t border-border/60 py-1">
-                        {list.length === 0 && (
+                        {visible.length === 0 && (
                           <li className="px-4 py-2 text-[11px] text-muted-foreground">No cases yet.</li>
                         )}
-                        {list.map((c, i) => {
+                        {visible.map((c, i) => {
                           const passed = progress.passed.includes(c.id);
                           const rev = progress.revision.includes(c.id);
                           const active = isActiveCh && activeList[activeIdx]?.id === c.id;
-                          const locked = isLocked(ch.num, i);
-                          const lockedPos = locked ? i - freeLimitOf(ch.num) : -1;
-                          // Fade text toward invisibility as tasks get deeper into locked territory
+                          const locked = isLocked(ch.num, i, list.length);
+                          const lockedPos = locked ? i - freeLimitOf(ch.num, list.length) : -1;
+                          // Fade text toward invisibility across the teaser locked rows
                           const lockedOpacity = locked
-                            ? Math.max(0.15, 0.6 - Math.min(lockedPos, 2) * 0.22)
+                            ? Math.max(0.1, 0.52 - Math.min(lockedPos, 4) * 0.1)
                             : undefined;
+                          const isLastVisible = i === visible.length - 1 && locked;
                           return (
-                            <li key={c.id}>
+                            <li
+                              key={c.id}
+                              className={cn(isLastVisible && "relative")}
+                            >
                               <button
                                 onClick={() => {
                                   setTheoryChapter(null);
@@ -437,7 +479,7 @@ function EconomicsTasks() {
                                   {!locked && !passed && rev && <X className="h-3 w-3" strokeWidth={3} />}
                                 </span>
                                 <span className={cn("min-w-0 flex-1 truncate", passed && !locked && "line-through text-muted-foreground")}>
-                                  Task {i + 1}{locked && " · Locked"}
+                                  Task {i + 1}{locked && " · Soon"}
                                 </span>
                                 {timed.enabled && !locked && (
                                   <TimerStatusDot entry={timed.state[c.id]} />
@@ -446,30 +488,20 @@ function EconomicsTasks() {
                                   <DifficultyBars level={c.difficulty_level} />
                                 )}
                               </button>
-                            </li>
-                          );
-
-
-                        })}
-                        {Array.from({ length: phantomCountFor(ch.num) }).map((_, p) => {
-                          const num = list.length + p + 1;
-                          const opacity = Math.max(0.08, 0.45 - p * 0.15);
-                          return (
-                            <li key={`phantom-${ch.num}-${p}`}>
-                              <button
-                                type="button"
-                                disabled
-                                style={{ opacity }}
-                                className="flex w-full cursor-not-allowed items-center gap-2.5 px-3 py-1.5 pl-9 text-left text-xs text-muted-foreground"
-                              >
-                                <span className="grid h-4 w-4 shrink-0 place-items-center rounded border border-transparent bg-transparent text-muted-foreground">
-                                  <Lock className="h-2.5 w-2.5" strokeWidth={2.5} />
-                                </span>
-                                <span className="truncate">Task {num} · Locked</span>
-                              </button>
+                              {isLastVisible && (
+                                <div
+                                  aria-hidden
+                                  className="pointer-events-none absolute inset-x-0 -bottom-1 h-8 bg-gradient-to-b from-transparent to-card"
+                                />
+                              )}
                             </li>
                           );
                         })}
+                        {list.length > visible.length && (
+                          <li className="px-3 py-1.5 pl-9 text-[10px] text-muted-foreground/70">
+                            +{list.length - openCount} more tasks preparing…
+                          </li>
+                        )}
                       </ul>
                     )}
                   </li>
@@ -591,20 +623,20 @@ function EconomicsTasks() {
           {activeCase && <TimedModeBar session={timed} questionId={activeCase.id} />}
 
 
-          {activeCase && isLocked(activeChapter, activeIdx) ? (() => {
-            const freeLimit = freeLimitOf(activeChapter);
+          {activeCase && isLocked(activeChapter, activeIdx, activeList.length) ? (() => {
+            const freeLimit = freeLimitOf(activeChapter, activeList.length);
 
             return (
             <div className="rounded-2xl border border-border bg-card p-10 text-center shadow-sm">
               <div className="mx-auto mb-4 grid h-14 w-14 place-items-center rounded-full bg-secondary text-muted-foreground">
                 <Lock className="h-6 w-6" />
               </div>
-              <h2 className="font-display text-xl font-bold">Locked in demo</h2>
+              <h2 className="font-display text-xl font-bold">More tasks coming soon</h2>
               <p className="mx-auto mt-2 max-w-sm text-sm text-muted-foreground">
-                Chapter {activeChapter} tasks {freeLimit + 1}+ are part of the full course. The first {freeLimit} are free.
+                Chapter {activeChapter} currently opens the first {freeLimit} tasks while we finish the rest of the bank.
               </p>
               <button
-                onClick={() => setActiveIdx(freeLimit - 1)}
+                onClick={() => setActiveIdx(Math.max(0, freeLimit - 1))}
                 className="mt-5 inline-flex items-center gap-1 rounded-md border border-border bg-background px-3 py-2 text-xs font-semibold hover:bg-secondary"
               >
                 <ChevronLeft className="h-4 w-4" /> Back to Task {freeLimit}
@@ -668,18 +700,35 @@ function EconomicsTasks() {
                 <ChevronLeft className="h-4 w-4" /> Prev
               </button>
               <span className="text-xs text-muted-foreground">
-                {activeIdx + 1} / {activeList.length}
+                {Math.min(activeIdx + 1, freeLimitOf(activeChapter, activeList.length))} /{" "}
+                {freeLimitOf(activeChapter, activeList.length)}
               </span>
               <button
-                onClick={() => setActiveIdx((i) => Math.min(activeList.length - 1, i + 1))}
-                disabled={
-                  activeIdx >= activeList.length - 1 ||
-                  isLocked(activeChapter, activeIdx + 1)
+                onClick={() =>
+                  setActiveIdx((i) =>
+                    Math.min(freeLimitOf(activeChapter, activeList.length) - 1, i + 1),
+                  )
                 }
-                title={isLocked(activeChapter, activeIdx + 1) ? "Next task is locked in the demo" : undefined}
+                disabled={
+                  activeIdx >= freeLimitOf(activeChapter, activeList.length) - 1 ||
+                  isLocked(activeChapter, activeIdx + 1, activeList.length)
+                }
+                title={
+                  isLocked(activeChapter, activeIdx + 1, activeList.length)
+                    ? "Next tasks are still being prepared"
+                    : undefined
+                }
                 className="inline-flex items-center gap-1 rounded-md border border-border bg-card px-3 py-2 text-xs font-semibold text-foreground transition disabled:opacity-40"
               >
-                {isLocked(activeChapter, activeIdx + 1) ? <><Lock className="h-3.5 w-3.5" /> Locked</> : <>Next <ChevronRight className="h-4 w-4" /></>}
+                {isLocked(activeChapter, activeIdx + 1, activeList.length) ? (
+                  <>
+                    <Lock className="h-3.5 w-3.5" /> Soon
+                  </>
+                ) : (
+                  <>
+                    Next <ChevronRight className="h-4 w-4" />
+                  </>
+                )}
               </button>
             </div>
           )}
@@ -1216,9 +1265,14 @@ function StatsOverview({
   progress: Progress;
   byChapter: Map<number, Case[]>;
 }) {
-  const total = cases.length;
-  const passed = progress.passed.length;
-  const rev = progress.revision.length;
+  const openCases = CHAPTERS.flatMap((ch) => {
+    const list = byChapter.get(ch.num) ?? [];
+    return list.slice(0, unlockCountFor(list.length));
+  });
+  const openIds = new Set(openCases.map((c) => c.id));
+  const total = openCases.length;
+  const passed = progress.passed.filter((id) => openIds.has(id)).length;
+  const rev = progress.revision.filter((id) => openIds.has(id)).length;
   const attempted = passed + rev;
   const accuracy = attempted > 0 ? Math.round((passed / attempted) * 100) : 0;
 
@@ -1241,8 +1295,10 @@ function StatsOverview({
       <ul className="mt-5 space-y-2">
         {CHAPTERS.map((ch) => {
           const list = byChapter.get(ch.num) ?? [];
-          const done = list.filter((c) => progress.passed.includes(c.id)).length;
-          const pct = list.length ? Math.round((done / list.length) * 100) : 0;
+          const open = unlockCountFor(list.length);
+          const openList = list.slice(0, open);
+          const done = openList.filter((c) => progress.passed.includes(c.id)).length;
+          const pct = open ? Math.round((done / open) * 100) : 0;
           return (
             <li key={ch.num} className="flex items-center gap-3">
               <span className="w-8 shrink-0 text-xs font-bold text-muted-foreground">Ch.{ch.num}</span>
@@ -1256,7 +1312,7 @@ function StatsOverview({
                 />
               </div>
               <span className="w-14 shrink-0 text-right text-[11px] font-semibold text-muted-foreground">
-                {done}/{list.length}
+                {done}/{open}
               </span>
             </li>
           );
