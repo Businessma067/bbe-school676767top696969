@@ -424,14 +424,12 @@ function ReviewExamPage() {
 
 function TaskReviewWorkspace({
   marked,
-  taskScores,
   currentIndex,
   onNavigate,
   isCustom,
   currentScore,
 }: {
   marked: MarkedTask[];
-  taskScores: number[];
   currentIndex: number;
   onNavigate: (index: number) => void;
   isCustom: boolean;
