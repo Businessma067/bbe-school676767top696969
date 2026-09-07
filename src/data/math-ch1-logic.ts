@@ -328,8 +328,6 @@ $$A=\\{-3,3\\}$$
 
 The claim reprints $A$ as $\\{3\\}$ only. Then
 
-$$A=\\{-3,3\\}$$
-
 $$\\{3\\}=\\{3\\}$$
 
 $$A\\neq\\{3\\}$$
@@ -367,8 +365,6 @@ so the natural-number set-builder yields
 $$C=\\{3\\}$$
 
 The claim equates $C$ with $\\{3,-3\\}$. Compare:
-
-$$C=\\{3\\}$$
 
 $$\\{3,-3\\}=\\{-3,3\\}$$
 
@@ -5381,13 +5377,13 @@ Consider a student who passed Principles but never passed Intermediate and is no
 
 $$P = \\mathrm{T},$$
 
-$$I$$
+$$
+I = \\mathrm{F},
+$$
 
-$$= \\mathrm{F},$$
-
-$$A$$
-
-$$= \\mathrm{F}$$
+$$
+A = \\mathrm{F}
+$$
 
 Both original rules hold vacuously because their antecedents are false, but the proposed reverse implication evaluates as
 
@@ -5539,9 +5535,9 @@ Choose $x=3$. The membership values are
 
 $$3\\in P = \\mathrm{T}$$
 
-$$3\\in E$$
-
-$$= \\mathrm{F}$$
+$$
+3\\in E = \\mathrm{F}
+$$
 
 so the required implication evaluates as
 
@@ -5610,9 +5606,9 @@ There is no real number with the forbidden truth pattern
 
 $$x>10 = \\mathrm{T},$$
 
-$$x>5$$
-
-$$= \\mathrm{F}$$
+$$
+x>5 = \\mathrm{F}
+$$
 
 because every number above $10$ is automatically above $5$. Therefore $x>5$ is a necessary condition for $x>10$.
 
@@ -5681,9 +5677,9 @@ $$35\\%<40\\%$$
 
 Therefore
 
-$$R(P) = \\mathrm{T}\\land\\mathrm{T}$$
-
-$$= \\mathrm{T}$$
+$$
+R(P) = \\mathrm{T}\\land\\mathrm{T} = \\mathrm{T}
+$$
 
 The claim says P satisfies both required conditions.
 
@@ -5696,17 +5692,15 @@ $$L\\Rightarrow R$$
 
 Applicant P has $R(P)=\\mathrm{T}$, but that truth value does not determine $L(P)$. Both rows
 
-$$L(P) = \\mathrm{T},\\ R(P)$$
-
-$$= \\mathrm{T}$$
+$$
+L(P) = \\mathrm{T},\\ R(P) = \\mathrm{T}
+$$
 
 $$\\text{and}$$
 
-$$L(P)$$
-
-$$= \\mathrm{F},\\ R(P)$$
-
-$$= \\mathrm{T}$$
+$$
+L(P) = \\mathrm{F},\\ R(P) = \\mathrm{T}
+$$
 
 satisfy $L\\Rightarrow R$. Concluding approval would use the unsupported converse
 
@@ -5727,9 +5721,9 @@ $$45\\%\\not<40\\%$$
 
 Thus
 
-$$R(Q) = \\mathrm{T}\\land\\mathrm{F}$$
-
-$$= \\mathrm{F}$$
+$$
+R(Q) = \\mathrm{T}\\land\\mathrm{F} = \\mathrm{F}
+$$
 
 The claim says Q does not satisfy both required conditions.
 
@@ -5742,9 +5736,9 @@ $$L\\Rightarrow R\\quad\\Longleftrightarrow\\quad\\neg R\\Rightarrow\\neg L$$
 
 Applicant Q fails the ratio test, so the full requirement is false:
 
-$$R(Q) = \\mathrm{T}\\land\\mathrm{F}$$
-
-$$= \\mathrm{F}$$
+$$
+R(Q) = \\mathrm{T}\\land\\mathrm{F} = \\mathrm{F}
+$$
 
 Applying the contrapositive gives
 
@@ -5759,15 +5753,15 @@ A ratio below $40\\%$ is only one part of the required conjunction. Consider an 
 
 $$650\\ge700 = \\mathrm{F},$$
 
-$$30\\%<40\\%$$
-
-$$= \\mathrm{T}$$
+$$
+30\\%<40\\% = \\mathrm{T}
+$$
 
 The full requirement evaluates to
 
-$$R = \\mathrm{F}\\land\\mathrm{T}$$
-
-$$= \\mathrm{F}$$
+$$
+R = \\mathrm{F}\\land\\mathrm{T} = \\mathrm{F}
+$$
 
 The contrapositive of $L\\Rightarrow R$ then gives $\\neg R\\Rightarrow\\neg L$, so this applicant cannot be approved. A low ratio does not guarantee approval.
 
@@ -5825,9 +5819,9 @@ $$x^{2}=-1<0$$
 
 which contradicts that fact. Hence the real solution set is empty:
 
-$$\\{x\\in\\mathbb R:x^{2} = -1\\}$$
-
-$$= \\varnothing$$
+$$
+\\{x\\in\\mathbb R:x^{2} = -1\\} = \\varnothing
+$$
 
 The existential statement has no real witness, so it is False.
 
@@ -5916,9 +5910,9 @@ So the statement is False.`,
 
 The contrapositive blocks diagnosis when the required symptom conjunction fails. Patient S has A but not B, so
 
-$$A(S)\\land B(S) = \\mathrm{T}\\land\\mathrm{F}$$
-
-$$= \\mathrm{F}$$
+$$
+A(S)\\land B(S) = \\mathrm{T}\\land\\mathrm{F} = \\mathrm{F}
+$$
 
 From the criterion,
 
@@ -5937,9 +5931,9 @@ The doctor explicitly allows a patient whose two symptoms are present but whose 
 
 $$S = \\mathrm{T},$$
 
-$$D$$
-
-$$= \\mathrm{F}$$
+$$
+D = \\mathrm{F}
+$$
 
 For that allowed case,
 
@@ -5954,9 +5948,9 @@ So the statement is False.`,
 
 The contrapositive blocks diagnosis whenever the required conjunction is false. If symptom A is absent, then for either truth value of B,
 
-$$A\\land B = \\mathrm{F}\\land B$$
-
-$$= \\mathrm{F}$$
+$$
+A\\land B = \\mathrm{F}\\land B = \\mathrm{F}
+$$
 
 Therefore
 
@@ -5971,9 +5965,9 @@ The criterion gives $D\\Rightarrow(A\\land B)$, but it explicitly denies the con
 
 $$A\\land B = \\mathrm{T},$$
 
-$$D$$
-
-$$= \\mathrm{F}$$
+$$
+D = \\mathrm{F}
+$$
 
 This possibility satisfies the doctor's one-way rule because
 
@@ -6111,17 +6105,15 @@ $$M(v)\\Leftrightarrow\\neg B(v)$$
 
 For Person T, $v=2$, so
 
-$$B(2) = (2\\ge3)$$
-
-$$= \\mathrm{F}$$
+$$
+B(2) = (2\\ge3) = \\mathrm{F}
+$$
 
 and therefore
 
-$$M(2) = \\neg B(2)$$
-
-$$= \\neg\\mathrm{F}$$
-
-$$= \\mathrm{T}$$
+$$
+M(2) = \\neg B(2) = \\neg\\mathrm{F} = \\mathrm{T}
+$$
 
 Person T is a member.
 
@@ -6130,17 +6122,15 @@ So the statement is True.`,
 
 Person U has four violations. Evaluate the banned-list test first:
 
-$$B(4) = (4\\ge3)$$
-
-$$= \\mathrm{T}$$
+$$
+B(4) = (4\\ge3) = \\mathrm{T}
+$$
 
 Membership is exactly the negation of banned status, so
 
-$$M(4) = \\neg B(4)$$
-
-$$= \\neg\\mathrm{T}$$
-
-$$= \\mathrm{F}$$
+$$
+M(4) = \\neg B(4) = \\neg\\mathrm{T} = \\mathrm{F}
+$$
 
 U is not a member. The claim that U is a member is therefore False.
 
@@ -6155,9 +6145,9 @@ If $B(x)=\\mathrm{T}$, then $M(x)=\\mathrm{F}$; if $B(x)=\\mathrm{F}$, then $M(x
 
 $$M\\cap B = \\varnothing,$$
 
-$$M\\cup B$$
-
-$$= U$$
+$$
+M\\cup B = U
+$$
 
 where $U$ is the set of all people under the rule. Those two equations say the membership and banned lists are complementary.
 
@@ -6166,17 +6156,15 @@ So the statement is True.`,
 
 At the boundary value $v=3$, “three or more” is already satisfied:
 
-$$B(3) = (3\\ge3)$$
-
-$$= \\mathrm{T}$$
+$$
+B(3) = (3\\ge3) = \\mathrm{T}
+$$
 
 The membership biconditional then gives
 
-$$M(3) = \\neg B(3)$$
-
-$$= \\neg\\mathrm{T}$$
-
-$$= \\mathrm{F}$$
+$$
+M(3) = \\neg B(3) = \\neg\\mathrm{T} = \\mathrm{F}
+$$
 
 There is no second allowed outcome depending on unstated factors: exactly three violations forces banned status.
 
@@ -6239,9 +6227,9 @@ So the statement is True.`,
 
 The number $2$ is prime because its only positive divisors are $1$ and $2$. It is even, so it is not odd. The counterexample condition evaluates to
 
-$$\\mathrm{Prime}(2)\\land\\neg\\mathrm{Odd}(2) = \\mathrm{T}\\land\\mathrm{T}$$
-
-$$= \\mathrm{T}$$
+$$
+\\mathrm{Prime}(2)\\land\\neg\\mathrm{Odd}(2) = \\mathrm{T}\\land\\mathrm{T} = \\mathrm{T}
+$$
 
 Equivalently, the universal implication fails at $2$:
 
@@ -6262,9 +6250,9 @@ Thus the proof assumes both
 
 $$P = \\mathrm{T},$$
 
-$$Q$$
-
-$$= \\mathrm{F}$$
+$$
+Q = \\mathrm{F}
+$$
 
 and derives a contradiction. That shows the only truth assignment that could make $P\\Rightarrow Q$ false is impossible, so the implication must hold. The described method is correct, making the statement True.
 
@@ -6325,9 +6313,9 @@ $$\\neg(P\\Rightarrow Q) \\equiv\\neg(\\neg P\\lor Q) \\equiv P\\land\\neg Q$$
 
 This formula is true exactly when it rains and the picnic is not cancelled:
 
-$$P\\land\\neg Q = \\mathrm{T}\\land\\mathrm{T}$$
-
-$$= \\mathrm{T}$$
+$$
+P\\land\\neg Q = \\mathrm{T}\\land\\mathrm{T} = \\mathrm{T}
+$$
 
 The quoted sentence is precisely the negation.
 
@@ -6338,17 +6326,13 @@ One truth assignment separates an implication from its converse.
 
 $$(p,q)=(F,T)$$
 
-$$p\\rightarrow q$$
+$$
+p\\rightarrow q = F\\rightarrow T = T
+$$
 
-$$= F\\rightarrow T$$
-
-$$= T$$
-
-$$q\\rightarrow p$$
-
-$$= T\\rightarrow F$$
-
-$$= F$$
+$$
+q\\rightarrow p = T\\rightarrow F = F
+$$
 
 The two implications disagree on this assignment.
 
@@ -6734,17 +6718,13 @@ One truth assignment separates an implication from its converse.
 
 $$(p,q)=(F,T)$$
 
-$$p\\rightarrow q$$
+$$
+p\\rightarrow q = F\\rightarrow T = T
+$$
 
-$$= F\\rightarrow T$$
-
-$$= T$$
-
-$$q\\rightarrow p$$
-
-$$= T\\rightarrow F$$
-
-$$= F$$
+$$
+q\\rightarrow p = T\\rightarrow F = F
+$$
 
 The two implications disagree on this assignment.
 
@@ -6772,9 +6752,9 @@ That is the converse of the given rule. A rate rise for currency defence at $4\\
 
 $$Q = \\mathrm{T},$$
 
-$$P$$
-
-$$= \\mathrm{F}$$
+$$
+P = \\mathrm{F}
+$$
 
 so the proposed necessity evaluates as
 
@@ -6799,9 +6779,9 @@ which affirms the consequent. Use a possible currency-defence rise at $4\\%$ inf
 
 $$P = \\mathrm{F},$$
 
-$$Q$$
-
-$$= \\mathrm{T}$$
+$$
+Q = \\mathrm{T}
+$$
 
 Then both premises are true,
 
@@ -6809,9 +6789,9 @@ $$P\\Rightarrow Q = \\mathrm{F}\\Rightarrow\\mathrm{T}$$
 
 $$= \\mathrm{T},$$
 
-$$Q$$
-
-$$= \\mathrm{T},$$
+$$
+Q = \\mathrm{T},
+$$
 
 while the conclusion $P$ is false. The conclusion does not follow.
 
@@ -6859,9 +6839,9 @@ So the statement is True.`,
 
 Letter A gives $Q=\\mathrm{T}$. The second biconditional forces $R$ to match $Q$:
 
-$$Q\\Leftrightarrow R = \\mathrm{T}\\Leftrightarrow R$$
-
-$$= \\mathrm{T}$$
+$$
+Q\\Leftrightarrow R = \\mathrm{T}\\Leftrightarrow R = \\mathrm{T}
+$$
 
 The only matching value is
 
@@ -6902,13 +6882,13 @@ A claim of sufficiency is disproved by one assignment that satisfies the known c
 
 $$P = \\mathrm{T},$$
 
-$$Q$$
+$$
+Q = \\mathrm{F},
+$$
 
-$$= \\mathrm{F},$$
-
-$$R$$
-
-$$= \\mathrm{T}$$
+$$
+R = \\mathrm{T}
+$$
 
 Then
 
@@ -7018,9 +6998,9 @@ $$\\mathrm{disability}=\\mathrm{F}$$
 
 $$18000<20000$$
 
-$$\\mathrm{disability}\\vee\\mathrm{low\\ income}=\\mathrm{F}\\vee\\mathrm{T}$$
-
-$$=\\mathrm{T}$$
+$$
+\\mathrm{disability}\\vee\\mathrm{low\\ income}=\\mathrm{F}\\vee\\mathrm{T} =\\mathrm{T}
+$$
 
 $$\\mathrm{age}\\wedge(\\mathrm{disability}\\vee\\mathrm{low\\ income})=\\mathrm{T}$$
 
@@ -7031,9 +7011,9 @@ So the statement is True.`,
 
 For Q: age and disability hold, income is high. The inner disjunction is
 
-$$\\mathrm{disability}\\vee\\mathrm{low\\ income}=\\mathrm{T}\\vee\\mathrm{F}$$
-
-$$=\\mathrm{T}$$
+$$
+\\mathrm{disability}\\vee\\mathrm{low\\ income}=\\mathrm{T}\\vee\\mathrm{F} =\\mathrm{T}
+$$
 
 so the full conjunction still holds. Q does qualify; the claim is false.
 
@@ -8225,13 +8205,13 @@ So the statement is True.`,
 
 Disprove the implication with a quantifier countermodel. Use students $X,Y$ and exams $e_1,e_2$, with
 
-$$G(X,e_1) = \\mathrm{T},\\quad G(X,e_2)$$
+$$
+G(X,e_1) = \\mathrm{T},\\quad G(X,e_2) = \\mathrm{F},
+$$
 
-$$= \\mathrm{F},$$
-
-$$G(Y,e_1) = \\mathrm{F},\\quad G(Y,e_2)$$
-
-$$= \\mathrm{T}$$
+$$
+G(Y,e_1) = \\mathrm{F},\\quad G(Y,e_2) = \\mathrm{T}
+$$
 
 Every exam has a witness—$X$ for $e_1$ and $Y$ for $e_2$—so $\\forall e\\,\\exists s\\,G(s,e)$ is true. Neither student clears both exams, so $\\exists s\\,\\forall e\\,G(s,e)$ is false. The reverse implication has a true premise and false conclusion in this model.
 
@@ -8246,9 +8226,9 @@ For the reverse direction, let $X$ clear only $e_1$ and $Y$ clear only $e_2$. Th
 
 $$\\forall e\\,\\exists s\\,G(s,e) = \\mathrm{T},$$
 
-$$\\exists s\\,\\forall e\\,G(s,e)$$
-
-$$= \\mathrm{F}$$
+$$
+\\exists s\\,\\forall e\\,G(s,e) = \\mathrm{F}
+$$
 
 One direction fails in this concrete model, so the formulas are not equivalent.
 
@@ -8609,9 +8589,9 @@ Factor the two counts:
 
 $$15 = 3 \\times 5,$$
 
-$$28$$
-
-$$= 2^{2} \\times 7$$
+$$
+28 = 2^{2} \\times 7
+$$
 
 The prime lists $\\{3,5\\}$ and $\\{2,7\\}$ are disjoint, so $\\mathrm{gcd}(15,28)=1$. Pair 1 is coprime and therefore meets the even-wear test.
 
@@ -8624,15 +8604,15 @@ Factor Pair 2:
 
 $$24 = 2^{3} \\times 3,$$
 
-$$36$$
-
-$$= 2^{2} \\times 3^{2}$$
+$$
+36 = 2^{2} \\times 3^{2}
+$$
 
 Both $2$ and $3$ appear on each side. Taking the smaller power of each shared prime gives
 
-$$\\mathrm{gcd}(24,36) = 2^{2} \\times 3$$
-
-$$= 12 \\ne 1$$
+$$
+\\mathrm{gcd}(24,36) = 2^{2} \\times 3 = 12 \\ne 1
+$$
 
 Pair 2 is not coprime.
 
@@ -8673,9 +8653,9 @@ Disprove the universal claim with one counterexample. Pair 1 has two composite n
 
 $$15 = 3\\times5,$$
 
-$$28$$
-
-$$= 2^{2}\\times7$$
+$$
+28 = 2^{2}\\times7
+$$
 
 Their prime-factor sets are disjoint, so
 
@@ -8861,9 +8841,9 @@ The manager’s claim is universal, so one counterexample is decisive. Let $A(x)
 
 $$x = 317,$$
 
-$$A(317)$$
-
-$$= \\mathrm{F}$$
+$$
+A(317) = \\mathrm{F}
+$$
 
 Because chip #$317$ belongs to Batch $12$,
 
@@ -8913,9 +8893,9 @@ It has both required properties:
 
 $$B_{12}(317) = \\mathrm{T},$$
 
-$$\\neg A(317)$$
-
-$$= \\mathrm{T}$$
+$$
+\\neg A(317) = \\mathrm{T}
+$$
 
 Hence $317$ witnesses $\\exists x\\,(B_{12}(x)\\land\\neg A(x))$. No information about the remaining chips is needed.
 
@@ -8961,17 +8941,13 @@ One truth assignment separates an implication from its converse.
 
 $$(p,q)=(F,T)$$
 
-$$p\\rightarrow q$$
+$$
+p\\rightarrow q = F\\rightarrow T = T
+$$
 
-$$= F\\rightarrow T$$
-
-$$= T$$
-
-$$q\\rightarrow p$$
-
-$$= T\\rightarrow F$$
-
-$$= F$$
+$$
+q\\rightarrow p = T\\rightarrow F = F
+$$
 
 The two implications disagree on this assignment.
 
@@ -8982,17 +8958,13 @@ One truth assignment separates an implication from its converse.
 
 $$(p,q)=(F,T)$$
 
-$$p\\rightarrow q$$
+$$
+p\\rightarrow q = F\\rightarrow T = T
+$$
 
-$$= F\\rightarrow T$$
-
-$$= T$$
-
-$$q\\rightarrow p$$
-
-$$= T\\rightarrow F$$
-
-$$= F$$
+$$
+q\\rightarrow p = T\\rightarrow F = F
+$$
 
 The two implications disagree on this assignment.
 
@@ -9001,9 +8973,9 @@ So the statement is True.`,
 
 Prove the contrapositive for an arbitrary integer. Assume $3\\nmid n$. If $6\\mid n$ also held, then for some integer $k$,
 
-$$n = 6k$$
-
-$$= 3(2k),$$
+$$
+n = 6k = 3(2k),
+$$
 
 which would give $3\\mid n$, contradicting the assumption. Therefore
 
@@ -9018,17 +8990,13 @@ One truth assignment separates an implication from its converse.
 
 $$(p,q)=(F,T)$$
 
-$$p\\rightarrow q$$
+$$
+p\\rightarrow q = F\\rightarrow T = T
+$$
 
-$$= F\\rightarrow T$$
-
-$$= T$$
-
-$$q\\rightarrow p$$
-
-$$= T\\rightarrow F$$
-
-$$= F$$
+$$
+q\\rightarrow p = T\\rightarrow F = F
+$$
 
 The two implications disagree on this assignment.
 
@@ -9104,17 +9072,13 @@ One truth assignment separates an implication from its converse.
 
 $$(p,q)=(F,T)$$
 
-$$p\\rightarrow q$$
+$$
+p\\rightarrow q = F\\rightarrow T = T
+$$
 
-$$= F\\rightarrow T$$
-
-$$= T$$
-
-$$q\\rightarrow p$$
-
-$$= T\\rightarrow F$$
-
-$$= F$$
+$$
+q\\rightarrow p = T\\rightarrow F = F
+$$
 
 The two implications disagree on this assignment.
 
@@ -9392,9 +9356,9 @@ The claim says J is a liar. Test the opposite by assuming J is a truth-teller. J
 
 $$J = \\text{true},$$
 
-$$K$$
-
-$$= L$$
+$$
+K = L
+$$
 
 $$= \\text{false}$$
 
@@ -9458,9 +9422,9 @@ If J is a liar, K's accusation "J is lying" is true, so K must be truthful. Now 
 
 $$J = \\text{liar},$$
 
-$$K$$
-
-$$= L$$
+$$
+K = L
+$$
 
 $$= \\text{truth-teller}$$
 
@@ -9670,17 +9634,17 @@ The claim needs one solution with Maria in and Leo out. Try the roster with Mari
 
 $$N = 0,$$
 
-$$M$$
+$$
+M = 1,
+$$
 
-$$= 1,$$
+$$
+L = 0,
+$$
 
-$$L$$
-
-$$= 0,$$
-
-$$Z$$
-
-$$= 0.$$
+$$
+Z = 0.
+$$
 
 Rule (1) is satisfied because its hypothesis $N$ is false. Rule (2) is satisfied because Leo is out. Rule (3), $M\\lor L$, holds through Maria. Rule (4) is satisfied because Zoe is out.
 
@@ -9710,11 +9674,9 @@ Let Maria join alone:
 
 $$\\{M\\},$$
 
-$$N = L$$
-
-$$= Z$$
-
-$$= 0.$$
+$$
+N = L = Z = 0.
+$$
 
 With Noah out, rule (1) is idle. With Leo out, rule (2) is idle. Maria satisfies rule (3), $M\\lor L$, and Zoe's absence makes rule (4) idle. This valid roster omits Zoe.
 
@@ -9793,17 +9755,17 @@ The claim needs one valid roster in which Ella is the only player. Assign
 
 $$B = 0,$$
 
-$$C$$
+$$
+C = 0,
+$$
 
-$$= 0,$$
+$$
+D = 0,
+$$
 
-$$D$$
-
-$$= 0,$$
-
-$$E$$
-
-$$= 1.$$
+$$
+E = 1.
+$$
 
 Rules (1), (2), and (3) all have false hypotheses, so none forces another player in. Rule (4), $B\\lor E$, is satisfied by Ella. Hence $\\{E\\}$ is a legal one-person roster.
 
@@ -9833,11 +9795,9 @@ The claim says Carla appears in every legal roster. Test Carla's absence by lett
 
 $$\\{E\\},$$
 
-$$B = C$$
-
-$$= D$$
-
-$$= 0.$$
+$$
+B = C = D = 0.
+$$
 
 Ben's absence makes rule (1) idle. Dan's absence makes rule (2) idle, and Carla's absence makes rule (3) idle. Ella satisfies rule (4), which requires $B\\lor E$. This valid roster has Carla out.
 
@@ -10058,9 +10018,9 @@ The claim needs one legal roster containing both Grace and Iris. Try
 
 $$\\{G,H,I\\},$$
 
-$$D = F$$
-
-$$= 0.$$
+$$
+D = F = 0.
+$$
 
 Rule (1) is idle because Diego is out. Rule (2), $G\\lor H$, holds. Rule (3) is idle because Fatima is out. Hugo satisfies rule (4), Iris satisfies rule (5) because Diego is out, and Hugo satisfies rule (6) because Fatima is out.
 
@@ -10075,9 +10035,9 @@ $$\\{G,H,I\\},$$
 
 $$I = 1,$$
 
-$$F$$
-
-$$= 0.$$
+$$
+F = 0.
+$$
 
 As rule (5) requires, Iris has Diego out. Hugo then satisfies rule (4), and rule (6) agrees with Fatima being out. Grace satisfies rule (2), while rules (1) and (3) are idle because Diego and Fatima are absent.
 
@@ -10319,17 +10279,13 @@ $$P\\Rightarrow\\neg Q\\Rightarrow T\\Rightarrow\\neg R\\Rightarrow S.$$
 
 So every valid assignment has exactly
 
-$$P = S$$
+$$
+P = S = T = 1,
+$$
 
-$$= T$$
-
-$$= 1,$$
-
-$$Q$$
-
-$$= R$$
-
-$$= 0.$$
+$$
+Q = R = 0.
+$$
 
 This assignment satisfies rule (6) because Sana's required Petra is present. No variable remains free to create a second assignment.
 
