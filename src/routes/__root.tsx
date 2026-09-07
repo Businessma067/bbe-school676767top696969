@@ -113,8 +113,10 @@ export const Route = createRootRouteWithContext<{ queryClient: QueryClient }>()(
       { property: "og:site_name", content: "BBE School" },
     ],
     links: [
-      { rel: "icon", type: "image/png", sizes: "192x192", href: "/favicon.png?v=5" },
-      { rel: "apple-touch-icon", sizes: "180x180", href: "/apple-touch-icon.png?v=5" },
+      { rel: "icon", type: "image/png", sizes: "16x16", href: "/favicon-16.png?v=6" },
+      { rel: "icon", type: "image/png", sizes: "32x32", href: "/favicon-32.png?v=6" },
+      { rel: "icon", type: "image/png", sizes: "192x192", href: "/favicon.png?v=6" },
+      { rel: "apple-touch-icon", sizes: "180x180", href: "/apple-touch-icon.png?v=6" },
       {
         rel: "stylesheet",
         href: appCss,
