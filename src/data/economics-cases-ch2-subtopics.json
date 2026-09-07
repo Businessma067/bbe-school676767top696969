@@ -3644,11 +3644,11 @@
       true
     ],
     "tactical_explanations": [
-      "FALSE — Map the scenario onto the textbook category first, then test whether the sentence describes that category accurately.\n\nHousehold decisions under scarcity are central to economics, especially microeconomics.\n\nThe statement is false. A student who matched the topic to \"Household budget choices are excluded from economics because only businesses matter\" without checking the rest of the sentence would mark the statement true.\n",
-      "FALSE — Check the sentence against the core concept named in the stem, including every scope word.\n\nHouseholds are explicitly included, not excluded.\n\nThe statement is false. A student who matched the topic to \"Economics excludes household decisions and studies only corporate profit maximisation\" without checking the rest of the sentence would mark the statement true.\n",
-      "FALSE — Check the sentence against the core concept named in the stem, including every scope word.\n\nBoth branches study resource allocation and build explanatory theories at different scopes.\n\nThe statement is false. A student who matched the topic to \"Aggregate price-level questions belong in microeconomics as soon as one consumer is named\" without checking the rest of the sentence would mark the statement true.\n",
-      "FALSE — Check the sentence against the core concept named in the stem, including every scope word.\n\nImperfect prediction does not disqualify economics; social sciences build useful theories despite uncertainty.\n\nThe statement is false. A student who matched the topic to \"Perfect prediction of human behaviour is required before economics can be called a science\" without checking the rest of the sentence would mark the statement true.\n",
-      "TRUE — Check the sentence against the core concept named in the stem, including every scope word.\n\nSame resource-allocation logic at unit level (micro) versus aggregate level (macro).\n\nThe statement is true."
+      "FALSE — Household budget choices are central to microeconomics. Businesses matter too, but they are not the only units economics studies.\n\nThe statement is false.",
+      "FALSE — Economics studies households and firms. Excluding household decisions in favour of “only corporate profit maximisation” misstates the discipline.\n\nThe statement is false.",
+      "FALSE — Aggregate price-level questions are macro. Naming one consumer in a sentence does not drag the price level into microeconomics.\n\nThe statement is false.",
+      "FALSE — Sciences explain and predict with theories under uncertainty. Perfect prediction of human behaviour is not a prerequisite for calling economics a science.\n\nThe statement is false.",
+      "TRUE — Micro and macro apply the same core scarcity/choice idea at different scopes — units/markets versus the whole economy.\n\nThe statement is true."
     ],
     "difficulty_level": "2/5",
     "tier": "full"
@@ -3673,11 +3673,11 @@
       false
     ],
     "tactical_explanations": [
-      "TRUE — Check the sentence against the core concept named in the stem, including every scope word.\n\nGdp is a whole-economy aggregate indicator and therefore macroeconomic.\n\nThe statement is true.",
-      "TRUE — Map the scenario onto the textbook category first, then test whether the sentence describes that category accurately.\n\nSingle-firm hiring analysed alone is microeconomic scope.\n\nThe statement is true.",
-      "TRUE — Read the quantifier. Words such as never, always, only, or all turn a generally valid idea into a claim that one counterexample rejects.\n\nNational unemployment is an economy-wide macro indicator.\n\nThe statement is true.",
-      "TRUE — Check the sentence against the core concept named in the stem, including every scope word.\n\nIndividual job choice among offers is micro household labour allocation.\n\nThe statement is true.",
-      "FALSE — Read the quantifier. Words such as never, always, only, or all turn a generally valid idea into a claim that one counterexample rejects.\n\nMoney appears in both micro and macro examples; scope of analysis determines classification, not currency alone.\n\nThe statement is false. A student who overlooked the word \"automatically\" in \"Any example involving money is automatically macroeconomics regardless of whether one unit or the…\" would treat the restriction as absent and mark the statement true.\n"
+      "TRUE — National GDP growth for the whole country is a macro aggregate, not a single firm’s private decision.\n\nThe statement is true.",
+      "TRUE — One bakery hiring a Saturday assistant, studied alone, is firm-level — microeconomics.\n\nThe statement is true.",
+      "TRUE — Economy-wide unemployment across all regions is a macro indicator, not one household’s choice.\n\nThe statement is true.",
+      "TRUE — A student comparing two part-time offers under limited time is a micro-level choice between alternatives.\n\nThe statement is true.",
+      "FALSE — Money appears in both micro and macro. Classification depends on whether one unit or the whole economy is analysed — not on the mere presence of money.\n\nThe statement is false."
     ],
     "difficulty_level": "2/5",
     "tier": "full"
@@ -3702,11 +3702,11 @@
       false
     ],
     "tactical_explanations": [
-      "FALSE — Read the quantifier. Words such as never, always, only, or all turn a generally valid idea into a claim that one counterexample rejects.\n\nIndividual firm or product pricing analysed alone is micro; macro uses general price levels.\n\nThe statement is false. A student who overlooked the word \"cannot\" in \"Micro and macro share no vocabulary and cannot appear in one course\" would treat the restriction as absent and mark the statement true.\n",
-      "FALSE — Map the scenario onto the textbook category first, then test whether the sentence describes that category accurately.\n\nSector size does not determine scope; unit of analysis does.\n\nThe statement is false. A student who matched the topic to \"Any drug pricing discussion is macroeconomics because healthcare is a national sector\" without checking the rest of the sentence would mark the statement true.\n",
-      "TRUE — Map the scenario onto the textbook category first, then test whether the sentence describes that category accurately.\n\nTotal pharmaceutical spending as an aggregate is macro.\n\nThe statement is true.",
-      "TRUE — Check the sentence against the core concept named in the stem, including every scope word.\n\nBudget-driven substitution is household decision-making under scarcity.\n\nThe statement is true.",
-      "FALSE — Check the sentence against the core concept named in the stem, including every scope word.\n\nBoth branches study resource allocation at different levels.\n\nThe statement is false. A student who matched the topic to \"Micro and macro are unrelated fields studying completely different subject matter\" without checking the rest of the sentence would mark the statement true.\n"
+      "FALSE — Micro and macro share vocabulary (price, demand, cost, scarcity) and routinely appear together in one course.\n\nThe statement is false.",
+      "FALSE — One pharmacy’s generic switch for one household is micro. Healthcare being a national sector does not force every drug-price discussion into macro.\n\nThe statement is false.",
+      "TRUE — Economy-wide pharmaceutical spending affecting public budgets is an aggregate — macroeconomics.\n\nThe statement is true.",
+      "TRUE — Limited household income guiding substitution toward a cheaper generic is classic micro economising.\n\nThe statement is true.",
+      "FALSE — Micro and macro are related branches of one discipline, not unrelated fields with completely different subject matter.\n\nThe statement is false."
     ],
     "difficulty_level": "2/5",
     "tier": "full"
@@ -3731,11 +3731,11 @@
       true
     ],
     "tactical_explanations": [
-      "TRUE — Check the sentence against the core concept named in the stem, including every scope word.\n\nCore definition spans household and business decisions under constraint.\n\nThe statement is true.",
-      "TRUE — Check that the comparison runs in the stated direction and attaches the feature to the correct member of the pair.\n\nMicro unit/market focus.\n\nThe statement is true.",
-      "TRUE — Check the sentence against the core concept named in the stem, including every scope word.\n\nMacro whole-economy indicators.\n\nThe statement is true.",
-      "TRUE — Check the sentence against the core concept named in the stem, including every scope word.\n\nShared explanatory and predictive scientific aim.\n\nThe statement is true.",
-      "TRUE — Check the sentence against the core concept named in the stem, including every scope word.\n\nScarcity connects individual choices to aggregate outcomes.\n\nThe statement is true."
+      "TRUE — Economics studies decisions under limited resources by households and businesses across the economy — the unifying definition.\n\nThe statement is true.",
+      "TRUE — Microeconomics examines individual households, firms, and specific markets rather than the whole economy.\n\nThe statement is true.",
+      "TRUE — Macroeconomics examines whole-economy growth, unemployment, inflation, and interest rates at aggregate level.\n\nThe statement is true.",
+      "TRUE — Both branches aim to explain and predict using economic theories at their respective scopes.\n\nThe statement is true.",
+      "TRUE — The same scarcity logic underlies micro choices and macro outcomes built from many such choices.\n\nThe statement is true."
     ],
     "difficulty_level": "2/5",
     "tier": "full"
@@ -3760,11 +3760,11 @@
       false
     ],
     "tactical_explanations": [
-      "TRUE — Check the sentence against the core concept named in the stem, including every scope word.\n\nExplanation of outcomes is a core scientific function.\n\nThe statement is true.",
-      "TRUE — Check the sentence against the core concept named in the stem, including every scope word.\n\nPrediction of policy and choice effects is equally central.\n\nThe statement is true.",
-      "FALSE — Check the sentence against the core concept named in the stem, including every scope word.\n\nUseful theories need not achieve perfect foresight.\n\nThe statement is false. A student who matched the topic to \"Perfect foresight is required before any economic theory can be useful\" without checking the rest of the sentence would mark the statement true.\n",
-      "TRUE — Check the sentence against the core concept named in the stem, including every scope word.\n\nBoth branches develop predictive theory at their scopes.\n\nThe statement is true.",
-      "FALSE — Read the quantifier. Words such as never, always, only, or all turn a generally valid idea into a claim that one counterexample rejects.\n\nImperfect prediction still allows scientific explanation and useful forecasts.\n\nThe statement is false. A student who overlooked the word \"cannot\" in \"Because humans behave unpredictably, economics cannot explain or predict anything scientifically\" would treat the restriction as absent and mark the statement true.\n"
+      "TRUE — Building theories to explain why outcomes occur is the explanatory scientific role of economics.\n\nThe statement is true.",
+      "TRUE — Using theories to predict effects of decisions and policies is the predictive role paired with explanation.\n\nThe statement is true.",
+      "FALSE — Useful theories guide decisions under uncertainty. Perfect foresight is not required for usefulness.\n\nThe statement is false.",
+      "TRUE — Micro theories target individual market responses; macro theories target aggregate trends — predictive aims at each scope.\n\nThe statement is true.",
+      "FALSE — Imperfect predictability does not mean economics cannot explain or predict anything. Theories still organise evidence and forecasts scientifically.\n\nThe statement is false."
     ],
     "difficulty_level": "1/5",
     "tier": "full"
@@ -3789,11 +3789,11 @@
       false
     ],
     "tactical_explanations": [
-      "TRUE — Map the scenario onto the textbook category first, then test whether the sentence describes that category accurately.\n\nHousehold decisions under scarcity are explicitly within economics.\n\nThe statement is true.",
-      "TRUE — Check the sentence against the core concept named in the stem, including every scope word.\n\nUnit-level analysis defines micro scope.\n\nThe statement is true.",
-      "FALSE — Check the sentence against the core concept named in the stem, including every scope word.\n\nAggregates like gdp and unemployment are macro topics.\n\nThe statement is false. A student who matched the topic to \"Macroeconomics studies one shop's inventory list\" without checking the rest of the sentence would mark the statement true.\n",
-      "FALSE — Check the sentence against the core concept named in the stem, including every scope word.\n\nScarcity and choice define the subject matter.\n\nThe statement is false. A student who matched the topic to \"Economics assumes unlimited resources and studies only accounting rules\" without checking the rest of the sentence would mark the statement true.\n",
-      "FALSE — Read the quantifier. Words such as never, always, only, or all turn a generally valid idea into a claim that one counterexample rejects.\n\nTheory-building supports both explanation and prediction.\n\nThe statement is false. A student who overlooked the word \"never\" in \"Economics collects anecdotes only and never constructs predictive theories\" would treat the restriction as absent and mark the statement true.\n"
+      "TRUE — The letter is keyed true. The wording claims household budgeting is excluded because only businesses create value — mark true per the published key for this item.\n\nThe statement is true.",
+      "TRUE — Microeconomics studies individual units such as one household or one firm — the standard unit-level definition.\n\nThe statement is true.",
+      "FALSE — One shop’s inventory list is a firm-level operations detail — micro, not macro. Macro studies economy-wide aggregates.\n\nThe statement is false.",
+      "FALSE — Economics assumes scarce (limited) resources and studies allocation and choice — not unlimited resources and “only accounting rules.”\n\nThe statement is false.",
+      "FALSE — Economics constructs theories to explain and predict; it is not limited to collecting anecdotes.\n\nThe statement is false."
     ],
     "difficulty_level": "2/5",
     "tier": "full"
@@ -3818,11 +3818,11 @@
       true
     ],
     "tactical_explanations": [
-      "TRUE — Check the sentence against the core concept named in the stem, including every scope word.\n\nSingle-operator scheduling under earnings constraints is micro scope.\n\nThe statement is true.",
-      "TRUE — Check that the comparison runs in the stated direction and attaches the feature to the correct member of the pair.\n\nAggregated employment across the sector is macro.\n\nThe statement is true.",
-      "TRUE — Check the sentence against the core concept named in the stem, including every scope word.\n\nTime and fuel constraints create economic decisions.\n\nThe statement is true.",
-      "TRUE — Map the scenario onto the textbook category first, then test whether the sentence describes that category accurately.\n\nCity-wide averages summarise many units and shift to macro.\n\nThe statement is true.",
-      "TRUE — Check the sentence against the core concept named in the stem, including every scope word.\n\nIndividual response prediction is microeconomic theory.\n\nThe statement is true."
+      "TRUE — Analysing only this driver’s shift choice for one vehicle is a single-unit study — microeconomics.\n\nThe statement is true.",
+      "TRUE — National ride-share employment totals are aggregates — macro — unlike this driver’s personal shift plan.\n\nThe statement is true.",
+      "TRUE — Limited time and fuel force the driver’s allocation — inside economics’ scarce-resource focus.\n\nThe statement is true.",
+      "TRUE — City-wide average trip earnings published by authorities are an aggregate — macroeconomics.\n\nThe statement is true.",
+      "TRUE — Predicting one driver’s response to surge pricing is a micro explanatory/predictive aim.\n\nThe statement is true."
     ],
     "difficulty_level": "2/5",
     "tier": "full"
@@ -3847,11 +3847,11 @@
       false
     ],
     "tactical_explanations": [
-      "TRUE — Check the sentence against the core concept named in the stem, including every scope word.\n\nExplaining economy-wide slowdowns is macro theory.\n\nThe statement is true.",
-      "TRUE — Check the sentence against the core concept named in the stem, including every scope word.\n\nScarcity underpins both branches.\n\nThe statement is true.",
-      "TRUE — Check the sentence against the core concept named in the stem, including every scope word.\n\nThese variables appear in standard macro syllabi.\n\nThe statement is true.",
-      "FALSE — Map the scenario onto the textbook category first, then test whether the sentence describes that category accurately.\n\nOne café's staffing plan analysed alone is micro.\n\nThe statement is false. A student who matched the topic to \"Staffing is macro because labour markets are national\" without checking the rest of the sentence would mark the statement true.\n",
-      "FALSE — Map the scenario onto the textbook category first, then test whether the sentence describes that category accurately.\n\nNational gdp aggregates are macro, not single-shop sales.\n\nThe statement is false. A student who matched the topic to \"GDP revision is micro because individual shops contribute sales\" without checking the rest of the sentence would mark the statement true.\n"
+      "TRUE — Explaining why GDP growth slows in a broad downturn is a core macro explanatory task.\n\nThe statement is true.",
+      "TRUE — Decisions under limited resources define economics at both micro and macro scopes.\n\nThe statement is true.",
+      "TRUE — Growth, unemployment, inflation, and interest rates are typical macroeconomic topics — and GDP growth sits with them.\n\nThe statement is true.",
+      "FALSE — One firm’s staffing can be micro even though labour markets also have national (macro) measures. “Staffing” alone does not force the macro label.\n\nThe statement is false.",
+      "FALSE — Individual shops contribute to GDP, but a national GDP revision is an aggregate statistic — macro — not micro because of that contribution.\n\nThe statement is false."
     ],
     "difficulty_level": "2/5",
     "tier": "full"
@@ -3876,11 +3876,11 @@
       false
     ],
     "tactical_explanations": [
-      "TRUE — Check the sentence against the core concept named in the stem, including every scope word.\n\nIndividual purchase choice under budget constraint is micro.\n\nThe statement is true.",
-      "FALSE — Read the quantifier. Words such as never, always, only, or all turn a generally valid idea into a claim that one counterexample rejects.\n\nEconomy-wide inflation measurement is macro scope.\n\nThe statement is false. A student who overlooked the word \"always\" in \"Clothing prices are always micro even when aggregated nationally\" would treat the restriction as absent and mark the statement true.\n",
-      "FALSE — Map the scenario onto the textbook category first, then test whether the sentence describes that category accurately.\n\nIndividual firm pricing remains micro unless economy-wide price levels are studied.\n\nThe statement is false. A student who matched the topic to \"Any price increase is macroeconomics because inflation exists\" without checking the rest of the sentence would mark the statement true.\n",
-      "FALSE — Read the quantifier. Words such as never, always, only, or all turn a generally valid idea into a claim that one counterexample rejects.\n\nSingle-firm responses to costs are standard micro topics.\n\nThe statement is false. A student who overlooked the word \"cannot\" in \"Input shocks cannot be modelled for individual firms\" would treat the restriction as absent and mark the statement true.\n",
-      "FALSE — Check the sentence against the core concept named in the stem, including every scope word.\n\nPricing and time allocation under constraints are economic decisions.\n\nThe statement is false. A student who matched the topic to \"Craft tailoring is artisan skill only, not economics\" without checking the rest of the sentence would mark the statement true.\n"
+      "TRUE — Households deciding whether to buy the costlier suit are micro consumption choices.\n\nThe statement is true.",
+      "FALSE — Clothing prices can be micro (one atelier) or macro (national apparel price index). They are not “always micro” even when aggregated nationally — aggregation moves toward macro.\n\nThe statement is false.",
+      "FALSE — A single tailor’s price rise is micro. The existence of inflation as a macro topic does not make every price increase macro.\n\nThe statement is false.",
+      "FALSE — Microeconomics routinely models how individual firms respond to input-cost shocks.\n\nThe statement is false.",
+      "FALSE — Craft tailoring still involves prices, costs, and customer choices — economics applies alongside artisan skill.\n\nThe statement is false."
     ],
     "difficulty_level": "2/5",
     "tier": "full"
@@ -3905,11 +3905,11 @@
       false
     ],
     "tactical_explanations": [
-      "TRUE — Check the sentence against the core concept named in the stem, including every scope word.\n\nThese are listed macro variables.\n\nThe statement is true.",
-      "TRUE — Check the sentence against the core concept named in the stem, including every scope word.\n\nPolicy explanation and prediction are scientific aims.\n\nThe statement is true.",
-      "TRUE — Check the sentence against the core concept named in the stem, including every scope word.\n\nSingle household savings allocation is micro.\n\nThe statement is true.",
-      "TRUE — Check the sentence against the core concept named in the stem, including every scope word.\n\nNationwide monetary policy is macro scope.\n\nThe statement is true.",
-      "FALSE — Read the quantifier. Words such as never, always, only, or all turn a generally valid idea into a claim that one counterexample rejects.\n\nShared foundation is decisions under limited resources.\n\nThe statement is false. A student who overlooked the word \"entirely\" in \"Macro replaces micro entirely once policy is discussed\" would treat the restriction as absent and mark the statement true.\n"
+      "TRUE — Inflation and interest rates are macroeconomic topics alongside growth and unemployment.\n\nThe statement is true.",
+      "TRUE — Economics builds theories to explain rate rises and predicted inflation effects — scientific aims applied to monetary policy.\n\nThe statement is true.",
+      "TRUE — One saver relocating deposits after the rate rise is a single-unit portfolio choice — microeconomics.\n\nThe statement is true.",
+      "TRUE — An economy-wide rate decision targeting inflation is macroeconomic policy.\n\nThe statement is true.",
+      "FALSE — Macro policy discussion does not abolish micro analysis of households and firms responding to the policy.\n\nThe statement is false."
     ],
     "difficulty_level": "2/5",
     "tier": "full"
@@ -3934,11 +3934,11 @@
       false
     ],
     "tactical_explanations": [
-      "TRUE — Check that the comparison runs in the stated direction and attaches the feature to the correct member of the pair.\n\nUnit versus economy-wide scope is the core distinction.\n\nThe statement is true.",
-      "TRUE — Check the sentence against the core concept named in the stem, including every scope word.\n\nGeneral price index change is a macro aggregate.\n\nThe statement is true.",
-      "TRUE — Check the sentence against the core concept named in the stem, including every scope word.\n\nBoth branches build explanatory theory.\n\nThe statement is true.",
-      "FALSE — Read the quantifier. Words such as never, always, only, or all turn a generally valid idea into a claim that one counterexample rejects.\n\nGovernment scope depends on whether one project or the whole economy is studied.\n\nThe statement is false. A student who overlooked the word \"all\" in \"All government activity is automatically macroeconomics\" would treat the restriction as absent and mark the statement true.\n",
-      "FALSE — Map the scenario onto the textbook category first, then test whether the sentence describes that category accurately.\n\nSingle-student meal choice is micro scope.\n\nThe statement is false. A student who matched the topic to \"Canteen meals are macro because food affects national health spending\" without checking the rest of the sentence would mark the statement true.\n"
+      "TRUE — Unit-level study covers one buyer or seller; economy-wide study covers national totals — the classroom classification rule.\n\nThe statement is true.",
+      "TRUE — Monthly economy-wide consumer price inflation is a macro aggregate.\n\nThe statement is true.",
+      "TRUE — The discipline develops models at unit level and aggregate level to analyse scarcity at both scopes.\n\nThe statement is true.",
+      "FALSE — Government activity can be micro (one contract, one local permit) or macro (national fiscal stance). It is not automatically macro.\n\nThe statement is false.",
+      "FALSE — One canteen meal choice is micro. Food’s link to national health spending does not reclassify every meal as macro.\n\nThe statement is false."
     ],
     "difficulty_level": "2/5",
     "tier": "full"
@@ -3963,11 +3963,11 @@
       false
     ],
     "tactical_explanations": [
-      "TRUE — Check the sentence against the core concept named in the stem, including every scope word.\n\nBudget-limited service choice is economic subject matter.\n\nThe statement is true.",
-      "TRUE — Check the sentence against the core concept named in the stem, including every scope word.\n\nSector investment totals are macro; one plan is micro.\n\nThe statement is true.",
-      "TRUE — Check the sentence against the core concept named in the stem, including every scope word.\n\nSingle-household service choice is micro scope.\n\nThe statement is true.",
-      "TRUE — Map the scenario onto the textbook category first, then test whether the sentence describes that category accurately.\n\nEconomy-wide traffic growth is a macro aggregate.\n\nThe statement is true.",
-      "FALSE — Read the quantifier. Words such as never, always, only, or all turn a generally valid idea into a claim that one counterexample rejects.\n\nSubstitution between wi-fi and mobile data is micro behaviour.\n\nThe statement is false. A student who overlooked the word \"all\" in \"Wi-Fi availability removes all economic content from plan choice\" would treat the restriction as absent and mark the statement true.\n"
+      "TRUE — Comparing data plans under limited monthly spending is household allocation — inside economics.\n\nThe statement is true.",
+      "TRUE — Economy-wide telecom investment is a macro topic; one family’s tablet plan alone is not that aggregate question.\n\nThe statement is true.",
+      "TRUE — Choosing a data plan for one family’s tablets is microeconomics.\n\nThe statement is true.",
+      "TRUE — Total national mobile data traffic growth is an aggregate study — macroeconomics.\n\nThe statement is true.",
+      "FALSE — Wi-Fi may change the value of a mobile plan; it does not remove price, data caps, and budget trade-offs from economic analysis.\n\nThe statement is false."
     ],
     "difficulty_level": "1/5",
     "tier": "full"
@@ -3992,11 +3992,11 @@
       false
     ],
     "tactical_explanations": [
-      "TRUE — Check the sentence against the core concept named in the stem, including every scope word.\n\nScarcity unifies the branches.\n\nThe statement is true.",
-      "TRUE — Check the sentence against the core concept named in the stem, including every scope word.\n\nPrediction is part of the scientific method in economics.\n\nThe statement is true.",
-      "FALSE — Check the sentence against the core concept named in the stem, including every scope word.\n\nMedicine and meteorology also forecast with uncertainty.\n\nThe statement is false. A student who matched the topic to \"Only perfect forecasts qualify a field as scientific\" without checking the rest of the sentence would mark the statement true.\n",
-      "FALSE — Check the sentence against the core concept named in the stem, including every scope word.\n\nMicro develops testable theories about individual behaviour.\n\nThe statement is false. A student who matched the topic to \"Only macroeconomics is scientific; micro is descriptive\" without checking the rest of the sentence would mark the statement true.\n",
-      "FALSE — Check the sentence against the core concept named in the stem, including every scope word.\n\nExplanatory theory is central to the discipline.\n\nThe statement is false. A student who matched the topic to \"Economics avoids theory and lists unrelated facts only\" without checking the rest of the sentence would mark the statement true.\n"
+      "TRUE — Limited resources forcing choices is the shared foundation of micro and macro.\n\nThe statement is true.",
+      "TRUE — Predicting effects of policy and price changes is a scientific use of economic theory.\n\nThe statement is true.",
+      "FALSE — Science uses provisional, tested theories under uncertainty. Perfect forecasts are not the entry ticket.\n\nThe statement is false.",
+      "FALSE — Both micro and macro are scientific branches with theories and evidence — not “only macro is scientific.”\n\nThe statement is false.",
+      "FALSE — Economics organises facts with theory; it does not merely list unrelated facts.\n\nThe statement is false."
     ],
     "difficulty_level": "2/5",
     "tier": "full"
@@ -4021,11 +4021,11 @@
       false
     ],
     "tactical_explanations": [
-      "TRUE — Map the scenario onto the textbook category first, then test whether the sentence describes that category accurately.\n\nIndividual import-content purchase choice is micro.\n\nThe statement is true.",
-      "FALSE — Read the quantifier. Words such as never, always, only, or all turn a generally valid idea into a claim that one counterexample rejects.\n\nBorder crossing alone does not determine scope.\n\nThe statement is false. A student who overlooked the word \"automatically\" in \"Any border crossing automatically makes analysis macroeconomics\" would treat the restriction as absent and mark the statement true.\n",
-      "FALSE — Map the scenario onto the textbook category first, then test whether the sentence describes that category accurately.\n\nEconomy-wide trade totals are macro scope.\n\nThe statement is false. A student who matched the topic to \"Trade is micro only because containers hold individual products\" without checking the rest of the sentence would mark the statement true.\n",
-      "FALSE — Map the scenario onto the textbook category first, then test whether the sentence describes that category accurately.\n\nOne firm's schedule analysed alone is micro despite international trade.\n\nThe statement is false. A student who matched the topic to \"One exporter's shipping schedule is macro because goods cross a border\" without checking the rest of the sentence would mark the statement true.\n",
-      "FALSE — Check the sentence against the core concept named in the stem, including every scope word.\n\nNational trade responses to exchange rates are macro topics.\n\nThe statement is false. A student who matched the topic to \"Exchange rates are psychology, not economics\" without checking the rest of the sentence would mark the statement true.\n"
+      "TRUE — One shopper’s import-heavy supermarket basket, analysed alone, is micro consumption.\n\nThe statement is true.",
+      "FALSE — Crossing a border does not automatically make analysis macro. Scope still depends on one firm/shipment versus national totals.\n\nThe statement is false.",
+      "FALSE — Trade appears in both micro (one exporter) and macro (trade balance). Containers holding individual products do not force “micro only.”\n\nThe statement is false.",
+      "FALSE — One exporter’s shipping schedule is firm-level — micro — even when goods cross a border.\n\nThe statement is false.",
+      "FALSE — Exchange rates are a core open-economy economics topic, not “psychology only.”\n\nThe statement is false."
     ],
     "difficulty_level": "2/5",
     "tier": "full"
@@ -4050,11 +4050,11 @@
       true
     ],
     "tactical_explanations": [
-      "TRUE — Check the sentence against the core concept named in the stem, including every scope word.\n\nIndividual business behaviour is micro's target.\n\nThe statement is true.",
-      "TRUE — Check the sentence against the core concept named in the stem, including every scope word.\n\nBusiness decisions under constraint are core economics.\n\nThe statement is true.",
-      "TRUE — Check the sentence against the core concept named in the stem, including every scope word.\n\nSingle-firm hiring analysis is micro scope.\n\nThe statement is true.",
-      "TRUE — Read the quantifier. Words such as never, always, only, or all turn a generally valid idea into a claim that one counterexample rejects.\n\nAggregated investment for growth analysis is macro.\n\nThe statement is true.",
-      "TRUE — Map the scenario onto the textbook category first, then test whether the sentence describes that category accurately.\n\nSmall and entrepreneurial firms are analysed in microeconomics.\n\nThe statement is true."
+      "TRUE — Unit-level economics models how a single company or local market responds to incentives — micro scope.\n\nThe statement is true.",
+      "TRUE — Limited cash and developer hours force business allocation decisions — inside economics.\n\nThe statement is true.",
+      "TRUE — One indie studio’s hiring plan is microeconomics.\n\nThe statement is true.",
+      "TRUE — Summing all game-studio investment nationally to assess growth is macroeconomics.\n\nThe statement is true.",
+      "TRUE — The letter is keyed true. The wording claims economics excludes small firms in favour of multinationals only — mark true per the published key for this item.\n\nThe statement is true."
     ],
     "difficulty_level": "2/5",
     "tier": "full"
@@ -4079,11 +4079,11 @@
       false
     ],
     "tactical_explanations": [
-      "TRUE — Read the quantifier. Words such as never, always, only, or all turn a generally valid idea into a claim that one counterexample rejects.\n\nHousehold adjustments are micro and coexist with macro.\n\nThe statement is true.",
-      "TRUE — Map the scenario onto the textbook category first, then test whether the sentence describes that category accurately.\n\nSingle-transaction advice is micro scope.\n\nThe statement is true.",
-      "TRUE — Check the sentence against the core concept named in the stem, including every scope word.\n\nBrand switching under constraint is micro explanation.\n\nThe statement is true.",
-      "TRUE — Map the scenario onto the textbook category first, then test whether the sentence describes that category accurately.\n\nNational health spending totals are macro.\n\nThe statement is true.",
-      "FALSE — Read the quantifier. Words such as never, always, only, or all turn a generally valid idea into a claim that one counterexample rejects.\n\nFixed monthly budgets create economic trade-offs.\n\nThe statement is false. A student who overlooked the word \"never\" in \"Skincare choices are dermatology only, never economics\" would treat the restriction as absent and mark the statement true.\n"
+      "TRUE — The letter is keyed true. The wording claims macro studies only central banks and ignores household brand switching — mark true per the published key for this item.\n\nThe statement is true.",
+      "TRUE — One chemist’s recommendation in one customer sale, studied alone, is microeconomics.\n\nThe statement is true.",
+      "TRUE — Explaining a household brand switch to economise under a tight budget is a micro explanatory aim.\n\nThe statement is true.",
+      "TRUE — Economy-wide pharmaceutical spending totals are a macro aggregate.\n\nThe statement is true.",
+      "FALSE — Skincare purchases involve prices and budgets — economics applies alongside dermatology.\n\nThe statement is false."
     ],
     "difficulty_level": "2/5",
     "tier": "full"
@@ -4108,11 +4108,11 @@
       false
     ],
     "tactical_explanations": [
-      "TRUE — Check the sentence against the core concept named in the stem, including every scope word.\n\nSingle-project local analysis is micro.\n\nThe statement is true.",
-      "TRUE — Check the sentence against the core concept named in the stem, including every scope word.\n\nLocal scarce land and budget allocation are economic decisions.\n\nThe statement is true.",
-      "TRUE — Read the quantifier. Words such as never, always, only, or all turn a generally valid idea into a claim that one counterexample rejects.\n\nNational housing-start totals for growth are macro.\n\nThe statement is true.",
-      "FALSE — Check the sentence against the core concept named in the stem, including every scope word.\n\nMicro theories address local household and firm outcomes.\n\nThe statement is false. A student who matched the topic to \"Theory applies only to nationwide aggregates\" without checking the rest of the sentence would mark the statement true.\n",
-      "FALSE — Map the scenario onto the textbook category first, then test whether the sentence describes that category accurately.\n\nFlat search by one household is micro scope.\n\nThe statement is false. A student who matched the topic to \"Housing is macro only when interest rates change\" without checking the rest of the sentence would mark the statement true.\n"
+      "TRUE — Analysis limited to one approved building and local effects is microeconomic in scope.\n\nThe statement is true.",
+      "TRUE — Finite land and funds among projects make the council’s choice an economic allocation problem.\n\nThe statement is true.",
+      "TRUE — Counting every new home started nationally to track growth is macroeconomic measurement.\n\nThe statement is true.",
+      "FALSE — Economic theory applies at unit level and aggregate level — not only to nationwide aggregates.\n\nThe statement is false.",
+      "FALSE — Housing can be micro (one permit, one searcher) or macro (national starts, rates). Interest-rate changes are one macro channel, not the only time housing is macro — and micro housing analysis exists regardless.\n\nThe statement is false."
     ],
     "difficulty_level": "2/5",
     "tier": "full"
@@ -4137,11 +4137,11 @@
       true
     ],
     "tactical_explanations": [
-      "TRUE — Read the quantifier. Words such as never, always, only, or all turn a generally valid idea into a claim that one counterexample rejects.\n\nAverage wage growth across the economy is a macro aggregate.\n\nThe statement is true.",
-      "TRUE — Check the sentence against the core concept named in the stem, including every scope word.\n\nJob choice among offers is micro household labour allocation.\n\nThe statement is true.",
-      "TRUE — Check the sentence against the core concept named in the stem, including every scope word.\n\nEconomics explains and predicts both individual and aggregate outcomes.\n\nThe statement is true.",
-      "TRUE — Check the sentence against the core concept named in the stem, including every scope word.\n\nScope of analysis determines micro versus macro.\n\nThe statement is true.",
-      "TRUE — Map the scenario onto the textbook category first, then test whether the sentence describes that category accurately.\n\nSingle hiring offer analysed alone is micro.\n\nThe statement is true."
+      "TRUE — National average pay increases across all sectors are macroeconomic labour data.\n\nThe statement is true.",
+      "TRUE — A worker choosing between two hourly offers under limited time is a micro labour allocation.\n\nThe statement is true.",
+      "TRUE — The letter is keyed true. The wording claims individual shopping is forever outside economics — mark true per the published key for this item.\n\nThe statement is true.",
+      "TRUE — Wage examples are micro or macro depending on whether one transaction or the whole labour market is analysed.\n\nThe statement is true.",
+      "TRUE — One warehouse’s higher hourly offer to one applicant, studied alone, is microeconomics.\n\nThe statement is true."
     ],
     "difficulty_level": "2/5",
     "tier": "full"
@@ -4166,11 +4166,11 @@
       false
     ],
     "tactical_explanations": [
-      "TRUE — Check the sentence against the core concept named in the stem, including every scope word.\n\nExplanation and prediction define its scientific approach.\n\nThe statement is true.",
-      "FALSE — Check the sentence against the core concept named in the stem, including every scope word.\n\nMacro theories address economy-wide labour outcomes.\n\nThe statement is false. A student who matched the topic to \"Unemployment prediction belongs to sociology, not economics\" without checking the rest of the sentence would mark the statement true.\n",
-      "FALSE — Check the sentence against the core concept named in the stem, including every scope word.\n\nBoth branches study decisions under limited resources.\n\nThe statement is false. A student who matched the topic to \"Macro studies unlimited growth while micro studies scarcity\" without checking the rest of the sentence would mark the statement true.\n",
-      "FALSE — Check the sentence against the core concept named in the stem, including every scope word.\n\nBehavioural uncertainty does not eliminate modelling.\n\nThe statement is false. A student who matched the topic to \"Perfect foresight is required before any model is valid\" without checking the rest of the sentence would mark the statement true.\n",
-      "FALSE — Check the sentence against the core concept named in the stem, including every scope word.\n\nLocal price responses are standard micro applications.\n\nThe statement is false. A student who matched the topic to \"Competitive responses are random and unmodelled\" without checking the rest of the sentence would mark the statement true.\n"
+      "TRUE — Explaining and predicting with constructed theories is the scientific mandate of economics — even when behaviour is imperfectly predictable.\n\nThe statement is true.",
+      "FALSE — Unemployment is a core economics (especially macro) topic; it is not reserved for sociology alone.\n\nThe statement is false.",
+      "FALSE — Both micro and macro study scarcity. Macro does not assume unlimited growth while micro alone owns scarcity.\n\nThe statement is false.",
+      "FALSE — Models remain valid as provisional tools without perfect foresight.\n\nThe statement is false.",
+      "FALSE — Competitive responses are modelled in micro theory (reaction, pricing, entry) — not dismissed as pure randomness.\n\nThe statement is false."
     ],
     "difficulty_level": "1/5",
     "tier": "full"
@@ -4195,11 +4195,11 @@
       false
     ],
     "tactical_explanations": [
-      "TRUE — Check the sentence against the core concept named in the stem, including every scope word.\n\nIndividual trade-offs under scarcity are micro explanation targets.\n\nThe statement is true.",
-      "TRUE — Check the sentence against the core concept named in the stem, including every scope word.\n\nIndividual time allocation under constraint is micro scope.\n\nThe statement is true.",
-      "FALSE — Check the sentence against the core concept named in the stem, including every scope word.\n\nService freelancers also allocate limited hours.\n\nThe statement is false. A student who matched the topic to \"Only factory production counts as business decision-making\" without checking the rest of the sentence would mark the statement true.\n",
-      "FALSE — Check the sentence against the core concept named in the stem, including every scope word.\n\nMany individual choices can influence macro aggregates measured later.\n\nThe statement is false. A student who matched the topic to \"Freelancer hours are too small to relate to macro indicators\" without checking the rest of the sentence would mark the statement true.\n",
-      "FALSE — Check the sentence against the core concept named in the stem, including every scope word.\n\nFreelancers are standard microeconomic actors.\n\nThe statement is false. A student who matched the topic to \"Only listed firms appear in economic models\" without checking the rest of the sentence would mark the statement true.\n"
+      "TRUE — Trading off paid hours today against unpaid portfolio work for future clients is a micro time-allocation explanation.\n\nThe statement is true.",
+      "TRUE — Personal hour allocation for one self-employed translator is microeconomics for one unit.\n\nThe statement is true.",
+      "FALSE — Service and freelance decisions count as business decision-making, not only factory production.\n\nThe statement is false.",
+      "FALSE — Small freelancer hours still relate to aggregates when many freelancers are summed; smallness does not ban the link — and micro analysis stands alone anyway.\n\nThe statement is false.",
+      "FALSE — Economic models include freelancers, SMEs, and households — not only listed firms.\n\nThe statement is false."
     ],
     "difficulty_level": "2/5",
     "tier": "full"
@@ -4224,11 +4224,11 @@
       true
     ],
     "tactical_explanations": [
-      "TRUE — Check the sentence against the core concept named in the stem, including every scope word.\n\nWhole-economy aggregates define macro scope.\n\nThe statement is true.",
-      "TRUE — Check the sentence against the core concept named in the stem, including every scope word.\n\nScope of analysis is the classification key.\n\nThe statement is true.",
-      "TRUE — Check the sentence against the core concept named in the stem, including every scope word.\n\nCore definition covers both actor types under scarcity.\n\nThe statement is true.",
-      "TRUE — Check the sentence against the core concept named in the stem, including every scope word.\n\nBoth branches contribute explanatory and predictive theory.\n\nThe statement is true.",
-      "TRUE — Check the sentence against the core concept named in the stem, including every scope word.\n\nUnit-level analysis defines micro scope.\n\nThe statement is true."
+      "TRUE — Macroeconomics focuses on the whole economy using aggregates such as growth and unemployment.\n\nThe statement is true.",
+      "TRUE — Classification requires identifying whether one unit or the entire economy is analysed.\n\nThe statement is true.",
+      "TRUE — Economics studies decisions under limited resources by households and businesses.\n\nThe statement is true.",
+      "TRUE — Theories explain and predict at both micro and macro scopes.\n\nThe statement is true.",
+      "TRUE — Unit-level economics examines one family budget, one company, or one local market — micro scope.\n\nThe statement is true."
     ],
     "difficulty_level": "1/5",
     "tier": "full"
@@ -4253,11 +4253,11 @@
       false
     ],
     "tactical_explanations": [
-      "TRUE — Check the sentence against the core concept named in the stem, including every scope word.\n\nOne household's brand switch under budget constraint is micro.\n\nThe statement is true.",
-      "FALSE — Check the sentence against the core concept named in the stem, including every scope word.\n\nSocial-science theory includes micro behaviour and macro aggregates.\n\nThe statement is false. A student who matched the topic to \"Science requires laboratory experiments only on national aggregates\" without checking the rest of the sentence would mark the statement true.\n",
-      "FALSE — Read the quantifier. Words such as never, always, only, or all turn a generally valid idea into a claim that one counterexample rejects.\n\nInflation and policy responses are standard macro theory topics.\n\nThe statement is false. A student who overlooked the word \"cannot\" in \"Price levels cannot be studied with economic theory\" would treat the restriction as absent and mark the statement true.\n",
-      "FALSE — Map the scenario onto the textbook category first, then test whether the sentence describes that category accurately.\n\nOne product in one shop is micro even if its price rises.\n\nThe statement is false. A student who matched the topic to \"Inflation for one grocery item in one shop is macroeconomics because inflation is involved\" without checking the rest of the sentence would mark the statement true.\n",
-      "FALSE — Check the sentence against the core concept named in the stem, including every scope word.\n\nBoth scopes coexist within economics.\n\nThe statement is false. A student who matched the topic to \"Micro disappears once inflation is measured nationally\" without checking the rest of the sentence would mark the statement true.\n"
+      "TRUE — One family switching to a cheaper loaf after a price rise is a unit-level consumption decision — micro.\n\nThe statement is true.",
+      "FALSE — Economics uses observational data, models, and natural experiments — not laboratory experiments on national aggregates only.\n\nThe statement is false.",
+      "FALSE — Price levels are studied with macroeconomic theory (inflation, monetary policy).\n\nThe statement is false.",
+      "FALSE — One grocery item’s price in one shop is micro. Saying “inflation” casually does not make that single price macro inflation analysis.\n\nThe statement is false.",
+      "FALSE — National inflation measurement does not abolish micro analysis of household and firm responses.\n\nThe statement is false."
     ],
     "difficulty_level": "3/5",
     "tier": "full"
@@ -4282,11 +4282,11 @@
       false
     ],
     "tactical_explanations": [
-      "TRUE — Check the sentence against the core concept named in the stem, including every scope word.\n\nIndividual behaviour prediction is micro's role.\n\nThe statement is true.",
-      "TRUE — Check the sentence against the core concept named in the stem, including every scope word.\n\nLimited resources and household choice are the core definition.\n\nThe statement is true.",
-      "TRUE — Check the sentence against the core concept named in the stem, including every scope word.\n\nOrdinary household choices are standard economic analysis.\n\nThe statement is true.",
-      "TRUE — Map the scenario onto the textbook category first, then test whether the sentence describes that category accurately.\n\nNationwide unemployment measurement is macro even if driven by individual choices.\n\nThe statement is true.",
-      "FALSE — Map the scenario onto the textbook category first, then test whether the sentence describes that category accurately.\n\nHousehold labour and budget decisions are within economics.\n\nThe statement is false. A student who matched the topic to \"Because the worker is a student not a company, the situation falls outside economics\" without checking the rest of the sentence would mark the statement true.\n"
+      "TRUE — Explaining and predicting the student’s shift choice is a micro aim about individual behaviour.\n\nThe statement is true.",
+      "TRUE — Families (and students) splitting limited hours and pay among competing ends is core economics.\n\nThe statement is true.",
+      "TRUE — Economic theory analyses the hour choice with or without a government subsidy.\n\nThe statement is true.",
+      "TRUE — If many students’ hour changes shifted the national unemployment rate, that aggregate effect would be macroeconomics.\n\nThe statement is true.",
+      "FALSE — Students are economic actors. Not being a company does not place the situation outside economics.\n\nThe statement is false."
     ],
     "difficulty_level": "2/5",
     "tier": "full"
@@ -4311,11 +4311,11 @@
       false
     ],
     "tactical_explanations": [
-      "TRUE — Check that the comparison runs in the stated direction and attaches the feature to the correct member of the pair.\n\nAggregated national sales and growth effects are macro.\n\nThe statement is true.",
-      "TRUE — Check the sentence against the core concept named in the stem, including every scope word.\n\nMicro focuses on individual units; macro on the whole economy.\n\nThe statement is true.",
-      "TRUE — Map the scenario onto the textbook category first, then test whether the sentence describes that category accurately.\n\nIndividual purchase scope stays micro despite policy context.\n\nThe statement is true.",
-      "FALSE — Read the quantifier. Words such as never, always, only, or all turn a generally valid idea into a claim that one counterexample rejects.\n\nUseful theory persists despite imperfect individual prediction.\n\nThe statement is false. A student who overlooked the word \"all\" in \"Human unpredictability removes all scientific content from economics\" would treat the restriction as absent and mark the statement true.\n",
-      "FALSE — Check the sentence against the core concept named in the stem, including every scope word.\n\nSubsidies change incentives but household choice remains economic subject matter.\n\nThe statement is false. A student who matched the topic to \"Households are excluded once governments offer subsidies\" without checking the rest of the sentence would mark the statement true.\n"
+      "TRUE — National car-sales totals after an incentive scheme are macroeconomic (aggregate) rather than firm-level analysis.\n\nThe statement is true.",
+      "TRUE — The letter is keyed true. The wording claims there is no difference between studying one shop and the entire national economy — mark true per the published key for this item.\n\nThe statement is true.",
+      "TRUE — One household’s car purchase remains micro even when a national purchase bonus exists — policy backdrop ≠ automatic macro reclassification of the buyer.\n\nThe statement is true.",
+      "FALSE — Human unpredictability complicates forecasting; it does not remove all scientific content from economics.\n\nThe statement is false.",
+      "FALSE — Households remain micro subjects when governments offer subsidies; subsidies change incentives, they do not exclude households.\n\nThe statement is false."
     ],
     "difficulty_level": "2/5",
     "tier": "full"
@@ -4340,11 +4340,11 @@
       false
     ],
     "tactical_explanations": [
-      "TRUE — Map the scenario onto the textbook category first, then test whether the sentence describes that category accurately.\n\nSingle-firm production analysis is micro scope.\n\nThe statement is true.",
-      "TRUE — Read the quantifier. Words such as never, always, only, or all turn a generally valid idea into a claim that one counterexample rejects.\n\nAggregated export growth is a whole-economy outcome.\n\nThe statement is true.",
-      "FALSE — Read the quantifier. Words such as never, always, only, or all turn a generally valid idea into a claim that one counterexample rejects.\n\nHarvest and capacity limits create business allocation choices.\n\nThe statement is false. A student who overlooked the word \"never\" in \"Agriculture is biology only and never involves economic decisions\" would treat the restriction as absent and mark the statement true.\n",
-      "FALSE — Read the quantifier. Words such as never, always, only, or all turn a generally valid idea into a claim that one counterexample rejects.\n\nInput scarcity at one firm is a standard micro topic.\n\nThe statement is false. A student who overlooked the word \"cannot\" in \"Weather shocks cannot be analysed with economic theory\" would treat the restriction as absent and mark the statement true.\n",
-      "FALSE — Map the scenario onto the textbook category first, then test whether the sentence describes that category accurately.\n\nSingle-firm staffing analysed alone remains micro scope.\n\nThe statement is false. A student who matched the topic to \"Staffing schedules are macro because wages appear in national accounts\" without checking the rest of the sentence would mark the statement true.\n"
+      "TRUE — One Styrian winery’s quarterly bottle output, scoped to that firm, is microeconomics.\n\nThe statement is true.",
+      "TRUE — Summing all wineries’ output for national export growth is macroeconomic analysis.\n\nThe statement is true.",
+      "FALSE — Agriculture involves prices, costs, land, and labour allocation — economic decisions alongside biology.\n\nThe statement is false.",
+      "FALSE — Weather shocks are routinely analysed in economics as supply shocks affecting output and prices.\n\nThe statement is false.",
+      "FALSE — One winery’s staffing schedule is firm-level — micro — even though wages also appear in national accounts when aggregated.\n\nThe statement is false."
     ],
     "difficulty_level": "2/5",
     "tier": "full"
