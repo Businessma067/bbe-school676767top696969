@@ -725,7 +725,8 @@ $$n^{2}$$
 
  is still positive, so $G-F<0$ and therefore $F(n)>G(n)$. A single interior check:
 
-$$F(1)=2, \\$$
+$$F(1)=2
+$$
 
 $$G(1)=1$$
 
@@ -2274,7 +2275,8 @@ $$D(n)=16n$$
 
 . At $25$ documents:
 
-$$C(25)=625, \\$$
+$$C(25)=625
+$$
 
 $$D(25)=400$$
 
@@ -2671,7 +2673,8 @@ At the recorded pair,
 
 $$q(10)=\\frac{10000}{100}$$
 
-$$q(10)=100, \\$$
+$$q(10)=100
+$$
 
 $$q(5)=400$$
 
@@ -2776,7 +2779,8 @@ $$\\frac{C(n)}{n}=\\frac{200}{n}+30 n^{-\\frac{1}{2}}$$
 
 Both leftover exponents are negative, so the average falls as the book grows. At the two invoices:
 
-$$\\frac{C(100)}{100}=5, \\$$
+$$\\frac{C(100)}{100}=5
+$$
 
 $$\\frac{C(400)}{400}=2$$
 
@@ -2929,7 +2933,8 @@ $$e(a)=120 a^{-\\frac{1}{2}}$$
 
 The exponent is negative, so intensity falls as the fleet grows. For a concrete pair:
 
-$$e(16)=30, \\$$
+$$e(16)=30
+$$
 
 $$e(64)=\\frac{120}{8}$$
 
@@ -3296,13 +3301,15 @@ The plans cross where the uncapped square-root bill equals the linear bill:
 
 $$40\\sqrt{u}=5u$$
 
-$$8=\\sqrt{u}, \\$$
+$$8=\\sqrt{u}
+$$
 
 $$u=64$$
 
 Below that crossing, at the recorded $36$ tickets:
 
-$$C_A(36)=240, \\$$
+$$C_A(36)=240
+$$
 
 $$C_B(36)=180$$
 
@@ -3321,7 +3328,8 @@ $$40\\sqrt{u}=400$$
 
 :
 
-$$\\sqrt{u}=10, \\$$
+$$\\sqrt{u}=10
+$$
 
 $$u=100$$
 
@@ -3570,7 +3578,8 @@ $$\\frac{R(x)}{x}=90 x^{-\\frac{1}{2}}$$
 
 The leftover exponent is negative, so the average falls as the campaign grows. At the recorded spend and at $400$:
 
-$$\\frac{R(100)}{100}=9, \\$$
+$$\\frac{R(100)}{100}=9
+$$
 
 $$\\frac{R(400)}{400}=\\frac{90\\cdot 20}{400}$$
 
@@ -3883,7 +3892,8 @@ $$R(p)=2000 p^{-\\frac{1}{2}}$$
 
 The leftover exponent is negative, so revenue falls as the price rises. At the recorded price and at $16$:
 
-$$R(4)=1000, \\$$
+$$R(4)=1000
+$$
 
 $$R(16)=500$$
 
@@ -3919,7 +3929,8 @@ The charge is covered when $R(p)\\ge 400$:
 
 $$2000 p^{-\\frac{1}{2}}\\ge 400$$
 
-$$\\sqrt{p}\\le 5, \\$$
+$$\\sqrt{p}\\le 5
+$$
 
 $$p\\le 25$$
 
@@ -4156,7 +4167,8 @@ $$F=250$$
 
 $$2 v^{\\frac{3}{2}}=250$$
 
-$$v^{\\frac{3}{2}}=125, \\$$
+$$v^{\\frac{3}{2}}=125
+$$
 
 $$v=125^{\\frac{2}{3}}$$
 
@@ -4255,7 +4267,8 @@ $$R(p)=1200 p^{\\frac{1}{2}}$$
 
 The leftover exponent is positive, so revenue rises as the price rises. At $16$ and $25$:
 
-$$R(16)=4800, \\$$
+$$R(16)=4800
+$$
 
 $$R(25)=6000$$
 
@@ -4319,7 +4332,8 @@ Cutting quantity to $200$ needs
 
 $$1200 p^{-\\frac{1}{2}}=200$$
 
-$$\\sqrt{p}=6, \\$$
+$$\\sqrt{p}=6
+$$
 
 $$p=36$$
 
@@ -4427,7 +4441,8 @@ $$4 x^{\\frac{4}{3}}=1024$$
 
 :
 
-$$x^{\\frac{4}{3}}=256, \\$$
+$$x^{\\frac{4}{3}}=256
+$$
 
 $$x=64$$
 
@@ -4685,7 +4700,8 @@ $$\\frac{T(x)}{S(x)}=\\frac{x}{8}$$
 
 $$\\frac{T(4)}{S(4)}=\\frac{8}{16}$$
 
-$$\\frac{T(4)}{S(4)}=\\frac{1}{2}, \\$$
+$$\\frac{T(4)}{S(4)}=\\frac{1}{2}
+$$
 
 $$\\frac{T(8)}{S(8)}=1$$
 
@@ -4912,7 +4928,8 @@ $$\\Pi'(L)=0$$
 
 :
 
-$$60 L^{-\\frac{1}{2}}=6, \\$$
+$$60 L^{-\\frac{1}{2}}=6
+$$
 
 $$L=100$$
 
@@ -4922,7 +4939,8 @@ $$\\Pi(L)=0$$
 
  on $L>0$:
 
-$$120 L^{\\frac{1}{2}}=6L, \\$$
+$$120 L^{\\frac{1}{2}}=6L
+$$
 
 $$L=400$$
 
@@ -4969,7 +4987,8 @@ Keep the stated domain in force while you evaluate the model.
 
 Net gain crosses zero on $L>0$ where
 
-$$120\\sqrt{L}=6L, \\$$
+$$120\\sqrt{L}=6L
+$$
 
 $$L=400$$
 
@@ -5905,9 +5924,11 @@ $$\\frac{B(x)}{C(x)}=\\frac{36}{x}$$
 
 That leftover power of $x$ is not constant. At the cost trial, the benefit trial, and the meeting:
 
-$$\\frac{B(4)}{C(4)}=9, \\$$
+$$\\frac{B(4)}{C(4)}=9
+$$
 
-$$\\frac{B(16)}{C(16)}=2.25, \\$$
+$$\\frac{B(16)}{C(16)}=2.25
+$$
 
 $$\\frac{B(36)}{C(36)}=1$$
 
@@ -6303,7 +6324,8 @@ $$\\frac{E(v)}{v}=\\frac{v}{20}$$
 
 The leftover exponent is positive, so that average is not the same at every speed. At the two survey speeds:
 
-$$\\frac{E(30)}{30}=1.5, \\$$
+$$\\frac{E(30)}{30}=1.5
+$$
 
 $$\\frac{E(50)}{50}=2.5$$
 
@@ -7836,7 +7858,8 @@ $$S(N)=800 N^{\\frac{1}{2}}$$
 
 The leftover exponent on unit cost is negative, so unit cost falls. The leftover exponent on spend is positive, so cumulative spend still rises. At the two milestones:
 
-$$S(100)=8000, \\$$
+$$S(100)=8000
+$$
 
 $$S(400)=16000$$
 
@@ -10288,7 +10311,8 @@ $$n=100$$
 
 , the second recorded point:
 
-$$t(25)=18, \\$$
+$$t(25)=18
+$$
 
 $$t(100)=13$$
 
