@@ -1,7 +1,11 @@
 import { memo, startTransition, useCallback, useDeferredValue, useEffect, useMemo, useRef, useState, type ReactNode } from "react";
 import { AuthModal } from "@/components/AuthModal";
 import { SiteHeader } from "@/components/SiteHeader";
-import { FlashcardMath, indexOfUnescapedDollar } from "@/components/FlashcardMath";
+import {
+  FlashcardMath,
+  indexOfUnescapedDollar,
+  mergeContinuationDisplayParagraphs,
+} from "@/components/FlashcardMath";
 import { PracticeCalcProvider, usePracticeCalcOptional } from "@/components/calculator/PracticeCalcContext";
 import { PracticeRightSlot } from "@/components/calculator/Ti30MathPrint";
 import { TimedModeBar, TimeoutModal, TimerStatusDot } from "@/components/TimedModeControls";
@@ -1274,19 +1278,22 @@ function isPartStartPara(trimmed: string): boolean {
  */
 const MathProse = memo(function MathProse({ text, className }: { text: string; className?: string }) {
   // Keep blank-line paragraphs, but also split consecutive bullet lines apart.
-  const paragraphs = text
-    .split(/\n\n+/)
-    .flatMap((block) => {
-      const trimmed = block.trim();
-      if (!trimmed) return [];
-      if (/^[•\-]/.test(trimmed) && /\n[•\-]/.test(trimmed)) {
-        return trimmed
-          .split(/\n(?=[•\-]\s+)/)
-          .map((line) => line.trim())
-          .filter(Boolean);
-      }
-      return [trimmed];
-    });
+  // Then fold `$$…$$` / `$$=…$$` continuation chains into one aligned display.
+  const paragraphs = mergeContinuationDisplayParagraphs(
+    text
+      .split(/\n\n+/)
+      .flatMap((block) => {
+        const trimmed = block.trim();
+        if (!trimmed) return [];
+        if (/^[•\-]/.test(trimmed) && /\n[•\-]/.test(trimmed)) {
+          return trimmed
+            .split(/\n(?=[•\-]\s+)/)
+            .map((line) => line.trim())
+            .filter(Boolean);
+        }
+        return [trimmed];
+      }),
+  );
 
   // Group: each numbered step keeps its following prose/math until the next step/part/claim.
   type Chunk =
@@ -1505,9 +1512,10 @@ const MathProse = memo(function MathProse({ text, className }: { text: string; c
         }
 
         if (chunk.kind === "step") {
+          const stepParas = mergeContinuationDisplayParagraphs(chunk.paras);
           return (
             <div key={idx} className="mb-6 mt-5 first:mt-2">
-              {chunk.paras.map((para, j) => {
+              {stepParas.map((para, j) => {
                 if (isDisplayMathPara(para)) {
                   return (
                     <div key={j} className="my-5">

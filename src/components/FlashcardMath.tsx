@@ -302,6 +302,136 @@ function normalizeBrokenMathMarkup(input: string): string {
   return s;
 }
 
+/**
+ * Turn a chain like
+ *   $$\varepsilon=\dfrac{…}{20}$$
+ *   $$=-2$$
+ * into one left-aligned `aligned` block so KaTeX does not center a lone `= -2`.
+ */
+function formatAlignedContinuationChain(bodies: string[]): string {
+  const lines: string[] = [];
+  for (let k = 0; k < bodies.length; k++) {
+    const raw = bodies[k].trim();
+    if (!raw) continue;
+    if (k === 0) {
+      lines.push(toAlignedFirstLine(raw));
+    } else if (/^\s*=/.test(raw)) {
+      lines.push(`&${raw}`);
+    } else {
+      lines.push(`& ${raw}`);
+    }
+  }
+  return `\\begin{aligned}\n${lines.join(" \\\\\n")}\n\\end{aligned}`;
+}
+
+/** Put `&=` on the first top-level equals so the chain lines up. */
+function toAlignedFirstLine(s: string): string {
+  let depth = 0;
+  for (let i = 0; i < s.length; i++) {
+    const c = s[i]!;
+    if (c === "{" || c === "(") depth += 1;
+    else if (c === "}" || c === ")") depth = Math.max(0, depth - 1);
+    else if (c === "=" && depth === 0) {
+      if (i > 0 && s[i - 1] === "\\") continue;
+      const before = s.slice(0, i).replace(/\s+$/, "");
+      if (
+        /\\(?:neq|leq|geq|eq|approx|equiv|sim|cong|leqslant|geqslant|doteq|coloneqq)$/.test(
+          before,
+        )
+      ) {
+        continue;
+      }
+      return `${s.slice(0, i).trimEnd()} &=${s.slice(i + 1)}`;
+    }
+  }
+  return `& ${s}`;
+}
+
+function coalesceContinuationDisplays(parts: Part[]): Part[] {
+  const out: Part[] = [];
+  let i = 0;
+  while (i < parts.length) {
+    const p = parts[i]!;
+    if (p.type !== "display") {
+      out.push(p);
+      i += 1;
+      continue;
+    }
+
+    const bodies = [p.value];
+    let j = i + 1;
+    let end = j;
+    while (j < parts.length) {
+      const mid = parts[j]!;
+      if (mid.type === "text" && mid.value.trim() === "") {
+        j += 1;
+        continue;
+      }
+      if (mid.type === "display" && /^\s*=/.test(mid.value)) {
+        bodies.push(mid.value);
+        j += 1;
+        end = j;
+        continue;
+      }
+      break;
+    }
+
+    if (bodies.length > 1) {
+      out.push({ type: "display", value: formatAlignedContinuationChain(bodies) });
+      i = end;
+    } else {
+      out.push(p);
+      i += 1;
+    }
+  }
+  return out;
+}
+
+/** True when a paragraph is only a display-math block (optional trailing punct). */
+export function isSoleDisplayMathParagraph(trimmed: string): boolean {
+  return /^\$\$[\s\S]+\$\$[.,:;!?]*$/.test(trimmed.trim());
+}
+
+function extractSoleDisplayBody(para: string): string {
+  const t = para.trim();
+  const m = t.match(/^\$\$([\s\S]+)\$\$[.,:;!?]*$/);
+  return (m?.[1] ?? t).trim();
+}
+
+/**
+ * Merge consecutive blank-line-separated `$$…$$` paragraphs when later ones
+ * are `= …` continuations (fixes floating centered `= -2` in full solutions).
+ */
+export function mergeContinuationDisplayParagraphs(paragraphs: string[]): string[] {
+  const out: string[] = [];
+  let i = 0;
+  while (i < paragraphs.length) {
+    const p = paragraphs[i]!;
+    if (!isSoleDisplayMathParagraph(p)) {
+      out.push(p);
+      i += 1;
+      continue;
+    }
+    const bodies = [extractSoleDisplayBody(p)];
+    let j = i + 1;
+    while (
+      j < paragraphs.length &&
+      isSoleDisplayMathParagraph(paragraphs[j]!) &&
+      /^\s*=/.test(extractSoleDisplayBody(paragraphs[j]!))
+    ) {
+      bodies.push(extractSoleDisplayBody(paragraphs[j]!));
+      j += 1;
+    }
+    if (bodies.length === 1) {
+      out.push(p);
+    } else {
+      out.push(`$$\n${formatAlignedContinuationChain(bodies)}\n$$`);
+    }
+    i = j;
+  }
+  return out;
+}
+
 function splitMath(input: string): Part[] {
   const text = normalizeBrokenMathMarkup(
     input
@@ -387,7 +517,7 @@ function splitMath(input: string): Part[] {
   }
   flush();
   if (parts.length === 0) parts.push({ type: "text", value: text });
-  return parts;
+  return coalesceContinuationDisplays(parts);
 }
 
 /** Exported for stem audits / unit checks. */

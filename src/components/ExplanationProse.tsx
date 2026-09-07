@@ -1,4 +1,7 @@
-import { FlashcardMath } from "@/components/FlashcardMath";
+import {
+  FlashcardMath,
+  mergeContinuationDisplayParagraphs,
+} from "@/components/FlashcardMath";
 import { cn } from "@/lib/utils";
 
 /**
@@ -12,10 +15,12 @@ export function ExplanationProse({
   text: string;
   className?: string;
 }) {
-  const paragraphs = text
-    .split(/\n\n+/)
-    .map((p) => p.trim())
-    .filter(Boolean);
+  const paragraphs = mergeContinuationDisplayParagraphs(
+    text
+      .split(/\n\n+/)
+      .map((p) => p.trim())
+      .filter(Boolean),
+  );
 
   type Chunk =
     | { kind: "part"; title: string }
