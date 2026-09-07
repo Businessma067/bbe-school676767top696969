@@ -6220,19 +6220,19 @@ The left-hand sides are proportional while the totals are not, so the two invoic
 
 The overview recovered Fund A at $4800$ and Fund B at $13600$. Dollar interest is principal times the stated simple rate.
 
-$$4800 \\times 0.0525$$
+$$
+4800 \\times 0.0525 = 252
+$$
 
-$$= 252$$
-
-$$13600 \\times 0.0375$$
-
-$$= 510$$
+$$
+13600 \\times 0.0375 = 510
+$$
 
 Triple of Fund A's interest is
 
-$$3 \\times 252$$
-
-$$= 756$$
+$$
+3 \\times 252 = 756
+$$
 
 Since $510 < 756$, Fund B does not earn more than triple Fund A's dollars.
 
@@ -6241,17 +6241,17 @@ So the statement is False.`,
 
 The overview recovered $A = 4800$ and $B = 13600$. Raising Fund A's rate by $1.5$ percentage points makes that rate $6.75\\%$, while Fund B stays at $3.75\\%$.
 
-$$4800 \\times 0.0675$$
+$$
+4800 \\times 0.0675 = 324
+$$
 
-$$= 324$$
+$$
+13600 \\times 0.0375 = 510
+$$
 
-$$13600 \\times 0.0375$$
-
-$$= 510$$
-
-$$324 + 510$$
-
-$$= 834$$
+$$
+324 + 510 = 834
+$$
 
 Since $834 > 800$, the combined return would rise above \\$800.
 
@@ -6260,13 +6260,13 @@ So the statement is True.`,
 
 The overview recovered balances $4800$ and $13600$, and the stem gives combined return \\$762.
 
-$$4800 + 13600$$
+$$
+4800 + 13600 = 18400
+$$
 
-$$= 18400$$
-
-$$\\frac{762}{18400}$$
-
-$$= 0.041413\\ldots$$
+$$
+\\frac{762}{18400} = 0.041413\\ldots
+$$
 
 That blended rate is about $4.14\\%$, which is more than $4\\%$.
 
@@ -6277,21 +6277,21 @@ The shared solve is done; only this claim’s comparison remains.
 
 An even split of the recovered total $18400$ puts \\$9,200 in each fund at the original rates.
 
-$$9200 \\times 0.0525$$
+$$
+9200 \\times 0.0525 = 483
+$$
 
-$$= 483$$
+$$
+9200 \\times 0.0375 = 345
+$$
 
-$$9200 \\times 0.0375$$
+$$
+483 + 345 = 828
+$$
 
-$$= 345$$
-
-$$483 + 345$$
-
-$$= 828$$
-
-$$|828 - 762|$$
-
-$$= 66$$
+$$
+|828 - 762| = 66
+$$
 
 The even-split return is \\$66 from the actual \\$762, not within \\$5.
 
@@ -6300,12 +6300,8 @@ So the statement is False.`,
 
 The overview recovered the two balances $4800$ (smaller) and $13600$. The relative gap versus the smaller balance is
 
-$$\\frac{13600 - 4800}{4800}$$
-
-$$= \frac{8800}{4800}$$
-
 $$
-= 1.8\\overline{3}
+\\frac{13600 - 4800}{4800} = \frac{8800}{4800} = 1.8\\overline{3}
 $$
 
 about $183.3\\%$, which exceeds $180\\%$.
@@ -6379,9 +6375,9 @@ Use the recovered values from the overview for this claim-specific check.
 
 Batch 1 printed $144$ g of salt and Batch 2 printed $184$ g. Pouring them together does not create or destroy salt.
 
-$$144 + 184$$
-
-$$= 328$$
+$$
+144 + 184 = 328
+$$
 
 Since $328 > 300$, the combined salt exceeds $300$ g.
 
@@ -6390,9 +6386,9 @@ So the statement is True.`,
 
 The overview recovered $A = 16$ g/L and $B = 12$ g/L.
 
-$$\\frac{12}{16}$$
-
-$$= 0.75$$
+$$
+\\frac{12}{16} = 0.75
+$$
 
 Since $0.75 > 0.70$, Solution B's concentration is more than $70\\%$ of Solution A's.
 
@@ -6416,12 +6412,8 @@ So the statement is True.`,
 
 The overview recovered $A = 16$ g/L and $B = 12$ g/L. A $3:1$ mix of A:B is $75\\%$ A and $25\\%$ B, so the blend concentration in g/L is
 
-$$0.75 \\times 16 + 0.25 \\times 12$$
-
-$$= 12 + 3$$
-
 $$
-= 15
+0.75 \\times 16 + 0.25 \\times 12 = 12 + 3 = 15
 $$
 
 The volume that holds $130$ g is then
@@ -6437,9 +6429,9 @@ So the statement is False.`,
 
 This comparison uses the mixing ratios, not the recovered concentrations. Batch 1 is mixed $3:2$, and Batch 2 is mixed $5:1$.
 
-$$\\frac{3}{5}$$
-
-$$= 0.60$$
+$$
+\\frac{3}{5} = 0.60
+$$
 
 $$\\frac{5}{6}$$
 
@@ -6519,13 +6511,13 @@ versus 109 g recorded, a 5 g discrepancy.
 
 The overview recovered overtime pay at \\$26 per hour. Employee A's actual overtime pay for $2.5$ hours, and then $10\\%$ of that, is
 
-$$2.5 \\times 26$$
+$$
+2.5 \\times 26 = 65
+$$
 
-$$= 65$$
-
-$$0.10 \\times 65$$
-
-$$= 6.50$$
+$$
+0.10 \\times 65 = 6.50
+$$
 
 Since $6.50 > 6$, the bonus exceeds \\$6.
 
@@ -6534,9 +6526,9 @@ So the statement is True.`,
 
 The overview recovered overtime at \\$26 per hour. Employee B worked $7$ overtime hours on a \\$882 gross.
 
-$$7 \\times 26$$
-
-$$= 182$$
+$$
+7 \\times 26 = 182
+$$
 
 $$\\frac{182}{882}$$
 
@@ -6549,13 +6541,13 @@ So the statement is False.`,
 
 Combined actual gross is the sum of the two printed totals. The counterfactual is both employees at $45$ hours of the recovered base \\$17.50, with no premium.
 
-$$765 + 882$$
+$$
+765 + 882 = 1647
+$$
 
-$$= 1647$$
-
-$$2 \\times 45 \\times 17.50$$
-
-$$= 1575$$
+$$
+2 \\times 45 \\times 17.50 = 1575
+$$
 
 Since $1647 > 1575$, the actual combined gross is larger.
 
@@ -6564,9 +6556,9 @@ So the statement is True.`,
 
 The overview recovered base $x = 17.50$. Raising that base by $15\\%$ and dropping the premium gives a new rate of $17.50 \\times 1.15 = 20.125$ on all $42.5$ hours.
 
-$$42.5 \\times 20.125$$
-
-$$= 855.3125$$
+$$
+42.5 \\times 20.125 = 855.3125
+$$
 
 Compared with A's actual \\$765, the new gross increases rather than decreases.
 
@@ -6577,9 +6569,9 @@ Read the recovered pair, then run the arithmetic the claim asks for.
 
 Employee B had $7$ overtime hours and \\$882 gross; Employee A had $2.5$ overtime hours and \\$765 gross.
 
-$$\\frac{7}{2.5}$$
-
-$$= 2.8$$
+$$
+\\frac{7}{2.5} = 2.8
+$$
 
 $$\\frac{882}{765}$$
 
@@ -6658,17 +6650,17 @@ $$
 
 The overview recovered wood at \\$27 per m and wire at \\$11 per m. Project 3 with $20$ m of wood and $40$ m of wire costs
 
-$$20 \\times 27$$
+$$
+20 \\times 27 = 540
+$$
 
-$$= 540$$
+$$
+40 \\times 11 = 440
+$$
 
-$$40 \\times 11$$
-
-$$= 440$$
-
-$$540 + 440$$
-
-$$= 980$$
+$$
+540 + 440 = 980
+$$
 
 Since $980 > 950$, the total would exceed \\$950.
 
@@ -6677,9 +6669,9 @@ So the statement is True.`,
 
 The overview recovered wood $x = 27$ and wire $y = 11$. The per-meter gap as a share of the wire price is
 
-$$27 - 11$$
-
-$$= 16$$
+$$
+27 - 11 = 16
+$$
 
 $$\\frac{16}{11}$$
 
@@ -6700,9 +6692,9 @@ $$64\\cdot 11 = 704$$
 
 $$756 + 704 = 1460$$
 
-$$750 + 710$$
-
-$$= 1460$$
+$$
+750 + 710 = 1460
+$$
 
 The combined project costs the same as the two projects separately, not less.
 
@@ -6713,13 +6705,13 @@ For this claim, use the recovered values from the overview for this claim-specif
 
 Project 1 has $24$ m of wire. A \\$2 per-meter rise on that wire, as a share of the printed \\$750, is
 
-$$24 \\times 2$$
+$$
+24 \\times 2 = 48
+$$
 
-$$= 48$$
-
-$$\\frac{48}{750}$$
-
-$$= 0.064$$
+$$
+\\frac{48}{750} = 0.064
+$$
 
 $6.4\\%$ is not more than $15\\%$.
 
@@ -6730,9 +6722,9 @@ Next, use the recovered values from the overview for this claim-specific check.
 
 Project 3 installed $10 + 40 = 50$ m for \\$710. Project 1 installed $18 + 24 = 42$ m for \\$750.
 
-$$\\frac{710}{50}$$
-
-$$= 14.20$$
+$$
+\\frac{710}{50} = 14.20
+$$
 
 $$\\frac{750}{42}$$
 
@@ -6819,20 +6811,16 @@ Apply only this claim’s extra arithmetic to the recovered unknowns.
 
 They meet after $2$ hours on the $250$ km stretch. Distances at the recovered speeds $48$ and $77$ km/h are
 
-$$2 \\times 48$$
-
-$$= 96$$
-
-$$2 \\times 77$$
-
-$$= 154$$
-
 $$
-154 - 96 = 58, \\qquad \\frac{250}{2}
+2 \\times 48 = 96
 $$
 
 $$
-= 125
+2 \\times 77 = 154
+$$
+
+$$
+154 - 96 = 58, \\qquad \\frac{250}{2} = 125
 $$
 
 Since $58 < 125$, the difference is less than half the gap.
@@ -6853,13 +6841,13 @@ So the statement is False.`,
 
 The overview recovered speeds $48$ and $77$ km/h. Three hours of simultaneous travel at those speeds covers
 
-$$48 + 77$$
+$$
+48 + 77 = 125
+$$
 
-$$= 125$$
-
-$$3 \\times 125$$
-
-$$= 375$$
+$$
+3 \\times 125 = 375
+$$
 
 Since $375 > 356$, the combined distance exceeds the $356$ km stretch.
 
@@ -6868,9 +6856,9 @@ So the statement is True.`,
 
 The overview recovered $A = 48$ km/h and $B = 77$ km/h. The relative increase of B over A is
 
-$$77 - 48$$
-
-$$= 29$$
+$$
+77 - 48 = 29
+$$
 
 $$\\frac{29}{48}$$
 
@@ -6939,12 +6927,8 @@ $$
 
 The overview recovered Wheat at \\$95/t and Barley at \\$120/t. Season 1 with Wheat raised to $260$ t, Barley still $160$ t, would earn
 
-$$260 \\times 95 + 160 \\times 120$$
-
-$$= 24700 + 19200$$
-
 $$
-= 43900
+260 \\times 95 + 160 \\times 120 = 24700 + 19200 = 43900
 $$
 
 Since $43900 < 44000$, the total would not exceed \\$44,000.
@@ -6971,9 +6955,9 @@ So the statement is True.`,
 
 The overview reconstructed Season 3 Wheat at $180$ t, with $300$ t of Barley. Season 2 is $180 + 260 = 440$ t.
 
-$$180 + 300$$
-
-$$= 480$$
+$$
+180 + 300 = 480
+$$
 
 Since $480 > 440$, Season 3's total tonnage is not less than Season 2's.
 
@@ -6982,9 +6966,9 @@ So the statement is False.`,
 
 The overview reconstructed Season 3 Wheat at $180$ t. An actual $220$ t instead is $40$ extra tonnes of Wheat at \\$95/t.
 
-$$40 \\times 95$$
-
-$$= 3800$$
+$$
+40 \\times 95 = 3800
+$$
 
 That understatement of \\$3,800 is more than \\$3,500.
 
@@ -6999,9 +6983,9 @@ $$\\frac{48300}{440}$$
 
 $$\approx 109.77$$
 
-$$\\frac{42000}{400}$$
-
-$$= 105$$
+$$
+\\frac{42000}{400} = 105
+$$
 
 Season 2's profit per tonne of total output is higher.
 
@@ -7081,9 +7065,9 @@ $$
 
 The overview recovered current ages $47$ and $19$. Fifteen years from now those ages are $62$ and $34$.
 
-$$2 \\times 34$$
-
-$$= 68$$
+$$
+2 \\times 34 = 68
+$$
 
 Since $62 < 68$, the elder will be less than double the younger at that time.
 
@@ -7100,9 +7084,9 @@ Using the recovered solution values $x = 47$ and $y = 19$ as inputs for this cla
 
 The current gap as a share of the elder's age is
 
-$$47 - 19$$
-
-$$= 28$$
+$$
+47 - 19 = 28
+$$
 
 $$\\frac{28}{47}$$
 
@@ -7130,9 +7114,9 @@ Read the figure already produced by the shared solve, then compare it with the c
 
 The overview recovered current ages $47$ and $19$. Ten years ago the ages were $37$ and $9$.
 
-$$37 + 9$$
-
-$$= 46$$
+$$
+37 + 9 = 46
+$$
 
 Since $46 > 40$, the sum was not less than $40$.
 
@@ -7226,12 +7210,8 @@ $$=47$$
 
 The overview recovered wholesale $x = 55$ and $y = 80$. Swapping the markups puts $18\\%$ on A and $32\\%$ on B. Order 3 would then be
 
-$$3(55)(1.18) + 12(80)(1.32)$$
-
-$$= 194.70 + 1267.20$$
-
 $$
-= 1461.90
+3(55)(1.18) + 12(80)(1.32) = 194.70 + 1267.20 = 1461.90
 $$
 
 Compared with the actual \\$1,350.60, the swapped total increases rather than decreases.
@@ -7249,17 +7229,17 @@ Using the recovered solution values $x = 55$ and $y = 80$ as inputs for this cla
 
 Dollar markups are $0.32x$ and $0.18y$.
 
-$$0.32 \\times 55$$
+$$
+0.32 \\times 55 = 17.60
+$$
 
-$$= 17.60$$
+$$
+0.18 \\times 80 = 14.40
+$$
 
-$$0.18 \\times 80$$
-
-$$= 14.40$$
-
-$$\\frac{14.40}{17.60}$$
-
-$$= 0.8181\\ldots$$
+$$
+\\frac{14.40}{17.60} = 0.8181\\ldots
+$$
 
 Since $0.818 > 0.80$, B's dollar markup is more than $80\\%$ of A's.
 
@@ -7278,12 +7258,8 @@ Using the recovered solution values $x = 55$ and $y = 80$ as inputs for this cla
 
 Unit markups are $0.32 \\times 55 = 17.60$ and $0.18 \\times 80 = 14.40$, so Order 1's total markup is
 
-$$8 \\times 17.60 + 5 \\times 14.40$$
-
-$$= 140.80 + 72.00$$
-
 $$
-= 212.80
+8 \\times 17.60 + 5 \\times 14.40 = 140.80 + 72.00 = 212.80
 $$
 
 Since $212.80 > 150$, the markup exceeds \\$150.
@@ -7295,9 +7271,9 @@ So the statement is True.`,
 
 The overview recovered $y = 80$, so retail B is $1.18 \\times 80 = 94.40$. Raising Order 3's B quantity from $12$ to $15$ adds three units.
 
-$$3 \\times 94.40$$
-
-$$= 283.20$$
+$$
+3 \\times 94.40 = 283.20
+$$
 
 Since $283.20 > 280$, the retail total would increase by more than \\$280.
 
@@ -7396,12 +7372,8 @@ $$
 
 The overview recovered $x = 7$ points per win. If a draw were worth half of that, a draw would be $3.5$ points. The Falcons would then have
 
-$$9 \\times 7 + 4 \\times 3.5$$
-
-$$= 63 + 14$$
-
 $$
-= 77
+9 \\times 7 + 4 \\times 3.5 = 63 + 14 = 77
 $$
 
 Since $77 > 75$, their total would increase.
@@ -7424,13 +7396,13 @@ Start from the overview’s recovered unknowns, then test the named figure.
 
 Under $2$ points per win and $1$ per draw, the two records become
 
-$$9 \\times 2 + 4 \\times 1$$
+$$
+9 \\times 2 + 4 \\times 1 = 22
+$$
 
-$$= 22$$
-
-$$7 \\times 2 + 6 \\times 1$$
-
-$$= 20$$
+$$
+7 \\times 2 + 6 \\times 1 = 20
+$$
 
 The Falcons would still have more points.
 
@@ -7439,9 +7411,9 @@ So the statement is True.`,
 
 The Falcons' win contribution is $9 \\times 7 = 63$ and their draw contribution is $4 \\times 3 = 12$.
 
-$$\\frac{63}{12}$$
-
-$$= 5.25$$
+$$
+\\frac{63}{12} = 5.25
+$$
 
 The win-to-draw ratio is $5.25$, which is not greater than $15$.
 
@@ -7452,13 +7424,13 @@ Read the recovered pair, then run the arithmetic the claim asks for.
 
 Converting three of the Falcons' draws into wins leaves $12$ wins and $1$ draw.
 
-$$12 \\times 7 + 1 \\times 3$$
+$$
+12 \\times 7 + 1 \\times 3 = 87
+$$
 
-$$= 87$$
-
-$$87 - 75$$
-
-$$= 12$$
+$$
+87 - 75 = 12
+$$
 
 The increase is $12$ points, not more than $20$.
 
@@ -7550,12 +7522,8 @@ Using the recovered solution values $x = 7.6$ and $y = 11.4$ as inputs for this 
 
 The relative density advantage of B over A is
 
-$$\\frac{11.4 - 7.6}{7.6}$$
-
-$$= \frac{3.8}{7.6}$$
-
 $$
-= 0.50
+\\frac{11.4 - 7.6}{7.6} = \frac{3.8}{7.6} = 0.50
 $$
 
 That is $50\\%$ greater, not more than $50\\%$.
@@ -7586,9 +7554,9 @@ $$6\\cdot 11.4 = 68.4$$
 
 $$76 + 68.4 = 144.4$$
 
-$$|144.4 - 147.0|$$
-
-$$= 2.6$$
+$$
+|144.4 - 147.0| = 2.6
+$$
 
 The gap is $2.6$ kg, which is not within $2$ kg of $147.0$.
 
@@ -7599,9 +7567,9 @@ Read the recovered pair, then run the arithmetic the claim asks for.
 
 At fixed densities, combining two batches is linear. The combined mass is the sum of the printed masses.
 
-$$182.4 + 209.0$$
-
-$$= 391.4$$
+$$
+182.4 + 209.0 = 391.4
+$$
 
 That equals the sum of the individual masses.
 
@@ -7677,12 +7645,8 @@ versus 147.0 kg recorded, a 6.4 kg discrepancy.
 
 The overview recovered rate $x = 0.016$ and retainer $y = 1200$. A client with AUM \\$850,000 pays
 
-$$850000 \\times 0.016 + 1200$$
-
-$$= 13600 + 1200$$
-
 $$
-= 14800
+850000 \\times 0.016 + 1200 = 13600 + 1200 = 14800
 $$
 
 $$\\frac{14800}{850000}$$
@@ -7711,12 +7675,8 @@ Start from the overview’s recovered unknowns, then test the named figure.
 
 Client 1 has AUM \\$750,000 and actual fee $750000(0.016) + 1200 = 13200$. After a $0.2$ percentage-point rate cut and a doubled retainer, the new fee is
 
-$$750000 \\times 0.014 + 2400$$
-
-$$= 10500 + 2400$$
-
 $$
-= 12900
+750000 \\times 0.014 + 2400 = 10500 + 2400 = 12900
 $$
 
 Since $12900 < 13200$, Client 1's fee would decrease.
@@ -7729,16 +7689,12 @@ For this claim, use the recovered values from the overview for this claim-specif
 Client 1's effective rate and Client 2's effective rate are
 
 $$
-\\frac{13200}{750000} = 0.0176, \\qquad \\frac{10800}{600000}
+\\frac{13200}{750000} = 0.0176, \\qquad \\frac{10800}{600000} = 0.018
 $$
 
 $$
-= 0.018
+0.018 - 0.0176 = 0.0004
 $$
-
-$$0.018 - 0.0176$$
-
-$$= 0.0004$$
 
 That is $0.04$ percentage points, which is not more than $0.05$.
 
@@ -7749,17 +7705,13 @@ Next, use the recovered values from the overview for this claim-specific check.
 
 Triple of Client 2's AUM is \\$1,800,000. That client's fee, versus triple of Client 2's \\$10,800, is
 
-$$1800000 \\times 0.016 + 1200$$
-
-$$= 28800 + 1200$$
-
 $$
-= 30000
+1800000 \\times 0.016 + 1200 = 28800 + 1200 = 30000
 $$
 
-$$3 \\times 10800$$
-
-$$= 32400$$
+$$
+3 \\times 10800 = 32400
+$$
 
 Since $30000 < 32400$, the fee is not more than triple.
 
@@ -7869,9 +7821,9 @@ The shared solve is done; only this claim’s comparison remains.
 
 Pooling uses the printed contents. Twice Batch 2 is $2 \\times 12600 = 25200$.
 
-$$8880 + 12600$$
-
-$$= 21480$$
+$$
+8880 + 12600 = 21480
+$$
 
 Since $21480 < 25200$, the pooled total is less than twice Batch 2.
 
@@ -7976,12 +7928,8 @@ Using the recovered solution values $x = 4.50$ and $y = 38$ as inputs for this c
 
 Invoice 1's waste is $200 \\times 0.12 = 24$ studs and $150 \\times 0.08 = 12$ sheets.
 
-$$24 \\times 4.50 + 12 \\times 38$$
-
-$$= 108 + 456$$
-
 $$
-= 564
+24 \\times 4.50 + 12 \\times 38 = 108 + 456 = 564
 $$
 
 Since $564 < 700$, the waste-related cost does not exceed \\$700.
@@ -7993,9 +7941,9 @@ Apply only this claim’s extra arithmetic to the recovered unknowns.
 
 Invoice 2 ordered $175 \\times 1.08 = 189$ drywall sheets. Cutting the allowance from $8\\%$ to $5\\%$ removes $175 \\times 0.03 = 5.25$ sheets at \\$38 each.
 
-$$5.25 \\times 38$$
-
-$$= 199.50$$
+$$
+5.25 \\times 38 = 199.50
+$$
 
 Since $199.50 > 150$, Invoice 2 would decrease by more than \\$150.
 
@@ -8006,12 +7954,8 @@ Start from the overview’s recovered unknowns, then test the named figure.
 
 Job 2's usable-material cost at the recovered prices, as a share of the printed \\$8,946, is
 
-$$350 \\times 4.50 + 175 \\times 38$$
-
-$$= 1575 + 6650$$
-
 $$
-= 8225
+350 \\times 4.50 + 175 \\times 38 = 1575 + 6650 = 8225
 $$
 
 $$\\frac{8225}{8946}$$
@@ -8036,20 +7980,12 @@ So the statement is True.`,
 
 Job 1 usable cost and Job 2 usable cost at the recovered prices $x = 4.50$ and $y = 38$ are
 
-$$200 \\times 4.50 + 150 \\times 38$$
-
-$$= 900 + 5700$$
-
 $$
-= 6600
+200 \\times 4.50 + 150 \\times 38 = 900 + 5700 = 6600
 $$
 
-$$350 \\times 4.50 + 175 \\times 38$$
-
-$$= 1575 + 6650$$
-
 $$
-= 8225
+350 \\times 4.50 + 175 \\times 38 = 1575 + 6650 = 8225
 $$
 
 Waste as a share of usable cost:
@@ -8154,12 +8090,8 @@ Using the recovered solution values $x = 3.50$ and $y = 13.50$ as inputs for thi
 
 Doubling the offset gives $27$, so at reading $20$
 
-$$3.50 \\times 20 + 27$$
-
-$$= 70 + 27$$
-
 $$
-= 97
+3.50 \\times 20 + 27 = 70 + 27 = 97
 $$
 
 Since $97 > 95$, the predicted true value would exceed $95$.
@@ -8201,12 +8133,8 @@ Read the recovered pair, then run the arithmetic the claim asks for.
 
 At reading $8.0$, the recovered calibration gives
 
-$$3.50 \\times 8.0 + 13.50$$
-
-$$= 28 + 13.50$$
-
 $$
-= 41.50
+3.50 \\times 8.0 + 13.50 = 28 + 13.50 = 41.50
 $$
 
 Half of Point 1's true value $56.90$ is $28.45$. Since $41.50 > 28.45$, the prediction is not less than half of Point 1.
@@ -8288,9 +8216,9 @@ Apply only this claim’s extra arithmetic to the recovered unknowns.
 
 Shipment 1 has $312$ kg of Coffee at \\$6.20/kg, against a printed total of \\$2,943.20.
 
-$$312 \\times 6.20$$
-
-$$= 1934.40$$
+$$
+312 \\times 6.20 = 1934.40
+$$
 
 $$\\frac{1934.40}{2943.20}$$
 
@@ -8305,12 +8233,8 @@ For this claim, use the recovered values from the overview for this claim-specif
 
 An $800$ kg shipment mixed $1:1$ is $400$ kg of each at the recovered prices.
 
-$$400 \\times 6.20 + 400 \\times 4.85$$
-
-$$= 2480 + 1940$$
-
 $$
-= 4420
+400 \\times 6.20 + 400 \\times 4.85 = 2480 + 1940 = 4420
 $$
 
 Since $4420 < 4555$, the $1:1$ mix would cost less than the actual \\$4,555.
@@ -8322,13 +8246,13 @@ Next, use the recovered values from the overview for this claim-specific check.
 
 Cocoa across both shipments is $208 + 300 = 508$ kg. Coffee is $312 + 500 = 812$ kg.
 
-$$508 \\times 4.85$$
+$$
+508 \\times 4.85 = 2463.80
+$$
 
-$$= 2463.80$$
-
-$$812 \\times 6.20$$
-
-$$= 5034.40$$
+$$
+812 \\times 6.20 = 5034.40
+$$
 
 Cocoa's dollar total is smaller, not larger.
 
@@ -8450,13 +8374,13 @@ Start from the overview’s recovered unknowns, then test the named figure.
 
 Route 1 currently uses $383.6$ L with $620$ km of van. Replacing that van distance by $900$ km adds $280$ km at the recovered van rate $18.0$ L/100km.
 
-$$2.8 \\times 18.0$$
+$$
+2.8 \\times 18.0 = 50.4
+$$
 
-$$= 50.4$$
-
-$$383.6 + 50.4$$
-
-$$= 434.0$$
+$$
+383.6 + 50.4 = 434.0
+$$
 
 Since $434.0 > 430$, total fuel would exceed $430$ L.
 
@@ -8467,9 +8391,9 @@ For this claim, use the recovered values from the overview for this claim-specif
 
 Route 2 covers $500 + 900 = 1400$ km on $322.0$ L, so the fleet average in L/100km is
 
-$$\\frac{322.0}{14}$$
-
-$$= 23.0$$
+$$
+\\frac{322.0}{14} = 23.0
+$$
 
 Distances to the two individual rates: $|23.0 - 18.0| = 5.0$ versus $|23.0 - 32.0| = 9.0$. The average is closer to the Van rate.
 
@@ -8480,17 +8404,17 @@ Next, use the recovered values from the overview for this claim-specific check.
 
 Route 1's combined distance is $850 + 620 = 1470$ km. Each type covering that whole distance at its own recovered rate would use
 
-$$14.7 \\times 32.0$$
+$$
+14.7 \\times 32.0 = 470.4
+$$
 
-$$= 470.4$$
+$$
+14.7 \\times 18.0 = 264.6
+$$
 
-$$14.7 \\times 18.0$$
-
-$$= 264.6$$
-
-$$470.4 + 264.6$$
-
-$$= 735.0$$
+$$
+470.4 + 264.6 = 735.0
+$$
 
 Actual Route 1 fuel $383.6$ L is less than that sum.
 
@@ -8581,9 +8505,9 @@ Start from the overview's recovered unknowns, apply only this claim's extra chec
 
 The current allocation returns \\$2,646 on \\$45,000.
 
-$$\\frac{2646}{45000}$$
-
-$$= 0.0588$$
+$$
+\\frac{2646}{45000} = 0.0588
+$$
 
 $5.88\\%$ is less than $6\\%$.
 
@@ -8594,9 +8518,9 @@ Start from the overview’s recovered unknowns, then test the named figure.
 
 All \\$45,000 in equities at $6.6\\%$ would return
 
-$$45000 \\times 0.066$$
-
-$$= 2970$$
+$$
+45000 \\times 0.066 = 2970
+$$
 
 The combined total of the two described allocations is $2646 + 2754 = 5400$. Since $2970 < 5400$, the all-equity return does not exceed that combined total.
 
@@ -8607,15 +8531,15 @@ The shared solve is done; only this claim’s comparison remains.
 
 A $\\frac{50}{50}$ split puts \\$22,500 in each portfolio.
 
-$$22500 \\times 0.054 + 22500 \\times 0.066$$
-
-$$= 2700$$
+$$
+22500 \\times 0.054 + 22500 \\times 0.066 = 2700
+$$
 
 The average of the two described returns is
 
-$$\\frac{2646 + 2754}{2}$$
-
-$$= 2700$$
+$$
+\\frac{2646 + 2754}{2} = 2700
+$$
 
 The two figures match.
 
@@ -8737,9 +8661,9 @@ Start from the overview’s recovered unknowns, then test the named figure.
 
 A $10\\%$ increase in the recovered rate $y = 4.68$ adds $0.468$ per \\$1,000. Home has $210$ thousands of coverage.
 
-$$210 \\times 0.468$$
-
-$$= 98.28$$
+$$
+210 \\times 0.468 = 98.28
+$$
 
 Since $98.28 > 75$, the Home premium would increase by more than \\$75.
 
@@ -8765,17 +8689,13 @@ Read the recovered pair, then run the arithmetic the claim asks for.
 
 A single combined policy has one administrative fee and $85 + 210 = 295$ thousands of coverage.
 
-$$214.70 + 295 \\times 4.68$$
-
-$$= 214.70 + 1380.60$$
-
 $$
-= 1595.30
+214.70 + 295 \\times 4.68 = 214.70 + 1380.60 = 1595.30
 $$
 
-$$612.50 + 1197.50$$
-
-$$= 1810.00$$
+$$
+612.50 + 1197.50 = 1810.00
+$$
 
 The combined policy costs less than the sum of the separate premiums.
 
@@ -8843,9 +8763,9 @@ that is \\$25,000 of coverage.
 
 The overview recovered Year 6 populations $A = 898$ and $B = 874$.
 
-$$898 - 874$$
-
-$$= 24$$
+$$
+898 - 874 = 24
+$$
 
 Since $24 > 20$, Species A exceeds Species B by more than $20$ individuals.
 
@@ -8856,13 +8776,13 @@ Apply only this claim’s extra arithmetic to the recovered unknowns.
 
 If Species B also grew at $72$ per year, combined growth from Year 2 to Year 6 would be $4(72 + 72) = 576$.
 
-$$1340 + 576$$
+$$
+1340 + 576 = 1916
+$$
 
-$$= 1916$$
-
-$$1916 - 1772$$
-
-$$= 144$$
+$$
+1916 - 1772 = 144
+$$
 
 The excess over the actual $1772$ is $144$, which is more than $140$.
 
@@ -8873,9 +8793,9 @@ Start from the overview’s recovered unknowns, then test the named figure.
 
 From Year 2 to Year 6, Species A grows by $4 \\times 72 = 288$ and Species B by $4 \\times 36 = 144$.
 
-$$\\frac{288}{144}$$
-
-$$= 2$$
+$$
+\\frac{288}{144} = 2
+$$
 
 The growth ratio is $2:1$, which is not greater than $2.5:1$.
 
@@ -8915,13 +8835,13 @@ $$\approx 3.333$$
 
 so equality is at Year $5.333$. At Year 5, three years after Year 2,
 
-$$610 + 3(72)$$
+$$
+610 + 3(72) = 826
+$$
 
-$$= 826$$
-
-$$730 + 3(36)$$
-
-$$= 838$$
+$$
+730 + 3(36) = 838
+$$
 
 A is still behind at Year 5, and equality comes after Year 5.
 
@@ -9010,12 +8930,8 @@ So the statement is True.`,
 
 Across Days 1 and 2, Plant B operated $20 + 9 = 29$ hours and Plant A operated $14 + 22 = 36$ hours. Swapping those totals at the recovered rates gives
 
-$$29 \\times 145 + 36 \\times 98$$
-
-$$= 4205 + 3528$$
-
 $$
-= 7733
+29 \\times 145 + 36 \\times 98 = 4205 + 3528 = 7733
 $$
 
 The actual combined Day 1 + Day 2 total is $3990 + 4072 = 8062$. Since $7733 < 8062$, the swapped grand total does not exceed the actual combined total.
@@ -9036,9 +8952,9 @@ So the statement is True.`,
 
 The three recorded daily totals are $3990$, $4072$, and $3553$ MWh.
 
-$$3990 + 4072 + 3553$$
-
-$$= 11615$$
+$$
+3990 + 4072 + 3553 = 11615
+$$
 
 Since $11615 > 11600$, combined production exceeds $11600$ MWh.
 
