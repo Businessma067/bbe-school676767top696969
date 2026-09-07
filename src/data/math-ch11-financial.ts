@@ -51,10 +51,6 @@ $$i_m = 0.60\\%$$
 
 The claim asserts
 
-$$
-i_m=0.60\\%
-$$
-
 Those two figures agree.
 
 So the statement is True.`,
@@ -230,10 +226,6 @@ $$i = 2.00\\%$$
 
 The claim asserts
 
-$$
-i=2.00\\%
-$$
-
 Those two figures agree.
 
 So the statement is True.`,
@@ -254,10 +246,6 @@ $$nt = 4 \\times 6$$
 $$nt = 24$$
 
 The claim asserts
-
-$$
-nt=24
-$$
 
 Those two figures agree.
 
@@ -757,10 +745,6 @@ $$i = 1.40\\%$$
 
 The claim asserts
 
-$$
-i=1.40\\%
-$$
-
 Those two figures agree.
 
 So the statement is True.`,
@@ -927,10 +911,6 @@ $$i_m = 0.006$$
 $$i_m = 0.60\\%$$
 
 The claim asserts
-
-$$
-i_m=0.60\\%
-$$
 
 Those two figures agree.
 
@@ -1292,10 +1272,6 @@ $$i_m = 0.50\\%$$
 
 The claim asserts
 
-$$
-i_m=0.50\\%
-$$
-
 Those two figures agree.
 
 So the statement is True.`,
@@ -1316,10 +1292,6 @@ $$nt = 12 \\times 10$$
 $$nt = 120$$
 
 The claim asserts
-
-$$
-nt=120
-$$
 
 Those two figures agree.
 
@@ -6372,8 +6344,6 @@ The overview recovered $\\mathrm{PDV}\\approx 7,619.05$ at $5\\%$. We have $7,27
 So the statement is False.`,
       `**D.** → False
 
-Read the figure already produced by the shared solve, then compare it with the claim.
-
 Substitute the recovered stem inputs:
 
 $$K = 8,000,$$
@@ -6483,8 +6453,6 @@ $$e^{-0.18}$$
 $$\\approx 0.8353$$
 
 The computed value is approximately 0.8353, which matches the claim.
-
-Each display above isolates one arithmetic step so the claim check is transparent.
 
 So the statement is True.`,
       `**B.** → True
@@ -8025,8 +7993,6 @@ Compare the computed value with the claim (\\$43,035.40). The two sides agree.
 So the statement is True.`,
       `**E.** → False
 
-Read the figure already produced by the shared solve, then compare it with the claim.
-
 Substitute the recovered stem inputs:
 
 $$K = 50,000,$$
@@ -8870,8 +8836,6 @@ $$
 
 $$P''(t^{*})-rP'(t^{*}) = -6,000$$
 
-Read the figure already produced by the shared solve, then compare it with the claim.
-
 The overview recovered $t^{*}=\\frac{2}{r}-4$. At $r=0.045$,
 
 $$t^{*} = \\frac{2}{0.045}-4$$
@@ -8985,8 +8949,6 @@ Compare it with the amount printed in the claim. They do not match.
 
 So the statement is False.`,
       `**D.** → False
-
-Read the figure already produced by the shared solve, then compare it with the claim.
 
 Substitute the recovered stem inputs:
 
@@ -9307,40 +9269,38 @@ $$`,
     tactical_explanations: [
       `**A.** → True
 
-An interior optimum satisfies $P'(t^{*})=rP(t^{*})$:
+For this timber-value family an interior optimum satisfies the first-order condition $P'(t^{*})=rP(t^{*})$. Solving that equation for the critical time yields the general formula
 
 $$
 t^{*}=\\frac{2}{r}-k
 $$
 
-Substitute the stem numbers:
-
-$$
-t^{*} = \\frac{2}{0.075}-5 = 26.67-5
-$$
-
-$$\\approx 21.67$$
-
-The computed figure matches the claim.
+That is exactly the claimed optimal-time formula.
 
 So the statement is True.`,
       `**B.** → True
 
-An interior optimum satisfies $P'(t^{*})=rP(t^{*})$:
+Use the optimal-time formula recovered for this family:
 
 $$
 t^{*}=\\frac{2}{r}-k
 $$
 
-Substitute the stem numbers:
+Substitute $r=0.075$ and $k=5$:
 
 $$
-t^{*} = \\frac{2}{0.075}-5 = 26.67-5
+t^{*}=\\frac{2}{0.075}-5
 $$
 
-$$\\approx 21.67$$
+$$
+\\frac{2}{0.075}=26.\\overline{6}
+$$
 
-The computed figure matches the claim.
+$$
+t^{*}=26.\\overline{6}-5\\approx 21.67
+$$
+
+The computed harvest time matches the claim of approximately $21.67$ years.
 
 So the statement is True.`,
       `**C.** → False
@@ -9360,64 +9320,28 @@ Compare the computed value with the claim (\\$195,500.00). The two sides do not 
 So the statement is False.`,
       `**D.** → True
 
-The overview recovered the critical holding time $t^{*}$ from the first-order condition. Compare that time with half of the original optimum:
+The optimal time is $t^{*}=\\frac{2}{r}-k$. Raising $k$ from $5$ to $8$ shortens it:
 
-Substitute the recovered stem inputs:
+$$
+t^{*}_{\\mathrm{old}}=\\frac{2}{0.075}-5\\approx 21.67
+$$
 
-$$A=1,200,$$
+$$
+t^{*}_{\\mathrm{new}}=\\frac{2}{0.075}-8\\approx 18.67
+$$
 
-$$k=5,$$
-
-$$r=0.075$$
-
-$$t^{*} = \\frac{2}{0.075}-5$$
-
-$$t^{*} = 26.67-5$$
-
-$$t^{*}$$
-
-$$\\approx 21.67$$
-
-Read the figure already produced by the shared solve, then compare it with the claim.
-
-The overview recovered $t^{*}=\\frac{2}{r}-k$. At $k=8$,
-
-$$t^{*} = \\frac{2}{0.075}-8$$
-
-$$\\approx 18.67$$
-
-The overview's original time is $t^{*}\\approx 21.67$. We have $18.67<21.67$.
+Since $18.67<21.67$, the new optimal harvest time is shorter.
 
 So the statement is True.`,
       `**E.** → False
 
-The overview recovered the critical holding time $t^{*}$ from the first-order condition. Compare that time with half of the original optimum:
+The optimal time is $t^{*}=\\frac{2}{r}-k$. Doubling the rate to $r=0.15$ gives
 
-Substitute the recovered stem inputs:
+$$
+t^{*}_{\\mathrm{new}}=\\frac{2}{0.15}-5\\approx 8.33
+$$
 
-$$A=1,200,$$
-
-$$k=5,$$
-
-$$r=0.075$$
-
-$$t^{*} = \\frac{2}{0.075}-5$$
-
-$$t^{*} = 26.67-5$$
-
-$$t^{*}$$
-
-$$\\approx 21.67$$
-
-Read the figure already produced by the shared solve, then compare it with the claim.
-
-The overview recovered $t^{*}=\\frac{2}{r}-k$. At $r=0.15$,
-
-$$t^{*} = \\frac{2}{0.15}-5$$
-
-$$\\approx 8.33$$
-
-Half of the original $21.67$ is $10.83$. We have $8.33<10.83$.
+Half of the original optimum $t^{*}_{\\mathrm{old}}\\approx 21.67$ is about $10.835$. Because $8.33<10.835$, the new time is less than half of the original, not more.
 
 So the statement is False.`,
     ],
@@ -9788,8 +9712,6 @@ $$
 
 The computed figure matches the claim.
 
-Each display above isolates one arithmetic step so the claim check is transparent.
-
 So the statement is True.`,
       `**B.** → True
 
@@ -9924,8 +9846,6 @@ $$
 $$
 
 The computed figure matches the claim.
-
-Each display above isolates one arithmetic step so the claim check is transparent.
 
 So the statement is True.`,
       `**B.** → True
@@ -10239,8 +10159,6 @@ $$
 
 The computed figure matches the claim.
 
-Each display above isolates one arithmetic step so the claim check is transparent.
-
 So the statement is True.`,
       `**D.** → False
 
@@ -10365,8 +10283,6 @@ $$
 $$
 
 The computed figure matches the claim.
-
-Each display above isolates one arithmetic step so the claim check is transparent.
 
 So the statement is True.`,
       `**B.** → True
@@ -10942,8 +10858,6 @@ $$
 
 The computed value is approximately \\$39.72, which matches the claim.
 
-Each display above isolates one arithmetic step so the claim check is transparent.
-
 So the statement is True.`,
       `**B.** → True
 
@@ -11410,8 +11324,6 @@ Compare the computed value with the claim (\\$224,000.00). The two sides agree.
 So the statement is True.`,
       `**B.** → True
 
-Read the figure already produced by the shared solve, then compare it with the claim.
-
 Substitute the recovered stem inputs:
 
 $$a = 200,000,$$
@@ -11729,10 +11641,6 @@ $$s_{20} = 10,000 \\times 16.619601$$
 $$s_{20} = 166,196.01$$
 
 The claim asserts
-
-$$
-s_{20}=166,196.01
-$$
 
 Those two figures agree.
 
@@ -12563,10 +12471,6 @@ $$x \\approx 4,081.49$$
 
 The claim asserts
 
-$$
-x\\approx 4,081.49
-$$
-
 Those two figures agree.
 
 So the statement is True.`,
@@ -12723,10 +12627,6 @@ $$F(5) = 6,500 \\times 1.338226$$
 $$F(5) \\approx 8,698.47$$
 
 The claim asserts
-
-$$
-F(5)\\approx 8,698.47
-$$
 
 Those two figures agree.
 
@@ -12908,10 +12808,6 @@ $$F_6 = \\frac{2,000}{0.05}\\left[(1.05)^6-1\\right]$$
 $$F_6 \\approx 13,603.84$$
 
 The claim asserts
-
-$$
-F_6\\approx 13,603.84
-$$
 
 Those two figures agree.
 
@@ -13728,10 +13624,6 @@ $$F_A = 19,126.18$$
 
 The claim asserts
 
-$$
-F_A=19,126.18
-$$
-
 Those two figures agree.
 
 So the statement is True.`,
@@ -13752,10 +13644,6 @@ $$F_B = 23,333.33 \\times 0.593848$$
 $$F_B = 13,856.46$$
 
 The claim asserts a different figure. Against the recovered
-
-$$
-F_B=13,856.46
-$$
 
 those values do not agree.
 
@@ -13890,10 +13778,6 @@ $$F_{\\mathrm{due}} = 20,405.76 \\times 1.05$$
 $$F_{\\mathrm{due}} = 21,426.05$$
 
 The claim asserts
-
-$$
-F_{\\mathrm{due}}=21,426.05
-$$
 
 Those two figures agree.
 
@@ -14047,10 +13931,6 @@ $$P_{\\mathrm{due}} = 101,096.80 \\times 1.06$$
 $$P_{\\mathrm{due}} = 107,162.61$$
 
 The claim asserts
-
-$$
-P_{\\mathrm{due}}=107,162.61
-$$
 
 Those two figures agree.
 
@@ -14258,10 +14138,6 @@ $$PV_0 = 132,015.61$$
 
 The claim asserts
 
-$$
-PV_0=132,015.61
-$$
-
 Those two figures agree.
 
 So the statement is True.`,
@@ -14387,10 +14263,6 @@ $$P = 60.714286$$
 $$P \\approx 60.71$$
 
 The claim asserts
-
-$$
-P\\approx 60.71
-$$
 
 Those two figures agree.
 
@@ -14537,10 +14409,6 @@ $$P = 333,333.33$$
 
 The claim asserts
 
-$$
-P=333,333.33
-$$
-
 Those two figures agree.
 
 So the statement is True.`,
@@ -14663,10 +14531,6 @@ $$P = \\frac{24,000}{0.055}$$
 $$P = 436,363.64$$
 
 The claim asserts
-
-$$
-P=436,363.64
-$$
 
 Those two figures agree.
 
@@ -14833,10 +14697,6 @@ $$P = \\frac{3.09}{0.06}$$
 $$P = 51.50$$
 
 The claim asserts a different figure. Against the recovered
-
-$$
-P=51.50
-$$
 
 those values do not agree.
 
@@ -15155,10 +15015,6 @@ $$S_0 = 129,213.75$$
 
 The claim asserts
 
-$$
-S_0=129,213.75
-$$
-
 Those two figures agree.
 
 So the statement is True.`,
@@ -15318,10 +15174,6 @@ $$S_{\\mathrm{cont}} = 131,629.13$$
 
 The claim asserts
 
-$$
-S_{\\mathrm{cont}}=131,629.13
-$$
-
 Those two figures agree.
 
 So the statement is True.`,
@@ -15461,10 +15313,6 @@ $$P_{\\mathrm{due}} = 18,110.94$$
 
 The claim asserts
 
-$$
-P_{\\mathrm{due}}=18,110.94
-$$
-
 Those two figures agree.
 
 So the statement is True.`,
@@ -15512,10 +15360,6 @@ $$\\approx 30439.23$$
 $$S = 30,439.24$$
 
 The claim asserts a different figure. Against the recovered
-
-$$
-S=30,439.24
-$$
 
 those values do not agree.
 
@@ -15658,10 +15502,6 @@ $$S = 247,308.20$$
 
 The claim asserts
 
-$$
-S=247,308.20
-$$
-
 Those two figures agree.
 
 So the statement is True.`,
@@ -15680,10 +15520,6 @@ $$x = \\frac{80,000}{(1.06)^6}$$
 $$x = 56,396.85$$
 
 The claim asserts a different figure. Against the recovered
-
-$$
-x=56,396.85
-$$
 
 those values do not agree.
 
@@ -15706,10 +15542,6 @@ $$P_{12} = 79,429.40$$
 
 The claim asserts
 
-$$
-P_{12}=79,429.40
-$$
-
 Those two figures agree.
 
 So the statement is True.`,
@@ -15728,10 +15560,6 @@ $$P = \\frac{5,000}{0.07-0.02}$$
 $$P = 100,000$$
 
 The claim asserts
-
-$$
-P=100,000
-$$
 
 Those two figures agree.
 
@@ -15856,10 +15684,6 @@ $$a \\approx 14,593.54$$
 
 The claim asserts
 
-$$
-a \\approx 14,593.54
-$$
-
 Those two figures agree.
 
 So the statement is True.`,
@@ -15897,8 +15721,6 @@ The overview recovered that same first-year interest figure. The claim is \\$7,2
 
 So the statement is True.`,
       `**D.** → True
-
-Read the figure already produced by the shared solve, then compare it with the claim.
 
 Substitute the recovered stem inputs:
 
@@ -16020,8 +15842,6 @@ $$
 
 The computed figure matches the claim.
 
-Each display above isolates one arithmetic step so the claim check is transparent.
-
 So the statement is True.`,
       `**B.** → True
 
@@ -16042,10 +15862,6 @@ $$a = \\frac{180}{0.301329}$$
 $$a \\approx 597.24$$
 
 The claim asserts
-
-$$
-a \\approx 597.24
-$$
 
 Those two figures agree.
 
@@ -16164,10 +15980,6 @@ $$a = \\frac{4,500}{0.379079}$$
 $$a \\approx 11,870.89$$
 
 The claim asserts
-
-$$
-a \\approx 11,870.89
-$$
 
 Those two figures agree.
 
@@ -16479,8 +16291,6 @@ $$
 
 The computed figure matches the claim.
 
-Each display above isolates one arithmetic step so the claim check is transparent.
-
 So the statement is True.`,
       `**B.** → True
 
@@ -16494,8 +16304,6 @@ Compare the computed value with the claim (that same total). The two sides agree
 
 So the statement is True.`,
       `**C.** → True
-
-Read the figure already produced by the shared solve, then compare it with the claim.
 
 Substitute the recovered stem inputs:
 
@@ -16658,8 +16466,6 @@ Compare it with the amount printed in the claim. They do not match.
 
 So the statement is False.`,
       `**D.** → True
-
-Read the figure already produced by the shared solve, then compare it with the claim.
 
 Substitute the recovered stem inputs:
 
@@ -17093,12 +16899,8 @@ $$
 
 The computed figure matches the claim.
 
-Each display above isolates one arithmetic step so the claim check is transparent.
-
 So the statement is True.`,
       `**B.** → True
-
-Read the figure already produced by the shared solve, then compare it with the claim.
 
 Substitute the recovered stem inputs:
 
@@ -17231,8 +17033,6 @@ The computed value is approximately \\$16,176.12, which matches the claim.
 So the statement is True.`,
       `**B.** → True
 
-Read the figure already produced by the shared solve, then compare it with the claim.
-
 Substitute the recovered stem inputs:
 
 $$a \\approx 16,176.12$$
@@ -17262,8 +17062,6 @@ Then $7,980.80 < 8,858.87$.
 
 So the statement is False.`,
       `**D.** → True
-
-Read the figure already produced by the shared solve, then compare it with the claim.
 
 Substitute the recovered stem inputs:
 
@@ -18253,8 +18051,6 @@ $$
 
 The computed value is approximately 15%, which matches the claim.
 
-Each display above isolates one arithmetic step so the claim check is transparent.
-
 So the statement is True.`,
       `**B.** → True
 
@@ -18267,8 +18063,6 @@ $$
 $$
 
 The computed value is approximately 12.5%, which matches the claim.
-
-Each display above isolates one arithmetic step so the claim check is transparent.
 
 So the statement is True.`,
       `**C.** → False
@@ -19225,8 +19019,6 @@ r_B = \\frac{81,200}{70,000} - 1 = 0.16 = 16\\%
 $$
 
 The computed value is approximately 16%, which matches the claim.
-
-Each display above isolates one arithmetic step so the claim check is transparent.
 
 So the statement is True.`,
       `**C.** → True

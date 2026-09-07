@@ -8882,19 +8882,19 @@ The two implications disagree on this assignment.
 So the statement is True.`,
       `**C.** → True
 
-One truth assignment separates an implication from its converse.
+Let $p$ mean "$6\\mid n$" and $q$ mean "$3\\mid n$". The inverse $\\neg p\\rightarrow\\neg q$ is logically equivalent to the converse $q\\rightarrow p$: both fail exactly when $q$ holds and $p$ fails. Take $n=9$:
 
-$$(p,q)=(F,T)$$
+$$3\\mid 9$$
 
-$$
-p\\rightarrow q = F\\rightarrow T = T
-$$
+$$6\\nmid 9$$
 
-$$
-q\\rightarrow p = T\\rightarrow F = F
-$$
+Then
 
-The two implications disagree on this assignment.
+$$q\\rightarrow p = T\\rightarrow F = F$$
+
+$$\\neg p\\rightarrow\\neg q = T\\rightarrow F = F$$
+
+So the inverse is false for the same reason as the converse, with the same counterexample.
 
 So the statement is True.`,
       `**D.** → False
@@ -8914,19 +8914,7 @@ for every integer $n$. No counterexample value exists, so the claim that the con
 So the statement is False.`,
       `**E.** → False
 
-One truth assignment separates an implication from its converse.
-
-$$(p,q)=(F,T)$$
-
-$$
-p\\rightarrow q = F\\rightarrow T = T
-$$
-
-$$
-q\\rightarrow p = T\\rightarrow F = F
-$$
-
-The two implications disagree on this assignment.
+An implication and its converse need not share a truth value. Let $p$ mean "$6\\mid n$" and $q$ mean "$3\\mid n$". The original $p\\rightarrow q$ holds for every integer $n$, because $6\\mid n$ always forces $3\\mid n$. The converse $q\\rightarrow p$ fails at $n=9$. Falsity of the converse therefore does not force the original statement to be false.
 
 So the statement is False.`,
     ],
