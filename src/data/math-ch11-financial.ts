@@ -6501,9 +6501,9 @@ $$
 
 Substitute the stem numbers:
 
-$$(1.05)^{-1}$$
-
-$$= \\frac{1}{1.05}$$
+$$
+(1.05)^{-1} = \\frac{1}{1.05}
+$$
 
 $$\\approx 0.9524$$
 
@@ -6539,9 +6539,9 @@ $$r = 0.05,$$
 
 $$t = 1$$
 
-$$(1.05)^{-1}$$
-
-$$= \\frac{1}{1.05}$$
+$$
+(1.05)^{-1} = \\frac{1}{1.05}
+$$
 
 $$(1.05)^{-1}$$
 
@@ -6570,9 +6570,9 @@ $$r = 0.05,$$
 
 $$t = 1$$
 
-$$(1.05)^{-1}$$
-
-$$= \\frac{1}{1.05}$$
+$$
+(1.05)^{-1} = \\frac{1}{1.05}
+$$
 
 $$(1.05)^{-1}$$
 
@@ -6584,9 +6584,9 @@ $$\\mathrm{PDV} \\approx 7,619.05$$
 
 The overview recovered $\\mathrm{PDV}\\approx 7,619.05$. Face value minus present value is
 
-$$8,000-7,619.05$$
-
-$$= 380.95$$
+$$
+8,000-7,619.05 = 380.95
+$$
 
 The claim is \\$423.81.
 
@@ -6596,11 +6596,7 @@ So the statement is False.`,
 At $r=0$ the discount factor is $1$:
 
 $$
-\\mathrm{PDV} = 8,000\\times 1
-$$
-
-$$
-= 8,000
+\\mathrm{PDV} = 8,000\\times 1 = 8,000
 $$
 
 Compare the computed value with the claim (\\$7,500). The two sides do not agree.
@@ -6745,9 +6741,9 @@ $$\\approx 10023.24$$
 
 $$\\mathrm{PDV} \\approx 10,023.24$$
 
-$$10,075.43-10,023.24$$
-
-$$= 52.19$$
+$$
+10,075.43-10,023.24 = 52.19
+$$
 
 Compare the computed value with the claim (\\$60.00). The two sides do not agree.
 
@@ -6785,11 +6781,7 @@ $$\\approx 10023.24$$
 $$\\mathrm{PDV} \\approx 10,023.24$$
 
 $$
-rt = 0.06\\times 6
-$$
-
-$$
-= 0.36
+rt = 0.06\\times 6 = 0.36
 $$
 
 $$\\mathrm{PDV} = 12,000\\,e^{-0.36}$$
@@ -6942,9 +6934,9 @@ $$\\mathrm{PDV}_{\\mathrm{ann}} \\approx 26,190.41$$
 
 $$rt = 0.07 \\times 8$$
 
-$$26,190.41-25,704.41$$
-
-$$= 486.00$$
+$$
+26,190.41-25,704.41 = 486.00
+$$
 
 Compare the computed value with the claim (\\$650.00). The two sides do not agree.
 
@@ -6954,11 +6946,7 @@ So the statement is False.`,
 At $r=0$ both discount factors equal $1$:
 
 $$
-\\mathrm{PDV} = 45,000\\times 1
-$$
-
-$$
-= 45,000
+\\mathrm{PDV} = 45,000\\times 1 = 45,000
 $$
 
 Compare the computed value with the claim (\\$40,000). The two sides do not agree.
@@ -7131,10 +7119,8 @@ So the statement is False.`,
 At a $10$-year horizon,
 
 $$
-A = 150,000\\,e^{-0.045\\times 10}
+A = 150,000\\,e^{-0.045\\times 10} = 150,000\\,e^{-0.45}
 $$
-
-$$= 150,000\\,e^{-0.45}$$
 
 $$\\approx 95,644.22$$
 
@@ -7276,10 +7262,8 @@ $$\\approx 0.05827$$
 $$t = \\frac{0.3011}{0.05827}$$
 
 $$
-\\frac{25,000}{20,000} = 1.25, \\qquad t
+\\frac{25,000}{20,000} = 1.25, \\qquad t = \\frac{\\ln(1.25)}{\\ln(1.06)}
 $$
-
-$$= \\frac{\\ln(1.25)}{\\ln(1.06)}$$
 
 $$\\ln 1.25$$
 
@@ -7401,11 +7385,7 @@ $$
 Substitute the stem numbers:
 
 $$
-\\frac{\\mathrm{PDV}}{K} = \\frac{27,000}{60,000}
-$$
-
-$$
-= 0.45
+\\frac{\\mathrm{PDV}}{K} = \\frac{27,000}{60,000} = 0.45
 $$
 
 The computed value is approximately 0.45, which matches the claim.
@@ -7422,15 +7402,11 @@ $$
 Substitute the stem numbers:
 
 $$
-r = -\\frac{\\ln(0.45)}{12}
+r = -\\frac{\\ln(0.45)}{12} = \\frac{0.798508}{12}
 $$
 
-$$= \\frac{0.798508}{12}$$
-
-$$\\approx 0.0665$$
-
 $$
-= 6.65\\%
+\\approx 0.0665 = 6.65\\%
 $$
 
 The computed value is approximately 6.65%, which matches the claim.
@@ -7459,10 +7435,8 @@ $$r = \\frac{0.798508}{12}$$
 $$r \\approx 0.0665 = 6.65\\%$$
 
 $$
-\\mathrm{PDV} = 60,000\\,e^{-0.0665\\times 6}
+\\mathrm{PDV} = 60,000\\,e^{-0.0665\\times 6} = 60,000\\,e^{-0.399}
 $$
-
-$$= 60,000\\,e^{-0.399}$$
 
 $$\\approx 40,249.20$$
 
@@ -7492,10 +7466,8 @@ $$r = \\frac{0.798508}{12}$$
 $$r \\approx 0.0665 = 6.65\\%$$
 
 $$
-r = -\\frac{\\ln\\!\\left(\\frac{30,000}{60,000}\\right)}{12}
+r = -\\frac{\\ln\\!\\left(\\frac{30,000}{60,000}\\right)}{12} = -\\frac{\\ln(0.5)}{12}
 $$
-
-$$= -\\frac{\\ln(0.5)}{12}$$
 
 $$\\ln 0.5$$
 
@@ -7503,10 +7475,8 @@ $$\\approx -0.693147$$
 
 $$\\frac{-0.693147}{12}$$
 
-$$\\approx -0.06$$
-
 $$
-= 5.78\\%
+\\approx -0.06 = 5.78\\%
 $$
 
 The overview recovered $6.65\\%$ at \\$27,000. We have $5.78\\%<6.65\\%$.
@@ -7517,15 +7487,11 @@ So the statement is False.`,
 At a $24$-year horizon with the same discount factor $0.45$,
 
 $$
-r = -\\frac{\\ln(0.45)}{24}
+r = -\\frac{\\ln(0.45)}{24} = \\frac{0.798508}{24}
 $$
 
-$$= \\frac{0.798508}{24}$$
-
-$$\\approx 0.0333$$
-
 $$
-= 3.33\\%
+\\approx 0.0333 = 3.33\\%
 $$
 
 Compare the computed value with the claim ($3.33\\%$). The two sides agree.
@@ -7600,10 +7566,8 @@ $$
 Substitute the stem numbers:
 
 $$
-\\mathrm{PDV}_1 = \\frac{40,000}{(1.05)^{2}}
+\\mathrm{PDV}_1 = \\frac{40,000}{(1.05)^{2}} = \\frac{40,000}{1.1025}
 $$
-
-$$= \\frac{40,000}{1.1025}$$
 
 $$\\approx 36,281.18$$
 
@@ -7826,9 +7790,9 @@ So the statement is False.`,
 
 At $r=0.05$,
 
-$$(1.05)^{3}$$
-
-$$= 1.157625$$
+$$
+(1.05)^{3} = 1.157625
+$$
 
 $$\\mathrm{PDV}_B = \\frac{25,500}{1.157625}$$
 
@@ -7906,19 +7870,7 @@ $$
 Substitute the stem numbers:
 
 $$
-10,000 = 400(t+2), \\qquad t+2
-$$
-
-$$
-= \\frac{2}{r}
-$$
-
-$$
-= 25, \\qquad t^{*}
-$$
-
-$$
-= 23
+10,000 = 400(t+2), \\qquad t+2 = \\frac{2}{r} = 25, \\qquad t^{*} = 23
 $$
 
 The computed value is approximately 23, which matches the claim.
@@ -7976,10 +7928,8 @@ $$f(23) = 3,125,000\\,e^{-1.84}$$
 $$f(23) \\approx 496,304.46$$
 
 $$
-f(25) = 5,000(27)^{2}e^{-0.08\\times 25}
+f(25) = 5,000(27)^{2}e^{-0.08\\times 25} = 3,645,000\\,e^{-2}
 $$
-
-$$= 3,645,000\\,e^{-2}$$
 
 $$\\approx 493,297.11$$
 
@@ -8103,11 +8053,7 @@ So the statement is False.`,
 At $r=0$ each discount factor is $1$:
 
 $$
-\\mathrm{PDV} = 18,000+30,000
-$$
-
-$$
-= 48,000
+\\mathrm{PDV} = 18,000+30,000 = 48,000
 $$
 
 Compare the computed value with the claim (\\$48,000). The two sides agree.
@@ -8257,10 +8203,8 @@ $$\\mathrm{PDV} \\approx 35,234.40$$
 $$1+r_a = e^{0.05}$$
 
 $$
-\\mathrm{PDV} = 50,000\\,e^{-0.05\\times 3}
+\\mathrm{PDV} = 50,000\\,e^{-0.05\\times 3} = 50,000\\,e^{-0.15}
 $$
-
-$$= 50,000\\,e^{-0.15}$$
 
 $$\\approx 43,035.40$$
 
@@ -8293,9 +8237,9 @@ $$1+r_a = e^{0.05}$$
 
 The overview recovered $r_a\\approx 5.13\\%$. The gap from the continuous quote is
 
-$$5.13\\%-5.00\\%$$
-
-$$= 0.13$$
+$$
+5.13\\%-5.00\\% = 0.13
+$$
 
 The claim needs a gap above $1.00$ percentage point. We have $0.13<1.00$.
 
@@ -8375,10 +8319,8 @@ $$
 Substitute the stem numbers:
 
 $$
-\\mathrm{PV}_1 = \\frac{42,000}{(1.06)^{3}}
+\\mathrm{PV}_1 = \\frac{42,000}{(1.06)^{3}} = \\frac{42,000}{1.191016}
 $$
-
-$$= \\frac{42,000}{1.191016}$$
 
 $$\\approx 35,264.01$$
 
@@ -8396,11 +8338,7 @@ $$
 Substitute the stem numbers:
 
 $$
-\\mathrm{PV}_2 = 100,000-35,264.01
-$$
-
-$$
-= 64,735.99
+\\mathrm{PV}_2 = 100,000-35,264.01 = 64,735.99
 $$
 
 The computed value is approximately \\$64,735.99, which matches the claim.
@@ -8601,9 +8539,9 @@ $$K = \\frac{35,000}{0.7711}$$
 
 $$K \\approx 45,392.55$$
 
-$$45,392.55-35,000$$
-
-$$= 10,392.55$$
+$$
+45,392.55-35,000 = 10,392.55
+$$
 
 The claim needs an excess above \\$11,000. We have $10,392.55<11,000$.
 
@@ -8633,10 +8571,8 @@ $$K = \\frac{35,000}{0.7711}$$
 $$K \\approx 45,392.55$$
 
 $$
-K = 35,000\\,e^{0.09\\times 4}
+K = 35,000\\,e^{0.09\\times 4} = 35,000\\,e^{0.36}
 $$
-
-$$= 35,000\\,e^{0.36}$$
 
 $$\\approx 50,166.53$$
 
@@ -8676,10 +8612,8 @@ $$K = \\frac{35,000}{0.7711}$$
 $$K \\approx 45,392.55$$
 
 $$
-K = 35,000\\,e^{0.065\\times 2}
+K = 35,000\\,e^{0.065\\times 2} = 35,000\\,e^{0.13}
 $$
-
-$$= 35,000\\,e^{0.13}$$
 
 $$\\approx 39,858.99$$
 
@@ -8764,15 +8698,7 @@ So the statement is True.`,
 The interior condition would need $0.05P(t^{*})=0.08P(t^{*})$, which is impossible for $P>0$. The exponent $-0.03t$ makes $f$ strictly decreasing for $t\\ge 0$, so the maximum is at the boundary:
 
 $$
-t^{*} = 0, \\qquad f(0)
-$$
-
-$$
-= P(0)
-$$
-
-$$
-= 40,000
+t^{*} = 0, \\qquad f(0) = P(0) = 40,000
 $$
 
 The computed value is approximately \\$40,000, which matches the claim.
@@ -8783,10 +8709,8 @@ So the statement is True.`,
 At $t=10$,
 
 $$
-f(10) = 40,000e^{-0.03\\times 10}
+f(10) = 40,000e^{-0.03\\times 10} = 40,000e^{-0.3}
 $$
-
-$$= 40,000e^{-0.3}$$
 
 $$\\approx 29,632.73$$
 
@@ -8809,11 +8733,7 @@ So the statement is False.`,
 The overview recovered the critical holding time $t^{*}$ from the first-order condition. Compare that time with half of the original optimum:At $r=0.04$,
 
 $$
-f(t) = 40,000e^{(0.05-0.04)t}
-$$
-
-$$
-= 40,000e^{0.01t}
+f(t) = 40,000e^{(0.05-0.04)t} = 40,000e^{0.01t}
 $$
 
 This rises with $t$, so the optimum is not $t^{*}=0$.
@@ -8883,15 +8803,7 @@ $$
 Substitute the stem numbers:
 
 $$
-P''(t^{*})-rP'(t^{*}) = 3,120-0.09\\times 46,800
-$$
-
-$$
-= 3,120-4,212
-$$
-
-$$
-= -1,092
+P''(t^{*})-rP'(t^{*}) = 3,120-0.09\\times 46,800 = 3,120-4,212 = -1,092
 $$
 
 That computed value matches the claim.
@@ -8916,7 +8828,9 @@ The computed value is approximately -476.19, which matches the claim.
 So the statement is True.`,
       `**D.** → False
 
-The overview recovered the critical holding time $t^{*}$ from the first-order condition. Compare that time with half of the original optimum:$$\\frac{dt^{*}}{dr}$$
+The overview recovered the critical holding time $t^{*}$ from the first-order condition. Compare that time with half of the original optimum:
+
+$$\\frac{dt^{*}}{dr}$$
 
 Substitute the recovered stem inputs:
 
@@ -8928,9 +8842,9 @@ $$P''(t^{*})=3,120,$$
 
 $$r=0.09$$
 
-$$0.09\\times 520,000$$
-
-$$= 46,800$$
+$$
+0.09\\times 520,000 = 46,800
+$$
 
 $$P''(t^{*})-rP'(t^{*}) = 3,120-0.09\\times 46,800$$
 
@@ -8954,15 +8868,7 @@ $$
 Substitute the stem numbers:
 
 $$
-P''(t^{*})-rP'(t^{*}) = 3,120-0.09\\times 46,800
-$$
-
-$$
-= 3,120-4,212
-$$
-
-$$
-= -1,092
+P''(t^{*})-rP'(t^{*}) = 3,120-0.09\\times 46,800 = 3,120-4,212 = -1,092
 $$
 
 The computed figure matches the claim.
@@ -9045,10 +8951,8 @@ $$
 Substitute the stem numbers:
 
 $$
-t+4 = \\frac{2}{r}\\approx 22.22, \\qquad t^{*}
+t+4 = \\frac{2}{r}\\approx 22.22, \\qquad t^{*} = \\frac{2}{r}-4
 $$
-
-$$= \\frac{2}{r}-4$$
 
 $$\\approx 18.22$$
 
@@ -9160,10 +9064,8 @@ The overview recovered $t^{*}=\\frac{2}{r}-4$. At $r=0.045$,
 
 $$t^{*} = \\frac{2}{0.045}-4$$
 
-$$\\approx 44.44-4$$
-
 $$
-= 40.44
+\\approx 44.44-4 = 40.44
 $$
 
 Double the original $18.22$ would be $36.44$. The computed value is
@@ -9298,9 +9200,9 @@ The overview recovered $\\mathrm{PV}_2\\approx 37,513.95$. The haircut from face
 
 $$\\frac{40,000-37,513.95}{40,000}$$
 
-$$\\approx 0.062$$
-
-$$= 6.2\\%$$
+$$
+\\approx 0.062 = 6.2\\%
+$$
 
 The claim needs a haircut above $10\\%$. We have $6.2\\%<10\\%$.
 
@@ -9310,11 +9212,7 @@ So the statement is False.`,
 At $r=0$ each discount factor is $1$:
 
 $$
-\\mathrm{PDV} = 250,000+40,000
-$$
-
-$$
-= 290,000
+\\mathrm{PDV} = 250,000+40,000 = 290,000
 $$
 
 Compare the computed value with the claim (\\$290,000). The two sides agree.
@@ -9425,11 +9323,7 @@ $$
 Substitute the stem numbers:
 
 $$
-\\frac{\\mathrm{PDV}}{K} = \\frac{2,000,000}{3,200,000}
-$$
-
-$$
-= 0.625
+\\frac{\\mathrm{PDV}}{K} = \\frac{2,000,000}{3,200,000} = 0.625
 $$
 
 The computed value is approximately 0.625, which matches the claim.
@@ -9446,15 +9340,11 @@ $$
 Substitute the stem numbers:
 
 $$
-r = -\\frac{\\ln(0.625)}{4.5}
+r = -\\frac{\\ln(0.625)}{4.5} = \\frac{0.470004}{4.5}
 $$
 
-$$= \\frac{0.470004}{4.5}$$
-
-$$\\approx 0.1044$$
-
 $$
-= 10.44\\%
+\\approx 0.1044 = 10.44\\%
 $$
 
 The computed value is approximately 10.44%, which matches the claim.
@@ -9488,10 +9378,8 @@ $$
 r = -\\frac{\\ln\\!\\left(\\frac{2,000,000}{3,600,000}\\right)}{4.5}
 $$
 
-$$\\approx 0.1306$$
-
 $$
-= 13.06\\%
+\\approx 0.1306 = 13.06\\%
 $$
 
 The overview recovered $10.44\\%$ at \\$3,200,000. We have $13.06\\%>10.44\\%$.
@@ -9522,15 +9410,11 @@ $$r = \\frac{0.470004}{4.5}$$
 $$r \\approx 0.1044 = 10.44\\%$$
 
 $$
-r = -\\frac{\\ln(0.625)}{3}
+r = -\\frac{\\ln(0.625)}{3} = \\frac{0.470004}{3}
 $$
 
-$$= \\frac{0.470004}{3}$$
-
-$$\\approx 0.1567$$
-
 $$
-= 15.67\\%
+\\approx 0.1567 = 15.67\\%
 $$
 
 The overview recovered $10.44\\%$ at $4.5$ years. We have $15.67\\%>10.44\\%$.
@@ -9541,15 +9425,11 @@ So the statement is False.`,
 At a $9$-year horizon with the same discount factor $0.625$,
 
 $$
-r = -\\frac{\\ln(0.625)}{9}
+r = -\\frac{\\ln(0.625)}{9} = \\frac{0.470004}{9}
 $$
 
-$$= \\frac{0.470004}{9}$$
-
-$$\\approx 0.0522$$
-
 $$
-= 5.22\\%
+\\approx 0.0522 = 5.22\\%
 $$
 
 Compare the computed value with the claim ($5.22\\%$). The two sides agree.
@@ -9624,10 +9504,8 @@ $$
 Substitute the stem numbers:
 
 $$
-t^{*} = \\frac{2}{0.075}-5
+t^{*} = \\frac{2}{0.075}-5 = 26.67-5
 $$
-
-$$= 26.67-5$$
 
 $$\\approx 21.67$$
 
@@ -9645,10 +9523,8 @@ $$
 Substitute the stem numbers:
 
 $$
-t^{*} = \\frac{2}{0.075}-5
+t^{*} = \\frac{2}{0.075}-5 = 26.67-5
 $$
-
-$$= 26.67-5$$
 
 $$\\approx 21.67$$
 
