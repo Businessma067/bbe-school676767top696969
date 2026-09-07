@@ -37,13 +37,7 @@ $$
 x=360
 $$
 
-The claim asserts
-
-$$
-x=360
-$$
-
-Those two displays agree.
+That figure matches the claim.
 
 So the statement is True.`,
       `**B.** → False
@@ -189,13 +183,7 @@ $$
 x=3.50
 $$
 
-The claim asserts
-
-$$
-x=3.50
-$$
-
-Those two displays agree.
+That figure matches the claim.
 
 So the statement is True.`,
       `**B.** → False
@@ -225,11 +213,7 @@ The printed total is
 
 $$185$$
 
-The claim asserts
-
-$$185$$
-
-Those two displays agree.
+That figure matches the claim.
 
 So the statement is True.`,
       `**D.** → True
@@ -353,13 +337,7 @@ $$
 a=12
 $$
 
-The claim asserts
-
-$$
-a=12
-$$
-
-Those two displays agree.
+That figure matches the claim.
 
 So the statement is True.`,
       `**B.** → True
@@ -372,13 +350,7 @@ $$
 c=7
 $$
 
-The claim asserts
-
-$$
-c=7
-$$
-
-Those two displays agree.
+That figure matches the claim.
 
 So the statement is True.`,
       `**C.** → False
@@ -513,13 +485,7 @@ $$
 x=7
 $$
 
-The claim asserts
-
-$$
-x=7
-$$
-
-Those two displays agree.
+That figure matches the claim.
 
 So the statement is True.`,
       `**B.** → True
@@ -532,13 +498,7 @@ $$
 y=5
 $$
 
-The claim asserts
-
-$$
-y=5
-$$
-
-Those two displays agree.
+That figure matches the claim.
 
 So the statement is True.`,
       `**C.** → True
@@ -576,11 +536,7 @@ The printed total is
 
 $$74.00$$
 
-The claim asserts
-
-$$74.00$$
-
-Those two displays agree.
+That figure matches the claim.
 
 So the statement is True.`,
       `**E.** → True
@@ -701,8 +657,6 @@ Those two displays do not agree.
 So the statement is False.`,
       `**C.** → False
 
-Read the figure already produced by the shared solve, then compare it with the claim.
-
 The overview recovered $x=6000$ in Account A. Interest on that principal at $4\\%$ is
 
 $$
@@ -717,8 +671,6 @@ $$260.00$$
 
 So the statement is False.`,
       `**D.** → False
-
-Read the figure already produced by the shared solve, then compare it with the claim.
 
 The overview recovered $y=4000$ in Account B. Interest on that principal at $7\\%$ is
 
@@ -813,13 +765,7 @@ $$
 x=304
 $$
 
-The claim asserts
-
-$$
-x=304
-$$
-
-Those two displays agree.
+That figure matches the claim.
 
 So the statement is True.`,
       `**B.** → False
@@ -842,8 +788,6 @@ Those two displays do not agree.
 
 So the statement is False.`,
       `**C.** → True
-
-Read the figure already produced by the shared solve, then compare it with the claim.
 
 The overview recovered $y=349$. Twelve Premium chairs are worth
 
@@ -969,13 +913,7 @@ $$
 f=17
 $$
 
-The claim asserts
-
-$$
-f=17
-$$
-
-Those two displays agree.
+That figure matches the claim.
 
 So the statement is True.`,
       `**B.** → True
@@ -988,13 +926,7 @@ $$
 r=0.30
 $$
 
-The claim asserts
-
-$$
-r=0.30
-$$
-
-Those two displays agree.
+That figure matches the claim.
 
 So the statement is True.`,
       `**C.** → False
@@ -1261,13 +1193,7 @@ $$
 x=350
 $$
 
-The claim asserts
-
-$$
-x=350
-$$
-
-Those two displays agree.
+That figure matches the claim.
 
 So the statement is True.`,
       `**B.** → True
@@ -1280,13 +1206,7 @@ $$
 y=200
 $$
 
-The claim asserts
-
-$$
-y=200
-$$
-
-Those two displays agree.
+That figure matches the claim.
 
 So the statement is True.`,
       `**C.** → True
@@ -1316,11 +1236,7 @@ The printed total is
 
 $$9300$$
 
-The claim asserts
-
-$$9300$$
-
-Those two displays agree.
+That figure matches the claim.
 
 So the statement is True.`,
       `**E.** → True
@@ -1561,8 +1477,6 @@ $$f = 9$$
     tactical_explanations: [
       `**A.** → False
 
-Read the figure already produced by the shared solve, then compare it with the claim.
-
 The overview recovered $y=6$. Ben's 5 burritos alone cost
 
 $$
@@ -1600,8 +1514,6 @@ The shared elimination already fixed the unique pair; this letter only tests the
 
 So the statement is True.`,
       `**C.** → True
-
-Read the figure already produced by the shared solve, then compare it with the claim.
 
 The overview recovered $y=6$. One fewer burrito from Ana's \\$32.00 order leaves
 
@@ -1730,13 +1642,7 @@ $$
 x=12
 $$
 
-The claim asserts
-
-$$
-x=12
-$$
-
-Those two displays agree.
+That figure matches the claim.
 
 So the statement is True.`,
       `**B.** → False
@@ -1759,8 +1665,6 @@ Those two displays do not agree.
 
 So the statement is False.`,
       `**C.** → True
-
-Read the figure already produced by the shared solve, then compare it with the claim.
 
 The overview recovered $x=12$. One hundred extra paperbacks add
 
@@ -1803,8 +1707,6 @@ The claim needs a total less than \\$75. We have equality.
 
 So the statement is False.`,
       `**E.** → False
-
-Read the figure already produced by the shared solve, then compare it with the claim.
 
 The overview recovered $y=17$. Three hundred ten hardcovers alone would be
 
@@ -1907,13 +1809,7 @@ $$
 y=3
 $$
 
-The claim asserts
-
-$$
-y=3
-$$
-
-Those two displays agree.
+That figure matches the claim.
 
 So the statement is True.`,
       `**C.** → True
@@ -2132,13 +2028,7 @@ $$
 y=210
 $$
 
-The claim asserts
-
-$$
-y=210
-$$
-
-Those two displays agree.
+That figure matches the claim.
 
 So the statement is True.`,
     ],
@@ -2225,13 +2115,7 @@ $$
 x=12
 $$
 
-The claim asserts
-
-$$
-x=12
-$$
-
-Those two displays agree.
+That figure matches the claim.
 
 So the statement is True.`,
       `**B.** → False
@@ -2428,13 +2312,7 @@ $$
 x=14
 $$
 
-The claim asserts
-
-$$
-x=14
-$$
-
-Those two displays agree.
+That figure matches the claim.
 
 So the statement is True.`,
       `**C.** → True
@@ -2584,13 +2462,7 @@ $$
 y=2
 $$
 
-The claim asserts
-
-$$
-y=2
-$$
-
-Those two displays agree.
+That figure matches the claim.
 
 So the statement is True.`,
       `**C.** → True
@@ -2782,8 +2654,6 @@ The computed figure does not match the claim.
 So the statement is False.`,
       `**D.** → True
 
-Read the figure already produced by the shared solve, then compare it with the claim.
-
 The overview recovered $C(d)=6+d$. At $30$ km:
 
 $$
@@ -2798,8 +2668,6 @@ $$36.00$$
 
 So the statement is True.`,
       `**E.** → False
-
-Read the figure already produced by the shared solve, then compare it with the claim.
 
 The overview recovered $C(d)=6+d$. A 5 km CityCab ride costs
 
@@ -3433,13 +3301,7 @@ $$
 x = 19
 $$
 
-The claim asserts
-
-$$
-x = 19
-$$
-
-Those two displays agree.
+That figure matches the claim.
 
 So the statement is True.`,
       `**B.** → False
@@ -3573,18 +3435,10 @@ $$
 x = 4.80
 $$
 
-The claim asserts
-
-$$
-x = 4.80
-$$
-
-Those two displays agree.
+That figure matches the claim.
 
 So the statement is True.`,
       `**B.** → False
-
-Read the figure already produced by the shared solve, then compare it with the claim.
 
 The overview recovered $x = 4.80$ per pound of apples and $y = 6$ per carton of milk.
 
@@ -3713,13 +3567,7 @@ $$
 x = 33
 $$
 
-The claim asserts
-
-$$
-x = 33
-$$
-
-Those two displays agree.
+That figure matches the claim.
 
 So the statement is True.`,
       `**B.** → False
@@ -3847,18 +3695,10 @@ $$
 x = 19
 $$
 
-The claim asserts
-
-$$
-x = 19
-$$
-
-Those two displays agree.
+That figure matches the claim.
 
 So the statement is True.`,
       `**B.** → False
-
-Read the figure already produced by the shared solve, then compare it with the claim.
 
 The overview recovered $x = 19$ for pasta and $y = 15$ for an appetizer.
 
@@ -3983,13 +3823,7 @@ $$
 x = 21
 $$
 
-The claim asserts
-
-$$
-x = 21
-$$
-
-Those two displays agree.
+That figure matches the claim.
 
 So the statement is True.`,
       `**B.** → False
@@ -4133,13 +3967,7 @@ $$
 x = 29
 $$
 
-The claim asserts
-
-$$
-x = 29
-$$
-
-Those two displays agree.
+That figure matches the claim.
 
 So the statement is True.`,
       `**B.** → False
@@ -4272,13 +4100,7 @@ $$
 x = 55
 $$
 
-The claim asserts
-
-$$
-x = 55
-$$
-
-Those two displays agree.
+That figure matches the claim.
 
 So the statement is True.`,
       `**B.** → False
@@ -4403,13 +4225,7 @@ $$
 x = 7
 $$
 
-The claim asserts
-
-$$
-x = 7
-$$
-
-Those two displays agree.
+That figure matches the claim.
 
 So the statement is True.`,
       `**B.** → False
@@ -4572,13 +4388,7 @@ $$
 x = 29
 $$
 
-The claim asserts
-
-$$
-x = 29
-$$
-
-Those two displays agree.
+That figure matches the claim.
 
 So the statement is True.`,
       `**B.** → False
@@ -4599,8 +4409,6 @@ So the statement is False.`,
 Once the unit prices are recovered from the shared solve, this stem total is fixed. Read the printed figure and compare it with the claim.
 
 Reprice the reported basket at the recovered unit costs from the overview, then compare that corrected total with the claim.
-
-Read the figure already produced by the shared solve, then compare it with the claim.
 
 The overview priced East at \\$3,085. East reported \\$3,200.
 
@@ -5139,8 +4947,6 @@ $$
     answer_key: [true, true, false, false, true],
     tactical_explanations: [
       `**A.** → True
-
-Read the figure already produced by the shared solve, then compare it with the claim.
 
 The overview recovered $x = 13.85$ per dozen croissants. Four dozen:
 
@@ -5805,8 +5611,6 @@ The margin sits closer to eighteen than to nineteen.
 So the statement is True.`,
       `**C.** → False
 
-Read the figure already produced by the shared solve, then compare it with the claim.
-
 The overview recovered Season 3's T-Shirt count as $T = 245$.
 
 $$245 = 24 \\times 10 + 5$$
@@ -5954,8 +5758,6 @@ the real fee overshoots \\$89 by about 6%.
 
 So the statement is True.`,
       `**B.** → True
-
-Read the figure already produced by the shared solve, then compare it with the claim.
 
 The overview recovered $y = 3.15$ per kilogram. Tripled:
 
@@ -7106,8 +6908,6 @@ Since $2.191 < 2.5$, the elder will not be more than $2.5$ times the younger.
 So the statement is False.`,
       `**D.** → False
 
-Read the figure already produced by the shared solve, then compare it with the claim.
-
 The overview recovered current ages $47$ and $19$. Ten years ago the ages were $37$ and $9$.
 
 $$
@@ -7653,8 +7453,6 @@ about $1.741\\%$, which is less than $1.75\\%$.
 
 So the statement is True.`,
       `**B.** → True
-
-Read the figure already produced by the shared solve, then compare it with the claim.
 
 The overview recovered retainer $y = 1200$ on Client 2's fee \\$10,800.
 
@@ -8626,8 +8424,6 @@ Then $y = 5.4 + 1.2 = 6.6$.
     answer_key: [true, false, true, false, true],
     tactical_explanations: [
       `**A.** → True
-
-Read the figure already produced by the shared solve, then compare it with the claim.
 
 The recovered / computed figure is
 
