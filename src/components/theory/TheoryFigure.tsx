@@ -2230,11 +2230,10 @@ function ExpGrowthDecay() {
     >
       <polyline points={growth} fill="none" stroke={ACCENT} strokeWidth="2.6" />
       <polyline points={decay} fill="none" stroke={MUTED} strokeWidth="2.4" strokeDasharray="6 4" />
-      {/* Labels sit in open regions: above the early growth arc, under the late decay arc. */}
-      <text x="168" y="78" fontSize="12" fill={ACCENT} fontWeight={700}>
+      <text x="120" y="55" fontSize="12" fill={ACCENT} fontWeight={700}>
         y = 2ᵗ (growth)
       </text>
-      <text x="300" y="232" fontSize="12" fill={MUTED} fontWeight={700}>
+      <text x="310" y="268" fontSize="12" fill={MUTED} fontWeight={700}>
         y = 4·(½)ᵗ (decay)
       </text>
       <text x="56" y="268" fontSize="11" fill={MUTED}>
@@ -2259,11 +2258,11 @@ function ExpStartLevel() {
       <polyline points={low} fill="none" stroke={MUTED} strokeWidth="2.4" strokeDasharray="6 4" />
       <circle cx={a.cx} cy={a.cy} r="3.5" fill={MUTED} />
       <circle cx={b.cx} cy={b.cy} r="3.5" fill={ACCENT} />
-      <text x={b.cx + 16} y={b.cy - 14} fontSize="12" fill={ACCENT} fontWeight={700}>
-        P₀ = 2
+      <text x="200" y="48" fontSize="12" fill={ACCENT} fontWeight={700}>
+        solid: P₀ = 2
       </text>
-      <text x={a.cx + 16} y={a.cy + 22} fontSize="12" fill={MUTED} fontWeight={700}>
-        P₀ = 1
+      <text x="200" y="68" fontSize="12" fill={MUTED} fontWeight={700}>
+        dashed: P₀ = 1
       </text>
     </ExpLogAxesFrame>
   );
@@ -2280,11 +2279,11 @@ function ExpForce() {
     >
       <polyline points={fast} fill="none" stroke={ACCENT} strokeWidth="2.6" />
       <polyline points={slow} fill="none" stroke={MUTED} strokeWidth="2.4" strokeDasharray="6 4" />
-      <text x="300" y="70" fontSize="12" fill={ACCENT} fontWeight={700}>
-        larger k
+      <text x="200" y="48" fontSize="12" fill={ACCENT} fontWeight={700}>
+        solid: larger k
       </text>
-      <text x="320" y="210" fontSize="12" fill={MUTED} fontWeight={700}>
-        smaller k
+      <text x="200" y="68" fontSize="12" fill={MUTED} fontWeight={700}>
+        dashed: smaller k
       </text>
     </ExpLogAxesFrame>
   );
@@ -2296,6 +2295,10 @@ function LogBasic() {
   const p1 = logPoint(1, 0);
   const p2 = logPoint(2, 1);
   const pHalf = logPoint(0.5, -1);
+  // Labels live in open zones; short leaders keep them tied to the marked points.
+  const l1 = { x: 220, y: 195 };
+  const l2 = { x: 310, y: 42 };
+  const lHalf = { x: 185, y: 250 };
   return (
     <LogAxesFrame
       title="Graph of y = log₂(x)"
@@ -2303,19 +2306,22 @@ function LogBasic() {
     >
       <line x1="80" y1="20" x2="80" y2="280" stroke={GRID} strokeWidth="1.5" strokeDasharray="4 4" />
       <polyline points={curve} fill="none" stroke={ACCENT} strokeWidth="2.6" />
+      <line x1={p1.cx} y1={p1.cy + 4} x2={l1.x - 4} y2={l1.y - 8} stroke={MUTED} strokeWidth="1" />
+      <line x1={p2.cx + 4} y1={p2.cy - 4} x2={l2.x - 2} y2={l2.y + 4} stroke={MUTED} strokeWidth="1" />
+      <line x1={pHalf.cx + 4} y1={pHalf.cy + 4} x2={lHalf.x - 4} y2={lHalf.y - 10} stroke={MUTED} strokeWidth="1" />
       <circle cx={p1.cx} cy={p1.cy} r="3.5" fill={ACCENT} />
       <circle cx={p2.cx} cy={p2.cy} r="3.5" fill={ACCENT} />
       <circle cx={pHalf.cx} cy={pHalf.cy} r="3.5" fill={MUTED} />
-      <text x={p1.cx + 10} y={p1.cy - 14} fontSize="12" fill={INK} fontWeight={700}>
+      <text x={l1.x} y={l1.y} fontSize="12" fill={INK} fontWeight={700}>
         (1, 0)
       </text>
-      <text x={p2.cx + 10} y={p2.cy - 14} fontSize="12" fill={INK} fontWeight={700}>
+      <text x={l2.x} y={l2.y} fontSize="12" fill={INK} fontWeight={700}>
         (2, 1)
       </text>
-      <text x={pHalf.cx - 10} y={pHalf.cy + 22} fontSize="12" fill={MUTED} fontWeight={700} textAnchor="end">
+      <text x={lHalf.x} y={lHalf.y} fontSize="12" fill={MUTED} fontWeight={700}>
         (½, −1)
       </text>
-      <text x="96" y="44" fontSize="11" fill={MUTED}>
+      <text x="250" y="36" fontSize="11" fill={MUTED}>
         asymptote x = 0
       </text>
     </LogAxesFrame>
@@ -2334,11 +2340,11 @@ function LogBases() {
       <line x1="80" y1="20" x2="80" y2="280" stroke={GRID} strokeWidth="1.5" strokeDasharray="4 4" />
       <polyline points={log2} fill="none" stroke={ACCENT} strokeWidth="2.6" />
       <polyline points={log10} fill="none" stroke={MUTED} strokeWidth="2.4" strokeDasharray="6 4" />
-      <text x="390" y="36" fontSize="12" fill={ACCENT} fontWeight={700}>
-        log₂
+      <text x="250" y="40" fontSize="12" fill={ACCENT} fontWeight={700}>
+        solid: log₂
       </text>
-      <text x="390" y="148" fontSize="12" fill={MUTED} fontWeight={700}>
-        log₁₀
+      <text x="250" y="60" fontSize="12" fill={MUTED} fontWeight={700}>
+        dashed: log₁₀
       </text>
     </LogAxesFrame>
   );
