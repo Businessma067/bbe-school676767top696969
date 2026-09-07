@@ -276,7 +276,7 @@ export function AccountPage() {
                 </p>
               </div>
               <Link
-                to="/admin"
+                to="/admin/users"
                 className="rounded-md border border-primary bg-primary/10 px-4 py-2 text-sm font-semibold text-primary hover:bg-primary/15"
               >
                 Open admin panel →

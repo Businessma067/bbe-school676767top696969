@@ -113,7 +113,7 @@ export async function syncInvoiceAndGrantAccess(invoiceId: string): Promise<{
 
   const { data: payment, error } = await supabaseAdmin
     .from("payments")
-    .select("id, user_id, user_email, product_slug, status")
+    .select("id, user_id, user_email, product_slug, status, promo_code")
     .eq("invoice_id", invoiceId)
     .maybeSingle();
 
@@ -147,6 +147,21 @@ export async function syncInvoiceAndGrantAccess(invoiceId: string): Promise<{
       { onConflict: "user_id,product_slug" },
     );
     if (enrollError) console.error("syncInvoice: enrollment upsert", enrollError);
+
+    const promoCode =
+      typeof (payment as { promo_code?: string | null }).promo_code === "string"
+        ? (payment as { promo_code: string }).promo_code
+        : null;
+    if (promoCode) {
+      const { recordPromoUsage } = await import("@/lib/promo.functions");
+      await recordPromoUsage({
+        code: promoCode,
+        userId: payment.user_id,
+        userEmail: payment.user_email,
+        productSlug: product.slug,
+        paymentId: payment.id,
+      });
+    }
   }
 
   return {

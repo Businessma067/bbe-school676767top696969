@@ -474,6 +474,7 @@ function detailFromRecord(record: UserRecord): AdminUserDetail {
       userId: user.userId,
       email: user.email,
       displayName: user.displayName,
+      phone: user.phone ?? null,
       registeredAt: user.registeredAt,
       lastSeenAt: user.lastSeenAt,
       lastPath: user.lastPath,

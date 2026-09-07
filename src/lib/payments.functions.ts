@@ -1,12 +1,8 @@
 import { createServerFn } from "@tanstack/react-start";
 import { z } from "zod";
 import { requireSupabaseAuth } from "@/integrations/supabase/auth-middleware";
-import {
-  DISCOUNT_CODE,
-  DISCOUNT_PCT,
-  PAID_PRODUCTS,
-  isPaidProductSlug,
-} from "@/lib/checkout-catalog";
+import { PAID_PRODUCTS, isPaidProductSlug } from "@/lib/checkout-catalog";
+import { lookupDiscountPromo } from "@/lib/promo.functions";
 
 export type CheckoutResult =
   | { ok: true; pageUrl: string; invoiceId: string; amountUah: number }
@@ -56,10 +52,17 @@ export const createCheckout = createServerFn({ method: "POST" })
       }
       const product = PAID_PRODUCTS[slug];
 
-      const discount =
-        (data.promoCode ?? "").trim().toLowerCase() === DISCOUNT_CODE.toLowerCase()
-          ? DISCOUNT_PCT
-          : 0;
+      let discount = 0;
+      let appliedPromoCode: string | null = null;
+      const rawPromo = (data.promoCode ?? "").trim();
+      if (rawPromo) {
+        const promo = await lookupDiscountPromo({ code: rawPromo, productSlug: slug });
+        if (!promo.ok) {
+          return { ok: false, error: promo.error };
+        }
+        discount = promo.discountPct;
+        appliedPromoCode = promo.code;
+      }
 
       // Optional test override, e.g. MONOBANK_TEST_AMOUNT_MINOR=10000 (100 UAH).
       const testAmount = Number(process.env["MONOBANK_TEST_AMOUNT_MINOR"] ?? "");
@@ -96,6 +99,7 @@ export const createCheckout = createServerFn({ method: "POST" })
         currency_code: 980,
         status: "created",
         page_url: pageUrl,
+        ...(appliedPromoCode ? { promo_code: appliedPromoCode } : {}),
       });
       if (error) {
         console.error("createCheckout: payment insert", error);

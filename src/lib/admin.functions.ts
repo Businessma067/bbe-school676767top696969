@@ -187,7 +187,10 @@ export const adminGetUserDetail = createServerFn({ method: "POST" })
     const db = context.supabaseAdmin;
     const { data: authUser, error } = await db.auth.admin.getUserById(data.userId);
     if (error || !authUser.user?.email) throw new Error("User not found");
-    return fetchUserBundle(db, data.userId, authUser.user.email, authUser.user.created_at);
+    const meta = authUser.user.user_metadata ?? {};
+    const phone =
+      typeof meta.phone === "string" && meta.phone.trim() ? meta.phone.trim() : null;
+    return fetchUserBundle(db, data.userId, authUser.user.email, authUser.user.created_at, phone);
   });
 
 export const adminGetUserTimeline = createServerFn({ method: "POST" })
@@ -242,17 +245,22 @@ export const adminExportUsersCsv = createServerFn({ method: "POST" })
     if (data.userId) {
       const { data: authUser, error } = await db.auth.admin.getUserById(data.userId);
       if (error || !authUser.user?.email) throw new Error("User not found");
+      const meta = authUser.user.user_metadata ?? {};
+      const phone =
+        typeof meta.phone === "string" && meta.phone.trim() ? meta.phone.trim() : null;
       const detail = await fetchUserBundle(
         db,
         data.userId,
         authUser.user.email,
         authUser.user.created_at,
+        phone,
       );
 
       const lines = [
         "section,field,value",
         `profile,email,${csvEscape(detail.profile.email)}`,
         `profile,name,${csvEscape(detail.profile.displayName)}`,
+        `profile,phone,${csvEscape(detail.profile.phone ?? "")}`,
         `profile,registered,${detail.profile.registeredAt}`,
         `profile,last_seen,${detail.profile.lastSeenAt ?? ""}`,
         `totals,study_time_seconds,${detail.totals.totalStudyTimeSeconds}`,

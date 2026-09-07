@@ -113,6 +113,7 @@ export type AdminUserDetail = {
     userId: string;
     email: string;
     displayName: string;
+    phone: string | null;
     registeredAt: string;
     lastSeenAt: string | null;
     lastPath: string | null;
