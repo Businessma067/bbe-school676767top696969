@@ -1,7 +1,8 @@
 /**
  * Economics Full Course banks (chapters 2–6 book subtopics).
  * Loaded on demand so opening practice does not parse every chapter at once.
- * Source of truth for explanations in the app (same pattern as math).
+ * Source of truth for explanations in Full Course practice and Custom Mock Builder
+ * (same local JSON pattern as math).
  */
 
 import { economicsDifficultyFor } from "@/data/economics-difficulty-by-case-id";
