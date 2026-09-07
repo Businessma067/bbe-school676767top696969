@@ -1,7 +1,6 @@
 import { createFileRoute, Link } from "@tanstack/react-router";
 import { SiteHeader } from "@/components/SiteHeader";
 import { TutorSubjectArt } from "@/components/study-modes/ModeArt";
-import { StudyToolsModeNav } from "@/components/study-modes/StudyToolsModeNav";
 import { FLASHCARD_SUBJECTS, countCards } from "@/data/flashcards";
 import { Bot } from "lucide-react";
 
@@ -29,7 +28,17 @@ export const Route = createFileRoute("/tutor-exam/")({
 function TutorExamIndexPage() {
   return (
     <div className="min-h-screen bg-background font-sans text-foreground antialiased">
-      <SiteHeader compact maxWidthClassName="max-w-7xl" />
+      <SiteHeader
+        maxWidthClassName="max-w-7xl"
+        actions={
+          <Link
+            to="/dashboard"
+            className="rounded-md border border-border bg-card px-3 py-1.5 text-xs font-semibold text-foreground transition-all hover:bg-secondary"
+          >
+            ← Dashboard
+          </Link>
+        }
+      />
 
       <main className="px-6 py-16 lg:px-8 lg:py-24">
         <div className="mx-auto max-w-6xl">
@@ -47,7 +56,6 @@ function TutorExamIndexPage() {
               A study robot quizzes you on theory — fully random questions each
               run, per subject.
             </p>
-            <StudyToolsModeNav className="mx-auto mt-6 w-full max-w-md" />
           </div>
 
           <div className="grid gap-6 md:grid-cols-3">
