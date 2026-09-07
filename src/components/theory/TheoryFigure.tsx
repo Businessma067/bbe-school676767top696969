@@ -638,46 +638,19 @@ function ShareholderStructure() {
   ];
   const colors = [ACCENT, MUTED, "#A67C52"];
   return (
-    <div className="w-full">
-      <div className="mb-2 text-sm font-bold text-primary">Shareholder structure (illustrative listed AG)</div>
-      <div className="flex flex-col items-center gap-4 sm:flex-row sm:items-center sm:gap-6">
-        <div className="mx-auto shrink-0 sm:mx-0" style={{ width: 220, height: 220 }}>
-          <PieChart width={220} height={220}>
-            <Pie
-              data={data}
-              dataKey="value"
-              nameKey="name"
-              cx="50%"
-              cy="50%"
-              innerRadius={48}
-              outerRadius={86}
-              paddingAngle={2}
-              stroke="transparent"
-              isAnimationActive={false}
-              label={false}
-              labelLine={false}
-            >
-              {data.map((_, i) => (
-                <Cell key={i} fill={colors[i]!} />
-              ))}
-            </Pie>
-            <Tooltip />
-          </PieChart>
-        </div>
-        <ul className="w-full min-w-0 flex-1 space-y-2.5">
-          {data.map((d, i) => (
-            <li key={d.name} className="flex items-start gap-2.5 text-[13px] leading-snug">
-              <span
-                className="mt-1 h-2.5 w-2.5 shrink-0 rounded-[3px]"
-                style={{ backgroundColor: colors[i] }}
-                aria-hidden
-              />
-              <span className="min-w-0 flex-1 text-foreground/90">{d.name}</span>
-            </li>
-          ))}
-        </ul>
-      </div>
-    </div>
+    <ChartFrame title="Shareholder structure (illustrative listed AG)" height="h-[240px] sm:h-[280px]">
+      <ResponsiveContainer width="100%" height="100%">
+        <PieChart>
+          <Pie data={data} dataKey="value" nameKey="name" innerRadius={48} outerRadius={88} paddingAngle={2}>
+            {data.map((_, i) => (
+              <Cell key={i} fill={colors[i]!} stroke="transparent" />
+            ))}
+          </Pie>
+          <Tooltip />
+          <Legend />
+        </PieChart>
+      </ResponsiveContainer>
+    </ChartFrame>
   );
 }
 
@@ -2150,12 +2123,12 @@ function ExpLogAxesFrame({
           <line x1="48" y1="250" x2="48" y2="24" stroke={INK} strokeWidth="1.5" />
           <polygon points="500,250 492,246 492,254" fill={INK} />
           <polygon points="48,24 44,32 52,32" fill={INK} />
-          <text x="505" y="254" fontSize="13" fill={MUTED}>
+          <SvgHaloText x={505} y={254} fontSize={13} fill={MUTED}>
             {xLabel}
-          </text>
-          <text x="56" y="36" fontSize="13" fill={MUTED}>
+          </SvgHaloText>
+          <SvgHaloText x={56} y={36} fontSize={13} fill={MUTED}>
             {yLabel}
-          </text>
+          </SvgHaloText>
           {children}
         </svg>
       </ChartFrame>
@@ -2210,12 +2183,12 @@ function LogAxesFrame({
           <line x1="80" y1="20" x2="80" y2="280" stroke={INK} strokeWidth="1.5" />
           <polygon points="500,150 492,146 492,154" fill={INK} />
           <polygon points="80,20 76,28 84,28" fill={INK} />
-          <text x="505" y="154" fontSize="13" fill={MUTED}>
+          <SvgHaloText x={505} y={154} fontSize={13} fill={MUTED}>
             x
-          </text>
-          <text x="88" y="32" fontSize="13" fill={MUTED}>
+          </SvgHaloText>
+          <SvgHaloText x={88} y={32} fontSize={13} fill={MUTED}>
             y
-          </text>
+          </SvgHaloText>
           {children}
         </svg>
       </ChartFrame>
@@ -2250,8 +2223,8 @@ function logCurve(f: (x: number) => number, from: number, to: number, n = 80) {
 function ExpGrowthDecay() {
   const growth = expCurve((t) => Math.pow(2, t), 0, 3.2, 70, 4, 10);
   const decay = expCurve((t) => 4 * Math.pow(0.5, t), 0, 3.2, 70, 4, 10);
-  const pGrow = expPoint(2, 4, 4, 10);
-  const pDec = expPoint(2, 1, 4, 10);
+  const pGrow = expPoint(1.15, Math.pow(2, 1.15), 4, 10);
+  const pDec = expPoint(1.6, 4 * Math.pow(0.5, 1.6), 4, 10);
   return (
     <ExpLogAxesFrame
       title="Growth versus decay"
@@ -2259,15 +2232,15 @@ function ExpGrowthDecay() {
     >
       <polyline points={growth} fill="none" stroke={ACCENT} strokeWidth="2.6" />
       <polyline points={decay} fill="none" stroke={MUTED} strokeWidth="2.4" strokeDasharray="6 4" />
-      <text x={pGrow.cx + 8} y={pGrow.cy} fontSize="12" fill={ACCENT} fontWeight={700}>
+      <SvgHaloText x={pGrow.cx + 14} y={pGrow.cy - 10} fontSize={12} fill={ACCENT} fontWeight={700}>
         y = 2ᵗ (growth)
-      </text>
-      <text x={pDec.cx + 8} y={pDec.cy + 4} fontSize="12" fill={MUTED} fontWeight={700}>
+      </SvgHaloText>
+      <SvgHaloText x={pDec.cx + 12} y={pDec.cy + 18} fontSize={12} fill={MUTED} fontWeight={700}>
         y = 4·(½)ᵗ (decay)
-      </text>
-      <text x="56" y="262" fontSize="11" fill={MUTED}>
+      </SvgHaloText>
+      <SvgHaloText x={56} y={268} fontSize={11} fill={MUTED}>
         0
-      </text>
+      </SvgHaloText>
     </ExpLogAxesFrame>
   );
 }
@@ -2287,12 +2260,12 @@ function ExpStartLevel() {
       <polyline points={low} fill="none" stroke={MUTED} strokeWidth="2.4" strokeDasharray="6 4" />
       <circle cx={a.cx} cy={a.cy} r="3.5" fill={MUTED} />
       <circle cx={b.cx} cy={b.cy} r="3.5" fill={ACCENT} />
-      <text x={b.cx + 10} y={b.cy + 4} fontSize="12" fill={ACCENT} fontWeight={700}>
+      <SvgHaloText x={b.cx + 14} y={b.cy - 8} fontSize={12} fill={ACCENT} fontWeight={700}>
         P₀ = 2
-      </text>
-      <text x={a.cx + 10} y={a.cy + 4} fontSize="12" fill={MUTED} fontWeight={700}>
+      </SvgHaloText>
+      <SvgHaloText x={a.cx + 14} y={a.cy + 18} fontSize={12} fill={MUTED} fontWeight={700}>
         P₀ = 1
-      </text>
+      </SvgHaloText>
     </ExpLogAxesFrame>
   );
 }
@@ -2301,8 +2274,8 @@ function ExpStartLevel() {
 function ExpForce() {
   const slow = expCurve((t) => Math.exp(0.2 * t), 0, 4, 70, 4, 6);
   const fast = expCurve((t) => Math.exp(0.5 * t), 0, 4, 70, 4, 6);
-  const pSlow = expPoint(3.2, Math.exp(0.64), 4, 6);
-  const pFast = expPoint(2.2, Math.exp(1.1), 4, 6);
+  const pSlow = expPoint(3.4, Math.exp(0.68), 4, 6);
+  const pFast = expPoint(2.0, Math.exp(1.0), 4, 6);
   return (
     <ExpLogAxesFrame
       title="Changing the force k"
@@ -2310,12 +2283,12 @@ function ExpForce() {
     >
       <polyline points={fast} fill="none" stroke={ACCENT} strokeWidth="2.6" />
       <polyline points={slow} fill="none" stroke={MUTED} strokeWidth="2.4" strokeDasharray="6 4" />
-      <text x={Math.min(pFast.cx, 360)} y={pFast.cy} fontSize="12" fill={ACCENT} fontWeight={700}>
+      <SvgHaloText x={Math.min(pFast.cx + 12, 400)} y={pFast.cy - 10} fontSize={12} fill={ACCENT} fontWeight={700}>
         larger k
-      </text>
-      <text x={Math.min(pSlow.cx, 380)} y={pSlow.cy + 6} fontSize="12" fill={MUTED} fontWeight={700}>
+      </SvgHaloText>
+      <SvgHaloText x={Math.min(pSlow.cx + 8, 410)} y={pSlow.cy + 18} fontSize={12} fill={MUTED} fontWeight={700}>
         smaller k
-      </text>
+      </SvgHaloText>
     </ExpLogAxesFrame>
   );
 }
@@ -2336,18 +2309,18 @@ function LogBasic() {
       <circle cx={p1.cx} cy={p1.cy} r="3.5" fill={ACCENT} />
       <circle cx={p2.cx} cy={p2.cy} r="3.5" fill={ACCENT} />
       <circle cx={pHalf.cx} cy={pHalf.cy} r="3.5" fill={MUTED} />
-      <text x={p1.cx + 8} y={p1.cy - 8} fontSize="12" fill={INK} fontWeight={700}>
+      <SvgHaloText x={p1.cx + 12} y={p1.cy - 12} fontSize={12} fill={INK} fontWeight={700}>
         (1, 0)
-      </text>
-      <text x={p2.cx + 8} y={p2.cy - 6} fontSize="12" fill={INK} fontWeight={700}>
+      </SvgHaloText>
+      <SvgHaloText x={p2.cx + 12} y={p2.cy - 10} fontSize={12} fill={INK} fontWeight={700}>
         (2, 1)
-      </text>
-      <text x={pHalf.cx + 8} y={pHalf.cy + 14} fontSize="12" fill={MUTED} fontWeight={700}>
+      </SvgHaloText>
+      <SvgHaloText x={pHalf.cx - 8} y={pHalf.cy + 20} fontSize={12} fill={MUTED} fontWeight={700} anchor="end">
         (½, −1)
-      </text>
-      <text x="88" y="48" fontSize="11" fill={MUTED}>
+      </SvgHaloText>
+      <SvgHaloText x={92} y={44} fontSize={11} fill={MUTED}>
         asymptote x = 0
-      </text>
+      </SvgHaloText>
     </LogAxesFrame>
   );
 }
@@ -2356,8 +2329,8 @@ function LogBasic() {
 function LogBases() {
   const log2 = logCurve((x) => Math.log2(x), 0.15, 7.5, 100);
   const log10 = logCurve((x) => Math.log10(x), 0.15, 7.5, 100);
-  const a = logPoint(4, Math.log2(4));
-  const b = logPoint(4, Math.log10(4));
+  const a = logPoint(6.2, Math.log2(6.2));
+  const b = logPoint(6.2, Math.log10(6.2));
   return (
     <LogAxesFrame
       title="Different bases: log₂ versus log₁₀"
@@ -2366,12 +2339,12 @@ function LogBases() {
       <line x1="80" y1="20" x2="80" y2="280" stroke={GRID} strokeWidth="1.5" strokeDasharray="4 4" />
       <polyline points={log2} fill="none" stroke={ACCENT} strokeWidth="2.6" />
       <polyline points={log10} fill="none" stroke={MUTED} strokeWidth="2.4" strokeDasharray="6 4" />
-      <text x={a.cx + 6} y={a.cy - 4} fontSize="12" fill={ACCENT} fontWeight={700}>
+      <SvgHaloText x={a.cx - 4} y={a.cy - 14} fontSize={12} fill={ACCENT} fontWeight={700} anchor="end">
         log₂
-      </text>
-      <text x={b.cx + 6} y={b.cy + 14} fontSize="12" fill={MUTED} fontWeight={700}>
+      </SvgHaloText>
+      <SvgHaloText x={b.cx - 4} y={b.cy + 20} fontSize={12} fill={MUTED} fontWeight={700} anchor="end">
         log₁₀
-      </text>
+      </SvgHaloText>
     </LogAxesFrame>
   );
 }
