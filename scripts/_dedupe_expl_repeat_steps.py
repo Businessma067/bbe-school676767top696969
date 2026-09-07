@@ -119,6 +119,65 @@ def _dedupe_with_prose(displays: list[str], prose: list[str]) -> list[str]:
             continue
         i += 1
 
+    # 3b) after LHS=expr … steps … LHS=val, drop immediate replay of those steps
+    i = 0
+    while i < len(ds):
+        lhs = _lhs_key(ds[i])
+        if not lhs:
+            i += 1
+            continue
+        j = None
+        for k in range(i + 1, min(i + 8, len(ds))):
+            if any(not blank_between(before[t]) for t in range(i + 1, k + 1)):
+                break
+            if _lhs_key(ds[k]) == lhs:
+                j = k
+                break
+        if j is None or j <= i + 1:
+            i += 1
+            continue
+        steps = ds[i + 1 : j]
+        n = len(steps)
+        drop_idxs: set[int] = set()
+        t = 0
+        while t < n and j + 1 + t < len(ds):
+            idx = j + 1 + t
+            if not blank_between(before[idx]):
+                break
+            sn = norm(steps[t])
+            dn = norm(ds[idx])
+            if dn == sn:
+                drop_idxs.add(idx)
+                t += 1
+                continue
+            # step as prefix of longer chain, e.g. 1-5=-4=-4<0
+            if dn.startswith(sn) and dn[len(sn):].startswith("="):
+                suffix_n = dn[len(sn):]
+                val_rhs = norm(ds[j]).split("=", 1)[-1]
+                # drop if novel part only restates known value (± comparison)
+                if val_rhs and val_rhs in suffix_n:
+                    drop_idxs.add(idx)
+                break
+            break
+        if drop_idxs:
+            drop_at(drop_idxs)
+            continue
+        i += 1
+
+    # 3c) ABA claim stutter: X / Y / X with blank prose → drop second X
+    i = 0
+    while i + 2 < len(ds):
+        if (
+            norm(ds[i]) == norm(ds[i + 2])
+            and blank_between(before[i + 1])
+            and blank_between(before[i + 2])
+            and "=" in ds[i]
+            and len(norm(ds[i])) < 120
+        ):
+            drop_at({i + 2})
+            continue
+        i += 1
+
     # 4) merge short = chains (blank prose only)
     out: list[str] = []
     i = 0
