@@ -9867,14 +9867,13 @@ So the statement is True.`,
 
 The partial sum of the first $n$ terms of a geometric series is:
 
-$$
-s_n = a\\frac{1-k^n}{1-k}
-$$
-
 Substitute the stem numbers:
 
 $$
-= 800 \\times 6.513215599 = 5,210.57
+\begin{aligned}
+s_n &= a\\frac{1-k^n}{1-k} \\
+&= 800 \\times 6.513215599 = 5,210.57
+\end{aligned}
 $$
 
 The computed value is approximately \\$5,210.57, which matches the claim.
@@ -13459,14 +13458,13 @@ $$`,
 
 Discounting Option 2 at 7% gives:
 
-$$
-\\mathrm{PDV} = K(1+r)^{-t}
-$$
-
 Substitute the stem numbers:
 
 $$
-= 35,714.29 \\times 0.456069 = 16,288.18
+\begin{aligned}
+\\mathrm{PDV} &= K(1+r)^{-t} \\
+&= 35,714.29 \\times 0.456069 = 16,288.18
+\end{aligned}
 $$
 
 The computed value is approximately \\$16,288.18, which matches the claim.
