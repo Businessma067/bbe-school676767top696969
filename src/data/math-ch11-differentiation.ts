@@ -8221,7 +8221,9 @@ Even if someone writes $p(Q)=30-\\dfrac{Q}{10}$, under a downward-sloping price 
 
 $$
 R^{\\prime}(Q) = p(Q)+Q\\,p^{\\prime}(Q)<p(Q)
-$$, and price and marginal revenue are different objects. The whiteboard does not force $p(Q)=R^{\\prime}(Q)$
+$$
+
+, and price and marginal revenue are different objects. The whiteboard does not force $p(Q)=R^{\\prime}(Q)$
 
 Even evaluating the invented $p$ at some $Q$ would generally fail to match $R^{\\prime}=15$; price and MR are different objects.
 
@@ -8231,10 +8233,6 @@ $$
 
 $$
 p(Q) = 30-\\dfrac{Q}{10}
-$$
-
-$$
-R^{\\prime}(Q) = p(Q)+Q\\,p^{\\prime}(Q)<p(Q)
 $$
 
 $$
@@ -14980,10 +14978,6 @@ A'(x) = \\dfrac{x}{8}-\\dfrac{60-x}{2\\pi}.
 $$
 
 Setting $A'(x)=0$ and solving in $(0,60)$ yields a unique critical cut. The slope of total area is therefore a well-defined single-variable derivative with an interior flat point.
-
-$$
-A'(x) = \\dfrac{x}{8}-\\dfrac{60-x}{2\\pi}
-$$
 
 which matches the claim.
 

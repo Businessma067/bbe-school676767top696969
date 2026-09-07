@@ -178,6 +178,20 @@ def _dedupe_with_prose(displays: list[str], prose: list[str]) -> list[str]:
             continue
         i += 1
 
+    # 3d) drop later exact duplicates of long displays (formula-bank spam)
+    seen_long: dict[str, int] = {}
+    drop_long: set[int] = set()
+    for i, d in enumerate(ds):
+        n = norm(d)
+        if len(n) < 40:
+            continue
+        if n in seen_long:
+            drop_long.add(i)
+        else:
+            seen_long[n] = i
+    if drop_long:
+        drop_at(drop_long)
+
     # 4) merge short = chains (blank prose only)
     out: list[str] = []
     i = 0
