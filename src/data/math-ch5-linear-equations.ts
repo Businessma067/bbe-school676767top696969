@@ -149,9 +149,12 @@ $$x = 360$$
 
 From (1):
 
-$$y=620 - 360$$
-
-$$=260$$
+$$
+\begin{aligned}
+y &=620 - 360 \\
+&=260
+\end{aligned}
+$$
 
 **Answer.** North = 360 crates | South = 260 crates`,
   },
@@ -295,17 +298,23 @@ $$428 - 160y + 25y = 185$$
 
 $$-135y = -243$$
 
-$$y=\\frac{243}{135}$$
-
-$$=1.80$$
+$$
+\begin{aligned}
+y &=\\frac{243}{135} \\
+&=1.80
+\end{aligned}
+$$
 
 Then
 
 $$x = 10.70 - 4(1.80)$$
 
-$$x=10.70 - 7.20$$
-
-$$=3.50$$
+$$
+\begin{aligned}
+x &=10.70 - 7.20 \\
+&=3.50
+\end{aligned}
+$$
 
 **Answer.** Notebook = \\$3.50 | Pen = \\$1.80`,
   },
@@ -447,17 +456,23 @@ $$90a + 8250 - 600a = 2130$$
 
 $$-510a = -6120$$
 
-$$a=\\frac{6120}{510}$$
-
-$$=12$$
+$$
+\begin{aligned}
+a &=\\frac{6120}{510} \\
+&=12
+\end{aligned}
+$$
 
 Then
 
 $$c = 55 - 4(12)$$
 
-$$c=55 - 48$$
-
-$$=7$$
+$$
+\begin{aligned}
+c &=55 - 48 \\
+&=7
+\end{aligned}
+$$
 
 **Answer.** Adult = \\$12.00 | Child = \\$7.00`,
   },
@@ -729,15 +744,21 @@ $$400 - 0.04y + 0.07y = 520$$
 
 $$0.03y = 120$$
 
-$$y=\\frac{120}{0.03}$$
-
-$$=4000$$
+$$
+\begin{aligned}
+y &=\\frac{120}{0.03} \\
+&=4000
+\end{aligned}
+$$
 
 Then
 
-$$x=10000 - 4000$$
-
-$$=6000$$
+$$
+\begin{aligned}
+x &=10000 - 4000 \\
+&=6000
+\end{aligned}
+$$
 
 **Answer.** Account A = \\$6,000 | Account B = \\$4,000`,
   },
@@ -877,15 +898,21 @@ $$18x + 12x + 540 = 9660$$
 
 $$30x = 9120$$
 
-$$x=\\frac{9120}{30}$$
-
-$$=304$$
+$$
+\begin{aligned}
+x &=\\frac{9120}{30} \\
+&=304
+\end{aligned}
+$$
 
 Then
 
-$$y=304 + 45$$
-
-$$=349$$
+$$
+\begin{aligned}
+y &=304 + 45 \\
+&=349
+\end{aligned}
+$$
 
 **Answer.** Standard = \\$304.00 | Premium = \\$349.00`,
   },
@@ -1159,9 +1186,12 @@ $$d = 55$$
 
 Then
 
-$$s=130 - 55$$
-
-$$=75$$
+$$
+\begin{aligned}
+s &=130 - 55 \\
+&=75
+\end{aligned}
+$$
 
 **Answer.** Standard = 75 | Deluxe = 55`,
   },
@@ -1291,17 +1321,23 @@ $$14x + 19800 - 44x = 9300$$
 
 $$-30x = -10500$$
 
-$$x=\\frac{10500}{30}$$
-
-$$=350$$
+$$
+\begin{aligned}
+x &=\\frac{10500}{30} \\
+&=350
+\end{aligned}
+$$
 
 Then
 
 $$y = 900 - 2(350)$$
 
-$$y=900 - 700$$
-
-$$=200$$
+$$
+\begin{aligned}
+y &=900 - 700 \\
+&=200
+\end{aligned}
+$$
 
 **Answer.** Sofa = \\$350.00 | Armchair = \\$200.00`,
   },
@@ -1744,15 +1780,21 @@ $$400x + 220x + 1100 = 8540$$
 
 $$620x = 7440$$
 
-$$x=\\frac{7440}{620}$$
-
-$$=12$$
+$$
+\begin{aligned}
+x &=\\frac{7440}{620} \\
+&=12
+\end{aligned}
+$$
 
 Then
 
-$$y=12 + 5$$
-
-$$=17$$
+$$
+\begin{aligned}
+y &=12 + 5 \\
+&=17
+\end{aligned}
+$$
 
 **Answer.** Paperback = \\$12.00 | Hardcover = \\$17.00`,
   },
@@ -2072,9 +2114,12 @@ $$14x + 10080 - 45x = 5740$$
 
 $$-31x = -4340$$
 
-$$x=\\frac{4340}{31}$$
-
-$$=140$$
+$$
+\begin{aligned}
+x &=\\frac{4340}{31} \\
+&=140
+\end{aligned}
+$$
 
 Then
 
@@ -2919,9 +2964,12 @@ $$9x_A = 81$$
 
 $$x_A = 9$$
 
-$$y_A=30 - 12$$
-
-$$=18$$
+$$
+\begin{aligned}
+y_A &=30 - 12 \\
+&=18
+\end{aligned}
+$$
 
 Vendor B, divide the first quote by $5$:
 
@@ -2937,9 +2985,12 @@ $$27x_B = 297$$
 
 $$x_B = 11$$
 
-$$y_B=\\frac{92 - 44}{3}$$
-
-$$=16$$
+$$
+\begin{aligned}
+y_B &=\\frac{92 - 44}{3} \\
+&=16
+\end{aligned}
+$$
 
 **Answer.** Vendor A: X = \\$9, Y = \\$18 | Vendor B: X = \\$11, Y = \\$16`,
   },
@@ -3101,9 +3152,12 @@ $$2B = 28200$$
 
 $$B = 14100$$
 
-$$A=27200 - 14100$$
-
-$$=13100$$
+$$
+\begin{aligned}
+A &=27200 - 14100 \\
+&=13100
+\end{aligned}
+$$
 
 The price system is then
 
@@ -4476,9 +4530,12 @@ $$
 
 Testing East at the recovered prices:
 
-$$65(29) + 50(24)=1885 + 1200$$
-
-$$=3085$$
+$$
+\begin{aligned}
+65(29) + 50(24) &=1885 + 1200 \\
+&=3085
+\end{aligned}
+$$
 
 East reported \\$3,200, so that row does not reconcile.
 
@@ -5373,11 +5430,13 @@ Let $x$ = price per Nitrogen-type cylinder, $y$ = price per Oxygen-type cylinder
 
 Invoice 2 versus Invoice 1:
 
-$$\\frac{9}{15}=\\frac{12}{20}$$
-
-$$=\\frac{419.40}{699.00}$$
-
-$$=0.60$$
+$$
+\begin{aligned}
+\\frac{9}{15} &=\\frac{12}{20} \\
+&=\\frac{419.40}{699.00} \\
+&=0.60
+\end{aligned}
+$$
 
 **1. Translate: Invoice 1.**
 
@@ -6140,11 +6199,13 @@ $$
 
 **2.** Substitute back:
 
-$$y=2(4800) + 4000$$
-
-$$=9600 + 4000$$
-
-$$=13600$$
+$$
+\begin{aligned}
+y &=2(4800) + 4000 \\
+&=9600 + 4000 \\
+&=13600
+\end{aligned}
+$$
 
 **Answer.** Fund A holds \\$4,800 and Fund B holds \\$13,600.`,
   },
@@ -6275,17 +6336,22 @@ $$
 
 **3.** Then
 
-$$y=92 - 5(16)$$
-
-$$=92 - 80$$
-
-$$=12$$
+$$
+\begin{aligned}
+y &=92 - 5(16) \\
+&=92 - 80 \\
+&=12
+\end{aligned}
+$$
 
 **4.** Audit Batch 3 (8 L at 1:3 is $2$ L of A and $6$ L of B):
 
-$$2(16) + 6(12)=32 + 72$$
-
-$$=104$$
+$$
+\begin{aligned}
+2(16) + 6(12) &=32 + 72 \\
+&=104
+\end{aligned}
+$$
 
 versus 109 g recorded, a 5 g discrepancy.
 
@@ -6975,11 +7041,13 @@ $$
 
 **3.** Substitute $y = 19$ into $x = 2y + 9$:
 
-$$x=2(19) + 9$$
-
-$$=38 + 9$$
-
-$$=47$$
+$$
+\begin{aligned}
+x &=2(19) + 9 \\
+&=38 + 9 \\
+&=47
+\end{aligned}
+$$
 
 **Answer.** Elder employee = 47 years old | Younger employee = 19 years old.`,
   },
@@ -7407,17 +7475,22 @@ $$
 
 **3.** Substitute $y = 11.4$ back:
 
-$$x=41.8 - 3(11.4)$$
-
-$$=41.8 - 34.2$$
-
-$$=7.6$$
+$$
+\begin{aligned}
+x &=41.8 - 3(11.4) \\
+&=41.8 - 34.2 \\
+&=7.6
+\end{aligned}
+$$
 
 **4.** Audit Batch 3:
 
-$$9.5(7.6) + 6(11.4)=72.2 + 68.4$$
-
-$$=140.6$$
+$$
+\begin{aligned}
+9.5(7.6) + 6(11.4) &=72.2 + 68.4 \\
+&=140.6
+\end{aligned}
+$$
 
 versus 147.0 kg recorded, a 6.4 kg discrepancy.
 
@@ -7688,9 +7761,12 @@ $$
 
 **5.** Audit Batch 3 ($0.32$ L $= 320$ mL of A):
 
-$$320(8.4) + 450(15.6)=2688 + 7020$$
-
-$$=9708$$
+$$
+\begin{aligned}
+320(8.4) + 450(15.6) &=2688 + 7020 \\
+&=9708
+\end{aligned}
+$$
 
 versus 9,700 mg recorded, an 8 mg discrepancy.
 
@@ -7971,9 +8047,12 @@ $$
 
 **3.** Verification at reading $45.0$:
 
-$$45.0(3.50) + 13.50=157.50 + 13.50$$
-
-$$=171.00$$
+$$
+\begin{aligned}
+45.0(3.50) + 13.50 &=157.50 + 13.50 \\
+&=171.00
+\end{aligned}
+$$
 
 versus recorded 172.20, a $1.20$ discrepancy.
 
@@ -8113,11 +8192,13 @@ $$
 
 **3.** Substitute $y = 4.85$ back:
 
-$$x=9.11 - 0.6(4.85)$$
-
-$$=9.11 - 2.91$$
-
-$$=6.20$$
+$$
+\begin{aligned}
+x &=9.11 - 0.6(4.85) \\
+&=9.11 - 2.91 \\
+&=6.20
+\end{aligned}
+$$
 
 **Answer.** Coffee = \\$6.20/kg | Cocoa = \\$4.85/kg.`,
   },
@@ -8260,9 +8341,12 @@ $$
 
 **4.** Audit Route 3 ($155.3$ mi $\\approx 250$ km $= 2.5$ hundreds of km):
 
-$$2.5(32) + 4(18)=80 + 72$$
-
-$$=152$$
+$$
+\begin{aligned}
+2.5(32) + 4(18) &=80 + 72 \\
+&=152
+\end{aligned}
+$$
 
 versus 155 L recorded, a 3 L discrepancy.
 
@@ -8665,9 +8749,12 @@ $$
 
 **2.** Then
 
-$$x=2(36)$$
-
-$$=72$$
+$$
+\begin{aligned}
+x &=2(36) \\
+&=72
+\end{aligned}
+$$
 
 **3.** Year 6 populations:
 
@@ -8806,9 +8893,12 @@ $$
 
 **6.** Audit Day 3 ($1020$ min $= 17$ hrs):
 
-$$17(145) + 11(98)=2465 + 1078$$
-
-$$=3543$$
+$$
+\begin{aligned}
+17(145) + 11(98) &=2465 + 1078 \\
+&=3543
+\end{aligned}
+$$
 
 versus 3,553 MWh recorded, a 10 MWh discrepancy.
 

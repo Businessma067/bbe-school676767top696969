@@ -15664,9 +15664,12 @@ So the statement is False.`
     sort_order: 115,
     solution_overview: `Profit $P=30x+20y-x^{2}-y^{2}$ on the resource constraint $x+y=10$. Substitute $y=10-x$:
 
-$$p(x)=30x+20(10-x)-x^{2}-(10-x)^{2}=10x+200-x^{2}-(100-20x+x^{2})$$
-
-$$=30x+100-2x^{2}.$$
+$$
+\begin{aligned}
+p(x) &=30x+20(10-x)-x^{2}-(10-x)^{2}=10x+200-x^{2}-(100-20x+x^{2}) \\
+&=30x+100-2x^{2}.
+\end{aligned}
+$$
 
 Then $p'(x)=30-4x$ vanishes at $x=7.5$, with $y=2.5$ and $p''=-4<0$ (local peak). Maximised constrained profit is
 

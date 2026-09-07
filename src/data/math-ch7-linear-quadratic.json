@@ -523,7 +523,7 @@
       ],
       "difficulty_level": "2/5",
       "sort_order": 16,
-      "solution_overview": "The unusual fraction is still a line, once it is expanded.\n\n$$\nt(x) = \\frac{5-x}{2}\n$$\n\n$$\n= -\\frac{1}{2}x+\\frac{5}{2}\n$$\n\nThe slope, the $y$-intercept and the $x$-intercept are then the usual three numbers. A claimed point lies on the graph only when $t$ of its first coordinate equals its second. A step of $4$ in the input always produces $4$ times the slope as the change of height.",
+      "solution_overview": "The unusual fraction is still a line, once it is expanded.\n\n$$\n\\begin{aligned}\nt(x) &= \\frac{5-x}{2} \\\\\n&= -\\frac{1}{2}x+\\frac{5}{2}\n\\end{aligned}\n$$\n\nThe slope, the $y$-intercept and the $x$-intercept are then the usual three numbers. A claimed point lies on the graph only when $t$ of its first coordinate equals its second. A step of $4$ in the input always produces $4$ times the slope as the change of height.",
       "subsection": "7",
       "placeholder": false,
       "stem_kind": "line"
@@ -1844,7 +1844,7 @@
       ],
       "difficulty_level": "1/5",
       "sort_order": 56,
-      "solution_overview": "The stem fixes a single line.\n\n$$V(x)=200-8x$$\n\nOrdering the two terms brings the rule into the shape $mx+q$.\n\n$$V(x)=-8x+200$$\n\nTwo numbers describe it completely: the slope, which is the change of height per unit step, and the height above the origin.\n\n$$\nm = -8,\\qquad V(0) = 200\n$$\n\nSetting the height to zero locates the single crossing of the $x$-axis, and the sign of the slope fixes the direction once and for all.\n\n$$\n-8x+200 = 0\\Rightarrow x\n$$\n\n$$\n= 25\n$$",
+      "solution_overview": "The stem fixes a single line.\n\n$$V(x)=200-8x$$\n\nOrdering the two terms brings the rule into the shape $mx+q$.\n\n$$V(x)=-8x+200$$\n\nTwo numbers describe it completely: the slope, which is the change of height per unit step, and the height above the origin.\n\n$$\nm = -8,\\qquad V(0) = 200\n$$\n\nSetting the height to zero locates the single crossing of the $x$-axis, and the sign of the slope fixes the direction once and for all.\n\n$$\n\\begin{aligned}\n-8x+200 &= 0\\Rightarrow x \\\\\n&= 25\n\\end{aligned}\n$$",
       "subsection": "7",
       "placeholder": false,
       "stem_kind": "applied"
@@ -1877,7 +1877,7 @@
       ],
       "difficulty_level": "1/5",
       "sort_order": 57,
-      "solution_overview": "The stem fixes a single line.\n\n$$u(x)=4x+10$$\n\nTwo numbers describe it completely: the slope, which is the change of height per unit step, and the height above the origin.\n\n$$\nm = 4,\\qquad u(0) = 10\n$$\n\nSetting the height to zero locates the single crossing of the $x$-axis, and the sign of the slope fixes the direction once and for all.\n\n$$\n4x+10 = 0\\Rightarrow x\n$$\n\n$$\n= -\\frac{5}{2}\n$$",
+      "solution_overview": "The stem fixes a single line.\n\n$$u(x)=4x+10$$\n\nTwo numbers describe it completely: the slope, which is the change of height per unit step, and the height above the origin.\n\n$$\nm = 4,\\qquad u(0) = 10\n$$\n\nSetting the height to zero locates the single crossing of the $x$-axis, and the sign of the slope fixes the direction once and for all.\n\n$$\n\\begin{aligned}\n4x+10 &= 0\\Rightarrow x \\\\\n&= -\\frac{5}{2}\n\\end{aligned}\n$$",
       "subsection": "7",
       "placeholder": false,
       "stem_kind": "line"
@@ -1943,7 +1943,7 @@
       ],
       "difficulty_level": "1/5",
       "sort_order": 59,
-      "solution_overview": "The stem fixes a single line.\n\n$$v(x)=\\frac{1}{3}x-2$$\n\nTwo numbers describe it completely: the slope, which is the change of height per unit step, and the height above the origin.\n\n$$\nm = \\frac{1}{3},\\qquad v(0) = -2\n$$\n\nSetting the height to zero locates the single crossing of the $x$-axis, and the sign of the slope fixes the direction once and for all.\n\n$$\n\\frac{1}{3}x-2 = 0\\Rightarrow x\n$$\n\n$$\n= 6\n$$",
+      "solution_overview": "The stem fixes a single line.\n\n$$v(x)=\\frac{1}{3}x-2$$\n\nTwo numbers describe it completely: the slope, which is the change of height per unit step, and the height above the origin.\n\n$$\nm = \\frac{1}{3},\\qquad v(0) = -2\n$$\n\nSetting the height to zero locates the single crossing of the $x$-axis, and the sign of the slope fixes the direction once and for all.\n\n$$\n\\begin{aligned}\n\\frac{1}{3}x-2 &= 0\\Rightarrow x \\\\\n&= 6\n\\end{aligned}\n$$",
       "subsection": "7",
       "placeholder": false,
       "stem_kind": "line"
@@ -2242,7 +2242,7 @@
       ],
       "difficulty_level": "2/5",
       "sort_order": 68,
-      "solution_overview": "A slope and one point are enough for a line: start at the given point and walk along the slope.\n\n$$u(x)=-\\frac{1}{2}\\left(x-4\\right)+1$$\n\nExpanding the bracket puts the rule in the familiar shape.\n\n$$u(x)=-\\frac{1}{2}x+3$$\n\nTwo numbers describe it completely: the slope, which is the change of height per unit step, and the height above the origin.\n\n$$\nm = -\\frac{1}{2},\\qquad u(0) = 3\n$$\n\nSetting the height to zero locates the single crossing of the $x$-axis, and the sign of the slope fixes the direction once and for all.\n\n$$\n-\\frac{1}{2}x+3 = 0\\Rightarrow x\n$$\n\n$$\n= 6\n$$",
+      "solution_overview": "A slope and one point are enough for a line: start at the given point and walk along the slope.\n\n$$u(x)=-\\frac{1}{2}\\left(x-4\\right)+1$$\n\nExpanding the bracket puts the rule in the familiar shape.\n\n$$u(x)=-\\frac{1}{2}x+3$$\n\nTwo numbers describe it completely: the slope, which is the change of height per unit step, and the height above the origin.\n\n$$\nm = -\\frac{1}{2},\\qquad u(0) = 3\n$$\n\nSetting the height to zero locates the single crossing of the $x$-axis, and the sign of the slope fixes the direction once and for all.\n\n$$\n\\begin{aligned}\n-\\frac{1}{2}x+3 &= 0\\Rightarrow x \\\\\n&= 6\n\\end{aligned}\n$$",
       "subsection": "7",
       "placeholder": false,
       "stem_kind": "rebuild"
@@ -2474,7 +2474,7 @@
       ],
       "difficulty_level": "3/5",
       "sort_order": 75,
-      "solution_overview": "A vertex already fixes the shape up to one stretch factor, so write the parabola in completed-square form and let the extra point decide the factor.\n\n$$q(x)=a\\left(x-3\\right)^{2}-8$$\n\nSubstituting the point $(1,0)$ leaves one equation for $a$.\n\n$$\n0 = a\\left(1-3\\right)^{2}-8\\Rightarrow a\n$$\n\n$$\n= 2\n$$\n\nExpanding the square puts the rule in standard form.\n\n$$q(x)=2x^{2}-12x+10$$\n\nCompleting the square locates the turning point, and Vieta's relations give the sum $S$ and the product $P$ of the roots without solving anything.\n\n$$\n\\text{vertex} = \\left(3,-8\\right),\\qquad S = 6,\\qquad P = 5\n$$\n\nThe discriminant comes out positive, so the graph cuts the $x$-axis twice, once on either side of the axis of symmetry.\n\n$$\n\\Delta = 64,\\qquad x_{1} = 1,\\qquad x_{2} = 5\n$$\n\nThe arms open upwards, so the turning point is the lowest point of the graph and the smallest value is $-8$.",
+      "solution_overview": "A vertex already fixes the shape up to one stretch factor, so write the parabola in completed-square form and let the extra point decide the factor.\n\n$$q(x)=a\\left(x-3\\right)^{2}-8$$\n\nSubstituting the point $(1,0)$ leaves one equation for $a$.\n\n$$\n\\begin{aligned}\n0 &= a\\left(1-3\\right)^{2}-8\\Rightarrow a \\\\\n&= 2\n\\end{aligned}\n$$\n\nExpanding the square puts the rule in standard form.\n\n$$q(x)=2x^{2}-12x+10$$\n\nCompleting the square locates the turning point, and Vieta's relations give the sum $S$ and the product $P$ of the roots without solving anything.\n\n$$\n\\text{vertex} = \\left(3,-8\\right),\\qquad S = 6,\\qquad P = 5\n$$\n\nThe discriminant comes out positive, so the graph cuts the $x$-axis twice, once on either side of the axis of symmetry.\n\n$$\n\\Delta = 64,\\qquad x_{1} = 1,\\qquad x_{2} = 5\n$$\n\nThe arms open upwards, so the turning point is the lowest point of the graph and the smallest value is $-8$.",
       "subsection": "7",
       "placeholder": false,
       "stem_kind": "rebuild"
@@ -2772,7 +2772,7 @@
       ],
       "difficulty_level": "4/5",
       "sort_order": 84,
-      "solution_overview": "A fixed parabola $g(x)=x^{2}-2x-5$ is compared with the family of slope-one lines $f_c(x)=x+c$, where $c$ runs through $\\mathbb{R}$.\n\nRecover the shared line and parabola once here; each letter only checks the extra arithmetic named in its claim.\n\n$g-f_c=x^{2}-3x-(5+c)$ with discriminant $29+4c$: two meetings, one, or none.\n\n$$\nx^{2}-2x-5-(x+c) = x^{2}-3x-(5+c)\n$$\n\n$$\n= 0\n$$\n\n$$\n\\Delta(c) = 9+4(5+c)\n$$\n\n$$\n= 29+4c\n$$\n\n$$\n29+4c = 0\\implies c = -\\frac{29}{4}\n$$",
+      "solution_overview": "A fixed parabola $g(x)=x^{2}-2x-5$ is compared with the family of slope-one lines $f_c(x)=x+c$, where $c$ runs through $\\mathbb{R}$.\n\nRecover the shared line and parabola once here; each letter only checks the extra arithmetic named in its claim.\n\n$g-f_c=x^{2}-3x-(5+c)$ with discriminant $29+4c$: two meetings, one, or none.\n\n$$\n\\begin{aligned}\nx^{2}-2x-5-(x+c) &= x^{2}-3x-(5+c) \\\\\n&= 0\n\\end{aligned}\n$$\n\n$$\n\\begin{aligned}\n\\Delta(c) &= 9+4(5+c) \\\\\n&= 29+4c\n\\end{aligned}\n$$\n\n$$\n29+4c = 0\\implies c = -\\frac{29}{4}\n$$",
       "subsection": "7",
       "placeholder": false,
       "stem_kind": "parametric"
@@ -2805,7 +2805,7 @@
       ],
       "difficulty_level": "4/5",
       "sort_order": 85,
-      "solution_overview": "A one-parameter family of parabolas $g_a(x)=ax^{2}+2x-3$ with $a\\neq 0$ is compared with the fixed line $f(x)=x+1$.\n\nRecover the shared line and parabola once here; each letter only checks the extra arithmetic named in its claim.\n\n$g_a-f=ax^{2}+x-4$ with discriminant $1+16a$; all curves pass through $(0,-3)$.\n\n$$\nax^{2}+2x-3-(x+1) = ax^{2}+x-4\n$$\n\n$$\n= 0\n$$\n\n$$\\Delta(a)=1+16a$$\n\n$$\n1+16a = 0\\implies a = -\\frac{1}{16}\n$$",
+      "solution_overview": "A one-parameter family of parabolas $g_a(x)=ax^{2}+2x-3$ with $a\\neq 0$ is compared with the fixed line $f(x)=x+1$.\n\nRecover the shared line and parabola once here; each letter only checks the extra arithmetic named in its claim.\n\n$g_a-f=ax^{2}+x-4$ with discriminant $1+16a$; all curves pass through $(0,-3)$.\n\n$$\n\\begin{aligned}\nax^{2}+2x-3-(x+1) &= ax^{2}+x-4 \\\\\n&= 0\n\\end{aligned}\n$$\n\n$$\\Delta(a)=1+16a$$\n\n$$\n1+16a = 0\\implies a = -\\frac{1}{16}\n$$",
       "subsection": "7",
       "placeholder": false,
       "stem_kind": "parametric"
@@ -3102,7 +3102,7 @@
       ],
       "difficulty_level": "5/5",
       "sort_order": 94,
-      "solution_overview": "A fixed parabola $g(x)=x^{2}-4x+6$ is compared with the family of lines $f_t(x)=t(x-1)+2$ obtained as the real parameter $t$ varies.\n\nRecover the shared line and parabola once here; each letter only checks the extra arithmetic named in its claim.\n\n$g-f_t=x^{2}-(4+t)x+(4+t)$ with discriminant $t(4+t)$: two tangent slopes, and no meeting in between.\n\n$$\nf_{t}(1) = t\\cdot 0+2\n$$\n\n$$\n= 2\n$$\n\n$$\nt = 0\\implies f_{0}(x) = 2,\\qquad t = 3\\implies f_{3}(x) = 3x-1\n$$\n\n$$\nx^{2}-4x+6-t(x-1)-2 = x^{2}-(4+t)x+(4+t)\n$$\n\n$$\n= 0\n$$",
+      "solution_overview": "A fixed parabola $g(x)=x^{2}-4x+6$ is compared with the family of lines $f_t(x)=t(x-1)+2$ obtained as the real parameter $t$ varies.\n\nRecover the shared line and parabola once here; each letter only checks the extra arithmetic named in its claim.\n\n$g-f_t=x^{2}-(4+t)x+(4+t)$ with discriminant $t(4+t)$: two tangent slopes, and no meeting in between.\n\n$$\n\\begin{aligned}\nf_{t}(1) &= t\\cdot 0+2 \\\\\n&= 2\n\\end{aligned}\n$$\n\n$$\nt = 0\\implies f_{0}(x) = 2,\\qquad t = 3\\implies f_{3}(x) = 3x-1\n$$\n\n$$\n\\begin{aligned}\nx^{2}-4x+6-t(x-1)-2 &= x^{2}-(4+t)x+(4+t) \\\\\n&= 0\n\\end{aligned}\n$$",
       "subsection": "7",
       "placeholder": false,
       "stem_kind": "parametric"
@@ -3135,7 +3135,7 @@
       ],
       "difficulty_level": "5/5",
       "sort_order": 95,
-      "solution_overview": "A fixed line $f(x)=2x-1$ is compared with the family of parabolas $g_r(x)=(x-r)^{2}-4$ obtained as the real shift $r$ varies.\n\nRecover the shared line and parabola once here; each letter only checks the extra arithmetic named in its claim.\n\n$g_r-f=x^{2}-(2r+2)x+(r^{2}-3)$ with discriminant $8r+16$: tangency at $r=-2$.\n\n$$\n(x-r)^{2}-4-(2x-1) = x^{2}-(2r+2)x+(r^{2}-3)\n$$\n\n$$\n= 0\n$$\n\n$$\n\\Delta(r) = (2r+2)^{2}-4(r^{2}-3)\n$$\n\n$$\n= 8r+16\n$$\n\n$$\n8r+16 = 0\\implies r = -2\n$$",
+      "solution_overview": "A fixed line $f(x)=2x-1$ is compared with the family of parabolas $g_r(x)=(x-r)^{2}-4$ obtained as the real shift $r$ varies.\n\nRecover the shared line and parabola once here; each letter only checks the extra arithmetic named in its claim.\n\n$g_r-f=x^{2}-(2r+2)x+(r^{2}-3)$ with discriminant $8r+16$: tangency at $r=-2$.\n\n$$\n\\begin{aligned}\n(x-r)^{2}-4-(2x-1) &= x^{2}-(2r+2)x+(r^{2}-3) \\\\\n&= 0\n\\end{aligned}\n$$\n\n$$\n\\begin{aligned}\n\\Delta(r) &= (2r+2)^{2}-4(r^{2}-3) \\\\\n&= 8r+16\n\\end{aligned}\n$$\n\n$$\n8r+16 = 0\\implies r = -2\n$$",
       "subsection": "7",
       "placeholder": false,
       "stem_kind": "parametric"
@@ -3168,7 +3168,7 @@
       ],
       "difficulty_level": "5/5",
       "sort_order": 96,
-      "solution_overview": "The line $f$ has slope $-3$ and passes through the point $(1,2)$.\n\nRecover the shared line and parabola once here; each letter only checks the extra arithmetic named in its claim.\n\n$$\nf(x) = -3x+5,\\qquad g(x) = 2(x-2)^{2}-8\n$$\n\n$$\n= 2x^{2}-8x\n$$\n\n$$f(x)=-3(x-1)+2$$\n\n$$\nf(x) = -3x+3+2\n$$\n\n$$\n= -3x+5\n$$\n\n$$\nf(1) = -3+5\n$$\n\n$$\n= 2\n$$",
+      "solution_overview": "The line $f$ has slope $-3$ and passes through the point $(1,2)$.\n\nRecover the shared line and parabola once here; each letter only checks the extra arithmetic named in its claim.\n\n$$\n\\begin{aligned}\nf(x) &= -3x+5,\\qquad g(x) = 2(x-2)^{2}-8 \\\\\n&= 2x^{2}-8x\n\\end{aligned}\n$$\n\n$$f(x)=-3(x-1)+2$$\n\n$$\n\\begin{aligned}\nf(x) &= -3x+3+2 \\\\\n&= -3x+5\n\\end{aligned}\n$$\n\n$$\n\\begin{aligned}\nf(1) &= -3+5 \\\\\n&= 2\n\\end{aligned}\n$$",
       "subsection": "7",
       "placeholder": false,
       "stem_kind": "hybrid"

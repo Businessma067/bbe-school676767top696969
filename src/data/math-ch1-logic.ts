@@ -2968,9 +2968,12 @@ Let $A=\\{1,2\\}$ and $B=\\{x,y,z\\}$. Every claim here is about ordered pairs f
 
 An ordered pair $(a,b)$ lands in $A\\times B$ only when the first slot is from $A$ and the second from $B$. Size is the product rule
 
-$$2\\cdot 3$$
-
-$$=6.$$
+$$
+\begin{aligned}
+& 2\\cdot 3 \\
+&=6.
+\end{aligned}
+$$
 
 Turning the factors around produces $B\\times A$: the same count, different members.`,
   },
@@ -3527,9 +3530,12 @@ Among $200$ customers, $\\lvert A\\rvert=120$ like Product A, $\\lvert B\\rvert=
 
 The $50$ dual-likers sit inside each headline, so inclusion-exclusion subtracts the overlap once:
 
-$$120+90-50$$
-
-$$=160.$$
+$$
+\begin{aligned}
+& 120+90-50 \\
+&=160.
+\end{aligned}
+$$
 
 A-only is $\\lvert A\\rvert-\\lvert A\\cap B\\rvert$. Neither is the survey size minus the union.`,
   },
@@ -4406,9 +4412,12 @@ The task gives $A=\\{1,2\\}$ and $B=\\{x,y,z\\}$. Every claim here is about the 
 
 An ordered pair records which object plays which role. The Cartesian product $A\\times B$ is the set of all pairs whose first entry comes from $A$ and whose second comes from $B$. Size is the product rule
 
-$$2\\cdot 3$$
-
-$$=6.$$
+$$
+\begin{aligned}
+& 2\\cdot 3 \\
+&=6.
+\end{aligned}
+$$
 
 Turning the grid on its side produces $B\\times A$, same count, different members.`,
   },
@@ -4501,9 +4510,12 @@ Pair every letter of $A=\\{m,n,p\\}$ with every number of $B=\\{1,2\\}$, always 
 
 The product rule is $\\lvert A\\times B\\rvert=\\lvert A\\rvert\\cdot\\lvert B\\rvert$. A pair belongs to $A\\times B$ only when its first entry comes from $A$ and its second from $B$. Writing the product the other way round gives $B\\times A$: the same count, a different set.
 
-$$\\lvert A\\times B\\rvert=3\\cdot 2$$
-
-$$=6.$$`,
+$$
+\begin{aligned}
+\\lvert A\\times B\\rvert &=3\\cdot 2 \\
+&=6.
+\end{aligned}
+$$`,
   },
   {
     id: `math-1-38`,
@@ -4828,9 +4840,12 @@ Of $40$ students, $\\lvert A\\rvert=22$ play chess, $\\lvert B\\rvert=15$ play c
 
 Inclusion-exclusion counts the union by adding the headlines and subtracting the overlap once:
 
-$$\\lvert A\\cup B\\rvert=22+15-6$$
-
-$$=31.$$
+$$
+\begin{aligned}
+\\lvert A\\cup B\\rvert &=22+15-6 \\
+&=31.
+\end{aligned}
+$$
 
 Chess-only is the chess headline minus the overlap; checkers-only is the checkers headline minus the overlap. Neither is the club total minus the union.`,
   },
@@ -4921,9 +4936,12 @@ Inclusion-exclusion counts each student once:
 
 $$|A\\cup B|=|A|+|B|-|A\\cap B|$$
 
-$$|A\\cup B|=34+28-12$$
-
-$$=50$$
+$$
+\begin{aligned}
+|A\\cup B| &=34+28-12 \\
+&=50
+\end{aligned}
+$$
 
 Spanish-only is $|A|-|A\\cap B|$. French-only is $|B|-|A\\cap B|$. Neither is the cohort minus the union. The intersection is a subset of the union.`,
   },
@@ -5014,9 +5032,12 @@ Inclusion-exclusion counts each member once:
 
 $$|A\\cup B|=|A|+|B|-|A\\cap B|$$
 
-$$|A\\cup B|=20+18-5$$
-
-$$=33$$
+$$
+\begin{aligned}
+|A\\cup B| &=20+18-5 \\
+&=33
+\end{aligned}
+$$
 
 Pool-only is $|A|-|A\\cap B|$. Sauna-only is $|B|-|A\\cap B|$. Neither is membership minus the union. The intersection is a subset of the union.`,
   },
@@ -8922,9 +8943,12 @@ So the statement is False.`,
     sort_order: 16,
     solution_overview: `The original statement is $6 \\mid n \\Rightarrow 3 \\mid n$. If $6 \\mid n$, write
 
-$$n=6k$$
-
-$$=3(2k)$$
+$$
+\begin{aligned}
+n &=6k \\
+&=3(2k)
+\end{aligned}
+$$
 
 so $3 \\mid n$ automatically.
 
@@ -9273,10 +9297,11 @@ The claim says J is a liar. Test the opposite by assuming J is a truth-teller. J
 $$J = \\text{true},$$
 
 $$
-K = L
+\begin{aligned}
+K &= L \\
+&= \\text{false}
+\end{aligned}
 $$
-
-$$= \\text{false}$$
 
 K's sentence "J is lying" is false, which fits K being a liar. But L says that K and L are the same type. Under this assignment they are both liars, so L's sentence is true. A liar cannot make a true statement, and the J-truthful case fails.
 
@@ -9298,13 +9323,19 @@ The claim says L is a truth-teller. The shared forcing has J as a liar and K as 
 
 $$J = \\text{false},$$
 
-$$K$$
+$$
+\begin{aligned}
+& K \\
+&= \\text{true},
+\end{aligned}
+$$
 
-$$= \\text{true},$$
-
-$$L$$
-
-$$= \\text{false}$$
+$$
+\begin{aligned}
+& L \\
+&= \\text{false}
+\end{aligned}
+$$
 
 Then K would be the only truth-teller. That makes J's sentence, "Exactly one of us is a truth-teller," true. But J is already forced to be a liar, so this case is impossible.
 
@@ -9339,10 +9370,11 @@ If J is a liar, K's accusation "J is lying" is true, so K must be truthful. Now 
 $$J = \\text{liar},$$
 
 $$
-K = L
+\begin{aligned}
+K &= L \\
+&= \\text{truth-teller}
+\end{aligned}
 $$
-
-$$= \\text{truth-teller}$$
 
 In this assignment J's sentence is false, K's is true, and L's is true, so it survives. Every alternative case has failed, leaving no second assignment.
 
