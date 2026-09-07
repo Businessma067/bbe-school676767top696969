@@ -982,8 +982,13 @@ More than half of {steps} requires more than {steps / 2:g} upward steps. Actual 
             return wrap(truth, lead, body)
 
         if "last closing price is below the first" in sl:
-            lead = "Compare the first and last closing prices directly."
-            body = f"""$$
+            lead = (
+                "This claim is a direct order comparison of the first and last closing "
+                "prices in the monthly table — no ratio is required."
+            )
+            body = f"""Read the first month's closing price and the last month's closing price from the extract:
+
+$$
 P_{{\\text{{first}}}} = {fmt(start)}
 $$
 
@@ -991,7 +996,7 @@ $$
 P_{{\\text{{last}}}} = {fmt(end)}
 $$
 
-Last is {"below" if end < start else "not below"} first.
+The statement asserts that the last close is below the first. Here last is {"below" if end < start else "not below"} first ({fmt(end)} versus {fmt(start)}).
 
 {interp(truth, f"last {fmt(end)} {'is below' if end < start else 'is not below'} first {fmt(start)}")}"""
             return wrap(truth, lead, body)
@@ -999,12 +1004,17 @@ Last is {"below" if end < start else "not below"} first.
         m = re.match(r"Shares outstanding equal ([\d,]+)\.?$", stmt, re.I)
         if m and shares is not None:
             claimed = float(m.group(1).replace(",", ""))
-            lead = "Shares outstanding are read from the annual figures attached to the price table."
-            body = f"""$$
+            lead = (
+                "Shares outstanding are an annual stock figure reported beside the price "
+                "table; the claim is simply whether that figure equals the stated count."
+            )
+            body = f"""Read shares outstanding from the annual figures attached to the extract:
+
+$$
 \\text{{Shares outstanding}} = {fmt(shares)}
 $$
 
-The statement claims {fmt(claimed)}.
+The statement claims exactly {fmt(claimed)}. The extract reports {fmt(shares)}, which {"matches" if shares == claimed else "does not match"} the claim.
 
 {interp(truth, f"extract reports {fmt(shares)} versus claimed {fmt(claimed)}")}"""
             return wrap(truth, lead, body)
@@ -1012,12 +1022,17 @@ The statement claims {fmt(claimed)}.
         m = re.match(r"Operating result is below €([\d,]+) thousand\.?$", stmt, re.I)
         if m and op_res is not None:
             th = float(m.group(1).replace(",", ""))
-            lead = "Operating result is taken from the annual figures beside the share table."
-            body = f"""$$
+            lead = (
+                "Operating result is taken from the annual figures beside the share table "
+                "and compared with the stated euro-thousand threshold."
+            )
+            body = f"""Read the operating result from the extract:
+
+$$
 \\text{{Operating result}} = €{fmt(op_res)}\\text{{ thousand}}
 $$
 
-Threshold: below €{fmt(th)} thousand.
+The statement claims this amount is below €{fmt(th)} thousand. Actual €{fmt(op_res)} thousand is {"below" if op_res < th else "not below"} that threshold.
 
 {interp(truth, f"operating result €{fmt(op_res)}k is {'below' if op_res < th else 'not below'} €{fmt(th)}k")}"""
             return wrap(truth, lead, body)
@@ -1162,14 +1177,20 @@ Threshold: more than {th:g} days. Actual {days:.0f} days.
 {interp(truth, f"collection days {days:.0f} {'exceed' if days > th else 'do not exceed'} {th:g}")}"""
                 return wrap(truth, lead, body)
             if "inventory turnover is higher than trade receivables turnover" in sl and cos and i0 and i1:
-                it = cos / ((i0 + i1) / 2)
-                lead = "Compare the two activity ratios computed from the same extract."
-                body = f"""$$
-IT = {it:.4f}
+                avg_i = (i0 + i1) / 2
+                it = cos / avg_i
+                lead = (
+                    "Compare inventory turnover with receivables turnover, each built from "
+                    "the same extract's averages."
+                )
+                body = f"""Name the identities in words: inventory turnover = cost of sales ÷ average inventory; receivables turnover = revenue ÷ average trade receivables.
+
+$$
+IT = \\frac{{{fmt(cos)}}}{{{fmt(avg_i)}}} = {it:.4f}
 $$
 
 $$
-RT = {rt:.4f}
+RT = \\frac{{{fmt(rev)}}}{{{fmt(avg_r)}}} = {rt:.4f}
 $$
 
 Inventory turnover is {"higher" if it > rt else "not higher"} than receivables turnover.
@@ -1198,8 +1219,13 @@ Threshold: more than {th:g}%. Actual {pct(g)}%.
             return wrap(truth, lead, body)
 
         if "total assets grew during the year" in sl and a0 and a1:
-            lead = "Compare beginning and ending total assets on the extract."
-            body = f"""$$
+            lead = (
+                "Asset growth on this extract is a direct comparison of beginning and ending "
+                "total assets."
+            )
+            body = f"""Read beginning and ending total assets from the extract:
+
+$$
 \\text{{Assets}}_{{\\text{{begin}}}} = {fmt(a0)}
 $$
 
@@ -1207,7 +1233,7 @@ $$
 \\text{{Assets}}_{{\\text{{end}}}} = {fmt(a1)}
 $$
 
-Assets {"grew" if a1 > a0 else "did not grow"} during the year.
+Assets {"grew" if a1 > a0 else "did not grow"} during the year ({fmt(a0)} → {fmt(a1)}).
 
 {interp(truth, f"assets move from {fmt(a0)} to {fmt(a1)}")}"""
             return wrap(truth, lead, body)
@@ -1235,12 +1261,17 @@ Assets {"grew" if a1 > a0 else "did not grow"} during the year.
         m = re.search(r"revenue exceeds €([\d,]+) thousand", stmt, re.I)
         if m and rev:
             th = float(m.group(1).replace(",", ""))
-            lead = "Revenue is read directly from the extract and compared with the stated threshold."
-            body = f"""$$
+            lead = (
+                "Revenue is read directly from the extract and compared with the stated "
+                "euro-thousand threshold — a level check, not a ratio."
+            )
+            body = f"""From the extract:
+
+$$
 \\text{{Revenue}} = €{fmt(rev)}\\text{{ thousand}}
 $$
 
-Threshold: exceeds €{fmt(th)} thousand.
+The statement claims revenue exceeds €{fmt(th)} thousand. Actual revenue is €{fmt(rev)} thousand, which {"exceeds" if rev > th else "does not exceed"} that level.
 
 {interp(truth, f"revenue €{fmt(rev)}k {'exceeds' if rev > th else 'does not exceed'} €{fmt(th)}k")}"""
             return wrap(truth, lead, body)
@@ -1678,49 +1709,70 @@ Threshold: more than {th:g}% higher. Actual premium {pct(prem)}%.
                     truth,
                     "Straight-line depreciation uses cost minus residual value over useful life.",
                     "Name the identity in words: depreciable amount = cost − residual; annual charge = depreciable amount ÷ life.\n\n"
-                    "Residual value is deducted before spreading. Claiming that residual value is ignored contradicts the straight-line rule.",
+                    "Residual value is deducted before the depreciable amount is spread. Claiming that residual value is ignored "
+                    "contradicts that rule: a positive residual shrinks each year's charge compared with writing the full cost down to nil.\n\n"
+                    f"Applied to this stem: \"{stmt.strip()}\"",
                 )
             if "without recording depreciation" in sl and "overstated" in sl:
                 return wrap(
                     truth,
                     "Depreciation writes assets down as their service potential is consumed.",
-                    "If depreciation is omitted, non-current assets stay at historical cost and are overstated relative to the consumption of benefits already taken.",
+                    "If depreciation is omitted, non-current assets stay at historical cost on the balance sheet. "
+                    "That overstates the assets relative to the portion of benefits already used up in operations.\n\n"
+                    f"Applied to this stem: \"{stmt.strip()}\"",
                 )
             if "same amount each year" in sl and "straight-line" in sl:
                 return wrap(
                     truth,
                     "Straight-line spreads the depreciable amount evenly over useful life.",
-                    "With a fixed (cost − residual) and fixed life, each year receives the same charge — cost ÷ life when residual is nil.",
+                    "Name the identity in words: annual charge = (cost − residual) ÷ life.\n\n"
+                    "With a fixed depreciable amount and a fixed life, each year receives the same charge. "
+                    "When residual is nil, that charge is simply cost ÷ life.\n\n"
+                    f"Applied to this stem: \"{stmt.strip()}\"",
                 )
-            if "charged directly against cash" in sl or ("cash payment" in sl and "depreciation" in sl):
+            if "charged directly against cash" in sl or ("cash payment" in sl and "depreciation" in sl) or (
+                "does not cause an actual cash payment" in sl
+            ):
                 return wrap(
                     truth,
                     "Depreciation is a non-cash allocation of a past capital outlay.",
-                    "The cash left when the asset was bought; the annual charge allocates that past outlay and does not require a fresh cash payment when recorded.",
+                    "Cash left the business when the asset was acquired. The annual depreciation charge merely allocates "
+                    "that past outlay across useful life; recording the charge does not require a fresh cash payment to an "
+                    "outside party in the year of the expense.\n\n"
+                    f"Applied to this stem: \"{stmt.strip()}\"",
                 )
             if "shorter useful life" in sl and "higher annual" in sl:
                 return wrap(
                     truth,
                     "Fewer years raise the annual straight-line charge for the same depreciable amount.",
-                    "All else equal, shortening useful life increases (cost − residual) ÷ life.",
+                    "Name the identity in words: annual charge = (cost − residual) ÷ life.\n\n"
+                    "All else equal, shortening useful life increases the yearly charge because the same depreciable "
+                    "amount is spread over fewer periods.\n\n"
+                    f"Applied to this stem: \"{stmt.strip()}\"",
                 )
             if "residual value reduces the amount" in sl:
                 return wrap(
                     truth,
                     "Depreciable amount = cost − residual value.",
-                    "A positive residual reduces what is spread over useful life, so annual charges are lower than if residual were nil.",
+                    "A positive residual reduces what is spread over useful life, so annual straight-line charges are "
+                    "lower than if residual were nil. That is why residual is deducted before dividing by life.\n\n"
+                    f"Applied to this stem: \"{stmt.strip()}\"",
                 )
             if "land is not subject to depreciation" in sl:
                 return wrap(
                     truth,
                     "Land has an indefinite useful life and is not depreciated.",
-                    "Unlike buildings and machinery, land does not wear out through ordinary use, so no systematic write-down is applied.",
+                    "Unlike buildings and machinery, land does not wear out through ordinary use. Therefore land stays "
+                    "at cost (subject to impairment rules) without a systematic depreciation charge each year.\n\n"
+                    f"Applied to this stem: \"{stmt.strip()}\"",
                 )
             if "fully written down to nil residual value at the end of its useful life" in sl:
                 return wrap(
                     truth,
                     "Nil residual means carrying value reaches zero at the end of useful life.",
-                    "Once the full cost has been allocated over the life, book value is nil when residual is nil.",
+                    "Once the full cost has been allocated over the asset's life, book value is nil when residual is nil. "
+                    "That is the accounting end-state of straight-line depreciation with a zero residual.\n\n"
+                    f"Applied to this stem: \"{stmt.strip()}\"",
                 )
 
     # Misc ratios
@@ -1994,11 +2046,11 @@ def thicken_conceptual(stmt: str, truth: bool, subsection: str, title: str, old:
     return base if needs_thicken(old) else old
 
 
-def deepen_letter(case: dict, i: int) -> str:
+def deepen_letter(case: dict, i: int, force: bool = False) -> str:
     old = case["tactical_explanations"][i]
     stmt = case["statements"][i]
     truth = bool(case["answer_key"][i])
-    if not needs_thicken(old):
+    if not force and not needs_thicken(old):
         return old
     tables = parse_tables(case.get("context") or "")
     expl = try_maximal(stmt, truth, tables)
@@ -2006,6 +2058,24 @@ def deepen_letter(case: dict, i: int) -> str:
         expl = thicken_conceptual(
             stmt, truth, case.get("subsection") or "6.1", case.get("title") or "", old
         )
+    # If still thin after rebuild, append stem-tied teaching closer prose once
+    if needs_thicken(expl):
+        closer = "The statement is true." if truth else "The statement is false."
+        mid = expl
+        if mid.startswith("TRUE — ") or mid.startswith("FALSE — "):
+            mid = mid.split(" — ", 1)[1]
+        if mid.rstrip().endswith(closer):
+            mid = mid.rstrip()[: -len(closer)].rstrip()
+        extra = (
+            f"\n\nTie the verdict to the stem wording: \"{stmt.strip()}\" "
+            "using only the extract figures and definitions above — no outside numbers."
+        )
+        if extra.strip() not in mid:
+            mid = mid + extra
+        want = "TRUE — " if truth else "FALSE — "
+        lead, _, rest = mid.partition("\n\n")
+        # lead may already be the lead sentence without header
+        expl = f"{want}{lead}\n\n{rest}\n\n{closer}" if rest else f"{want}{mid}\n\n{closer}"
     # Safety: header/closer
     want = "TRUE — " if truth else "FALSE — "
     closer = "The statement is true." if truth else "The statement is false."
