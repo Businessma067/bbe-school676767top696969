@@ -9818,11 +9818,7 @@ $$`,
 Year 2 is one growth step past the opening term:
 
 $$
-a_2 = 50 \\times 1.10
-$$
-
-$$
-= 55.00
+a_2 = 50 \\times 1.10 = 55.00
 $$
 
 Compare the computed value with the claim (\\$55.00 million). The two sides agree.
@@ -9834,15 +9830,13 @@ Year 5 carries four growth steps past the opening term:
 
 $$a_5 = 50 \\times (1.10)^4$$
 
-$$(1.10)^4$$
-
-$$= 1.4641$$
-
 $$
-a_5 = 50 \\times 1.4641
+(1.10)^4 = 1.4641
 $$
 
-$$= 73.205$$
+$$
+a_5 = 50 \\times 1.4641 = 73.205
+$$
 
 $$\\approx 73.21$$
 
@@ -9859,13 +9853,9 @@ $$
 
 Substitute the recovered stem inputs:
 
-$$s_5 = 50\\frac{1.61051-1}{0.10}$$
-
-$$= 50 \\times 6.1051$$
-
-$$= 305.255$$
-
-$$= 50 \\times 6.1051$$
+$$
+s_5 = 50\\frac{1.61051-1}{0.10} = 50 \\times 6.1051 = 305.255 = 50 \\times 6.1051
+$$
 
 $$\\approx 305.26$$
 
@@ -9890,29 +9880,25 @@ $$k = 1.10,$$
 
 $$n = 5$$
 
-$$1.10^5$$
+$$
+1.10^5 = 1.61051
+$$
 
-$$= 1.61051$$
-
-$$s_5 = 50\\frac{1.61051-1}{0.10}$$
-
-$$= 50 \\times 6.1051$$
-
-$$= 305.255$$
-
-$$= 50 \\times 6.1051$$
+$$
+s_5 = 50\\frac{1.61051-1}{0.10} = 50 \\times 6.1051 = 305.255 = 50 \\times 6.1051
+$$
 
 $$\\approx 305.26$$
 
-$$50 \\times 5$$
-
-$$= 250$$
+$$
+50 \\times 5 = 250
+$$
 
 The overview recovered $s_5 \\approx 305.26$. Growth adds
 
-$$305.26 - 250$$
-
-$$= 55.26$$
+$$
+305.26 - 250 = 55.26
+$$
 
 The claim is an extra of exactly \\$60.00 million. The extra is \\$55.26 million.
 
@@ -10004,15 +9990,7 @@ $$
 Substitute the stem numbers:
 
 $$
-s_{\\infty} = \\frac{2,000}{1-0.5}
-$$
-
-$$
-= \\frac{2,000}{0.5}
-$$
-
-$$
-= 4,000
+s_{\\infty} = \\frac{2,000}{1-0.5} = \\frac{2,000}{0.5} = 4,000
 $$
 
 The computed value is approximately \\$4,000.00, which matches the claim.
@@ -10029,11 +10007,7 @@ $$
 Substitute the stem numbers:
 
 $$
-s_4 = 2,000+1,000+500+250
-$$
-
-$$
-= 3,750
+s_4 = 2,000+1,000+500+250 = 3,750
 $$
 
 The computed value is approximately \\$3,750.00, which matches the claim.
@@ -10153,15 +10127,7 @@ $$
 Substitute the stem numbers:
 
 $$
-s_{\\infty} = \\frac{800}{1-0.90}
-$$
-
-$$
-= \\frac{800}{0.10}
-$$
-
-$$
-= 8,000
+s_{\\infty} = \\frac{800}{1-0.90} = \\frac{800}{0.10} = 8,000
 $$
 
 The computed value is approximately \\$8,000.00, which matches the claim.
@@ -10177,9 +10143,9 @@ $$
 
 Substitute the stem numbers:
 
-$$= 800 \\times 6.513215599$$
-
-$$= 5,210.57$$
+$$
+= 800 \\times 6.513215599 = 5,210.57
+$$
 
 The computed value is approximately \\$5,210.57, which matches the claim.
 
@@ -10271,11 +10237,7 @@ $$= 800 \\times 6.513215599 = 5,210.57$$`,
 At a constant $300,000$ tons per year, the exhaustion time is
 
 $$
-t = \\frac{18,000,000}{300,000}
-$$
-
-$$
-= 60
+t = \\frac{18,000,000}{300,000} = 60
 $$
 
 Compare the computed value with the claim ($60$ years). The two sides agree.
@@ -10286,11 +10248,7 @@ So the statement is True.`,
 At a constant $500,000$ tons per year, the exhaustion time is
 
 $$
-t = \\frac{18,000,000}{500,000}
-$$
-
-$$
-= 36
+t = \\frac{18,000,000}{500,000} = 36
 $$
 
 Compare the computed value with the claim ($36$ years). The two sides agree.
@@ -10310,17 +10268,17 @@ $$k = 1.05,$$
 
 $$n = 10$$
 
-$$1.05^{10}$$
-
-$$= 1.628894627$$
+$$
+1.05^{10} = 1.628894627
+$$
 
 $$s_{10} = 300,000\\frac{1.628894627-1}{0.05}$$
 
 $$s_{10} = 3,773,367.76$$
 
-$$300,000 \\times 10$$
-
-$$= 3,000,000$$
+$$
+300,000 \\times 10 = 3,000,000
+$$
 
 The overview already identified constant extraction as the $k=1$ case, where the $n$-year total is $an$. The claim is that identity.
 
@@ -10350,21 +10308,21 @@ $$k = 1.05,$$
 
 $$n = 10$$
 
-$$1.05^{10}$$
-
-$$= 1.628894627$$
+$$
+1.05^{10} = 1.628894627
+$$
 
 $$s_{10} = 300,000\\frac{1.628894627-1}{0.05}$$
 
 $$s_{10} = 3,773,367.76$$
 
-$$300,000 \\times 10$$
+$$
+300,000 \\times 10 = 3,000,000
+$$
 
-$$= 3,000,000$$
-
-$$3,773,368-3,000,000$$
-
-$$= 773,368$$
+$$
+3,773,368-3,000,000 = 773,368
+$$
 
 $$773,368 < 1,000,000$$
 
@@ -10434,11 +10392,7 @@ $$300,000 \\times 10 = 3,000,000$$`,
 Year 2 is one decline step past this year's output:
 
 $$
-a_2 = 180 \\times 0.97
-$$
-
-$$
-= 174.6
+a_2 = 180 \\times 0.97 = 174.6
 $$
 
 Compare the computed value with the claim ($174.6$ million tons). The two sides agree.
@@ -10455,15 +10409,7 @@ $$
 Substitute the stem numbers:
 
 $$
-s_{\\infty} = \\frac{180}{1-0.97}
-$$
-
-$$
-= \\frac{180}{0.03}
-$$
-
-$$
-= 6,000
+s_{\\infty} = \\frac{180}{1-0.97} = \\frac{180}{0.03} = 6,000
 $$
 
 That computed value matches the claim.
@@ -10489,22 +10435,14 @@ So the statement is True.`,
 Under a $5\\%$ decline,
 
 $$
-s_{\\infty} = \\frac{180}{1-0.95}
-$$
-
-$$
-= \\frac{180}{0.05}
-$$
-
-$$
-= 3,600
+s_{\\infty} = \\frac{180}{1-0.95} = \\frac{180}{0.05} = 3,600
 $$
 
 The stranded reserve is then
 
-$$9,000-3,600$$
-
-$$= 5,400$$
+$$
+9,000-3,600 = 5,400
+$$
 
 The overview recovered $3,000$ million tons stranded under the $3\\%$ decline. A $5\\%$ decline strands more coal, not less.
 
@@ -10529,9 +10467,9 @@ $$s_{\\infty} = \\frac{180}{0.03}$$
 
 $$s_{\\infty} = 6,000$$
 
-$$9,000-6,000$$
-
-$$= 3,000$$
+$$
+9,000-6,000 = 3,000
+$$
 
 $$0.97^{20}$$
 
@@ -10611,11 +10549,7 @@ $$9,000-6,000 = 3,000$$`,
 The adjustments form an infinite geometric series:
 
 $$
-|k| = |-0.5|
-$$
-
-$$
-= 0.5 < 1
+|k| = |-0.5| = 0.5 < 1
 $$
 
 The computed figure matches the claim.
@@ -10634,10 +10568,8 @@ $$
 Substitute the stem numbers:
 
 $$
-s_{\\infty} = \\frac{4,000}{1-(-0.5)}
+s_{\\infty} = \\frac{4,000}{1-(-0.5)} = \\frac{4,000}{1.5}
 $$
-
-$$= \\frac{4,000}{1.5}$$
 
 $$\\approx 2,666.67$$
 
@@ -10651,19 +10583,11 @@ The first four adjustments are
 $$4,000, \\qquad 4,000(-0.5)=-2,000$$
 
 $$
-4,000(0.25) = 1,000, \\qquad 4,000(-0.125)
+4,000(0.25) = 1,000, \\qquad 4,000(-0.125) = -500
 $$
 
 $$
-= -500
-$$
-
-$$
-s_4 = 4,000-2,000+1,000-500
-$$
-
-$$
-= 2,500
+s_4 = 4,000-2,000+1,000-500 = 2,500
 $$
 
 The claim is \\$3,000.00. The four-term sum is \\$2,500.00.
@@ -10685,19 +10609,7 @@ So the statement is False.`,
 At $k=-1$ the terms alternate between $4,000$ and $-4,000$. The partial sums are then
 
 $$
-s_1 = 4,000, \\qquad s_2
-$$
-
-$$
-= 0, \\qquad s_3
-$$
-
-$$
-= 4,000, \\qquad s_4
-$$
-
-$$
-= 0
+s_1 = 4,000, \\qquad s_2 = 0, \\qquad s_3 = 4,000, \\qquad s_4 = 0
 $$
 
 Odd $n$ returns \\$4,000 and even $n$ returns \\$0, forever. The claim is that oscillation.
@@ -10793,10 +10705,8 @@ $$
 Substitute the stem numbers:
 
 $$
-s_{15} = 12\\frac{1.800944-1}{0.04}
+s_{15} = 12\\frac{1.800944-1}{0.04} = 12 \\times 20.0236
 $$
-
-$$= 12 \\times 20.0236$$
 
 $$\\approx 240.28$$
 
@@ -10834,9 +10744,9 @@ $$s_{15} = 12 \\times 20.0236$$
 
 $$s_{15} \\approx 240.28$$
 
-$$240.28-180.00$$
-
-$$= 60.28$$
+$$
+240.28-180.00 = 60.28
+$$
 
 $$60.28 < 65.00$$
 
@@ -10925,11 +10835,7 @@ $$`,
 The second payment is one decay step past the first:
 
 $$
-a_2 = 15,000 \\times 0.88
-$$
-
-$$
-= 13,200
+a_2 = 15,000 \\times 0.88 = 13,200
 $$
 
 Compare the computed value with the claim (\\$13,200.00). The two sides agree.
@@ -10940,10 +10846,8 @@ So the statement is True.`,
 Apply the financial identity that produces the quantity named in the claim:
 
 $$
-s_8 = 15,000\\frac{1-0.359635}{0.12}
+s_8 = 15,000\\frac{1-0.359635}{0.12} = 15,000 \\times 5.336379
 $$
-
-$$= 15,000 \\times 5.336379$$
 
 $$\\approx 80,045.68$$
 
@@ -11007,15 +10911,7 @@ $$s_8 \\approx 80,045.68$$
 $$s_{\\infty} = \\frac{15,000}{1-0.88}$$
 
 $$
-s_{\\infty} = \\frac{15,000}{1-0.95}
-$$
-
-$$
-= \\frac{15,000}{0.05}
-$$
-
-$$
-= 300,000
+s_{\\infty} = \\frac{15,000}{1-0.95} = \\frac{15,000}{0.05} = 300,000
 $$
 
 The overview recovered \\$125,000 at $k=0.88$. Since $300,000>125,000$, a less steep decline makes the infinite total larger, not smaller.
@@ -11157,13 +11053,13 @@ $$s_{12} = 9,000 \\times 18.977128$$
 
 $$s_{12} \\approx 170,794.15$$
 
-$$9,000 \\times 12$$
+$$
+9,000 \\times 12 = 108,000
+$$
 
-$$= 108,000$$
-
-$$170,794.15-108,000$$
-
-$$= 62,794.15$$
+$$
+170,794.15-108,000 = 62,794.15
+$$
 
 Compare the computed value with the claim (that the flat total sits \\$62,794.15 below the growing total). The two sides agree.
 
@@ -11229,15 +11125,7 @@ $$9,000 \\times 12 = 108,000$$`,
 When $|k_T|<1$, the terminal perpetuity is $T=\\frac{a_6}{1-k_T}$:
 
 $$
-s_6 = 4\\frac{2.985984-1}{0.20}
-$$
-
-$$
-= 4 \\times 9.92992
-$$
-
-$$
-= 39.72
+s_6 = 4\\frac{2.985984-1}{0.20} = 4 \\times 9.92992 = 39.72
 $$
 
 The computed value is approximately \\$39.72, which matches the claim.
@@ -11250,14 +11138,8 @@ So the statement is True.`,
 When $|k_T|<1$, the terminal perpetuity is $T=\\frac{a_6}{1-k_T}$:
 
 $$
-1.20^5 = 2.48832, \\qquad a_6
+1.20^5 = 2.48832, \\qquad a_6 = 4 \\times 2.48832 = 9.95328
 $$
-
-$$
-= 4 \\times 2.48832
-$$
-
-$$= 9.95328$$
 
 $$\\approx 9.95$$
 
@@ -11289,9 +11171,9 @@ $$n = 6,$$
 
 $$k_T = 0.85$$
 
-$$1.20^6$$
-
-$$= 2.985984$$
+$$
+1.20^6 = 2.985984
+$$
 
 $$s_6 = 4\\frac{2.985984-1}{0.20}$$
 
@@ -11300,10 +11182,8 @@ $$s_6 = 4 \\times 9.92992$$
 $$s_6 = 39.72$$
 
 $$
-T = \\frac{9.95328}{1-0.85}
+T = \\frac{9.95328}{1-0.85} = \\frac{9.95328}{0.15}
 $$
-
-$$= \\frac{9.95328}{0.15}$$
 
 $$\\approx 66.36$$
 
@@ -11324,9 +11204,9 @@ $$n = 6,$$
 
 $$k_T = 0.85$$
 
-$$1.20^6$$
-
-$$= 2.985984$$
+$$
+1.20^6 = 2.985984
+$$
 
 $$s_6 = 4\\frac{2.985984-1}{0.20}$$
 
@@ -11334,9 +11214,9 @@ $$s_6 = 4 \\times 9.92992$$
 
 $$s_6 = 39.72$$
 
-$$39.72+66.36$$
-
-$$= 106.08$$
+$$
+39.72+66.36 = 106.08
+$$
 
 $$106.08 > 100$$
 
@@ -11423,9 +11303,9 @@ $$`,
 
 If month $1$ were \\$1,000, month $2$ would be one growth step later:
 
-$$1,000 \\times 1.15$$
-
-$$= 1,150$$
+$$
+1,000 \\times 1.15 = 1,150
+$$
 
 Compare the computed value with the claim (\\$1,150.00). The two sides agree.
 
@@ -11441,10 +11321,8 @@ $$
 Substitute the stem numbers:
 
 $$
-a = 58,000\\frac{0.15}{2.313060766-1}
+a = 58,000\\frac{0.15}{2.313060766-1} = \\frac{8,700}{1.313060766}
 $$
-
-$$= \\frac{8,700}{1.313060766}$$
 
 $$\\approx 6,625.74$$
 
@@ -11455,9 +11333,9 @@ So the statement is True.`,
 
 Month $6$ uses five growth steps past the recovered $a\\approx 6,625.74$:
 
-$$1.15^5$$
-
-$$= 2.011357188$$
+$$
+1.15^5 = 2.011357188
+$$
 
 $$a_6 = 6,625.74 \\times 2.011357188$$
 
@@ -11470,12 +11348,8 @@ So the statement is True.`,
 
 Months $4$ through $6$ are $a k^3$, $a k^4$, and $a k^5$:
 
-$$1.15^3+1.15^4+1.15^5$$
-
-$$= 1.520875+1.749006+2.011357$$
-
 $$
-= 5.281239
+1.15^3+1.15^4+1.15^5 = 1.520875+1.749006+2.011357 = 5.281239
 $$
 
 $$6,625.74 \\times 5.281239$$
@@ -11497,9 +11371,9 @@ $$k = 1.15,$$
 
 $$n = 6$$
 
-$$1.15^6$$
-
-$$= 2.313060766$$
+$$
+1.15^6 = 2.313060766
+$$
 
 $$a = 58,000\\frac{0.15}{2.313060766-1}$$
 
@@ -11571,11 +11445,7 @@ $$`,
 Year 2 is one decline step past this year's payout:
 
 $$
-a_2 = 500,000 \\times 0.98
-$$
-
-$$
-= 490,000
+a_2 = 500,000 \\times 0.98 = 490,000
 $$
 
 Compare the computed value with the claim (\\$490,000.00). The two sides agree.
@@ -11592,15 +11462,7 @@ $$
 Substitute the stem numbers:
 
 $$
-s_{\\infty} = \\frac{500,000}{1-0.98}
-$$
-
-$$
-= \\frac{500,000}{0.02}
-$$
-
-$$
-= 25,000,000
+s_{\\infty} = \\frac{500,000}{1-0.98} = \\frac{500,000}{0.02} = 25,000,000
 $$
 
 That computed value matches the claim.
@@ -11639,22 +11501,14 @@ So the statement is True.`,
 At $k=0.95$,
 
 $$
-s_{\\infty} = \\frac{500,000}{1-0.95}
-$$
-
-$$
-= \\frac{500,000}{0.05}
-$$
-
-$$
-= 10,000,000
+s_{\\infty} = \\frac{500,000}{1-0.95} = \\frac{500,000}{0.05} = 10,000,000
 $$
 
 Half of the original infinite total is
 
-$$\\frac{25,000,000}{2}$$
-
-$$= 12,500,000$$
+$$
+\\frac{25,000,000}{2} = 12,500,000
+$$
 
 $$10,000,000 < 12,500,000$$
 
@@ -11736,11 +11590,7 @@ $$`,
 Year 2 is one growth step past the opening budget:
 
 $$
-a_2 = 200,000 \\times 1.12
-$$
-
-$$
-= 224,000
+a_2 = 200,000 \\times 1.12 = 224,000
 $$
 
 Compare the computed value with the claim (\\$224,000.00). The two sides agree.
@@ -11756,9 +11606,9 @@ $$a = 200,000,$$
 
 $$k = 1.12$$
 
-$$1.12^9$$
-
-$$= 2.773078757$$
+$$
+1.12^9 = 2.773078757
+$$
 
 $$s_9 = 200,000\\frac{2.773078757-1}{0.12}$$
 
@@ -11766,9 +11616,9 @@ $$s_9 = 200,000 \\times 14.775656$$
 
 $$s_9 \\approx 2,955,131.26$$
 
-$$1.12^{10}$$
-
-$$= 3.105848289$$
+$$
+1.12^{10} = 3.105848289
+$$
 
 $$s_{10} = 200,000\\frac{3.105848289-1}{0.12}$$
 
@@ -11805,15 +11655,13 @@ So the statement is False.`,
 
 At $8\\%$ growth,
 
-$$1.08^{10}$$
-
-$$= 2.158924997$$
-
 $$
-s_{10} = 200,000\\frac{2.158924997-1}{0.08}
+1.08^{10} = 2.158924997
 $$
 
-$$= 200,000 \\times 14.486562$$
+$$
+s_{10} = 200,000\\frac{2.158924997-1}{0.08} = 200,000 \\times 14.486562
+$$
 
 $$\\approx 2,897,312.49$$
 
@@ -11889,11 +11737,7 @@ $$`,
 The second grant is one decline step past the first:
 
 $$
-a_2 = 50,000 \\times 0.96
-$$
-
-$$
-= 48,000
+a_2 = 50,000 \\times 0.96 = 48,000
 $$
 
 Compare the computed value with the claim (\\$48,000.00). The two sides agree.
@@ -11910,15 +11754,7 @@ $$
 Substitute the stem numbers:
 
 $$
-s_{\\infty} = \\frac{50,000}{1-0.96}
-$$
-
-$$
-= \\frac{50,000}{0.04}
-$$
-
-$$
-= 1,250,000
+s_{\\infty} = \\frac{50,000}{1-0.96} = \\frac{50,000}{0.04} = 1,250,000
 $$
 
 The computed value is approximately \\$1,250,000.00, which matches the claim.
@@ -11935,10 +11771,8 @@ $$
 Substitute the stem numbers:
 
 $$
-s_{15} = 50,000\\frac{1-0.542086380}{0.04}
+s_{15} = 50,000\\frac{1-0.542086380}{0.04} = 50,000 \\times 11.447840
 $$
-
-$$= 50,000 \\times 11.447840$$
 
 $$\\approx 572,392.03$$
 
@@ -11971,22 +11805,14 @@ So the statement is False.`,
 At $k=0.90$,
 
 $$
-s_{\\infty} = \\frac{50,000}{1-0.90}
-$$
-
-$$
-= \\frac{50,000}{0.10}
-$$
-
-$$
-= 500,000
+s_{\\infty} = \\frac{50,000}{1-0.90} = \\frac{50,000}{0.10} = 500,000
 $$
 
 Half of the original infinite total is
 
-$$\\frac{1,250,000}{2}$$
-
-$$= 625,000$$
+$$
+\\frac{1,250,000}{2} = 625,000
+$$
 
 $$500,000 < 625,000$$
 
@@ -12068,11 +11894,7 @@ $$`,
 Quarter $2$ is one decline step past the first quarter:
 
 $$
-a_2 = 10,000 \\times 0.98
-$$
-
-$$
-= 9,800
+a_2 = 10,000 \\times 0.98 = 9,800
 $$
 
 Compare the computed value with the claim ($9,800.00$ lbs). The two sides agree.
@@ -12107,20 +11929,12 @@ So the statement is True.`,
 
 Substituting $n=5$ instead of $n=20$ gives
 
-$$0.98^5$$
-
-$$= 0.903920800$$
-
 $$
-s_5 = 10,000\\frac{1-0.903920800}{0.02}
+0.98^5 = 0.903920800
 $$
 
 $$
-= 10,000 \\times 4.80396
-$$
-
-$$
-= 48,039.60
+s_5 = 10,000\\frac{1-0.903920800}{0.02} = 10,000 \\times 4.80396 = 48,039.60
 $$
 
 That figure is the first five quarters, not five years. Five years are $20$ quarters, whose total the overview recovered as $166,196.01$ lbs. Using $n=5$ is not the correct five-year total.
@@ -12153,9 +11967,9 @@ $$k = 0.98,$$
 
 $$n = 20$$
 
-$$0.98^{20}$$
-
-$$= 0.667607972$$
+$$
+0.98^{20} = 0.667607972
+$$
 
 $$s_{20} = 10,000\\frac{1-0.667607972}{0.02}$$
 
@@ -12164,15 +11978,7 @@ $$s_{20} = 10,000 \\times 16.619601$$
 $$s_{20} = 166,196.01$$
 
 $$
-s_{\\infty} = \\frac{10,000}{1-0.98}
-$$
-
-$$
-= \\frac{10,000}{0.02}
-$$
-
-$$
-= 500,000
+s_{\\infty} = \\frac{10,000}{1-0.98} = \\frac{10,000}{0.02} = 500,000
 $$
 
 The overview recovered $s_{20}=166,196.01$. Since $500,000>166,196.01$, the infinite total is larger than the $20$-quarter total, not smaller.
@@ -12239,10 +12045,8 @@ $$
 Substitute the stem numbers:
 
 $$
-s_{A,8} = 80,000\\frac{1.593848075-1}{0.06}
+s_{A,8} = 80,000\\frac{1.593848075-1}{0.06} = 80,000 \\times 9.897468
 $$
-
-$$= 80,000 \\times 9.897468$$
 
 $$\\approx 791,797.43$$
 
@@ -12260,10 +12064,8 @@ $$
 Substitute the stem numbers:
 
 $$
-s_{B,8} = 95,000\\frac{1.171659381-1}{0.02}
+s_{B,8} = 95,000\\frac{1.171659381-1}{0.02} = 95,000 \\times 8.582969
 $$
-
-$$= 95,000 \\times 8.582969$$
 
 $$\\approx 815,382.06$$
 
@@ -12304,9 +12106,9 @@ Using the recovered solution values $s_{B,8}\\approx 815,382.06$ and $s_{A,8}\\a
 
 Territory B's lead is
 
-$$815,382.06-791,797.43$$
-
-$$= 23,584.63$$
+$$
+815,382.06-791,797.43 = 23,584.63
+$$
 
 $$23,584.63 < 30,000$$
 
@@ -12391,20 +12193,12 @@ At $p=1.5$ the fourth batch is
 
 $$a_4 = \\frac{5,000}{4^{1.5}}$$
 
-$$4^{1.5}$$
-
-$$= 4 \\times \\sqrt{4}$$
-
 $$
-= 8
+4^{1.5} = 4 \\times \\sqrt{4} = 8
 $$
 
 $$
-a_4 = \\frac{5,000}{8}
-$$
-
-$$
-= 625
+a_4 = \\frac{5,000}{8} = 625
 $$
 
 Compare the computed value with the claim (about \\$650.00). The fourth benefit is \\$625.00. The two sides do not agree.
@@ -12433,15 +12227,7 @@ So the statement is False.`,
 At $p=1.5$ and $n=100$,
 
 $$
-a_{100} = \\frac{5,000}{100^{1.5}}
-$$
-
-$$
-= \\frac{5,000}{1,000}
-$$
-
-$$
-= 5
+a_{100} = \\frac{5,000}{100^{1.5}} = \\frac{5,000}{1,000} = 5
 $$
 
 so the named term \\$5.00 is correct. Terms tending to $0$ is necessary for convergence, not sufficient. The harmonic case $p=1$ also has $a_n\\to 0$ and still diverges. One small term does not guarantee a finite sum.
@@ -12523,11 +12309,7 @@ So the statement is True.`,
 Apply the financial identity that produces the quantity named in the claim:
 
 $$
-\\Pi_{12} = 1,902,375.45-1,703,043.55
-$$
-
-$$
-= 199,331.90
+\\Pi_{12} = 1,902,375.45-1,703,043.55 = 199,331.90
 $$
 
 The computed value is approximately \\$199,331.90, which matches the claim.
@@ -12545,9 +12327,9 @@ $$a_{C,12} = 120,000 \\times 1.03^{11}$$
 
 $$\\approx 166,108.06$$
 
-$$167,350.25-166,108.06$$
-
-$$= 1,242.19$$
+$$
+167,350.25-166,108.06 = 1,242.19
+$$
 
 Revenue still exceeds maintenance in year $12$ by about \\$1,242.19.
 
@@ -12565,11 +12347,7 @@ $$s_{C,20} = 120,000\\frac{1.03^{20}-1}{0.03}$$
 $$\\approx 3,224,444.94$$
 
 $$
-\\Pi_{20} = 3,302,850.60-3,224,444.94
-$$
-
-$$
-= 78,405.66
+\\Pi_{20} = 3,302,850.60-3,224,444.94 = 78,405.66
 $$
 
 The overview recovered $\\Pi_{12}=199,331.90$. Since $78,405.66<199,331.90$, the $20$-year profit sits below the $12$-year profit.
@@ -12652,15 +12430,7 @@ $$
 Substitute the stem numbers:
 
 $$
-s_{\\infty} = \\frac{2,400,000}{1-0.94}
-$$
-
-$$
-= \\frac{2,400,000}{0.06}
-$$
-
-$$
-= 40,000,000
+s_{\\infty} = \\frac{2,400,000}{1-0.94} = \\frac{2,400,000}{0.06} = 40,000,000
 $$
 
 That computed value matches the claim.
@@ -12700,15 +12470,13 @@ So the statement is False.`,
 
 Under the recovery scenario,
 
-$$1.06^7$$
-
-$$= 1.503630259$$
-
 $$
-s_7 = 2,400,000\\frac{1.503630259-1}{0.06}
+1.06^7 = 1.503630259
 $$
 
-$$= 2,400,000 \\times 8.393838$$
+$$
+s_7 = 2,400,000\\frac{1.503630259-1}{0.06} = 2,400,000 \\times 8.393838
+$$
 
 $$\\approx 20,145,210.36$$
 
@@ -12807,11 +12575,7 @@ $$`,
 For $k=1$, $s_n=an$. For finite $k\\ne 1$, $s_n=a\\frac{k^n-1}{k-1}$. When $|k|<1$, $s_{\\infty}=\\frac{a}{1-k}$. Terms tending to $0$ are necessary but not sufficient for convergence:
 
 $$
-s_1 = 25,000 \\times 9
-$$
-
-$$
-= 225,000
+s_1 = 25,000 \\times 9 = 225,000
 $$
 
 The computed value is approximately \\$225,000.00, which matches the claim.
@@ -12839,15 +12603,7 @@ $$
 Substitute the stem numbers:
 
 $$
-s_3 = \\frac{30,000}{1-0.92}
-$$
-
-$$
-= \\frac{30,000}{0.08}
-$$
-
-$$
-= 375,000
+s_3 = \\frac{30,000}{1-0.92} = \\frac{30,000}{0.08} = 375,000
 $$
 
 That computed value matches the claim.
@@ -12875,9 +12631,9 @@ $$a_3 = 30,000,$$
 
 $$k_3 = 0.92$$
 
-$$225,000+215,603.80+375,000$$
-
-$$= 815,603.80$$
+$$
+225,000+215,603.80+375,000 = 815,603.80
+$$
 
 The claim excludes Tranche 3 and stops at \\$440,603.80. The combined portfolio is \\$815,603.80.
 
@@ -12887,11 +12643,7 @@ So the statement is False.`,
 The fee in period $100$ is
 
 $$
-f_{100} = \\frac{1,000}{100}
-$$
-
-$$
-= 10
+f_{100} = \\frac{1,000}{100} = 10
 $$
 
 so the named term \\$10.00 is correct. The full stream is $1,000$ times the harmonic series, and $p=1$ fails the $p$-series test $p>1$. Terms tending to $0$ do not guarantee convergence.
