@@ -18,7 +18,6 @@ import {
 export function LocaleSync() {
   const pathname = useRouterState({ select: (s) => s.location.pathname });
   const { setLang } = useLanguage();
-  const hydratedAppPref = useRef(false);
 
   useEffect(() => {
     const urlLocale = getLocaleFromPath(pathname);
@@ -29,15 +28,14 @@ export function LocaleSync() {
 
     const base = stripLocalePrefix(pathname);
     if (isLocalizablePath(base)) {
-      setLang("en");
+      // English URL: render English, but keep the stored preference intact so
+      // app routes still use the language the visitor chose.
+      setLang("en", { persist: false });
       return;
     }
 
-    if (!hydratedAppPref.current) {
-      hydratedAppPref.current = true;
-      const stored = readStoredLang();
-      if (stored) setLang(stored);
-    }
+    const stored = readStoredLang();
+    if (stored) setLang(stored, { persist: false });
   }, [pathname, setLang]);
 
   return null;
