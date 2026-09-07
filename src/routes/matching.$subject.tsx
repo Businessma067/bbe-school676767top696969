@@ -640,9 +640,12 @@ function MatchingSubjectPage() {
                   style={{ opacity: 0 }}
                 />
                 {!isDragging && selectedAnchor && (
-                  <SelectedEndpoint
-                    point={selectedAnchor}
-                    color={subject.accent}
+                  <circle
+                    cx={selectedAnchor.x}
+                    cy={selectedAnchor.y}
+                    r={4}
+                    fill={subject.accent}
+                    style={{ opacity: 0.9 }}
                   />
                 )}
               </svg>
@@ -739,29 +742,6 @@ function SectionChip({
   );
 }
 
-/** Tiny delay so click-select doesn't flash a connector tip instantly. */
-function SelectedEndpoint({ point, color }: { point: Point; color: string }) {
-  const [ready, setReady] = useState(false);
-
-  useEffect(() => {
-    setReady(false);
-    const t = window.setTimeout(() => setReady(true), CLICK_LINE_DELAY_MS);
-    return () => window.clearTimeout(t);
-  }, [point.x, point.y]);
-
-  if (!ready) return null;
-
-  return (
-    <circle
-      cx={point.x}
-      cy={point.y}
-      r={4}
-      fill={color}
-      style={{ opacity: 0.9 }}
-    />
-  );
-}
-
 function Column({
   title,
   accent,
@@ -825,14 +805,14 @@ function Column({
                 onPointerUp={onPointerUp}
                 onPointerCancel={onPointerCancel}
                 className={
-                  "group relative w-full touch-none rounded-xl border px-3.5 py-3 text-left text-sm transition-all " +
+                  "group relative w-full touch-none rounded-xl border px-3.5 py-3 text-left text-sm " +
                   (isMatched
                     ? "border-emerald-300 bg-emerald-50/90 text-foreground dark:border-emerald-800 dark:bg-emerald-950/50"
                     : isWrong
                       ? "animate-[shake_0.45s_ease] border-red-400 bg-red-50 dark:border-red-700 dark:bg-red-950/40"
                       : isSelected
                         ? "border-transparent text-foreground shadow-md"
-                        : "border-border bg-card hover:border-caramel/40 hover:bg-secondary/60")
+                        : "border-border bg-card transition-colors hover:border-caramel/40 hover:bg-secondary/60")
                 }
                 style={
                   isSelected && !isMatched && !isWrong
