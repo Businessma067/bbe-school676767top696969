@@ -148,6 +148,9 @@ def merge_displays(text: str) -> tuple[str, int]:
 
         merged_body: str | None = None
 
+        def _norm_lhs(s: str) -> str:
+            return re.sub(r"\s+", "", s)
+
         orphan = _orphan_lhs(cur)
         if orphan and nxt_m:
             head, sep, lhs = orphan
@@ -174,6 +177,28 @@ def merge_displays(text: str) -> tuple[str, int]:
             else:
                 merged_body = f"{lhs} = {rhs}"
 
+        elif orphan:
+            # Next block is a full assignment for the orphan LHS:
+            #   $$x=0,\quad x$$  +  $$x=\pm\sqrt{3}$$  →  $$x=0,\quad x=\pm\sqrt{3}$$
+            # Or: $$f'(x)=2\qquad g'(x)$$ + $$g'(x)=2x-4$$
+            head, sep, lhs = orphan
+            nm = re.match(r"^([^=\n]+)=(.*)$", nxt, re.S)
+            if nm:
+                nxt_lhs = nm.group(1).strip()
+                nxt_rhs = nm.group(2).strip()
+                nl, ol = _norm_lhs(nxt_lhs), _norm_lhs(lhs)
+                if ol and (ol == nl or ol in nl or nl in ol):
+                    head_s = head.strip()
+                    if head_s:
+                        # Use comma-qquad when head is already an equation
+                        joiner = ",\\qquad " if "\\qquad" not in sep and "\\quad" in sep else sep
+                        if not joiner.strip().startswith(","):
+                            # ensure readable separator
+                            joiner = ",\\qquad " if "=" in head_s else sep
+                        merged_body = f"{head_s}{joiner}{lhs} = {nxt_rhs}"
+                    else:
+                        merged_body = f"{lhs} = {nxt_rhs}"
+
         else:
             imp = _implies_orphan(cur)
             if imp and nxt_m:
@@ -194,7 +219,6 @@ def merge_displays(text: str) -> tuple[str, int]:
             ):
                 # prev: C'_-(25)=2*25+20   next: =70,\qquad C'_+(25)=45
                 merged_body = f"{cur.strip()} {nxt}"
-
         if merged_body is None:
             out.append((kind, val))
             i += 1
