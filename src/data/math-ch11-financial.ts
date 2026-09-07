@@ -16069,20 +16069,16 @@ $$a = \\frac{7,200}{0.493369}$$
 
 $$a \\approx 14,593.54$$
 
-$$0.12 \\times 60,000$$
-
-$$= 7,200$$
-
-$$14,593.54 - 7,200$$
-
-$$= 7,393.54$$
-
 $$
-I_1 = 60,000 \\times 0.12
+0.12 \\times 60,000 = 7,200
 $$
 
 $$
-= 7,200
+14,593.54 - 7,200 = 7,393.54
+$$
+
+$$
+I_1 = 60,000 \\times 0.12 = 7,200
 $$
 
 The overview recovered that same first-year interest figure. The claim is \\$7,200.00.
@@ -16106,19 +16102,19 @@ $$a = \\frac{7,200}{0.493369}$$
 
 $$a \\approx 14,593.54$$
 
-$$0.12 \\times 60,000$$
+$$
+0.12 \\times 60,000 = 7,200
+$$
 
-$$= 7,200$$
-
-$$14,593.54 - 7,200$$
-
-$$= 7,393.54$$
+$$
+14,593.54 - 7,200 = 7,393.54
+$$
 
 The overview recovered first-year principal as $7,393.54$. Half the payment is
 
-$$\\frac{14,593.54}{2}$$
-
-$$= 7,296.77$$
+$$
+\\frac{14,593.54}{2} = 7,296.77
+$$
 
 Then $7,393.54 > 7,296.77$.
 
@@ -16127,19 +16123,19 @@ So the statement is True.`,
 
 The overview recovered the balance after payment 1 as $52,606.46$. Year-2 interest and principal are
 
-$$0.12 \\times 52,606.46$$
+$$
+0.12 \\times 52,606.46 = 6,312.77
+$$
 
-$$= 6,312.77$$
-
-$$14,593.54 - 6,312.77$$
-
-$$= 8,280.77$$
+$$
+14,593.54 - 6,312.77 = 8,280.77
+$$
 
 The balance after payment 2 is
 
-$$52,606.46 - 8,280.77$$
-
-$$= 44,325.69$$
+$$
+52,606.46 - 8,280.77 = 44,325.69
+$$
 
 The claim is \\$45,000.00. We have about \\$44,325.69.
 
@@ -16257,9 +16253,9 @@ So the statement is False.`,
 
 Total interest is total paid minus principal. Using the $48$-payment outlay about \\$28,667.57,
 
-$$28,667.57 - 24,000$$
-
-$$= 4,667.57$$
+$$
+28,667.57 - 24,000 = 4,667.57
+$$
 
 Compare the computed value with the claim (\\$4,667.57). The two sides agree.
 
@@ -16269,11 +16265,7 @@ So the statement is True.`,
 Four equal annual instalments at the same nominal $9\\%$ use $r=0.09$ and $n=4$:
 
 $$
-a = \\frac{0.09 \\times 24,000}{1-(1.09)^{-4}}
-$$
-
-$$
-= \\frac{2,160}{0.291676}
+a = \\frac{0.09 \\times 24,000}{1-(1.09)^{-4}} = \\frac{2,160}{0.291676}
 $$
 
 $$a \\approx 7,408.05$$
@@ -16418,13 +16410,13 @@ $$a = \\frac{4,500}{0.379079}$$
 
 $$a \\approx 11,870.89$$
 
-$$0.10 \\times 20,602.37$$
+$$
+0.10 \\times 20,602.37 = 2,060.24
+$$
 
-$$= 2,060.24$$
-
-$$11,870.89 - 2,060.24$$
-
-$$= 9,810.65$$
+$$
+11,870.89 - 2,060.24 = 9,810.65
+$$
 
 Then $2,060.24 < 9,810.65$.
 
@@ -16682,9 +16674,9 @@ So the statement is True.`,
 
 The first four payments are the committed \\$10,000 each:
 
-$$4 \\times 10,000$$
-
-$$= 40,000$$
+$$
+4 \\times 10,000 = 40,000
+$$
 
 Compare the computed value with the claim (that same total). The two sides agree.
 
@@ -16702,10 +16694,8 @@ $$r = 0.13,$$
 $$a = 10,000$$
 
 $$
-\\frac{\\ln(10,000)-\\ln(10,000-0.13 \\times 35,000)}{\\ln(1.13)}
+\\frac{\\ln(10,000)-\\ln(10,000-0.13 \\times 35,000)}{\\ln(1.13)} = \\frac{\\ln(10,000)-\\ln(5,450)}{\\ln(1.13)}
 $$
-
-$$= \\frac{\\ln(10,000)-\\ln(5,450)}{\\ln(1.13)}$$
 
 $$
 \\frac{\\ln(10,000)-\\ln(10,000-0.13 \\times 35,000)}{\\ln(1.13)}
@@ -16717,9 +16707,9 @@ $$\\frac{10,000}{0.13}\\bigl[(1.13)^{4}-1\\bigr]$$
 
 $$\\approx 48,497.97$$
 
-$$8,568.61 \\times 1.13$$
-
-$$= 9,682.53$$
+$$
+8,568.61 \\times 1.13 = 9,682.53
+$$
 
 The overview recovered the fifth and final payment as \\$9,682.53. The claim is that same figure.
 
@@ -16728,9 +16718,9 @@ So the statement is True.`,
 
 Total paid is four full payments plus the recovered final instalment:
 
-$$40,000 + 9,682.53$$
-
-$$= 49,682.53$$
+$$
+40,000 + 9,682.53 = 49,682.53
+$$
 
 Compare the computed value with the claim (\\$49,682.53). The two sides agree.
 
@@ -16739,9 +16729,9 @@ So the statement is True.`,
 
 Total interest is total paid minus principal:
 
-$$49,682.53 - 35,000$$
-
-$$= 14,682.53$$
+$$
+49,682.53 - 35,000 = 14,682.53
+$$
 
 Then $14,682.53 < 35,000$.
 
@@ -16976,11 +16966,7 @@ a = 250(4 + 1.5 \\times 0.08)
 $$
 
 $$
-a = 250 \\times 4.12
-$$
-
-$$
-= 1,030
+a = 250 \\times 4.12 = 1,030
 $$
 
 The claim is \\$1,100.00. We have \\$1,030, so the figures do not agree.
@@ -17121,10 +17107,8 @@ $$
 Substitute the stem numbers:
 
 $$
-a = \\frac{0.005 \\times 200,000}{1-(1.005)^{-240}}
+a = \\frac{0.005 \\times 200,000}{1-(1.005)^{-240}} = \\frac{1,000}{1-(1.005)^{-240}}
 $$
-
-$$= \\frac{1,000}{1-(1.005)^{-240}}$$
 
 $$\\approx 1,432.86$$
 
@@ -17150,16 +17134,12 @@ So the statement is True.`,
 
 The overview recovered $B_{60} \\approx 169,799.20$. Principal repaid after five years is
 
-$$200,000 - 169,799.20$$
-
-$$= 30,200.80$$
-
-$$\\frac{30,200.80}{200,000}$$
-
-$$= 0.1510$$
+$$
+200,000 - 169,799.20 = 30,200.80
+$$
 
 $$
-= 15.10\\%
+\\frac{30,200.80}{200,000} = 0.1510 = 15.10\\%
 $$
 
 The claim needs more than $25\\%$. We have about $15.10\\%$.
@@ -17189,9 +17169,9 @@ $$
 a = \\frac{0.005 \\times 200,000}{1-(1.005)^{-240}}
 $$
 
-$$200,000 - 169,799.20$$
-
-$$= 30,200.80$$
+$$
+200,000 - 169,799.20 = 30,200.80
+$$
 
 Sixty payments total $60 \\times 1,432.86 \\approx 85,971.60$, so interest is
 
@@ -17337,15 +17317,15 @@ So the statement is True.`,
 
 Eight full payments plus the recovered final instalment total
 
-$$8 \\times 25,000 + 13,100.16$$
-
-$$= 213,100.16$$
+$$
+8 \\times 25,000 + 13,100.16 = 213,100.16
+$$
 
 Interest is that total minus principal:
 
-$$213,100.16 - 120,000$$
-
-$$= 93,100.16$$
+$$
+213,100.16 - 120,000 = 93,100.16
+$$
 
 The claim is \\$105,000.00. We have about \\$93,100.16.
 
@@ -17354,9 +17334,9 @@ So the statement is False.`,
 
 Total paid is eight full payments plus the recovered final instalment:
 
-$$200,000 + 13,100.16$$
-
-$$= 213,100.16$$
+$$
+200,000 + 13,100.16 = 213,100.16
+$$
 
 Compare the computed value with the claim (\\$210,000.00). We have about \\$213,100.16. The two sides do not agree.
 
@@ -17365,9 +17345,9 @@ So the statement is False.`,
 
 Nine full payments would be \\$225,000. Against the recovered total \\$213,100.16,
 
-$$225,000 - 213,100.16$$
-
-$$= 11,899.84$$
+$$
+225,000 - 213,100.16 = 11,899.84
+$$
 
 Then $11,899.84 > 10,000$.
 
@@ -17500,9 +17480,9 @@ So the statement is True.`,
 
 Three due loan payments total
 
-$$3 \\times 16,176.12$$
-
-$$= 48,528.36$$
+$$
+3 \\times 16,176.12 = 48,528.36
+$$
 
 The reserve after three years is about \\$4,066.48. Then $48,528.36 > 4,066.48$.
 
@@ -18069,15 +18049,7 @@ $$
 Substitute the stem numbers:
 
 $$
-r = \\frac{9,600}{8,000} - 1
-$$
-
-$$
-= 0.20
-$$
-
-$$
-= 20\\%
+r = \\frac{9,600}{8,000} - 1 = 0.20 = 20\\%
 $$
 
 The computed value is approximately 20%, which matches the claim.
@@ -18088,15 +18060,7 @@ So the statement is True.`,
 Net present value is the discounted cash inflow total minus the initial outlay. The decision rule accepts the project when that difference is positive. Fifteen percent sits below the recovered $20\\%$ IRR. NPV at $15\\%$ is
 
 $$
-A = -8,000 + \\frac{9,600}{1.15}
-$$
-
-$$
-= -8,000 + 8,347.83
-$$
-
-$$
-= 347.83
+A = -8,000 + \\frac{9,600}{1.15} = -8,000 + 8,347.83 = 347.83
 $$
 
 Then $347.83 > 0$.
@@ -18107,15 +18071,7 @@ So the statement is True.`,
 Twenty-five percent sits above the recovered $20\\%$ IRR. NPV at $25\\%$ is
 
 $$
-A = -8,000 + \\frac{9,600}{1.25}
-$$
-
-$$
-= -8,000 + 7,680
-$$
-
-$$
-= -320
+A = -8,000 + \\frac{9,600}{1.25} = -8,000 + 7,680 = -320
 $$
 
 Then $-320 < 0$. The claim needs a positive NPV.
@@ -18126,15 +18082,7 @@ So the statement is False.`,
 With payoff \\$10,000 on the same \\$8,000 outlay, the one-year rate is
 
 $$
-r = \\frac{10,000}{8,000} - 1
-$$
-
-$$
-= 0.25
-$$
-
-$$
-= 25\\%
+r = \\frac{10,000}{8,000} - 1 = 0.25 = 25\\%
 $$
 
 Then $25\\% > 24\\%$.
@@ -18230,11 +18178,9 @@ So the statement is True.`,
 
 Eight percent sits below the recovered $10.92\\%$ IRR. NPV at $8\\%$ is
 
-$$-12,000 + \\frac{7,000}{1.08} + \\frac{7,000}{1.1664}$$
-
-$$= -12,000 + 6,481.48 + 6,001.37$$
-
-$$= 482.85$$
+$$
+-12,000 + \\frac{7,000}{1.08} + \\frac{7,000}{1.1664} = -12,000 + 6,481.48 + 6,001.37 = 482.85
+$$
 
 Then $482.85 > 0$.
 
@@ -18243,11 +18189,9 @@ So the statement is True.`,
 
 Twelve percent sits above the recovered $10.92\\%$ IRR. NPV at $12\\%$ is
 
-$$-12,000 + \\frac{7,000}{1.12} + \\frac{7,000}{1.2544}$$
-
-$$= -12,000 + 6,250.00 + 5,580.36$$
-
-$$= -169.64$$
+$$
+-12,000 + \\frac{7,000}{1.12} + \\frac{7,000}{1.2544} = -12,000 + 6,250.00 + 5,580.36 = -169.64
+$$
 
 Then $-169.64 < 0$. The claim needs a positive NPV.
 
@@ -18373,11 +18317,9 @@ So the statement is True.`,
 
 Ten percent sits below the recovered $11.98\\%$ IRR. NPV at $10\\%$ is
 
-$$-20,000 + \\frac{9,000}{1.10} + \\frac{15,000}{1.21}$$
-
-$$= -20,000 + 8,181.82 + 12,396.69$$
-
-$$= 578.51$$
+$$
+-20,000 + \\frac{9,000}{1.10} + \\frac{15,000}{1.21} = -20,000 + 8,181.82 + 12,396.69 = 578.51
+$$
 
 Then $578.51 > 0$.
 
@@ -18386,11 +18328,9 @@ So the statement is True.`,
 
 Fourteen percent sits above the recovered $11.98\\%$ IRR. NPV at $14\\%$ is
 
-$$-20,000 + \\frac{9,000}{1.14} + \\frac{15,000}{1.2996}$$
-
-$$= -20,000 + 7,894.74 + 11,542.01$$
-
-$$= -563.25$$
+$$
+-20,000 + \\frac{9,000}{1.14} + \\frac{15,000}{1.2996} = -20,000 + 7,894.74 + 11,542.01 = -563.25
+$$
 
 Then $-563.25 < 0$. The claim needs a positive NPV.
 
@@ -18416,9 +18356,9 @@ So the statement is True.`,
 
 The undiscounted sum of the three cash flows is
 
-$$-20,000 + 9,000 + 15,000$$
-
-$$= 4,000$$
+$$
+-20,000 + 9,000 + 15,000 = 4,000
+$$
 
 Compare the computed value with the claim (\\$4,000). The two sides agree.
 
@@ -18539,19 +18479,11 @@ So the statement is False.`,
 Eleven percent sits below both recovered IRRs. NPV at $11\\%$ is
 
 $$
-NPV_X = -15,000 + \\frac{17,250}{1.11}
+NPV_X = -15,000 + \\frac{17,250}{1.11} = 540.54
 $$
 
 $$
-= 540.54
-$$
-
-$$
-NPV_Y = -22,000 + \\frac{24,750}{1.11}
-$$
-
-$$
-= 297.30
+NPV_Y = -22,000 + \\frac{24,750}{1.11} = 297.30
 $$
 
 Both are positive. The claim needs Y negative.
@@ -18563,10 +18495,8 @@ With Y's payoff raised to \\$25,000,
 
 $$r_Y = \\frac{25,000}{22,000} - 1$$
 
-$$\\approx 0.1364$$
-
 $$
-= 13.64\\%
+\\approx 0.1364 = 13.64\\%
 $$
 
 Then $13.64\\% < 15\\%$.
@@ -18824,11 +18754,9 @@ So the statement is False.`,
 
 Nine percent sits below the recovered $10.78\\%$ IRR. NPV at $9\\%$ is
 
-$$-34,000 + \\frac{16,000}{1.09} + \\frac{24,000}{1.1881}$$
-
-$$= -34,000 + 14,678.90 + 20,200.32$$
-
-$$= 879.22$$
+$$
+-34,000 + \\frac{16,000}{1.09} + \\frac{24,000}{1.1881} = -34,000 + 14,678.90 + 20,200.32 = 879.22
+$$
 
 Then $879.22 > 0$. The claim needs a negative NPV.
 
@@ -18837,11 +18765,9 @@ So the statement is False.`,
 
 Thirteen percent sits above the recovered $10.78\\%$ IRR. NPV at $13\\%$ is
 
-$$-34,000 + \\frac{16,000}{1.13} + \\frac{24,000}{1.2769}$$
-
-$$= -34,000 + 14,159.29 + 18,795.52$$
-
-$$= -1,045.19$$
+$$
+-34,000 + \\frac{16,000}{1.13} + \\frac{24,000}{1.2769} = -34,000 + 14,159.29 + 18,795.52 = -1,045.19
+$$
 
 Then $-1,045.19 < 0$.
 
@@ -18870,15 +18796,7 @@ A smaller outlay on the same returns raises the internal rate. With $a_0 = -30,0
 $$12s^{2} + 8s - 15 = 0$$
 
 $$
-s = \\frac{-8 + 28}{24}
-$$
-
-$$
-= \\frac{5}{6}, \\qquad r
-$$
-
-$$
-= 20\\%
+s = \\frac{-8 + 28}{24} = \\frac{5}{6}, \\qquad r = 20\\%
 $$
 
 Then $20\\% > 10.78\\%$. The IRR rises, it does not fall.
@@ -18971,11 +18889,9 @@ So the statement is True.`,
 
 Ten percent sits below the recovered $15\\%$ IRR. NPV at $10\\%$ is
 
-$$-40,000 + \\frac{22,000}{1.10} + \\frac{27,600}{1.21}$$
-
-$$= -40,000 + 20,000.00 + 22,809.92$$
-
-$$= 2,809.92$$
+$$
+-40,000 + \\frac{22,000}{1.10} + \\frac{27,600}{1.21} = -40,000 + 20,000.00 + 22,809.92 = 2,809.92
+$$
 
 Then $2,809.92 > 0$.
 
@@ -18984,11 +18900,9 @@ So the statement is True.`,
 
 Twenty percent sits above the recovered $15\\%$ IRR. NPV at $20\\%$ is
 
-$$-40,000 + \\frac{22,000}{1.20} + \\frac{27,600}{1.44}$$
-
-$$= -40,000 + 18,333.33 + 19,166.67$$
-
-$$= -2,500$$
+$$
+-40,000 + \\frac{22,000}{1.20} + \\frac{27,600}{1.44} = -40,000 + 18,333.33 + 19,166.67 = -2,500
+$$
 
 Then $-2,500 < 0$.
 
@@ -18997,9 +18911,9 @@ So the statement is True.`,
 
 The undiscounted sum of the three cash flows is
 
-$$-40,000 + 22,000 + 27,600$$
-
-$$= 9,600$$
+$$
+-40,000 + 22,000 + 27,600 = 9,600
+$$
 
 Compare the computed value with the claim (\\$9,600). The two sides agree.
 
@@ -19019,12 +18933,8 @@ $$a_2 = 27,600,$$
 $$n = 2$$
 
 $$
-A = -40,000 + \\frac{22,000}{1.15} + \\frac{27,600}{1.3225}
+A = -40,000 + \\frac{22,000}{1.15} + \\frac{27,600}{1.3225} = -40,000 + 19,130.43 + 20,869.57 = 0
 $$
-
-$$= -40,000 + 19,130.43 + 20,869.57$$
-
-$$= 0$$
 
 So the statement is True.`,
     ],
@@ -19096,15 +19006,13 @@ NPV subtracts the upfront outlay from the discounted inflow total.
 
 Net present value at the named rate uses the overview's cash-flow formula. At $9\\%$:
 
-$$(1.09)^2$$
+$$
+(1.09)^2 = 1.1881
+$$
 
-$$= 1.1881$$
-
-$$NPV = -65,000 + \\frac{34,000}{1.09} + \\frac{42,000}{1.1881}$$
-
-$$= -65,000 + 31,192.66 + 35,350.56$$
-
-$$= 1,543.22$$
+$$
+NPV = -65,000 + \\frac{34,000}{1.09} + \\frac{42,000}{1.1881} = -65,000 + 31,192.66 + 35,350.56 = 1,543.22
+$$
 
 The claim needs $NPV > 0$. We have $1,543.22 > 0$.
 
@@ -19115,15 +19023,13 @@ Form NPV as discounted inflows minus the initial cost.
 
 Net present value at the named rate uses the overview's cash-flow formula. At $12\\%$:
 
-$$(1.12)^2$$
+$$
+(1.12)^2 = 1.2544
+$$
 
-$$= 1.2544$$
-
-$$NPV = -65,000 + \\frac{34,000}{1.12} + \\frac{42,000}{1.2544}$$
-
-$$= -65,000 + 30,357.14 + 33,482.14$$
-
-$$= -1,160.72$$
+$$
+NPV = -65,000 + \\frac{34,000}{1.12} + \\frac{42,000}{1.2544} = -65,000 + 30,357.14 + 33,482.14 = -1,160.72
+$$
 
 The claim needs $NPV > 0$. We have $-1,160.72 < 0$.
 
@@ -19140,12 +19046,8 @@ $$84s^2 + 68s - 65 = 0$$
 
 The discriminant is
 
-$$68^2 + 4 \\cdot 84 \\cdot 65$$
-
-$$= 4,624 + 21,840$$
-
 $$
-= 26,464
+68^2 + 4 \\cdot 84 \\cdot 65 = 4,624 + 21,840 = 26,464
 $$
 
 $$\\sqrt{26,464} \\approx 162.678$$
@@ -19162,9 +19064,9 @@ $$\\approx 77.4\\%$$
 
 The overview recovered the original rate $10.69\\%$. Twice that rate is
 
-$$2 \\times 10.69\\%$$
-
-$$= 21.38\\%$$
+$$
+2 \\times 10.69\\% = 21.38\\%
+$$
 
 Since $77.4\\% > 21.38\\%$, the new internal rate more than doubles.
 
@@ -19177,33 +19079,19 @@ $$42s^2 + 34s - 60 = 0$$
 
 The discriminant is
 
-$$34^2 + 4 \\cdot 42 \\cdot 60$$
-
-$$= 1,156 + 10,080$$
-
 $$
-= 11,236
+34^2 + 4 \\cdot 42 \\cdot 60 = 1,156 + 10,080 = 11,236
 $$
 
 $$\\sqrt{11,236} = 106$$
 
 $$
-s = \\frac{-34 + 106}{84}
+s = \\frac{-34 + 106}{84} = \\frac{72}{84} = \\frac{6}{7}
 $$
 
 $$
-= \\frac{72}{84}
+r = \\frac{7}{6} - 1 = \\frac{1}{6}
 $$
-
-$$
-= \\frac{6}{7}
-$$
-
-$$
-r = \\frac{7}{6} - 1
-$$
-
-$$= \\frac{1}{6}$$
 
 $$\\approx 16.67\\%$$
 
@@ -19301,15 +19189,7 @@ $$
 Substitute the stem numbers:
 
 $$
-r = \\frac{6,000}{50,000}
-$$
-
-$$
-= 0.12
-$$
-
-$$
-= 12\\%
+r = \\frac{6,000}{50,000} = 0.12 = 12\\%
 $$
 
 The computed value is approximately 12%, which matches the claim.
@@ -19327,10 +19207,8 @@ Substitute the stem numbers:
 
 $$r = \\frac{1}{2.4297} - 1$$
 
-$$\\approx -0.5884$$
-
 $$
-= -58.84\\%
+\\approx -0.5884 = -58.84\\%
 $$
 
 The computed value is approximately -58.84%, which matches the claim.
@@ -19348,10 +19226,8 @@ Substitute the stem numbers:
 
 $$r = \\frac{1}{2.4297} - 1$$
 
-$$\\approx -0.5884$$
-
 $$
-= -58.84\\%
+\\approx -0.5884 = -58.84\\%
 $$
 
 The computed figure matches the claim.
@@ -19361,9 +19237,9 @@ So the statement is True.`,
 
 The overview recovered Option 2's cash flows $a_0=-50,000$ and
 
-$$a_1 = a_2$$
-
-$$= 6,000$$
+$$
+a_1 = a_2 = 6,000
+$$
 
 . Their undiscounted sum is
 
@@ -19383,13 +19259,13 @@ $$6,000 s^2 + 6,000 s - 50,000 = 0$$
 
 $$3s^2 + 3s - 25 = 0$$
 
-$$3^2 + 4 \\cdot 3 \\cdot 25$$
+$$
+3^2 + 4 \\cdot 3 \\cdot 25 = 309
+$$
 
-$$= 309$$
-
-$$-50,000 + 6,000 + 6,000$$
-
-$$= -38,000$$
+$$
+-50,000 + 6,000 + 6,000 = -38,000
+$$
 
 Compare the computed value with the claim (-\\$40,000). We have -\\$38,000. The two sides do not agree.
 
@@ -19412,18 +19288,14 @@ $$6,000 s^2 + 6,000 s - 50,000 = 0$$
 
 $$3s^2 + 3s - 25 = 0$$
 
-$$3^2 + 4 \\cdot 3 \\cdot 25$$
-
-$$= 309$$
+$$
+3^2 + 4 \\cdot 3 \\cdot 25 = 309
+$$
 
 $$r = \\frac{6,000}{50,000} - 1$$
 
-$$0.12 - 1$$
-
-$$= -0.88$$
-
 $$
-= -88\\%
+0.12 - 1 = -0.88 = -88\\%
 $$
 
 The overview recovered Option 2's two-year rate $r \\approx -58.84\\%$. Since $-88\\% < -58.84\\%$, the truncated project has an even lower internal rate.
@@ -19537,15 +19409,7 @@ So the statement is True.`,
 Apply the financial identity that produces the quantity named in the claim:
 
 $$
-r_B = \\frac{81,200}{70,000} - 1
-$$
-
-$$
-= 0.16
-$$
-
-$$
-= 16\\%
+r_B = \\frac{81,200}{70,000} - 1 = 0.16 = 16\\%
 $$
 
 The computed value is approximately 16%, which matches the claim.
@@ -19571,13 +19435,13 @@ $$88,000 s^2 + 54,000 s - 120,000 = 0$$
 
 $$44s^2 + 27s - 60 = 0$$
 
-$$27^2 + 4 \\cdot 44 \\cdot 60$$
+$$
+27^2 + 4 \\cdot 44 \\cdot 60 = 729 + 10,560
+$$
 
-$$= 729 + 10,560$$
-
-$$27^2 + 4 \\cdot 44 \\cdot 60$$
-
-$$= 11,289$$
+$$
+27^2 + 4 \\cdot 44 \\cdot 60 = 11,289
+$$
 
 $$16\\% > 11.04\\%$$
 
@@ -19588,23 +19452,19 @@ So the statement is True.`,
 
 Net present value discounts each design's cash flows at $13\\%$. For Design A:
 
-$$(1.13)^2$$
+$$
+(1.13)^2 = 1.2769
+$$
 
-$$= 1.2769$$
-
-$$NPV_A = -120,000 + \\frac{54,000}{1.13} + \\frac{88,000}{1.2769}$$
-
-$$= -120,000 + 47,787.61 + 68,916.91$$
-
-$$= -3,295.48$$
+$$
+NPV_A = -120,000 + \\frac{54,000}{1.13} + \\frac{88,000}{1.2769} = -120,000 + 47,787.61 + 68,916.91 = -3,295.48
+$$
 
 For Design B:
 
-$$NPV_B = -70,000 + \\frac{81,200}{1.13}$$
-
-$$= -70,000 + 71,858.41$$
-
-$$= 1,858.41$$
+$$
+NPV_B = -70,000 + \\frac{81,200}{1.13} = -70,000 + 71,858.41 = 1,858.41
+$$
 
 The claim needs $NPV_A < 0$ and $NPV_B > 0$. We have $-3,295.48 < 0$ and $1,858.41 > 0$.
 
@@ -19617,12 +19477,8 @@ $$22s^2 + 11s - 30 = 0$$
 
 The discriminant is
 
-$$11^2 + 4 \\cdot 22 \\cdot 30$$
-
-$$= 121 + 2,640$$
-
 $$
-= 2,761
+11^2 + 4 \\cdot 22 \\cdot 30 = 121 + 2,640 = 2,761
 $$
 
 $$\\sqrt{2,761} \\approx 52.545$$
