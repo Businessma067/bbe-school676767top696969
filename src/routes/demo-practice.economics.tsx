@@ -2,7 +2,6 @@ import { recordTaskAttempt } from "@/lib/user-progress";
 import { createFileRoute } from "@tanstack/react-router";
 import { useEffect, useMemo, useRef, useState, type ReactNode } from "react";
 import { useServerFn } from "@tanstack/react-start";
-import { supabase } from "@/integrations/supabase/client";
 import { cn } from "@/lib/utils";
 import { explainCase } from "@/lib/explain-case.functions";
 import { useTimedSession } from "@/lib/timed-practice";
@@ -13,6 +12,7 @@ import { CaseContextRich } from "@/components/CaseContextRich";
 import { ExplanationProse } from "@/components/ExplanationProse";
 import { scrubStatementHints } from "@/lib/case-context";
 import { cleanExplanation } from "@/lib/clean-explanation";
+import { loadAllEconomicsChapterTasks } from "@/data/economics-chapters";
 import { PRACTICE_BODY_STACK, PRACTICE_PAGE } from "@/lib/practice-layout";
 import {
   practiceExplanationToggleClass,
@@ -153,14 +153,27 @@ function EconomicsTasks() {
   useEffect(() => {
     let cancel = false;
     (async () => {
-      const { data, error } = await supabase
-        .from("economics_cases")
-        .select("id, case_id, title, context, statements, answer_key, tactical_explanations, difficulty_level, sort_order")
-        .eq("tier", "demo")
-        .order("sort_order", { ascending: true });
-      if (cancel) return;
-      if (error) setError(error.message);
-      else setCases((data as Case[]) ?? []);
+      try {
+        const loaded = await loadAllEconomicsChapterTasks();
+        if (cancel) return;
+        const rows: Case[] = loaded.flatMap(({ tasks }) =>
+          tasks.map((t) => ({
+            id: t.id,
+            case_id: t.case_id,
+            title: t.title,
+            context: t.context,
+            statements: t.statements,
+            answer_key: t.answer_key,
+            tactical_explanations: t.tactical_explanations,
+            difficulty_level: t.difficulty_level,
+            sort_order: t.sort_order,
+          })),
+        );
+        setCases(rows);
+      } catch (err) {
+        if (cancel) return;
+        setError(err instanceof Error ? err.message : "Failed to load economics cases.");
+      }
     })();
     return () => { cancel = true; };
   }, []);
