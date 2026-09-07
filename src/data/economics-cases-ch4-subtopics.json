@@ -599,11 +599,11 @@
       false
     ],
     "tactical_explanations": [
-      "TRUE — Check the sentence against the core concept named in the stem, including every scope word.\n\nOverdraft facilities provide flexible short-term withdrawal beyond the account balance.\n\nThe statement is true.",
-      "TRUE — Check the sentence against the core concept named in the stem, including every scope word.\n\nSuppliers may grant a credit period before payment is due.\n\nThe statement is true.",
-      "TRUE — Map the scenario onto the textbook category first, then test whether the sentence describes that category accurately.\n\nOverdraft interest accrues when the account balance falls below zero.\n\nThe statement is true.",
-      "TRUE — Check the sentence against the core concept named in the stem, including every scope word.\n\nProperty-backed mortgages commonly secure long-term bank lending.\n\nThe statement is true.",
-      "FALSE — Map the scenario onto the textbook category first, then test whether the sentence describes that category accurately.\n\nTrade credit typically covers short-term purchase obligations, not long-term finance.\n\nThe statement is false. A student who matched the topic to \"Trade credit from suppliers is classified as long-term debt finance because payment is deferred\" without checking the rest of the sentence would mark the statement true.\n"
+      "TRUE — A bank overdraft is arranged on a business current account. Once that account exists, the bank may allow the balance to go negative up to an agreed limit, giving flexible short-term credit for temporary cash gaps. Flexibility comes from drawing only what is needed, when it is needed, within the facility.\n\nThe statement is true.",
+      "TRUE — Trade credit is a supplier agreement that postpones payment for goods already delivered or invoiced. The business receives materials or stock now and settles within the agreed credit period. Deferral is contractual timing, not cancellation of the purchase price.\n\nThe statement is true.",
+      "TRUE — Overdraft interest is charged on the overdrawn amount during periods when the account is below zero (or beyond any interest-free buffer). When the balance is positive and the facility is unused, that overdraft interest does not accrue on a healthy credit balance. Cost follows actual use of the credit.\n\nThe statement is true.",
+      "TRUE — Long-term bank loans are frequently secured by mortgages over land and property. The pledged asset serves as collateral: if the borrower defaults, the lender can enforce against that property. Collateral does not remove the debt; it backs repayment over a multi-year horizon.\n\nThe statement is true.",
+      "FALSE — Trade credit is short-term finance tied to purchase cycles—typically days or weeks, not years. Deferring payment does not reclassify supplier credit as long-term debt finance. Long-term debt usually covers facilities lasting beyond a year, such as term loans or mortgages.\n\nThe statement is false."
     ],
     "difficulty_level": "2/5",
     "tier": "full"
@@ -628,11 +628,11 @@
       false
     ],
     "tactical_explanations": [
-      "TRUE — Check the sentence against the core concept named in the stem, including every scope word.\n\nOwner savings are a common external funding source at establishment.\n\nThe statement is true.",
-      "TRUE — Map the scenario onto the textbook category first, then test whether the sentence describes that category accurately.\n\nLimited personal funds constrain the ability to launch and operate.\n\nThe statement is true.",
-      "FALSE — Map the scenario onto the textbook category first, then test whether the sentence describes that category accurately.\n\nStart-up savings are owner investment (external), not retained operating profit (internal).\n\nThe statement is false. A student who matched the topic to \"Personal savings invested at start-up are internal finance because they are generated from earlier…\" without checking the rest of the sentence would mark the statement true.\n",
-      "FALSE — Read the quantifier. Words such as never, always, only, or all turn a generally valid idea into a claim that one counterexample rejects.\n\nVoluntary owner investment from savings is common despite no minimum rule.\n\nThe statement is false. A student who overlooked the word \"never\" in \"No financial requirements to start a sole proprietorship mean the owner never contributes personal…\" would treat the restriction as absent and mark the statement true.\n",
-      "FALSE — Check the sentence against the core concept named in the stem, including every scope word.\n\nAvailable funds largely reflect the proprietor's financial capacity.\n\nThe statement is false. A student who matched the topic to \"Financial capability of the sole proprietor has no bearing on funds available to the…\" without checking the rest of the sentence would mark the statement true.\n"
+      "TRUE — In the sources-of-finance framework used here, money the owner injects from personal savings at start-up is treated as an external source: it comes from outside the business's own retained trading surplus. Most sole proprietors begin that way, funding launch costs from personal wealth before operations generate internal funds.\n\nThe statement is true.",
+      "TRUE — Because funding capacity largely tracks the proprietor's personal resources at launch, a lack of financial funds makes establishment very difficult. Easy legal entry does not invent capital; without savings or access to outside finance, paying start-up costs remains hard.\n\nThe statement is true.",
+      "FALSE — Internal finance is generated by the business itself—retained profit or sale of assets already owned after trading has begun. Personal savings invested at start-up are not earlier business profits; they precede operations. Classifying them as internal because they later sit in the business account confuses source with deposit location.\n\nThe statement is false.",
+      "FALSE — “No financial requirements” means no mandatory minimum capital rule, not that owners never put money in. Most sole traders voluntarily contribute personal capital to buy stock, equipment, and working cash. Absence of a legal minimum does not imply zero owner contribution in practice.\n\nThe statement is false.",
+      "FALSE — Funds available to the business depend heavily on what the sole proprietor can supply or attract. Personal financial capability therefore has a direct bearing on start-up and early funding. Claiming it has no bearing contradicts how sole-trader finance usually works.\n\nThe statement is false."
     ],
     "difficulty_level": "2/5",
     "tier": "full"
@@ -657,11 +657,11 @@
       false
     ],
     "tactical_explanations": [
-      "FALSE — Check the sentence against the core concept named in the stem, including every scope word.\n\nProceeds from disposing unused assets are internal funds, not external creditor finance.\n\nThe statement is false. A student who matched the topic to \"Sale of assets that are no longer needed is classified as external finance provided…\" without checking the rest of the sentence would mark the statement true.\n",
-      "FALSE — Map the scenario onto the textbook category first, then test whether the sentence describes that category accurately.\n\nOwner investment is external finance even though ownership is unified.\n\nThe statement is false. A student who matched the topic to \"The owner's investment from savings is internal finance because the owner and the business…\" without checking the rest of the sentence would mark the statement true.\n",
-      "TRUE — Check that the comparison runs in the stated direction and attaches the feature to the correct member of the pair.\n\nReinvested profit remains inside the business as internal finance.\n\nThe statement is true.",
-      "FALSE — Map the scenario onto the textbook category first, then test whether the sentence describes that category accurately.\n\nInvestors and banks provide external finance regardless of the receiving account.\n\nThe statement is false. A student who matched the topic to \"Investor funds and creditor loans from banks are internal sources because they are deposited…\" without checking the rest of the sentence would mark the statement true.\n",
-      "FALSE — Check the sentence against the core concept named in the stem, including every scope word.\n\nInternal finance avoids interest charges; it is not a loan from the owner-as-creditor.\n\nThe statement is false. A student who matched the topic to \"Internal sources of finance require paying market interest rates to the proprietor acting as…\" without checking the rest of the sentence would mark the statement true.\n"
+      "FALSE — Selling assets the business no longer needs releases cash from resources already inside the firm. That is internal finance. Creditors are not providing the money; the business is monetising its own surplus assets. Labelling asset sales as external creditor finance misstates the source.\n\nThe statement is false.",
+      "FALSE — Legal identity of owner and business does not decide the internal/external finance label. Owner savings injected into the firm are classified as external finance in this framework because they are not generated by retained operations. Sameness of legal person does not convert owner capital into internal finance.\n\nThe statement is false.",
+      "TRUE — When profit is kept in the firm and reinvested instead of withdrawn, the funding comes from the business's own surplus. That retained profit is the textbook internal source once the sole proprietorship is operating and generating revenue.\n\nThe statement is true.",
+      "FALSE — Investor funds and bank loans originate outside the firm and create claims by outsiders. Depositing the cash in the business account only records receipt; it does not turn external capital or debt into internal finance.\n\nThe statement is false.",
+      "FALSE — Internal sources are valued partly because they avoid interest charges payable to external lenders. The proprietor is not treated as a market lender who must be paid interest on retained profit. Requiring market interest to the owner as if internal funds were a loan invents a cost the classification exists to avoid.\n\nThe statement is false."
     ],
     "difficulty_level": "2/5",
     "tier": "full"
@@ -686,11 +686,11 @@
       true
     ],
     "tactical_explanations": [
-      "TRUE — Check the sentence against the core concept named in the stem, including every scope word.\n\nOwner, investor, and creditor funds enter from outside accumulated internal surplus.\n\nThe statement is true.",
-      "TRUE — Check the sentence against the core concept named in the stem, including every scope word.\n\nRetained earnings and asset sales fund the firm from within.\n\nThe statement is true.",
-      "TRUE — Read the quantifier. Words such as never, always, only, or all turn a generally valid idea into a claim that one counterexample rejects.\n\nEvery credit arrangement creates repayment obligations for the proprietor.\n\nThe statement is true.",
-      "TRUE — Map the scenario onto the textbook category first, then test whether the sentence describes that category accurately.\n\nSurplus profit may be reinvested or taken by the proprietor.\n\nThe statement is true.",
-      "TRUE — Check the sentence against the core concept named in the stem, including every scope word.\n\nUnlimited liability persists regardless of whether finance is internal or external.\n\nThe statement is true."
+      "TRUE — Owner investment, investor capital, and creditor loans all come from outside the firm's retained operating surplus, so they are external sources. Together they expand what the sole proprietor can fund beyond internal generation alone.\n\nThe statement is true.",
+      "TRUE — Once operations produce surplus, retained profit kept in the business and cash from selling unneeded assets are internal sources. They recycle resources already earned or owned inside the firm.\n\nThe statement is true.",
+      "TRUE — Every credit facility—overdraft, trade credit, term loan, mortgage—creates an amount owed. For the sole proprietor those amounts are personal liabilities regardless of whether maturity is short or long.\n\nThe statement is true.",
+      "TRUE — Profit exists when revenues exceed expenses. The proprietor then chooses: withdraw the surplus for personal use, or retain and reinvest it in the business. Retention is possible only if withdrawal does not take the funds out.\n\nThe statement is true.",
+      "TRUE — Unlimited liability is a property of the ownership form, not of the finance label. Whether expansion is funded from retained profit or from bank loans, the proprietor remains personally exposed to business debts. Internal finance does not create a limited-liability shield.\n\nThe statement is true."
     ],
     "difficulty_level": "2/5",
     "tier": "full"
@@ -715,11 +715,11 @@
       true
     ],
     "tactical_explanations": [
-      "TRUE — Map the scenario onto the textbook category first, then test whether the sentence describes that category accurately.\n\nNo minimum capital requirement simplifies start-up.\n\nThe statement is true.",
-      "TRUE — Map the scenario onto the textbook category first, then test whether the sentence describes that category accurately.\n\nPersonal savings commonly seed the business.\n\nThe statement is true.",
-      "TRUE — Map the scenario onto the textbook category first, then test whether the sentence describes that category accurately.\n\nInvestors and banks provide additional external funds when needed.\n\nThe statement is true.",
-      "TRUE — Check the sentence against the core concept named in the stem, including every scope word.\n\nOperating surplus can be reinvested alongside external finance.\n\nThe statement is true.",
-      "TRUE — Check the sentence against the core concept named in the stem, including every scope word.\n\nLong-term lenders commonly demand security such as land or property.\n\nThe statement is true."
+      "TRUE — Low entry barriers mean no mandatory financial requirements must be met before starting as a sole trader. That legal simplicity lets small ventures begin without first raising statutory share capital.\n\nThe statement is true.",
+      "TRUE — In practice most sole proprietors still invest their own savings at launch to cover stock, tools, and early expenses. Easy legal entry and voluntary owner funding commonly appear together.\n\nThe statement is true.",
+      "TRUE — When personal funds fall short, the proprietor can seek extra money from investors and/or banks. Those routes add external finance capacity after or alongside owner savings.\n\nThe statement is true.",
+      "TRUE — After trading begins, retained profit can supplement external borrowing. The finance mix then combines internal surplus with outside credit rather than relying on only one channel.\n\nThe statement is true.",
+      "TRUE — Long-term lenders typically ask for pledgeable assets as collateral to secure repayment over multi-year horizons. Requiring collateral is a standard condition when extending long-term credit to sole proprietors.\n\nThe statement is true."
     ],
     "difficulty_level": "1/5",
     "tier": "full"
@@ -744,11 +744,11 @@
       true
     ],
     "tactical_explanations": [
-      "TRUE — Map the scenario onto the textbook category first, then test whether the sentence describes that category accurately.\n\nOperating surplus creates profit available for retention or withdrawal.\n\nThe statement is true.",
-      "TRUE — Check that the comparison runs in the stated direction and attaches the feature to the correct member of the pair.\n\nReinvested earnings are an internal funding source.\n\nThe statement is true.",
-      "TRUE — Check the sentence against the core concept named in the stem, including every scope word.\n\nThe proprietor may withdraw profit rather than retain it.\n\nThe statement is true.",
-      "TRUE — Check the sentence against the core concept named in the stem, including every scope word.\n\nInternal funds avoid borrowing costs such as interest.\n\nThe statement is true.",
-      "TRUE — Check the sentence against the core concept named in the stem, including every scope word.\n\nInternal finance carries no creditor interest charges.\n\nThe statement is true."
+      "TRUE — Profit is the surplus when revenues exceed expenses. That surplus can be left in the business and used to buy new equipment or otherwise reinvest—exactly the decision facing the profitable sole trader in the stem.\n\nThe statement is true.",
+      "TRUE — If the proprietor does not withdraw the profit, the retained amount funds the firm from inside. Classification as internal finance follows from keeping earned surplus in the business.\n\nThe statement is true.",
+      "TRUE — Withdrawal is always an available choice for a sole trader: the owner can take profit out for personal use instead of funding expansion. Reinvestment is optional, not automatic.\n\nThe statement is true.",
+      "TRUE — Creditor borrowing typically carries interest and related financial charges. Funding equipment from retained profit avoids those charges because no lender is providing the money.\n\nThe statement is true.",
+      "TRUE — Internally generated funds similarly avoid interest payments that external creditors would charge on a loan of the same amount. The cost saving is the economic reason retained profit is attractive when surplus exists.\n\nThe statement is true."
     ],
     "difficulty_level": "2/5",
     "tier": "full"
@@ -773,11 +773,11 @@
       true
     ],
     "tactical_explanations": [
-      "FALSE — Read the quantifier. Words such as never, always, only, or all turn a generally valid idea into a claim that one counterexample rejects.\n\nRetained profit is internal finance and involves no creditor collateral.\n\nThe statement is false. A student who overlooked the word \"never\" in \"Retained profit is never accepted as security and therefore collateral applies only to external…\" would treat the restriction as absent and mark the statement true.\n",
-      "TRUE — Map the scenario onto the textbook category first, then test whether the sentence describes that category accurately.\n\nLenders commonly demand security for longer-term exposure.\n\nThe statement is true.",
-      "TRUE — Check the sentence against the core concept named in the stem, including every scope word.\n\nMortgages on land and property frequently back long-term loans.\n\nThe statement is true.",
-      "TRUE — Check the sentence against the core concept named in the stem, including every scope word.\n\nCredit agreements specify repayment periods and interest as the rate of return.\n\nThe statement is true.",
-      "TRUE — Read the quantifier. Words such as never, always, only, or all turn a generally valid idea into a claim that one counterexample rejects.\n\nMortgaged private property can be claimed upon default.\n\nThe statement is true."
+      "FALSE — Collateral means pledgeable assets a lender can claim if the borrower defaults. Retained profit is not itself a collateral object—it is an internal funding source—but assets built up with retained profit can still be pledged for a loan. The statement’s claim that retained profit is “never accepted as security,” and its leap that collateral therefore “applies only to external borrowing,” muddles source-of-finance labels with security practice. External borrowing is where collateral requirements appear, yet the wording falsely treats retained profit as a rejected form of security rather than explaining that collateral attaches to assets in creditor relationships. The assertion as stated is not a correct principle.\n\nThe statement is false.",
+      "TRUE — For long-term credit, financial institutions typically want pledgeable assets as collateral so they have recourse if the borrower defaults over a multi-year loan life. That security demand is standard lending practice for sole proprietors seeking long-term bank finance.\n\nThe statement is true.",
+      "TRUE — Mortgages over land and property are a common way to back long-term bank loans. The property is pledged; the loan remains repayable according to the mortgage and loan agreement.\n\nThe statement is true.",
+      "TRUE — A creditor advances money for an agreed period. Repayment follows the contract and usually includes interest as the price of borrowing. Time-limited advance plus contractual repayment is the basic lending mechanism.\n\nThe statement is true.",
+      "TRUE — If private property was mortgaged as collateral and the business cannot repay, that property remains at stake: the lender can enforce the security. Unlimited liability and collateral enforcement can both put the pledged private asset at risk when default occurs.\n\nThe statement is true."
     ],
     "difficulty_level": "2/5",
     "tier": "full"
@@ -802,11 +802,11 @@
       false
     ],
     "tactical_explanations": [
-      "TRUE — Map the scenario onto the textbook category first, then test whether the sentence describes that category accurately.\n\nUnlimited liability extends creditor reach to personal property.\n\nThe statement is true.",
-      "FALSE — Check the sentence against the core concept named in the stem, including every scope word.\n\nSole proprietorships are unincorporated and do not confer limited liability.\n\nThe statement is false. A student who matched the topic to \"Incorporating informally as a sole trader limits creditor claims to assets formally recorded on…\" without checking the rest of the sentence would mark the statement true.\n",
-      "FALSE — Read the quantifier. Words such as never, always, only, or all turn a generally valid idea into a claim that one counterexample rejects.\n\nEmployees do not assume the proprietor's unlimited liability.\n\nThe statement is false. A student who overlooked the word \"all\" in \"Employees hired by the sole proprietor share unlimited liability for all business obligations equally…\" would treat the restriction as absent and mark the statement true.\n",
-      "FALSE — Read the quantifier. Words such as never, always, only, or all turn a generally valid idea into a claim that one counterexample rejects.\n\nLack of legal personality does not cancel trade credit liabilities.\n\nThe statement is false. A student who overlooked the word \"automatically\" in \"Trade credit obligations disappear automatically when the sole proprietorship is not a separate legal…\" would treat the restriction as absent and mark the statement true.\n",
-      "FALSE — Map the scenario onto the textbook category first, then test whether the sentence describes that category accurately.\n\nUnlimited liability covers all business debts, not only external borrowing.\n\nThe statement is false. A student who matched the topic to \"Unlimited liability applies only when the sole proprietorship borrows from external creditors\" without checking the rest of the sentence would mark the statement true.\n"
+      "TRUE — When business debts exceed what firm resources can cover, unlimited liability lets creditors pursue the sole proprietor's private assets for the shortfall. That personal reach is the insolvency principle the stem asks for.\n\nThe statement is true.",
+      "FALSE — There is no such thing as incorporating informally as a sole trader. Sole proprietorship remains unincorporated; creditor claims are not limited to balance-sheet business assets. Limited claims of that sort belong to limited companies, not to this form.\n\nThe statement is false.",
+      "FALSE — Employees do not share unlimited liability equally with the owner. Residual responsibility for business obligations stays with the sole proprietor. Wages do not convert staff into co-liable owners.\n\nThe statement is false.",
+      "FALSE — Lack of separate legal personality does not dissolve trade credit obligations. Amounts owed to suppliers remain payable by the proprietor. Unincorporated status explains personal exposure; it does not make payables disappear.\n\nThe statement is false.",
+      "FALSE — Unlimited liability covers business debts and obligations generally, not only formal external borrowing. Trade payables, unpaid expenses, and other obligations can all engage personal exposure. Confining unlimited liability to bank-style external loans is too narrow.\n\nThe statement is false."
     ],
     "difficulty_level": "2/5",
     "tier": "full"
@@ -831,11 +831,11 @@
       false
     ],
     "tactical_explanations": [
-      "TRUE — Check the sentence against the core concept named in the stem, including every scope word.\n\nOverdrafts are flexible short-term credit linked to a business bank account.\n\nThe statement is true.",
-      "FALSE — Check the sentence against the core concept named in the stem, including every scope word.\n\nOverdraft arrangements do not change legal structure or liability.\n\nThe statement is false. A student who matched the topic to \"An overdraft facility converts the sole proprietorship into a corporation with limited liability\" without checking the rest of the sentence would mark the statement true.\n",
-      "FALSE — Map the scenario onto the textbook category first, then test whether the sentence describes that category accurately.\n\nShort-term credit still counts as a liability.\n\nThe statement is false. A student who matched the topic to \"Because overdrafts are short-term, they are not counted among the proprietor's business liabilities\" without checking the rest of the sentence would mark the statement true.\n",
-      "FALSE — Map the scenario onto the textbook category first, then test whether the sentence describes that category accurately.\n\nOverdraft interest applies only when the account is overdrawn, not on positive balances.\n\nThe statement is false. A student who matched the topic to \"Overdraft interest is charged on the full account balance even when the balance remains…\" without checking the rest of the sentence would mark the statement true.\n",
-      "FALSE — Map the scenario onto the textbook category first, then test whether the sentence describes that category accurately.\n\nOverdrafts are external short-term credit from the bank, not internal finance.\n\nThe statement is false. A student who matched the topic to \"A bank overdraft is classified as internal finance because it uses the proprietor's own…\" without checking the rest of the sentence would mark the statement true.\n"
+      "TRUE — After a business current account is opened, an overdraft facility lets the balance go negative within a limit. That supplies flexible short-term credit to bridge seasonal gaps between receipts and payments without arranging a new term loan each time.\n\nThe statement is true.",
+      "FALSE — An overdraft is a banking product, not an incorporation event. It does not convert the sole proprietorship into a corporation or create limited liability. Legal form and liability regime stay as they were.\n\nThe statement is false.",
+      "FALSE — Short maturity does not remove liability recognition. An overdrawn balance is still an amount owed to the bank and counts among the proprietor's business liabilities until cleared.\n\nThe statement is false.",
+      "FALSE — Overdraft interest is charged when the account is overdrawn (on the borrowed amount), not on a full positive balance sitting safely in credit. Charging interest on a healthy positive balance as if it were borrowed misstates overdraft pricing.\n\nThe statement is false.",
+      "FALSE — The account may be the proprietor's business account, but the overdraft funds are bank credit. Classification is external short-term debt finance, not internal finance generated by the firm.\n\nThe statement is false."
     ],
     "difficulty_level": "2/5",
     "tier": "full"
@@ -860,11 +860,11 @@
       true
     ],
     "tactical_explanations": [
-      "TRUE — Check the sentence against the core concept named in the stem, including every scope word.\n\nSupplier agreements define deferred payment terms.\n\nThe statement is true.",
-      "FALSE — Map the scenario onto the textbook category first, then test whether the sentence describes that category accurately.\n\nTrade credit is external short-term finance, not internal.\n\nThe statement is false. A student who matched the topic to \"Trade credit carries no repayment obligation because it is classified as internal finance\" without checking the rest of the sentence would mark the statement true.\n",
-      "FALSE — Check the sentence against the core concept named in the stem, including every scope word.\n\nTrade credit assists timing but repayment obligations remain.\n\nThe statement is false. A student who matched the topic to \"Supplier trade credit removes the need for the sole proprietor to manage cash-flow timing\" without checking the rest of the sentence would mark the statement true.\n",
-      "TRUE — Check the sentence against the core concept named in the stem, including every scope word.\n\nPayables to suppliers are liabilities of the sole proprietor.\n\nThe statement is true.",
-      "TRUE — Read the quantifier. Words such as never, always, only, or all turn a generally valid idea into a claim that one counterexample rejects.\n\nPurchases may be settled after an agreed credit period.\n\nThe statement is true."
+      "TRUE — Trade credit rests on a supplier agreement that allows payment later than delivery or invoice. Deferred settlement under agreed terms is the financing arrangement between sole trader and materials suppliers.\n\nThe statement is true.",
+      "FALSE — Trade credit must be repaid at the end of the credit period. It is external short-term finance from the supplier, not internal finance, and it does carry a repayment obligation.\n\nThe statement is false.",
+      "FALSE — Deferring payment changes when cash leaves; it does not remove the need to plan cash-flow timing. The proprietor must still ensure funds are available when the credit period ends. Trade credit relocates the timing problem; it does not abolish it.\n\nThe statement is false.",
+      "TRUE — Until the invoice is paid, the outstanding supplier balance is an external short-term liability. External describes the supplier as outside financier; short-term describes the usual purchase-cycle maturity.\n\nThe statement is true.",
+      "TRUE — With trade credit the business need not pay for all purchases immediately; it receives a credit period before settlement. That delay is the liquidity benefit of the arrangement.\n\nThe statement is true."
     ],
     "difficulty_level": "2/5",
     "tier": "full"
@@ -889,11 +889,11 @@
       true
     ],
     "tactical_explanations": [
-      "TRUE — Check the sentence against the core concept named in the stem, including every scope word.\n\nOwner injection from personal wealth is external to operating surplus.\n\nThe statement is true.",
-      "TRUE — Check the sentence against the core concept named in the stem, including every scope word.\n\nInvestor contributions enter from outside the firm.\n\nThe statement is true.",
-      "TRUE — Check the sentence against the core concept named in the stem, including every scope word.\n\nBank credit is external finance creating repayment duties.\n\nThe statement is true.",
-      "TRUE — Check the sentence against the core concept named in the stem, including every scope word.\n\nInsufficient personal funds constrain establishment.\n\nThe statement is true.",
-      "TRUE — Check the sentence against the core concept named in the stem, including every scope word.\n\nPersonal savings commonly provide initial external finance at launch.\n\nThe statement is true."
+      "TRUE — Owner investment from personal funds is classified as an external source in this framework: it enters from outside retained trading surplus. It is a primary way sole proprietors raise capital beyond what operations have already earned.\n\nThe statement is true.",
+      "TRUE — When outside investors provide capital to the business, those funds are external finance. They expand resources when personal savings alone are not enough.\n\nThe statement is true.",
+      "TRUE — Bank and other creditor funds are external sources that create repayment duties under the credit agreement. Interest and schedule terms define how that external debt must be serviced.\n\nThe statement is true.",
+      "TRUE — If personal wealth is limited, the proprietor struggles to fund establishment even though legal barriers are low. Scarce personal resources make set-up very difficult unless other external finance is obtained.\n\nThe statement is true.",
+      "TRUE — Launching a sole tradership typically begins with the proprietor's own savings as initial funding before or alongside later investor or bank support. Owner savings are the common starting block.\n\nThe statement is true."
     ],
     "difficulty_level": "1/5",
     "tier": "full"
@@ -918,11 +918,11 @@
       false
     ],
     "tactical_explanations": [
-      "TRUE — Map the scenario onto the textbook category first, then test whether the sentence describes that category accurately.\n\nInternal funds avoid borrowing costs like interest.\n\nThe statement is true.",
-      "TRUE — Check the sentence against the core concept named in the stem, including every scope word.\n\nReinvested surplus is generated within operations.\n\nThe statement is true.",
-      "TRUE — Check the sentence against the core concept named in the stem, including every scope word.\n\nDisposing unused assets releases internal funds.\n\nThe statement is true.",
-      "TRUE — Check the sentence against the core concept named in the stem, including every scope word.\n\nAsset sales supply internal finance without external borrowing.\n\nThe statement is true.",
-      "FALSE — Check the sentence against the core concept named in the stem, including every scope word.\n\nLiability structure is unchanged by the finance source used.\n\nThe statement is false. A student who matched the topic to \"Using internal finance means the sole proprietor no longer bears unlimited liability for business…\" without checking the rest of the sentence would mark the statement true.\n"
+      "TRUE — Internal sources matter because they do not require paying interest or similar financial charges to outside lenders. Avoiding those borrowing costs is the practical advantage when reinvested earnings or asset sales can meet the need.\n\nThe statement is true.",
+      "TRUE — Once revenues exceed expenses, profit retained and put back into the business is internal finance. The funding is the firm's own surplus.\n\nThe statement is true.",
+      "TRUE — Selling assets that are no longer needed converts idle owned resources into cash inside the firm. That cash is internal finance available for other uses.\n\nThe statement is true.",
+      "TRUE — Disposing of surplus equipment likewise releases internal funds for reinvestment without creating a new creditor relationship. No borrowing means no new interest-bearing liability from that step.\n\nThe statement is true.",
+      "FALSE — Finance source and liability regime are separate. Using internal finance avoids interest on that slice of funding; it does not abolish unlimited liability for business debts. The proprietor still bears personal exposure for obligations of the firm.\n\nThe statement is false."
     ],
     "difficulty_level": "2/5",
     "tier": "full"
@@ -947,11 +947,11 @@
       false
     ],
     "tactical_explanations": [
-      "FALSE — Read the quantifier. Words such as never, always, only, or all turn a generally valid idea into a claim that one counterexample rejects.\n\nBanks offer both short-term and long-term credit to sole proprietors.\n\nThe statement is false. A student who overlooked the word \"never\" in \"Banks offer only long-term credit to sole proprietors and never short-term facilities with duration…\" would treat the restriction as absent and mark the statement true.\n",
-      "TRUE — Check the sentence against the core concept named in the stem, including every scope word.\n\nOverdrafts are a standard short-term facility.\n\nThe statement is true.",
-      "TRUE — Check the sentence against the core concept named in the stem, including every scope word.\n\nSupplier credit periods cover near-term purchases.\n\nThe statement is true.",
-      "FALSE — Read the quantifier. Words such as never, always, only, or all turn a generally valid idea into a claim that one counterexample rejects.\n\nShort-term credit remains a liability until repaid.\n\nThe statement is false. A student who overlooked the word \"never\" in \"Short-term credit is never recorded as a liability for the sole proprietor because it…\" would treat the restriction as absent and mark the statement true.\n",
-      "FALSE — Check the sentence against the core concept named in the stem, including every scope word.\n\nMortgage loans remain liabilities despite property collateral.\n\nThe statement is false. A student who matched the topic to \"Long-term mortgage loans cease to be liabilities once land and property are pledged as…\" without checking the rest of the sentence would mark the statement true.\n"
+      "FALSE — Banks offer both short-term and long-term credit to sole proprietors. Overdrafts and other facilities with duration under a year are common short-term products. Claiming banks offer only long-term credit and never short-term facilities is false.\n\nThe statement is false.",
+      "TRUE — A bank overdraft is among the most common short-term credits for sole traders: flexible, linked to the current account, and typically intended to cover temporary needs within the year.\n\nThe statement is true.",
+      "TRUE — Trade credit from suppliers is also typically short-term, aligned with purchase and invoice cycles rather than multi-year project finance.\n\nThe statement is true.",
+      "FALSE — Quick repayment does not erase the liability while the amount is outstanding. Short-term credit is recorded as a liability until paid. Speed of expected settlement does not mean “never recorded.”\n\nThe statement is false.",
+      "FALSE — Pledging land and property as collateral secures the lender; it does not cancel the loan as a liability. The mortgage loan remains payable according to its terms even after collateral is in place.\n\nThe statement is false."
     ],
     "difficulty_level": "2/5",
     "tier": "full"
@@ -976,11 +976,11 @@
       false
     ],
     "tactical_explanations": [
-      "TRUE — Map the scenario onto the textbook category first, then test whether the sentence describes that category accurately.\n\nInitial savings are owner investment from outside operating surplus.\n\nThe statement is true.",
-      "FALSE — Check the sentence against the core concept named in the stem, including every scope word.\n\nStart-up savings are external; only later retained profit is internal.\n\nThe statement is false. A student who matched the topic to \"Owner savings at start-up and retained profit from later years are both classified as…\" without checking the rest of the sentence would mark the statement true.\n",
-      "TRUE — Check the sentence against the core concept named in the stem, including every scope word.\n\nReinvested earnings originate within the business.\n\nThe statement is true.",
-      "FALSE — Check the sentence against the core concept named in the stem, including every scope word.\n\nCreditor and supplier credit are external liabilities.\n\nThe statement is false. A student who matched the topic to \"Bank credit and trade credit are internal sources once the funds are held in…\" without checking the rest of the sentence would mark the statement true.\n",
-      "FALSE — Map the scenario onto the textbook category first, then test whether the sentence describes that category accurately.\n\nInvestor capital supplements owner funds from outside.\n\nThe statement is false. A student who matched the topic to \"Investor funds obtained when personal savings are insufficient are internal sources of operating cash\" without checking the rest of the sentence would mark the statement true.\n"
+      "TRUE — Owner savings invested at start-up are treated as an external source: they are not retained trading profit. Most sole proprietors begin with that external owner injection.\n\nThe statement is true.",
+      "FALSE — The two are classified differently. Start-up owner savings are external; retained profit from later years is internal. Bundling both as internal finance erases that distinction.\n\nThe statement is false.",
+      "TRUE — After successful trading, profit kept and reinvested is internal finance generated by operations. That label applies specifically to retained surplus, not to the owner's original savings.\n\nThe statement is true.",
+      "FALSE — Bank credit and trade credit remain external even when the cash or goods are in the business. Holding funds in the business account does not convert creditor finance into an internal source.\n\nThe statement is false.",
+      "FALSE — Investor funds obtained when savings are insufficient are external capital from outside parties. They are not internal operating cash generated by the firm.\n\nThe statement is false."
     ],
     "difficulty_level": "2/5",
     "tier": "full"
@@ -1005,11 +1005,11 @@
       false
     ],
     "tactical_explanations": [
-      "TRUE — Map the scenario onto the textbook category first, then test whether the sentence describes that category accurately.\n\nSurplus may be kept in the firm or taken by the owner.\n\nThe statement is true.",
-      "TRUE — Check the sentence against the core concept named in the stem, including every scope word.\n\nAsset disposal releases internal funds without borrowing.\n\nThe statement is true.",
-      "TRUE — Check the sentence against the core concept named in the stem, including every scope word.\n\nInternal funding avoids creditor interest costs.\n\nThe statement is true.",
-      "TRUE — Check the sentence against the core concept named in the stem, including every scope word.\n\nRetained earnings kept in the firm supply internal finance.\n\nThe statement is true.",
-      "FALSE — Check the sentence against the core concept named in the stem, including every scope word.\n\nWithdrawn profit leaves the business and is no longer internal finance.\n\nThe statement is false. A student who matched the topic to \"Withdrawn profit used for personal spending remains available as internal finance for the business\" without checking the rest of the sentence would mark the statement true.\n"
+      "TRUE — When revenues exceed expenses, a surplus exists. The sole trader can retain and reinvest it—or withdraw it. Retention for working capital happens only if the proprietor leaves the profit in the business.\n\nThe statement is true.",
+      "TRUE — Selling obsolete equipment no longer needed turns an owned asset into cash without taking an interest-bearing loan. That is internal finance without interest charges from creditors.\n\nThe statement is true.",
+      "TRUE — More generally, internal sources avoid financial charges such as interest paid on borrowed funds, which is why reinvestment and asset disposal are useful when they can cover the need.\n\nThe statement is true.",
+      "TRUE — Reinvested surplus funds operations without creating a new creditor liability for that funding slice. No lender is owed repayment on retained profit itself.\n\nThe statement is true.",
+      "FALSE — Once profit is withdrawn for personal spending, it has left the business. It is no longer available as internal finance for the firm. Withdrawal and internal reinvestment are mutually exclusive uses of the same surplus.\n\nThe statement is false."
     ],
     "difficulty_level": "2/5",
     "tier": "full"
@@ -1034,11 +1034,11 @@
       false
     ],
     "tactical_explanations": [
-      "FALSE — Read the quantifier. Words such as never, always, only, or all turn a generally valid idea into a claim that one counterexample rejects.\n\nMortgage collateral does not change the unincorporated legal structure.\n\nThe statement is false. A student who overlooked the word \"automatically\" in \"Property used as mortgage collateral for a long-term bank loan automatically incorporates the sole…\" would treat the restriction as absent and mark the statement true.\n",
-      "FALSE — Read the quantifier. Words such as never, always, only, or all turn a generally valid idea into a claim that one counterexample rejects.\n\nCredit agreements still specify interest as the rate of return.\n\nThe statement is false. A student who overlooked the word \"all\" in \"Long-term creditors may waive all interest charges when land and buildings serve as mortgage…\" would treat the restriction as absent and mark the statement true.\n",
-      "FALSE — Check the sentence against the core concept named in the stem, including every scope word.\n\nCollateral assets can be claimed upon default.\n\nThe statement is false. A student who matched the topic to \"Private assets that served as collateral remain completely protected from claims once the mortgage…\" without checking the rest of the sentence would mark the statement true.\n",
-      "TRUE — Check the sentence against the core concept named in the stem, including every scope word.\n\nAll credit forms create repayment obligations.\n\nThe statement is true.",
-      "FALSE — Check the sentence against the core concept named in the stem, including every scope word.\n\nMortgage loans remain liabilities despite collateral.\n\nThe statement is false. A student who matched the topic to \"Long-term credit secured by a mortgage is excluded from the sole proprietor's liabilities once…\" without checking the rest of the sentence would mark the statement true.\n"
+      "FALSE — Using property as mortgage collateral is a security arrangement for a loan. It does not automatically incorporate the sole proprietorship as a limited company. Legal form changes only through formal incorporation, not through pledging assets.\n\nThe statement is false.",
+      "FALSE — Collateral reduces the lender's risk; it does not oblige creditors to waive all interest. Long-term loans secured by land and buildings still normally charge interest as the price of credit.\n\nThe statement is false.",
+      "FALSE — Registering a mortgage puts the pledged assets at stake if default occurs; it does not completely protect them from claims. The point of collateral is enforceability against those assets, not immunity for them.\n\nThe statement is false.",
+      "TRUE — Both a short-term overdraft and a long-term mortgage loan create amounts the sole proprietor owes. Different maturities, same status as liabilities.\n\nThe statement is true.",
+      "FALSE — Pledging collateral does not remove the loan from the liability side. Long-term mortgaged credit remains a liability until repaid; security backs the claim, it does not exclude it from the proprietor's obligations.\n\nThe statement is false."
     ],
     "difficulty_level": "2/5",
     "tier": "full"
@@ -1063,11 +1063,11 @@
       true
     ],
     "tactical_explanations": [
-      "TRUE — Check the sentence against the core concept named in the stem, including every scope word.\n\nAvailable funds reflect the proprietor's financial capacity.\n\nThe statement is true.",
-      "TRUE — Check the sentence against the core concept named in the stem, including every scope word.\n\nThese funds enter from outside accumulated internal surplus.\n\nThe statement is true.",
-      "TRUE — Check the sentence against the core concept named in the stem, including every scope word.\n\nReinvested earnings and asset sales fund from within.\n\nThe statement is true.",
-      "FALSE — Check the sentence against the core concept named in the stem, including every scope word.\n\nUnlimited liability applies to all business debts regardless of finance source.\n\nThe statement is false. A student who matched the topic to \"Unlimited liability is confined to obligations arising from external creditor borrowing only\" without checking the rest of the sentence would mark the statement true.\n",
-      "TRUE — Read the quantifier. Words such as never, always, only, or all turn a generally valid idea into a claim that one counterexample rejects.\n\nEvery credit arrangement creates repayment duty.\n\nThe statement is true."
+      "TRUE — Because the form centres on one person, the business's financial funds mainly track what that sole proprietor can provide or attract. Personal financial capability heavily shapes the funding envelope.\n\nThe statement is true.",
+      "TRUE — Owner investment, investor funds, and creditor loans all enter from outside retained operations, so they are external sources in the standard classification.\n\nThe statement is true.",
+      "TRUE — Retained profit and sale of unused assets arise from the firm's own resources once operations are under way, so they are internal sources.\n\nThe statement is true.",
+      "FALSE — Unlimited liability is not confined to external borrowing. It covers business debts and obligations broadly—including obligations that arise even when funding has been internal. Narrowing it to creditor loans alone is incorrect.\n\nThe statement is false.",
+      "TRUE — Whether the instrument is a short-term overdraft or a long-term mortgage, the credit is a liability of the sole proprietor until discharged.\n\nThe statement is true."
     ],
     "difficulty_level": "2/5",
     "tier": "full"
@@ -1092,11 +1092,11 @@
       false
     ],
     "tactical_explanations": [
-      "TRUE — Map the scenario onto the textbook category first, then test whether the sentence describes that category accurately.\n\nStaff may be recruited to support operations.\n\nThe statement is true.",
-      "FALSE — Check the sentence against the core concept named in the stem, including every scope word.\n\nStrategic authority stays with the proprietor, not employees.\n\nThe statement is false. A student who matched the topic to \"Hiring sales staff transfers the most important management decisions to employees permanently\" without checking the rest of the sentence would mark the statement true.\n",
-      "TRUE — Check the sentence against the core concept named in the stem, including every scope word.\n\nUltimate decisions and risk remain with the owner.\n\nThe statement is true.",
-      "TRUE — Map the scenario onto the textbook category first, then test whether the sentence describes that category accurately.\n\nThe proprietor retains central management responsibility.\n\nThe statement is true.",
-      "FALSE — Check the sentence against the core concept named in the stem, including every scope word.\n\nEmployees do not share the proprietor's unlimited liability.\n\nThe statement is false. A student who matched the topic to \"Employees assume unlimited liability for business debts in proportion to their wages\" without checking the rest of the sentence would mark the statement true.\n"
+      "TRUE — A retail sole proprietor may hire sales staff for daily customer service when support is needed. Employment expands capacity without changing the ownership form.\n\nThe statement is true.",
+      "FALSE — Hiring sales staff does not permanently transfer the most important management decisions to employees. Staff serve customers under the owner's direction; strategic and key managerial authority remains with the proprietor.\n\nThe statement is false.",
+      "TRUE — Despite assistants on the floor, the proprietor must still make key management decisions and accept the associated business risk, including unlimited liability. Delegation of service tasks is not transfer of residual control and risk.\n\nThe statement is true.",
+      "TRUE — Even with staff present, management largely depends on the sole proprietor. The organisational centre stays with the owner-manager.\n\nThe statement is true.",
+      "FALSE — Employees do not assume unlimited liability in proportion to wages. Personal exposure for business debts stays with the sole proprietor; pay levels do not allocate owner liability to staff.\n\nThe statement is false."
     ],
     "difficulty_level": "2/5",
     "tier": "full"
@@ -1121,11 +1121,11 @@
       false
     ],
     "tactical_explanations": [
-      "FALSE — Read the quantifier. Words such as never, always, only, or all turn a generally valid idea into a claim that one counterexample rejects.\n\nUnincorporated status does not bar employment.\n\nThe statement is false. A student who overlooked the word \"cannot\" in \"A sole proprietorship that is not a legal entity of its own cannot hire…\" would treat the restriction as absent and mark the statement true.\n",
-      "TRUE — Map the scenario onto the textbook category first, then test whether the sentence describes that category accurately.\n\nSole traders may recruit staff despite lacking separate legal personality.\n\nThe statement is true.",
-      "FALSE — Read the quantifier. Words such as never, always, only, or all turn a generally valid idea into a claim that one counterexample rejects.\n\nSole traders routinely contract with suppliers and banks.\n\nThe statement is false. A student who overlooked the word \"cannot\" in \"Because the business lacks separate legal personality, it cannot enter contracts with suppliers or…\" would treat the restriction as absent and mark the statement true.\n",
-      "FALSE — Check the sentence against the core concept named in the stem, including every scope word.\n\nEmployment does not incorporate the business or change liability.\n\nThe statement is false. A student who matched the topic to \"Incorporation is automatic once a sole trader hires more than one employee\" without checking the rest of the sentence would mark the statement true.\n",
-      "FALSE — Check the sentence against the core concept named in the stem, including every scope word.\n\nEmployees do not acquire ownership; the sole proprietor remains the owner.\n\nThe statement is false. A student who matched the topic to \"Hiring employees transfers ownership of the sole proprietorship to the workforce collectively\" without checking the rest of the sentence would mark the statement true.\n"
+      "FALSE — Lack of separate legal personality does not ban hiring. Sole traders routinely employ staff. Saying personnel cannot be hired under any circumstances is false.\n\nThe statement is false.",
+      "TRUE — The same point affirmatively: an unincorporated sole proprietorship may still hire personnel when support is required. Operational capacity includes employment even without corporate personality.\n\nThe statement is true.",
+      "FALSE — Sole proprietors can and do enter contracts with suppliers and banks; the contracts bind the owner personally. Absence of separate legal personality changes who is bound, not whether contracting is possible.\n\nThe statement is false.",
+      "FALSE — Headcount does not trigger automatic incorporation. Becoming a limited company requires formal incorporation steps, not merely hiring a second employee.\n\nThe statement is false.",
+      "FALSE — Hiring does not transfer ownership to the workforce. Employees remain employees; the sole proprietor remains the owner unless an explicit ownership transfer occurs.\n\nThe statement is false."
     ],
     "difficulty_level": "2/5",
     "tier": "full"
@@ -1150,11 +1150,11 @@
       false
     ],
     "tactical_explanations": [
-      "TRUE — Map the scenario onto the textbook category first, then test whether the sentence describes that category accurately.\n\nProlonged absence disrupts management continuity.\n\nThe statement is true.",
-      "FALSE — Read the quantifier. Words such as never, always, only, or all turn a generally valid idea into a claim that one counterexample rejects.\n\nEmployees do not automatically acquire ownership.\n\nThe statement is false. A student who overlooked the word \"automatically\" in \"Long-term illness of the owner has no continuity effect because employees legally become co-owners…\" would treat the restriction as absent and mark the statement true.\n",
-      "FALSE — Read the quantifier. Words such as never, always, only, or all turn a generally valid idea into a claim that one counterexample rejects.\n\nTemporary absence does not change the legal structure to a partnership.\n\nThe statement is false. A student who overlooked the word \"automatically\" in \"A sole proprietorship automatically converts to a partnership when the owner cannot work for…\" would treat the restriction as absent and mark the statement true.\n",
-      "TRUE — Check the sentence against the core concept named in the stem, including every scope word.\n\nRetirement removes the central owner-manager.\n\nThe statement is true.",
-      "FALSE — Check the sentence against the core concept named in the stem, including every scope word.\n\nSingle ownership makes succession planning more pressing, not less.\n\nThe statement is false. A student who matched the topic to \"Dependence on one manager makes succession planning less pressing than in firms with transferable…\" without checking the rest of the sentence would mark the statement true.\n"
+      "TRUE — Long-term illness removes or impairs the person on whom management depends. Continuity problems may therefore occur until the proprietor recovers or a transfer arrangement is made.\n\nThe statement is true.",
+      "FALSE — Employees do not legally become co-owners automatically when the owner is ill. Without a transfer, ownership is unchanged, and continuity can still suffer. The “no continuity effect” claim is false.\n\nThe statement is false.",
+      "FALSE — Prolonged inability to work does not automatically convert a sole proprietorship into a partnership. Partnership requires a multi-owner founding arrangement, not mere absence of the owner.\n\nThe statement is false.",
+      "TRUE — Retirement plans likewise threaten continuity because the controlling owner intends to step away. Without succession or sale arrangements, the business can face interruption.\n\nThe statement is true.",
+      "FALSE — Dependence on one manager makes succession planning more pressing, not less, compared with firms that can transfer ownership shares while the legal person continues. The statement reverses the urgency.\n\nThe statement is false."
     ],
     "difficulty_level": "2/5",
     "tier": "full"
