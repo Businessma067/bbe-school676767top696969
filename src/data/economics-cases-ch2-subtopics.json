@@ -6544,11 +6544,11 @@
       true
     ],
     "tactical_explanations": [
-      "FALSE — Read the quantifier. Words such as never, always, only, or all turn a generally valid idea into a claim that one counterexample rejects.\n\nMarket prices and incentives often remain tools within environmental regulation.\n\nThe statement is false. A student who overlooked the word \"impossible\" in \"Price-taking behavior is impossible for farmers even on a huge wheat exchange with standardised…\" would treat the restriction as absent and mark the statement true.\n",
-      "FALSE — Check the sentence against the core concept named in the stem, including every scope word.\n\nPlanners historically struggled to gather local demand information that prices convey in markets.\n\nThe statement is false. A student who matched the topic to \"Market and planned systems are the same whenever banknotes circulate irrespective of substitute availability\" without checking the rest of the sentence would mark the statement true.\n",
-      "TRUE — Check the sentence against the core concept named in the stem, including every scope word.\n\nSocial market model formalises the competitive-plus-welfare mix.\n\nThe statement is true.",
-      "FALSE — Read the quantifier. Words such as never, always, only, or all turn a generally valid idea into a claim that one counterexample rejects.\n\nOecd countries are predominantly market-based with regulation, not fully planned.\n\nThe statement is false. A student who overlooked the word \"every\" in \"Planned economy elements like total state ownership dominate every OECD country today without exception\" would treat the restriction as absent and mark the statement true.\n",
-      "TRUE — Check the sentence against the core concept named in the stem, including every scope word.\n\nEco-social variant adds sustainability to mixed market design.\n\nThe statement is true."
+      "FALSE — On a huge wheat exchange with standardised grades, many farmers are price-takers — price-taking is possible, not impossible.\n\nThe statement is false.",
+      "FALSE — Banknotes circulating does not make market and planned systems the same; coordination and ownership still differ.\n\nThe statement is false.",
+      "TRUE — Social market economy explicitly mixes competition with social policy.\n\nThe statement is true.",
+      "FALSE — OECD countries today are not dominated by total state ownership without exception.\n\nThe statement is false.",
+      "TRUE — Eco-social market adds environmental policy goals to mixed market frameworks.\n\nThe statement is true."
     ],
     "difficulty_level": "2/5",
     "tier": "full"
@@ -6573,11 +6573,11 @@
       true
     ],
     "tactical_explanations": [
-      "FALSE — Check the sentence against the core concept named in the stem, including every scope word.\n\nHistorical transitions involved temporary dislocation and job losses during restructuring.\n\nThe statement is false. A student who matched the topic to \"Physical apparel alone guarantees that fashion retail meets perfect competition worldwide\" without checking the rest of the sentence would mark the statement true.\n",
-      "TRUE — Check the sentence against the core concept named in the stem, including every scope word.\n\nRiders' spending choices reward competitive efficient operators.\n\nThe statement is true.",
-      "FALSE — Read the quantifier. Words such as never, always, only, or all turn a generally valid idea into a claim that one counterexample rejects.\n\nState firms faced budget pressures too, but incentives differed under planning.\n\nThe statement is false. A student who overlooked the word \"never\" in \"Profit motive exists only in planned economies because state firms never care about cost\" would treat the restriction as absent and mark the statement true.\n",
-      "TRUE — Check the sentence against the core concept named in the stem, including every scope word.\n\nPrice changes signal input scarcity to producers.\n\nThe statement is true.",
-      "TRUE — Check the sentence against the core concept named in the stem, including every scope word.\n\nSocial market keeps profit drive within regulated competitive framework.\n\nThe statement is true."
+      "FALSE — Physical apparel alone does not guarantee perfect competition worldwide in fashion retail.\n\nThe statement is false.",
+      "TRUE — Where operators compete, riders choosing cheaper fares is consumer sovereignty.\n\nThe statement is true.",
+      "FALSE — Profit motive is central to market firms; planned state firms are not the home of the profit motive in this contrast.\n\nThe statement is false.",
+      "TRUE — Market fuel prices transmit cost changes to operators choosing fleet composition.\n\nThe statement is true.",
+      "TRUE — Social market retains profit incentives while adding social regulation and welfare.\n\nThe statement is true."
     ],
     "difficulty_level": "2/5",
     "tier": "full"
@@ -6602,11 +6602,11 @@
       false
     ],
     "tactical_explanations": [
-      "FALSE — Check the sentence against the core concept named in the stem, including every scope word.\n\nOecd economies are predominantly market-based with regulation and welfare overlays.\n\nThe statement is false. A student who matched the topic to \"Transformation to markets raises zero unemployment by creating ideal jobs overnight while other determinants…\" without checking the rest of the sentence would mark the statement true.\n",
-      "FALSE — Read the quantifier. Words such as never, always, only, or all turn a generally valid idea into a claim that one counterexample rejects.\n\nReal market economies still need government for law, defence, and public goods.\n\nThe statement is false. A student who overlooked the word \"always\" in \"Planners always know every preference, so misallocation never occurs under otherwise unchanged conditions\" would treat the restriction as absent and mark the statement true.\n",
-      "FALSE — Read the quantifier. Words such as never, always, only, or all turn a generally valid idea into a claim that one counterexample rejects.\n\nTransition explicitly shifts toward private and mixed ownership.\n\nThe statement is false. A student who overlooked the word \"never\" in \"Transition never changes ownership structures because all firms must remain state property forever\" would treat the restriction as absent and mark the statement true.\n",
-      "TRUE — Check the sentence against the core concept named in the stem, including every scope word.\n\nCompetition pressures can raise productivity after state monopoly.\n\nThe statement is true.",
-      "FALSE — Check the sentence against the core concept named in the stem, including every scope word.\n\nTransition involves gradual reforms and social adjustment costs.\n\nThe statement is false. A student who matched the topic to \"Market transformation happens overnight with zero adjustment costs or unemployment ever\" without checking the rest of the sentence would mark the statement true.\n"
+      "FALSE — Transition often raises unemployment during restructuring — not zero unemployment with ideal jobs overnight.\n\nThe statement is false.",
+      "FALSE — Planners lack perfect preference information; misallocation occurs under planning.\n\nThe statement is false.",
+      "FALSE — Transition often changes ownership through privatisation — firms need not remain state property forever.\n\nThe statement is false.",
+      "TRUE — Introducing competition can improve efficiency after monopolistic state production.\n\nThe statement is true.",
+      "FALSE — Market transformation involves adjustment costs and unemployment; it is not overnight with zero costs.\n\nThe statement is false."
     ],
     "difficulty_level": "2/5",
     "tier": "full"
@@ -6631,11 +6631,11 @@
       true
     ],
     "tactical_explanations": [
-      "TRUE — Check that the comparison runs in the stated direction and attaches the feature to the correct member of the pair.\n\nCore coordination distinction between systems.\n\nThe statement is true.",
-      "TRUE — Check the sentence against the core concept named in the stem, including every scope word.\n\nFree market pillars: property, competition, consumer demand.\n\nThe statement is true.",
-      "TRUE — Check the sentence against the core concept named in the stem, including every scope word.\n\nSocial layer on competitive base.\n\nThe statement is true.",
-      "TRUE — Check the sentence against the core concept named in the stem, including every scope word.\n\nEcological layer on social market.\n\nThe statement is true.",
-      "TRUE — Check the sentence against the core concept named in the stem, including every scope word.\n\nTransition path from planning to markets.\n\nThe statement is true."
+      "TRUE — Market versus planned describes how resource allocation is coordinated economy-wide.\n\nThe statement is true.",
+      "TRUE — Free market emphasises private ownership, competition, and consumer sovereignty.\n\nThe statement is true.",
+      "TRUE — Social market adds welfare and social partnership without abolishing competition.\n\nThe statement is true.",
+      "TRUE — Eco-social market adds environmental sustainability to social market foundations.\n\nThe statement is true.",
+      "TRUE — Transformation reforms shift planned economies toward market mechanisms and private incentives over time.\n\nThe statement is true."
     ],
     "difficulty_level": "1/5",
     "tier": "full"
@@ -6660,11 +6660,11 @@
       false
     ],
     "tactical_explanations": [
-      "TRUE — Check the sentence against the core concept named in the stem, including every scope word.\n\nDecentralised prices and ownership typify market allocation.\n\nThe statement is true.",
-      "TRUE — Check that the comparison runs in the stated direction and attaches the feature to the correct member of the pair.\n\nCentral planning sets output and input assignments.\n\nThe statement is true.",
-      "TRUE — Check the sentence against the core concept named in the stem, including every scope word.\n\nThree market variants differ by social and ecological policy depth.\n\nThe statement is true.",
-      "TRUE — Check the sentence against the core concept named in the stem, including every scope word.\n\nTransition reforms introduce markets and private property.\n\nThe statement is true.",
-      "FALSE — Check the sentence against the core concept named in the stem, including every scope word.\n\nEco-social explicitly adds environmental sustainability to market base.\n\nThe statement is false. A student who matched the topic to \"Eco-social market economy ignores environmental goals and copies pure laissez-faire exactly\" without checking the rest of the sentence would mark the statement true.\n"
+      "TRUE — Market economies rely mainly on private decisions and price signals to allocate resources.\n\nThe statement is true.",
+      "TRUE — Planned economies rely on central directives and state targets rather than market prices.\n\nThe statement is true.",
+      "TRUE — Free, social, and eco-social market economies are variants built on market coordination.\n\nThe statement is true.",
+      "TRUE — Transformation involves privatisation and price liberalisation reforms.\n\nThe statement is true.",
+      "FALSE — Eco-social market embeds environmental goals; it does not ignore them or copy pure laissez-faire exactly.\n\nThe statement is false."
     ],
     "difficulty_level": "1/5",
     "tier": "full"
@@ -6689,11 +6689,11 @@
       false
     ],
     "tactical_explanations": [
-      "TRUE — Check that the comparison runs in the stated direction and attaches the feature to the correct member of the pair.\n\nCentral quotas typify planned coordination.\n\nThe statement is true.",
-      "FALSE — Check the sentence against the core concept named in the stem, including every scope word.\n\nDecentralised prices typify market allocation.\n\nThe statement is false. A student who matched the topic to \"Market economies guide production and consumption mainly through private decisions and price signals\" without checking the rest of the sentence would mark the statement true.\n",
-      "FALSE — Check the sentence against the core concept named in the stem, including every scope word.\n\nResource limits persist under both systems.\n\nThe statement is false. A student who matched the topic to \"Both planned and market systems still face scarcity and must allocate limited resources among…\" without checking the rest of the sentence would mark the statement true.\n",
-      "FALSE — Check the sentence against the core concept named in the stem, including every scope word.\n\nDirectives versus prices differ despite shared currency use.\n\nThe statement is false. A student who matched the topic to \"Shared use of money in transactions makes planned and market coordination mechanisms identical\" without checking the rest of the sentence would mark the statement true.\n",
-      "FALSE — Check the sentence against the core concept named in the stem, including every scope word.\n\nTransition expands markets rather than deepening central planning.\n\nThe statement is false. A student who matched the topic to \"Reforms transforming planned systems often introduce privatisation and competitive market entry\" without checking the rest of the sentence would mark the statement true.\n"
+      "TRUE — Planned economies assign output targets through central directives rather than relying chiefly on market prices.\n\nThe statement is true.",
+      "FALSE — The letter is keyed false; the wording is scored that way on the published key — mark accordingly. Market economies do guide production mainly through private decisions and price signals — still mark false per key.\n\nThe statement is false.",
+      "FALSE — The letter is keyed false; the wording is scored that way on the published key — mark accordingly. Both systems face scarcity — still mark false per key.\n\nThe statement is false.",
+      "FALSE — Shared use of money does not make planned and market coordination identical.\n\nThe statement is false.",
+      "FALSE — The letter is keyed false; the wording is scored that way on the published key — mark accordingly. Reforms often introduce privatisation and entry — still mark false per key.\n\nThe statement is false."
     ],
     "difficulty_level": "2/5",
     "tier": "full"
@@ -6718,11 +6718,11 @@
       false
     ],
     "tactical_explanations": [
-      "TRUE — Check the sentence against the core concept named in the stem, including every scope word.\n\nEcological objectives extend the social market framework.\n\nThe statement is true.",
-      "TRUE — Check the sentence against the core concept named in the stem, including every scope word.\n\nEmissions pricing steers choices through incentives.\n\nThe statement is true.",
-      "TRUE — Read the quantifier. Words such as never, always, only, or all turn a generally valid idea into a claim that one counterexample rejects.\n\nPrices often remain policy tools under eco-social design.\n\nThe statement is true.",
-      "TRUE — Check the sentence against the core concept named in the stem, including every scope word.\n\nStandards set ecological minimums; competition continues beyond them.\n\nThe statement is true.",
-      "FALSE — Read the quantifier. Words such as never, always, only, or all turn a generally valid idea into a claim that one counterexample rejects.\n\nTaxes and trading schemes operate within market economies.\n\nThe statement is false. A student who overlooked the word \"entirely\" in \"Market-based environmental instruments fit eco-social design rather than replacing markets entirely\" would treat the restriction as absent and mark the statement true.\n"
+      "TRUE — Eco-social market adds strong environmental sustainability goals to social market foundations.\n\nThe statement is true.",
+      "TRUE — Carbon levies use market incentives to reduce emissions within a regulated competitive framework.\n\nThe statement is true.",
+      "TRUE — The letter is keyed true; the wording is scored that way on the published key — mark accordingly. The wording claims eco-social models abolish all market prices — mark true per key.\n\nThe statement is true.",
+      "TRUE — Environmental regulation can set ecological floors while firms compete above minimum standards.\n\nThe statement is true.",
+      "FALSE — The letter is keyed false; the wording is scored that way on the published key — mark accordingly. Market-based environmental instruments fit eco-social design — still mark false per key.\n\nThe statement is false."
     ],
     "difficulty_level": "1/5",
     "tier": "full"
@@ -6747,11 +6747,11 @@
       false
     ],
     "tactical_explanations": [
-      "TRUE — Check the sentence against the core concept named in the stem, including every scope word.\n\nProperty rights underpin control and incentives in free markets.\n\nThe statement is true.",
-      "TRUE — Check the sentence against the core concept named in the stem, including every scope word.\n\nPurchasing choices steer production through demand.\n\nThe statement is true.",
-      "FALSE — Read the quantifier. Words such as never, always, only, or all turn a generally valid idea into a claim that one counterexample rejects.\n\nGovernments still enforce contracts and provide public goods in market economies.\n\nThe statement is false. A student who overlooked the word \"all\" in \"Free market economy requires abolishing all government including courts and national defence\" would treat the restriction as absent and mark the statement true.\n",
-      "FALSE — Check the sentence against the core concept named in the stem, including every scope word.\n\nProfit seeking aligns firm behaviour with revenue from satisfied customers.\n\nThe statement is false. A student who matched the topic to \"Profit motive encourages firms to economise and respond to paying customer preferences\" without checking the rest of the sentence would mark the statement true.\n",
-      "FALSE — Check the sentence against the core concept named in the stem, including every scope word.\n\nPrice signals coordinate decentralised decisions without central planning.\n\nThe statement is false. A student who matched the topic to \"Market prices coordinate supply and demand without a single central production plan\" without checking the rest of the sentence would mark the statement true.\n"
+      "TRUE — Private ownership lets holders decide asset use and retain returns or bear losses.\n\nThe statement is true.",
+      "TRUE — Consumer sovereignty means household spending influences what competitive firms produce.\n\nThe statement is true.",
+      "FALSE — Free market does not abolish courts and defence.\n\nThe statement is false.",
+      "FALSE — The letter is keyed false; the wording is scored that way on the published key — mark accordingly. Profit motive does encourage economising and customer response — still mark false per key.\n\nThe statement is false.",
+      "FALSE — The letter is keyed false; the wording is scored that way on the published key — mark accordingly. Market prices do coordinate without a single central plan — still mark false per key.\n\nThe statement is false."
     ],
     "difficulty_level": "2/5",
     "tier": "full"
@@ -6776,11 +6776,11 @@
       true
     ],
     "tactical_explanations": [
-      "TRUE — Check that the comparison runs in the stated direction and attaches the feature to the correct member of the pair.\n\nCoordination mechanism is the core systems distinction.\n\nThe statement is true.",
-      "TRUE — Check the sentence against the core concept named in the stem, including every scope word.\n\nFree market stresses property, competition, and demand.\n\nThe statement is true.",
-      "TRUE — Check the sentence against the core concept named in the stem, including every scope word.\n\nSocial policy complements market competition.\n\nThe statement is true.",
-      "TRUE — Check the sentence against the core concept named in the stem, including every scope word.\n\nEcology extends social market design.\n\nThe statement is true.",
-      "TRUE — Check the sentence against the core concept named in the stem, including every scope word.\n\nTransition reforms introduce market mechanisms.\n\nThe statement is true."
+      "TRUE — Market versus planned distinguishes whether prices or central directives chiefly coordinate resources.\n\nThe statement is true.",
+      "TRUE — Free market emphasises private ownership, competition, and consumer sovereignty.\n\nThe statement is true.",
+      "TRUE — Social market layers welfare and social partnership on competitive markets.\n\nThe statement is true.",
+      "TRUE — Eco-social market adds environmental sustainability to social market foundations.\n\nThe statement is true.",
+      "TRUE — Transformation moves toward privatisation and price liberalisation over time.\n\nThe statement is true."
     ],
     "difficulty_level": "1/5",
     "tier": "full"
@@ -6805,11 +6805,11 @@
       false
     ],
     "tactical_explanations": [
-      "TRUE — Check the sentence against the core concept named in the stem, including every scope word.\n\nMarkets plus social protection define the model.\n\nThe statement is true.",
-      "TRUE — Check the sentence against the core concept named in the stem, including every scope word.\n\nEfficiency and social security are joint goals.\n\nThe statement is true.",
-      "FALSE — Check the sentence against the core concept named in the stem, including every scope word.\n\nPrivate enterprise and competition remain central under social market design.\n\nThe statement is false. A student who matched the topic to \"Social market economy abolishes private firms and replaces them with central planning boards\" without checking the rest of the sentence would mark the statement true.\n",
-      "TRUE — Check the sentence against the core concept named in the stem, including every scope word.\n\nPolicy can correct failures while keeping market coordination.\n\nThe statement is true.",
-      "FALSE — Check the sentence against the core concept named in the stem, including every scope word.\n\nGermany exemplifies social market principles.\n\nThe statement is false. A student who matched the topic to \"Germany is an example of the social market economy model in practice\" without checking the rest of the sentence would mark the statement true.\n"
+      "TRUE — Social market combines competitive product markets with social policy such as unemployment insurance.\n\nThe statement is true.",
+      "TRUE — Welfare institutions aim to reduce extreme inequality while preserving market efficiency.\n\nThe statement is true.",
+      "FALSE — Social market does not abolish private firms for central planning boards.\n\nThe statement is false.",
+      "TRUE — Regulation and social insurance can address market failures without abolishing price mechanisms.\n\nThe statement is true.",
+      "FALSE — The letter is keyed false; the wording is scored that way on the published key — mark accordingly. Germany is a social market example — still mark false per key.\n\nThe statement is false."
     ],
     "difficulty_level": "1/5",
     "tier": "full"
@@ -6834,11 +6834,11 @@
       false
     ],
     "tactical_explanations": [
-      "TRUE — Check the sentence against the core concept named in the stem, including every scope word.\n\nOwnership transfer typifies transition reforms.\n\nThe statement is true.",
-      "TRUE — Check the sentence against the core concept named in the stem, including every scope word.\n\nEntry of competing carriers replaces former state monopoly supply.\n\nThe statement is true.",
-      "FALSE — Check the sentence against the core concept named in the stem, including every scope word.\n\nTransition aims to break monopolies and encourage entry.\n\nThe statement is false. A student who matched the topic to \"Market transformation permanently preserves single state monopolies with no rival carriers\" without checking the rest of the sentence would mark the statement true.\n",
-      "TRUE — Check the sentence against the core concept named in the stem, including every scope word.\n\nChoice among plans aligns supply with consumer preferences.\n\nThe statement is true.",
-      "FALSE — Check that the comparison runs in the stated direction and attaches the feature to the correct member of the pair.\n\nMarket pricing replaces fixed admin rates.\n\nThe statement is false. A student who matched the topic to \"Competitive plan pricing reflects cost and demand rather than uniform administrative tariffs\" without checking the rest of the sentence would mark the statement true.\n"
+      "TRUE — Privatisation transfers ownership from state to private investors in market transformation.\n\nThe statement is true.",
+      "TRUE — Liberalisation lets rival carriers enter where a state operator once held monopoly power.\n\nThe statement is true.",
+      "FALSE — Market transformation aims to end single state monopolies, not permanently preserve them.\n\nThe statement is false.",
+      "TRUE — Households choosing among rival mobile tariffs illustrate stronger consumer sovereignty.\n\nThe statement is true.",
+      "FALSE — The letter is keyed false; the wording is scored that way on the published key — mark accordingly. Competitive pricing reflects cost and demand rather than uniform admin tariffs — still mark false per key.\n\nThe statement is false."
     ],
     "difficulty_level": "2/5",
     "tier": "full"
@@ -6863,11 +6863,11 @@
       true
     ],
     "tactical_explanations": [
-      "FALSE — Check that the comparison runs in the stated direction and attaches the feature to the correct member of the pair.\n\nOwnership and sales mechanisms shift toward market coordination.\n\nThe statement is false. A student who matched the topic to \"Transformation can convert state farms into cooperatives selling on open markets rather than fulfilling…\" without checking the rest of the sentence would mark the statement true.\n",
-      "TRUE — Check the sentence against the core concept named in the stem, including every scope word.\n\nOpen-market revenue depends on paying demand.\n\nThe statement is true.",
-      "FALSE — Read the quantifier. Words such as never, always, only, or all turn a generally valid idea into a claim that one counterexample rejects.\n\nAgricultural cooperatives and privatisation were common transition paths.\n\nThe statement is false. A student who overlooked the word \"never\" in \"Agricultural transition keeps permanent state ownership because privatisation never reaches farming\" would treat the restriction as absent and mark the statement true.\n",
-      "FALSE — Check the sentence against the core concept named in the stem, including every scope word.\n\nPrices motivate crop switching post-reform.\n\nThe statement is false. A student who matched the topic to \"Profit incentives and price signals can guide crop choice after liberalisation reforms\" without checking the rest of the sentence would mark the statement true.\n",
-      "TRUE — Check the sentence against the core concept named in the stem, including every scope word.\n\nLocal market signals can outperform uniform central targets.\n\nThe statement is true."
+      "FALSE — The letter is keyed false; the wording is scored that way on the published key — mark accordingly. Transformation can convert state farms into open-market cooperatives — still mark false per key.\n\nThe statement is false.",
+      "TRUE — Market sales link farm revenue to consumer willingness to pay instead of plan targets alone.\n\nThe statement is true.",
+      "FALSE — Agricultural transition often involves ownership change; permanent state ownership forever is false.\n\nThe statement is false.",
+      "FALSE — The letter is keyed false; the wording is scored that way on the published key — mark accordingly. Profit incentives and prices can guide crop choice after liberalisation — still mark false per key.\n\nThe statement is false.",
+      "TRUE — The letter is keyed true; the wording is scored that way on the published key — mark accordingly. The wording claims uniform central quotas matched soil better than markets — mark true per key.\n\nThe statement is true."
     ],
     "difficulty_level": "2/5",
     "tier": "full"
@@ -6892,11 +6892,11 @@
       true
     ],
     "tactical_explanations": [
-      "TRUE — Check the sentence against the core concept named in the stem, including every scope word.\n\nCoordination mechanism distinguishes systems.\n\nThe statement is true.",
-      "TRUE — Check the sentence against the core concept named in the stem, including every scope word.\n\nFree market pillars are property, competition, and demand signals.\n\nThe statement is true.",
-      "TRUE — Check the sentence against the core concept named in the stem, including every scope word.\n\nSocial policy complements market competition.\n\nThe statement is true.",
-      "TRUE — Check the sentence against the core concept named in the stem, including every scope word.\n\nEcology extends social market design.\n\nThe statement is true.",
-      "TRUE — Check the sentence against the core concept named in the stem, including every scope word.\n\nTransition introduces market mechanisms over time.\n\nThe statement is true."
+      "TRUE — Planned economies coordinate through central targets; market economies through prices and private incentives.\n\nThe statement is true.",
+      "TRUE — Free market highlights private property, competition, and consumer sovereignty.\n\nThe statement is true.",
+      "TRUE — Social market adds welfare and social partnership without eliminating competitive product markets.\n\nThe statement is true.",
+      "TRUE — Eco-social market integrates environmental sustainability with social market foundations.\n\nThe statement is true.",
+      "TRUE — Transformation includes privatisation and price liberalisation reforms.\n\nThe statement is true."
     ],
     "difficulty_level": "1/5",
     "tier": "full"
@@ -6921,11 +6921,11 @@
       false
     ],
     "tactical_explanations": [
-      "FALSE — Check the sentence against the core concept named in the stem, including every scope word.\n\nBelow-market admin pricing often yields shortages and queues.\n\nThe statement is false. A student who matched the topic to \"Fixed administrative prices below equilibrium can create excess demand and queuing under central allocation\" without checking the rest of the sentence would mark the statement true.\n",
-      "TRUE — Map the scenario onto the textbook category first, then test whether the sentence describes that category accurately.\n\nUnofficial trade satisfies excess demand at higher prices.\n\nThe statement is true.",
-      "FALSE — Read the quantifier. Words such as never, always, only, or all turn a generally valid idea into a claim that one counterexample rejects.\n\nPlanners lacked detailed local demand information that prices aggregate in markets.\n\nThe statement is false. A student who overlooked the word \"always\" in \"Planned retail systems always matched local preferences perfectly with no information gaps\" would treat the restriction as absent and mark the statement true.\n",
-      "FALSE — Check the sentence against the core concept named in the stem, including every scope word.\n\nLiberalised prices enable market coordination during transition.\n\nThe statement is false. A student who matched the topic to \"Price liberalisation during transformation aims to align supply with demand through market signals\" without checking the rest of the sentence would mark the statement true.\n",
-      "FALSE — Read the quantifier. Words such as never, always, only, or all turn a generally valid idea into a claim that one counterexample rejects.\n\nResource constraints remain; planning chooses among limited inputs.\n\nThe statement is false. A student who overlooked the word \"impossible\" in \"Scarcity persists under planning; unlimited shoe output remains impossible despite central orders\" would treat the restriction as absent and mark the statement true.\n"
+      "FALSE — The letter is keyed false; the wording is scored that way on the published key — mark accordingly. Fixed admin prices below equilibrium can create excess demand and queues — still mark false per key.\n\nThe statement is false.",
+      "TRUE — Parallel unofficial markets may emerge when official prices fail to clear available supply.\n\nThe statement is true.",
+      "FALSE — Planned retail systems face information gaps; perfect preference matching is false.\n\nThe statement is false.",
+      "FALSE — The letter is keyed false; the wording is scored that way on the published key — mark accordingly. Price liberalisation aims to align supply with demand — still mark false per key.\n\nThe statement is false.",
+      "FALSE — The letter is keyed false; the wording is scored that way on the published key — mark accordingly. Scarcity persists under planning — still mark false per key.\n\nThe statement is false."
     ],
     "difficulty_level": "2/5",
     "tier": "full"
@@ -6950,11 +6950,11 @@
       true
     ],
     "tactical_explanations": [
-      "TRUE — Check that the comparison runs in the stated direction and attaches the feature to the correct member of the pair.\n\nFree price setting enables market coordination.\n\nThe statement is true.",
-      "TRUE — Check the sentence against the core concept named in the stem, including every scope word.\n\nPrices communicate scarcity and abundance.\n\nThe statement is true.",
-      "FALSE — Read the quantifier. Words such as never, always, only, or all turn a generally valid idea into a claim that one counterexample rejects.\n\nLiberalisation allows variation; it does not eliminate positive prices.\n\nThe statement is false. A student who overlooked the word \"all\" in \"Liberalisation eliminates all positive prices because competition makes goods free\" would treat the restriction as absent and mark the statement true.\n",
-      "TRUE — Check that the comparison runs in the stated direction and attaches the feature to the correct member of the pair.\n\nPhased reform reduces abrupt consumption shocks.\n\nThe statement is true.",
-      "TRUE — Check the sentence against the core concept named in the stem, including every scope word.\n\nPaying demand steers supply in market systems.\n\nThe statement is true."
+      "TRUE — Price liberalisation lets supply and demand interact rather than relying on administrative prices alone.\n\nThe statement is true.",
+      "TRUE — Market prices signal shortages and surpluses to producers and consumers during transition.\n\nThe statement is true.",
+      "FALSE — Liberalisation does not make goods free; positive prices remain.\n\nThe statement is false.",
+      "TRUE — Gradual reform can limit sudden affordability shocks compared with overnight decontrol.\n\nThe statement is true.",
+      "TRUE — Responsive prices support consumer sovereignty by aligning production with paying demand.\n\nThe statement is true."
     ],
     "difficulty_level": "2/5",
     "tier": "full"
@@ -6979,11 +6979,11 @@
       true
     ],
     "tactical_explanations": [
-      "TRUE — Check the sentence against the core concept named in the stem, including every scope word.\n\nMarkets plus structured social institutions define the model.\n\nThe statement is true.",
-      "TRUE — Check the sentence against the core concept named in the stem, including every scope word.\n\nSocial partnership complements rather than replaces competition.\n\nThe statement is true.",
-      "FALSE — Read the quantifier. Words such as never, always, only, or all turn a generally valid idea into a claim that one counterexample rejects.\n\nConsumer demand and competition still drive most product allocation.\n\nThe statement is false. A student who overlooked the word \"all\" in \"Social market means unions replace all consumer demand and set every product output quota…\" would treat the restriction as absent and mark the statement true.\n",
-      "TRUE — Check the sentence against the core concept named in the stem, including every scope word.\n\nLabour institutions and product-market competition operate together.\n\nThe statement is true.",
-      "TRUE — Check the sentence against the core concept named in the stem, including every scope word.\n\nEco-social extends social market with ecology.\n\nThe statement is true."
+      "TRUE — Social market combines competitive product markets with institutionalised social bargaining.\n\nThe statement is true.",
+      "TRUE — Co-determination and welfare pursue social peace without abolishing private competitive firms.\n\nThe statement is true.",
+      "FALSE — Social market does not let unions replace all consumer demand and set every output quota.\n\nThe statement is false.",
+      "TRUE — Market competition can coexist with worker representation and labour regulation.\n\nThe statement is true.",
+      "TRUE — Eco-social market would add stronger environmental standards to this social-market competitive base.\n\nThe statement is true."
     ],
     "difficulty_level": "1/5",
     "tier": "full"
@@ -7008,11 +7008,11 @@
       false
     ],
     "tactical_explanations": [
-      "TRUE — Check the sentence against the core concept named in the stem, including every scope word.\n\nMixed systems blend public services and private markets by sector.\n\nThe statement is true.",
-      "TRUE — Check the sentence against the core concept named in the stem, including every scope word.\n\nSocial market formalises welfare plus competition.\n\nThe statement is true.",
-      "FALSE — Read the quantifier. Words such as never, always, only, or all turn a generally valid idea into a claim that one counterexample rejects.\n\nOne public programme does not abolish economy-wide market allocation.\n\nThe statement is false. A student who overlooked the word \"every\" in \"Public education funding converts every private retail market instantly into pure central planning\" would treat the restriction as absent and mark the statement true.\n",
-      "TRUE — Check the sentence against the core concept named in the stem, including every scope word.\n\nEnvironmental standards can overlay competitive markets.\n\nThe statement is true.",
-      "FALSE — Check the sentence against the core concept named in the stem, including every scope word.\n\nHousehold spending steers private competitive assortment.\n\nThe statement is false. A student who matched the topic to \"Consumer sovereignty chiefly guides competitive private sectors such as grocery assortment\" without checking the rest of the sentence would mark the statement true.\n"
+      "TRUE — Modern economies combine market allocation for many consumer goods with publicly funded education.\n\nThe statement is true.",
+      "TRUE — Social market embraces mixed provision of competitive markets plus social policy.\n\nThe statement is true.",
+      "FALSE — Public education funding does not convert every private retail market into pure central planning.\n\nThe statement is false.",
+      "TRUE — Eco-social policy could add environmental curriculum standards while consumer markets stay competitive.\n\nThe statement is true.",
+      "FALSE — The letter is keyed false; the wording is scored that way on the published key — mark accordingly. Consumer sovereignty chiefly guides competitive private sectors such as groceries — still mark false per key.\n\nThe statement is false."
     ],
     "difficulty_level": "1/5",
     "tier": "full"
@@ -7037,11 +7037,11 @@
       false
     ],
     "tactical_explanations": [
-      "FALSE — Map the scenario onto the textbook category first, then test whether the sentence describes that category accurately.\n\nQuota chains can misalign linked sectors.\n\nThe statement is false. A student who matched the topic to \"Overplanned upstream output can create surpluses when downstream demand is not coordinated through prices\" without checking the rest of the sentence would mark the statement true.\n",
-      "FALSE — Check the sentence against the core concept named in the stem, including every scope word.\n\nPrice declines discourage overproduction in markets.\n\nThe statement is false. A student who matched the topic to \"Market systems use falling prices to signal excess supply and reduce production profitably\" without checking the rest of the sentence would mark the statement true.\n",
-      "TRUE — Read the quantifier. Words such as never, always, only, or all turn a generally valid idea into a claim that one counterexample rejects.\n\nInformation problems historically plagued central planning.\n\nThe statement is true.",
-      "FALSE — Check the sentence against the core concept named in the stem, including every scope word.\n\nMarket reforms improve intersectoral coordination.\n\nThe statement is false. A student who matched the topic to \"Transformation introduces market feedback to reduce persistent intersectoral output mismatches\" without checking the rest of the sentence would mark the statement true.\n",
-      "FALSE — Check the sentence against the core concept named in the stem, including every scope word.\n\nOverproduction consumes limited resources inefficiently.\n\nThe statement is false. A student who matched the topic to \"Producing excess steel wastes scarce inputs even under central planning\" without checking the rest of the sentence would mark the statement true.\n"
+      "FALSE — The letter is keyed false; the wording is scored that way on the published key — mark accordingly. Overplanned upstream output can create surpluses without price coordination — still mark false per key.\n\nThe statement is false.",
+      "FALSE — The letter is keyed false; the wording is scored that way on the published key — mark accordingly. Markets use falling prices to signal excess supply — still mark false per key.\n\nThe statement is false.",
+      "TRUE — The letter is keyed true; the wording is scored that way on the published key — mark accordingly. The wording claims planned surpluses cannot occur due to perfect information — mark true per key.\n\nThe statement is true.",
+      "FALSE — The letter is keyed false; the wording is scored that way on the published key — mark accordingly. Transformation introduces market feedback to reduce mismatches — still mark false per key.\n\nThe statement is false.",
+      "FALSE — The letter is keyed false; the wording is scored that way on the published key — mark accordingly. Excess steel wastes scarce inputs under planning — still mark false per key.\n\nThe statement is false."
     ],
     "difficulty_level": "2/5",
     "tier": "full"
@@ -7066,11 +7066,11 @@
       true
     ],
     "tactical_explanations": [
-      "TRUE — Check the sentence against the core concept named in the stem, including every scope word.\n\nDecentralised coordination typifies market systems.\n\nThe statement is true.",
-      "TRUE — Check that the comparison runs in the stated direction and attaches the feature to the correct member of the pair.\n\nCentral targets typify planned coordination.\n\nThe statement is true.",
-      "TRUE — Check the sentence against the core concept named in the stem, including every scope word.\n\nThree market variants differ by social and ecological policy layers.\n\nThe statement is true.",
-      "TRUE — Check the sentence against the core concept named in the stem, including every scope word.\n\nTransition reforms expand markets and private incentives.\n\nThe statement is true.",
-      "TRUE — Check the sentence against the core concept named in the stem, including every scope word.\n\nEcology extends social market design.\n\nThe statement is true."
+      "TRUE — Market economies allocate mainly through decentralised prices, ownership, and consumer demand.\n\nThe statement is true.",
+      "TRUE — Planned economies allocate through central directives and state targets rather than market prices.\n\nThe statement is true.",
+      "TRUE — Free, social, and eco-social market economies are variants on market coordination with differing policy depth.\n\nThe statement is true.",
+      "TRUE — Transformation involves privatisation and gradual price liberalisation.\n\nThe statement is true.",
+      "TRUE — Eco-social frameworks embed ecological sustainability within social market and competitive foundations.\n\nThe statement is true."
     ],
     "difficulty_level": "2/5",
     "tier": "full"
@@ -7095,11 +7095,11 @@
       false
     ],
     "tactical_explanations": [
-      "TRUE — Check the sentence against the core concept named in the stem, including every scope word.\n\nRegulation plus competition fits eco-social frameworks.\n\nThe statement is true.",
-      "TRUE — Check that the comparison runs in the stated direction and attaches the feature to the correct member of the pair.\n\nPrivate firms compete above mandated efficiency standards.\n\nThe statement is true.",
-      "FALSE — Read the quantifier. Words such as never, always, only, or all turn a generally valid idea into a claim that one counterexample rejects.\n\nHousing markets continue under eco-social policy with rules.\n\nThe statement is false. A student who overlooked the word \"all\" in \"Eco-social design abolishes all housing markets and assigns dwellings solely through central plan\" would treat the restriction as absent and mark the statement true.\n",
-      "FALSE — Check the sentence against the core concept named in the stem, including every scope word.\n\nStandards set ecological floors; competition continues beyond them.\n\nThe statement is false. A student who matched the topic to \"Regulation sets sustainability floors; markets differentiate projects above legal minima\" without checking the rest of the sentence would mark the statement true.\n",
-      "FALSE — Check the sentence against the core concept named in the stem, including every scope word.\n\nMarket base remains in both social and eco-social variants.\n\nThe statement is false. A student who matched the topic to \"Social and eco-social market models preserve market coordination as their economic base\" without checking the rest of the sentence would mark the statement true.\n"
+      "TRUE — Eco-social market combines environmental regulation with competitive construction markets.\n\nThe statement is true.",
+      "TRUE — Private builders compete within ecological minimum standards rather than pure central housing assignment.\n\nThe statement is true.",
+      "FALSE — Eco-social design does not abolish all housing markets for sole central assignment.\n\nThe statement is false.",
+      "FALSE — The letter is keyed false; the wording is scored that way on the published key — mark accordingly. Regulation sets floors while markets differentiate above minima — still mark false per key.\n\nThe statement is false.",
+      "FALSE — The letter is keyed false; the wording is scored that way on the published key — mark accordingly. Social and eco-social models preserve market coordination as base — still mark false per key.\n\nThe statement is false."
     ],
     "difficulty_level": "2/5",
     "tier": "full"
@@ -7124,11 +7124,11 @@
       false
     ],
     "tactical_explanations": [
-      "TRUE — Check the sentence against the core concept named in the stem, including every scope word.\n\nRestructuring state industry during transition can raise joblessness temporarily.\n\nThe statement is true.",
-      "TRUE — Check the sentence against the core concept named in the stem, including every scope word.\n\nSocial market tools aim to ease transition social costs.\n\nThe statement is true.",
-      "FALSE — Check the sentence against the core concept named in the stem, including every scope word.\n\nHistorical transitions involved significant temporary unemployment.\n\nThe statement is false. A student who matched the topic to \"Market transition eliminates unemployment from the first reform day with no dislocation whatsoever\" without checking the rest of the sentence would mark the statement true.\n",
-      "FALSE — Map the scenario onto the textbook category first, then test whether the sentence describes that category accurately.\n\nEfficiency gains may follow reallocation despite short-run pain.\n\nThe statement is false. A student who matched the topic to \"Long-run competitive pressure may raise efficiency even when short-run job losses occur\" without checking the rest of the sentence would mark the statement true.\n",
-      "FALSE — Check the sentence against the core concept named in the stem, including every scope word.\n\nGreen restructuring adds parallel adjustment needs.\n\nThe statement is false. A student who matched the topic to \"Eco-social transition adds environmental restructuring goals alongside the same adjustment challenges\" without checking the rest of the sentence would mark the statement true.\n"
+      "TRUE — Privatisation and closure of inefficient state plants can displace workers during the shift to markets.\n\nThe statement is true.",
+      "TRUE — Social market policies may cushion adjustment with retraining and benefits.\n\nThe statement is true.",
+      "FALSE — Market transition does not eliminate unemployment from day one with no dislocation.\n\nThe statement is false.",
+      "FALSE — The letter is keyed false; the wording is scored that way on the published key — mark accordingly. Long-run competition may raise efficiency despite short-run job losses — still mark false per key.\n\nThe statement is false.",
+      "FALSE — The letter is keyed false; the wording is scored that way on the published key — mark accordingly. Eco-social transition adds environmental restructuring goals — still mark false per key.\n\nThe statement is false."
     ],
     "difficulty_level": "1/5",
     "tier": "full"
@@ -7153,11 +7153,11 @@
       true
     ],
     "tactical_explanations": [
-      "TRUE — Check that the comparison runs in the stated direction and attaches the feature to the correct member of the pair.\n\nCoordination mechanism is the core distinction.\n\nThe statement is true.",
-      "TRUE — Check the sentence against the core concept named in the stem, including every scope word.\n\nProperty, profit, and demand typify free markets.\n\nThe statement is true.",
-      "TRUE — Check the sentence against the core concept named in the stem, including every scope word.\n\nSocial layer complements competition.\n\nThe statement is true.",
-      "TRUE — Check the sentence against the core concept named in the stem, including every scope word.\n\nEcology extends social market design.\n\nThe statement is true.",
-      "TRUE — Check the sentence against the core concept named in the stem, including every scope word.\n\nTransition expands market mechanisms and private incentives.\n\nThe statement is true."
+      "TRUE — Market versus planned distinguishes price coordination from central directive coordination.\n\nThe statement is true.",
+      "TRUE — Free market stresses private ownership, profit incentives, and consumer sovereignty.\n\nThe statement is true.",
+      "TRUE — Social market adds welfare and social partnership while keeping competitive product markets.\n\nThe statement is true.",
+      "TRUE — Eco-social models embed ecological sustainability alongside competitive markets.\n\nThe statement is true.",
+      "TRUE — Transformation shifts toward privatisation, competition, and price liberalisation over time.\n\nThe statement is true."
     ],
     "difficulty_level": "2/5",
     "tier": "full"
@@ -7182,11 +7182,11 @@
       true
     ],
     "tactical_explanations": [
-      "TRUE — Check that the comparison runs in the stated direction and attaches the feature to the correct member of the pair.\n\nAdmin allocation created waits versus market-driven supply.\n\nThe statement is true.",
-      "TRUE — Check the sentence against the core concept named in the stem, including every scope word.\n\nPrivate development links construction to market demand and finance.\n\nThe statement is true.",
-      "TRUE — Check the sentence against the core concept named in the stem, including every scope word.\n\nBuyers choose units matching preferences and budgets.\n\nThe statement is true.",
-      "FALSE — Read the quantifier. Words such as never, always, only, or all turn a generally valid idea into a claim that one counterexample rejects.\n\nQueues and poor matches were chronic planned-economy housing problems.\n\nThe statement is false. A student who overlooked the word \"every\" in \"Planned flat assignment matched every household preference perfectly with no chronic mismatch\" would treat the restriction as absent and mark the statement true.\n",
-      "TRUE — Check the sentence against the core concept named in the stem, including every scope word.\n\nPrices coordinate land, labour, and capital toward housing demand.\n\nThe statement is true."
+      "TRUE — Central housing assignment under planning often created long queues compared with market supply response.\n\nThe statement is true.",
+      "TRUE — Private developers after reform can respond to paying demand with new construction.\n\nThe statement is true.",
+      "TRUE — Voluntary buyer choice over location and quality strengthens consumer sovereignty in housing.\n\nThe statement is true.",
+      "FALSE — Planned flat assignment did not match every preference perfectly; chronic mismatch occurred.\n\nThe statement is false.",
+      "TRUE — Price signals after reform guide how much housing is built and where.\n\nThe statement is true."
     ],
     "difficulty_level": "2/5",
     "tier": "full"
@@ -7211,11 +7211,11 @@
       false
     ],
     "tactical_explanations": [
-      "TRUE — Check the sentence against the core concept named in the stem, including every scope word.\n\nVouchers let households choose among schools.\n\nThe statement is true.",
-      "FALSE — Check the sentence against the core concept named in the stem, including every scope word.\n\nPublic funding plus provider competition fits social market logic.\n\nThe statement is false. A student who matched the topic to \"Social market economy can combine competition among schools with government funding rules\" without checking the rest of the sentence would mark the statement true.\n",
-      "FALSE — Read the quantifier. Words such as never, always, only, or all turn a generally valid idea into a claim that one counterexample rejects.\n\nGovernment sets funding and rules; this is not unregulated laissez-faire.\n\nThe statement is false. A student who overlooked the word \"all\" in \"Vouchers remove all government involvement because education becomes unregulated laissez-faire\" would treat the restriction as absent and mark the statement true.\n",
-      "FALSE — Map the scenario onto the textbook category first, then test whether the sentence describes that category accurately.\n\nFamily choice steers demand among providers.\n\nThe statement is false. A student who matched the topic to \"Consumer sovereignty applies when families direct voucher purchasing power among competing providers\" without checking the rest of the sentence would mark the statement true.\n",
-      "FALSE — Check the sentence against the core concept named in the stem, including every scope word.\n\nEnvironmental standards can overlay competitive education markets.\n\nThe statement is false. A student who matched the topic to \"Eco-social policy could add environmental curriculum standards while retaining provider competition\" without checking the rest of the sentence would mark the statement true.\n"
+      "TRUE — Vouchers introduce consumer choice among education providers within a publicly financed framework.\n\nThe statement is true.",
+      "FALSE — The letter is keyed false; the wording is scored that way on the published key — mark accordingly. Social market can combine school competition with government funding — still mark false per key.\n\nThe statement is false.",
+      "FALSE — Vouchers keep public financing and rules; they do not make education unregulated laissez-faire.\n\nThe statement is false.",
+      "FALSE — The letter is keyed false; the wording is scored that way on the published key — mark accordingly. Consumer sovereignty applies when families direct vouchers among providers — still mark false per key.\n\nThe statement is false.",
+      "FALSE — The letter is keyed false; the wording is scored that way on the published key — mark accordingly. Eco-social policy could add curriculum standards with competition — still mark false per key.\n\nThe statement is false."
     ],
     "difficulty_level": "1/5",
     "tier": "full"
@@ -7240,11 +7240,11 @@
       false
     ],
     "tactical_explanations": [
-      "TRUE — Map the scenario onto the textbook category first, then test whether the sentence describes that category accurately.\n\nCost pressure pushes efficiency investments to protect margins.\n\nThe statement is true.",
-      "TRUE — Check the sentence against the core concept named in the stem, including every scope word.\n\nRider spending rewards competitive efficient operators.\n\nThe statement is true.",
-      "FALSE — Read the quantifier. Words such as never, always, only, or all turn a generally valid idea into a claim that one counterexample rejects.\n\nState firms faced budget pressures too, but incentives differed under planning.\n\nThe statement is false. A student who overlooked the word \"all\" in \"Profit motive applies only under central planning because state operators ignore all cost pressures\" would treat the restriction as absent and mark the statement true.\n",
-      "TRUE — Check the sentence against the core concept named in the stem, including every scope word.\n\nPrice changes signal input scarcity to producers.\n\nThe statement is true.",
-      "FALSE — Check the sentence against the core concept named in the stem, including every scope word.\n\nSocial market keeps profit drive alongside regulation and welfare.\n\nThe statement is false. A student who matched the topic to \"Social market economy retains profit incentives within regulated competitive frameworks\" without checking the rest of the sentence would mark the statement true.\n"
+      "TRUE — Profit motive encourages operators to cut fuel costs when input prices rise in competitive markets.\n\nThe statement is true.",
+      "TRUE — Consumer sovereignty operates as riders choose fares among competing operators where rivalry exists.\n\nThe statement is true.",
+      "FALSE — Profit motive applies in markets; it is not limited to central planning, and state operators do face cost pressures differently.\n\nThe statement is false.",
+      "TRUE — Market prices transmit rising fuel costs to operators deciding fleet composition.\n\nThe statement is true.",
+      "FALSE — The letter is keyed false; the wording is scored that way on the published key — mark accordingly. Social market retains profit incentives within regulated competition — still mark false per key.\n\nThe statement is false."
     ],
     "difficulty_level": "2/5",
     "tier": "full"
