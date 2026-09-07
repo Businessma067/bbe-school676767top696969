@@ -640,41 +640,43 @@ function ShareholderStructure() {
   return (
     <div className="w-full">
       <div className="mb-2 text-sm font-bold text-primary">Shareholder structure (illustrative listed AG)</div>
-      <div className="h-[200px] w-full sm:h-[230px]">
-        <ResponsiveContainer width="100%" height="100%">
-          <PieChart>
+      <div className="flex flex-col items-center gap-4 sm:flex-row sm:items-center sm:gap-6">
+        <div className="mx-auto shrink-0 sm:mx-0" style={{ width: 220, height: 220 }}>
+          <PieChart width={220} height={220}>
             <Pie
               data={data}
               dataKey="value"
               nameKey="name"
-              innerRadius={44}
-              outerRadius={78}
+              cx="50%"
+              cy="50%"
+              innerRadius={48}
+              outerRadius={86}
               paddingAngle={2}
+              stroke="transparent"
+              isAnimationActive={false}
+              label={false}
               labelLine={false}
             >
               {data.map((_, i) => (
-                <Cell key={i} fill={colors[i]!} stroke="transparent" />
+                <Cell key={i} fill={colors[i]!} />
               ))}
             </Pie>
             <Tooltip />
           </PieChart>
-        </ResponsiveContainer>
+        </div>
+        <ul className="w-full min-w-0 flex-1 space-y-2.5">
+          {data.map((d, i) => (
+            <li key={d.name} className="flex items-start gap-2.5 text-[13px] leading-snug">
+              <span
+                className="mt-1 h-2.5 w-2.5 shrink-0 rounded-[3px]"
+                style={{ backgroundColor: colors[i] }}
+                aria-hidden
+              />
+              <span className="min-w-0 flex-1 text-foreground/90">{d.name}</span>
+            </li>
+          ))}
+        </ul>
       </div>
-      <ul className="mt-2 flex flex-wrap justify-center gap-x-3 gap-y-1.5 px-1">
-        {data.map((d, i) => (
-          <li
-            key={d.name}
-            className="inline-flex max-w-[16rem] items-start gap-1.5 text-[10px] leading-snug text-muted-foreground"
-          >
-            <span
-              className="mt-[3px] h-2 w-2 shrink-0 rounded-[2px]"
-              style={{ backgroundColor: colors[i] }}
-              aria-hidden
-            />
-            <span className="text-foreground/85">{d.name}</span>
-          </li>
-        ))}
-      </ul>
     </div>
   );
 }
