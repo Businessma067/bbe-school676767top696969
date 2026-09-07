@@ -101,12 +101,25 @@ const mockBuilderItem: NavItem = {
   activePrefixes: ["/products/custom-mock-builder"],
 };
 
-const gamesItem: NavItem = {
-  label: "Study tools",
-  href: "/dashboard",
+const flashcardsItem: NavItem = {
+  label: "Flashcards",
+  href: "/flashcards",
   isRoute: true,
-  search: { tab: "games" },
-  activePrefixes: ["/flashcards", "/matching", "/tutor-exam"],
+  activePrefixes: ["/flashcards"],
+};
+
+const matchingItem: NavItem = {
+  label: "Matching",
+  href: "/matching",
+  isRoute: true,
+  activePrefixes: ["/matching"],
+};
+
+const tutorExamItem: NavItem = {
+  label: "Tutor Exam",
+  href: "/tutor-exam",
+  isRoute: true,
+  activePrefixes: ["/tutor-exam"],
 };
 
 /** Logged out, demo-only, or signed-in without Lite/Full. Same on every page. */
@@ -136,7 +149,7 @@ export function navItemsForAccess(access: AccountNavAccess): NavItem[] {
   const items: NavItem[] = [examInfoItem, productsItem, demoCourseItem];
   if (access.hasLite) items.push(lightCourseItem);
   if (access.hasFull) items.push(fullCourseItem);
-  items.push(mockExamsItem, mockBuilderItem, gamesItem);
+  items.push(mockExamsItem, mockBuilderItem, flashcardsItem, matchingItem, tutorExamItem);
   return items;
 }
 
