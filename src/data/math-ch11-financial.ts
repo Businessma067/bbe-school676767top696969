@@ -3416,9 +3416,9 @@ $$4,500 \\times 1.051271$$
 
 $$\\approx 4,730.72$$
 
-$$4,730.72 - 4,500$$
-
-$$= 230.72$$
+$$
+4,730.72 - 4,500 = 230.72
+$$
 
 Compare the computed value with the claim (\\$230.72). The two sides agree.
 
@@ -3428,11 +3428,7 @@ So the statement is True.`,
 Annual compounding at the same 5% nominal rate uses $n=1$:
 
 $$
-S_{\\mathrm{ann}} = 4,500 \\times 1.05
-$$
-
-$$
-= 4,725.00
+S_{\\mathrm{ann}} = 4,500 \\times 1.05 = 4,725.00
 $$
 
 Compare the computed value with the claim (\\$4,735.00). The computed value is
@@ -3461,16 +3457,12 @@ $$4,500 \\times 1.051271$$
 $$\\approx 4,730.72$$
 
 $$
-S_{\\mathrm{ann}} = 4,500 \\times 1.05
+S_{\\mathrm{ann}} = 4,500 \\times 1.05 = 4,725.00
 $$
 
 $$
-= 4,725.00
+4,730.72 - 4,725.00 = 5.72
 $$
-
-$$4,730.72 - 4,725.00$$
-
-$$= 5.72$$
 
 Compare the computed value with the claim (\\$5.72). The two sides agree.
 
@@ -3529,11 +3521,7 @@ $$`,
 Six years of continuous $8\\%$ carry the exponent $0.48$:
 
 $$
-S(6) = 3,200 \\times e^{0.08 \\times 6}
-$$
-
-$$
-= 3,200 \\times e^{0.48}
+S(6) = 3,200 \\times e^{0.08 \\times 6} = 3,200 \\times e^{0.48}
 $$
 
 $$e^{0.48}$$
@@ -3550,11 +3538,7 @@ So the statement is True.`,
 Three years of the same continuous rate give
 
 $$
-S(3) = 3,200 \\times e^{0.08 \\times 3}
-$$
-
-$$
-= 3,200 \\times e^{0.24}
+S(3) = 3,200 \\times e^{0.08 \\times 3} = 3,200 \\times e^{0.24}
 $$
 
 $$e^{0.24}$$
@@ -3602,9 +3586,9 @@ $$3,200 \\times 1.616074$$
 
 $$\\approx 5,171.44$$
 
-$$5,171.44 - 3,200$$
-
-$$= 1,971.44$$
+$$
+5,171.44 - 3,200 = 1,971.44
+$$
 
 The claim is approximately \\$2,000.00. The computed value is
 
@@ -3622,11 +3606,7 @@ So the statement is False.`,
 Twelve years of the same continuous rate double the six-year exponent:
 
 $$
-S(12) = 3,200 \\times e^{0.08 \\times 12}
-$$
-
-$$
-= 3,200 \\times e^{0.96}
+S(12) = 3,200 \\times e^{0.08 \\times 12} = 3,200 \\times e^{0.96}
 $$
 
 $$e^{0.96}$$
@@ -3637,9 +3617,9 @@ $$S(12) \\approx 8,357.43$$
 
 $$2 \\times S(6)$$
 
-$$\\approx 2 \\times 5,171.44$$
-
-$$= 10,342.88$$
+$$
+\\approx 2 \\times 5,171.44 = 10,342.88
+$$
 
 The claim needs $S(12)=2\\,S(6)$. The computed value is
 
@@ -3759,9 +3739,9 @@ $$R = e^{0.09} - 1$$
 
 $$\\approx 9.42\\%$$
 
-$$9.42\\% - 9.00\\%$$
-
-$$= 0.42$$
+$$
+9.42\\% - 9.00\\% = 0.42
+$$
 
 The claim needs more than $0.75$ percentage points. We have $0.42 < 0.75$.
 
@@ -3788,9 +3768,9 @@ $$R = e^{0.09} - 1$$
 
 $$\\approx 9.42\\%$$
 
-$$2 \\times 9.42\\%$$
-
-$$= 18.84\\%$$
+$$
+2 \\times 9.42\\% = 18.84\\%
+$$
 
 The claim needs $R_{18} > 2R$. We have $19.72\\% > 18.84\\%$.
 
@@ -3846,12 +3826,8 @@ $$
 K_{\\mathrm{y}} = 1 + 0.10
 $$
 
-$$1 + 0.10$$
-
-$$= 1.1$$
-
 $$
-= 1.1000
+1 + 0.10 = 1.1 = 1.1000
 $$
 
 Compare the computed value with the claim ($1.1000$). The two sides agree.
@@ -3862,15 +3838,7 @@ So the statement is True.`,
 Semi-annual compounding splits the quote in two, then squares:
 
 $$
-K_{\\mathrm{s}} = \\left(1+\\frac{0.10}{2}\\right)^{2}
-$$
-
-$$
-= (1.05)^{2}
-$$
-
-$$
-= 1.1025
+K_{\\mathrm{s}} = \\left(1+\\frac{0.10}{2}\\right)^{2} = (1.05)^{2} = 1.1025
 $$
 
 Compare the computed value with the claim ($1.1025$). The two sides agree.
@@ -3924,27 +3892,21 @@ $$
 K_{\\mathrm{s}} - K_{\\mathrm{y}} = 1.1025 - 1.1000
 $$
 
-$$1.1025 - 1.1000$$
-
-$$= 0.0025$$
-
 $$
-= 0.0025
+1.1025 - 1.1000 = 0.0025
 $$
 
 $$
 K_{\\mathrm{c}} - K_{\\mathrm{s}} = e^{0.10} - 1.1025
 $$
 
-$$\\approx 1.105171 - 1.1025$$
-
 $$
-= 0.002671
+\\approx 1.105171 - 1.1025 = 0.002671
 $$
 
-$$75,000 \\times 0.0025$$
-
-$$= 187.50$$
+$$
+75,000 \\times 0.0025 = 187.50
+$$
 
 $$75,000 \\times 0.002671$$
 
@@ -4021,11 +3983,7 @@ So the statement is False.`,
 Two years of continuous $4.5\\%$ carry the exponent $0.09$:
 
 $$
-S(2) = 95,000 \\times e^{0.045 \\times 2}
-$$
-
-$$
-= 95,000 \\times e^{0.09}
+S(2) = 95,000 \\times e^{0.045 \\times 2} = 95,000 \\times e^{0.09}
 $$
 
 $$e^{0.09}$$
@@ -4089,9 +4047,9 @@ Double the original factor would be
 
 $$2 \\times e^{0.045}$$
 
-$$\\approx 2 \\times 1.046028$$
-
-$$= 2.092056$$
+$$
+\\approx 2 \\times 1.046028 = 2.092056
+$$
 
 The claim needs $e^{0.09}=2e^{0.045}$. The computed value is
 
@@ -4145,11 +4103,7 @@ Each additional year multiplies the balance by the same factor $e^{r}$, and over
 Four years of continuous $10\\%$ depreciation carry the exponent $-0.40$:
 
 $$
-v(4) = 60,000 \\times e^{-0.10 \\times 4}
-$$
-
-$$
-= 60,000 \\times e^{-0.40}
+v(4) = 60,000 \\times e^{-0.10 \\times 4} = 60,000 \\times e^{-0.40}
 $$
 
 $$e^{-0.40}$$
@@ -4166,11 +4120,7 @@ So the statement is True.`,
 Seven years of continuous $10\\%$ depreciation carry the exponent $-0.70$:
 
 $$
-v(7) = 60,000 \\times e^{-0.10 \\times 7}
-$$
-
-$$
-= 60,000 \\times e^{-0.70}
+v(7) = 60,000 \\times e^{-0.10 \\times 7} = 60,000 \\times e^{-0.70}
 $$
 
 $$e^{-0.70}$$
@@ -4198,9 +4148,9 @@ $$\\approx 40,219.20$$
 
 $$\\frac{40,219.20}{60,000}$$
 
-$$\\approx 0.6703$$
-
-$$= 67.03\\%$$
+$$
+\\approx 0.6703 = 67.03\\%
+$$
 
 Compare the computed value with the claim (about $67.03\\%$). The two sides agree.
 
@@ -4210,11 +4160,7 @@ So the statement is True.`,
 At a doubled $20\\%$ depreciation rate the four-year value is
 
 $$
-v(4) = 60,000 \\times e^{-0.20 \\times 4}
-$$
-
-$$
-= 60,000 \\times e^{-0.80}
+v(4) = 60,000 \\times e^{-0.20 \\times 4} = 60,000 \\times e^{-0.80}
 $$
 
 $$e^{-0.80}$$
@@ -4319,11 +4265,7 @@ So the statement is True.`,
 At the rounded doubling time $t=12.60$ years,
 
 $$
-S(12.60) = 18,000 \\times e^{0.055 \\times 12.60}
-$$
-
-$$
-= 18,000 \\times e^{0.693}
+S(12.60) = 18,000 \\times e^{0.055 \\times 12.60} = 18,000 \\times e^{0.693}
 $$
 
 $$e^{0.693}$$
@@ -4364,9 +4306,9 @@ So the statement is False.`,
 
 Each doubling multiplies the balance by $2$. Three full doubling periods therefore multiply by
 
-$$2^{3}$$
-
-$$= 8$$
+$$
+2^{3} = 8
+$$
 
 Compare the computed value with the claim (a factor of $6$). The computed value is
 
@@ -4472,9 +4414,9 @@ So the statement is True.`,
 
 Retaining $40\\%$ of the original \\$120,000 leaves
 
-$$0.40 \\times 120,000$$
-
-$$= 48,000$$
+$$
+0.40 \\times 120,000 = 48,000
+$$
 
 Compare the computed value with the claim (approximately \\$48,000.00). The two sides agree.
 
@@ -4501,10 +4443,8 @@ So the statement is True.`,
 Losing $80\\%$ of value means retaining $20\\%$, so
 
 $$
-t_{80} = \\frac{\\ln\\bigl(\\frac{1}{0.20}\\bigr)}{0.18}
+t_{80} = \\frac{\\ln\\bigl(\\frac{1}{0.20}\\bigr)}{0.18} = \\frac{\\ln 5}{0.18}
 $$
-
-$$= \\frac{\\ln 5}{0.18}$$
 
 $$\\ln 5$$
 
@@ -4877,13 +4817,13 @@ So the statement is True.`,
 
 A straight-line extension of the observed three-year dollar gain is
 
-$$\\frac{34,200-28,000}{3}$$
+$$
+\\frac{34,200-28,000}{3} = 2,066.67
+$$
 
-$$= 2,066.67$$
-
-$$34,200 + 2 \\times 2,066.67$$
-
-$$= 38,333.33$$
+$$
+34,200 + 2 \\times 2,066.67 = 38,333.33
+$$
 
 The exponential projection was $S(5) \\approx 39,078.52$. The claim needs these to match. The computed value is
 
@@ -4926,11 +4866,7 @@ So the statement is False.`,
 If the implied rate had been $6.00\\%$, the three-year value would be
 
 $$
-S(3) = 28,000 \\times e^{0.06 \\times 3}
-$$
-
-$$
-= 28,000 \\times e^{0.18}
+S(3) = 28,000 \\times e^{0.06 \\times 3} = 28,000 \\times e^{0.18}
 $$
 
 $$e^{0.18}$$
@@ -4995,11 +4931,7 @@ A later value at time $T$ is $S(T)=S_0 e^{rT}$.`,
 Bank X compounds continuously at $6.8\\%$ for two years:
 
 $$
-S_X = 60,000 \\times e^{0.068 \\times 2}
-$$
-
-$$
-= 60,000 \\times e^{0.136}
+S_X = 60,000 \\times e^{0.068 \\times 2} = 60,000 \\times e^{0.136}
 $$
 
 $$e^{0.136}$$
@@ -5073,11 +5005,7 @@ So the statement is True.`,
 Raising Bank X to a $7.0\\%$ continuous quote for two years gives
 
 $$
-S_X' = 60,000 \\times e^{0.07 \\times 2}
-$$
-
-$$
-= 60,000 \\times e^{0.14}
+S_X' = 60,000 \\times e^{0.07 \\times 2} = 60,000 \\times e^{0.14}
 $$
 
 $$e^{0.14}$$
@@ -5173,16 +5101,8 @@ $$
 r_{\\mathrm{net}} = 0.09 - 0.02
 $$
 
-$$0.09 - 0.02$$
-
-$$= 0.07$$
-
 $$
-= 0.07
-$$
-
-$$
-= 7\\%
+0.09 - 0.02 = 0.07 = 7\\%
 $$
 
 The claim asserts $11\\%$ by adding the fee instead. The computed value is
@@ -5201,11 +5121,7 @@ So the statement is False.`,
 Six years at the recovered $7\\%$ net rate give
 
 $$
-S(6) = 2,000,000 \\times e^{0.07 \\times 6}
-$$
-
-$$
-= 2,000,000 \\times e^{0.42}
+S(6) = 2,000,000 \\times e^{0.07 \\times 6} = 2,000,000 \\times e^{0.42}
 $$
 
 $$e^{0.42}$$
@@ -5255,11 +5171,7 @@ So the statement is False.`,
 A $3.5\\%$ fee leaves a net rate of $9\\% - 3.5\\% = 5.5\\%$:
 
 $$
-S(6) = 2,000,000 \\times e^{0.055 \\times 6}
-$$
-
-$$
-= 2,000,000 \\times e^{0.33}
+S(6) = 2,000,000 \\times e^{0.055 \\times 6} = 2,000,000 \\times e^{0.33}
 $$
 
 $$e^{0.33}$$
@@ -5368,11 +5280,7 @@ So the statement is True.`,
 Substituting the recovered opening values and rates gives
 
 $$
-t = \\frac{\\ln\\bigl(\\frac{250,000}{50,000}\\bigr)}{0.04+0.12}
-$$
-
-$$
-= \\frac{\\ln 5}{0.16}
+t = \\frac{\\ln\\bigl(\\frac{250,000}{50,000}\\bigr)}{0.04+0.12} = \\frac{\\ln 5}{0.16}
 $$
 
 $$\\ln 5$$
@@ -5395,18 +5303,14 @@ So the statement is True.`,
 At exactly $t=10$ the two values are
 
 $$
-A(10) = 50,000 \\times e^{0.04 \\times 10}
+A(10) = 50,000 \\times e^{0.04 \\times 10} = 50,000 \\times e^{0.40}
 $$
-
-$$= 50,000 \\times e^{0.40}$$
 
 $$\\approx 74,591.23$$
 
 $$
-B(10) = 250,000 \\times e^{-0.12 \\times 10}
+B(10) = 250,000 \\times e^{-0.12 \\times 10} = 250,000 \\times e^{-1.20}
 $$
-
-$$= 250,000 \\times e^{-1.20}$$
 
 $$\\approx 75,298.55$$
 
@@ -5506,11 +5410,7 @@ The two paths are $A(t)=A_0 e^{r_A t}$ and $B(t)=B_0 e^{-\\delta_B t}$. Setting 
 Annual compounding is a single $7\\%$ credit:
 
 $$
-S_1 = 40,000 \\times 1.07
-$$
-
-$$
-= 42,800.00
+S_1 = 40,000 \\times 1.07 = 42,800.00
 $$
 
 Compare the computed value with the claim (\\$42,800.00). The two sides agree.
@@ -5544,11 +5444,7 @@ So the statement is True.`,
 The four one-year values at the same $7\\%$ quote are
 
 $$
-S_1 = 40,000 \\times 1.07
-$$
-
-$$
-= 42,800.00
+S_1 = 40,000 \\times 1.07 = 42,800.00
 $$
 
 $$S_4 = 40,000 \\times (1.0175)^{4}$$
@@ -5576,15 +5472,15 @@ The two successive dollar gaps are
 
 $$S_{12} - S_4$$
 
-$$\\approx 42,891.60 - 42,874.36$$
-
-$$= 17.24$$
+$$
+\\approx 42,891.60 - 42,874.36 = 17.24
+$$
 
 $$S_{\\mathrm{c}} - S_{12}$$
 
-$$\\approx 42,900.33 - 42,891.60$$
-
-$$= 8.73$$
+$$
+\\approx 42,900.33 - 42,891.60 = 8.73
+$$
 
 The claim needs $17.24 < 8.73$. We have $17.24 > 8.73$.
 
@@ -5655,11 +5551,7 @@ $$`,
 Option 1 discounts \\$100,000 continuously at $4.5\\%$ for eight years:
 
 $$
-S_{0,1} = 100,000 \\times e^{-0.045 \\times 8}
-$$
-
-$$
-= 100,000 \\times e^{-0.36}
+S_{0,1} = 100,000 \\times e^{-0.045 \\times 8} = 100,000 \\times e^{-0.36}
 $$
 
 $$e^{-0.36}$$
@@ -5676,11 +5568,7 @@ So the statement is True.`,
 Option 2 discounts \\$100,000 continuously at $6.0\\%$ for eight years:
 
 $$
-S_{0,2} = 100,000 \\times e^{-0.06 \\times 8}
-$$
-
-$$
-= 100,000 \\times e^{-0.48}
+S_{0,2} = 100,000 \\times e^{-0.06 \\times 8} = 100,000 \\times e^{-0.48}
 $$
 
 $$e^{-0.48}$$
@@ -5719,9 +5607,9 @@ The gap in required deposits is
 
 $$S_{0,1} - S_{0,2}$$
 
-$$\\approx 69,767.63 - 61,878.34$$
-
-$$= 7,889.29$$
+$$
+\\approx 69,767.63 - 61,878.34 = 7,889.29
+$$
 
 Option 2 requires the smaller deposit. The claim is about \\$9,000.00 with Option 2 larger. The computed value is
 
@@ -5739,11 +5627,7 @@ So the statement is False.`,
 The same \\$100,000 target in only four years under Option 1 requires
 
 $$
-S_0' = 100,000 \\times e^{-0.045 \\times 4}
-$$
-
-$$
-= 100,000 \\times e^{-0.18}
+S_0' = 100,000 \\times e^{-0.045 \\times 4} = 100,000 \\times e^{-0.18}
 $$
 
 $$e^{-0.18}$$
@@ -5820,11 +5704,7 @@ The required deposit is the continuous present value`,
 Four years of continuous $10\\%$ carry the exponent $0.40$:
 
 $$
-S(4) = 1,800,000 \\times e^{0.10 \\times 4}
-$$
-
-$$
-= 1,800,000 \\times e^{0.40}
+S(4) = 1,800,000 \\times e^{0.10 \\times 4} = 1,800,000 \\times e^{0.40}
 $$
 
 $$e^{0.40}$$
@@ -5841,11 +5721,7 @@ So the statement is True.`,
 The maturity phase then applies three years of continuous $4\\%$:
 
 $$
-S(7) = 1,800,000 \\times e^{0.40 + 0.04 \\times 3}
-$$
-
-$$
-= 1,800,000 \\times e^{0.52}
+S(7) = 1,800,000 \\times e^{0.40 + 0.04 \\times 3} = 1,800,000 \\times e^{0.52}
 $$
 
 $$e^{0.52}$$
@@ -5862,15 +5738,11 @@ So the statement is True.`,
 The single constant rate matching the seven-year outcome is the time-weighted average of the two phase rates:
 
 $$
-r_* = \\frac{0.10 \\times 4 + 0.04 \\times 3}{7}
+r_* = \\frac{0.10 \\times 4 + 0.04 \\times 3}{7} = \\frac{0.52}{7}
 $$
 
-$$= \\frac{0.52}{7}$$
-
-$$\\approx 0.07429$$
-
 $$
-= 7.43\\%
+\\approx 0.07429 = 7.43\\%
 $$
 
 Compare the computed value with the claim (about $7.43\\%$). The two sides agree.
@@ -5880,12 +5752,8 @@ So the statement is True.`,
 
 The effective seven-year rate is $r_* \\approx 7.43\\%$. The plain average of the two phase rates is
 
-$$\\frac{0.10+0.04}{2}$$
-
-$$= 0.07$$
-
 $$
-= 7\\%
+\\frac{0.10+0.04}{2} = 0.07 = 7\\%
 $$
 
 The claim needs $r_* > 7\\%$. We have $7.43\\% > 7\\%$.
@@ -5899,32 +5767,16 @@ $$
 S_{\\mathrm{rev}}(7) = 1,800,000 \\times e^{0.04 \\times 3 + 0.10 \\times 4}
 $$
 
-$$0.04 \\times 3$$
-
-$$= 0.12$$
-
-$$0.10 \\times 4$$
-
-$$= 0.4$$
-
-$$0.12 + 0.4$$
-
-$$= 0.52$$
-
-$$0.04 \\times 3$$
-
-$$= 0.12$$
-
-$$0.10 \\times 4$$
-
-$$= 0.4$$
-
-$$0.12 + 0.4$$
-
-$$= 0.52$$
+$$
+0.04 \\times 3 = 0.12
+$$
 
 $$
-= 1,800,000 \\times e^{0.52}
+0.10 \\times 4 = 0.4
+$$
+
+$$
+0.12 + 0.4 = 0.52 = 1,800,000 \\times e^{0.52}
 $$
 
 That equals the original $S(7)$. The year-7 revenue is unchanged.
@@ -6021,10 +5873,8 @@ $$
 \\delta = \\frac{1}{6}\\ln\\bigl(\\frac{85,000}{32,000}\\bigr)
 $$
 
-$$\\approx 0.1628$$
-
 $$
-= 16.28\\%
+\\approx 0.1628 = 16.28\\%
 $$
 
 The computed value is approximately 16.28%, which matches the claim.
@@ -6035,11 +5885,7 @@ So the statement is True.`,
 The second crane depreciates continuously at $15\\%$ for six years:
 
 $$
-v_2(6) = 85,000 \\times e^{-0.15 \\times 6}
-$$
-
-$$
-= 85,000 \\times e^{-0.90}
+v_2(6) = 85,000 \\times e^{-0.15 \\times 6} = 85,000 \\times e^{-0.90}
 $$
 
 $$e^{-0.90}$$
@@ -6080,10 +5926,8 @@ $$
 \\delta' = \\frac{1}{6}\\ln\\bigl(\\frac{85,000}{40,000}\\bigr)
 $$
 
-$$\\approx 0.1256$$
-
 $$
-= 12.56\\%
+\\approx 0.1256 = 12.56\\%
 $$
 
 The original implied rate was $16.28\\%$. The claim needs $\\delta'>16.28\\%$. We have $12.56\\% < 16.28\\%$.
@@ -6173,18 +6017,14 @@ So the statement is True.`,
 
 Quadrupling is the multiple
 
-$$M = 4$$
-
-$$= 2^{2}$$
+$$
+M = 4 = 2^{2}
+$$
 
 :
 
 $$
-t_4 = \\frac{\\ln 4}{0.065}
-$$
-
-$$
-= \\frac{2\\ln 2}{0.065}
+t_4 = \\frac{\\ln 4}{0.065} = \\frac{2\\ln 2}{0.065}
 $$
 
 $$t_4 \\approx 21.33$$
@@ -6206,9 +6046,9 @@ So the statement is True.`,
 
 Quadrupling the \\$12,000 deposit gives
 
-$$4 \\times 12,000$$
-
-$$= 48,000$$
+$$
+4 \\times 12,000 = 48,000
+$$
 
 At the quadrupling time the fund is worth exactly \\$48,000.00.
 
@@ -6293,11 +6133,7 @@ The balance follows $S(t)=S_0 e^{rt}$. Reaching a multiple $M$ of the deposit ta
 Asset A grows continuously at $6\\%$ for five years:
 
 $$
-A(5) = 150,000 \\times e^{0.06 \\times 5}
-$$
-
-$$
-= 150,000 \\times e^{0.30}
+A(5) = 150,000 \\times e^{0.06 \\times 5} = 150,000 \\times e^{0.30}
 $$
 
 $$e^{0.30}$$
@@ -6314,11 +6150,7 @@ So the statement is True.`,
 Asset B depreciates continuously at $9\\%$ for five years:
 
 $$
-B(5) = 220,000 \\times e^{-0.09 \\times 5}
-$$
-
-$$
-= 220,000 \\times e^{-0.45}
+B(5) = 220,000 \\times e^{-0.09 \\times 5} = 220,000 \\times e^{-0.45}
 $$
 
 $$e^{-0.45}$$
@@ -6338,32 +6170,16 @@ $$
 C(5) = 100,000 \\times e^{0.08 \\times 3 + 0.03 \\times 2}
 $$
 
-$$0.08 \\times 3$$
-
-$$= 0.24$$
-
-$$0.03 \\times 2$$
-
-$$= 0.06$$
-
-$$0.24 + 0.06$$
-
-$$= 0.3$$
-
-$$0.08 \\times 3$$
-
-$$= 0.24$$
-
-$$0.03 \\times 2$$
-
-$$= 0.06$$
-
-$$0.24 + 0.06$$
-
-$$= 0.3$$
+$$
+0.08 \\times 3 = 0.24
+$$
 
 $$
-= 100,000 \\times e^{0.30}
+0.03 \\times 2 = 0.06
+$$
+
+$$
+0.24 + 0.06 = 0.3 = 100,000 \\times e^{0.30}
 $$
 
 $$e^{0.30}$$
@@ -6417,11 +6233,7 @@ So the statement is False.`,
 If Asset B instead grew continuously at $9\\%$ for five years:
 
 $$
-B^{+}(5) = 220,000 \\times e^{0.09 \\times 5}
-$$
-
-$$
-= 220,000 \\times e^{0.45}
+B^{+}(5) = 220,000 \\times e^{0.09 \\times 5} = 220,000 \\times e^{0.45}
 $$
 
 $$e^{0.45}$$
