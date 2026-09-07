@@ -5326,9 +5326,7 @@ $$A\\Rightarrow I$$
 
 Maria's enrolment makes $A=\\mathrm{T}$. Modus ponens evaluates the required consequence:
 
-$$A = \\mathrm{T},\\quad A\\Rightarrow I\\quad\\Longrightarrow\\quad I$$
-
-$$= \\mathrm{T}$$
+$$A = \\mathrm{T},\\quad A\\Rightarrow I\\quad\\Longrightarrow\\quad I = \\mathrm{T}$$
 
 Maria has passed Intermediate.
 
@@ -5343,11 +5341,7 @@ $$I\\Rightarrow P$$
 
 Since Maria has $A=\\mathrm{T}$, apply the implications in order:
 
-$$A = \\mathrm{T}\\Longrightarrow I$$
-
-$$= \\mathrm{T}\\Longrightarrow P$$
-
-$$= \\mathrm{T}$$
+$$A = \\mathrm{T}\\Longrightarrow I = \\mathrm{T}\\Longrightarrow P = \\mathrm{T}$$
 
 The second rule therefore forces Maria to have passed Principles.
 
@@ -5360,9 +5354,7 @@ $$A\\Rightarrow I,\\quad I\\Rightarrow P \\quad\\Longrightarrow\\quad A\\Rightar
 
 The resulting arrow says that whenever Advanced enrolment is true, passing Principles must also be true:
 
-$$A = \\mathrm{T}\\quad\\Longrightarrow\\quad P$$
-
-$$= \\mathrm{T}$$
+$$A = \\mathrm{T}\\quad\\Longrightarrow\\quad P = \\mathrm{T}$$
 
 That makes Principles a necessary condition for Advanced enrolment.
 
@@ -5377,19 +5369,13 @@ Consider a student who passed Principles but never passed Intermediate and is no
 
 $$P = \\mathrm{T},$$
 
-$$
-I = \\mathrm{F},
-$$
+$$I = \\mathrm{F},$$
 
-$$
-A = \\mathrm{F}
-$$
+$$A = \\mathrm{F}$$
 
 Both original rules hold vacuously because their antecedents are false, but the proposed reverse implication evaluates as
 
-$$P\\Rightarrow A = \\mathrm{T}\\Rightarrow\\mathrm{F}$$
-
-$$= \\mathrm{F}$$
+$$P\\Rightarrow A = \\mathrm{T}\\Rightarrow\\mathrm{F} = \\mathrm{F}$$
 
 Passing Principles alone is not sufficient for Advanced enrolment.
 
@@ -5398,17 +5384,11 @@ So the statement is False.`,
 
 The rules permit only the pass/fail chain
 
-$$A(M) = \\mathrm{T}\\Longrightarrow I(M)$$
-
-$$= \\mathrm{T}\\Longrightarrow P(M)$$
-
-$$= \\mathrm{T}$$
+$$A(M) = \\mathrm{T}\\Longrightarrow I(M) = \\mathrm{T}\\Longrightarrow P(M) = \\mathrm{T}$$
 
 Here $P(M)=\\mathrm{T}$ means only “Maria passed Principles.” It does not encode any numerical grade:
 
-$$P(M) = \\mathrm{T}\\not\\Rightarrow \\mathrm{Grade}(M)$$
-
-$$= 100\\%$$
+$$P(M) = \\mathrm{T}\\not\\Rightarrow \\mathrm{Grade}(M) = 100\\%$$
 
 Maria could have earned any passing mark. A perfect grade cannot be inferred.
 
@@ -5503,9 +5483,7 @@ $$\\mathrm{Odd}(2)=\\mathrm{F}$$
 
 Equivalently, its universal implication has the false row
 
-$$2\\in P\\Rightarrow\\mathrm{Odd}(2) = \\mathrm{T}\\Rightarrow\\mathrm{F}$$
-
-$$= \\mathrm{F}$$
+$$2\\in P\\Rightarrow\\mathrm{Odd}(2) = \\mathrm{T}\\Rightarrow\\mathrm{F} = \\mathrm{F}$$
 
 This one counterexample disproves “every $x\\in P$ is odd,”.
 
@@ -5518,9 +5496,7 @@ $$\\{x\\in P:x\\ne2\\}=\\{3,5,7,11,13\\}$$
 
 Every number in that set has the form $2k+1$, so each makes the conclusion “$x$ is odd” true. At $x=2$, the extra condition is false:
 
-$$(2\\in P\\land2\\ne2)\\Rightarrow\\mathrm{Odd}(2) = \\mathrm{F}\\Rightarrow\\mathrm{F}$$
-
-$$= \\mathrm{T}$$
+$$(2\\in P\\land2\\ne2)\\Rightarrow\\mathrm{Odd}(2) = \\mathrm{F}\\Rightarrow\\mathrm{F} = \\mathrm{T}$$
 
 Thus no $x$ gives a true antecedent and false conclusion. The universal implication is True.
 
@@ -5535,15 +5511,11 @@ Choose $x=3$. The membership values are
 
 $$3\\in P = \\mathrm{T}$$
 
-$$
-3\\in E = \\mathrm{F}
-$$
+$$3\\in E = \\mathrm{F}$$
 
 so the required implication evaluates as
 
-$$3\\in P\\Rightarrow3\\in E = \\mathrm{T}\\Rightarrow\\mathrm{F}$$
-
-$$= \\mathrm{F}$$
+$$3\\in P\\Rightarrow3\\in E = \\mathrm{T}\\Rightarrow\\mathrm{F} = \\mathrm{F}$$
 
 One member of $P$ outside $E$ disproves the subset claim.
 
@@ -5931,15 +5903,11 @@ The doctor explicitly allows a patient whose two symptoms are present but whose 
 
 $$S = \\mathrm{T},$$
 
-$$
-D = \\mathrm{F}
-$$
+$$D = \\mathrm{F}$$
 
 For that allowed case,
 
-$$S\\Rightarrow D = \\mathrm{T}\\Rightarrow\\mathrm{F}$$
-
-$$= \\mathrm{F}$$
+$$S\\Rightarrow D = \\mathrm{T}\\Rightarrow\\mathrm{F} = \\mathrm{F}$$
 
 Both symptoms are necessary but not sufficient for diagnosis.
 
@@ -5965,15 +5933,11 @@ The criterion gives $D\\Rightarrow(A\\land B)$, but it explicitly denies the con
 
 $$A\\land B = \\mathrm{T},$$
 
-$$
-D = \\mathrm{F}
-$$
+$$D = \\mathrm{F}$$
 
 This possibility satisfies the doctor's one-way rule because
 
-$$D\\Rightarrow(A\\land B) = \\mathrm{F}\\Rightarrow\\mathrm{T}$$
-
-$$= \\mathrm{T}$$
+$$D\\Rightarrow(A\\land B) = \\mathrm{F}\\Rightarrow\\mathrm{T} = \\mathrm{T}$$
 
 yet it directly refutes the claim that such a patient is impossible. Therefore.
 
@@ -6177,13 +6141,9 @@ $$v<3\\quad\\text{or}\\quad v\\ge3$$
 
 The resulting classifications are
 
-$$v<3\\Rightarrow B(v) = \\mathrm{F},\\ M(v)$$
+$$v<3\\Rightarrow B(v) = \\mathrm{F},\\ M(v) = \\mathrm{T}$$
 
-$$= \\mathrm{T}$$
-
-$$v\\ge3\\Rightarrow B(v) = \\mathrm{T},\\ M(v)$$
-
-$$= \\mathrm{F}$$
+$$v\\ge3\\Rightarrow B(v) = \\mathrm{T},\\ M(v) = \\mathrm{F}$$
 
 No count leaves either truth value undetermined. Therefore no genuinely ambiguous violation count exists.
 
@@ -6227,15 +6187,11 @@ So the statement is True.`,
 
 The number $2$ is prime because its only positive divisors are $1$ and $2$. It is even, so it is not odd. The counterexample condition evaluates to
 
-$$
-\\mathrm{Prime}(2)\\land\\neg\\mathrm{Odd}(2) = \\mathrm{T}\\land\\mathrm{T} = \\mathrm{T}
-$$
+$$\\mathrm{Prime}(2)\\land\\neg\\mathrm{Odd}(2) = \\mathrm{T}\\land\\mathrm{T} = \\mathrm{T}$$
 
 Equivalently, the universal implication fails at $2$:
 
-$$\\mathrm{Prime}(2)\\Rightarrow\\mathrm{Odd}(2) = \\mathrm{T}\\Rightarrow\\mathrm{F}$$
-
-$$= \\mathrm{F}$$
+$$\\mathrm{Prime}(2)\\Rightarrow\\mathrm{Odd}(2) = \\mathrm{T}\\Rightarrow\\mathrm{F} = \\mathrm{F}$$
 
 Thus $2$ is a valid counterexample.
 
@@ -6341,15 +6297,11 @@ So the statement is False.`,
 
 The inverse $\\neg P\\Rightarrow\\neg Q$ fails on a dry day when the picnic is cancelled for another reason. For the venue-conflict day,
 
-$$\\neg P\\Rightarrow\\neg Q = \\mathrm{T}\\Rightarrow\\mathrm{F}$$
-
-$$= \\mathrm{F}$$
+$$\\neg P\\Rightarrow\\neg Q = \\mathrm{T}\\Rightarrow\\mathrm{F} = \\mathrm{F}$$
 
 The original remains true:
 
-$$P\\Rightarrow Q = \\mathrm{F}\\Rightarrow\\mathrm{T}$$
-
-$$= \\mathrm{T}$$
+$$P\\Rightarrow Q = \\mathrm{F}\\Rightarrow\\mathrm{T} = \\mathrm{T}$$
 
 One situation separates their truth values. The inverse is not equivalent to the original.
 
@@ -6358,15 +6310,11 @@ So the statement is False.`,
 
 An implication is false only when its hypothesis is true and its conclusion is false. On the venue-conflict day, $P$ is false and $Q$ is true, so
 
-$$\\neg P\\Rightarrow\\neg Q = \\mathrm{T}\\Rightarrow\\mathrm{F}$$
-
-$$= \\mathrm{F}$$
+$$\\neg P\\Rightarrow\\neg Q = \\mathrm{T}\\Rightarrow\\mathrm{F} = \\mathrm{F}$$
 
 while
 
-$$P\\Rightarrow Q = \\mathrm{F}\\Rightarrow\\mathrm{T}$$
-
-$$= \\mathrm{T}$$
+$$P\\Rightarrow Q = \\mathrm{F}\\Rightarrow\\mathrm{T} = \\mathrm{T}$$
 
 The day contradicts the inverse but not the organizer's rule.
 
@@ -6752,15 +6700,11 @@ That is the converse of the given rule. A rate rise for currency defence at $4\\
 
 $$Q = \\mathrm{T},$$
 
-$$
-P = \\mathrm{F}
-$$
+$$P = \\mathrm{F}$$
 
 so the proposed necessity evaluates as
 
-$$Q\\Rightarrow P = \\mathrm{T}\\Rightarrow\\mathrm{F}$$
-
-$$= \\mathrm{F}$$
+$$Q\\Rightarrow P = \\mathrm{T}\\Rightarrow\\mathrm{F} = \\mathrm{F}$$
 
 The original $P\\Rightarrow Q$ remains true on this row because $P$ is false. High inflation is not established as necessary.
 
@@ -6779,19 +6723,13 @@ which affirms the consequent. Use a possible currency-defence rise at $4\\%$ inf
 
 $$P = \\mathrm{F},$$
 
-$$
-Q = \\mathrm{T}
-$$
+$$Q = \\mathrm{T}$$
 
 Then both premises are true,
 
-$$P\\Rightarrow Q = \\mathrm{F}\\Rightarrow\\mathrm{T}$$
+$$P\\Rightarrow Q = \\mathrm{F}\\Rightarrow\\mathrm{T} = \\mathrm{T},$$
 
-$$= \\mathrm{T},$$
-
-$$
-Q = \\mathrm{T},
-$$
+$$Q = \\mathrm{T},$$
 
 while the conclusion $P$ is false. The conclusion does not follow.
 
@@ -6826,11 +6764,7 @@ $$P\\Leftrightarrow Q$$
 
 Since $P=\\mathrm{T}$, the biconditional can be true only on its TT row:
 
-$$P\\Leftrightarrow Q = \\mathrm{T}\\Leftrightarrow Q$$
-
-$$= \\mathrm{T} \\quad\\Longrightarrow\\quad Q$$
-
-$$= \\mathrm{T}$$
+$$P\\Leftrightarrow Q = \\mathrm{T}\\Leftrightarrow Q = \\mathrm{T} \\quad\\Longrightarrow\\quad Q = \\mathrm{T}$$
 
 The second proposition is therefore true.
 
@@ -6863,15 +6797,11 @@ So the statement is True.`,
 
 Biconditionals force equal truth values in either direction. If $R$ were false, the second link gives
 
-$$Q\\Leftrightarrow R,\\quad R = \\mathrm{F}\\quad\\Longrightarrow\\quad Q$$
-
-$$= \\mathrm{F}$$
+$$Q\\Leftrightarrow R,\\quad R = \\mathrm{F}\\quad\\Longrightarrow\\quad Q = \\mathrm{F}$$
 
 The first link then gives
 
-$$P\\Leftrightarrow Q,\\quad Q = \\mathrm{F}\\quad\\Longrightarrow\\quad P$$
-
-$$= \\mathrm{F}$$
+$$P\\Leftrightarrow Q,\\quad Q = \\mathrm{F}\\quad\\Longrightarrow\\quad P = \\mathrm{F}$$
 
 Thus a false third proposition would force the first false.
 
@@ -8928,9 +8858,7 @@ $\\forall f\\, \\exists c$ lets a defect code depend on the chip. $\\exists c\\,
 
 The proposed negation would need a witness with $6\\mid n$ and $3\\nmid n$. For an arbitrary integer satisfying the first condition,
 
-$$6\\mid n \\quad\\Longrightarrow\\quad n = 6k$$
-
-$$= 3(2k) \\quad\\Longrightarrow\\quad 3\\mid n$$
+$$6\\mid n \\quad\\Longrightarrow\\quad n = 6k = 3(2k) \\quad\\Longrightarrow\\quad 3\\mid n$$
 
 Thus $6\\mid n$ always forces the opposite of $3\\nmid n$. There is not even one witness to $6\\mid n\\land3\\nmid n$, much less infinitely many.
 

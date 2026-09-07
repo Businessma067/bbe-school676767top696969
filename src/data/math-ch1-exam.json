@@ -89,7 +89,7 @@
         "**B.** → True\n\nSuccessor difference:\n\n$$m=n+1$$\n\n$$m-n=(n+1)-n$$\n\n$$(n+1)-n=1$$\n\nSo the statement is True.",
         "**C.** → False\n\nRepeated roster entries do not create new elements of a set. Collapse duplicates first:\n\n$$\\{\\alpha,\\beta,\\alpha\\}=\\{\\alpha,\\beta\\}$$\n\nOrder is irrelevant as well:\n\n$$\\{\\alpha,\\beta\\}=\\{\\beta,\\alpha\\}$$\n\nCardinality then counts distinct members only:\n\n$$|\\{\\alpha,\\beta,\\alpha\\}|=2$$\n\n$$2\\neq 3$$\n\nThe equality of rosters is correct, but the claimed cardinality $3$ is not.\n\nSo the statement is False.",
         "**D.** → False\n\nThe intersection is removed once from each set's exclusive part.\n\n$$\n|A\\setminus B| = 18-5 = 13\n$$\n\n$$\n|B\\setminus A| = 14-5 = 9\n$$\n\n$$\n|A\\triangle B| = 13+9 = 22\\ne23\n$$\n\nThe symmetric difference has size $22$,\n\nSo the statement is False.",
-        "**E.** → True\n\nAn implication can fail only when its antecedent is true and its consequent is false.\n\n$$(p\\rightarrow q)\\wedge p = T\\Longrightarrow p$$\n\n$$= T$$\n\n$$p = T\\ \\text{and}\\ p\\rightarrow q$$\n\n$$= T\\Longrightarrow q$$\n\n$$= T$$\n\n$$((p\\rightarrow q)\\wedge p)\\rightarrow q=T$$\n\nNo truth assignment makes the formula false.\n\nSo the statement is True."
+        "**E.** → True\n\nAn implication can fail only when its antecedent is true and its consequent is false.\n\n$$(p\\rightarrow q)\\wedge p = T\\Longrightarrow p = T$$\n\n$$p = T\\ \\text{and}\\ p\\rightarrow q = T\\Longrightarrow q = T$$\n\n$$((p\\rightarrow q)\\wedge p)\\rightarrow q=T$$\n\nNo truth assignment makes the formula false.\n\nSo the statement is True."
       ],
       "difficulty_level": "5/5",
       "sort_order": 111,
@@ -182,7 +182,7 @@
       ],
       "tactical_explanations": [
         "**A.** → True\n\nList the coded sets, form their union, and then retain the unused universal elements.\n\n$$A=\\{3,6,9,12,15\\}$$\n\n$$A\\cup B=\\{1,2,3,4,6,9,12,15\\}$$\n\n$$U\\setminus(A\\cup B)=\\{5,7,8,10,11,13,14\\}$$\n\nThe complement roster is correct,\n\nEach candidate element is kept when it appears in at least one of the listed sets.\n\nSo the statement is True.",
-        "**B.** → True\n\nA biconditional is true exactly when its two propositions agree.\n\n$$(p,q) = (T,T)\\Longrightarrow p\\wedge q$$\n\n$$= T$$\n\n$$(p,q) = (F,F)\\Longrightarrow\\neg p\\wedge\\neg q$$\n\n$$= T$$\n\n$$p\\leftrightarrow q\\equiv(p\\wedge q)\\vee(\\neg p\\wedge\\neg q)$$\n\nThe right side selects exactly the agreement rows.\n\nSo the statement is True.",
+        "**B.** → True\n\nA biconditional is true exactly when its two propositions agree.\n\n$$(p,q) = (T,T)\\Longrightarrow p\\wedge q = T$$\n\n$$(p,q) = (F,F)\\Longrightarrow\\neg p\\wedge\\neg q = T$$\n\n$$p\\leftrightarrow q\\equiv(p\\wedge q)\\vee(\\neg p\\wedge\\neg q)$$\n\nThe right side selects exactly the agreement rows.\n\nSo the statement is True.",
         "**C.** → False\n\nMembership in the larger class does not force membership in its subclass.\n\n$$\\forall x\\,(V(x)\\rightarrow M(x))$$\n\n$$M(\\mathrm{Lee})=T$$\n\n$$\nV(\\mathrm{Lee}) = F,\\quad M(\\mathrm{Lee}) = T\n$$\n\nThe last line is a countermodel to the conclusion,\n\nSo the statement is False.",
         "**D.** → False\n\nStrict inclusion forces bounds on the middle cardinality but does not select one value.\n\n$$|A|<|B|<|C|$$\n\n$$2<|B|<5$$\n\n$$|B|\\in\\{3,4\\}$$\n\nA three-element middle set is also possible,\n\nSo the statement is False.",
         "**E.** → True\n\n$$10+8=18$$\n\n$$18+6=24$$\n\nSo the statement is True."
@@ -537,7 +537,7 @@
         "**B.** → True\n\nShipping needs $q\\vee r=T$, while holding needs $q=r=F$:\n\n$$S=p\\wedge(q\\vee r)$$\n\n$$H=p\\wedge\\neg q\\wedge\\neg r$$\n\nThose conditions on $(q,r)$ cannot hold together, so $S$ and $H$ are disjoint.\n\nSo the statement is True.",
         "**C.** → False\n\nFalse inventory forces the shipping conjunction to fail regardless of payment or override:\n\n$$(p,q,r)=(F,T,T)$$\n\n$$p\\wedge(q\\vee r)=F$$\n\nThe order does not ship.\n\nSo the statement is False.",
         "**D.** → False\n\nWith $p=T$, the pairs $(q,r)\\in\\{(T,T),(T,F),(F,T)\\}$ are the only shipping rows:\n\n$$\\#\\{(p,q,r):S\\}=3\\neq 4$$\n\nExactly three assignments ship, not four.\n\nSo the statement is False.",
-        "**E.** → False\n\nHolding requires matching inventory, while rejection requires a mismatch:\n\n$$H\\Longrightarrow p=T$$\n\n$$J = \\neg p\\Longrightarrow p$$\n\n$$= F$$\n\nNo assignment can be both held and rejected.\n\nSo the statement is False."
+        "**E.** → False\n\nHolding requires matching inventory, while rejection requires a mismatch:\n\n$$H\\Longrightarrow p=T$$\n\n$$J = \\neg p\\Longrightarrow p = F$$\n\nNo assignment can be both held and rejected.\n\nSo the statement is False."
       ],
       "difficulty_level": "4/5",
       "sort_order": 125,
