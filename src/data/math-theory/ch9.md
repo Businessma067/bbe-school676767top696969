@@ -13,9 +13,9 @@ This chapter starts from the definition of degree and leading coefficient and bu
 - Use roots, factors, the factor theorem and multiplicity (touch versus cross).
 - Track how degree changes under sum, difference, product and composition, including cancellation.
 - Bound turning points and count meetings of two polynomial graphs.
-- Diagnose degree from equally spaced samples using finite differences.
-- Rebuild a monic polynomial from a root pattern, and read Vieta sums and products.
-- Handle one-parameter families: how many real zeros, where the stationary points sit.
+- Diagnose degree from equally spaced samples by subtracting neighbouring values.
+- Rebuild a monic polynomial from a root pattern, including fractional roots, and read Vieta sums and products.
+- Handle one-parameter families: how many real zeros, where the turns sit, and what the sliding letter does.
 - Solve applied stems that mix differentiation of a cubic model with table averages.
 - Spot the usual traps that flip True/False statements on the exam.
 
@@ -217,21 +217,38 @@ You rarely need the formulas by name. You need the habit of collecting even powe
 
 ## 9.4 End behaviour
 
+### What “start” and “end” mean here
+
+A polynomial is defined for every real $x$. So the graph has no first or last point on the axis. When we say where the graph **starts** and **ends**, we mean the far left and the far right:
+
+- far left: what happens as $x\to-\infty$;
+- far right: what happens as $x\to+\infty$.
+
+In both directions the graph either rises without bound ($+\infty$) or falls without bound ($-\infty$). Those two far ends are the **end behaviour**.
+
 ### The leading term decides the far field
 
-For large positive $x$, and for large negative $x$, the graph of $p$ follows its leading term $a_n x^n$. Lower-degree terms become negligible.
+For large $|x|$, the graph of $p$ follows its leading term $a_n x^n$. Lower-degree terms become small by comparison.
 
 Two facts control the picture:
 
-1. the **parity of the degree** (even or odd);
-2. the **sign of the leading coefficient** $a_n$.
+1. whether the degree $n$ is even or odd;
+2. the sign of the leading coefficient $a_n$.
 
-| Degree | Leading coefficient | As $x\to+\infty$ | As $x\to-\infty$ |
+| Degree | Leading coefficient | Far left ($x\to-\infty$) | Far right ($x\to+\infty$) |
 | --- | --- | --- | --- |
 | even | $a_n>0$ | $+\infty$ | $+\infty$ |
 | even | $a_n<0$ | $-\infty$ | $-\infty$ |
-| odd | $a_n>0$ | $+\infty$ | $-\infty$ |
-| odd | $a_n<0$ | $-\infty$ | $+\infty$ |
+| odd | $a_n>0$ | $-\infty$ | $+\infty$ |
+| odd | $a_n<0$ | $+\infty$ | $-\infty$ |
+
+Odd degree: the two ends go **opposite** ways.
+
+[[FIGURE:poly-ends-odd|Odd-degree polynomials. Solid curve: positive lead (left −∞, right +∞). Dashed curve: negative lead (left +∞, right −∞).]]
+
+Even degree: the two ends go the **same** way.
+
+[[FIGURE:poly-ends-even|Even-degree polynomials. Solid curve: positive lead (both ends +∞). Dashed curve: negative lead (both ends −∞).]]
 
 **Example 1.** For $p(x)=-2x^3+x+1$, the degree is odd and $a_n=-2<0$. So
 
@@ -269,7 +286,7 @@ In other words, $x-r$ is a factor exactly when substitution at $r$ returns zero.
 
 The companion statement is the **remainder theorem**: when $p$ is divided by $x-r$, the remainder is the constant $p(r)$. So if $p(r)=0$, the remainder is zero and the division is exact.
 
-**Example 1.** Let $p(x)=x^3-4x^2+x+6$. Then
+**Example 1 (integer root).** Let $p(x)=x^3-4x^2+x+6$. Then
 
 $$
 p(2)=8-16+2+6=0,
@@ -282,6 +299,46 @@ p(-1)=-1-4-1+6=0,
 $$
 
 so $x+1$ is a factor.
+
+**Example 2 (fractional root).** Let
+
+$$
+p(x)=(2x-1)(x+2)(x-3).
+$$
+
+One root comes from $2x-1=0$, so
+
+$$
+x=\frac12.
+$$
+
+Check the factor theorem by substitution:
+
+$$
+p\Bigl(\frac12\Bigr)=\Bigl(2\cdot\frac12-1\Bigr)\Bigl(\frac12+2\Bigr)\Bigl(\frac12-3\Bigr)=0\cdot\frac52\cdot\Bigl(-\frac52\Bigr)=0.
+$$
+
+So $x-\frac12$ divides $p$. Clearing the fraction, the same factor can be written as the integer-coefficient line $2x-1$:
+
+$$
+x-\frac12=\frac{1}{2}(2x-1).
+$$
+
+Both forms mark the same root. On the exam, a claim may say “$x-\frac12$ is a factor” or “$2x-1$ is a factor”. Both are true for this $p$.
+
+**Example 3 (another fraction).** Let $q(x)=2x^3+x^2-x$. Factor out $x$ first:
+
+$$
+q(x)=x(2x^2+x-1)=x(2x-1)(x+1).
+$$
+
+The roots are $0$, $\frac12$ and $-1$. In particular
+
+$$
+q\Bigl(\frac12\Bigr)=2\Bigl(\frac12\Bigr)^3+\Bigl(\frac12\Bigr)^2-\frac12=\frac14+\frac14-\frac12=0,
+$$
+
+so again $x-\frac12$ (or $2x-1$) is a factor. A false claim might say the only roots are integers; the half is easy to miss if you only test $\pm 1,\pm 2$.
 
 ### Multiplicity
 
@@ -458,7 +515,11 @@ with $u=x^2+ax+b$.
 
 ### Turning points
 
-A **turning point** (stationary point) of a differentiable function sits where $p'(x)=0$ and the derivative changes sign.
+A **turning point** is a place where the graph changes from rising to falling, or from falling to rising. At a turn the slope is zero, so
+
+$$
+p'(x)=0.
+$$
 
 If $\deg(p)=n$, then $\deg(p')=n-1$, so $p'$ has at most $n-1$ real roots. A polynomial of degree $n$ therefore has at most $n-1$ turning points.
 
@@ -470,13 +531,15 @@ If $\deg(p)=n$, then $\deg(p')=n-1$, so $p'$ has at most $n-1$ real roots. A pol
 
 A cubic can have two turns, one turn, or none (for example a strictly increasing cubic).
 
-**Example 1.** For $p(x)=x^3-3x^2+2$,
+**Example 1.** For $p(x)=x^3-3x$,
 
 $$
-p'(x)=3x^2-6x=3x(x-2).
+p'(x)=3x^2-3=3(x-1)(x+1).
 $$
 
-There are two stationary abscissas, $x=0$ and $x=2$. That matches the budget “at most two” for a cubic.
+There are two turns, at $x=-1$ (local max) and $x=1$ (local min). The same cubic comes from $-\infty$ on the left and goes to $+\infty$ on the right.
+
+[[FIGURE:poly-turning-points|A cubic with two turning points. Far left: the graph comes from −∞. Far right: it goes to +∞. The marked peaks are the turns.]]
 
 ### Reading a sketch
 
@@ -486,9 +549,21 @@ Exam figures for cubics often show:
 - or a touch and a cross (double root plus simple root);
 - or a single crossing (one real root).
 
-Between consecutive roots of a smooth function there is at least one turning point (Rolle). So a cubic that crosses three times must turn at least twice, and since a cubic has at most two turns, it turns exactly twice, once in each gap between roots.
+Between consecutive roots of a smooth function there is at least one turning point. So a cubic that crosses three times must turn at least twice, and since a cubic has at most two turns, it turns exactly twice, once in each gap between roots.
 
-A dashed horizontal line $y=c$ on the same figure asks how many solutions $p(x)=c$ has, which is the number of meetings of $y=p(x)$ with that line.
+### Meetings with a horizontal line
+
+A dashed horizontal line $y=c$ on the figure asks how many solutions
+
+$$
+p(x)=c
+$$
+
+has. Count the crossings of the curve with that dashed line. Each crossing is one meeting.
+
+[[FIGURE:poly-horizontal-line|The solid cubic meets the dashed line y = c three times, so p(x) = c has three real solutions for that height c.]]
+
+If you raise the dashed line above the local max, some meetings disappear. If you set $c=0$, the meetings are exactly the roots.
 
 ### Meetings of two polynomials
 
@@ -512,32 +587,52 @@ Near a double root the graph looks like a parabola touching the axis. Claims tha
 
 ---
 
-## 9.8 Finite differences from tables
+## 9.8 Tables without a formula (finite differences)
 
-### Equally spaced samples
+### What this section is for
 
-Suppose a polynomial is sampled at $x=x_0,x_0+h,x_0+2h,\ldots$ with fixed step $h$. Write the values $y_0,y_1,y_2,\ldots$. The **first differences** are
+Sometimes the exam does **not** give you the polynomial formula. It only gives a table of values, for example distance every $10$ seconds, or cost at outputs $0,1,2,3,\ldots$.
+
+You still need to answer questions such as:
+
+- what degree could this be?
+- what is the next missing value?
+- where is a root (a zero in the table)?
+- which time block had the highest average speed?
+
+**Finite differences** are the tool for that. The name sounds heavy. The idea is ordinary subtraction in a column.
+
+### Step 1: write the jumps
+
+Suppose the inputs are equally spaced (same step each time: $1$, or $10$, or any fixed $h$). List the outputs in a row. Under them, write how much each value jumped to the next one:
 
 $$
-\Delta y_i=y_{i+1}-y_i.
+\text{first difference}=\text{next value}-\text{this value}.
 $$
 
-The **second differences** are differences of first differences, and so on.
+Those jumps are the **first differences**.
 
-### The degree rule
+Then do the same to the first differences. Those new jumps are the **second differences**. Keep going if needed.
 
-For a polynomial of exact degree $n$, sampled with constant step,
+### Step 2: read the degree from which row becomes constant
 
-- the $n$-th differences are constant (and nonzero);
-- the $(n+1)$-st differences are zero;
-- lower-order differences are not constant.
+When the step is fixed and the table really comes from a polynomial of degree $n$:
 
-Useful special cases with step $h=1$:
+| If this row becomes constant | The degree is |
+| --- | --- |
+| first differences | $1$ (linear) |
+| second differences | $2$ (quadratic) |
+| third differences | $3$ (cubic) |
+| fourth differences | $4$ (quartic) |
 
-- linear: first differences constant;
-- quadratic: second differences constant, equal to $2a$ when $p(x)=ax^2+\cdots$;
-- cubic: third differences constant;
-- quartic: fourth differences constant.
+So:
+
+- constant first differences mean a straight line;
+- constant second differences mean a parabola;
+- constant third differences mean a cubic;
+- and so on.
+
+If the second differences are still changing, the table is **not** quadratic. That one sentence kills many False claims.
 
 **Example 1.** Samples
 
@@ -545,13 +640,13 @@ Useful special cases with step $h=1$:
 | --- | --- | --- | --- | --- | --- |
 | $p(x)$ | $1$ | $2$ | $9$ | $28$ | $65$ |
 
-First differences: $1,7,19,37$.
+First differences: $1,7,19,37$ (not constant).
 
-Second differences: $6,12,18$.
+Second differences: $6,12,18$ (not constant).
 
-Third differences: $6,6$.
+Third differences: $6,6$ (constant).
 
-Third differences are constant and equal to $6$, so $p$ can be cubic. It cannot be quadratic, because the second differences are not constant.
+So the table fits a cubic. A claim that “$p$ could be quadratic” is false, because the second differences are not constant.
 
 **Example 2.** Samples
 
@@ -561,23 +656,29 @@ Third differences are constant and equal to $6$, so $p$ can be cubic. It cannot 
 
 First differences: $-4,-2,0,2,4$.
 
-Second differences: $2,2,2,2$.
+Second differences: $2,2,2,2$ (constant).
 
-Second differences are constantly $2$. With unit spacing, $2a=2$ forces leading coefficient $a=1$ for a quadratic model. Also $p(-1)=0$ and $p(2)=0$, so $x+1$ and $x-2$ are factors. Extending one more step with the same second difference gives the next first difference $4+2=6$ and the next sample $4+6=10$ at $x=4$.
+So the table fits a quadratic. With step $1$, constant second difference $2$ means leading coefficient $1$ for $ax^2+\cdots$, because that constant equals $2a$. Also $p(-1)=0$ and $p(2)=0$, so $x+1$ and $x-2$ are factors.
 
-### Applied tables
+To predict the next sample at $x=4$: continue the constant second difference $2$. The next first difference is $4+2=6$, so the next value is $4+6=10$.
 
-When the table records distance against time, first differences over each time block are interval distances. Dividing by the time step gives interval average speeds. Whole-trip average speed is total distance over total time. Convert m/s to km/h by multiplying by $3.6$ when the claim uses km/h.
+### Where you use this in practice
 
-Local maxima of a discrete speed sequence are values strictly larger than both neighbours, or plateaus that fall on both sides. Two separate plateaus with a dip between them are two local maxima, not one.
+1. **Degree diagnosis.** “Is this cubic?” Check whether third differences settle to a constant.
+2. **Next value.** Extend the constant difference row one step and rebuild the next table entry.
+3. **Roots from a table.** A zero in the output row is a root. Then the factor theorem applies.
+4. **Train / delivery tables.** Distance against time: first differences over each block are the metres travelled in that block. Divide by the time step to get average speed on that block. Whole-trip average is total distance over total time. Convert m/s to km/h with the factor $3.6$ when the claim uses km/h.
+5. **Local peaks on a table.** Look at the sequence of interval speeds. A local maximum is a value higher than both neighbours, or a plateau that falls on both sides. Two separate plateaus with a dip between them are **two** peaks, not one.
+
+You do not need a fancy name for the method in the answer. You need the subtractions and the constant-row rule.
 
 ---
 
-## 9.9 Parametric families
+## 9.9 Families with a sliding number (parameters)
 
-### What the parameter does
+### What this section is for
 
-A family such as
+Sometimes the exam writes one formula that still contains a letter, for example
 
 $$
 p_a(x)=x^3-3x+a
@@ -586,50 +687,88 @@ $$
 or
 
 $$
-g_k(x)=x^3-kx
+g_k(x)=x^3-kx.
 $$
 
-is one polynomial for each real parameter. Claims ask how roots, parity and stationary points move when the parameter changes.
+That letter is a **parameter**. Each choice of the letter gives a different polynomial, but they all belong to the same family.
 
-### Additive constant
+Typical claims:
 
-For $p_a(x)=x^3-3x+a$,
+- for which values are there three real roots?
+- do the turning $x$-values move when the letter changes?
+- is every member odd?
+- is there a value that makes a double root?
+
+So this section is about **one shape with a sliding control**, not about a brand-new theory.
+
+### Picture 1: sliding the graph up or down
+
+Take
+
+$$
+p_a(x)=x^3-3x+a.
+$$
+
+The letter $a$ is only added at the end. Adding a constant moves the whole graph **up** (if $a$ increases) or **down** (if $a$ decreases). It does not stretch the graph sideways.
+
+Differentiate:
 
 $$
 p_a'(x)=3x^2-3.
 $$
 
-The stationary **abscissas** $x=\pm 1$ do not depend on $a$. The $y$-values at those points do depend on $a$, because
+There is no $a$ in the derivative. So the turns stay at the same $x$-places
+
+$$
+x=\pm 1
+$$
+
+for every $a$. Only the heights of those turns change:
 
 $$
 p_a(\pm 1)=\mp 2+a.
 $$
 
-Whether there are three distinct real roots depends on $a$. For $a=0$,
+**How many roots?**
+
+- For $a=0$, $p_0(x)=x(x^2-3)$ has three distinct real roots.
+- If you slide too far up or down, the $x$-axis no longer cuts the wiggle three times. Then only one real root remains.
+
+**Double root.** A double root needs both $p_a(r)=0$ and $p_a'(r)=0$. For $r=1$, that forces $a=2$. For $r=-1$, it forces $a=-2$.
+
+**Practical use.** Claims about “the turning points do not depend on $a$” are about the $x$-coordinates. The points as pairs $(x,y)$ do move vertically with $a$. Read the wording.
+
+### Picture 2: changing the linear stretch
+
+Take
 
 $$
-p_0(x)=x(x^2-3)
+g_k(x)=x^3-kx=x(x^2-k).
 $$
 
-has three distinct real roots. If $|a|$ is large, the horizontal shift of the graph moves past the local max/min and only one real root remains.
+Now the letter sits in front of $x$, not as a plain add-on. Factoring shows the roots at once:
 
-A double root occurs when $p_a$ and $p_a'$ share a root. Solving $p_a'(r)=0$ and $p_a(r)=0$ pins down specific values of $a$.
+- $x=0$ is always a root;
+- the other roots are $x=\pm\sqrt{k}$ when $k>0$.
 
-### Multiplicative parameter on a linear term
+Checklist you can reuse:
 
-For $g_k(x)=x^3-kx=x(x^2-k)$,
+| Question | Answer for $g_k$ |
+| --- | --- |
+| Is every $g_k$ odd? | Yes. Only odd powers appear, for every $k$. |
+| Three distinct real zeros? | Exactly when $k>0$. |
+| Repeated root? | At $k=0$, where $g_0(x)=x^3$. |
+| Only one real zero? | When $k<0$. |
+| Where are the turns? | Solve $g_k'(x)=3x^2-k=0$. For $k>0$ they sit at $x=\pm\sqrt{k/3}$, so they **move** with $k$. |
 
-- every $g_k$ is odd, for every real $k$;
-- three distinct real zeros appear when $k>0$ (namely $0,\pm\sqrt{k}$);
-- $k=0$ gives $g_0(x)=x^3$, a repeated root at the origin;
-- for $k<0$ the only real zero is $x=0$;
-- stationary points solve $3x^2-k=0$, so they move with $k$ when $k>0$.
+**Practical use.** This is the family behind many “parameter $k$ / $m$ / $t$” True/False packs: oddness for all $k$, count of zeros, and whether $g_k(2)=0$ for a named $k$ (substitute and check).
 
-The contrast matters: an additive constant does not move $p'$, while a coefficient in front of $x$ does.
+### The contrast in one sentence
 
-### Parameter windows for three real roots
+- $p_a(x)=x^3-3x+a$: slide up/down. Turns keep the same $x$. Root count can change.
+- $g_k(x)=x^3-kx$: stretch the linear part. Turns move with $k$. Root count changes with the sign of $k$.
 
-For a depressed cubic $x^3+px+q$, the number of distinct real roots is governed by the discriminant. On the exam you usually check concrete parameter values by factoring, by evaluating at critical points, or by testing a claimed root with substitution, rather than quoting the discriminant formula from memory.
+You almost never need a discriminant formula by name. On the exam, plug in the named parameter, factor if you can, and test the claimed root by substitution.
 
 ---
 
@@ -1013,9 +1152,10 @@ for every $k$. For $k=1$, zeros at $-1,0,1$. For $k=0$, $g_0(x)=x^3$. For $k=4$,
 | Degree of $q(p(x))$ | Product of degrees. |
 | Turning-point budget | At most $\deg(p)-1$. |
 | Meetings of $p$ and $q$ | Roots of $p-q$; at most $\deg(p-q)$. |
-| Table degree test | $n$-th differences constant for degree $n$. |
-| Parameter $p(x)+a$ | Critical $x$-values fixed; root count may change. |
-| Parameter $x^3-kx$ | Odd for all $k$; root count depends on sign of $k$. |
+| Table degree test | Subtract neighbouring values; the first constant difference row tells the degree. |
+| Next table value | Extend the constant difference row, then rebuild one step. |
+| Parameter $p(x)+a$ | Graph slides up/down; turn $x$-values stay put; root count may change. |
+| Parameter $x^3-kx$ | Odd for all $k$; root count depends on the sign of $k$; turns move with $k$. |
 | Applied cubic speed | Differentiate for acceleration; use table differences separately. |
 
 Central formulas:
@@ -1048,4 +1188,4 @@ $$
 
 **Working order.** Rewrite the polynomial if the powers are scrambled. Name degree and lead before answering shape claims. Translate words into an evaluation, a factor check, a derivative condition, a degree rule, or a difference table. On mixed stems, keep the closed-form line and the table line separate. Keep exact fractions until the final comparison.
 
-**Self-check.** Can you find the degree of $5-3x^2+x^4$ in one glance? Why does $4x^3-x+5$ have leading coefficient $4$? How do you test oddness without expanding? What end behaviour does $-2x^3$ force? Why does $p(r)=0$ give a factor $x-r$? How can a cubic have only two distinct real zeros? When does $\deg(p+q)$ drop below $\max(\deg p,\deg q)$? Why is $\deg(q\circ p)=nm$ rather than $n+m$? How many turns can a cubic have? What do constant third differences tell you about a table? How does an additive parameter differ from a factor $k$ in $x^3-kx$? And why can a train stem ask both $v'(80)<0$ and a question about first differences of a distance table in the same item?
+**Self-check.** Can you find the degree of $5-3x^2+x^4$ in one glance? Why does $4x^3-x+5$ have leading coefficient $4$? How do you test oddness without expanding? What does $-2x^3$ do on the far left and far right? Why does $p(r)=0$ give a factor $x-r$, and how does that work for $r=\frac12$? How can a cubic have only two distinct real zeros? When does $\deg(p+q)$ drop below $\max(\deg p,\deg q)$? Why is $\deg(q\circ p)=nm$ rather than $n+m$? How many turns can a cubic have, and how do you count meetings with a dashed horizontal line? What do constant third differences tell you about a table when no formula is given? How does adding $a$ differ from putting $k$ in front of $x$ in $x^3-kx$? And why can a train stem ask both $v'(80)<0$ and a question about first differences of a distance table in the same item?

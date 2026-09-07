@@ -2099,6 +2099,197 @@ function IneqCompoundIntersection() {
   );
 }
 
+/* ── Chapter 9: Polynomial end behaviour, turns, horizontal meetings ─ */
+
+function PolyAxesFrame({
+  title,
+  children,
+  hint,
+}: {
+  title: string;
+  children: ReactNode;
+  hint?: string;
+}) {
+  return (
+    <div>
+      <ChartFrame title={title} height="h-[280px] sm:h-[320px]">
+        <svg viewBox="0 0 520 300" className="h-full w-full" role="img" aria-label={title}>
+          <rect x="0" y="0" width="520" height="300" fill="#fff" />
+          <line x1="40" y1="150" x2="500" y2="150" stroke={INK} strokeWidth="1.5" />
+          <line x1="260" y1="20" x2="260" y2="280" stroke={INK} strokeWidth="1.5" />
+          <polygon points="500,150 492,146 492,154" fill={INK} />
+          <polygon points="260,20 256,28 264,28" fill={INK} />
+          <text x="505" y="154" fontSize="13" fill={MUTED}>
+            x
+          </text>
+          <text x="268" y="32" fontSize="13" fill={MUTED}>
+            y
+          </text>
+          {children}
+        </svg>
+      </ChartFrame>
+      {hint ? <Hint>{hint}</Hint> : null}
+    </div>
+  );
+}
+
+function polyPoint(x: number, y: number) {
+  // math window: x in [-3.2, 3.2], y in [-3.2, 3.2] mapped into the frame
+  return { cx: 260 + x * 70, cy: 150 - y * 40 };
+}
+
+function polyCurve(
+  f: (x: number) => number,
+  from: number,
+  to: number,
+  n = 80,
+  clipY = 3.4,
+) {
+  const pts: string[] = [];
+  for (let i = 0; i <= n; i++) {
+    const x = from + (i / n) * (to - from);
+    let y = f(x);
+    if (y > clipY) y = clipY;
+    if (y < -clipY) y = -clipY;
+    const p = polyPoint(x, y);
+    pts.push(`${p.cx.toFixed(1)},${p.cy.toFixed(1)}`);
+  }
+  return pts.join(" ");
+}
+
+/** Odd degree: left and right ends go opposite ways. */
+function PolyEndsOdd() {
+  const up = polyCurve((x) => 0.22 * x * x * x - 0.15 * x, -3.1, 3.1);
+  const down = polyCurve((x) => -0.22 * x * x * x + 0.15 * x, -3.1, 3.1);
+  return (
+    <PolyAxesFrame
+      title="Odd degree — opposite ends"
+      hint="Odd degree: one end goes up forever, the other goes down forever. The leading sign chooses which side is which."
+    >
+      <polyline points={up} fill="none" stroke={ACCENT} strokeWidth="2.6" />
+      <polyline points={down} fill="none" stroke={MUTED} strokeWidth="2.2" strokeDasharray="6 4" />
+      <SvgHaloText x={88} y={250} fontSize={12} fill={ACCENT} anchor="middle">
+        −∞
+      </SvgHaloText>
+      <SvgHaloText x={432} y={48} fontSize={12} fill={ACCENT} anchor="middle">
+        +∞
+      </SvgHaloText>
+      <SvgHaloText x={88} y={48} fontSize={12} fill={MUTED} anchor="middle">
+        +∞
+      </SvgHaloText>
+      <SvgHaloText x={432} y={250} fontSize={12} fill={MUTED} anchor="middle">
+        −∞
+      </SvgHaloText>
+      <SvgHaloText x={70} y={72} fontSize={11} fill={ACCENT} anchor="start">
+        solid: lead positive
+      </SvgHaloText>
+      <SvgHaloText x={70} y={90} fontSize={11} fill={MUTED} anchor="start">
+        dashed: lead negative
+      </SvgHaloText>
+    </PolyAxesFrame>
+  );
+}
+
+/** Even degree: both ends go the same way. */
+function PolyEndsEven() {
+  const up = polyCurve((x) => 0.18 * x * x - 0.9, -3.1, 3.1);
+  const down = polyCurve((x) => -0.18 * x * x + 0.9, -3.1, 3.1);
+  return (
+    <PolyAxesFrame
+      title="Even degree — same ends"
+      hint="Even degree: both far ends rise together, or both fall together. The leading sign chooses up or down."
+    >
+      <polyline points={up} fill="none" stroke={ACCENT} strokeWidth="2.6" />
+      <polyline points={down} fill="none" stroke={MUTED} strokeWidth="2.2" strokeDasharray="6 4" />
+      <SvgHaloText x={70} y={42} fontSize={12} fill={ACCENT} anchor="start">
+        solid: lead positive (both ends up)
+      </SvgHaloText>
+      <SvgHaloText x={70} y={268} fontSize={12} fill={MUTED} anchor="start">
+        dashed: lead negative (both ends down)
+      </SvgHaloText>
+      <text x={polyPoint(-2.4, 2.2).cx} y={polyPoint(-2.4, 2.2).cy} fontSize="12" fill={ACCENT} fontWeight={700}>
+        +∞
+      </text>
+      <text x={polyPoint(2.2, 2.2).cx} y={polyPoint(2.2, 2.2).cy} fontSize="12" fill={ACCENT} fontWeight={700}>
+        +∞
+      </text>
+      <text x={polyPoint(-2.4, -2.2).cx} y={polyPoint(-2.4, -2.2).cy} fontSize="12" fill={MUTED} fontWeight={700}>
+        −∞
+      </text>
+      <text x={polyPoint(2.2, -2.2).cx} y={polyPoint(2.2, -2.2).cy} fontSize="12" fill={MUTED} fontWeight={700}>
+        −∞
+      </text>
+    </PolyAxesFrame>
+  );
+}
+
+/** Cubic with two turning points marked. */
+function PolyTurningPoints() {
+  // y = 0.35*(x^3 - 3x) scaled: local max at x=-1, local min at x=1
+  const f = (x: number) => 0.35 * (x * x * x - 3 * x);
+  const curve = polyCurve(f, -2.6, 2.6);
+  const maxP = polyPoint(-1, f(-1));
+  const minP = polyPoint(1, f(1));
+  const leftEnd = polyPoint(-2.55, f(-2.55));
+  const rightEnd = polyPoint(2.55, f(2.55));
+  return (
+    <PolyAxesFrame
+      title="Turning points on a cubic"
+      hint="A turn is a place where the graph stops rising and starts falling, or the other way around. A cubic has at most two turns."
+    >
+      <polyline points={curve} fill="none" stroke={ACCENT} strokeWidth="2.8" />
+      <circle cx={maxP.cx} cy={maxP.cy} r="5" fill="#fff" stroke={ACCENT} strokeWidth="2" />
+      <circle cx={minP.cx} cy={minP.cy} r="5" fill="#fff" stroke={ACCENT} strokeWidth="2" />
+      <SvgHaloText x={maxP.cx} y={maxP.cy - 16} fontSize={12} fill={INK} anchor="middle">
+        local max (turn)
+      </SvgHaloText>
+      <SvgHaloText x={minP.cx} y={minP.cy + 22} fontSize={12} fill={INK} anchor="middle">
+        local min (turn)
+      </SvgHaloText>
+      <text x={maxP.cx} y={168} fontSize="12" fill={MUTED} textAnchor="middle">
+        −1
+      </text>
+      <text x={minP.cx} y={168} fontSize="12" fill={MUTED} textAnchor="middle">
+        1
+      </text>
+      <SvgHaloText x={leftEnd.cx + 8} y={leftEnd.cy + 18} fontSize={11} fill={MUTED} anchor="start">
+        comes from −∞
+      </SvgHaloText>
+      <SvgHaloText x={rightEnd.cx - 8} y={rightEnd.cy - 12} fontSize={11} fill={MUTED} anchor="end">
+        goes to +∞
+      </SvgHaloText>
+    </PolyAxesFrame>
+  );
+}
+
+/** Same cubic meeting a dashed horizontal line three times. */
+function PolyHorizontalLine() {
+  const f = (x: number) => 0.35 * (x * x * x - 3 * x);
+  const curve = polyCurve(f, -2.6, 2.6);
+  const c = 0.2;
+  const yLine = polyPoint(0, c).cy;
+  const meetingXs = [-1.63, -0.19, 1.82];
+  const meetings = meetingXs.map((x) => polyPoint(x, c));
+  return (
+    <PolyAxesFrame
+      title="Meetings with a horizontal line"
+      hint="A dashed line y = c asks: how many solutions does p(x) = c have? Count the crossings of the curve with that line."
+    >
+      <line x1="50" y1={yLine} x2="470" y2={yLine} stroke={MUTED} strokeWidth="1.8" strokeDasharray="7 5" />
+      <text x="478" y={yLine + 4} fontSize="12" fill={MUTED}>
+        y = c
+      </text>
+      <polyline points={curve} fill="none" stroke={ACCENT} strokeWidth="2.8" />
+      {meetings.map((p, i) => (
+        <circle key={i} cx={p.cx} cy={p.cy} r="5" fill="#fff" stroke={ACCENT} strokeWidth="2" />
+      ))}
+      <SvgHaloText x={260} y={42} fontSize={12} fill={INK} anchor="middle">
+        three meetings → three solutions of p(x) = c
+      </SvgHaloText>
+    </PolyAxesFrame>
+  );
+}
+
 /** Shared axes helper for differentiation teaching figures. */
 function DiffAxes({
   children,
@@ -2345,6 +2536,10 @@ const FIGURES: Record<string, () => ReactNode> = {
   "diff-f-extrema": DiffFExtrema,
   "diff-mc-mr": DiffMcMr,
   "diff-ac-mc": DiffAcMc,
+  "poly-ends-odd": PolyEndsOdd,
+  "poly-ends-even": PolyEndsEven,
+  "poly-turning-points": PolyTurningPoints,
+  "poly-horizontal-line": PolyHorizontalLine,
 
 };
 
