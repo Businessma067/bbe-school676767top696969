@@ -1,5 +1,7 @@
 # Crooked math display rewrite queue
 
+> **Status (this branch):** high crooked patterns cleared — flattened 662 aligned tails; nested/orphan rewrites done via per-task agents. Screenshot case MATH 11.170 is one-line elasticity.
+
 Total: **315** | high: **192** | mild: **123**
 
 Prefer one-line complete equations. No short `&= number` tails; no nested `\dfrac{-\frac}`.
