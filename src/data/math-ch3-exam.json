@@ -349,7 +349,7 @@
       ],
       "difficulty_level": "4/5",
       "sort_order": 134,
-      "solution_overview": "A cooperative deposits \\$50,000 in a one-year certificate quoting a $7.2\\%$ nominal rate compounded quarterly.\n\nThe shared parameters are\n\n$$\nj = 0.072,\\qquad m = 4,\\qquad P = 50,000\n$$\n\nThe quarterly periodic rate splits the nominal quote:\n\n$$\n\\begin{aligned}\ni_q &= \\frac{j}{m} \\\\\n&= \\frac{0.072}{4} \\\\\n&= 0.018 \\\\\n&= 1.8\\%\n\\end{aligned}\n$$\n\nOne year of quarterly credits gives the accumulation factor and effective rate\n\n$$(1+i_q)^{4} = (1.018)^{4} \\approx 1.07396743$$\n\n$$\n\\begin{aligned}\nR &= (1.018)^{4} - 1 \\approx 0.07396743 \\\\\n&= 7.3967\\%\n\\end{aligned}\n$$\n\nThe maturity value and the EAR–nominal gap are\n\n$$FV = 50,000 \\times 1.07396743 \\approx 53,698.37$$\n\n$$R - j \\approx 7.3967\\% - 7.20\\% = 0.1967$$\n\npercentage points.",
+      "solution_overview": "A cooperative deposits \\$50,000 in a one-year certificate quoting a $7.2\\%$ nominal rate compounded quarterly.\n\nThe shared parameters are\n\n$$\nj = 0.072,\\qquad m = 4,\\qquad P = 50,000\n$$\n\nThe quarterly periodic rate splits the nominal quote:\n\n$$\ni_q = \\frac{j}{m} = \\frac{0.072}{4} = 0.018 = 1.8\\%\n$$\n\nOne year of quarterly credits gives the accumulation factor and effective rate\n\n$$(1+i_q)^{4} = (1.018)^{4} \\approx 1.07396743$$\n\n$$\nR = (1.018)^{4} - 1 \\approx 0.07396743 = 7.3967\\%\n$$\n\nThe maturity value and the EAR–nominal gap are\n\n$$FV = 50,000 \\times 1.07396743 \\approx 53,698.37$$\n\n$$R - j \\approx 7.3967\\% - 7.20\\% = 0.1967$$\n\npercentage points.",
       "placeholder": false
     },
     {
@@ -381,7 +381,7 @@
       ],
       "difficulty_level": "5/5",
       "sort_order": 135,
-      "solution_overview": "A legal reserve starts at \\$82,000 and grows continuously at force $4.3\\%$ for six years.\n\nThe continuous compounding model is\n\n$$A = P e^{rt}$$\n\nwith\n\n$$\nP = 82,000,\\qquad r = 0.043,\\qquad t = 6\n$$\n\nThe six-year exponent and growth factor are\n\n$$\n\\begin{aligned}\nrt &= 0.043 \\times 6 \\\\\n&= 0.258\n\\end{aligned}\n$$\n\n$$e^{0.258} \\approx 1.29433882$$\n\nThe terminal balance and dollar growth are\n\n$$A = 82,000 \\times e^{0.258} \\approx 106,135.78$$\n\n$$A - P \\approx 24,135.78$$\n\nContinuous doubling solves $2 = e^{rt}$, so\n\n$$t = \\frac{\\ln 2}{0.043} \\approx 16.12$$\n\nyears.",
+      "solution_overview": "A legal reserve starts at \\$82,000 and grows continuously at force $4.3\\%$ for six years.\n\nThe continuous compounding model is\n\n$$A = P e^{rt}$$\n\nwith\n\n$$\nP = 82,000,\\qquad r = 0.043,\\qquad t = 6\n$$\n\nThe six-year exponent and growth factor are\n\n$$\nrt = 0.043 \\times 6 = 0.258\n$$\n\n$$e^{0.258} \\approx 1.29433882$$\n\nThe terminal balance and dollar growth are\n\n$$A = 82,000 \\times e^{0.258} \\approx 106,135.78$$\n\n$$A - P \\approx 24,135.78$$\n\nContinuous doubling solves $2 = e^{rt}$, so\n\n$$t = \\frac{\\ln 2}{0.043} \\approx 16.12$$\n\nyears.",
       "placeholder": false
     },
     {
@@ -413,7 +413,7 @@
       ],
       "difficulty_level": "4/5",
       "sort_order": 136,
-      "solution_overview": "A patent settlement pays \\$12,000 after one year, \\$18,000 after three years, and \\$25,000 after five years. Each cash flow is discounted at $6\\%$ effective annual interest.\n\nThe present-value sum is\n\n$$PV = \\sum_{t} \\frac{C_t}{(1.06)^{t}}$$\n\nDiscounting each dated payment separately,\n\n$$\n\\begin{aligned}\nPV_1 &= \\frac{12,000}{1.06} \\\\\n&= 11,320.75\n\\end{aligned}\n$$\n\n$$PV_3 = \\frac{18,000}{(1.06)^{3}} \\approx 15,113.15$$\n\n$$PV_5 = \\frac{25,000}{(1.06)^{5}} \\approx 18,681.45$$\n\nAdding the three present values,\n\n$$PV \\approx 11,320.75 + 15,113.15 + 18,681.45 = 45,115.36$$\n\nThe undiscounted nominal total is\n\n$$12,000 + 18,000 + 25,000 = 55,000$$",
+      "solution_overview": "A patent settlement pays \\$12,000 after one year, \\$18,000 after three years, and \\$25,000 after five years. Each cash flow is discounted at $6\\%$ effective annual interest.\n\nThe present-value sum is\n\n$$PV = \\sum_{t} \\frac{C_t}{(1.06)^{t}}$$\n\nDiscounting each dated payment separately,\n\n$$\nPV_1 = \\frac{12,000}{1.06} = 11,320.75\n$$\n\n$$PV_3 = \\frac{18,000}{(1.06)^{3}} \\approx 15,113.15$$\n\n$$PV_5 = \\frac{25,000}{(1.06)^{5}} \\approx 18,681.45$$\n\nAdding the three present values,\n\n$$PV \\approx 11,320.75 + 15,113.15 + 18,681.45 = 45,115.36$$\n\nThe undiscounted nominal total is\n\n$$12,000 + 18,000 + 25,000 = 55,000$$",
       "placeholder": false
     },
     {
@@ -445,7 +445,7 @@
       ],
       "difficulty_level": "4/5",
       "sort_order": 137,
-      "solution_overview": "A research grant pays six annual installments. The first is \\$6,000, and each later installment is $5\\%$ larger than the one before it.\n\nThis is a geometric sequence with\n\n$$\na = 6,000,\\qquad q = 1.05,\\qquad n = 6\n$$\n\nThe $k$-th installment is\n\n$$C_k = 6,000(1.05)^{k-1}$$\n\nSelected terms:\n\n$$\n\\begin{aligned}\nC_3 &= 6,000(1.05)^{2} \\\\\n&= 6,615.00\n\\end{aligned}\n$$\n\n$$C_6 = 6,000(1.05)^{5} \\approx 7,657.69$$\n\nThe six-payment total uses the finite geometric sum:\n\n$$\n\\begin{aligned}\nS_6 &= a\\frac{q^{6}-1}{q-1} \\\\\n&= 6,000\\frac{(1.05)^{6}-1}{0.05}\n\\end{aligned}\n$$\n\n$$S_6 \\approx 40,811.48$$",
+      "solution_overview": "A research grant pays six annual installments. The first is \\$6,000, and each later installment is $5\\%$ larger than the one before it.\n\nThis is a geometric sequence with\n\n$$\na = 6,000,\\qquad q = 1.05,\\qquad n = 6\n$$\n\nThe $k$-th installment is\n\n$$C_k = 6,000(1.05)^{k-1}$$\n\nSelected terms:\n\n$$\nC_3 = 6,000(1.05)^{2} = 6,615.00\n$$\n\n$$C_6 = 6,000(1.05)^{5} \\approx 7,657.69$$\n\nThe six-payment total uses the finite geometric sum:\n\n$$\nS_6 = a\\frac{q^{6}-1}{q-1} = 6,000\\frac{(1.05)^{6}-1}{0.05}\n$$\n\n$$S_6 \\approx 40,811.48$$",
       "placeholder": false
     },
     {
@@ -509,7 +509,7 @@
       ],
       "difficulty_level": "4/5",
       "sort_order": 139,
-      "solution_overview": "A clinic borrows \\$320,000 and repays it with 240 equal month-end payments at monthly rate $0.45\\%$.\n\nShared parameters:\n\n$$\nP = 320,000,\\qquad i = 0.0045,\\qquad n = 240\n$$\n\nThe level payment is\n\n$$\n\\begin{aligned}\nPMT &= P \\cdot \\frac{i}{1-(1+i)^{-n}} \\\\\n&= 320,000 \\cdot \\frac{0.0045}{1-(1.0045)^{-240}}\n\\end{aligned}\n$$\n\n$$PMT \\approx 2,183.21$$\n\nFirst-month interest and principal reduction:\n\n$$\n\\begin{aligned}\nI_1 &= 320,000 \\times 0.0045 \\\\\n&= 1,440.00\n\\end{aligned}\n$$\n\n$$\n\\begin{aligned}\n\\mathrm{prin}_1 &= 2,183.21 - 1,440.00 \\\\\n&= 743.21\n\\end{aligned}\n$$\n\nBalance just after payment 60 (180 payments remain):\n\n$$B_{60} = 2,183.21 \\cdot \\frac{1-(1.0045)^{-180}}{0.0045} \\approx 268,938.30$$\n\nTotal scheduled interest:\n\n$$240 \\times 2,183.21 - 320,000 \\approx 203,969.22$$",
+      "solution_overview": "A clinic borrows \\$320,000 and repays it with 240 equal month-end payments at monthly rate $0.45\\%$.\n\nShared parameters:\n\n$$\nP = 320,000,\\qquad i = 0.0045,\\qquad n = 240\n$$\n\nThe level payment is\n\n$$\nPMT = P \\cdot \\frac{i}{1-(1+i)^{-n}} = 320,000 \\cdot \\frac{0.0045}{1-(1.0045)^{-240}}\n$$\n\n$$PMT \\approx 2,183.21$$\n\nFirst-month interest and principal reduction:\n\n$$\nI_1 = 320,000 \\times 0.0045 = 1,440.00\n$$\n\n$$\n\\mathrm{prin}_1 = 2,183.21 - 1,440.00 = 743.21\n$$\n\nBalance just after payment 60 (180 payments remain):\n\n$$B_{60} = 2,183.21 \\cdot \\frac{1-(1.0045)^{-180}}{0.0045} \\approx 268,938.30$$\n\nTotal scheduled interest:\n\n$$240 \\times 2,183.21 - 320,000 \\approx 203,969.22$$",
       "placeholder": false
     },
     {
@@ -541,7 +541,7 @@
       ],
       "difficulty_level": "4/5",
       "sort_order": 140,
-      "solution_overview": "A recycling project costs \\$200,000 today and returns \\$70,000 after year 1, \\$85,000 after year 3, and \\$100,000 after year 5. The hurdle rate is $7\\%$ effective annual.\n\nDiscount each return on its own date:\n\n$$PV_1 = \\frac{70,000}{1.07} \\approx 65,420.56$$\n\n$$PV_3 = \\frac{85,000}{(1.07)^{3}} \\approx 69,385.32$$\n\n$$PV_5 = \\frac{100,000}{(1.07)^{5}} \\approx 71,298.62$$\n\nThe three-return present value and NPV are\n\n$$PV_{\\mathrm{in}} \\approx 65,420.56 + 69,385.32 + 71,298.62 = 206,104.50$$\n\n$$\n\\begin{aligned}\nNPV &= -200,000 + 206,104.50 \\\\\n&= 6,104.50\n\\end{aligned}\n$$\n\nThe undiscounted net gain is\n\n$$70,000 + 85,000 + 100,000 - 200,000 = 55,000$$",
+      "solution_overview": "A recycling project costs \\$200,000 today and returns \\$70,000 after year 1, \\$85,000 after year 3, and \\$100,000 after year 5. The hurdle rate is $7\\%$ effective annual.\n\nDiscount each return on its own date:\n\n$$PV_1 = \\frac{70,000}{1.07} \\approx 65,420.56$$\n\n$$PV_3 = \\frac{85,000}{(1.07)^{3}} \\approx 69,385.32$$\n\n$$PV_5 = \\frac{100,000}{(1.07)^{5}} \\approx 71,298.62$$\n\nThe three-return present value and NPV are\n\n$$PV_{\\mathrm{in}} \\approx 65,420.56 + 69,385.32 + 71,298.62 = 206,104.50$$\n\n$$\nNPV = -200,000 + 206,104.50 = 6,104.50\n$$\n\nThe undiscounted net gain is\n\n$$70,000 + 85,000 + 100,000 - 200,000 = 55,000$$",
       "placeholder": false
     },
     {
@@ -573,7 +573,7 @@
       ],
       "difficulty_level": "5/5",
       "sort_order": 141,
-      "solution_overview": "An $8.5\\%$ effective annual rate is to be restated as a monthly-convertible nominal quote.\n\nEquivalence requires twelve monthly periods to reproduce the same annual growth factor:\n\n$$(1+i_m)^{12} = 1.085$$\n\n$$i_m = (1.085)^{1/12} - 1$$\n\n$$i_m \\approx 0.00682149 = 0.68215\\%$$\n\nThe nominal monthly-convertible quote is\n\n$$\n\\begin{aligned}\nj_{12} &= 12 \\times i_m \\approx 0.081858 \\\\\n&= 8.1858\\%\n\\end{aligned}\n$$\n\nNote that $8.5\\%/12 = 0.70833\\%$ is larger than the true monthly equivalent rate, and $j_{12} < 8.5\\%$.",
+      "solution_overview": "An $8.5\\%$ effective annual rate is to be restated as a monthly-convertible nominal quote.\n\nEquivalence requires twelve monthly periods to reproduce the same annual growth factor:\n\n$$(1+i_m)^{12} = 1.085$$\n\n$$i_m = (1.085)^{1/12} - 1$$\n\n$$i_m \\approx 0.00682149 = 0.68215\\%$$\n\nThe nominal monthly-convertible quote is\n\n$$\nj_{12} = 12 \\times i_m \\approx 0.081858 = 8.1858\\%\n$$\n\nNote that $8.5\\%/12 = 0.70833\\%$ is larger than the true monthly equivalent rate, and $j_{12} < 8.5\\%$.",
       "placeholder": false
     },
     {
@@ -605,7 +605,7 @@
       ],
       "difficulty_level": "4/5",
       "sort_order": 142,
-      "solution_overview": "Equipment with book value \\$150,000 depreciates continuously at force $6.2\\%$ for five years.\n\nThe continuous decay model is\n\n$$A = P e^{-rt}$$\n\nwith\n\n$$\nP = 150,000,\\qquad r = 0.062,\\qquad t = 5\n$$\n\nThe five-year exponent and remaining value are\n\n$$\n\\begin{aligned}\n-rt &= -0.062 \\times 5 \\\\\n&= -0.31\n\\end{aligned}\n$$\n\n$$A = 150,000 \\times e^{-0.31} \\approx 110,017.04$$\n\nThe modeled loss and remaining proportion are\n\n$$P - A \\approx 39,982.96$$\n\n$$\n\\begin{aligned}\n\\frac{A}{P} &= e^{-0.31} \\approx 0.7334 \\\\\n&= 73.34\\%\n\\end{aligned}\n$$\n\nContinuous half-life solves $\\tfrac{1}{2} = e^{-rt}$:\n\n$$t = \\frac{\\ln 2}{0.062} \\approx 11.18$$\n\nyears.",
+      "solution_overview": "Equipment with book value \\$150,000 depreciates continuously at force $6.2\\%$ for five years.\n\nThe continuous decay model is\n\n$$A = P e^{-rt}$$\n\nwith\n\n$$\nP = 150,000,\\qquad r = 0.062,\\qquad t = 5\n$$\n\nThe five-year exponent and remaining value are\n\n$$\n-rt = -0.062 \\times 5 = -0.31\n$$\n\n$$A = 150,000 \\times e^{-0.31} \\approx 110,017.04$$\n\nThe modeled loss and remaining proportion are\n\n$$P - A \\approx 39,982.96$$\n\n$$\n\\frac{A}{P} = e^{-0.31} \\approx 0.7334 = 73.34\\%\n$$\n\nContinuous half-life solves $\\tfrac{1}{2} = e^{-rt}$:\n\n$$t = \\frac{\\ln 2}{0.062} \\approx 11.18$$\n\nyears.",
       "placeholder": false
     },
     {
@@ -637,7 +637,7 @@
       ],
       "difficulty_level": "4/5",
       "sort_order": 143,
-      "solution_overview": "A rights package pays \\$10,000 immediately, \\$20,000 after two years, and \\$30,000 after six years. The discount rate is $5.5\\%$ effective annual.\n\nPresent values of the three dated payments:\n\n$$PV_0 = 10,000$$\n\n$$PV_2 = \\frac{20,000}{(1.055)^{2}} \\approx 17,969.05$$\n\n$$PV_6 = \\frac{30,000}{(1.055)^{6}} \\approx 21,757.37$$\n\nThe package total is\n\n$$\n\\begin{aligned}\nPV &= 10,000 + 17,969.05 + 21,757.37 \\\\\n&= 49,726.42\n\\end{aligned}\n$$\n\nDiscounting every payment for six years would understate the earlier cash flows.",
+      "solution_overview": "A rights package pays \\$10,000 immediately, \\$20,000 after two years, and \\$30,000 after six years. The discount rate is $5.5\\%$ effective annual.\n\nPresent values of the three dated payments:\n\n$$PV_0 = 10,000$$\n\n$$PV_2 = \\frac{20,000}{(1.055)^{2}} \\approx 17,969.05$$\n\n$$PV_6 = \\frac{30,000}{(1.055)^{6}} \\approx 21,757.37$$\n\nThe package total is\n\n$$\nPV = 10,000 + 17,969.05 + 21,757.37 = 49,726.42\n$$\n\nDiscounting every payment for six years would understate the earlier cash flows.",
       "placeholder": false
     }
   ]

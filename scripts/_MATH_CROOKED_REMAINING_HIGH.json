@@ -1,0 +1,2037 @@
+[
+  {
+    "case_id": "MATH 12.01",
+    "file": "math-cases-ch12-probability.json",
+    "fields": [
+      "solution_overview"
+    ],
+    "reasons": [
+      "aligned_short_numeric_tail",
+      "aligned_two_line_cont"
+    ]
+  },
+  {
+    "case_id": "MATH 12.03",
+    "file": "math-cases-ch12-probability.json",
+    "fields": [
+      "tactical[4]"
+    ],
+    "reasons": [
+      "nested_frac_display"
+    ]
+  },
+  {
+    "case_id": "MATH 12.09",
+    "file": "math-cases-ch12-probability.json",
+    "fields": [
+      "solution_overview"
+    ],
+    "reasons": [
+      "aligned_short_numeric_tail",
+      "aligned_two_line_cont"
+    ]
+  },
+  {
+    "case_id": "MATH 12.12",
+    "file": "math-cases-ch12-probability.json",
+    "fields": [
+      "solution_overview"
+    ],
+    "reasons": [
+      "aligned_short_numeric_tail",
+      "aligned_two_line_cont"
+    ]
+  },
+  {
+    "case_id": "MATH 12.14",
+    "file": "math-cases-ch12-probability.json",
+    "fields": [
+      "solution_overview",
+      "tactical[4]"
+    ],
+    "reasons": [
+      "aligned_two_line_cont",
+      "nested_frac_display"
+    ]
+  },
+  {
+    "case_id": "MATH 12.15",
+    "file": "math-cases-ch12-probability.json",
+    "fields": [
+      "solution_overview"
+    ],
+    "reasons": [
+      "aligned_short_numeric_tail",
+      "aligned_two_line_cont"
+    ]
+  },
+  {
+    "case_id": "MATH 12.20",
+    "file": "math-cases-ch12-probability.json",
+    "fields": [
+      "solution_overview",
+      "tactical[4]"
+    ],
+    "reasons": [
+      "aligned_two_line_cont",
+      "nested_frac_display"
+    ]
+  },
+  {
+    "case_id": "MATH 12.22",
+    "file": "math-cases-ch12-probability.json",
+    "fields": [
+      "solution_overview"
+    ],
+    "reasons": [
+      "aligned_multi_numeric",
+      "aligned_short_numeric_tail"
+    ]
+  },
+  {
+    "case_id": "MATH 12.32",
+    "file": "math-cases-ch12-probability.json",
+    "fields": [
+      "solution_overview"
+    ],
+    "reasons": [
+      "aligned_short_numeric_tail",
+      "aligned_two_line_cont"
+    ]
+  },
+  {
+    "case_id": "MATH 12.33",
+    "file": "math-cases-ch12-probability.json",
+    "fields": [
+      "solution_overview"
+    ],
+    "reasons": [
+      "aligned_multi_numeric",
+      "aligned_short_numeric_tail"
+    ]
+  },
+  {
+    "case_id": "MATH 12.39",
+    "file": "math-cases-ch12-probability.json",
+    "fields": [
+      "solution_overview"
+    ],
+    "reasons": [
+      "aligned_short_numeric_tail",
+      "aligned_two_line_cont"
+    ]
+  },
+  {
+    "case_id": "MATH 12.40",
+    "file": "math-cases-ch12-probability.json",
+    "fields": [
+      "tactical[4]"
+    ],
+    "reasons": [
+      "nested_frac_display"
+    ]
+  },
+  {
+    "case_id": "MATH 12.41",
+    "file": "math-cases-ch12-probability.json",
+    "fields": [
+      "solution_overview",
+      "tactical[2]",
+      "tactical[4]"
+    ],
+    "reasons": [
+      "aligned_two_line_cont",
+      "nested_frac_display"
+    ]
+  },
+  {
+    "case_id": "MATH 12.42",
+    "file": "math-cases-ch12-probability.json",
+    "fields": [
+      "tactical[4]"
+    ],
+    "reasons": [
+      "nested_frac_display"
+    ]
+  },
+  {
+    "case_id": "MATH 12.50",
+    "file": "math-cases-ch12-probability.json",
+    "fields": [
+      "solution_overview"
+    ],
+    "reasons": [
+      "aligned_short_numeric_tail",
+      "aligned_two_line_cont"
+    ]
+  },
+  {
+    "case_id": "MATH 12.52",
+    "file": "math-cases-ch12-probability.json",
+    "fields": [
+      "solution_overview"
+    ],
+    "reasons": [
+      "aligned_short_numeric_tail",
+      "aligned_two_line_cont"
+    ]
+  },
+  {
+    "case_id": "MATH 12.58",
+    "file": "math-cases-ch12-probability.json",
+    "fields": [
+      "solution_overview"
+    ],
+    "reasons": [
+      "aligned_multi_numeric",
+      "aligned_short_numeric_tail",
+      "aligned_two_line_cont"
+    ]
+  },
+  {
+    "case_id": "MATH 12.60",
+    "file": "math-cases-ch12-probability.json",
+    "fields": [
+      "solution_overview"
+    ],
+    "reasons": [
+      "aligned_short_numeric_tail",
+      "aligned_two_line_cont"
+    ]
+  },
+  {
+    "case_id": "MATH 12.61",
+    "file": "math-cases-ch12-probability.json",
+    "fields": [
+      "solution_overview"
+    ],
+    "reasons": [
+      "aligned_short_numeric_tail",
+      "aligned_two_line_cont"
+    ]
+  },
+  {
+    "case_id": "MATH 12.62",
+    "file": "math-cases-ch12-probability.json",
+    "fields": [
+      "solution_overview"
+    ],
+    "reasons": [
+      "aligned_multi_numeric",
+      "aligned_short_numeric_tail",
+      "aligned_two_line_cont"
+    ]
+  },
+  {
+    "case_id": "MATH 12.63",
+    "file": "math-cases-ch12-probability.json",
+    "fields": [
+      "solution_overview"
+    ],
+    "reasons": [
+      "aligned_multi_numeric",
+      "aligned_short_numeric_tail",
+      "aligned_two_line_cont"
+    ]
+  },
+  {
+    "case_id": "MATH 12.66",
+    "file": "math-cases-ch12-probability.json",
+    "fields": [
+      "solution_overview"
+    ],
+    "reasons": [
+      "aligned_short_numeric_tail"
+    ]
+  },
+  {
+    "case_id": "MATH 12.69",
+    "file": "math-cases-ch12-probability.json",
+    "fields": [
+      "solution_overview"
+    ],
+    "reasons": [
+      "aligned_short_numeric_tail",
+      "aligned_two_line_cont"
+    ]
+  },
+  {
+    "case_id": "MATH 12.70",
+    "file": "math-cases-ch12-probability.json",
+    "fields": [
+      "solution_overview"
+    ],
+    "reasons": [
+      "aligned_short_numeric_tail",
+      "aligned_two_line_cont"
+    ]
+  },
+  {
+    "case_id": "MATH 12.72",
+    "file": "math-cases-ch12-probability.json",
+    "fields": [
+      "solution_overview"
+    ],
+    "reasons": [
+      "aligned_short_numeric_tail",
+      "aligned_two_line_cont"
+    ]
+  },
+  {
+    "case_id": "MATH 12.73",
+    "file": "math-cases-ch12-probability.json",
+    "fields": [
+      "solution_overview"
+    ],
+    "reasons": [
+      "aligned_short_numeric_tail",
+      "aligned_two_line_cont"
+    ]
+  },
+  {
+    "case_id": "MATH 12.76",
+    "file": "math-cases-ch12-probability.json",
+    "fields": [
+      "solution_overview"
+    ],
+    "reasons": [
+      "aligned_short_numeric_tail",
+      "aligned_two_line_cont"
+    ]
+  },
+  {
+    "case_id": "MATH 12.77",
+    "file": "math-cases-ch12-probability.json",
+    "fields": [
+      "solution_overview"
+    ],
+    "reasons": [
+      "aligned_short_numeric_tail",
+      "aligned_two_line_cont"
+    ]
+  },
+  {
+    "case_id": "MATH 12.78",
+    "file": "math-cases-ch12-probability.json",
+    "fields": [
+      "solution_overview"
+    ],
+    "reasons": [
+      "aligned_multi_numeric",
+      "aligned_short_numeric_tail",
+      "aligned_two_line_cont"
+    ]
+  },
+  {
+    "case_id": "MATH 12.79",
+    "file": "math-cases-ch12-probability.json",
+    "fields": [
+      "solution_overview"
+    ],
+    "reasons": [
+      "aligned_multi_numeric",
+      "aligned_short_numeric_tail"
+    ]
+  },
+  {
+    "case_id": "MATH 12.80",
+    "file": "math-cases-ch12-probability.json",
+    "fields": [
+      "solution_overview"
+    ],
+    "reasons": [
+      "aligned_short_numeric_tail",
+      "aligned_two_line_cont"
+    ]
+  },
+  {
+    "case_id": "MATH 12.81",
+    "file": "math-cases-ch12-probability.json",
+    "fields": [
+      "solution_overview"
+    ],
+    "reasons": [
+      "aligned_multi_numeric",
+      "aligned_short_numeric_tail"
+    ]
+  },
+  {
+    "case_id": "MATH 12.82",
+    "file": "math-cases-ch12-probability.json",
+    "fields": [
+      "solution_overview"
+    ],
+    "reasons": [
+      "aligned_multi_numeric",
+      "aligned_short_numeric_tail",
+      "aligned_two_line_cont"
+    ]
+  },
+  {
+    "case_id": "MATH 12.83",
+    "file": "math-cases-ch12-probability.json",
+    "fields": [
+      "solution_overview"
+    ],
+    "reasons": [
+      "aligned_multi_numeric",
+      "aligned_short_numeric_tail"
+    ]
+  },
+  {
+    "case_id": "MATH 12.86",
+    "file": "math-cases-ch12-probability.json",
+    "fields": [
+      "solution_overview"
+    ],
+    "reasons": [
+      "aligned_multi_numeric",
+      "aligned_short_numeric_tail",
+      "aligned_two_line_cont"
+    ]
+  },
+  {
+    "case_id": "MATH 12.87",
+    "file": "math-cases-ch12-probability.json",
+    "fields": [
+      "solution_overview"
+    ],
+    "reasons": [
+      "aligned_short_numeric_tail"
+    ]
+  },
+  {
+    "case_id": "MATH 12.88",
+    "file": "math-cases-ch12-probability.json",
+    "fields": [
+      "solution_overview"
+    ],
+    "reasons": [
+      "aligned_short_numeric_tail",
+      "aligned_two_line_cont"
+    ]
+  },
+  {
+    "case_id": "MATH 12.90",
+    "file": "math-cases-ch12-probability.json",
+    "fields": [
+      "solution_overview"
+    ],
+    "reasons": [
+      "aligned_short_numeric_tail",
+      "aligned_two_line_cont"
+    ]
+  },
+  {
+    "case_id": "MATH 12.91",
+    "file": "math-cases-ch12-probability.json",
+    "fields": [
+      "solution_overview"
+    ],
+    "reasons": [
+      "aligned_multi_numeric",
+      "aligned_short_numeric_tail",
+      "aligned_two_line_cont"
+    ]
+  },
+  {
+    "case_id": "MATH 12.93",
+    "file": "math-cases-ch12-probability.json",
+    "fields": [
+      "solution_overview"
+    ],
+    "reasons": [
+      "aligned_multi_numeric",
+      "aligned_short_numeric_tail"
+    ]
+  },
+  {
+    "case_id": "MATH 12.98",
+    "file": "math-cases-ch12-probability.json",
+    "fields": [
+      "solution_overview"
+    ],
+    "reasons": [
+      "aligned_short_numeric_tail",
+      "aligned_two_line_cont"
+    ]
+  },
+  {
+    "case_id": "MATH 12.102",
+    "file": "math-cases-ch12-probability.json",
+    "fields": [
+      "solution_overview"
+    ],
+    "reasons": [
+      "aligned_short_numeric_tail",
+      "aligned_two_line_cont"
+    ]
+  },
+  {
+    "case_id": "MATH 12.103",
+    "file": "math-cases-ch12-probability.json",
+    "fields": [
+      "solution_overview"
+    ],
+    "reasons": [
+      "aligned_multi_numeric",
+      "aligned_short_numeric_tail"
+    ]
+  },
+  {
+    "case_id": "MATH 12.104",
+    "file": "math-cases-ch12-probability.json",
+    "fields": [
+      "solution_overview"
+    ],
+    "reasons": [
+      "aligned_multi_numeric",
+      "aligned_short_numeric_tail",
+      "aligned_two_line_cont"
+    ]
+  },
+  {
+    "case_id": "MATH 12.105",
+    "file": "math-cases-ch12-probability.json",
+    "fields": [
+      "solution_overview"
+    ],
+    "reasons": [
+      "aligned_short_numeric_tail"
+    ]
+  },
+  {
+    "case_id": "MATH 12.106",
+    "file": "math-cases-ch12-probability.json",
+    "fields": [
+      "solution_overview"
+    ],
+    "reasons": [
+      "aligned_short_numeric_tail",
+      "aligned_two_line_cont"
+    ]
+  },
+  {
+    "case_id": "MATH 12.107",
+    "file": "math-cases-ch12-probability.json",
+    "fields": [
+      "solution_overview"
+    ],
+    "reasons": [
+      "aligned_short_numeric_tail"
+    ]
+  },
+  {
+    "case_id": "MATH 12.109",
+    "file": "math-cases-ch12-probability.json",
+    "fields": [
+      "solution_overview"
+    ],
+    "reasons": [
+      "aligned_multi_numeric",
+      "aligned_short_numeric_tail"
+    ]
+  },
+  {
+    "case_id": "MATH 12.113",
+    "file": "math-cases-ch12-probability.json",
+    "fields": [
+      "solution_overview"
+    ],
+    "reasons": [
+      "aligned_short_numeric_tail",
+      "aligned_two_line_cont"
+    ]
+  },
+  {
+    "case_id": "MATH 12.117",
+    "file": "math-cases-ch12-probability.json",
+    "fields": [
+      "solution_overview"
+    ],
+    "reasons": [
+      "aligned_multi_numeric",
+      "aligned_short_numeric_tail"
+    ]
+  },
+  {
+    "case_id": "MATH 12.122",
+    "file": "math-cases-ch12-probability.json",
+    "fields": [
+      "solution_overview"
+    ],
+    "reasons": [
+      "aligned_short_numeric_tail",
+      "aligned_two_line_cont"
+    ]
+  },
+  {
+    "case_id": "MATH 12.123",
+    "file": "math-cases-ch12-probability.json",
+    "fields": [
+      "solution_overview"
+    ],
+    "reasons": [
+      "aligned_short_numeric_tail",
+      "aligned_two_line_cont"
+    ]
+  },
+  {
+    "case_id": "MATH 12.136",
+    "file": "math-cases-ch12-probability.json",
+    "fields": [
+      "solution_overview"
+    ],
+    "reasons": [
+      "aligned_short_numeric_tail",
+      "aligned_two_line_cont"
+    ]
+  },
+  {
+    "case_id": "MATH 12.142",
+    "file": "math-cases-ch12-probability.json",
+    "fields": [
+      "solution_overview"
+    ],
+    "reasons": [
+      "aligned_short_numeric_tail",
+      "aligned_two_line_cont"
+    ]
+  },
+  {
+    "case_id": "MATH 12.148",
+    "file": "math-cases-ch12-probability.json",
+    "fields": [
+      "solution_overview"
+    ],
+    "reasons": [
+      "aligned_short_numeric_tail",
+      "aligned_two_line_cont"
+    ]
+  },
+  {
+    "case_id": "MATH 12.150",
+    "file": "math-cases-ch12-probability.json",
+    "fields": [
+      "solution_overview"
+    ],
+    "reasons": [
+      "aligned_short_numeric_tail",
+      "aligned_two_line_cont"
+    ]
+  },
+  {
+    "case_id": "MATH 12.154",
+    "file": "math-cases-ch12-probability.json",
+    "fields": [
+      "solution_overview"
+    ],
+    "reasons": [
+      "aligned_short_numeric_tail",
+      "aligned_two_line_cont"
+    ]
+  },
+  {
+    "case_id": "MATH 12.162",
+    "file": "math-cases-ch12-probability.json",
+    "fields": [
+      "solution_overview"
+    ],
+    "reasons": [
+      "aligned_short_numeric_tail"
+    ]
+  },
+  {
+    "case_id": "MATH 12.163",
+    "file": "math-cases-ch12-probability.json",
+    "fields": [
+      "solution_overview"
+    ],
+    "reasons": [
+      "aligned_short_numeric_tail"
+    ]
+  },
+  {
+    "case_id": "MATH 12.165",
+    "file": "math-cases-ch12-probability.json",
+    "fields": [
+      "solution_overview"
+    ],
+    "reasons": [
+      "aligned_short_numeric_tail",
+      "aligned_two_line_cont"
+    ]
+  },
+  {
+    "case_id": "MATH 12.166",
+    "file": "math-cases-ch12-probability.json",
+    "fields": [
+      "solution_overview"
+    ],
+    "reasons": [
+      "aligned_multi_numeric",
+      "aligned_short_numeric_tail"
+    ]
+  },
+  {
+    "case_id": "MATH 12.167",
+    "file": "math-cases-ch12-probability.json",
+    "fields": [
+      "solution_overview"
+    ],
+    "reasons": [
+      "aligned_short_numeric_tail",
+      "aligned_two_line_cont"
+    ]
+  },
+  {
+    "case_id": "MATH 12.168",
+    "file": "math-cases-ch12-probability.json",
+    "fields": [
+      "tactical[3]"
+    ],
+    "reasons": [
+      "nested_frac_display"
+    ]
+  },
+  {
+    "case_id": "MATH 12.170",
+    "file": "math-cases-ch12-probability.json",
+    "fields": [
+      "solution_overview"
+    ],
+    "reasons": [
+      "aligned_multi_numeric",
+      "aligned_short_numeric_tail",
+      "aligned_two_line_cont"
+    ]
+  },
+  {
+    "case_id": "MATH 12.171",
+    "file": "math-cases-ch12-probability.json",
+    "fields": [
+      "solution_overview"
+    ],
+    "reasons": [
+      "aligned_short_numeric_tail",
+      "aligned_two_line_cont"
+    ]
+  },
+  {
+    "case_id": "MATH 12.172",
+    "file": "math-cases-ch12-probability.json",
+    "fields": [
+      "tactical[4]"
+    ],
+    "reasons": [
+      "nested_frac_display"
+    ]
+  },
+  {
+    "case_id": "MATH 12.175",
+    "file": "math-cases-ch12-probability.json",
+    "fields": [
+      "tactical[4]"
+    ],
+    "reasons": [
+      "nested_frac_display"
+    ]
+  },
+  {
+    "case_id": "MATH 12.177",
+    "file": "math-cases-ch12-probability.json",
+    "fields": [
+      "tactical[4]"
+    ],
+    "reasons": [
+      "nested_frac_display"
+    ]
+  },
+  {
+    "case_id": "MATH 12.183",
+    "file": "math-cases-ch12-probability.json",
+    "fields": [
+      "solution_overview"
+    ],
+    "reasons": [
+      "aligned_short_numeric_tail",
+      "aligned_two_line_cont"
+    ]
+  },
+  {
+    "case_id": "MATH 12.186",
+    "file": "math-cases-ch12-probability.json",
+    "fields": [
+      "solution_overview"
+    ],
+    "reasons": [
+      "aligned_short_numeric_tail"
+    ]
+  },
+  {
+    "case_id": "MATH 12.187",
+    "file": "math-cases-ch12-probability.json",
+    "fields": [
+      "solution_overview"
+    ],
+    "reasons": [
+      "aligned_short_numeric_tail",
+      "aligned_two_line_cont"
+    ]
+  },
+  {
+    "case_id": "MATH 12.188",
+    "file": "math-cases-ch12-probability.json",
+    "fields": [
+      "solution_overview"
+    ],
+    "reasons": [
+      "aligned_short_numeric_tail",
+      "aligned_two_line_cont"
+    ]
+  },
+  {
+    "case_id": "MATH 12.189",
+    "file": "math-cases-ch12-probability.json",
+    "fields": [
+      "solution_overview"
+    ],
+    "reasons": [
+      "aligned_short_numeric_tail",
+      "aligned_two_line_cont"
+    ]
+  },
+  {
+    "case_id": "MATH 12.191",
+    "file": "math-cases-ch12-probability.json",
+    "fields": [
+      "solution_overview"
+    ],
+    "reasons": [
+      "aligned_short_numeric_tail",
+      "aligned_two_line_cont"
+    ]
+  },
+  {
+    "case_id": "MATH 12.192",
+    "file": "math-cases-ch12-probability.json",
+    "fields": [
+      "solution_overview"
+    ],
+    "reasons": [
+      "aligned_short_numeric_tail",
+      "aligned_two_line_cont"
+    ]
+  },
+  {
+    "case_id": "MATH 12.194",
+    "file": "math-cases-ch12-probability.json",
+    "fields": [
+      "solution_overview"
+    ],
+    "reasons": [
+      "aligned_short_numeric_tail"
+    ]
+  },
+  {
+    "case_id": "MATH 12.195",
+    "file": "math-cases-ch12-probability.json",
+    "fields": [
+      "solution_overview"
+    ],
+    "reasons": [
+      "aligned_multi_numeric",
+      "aligned_short_numeric_tail",
+      "aligned_two_line_cont"
+    ]
+  },
+  {
+    "case_id": "MATH 12.196",
+    "file": "math-cases-ch12-probability.json",
+    "fields": [
+      "solution_overview"
+    ],
+    "reasons": [
+      "aligned_multi_numeric",
+      "aligned_short_numeric_tail"
+    ]
+  },
+  {
+    "case_id": "MATH 12.197",
+    "file": "math-cases-ch12-probability.json",
+    "fields": [
+      "solution_overview"
+    ],
+    "reasons": [
+      "aligned_short_numeric_tail",
+      "aligned_two_line_cont"
+    ]
+  },
+  {
+    "case_id": "MATH 12.198",
+    "file": "math-cases-ch12-probability.json",
+    "fields": [
+      "solution_overview"
+    ],
+    "reasons": [
+      "aligned_multi_numeric",
+      "aligned_short_numeric_tail"
+    ]
+  },
+  {
+    "case_id": "MATH 13.26",
+    "file": "math-cases-ch13-binomial.json",
+    "fields": [
+      "solution_overview"
+    ],
+    "reasons": [
+      "aligned_short_numeric_tail",
+      "aligned_two_line_cont"
+    ]
+  },
+  {
+    "case_id": "MATH 13.36",
+    "file": "math-cases-ch13-binomial.json",
+    "fields": [
+      "solution_overview"
+    ],
+    "reasons": [
+      "aligned_short_numeric_tail",
+      "aligned_two_line_cont"
+    ]
+  },
+  {
+    "case_id": "MATH 13.37",
+    "file": "math-cases-ch13-binomial.json",
+    "fields": [
+      "tactical[2]"
+    ],
+    "reasons": [
+      "aligned_two_line_cont",
+      "orphan_eq_display"
+    ]
+  },
+  {
+    "case_id": "MATH 13.39",
+    "file": "math-cases-ch13-binomial.json",
+    "fields": [
+      "tactical[2]"
+    ],
+    "reasons": [
+      "orphan_eq_display"
+    ]
+  },
+  {
+    "case_id": "MATH 10.2.8",
+    "file": "math-ch10-exp-log.json",
+    "fields": [
+      "tactical[2]"
+    ],
+    "reasons": [
+      "nested_frac_display"
+    ]
+  },
+  {
+    "case_id": "MATH 10.2.19",
+    "file": "math-ch10-exp-log.json",
+    "fields": [
+      "tactical[2]"
+    ],
+    "reasons": [
+      "nested_frac_display"
+    ]
+  },
+  {
+    "case_id": "MATH 10.3.10",
+    "file": "math-ch10-exp-log.json",
+    "fields": [
+      "solution_overview"
+    ],
+    "reasons": [
+      "aligned_short_numeric_tail",
+      "aligned_two_line_cont"
+    ]
+  },
+  {
+    "case_id": "MATH 10.3.13",
+    "file": "math-ch10-exp-log.json",
+    "fields": [
+      "solution_overview"
+    ],
+    "reasons": [
+      "aligned_short_numeric_tail",
+      "aligned_two_line_cont"
+    ]
+  },
+  {
+    "case_id": "MATH 10.3.15",
+    "file": "math-ch10-exp-log.json",
+    "fields": [
+      "solution_overview"
+    ],
+    "reasons": [
+      "aligned_short_numeric_tail"
+    ]
+  },
+  {
+    "case_id": "MATH 10.3.21",
+    "file": "math-ch10-exp-log.json",
+    "fields": [
+      "solution_overview"
+    ],
+    "reasons": [
+      "aligned_short_numeric_tail"
+    ]
+  },
+  {
+    "case_id": "MATH 10.3.26",
+    "file": "math-ch10-exp-log.json",
+    "fields": [
+      "solution_overview"
+    ],
+    "reasons": [
+      "aligned_short_numeric_tail"
+    ]
+  },
+  {
+    "case_id": "MATH 10.3.30",
+    "file": "math-ch10-exp-log.json",
+    "fields": [
+      "solution_overview"
+    ],
+    "reasons": [
+      "aligned_short_numeric_tail",
+      "aligned_two_line_cont"
+    ]
+  },
+  {
+    "case_id": "MATH 11.187",
+    "file": "math-ch11-exam.json",
+    "fields": [
+      "solution_overview"
+    ],
+    "reasons": [
+      "aligned_short_numeric_tail",
+      "aligned_two_line_cont"
+    ]
+  },
+  {
+    "case_id": "MATH 11.191",
+    "file": "math-ch11-exam.json",
+    "fields": [
+      "solution_overview"
+    ],
+    "reasons": [
+      "aligned_short_numeric_tail",
+      "aligned_two_line_cont"
+    ]
+  },
+  {
+    "case_id": "MATH 13.76",
+    "file": "math-ch13-exam.json",
+    "fields": [
+      "solution_overview"
+    ],
+    "reasons": [
+      "aligned_multi_numeric",
+      "aligned_short_numeric_tail"
+    ]
+  },
+  {
+    "case_id": "MATH 13.77",
+    "file": "math-ch13-exam.json",
+    "fields": [
+      "solution_overview"
+    ],
+    "reasons": [
+      "aligned_multi_numeric",
+      "aligned_short_numeric_tail"
+    ]
+  },
+  {
+    "case_id": "MATH 13.78",
+    "file": "math-ch13-exam.json",
+    "fields": [
+      "solution_overview"
+    ],
+    "reasons": [
+      "aligned_short_numeric_tail",
+      "aligned_two_line_cont"
+    ]
+  },
+  {
+    "case_id": "MATH 13.79",
+    "file": "math-ch13-exam.json",
+    "fields": [
+      "solution_overview"
+    ],
+    "reasons": [
+      "aligned_multi_numeric",
+      "aligned_short_numeric_tail"
+    ]
+  },
+  {
+    "case_id": "MATH 13.80",
+    "file": "math-ch13-exam.json",
+    "fields": [
+      "solution_overview"
+    ],
+    "reasons": [
+      "aligned_multi_numeric",
+      "aligned_short_numeric_tail"
+    ]
+  },
+  {
+    "case_id": "MATH 13.81",
+    "file": "math-ch13-exam.json",
+    "fields": [
+      "solution_overview"
+    ],
+    "reasons": [
+      "aligned_multi_numeric",
+      "aligned_short_numeric_tail"
+    ]
+  },
+  {
+    "case_id": "MATH 13.82",
+    "file": "math-ch13-exam.json",
+    "fields": [
+      "solution_overview"
+    ],
+    "reasons": [
+      "aligned_multi_numeric",
+      "aligned_short_numeric_tail"
+    ]
+  },
+  {
+    "case_id": "MATH 13.83",
+    "file": "math-ch13-exam.json",
+    "fields": [
+      "solution_overview"
+    ],
+    "reasons": [
+      "aligned_short_numeric_tail",
+      "aligned_two_line_cont"
+    ]
+  },
+  {
+    "case_id": "MATH 13.84",
+    "file": "math-ch13-exam.json",
+    "fields": [
+      "solution_overview"
+    ],
+    "reasons": [
+      "aligned_multi_numeric",
+      "aligned_short_numeric_tail"
+    ]
+  },
+  {
+    "case_id": "MATH 13.85",
+    "file": "math-ch13-exam.json",
+    "fields": [
+      "solution_overview"
+    ],
+    "reasons": [
+      "aligned_multi_numeric",
+      "aligned_short_numeric_tail"
+    ]
+  },
+  {
+    "case_id": "MATH 13.86",
+    "file": "math-ch13-exam.json",
+    "fields": [
+      "solution_overview"
+    ],
+    "reasons": [
+      "aligned_multi_numeric",
+      "aligned_short_numeric_tail"
+    ]
+  },
+  {
+    "case_id": "MATH 13.87",
+    "file": "math-ch13-exam.json",
+    "fields": [
+      "solution_overview"
+    ],
+    "reasons": [
+      "aligned_multi_numeric",
+      "aligned_short_numeric_tail"
+    ]
+  },
+  {
+    "case_id": "MATH 13.88",
+    "file": "math-ch13-exam.json",
+    "fields": [
+      "solution_overview"
+    ],
+    "reasons": [
+      "aligned_short_numeric_tail",
+      "aligned_two_line_cont"
+    ]
+  },
+  {
+    "case_id": "MATH 13.89",
+    "file": "math-ch13-exam.json",
+    "fields": [
+      "solution_overview"
+    ],
+    "reasons": [
+      "aligned_multi_numeric",
+      "aligned_short_numeric_tail"
+    ]
+  },
+  {
+    "case_id": "MATH 13.90",
+    "file": "math-ch13-exam.json",
+    "fields": [
+      "solution_overview"
+    ],
+    "reasons": [
+      "aligned_multi_numeric",
+      "aligned_short_numeric_tail"
+    ]
+  },
+  {
+    "case_id": "MATH 13.91",
+    "file": "math-ch13-exam.json",
+    "fields": [
+      "solution_overview"
+    ],
+    "reasons": [
+      "aligned_multi_numeric",
+      "aligned_short_numeric_tail"
+    ]
+  },
+  {
+    "case_id": "MATH 13.92",
+    "file": "math-ch13-exam.json",
+    "fields": [
+      "solution_overview"
+    ],
+    "reasons": [
+      "aligned_multi_numeric",
+      "aligned_short_numeric_tail"
+    ]
+  },
+  {
+    "case_id": "MATH 13.93",
+    "file": "math-ch13-exam.json",
+    "fields": [
+      "solution_overview"
+    ],
+    "reasons": [
+      "aligned_multi_numeric",
+      "aligned_short_numeric_tail"
+    ]
+  },
+  {
+    "case_id": "MATH 13.94",
+    "file": "math-ch13-exam.json",
+    "fields": [
+      "solution_overview"
+    ],
+    "reasons": [
+      "aligned_short_numeric_tail",
+      "aligned_two_line_cont"
+    ]
+  },
+  {
+    "case_id": "MATH 13.95",
+    "file": "math-ch13-exam.json",
+    "fields": [
+      "solution_overview"
+    ],
+    "reasons": [
+      "aligned_multi_numeric",
+      "aligned_short_numeric_tail"
+    ]
+  },
+  {
+    "case_id": "MATH 13.96",
+    "file": "math-ch13-exam.json",
+    "fields": [
+      "solution_overview"
+    ],
+    "reasons": [
+      "aligned_multi_numeric",
+      "aligned_short_numeric_tail"
+    ]
+  },
+  {
+    "case_id": "MATH 13.97",
+    "file": "math-ch13-exam.json",
+    "fields": [
+      "solution_overview"
+    ],
+    "reasons": [
+      "aligned_multi_numeric",
+      "aligned_short_numeric_tail"
+    ]
+  },
+  {
+    "case_id": "MATH 13.98",
+    "file": "math-ch13-exam.json",
+    "fields": [
+      "solution_overview"
+    ],
+    "reasons": [
+      "aligned_multi_numeric",
+      "aligned_short_numeric_tail"
+    ]
+  },
+  {
+    "case_id": "MATH 13.99",
+    "file": "math-ch13-exam.json",
+    "fields": [
+      "solution_overview"
+    ],
+    "reasons": [
+      "aligned_short_numeric_tail",
+      "aligned_two_line_cont"
+    ]
+  },
+  {
+    "case_id": "MATH 13.100",
+    "file": "math-ch13-exam.json",
+    "fields": [
+      "solution_overview"
+    ],
+    "reasons": [
+      "aligned_multi_numeric",
+      "aligned_short_numeric_tail"
+    ]
+  },
+  {
+    "case_id": "MATH 13.101",
+    "file": "math-ch13-exam.json",
+    "fields": [
+      "solution_overview"
+    ],
+    "reasons": [
+      "aligned_multi_numeric",
+      "aligned_short_numeric_tail"
+    ]
+  },
+  {
+    "case_id": "MATH 13.102",
+    "file": "math-ch13-exam.json",
+    "fields": [
+      "solution_overview"
+    ],
+    "reasons": [
+      "aligned_multi_numeric",
+      "aligned_short_numeric_tail"
+    ]
+  },
+  {
+    "case_id": "MATH 13.103",
+    "file": "math-ch13-exam.json",
+    "fields": [
+      "solution_overview"
+    ],
+    "reasons": [
+      "aligned_multi_numeric",
+      "aligned_short_numeric_tail"
+    ]
+  },
+  {
+    "case_id": "MATH 13.104",
+    "file": "math-ch13-exam.json",
+    "fields": [
+      "solution_overview"
+    ],
+    "reasons": [
+      "aligned_short_numeric_tail",
+      "aligned_two_line_cont"
+    ]
+  },
+  {
+    "case_id": "MATH 13.105",
+    "file": "math-ch13-exam.json",
+    "fields": [
+      "solution_overview"
+    ],
+    "reasons": [
+      "aligned_multi_numeric",
+      "aligned_short_numeric_tail"
+    ]
+  },
+  {
+    "case_id": "MATH 13.106",
+    "file": "math-ch13-exam.json",
+    "fields": [
+      "solution_overview"
+    ],
+    "reasons": [
+      "aligned_multi_numeric",
+      "aligned_short_numeric_tail"
+    ]
+  },
+  {
+    "case_id": "MATH 13.107",
+    "file": "math-ch13-exam.json",
+    "fields": [
+      "solution_overview"
+    ],
+    "reasons": [
+      "aligned_multi_numeric",
+      "aligned_short_numeric_tail"
+    ]
+  },
+  {
+    "case_id": "MATH 13.108",
+    "file": "math-ch13-exam.json",
+    "fields": [
+      "solution_overview"
+    ],
+    "reasons": [
+      "aligned_multi_numeric",
+      "aligned_short_numeric_tail"
+    ]
+  },
+  {
+    "case_id": "MATH 13.109",
+    "file": "math-ch13-exam.json",
+    "fields": [
+      "solution_overview"
+    ],
+    "reasons": [
+      "aligned_short_numeric_tail",
+      "aligned_two_line_cont"
+    ]
+  },
+  {
+    "case_id": "MATH 13.110",
+    "file": "math-ch13-exam.json",
+    "fields": [
+      "solution_overview"
+    ],
+    "reasons": [
+      "aligned_multi_numeric",
+      "aligned_short_numeric_tail"
+    ]
+  },
+  {
+    "case_id": "MATH 13.111",
+    "file": "math-ch13-exam.json",
+    "fields": [
+      "solution_overview"
+    ],
+    "reasons": [
+      "aligned_multi_numeric",
+      "aligned_short_numeric_tail"
+    ]
+  },
+  {
+    "case_id": "MATH 13.112",
+    "file": "math-ch13-exam.json",
+    "fields": [
+      "solution_overview"
+    ],
+    "reasons": [
+      "aligned_multi_numeric",
+      "aligned_short_numeric_tail"
+    ]
+  },
+  {
+    "case_id": "MATH 13.113",
+    "file": "math-ch13-exam.json",
+    "fields": [
+      "solution_overview"
+    ],
+    "reasons": [
+      "aligned_multi_numeric",
+      "aligned_short_numeric_tail"
+    ]
+  },
+  {
+    "case_id": "MATH 13.114",
+    "file": "math-ch13-exam.json",
+    "fields": [
+      "solution_overview"
+    ],
+    "reasons": [
+      "aligned_short_numeric_tail",
+      "aligned_two_line_cont"
+    ]
+  },
+  {
+    "case_id": "MATH 13.115",
+    "file": "math-ch13-exam.json",
+    "fields": [
+      "solution_overview"
+    ],
+    "reasons": [
+      "aligned_multi_numeric",
+      "aligned_short_numeric_tail"
+    ]
+  },
+  {
+    "case_id": "MATH 2.39",
+    "file": "math-ch2-cases.json",
+    "fields": [
+      "tactical[0]"
+    ],
+    "reasons": [
+      "nested_frac_display"
+    ]
+  },
+  {
+    "case_id": "MATH 2.43",
+    "file": "math-ch2-cases.json",
+    "fields": [
+      "tactical[3]"
+    ],
+    "reasons": [
+      "nested_frac_display"
+    ]
+  },
+  {
+    "case_id": "MATH 2.47",
+    "file": "math-ch2-cases.json",
+    "fields": [
+      "tactical[3]"
+    ],
+    "reasons": [
+      "nested_frac_display"
+    ]
+  },
+  {
+    "case_id": "MATH 2.60",
+    "file": "math-ch2-cases.json",
+    "fields": [
+      "tactical[0]"
+    ],
+    "reasons": [
+      "nested_frac_display"
+    ]
+  },
+  {
+    "case_id": "MATH 2.61",
+    "file": "math-ch2-cases.json",
+    "fields": [
+      "tactical[0]",
+      "tactical[2]"
+    ],
+    "reasons": [
+      "nested_frac_display"
+    ]
+  },
+  {
+    "case_id": "MATH 2.64",
+    "file": "math-ch2-cases.json",
+    "fields": [
+      "tactical[2]"
+    ],
+    "reasons": [
+      "nested_frac_display"
+    ]
+  },
+  {
+    "case_id": "MATH 2.143",
+    "file": "math-ch2-cases.json",
+    "fields": [
+      "tactical[0]"
+    ],
+    "reasons": [
+      "nested_frac_display"
+    ]
+  },
+  {
+    "case_id": "MATH 11.135",
+    "file": "math-ch3-exam.json",
+    "fields": [
+      "solution_overview"
+    ],
+    "reasons": [
+      "aligned_short_numeric_tail",
+      "aligned_two_line_cont"
+    ]
+  },
+  {
+    "case_id": "MATH 11.139",
+    "file": "math-ch3-exam.json",
+    "fields": [
+      "solution_overview"
+    ],
+    "reasons": [
+      "aligned_short_numeric_tail",
+      "aligned_two_line_cont"
+    ]
+  },
+  {
+    "case_id": "MATH 11.142",
+    "file": "math-ch3-exam.json",
+    "fields": [
+      "solution_overview"
+    ],
+    "reasons": [
+      "aligned_short_numeric_tail",
+      "aligned_two_line_cont"
+    ]
+  },
+  {
+    "case_id": "MATH 4.37",
+    "file": "math-ch4-cases.json",
+    "fields": [
+      "solution_overview"
+    ],
+    "reasons": [
+      "aligned_multi_numeric",
+      "aligned_short_numeric_tail",
+      "aligned_two_line_cont"
+    ]
+  },
+  {
+    "case_id": "MATH 4.40",
+    "file": "math-ch4-cases.json",
+    "fields": [
+      "solution_overview"
+    ],
+    "reasons": [
+      "aligned_short_numeric_tail",
+      "aligned_two_line_cont"
+    ]
+  },
+  {
+    "case_id": "MATH 4.46",
+    "file": "math-ch4-cases.json",
+    "fields": [
+      "solution_overview",
+      "tactical[2]"
+    ],
+    "reasons": [
+      "aligned_multi_numeric",
+      "aligned_short_numeric_tail",
+      "aligned_two_line_cont"
+    ]
+  },
+  {
+    "case_id": "MATH 4.51",
+    "file": "math-ch4-cases.json",
+    "fields": [
+      "solution_overview"
+    ],
+    "reasons": [
+      "aligned_short_numeric_tail",
+      "aligned_two_line_cont"
+    ]
+  },
+  {
+    "case_id": "MATH 4.52",
+    "file": "math-ch4-cases.json",
+    "fields": [
+      "solution_overview",
+      "tactical[2]"
+    ],
+    "reasons": [
+      "aligned_short_numeric_tail",
+      "aligned_two_line_cont"
+    ]
+  },
+  {
+    "case_id": "MATH 4.58",
+    "file": "math-ch4-cases.json",
+    "fields": [
+      "solution_overview"
+    ],
+    "reasons": [
+      "aligned_short_numeric_tail",
+      "aligned_two_line_cont"
+    ]
+  },
+  {
+    "case_id": "MATH 4.103",
+    "file": "math-ch4-cases.json",
+    "fields": [
+      "solution_overview"
+    ],
+    "reasons": [
+      "aligned_short_numeric_tail",
+      "aligned_two_line_cont"
+    ]
+  },
+  {
+    "case_id": "MATH 4.104",
+    "file": "math-ch4-cases.json",
+    "fields": [
+      "solution_overview"
+    ],
+    "reasons": [
+      "aligned_short_numeric_tail",
+      "aligned_two_line_cont"
+    ]
+  },
+  {
+    "case_id": "MATH 4.109",
+    "file": "math-ch4-cases.json",
+    "fields": [
+      "solution_overview"
+    ],
+    "reasons": [
+      "aligned_short_numeric_tail",
+      "aligned_two_line_cont"
+    ]
+  },
+  {
+    "case_id": "MATH 4.111",
+    "file": "math-ch4-cases.json",
+    "fields": [
+      "solution_overview"
+    ],
+    "reasons": [
+      "aligned_short_numeric_tail",
+      "aligned_two_line_cont"
+    ]
+  },
+  {
+    "case_id": "MATH 4.126",
+    "file": "math-ch4-cases.json",
+    "fields": [
+      "tactical[0]"
+    ],
+    "reasons": [
+      "nested_frac_display"
+    ]
+  },
+  {
+    "case_id": "MATH 4.151",
+    "file": "math-ch4-cases.json",
+    "fields": [
+      "tactical[3]"
+    ],
+    "reasons": [
+      "nested_frac_display"
+    ]
+  },
+  {
+    "case_id": "MATH 4.154",
+    "file": "math-ch4-cases.json",
+    "fields": [
+      "solution_overview"
+    ],
+    "reasons": [
+      "aligned_short_numeric_tail",
+      "aligned_two_line_cont"
+    ]
+  },
+  {
+    "case_id": "MATH 4.165",
+    "file": "math-ch4-cases.json",
+    "fields": [
+      "solution_overview"
+    ],
+    "reasons": [
+      "aligned_multi_numeric",
+      "aligned_short_numeric_tail"
+    ]
+  },
+  {
+    "case_id": "MATH 4.176",
+    "file": "math-ch4-cases.json",
+    "fields": [
+      "solution_overview"
+    ],
+    "reasons": [
+      "aligned_short_numeric_tail",
+      "aligned_two_line_cont"
+    ]
+  },
+  {
+    "case_id": "MATH 4.205",
+    "file": "math-ch4-cases.json",
+    "fields": [
+      "solution_overview"
+    ],
+    "reasons": [
+      "aligned_short_numeric_tail",
+      "aligned_two_line_cont"
+    ]
+  },
+  {
+    "case_id": "MATH 4.207",
+    "file": "math-ch4-cases.json",
+    "fields": [
+      "solution_overview"
+    ],
+    "reasons": [
+      "aligned_short_numeric_tail",
+      "aligned_two_line_cont"
+    ]
+  },
+  {
+    "case_id": "MATH 4.209",
+    "file": "math-ch4-cases.json",
+    "fields": [
+      "solution_overview"
+    ],
+    "reasons": [
+      "aligned_short_numeric_tail",
+      "aligned_two_line_cont"
+    ]
+  },
+  {
+    "case_id": "MATH 4.211",
+    "file": "math-ch4-cases.json",
+    "fields": [
+      "solution_overview"
+    ],
+    "reasons": [
+      "aligned_short_numeric_tail",
+      "aligned_two_line_cont"
+    ]
+  },
+  {
+    "case_id": "MATH 4.213",
+    "file": "math-ch4-cases.json",
+    "fields": [
+      "solution_overview"
+    ],
+    "reasons": [
+      "aligned_short_numeric_tail",
+      "aligned_two_line_cont"
+    ]
+  },
+  {
+    "case_id": "MATH 5.78",
+    "file": "math-ch5-exam.json",
+    "fields": [
+      "solution_overview"
+    ],
+    "reasons": [
+      "aligned_short_numeric_tail",
+      "aligned_two_line_cont"
+    ]
+  },
+  {
+    "case_id": "MATH 6.93",
+    "file": "math-ch6-inequalities.json",
+    "fields": [
+      "tactical[4]"
+    ],
+    "reasons": [
+      "nested_frac_display"
+    ]
+  },
+  {
+    "case_id": "MATH 7.56",
+    "file": "math-ch7-linear-quadratic.json",
+    "fields": [
+      "solution_overview"
+    ],
+    "reasons": [
+      "aligned_short_numeric_tail",
+      "aligned_two_line_cont"
+    ]
+  },
+  {
+    "case_id": "MATH 7.57",
+    "file": "math-ch7-linear-quadratic.json",
+    "fields": [
+      "solution_overview"
+    ],
+    "reasons": [
+      "aligned_short_numeric_tail",
+      "aligned_two_line_cont"
+    ]
+  },
+  {
+    "case_id": "MATH 7.59",
+    "file": "math-ch7-linear-quadratic.json",
+    "fields": [
+      "solution_overview"
+    ],
+    "reasons": [
+      "aligned_short_numeric_tail",
+      "aligned_two_line_cont"
+    ]
+  },
+  {
+    "case_id": "MATH 7.68",
+    "file": "math-ch7-linear-quadratic.json",
+    "fields": [
+      "solution_overview"
+    ],
+    "reasons": [
+      "aligned_short_numeric_tail",
+      "aligned_two_line_cont"
+    ]
+  },
+  {
+    "case_id": "MATH 7.75",
+    "file": "math-ch7-linear-quadratic.json",
+    "fields": [
+      "solution_overview"
+    ],
+    "reasons": [
+      "aligned_short_numeric_tail",
+      "aligned_two_line_cont"
+    ]
+  },
+  {
+    "case_id": "MATH 7.84",
+    "file": "math-ch7-linear-quadratic.json",
+    "fields": [
+      "solution_overview"
+    ],
+    "reasons": [
+      "aligned_short_numeric_tail",
+      "aligned_two_line_cont"
+    ]
+  },
+  {
+    "case_id": "MATH 7.85",
+    "file": "math-ch7-linear-quadratic.json",
+    "fields": [
+      "solution_overview"
+    ],
+    "reasons": [
+      "aligned_short_numeric_tail",
+      "aligned_two_line_cont"
+    ]
+  },
+  {
+    "case_id": "MATH 7.94",
+    "file": "math-ch7-linear-quadratic.json",
+    "fields": [
+      "solution_overview"
+    ],
+    "reasons": [
+      "aligned_short_numeric_tail",
+      "aligned_two_line_cont"
+    ]
+  },
+  {
+    "case_id": "MATH 7.95",
+    "file": "math-ch7-linear-quadratic.json",
+    "fields": [
+      "solution_overview"
+    ],
+    "reasons": [
+      "aligned_short_numeric_tail",
+      "aligned_two_line_cont"
+    ]
+  },
+  {
+    "case_id": "MATH 7.96",
+    "file": "math-ch7-linear-quadratic.json",
+    "fields": [
+      "solution_overview"
+    ],
+    "reasons": [
+      "aligned_short_numeric_tail",
+      "aligned_two_line_cont"
+    ]
+  },
+  {
+    "case_id": "MATH 7.E02",
+    "file": "math-ch7-mixed-exam.json",
+    "fields": [
+      "solution_overview"
+    ],
+    "reasons": [
+      "aligned_short_numeric_tail",
+      "aligned_two_line_cont"
+    ]
+  },
+  {
+    "case_id": "MATH 7.E08",
+    "file": "math-ch7-mixed-exam.json",
+    "fields": [
+      "solution_overview"
+    ],
+    "reasons": [
+      "aligned_short_numeric_tail",
+      "aligned_two_line_cont"
+    ]
+  },
+  {
+    "case_id": "MATH 7.E12",
+    "file": "math-ch7-mixed-exam.json",
+    "fields": [
+      "solution_overview"
+    ],
+    "reasons": [
+      "aligned_short_numeric_tail",
+      "aligned_two_line_cont"
+    ]
+  },
+  {
+    "case_id": "MATH 7.E15",
+    "file": "math-ch7-mixed-exam.json",
+    "fields": [
+      "solution_overview"
+    ],
+    "reasons": [
+      "aligned_short_numeric_tail",
+      "aligned_two_line_cont"
+    ]
+  },
+  {
+    "case_id": "MATH 7.E16",
+    "file": "math-ch7-mixed-exam.json",
+    "fields": [
+      "solution_overview"
+    ],
+    "reasons": [
+      "aligned_multi_numeric",
+      "aligned_short_numeric_tail",
+      "aligned_two_line_cont"
+    ]
+  },
+  {
+    "case_id": "MATH 7.E20",
+    "file": "math-ch7-mixed-exam.json",
+    "fields": [
+      "solution_overview"
+    ],
+    "reasons": [
+      "aligned_two_line_cont",
+      "orphan_eq_display"
+    ]
+  },
+  {
+    "case_id": "MATH 7.E22",
+    "file": "math-ch7-mixed-exam.json",
+    "fields": [
+      "solution_overview"
+    ],
+    "reasons": [
+      "aligned_short_numeric_tail",
+      "aligned_two_line_cont"
+    ]
+  },
+  {
+    "case_id": "MATH 7.E24",
+    "file": "math-ch7-mixed-exam.json",
+    "fields": [
+      "solution_overview"
+    ],
+    "reasons": [
+      "aligned_short_numeric_tail",
+      "aligned_two_line_cont"
+    ]
+  },
+  {
+    "case_id": "MATH 7.E25",
+    "file": "math-ch7-mixed-exam.json",
+    "fields": [
+      "solution_overview"
+    ],
+    "reasons": [
+      "aligned_short_numeric_tail",
+      "aligned_two_line_cont"
+    ]
+  },
+  {
+    "case_id": "MATH 7.E29",
+    "file": "math-ch7-mixed-exam.json",
+    "fields": [
+      "solution_overview"
+    ],
+    "reasons": [
+      "aligned_short_numeric_tail",
+      "aligned_two_line_cont"
+    ]
+  }
+]

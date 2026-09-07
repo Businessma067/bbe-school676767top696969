@@ -1,0 +1,230 @@
+[
+  {
+    "case_id": "MATH 12.03",
+    "file": "math-cases-ch12-probability.json",
+    "fields": [
+      "tactical[4]"
+    ],
+    "reasons": [
+      "nested_frac_display"
+    ]
+  },
+  {
+    "case_id": "MATH 12.14",
+    "file": "math-cases-ch12-probability.json",
+    "fields": [
+      "solution_overview",
+      "tactical[4]"
+    ],
+    "reasons": [
+      "aligned_two_line_cont",
+      "nested_frac_display"
+    ]
+  },
+  {
+    "case_id": "MATH 12.20",
+    "file": "math-cases-ch12-probability.json",
+    "fields": [
+      "solution_overview",
+      "tactical[4]"
+    ],
+    "reasons": [
+      "aligned_two_line_cont",
+      "nested_frac_display"
+    ]
+  },
+  {
+    "case_id": "MATH 12.40",
+    "file": "math-cases-ch12-probability.json",
+    "fields": [
+      "tactical[4]"
+    ],
+    "reasons": [
+      "nested_frac_display"
+    ]
+  },
+  {
+    "case_id": "MATH 12.41",
+    "file": "math-cases-ch12-probability.json",
+    "fields": [
+      "solution_overview",
+      "tactical[2]",
+      "tactical[4]"
+    ],
+    "reasons": [
+      "aligned_two_line_cont",
+      "nested_frac_display"
+    ]
+  },
+  {
+    "case_id": "MATH 12.42",
+    "file": "math-cases-ch12-probability.json",
+    "fields": [
+      "tactical[4]"
+    ],
+    "reasons": [
+      "nested_frac_display"
+    ]
+  },
+  {
+    "case_id": "MATH 12.168",
+    "file": "math-cases-ch12-probability.json",
+    "fields": [
+      "tactical[3]"
+    ],
+    "reasons": [
+      "nested_frac_display"
+    ]
+  },
+  {
+    "case_id": "MATH 12.172",
+    "file": "math-cases-ch12-probability.json",
+    "fields": [
+      "tactical[4]"
+    ],
+    "reasons": [
+      "nested_frac_display"
+    ]
+  },
+  {
+    "case_id": "MATH 12.175",
+    "file": "math-cases-ch12-probability.json",
+    "fields": [
+      "tactical[4]"
+    ],
+    "reasons": [
+      "nested_frac_display"
+    ]
+  },
+  {
+    "case_id": "MATH 12.177",
+    "file": "math-cases-ch12-probability.json",
+    "fields": [
+      "tactical[4]"
+    ],
+    "reasons": [
+      "nested_frac_display"
+    ]
+  },
+  {
+    "case_id": "MATH 10.2.8",
+    "file": "math-ch10-exp-log.json",
+    "fields": [
+      "tactical[2]"
+    ],
+    "reasons": [
+      "nested_frac_display"
+    ]
+  },
+  {
+    "case_id": "MATH 10.2.19",
+    "file": "math-ch10-exp-log.json",
+    "fields": [
+      "tactical[2]"
+    ],
+    "reasons": [
+      "nested_frac_display"
+    ]
+  },
+  {
+    "case_id": "MATH 2.39",
+    "file": "math-ch2-cases.json",
+    "fields": [
+      "tactical[0]"
+    ],
+    "reasons": [
+      "nested_frac_display"
+    ]
+  },
+  {
+    "case_id": "MATH 2.43",
+    "file": "math-ch2-cases.json",
+    "fields": [
+      "tactical[3]"
+    ],
+    "reasons": [
+      "nested_frac_display"
+    ]
+  },
+  {
+    "case_id": "MATH 2.47",
+    "file": "math-ch2-cases.json",
+    "fields": [
+      "tactical[3]"
+    ],
+    "reasons": [
+      "nested_frac_display"
+    ]
+  },
+  {
+    "case_id": "MATH 2.60",
+    "file": "math-ch2-cases.json",
+    "fields": [
+      "tactical[0]"
+    ],
+    "reasons": [
+      "nested_frac_display"
+    ]
+  },
+  {
+    "case_id": "MATH 2.61",
+    "file": "math-ch2-cases.json",
+    "fields": [
+      "tactical[0]",
+      "tactical[2]"
+    ],
+    "reasons": [
+      "nested_frac_display"
+    ]
+  },
+  {
+    "case_id": "MATH 2.64",
+    "file": "math-ch2-cases.json",
+    "fields": [
+      "tactical[2]"
+    ],
+    "reasons": [
+      "nested_frac_display"
+    ]
+  },
+  {
+    "case_id": "MATH 2.143",
+    "file": "math-ch2-cases.json",
+    "fields": [
+      "tactical[0]"
+    ],
+    "reasons": [
+      "nested_frac_display"
+    ]
+  },
+  {
+    "case_id": "MATH 4.126",
+    "file": "math-ch4-cases.json",
+    "fields": [
+      "tactical[0]"
+    ],
+    "reasons": [
+      "nested_frac_display"
+    ]
+  },
+  {
+    "case_id": "MATH 4.151",
+    "file": "math-ch4-cases.json",
+    "fields": [
+      "tactical[3]"
+    ],
+    "reasons": [
+      "nested_frac_display"
+    ]
+  },
+  {
+    "case_id": "MATH 6.93",
+    "file": "math-ch6-inequalities.json",
+    "fields": [
+      "tactical[4]"
+    ],
+    "reasons": [
+      "nested_frac_display"
+    ]
+  }
+]

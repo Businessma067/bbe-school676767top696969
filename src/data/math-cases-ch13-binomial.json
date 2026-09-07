@@ -781,7 +781,7 @@
       ],
       "difficulty_level": "4/5",
       "sort_order": 26,
-      "solution_overview": "Factory A inspects batches of 22 units; each unit is defect-free independently with probability 0.65. Factory B inspects batches of 20 units; each unit is defect-free independently with probability 0.92. A batch \"passes\" if at least 85% of Factory A's units are defect-free, or at least 90% of Factory B's units are defect-free (each factory judged against its own threshold).\n\nWe model side A as $X_A \\sim \\mathrm{Bin}(n_A,p_A)$ with $n_A = 22$, $p_A = 0.65$, and side B as $X_B \\sim \\mathrm{Bin}(n_B,p_B)$ with $n_B = 20$, $p_B = 0.92$.\n\nEach factory has its own percentage cutoff, converted to an integer count with a ceiling (you cannot keep a fraction of a unit).\n\nSide A: $85\\%\\times 22 = 18.7$\n\n$$\n\\begin{aligned}\nk_A &= \\lceil 18.7 \\rceil \\\\\n&= 19\n\\end{aligned}\n$$\n\nSide B: $90\\%\\times 20 = 18$\n\n$$\n\\begin{aligned}\nk_B &= \\lceil 18 \\rceil \\\\\n&= 18\n\\end{aligned}\n$$"
+      "solution_overview": "Factory A inspects batches of 22 units; each unit is defect-free independently with probability 0.65. Factory B inspects batches of 20 units; each unit is defect-free independently with probability 0.92. A batch \"passes\" if at least 85% of Factory A's units are defect-free, or at least 90% of Factory B's units are defect-free (each factory judged against its own threshold).\n\nWe model side A as $X_A \\sim \\mathrm{Bin}(n_A,p_A)$ with $n_A = 22$, $p_A = 0.65$, and side B as $X_B \\sim \\mathrm{Bin}(n_B,p_B)$ with $n_B = 20$, $p_B = 0.92$.\n\nEach factory has its own percentage cutoff, converted to an integer count with a ceiling (you cannot keep a fraction of a unit).\n\nSide A: $85\\%\\times 22 = 18.7$\n\n$$\nk_A = \\lceil 18.7 \\rceil = 19\n$$\n\nSide B: $90\\%\\times 20 = 18$\n\n$$\nk_B = \\lceil 18 \\rceil = 18\n$$"
     },
     {
       "id": "math-13-27",
@@ -1081,7 +1081,7 @@
       ],
       "difficulty_level": "4/5",
       "sort_order": 36,
-      "solution_overview": "Factory A inspects batches of 17 units; each unit is defect-free independently with probability 0.43. Factory B inspects batches of 29 units; each unit is defect-free independently with probability 0.61. Factory A's batch passes if at least 87% of its units are defect-free. Factory B's batch passes if at least 79% of its units are defect-free.\n\nWe model side A as $X_A \\sim \\mathrm{Bin}(n_A,p_A)$ with $n_A = 17$, $p_A = 0.43$, and side B as $X_B \\sim \\mathrm{Bin}(n_B,p_B)$ with $n_B = 29$, $p_B = 0.61$.\n\nEach factory has its own percentage cutoff, converted to an integer count with a ceiling (you cannot keep a fraction of a unit).\n\nSide A: $87\\%\\times 17 = 14.79$\n\n$$\n\\begin{aligned}\nk_A &= \\lceil 14.79 \\rceil \\\\\n&= 15\n\\end{aligned}\n$$\n\nSide B: $79\\%\\times 29 = 22.91$\n\n$$\n\\begin{aligned}\nk_B &= \\lceil 22.91 \\rceil \\\\\n&= 23\n\\end{aligned}\n$$"
+      "solution_overview": "Factory A inspects batches of 17 units; each unit is defect-free independently with probability 0.43. Factory B inspects batches of 29 units; each unit is defect-free independently with probability 0.61. Factory A's batch passes if at least 87% of its units are defect-free. Factory B's batch passes if at least 79% of its units are defect-free.\n\nWe model side A as $X_A \\sim \\mathrm{Bin}(n_A,p_A)$ with $n_A = 17$, $p_A = 0.43$, and side B as $X_B \\sim \\mathrm{Bin}(n_B,p_B)$ with $n_B = 29$, $p_B = 0.61$.\n\nEach factory has its own percentage cutoff, converted to an integer count with a ceiling (you cannot keep a fraction of a unit).\n\nSide A: $87\\%\\times 17 = 14.79$\n\n$$\nk_A = \\lceil 14.79 \\rceil = 15\n$$\n\nSide B: $79\\%\\times 29 = 22.91$\n\n$$\nk_B = \\lceil 22.91 \\rceil = 23\n$$"
     },
     {
       "id": "math-13-37",
@@ -1321,7 +1321,7 @@
       ],
       "difficulty_level": "5/5",
       "sort_order": 44,
-      "solution_overview": "A device has three independent components arranged so the device fails in a given cycle if at least one component fails. Component 1 fails with probability 0.00031 per cycle, Component 2 with probability 0.00047 per cycle, and Component 3 with probability 0.00022 per cycle. The device runs for 2,500 independent cycles.\n\nA cycle fails if at least one component fails:\n\n$$\n\\begin{aligned}\np &= 1-(1-p_1)(1-p_2)(1-p_3) \\\\\n&= 1-(0.99969)(0.99953)(0.99978)\n\\end{aligned}\n$$\n\n$$\\approx 0.00099968.$$\n\nLet $X \\sim \\mathrm{Bin}(n,p)$ with $n = 2500$ and $p = 0.00099968$."
+      "solution_overview": "A device has three independent components arranged so the device fails in a given cycle if at least one component fails. Component 1 fails with probability 0.00031 per cycle, Component 2 with probability 0.00047 per cycle, and Component 3 with probability 0.00022 per cycle. The device runs for 2,500 independent cycles.\n\nA cycle fails if at least one component fails:\n\n$$\np = 1-(1-p_1)(1-p_2)(1-p_3) = 1-(0.99969)(0.99953)(0.99978)\n$$\n\n$$\\approx 0.00099968.$$\n\nLet $X \\sim \\mathrm{Bin}(n,p)$ with $n = 2500$ and $p = 0.00099968$."
     },
     {
       "id": "math-13-45",

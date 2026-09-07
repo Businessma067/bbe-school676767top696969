@@ -381,7 +381,7 @@
       ],
       "difficulty_level": "5/5",
       "sort_order": 72,
-      "solution_overview": "A juice bar prepares 70 liters from a $35\\%$ mango drink and a $10\\%$ mango drink so the blend is $25\\%$ mango.\n\nLet $x$ = liters of the stronger drink and $y$ = liters of the weaker drink.\n\n$$x + y = 70 \\tag{1}$$\n\n$$\n\\begin{aligned}\n35x + 10y &= 25 \\times 70 \\\\\n&= 1750 \\tag{2}\n\\end{aligned}\n$$\n\nMultiply (1) by $10$ and subtract from (2):\n\n$$25x = 1050$$\n\n$$\nx = 42,\\qquad y = 28\n$$",
+      "solution_overview": "A juice bar prepares 70 liters from a $35\\%$ mango drink and a $10\\%$ mango drink so the blend is $25\\%$ mango.\n\nLet $x$ = liters of the stronger drink and $y$ = liters of the weaker drink.\n\n$$x + y = 70 \\tag{1}$$\n\n$$\n35x + 10y = 25 \\times 70 = 1750 \\tag{2}\n$$\n\nMultiply (1) by $10$ and subtract from (2):\n\n$$25x = 1050$$\n\n$$\nx = 42,\\qquad y = 28\n$$",
       "placeholder": false
     },
     {
@@ -573,7 +573,7 @@
       ],
       "difficulty_level": "5/5",
       "sort_order": 78,
-      "solution_overview": "A two-digit badge number satisfies $4x - y = 29$ and $2x + y = 19$, where $x$ is the tens digit and $y$ is the units digit.\n\nAdding the two equations eliminates $y$:\n\n$$6x = 48$$\n\n$$x = 8$$\n\nFrom $2x + y = 19$,\n\n$$\n\\begin{aligned}\ny &= 19 - 16 \\\\\n&= 3\n\\end{aligned}\n$$\n\nThe badge is $83$. The reversal is $38$, and\n\n$$83 - 38 = 45$$\n\nso the reversal is $45$ less than the original, not $38$ greater.",
+      "solution_overview": "A two-digit badge number satisfies $4x - y = 29$ and $2x + y = 19$, where $x$ is the tens digit and $y$ is the units digit.\n\nAdding the two equations eliminates $y$:\n\n$$6x = 48$$\n\n$$x = 8$$\n\nFrom $2x + y = 19$,\n\n$$\ny = 19 - 16 = 3\n$$\n\nThe badge is $83$. The reversal is $38$, and\n\n$$83 - 38 = 45$$\n\nso the reversal is $45$ less than the original, not $38$ greater.",
       "placeholder": false
     },
     {

@@ -29,7 +29,7 @@
       ],
       "difficulty_level": "5/5",
       "sort_order": 76,
-      "solution_overview": "Over a full indoor season of 40 independent matches, a player's expected number of wins is 27.2. Assume the win chance is the same in every match.\n\nFrom the given mean over $n=40$ independent trials,\n\n$$\n\\begin{aligned}\np &= \\dfrac{E[X]}{n} \\\\\n&= \\dfrac{27.2}{40} \\\\\n&= 0.68\n\\end{aligned}\n$$\n\nWe model the count as $X\\sim\\mathrm{Bin}(40,0.68)$, so $1-p=0.32$ and $\\mathrm{Var}(X)=np(1-p)$.",
+      "solution_overview": "Over a full indoor season of 40 independent matches, a player's expected number of wins is 27.2. Assume the win chance is the same in every match.\n\nFrom the given mean over $n=40$ independent trials,\n\n$$\np = \\dfrac{E[X]}{n} = \\dfrac{27.2}{40} = 0.68\n$$\n\nWe model the count as $X\\sim\\mathrm{Bin}(40,0.68)$, so $1-p=0.32$ and $\\mathrm{Var}(X)=np(1-p)$.",
       "placeholder": false
     },
     {
@@ -61,7 +61,7 @@
       ],
       "difficulty_level": "5/5",
       "sort_order": 77,
-      "solution_overview": "A festival food stall tracks whether each customer leaves satisfied. In a typical block of 16 independent orders, the expected number of satisfied customers is 12.8.\n\nFrom the given mean over $n=16$ independent trials,\n\n$$\n\\begin{aligned}\np &= \\dfrac{E[X]}{n} \\\\\n&= \\dfrac{12.8}{16} \\\\\n&= 0.8\n\\end{aligned}\n$$\n\nWe model the count as $X\\sim\\mathrm{Bin}(16,0.8)$, so $1-p=0.2$ and $\\mathrm{Var}(X)=np(1-p)$.",
+      "solution_overview": "A festival food stall tracks whether each customer leaves satisfied. In a typical block of 16 independent orders, the expected number of satisfied customers is 12.8.\n\nFrom the given mean over $n=16$ independent trials,\n\n$$\np = \\dfrac{E[X]}{n} = \\dfrac{12.8}{16} = 0.8\n$$\n\nWe model the count as $X\\sim\\mathrm{Bin}(16,0.8)$, so $1-p=0.2$ and $\\mathrm{Var}(X)=np(1-p)$.",
       "placeholder": false
     },
     {
@@ -93,7 +93,7 @@
       ],
       "difficulty_level": "5/5",
       "sort_order": 78,
-      "solution_overview": "On a screening day with 80 independent patients, positives and negatives are expected in the ratio 3 : 17. The standard deviation of the number of positives that day is $\\sqrt{10.2}$.\n\nSuccesses and failures are expected in the ratio $3:17$, so\n\n$$\n\\begin{aligned}\np &= \\dfrac{3}{3+17} \\\\\n&= 0.15\n\\end{aligned}\n$$\n\nWe model the count as $X\\sim\\mathrm{Bin}(80,0.15)$.",
+      "solution_overview": "On a screening day with 80 independent patients, positives and negatives are expected in the ratio 3 : 17. The standard deviation of the number of positives that day is $\\sqrt{10.2}$.\n\nSuccesses and failures are expected in the ratio $3:17$, so\n\n$$\np = \\dfrac{3}{3+17} = 0.15\n$$\n\nWe model the count as $X\\sim\\mathrm{Bin}(80,0.15)$.",
       "placeholder": false
     },
     {
@@ -125,7 +125,7 @@
       ],
       "difficulty_level": "5/5",
       "sort_order": 79,
-      "solution_overview": "A courier completed an audit of 50 independent evening deliveries. The expected number of on-time deliveries was 42, and the variance of that count was 6.72.\n\nFrom the given mean over $n=50$ independent trials,\n\n$$\n\\begin{aligned}\np &= \\dfrac{E[X]}{n} \\\\\n&= \\dfrac{42}{50} \\\\\n&= 0.84\n\\end{aligned}\n$$\n\nWe model the count as $X\\sim\\mathrm{Bin}(50,0.84)$, so $1-p=0.16$ and $\\mathrm{Var}(X)=np(1-p)$.",
+      "solution_overview": "A courier completed an audit of 50 independent evening deliveries. The expected number of on-time deliveries was 42, and the variance of that count was 6.72.\n\nFrom the given mean over $n=50$ independent trials,\n\n$$\np = \\dfrac{E[X]}{n} = \\dfrac{42}{50} = 0.84\n$$\n\nWe model the count as $X\\sim\\mathrm{Bin}(50,0.84)$, so $1-p=0.16$ and $\\mathrm{Var}(X)=np(1-p)$.",
       "placeholder": false
     },
     {
@@ -157,7 +157,7 @@
       ],
       "difficulty_level": "5/5",
       "sort_order": 80,
-      "solution_overview": "In a contest with 35 independent submissions, the auto-grader accepts 14 on average.\n\nFrom the given mean over $n=35$ independent trials,\n\n$$\n\\begin{aligned}\np &= \\dfrac{E[X]}{n} \\\\\n&= \\dfrac{14}{35} \\\\\n&= 0.4\n\\end{aligned}\n$$\n\nWe model the count as $X\\sim\\mathrm{Bin}(35,0.4)$, so $1-p=0.6$ and $\\mathrm{Var}(X)=np(1-p)$.",
+      "solution_overview": "In a contest with 35 independent submissions, the auto-grader accepts 14 on average.\n\nFrom the given mean over $n=35$ independent trials,\n\n$$\np = \\dfrac{E[X]}{n} = \\dfrac{14}{35} = 0.4\n$$\n\nWe model the count as $X\\sim\\mathrm{Bin}(35,0.4)$, so $1-p=0.6$ and $\\mathrm{Var}(X)=np(1-p)$.",
       "placeholder": false
     },
     {
@@ -189,7 +189,7 @@
       ],
       "difficulty_level": "4/5",
       "sort_order": 81,
-      "solution_overview": "A warehouse audits 25 independent picks. The expected number of correct picks is 20, and the variance of the correct-pick count is 4.\n\nFrom the given mean over $n=25$ independent trials,\n\n$$\n\\begin{aligned}\np &= \\dfrac{E[X]}{n} \\\\\n&= \\dfrac{20}{25} \\\\\n&= 0.8\n\\end{aligned}\n$$\n\nWe model the count as $X\\sim\\mathrm{Bin}(25,0.8)$, so $1-p=0.2$ and $\\mathrm{Var}(X)=np(1-p)$.",
+      "solution_overview": "A warehouse audits 25 independent picks. The expected number of correct picks is 20, and the variance of the correct-pick count is 4.\n\nFrom the given mean over $n=25$ independent trials,\n\n$$\np = \\dfrac{E[X]}{n} = \\dfrac{20}{25} = 0.8\n$$\n\nWe model the count as $X\\sim\\mathrm{Bin}(25,0.8)$, so $1-p=0.2$ and $\\mathrm{Var}(X)=np(1-p)$.",
       "placeholder": false
     },
     {
@@ -221,7 +221,7 @@
       ],
       "difficulty_level": "4/5",
       "sort_order": 82,
-      "solution_overview": "In a listening quiz of 20 independent items, a student is expected to answer 15 correctly.\n\nFrom the given mean over $n=20$ independent trials,\n\n$$\n\\begin{aligned}\np &= \\dfrac{E[X]}{n} \\\\\n&= \\dfrac{15}{20} \\\\\n&= 0.75\n\\end{aligned}\n$$\n\nWe model the count as $X\\sim\\mathrm{Bin}(20,0.75)$, so $1-p=0.25$ and $\\mathrm{Var}(X)=np(1-p)$.",
+      "solution_overview": "In a listening quiz of 20 independent items, a student is expected to answer 15 correctly.\n\nFrom the given mean over $n=20$ independent trials,\n\n$$\np = \\dfrac{E[X]}{n} = \\dfrac{15}{20} = 0.75\n$$\n\nWe model the count as $X\\sim\\mathrm{Bin}(20,0.75)$, so $1-p=0.25$ and $\\mathrm{Var}(X)=np(1-p)$.",
       "placeholder": false
     },
     {
@@ -253,7 +253,7 @@
       ],
       "difficulty_level": "5/5",
       "sort_order": 83,
-      "solution_overview": "A maintenance log covers 60 independent dock sensors. Faulty and working sensors are expected in the ratio 1 : 4.\n\nSuccesses and failures are expected in the ratio $1:4$, so\n\n$$\n\\begin{aligned}\np &= \\dfrac{1}{1+4} \\\\\n&= 0.2\n\\end{aligned}\n$$\n\nWe model the count as $X\\sim\\mathrm{Bin}(60,0.2)$.",
+      "solution_overview": "A maintenance log covers 60 independent dock sensors. Faulty and working sensors are expected in the ratio 1 : 4.\n\nSuccesses and failures are expected in the ratio $1:4$, so\n\n$$\np = \\dfrac{1}{1+4} = 0.2\n$$\n\nWe model the count as $X\\sim\\mathrm{Bin}(60,0.2)$.",
       "placeholder": false
     },
     {
@@ -285,7 +285,7 @@
       ],
       "difficulty_level": "5/5",
       "sort_order": 84,
-      "solution_overview": "A hotel tracks 30 independent booking requests. The expected number of confirmed bookings is 24.\n\nFrom the given mean over $n=30$ independent trials,\n\n$$\n\\begin{aligned}\np &= \\dfrac{E[X]}{n} \\\\\n&= \\dfrac{24}{30} \\\\\n&= 0.8\n\\end{aligned}\n$$\n\nWe model the count as $X\\sim\\mathrm{Bin}(30,0.8)$, so $1-p=0.2$ and $\\mathrm{Var}(X)=np(1-p)$.",
+      "solution_overview": "A hotel tracks 30 independent booking requests. The expected number of confirmed bookings is 24.\n\nFrom the given mean over $n=30$ independent trials,\n\n$$\np = \\dfrac{E[X]}{n} = \\dfrac{24}{30} = 0.8\n$$\n\nWe model the count as $X\\sim\\mathrm{Bin}(30,0.8)$, so $1-p=0.2$ and $\\mathrm{Var}(X)=np(1-p)$.",
       "placeholder": false
     },
     {
@@ -317,7 +317,7 @@
       ],
       "difficulty_level": "5/5",
       "sort_order": 85,
-      "solution_overview": "A pharmacy reviews 40 independent prescriptions. The expected number flagged for follow-up is 8, with variance 6.4.\n\nFrom the given mean over $n=40$ independent trials,\n\n$$\n\\begin{aligned}\np &= \\dfrac{E[X]}{n} \\\\\n&= \\dfrac{8}{40} \\\\\n&= 0.2\n\\end{aligned}\n$$\n\nWe model the count as $X\\sim\\mathrm{Bin}(40,0.2)$, so $1-p=0.8$ and $\\mathrm{Var}(X)=np(1-p)$.",
+      "solution_overview": "A pharmacy reviews 40 independent prescriptions. The expected number flagged for follow-up is 8, with variance 6.4.\n\nFrom the given mean over $n=40$ independent trials,\n\n$$\np = \\dfrac{E[X]}{n} = \\dfrac{8}{40} = 0.2\n$$\n\nWe model the count as $X\\sim\\mathrm{Bin}(40,0.2)$, so $1-p=0.8$ and $\\mathrm{Var}(X)=np(1-p)$.",
       "placeholder": false
     },
     {
@@ -349,7 +349,7 @@
       ],
       "difficulty_level": "4/5",
       "sort_order": 86,
-      "solution_overview": "Over 45 independent audio-guide loans, the expected number returned on time is 36.\n\nFrom the given mean over $n=45$ independent trials,\n\n$$\n\\begin{aligned}\np &= \\dfrac{E[X]}{n} \\\\\n&= \\dfrac{36}{45} \\\\\n&= 0.8\n\\end{aligned}\n$$\n\nWe model the count as $X\\sim\\mathrm{Bin}(45,0.8)$, so $1-p=0.2$ and $\\mathrm{Var}(X)=np(1-p)$.",
+      "solution_overview": "Over 45 independent audio-guide loans, the expected number returned on time is 36.\n\nFrom the given mean over $n=45$ independent trials,\n\n$$\np = \\dfrac{E[X]}{n} = \\dfrac{36}{45} = 0.8\n$$\n\nWe model the count as $X\\sim\\mathrm{Bin}(45,0.8)$, so $1-p=0.2$ and $\\mathrm{Var}(X)=np(1-p)$.",
       "placeholder": false
     },
     {
@@ -381,7 +381,7 @@
       ],
       "difficulty_level": "5/5",
       "sort_order": 87,
-      "solution_overview": "A sales team ran 25 independent product demos. The expected number of conversions was 10, and the standard deviation of conversions was $\\sqrt{6}$.\n\nFrom the given mean over $n=25$ independent trials,\n\n$$\n\\begin{aligned}\np &= \\dfrac{E[X]}{n} \\\\\n&= \\dfrac{10}{25} \\\\\n&= 0.4\n\\end{aligned}\n$$\n\nWe model the count as $X\\sim\\mathrm{Bin}(25,0.4)$, so $1-p=0.6$ and $\\mathrm{Var}(X)=np(1-p)$.",
+      "solution_overview": "A sales team ran 25 independent product demos. The expected number of conversions was 10, and the standard deviation of conversions was $\\sqrt{6}$.\n\nFrom the given mean over $n=25$ independent trials,\n\n$$\np = \\dfrac{E[X]}{n} = \\dfrac{10}{25} = 0.4\n$$\n\nWe model the count as $X\\sim\\mathrm{Bin}(25,0.4)$, so $1-p=0.6$ and $\\mathrm{Var}(X)=np(1-p)$.",
       "placeholder": false
     },
     {
@@ -413,7 +413,7 @@
       ],
       "difficulty_level": "5/5",
       "sort_order": 88,
-      "solution_overview": "Across 50 independent bus arrivals, on-time and late arrivals are expected in the ratio 4 : 1.\n\nSuccesses and failures are expected in the ratio $4:1$, so\n\n$$\n\\begin{aligned}\np &= \\dfrac{4}{4+1} \\\\\n&= 0.8\n\\end{aligned}\n$$\n\nWe model the count as $X\\sim\\mathrm{Bin}(50,0.8)$.",
+      "solution_overview": "Across 50 independent bus arrivals, on-time and late arrivals are expected in the ratio 4 : 1.\n\nSuccesses and failures are expected in the ratio $4:1$, so\n\n$$\np = \\dfrac{4}{4+1} = 0.8\n$$\n\nWe model the count as $X\\sim\\mathrm{Bin}(50,0.8)$.",
       "placeholder": false
     },
     {
@@ -445,7 +445,7 @@
       ],
       "difficulty_level": "5/5",
       "sort_order": 89,
-      "solution_overview": "In an escape room with 12 independent puzzles, the expected number solved within the time limit is 7.2.\n\nFrom the given mean over $n=12$ independent trials,\n\n$$\n\\begin{aligned}\np &= \\dfrac{E[X]}{n} \\\\\n&= \\dfrac{7.2}{12} \\\\\n&= 0.6\n\\end{aligned}\n$$\n\nWe model the count as $X\\sim\\mathrm{Bin}(12,0.6)$, so $1-p=0.4$ and $\\mathrm{Var}(X)=np(1-p)$.",
+      "solution_overview": "In an escape room with 12 independent puzzles, the expected number solved within the time limit is 7.2.\n\nFrom the given mean over $n=12$ independent trials,\n\n$$\np = \\dfrac{E[X]}{n} = \\dfrac{7.2}{12} = 0.6\n$$\n\nWe model the count as $X\\sim\\mathrm{Bin}(12,0.6)$, so $1-p=0.4$ and $\\mathrm{Var}(X)=np(1-p)$.",
       "placeholder": false
     },
     {
@@ -477,7 +477,7 @@
       ],
       "difficulty_level": "5/5",
       "sort_order": 90,
-      "solution_overview": "A wildlife camera records 48 independent night windows. The expected number of windows with an animal trigger is 12, with variance 9.\n\nFrom the given mean over $n=48$ independent trials,\n\n$$\n\\begin{aligned}\np &= \\dfrac{E[X]}{n} \\\\\n&= \\dfrac{12}{48} \\\\\n&= 0.25\n\\end{aligned}\n$$\n\nWe model the count as $X\\sim\\mathrm{Bin}(48,0.25)$, so $1-p=0.75$ and $\\mathrm{Var}(X)=np(1-p)$.",
+      "solution_overview": "A wildlife camera records 48 independent night windows. The expected number of windows with an animal trigger is 12, with variance 9.\n\nFrom the given mean over $n=48$ independent trials,\n\n$$\np = \\dfrac{E[X]}{n} = \\dfrac{12}{48} = 0.25\n$$\n\nWe model the count as $X\\sim\\mathrm{Bin}(48,0.25)$, so $1-p=0.75$ and $\\mathrm{Var}(X)=np(1-p)$.",
       "placeholder": false
     },
     {
@@ -509,7 +509,7 @@
       ],
       "difficulty_level": "5/5",
       "sort_order": 91,
-      "solution_overview": "A box office handles 32 independent ticket sales. The expected number of sales that include an upsell is 12.8.\n\nFrom the given mean over $n=32$ independent trials,\n\n$$\n\\begin{aligned}\np &= \\dfrac{E[X]}{n} \\\\\n&= \\dfrac{12.8}{32} \\\\\n&= 0.4\n\\end{aligned}\n$$\n\nWe model the count as $X\\sim\\mathrm{Bin}(32,0.4)$, so $1-p=0.6$ and $\\mathrm{Var}(X)=np(1-p)$.",
+      "solution_overview": "A box office handles 32 independent ticket sales. The expected number of sales that include an upsell is 12.8.\n\nFrom the given mean over $n=32$ independent trials,\n\n$$\np = \\dfrac{E[X]}{n} = \\dfrac{12.8}{32} = 0.4\n$$\n\nWe model the count as $X\\sim\\mathrm{Bin}(32,0.4)$, so $1-p=0.6$ and $\\mathrm{Var}(X)=np(1-p)$.",
       "placeholder": false
     },
     {
@@ -541,7 +541,7 @@
       ],
       "difficulty_level": "5/5",
       "sort_order": 92,
-      "solution_overview": "Technicians calibrate 20 independent pipettes. The expected number that pass on the first try is 17, and the variance is 2.55.\n\nFrom the given mean over $n=20$ independent trials,\n\n$$\n\\begin{aligned}\np &= \\dfrac{E[X]}{n} \\\\\n&= \\dfrac{17}{20} \\\\\n&= 0.85\n\\end{aligned}\n$$\n\nWe model the count as $X\\sim\\mathrm{Bin}(20,0.85)$, so $1-p=0.15$ and $\\mathrm{Var}(X)=np(1-p)$.",
+      "solution_overview": "Technicians calibrate 20 independent pipettes. The expected number that pass on the first try is 17, and the variance is 2.55.\n\nFrom the given mean over $n=20$ independent trials,\n\n$$\np = \\dfrac{E[X]}{n} = \\dfrac{17}{20} = 0.85\n$$\n\nWe model the count as $X\\sim\\mathrm{Bin}(20,0.85)$, so $1-p=0.15$ and $\\mathrm{Var}(X)=np(1-p)$.",
       "placeholder": false
     },
     {
@@ -573,7 +573,7 @@
       ],
       "difficulty_level": "4/5",
       "sort_order": 93,
-      "solution_overview": "A quiz has 15 independent multiple-choice items. The expected number correct is 9.\n\nFrom the given mean over $n=15$ independent trials,\n\n$$\n\\begin{aligned}\np &= \\dfrac{E[X]}{n} \\\\\n&= \\dfrac{9}{15} \\\\\n&= 0.6\n\\end{aligned}\n$$\n\nWe model the count as $X\\sim\\mathrm{Bin}(15,0.6)$, so $1-p=0.4$ and $\\mathrm{Var}(X)=np(1-p)$.",
+      "solution_overview": "A quiz has 15 independent multiple-choice items. The expected number correct is 9.\n\nFrom the given mean over $n=15$ independent trials,\n\n$$\np = \\dfrac{E[X]}{n} = \\dfrac{9}{15} = 0.6\n$$\n\nWe model the count as $X\\sim\\mathrm{Bin}(15,0.6)$, so $1-p=0.4$ and $\\mathrm{Var}(X)=np(1-p)$.",
       "placeholder": false
     },
     {
@@ -605,7 +605,7 @@
       ],
       "difficulty_level": "5/5",
       "sort_order": 94,
-      "solution_overview": "Over 70 independent Wi-Fi sessions, successful and dropped connections are expected in the ratio 4 : 1.\n\nSuccesses and failures are expected in the ratio $4:1$, so\n\n$$\n\\begin{aligned}\np &= \\dfrac{4}{4+1} \\\\\n&= 0.8\n\\end{aligned}\n$$\n\nWe model the count as $X\\sim\\mathrm{Bin}(70,0.8)$.",
+      "solution_overview": "Over 70 independent Wi-Fi sessions, successful and dropped connections are expected in the ratio 4 : 1.\n\nSuccesses and failures are expected in the ratio $4:1$, so\n\n$$\np = \\dfrac{4}{4+1} = 0.8\n$$\n\nWe model the count as $X\\sim\\mathrm{Bin}(70,0.8)$.",
       "placeholder": false
     },
     {
@@ -637,7 +637,7 @@
       ],
       "difficulty_level": "5/5",
       "sort_order": 95,
-      "solution_overview": "Volunteers visit 40 independent households. The expected number of pledges is 10, with standard deviation $\\sqrt{7.5}$.\n\nFrom the given mean over $n=40$ independent trials,\n\n$$\n\\begin{aligned}\np &= \\dfrac{E[X]}{n} \\\\\n&= \\dfrac{10}{40} \\\\\n&= 0.25\n\\end{aligned}\n$$\n\nWe model the count as $X\\sim\\mathrm{Bin}(40,0.25)$, so $1-p=0.75$ and $\\mathrm{Var}(X)=np(1-p)$.",
+      "solution_overview": "Volunteers visit 40 independent households. The expected number of pledges is 10, with standard deviation $\\sqrt{7.5}$.\n\nFrom the given mean over $n=40$ independent trials,\n\n$$\np = \\dfrac{E[X]}{n} = \\dfrac{10}{40} = 0.25\n$$\n\nWe model the count as $X\\sim\\mathrm{Bin}(40,0.25)$, so $1-p=0.75$ and $\\mathrm{Var}(X)=np(1-p)$.",
       "placeholder": false
     },
     {
@@ -669,7 +669,7 @@
       ],
       "difficulty_level": "5/5",
       "sort_order": 96,
-      "solution_overview": "A bakery inspects 28 independent loaves. The expected number meeting quality standards is 22.4.\n\nFrom the given mean over $n=28$ independent trials,\n\n$$\n\\begin{aligned}\np &= \\dfrac{E[X]}{n} \\\\\n&= \\dfrac{22.4}{28} \\\\\n&= 0.8\n\\end{aligned}\n$$\n\nWe model the count as $X\\sim\\mathrm{Bin}(28,0.8)$, so $1-p=0.2$ and $\\mathrm{Var}(X)=np(1-p)$.",
+      "solution_overview": "A bakery inspects 28 independent loaves. The expected number meeting quality standards is 22.4.\n\nFrom the given mean over $n=28$ independent trials,\n\n$$\np = \\dfrac{E[X]}{n} = \\dfrac{22.4}{28} = 0.8\n$$\n\nWe model the count as $X\\sim\\mathrm{Bin}(28,0.8)$, so $1-p=0.2$ and $\\mathrm{Var}(X)=np(1-p)$.",
       "placeholder": false
     },
     {
@@ -701,7 +701,7 @@
       ],
       "difficulty_level": "4/5",
       "sort_order": 97,
-      "solution_overview": "In a meet with 24 independent starts, the expected number of legal starts is 19.2, and the variance is 3.84.\n\nFrom the given mean over $n=24$ independent trials,\n\n$$\n\\begin{aligned}\np &= \\dfrac{E[X]}{n} \\\\\n&= \\dfrac{19.2}{24} \\\\\n&= 0.8\n\\end{aligned}\n$$\n\nWe model the count as $X\\sim\\mathrm{Bin}(24,0.8)$, so $1-p=0.2$ and $\\mathrm{Var}(X)=np(1-p)$.",
+      "solution_overview": "In a meet with 24 independent starts, the expected number of legal starts is 19.2, and the variance is 3.84.\n\nFrom the given mean over $n=24$ independent trials,\n\n$$\np = \\dfrac{E[X]}{n} = \\dfrac{19.2}{24} = 0.8\n$$\n\nWe model the count as $X\\sim\\mathrm{Bin}(24,0.8)$, so $1-p=0.2$ and $\\mathrm{Var}(X)=np(1-p)$.",
       "placeholder": false
     },
     {
@@ -733,7 +733,7 @@
       ],
       "difficulty_level": "4/5",
       "sort_order": 98,
-      "solution_overview": "Of 36 independent reserve holds, the expected number picked up within 48 hours is 27.\n\nFrom the given mean over $n=36$ independent trials,\n\n$$\n\\begin{aligned}\np &= \\dfrac{E[X]}{n} \\\\\n&= \\dfrac{27}{36} \\\\\n&= 0.75\n\\end{aligned}\n$$\n\nWe model the count as $X\\sim\\mathrm{Bin}(36,0.75)$, so $1-p=0.25$ and $\\mathrm{Var}(X)=np(1-p)$.",
+      "solution_overview": "Of 36 independent reserve holds, the expected number picked up within 48 hours is 27.\n\nFrom the given mean over $n=36$ independent trials,\n\n$$\np = \\dfrac{E[X]}{n} = \\dfrac{27}{36} = 0.75\n$$\n\nWe model the count as $X\\sim\\mathrm{Bin}(36,0.75)$, so $1-p=0.25$ and $\\mathrm{Var}(X)=np(1-p)$.",
       "placeholder": false
     },
     {
@@ -765,7 +765,7 @@
       ],
       "difficulty_level": "5/5",
       "sort_order": 99,
-      "solution_overview": "A campaign sends 100 independent push notifications. Opens and ignores are expected in the ratio 3 : 7.\n\nSuccesses and failures are expected in the ratio $3:7$, so\n\n$$\n\\begin{aligned}\np &= \\dfrac{3}{3+7} \\\\\n&= 0.3\n\\end{aligned}\n$$\n\nWe model the count as $X\\sim\\mathrm{Bin}(100,0.3)$.",
+      "solution_overview": "A campaign sends 100 independent push notifications. Opens and ignores are expected in the ratio 3 : 7.\n\nSuccesses and failures are expected in the ratio $3:7$, so\n\n$$\np = \\dfrac{3}{3+7} = 0.3\n$$\n\nWe model the count as $X\\sim\\mathrm{Bin}(100,0.3)$.",
       "placeholder": false
     },
     {
@@ -797,7 +797,7 @@
       ],
       "difficulty_level": "5/5",
       "sort_order": 100,
-      "solution_overview": "A robot attempts 18 independent room cleanings. The expected number completed without human help is 12.6, with variance 3.78.\n\nFrom the given mean over $n=18$ independent trials,\n\n$$\n\\begin{aligned}\np &= \\dfrac{E[X]}{n} \\\\\n&= \\dfrac{12.6}{18} \\\\\n&= 0.7\n\\end{aligned}\n$$\n\nWe model the count as $X\\sim\\mathrm{Bin}(18,0.7)$, so $1-p=0.3$ and $\\mathrm{Var}(X)=np(1-p)$.",
+      "solution_overview": "A robot attempts 18 independent room cleanings. The expected number completed without human help is 12.6, with variance 3.78.\n\nFrom the given mean over $n=18$ independent trials,\n\n$$\np = \\dfrac{E[X]}{n} = \\dfrac{12.6}{18} = 0.7\n$$\n\nWe model the count as $X\\sim\\mathrm{Bin}(18,0.7)$, so $1-p=0.3$ and $\\mathrm{Var}(X)=np(1-p)$.",
       "placeholder": false
     },
     {
@@ -829,7 +829,7 @@
       ],
       "difficulty_level": "4/5",
       "sort_order": 101,
-      "solution_overview": "A tournament uses 20 independent coin tosses to assign sides. The expected number of heads is 11.\n\nFrom the given mean over $n=20$ independent trials,\n\n$$\n\\begin{aligned}\np &= \\dfrac{E[X]}{n} \\\\\n&= \\dfrac{11}{20} \\\\\n&= 0.55\n\\end{aligned}\n$$\n\nWe model the count as $X\\sim\\mathrm{Bin}(20,0.55)$, so $1-p=0.45$ and $\\mathrm{Var}(X)=np(1-p)$.",
+      "solution_overview": "A tournament uses 20 independent coin tosses to assign sides. The expected number of heads is 11.\n\nFrom the given mean over $n=20$ independent trials,\n\n$$\np = \\dfrac{E[X]}{n} = \\dfrac{11}{20} = 0.55\n$$\n\nWe model the count as $X\\sim\\mathrm{Bin}(20,0.55)$, so $1-p=0.45$ and $\\mathrm{Var}(X)=np(1-p)$.",
       "placeholder": false
     },
     {
@@ -861,7 +861,7 @@
       ],
       "difficulty_level": "5/5",
       "sort_order": 102,
-      "solution_overview": "Sensors check 45 independent field plots. The expected number of drought alerts is 9.\n\nFrom the given mean over $n=45$ independent trials,\n\n$$\n\\begin{aligned}\np &= \\dfrac{E[X]}{n} \\\\\n&= \\dfrac{9}{45} \\\\\n&= 0.2\n\\end{aligned}\n$$\n\nWe model the count as $X\\sim\\mathrm{Bin}(45,0.2)$, so $1-p=0.8$ and $\\mathrm{Var}(X)=np(1-p)$.",
+      "solution_overview": "Sensors check 45 independent field plots. The expected number of drought alerts is 9.\n\nFrom the given mean over $n=45$ independent trials,\n\n$$\np = \\dfrac{E[X]}{n} = \\dfrac{9}{45} = 0.2\n$$\n\nWe model the count as $X\\sim\\mathrm{Bin}(45,0.2)$, so $1-p=0.8$ and $\\mathrm{Var}(X)=np(1-p)$.",
       "placeholder": false
     },
     {
@@ -893,7 +893,7 @@
       ],
       "difficulty_level": "5/5",
       "sort_order": 103,
-      "solution_overview": "At a cinema, 60 independent ticket purchases are tracked. The expected number that scan a loyalty card is 36, with SD $\\sqrt{14.4}$.\n\nFrom the given mean over $n=60$ independent trials,\n\n$$\n\\begin{aligned}\np &= \\dfrac{E[X]}{n} \\\\\n&= \\dfrac{36}{60} \\\\\n&= 0.6\n\\end{aligned}\n$$\n\nWe model the count as $X\\sim\\mathrm{Bin}(60,0.6)$, so $1-p=0.4$ and $\\mathrm{Var}(X)=np(1-p)$.",
+      "solution_overview": "At a cinema, 60 independent ticket purchases are tracked. The expected number that scan a loyalty card is 36, with SD $\\sqrt{14.4}$.\n\nFrom the given mean over $n=60$ independent trials,\n\n$$\np = \\dfrac{E[X]}{n} = \\dfrac{36}{60} = 0.6\n$$\n\nWe model the count as $X\\sim\\mathrm{Bin}(60,0.6)$, so $1-p=0.4$ and $\\mathrm{Var}(X)=np(1-p)$.",
       "placeholder": false
     },
     {
@@ -925,7 +925,7 @@
       ],
       "difficulty_level": "5/5",
       "sort_order": 104,
-      "solution_overview": "A lift processes 80 independent riders. Valid and invalid passes are expected in the ratio 9 : 1.\n\nSuccesses and failures are expected in the ratio $9:1$, so\n\n$$\n\\begin{aligned}\np &= \\dfrac{9}{9+1} \\\\\n&= 0.9\n\\end{aligned}\n$$\n\nWe model the count as $X\\sim\\mathrm{Bin}(80,0.9)$.",
+      "solution_overview": "A lift processes 80 independent riders. Valid and invalid passes are expected in the ratio 9 : 1.\n\nSuccesses and failures are expected in the ratio $9:1$, so\n\n$$\np = \\dfrac{9}{9+1} = 0.9\n$$\n\nWe model the count as $X\\sim\\mathrm{Bin}(80,0.9)$.",
       "placeholder": false
     },
     {
@@ -957,7 +957,7 @@
       ],
       "difficulty_level": "5/5",
       "sort_order": 105,
-      "solution_overview": "An ad plays in 50 independent episodes. The expected number of click-throughs is 5.\n\nFrom the given mean over $n=50$ independent trials,\n\n$$\n\\begin{aligned}\np &= \\dfrac{E[X]}{n} \\\\\n&= \\dfrac{5}{50} \\\\\n&= 0.1\n\\end{aligned}\n$$\n\nWe model the count as $X\\sim\\mathrm{Bin}(50,0.1)$, so $1-p=0.9$ and $\\mathrm{Var}(X)=np(1-p)$.",
+      "solution_overview": "An ad plays in 50 independent episodes. The expected number of click-throughs is 5.\n\nFrom the given mean over $n=50$ independent trials,\n\n$$\np = \\dfrac{E[X]}{n} = \\dfrac{5}{50} = 0.1\n$$\n\nWe model the count as $X\\sim\\mathrm{Bin}(50,0.1)$, so $1-p=0.9$ and $\\mathrm{Var}(X)=np(1-p)$.",
       "placeholder": false
     },
     {
@@ -989,7 +989,7 @@
       ],
       "difficulty_level": "4/5",
       "sort_order": 106,
-      "solution_overview": "A computer lab runs 22 independent print jobs. The expected number completed without error is 17.6, and the variance is 3.52.\n\nFrom the given mean over $n=22$ independent trials,\n\n$$\n\\begin{aligned}\np &= \\dfrac{E[X]}{n} \\\\\n&= \\dfrac{17.6}{22} \\\\\n&= 0.8\n\\end{aligned}\n$$\n\nWe model the count as $X\\sim\\mathrm{Bin}(22,0.8)$, so $1-p=0.2$ and $\\mathrm{Var}(X)=np(1-p)$.",
+      "solution_overview": "A computer lab runs 22 independent print jobs. The expected number completed without error is 17.6, and the variance is 3.52.\n\nFrom the given mean over $n=22$ independent trials,\n\n$$\np = \\dfrac{E[X]}{n} = \\dfrac{17.6}{22} = 0.8\n$$\n\nWe model the count as $X\\sim\\mathrm{Bin}(22,0.8)$, so $1-p=0.2$ and $\\mathrm{Var}(X)=np(1-p)$.",
       "placeholder": false
     },
     {
@@ -1021,7 +1021,7 @@
       ],
       "difficulty_level": "5/5",
       "sort_order": 107,
-      "solution_overview": "In a campaign of 30 independent attack rolls, the expected number of critical hits is 6.\n\nFrom the given mean over $n=30$ independent trials,\n\n$$\n\\begin{aligned}\np &= \\dfrac{E[X]}{n} \\\\\n&= \\dfrac{6}{30} \\\\\n&= 0.2\n\\end{aligned}\n$$\n\nWe model the count as $X\\sim\\mathrm{Bin}(30,0.2)$, so $1-p=0.8$ and $\\mathrm{Var}(X)=np(1-p)$.",
+      "solution_overview": "In a campaign of 30 independent attack rolls, the expected number of critical hits is 6.\n\nFrom the given mean over $n=30$ independent trials,\n\n$$\np = \\dfrac{E[X]}{n} = \\dfrac{6}{30} = 0.2\n$$\n\nWe model the count as $X\\sim\\mathrm{Bin}(30,0.2)$, so $1-p=0.8$ and $\\mathrm{Var}(X)=np(1-p)$.",
       "placeholder": false
     },
     {
@@ -1053,7 +1053,7 @@
       ],
       "difficulty_level": "4/5",
       "sort_order": 108,
-      "solution_overview": "Harbor staff run 14 independent foghorn tests. The expected number of clear audible tests is 11.2.\n\nFrom the given mean over $n=14$ independent trials,\n\n$$\n\\begin{aligned}\np &= \\dfrac{E[X]}{n} \\\\\n&= \\dfrac{11.2}{14} \\\\\n&= 0.8\n\\end{aligned}\n$$\n\nWe model the count as $X\\sim\\mathrm{Bin}(14,0.8)$, so $1-p=0.2$ and $\\mathrm{Var}(X)=np(1-p)$.",
+      "solution_overview": "Harbor staff run 14 independent foghorn tests. The expected number of clear audible tests is 11.2.\n\nFrom the given mean over $n=14$ independent trials,\n\n$$\np = \\dfrac{E[X]}{n} = \\dfrac{11.2}{14} = 0.8\n$$\n\nWe model the count as $X\\sim\\mathrm{Bin}(14,0.8)$, so $1-p=0.2$ and $\\mathrm{Var}(X)=np(1-p)$.",
       "placeholder": false
     },
     {
@@ -1085,7 +1085,7 @@
       ],
       "difficulty_level": "5/5",
       "sort_order": 109,
-      "solution_overview": "A clinic books 55 independent donation appointments. Shows and no-shows are expected in the ratio 4 : 1.\n\nSuccesses and failures are expected in the ratio $4:1$, so\n\n$$\n\\begin{aligned}\np &= \\dfrac{4}{4+1} \\\\\n&= 0.8\n\\end{aligned}\n$$\n\nWe model the count as $X\\sim\\mathrm{Bin}(55,0.8)$.",
+      "solution_overview": "A clinic books 55 independent donation appointments. Shows and no-shows are expected in the ratio 4 : 1.\n\nSuccesses and failures are expected in the ratio $4:1$, so\n\n$$\np = \\dfrac{4}{4+1} = 0.8\n$$\n\nWe model the count as $X\\sim\\mathrm{Bin}(55,0.8)$.",
       "placeholder": false
     },
     {
@@ -1117,7 +1117,7 @@
       ],
       "difficulty_level": "5/5",
       "sort_order": 110,
-      "solution_overview": "A drone completes 16 independent drops. The expected number landing in the target zone is 12, with variance 3.\n\nFrom the given mean over $n=16$ independent trials,\n\n$$\n\\begin{aligned}\np &= \\dfrac{E[X]}{n} \\\\\n&= \\dfrac{12}{16} \\\\\n&= 0.75\n\\end{aligned}\n$$\n\nWe model the count as $X\\sim\\mathrm{Bin}(16,0.75)$, so $1-p=0.25$ and $\\mathrm{Var}(X)=np(1-p)$.",
+      "solution_overview": "A drone completes 16 independent drops. The expected number landing in the target zone is 12, with variance 3.\n\nFrom the given mean over $n=16$ independent trials,\n\n$$\np = \\dfrac{E[X]}{n} = \\dfrac{12}{16} = 0.75\n$$\n\nWe model the count as $X\\sim\\mathrm{Bin}(16,0.75)$, so $1-p=0.25$ and $\\mathrm{Var}(X)=np(1-p)$.",
       "placeholder": false
     },
     {
@@ -1149,7 +1149,7 @@
       ],
       "difficulty_level": "5/5",
       "sort_order": 111,
-      "solution_overview": "At an entrance gate, 90 independent wristband scans are logged. The expected number of successful scans is 81, with SD $\\sqrt{8.1}$.\n\nFrom the given mean over $n=90$ independent trials,\n\n$$\n\\begin{aligned}\np &= \\dfrac{E[X]}{n} \\\\\n&= \\dfrac{81}{90} \\\\\n&= 0.9\n\\end{aligned}\n$$\n\nWe model the count as $X\\sim\\mathrm{Bin}(90,0.9)$, so $1-p=0.1$ and $\\mathrm{Var}(X)=np(1-p)$.",
+      "solution_overview": "At an entrance gate, 90 independent wristband scans are logged. The expected number of successful scans is 81, with SD $\\sqrt{8.1}$.\n\nFrom the given mean over $n=90$ independent trials,\n\n$$\np = \\dfrac{E[X]}{n} = \\dfrac{81}{90} = 0.9\n$$\n\nWe model the count as $X\\sim\\mathrm{Bin}(90,0.9)$, so $1-p=0.1$ and $\\mathrm{Var}(X)=np(1-p)$.",
       "placeholder": false
     },
     {
@@ -1181,7 +1181,7 @@
       ],
       "difficulty_level": "4/5",
       "sort_order": 112,
-      "solution_overview": "A tutor checks 18 independent homework sets. The expected number completed before the session is 10.8.\n\nFrom the given mean over $n=18$ independent trials,\n\n$$\n\\begin{aligned}\np &= \\dfrac{E[X]}{n} \\\\\n&= \\dfrac{10.8}{18} \\\\\n&= 0.6\n\\end{aligned}\n$$\n\nWe model the count as $X\\sim\\mathrm{Bin}(18,0.6)$, so $1-p=0.4$ and $\\mathrm{Var}(X)=np(1-p)$.",
+      "solution_overview": "A tutor checks 18 independent homework sets. The expected number completed before the session is 10.8.\n\nFrom the given mean over $n=18$ independent trials,\n\n$$\np = \\dfrac{E[X]}{n} = \\dfrac{10.8}{18} = 0.6\n$$\n\nWe model the count as $X\\sim\\mathrm{Bin}(18,0.6)$, so $1-p=0.4$ and $\\mathrm{Var}(X)=np(1-p)$.",
       "placeholder": false
     },
     {
@@ -1213,7 +1213,7 @@
       ],
       "difficulty_level": "5/5",
       "sort_order": 113,
-      "solution_overview": "A parlor runs 26 independent self-clean cycles. The expected number that finish without a fault alert is 20.8.\n\nFrom the given mean over $n=26$ independent trials,\n\n$$\n\\begin{aligned}\np &= \\dfrac{E[X]}{n} \\\\\n&= \\dfrac{20.8}{26} \\\\\n&= 0.8\n\\end{aligned}\n$$\n\nWe model the count as $X\\sim\\mathrm{Bin}(26,0.8)$, so $1-p=0.2$ and $\\mathrm{Var}(X)=np(1-p)$.",
+      "solution_overview": "A parlor runs 26 independent self-clean cycles. The expected number that finish without a fault alert is 20.8.\n\nFrom the given mean over $n=26$ independent trials,\n\n$$\np = \\dfrac{E[X]}{n} = \\dfrac{20.8}{26} = 0.8\n$$\n\nWe model the count as $X\\sim\\mathrm{Bin}(26,0.8)$, so $1-p=0.2$ and $\\mathrm{Var}(X)=np(1-p)$.",
       "placeholder": false
     },
     {
@@ -1245,7 +1245,7 @@
       ],
       "difficulty_level": "5/5",
       "sort_order": 114,
-      "solution_overview": "A dig team examines 64 independent soil squares. Finds and empty squares are expected in the ratio 1 : 3.\n\nSuccesses and failures are expected in the ratio $1:3$, so\n\n$$\n\\begin{aligned}\np &= \\dfrac{1}{1+3} \\\\\n&= 0.25\n\\end{aligned}\n$$\n\nWe model the count as $X\\sim\\mathrm{Bin}(64,0.25)$.",
+      "solution_overview": "A dig team examines 64 independent soil squares. Finds and empty squares are expected in the ratio 1 : 3.\n\nSuccesses and failures are expected in the ratio $1:3$, so\n\n$$\np = \\dfrac{1}{1+3} = 0.25\n$$\n\nWe model the count as $X\\sim\\mathrm{Bin}(64,0.25)$.",
       "placeholder": false
     },
     {
@@ -1277,7 +1277,7 @@
       ],
       "difficulty_level": "5/5",
       "sort_order": 115,
-      "solution_overview": "A ground station sends 40 independent packets. The expected number of acknowledgements received is 34, and the variance is 5.1.\n\nFrom the given mean over $n=40$ independent trials,\n\n$$\n\\begin{aligned}\np &= \\dfrac{E[X]}{n} \\\\\n&= \\dfrac{34}{40} \\\\\n&= 0.85\n\\end{aligned}\n$$\n\nWe model the count as $X\\sim\\mathrm{Bin}(40,0.85)$, so $1-p=0.15$ and $\\mathrm{Var}(X)=np(1-p)$.",
+      "solution_overview": "A ground station sends 40 independent packets. The expected number of acknowledgements received is 34, and the variance is 5.1.\n\nFrom the given mean over $n=40$ independent trials,\n\n$$\np = \\dfrac{E[X]}{n} = \\dfrac{34}{40} = 0.85\n$$\n\nWe model the count as $X\\sim\\mathrm{Bin}(40,0.85)$, so $1-p=0.15$ and $\\mathrm{Var}(X)=np(1-p)$.",
       "placeholder": false
     }
   ]
