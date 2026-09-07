@@ -505,22 +505,15 @@ function MatchingSubjectPage() {
   return (
     <div className="min-h-screen bg-background font-sans text-foreground antialiased">
       <SiteHeader
+        compact
         maxWidthClassName="max-w-7xl"
         actions={
-          <div className="flex items-center gap-2">
-            <Link
-              to="/matching"
-              className="rounded-md border border-border bg-card px-3 py-1.5 text-xs font-semibold text-foreground transition-all hover:bg-secondary"
-            >
-              ← Subjects
-            </Link>
-            <Link
-              to="/dashboard"
-              className="rounded-md border border-border bg-card px-3 py-1.5 text-xs font-semibold text-foreground transition-all hover:bg-secondary"
-            >
-              Dashboard
-            </Link>
-          </div>
+          <Link
+            to="/matching"
+            className="rounded-md border border-border bg-card px-3 py-1.5 text-xs font-semibold text-foreground transition-all hover:bg-secondary"
+          >
+            ← Subjects
+          </Link>
         }
       />
 

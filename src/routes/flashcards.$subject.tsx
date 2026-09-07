@@ -455,6 +455,7 @@ function FlashcardSubjectPage() {
   return (
     <div className="flashcards-page min-h-screen overflow-x-clip bg-background font-sans text-foreground antialiased">
       <SiteHeader
+        compact
         maxWidthClassName="max-w-7xl"
         actions={
           <Link
