@@ -5529,11 +5529,11 @@
       true
     ],
     "tactical_explanations": [
-      "TRUE — Check the sentence against the core concept named in the stem, including every scope word.\n\nSmall uses combined staff and turnover criteria.\n\nThe statement is true.",
-      "TRUE — Check the sentence against the core concept named in the stem, including every scope word.\n\nIncomplete data prevents reliable sme verification.\n\nThe statement is true.",
-      "TRUE — Check the sentence against the core concept named in the stem, including every scope word.\n\nSme-tied support excludes firms above medium thresholds.\n\nThe statement is true.",
-      "TRUE — Check the sentence against the core concept named in the stem, including every scope word.\n\nMedium uses combined staff and financial criteria.\n\nThe statement is true.",
-      "TRUE — Check the sentence against the core concept named in the stem, including every scope word.\n\n3,000 employees exceeds all SME staff ceilings.\n\nThe statement is true."
+      "TRUE — Small uses combined staff and turnover criteria.\n\nEU small enterprises have fewer than 50 employees and must also satisfy turnover ≤ €10m or balance sheet ≤ €10m. Headcount under fifty does not preserve small status once the financial cap is exceeded.\n\nThe statement is true.\n",
+      "TRUE — EU small enterprises employ fewer than fifty people and must also meet turnover ≤ €10m or balance sheet ≤ €10m. SMEs (including micro) are the vast majority of EU firms.\n\nIncomplete data prevents reliable sme verification.\n\nUnder that classification the assertion describes the situation correctly.\n\nThe statement is true.\n",
+      "TRUE — Sme-tied support excludes firms above medium thresholds.\n\nEU medium enterprises have fewer than 250 employees and must also satisfy turnover ≤ €50m or balance sheet ≤ €43m. Both the staff ceiling and one financial alternative belong to the definition.\n\nThe statement is true.\n",
+      "TRUE — Medium uses combined staff and financial criteria.\n\nEU medium enterprises have fewer than 250 employees and must also satisfy turnover ≤ €50m or balance sheet ≤ €43m. Both the staff ceiling and one financial alternative belong to the definition.\n\nThe statement is true.\n",
+      "TRUE — EU MSME size classes combine a staff ceiling with a financial alternative (turnover or balance sheet). Staff alone never completes the test.\n\n3,000 employees exceeds all SME staff ceilings.\n\nThe sentence therefore reports the concept accurately for this item.\n\nThe statement is true.\n"
     ],
     "difficulty_level": "2/5",
     "tier": "full"
@@ -5558,11 +5558,11 @@
       false
     ],
     "tactical_explanations": [
-      "TRUE — Check the sentence against the core concept named in the stem, including every scope word.\n\nSize classification affects applicable accounting rules.\n\nThe statement is true.",
-      "TRUE — Check the sentence against the core concept named in the stem, including every scope word.\n\nMicro, small, and medium each have separate threshold rows.\n\nThe statement is true.",
-      "FALSE — Check that the comparison runs in the stated direction and attaches the feature to the correct member of the pair.\n\n€43m is the medium balance sheet cap in the EU table.\n\nThe statement is false. A student who matched the topic to \"The EU medium cap for balance sheet is €50m rather than €43m\" without checking the rest of the sentence would mark the statement true.\n",
-      "FALSE — Check the sentence against the core concept named in the stem, including every scope word.\n\n€10m is the small turnover cap, not the medium cap.\n\nThe statement is false. A student who matched the topic to \"Labeling €10m as the medium turnover ceiling misstates the EU threshold for that tier\" without checking the rest of the sentence would mark the statement true.\n",
-      "FALSE — Check the sentence against the core concept named in the stem, including every scope word.\n\n€2m is the micro turnover cap, not the small cap.\n\nThe statement is false. A student who matched the topic to \"Calling €2m the small turnover cap incorrectly swaps micro and small financial limits\" without checking the rest of the sentence would mark the statement true.\n"
+      "TRUE — Size classification affects applicable accounting rules.\n\nUnder the EU micro test the firm must have fewer than 10 employees and also stay within a financial alternative: turnover ≤ €2m or balance sheet total ≤ €2m. Meeting the staff ceiling alone is not enough if the financial limb is breached.\n\nThe statement is true.\n",
+      "TRUE — EU small enterprises employ fewer than fifty people and must also meet turnover ≤ €10m or balance sheet ≤ €10m. SMEs (including micro) are the vast majority of EU firms.\n\nMicro, small, and medium each have separate threshold rows.\n\nNothing in the keyed reading contradicts the chapter framing used here, so the claim holds.\n\nThe statement is true.\n",
+      "FALSE — €43m is the medium balance sheet cap in the EU table.\n\nEU medium enterprises have fewer than 250 employees and must also satisfy turnover ≤ €50m or balance sheet ≤ €43m. Both the staff ceiling and one financial alternative belong to the definition.\n\nThe statement is false.\n",
+      "FALSE — €10m is the small turnover cap, not the medium cap.\n\nEU medium enterprises have fewer than 250 employees and must also satisfy turnover ≤ €50m or balance sheet ≤ €43m. Both the staff ceiling and one financial alternative belong to the definition.\n\nThe statement is false.\n",
+      "FALSE — €2m is the micro turnover cap, not the small cap.\n\nUnder the EU micro test the firm must have fewer than 10 employees and also stay within a financial alternative: turnover ≤ €2m or balance sheet total ≤ €2m. Meeting the staff ceiling alone is not enough if the financial limb is breached.\n\nThe statement is false.\n"
     ],
     "difficulty_level": "2/5",
     "tier": "full"
@@ -5587,11 +5587,11 @@
       true
     ],
     "tactical_explanations": [
-      "FALSE — Map the scenario onto the textbook category first, then test whether the sentence describes that category accurately.\n\nA small IT-support venture illustrate micro-scale operations, not large enterprise status.\n\nThe statement is false. A student who matched the topic to \"A small IT-support venture count as a large enterprise because their bakery supplies many…\" without checking the rest of the sentence would mark the statement true.\n",
-      "TRUE — Check the sentence against the core concept named in the stem, including every scope word.\n\n€52m exceeds the €50m medium turnover cap.\n\nThe statement is true.",
-      "FALSE — Map the scenario onto the textbook category first, then test whether the sentence describes that category accurately.\n\nThe statistic refers to business numbers, not employment share.\n\nThe statement is false. A student who matched the topic to \"About ninety-nine percent of EU employees work in SMEs because ninety-nine percent of firms…\" without checking the rest of the sentence would mark the statement true.\n",
-      "FALSE — Map the scenario onto the textbook category first, then test whether the sentence describes that category accurately.\n\nA components manufacturer's ~10,000 staff exceeds medium limits.\n\nThe statement is false. A student who matched the topic to \"A components manufacturer counts as a medium enterprise because its Austrian headquarters defines EU…\" without checking the rest of the sentence would mark the statement true.\n",
-      "TRUE — Check the sentence against the core concept named in the stem, including every scope word.\n\n€55m exceeds the €50m medium turnover cap.\n\nThe statement is true."
+      "FALSE — A small IT-support venture illustrate micro-scale operations, not large enterprise status.\n\nEU small enterprises have fewer than 50 employees and must also satisfy turnover ≤ €10m or balance sheet ≤ €10m. Headcount under fifty does not preserve small status once the financial cap is exceeded.\n\nThe statement is false.\n",
+      "TRUE — €52m exceeds the €50m medium turnover cap.\n\nEU medium enterprises have fewer than 250 employees and must also satisfy turnover ≤ €50m or balance sheet ≤ €43m. Both the staff ceiling and one financial alternative belong to the definition.\n\nThe statement is true.\n",
+      "FALSE — The statistic refers to business numbers, not employment share.\n\nRoughly ninety-nine percent of businesses registered in the EU fall inside the SME size classes — micro, small, or medium.\n\nThe statement is false.\n",
+      "FALSE — A components manufacturer's ~10,000 staff exceeds medium limits.\n\nEU medium enterprises have fewer than 250 employees and must also satisfy turnover ≤ €50m or balance sheet ≤ €43m. Both the staff ceiling and one financial alternative belong to the definition.\n\nThe statement is false.\n",
+      "TRUE — €55m exceeds the €50m medium turnover cap.\n\nEU medium enterprises have fewer than 250 employees and must also satisfy turnover ≤ €50m or balance sheet ≤ €43m. Both the staff ceiling and one financial alternative belong to the definition.\n\nThe statement is true.\n"
     ],
     "difficulty_level": "2/5",
     "tier": "full"
@@ -5616,11 +5616,11 @@
       true
     ],
     "tactical_explanations": [
-      "TRUE — Check the sentence against the core concept named in the stem, including every scope word.\n\n200 is below the 250-person medium limit.\n\nThe statement is true.",
-      "TRUE — Check the sentence against the core concept named in the stem, including every scope word.\n\nMicro grants use standard eu micro criteria.\n\nThe statement is true.",
-      "TRUE — Check the sentence against the core concept named in the stem, including every scope word.\n\nLenders check official sme thresholds for guarantee schemes.\n\nThe statement is true.",
-      "TRUE — Check the sentence against the core concept named in the stem, including every scope word.\n\n240 is below the 250-person medium limit.\n\nThe statement is true.",
-      "TRUE — Check the sentence against the core concept named in the stem, including every scope word.\n\n180 staff and €45m turnover fit medium ceilings.\n\nThe statement is true."
+      "TRUE — 200 is below the 250-person medium limit.\n\nEU medium enterprises have fewer than 250 employees and must also satisfy turnover ≤ €50m or balance sheet ≤ €43m. Both the staff ceiling and one financial alternative belong to the definition.\n\nThe statement is true.\n",
+      "TRUE — Micro grants use standard eu micro criteria.\n\nUnder the EU micro test the firm must have fewer than 10 employees and also stay within a financial alternative: turnover ≤ €2m or balance sheet total ≤ €2m. Meeting the staff ceiling alone is not enough if the financial limb is breached.\n\nThe statement is true.\n",
+      "TRUE — EU small enterprises employ fewer than fifty people and must also meet turnover ≤ €10m or balance sheet ≤ €10m. SMEs (including micro) are the vast majority of EU firms.\n\nLenders check official sme thresholds for guarantee schemes.\n\nUnder that classification the assertion describes the situation correctly.\n\nThe statement is true.\n",
+      "TRUE — 240 is below the 250-person medium limit.\n\nEU medium enterprises have fewer than 250 employees and must also satisfy turnover ≤ €50m or balance sheet ≤ €43m. Both the staff ceiling and one financial alternative belong to the definition.\n\nThe statement is true.\n",
+      "TRUE — 180 staff and €45m turnover fit medium ceilings.\n\nEU medium enterprises have fewer than 250 employees and must also satisfy turnover ≤ €50m or balance sheet ≤ €43m. Both the staff ceiling and one financial alternative belong to the definition.\n\nThe statement is true.\n"
     ],
     "difficulty_level": "2/5",
     "tier": "full"
@@ -5645,11 +5645,11 @@
       false
     ],
     "tactical_explanations": [
-      "TRUE — Check the sentence against the core concept named in the stem, including every scope word.\n\n€49m meets the medium turnover threshold.\n\nThe statement is true.",
-      "FALSE — Check the sentence against the core concept named in the stem, including every scope word.\n\nMicro firms are included in sme counts.\n\nThe statement is false. A student who matched the topic to \"Micro enterprises are omitted from the ninety-nine percent SME business count\" without checking the rest of the sentence would mark the statement true.\n",
-      "TRUE — Check the sentence against the core concept named in the stem, including every scope word.\n\n€9.5m meets the small turnover threshold.\n\nThe statement is true.",
-      "TRUE — Check the sentence against the core concept named in the stem, including every scope word.\n\nHeadcount alone does not confirm micro status.\n\nThe statement is true.",
-      "FALSE — Check the sentence against the core concept named in the stem, including every scope word.\n\nTen staff fails micro but further tiers depend on additional tests.\n\nThe statement is false. A student who matched the topic to \"A firm becomes large immediately upon employing a tenth worker\" without checking the rest of the sentence would mark the statement true.\n"
+      "TRUE — €49m meets the medium turnover threshold.\n\nEU medium enterprises have fewer than 250 employees and must also satisfy turnover ≤ €50m or balance sheet ≤ €43m. Both the staff ceiling and one financial alternative belong to the definition.\n\nThe statement is true.\n",
+      "FALSE — Micro firms are included in sme counts.\n\nUnder the EU micro test the firm must have fewer than 10 employees and also stay within a financial alternative: turnover ≤ €2m or balance sheet total ≤ €2m. Meeting the staff ceiling alone is not enough if the financial limb is breached.\n\nRoughly ninety-nine percent of businesses registered in the EU fall inside the SME size classes — micro, small, or medium.\n\nThe statement is false.\n",
+      "TRUE — €9.5m meets the small turnover threshold.\n\nEU small enterprises have fewer than 50 employees and must also satisfy turnover ≤ €10m or balance sheet ≤ €10m. Headcount under fifty does not preserve small status once the financial cap is exceeded.\n\nThe statement is true.\n",
+      "TRUE — Headcount alone does not confirm micro status.\n\nUnder the EU micro test the firm must have fewer than 10 employees and also stay within a financial alternative: turnover ≤ €2m or balance sheet total ≤ €2m. Meeting the staff ceiling alone is not enough if the financial limb is breached.\n\nThe statement is true.\n",
+      "FALSE — EU MSME size classes combine a staff ceiling with a financial alternative (turnover or balance sheet). Staff alone never completes the test.\n\nTen staff fails micro but further tiers depend on additional tests.\n\nIn the case setting — a retailer that has thirty staff and €9.9m turnover — the sentence mislabels the category or overreaches.\n\nThe mislabelled category or reversed comparison is enough to reject the claim.\n\nThe statement is false.\n"
     ],
     "difficulty_level": "2/5",
     "tier": "full"
@@ -5674,11 +5674,11 @@
       false
     ],
     "tactical_explanations": [
-      "TRUE — Check the sentence against the core concept named in the stem, including every scope word.\n\nHeadcount alone does not confirm micro status.\n\nThe statement is true.",
-      "FALSE — Check the sentence against the core concept named in the stem, including every scope word.\n\nTurnover above €2m removes micro status but small or medium may apply.\n\nThe statement is false. A student who matched the topic to \"A firm becomes large immediately upon reaching €2.1m turnover\" without checking the rest of the sentence would mark the statement true.\n",
-      "TRUE — Check the sentence against the core concept named in the stem, including every scope word.\n\n€1.5m meets the micro turnover threshold.\n\nThe statement is true.",
-      "FALSE — Map the scenario onto the textbook category first, then test whether the sentence describes that category accurately.\n\nSmall requires turnover at or below €10m as well.\n\nThe statement is false. A student who matched the topic to \"One criterion alone is enough for small status when staff are forty-five\" without checking the rest of the sentence would mark the statement true.\n",
-      "FALSE — Map the scenario onto the textbook category first, then test whether the sentence describes that category accurately.\n\nMedium requires sub-250 staff plus financial tests.\n\nThe statement is false. A student who matched the topic to \"One criterion alone is enough for medium status when turnover is €40m\" without checking the rest of the sentence would mark the statement true.\n"
+      "TRUE — Headcount alone does not confirm micro status.\n\nUnder the EU micro test the firm must have fewer than 10 employees and also stay within a financial alternative: turnover ≤ €2m or balance sheet total ≤ €2m. Meeting the staff ceiling alone is not enough if the financial limb is breached.\n\nThe statement is true.\n",
+      "FALSE — EU MSME size classes combine a staff ceiling with a financial alternative (turnover or balance sheet). Staff alone never completes the test.\n\nTurnover above €2m removes micro status but small or medium may apply.\n\nSwap in the textbook criterion and the sentence no longer describes the case.\n\nThe statement is false.\n",
+      "TRUE — €1.5m meets the micro turnover threshold.\n\nUnder the EU micro test the firm must have fewer than 10 employees and also stay within a financial alternative: turnover ≤ €2m or balance sheet total ≤ €2m. Meeting the staff ceiling alone is not enough if the financial limb is breached.\n\nThe statement is true.\n",
+      "FALSE — Small requires turnover at or below €10m as well.\n\nEU small enterprises have fewer than 50 employees and must also satisfy turnover ≤ €10m or balance sheet ≤ €10m. Headcount under fifty does not preserve small status once the financial cap is exceeded.\n\nThe absolute claim fails because EU size classes are dual tests: staff and a financial alternative. One limb cannot rescue a breach of the other.\n\nThe statement is false.\n",
+      "FALSE — Medium requires sub-250 staff plus financial tests.\n\nEU medium enterprises have fewer than 250 employees and must also satisfy turnover ≤ €50m or balance sheet ≤ €43m. Both the staff ceiling and one financial alternative belong to the definition.\n\nThe absolute claim fails because EU size classes are dual tests: staff and a financial alternative. One limb cannot rescue a breach of the other.\n\nThe statement is false.\n"
     ],
     "difficulty_level": "4/5",
     "tier": "full"
@@ -5703,11 +5703,11 @@
       false
     ],
     "tactical_explanations": [
-      "FALSE — Check the sentence against the core concept named in the stem, including every scope word.\n\nFifty staff fails the below-fifty small staff test.\n\nThe statement is false. A student who matched the topic to \"Headcount alone confirms small status for a fifty-employee logistics company\" without checking the rest of the sentence would mark the statement true.\n",
-      "FALSE — Map the scenario onto the textbook category first, then test whether the sentence describes that category accurately.\n\nFinancial thresholds are mandatory for micro confirmation.\n\nThe statement is false. A student who matched the topic to \"Incomplete turnover data still proves micro status when staff are nine\" without checking the rest of the sentence would mark the statement true.\n",
-      "TRUE — Check the sentence against the core concept named in the stem, including every scope word.\n\n€1.6m meets the micro balance sheet threshold.\n\nThe statement is true.",
-      "FALSE — Check the sentence against the core concept named in the stem, including every scope word.\n\nHeadcount and financial thresholds determine eu size classification.\n\nThe statement is false. A student who matched the topic to \"Supplier status to phone makers determines a components manufacturer size classification\" without checking the rest of the sentence would mark the statement true.\n",
-      "FALSE — Check the sentence against the core concept named in the stem, including every scope word.\n\nTen staff fails the below-ten micro staff test.\n\nThe statement is false. A student who matched the topic to \"Headcount alone confirms micro status for a ten-employee family firm\" without checking the rest of the sentence would mark the statement true.\n"
+      "FALSE — Fifty staff fails the below-fifty small staff test.\n\nEU small enterprises have fewer than 50 employees and must also satisfy turnover ≤ €10m or balance sheet ≤ €10m. Headcount under fifty does not preserve small status once the financial cap is exceeded.\n\nThe absolute claim fails because EU size classes are dual tests: staff and a financial alternative. One limb cannot rescue a breach of the other.\n\nThe statement is false.\n",
+      "FALSE — Financial thresholds are mandatory for micro confirmation.\n\nUnder the EU micro test the firm must have fewer than 10 employees and also stay within a financial alternative: turnover ≤ €2m or balance sheet total ≤ €2m. Meeting the staff ceiling alone is not enough if the financial limb is breached.\n\nThe statement is false.\n",
+      "TRUE — €1.6m meets the micro balance sheet threshold.\n\nUnder the EU micro test the firm must have fewer than 10 employees and also stay within a financial alternative: turnover ≤ €2m or balance sheet total ≤ €2m. Meeting the staff ceiling alone is not enough if the financial limb is breached.\n\nThe statement is true.\n",
+      "FALSE — EU MSME size classes combine a staff ceiling with a financial alternative (turnover or balance sheet). Staff alone never completes the test.\n\nHeadcount and financial thresholds determine eu size classification.\n\nThe mislabelled category or reversed comparison is enough to reject the claim.\n\nThe statement is false.\n",
+      "FALSE — Ten staff fails the below-ten micro staff test.\n\nUnder the EU micro test the firm must have fewer than 10 employees and also stay within a financial alternative: turnover ≤ €2m or balance sheet total ≤ €2m. Meeting the staff ceiling alone is not enough if the financial limb is breached.\n\nThe absolute claim fails because EU size classes are dual tests: staff and a financial alternative. One limb cannot rescue a breach of the other.\n\nThe statement is false.\n"
     ],
     "difficulty_level": "2/5",
     "tier": "full"
@@ -5732,11 +5732,11 @@
       true
     ],
     "tactical_explanations": [
-      "TRUE — Check the sentence against the core concept named in the stem, including every scope word.\n\n€1.7m meets the micro balance sheet threshold.\n\nThe statement is true.",
-      "TRUE — Check the sentence against the core concept named in the stem, including every scope word.\n\nCourse examples contrast micro local ventures with a components manufacturer scale.\n\nThe statement is true.",
-      "TRUE — Check the sentence against the core concept named in the stem, including every scope word.\n\nCombined criteria define eu sme tiers in the official table.\n\nThe statement is true.",
-      "TRUE — Check that the comparison runs in the stated direction and attaches the feature to the correct member of the pair.\n\nThe statistic measures business counts.\n\nThe statement is true.",
-      "TRUE — Check the sentence against the core concept named in the stem, including every scope word.\n\n€42m meets the medium balance sheet threshold.\n\nThe statement is true."
+      "TRUE — €1.7m meets the micro balance sheet threshold.\n\nUnder the EU micro test the firm must have fewer than 10 employees and also stay within a financial alternative: turnover ≤ €2m or balance sheet total ≤ €2m. Meeting the staff ceiling alone is not enough if the financial limb is breached.\n\nThe statement is true.\n",
+      "TRUE — Course examples contrast micro local ventures with a components manufacturer scale.\n\nUnder the EU micro test the firm must have fewer than 10 employees and also stay within a financial alternative: turnover ≤ €2m or balance sheet total ≤ €2m. Meeting the staff ceiling alone is not enough if the financial limb is breached.\n\nThe statement is true.\n",
+      "TRUE — EU small enterprises employ fewer than fifty people and must also meet turnover ≤ €10m or balance sheet ≤ €10m. SMEs (including micro) are the vast majority of EU firms.\n\nCombined criteria define eu sme tiers in the official table.\n\nUnder that classification the assertion describes the situation correctly.\n\nThe statement is true.\n",
+      "TRUE — The statistic measures business counts.\n\nRoughly ninety-nine percent of businesses registered in the EU fall inside the SME size classes — micro, small, or medium.\n\nThe statement is true.\n",
+      "TRUE — €42m meets the medium balance sheet threshold.\n\nEU medium enterprises have fewer than 250 employees and must also satisfy turnover ≤ €50m or balance sheet ≤ €43m. Both the staff ceiling and one financial alternative belong to the definition.\n\nThe statement is true.\n"
     ],
     "difficulty_level": "3/5",
     "tier": "full"
@@ -5761,11 +5761,11 @@
       true
     ],
     "tactical_explanations": [
-      "TRUE — Check the sentence against the core concept named in the stem, including every scope word.\n\nSme-tied finance programmes typically exclude large firms.\n\nThe statement is true.",
-      "TRUE — Check the sentence against the core concept named in the stem, including every scope word.\n\nMsme terminology covers micro, small, and medium categories together.\n\nThe statement is true.",
-      "TRUE — Check the sentence against the core concept named in the stem, including every scope word.\n\nExceeding medium thresholds exits sme bands.\n\nThe statement is true.",
-      "FALSE — Check the sentence against the core concept named in the stem, including every scope word.\n\nOfficial staff and financial tests determine micro status.\n\nThe statement is false. A student who matched the topic to \"Village craft workshops are exempt from EU micro turnover caps\" without checking the rest of the sentence would mark the statement true.\n",
-      "TRUE — Check the sentence against the core concept named in the stem, including every scope word.\n\nDefinitions gate eligibility for sme support.\n\nThe statement is true."
+      "TRUE — EU small enterprises employ fewer than fifty people and must also meet turnover ≤ €10m or balance sheet ≤ €10m. SMEs (including micro) are the vast majority of EU firms.\n\nSme-tied finance programmes typically exclude large firms.\n\nThe sentence therefore reports the concept accurately for this item.\n\nThe statement is true.\n",
+      "TRUE — Msme terminology covers micro, small, and medium categories together.\n\nUnder the EU micro test the firm must have fewer than 10 employees and also stay within a financial alternative: turnover ≤ €2m or balance sheet total ≤ €2m. Meeting the staff ceiling alone is not enough if the financial limb is breached.\n\nEU medium enterprises have fewer than 250 employees and must also satisfy turnover ≤ €50m or balance sheet ≤ €43m. Both the staff ceiling and one financial alternative belong to the definition.\n\nThe statement is true.\n",
+      "TRUE — Exceeding medium thresholds exits sme bands.\n\nEU medium enterprises have fewer than 250 employees and must also satisfy turnover ≤ €50m or balance sheet ≤ €43m. Both the staff ceiling and one financial alternative belong to the definition.\n\nThe statement is true.\n",
+      "FALSE — Official staff and financial tests determine micro status.\n\nUnder the EU micro test the firm must have fewer than 10 employees and also stay within a financial alternative: turnover ≤ €2m or balance sheet total ≤ €2m. Meeting the staff ceiling alone is not enough if the financial limb is breached.\n\nThe statement is false.\n",
+      "TRUE — EU MSME size classes combine a staff ceiling with a financial alternative (turnover or balance sheet). Staff alone never completes the test.\n\nDefinitions gate eligibility for sme support.\n\nThe sentence therefore reports the concept accurately for this item.\n\nThe statement is true.\n"
     ],
     "difficulty_level": "2/5",
     "tier": "full"
@@ -5790,11 +5790,11 @@
       false
     ],
     "tactical_explanations": [
-      "TRUE — Check the sentence against the core concept named in the stem, including every scope word.\n\nGeographic scope does not replace official eu size thresholds.\n\nThe statement is true.",
-      "TRUE — Map the scenario onto the textbook category first, then test whether the sentence describes that category accurately.\n\nThe medium balance sheet cap is binding alongside staff limits.\n\nThe statement is true.",
-      "TRUE — Read the quantifier. Words such as never, always, only, or all turn a generally valid idea into a claim that one counterexample rejects.\n\nSmall classification requires both staff and turnover tests.\n\nThe statement is true.",
-      "FALSE — Check the sentence against the core concept named in the stem, including every scope word.\n\nOnly one financial measure must qualify alongside staff for medium status.\n\nThe statement is false. A student who matched the topic to \"Medium status requires both turnover and balance sheet below their caps simultaneously\" without checking the rest of the sentence would mark the statement true.\n",
-      "FALSE — Map the scenario onto the textbook category first, then test whether the sentence describes that category accurately.\n\nSmall classification requires turnover at or below €10m.\n\nThe statement is false. A student who matched the topic to \"Small status ignores turnover when staff remain below fifty\" without checking the rest of the sentence would mark the statement true.\n"
+      "TRUE — EU small enterprises employ fewer than fifty people and must also meet turnover ≤ €10m or balance sheet ≤ €10m. SMEs (including micro) are the vast majority of EU firms.\n\nGeographic scope does not replace official eu size thresholds.\n\nUnder that classification the assertion describes the situation correctly.\n\nThe statement is true.\n",
+      "TRUE — The medium balance sheet cap is binding alongside staff limits.\n\nEU medium enterprises have fewer than 250 employees and must also satisfy turnover ≤ €50m or balance sheet ≤ €43m. Both the staff ceiling and one financial alternative belong to the definition.\n\nThe statement is true.\n",
+      "TRUE — Small classification requires both staff and turnover tests.\n\nEU small enterprises have fewer than 50 employees and must also satisfy turnover ≤ €10m or balance sheet ≤ €10m. Headcount under fifty does not preserve small status once the financial cap is exceeded.\n\nThe statement is true.\n",
+      "FALSE — Only one financial measure must qualify alongside staff for medium status.\n\nEU medium enterprises have fewer than 250 employees and must also satisfy turnover ≤ €50m or balance sheet ≤ €43m. Both the staff ceiling and one financial alternative belong to the definition.\n\nThe statement is false.\n",
+      "FALSE — Small classification requires turnover at or below €10m.\n\nEU small enterprises have fewer than 50 employees and must also satisfy turnover ≤ €10m or balance sheet ≤ €10m. Headcount under fifty does not preserve small status once the financial cap is exceeded.\n\nThe statement is false.\n"
     ],
     "difficulty_level": "2/5",
     "tier": "full"
