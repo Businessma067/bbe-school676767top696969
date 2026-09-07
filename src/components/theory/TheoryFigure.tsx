@@ -2296,9 +2296,9 @@ function LogBasic() {
   const p2 = logPoint(2, 1);
   const pHalf = logPoint(0.5, -1);
   // Labels live in open zones; short leaders keep them tied to the marked points.
-  const l1 = { x: 210, y: 188 };
-  const l2 = { x: 280, y: 52 };
-  const lHalf = { x: 175, y: 240 };
+  const l1 = { x: 220, y: 195 };
+  const l2 = { x: 310, y: 42 };
+  const lHalf = { x: 185, y: 250 };
   return (
     <LogAxesFrame
       title="Graph of y = log₂(x)"
