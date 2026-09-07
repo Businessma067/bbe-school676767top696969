@@ -7994,11 +7994,11 @@
       true
     ],
     "tactical_explanations": [
-      "TRUE — Check the sentence against the core concept named in the stem, including every scope word.\n\nAnticipated output needs increase quantity of labour supplied at each wage.\n\nThe statement is true.",
-      "TRUE — Map the scenario onto the textbook category first, then test whether the sentence describes that category accurately.\n\nEarly secured supply eases imbalance when demand for pickers surges.\n\nThe statement is true.",
-      "TRUE — Map the scenario onto the textbook category first, then test whether the sentence describes that category accurately.\n\nBelow-equilibrium wage leaves quantity demanded above quantity supplied.\n\nThe statement is true.",
-      "TRUE — Check the sentence against the core concept named in the stem, including every scope word.\n\nHigher wages elsewhere reduce quantity supplied locally at each wage.\n\nThe statement is true.",
-      "TRUE — Check the sentence against the core concept named in the stem, including every scope word.\n\nHigher own-price of labour raises quantity supplied along the supply curve.\n\nThe statement is true."
+      "TRUE — Expecting a large harvest raises demand for pickers in August — labour supply offered to vineyards can shift right as contractors recruit for the surge.\n\nThe statement is true.",
+      "TRUE — Signing contracts before peak harvest locks in labour and reduces later shortage when sugar levels spike and everyone wants pickers at once.\n\nThe statement is true.",
+      "TRUE — Wages below equilibrium leave quantity demanded of labour above quantity supplied — picker shortage.\n\nThe statement is true.",
+      "TRUE — Higher wages in competing fruit regions pull pickers away — Styria's picker supply shifts left.\n\nThe statement is true.",
+      "TRUE — Higher day rates raise quantity of labour supplied along the labour supply curve.\n\nThe statement is true."
     ],
     "difficulty_level": "2/5",
     "tier": "full"
@@ -8023,11 +8023,11 @@
       true
     ],
     "tactical_explanations": [
-      "TRUE — Check the sentence against the core concept named in the stem, including every scope word.\n\nAmbiguous price outcomes require comparing shift magnitudes.\n\nThe statement is true.",
-      "TRUE — Check the sentence against the core concept named in the stem, including every scope word.\n\nNew curve positions determine updated equilibrium price and quantity.\n\nThe statement is true.",
-      "TRUE — Map the scenario onto the textbook category first, then test whether the sentence describes that category accurately.\n\nStronger demand with reduced supply pushes price upward.\n\nThe statement is true.",
-      "TRUE — Map the scenario onto the textbook category first, then test whether the sentence describes that category accurately.\n\nBoth shifts increase equilibrium quantity though price change is ambiguous.\n\nThe statement is true.",
-      "TRUE — Check the sentence against the core concept named in the stem, including every scope word.\n\nReal events can move both curves in the same period.\n\nThe statement is true."
+      "TRUE — When demand and supply both shift, the net price change depends on which shift is larger.\n\nThe statement is true.",
+      "TRUE — Comparing old and new intersection points on a graph identifies the new equilibrium outcomes.\n\nThe statement is true.",
+      "TRUE — Demand right plus supply left both push price up — equilibrium price is likely to rise.\n\nThe statement is true.",
+      "TRUE — Demand right and supply right both raise quantity — equilibrium quantity rises (price ambiguous).\n\nThe statement is true.",
+      "TRUE — A disaster can cut supply and change tastes/demand at once — simultaneous shifts.\n\nThe statement is true."
     ],
     "difficulty_level": "3/5",
     "tier": "full"
@@ -8052,11 +8052,11 @@
       false
     ],
     "tactical_explanations": [
-      "TRUE — Map the scenario onto the textbook category first, then test whether the sentence describes that category accurately.\n\nScarce goods at capped prices may be allocated by waiting.\n\nThe statement is true.",
-      "TRUE — Map the scenario onto the textbook category first, then test whether the sentence describes that category accurately.\n\nNon-binding caps do not constrain market-clearing prices.\n\nThe statement is true.",
-      "TRUE — Check the sentence against the core concept named in the stem, including every scope word.\n\nShortage may reduce maintenance incentives though quantity demanded exceeds supplied.\n\nThe statement is true.",
-      "FALSE — Check the sentence against the core concept named in the stem, including every scope word.\n\nBinding ceilings create shortage, not surplus.\n\nThe statement is false. A student who matched the topic to \"At the ceiling price, quantity supplied typically exceeds quantity demanded\" without checking the rest of the sentence would mark the statement true.\n",
-      "FALSE — Check the sentence against the core concept named in the stem, including every scope word.\n\nBelow-equilibrium caps block price rises that would reduce shortage.\n\nThe statement is false. A student who matched the topic to \"A price ceiling below equilibrium prevents price from falling to eliminate surplus\" without checking the rest of the sentence would mark the statement true.\n"
+      "TRUE — When a ceiling creates shortage, queues and other non-price rationing appear.\n\nThe statement is true.",
+      "TRUE — A ceiling above equilibrium does not bind; the market price can sit below the cap.\n\nThe statement is true.",
+      "TRUE — Rent controls below equilibrium discourage some units from being offered — fewer leases available.\n\nThe statement is true.",
+      "FALSE — At a binding ceiling below equilibrium, quantity demanded exceeds quantity supplied — shortage, not surplus.\n\nThe statement is false.",
+      "FALSE — A ceiling below equilibrium stops price from rising to clear a shortage; surplus is the opposite problem (price too high).\n\nThe statement is false."
     ],
     "difficulty_level": "3/5",
     "tier": "full"
@@ -8081,11 +8081,11 @@
       false
     ],
     "tactical_explanations": [
-      "TRUE — Check the sentence against the core concept named in the stem, including every scope word.\n\nQueues indicate quantity demanded exceeds quantity supplied at that price.\n\nThe statement is true.",
-      "TRUE — Check the sentence against the core concept named in the stem, including every scope word.\n\nBinding low rents leave quantity demanded above quantity supplied.\n\nThe statement is true.",
-      "TRUE — Map the scenario onto the textbook category first, then test whether the sentence describes that category accurately.\n\nLow regulated returns can affect supply quality and availability over time.\n\nThe statement is true.",
-      "FALSE — Map the scenario onto the textbook category first, then test whether the sentence describes that category accurately.\n\nScarcity at capped rents often imposes search and waiting costs.\n\nThe statement is false. A student who matched the topic to \"Tenants ignore non-price costs when money rents stay capped because flats are abundant\" without checking the rest of the sentence would mark the statement true.\n",
-      "FALSE — Check the sentence against the core concept named in the stem, including every scope word.\n\nHigher unregulated rents indicate the cap sits below market equilibrium.\n\nThe statement is false. A student who matched the topic to \"Open-market leases advertising higher rates prove equilibrium rent lies below the controlled cap\" without checking the rest of the sentence would mark the statement true.\n"
+      "TRUE — Long waiting lists mean excess demand at the controlled rent — shortage signal.\n\nThe statement is true.",
+      "TRUE — Controlled rents below open-market levels create persistent flat shortage.\n\nThe statement is true.",
+      "TRUE — When regulated rents cover rising costs poorly, landlords may cut maintenance spending.\n\nThe statement is true.",
+      "FALSE — Capped money rents often leave tenants facing queues and search costs; flats are not abundant under binding controls.\n\nThe statement is false.",
+      "FALSE — Open-market leases at higher rates show the free-market equilibrium lies above the controlled cap, not below.\n\nThe statement is false."
     ],
     "difficulty_level": "1/5",
     "tier": "full"
@@ -8110,11 +8110,11 @@
       false
     ],
     "tactical_explanations": [
-      "TRUE — Check the sentence against the core concept named in the stem, including every scope word.\n\nLegal minimums block downward adjustment that would clear excess supply.\n\nThe statement is true.",
-      "TRUE — Check the sentence against the core concept named in the stem, including every scope word.\n\nOfficial buying can offset excess supply created by high minimum prices.\n\nThe statement is true.",
-      "TRUE — Check the sentence against the core concept named in the stem, including every scope word.\n\nBinding high minimums leave excess supply relative to quantity demanded.\n\nThe statement is true.",
-      "TRUE — Map the scenario onto the textbook category first, then test whether the sentence describes that category accurately.\n\nNon-binding floors do not constrain market-clearing prices.\n\nThe statement is true.",
-      "FALSE — Read the quantifier. Words such as never, always, only, or all turn a generally valid idea into a claim that one counterexample rejects.\n\nFloors above equilibrium can produce unsold surplus despite seller protection intent.\n\nThe statement is false. A student who overlooked the word \"all\" in \"Minimum prices intended to help sellers eliminate all unsold stock immediately\" would treat the restriction as absent and mark the statement true.\n"
+      "TRUE — A floor above equilibrium stops price from falling to clear surplus.\n\nThe statement is true.",
+      "TRUE — Agricultural floors often pair with government purchases to absorb unsold surplus.\n\nThe statement is true.",
+      "TRUE — At a binding floor, quantity supplied exceeds quantity demanded — surplus.\n\nThe statement is true.",
+      "TRUE — A floor below equilibrium does not bind; market price can stay above the minimum.\n\nThe statement is true.",
+      "FALSE — Minimum prices create surplus stock; they do not eliminate all unsold stock immediately.\n\nThe statement is false."
     ],
     "difficulty_level": "2/5",
     "tier": "full"
@@ -8139,11 +8139,11 @@
       false
     ],
     "tactical_explanations": [
-      "TRUE — Check the sentence against the core concept named in the stem, including every scope word.\n\nWage adjustment balances quantity supplied and demanded of labour.\n\nThe statement is true.",
-      "TRUE — Map the scenario onto the textbook category first, then test whether the sentence describes that category accurately.\n\nHigher mandated wages reduce hiring along the labour demand curve.\n\nThe statement is true.",
-      "TRUE — Check the sentence against the core concept named in the stem, including every scope word.\n\nNon-binding wage floors do not alter market-clearing employment.\n\nThe statement is true.",
-      "FALSE — Read the quantifier. Words such as never, always, only, or all turn a generally valid idea into a claim that one counterexample rejects.\n\nBinding floors can produce surplus labour, often appearing as unemployment.\n\nThe statement is false. A student who overlooked the word \"all\" in \"A minimum wage above the market-clearing wage eliminates all unemployment immediately\" would treat the restriction as absent and mark the statement true.\n",
-      "FALSE — Read the quantifier. Words such as never, always, only, or all turn a generally valid idea into a claim that one counterexample rejects.\n\nShortage of jobs relative to willing workers reflects labour surplus at the floor.\n\nThe statement is false. A student who overlooked the word \"every\" in \"At a binding minimum wage, every worker willing to work finds employment instantly\" would treat the restriction as absent and mark the statement true.\n"
+      "TRUE — Wages are the price of labour coordinating worker supply and employer demand.\n\nThe statement is true.",
+      "TRUE — A binding minimum wage above equilibrium reduces quantity of labour demanded by employers.\n\nThe statement is true.",
+      "TRUE — A minimum wage below equilibrium does not bind market outcomes.\n\nThe statement is true.",
+      "FALSE — A binding minimum wage can create unemployment (surplus of labour); it does not eliminate all unemployment immediately.\n\nThe statement is false.",
+      "FALSE — At a binding minimum wage, some willing workers may not find jobs — not instant full employment.\n\nThe statement is false."
     ],
     "difficulty_level": "2/5",
     "tier": "full"
@@ -8168,11 +8168,11 @@
       false
     ],
     "tactical_explanations": [
-      "TRUE — Check the sentence against the core concept named in the stem, including every scope word.\n\nRising input costs reduce quantity supplied at each price.\n\nThe statement is true.",
-      "TRUE — Check the sentence against the core concept named in the stem, including every scope word.\n\nRestricting supply eases excess supply at unchanged prices.\n\nThe statement is true.",
-      "FALSE — Map the scenario onto the textbook category first, then test whether the sentence describes that category accurately.\n\nHigher costs at fixed price typically reduce profitable supply.\n\nThe statement is false. A student who matched the topic to \"If farmgate price stays fixed while feed costs rise, farmers expand output to celebrate\" without checking the rest of the sentence would mark the statement true.\n",
-      "FALSE — Check the sentence against the core concept named in the stem, including every scope word.\n\nQuotas restrict supply rather than expand it.\n\nThe statement is false. A student who matched the topic to \"A cooperative quota limiting deliveries increases quantity supplied by forcing extra production\" without checking the rest of the sentence would mark the statement true.\n",
-      "FALSE — Check the sentence against the core concept named in the stem, including every scope word.\n\nOutput surges at fixed demand tend toward surplus, not shortage.\n\nThe statement is false. A student who matched the topic to \"Surging milk output without matching demand creates shortage at the old farmgate price\" without checking the rest of the sentence would mark the statement true.\n"
+      "TRUE — Higher feed costs raise milk production costs — supply of raw milk shifts left at each farmgate price.\n\nThe statement is true.",
+      "TRUE — Cutting quotas after a glut reduces quantity supplied and can help clear surplus toward equilibrium.\n\nThe statement is true.",
+      "FALSE — Higher feed costs discourage expansion at a fixed farmgate price; farmers do not expand to celebrate.\n\nThe statement is false.",
+      "FALSE — A quota limiting deliveries caps quantity supplied; it does not force extra production.\n\nThe statement is false.",
+      "FALSE — Surging milk output without matching demand creates surplus at the old price, not shortage.\n\nThe statement is false."
     ],
     "difficulty_level": "2/5",
     "tier": "full"
@@ -8197,11 +8197,11 @@
       false
     ],
     "tactical_explanations": [
-      "TRUE — Check the sentence against the core concept named in the stem, including every scope word.\n\nBroad indices capture general price level changes.\n\nThe statement is true.",
-      "TRUE — Map the scenario onto the textbook category first, then test whether the sentence describes that category accurately.\n\nPolicy makers respond to inflation trends with monetary tools.\n\nThe statement is true.",
-      "TRUE — Map the scenario onto the textbook category first, then test whether the sentence describes that category accurately.\n\nRising cost of a typical basket signals higher general prices.\n\nThe statement is true.",
-      "TRUE — Check the sentence against the core concept named in the stem, including every scope word.\n\nHigher price levels buy fewer goods per currency unit.\n\nThe statement is true.",
-      "FALSE — Check the sentence against the core concept named in the stem, including every scope word.\n\nSingle-product price cuts are not economy-wide inflation.\n\nThe statement is false. A student who matched the topic to \"Inflation describes a one-day sale discount on a single retail product\" without checking the rest of the sentence would mark the statement true.\n"
+      "TRUE — Inflation is tracked with price indices covering many goods and services together.\n\nThe statement is true.",
+      "TRUE — Central banks watch inflation when setting interest-rate policy.\n\nThe statement is true.",
+      "TRUE — If the same basket costs more over time, households are experiencing inflation.\n\nThe statement is true.",
+      "TRUE — Moderate inflation reduces real purchasing power of non-interest-bearing cash.\n\nThe statement is true.",
+      "FALSE — A one-day sale discount on one product is not inflation — inflation is a general price-level rise.\n\nThe statement is false."
     ],
     "difficulty_level": "3/5",
     "tier": "full"
@@ -8226,11 +8226,11 @@
       false
     ],
     "tactical_explanations": [
-      "TRUE — Check the sentence against the core concept named in the stem, including every scope word.\n\nGeneral inflation differs from isolated relative price spikes.\n\nThe statement is true.",
-      "TRUE — Map the scenario onto the textbook category first, then test whether the sentence describes that category accurately.\n\nSpending surges can bid up prices when supply responds slowly.\n\nThe statement is true.",
-      "TRUE — Map the scenario onto the textbook category first, then test whether the sentence describes that category accurately.\n\nExcess money relative to goods tends to raise general prices.\n\nThe statement is true.",
-      "FALSE — Check the sentence against the core concept named in the stem, including every scope word.\n\nGreater money supply typically increases nominal spending pressure.\n\nThe statement is false. A student who matched the topic to \"Holding other factors fixed, larger money supply reduces spending pressure on limited goods\" without checking the rest of the sentence would mark the statement true.\n",
-      "FALSE — Check the sentence against the core concept named in the stem, including every scope word.\n\nThat phrase describes inflationary pressure, not deflation.\n\nThe statement is false. A student who matched the topic to \"Too much money chasing too few goods explains deflation in monetary economics\" without checking the rest of the sentence would mark the statement true.\n"
+      "TRUE — Monetary-expansion inflation differs from a single crop failure that raises one food price.\n\nThe statement is true.",
+      "TRUE — If newly printed money is spent quickly, aggregate demand can outpace supply.\n\nThe statement is true.",
+      "TRUE — Money growth faster than real output growth can accelerate inflation.\n\nThe statement is true.",
+      "FALSE — Larger money supply increases spending pressure on limited goods, other things equal — it does not reduce it.\n\nThe statement is false.",
+      "FALSE — Too much money chasing too few goods explains inflation, not deflation.\n\nThe statement is false."
     ],
     "difficulty_level": "3/5",
     "tier": "full"
@@ -8255,11 +8255,11 @@
       true
     ],
     "tactical_explanations": [
-      "TRUE — Check the sentence against the core concept named in the stem, including every scope word.\n\nWidespread input price rises can feed general inflation.\n\nThe statement is true.",
-      "TRUE — Map the scenario onto the textbook category first, then test whether the sentence describes that category accurately.\n\nHigher price levels reduce what saved money buys.\n\nThe statement is true.",
-      "TRUE — Check the sentence against the core concept named in the stem, including every scope word.\n\nSpending can rise ahead of supply when money supply expands.\n\nThe statement is true.",
-      "TRUE — Check the sentence against the core concept named in the stem, including every scope word.\n\nExcess money growth relative to goods can raise general prices.\n\nThe statement is true.",
-      "TRUE — Check the sentence against the core concept named in the stem, including every scope word.\n\nSupply capacity matters when evaluating inflation risk from monetary expansion.\n\nThe statement is true."
+      "TRUE — Broadly rising supplier invoices signal upward pressure on the general price level.\n\nThe statement is true.",
+      "TRUE — If prices rise faster than interest on cash savings, real value of those savings erodes.\n\nThe statement is true.",
+      "TRUE — Funding repairs with new money can raise spending before extra goods appear — demand pressure.\n\nThe statement is true.",
+      "TRUE — Rapid note issuance without matching output growth can contribute to inflation.\n\nThe statement is true.",
+      "TRUE — Policymakers must weigh whether real output can absorb extra spending from new notes.\n\nThe statement is true."
     ],
     "difficulty_level": "1/5",
     "tier": "full"
@@ -8284,11 +8284,11 @@
       true
     ],
     "tactical_explanations": [
-      "TRUE — Check the sentence against the core concept named in the stem, including every scope word.\n\nCostlier credit dampens spending that bids up prices.\n\nThe statement is true.",
-      "TRUE — Check the sentence against the core concept named in the stem, including every scope word.\n\nIncreased return on saving reduces current consumption demand.\n\nThe statement is true.",
-      "TRUE — Check the sentence against the core concept named in the stem, including every scope word.\n\nCostlier loans reduce quantity demanded for credit-sensitive purchases.\n\nThe statement is true.",
-      "TRUE — Check the sentence against the core concept named in the stem, including every scope word.\n\nPolicy seeks to prevent excess money from outpacing real production.\n\nThe statement is true.",
-      "TRUE — Map the scenario onto the textbook category first, then test whether the sentence describes that category accurately.\n\nTighter monetary policy responds to sustained price level increases.\n\nThe statement is true."
+      "TRUE — Higher interest rates curb borrowing and spending, easing demand-side inflation pressure.\n\nThe statement is true.",
+      "TRUE — Higher rates reward saving and can postpone spending to later periods.\n\nThe statement is true.",
+      "TRUE — Costlier loans for homes and equipment are a channel of rate increases.\n\nThe statement is true.",
+      "TRUE — Tighter money aims to align money growth with sustainable output.\n\nThe statement is true.",
+      "TRUE — Central banks may raise policy rates when inflation persistently exceeds target.\n\nThe statement is true."
     ],
     "difficulty_level": "1/5",
     "tier": "full"
@@ -8313,11 +8313,11 @@
       false
     ],
     "tactical_explanations": [
-      "TRUE — Check the sentence against the core concept named in the stem, including every scope word.\n\nCostlier mortgages reduce borrowing for home purchases.\n\nThe statement is true.",
-      "TRUE — Map the scenario onto the textbook category first, then test whether the sentence describes that category accurately.\n\nMonetary policy influences inflation gradually, not instantly.\n\nThe statement is true.",
-      "TRUE — Check the sentence against the core concept named in the stem, including every scope word.\n\nTighter policy restricts monetary conditions to cool inflation.\n\nThe statement is true.",
-      "FALSE — Map the scenario onto the textbook category first, then test whether the sentence describes that category accurately.\n\nHigher financing costs typically discourage investment spending.\n\nThe statement is false. A student who matched the topic to \"Business investment accelerates when higher rates raise the cost of financed equipment purchases\" without checking the rest of the sentence would mark the statement true.\n",
-      "FALSE — Read the quantifier. Words such as never, always, only, or all turn a generally valid idea into a claim that one counterexample rejects.\n\nCooling demand through tighter policy can lower inflation over time.\n\nThe statement is false. A student who overlooked the word \"never\" in \"Policy tightening can never reduce inflation because spending is fixed\" would treat the restriction as absent and mark the statement true.\n"
+      "TRUE — Higher mortgage rates after tightening reduce quantity demanded for new housing loans.\n\nThe statement is true.",
+      "TRUE — Rate effects appear with lags — a timing trade-off for central banks.\n\nThe statement is true.",
+      "TRUE — Tightening typically means higher key rates or slower money growth.\n\nThe statement is true.",
+      "FALSE — Higher rates raise financing costs and tend to slow business investment, not accelerate it.\n\nThe statement is false.",
+      "FALSE — Tightening can reduce inflation by cooling spending; spending is not fixed forever.\n\nThe statement is false."
     ],
     "difficulty_level": "2/5",
     "tier": "full"
@@ -8342,11 +8342,11 @@
       false
     ],
     "tactical_explanations": [
-      "TRUE — Check the sentence against the core concept named in the stem, including every scope word.\n\nBetter deposit rates encourage saving over immediate spending.\n\nThe statement is true.",
-      "TRUE — Check the sentence against the core concept named in the stem, including every scope word.\n\nDelayed buying lowers loan demand at present rates.\n\nThe statement is true.",
-      "FALSE — Check the sentence against the core concept named in the stem, including every scope word.\n\nRate increases cool spending to fight inflation.\n\nThe statement is false. A student who matched the topic to \"Central bank rate rises aim to accelerate spending that contributes to inflation\" without checking the rest of the sentence would mark the statement true.\n",
-      "FALSE — Map the scenario onto the textbook category first, then test whether the sentence describes that category accurately.\n\nReduced demand typically eases upward price pressure.\n\nThe statement is false. A student who matched the topic to \"If many households delay purchases, equilibrium home prices rise because fewer buyers compete\" without checking the rest of the sentence would mark the statement true.\n",
-      "FALSE — Check the sentence against the core concept named in the stem, including every scope word.\n\nHigher rates increase loan costs, not reduce them.\n\nThe statement is false. A student who matched the topic to \"Higher mortgage reference rates reduce monthly borrowing costs for a given loan amount\" without checking the rest of the sentence would mark the statement true.\n"
+      "TRUE — Higher deposit returns after rate rises can shift some spending into saving.\n\nThe statement is true.",
+      "TRUE — Postponing a flat purchase cuts current quantity demanded for housing credit.\n\nThe statement is true.",
+      "FALSE — Central bank rate rises aim to cool spending that feeds inflation, not accelerate it.\n\nThe statement is false.",
+      "FALSE — Fewer buyers competing tends to ease upward pressure on home prices, not raise them.\n\nThe statement is false.",
+      "FALSE — Higher mortgage reference rates raise monthly borrowing costs for a given loan, not reduce them.\n\nThe statement is false."
     ],
     "difficulty_level": "2/5",
     "tier": "full"
@@ -8371,11 +8371,11 @@
       false
     ],
     "tactical_explanations": [
-      "TRUE — Check the sentence against the core concept named in the stem, including every scope word.\n\nNew intersection lies up and to the right along supply.\n\nThe statement is true.",
-      "FALSE — Check the sentence against the core concept named in the stem, including every scope word.\n\nHigher prices incentivise greater quantity supplied along supply.\n\nThe statement is false. A student who matched the topic to \"Producers respond to higher equilibrium price by reducing quantity supplied along the supply curve\" without checking the rest of the sentence would mark the statement true.\n",
-      "FALSE — Check the sentence against the core concept named in the stem, including every scope word.\n\nMore participants shift demand; own-price changes move along the curve.\n\nThe statement is false. A student who matched the topic to \"More buyers entering a market moves buyers along the demand curve without shifting it\" without checking the rest of the sentence would mark the statement true.\n",
-      "FALSE — Check the sentence against the core concept named in the stem, including every scope word.\n\nDemand increases with stable supply tend to raise price and quantity.\n\nThe statement is false. A student who matched the topic to \"A rightward demand shift with unchanged supply lowers both equilibrium price and quantity\" without checking the rest of the sentence would mark the statement true.\n",
-      "FALSE — Check the sentence against the core concept named in the stem, including every scope word.\n\nNew equilibrium restores equality between quantity demanded and supplied.\n\nThe statement is false. A student who matched the topic to \"After demand increases, quantity demanded stays below quantity supplied permanently\" without checking the rest of the sentence would mark the statement true.\n"
+      "TRUE — A rightward demand shift moves equilibrium up along an upward-sloping supply curve — higher P and Q.\n\nThe statement is true.",
+      "FALSE — Higher equilibrium price raises quantity supplied along the supply curve; producers do not reduce it.\n\nThe statement is false.",
+      "FALSE — More buyers entering shifts the demand curve right; it is not a move along an unchanged demand curve.\n\nThe statement is false.",
+      "FALSE — Demand right with supply fixed raises equilibrium price and quantity, not lowers both.\n\nThe statement is false.",
+      "FALSE — After demand increases, markets adjust toward a new equilibrium where quantities match — not permanent excess demand.\n\nThe statement is false."
     ],
     "difficulty_level": "3/5",
     "tier": "full"
@@ -8400,11 +8400,11 @@
       true
     ],
     "tactical_explanations": [
-      "TRUE — Check the sentence against the core concept named in the stem, including every scope word.\n\nMarket clears at lower quantity with higher price.\n\nThe statement is true.",
-      "TRUE — Check the sentence against the core concept named in the stem, including every scope word.\n\nPrice rise reduces quantity demanded along downward-sloping demand.\n\nThe statement is true.",
-      "TRUE — Check the sentence against the core concept named in the stem, including every scope word.\n\nReduced supply at each price raises price and cuts quantity traded.\n\nThe statement is true.",
-      "TRUE — Map the scenario onto the textbook category first, then test whether the sentence describes that category accurately.\n\nSupply shifters change seller offerings independent of demand.\n\nThe statement is true.",
-      "TRUE — Check the sentence against the core concept named in the stem, including every scope word.\n\nNew intersection lies up and to the left along demand.\n\nThe statement is true."
+      "TRUE — After supply falls, the new equilibrium again equates quantity demanded and the reduced quantity supplied.\n\nThe statement is true.",
+      "TRUE — Higher prices after a supply fall cut quantity demanded along the demand curve.\n\nThe statement is true.",
+      "TRUE — Supply left with demand fixed typically raises P and lowers Q.\n\nThe statement is true.",
+      "TRUE — Production disruptions shift supply left even if tastes stay constant.\n\nThe statement is true.",
+      "TRUE — Graphically, supply left moves equilibrium up along a downward-sloping demand curve.\n\nThe statement is true."
     ],
     "difficulty_level": "3/5",
     "tier": "full"
@@ -8429,11 +8429,11 @@
       false
     ],
     "tactical_explanations": [
-      "TRUE — Map the scenario onto the textbook category first, then test whether the sentence describes that category accurately.\n\nExcess demand at old price pushes equilibrium upward.\n\nThe statement is true.",
-      "TRUE — Check the sentence against the core concept named in the stem, including every scope word.\n\nMore residents increase quantity demanded at each price.\n\nThe statement is true.",
-      "TRUE — Map the scenario onto the textbook category first, then test whether the sentence describes that category accurately.\n\nDemand shift with limited short-run supply raises equilibrium price.\n\nThe statement is true.",
-      "FALSE — Check the sentence against the core concept named in the stem, including every scope word.\n\nPopulation is a non-price shifter that shifts the demand curve.\n\nThe statement is false. A student who matched the topic to \"Demographic changes move buyers along the demand curve without shifting it\" without checking the rest of the sentence would mark the statement true.\n",
-      "FALSE — Map the scenario onto the textbook category first, then test whether the sentence describes that category accurately.\n\nPopulation decline typically reduces demand, not increases it automatically.\n\nThe statement is false. A student who matched the topic to \"A shrinking town population shifts demand rightward because remaining residents spend more\" without checking the rest of the sentence would mark the statement true.\n"
+      "TRUE — Population growth raises quantity demanded at old prices; price adjusts to ration and clear the market.\n\nThe statement is true.",
+      "TRUE — More city residents shift public-transport demand right.\n\nThe statement is true.",
+      "TRUE — More consumers with slow housing supply raise equilibrium rents.\n\nThe statement is true.",
+      "FALSE — Demographic changes shift the demand curve; they are not mere movements along it from own-price.\n\nThe statement is false.",
+      "FALSE — A shrinking population shifts demand left, not right, other things equal.\n\nThe statement is false."
     ],
     "difficulty_level": "2/5",
     "tier": "full"
@@ -8458,11 +8458,11 @@
       false
     ],
     "tactical_explanations": [
-      "TRUE — Check the sentence against the core concept named in the stem, including every scope word.\n\nTaxes increase costs and reduce quantity supplied at each price.\n\nThe statement is true.",
-      "TRUE — Check the sentence against the core concept named in the stem, including every scope word.\n\nLeftward supply shift lowers equilibrium quantity traded.\n\nThe statement is true.",
-      "FALSE — Check the sentence against the core concept named in the stem, including every scope word.\n\nHigher costs require higher prices to maintain the same quantity supplied.\n\nThe statement is false. A student who matched the topic to \"After a producer tax, sellers require lower prices to supply the same quantity as…\" without checking the rest of the sentence would mark the statement true.\n",
-      "FALSE — Map the scenario onto the textbook category first, then test whether the sentence describes that category accurately.\n\nLower supply with stable demand typically raises equilibrium price.\n\nThe statement is false. A student who matched the topic to \"Equilibrium price paid by buyers falls when producer taxes reduce quantity supplied\" without checking the rest of the sentence would mark the statement true.\n",
-      "FALSE — Check the sentence against the core concept named in the stem, including every scope word.\n\nCost-changing taxes shift supply; own-price moves along the curve.\n\nThe statement is false. A student who matched the topic to \"Producer taxes move sellers along the supply curve without shifting it\" without checking the rest of the sentence would mark the statement true.\n"
+      "TRUE — A per-unit producer tax raises effective cost and can shift supply left.\n\nThe statement is true.",
+      "TRUE — Lower market quantity after the tax is a common outcome of statutory producer taxes.\n\nThe statement is true.",
+      "FALSE — After a producer tax, sellers need higher prices to supply the same quantity — not lower.\n\nThe statement is false.",
+      "FALSE — Buyer prices typically rise (or quantity falls) when supply shifts left — not fall.\n\nThe statement is false.",
+      "FALSE — Producer taxes shift the supply curve; they are not mere movements along it.\n\nThe statement is false."
     ],
     "difficulty_level": "2/5",
     "tier": "full"
@@ -8487,11 +8487,11 @@
       false
     ],
     "tactical_explanations": [
-      "TRUE — Check the sentence against the core concept named in the stem, including every scope word.\n\nLower effective costs raise quantity supplied at given prices.\n\nThe statement is true.",
-      "FALSE — Map the scenario onto the textbook category first, then test whether the sentence describes that category accurately.\n\nMore supply at unchanged demand tends to lower equilibrium price.\n\nThe statement is false. A student who matched the topic to \"Rightward supply shifts from subsidies raise equilibrium price if demand stays unchanged\" without checking the rest of the sentence would mark the statement true.\n",
-      "FALSE — Map the scenario onto the textbook category first, then test whether the sentence describes that category accurately.\n\nSubsidies affect supply-side costs; ceilings limit legal prices.\n\nThe statement is false. A student who matched the topic to \"Subsidies differ from price ceilings because both cap buyer prices identically\" without checking the rest of the sentence would mark the statement true.\n",
-      "FALSE — Check the sentence against the core concept named in the stem, including every scope word.\n\nImproved margins from subsidies typically expand supply.\n\nThe statement is false. A student who matched the topic to \"Taxpayer-funded subsidies reduce quantity supplied at each price by confusing producers\" without checking the rest of the sentence would mark the statement true.\n",
-      "FALSE — Check the sentence against the core concept named in the stem, including every scope word.\n\nProducer subsidies affect supply costs, not buyer demand directly.\n\nThe statement is false. A student who matched the topic to \"Production subsidies lowering effective costs shift demand leftward for the subsidised good\" without checking the rest of the sentence would mark the statement true.\n"
+      "TRUE — Per-unit subsidies lower effective costs so farmers supply more at each market price — supply right.\n\nThe statement is true.",
+      "FALSE — Supply right with demand fixed lowers equilibrium price, not raises it.\n\nThe statement is false.",
+      "FALSE — Subsidies support producers; price ceilings cap buyer prices — they are not identical instruments.\n\nThe statement is false.",
+      "FALSE — Subsidies increase quantity supplied at each price; they do not reduce it by confusing producers.\n\nThe statement is false.",
+      "FALSE — Production subsidies shift supply, not demand left for the subsidised good.\n\nThe statement is false."
     ],
     "difficulty_level": "2/5",
     "tier": "full"
@@ -8516,11 +8516,11 @@
       false
     ],
     "tactical_explanations": [
-      "TRUE — Check the sentence against the core concept named in the stem, including every scope word.\n\nLower output at each price reflects reduced supply.\n\nThe statement is true.",
-      "TRUE — Check the sentence against the core concept named in the stem, including every scope word.\n\nExternal supply can shift total market supply rightward.\n\nThe statement is true.",
-      "TRUE — Check the sentence against the core concept named in the stem, including every scope word.\n\nRapid supply cuts with sticky demand raise equilibrium price quickly.\n\nThe statement is true.",
-      "TRUE — Map the scenario onto the textbook category first, then test whether the sentence describes that category accurately.\n\nLeftward supply with stable demand raises equilibrium price.\n\nThe statement is true.",
-      "FALSE — Check the sentence against the core concept named in the stem, including every scope word.\n\nWeather affects supply conditions; tastes are demand shifters.\n\nThe statement is false. A student who matched the topic to \"Weather shocks are demand-side events identical to changes in consumer tastes\" without checking the rest of the sentence would mark the statement true.\n"
+      "TRUE — Drought cuts yields — agricultural supply shifts left at each price.\n\nThe statement is true.",
+      "TRUE — Imports can add quantity supplied from abroad and partially offset a domestic leftward shift.\n\nThe statement is true.",
+      "TRUE — Sudden supply-left shocks can spike short-run food prices sharply.\n\nThe statement is true.",
+      "TRUE — Frost with largely unchanged demand raises equilibrium fruit prices.\n\nThe statement is true.",
+      "FALSE — Weather shocks are supply-side events, not identical to taste-driven demand shifts.\n\nThe statement is false."
     ],
     "difficulty_level": "1/5",
     "tier": "full"
@@ -8545,11 +8545,11 @@
       false
     ],
     "tactical_explanations": [
-      "TRUE — Map the scenario onto the textbook category first, then test whether the sentence describes that category accurately.\n\nExpected future price cuts reduce current purchasing incentive.\n\nThe statement is true.",
-      "TRUE — Check the sentence against the core concept named in the stem, including every scope word.\n\nAnticipating future price rises increases current quantity demanded.\n\nThe statement is true.",
-      "TRUE — Check the sentence against the core concept named in the stem, including every scope word.\n\nAnticipated higher income raises willingness to buy now.\n\nThe statement is true.",
-      "FALSE — Check the sentence against the core concept named in the stem, including every scope word.\n\nExpectations shift demand; own-price changes move along the curve.\n\nThe statement is false. A student who matched the topic to \"Expectations about future conditions move buyers along the demand curve only\" without checking the rest of the sentence would mark the statement true.\n",
-      "FALSE — Check the sentence against the core concept named in the stem, including every scope word.\n\nPanic buying increases current demand before prices change.\n\nThe statement is false. A student who matched the topic to \"Panic buying before announced rationing reflects a leftward demand shift at unchanged official prices\" without checking the rest of the sentence would mark the statement true.\n"
+      "TRUE — Expecting lower prices next month, buyers may wait — current quantity demanded falls.\n\nThe statement is true.",
+      "TRUE — Expecting higher future petrol prices, drivers stock up — current demand shifts right.\n\nThe statement is true.",
+      "TRUE — Expected future income growth can raise current demand for durables.\n\nThe statement is true.",
+      "FALSE — Expectations shift today's demand curve; they are not only movements along it from today's price.\n\nThe statement is false.",
+      "FALSE — Panic buying before rationing is a rightward demand surge at the official price, not a leftward shift.\n\nThe statement is false."
     ],
     "difficulty_level": "2/5",
     "tier": "full"
@@ -8574,11 +8574,11 @@
       false
     ],
     "tactical_explanations": [
-      "TRUE — Check the sentence against the core concept named in the stem, including every scope word.\n\nMarket-clearing wage balances worker and employer plans.\n\nThe statement is true.",
-      "TRUE — Check the sentence against the core concept named in the stem, including every scope word.\n\nEmployer bidding raises wages when quantity demanded exceeds supplied.\n\nThe statement is true.",
-      "FALSE — Check the sentence against the core concept named in the stem, including every scope word.\n\nHigher wages generally increase labour quantity supplied, ceteris paribus.\n\nThe statement is false. A student who matched the topic to \"Higher wages typically reduce quantity supplied of labour as workers reject paid work\" without checking the rest of the sentence would mark the statement true.\n",
-      "FALSE — Check the sentence against the core concept named in the stem, including every scope word.\n\nLabour shortage implies excess demand and upward wage pressure.\n\nThe statement is false. A student who matched the topic to \"Skill shortages in tech hiring resemble goods surpluses with downward wage pressure\" without checking the rest of the sentence would mark the statement true.\n",
-      "FALSE — Map the scenario onto the textbook category first, then test whether the sentence describes that category accurately.\n\nHigher wages raise labour costs and reduce quantity demanded.\n\nThe statement is false. A student who matched the topic to \"Employers hire more workers when wages rise above the value of marginal output at…\" without checking the rest of the sentence would mark the statement true.\n"
+      "TRUE — Labour market equilibrium equates quantity of labour supplied and demanded.\n\nThe statement is true.",
+      "TRUE — Employers competing for scarce workers bid wages up toward equilibrium.\n\nThe statement is true.",
+      "FALSE — Higher wages typically raise quantity of labour supplied; workers do not reject paid work because wages rose.\n\nThe statement is false.",
+      "FALSE — Skill shortages are labour shortages with upward wage pressure — not goods surpluses with downward pressure.\n\nThe statement is false.",
+      "FALSE — When wages rise above the value of marginal product, employers hire less at the margin, not more.\n\nThe statement is false."
     ],
     "difficulty_level": "3/5",
     "tier": "full"
@@ -8603,11 +8603,11 @@
       false
     ],
     "tactical_explanations": [
-      "TRUE — Map the scenario onto the textbook category first, then test whether the sentence describes that category accurately.\n\nLeftward supply with fixed demand raises equilibrium price.\n\nThe statement is true.",
-      "FALSE — Check the sentence against the core concept named in the stem, including every scope word.\n\nTrade links domestic markets to foreign supply disruptions.\n\nThe statement is false. A student who matched the topic to \"Global markets isolate domestic equilibrium from supply shocks abroad completely\" without checking the rest of the sentence would mark the statement true.\n",
-      "FALSE — Check the sentence against the core concept named in the stem, including every scope word.\n\nAlternate suppliers affect supply recovery, not demand destruction.\n\nThe statement is false. A student who matched the topic to \"Firms may seek alternate suppliers over time, shifting demand leftward permanently\" without checking the rest of the sentence would mark the statement true.\n",
-      "FALSE — Check the sentence against the core concept named in the stem, including every scope word.\n\nImport delays affect supply availability, not buyer demand directly.\n\nThe statement is false. A student who matched the topic to \"Port closures delaying imports shift demand rightward for components used in domestic assembly\" without checking the rest of the sentence would mark the statement true.\n",
-      "FALSE — Check the sentence against the core concept named in the stem, including every scope word.\n\nMissing inputs reduce feasible output and supply of finished goods.\n\nThe statement is false. A student who matched the topic to \"Shortages of imported parts increase quantity supplied of finished goods domestically\" without checking the rest of the sentence would mark the statement true.\n"
+      "TRUE — Falling import supply with constant demand raises domestic equilibrium price.\n\nThe statement is true.",
+      "FALSE — Global shocks transmit to domestic equilibrium through trade; isolation is incomplete.\n\nThe statement is false.",
+      "FALSE — Seeking alternate suppliers is a supply-side adjustment over time, not a permanent leftward demand shift.\n\nThe statement is false.",
+      "FALSE — Port closures delaying imports shift supply of components left (harder to get), not demand right.\n\nThe statement is false.",
+      "FALSE — Imported-part shortages reduce finished-goods supply domestically; they do not increase quantity supplied of finished goods.\n\nThe statement is false."
     ],
     "difficulty_level": "2/5",
     "tier": "full"
@@ -8632,11 +8632,11 @@
       true
     ],
     "tactical_explanations": [
-      "TRUE — Check the sentence against the core concept named in the stem, including every scope word.\n\nOwn-price changes differ from shifters on demand and supply sides.\n\nThe statement is true.",
-      "TRUE — Check the sentence against the core concept named in the stem, including every scope word.\n\nMonetary tightening cools spending that outpaces output.\n\nThe statement is true.",
-      "TRUE — Check the sentence against the core concept named in the stem, including every scope word.\n\nBinding caps and minimums produce predictable imbalances.\n\nThe statement is true.",
-      "TRUE — Check the sentence against the core concept named in the stem, including every scope word.\n\nNon-price determinants shift curves on each side of the market.\n\nThe statement is true.",
-      "TRUE — Check the sentence against the core concept named in the stem, including every scope word.\n\nPrice changes coordinate divergent buyer and seller plans.\n\nThe statement is true."
+      "TRUE — Separate movements along curves (own-price) from shifts (other determinants).\n\nThe statement is true.",
+      "TRUE — Inflation from excessive money growth may be fought with higher interest rates.\n\nThe statement is true.",
+      "TRUE — Ceilings below equilibrium → shortage; floors above equilibrium → surplus.\n\nThe statement is true.",
+      "TRUE — Demand shifters include income, tastes, substitutes; supply shifters include costs and technology.\n\nThe statement is true.",
+      "TRUE — Surplus and shortage guide competitive price adjustment toward equilibrium.\n\nThe statement is true."
     ],
     "difficulty_level": "3/5",
     "tier": "full"
@@ -8661,11 +8661,11 @@
       false
     ],
     "tactical_explanations": [
-      "TRUE — Check the sentence against the core concept named in the stem, including every scope word.\n\nTighter credit reduces quantity demanded for rate-sensitive purchases.\n\nThe statement is true.",
-      "TRUE — Map the scenario onto the textbook category first, then test whether the sentence describes that category accurately.\n\nMonetary inflation is economy-wide beyond single-market supply gains.\n\nThe statement is true.",
-      "TRUE — Check the sentence against the core concept named in the stem, including every scope word.\n\nConcurrent supply left and demand right make price outcome depend on magnitudes.\n\nThe statement is true.",
-      "TRUE — Check the sentence against the core concept named in the stem, including every scope word.\n\nPrivate coordination and public policy both influence outcomes.\n\nThe statement is true.",
-      "FALSE — Map the scenario onto the textbook category first, then test whether the sentence describes that category accurately.\n\nDemand increase with fixed supply typically raises equilibrium price.\n\nThe statement is false. A student who matched the topic to \"When festival demand surges but venue capacity is fixed, equilibrium ticket price tends to…\" without checking the rest of the sentence would mark the statement true.\n"
+      "TRUE — Higher rates raise mortgage costs and can slow housing demand.\n\nThe statement is true.",
+      "TRUE — Too much money versus output can lift the general price level even if one industry expands supply.\n\nThe statement is true.",
+      "TRUE — Higher bean costs (supply left) and rising commuter demand (demand right) make the café's price change ambiguous without sizes.\n\nThe statement is true.",
+      "TRUE — Prices coordinate private plans; taxes, subsidies, and rates alter incentives.\n\nThe statement is true.",
+      "FALSE — Fixed venue capacity with surging festival demand raises equilibrium ticket price, not lowers it.\n\nThe statement is false."
     ],
     "difficulty_level": "3/5",
     "tier": "full"
@@ -8690,11 +8690,11 @@
       false
     ],
     "tactical_explanations": [
-      "TRUE — Check that the comparison runs in the stated direction and attaches the feature to the correct member of the pair.\n\nBetter saving returns reduce current consumption demand.\n\nThe statement is true.",
-      "TRUE — Check the sentence against the core concept named in the stem, including every scope word.\n\nCooler consumption demand helps moderate inflationary pressure.\n\nThe statement is true.",
-      "TRUE — Check the sentence against the core concept named in the stem, including every scope word.\n\nCheaper credit raises quantity demanded for interest-sensitive purchases.\n\nThe statement is true.",
-      "TRUE — Map the scenario onto the textbook category first, then test whether the sentence describes that category accurately.\n\nPolicy trade-offs arise when stimulating demand near capacity limits.\n\nThe statement is true.",
-      "FALSE — Check the sentence against the core concept named in the stem, including every scope word.\n\nCredit and deposit markets use interest rates as coordinating prices.\n\nThe statement is false. A student who matched the topic to \"Households comparing mortgage and deposit rates operate outside markets with no price signals\" without checking the rest of the sentence would mark the statement true.\n"
+      "TRUE — Higher deposit rates can shift some spending into saving.\n\nThe statement is true.",
+      "TRUE — Less current spending eases demand-side pressure on the price level.\n\nThe statement is true.",
+      "TRUE — Lower rates encourage borrowing for homes and cars — demand right for those goods.\n\nThe statement is true.",
+      "TRUE — Cutting rates to stimulate idle-output economies may accept some upward price pressure.\n\nThe statement is true.",
+      "FALSE — Comparing mortgage and deposit rates is precisely operating inside financial markets with price signals (interest rates).\n\nThe statement is false."
     ],
     "difficulty_level": "2/5",
     "tier": "full"
