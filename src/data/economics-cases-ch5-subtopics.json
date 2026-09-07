@@ -4659,11 +4659,11 @@
       true
     ],
     "tactical_explanations": [
-      "TRUE — Check the sentence against the core concept named in the stem, including every scope word.\n\nCaptured portion of market sales defines share.\n\nThe statement is true.",
-      "TRUE — Map the scenario onto the textbook category first, then test whether the sentence describes that category accurately.\n\nRelative share shift indicates improved competitiveness.\n\nThe statement is true.",
-      "TRUE — Check the sentence against the core concept named in the stem, including every scope word.\n\nMarket analysis precedes share objective setting.\n\nThe statement is true.",
-      "TRUE — Check the sentence against the core concept named in the stem, including every scope word.\n\nDissatisfaction-driven switching reduces share.\n\nThe statement is true.",
-      "TRUE — Check the sentence against the core concept named in the stem, including every scope word.\n\nShare objectives express desired market portion.\n\nThe statement is true."
+      "TRUE — Market share is the firm's relative weight in a market compared with competitors. Gaining and keeping share is a core marketing objective because it signals competitiveness.\n\nOn this stem (Market share): captured portion of market sales defines share.\n\nNothing in the wording contradicts that marketing test, so the claim is sound.\n\nThe statement is true.\n",
+      "TRUE — Marketing objectives guide how a firm analyses its markets and tries to fulfil customer wishes and needs — including satisfaction, USP, share, sales, and profitability.\n\nRelative share shift indicates improved competitiveness.\n\nThe sentence therefore reports the concept accurately for this case.\n\nThe statement is true.\n",
+      "TRUE — Marketing objectives guide how a firm analyses its markets and tries to fulfil customer wishes and needs — including satisfaction, USP, share, sales, and profitability.\n\nMarket analysis precedes share objective setting.\n\nNothing in the wording contradicts that marketing test, so the claim is sound.\n\nThe statement is true.\n",
+      "TRUE — Market share is the firm's relative weight in a market compared with competitors. Gaining and keeping share is a core marketing objective because it signals competitiveness.\n\nOn this stem (market share): dissatisfaction-driven switching reduces share.\n\nThe sentence therefore reports the concept accurately for this case.\n\nThe statement is true.\n",
+      "TRUE — Sales generate the revenues a business needs to cover production costs and to support profit. Maintaining or increasing sales is therefore a standard marketing objective.\n\nShare objectives express desired market portion.\n\nNothing in the wording contradicts that marketing test, so the claim is sound.\n\nThe statement is true.\n"
     ],
     "difficulty_level": "1/5",
     "tier": "full"
@@ -4688,11 +4688,11 @@
       false
     ],
     "tactical_explanations": [
-      "TRUE — Check the sentence against the core concept named in the stem, including every scope word.\n\nShare rankings show relative importance among firms.\n\nThe statement is true.",
-      "FALSE — Check the sentence against the core concept named in the stem, including every scope word.\n\nMarket analysis informs realistic sales objectives.\n\nThe statement is false. A student who matched the topic to \"Sales objectives are independent of market analysis of wishes and needs\" without checking the rest of the sentence would mark the statement true.\n",
-      "FALSE — Read the quantifier. Words such as never, always, only, or all turn a generally valid idea into a claim that one counterexample rejects.\n\nRising sales still require cost monitoring for profit objectives.\n\nThe statement is false. A student who overlooked the word \"never\" in \"A firm with rising sales never needs to monitor production costs\" would treat the restriction as absent and mark the statement true.\n",
-      "FALSE — Map the scenario onto the textbook category first, then test whether the sentence describes that category accurately.\n\nStock levels do not equal sales to customers.\n\nThe statement is false. A student who matched the topic to \"Sales volume objectives are achieved when warehouse stock levels peak\" without checking the rest of the sentence would mark the statement true.\n",
-      "FALSE — Map the scenario onto the textbook category first, then test whether the sentence describes that category accurately.\n\nSales revenue remains necessary to cover costs alongside differentiation.\n\nThe statement is false. A student who matched the topic to \"Revenue coverage of costs is irrelevant when pursuing differentiation objectives\" without checking the rest of the sentence would mark the statement true.\n"
+      "TRUE — Marketing objectives guide how a firm analyses its markets and tries to fulfil customer wishes and needs — including satisfaction, USP, share, sales, and profitability.\n\nShare rankings show relative importance among firms.\n\nNothing in the wording contradicts that marketing test, so the claim is sound.\n\nThe statement is true.\n",
+      "FALSE — Sales generate the revenues a business needs to cover production costs and to support profit. Maintaining or increasing sales is therefore a standard marketing objective.\n\nMarket analysis informs realistic sales objectives.\n\nSwap in the textbook criterion and the sentence no longer describes the case.\n\nThe statement is false.\n",
+      "FALSE — Sales generate the revenues a business needs to cover production costs and to support profit. Maintaining or increasing sales is therefore a standard marketing objective.\n\nRising sales still require cost monitoring for profit objectives.\n\nThose restricting words stretch a limited idea past what marketing allows.\n\nThe statement is false.\n",
+      "FALSE — Sales generate the revenues a business needs to cover production costs and to support profit. Maintaining or increasing sales is therefore a standard marketing objective.\n\nStock levels do not equal sales to customers.\n\nSwap in the textbook criterion and the sentence no longer describes the case.\n\nThe statement is false.\n",
+      "FALSE — A unique selling proposition (USP) makes a product — or the way it is promoted and perceived — stand out from similar rivals. Branding supports that differentiation so the offer seems special, unique, or better, which helps attract loyal customers.\n\nSales revenue remains necessary to cover costs alongside differentiation.\n\nOnce the defining feature is restored, the assertion falls away.\n\nThe statement is false.\n"
     ],
     "difficulty_level": "1/5",
     "tier": "full"
@@ -4717,11 +4717,11 @@
       true
     ],
     "tactical_explanations": [
-      "TRUE — Check the sentence against the core concept named in the stem, including every scope word.\n\nDefensive efforts target share stabilisation.\n\nThe statement is true.",
-      "TRUE — Check the sentence against the core concept named in the stem, including every scope word.\n\nSales and share provide complementary performance lenses.\n\nThe statement is true.",
-      "TRUE — Check the sentence against the core concept named in the stem, including every scope word.\n\nCompetitiveness reviews include share and rival data.\n\nThe statement is true.",
-      "TRUE — Check the sentence against the core concept named in the stem, including every scope word.\n\nMature markets require share taken from incumbents.\n\nThe statement is true.",
-      "TRUE — Check the sentence against the core concept named in the stem, including every scope word.\n\nShare indicates competitiveness but does not replace profit analysis.\n\nThe statement is true."
+      "TRUE — Marketing objectives guide how a firm analyses its markets and tries to fulfil customer wishes and needs — including satisfaction, USP, share, sales, and profitability.\n\nDefensive efforts target share stabilisation.\n\nUnder that definition the assertion is the right description of the situation.\n\nThe statement is true.\n",
+      "TRUE — Sales generate the revenues a business needs to cover production costs and to support profit. Maintaining or increasing sales is therefore a standard marketing objective.\n\nSales and share provide complementary performance lenses.\n\nUnder that definition the assertion is the right description of the situation.\n\nThe statement is true.\n",
+      "TRUE — Market share is the firm's relative weight in a market compared with competitors. Gaining and keeping share is a core marketing objective because it signals competitiveness.\n\nOn this stem (market share): competitiveness reviews include share and rival data.\n\nUnder that definition the assertion is the right description of the situation.\n\nThe statement is true.\n",
+      "TRUE — Marketing objectives guide how a firm analyses its markets and tries to fulfil customer wishes and needs — including satisfaction, USP, share, sales, and profitability.\n\nMature markets require share taken from incumbents.\n\nNothing in the wording contradicts that marketing test, so the claim is sound.\n\nThe statement is true.\n",
+      "TRUE — Market share is the firm's relative weight in a market compared with competitors. Gaining and keeping share is a core marketing objective because it signals competitiveness.\n\nOn this stem (Market share): share indicates competitiveness but does not replace profit analysis.\n\nNothing in the wording contradicts that marketing test, so the claim is sound.\n\nThe statement is true.\n"
     ],
     "difficulty_level": "1/5",
     "tier": "full"
@@ -4746,11 +4746,11 @@
       false
     ],
     "tactical_explanations": [
-      "FALSE — Check the sentence against the core concept named in the stem, including every scope word.\n\nDissatisfied buyers will not sustain long-run sales through repeat purchase.\n\nThe statement is false. A student who matched the topic to \"Sales growth from dissatisfied one-time buyers is a sustainable long-run strategy\" without checking the rest of the sentence would mark the statement true.\n",
-      "TRUE — Map the scenario onto the textbook category first, then test whether the sentence describes that category accurately.\n\nShare shows position relative to rivals.\n\nThe statement is true.",
-      "FALSE — Check the sentence against the core concept named in the stem, including every scope word.\n\nQuarterly plans commonly include unit sales targets.\n\nThe statement is false. A student who matched the topic to \"Unit sales targets are unrelated to quarterly marketing planning\" without checking the rest of the sentence would mark the statement true.\n",
-      "FALSE — Map the scenario onto the textbook category first, then test whether the sentence describes that category accurately.\n\nProfit in the framework comes from sales revenue minus costs.\n\nThe statement is false. A student who matched the topic to \"Sales are unconnected to profitability because profit comes only from asset sales\" without checking the rest of the sentence would mark the statement true.\n",
-      "FALSE — Read the quantifier. Words such as never, always, only, or all turn a generally valid idea into a claim that one counterexample rejects.\n\nSales maintenance concerns volume sold, not mandatory monthly price rises.\n\nThe statement is false. A student who overlooked the word \"every\" in \"Maintaining sales means prices must rise every month regardless of demand\" would treat the restriction as absent and mark the statement true.\n"
+      "FALSE — Customer satisfaction matters because dissatisfied buyers will not return. Satisfied customers often become loyal and buy again, so this objective interlocks with sales, share, and profit aims.\n\nOn this stem (growth): dissatisfied buyers will not sustain long-run sales through repeat purchase.\n\nOnce the defining feature is restored, the assertion falls away.\n\nThe statement is false.\n",
+      "TRUE — Marketing objectives guide how a firm analyses its markets and tries to fulfil customer wishes and needs — including satisfaction, USP, share, sales, and profitability.\n\nShare shows position relative to rivals.\n\nNothing in the wording contradicts that marketing test, so the claim is sound.\n\nThe statement is true.\n",
+      "FALSE — Sales generate the revenues a business needs to cover production costs and to support profit. Maintaining or increasing sales is therefore a standard marketing objective.\n\nQuarterly plans commonly include unit sales targets.\n\nThe mislabelled category or reversed comparison is enough to reject the claim.\n\nThe statement is false.\n",
+      "FALSE — Sales generate the revenues a business needs to cover production costs and to support profit. Maintaining or increasing sales is therefore a standard marketing objective.\n\nProfit in the framework comes from sales revenue minus costs.\n\nThe absolute wording is what breaks the claim once the correct test is applied.\n\nThe statement is false.\n",
+      "FALSE — Sales generate the revenues a business needs to cover production costs and to support profit. Maintaining or increasing sales is therefore a standard marketing objective.\n\nSales maintenance concerns volume sold, not mandatory monthly price rises.\n\nSwap in the textbook criterion and the sentence no longer describes the case.\n\nThe statement is false.\n"
     ],
     "difficulty_level": "2/5",
     "tier": "full"
@@ -4775,11 +4775,11 @@
       true
     ],
     "tactical_explanations": [
-      "TRUE — Check the sentence against the core concept named in the stem, including every scope word.\n\nShare growth means relative outperformance.\n\nThe statement is true.",
-      "FALSE — Check the sentence against the core concept named in the stem, including every scope word.\n\nSales objectives require purchases generating revenue.\n\nThe statement is false. A student who matched the topic to \"A promotional campaign that raises awareness but not purchases meets sales objectives\" without checking the rest of the sentence would mark the statement true.\n",
-      "FALSE — Check that the comparison runs in the stated direction and attaches the feature to the correct member of the pair.\n\nSales volume reflects customer purchases, not headcount.\n\nThe statement is false. A student who matched the topic to \"Sales volume is measured by the number of employees rather than customer purchases\" without checking the rest of the sentence would mark the statement true.\n",
-      "TRUE — Check the sentence against the core concept named in the stem, including every scope word.\n\nLoyalty from satisfaction aids share defence.\n\nThe statement is true.",
-      "TRUE — Check the sentence against the core concept named in the stem, including every scope word.\n\nShare conveys relative market importance.\n\nThe statement is true."
+      "TRUE — Marketing objectives guide how a firm analyses its markets and tries to fulfil customer wishes and needs — including satisfaction, USP, share, sales, and profitability.\n\nShare growth means relative outperformance.\n\nNothing in the wording contradicts that marketing test, so the claim is sound.\n\nThe statement is true.\n",
+      "FALSE — Sales generate the revenues a business needs to cover production costs and to support profit. Maintaining or increasing sales is therefore a standard marketing objective.\n\nSales objectives require purchases generating revenue.\n\nThe mislabelled category or reversed comparison is enough to reject the claim.\n\nThe statement is false.\n",
+      "FALSE — Sales generate the revenues a business needs to cover production costs and to support profit. Maintaining or increasing sales is therefore a standard marketing objective.\n\nSales volume reflects customer purchases, not headcount.\n\nOnce the defining feature is restored, the assertion falls away.\n\nThe statement is false.\n",
+      "TRUE — Customer satisfaction matters because dissatisfied buyers will not return. Satisfied customers often become loyal and buy again, so this objective interlocks with sales, share, and profit aims.\n\nLoyalty from satisfaction aids share defence.\n\nNothing in the wording contradicts that marketing test, so the claim is sound.\n\nThe statement is true.\n",
+      "TRUE — Market share is the firm's relative weight in a market compared with competitors. Gaining and keeping share is a core marketing objective because it signals competitiveness.\n\nOn this stem (market share): share conveys relative market importance.\n\nThe sentence therefore reports the concept accurately for this case.\n\nThe statement is true.\n"
     ],
     "difficulty_level": "1/5",
     "tier": "full"
@@ -4804,11 +4804,11 @@
       false
     ],
     "tactical_explanations": [
-      "TRUE — Map the scenario onto the textbook category first, then test whether the sentence describes that category accurately.\n\nSales objectives exist because sales produce revenue.\n\nThe statement is true.",
-      "FALSE — Read the quantifier. Words such as never, always, only, or all turn a generally valid idea into a claim that one counterexample rejects.\n\nSatisfaction supports repeat sales; the objectives interrelate.\n\nThe statement is false. A student who overlooked the word \"impossible\" in \"Increasing sales is impossible when pursuing customer satisfaction objectives\" would treat the restriction as absent and mark the statement true.\n",
-      "FALSE — Read the quantifier. Words such as never, always, only, or all turn a generally valid idea into a claim that one counterexample rejects.\n\nDifferentiated products still require sales revenue to cover costs.\n\nThe statement is false. A student who overlooked the word \"cannot\" in \"Sales revenue cannot fund production costs if the product is differentiated\" would treat the restriction as absent and mark the statement true.\n",
-      "TRUE — Map the scenario onto the textbook category first, then test whether the sentence describes that category accurately.\n\nRevenue from sales must cover production costs.\n\nThe statement is true.",
-      "FALSE — Check the sentence against the core concept named in the stem, including every scope word.\n\nObjectives require actual sales performance, not forecasts alone.\n\nThe statement is false. A student who matched the topic to \"A business with zero sales can still meet sales volume objectives through forecasts\" without checking the rest of the sentence would mark the statement true.\n"
+      "TRUE — Sales generate the revenues a business needs to cover production costs and to support profit. Maintaining or increasing sales is therefore a standard marketing objective.\n\nSales objectives exist because sales produce revenue.\n\nUnder that definition the assertion is the right description of the situation.\n\nThe statement is true.\n",
+      "FALSE — Customer satisfaction matters because dissatisfied buyers will not return. Satisfied customers often become loyal and buy again, so this objective interlocks with sales, share, and profit aims.\n\nSatisfaction supports repeat sales; the objectives interrelate.\n\nSwap in the textbook criterion and the sentence no longer describes the case.\n\nThe statement is false.\n",
+      "FALSE — A unique selling proposition (USP) makes a product — or the way it is promoted and perceived — stand out from similar rivals. Branding supports that differentiation so the offer seems special, unique, or better, which helps attract loyal customers.\n\nDifferentiated products still require sales revenue to cover costs.\n\nOne clear counterexample under the right criterion is enough to reject the sentence.\n\nThe statement is false.\n",
+      "TRUE — Sales generate the revenues a business needs to cover production costs and to support profit. Maintaining or increasing sales is therefore a standard marketing objective.\n\nRevenue from sales must cover production costs.\n\nThe sentence therefore reports the concept accurately for this case.\n\nThe statement is true.\n",
+      "FALSE — Sales generate the revenues a business needs to cover production costs and to support profit. Maintaining or increasing sales is therefore a standard marketing objective.\n\nObjectives require actual sales performance, not forecasts alone.\n\nOnce the defining feature is restored, the assertion falls away.\n\nThe statement is false.\n"
     ],
     "difficulty_level": "2/5",
     "tier": "full"
@@ -4833,11 +4833,11 @@
       true
     ],
     "tactical_explanations": [
-      "TRUE — Check the sentence against the core concept named in the stem, including every scope word.\n\nAfter covering costs, sales revenue enables profit.\n\nThe statement is true.",
-      "TRUE — Check the sentence against the core concept named in the stem, including every scope word.\n\nHigher sales strengthen revenue inflow.\n\nThe statement is true.",
-      "TRUE — Check the sentence against the core concept named in the stem, including every scope word.\n\nCampaigns commonly set period sales volume targets.\n\nThe statement is true.",
-      "FALSE — Check the sentence against the core concept named in the stem, including every scope word.\n\nSales support but do not replace profitability objectives.\n\nThe statement is false. A student who matched the topic to \"Sales objectives replace the need for any profitability analysis\" without checking the rest of the sentence would mark the statement true.\n",
-      "TRUE — Check the sentence against the core concept named in the stem, including every scope word.\n\nVolume can be measured in units or revenue.\n\nThe statement is true."
+      "TRUE — Sales generate the revenues a business needs to cover production costs and to support profit. Maintaining or increasing sales is therefore a standard marketing objective.\n\nAfter covering costs, sales revenue enables profit.\n\nNothing in the wording contradicts that marketing test, so the claim is sound.\n\nThe statement is true.\n",
+      "TRUE — Sales generate the revenues a business needs to cover production costs and to support profit. Maintaining or increasing sales is therefore a standard marketing objective.\n\nHigher sales strengthen revenue inflow.\n\nUnder that definition the assertion is the right description of the situation.\n\nThe statement is true.\n",
+      "TRUE — Sales generate the revenues a business needs to cover production costs and to support profit. Maintaining or increasing sales is therefore a standard marketing objective.\n\nCampaigns commonly set period sales volume targets.\n\nNothing in the wording contradicts that marketing test, so the claim is sound.\n\nThe statement is true.\n",
+      "FALSE — Sales generate the revenues a business needs to cover production costs and to support profit. Maintaining or increasing sales is therefore a standard marketing objective.\n\nSales support but do not replace profitability objectives.\n\nThe mislabelled category or reversed comparison is enough to reject the claim.\n\nThe statement is false.\n",
+      "TRUE — Sales generate the revenues a business needs to cover production costs and to support profit. Maintaining or increasing sales is therefore a standard marketing objective.\n\nVolume can be measured in units or revenue.\n\nThe sentence therefore reports the concept accurately for this case.\n\nThe statement is true.\n"
     ],
     "difficulty_level": "1/5",
     "tier": "full"
@@ -4862,11 +4862,11 @@
       true
     ],
     "tactical_explanations": [
-      "TRUE — Read the quantifier. Words such as never, always, only, or all turn a generally valid idea into a claim that one counterexample rejects.\n\nInsufficient sales leave costs uncovered by revenue.\n\nThe statement is true.",
-      "TRUE — Check the sentence against the core concept named in the stem, including every scope word.\n\nSales growth is a recognised marketing objective.\n\nThe statement is true.",
-      "TRUE — Check the sentence against the core concept named in the stem, including every scope word.\n\nSeasonal peaks contribute to annual volume objectives.\n\nThe statement is true.",
-      "FALSE — Check the sentence against the core concept named in the stem, including every scope word.\n\nExport sales contribute to total sales volume.\n\nThe statement is false. A student who matched the topic to \"Revenue from exports does not count toward sales volume objectives\" without checking the rest of the sentence would mark the statement true.\n",
-      "TRUE — Check the sentence against the core concept named in the stem, including every scope word.\n\nHigher sales improve operational cash inflows.\n\nThe statement is true."
+      "TRUE — Sales generate the revenues a business needs to cover production costs and to support profit. Maintaining or increasing sales is therefore a standard marketing objective.\n\nInsufficient sales leave costs uncovered by revenue.\n\nNothing in the wording contradicts that marketing test, so the claim is sound.\n\nThe statement is true.\n",
+      "TRUE — Sales generate the revenues a business needs to cover production costs and to support profit. Maintaining or increasing sales is therefore a standard marketing objective.\n\nSales growth is a recognised marketing objective.\n\nNothing in the wording contradicts that marketing test, so the claim is sound.\n\nThe statement is true.\n",
+      "TRUE — Sales generate the revenues a business needs to cover production costs and to support profit. Maintaining or increasing sales is therefore a standard marketing objective.\n\nSeasonal peaks contribute to annual volume objectives.\n\nUnder that definition the assertion is the right description of the situation.\n\nThe statement is true.\n",
+      "FALSE — Sales generate the revenues a business needs to cover production costs and to support profit. Maintaining or increasing sales is therefore a standard marketing objective.\n\nExport sales contribute to total sales volume.\n\nOnce the defining feature is restored, the assertion falls away.\n\nThe statement is false.\n",
+      "TRUE — Sales generate the revenues a business needs to cover production costs and to support profit. Maintaining or increasing sales is therefore a standard marketing objective.\n\nOn this stem (growth): higher sales improve operational cash inflows.\n\nNothing in the wording contradicts that marketing test, so the claim is sound.\n\nThe statement is true.\n"
     ],
     "difficulty_level": "1/5",
     "tier": "full"
@@ -4891,11 +4891,11 @@
       true
     ],
     "tactical_explanations": [
-      "FALSE — Read the quantifier. Words such as never, always, only, or all turn a generally valid idea into a claim that one counterexample rejects.\n\nHigher sales do not automatically eliminate unit costs.\n\nThe statement is false. A student who overlooked the word \"always\" in \"Higher sales figures always reduce production costs per unit to zero\" would treat the restriction as absent and mark the statement true.\n",
-      "TRUE — Check the sentence against the core concept named in the stem, including every scope word.\n\nDiscounts can temporarily raise sales volume.\n\nThe statement is true.",
-      "FALSE — Check the sentence against the core concept named in the stem, including every scope word.\n\nLoyal satisfied customers contribute to sales growth.\n\nThe statement is false. A student who matched the topic to \"Sales growth objectives are unrelated to customer loyalty from satisfaction\" without checking the rest of the sentence would mark the statement true.\n",
-      "FALSE — Check the sentence against the core concept named in the stem, including every scope word.\n\nFailed products with unsatisfied buyers do not sustain long-term sales.\n\nThe statement is false. A student who matched the topic to \"A temporary sales spike from a failed product satisfies long-term sales objectives\" without checking the rest of the sentence would mark the statement true.\n",
-      "TRUE — Check the sentence against the core concept named in the stem, including every scope word.\n\nMarket analysis informs sales target setting.\n\nThe statement is true."
+      "FALSE — Sales generate the revenues a business needs to cover production costs and to support profit. Maintaining or increasing sales is therefore a standard marketing objective.\n\nHigher sales do not automatically eliminate unit costs.\n\nThe absolute wording is what breaks the claim once the correct test is applied.\n\nThe statement is false.\n",
+      "TRUE — Sales generate the revenues a business needs to cover production costs and to support profit. Maintaining or increasing sales is therefore a standard marketing objective.\n\nDiscounts can temporarily raise sales volume.\n\nThe sentence therefore reports the concept accurately for this case.\n\nThe statement is true.\n",
+      "FALSE — Customer satisfaction matters because dissatisfied buyers will not return. Satisfied customers often become loyal and buy again, so this objective interlocks with sales, share, and profit aims.\n\nLoyal satisfied customers contribute to sales growth.\n\nOnce the defining feature is restored, the assertion falls away.\n\nThe statement is false.\n",
+      "FALSE — Customer satisfaction matters because dissatisfied buyers will not return. Satisfied customers often become loyal and buy again, so this objective interlocks with sales, share, and profit aims.\n\nFailed products with unsatisfied buyers do not sustain long-term sales.\n\nOnce the defining feature is restored, the assertion falls away.\n\nThe statement is false.\n",
+      "TRUE — Sales generate the revenues a business needs to cover production costs and to support profit. Maintaining or increasing sales is therefore a standard marketing objective.\n\nMarket analysis informs sales target setting.\n\nNothing in the wording contradicts that marketing test, so the claim is sound.\n\nThe statement is true.\n"
     ],
     "difficulty_level": "1/5",
     "tier": "full"
@@ -4920,11 +4920,11 @@
       true
     ],
     "tactical_explanations": [
-      "TRUE — Check the sentence against the core concept named in the stem, including every scope word.\n\nProfit requires sales revenue above production costs.\n\nThe statement is true.",
-      "TRUE — Map the scenario onto the textbook category first, then test whether the sentence describes that category accurately.\n\nMature markets may emphasise volume maintenance.\n\nThe statement is true.",
-      "TRUE — Check the sentence against the core concept named in the stem, including every scope word.\n\nSales monitoring tracks objective progress.\n\nThe statement is true.",
-      "TRUE — Check the sentence against the core concept named in the stem, including every scope word.\n\nFalling unit sales indicate missed sales objectives.\n\nThe statement is true.",
-      "TRUE — Check the sentence against the core concept named in the stem, including every scope word.\n\nHigher sales generally support profit with noted limitations.\n\nThe statement is true."
+      "TRUE — Sales generate the revenues a business needs to cover production costs and to support profit. Maintaining or increasing sales is therefore a standard marketing objective.\n\nProfit requires sales revenue above production costs.\n\nThe sentence therefore reports the concept accurately for this case.\n\nThe statement is true.\n",
+      "TRUE — Sales generate the revenues a business needs to cover production costs and to support profit. Maintaining or increasing sales is therefore a standard marketing objective.\n\nMature markets may emphasise volume maintenance.\n\nNothing in the wording contradicts that marketing test, so the claim is sound.\n\nThe statement is true.\n",
+      "TRUE — Sales generate the revenues a business needs to cover production costs and to support profit. Maintaining or increasing sales is therefore a standard marketing objective.\n\nSales monitoring tracks objective progress.\n\nUnder that definition the assertion is the right description of the situation.\n\nThe statement is true.\n",
+      "TRUE — Sales generate the revenues a business needs to cover production costs and to support profit. Maintaining or increasing sales is therefore a standard marketing objective.\n\nOn this stem (decline): falling unit sales indicate missed sales objectives.\n\nThe sentence therefore reports the concept accurately for this case.\n\nThe statement is true.\n",
+      "TRUE — Sales generate the revenues a business needs to cover production costs and to support profit. Maintaining or increasing sales is therefore a standard marketing objective.\n\nHigher sales generally support profit with noted limitations.\n\nUnder that definition the assertion is the right description of the situation.\n\nThe statement is true.\n"
     ],
     "difficulty_level": "1/5",
     "tier": "full"
@@ -4949,11 +4949,11 @@
       true
     ],
     "tactical_explanations": [
-      "TRUE — Map the scenario onto the textbook category first, then test whether the sentence describes that category accurately.\n\nRepeat buyers from satisfaction add to sales volume.\n\nThe statement is true.",
-      "TRUE — Check the sentence against the core concept named in the stem, including every scope word.\n\nGeographic expansion can raise sales volume.\n\nThe statement is true.",
-      "TRUE — Check the sentence against the core concept named in the stem, including every scope word.\n\nQuarterly targets operationalise sales objectives.\n\nThe statement is true.",
-      "FALSE — Map the scenario onto the textbook category first, then test whether the sentence describes that category accurately.\n\nSales complement share objectives; they do not eliminate share relevance.\n\nThe statement is false. A student who matched the topic to \"Sales are important because they allow the firm to ignore market share completely\" without checking the rest of the sentence would mark the statement true.\n",
-      "TRUE — Check the sentence against the core concept named in the stem, including every scope word.\n\nLaunch campaigns often target volume growth.\n\nThe statement is true."
+      "TRUE — Customer satisfaction matters because dissatisfied buyers will not return. Satisfied customers often become loyal and buy again, so this objective interlocks with sales, share, and profit aims.\n\nRepeat buyers from satisfaction add to sales volume.\n\nNothing in the wording contradicts that marketing test, so the claim is sound.\n\nThe statement is true.\n",
+      "TRUE — Sales generate the revenues a business needs to cover production costs and to support profit. Maintaining or increasing sales is therefore a standard marketing objective.\n\nGeographic expansion can raise sales volume.\n\nThe sentence therefore reports the concept accurately for this case.\n\nThe statement is true.\n",
+      "TRUE — Sales generate the revenues a business needs to cover production costs and to support profit. Maintaining or increasing sales is therefore a standard marketing objective.\n\nQuarterly targets operationalise sales objectives.\n\nThe sentence therefore reports the concept accurately for this case.\n\nThe statement is true.\n",
+      "FALSE — Market share is the firm's relative weight in a market compared with competitors. Gaining and keeping share is a core marketing objective because it signals competitiveness.\n\nOn this stem (market share): sales complement share objectives; they do not eliminate share relevance.\n\nOnce the defining feature is restored, the assertion falls away.\n\nThe statement is false.\n",
+      "TRUE — Sales generate the revenues a business needs to cover production costs and to support profit. Maintaining or increasing sales is therefore a standard marketing objective.\n\nLaunch campaigns often target volume growth.\n\nNothing in the wording contradicts that marketing test, so the claim is sound.\n\nThe statement is true.\n"
     ],
     "difficulty_level": "1/5",
     "tier": "full"
@@ -4978,11 +4978,11 @@
       true
     ],
     "tactical_explanations": [
-      "FALSE — Read the quantifier. Words such as never, always, only, or all turn a generally valid idea into a claim that one counterexample rejects.\n\nSales maintenance typically requires continued marketing activity.\n\nThe statement is false. A student who overlooked the word \"entirely\" in \"Maintaining sales requires shutting down marketing expenditure entirely\" would treat the restriction as absent and mark the statement true.\n",
-      "FALSE — Check the sentence against the core concept named in the stem, including every scope word.\n\nRevenue derives from volume and price together.\n\nThe statement is false. A student who matched the topic to \"Sales volume and revenue are unrelated concepts in the marketing objectives framework\" without checking the rest of the sentence would mark the statement true.\n",
-      "FALSE — Check that the comparison runs in the stated direction and attaches the feature to the correct member of the pair.\n\nSales revenue covers production costs in the standard business model described.\n\nThe statement is false. A student who matched the topic to \"Production costs are covered from government grants rather than sales revenue\" without checking the rest of the sentence would mark the statement true.\n",
-      "TRUE — Check the sentence against the core concept named in the stem, including every scope word.\n\nSales matter because they fund cost coverage.\n\nThe statement is true.",
-      "TRUE — Check the sentence against the core concept named in the stem, including every scope word.\n\nChannel sales aggregate into total volume.\n\nThe statement is true."
+      "FALSE — Sales generate the revenues a business needs to cover production costs and to support profit. Maintaining or increasing sales is therefore a standard marketing objective.\n\nSales maintenance typically requires continued marketing activity.\n\nSwap in the textbook criterion and the sentence no longer describes the case.\n\nThe statement is false.\n",
+      "FALSE — Sales generate the revenues a business needs to cover production costs and to support profit. Maintaining or increasing sales is therefore a standard marketing objective.\n\nRevenue derives from volume and price together.\n\nSwap in the textbook criterion and the sentence no longer describes the case.\n\nThe statement is false.\n",
+      "FALSE — Sales generate the revenues a business needs to cover production costs and to support profit. Maintaining or increasing sales is therefore a standard marketing objective.\n\nSales revenue covers production costs in the standard business model described.\n\nSwap in the textbook criterion and the sentence no longer describes the case.\n\nThe statement is false.\n",
+      "TRUE — Sales generate the revenues a business needs to cover production costs and to support profit. Maintaining or increasing sales is therefore a standard marketing objective.\n\nSales matter because they fund cost coverage.\n\nThe sentence therefore reports the concept accurately for this case.\n\nThe statement is true.\n",
+      "TRUE — Sales generate the revenues a business needs to cover production costs and to support profit. Maintaining or increasing sales is therefore a standard marketing objective.\n\nChannel sales aggregate into total volume.\n\nNothing in the wording contradicts that marketing test, so the claim is sound.\n\nThe statement is true.\n"
     ],
     "difficulty_level": "1/5",
     "tier": "full"
@@ -5007,11 +5007,11 @@
       false
     ],
     "tactical_explanations": [
-      "FALSE — Check the sentence against the core concept named in the stem, including every scope word.\n\nProfit remains a distinct objective even with rising sales.\n\nThe statement is false. A student who matched the topic to \"Increasing sales means profitability objectives become unnecessary\" without checking the rest of the sentence would mark the statement true.\n",
-      "TRUE — Map the scenario onto the textbook category first, then test whether the sentence describes that category accurately.\n\nSupply limits can shift focus to maintenance.\n\nThe statement is true.",
-      "FALSE — Map the scenario onto the textbook category first, then test whether the sentence describes that category accurately.\n\nSell-through to customers defines sales achievement.\n\nThe statement is false. A student who matched the topic to \"Sales objectives are fulfilled when distribution centres are built, regardless of sell-through\" without checking the rest of the sentence would mark the statement true.\n",
-      "TRUE — Check the sentence against the core concept named in the stem, including every scope word.\n\nAdvertising can target line-level sales increases.\n\nThe statement is true.",
-      "FALSE — Map the scenario onto the textbook category first, then test whether the sentence describes that category accurately.\n\nProfit requires sales revenue exceeding costs; satisfaction alone does not replace sales.\n\nThe statement is false. A student who matched the topic to \"A firm can make a profit without any sales if customer satisfaction is high\" without checking the rest of the sentence would mark the statement true.\n"
+      "FALSE — Sales generate the revenues a business needs to cover production costs and to support profit. Maintaining or increasing sales is therefore a standard marketing objective.\n\nProfit remains a distinct objective even with rising sales.\n\nOnce the defining feature is restored, the assertion falls away.\n\nThe statement is false.\n",
+      "TRUE — Sales generate the revenues a business needs to cover production costs and to support profit. Maintaining or increasing sales is therefore a standard marketing objective.\n\nOn this stem (growth): supply limits can shift focus to maintenance.\n\nNothing in the wording contradicts that marketing test, so the claim is sound.\n\nThe statement is true.\n",
+      "FALSE — Sales generate the revenues a business needs to cover production costs and to support profit. Maintaining or increasing sales is therefore a standard marketing objective.\n\nSell-through to customers defines sales achievement.\n\nOnce the defining feature is restored, the assertion falls away.\n\nThe statement is false.\n",
+      "TRUE — Sales generate the revenues a business needs to cover production costs and to support profit. Maintaining or increasing sales is therefore a standard marketing objective.\n\nOn this stem (product line): advertising can target line-level sales increases.\n\nThe sentence therefore reports the concept accurately for this case.\n\nThe statement is true.\n",
+      "FALSE — Customer satisfaction matters because dissatisfied buyers will not return. Satisfied customers often become loyal and buy again, so this objective interlocks with sales, share, and profit aims.\n\nProfit requires sales revenue exceeding costs; satisfaction alone does not replace sales.\n\nThe mislabelled category or reversed comparison is enough to reject the claim.\n\nThe statement is false.\n"
     ],
     "difficulty_level": "2/5",
     "tier": "full"
@@ -5036,11 +5036,11 @@
       true
     ],
     "tactical_explanations": [
-      "TRUE — Check the sentence against the core concept named in the stem, including every scope word.\n\nUnit growth enlarges the revenue pool for costs.\n\nThe statement is true.",
-      "FALSE — Map the scenario onto the textbook category first, then test whether the sentence describes that category accurately.\n\nProfits arise from sales revenue relative to costs, not borrowing alone.\n\nThe statement is false. A student who matched the topic to \"Profitability is unrelated to sales because profits come only from borrowed funds\" without checking the rest of the sentence would mark the statement true.\n",
-      "FALSE — Read the quantifier. Words such as never, always, only, or all turn a generally valid idea into a claim that one counterexample rejects.\n\nHigher sales usually increase profit subject to limitations, not infinite cost rises.\n\nThe statement is false. A student who overlooked the word \"always\" in \"Higher sales always reduce profit because production costs rise infinitely with volume\" would treat the restriction as absent and mark the statement true.\n",
-      "FALSE — Read the quantifier. Words such as never, always, only, or all turn a generally valid idea into a claim that one counterexample rejects.\n\nProfits can be retained and reinvested per the text.\n\nThe statement is false. A student who overlooked the word \"cannot\" in \"Profits cannot be retained in the business for reinvestment under any circumstances\" would treat the restriction as absent and mark the statement true.\n",
-      "TRUE — Check the sentence against the core concept named in the stem, including every scope word.\n\nSales data indicates objective achievement.\n\nThe statement is true."
+      "TRUE — Sales generate the revenues a business needs to cover production costs and to support profit. Maintaining or increasing sales is therefore a standard marketing objective.\n\nUnit growth enlarges the revenue pool for costs.\n\nThe sentence therefore reports the concept accurately for this case.\n\nThe statement is true.\n",
+      "FALSE — Sales generate the revenues a business needs to cover production costs and to support profit. Maintaining or increasing sales is therefore a standard marketing objective.\n\nProfits arise from sales revenue relative to costs, not borrowing alone.\n\nThe absolute wording is what breaks the claim once the correct test is applied.\n\nThe statement is false.\n",
+      "FALSE — Sales generate the revenues a business needs to cover production costs and to support profit. Maintaining or increasing sales is therefore a standard marketing objective.\n\nHigher sales usually increase profit subject to limitations, not infinite cost rises.\n\nThe absolute wording is what breaks the claim once the correct test is applied.\n\nThe statement is false.\n",
+      "FALSE — Profitability reimburses owners for invested capital and can be retained for reinvestment. Higher sales often support higher profit, though not without limits on costs and margins.\n\nProfits can be retained and reinvested per the text.\n\nThe absolute wording is what breaks the claim once the correct test is applied.\n\nThe statement is false.\n",
+      "TRUE — Sales generate the revenues a business needs to cover production costs and to support profit. Maintaining or increasing sales is therefore a standard marketing objective.\n\nSales data indicates objective achievement.\n\nNothing in the wording contradicts that marketing test, so the claim is sound.\n\nThe statement is true.\n"
     ],
     "difficulty_level": "2/5",
     "tier": "full"
@@ -5065,11 +5065,11 @@
       false
     ],
     "tactical_explanations": [
-      "TRUE — Check the sentence against the core concept named in the stem, including every scope word.\n\nSales growth does not guarantee profit if costs rise.\n\nThe statement is true.",
-      "FALSE — Check the sentence against the core concept named in the stem, including every scope word.\n\nProfits reimburse owners for invested money.\n\nThe statement is false. A student who matched the topic to \"Profitability objectives exclude owner reimbursement for invested capital\" without checking the rest of the sentence would mark the statement true.\n",
-      "FALSE — Read the quantifier. Words such as never, always, only, or all turn a generally valid idea into a claim that one counterexample rejects.\n\nProfitability is listed among marketing objectives.\n\nThe statement is false. A student who overlooked the word \"never\" in \"Marketing objectives never include profitability because marketing only targets awareness\" would treat the restriction as absent and mark the statement true.\n",
-      "FALSE — Read the quantifier. Words such as never, always, only, or all turn a generally valid idea into a claim that one counterexample rejects.\n\nProfit typically depends on sales and cost performance together.\n\nThe statement is false. A student who overlooked the word \"always\" in \"A firm with falling sales can always increase profit without any cost changes\" would treat the restriction as absent and mark the statement true.\n",
-      "FALSE — Check the sentence against the core concept named in the stem, including every scope word.\n\nRetained profit is internal equity from undistributed profit, not supplier credit.\n\nThe statement is false. A student who matched the topic to \"Retained profit is identical to short-term trade credit from suppliers\" without checking the rest of the sentence would mark the statement true.\n"
+      "TRUE — Sales generate the revenues a business needs to cover production costs and to support profit. Maintaining or increasing sales is therefore a standard marketing objective.\n\nSales growth does not guarantee profit if costs rise.\n\nUnder that definition the assertion is the right description of the situation.\n\nThe statement is true.\n",
+      "FALSE — Profitability reimburses owners for invested capital and can be retained for reinvestment. Higher sales often support higher profit, though not without limits on costs and margins.\n\nProfits reimburse owners for invested money.\n\nSwap in the textbook criterion and the sentence no longer describes the case.\n\nThe statement is false.\n",
+      "FALSE — Profitability reimburses owners for invested capital and can be retained for reinvestment. Higher sales often support higher profit, though not without limits on costs and margins.\n\nProfitability is listed among marketing objectives.\n\nOne clear counterexample under the right criterion is enough to reject the sentence.\n\nThe statement is false.\n",
+      "FALSE — Sales generate the revenues a business needs to cover production costs and to support profit. Maintaining or increasing sales is therefore a standard marketing objective.\n\nProfit typically depends on sales and cost performance together.\n\nThe absolute wording is what breaks the claim once the correct test is applied.\n\nThe statement is false.\n",
+      "FALSE — Profitability reimburses owners for invested capital and can be retained for reinvestment. Higher sales often support higher profit, though not without limits on costs and margins.\n\nRetained profit is internal equity from undistributed profit, not supplier credit.\n\nSwap in the textbook criterion and the sentence no longer describes the case.\n\nThe statement is false.\n"
     ],
     "difficulty_level": "2/5",
     "tier": "full"
@@ -5094,11 +5094,11 @@
       true
     ],
     "tactical_explanations": [
-      "TRUE — Check the sentence against the core concept named in the stem, including every scope word.\n\nOngoing activity requires maintained sales revenue.\n\nThe statement is true.",
-      "FALSE — Check the sentence against the core concept named in the stem, including every scope word.\n\nHigher sales usually support profit with stated limitations.\n\nThe statement is false. A student who matched the topic to \"Profitability and sales objectives are completely unrelated measures\" without checking the rest of the sentence would mark the statement true.\n",
-      "TRUE — Check the sentence against the core concept named in the stem, including every scope word.\n\nAbsolute sales complement relative share measures.\n\nThe statement is true.",
-      "FALSE — Check the sentence against the core concept named in the stem, including every scope word.\n\nOwners are reimbursed through profits, not unit volume alone.\n\nThe statement is false. A student who matched the topic to \"Owners are reimbursed through sales volume alone without any profit calculation\" without checking the rest of the sentence would mark the statement true.\n",
-      "TRUE — Check the sentence against the core concept named in the stem, including every scope word.\n\nBundles can stimulate short-term volume.\n\nThe statement is true."
+      "TRUE — Sales generate the revenues a business needs to cover production costs and to support profit. Maintaining or increasing sales is therefore a standard marketing objective.\n\nOngoing activity requires maintained sales revenue.\n\nNothing in the wording contradicts that marketing test, so the claim is sound.\n\nThe statement is true.\n",
+      "FALSE — Sales generate the revenues a business needs to cover production costs and to support profit. Maintaining or increasing sales is therefore a standard marketing objective.\n\nHigher sales usually support profit with stated limitations.\n\nSwap in the textbook criterion and the sentence no longer describes the case.\n\nThe statement is false.\n",
+      "TRUE — Sales generate the revenues a business needs to cover production costs and to support profit. Maintaining or increasing sales is therefore a standard marketing objective.\n\nAbsolute sales complement relative share measures.\n\nNothing in the wording contradicts that marketing test, so the claim is sound.\n\nThe statement is true.\n",
+      "FALSE — Sales generate the revenues a business needs to cover production costs and to support profit. Maintaining or increasing sales is therefore a standard marketing objective.\n\nOwners are reimbursed through profits, not unit volume alone.\n\nOnce the defining feature is restored, the assertion falls away.\n\nThe statement is false.\n",
+      "TRUE — Sales generate the revenues a business needs to cover production costs and to support profit. Maintaining or increasing sales is therefore a standard marketing objective.\n\nBundles can stimulate short-term volume.\n\nNothing in the wording contradicts that marketing test, so the claim is sound.\n\nThe statement is true.\n"
     ],
     "difficulty_level": "1/5",
     "tier": "full"
@@ -5123,11 +5123,11 @@
       false
     ],
     "tactical_explanations": [
-      "FALSE — Map the scenario onto the textbook category first, then test whether the sentence describes that category accurately.\n\nProfit can be reinvested including in brand and differentiation.\n\nThe statement is false. A student who matched the topic to \"Profit reinvestment is prohibited when a firm pursues USP objectives\" without checking the rest of the sentence would mark the statement true.\n",
-      "TRUE — Check the sentence against the core concept named in the stem, including every scope word.\n\nCustomer purchases generate sales revenue.\n\nThe statement is true.",
-      "FALSE — Check the sentence against the core concept named in the stem, including every scope word.\n\nThe text explicitly notes certain limitations on the sales-profit link.\n\nThe statement is false. A student who matched the topic to \"There are no limitations on the link between higher sales and higher profit\" without checking the rest of the sentence would mark the statement true.\n",
-      "TRUE — Check the sentence against the core concept named in the stem, including every scope word.\n\nSales targets belong in comprehensive marketing plans.\n\nThe statement is true.",
-      "FALSE — Map the scenario onto the textbook category first, then test whether the sentence describes that category accurately.\n\nProfit requires revenue exceeding costs, not share alone.\n\nThe statement is false. A student who matched the topic to \"Profitability is achieved when market share reaches fifty percent regardless of costs\" without checking the rest of the sentence would mark the statement true.\n"
+      "FALSE — A unique selling proposition (USP) makes a product — or the way it is promoted and perceived — stand out from similar rivals. Branding supports that differentiation so the offer seems special, unique, or better, which helps attract loyal customers.\n\nOn this stem (USP): profit can be reinvested including in brand and differentiation.\n\nThe mislabelled category or reversed comparison is enough to reject the claim.\n\nThe statement is false.\n",
+      "TRUE — Sales generate the revenues a business needs to cover production costs and to support profit. Maintaining or increasing sales is therefore a standard marketing objective.\n\nCustomer purchases generate sales revenue.\n\nNothing in the wording contradicts that marketing test, so the claim is sound.\n\nThe statement is true.\n",
+      "FALSE — Sales generate the revenues a business needs to cover production costs and to support profit. Maintaining or increasing sales is therefore a standard marketing objective.\n\nThe text explicitly notes certain limitations on the sales-profit link.\n\nThe mislabelled category or reversed comparison is enough to reject the claim.\n\nThe statement is false.\n",
+      "TRUE — Sales generate the revenues a business needs to cover production costs and to support profit. Maintaining or increasing sales is therefore a standard marketing objective.\n\nSales targets belong in comprehensive marketing plans.\n\nThe sentence therefore reports the concept accurately for this case.\n\nThe statement is true.\n",
+      "FALSE — Market share is the firm's relative weight in a market compared with competitors. Gaining and keeping share is a core marketing objective because it signals competitiveness.\n\nOn this stem (market share): profit requires revenue exceeding costs, not share alone.\n\nOnce the defining feature is restored, the assertion falls away.\n\nThe statement is false.\n"
     ],
     "difficulty_level": "1/5",
     "tier": "full"
@@ -5152,11 +5152,11 @@
       true
     ],
     "tactical_explanations": [
-      "TRUE — Check the sentence against the core concept named in the stem, including every scope word.\n\nOnline channel sales count in total volume.\n\nThe statement is true.",
-      "TRUE — Check the sentence against the core concept named in the stem, including every scope word.\n\nLoyal repeat buyers sustainably add volume.\n\nThe statement is true.",
-      "TRUE — Check the sentence against the core concept named in the stem, including every scope word.\n\nOperations align with sales objective levels.\n\nThe statement is true.",
-      "TRUE — Check the sentence against the core concept named in the stem, including every scope word.\n\nCampaign spikes contribute to period volume.\n\nThe statement is true.",
-      "TRUE — Map the scenario onto the textbook category first, then test whether the sentence describes that category accurately.\n\nSufficient revenue covers both cost types.\n\nThe statement is true."
+      "TRUE — Sales generate the revenues a business needs to cover production costs and to support profit. Maintaining or increasing sales is therefore a standard marketing objective.\n\nOnline channel sales count in total volume.\n\nUnder that definition the assertion is the right description of the situation.\n\nThe statement is true.\n",
+      "TRUE — Customer satisfaction matters because dissatisfied buyers will not return. Satisfied customers often become loyal and buy again, so this objective interlocks with sales, share, and profit aims.\n\nOn this stem (growth): loyal repeat buyers sustainably add volume.\n\nThe sentence therefore reports the concept accurately for this case.\n\nThe statement is true.\n",
+      "TRUE — Sales generate the revenues a business needs to cover production costs and to support profit. Maintaining or increasing sales is therefore a standard marketing objective.\n\nOperations align with sales objective levels.\n\nNothing in the wording contradicts that marketing test, so the claim is sound.\n\nThe statement is true.\n",
+      "TRUE — Sales generate the revenues a business needs to cover production costs and to support profit. Maintaining or increasing sales is therefore a standard marketing objective.\n\nCampaign spikes contribute to period volume.\n\nThe sentence therefore reports the concept accurately for this case.\n\nThe statement is true.\n",
+      "TRUE — Sales generate the revenues a business needs to cover production costs and to support profit. Maintaining or increasing sales is therefore a standard marketing objective.\n\nSufficient revenue covers both cost types.\n\nThe sentence therefore reports the concept accurately for this case.\n\nThe statement is true.\n"
     ],
     "difficulty_level": "1/5",
     "tier": "full"
@@ -5181,11 +5181,11 @@
       false
     ],
     "tactical_explanations": [
-      "FALSE — Map the scenario onto the textbook category first, then test whether the sentence describes that category accurately.\n\nProfits are important to reimburse owners for invested capital.\n\nThe statement is false. A student who matched the topic to \"Profits are unimportant because owners require no return on invested money\" without checking the rest of the sentence would mark the statement true.\n",
-      "FALSE — Read the quantifier. Words such as never, always, only, or all turn a generally valid idea into a claim that one counterexample rejects.\n\nDiscount-driven volume can reduce unit profitability.\n\nThe statement is false. A student who overlooked the word \"always\" in \"A discounting strategy that maximises unit sales always maximises profit simultaneously\" would treat the restriction as absent and mark the statement true.\n",
-      "FALSE — Read the quantifier. Words such as never, always, only, or all turn a generally valid idea into a claim that one counterexample rejects.\n\nObjectives interrelate and can coexist within marketing planning.\n\nThe statement is false. A student who overlooked the word \"cannot\" in \"Profitability objectives conflict with customer satisfaction and cannot coexist\" would treat the restriction as absent and mark the statement true.\n",
-      "TRUE — Check the sentence against the core concept named in the stem, including every scope word.\n\nMonthly actual-versus-target comparison tracks sales objectives.\n\nThe statement is true.",
-      "FALSE — Read the quantifier. Words such as never, always, only, or all turn a generally valid idea into a claim that one counterexample rejects.\n\nRetained profit can fund marketing and reinvestment.\n\nThe statement is false. A student who overlooked the word \"cannot\" in \"Retained earnings from profit cannot finance marketing campaigns\" would treat the restriction as absent and mark the statement true.\n"
+      "FALSE — Profitability reimburses owners for invested capital and can be retained for reinvestment. Higher sales often support higher profit, though not without limits on costs and margins.\n\nProfits are important to reimburse owners for invested capital.\n\nThe mislabelled category or reversed comparison is enough to reject the claim.\n\nThe statement is false.\n",
+      "FALSE — Sales generate the revenues a business needs to cover production costs and to support profit. Maintaining or increasing sales is therefore a standard marketing objective.\n\nDiscount-driven volume can reduce unit profitability.\n\nThose restricting words stretch a limited idea past what marketing allows.\n\nThe statement is false.\n",
+      "FALSE — Customer satisfaction matters because dissatisfied buyers will not return. Satisfied customers often become loyal and buy again, so this objective interlocks with sales, share, and profit aims.\n\nObjectives interrelate and can coexist within marketing planning.\n\nThose restricting words stretch a limited idea past what marketing allows.\n\nThe statement is false.\n",
+      "TRUE — Sales generate the revenues a business needs to cover production costs and to support profit. Maintaining or increasing sales is therefore a standard marketing objective.\n\nMonthly actual-versus-target comparison tracks sales objectives.\n\nNothing in the wording contradicts that marketing test, so the claim is sound.\n\nThe statement is true.\n",
+      "FALSE — Profitability reimburses owners for invested capital and can be retained for reinvestment. Higher sales often support higher profit, though not without limits on costs and margins.\n\nRetained profit can fund marketing and reinvestment.\n\nThe absolute wording is what breaks the claim once the correct test is applied.\n\nThe statement is false.\n"
     ],
     "difficulty_level": "2/5",
     "tier": "full"
@@ -5210,11 +5210,11 @@
       true
     ],
     "tactical_explanations": [
-      "FALSE — Read the quantifier. Words such as never, always, only, or all turn a generally valid idea into a claim that one counterexample rejects.\n\nHigher sales usually mean more profit with certain limitations.\n\nThe statement is false. A student who overlooked the word \"never\" in \"Higher sales figures never contribute to profit under any market condition\" would treat the restriction as absent and mark the statement true.\n",
-      "TRUE — Check the sentence against the core concept named in the stem, including every scope word.\n\nExport growth is a valid sales objective.\n\nThe statement is true.",
-      "TRUE — Check the sentence against the core concept named in the stem, including every scope word.\n\nDemand analysis can revise volume targets.\n\nThe statement is true.",
-      "FALSE — Check the sentence against the core concept named in the stem, including every scope word.\n\nRevenue from sales precedes profit calculation.\n\nThe statement is false. A student who matched the topic to \"Profit is recorded before sales revenue is earned from customers\" without checking the rest of the sentence would mark the statement true.\n",
-      "TRUE — Check the sentence against the core concept named in the stem, including every scope word.\n\nPrice cuts can raise units while changing revenue per unit.\n\nThe statement is true."
+      "FALSE — Sales generate the revenues a business needs to cover production costs and to support profit. Maintaining or increasing sales is therefore a standard marketing objective.\n\nHigher sales usually mean more profit with certain limitations.\n\nThe absolute wording is what breaks the claim once the correct test is applied.\n\nThe statement is false.\n",
+      "TRUE — Sales generate the revenues a business needs to cover production costs and to support profit. Maintaining or increasing sales is therefore a standard marketing objective.\n\nExport growth is a valid sales objective.\n\nNothing in the wording contradicts that marketing test, so the claim is sound.\n\nThe statement is true.\n",
+      "TRUE — Sales generate the revenues a business needs to cover production costs and to support profit. Maintaining or increasing sales is therefore a standard marketing objective.\n\nDemand analysis can revise volume targets.\n\nNothing in the wording contradicts that marketing test, so the claim is sound.\n\nThe statement is true.\n",
+      "FALSE — Sales generate the revenues a business needs to cover production costs and to support profit. Maintaining or increasing sales is therefore a standard marketing objective.\n\nRevenue from sales precedes profit calculation.\n\nThe mislabelled category or reversed comparison is enough to reject the claim.\n\nThe statement is false.\n",
+      "TRUE — Sales generate the revenues a business needs to cover production costs and to support profit. Maintaining or increasing sales is therefore a standard marketing objective.\n\nPrice cuts can raise units while changing revenue per unit.\n\nNothing in the wording contradicts that marketing test, so the claim is sound.\n\nThe statement is true.\n"
     ],
     "difficulty_level": "1/5",
     "tier": "full"
