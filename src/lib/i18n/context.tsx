@@ -11,9 +11,11 @@ import { translate, type Lang } from "./dictionary";
 
 const STORAGE_KEY = "bbe.lang";
 
+type SetLangOptions = { persist?: boolean };
+
 type LanguageContextValue = {
   lang: Lang;
-  setLang: (lang: Lang) => void;
+  setLang: (lang: Lang, options?: SetLangOptions) => void;
   t: (text: string) => string;
 };
 
