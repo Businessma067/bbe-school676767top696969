@@ -3,7 +3,7 @@ import { NavItemLink } from "./NavItemLink";
 
 export function DesktopNav({ items }: { items: NavItem[] }) {
   return (
-    <nav className="hidden min-w-0 flex-1 items-center justify-center gap-x-3 overflow-x-auto lg:flex xl:gap-x-4">
+    <nav className="hidden items-center gap-4 lg:flex xl:gap-6">
       {items.map((item) => (
         <NavItemLink
           key={item.label}

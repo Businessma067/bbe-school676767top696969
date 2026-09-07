@@ -13,6 +13,9 @@ type NavigateOpts = {
 /**
  * Programmatic navigation that stays on `/de/...` or `/uk/...` when the
  * target path is localizable.
+ *
+ * Always sets `search` (default `{}`) so leaving `/dashboard?tab=games` does
+ * not briefly clear the tab on the dashboard before the destination mounts.
  */
 export function useLocalizedNavigate() {
   const navigate = useNavigate();
@@ -27,7 +30,7 @@ export function useLocalizedNavigate() {
       return navigate({
         to: link.to as never,
         params: link.params as never,
-        ...(search ? { search: search as never } : {}),
+        search: (search ?? {}) as never,
         ...(link.hash || hash ? { hash: (link.hash ?? hash) as never } : {}),
         ...(replace != null ? { replace } : {}),
       });

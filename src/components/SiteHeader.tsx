@@ -28,7 +28,7 @@ type SiteHeaderProps = {
 
 function BrandMark({ compact = false }: { compact?: boolean }) {
   return (
-    <LocalizedLink to="/" className="group flex shrink-0 items-center gap-2 sm:gap-3">
+    <LocalizedLink to="/" className="group flex min-w-0 shrink items-center gap-2 sm:gap-3">
       <div
         className={cn(
           "relative grid shrink-0 place-items-center overflow-hidden rounded-xl bg-gradient-to-br from-primary via-accent to-primary shadow-md ring-1 ring-primary/30 transition-transform group-hover:scale-105",
@@ -44,14 +44,21 @@ function BrandMark({ compact = false }: { compact?: boolean }) {
           BBE
         </span>
       </div>
-      <span
-        className={cn(
-          "font-display font-bold tracking-tight text-foreground",
-          compact ? "text-sm" : "text-sm sm:text-base",
-        )}
-      >
-        BBE School
-      </span>
+      {compact ? (
+        <span className="truncate font-display text-sm font-bold tracking-tight text-foreground">
+          BBE School
+        </span>
+      ) : (
+        <div className="flex min-w-0 flex-col leading-tight">
+          <span className="truncate font-display text-sm font-bold tracking-tight text-foreground sm:text-base">
+            BBE School
+          </span>
+          <span className="hidden text-[11px] font-medium text-taupe sm:inline">
+            Exam preparation for WU Vienna
+          </span>
+
+        </div>
+      )}
     </LocalizedLink>
   );
 }
@@ -85,9 +92,10 @@ export function SiteHeader({
     >
       <div
         className={cn(
-          "mx-auto flex items-center gap-2 px-3 py-2.5 sm:gap-3 sm:px-6 sm:py-4 lg:gap-4 lg:px-8",
+          "mx-auto flex items-center justify-between gap-2 px-3 py-2.5 sm:gap-4 sm:px-6 sm:py-4 lg:px-8",
           maxWidthClassName,
-          compact && "py-2.5 sm:py-3",
+          compact && "py-2.5 sm:py-4",
+          navVisible && "gap-3 sm:gap-6",
           innerClassName,
         )}
       >
@@ -95,10 +103,8 @@ export function SiteHeader({
         {center ??
           (navVisible ? (
             <DesktopNav items={navItems} />
-          ) : (
-            <div className="min-w-0 flex-1" aria-hidden="true" />
-          ))}
-        <div className="flex shrink-0 items-center gap-1.5 sm:gap-2.5">
+          ) : null)}
+        <div className="flex shrink-0 items-center gap-1.5 sm:gap-3">
           {actions}
           <LanguageSwitcher />
           <AuthNav />
