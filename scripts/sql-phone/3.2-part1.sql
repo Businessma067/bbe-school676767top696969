@@ -1,1023 +1,528 @@
 -- Update expanded explanations for 3.2-part1 (25 cases).
 -- Safe to re-run: only updates tactical_explanations.
 
-UPDATE public.economics_cases SET tactical_explanations = ARRAY['TRUE — Primary-sector activity extracts raw materials from nature: farming, fishing, mining, and forestry — not manufacturing and not services. Secondary-sector activity processes and manufactures: smelting, assembling, milling, and similar transformation of materials into goods.
+UPDATE public.economics_cases SET tactical_explanations = ARRAY['Mining is primary; smelting and manufacturing are secondary.
 
-Mining is primary; smelting and manufacturing are secondary.
+That is exactly what the claim asserts, so the wording survives a careful check against the standard idea.
 
-Under that classification the assertion describes the situation correctly.
+The statement is true.', 'Tertiary activity delivers services rather than extracting or manufacturing goods.
 
-The statement is true.
-', 'TRUE — Tertiary-sector activity provides services — banking, insurance, coaching, retail, tourism services — rather than extracting materials or manufacturing goods.
+That is exactly what the claim asserts, so the wording survives a careful check against the standard idea.
 
-Tertiary activity delivers services rather than extracting or manufacturing goods.
+The statement is true.', 'Primary activity extracts raw materials from the earth.
 
-The sentence therefore reports the concept accurately for this item.
+That is exactly what the claim asserts, so the wording survives a careful check against the standard idea.
 
-The statement is true.
-', 'TRUE — Primary-sector activity extracts raw materials from nature: farming, fishing, mining, and forestry — not manufacturing and not services.
+The statement is true.', 'Banking and insurance are tertiary services, not primary extraction.
 
-Primary activity extracts raw materials from the earth.
+Because that detail fails, the whole statement fails even if the topic word looks familiar.
 
-The sentence therefore reports the concept accurately for this item.
+The statement is false.', 'Banking and insurance are tertiary services, not secondary manufacturing.
 
-The statement is true.
-', 'FALSE — Primary-sector activity extracts raw materials from nature: farming, fishing, mining, and forestry — not manufacturing and not services. Tertiary-sector activity provides services — banking, insurance, coaching, retail, tourism services — rather than extracting materials or manufacturing goods.
+Because that detail fails, the whole statement fails even if the topic word looks familiar.
 
-Banking and insurance are tertiary services, not primary extraction.
+The statement is false.'] WHERE case_id = 'CASE 3.2.01' AND tier = 'full';
+UPDATE public.economics_cases SET tactical_explanations = ARRAY['Recreation services and instruction are tertiary activity.
 
-Swap in the textbook criterion and the sentence no longer describes the case.
+That is exactly what the claim asserts, so the wording survives a careful check against the standard idea.
 
-The statement is false.
-', 'FALSE — Secondary-sector activity processes and manufactures: smelting, assembling, milling, and similar transformation of materials into goods. Tertiary-sector activity provides services — banking, insurance, coaching, retail, tourism services — rather than extracting materials or manufacturing goods.
+The statement is true.', 'Human resources delivering services are classified as labour.
 
-Banking and insurance are tertiary services, not secondary manufacturing.
+Because that detail fails, the whole statement fails even if the topic word looks familiar.
 
-Once the defining feature is restored, the assertion falls away.
+The statement is false.', 'Producing physical goods from materials is secondary manufacturing.
 
-The statement is false.
-'] WHERE case_id = 'CASE 3.2.01' AND tier = 'full';
-UPDATE public.economics_cases SET tactical_explanations = ARRAY['TRUE — Tertiary-sector activity provides services — banking, insurance, coaching, retail, tourism services — rather than extracting materials or manufacturing goods.
+Because that detail fails, the whole statement fails even if the topic word looks familiar.
 
-Recreation services and instruction are tertiary activity.
+The statement is false.', 'Natural setting does not reclassify service delivery as primary extraction.
 
-In the case setting — a Tyrolean ski resort hires instructors and sells lift passes to local visitors — that reading fits the facts given.
+Because that detail fails, the whole statement fails even if the topic word looks familiar.
 
-The sentence therefore reports the concept accurately for this item.
+The statement is false.', 'Location does not make a service business primary; activity type determines sector.
 
-The statement is true.
-', 'FALSE — Sector classification follows the stage of activity — extraction, manufacturing, or services — not whether the output feels basic or where the premises sit.
+Because that detail fails, the whole statement fails even if the topic word looks familiar.
 
-Human resources delivering services are classified as labour.
+The statement is false.'] WHERE case_id = 'CASE 3.2.02' AND tier = 'full';
+UPDATE public.economics_cases SET tactical_explanations = ARRAY['Mining extracts raw materials and is primary-sector activity.
 
-In the case setting — a Tyrolean ski resort hires instructors and sells lift passes to local visitors — the sentence mislabels the category or overreaches.
+That is exactly what the claim asserts, so the wording survives a careful check against the standard idea.
 
-Swap in the textbook criterion and the sentence no longer describes the case.
+The statement is true.', 'Growing and harvesting crops is primary-sector activity.
 
-The statement is false.
-', 'FALSE — Secondary-sector activity processes and manufactures: smelting, assembling, milling, and similar transformation of materials into goods. Tertiary-sector activity provides services — banking, insurance, coaching, retail, tourism services — rather than extracting materials or manufacturing goods.
+That is exactly what the claim asserts, so the wording survives a careful check against the standard idea.
 
-Producing physical goods from materials is secondary manufacturing.
+The statement is true.', 'Forestry extracts natural resources and is primary activity.
 
-Against the scenario (a Tyrolean ski resort hires instructors and sells lift passes to local visitors), the claim attaches the wrong label.
+That is exactly what the claim asserts, so the wording survives a careful check against the standard idea.
 
-The mislabelled category or reversed comparison is enough to reject the claim.
+The statement is true.', 'Milling into boards is secondary manufacturing.
 
-The statement is false.
-', 'FALSE — Primary-sector activity extracts raw materials from nature: farming, fishing, mining, and forestry — not manufacturing and not services. Tertiary-sector activity provides services — banking, insurance, coaching, retail, tourism services — rather than extracting materials or manufacturing goods.
+That is exactly what the claim asserts, so the wording survives a careful check against the standard idea.
 
-Natural setting does not reclassify service delivery as primary extraction.
+The statement is true.', 'Commercial fishing extracts natural resources and is primary activity.
 
-Against the scenario (a Tyrolean ski resort hires instructors and sells lift passes to local visitors), the claim attaches the wrong label.
+That is exactly what the claim asserts, so the wording survives a careful check against the standard idea.
 
-Swap in the textbook criterion and the sentence no longer describes the case.
+The statement is true.'] WHERE case_id = 'CASE 3.2.03' AND tier = 'full';
+UPDATE public.economics_cases SET tactical_explanations = ARRAY['Selling to consumers is tertiary distribution/trade.
 
-The statement is false.
-', 'FALSE — Primary-sector activity extracts raw materials from nature: farming, fishing, mining, and forestry — not manufacturing and not services.
+That is exactly what the claim asserts, so the wording survives a careful check against the standard idea.
 
-Location does not make a service business primary; activity type determines sector.
+The statement is true.', 'Warehousing and logistics are tertiary services.
 
-In the case setting — a Tyrolean ski resort hires instructors and sells lift passes to local visitors — the sentence mislabels the category or overreaches.
+That is exactly what the claim asserts, so the wording survives a careful check against the standard idea.
 
-Swap in the textbook criterion and the sentence no longer describes the case.
+The statement is true.', 'Vehicle assembly from processed materials is secondary manufacturing.
 
-The statement is false.
-'] WHERE case_id = 'CASE 3.2.02' AND tier = 'full';
-UPDATE public.economics_cases SET tactical_explanations = ARRAY['TRUE — Primary-sector activity extracts raw materials from nature: farming, fishing, mining, and forestry — not manufacturing and not services.
+Because that detail fails, the whole statement fails even if the topic word looks familiar.
 
-Mining extracts raw materials and is primary-sector activity.
+The statement is false.', 'Garment production from materials is secondary even if products are later retailed.
 
-The sentence therefore reports the concept accurately for this item.
+Because that detail fails, the whole statement fails even if the topic word looks familiar.
 
-The statement is true.
-', 'TRUE — Primary-sector activity extracts raw materials from nature: farming, fishing, mining, and forestry — not manufacturing and not services.
+The statement is false.', 'Processing ore or metal into usable forms is secondary transformation.
 
-Growing and harvesting crops is primary-sector activity.
+Because that detail fails, the whole statement fails even if the topic word looks familiar.
 
-Nothing in the keyed reading contradicts the chapter framing used here, so the claim holds.
+The statement is false.'] WHERE case_id = 'CASE 3.2.04' AND tier = 'full';
+UPDATE public.economics_cases SET tactical_explanations = ARRAY['Disaster recovery spending increases gdp even when welfare falls.
 
-The statement is true.
-', 'TRUE — Primary-sector activity extracts raw materials from nature: farming, fishing, mining, and forestry — not manufacturing and not services. Secondary-sector activity processes and manufactures: smelting, assembling, milling, and similar transformation of materials into goods.
+That is exactly what the claim asserts, so the wording survives a careful check against the standard idea.
 
-Forestry extracts natural resources and is primary activity.
+The statement is true.', 'Rebuild spending adds to measured gdp.
 
-Under that classification the assertion describes the situation correctly.
+That is exactly what the claim asserts, so the wording survives a careful check against the standard idea.
 
-The statement is true.
-', 'TRUE — Secondary-sector activity processes and manufactures: smelting, assembling, milling, and similar transformation of materials into goods.
+The statement is true.', 'Gdp can increase from rebuilds even when underlying welfare declined.
 
-Milling into boards is secondary manufacturing.
+That is exactly what the claim asserts, so the wording survives a careful check against the standard idea.
 
-Nothing in the keyed reading contradicts the chapter framing used here, so the claim holds.
+The statement is true.', 'Gdp sums final domestic production over a defined period.
 
-The statement is true.
-', 'TRUE — Primary-sector activity extracts raw materials from nature: farming, fishing, mining, and forestry — not manufacturing and not services.
+That is exactly what the claim asserts, so the wording survives a careful check against the standard idea.
 
-Commercial fishing extracts natural resources and is primary activity.
+The statement is true.', 'Gdp can rise from rebuilds even when underlying welfare declined.
 
-The sentence therefore reports the concept accurately for this item.
+The absolute wording "always" turns a familiar idea into an overclaim. One ordinary counterexample is enough to reject it.
 
-The statement is true.
-'] WHERE case_id = 'CASE 3.2.03' AND tier = 'full';
-UPDATE public.economics_cases SET tactical_explanations = ARRAY['TRUE — Tertiary-sector activity provides services — banking, insurance, coaching, retail, tourism services — rather than extracting materials or manufacturing goods.
+The statement is false.'] WHERE case_id = 'CASE 3.2.05' AND tier = 'full';
+UPDATE public.economics_cases SET tactical_explanations = ARRAY['Banking is classified within the tertiary sector.
 
-Selling to consumers is tertiary distribution/trade.
+That is exactly what the claim asserts, so the wording survives a careful check against the standard idea.
 
-Under that classification the assertion describes the situation correctly.
+The statement is true.', 'Coaching is a service regardless of client location.
 
-The statement is true.
-', 'TRUE — Tertiary-sector activity provides services — banking, insurance, coaching, retail, tourism services — rather than extracting materials or manufacturing goods.
+That is exactly what the claim asserts, so the wording survives a careful check against the standard idea.
 
-Warehousing and logistics are tertiary services.
+The statement is true.', 'Smelting and manufacturing belong to the secondary sector.
 
-Under that classification the assertion describes the situation correctly.
+That is exactly what the claim asserts, so the wording survives a careful check against the standard idea.
 
-The statement is true.
-', 'FALSE — Secondary-sector activity processes and manufactures: smelting, assembling, milling, and similar transformation of materials into goods. Tertiary-sector activity provides services — banking, insurance, coaching, retail, tourism services — rather than extracting materials or manufacturing goods.
+The statement is true.', 'Technical support is a tertiary service.
 
-Vehicle assembly from processed materials is secondary manufacturing.
+That is exactly what the claim asserts, so the wording survives a careful check against the standard idea.
 
-The mislabelled category or reversed comparison is enough to reject the claim.
+The statement is true.', 'Insurance is a financial service, not resource extraction.
 
-The statement is false.
-', 'FALSE — Tertiary-sector activity provides services — banking, insurance, coaching, retail, tourism services — rather than extracting materials or manufacturing goods.
+Because that detail fails, the whole statement fails even if the topic word looks familiar.
 
-Garment production from materials is secondary even if products are later retailed.
+The statement is false.'] WHERE case_id = 'CASE 3.2.06' AND tier = 'full';
+UPDATE public.economics_cases SET tactical_explanations = ARRAY['Emerging countries often rely heavily on primary-sector output.
 
-The mislabelled category or reversed comparison is enough to reject the claim.
+That is exactly what the claim asserts, so the wording survives a careful check against the standard idea.
 
-The statement is false.
-', 'FALSE — Primary-sector activity extracts raw materials from nature: farming, fishing, mining, and forestry — not manufacturing and not services. Secondary-sector activity processes and manufactures: smelting, assembling, milling, and similar transformation of materials into goods.
+The statement is true.', 'Development shifts activity toward secondary and tertiary sectors.
 
-Processing ore or metal into usable forms is secondary transformation.
+That is exactly what the claim asserts, so the wording survives a careful check against the standard idea.
 
-The mislabelled category or reversed comparison is enough to reject the claim.
+The statement is true.', 'Emerging countries often rely heavily on primary-sector output.
 
-The statement is false.
-'] WHERE case_id = 'CASE 3.2.04' AND tier = 'full';
-UPDATE public.economics_cases SET tactical_explanations = ARRAY['TRUE — GDP measures the monetary value of final goods and services produced within national borders. Rebuild spending can raise measured GDP even when wellbeing falls; GDP is not a welfare index.
+Because that detail fails, the whole statement fails even if the topic word looks familiar.
 
-Disaster recovery spending increases gdp even when welfare falls.
+The statement is false.', 'Emerging economies depend more on primary activity, not dominant tertiary shares.
 
-In the case setting — how, after floods a municipality rebuilds bridges and the spending enters national accounts — that reading fits the facts given.
+Because that detail fails, the whole statement fails even if the topic word looks familiar.
 
-Nothing in the keyed reading contradicts the chapter framing used here, so the claim holds.
+The statement is false.', 'Emerging economies depend more on primary activity rather than dominant tertiary shares.
 
-The statement is true.
-', 'TRUE — GDP measures the monetary value of final goods and services produced within national borders. Rebuild spending can raise measured GDP even when wellbeing falls; GDP is not a welfare index.
+Because that detail fails, the whole statement fails even if the topic word looks familiar.
 
-Rebuild spending adds to measured gdp.
+The statement is false.'] WHERE case_id = 'CASE 3.2.07' AND tier = 'full';
+UPDATE public.economics_cases SET tactical_explanations = ARRAY['Component production transforms materials into manufactured goods.
 
-The scenario (how, after floods a municipality rebuilds bridges and the spending enters national accounts) supports that classification.
+That is exactly what the claim asserts, so the wording survives a careful check against the standard idea.
 
-The sentence therefore reports the concept accurately for this item.
+The statement is true.', 'Agricultural production and harvesting remain primary even if some processing occurs on farm.
 
-The statement is true.
-', 'TRUE — GDP measures the monetary value of final goods and services produced within national borders. Rebuild spending can raise measured GDP even when wellbeing falls; GDP is not a welfare index.
+Because that detail fails, the whole statement fails even if the topic word looks familiar.
 
-Gdp can increase from rebuilds even when underlying welfare declined.
+The statement is false.', 'Selling does not reclassify farming or manufacturing into services.
 
-In the case setting — how, after floods a municipality rebuilds bridges and the spending enters national accounts — that reading fits the facts given.
+Because that detail fails, the whole statement fails even if the topic word looks familiar.
 
-Under that classification the assertion describes the situation correctly.
+The statement is false.', 'Manufacturing for business customers remains secondary activity.
 
-The statement is true.
-', 'TRUE — Tertiary-sector activity provides services — banking, insurance, coaching, retail, tourism services — rather than extracting materials or manufacturing goods. GDP measures the monetary value of final goods and services produced within national borders. Rebuild spending can raise measured GDP even when wellbeing falls; GDP is not a welfare index.
+Because that detail fails, the whole statement fails even if the topic word looks familiar.
 
-Gdp sums final domestic production over a defined period.
+The statement is false.', 'Agricultural production remains primary even when products are sold.
 
-The scenario (how, after floods a municipality rebuilds bridges and the spending enters national accounts) supports that classification.
+Because that detail fails, the whole statement fails even if the topic word looks familiar.
 
-Under that classification the assertion describes the situation correctly.
+The statement is false.'] WHERE case_id = 'CASE 3.2.08' AND tier = 'full';
+UPDATE public.economics_cases SET tactical_explanations = ARRAY['Developed eu economies are service-dominated despite food importance.
 
-The statement is true.
-', 'FALSE — GDP measures the monetary value of final goods and services produced within national borders. Rebuild spending can raise measured GDP even when wellbeing falls; GDP is not a welfare index.
+That is exactly what the claim asserts, so the wording survives a careful check against the standard idea.
 
-Gdp can rise from rebuilds even when underlying welfare declined.
+The statement is true.', 'Advanced eu countries typically see services dominate total output.
 
-Against the scenario (how, after floods a municipality rebuilds bridges and the spending enters national accounts), the claim attaches the wrong label.
+That is exactly what the claim asserts, so the wording survives a careful check against the standard idea.
 
-One clear counterexample under the right criterion is enough to reject the sentence.
+The statement is true.', 'Gdp per capita is used as a living-standard indicator.
 
-The statement is false.
-'] WHERE case_id = 'CASE 3.2.05' AND tier = 'full';
-UPDATE public.economics_cases SET tactical_explanations = ARRAY['TRUE — Tertiary-sector activity provides services — banking, insurance, coaching, retail, tourism services — rather than extracting materials or manufacturing goods.
+That is exactly what the claim asserts, so the wording survives a careful check against the standard idea.
 
-Banking is classified within the tertiary sector.
+The statement is true.', 'High tertiary shares typify advanced, not primary-dominated, economies.
 
-Under that classification the assertion describes the situation correctly.
+Because that detail fails, the whole statement fails even if the topic word looks familiar.
 
-The statement is true.
-', 'TRUE — Tertiary-sector activity provides services — banking, insurance, coaching, retail, tourism services — rather than extracting materials or manufacturing goods.
+The statement is false.', 'In developed eu countries the tertiary sector usually exceeds seventy percent.
 
-Coaching is a service regardless of client location.
+Because that detail fails, the whole statement fails even if the topic word looks familiar.
 
-Nothing in the keyed reading contradicts the chapter framing used here, so the claim holds.
+The statement is false.'] WHERE case_id = 'CASE 3.2.09' AND tier = 'full';
+UPDATE public.economics_cases SET tactical_explanations = ARRAY['Gdp avoids double counting by focusing on final output.
 
-The statement is true.
-', 'TRUE — Secondary-sector activity processes and manufactures: smelting, assembling, milling, and similar transformation of materials into goods.
+That is exactly what the claim asserts, so the wording survives a careful check against the standard idea.
 
-Smelting and manufacturing belong to the secondary sector.
+The statement is true.', 'Gdp typically refers to annual domestic final production.
 
-The sentence therefore reports the concept accurately for this item.
+That is exactly what the claim asserts, so the wording survives a careful check against the standard idea.
 
-The statement is true.
-', 'TRUE — Tertiary-sector activity provides services — banking, insurance, coaching, retail, tourism services — rather than extracting materials or manufacturing goods.
+The statement is true.', 'Gdp measures final domestic production over a defined period.
 
-Technical support is a tertiary service.
+That is exactly what the claim asserts, so the wording survives a careful check against the standard idea.
 
-Under that classification the assertion describes the situation correctly.
+The statement is true.', 'Gdp is based on geography of production.
 
-The statement is true.
-', 'FALSE — Primary-sector activity extracts raw materials from nature: farming, fishing, mining, and forestry — not manufacturing and not services. Tertiary-sector activity provides services — banking, insurance, coaching, retail, tourism services — rather than extracting materials or manufacturing goods.
+That is exactly what the claim asserts, so the wording survives a careful check against the standard idea.
 
-Insurance is a financial service, not resource extraction.
+The statement is true.', 'Gdp includes final services produced within borders.
 
-The mislabelled category or reversed comparison is enough to reject the claim.
+That is exactly what the claim asserts, so the wording survives a careful check against the standard idea.
 
-The statement is false.
-'] WHERE case_id = 'CASE 3.2.06' AND tier = 'full';
-UPDATE public.economics_cases SET tactical_explanations = ARRAY['TRUE — Primary-sector activity extracts raw materials from nature: farming, fishing, mining, and forestry — not manufacturing and not services.
+The statement is true.'] WHERE case_id = 'CASE 3.2.10' AND tier = 'full';
+UPDATE public.economics_cases SET tactical_explanations = ARRAY['Gdp share does not by itself show sustainability of growth.
 
-Emerging countries often rely heavily on primary-sector output.
+That is exactly what the claim asserts, so the wording survives a careful check against the standard idea.
 
-The sentence therefore reports the concept accurately for this item.
+The statement is true.', 'The reported figure shows services dominating total output.
 
-The statement is true.
-', 'TRUE — Primary-sector activity extracts raw materials from nature: farming, fishing, mining, and forestry — not manufacturing and not services.
+That is exactly what the claim asserts, so the wording survives a careful check against the standard idea.
 
-Development shifts activity toward secondary and tertiary sectors.
+The statement is true.', 'High tertiary shares characterise advanced eu states.
 
-Nothing in the keyed reading contradicts the chapter framing used here, so the claim holds.
+That is exactly what the claim asserts, so the wording survives a careful check against the standard idea.
 
-The statement is true.
-', 'FALSE — Primary-sector activity extracts raw materials from nature: farming, fishing, mining, and forestry — not manufacturing and not services.
+The statement is true.', 'Advanced eu economies often exceed seventy percent tertiary output.
 
-Emerging countries often rely heavily on primary-sector output.
+That is exactly what the claim asserts, so the wording survives a careful check against the standard idea.
 
-Swap in the textbook criterion and the sentence no longer describes the case.
+The statement is true.', 'More developed economies shift toward services in the three-sector model.
 
-The statement is false.
-', 'FALSE — Tertiary-sector activity provides services — banking, insurance, coaching, retail, tourism services — rather than extracting materials or manufacturing goods. GDP measures the monetary value of final goods and services produced within national borders. Rebuild spending can raise measured GDP even when wellbeing falls; GDP is not a welfare index.
+That is exactly what the claim asserts, so the wording survives a careful check against the standard idea.
 
-Emerging economies depend more on primary activity, not dominant tertiary shares.
+The statement is true.'] WHERE case_id = 'CASE 3.2.11' AND tier = 'full';
+UPDATE public.economics_cases SET tactical_explanations = ARRAY['Real growth uses gdp adjusted for inflation.
 
-Once the defining feature is restored, the assertion falls away.
+That is exactly what the claim asserts, so the wording survives a careful check against the standard idea.
 
-The statement is false.
-', 'FALSE — Tertiary-sector activity provides services — banking, insurance, coaching, retail, tourism services — rather than extracting materials or manufacturing goods.
+The statement is true.', 'Inflation-adjusted per capita figures support growth comparisons.
 
-Emerging economies depend more on primary activity rather than dominant tertiary shares.
+That is exactly what the claim asserts, so the wording survives a careful check against the standard idea.
 
-Swap in the textbook criterion and the sentence no longer describes the case.
+The statement is true.', 'Inflation adjustment isolates real output changes.
 
-The statement is false.
-'] WHERE case_id = 'CASE 3.2.07' AND tier = 'full';
-UPDATE public.economics_cases SET tactical_explanations = ARRAY['TRUE — Secondary-sector activity processes and manufactures: smelting, assembling, milling, and similar transformation of materials into goods.
+That is exactly what the claim asserts, so the wording survives a careful check against the standard idea.
 
-Component production transforms materials into manufactured goods.
+The statement is true.', 'Price rises can inflate nominal gdp without real output gains.
 
-The scenario (a farm selling olive oil while a factory fills an industrial production order) supports that classification.
+The absolute wording "always" turns a familiar idea into an overclaim. One ordinary counterexample is enough to reject it.
 
-Nothing in the keyed reading contradicts the chapter framing used here, so the claim holds.
+The statement is false.', 'Real comparisons generally require inflation adjustment.
 
-The statement is true.
-', 'FALSE — Secondary-sector activity processes and manufactures: smelting, assembling, milling, and similar transformation of materials into goods.
+The absolute wording "never" turns a familiar idea into an overclaim. One ordinary counterexample is enough to reject it.
 
-Agricultural production and harvesting remain primary even if some processing occurs on farm.
+The statement is false.'] WHERE case_id = 'CASE 3.2.12' AND tier = 'full';
+UPDATE public.economics_cases SET tactical_explanations = ARRAY['Coaching remains a service regardless of client location.
 
-Against the scenario (a farm selling olive oil while a factory fills an industrial production order), the claim attaches the wrong label.
+That is exactly what the claim asserts, so the wording survives a careful check against the standard idea.
 
-The mislabelled category or reversed comparison is enough to reject the claim.
+The statement is true.', 'Coaching stays a service even when clients are abroad.
 
-The statement is false.
-', 'FALSE — Tertiary-sector activity provides services — banking, insurance, coaching, retail, tourism services — rather than extracting materials or manufacturing goods.
+That is exactly what the claim asserts, so the wording survives a careful check against the standard idea.
 
-Selling does not reclassify farming or manufacturing into services.
+The statement is true.', 'Home offices are locations for delivering services, not extracting raw materials.
 
-Against the scenario (a farm selling olive oil while a factory fills an industrial production order), the claim attaches the wrong label.
+Because that detail fails, the whole statement fails even if the topic word looks familiar.
 
-Swap in the textbook criterion and the sentence no longer describes the case.
+The statement is false.', 'Services produced domestically can count in home-country gdp.
 
-The statement is false.
-', 'FALSE — Secondary-sector activity processes and manufactures: smelting, assembling, milling, and similar transformation of materials into goods. Tertiary-sector activity provides services — banking, insurance, coaching, retail, tourism services — rather than extracting materials or manufacturing goods.
+The absolute wording "cannot" turns a familiar idea into an overclaim. One ordinary counterexample is enough to reject it.
 
-Manufacturing for business customers remains secondary activity.
+The statement is false.', 'Coaching advice is a service output, not extraction of natural resources.
 
-Against the scenario (a farm selling olive oil while a factory fills an industrial production order), the claim attaches the wrong label.
+Because that detail fails, the whole statement fails even if the topic word looks familiar.
 
-Swap in the textbook criterion and the sentence no longer describes the case.
+The statement is false.'] WHERE case_id = 'CASE 3.2.13' AND tier = 'full';
+UPDATE public.economics_cases SET tactical_explanations = ARRAY['Mining extracts raw materials and is primary activity.
 
-The statement is false.
-', 'FALSE — Tertiary-sector activity provides services — banking, insurance, coaching, retail, tourism services — rather than extracting materials or manufacturing goods.
+That is exactly what the claim asserts, so the wording survives a careful check against the standard idea.
 
-Agricultural production remains primary even when products are sold.
+The statement is true.', 'Assembling cars from materials is secondary activity.
 
-Against the scenario (a farm selling olive oil while a factory fills an industrial production order), the claim attaches the wrong label.
+That is exactly what the claim asserts, so the wording survives a careful check against the standard idea.
 
-The mislabelled category or reversed comparison is enough to reject the claim.
+The statement is true.', 'Assembly of vehicles is secondary even if inputs came from mining.
 
-The statement is false.
-'] WHERE case_id = 'CASE 3.2.08' AND tier = 'full';
-UPDATE public.economics_cases SET tactical_explanations = ARRAY['TRUE — Tertiary-sector activity provides services — banking, insurance, coaching, retail, tourism services — rather than extracting materials or manufacturing goods.
+That is exactly what the claim asserts, so the wording survives a careful check against the standard idea.
 
-Developed eu economies are service-dominated despite food importance.
+The statement is true.', 'Core extraction and manufacturing sectors remain primary and secondary.
 
-Nothing in the keyed reading contradicts the chapter framing used here, so the claim holds.
+That is exactly what the claim asserts, so the wording survives a careful check against the standard idea.
 
-The statement is true.
-', 'TRUE — Tertiary-sector activity provides services — banking, insurance, coaching, retail, tourism services — rather than extracting materials or manufacturing goods.
+The statement is true.', 'Office staff do not reclassify extraction or manufacturing into services.
 
-Advanced eu countries typically see services dominate total output.
+Because that detail fails, the whole statement fails even if the topic word looks familiar.
 
-Under that classification the assertion describes the situation correctly.
+The statement is false.'] WHERE case_id = 'CASE 3.2.14' AND tier = 'full';
+UPDATE public.economics_cases SET tactical_explanations = ARRAY['Incomplete income coverage contributes to gdp criticism.
 
-The statement is true.
-', 'TRUE — GDP measures the monetary value of final goods and services produced within national borders. Rebuild spending can raise measured GDP even when wellbeing falls; GDP is not a welfare index.
+That is exactly what the claim asserts, so the wording survives a careful check against the standard idea.
 
-Gdp per capita is used as a living-standard indicator.
+The statement is true.', 'Informal and non-market activity is often missed by gdp.
 
-Nothing in the keyed reading contradicts the chapter framing used here, so the claim holds.
+The absolute wording "every" turns a familiar idea into an overclaim. One ordinary counterexample is enough to reject it.
 
-The statement is true.
-', 'FALSE — Primary-sector activity extracts raw materials from nature: farming, fishing, mining, and forestry — not manufacturing and not services. Tertiary-sector activity provides services — banking, insurance, coaching, retail, tourism services — rather than extracting materials or manufacturing goods.
+The statement is false.', 'Non-market unpaid work is typically outside gdp scope.
 
-High tertiary shares typify advanced, not primary-dominated, economies.
+The absolute wording "always" turns a familiar idea into an overclaim. One ordinary counterexample is enough to reject it.
 
-Swap in the textbook criterion and the sentence no longer describes the case.
+The statement is false.', 'Unpaid care work typically falls outside gdp measurement boundaries.
 
-The statement is false.
-', 'FALSE — Primary-sector activity extracts raw materials from nature: farming, fishing, mining, and forestry — not manufacturing and not services.
+Because that detail fails, the whole statement fails even if the topic word looks familiar.
 
-In developed eu countries the tertiary sector usually exceeds seventy percent.
+The statement is false.', 'Volunteer labour is generally excluded from official gdp aggregates.
 
-The mislabelled category or reversed comparison is enough to reject the claim.
+The absolute wording "always" turns a familiar idea into an overclaim. One ordinary counterexample is enough to reject it.
 
-The statement is false.
-'] WHERE case_id = 'CASE 3.2.09' AND tier = 'full';
-UPDATE public.economics_cases SET tactical_explanations = ARRAY['TRUE — Tertiary-sector activity provides services — banking, insurance, coaching, retail, tourism services — rather than extracting materials or manufacturing goods. GDP measures the monetary value of final goods and services produced within national borders. Rebuild spending can raise measured GDP even when wellbeing falls; GDP is not a welfare index.
+The statement is false.'] WHERE case_id = 'CASE 3.2.15' AND tier = 'full';
+UPDATE public.economics_cases SET tactical_explanations = ARRAY['Different sectors operate side by side in the same economy.
 
-Gdp avoids double counting by focusing on final output.
+That is exactly what the claim asserts, so the wording survives a careful check against the standard idea.
 
-Under that classification the assertion describes the situation correctly.
+The statement is true.', 'Customer service does not make farming tertiary.
 
-The statement is true.
-', 'TRUE — GDP measures the monetary value of final goods and services produced within national borders. Rebuild spending can raise measured GDP even when wellbeing falls; GDP is not a welfare index.
+Because that detail fails, the whole statement fails even if the topic word looks familiar.
 
-Gdp typically refers to annual domestic final production.
+The statement is false.', 'Insurance is a financial service, not resource extraction.
 
-Nothing in the keyed reading contradicts the chapter framing used here, so the claim holds.
+Because that detail fails, the whole statement fails even if the topic word looks familiar.
 
-The statement is true.
-', 'TRUE — Tertiary-sector activity provides services — banking, insurance, coaching, retail, tourism services — rather than extracting materials or manufacturing goods. GDP measures the monetary value of final goods and services produced within national borders. Rebuild spending can raise measured GDP even when wellbeing falls; GDP is not a welfare index.
+The statement is false.', 'Farming wheat from land is primary agriculture, not secondary manufacturing.
 
-Gdp measures final domestic production over a defined period.
+Because that detail fails, the whole statement fails even if the topic word looks familiar.
 
-The sentence therefore reports the concept accurately for this item.
+The statement is false.', 'Grain harvesting remains primary even when processed into flour later.
 
-The statement is true.
-', 'TRUE — GDP measures the monetary value of final goods and services produced within national borders. Rebuild spending can raise measured GDP even when wellbeing falls; GDP is not a welfare index.
+Because that detail fails, the whole statement fails even if the topic word looks familiar.
 
-Gdp is based on geography of production.
+The statement is false.'] WHERE case_id = 'CASE 3.2.16' AND tier = 'full';
+UPDATE public.economics_cases SET tactical_explanations = ARRAY['Gdp misses quality and sustainability dimensions critics highlight.
 
-Nothing in the keyed reading contradicts the chapter framing used here, so the claim holds.
+That is exactly what the claim asserts, so the wording survives a careful check against the standard idea.
 
-The statement is true.
-', 'TRUE — Tertiary-sector activity provides services — banking, insurance, coaching, retail, tourism services — rather than extracting materials or manufacturing goods. GDP measures the monetary value of final goods and services produced within national borders. Rebuild spending can raise measured GDP even when wellbeing falls; GDP is not a welfare index.
+The statement is true.', 'Gdp does not by itself show sustainability or quality of growth.
 
-Gdp includes final services produced within borders.
+That is exactly what the claim asserts, so the wording survives a careful check against the standard idea.
 
-Under that classification the assertion describes the situation correctly.
+The statement is true.', 'Measured output can rise while welfare remains impaired.
 
-The statement is true.
-'] WHERE case_id = 'CASE 3.2.10' AND tier = 'full';
-UPDATE public.economics_cases SET tactical_explanations = ARRAY['TRUE — Tertiary-sector activity provides services — banking, insurance, coaching, retail, tourism services — rather than extracting materials or manufacturing goods. GDP measures the monetary value of final goods and services produced within national borders. Rebuild spending can raise measured GDP even when wellbeing falls; GDP is not a welfare index.
+That is exactly what the claim asserts, so the wording survives a careful check against the standard idea.
 
-Gdp share does not by itself show sustainability of growth.
+The statement is true.', 'Output can grow without environmental improvement.
 
-The scenario (a GDP report for an EU member state shows services at seventy-four percent of total output) supports that classification.
+That is exactly what the claim asserts, so the wording survives a careful check against the standard idea.
 
-The sentence therefore reports the concept accurately for this item.
+The statement is true.', 'Quality and sustainability are standard gdp criticisms.
 
-The statement is true.
-', 'TRUE — Primary-sector activity extracts raw materials from nature: farming, fishing, mining, and forestry — not manufacturing and not services. Tertiary-sector activity provides services — banking, insurance, coaching, retail, tourism services — rather than extracting materials or manufacturing goods.
+Because that detail fails, the whole statement fails even if the topic word looks familiar.
 
-The reported figure shows services dominating total output.
+The statement is false.'] WHERE case_id = 'CASE 3.2.17' AND tier = 'full';
+UPDATE public.economics_cases SET tactical_explanations = ARRAY['Downstream storage and shipbuilding are not primary extraction.
 
-In the case setting — a GDP report for an EU member state shows services at seventy-four percent of total output — that reading fits the facts given.
+That is exactly what the claim asserts, so the wording survives a careful check against the standard idea.
 
-Under that classification the assertion describes the situation correctly.
+The statement is true.', 'Services can support manufacturing downstream.
 
-The statement is true.
-', 'TRUE — Sector classification follows the stage of activity — extraction, manufacturing, or services — not whether the output feels basic or where the premises sit.
+That is exactly what the claim asserts, so the wording survives a careful check against the standard idea.
 
-High tertiary shares characterise advanced eu states.
+The statement is true.', 'Welding hull sections transforms materials into manufactured vessels.
 
-The scenario (a GDP report for an EU member state shows services at seventy-four percent of total output) supports that classification.
+That is exactly what the claim asserts, so the wording survives a careful check against the standard idea.
 
-Nothing in the keyed reading contradicts the chapter framing used here, so the claim holds.
+The statement is true.', 'Ship construction from steel plate counts as secondary manufacturing output.
 
-The statement is true.
-', 'TRUE — Tertiary-sector activity provides services — banking, insurance, coaching, retail, tourism services — rather than extracting materials or manufacturing goods.
+That is exactly what the claim asserts, so the wording survives a careful check against the standard idea.
 
-Advanced eu economies often exceed seventy percent tertiary output.
+The statement is true.', 'Storage and logistics are tertiary services.
 
-In the case setting — a GDP report for an EU member state shows services at seventy-four percent of total output — that reading fits the facts given.
+That is exactly what the claim asserts, so the wording survives a careful check against the standard idea.
 
-The sentence therefore reports the concept accurately for this item.
+The statement is true.'] WHERE case_id = 'CASE 3.2.18' AND tier = 'full';
+UPDATE public.economics_cases SET tactical_explanations = ARRAY['Inflation-adjusted gdp supports real growth comparisons.
 
-The statement is true.
-', 'TRUE — Tertiary-sector activity provides services — banking, insurance, coaching, retail, tourism services — rather than extracting materials or manufacturing goods.
+That is exactly what the claim asserts, so the wording survives a careful check against the standard idea.
 
-More developed economies shift toward services in the three-sector model.
+The statement is true.', 'Healthcare provision is tertiary service activity.
 
-In the case setting — a GDP report for an EU member state shows services at seventy-four percent of total output — that reading fits the facts given.
+That is exactly what the claim asserts, so the wording survives a careful check against the standard idea.
 
-Nothing in the keyed reading contradicts the chapter framing used here, so the claim holds.
+The statement is true.', 'Real growth requires adjusting for inflation.
 
-The statement is true.
-'] WHERE case_id = 'CASE 3.2.11' AND tier = 'full';
-UPDATE public.economics_cases SET tactical_explanations = ARRAY['TRUE — GDP measures the monetary value of final goods and services produced within national borders. Rebuild spending can raise measured GDP even when wellbeing falls; GDP is not a welfare index.
+That is exactly what the claim asserts, so the wording survives a careful check against the standard idea.
 
-Real growth uses gdp adjusted for inflation.
+The statement is true.', 'Healthcare provision is tertiary service activity.
 
-Under that classification the assertion describes the situation correctly.
+Because that detail fails, the whole statement fails even if the topic word looks familiar.
 
-The statement is true.
-', 'TRUE — GDP measures the monetary value of final goods and services produced within national borders. Rebuild spending can raise measured GDP even when wellbeing falls; GDP is not a welfare index.
+The statement is false.', 'Sector activity contributes to overall measured gdp growth.
 
-Inflation-adjusted per capita figures support growth comparisons.
+The absolute wording "cannot" turns a familiar idea into an overclaim. One ordinary counterexample is enough to reject it.
 
-The sentence therefore reports the concept accurately for this item.
+The statement is false.'] WHERE case_id = 'CASE 3.2.19' AND tier = 'full';
+UPDATE public.economics_cases SET tactical_explanations = ARRAY['Reconstruction outlays enter gdp as new final expenditure.
 
-The statement is true.
-', 'TRUE — GDP measures the monetary value of final goods and services produced within national borders. Rebuild spending can raise measured GDP even when wellbeing falls; GDP is not a welfare index.
+That is exactly what the claim asserts, so the wording survives a careful check against the standard idea.
 
-Inflation adjustment isolates real output changes.
+The statement is true.', 'Repair and rebuild contracts add to measured national output totals.
 
-Nothing in the keyed reading contradicts the chapter framing used here, so the claim holds.
+That is exactly what the claim asserts, so the wording survives a careful check against the standard idea.
 
-The statement is true.
-', 'FALSE — GDP measures the monetary value of final goods and services produced within national borders. Rebuild spending can raise measured GDP even when wellbeing falls; GDP is not a welfare index.
+The statement is true.', 'Gdp may rise from rebuilds without restoring lost welfare.
 
-Price rises can inflate nominal gdp without real output gains.
+Because that detail fails, the whole statement fails even if the topic word looks familiar.
 
-The absolute wording is what breaks the claim once the correct test is applied.
+The statement is false.', 'Recovery and rebuild spending adds to measured output.
 
-The statement is false.
-', 'FALSE — Sector classification follows the stage of activity — extraction, manufacturing, or services — not whether the output feels basic or where the premises sit.
+The absolute wording "automatically" turns a familiar idea into an overclaim. One ordinary counterexample is enough to reject it.
 
-Real comparisons generally require inflation adjustment.
+The statement is false.', 'Rebuild spending is included and can raise gdp.
 
-The absolute wording is what breaks the claim once the correct test is applied.
+Because that detail fails, the whole statement fails even if the topic word looks familiar.
 
-The statement is false.
-'] WHERE case_id = 'CASE 3.2.12' AND tier = 'full';
-UPDATE public.economics_cases SET tactical_explanations = ARRAY['TRUE — Tertiary-sector activity provides services — banking, insurance, coaching, retail, tourism services — rather than extracting materials or manufacturing goods.
+The statement is false.'] WHERE case_id = 'CASE 3.2.20' AND tier = 'full';
+UPDATE public.economics_cases SET tactical_explanations = ARRAY['Garment production from materials is secondary activity.
 
-Coaching remains a service regardless of client location.
+That is exactly what the claim asserts, so the wording survives a careful check against the standard idea.
 
-The scenario (an Estonian coach delivers remote training sessions to clients in other countries) supports that classification.
+The statement is true.', 'Commercial fishing extracts resources and is primary activity.
 
-Nothing in the keyed reading contradicts the chapter framing used here, so the claim holds.
+That is exactly what the claim asserts, so the wording survives a careful check against the standard idea.
 
-The statement is true.
-', 'TRUE — Secondary-sector activity processes and manufactures: smelting, assembling, milling, and similar transformation of materials into goods. Tertiary-sector activity provides services — banking, insurance, coaching, retail, tourism services — rather than extracting materials or manufacturing goods.
+The statement is true.', 'Extracting fish remains primary-sector activity.
 
-Coaching stays a service even when clients are abroad.
+Because that detail fails, the whole statement fails even if the topic word looks familiar.
 
-The scenario (an Estonian coach delivers remote training sessions to clients in other countries) supports that classification.
+The statement is false.', 'Garment manufacturing is secondary, not primary.
 
-Under that classification the assertion describes the situation correctly.
+Because that detail fails, the whole statement fails even if the topic word looks familiar.
 
-The statement is true.
-', 'FALSE — Primary-sector activity extracts raw materials from nature: farming, fishing, mining, and forestry — not manufacturing and not services. Tertiary-sector activity provides services — banking, insurance, coaching, retail, tourism services — rather than extracting materials or manufacturing goods.
+The statement is false.', 'Sewing garments is manufacturing in the secondary sector.
 
-Home offices are locations for delivering services, not extracting raw materials.
+Because that detail fails, the whole statement fails even if the topic word looks familiar.
 
-Against the scenario (an Estonian coach delivers remote training sessions to clients in other countries), the claim attaches the wrong label.
+The statement is false.'] WHERE case_id = 'CASE 3.2.21' AND tier = 'full';
+UPDATE public.economics_cases SET tactical_explanations = ARRAY['Software services are tertiary, not manufacturing, in this context.
 
-The mislabelled category or reversed comparison is enough to reject the claim.
+That is exactly what the claim asserts, so the wording survives a careful check against the standard idea.
 
-The statement is false.
-', 'FALSE — GDP measures the monetary value of final goods and services produced within national borders. Rebuild spending can raise measured GDP even when wellbeing falls; GDP is not a welfare index.
+The statement is true.', 'Repair and support are tertiary service activities.
 
-Services produced domestically can count in home-country gdp.
+That is exactly what the claim asserts, so the wording survives a careful check against the standard idea.
 
-In the case setting — an Estonian coach delivers remote training sessions to clients in other countries — the sentence mislabels the category or overreaches.
+The statement is true.', 'Their activities are classified as services in the tertiary sector.
 
-Those restricting words stretch a limited idea past what the definition allows.
+That is exactly what the claim asserts, so the wording survives a careful check against the standard idea.
 
-The statement is false.
-', 'FALSE — Primary-sector activity extracts raw materials from nature: farming, fishing, mining, and forestry — not manufacturing and not services. Tertiary-sector activity provides services — banking, insurance, coaching, retail, tourism services — rather than extracting materials or manufacturing goods.
+The statement is true.', 'Using devices does not make their support activity primary.
 
-Coaching advice is a service output, not extraction of natural resources.
+That is exactly what the claim asserts, so the wording survives a careful check against the standard idea.
 
-Against the scenario (an Estonian coach delivers remote training sessions to clients in other countries), the claim attaches the wrong label.
+The statement is true.', 'Repair and support are services even when goods are involved.
 
-Swap in the textbook criterion and the sentence no longer describes the case.
+That is exactly what the claim asserts, so the wording survives a careful check against the standard idea.
 
-The statement is false.
-'] WHERE case_id = 'CASE 3.2.13' AND tier = 'full';
-UPDATE public.economics_cases SET tactical_explanations = ARRAY['TRUE — Primary-sector activity extracts raw materials from nature: farming, fishing, mining, and forestry — not manufacturing and not services.
+The statement is true.'] WHERE case_id = 'CASE 3.2.22' AND tier = 'full';
+UPDATE public.economics_cases SET tactical_explanations = ARRAY['Processing ore into metal is secondary activity.
 
-Mining extracts raw materials and is primary activity.
+That is exactly what the claim asserts, so the wording survives a careful check against the standard idea.
 
-The scenario (a Romanian coal mine and a Graz car plant report output in the same quarter) supports that classification.
+The statement is true.', 'Processing ore into metal is secondary transformation.
 
-Nothing in the keyed reading contradicts the chapter framing used here, so the claim holds.
+Because that detail fails, the whole statement fails even if the topic word looks familiar.
 
-The statement is true.
-', 'TRUE — Secondary-sector activity processes and manufactures: smelting, assembling, milling, and similar transformation of materials into goods.
+The statement is false.', 'Smelting transforms extracted ore; only pit extraction is primary.
 
-Assembling cars from materials is secondary activity.
+Because that detail fails, the whole statement fails even if the topic word looks familiar.
 
-The scenario (a Romanian coal mine and a Graz car plant report output in the same quarter) supports that classification.
+The statement is false.', 'Machinery assembly downstream is secondary, not primary extraction.
 
-Nothing in the keyed reading contradicts the chapter framing used here, so the claim holds.
+The absolute wording "every" turns a familiar idea into an overclaim. One ordinary counterexample is enough to reject it.
 
-The statement is true.
-', 'TRUE — Primary-sector activity extracts raw materials from nature: farming, fishing, mining, and forestry — not manufacturing and not services. Secondary-sector activity processes and manufactures: smelting, assembling, milling, and similar transformation of materials into goods.
+The statement is false.', 'Natural origin of ore does not keep smelting in the primary sector.
 
-Assembly of vehicles is secondary even if inputs came from mining.
+Because that detail fails, the whole statement fails even if the topic word looks familiar.
 
-The scenario (a Romanian coal mine and a Graz car plant report output in the same quarter) supports that classification.
+The statement is false.'] WHERE case_id = 'CASE 3.2.23' AND tier = 'full';
+UPDATE public.economics_cases SET tactical_explanations = ARRAY['Real growth uses inflation-adjusted gdp.
 
-Under that classification the assertion describes the situation correctly.
+That is exactly what the claim asserts, so the wording survives a careful check against the standard idea.
 
-The statement is true.
-', 'TRUE — Tertiary-sector activity provides services — banking, insurance, coaching, retail, tourism services — rather than extracting materials or manufacturing goods.
+The statement is true.', 'Real comparisons generally require inflation adjustment.
 
-Core extraction and manufacturing sectors remain primary and secondary.
+That is exactly what the claim asserts, so the wording survives a careful check against the standard idea.
 
-In the case setting — a Romanian coal mine and a Graz car plant report output in the same quarter — that reading fits the facts given.
+The statement is true.', 'With stable prices nominal and real growth align closely.
 
-Under that classification the assertion describes the situation correctly.
+That is exactly what the claim asserts, so the wording survives a careful check against the standard idea.
 
-The statement is true.
-', 'FALSE — Tertiary-sector activity provides services — banking, insurance, coaching, retail, tourism services — rather than extracting materials or manufacturing goods.
+The statement is true.', 'Nominal figures can inflate apparent growth without real gains.
 
-Office staff do not reclassify extraction or manufacturing into services.
+That is exactly what the claim asserts, so the wording survives a careful check against the standard idea.
 
-In the case setting — a Romanian coal mine and a Graz car plant report output in the same quarter — the sentence mislabels the category or overreaches.
+The statement is true.', 'Real growth uses gdp adjusted for inflation.
 
-The mislabelled category or reversed comparison is enough to reject the claim.
+The absolute wording "all" turns a familiar idea into an overclaim. One ordinary counterexample is enough to reject it.
 
-The statement is false.
-'] WHERE case_id = 'CASE 3.2.14' AND tier = 'full';
-UPDATE public.economics_cases SET tactical_explanations = ARRAY['TRUE — GDP measures the monetary value of final goods and services produced within national borders. Rebuild spending can raise measured GDP even when wellbeing falls; GDP is not a welfare index.
+The statement is false.'] WHERE case_id = 'CASE 3.2.24' AND tier = 'full';
+UPDATE public.economics_cases SET tactical_explanations = ARRAY['Printing books is manufacturing in the secondary sector.
 
-Incomplete income coverage contributes to gdp criticism.
+That is exactly what the claim asserts, so the wording survives a careful check against the standard idea.
 
-Nothing in the keyed reading contradicts the chapter framing used here, so the claim holds.
+The statement is true.', 'Retail trade of goods is tertiary activity.
 
-The statement is true.
-', 'FALSE — GDP measures the monetary value of final goods and services produced within national borders. Rebuild spending can raise measured GDP even when wellbeing falls; GDP is not a welfare index.
+That is exactly what the claim asserts, so the wording survives a careful check against the standard idea.
 
-Informal and non-market activity is often missed by gdp.
+The statement is true.', 'Distribution to customers is tertiary-sector activity.
 
-One clear counterexample under the right criterion is enough to reject the sentence.
+That is exactly what the claim asserts, so the wording survives a careful check against the standard idea.
 
-The statement is false.
-', 'FALSE — GDP measures the monetary value of final goods and services produced within national borders. Rebuild spending can raise measured GDP even when wellbeing falls; GDP is not a welfare index.
+The statement is true.', 'Retail and distribution of goods are tertiary even for physical products.
 
-Non-market unpaid work is typically outside gdp scope.
+Because that detail fails, the whole statement fails even if the topic word looks familiar.
 
-Those restricting words stretch a limited idea past what the definition allows.
+The statement is false.', 'Book-related services remain tertiary.
 
-The statement is false.
-', 'FALSE — GDP measures the monetary value of final goods and services produced within national borders. Rebuild spending can raise measured GDP even when wellbeing falls; GDP is not a welfare index.
+Because that detail fails, the whole statement fails even if the topic word looks familiar.
 
-Unpaid care work typically falls outside gdp measurement boundaries.
-
-Swap in the textbook criterion and the sentence no longer describes the case.
-
-The statement is false.
-', 'FALSE — GDP measures the monetary value of final goods and services produced within national borders. Rebuild spending can raise measured GDP even when wellbeing falls; GDP is not a welfare index.
-
-Volunteer labour is generally excluded from official gdp aggregates.
-
-The absolute wording is what breaks the claim once the correct test is applied.
-
-The statement is false.
-'] WHERE case_id = 'CASE 3.2.15' AND tier = 'full';
-UPDATE public.economics_cases SET tactical_explanations = ARRAY['TRUE — Primary-sector activity extracts raw materials from nature: farming, fishing, mining, and forestry — not manufacturing and not services. Tertiary-sector activity provides services — banking, insurance, coaching, retail, tourism services — rather than extracting materials or manufacturing goods.
-
-Different sectors operate side by side in the same economy.
-
-The scenario (an insurance cooperative processes claims while a nearby farm harvests wheat) supports that classification.
-
-Under that classification the assertion describes the situation correctly.
-
-The statement is true.
-', 'FALSE — Tertiary-sector activity provides services — banking, insurance, coaching, retail, tourism services — rather than extracting materials or manufacturing goods.
-
-Customer service does not make farming tertiary.
-
-Against the scenario (an insurance cooperative processes claims while a nearby farm harvests wheat), the claim attaches the wrong label.
-
-Swap in the textbook criterion and the sentence no longer describes the case.
-
-The statement is false.
-', 'FALSE — Primary-sector activity extracts raw materials from nature: farming, fishing, mining, and forestry — not manufacturing and not services. Tertiary-sector activity provides services — banking, insurance, coaching, retail, tourism services — rather than extracting materials or manufacturing goods.
-
-Insurance is a financial service, not resource extraction.
-
-Against the scenario (an insurance cooperative processes claims while a nearby farm harvests wheat), the claim attaches the wrong label.
-
-Swap in the textbook criterion and the sentence no longer describes the case.
-
-The statement is false.
-', 'FALSE — Secondary-sector activity processes and manufactures: smelting, assembling, milling, and similar transformation of materials into goods.
-
-Farming wheat from land is primary agriculture, not secondary manufacturing.
-
-In the case setting — an insurance cooperative processes claims while a nearby farm harvests wheat — the sentence mislabels the category or overreaches.
-
-The mislabelled category or reversed comparison is enough to reject the claim.
-
-The statement is false.
-', 'FALSE — Secondary-sector activity processes and manufactures: smelting, assembling, milling, and similar transformation of materials into goods.
-
-Grain harvesting remains primary even when processed into flour later.
-
-In the case setting — an insurance cooperative processes claims while a nearby farm harvests wheat — the sentence mislabels the category or overreaches.
-
-Once the defining feature is restored, the assertion falls away.
-
-The statement is false.
-'] WHERE case_id = 'CASE 3.2.16' AND tier = 'full';
-UPDATE public.economics_cases SET tactical_explanations = ARRAY['TRUE — GDP measures the monetary value of final goods and services produced within national borders. Rebuild spending can raise measured GDP even when wellbeing falls; GDP is not a welfare index.
-
-Gdp misses quality and sustainability dimensions critics highlight.
-
-Nothing in the keyed reading contradicts the chapter framing used here, so the claim holds.
-
-The statement is true.
-', 'TRUE — GDP measures the monetary value of final goods and services produced within national borders. Rebuild spending can raise measured GDP even when wellbeing falls; GDP is not a welfare index.
-
-Gdp does not by itself show sustainability or quality of growth.
-
-Under that classification the assertion describes the situation correctly.
-
-The statement is true.
-', 'TRUE — GDP measures the monetary value of final goods and services produced within national borders. Rebuild spending can raise measured GDP even when wellbeing falls; GDP is not a welfare index.
-
-Measured output can rise while welfare remains impaired.
-
-Under that classification the assertion describes the situation correctly.
-
-The statement is true.
-', 'TRUE — GDP measures the monetary value of final goods and services produced within national borders. Rebuild spending can raise measured GDP even when wellbeing falls; GDP is not a welfare index.
-
-Output can grow without environmental improvement.
-
-Under that classification the assertion describes the situation correctly.
-
-The statement is true.
-', 'FALSE — GDP measures the monetary value of final goods and services produced within national borders. Rebuild spending can raise measured GDP even when wellbeing falls; GDP is not a welfare index.
-
-Quality and sustainability are standard gdp criticisms.
-
-The mislabelled category or reversed comparison is enough to reject the claim.
-
-The statement is false.
-'] WHERE case_id = 'CASE 3.2.17' AND tier = 'full';
-UPDATE public.economics_cases SET tactical_explanations = ARRAY['TRUE — Primary-sector activity extracts raw materials from nature: farming, fishing, mining, and forestry — not manufacturing and not services.
-
-Downstream storage and shipbuilding are not primary extraction.
-
-In the case setting — a port warehouse stores imported steel before a shipyard welds hull sections — that reading fits the facts given.
-
-Nothing in the keyed reading contradicts the chapter framing used here, so the claim holds.
-
-The statement is true.
-', 'TRUE — Secondary-sector activity processes and manufactures: smelting, assembling, milling, and similar transformation of materials into goods. Tertiary-sector activity provides services — banking, insurance, coaching, retail, tourism services — rather than extracting materials or manufacturing goods.
-
-Services can support manufacturing downstream.
-
-In the case setting — a port warehouse stores imported steel before a shipyard welds hull sections — that reading fits the facts given.
-
-Under that classification the assertion describes the situation correctly.
-
-The statement is true.
-', 'TRUE — Secondary-sector activity processes and manufactures: smelting, assembling, milling, and similar transformation of materials into goods.
-
-Welding hull sections transforms materials into manufactured vessels.
-
-The scenario (a port warehouse stores imported steel before a shipyard welds hull sections) supports that classification.
-
-Under that classification the assertion describes the situation correctly.
-
-The statement is true.
-', 'TRUE — Secondary-sector activity processes and manufactures: smelting, assembling, milling, and similar transformation of materials into goods.
-
-Ship construction from steel plate counts as secondary manufacturing output.
-
-In the case setting — a port warehouse stores imported steel before a shipyard welds hull sections — that reading fits the facts given.
-
-Nothing in the keyed reading contradicts the chapter framing used here, so the claim holds.
-
-The statement is true.
-', 'TRUE — Secondary-sector activity processes and manufactures: smelting, assembling, milling, and similar transformation of materials into goods. Tertiary-sector activity provides services — banking, insurance, coaching, retail, tourism services — rather than extracting materials or manufacturing goods.
-
-Storage and logistics are tertiary services.
-
-The scenario (a port warehouse stores imported steel before a shipyard welds hull sections) supports that classification.
-
-Under that classification the assertion describes the situation correctly.
-
-The statement is true.
-'] WHERE case_id = 'CASE 3.2.18' AND tier = 'full';
-UPDATE public.economics_cases SET tactical_explanations = ARRAY['TRUE — GDP measures the monetary value of final goods and services produced within national borders. Rebuild spending can raise measured GDP even when wellbeing falls; GDP is not a welfare index.
-
-Inflation-adjusted gdp supports real growth comparisons.
-
-In the case setting — a Prague clinic expands while real GDP per capita rises after inflation adjustment — that reading fits the facts given.
-
-Nothing in the keyed reading contradicts the chapter framing used here, so the claim holds.
-
-The statement is true.
-', 'TRUE — Primary-sector activity extracts raw materials from nature: farming, fishing, mining, and forestry — not manufacturing and not services.
-
-Healthcare provision is tertiary service activity.
-
-The scenario (a Prague clinic expands while real GDP per capita rises after inflation adjustment) supports that classification.
-
-Under that classification the assertion describes the situation correctly.
-
-The statement is true.
-', 'TRUE — GDP measures the monetary value of final goods and services produced within national borders. Rebuild spending can raise measured GDP even when wellbeing falls; GDP is not a welfare index.
-
-Real growth requires adjusting for inflation.
-
-In the case setting — a Prague clinic expands while real GDP per capita rises after inflation adjustment — that reading fits the facts given.
-
-Nothing in the keyed reading contradicts the chapter framing used here, so the claim holds.
-
-The statement is true.
-', 'FALSE — Primary-sector activity extracts raw materials from nature: farming, fishing, mining, and forestry — not manufacturing and not services.
-
-Healthcare provision is tertiary service activity.
-
-In the case setting — a Prague clinic expands while real GDP per capita rises after inflation adjustment — the sentence mislabels the category or overreaches.
-
-The mislabelled category or reversed comparison is enough to reject the claim.
-
-The statement is false.
-', 'FALSE — GDP measures the monetary value of final goods and services produced within national borders. Rebuild spending can raise measured GDP even when wellbeing falls; GDP is not a welfare index.
-
-Sector activity contributes to overall measured gdp growth.
-
-In the case setting — a Prague clinic expands while real GDP per capita rises after inflation adjustment — the sentence mislabels the category or overreaches.
-
-The absolute wording is what breaks the claim once the correct test is applied.
-
-The statement is false.
-'] WHERE case_id = 'CASE 3.2.19' AND tier = 'full';
-UPDATE public.economics_cases SET tactical_explanations = ARRAY['TRUE — GDP measures the monetary value of final goods and services produced within national borders. Rebuild spending can raise measured GDP even when wellbeing falls; GDP is not a welfare index.
-
-Reconstruction outlays enter gdp as new final expenditure.
-
-The sentence therefore reports the concept accurately for this item.
-
-The statement is true.
-', 'TRUE — GDP measures the monetary value of final goods and services produced within national borders. Rebuild spending can raise measured GDP even when wellbeing falls; GDP is not a welfare index.
-
-Repair and rebuild contracts add to measured national output totals.
-
-Nothing in the keyed reading contradicts the chapter framing used here, so the claim holds.
-
-The statement is true.
-', 'FALSE — GDP measures the monetary value of final goods and services produced within national borders. Rebuild spending can raise measured GDP even when wellbeing falls; GDP is not a welfare index.
-
-Gdp may rise from rebuilds without restoring lost welfare.
-
-The mislabelled category or reversed comparison is enough to reject the claim.
-
-The statement is false.
-', 'FALSE — GDP measures the monetary value of final goods and services produced within national borders. Rebuild spending can raise measured GDP even when wellbeing falls; GDP is not a welfare index.
-
-Recovery and rebuild spending adds to measured output.
-
-Once the defining feature is restored, the assertion falls away.
-
-The statement is false.
-', 'FALSE — GDP measures the monetary value of final goods and services produced within national borders. Rebuild spending can raise measured GDP even when wellbeing falls; GDP is not a welfare index.
-
-Rebuild spending is included and can raise gdp.
-
-The mislabelled category or reversed comparison is enough to reject the claim.
-
-The statement is false.
-'] WHERE case_id = 'CASE 3.2.20' AND tier = 'full';
-UPDATE public.economics_cases SET tactical_explanations = ARRAY['TRUE — Secondary-sector activity processes and manufactures: smelting, assembling, milling, and similar transformation of materials into goods.
-
-Garment production from materials is secondary activity.
-
-In the case setting — a fishing fleet lands herring while a fashion label sews jackets from imported fabric — that reading fits the facts given.
-
-Under that classification the assertion describes the situation correctly.
-
-The statement is true.
-', 'TRUE — Primary-sector activity extracts raw materials from nature: farming, fishing, mining, and forestry — not manufacturing and not services.
-
-Commercial fishing extracts resources and is primary activity.
-
-In the case setting — a fishing fleet lands herring while a fashion label sews jackets from imported fabric — that reading fits the facts given.
-
-Nothing in the keyed reading contradicts the chapter framing used here, so the claim holds.
-
-The statement is true.
-', 'FALSE — Secondary-sector activity processes and manufactures: smelting, assembling, milling, and similar transformation of materials into goods.
-
-Extracting fish remains primary-sector activity.
-
-In the case setting — a fishing fleet lands herring while a fashion label sews jackets from imported fabric — the sentence mislabels the category or overreaches.
-
-Once the defining feature is restored, the assertion falls away.
-
-The statement is false.
-', 'FALSE — Primary-sector activity extracts raw materials from nature: farming, fishing, mining, and forestry — not manufacturing and not services.
-
-Garment manufacturing is secondary, not primary.
-
-In the case setting — a fishing fleet lands herring while a fashion label sews jackets from imported fabric — the sentence mislabels the category or overreaches.
-
-Once the defining feature is restored, the assertion falls away.
-
-The statement is false.
-', 'FALSE — Tertiary-sector activity provides services — banking, insurance, coaching, retail, tourism services — rather than extracting materials or manufacturing goods.
-
-Sewing garments is manufacturing in the secondary sector.
-
-Against the scenario (a fishing fleet lands herring while a fashion label sews jackets from imported fabric), the claim attaches the wrong label.
-
-Swap in the textbook criterion and the sentence no longer describes the case.
-
-The statement is false.
-'] WHERE case_id = 'CASE 3.2.21' AND tier = 'full';
-UPDATE public.economics_cases SET tactical_explanations = ARRAY['TRUE — Tertiary-sector activity provides services — banking, insurance, coaching, retail, tourism services — rather than extracting materials or manufacturing goods.
-
-Software services are tertiary, not manufacturing, in this context.
-
-Nothing in the keyed reading contradicts the chapter framing used here, so the claim holds.
-
-The statement is true.
-', 'TRUE — Tertiary-sector activity provides services — banking, insurance, coaching, retail, tourism services — rather than extracting materials or manufacturing goods.
-
-Repair and support are tertiary service activities.
-
-Nothing in the keyed reading contradicts the chapter framing used here, so the claim holds.
-
-The statement is true.
-', 'TRUE — Tertiary-sector activity provides services — banking, insurance, coaching, retail, tourism services — rather than extracting materials or manufacturing goods.
-
-Their activities are classified as services in the tertiary sector.
-
-Nothing in the keyed reading contradicts the chapter framing used here, so the claim holds.
-
-The statement is true.
-', 'TRUE — Primary-sector activity extracts raw materials from nature: farming, fishing, mining, and forestry — not manufacturing and not services.
-
-Using devices does not make their support activity primary.
-
-The sentence therefore reports the concept accurately for this item.
-
-The statement is true.
-', 'TRUE — Secondary-sector activity processes and manufactures: smelting, assembling, milling, and similar transformation of materials into goods.
-
-Repair and support are services even when goods are involved.
-
-The sentence therefore reports the concept accurately for this item.
-
-The statement is true.
-'] WHERE case_id = 'CASE 3.2.22' AND tier = 'full';
-UPDATE public.economics_cases SET tactical_explanations = ARRAY['TRUE — Secondary-sector activity processes and manufactures: smelting, assembling, milling, and similar transformation of materials into goods.
-
-Processing ore into metal is secondary activity.
-
-In the case setting — a mining pit extracts ore while downstream smelters shape metal for machinery plants — that reading fits the facts given.
-
-Under that classification the assertion describes the situation correctly.
-
-The statement is true.
-', 'FALSE — Primary-sector activity extracts raw materials from nature: farming, fishing, mining, and forestry — not manufacturing and not services. Secondary-sector activity processes and manufactures: smelting, assembling, milling, and similar transformation of materials into goods.
-
-Processing ore into metal is secondary transformation.
-
-Against the scenario (a mining pit extracts ore while downstream smelters shape metal for machinery plants), the claim attaches the wrong label.
-
-Once the defining feature is restored, the assertion falls away.
-
-The statement is false.
-', 'FALSE — Primary-sector activity extracts raw materials from nature: farming, fishing, mining, and forestry — not manufacturing and not services.
-
-Smelting transforms extracted ore; only pit extraction is primary.
-
-Against the scenario (a mining pit extracts ore while downstream smelters shape metal for machinery plants), the claim attaches the wrong label.
-
-Once the defining feature is restored, the assertion falls away.
-
-The statement is false.
-', 'FALSE — Primary-sector activity extracts raw materials from nature: farming, fishing, mining, and forestry — not manufacturing and not services.
-
-Machinery assembly downstream is secondary, not primary extraction.
-
-Against the scenario (a mining pit extracts ore while downstream smelters shape metal for machinery plants), the claim attaches the wrong label.
-
-Swap in the textbook criterion and the sentence no longer describes the case.
-
-The statement is false.
-', 'FALSE — Primary-sector activity extracts raw materials from nature: farming, fishing, mining, and forestry — not manufacturing and not services. Secondary-sector activity processes and manufactures: smelting, assembling, milling, and similar transformation of materials into goods.
-
-Natural origin of ore does not keep smelting in the primary sector.
-
-In the case setting — a mining pit extracts ore while downstream smelters shape metal for machinery plants — the sentence mislabels the category or overreaches.
-
-Once the defining feature is restored, the assertion falls away.
-
-The statement is false.
-'] WHERE case_id = 'CASE 3.2.23' AND tier = 'full';
-UPDATE public.economics_cases SET tactical_explanations = ARRAY['TRUE — GDP measures the monetary value of final goods and services produced within national borders. Rebuild spending can raise measured GDP even when wellbeing falls; GDP is not a welfare index.
-
-Real growth uses inflation-adjusted gdp.
-
-Under that classification the assertion describes the situation correctly.
-
-The statement is true.
-', 'TRUE — Sector classification follows the stage of activity — extraction, manufacturing, or services — not whether the output feels basic or where the premises sit.
-
-Real comparisons generally require inflation adjustment.
-
-Under that classification the assertion describes the situation correctly.
-
-The statement is true.
-', 'TRUE — Sector classification follows the stage of activity — extraction, manufacturing, or services — not whether the output feels basic or where the premises sit.
-
-With stable prices nominal and real growth align closely.
-
-Under that classification the assertion describes the situation correctly.
-
-The statement is true.
-', 'TRUE — Sector classification follows the stage of activity — extraction, manufacturing, or services — not whether the output feels basic or where the premises sit.
-
-Nominal figures can inflate apparent growth without real gains.
-
-Under that classification the assertion describes the situation correctly.
-
-The statement is true.
-', 'FALSE — GDP measures the monetary value of final goods and services produced within national borders. Rebuild spending can raise measured GDP even when wellbeing falls; GDP is not a welfare index.
-
-Real growth uses gdp adjusted for inflation.
-
-Swap in the textbook criterion and the sentence no longer describes the case.
-
-The statement is false.
-'] WHERE case_id = 'CASE 3.2.24' AND tier = 'full';
-UPDATE public.economics_cases SET tactical_explanations = ARRAY['TRUE — Secondary-sector activity processes and manufactures: smelting, assembling, milling, and similar transformation of materials into goods.
-
-Printing books is manufacturing in the secondary sector.
-
-In the case setting — a bookstore branch distributes publishers'' titles to local readers — that reading fits the facts given.
-
-The sentence therefore reports the concept accurately for this item.
-
-The statement is true.
-', 'TRUE — Tertiary-sector activity provides services — banking, insurance, coaching, retail, tourism services — rather than extracting materials or manufacturing goods.
-
-Retail trade of goods is tertiary activity.
-
-In the case setting — a bookstore branch distributes publishers'' titles to local readers — that reading fits the facts given.
-
-The sentence therefore reports the concept accurately for this item.
-
-The statement is true.
-', 'TRUE — Tertiary-sector activity provides services — banking, insurance, coaching, retail, tourism services — rather than extracting materials or manufacturing goods.
-
-Distribution to customers is tertiary-sector activity.
-
-The scenario (a bookstore branch distributes publishers'' titles to local readers) supports that classification.
-
-Under that classification the assertion describes the situation correctly.
-
-The statement is true.
-', 'FALSE — Secondary-sector activity processes and manufactures: smelting, assembling, milling, and similar transformation of materials into goods.
-
-Retail and distribution of goods are tertiary even for physical products.
-
-In the case setting — a bookstore branch distributes publishers'' titles to local readers — the sentence mislabels the category or overreaches.
-
-Once the defining feature is restored, the assertion falls away.
-
-The statement is false.
-', 'FALSE — Primary-sector activity extracts raw materials from nature: farming, fishing, mining, and forestry — not manufacturing and not services.
-
-Book-related services remain tertiary.
-
-Against the scenario (a bookstore branch distributes publishers'' titles to local readers), the claim attaches the wrong label.
-
-The mislabelled category or reversed comparison is enough to reject the claim.
-
-The statement is false.
-'] WHERE case_id = 'CASE 3.2.25' AND tier = 'full';
+The statement is false.'] WHERE case_id = 'CASE 3.2.25' AND tier = 'full';

@@ -1,903 +1,528 @@
 -- Update expanded explanations for 5.6-part2 (25 cases).
 -- Safe to re-run: only updates tactical_explanations.
 
-UPDATE public.economics_cases SET tactical_explanations = ARRAY['TRUE — Segmentation splits the market into relatively homogeneous groups (geographic, demographic, psychographic, behavioural) when those groups are measurable, profitable, accessible, and durable.
+UPDATE public.economics_cases SET tactical_explanations = ARRAY['Customers in a mountain province and valley municipalities form a geographic segment based on place.
 
-On this stem (segmentation): customers in a mountain province and valley municipalities form a geographic segment based on place.
+That is exactly what the claim asserts, so the wording survives a careful check against the standard idea.
 
-Under that definition the assertion is the right description of the situation.
+The statement is true.', 'Households grouped by declared income brackets exemplify demographic segmentation variables.
 
-The statement is true.
-', 'TRUE — Segmentation splits the market into relatively homogeneous groups (geographic, demographic, psychographic, behavioural) when those groups are measurable, profitable, accessible, and durable.
+That is exactly what the claim asserts, so the wording survives a careful check against the standard idea.
 
-On this stem (households / segmentation): households grouped by declared income brackets exemplify demographic segmentation variables.
+The statement is true.', 'Mass marketing uses one product broadly, not a different formula for every street in a capital district and peripheral suburbs.
 
-Nothing in the wording contradicts that marketing test, so the claim is sound.
+The absolute wording "every" turns a familiar idea into an overclaim. One ordinary counterexample is enough to reject it.
 
-The statement is true.
-', 'FALSE — Mass marketing ignores segment differences and offers essentially the same product and promotion to everyone. Large identical runs can spread fixed costs and lower unit cost (economies of scale), but the approach is inflexible.
+The statement is false.', 'Shoppers prioritising reliability over fashionable novelty illustrate psychographic segmentation.
 
-Mass marketing uses one product broadly, not a different formula for every street in a capital district and peripheral suburbs.
+That is exactly what the claim asserts, so the wording survives a careful check against the standard idea.
 
-Once the defining feature is restored, the assertion falls away.
+The statement is true.', 'Niche marketing narrows focus; one identical national product is mass marketing.
 
-The statement is false.
-', 'TRUE — Segmentation splits the market into relatively homogeneous groups (geographic, demographic, psychographic, behavioural) when those groups are measurable, profitable, accessible, and durable.
+Because that detail fails, the whole statement fails even if the topic word looks familiar.
 
-On this stem (Targeting / segmentation): shoppers prioritising reliability over fashionable novelty illustrate psychographic segmentation.
+The statement is false.'] WHERE case_id = 'CASE 5.6.26' AND tier = 'full';
+UPDATE public.economics_cases SET tactical_explanations = ARRAY['Infrequent maintainers rather than continuous heavy consumers illustrate behavioural segmentation.
 
-The sentence therefore reports the concept accurately for this case.
+That is exactly what the claim asserts, so the wording survives a careful check against the standard idea.
 
-The statement is true.
-', 'FALSE — Niche marketing concentrates on particular subgroups within segments, often suited to small or specialised firms that cannot — or choose not to — serve a mass market.
+The statement is true.', 'Data on a mountain province and valley municipalities can make the geographic segment measurable in size and purchasing power.
 
-Niche marketing narrows focus; one identical national product is mass marketing.
+That is exactly what the claim asserts, so the wording survives a careful check against the standard idea.
 
-Swap in the textbook criterion and the sentence no longer describes the case.
+The statement is true.', 'Segment marketing tailors to self-employed professionals and salaried staff; ignoring differences describes mass marketing.
 
-The statement is false.
-'] WHERE case_id = 'CASE 5.6.26' AND tier = 'full';
-UPDATE public.economics_cases SET tactical_explanations = ARRAY['TRUE — Segmentation splits the market into relatively homogeneous groups (geographic, demographic, psychographic, behavioural) when those groups are measurable, profitable, accessible, and durable.
+Because that detail fails, the whole statement fails even if the topic word looks familiar.
 
-Infrequent maintainers rather than continuous heavy consumers illustrate behavioural segmentation.
+The statement is false.', 'Positioning still creates identity for the chosen subgroup after segmentation and targeting.
 
-Under that definition the assertion is the right description of the situation.
+Because that detail fails, the whole statement fails even if the topic word looks familiar.
 
-The statement is true.
-', 'TRUE — Segmentation splits the market into relatively homogeneous groups (geographic, demographic, psychographic, behavioural) when those groups are measurable, profitable, accessible, and durable.
+The statement is false.', 'Profitability for households grouped by declared income brackets requires revenue to cover the cost of serving that demographic subgroup.
 
-Data on a mountain province and valley municipalities can make the geographic segment measurable in size and purchasing power.
+That is exactly what the claim asserts, so the wording survives a careful check against the standard idea.
 
-Under that definition the assertion is the right description of the situation.
+The statement is true.'] WHERE case_id = 'CASE 5.6.27' AND tier = 'full';
+UPDATE public.economics_cases SET tactical_explanations = ARRAY['Accessible channels must reach shoppers prioritising reliability over fashionable novelty for viable targeting.
 
-The statement is true.
-', 'FALSE — Segmentation splits the market into relatively homogeneous groups (geographic, demographic, psychographic, behavioural) when those groups are measurable, profitable, accessible, and durable.
+That is exactly what the claim asserts, so the wording survives a careful check against the standard idea.
 
-Segment marketing tailors to self-employed professionals and salaried staff; ignoring differences describes mass marketing.
+The statement is true.', 'Durability for infrequent maintainers rather than continuous heavy consumers means the behavioural pattern persists long enough for planning.
 
-The mislabelled category or reversed comparison is enough to reject the claim.
+That is exactly what the claim asserts, so the wording survives a careful check against the standard idea.
 
-The statement is false.
-', 'FALSE — Segmentation splits the market into relatively homogeneous groups (geographic, demographic, psychographic, behavioural) when those groups are measurable, profitable, accessible, and durable.
+The statement is true.', 'Targeting evaluates attractiveness before selecting light users of software licences rather than power users or any subgroup.
 
-On this stem (Positioning / software licences): positioning still creates identity for the chosen subgroup after segmentation and targeting.
+The absolute wording "every" turns a familiar idea into an overclaim. One ordinary counterexample is enough to reject it.
 
-Once the defining feature is restored, the assertion falls away.
+The statement is false.', 'Niche focus on users wanting hands-on help when starting equipment typically lacks the very large identical output that drives scale economies.
 
-The statement is false.
-', 'TRUE — Segmentation splits the market into relatively homogeneous groups (geographic, demographic, psychographic, behavioural) when those groups are measurable, profitable, accessible, and durable.
+Because that detail fails, the whole statement fails even if the topic word looks familiar.
 
-Profitability for households grouped by declared income brackets requires revenue to cover the cost of serving that demographic subgroup.
+The statement is false.', 'Strategic fit implies focus on chosen segments such as self-employed professionals and salaried staff, not equal coverage of all segments.
 
-Nothing in the wording contradicts that marketing test, so the claim is sound.
+The absolute wording "every" turns a familiar idea into an overclaim. One ordinary counterexample is enough to reject it.
 
-The statement is true.
-'] WHERE case_id = 'CASE 5.6.27' AND tier = 'full';
-UPDATE public.economics_cases SET tactical_explanations = ARRAY['TRUE — Segmentation splits the market into relatively homogeneous groups (geographic, demographic, psychographic, behavioural) when those groups are measurable, profitable, accessible, and durable.
+The statement is false.'] WHERE case_id = 'CASE 5.6.28' AND tier = 'full';
+UPDATE public.economics_cases SET tactical_explanations = ARRAY['A single staple promoted uniformly across a mountain province and valley municipalities and elsewhere fits mass marketing.
 
-Accessible channels must reach shoppers prioritising reliability over fashionable novelty for viable targeting.
+That is exactly what the claim asserts, so the wording survives a careful check against the standard idea.
 
-Under that definition the assertion is the right description of the situation.
+The statement is true.', 'Differentiated products for households grouped by declared income brackets reflect segment marketing.
 
-The statement is true.
-', 'TRUE — Segmentation splits the market into relatively homogeneous groups (geographic, demographic, psychographic, behavioural) when those groups are measurable, profitable, accessible, and durable.
+That is exactly what the claim asserts, so the wording survives a careful check against the standard idea.
 
-Durability for infrequent maintainers rather than continuous heavy consumers means the behavioural pattern persists long enough for planning.
+The statement is true.', 'A focused offer for shoppers prioritising reliability over fashionable novelty reflects niche marketing within a broader market.
 
-Nothing in the wording contradicts that marketing test, so the claim is sound.
+That is exactly what the claim asserts, so the wording survives a careful check against the standard idea.
 
-The statement is true.
-', 'FALSE — Targeting evaluates segment attractiveness and selects which group(s) the firm will serve with a tailored marketing mix.
+The statement is true.', 'Small customised batches for users wanting hands-on help when starting equipment do not automatically enjoy mass-production scale economies.
 
-On this stem (Targeting / software licences): targeting evaluates attractiveness before selecting light users of software licences rather than power users or any subgroup.
+The absolute wording "always" turns a familiar idea into an overclaim. One ordinary counterexample is enough to reject it.
 
-The mislabelled category or reversed comparison is enough to reject the claim.
+The statement is false.', 'Choosing infrequent maintainers rather than continuous heavy consumers as a focus group is targeting after segment evaluation.
 
-The statement is false.
-', 'FALSE — Mass marketing ignores segment differences and offers essentially the same product and promotion to everyone. Large identical runs can spread fixed costs and lower unit cost (economies of scale), but the approach is inflexible.
+That is exactly what the claim asserts, so the wording survives a careful check against the standard idea.
 
-Niche focus on users wanting hands-on help when starting equipment typically lacks the very large identical output that drives scale economies.
+The statement is true.'] WHERE case_id = 'CASE 5.6.29' AND tier = 'full';
+UPDATE public.economics_cases SET tactical_explanations = ARRAY['An identity showing the right product for shoppers prioritising reliability over fashionable novelty is positioning.
 
-Once the defining feature is restored, the assertion falls away.
+That is exactly what the claim asserts, so the wording survives a careful check against the standard idea.
 
-The statement is false.
-', 'FALSE — Segmentation splits the market into relatively homogeneous groups (geographic, demographic, psychographic, behavioural) when those groups are measurable, profitable, accessible, and durable.
+The statement is true.', 'High identical volume for a mountain province and valley municipalities can lower unit cost through scale economies.
 
-Strategic fit implies focus on chosen segments such as self-employed professionals and salaried staff, not equal coverage of all segments.
+That is exactly what the claim asserts, so the wording survives a careful check against the standard idea.
 
-The mislabelled category or reversed comparison is enough to reject the claim.
+The statement is true.', 'Strategic fit with households grouped by declared income brackets supports focused segment marketing.
 
-The statement is false.
-'] WHERE case_id = 'CASE 5.6.28' AND tier = 'full';
-UPDATE public.economics_cases SET tactical_explanations = ARRAY['TRUE — Mass marketing ignores segment differences and offers essentially the same product and promotion to everyone. Large identical runs can spread fixed costs and lower unit cost (economies of scale), but the approach is inflexible.
+That is exactly what the claim asserts, so the wording survives a careful check against the standard idea.
 
-A single staple promoted uniformly across a mountain province and valley municipalities and elsewhere fits mass marketing.
+The statement is true.', 'Customers in a border county and adjacent cross-border shoppers form a geographic segment based on place.
 
-Nothing in the wording contradicts that marketing test, so the claim is sound.
+That is exactly what the claim asserts, so the wording survives a careful check against the standard idea.
 
-The statement is true.
-', 'TRUE — Segmentation splits the market into relatively homogeneous groups (geographic, demographic, psychographic, behavioural) when those groups are measurable, profitable, accessible, and durable.
+The statement is true.', 'Buyers classified by completed education level exemplify demographic segmentation variables.
 
-On this stem (Segment marketing / households): differentiated products for households grouped by declared income brackets reflect segment marketing.
+That is exactly what the claim asserts, so the wording survives a careful check against the standard idea.
 
-Nothing in the wording contradicts that marketing test, so the claim is sound.
+The statement is true.'] WHERE case_id = 'CASE 5.6.30' AND tier = 'full';
+UPDATE public.economics_cases SET tactical_explanations = ARRAY['Clients seeking personalised service rather than self-service illustrate psychographic segmentation.
 
-The statement is true.
-', 'TRUE — Niche marketing concentrates on particular subgroups within segments, often suited to small or specialised firms that cannot — or choose not to — serve a mass market.
+That is exactly what the claim asserts, so the wording survives a careful check against the standard idea.
 
-A focused offer for shoppers prioritising reliability over fashionable novelty reflects niche marketing within a broader market.
+The statement is true.', 'Trial buyers before occasional repeat purchase illustrate behavioural segmentation.
 
-Under that definition the assertion is the right description of the situation.
+That is exactly what the claim asserts, so the wording survives a careful check against the standard idea.
 
-The statement is true.
-', 'FALSE — After research, firms segment customers, choose targets, and position offers so the marketing mix fits specific needs and preferences.
+The statement is true.', 'Data on a border county and adjacent cross-border shoppers can make the geographic segment measurable in size and purchasing power.
 
-Small customised batches for users wanting hands-on help when starting equipment do not automatically enjoy mass-production scale economies.
+That is exactly what the claim asserts, so the wording survives a careful check against the standard idea.
 
-The absolute wording is what breaks the claim once the correct test is applied.
+The statement is true.', 'Households grouped by declared income brackets are demographic, not geographic segmentation.
 
-The statement is false.
-', 'TRUE — Segmentation splits the market into relatively homogeneous groups (geographic, demographic, psychographic, behavioural) when those groups are measurable, profitable, accessible, and durable.
+Because that detail fails, the whole statement fails even if the topic word looks familiar.
 
-On this stem (Targeting / segmentation): choosing infrequent maintainers rather than continuous heavy consumers as a focus group is targeting after segment evaluation.
+The statement is false.', 'Profitability for buyers classified by completed education level requires revenue to cover the cost of serving that demographic subgroup.
 
-The sentence therefore reports the concept accurately for this case.
+That is exactly what the claim asserts, so the wording survives a careful check against the standard idea.
 
-The statement is true.
-'] WHERE case_id = 'CASE 5.6.29' AND tier = 'full';
-UPDATE public.economics_cases SET tactical_explanations = ARRAY['TRUE — Positioning is the work of creating a clear image or identity for the product in the minds of the chosen target market(s).
+The statement is true.'] WHERE case_id = 'CASE 5.6.31' AND tier = 'full';
+UPDATE public.economics_cases SET tactical_explanations = ARRAY['Buyers in a mountain province and valley municipalities illustrate geographic, not psychographic segmentation.
 
-An identity showing the right product for shoppers prioritising reliability over fashionable novelty is positioning.
+Because that detail fails, the whole statement fails even if the topic word looks familiar.
 
-Nothing in the wording contradicts that marketing test, so the claim is sound.
+The statement is false.', 'Shoppers prioritising reliability over fashionable novelty reflect psychographic, not purely behavioural segmentation.
 
-The statement is true.
-', 'TRUE — Mass marketing ignores segment differences and offers essentially the same product and promotion to everyone. Large identical runs can spread fixed costs and lower unit cost (economies of scale), but the approach is inflexible.
+Because that detail fails, the whole statement fails even if the topic word looks familiar.
 
-High identical volume for a mountain province and valley municipalities can lower unit cost through scale economies.
+The statement is false.', 'Infrequent maintainers rather than continuous heavy consumers illustrate behavioural, not demographic segmentation.
 
-Nothing in the wording contradicts that marketing test, so the claim is sound.
+Because that detail fails, the whole statement fails even if the topic word looks familiar.
 
-The statement is true.
-', 'TRUE — Segmentation splits the market into relatively homogeneous groups (geographic, demographic, psychographic, behavioural) when those groups are measurable, profitable, accessible, and durable.
+The statement is false.', 'Accessible channels must reach clients seeking personalised service rather than self-service for viable targeting.
 
-Strategic fit with households grouped by declared income brackets supports focused segment marketing.
+That is exactly what the claim asserts, so the wording survives a careful check against the standard idea.
 
-The sentence therefore reports the concept accurately for this case.
+The statement is true.', 'Naming a mountain province and valley municipalities does not make the segment profitable; costs and revenue still matter.
 
-The statement is true.
-', 'TRUE — Segmentation splits the market into relatively homogeneous groups (geographic, demographic, psychographic, behavioural) when those groups are measurable, profitable, accessible, and durable.
+The absolute wording "automatically" turns a familiar idea into an overclaim. One ordinary counterexample is enough to reject it.
 
-On this stem (segmentation): customers in a border county and adjacent cross-border shoppers form a geographic segment based on place.
+The statement is false.'] WHERE case_id = 'CASE 5.6.32' AND tier = 'full';
+UPDATE public.economics_cases SET tactical_explanations = ARRAY['Durability for trial buyers before occasional repeat purchase means the behavioural pattern persists long enough for planning.
 
-The sentence therefore reports the concept accurately for this case.
+That is exactly what the claim asserts, so the wording survives a careful check against the standard idea.
 
-The statement is true.
-', 'TRUE — Segmentation splits the market into relatively homogeneous groups (geographic, demographic, psychographic, behavioural) when those groups are measurable, profitable, accessible, and durable.
+The statement is true.', 'A single staple promoted uniformly across a border county and adjacent cross-border shoppers and elsewhere fits mass marketing.
 
-Buyers classified by completed education level exemplify demographic segmentation variables.
+That is exactly what the claim asserts, so the wording survives a careful check against the standard idea.
 
-The sentence therefore reports the concept accurately for this case.
+The statement is true.', 'Differentiated products for buyers classified by completed education level reflect segment marketing.
 
-The statement is true.
-'] WHERE case_id = 'CASE 5.6.30' AND tier = 'full';
-UPDATE public.economics_cases SET tactical_explanations = ARRAY['TRUE — Segmentation splits the market into relatively homogeneous groups (geographic, demographic, psychographic, behavioural) when those groups are measurable, profitable, accessible, and durable.
+That is exactly what the claim asserts, so the wording survives a careful check against the standard idea.
 
-On this stem (Targeting / segmentation): clients seeking personalised service rather than self-service illustrate psychographic segmentation.
+The statement is true.', 'A focused offer for clients seeking personalised service rather than self-service reflects niche marketing within a broader market.
 
-Nothing in the wording contradicts that marketing test, so the claim is sound.
+That is exactly what the claim asserts, so the wording survives a careful check against the standard idea.
 
-The statement is true.
-', 'TRUE — Segmentation splits the market into relatively homogeneous groups (geographic, demographic, psychographic, behavioural) when those groups are measurable, profitable, accessible, and durable.
+The statement is true.', 'Choosing trial buyers before occasional repeat purchase as a focus group is targeting after segment evaluation.
 
-Trial buyers before occasional repeat purchase illustrate behavioural segmentation.
+That is exactly what the claim asserts, so the wording survives a careful check against the standard idea.
 
-Nothing in the wording contradicts that marketing test, so the claim is sound.
+The statement is true.'] WHERE case_id = 'CASE 5.6.33' AND tier = 'full';
+UPDATE public.economics_cases SET tactical_explanations = ARRAY['Measurability does not guarantee accessible communication and distribution for households grouped by declared income brackets.
 
-The statement is true.
-', 'TRUE — Segmentation splits the market into relatively homogeneous groups (geographic, demographic, psychographic, behavioural) when those groups are measurable, profitable, accessible, and durable.
+Because that detail fails, the whole statement fails even if the topic word looks familiar.
 
-Data on a border county and adjacent cross-border shoppers can make the geographic segment measurable in size and purchasing power.
+The statement is false.', 'An identity showing the right product for clients seeking personalised service rather than self-service is positioning.
 
-The sentence therefore reports the concept accurately for this case.
+That is exactly what the claim asserts, so the wording survives a careful check against the standard idea.
 
-The statement is true.
-', 'FALSE — Segmentation splits the market into relatively homogeneous groups (geographic, demographic, psychographic, behavioural) when those groups are measurable, profitable, accessible, and durable.
+The statement is true.', 'Durability allows some change; it requires stability for planning, not zero change forever.
 
-On this stem (households / segmentation): households grouped by declared income brackets are demographic, not geographic segmentation.
+The absolute wording "never" turns a familiar idea into an overclaim. One ordinary counterexample is enough to reject it.
 
-Swap in the textbook criterion and the sentence no longer describes the case.
+The statement is false.', 'Mass marketing uses one product broadly, not a different formula for every street in a mountain province and valley municipalities.
 
-The statement is false.
-', 'TRUE — Segmentation splits the market into relatively homogeneous groups (geographic, demographic, psychographic, behavioural) when those groups are measurable, profitable, accessible, and durable.
+The absolute wording "every" turns a familiar idea into an overclaim. One ordinary counterexample is enough to reject it.
 
-Profitability for buyers classified by completed education level requires revenue to cover the cost of serving that demographic subgroup.
+The statement is false.', 'Niche marketing narrows focus; one identical national product is mass marketing.
 
-The sentence therefore reports the concept accurately for this case.
+Because that detail fails, the whole statement fails even if the topic word looks familiar.
 
-The statement is true.
-'] WHERE case_id = 'CASE 5.6.31' AND tier = 'full';
-UPDATE public.economics_cases SET tactical_explanations = ARRAY['FALSE — Segmentation splits the market into relatively homogeneous groups (geographic, demographic, psychographic, behavioural) when those groups are measurable, profitable, accessible, and durable.
+The statement is false.'] WHERE case_id = 'CASE 5.6.34' AND tier = 'full';
+UPDATE public.economics_cases SET tactical_explanations = ARRAY['High identical volume for a border county and adjacent cross-border shoppers can lower unit cost through scale economies.
 
-Buyers in a mountain province and valley municipalities illustrate geographic, not psychographic segmentation.
+That is exactly what the claim asserts, so the wording survives a careful check against the standard idea.
 
-Once the defining feature is restored, the assertion falls away.
+The statement is true.', 'Strategic fit with buyers classified by completed education level supports focused segment marketing.
 
-The statement is false.
-', 'FALSE — Segmentation splits the market into relatively homogeneous groups (geographic, demographic, psychographic, behavioural) when those groups are measurable, profitable, accessible, and durable.
+That is exactly what the claim asserts, so the wording survives a careful check against the standard idea.
 
-On this stem (Targeting / segmentation): shoppers prioritising reliability over fashionable novelty reflect psychographic, not purely behavioural segmentation.
+The statement is true.', 'Customers in a metropolitan core and satellite villages form a geographic segment based on place.
 
-The mislabelled category or reversed comparison is enough to reject the claim.
+That is exactly what the claim asserts, so the wording survives a careful check against the standard idea.
 
-The statement is false.
-', 'FALSE — Segmentation splits the market into relatively homogeneous groups (geographic, demographic, psychographic, behavioural) when those groups are measurable, profitable, accessible, and durable.
+The statement is true.', 'Parents with young children and empty-nest couples exemplify demographic segmentation variables.
 
-Infrequent maintainers rather than continuous heavy consumers illustrate behavioural, not demographic segmentation.
+That is exactly what the claim asserts, so the wording survives a careful check against the standard idea.
 
-The mislabelled category or reversed comparison is enough to reject the claim.
+The statement is true.', 'Households with strong sustainability attitudes illustrate psychographic segmentation.
 
-The statement is false.
-', 'TRUE — Segmentation splits the market into relatively homogeneous groups (geographic, demographic, psychographic, behavioural) when those groups are measurable, profitable, accessible, and durable.
+That is exactly what the claim asserts, so the wording survives a careful check against the standard idea.
 
-Accessible channels must reach clients seeking personalised service rather than self-service for viable targeting.
+The statement is true.'] WHERE case_id = 'CASE 5.6.35' AND tier = 'full';
+UPDATE public.economics_cases SET tactical_explanations = ARRAY['Weekend-only recreational users illustrate behavioural segmentation.
 
-The sentence therefore reports the concept accurately for this case.
+That is exactly what the claim asserts, so the wording survives a careful check against the standard idea.
 
-The statement is true.
-', 'FALSE — Segmentation splits the market into relatively homogeneous groups (geographic, demographic, psychographic, behavioural) when those groups are measurable, profitable, accessible, and durable.
+The statement is true.', 'Segment marketing tailors to households grouped by declared income brackets; ignoring differences describes mass marketing.
 
-Naming a mountain province and valley municipalities does not make the segment profitable; costs and revenue still matter.
+Because that detail fails, the whole statement fails even if the topic word looks familiar.
 
-One clear counterexample under the right criterion is enough to reject the sentence.
+The statement is false.', 'Data on a metropolitan core and satellite villages can make the geographic segment measurable in size and purchasing power.
 
-The statement is false.
-'] WHERE case_id = 'CASE 5.6.32' AND tier = 'full';
-UPDATE public.economics_cases SET tactical_explanations = ARRAY['TRUE — Segmentation splits the market into relatively homogeneous groups (geographic, demographic, psychographic, behavioural) when those groups are measurable, profitable, accessible, and durable.
+That is exactly what the claim asserts, so the wording survives a careful check against the standard idea.
 
-Durability for trial buyers before occasional repeat purchase means the behavioural pattern persists long enough for planning.
+The statement is true.', 'Profitability for parents with young children and empty-nest couples requires revenue to cover the cost of serving that demographic subgroup.
 
-The sentence therefore reports the concept accurately for this case.
+That is exactly what the claim asserts, so the wording survives a careful check against the standard idea.
 
-The statement is true.
-', 'TRUE — Mass marketing ignores segment differences and offers essentially the same product and promotion to everyone. Large identical runs can spread fixed costs and lower unit cost (economies of scale), but the approach is inflexible.
+The statement is true.', 'Accessible channels must reach households with strong sustainability attitudes for viable targeting.
 
-A single staple promoted uniformly across a border county and adjacent cross-border shoppers and elsewhere fits mass marketing.
+That is exactly what the claim asserts, so the wording survives a careful check against the standard idea.
 
-Under that definition the assertion is the right description of the situation.
+The statement is true.'] WHERE case_id = 'CASE 5.6.36' AND tier = 'full';
+UPDATE public.economics_cases SET tactical_explanations = ARRAY['Durability for weekend-only recreational users means the behavioural pattern persists long enough for planning.
 
-The statement is true.
-', 'TRUE — Segmentation splits the market into relatively homogeneous groups (geographic, demographic, psychographic, behavioural) when those groups are measurable, profitable, accessible, and durable.
+That is exactly what the claim asserts, so the wording survives a careful check against the standard idea.
 
-Differentiated products for buyers classified by completed education level reflect segment marketing.
+The statement is true.', 'A single staple promoted uniformly across a metropolitan core and satellite villages and elsewhere fits mass marketing.
 
-The sentence therefore reports the concept accurately for this case.
+That is exactly what the claim asserts, so the wording survives a careful check against the standard idea.
 
-The statement is true.
-', 'TRUE — Niche marketing concentrates on particular subgroups within segments, often suited to small or specialised firms that cannot — or choose not to — serve a mass market.
+The statement is true.', 'Differentiated products for parents with young children and empty-nest couples reflect segment marketing.
 
-A focused offer for clients seeking personalised service rather than self-service reflects niche marketing within a broader market.
+That is exactly what the claim asserts, so the wording survives a careful check against the standard idea.
 
-The sentence therefore reports the concept accurately for this case.
+The statement is true.', 'A focused offer for households with strong sustainability attitudes reflects niche marketing within a broader market.
 
-The statement is true.
-', 'TRUE — Segmentation splits the market into relatively homogeneous groups (geographic, demographic, psychographic, behavioural) when those groups are measurable, profitable, accessible, and durable.
+That is exactly what the claim asserts, so the wording survives a careful check against the standard idea.
 
-On this stem (Targeting / segmentation): choosing trial buyers before occasional repeat purchase as a focus group is targeting after segment evaluation.
+The statement is true.', 'Choosing weekend-only recreational users as a focus group is targeting after segment evaluation.
 
-Under that definition the assertion is the right description of the situation.
+That is exactly what the claim asserts, so the wording survives a careful check against the standard idea.
 
-The statement is true.
-'] WHERE case_id = 'CASE 5.6.33' AND tier = 'full';
-UPDATE public.economics_cases SET tactical_explanations = ARRAY['FALSE — Segmentation splits the market into relatively homogeneous groups (geographic, demographic, psychographic, behavioural) when those groups are measurable, profitable, accessible, and durable.
+The statement is true.'] WHERE case_id = 'CASE 5.6.37' AND tier = 'full';
+UPDATE public.economics_cases SET tactical_explanations = ARRAY['An identity showing the right product for households with strong sustainability attitudes is positioning.
 
-Measurability does not guarantee accessible communication and distribution for households grouped by declared income brackets.
+That is exactly what the claim asserts, so the wording survives a careful check against the standard idea.
 
-Those restricting words stretch a limited idea past what marketing allows.
+The statement is true.', 'Positioning still creates identity for the chosen subgroup after segmentation and targeting.
 
-The statement is false.
-', 'TRUE — Positioning is the work of creating a clear image or identity for the product in the minds of the chosen target market(s).
+Because that detail fails, the whole statement fails even if the topic word looks familiar.
 
-An identity showing the right product for clients seeking personalised service rather than self-service is positioning.
+The statement is false.', 'Targeting evaluates attractiveness before selecting infrequent maintainers rather than continuous heavy consumers or any subgroup.
 
-Under that definition the assertion is the right description of the situation.
+The absolute wording "every" turns a familiar idea into an overclaim. One ordinary counterexample is enough to reject it.
 
-The statement is true.
-', 'FALSE — Segmentation splits the market into relatively homogeneous groups (geographic, demographic, psychographic, behavioural) when those groups are measurable, profitable, accessible, and durable.
+The statement is false.', 'Niche focus on shoppers prioritising reliability over fashionable novelty typically lacks the very large identical output that drives scale economies.
 
-Durability allows some change; it requires stability for planning, not zero change forever.
+Because that detail fails, the whole statement fails even if the topic word looks familiar.
 
-The absolute wording is what breaks the claim once the correct test is applied.
+The statement is false.', 'High identical volume for a metropolitan core and satellite villages can lower unit cost through scale economies.
 
-The statement is false.
-', 'FALSE — Mass marketing ignores segment differences and offers essentially the same product and promotion to everyone. Large identical runs can spread fixed costs and lower unit cost (economies of scale), but the approach is inflexible.
+That is exactly what the claim asserts, so the wording survives a careful check against the standard idea.
 
-Mass marketing uses one product broadly, not a different formula for every street in a mountain province and valley municipalities.
+The statement is true.'] WHERE case_id = 'CASE 5.6.38' AND tier = 'full';
+UPDATE public.economics_cases SET tactical_explanations = ARRAY['Strategic fit with parents with young children and empty-nest couples supports focused segment marketing.
 
-Once the defining feature is restored, the assertion falls away.
+That is exactly what the claim asserts, so the wording survives a careful check against the standard idea.
 
-The statement is false.
-', 'FALSE — Niche marketing concentrates on particular subgroups within segments, often suited to small or specialised firms that cannot — or choose not to — serve a mass market.
+The statement is true.', 'Strategic fit implies focus on chosen segments such as households grouped by declared income brackets, not equal coverage of all segments.
 
-Niche marketing narrows focus; one identical national product is mass marketing.
+The absolute wording "every" turns a familiar idea into an overclaim. One ordinary counterexample is enough to reject it.
 
-The mislabelled category or reversed comparison is enough to reject the claim.
+The statement is false.', 'Small customised batches for shoppers prioritising reliability over fashionable novelty do not automatically enjoy mass-production scale economies.
 
-The statement is false.
-'] WHERE case_id = 'CASE 5.6.34' AND tier = 'full';
-UPDATE public.economics_cases SET tactical_explanations = ARRAY['TRUE — Mass marketing ignores segment differences and offers essentially the same product and promotion to everyone. Large identical runs can spread fixed costs and lower unit cost (economies of scale), but the approach is inflexible.
+The absolute wording "always" turns a familiar idea into an overclaim. One ordinary counterexample is enough to reject it.
 
-High identical volume for a border county and adjacent cross-border shoppers can lower unit cost through scale economies.
+The statement is false.', 'Buyers classified by completed education level are demographic, not geographic segmentation.
 
-Under that definition the assertion is the right description of the situation.
+Because that detail fails, the whole statement fails even if the topic word looks familiar.
 
-The statement is true.
-', 'TRUE — Segmentation splits the market into relatively homogeneous groups (geographic, demographic, psychographic, behavioural) when those groups are measurable, profitable, accessible, and durable.
+The statement is false.', 'Buyers in a border county and adjacent cross-border shoppers illustrate geographic, not psychographic segmentation.
 
-Strategic fit with buyers classified by completed education level supports focused segment marketing.
+Because that detail fails, the whole statement fails even if the topic word looks familiar.
 
-Under that definition the assertion is the right description of the situation.
+The statement is false.'] WHERE case_id = 'CASE 5.6.39' AND tier = 'full';
+UPDATE public.economics_cases SET tactical_explanations = ARRAY['Customers in a northern province and southern retail catchment form a geographic segment based on place.
 
-The statement is true.
-', 'TRUE — Segmentation splits the market into relatively homogeneous groups (geographic, demographic, psychographic, behavioural) when those groups are measurable, profitable, accessible, and durable.
+That is exactly what the claim asserts, so the wording survives a careful check against the standard idea.
 
-On this stem (segmentation): customers in a metropolitan core and satellite villages form a geographic segment based on place.
+The statement is true.', 'Students and mid-career adults exemplify demographic segmentation variables.
 
-Under that definition the assertion is the right description of the situation.
+That is exactly what the claim asserts, so the wording survives a careful check against the standard idea.
 
-The statement is true.
-', 'TRUE — Segmentation splits the market into relatively homogeneous groups (geographic, demographic, psychographic, behavioural) when those groups are measurable, profitable, accessible, and durable.
+The statement is true.', 'Price-conscious buyers accepting older technology illustrate psychographic segmentation.
 
-Parents with young children and empty-nest couples exemplify demographic segmentation variables.
+That is exactly what the claim asserts, so the wording survives a careful check against the standard idea.
 
-Under that definition the assertion is the right description of the situation.
+The statement is true.', 'Single-purchase gift buyers rather than replenishment shoppers illustrate behavioural segmentation.
 
-The statement is true.
-', 'TRUE — Segmentation splits the market into relatively homogeneous groups (geographic, demographic, psychographic, behavioural) when those groups are measurable, profitable, accessible, and durable.
+That is exactly what the claim asserts, so the wording survives a careful check against the standard idea.
 
-On this stem (Targeting / households): households with strong sustainability attitudes illustrate psychographic segmentation.
+The statement is true.', 'Data on a northern province and southern retail catchment can make the geographic segment measurable in size and purchasing power.
 
-Under that definition the assertion is the right description of the situation.
+That is exactly what the claim asserts, so the wording survives a careful check against the standard idea.
 
-The statement is true.
-'] WHERE case_id = 'CASE 5.6.35' AND tier = 'full';
-UPDATE public.economics_cases SET tactical_explanations = ARRAY['TRUE — Segmentation splits the market into relatively homogeneous groups (geographic, demographic, psychographic, behavioural) when those groups are measurable, profitable, accessible, and durable.
+The statement is true.'] WHERE case_id = 'CASE 5.6.40' AND tier = 'full';
+UPDATE public.economics_cases SET tactical_explanations = ARRAY['Profitability for students and mid-career adults requires revenue to cover the cost of serving that demographic subgroup.
 
-Weekend-only recreational users illustrate behavioural segmentation.
+That is exactly what the claim asserts, so the wording survives a careful check against the standard idea.
 
-The sentence therefore reports the concept accurately for this case.
+The statement is true.', 'Accessible channels must reach price-conscious buyers accepting older technology for viable targeting.
 
-The statement is true.
-', 'FALSE — Segmentation splits the market into relatively homogeneous groups (geographic, demographic, psychographic, behavioural) when those groups are measurable, profitable, accessible, and durable.
+That is exactly what the claim asserts, so the wording survives a careful check against the standard idea.
 
-On this stem (Segment marketing / households): segment marketing tailors to households grouped by declared income brackets; ignoring differences describes mass marketing.
+The statement is true.', 'Durability for single-purchase gift buyers rather than replenishment shoppers means the behavioural pattern persists long enough for planning.
 
-Once the defining feature is restored, the assertion falls away.
+That is exactly what the claim asserts, so the wording survives a careful check against the standard idea.
 
-The statement is false.
-', 'TRUE — Segmentation splits the market into relatively homogeneous groups (geographic, demographic, psychographic, behavioural) when those groups are measurable, profitable, accessible, and durable.
+The statement is true.', 'A single staple promoted uniformly across a northern province and southern retail catchment and elsewhere fits mass marketing.
 
-Data on a metropolitan core and satellite villages can make the geographic segment measurable in size and purchasing power.
+That is exactly what the claim asserts, so the wording survives a careful check against the standard idea.
 
-Under that definition the assertion is the right description of the situation.
+The statement is true.', 'Differentiated products for students and mid-career adults reflect segment marketing.
 
-The statement is true.
-', 'TRUE — Segmentation splits the market into relatively homogeneous groups (geographic, demographic, psychographic, behavioural) when those groups are measurable, profitable, accessible, and durable.
+That is exactly what the claim asserts, so the wording survives a careful check against the standard idea.
 
-Profitability for parents with young children and empty-nest couples requires revenue to cover the cost of serving that demographic subgroup.
+The statement is true.'] WHERE case_id = 'CASE 5.6.41' AND tier = 'full';
+UPDATE public.economics_cases SET tactical_explanations = ARRAY['A focused offer for price-conscious buyers accepting older technology reflects niche marketing within a broader market.
 
-Under that definition the assertion is the right description of the situation.
+That is exactly what the claim asserts, so the wording survives a careful check against the standard idea.
 
-The statement is true.
-', 'TRUE — Segmentation splits the market into relatively homogeneous groups (geographic, demographic, psychographic, behavioural) when those groups are measurable, profitable, accessible, and durable.
+The statement is true.', 'Choosing single-purchase gift buyers rather than replenishment shoppers as a focus group is targeting after segment evaluation.
 
-Accessible channels must reach households with strong sustainability attitudes for viable targeting.
+That is exactly what the claim asserts, so the wording survives a careful check against the standard idea.
 
-Nothing in the wording contradicts that marketing test, so the claim is sound.
+The statement is true.', 'An identity showing the right product for price-conscious buyers accepting older technology is positioning.
 
-The statement is true.
-'] WHERE case_id = 'CASE 5.6.36' AND tier = 'full';
-UPDATE public.economics_cases SET tactical_explanations = ARRAY['TRUE — Segmentation splits the market into relatively homogeneous groups (geographic, demographic, psychographic, behavioural) when those groups are measurable, profitable, accessible, and durable.
+That is exactly what the claim asserts, so the wording survives a careful check against the standard idea.
 
-Durability for weekend-only recreational users means the behavioural pattern persists long enough for planning.
+The statement is true.', 'Clients seeking personalised service rather than self-service reflect psychographic, not purely behavioural segmentation.
 
-Under that definition the assertion is the right description of the situation.
+Because that detail fails, the whole statement fails even if the topic word looks familiar.
 
-The statement is true.
-', 'TRUE — Mass marketing ignores segment differences and offers essentially the same product and promotion to everyone. Large identical runs can spread fixed costs and lower unit cost (economies of scale), but the approach is inflexible.
+The statement is false.', 'Trial buyers before occasional repeat purchase illustrate behavioural, not demographic segmentation.
 
-A single staple promoted uniformly across a metropolitan core and satellite villages and elsewhere fits mass marketing.
+Because that detail fails, the whole statement fails even if the topic word looks familiar.
 
-Nothing in the wording contradicts that marketing test, so the claim is sound.
+The statement is false.'] WHERE case_id = 'CASE 5.6.42' AND tier = 'full';
+UPDATE public.economics_cases SET tactical_explanations = ARRAY['High identical volume for a northern province and southern retail catchment can lower unit cost through scale economies.
 
-The statement is true.
-', 'TRUE — Segmentation splits the market into relatively homogeneous groups (geographic, demographic, psychographic, behavioural) when those groups are measurable, profitable, accessible, and durable.
+That is exactly what the claim asserts, so the wording survives a careful check against the standard idea.
 
-Differentiated products for parents with young children and empty-nest couples reflect segment marketing.
+The statement is true.', 'Strategic fit with students and mid-career adults supports focused segment marketing.
 
-Under that definition the assertion is the right description of the situation.
+That is exactly what the claim asserts, so the wording survives a careful check against the standard idea.
 
-The statement is true.
-', 'TRUE — Niche marketing concentrates on particular subgroups within segments, often suited to small or specialised firms that cannot — or choose not to — serve a mass market.
+The statement is true.', 'Customers in an urban postcode cluster and rural fringe form a geographic segment based on place.
 
-On this stem (Niche marketing / households): a focused offer for households with strong sustainability attitudes reflects niche marketing within a broader market.
+That is exactly what the claim asserts, so the wording survives a careful check against the standard idea.
 
-Nothing in the wording contradicts that marketing test, so the claim is sound.
+The statement is true.', 'Dual-income households and single earners exemplify demographic segmentation variables.
 
-The statement is true.
-', 'TRUE — Segmentation splits the market into relatively homogeneous groups (geographic, demographic, psychographic, behavioural) when those groups are measurable, profitable, accessible, and durable.
+That is exactly what the claim asserts, so the wording survives a careful check against the standard idea.
 
-On this stem (Targeting / segmentation): choosing weekend-only recreational users as a focus group is targeting after segment evaluation.
+The statement is true.', 'Naming a border county and adjacent cross-border shoppers does not make the segment profitable; costs and revenue still matter.
 
-Nothing in the wording contradicts that marketing test, so the claim is sound.
+The absolute wording "automatically" turns a familiar idea into an overclaim. One ordinary counterexample is enough to reject it.
 
-The statement is true.
-'] WHERE case_id = 'CASE 5.6.37' AND tier = 'full';
-UPDATE public.economics_cases SET tactical_explanations = ARRAY['TRUE — Positioning is the work of creating a clear image or identity for the product in the minds of the chosen target market(s).
+The statement is false.'] WHERE case_id = 'CASE 5.6.43' AND tier = 'full';
+UPDATE public.economics_cases SET tactical_explanations = ARRAY['Risk-averse customers preferring guided setup illustrate psychographic segmentation.
 
-On this stem (Positioning / households): an identity showing the right product for households with strong sustainability attitudes is positioning.
+That is exactly what the claim asserts, so the wording survives a careful check against the standard idea.
 
-The sentence therefore reports the concept accurately for this case.
+The statement is true.', 'Measurability does not guarantee accessible communication and distribution for buyers classified by completed education level.
 
-The statement is true.
-', 'FALSE — Segmentation splits the market into relatively homogeneous groups (geographic, demographic, psychographic, behavioural) when those groups are measurable, profitable, accessible, and durable.
+Because that detail fails, the whole statement fails even if the topic word looks familiar.
 
-On this stem (Positioning / segmentation): positioning still creates identity for the chosen subgroup after segmentation and targeting.
+The statement is false.', 'Contract renewers rather than first-time adopters illustrate behavioural segmentation.
 
-The mislabelled category or reversed comparison is enough to reject the claim.
+That is exactly what the claim asserts, so the wording survives a careful check against the standard idea.
 
-The statement is false.
-', 'FALSE — Targeting evaluates segment attractiveness and selects which group(s) the firm will serve with a tailored marketing mix.
+The statement is true.', 'Durability allows some change; it requires stability for planning, not zero change forever.
 
-Targeting evaluates attractiveness before selecting infrequent maintainers rather than continuous heavy consumers or any subgroup.
+The absolute wording "never" turns a familiar idea into an overclaim. One ordinary counterexample is enough to reject it.
 
-Swap in the textbook criterion and the sentence no longer describes the case.
+The statement is false.', 'Data on an urban postcode cluster and rural fringe can make the geographic segment measurable in size and purchasing power.
 
-The statement is false.
-', 'FALSE — Mass marketing ignores segment differences and offers essentially the same product and promotion to everyone. Large identical runs can spread fixed costs and lower unit cost (economies of scale), but the approach is inflexible.
+That is exactly what the claim asserts, so the wording survives a careful check against the standard idea.
 
-Niche focus on shoppers prioritising reliability over fashionable novelty typically lacks the very large identical output that drives scale economies.
+The statement is true.'] WHERE case_id = 'CASE 5.6.44' AND tier = 'full';
+UPDATE public.economics_cases SET tactical_explanations = ARRAY['Profitability for dual-income households and single earners requires revenue to cover the cost of serving that demographic subgroup.
 
-Swap in the textbook criterion and the sentence no longer describes the case.
+That is exactly what the claim asserts, so the wording survives a careful check against the standard idea.
 
-The statement is false.
-', 'TRUE — Mass marketing ignores segment differences and offers essentially the same product and promotion to everyone. Large identical runs can spread fixed costs and lower unit cost (economies of scale), but the approach is inflexible.
+The statement is true.', 'Mass marketing uses one product broadly, not a different formula for every street in a border county and adjacent cross-border shoppers.
 
-High identical volume for a metropolitan core and satellite villages can lower unit cost through scale economies.
+The absolute wording "every" turns a familiar idea into an overclaim. One ordinary counterexample is enough to reject it.
 
-Nothing in the wording contradicts that marketing test, so the claim is sound.
+The statement is false.', 'Niche marketing narrows focus; one identical national product is mass marketing.
 
-The statement is true.
-'] WHERE case_id = 'CASE 5.6.38' AND tier = 'full';
-UPDATE public.economics_cases SET tactical_explanations = ARRAY['TRUE — Segmentation splits the market into relatively homogeneous groups (geographic, demographic, psychographic, behavioural) when those groups are measurable, profitable, accessible, and durable.
+Because that detail fails, the whole statement fails even if the topic word looks familiar.
 
-Strategic fit with parents with young children and empty-nest couples supports focused segment marketing.
+The statement is false.', 'Segment marketing tailors to buyers classified by completed education level; ignoring differences describes mass marketing.
 
-Nothing in the wording contradicts that marketing test, so the claim is sound.
+Because that detail fails, the whole statement fails even if the topic word looks familiar.
 
-The statement is true.
-', 'FALSE — Segmentation splits the market into relatively homogeneous groups (geographic, demographic, psychographic, behavioural) when those groups are measurable, profitable, accessible, and durable.
+The statement is false.', 'Accessible channels must reach risk-averse customers preferring guided setup for viable targeting.
 
-Strategic fit implies focus on chosen segments such as households grouped by declared income brackets, not equal coverage of all segments.
+That is exactly what the claim asserts, so the wording survives a careful check against the standard idea.
 
-Once the defining feature is restored, the assertion falls away.
+The statement is true.'] WHERE case_id = 'CASE 5.6.45' AND tier = 'full';
+UPDATE public.economics_cases SET tactical_explanations = ARRAY['Positioning still creates identity for the chosen subgroup after segmentation and targeting.
 
-The statement is false.
-', 'FALSE — After research, firms segment customers, choose targets, and position offers so the marketing mix fits specific needs and preferences.
+Because that detail fails, the whole statement fails even if the topic word looks familiar.
 
-Small customised batches for shoppers prioritising reliability over fashionable novelty do not automatically enjoy mass-production scale economies.
+The statement is false.', 'Targeting evaluates attractiveness before selecting trial buyers before occasional repeat purchase or any subgroup.
 
-One clear counterexample under the right criterion is enough to reject the sentence.
+The absolute wording "every" turns a familiar idea into an overclaim. One ordinary counterexample is enough to reject it.
 
-The statement is false.
-', 'FALSE — Segmentation splits the market into relatively homogeneous groups (geographic, demographic, psychographic, behavioural) when those groups are measurable, profitable, accessible, and durable.
+The statement is false.', 'Durability for contract renewers rather than first-time adopters means the behavioural pattern persists long enough for planning.
 
-Buyers classified by completed education level are demographic, not geographic segmentation.
+That is exactly what the claim asserts, so the wording survives a careful check against the standard idea.
 
-The mislabelled category or reversed comparison is enough to reject the claim.
+The statement is true.', 'Niche focus on clients seeking personalised service rather than self-service typically lacks the very large identical output that drives scale economies.
 
-The statement is false.
-', 'FALSE — Segmentation splits the market into relatively homogeneous groups (geographic, demographic, psychographic, behavioural) when those groups are measurable, profitable, accessible, and durable.
+Because that detail fails, the whole statement fails even if the topic word looks familiar.
 
-Buyers in a border county and adjacent cross-border shoppers illustrate geographic, not psychographic segmentation.
+The statement is false.', 'Strategic fit implies focus on chosen segments such as buyers classified by completed education level, not equal coverage of all segments.
 
-The mislabelled category or reversed comparison is enough to reject the claim.
+The absolute wording "every" turns a familiar idea into an overclaim. One ordinary counterexample is enough to reject it.
 
-The statement is false.
-'] WHERE case_id = 'CASE 5.6.39' AND tier = 'full';
-UPDATE public.economics_cases SET tactical_explanations = ARRAY['TRUE — Segmentation splits the market into relatively homogeneous groups (geographic, demographic, psychographic, behavioural) when those groups are measurable, profitable, accessible, and durable.
+The statement is false.'] WHERE case_id = 'CASE 5.6.46' AND tier = 'full';
+UPDATE public.economics_cases SET tactical_explanations = ARRAY['Small customised batches for clients seeking personalised service rather than self-service do not automatically enjoy mass-production scale economies.
 
-On this stem (segmentation): customers in a northern province and southern retail catchment form a geographic segment based on place.
+The absolute wording "always" turns a familiar idea into an overclaim. One ordinary counterexample is enough to reject it.
 
-Under that definition the assertion is the right description of the situation.
+The statement is false.', 'Parents with young children and empty-nest couples are demographic, not geographic segmentation.
 
-The statement is true.
-', 'TRUE — Segmentation splits the market into relatively homogeneous groups (geographic, demographic, psychographic, behavioural) when those groups are measurable, profitable, accessible, and durable.
+Because that detail fails, the whole statement fails even if the topic word looks familiar.
 
-Students and mid-career adults exemplify demographic segmentation variables.
+The statement is false.', 'A single staple promoted uniformly across an urban postcode cluster and rural fringe and elsewhere fits mass marketing.
 
-Under that definition the assertion is the right description of the situation.
+That is exactly what the claim asserts, so the wording survives a careful check against the standard idea.
 
-The statement is true.
-', 'TRUE — Segmentation splits the market into relatively homogeneous groups (geographic, demographic, psychographic, behavioural) when those groups are measurable, profitable, accessible, and durable.
+The statement is true.', 'Buyers in a metropolitan core and satellite villages illustrate geographic, not psychographic segmentation.
 
-On this stem (Targeting / segmentation): price-conscious buyers accepting older technology illustrate psychographic segmentation.
+Because that detail fails, the whole statement fails even if the topic word looks familiar.
 
-The sentence therefore reports the concept accurately for this case.
+The statement is false.', 'Households with strong sustainability attitudes reflect psychographic, not purely behavioural segmentation.
 
-The statement is true.
-', 'TRUE — Segmentation splits the market into relatively homogeneous groups (geographic, demographic, psychographic, behavioural) when those groups are measurable, profitable, accessible, and durable.
+Because that detail fails, the whole statement fails even if the topic word looks familiar.
 
-Single-purchase gift buyers rather than replenishment shoppers illustrate behavioural segmentation.
+The statement is false.'] WHERE case_id = 'CASE 5.6.47' AND tier = 'full';
+UPDATE public.economics_cases SET tactical_explanations = ARRAY['Weekend-only recreational users illustrate behavioural, not demographic segmentation.
 
-The sentence therefore reports the concept accurately for this case.
+Because that detail fails, the whole statement fails even if the topic word looks familiar.
 
-The statement is true.
-', 'TRUE — Segmentation splits the market into relatively homogeneous groups (geographic, demographic, psychographic, behavioural) when those groups are measurable, profitable, accessible, and durable.
+The statement is false.', 'Differentiated products for dual-income households and single earners reflect segment marketing.
 
-Data on a northern province and southern retail catchment can make the geographic segment measurable in size and purchasing power.
+That is exactly what the claim asserts, so the wording survives a careful check against the standard idea.
 
-Under that definition the assertion is the right description of the situation.
+The statement is true.', 'Naming a metropolitan core and satellite villages does not make the segment profitable; costs and revenue still matter.
 
-The statement is true.
-'] WHERE case_id = 'CASE 5.6.40' AND tier = 'full';
-UPDATE public.economics_cases SET tactical_explanations = ARRAY['TRUE — Segmentation splits the market into relatively homogeneous groups (geographic, demographic, psychographic, behavioural) when those groups are measurable, profitable, accessible, and durable.
+The absolute wording "automatically" turns a familiar idea into an overclaim. One ordinary counterexample is enough to reject it.
 
-Profitability for students and mid-career adults requires revenue to cover the cost of serving that demographic subgroup.
+The statement is false.', 'Measurability does not guarantee accessible communication and distribution for parents with young children and empty-nest couples.
 
-Under that definition the assertion is the right description of the situation.
+Because that detail fails, the whole statement fails even if the topic word looks familiar.
 
-The statement is true.
-', 'TRUE — Segmentation splits the market into relatively homogeneous groups (geographic, demographic, psychographic, behavioural) when those groups are measurable, profitable, accessible, and durable.
+The statement is false.', 'Durability allows some change; it requires stability for planning, not zero change forever.
 
-Accessible channels must reach price-conscious buyers accepting older technology for viable targeting.
+The absolute wording "never" turns a familiar idea into an overclaim. One ordinary counterexample is enough to reject it.
 
-Under that definition the assertion is the right description of the situation.
+The statement is false.'] WHERE case_id = 'CASE 5.6.48' AND tier = 'full';
+UPDATE public.economics_cases SET tactical_explanations = ARRAY['A focused offer for risk-averse customers preferring guided setup reflects niche marketing within a broader market.
 
-The statement is true.
-', 'TRUE — Segmentation splits the market into relatively homogeneous groups (geographic, demographic, psychographic, behavioural) when those groups are measurable, profitable, accessible, and durable.
+That is exactly what the claim asserts, so the wording survives a careful check against the standard idea.
 
-Durability for single-purchase gift buyers rather than replenishment shoppers means the behavioural pattern persists long enough for planning.
+The statement is true.', 'Choosing contract renewers rather than first-time adopters as a focus group is targeting after segment evaluation.
 
-Under that definition the assertion is the right description of the situation.
+That is exactly what the claim asserts, so the wording survives a careful check against the standard idea.
 
-The statement is true.
-', 'TRUE — Mass marketing ignores segment differences and offers essentially the same product and promotion to everyone. Large identical runs can spread fixed costs and lower unit cost (economies of scale), but the approach is inflexible.
+The statement is true.', 'An identity showing the right product for risk-averse customers preferring guided setup is positioning.
 
-A single staple promoted uniformly across a northern province and southern retail catchment and elsewhere fits mass marketing.
+That is exactly what the claim asserts, so the wording survives a careful check against the standard idea.
 
-Nothing in the wording contradicts that marketing test, so the claim is sound.
+The statement is true.', 'Mass marketing uses one product broadly, not a different formula for every street in a metropolitan core and satellite villages.
 
-The statement is true.
-', 'TRUE — Segmentation splits the market into relatively homogeneous groups (geographic, demographic, psychographic, behavioural) when those groups are measurable, profitable, accessible, and durable.
+The absolute wording "every" turns a familiar idea into an overclaim. One ordinary counterexample is enough to reject it.
 
-Differentiated products for students and mid-career adults reflect segment marketing.
+The statement is false.', 'High identical volume for an urban postcode cluster and rural fringe can lower unit cost through scale economies.
 
-Under that definition the assertion is the right description of the situation.
+That is exactly what the claim asserts, so the wording survives a careful check against the standard idea.
 
-The statement is true.
-'] WHERE case_id = 'CASE 5.6.41' AND tier = 'full';
-UPDATE public.economics_cases SET tactical_explanations = ARRAY['TRUE — Niche marketing concentrates on particular subgroups within segments, often suited to small or specialised firms that cannot — or choose not to — serve a mass market.
+The statement is true.'] WHERE case_id = 'CASE 5.6.49' AND tier = 'full';
+UPDATE public.economics_cases SET tactical_explanations = ARRAY['Strategic fit with dual-income households and single earners supports focused segment marketing.
 
-A focused offer for price-conscious buyers accepting older technology reflects niche marketing within a broader market.
+That is exactly what the claim asserts, so the wording survives a careful check against the standard idea.
 
-Under that definition the assertion is the right description of the situation.
+The statement is true.', 'Customers in a federal state capital and outlying districts form a geographic segment based on place.
 
-The statement is true.
-', 'TRUE — Segmentation splits the market into relatively homogeneous groups (geographic, demographic, psychographic, behavioural) when those groups are measurable, profitable, accessible, and durable.
+That is exactly what the claim asserts, so the wording survives a careful check against the standard idea.
 
-On this stem (Targeting / segmentation): choosing single-purchase gift buyers rather than replenishment shoppers as a focus group is targeting after segment evaluation.
+The statement is true.', 'First-time buyers and long-established residents exemplify demographic segmentation variables.
 
-Nothing in the wording contradicts that marketing test, so the claim is sound.
+That is exactly what the claim asserts, so the wording survives a careful check against the standard idea.
 
-The statement is true.
-', 'TRUE — Positioning is the work of creating a clear image or identity for the product in the minds of the chosen target market(s).
+The statement is true.', 'Enthusiasts motivated by specialist taste and craft quality illustrate psychographic segmentation.
 
-An identity showing the right product for price-conscious buyers accepting older technology is positioning.
+That is exactly what the claim asserts, so the wording survives a careful check against the standard idea.
 
-Nothing in the wording contradicts that marketing test, so the claim is sound.
+The statement is true.', 'Bulk-order institutional buyers versus single-unit shoppers illustrate behavioural segmentation.
 
-The statement is true.
-', 'FALSE — Segmentation splits the market into relatively homogeneous groups (geographic, demographic, psychographic, behavioural) when those groups are measurable, profitable, accessible, and durable.
+That is exactly what the claim asserts, so the wording survives a careful check against the standard idea.
 
-On this stem (Targeting / segmentation): clients seeking personalised service rather than self-service reflect psychographic, not purely behavioural segmentation.
-
-Swap in the textbook criterion and the sentence no longer describes the case.
-
-The statement is false.
-', 'FALSE — Segmentation splits the market into relatively homogeneous groups (geographic, demographic, psychographic, behavioural) when those groups are measurable, profitable, accessible, and durable.
-
-Trial buyers before occasional repeat purchase illustrate behavioural, not demographic segmentation.
-
-Once the defining feature is restored, the assertion falls away.
-
-The statement is false.
-'] WHERE case_id = 'CASE 5.6.42' AND tier = 'full';
-UPDATE public.economics_cases SET tactical_explanations = ARRAY['TRUE — Mass marketing ignores segment differences and offers essentially the same product and promotion to everyone. Large identical runs can spread fixed costs and lower unit cost (economies of scale), but the approach is inflexible.
-
-High identical volume for a northern province and southern retail catchment can lower unit cost through scale economies.
-
-Nothing in the wording contradicts that marketing test, so the claim is sound.
-
-The statement is true.
-', 'TRUE — Segmentation splits the market into relatively homogeneous groups (geographic, demographic, psychographic, behavioural) when those groups are measurable, profitable, accessible, and durable.
-
-Strategic fit with students and mid-career adults supports focused segment marketing.
-
-Nothing in the wording contradicts that marketing test, so the claim is sound.
-
-The statement is true.
-', 'TRUE — Segmentation splits the market into relatively homogeneous groups (geographic, demographic, psychographic, behavioural) when those groups are measurable, profitable, accessible, and durable.
-
-On this stem (segmentation): customers in an urban postcode cluster and rural fringe form a geographic segment based on place.
-
-Nothing in the wording contradicts that marketing test, so the claim is sound.
-
-The statement is true.
-', 'TRUE — Segmentation splits the market into relatively homogeneous groups (geographic, demographic, psychographic, behavioural) when those groups are measurable, profitable, accessible, and durable.
-
-On this stem (households / segmentation): dual-income households and single earners exemplify demographic segmentation variables.
-
-Under that definition the assertion is the right description of the situation.
-
-The statement is true.
-', 'FALSE — Segmentation splits the market into relatively homogeneous groups (geographic, demographic, psychographic, behavioural) when those groups are measurable, profitable, accessible, and durable.
-
-Naming a border county and adjacent cross-border shoppers does not make the segment profitable; costs and revenue still matter.
-
-The absolute wording is what breaks the claim once the correct test is applied.
-
-The statement is false.
-'] WHERE case_id = 'CASE 5.6.43' AND tier = 'full';
-UPDATE public.economics_cases SET tactical_explanations = ARRAY['TRUE — Segmentation splits the market into relatively homogeneous groups (geographic, demographic, psychographic, behavioural) when those groups are measurable, profitable, accessible, and durable.
-
-On this stem (Targeting / segmentation): risk-averse customers preferring guided setup illustrate psychographic segmentation.
-
-Under that definition the assertion is the right description of the situation.
-
-The statement is true.
-', 'FALSE — Segmentation splits the market into relatively homogeneous groups (geographic, demographic, psychographic, behavioural) when those groups are measurable, profitable, accessible, and durable.
-
-Measurability does not guarantee accessible communication and distribution for buyers classified by completed education level.
-
-The absolute wording is what breaks the claim once the correct test is applied.
-
-The statement is false.
-', 'TRUE — Segmentation splits the market into relatively homogeneous groups (geographic, demographic, psychographic, behavioural) when those groups are measurable, profitable, accessible, and durable.
-
-Contract renewers rather than first-time adopters illustrate behavioural segmentation.
-
-The sentence therefore reports the concept accurately for this case.
-
-The statement is true.
-', 'FALSE — Segmentation splits the market into relatively homogeneous groups (geographic, demographic, psychographic, behavioural) when those groups are measurable, profitable, accessible, and durable.
-
-Durability allows some change; it requires stability for planning, not zero change forever.
-
-Those restricting words stretch a limited idea past what marketing allows.
-
-The statement is false.
-', 'TRUE — Segmentation splits the market into relatively homogeneous groups (geographic, demographic, psychographic, behavioural) when those groups are measurable, profitable, accessible, and durable.
-
-Data on an urban postcode cluster and rural fringe can make the geographic segment measurable in size and purchasing power.
-
-Nothing in the wording contradicts that marketing test, so the claim is sound.
-
-The statement is true.
-'] WHERE case_id = 'CASE 5.6.44' AND tier = 'full';
-UPDATE public.economics_cases SET tactical_explanations = ARRAY['TRUE — Segmentation splits the market into relatively homogeneous groups (geographic, demographic, psychographic, behavioural) when those groups are measurable, profitable, accessible, and durable.
-
-Profitability for dual-income households and single earners requires revenue to cover the cost of serving that demographic subgroup.
-
-Under that definition the assertion is the right description of the situation.
-
-The statement is true.
-', 'FALSE — Mass marketing ignores segment differences and offers essentially the same product and promotion to everyone. Large identical runs can spread fixed costs and lower unit cost (economies of scale), but the approach is inflexible.
-
-Mass marketing uses one product broadly, not a different formula for every street in a border county and adjacent cross-border shoppers.
-
-The mislabelled category or reversed comparison is enough to reject the claim.
-
-The statement is false.
-', 'FALSE — Niche marketing concentrates on particular subgroups within segments, often suited to small or specialised firms that cannot — or choose not to — serve a mass market.
-
-Niche marketing narrows focus; one identical national product is mass marketing.
-
-Swap in the textbook criterion and the sentence no longer describes the case.
-
-The statement is false.
-', 'FALSE — Segmentation splits the market into relatively homogeneous groups (geographic, demographic, psychographic, behavioural) when those groups are measurable, profitable, accessible, and durable.
-
-Segment marketing tailors to buyers classified by completed education level; ignoring differences describes mass marketing.
-
-Swap in the textbook criterion and the sentence no longer describes the case.
-
-The statement is false.
-', 'TRUE — Segmentation splits the market into relatively homogeneous groups (geographic, demographic, psychographic, behavioural) when those groups are measurable, profitable, accessible, and durable.
-
-Accessible channels must reach risk-averse customers preferring guided setup for viable targeting.
-
-Nothing in the wording contradicts that marketing test, so the claim is sound.
-
-The statement is true.
-'] WHERE case_id = 'CASE 5.6.45' AND tier = 'full';
-UPDATE public.economics_cases SET tactical_explanations = ARRAY['FALSE — Segmentation splits the market into relatively homogeneous groups (geographic, demographic, psychographic, behavioural) when those groups are measurable, profitable, accessible, and durable.
-
-On this stem (Positioning / segmentation): positioning still creates identity for the chosen subgroup after segmentation and targeting.
-
-Once the defining feature is restored, the assertion falls away.
-
-The statement is false.
-', 'FALSE — Targeting evaluates segment attractiveness and selects which group(s) the firm will serve with a tailored marketing mix.
-
-Targeting evaluates attractiveness before selecting trial buyers before occasional repeat purchase or any subgroup.
-
-The mislabelled category or reversed comparison is enough to reject the claim.
-
-The statement is false.
-', 'TRUE — Segmentation splits the market into relatively homogeneous groups (geographic, demographic, psychographic, behavioural) when those groups are measurable, profitable, accessible, and durable.
-
-Durability for contract renewers rather than first-time adopters means the behavioural pattern persists long enough for planning.
-
-Under that definition the assertion is the right description of the situation.
-
-The statement is true.
-', 'FALSE — Mass marketing ignores segment differences and offers essentially the same product and promotion to everyone. Large identical runs can spread fixed costs and lower unit cost (economies of scale), but the approach is inflexible.
-
-Niche focus on clients seeking personalised service rather than self-service typically lacks the very large identical output that drives scale economies.
-
-Once the defining feature is restored, the assertion falls away.
-
-The statement is false.
-', 'FALSE — Segmentation splits the market into relatively homogeneous groups (geographic, demographic, psychographic, behavioural) when those groups are measurable, profitable, accessible, and durable.
-
-Strategic fit implies focus on chosen segments such as buyers classified by completed education level, not equal coverage of all segments.
-
-Swap in the textbook criterion and the sentence no longer describes the case.
-
-The statement is false.
-'] WHERE case_id = 'CASE 5.6.46' AND tier = 'full';
-UPDATE public.economics_cases SET tactical_explanations = ARRAY['FALSE — After research, firms segment customers, choose targets, and position offers so the marketing mix fits specific needs and preferences.
-
-Small customised batches for clients seeking personalised service rather than self-service do not automatically enjoy mass-production scale economies.
-
-The absolute wording is what breaks the claim once the correct test is applied.
-
-The statement is false.
-', 'FALSE — Segmentation splits the market into relatively homogeneous groups (geographic, demographic, psychographic, behavioural) when those groups are measurable, profitable, accessible, and durable.
-
-Parents with young children and empty-nest couples are demographic, not geographic segmentation.
-
-Once the defining feature is restored, the assertion falls away.
-
-The statement is false.
-', 'TRUE — Mass marketing ignores segment differences and offers essentially the same product and promotion to everyone. Large identical runs can spread fixed costs and lower unit cost (economies of scale), but the approach is inflexible.
-
-A single staple promoted uniformly across an urban postcode cluster and rural fringe and elsewhere fits mass marketing.
-
-The sentence therefore reports the concept accurately for this case.
-
-The statement is true.
-', 'FALSE — Segmentation splits the market into relatively homogeneous groups (geographic, demographic, psychographic, behavioural) when those groups are measurable, profitable, accessible, and durable.
-
-Buyers in a metropolitan core and satellite villages illustrate geographic, not psychographic segmentation.
-
-Once the defining feature is restored, the assertion falls away.
-
-The statement is false.
-', 'FALSE — Segmentation splits the market into relatively homogeneous groups (geographic, demographic, psychographic, behavioural) when those groups are measurable, profitable, accessible, and durable.
-
-On this stem (Targeting / households): households with strong sustainability attitudes reflect psychographic, not purely behavioural segmentation.
-
-Once the defining feature is restored, the assertion falls away.
-
-The statement is false.
-'] WHERE case_id = 'CASE 5.6.47' AND tier = 'full';
-UPDATE public.economics_cases SET tactical_explanations = ARRAY['FALSE — Segmentation splits the market into relatively homogeneous groups (geographic, demographic, psychographic, behavioural) when those groups are measurable, profitable, accessible, and durable.
-
-Weekend-only recreational users illustrate behavioural, not demographic segmentation.
-
-The absolute wording is what breaks the claim once the correct test is applied.
-
-The statement is false.
-', 'TRUE — Segmentation splits the market into relatively homogeneous groups (geographic, demographic, psychographic, behavioural) when those groups are measurable, profitable, accessible, and durable.
-
-On this stem (Segment marketing / households): differentiated products for dual-income households and single earners reflect segment marketing.
-
-Under that definition the assertion is the right description of the situation.
-
-The statement is true.
-', 'FALSE — Segmentation splits the market into relatively homogeneous groups (geographic, demographic, psychographic, behavioural) when those groups are measurable, profitable, accessible, and durable.
-
-Naming a metropolitan core and satellite villages does not make the segment profitable; costs and revenue still matter.
-
-One clear counterexample under the right criterion is enough to reject the sentence.
-
-The statement is false.
-', 'FALSE — Segmentation splits the market into relatively homogeneous groups (geographic, demographic, psychographic, behavioural) when those groups are measurable, profitable, accessible, and durable.
-
-Measurability does not guarantee accessible communication and distribution for parents with young children and empty-nest couples.
-
-One clear counterexample under the right criterion is enough to reject the sentence.
-
-The statement is false.
-', 'FALSE — Segmentation splits the market into relatively homogeneous groups (geographic, demographic, psychographic, behavioural) when those groups are measurable, profitable, accessible, and durable.
-
-On this stem (households): durability allows some change; it requires stability for planning, not zero change forever.
-
-One clear counterexample under the right criterion is enough to reject the sentence.
-
-The statement is false.
-'] WHERE case_id = 'CASE 5.6.48' AND tier = 'full';
-UPDATE public.economics_cases SET tactical_explanations = ARRAY['TRUE — Niche marketing concentrates on particular subgroups within segments, often suited to small or specialised firms that cannot — or choose not to — serve a mass market.
-
-A focused offer for risk-averse customers preferring guided setup reflects niche marketing within a broader market.
-
-Nothing in the wording contradicts that marketing test, so the claim is sound.
-
-The statement is true.
-', 'TRUE — Segmentation splits the market into relatively homogeneous groups (geographic, demographic, psychographic, behavioural) when those groups are measurable, profitable, accessible, and durable.
-
-On this stem (Targeting / segmentation): choosing contract renewers rather than first-time adopters as a focus group is targeting after segment evaluation.
-
-Nothing in the wording contradicts that marketing test, so the claim is sound.
-
-The statement is true.
-', 'TRUE — Positioning is the work of creating a clear image or identity for the product in the minds of the chosen target market(s).
-
-An identity showing the right product for risk-averse customers preferring guided setup is positioning.
-
-The sentence therefore reports the concept accurately for this case.
-
-The statement is true.
-', 'FALSE — Mass marketing ignores segment differences and offers essentially the same product and promotion to everyone. Large identical runs can spread fixed costs and lower unit cost (economies of scale), but the approach is inflexible.
-
-Mass marketing uses one product broadly, not a different formula for every street in a metropolitan core and satellite villages.
-
-Once the defining feature is restored, the assertion falls away.
-
-The statement is false.
-', 'TRUE — Mass marketing ignores segment differences and offers essentially the same product and promotion to everyone. Large identical runs can spread fixed costs and lower unit cost (economies of scale), but the approach is inflexible.
-
-High identical volume for an urban postcode cluster and rural fringe can lower unit cost through scale economies.
-
-The sentence therefore reports the concept accurately for this case.
-
-The statement is true.
-'] WHERE case_id = 'CASE 5.6.49' AND tier = 'full';
-UPDATE public.economics_cases SET tactical_explanations = ARRAY['TRUE — Segmentation splits the market into relatively homogeneous groups (geographic, demographic, psychographic, behavioural) when those groups are measurable, profitable, accessible, and durable.
-
-Strategic fit with dual-income households and single earners supports focused segment marketing.
-
-Nothing in the wording contradicts that marketing test, so the claim is sound.
-
-The statement is true.
-', 'TRUE — Segmentation splits the market into relatively homogeneous groups (geographic, demographic, psychographic, behavioural) when those groups are measurable, profitable, accessible, and durable.
-
-On this stem (segmentation): customers in a federal state capital and outlying districts form a geographic segment based on place.
-
-The sentence therefore reports the concept accurately for this case.
-
-The statement is true.
-', 'TRUE — Segmentation splits the market into relatively homogeneous groups (geographic, demographic, psychographic, behavioural) when those groups are measurable, profitable, accessible, and durable.
-
-On this stem (residents / segmentation): first-time buyers and long-established residents exemplify demographic segmentation variables.
-
-Under that definition the assertion is the right description of the situation.
-
-The statement is true.
-', 'TRUE — Segmentation splits the market into relatively homogeneous groups (geographic, demographic, psychographic, behavioural) when those groups are measurable, profitable, accessible, and durable.
-
-On this stem (Targeting / segmentation): enthusiasts motivated by specialist taste and craft quality illustrate psychographic segmentation.
-
-The sentence therefore reports the concept accurately for this case.
-
-The statement is true.
-', 'TRUE — Segmentation splits the market into relatively homogeneous groups (geographic, demographic, psychographic, behavioural) when those groups are measurable, profitable, accessible, and durable.
-
-Bulk-order institutional buyers versus single-unit shoppers illustrate behavioural segmentation.
-
-The sentence therefore reports the concept accurately for this case.
-
-The statement is true.
-'] WHERE case_id = 'CASE 5.6.50' AND tier = 'full';
+The statement is true.'] WHERE case_id = 'CASE 5.6.50' AND tier = 'full';

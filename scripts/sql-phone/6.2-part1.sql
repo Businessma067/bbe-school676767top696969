@@ -1,1023 +1,550 @@
 -- Update expanded explanations for 6.2-part1 (25 cases).
 -- Safe to re-run: only updates tactical_explanations.
 
-UPDATE public.economics_cases SET tactical_explanations = ARRAY['TRUE — The income statement reports period performance (revenue, costs, profit).
+UPDATE public.economics_cases SET tactical_explanations = ARRAY['Dividend payments are a financing activity.
 
-The wording matches the relevant rule for "Cash Flow Mix Over Two Years 1". The income statement reports period performance (revenue, costs, profit). The cash-flow statement splits operating, investing, and financing cash movements. Profit is an accrual measure; depreciation is a non-cash expense; collecting receivables is operating cash, not new revenue. Applied here: "Dividends paid to shareholders are recorded within cash flow from financing activities, not cash flow from operating activities."
+That is exactly what the claim asserts, so the wording survives a careful check against the standard idea.
 
-The statement is true.', 'TRUE — The income statement reports period performance (revenue, costs, profit).
+The statement is true.', 'Investing: -246, -362.
 
-The wording matches the relevant rule for "Cash Flow Mix Over Two Years 1". The income statement reports period performance (revenue, costs, profit). The cash-flow statement splits operating, investing, and financing cash movements. Profit is an accrual measure; depreciation is a non-cash expense; collecting receivables is operating cash, not new revenue. Applied here: "Investing cash flow is an outflow in both years."
+That is exactly what the claim asserts, so the wording survives a careful check against the standard idea.
 
-The statement is true.', 'TRUE — The income statement reports period performance (revenue, costs, profit).
+The statement is true.', 'Borrowing proceeds: 77 then 53.
 
-The wording matches the relevant rule for "Cash Flow Mix Over Two Years 1". The income statement reports period performance (revenue, costs, profit). The cash-flow statement splits operating, investing, and financing cash movements. Profit is an accrual measure; depreciation is a non-cash expense; collecting receivables is operating cash, not new revenue. Applied here: "Proceeds from new borrowing were lower in Year 2 than in Year 1."
+That is exactly what the claim asserts, so the wording survives a careful check against the standard idea.
 
-The statement is true.', 'TRUE — The income statement reports period performance (revenue, costs, profit).
+The statement is true.', 'Dividends: 57 then 73.
 
-The wording matches the relevant rule for "Cash Flow Mix Over Two Years 1". The income statement reports period performance (revenue, costs, profit). The cash-flow statement splits operating, investing, and financing cash movements. Profit is an accrual measure; depreciation is a non-cash expense; collecting receivables is operating cash, not new revenue. Applied here: "Dividends paid rose from Year 1 to Year 2."
+That is exactly what the claim asserts, so the wording survives a careful check against the standard idea.
 
-The statement is true.', 'TRUE — The income statement reports period performance (revenue, costs, profit).
+The statement is true.', 'Long-term asset purchases are investing outflows.
 
-The wording matches the relevant rule for "Cash Flow Mix Over Two Years 1". The income statement reports period performance (revenue, costs, profit). The cash-flow statement splits operating, investing, and financing cash movements. Profit is an accrual measure; depreciation is a non-cash expense; collecting receivables is operating cash, not new revenue. Applied here: "Purchase of a plant, machinery or other long-term asset for cash is classified as cash flow from investing activities."
+That is exactly what the claim asserts, so the wording survives a careful check against the standard idea.
 
 The statement is true.'] WHERE case_id = 'CASE 6.2.001' AND tier = 'full';
-UPDATE public.economics_cases SET tactical_explanations = ARRAY['TRUE — The income statement reports period performance (revenue, costs, profit).
+UPDATE public.economics_cases SET tactical_explanations = ARRAY['Long-term asset purchases are investing outflows.
 
-The wording matches the relevant rule for "Profit and Loss Over Two Years 2". The income statement reports period performance (revenue, costs, profit). The cash-flow statement splits operating, investing, and financing cash movements. Profit is an accrual measure; depreciation is a non-cash expense; collecting receivables is operating cash, not new revenue. Applied here: "Purchase of a plant, machinery or other long-term asset for cash is classified as cash flow from investing activities."
+That is exactly what the claim asserts, so the wording survives a careful check against the standard idea.
 
-The statement is true.', 'FALSE — Gross margin is gross profit divided by revenue; the claim compares the Year-2 margin with Year 1 in percentage points.
+The statement is true.', 'Gross margins were 39.0% then 38.6%.
 
-Name the identity in words: gross margin = gross profit ÷ revenue; Δ = GPM₂ − GPM₁.
+Because that detail fails, the whole statement fails even if the topic word looks familiar.
 
-$$
-GPM_{1} = \frac{411}{1,055} = 39.0\%
-$$
+The statement is false.', 'Revenue changed by about 21.4% between the two years.
 
-$$
-GPM_{2} = \frac{494}{1,281} = 38.6\%
-$$
+That is exactly what the claim asserts, so the wording survives a careful check against the standard idea.
 
-$$
-\Delta = -0.4\text{ percentage points}
-$$
+The statement is true.', 'The operating result changed by about 17.0% between the two years.
 
-Threshold: more than 4.8 pp higher in Year 2. Actual Δ = -0.4 pp.
+Because that detail fails, the whole statement fails even if the topic word looks familiar.
 
-Reading the arithmetic against the claim: margin rose by -0.4 pp versus more than 4.8 pp so the statement does not hold.
+The statement is false.', 'Interest coverage in Year 1 ≈ 15.5 times.
 
-The statement is false.', 'TRUE — Use the case figures for Revenue and compute the percentage change between Year 1 and Year 2 before comparing it with the claimed threshold.
-
-From the extract:
-
-$$
-\text{Revenue}_{\text{Y1}} = 1,055, \quad
-\text{Revenue}_{\text{Y2}} = 1,281
-$$
-
-$$
-\frac{1,281 - 1,055}{1,055} = 21.4\%
-$$
-
-$$
-21.4\% > 19.8\%
-$$
-
-The actual growth is 21.4%, which is more than the claimed 19.8%.
-
-The statement is true.', 'FALSE — Use the case figures for The operating result and compute the percentage change between Year 1 and Year 2 before comparing it with the claimed threshold.
-
-From the extract:
-
-$$
-\text{The operating result}_{\text{Y1}} = 342, \quad
-\text{The operating result}_{\text{Y2}} = 400
-$$
-
-$$
-\frac{400 - 342}{342} = 17.0\%
-$$
-
-$$
-17.0\% \le  37.5\%
-$$
-
-The actual growth is 17.0%, which is not more than the claimed 37.5%.
-
-The statement is false.', 'TRUE — Interest coverage in Year 1 is operating result divided by finance costs.
-
-Name the identity in words: interest coverage = operating result ÷ finance costs.
-
-From the extract, operating result = 342 and finance costs = 22. Plug the figures step by step:
-
-$$
-Coverage = \frac{\text{operating result}}{\text{finance costs}}
-$$
-
-$$
-Coverage = \frac{342}{22}
-$$
-
-$$
-Coverage = 15.5455
-$$
-
-Threshold: more than 9.14. Actual 15.55.
-
-Reading the arithmetic against the claim: coverage 15.55 exceeds 9.14 so the statement holds.
+That is exactly what the claim asserts, so the wording survives a careful check against the standard idea.
 
 The statement is true.'] WHERE case_id = 'CASE 6.2.002' AND tier = 'full';
-UPDATE public.economics_cases SET tactical_explanations = ARRAY['TRUE — The income statement reports period performance (revenue, costs, profit).
+UPDATE public.economics_cases SET tactical_explanations = ARRAY['Profit is the residual of revenues over costs and expenses.
 
-The wording matches the relevant rule for "Annual Depreciation Chart 3". The income statement reports period performance (revenue, costs, profit). The cash-flow statement splits operating, investing, and financing cash movements. Profit is an accrual measure; depreciation is a non-cash expense; collecting receivables is operating cash, not new revenue. Applied here: "If revenues exceed costs and expenses, the company has a profit; if costs and expenses exceed revenue, it suffers a loss."
+That is exactly what the claim asserts, so the wording survives a careful check against the standard idea.
 
-The statement is true.', 'TRUE — Straight-line annual charge for each asset is (cost − residual) ÷ useful life; sum the three charges.
+The statement is true.', 'Sum of annual charges ≈ €28,652.
 
-Name the identity in words: annual charge = (cost − residual) ÷ life; combined = sum of charges.
+That is exactly what the claim asserts, so the wording survives a careful check against the standard idea.
 
-$$
-\text{Asset A – Machinery}: \frac{174,000 - 0}{11} = 15,818
-$$
+The statement is true.', 'Carrying value ≈ €26,500.
 
-$$
-\text{Asset B – Delivery truck}: \frac{46,000 - 7,000}{6} = 6,500
-$$
+Because that detail fails, the whole statement fails even if the topic word looks familiar.
 
-$$
-\text{Asset C – Computer equipment}: \frac{19,000 - 0}{3} = 6,333
-$$
+The statement is false.', 'Useful life is 3 years with no residual value.
 
-$$
-\text{Combined} = 28,652
-$$
+That is exactly what the claim asserts, so the wording survives a careful check against the standard idea.
 
-Claimed €28,652. Actual ≈ €28,652.
+The statement is true.', 'Combined carrying value ≈ €153,045.
 
-Reading the arithmetic against the claim: combined charge ≈ €28,652 versus claimed €28,652 so the statement holds.
-
-The statement is true.', 'FALSE — Carrying value after three years subtracts three annual charges from cost.
-
-Name the identity in words: carrying value = cost − years elapsed × annual charge.
-
-$$
-\text{Annual charge} = \frac{46,000 - 7,000}{6} = 6,500
-$$
-
-$$
-BV_{3} = 46,000 - 3 \times 6,500 = 26,500
-$$
-
-Claimed €30,895. Actual ≈ €26,500.
-
-Reading the arithmetic against the claim: carrying value ≈ €26,500 versus claimed €30,895 so the statement does not hold.
-
-The statement is false.', 'TRUE — With nil residual, the asset is fully written down once elapsed years reach useful life.
-
-$$
-\text{Cost} = €19,000, \quad \text{Life} = 3\text{ years}, \quad \text{Residual} = €0
-$$
-
-After 3 years: fully written down to nil.
-
-Reading the arithmetic against the claim: 3 years ≥ life 3 with residual 0 so the statement holds.
-
-The statement is true.', 'TRUE — Sum each asset''s carrying value after three years (floored at residual once fully depreciated).
-
-Name the identity in words: combined BV = sum of each asset''s cost − min(3, life) × annual charge (at residual if fully depreciated).
-
-$$
-\text{Asset A – Machinery}\ BV_{3} = 126,545
-$$
-$$
-\text{Asset B – Delivery truck}\ BV_{3} = 26,500
-$$
-$$
-\text{Asset C – Computer equipment}\ BV_{3} = 0
-$$
-
-$$
-\text{Combined BV} \approx €153,045
-$$
-
-Threshold: exceeds €143,061.
-
-Reading the arithmetic against the claim: combined BV ≈ €153,045 versus exceeds €143,061 so the statement holds.
+That is exactly what the claim asserts, so the wording survives a careful check against the standard idea.
 
 The statement is true.'] WHERE case_id = 'CASE 6.2.003' AND tier = 'full';
-UPDATE public.economics_cases SET tactical_explanations = ARRAY['TRUE — The income statement reports period performance (revenue, costs, profit).
+UPDATE public.economics_cases SET tactical_explanations = ARRAY['Dividend payments are a financing activity.
 
-The wording matches the relevant rule for "Balance Sheet as a Point-in-Time Snapshot". The income statement reports period performance (revenue, costs, profit). The cash-flow statement splits operating, investing, and financing cash movements. Profit is an accrual measure; depreciation is a non-cash expense; collecting receivables is operating cash, not new revenue. Applied here: "For this bakery, dividends paid to shareholders sit in financing activities, not operating activities."
+That is exactly what the claim asserts, so the wording survives a careful check against the standard idea.
 
-The statement is true.', 'FALSE — The income statement reports period performance (revenue, costs, profit).
+The statement is true.', 'Dividends are financing outflows, not investing.
 
-Absolute or misapplied wording conflicts with the rule for "Balance Sheet as a Point-in-Time Snapshot". The income statement reports period performance (revenue, costs, profit). The cash-flow statement splits operating, investing, and financing cash movements. Profit is an accrual measure; depreciation is a non-cash expense; collecting receivables is operating cash, not new revenue. Rejected claim: "For this bakery, the dividends paid line of (8000) euros belongs in investing activities."
+Because that detail fails, the whole statement fails even if the topic word looks familiar.
 
-The statement is false.', 'TRUE — The income statement reports period performance (revenue, costs, profit).
+The statement is false.', 'Investing and financing are recorded separately.
 
-The claim states: For this bakery, an investing outflow and a dividend payment can appear in the same year. The reason given — investing and financing are separate sections. — fits the chapter rule. The income statement reports period performance (revenue, costs, profit). The cash-flow statement splits operating, investing, and financing cash movements. Profit is an accrual measure; depreciation is a non-cash expense; collecting receivables is operating cash, not new revenue.
+That is exactly what the claim asserts, so the wording survives a careful check against the standard idea.
 
-The statement is true.', 'FALSE — The income statement reports period performance (revenue, costs, profit).
+The statement is true.', 'Negative investing cash flow often just means assets were purchased.
 
-Absolute or misapplied wording conflicts with the rule for "Balance Sheet as a Point-in-Time Snapshot". The income statement reports period performance (revenue, costs, profit). The cash-flow statement splits operating, investing, and financing cash movements. Profit is an accrual measure; depreciation is a non-cash expense; collecting receivables is operating cash, not new revenue. Rejected claim: "For this bakery, the investing outflow of 9,000 euros means the business must be failing."
+Because that detail fails, the whole statement fails even if the topic word looks familiar.
 
-The statement is false.', 'FALSE — The income statement reports period performance (revenue, costs, profit).
+The statement is false.', 'Loan repayments are financing, not operating.
 
-Absolute or misapplied wording conflicts with the rule for "Balance Sheet as a Point-in-Time Snapshot". The income statement reports period performance (revenue, costs, profit). The cash-flow statement splits operating, investing, and financing cash movements. Profit is an accrual measure; depreciation is a non-cash expense; collecting receivables is operating cash, not new revenue. Rejected claim: "For this bakery, repayments of borrowed money count as operating cash outflows."
+Because that detail fails, the whole statement fails even if the topic word looks familiar.
 
 The statement is false.'] WHERE case_id = 'CASE 6.2.004' AND tier = 'full';
-UPDATE public.economics_cases SET tactical_explanations = ARRAY['TRUE — The income statement reports period performance (revenue, costs, profit).
+UPDATE public.economics_cases SET tactical_explanations = ARRAY['The balance sheet does not show sales made during the year; that figure belongs in the statement of profit and loss.
 
-The wording matches the relevant rule for "Profit and Loss Over an Accounting Period". The income statement reports period performance (revenue, costs, profit). The cash-flow statement splits operating, investing, and financing cash movements. Profit is an accrual measure; depreciation is a non-cash expense; collecting receivables is operating cash, not new revenue. Applied here: "Turnover for the year is reported in the statement of profit and loss rather than in the balance sheet."
+That is exactly what the claim asserts, so the wording survives a careful check against the standard idea.
 
-The statement is true.', 'FALSE — The income statement reports period performance (revenue, costs, profit).
+The statement is true.', 'Depreciation specifically reflects the loss of value a fixed asset experiences through use.
 
-Absolute or misapplied wording conflicts with the rule for "Profit and Loss Over an Accounting Period". The income statement reports period performance (revenue, costs, profit). The cash-flow statement splits operating, investing, and financing cash movements. Profit is an accrual measure; depreciation is a non-cash expense; collecting receivables is operating cash, not new revenue. Rejected claim: "Depreciation has nothing to do with the wearing out of a fixed asset and is simply an arbitrary entry with no economic meaning."
+Because that detail fails, the whole statement fails even if the topic word looks familiar.
 
-The statement is false.', 'FALSE — The income statement reports period performance (revenue, costs, profit).
+The statement is false.', 'Without depreciation, an asset stays at its original cost in the accounts, overstating rather than reflecting its real worth.
 
-Absolute or misapplied wording conflicts with the rule for "Profit and Loss Over an Accounting Period". The income statement reports period performance (revenue, costs, profit). The cash-flow statement splits operating, investing, and financing cash movements. Profit is an accrual measure; depreciation is a non-cash expense; collecting receivables is operating cash, not new revenue. Rejected claim: "A fixed asset that is never depreciated will automatically show a reduced value in the accounts that reflects its true worth after years of use."
+The absolute wording "never" turns a familiar idea into an overclaim. One ordinary counterexample is enough to reject it.
 
-The statement is false.', 'FALSE — The income statement reports period performance (revenue, costs, profit).
+The statement is false.', 'Depreciation does not itself cause a cash payment in the year it is charged; the cash was paid when the asset was bought.
 
-Absolute or misapplied wording conflicts with the rule for "Profit and Loss Over an Accounting Period". The income statement reports period performance (revenue, costs, profit). The cash-flow statement splits operating, investing, and financing cash movements. Profit is an accrual measure; depreciation is a non-cash expense; collecting receivables is operating cash, not new revenue. Rejected claim: "Depreciation is a cash expense in the statement of profit and loss that triggers an actual cash payment in the year it is recorded."
+Because that detail fails, the whole statement fails even if the topic word looks familiar.
 
-The statement is false.', 'TRUE — The income statement reports period performance (revenue, costs, profit).
+The statement is false.', 'Depreciation allocates the loss of value a fixed asset suffers through use across the years it is expected to be used.
 
-The wording matches the relevant rule for "Profit and Loss Over an Accounting Period". The income statement reports period performance (revenue, costs, profit). The cash-flow statement splits operating, investing, and financing cash movements. Profit is an accrual measure; depreciation is a non-cash expense; collecting receivables is operating cash, not new revenue. Applied here: "Depreciation reflects the gradual wearing out of a fixed asset as it is used to help generate revenue over its useful life."
+That is exactly what the claim asserts, so the wording survives a careful check against the standard idea.
 
 The statement is true.'] WHERE case_id = 'CASE 6.2.005' AND tier = 'full';
-UPDATE public.economics_cases SET tactical_explanations = ARRAY['FALSE — The income statement reports period performance (revenue, costs, profit).
+UPDATE public.economics_cases SET tactical_explanations = ARRAY['It often only means assets were purchased.
 
-Absolute or misapplied wording conflicts with the rule for "Cash Flow Statement Over Two Years 6". The income statement reports period performance (revenue, costs, profit). The cash-flow statement splits operating, investing, and financing cash movements. Profit is an accrual measure; depreciation is a non-cash expense; collecting receivables is operating cash, not new revenue. Rejected claim: "A negative cash flow from investing activities always proves the business is in financial trouble."
+The absolute wording "always" turns a familiar idea into an overclaim. One ordinary counterexample is enough to reject it.
 
-The statement is false.', 'TRUE — Use the case figures for Cash flow from operating activities and compute the percentage change between Year 1 and Year 2 before comparing it with the claimed threshold.
+The statement is false.', 'Operating cash flow rose by about 14.3%.
 
-From the extract:
+That is exactly what the claim asserts, so the wording survives a careful check against the standard idea.
 
-$$
-\text{Cash flow from operating activities}_{\text{Y1}} = 314, \quad
-\text{Cash flow from operating activities}_{\text{Y2}} = 359
-$$
+The statement is true.', 'Financing moved from 21 to -6.
 
-$$
-\frac{359 - 314}{314} = 14.3\%
-$$
+Because that detail fails, the whole statement fails even if the topic word looks familiar.
 
-$$
-14.3\% > 13.7\%
-$$
+The statement is false.', 'Dividends grew ≈ 43.6%; operating cash flow grew ≈ 14.3%.
 
-The actual growth is 14.3%, which is more than the claimed 13.7%.
+Because that detail fails, the whole statement fails even if the topic word looks familiar.
 
-The statement is true.', 'FALSE — The income statement reports period performance (revenue, costs, profit).
+The statement is false.', 'Dividends are financing outflows, not investing.
 
-Absolute or misapplied wording conflicts with the rule for "Cash Flow Statement Over Two Years 6". The income statement reports period performance (revenue, costs, profit). The cash-flow statement splits operating, investing, and financing cash movements. Profit is an accrual measure; depreciation is a non-cash expense; collecting receivables is operating cash, not new revenue. Rejected claim: "Cash flow from financing activities was higher in Year 2 than in Year 1."
-
-The statement is false.', 'FALSE — The income statement reports period performance (revenue, costs, profit).
-
-Absolute or misapplied wording conflicts with the rule for "Cash Flow Statement Over Two Years 6". The income statement reports period performance (revenue, costs, profit). The cash-flow statement splits operating, investing, and financing cash movements. Profit is an accrual measure; depreciation is a non-cash expense; collecting receivables is operating cash, not new revenue. Rejected claim: "The increase in dividends paid from Year 1 to Year 2 was proportionally smaller than the increase in cash flow from operating activities."
-
-The statement is false.', 'FALSE — The income statement reports period performance (revenue, costs, profit).
-
-The claim states: Paying dividends is classified as an investing cash outflow. The reason — it uses cash belonging to shareholders. — does not support that label under the chapter definitions. The income statement reports period performance (revenue, costs, profit). The cash-flow statement splits operating, investing, and financing cash movements. Profit is an accrual measure; depreciation is a non-cash expense; collecting receivables is operating cash, not new revenue.
+Because that detail fails, the whole statement fails even if the topic word looks familiar.
 
 The statement is false.'] WHERE case_id = 'CASE 6.2.006' AND tier = 'full';
-UPDATE public.economics_cases SET tactical_explanations = ARRAY['FALSE — The income statement reports period performance (revenue, costs, profit).
+UPDATE public.economics_cases SET tactical_explanations = ARRAY['Land is not depreciated.
 
-Absolute or misapplied wording conflicts with the rule for "Asset Composition Chart 7". The income statement reports period performance (revenue, costs, profit). The cash-flow statement splits operating, investing, and financing cash movements. Profit is an accrual measure; depreciation is a non-cash expense; collecting receivables is operating cash, not new revenue. Rejected claim: "Land is depreciated on a straight-line basis just like buildings and machinery."
+Because that detail fails, the whole statement fails even if the topic word looks familiar.
 
-The statement is false.', 'FALSE — The current ratio is the standard liquidity cover of current assets over current liabilities.
+The statement is false.', 'Current assets = 410
 
-Name the identity in words: current ratio = current assets ÷ current liabilities.
+Current liabilities gather the short-term claims:
 
-Build current assets and current liabilities from the extract:
+Current liabilities = 278
 
-$$
-CA = 159 + 158 + 93 = 410
-$$
+Current ratio = 410 / 278 ≈ 1.47
 
-$$
-CL = 197 + 81 = 278
-$$
+The claim says the ratio below 1. We have about 1.47, which does not match that comparison.
 
-$$
-\text{Current ratio} = \frac{410}{278} = 1.4748
-$$
+The statement is false.', 'Equity ratio = total equity / total assets.
 
-Claimed: is below 1. Actual 1.47.
+477 / 1063 ≈ 44.9%
 
-Reading the arithmetic against the claim: actual current ratio 1.47 versus ''is below 1'' so the statement does not hold.
+The claim says the ratio below 23.4%. We have about 44.9%, which does not match that comparison.
 
-The statement is false.', 'FALSE — The equity ratio places equity against total assets so the financing structure can be judged on one balance sheet.
+The statement is false.', 'Working capital = current assets minus current liabilities.
 
-Name the identity in words: equity ratio = equity ÷ total assets.
+410 - 278 = 132
 
-From the extract, equity = 477 and total assets = 1,063. Plug the figures step by step:
+The claim cites 132. We have 132, so the figures line up.
 
-$$
-ER = \frac{\text{equity}}{\text{total assets}}
-$$
+The statement is true.', 'From the figures or classification rule involved, debt ratio ≈ 55.1%. Accounting statements fail when a loss is treated as increasing equity, when a flow is placed on the balance sheet, or when a ratio inequality is reversed.
 
-$$
-ER = \frac{477}{1,063}
-$$
-
-$$
-ER = 44.9\%
-$$
-
-Claimed: is below 23.4%. Actual 44.9%.
-
-Reading the arithmetic against the claim: actual equity ratio 44.9% does not match ''is below 23.4%'' so the statement does not hold.
-
-The statement is false.', 'TRUE — Working capital is the euro surplus (or deficit) of current assets over current liabilities on this balance sheet.
-
-Name the identity in words: working capital = current assets − current liabilities.
-
-From the extract, current assets total 410 and current liabilities total 278:
-
-$$
-WC = CA - CL
-$$
-
-$$
-CA = 410, \quad CL = 278
-$$
-
-$$
-WC = 410 - 278 = 132
-$$
-
-The statement cites working capital of €132 thousand and that it is positive. Calculated WC is 132, which is positive.
-
-Reading the arithmetic against the claim: WC = 132 is positive as claimed so the statement holds.
-
-The statement is true.', 'FALSE — The debt ratio places debt against total assets so the financing structure can be judged on one balance sheet.
-
-Name the identity in words: debt ratio = debt ÷ total assets.
-
-From the extract, debt = 586 and total assets = 1,063. Plug the figures step by step:
-
-$$
-DR = \frac{\text{debt}}{\text{total assets}}
-$$
-
-$$
-DR = \frac{586}{1,063}
-$$
-
-$$
-DR = 55.1\%
-$$
-
-Claimed: exceeds 57.6%. Actual 55.1%.
-
-Reading the arithmetic against the claim: actual debt ratio 55.1% does not match ''exceeds 57.6%'' so the statement does not hold.
+Because that detail fails, the whole statement fails even if the topic word looks familiar.
 
 The statement is false.'] WHERE case_id = 'CASE 6.2.007' AND tier = 'full';
-UPDATE public.economics_cases SET tactical_explanations = ARRAY['FALSE — The income statement reports period performance (revenue, costs, profit).
+UPDATE public.economics_cases SET tactical_explanations = ARRAY['Straight-line depreciation produces an equal annual charge across the useful life, not a varying one.
 
-Absolute or misapplied wording conflicts with the rule for "Components of a Financial Statement". The income statement reports period performance (revenue, costs, profit). The cash-flow statement splits operating, investing, and financing cash movements. Profit is an accrual measure; depreciation is a non-cash expense; collecting receivables is operating cash, not new revenue. Rejected claim: "Under the straight-line method, the depreciable amount of an asset is spread unevenly across its useful life, producing a different charge each year."
+Because that detail fails, the whole statement fails even if the topic word looks familiar.
 
-The statement is false.', 'FALSE — The income statement reports period performance (revenue, costs, profit).
+The statement is false.', 'Land is generally excluded from depreciation because it does not wear out through use the way other fixed assets do.
 
-The claim states: Land is depreciated in exactly the same way as buildings, machinery and vehicles. The reason — all fixed assets wear out identically through use. — does not support that label under the chapter definitions. The income statement reports period performance (revenue, costs, profit). The cash-flow statement splits operating, investing, and financing cash movements. Profit is an accrual measure; depreciation is a non-cash expense; collecting receivables is operating cash, not new revenue.
+The absolute wording "all" turns a familiar idea into an overclaim. One ordinary counterexample is enough to reject it.
 
-The statement is false.', 'FALSE — The income statement reports period performance (revenue, costs, profit).
+The statement is false.', 'Profit increases equity, typically through retained earnings, rather than reducing it.
 
-Absolute or misapplied wording conflicts with the rule for "Components of a Financial Statement". The income statement reports period performance (revenue, costs, profit). The cash-flow statement splits operating, investing, and financing cash movements. Profit is an accrual measure; depreciation is a non-cash expense; collecting receivables is operating cash, not new revenue. Rejected claim: "A profit earned during the year reduces the equity reported on the balance sheet."
+Because that detail fails, the whole statement fails even if the topic word looks familiar.
 
-The statement is false.', 'TRUE — The income statement reports period performance (revenue, costs, profit).
+The statement is false.', 'Skipping depreciation leaves an asset recorded above its real economic value once it has been used for some time.
 
-The wording matches the relevant rule for "Components of a Financial Statement". The income statement reports period performance (revenue, costs, profit). The cash-flow statement splits operating, investing, and financing cash movements. Profit is an accrual measure; depreciation is a non-cash expense; collecting receivables is operating cash, not new revenue. Applied here: "If a fixed asset were never depreciated, it would remain on the accounts at its original cost even after years of productive use, overstating its true worth."
+That is exactly what the claim asserts, so the wording survives a careful check against the standard idea.
 
-The statement is true.', 'FALSE — The income statement reports period performance (revenue, costs, profit).
+The statement is true.', 'A loss reduces equity by lowering retained earnings; it does not increase equity.
 
-Absolute or misapplied wording conflicts with the rule for "Components of a Financial Statement". The income statement reports period performance (revenue, costs, profit). The cash-flow statement splits operating, investing, and financing cash movements. Profit is an accrual measure; depreciation is a non-cash expense; collecting receivables is operating cash, not new revenue. Rejected claim: "A loss incurred during the year increases the equity reported on the balance sheet."
+Because that detail fails, the whole statement fails even if the topic word looks familiar.
 
 The statement is false.'] WHERE case_id = 'CASE 6.2.008' AND tier = 'full';
-UPDATE public.economics_cases SET tactical_explanations = ARRAY['TRUE — The income statement reports period performance (revenue, costs, profit).
+UPDATE public.economics_cases SET tactical_explanations = ARRAY['Dividend payments are a financing activity.
 
-The wording matches the relevant rule for "Cash Flow From Operating Activities". The income statement reports period performance (revenue, costs, profit). The cash-flow statement splits operating, investing, and financing cash movements. Profit is an accrual measure; depreciation is a non-cash expense; collecting receivables is operating cash, not new revenue. Applied here: "For this hotel chain, dividends paid to shareholders sit in financing activities, not operating activities."
+That is exactly what the claim asserts, so the wording survives a careful check against the standard idea.
 
-The statement is true.', 'TRUE — The income statement reports period performance (revenue, costs, profit).
+The statement is true.', 'Investing and financing are recorded separately.
 
-The claim states: For this hotel chain, an investing outflow and a dividend payment can appear in the same year. The reason given — investing and financing are separate sections. — fits the chapter rule. The income statement reports period performance (revenue, costs, profit). The cash-flow statement splits operating, investing, and financing cash movements. Profit is an accrual measure; depreciation is a non-cash expense; collecting receivables is operating cash, not new revenue.
+That is exactly what the claim asserts, so the wording survives a careful check against the standard idea.
 
-The statement is true.', 'TRUE — The income statement reports period performance (revenue, costs, profit).
+The statement is true.', 'Customer collections belong in operating cash flow.
 
-The wording matches the relevant rule for "Cash Flow From Operating Activities". The income statement reports period performance (revenue, costs, profit). The cash-flow statement splits operating, investing, and financing cash movements. Profit is an accrual measure; depreciation is a non-cash expense; collecting receivables is operating cash, not new revenue. Applied here: "For this hotel chain, collecting payment on a trade receivable is an operating cash inflow from the core trading cycle."
+That is exactly what the claim asserts, so the wording survives a careful check against the standard idea.
 
-The statement is true.', 'TRUE — The income statement reports period performance (revenue, costs, profit).
+The statement is true.', 'Long-term asset purchases are investing outflows.
 
-The wording matches the relevant rule for "Cash Flow From Operating Activities". The income statement reports period performance (revenue, costs, profit). The cash-flow statement splits operating, investing, and financing cash movements. Profit is an accrual measure; depreciation is a non-cash expense; collecting receivables is operating cash, not new revenue. Applied here: "For this hotel chain, buying new kitchen equipment is classified as an investing cash outflow."
+That is exactly what the claim asserts, so the wording survives a careful check against the standard idea.
 
-The statement is true.', 'FALSE — The income statement reports period performance (revenue, costs, profit).
+The statement is true.', 'Dividends are financing outflows, not investing.
 
-Absolute or misapplied wording conflicts with the rule for "Cash Flow From Operating Activities". The income statement reports period performance (revenue, costs, profit). The cash-flow statement splits operating, investing, and financing cash movements. Profit is an accrual measure; depreciation is a non-cash expense; collecting receivables is operating cash, not new revenue. Rejected claim: "For this hotel chain, the dividends paid line of (13100) euros belongs in investing activities."
+Because that detail fails, the whole statement fails even if the topic word looks familiar.
 
 The statement is false.'] WHERE case_id = 'CASE 6.2.009' AND tier = 'full';
-UPDATE public.economics_cases SET tactical_explanations = ARRAY['TRUE — The income statement reports period performance (revenue, costs, profit).
+UPDATE public.economics_cases SET tactical_explanations = ARRAY['A loss lowers retained earnings and therefore reduces total equity.
 
-The wording matches the relevant rule for "Cash Flow From Investing Activities". The income statement reports period performance (revenue, costs, profit). The cash-flow statement splits operating, investing, and financing cash movements. Profit is an accrual measure; depreciation is a non-cash expense; collecting receivables is operating cash, not new revenue. Applied here: "A loss incurred during the year reduces the equity reported on the balance sheet."
+That is exactly what the claim asserts, so the wording survives a careful check against the standard idea.
 
-The statement is true.', 'TRUE — The income statement reports period performance (revenue, costs, profit).
+The statement is true.', 'Non-cash items and timing differences mean profit and cash movement typically diverge.
 
-The wording matches the relevant rule for "Cash Flow From Investing Activities". The income statement reports period performance (revenue, costs, profit). The cash-flow statement splits operating, investing, and financing cash movements. Profit is an accrual measure; depreciation is a non-cash expense; collecting receivables is operating cash, not new revenue. Applied here: "Profit for the year and the net change in cash and cash equivalents for the year are different measures that will not usually be equal."
+That is exactly what the claim asserts, so the wording survives a careful check against the standard idea.
 
-The statement is true.', 'TRUE — The income statement reports period performance (revenue, costs, profit).
+The statement is true.', 'Day-to-day trading, such as receipts from customers and payments to suppliers and employees, is captured in the operating section.
 
-The wording matches the relevant rule for "Cash Flow From Investing Activities". The income statement reports period performance (revenue, costs, profit). The cash-flow statement splits operating, investing, and financing cash movements. Profit is an accrual measure; depreciation is a non-cash expense; collecting receivables is operating cash, not new revenue. Applied here: "Cash flow from operating activities reflects cash movements arising from the core trading activities of a business during the period."
+That is exactly what the claim asserts, so the wording survives a careful check against the standard idea.
 
-The statement is true.', 'FALSE — The income statement reports period performance (revenue, costs, profit).
+The statement is true.', 'Borrowing and loan repayments are financing activities; operating cash flow instead reflects core trading.
 
-Absolute or misapplied wording conflicts with the rule for "Cash Flow From Investing Activities". The income statement reports period performance (revenue, costs, profit). The cash-flow statement splits operating, investing, and financing cash movements. Profit is an accrual measure; depreciation is a non-cash expense; collecting receivables is operating cash, not new revenue. Rejected claim: "Cash flow from operating activities reflects cash movements arising from borrowing and repaying loans during the period."
+Because that detail fails, the whole statement fails even if the topic word looks familiar.
 
-The statement is false.', 'TRUE — The income statement reports period performance (revenue, costs, profit).
+The statement is false.', 'Spending on or proceeds from long-term assets such as equipment or property sit in the investing section.
 
-The wording matches the relevant rule for "Cash Flow From Investing Activities". The income statement reports period performance (revenue, costs, profit). The cash-flow statement splits operating, investing, and financing cash movements. Profit is an accrual measure; depreciation is a non-cash expense; collecting receivables is operating cash, not new revenue. Applied here: "Cash flow from investing activities reflects cash movements arising from buying or selling long-term assets during the period."
+That is exactly what the claim asserts, so the wording survives a careful check against the standard idea.
 
 The statement is true.'] WHERE case_id = 'CASE 6.2.010' AND tier = 'full';
-UPDATE public.economics_cases SET tactical_explanations = ARRAY['FALSE — The income statement reports period performance (revenue, costs, profit).
+UPDATE public.economics_cases SET tactical_explanations = ARRAY['Core trading is reflected in operating cash flow; investing cash flow relates to long-term assets.
 
-Absolute or misapplied wording conflicts with the rule for "Cash Flow From Financing Activities". The income statement reports period performance (revenue, costs, profit). The cash-flow statement splits operating, investing, and financing cash movements. Profit is an accrual measure; depreciation is a non-cash expense; collecting receivables is operating cash, not new revenue. Rejected claim: "Cash flow from investing activities reflects cash movements arising from the core day-to-day trading of a business during the period."
+Because that detail fails, the whole statement fails even if the topic word looks familiar.
 
-The statement is false.', 'FALSE — The income statement reports period performance (revenue, costs, profit).
+The statement is false.', 'Buying or selling long-term assets is an investing activity, not a financing one.
 
-Absolute or misapplied wording conflicts with the rule for "Cash Flow From Financing Activities". The income statement reports period performance (revenue, costs, profit). The cash-flow statement splits operating, investing, and financing cash movements. Profit is an accrual measure; depreciation is a non-cash expense; collecting receivables is operating cash, not new revenue. Rejected claim: "Cash flow from financing activities reflects cash movements arising from buying or selling long-term assets during the period."
+Because that detail fails, the whole statement fails even if the topic word looks familiar.
 
-The statement is false.', 'TRUE — The income statement reports period performance (revenue, costs, profit).
+The statement is false.', 'Transactions with lenders and owners are grouped in the financing section of the cash flow statement.
 
-The wording matches the relevant rule for "Cash Flow From Financing Activities". The income statement reports period performance (revenue, costs, profit). The cash-flow statement splits operating, investing, and financing cash movements. Profit is an accrual measure; depreciation is a non-cash expense; collecting receivables is operating cash, not new revenue. Applied here: "Cash flow from financing activities reflects cash movements arising from borrowing, repaying loans, raising share capital or paying dividends during the period."
+That is exactly what the claim asserts, so the wording survives a careful check against the standard idea.
 
-The statement is true.', 'FALSE — The income statement reports period performance (revenue, costs, profit).
+The statement is true.', 'Investing outflows often simply reflect spending on new long-term assets rather than financial distress.
 
-Absolute or misapplied wording conflicts with the rule for "Cash Flow From Financing Activities". The income statement reports period performance (revenue, costs, profit). The cash-flow statement splits operating, investing, and financing cash movements. Profit is an accrual measure; depreciation is a non-cash expense; collecting receivables is operating cash, not new revenue. Rejected claim: "A negative cash flow from investing activities is always a definite sign that a business is in financial difficulty, regardless of the cause."
+The absolute wording "always" turns a familiar idea into an overclaim. One ordinary counterexample is enough to reject it.
 
-The statement is false.', 'FALSE — The income statement reports period performance (revenue, costs, profit).
+The statement is false.', 'The net change in cash is exactly the sum of the operating, investing and financing cash flows for the period.
 
-Absolute or misapplied wording conflicts with the rule for "Cash Flow From Financing Activities". The income statement reports period performance (revenue, costs, profit). The cash-flow statement splits operating, investing, and financing cash movements. Profit is an accrual measure; depreciation is a non-cash expense; collecting receivables is operating cash, not new revenue. Rejected claim: "The net change in cash and cash equivalents for a period has no relationship to the cash flows from operating, investing and financing activities."
+Because that detail fails, the whole statement fails even if the topic word looks familiar.
 
 The statement is false.'] WHERE case_id = 'CASE 6.2.011' AND tier = 'full';
-UPDATE public.economics_cases SET tactical_explanations = ARRAY['FALSE — The income statement reports period performance (revenue, costs, profit).
+UPDATE public.economics_cases SET tactical_explanations = ARRAY['Dividends are financing outflows, not investing.
 
-Absolute or misapplied wording conflicts with the rule for "Negative Investing Cash Flow Explained". The income statement reports period performance (revenue, costs, profit). The cash-flow statement splits operating, investing, and financing cash movements. Profit is an accrual measure; depreciation is a non-cash expense; collecting receivables is operating cash, not new revenue. Rejected claim: "For this furniture maker, the dividends paid line of (18200) euros belongs in investing activities."
+Because that detail fails, the whole statement fails even if the topic word looks familiar.
 
-The statement is false.', 'FALSE — The income statement reports period performance (revenue, costs, profit).
+The statement is false.', 'Negative investing cash flow often just means assets were purchased.
 
-Absolute or misapplied wording conflicts with the rule for "Negative Investing Cash Flow Explained". The income statement reports period performance (revenue, costs, profit). The cash-flow statement splits operating, investing, and financing cash movements. Profit is an accrual measure; depreciation is a non-cash expense; collecting receivables is operating cash, not new revenue. Rejected claim: "For this furniture maker, the investing outflow of 19,800 euros means the business must be failing."
+Because that detail fails, the whole statement fails even if the topic word looks familiar.
 
-The statement is false.', 'TRUE — The income statement reports period performance (revenue, costs, profit).
+The statement is false.', 'Dividend payments are a financing activity.
 
-The wording matches the relevant rule for "Negative Investing Cash Flow Explained". The income statement reports period performance (revenue, costs, profit). The cash-flow statement splits operating, investing, and financing cash movements. Profit is an accrual measure; depreciation is a non-cash expense; collecting receivables is operating cash, not new revenue. Applied here: "For this furniture maker, dividends paid to shareholders sit in financing activities, not operating activities."
+That is exactly what the claim asserts, so the wording survives a careful check against the standard idea.
 
-The statement is true.', 'TRUE — The income statement reports period performance (revenue, costs, profit).
+The statement is true.', 'Investing and financing are recorded separately.
 
-The claim states: For this furniture maker, an investing outflow and a dividend payment can appear in the same year. The reason given — investing and financing are separate sections. — fits the chapter rule. The income statement reports period performance (revenue, costs, profit). The cash-flow statement splits operating, investing, and financing cash movements. Profit is an accrual measure; depreciation is a non-cash expense; collecting receivables is operating cash, not new revenue.
+That is exactly what the claim asserts, so the wording survives a careful check against the standard idea.
 
-The statement is true.', 'FALSE — The income statement reports period performance (revenue, costs, profit).
+The statement is true.', 'Loan repayments are financing, not operating.
 
-Absolute or misapplied wording conflicts with the rule for "Negative Investing Cash Flow Explained". The income statement reports period performance (revenue, costs, profit). The cash-flow statement splits operating, investing, and financing cash movements. Profit is an accrual measure; depreciation is a non-cash expense; collecting receivables is operating cash, not new revenue. Rejected claim: "For this furniture maker, repayments of borrowed money count as operating cash outflows."
+Because that detail fails, the whole statement fails even if the topic word looks familiar.
 
 The statement is false.'] WHERE case_id = 'CASE 6.2.012' AND tier = 'full';
-UPDATE public.economics_cases SET tactical_explanations = ARRAY['FALSE — Use the case figures for Cash flow from operating activities and compute the percentage change between Year 1 and Year 2 before comparing it with the claimed threshold.
+UPDATE public.economics_cases SET tactical_explanations = ARRAY['Operating cash flow rose by about 8.2%.
 
-From the extract:
+Because that detail fails, the whole statement fails even if the topic word looks familiar.
 
-$$
-\text{Cash flow from operating activities}_{\text{Y1}} = 367, \quad
-\text{Cash flow from operating activities}_{\text{Y2}} = 397
-$$
+The statement is false.', 'Investing and financing are recorded separately.
 
-$$
-\frac{397 - 367}{367} = 8.2\%
-$$
+That is exactly what the claim asserts, so the wording survives a careful check against the standard idea.
 
-$$
-8.2\% \le  11.7\%
-$$
+The statement is true.', 'They are operating inflows.
 
-The actual growth is 8.2%, which is not more than the claimed 11.7%.
+Because that detail fails, the whole statement fails even if the topic word looks familiar.
 
-The statement is false.', 'TRUE — The income statement reports period performance (revenue, costs, profit).
+The statement is false.', 'Carrying value equals cost less accumulated depreciation.
 
-The wording matches the relevant rule for "Cash Flow Mix Over Two Years 13". The income statement reports period performance (revenue, costs, profit). The cash-flow statement splits operating, investing, and financing cash movements. Profit is an accrual measure; depreciation is a non-cash expense; collecting receivables is operating cash, not new revenue. Applied here: "A business can have a negative cash flow from investing activities in the same year that it pays a dividend, since investment spending and dividends sit in different sections of the cash flow state…"
+That is exactly what the claim asserts, so the wording survives a careful check against the standard idea.
 
-The statement is true.', 'FALSE — The income statement reports period performance (revenue, costs, profit).
+The statement is true.', 'Those sit outside cost of sales as operating expenses.
 
-Absolute or misapplied wording conflicts with the rule for "Cash Flow Mix Over Two Years 13". The income statement reports period performance (revenue, costs, profit). The cash-flow statement splits operating, investing, and financing cash movements. Profit is an accrual measure; depreciation is a non-cash expense; collecting receivables is operating cash, not new revenue. Rejected claim: "Customer collections of receivables are classified as financing cash inflows."
-
-The statement is false.', 'TRUE — The income statement reports period performance (revenue, costs, profit).
-
-The wording matches the relevant rule for "Cash Flow Mix Over Two Years 13". The income statement reports period performance (revenue, costs, profit). The cash-flow statement splits operating, investing, and financing cash movements. Profit is an accrual measure; depreciation is a non-cash expense; collecting receivables is operating cash, not new revenue. Applied here: "After depreciation, the carrying value of an asset on the balance sheet is lower than its original cost."
-
-The statement is true.', 'FALSE — The income statement reports period performance (revenue, costs, profit).
-
-Absolute or misapplied wording conflicts with the rule for "Cash Flow Mix Over Two Years 13". The income statement reports period performance (revenue, costs, profit). The cash-flow statement splits operating, investing, and financing cash movements. Profit is an accrual measure; depreciation is a non-cash expense; collecting receivables is operating cash, not new revenue. Rejected claim: "Cost of sales includes administration costs, shipping to customers and sales-staff costs."
+Because that detail fails, the whole statement fails even if the topic word looks familiar.
 
 The statement is false.'] WHERE case_id = 'CASE 6.2.013' AND tier = 'full';
-UPDATE public.economics_cases SET tactical_explanations = ARRAY['FALSE — Profit and cash movement are different measures.
+UPDATE public.economics_cases SET tactical_explanations = ARRAY['Non-cash charges and timing differences mean a profitable business can still see its cash balance fall during the year.
 
-A firm can be profitable on an accrual basis while cash falls (e.g. heavy investment or slower collections).
+The absolute wording "never" turns a familiar idea into an overclaim. One ordinary counterexample is enough to reject it.
 
-Using the stem facts: "A business that reports a profit for the year can never see its cash and cash equivalents fall over that same year."
+The statement is false.', 'Collecting money from a customer relates to core trading, so it belongs in the operating section, not the financing section.
 
-The income statement reports period performance (revenue, costs, profit). The cash-flow statement splits operating, investing, and financing cash movements. Profit is an accrual measure; depreciation is a non-cash expense; collecting receivables is operating cash, not new revenue.
+Because that detail fails, the whole statement fails even if the topic word looks familiar.
 
-The statement is false.', 'FALSE — The income statement reports period performance (revenue, costs, profit).
+The statement is false.', 'Depreciation is a non-cash charge, so it is added back to profit when working out cash generated from operations.
 
-Absolute or misapplied wording conflicts with the rule for "Collecting a Trade Receivable". The income statement reports period performance (revenue, costs, profit). The cash-flow statement splits operating, investing, and financing cash movements. Profit is an accrual measure; depreciation is a non-cash expense; collecting receivables is operating cash, not new revenue. Rejected claim: "When a bakery collects payment from a customer who owed money on an overdue invoice, the resulting cash inflow belongs in cash flow from financing activities."
+That is exactly what the claim asserts, so the wording survives a careful check against the standard idea.
 
-The statement is false.', 'TRUE — Under the indirect method, non-cash expenses are added back to profit.
+The statement is true.', 'Carrying value equals original cost less the depreciation built up against the asset since it was acquired.
 
-Depreciation reduced profit without using cash, so it is added back when reconciling to operating cash.
+That is exactly what the claim asserts, so the wording survives a careful check against the standard idea.
 
-Using the stem facts: "When reconciling profit to cash generated from operating activities under the indirect method, depreciation charged during the year is added back to profit because it did not involve a cash payment."
+The statement is true.', 'Working capital movements affect cash without moving through the statement of profit and loss in the same way, creating a gap between profit and operating cash flow.
 
-The income statement reports period performance (revenue, costs, profit). The cash-flow statement splits operating, investing, and financing cash movements. Profit is an accrual measure; depreciation is a non-cash expense; collecting receivables is operating cash, not new revenue.
-
-The statement is true.', 'TRUE — The income statement reports period performance (revenue, costs, profit).
-
-The wording matches the relevant rule for "Collecting a Trade Receivable". The income statement reports period performance (revenue, costs, profit). The cash-flow statement splits operating, investing, and financing cash movements. Profit is an accrual measure; depreciation is a non-cash expense; collecting receivables is operating cash, not new revenue. Applied here: "Accumulated depreciation is deducted from the original cost of a fixed asset to arrive at its carrying value, also called its carrying value."
-
-The statement is true.', 'TRUE — The income statement reports period performance (revenue, costs, profit).
-
-The wording matches the relevant rule for "Collecting a Trade Receivable". The income statement reports period performance (revenue, costs, profit). The cash-flow statement splits operating, investing, and financing cash movements. Profit is an accrual measure; depreciation is a non-cash expense; collecting receivables is operating cash, not new revenue. Applied here: "A rise in inventory or trade receivables during the year uses cash but does not by itself reduce the profit reported for the period, which helps explain why profit and operating cash flow can differ."
+That is exactly what the claim asserts, so the wording survives a careful check against the standard idea.
 
 The statement is true.'] WHERE case_id = 'CASE 6.2.014' AND tier = 'full';
-UPDATE public.economics_cases SET tactical_explanations = ARRAY['FALSE — The income statement reports period performance (revenue, costs, profit).
+UPDATE public.economics_cases SET tactical_explanations = ARRAY['That is the balance sheet''s job; the income statement covers a period.
 
-Absolute or misapplied wording conflicts with the rule for "Revenue and Operating Result Chart 15". The income statement reports period performance (revenue, costs, profit). The cash-flow statement splits operating, investing, and financing cash movements. Profit is an accrual measure; depreciation is a non-cash expense; collecting receivables is operating cash, not new revenue. Rejected claim: "The income statement reports assets, liabilities and equity on a single reporting date."
+Because that detail fails, the whole statement fails even if the topic word looks familiar.
 
-The statement is false.', 'FALSE — Gross margin is gross profit divided by revenue; the claim compares the Year-2 margin with Year 1 in percentage points.
+The statement is false.', 'Gross margins were 36.0% then 35.7%.
 
-Name the identity in words: gross margin = gross profit ÷ revenue; Δ = GPM₂ − GPM₁.
+Because that detail fails, the whole statement fails even if the topic word looks familiar.
 
-$$
-GPM_{1} = \frac{381}{1,057} = 36.0\%
-$$
+The statement is false.', 'Revenue changed by about 21.3% between the two years.
 
-$$
-GPM_{2} = \frac{458}{1,282} = 35.7\%
-$$
+That is exactly what the claim asserts, so the wording survives a careful check against the standard idea.
 
-$$
-\Delta = -0.3\text{ percentage points}
-$$
+The statement is true.', 'Interest coverage in Year 1 ≈ 18.6 times.
 
-Threshold: more than 4 pp higher in Year 2. Actual Δ = -0.3 pp.
+That is exactly what the claim asserts, so the wording survives a careful check against the standard idea.
 
-Reading the arithmetic against the claim: margin rose by -0.3 pp versus more than 4 pp so the statement does not hold.
+The statement is true.', 'Operating margin in year 2 ≈ 27.2%.
 
-The statement is false.', 'TRUE — Use the case figures for Revenue and compute the percentage change between Year 1 and Year 2 before comparing it with the claimed threshold.
-
-From the extract:
-
-$$
-\text{Revenue}_{\text{Y1}} = 1,057, \quad
-\text{Revenue}_{\text{Y2}} = 1,282
-$$
-
-$$
-\frac{1,282 - 1,057}{1,057} = 21.3\%
-$$
-
-$$
-21.3\% > 11.3\%
-$$
-
-The actual growth is 21.3%, which is more than the claimed 11.3%.
-
-The statement is true.', 'TRUE — Interest coverage in Year 1 is operating result divided by finance costs.
-
-Name the identity in words: interest coverage = operating result ÷ finance costs.
-
-From the extract, operating result = 297 and finance costs = 16. Plug the figures step by step:
-
-$$
-Coverage = \frac{\text{operating result}}{\text{finance costs}}
-$$
-
-$$
-Coverage = \frac{297}{16}
-$$
-
-$$
-Coverage = 18.5625
-$$
-
-Threshold: more than 7.14. Actual 18.56.
-
-Reading the arithmetic against the claim: coverage 18.56 exceeds 7.14 so the statement holds.
-
-The statement is true.', 'TRUE — Operating margin in Year 2 is operating result divided by revenue.
-
-Name the identity in words: operating margin = operating result ÷ revenue.
-
-From the extract, operating result = 349 and revenue = 1,282. Plug the figures step by step:
-
-$$
-OM = \frac{\text{operating result}}{\text{revenue}}
-$$
-
-$$
-OM = \frac{349}{1,282}
-$$
-
-$$
-OM = 27.2\%
-$$
-
-Threshold: exceeds 8.2% in Year 2. Actual 27.2%.
-
-Reading the arithmetic against the claim: operating margin 27.2% exceeds 8.2% so the statement holds.
+That is exactly what the claim asserts, so the wording survives a careful check against the standard idea.
 
 The statement is true.'] WHERE case_id = 'CASE 6.2.015' AND tier = 'full';
-UPDATE public.economics_cases SET tactical_explanations = ARRAY['FALSE — Depreciation is a non-cash allocation of a past capital outlay.
+UPDATE public.economics_cases SET tactical_explanations = ARRAY['Depreciation is non-cash; the cash was usually paid when the asset was bought.
 
-Cash left the business when the asset was acquired. The annual depreciation charge merely allocates that past outlay across useful life; recording the charge does not require a fresh cash payment to an outside party in the year of the expense.
+Because that detail fails, the whole statement fails even if the topic word looks familiar.
 
-Applied to this stem: "Depreciation each year requires an equal cash payment to an outside party when the charge is recorded."
+The statement is false.', 'Sum of annual charges ≈ €32,833.
 
-The statement is false.', 'TRUE — Straight-line annual charge for each asset is (cost − residual) ÷ useful life; sum the three charges.
+That is exactly what the claim asserts, so the wording survives a careful check against the standard idea.
 
-Name the identity in words: annual charge = (cost − residual) ÷ life; combined = sum of charges.
+The statement is true.', 'Residual value is deducted from cost before spreading the remainder.
 
-$$
-\text{Asset A – Machinery}: \frac{170,000 - 0}{10} = 17,000
-$$
+Because that detail fails, the whole statement fails even if the topic word looks familiar.
 
-$$
-\text{Asset B – Delivery truck}: \frac{57,000 - 6,000}{6} = 8,500
-$$
+The statement is false.', 'About 30.0% of the machinery''s cost is depreciated after three years.
 
-$$
-\text{Asset C – Computer equipment}: \frac{22,000 - 0}{3} = 7,333
-$$
+Because that detail fails, the whole statement fails even if the topic word looks familiar.
 
-$$
-\text{Combined} = 32,833
-$$
+The statement is false.', 'Delivery truck ≈ €8,500 a year versus computer equipment ≈ €7,333 a year.
 
-Claimed €32,833. Actual ≈ €32,833.
-
-Reading the arithmetic against the claim: combined charge ≈ €32,833 versus claimed €32,833 so the statement holds.
-
-The statement is true.', 'FALSE — Straight-line depreciation uses cost minus residual value over useful life.
-
-Name the identity in words: depreciable amount = cost − residual; annual charge = depreciable amount ÷ life.
-
-Residual value is deducted before spreading. Claiming that residual value is ignored contradicts the straight-line rule.
-
-The statement is false.', 'FALSE — Depreciated share of machinery cost after three years is three charges over purchase price.
-
-Name the identity in words: depreciated share = (3 × annual charge) ÷ cost.
-
-$$
-\text{Annual} = 17,000, \quad \text{Cost} = 170,000
-$$
-
-$$
-\frac{3 \times 17,000}{170,000} = 30.0\%
-$$
-
-Threshold: more than 34%. Actual 30.0%.
-
-Reading the arithmetic against the claim: depreciated share 30.0% does not exceed 34% so the statement does not hold.
-
-The statement is false.', 'FALSE — Compare the truck''s straight-line annual charge with the computer''s.
-
-$$
-\text{Truck annual} = 8,500, \quad \text{Computer annual} = 7,333
-$$
-
-$$
-\frac{8,500 - 7,333}{7,333} = 15.9\%
-$$
-
-Threshold: more than 71.5% higher. Actual premium 15.9%.
-
-Reading the arithmetic against the claim: premium 15.9% versus more than 71.5% so the statement does not hold.
+Because that detail fails, the whole statement fails even if the topic word looks familiar.
 
 The statement is false.'] WHERE case_id = 'CASE 6.2.016' AND tier = 'full';
-UPDATE public.economics_cases SET tactical_explanations = ARRAY['TRUE — Profit and cash movement are different measures.
+UPDATE public.economics_cases SET tactical_explanations = ARRAY['Non-cash charges and the timing of cash receipts and payments mean a profitable year can still coincide with a falling cash balance.
 
-A firm can be profitable on an accrual basis while cash falls (e.g. heavy investment or slower collections).
+That is exactly what the claim asserts, so the wording survives a careful check against the standard idea.
 
-Using the stem facts: "A business can report a profit for the year in its statement of profit and loss while still seeing its cash and cash equivalents fall, because profit and cash movement are not the same thing."
+The statement is true.', 'Collecting money owed by a customer relates to core trading activity, so it is classified as an operating cash flow.
 
-The income statement reports period performance (revenue, costs, profit). The cash-flow statement splits operating, investing, and financing cash movements. Profit is an accrual measure; depreciation is a non-cash expense; collecting receivables is operating cash, not new revenue.
+That is exactly what the claim asserts, so the wording survives a careful check against the standard idea.
 
-The statement is true.', 'TRUE — The income statement reports period performance (revenue, costs, profit).
+The statement is true.', 'Repaying borrowed funds relates to how the business is financed, so it is classified as a financing cash flow.
 
-The wording matches the relevant rule for "Repaying a Long-Term Loan". The income statement reports period performance (revenue, costs, profit). The cash-flow statement splits operating, investing, and financing cash movements. Profit is an accrual measure; depreciation is a non-cash expense; collecting receivables is operating cash, not new revenue. Applied here: "When a bakery collects payment from a customer who owed money on an overdue invoice, the resulting cash inflow belongs in cash flow from operating activities."
+That is exactly what the claim asserts, so the wording survives a careful check against the standard idea.
 
-The statement is true.', 'TRUE — The income statement reports period performance (revenue, costs, profit).
+The statement is true.', 'Buying long-term assets such as heavy construction machinery is an investing decision, so the outflow is classified as an investing cash flow.
 
-The wording matches the relevant rule for "Repaying a Long-Term Loan". The income statement reports period performance (revenue, costs, profit). The cash-flow statement splits operating, investing, and financing cash movements. Profit is an accrual measure; depreciation is a non-cash expense; collecting receivables is operating cash, not new revenue. Applied here: "When a courier firm repays part of a long-term bank loan, that cash outflow belongs in cash flow from financing activities."
+That is exactly what the claim asserts, so the wording survives a careful check against the standard idea.
 
-The statement is true.', 'TRUE — The income statement reports period performance (revenue, costs, profit).
+The statement is true.', 'Buying long-term assets such as point-of-sale tills is an investing decision, so the outflow is classified as an investing cash flow.
 
-The wording matches the relevant rule for "Repaying a Long-Term Loan". The income statement reports period performance (revenue, costs, profit). The cash-flow statement splits operating, investing, and financing cash movements. Profit is an accrual measure; depreciation is a non-cash expense; collecting receivables is operating cash, not new revenue. Applied here: "When a construction firm purchases new heavy construction machinery for use in the business, the resulting cash outflow belongs in cash flow from investing activities."
-
-The statement is true.', 'TRUE — The income statement reports period performance (revenue, costs, profit).
-
-The wording matches the relevant rule for "Repaying a Long-Term Loan". The income statement reports period performance (revenue, costs, profit). The cash-flow statement splits operating, investing, and financing cash movements. Profit is an accrual measure; depreciation is a non-cash expense; collecting receivables is operating cash, not new revenue. Applied here: "When a electronics retailer purchases new point-of-sale tills for use in the business, the resulting cash outflow belongs in cash flow from investing activities."
+That is exactly what the claim asserts, so the wording survives a careful check against the standard idea.
 
 The statement is true.'] WHERE case_id = 'CASE 6.2.017' AND tier = 'full';
-UPDATE public.economics_cases SET tactical_explanations = ARRAY['TRUE — The income statement reports period performance (revenue, costs, profit).
+UPDATE public.economics_cases SET tactical_explanations = ARRAY['Dividend payments are a financing activity.
 
-The wording matches the relevant rule for "Net Change in Cash and Cash Equivalents". The income statement reports period performance (revenue, costs, profit). The cash-flow statement splits operating, investing, and financing cash movements. Profit is an accrual measure; depreciation is a non-cash expense; collecting receivables is operating cash, not new revenue. Applied here: "For this printing company, dividends paid to shareholders sit in financing activities, not operating activities."
+That is exactly what the claim asserts, so the wording survives a careful check against the standard idea.
 
-The statement is true.', 'FALSE — The income statement reports period performance (revenue, costs, profit).
+The statement is true.', 'Dividends are financing outflows, not investing.
 
-Absolute or misapplied wording conflicts with the rule for "Net Change in Cash and Cash Equivalents". The income statement reports period performance (revenue, costs, profit). The cash-flow statement splits operating, investing, and financing cash movements. Profit is an accrual measure; depreciation is a non-cash expense; collecting receivables is operating cash, not new revenue. Rejected claim: "For this printing company, the dividends paid line of (23300) euros belongs in investing activities."
+Because that detail fails, the whole statement fails even if the topic word looks familiar.
 
-The statement is false.', 'FALSE — The income statement reports period performance (revenue, costs, profit).
+The statement is false.', 'Negative investing cash flow often just means assets were purchased.
 
-Absolute or misapplied wording conflicts with the rule for "Net Change in Cash and Cash Equivalents". The income statement reports period performance (revenue, costs, profit). The cash-flow statement splits operating, investing, and financing cash movements. Profit is an accrual measure; depreciation is a non-cash expense; collecting receivables is operating cash, not new revenue. Rejected claim: "For this printing company, the investing outflow of 25,200 euros means the business must be failing."
+Because that detail fails, the whole statement fails even if the topic word looks familiar.
 
-The statement is false.', 'FALSE — The income statement reports period performance (revenue, costs, profit).
+The statement is false.', 'Loan repayments are financing, not operating.
 
-Absolute or misapplied wording conflicts with the rule for "Net Change in Cash and Cash Equivalents". The income statement reports period performance (revenue, costs, profit). The cash-flow statement splits operating, investing, and financing cash movements. Profit is an accrual measure; depreciation is a non-cash expense; collecting receivables is operating cash, not new revenue. Rejected claim: "For this printing company, repayments of borrowed money count as operating cash outflows."
+Because that detail fails, the whole statement fails even if the topic word looks familiar.
 
-The statement is false.', 'TRUE — The income statement reports period performance (revenue, costs, profit).
+The statement is false.', 'Investing and financing are recorded separately.
 
-The claim states: For this printing company, an investing outflow and a dividend payment can appear in the same year. The reason given — investing and financing are separate sections. — fits the chapter rule. The income statement reports period performance (revenue, costs, profit). The cash-flow statement splits operating, investing, and financing cash movements. Profit is an accrual measure; depreciation is a non-cash expense; collecting receivables is operating cash, not new revenue.
+That is exactly what the claim asserts, so the wording survives a careful check against the standard idea.
 
 The statement is true.'] WHERE case_id = 'CASE 6.2.018' AND tier = 'full';
-UPDATE public.economics_cases SET tactical_explanations = ARRAY['TRUE — The income statement reports period performance (revenue, costs, profit).
+UPDATE public.economics_cases SET tactical_explanations = ARRAY['Straight-line yields equal annual charges.
 
-The wording matches the relevant rule for "Cash Flow Mix Over Two Years 19". The income statement reports period performance (revenue, costs, profit). The cash-flow statement splits operating, investing, and financing cash movements. Profit is an accrual measure; depreciation is a non-cash expense; collecting receivables is operating cash, not new revenue. Applied here: "Under the straight-line method, the depreciable cost is spread evenly over the expected useful life, giving the same depreciation charge each year."
+That is exactly what the claim asserts, so the wording survives a careful check against the standard idea.
 
-The statement is true.', 'TRUE — The income statement reports period performance (revenue, costs, profit).
+The statement is true.', 'Cost of sales excludes admin and distribution.
 
-The wording matches the relevant rule for "Cash Flow Mix Over Two Years 19". The income statement reports period performance (revenue, costs, profit). The cash-flow statement splits operating, investing, and financing cash movements. Profit is an accrual measure; depreciation is a non-cash expense; collecting receivables is operating cash, not new revenue. Applied here: "Cost of sales covers costs directly tied to production, such as materials and labour linked to production, not administration or distribution costs."
+That is exactly what the claim asserts, so the wording survives a careful check against the standard idea.
 
-The statement is true.', 'TRUE — The income statement reports period performance (revenue, costs, profit).
+The statement is true.', 'Profit and cash movement are different concepts.
 
-The claim states: A positive cash flow is not identical with a profit,. The reason given — profit includes non-cash charges and accruals that cash flow does not. — fits the chapter rule. The income statement reports period performance (revenue, costs, profit). The cash-flow statement splits operating, investing, and financing cash movements. Profit is an accrual measure; depreciation is a non-cash expense; collecting receivables is operating cash, not new revenue.
+That is exactly what the claim asserts, so the wording survives a careful check against the standard idea.
 
-The statement is true.', 'TRUE — The income statement reports period performance (revenue, costs, profit).
+The statement is true.', 'Investing and financing are recorded separately.
 
-The wording matches the relevant rule for "Cash Flow Mix Over Two Years 19". The income statement reports period performance (revenue, costs, profit). The cash-flow statement splits operating, investing, and financing cash movements. Profit is an accrual measure; depreciation is a non-cash expense; collecting receivables is operating cash, not new revenue. Applied here: "A business can have a negative cash flow from investing activities in the same year that it pays a dividend, since investment spending and dividends sit in different sections of the cash flow state…"
+That is exactly what the claim asserts, so the wording survives a careful check against the standard idea.
 
-The statement is true.', 'TRUE — The income statement reports period performance (revenue, costs, profit).
+The statement is true.', 'Depreciation spreads the cost of use over time.
 
-The wording matches the relevant rule for "Cash Flow Mix Over Two Years 19". The income statement reports period performance (revenue, costs, profit). The cash-flow statement splits operating, investing, and financing cash movements. Profit is an accrual measure; depreciation is a non-cash expense; collecting receivables is operating cash, not new revenue. Applied here: "Depreciation recognises that the value of fixed assets decreases as they are used up over time, so without it asset values in the accounts would be overstated."
+That is exactly what the claim asserts, so the wording survives a careful check against the standard idea.
 
 The statement is true.'] WHERE case_id = 'CASE 6.2.019' AND tier = 'full';
-UPDATE public.economics_cases SET tactical_explanations = ARRAY['TRUE — The income statement reports period performance (revenue, costs, profit).
+UPDATE public.economics_cases SET tactical_explanations = ARRAY['Collecting money owed by a customer relates to core trading activity, so it is classified as an operating cash flow.
 
-The wording matches the relevant rule for "Depreciation and Asset Wear". The income statement reports period performance (revenue, costs, profit). The cash-flow statement splits operating, investing, and financing cash movements. Profit is an accrual measure; depreciation is a non-cash expense; collecting receivables is operating cash, not new revenue. Applied here: "When a fitness club chain collects payment from a customer who owed money on an overdue invoice, the resulting cash inflow belongs in cash flow from operating activities."
+That is exactly what the claim asserts, so the wording survives a careful check against the standard idea.
 
-The statement is true.', 'TRUE — The income statement reports period performance (revenue, costs, profit).
+The statement is true.', 'Repaying borrowed funds relates to how the business is financed, so it is classified as a financing cash flow.
 
-The wording matches the relevant rule for "Depreciation and Asset Wear". The income statement reports period performance (revenue, costs, profit). The cash-flow statement splits operating, investing, and financing cash movements. Profit is an accrual measure; depreciation is a non-cash expense; collecting receivables is operating cash, not new revenue. Applied here: "When a restaurant chain repays part of a long-term bank loan, that cash outflow belongs in cash flow from financing activities."
+That is exactly what the claim asserts, so the wording survives a careful check against the standard idea.
 
-The statement is true.', 'TRUE — The income statement reports period performance (revenue, costs, profit).
+The statement is true.', 'Buying long-term assets such as laptop computers is an investing decision, so the outflow is classified as an investing cash flow.
 
-The wording matches the relevant rule for "Depreciation and Asset Wear". The income statement reports period performance (revenue, costs, profit). The cash-flow statement splits operating, investing, and financing cash movements. Profit is an accrual measure; depreciation is a non-cash expense; collecting receivables is operating cash, not new revenue. Applied here: "When a IT consultancy purchases new laptop computers for use in the business, the resulting cash outflow belongs in cash flow from investing activities."
+That is exactly what the claim asserts, so the wording survives a careful check against the standard idea.
 
-The statement is true.', 'TRUE — The income statement reports period performance (revenue, costs, profit).
+The statement is true.', 'The balance sheet is a snapshot at a single date; the statement of profit and loss instead summarises revenue and costs across a period.
 
-The wording matches the relevant rule for "Depreciation and Asset Wear". The income statement reports period performance (revenue, costs, profit). The cash-flow statement splits operating, investing, and financing cash movements. Profit is an accrual measure; depreciation is a non-cash expense; collecting receivables is operating cash, not new revenue. Applied here: "The balance sheet of a bakery shows its assets, equity and liabilities on one specific date, while its statement of profit and loss reports the revenue earned and costs incurred across the whole ac…"
+That is exactly what the claim asserts, so the wording survives a careful check against the standard idea.
 
-The statement is true.', 'TRUE — The income statement reports period performance (revenue, costs, profit).
+The statement is true.', 'Profit for the year raises retained earnings, which in turn increases total equity.
 
-The wording matches the relevant rule for "Depreciation and Asset Wear". The income statement reports period performance (revenue, costs, profit). The cash-flow statement splits operating, investing, and financing cash movements. Profit is an accrual measure; depreciation is a non-cash expense; collecting receivables is operating cash, not new revenue. Applied here: "When a bakery earns a profit for the year, that profit is added to retained earnings and therefore increases the equity shown on its balance sheet."
+That is exactly what the claim asserts, so the wording survives a careful check against the standard idea.
 
 The statement is true.'] WHERE case_id = 'CASE 6.2.020' AND tier = 'full';
-UPDATE public.economics_cases SET tactical_explanations = ARRAY['FALSE — The income statement reports period performance (revenue, costs, profit).
+UPDATE public.economics_cases SET tactical_explanations = ARRAY['Dividends are financing outflows, not investing.
 
-The claim states: Paying dividends is classified as an investing cash outflow. The reason — it uses cash belonging to shareholders. — does not support that label under the chapter definitions. The income statement reports period performance (revenue, costs, profit). The cash-flow statement splits operating, investing, and financing cash movements. Profit is an accrual measure; depreciation is a non-cash expense; collecting receivables is operating cash, not new revenue.
+Because that detail fails, the whole statement fails even if the topic word looks familiar.
 
-The statement is false.', 'FALSE — The current ratio is the standard liquidity cover of current assets over current liabilities.
+The statement is false.', 'Current assets = 230
 
-Name the identity in words: current ratio = current assets ÷ current liabilities.
+Current liabilities gather the short-term claims:
 
-Build current assets and current liabilities from the extract:
+Current liabilities = 176
 
-$$
-CA = 124 + 76 + 30 = 230
-$$
+Current ratio = 230 / 176 ≈ 1.31
 
-$$
-CL = 142 + 34 = 176
-$$
+The claim says the ratio below 1.28. We have about 1.31, which does not match that comparison.
 
-$$
-\text{Current ratio} = \frac{230}{176} = 1.3068
-$$
+The statement is false.', 'Buildings are about 39.4% of total assets.
 
-Claimed: is below 1.28. Actual 1.31.
+Because that detail fails, the whole statement fails even if the topic word looks familiar.
 
-Reading the arithmetic against the claim: actual current ratio 1.31 versus ''is below 1.28'' so the statement does not hold.
+The statement is false.', 'Cash and cash equivalents are about 13.0% of current assets.
 
-The statement is false.', 'FALSE — This is a composition claim: express Buildings as a percentage of total assets.
+Because that detail fails, the whole statement fails even if the topic word looks familiar.
 
-Name the identity in words: Buildings share of total assets = Buildings ÷ total assets.
+The statement is false.', 'Current assets = 230
 
-From the extract, Buildings = 351 and total assets = 890. Plug the figures step by step:
+Current liabilities gather the short-term claims:
 
-$$
-Share = \frac{\text{Buildings}}{\text{total assets}}
-$$
+Current liabilities = 176
 
-$$
-Share = \frac{351}{890}
-$$
+Current ratio = 230 / 176 ≈ 1.31
 
-$$
-Share = 39.4\%
-$$
-
-Threshold: more than 48.3%. Actual 39.4%.
-
-Reading the arithmetic against the claim: actual share 39.4% does not match ''more than 48.3%'' so the statement does not hold.
-
-The statement is false.', 'FALSE — This is a composition claim: express Cash and cash equivalents as a percentage of current assets.
-
-Name the identity in words: Cash and cash equivalents share of current assets = Cash and cash equivalents ÷ current assets.
-
-From the extract, Cash and cash equivalents = 30 and current assets = 230. Plug the figures step by step:
-
-$$
-Share = \frac{\text{Cash and cash equivalents}}{\text{current assets}}
-$$
-
-$$
-Share = \frac{30}{230}
-$$
-
-$$
-Share = 13.0\%
-$$
-
-Threshold: more than 22.6%. Actual 13.0%.
-
-Reading the arithmetic against the claim: actual share 13.0% does not match ''more than 22.6%'' so the statement does not hold.
-
-The statement is false.', 'TRUE — The current ratio is the standard liquidity cover of current assets over current liabilities.
-
-Name the identity in words: current ratio = current assets ÷ current liabilities.
-
-Build current assets and current liabilities from the extract:
-
-$$
-CA = 124 + 76 + 30 = 230
-$$
-
-$$
-CL = 142 + 34 = 176
-$$
-
-$$
-\text{Current ratio} = \frac{230}{176} = 1.3068
-$$
-
-Claimed: exceeds 1.21. Actual 1.31.
-
-Reading the arithmetic against the claim: actual current ratio 1.31 versus ''exceeds 1.21'' so the statement holds.
+The claim says the ratio exceeds 1.21. We have about 1.31, which matches that comparison.
 
 The statement is true.'] WHERE case_id = 'CASE 6.2.021' AND tier = 'full';
-UPDATE public.economics_cases SET tactical_explanations = ARRAY['FALSE — The income statement reports period performance (revenue, costs, profit).
+UPDATE public.economics_cases SET tactical_explanations = ARRAY['Collecting money from a customer relates to core trading, so it belongs in the operating section, not the financing section.
 
-Absolute or misapplied wording conflicts with the rule for "Depreciation as a Non-Cash Expense". The income statement reports period performance (revenue, costs, profit). The cash-flow statement splits operating, investing, and financing cash movements. Profit is an accrual measure; depreciation is a non-cash expense; collecting receivables is operating cash, not new revenue. Rejected claim: "When a logistics company collects payment from a customer who owed money on an overdue invoice, the resulting cash inflow belongs in cash flow from financing activities."
+Because that detail fails, the whole statement fails even if the topic word looks familiar.
 
-The statement is false.', 'FALSE — The income statement reports period performance (revenue, costs, profit).
+The statement is false.', 'Loan repayments relate to how the business is financed, so they belong in the financing section, not the operating section.
 
-Absolute or misapplied wording conflicts with the rule for "Depreciation as a Non-Cash Expense". The income statement reports period performance (revenue, costs, profit). The cash-flow statement splits operating, investing, and financing cash movements. Profit is an accrual measure; depreciation is a non-cash expense; collecting receivables is operating cash, not new revenue. Rejected claim: "When a dairy processor repays part of a long-term bank loan, that cash outflow belongs in cash flow from operating activities."
+Because that detail fails, the whole statement fails even if the topic word looks familiar.
 
-The statement is false.', 'TRUE — The income statement reports period performance (revenue, costs, profit).
+The statement is false.', 'A loss for the year lowers retained earnings, which in turn reduces total equity.
 
-The wording matches the relevant rule for "Depreciation as a Non-Cash Expense". The income statement reports period performance (revenue, costs, profit). The cash-flow statement splits operating, investing, and financing cash movements. Profit is an accrual measure; depreciation is a non-cash expense; collecting receivables is operating cash, not new revenue. Applied here: "When a courier firm makes a loss for the year, that loss is deducted from retained earnings and therefore reduces the equity shown on its balance sheet."
+That is exactly what the claim asserts, so the wording survives a careful check against the standard idea.
 
-The statement is true.', 'FALSE — The income statement reports period performance (revenue, costs, profit).
+The statement is true.', 'Buying long-term assets such as dispensing equipment is an investing decision, so the outflow belongs in the investing section, not the operating section.
 
-Absolute or misapplied wording conflicts with the rule for "Depreciation as a Non-Cash Expense". The income statement reports period performance (revenue, costs, profit). The cash-flow statement splits operating, investing, and financing cash movements. Profit is an accrual measure; depreciation is a non-cash expense; collecting receivables is operating cash, not new revenue. Rejected claim: "When a pharmacy chain purchases new dispensing equipment for use in the business, the resulting cash outflow belongs in cash flow from operating activities."
+Because that detail fails, the whole statement fails even if the topic word looks familiar.
 
-The statement is false.', 'FALSE — The income statement reports period performance (revenue, costs, profit).
+The statement is false.', 'This reverses the two statements: the balance sheet is the point-in-time snapshot, and the statement of profit and loss covers the period.
 
-Absolute or misapplied wording conflicts with the rule for "Depreciation as a Non-Cash Expense". The income statement reports period performance (revenue, costs, profit). The cash-flow statement splits operating, investing, and financing cash movements. Profit is an accrual measure; depreciation is a non-cash expense; collecting receivables is operating cash, not new revenue. Rejected claim: "The balance sheet of a bakery reports the revenue earned and costs incurred across the whole accounting period, while its statement of profit and loss shows assets, equity and liabilities on one sp…"
+Because that detail fails, the whole statement fails even if the topic word looks familiar.
 
 The statement is false.'] WHERE case_id = 'CASE 6.2.022' AND tier = 'full';
-UPDATE public.economics_cases SET tactical_explanations = ARRAY['FALSE — The income statement reports period performance (revenue, costs, profit).
+UPDATE public.economics_cases SET tactical_explanations = ARRAY['Dividends are financing outflows, not investing.
 
-The claim states: Paying dividends is classified as an investing cash outflow. The reason — it uses cash belonging to shareholders. — does not support that label under the chapter definitions. The income statement reports period performance (revenue, costs, profit). The cash-flow statement splits operating, investing, and financing cash movements. Profit is an accrual measure; depreciation is a non-cash expense; collecting receivables is operating cash, not new revenue.
+Because that detail fails, the whole statement fails even if the topic word looks familiar.
 
-The statement is false.', 'FALSE — The income statement reports period performance (revenue, costs, profit).
+The statement is false.', 'Land is not depreciated.
 
-Absolute or misapplied wording conflicts with the rule for "Cash Flow Mix Over Two Years 23". The income statement reports period performance (revenue, costs, profit). The cash-flow statement splits operating, investing, and financing cash movements. Profit is an accrual measure; depreciation is a non-cash expense; collecting receivables is operating cash, not new revenue. Rejected claim: "Land is depreciated on a straight-line basis just like buildings and machinery."
+Because that detail fails, the whole statement fails even if the topic word looks familiar.
 
-The statement is false.', 'TRUE — Use the case figures for Cash flow from operating activities and compute the percentage change between Year 1 and Year 2 before comparing it with the claimed threshold.
+The statement is false.', 'Operating cash flow rose by about 17.6%.
 
-From the extract:
+That is exactly what the claim asserts, so the wording survives a careful check against the standard idea.
 
-$$
-\text{Cash flow from operating activities}_{\text{Y1}} = 397, \quad
-\text{Cash flow from operating activities}_{\text{Y2}} = 467
-$$
+The statement is true.', 'It often only means assets were purchased.
 
-$$
-\frac{467 - 397}{397} = 17.6\%
-$$
+The absolute wording "always" turns a familiar idea into an overclaim. One ordinary counterexample is enough to reject it.
 
-$$
-17.6\% > 17.4\%
-$$
+The statement is false.', 'Profit and cash movement are different concepts.
 
-The actual growth is 17.6%, which is more than the claimed 17.4%.
-
-The statement is true.', 'FALSE — The income statement reports period performance (revenue, costs, profit).
-
-Absolute or misapplied wording conflicts with the rule for "Cash Flow Mix Over Two Years 23". The income statement reports period performance (revenue, costs, profit). The cash-flow statement splits operating, investing, and financing cash movements. Profit is an accrual measure; depreciation is a non-cash expense; collecting receivables is operating cash, not new revenue. Rejected claim: "A negative cash flow from investing activities always proves the business is in financial trouble."
-
-The statement is false.', 'TRUE — The income statement reports period performance (revenue, costs, profit).
-
-The claim states: A positive cash flow is not identical with a profit,. The reason given — profit includes non-cash charges and accruals that cash flow does not. — fits the chapter rule. The income statement reports period performance (revenue, costs, profit). The cash-flow statement splits operating, investing, and financing cash movements. Profit is an accrual measure; depreciation is a non-cash expense; collecting receivables is operating cash, not new revenue.
+That is exactly what the claim asserts, so the wording survives a careful check against the standard idea.
 
 The statement is true.'] WHERE case_id = 'CASE 6.2.023' AND tier = 'full';
-UPDATE public.economics_cases SET tactical_explanations = ARRAY['TRUE — The income statement reports period performance (revenue, costs, profit).
+UPDATE public.economics_cases SET tactical_explanations = ARRAY['This matches the textbook emphasis on operating cash flow.
 
-The wording matches the relevant rule for "Profit and Loss Over Two Years 24". The income statement reports period performance (revenue, costs, profit). The cash-flow statement splits operating, investing, and financing cash movements. Profit is an accrual measure; depreciation is a non-cash expense; collecting receivables is operating cash, not new revenue. Applied here: "Cash flow from operations shows how well a business generates cash from its core business and is the most important part of the cash flow statement."
+That is exactly what the claim asserts, so the wording survives a careful check against the standard idea.
 
-The statement is true.', 'FALSE — Gross margin is gross profit divided by revenue; the claim compares the Year-2 margin with Year 1 in percentage points.
+The statement is true.', 'Gross margins were 34.1% then 34.2%.
 
-Name the identity in words: gross margin = gross profit ÷ revenue; Δ = GPM₂ − GPM₁.
+Because that detail fails, the whole statement fails even if the topic word looks familiar.
 
-$$
-GPM_{1} = \frac{330}{967} = 34.1\%
-$$
+The statement is false.', 'Revenue changed by about 19.8% between the two years.
 
-$$
-GPM_{2} = \frac{396}{1,158} = 34.2\%
-$$
+That is exactly what the claim asserts, so the wording survives a careful check against the standard idea.
 
-$$
-\Delta = 0.1\text{ percentage points}
-$$
+The statement is true.', 'Finance costs moved from 15 to 22; operating result moved from 241 to 290.
 
-Threshold: more than 5.5 pp higher in Year 2. Actual Δ = 0.1 pp.
+That is exactly what the claim asserts, so the wording survives a careful check against the standard idea.
 
-Reading the arithmetic against the claim: margin rose by 0.1 pp versus more than 5.5 pp so the statement does not hold.
+The statement is true.', 'Interest coverage in Year 1 ≈ 16.1 times.
 
-The statement is false.', 'TRUE — Use the case figures for Revenue and compute the percentage change between Year 1 and Year 2 before comparing it with the claimed threshold.
-
-From the extract:
-
-$$
-\text{Revenue}_{\text{Y1}} = 967, \quad
-\text{Revenue}_{\text{Y2}} = 1,158
-$$
-
-$$
-\frac{1,158 - 967}{967} = 19.8\%
-$$
-
-$$
-19.8\% > 9.7\%
-$$
-
-The actual growth is 19.8%, which is more than the claimed 9.7%.
-
-The statement is true.', 'TRUE — Compare finance-cost growth with operating-result growth; the claim needs both a finance-cost rise above the threshold and outpacing of operating result.
-
-Name the identity in words: growth = (Year 2 − Year 1) ÷ Year 1 for each line.
-
-$$
-\text{FC growth} = 46.7\%
-$$
-
-$$
-\text{OR growth} = 20.3\%
-$$
-
-Finance costs did grow by more than 40%; they do outpace operating result.
-
-Reading the arithmetic against the claim: FC growth 46.7% vs threshold 40% and OR growth 20.3% so the statement holds.
-
-The statement is true.', 'TRUE — Interest coverage in Year 1 is operating result divided by finance costs.
-
-Name the identity in words: interest coverage = operating result ÷ finance costs.
-
-From the extract, operating result = 241 and finance costs = 15. Plug the figures step by step:
-
-$$
-Coverage = \frac{\text{operating result}}{\text{finance costs}}
-$$
-
-$$
-Coverage = \frac{241}{15}
-$$
-
-$$
-Coverage = 16.0667
-$$
-
-Threshold: more than 5.39. Actual 16.07.
-
-Reading the arithmetic against the claim: coverage 16.07 exceeds 5.39 so the statement holds.
+That is exactly what the claim asserts, so the wording survives a careful check against the standard idea.
 
 The statement is true.'] WHERE case_id = 'CASE 6.2.024' AND tier = 'full';
-UPDATE public.economics_cases SET tactical_explanations = ARRAY['FALSE — The income statement reports period performance (revenue, costs, profit).
+UPDATE public.economics_cases SET tactical_explanations = ARRAY['Dividends are financing outflows, not investing.
 
-Absolute or misapplied wording conflicts with the rule for "Straight-Line Depreciation Method". The income statement reports period performance (revenue, costs, profit). The cash-flow statement splits operating, investing, and financing cash movements. Profit is an accrual measure; depreciation is a non-cash expense; collecting receivables is operating cash, not new revenue. Rejected claim: "For this logistics company, the dividends paid line of (28400) euros belongs in investing activities."
+Because that detail fails, the whole statement fails even if the topic word looks familiar.
 
-The statement is false.', 'TRUE — The income statement reports period performance (revenue, costs, profit).
+The statement is false.', 'Dividend payments are a financing activity.
 
-The wording matches the relevant rule for "Straight-Line Depreciation Method". The income statement reports period performance (revenue, costs, profit). The cash-flow statement splits operating, investing, and financing cash movements. Profit is an accrual measure; depreciation is a non-cash expense; collecting receivables is operating cash, not new revenue. Applied here: "For this logistics company, dividends paid to shareholders sit in financing activities, not operating activities."
+That is exactly what the claim asserts, so the wording survives a careful check against the standard idea.
 
-The statement is true.', 'FALSE — The income statement reports period performance (revenue, costs, profit).
+The statement is true.', 'Negative investing cash flow often just means assets were purchased.
 
-Absolute or misapplied wording conflicts with the rule for "Straight-Line Depreciation Method". The income statement reports period performance (revenue, costs, profit). The cash-flow statement splits operating, investing, and financing cash movements. Profit is an accrual measure; depreciation is a non-cash expense; collecting receivables is operating cash, not new revenue. Rejected claim: "For this logistics company, the investing outflow of 30,600 euros means the business must be failing."
+Because that detail fails, the whole statement fails even if the topic word looks familiar.
 
-The statement is false.', 'TRUE — The income statement reports period performance (revenue, costs, profit).
+The statement is false.', 'Investing and financing are recorded separately.
 
-The claim states: For this logistics company, an investing outflow and a dividend payment can appear in the same year. The reason given — investing and financing are separate sections. — fits the chapter rule. The income statement reports period performance (revenue, costs, profit). The cash-flow statement splits operating, investing, and financing cash movements. Profit is an accrual measure; depreciation is a non-cash expense; collecting receivables is operating cash, not new revenue.
+That is exactly what the claim asserts, so the wording survives a careful check against the standard idea.
 
-The statement is true.', 'TRUE — The income statement reports period performance (revenue, costs, profit).
+The statement is true.', 'Customer collections belong in operating cash flow.
 
-The wording matches the relevant rule for "Straight-Line Depreciation Method". The income statement reports period performance (revenue, costs, profit). The cash-flow statement splits operating, investing, and financing cash movements. Profit is an accrual measure; depreciation is a non-cash expense; collecting receivables is operating cash, not new revenue. Applied here: "For this logistics company, collecting payment on a trade receivable is an operating cash inflow from the core trading cycle."
+That is exactly what the claim asserts, so the wording survives a careful check against the standard idea.
 
 The statement is true.'] WHERE case_id = 'CASE 6.2.025' AND tier = 'full';

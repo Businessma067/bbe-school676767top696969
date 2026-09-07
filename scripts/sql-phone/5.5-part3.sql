@@ -1,1051 +1,528 @@
 -- Update expanded explanations for 5.5-part3 (25 cases).
 -- Safe to re-run: only updates tactical_explanations.
 
-UPDATE public.economics_cases SET tactical_explanations = ARRAY['TRUE — Customer analysis asks who buys (and who influences), what buyers do with the product, where and when they buy, and why they prefer one offer — guiding distribution, seasonality, development, and share strategy.
+UPDATE public.economics_cases SET tactical_explanations = ARRAY['Non-buyers keep market potential above volume.
 
-Non-buyers keep market potential above volume.
+That is exactly what the claim asserts, so the wording survives a careful check against the standard idea.
 
-Under that definition the assertion is the right description of the situation.
+The statement is true.', 'Absolute share is a percentage of total market sales.
 
-The statement is true.
-', 'TRUE — Absolute market share equals one business''s (or brand''s) sales divided by total market volume. It informs the firm and investors but says little alone about rivals'' relative strength.
+That is exactly what the claim asserts, so the wording survives a careful check against the standard idea.
 
-Absolute share is a percentage of total market sales.
+The statement is true.', 'Market-potential growth share belongs to sales potential.
 
-The sentence therefore reports the concept accurately for this case.
+Because that detail fails, the whole statement fails even if the topic word looks familiar.
 
-The statement is true.
-', 'FALSE — Market size/volume is total sales of all firms (value or quantity). Market potential adds still-unserved buyers; a firm''s sales potential exceeds its current sales volume when further gains are possible.
+The statement is false.', 'Relative share is a ratio against the leader, not a market percentage.
 
-Market-potential growth share belongs to sales potential.
+That is exactly what the claim asserts, so the wording survives a careful check against the standard idea.
 
-Swap in the textbook criterion and the sentence no longer describes the case.
+The statement is true.', 'Institute-administered questionnaires are primary collection.
 
-The statement is false.
-', 'TRUE — Relative market share equals the firm''s market share divided by the largest competitor''s market share, putting own performance in competitive context.
+That is exactly what the claim asserts, so the wording survives a careful check against the standard idea.
 
-Relative share is a ratio against the leader, not a market percentage.
+The statement is true.'] WHERE case_id = 'CASE 5.5.51' AND tier = 'full';
+UPDATE public.economics_cases SET tactical_explanations = ARRAY['Secondary size overviews precede firm share calculation.
 
-The sentence therefore reports the concept accurately for this case.
+That is exactly what the claim asserts, so the wording survives a careful check against the standard idea.
 
-The statement is true.
-', 'TRUE — Primary market research collects new data for the firm''s own questions — questionnaires, interviews, online surveys, or studies run by a research institute — tailored but often costly.
+The statement is true.', 'Absolute share is relevant to investors per the chapter.
 
-Institute-administered questionnaires are primary collection.
+Because that detail fails, the whole statement fails even if the topic word looks familiar.
 
-Under that definition the assertion is the right description of the situation.
+The statement is false.', 'Relative share uses the largest competitor''s share.
 
-The statement is true.
-'] WHERE case_id = 'CASE 5.5.51' AND tier = 'full';
-UPDATE public.economics_cases SET tactical_explanations = ARRAY['TRUE — Secondary information reuses research already produced by others (government, associations, published reports). It is often cheaper or free, but usually more general and less tailored.
+Because that detail fails, the whole statement fails even if the topic word looks familiar.
 
-Secondary size overviews precede firm share calculation.
+The statement is false.', 'Influencer example appears in who-customer discussion.
 
-The sentence therefore reports the concept accurately for this case.
+That is exactly what the claim asserts, so the wording survives a careful check against the standard idea.
 
-The statement is true.
-', 'FALSE — Absolute market share equals one business''s (or brand''s) sales divided by total market volume. It informs the firm and investors but says little alone about rivals'' relative strength.
+The statement is true.', 'User and buyer can differ in b2b settings.
 
-On this stem (market share): absolute share is relevant to investors per the chapter.
+That is exactly what the claim asserts, so the wording survives a careful check against the standard idea.
 
-The absolute wording is what breaks the claim once the correct test is applied.
+The statement is true.'] WHERE case_id = 'CASE 5.5.52' AND tier = 'full';
+UPDATE public.economics_cases SET tactical_explanations = ARRAY['Both are primary when newly collected for the study.
 
-The statement is false.
-', 'FALSE — Relative market share equals the firm''s market share divided by the largest competitor''s market share, putting own performance in competitive context.
+Because that detail fails, the whole statement fails even if the topic word looks familiar.
 
-Relative share uses the largest competitor''s share.
+The statement is false.', 'Competitor publications used without new collection are secondary.
 
-The mislabelled category or reversed comparison is enough to reject the claim.
+Because that detail fails, the whole statement fails even if the topic word looks familiar.
 
-The statement is false.
-', 'TRUE — Customer analysis asks who buys (and who influences), what buyers do with the product, where and when they buy, and why they prefer one offer — guiding distribution, seasonality, development, and share strategy.
+The statement is false.', 'Feature alignment follows preferred-use insight.
 
-Influencer example appears in who-customer discussion.
+That is exactly what the claim asserts, so the wording survives a careful check against the standard idea.
 
-The sentence therefore reports the concept accurately for this case.
+The statement is true.', 'Competition is explicitly within market research scope.
 
-The statement is true.
-', 'TRUE — Customer analysis asks who buys (and who influences), what buyers do with the product, where and when they buy, and why they prefer one offer — guiding distribution, seasonality, development, and share strategy.
+Because that detail fails, the whole statement fails even if the topic word looks familiar.
 
-User and buyer can differ in b2b settings.
+The statement is false.', 'Children may influence without being the buyer.
 
-The sentence therefore reports the concept accurately for this case.
+Because that detail fails, the whole statement fails even if the topic word looks familiar.
 
-The statement is true.
-'] WHERE case_id = 'CASE 5.5.52' AND tier = 'full';
-UPDATE public.economics_cases SET tactical_explanations = ARRAY['FALSE — Primary market research collects new data for the firm''s own questions — questionnaires, interviews, online surveys, or studies run by a research institute — tailored but often costly.
+The statement is false.'] WHERE case_id = 'CASE 5.5.53' AND tier = 'full';
+UPDATE public.economics_cases SET tactical_explanations = ARRAY['Channel weakness responses follow where analysis.
 
-Both are primary when newly collected for the study.
+That is exactly what the claim asserts, so the wording survives a careful check against the standard idea.
 
-Swap in the textbook criterion and the sentence no longer describes the case.
+The statement is true.', 'Inventory builds follow seasonal timing insight.
 
-The statement is false.
-', 'FALSE — Primary market research collects new data for the firm''s own questions — questionnaires, interviews, online surveys, or studies run by a research institute — tailored but often costly.
+That is exactly what the claim asserts, so the wording survives a careful check against the standard idea.
 
-Competitor publications used without new collection are secondary.
+The statement is true.', 'Regional messaging can reflect why-customer motives.
 
-Once the defining feature is restored, the assertion falls away.
+That is exactly what the claim asserts, so the wording survives a careful check against the standard idea.
 
-The statement is false.
-', 'TRUE — Market research supplies evidence on customers, competitors, and the industry so the firm can judge position and prospects.
+The statement is true.', 'Tailored primary research such as commissioning a tailored questionnaire supports informed decisions in the printed circuit boards market.
 
-Feature alignment follows preferred-use insight.
+That is exactly what the claim asserts, so the wording survives a careful check against the standard idea.
 
-Under that definition the assertion is the right description of the situation.
+The statement is true.', 'Trade statistics reused for the printed circuit boards segment are secondary market information.
 
-The statement is true.
-', 'FALSE — Market research supplies evidence on customers, competitors, and the industry so the firm can judge position and prospects.
+That is exactly what the claim asserts, so the wording survives a careful check against the standard idea.
 
-Competition is explicitly within market research scope.
+The statement is true.'] WHERE case_id = 'CASE 5.5.54' AND tier = 'full';
+UPDATE public.economics_cases SET tactical_explanations = ARRAY['User and buyer may differ even in b2b settings.
 
-Swap in the textbook criterion and the sentence no longer describes the case.
+Because that detail fails, the whole statement fails even if the topic word looks familiar.
 
-The statement is false.
-', 'FALSE — Market research supplies evidence on customers, competitors, and the industry so the firm can judge position and prospects.
+The statement is false.', 'Where analysis is designed to identify purchase channels.
 
-Children may influence without being the buyer.
+The absolute wording "cannot" turns a familiar idea into an overclaim. One ordinary counterexample is enough to reject it.
 
-Swap in the textbook criterion and the sentence no longer describes the case.
+The statement is false.', 'Where, when, and why dimensions apply alongside other customer analysis in printed circuit boards.
 
-The statement is false.
-'] WHERE case_id = 'CASE 5.5.53' AND tier = 'full';
-UPDATE public.economics_cases SET tactical_explanations = ARRAY['TRUE — Customer analysis asks who buys (and who influences), what buyers do with the product, where and when they buy, and why they prefer one offer — guiding distribution, seasonality, development, and share strategy.
+That is exactly what the claim asserts, so the wording survives a careful check against the standard idea.
 
-Channel weakness responses follow where analysis.
+The statement is true.', '40 divided by 200 equals 20% absolute share in the printed circuit boards example.
 
-Under that definition the assertion is the right description of the situation.
+That is exactly what the claim asserts, so the wording survives a careful check against the standard idea.
 
-The statement is true.
-', 'TRUE — Customer analysis asks who buys (and who influences), what buyers do with the product, where and when they buy, and why they prefer one offer — guiding distribution, seasonality, development, and share strategy.
+The statement is true.', 'Timing analysis can support seasonal price differentiation.
 
-Inventory builds follow seasonal timing insight.
+Because that detail fails, the whole statement fails even if the topic word looks familiar.
 
-Nothing in the wording contradicts that marketing test, so the claim is sound.
+The statement is false.'] WHERE case_id = 'CASE 5.5.55' AND tier = 'full';
+UPDATE public.economics_cases SET tactical_explanations = ARRAY['20/40 yields 0.5 relative share against the leader in printed circuit boards.
 
-The statement is true.
-', 'TRUE — Customer analysis asks who buys (and who influences), what buyers do with the product, where and when they buy, and why they prefer one offer — guiding distribution, seasonality, development, and share strategy.
+That is exactly what the claim asserts, so the wording survives a careful check against the standard idea.
 
-Regional messaging can reflect why-customer motives.
+The statement is true.', 'Unconverted buyers keep market potential above volume in printed circuit boards.
 
-Under that definition the assertion is the right description of the situation.
+That is exactly what the claim asserts, so the wording survives a careful check against the standard idea.
 
-The statement is true.
-', 'TRUE — Market research supplies evidence on customers, competitors, and the industry so the firm can judge position and prospects.
+The statement is true.', 'Sales potential includes room beyond current volume for a printed circuit boards supplier.
 
-On this stem (positioning / product line): tailored primary research such as commissioning a tailored questionnaire supports informed decisions in the printed circuit boards market.
+That is exactly what the claim asserts, so the wording survives a careful check against the standard idea.
 
-Under that definition the assertion is the right description of the situation.
+The statement is true.', 'That confuses market measures with a single firm''s sales volume.
 
-The statement is true.
-', 'TRUE — Secondary information reuses research already produced by others (government, associations, published reports). It is often cheaper or free, but usually more general and less tailored.
+Because that detail fails, the whole statement fails even if the topic word looks familiar.
 
-On this stem (secondary information): trade statistics reused for the printed circuit boards segment are secondary market information.
+The statement is false.', 'Tailored primary research such as running telephone interviews with buyers supports informed decisions in the industrial adhesives market.
 
-Under that definition the assertion is the right description of the situation.
+That is exactly what the claim asserts, so the wording survives a careful check against the standard idea.
 
-The statement is true.
-'] WHERE case_id = 'CASE 5.5.54' AND tier = 'full';
-UPDATE public.economics_cases SET tactical_explanations = ARRAY['FALSE — Market research supplies evidence on customers, competitors, and the industry so the firm can judge position and prospects.
+The statement is true.'] WHERE case_id = 'CASE 5.5.56' AND tier = 'full';
+UPDATE public.economics_cases SET tactical_explanations = ARRAY['Trade statistics reused for the industrial adhesives segment are secondary market information.
 
-User and buyer may differ even in b2b settings.
+That is exactly what the claim asserts, so the wording survives a careful check against the standard idea.
 
-Swap in the textbook criterion and the sentence no longer describes the case.
+The statement is true.', 'Where, when, and why dimensions apply alongside other customer analysis in industrial adhesives.
 
-The statement is false.
-', 'FALSE — Customer analysis asks who buys (and who influences), what buyers do with the product, where and when they buy, and why they prefer one offer — guiding distribution, seasonality, development, and share strategy.
+That is exactly what the claim asserts, so the wording survives a careful check against the standard idea.
 
-Where analysis is designed to identify purchase channels.
+The statement is true.', '57 divided by 342 equals 16.7% absolute share in the industrial adhesives example.
 
-Those restricting words stretch a limited idea past what marketing allows.
+That is exactly what the claim asserts, so the wording survives a careful check against the standard idea.
 
-The statement is false.
-', 'TRUE — Customer analysis asks who buys (and who influences), what buyers do with the product, where and when they buy, and why they prefer one offer — guiding distribution, seasonality, development, and share strategy.
+The statement is true.', '16.7/41.75 yields 0.4 relative share against the leader in industrial adhesives.
 
-Where, when, and why dimensions apply alongside other customer analysis in printed circuit boards.
+That is exactly what the claim asserts, so the wording survives a careful check against the standard idea.
 
-Under that definition the assertion is the right description of the situation.
+The statement is true.', 'Unconverted buyers keep market potential above volume in industrial adhesives.
 
-The statement is true.
-', 'TRUE — Absolute market share is the firm''s sales divided by total market volume (all businesses'' sales of the product), usually shown as a percentage.
+That is exactly what the claim asserts, so the wording survives a careful check against the standard idea.
 
-Take firm sales 40 over market volume 200:
+The statement is true.'] WHERE case_id = 'CASE 5.5.57' AND tier = 'full';
+UPDATE public.economics_cases SET tactical_explanations = ARRAY['Sales potential can exceed current sales volume in growing markets.
 
-$$
-\frac{40}{200} = 0.2
-$$
+The absolute wording "always" turns a familiar idea into an overclaim. One ordinary counterexample is enough to reject it.
 
-Convert to a percentage:
+The statement is false.', 'Sales potential includes room beyond current volume for a industrial adhesives supplier.
 
-$$
-0.2 \times 100 = 20\%
-$$
+That is exactly what the claim asserts, so the wording survives a careful check against the standard idea.
 
-That is the absolute share the statement reports (20%).
+The statement is true.', 'Tailored primary research such as analysing responses from an online survey supports informed decisions in the commercial laundry equipment market.
 
-The statement is true.
-', 'FALSE — Customer analysis asks who buys (and who influences), what buyers do with the product, where and when they buy, and why they prefer one offer — guiding distribution, seasonality, development, and share strategy.
+That is exactly what the claim asserts, so the wording survives a careful check against the standard idea.
 
-Timing analysis can support seasonal price differentiation.
+The statement is true.', 'Trade statistics reused for the commercial laundry equipment segment are secondary market information.
 
-The mislabelled category or reversed comparison is enough to reject the claim.
+That is exactly what the claim asserts, so the wording survives a careful check against the standard idea.
 
-The statement is false.
-'] WHERE case_id = 'CASE 5.5.55' AND tier = 'full';
-UPDATE public.economics_cases SET tactical_explanations = ARRAY['TRUE — Relative market share equals the firm''s absolute share divided by the largest competitor''s absolute share — a pure ratio, not a percentage of the whole market.
+The statement is true.', 'Where, when, and why dimensions apply alongside other customer analysis in commercial laundry equipment.
 
-With own share 20% and leader share 40%:
+That is exactly what the claim asserts, so the wording survives a careful check against the standard idea.
 
-$$
-\frac{20}{40} = 0.5
-$$
+The statement is true.'] WHERE case_id = 'CASE 5.5.58' AND tier = 'full';
+UPDATE public.economics_cases SET tactical_explanations = ARRAY['The market is about 6.67 times larger (100/15), not fifteen times.
 
-A relative share of 0.5 means the firm holds half the leader''s percentage of the market — not a 50% absolute share, and not half of a geographic area.
+Because that detail fails, the whole statement fails even if the topic word looks familiar.
 
-That matches the stated relative share of 0.5.
+The statement is false.', '74 divided by 518 equals 14.3% absolute share in the commercial laundry equipment example.
 
-The statement is true.
-', 'TRUE — Customer analysis asks who buys (and who influences), what buyers do with the product, where and when they buy, and why they prefer one offer — guiding distribution, seasonality, development, and share strategy.
+That is exactly what the claim asserts, so the wording survives a careful check against the standard idea.
 
-Unconverted buyers keep market potential above volume in printed circuit boards.
+The statement is true.', 'Relative share of 1.0 means equal percentage with the leader, not 1% market share.
 
-Under that definition the assertion is the right description of the situation.
+Because that detail fails, the whole statement fails even if the topic word looks familiar.
 
-The statement is true.
-', 'TRUE — Market size/volume is total sales of all firms (value or quantity). Market potential adds still-unserved buyers; a firm''s sales potential exceeds its current sales volume when further gains are possible.
+The statement is false.', 'Research for another purpose read later is secondary.
 
-On this stem (growth): sales potential includes room beyond current volume for a printed circuit boards supplier.
+Because that detail fails, the whole statement fails even if the topic word looks familiar.
 
-Under that definition the assertion is the right description of the situation.
+The statement is false.', 'Paying for access does not convert existing research into primary collection.
 
-The statement is true.
-', 'FALSE — Market size/volume is total sales of all firms (value or quantity). Market potential adds still-unserved buyers; a firm''s sales potential exceeds its current sales volume when further gains are possible.
+Because that detail fails, the whole statement fails even if the topic word looks familiar.
 
-That confuses market measures with a single firm''s sales volume.
+The statement is false.'] WHERE case_id = 'CASE 5.5.59' AND tier = 'full';
+UPDATE public.economics_cases SET tactical_explanations = ARRAY['Who, what, where, when, and why are all included.
 
-The mislabelled category or reversed comparison is enough to reject the claim.
+Because that detail fails, the whole statement fails even if the topic word looks familiar.
 
-The statement is false.
-', 'TRUE — Market research supplies evidence on customers, competitors, and the industry so the firm can judge position and prospects.
+The statement is false.', 'Both are expressions of market size or volume.
 
-On this stem (positioning / product line): tailored primary research such as running telephone interviews with buyers supports informed decisions in the industrial adhesives market.
+The absolute wording "cannot" turns a familiar idea into an overclaim. One ordinary counterexample is enough to reject it.
 
-The sentence therefore reports the concept accurately for this case.
+The statement is false.', '14.3/42.900000000000006 yields 0.33 relative share against the leader in commercial laundry equipment.
 
-The statement is true.
-'] WHERE case_id = 'CASE 5.5.56' AND tier = 'full';
-UPDATE public.economics_cases SET tactical_explanations = ARRAY['TRUE — Secondary information reuses research already produced by others (government, associations, published reports). It is often cheaper or free, but usually more general and less tailored.
+That is exactly what the claim asserts, so the wording survives a careful check against the standard idea.
 
-On this stem (secondary information): trade statistics reused for the industrial adhesives segment are secondary market information.
+The statement is true.', 'Unconverted buyers keep market potential above volume in commercial laundry equipment.
 
-Nothing in the wording contradicts that marketing test, so the claim is sound.
+That is exactly what the claim asserts, so the wording survives a careful check against the standard idea.
 
-The statement is true.
-', 'TRUE — Customer analysis asks who buys (and who influences), what buyers do with the product, where and when they buy, and why they prefer one offer — guiding distribution, seasonality, development, and share strategy.
+The statement is true.', 'Sales potential includes room beyond current volume for a commercial laundry equipment supplier.
 
-Where, when, and why dimensions apply alongside other customer analysis in industrial adhesives.
+That is exactly what the claim asserts, so the wording survives a careful check against the standard idea.
 
-Nothing in the wording contradicts that marketing test, so the claim is sound.
+The statement is true.'] WHERE case_id = 'CASE 5.5.60' AND tier = 'full';
+UPDATE public.economics_cases SET tactical_explanations = ARRAY['Tailored primary research such as hiring an institute to conduct field interviews supports informed decisions in the enterprise accounting software market.
 
-The statement is true.
-', 'TRUE — Absolute market share is the firm''s sales divided by total market volume (all businesses'' sales of the product), usually shown as a percentage.
+That is exactly what the claim asserts, so the wording survives a careful check against the standard idea.
 
-Take firm sales 57 over market volume 342:
+The statement is true.', 'They measure different relationships and need not match numerically.
 
-$$
-\frac{57}{342} = 0.166667
-$$
+The absolute wording "always" turns a familiar idea into an overclaim. One ordinary counterexample is enough to reject it.
 
-Convert to a percentage:
+The statement is false.', 'Trade statistics reused for the enterprise accounting software segment are secondary market information.
 
-$$
-0.166667 \times 100 = 16.67\%
-$$
+That is exactly what the claim asserts, so the wording survives a careful check against the standard idea.
 
-That is the absolute share the statement reports (16.67%).
+The statement is true.', 'Institute collection for a bespoke study is primary.
 
-The statement is true.
-', 'TRUE — Relative market share equals the firm''s absolute share divided by the largest competitor''s absolute share — a pure ratio, not a percentage of the whole market.
+Because that detail fails, the whole statement fails even if the topic word looks familiar.
 
-With own share 16.7% and leader share 41.75%:
+The statement is false.', 'Where, when, and why dimensions apply alongside other customer analysis in enterprise accounting software.
 
-$$
-\frac{16.7}{41.75} = 0.4
-$$
+That is exactly what the claim asserts, so the wording survives a careful check against the standard idea.
 
-The calculated relative share is 0.4, matching the claim.
+The statement is true.'] WHERE case_id = 'CASE 5.5.61' AND tier = 'full';
+UPDATE public.economics_cases SET tactical_explanations = ARRAY['Primary is costly; small firms often cannot afford it.
 
-The statement is true.
-', 'TRUE — Customer analysis asks who buys (and who influences), what buyers do with the product, where and when they buy, and why they prefer one offer — guiding distribution, seasonality, development, and share strategy.
+The absolute wording "always" turns a familiar idea into an overclaim. One ordinary counterexample is enough to reject it.
 
-Unconverted buyers keep market potential above volume in industrial adhesives.
+The statement is false.', '91 divided by 728 equals 12.5% absolute share in the enterprise accounting software example.
 
-Nothing in the wording contradicts that marketing test, so the claim is sound.
+That is exactly what the claim asserts, so the wording survives a careful check against the standard idea.
 
-The statement is true.
-'] WHERE case_id = 'CASE 5.5.57' AND tier = 'full';
-UPDATE public.economics_cases SET tactical_explanations = ARRAY['FALSE — Market size/volume is total sales of all firms (value or quantity). Market potential adds still-unserved buyers; a firm''s sales potential exceeds its current sales volume when further gains are possible.
+The statement is true.', '12.5/25 yields 0.5 relative share against the leader in enterprise accounting software.
 
-Sales potential can exceed current sales volume in growing markets.
+That is exactly what the claim asserts, so the wording survives a careful check against the standard idea.
 
-Those restricting words stretch a limited idea past what marketing allows.
+The statement is true.', 'Unconverted buyers keep market potential above volume in enterprise accounting software.
 
-The statement is false.
-', 'TRUE — Market size/volume is total sales of all firms (value or quantity). Market potential adds still-unserved buyers; a firm''s sales potential exceeds its current sales volume when further gains are possible.
+That is exactly what the claim asserts, so the wording survives a careful check against the standard idea.
 
-On this stem (growth): sales potential includes room beyond current volume for a industrial adhesives supplier.
+The statement is true.', 'Why analysis informs development before collapse.
 
-Nothing in the wording contradicts that marketing test, so the claim is sound.
+Because that detail fails, the whole statement fails even if the topic word looks familiar.
 
-The statement is true.
-', 'TRUE — Market research supplies evidence on customers, competitors, and the industry so the firm can judge position and prospects.
+The statement is false.'] WHERE case_id = 'CASE 5.5.62' AND tier = 'full';
+UPDATE public.economics_cases SET tactical_explanations = ARRAY['Where-customers concerns purchase location.
 
-On this stem (positioning / product line): tailored primary research such as analysing responses from an online survey supports informed decisions in the commercial laundry equipment market.
+Because that detail fails, the whole statement fails even if the topic word looks familiar.
 
-Under that definition the assertion is the right description of the situation.
+The statement is false.', 'Sales potential includes room beyond current volume for a enterprise accounting software supplier.
 
-The statement is true.
-', 'TRUE — Secondary information reuses research already produced by others (government, associations, published reports). It is often cheaper or free, but usually more general and less tailored.
+That is exactly what the claim asserts, so the wording survives a careful check against the standard idea.
 
-On this stem (secondary information): trade statistics reused for the commercial laundry equipment segment are secondary market information.
+The statement is true.', 'Tailored primary research such as designing a primary study around channel preferences supports informed decisions in the organic breakfast cereals market.
 
-Nothing in the wording contradicts that marketing test, so the claim is sound.
+That is exactly what the claim asserts, so the wording survives a careful check against the standard idea.
 
-The statement is true.
-', 'TRUE — Customer analysis asks who buys (and who influences), what buyers do with the product, where and when they buy, and why they prefer one offer — guiding distribution, seasonality, development, and share strategy.
+The statement is true.', 'Trade statistics reused for the organic breakfast cereals segment are secondary market information.
 
-Where, when, and why dimensions apply alongside other customer analysis in commercial laundry equipment.
+That is exactly what the claim asserts, so the wording survives a careful check against the standard idea.
 
-Nothing in the wording contradicts that marketing test, so the claim is sound.
+The statement is true.', 'Where, when, and why dimensions apply alongside other customer analysis in organic breakfast cereals.
 
-The statement is true.
-'] WHERE case_id = 'CASE 5.5.58' AND tier = 'full';
-UPDATE public.economics_cases SET tactical_explanations = ARRAY['FALSE — Absolute market share equals one business''s (or brand''s) sales divided by total market volume. It informs the firm and investors but says little alone about rivals'' relative strength.
+That is exactly what the claim asserts, so the wording survives a careful check against the standard idea.
 
-The market is about 6.67 times larger (100/15), not fifteen times.
+The statement is true.'] WHERE case_id = 'CASE 5.5.63' AND tier = 'full';
+UPDATE public.economics_cases SET tactical_explanations = ARRAY['When-customers concerns purchase timing.
 
-Swap in the textbook criterion and the sentence no longer describes the case.
+Because that detail fails, the whole statement fails even if the topic word looks familiar.
 
-The statement is false.
-', 'TRUE — Absolute market share is the firm''s sales divided by total market volume (all businesses'' sales of the product), usually shown as a percentage.
+The statement is false.', '108 divided by 540 equals 20% absolute share in the organic breakfast cereals example.
 
-Take firm sales 74 over market volume 518:
+That is exactly what the claim asserts, so the wording survives a careful check against the standard idea.
 
-$$
-\frac{74}{518} = 0.142857
-$$
+The statement is true.', '20/50 yields 0.4 relative share against the leader in organic breakfast cereals.
 
-Convert to a percentage:
+That is exactly what the claim asserts, so the wording survives a careful check against the standard idea.
 
-$$
-0.142857 \times 100 = 14.29\%
-$$
+The statement is true.', 'Unconverted buyers keep market potential above volume in organic breakfast cereals.
 
-That is the absolute share the statement reports (14.29%).
+That is exactly what the claim asserts, so the wording survives a careful check against the standard idea.
 
-The statement is true.
-', 'FALSE — Relative market share equals the firm''s market share divided by the largest competitor''s market share, putting own performance in competitive context.
+The statement is true.', 'Sales potential includes room beyond current volume for a organic breakfast cereals supplier.
 
-Relative share of 1.0 means equal percentage with the leader, not 1% market share.
+That is exactly what the claim asserts, so the wording survives a careful check against the standard idea.
 
-The mislabelled category or reversed comparison is enough to reject the claim.
+The statement is true.'] WHERE case_id = 'CASE 5.5.64' AND tier = 'full';
+UPDATE public.economics_cases SET tactical_explanations = ARRAY['Tailored primary research such as commissioning a tailored questionnaire supports informed decisions in the electric vehicle chargers market.
 
-The statement is false.
-', 'FALSE — Primary market research collects new data for the firm''s own questions — questionnaires, interviews, online surveys, or studies run by a research institute — tailored but often costly.
+That is exactly what the claim asserts, so the wording survives a careful check against the standard idea.
 
-On this stem (Primary research): research for another purpose read later is secondary.
+The statement is true.', 'Trade statistics reused for the electric vehicle chargers segment are secondary market information.
 
-The mislabelled category or reversed comparison is enough to reject the claim.
+That is exactly what the claim asserts, so the wording survives a careful check against the standard idea.
 
-The statement is false.
-', 'FALSE — Primary market research collects new data for the firm''s own questions — questionnaires, interviews, online surveys, or studies run by a research institute — tailored but often costly.
+The statement is true.', 'Where, when, and why dimensions apply alongside other customer analysis in electric vehicle chargers.
 
-On this stem (Secondary research): paying for access does not convert existing research into primary collection.
+That is exactly what the claim asserts, so the wording survives a careful check against the standard idea.
 
-Swap in the textbook criterion and the sentence no longer describes the case.
+The statement is true.', '125 divided by 750 equals 16.7% absolute share in the electric vehicle chargers example.
 
-The statement is false.
-'] WHERE case_id = 'CASE 5.5.59' AND tier = 'full';
-UPDATE public.economics_cases SET tactical_explanations = ARRAY['FALSE — Customer analysis asks who buys (and who influences), what buyers do with the product, where and when they buy, and why they prefer one offer — guiding distribution, seasonality, development, and share strategy.
+That is exactly what the claim asserts, so the wording survives a careful check against the standard idea.
 
-Who, what, where, when, and why are all included.
+The statement is true.', 'Unchanged firm sales with smaller market raise share, but not automatically in every scenario described.
 
-The absolute wording is what breaks the claim once the correct test is applied.
+The absolute wording "automatically" turns a familiar idea into an overclaim. One ordinary counterexample is enough to reject it.
 
-The statement is false.
-', 'FALSE — Market size/volume is total sales of all firms (value or quantity). Market potential adds still-unserved buyers; a firm''s sales potential exceeds its current sales volume when further gains are possible.
+The statement is false.'] WHERE case_id = 'CASE 5.5.65' AND tier = 'full';
+UPDATE public.economics_cases SET tactical_explanations = ARRAY['Rising market potential can contribute to higher sales potential.
 
-Both are expressions of market size or volume.
+Because that detail fails, the whole statement fails even if the topic word looks familiar.
 
-The absolute wording is what breaks the claim once the correct test is applied.
+The statement is false.', 'Primary studies can be tailored to the commissioning firm.
 
-The statement is false.
-', 'TRUE — Relative market share equals the firm''s absolute share divided by the largest competitor''s absolute share — a pure ratio, not a percentage of the whole market.
+The absolute wording "cannot" turns a familiar idea into an overclaim. One ordinary counterexample is enough to reject it.
 
-With own share 14.3% and leader share 42.9%:
+The statement is false.', 'Secondary data are usually general, not more detailed.
 
-$$
-\frac{14.3}{42.9} = 0.3333
-$$
+The absolute wording "always" turns a familiar idea into an overclaim. One ordinary counterexample is enough to reject it.
 
-That matches the stated relative share of about 0.33.
+The statement is false.', '16.7/50.099999999999994 yields 0.33 relative share against the leader in electric vehicle chargers.
 
-The statement is true.
-', 'TRUE — Customer analysis asks who buys (and who influences), what buyers do with the product, where and when they buy, and why they prefer one offer — guiding distribution, seasonality, development, and share strategy.
+That is exactly what the claim asserts, so the wording survives a careful check against the standard idea.
 
-Unconverted buyers keep market potential above volume in commercial laundry equipment.
+The statement is true.', '0.5 means half the leader''s percentage share, not fifty per cent of the market.
 
-Nothing in the wording contradicts that marketing test, so the claim is sound.
+The absolute wording "always" turns a familiar idea into an overclaim. One ordinary counterexample is enough to reject it.
 
-The statement is true.
-', 'TRUE — Market size/volume is total sales of all firms (value or quantity). Market potential adds still-unserved buyers; a firm''s sales potential exceeds its current sales volume when further gains are possible.
+The statement is false.'] WHERE case_id = 'CASE 5.5.66' AND tier = 'full';
+UPDATE public.economics_cases SET tactical_explanations = ARRAY['Absolute percentage and relative ratio measure different comparisons.
 
-On this stem (growth): sales potential includes room beyond current volume for a commercial laundry equipment supplier.
+Because that detail fails, the whole statement fails even if the topic word looks familiar.
 
-Nothing in the wording contradicts that marketing test, so the claim is sound.
+The statement is false.', 'Unconverted buyers keep market potential above volume in electric vehicle chargers.
 
-The statement is true.
-'] WHERE case_id = 'CASE 5.5.60' AND tier = 'full';
-UPDATE public.economics_cases SET tactical_explanations = ARRAY['TRUE — Market research supplies evidence on customers, competitors, and the industry so the firm can judge position and prospects.
+That is exactly what the claim asserts, so the wording survives a careful check against the standard idea.
 
-On this stem (software / positioning): tailored primary research such as hiring an institute to conduct field interviews supports informed decisions in the enterprise accounting software market.
+The statement is true.', 'Sales potential includes room beyond current volume for a electric vehicle chargers supplier.
 
-Under that definition the assertion is the right description of the situation.
+That is exactly what the claim asserts, so the wording survives a careful check against the standard idea.
 
-The statement is true.
-', 'FALSE — Relative market share equals the firm''s market share divided by the largest competitor''s market share, putting own performance in competitive context.
+The statement is true.', 'Primary research can ask about similar rival products.
 
-On this stem (market share): they measure different relationships and need not match numerically.
+Because that detail fails, the whole statement fails even if the topic word looks familiar.
 
-The absolute wording is what breaks the claim once the correct test is applied.
+The statement is false.', 'Tailored primary research such as running telephone interviews with buyers supports informed decisions in the medical diagnostic kits market.
 
-The statement is false.
-', 'TRUE — Secondary information reuses research already produced by others (government, associations, published reports). It is often cheaper or free, but usually more general and less tailored.
+That is exactly what the claim asserts, so the wording survives a careful check against the standard idea.
 
-On this stem (software / secondary information): trade statistics reused for the enterprise accounting software segment are secondary market information.
+The statement is true.'] WHERE case_id = 'CASE 5.5.67' AND tier = 'full';
+UPDATE public.economics_cases SET tactical_explanations = ARRAY['Trade statistics reused for the medical diagnostic kits segment are secondary market information.
 
-Nothing in the wording contradicts that marketing test, so the claim is sound.
+That is exactly what the claim asserts, so the wording survives a careful check against the standard idea.
 
-The statement is true.
-', 'FALSE — Secondary information reuses research already produced by others (government, associations, published reports). It is often cheaper or free, but usually more general and less tailored.
+The statement is true.', 'Market volume is total current sales; it is not that sum.
 
-Institute collection for a bespoke study is primary.
+Because that detail fails, the whole statement fails even if the topic word looks familiar.
 
-Once the defining feature is restored, the assertion falls away.
+The statement is false.', 'Where, when, and why dimensions apply alongside other customer analysis in medical diagnostic kits.
 
-The statement is false.
-', 'TRUE — Customer analysis asks who buys (and who influences), what buyers do with the product, where and when they buy, and why they prefer one offer — guiding distribution, seasonality, development, and share strategy.
+That is exactly what the claim asserts, so the wording survives a careful check against the standard idea.
 
-Where, when, and why dimensions apply alongside other customer analysis in enterprise accounting software.
+The statement is true.', 'Sales volume is one firm; market volume is all firms.
 
-Nothing in the wording contradicts that marketing test, so the claim is sound.
+Because that detail fails, the whole statement fails even if the topic word looks familiar.
 
-The statement is true.
-'] WHERE case_id = 'CASE 5.5.61' AND tier = 'full';
-UPDATE public.economics_cases SET tactical_explanations = ARRAY['FALSE — Primary market research collects new data for the firm''s own questions — questionnaires, interviews, online surveys, or studies run by a research institute — tailored but often costly.
+The statement is false.', 'Business purchasers for work still indicate b2b.
 
-On this stem (primary research / secondary sources): primary is costly; small firms often cannot afford it.
+Because that detail fails, the whole statement fails even if the topic word looks familiar.
 
-Those restricting words stretch a limited idea past what marketing allows.
+The statement is false.'] WHERE case_id = 'CASE 5.5.68' AND tier = 'full';
+UPDATE public.economics_cases SET tactical_explanations = ARRAY['142 divided by 994 equals 14.3% absolute share in the medical diagnostic kits example.
 
-The statement is false.
-', 'TRUE — Absolute market share is the firm''s sales divided by total market volume (all businesses'' sales of the product), usually shown as a percentage.
+That is exactly what the claim asserts, so the wording survives a careful check against the standard idea.
 
-Take firm sales 91 over market volume 728:
+The statement is true.', '14.3/28.6 yields 0.5 relative share against the leader in medical diagnostic kits.
 
-$$
-\frac{91}{728} = 0.125
-$$
+That is exactly what the claim asserts, so the wording survives a careful check against the standard idea.
 
-Convert to a percentage:
+The statement is true.', 'Unconverted buyers keep market potential above volume in medical diagnostic kits.
 
-$$
-0.125 \times 100 = 12.5\%
-$$
+That is exactly what the claim asserts, so the wording survives a careful check against the standard idea.
 
-That is the absolute share the statement reports (12.5%).
+The statement is true.', 'Sales potential includes room beyond current volume for a medical diagnostic kits supplier.
 
-The statement is true.
-', 'TRUE — Relative market share equals the firm''s absolute share divided by the largest competitor''s absolute share — a pure ratio, not a percentage of the whole market.
+That is exactly what the claim asserts, so the wording survives a careful check against the standard idea.
 
-With own share 12.5% and leader share 25%:
+The statement is true.', 'Market volume reflects current sales, not unconverted prospects alone.
 
-$$
-\frac{12.5}{25} = 0.5
-$$
+Because that detail fails, the whole statement fails even if the topic word looks familiar.
 
-A relative share of 0.5 means the firm holds half the leader''s percentage of the market — not a 50% absolute share, and not half of a geographic area.
+The statement is false.'] WHERE case_id = 'CASE 5.5.69' AND tier = 'full';
+UPDATE public.economics_cases SET tactical_explanations = ARRAY['Tailored primary research such as analysing responses from an online survey supports informed decisions in the warehouse automation systems market.
 
-That matches the stated relative share of 0.5.
+That is exactly what the claim asserts, so the wording survives a careful check against the standard idea.
 
-The statement is true.
-', 'TRUE — Customer analysis asks who buys (and who influences), what buyers do with the product, where and when they buy, and why they prefer one offer — guiding distribution, seasonality, development, and share strategy.
+The statement is true.', 'Trade statistics reused for the warehouse automation systems segment are secondary market information.
 
-Unconverted buyers keep market potential above volume in enterprise accounting software.
+That is exactly what the claim asserts, so the wording survives a careful check against the standard idea.
 
-Nothing in the wording contradicts that marketing test, so the claim is sound.
+The statement is true.', 'Where, when, and why dimensions apply alongside other customer analysis in warehouse automation systems.
 
-The statement is true.
-', 'FALSE — Customer analysis asks who buys (and who influences), what buyers do with the product, where and when they buy, and why they prefer one offer — guiding distribution, seasonality, development, and share strategy.
+That is exactly what the claim asserts, so the wording survives a careful check against the standard idea.
 
-Why analysis informs development before collapse.
+The statement is true.', '159 divided by 1272 equals 12.5% absolute share in the warehouse automation systems example.
 
-One clear counterexample under the right criterion is enough to reject the sentence.
+That is exactly what the claim asserts, so the wording survives a careful check against the standard idea.
 
-The statement is false.
-'] WHERE case_id = 'CASE 5.5.62' AND tier = 'full';
-UPDATE public.economics_cases SET tactical_explanations = ARRAY['FALSE — Customer analysis asks who buys (and who influences), what buyers do with the product, where and when they buy, and why they prefer one offer — guiding distribution, seasonality, development, and share strategy.
+The statement is true.', '12.5/31.25 yields 0.4 relative share against the leader in warehouse automation systems.
 
-Where-customers concerns purchase location.
+That is exactly what the claim asserts, so the wording survives a careful check against the standard idea.
 
-The mislabelled category or reversed comparison is enough to reject the claim.
+The statement is true.'] WHERE case_id = 'CASE 5.5.70' AND tier = 'full';
+UPDATE public.economics_cases SET tactical_explanations = ARRAY['Unconverted buyers keep market potential above volume in warehouse automation systems.
 
-The statement is false.
-', 'TRUE — Market size/volume is total sales of all firms (value or quantity). Market potential adds still-unserved buyers; a firm''s sales potential exceeds its current sales volume when further gains are possible.
+That is exactly what the claim asserts, so the wording survives a careful check against the standard idea.
 
-On this stem (software / growth): sales potential includes room beyond current volume for a enterprise accounting software supplier.
+The statement is true.', 'Sales potential includes room beyond current volume for a warehouse automation systems supplier.
 
-Nothing in the wording contradicts that marketing test, so the claim is sound.
+That is exactly what the claim asserts, so the wording survives a careful check against the standard idea.
 
-The statement is true.
-', 'TRUE — Primary market research collects new data for the firm''s own questions — questionnaires, interviews, online surveys, or studies run by a research institute — tailored but often costly.
+The statement is true.', 'Tailored primary research such as hiring an institute to conduct field interviews supports informed decisions in the specialty coffee roasting market.
 
-On this stem (positioning / product line): tailored primary research such as designing a primary study around channel preferences supports informed decisions in the organic breakfast cereals market.
+That is exactly what the claim asserts, so the wording survives a careful check against the standard idea.
 
-Under that definition the assertion is the right description of the situation.
+The statement is true.', 'Trade statistics reused for the specialty coffee roasting segment are secondary market information.
 
-The statement is true.
-', 'TRUE — Secondary information reuses research already produced by others (government, associations, published reports). It is often cheaper or free, but usually more general and less tailored.
+That is exactly what the claim asserts, so the wording survives a careful check against the standard idea.
 
-On this stem (secondary information): trade statistics reused for the organic breakfast cereals segment are secondary market information.
+The statement is true.', 'Where, when, and why dimensions apply alongside other customer analysis in specialty coffee roasting.
 
-Under that definition the assertion is the right description of the situation.
+That is exactly what the claim asserts, so the wording survives a careful check against the standard idea.
 
-The statement is true.
-', 'TRUE — Customer analysis asks who buys (and who influences), what buyers do with the product, where and when they buy, and why they prefer one offer — guiding distribution, seasonality, development, and share strategy.
+The statement is true.'] WHERE case_id = 'CASE 5.5.71' AND tier = 'full';
+UPDATE public.economics_cases SET tactical_explanations = ARRAY['176 divided by 880 equals 20% absolute share in the specialty coffee roasting example.
 
-Where, when, and why dimensions apply alongside other customer analysis in organic breakfast cereals.
+That is exactly what the claim asserts, so the wording survives a careful check against the standard idea.
 
-Under that definition the assertion is the right description of the situation.
+The statement is true.', '20/60 yields 0.33 relative share against the leader in specialty coffee roasting.
 
-The statement is true.
-'] WHERE case_id = 'CASE 5.5.63' AND tier = 'full';
-UPDATE public.economics_cases SET tactical_explanations = ARRAY['FALSE — Customer analysis asks who buys (and who influences), what buyers do with the product, where and when they buy, and why they prefer one offer — guiding distribution, seasonality, development, and share strategy.
+That is exactly what the claim asserts, so the wording survives a careful check against the standard idea.
 
-When-customers concerns purchase timing.
+The statement is true.', 'Unconverted buyers keep market potential above volume in specialty coffee roasting.
 
-Swap in the textbook criterion and the sentence no longer describes the case.
+That is exactly what the claim asserts, so the wording survives a careful check against the standard idea.
 
-The statement is false.
-', 'TRUE — Absolute market share is the firm''s sales divided by total market volume (all businesses'' sales of the product), usually shown as a percentage.
+The statement is true.', 'Sales potential includes room beyond current volume for a specialty coffee roasting supplier.
 
-Take firm sales 108 over market volume 540:
+That is exactly what the claim asserts, so the wording survives a careful check against the standard idea.
 
-$$
-\frac{108}{540} = 0.2
-$$
+The statement is true.', 'Tailored primary research such as designing a primary study around channel preferences supports informed decisions in the renewable-energy inverters market.
 
-Convert to a percentage:
+That is exactly what the claim asserts, so the wording survives a careful check against the standard idea.
 
-$$
-0.2 \times 100 = 20\%
-$$
+The statement is true.'] WHERE case_id = 'CASE 5.5.72' AND tier = 'full';
+UPDATE public.economics_cases SET tactical_explanations = ARRAY['Trade statistics reused for the renewable-energy inverters segment are secondary market information.
 
-That is the absolute share the statement reports (20%).
+That is exactly what the claim asserts, so the wording survives a careful check against the standard idea.
 
-The statement is true.
-', 'TRUE — Relative market share equals the firm''s absolute share divided by the largest competitor''s absolute share — a pure ratio, not a percentage of the whole market.
+The statement is true.', 'Where, when, and why dimensions apply alongside other customer analysis in renewable-energy inverters.
 
-With own share 20% and leader share 50%:
+That is exactly what the claim asserts, so the wording survives a careful check against the standard idea.
 
-$$
-\frac{20}{50} = 0.4
-$$
+The statement is true.', 'Analysis costs are part of primary research expense.
 
-The calculated relative share is 0.4, matching the claim.
+Because that detail fails, the whole statement fails even if the topic word looks familiar.
 
-The statement is true.
-', 'TRUE — Customer analysis asks who buys (and who influences), what buyers do with the product, where and when they buy, and why they prefer one offer — guiding distribution, seasonality, development, and share strategy.
+The statement is false.', '193 divided by 1158 equals 16.7% absolute share in the renewable-energy inverters example.
 
-Unconverted buyers keep market potential above volume in organic breakfast cereals.
+That is exactly what the claim asserts, so the wording survives a careful check against the standard idea.
 
-Under that definition the assertion is the right description of the situation.
+The statement is true.', '16.7/33.4 yields 0.5 relative share against the leader in renewable-energy inverters.
 
-The statement is true.
-', 'TRUE — Market size/volume is total sales of all firms (value or quantity). Market potential adds still-unserved buyers; a firm''s sales potential exceeds its current sales volume when further gains are possible.
+That is exactly what the claim asserts, so the wording survives a careful check against the standard idea.
 
-On this stem (growth): sales potential includes room beyond current volume for a organic breakfast cereals supplier.
+The statement is true.'] WHERE case_id = 'CASE 5.5.73' AND tier = 'full';
+UPDATE public.economics_cases SET tactical_explanations = ARRAY['Recording method does not make interviews secondary.
 
-Under that definition the assertion is the right description of the situation.
+Because that detail fails, the whole statement fails even if the topic word looks familiar.
 
-The statement is true.
-'] WHERE case_id = 'CASE 5.5.64' AND tier = 'full';
-UPDATE public.economics_cases SET tactical_explanations = ARRAY['TRUE — Market research supplies evidence on customers, competitors, and the industry so the firm can judge position and prospects.
+The statement is false.', 'Unconverted buyers keep market potential above volume in renewable-energy inverters.
 
-On this stem (vehicle / positioning): tailored primary research such as commissioning a tailored questionnaire supports informed decisions in the electric vehicle chargers market.
+That is exactly what the claim asserts, so the wording survives a careful check against the standard idea.
 
-The sentence therefore reports the concept accurately for this case.
+The statement is true.', 'Self-completion online surveys are still primary collection.
 
-The statement is true.
-', 'TRUE — Secondary information reuses research already produced by others (government, associations, published reports). It is often cheaper or free, but usually more general and less tailored.
+Because that detail fails, the whole statement fails even if the topic word looks familiar.
 
-On this stem (vehicle / secondary information): trade statistics reused for the electric vehicle chargers segment are secondary market information.
+The statement is false.', 'Sales potential includes room beyond current volume for a renewable-energy inverters supplier.
 
-The sentence therefore reports the concept accurately for this case.
+That is exactly what the claim asserts, so the wording survives a careful check against the standard idea.
 
-The statement is true.
-', 'TRUE — Customer analysis asks who buys (and who influences), what buyers do with the product, where and when they buy, and why they prefer one offer — guiding distribution, seasonality, development, and share strategy.
+The statement is true.', 'Prior agency research is secondary for later users.
 
-Where, when, and why dimensions apply alongside other customer analysis in electric vehicle chargers.
+The absolute wording "every" turns a familiar idea into an overclaim. One ordinary counterexample is enough to reject it.
 
-The sentence therefore reports the concept accurately for this case.
+The statement is false.'] WHERE case_id = 'CASE 5.5.74' AND tier = 'full';
+UPDATE public.economics_cases SET tactical_explanations = ARRAY['Procurement managers as customers align with business-to-business classification in who-customer analysis.
 
-The statement is true.
-', 'TRUE — Absolute market share is the firm''s sales divided by total market volume (all businesses'' sales of the product), usually shown as a percentage.
+That is exactly what the claim asserts, so the wording survives a careful check against the standard idea.
 
-Take firm sales 125 over market volume 750:
+The statement is true.', 'Association research is typically general secondary information.
 
-$$
-\frac{125}{750} = 0.166667
-$$
+Because that detail fails, the whole statement fails even if the topic word looks familiar.
 
-Convert to a percentage:
+The statement is false.', 'The chapter distinguishes absolute and relative market share.
 
-$$
-0.166667 \times 100 = 16.67\%
-$$
+Because that detail fails, the whole statement fails even if the topic word looks familiar.
 
-That is the absolute share the statement reports (16.67%).
+The statement is false.', 'Why and what dimensions can be explored with procurement managers in primary research.
 
-The statement is true.
-', 'FALSE — Customer analysis asks who buys (and who influences), what buyers do with the product, where and when they buy, and why they prefer one offer — guiding distribution, seasonality, development, and share strategy.
+That is exactly what the claim asserts, so the wording survives a careful check against the standard idea.
 
-On this stem (Market share): unchanged firm sales with smaller market raise share, but not automatically in every scenario described.
+The statement is true.', 'Trailing the leader implies relative share below one.
 
-Swap in the textbook criterion and the sentence no longer describes the case.
+The absolute wording "always" turns a familiar idea into an overclaim. One ordinary counterexample is enough to reject it.
 
-The statement is false.
-'] WHERE case_id = 'CASE 5.5.65' AND tier = 'full';
-UPDATE public.economics_cases SET tactical_explanations = ARRAY['FALSE — Customer analysis asks who buys (and who influences), what buyers do with the product, where and when they buy, and why they prefer one offer — guiding distribution, seasonality, development, and share strategy.
-
-Rising market potential can contribute to higher sales potential.
-
-Once the defining feature is restored, the assertion falls away.
-
-The statement is false.
-', 'FALSE — Primary market research collects new data for the firm''s own questions — questionnaires, interviews, online surveys, or studies run by a research institute — tailored but often costly.
-
-Primary studies can be tailored to the commissioning firm.
-
-Those restricting words stretch a limited idea past what marketing allows.
-
-The statement is false.
-', 'FALSE — Primary market research collects new data for the firm''s own questions — questionnaires, interviews, online surveys, or studies run by a research institute — tailored but often costly.
-
-On this stem (Secondary information / product line): secondary data are usually general, not more detailed.
-
-Those restricting words stretch a limited idea past what marketing allows.
-
-The statement is false.
-', 'TRUE — Relative market share equals the firm''s absolute share divided by the largest competitor''s absolute share — a pure ratio, not a percentage of the whole market.
-
-With own share 16.7% and leader share 50.1%:
-
-$$
-\frac{16.7}{50.1} = 0.3333
-$$
-
-That matches the stated relative share of about 0.33.
-
-The statement is true.
-', 'FALSE — Relative market share equals the firm''s market share divided by the largest competitor''s market share, putting own performance in competitive context.
-
-On this stem (market share): 0.5 means half the leader''s percentage share, not fifty per cent of the market.
-
-Those restricting words stretch a limited idea past what marketing allows.
-
-The statement is false.
-'] WHERE case_id = 'CASE 5.5.66' AND tier = 'full';
-UPDATE public.economics_cases SET tactical_explanations = ARRAY['FALSE — Absolute market share equals one business''s (or brand''s) sales divided by total market volume. It informs the firm and investors but says little alone about rivals'' relative strength.
-
-On this stem (market share): absolute percentage and relative ratio measure different comparisons.
-
-The mislabelled category or reversed comparison is enough to reject the claim.
-
-The statement is false.
-', 'TRUE — Customer analysis asks who buys (and who influences), what buyers do with the product, where and when they buy, and why they prefer one offer — guiding distribution, seasonality, development, and share strategy.
-
-Unconverted buyers keep market potential above volume in electric vehicle chargers.
-
-The sentence therefore reports the concept accurately for this case.
-
-The statement is true.
-', 'TRUE — Market size/volume is total sales of all firms (value or quantity). Market potential adds still-unserved buyers; a firm''s sales potential exceeds its current sales volume when further gains are possible.
-
-On this stem (vehicle / growth): sales potential includes room beyond current volume for a electric vehicle chargers supplier.
-
-The sentence therefore reports the concept accurately for this case.
-
-The statement is true.
-', 'FALSE — Customer analysis asks who buys (and who influences), what buyers do with the product, where and when they buy, and why they prefer one offer — guiding distribution, seasonality, development, and share strategy.
-
-Primary research can ask about similar rival products.
-
-The mislabelled category or reversed comparison is enough to reject the claim.
-
-The statement is false.
-', 'TRUE — Market research supplies evidence on customers, competitors, and the industry so the firm can judge position and prospects.
-
-On this stem (positioning / product line): tailored primary research such as running telephone interviews with buyers supports informed decisions in the medical diagnostic kits market.
-
-Nothing in the wording contradicts that marketing test, so the claim is sound.
-
-The statement is true.
-'] WHERE case_id = 'CASE 5.5.67' AND tier = 'full';
-UPDATE public.economics_cases SET tactical_explanations = ARRAY['TRUE — Secondary information reuses research already produced by others (government, associations, published reports). It is often cheaper or free, but usually more general and less tailored.
-
-On this stem (secondary information): trade statistics reused for the medical diagnostic kits segment are secondary market information.
-
-Under that definition the assertion is the right description of the situation.
-
-The statement is true.
-', 'FALSE — Market size/volume is total sales of all firms (value or quantity). Market potential adds still-unserved buyers; a firm''s sales potential exceeds its current sales volume when further gains are possible.
-
-Market volume is total current sales; it is not that sum.
-
-The mislabelled category or reversed comparison is enough to reject the claim.
-
-The statement is false.
-', 'TRUE — Customer analysis asks who buys (and who influences), what buyers do with the product, where and when they buy, and why they prefer one offer — guiding distribution, seasonality, development, and share strategy.
-
-Where, when, and why dimensions apply alongside other customer analysis in medical diagnostic kits.
-
-Under that definition the assertion is the right description of the situation.
-
-The statement is true.
-', 'FALSE — Customer analysis asks who buys (and who influences), what buyers do with the product, where and when they buy, and why they prefer one offer — guiding distribution, seasonality, development, and share strategy.
-
-Sales volume is one firm; market volume is all firms.
-
-Swap in the textbook criterion and the sentence no longer describes the case.
-
-The statement is false.
-', 'FALSE — Customer analysis asks who buys (and who influences), what buyers do with the product, where and when they buy, and why they prefer one offer — guiding distribution, seasonality, development, and share strategy.
-
-Business purchasers for work still indicate b2b.
-
-One clear counterexample under the right criterion is enough to reject the sentence.
-
-The statement is false.
-'] WHERE case_id = 'CASE 5.5.68' AND tier = 'full';
-UPDATE public.economics_cases SET tactical_explanations = ARRAY['TRUE — Absolute market share is the firm''s sales divided by total market volume (all businesses'' sales of the product), usually shown as a percentage.
-
-Take firm sales 142 over market volume 994:
-
-$$
-\frac{142}{994} = 0.142857
-$$
-
-Convert to a percentage:
-
-$$
-0.142857 \times 100 = 14.29\%
-$$
-
-That is the absolute share the statement reports (14.29%).
-
-The statement is true.
-', 'TRUE — Relative market share equals the firm''s absolute share divided by the largest competitor''s absolute share — a pure ratio, not a percentage of the whole market.
-
-With own share 14.3% and leader share 28.6%:
-
-$$
-\frac{14.3}{28.6} = 0.5
-$$
-
-A relative share of 0.5 means the firm holds half the leader''s percentage of the market — not a 50% absolute share, and not half of a geographic area.
-
-That matches the stated relative share of 0.5.
-
-The statement is true.
-', 'TRUE — Customer analysis asks who buys (and who influences), what buyers do with the product, where and when they buy, and why they prefer one offer — guiding distribution, seasonality, development, and share strategy.
-
-Unconverted buyers keep market potential above volume in medical diagnostic kits.
-
-Under that definition the assertion is the right description of the situation.
-
-The statement is true.
-', 'TRUE — Market size/volume is total sales of all firms (value or quantity). Market potential adds still-unserved buyers; a firm''s sales potential exceeds its current sales volume when further gains are possible.
-
-On this stem (growth): sales potential includes room beyond current volume for a medical diagnostic kits supplier.
-
-Under that definition the assertion is the right description of the situation.
-
-The statement is true.
-', 'FALSE — Market size/volume is total sales of all firms (value or quantity). Market potential adds still-unserved buyers; a firm''s sales potential exceeds its current sales volume when further gains are possible.
-
-Market volume reflects current sales, not unconverted prospects alone.
-
-Once the defining feature is restored, the assertion falls away.
-
-The statement is false.
-'] WHERE case_id = 'CASE 5.5.69' AND tier = 'full';
-UPDATE public.economics_cases SET tactical_explanations = ARRAY['TRUE — Market research supplies evidence on customers, competitors, and the industry so the firm can judge position and prospects.
-
-On this stem (positioning / product line): tailored primary research such as analysing responses from an online survey supports informed decisions in the warehouse automation systems market.
-
-Under that definition the assertion is the right description of the situation.
-
-The statement is true.
-', 'TRUE — Secondary information reuses research already produced by others (government, associations, published reports). It is often cheaper or free, but usually more general and less tailored.
-
-On this stem (secondary information): trade statistics reused for the warehouse automation systems segment are secondary market information.
-
-Nothing in the wording contradicts that marketing test, so the claim is sound.
-
-The statement is true.
-', 'TRUE — Customer analysis asks who buys (and who influences), what buyers do with the product, where and when they buy, and why they prefer one offer — guiding distribution, seasonality, development, and share strategy.
-
-Where, when, and why dimensions apply alongside other customer analysis in warehouse automation systems.
-
-Nothing in the wording contradicts that marketing test, so the claim is sound.
-
-The statement is true.
-', 'TRUE — Absolute market share is the firm''s sales divided by total market volume (all businesses'' sales of the product), usually shown as a percentage.
-
-Take firm sales 159 over market volume 1,272:
-
-$$
-\frac{159}{1,272} = 0.125
-$$
-
-Convert to a percentage:
-
-$$
-0.125 \times 100 = 12.5\%
-$$
-
-That is the absolute share the statement reports (12.5%).
-
-The statement is true.
-', 'TRUE — Relative market share equals the firm''s absolute share divided by the largest competitor''s absolute share — a pure ratio, not a percentage of the whole market.
-
-With own share 12.5% and leader share 31.25%:
-
-$$
-\frac{12.5}{31.25} = 0.4
-$$
-
-The calculated relative share is 0.4, matching the claim.
-
-The statement is true.
-'] WHERE case_id = 'CASE 5.5.70' AND tier = 'full';
-UPDATE public.economics_cases SET tactical_explanations = ARRAY['TRUE — Customer analysis asks who buys (and who influences), what buyers do with the product, where and when they buy, and why they prefer one offer — guiding distribution, seasonality, development, and share strategy.
-
-Unconverted buyers keep market potential above volume in warehouse automation systems.
-
-Nothing in the wording contradicts that marketing test, so the claim is sound.
-
-The statement is true.
-', 'TRUE — Market size/volume is total sales of all firms (value or quantity). Market potential adds still-unserved buyers; a firm''s sales potential exceeds its current sales volume when further gains are possible.
-
-On this stem (growth): sales potential includes room beyond current volume for a warehouse automation systems supplier.
-
-Nothing in the wording contradicts that marketing test, so the claim is sound.
-
-The statement is true.
-', 'TRUE — Market research supplies evidence on customers, competitors, and the industry so the firm can judge position and prospects.
-
-On this stem (positioning / product line): tailored primary research such as hiring an institute to conduct field interviews supports informed decisions in the specialty coffee roasting market.
-
-Under that definition the assertion is the right description of the situation.
-
-The statement is true.
-', 'TRUE — Secondary information reuses research already produced by others (government, associations, published reports). It is often cheaper or free, but usually more general and less tailored.
-
-On this stem (secondary information): trade statistics reused for the specialty coffee roasting segment are secondary market information.
-
-Nothing in the wording contradicts that marketing test, so the claim is sound.
-
-The statement is true.
-', 'TRUE — Customer analysis asks who buys (and who influences), what buyers do with the product, where and when they buy, and why they prefer one offer — guiding distribution, seasonality, development, and share strategy.
-
-Where, when, and why dimensions apply alongside other customer analysis in specialty coffee roasting.
-
-Nothing in the wording contradicts that marketing test, so the claim is sound.
-
-The statement is true.
-'] WHERE case_id = 'CASE 5.5.71' AND tier = 'full';
-UPDATE public.economics_cases SET tactical_explanations = ARRAY['TRUE — Absolute market share is the firm''s sales divided by total market volume (all businesses'' sales of the product), usually shown as a percentage.
-
-Take firm sales 176 over market volume 880:
-
-$$
-\frac{176}{880} = 0.2
-$$
-
-Convert to a percentage:
-
-$$
-0.2 \times 100 = 20\%
-$$
-
-That is the absolute share the statement reports (20%).
-
-The statement is true.
-', 'TRUE — Relative market share equals the firm''s absolute share divided by the largest competitor''s absolute share — a pure ratio, not a percentage of the whole market.
-
-With own share 20% and leader share 60%:
-
-$$
-\frac{20}{60} = 0.3333
-$$
-
-That matches the stated relative share of about 0.33.
-
-The statement is true.
-', 'TRUE — Customer analysis asks who buys (and who influences), what buyers do with the product, where and when they buy, and why they prefer one offer — guiding distribution, seasonality, development, and share strategy.
-
-Unconverted buyers keep market potential above volume in specialty coffee roasting.
-
-Nothing in the wording contradicts that marketing test, so the claim is sound.
-
-The statement is true.
-', 'TRUE — Market size/volume is total sales of all firms (value or quantity). Market potential adds still-unserved buyers; a firm''s sales potential exceeds its current sales volume when further gains are possible.
-
-On this stem (growth): sales potential includes room beyond current volume for a specialty coffee roasting supplier.
-
-Nothing in the wording contradicts that marketing test, so the claim is sound.
-
-The statement is true.
-', 'TRUE — Primary market research collects new data for the firm''s own questions — questionnaires, interviews, online surveys, or studies run by a research institute — tailored but often costly.
-
-On this stem (positioning / product line): tailored primary research such as designing a primary study around channel preferences supports informed decisions in the renewable-energy inverters market.
-
-The sentence therefore reports the concept accurately for this case.
-
-The statement is true.
-'] WHERE case_id = 'CASE 5.5.72' AND tier = 'full';
-UPDATE public.economics_cases SET tactical_explanations = ARRAY['TRUE — Secondary information reuses research already produced by others (government, associations, published reports). It is often cheaper or free, but usually more general and less tailored.
-
-On this stem (secondary information): trade statistics reused for the renewable-energy inverters segment are secondary market information.
-
-The sentence therefore reports the concept accurately for this case.
-
-The statement is true.
-', 'TRUE — Customer analysis asks who buys (and who influences), what buyers do with the product, where and when they buy, and why they prefer one offer — guiding distribution, seasonality, development, and share strategy.
-
-Where, when, and why dimensions apply alongside other customer analysis in renewable-energy inverters.
-
-The sentence therefore reports the concept accurately for this case.
-
-The statement is true.
-', 'FALSE — Primary market research collects new data for the firm''s own questions — questionnaires, interviews, online surveys, or studies run by a research institute — tailored but often costly.
-
-On this stem (primary market research): analysis costs are part of primary research expense.
-
-The mislabelled category or reversed comparison is enough to reject the claim.
-
-The statement is false.
-', 'TRUE — Absolute market share is the firm''s sales divided by total market volume (all businesses'' sales of the product), usually shown as a percentage.
-
-Take firm sales 193 over market volume 1,158:
-
-$$
-\frac{193}{1,158} = 0.166667
-$$
-
-Convert to a percentage:
-
-$$
-0.166667 \times 100 = 16.67\%
-$$
-
-That is the absolute share the statement reports (16.67%).
-
-The statement is true.
-', 'TRUE — Relative market share equals the firm''s absolute share divided by the largest competitor''s absolute share — a pure ratio, not a percentage of the whole market.
-
-With own share 16.7% and leader share 33.4%:
-
-$$
-\frac{16.7}{33.4} = 0.5
-$$
-
-A relative share of 0.5 means the firm holds half the leader''s percentage of the market — not a 50% absolute share, and not half of a geographic area.
-
-That matches the stated relative share of 0.5.
-
-The statement is true.
-'] WHERE case_id = 'CASE 5.5.73' AND tier = 'full';
-UPDATE public.economics_cases SET tactical_explanations = ARRAY['FALSE — Secondary information reuses research already produced by others (government, associations, published reports). It is often cheaper or free, but usually more general and less tailored.
-
-On this stem (computer): recording method does not make interviews secondary.
-
-Swap in the textbook criterion and the sentence no longer describes the case.
-
-The statement is false.
-', 'TRUE — Customer analysis asks who buys (and who influences), what buyers do with the product, where and when they buy, and why they prefer one offer — guiding distribution, seasonality, development, and share strategy.
-
-Unconverted buyers keep market potential above volume in renewable-energy inverters.
-
-The sentence therefore reports the concept accurately for this case.
-
-The statement is true.
-', 'FALSE — Secondary information reuses research already produced by others (government, associations, published reports). It is often cheaper or free, but usually more general and less tailored.
-
-Self-completion online surveys are still primary collection.
-
-The mislabelled category or reversed comparison is enough to reject the claim.
-
-The statement is false.
-', 'TRUE — Market size/volume is total sales of all firms (value or quantity). Market potential adds still-unserved buyers; a firm''s sales potential exceeds its current sales volume when further gains are possible.
-
-On this stem (growth): sales potential includes room beyond current volume for a renewable-energy inverters supplier.
-
-The sentence therefore reports the concept accurately for this case.
-
-The statement is true.
-', 'FALSE — Primary market research collects new data for the firm''s own questions — questionnaires, interviews, online surveys, or studies run by a research institute — tailored but often costly.
-
-Prior agency research is secondary for later users.
-
-The mislabelled category or reversed comparison is enough to reject the claim.
-
-The statement is false.
-'] WHERE case_id = 'CASE 5.5.74' AND tier = 'full';
-UPDATE public.economics_cases SET tactical_explanations = ARRAY['TRUE — Market research supplies evidence on customers, competitors, and the industry so the firm can judge position and prospects.
-
-Procurement managers as customers align with business-to-business classification in who-customer analysis.
-
-Nothing in the wording contradicts that marketing test, so the claim is sound.
-
-The statement is true.
-', 'FALSE — Market research supplies evidence on customers, competitors, and the industry so the firm can judge position and prospects.
-
-On this stem (product line): association research is typically general secondary information.
-
-Swap in the textbook criterion and the sentence no longer describes the case.
-
-The statement is false.
-', 'FALSE — Market research supplies evidence on customers, competitors, and the industry so the firm can judge position and prospects.
-
-The chapter distinguishes absolute and relative market share.
-
-The mislabelled category or reversed comparison is enough to reject the claim.
-
-The statement is false.
-', 'TRUE — Primary market research collects new data for the firm''s own questions — questionnaires, interviews, online surveys, or studies run by a research institute — tailored but often costly.
-
-On this stem (brand): why and what dimensions can be explored with procurement managers in primary research.
-
-The sentence therefore reports the concept accurately for this case.
-
-The statement is true.
-', 'FALSE — Relative market share equals the firm''s market share divided by the largest competitor''s market share, putting own performance in competitive context.
-
-On this stem (market share): trailing the leader implies relative share below one.
-
-Those restricting words stretch a limited idea past what marketing allows.
-
-The statement is false.
-'] WHERE case_id = 'CASE 5.5.75' AND tier = 'full';
+The statement is false.'] WHERE case_id = 'CASE 5.5.75' AND tier = 'full';

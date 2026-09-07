@@ -1,1513 +1,646 @@
 -- Update expanded explanations for 6.1-part3 (25 cases).
 -- Safe to re-run: only updates tactical_explanations.
 
-UPDATE public.economics_cases SET tactical_explanations = ARRAY['TRUE — The balance sheet identity is Assets = Liabilities + Equity.
+UPDATE public.economics_cases SET tactical_explanations = ARRAY['The income statement links to the balance sheet via retained earnings.
 
-The wording matches the relevant rule for "Liquidity From the Balance Sheet 51". The balance sheet identity is Assets = Liabilities + Equity. Classification follows intended use and timing: non-current vs current assets and liabilities; inventory is held for sale; fixed assets are used in operations beyond one year; equity is the owners'' residual claim and is not a scheduled debt repayment. Applied here: "Profit for the year increases equity through retained earnings, while a loss decreases equity."
+That is exactly what the claim asserts, so the wording survives a careful check against the standard idea.
 
-The statement is true.', 'TRUE — The current ratio is the standard liquidity cover of current assets over current liabilities.
+The statement is true.', 'Current assets = 369
 
-Name the identity in words: current ratio = current assets ÷ current liabilities.
+Current liabilities gather the short-term claims:
 
-Build current assets and current liabilities from the extract:
+Current liabilities = 151
 
-$$
-CA = 160 + 115 + 94 = 369
-$$
+Current ratio = 369 / 151 ≈ 2.44
 
-$$
-CL = 85 + 66 = 151
-$$
+The claim says the ratio exceeds 1.67. We have about 2.44, which matches that comparison.
 
-$$
-\text{Current ratio} = \frac{369}{151} = 2.4437
-$$
+The statement is true.', 'Working capital = current assets minus current liabilities.
 
-Claimed: exceeds 1.67. Actual 2.44.
+369 - 151 = 218
 
-Reading the arithmetic against the claim: actual current ratio 2.44 versus ''exceeds 1.67'' so the statement holds.
+The claim cites 218. We have 218, so the figures line up.
 
-The statement is true.', 'TRUE — Working capital is the euro surplus (or deficit) of current assets over current liabilities on this balance sheet.
+The statement is true.', 'Acid-test ratio ≈ 1.38.
 
-Name the identity in words: working capital = current assets − current liabilities.
+That is exactly what the claim asserts, so the wording survives a careful check against the standard idea.
 
-From the extract, current assets total 369 and current liabilities total 151:
+The statement is true.', 'Current assets = 369
 
-$$
-WC = CA - CL
-$$
+Current liabilities gather the short-term claims:
 
-$$
-CA = 369, \quad CL = 151
-$$
+Current liabilities = 151
 
-$$
-WC = 369 - 151 = 218
-$$
+Current ratio = 369 / 151 ≈ 2.44
 
-The statement cites working capital of €218 thousand and that it is positive. Calculated WC is 218, which is positive.
-
-Reading the arithmetic against the claim: WC = 218 is positive as claimed so the statement holds.
-
-The statement is true.', 'TRUE — The acid-test (quick) ratio is a stricter liquidity test: inventory is removed from current assets before dividing by current liabilities.
-
-Name the identity in words: acid-test ratio = (current assets − inventory) ÷ current liabilities.
-
-$$
-CA = 369, \quad \text{Inventory} = 160, \quad CL = 151
-$$
-
-$$
-CA - \text{Inventory} = 369 - 160 = 209
-$$
-
-$$
-\text{Acid-test} = \frac{209}{151} = 1.3841
-$$
-
-Threshold: more than 0.67. Actual 1.38.
-
-Reading the arithmetic against the claim: acid-test 1.38 is more than 0.67 so the statement holds.
-
-The statement is true.', 'FALSE — The current ratio is the standard liquidity cover of current assets over current liabilities.
-
-Name the identity in words: current ratio = current assets ÷ current liabilities.
-
-Build current assets and current liabilities from the extract:
-
-$$
-CA = 160 + 115 + 94 = 369
-$$
-
-$$
-CL = 85 + 66 = 151
-$$
-
-$$
-\text{Current ratio} = \frac{369}{151} = 2.4437
-$$
-
-Claimed: is below 0.62. Actual 2.44.
-
-Reading the arithmetic against the claim: actual current ratio 2.44 versus ''is below 0.62'' so the statement does not hold.
+The claim says the ratio below 0.62. We have about 2.44, which does not match that comparison.
 
 The statement is false.'] WHERE case_id = 'CASE 6.1.051' AND tier = 'full';
-UPDATE public.economics_cases SET tactical_explanations = ARRAY['TRUE — The balance sheet identity is Assets = Liabilities + Equity.
+UPDATE public.economics_cases SET tactical_explanations = ARRAY['The income statement links to the balance sheet via retained earnings.
 
-The wording matches the relevant rule for "Gearing From Comparative Figures 52". The balance sheet identity is Assets = Liabilities + Equity. Classification follows intended use and timing: non-current vs current assets and liabilities; inventory is held for sale; fixed assets are used in operations beyond one year; equity is the owners'' residual claim and is not a scheduled debt repayment. Applied here: "Profit for the year increases equity through retained earnings, while a loss decreases equity."
+That is exactly what the claim asserts, so the wording survives a careful check against the standard idea.
 
-The statement is true.', 'TRUE — Non-current liabilities are the long-term funding claims; here they are long-term bank loan plus bonds payable, compared with total equity.
+The statement is true.', 'Non-current liabilities are about 136.8% of equity in year 1.
 
-Name the identity in words: NCL-to-equity share = (long-term bank loan + bonds payable) ÷ total equity.
+That is exactly what the claim asserts, so the wording survives a careful check against the standard idea.
 
-$$
-\text{NCL} = 446 + 52 = 498
-$$
+The statement is true.', 'Total equity changed by about 15.1% between the two years.
 
-$$
-\text{Equity} = 364
-$$
+Because that detail fails, the whole statement fails even if the topic word looks familiar.
 
-$$
-\frac{498}{364} = 136.8\%
-$$
+The statement is false.', 'Non-current assets are about 70.8% of total assets in year 2.
 
-Threshold: more than 63.6% in Year 1. Actual 136.8%.
+That is exactly what the claim asserts, so the wording survives a careful check against the standard idea.
 
-Reading the arithmetic against the claim: Year 1 NCL/equity is 136.8%, which is consistent with ''more than 63.6%'' so the statement holds.
+The statement is true.', 'Trade payables are a current liability regardless of the amount.
 
-The statement is true.', 'FALSE — Use the case figures for Total equity and compute the percentage change between Year 1 and Year 2 before comparing it with the claimed threshold.
-
-From the extract:
-
-$$
-\text{Total equity}_{\text{Y1}} = 364, \quad
-\text{Total equity}_{\text{Y2}} = 419
-$$
-
-$$
-\frac{419 - 364}{364} = 15.1\%
-$$
-
-$$
-15.1\% \le  23.7\%
-$$
-
-The actual growth is 15.1%, which is not more than the claimed 23.7%.
-
-The statement is false.', 'TRUE — This is a composition claim: express Non-current assets as a percentage of total assets in Year 2.
-
-Name the identity in words: Non-current assets share of total assets in Year 2 = Non-current assets ÷ total assets in Year 2.
-
-From the extract, Non-current assets = 821 and total assets in Year 2 = 1,160. Plug the figures step by step:
-
-$$
-Share = \frac{\text{Non-current assets}}{\text{total assets in Year 2}}
-$$
-
-$$
-Share = \frac{821}{1,160}
-$$
-
-$$
-Share = 70.8\%
-$$
-
-Threshold: more than 56.2%. Actual 70.8%.
-
-Reading the arithmetic against the claim: actual share 70.8% matches ''more than 56.2%'' so the statement holds.
-
-The statement is true.', 'TRUE — Current liabilities are due within one year or the operating cycle.
-
-Trade payables to suppliers are routinely short-term; the euro amount does not change that rule.
-
-Using the stem facts: "Trade payables of €148 thousand in Year 2 are correctly classified as a current liability, since suppliers are normally expected to be paid within one year."
-
-The balance sheet identity is Assets = Liabilities + Equity. Classification follows intended use and timing: non-current vs current assets and liabilities; inventory is held for sale; fixed assets are used in operations beyond one year; equity is the owners'' residual claim and is not a scheduled debt repayment.
+That is exactly what the claim asserts, so the wording survives a careful check against the standard idea.
 
 The statement is true.'] WHERE case_id = 'CASE 6.1.052' AND tier = 'full';
-UPDATE public.economics_cases SET tactical_explanations = ARRAY['TRUE — The balance sheet identity is Assets = Liabilities + Equity.
+UPDATE public.economics_cases SET tactical_explanations = ARRAY['These are textbook advantages of equity finance.
 
-The wording matches the relevant rule for "Two-Year Balance Sheet Review 53". The balance sheet identity is Assets = Liabilities + Equity. Classification follows intended use and timing: non-current vs current assets and liabilities; inventory is held for sale; fixed assets are used in operations beyond one year; equity is the owners'' residual claim and is not a scheduled debt repayment. Applied here: "Equity usually does not have to be repaid on a fixed schedule, helps the business stay relatively independent from creditors, and cushions losses."
+That is exactly what the claim asserts, so the wording survives a careful check against the standard idea.
 
-The statement is true.', 'TRUE — Non-current liabilities are the long-term funding claims; here they are long-term bank loan plus bonds payable, compared with total equity.
+The statement is true.', 'Non-current liabilities are about 36.6% of equity in Year 2.
 
-Name the identity in words: NCL-to-equity share = (long-term bank loan + bonds payable) ÷ total equity.
+That is exactly what the claim asserts, so the wording survives a careful check against the standard idea.
 
-$$
-\text{NCL} = 208 + 79 = 287
-$$
+The statement is true.', 'Long-term financing covers non-current assets by about 50.6% in year 1.
 
-$$
-\text{Equity} = 784
-$$
+That is exactly what the claim asserts, so the wording survives a careful check against the standard idea.
 
-$$
-\frac{287}{784} = 36.6\%
-$$
+The statement is true.', 'Trade payables are a current liability regardless of the amount.
 
-Threshold: less than 60.5% in Year 2. Actual 36.6%.
+That is exactly what the claim asserts, so the wording survives a careful check against the standard idea.
 
-Reading the arithmetic against the claim: Year 2 NCL/equity is 36.6%, which is consistent with ''less than 60.5%'' so the statement holds.
+The statement is true.', 'Equity equals assets minus liabilities.
 
-The statement is true.', 'TRUE — Long-term financing is equity plus non-current liabilities; the claim compares that pool with non-current assets.
-
-Name the identity in words: surplus = (equity + non-current liabilities) ÷ non-current assets − 1.
-
-$$
-\text{Equity} + \text{NCL} = 705 + 250 = 955
-$$
-
-$$
-\text{NCA} = 634
-$$
-
-$$
-\frac{955}{634} - 1 = 50.6\%
-$$
-
-Threshold: more than 23.1%. Actual surplus 50.6%.
-
-Reading the arithmetic against the claim: the surplus is 50.6%, which exceeds 23.1% so the statement holds.
-
-The statement is true.', 'TRUE — Current liabilities are due within one year or the operating cycle.
-
-Trade payables to suppliers are routinely short-term; the euro amount does not change that rule.
-
-Using the stem facts: "Trade payables of €73 thousand in Year 2 are correctly classified as a current liability, since suppliers are normally expected to be paid within one year."
-
-The balance sheet identity is Assets = Liabilities + Equity. Classification follows intended use and timing: non-current vs current assets and liabilities; inventory is held for sale; fixed assets are used in operations beyond one year; equity is the owners'' residual claim and is not a scheduled debt repayment.
-
-The statement is true.', 'TRUE — The balance sheet identity is Assets = Liabilities + Equity.
-
-The wording matches the relevant rule for "Two-Year Balance Sheet Review 53". The balance sheet identity is Assets = Liabilities + Equity. Classification follows intended use and timing: non-current vs current assets and liabilities; inventory is held for sale; fixed assets are used in operations beyond one year; equity is the owners'' residual claim and is not a scheduled debt repayment. Applied here: "Owner''s equity is the residual claim remaining after liabilities are deducted from assets, and it is the portion of assets not financed by debt."
+That is exactly what the claim asserts, so the wording survives a careful check against the standard idea.
 
 The statement is true.'] WHERE case_id = 'CASE 6.1.053' AND tier = 'full';
-UPDATE public.economics_cases SET tactical_explanations = ARRAY['FALSE — The balance sheet identity is Assets = Liabilities + Equity.
+UPDATE public.economics_cases SET tactical_explanations = ARRAY['Current liabilities are due within one year; longer debts are non-current.
 
-Absolute or misapplied wording conflicts with the rule for "Liquidity From the Balance Sheet 54". The balance sheet identity is Assets = Liabilities + Equity. Classification follows intended use and timing: non-current vs current assets and liabilities; inventory is held for sale; fixed assets are used in operations beyond one year; equity is the owners'' residual claim and is not a scheduled debt repayment. Rejected claim: "Current liabilities are debts that must be repaid after more than one year."
+Because that detail fails, the whole statement fails even if the topic word looks familiar.
 
-The statement is false.', 'TRUE — The current ratio is the standard liquidity cover of current assets over current liabilities.
+The statement is false.', 'Current assets gather the short-term asset lines:
 
-Name the identity in words: current ratio = current assets ÷ current liabilities.
+Inventory (209) + Trade receivables (100) + Cash and cash equivalents (80)
+= 389
 
-Build current assets and current liabilities from the extract:
+Current liabilities gather the short-term claims:
 
-$$
-CA = 209 + 100 + 80 = 389
-$$
+Trade payables (85) + Bank overdraft (49)
+= 134
 
-$$
-CL = 85 + 49 = 134
-$$
+Current ratio = 389 / 134 ≈ 2.90
 
-$$
-\text{Current ratio} = \frac{389}{134} = 2.9030
-$$
+The claim says the ratio exceeds 1.76. We have about 2.90, which matches that comparison.
 
-Claimed: exceeds 1.76. Actual 2.90.
+The statement is true.', 'Working capital = current assets minus current liabilities.
 
-Reading the arithmetic against the claim: actual current ratio 2.90 versus ''exceeds 1.76'' so the statement holds.
+389 - 134 = 255
 
-The statement is true.', 'TRUE — Working capital is the euro surplus (or deficit) of current assets over current liabilities on this balance sheet.
+The claim cites 255. We have 255, so the figures line up.
 
-Name the identity in words: working capital = current assets − current liabilities.
+The statement is true.', 'Acid-test ratio ≈ 1.34.
 
-From the extract, current assets total 389 and current liabilities total 134:
+That is exactly what the claim asserts, so the wording survives a careful check against the standard idea.
 
-$$
-WC = CA - CL
-$$
+The statement is true.', 'Current assets gather the short-term asset lines:
 
-$$
-CA = 389, \quad CL = 134
-$$
+Inventory (209) + Trade receivables (100) + Cash and cash equivalents (80)
+= 389
 
-$$
-WC = 389 - 134 = 255
-$$
+Current liabilities gather the short-term claims:
 
-The statement cites working capital of €255 thousand and that it is positive. Calculated WC is 255, which is positive.
+Trade payables (85) + Bank overdraft (49)
+= 134
 
-Reading the arithmetic against the claim: WC = 255 is positive as claimed so the statement holds.
+Current ratio = 389 / 134 ≈ 2.90
 
-The statement is true.', 'TRUE — The acid-test (quick) ratio is a stricter liquidity test: inventory is removed from current assets before dividing by current liabilities.
-
-Name the identity in words: acid-test ratio = (current assets − inventory) ÷ current liabilities.
-
-$$
-CA = 389, \quad \text{Inventory} = 209, \quad CL = 134
-$$
-
-$$
-CA - \text{Inventory} = 389 - 209 = 180
-$$
-
-$$
-\text{Acid-test} = \frac{180}{134} = 1.3433
-$$
-
-Threshold: more than 1.09. Actual 1.34.
-
-Reading the arithmetic against the claim: acid-test 1.34 is more than 1.09 so the statement holds.
-
-The statement is true.', 'FALSE — The current ratio is the standard liquidity cover of current assets over current liabilities.
-
-Name the identity in words: current ratio = current assets ÷ current liabilities.
-
-Build current assets and current liabilities from the extract:
-
-$$
-CA = 209 + 100 + 80 = 389
-$$
-
-$$
-CL = 85 + 49 = 134
-$$
-
-$$
-\text{Current ratio} = \frac{389}{134} = 2.9030
-$$
-
-Claimed: is below 0.61. Actual 2.90.
-
-Reading the arithmetic against the claim: actual current ratio 2.90 versus ''is below 0.61'' so the statement does not hold.
+The claim says the ratio below 0.61. We have about 2.90, which does not match that comparison.
 
 The statement is false.'] WHERE case_id = 'CASE 6.1.054' AND tier = 'full';
-UPDATE public.economics_cases SET tactical_explanations = ARRAY['TRUE — The balance sheet identity is Assets = Liabilities + Equity.
+UPDATE public.economics_cases SET tactical_explanations = ARRAY['Resale intent places the printing press in inventory, a current-asset category.
 
-The wording matches the relevant rule for "Equity as a Buffer for Creditors". The balance sheet identity is Assets = Liabilities + Equity. Classification follows intended use and timing: non-current vs current assets and liabilities; inventory is held for sale; fixed assets are used in operations beyond one year; equity is the owners'' residual claim and is not a scheduled debt repayment. Applied here: "When a printing press is acquired to be resold rather than used, it belongs among current assets as inventory."
+That is exactly what the claim asserts, so the wording survives a careful check against the standard idea.
 
-The statement is true.', 'TRUE — The balance sheet identity is Assets = Liabilities + Equity.
+The statement is true.', 'Multi-period operational benefit qualifies the printing press as a tangible fixed asset.
 
-The claim states: A printing press bought by a business to support its own daily operations is a tangible fixed asset. The reason given — it delivers benefit across several accounting periods. — fits the chapter rule. The balance sheet identity is Assets = Liabilities + Equity. Classification follows intended use and timing: non-current vs current assets and liabilities; inventory is held for sale; fixed assets are used in operations beyond one year; equity is the owners'' residual claim and is not a scheduled debt repayment.
+That is exactly what the claim asserts, so the wording survives a careful check against the standard idea.
 
-The statement is true.', 'FALSE — Balance-sheet classification follows intended use and the current/non-current split, not physical appearance alone.
+The statement is true.', 'Long-term operational use makes the laptop computer a non-current tangible asset, not inventory.
 
-Inventory is stock held for sale, not every physical item owned. Equipment used in operations is a non-current tangible asset.
+Because that detail fails, the whole statement fails even if the topic word looks familiar.
 
-Using the stem facts: "A laptop computer used by an operating business is classified as inventory because inventory can include any physical equipment a business owns."
+The statement is false.', 'Resale intent, not the dealer''s status as a business, places the laptop computer in inventory rather than among non-current assets.
 
-The balance sheet identity is Assets = Liabilities + Equity. Classification follows intended use and timing: non-current vs current assets and liabilities; inventory is held for sale; fixed assets are used in operations beyond one year; equity is the owners'' residual claim and is not a scheduled debt repayment.
+Because that detail fails, the whole statement fails even if the topic word looks familiar.
 
-The statement is false.', 'FALSE — Balance-sheet classification follows intended use and the current/non-current split, not physical appearance alone.
+The statement is false.', 'Stock awaiting sale remains inventory, not a fixed asset, for the dealer holding it.
 
-Resale intent makes dealer stock inventory (current). Being a business does not turn resale stock into a non-current operating asset.
-
-The statement is false.', 'TRUE — The balance sheet identity is Assets = Liabilities + Equity.
-
-The wording matches the relevant rule for "Equity as a Buffer for Creditors". The balance sheet identity is Assets = Liabilities + Equity. Classification follows intended use and timing: non-current vs current assets and liabilities; inventory is held for sale; fixed assets are used in operations beyond one year; equity is the owners'' residual claim and is not a scheduled debt repayment. Applied here: "A printing press that a dealer displays for sale is not a fixed asset of that dealer."
+That is exactly what the claim asserts, so the wording survives a careful check against the standard idea.
 
 The statement is true.'] WHERE case_id = 'CASE 6.1.055' AND tier = 'full';
-UPDATE public.economics_cases SET tactical_explanations = ARRAY['TRUE — Balance-sheet classification follows intended use and the current/non-current split, not physical appearance alone.
+UPDATE public.economics_cases SET tactical_explanations = ARRAY['Continued operational use beyond one year makes the conveyor belt a non-current tangible asset.
 
-Operating use beyond one year meets the non-current tangible (fixed) asset definition.
+That is exactly what the claim asserts, so the wording survives a careful check against the standard idea.
 
-Using the stem facts: "A conveyor belt kept in service by an operating business for more than one year is classified as a non-current tangible asset."
+The statement is true.', 'Classification of the laptop computer depends on whether it is used or held for resale, so identical items can differ across balance sheets.
 
-The balance sheet identity is Assets = Liabilities + Equity. Classification follows intended use and timing: non-current vs current assets and liabilities; inventory is held for sale; fixed assets are used in operations beyond one year; equity is the owners'' residual claim and is not a scheduled debt repayment.
+The absolute wording "always" turns a familiar idea into an overclaim. One ordinary counterexample is enough to reject it.
 
-The statement is true.', 'FALSE — Balance-sheet classification follows intended use and the current/non-current split, not physical appearance alone.
+The statement is false.', 'Intended use, not purchase price, drives the non-current classification of the laptop computer.
 
-Classification follows how the reporting entity holds the item (use vs resale), not physical form alone.
+Because that detail fails, the whole statement fails even if the topic word looks familiar.
 
-Using the stem facts: "The same laptop computer must always be classified identically on every balance sheet regardless of how it is held."
+The statement is false.', 'Held for resale rather than use, the conveyor belt counts as inventory within current assets.
 
-The balance sheet identity is Assets = Liabilities + Equity. Classification follows intended use and timing: non-current vs current assets and liabilities; inventory is held for sale; fixed assets are used in operations beyond one year; equity is the owners'' residual claim and is not a scheduled debt repayment.
+That is exactly what the claim asserts, so the wording survives a careful check against the standard idea.
 
-The statement is false.', 'FALSE — Balance-sheet classification follows intended use and the current/non-current split, not physical appearance alone.
+The statement is true.', 'Resale intent keeps the laptop computer in inventory as a current asset regardless of how long it stays unsold.
 
-Price affects measurement; classification between fixed asset and inventory follows intended use.
-
-Using the stem facts: "Classifying a laptop computer as a non-current asset depends mainly on its purchase price rather than on management''s intended use."
-
-The balance sheet identity is Assets = Liabilities + Equity. Classification follows intended use and timing: non-current vs current assets and liabilities; inventory is held for sale; fixed assets are used in operations beyond one year; equity is the owners'' residual claim and is not a scheduled debt repayment.
-
-The statement is false.', 'TRUE — The balance sheet identity is Assets = Liabilities + Equity.
-
-The wording matches the relevant rule for "Why Equity Does Not Require Repayment". The balance sheet identity is Assets = Liabilities + Equity. Classification follows intended use and timing: non-current vs current assets and liabilities; inventory is held for sale; fixed assets are used in operations beyond one year; equity is the owners'' residual claim and is not a scheduled debt repayment. Applied here: "A conveyor belt held by a dealer for resale to customers is classified as inventory, a current asset, rather than a non-current asset."
-
-The statement is true.', 'FALSE — Balance-sheet classification follows intended use and the current/non-current split, not physical appearance alone.
-
-Resale intent puts the item in inventory from acquisition; time unsold does not make it non-current.
-
-Using the stem facts: "A laptop computer acquired for resale still counts among non-current assets as long as it remains unsold for several months."
-
-The balance sheet identity is Assets = Liabilities + Equity. Classification follows intended use and timing: non-current vs current assets and liabilities; inventory is held for sale; fixed assets are used in operations beyond one year; equity is the owners'' residual claim and is not a scheduled debt repayment.
+Because that detail fails, the whole statement fails even if the topic word looks familiar.
 
 The statement is false.'] WHERE case_id = 'CASE 6.1.056' AND tier = 'full';
-UPDATE public.economics_cases SET tactical_explanations = ARRAY['FALSE — The balance sheet identity is Assets = Liabilities + Equity.
+UPDATE public.economics_cases SET tactical_explanations = ARRAY['That portion is liabilities; equity is the residual not financed by debt.
 
-Absolute or misapplied wording conflicts with the rule for "Liquidity From the Balance Sheet 57". The balance sheet identity is Assets = Liabilities + Equity. Classification follows intended use and timing: non-current vs current assets and liabilities; inventory is held for sale; fixed assets are used in operations beyond one year; equity is the owners'' residual claim and is not a scheduled debt repayment. Rejected claim: "Owner''s equity is the portion of assets financed by bank loans and trade creditors."
+Because that detail fails, the whole statement fails even if the topic word looks familiar.
 
-The statement is false.', 'FALSE — The current ratio is the standard liquidity cover of current assets over current liabilities.
+The statement is false.', 'Current assets = 454
 
-Name the identity in words: current ratio = current assets ÷ current liabilities.
+Current liabilities gather the short-term claims:
 
-Build current assets and current liabilities from the extract:
+Current liabilities = 277
 
-$$
-CA = 222 + 143 + 89 = 454
-$$
+Current ratio = 454 / 277 ≈ 1.64
 
-$$
-CL = 205 + 72 = 277
-$$
+The claim says the ratio exceeds 1.74. We have about 1.64, which does not match that comparison.
 
-$$
-\text{Current ratio} = \frac{454}{277} = 1.6390
-$$
+The statement is false.', 'Current assets = 454
 
-Claimed: exceeds 1.74. Actual 1.64.
+Current liabilities gather the short-term claims:
 
-Reading the arithmetic against the claim: actual current ratio 1.64 versus ''exceeds 1.74'' so the statement does not hold.
+Current liabilities = 277
 
-The statement is false.', 'FALSE — The current ratio is the standard liquidity cover of current assets over current liabilities.
+Current ratio = 454 / 277 ≈ 1.64
 
-Name the identity in words: current ratio = current assets ÷ current liabilities.
+The claim says the ratio below 1.03. We have about 1.64, which does not match that comparison.
 
-Build current assets and current liabilities from the extract:
+The statement is false.', 'Acid-test ratio ≈ 0.84.
 
-$$
-CA = 222 + 143 + 89 = 454
-$$
+That is exactly what the claim asserts, so the wording survives a careful check against the standard idea.
 
-$$
-CL = 205 + 72 = 277
-$$
+The statement is true.', 'Equity ratio = total equity / total assets.
 
-$$
-\text{Current ratio} = \frac{454}{277} = 1.6390
-$$
+668 / 1183 ≈ 56.5%
 
-Claimed: is below 1.03. Actual 1.64.
-
-Reading the arithmetic against the claim: actual current ratio 1.64 versus ''is below 1.03'' so the statement does not hold.
-
-The statement is false.', 'TRUE — The acid-test (quick) ratio is a stricter liquidity test: inventory is removed from current assets before dividing by current liabilities.
-
-Name the identity in words: acid-test ratio = (current assets − inventory) ÷ current liabilities.
-
-$$
-CA = 454, \quad \text{Inventory} = 222, \quad CL = 277
-$$
-
-$$
-CA - \text{Inventory} = 454 - 222 = 232
-$$
-
-$$
-\text{Acid-test} = \frac{232}{277} = 0.8375
-$$
-
-Threshold: more than 0.78. Actual 0.84.
-
-Reading the arithmetic against the claim: acid-test 0.84 is more than 0.78 so the statement holds.
-
-The statement is true.', 'FALSE — The equity ratio places equity against total assets so the financing structure can be judged on one balance sheet.
-
-Name the identity in words: equity ratio = equity ÷ total assets.
-
-From the extract, equity = 668 and total assets = 1,183. Plug the figures step by step:
-
-$$
-ER = \frac{\text{equity}}{\text{total assets}}
-$$
-
-$$
-ER = \frac{668}{1,183}
-$$
-
-$$
-ER = 56.5\%
-$$
-
-Claimed: is below 40.1%. Actual 56.5%.
-
-Reading the arithmetic against the claim: actual equity ratio 56.5% does not match ''is below 40.1%'' so the statement does not hold.
+The claim says the ratio below 40.1%. We have about 56.5%, which does not match that comparison.
 
 The statement is false.'] WHERE case_id = 'CASE 6.1.057' AND tier = 'full';
-UPDATE public.economics_cases SET tactical_explanations = ARRAY['FALSE — The balance sheet identity is Assets = Liabilities + Equity.
+UPDATE public.economics_cases SET tactical_explanations = ARRAY['Cash falls by the same amount as the software rises, so total assets stay unchanged.
 
-The claim states: Buying software with cash always increases total assets. The reason — a new asset is added without reducing any other asset. — does not support that label under the chapter definitions. The balance sheet identity is Assets = Liabilities + Equity. Classification follows intended use and timing: non-current vs current assets and liabilities; inventory is held for sale; fixed assets are used in operations beyond one year; equity is the owners'' residual claim and is not a scheduled debt repayment.
+The absolute wording "always" turns a familiar idea into an overclaim. One ordinary counterexample is enough to reject it.
 
-The statement is false.', 'TRUE — Use the case figures for Total equity and compute the percentage change between Year 1 and Year 2 before comparing it with the claimed threshold.
+The statement is false.', 'Total equity changed by about 32.5% between the two years.
 
-From the extract:
+That is exactly what the claim asserts, so the wording survives a careful check against the standard idea.
 
-$$
-\text{Total equity}_{\text{Y1}} = 289, \quad
-\text{Total equity}_{\text{Y2}} = 383
-$$
+The statement is true.', 'Total assets changed by about 15.5% between the two years.
 
-$$
-\frac{383 - 289}{289} = 32.5\%
-$$
+That is exactly what the claim asserts, so the wording survives a careful check against the standard idea.
 
-$$
-32.5\% > 21.4\%
-$$
+The statement is true.', 'Inventory changed by about 19.1% between the two years.
 
-The actual growth is 32.5%, which is more than the claimed 21.4%.
+Because that detail fails, the whole statement fails even if the topic word looks familiar.
 
-The statement is true.', 'TRUE — Use the case figures for Total assets and compute the percentage change between Year 1 and Year 2 before comparing it with the claimed threshold.
+The statement is false.', 'Trade payables changed by about 5.2% between the two years.
 
-From the extract:
-
-$$
-\text{Total assets}_{\text{Y1}} = 995, \quad
-\text{Total assets}_{\text{Y2}} = 1,149
-$$
-
-$$
-\frac{1,149 - 995}{995} = 15.5\%
-$$
-
-$$
-15.5\% > 9\%
-$$
-
-The actual growth is 15.5%, which is more than the claimed 9%.
-
-The statement is true.', 'FALSE — Use the case figures for Inventory and compute the percentage change between Year 1 and Year 2 before comparing it with the claimed threshold.
-
-From the extract:
-
-$$
-\text{Inventory}_{\text{Y1}} = 157, \quad
-\text{Inventory}_{\text{Y2}} = 187
-$$
-
-$$
-\frac{187 - 157}{157} = 19.1\%
-$$
-
-$$
-19.1\% \le  30.4\%
-$$
-
-The actual growth is 19.1%, which is not more than the claimed 30.4%.
-
-The statement is false.', 'FALSE — Use the case figures for Trade payables and compute the percentage change between Year 1 and Year 2 before comparing it with the claimed threshold.
-
-From the extract:
-
-$$
-\text{Trade payables}_{\text{Y1}} = 212, \quad
-\text{Trade payables}_{\text{Y2}} = 223
-$$
-
-$$
-\frac{223 - 212}{212} = 5.2\%
-$$
-
-$$
-5.2\% \le  16.3\%
-$$
-
-The actual growth is 5.2%, which is not more than the claimed 16.3%.
+Because that detail fails, the whole statement fails even if the topic word looks familiar.
 
 The statement is false.'] WHERE case_id = 'CASE 6.1.058' AND tier = 'full';
-UPDATE public.economics_cases SET tactical_explanations = ARRAY['FALSE — The balance sheet identity is Assets = Liabilities + Equity.
+UPDATE public.economics_cases SET tactical_explanations = ARRAY['That portion is liabilities; equity is the residual not financed by debt.
 
-Absolute or misapplied wording conflicts with the rule for "Two-Year Balance Sheet Review 59". The balance sheet identity is Assets = Liabilities + Equity. Classification follows intended use and timing: non-current vs current assets and liabilities; inventory is held for sale; fixed assets are used in operations beyond one year; equity is the owners'' residual claim and is not a scheduled debt repayment. Rejected claim: "Owner''s equity is the portion of assets financed by bank loans and trade creditors."
+Because that detail fails, the whole statement fails even if the topic word looks familiar.
 
-The statement is false.', 'FALSE — Use the case figures for Total equity and compute the percentage change between Year 1 and Year 2 before comparing it with the claimed threshold.
+The statement is false.', 'Total equity changed by about 10.9% between the two years.
 
-From the extract:
+Because that detail fails, the whole statement fails even if the topic word looks familiar.
 
-$$
-\text{Total equity}_{\text{Y1}} = 393, \quad
-\text{Total equity}_{\text{Y2}} = 436
-$$
+The statement is false.', 'Trade payables changed by about 14.5% between the two years.
 
-$$
-\frac{436 - 393}{393} = 10.9\%
-$$
+That is exactly what the claim asserts, so the wording survives a careful check against the standard idea.
 
-$$
-10.9\% \le  22.8\%
-$$
+The statement is true.', 'Total assets changed by about 9.8% between the two years.
 
-The actual growth is 10.9%, which is not more than the claimed 22.8%.
+Because that detail fails, the whole statement fails even if the topic word looks familiar.
 
-The statement is false.', 'TRUE — Use the case figures for Trade payables and compute the percentage change between Year 1 and Year 2 before comparing it with the claimed threshold.
+The statement is false.', 'Non-current liabilities are about 100.3% of equity in Year 1.
 
-From the extract:
-
-$$
-\text{Trade payables}_{\text{Y1}} = 193, \quad
-\text{Trade payables}_{\text{Y2}} = 221
-$$
-
-$$
-\frac{221 - 193}{193} = 14.5\%
-$$
-
-$$
-14.5\% > 10.4\%
-$$
-
-The actual growth is 14.5%, which is more than the claimed 10.4%.
-
-The statement is true.', 'FALSE — Use the case figures for Total assets and compute the percentage change between Year 1 and Year 2 before comparing it with the claimed threshold.
-
-From the extract:
-
-$$
-\text{Total assets}_{\text{Y1}} = 1,064, \quad
-\text{Total assets}_{\text{Y2}} = 1,168
-$$
-
-$$
-\frac{1,168 - 1,064}{1,064} = 9.8\%
-$$
-
-$$
-9.8\% \le  10.2\%
-$$
-
-The actual growth is 9.8%, which is not more than the claimed 10.2%.
-
-The statement is false.', 'TRUE — Non-current liabilities are the long-term funding claims; here they are long-term bank loan plus bonds payable, compared with total equity.
-
-Name the identity in words: NCL-to-equity share = (long-term bank loan + bonds payable) ÷ total equity.
-
-$$
-\text{NCL} = 339 + 55 = 394
-$$
-
-$$
-\text{Equity} = 393
-$$
-
-$$
-\frac{394}{393} = 100.3\%
-$$
-
-Threshold: more than 78.1% in Year 1. Actual 100.3%.
-
-Reading the arithmetic against the claim: Year 1 NCL/equity is 100.3%, which is consistent with ''more than 78.1%'' so the statement holds.
+That is exactly what the claim asserts, so the wording survives a careful check against the standard idea.
 
 The statement is true.'] WHERE case_id = 'CASE 6.1.059' AND tier = 'full';
-UPDATE public.economics_cases SET tactical_explanations = ARRAY['FALSE — Balance-sheet classification follows intended use and the current/non-current split, not physical appearance alone.
+UPDATE public.economics_cases SET tactical_explanations = ARRAY['Continued operational use makes the laptop computer a non-current asset; inventory is reserved for goods held for resale.
 
-Wear is handled by depreciating a fixed asset. Daily operating use supports non-current classification, not inventory.
+Because that detail fails, the whole statement fails even if the topic word looks familiar.
 
-Using the stem facts: "A laptop computer used daily in a business''s own operations should be recorded as inventory because it wears out over time."
+The statement is false.', 'A buyer intending to use the laptop computer in operations records it as a non-current asset, not inventory, after purchase.
 
-The balance sheet identity is Assets = Liabilities + Equity. Classification follows intended use and timing: non-current vs current assets and liabilities; inventory is held for sale; fixed assets are used in operations beyond one year; equity is the owners'' residual claim and is not a scheduled debt repayment.
+Because that detail fails, the whole statement fails even if the topic word looks familiar.
 
-The statement is false.', 'FALSE — Balance-sheet classification follows intended use and the current/non-current split, not physical appearance alone.
+The statement is false.', 'Intended use versus resale intent, not physical form, decides whether the conveyor belt is non-current or current.
 
-After sale, the buyer''s intent governs: use in operations → buyer''s non-current asset, not inventory.
+That is exactly what the claim asserts, so the wording survives a careful check against the standard idea.
 
-Using the stem facts: "Once a dealer sells a laptop computer from its stock, the buyer must continue to record it as inventory."
+The statement is true.', 'Long-term operational use makes the refrigerated van a non-current tangible asset, not inventory.
 
-The balance sheet identity is Assets = Liabilities + Equity. Classification follows intended use and timing: non-current vs current assets and liabilities; inventory is held for sale; fixed assets are used in operations beyond one year; equity is the owners'' residual claim and is not a scheduled debt repayment.
+Because that detail fails, the whole statement fails even if the topic word looks familiar.
 
-The statement is false.', 'TRUE — Balance-sheet classification follows intended use and the current/non-current split, not physical appearance alone.
+The statement is false.', 'Resale intent, not the dealer''s status as a business, places the refrigerated van in inventory rather than among non-current assets.
 
-Intended use decides the line: operations → non-current; held for sale → inventory.
-
-Using the stem facts: "The same conveyor belt may be a non-current asset for one business and inventory for another, depending on whether it is used or held for sale."
-
-The balance sheet identity is Assets = Liabilities + Equity. Classification follows intended use and timing: non-current vs current assets and liabilities; inventory is held for sale; fixed assets are used in operations beyond one year; equity is the owners'' residual claim and is not a scheduled debt repayment.
-
-The statement is true.', 'FALSE — Balance-sheet classification follows intended use and the current/non-current split, not physical appearance alone.
-
-Inventory is stock held for sale, not every physical item owned. Equipment used in operations is a non-current tangible asset.
-
-Using the stem facts: "A refrigerated van used by an operating business is classified as inventory because inventory can include any physical equipment a business owns."
-
-The balance sheet identity is Assets = Liabilities + Equity. Classification follows intended use and timing: non-current vs current assets and liabilities; inventory is held for sale; fixed assets are used in operations beyond one year; equity is the owners'' residual claim and is not a scheduled debt repayment.
-
-The statement is false.', 'FALSE — Balance-sheet classification follows intended use and the current/non-current split, not physical appearance alone.
-
-Resale intent makes dealer stock inventory (current). Being a business does not turn resale stock into a non-current operating asset.
+Because that detail fails, the whole statement fails even if the topic word looks familiar.
 
 The statement is false.'] WHERE case_id = 'CASE 6.1.060' AND tier = 'full';
-UPDATE public.economics_cases SET tactical_explanations = ARRAY['TRUE — Non-current assets are held for use beyond one accounting period.
+UPDATE public.economics_cases SET tactical_explanations = ARRAY['This matches the textbook distinction between non-current and current assets.
 
-Useful life beyond one year plus operating intent (not ordinary resale) define the category.
+That is exactly what the claim asserts, so the wording survives a careful check against the standard idea.
 
-Using the stem facts: "Non-current assets normally have a useful life of more than one year and are intended to be used in the business for longer than one year."
+The statement is true.', 'Current assets gather the short-term asset lines:
 
-The balance sheet identity is Assets = Liabilities + Equity. Classification follows intended use and timing: non-current vs current assets and liabilities; inventory is held for sale; fixed assets are used in operations beyond one year; equity is the owners'' residual claim and is not a scheduled debt repayment.
+Inventory (83) + Trade receivables (165) + Cash and cash equivalents (85)
+= 333
 
-The statement is true.', 'TRUE — The current ratio is the standard liquidity cover of current assets over current liabilities.
+Current liabilities gather the short-term claims:
 
-Name the identity in words: current ratio = current assets ÷ current liabilities.
+Trade payables (61) + Bank overdraft (27)
+= 88
 
-Build current assets and current liabilities from the extract:
+Current ratio = 333 / 88 ≈ 3.78
 
-$$
-CA = 83 + 165 + 85 = 333
-$$
+The claim says the ratio exceeds 1.88. We have about 3.78, which matches that comparison.
 
-$$
-CL = 61 + 27 = 88
-$$
+The statement is true.', 'Working capital = current assets minus current liabilities.
 
-$$
-\text{Current ratio} = \frac{333}{88} = 3.7841
-$$
+333 - 88 = 245
 
-Claimed: exceeds 1.88. Actual 3.78.
+The claim cites 245. We have 245, so the figures line up.
 
-Reading the arithmetic against the claim: actual current ratio 3.78 versus ''exceeds 1.88'' so the statement holds.
+The statement is true.', 'Current assets gather the short-term asset lines:
 
-The statement is true.', 'TRUE — Working capital is the euro surplus (or deficit) of current assets over current liabilities on this balance sheet.
+Inventory (83) + Trade receivables (165) + Cash and cash equivalents (85)
+= 333
 
-Name the identity in words: working capital = current assets − current liabilities.
+Current liabilities gather the short-term claims:
 
-From the extract, current assets total 333 and current liabilities total 88:
+Trade payables (61) + Bank overdraft (27)
+= 88
 
-$$
-WC = CA - CL
-$$
+Current ratio = 333 / 88 ≈ 3.78
 
-$$
-CA = 333, \quad CL = 88
-$$
+The claim says the ratio below 1.11. We have about 3.78, which does not match that comparison.
 
-$$
-WC = 333 - 88 = 245
-$$
+The statement is false.', 'Acid-test ratio ≈ 2.84.
 
-The statement cites working capital of €245 thousand and that it is positive. Calculated WC is 245, which is positive.
-
-Reading the arithmetic against the claim: WC = 245 is positive as claimed so the statement holds.
-
-The statement is true.', 'FALSE — The current ratio is the standard liquidity cover of current assets over current liabilities.
-
-Name the identity in words: current ratio = current assets ÷ current liabilities.
-
-Build current assets and current liabilities from the extract:
-
-$$
-CA = 83 + 165 + 85 = 333
-$$
-
-$$
-CL = 61 + 27 = 88
-$$
-
-$$
-\text{Current ratio} = \frac{333}{88} = 3.7841
-$$
-
-Claimed: is below 1.11. Actual 3.78.
-
-Reading the arithmetic against the claim: actual current ratio 3.78 versus ''is below 1.11'' so the statement does not hold.
-
-The statement is false.', 'TRUE — The acid-test (quick) ratio is a stricter liquidity test: inventory is removed from current assets before dividing by current liabilities.
-
-Name the identity in words: acid-test ratio = (current assets − inventory) ÷ current liabilities.
-
-$$
-CA = 333, \quad \text{Inventory} = 83, \quad CL = 88
-$$
-
-$$
-CA - \text{Inventory} = 333 - 83 = 250
-$$
-
-$$
-\text{Acid-test} = \frac{250}{88} = 2.8409
-$$
-
-Threshold: more than 1.37. Actual 2.84.
-
-Reading the arithmetic against the claim: acid-test 2.84 is more than 1.37 so the statement holds.
+That is exactly what the claim asserts, so the wording survives a careful check against the standard idea.
 
 The statement is true.'] WHERE case_id = 'CASE 6.1.061' AND tier = 'full';
-UPDATE public.economics_cases SET tactical_explanations = ARRAY['TRUE — Balance-sheet classification follows intended use and the current/non-current split, not physical appearance alone.
+UPDATE public.economics_cases SET tactical_explanations = ARRAY['An intention to use the conveyor belt over the long term is the deciding factor for non-current classification.
 
-Management intent to use in operations (typically >1 year) places the item among non-current assets.
+That is exactly what the claim asserts, so the wording survives a careful check against the standard idea.
 
-Using the stem facts: "Classifying a conveyor belt as a non-current asset depends on management''s intention to use it in operations rather than to sell it quickly."
+The statement is true.', 'Classification of the refrigerated van depends on whether it is used or held for resale, so identical items can differ across balance sheets.
 
-The balance sheet identity is Assets = Liabilities + Equity. Classification follows intended use and timing: non-current vs current assets and liabilities; inventory is held for sale; fixed assets are used in operations beyond one year; equity is the owners'' residual claim and is not a scheduled debt repayment.
+The absolute wording "always" turns a familiar idea into an overclaim. One ordinary counterexample is enough to reject it.
 
-The statement is true.', 'FALSE — Balance-sheet classification follows intended use and the current/non-current split, not physical appearance alone.
+The statement is false.', 'Intended use, not purchase price, drives the non-current classification of the refrigerated van.
 
-Classification follows how the reporting entity holds the item (use vs resale), not physical form alone.
+Because that detail fails, the whole statement fails even if the topic word looks familiar.
 
-Using the stem facts: "The same refrigerated van must always be classified identically on every balance sheet regardless of how it is held."
+The statement is false.', 'Resale intent keeps the refrigerated van in inventory as a current asset regardless of how long it stays unsold.
 
-The balance sheet identity is Assets = Liabilities + Equity. Classification follows intended use and timing: non-current vs current assets and liabilities; inventory is held for sale; fixed assets are used in operations beyond one year; equity is the owners'' residual claim and is not a scheduled debt repayment.
+Because that detail fails, the whole statement fails even if the topic word looks familiar.
 
-The statement is false.', 'FALSE — Balance-sheet classification follows intended use and the current/non-current split, not physical appearance alone.
+The statement is false.', 'Continued operational use makes the refrigerated van a non-current asset; inventory is reserved for goods held for resale.
 
-Price affects measurement; classification between fixed asset and inventory follows intended use.
-
-Using the stem facts: "Classifying a refrigerated van as a non-current asset depends mainly on its purchase price rather than on management''s intended use."
-
-The balance sheet identity is Assets = Liabilities + Equity. Classification follows intended use and timing: non-current vs current assets and liabilities; inventory is held for sale; fixed assets are used in operations beyond one year; equity is the owners'' residual claim and is not a scheduled debt repayment.
-
-The statement is false.', 'FALSE — Balance-sheet classification follows intended use and the current/non-current split, not physical appearance alone.
-
-Resale intent puts the item in inventory from acquisition; time unsold does not make it non-current.
-
-Using the stem facts: "A refrigerated van acquired for resale still counts among non-current assets as long as it remains unsold for several months."
-
-The balance sheet identity is Assets = Liabilities + Equity. Classification follows intended use and timing: non-current vs current assets and liabilities; inventory is held for sale; fixed assets are used in operations beyond one year; equity is the owners'' residual claim and is not a scheduled debt repayment.
-
-The statement is false.', 'FALSE — Balance-sheet classification follows intended use and the current/non-current split, not physical appearance alone.
-
-Wear is handled by depreciating a fixed asset. Daily operating use supports non-current classification, not inventory.
-
-Using the stem facts: "A refrigerated van used daily in a business''s own operations should be recorded as inventory because it wears out over time."
-
-The balance sheet identity is Assets = Liabilities + Equity. Classification follows intended use and timing: non-current vs current assets and liabilities; inventory is held for sale; fixed assets are used in operations beyond one year; equity is the owners'' residual claim and is not a scheduled debt repayment.
+Because that detail fails, the whole statement fails even if the topic word looks familiar.
 
 The statement is false.'] WHERE case_id = 'CASE 6.1.062' AND tier = 'full';
-UPDATE public.economics_cases SET tactical_explanations = ARRAY['FALSE — The balance sheet identity is Assets = Liabilities + Equity.
+UPDATE public.economics_cases SET tactical_explanations = ARRAY['That portion is liabilities; equity is the residual not financed by debt.
 
-Absolute or misapplied wording conflicts with the rule for "Liquidity From the Balance Sheet 63". The balance sheet identity is Assets = Liabilities + Equity. Classification follows intended use and timing: non-current vs current assets and liabilities; inventory is held for sale; fixed assets are used in operations beyond one year; equity is the owners'' residual claim and is not a scheduled debt repayment. Rejected claim: "Owner''s equity is the portion of assets financed by bank loans and trade creditors."
+Because that detail fails, the whole statement fails even if the topic word looks familiar.
 
-The statement is false.', 'FALSE — The current ratio is the standard liquidity cover of current assets over current liabilities.
+The statement is false.', 'Current assets = 478
 
-Name the identity in words: current ratio = current assets ÷ current liabilities.
+Current liabilities gather the short-term claims:
 
-Build current assets and current liabilities from the extract:
+Current liabilities = 217
 
-$$
-CA = 210 + 152 + 116 = 478
-$$
+Current ratio = 478 / 217 ≈ 2.20
 
-$$
-CL = 142 + 75 = 217
-$$
+The claim says the ratio below 0.67. We have about 2.20, which does not match that comparison.
 
-$$
-\text{Current ratio} = \frac{478}{217} = 2.2028
-$$
+The statement is false.', 'Equity ratio = total equity / total assets.
 
-Claimed: is below 0.67. Actual 2.20.
+752 / 1264 ≈ 59.5%
 
-Reading the arithmetic against the claim: actual current ratio 2.20 versus ''is below 0.67'' so the statement does not hold.
+The claim says the ratio below 21.2%. We have about 59.5%, which does not match that comparison.
 
-The statement is false.', 'FALSE — The equity ratio places equity against total assets so the financing structure can be judged on one balance sheet.
+The statement is false.', 'Current assets = 478
 
-Name the identity in words: equity ratio = equity ÷ total assets.
+Current liabilities gather the short-term claims:
 
-From the extract, equity = 752 and total assets = 1,264. Plug the figures step by step:
+Current liabilities = 217
 
-$$
-ER = \frac{\text{equity}}{\text{total assets}}
-$$
+Current ratio = 478 / 217 ≈ 2.20
 
-$$
-ER = \frac{752}{1,264}
-$$
+The claim says the ratio exceeds 1.17. We have about 2.20, which matches that comparison.
 
-$$
-ER = 59.5\%
-$$
+The statement is true.', 'Working capital = current assets minus current liabilities.
 
-Claimed: is below 21.2%. Actual 59.5%.
+478 - 217 = 261
 
-Reading the arithmetic against the claim: actual equity ratio 59.5% does not match ''is below 21.2%'' so the statement does not hold.
-
-The statement is false.', 'TRUE — The current ratio is the standard liquidity cover of current assets over current liabilities.
-
-Name the identity in words: current ratio = current assets ÷ current liabilities.
-
-Build current assets and current liabilities from the extract:
-
-$$
-CA = 210 + 152 + 116 = 478
-$$
-
-$$
-CL = 142 + 75 = 217
-$$
-
-$$
-\text{Current ratio} = \frac{478}{217} = 2.2028
-$$
-
-Claimed: exceeds 1.17. Actual 2.20.
-
-Reading the arithmetic against the claim: actual current ratio 2.20 versus ''exceeds 1.17'' so the statement holds.
-
-The statement is true.', 'TRUE — Working capital is the euro surplus (or deficit) of current assets over current liabilities on this balance sheet.
-
-Name the identity in words: working capital = current assets − current liabilities.
-
-From the extract, current assets total 478 and current liabilities total 217:
-
-$$
-WC = CA - CL
-$$
-
-$$
-CA = 478, \quad CL = 217
-$$
-
-$$
-WC = 478 - 217 = 261
-$$
-
-The statement cites working capital of €261 thousand and that it is positive. Calculated WC is 261, which is positive.
-
-Reading the arithmetic against the claim: WC = 261 is positive as claimed so the statement holds.
+The claim cites 261. We have 261, so the figures line up.
 
 The statement is true.'] WHERE case_id = 'CASE 6.1.063' AND tier = 'full';
-UPDATE public.economics_cases SET tactical_explanations = ARRAY['TRUE — The balance sheet identity is Assets = Liabilities + Equity.
+UPDATE public.economics_cases SET tactical_explanations = ARRAY['Resale intent places the conveyor belt in inventory, a current-asset category.
 
-The wording matches the relevant rule for "Cash Purchases Versus Credit Purchases". The balance sheet identity is Assets = Liabilities + Equity. Classification follows intended use and timing: non-current vs current assets and liabilities; inventory is held for sale; fixed assets are used in operations beyond one year; equity is the owners'' residual claim and is not a scheduled debt repayment. Applied here: "When a conveyor belt is acquired to be resold rather than used, it belongs among current assets as inventory."
+That is exactly what the claim asserts, so the wording survives a careful check against the standard idea.
 
-The statement is true.', 'FALSE — Balance-sheet classification follows intended use and the current/non-current split, not physical appearance alone.
+The statement is true.', 'A buyer intending to use the refrigerated van in operations records it as a non-current asset, not inventory, after purchase.
 
-After sale, the buyer''s intent governs: use in operations → buyer''s non-current asset, not inventory.
+Because that detail fails, the whole statement fails even if the topic word looks familiar.
 
-Using the stem facts: "Once a dealer sells a refrigerated van from its stock, the buyer must continue to record it as inventory."
+The statement is false.', 'Multi-period operational benefit qualifies the conveyor belt as a tangible fixed asset.
 
-The balance sheet identity is Assets = Liabilities + Equity. Classification follows intended use and timing: non-current vs current assets and liabilities; inventory is held for sale; fixed assets are used in operations beyond one year; equity is the owners'' residual claim and is not a scheduled debt repayment.
+That is exactly what the claim asserts, so the wording survives a careful check against the standard idea.
 
-The statement is false.', 'TRUE — The balance sheet identity is Assets = Liabilities + Equity.
+The statement is true.', 'Stock awaiting sale remains inventory, not a fixed asset, for the dealer holding it.
 
-The claim states: A conveyor belt bought by a business to support its own daily operations is a tangible fixed asset. The reason given — it delivers benefit across several accounting periods. — fits the chapter rule. The balance sheet identity is Assets = Liabilities + Equity. Classification follows intended use and timing: non-current vs current assets and liabilities; inventory is held for sale; fixed assets are used in operations beyond one year; equity is the owners'' residual claim and is not a scheduled debt repayment.
+That is exactly what the claim asserts, so the wording survives a careful check against the standard idea.
 
-The statement is true.', 'TRUE — The balance sheet identity is Assets = Liabilities + Equity.
+The statement is true.', 'Long-term expected benefit, not physical form, justifies classifying an operating licence as non-current.
 
-The wording matches the relevant rule for "Cash Purchases Versus Credit Purchases". The balance sheet identity is Assets = Liabilities + Equity. Classification follows intended use and timing: non-current vs current assets and liabilities; inventory is held for sale; fixed assets are used in operations beyond one year; equity is the owners'' residual claim and is not a scheduled debt repayment. Applied here: "A conveyor belt that a dealer displays for sale is not a fixed asset of that dealer."
-
-The statement is true.', 'TRUE — The balance sheet identity is Assets = Liabilities + Equity.
-
-The claim states: An operating licence lacks physical substance but is classified as a non-current intangible asset. The reason given — it provides expected long-term benefit. — fits the chapter rule. The balance sheet identity is Assets = Liabilities + Equity. Classification follows intended use and timing: non-current vs current assets and liabilities; inventory is held for sale; fixed assets are used in operations beyond one year; equity is the owners'' residual claim and is not a scheduled debt repayment.
+That is exactly what the claim asserts, so the wording survives a careful check against the standard idea.
 
 The statement is true.'] WHERE case_id = 'CASE 6.1.064' AND tier = 'full';
-UPDATE public.economics_cases SET tactical_explanations = ARRAY['FALSE — Balance-sheet classification follows intended use and the current/non-current split, not physical appearance alone.
+UPDATE public.economics_cases SET tactical_explanations = ARRAY['Long-term operational use makes the woodworking lathe a non-current tangible asset, not inventory.
 
-Inventory is stock held for sale, not every physical item owned. Equipment used in operations is a non-current tangible asset.
+Because that detail fails, the whole statement fails even if the topic word looks familiar.
 
-Using the stem facts: "A woodworking lathe used by an operating business is classified as inventory because inventory can include any physical equipment a business owns."
+The statement is false.', 'Long-term value places an intangible operating licence among non-current rather than current assets.
 
-The balance sheet identity is Assets = Liabilities + Equity. Classification follows intended use and timing: non-current vs current assets and liabilities; inventory is held for sale; fixed assets are used in operations beyond one year; equity is the owners'' residual claim and is not a scheduled debt repayment.
+That is exactly what the claim asserts, so the wording survives a careful check against the standard idea.
 
-The statement is false.', 'TRUE — The balance sheet identity is Assets = Liabilities + Equity.
+The statement is true.', 'Intangible and tangible non-current assets, including an operating licence, sit within the same balance sheet section.
 
-The claim states: Although an operating licence cannot be touched, it appears among non-current assets rather than current assets. The reason given — of its long-term value. — fits the chapter rule. The balance sheet identity is Assets = Liabilities + Equity. Classification follows intended use and timing: non-current vs current assets and liabilities; inventory is held for sale; fixed assets are used in operations beyond one year; equity is the owners'' residual claim and is not a scheduled debt repayment.
+That is exactly what the claim asserts, so the wording survives a careful check against the standard idea.
 
-The statement is true.', 'TRUE — The balance sheet identity is Assets = Liabilities + Equity.
+The statement is true.', 'Resale intent, not the dealer''s status as a business, places the woodworking lathe in inventory rather than among non-current assets.
 
-The wording matches the relevant rule for "Reclassifying Assets by Intended Use". The balance sheet identity is Assets = Liabilities + Equity. Classification follows intended use and timing: non-current vs current assets and liabilities; inventory is held for sale; fixed assets are used in operations beyond one year; equity is the owners'' residual claim and is not a scheduled debt repayment. Applied here: "An operating licence is recorded as an intangible non-current asset alongside tangible assets such as buildings and machinery."
+Because that detail fails, the whole statement fails even if the topic word looks familiar.
 
-The statement is true.', 'FALSE — Balance-sheet classification follows intended use and the current/non-current split, not physical appearance alone.
+The statement is false.', 'Physical form is not a requirement for classifying an operating licence as non-current.
 
-Resale intent makes dealer stock inventory (current). Being a business does not turn resale stock into a non-current operating asset.
-
-The statement is false.', 'TRUE — The balance sheet identity is Assets = Liabilities + Equity.
-
-The wording matches the relevant rule for "Reclassifying Assets by Intended Use". The balance sheet identity is Assets = Liabilities + Equity. Classification follows intended use and timing: non-current vs current assets and liabilities; inventory is held for sale; fixed assets are used in operations beyond one year; equity is the owners'' residual claim and is not a scheduled debt repayment. Applied here: "The absence of physical form does not prevent an operating licence from being classified as a non-current asset."
+That is exactly what the claim asserts, so the wording survives a careful check against the standard idea.
 
 The statement is true.'] WHERE case_id = 'CASE 6.1.065' AND tier = 'full';
-UPDATE public.economics_cases SET tactical_explanations = ARRAY['FALSE — Balance-sheet classification follows intended use and the current/non-current split, not physical appearance alone.
+UPDATE public.economics_cases SET tactical_explanations = ARRAY['Classification of the woodworking lathe depends on whether it is used or held for resale, so identical items can differ across balance sheets.
 
-Classification follows how the reporting entity holds the item (use vs resale), not physical form alone.
+The absolute wording "always" turns a familiar idea into an overclaim. One ordinary counterexample is enough to reject it.
 
-Using the stem facts: "The same woodworking lathe must always be classified identically on every balance sheet regardless of how it is held."
+The statement is false.', 'Multi-year protective or operational value groups an operating licence with intangible non-current assets.
 
-The balance sheet identity is Assets = Liabilities + Equity. Classification follows intended use and timing: non-current vs current assets and liabilities; inventory is held for sale; fixed assets are used in operations beyond one year; equity is the owners'' residual claim and is not a scheduled debt repayment.
+That is exactly what the claim asserts, so the wording survives a careful check against the standard idea.
 
-The statement is false.', 'TRUE — The balance sheet identity is Assets = Liabilities + Equity.
+The statement is true.', 'Intended use, not purchase price, drives the non-current classification of the woodworking lathe.
 
-The wording matches the relevant rule for "Dealer Stock Versus Operating Assets". The balance sheet identity is Assets = Liabilities + Equity. Classification follows intended use and timing: non-current vs current assets and liabilities; inventory is held for sale; fixed assets are used in operations beyond one year; equity is the owners'' residual claim and is not a scheduled debt repayment. Applied here: "An operating licence acquired to protect or support a business''s operations over several years is grouped with intangible non-current assets."
+Because that detail fails, the whole statement fails even if the topic word looks familiar.
 
-The statement is true.', 'FALSE — Balance-sheet classification follows intended use and the current/non-current split, not physical appearance alone.
+The statement is false.', 'Resale intent keeps the woodworking lathe in inventory as a current asset regardless of how long it stays unsold.
 
-Price affects measurement; classification between fixed asset and inventory follows intended use.
+Because that detail fails, the whole statement fails even if the topic word looks familiar.
 
-Using the stem facts: "Classifying a woodworking lathe as a non-current asset depends mainly on its purchase price rather than on management''s intended use."
+The statement is false.', 'Because an operating licence is not expected to convert into cash within the operating cycle, it is excluded from current assets.
 
-The balance sheet identity is Assets = Liabilities + Equity. Classification follows intended use and timing: non-current vs current assets and liabilities; inventory is held for sale; fixed assets are used in operations beyond one year; equity is the owners'' residual claim and is not a scheduled debt repayment.
-
-The statement is false.', 'FALSE — Balance-sheet classification follows intended use and the current/non-current split, not physical appearance alone.
-
-Resale intent puts the item in inventory from acquisition; time unsold does not make it non-current.
-
-Using the stem facts: "A woodworking lathe acquired for resale still counts among non-current assets as long as it remains unsold for several months."
-
-The balance sheet identity is Assets = Liabilities + Equity. Classification follows intended use and timing: non-current vs current assets and liabilities; inventory is held for sale; fixed assets are used in operations beyond one year; equity is the owners'' residual claim and is not a scheduled debt repayment.
-
-The statement is false.', 'TRUE — The balance sheet identity is Assets = Liabilities + Equity.
-
-The claim states: An operating licence is not classified as a current asset. The reason given — it is not expected to convert into cash within the normal operating cycle. — fits the chapter rule. The balance sheet identity is Assets = Liabilities + Equity. Classification follows intended use and timing: non-current vs current assets and liabilities; inventory is held for sale; fixed assets are used in operations beyond one year; equity is the owners'' residual claim and is not a scheduled debt repayment.
+That is exactly what the claim asserts, so the wording survives a careful check against the standard idea.
 
 The statement is true.'] WHERE case_id = 'CASE 6.1.066' AND tier = 'full';
-UPDATE public.economics_cases SET tactical_explanations = ARRAY['FALSE — Balance-sheet classification follows intended use and the current/non-current split, not physical appearance alone.
+UPDATE public.economics_cases SET tactical_explanations = ARRAY['Continued operational use makes the woodworking lathe a non-current asset; inventory is reserved for goods held for resale.
 
-Wear is handled by depreciating a fixed asset. Daily operating use supports non-current classification, not inventory.
+Because that detail fails, the whole statement fails even if the topic word looks familiar.
 
-Using the stem facts: "A woodworking lathe used daily in a business''s own operations should be recorded as inventory because it wears out over time."
+The statement is false.', 'Long-term expected benefit, not physical form, justifies classifying a brand name as non-current.
 
-The balance sheet identity is Assets = Liabilities + Equity. Classification follows intended use and timing: non-current vs current assets and liabilities; inventory is held for sale; fixed assets are used in operations beyond one year; equity is the owners'' residual claim and is not a scheduled debt repayment.
+That is exactly what the claim asserts, so the wording survives a careful check against the standard idea.
 
-The statement is false.', 'TRUE — The balance sheet identity is Assets = Liabilities + Equity.
+The statement is true.', 'A buyer intending to use the woodworking lathe in operations records it as a non-current asset, not inventory, after purchase.
 
-The claim states: A brand name lacks physical substance but is classified as a non-current intangible asset. The reason given — it provides expected long-term benefit. — fits the chapter rule. The balance sheet identity is Assets = Liabilities + Equity. Classification follows intended use and timing: non-current vs current assets and liabilities; inventory is held for sale; fixed assets are used in operations beyond one year; equity is the owners'' residual claim and is not a scheduled debt repayment.
+Because that detail fails, the whole statement fails even if the topic word looks familiar.
 
-The statement is true.', 'FALSE — Balance-sheet classification follows intended use and the current/non-current split, not physical appearance alone.
+The statement is false.', 'Long-term value places an intangible brand name among non-current rather than current assets.
 
-After sale, the buyer''s intent governs: use in operations → buyer''s non-current asset, not inventory.
+That is exactly what the claim asserts, so the wording survives a careful check against the standard idea.
 
-Using the stem facts: "Once a dealer sells a woodworking lathe from its stock, the buyer must continue to record it as inventory."
+The statement is true.', 'Long-term operational use makes the espresso machine a non-current tangible asset, not inventory.
 
-The balance sheet identity is Assets = Liabilities + Equity. Classification follows intended use and timing: non-current vs current assets and liabilities; inventory is held for sale; fixed assets are used in operations beyond one year; equity is the owners'' residual claim and is not a scheduled debt repayment.
-
-The statement is false.', 'TRUE — The balance sheet identity is Assets = Liabilities + Equity.
-
-The claim states: Although a brand name cannot be touched, it appears among non-current assets rather than current assets. The reason given — of its long-term value. — fits the chapter rule. The balance sheet identity is Assets = Liabilities + Equity. Classification follows intended use and timing: non-current vs current assets and liabilities; inventory is held for sale; fixed assets are used in operations beyond one year; equity is the owners'' residual claim and is not a scheduled debt repayment.
-
-The statement is true.', 'FALSE — Balance-sheet classification follows intended use and the current/non-current split, not physical appearance alone.
-
-Inventory is stock held for sale, not every physical item owned. Equipment used in operations is a non-current tangible asset.
-
-Using the stem facts: "An espresso machine used by an operating business is classified as inventory because inventory can include any physical equipment a business owns."
-
-The balance sheet identity is Assets = Liabilities + Equity. Classification follows intended use and timing: non-current vs current assets and liabilities; inventory is held for sale; fixed assets are used in operations beyond one year; equity is the owners'' residual claim and is not a scheduled debt repayment.
+Because that detail fails, the whole statement fails even if the topic word looks familiar.
 
 The statement is false.'] WHERE case_id = 'CASE 6.1.067' AND tier = 'full';
-UPDATE public.economics_cases SET tactical_explanations = ARRAY['FALSE — The balance sheet identity is Assets = Liabilities + Equity.
+UPDATE public.economics_cases SET tactical_explanations = ARRAY['Long-term assets should be financed with long-term financial resources.
 
-Absolute or misapplied wording conflicts with the rule for "Two-Year Balance Sheet Review 68". The balance sheet identity is Assets = Liabilities + Equity. Classification follows intended use and timing: non-current vs current assets and liabilities; inventory is held for sale; fixed assets are used in operations beyond one year; equity is the owners'' residual claim and is not a scheduled debt repayment. Rejected claim: "Long-term assets should preferably be financed only with short-term trade credit."
+Because that detail fails, the whole statement fails even if the topic word looks familiar.
 
-The statement is false.', 'TRUE — Non-current liabilities are the long-term funding claims; here they are long-term bank loan plus bonds payable, compared with total equity.
+The statement is false.', 'Non-current liabilities are about 69.8% of equity in year 1.
 
-Name the identity in words: NCL-to-equity share = (long-term bank loan + bonds payable) ÷ total equity.
+That is exactly what the claim asserts, so the wording survives a careful check against the standard idea.
 
-$$
-\text{NCL} = 322 + 76 = 398
-$$
+The statement is true.', 'Total equity changed by about 7.0% between the two years.
 
-$$
-\text{Equity} = 570
-$$
+Because that detail fails, the whole statement fails even if the topic word looks familiar.
 
-$$
-\frac{398}{570} = 69.8\%
-$$
+The statement is false.', 'Total assets changed by about 6.4% between the two years.
 
-Threshold: more than 47.7% in Year 1. Actual 69.8%.
+Because that detail fails, the whole statement fails even if the topic word looks familiar.
 
-Reading the arithmetic against the claim: Year 1 NCL/equity is 69.8%, which is consistent with ''more than 47.7%'' so the statement holds.
+The statement is false.', 'Inventory changed by about 10.8% between the two years.
 
-The statement is true.', 'FALSE — Use the case figures for Total equity and compute the percentage change between Year 1 and Year 2 before comparing it with the claimed threshold.
-
-From the extract:
-
-$$
-\text{Total equity}_{\text{Y1}} = 570, \quad
-\text{Total equity}_{\text{Y2}} = 610
-$$
-
-$$
-\frac{610 - 570}{570} = 7.0\%
-$$
-
-$$
-7.0\% \le  24\%
-$$
-
-The actual growth is 7.0%, which is not more than the claimed 24%.
-
-The statement is false.', 'FALSE — Use the case figures for Total assets and compute the percentage change between Year 1 and Year 2 before comparing it with the claimed threshold.
-
-From the extract:
-
-$$
-\text{Total assets}_{\text{Y1}} = 1,104, \quad
-\text{Total assets}_{\text{Y2}} = 1,175
-$$
-
-$$
-\frac{1,175 - 1,104}{1,104} = 6.4\%
-$$
-
-$$
-6.4\% \le  9.5\%
-$$
-
-The actual growth is 6.4%, which is not more than the claimed 9.5%.
-
-The statement is false.', 'FALSE — Use the case figures for Inventory and compute the percentage change between Year 1 and Year 2 before comparing it with the claimed threshold.
-
-From the extract:
-
-$$
-\text{Inventory}_{\text{Y1}} = 231, \quad
-\text{Inventory}_{\text{Y2}} = 256
-$$
-
-$$
-\frac{256 - 231}{231} = 10.8\%
-$$
-
-$$
-10.8\% \le  32.1\%
-$$
-
-The actual growth is 10.8%, which is not more than the claimed 32.1%.
+Because that detail fails, the whole statement fails even if the topic word looks familiar.
 
 The statement is false.'] WHERE case_id = 'CASE 6.1.068' AND tier = 'full';
-UPDATE public.economics_cases SET tactical_explanations = ARRAY['FALSE — The balance sheet identity is Assets = Liabilities + Equity.
+UPDATE public.economics_cases SET tactical_explanations = ARRAY['Cash falls by the same amount as the software rises, so total assets stay unchanged.
 
-The claim states: Buying software with cash always increases total assets. The reason — a new asset is added without reducing any other asset. — does not support that label under the chapter definitions. The balance sheet identity is Assets = Liabilities + Equity. Classification follows intended use and timing: non-current vs current assets and liabilities; inventory is held for sale; fixed assets are used in operations beyond one year; equity is the owners'' residual claim and is not a scheduled debt repayment.
+The absolute wording "always" turns a familiar idea into an overclaim. One ordinary counterexample is enough to reject it.
 
-The statement is false.', 'FALSE — Use the case figures for Total equity and compute the percentage change between Year 1 and Year 2 before comparing it with the claimed threshold.
+The statement is false.', 'Total equity changed by about 10.1% between the two years.
 
-From the extract:
+Because that detail fails, the whole statement fails even if the topic word looks familiar.
 
-$$
-\text{Total equity}_{\text{Y1}} = 487, \quad
-\text{Total equity}_{\text{Y2}} = 536
-$$
+The statement is false.', 'Non-current liabilities are about 57.1% of equity in year 2.
 
-$$
-\frac{536 - 487}{487} = 10.1\%
-$$
+That is exactly what the claim asserts, so the wording survives a careful check against the standard idea.
 
-$$
-10.1\% \le  16\%
-$$
+The statement is true.', 'Non-current assets are about 63.3% of total assets in Year 2.
 
-The actual growth is 10.1%, which is not more than the claimed 16%.
+That is exactly what the claim asserts, so the wording survives a careful check against the standard idea.
 
-The statement is false.', 'TRUE — Non-current liabilities are the long-term funding claims; here they are long-term bank loan plus bonds payable, compared with total equity.
+The statement is true.', 'Current ratio in year 2 is about 1.29.
 
-Name the identity in words: NCL-to-equity share = (long-term bank loan + bonds payable) ÷ total equity.
-
-$$
-\text{NCL} = 250 + 56 = 306
-$$
-
-$$
-\text{Equity} = 536
-$$
-
-$$
-\frac{306}{536} = 57.1\%
-$$
-
-Threshold: less than 103.8% in Year 2. Actual 57.1%.
-
-Reading the arithmetic against the claim: Year 2 NCL/equity is 57.1%, which is consistent with ''less than 103.8%'' so the statement holds.
-
-The statement is true.', 'TRUE — This is a composition claim: express Non-current assets as a percentage of total assets in Year 2.
-
-Name the identity in words: Non-current assets share of total assets in Year 2 = Non-current assets ÷ total assets in Year 2.
-
-From the extract, Non-current assets = 745 and total assets in Year 2 = 1,177. Plug the figures step by step:
-
-$$
-Share = \frac{\text{Non-current assets}}{\text{total assets in Year 2}}
-$$
-
-$$
-Share = \frac{745}{1,177}
-$$
-
-$$
-Share = 63.3\%
-$$
-
-Threshold: more than 61.9%. Actual 63.3%.
-
-Reading the arithmetic against the claim: actual share 63.3% matches ''more than 61.9%'' so the statement holds.
-
-The statement is true.', 'TRUE — This is the Year 2 current ratio read as coverage of current liabilities.
-
-Name the identity in words: coverage = current assets ÷ current liabilities.
-
-$$
-\frac{432}{335} = 1.2896
-$$
-
-Threshold: less than 1.94. Actual 1.29.
-
-Reading the arithmetic against the claim: actual coverage 1.29 is less than 1.94 so the statement holds.
+That is exactly what the claim asserts, so the wording survives a careful check against the standard idea.
 
 The statement is true.'] WHERE case_id = 'CASE 6.1.069' AND tier = 'full';
-UPDATE public.economics_cases SET tactical_explanations = ARRAY['FALSE — Balance-sheet classification follows intended use and the current/non-current split, not physical appearance alone.
+UPDATE public.economics_cases SET tactical_explanations = ARRAY['Resale intent, not the dealer''s status as a business, places the espresso machine in inventory rather than among non-current assets.
 
-Resale intent makes dealer stock inventory (current). Being a business does not turn resale stock into a non-current operating asset.
+Because that detail fails, the whole statement fails even if the topic word looks familiar.
 
-The statement is false.', 'TRUE — The balance sheet identity is Assets = Liabilities + Equity.
+The statement is false.', 'Intangible and tangible non-current assets, including a brand name, sit within the same balance sheet section.
 
-The wording matches the relevant rule for "Settlement Timing for Liabilities". The balance sheet identity is Assets = Liabilities + Equity. Classification follows intended use and timing: non-current vs current assets and liabilities; inventory is held for sale; fixed assets are used in operations beyond one year; equity is the owners'' residual claim and is not a scheduled debt repayment. Applied here: "A brand name is recorded as an intangible non-current asset alongside tangible assets such as buildings and machinery."
+That is exactly what the claim asserts, so the wording survives a careful check against the standard idea.
 
-The statement is true.', 'TRUE — The balance sheet identity is Assets = Liabilities + Equity.
+The statement is true.', 'Physical form is not a requirement for classifying a brand name as non-current.
 
-The wording matches the relevant rule for "Settlement Timing for Liabilities". The balance sheet identity is Assets = Liabilities + Equity. Classification follows intended use and timing: non-current vs current assets and liabilities; inventory is held for sale; fixed assets are used in operations beyond one year; equity is the owners'' residual claim and is not a scheduled debt repayment. Applied here: "The absence of physical form does not prevent a brand name from being classified as a non-current asset."
+That is exactly what the claim asserts, so the wording survives a careful check against the standard idea.
 
-The statement is true.', 'FALSE — Balance-sheet classification follows intended use and the current/non-current split, not physical appearance alone.
+The statement is true.', 'Classification of the espresso machine depends on whether it is used or held for resale, so identical items can differ across balance sheets.
 
-Classification follows how the reporting entity holds the item (use vs resale), not physical form alone.
+The absolute wording "always" turns a familiar idea into an overclaim. One ordinary counterexample is enough to reject it.
 
-Using the stem facts: "The same espresso machine must always be classified identically on every balance sheet regardless of how it is held."
+The statement is false.', 'Multi-year protective or operational value groups a brand name with intangible non-current assets.
 
-The balance sheet identity is Assets = Liabilities + Equity. Classification follows intended use and timing: non-current vs current assets and liabilities; inventory is held for sale; fixed assets are used in operations beyond one year; equity is the owners'' residual claim and is not a scheduled debt repayment.
-
-The statement is false.', 'TRUE — The balance sheet identity is Assets = Liabilities + Equity.
-
-The wording matches the relevant rule for "Settlement Timing for Liabilities". The balance sheet identity is Assets = Liabilities + Equity. Classification follows intended use and timing: non-current vs current assets and liabilities; inventory is held for sale; fixed assets are used in operations beyond one year; equity is the owners'' residual claim and is not a scheduled debt repayment. Applied here: "A brand name acquired to protect or support a business''s operations over several years is grouped with intangible non-current assets."
+That is exactly what the claim asserts, so the wording survives a careful check against the standard idea.
 
 The statement is true.'] WHERE case_id = 'CASE 6.1.070' AND tier = 'full';
-UPDATE public.economics_cases SET tactical_explanations = ARRAY['FALSE — The balance sheet identity is Assets = Liabilities + Equity.
+UPDATE public.economics_cases SET tactical_explanations = ARRAY['Cash falls by the same amount as the software rises, so total assets stay unchanged.
 
-The claim states: Buying software with cash always increases total assets. The reason — a new asset is added without reducing any other asset. — does not support that label under the chapter definitions. The balance sheet identity is Assets = Liabilities + Equity. Classification follows intended use and timing: non-current vs current assets and liabilities; inventory is held for sale; fixed assets are used in operations beyond one year; equity is the owners'' residual claim and is not a scheduled debt repayment.
+The absolute wording "always" turns a familiar idea into an overclaim. One ordinary counterexample is enough to reject it.
 
-The statement is false.', 'TRUE — Working capital is the euro surplus (or deficit) of current assets over current liabilities on this balance sheet.
+The statement is false.', 'Working capital = current assets minus current liabilities.
 
-Name the identity in words: working capital = current assets − current liabilities.
+421 - 254 = 167
 
-From the extract, current assets total 421 and current liabilities total 254:
+The claim cites 167. We have 167, so the figures line up.
 
-$$
-WC = CA - CL
-$$
+The statement is true.', 'Current assets gather the short-term asset lines:
 
-$$
-CA = 421, \quad CL = 254
-$$
+Inventory (183) + Trade receivables (162) + Cash and cash equivalents (76)
+= 421
 
-$$
-WC = 421 - 254 = 167
-$$
+Current liabilities gather the short-term claims:
 
-The statement cites working capital of €167 thousand and that it is positive. Calculated WC is 167, which is positive.
+Trade payables (178) + Bank overdraft (76)
+= 254
 
-Reading the arithmetic against the claim: WC = 167 is positive as claimed so the statement holds.
+Current ratio = 421 / 254 ≈ 1.66
 
-The statement is true.', 'FALSE — The current ratio is the standard liquidity cover of current assets over current liabilities.
+The claim says the ratio exceeds 1.66. We have about 1.66, which does not match that comparison.
 
-Name the identity in words: current ratio = current assets ÷ current liabilities.
+The statement is false.', 'Current assets gather the short-term asset lines:
 
-Build current assets and current liabilities from the extract:
+Inventory (183) + Trade receivables (162) + Cash and cash equivalents (76)
+= 421
 
-$$
-CA = 183 + 162 + 76 = 421
-$$
+Current liabilities gather the short-term claims:
 
-$$
-CL = 178 + 76 = 254
-$$
+Trade payables (178) + Bank overdraft (76)
+= 254
 
-$$
-\text{Current ratio} = \frac{421}{254} = 1.6575
-$$
+Current ratio = 421 / 254 ≈ 1.66
 
-Claimed: exceeds 1.66. Actual 1.66.
+The claim says the ratio below 1.25. We have about 1.66, which does not match that comparison.
 
-Reading the arithmetic against the claim: actual current ratio 1.66 versus ''exceeds 1.66'' so the statement does not hold.
+The statement is false.', 'Acid-test ratio ≈ 0.94.
 
-The statement is false.', 'FALSE — The current ratio is the standard liquidity cover of current assets over current liabilities.
-
-Name the identity in words: current ratio = current assets ÷ current liabilities.
-
-Build current assets and current liabilities from the extract:
-
-$$
-CA = 183 + 162 + 76 = 421
-$$
-
-$$
-CL = 178 + 76 = 254
-$$
-
-$$
-\text{Current ratio} = \frac{421}{254} = 1.6575
-$$
-
-Claimed: is below 1.25. Actual 1.66.
-
-Reading the arithmetic against the claim: actual current ratio 1.66 versus ''is below 1.25'' so the statement does not hold.
-
-The statement is false.', 'FALSE — The acid-test (quick) ratio is a stricter liquidity test: inventory is removed from current assets before dividing by current liabilities.
-
-Name the identity in words: acid-test ratio = (current assets − inventory) ÷ current liabilities.
-
-$$
-CA = 421, \quad \text{Inventory} = 183, \quad CL = 254
-$$
-
-$$
-CA - \text{Inventory} = 421 - 183 = 238
-$$
-
-$$
-\text{Acid-test} = \frac{238}{254} = 0.9370
-$$
-
-Threshold: more than 1.11. Actual 0.94.
-
-Reading the arithmetic against the claim: acid-test 0.94 is not more than 1.11 so the statement does not hold.
+Because that detail fails, the whole statement fails even if the topic word looks familiar.
 
 The statement is false.'] WHERE case_id = 'CASE 6.1.071' AND tier = 'full';
-UPDATE public.economics_cases SET tactical_explanations = ARRAY['FALSE — The balance sheet identity is Assets = Liabilities + Equity.
+UPDATE public.economics_cases SET tactical_explanations = ARRAY['That portion is liabilities; equity is the residual not financed by debt.
 
-Absolute or misapplied wording conflicts with the rule for "Liquidity From the Balance Sheet 72". The balance sheet identity is Assets = Liabilities + Equity. Classification follows intended use and timing: non-current vs current assets and liabilities; inventory is held for sale; fixed assets are used in operations beyond one year; equity is the owners'' residual claim and is not a scheduled debt repayment. Rejected claim: "Owner''s equity is the portion of assets financed by bank loans and trade creditors."
+Because that detail fails, the whole statement fails even if the topic word looks familiar.
 
-The statement is false.', 'FALSE — The current ratio is the standard liquidity cover of current assets over current liabilities.
+The statement is false.', 'Current assets = 333
 
-Name the identity in words: current ratio = current assets ÷ current liabilities.
+Current liabilities gather the short-term claims:
 
-Build current assets and current liabilities from the extract:
+Current liabilities = 315
 
-$$
-CA = 140 + 120 + 73 = 333
-$$
+Current ratio = 333 / 315 ≈ 1.06
 
-$$
-CL = 242 + 73 = 315
-$$
+The claim says the ratio below 0.65. We have about 1.06, which does not match that comparison.
 
-$$
-\text{Current ratio} = \frac{333}{315} = 1.0571
-$$
+The statement is false.', 'Working capital = current assets minus current liabilities.
 
-Claimed: is below 0.65. Actual 1.06.
+333 - 315 = 18
 
-Reading the arithmetic against the claim: actual current ratio 1.06 versus ''is below 0.65'' so the statement does not hold.
+The claim cites 18. We have 18, so the figures line up.
 
-The statement is false.', 'TRUE — Working capital is the euro surplus (or deficit) of current assets over current liabilities on this balance sheet.
+The statement is true.', 'Inventory are about 42.0% of current assets.
 
-Name the identity in words: working capital = current assets − current liabilities.
+That is exactly what the claim asserts, so the wording survives a careful check against the standard idea.
 
-From the extract, current assets total 333 and current liabilities total 315:
+The statement is true.', 'Acid-test ratio ≈ 0.61.
 
-$$
-WC = CA - CL
-$$
-
-$$
-CA = 333, \quad CL = 315
-$$
-
-$$
-WC = 333 - 315 = 18
-$$
-
-The statement cites working capital of €18 thousand and that it is positive. Calculated WC is 18, which is positive.
-
-Reading the arithmetic against the claim: WC = 18 is positive as claimed so the statement holds.
-
-The statement is true.', 'TRUE — This is a composition claim: express Inventory as a percentage of current assets.
-
-Name the identity in words: Inventory share of current assets = Inventory ÷ current assets.
-
-From the extract, Inventory = 140 and current assets = 333. Plug the figures step by step:
-
-$$
-Share = \frac{\text{Inventory}}{\text{current assets}}
-$$
-
-$$
-Share = \frac{140}{333}
-$$
-
-$$
-Share = 42.0\%
-$$
-
-Threshold: more than 32.6%. Actual 42.0%.
-
-Reading the arithmetic against the claim: actual share 42.0% matches ''more than 32.6%'' so the statement holds.
-
-The statement is true.', 'FALSE — The acid-test (quick) ratio is a stricter liquidity test: inventory is removed from current assets before dividing by current liabilities.
-
-Name the identity in words: acid-test ratio = (current assets − inventory) ÷ current liabilities.
-
-$$
-CA = 333, \quad \text{Inventory} = 140, \quad CL = 315
-$$
-
-$$
-CA - \text{Inventory} = 333 - 140 = 193
-$$
-
-$$
-\text{Acid-test} = \frac{193}{315} = 0.6127
-$$
-
-Threshold: more than 0.72. Actual 0.61.
-
-Reading the arithmetic against the claim: acid-test 0.61 is not more than 0.72 so the statement does not hold.
+Because that detail fails, the whole statement fails even if the topic word looks familiar.
 
 The statement is false.'] WHERE case_id = 'CASE 6.1.072' AND tier = 'full';
-UPDATE public.economics_cases SET tactical_explanations = ARRAY['TRUE — The balance sheet identity is Assets = Liabilities + Equity.
+UPDATE public.economics_cases SET tactical_explanations = ARRAY['Because a brand name is not expected to convert into cash within the operating cycle, it is excluded from current assets.
 
-The claim states: A brand name is not classified as a current asset. The reason given — it is not expected to convert into cash within the normal operating cycle. — fits the chapter rule. The balance sheet identity is Assets = Liabilities + Equity. Classification follows intended use and timing: non-current vs current assets and liabilities; inventory is held for sale; fixed assets are used in operations beyond one year; equity is the owners'' residual claim and is not a scheduled debt repayment.
+That is exactly what the claim asserts, so the wording survives a careful check against the standard idea.
 
-The statement is true.', 'TRUE — The balance sheet identity is Assets = Liabilities + Equity.
+The statement is true.', 'Long-term expected benefit, not physical form, justifies classifying a registered design as non-current.
 
-The claim states: A registered design lacks physical substance but is classified as a non-current intangible asset. The reason given — it provides expected long-term benefit. — fits the chapter rule. The balance sheet identity is Assets = Liabilities + Equity. Classification follows intended use and timing: non-current vs current assets and liabilities; inventory is held for sale; fixed assets are used in operations beyond one year; equity is the owners'' residual claim and is not a scheduled debt repayment.
+That is exactly what the claim asserts, so the wording survives a careful check against the standard idea.
 
-The statement is true.', 'TRUE — The balance sheet identity is Assets = Liabilities + Equity.
+The statement is true.', 'Long-term value places an intangible registered design among non-current rather than current assets.
 
-The claim states: Although a registered design cannot be touched, it appears among non-current assets rather than current assets. The reason given — of its long-term value. — fits the chapter rule. The balance sheet identity is Assets = Liabilities + Equity. Classification follows intended use and timing: non-current vs current assets and liabilities; inventory is held for sale; fixed assets are used in operations beyond one year; equity is the owners'' residual claim and is not a scheduled debt repayment.
+That is exactly what the claim asserts, so the wording survives a careful check against the standard idea.
 
-The statement is true.', 'TRUE — The balance sheet identity is Assets = Liabilities + Equity.
+The statement is true.', 'Intangible and tangible non-current assets, including a registered design, sit within the same balance sheet section.
 
-The wording matches the relevant rule for "Partial Repayment and Reclassification". The balance sheet identity is Assets = Liabilities + Equity. Classification follows intended use and timing: non-current vs current assets and liabilities; inventory is held for sale; fixed assets are used in operations beyond one year; equity is the owners'' residual claim and is not a scheduled debt repayment. Applied here: "A registered design is recorded as an intangible non-current asset alongside tangible assets such as buildings and machinery."
+That is exactly what the claim asserts, so the wording survives a careful check against the standard idea.
 
-The statement is true.', 'TRUE — The balance sheet identity is Assets = Liabilities + Equity.
+The statement is true.', 'Physical form is not a requirement for classifying a registered design as non-current.
 
-The wording matches the relevant rule for "Partial Repayment and Reclassification". The balance sheet identity is Assets = Liabilities + Equity. Classification follows intended use and timing: non-current vs current assets and liabilities; inventory is held for sale; fixed assets are used in operations beyond one year; equity is the owners'' residual claim and is not a scheduled debt repayment. Applied here: "The absence of physical form does not prevent a registered design from being classified as a non-current asset."
+That is exactly what the claim asserts, so the wording survives a careful check against the standard idea.
 
 The statement is true.'] WHERE case_id = 'CASE 6.1.073' AND tier = 'full';
-UPDATE public.economics_cases SET tactical_explanations = ARRAY['FALSE — The balance sheet identity is Assets = Liabilities + Equity.
+UPDATE public.economics_cases SET tactical_explanations = ARRAY['Cash falls by the same amount as the software rises, so total assets stay unchanged.
 
-The claim states: Buying software with cash always increases total assets. The reason — a new asset is added without reducing any other asset. — does not support that label under the chapter definitions. The balance sheet identity is Assets = Liabilities + Equity. Classification follows intended use and timing: non-current vs current assets and liabilities; inventory is held for sale; fixed assets are used in operations beyond one year; equity is the owners'' residual claim and is not a scheduled debt repayment.
+The absolute wording "always" turns a familiar idea into an overclaim. One ordinary counterexample is enough to reject it.
 
-The statement is false.', 'TRUE — Use the case figures for Cash and cash equivalents and compute the percentage change between Year 1 and Year 2 before comparing it with the claimed threshold.
+The statement is false.', 'Cash and cash equivalents changed by about -6.5% between the two years.
 
-From the extract:
+That is exactly what the claim asserts, so the wording survives a careful check against the standard idea.
 
-$$
-\text{Cash and cash equivalents}_{\text{Y1}} = 108, \quad
-\text{Cash and cash equivalents}_{\text{Y2}} = 101
-$$
+The statement is true.', 'Non-current liabilities are about 44.3% of equity in Year 2.
 
-$$
-\frac{101 - 108}{108} = -6.5\%
-$$
+That is exactly what the claim asserts, so the wording survives a careful check against the standard idea.
 
-$$
-6.5\% > 5.4\%
-$$
+The statement is true.', 'Non-current assets are about 62.2% of total assets in Year 2.
 
-The actual decline is 6.5%, which is more than the claimed 5.4%.
+That is exactly what the claim asserts, so the wording survives a careful check against the standard idea.
 
-The statement is true.', 'TRUE — Non-current liabilities are the long-term funding claims; here they are long-term bank loan plus bonds payable, compared with total equity.
+The statement is true.', 'Long-term financing covers non-current assets by about 36.5% in year 1.
 
-Name the identity in words: NCL-to-equity share = (long-term bank loan + bonds payable) ÷ total equity.
-
-$$
-\text{NCL} = 214 + 87 = 301
-$$
-
-$$
-\text{Equity} = 679
-$$
-
-$$
-\frac{301}{679} = 44.3\%
-$$
-
-Threshold: less than 96.3% in Year 2. Actual 44.3%.
-
-Reading the arithmetic against the claim: Year 2 NCL/equity is 44.3%, which is consistent with ''less than 96.3%'' so the statement holds.
-
-The statement is true.', 'TRUE — This is a composition claim: express Non-current assets as a percentage of total assets in Year 2.
-
-Name the identity in words: Non-current assets share of total assets in Year 2 = Non-current assets ÷ total assets in Year 2.
-
-From the extract, Non-current assets = 709 and total assets in Year 2 = 1,140. Plug the figures step by step:
-
-$$
-Share = \frac{\text{Non-current assets}}{\text{total assets in Year 2}}
-$$
-
-$$
-Share = \frac{709}{1,140}
-$$
-
-$$
-Share = 62.2\%
-$$
-
-Threshold: more than 57.1%. Actual 62.2%.
-
-Reading the arithmetic against the claim: actual share 62.2% matches ''more than 57.1%'' so the statement holds.
-
-The statement is true.', 'TRUE — Long-term financing is equity plus non-current liabilities; the claim compares that pool with non-current assets.
-
-Name the identity in words: surplus = (equity + non-current liabilities) ÷ non-current assets − 1.
-
-$$
-\text{Equity} + \text{NCL} = 685 + 280 = 965
-$$
-
-$$
-\text{NCA} = 707
-$$
-
-$$
-\frac{965}{707} - 1 = 36.5\%
-$$
-
-Threshold: more than 27.8%. Actual surplus 36.5%.
-
-Reading the arithmetic against the claim: the surplus is 36.5%, which exceeds 27.8% so the statement holds.
+That is exactly what the claim asserts, so the wording survives a careful check against the standard idea.
 
 The statement is true.'] WHERE case_id = 'CASE 6.1.074' AND tier = 'full';
-UPDATE public.economics_cases SET tactical_explanations = ARRAY['TRUE — The balance sheet identity is Assets = Liabilities + Equity.
+UPDATE public.economics_cases SET tactical_explanations = ARRAY['Multi-year protective or operational value groups a registered design with intangible non-current assets.
 
-The wording matches the relevant rule for "Equity Ratio and Lender Risk". The balance sheet identity is Assets = Liabilities + Equity. Classification follows intended use and timing: non-current vs current assets and liabilities; inventory is held for sale; fixed assets are used in operations beyond one year; equity is the owners'' residual claim and is not a scheduled debt repayment. Applied here: "A registered design acquired to protect or support a business''s operations over several years is grouped with intangible non-current assets."
+That is exactly what the claim asserts, so the wording survives a careful check against the standard idea.
 
-The statement is true.', 'TRUE — The balance sheet identity is Assets = Liabilities + Equity.
+The statement is true.', 'Because a registered design is not expected to convert into cash within the operating cycle, it is excluded from current assets.
 
-The claim states: A registered design is not classified as a current asset. The reason given — it is not expected to convert into cash within the normal operating cycle. — fits the chapter rule. The balance sheet identity is Assets = Liabilities + Equity. Classification follows intended use and timing: non-current vs current assets and liabilities; inventory is held for sale; fixed assets are used in operations beyond one year; equity is the owners'' residual claim and is not a scheduled debt repayment.
+That is exactly what the claim asserts, so the wording survives a careful check against the standard idea.
 
-The statement is true.', 'TRUE — The balance sheet identity is Assets = Liabilities + Equity.
+The statement is true.', 'Long-term expected benefit, not physical form, justifies classifying a development patent as non-current.
 
-The claim states: A development patent lacks physical substance but is classified as a non-current intangible asset. The reason given — it provides expected long-term benefit. — fits the chapter rule. The balance sheet identity is Assets = Liabilities + Equity. Classification follows intended use and timing: non-current vs current assets and liabilities; inventory is held for sale; fixed assets are used in operations beyond one year; equity is the owners'' residual claim and is not a scheduled debt repayment.
+That is exactly what the claim asserts, so the wording survives a careful check against the standard idea.
 
-The statement is true.', 'FALSE — Balance-sheet classification follows intended use and the current/non-current split, not physical appearance alone.
+The statement is true.', 'Intended use, not purchase price, drives the non-current classification of the espresso machine.
 
-Price affects measurement; classification between fixed asset and inventory follows intended use.
+Because that detail fails, the whole statement fails even if the topic word looks familiar.
 
-Using the stem facts: "Classifying an espresso machine as a non-current asset depends mainly on its purchase price rather than on management''s intended use."
+The statement is false.', 'Long-term value places an intangible development patent among non-current rather than current assets.
 
-The balance sheet identity is Assets = Liabilities + Equity. Classification follows intended use and timing: non-current vs current assets and liabilities; inventory is held for sale; fixed assets are used in operations beyond one year; equity is the owners'' residual claim and is not a scheduled debt repayment.
-
-The statement is false.', 'TRUE — The balance sheet identity is Assets = Liabilities + Equity.
-
-The claim states: Although a development patent cannot be touched, it appears among non-current assets rather than current assets. The reason given — of its long-term value. — fits the chapter rule. The balance sheet identity is Assets = Liabilities + Equity. Classification follows intended use and timing: non-current vs current assets and liabilities; inventory is held for sale; fixed assets are used in operations beyond one year; equity is the owners'' residual claim and is not a scheduled debt repayment.
+That is exactly what the claim asserts, so the wording survives a careful check against the standard idea.
 
 The statement is true.'] WHERE case_id = 'CASE 6.1.075' AND tier = 'full';

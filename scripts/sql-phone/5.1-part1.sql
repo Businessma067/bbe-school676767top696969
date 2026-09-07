@@ -1,903 +1,528 @@
 -- Update expanded explanations for 5.1-part1 (25 cases).
 -- Safe to re-run: only updates tactical_explanations.
 
-UPDATE public.economics_cases SET tactical_explanations = ARRAY['FALSE — Marketing''s product definition is deliberately wide: it covers every exchangeable good and every exchangeable service that can fulfil customer wishes and needs. Physical form is not a requirement.
+UPDATE public.economics_cases SET tactical_explanations = ARRAY['Products include both goods and services when they are exchanged to fulfil customer wishes and needs.
 
-Products include both goods and services when they are exchanged to fulfil customer wishes and needs.
+Because that detail fails, the whole statement fails even if the topic word looks familiar.
 
-Those restricting words stretch a limited idea past what marketing allows.
+The statement is false.', 'The textbook definition treats exchangeable goods and services together as products aimed at customer wishes and needs.
 
-The statement is false.
-', 'TRUE — In marketing terminology, a product is every good and/or service that can be exchanged to fulfil the wishes and needs of customers — tangible merchandise and intangible services alike.
+That is exactly what the claim asserts, so the wording survives a careful check against the standard idea.
 
-The textbook definition treats exchangeable goods and services together as products aimed at customer wishes and needs.
+The statement is true.', 'Producer products are defined by b2b sale to another business, not by the manufacturing location.
 
-The sentence therefore reports the concept accurately for this case.
+Because that detail fails, the whole statement fails even if the topic word looks familiar.
 
-The statement is true.
-', 'FALSE — Producer products are goods and services sold from one business to another (B2B). What matters is the purchaser''s identity as a business customer, not factory origin, weight, packaging, or the seller''s registration alone.
+The statement is false.', 'Consumer products are defined by b2c sale to consumers or households, not by packaging size.
 
-Producer products are defined by b2b sale to another business, not by the manufacturing location.
+Because that detail fails, the whole statement fails even if the topic word looks familiar.
 
-Once the defining feature is restored, the assertion falls away.
+The statement is false.', 'A printer bought for office use by a business is a producer product even if identical home models exist.
 
-The statement is false.
-', 'FALSE — Consumer products are goods and services sold to consumers or private households (B2C). The household or individual buyer defines the label, not retail branding, luxury status, or physical size.
+The absolute wording "always" turns a familiar idea into an overclaim. One ordinary counterexample is enough to reject it.
 
-Consumer products are defined by b2c sale to consumers or households, not by packaging size.
+The statement is false.'] WHERE case_id = 'CASE 5.1.01' AND tier = 'full';
+UPDATE public.economics_cases SET tactical_explanations = ARRAY['A printer bought for private home use is a consumer product even when the same model is sold to offices.
 
-Swap in the textbook criterion and the sentence no longer describes the case.
+The absolute wording "always" turns a familiar idea into an overclaim. One ordinary counterexample is enough to reject it.
 
-The statement is false.
-', 'FALSE — Consumer products are goods and services sold to consumers or private households (B2C). The household or individual buyer defines the label, not retail branding, luxury status, or physical size.
+The statement is false.', 'Exchangeable goods and services that address customer wishes and needs fall within the marketing product definition.
 
-On this stem (printer / households): a printer bought for office use by a business is a producer product even if identical home models exist.
+That is exactly what the claim asserts, so the wording survives a careful check against the standard idea.
 
-Those restricting words stretch a limited idea past what marketing allows.
+The statement is true.', 'Goods and services alike count as products once they are exchanged to fulfil customer wishes and needs.
 
-The statement is false.
-'] WHERE case_id = 'CASE 5.1.01' AND tier = 'full';
-UPDATE public.economics_cases SET tactical_explanations = ARRAY['FALSE — Producer products are goods and services sold from one business to another (B2B). What matters is the purchaser''s identity as a business customer, not factory origin, weight, packaging, or the seller''s registration alone.
+That is exactly what the claim asserts, so the wording survives a careful check against the standard idea.
 
-On this stem (printer / printers): a printer bought for private home use is a consumer product even when the same model is sold to offices.
+The statement is true.', 'The product definition explicitly allows business customers and household customers.
 
-Those restricting words stretch a limited idea past what marketing allows.
+That is exactly what the claim asserts, so the wording survives a careful check against the standard idea.
 
-The statement is false.
-', 'TRUE — In marketing terminology, a product is every good and/or service that can be exchanged to fulfil the wishes and needs of customers — tangible merchandise and intangible services alike.
+The statement is true.', 'B2b sales of goods and services to other businesses are classified as producer products.
 
-Exchangeable goods and services that address customer wishes and needs fall within the marketing product definition.
+That is exactly what the claim asserts, so the wording survives a careful check against the standard idea.
 
-The sentence therefore reports the concept accurately for this case.
+The statement is true.'] WHERE case_id = 'CASE 5.1.02' AND tier = 'full';
+UPDATE public.economics_cases SET tactical_explanations = ARRAY['B2c sales directed at consumers or households are classified as consumer products.
 
-The statement is true.
-', 'TRUE — In marketing terminology, a product is every good and/or service that can be exchanged to fulfil the wishes and needs of customers — tangible merchandise and intangible services alike.
+That is exactly what the claim asserts, so the wording survives a careful check against the standard idea.
 
-Goods and services alike count as products once they are exchanged to fulfil customer wishes and needs.
+The statement is true.', 'Services such as computer support are products when exchanged to fulfil customer wishes and needs.
 
-The sentence therefore reports the concept accurately for this case.
+The absolute wording "cannot" turns a familiar idea into an overclaim. One ordinary counterexample is enough to reject it.
 
-The statement is true.
-', 'TRUE — Customers in the product definition may be other businesses or private households. That customer identity — not the factory process alone — drives B2B versus B2C product labels.
+The statement is false.', 'Producer products are linked to b2b marketing because the purchaser is another business.
 
-On this stem (households): the product definition explicitly allows business customers and household customers.
+That is exactly what the claim asserts, so the wording survives a careful check against the standard idea.
 
-Nothing in the wording contradicts that marketing test, so the claim is sound.
+The statement is true.', 'Consumer products are linked to b2c marketing because the purchaser is a consumer or household.
 
-The statement is true.
-', 'TRUE — Producer products are goods and services sold from one business to another (B2B). What matters is the purchaser''s identity as a business customer, not factory origin, weight, packaging, or the seller''s registration alone.
+That is exactly what the claim asserts, so the wording survives a careful check against the standard idea.
 
-B2b sales of goods and services to other businesses are classified as producer products.
+The statement is true.', 'Office purchase by a business makes the printer a producer product regardless of identical home models.
 
-The sentence therefore reports the concept accurately for this case.
+That is exactly what the claim asserts, so the wording survives a careful check against the standard idea.
 
-The statement is true.
-'] WHERE case_id = 'CASE 5.1.02' AND tier = 'full';
-UPDATE public.economics_cases SET tactical_explanations = ARRAY['TRUE — Consumer products are goods and services sold to consumers or private households (B2C). The household or individual buyer defines the label, not retail branding, luxury status, or physical size.
+The statement is true.'] WHERE case_id = 'CASE 5.1.03' AND tier = 'full';
+UPDATE public.economics_cases SET tactical_explanations = ARRAY['Exchange is required; free advice not offered for trade falls outside the marketing product definition.
 
-B2c sales directed at consumers or households are classified as consumer products.
+Because that detail fails, the whole statement fails even if the topic word looks familiar.
 
-Nothing in the wording contradicts that marketing test, so the claim is sound.
+The statement is false.', 'Home purchase by a household makes the printer a consumer product regardless of identical office models.
 
-The statement is true.
-', 'FALSE — Marketing''s product definition is deliberately wide: it covers every exchangeable good and every exchangeable service that can fulfil customer wishes and needs. Physical form is not a requirement.
+That is exactly what the claim asserts, so the wording survives a careful check against the standard idea.
 
-On this stem (Computer / support services): services such as computer support are products when exchanged to fulfil customer wishes and needs.
+The statement is true.', 'Household-directed computer support is a b2c consumer product in service form.
 
-The absolute wording is what breaks the claim once the correct test is applied.
+That is exactly what the claim asserts, so the wording survives a careful check against the standard idea.
 
-The statement is false.
-', 'TRUE — Producer products are goods and services sold from one business to another (B2B). What matters is the purchaser''s identity as a business customer, not factory origin, weight, packaging, or the seller''s registration alone.
+The statement is true.', 'Items not offered for external exchange are not products in marketing terminology.
 
-Producer products are linked to b2b marketing because the purchaser is another business.
+Because that detail fails, the whole statement fails even if the topic word looks familiar.
 
-Under that definition the assertion is the right description of the situation.
+The statement is false.', 'Business-directed computer support is a b2b producer product in service form.
 
-The statement is true.
-', 'TRUE — Consumer products are goods and services sold to consumers or private households (B2C). The household or individual buyer defines the label, not retail branding, luxury status, or physical size.
+That is exactly what the claim asserts, so the wording survives a careful check against the standard idea.
 
-On this stem (households): consumer products are linked to b2c marketing because the purchaser is a consumer or household.
+The statement is true.'] WHERE case_id = 'CASE 5.1.04' AND tier = 'full';
+UPDATE public.economics_cases SET tactical_explanations = ARRAY['B2b and b2c describe whether the customer is a business or a household, not production technology.
 
-Under that definition the assertion is the right description of the situation.
+Because that detail fails, the whole statement fails even if the topic word looks familiar.
 
-The statement is true.
-', 'TRUE — Producer products are goods and services sold from one business to another (B2B). What matters is the purchaser''s identity as a business customer, not factory origin, weight, packaging, or the seller''s registration alone.
+The statement is false.', 'Products must be capable of exchange; items not offered for trade fall outside the definition.
 
-Office purchase by a business makes the printer a producer product regardless of identical home models.
+That is exactly what the claim asserts, so the wording survives a careful check against the standard idea.
 
-Nothing in the wording contradicts that marketing test, so the claim is sound.
+The statement is true.', 'Exchanged services that satisfy needs qualify as products alongside goods.
 
-The statement is true.
-'] WHERE case_id = 'CASE 5.1.03' AND tier = 'full';
-UPDATE public.economics_cases SET tactical_explanations = ARRAY['FALSE — Exchange is required for a good or service to count as a product in marketing terminology. Items that are only moved internally, given without trade, or not offered for exchange fall outside that definition.
+That is exactly what the claim asserts, so the wording survives a careful check against the standard idea.
 
-Exchange is required; free advice not offered for trade falls outside the marketing product definition.
+The statement is true.', 'Exchanged goods that satisfy wishes and needs are products within marketing terminology.
 
-Once the defining feature is restored, the assertion falls away.
+That is exactly what the claim asserts, so the wording survives a careful check against the standard idea.
 
-The statement is false.
-', 'TRUE — Consumer products are goods and services sold to consumers or private households (B2C). The household or individual buyer defines the label, not retail branding, luxury status, or physical size.
+The statement is true.', 'Sales to business customers classify the printer as a b2b producer product.
 
-Home purchase by a household makes the printer a consumer product regardless of identical office models.
+That is exactly what the claim asserts, so the wording survives a careful check against the standard idea.
 
-Nothing in the wording contradicts that marketing test, so the claim is sound.
+The statement is true.'] WHERE case_id = 'CASE 5.1.05' AND tier = 'full';
+UPDATE public.economics_cases SET tactical_explanations = ARRAY['Sales to household customers classify the printer as a b2c consumer product.
 
-The statement is true.
-', 'TRUE — Consumer products are goods and services sold to consumers or private households (B2C). The household or individual buyer defines the label, not retail branding, luxury status, or physical size.
+That is exactly what the claim asserts, so the wording survives a careful check against the standard idea.
 
-On this stem (Computer / support services): household-directed computer support is a b2c consumer product in service form.
+The statement is true.', 'Identical printer models shift between producer and consumer labels with the customer, not the design.
 
-Nothing in the wording contradicts that marketing test, so the claim is sound.
+That is exactly what the claim asserts, so the wording survives a careful check against the standard idea.
 
-The statement is true.
-', 'FALSE — Exchange is required for a good or service to count as a product in marketing terminology. Items that are only moved internally, given without trade, or not offered for exchange fall outside that definition.
+The statement is true.', 'B2b exchange with a business buyer makes the printer a producer product.
 
-Items not offered for external exchange are not products in marketing terminology.
+That is exactly what the claim asserts, so the wording survives a careful check against the standard idea.
 
-Swap in the textbook criterion and the sentence no longer describes the case.
+The statement is true.', 'B2c exchange with a household buyer makes the printer a consumer product.
 
-The statement is false.
-', 'TRUE — Producer products are goods and services sold from one business to another (B2B). What matters is the purchaser''s identity as a business customer, not factory origin, weight, packaging, or the seller''s registration alone.
+That is exactly what the claim asserts, so the wording survives a careful check against the standard idea.
 
-On this stem (Computer / support services): business-directed computer support is a b2b producer product in service form.
+The statement is true.', 'Commercial use by a business purchaser defines the printer as a producer product.
 
-Under that definition the assertion is the right description of the situation.
+That is exactly what the claim asserts, so the wording survives a careful check against the standard idea.
 
-The statement is true.
-'] WHERE case_id = 'CASE 5.1.04' AND tier = 'full';
-UPDATE public.economics_cases SET tactical_explanations = ARRAY['FALSE — Consumer products are goods and services sold to consumers or private households (B2C). The household or individual buyer defines the label, not retail branding, luxury status, or physical size.
+The statement is true.'] WHERE case_id = 'CASE 5.1.06' AND tier = 'full';
+UPDATE public.economics_cases SET tactical_explanations = ARRAY['Customers may be other businesses or private households according to the product definition.
 
-B2b and b2c describe whether the customer is a business or a household, not production technology.
+Because that detail fails, the whole statement fails even if the topic word looks familiar.
 
-Swap in the textbook criterion and the sentence no longer describes the case.
+The statement is false.', 'Without exchange, gifted goods are not products in the marketing sense.
 
-The statement is false.
-', 'TRUE — Exchange is required for a good or service to count as a product in marketing terminology. Items that are only moved internally, given without trade, or not offered for exchange fall outside that definition.
+Because that detail fails, the whole statement fails even if the topic word looks familiar.
 
-Products must be capable of exchange; items not offered for trade fall outside the definition.
+The statement is false.', 'Consumer products are defined by household or consumer purchase, not by physical size alone.
 
-Under that definition the assertion is the right description of the situation.
+Because that detail fails, the whole statement fails even if the topic word looks familiar.
 
-The statement is true.
-', 'TRUE — A product in marketing is any good and/or service that can be exchanged to fulfil customer wishes and needs, whether the customer is a firm or a household.
+The statement is false.', 'Personal or domestic use by a household purchaser defines the printer as a consumer product.
 
-On this stem (maintenance contracts): exchanged services that satisfy needs qualify as products alongside goods.
+That is exactly what the claim asserts, so the wording survives a careful check against the standard idea.
 
-The sentence therefore reports the concept accurately for this case.
+The statement is true.', 'Producer products are defined by business purchase, not by weight or bulk alone.
 
-The statement is true.
-', 'TRUE — A product in marketing is any good and/or service that can be exchanged to fulfil customer wishes and needs, whether the customer is a firm or a household.
+The absolute wording "regardless" turns a familiar idea into an overclaim. One ordinary counterexample is enough to reject it.
 
-Exchanged goods that satisfy wishes and needs are products within marketing terminology.
+The statement is false.'] WHERE case_id = 'CASE 5.1.07' AND tier = 'full';
+UPDATE public.economics_cases SET tactical_explanations = ARRAY['Services sold to businesses are producer products in b2b exchange.
 
-Under that definition the assertion is the right description of the situation.
+Because that detail fails, the whole statement fails even if the topic word looks familiar.
 
-The statement is true.
-', 'TRUE — Producer products are goods and services sold from one business to another (B2B). What matters is the purchaser''s identity as a business customer, not factory origin, weight, packaging, or the seller''s registration alone.
+The statement is false.', 'Sales to a business customer classify the printer as a b2b producer product, not a consumer product.
 
-On this stem (printer / corporate client): sales to business customers classify the printer as a b2b producer product.
+The absolute wording "every" turns a familiar idea into an overclaim. One ordinary counterexample is enough to reject it.
 
-Under that definition the assertion is the right description of the situation.
+The statement is false.', 'Operational needs of a business buyer place an exchanged printer among producer products.
 
-The statement is true.
-'] WHERE case_id = 'CASE 5.1.05' AND tier = 'full';
-UPDATE public.economics_cases SET tactical_explanations = ARRAY['TRUE — Consumer products are goods and services sold to consumers or private households (B2C). The household or individual buyer defines the label, not retail branding, luxury status, or physical size.
+That is exactly what the claim asserts, so the wording survives a careful check against the standard idea.
 
-On this stem (printer / household): sales to household customers classify the printer as a b2c consumer product.
+The statement is true.', 'Sales to a household customer classify the printer as a b2c consumer product, not a producer product.
 
-Nothing in the wording contradicts that marketing test, so the claim is sound.
+Because that detail fails, the whole statement fails even if the topic word looks familiar.
 
-The statement is true.
-', 'TRUE — Producer products are goods and services sold from one business to another (B2B). What matters is the purchaser''s identity as a business customer, not factory origin, weight, packaging, or the seller''s registration alone.
+The statement is false.', 'Identical printer models can be producer or consumer products depending on the buyer.
 
-Identical printer models shift between producer and consumer labels with the customer, not the design.
+The absolute wording "all" turns a familiar idea into an overclaim. One ordinary counterexample is enough to reject it.
 
-Under that definition the assertion is the right description of the situation.
+The statement is false.'] WHERE case_id = 'CASE 5.1.08' AND tier = 'full';
+UPDATE public.economics_cases SET tactical_explanations = ARRAY['Personal wishes of a household buyer place an exchanged printer among consumer products.
 
-The statement is true.
-', 'TRUE — Producer products are goods and services sold from one business to another (B2B). What matters is the purchaser''s identity as a business customer, not factory origin, weight, packaging, or the seller''s registration alone.
+That is exactly what the claim asserts, so the wording survives a careful check against the standard idea.
 
-On this stem (printer / corporate client): b2b exchange with a business buyer makes the printer a producer product.
+The statement is true.', 'Inter-business sale of a printer to a corporate client is a textbook producer product case.
 
-Under that definition the assertion is the right description of the situation.
+That is exactly what the claim asserts, so the wording survives a careful check against the standard idea.
 
-The statement is true.
-', 'TRUE — Consumer products are goods and services sold to consumers or private households (B2C). The household or individual buyer defines the label, not retail branding, luxury status, or physical size.
+The statement is true.', 'A printer can be a product when exchanged as a good or service to fulfil customer wishes and needs.
 
-On this stem (printer / household): b2c exchange with a household buyer makes the printer a consumer product.
+Because that detail fails, the whole statement fails even if the topic word looks familiar.
 
-The sentence therefore reports the concept accurately for this case.
+The statement is false.', 'Exchange is required for a printer to count as a product in marketing terminology.
 
-The statement is true.
-', 'TRUE — Producer products are goods and services sold from one business to another (B2B). What matters is the purchaser''s identity as a business customer, not factory origin, weight, packaging, or the seller''s registration alone.
+Because that detail fails, the whole statement fails even if the topic word looks familiar.
 
-On this stem (printer / corporate client): commercial use by a business purchaser defines the printer as a producer product.
+The statement is false.', 'Household sale of a printer to a private household is a textbook consumer product case.
 
-Under that definition the assertion is the right description of the situation.
+That is exactly what the claim asserts, so the wording survives a careful check against the standard idea.
 
-The statement is true.
-'] WHERE case_id = 'CASE 5.1.06' AND tier = 'full';
-UPDATE public.economics_cases SET tactical_explanations = ARRAY['FALSE — The same catalogue item can be a producer product in one sale and a consumer product in another. Classification follows the buyer in that transaction, so absolute words like "always" or "only" usually fail.
+The statement is true.'] WHERE case_id = 'CASE 5.1.09' AND tier = 'full';
+UPDATE public.economics_cases SET tactical_explanations = ARRAY['A printer remains a product in either channel; only the producer versus consumer label changes with the buyer.
 
-Customers may be other businesses or private households according to the product definition.
+That is exactly what the claim asserts, so the wording survives a careful check against the standard idea.
 
-The absolute wording is what breaks the claim once the correct test is applied.
+The statement is true.', 'Customer identity on the invoice determines whether the same printer is recorded as producer or consumer.
 
-The statement is false.
-', 'FALSE — Exchange is required for a good or service to count as a product in marketing terminology. Items that are only moved internally, given without trade, or not offered for exchange fall outside that definition.
+That is exactly what the claim asserts, so the wording survives a careful check against the standard idea.
 
-Without exchange, gifted goods are not products in the marketing sense.
+The statement is true.', 'Wishes and needs give the exchanged printer its role as a product rather than a non-market item.
 
-The mislabelled category or reversed comparison is enough to reject the claim.
+That is exactly what the claim asserts, so the wording survives a careful check against the standard idea.
 
-The statement is false.
-', 'FALSE — Consumer products are goods and services sold to consumers or private households (B2C). The household or individual buyer defines the label, not retail branding, luxury status, or physical size.
+The statement is true.', 'Traded printer offerings create exchange value whether the buyer is a business or a household.
 
-Consumer products are defined by household or consumer purchase, not by physical size alone.
+That is exactly what the claim asserts, so the wording survives a careful check against the standard idea.
 
-The absolute wording is what breaks the claim once the correct test is applied.
+The statement is true.', 'Sales to business customers classify the computer as a b2b producer product.
 
-The statement is false.
-', 'TRUE — Consumer products are goods and services sold to consumers or private households (B2C). The household or individual buyer defines the label, not retail branding, luxury status, or physical size.
+That is exactly what the claim asserts, so the wording survives a careful check against the standard idea.
 
-On this stem (printer / household): personal or domestic use by a household purchaser defines the printer as a consumer product.
+The statement is true.'] WHERE case_id = 'CASE 5.1.10' AND tier = 'full';
+UPDATE public.economics_cases SET tactical_explanations = ARRAY['Sales to household customers classify the computer as a b2c consumer product.
 
-Nothing in the wording contradicts that marketing test, so the claim is sound.
+That is exactly what the claim asserts, so the wording survives a careful check against the standard idea.
 
-The statement is true.
-', 'FALSE — Producer products are goods and services sold from one business to another (B2B). What matters is the purchaser''s identity as a business customer, not factory origin, weight, packaging, or the seller''s registration alone.
+The statement is true.', 'Business customers have operational wishes and needs that exchanged printer offerings can fulfil as products.
 
-Producer products are defined by business purchase, not by weight or bulk alone.
+Because that detail fails, the whole statement fails even if the topic word looks familiar.
 
-Those restricting words stretch a limited idea past what marketing allows.
+The statement is false.', 'Household customers acquire consumer products such as a printer through b2c exchange.
 
-The statement is false.
-'] WHERE case_id = 'CASE 5.1.07' AND tier = 'full';
-UPDATE public.economics_cases SET tactical_explanations = ARRAY['FALSE — Consumer products are goods and services sold to consumers or private households (B2C). The household or individual buyer defines the label, not retail branding, luxury status, or physical size.
+Because that detail fails, the whole statement fails even if the topic word looks familiar.
 
-Services sold to businesses are producer products in b2b exchange.
+The statement is false.', 'Identical computer models shift between producer and consumer labels with the customer, not the design.
 
-One clear counterexample under the right criterion is enough to reject the sentence.
+That is exactly what the claim asserts, so the wording survives a careful check against the standard idea.
 
-The statement is false.
-', 'FALSE — Consumer products are goods and services sold to consumers or private households (B2C). The household or individual buyer defines the label, not retail branding, luxury status, or physical size.
+The statement is true.', 'Internal transfers not offered for external exchange are not products in the marketing sense.
 
-On this stem (printer / corporate client): sales to a business customer classify the printer as a b2b producer product, not a consumer product.
+Because that detail fails, the whole statement fails even if the topic word looks familiar.
 
-The mislabelled category or reversed comparison is enough to reject the claim.
+The statement is false.'] WHERE case_id = 'CASE 5.1.11' AND tier = 'full';
+UPDATE public.economics_cases SET tactical_explanations = ARRAY['B2b exchange with a business buyer makes the computer a producer product.
 
-The statement is false.
-', 'TRUE — A product in marketing is any good and/or service that can be exchanged to fulfil customer wishes and needs, whether the customer is a firm or a household.
+That is exactly what the claim asserts, so the wording survives a careful check against the standard idea.
 
-On this stem (printer / corporate client): operational needs of a business buyer place an exchanged printer among producer products.
+The statement is true.', 'Commercial use by a business purchaser defines the computer as a producer product.
 
-Under that definition the assertion is the right description of the situation.
+That is exactly what the claim asserts, so the wording survives a careful check against the standard idea.
 
-The statement is true.
-', 'FALSE — Producer products are goods and services sold from one business to another (B2B). What matters is the purchaser''s identity as a business customer, not factory origin, weight, packaging, or the seller''s registration alone.
+The statement is true.', 'Personal or domestic use by a household purchaser defines the computer as a consumer product.
 
-On this stem (printer / household): sales to a household customer classify the printer as a b2c consumer product, not a producer product.
+That is exactly what the claim asserts, so the wording survives a careful check against the standard idea.
 
-Swap in the textbook criterion and the sentence no longer describes the case.
+The statement is true.', 'Operational needs of a business buyer place an exchanged computer among producer products.
 
-The statement is false.
-', 'FALSE — The same catalogue item can be a producer product in one sale and a consumer product in another. Classification follows the buyer in that transaction, so absolute words like "always" or "only" usually fail.
+That is exactly what the claim asserts, so the wording survives a careful check against the standard idea.
 
-Identical printer models can be producer or consumer products depending on the buyer.
+The statement is true.', 'Personal wishes of a household buyer place an exchanged computer among consumer products.
 
-The absolute wording is what breaks the claim once the correct test is applied.
+That is exactly what the claim asserts, so the wording survives a careful check against the standard idea.
 
-The statement is false.
-'] WHERE case_id = 'CASE 5.1.08' AND tier = 'full';
-UPDATE public.economics_cases SET tactical_explanations = ARRAY['TRUE — A product in marketing is any good and/or service that can be exchanged to fulfil customer wishes and needs, whether the customer is a firm or a household.
+The statement is true.'] WHERE case_id = 'CASE 5.1.12' AND tier = 'full';
+UPDATE public.economics_cases SET tactical_explanations = ARRAY['B2b classification depends on the business purchaser, not solely on the seller''s industry.
 
-On this stem (printer / household): personal wishes of a household buyer place an exchanged printer among consumer products.
+Because that detail fails, the whole statement fails even if the topic word looks familiar.
 
-Under that definition the assertion is the right description of the situation.
+The statement is false.', 'Inter-business sale of a computer to a manufacturing firm is a textbook producer product case.
 
-The statement is true.
-', 'TRUE — Producer products are goods and services sold from one business to another (B2B). What matters is the purchaser''s identity as a business customer, not factory origin, weight, packaging, or the seller''s registration alone.
+That is exactly what the claim asserts, so the wording survives a careful check against the standard idea.
 
-On this stem (printer / corporate client): inter-business sale of a printer to a corporate client is a textbook producer product case.
+The statement is true.', 'B2c classification depends on the household purchaser, not on retail branding alone.
 
-Under that definition the assertion is the right description of the situation.
+Because that detail fails, the whole statement fails even if the topic word looks familiar.
 
-The statement is true.
-', 'FALSE — Marketing''s product definition is deliberately wide: it covers every exchangeable good and every exchangeable service that can fulfil customer wishes and needs. Physical form is not a requirement.
+The statement is false.', 'Household sale of a computer to a family home is a textbook consumer product case.
 
-A printer can be a product when exchanged as a good or service to fulfil customer wishes and needs.
+That is exactly what the claim asserts, so the wording survives a careful check against the standard idea.
 
-Swap in the textbook criterion and the sentence no longer describes the case.
+The statement is true.', 'A computer remains a product in either channel; only the producer versus consumer label changes with the buyer.
 
-The statement is false.
-', 'FALSE — Exchange is required for a good or service to count as a product in marketing terminology. Items that are only moved internally, given without trade, or not offered for exchange fall outside that definition.
+That is exactly what the claim asserts, so the wording survives a careful check against the standard idea.
 
-Exchange is required for a printer to count as a product in marketing terminology.
+The statement is true.'] WHERE case_id = 'CASE 5.1.13' AND tier = 'full';
+UPDATE public.economics_cases SET tactical_explanations = ARRAY['Payment alone does not make the sale b2c; a business buyer implies b2b and a producer product.
 
-The mislabelled category or reversed comparison is enough to reject the claim.
+Because that detail fails, the whole statement fails even if the topic word looks familiar.
 
-The statement is false.
-', 'TRUE — Consumer products are goods and services sold to consumers or private households (B2C). The household or individual buyer defines the label, not retail branding, luxury status, or physical size.
+The statement is false.', 'The seller''s company status does not make a household sale b2b; it remains b2c with a consumer product.
 
-On this stem (printer / household): household sale of a printer to a private household is a textbook consumer product case.
+Because that detail fails, the whole statement fails even if the topic word looks familiar.
 
-Under that definition the assertion is the right description of the situation.
+The statement is false.', 'Producer products include goods and services sold to businesses, including a finished printer for a corporate client.
 
-The statement is true.
-'] WHERE case_id = 'CASE 5.1.09' AND tier = 'full';
-UPDATE public.economics_cases SET tactical_explanations = ARRAY['TRUE — Consumer products are goods and services sold to consumers or private households (B2C). The household or individual buyer defines the label, not retail branding, luxury status, or physical size.
+The absolute wording "cannot" turns a familiar idea into an overclaim. One ordinary counterexample is enough to reject it.
 
-On this stem (printer / corporate client): a printer remains a product in either channel; only the producer versus consumer label changes with the buyer.
+The statement is false.', 'Consumer products include ordinary goods and services sold to households, including a printer for a private household.
 
-The sentence therefore reports the concept accurately for this case.
+The absolute wording "cannot" turns a familiar idea into an overclaim. One ordinary counterexample is enough to reject it.
 
-The statement is true.
-', 'TRUE — Producer products are goods and services sold from one business to another (B2B). What matters is the purchaser''s identity as a business customer, not factory origin, weight, packaging, or the seller''s registration alone.
+The statement is false.', 'Customer identity on the invoice determines whether the same computer is recorded as producer or consumer.
 
-On this stem (consultancy / printer): customer identity on the invoice determines whether the same printer is recorded as producer or consumer.
+That is exactly what the claim asserts, so the wording survives a careful check against the standard idea.
 
-Under that definition the assertion is the right description of the situation.
+The statement is true.'] WHERE case_id = 'CASE 5.1.14' AND tier = 'full';
+UPDATE public.economics_cases SET tactical_explanations = ARRAY['Wishes and needs give the exchanged computer its role as a product rather than a non-market item.
 
-The statement is true.
-', 'TRUE — A product in marketing is any good and/or service that can be exchanged to fulfil customer wishes and needs, whether the customer is a firm or a household.
+That is exactly what the claim asserts, so the wording survives a careful check against the standard idea.
 
-Wishes and needs give the exchanged printer its role as a product rather than a non-market item.
+The statement is true.', 'A printer is a product when exchanged to fulfil wishes and needs, regardless of advertising timing.
 
-The sentence therefore reports the concept accurately for this case.
+Because that detail fails, the whole statement fails even if the topic word looks familiar.
 
-The statement is true.
-', 'TRUE — Customers in the product definition may be other businesses or private households. That customer identity — not the factory process alone — drives B2B versus B2C product labels.
+The statement is false.', 'Sales to a business customer classify the computer as a b2b producer product, not a consumer product.
 
-On this stem (printer / corporate client): traded printer offerings create exchange value whether the buyer is a business or a household.
+The absolute wording "every" turns a familiar idea into an overclaim. One ordinary counterexample is enough to reject it.
 
-The sentence therefore reports the concept accurately for this case.
+The statement is false.', 'Sales to a household customer classify the computer as a b2c consumer product, not a producer product.
 
-The statement is true.
-', 'TRUE — Producer products are goods and services sold from one business to another (B2B). What matters is the purchaser''s identity as a business customer, not factory origin, weight, packaging, or the seller''s registration alone.
+Because that detail fails, the whole statement fails even if the topic word looks familiar.
 
-On this stem (computer / manufacturing firm): sales to business customers classify the computer as a b2b producer product.
+The statement is false.', 'Identical computer models can be producer or consumer products depending on the buyer.
 
-Nothing in the wording contradicts that marketing test, so the claim is sound.
+The absolute wording "all" turns a familiar idea into an overclaim. One ordinary counterexample is enough to reject it.
 
-The statement is true.
-'] WHERE case_id = 'CASE 5.1.10' AND tier = 'full';
-UPDATE public.economics_cases SET tactical_explanations = ARRAY['TRUE — Consumer products are goods and services sold to consumers or private households (B2C). The household or individual buyer defines the label, not retail branding, luxury status, or physical size.
+The statement is false.'] WHERE case_id = 'CASE 5.1.15' AND tier = 'full';
+UPDATE public.economics_cases SET tactical_explanations = ARRAY['A computer can be a product when exchanged as a good or service to fulfil customer wishes and needs.
 
-On this stem (computer / family home): sales to household customers classify the computer as a b2c consumer product.
+Because that detail fails, the whole statement fails even if the topic word looks familiar.
 
-The sentence therefore reports the concept accurately for this case.
+The statement is false.', 'Traded computer offerings create exchange value whether the buyer is a business or a household.
 
-The statement is true.
-', 'FALSE — A product in marketing is any good and/or service that can be exchanged to fulfil customer wishes and needs, whether the customer is a firm or a household.
+That is exactly what the claim asserts, so the wording survives a careful check against the standard idea.
 
-On this stem (printer / corporate client): business customers have operational wishes and needs that exchanged printer offerings can fulfil as products.
+The statement is true.', 'Exchange is required for a computer to count as a product in marketing terminology.
 
-Once the defining feature is restored, the assertion falls away.
+Because that detail fails, the whole statement fails even if the topic word looks familiar.
 
-The statement is false.
-', 'FALSE — Exchange is required for a good or service to count as a product in marketing terminology. Items that are only moved internally, given without trade, or not offered for exchange fall outside that definition.
+The statement is false.', 'Business customers have operational wishes and needs that exchanged computer offerings can fulfil as products.
 
-On this stem (printer / household): household customers acquire consumer products such as a printer through b2c exchange.
+Because that detail fails, the whole statement fails even if the topic word looks familiar.
 
-One clear counterexample under the right criterion is enough to reject the sentence.
+The statement is false.', 'Household customers acquire consumer products such as a computer through b2c exchange.
 
-The statement is false.
-', 'TRUE — Producer products are goods and services sold from one business to another (B2B). What matters is the purchaser''s identity as a business customer, not factory origin, weight, packaging, or the seller''s registration alone.
+Because that detail fails, the whole statement fails even if the topic word looks familiar.
 
-Identical computer models shift between producer and consumer labels with the customer, not the design.
+The statement is false.'] WHERE case_id = 'CASE 5.1.16' AND tier = 'full';
+UPDATE public.economics_cases SET tactical_explanations = ARRAY['Sales to business customers classify the desk as a b2b producer product.
 
-The sentence therefore reports the concept accurately for this case.
+That is exactly what the claim asserts, so the wording survives a careful check against the standard idea.
 
-The statement is true.
-', 'FALSE — Exchange is required for a good or service to count as a product in marketing terminology. Items that are only moved internally, given without trade, or not offered for exchange fall outside that definition.
+The statement is true.', 'Sales to household customers classify the desk as a b2c consumer product.
 
-On this stem (printer): internal transfers not offered for external exchange are not products in the marketing sense.
+That is exactly what the claim asserts, so the wording survives a careful check against the standard idea.
 
-The mislabelled category or reversed comparison is enough to reject the claim.
+The statement is true.', 'Identical desk models shift between producer and consumer labels with the customer, not the design.
 
-The statement is false.
-'] WHERE case_id = 'CASE 5.1.11' AND tier = 'full';
-UPDATE public.economics_cases SET tactical_explanations = ARRAY['TRUE — Producer products are goods and services sold from one business to another (B2B). What matters is the purchaser''s identity as a business customer, not factory origin, weight, packaging, or the seller''s registration alone.
+That is exactly what the claim asserts, so the wording survives a careful check against the standard idea.
 
-On this stem (computer / manufacturing firm): b2b exchange with a business buyer makes the computer a producer product.
+The statement is true.', 'B2b exchange with a business buyer makes the desk a producer product.
 
-Nothing in the wording contradicts that marketing test, so the claim is sound.
+That is exactly what the claim asserts, so the wording survives a careful check against the standard idea.
 
-The statement is true.
-', 'TRUE — Producer products are goods and services sold from one business to another (B2B). What matters is the purchaser''s identity as a business customer, not factory origin, weight, packaging, or the seller''s registration alone.
+The statement is true.', 'Commercial use by a business purchaser defines the desk as a producer product.
 
-On this stem (computer / manufacturing firm): commercial use by a business purchaser defines the computer as a producer product.
+That is exactly what the claim asserts, so the wording survives a careful check against the standard idea.
 
-Nothing in the wording contradicts that marketing test, so the claim is sound.
+The statement is true.'] WHERE case_id = 'CASE 5.1.17' AND tier = 'full';
+UPDATE public.economics_cases SET tactical_explanations = ARRAY['Personal or domestic use by a household purchaser defines the desk as a consumer product.
 
-The statement is true.
-', 'TRUE — Consumer products are goods and services sold to consumers or private households (B2C). The household or individual buyer defines the label, not retail branding, luxury status, or physical size.
+That is exactly what the claim asserts, so the wording survives a careful check against the standard idea.
 
-On this stem (computer / family home): personal or domestic use by a household purchaser defines the computer as a consumer product.
+The statement is true.', 'Internal transfers not offered for external exchange are not products in the marketing sense.
 
-The sentence therefore reports the concept accurately for this case.
+Because that detail fails, the whole statement fails even if the topic word looks familiar.
 
-The statement is true.
-', 'TRUE — A product in marketing is any good and/or service that can be exchanged to fulfil customer wishes and needs, whether the customer is a firm or a household.
+The statement is false.', 'Operational needs of a business buyer place an exchanged desk among producer products.
 
-On this stem (computer / manufacturing firm): operational needs of a business buyer place an exchanged computer among producer products.
+That is exactly what the claim asserts, so the wording survives a careful check against the standard idea.
 
-Nothing in the wording contradicts that marketing test, so the claim is sound.
+The statement is true.', 'Personal wishes of a household buyer place an exchanged desk among consumer products.
 
-The statement is true.
-', 'TRUE — A product in marketing is any good and/or service that can be exchanged to fulfil customer wishes and needs, whether the customer is a firm or a household.
+That is exactly what the claim asserts, so the wording survives a careful check against the standard idea.
 
-On this stem (computer / family home): personal wishes of a household buyer place an exchanged computer among consumer products.
+The statement is true.', 'B2b classification depends on the business purchaser, not solely on the seller''s industry.
 
-Nothing in the wording contradicts that marketing test, so the claim is sound.
+Because that detail fails, the whole statement fails even if the topic word looks familiar.
 
-The statement is true.
-'] WHERE case_id = 'CASE 5.1.12' AND tier = 'full';
-UPDATE public.economics_cases SET tactical_explanations = ARRAY['FALSE — Producer products are goods and services sold from one business to another (B2B). What matters is the purchaser''s identity as a business customer, not factory origin, weight, packaging, or the seller''s registration alone.
+The statement is false.'] WHERE case_id = 'CASE 5.1.18' AND tier = 'full';
+UPDATE public.economics_cases SET tactical_explanations = ARRAY['Inter-business sale of a desk to a logistics company is a textbook producer product case.
 
-On this stem (printer / corporate client): b2b classification depends on the business purchaser, not solely on the seller''s industry.
+That is exactly what the claim asserts, so the wording survives a careful check against the standard idea.
 
-Swap in the textbook criterion and the sentence no longer describes the case.
+The statement is true.', 'B2c classification depends on the household purchaser, not on retail branding alone.
 
-The statement is false.
-', 'TRUE — Producer products are goods and services sold from one business to another (B2B). What matters is the purchaser''s identity as a business customer, not factory origin, weight, packaging, or the seller''s registration alone.
+Because that detail fails, the whole statement fails even if the topic word looks familiar.
 
-On this stem (computer / manufacturing firm): inter-business sale of a computer to a manufacturing firm is a textbook producer product case.
+The statement is false.', 'Household sale of a desk to a resident is a textbook consumer product case.
 
-Nothing in the wording contradicts that marketing test, so the claim is sound.
+That is exactly what the claim asserts, so the wording survives a careful check against the standard idea.
 
-The statement is true.
-', 'FALSE — Consumer products are goods and services sold to consumers or private households (B2C). The household or individual buyer defines the label, not retail branding, luxury status, or physical size.
+The statement is true.', 'A desk remains a product in either channel; only the producer versus consumer label changes with the buyer.
 
-On this stem (printer / branding): b2c classification depends on the household purchaser, not on retail branding alone.
+That is exactly what the claim asserts, so the wording survives a careful check against the standard idea.
 
-Once the defining feature is restored, the assertion falls away.
+The statement is true.', 'Customer identity on the invoice determines whether the same desk is recorded as producer or consumer.
 
-The statement is false.
-', 'TRUE — Consumer products are goods and services sold to consumers or private households (B2C). The household or individual buyer defines the label, not retail branding, luxury status, or physical size.
+That is exactly what the claim asserts, so the wording survives a careful check against the standard idea.
 
-On this stem (computer / family home): household sale of a computer to a family home is a textbook consumer product case.
+The statement is true.'] WHERE case_id = 'CASE 5.1.19' AND tier = 'full';
+UPDATE public.economics_cases SET tactical_explanations = ARRAY['Wishes and needs give the exchanged desk its role as a product rather than a non-market item.
 
-Nothing in the wording contradicts that marketing test, so the claim is sound.
+That is exactly what the claim asserts, so the wording survives a careful check against the standard idea.
 
-The statement is true.
-', 'TRUE — Consumer products are goods and services sold to consumers or private households (B2C). The household or individual buyer defines the label, not retail branding, luxury status, or physical size.
+The statement is true.', 'Traded desk offerings create exchange value whether the buyer is a business or a household.
 
-On this stem (computer / manufacturing firm): a computer remains a product in either channel; only the producer versus consumer label changes with the buyer.
+That is exactly what the claim asserts, so the wording survives a careful check against the standard idea.
 
-The sentence therefore reports the concept accurately for this case.
+The statement is true.', 'Sales to business customers classify the vehicle as a b2b producer product.
 
-The statement is true.
-'] WHERE case_id = 'CASE 5.1.13' AND tier = 'full';
-UPDATE public.economics_cases SET tactical_explanations = ARRAY['FALSE — Consumer products are goods and services sold to consumers or private households (B2C). The household or individual buyer defines the label, not retail branding, luxury status, or physical size.
+That is exactly what the claim asserts, so the wording survives a careful check against the standard idea.
 
-On this stem (printer / corporate client): payment alone does not make the sale b2c; a business buyer implies b2b and a producer product.
+The statement is true.', 'Sales to household customers classify the vehicle as a b2c consumer product.
 
-Once the defining feature is restored, the assertion falls away.
+That is exactly what the claim asserts, so the wording survives a careful check against the standard idea.
 
-The statement is false.
-', 'FALSE — Producer products are goods and services sold from one business to another (B2B). What matters is the purchaser''s identity as a business customer, not factory origin, weight, packaging, or the seller''s registration alone.
+The statement is true.', 'Identical vehicle models shift between producer and consumer labels with the customer, not the design.
 
-On this stem (printer / household): the seller''s company status does not make a household sale b2b; it remains b2c with a consumer product.
+That is exactly what the claim asserts, so the wording survives a careful check against the standard idea.
 
-Once the defining feature is restored, the assertion falls away.
+The statement is true.'] WHERE case_id = 'CASE 5.1.20' AND tier = 'full';
+UPDATE public.economics_cases SET tactical_explanations = ARRAY['B2b exchange with a business buyer makes the vehicle a producer product.
 
-The statement is false.
-', 'FALSE — Producer products are goods and services sold from one business to another (B2B). What matters is the purchaser''s identity as a business customer, not factory origin, weight, packaging, or the seller''s registration alone.
+That is exactly what the claim asserts, so the wording survives a careful check against the standard idea.
 
-On this stem (printer / corporate client): producer products include goods and services sold to businesses, including a finished printer for a corporate client.
+The statement is true.', 'Commercial use by a business purchaser defines the vehicle as a producer product.
 
-One clear counterexample under the right criterion is enough to reject the sentence.
+That is exactly what the claim asserts, so the wording survives a careful check against the standard idea.
 
-The statement is false.
-', 'FALSE — Consumer products are goods and services sold to consumers or private households (B2C). The household or individual buyer defines the label, not retail branding, luxury status, or physical size.
+The statement is true.', 'Personal or domestic use by a household purchaser defines the vehicle as a consumer product.
 
-On this stem (printer / household): consumer products include ordinary goods and services sold to households, including a printer for a private household.
+That is exactly what the claim asserts, so the wording survives a careful check against the standard idea.
 
-Those restricting words stretch a limited idea past what marketing allows.
+The statement is true.', 'Operational needs of a business buyer place an exchanged vehicle among producer products.
 
-The statement is false.
-', 'TRUE — Producer products are goods and services sold from one business to another (B2B). What matters is the purchaser''s identity as a business customer, not factory origin, weight, packaging, or the seller''s registration alone.
+That is exactly what the claim asserts, so the wording survives a careful check against the standard idea.
 
-On this stem (consultancy / computer): customer identity on the invoice determines whether the same computer is recorded as producer or consumer.
+The statement is true.', 'Personal wishes of a household buyer place an exchanged vehicle among consumer products.
 
-Under that definition the assertion is the right description of the situation.
+That is exactly what the claim asserts, so the wording survives a careful check against the standard idea.
 
-The statement is true.
-'] WHERE case_id = 'CASE 5.1.14' AND tier = 'full';
-UPDATE public.economics_cases SET tactical_explanations = ARRAY['TRUE — A product in marketing is any good and/or service that can be exchanged to fulfil customer wishes and needs, whether the customer is a firm or a household.
+The statement is true.'] WHERE case_id = 'CASE 5.1.21' AND tier = 'full';
+UPDATE public.economics_cases SET tactical_explanations = ARRAY['Payment alone does not make the sale b2c; a business buyer implies b2b and a producer product.
 
-Wishes and needs give the exchanged computer its role as a product rather than a non-market item.
+Because that detail fails, the whole statement fails even if the topic word looks familiar.
 
-Nothing in the wording contradicts that marketing test, so the claim is sound.
+The statement is false.', 'The seller''s company status does not make a household sale b2b; it remains b2c with a consumer product.
 
-The statement is true.
-', 'FALSE — A product in marketing is any good and/or service that can be exchanged to fulfil customer wishes and needs, whether the customer is a firm or a household.
+Because that detail fails, the whole statement fails even if the topic word looks familiar.
 
-A printer is a product when exchanged to fulfil wishes and needs, regardless of advertising timing.
+The statement is false.', 'Producer products include goods and services sold to businesses, including a finished computer for a manufacturing firm.
 
-One clear counterexample under the right criterion is enough to reject the sentence.
+The absolute wording "cannot" turns a familiar idea into an overclaim. One ordinary counterexample is enough to reject it.
 
-The statement is false.
-', 'FALSE — Consumer products are goods and services sold to consumers or private households (B2C). The household or individual buyer defines the label, not retail branding, luxury status, or physical size.
+The statement is false.', 'Inter-business sale of a vehicle to a restaurant chain is a textbook producer product case.
 
-On this stem (computer / manufacturing firm): sales to a business customer classify the computer as a b2b producer product, not a consumer product.
+That is exactly what the claim asserts, so the wording survives a careful check against the standard idea.
 
-Once the defining feature is restored, the assertion falls away.
+The statement is true.', 'Consumer products include ordinary goods and services sold to households, including a computer for a family home.
 
-The statement is false.
-', 'FALSE — Producer products are goods and services sold from one business to another (B2B). What matters is the purchaser''s identity as a business customer, not factory origin, weight, packaging, or the seller''s registration alone.
+The absolute wording "cannot" turns a familiar idea into an overclaim. One ordinary counterexample is enough to reject it.
 
-On this stem (computer / family home): sales to a household customer classify the computer as a b2c consumer product, not a producer product.
+The statement is false.'] WHERE case_id = 'CASE 5.1.22' AND tier = 'full';
+UPDATE public.economics_cases SET tactical_explanations = ARRAY['Household sale of a vehicle to a individual consumer is a textbook consumer product case.
 
-The mislabelled category or reversed comparison is enough to reject the claim.
+That is exactly what the claim asserts, so the wording survives a careful check against the standard idea.
 
-The statement is false.
-', 'FALSE — The same catalogue item can be a producer product in one sale and a consumer product in another. Classification follows the buyer in that transaction, so absolute words like "always" or "only" usually fail.
+The statement is true.', 'A computer is a product when exchanged to fulfil wishes and needs, regardless of advertising timing.
 
-Identical computer models can be producer or consumer products depending on the buyer.
+Because that detail fails, the whole statement fails even if the topic word looks familiar.
 
-Those restricting words stretch a limited idea past what marketing allows.
+The statement is false.', 'Sales to a business customer classify the desk as a b2b producer product, not a consumer product.
 
-The statement is false.
-'] WHERE case_id = 'CASE 5.1.15' AND tier = 'full';
-UPDATE public.economics_cases SET tactical_explanations = ARRAY['FALSE — Marketing''s product definition is deliberately wide: it covers every exchangeable good and every exchangeable service that can fulfil customer wishes and needs. Physical form is not a requirement.
+The absolute wording "every" turns a familiar idea into an overclaim. One ordinary counterexample is enough to reject it.
 
-A computer can be a product when exchanged as a good or service to fulfil customer wishes and needs.
+The statement is false.', 'A vehicle remains a product in either channel; only the producer versus consumer label changes with the buyer.
 
-Once the defining feature is restored, the assertion falls away.
+That is exactly what the claim asserts, so the wording survives a careful check against the standard idea.
 
-The statement is false.
-', 'TRUE — A product in marketing is any good and/or service that can be exchanged to fulfil customer wishes and needs, whether the customer is a firm or a household.
+The statement is true.', 'Customer identity on the invoice determines whether the same vehicle is recorded as producer or consumer.
 
-On this stem (computer / manufacturing firm): traded computer offerings create exchange value whether the buyer is a business or a household.
+That is exactly what the claim asserts, so the wording survives a careful check against the standard idea.
 
-The sentence therefore reports the concept accurately for this case.
+The statement is true.'] WHERE case_id = 'CASE 5.1.23' AND tier = 'full';
+UPDATE public.economics_cases SET tactical_explanations = ARRAY['Wishes and needs give the exchanged vehicle its role as a product rather than a non-market item.
 
-The statement is true.
-', 'FALSE — Exchange is required for a good or service to count as a product in marketing terminology. Items that are only moved internally, given without trade, or not offered for exchange fall outside that definition.
+That is exactly what the claim asserts, so the wording survives a careful check against the standard idea.
 
-Exchange is required for a computer to count as a product in marketing terminology.
+The statement is true.', 'Sales to a household customer classify the desk as a b2c consumer product, not a producer product.
 
-Swap in the textbook criterion and the sentence no longer describes the case.
+Because that detail fails, the whole statement fails even if the topic word looks familiar.
 
-The statement is false.
-', 'FALSE — A product in marketing is any good and/or service that can be exchanged to fulfil customer wishes and needs, whether the customer is a firm or a household.
+The statement is false.', 'Identical desk models can be producer or consumer products depending on the buyer.
 
-On this stem (computer / manufacturing firm): business customers have operational wishes and needs that exchanged computer offerings can fulfil as products.
+The absolute wording "all" turns a familiar idea into an overclaim. One ordinary counterexample is enough to reject it.
 
-Swap in the textbook criterion and the sentence no longer describes the case.
+The statement is false.', 'A desk can be a product when exchanged as a good or service to fulfil customer wishes and needs.
 
-The statement is false.
-', 'FALSE — Exchange is required for a good or service to count as a product in marketing terminology. Items that are only moved internally, given without trade, or not offered for exchange fall outside that definition.
+Because that detail fails, the whole statement fails even if the topic word looks familiar.
 
-On this stem (computer / family home): household customers acquire consumer products such as a computer through b2c exchange.
+The statement is false.', 'Traded vehicle offerings create exchange value whether the buyer is a business or a household.
 
-Those restricting words stretch a limited idea past what marketing allows.
+That is exactly what the claim asserts, so the wording survives a careful check against the standard idea.
 
-The statement is false.
-'] WHERE case_id = 'CASE 5.1.16' AND tier = 'full';
-UPDATE public.economics_cases SET tactical_explanations = ARRAY['TRUE — Producer products are goods and services sold from one business to another (B2B). What matters is the purchaser''s identity as a business customer, not factory origin, weight, packaging, or the seller''s registration alone.
+The statement is true.'] WHERE case_id = 'CASE 5.1.24' AND tier = 'full';
+UPDATE public.economics_cases SET tactical_explanations = ARRAY['Sales to business customers classify the software licence as a b2b producer product.
 
-On this stem (desk / logistics company): sales to business customers classify the desk as a b2b producer product.
+That is exactly what the claim asserts, so the wording survives a careful check against the standard idea.
 
-Nothing in the wording contradicts that marketing test, so the claim is sound.
+The statement is true.', 'Exchange is required for a desk to count as a product in marketing terminology.
 
-The statement is true.
-', 'TRUE — Consumer products are goods and services sold to consumers or private households (B2C). The household or individual buyer defines the label, not retail branding, luxury status, or physical size.
+Because that detail fails, the whole statement fails even if the topic word looks familiar.
 
-On this stem (desk / resident): sales to household customers classify the desk as a b2c consumer product.
+The statement is false.', 'Business customers have operational wishes and needs that exchanged desk offerings can fulfil as products.
 
-The sentence therefore reports the concept accurately for this case.
+Because that detail fails, the whole statement fails even if the topic word looks familiar.
 
-The statement is true.
-', 'TRUE — Producer products are goods and services sold from one business to another (B2B). What matters is the purchaser''s identity as a business customer, not factory origin, weight, packaging, or the seller''s registration alone.
+The statement is false.', 'Household customers acquire consumer products such as a desk through b2c exchange.
 
-Identical desk models shift between producer and consumer labels with the customer, not the design.
+Because that detail fails, the whole statement fails even if the topic word looks familiar.
 
-The sentence therefore reports the concept accurately for this case.
+The statement is false.', 'Sales to household customers classify the software licence as a b2c consumer product.
 
-The statement is true.
-', 'TRUE — Producer products are goods and services sold from one business to another (B2B). What matters is the purchaser''s identity as a business customer, not factory origin, weight, packaging, or the seller''s registration alone.
+That is exactly what the claim asserts, so the wording survives a careful check against the standard idea.
 
-On this stem (desk / logistics company): b2b exchange with a business buyer makes the desk a producer product.
-
-Nothing in the wording contradicts that marketing test, so the claim is sound.
-
-The statement is true.
-', 'TRUE — Producer products are goods and services sold from one business to another (B2B). What matters is the purchaser''s identity as a business customer, not factory origin, weight, packaging, or the seller''s registration alone.
-
-On this stem (desk / logistics company): commercial use by a business purchaser defines the desk as a producer product.
-
-Nothing in the wording contradicts that marketing test, so the claim is sound.
-
-The statement is true.
-'] WHERE case_id = 'CASE 5.1.17' AND tier = 'full';
-UPDATE public.economics_cases SET tactical_explanations = ARRAY['TRUE — Consumer products are goods and services sold to consumers or private households (B2C). The household or individual buyer defines the label, not retail branding, luxury status, or physical size.
-
-On this stem (desk / resident): personal or domestic use by a household purchaser defines the desk as a consumer product.
-
-The sentence therefore reports the concept accurately for this case.
-
-The statement is true.
-', 'FALSE — Exchange is required for a good or service to count as a product in marketing terminology. Items that are only moved internally, given without trade, or not offered for exchange fall outside that definition.
-
-On this stem (computer): internal transfers not offered for external exchange are not products in the marketing sense.
-
-Swap in the textbook criterion and the sentence no longer describes the case.
-
-The statement is false.
-', 'TRUE — A product in marketing is any good and/or service that can be exchanged to fulfil customer wishes and needs, whether the customer is a firm or a household.
-
-On this stem (desk / logistics company): operational needs of a business buyer place an exchanged desk among producer products.
-
-Nothing in the wording contradicts that marketing test, so the claim is sound.
-
-The statement is true.
-', 'TRUE — A product in marketing is any good and/or service that can be exchanged to fulfil customer wishes and needs, whether the customer is a firm or a household.
-
-On this stem (desk / resident): personal wishes of a household buyer place an exchanged desk among consumer products.
-
-Nothing in the wording contradicts that marketing test, so the claim is sound.
-
-The statement is true.
-', 'FALSE — Producer products are goods and services sold from one business to another (B2B). What matters is the purchaser''s identity as a business customer, not factory origin, weight, packaging, or the seller''s registration alone.
-
-On this stem (computer / manufacturing firm): b2b classification depends on the business purchaser, not solely on the seller''s industry.
-
-The mislabelled category or reversed comparison is enough to reject the claim.
-
-The statement is false.
-'] WHERE case_id = 'CASE 5.1.18' AND tier = 'full';
-UPDATE public.economics_cases SET tactical_explanations = ARRAY['TRUE — Producer products are goods and services sold from one business to another (B2B). What matters is the purchaser''s identity as a business customer, not factory origin, weight, packaging, or the seller''s registration alone.
-
-On this stem (desk / logistics company): inter-business sale of a desk to a logistics company is a textbook producer product case.
-
-Nothing in the wording contradicts that marketing test, so the claim is sound.
-
-The statement is true.
-', 'FALSE — Consumer products are goods and services sold to consumers or private households (B2C). The household or individual buyer defines the label, not retail branding, luxury status, or physical size.
-
-On this stem (computer / branding): b2c classification depends on the household purchaser, not on retail branding alone.
-
-Swap in the textbook criterion and the sentence no longer describes the case.
-
-The statement is false.
-', 'TRUE — Consumer products are goods and services sold to consumers or private households (B2C). The household or individual buyer defines the label, not retail branding, luxury status, or physical size.
-
-On this stem (desk / resident): household sale of a desk to a resident is a textbook consumer product case.
-
-Nothing in the wording contradicts that marketing test, so the claim is sound.
-
-The statement is true.
-', 'TRUE — Consumer products are goods and services sold to consumers or private households (B2C). The household or individual buyer defines the label, not retail branding, luxury status, or physical size.
-
-On this stem (desk / logistics company): a desk remains a product in either channel; only the producer versus consumer label changes with the buyer.
-
-The sentence therefore reports the concept accurately for this case.
-
-The statement is true.
-', 'TRUE — Producer products are goods and services sold from one business to another (B2B). What matters is the purchaser''s identity as a business customer, not factory origin, weight, packaging, or the seller''s registration alone.
-
-On this stem (consultancy / desk): customer identity on the invoice determines whether the same desk is recorded as producer or consumer.
-
-Under that definition the assertion is the right description of the situation.
-
-The statement is true.
-'] WHERE case_id = 'CASE 5.1.19' AND tier = 'full';
-UPDATE public.economics_cases SET tactical_explanations = ARRAY['TRUE — A product in marketing is any good and/or service that can be exchanged to fulfil customer wishes and needs, whether the customer is a firm or a household.
-
-Wishes and needs give the exchanged desk its role as a product rather than a non-market item.
-
-Nothing in the wording contradicts that marketing test, so the claim is sound.
-
-The statement is true.
-', 'TRUE — A product in marketing is any good and/or service that can be exchanged to fulfil customer wishes and needs, whether the customer is a firm or a household.
-
-On this stem (desk / logistics company): traded desk offerings create exchange value whether the buyer is a business or a household.
-
-The sentence therefore reports the concept accurately for this case.
-
-The statement is true.
-', 'TRUE — Producer products are goods and services sold from one business to another (B2B). What matters is the purchaser''s identity as a business customer, not factory origin, weight, packaging, or the seller''s registration alone.
-
-On this stem (vehicle / restaurant): sales to business customers classify the vehicle as a b2b producer product.
-
-Nothing in the wording contradicts that marketing test, so the claim is sound.
-
-The statement is true.
-', 'TRUE — Consumer products are goods and services sold to consumers or private households (B2C). The household or individual buyer defines the label, not retail branding, luxury status, or physical size.
-
-On this stem (vehicle / household): sales to household customers classify the vehicle as a b2c consumer product.
-
-Nothing in the wording contradicts that marketing test, so the claim is sound.
-
-The statement is true.
-', 'TRUE — Producer products are goods and services sold from one business to another (B2B). What matters is the purchaser''s identity as a business customer, not factory origin, weight, packaging, or the seller''s registration alone.
-
-Identical vehicle models shift between producer and consumer labels with the customer, not the design.
-
-Under that definition the assertion is the right description of the situation.
-
-The statement is true.
-'] WHERE case_id = 'CASE 5.1.20' AND tier = 'full';
-UPDATE public.economics_cases SET tactical_explanations = ARRAY['TRUE — Producer products are goods and services sold from one business to another (B2B). What matters is the purchaser''s identity as a business customer, not factory origin, weight, packaging, or the seller''s registration alone.
-
-On this stem (vehicle / restaurant): b2b exchange with a business buyer makes the vehicle a producer product.
-
-Nothing in the wording contradicts that marketing test, so the claim is sound.
-
-The statement is true.
-', 'TRUE — Producer products are goods and services sold from one business to another (B2B). What matters is the purchaser''s identity as a business customer, not factory origin, weight, packaging, or the seller''s registration alone.
-
-On this stem (vehicle / restaurant): commercial use by a business purchaser defines the vehicle as a producer product.
-
-Nothing in the wording contradicts that marketing test, so the claim is sound.
-
-The statement is true.
-', 'TRUE — Consumer products are goods and services sold to consumers or private households (B2C). The household or individual buyer defines the label, not retail branding, luxury status, or physical size.
-
-Personal or domestic use by a household purchaser defines the vehicle as a consumer product.
-
-Nothing in the wording contradicts that marketing test, so the claim is sound.
-
-The statement is true.
-', 'TRUE — A product in marketing is any good and/or service that can be exchanged to fulfil customer wishes and needs, whether the customer is a firm or a household.
-
-On this stem (vehicle / restaurant): operational needs of a business buyer place an exchanged vehicle among producer products.
-
-Nothing in the wording contradicts that marketing test, so the claim is sound.
-
-The statement is true.
-', 'TRUE — A product in marketing is any good and/or service that can be exchanged to fulfil customer wishes and needs, whether the customer is a firm or a household.
-
-Personal wishes of a household buyer place an exchanged vehicle among consumer products.
-
-Under that definition the assertion is the right description of the situation.
-
-The statement is true.
-'] WHERE case_id = 'CASE 5.1.21' AND tier = 'full';
-UPDATE public.economics_cases SET tactical_explanations = ARRAY['FALSE — Consumer products are goods and services sold to consumers or private households (B2C). The household or individual buyer defines the label, not retail branding, luxury status, or physical size.
-
-On this stem (computer / manufacturing firm): payment alone does not make the sale b2c; a business buyer implies b2b and a producer product.
-
-Swap in the textbook criterion and the sentence no longer describes the case.
-
-The statement is false.
-', 'FALSE — Producer products are goods and services sold from one business to another (B2B). What matters is the purchaser''s identity as a business customer, not factory origin, weight, packaging, or the seller''s registration alone.
-
-On this stem (computer / family home): the seller''s company status does not make a household sale b2b; it remains b2c with a consumer product.
-
-Swap in the textbook criterion and the sentence no longer describes the case.
-
-The statement is false.
-', 'FALSE — Producer products are goods and services sold from one business to another (B2B). What matters is the purchaser''s identity as a business customer, not factory origin, weight, packaging, or the seller''s registration alone.
-
-On this stem (computer / manufacturing firm): producer products include goods and services sold to businesses, including a finished computer for a manufacturing firm.
-
-Those restricting words stretch a limited idea past what marketing allows.
-
-The statement is false.
-', 'TRUE — Producer products are goods and services sold from one business to another (B2B). What matters is the purchaser''s identity as a business customer, not factory origin, weight, packaging, or the seller''s registration alone.
-
-On this stem (vehicle / restaurant): inter-business sale of a vehicle to a restaurant chain is a textbook producer product case.
-
-Nothing in the wording contradicts that marketing test, so the claim is sound.
-
-The statement is true.
-', 'FALSE — Consumer products are goods and services sold to consumers or private households (B2C). The household or individual buyer defines the label, not retail branding, luxury status, or physical size.
-
-On this stem (computer / family home): consumer products include ordinary goods and services sold to households, including a computer for a family home.
-
-The absolute wording is what breaks the claim once the correct test is applied.
-
-The statement is false.
-'] WHERE case_id = 'CASE 5.1.22' AND tier = 'full';
-UPDATE public.economics_cases SET tactical_explanations = ARRAY['TRUE — Consumer products are goods and services sold to consumers or private households (B2C). The household or individual buyer defines the label, not retail branding, luxury status, or physical size.
-
-Household sale of a vehicle to a individual consumer is a textbook consumer product case.
-
-Under that definition the assertion is the right description of the situation.
-
-The statement is true.
-', 'FALSE — A product in marketing is any good and/or service that can be exchanged to fulfil customer wishes and needs, whether the customer is a firm or a household.
-
-A computer is a product when exchanged to fulfil wishes and needs, regardless of advertising timing.
-
-The absolute wording is what breaks the claim once the correct test is applied.
-
-The statement is false.
-', 'FALSE — Consumer products are goods and services sold to consumers or private households (B2C). The household or individual buyer defines the label, not retail branding, luxury status, or physical size.
-
-On this stem (desk / logistics company): sales to a business customer classify the desk as a b2b producer product, not a consumer product.
-
-Once the defining feature is restored, the assertion falls away.
-
-The statement is false.
-', 'TRUE — Consumer products are goods and services sold to consumers or private households (B2C). The household or individual buyer defines the label, not retail branding, luxury status, or physical size.
-
-On this stem (vehicle / restaurant): a vehicle remains a product in either channel; only the producer versus consumer label changes with the buyer.
-
-Under that definition the assertion is the right description of the situation.
-
-The statement is true.
-', 'TRUE — Producer products are goods and services sold from one business to another (B2B). What matters is the purchaser''s identity as a business customer, not factory origin, weight, packaging, or the seller''s registration alone.
-
-On this stem (consultancy / vehicle): customer identity on the invoice determines whether the same vehicle is recorded as producer or consumer.
-
-Nothing in the wording contradicts that marketing test, so the claim is sound.
-
-The statement is true.
-'] WHERE case_id = 'CASE 5.1.23' AND tier = 'full';
-UPDATE public.economics_cases SET tactical_explanations = ARRAY['TRUE — A product in marketing is any good and/or service that can be exchanged to fulfil customer wishes and needs, whether the customer is a firm or a household.
-
-Wishes and needs give the exchanged vehicle its role as a product rather than a non-market item.
-
-The sentence therefore reports the concept accurately for this case.
-
-The statement is true.
-', 'FALSE — Producer products are goods and services sold from one business to another (B2B). What matters is the purchaser''s identity as a business customer, not factory origin, weight, packaging, or the seller''s registration alone.
-
-On this stem (desk / resident): sales to a household customer classify the desk as a b2c consumer product, not a producer product.
-
-The mislabelled category or reversed comparison is enough to reject the claim.
-
-The statement is false.
-', 'FALSE — The same catalogue item can be a producer product in one sale and a consumer product in another. Classification follows the buyer in that transaction, so absolute words like "always" or "only" usually fail.
-
-Identical desk models can be producer or consumer products depending on the buyer.
-
-Those restricting words stretch a limited idea past what marketing allows.
-
-The statement is false.
-', 'FALSE — Marketing''s product definition is deliberately wide: it covers every exchangeable good and every exchangeable service that can fulfil customer wishes and needs. Physical form is not a requirement.
-
-A desk can be a product when exchanged as a good or service to fulfil customer wishes and needs.
-
-Once the defining feature is restored, the assertion falls away.
-
-The statement is false.
-', 'TRUE — A product in marketing is any good and/or service that can be exchanged to fulfil customer wishes and needs, whether the customer is a firm or a household.
-
-On this stem (vehicle / restaurant): traded vehicle offerings create exchange value whether the buyer is a business or a household.
-
-Under that definition the assertion is the right description of the situation.
-
-The statement is true.
-'] WHERE case_id = 'CASE 5.1.24' AND tier = 'full';
-UPDATE public.economics_cases SET tactical_explanations = ARRAY['TRUE — Producer products are goods and services sold from one business to another (B2B). What matters is the purchaser''s identity as a business customer, not factory origin, weight, packaging, or the seller''s registration alone.
-
-Sales to business customers classify the software licence as a b2b producer product.
-
-Nothing in the wording contradicts that marketing test, so the claim is sound.
-
-The statement is true.
-', 'FALSE — Exchange is required for a good or service to count as a product in marketing terminology. Items that are only moved internally, given without trade, or not offered for exchange fall outside that definition.
-
-Exchange is required for a desk to count as a product in marketing terminology.
-
-Swap in the textbook criterion and the sentence no longer describes the case.
-
-The statement is false.
-', 'FALSE — A product in marketing is any good and/or service that can be exchanged to fulfil customer wishes and needs, whether the customer is a firm or a household.
-
-On this stem (desk / logistics company): business customers have operational wishes and needs that exchanged desk offerings can fulfil as products.
-
-Swap in the textbook criterion and the sentence no longer describes the case.
-
-The statement is false.
-', 'FALSE — Exchange is required for a good or service to count as a product in marketing terminology. Items that are only moved internally, given without trade, or not offered for exchange fall outside that definition.
-
-On this stem (desk / resident): household customers acquire consumer products such as a desk through b2c exchange.
-
-Those restricting words stretch a limited idea past what marketing allows.
-
-The statement is false.
-', 'TRUE — Consumer products are goods and services sold to consumers or private households (B2C). The household or individual buyer defines the label, not retail branding, luxury status, or physical size.
-
-On this stem (software licence / household): sales to household customers classify the software licence as a b2c consumer product.
-
-Nothing in the wording contradicts that marketing test, so the claim is sound.
-
-The statement is true.
-'] WHERE case_id = 'CASE 5.1.25' AND tier = 'full';
+The statement is true.'] WHERE case_id = 'CASE 5.1.25' AND tier = 'full';

@@ -1,1711 +1,580 @@
 -- Update expanded explanations for 6.3-part2 (25 cases).
 -- Safe to re-run: only updates tactical_explanations.
 
-UPDATE public.economics_cases SET tactical_explanations = ARRAY['TRUE — Single-year statements need cautious reading: policies, estimates, and one-offs matter.
+UPDATE public.economics_cases SET tactical_explanations = ARRAY['Current assets turn into cash within the normal operating cycle.
 
-The wording matches the relevant rule for "Profit and Loss Over Two Years 26". Single-year statements need cautious reading: policies, estimates, and one-offs matter. Ratios (liquidity, gearing, margins, returns) put line items in context. Financial accounting serves external users; audits give reasonable, not absolute, assurance. Applied here: "Current assets such as inventory, trade receivables and cash normally have higher liquidity and are not expected to be used longer than a year."
+That is exactly what the claim asserts, so the wording survives a careful check against the standard idea.
 
-The statement is true.', 'TRUE — Compare finance-cost growth with operating-result growth; the claim needs both a finance-cost rise above the threshold and outpacing of operating result.
+The statement is true.', 'Finance costs moved from 22 to 29; operating result moved from 205 to 221.
 
-Name the identity in words: growth = (Year 2 − Year 1) ÷ Year 1 for each line.
+That is exactly what the claim asserts, so the wording survives a careful check against the standard idea.
 
-$$
-\text{FC growth} = 31.8\%
-$$
+The statement is true.', 'Interest coverage in Year 1 ≈ 9.3 times.
 
-$$
-\text{OR growth} = 7.8\%
-$$
+That is exactly what the claim asserts, so the wording survives a careful check against the standard idea.
 
-Finance costs did grow by more than 25%; they do outpace operating result.
+The statement is true.', 'Operating margin in year 2 ≈ 23.8%.
 
-Reading the arithmetic against the claim: FC growth 31.8% vs threshold 25% and OR growth 7.8% so the statement holds.
+That is exactly what the claim asserts, so the wording survives a careful check against the standard idea.
 
-The statement is true.', 'TRUE — Interest coverage in Year 1 is operating result divided by finance costs.
+The statement is true.', 'Profit moved from 144 to 147.
 
-Name the identity in words: interest coverage = operating result ÷ finance costs.
-
-From the extract, operating result = 205 and finance costs = 22. Plug the figures step by step:
-
-$$
-Coverage = \frac{\text{operating result}}{\text{finance costs}}
-$$
-
-$$
-Coverage = \frac{205}{22}
-$$
-
-$$
-Coverage = 9.3182
-$$
-
-Threshold: more than 9.28. Actual 9.32.
-
-Reading the arithmetic against the claim: coverage 9.32 exceeds 9.28 so the statement holds.
-
-The statement is true.', 'TRUE — Operating margin in Year 2 is operating result divided by revenue.
-
-Name the identity in words: operating margin = operating result ÷ revenue.
-
-From the extract, operating result = 221 and revenue = 927. Plug the figures step by step:
-
-$$
-OM = \frac{\text{operating result}}{\text{revenue}}
-$$
-
-$$
-OM = \frac{221}{927}
-$$
-
-$$
-OM = 23.8\%
-$$
-
-Threshold: exceeds 13.9% in Year 2. Actual 23.8%.
-
-Reading the arithmetic against the claim: operating margin 23.8% exceeds 13.9% so the statement holds.
-
-The statement is true.', 'TRUE — Single-year statements need cautious reading: policies, estimates, and one-offs matter.
-
-The wording matches the relevant rule for "Profit and Loss Over Two Years 26". Single-year statements need cautious reading: policies, estimates, and one-offs matter. Ratios (liquidity, gearing, margins, returns) put line items in context. Financial accounting serves external users; audits give reasonable, not absolute, assurance. Applied here: "Profit for the year increased by exactly €3 thousand from Year 1 to Year 2."
+That is exactly what the claim asserts, so the wording survives a careful check against the standard idea.
 
 The statement is true.'] WHERE case_id = 'CASE 6.3.026' AND tier = 'full';
-UPDATE public.economics_cases SET tactical_explanations = ARRAY['FALSE — Use the case figures for Total equity and compute the percentage change between Year 1 and Year 2 before comparing it with the claimed threshold.
+UPDATE public.economics_cases SET tactical_explanations = ARRAY['Total equity changed by about -1.8% between the two years.
 
-From the extract:
+Because that detail fails, the whole statement fails even if the topic word looks familiar.
 
-$$
-\text{Total equity}_{\text{Y1}} = 542, \quad
-\text{Total equity}_{\text{Y2}} = 532
-$$
+The statement is false.', 'Current assets turn into cash within the normal operating cycle.
 
-$$
-\frac{532 - 542}{542} = -1.8\%
-$$
+That is exactly what the claim asserts, so the wording survives a careful check against the standard idea.
 
-$$
--1.8\% \le  21.7\%
-$$
+The statement is true.', 'Non-current liabilities are about 82.9% of equity in Year 2.
 
-The actual growth is -1.8%, which is not more than the claimed 21.7%.
+That is exactly what the claim asserts, so the wording survives a careful check against the standard idea.
 
-The statement is false.', 'TRUE — Single-year statements need cautious reading: policies, estimates, and one-offs matter.
+The statement is true.', 'Current ratio in Year 2 is about 1.96.
 
-The wording matches the relevant rule for "Comparative Balance Sheet Analysis 27". Single-year statements need cautious reading: policies, estimates, and one-offs matter. Ratios (liquidity, gearing, margins, returns) put line items in context. Financial accounting serves external users; audits give reasonable, not absolute, assurance. Applied here: "Current assets such as inventory, trade receivables and cash normally have higher liquidity and are not expected to be used longer than a year."
+That is exactly what the claim asserts, so the wording survives a careful check against the standard idea.
 
-The statement is true.', 'TRUE — Non-current liabilities are the long-term funding claims; here they are long-term bank loan plus bonds payable, compared with total equity.
+The statement is true.', 'Total assets changed by about 3.8% between the two years.
 
-Name the identity in words: NCL-to-equity share = (long-term bank loan + bonds payable) ÷ total equity.
-
-$$
-\text{NCL} = 388 + 53 = 441
-$$
-
-$$
-\text{Equity} = 532
-$$
-
-$$
-\frac{441}{532} = 82.9\%
-$$
-
-Threshold: less than 91.7% in Year 2. Actual 82.9%.
-
-Reading the arithmetic against the claim: Year 2 NCL/equity is 82.9%, which is consistent with ''less than 91.7%'' so the statement holds.
-
-The statement is true.', 'TRUE — This is the Year 2 current ratio read as coverage of current liabilities.
-
-Name the identity in words: coverage = current assets ÷ current liabilities.
-
-$$
-\frac{336}{171} = 1.9649
-$$
-
-Threshold: less than 2.02. Actual 1.96.
-
-Reading the arithmetic against the claim: actual coverage 1.96 is less than 2.02 so the statement holds.
-
-The statement is true.', 'FALSE — Use the case figures for Total assets and compute the percentage change between Year 1 and Year 2 before comparing it with the claimed threshold.
-
-From the extract:
-
-$$
-\text{Total assets}_{\text{Y1}} = 1,102, \quad
-\text{Total assets}_{\text{Y2}} = 1,144
-$$
-
-$$
-\frac{1,144 - 1,102}{1,102} = 3.8\%
-$$
-
-$$
-3.8\% \le  12.2\%
-$$
-
-The actual growth is 3.8%, which is not more than the claimed 12.2%.
+Because that detail fails, the whole statement fails even if the topic word looks familiar.
 
 The statement is false.'] WHERE case_id = 'CASE 6.3.027' AND tier = 'full';
-UPDATE public.economics_cases SET tactical_explanations = ARRAY['FALSE — The current ratio is the standard liquidity cover of current assets over current liabilities.
+UPDATE public.economics_cases SET tactical_explanations = ARRAY['Current assets = 372
 
-Name the identity in words: current ratio = current assets ÷ current liabilities.
+Current liabilities gather the short-term claims:
 
-Build current assets and current liabilities from the extract:
+Current liabilities = 226
 
-$$
-CA = 280 + 61 + 31 = 372
-$$
+Current ratio = 372 / 226 ≈ 1.65
 
-$$
-CL = 161 + 65 = 226
-$$
+The claim says the ratio exceeds 1.82. We have about 1.65, which does not match that comparison.
 
-$$
-\text{Current ratio} = \frac{372}{226} = 1.6460
-$$
+The statement is false.', 'Current assets turn into cash within the normal operating cycle.
 
-Claimed: exceeds 1.82. Actual 1.65.
+That is exactly what the claim asserts, so the wording survives a careful check against the standard idea.
 
-Reading the arithmetic against the claim: actual current ratio 1.65 versus ''exceeds 1.82'' so the statement does not hold.
+The statement is true.', 'Current assets = 372
 
-The statement is false.', 'TRUE — Single-year statements need cautious reading: policies, estimates, and one-offs matter.
+Current liabilities gather the short-term claims:
 
-The wording matches the relevant rule for "Asset Composition Chart 28". Single-year statements need cautious reading: policies, estimates, and one-offs matter. Ratios (liquidity, gearing, margins, returns) put line items in context. Financial accounting serves external users; audits give reasonable, not absolute, assurance. Applied here: "Current assets such as inventory, trade receivables and cash normally have higher liquidity and are not expected to be used longer than a year."
+Current liabilities = 226
 
-The statement is true.', 'FALSE — The current ratio is the standard liquidity cover of current assets over current liabilities.
+Current ratio = 372 / 226 ≈ 1.65
 
-Name the identity in words: current ratio = current assets ÷ current liabilities.
+The claim says the ratio below 1.26. We have about 1.65, which does not match that comparison.
 
-Build current assets and current liabilities from the extract:
+The statement is false.', 'Acid-test ratio ≈ 0.41.
 
-$$
-CA = 280 + 61 + 31 = 372
-$$
+Because that detail fails, the whole statement fails even if the topic word looks familiar.
 
-$$
-CL = 161 + 65 = 226
-$$
+The statement is false.', 'Equity ratio = total equity / total assets.
 
-$$
-\text{Current ratio} = \frac{372}{226} = 1.6460
-$$
+688 / 1166 ≈ 59.0%
 
-Claimed: is below 1.26. Actual 1.65.
-
-Reading the arithmetic against the claim: actual current ratio 1.65 versus ''is below 1.26'' so the statement does not hold.
-
-The statement is false.', 'FALSE — The acid-test (quick) ratio is a stricter liquidity test: inventory is removed from current assets before dividing by current liabilities.
-
-Name the identity in words: acid-test ratio = (current assets − inventory) ÷ current liabilities.
-
-$$
-CA = 372, \quad \text{Inventory} = 280, \quad CL = 226
-$$
-
-$$
-CA - \text{Inventory} = 372 - 280 = 92
-$$
-
-$$
-\text{Acid-test} = \frac{92}{226} = 0.4071
-$$
-
-Threshold: more than 1.3. Actual 0.41.
-
-Reading the arithmetic against the claim: acid-test 0.41 is not more than 1.3 so the statement does not hold.
-
-The statement is false.', 'FALSE — The equity ratio places equity against total assets so the financing structure can be judged on one balance sheet.
-
-Name the identity in words: equity ratio = equity ÷ total assets.
-
-From the extract, equity = 688 and total assets = 1,166. Plug the figures step by step:
-
-$$
-ER = \frac{\text{equity}}{\text{total assets}}
-$$
-
-$$
-ER = \frac{688}{1,166}
-$$
-
-$$
-ER = 59.0\%
-$$
-
-Claimed: is below 35.4%. Actual 59.0%.
-
-Reading the arithmetic against the claim: actual equity ratio 59.0% does not match ''is below 35.4%'' so the statement does not hold.
+The claim says the ratio below 35.4%. We have about 59.0%, which does not match that comparison.
 
 The statement is false.'] WHERE case_id = 'CASE 6.3.028' AND tier = 'full';
-UPDATE public.economics_cases SET tactical_explanations = ARRAY['TRUE — Single-year statements need cautious reading: policies, estimates, and one-offs matter.
+UPDATE public.economics_cases SET tactical_explanations = ARRAY['The operating result, i.e. earnings before interest and taxes, excludes financing costs and income tax.
 
-The wording matches the relevant rule for "Benchmarking Against Industry Peers for Analysts". Single-year statements need cautious reading: policies, estimates, and one-offs matter. Ratios (liquidity, gearing, margins, returns) put line items in context. Financial accounting serves external users; audits give reasonable, not absolute, assurance. Applied here: "The operating result, also described as earnings before interest and taxes, measures profit from core operations before the effects of financing costs and income tax are included."
+That is exactly what the claim asserts, so the wording survives a careful check against the standard idea.
 
-The statement is true.', 'FALSE — Single-year statements need cautious reading: policies, estimates, and one-offs matter.
+The statement is true.', 'With share capital unchanged, equity growth cannot come from new shares; it must be retained earnings.
 
-The claim states: When a business''s equity rises mainly. The reason — retained earnings have grown while share capital stays the same, that growth must have come from a new issue of shares to owners. — does not support that label under the chapter definitions. Single-year statements need cautious reading: policies, estimates, and one-offs matter. Ratios (liquidity, gearing, margins, returns) put line items in context. Financial accounting serves external users; audits give reasonable, not absolute, assurance.
+Because that detail fails, the whole statement fails even if the topic word looks familiar.
 
-The statement is false.', 'FALSE — Single-year statements need cautious reading: policies, estimates, and one-offs matter.
+The statement is false.', 'Separate tracking of these two components is exactly how the source of equity growth is identified.
 
-Absolute or misapplied wording conflicts with the rule for "Benchmarking Against Industry Peers for Analysts". Single-year statements need cautious reading: policies, estimates, and one-offs matter. Ratios (liquidity, gearing, margins, returns) put line items in context. Financial accounting serves external users; audits give reasonable, not absolute, assurance. Rejected claim: "Tracking share capital and retained earnings separately over successive years provides no way of telling whether a business''s equity growth has come from owner contributions or from accumulated pro…"
+Because that detail fails, the whole statement fails even if the topic word looks familiar.
 
-The statement is false.', 'FALSE — Single-year statements need cautious reading: policies, estimates, and one-offs matter.
+The statement is false.', 'Growth funded by retained earnings relies less on outside investors than growth funded by new shares.
 
-Absolute or misapplied wording conflicts with the rule for "Benchmarking Against Industry Peers for Analysts". Single-year statements need cautious reading: policies, estimates, and one-offs matter. Ratios (liquidity, gearing, margins, returns) put line items in context. Financial accounting serves external users; audits give reasonable, not absolute, assurance. Rejected claim: "A business that grows its equity mostly through retained earnings is relying just as heavily on outside investors as one whose equity growth comes mainly from new share issues."
+Because that detail fails, the whole statement fails even if the topic word looks familiar.
 
-The statement is false.', 'FALSE — Single-year statements need cautious reading: policies, estimates, and one-offs matter.
+The statement is false.', 'This pattern is precisely what reveals a business''s underlying financing strategy.
 
-Absolute or misapplied wording conflicts with the rule for "Benchmarking Against Industry Peers for Analysts". Single-year statements need cautious reading: policies, estimates, and one-offs matter. Ratios (liquidity, gearing, margins, returns) put line items in context. Financial accounting serves external users; audits give reasonable, not absolute, assurance. Rejected claim: "The pattern of a business''s equity growth over several years reveals nothing about its underlying financing strategy, regardless of whether it is driven by retained profit or fresh capital."
+The absolute wording "regardless" turns a familiar idea into an overclaim. One ordinary counterexample is enough to reject it.
 
 The statement is false.'] WHERE case_id = 'CASE 6.3.029' AND tier = 'full';
-UPDATE public.economics_cases SET tactical_explanations = ARRAY['TRUE — Single-year statements need cautious reading: policies, estimates, and one-offs matter.
+UPDATE public.economics_cases SET tactical_explanations = ARRAY['Excluding financing and tax lets the operating result isolate core trading performance.
 
-The wording matches the relevant rule for "Benchmarking Against Industry Peers Over Time". Single-year statements need cautious reading: policies, estimates, and one-offs matter. Ratios (liquidity, gearing, margins, returns) put line items in context. Financial accounting serves external users; audits give reasonable, not absolute, assurance. Applied here: "Excluding financing costs and income tax from the operating result allows a business''s core trading performance to be judged separately from how it happens to be financed or taxed."
+That is exactly what the claim asserts, so the wording survives a careful check against the standard idea.
 
-The statement is true.', 'FALSE — Single-year statements need cautious reading: policies, estimates, and one-offs matter.
+The statement is true.', 'With share capital unchanged, retained earnings are exactly what explain rising equity.
 
-Absolute or misapplied wording conflicts with the rule for "Benchmarking Against Industry Peers Over Time". Single-year statements need cautious reading: policies, estimates, and one-offs matter. Ratios (liquidity, gearing, margins, returns) put line items in context. Financial accounting serves external users; audits give reasonable, not absolute, assurance. Rejected claim: "If share capital has remained unchanged for several years while equity has still grown, that growth cannot be explained by retained earnings."
+The absolute wording "cannot" turns a familiar idea into an overclaim. One ordinary counterexample is enough to reject it.
 
-The statement is false.', 'FALSE — Single-year statements need cautious reading: policies, estimates, and one-offs matter.
+The statement is false.', 'Covering long-term assets mainly with current liabilities is considered risky, not sound.
 
-Absolute or misapplied wording conflicts with the rule for "Benchmarking Against Industry Peers Over Time". Single-year statements need cautious reading: policies, estimates, and one-offs matter. Ratios (liquidity, gearing, margins, returns) put line items in context. Financial accounting serves external users; audits give reasonable, not absolute, assurance. Rejected claim: "A business is considered to be financing its non-current assets soundly only when their total value is covered mainly by current liabilities."
+Because that detail fails, the whole statement fails even if the topic word looks familiar.
 
-The statement is false.', 'FALSE — Single-year statements need cautious reading: policies, estimates, and one-offs matter.
+The statement is false.', 'Funding long-lived assets mainly with short-term borrowing is regarded as risky, not prudent.
 
-Absolute or misapplied wording conflicts with the rule for "Benchmarking Against Industry Peers Over Time". Single-year statements need cautious reading: policies, estimates, and one-offs matter. Ratios (liquidity, gearing, margins, returns) put line items in context. Financial accounting serves external users; audits give reasonable, not absolute, assurance. Rejected claim: "Relying on short-term borrowing that must soon be renewed, rather than long-term sources of finance, is regarded as the prudent way to fund long-lived assets."
+Because that detail fails, the whole statement fails even if the topic word looks familiar.
 
-The statement is false.', 'FALSE — Single-year statements need cautious reading: policies, estimates, and one-offs matter.
+The statement is false.', 'This situation indicates a risky, not conservative, financing position.
 
-Absolute or misapplied wording conflicts with the rule for "Benchmarking Against Industry Peers Over Time". Single-year statements need cautious reading: policies, estimates, and one-offs matter. Ratios (liquidity, gearing, margins, returns) put line items in context. Financial accounting serves external users; audits give reasonable, not absolute, assurance. Rejected claim: "When non-current assets exceed the sum of equity and non-current liabilities, this always indicates a conservative and low-risk financing position."
+The absolute wording "always" turns a familiar idea into an overclaim. One ordinary counterexample is enough to reject it.
 
 The statement is false.'] WHERE case_id = 'CASE 6.3.030' AND tier = 'full';
-UPDATE public.economics_cases SET tactical_explanations = ARRAY['TRUE — Compare finance-cost growth with operating-result growth; the claim needs both a finance-cost rise above the threshold and outpacing of operating result.
+UPDATE public.economics_cases SET tactical_explanations = ARRAY['Finance costs moved from 15 to 19; operating result moved from 245 to 266.
 
-Name the identity in words: growth = (Year 2 − Year 1) ÷ Year 1 for each line.
+That is exactly what the claim asserts, so the wording survives a careful check against the standard idea.
 
-$$
-\text{FC growth} = 26.7\%
-$$
+The statement is true.', 'Interest coverage in Year 1 ≈ 16.3 times.
 
-$$
-\text{OR growth} = 8.6\%
-$$
+That is exactly what the claim asserts, so the wording survives a careful check against the standard idea.
 
-Finance costs did grow by more than 21.9%; they do outpace operating result.
+The statement is true.', 'Gross margins were 38.5% then 37.8%.
 
-Reading the arithmetic against the claim: FC growth 26.7% vs threshold 21.9% and OR growth 8.6% so the statement holds.
+Because that detail fails, the whole statement fails even if the topic word looks familiar.
 
-The statement is true.', 'TRUE — Interest coverage in Year 1 is operating result divided by finance costs.
+The statement is false.', 'Operating margin in Year 2 ≈ 28.0%.
 
-Name the identity in words: interest coverage = operating result ÷ finance costs.
+That is exactly what the claim asserts, so the wording survives a careful check against the standard idea.
 
-From the extract, operating result = 245 and finance costs = 15. Plug the figures step by step:
+The statement is true.', 'Effective tax rate in Year 1 ≈ 19.7%.
 
-$$
-Coverage = \frac{\text{operating result}}{\text{finance costs}}
-$$
-
-$$
-Coverage = \frac{245}{15}
-$$
-
-$$
-Coverage = 16.3333
-$$
-
-Threshold: more than 8.44. Actual 16.33.
-
-Reading the arithmetic against the claim: coverage 16.33 exceeds 8.44 so the statement holds.
-
-The statement is true.', 'FALSE — Gross margin is gross profit divided by revenue; the claim compares the Year-2 margin with Year 1 in percentage points.
-
-Name the identity in words: gross margin = gross profit ÷ revenue; Δ = GPM₂ − GPM₁.
-
-$$
-GPM_{1} = \frac{326}{847} = 38.5\%
-$$
-
-$$
-GPM_{2} = \frac{359}{950} = 37.8\%
-$$
-
-$$
-\Delta = -0.7\text{ percentage points}
-$$
-
-Threshold: more than 3.8 pp higher in Year 2. Actual Δ = -0.7 pp.
-
-Reading the arithmetic against the claim: margin rose by -0.7 pp versus more than 3.8 pp so the statement does not hold.
-
-The statement is false.', 'TRUE — Operating margin in Year 2 is operating result divided by revenue.
-
-Name the identity in words: operating margin = operating result ÷ revenue.
-
-From the extract, operating result = 266 and revenue = 950. Plug the figures step by step:
-
-$$
-OM = \frac{\text{operating result}}{\text{revenue}}
-$$
-
-$$
-OM = \frac{266}{950}
-$$
-
-$$
-OM = 28.0\%
-$$
-
-Threshold: exceeds 14% in Year 2. Actual 28.0%.
-
-Reading the arithmetic against the claim: operating margin 28.0% exceeds 14% so the statement holds.
-
-The statement is true.', 'TRUE — Effective tax rate in Year 1 is income taxes divided by profit before tax.
-
-Name the identity in words: effective tax rate = income taxes ÷ profit before tax.
-
-From the extract, income taxes = 46 and profit before tax = 233. Plug the figures step by step:
-
-$$
-ETR = \frac{\text{income taxes}}{\text{profit before tax}}
-$$
-
-$$
-ETR = \frac{46}{233}
-$$
-
-$$
-ETR = 19.7\%
-$$
-
-Threshold: below 21.3% in Year 1. Actual 19.7%.
-
-Reading the arithmetic against the claim: ETR 19.7% is below 21.3% so the statement holds.
+That is exactly what the claim asserts, so the wording survives a careful check against the standard idea.
 
 The statement is true.'] WHERE case_id = 'CASE 6.3.031' AND tier = 'full';
-UPDATE public.economics_cases SET tactical_explanations = ARRAY['TRUE — Use the case figures for Revenue and compute the percentage change between Year 1 and Year 2 before comparing it with the claimed threshold.
+UPDATE public.economics_cases SET tactical_explanations = ARRAY['Revenue changed by about 12.5% between the two years.
 
-From the extract:
+That is exactly what the claim asserts, so the wording survives a careful check against the standard idea.
 
-$$
-\text{Revenue}_{\text{Y1}} = 840, \quad
-\text{Revenue}_{\text{Y2}} = 945
-$$
+The statement is true.', 'Finance costs moved from 19 to 24; operating result moved from 210 to 218.
 
-$$
-\frac{945 - 840}{840} = 12.5\%
-$$
+That is exactly what the claim asserts, so the wording survives a careful check against the standard idea.
 
-$$
-12.5\% > 10.1\%
-$$
+The statement is true.', 'Gross margins were 34.4% then 33.8%.
 
-The actual growth is 12.5%, which is more than the claimed 10.1%.
+Because that detail fails, the whole statement fails even if the topic word looks familiar.
 
-The statement is true.', 'TRUE — Compare finance-cost growth with operating-result growth; the claim needs both a finance-cost rise above the threshold and outpacing of operating result.
+The statement is false.', 'The operating result changed by about 3.8% between the two years.
 
-Name the identity in words: growth = (Year 2 − Year 1) ÷ Year 1 for each line.
+Because that detail fails, the whole statement fails even if the topic word looks familiar.
 
-$$
-\text{FC growth} = 26.3\%
-$$
+The statement is false.', 'Profit for the year changed by about -1.9% between the two years.
 
-$$
-\text{OR growth} = 3.8\%
-$$
-
-Finance costs did grow by more than 10%; they do outpace operating result.
-
-Reading the arithmetic against the claim: FC growth 26.3% vs threshold 10% and OR growth 3.8% so the statement holds.
-
-The statement is true.', 'FALSE — Gross margin is gross profit divided by revenue; the claim compares the Year-2 margin with Year 1 in percentage points.
-
-Name the identity in words: gross margin = gross profit ÷ revenue; Δ = GPM₂ − GPM₁.
-
-$$
-GPM_{1} = \frac{289}{840} = 34.4\%
-$$
-
-$$
-GPM_{2} = \frac{319}{945} = 33.8\%
-$$
-
-$$
-\Delta = -0.6\text{ percentage points}
-$$
-
-Threshold: more than 2.2 pp higher in Year 2. Actual Δ = -0.6 pp.
-
-Reading the arithmetic against the claim: margin rose by -0.6 pp versus more than 2.2 pp so the statement does not hold.
-
-The statement is false.', 'FALSE — Use the case figures for The operating result and compute the percentage change between Year 1 and Year 2 before comparing it with the claimed threshold.
-
-From the extract:
-
-$$
-\text{The operating result}_{\text{Y1}} = 210, \quad
-\text{The operating result}_{\text{Y2}} = 218
-$$
-
-$$
-\frac{218 - 210}{210} = 3.8\%
-$$
-
-$$
-3.8\% \le  28.1\%
-$$
-
-The actual growth is 3.8%, which is not more than the claimed 28.1%.
-
-The statement is false.', 'FALSE — Use the case figures for Profit for the year and compute the percentage change between Year 1 and Year 2 before comparing it with the claimed threshold.
-
-From the extract:
-
-$$
-\text{Profit for the year}_{\text{Y1}} = 158, \quad
-\text{Profit for the year}_{\text{Y2}} = 155
-$$
-
-$$
-\frac{155 - 158}{158} = -1.9\%
-$$
-
-$$
--1.9\% \le  22.6\%
-$$
-
-The actual growth is -1.9%, which is not more than the claimed 22.6%.
+Because that detail fails, the whole statement fails even if the topic word looks familiar.
 
 The statement is false.'] WHERE case_id = 'CASE 6.3.032' AND tier = 'full';
-UPDATE public.economics_cases SET tactical_explanations = ARRAY['TRUE — Non-current liabilities are the long-term funding claims; here they are long-term bank loan plus bonds payable, compared with total equity.
+UPDATE public.economics_cases SET tactical_explanations = ARRAY['Non-current liabilities are about 71.9% of equity in Year 1.
 
-Name the identity in words: NCL-to-equity share = (long-term bank loan + bonds payable) ÷ total equity.
+That is exactly what the claim asserts, so the wording survives a careful check against the standard idea.
 
-$$
-\text{NCL} = 329 + 40 = 369
-$$
+The statement is true.', 'Total equity changed by about 11.3% between the two years.
 
-$$
-\text{Equity} = 513
-$$
+Because that detail fails, the whole statement fails even if the topic word looks familiar.
 
-$$
-\frac{369}{513} = 71.9\%
-$$
+The statement is false.', 'Total assets changed by about 12.1% between the two years.
 
-Threshold: more than 52.9% in Year 1. Actual 71.9%.
+Because that detail fails, the whole statement fails even if the topic word looks familiar.
 
-Reading the arithmetic against the claim: Year 1 NCL/equity is 71.9%, which is consistent with ''more than 52.9%'' so the statement holds.
+The statement is false.', 'Inventory changed by about 16.1% between the two years.
 
-The statement is true.', 'FALSE — Use the case figures for Total equity and compute the percentage change between Year 1 and Year 2 before comparing it with the claimed threshold.
+Because that detail fails, the whole statement fails even if the topic word looks familiar.
 
-From the extract:
+The statement is false.', 'Trade payables changed by about 9.8% between the two years.
 
-$$
-\text{Total equity}_{\text{Y1}} = 513, \quad
-\text{Total equity}_{\text{Y2}} = 571
-$$
-
-$$
-\frac{571 - 513}{513} = 11.3\%
-$$
-
-$$
-11.3\% \le  15.8\%
-$$
-
-The actual growth is 11.3%, which is not more than the claimed 15.8%.
-
-The statement is false.', 'FALSE — Use the case figures for Total assets and compute the percentage change between Year 1 and Year 2 before comparing it with the claimed threshold.
-
-From the extract:
-
-$$
-\text{Total assets}_{\text{Y1}} = 1,020, \quad
-\text{Total assets}_{\text{Y2}} = 1,143
-$$
-
-$$
-\frac{1,143 - 1,020}{1,020} = 12.1\%
-$$
-
-$$
-12.1\% \le  21\%
-$$
-
-The actual growth is 12.1%, which is not more than the claimed 21%.
-
-The statement is false.', 'FALSE — Use the case figures for Inventory and compute the percentage change between Year 1 and Year 2 before comparing it with the claimed threshold.
-
-From the extract:
-
-$$
-\text{Inventory}_{\text{Y1}} = 186, \quad
-\text{Inventory}_{\text{Y2}} = 216
-$$
-
-$$
-\frac{216 - 186}{186} = 16.1\%
-$$
-
-$$
-16.1\% \le  29\%
-$$
-
-The actual growth is 16.1%, which is not more than the claimed 29%.
-
-The statement is false.', 'FALSE — Use the case figures for Trade payables and compute the percentage change between Year 1 and Year 2 before comparing it with the claimed threshold.
-
-From the extract:
-
-$$
-\text{Trade payables}_{\text{Y1}} = 82, \quad
-\text{Trade payables}_{\text{Y2}} = 90
-$$
-
-$$
-\frac{90 - 82}{82} = 9.8\%
-$$
-
-$$
-9.8\% \le  24.9\%
-$$
-
-The actual growth is 9.8%, which is not more than the claimed 24.9%.
+Because that detail fails, the whole statement fails even if the topic word looks familiar.
 
 The statement is false.'] WHERE case_id = 'CASE 6.3.033' AND tier = 'full';
-UPDATE public.economics_cases SET tactical_explanations = ARRAY['TRUE — The current ratio is the standard liquidity cover of current assets over current liabilities.
+UPDATE public.economics_cases SET tactical_explanations = ARRAY['Current assets = 215
 
-Name the identity in words: current ratio = current assets ÷ current liabilities.
+Current liabilities gather the short-term claims:
 
-Build current assets and current liabilities from the extract:
+Current liabilities = 236
 
-$$
-CA = 109 + 71 + 35 = 215
-$$
+Current ratio = 215 / 236 ≈ 0.91
 
-$$
-CL = 165 + 71 = 236
-$$
+The claim says the ratio below 0.99. We have about 0.91, which matches that comparison.
 
-$$
-\text{Current ratio} = \frac{215}{236} = 0.9110
-$$
+The statement is true.', 'Apply the case evidence: Debt ratio ≈ 71.7%. Check whether the direction of change (higher/lower, above/below the threshold) matches what the statement asserts.
 
-Claimed: is below 0.99. Actual 0.91.
+That is exactly what the claim asserts, so the wording survives a careful check against the standard idea.
 
-Reading the arithmetic against the claim: actual current ratio 0.91 versus ''is below 0.99'' so the statement holds.
+The statement is true.', 'Inventory are about 50.7% of current assets.
 
-The statement is true.', 'TRUE — The debt ratio places debt against total assets so the financing structure can be judged on one balance sheet.
+That is exactly what the claim asserts, so the wording survives a careful check against the standard idea.
 
-Name the identity in words: debt ratio = debt ÷ total assets.
+The statement is true.', 'Trade receivables are about 33.0% of current assets.
 
-From the extract, debt = 719 and total assets = 1,003. Plug the figures step by step:
+That is exactly what the claim asserts, so the wording survives a careful check against the standard idea.
 
-$$
-DR = \frac{\text{debt}}{\text{total assets}}
-$$
+The statement is true.', 'Inventory is always a current asset.
 
-$$
-DR = \frac{719}{1,003}
-$$
-
-$$
-DR = 71.7\%
-$$
-
-Claimed: exceeds 67.1%. Actual 71.7%.
-
-Reading the arithmetic against the claim: actual debt ratio 71.7% matches ''exceeds 67.1%'' so the statement holds.
-
-The statement is true.', 'TRUE — This is a composition claim: express Inventory as a percentage of current assets.
-
-Name the identity in words: Inventory share of current assets = Inventory ÷ current assets.
-
-From the extract, Inventory = 109 and current assets = 215. Plug the figures step by step:
-
-$$
-Share = \frac{\text{Inventory}}{\text{current assets}}
-$$
-
-$$
-Share = \frac{109}{215}
-$$
-
-$$
-Share = 50.7\%
-$$
-
-Threshold: more than 35.6%. Actual 50.7%.
-
-Reading the arithmetic against the claim: actual share 50.7% matches ''more than 35.6%'' so the statement holds.
-
-The statement is true.', 'TRUE — This is a composition claim: express Trade receivables as a percentage of current assets.
-
-Name the identity in words: Trade receivables share of current assets = Trade receivables ÷ current assets.
-
-From the extract, Trade receivables = 71 and current assets = 215. Plug the figures step by step:
-
-$$
-Share = \frac{\text{Trade receivables}}{\text{current assets}}
-$$
-
-$$
-Share = \frac{71}{215}
-$$
-
-$$
-Share = 33.0\%
-$$
-
-Threshold: less than 35.6%. Actual 33.0%.
-
-Reading the arithmetic against the claim: actual share 33.0% matches ''less than 35.6%'' so the statement holds.
-
-The statement is true.', 'TRUE — Inventory is held for sale or for consumption in the operating cycle.
-
-On the balance sheet that places inventory among current assets. It is not an intangible (no physical stock for sale) and not a non-current operating asset (those are used in the business beyond one year rather than turned over as stock).
-
-Applied to this stem: "Inventory of €109 thousand is correctly classified as a current asset rather than a non-current intangible asset."
+That is exactly what the claim asserts, so the wording survives a careful check against the standard idea.
 
 The statement is true.'] WHERE case_id = 'CASE 6.3.034' AND tier = 'full';
-UPDATE public.economics_cases SET tactical_explanations = ARRAY['FALSE — ROE on this extract is operating result divided by total equity.
+UPDATE public.economics_cases SET tactical_explanations = ARRAY['Return on equity ≈ 32.1%.
 
-Name the identity in words: ROE = operating result ÷ total equity.
+Because that detail fails, the whole statement fails even if the topic word looks familiar.
 
-From the extract, operating result = 201 and total equity = 626. Plug the figures step by step:
+The statement is false.', 'Return on capital employed ≈ 18.3%.
 
-$$
-ROE = \frac{\text{operating result}}{\text{total equity}}
-$$
+Because that detail fails, the whole statement fails even if the topic word looks familiar.
 
-$$
-ROE = \frac{201}{626}
-$$
+The statement is false.', 'Equity ratio = total equity / total assets.
 
-$$
-ROE = 32.1\%
-$$
+626 / 1498 ≈ 41.8%
 
-Threshold: exceeds 41.4%. Actual 32.1%.
+The claim says the ratio exceeds 47%. We have about 41.8%, which matches that comparison.
 
-Reading the arithmetic against the claim: ROE 32.1% does not exceed 41.4% so the statement does not hold.
+The statement is true.', 'Cash conversion ≈ 99.0% of the operating result.
 
-The statement is false.', 'FALSE — ROCE relates operating result to capital employed: equity plus non-current liabilities.
+Because that detail fails, the whole statement fails even if the topic word looks familiar.
 
-Name the identity in words: ROCE = operating result ÷ (equity + non-current liabilities).
+The statement is false.', 'Inventory are about 21.8% of total assets.
 
-$$
-\text{Capital employed} = 626 + 419 + 55 = 1,100
-$$
-
-$$
-ROCE = \frac{201}{1,100} = 18.3\%
-$$
-
-Threshold: exceeds 25.3%. Actual 18.3%.
-
-Reading the arithmetic against the claim: ROCE 18.3% does not exceed 25.3% so the statement does not hold.
-
-The statement is false.', 'TRUE — The equity ratio places equity against total assets so the financing structure can be judged on one balance sheet.
-
-Name the identity in words: equity ratio = equity ÷ total assets.
-
-From the extract, equity = 626 and total assets = 1,253. Plug the figures step by step:
-
-$$
-ER = \frac{\text{equity}}{\text{total assets}}
-$$
-
-$$
-ER = \frac{626}{1,253}
-$$
-
-$$
-ER = 50.0\%
-$$
-
-Claimed: exceeds 47%. Actual 50.0%.
-
-Reading the arithmetic against the claim: actual equity ratio 50.0% matches ''exceeds 47%'' so the statement holds.
-
-The statement is true.', 'FALSE — Operating-cash conversion here is cash flow from operating activities as a percentage of operating result.
-
-Name the identity in words: conversion = operating cash flow ÷ operating result.
-
-From the extract, operating cash flow = 199 and operating result = 201. Plug the figures step by step:
-
-$$
-Conv = \frac{\text{operating cash flow}}{\text{operating result}}
-$$
-
-$$
-Conv = \frac{199}{201}
-$$
-
-$$
-Conv = 99.0\%
-$$
-
-Threshold: less than 87%. Actual 99.0%.
-
-Reading the arithmetic against the claim: conversion 99.0% is not less than 87% so the statement does not hold.
-
-The statement is false.', 'FALSE — This is a composition claim: express Inventory as a percentage of total assets.
-
-Name the identity in words: Inventory share of total assets = Inventory ÷ total assets.
-
-From the extract, Inventory = 273 and total assets = 1,253. Plug the figures step by step:
-
-$$
-Share = \frac{\text{Inventory}}{\text{total assets}}
-$$
-
-$$
-Share = \frac{273}{1,253}
-$$
-
-$$
-Share = 21.8\%
-$$
-
-Threshold: more than 27.6%. Actual 21.8%.
-
-Reading the arithmetic against the claim: actual share 21.8% does not match ''more than 27.6%'' so the statement does not hold.
+Because that detail fails, the whole statement fails even if the topic word looks familiar.
 
 The statement is false.'] WHERE case_id = 'CASE 6.3.035' AND tier = 'full';
-UPDATE public.economics_cases SET tactical_explanations = ARRAY['TRUE — Non-current liabilities are the long-term funding claims; here they are long-term bank loan plus bonds payable, compared with total equity.
+UPDATE public.economics_cases SET tactical_explanations = ARRAY['Non-current liabilities are about 84.4% of equity in Year 2.
 
-Name the identity in words: NCL-to-equity share = (long-term bank loan + bonds payable) ÷ total equity.
+That is exactly what the claim asserts, so the wording survives a careful check against the standard idea.
 
-$$
-\text{NCL} = 375 + 91 = 466
-$$
+The statement is true.', 'Non-current assets are about 61.5% of total assets in Year 2.
 
-$$
-\text{Equity} = 552
-$$
+That is exactly what the claim asserts, so the wording survives a careful check against the standard idea.
 
-$$
-\frac{466}{552} = 84.4\%
-$$
+The statement is true.', 'Current ratio in year 2 is about 1.52.
 
-Threshold: less than 101.2% in Year 2. Actual 84.4%.
+That is exactly what the claim asserts, so the wording survives a careful check against the standard idea.
 
-Reading the arithmetic against the claim: Year 2 NCL/equity is 84.4%, which is consistent with ''less than 101.2%'' so the statement holds.
+The statement is true.', 'Total equity changed by about 6.8% between the two years.
 
-The statement is true.', 'TRUE — This is a composition claim: express Non-current assets as a percentage of total assets in Year 2.
+Because that detail fails, the whole statement fails even if the topic word looks familiar.
 
-Name the identity in words: Non-current assets share of total assets in Year 2 = Non-current assets ÷ total assets in Year 2.
+The statement is false.', 'Long-term financing covers non-current assets by about 21.3% in year 1.
 
-From the extract, Non-current assets = 838 and total assets in Year 2 = 1,362. Plug the figures step by step:
-
-$$
-Share = \frac{\text{Non-current assets}}{\text{total assets in Year 2}}
-$$
-
-$$
-Share = \frac{838}{1,362}
-$$
-
-$$
-Share = 61.5\%
-$$
-
-Threshold: more than 55.9%. Actual 61.5%.
-
-Reading the arithmetic against the claim: actual share 61.5% matches ''more than 55.9%'' so the statement holds.
-
-The statement is true.', 'TRUE — This is the Year 2 current ratio read as coverage of current liabilities.
-
-Name the identity in words: coverage = current assets ÷ current liabilities.
-
-$$
-\frac{524}{344} = 1.5233
-$$
-
-Threshold: less than 1.64. Actual 1.52.
-
-Reading the arithmetic against the claim: actual coverage 1.52 is less than 1.64 so the statement holds.
-
-The statement is true.', 'FALSE — Use the case figures for Total equity and compute the percentage change between Year 1 and Year 2 before comparing it with the claimed threshold.
-
-From the extract:
-
-$$
-\text{Total equity}_{\text{Y1}} = 517, \quad
-\text{Total equity}_{\text{Y2}} = 552
-$$
-
-$$
-\frac{552 - 517}{517} = 6.8\%
-$$
-
-$$
-6.8\% \le  16.6\%
-$$
-
-The actual growth is 6.8%, which is not more than the claimed 16.6%.
-
-The statement is false.', 'TRUE — Long-term financing is equity plus non-current liabilities; the claim compares that pool with non-current assets.
-
-Name the identity in words: surplus = (equity + non-current liabilities) ÷ non-current assets − 1.
-
-$$
-\text{Equity} + \text{NCL} = 517 + 435 = 952
-$$
-
-$$
-\text{NCA} = 785
-$$
-
-$$
-\frac{952}{785} - 1 = 21.3\%
-$$
-
-Threshold: more than 20.8%. Actual surplus 21.3%.
-
-Reading the arithmetic against the claim: the surplus is 21.3%, which exceeds 20.8% so the statement holds.
+That is exactly what the claim asserts, so the wording survives a careful check against the standard idea.
 
 The statement is true.'] WHERE case_id = 'CASE 6.3.036' AND tier = 'full';
-UPDATE public.economics_cases SET tactical_explanations = ARRAY['FALSE — Use the case figures for Total equity and compute the percentage change between Year 1 and Year 2 before comparing it with the claimed threshold.
+UPDATE public.economics_cases SET tactical_explanations = ARRAY['Total equity changed by about 7.1% between the two years.
 
-From the extract:
+Because that detail fails, the whole statement fails even if the topic word looks familiar.
 
-$$
-\text{Total equity}_{\text{Y1}} = 896, \quad
-\text{Total equity}_{\text{Y2}} = 960
-$$
+The statement is false.', 'Non-current liabilities are about 29.0% of equity in year 2.
 
-$$
-\frac{960 - 896}{896} = 7.1\%
-$$
+That is exactly what the claim asserts, so the wording survives a careful check against the standard idea.
 
-$$
-7.1\% \le  16.5\%
-$$
+The statement is true.', 'Non-current assets are about 70.6% of total assets in year 2.
 
-The actual growth is 7.1%, which is not more than the claimed 16.5%.
+That is exactly what the claim asserts, so the wording survives a careful check against the standard idea.
 
-The statement is false.', 'TRUE — Non-current liabilities are the long-term funding claims; here they are long-term bank loan plus bonds payable, compared with total equity.
+The statement is true.', 'Trade payables are a current liability regardless of the amount.
 
-Name the identity in words: NCL-to-equity share = (long-term bank loan + bonds payable) ÷ total equity.
+That is exactly what the claim asserts, so the wording survives a careful check against the standard idea.
 
-$$
-\text{NCL} = 230 + 48 = 278
-$$
+The statement is true.', 'Total assets changed by about 9.1% between the two years.
 
-$$
-\text{Equity} = 960
-$$
-
-$$
-\frac{278}{960} = 29.0\%
-$$
-
-Threshold: less than 105.9% in Year 2. Actual 29.0%.
-
-Reading the arithmetic against the claim: Year 2 NCL/equity is 29.0%, which is consistent with ''less than 105.9%'' so the statement holds.
-
-The statement is true.', 'TRUE — This is a composition claim: express Non-current assets as a percentage of total assets in Year 2.
-
-Name the identity in words: Non-current assets share of total assets in Year 2 = Non-current assets ÷ total assets in Year 2.
-
-From the extract, Non-current assets = 962 and total assets in Year 2 = 1,363. Plug the figures step by step:
-
-$$
-Share = \frac{\text{Non-current assets}}{\text{total assets in Year 2}}
-$$
-
-$$
-Share = \frac{962}{1,363}
-$$
-
-$$
-Share = 70.6\%
-$$
-
-Threshold: more than 60.3%. Actual 70.6%.
-
-Reading the arithmetic against the claim: actual share 70.6% matches ''more than 60.3%'' so the statement holds.
-
-The statement is true.', 'TRUE — Current liabilities are due within one year or the operating cycle.
-
-Trade payables to suppliers are routinely short-term; the euro amount does not change that rule.
-
-Using the stem facts: "Trade payables of €76 thousand in Year 2 are correctly classified as a current liability, since suppliers are normally expected to be paid within one year."
-
-Single-year statements need cautious reading: policies, estimates, and one-offs matter. Ratios (liquidity, gearing, margins, returns) put line items in context. Financial accounting serves external users; audits give reasonable, not absolute, assurance.
-
-The statement is true.', 'FALSE — Use the case figures for Total assets and compute the percentage change between Year 1 and Year 2 before comparing it with the claimed threshold.
-
-From the extract:
-
-$$
-\text{Total assets}_{\text{Y1}} = 1,249, \quad
-\text{Total assets}_{\text{Y2}} = 1,363
-$$
-
-$$
-\frac{1,363 - 1,249}{1,249} = 9.1\%
-$$
-
-$$
-9.1\% \le  22.8\%
-$$
-
-The actual growth is 9.1%, which is not more than the claimed 22.8%.
+Because that detail fails, the whole statement fails even if the topic word looks familiar.
 
 The statement is false.'] WHERE case_id = 'CASE 6.3.037' AND tier = 'full';
-UPDATE public.economics_cases SET tactical_explanations = ARRAY['TRUE — Single-year statements need cautious reading: policies, estimates, and one-offs matter.
+UPDATE public.economics_cases SET tactical_explanations = ARRAY['Multi-year operating result tracking isolates trading trends from interest rate or tax changes.
 
-The wording matches the relevant rule for "Benchmarking Against Industry Peers in Context". Single-year statements need cautious reading: policies, estimates, and one-offs matter. Ratios (liquidity, gearing, margins, returns) put line items in context. Financial accounting serves external users; audits give reasonable, not absolute, assurance. Applied here: "Tracking the operating result over several years shows how a business''s core trading is developing independently of changes in interest rates or tax policy."
+That is exactly what the claim asserts, so the wording survives a careful check against the standard idea.
 
-The statement is true.', 'FALSE — Single-year statements need cautious reading: policies, estimates, and one-offs matter.
+The statement is true.', 'This matching principle is central to being considered a soundly financed business.
 
-Absolute or misapplied wording conflicts with the rule for "Benchmarking Against Industry Peers in Context". Single-year statements need cautious reading: policies, estimates, and one-offs matter. Ratios (liquidity, gearing, margins, returns) put line items in context. Financial accounting serves external users; audits give reasonable, not absolute, assurance. Rejected claim: "Matching the expected life of an asset with the maturity of the finance used to fund it has no bearing on whether a business is considered soundly financed."
+Because that detail fails, the whole statement fails even if the topic word looks familiar.
 
-The statement is false.', 'TRUE — Single-year statements need cautious reading: policies, estimates, and one-offs matter.
+The statement is false.', 'Identical operating results can yield different profit for the year given differing finance costs or tax rates.
 
-The wording matches the relevant rule for "Benchmarking Against Industry Peers in Context". Single-year statements need cautious reading: policies, estimates, and one-offs matter. Ratios (liquidity, gearing, margins, returns) put line items in context. Financial accounting serves external users; audits give reasonable, not absolute, assurance. Applied here: "Two businesses reporting an identical operating result can still end up with different profit for the year if their finance costs or tax rates differ."
+That is exactly what the claim asserts, so the wording survives a careful check against the standard idea.
 
-The statement is true.', 'FALSE — Single-year statements need cautious reading: policies, estimates, and one-offs matter.
+The statement is true.', 'Short-term financing of long-lived assets creates, rather than removes, refinancing risk.
 
-Absolute or misapplied wording conflicts with the rule for "Benchmarking Against Industry Peers in Context". Single-year statements need cautious reading: policies, estimates, and one-offs matter. Ratios (liquidity, gearing, margins, returns) put line items in context. Financial accounting serves external users; audits give reasonable, not absolute, assurance. Rejected claim: "Financing long-lived production assets through short-term credit that must be repaid within a year removes any risk of needing to refinance."
+Because that detail fails, the whole statement fails even if the topic word looks familiar.
 
-The statement is false.', 'TRUE — Single-year statements need cautious reading: policies, estimates, and one-offs matter.
+The statement is false.', 'Falling profit for the year with a stable operating result points to financing or tax causes, not trading.
 
-The wording matches the relevant rule for "Benchmarking Against Industry Peers in Context". Single-year statements need cautious reading: policies, estimates, and one-offs matter. Ratios (liquidity, gearing, margins, returns) put line items in context. Financial accounting serves external users; audits give reasonable, not absolute, assurance. Applied here: "A decline in profit for the year alongside a stable or rising operating result suggests the cause lies in financing costs or taxation rather than in core trading."
+That is exactly what the claim asserts, so the wording survives a careful check against the standard idea.
 
 The statement is true.'] WHERE case_id = 'CASE 6.3.038' AND tier = 'full';
-UPDATE public.economics_cases SET tactical_explanations = ARRAY['TRUE — The current ratio is the standard liquidity cover of current assets over current liabilities.
+UPDATE public.economics_cases SET tactical_explanations = ARRAY['Current assets = 441
 
-Name the identity in words: current ratio = current assets ÷ current liabilities.
+Current liabilities gather the short-term claims:
 
-Build current assets and current liabilities from the extract:
+Current liabilities = 200
 
-$$
-CA = 215 + 174 + 52 = 441
-$$
+Current ratio = 441 / 200 ≈ 2.21
 
-$$
-CL = 118 + 82 = 200
-$$
+The claim says the ratio exceeds 1.08. We have about 2.21, which matches that comparison.
 
-$$
-\text{Current ratio} = \frac{441}{200} = 2.2050
-$$
+The statement is true.', 'Working capital = current assets minus current liabilities.
 
-Claimed: exceeds 1.08. Actual 2.21.
+441 - 200 = 241
 
-Reading the arithmetic against the claim: actual current ratio 2.21 versus ''exceeds 1.08'' so the statement holds.
+The claim cites 241. We have 241, so the figures line up.
 
-The statement is true.', 'TRUE — Working capital is the euro surplus (or deficit) of current assets over current liabilities on this balance sheet.
+The statement is true.', 'Current assets = 441
 
-Name the identity in words: working capital = current assets − current liabilities.
+Current liabilities gather the short-term claims:
 
-From the extract, current assets total 441 and current liabilities total 200:
+Current liabilities = 200
 
-$$
-WC = CA - CL
-$$
+Current ratio = 441 / 200 ≈ 2.21
 
-$$
-CA = 441, \quad CL = 200
-$$
+The claim says the ratio below 1.01. We have about 2.21, which does not match that comparison.
 
-$$
-WC = 441 - 200 = 241
-$$
+The statement is false.', 'Apply the case evidence: Debt ratio ≈ 56.1%. Check whether the direction of change (higher/lower, above/below the threshold) matches what the statement asserts.
 
-The statement cites working capital of €241 thousand and that it is positive. Calculated WC is 241, which is positive.
+That is exactly what the claim asserts, so the wording survives a careful check against the standard idea.
 
-Reading the arithmetic against the claim: WC = 241 is positive as claimed so the statement holds.
+The statement is true.', 'Equity ratio = total equity / total assets.
 
-The statement is true.', 'FALSE — The current ratio is the standard liquidity cover of current assets over current liabilities.
+557 / 1269 ≈ 43.9%
 
-Name the identity in words: current ratio = current assets ÷ current liabilities.
-
-Build current assets and current liabilities from the extract:
-
-$$
-CA = 215 + 174 + 52 = 441
-$$
-
-$$
-CL = 118 + 82 = 200
-$$
-
-$$
-\text{Current ratio} = \frac{441}{200} = 2.2050
-$$
-
-Claimed: is below 1.01. Actual 2.21.
-
-Reading the arithmetic against the claim: actual current ratio 2.21 versus ''is below 1.01'' so the statement does not hold.
-
-The statement is false.', 'TRUE — The debt ratio places debt against total assets so the financing structure can be judged on one balance sheet.
-
-Name the identity in words: debt ratio = debt ÷ total assets.
-
-From the extract, debt = 712 and total assets = 1,269. Plug the figures step by step:
-
-$$
-DR = \frac{\text{debt}}{\text{total assets}}
-$$
-
-$$
-DR = \frac{712}{1,269}
-$$
-
-$$
-DR = 56.1\%
-$$
-
-Claimed: exceeds 55.9%. Actual 56.1%.
-
-Reading the arithmetic against the claim: actual debt ratio 56.1% matches ''exceeds 55.9%'' so the statement holds.
-
-The statement is true.', 'FALSE — The equity ratio places equity against total assets so the financing structure can be judged on one balance sheet.
-
-Name the identity in words: equity ratio = equity ÷ total assets.
-
-From the extract, equity = 557 and total assets = 1,269. Plug the figures step by step:
-
-$$
-ER = \frac{\text{equity}}{\text{total assets}}
-$$
-
-$$
-ER = \frac{557}{1,269}
-$$
-
-$$
-ER = 43.9\%
-$$
-
-Claimed: is below 20.5%. Actual 43.9%.
-
-Reading the arithmetic against the claim: actual equity ratio 43.9% does not match ''is below 20.5%'' so the statement does not hold.
+The claim says the ratio below 20.5%. We have about 43.9%, which does not match that comparison.
 
 The statement is false.'] WHERE case_id = 'CASE 6.3.039' AND tier = 'full';
-UPDATE public.economics_cases SET tactical_explanations = ARRAY['TRUE — Use the case figures for Revenue and compute the percentage change between Year 1 and Year 2 before comparing it with the claimed threshold.
+UPDATE public.economics_cases SET tactical_explanations = ARRAY['Revenue changed by about 17.1% between the two years.
 
-From the extract:
+That is exactly what the claim asserts, so the wording survives a careful check against the standard idea.
 
-$$
-\text{Revenue}_{\text{Y1}} = 785, \quad
-\text{Revenue}_{\text{Y2}} = 919
-$$
+The statement is true.', 'Gross margins were 36.9% then 36.2%.
 
-$$
-\frac{919 - 785}{785} = 17.1\%
-$$
+Because that detail fails, the whole statement fails even if the topic word looks familiar.
 
-$$
-17.1\% > 12.5\%
-$$
+The statement is false.', 'Finance costs moved from 14 to 21; operating result moved from 192 to 217.
 
-The actual growth is 17.1%, which is more than the claimed 12.5%.
+That is exactly what the claim asserts, so the wording survives a careful check against the standard idea.
 
-The statement is true.', 'FALSE — Gross margin is gross profit divided by revenue; the claim compares the Year-2 margin with Year 1 in percentage points.
+The statement is true.', 'Interest coverage in Year 1 ≈ 13.7 times.
 
-Name the identity in words: gross margin = gross profit ÷ revenue; Δ = GPM₂ − GPM₁.
+That is exactly what the claim asserts, so the wording survives a careful check against the standard idea.
 
-$$
-GPM_{1} = \frac{290}{785} = 36.9\%
-$$
+The statement is true.', 'Operating margin in year 2 ≈ 23.6%.
 
-$$
-GPM_{2} = \frac{333}{919} = 36.2\%
-$$
-
-$$
-\Delta = -0.7\text{ percentage points}
-$$
-
-Threshold: more than 1.7 pp higher in Year 2. Actual Δ = -0.7 pp.
-
-Reading the arithmetic against the claim: margin rose by -0.7 pp versus more than 1.7 pp so the statement does not hold.
-
-The statement is false.', 'TRUE — Compare finance-cost growth with operating-result growth; the claim needs both a finance-cost rise above the threshold and outpacing of operating result.
-
-Name the identity in words: growth = (Year 2 − Year 1) ÷ Year 1 for each line.
-
-$$
-\text{FC growth} = 50.0\%
-$$
-
-$$
-\text{OR growth} = 13.0\%
-$$
-
-Finance costs did grow by more than 19.5%; they do outpace operating result.
-
-Reading the arithmetic against the claim: FC growth 50.0% vs threshold 19.5% and OR growth 13.0% so the statement holds.
-
-The statement is true.', 'TRUE — Interest coverage in Year 1 is operating result divided by finance costs.
-
-Name the identity in words: interest coverage = operating result ÷ finance costs.
-
-From the extract, operating result = 192 and finance costs = 14. Plug the figures step by step:
-
-$$
-Coverage = \frac{\text{operating result}}{\text{finance costs}}
-$$
-
-$$
-Coverage = \frac{192}{14}
-$$
-
-$$
-Coverage = 13.7143
-$$
-
-Threshold: more than 4.62. Actual 13.71.
-
-Reading the arithmetic against the claim: coverage 13.71 exceeds 4.62 so the statement holds.
-
-The statement is true.', 'TRUE — Operating margin in Year 2 is operating result divided by revenue.
-
-Name the identity in words: operating margin = operating result ÷ revenue.
-
-From the extract, operating result = 217 and revenue = 919. Plug the figures step by step:
-
-$$
-OM = \frac{\text{operating result}}{\text{revenue}}
-$$
-
-$$
-OM = \frac{217}{919}
-$$
-
-$$
-OM = 23.6\%
-$$
-
-Threshold: exceeds 10.4% in Year 2. Actual 23.6%.
-
-Reading the arithmetic against the claim: operating margin 23.6% exceeds 10.4% so the statement holds.
+That is exactly what the claim asserts, so the wording survives a careful check against the standard idea.
 
 The statement is true.'] WHERE case_id = 'CASE 6.3.040' AND tier = 'full';
-UPDATE public.economics_cases SET tactical_explanations = ARRAY['TRUE — Single-year statements need cautious reading: policies, estimates, and one-offs matter.
+UPDATE public.economics_cases SET tactical_explanations = ARRAY['Expenditure is the outflow itself; expense is the portion recognised for the current period.
 
-The wording matches the relevant rule for "The Current and Non-Current Asset Balance in Practice". Single-year statements need cautious reading: policies, estimates, and one-offs matter. Ratios (liquidity, gearing, margins, returns) put line items in context. Financial accounting serves external users; audits give reasonable, not absolute, assurance. Applied here: "An expenditure is an outflow of cash or resources, while an expense is the portion of that outflow recognised in the income statement as belonging to the current period."
+That is exactly what the claim asserts, so the wording survives a careful check against the standard idea.
 
-The statement is true.', 'FALSE — Single-year statements need cautious reading: policies, estimates, and one-offs matter.
+The statement is true.', 'Cost of sales is limited to direct costs; not every cost incurred belongs there.
 
-Absolute or misapplied wording conflicts with the rule for "The Current and Non-Current Asset Balance in Practice". Single-year statements need cautious reading: policies, estimates, and one-offs matter. Ratios (liquidity, gearing, margins, returns) put line items in context. Financial accounting serves external users; audits give reasonable, not absolute, assurance. Rejected claim: "Cost of sales includes every cost a business incurs during the period, regardless of whether the cost relates directly to the goods sold."
+The absolute wording "every" turns a familiar idea into an overclaim. One ordinary counterexample is enough to reject it.
 
-The statement is false.', 'FALSE — Single-year statements need cautious reading: policies, estimates, and one-offs matter.
+The statement is false.', 'Only directly traceable costs belong in cost of sales; indirect benefit is not sufficient.
 
-Absolute or misapplied wording conflicts with the rule for "The Current and Non-Current Asset Balance in Practice". Single-year statements need cautious reading: policies, estimates, and one-offs matter. Ratios (liquidity, gearing, margins, returns) put line items in context. Financial accounting serves external users; audits give reasonable, not absolute, assurance. Rejected claim: "Any cost that benefits the business in some way, even indirectly, belongs within cost of sales."
+Because that detail fails, the whole statement fails even if the topic word looks familiar.
 
-The statement is false.', 'FALSE — Single-year statements need cautious reading: policies, estimates, and one-offs matter.
+The statement is false.', 'Materials consumed directly in production are a direct cost and belong within cost of sales.
 
-The claim states: Materials physically consumed in manufacturing the units sold are excluded from cost of sales. The reason — they are considered an overhead. — does not support that label under the chapter definitions. Single-year statements need cautious reading: policies, estimates, and one-offs matter. Ratios (liquidity, gearing, margins, returns) put line items in context. Financial accounting serves external users; audits give reasonable, not absolute, assurance.
+Because that detail fails, the whole statement fails even if the topic word looks familiar.
 
-The statement is false.', 'TRUE — Single-year statements need cautious reading: policies, estimates, and one-offs matter.
+The statement is false.', 'A prepayment is an expenditure immediately but becomes an expense only in the periods it covers.
 
-The wording matches the relevant rule for "The Current and Non-Current Asset Balance in Practice". Single-year statements need cautious reading: policies, estimates, and one-offs matter. Ratios (liquidity, gearing, margins, returns) put line items in context. Financial accounting serves external users; audits give reasonable, not absolute, assurance. Applied here: "Paying in advance for a full year of insurance cover is an expenditure at the time of payment, but it becomes an expense only as each period of cover passes."
+That is exactly what the claim asserts, so the wording survives a careful check against the standard idea.
 
 The statement is true.'] WHERE case_id = 'CASE 6.3.041' AND tier = 'full';
-UPDATE public.economics_cases SET tactical_explanations = ARRAY['TRUE — Single-year statements need cautious reading: policies, estimates, and one-offs matter.
+UPDATE public.economics_cases SET tactical_explanations = ARRAY['A large expenditure can be spread as expense across several future periods.
 
-The wording matches the relevant rule for "The Current and Non-Current Asset Balance Explained". Single-year statements need cautious reading: policies, estimates, and one-offs matter. Ratios (liquidity, gearing, margins, returns) put line items in context. Financial accounting serves external users; audits give reasonable, not absolute, assurance. Applied here: "A single large expenditure can result in expense being recognised gradually across several future accounting periods rather than all at once."
+That is exactly what the claim asserts, so the wording survives a careful check against the standard idea.
 
-The statement is true.', 'FALSE — Single-year statements need cautious reading: policies, estimates, and one-offs matter.
+The statement is true.', 'Administration and distribution are reported separately, not absorbed into cost of sales.
 
-Absolute or misapplied wording conflicts with the rule for "The Current and Non-Current Asset Balance Explained". Single-year statements need cautious reading: policies, estimates, and one-offs matter. Ratios (liquidity, gearing, margins, returns) put line items in context. Financial accounting serves external users; audits give reasonable, not absolute, assurance. Rejected claim: "Because cost of sales includes every departmental cost, functions such as administration and distribution are absorbed into it rather than reported separately."
+The absolute wording "every" turns a familiar idea into an overclaim. One ordinary counterexample is enough to reject it.
 
-The statement is false.', 'FALSE — Single-year statements need cautious reading: policies, estimates, and one-offs matter.
+The statement is false.', 'Direct production labour is a core component of cost of sales, not an administrative cost.
 
-The claim states: Direct labour spent physically producing the goods sold is excluded from cost of sales. The reason — wages are always treated as an administrative cost. — does not support that label under the chapter definitions. Single-year statements need cautious reading: policies, estimates, and one-offs matter. Ratios (liquidity, gearing, margins, returns) put line items in context. Financial accounting serves external users; audits give reasonable, not absolute, assurance.
+The absolute wording "always" turns a familiar idea into an overclaim. One ordinary counterexample is enough to reject it.
 
-The statement is false.', 'TRUE — Single-year statements need cautious reading: policies, estimates, and one-offs matter.
+The statement is false.', 'Distinguishing expenditure from expense explains gaps between cash outflow and reported expense in a year.
 
-The claim states: The distinction between expenditure and expense matters. The reason given — it explains why a business''s cash outflow for a year can differ substantially from its reported expenses for that year. — fits the chapter rule. Single-year statements need cautious reading: policies, estimates, and one-offs matter. Ratios (liquidity, gearing, margins, returns) put line items in context. Financial accounting serves external users; audits give reasonable, not absolute, assurance.
+That is exactly what the claim asserts, so the wording survives a careful check against the standard idea.
 
-The statement is true.', 'FALSE — Single-year statements need cautious reading: policies, estimates, and one-offs matter.
+The statement is true.', 'Gross profit only deducts cost of sales from revenue; operating expenses are deducted later.
 
-Absolute or misapplied wording conflicts with the rule for "The Current and Non-Current Asset Balance Explained". Single-year statements need cautious reading: policies, estimates, and one-offs matter. Ratios (liquidity, gearing, margins, returns) put line items in context. Financial accounting serves external users; audits give reasonable, not absolute, assurance. Rejected claim: "Gross profit is arrived at by deducting all operating expenses, including distribution and administrative costs, from revenue."
+The absolute wording "all" turns a familiar idea into an overclaim. One ordinary counterexample is enough to reject it.
 
 The statement is false.'] WHERE case_id = 'CASE 6.3.042' AND tier = 'full';
-UPDATE public.economics_cases SET tactical_explanations = ARRAY['TRUE — Single-year statements need cautious reading: policies, estimates, and one-offs matter.
+UPDATE public.economics_cases SET tactical_explanations = ARRAY['Buying a multi-year asset is an immediate expenditure, with only part becoming expense that year.
 
-The wording matches the relevant rule for "The Current and Non-Current Asset Balance for Analysts". Single-year statements need cautious reading: policies, estimates, and one-offs matter. Ratios (liquidity, gearing, margins, returns) put line items in context. Financial accounting serves external users; audits give reasonable, not absolute, assurance. Applied here: "Buying an asset that will be used for several years is an expenditure immediately, but only part of its cost becomes an expense in the year of purchase."
+That is exactly what the claim asserts, so the wording survives a careful check against the standard idea.
 
-The statement is true.', 'TRUE — Single-year statements need cautious reading: policies, estimates, and one-offs matter.
+The statement is true.', 'Comparing revenue growth with cost of sales growth reveals changing production efficiency.
 
-The wording matches the relevant rule for "The Current and Non-Current Asset Balance for Analysts". Single-year statements need cautious reading: policies, estimates, and one-offs matter. Ratios (liquidity, gearing, margins, returns) put line items in context. Financial accounting serves external users; audits give reasonable, not absolute, assurance. Applied here: "Comparing how quickly revenue grows against how quickly cost of sales grows over successive years shows whether a business is becoming more or less efficient at producing what it sells."
+That is exactly what the claim asserts, so the wording survives a careful check against the standard idea.
 
-The statement is true.', 'FALSE — Single-year statements need cautious reading: policies, estimates, and one-offs matter.
+The statement is true.', 'Gross profit is calculated before, not after, overhead costs such as administration are deducted.
 
-Absolute or misapplied wording conflicts with the rule for "The Current and Non-Current Asset Balance for Analysts". Single-year statements need cautious reading: policies, estimates, and one-offs matter. Ratios (liquidity, gearing, margins, returns) put line items in context. Financial accounting serves external users; audits give reasonable, not absolute, assurance. Rejected claim: "The margin represented by gross profit reflects a business''s overall profitability after every overhead cost, including administration, has already been deducted."
+The absolute wording "every" turns a familiar idea into an overclaim. One ordinary counterexample is enough to reject it.
 
-The statement is false.', 'TRUE — Single-year statements need cautious reading: policies, estimates, and one-offs matter.
+The statement is false.', 'Cost of sales growing more slowly than revenue widens the gross profit margin.
 
-The wording matches the relevant rule for "The Current and Non-Current Asset Balance for Analysts". Single-year statements need cautious reading: policies, estimates, and one-offs matter. Ratios (liquidity, gearing, margins, returns) put line items in context. Financial accounting serves external users; audits give reasonable, not absolute, assurance. Applied here: "If cost of sales grows more slowly than revenue over a period, the resulting gross profit margin will widen across that period."
+That is exactly what the claim asserts, so the wording survives a careful check against the standard idea.
 
-The statement is true.', 'TRUE — Single-year statements need cautious reading: policies, estimates, and one-offs matter.
+The statement is true.', 'Cost of sales consistently outpacing revenue growth puts sustained pressure on the gross profit margin.
 
-The wording matches the relevant rule for "The Current and Non-Current Asset Balance for Analysts". Single-year statements need cautious reading: policies, estimates, and one-offs matter. Ratios (liquidity, gearing, margins, returns) put line items in context. Financial accounting serves external users; audits give reasonable, not absolute, assurance. Applied here: "A business whose cost of sales consistently outpaces its revenue growth will see its gross profit margin come under sustained pressure."
+That is exactly what the claim asserts, so the wording survives a careful check against the standard idea.
 
 The statement is true.'] WHERE case_id = 'CASE 6.3.043' AND tier = 'full';
-UPDATE public.economics_cases SET tactical_explanations = ARRAY['TRUE — Use the case figures for Revenue and compute the percentage change between Year 1 and Year 2 before comparing it with the claimed threshold.
+UPDATE public.economics_cases SET tactical_explanations = ARRAY['Revenue changed by about 17.4% between the two years.
 
-From the extract:
+That is exactly what the claim asserts, so the wording survives a careful check against the standard idea.
 
-$$
-\text{Revenue}_{\text{Y1}} = 770, \quad
-\text{Revenue}_{\text{Y2}} = 904
-$$
+The statement is true.', 'Finance costs moved from 18 to 26; operating result moved from 240 to 264.
 
-$$
-\frac{904 - 770}{770} = 17.4\%
-$$
+That is exactly what the claim asserts, so the wording survives a careful check against the standard idea.
 
-$$
-17.4\% > 12.4\%
-$$
+The statement is true.', 'Gross margins were 41.8% then 41.4%.
 
-The actual growth is 17.4%, which is more than the claimed 12.4%.
+Because that detail fails, the whole statement fails even if the topic word looks familiar.
 
-The statement is true.', 'TRUE — Compare finance-cost growth with operating-result growth; the claim needs both a finance-cost rise above the threshold and outpacing of operating result.
+The statement is false.', 'The operating result changed by about 10.0% between the two years.
 
-Name the identity in words: growth = (Year 2 − Year 1) ÷ Year 1 for each line.
+Because that detail fails, the whole statement fails even if the topic word looks familiar.
 
-$$
-\text{FC growth} = 44.4\%
-$$
+The statement is false.', 'Profit for the year changed by about 6.6% between the two years.
 
-$$
-\text{OR growth} = 10.0\%
-$$
-
-Finance costs did grow by more than 37.8%; they do outpace operating result.
-
-Reading the arithmetic against the claim: FC growth 44.4% vs threshold 37.8% and OR growth 10.0% so the statement holds.
-
-The statement is true.', 'FALSE — Gross margin is gross profit divided by revenue; the claim compares the Year-2 margin with Year 1 in percentage points.
-
-Name the identity in words: gross margin = gross profit ÷ revenue; Δ = GPM₂ − GPM₁.
-
-$$
-GPM_{1} = \frac{322}{770} = 41.8\%
-$$
-
-$$
-GPM_{2} = \frac{374}{904} = 41.4\%
-$$
-
-$$
-\Delta = -0.4\text{ percentage points}
-$$
-
-Threshold: more than 4.4 pp higher in Year 2. Actual Δ = -0.4 pp.
-
-Reading the arithmetic against the claim: margin rose by -0.4 pp versus more than 4.4 pp so the statement does not hold.
-
-The statement is false.', 'FALSE — Use the case figures for The operating result and compute the percentage change between Year 1 and Year 2 before comparing it with the claimed threshold.
-
-From the extract:
-
-$$
-\text{The operating result}_{\text{Y1}} = 240, \quad
-\text{The operating result}_{\text{Y2}} = 264
-$$
-
-$$
-\frac{264 - 240}{240} = 10.0\%
-$$
-
-$$
-10.0\% \le  59.9\%
-$$
-
-The actual growth is 10.0%, which is not more than the claimed 59.9%.
-
-The statement is false.', 'FALSE — Use the case figures for Profit for the year and compute the percentage change between Year 1 and Year 2 before comparing it with the claimed threshold.
-
-From the extract:
-
-$$
-\text{Profit for the year}_{\text{Y1}} = 182, \quad
-\text{Profit for the year}_{\text{Y2}} = 194
-$$
-
-$$
-\frac{194 - 182}{182} = 6.6\%
-$$
-
-$$
-6.6\% \le  29.3\%
-$$
-
-The actual growth is 6.6%, which is not more than the claimed 29.3%.
+Because that detail fails, the whole statement fails even if the topic word looks familiar.
 
 The statement is false.'] WHERE case_id = 'CASE 6.3.044' AND tier = 'full';
-UPDATE public.economics_cases SET tactical_explanations = ARRAY['FALSE — Use the case figures for Total equity and compute the percentage change between Year 1 and Year 2 before comparing it with the claimed threshold.
+UPDATE public.economics_cases SET tactical_explanations = ARRAY['Total equity changed by about 10.5% between the two years.
 
-From the extract:
+Because that detail fails, the whole statement fails even if the topic word looks familiar.
 
-$$
-\text{Total equity}_{\text{Y1}} = 474, \quad
-\text{Total equity}_{\text{Y2}} = 524
-$$
+The statement is false.', 'Trade payables changed by about 16.3% between the two years.
 
-$$
-\frac{524 - 474}{474} = 10.5\%
-$$
+That is exactly what the claim asserts, so the wording survives a careful check against the standard idea.
 
-$$
-10.5\% \le  14.5\%
-$$
+The statement is true.', 'Non-current liabilities are about 59.4% of equity in year 2.
 
-The actual growth is 10.5%, which is not more than the claimed 14.5%.
+That is exactly what the claim asserts, so the wording survives a careful check against the standard idea.
 
-The statement is false.', 'TRUE — Use the case figures for Trade payables and compute the percentage change between Year 1 and Year 2 before comparing it with the claimed threshold.
+The statement is true.', 'Total assets changed by about 11.5% between the two years.
 
-From the extract:
+Because that detail fails, the whole statement fails even if the topic word looks familiar.
 
-$$
-\text{Trade payables}_{\text{Y1}} = 184, \quad
-\text{Trade payables}_{\text{Y2}} = 214
-$$
+The statement is false.', 'Inventory changed by about 6.9% between the two years.
 
-$$
-\frac{214 - 184}{184} = 16.3\%
-$$
-
-$$
-16.3\% > 8.4\%
-$$
-
-The actual growth is 16.3%, which is more than the claimed 8.4%.
-
-The statement is true.', 'TRUE — Non-current liabilities are the long-term funding claims; here they are long-term bank loan plus bonds payable, compared with total equity.
-
-Name the identity in words: NCL-to-equity share = (long-term bank loan + bonds payable) ÷ total equity.
-
-$$
-\text{NCL} = 217 + 94 = 311
-$$
-
-$$
-\text{Equity} = 524
-$$
-
-$$
-\frac{311}{524} = 59.4\%
-$$
-
-Threshold: less than 75.7% in Year 2. Actual 59.4%.
-
-Reading the arithmetic against the claim: Year 2 NCL/equity is 59.4%, which is consistent with ''less than 75.7%'' so the statement holds.
-
-The statement is true.', 'FALSE — Use the case figures for Total assets and compute the percentage change between Year 1 and Year 2 before comparing it with the claimed threshold.
-
-From the extract:
-
-$$
-\text{Total assets}_{\text{Y1}} = 1,013, \quad
-\text{Total assets}_{\text{Y2}} = 1,129
-$$
-
-$$
-\frac{1,129 - 1,013}{1,013} = 11.5\%
-$$
-
-$$
-11.5\% \le  14.9\%
-$$
-
-The actual growth is 11.5%, which is not more than the claimed 14.9%.
-
-The statement is false.', 'FALSE — Use the case figures for Inventory and compute the percentage change between Year 1 and Year 2 before comparing it with the claimed threshold.
-
-From the extract:
-
-$$
-\text{Inventory}_{\text{Y1}} = 231, \quad
-\text{Inventory}_{\text{Y2}} = 247
-$$
-
-$$
-\frac{247 - 231}{231} = 6.9\%
-$$
-
-$$
-6.9\% \le  20.7\%
-$$
-
-The actual growth is 6.9%, which is not more than the claimed 20.7%.
+Because that detail fails, the whole statement fails even if the topic word looks familiar.
 
 The statement is false.'] WHERE case_id = 'CASE 6.3.045' AND tier = 'full';
-UPDATE public.economics_cases SET tactical_explanations = ARRAY['TRUE — Single-year statements need cautious reading: policies, estimates, and one-offs matter.
+UPDATE public.economics_cases SET tactical_explanations = ARRAY['Revenue and cost of sales growing at similar rates tends to keep the margin steady.
 
-The wording matches the relevant rule for "The Current and Non-Current Asset Balance Over Time". Single-year statements need cautious reading: policies, estimates, and one-offs matter. Ratios (liquidity, gearing, margins, returns) put line items in context. Financial accounting serves external users; audits give reasonable, not absolute, assurance. Applied here: "Stable growth in both revenue and cost of sales at similar rates tends to keep a business''s gross profit margin relatively steady from year to year."
+That is exactly what the claim asserts, so the wording survives a careful check against the standard idea.
 
-The statement is true.', 'TRUE — Single-year statements need cautious reading: policies, estimates, and one-offs matter.
+The statement is true.', 'Rising revenue does not guarantee improving profitability if cost of sales rises even faster.
 
-The wording matches the relevant rule for "The Current and Non-Current Asset Balance Over Time". Single-year statements need cautious reading: policies, estimates, and one-offs matter. Ratios (liquidity, gearing, margins, returns) put line items in context. Financial accounting serves external users; audits give reasonable, not absolute, assurance. Applied here: "Rising revenue figures alone do not guarantee improving profitability if cost of sales is rising at an even faster pace."
+That is exactly what the claim asserts, so the wording survives a careful check against the standard idea.
 
-The statement is true.', 'FALSE — Single-year statements need cautious reading: policies, estimates, and one-offs matter.
+The statement is true.', 'These costs are deducted after gross profit has already been calculated, not alongside cost of sales.
 
-Absolute or misapplied wording conflicts with the rule for "The Current and Non-Current Asset Balance Over Time". Single-year statements need cautious reading: policies, estimates, and one-offs matter. Ratios (liquidity, gearing, margins, returns) put line items in context. Financial accounting serves external users; audits give reasonable, not absolute, assurance. Rejected claim: "Distribution costs and administrative expenses are deducted directly from revenue at the same stage as cost of sales, before gross profit is calculated."
+Because that detail fails, the whole statement fails even if the topic word looks familiar.
 
-The statement is false.', 'FALSE — Single-year statements need cautious reading: policies, estimates, and one-offs matter.
+The statement is false.', 'Identical gross profit does not guarantee identical operating results if operating expenses differ.
 
-Absolute or misapplied wording conflicts with the rule for "The Current and Non-Current Asset Balance Over Time". Single-year statements need cautious reading: policies, estimates, and one-offs matter. Ratios (liquidity, gearing, margins, returns) put line items in context. Financial accounting serves external users; audits give reasonable, not absolute, assurance. Rejected claim: "Two businesses that report identical gross profit will always end up with identical operating results, regardless of their distribution and administrative costs."
+The absolute wording "always" turns a familiar idea into an overclaim. One ordinary counterexample is enough to reject it.
 
-The statement is false.', 'TRUE — Single-year statements need cautious reading: policies, estimates, and one-offs matter.
+The statement is false.', 'Reading both statements together gives a fuller picture than studying either alone.
 
-The wording matches the relevant rule for "The Current and Non-Current Asset Balance Over Time". Single-year statements need cautious reading: policies, estimates, and one-offs matter. Ratios (liquidity, gearing, margins, returns) put line items in context. Financial accounting serves external users; audits give reasonable, not absolute, assurance. Applied here: "Reading the balance sheet and income statement together gives a fuller picture of a business''s position and performance than studying either statement on its own."
+That is exactly what the claim asserts, so the wording survives a careful check against the standard idea.
 
 The statement is true.'] WHERE case_id = 'CASE 6.3.046' AND tier = 'full';
-UPDATE public.economics_cases SET tactical_explanations = ARRAY['FALSE — The current ratio is the standard liquidity cover of current assets over current liabilities.
+UPDATE public.economics_cases SET tactical_explanations = ARRAY['Current assets = 435
 
-Name the identity in words: current ratio = current assets ÷ current liabilities.
+Current liabilities gather the short-term claims:
 
-Build current assets and current liabilities from the extract:
+Current liabilities = 301
 
-$$
-CA = 259 + 69 + 107 = 435
-$$
+Current ratio = 435 / 301 ≈ 1.45
 
-$$
-CL = 214 + 87 = 301
-$$
+The claim says the ratio exceeds 1.84. We have about 1.45, which does not match that comparison.
 
-$$
-\text{Current ratio} = \frac{435}{301} = 1.4452
-$$
+The statement is false.', 'Current assets = 435
 
-Claimed: exceeds 1.84. Actual 1.45.
+Current liabilities gather the short-term claims:
 
-Reading the arithmetic against the claim: actual current ratio 1.45 versus ''exceeds 1.84'' so the statement does not hold.
+Current liabilities = 301
 
-The statement is false.', 'FALSE — The current ratio is the standard liquidity cover of current assets over current liabilities.
+Current ratio = 435 / 301 ≈ 1.45
 
-Name the identity in words: current ratio = current assets ÷ current liabilities.
+The claim says the ratio below 0.68. We have about 1.45, which does not match that comparison.
 
-Build current assets and current liabilities from the extract:
+The statement is false.', 'Working capital = current assets minus current liabilities.
 
-$$
-CA = 259 + 69 + 107 = 435
-$$
+435 - 301 = 134
 
-$$
-CL = 214 + 87 = 301
-$$
+The claim cites 134. We have 134, so the figures line up.
 
-$$
-\text{Current ratio} = \frac{435}{301} = 1.4452
-$$
+The statement is true.', 'Inventory are about 59.5% of current assets.
 
-Claimed: is below 0.68. Actual 1.45.
+That is exactly what the claim asserts, so the wording survives a careful check against the standard idea.
 
-Reading the arithmetic against the claim: actual current ratio 1.45 versus ''is below 0.68'' so the statement does not hold.
+The statement is true.', 'Acid-test ratio ≈ 0.58.
 
-The statement is false.', 'TRUE — Working capital is the euro surplus (or deficit) of current assets over current liabilities on this balance sheet.
-
-Name the identity in words: working capital = current assets − current liabilities.
-
-From the extract, current assets total 435 and current liabilities total 301:
-
-$$
-WC = CA - CL
-$$
-
-$$
-CA = 435, \quad CL = 301
-$$
-
-$$
-WC = 435 - 301 = 134
-$$
-
-The statement cites working capital of €134 thousand and that it is positive. Calculated WC is 134, which is positive.
-
-Reading the arithmetic against the claim: WC = 134 is positive as claimed so the statement holds.
-
-The statement is true.', 'TRUE — This is a composition claim: express Inventory as a percentage of current assets.
-
-Name the identity in words: Inventory share of current assets = Inventory ÷ current assets.
-
-From the extract, Inventory = 259 and current assets = 435. Plug the figures step by step:
-
-$$
-Share = \frac{\text{Inventory}}{\text{current assets}}
-$$
-
-$$
-Share = \frac{259}{435}
-$$
-
-$$
-Share = 59.5\%
-$$
-
-Threshold: more than 55.2%. Actual 59.5%.
-
-Reading the arithmetic against the claim: actual share 59.5% matches ''more than 55.2%'' so the statement holds.
-
-The statement is true.', 'FALSE — The acid-test (quick) ratio is a stricter liquidity test: inventory is removed from current assets before dividing by current liabilities.
-
-Name the identity in words: acid-test ratio = (current assets − inventory) ÷ current liabilities.
-
-$$
-CA = 435, \quad \text{Inventory} = 259, \quad CL = 301
-$$
-
-$$
-CA - \text{Inventory} = 435 - 259 = 176
-$$
-
-$$
-\text{Acid-test} = \frac{176}{301} = 0.5847
-$$
-
-Threshold: more than 0.97. Actual 0.58.
-
-Reading the arithmetic against the claim: acid-test 0.58 is not more than 0.97 so the statement does not hold.
+Because that detail fails, the whole statement fails even if the topic word looks familiar.
 
 The statement is false.'] WHERE case_id = 'CASE 6.3.047' AND tier = 'full';
-UPDATE public.economics_cases SET tactical_explanations = ARRAY['FALSE — Single-year statements need cautious reading: policies, estimates, and one-offs matter.
+UPDATE public.economics_cases SET tactical_explanations = ARRAY['A widening such gap indicates an improving, not deteriorating, gross profit margin.
 
-Absolute or misapplied wording conflicts with the rule for "The Current and Non-Current Asset Balance in Context". Single-year statements need cautious reading: policies, estimates, and one-offs matter. Ratios (liquidity, gearing, margins, returns) put line items in context. Financial accounting serves external users; audits give reasonable, not absolute, assurance. Rejected claim: "A widening gap between revenue and cost of sales, expressed as a proportion of revenue, indicates that gross profit margin is deteriorating."
+Because that detail fails, the whole statement fails even if the topic word looks familiar.
 
-The statement is false.', 'TRUE — Single-year statements need cautious reading: policies, estimates, and one-offs matter.
+The statement is false.', 'A strong income statement result can be undermined by weaknesses only the balance sheet reveals.
 
-The wording matches the relevant rule for "The Current and Non-Current Asset Balance in Context". Single-year statements need cautious reading: policies, estimates, and one-offs matter. Ratios (liquidity, gearing, margins, returns) put line items in context. Financial accounting serves external users; audits give reasonable, not absolute, assurance. Applied here: "A strong profit for the year shown in the income statement can be undermined by a weak financing position revealed only by the balance sheet."
+That is exactly what the claim asserts, so the wording survives a careful check against the standard idea.
 
-The statement is true.', 'TRUE — Single-year statements need cautious reading: policies, estimates, and one-offs matter.
+The statement is true.', 'Balance sheet working capital changes help explain gaps between cash movement and reported profit.
 
-The wording matches the relevant rule for "The Current and Non-Current Asset Balance in Context". Single-year statements need cautious reading: policies, estimates, and one-offs matter. Ratios (liquidity, gearing, margins, returns) put line items in context. Financial accounting serves external users; audits give reasonable, not absolute, assurance. Applied here: "Changes in working capital shown on the balance sheet can help explain why cash movements differ from the profit for the year reported in the income statement."
+That is exactly what the claim asserts, so the wording survives a careful check against the standard idea.
 
-The statement is true.', 'TRUE — Single-year statements need cautious reading: policies, estimates, and one-offs matter.
+The statement is true.', 'Overall financial health requires weighing both statements together, not either alone.
 
-The wording matches the relevant rule for "The Current and Non-Current Asset Balance in Context". Single-year statements need cautious reading: policies, estimates, and one-offs matter. Ratios (liquidity, gearing, margins, returns) put line items in context. Financial accounting serves external users; audits give reasonable, not absolute, assurance. Applied here: "Judging a business''s overall financial health requires weighing income statement performance against balance sheet strength rather than looking at either alone."
+That is exactly what the claim asserts, so the wording survives a careful check against the standard idea.
 
-The statement is true.', 'FALSE — Single-year statements need cautious reading: policies, estimates, and one-offs matter.
+The statement is true.', 'The operating result is calculated before, not after, financing costs and income tax.
 
-Absolute or misapplied wording conflicts with the rule for "The Current and Non-Current Asset Balance in Context". Single-year statements need cautious reading: policies, estimates, and one-offs matter. Ratios (liquidity, gearing, margins, returns) put line items in context. Financial accounting serves external users; audits give reasonable, not absolute, assurance. Rejected claim: "The operating result, also described as earnings before interest and taxes, is calculated only after financing costs and income tax have already been deducted."
+Because that detail fails, the whole statement fails even if the topic word looks familiar.
 
 The statement is false.'] WHERE case_id = 'CASE 6.3.048' AND tier = 'full';
-UPDATE public.economics_cases SET tactical_explanations = ARRAY['TRUE — Single-year statements need cautious reading: policies, estimates, and one-offs matter.
+UPDATE public.economics_cases SET tactical_explanations = ARRAY['Rising profit can coincide with a deteriorating balance sheet, so both statements matter jointly.
 
-The wording matches the relevant rule for "Sources of Equity Growth in Practice". Single-year statements need cautious reading: policies, estimates, and one-offs matter. Ratios (liquidity, gearing, margins, returns) put line items in context. Financial accounting serves external users; audits give reasonable, not absolute, assurance. Applied here: "A business could report rising profit for the year while its balance sheet simultaneously shows a deteriorating financing structure, so both statements need to be considered together."
+That is exactly what the claim asserts, so the wording survives a careful check against the standard idea.
 
-The statement is true.', 'TRUE — Single-year statements need cautious reading: policies, estimates, and one-offs matter.
+The statement is true.', 'Non-current assets covered by equity and non-current liabilities reflect sound long-term financing.
 
-The wording matches the relevant rule for "Sources of Equity Growth in Practice". Single-year statements need cautious reading: policies, estimates, and one-offs matter. Ratios (liquidity, gearing, margins, returns) put line items in context. Financial accounting serves external users; audits give reasonable, not absolute, assurance. Applied here: "A beverage bottling company is regarded as financing its bottling line machinery soundly when their value does not exceed equity plus a long-term bottling equipment loan."
+That is exactly what the claim asserts, so the wording survives a careful check against the standard idea.
 
-The statement is true.', 'TRUE — Single-year statements need cautious reading: policies, estimates, and one-offs matter.
+The statement is true.', 'Changes in the non-current versus current asset split over time signal shifting capital intensity.
 
-The wording matches the relevant rule for "Sources of Equity Growth in Practice". Single-year statements need cautious reading: policies, estimates, and one-offs matter. Ratios (liquidity, gearing, margins, returns) put line items in context. Financial accounting serves external users; audits give reasonable, not absolute, assurance. Applied here: "Tracking the balance between bottling line machinery and bottled stock awaiting dispatch on a beverage bottling company''s statements over several years shows whether the business is becoming more o…"
+That is exactly what the claim asserts, so the wording survives a careful check against the standard idea.
 
-The statement is true.', 'TRUE — Single-year statements need cautious reading: policies, estimates, and one-offs matter.
+The statement is true.', 'Non-current assets covered by equity and non-current liabilities reflect sound long-term financing.
 
-The wording matches the relevant rule for "Sources of Equity Growth in Practice". Single-year statements need cautious reading: policies, estimates, and one-offs matter. Ratios (liquidity, gearing, margins, returns) put line items in context. Financial accounting serves external users; audits give reasonable, not absolute, assurance. Applied here: "A paper mill is regarded as financing its papermaking machinery soundly when their value does not exceed equity plus a long-term papermill mortgage."
+That is exactly what the claim asserts, so the wording survives a careful check against the standard idea.
 
-The statement is true.', 'TRUE — Single-year statements need cautious reading: policies, estimates, and one-offs matter.
+The statement is true.', 'Changes in the non-current versus current asset split over time signal shifting capital intensity.
 
-The wording matches the relevant rule for "Sources of Equity Growth in Practice". Single-year statements need cautious reading: policies, estimates, and one-offs matter. Ratios (liquidity, gearing, margins, returns) put line items in context. Financial accounting serves external users; audits give reasonable, not absolute, assurance. Applied here: "Tracking the balance between papermaking machinery and paper roll inventory on a paper mill''s statements over several years shows whether the business is becoming more or less capital-intensive."
+That is exactly what the claim asserts, so the wording survives a careful check against the standard idea.
 
 The statement is true.'] WHERE case_id = 'CASE 6.3.049' AND tier = 'full';
-UPDATE public.economics_cases SET tactical_explanations = ARRAY['FALSE — Use the case figures for The operating result and compute the percentage change between Year 1 and Year 2 before comparing it with the claimed threshold.
+UPDATE public.economics_cases SET tactical_explanations = ARRAY['The operating result changed by about 20.7% between the two years.
 
-From the extract:
+Because that detail fails, the whole statement fails even if the topic word looks familiar.
 
-$$
-\text{The operating result}_{\text{Y1}} = 179, \quad
-\text{The operating result}_{\text{Y2}} = 216
-$$
+The statement is false.', 'Revenue changed by about 19.6% between the two years.
 
-$$
-\frac{216 - 179}{179} = 20.7\%
-$$
+That is exactly what the claim asserts, so the wording survives a careful check against the standard idea.
 
-$$
-20.7\% \le  32.8\%
-$$
+The statement is true.', 'Finance costs moved from 14 to 20; operating result moved from 179 to 216.
 
-The actual growth is 20.7%, which is not more than the claimed 32.8%.
+That is exactly what the claim asserts, so the wording survives a careful check against the standard idea.
 
-The statement is false.', 'TRUE — Use the case figures for Revenue and compute the percentage change between Year 1 and Year 2 before comparing it with the claimed threshold.
+The statement is true.', 'Interest coverage in Year 1 ≈ 12.8 times.
 
-From the extract:
+That is exactly what the claim asserts, so the wording survives a careful check against the standard idea.
 
-$$
-\text{Revenue}_{\text{Y1}} = 730, \quad
-\text{Revenue}_{\text{Y2}} = 873
-$$
+The statement is true.', 'Profit for the year changed by about 13.5% between the two years.
 
-$$
-\frac{873 - 730}{730} = 19.6\%
-$$
-
-$$
-19.6\% > 17.6\%
-$$
-
-The actual growth is 19.6%, which is more than the claimed 17.6%.
-
-The statement is true.', 'TRUE — Compare finance-cost growth with operating-result growth; the claim needs both a finance-cost rise above the threshold and outpacing of operating result.
-
-Name the identity in words: growth = (Year 2 − Year 1) ÷ Year 1 for each line.
-
-$$
-\text{FC growth} = 42.9\%
-$$
-
-$$
-\text{OR growth} = 20.7\%
-$$
-
-Finance costs did grow by more than 25.2%; they do outpace operating result.
-
-Reading the arithmetic against the claim: FC growth 42.9% vs threshold 25.2% and OR growth 20.7% so the statement holds.
-
-The statement is true.', 'TRUE — Interest coverage in Year 1 is operating result divided by finance costs.
-
-Name the identity in words: interest coverage = operating result ÷ finance costs.
-
-From the extract, operating result = 179 and finance costs = 14. Plug the figures step by step:
-
-$$
-Coverage = \frac{\text{operating result}}{\text{finance costs}}
-$$
-
-$$
-Coverage = \frac{179}{14}
-$$
-
-$$
-Coverage = 12.7857
-$$
-
-Threshold: more than 6.23. Actual 12.79.
-
-Reading the arithmetic against the claim: coverage 12.79 exceeds 6.23 so the statement holds.
-
-The statement is true.', 'FALSE — Use the case figures for Profit for the year and compute the percentage change between Year 1 and Year 2 before comparing it with the claimed threshold.
-
-From the extract:
-
-$$
-\text{Profit for the year}_{\text{Y1}} = 133, \quad
-\text{Profit for the year}_{\text{Y2}} = 151
-$$
-
-$$
-\frac{151 - 133}{133} = 13.5\%
-$$
-
-$$
-13.5\% \le  16.1\%
-$$
-
-The actual growth is 13.5%, which is not more than the claimed 16.1%.
+Because that detail fails, the whole statement fails even if the topic word looks familiar.
 
 The statement is false.'] WHERE case_id = 'CASE 6.3.050' AND tier = 'full';

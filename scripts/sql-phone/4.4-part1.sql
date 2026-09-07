@@ -1,1049 +1,532 @@
 -- Update expanded explanations for 4.4-part1 (25 cases).
 -- Safe to re-run: only updates tactical_explanations.
 
-UPDATE public.economics_cases SET tactical_explanations = ARRAY['TRUE — The unincorporated/incorporated split turns on legal personality. Unincorporated firms (sole traders, partnerships) are not legal entities of their own; incorporated companies are legal persons. Pooling capital, filing personal tax, listing shares, or enjoying limited liability must be attached to the correct side of that split — limited liability marks incorporated forms, and listing is not the sole criterion of incorporation.
+UPDATE public.economics_cases SET tactical_explanations = ARRAY['Separate legal personality is the defining split between unincorporated and incorporated structures in the overview.
 
-Separate legal personality is the defining split between unincorporated and incorporated structures in the overview.
+Applied carefully, "Unincorporated businesses are not legal entities of their own, whereas incorporated businesses are legal persons" lines up with the textbook idea without adding an extra restriction.
 
-On that basis the assertion matches the ownership or finance rule being tested.
+The comparison runs in the right direction and attaches the feature to the correct side of the pair.
 
-The statement is true.
-', 'FALSE — The unincorporated/incorporated split turns on legal personality. Unincorporated firms (sole traders, partnerships) are not legal entities of their own; incorporated companies are legal persons. Pooling capital, filing personal tax, listing shares, or enjoying limited liability must be attached to the correct side of that split — limited liability marks incorporated forms, and listing is not the sole criterion of incorporation.
+The statement is true.', 'Partnerships remain unincorporated even when partners pool capital; they are not legal persons of their own.
 
-Partnerships remain unincorporated even when partners pool capital; they are not legal persons of their own.
+The familiar topic word is not enough. A scope detail, a swapped comparison, or a wrong classification makes the whole sentence fail.
 
-So the sentence does not survive once the correct mechanism is applied.
+The statement is false.', 'Personal tax reporting reflects the absence of separate legal personality rather than creating it.
 
-The statement is false.
-', 'FALSE — A sole proprietorship is not a separate legal person. Features that belong to corporations — independent corporate personality, corporate tax filing, or limited liability by default — do not arise merely because a trading name is registered, a bank account is opened, or staff are hired.
+The absolute wording "automatically" is what breaks the claim. One ordinary counterexample is enough to reject a universal statement like this.
 
-Pass-through personal taxation does not create a corporate tax entity and does not exempt profits from tax. Dividends are a corporate distribution concept; sole traders do not need to issue dividends before personal tax is due on business profit.
+The statement is false.', 'Incorporation depends on legal structure, not merely whether shares trade on an exchange.
 
-The unincorporated/incorporated split turns on legal personality. Unincorporated firms (sole traders, partnerships) are not legal entities of their own; incorporated companies are legal persons. Pooling capital, filing personal tax, listing shares, or enjoying limited liability must be attached to the correct side of that split — limited liability marks incorporated forms, and listing is not the sole criterion of incorporation.
+The familiar topic word is not enough. A scope detail, a swapped comparison, or a wrong classification makes the whole sentence fail.
 
-Personal tax reporting reflects the absence of separate legal personality rather than creating it.
+The statement is false.', 'Limited liability companies are incorporated legal persons alongside corporations.
 
-On that basis the assertion attaches the wrong legal, tax, liability, or finance label.
+The familiar topic word is not enough. A scope detail, a swapped comparison, or a wrong classification makes the whole sentence fail.
 
-The statement is false.
-', 'FALSE — The unincorporated/incorporated split turns on legal personality. Unincorporated firms (sole traders, partnerships) are not legal entities of their own; incorporated companies are legal persons. Pooling capital, filing personal tax, listing shares, or enjoying limited liability must be attached to the correct side of that split — limited liability marks incorporated forms, and listing is not the sole criterion of incorporation.
+The statement is false.'] WHERE case_id = 'CASE 4.4.01' AND tier = 'full';
+UPDATE public.economics_cases SET tactical_explanations = ARRAY['Directors run the company; shareholders supply capital and need not manage day-to-day operations.
 
-Incorporation depends on legal structure, not merely whether shares trade on an exchange.
+The absolute wording "every" is what breaks the claim. One ordinary counterexample is enough to reject a universal statement like this.
 
-On that basis the assertion attaches the wrong legal, tax, liability, or finance label.
+The statement is false.', 'Sole traders are unincorporated and typically combine ownership and management in one person.
 
-The statement is false.
-', 'FALSE — The unincorporated/incorporated split turns on legal personality. Unincorporated firms (sole traders, partnerships) are not legal entities of their own; incorporated companies are legal persons. Pooling capital, filing personal tax, listing shares, or enjoying limited liability must be attached to the correct side of that split — limited liability marks incorporated forms, and listing is not the sole criterion of incorporation.
+The familiar topic word is not enough. A scope detail, a swapped comparison, or a wrong classification makes the whole sentence fail.
 
-Limited liability companies are incorporated legal persons alongside corporations.
+The statement is false.', 'Corporate structure allows shareholders to own while directors manage operations.
 
-That misclassification is enough to reject the claim.
+Applied carefully, "In incorporated businesses, owners and managers need not be the same persons because shareholders provide share capital and directors run the company" lines up with the textbook idea without adding an extra restriction.
 
-The statement is false.
-'] WHERE case_id = 'CASE 4.4.01' AND tier = 'full';
-UPDATE public.economics_cases SET tactical_explanations = ARRAY['FALSE — Ownership and management can separate: shareholders who found or fund the corporation need not run daily operations, and hired managers need not own shares. Boards and executives supply the governance layer.
+The statement is true.', 'Partners are usually owners and managers themselves in unincorporated partnerships.
 
-The unincorporated/incorporated split turns on legal personality. Unincorporated firms (sole traders, partnerships) are not legal entities of their own; incorporated companies are legal persons. Pooling capital, filing personal tax, listing shares, or enjoying limited liability must be attached to the correct side of that split — limited liability marks incorporated forms, and listing is not the sole criterion of incorporation.
+The absolute wording "all" is what breaks the claim. One ordinary counterexample is enough to reject a universal statement like this.
 
-Directors run the company; shareholders supply capital and need not manage day-to-day operations.
+The statement is false.', 'Sole proprietorships lack the shareholder-director split characteristic of incorporated firms.
 
-So the sentence does not survive once the correct mechanism is applied.
+The familiar topic word is not enough. A scope detail, a swapped comparison, or a wrong classification makes the whole sentence fail.
 
-The statement is false.
-', 'FALSE — The unincorporated/incorporated split turns on legal personality. Unincorporated firms (sole traders, partnerships) are not legal entities of their own; incorporated companies are legal persons. Pooling capital, filing personal tax, listing shares, or enjoying limited liability must be attached to the correct side of that split — limited liability marks incorporated forms, and listing is not the sole criterion of incorporation.
+The statement is false.'] WHERE case_id = 'CASE 4.4.02' AND tier = 'full';
+UPDATE public.economics_cases SET tactical_explanations = ARRAY['Trading activity alone does not confer separate legal personality on an unincorporated sole trader.
 
-Sole traders are unincorporated and typically combine ownership and management in one person.
+The familiar topic word is not enough. A scope detail, a swapped comparison, or a wrong classification makes the whole sentence fail.
 
-That misclassification is enough to reject the claim.
+The statement is false.', 'A one-person operation where the proprietor runs the shop matches the sole trader pattern.
 
-The statement is false.
-', 'TRUE — Ownership and management can separate: shareholders who found or fund the corporation need not run daily operations, and hired managers need not own shares. Boards and executives supply the governance layer.
+Applied carefully, "The bakery fits an unincorporated sole trader structure in which the owner and manager are typically the same person" lines up with the textbook idea without adding an extra restriction.
 
-The board of directors oversees strategy and appoints or supervises executive management. Day-to-day running typically sits with managers; shareholders exercise control mainly through appointments and major votes, not by personally managing every contract.
+The statement is true.', 'Unincorporated firms lack independent legal entity status from their owners.
 
-The unincorporated/incorporated split turns on legal personality. Unincorporated firms (sole traders, partnerships) are not legal entities of their own; incorporated companies are legal persons. Pooling capital, filing personal tax, listing shares, or enjoying limited liability must be attached to the correct side of that split — limited liability marks incorporated forms, and listing is not the sole criterion of incorporation.
+Applied carefully, "As an unincorporated business, the bakery is not a legal entity of its own separate from the proprietor" lines up with the textbook idea without adding an extra restriction.
 
-Corporate structure allows shareholders to own while directors manage operations.
+The statement is true.', 'Share capital and directors characterise incorporated businesses, not a typical sole trader bakery.
 
-That is why the claim stands for this form of business or source of finance.
+The familiar topic word is not enough. A scope detail, a swapped comparison, or a wrong classification makes the whole sentence fail.
 
-The statement is true.
-', 'FALSE — Partners need a partnership agreement to settle ownership shares, decision rights, responsibilities, and how profits and losses are divided. Without clear terms, disputes over control and residual claims are harder to resolve.
+The statement is false.', 'Corporations and limited liability companies are incorporated, not unincorporated, forms.
 
-The unincorporated/incorporated split turns on legal personality. Unincorporated firms (sole traders, partnerships) are not legal entities of their own; incorporated companies are legal persons. Pooling capital, filing personal tax, listing shares, or enjoying limited liability must be attached to the correct side of that split — limited liability marks incorporated forms, and listing is not the sole criterion of incorporation.
+The familiar topic word is not enough. A scope detail, a swapped comparison, or a wrong classification makes the whole sentence fail.
 
-Partners are usually owners and managers themselves in unincorporated partnerships.
+The statement is false.'] WHERE case_id = 'CASE 4.4.03' AND tier = 'full';
+UPDATE public.economics_cases SET tactical_explanations = ARRAY['Sole traders and partnerships are listed under unincorporated ownership in the summary.
 
-So the sentence does not survive once the correct mechanism is applied.
+Applied carefully, "Figure 9 places sole traders and partnerships among unincorporated businesses" lines up with the textbook idea without adding an extra restriction.
 
-The statement is false.
-', 'FALSE — The unincorporated/incorporated split turns on legal personality. Unincorporated firms (sole traders, partnerships) are not legal entities of their own; incorporated companies are legal persons. Pooling capital, filing personal tax, listing shares, or enjoying limited liability must be attached to the correct side of that split — limited liability marks incorporated forms, and listing is not the sole criterion of incorporation.
+The statement is true.', 'Corporations and limited liability companies appear as incorporated legal structures.
 
-Sole proprietorships lack the shareholder-director split characteristic of incorporated firms.
+Applied carefully, "Figure 9 classifies corporations and limited liability companies as incorporated businesses" lines up with the textbook idea without adding an extra restriction.
 
-So the sentence does not survive once the correct mechanism is applied.
+The statement is true.', 'Partnerships can have multiple owners yet remain unincorporated.
 
-The statement is false.
-'] WHERE case_id = 'CASE 4.4.02' AND tier = 'full';
-UPDATE public.economics_cases SET tactical_explanations = ARRAY['FALSE — The unincorporated/incorporated split turns on legal personality. Unincorporated firms (sole traders, partnerships) are not legal entities of their own; incorporated companies are legal persons. Pooling capital, filing personal tax, listing shares, or enjoying limited liability must be attached to the correct side of that split — limited liability marks incorporated forms, and listing is not the sole criterion of incorporation.
+The absolute wording "every" is what breaks the claim. One ordinary counterexample is enough to reject a universal statement like this.
 
-Trading activity alone does not confer separate legal personality on an unincorporated sole trader.
+The statement is false.', 'Owner-manager overlap is characteristic of unincorporated businesses in the figure.
 
-Applied to the bakery (or other named sole trader) in the stem, the same ownership and finance rules hold: one owner-manager, personal tax and liability, and ordinary credit instruments as personal obligations.
+Applied carefully, "In unincorporated forms, owners and managers are typically the same persons according to the overview" lines up with the textbook idea without adding an extra restriction.
 
-On that basis the assertion attaches the wrong legal, tax, liability, or finance label.
+The statement is true.', 'Incorporated governance separates capital-providing shareholders from managing directors.
 
-The statement is false.
-', 'TRUE — The unincorporated/incorporated split turns on legal personality. Unincorporated firms (sole traders, partnerships) are not legal entities of their own; incorporated companies are legal persons. Pooling capital, filing personal tax, listing shares, or enjoying limited liability must be attached to the correct side of that split — limited liability marks incorporated forms, and listing is not the sole criterion of incorporation.
+Applied carefully, "Shareholders provide share capital while directors run incorporated companies in the diagram''s logic" lines up with the textbook idea without adding an extra restriction.
 
-A one-person operation where the proprietor runs the shop matches the sole trader pattern.
+The statement is true.'] WHERE case_id = 'CASE 4.4.04' AND tier = 'full';
+UPDATE public.economics_cases SET tactical_explanations = ARRAY['The overview lists sole traders among unincorporated businesses with owner-manager overlap.
 
-Applied to the bakery (or other named sole trader) in the stem, the same ownership and finance rules hold: one owner-manager, personal tax and liability, and ordinary credit instruments as personal obligations.
+Applied carefully, "A sole trader or sole proprietor is an unincorporated form with typically one owner who also manages the business" lines up with the textbook idea without adding an extra restriction.
 
-That is why the claim stands for this form of business or source of finance.
+The statement is true.', 'Sole traders lack separate legal personality and are not independent legal persons.
 
-The statement is true.
-', 'TRUE — The unincorporated/incorporated split turns on legal personality. Unincorporated firms (sole traders, partnerships) are not legal entities of their own; incorporated companies are legal persons. Pooling capital, filing personal tax, listing shares, or enjoying limited liability must be attached to the correct side of that split — limited liability marks incorporated forms, and listing is not the sole criterion of incorporation.
+The familiar topic word is not enough. A scope detail, a swapped comparison, or a wrong classification makes the whole sentence fail.
 
-Unincorporated firms lack independent legal entity status from their owners.
+The statement is false.', 'A single-shareholder company remains incorporated if it is a corporation or limited liability company.
 
-Applied to the bakery (or other named sole trader) in the stem, the same ownership and finance rules hold: one owner-manager, personal tax and liability, and ordinary credit instruments as personal obligations.
+The familiar topic word is not enough. A scope detail, a swapped comparison, or a wrong classification makes the whole sentence fail.
 
-On that basis the assertion matches the ownership or finance rule being tested.
+The statement is false.', 'Partnerships are unincorporated alongside sole traders, not incorporated with them.
 
-The statement is true.
-', 'FALSE — The board of directors oversees strategy and appoints or supervises executive management. Day-to-day running typically sits with managers; shareholders exercise control mainly through appointments and major votes, not by personally managing every contract.
+The familiar topic word is not enough. A scope detail, a swapped comparison, or a wrong classification makes the whole sentence fail.
 
-The unincorporated/incorporated split turns on legal personality. Unincorporated firms (sole traders, partnerships) are not legal entities of their own; incorporated companies are legal persons. Pooling capital, filing personal tax, listing shares, or enjoying limited liability must be attached to the correct side of that split — limited liability marks incorporated forms, and listing is not the sole criterion of incorporation.
+The statement is false.', 'Sole proprietorships do not use a shareholder-director governance model.
 
-Share capital and directors characterise incorporated businesses, not a typical sole trader bakery.
+The familiar topic word is not enough. A scope detail, a swapped comparison, or a wrong classification makes the whole sentence fail.
 
-That misclassification is enough to reject the claim.
+The statement is false.'] WHERE case_id = 'CASE 4.4.05' AND tier = 'full';
+UPDATE public.economics_cases SET tactical_explanations = ARRAY['Directors, not shareholders as a rule, run the company in incorporated structures.
 
-The statement is false.
-', 'FALSE — Shareholders'' financial exposure is generally limited to what they invested in share capital. Creditors claim against the company as legal person; they do not automatically seize shareholders'' private homes for ordinary company debts.
+The absolute wording "every" is what breaks the claim. One ordinary counterexample is enough to reject a universal statement like this.
 
-The unincorporated/incorporated split turns on legal personality. Unincorporated firms (sole traders, partnerships) are not legal entities of their own; incorporated companies are legal persons. Pooling capital, filing personal tax, listing shares, or enjoying limited liability must be attached to the correct side of that split — limited liability marks incorporated forms, and listing is not the sole criterion of incorporation.
+The statement is false.', 'Partners typically both own and manage in unincorporated partnerships.
 
-Corporations and limited liability companies are incorporated, not unincorporated, forms.
+The absolute wording "all" is what breaks the claim. One ordinary counterexample is enough to reject a universal statement like this.
 
-Applied to the bakery (or other named sole trader) in the stem, the same ownership and finance rules hold: one owner-manager, personal tax and liability, and ordinary credit instruments as personal obligations.
+The statement is false.', 'Sole proprietors manage directly without mandatory external directors.
 
-That misclassification is enough to reject the claim.
+The familiar topic word is not enough. A scope detail, a swapped comparison, or a wrong classification makes the whole sentence fail.
 
-The statement is false.
-'] WHERE case_id = 'CASE 4.4.03' AND tier = 'full';
-UPDATE public.economics_cases SET tactical_explanations = ARRAY['TRUE — The unincorporated/incorporated split turns on legal personality. Unincorporated firms (sole traders, partnerships) are not legal entities of their own; incorporated companies are legal persons. Pooling capital, filing personal tax, listing shares, or enjoying limited liability must be attached to the correct side of that split — limited liability marks incorporated forms, and listing is not the sole criterion of incorporation.
+The statement is false.', 'Incorporated firms may separate ownership from management through directors.
 
-The statement uses quantitative claims that should be read in order:
+The absolute wording "cannot" is what breaks the claim. One ordinary counterexample is enough to reject a universal statement like this.
 
-Step 1: the amount 9 is a named quantity in the stem and must be kept attached to the item it measures (capital, shares, price, or debt).
+The statement is false.', 'The overview assigns day-to-day company management to directors in incorporated businesses.
 
-Sole traders and partnerships are listed under unincorporated ownership in the summary.
+Applied carefully, "Directors run incorporated companies, whereas unincorporated owners typically manage their own businesses directly" lines up with the textbook idea without adding an extra restriction.
 
-That is why the claim stands for this form of business or source of finance.
+The comparison runs in the right direction and attaches the feature to the correct side of the pair.
 
-The statement is true.
-', 'TRUE — Shareholders'' financial exposure is generally limited to what they invested in share capital. Creditors claim against the company as legal person; they do not automatically seize shareholders'' private homes for ordinary company debts.
+The statement is true.'] WHERE case_id = 'CASE 4.4.06' AND tier = 'full';
+UPDATE public.economics_cases SET tactical_explanations = ARRAY['Share capital and shareholders belong to incorporated structures, not sole traders.
 
-The unincorporated/incorporated split turns on legal personality. Unincorporated firms (sole traders, partnerships) are not legal entities of their own; incorporated companies are legal persons. Pooling capital, filing personal tax, listing shares, or enjoying limited liability must be attached to the correct side of that split — limited liability marks incorporated forms, and listing is not the sole criterion of incorporation.
+The familiar topic word is not enough. A scope detail, a swapped comparison, or a wrong classification makes the whole sentence fail.
 
-The statement uses quantitative claims that should be read in order:
+The statement is false.', 'Partner capital contributions do not convert a partnership into an incorporated legal person.
 
-Step 1: the amount 9 is a named quantity in the stem and must be kept attached to the item it measures (capital, shares, price, or debt).
+The familiar topic word is not enough. A scope detail, a swapped comparison, or a wrong classification makes the whole sentence fail.
 
-Corporations and limited liability companies appear as incorporated legal structures.
+The statement is false.', 'Partnerships are unincorporated forms that may have more than one owner.
 
-So the sentence is a correct description of the mechanism at work in this case.
+The absolute wording "cannot" is what breaks the claim. One ordinary counterexample is enough to reject a universal statement like this.
 
-The statement is true.
-', 'FALSE — The unincorporated/incorporated split turns on legal personality. Unincorporated firms (sole traders, partnerships) are not legal entities of their own; incorporated companies are legal persons. Pooling capital, filing personal tax, listing shares, or enjoying limited liability must be attached to the correct side of that split — limited liability marks incorporated forms, and listing is not the sole criterion of incorporation.
+The statement is false.', 'The overview links shareholders with capital provision and directors with running the company.
 
-The statement uses quantitative claims that should be read in order:
+Applied carefully, "Shareholders provide share capital to incorporated businesses while directors run the company" lines up with the textbook idea without adding an extra restriction.
 
-Step 1: the amount 9 is a named quantity in the stem and must be kept attached to the item it measures (capital, shares, price, or debt).
+The statement is true.', 'Separation of owners and managers is a hallmark of incorporated businesses.
 
-Partnerships can have multiple owners yet remain unincorporated.
+Applied carefully, "Incorporated businesses may have owners who do not manage operations because ownership and management can be separated" lines up with the textbook idea without adding an extra restriction.
 
-On that basis the assertion attaches the wrong legal, tax, liability, or finance label.
+The statement is true.'] WHERE case_id = 'CASE 4.4.07' AND tier = 'full';
+UPDATE public.economics_cases SET tactical_explanations = ARRAY['Joint founding with shared management fits an unincorporated partnership, not a corporation.
 
-The statement is false.
-', 'TRUE — The unincorporated/incorporated split turns on legal personality. Unincorporated firms (sole traders, partnerships) are not legal entities of their own; incorporated companies are legal persons. Pooling capital, filing personal tax, listing shares, or enjoying limited liability must be attached to the correct side of that split — limited liability marks incorporated forms, and listing is not the sole criterion of incorporation.
+The familiar topic word is not enough. A scope detail, a swapped comparison, or a wrong classification makes the whole sentence fail.
 
-Owner-manager overlap is characteristic of unincorporated businesses in the figure.
+The statement is false.', 'Partners who manage client work embody the typical owner-manager overlap in partnerships.
 
-So the sentence is a correct description of the mechanism at work in this case.
+Applied carefully, "The practice is an unincorporated partnership in which owners and managers are typically the same persons" lines up with the textbook idea without adding an extra restriction.
 
-The statement is true.
-', 'TRUE — The board of directors oversees strategy and appoints or supervises executive management. Day-to-day running typically sits with managers; shareholders exercise control mainly through appointments and major votes, not by personally managing every contract.
+The statement is true.', 'Partnerships lack separate legal personality from their owners.
 
-The unincorporated/incorporated split turns on legal personality. Unincorporated firms (sole traders, partnerships) are not legal entities of their own; incorporated companies are legal persons. Pooling capital, filing personal tax, listing shares, or enjoying limited liability must be attached to the correct side of that split — limited liability marks incorporated forms, and listing is not the sole criterion of incorporation.
+Applied carefully, "As an unincorporated business, the partnership is not a legal entity of its own separate from the partners" lines up with the textbook idea without adding an extra restriction.
 
-Incorporated governance separates capital-providing shareholders from managing directors.
+The statement is true.', 'Share capital and directors characterise incorporated firms, not a consulting partnership.
 
-So the sentence is a correct description of the mechanism at work in this case.
+The familiar topic word is not enough. A scope detail, a swapped comparison, or a wrong classification makes the whole sentence fail.
 
-The statement is true.
-'] WHERE case_id = 'CASE 4.4.04' AND tier = 'full';
-UPDATE public.economics_cases SET tactical_explanations = ARRAY['TRUE — The unincorporated/incorporated split turns on legal personality. Unincorporated firms (sole traders, partnerships) are not legal entities of their own; incorporated companies are legal persons. Pooling capital, filing personal tax, listing shares, or enjoying limited liability must be attached to the correct side of that split — limited liability marks incorporated forms, and listing is not the sole criterion of incorporation.
+The statement is false.', 'Sole traders are unincorporated; corporations and limited liability companies are incorporated.
 
-The overview lists sole traders among unincorporated businesses with owner-manager overlap.
+The familiar topic word is not enough. A scope detail, a swapped comparison, or a wrong classification makes the whole sentence fail.
 
-That is why the claim stands for this form of business or source of finance.
+The statement is false.'] WHERE case_id = 'CASE 4.4.08' AND tier = 'full';
+UPDATE public.economics_cases SET tactical_explanations = ARRAY['Lack of separate legal personality defines unincorporated structures.
 
-The statement is true.
-', 'FALSE — The unincorporated/incorporated split turns on legal personality. Unincorporated firms (sole traders, partnerships) are not legal entities of their own; incorporated companies are legal persons. Pooling capital, filing personal tax, listing shares, or enjoying limited liability must be attached to the correct side of that split — limited liability marks incorporated forms, and listing is not the sole criterion of incorporation.
+Applied carefully, "Unincorporated businesses are not legal entities of their own" lines up with the textbook idea without adding an extra restriction.
 
-Sole traders lack separate legal personality and are not independent legal persons.
+The statement is true.', 'Incorporated firms possess independent legal person status.
 
-So the sentence does not survive once the correct mechanism is applied.
+Applied carefully, "Incorporated businesses are legal persons distinct from their owners" lines up with the textbook idea without adding an extra restriction.
 
-The statement is false.
-', 'FALSE — Shareholders'' financial exposure is generally limited to what they invested in share capital. Creditors claim against the company as legal person; they do not automatically seize shareholders'' private homes for ordinary company debts.
+The statement is true.', 'Owner-manager identity is typical in unincorporated businesses.
 
-The unincorporated/incorporated split turns on legal personality. Unincorporated firms (sole traders, partnerships) are not legal entities of their own; incorporated companies are legal persons. Pooling capital, filing personal tax, listing shares, or enjoying limited liability must be attached to the correct side of that split — limited liability marks incorporated forms, and listing is not the sole criterion of incorporation.
+Applied carefully, "In unincorporated sole traders and partnerships, owners and managers are typically the same persons" lines up with the textbook idea without adding an extra restriction.
 
-A single-shareholder company remains incorporated if it is a corporation or limited liability company.
+The statement is true.', 'Corporate governance separates capital-providing shareholders from managing directors.
 
-On that basis the assertion attaches the wrong legal, tax, liability, or finance label.
+Applied carefully, "Shareholders provide share capital and directors run incorporated companies" lines up with the textbook idea without adding an extra restriction.
 
-The statement is false.
-', 'FALSE — The unincorporated/incorporated split turns on legal personality. Unincorporated firms (sole traders, partnerships) are not legal entities of their own; incorporated companies are legal persons. Pooling capital, filing personal tax, listing shares, or enjoying limited liability must be attached to the correct side of that split — limited liability marks incorporated forms, and listing is not the sole criterion of incorporation.
+The statement is true.', 'Both corporations and limited liability companies fall under incorporated ownership.
 
-Partnerships are unincorporated alongside sole traders, not incorporated with them.
+Applied carefully, "Corporations and limited liability companies are examples of incorporated business forms" lines up with the textbook idea without adding an extra restriction.
 
-On that basis the assertion attaches the wrong legal, tax, liability, or finance label.
+The statement is true.'] WHERE case_id = 'CASE 4.4.09' AND tier = 'full';
+UPDATE public.economics_cases SET tactical_explanations = ARRAY['Legal personhood is the defining feature of incorporated businesses.
 
-The statement is false.
-', 'FALSE — The board of directors oversees strategy and appoints or supervises executive management. Day-to-day running typically sits with managers; shareholders exercise control mainly through appointments and major votes, not by personally managing every contract.
+Applied carefully, "Incorporated businesses are legal persons that exist separately from their owners in law" lines up with the textbook idea without adding an extra restriction.
 
-The unincorporated/incorporated split turns on legal personality. Unincorporated firms (sole traders, partnerships) are not legal entities of their own; incorporated companies are legal persons. Pooling capital, filing personal tax, listing shares, or enjoying limited liability must be attached to the correct side of that split — limited liability marks incorporated forms, and listing is not the sole criterion of incorporation.
+The statement is true.', 'Registration or trading names do not make unincorporated partnerships separate legal entities.
 
-Sole proprietorships do not use a shareholder-director governance model.
+The absolute wording "every" is what breaks the claim. One ordinary counterexample is enough to reject a universal statement like this.
 
-So the sentence does not survive once the correct mechanism is applied.
+The statement is false.', 'Employing staff does not confer incorporated legal personality on a sole proprietorship.
 
-The statement is false.
-'] WHERE case_id = 'CASE 4.4.05' AND tier = 'full';
-UPDATE public.economics_cases SET tactical_explanations = ARRAY['FALSE — Ownership and management can separate: shareholders who found or fund the corporation need not run daily operations, and hired managers need not own shares. Boards and executives supply the governance layer.
+The familiar topic word is not enough. A scope detail, a swapped comparison, or a wrong classification makes the whole sentence fail.
 
-The unincorporated/incorporated split turns on legal personality. Unincorporated firms (sole traders, partnerships) are not legal entities of their own; incorporated companies are legal persons. Pooling capital, filing personal tax, listing shares, or enjoying limited liability must be attached to the correct side of that split — limited liability marks incorporated forms, and listing is not the sole criterion of incorporation.
+The statement is false.', 'Only incorporated businesses are legal persons; unincorporated ones are not.
 
-Directors, not shareholders as a rule, run the company in incorporated structures.
+The familiar topic word is not enough. A scope detail, a swapped comparison, or a wrong classification makes the whole sentence fail.
 
-That misclassification is enough to reject the claim.
+The statement is false.', 'Partners remain in an unincorporated structure unless the firm is formally incorporated.
 
-The statement is false.
-', 'FALSE — In a general partnership, partners typically share equal rights, liabilities, and responsibilities unless varied by agreement. Unlimited liability means each partner can be pursued for the firm''s debts.
+The familiar topic word is not enough. A scope detail, a swapped comparison, or a wrong classification makes the whole sentence fail.
 
-The unincorporated/incorporated split turns on legal personality. Unincorporated firms (sole traders, partnerships) are not legal entities of their own; incorporated companies are legal persons. Pooling capital, filing personal tax, listing shares, or enjoying limited liability must be attached to the correct side of that split — limited liability marks incorporated forms, and listing is not the sole criterion of incorporation.
+The statement is false.'] WHERE case_id = 'CASE 4.4.10' AND tier = 'full';
+UPDATE public.economics_cases SET tactical_explanations = ARRAY['Partnerships are listed as unincorporated and can involve multiple owners.
 
-Partners typically both own and manage in unincorporated partnerships.
+Applied carefully, "Partnerships are unincorporated businesses that may have more than one owner" lines up with the textbook idea without adding an extra restriction.
 
-So the sentence does not survive once the correct mechanism is applied.
+The statement is true.', 'Corporations are incorporated legal persons.
 
-The statement is false.
-', 'FALSE — Employment does not shift unlimited liability onto workers, hand them strategic control, or incorporate the firm. Headcount is not an incorporation trigger and wages do not allocate owner liability.
+Applied carefully, "Corporations are incorporated businesses and legal persons in their own right" lines up with the textbook idea without adding an extra restriction.
 
-The unincorporated/incorporated split turns on legal personality. Unincorporated firms (sole traders, partnerships) are not legal entities of their own; incorporated companies are legal persons. Pooling capital, filing personal tax, listing shares, or enjoying limited liability must be attached to the correct side of that split — limited liability marks incorporated forms, and listing is not the sole criterion of incorporation.
+The statement is true.', 'Limited liability companies share incorporated status with corporations.
 
-Sole proprietors manage directly without mandatory external directors.
+Applied carefully, "Limited liability companies belong among incorporated forms alongside corporations" lines up with the textbook idea without adding an extra restriction.
 
-That misclassification is enough to reject the claim.
+The statement is true.', 'Hiring managers does not change a partnership''s unincorporated legal structure.
 
-The statement is false.
-', 'FALSE — Ownership and management can separate: shareholders who found or fund the corporation need not run daily operations, and hired managers need not own shares. Boards and executives supply the governance layer.
+The absolute wording "automatically" is what breaks the claim. One ordinary counterexample is enough to reject a universal statement like this.
 
-Shareholders'' financial exposure is generally limited to what they invested in share capital. Creditors claim against the company as legal person; they do not automatically seize shareholders'' private homes for ordinary company debts.
+The statement is false.', 'Both sole traders and partnerships are unincorporated forms.
 
-The unincorporated/incorporated split turns on legal personality. Unincorporated firms (sole traders, partnerships) are not legal entities of their own; incorporated companies are legal persons. Pooling capital, filing personal tax, listing shares, or enjoying limited liability must be attached to the correct side of that split — limited liability marks incorporated forms, and listing is not the sole criterion of incorporation.
+Applied carefully, "Sole traders and partnerships both fall under unincorporated ownership in the overview" lines up with the textbook idea without adding an extra restriction.
 
-Incorporated firms may separate ownership from management through directors.
+The statement is true.'] WHERE case_id = 'CASE 4.4.11' AND tier = 'full';
+UPDATE public.economics_cases SET tactical_explanations = ARRAY['The overview states that owners and managers are typically identical in unincorporated firms.
 
-On that basis the assertion attaches the wrong legal, tax, liability, or finance label.
+Applied carefully, "In unincorporated businesses, owners and managers are typically the same persons" lines up with the textbook idea without adding an extra restriction.
 
-The statement is false.
-', 'TRUE — The unincorporated/incorporated split turns on legal personality. Unincorporated firms (sole traders, partnerships) are not legal entities of their own; incorporated companies are legal persons. Pooling capital, filing personal tax, listing shares, or enjoying limited liability must be attached to the correct side of that split — limited liability marks incorporated forms, and listing is not the sole criterion of incorporation.
+The statement is true.', 'Shareholders need not be directors; ownership and management may diverge.
 
-The overview assigns day-to-day company management to directors in incorporated businesses.
+The absolute wording "every" is what breaks the claim. One ordinary counterexample is enough to reject a universal statement like this.
 
-On that basis the assertion matches the ownership or finance rule being tested.
+The statement is false.', 'A managing sole trader exemplifies unincorporated owner-manager unity.
 
-The statement is true.
-'] WHERE case_id = 'CASE 4.4.06' AND tier = 'full';
-UPDATE public.economics_cases SET tactical_explanations = ARRAY['FALSE — The unincorporated/incorporated split turns on legal personality. Unincorporated firms (sole traders, partnerships) are not legal entities of their own; incorporated companies are legal persons. Pooling capital, filing personal tax, listing shares, or enjoying limited liability must be attached to the correct side of that split — limited liability marks incorporated forms, and listing is not the sole criterion of incorporation.
+Applied carefully, "A sole trader who manages daily operations illustrates the usual owner-manager overlap in unincorporated forms" lines up with the textbook idea without adding an extra restriction.
 
-Share capital and shareholders belong to incorporated structures, not sole traders.
+The statement is true.', 'Task specialisation among partners does not make a partnership incorporated.
 
-That misclassification is enough to reject the claim.
+The familiar topic word is not enough. A scope detail, a swapped comparison, or a wrong classification makes the whole sentence fail.
 
-The statement is false.
-', 'FALSE — The unincorporated/incorporated split turns on legal personality. Unincorporated firms (sole traders, partnerships) are not legal entities of their own; incorporated companies are legal persons. Pooling capital, filing personal tax, listing shares, or enjoying limited liability must be attached to the correct side of that split — limited liability marks incorporated forms, and listing is not the sole criterion of incorporation.
+The statement is false.', 'Directors run incorporated companies; shareholders need not manage directly.
 
-Partner capital contributions do not convert a partnership into an incorporated legal person.
+The absolute wording "always" is what breaks the claim. One ordinary counterexample is enough to reject a universal statement like this.
 
-That misclassification is enough to reject the claim.
+The statement is false.'] WHERE case_id = 'CASE 4.4.12' AND tier = 'full';
+UPDATE public.economics_cases SET tactical_explanations = ARRAY['Employment does not transform a sole proprietorship into an incorporated legal person.
 
-The statement is false.
-', 'FALSE — The unincorporated/incorporated split turns on legal personality. Unincorporated firms (sole traders, partnerships) are not legal entities of their own; incorporated companies are legal persons. Pooling capital, filing personal tax, listing shares, or enjoying limited liability must be attached to the correct side of that split — limited liability marks incorporated forms, and listing is not the sole criterion of incorporation.
+The familiar topic word is not enough. A scope detail, a swapped comparison, or a wrong classification makes the whole sentence fail.
 
-Partnerships are unincorporated forms that may have more than one owner.
+The statement is false.', 'A single decision-making owner matches the sole trader pattern.
 
-So the sentence does not survive once the correct mechanism is applied.
+Applied carefully, "The farm operates as an unincorporated sole trader in which the owner and manager are typically the same person" lines up with the textbook idea without adding an extra restriction.
 
-The statement is false.
-', 'TRUE — The board of directors oversees strategy and appoints or supervises executive management. Day-to-day running typically sits with managers; shareholders exercise control mainly through appointments and major votes, not by personally managing every contract.
+The statement is true.', 'Unincorporated farms lack independent legal entity status.
 
-The unincorporated/incorporated split turns on legal personality. Unincorporated firms (sole traders, partnerships) are not legal entities of their own; incorporated companies are legal persons. Pooling capital, filing personal tax, listing shares, or enjoying limited liability must be attached to the correct side of that split — limited liability marks incorporated forms, and listing is not the sole criterion of incorporation.
+Applied carefully, "As an unincorporated business, the farm is not a legal entity of its own distinct from the proprietor" lines up with the textbook idea without adding an extra restriction.
 
-The overview links shareholders with capital provision and directors with running the company.
+The statement is true.', 'Share capital and directors characterise incorporated businesses, not a sole proprietor farm.
 
-That is why the claim stands for this form of business or source of finance.
+The familiar topic word is not enough. A scope detail, a swapped comparison, or a wrong classification makes the whole sentence fail.
 
-The statement is true.
-', 'TRUE — The unincorporated/incorporated split turns on legal personality. Unincorporated firms (sole traders, partnerships) are not legal entities of their own; incorporated companies are legal persons. Pooling capital, filing personal tax, listing shares, or enjoying limited liability must be attached to the correct side of that split — limited liability marks incorporated forms, and listing is not the sole criterion of incorporation.
+The statement is false.', 'Limited liability companies are incorporated regardless of industry sector.
 
-Separation of owners and managers is a hallmark of incorporated businesses.
+The familiar topic word is not enough. A scope detail, a swapped comparison, or a wrong classification makes the whole sentence fail.
 
-That is why the claim stands for this form of business or source of finance.
+The statement is false.'] WHERE case_id = 'CASE 4.4.13' AND tier = 'full';
+UPDATE public.economics_cases SET tactical_explanations = ARRAY['Legal personhood is confined to incorporated structures in the ownership overview.
 
-The statement is true.
-'] WHERE case_id = 'CASE 4.4.07' AND tier = 'full';
-UPDATE public.economics_cases SET tactical_explanations = ARRAY['FALSE — The unincorporated/incorporated split turns on legal personality. Unincorporated firms (sole traders, partnerships) are not legal entities of their own; incorporated companies are legal persons. Pooling capital, filing personal tax, listing shares, or enjoying limited liability must be attached to the correct side of that split — limited liability marks incorporated forms, and listing is not the sole criterion of incorporation.
+Applied carefully, "Only incorporated businesses possess legal personality as entities separate from their owners" lines up with the textbook idea without adding an extra restriction.
 
-Joint founding with shared management fits an unincorporated partnership, not a corporation.
+The statement is true.', 'Partnership agreements govern relations among partners but do not create a separate legal person.
 
-So the sentence does not survive once the correct mechanism is applied.
+The familiar topic word is not enough. A scope detail, a swapped comparison, or a wrong classification makes the whole sentence fail.
 
-The statement is false.
-', 'TRUE — The unincorporated/incorporated split turns on legal personality. Unincorporated firms (sole traders, partnerships) are not legal entities of their own; incorporated companies are legal persons. Pooling capital, filing personal tax, listing shares, or enjoying limited liability must be attached to the correct side of that split — limited liability marks incorporated forms, and listing is not the sole criterion of incorporation.
+The statement is false.', 'Business branding does not confer incorporated legal personality on a sole trader.
 
-Partners who manage client work embody the typical owner-manager overlap in partnerships.
+The familiar topic word is not enough. A scope detail, a swapped comparison, or a wrong classification makes the whole sentence fail.
 
-On that basis the assertion matches the ownership or finance rule being tested.
+The statement is false.', 'Private limited companies remain incorporated legal persons without public listing.
 
-The statement is true.
-', 'TRUE — The unincorporated/incorporated split turns on legal personality. Unincorporated firms (sole traders, partnerships) are not legal entities of their own; incorporated companies are legal persons. Pooling capital, filing personal tax, listing shares, or enjoying limited liability must be attached to the correct side of that split — limited liability marks incorporated forms, and listing is not the sole criterion of incorporation.
+The familiar topic word is not enough. A scope detail, a swapped comparison, or a wrong classification makes the whole sentence fail.
 
-Partnerships lack separate legal personality from their owners.
+The statement is false.', 'The core distinction is legal entity status, not taxation alone.
 
-So the sentence is a correct description of the mechanism at work in this case.
+The familiar topic word is not enough. A scope detail, a swapped comparison, or a wrong classification makes the whole sentence fail.
 
-The statement is true.
-', 'FALSE — The board of directors oversees strategy and appoints or supervises executive management. Day-to-day running typically sits with managers; shareholders exercise control mainly through appointments and major votes, not by personally managing every contract.
+The statement is false.'] WHERE case_id = 'CASE 4.4.14' AND tier = 'full';
+UPDATE public.economics_cases SET tactical_explanations = ARRAY['Director-led operations within a separate legal person indicate an incorporated corporation.
 
-The unincorporated/incorporated split turns on legal personality. Unincorporated firms (sole traders, partnerships) are not legal entities of their own; incorporated companies are legal persons. Pooling capital, filing personal tax, listing shares, or enjoying limited liability must be attached to the correct side of that split — limited liability marks incorporated forms, and listing is not the sole criterion of incorporation.
+The familiar topic word is not enough. A scope detail, a swapped comparison, or a wrong classification makes the whole sentence fail.
 
-Share capital and directors characterise incorporated firms, not a consulting partnership.
+The statement is false.', 'Corporations are incorporated legal entities distinct from owners.
 
-That misclassification is enough to reject the claim.
+Applied carefully, "The corporation is an incorporated legal person separate from its shareholders" lines up with the textbook idea without adding an extra restriction.
 
-The statement is false.
-', 'FALSE — Shareholders'' financial exposure is generally limited to what they invested in share capital. Creditors claim against the company as legal person; they do not automatically seize shareholders'' private homes for ordinary company debts.
+The statement is true.', 'Incorporated structures allow shareholders to own without managing operations.
 
-The unincorporated/incorporated split turns on legal personality. Unincorporated firms (sole traders, partnerships) are not legal entities of their own; incorporated companies are legal persons. Pooling capital, filing personal tax, listing shares, or enjoying limited liability must be attached to the correct side of that split — limited liability marks incorporated forms, and listing is not the sole criterion of incorporation.
+The absolute wording "cannot" is what breaks the claim. One ordinary counterexample is enough to reject a universal statement like this.
 
-Sole traders are unincorporated; corporations and limited liability companies are incorporated.
+The statement is false.', 'The overview assigns capital provision to shareholders and management to directors.
 
-So the sentence does not survive once the correct mechanism is applied.
+Applied carefully, "Shareholders provide share capital while directors run this incorporated company" lines up with the textbook idea without adding an extra restriction.
 
-The statement is false.
-'] WHERE case_id = 'CASE 4.4.08' AND tier = 'full';
-UPDATE public.economics_cases SET tactical_explanations = ARRAY['TRUE — The unincorporated/incorporated split turns on legal personality. Unincorporated firms (sole traders, partnerships) are not legal entities of their own; incorporated companies are legal persons. Pooling capital, filing personal tax, listing shares, or enjoying limited liability must be attached to the correct side of that split — limited liability marks incorporated forms, and listing is not the sole criterion of incorporation.
+The statement is true.', 'Sole traders typically combine ownership and management without a shareholder-director split.
 
-Lack of separate legal personality defines unincorporated structures.
+Applied carefully, "Unincorporated sole traders follow the same shareholder-director split as this manufacturing corporation" lines up with the textbook idea without adding an extra restriction.
 
-So the sentence is a correct description of the mechanism at work in this case.
+The statement is true.'] WHERE case_id = 'CASE 4.4.15' AND tier = 'full';
+UPDATE public.economics_cases SET tactical_explanations = ARRAY['Multiple owners are possible in unincorporated partnerships.
 
-The statement is true.
-', 'TRUE — The unincorporated/incorporated split turns on legal personality. Unincorporated firms (sole traders, partnerships) are not legal entities of their own; incorporated companies are legal persons. Pooling capital, filing personal tax, listing shares, or enjoying limited liability must be attached to the correct side of that split — limited liability marks incorporated forms, and listing is not the sole criterion of incorporation.
+Applied carefully, "Partnerships may have more than one owner yet remain unincorporated businesses" lines up with the textbook idea without adding an extra restriction.
 
-Incorporated firms possess independent legal person status.
+The statement is true.', 'Sole traders combine single ownership with typical self-management.
 
-On that basis the assertion matches the ownership or finance rule being tested.
+Applied carefully, "Sole traders typically have one owner who also manages the business" lines up with the textbook idea without adding an extra restriction.
 
-The statement is true.
-', 'TRUE — The unincorporated/incorporated split turns on legal personality. Unincorporated firms (sole traders, partnerships) are not legal entities of their own; incorporated companies are legal persons. Pooling capital, filing personal tax, listing shares, or enjoying limited liability must be attached to the correct side of that split — limited liability marks incorporated forms, and listing is not the sole criterion of incorporation.
+The statement is true.', 'Multiple shareholders characterise incorporated share ownership, not unincorporated status.
 
-Owner-manager identity is typical in unincorporated businesses.
+Applied carefully, "Having multiple shareholders automatically means a firm is unincorporated" lines up with the textbook idea without adding an extra restriction.
 
-On that basis the assertion matches the ownership or finance rule being tested.
+The statement is true.', 'Corporations retain incorporated legal personality with any number of shareholders.
 
-The statement is true.
-', 'TRUE — The board of directors oversees strategy and appoints or supervises executive management. Day-to-day running typically sits with managers; shareholders exercise control mainly through appointments and major votes, not by personally managing every contract.
+The absolute wording "regardless" is what breaks the claim. One ordinary counterexample is enough to reject a universal statement like this.
 
-The unincorporated/incorporated split turns on legal personality. Unincorporated firms (sole traders, partnerships) are not legal entities of their own; incorporated companies are legal persons. Pooling capital, filing personal tax, listing shares, or enjoying limited liability must be attached to the correct side of that split — limited liability marks incorporated forms, and listing is not the sole criterion of incorporation.
+The statement is false.', 'Partner co-ownership does not create a separate legal entity in unincorporated partnerships.
 
-Corporate governance separates capital-providing shareholders from managing directors.
+Applied carefully, "Unincorporated businesses are not legal entities of their own even when several partners co-own the firm" lines up with the textbook idea without adding an extra restriction.
 
-On that basis the assertion matches the ownership or finance rule being tested.
+The statement is true.'] WHERE case_id = 'CASE 4.4.16' AND tier = 'full';
+UPDATE public.economics_cases SET tactical_explanations = ARRAY['Unincorporated status means the firm is not a legal entity of its own.
 
-The statement is true.
-', 'TRUE — Shareholders'' financial exposure is generally limited to what they invested in share capital. Creditors claim against the company as legal person; they do not automatically seize shareholders'' private homes for ordinary company debts.
+Applied carefully, "The ownership overview treats unincorporated firms as lacking independent legal entity status from their proprietors or partners" lines up with the textbook idea without adding an extra restriction.
 
-The unincorporated/incorporated split turns on legal personality. Unincorporated firms (sole traders, partnerships) are not legal entities of their own; incorporated companies are legal persons. Pooling capital, filing personal tax, listing shares, or enjoying limited liability must be attached to the correct side of that split — limited liability marks incorporated forms, and listing is not the sole criterion of incorporation.
+The statement is true.', 'Incorporated businesses are legal persons distinct from owners.
 
-Both corporations and limited liability companies fall under incorporated ownership.
+Applied carefully, "Incorporated firms possess legal personality that exists separately from natural-person owners" lines up with the textbook idea without adding an extra restriction.
 
-On that basis the assertion matches the ownership or finance rule being tested.
+The statement is true.', 'Owner-manager overlap is typical where ownership and management coincide in unincorporated forms.
 
-The statement is true.
-'] WHERE case_id = 'CASE 4.4.09' AND tier = 'full';
-UPDATE public.economics_cases SET tactical_explanations = ARRAY['TRUE — The unincorporated/incorporated split turns on legal personality. Unincorporated firms (sole traders, partnerships) are not legal entities of their own; incorporated companies are legal persons. Pooling capital, filing personal tax, listing shares, or enjoying limited liability must be attached to the correct side of that split — limited liability marks incorporated forms, and listing is not the sole criterion of incorporation.
+Applied carefully, "Sole traders and partners usually combine ownership with direct management in unincorporated structures" lines up with the textbook idea without adding an extra restriction.
 
-Legal personhood is the defining feature of incorporated businesses.
+The statement is true.', 'Incorporated governance permits owners who do not manage and managers who do not own shares.
 
-So the sentence is a correct description of the mechanism at work in this case.
+Applied carefully, "Shareholders and directors may represent different persons within incorporated companies" lines up with the textbook idea without adding an extra restriction.
 
-The statement is true.
-', 'FALSE — The unincorporated/incorporated split turns on legal personality. Unincorporated firms (sole traders, partnerships) are not legal entities of their own; incorporated companies are legal persons. Pooling capital, filing personal tax, listing shares, or enjoying limited liability must be attached to the correct side of that split — limited liability marks incorporated forms, and listing is not the sole criterion of incorporation.
+The statement is true.', 'The diagram explicitly maps these forms to unincorporated and incorporated sides respectively.
 
-Registration or trading names do not make unincorporated partnerships separate legal entities.
+Applied carefully, "Figure 9 groups sole traders and partnerships under unincorporated ownership and places corporations plus limited liability companies under incorporated ownership" lines up with the textbook idea without adding an extra restriction.
 
-On that basis the assertion attaches the wrong legal, tax, liability, or finance label.
+The statement is true.'] WHERE case_id = 'CASE 4.4.17' AND tier = 'full';
+UPDATE public.economics_cases SET tactical_explanations = ARRAY['Sole traders exemplify owner-manager unity in unincorporated forms.
 
-The statement is false.
-', 'FALSE — A sole proprietorship is not a separate legal person. Features that belong to corporations — independent corporate personality, corporate tax filing, or limited liability by default — do not arise merely because a trading name is registered, a bank account is opened, or staff are hired.
+Applied carefully, "Sole traders typically both own and manage their unincorporated businesses" lines up with the textbook idea without adding an extra restriction.
 
-Employment does not shift unlimited liability onto workers, hand them strategic control, or incorporate the firm. Headcount is not an incorporation trigger and wages do not allocate owner liability.
+The statement is true.', 'Partners typically manage as well as own in unincorporated partnerships.
 
-The unincorporated/incorporated split turns on legal personality. Unincorporated firms (sole traders, partnerships) are not legal entities of their own; incorporated companies are legal persons. Pooling capital, filing personal tax, listing shares, or enjoying limited liability must be attached to the correct side of that split — limited liability marks incorporated forms, and listing is not the sole criterion of incorporation.
+Applied carefully, "Partners in partnerships usually combine ownership with active management roles" lines up with the textbook idea without adding an extra restriction.
 
-Employing staff does not confer incorporated legal personality on a sole proprietorship.
+The statement is true.', 'Share capital flows from shareholders to incorporated firms.
 
-So the sentence does not survive once the correct mechanism is applied.
+Applied carefully, "Shareholders in corporations provide share capital to the incorporated legal person" lines up with the textbook idea without adding an extra restriction.
 
-The statement is false.
-', 'FALSE — The unincorporated/incorporated split turns on legal personality. Unincorporated firms (sole traders, partnerships) are not legal entities of their own; incorporated companies are legal persons. Pooling capital, filing personal tax, listing shares, or enjoying limited liability must be attached to the correct side of that split — limited liability marks incorporated forms, and listing is not the sole criterion of incorporation.
+The statement is true.', 'Directors handle company management in incorporated structures.
 
-Only incorporated businesses are legal persons; unincorporated ones are not.
+Applied carefully, "Directors run incorporated companies on behalf of shareholders" lines up with the textbook idea without adding an extra restriction.
 
-On that basis the assertion attaches the wrong legal, tax, liability, or finance label.
+The statement is true.', 'Revenue size does not confer legal personality on unincorporated businesses.
 
-The statement is false.
-', 'FALSE — Partners need a partnership agreement to settle ownership shares, decision rights, responsibilities, and how profits and losses are divided. Without clear terms, disputes over control and residual claims are harder to resolve.
+Applied carefully, "Unincorporated businesses cannot be legal persons even when they earn large revenues" lines up with the textbook idea without adding an extra restriction.
 
-The unincorporated/incorporated split turns on legal personality. Unincorporated firms (sole traders, partnerships) are not legal entities of their own; incorporated companies are legal persons. Pooling capital, filing personal tax, listing shares, or enjoying limited liability must be attached to the correct side of that split — limited liability marks incorporated forms, and listing is not the sole criterion of incorporation.
+The statement is true.'] WHERE case_id = 'CASE 4.4.18' AND tier = 'full';
+UPDATE public.economics_cases SET tactical_explanations = ARRAY['The overview lists sole traders among unincorporated ownership forms.
 
-Partners remain in an unincorporated structure unless the firm is formally incorporated.
+Applied carefully, "Sole traders and sole proprietors are unincorporated forms of business ownership" lines up with the textbook idea without adding an extra restriction.
 
-So the sentence does not survive once the correct mechanism is applied.
+The statement is true.', 'Partnerships are unincorporated and may have multiple owners.
 
-The statement is false.
-'] WHERE case_id = 'CASE 4.4.10' AND tier = 'full';
-UPDATE public.economics_cases SET tactical_explanations = ARRAY['TRUE — The unincorporated/incorporated split turns on legal personality. Unincorporated firms (sole traders, partnerships) are not legal entities of their own; incorporated companies are legal persons. Pooling capital, filing personal tax, listing shares, or enjoying limited liability must be attached to the correct side of that split — limited liability marks incorporated forms, and listing is not the sole criterion of incorporation.
+Applied carefully, "Partnerships are unincorporated businesses that may involve more than one owner" lines up with the textbook idea without adding an extra restriction.
 
-Partnerships are listed as unincorporated and can involve multiple owners.
+The statement is true.', 'Corporations are incorporated with separated ownership and management roles.
 
-So the sentence is a correct description of the mechanism at work in this case.
+Applied carefully, "Corporations are incorporated legal persons with shareholders and directors" lines up with the textbook idea without adding an extra restriction.
 
-The statement is true.
-', 'TRUE — As a legal person, a corporation holds rights and obligations in its own name: it can own land and property, hire people, close contracts, sue, and be sued. Those capacities do not require every shareholder to act personally in each transaction.
+The statement is true.', 'Contracting does not by itself determine incorporated versus unincorporated status.
 
-The unincorporated/incorporated split turns on legal personality. Unincorporated firms (sole traders, partnerships) are not legal entities of their own; incorporated companies are legal persons. Pooling capital, filing personal tax, listing shares, or enjoying limited liability must be attached to the correct side of that split — limited liability marks incorporated forms, and listing is not the sole criterion of incorporation.
+The absolute wording "every" is what breaks the claim. One ordinary counterexample is enough to reject a universal statement like this.
 
-Corporations are incorporated legal persons.
+The statement is false.', 'Limited liability companies share incorporated classification with corporations.
 
-So the sentence is a correct description of the mechanism at work in this case.
+Applied carefully, "Limited liability companies are incorporated businesses alongside corporations" lines up with the textbook idea without adding an extra restriction.
 
-The statement is true.
-', 'TRUE — Shareholders'' financial exposure is generally limited to what they invested in share capital. Creditors claim against the company as legal person; they do not automatically seize shareholders'' private homes for ordinary company debts.
+The statement is true.'] WHERE case_id = 'CASE 4.4.19' AND tier = 'full';
+UPDATE public.economics_cases SET tactical_explanations = ARRAY['A single managing owner matches the unincorporated sole trader pattern.
 
-The unincorporated/incorporated split turns on legal personality. Unincorporated firms (sole traders, partnerships) are not legal entities of their own; incorporated companies are legal persons. Pooling capital, filing personal tax, listing shares, or enjoying limited liability must be attached to the correct side of that split — limited liability marks incorporated forms, and listing is not the sole criterion of incorporation.
+Applied carefully, "The café is an unincorporated sole trader in which the owner and manager are typically the same person" lines up with the textbook idea without adding an extra restriction.
 
-Limited liability companies share incorporated status with corporations.
+The statement is true.', 'Public trading does not create separate legal personality for a sole proprietorship.
 
-So the sentence is a correct description of the mechanism at work in this case.
+Applied carefully, "Because the café serves the public daily, it becomes an incorporated legal person independent of the proprietor" lines up with the textbook idea without adding an extra restriction.
 
-The statement is true.
-', 'FALSE — The unincorporated/incorporated split turns on legal personality. Unincorporated firms (sole traders, partnerships) are not legal entities of their own; incorporated companies are legal persons. Pooling capital, filing personal tax, listing shares, or enjoying limited liability must be attached to the correct side of that split — limited liability marks incorporated forms, and listing is not the sole criterion of incorporation.
+The statement is true.', 'Share capital and directors belong to incorporated structures, not a sole proprietor café.
 
-Hiring managers does not change a partnership''s unincorporated legal structure.
+Applied carefully, "Shareholders provide share capital while directors run this one-person café operation" lines up with the textbook idea without adding an extra restriction.
 
-On that basis the assertion attaches the wrong legal, tax, liability, or finance label.
+The statement is true.', 'Unincorporated cafés lack independent legal entity status.
 
-The statement is false.
-', 'TRUE — The unincorporated/incorporated split turns on legal personality. Unincorporated firms (sole traders, partnerships) are not legal entities of their own; incorporated companies are legal persons. Pooling capital, filing personal tax, listing shares, or enjoying limited liability must be attached to the correct side of that split — limited liability marks incorporated forms, and listing is not the sole criterion of incorporation.
+Applied carefully, "The café is not a legal entity of its own separate from the proprietor as an unincorporated business" lines up with the textbook idea without adding an extra restriction.
 
-Both sole traders and partnerships are unincorporated forms.
+The statement is true.', 'Corporations and limited liability companies are incorporated, unlike sole proprietorships.
 
-So the sentence is a correct description of the mechanism at work in this case.
+Applied carefully, "Corporations and limited liability companies share unincorporated status with sole proprietorships" lines up with the textbook idea without adding an extra restriction.
 
-The statement is true.
-'] WHERE case_id = 'CASE 4.4.11' AND tier = 'full';
-UPDATE public.economics_cases SET tactical_explanations = ARRAY['TRUE — The unincorporated/incorporated split turns on legal personality. Unincorporated firms (sole traders, partnerships) are not legal entities of their own; incorporated companies are legal persons. Pooling capital, filing personal tax, listing shares, or enjoying limited liability must be attached to the correct side of that split — limited liability marks incorporated forms, and listing is not the sole criterion of incorporation.
+The statement is true.'] WHERE case_id = 'CASE 4.4.20' AND tier = 'full';
+UPDATE public.economics_cases SET tactical_explanations = ARRAY['Sole proprietors manage directly; they do not use a shareholder-director split.
 
-The overview states that owners and managers are typically identical in unincorporated firms.
+The familiar topic word is not enough. A scope detail, a swapped comparison, or a wrong classification makes the whole sentence fail.
 
-On that basis the assertion matches the ownership or finance rule being tested.
+The statement is false.', 'Incorporated structure permits separation of owning shareholders from managing directors.
 
-The statement is true.
-', 'FALSE — The board of directors oversees strategy and appoints or supervises executive management. Day-to-day running typically sits with managers; shareholders exercise control mainly through appointments and major votes, not by personally managing every contract.
+Applied carefully, "Incorporated businesses allow owners and managers to be different persons through shareholders and directors" lines up with the textbook idea without adding an extra restriction.
 
-The unincorporated/incorporated split turns on legal personality. Unincorporated firms (sole traders, partnerships) are not legal entities of their own; incorporated companies are legal persons. Pooling capital, filing personal tax, listing shares, or enjoying limited liability must be attached to the correct side of that split — limited liability marks incorporated forms, and listing is not the sole criterion of incorporation.
+The statement is true.', 'Task delegation among partners does not incorporate the partnership.
 
-Shareholders need not be directors; ownership and management may diverge.
+The familiar topic word is not enough. A scope detail, a swapped comparison, or a wrong classification makes the whole sentence fail.
 
-So the sentence does not survive once the correct mechanism is applied.
+The statement is false.', 'The overview links shareholders with capital and directors with running the company.
 
-The statement is false.
-', 'TRUE — The unincorporated/incorporated split turns on legal personality. Unincorporated firms (sole traders, partnerships) are not legal entities of their own; incorporated companies are legal persons. Pooling capital, filing personal tax, listing shares, or enjoying limited liability must be attached to the correct side of that split — limited liability marks incorporated forms, and listing is not the sole criterion of incorporation.
+Applied carefully, "Shareholders provide share capital to incorporated companies whose directors run operations" lines up with the textbook idea without adding an extra restriction.
 
-A managing sole trader exemplifies unincorporated owner-manager unity.
+The statement is true.', 'Owner-manager overlap is typical of unincorporated forms.
 
-That is why the claim stands for this form of business or source of finance.
+Applied carefully, "Unincorporated businesses typically combine ownership and management in the same persons" lines up with the textbook idea without adding an extra restriction.
 
-The statement is true.
-', 'FALSE — Partners can divide tasks and specialise — one in sales, another in operations — while still sharing ownership. Specialisation is an operational advantage of multi-person ownership.
+The statement is true.'] WHERE case_id = 'CASE 4.4.21' AND tier = 'full';
+UPDATE public.economics_cases SET tactical_explanations = ARRAY['Growth and staffing do not change a sole trader''s unincorporated status.
 
-The unincorporated/incorporated split turns on legal personality. Unincorporated firms (sole traders, partnerships) are not legal entities of their own; incorporated companies are legal persons. Pooling capital, filing personal tax, listing shares, or enjoying limited liability must be attached to the correct side of that split — limited liability marks incorporated forms, and listing is not the sole criterion of incorporation.
+Applied carefully, "A sole trader remains unincorporated even when the business grows and hires many employees" lines up with the textbook idea without adding an extra restriction.
 
-Task specialisation among partners does not make a partnership incorporated.
+The statement is true.', 'Name registration alone does not create incorporated legal personality for a partnership.
 
-On that basis the assertion attaches the wrong legal, tax, liability, or finance label.
+The absolute wording "automatically" is what breaks the claim. One ordinary counterexample is enough to reject a universal statement like this.
 
-The statement is false.
-', 'FALSE — The board of directors oversees strategy and appoints or supervises executive management. Day-to-day running typically sits with managers; shareholders exercise control mainly through appointments and major votes, not by personally managing every contract.
+The statement is false.', 'Limited liability companies are incorporated despite limited owner liability.
 
-The unincorporated/incorporated split turns on legal personality. Unincorporated firms (sole traders, partnerships) are not legal entities of their own; incorporated companies are legal persons. Pooling capital, filing personal tax, listing shares, or enjoying limited liability must be attached to the correct side of that split — limited liability marks incorporated forms, and listing is not the sole criterion of incorporation.
+The familiar topic word is not enough. A scope detail, a swapped comparison, or a wrong classification makes the whole sentence fail.
 
-Directors run incorporated companies; shareholders need not manage directly.
+The statement is false.', 'Unlisted corporations are still incorporated legal persons.
 
-That misclassification is enough to reject the claim.
+The familiar topic word is not enough. A scope detail, a swapped comparison, or a wrong classification makes the whole sentence fail.
 
-The statement is false.
-'] WHERE case_id = 'CASE 4.4.12' AND tier = 'full';
-UPDATE public.economics_cases SET tactical_explanations = ARRAY['FALSE — The unincorporated/incorporated split turns on legal personality. Unincorporated firms (sole traders, partnerships) are not legal entities of their own; incorporated companies are legal persons. Pooling capital, filing personal tax, listing shares, or enjoying limited liability must be attached to the correct side of that split — limited liability marks incorporated forms, and listing is not the sole criterion of incorporation.
+The statement is false.', 'Legal personality versus absence of it is the central classification criterion.
 
-Employment does not transform a sole proprietorship into an incorporated legal person.
+Applied carefully, "The overview distinguishes ownership forms primarily by whether the business is a legal person, not by firm size alone" lines up with the textbook idea without adding an extra restriction.
 
-That misclassification is enough to reject the claim.
+The statement is true.'] WHERE case_id = 'CASE 4.4.22' AND tier = 'full';
+UPDATE public.economics_cases SET tactical_explanations = ARRAY['Figure 9 lists sole traders and partnerships among unincorporated forms.
 
-The statement is false.
-', 'TRUE — The unincorporated/incorporated split turns on legal personality. Unincorporated firms (sole traders, partnerships) are not legal entities of their own; incorporated companies are legal persons. Pooling capital, filing personal tax, listing shares, or enjoying limited liability must be attached to the correct side of that split — limited liability marks incorporated forms, and listing is not the sole criterion of incorporation.
+Applied carefully, "Sole proprietorships and partnerships appear on the unincorporated side of the ownership classification diagram" lines up with the textbook idea without adding an extra restriction.
 
-A single decision-making owner matches the sole trader pattern.
+The statement is true.', 'Corporations and limited liability companies are incorporated forms in the summary.
 
-On that basis the assertion matches the ownership or finance rule being tested.
+Applied carefully, "Stock corporations and limited liability companies appear on the incorporated side of that diagram" lines up with the textbook idea without adding an extra restriction.
 
-The statement is true.
-', 'TRUE — The unincorporated/incorporated split turns on legal personality. Unincorporated firms (sole traders, partnerships) are not legal entities of their own; incorporated companies are legal persons. Pooling capital, filing personal tax, listing shares, or enjoying limited liability must be attached to the correct side of that split — limited liability marks incorporated forms, and listing is not the sole criterion of incorporation.
+The statement is true.', 'Unincorporated firms lack separate legal personality from owners.
 
-Unincorporated farms lack independent legal entity status.
+Applied carefully, "No unincorporated business constitutes a legal entity wholly separate from its owners under the overview" lines up with the textbook idea without adding an extra restriction.
 
-So the sentence is a correct description of the mechanism at work in this case.
+The statement is true.', 'Legal personhood is the incorporated marker in the framework.
 
-The statement is true.
-', 'FALSE — Ownership and management can separate: shareholders who found or fund the corporation need not run daily operations, and hired managers need not own shares. Boards and executives supply the governance layer.
+Applied carefully, "Every incorporated business counts as a legal person in the classification framework" lines up with the textbook idea without adding an extra restriction.
 
-The board of directors oversees strategy and appoints or supervises executive management. Day-to-day running typically sits with managers; shareholders exercise control mainly through appointments and major votes, not by personally managing every contract.
+The statement is true.', 'Shareholder capital and director management define incorporated governance.
 
-The unincorporated/incorporated split turns on legal personality. Unincorporated firms (sole traders, partnerships) are not legal entities of their own; incorporated companies are legal persons. Pooling capital, filing personal tax, listing shares, or enjoying limited liability must be attached to the correct side of that split — limited liability marks incorporated forms, and listing is not the sole criterion of incorporation.
+Applied carefully, "Funding from shareholders paired with management by directors typifies incorporated company structure" lines up with the textbook idea without adding an extra restriction.
 
-Share capital and directors characterise incorporated businesses, not a sole proprietor farm.
+The statement is true.'] WHERE case_id = 'CASE 4.4.23' AND tier = 'full';
+UPDATE public.economics_cases SET tactical_explanations = ARRAY['Activity scale does not convert an unincorporated partnership into an incorporated entity.
 
-So the sentence does not survive once the correct mechanism is applied.
+Applied carefully, "A partnership conducting client projects remains unincorporated even when revenue is substantial" lines up with the textbook idea without adding an extra restriction.
 
-The statement is false.
-', 'FALSE — The unincorporated/incorporated split turns on legal personality. Unincorporated firms (sole traders, partnerships) are not legal entities of their own; incorporated companies are legal persons. Pooling capital, filing personal tax, listing shares, or enjoying limited liability must be attached to the correct side of that split — limited liability marks incorporated forms, and listing is not the sole criterion of incorporation.
+The statement is true.', 'Incorporated legal personality persists regardless of geographic scope.
 
-Limited liability companies are incorporated regardless of industry sector.
+Applied carefully, "An incorporated corporation remains a legal person whether it operates locally or internationally" lines up with the textbook idea without adding an extra restriction.
 
-So the sentence does not survive once the correct mechanism is applied.
+The statement is true.', 'Sole traders typify owner-manager unity in unincorporated forms.
 
-The statement is false.
-'] WHERE case_id = 'CASE 4.4.13' AND tier = 'full';
-UPDATE public.economics_cases SET tactical_explanations = ARRAY['TRUE — The unincorporated/incorporated split turns on legal personality. Unincorporated firms (sole traders, partnerships) are not legal entities of their own; incorporated companies are legal persons. Pooling capital, filing personal tax, listing shares, or enjoying limited liability must be attached to the correct side of that split — limited liability marks incorporated forms, and listing is not the sole criterion of incorporation.
+Applied carefully, "Sole traders combine ownership and management as unincorporated businesses" lines up with the textbook idea without adding an extra restriction.
 
-Legal personhood is confined to incorporated structures in the ownership overview.
+The statement is true.', 'Incorporated governance allows passive share ownership separate from management.
 
-So the sentence is a correct description of the mechanism at work in this case.
+Applied carefully, "Shareholders may own an incorporated company without participating in daily management" lines up with the textbook idea without adding an extra restriction.
 
-The statement is true.
-', 'FALSE — Partners need a partnership agreement to settle ownership shares, decision rights, responsibilities, and how profits and losses are divided. Without clear terms, disputes over control and residual claims are harder to resolve.
+The statement is true.', 'Unincorporated firms lack independent legal entity status.
 
-The unincorporated/incorporated split turns on legal personality. Unincorporated firms (sole traders, partnerships) are not legal entities of their own; incorporated companies are legal persons. Pooling capital, filing personal tax, listing shares, or enjoying limited liability must be attached to the correct side of that split — limited liability marks incorporated forms, and listing is not the sole criterion of incorporation.
+Applied carefully, "Unincorporated status implies the business is not a separate legal person from its owners" lines up with the textbook idea without adding an extra restriction.
 
-Partnership agreements govern relations among partners but do not create a separate legal person.
+The statement is true.'] WHERE case_id = 'CASE 4.4.24' AND tier = 'full';
+UPDATE public.economics_cases SET tactical_explanations = ARRAY['Separate legal personhood is the incorporated marker in the overview.
 
-So the sentence does not survive once the correct mechanism is applied.
+Applied carefully, "Legal personality separate from owners identifies incorporated businesses" lines up with the textbook idea without adding an extra restriction.
 
-The statement is false.
-', 'FALSE — The unincorporated/incorporated split turns on legal personality. Unincorporated firms (sole traders, partnerships) are not legal entities of their own; incorporated companies are legal persons. Pooling capital, filing personal tax, listing shares, or enjoying limited liability must be attached to the correct side of that split — limited liability marks incorporated forms, and listing is not the sole criterion of incorporation.
+The statement is true.', 'Unincorporated firms are not legal entities of their own.
 
-Business branding does not confer incorporated legal personality on a sole trader.
+Applied carefully, "Absence of separate legal personality identifies unincorporated businesses" lines up with the textbook idea without adding an extra restriction.
 
-On that basis the assertion attaches the wrong legal, tax, liability, or finance label.
+The statement is true.', 'Sole traders and partnerships are listed as unincorporated forms.
 
-The statement is false.
-', 'FALSE — The unincorporated/incorporated split turns on legal personality. Unincorporated firms (sole traders, partnerships) are not legal entities of their own; incorporated companies are legal persons. Pooling capital, filing personal tax, listing shares, or enjoying limited liability must be attached to the correct side of that split — limited liability marks incorporated forms, and listing is not the sole criterion of incorporation.
+Applied carefully, "Sole traders and partnerships fall on the unincorporated side of the ownership divide" lines up with the textbook idea without adding an extra restriction.
 
-Private limited companies remain incorporated legal persons without public listing.
+The statement is true.', 'Corporations and limited liability companies are incorporated forms.
 
-That misclassification is enough to reject the claim.
+Applied carefully, "Corporations and limited liability companies fall on the incorporated side of the ownership divide" lines up with the textbook idea without adding an extra restriction.
 
-The statement is false.
-', 'FALSE — The unincorporated/incorporated split turns on legal personality. Unincorporated firms (sole traders, partnerships) are not legal entities of their own; incorporated companies are legal persons. Pooling capital, filing personal tax, listing shares, or enjoying limited liability must be attached to the correct side of that split — limited liability marks incorporated forms, and listing is not the sole criterion of incorporation.
+The statement is true.', 'Ownership and management may diverge in incorporated structures.
 
-The core distinction is legal entity status, not taxation alone.
+Applied carefully, "In incorporated businesses, shareholders need not manage and directors need not own shares" lines up with the textbook idea without adding an extra restriction.
 
-On that basis the assertion attaches the wrong legal, tax, liability, or finance label.
-
-The statement is false.
-'] WHERE case_id = 'CASE 4.4.14' AND tier = 'full';
-UPDATE public.economics_cases SET tactical_explanations = ARRAY['FALSE — The board of directors oversees strategy and appoints or supervises executive management. Day-to-day running typically sits with managers; shareholders exercise control mainly through appointments and major votes, not by personally managing every contract.
-
-The unincorporated/incorporated split turns on legal personality. Unincorporated firms (sole traders, partnerships) are not legal entities of their own; incorporated companies are legal persons. Pooling capital, filing personal tax, listing shares, or enjoying limited liability must be attached to the correct side of that split — limited liability marks incorporated forms, and listing is not the sole criterion of incorporation.
-
-Director-led operations within a separate legal person indicate an incorporated corporation.
-
-That misclassification is enough to reject the claim.
-
-The statement is false.
-', 'TRUE — As a legal person, a corporation holds rights and obligations in its own name: it can own land and property, hire people, close contracts, sue, and be sued. Those capacities do not require every shareholder to act personally in each transaction.
-
-The unincorporated/incorporated split turns on legal personality. Unincorporated firms (sole traders, partnerships) are not legal entities of their own; incorporated companies are legal persons. Pooling capital, filing personal tax, listing shares, or enjoying limited liability must be attached to the correct side of that split — limited liability marks incorporated forms, and listing is not the sole criterion of incorporation.
-
-Corporations are incorporated legal entities distinct from owners.
-
-That is why the claim stands for this form of business or source of finance.
-
-The statement is true.
-', 'FALSE — Ownership and management can separate: shareholders who found or fund the corporation need not run daily operations, and hired managers need not own shares. Boards and executives supply the governance layer.
-
-The unincorporated/incorporated split turns on legal personality. Unincorporated firms (sole traders, partnerships) are not legal entities of their own; incorporated companies are legal persons. Pooling capital, filing personal tax, listing shares, or enjoying limited liability must be attached to the correct side of that split — limited liability marks incorporated forms, and listing is not the sole criterion of incorporation.
-
-Incorporated structures allow shareholders to own without managing operations.
-
-On that basis the assertion attaches the wrong legal, tax, liability, or finance label.
-
-The statement is false.
-', 'TRUE — The board of directors oversees strategy and appoints or supervises executive management. Day-to-day running typically sits with managers; shareholders exercise control mainly through appointments and major votes, not by personally managing every contract.
-
-The unincorporated/incorporated split turns on legal personality. Unincorporated firms (sole traders, partnerships) are not legal entities of their own; incorporated companies are legal persons. Pooling capital, filing personal tax, listing shares, or enjoying limited liability must be attached to the correct side of that split — limited liability marks incorporated forms, and listing is not the sole criterion of incorporation.
-
-The overview assigns capital provision to shareholders and management to directors.
-
-So the sentence is a correct description of the mechanism at work in this case.
-
-The statement is true.
-', 'TRUE — The board of directors oversees strategy and appoints or supervises executive management. Day-to-day running typically sits with managers; shareholders exercise control mainly through appointments and major votes, not by personally managing every contract.
-
-The unincorporated/incorporated split turns on legal personality. Unincorporated firms (sole traders, partnerships) are not legal entities of their own; incorporated companies are legal persons. Pooling capital, filing personal tax, listing shares, or enjoying limited liability must be attached to the correct side of that split — limited liability marks incorporated forms, and listing is not the sole criterion of incorporation.
-
-Sole traders typically combine ownership and management without a shareholder-director split.
-
-That is why the claim stands for this form of business or source of finance.
-
-The statement is true.
-'] WHERE case_id = 'CASE 4.4.15' AND tier = 'full';
-UPDATE public.economics_cases SET tactical_explanations = ARRAY['TRUE — The unincorporated/incorporated split turns on legal personality. Unincorporated firms (sole traders, partnerships) are not legal entities of their own; incorporated companies are legal persons. Pooling capital, filing personal tax, listing shares, or enjoying limited liability must be attached to the correct side of that split — limited liability marks incorporated forms, and listing is not the sole criterion of incorporation.
-
-Multiple owners are possible in unincorporated partnerships.
-
-That is why the claim stands for this form of business or source of finance.
-
-The statement is true.
-', 'TRUE — The unincorporated/incorporated split turns on legal personality. Unincorporated firms (sole traders, partnerships) are not legal entities of their own; incorporated companies are legal persons. Pooling capital, filing personal tax, listing shares, or enjoying limited liability must be attached to the correct side of that split — limited liability marks incorporated forms, and listing is not the sole criterion of incorporation.
-
-Sole traders combine single ownership with typical self-management.
-
-On that basis the assertion matches the ownership or finance rule being tested.
-
-The statement is true.
-', 'TRUE — The unincorporated/incorporated split turns on legal personality. Unincorporated firms (sole traders, partnerships) are not legal entities of their own; incorporated companies are legal persons. Pooling capital, filing personal tax, listing shares, or enjoying limited liability must be attached to the correct side of that split — limited liability marks incorporated forms, and listing is not the sole criterion of incorporation.
-
-Multiple shareholders characterise incorporated share ownership, not unincorporated status.
-
-So the sentence is a correct description of the mechanism at work in this case.
-
-The statement is true.
-', 'FALSE — As a legal person, a corporation holds rights and obligations in its own name: it can own land and property, hire people, close contracts, sue, and be sued. Those capacities do not require every shareholder to act personally in each transaction.
-
-The unincorporated/incorporated split turns on legal personality. Unincorporated firms (sole traders, partnerships) are not legal entities of their own; incorporated companies are legal persons. Pooling capital, filing personal tax, listing shares, or enjoying limited liability must be attached to the correct side of that split — limited liability marks incorporated forms, and listing is not the sole criterion of incorporation.
-
-Corporations retain incorporated legal personality with any number of shareholders.
-
-So the sentence does not survive once the correct mechanism is applied.
-
-The statement is false.
-', 'TRUE — The unincorporated/incorporated split turns on legal personality. Unincorporated firms (sole traders, partnerships) are not legal entities of their own; incorporated companies are legal persons. Pooling capital, filing personal tax, listing shares, or enjoying limited liability must be attached to the correct side of that split — limited liability marks incorporated forms, and listing is not the sole criterion of incorporation.
-
-Partner co-ownership does not create a separate legal entity in unincorporated partnerships.
-
-On that basis the assertion matches the ownership or finance rule being tested.
-
-The statement is true.
-'] WHERE case_id = 'CASE 4.4.16' AND tier = 'full';
-UPDATE public.economics_cases SET tactical_explanations = ARRAY['TRUE — The unincorporated/incorporated split turns on legal personality. Unincorporated firms (sole traders, partnerships) are not legal entities of their own; incorporated companies are legal persons. Pooling capital, filing personal tax, listing shares, or enjoying limited liability must be attached to the correct side of that split — limited liability marks incorporated forms, and listing is not the sole criterion of incorporation.
-
-Unincorporated status means the firm is not a legal entity of its own.
-
-On that basis the assertion matches the ownership or finance rule being tested.
-
-The statement is true.
-', 'TRUE — The unincorporated/incorporated split turns on legal personality. Unincorporated firms (sole traders, partnerships) are not legal entities of their own; incorporated companies are legal persons. Pooling capital, filing personal tax, listing shares, or enjoying limited liability must be attached to the correct side of that split — limited liability marks incorporated forms, and listing is not the sole criterion of incorporation.
-
-Incorporated businesses are legal persons distinct from owners.
-
-That is why the claim stands for this form of business or source of finance.
-
-The statement is true.
-', 'TRUE — The unincorporated/incorporated split turns on legal personality. Unincorporated firms (sole traders, partnerships) are not legal entities of their own; incorporated companies are legal persons. Pooling capital, filing personal tax, listing shares, or enjoying limited liability must be attached to the correct side of that split — limited liability marks incorporated forms, and listing is not the sole criterion of incorporation.
-
-Owner-manager overlap is typical where ownership and management coincide in unincorporated forms.
-
-That is why the claim stands for this form of business or source of finance.
-
-The statement is true.
-', 'TRUE — The board of directors oversees strategy and appoints or supervises executive management. Day-to-day running typically sits with managers; shareholders exercise control mainly through appointments and major votes, not by personally managing every contract.
-
-The unincorporated/incorporated split turns on legal personality. Unincorporated firms (sole traders, partnerships) are not legal entities of their own; incorporated companies are legal persons. Pooling capital, filing personal tax, listing shares, or enjoying limited liability must be attached to the correct side of that split — limited liability marks incorporated forms, and listing is not the sole criterion of incorporation.
-
-Incorporated governance permits owners who do not manage and managers who do not own shares.
-
-That is why the claim stands for this form of business or source of finance.
-
-The statement is true.
-', 'TRUE — Shareholders'' financial exposure is generally limited to what they invested in share capital. Creditors claim against the company as legal person; they do not automatically seize shareholders'' private homes for ordinary company debts.
-
-The unincorporated/incorporated split turns on legal personality. Unincorporated firms (sole traders, partnerships) are not legal entities of their own; incorporated companies are legal persons. Pooling capital, filing personal tax, listing shares, or enjoying limited liability must be attached to the correct side of that split — limited liability marks incorporated forms, and listing is not the sole criterion of incorporation.
-
-The statement uses quantitative claims that should be read in order:
-
-Step 1: the amount 9 is a named quantity in the stem and must be kept attached to the item it measures (capital, shares, price, or debt).
-
-The diagram explicitly maps these forms to unincorporated and incorporated sides respectively.
-
-That is why the claim stands for this form of business or source of finance.
-
-The statement is true.
-'] WHERE case_id = 'CASE 4.4.17' AND tier = 'full';
-UPDATE public.economics_cases SET tactical_explanations = ARRAY['TRUE — The unincorporated/incorporated split turns on legal personality. Unincorporated firms (sole traders, partnerships) are not legal entities of their own; incorporated companies are legal persons. Pooling capital, filing personal tax, listing shares, or enjoying limited liability must be attached to the correct side of that split — limited liability marks incorporated forms, and listing is not the sole criterion of incorporation.
-
-Sole traders exemplify owner-manager unity in unincorporated forms.
-
-On that basis the assertion matches the ownership or finance rule being tested.
-
-The statement is true.
-', 'TRUE — The unincorporated/incorporated split turns on legal personality. Unincorporated firms (sole traders, partnerships) are not legal entities of their own; incorporated companies are legal persons. Pooling capital, filing personal tax, listing shares, or enjoying limited liability must be attached to the correct side of that split — limited liability marks incorporated forms, and listing is not the sole criterion of incorporation.
-
-Partners typically manage as well as own in unincorporated partnerships.
-
-So the sentence is a correct description of the mechanism at work in this case.
-
-The statement is true.
-', 'TRUE — As a legal person, a corporation holds rights and obligations in its own name: it can own land and property, hire people, close contracts, sue, and be sued. Those capacities do not require every shareholder to act personally in each transaction.
-
-The unincorporated/incorporated split turns on legal personality. Unincorporated firms (sole traders, partnerships) are not legal entities of their own; incorporated companies are legal persons. Pooling capital, filing personal tax, listing shares, or enjoying limited liability must be attached to the correct side of that split — limited liability marks incorporated forms, and listing is not the sole criterion of incorporation.
-
-Share capital flows from shareholders to incorporated firms.
-
-That is why the claim stands for this form of business or source of finance.
-
-The statement is true.
-', 'TRUE — The board of directors oversees strategy and appoints or supervises executive management. Day-to-day running typically sits with managers; shareholders exercise control mainly through appointments and major votes, not by personally managing every contract.
-
-The unincorporated/incorporated split turns on legal personality. Unincorporated firms (sole traders, partnerships) are not legal entities of their own; incorporated companies are legal persons. Pooling capital, filing personal tax, listing shares, or enjoying limited liability must be attached to the correct side of that split — limited liability marks incorporated forms, and listing is not the sole criterion of incorporation.
-
-Directors handle company management in incorporated structures.
-
-That is why the claim stands for this form of business or source of finance.
-
-The statement is true.
-', 'TRUE — The unincorporated/incorporated split turns on legal personality. Unincorporated firms (sole traders, partnerships) are not legal entities of their own; incorporated companies are legal persons. Pooling capital, filing personal tax, listing shares, or enjoying limited liability must be attached to the correct side of that split — limited liability marks incorporated forms, and listing is not the sole criterion of incorporation.
-
-Revenue size does not confer legal personality on unincorporated businesses.
-
-That is why the claim stands for this form of business or source of finance.
-
-The statement is true.
-'] WHERE case_id = 'CASE 4.4.18' AND tier = 'full';
-UPDATE public.economics_cases SET tactical_explanations = ARRAY['TRUE — The unincorporated/incorporated split turns on legal personality. Unincorporated firms (sole traders, partnerships) are not legal entities of their own; incorporated companies are legal persons. Pooling capital, filing personal tax, listing shares, or enjoying limited liability must be attached to the correct side of that split — limited liability marks incorporated forms, and listing is not the sole criterion of incorporation.
-
-The overview lists sole traders among unincorporated ownership forms.
-
-On that basis the assertion matches the ownership or finance rule being tested.
-
-The statement is true.
-', 'TRUE — The unincorporated/incorporated split turns on legal personality. Unincorporated firms (sole traders, partnerships) are not legal entities of their own; incorporated companies are legal persons. Pooling capital, filing personal tax, listing shares, or enjoying limited liability must be attached to the correct side of that split — limited liability marks incorporated forms, and listing is not the sole criterion of incorporation.
-
-Partnerships are unincorporated and may have multiple owners.
-
-So the sentence is a correct description of the mechanism at work in this case.
-
-The statement is true.
-', 'TRUE — As a legal person, a corporation holds rights and obligations in its own name: it can own land and property, hire people, close contracts, sue, and be sued. Those capacities do not require every shareholder to act personally in each transaction.
-
-The board of directors oversees strategy and appoints or supervises executive management. Day-to-day running typically sits with managers; shareholders exercise control mainly through appointments and major votes, not by personally managing every contract.
-
-The unincorporated/incorporated split turns on legal personality. Unincorporated firms (sole traders, partnerships) are not legal entities of their own; incorporated companies are legal persons. Pooling capital, filing personal tax, listing shares, or enjoying limited liability must be attached to the correct side of that split — limited liability marks incorporated forms, and listing is not the sole criterion of incorporation.
-
-Corporations are incorporated with separated ownership and management roles.
-
-So the sentence is a correct description of the mechanism at work in this case.
-
-The statement is true.
-', 'FALSE — The unincorporated/incorporated split turns on legal personality. Unincorporated firms (sole traders, partnerships) are not legal entities of their own; incorporated companies are legal persons. Pooling capital, filing personal tax, listing shares, or enjoying limited liability must be attached to the correct side of that split — limited liability marks incorporated forms, and listing is not the sole criterion of incorporation.
-
-Contracting does not by itself determine incorporated versus unincorporated status.
-
-That misclassification is enough to reject the claim.
-
-The statement is false.
-', 'TRUE — Shareholders'' financial exposure is generally limited to what they invested in share capital. Creditors claim against the company as legal person; they do not automatically seize shareholders'' private homes for ordinary company debts.
-
-The unincorporated/incorporated split turns on legal personality. Unincorporated firms (sole traders, partnerships) are not legal entities of their own; incorporated companies are legal persons. Pooling capital, filing personal tax, listing shares, or enjoying limited liability must be attached to the correct side of that split — limited liability marks incorporated forms, and listing is not the sole criterion of incorporation.
-
-Limited liability companies share incorporated classification with corporations.
-
-On that basis the assertion matches the ownership or finance rule being tested.
-
-The statement is true.
-'] WHERE case_id = 'CASE 4.4.19' AND tier = 'full';
-UPDATE public.economics_cases SET tactical_explanations = ARRAY['TRUE — The unincorporated/incorporated split turns on legal personality. Unincorporated firms (sole traders, partnerships) are not legal entities of their own; incorporated companies are legal persons. Pooling capital, filing personal tax, listing shares, or enjoying limited liability must be attached to the correct side of that split — limited liability marks incorporated forms, and listing is not the sole criterion of incorporation.
-
-A single managing owner matches the unincorporated sole trader pattern.
-
-So the sentence is a correct description of the mechanism at work in this case.
-
-The statement is true.
-', 'TRUE — The unincorporated/incorporated split turns on legal personality. Unincorporated firms (sole traders, partnerships) are not legal entities of their own; incorporated companies are legal persons. Pooling capital, filing personal tax, listing shares, or enjoying limited liability must be attached to the correct side of that split — limited liability marks incorporated forms, and listing is not the sole criterion of incorporation.
-
-Public trading does not create separate legal personality for a sole proprietorship.
-
-So the sentence is a correct description of the mechanism at work in this case.
-
-The statement is true.
-', 'TRUE — The board of directors oversees strategy and appoints or supervises executive management. Day-to-day running typically sits with managers; shareholders exercise control mainly through appointments and major votes, not by personally managing every contract.
-
-The unincorporated/incorporated split turns on legal personality. Unincorporated firms (sole traders, partnerships) are not legal entities of their own; incorporated companies are legal persons. Pooling capital, filing personal tax, listing shares, or enjoying limited liability must be attached to the correct side of that split — limited liability marks incorporated forms, and listing is not the sole criterion of incorporation.
-
-Share capital and directors belong to incorporated structures, not a sole proprietor café.
-
-On that basis the assertion matches the ownership or finance rule being tested.
-
-The statement is true.
-', 'TRUE — The unincorporated/incorporated split turns on legal personality. Unincorporated firms (sole traders, partnerships) are not legal entities of their own; incorporated companies are legal persons. Pooling capital, filing personal tax, listing shares, or enjoying limited liability must be attached to the correct side of that split — limited liability marks incorporated forms, and listing is not the sole criterion of incorporation.
-
-Unincorporated cafés lack independent legal entity status.
-
-That is why the claim stands for this form of business or source of finance.
-
-The statement is true.
-', 'TRUE — Shareholders'' financial exposure is generally limited to what they invested in share capital. Creditors claim against the company as legal person; they do not automatically seize shareholders'' private homes for ordinary company debts.
-
-The unincorporated/incorporated split turns on legal personality. Unincorporated firms (sole traders, partnerships) are not legal entities of their own; incorporated companies are legal persons. Pooling capital, filing personal tax, listing shares, or enjoying limited liability must be attached to the correct side of that split — limited liability marks incorporated forms, and listing is not the sole criterion of incorporation.
-
-Corporations and limited liability companies are incorporated, unlike sole proprietorships.
-
-So the sentence is a correct description of the mechanism at work in this case.
-
-The statement is true.
-'] WHERE case_id = 'CASE 4.4.20' AND tier = 'full';
-UPDATE public.economics_cases SET tactical_explanations = ARRAY['FALSE — The unincorporated/incorporated split turns on legal personality. Unincorporated firms (sole traders, partnerships) are not legal entities of their own; incorporated companies are legal persons. Pooling capital, filing personal tax, listing shares, or enjoying limited liability must be attached to the correct side of that split — limited liability marks incorporated forms, and listing is not the sole criterion of incorporation.
-
-Sole proprietors manage directly; they do not use a shareholder-director split.
-
-That misclassification is enough to reject the claim.
-
-The statement is false.
-', 'TRUE — Ownership and management can separate: shareholders who found or fund the corporation need not run daily operations, and hired managers need not own shares. Boards and executives supply the governance layer.
-
-The board of directors oversees strategy and appoints or supervises executive management. Day-to-day running typically sits with managers; shareholders exercise control mainly through appointments and major votes, not by personally managing every contract.
-
-The unincorporated/incorporated split turns on legal personality. Unincorporated firms (sole traders, partnerships) are not legal entities of their own; incorporated companies are legal persons. Pooling capital, filing personal tax, listing shares, or enjoying limited liability must be attached to the correct side of that split — limited liability marks incorporated forms, and listing is not the sole criterion of incorporation.
-
-Incorporated structure permits separation of owning shareholders from managing directors.
-
-On that basis the assertion matches the ownership or finance rule being tested.
-
-The statement is true.
-', 'FALSE — The unincorporated/incorporated split turns on legal personality. Unincorporated firms (sole traders, partnerships) are not legal entities of their own; incorporated companies are legal persons. Pooling capital, filing personal tax, listing shares, or enjoying limited liability must be attached to the correct side of that split — limited liability marks incorporated forms, and listing is not the sole criterion of incorporation.
-
-Task delegation among partners does not incorporate the partnership.
-
-So the sentence does not survive once the correct mechanism is applied.
-
-The statement is false.
-', 'TRUE — The board of directors oversees strategy and appoints or supervises executive management. Day-to-day running typically sits with managers; shareholders exercise control mainly through appointments and major votes, not by personally managing every contract.
-
-The unincorporated/incorporated split turns on legal personality. Unincorporated firms (sole traders, partnerships) are not legal entities of their own; incorporated companies are legal persons. Pooling capital, filing personal tax, listing shares, or enjoying limited liability must be attached to the correct side of that split — limited liability marks incorporated forms, and listing is not the sole criterion of incorporation.
-
-The overview links shareholders with capital and directors with running the company.
-
-On that basis the assertion matches the ownership or finance rule being tested.
-
-The statement is true.
-', 'TRUE — The unincorporated/incorporated split turns on legal personality. Unincorporated firms (sole traders, partnerships) are not legal entities of their own; incorporated companies are legal persons. Pooling capital, filing personal tax, listing shares, or enjoying limited liability must be attached to the correct side of that split — limited liability marks incorporated forms, and listing is not the sole criterion of incorporation.
-
-Owner-manager overlap is typical of unincorporated forms.
-
-That is why the claim stands for this form of business or source of finance.
-
-The statement is true.
-'] WHERE case_id = 'CASE 4.4.21' AND tier = 'full';
-UPDATE public.economics_cases SET tactical_explanations = ARRAY['TRUE — Hiring is allowed. Assistants can handle routine work, but key management decisions and residual risk stay with the proprietor. Employment expands capacity; it does not transfer ownership or unlimited liability to staff.
-
-The unincorporated/incorporated split turns on legal personality. Unincorporated firms (sole traders, partnerships) are not legal entities of their own; incorporated companies are legal persons. Pooling capital, filing personal tax, listing shares, or enjoying limited liability must be attached to the correct side of that split — limited liability marks incorporated forms, and listing is not the sole criterion of incorporation.
-
-Growth and staffing do not change a sole trader''s unincorporated status.
-
-On that basis the assertion matches the ownership or finance rule being tested.
-
-The statement is true.
-', 'FALSE — The unincorporated/incorporated split turns on legal personality. Unincorporated firms (sole traders, partnerships) are not legal entities of their own; incorporated companies are legal persons. Pooling capital, filing personal tax, listing shares, or enjoying limited liability must be attached to the correct side of that split — limited liability marks incorporated forms, and listing is not the sole criterion of incorporation.
-
-Name registration alone does not create incorporated legal personality for a partnership.
-
-So the sentence does not survive once the correct mechanism is applied.
-
-The statement is false.
-', 'FALSE — The unincorporated/incorporated split turns on legal personality. Unincorporated firms (sole traders, partnerships) are not legal entities of their own; incorporated companies are legal persons. Pooling capital, filing personal tax, listing shares, or enjoying limited liability must be attached to the correct side of that split — limited liability marks incorporated forms, and listing is not the sole criterion of incorporation.
-
-Limited liability companies are incorporated despite limited owner liability.
-
-So the sentence does not survive once the correct mechanism is applied.
-
-The statement is false.
-', 'FALSE — As a legal person, a corporation holds rights and obligations in its own name: it can own land and property, hire people, close contracts, sue, and be sued. Those capacities do not require every shareholder to act personally in each transaction.
-
-The unincorporated/incorporated split turns on legal personality. Unincorporated firms (sole traders, partnerships) are not legal entities of their own; incorporated companies are legal persons. Pooling capital, filing personal tax, listing shares, or enjoying limited liability must be attached to the correct side of that split — limited liability marks incorporated forms, and listing is not the sole criterion of incorporation.
-
-Unlisted corporations are still incorporated legal persons.
-
-On that basis the assertion attaches the wrong legal, tax, liability, or finance label.
-
-The statement is false.
-', 'TRUE — The unincorporated/incorporated split turns on legal personality. Unincorporated firms (sole traders, partnerships) are not legal entities of their own; incorporated companies are legal persons. Pooling capital, filing personal tax, listing shares, or enjoying limited liability must be attached to the correct side of that split — limited liability marks incorporated forms, and listing is not the sole criterion of incorporation.
-
-Legal personality versus absence of it is the central classification criterion.
-
-That is why the claim stands for this form of business or source of finance.
-
-The statement is true.
-'] WHERE case_id = 'CASE 4.4.22' AND tier = 'full';
-UPDATE public.economics_cases SET tactical_explanations = ARRAY['TRUE — The unincorporated/incorporated split turns on legal personality. Unincorporated firms (sole traders, partnerships) are not legal entities of their own; incorporated companies are legal persons. Pooling capital, filing personal tax, listing shares, or enjoying limited liability must be attached to the correct side of that split — limited liability marks incorporated forms, and listing is not the sole criterion of incorporation.
-
-Figure 9 lists sole traders and partnerships among unincorporated forms.
-
-On that basis the assertion matches the ownership or finance rule being tested.
-
-The statement is true.
-', 'TRUE — Shareholders'' financial exposure is generally limited to what they invested in share capital. Creditors claim against the company as legal person; they do not automatically seize shareholders'' private homes for ordinary company debts.
-
-The unincorporated/incorporated split turns on legal personality. Unincorporated firms (sole traders, partnerships) are not legal entities of their own; incorporated companies are legal persons. Pooling capital, filing personal tax, listing shares, or enjoying limited liability must be attached to the correct side of that split — limited liability marks incorporated forms, and listing is not the sole criterion of incorporation.
-
-Corporations and limited liability companies are incorporated forms in the summary.
-
-So the sentence is a correct description of the mechanism at work in this case.
-
-The statement is true.
-', 'TRUE — The unincorporated/incorporated split turns on legal personality. Unincorporated firms (sole traders, partnerships) are not legal entities of their own; incorporated companies are legal persons. Pooling capital, filing personal tax, listing shares, or enjoying limited liability must be attached to the correct side of that split — limited liability marks incorporated forms, and listing is not the sole criterion of incorporation.
-
-Unincorporated firms lack separate legal personality from owners.
-
-On that basis the assertion matches the ownership or finance rule being tested.
-
-The statement is true.
-', 'TRUE — The unincorporated/incorporated split turns on legal personality. Unincorporated firms (sole traders, partnerships) are not legal entities of their own; incorporated companies are legal persons. Pooling capital, filing personal tax, listing shares, or enjoying limited liability must be attached to the correct side of that split — limited liability marks incorporated forms, and listing is not the sole criterion of incorporation.
-
-Legal personhood is the incorporated marker in the framework.
-
-On that basis the assertion matches the ownership or finance rule being tested.
-
-The statement is true.
-', 'TRUE — Ownership and management can separate: shareholders who found or fund the corporation need not run daily operations, and hired managers need not own shares. Boards and executives supply the governance layer.
-
-The board of directors oversees strategy and appoints or supervises executive management. Day-to-day running typically sits with managers; shareholders exercise control mainly through appointments and major votes, not by personally managing every contract.
-
-The unincorporated/incorporated split turns on legal personality. Unincorporated firms (sole traders, partnerships) are not legal entities of their own; incorporated companies are legal persons. Pooling capital, filing personal tax, listing shares, or enjoying limited liability must be attached to the correct side of that split — limited liability marks incorporated forms, and listing is not the sole criterion of incorporation.
-
-Shareholder capital and director management define incorporated governance.
-
-That is why the claim stands for this form of business or source of finance.
-
-The statement is true.
-'] WHERE case_id = 'CASE 4.4.23' AND tier = 'full';
-UPDATE public.economics_cases SET tactical_explanations = ARRAY['TRUE — The unincorporated/incorporated split turns on legal personality. Unincorporated firms (sole traders, partnerships) are not legal entities of their own; incorporated companies are legal persons. Pooling capital, filing personal tax, listing shares, or enjoying limited liability must be attached to the correct side of that split — limited liability marks incorporated forms, and listing is not the sole criterion of incorporation.
-
-Activity scale does not convert an unincorporated partnership into an incorporated entity.
-
-That is why the claim stands for this form of business or source of finance.
-
-The statement is true.
-', 'TRUE — As a legal person, a corporation holds rights and obligations in its own name: it can own land and property, hire people, close contracts, sue, and be sued. Those capacities do not require every shareholder to act personally in each transaction.
-
-The unincorporated/incorporated split turns on legal personality. Unincorporated firms (sole traders, partnerships) are not legal entities of their own; incorporated companies are legal persons. Pooling capital, filing personal tax, listing shares, or enjoying limited liability must be attached to the correct side of that split — limited liability marks incorporated forms, and listing is not the sole criterion of incorporation.
-
-Incorporated legal personality persists regardless of geographic scope.
-
-On that basis the assertion matches the ownership or finance rule being tested.
-
-The statement is true.
-', 'TRUE — The unincorporated/incorporated split turns on legal personality. Unincorporated firms (sole traders, partnerships) are not legal entities of their own; incorporated companies are legal persons. Pooling capital, filing personal tax, listing shares, or enjoying limited liability must be attached to the correct side of that split — limited liability marks incorporated forms, and listing is not the sole criterion of incorporation.
-
-Sole traders typify owner-manager unity in unincorporated forms.
-
-That is why the claim stands for this form of business or source of finance.
-
-The statement is true.
-', 'TRUE — Ownership and management can separate: shareholders who found or fund the corporation need not run daily operations, and hired managers need not own shares. Boards and executives supply the governance layer.
-
-The unincorporated/incorporated split turns on legal personality. Unincorporated firms (sole traders, partnerships) are not legal entities of their own; incorporated companies are legal persons. Pooling capital, filing personal tax, listing shares, or enjoying limited liability must be attached to the correct side of that split — limited liability marks incorporated forms, and listing is not the sole criterion of incorporation.
-
-Incorporated governance allows passive share ownership separate from management.
-
-That is why the claim stands for this form of business or source of finance.
-
-The statement is true.
-', 'TRUE — The unincorporated/incorporated split turns on legal personality. Unincorporated firms (sole traders, partnerships) are not legal entities of their own; incorporated companies are legal persons. Pooling capital, filing personal tax, listing shares, or enjoying limited liability must be attached to the correct side of that split — limited liability marks incorporated forms, and listing is not the sole criterion of incorporation.
-
-Unincorporated firms lack independent legal entity status.
-
-So the sentence is a correct description of the mechanism at work in this case.
-
-The statement is true.
-'] WHERE case_id = 'CASE 4.4.24' AND tier = 'full';
-UPDATE public.economics_cases SET tactical_explanations = ARRAY['TRUE — The unincorporated/incorporated split turns on legal personality. Unincorporated firms (sole traders, partnerships) are not legal entities of their own; incorporated companies are legal persons. Pooling capital, filing personal tax, listing shares, or enjoying limited liability must be attached to the correct side of that split — limited liability marks incorporated forms, and listing is not the sole criterion of incorporation.
-
-Separate legal personhood is the incorporated marker in the overview.
-
-So the sentence is a correct description of the mechanism at work in this case.
-
-The statement is true.
-', 'TRUE — The unincorporated/incorporated split turns on legal personality. Unincorporated firms (sole traders, partnerships) are not legal entities of their own; incorporated companies are legal persons. Pooling capital, filing personal tax, listing shares, or enjoying limited liability must be attached to the correct side of that split — limited liability marks incorporated forms, and listing is not the sole criterion of incorporation.
-
-Unincorporated firms are not legal entities of their own.
-
-That is why the claim stands for this form of business or source of finance.
-
-The statement is true.
-', 'TRUE — The unincorporated/incorporated split turns on legal personality. Unincorporated firms (sole traders, partnerships) are not legal entities of their own; incorporated companies are legal persons. Pooling capital, filing personal tax, listing shares, or enjoying limited liability must be attached to the correct side of that split — limited liability marks incorporated forms, and listing is not the sole criterion of incorporation.
-
-Sole traders and partnerships are listed as unincorporated forms.
-
-That is why the claim stands for this form of business or source of finance.
-
-The statement is true.
-', 'TRUE — Shareholders'' financial exposure is generally limited to what they invested in share capital. Creditors claim against the company as legal person; they do not automatically seize shareholders'' private homes for ordinary company debts.
-
-The unincorporated/incorporated split turns on legal personality. Unincorporated firms (sole traders, partnerships) are not legal entities of their own; incorporated companies are legal persons. Pooling capital, filing personal tax, listing shares, or enjoying limited liability must be attached to the correct side of that split — limited liability marks incorporated forms, and listing is not the sole criterion of incorporation.
-
-Corporations and limited liability companies are incorporated forms.
-
-On that basis the assertion matches the ownership or finance rule being tested.
-
-The statement is true.
-', 'TRUE — Ownership and management can separate: shareholders who found or fund the corporation need not run daily operations, and hired managers need not own shares. Boards and executives supply the governance layer.
-
-The board of directors oversees strategy and appoints or supervises executive management. Day-to-day running typically sits with managers; shareholders exercise control mainly through appointments and major votes, not by personally managing every contract.
-
-The unincorporated/incorporated split turns on legal personality. Unincorporated firms (sole traders, partnerships) are not legal entities of their own; incorporated companies are legal persons. Pooling capital, filing personal tax, listing shares, or enjoying limited liability must be attached to the correct side of that split — limited liability marks incorporated forms, and listing is not the sole criterion of incorporation.
-
-Ownership and management may diverge in incorporated structures.
-
-On that basis the assertion matches the ownership or finance rule being tested.
-
-The statement is true.
-'] WHERE case_id = 'CASE 4.4.25' AND tier = 'full';
+The statement is true.'] WHERE case_id = 'CASE 4.4.25' AND tier = 'full';

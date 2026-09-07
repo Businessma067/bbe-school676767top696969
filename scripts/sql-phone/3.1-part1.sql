@@ -1,223 +1,278 @@
 -- Update expanded explanations for 3.1-part1 (25 cases).
 -- Safe to re-run: only updates tactical_explanations.
 
-UPDATE public.economics_cases SET tactical_explanations = ARRAY['TRUE — Human resources as the labour factor mean the people whose time and skills help create goods or services. A manager who coordinates schedules is still supplying that human input: the coordination work is itself labour, even when the same person also organises others. Entrepreneurship may describe risk-taking and business organisation as a separate factor, but that label does not strip managerial hours out of labour. Shop-floor and office roles sit under the same factor heading whenever a firm deploys people in production. The statement is true.', 'TRUE — Labour is not limited to factories that make physical goods. In a service firm, staff who process insurance claims apply human effort and skill to deliver the service. That effort is the labour factor: the policies are intangible, yet the handlers are still human resources used in production. Classifying the firm as tertiary or as a service business does not move claims work into some other factor. The statement is true.', 'FALSE — Labour covers all human resources used to produce goods or services, not only manual shop-floor tasks. Planners, accountants, and other office roles still supply time and skill that the firm deploys in production. Restricting labour to physical lifting or machine operation would leave most coordination and specialist work unclassified, which is not how the factor is defined. The statement is false.', 'FALSE — A want is a consumer desire; labour is a production factor. Installing software is skilled human work that helps deliver a service, so it belongs under labour even though the output is intangible. Intangibility affects whether the offering is a good or a service, not whether the installer counts as human resources. Calling installation a “want” confuses the demand side with the supply of factors. The statement is false.', 'FALSE — Seasonal employment still supplies human resources for the weeks those workers are hired. Labour classification turns on whether people contribute effort to production, not on whether the contract lasts a full year. Harvest pickers paid for a short season therefore remain labour for that period. Excluding them because the job is temporary would erase a large share of agricultural and tourism work from the factor. The statement is false.'] WHERE case_id = 'CASE 3.1.01' AND tier = 'full';
-UPDATE public.economics_cases SET tactical_explanations = ARRAY['TRUE — Land as a factor covers natural resources used in production, including soil, vineyards, and related site resources. Hillside vineyards are exactly that kind of natural-resource input for a wine-growing business: the land and vines are not man-made capital, and they are not labour. Locating the vines on a slope does not change the factor heading. The statement is true.', 'TRUE — Both seasonal pickers and the cellar master are people whose work helps produce the wine. Labour includes temporary and permanent staff, and it includes specialist cellar roles as well as harvest hands. Different skill levels or contract lengths do not split them into different factors. The statement is true.', 'TRUE — Capital is the produced means of production used in operations — machinery, plant, and similar resources — whether the firm owns or leases them. A leased bottling line still performs the capital role in the winery’s process: ownership is a financing detail, not the factor test. The equipment remains a produced asset used to transform grapes into bottled wine. The statement is true.', 'TRUE — Knowledge and know-how applied in production count among the factors that raise what labour and capital can achieve. Fermentation expertise used in blending is that kind of applied knowledge: it is not the vineyard itself, and it is not merely a consumer preference. Using specialist know-how in the cellar therefore draws on knowledge as a production factor. The statement is true.', 'FALSE — Ordering barrels may involve capital (the barrels as equipment or materials), but entrepreneurship is the organising and risk-bearing role that brings factors together. Choosing suppliers, timing orders, and committing resources are entrepreneurial decisions, not proof that entrepreneurship is absent. Capital decisions and entrepreneurship often appear in the same choice. The statement is false.'] WHERE case_id = 'CASE 3.1.02' AND tier = 'full';
-UPDATE public.economics_cases SET tactical_explanations = ARRAY['TRUE — The land factor includes natural resources drawn from nature for production, not only plots of ground. River water used to irrigate crops is such a natural-resource input: it is not manufactured capital, and it is not labour. Irrigation use places it firmly under land in the factor classification. The statement is true.', 'FALSE — Standing forests and growing timber in situ belong with land as natural resources. Once timber has been harvested and prepared for milling, it is typically treated as a material or intermediate good in the production chain, not as the land factor itself. Originating from trees does not freeze the cut timber under “land” after extraction. The statement is false.', 'FALSE — Mineral rights and mineral deposits are natural-resource aspects of land, even though rights can be traded. Being bought and sold does not automatically reclassify a natural endowment as capital; capital refers to produced means of production. Tradability is common to many assets and is not the factor test. The statement is false.', 'FALSE — Oak barrels are manufactured equipment (or produced containers) used in ageing wine, so they sit under capital, not land. The fact that oak once grew in forests describes the material’s origin; after fabrication into barrels, the factor role is capital in the cellar process. Natural origin alone does not keep a finished tool under land. The statement is false.', 'FALSE — Land in production covers natural resources broadly: agricultural land, forests, fisheries, minerals, water, and similar endowments, not only fenced factory sites. Limiting the factor to factory plots would exclude most primary-sector natural inputs. The statement is false.'] WHERE case_id = 'CASE 3.1.03' AND tier = 'full';
-UPDATE public.economics_cases SET tactical_explanations = ARRAY['TRUE — Capital is defined by use in production as produced means of production, not by ownership title. Leased diagnostic tools used by technicians still serve that role: they are equipment applied to deliver the service. Leasing changes who owns the asset, not whether it functions as capital while in use. The statement is true.', 'TRUE — Inventories of spare parts held to complete repairs are working resources that support service delivery. They are produced items committed to operations, so they belong with capital (including working capital / stocks) rather than with land or labour. Keeping them for same-day repairs underscores their production use. The statement is true.', 'TRUE — In the broad business sense used here, capital covers the physical and financial resources deployed in operations: machinery, plant, vehicles, and funds used to run production. Each of those is a produced or financial means applied to create goods or services. The statement is true.', 'TRUE — Cash held to bridge payroll between invoice cycles is financial capital (working capital) used so production and staffing can continue. It is not a consumer good sitting idle for household wants; it finances the firm’s operations. That financing role places the reserves under capital. The statement is true.', 'TRUE — Delivery vans used to ship finished goods are produced equipment applied in distribution of output. Vehicles in that role are a standard example of capital, distinct from the land they drive on and from the drivers’ labour. The statement is true.'] WHERE case_id = 'CASE 3.1.04' AND tier = 'full';
-UPDATE public.economics_cases SET tactical_explanations = ARRAY['TRUE — Tools and testing equipment on a manufacturing line are produced means of production used to make goods, so they are capital. Secondary production (manufacturing) still relies on that capital alongside labour and materials. The statement is true.', 'TRUE — Engineers who monitor quality apply specialised human skill to the production process. That contribution is labour — specifically skilled or specialised labour — not land or a consumer good. Quality monitoring is part of creating the output. The statement is true.', 'TRUE — Entrepreneurship is the organising factor that brings resources together and directs production under uncertainty. Plant management that coordinates materials, staff, and orders performs that organising role. Calling the people “managers” does not reduce the activity to pure task labour alone. The statement is true.', 'FALSE — Raw materials such as copper stock on the factory floor are intermediate inputs in manufacturing, not the land factor. Land would cover the mineral deposit in the ground; once extracted and purchased as materials, copper enters production as a material input alongside capital and labour. Extractive origin alone does not keep factory materials under land. The statement is false.', 'FALSE — Knowledge applied in production is treated as a production factor (know-how, skills, technology) whether or not the firm holds patents. Patents may protect intellectual property, but they are not the threshold for knowledge to count in production. Knowledge is not a consumer good merely because it is intangible or unpatented. The statement is false.'] WHERE case_id = 'CASE 3.1.05' AND tier = 'full';
-UPDATE public.economics_cases SET tactical_explanations = ARRAY['TRUE — Entrepreneurship is the factor that organises production by combining land, labour, and capital (and related inputs) into a going concern. Bringing those resources together and directing them toward output is exactly that role. The statement is true.', 'FALSE — Entrepreneurs typically bear business uncertainty: they commit organisation and often capital under the risk that demand, costs, or plans fail. Lenders may share financial risk, but that does not leave entrepreneurs with none. Assigning uncertainty to lenders alone misstates who organises and bears residual business risk. The statement is false.', 'FALSE — Financial resources are part of capital (funds used in production), whereas entrepreneurship is the organising and risk-bearing role. Both involve decisions, but sharing the word “decision” does not make finance identical to entrepreneurship. Collapsing the two factors erases the distinction between means and organisation. The statement is false.', 'FALSE — Hiring and deploying staff is labour when people perform tasks, yet deciding whom to hire, how to organise work, and how to combine factors remains entrepreneurial coordination. Employment does not convert every organising choice into pure labour with entrepreneurship deleted. The statement is false.', 'FALSE — Choosing equipment is an allocation decision that uses capital goods, but the act of selecting and committing to that mix is entrepreneurial organisation. Capital describes the equipment; entrepreneurship describes bringing it into a production plan. The presence of a capital choice does not prove entrepreneurship is absent. The statement is false.'] WHERE case_id = 'CASE 3.1.06' AND tier = 'full';
-UPDATE public.economics_cases SET tactical_explanations = ARRAY['TRUE — Technology as a production factor includes tools, systems, and licensed software that raise what the firm can produce. Diagnostic software licences used by repair technicians are exactly that kind of technology input in a service setting. The statement is true.', 'TRUE — Knowledge covers applied know-how that improves production. Experience with fermentation techniques used in winemaking is such knowledge: it shapes how labour and capital turn grapes into wine. The statement is true.', 'TRUE — A repair bench that uses diagnostic systems or similar tech is deploying technology as a factor, even though the firm sells services rather than hardware. Factor classification follows use in production, not whether the output is a physical good. The statement is true.', 'FALSE — Technology is not reserved for hardware manufacturers. Service firms use software, diagnostic systems, and techniques as technology inputs. Limiting the factor to firms that make physical devices would exclude most modern service production. The statement is false.', 'FALSE — Design know-how is knowledge (and related technology), not capital merely because files sit on servers. Servers and storage may be capital; the know-how itself is the knowledge factor applied in design work. Storage medium and factor type are different questions. The statement is false.'] WHERE case_id = 'CASE 3.1.07' AND tier = 'full';
-UPDATE public.economics_cases SET tactical_explanations = ARRAY['TRUE — A small IT-support venture that refurbishes machines, installs software, and bills support work draws on several factors at once: staff skills and time (labour), tools and parts (capital), software and methods (technology/knowledge), and the owner’s organising decisions (entrepreneurship). The weekend repair setting still combines those inputs. The statement is true.', 'TRUE — Coordinating bookings, parts orders, and the repair pipeline is entrepreneurial organisation: someone decides priorities, commits resources, and bears the risk that jobs go wrong or demand falters. That coordination is not identical to the hands-on repair labour alone. The statement is true.', 'TRUE — Repair kits and licensed diagnostic apps are the technology layer that supports diagnosis and repair. They are produced systems and tools applied to the service, distinct from the technician’s labour hours. The statement is true.', 'TRUE — Spare screens and batteries held for repairs are stocks of produced parts committed to service delivery, so they function as capital inputs for the workshop. Holding them ready is part of enabling production, not a household purchase. The statement is true.', 'TRUE — Time spent diagnosing faults is human effort applied to produce the repair service, which is labour. Diagnosis may use technology and parts, but the technician’s hours remain the labour input. The statement is true.'] WHERE case_id = 'CASE 3.1.08' AND tier = 'full';
-UPDATE public.economics_cases SET tactical_explanations = ARRAY['TRUE — Service businesses still need more than people alone: premises or tools (capital), systems and methods (technology), and someone to organise the offer (entrepreneurship), together with labour. Combining those factors is how services are produced for customers. The statement is true.', 'TRUE — The basic production idea is that a business combines factors of production to create goods and/or services for customers. That combination is the supply side of what the firm offers. The statement is true.', 'FALSE — One factor may dominate in a given industry (for example capital in heavy industry or knowledge in software), but dominance does not eliminate the need for other factors. Production still requires complementary inputs and organisation. The statement is false.', 'FALSE — Services combine factors just as manufacturing does; they are not “labour only.” Tools, systems, premises, and entrepreneurial coordination appear in service production as well. Restricting factor combination to manufacturing misreads both sectors. The statement is false.', 'FALSE — Automation can reduce some routine labour, but plants still need people for oversight, maintenance, programming, and organisation, and entrepreneurship remains in planning and risk-bearing. Knowledge of processes also remains relevant. Automation does not erase labour and knowledge entirely. The statement is false.'] WHERE case_id = 'CASE 3.1.09' AND tier = 'full';
-UPDATE public.economics_cases SET tactical_explanations = ARRAY['TRUE — Oak barrels used to age wine are produced equipment in the cellar process, so they are capital supporting production. They are not land (even though oak grew naturally) once fabricated and used as containers. The statement is true.', 'TRUE — Fermentation experience is applied knowledge that improves how other factors are used in winemaking. It sits alongside land, labour, and capital rather than replacing them. The statement is true.', 'TRUE — Large vineyards supply land; staff supply labour; equipment and stocks supply capital; and the grower’s organising decisions supply entrepreneurship. An integrated winery typically combines all of these. The statement is true.', 'TRUE — Soil fertility is a natural-resource (land) attribute of the vineyard, while bottling machinery is produced equipment (capital). Same site, different factor roles. The statement is true.', 'FALSE — Seasonal staff still supply labour during the periods they work. Labour does not require a permanent contract. Excluding seasonal workers would misclassify harvest and peak-season production. The statement is false.'] WHERE case_id = 'CASE 3.1.10' AND tier = 'full';
-UPDATE public.economics_cases SET tactical_explanations = ARRAY['TRUE — Capital refers to resources used in production (equipment, funds, stocks), while entrepreneurship is the organising and risk-bearing role that combines and directs those resources. Keeping the two distinct avoids treating every asset decision as identical to organisation itself. The statement is true.', 'TRUE — Once plans exist as stored operational documents and files, the firm uses them as produced informational resources that support production much as other capital-type assets do. The claim treats those stored planning outputs — not the fleeting minute of thought alone — as capital because they are kept digitally for repeated use. The statement is true.', 'TRUE — An owner who personally repairs while also running the shop supplies task labour with their hands and entrepreneurship with their organising and risk-bearing role. One person can provide more than one factor. The statement is true.', 'TRUE — Founder coordination of suppliers and staff is entrepreneurial organisation, separate from the hours spent on a single repair task. That coordination role is the entrepreneurship factor. The statement is true.', 'FALSE — Risk-bearing is the entrepreneurial exposure to gains and losses, not labour merely because thinking about risk takes time. Labour is human effort in tasks; entrepreneurship is organisation under uncertainty. Hours spent worrying do not reclassify residual business risk as labour. The statement is false.'] WHERE case_id = 'CASE 3.1.11' AND tier = 'full';
-UPDATE public.economics_cases SET tactical_explanations = ARRAY['TRUE — A leased bottling line is still produced equipment used to bottle wine, so it functions as capital in production. Lease versus own affects financing, not the factor role while the line runs. The statement is true.', 'TRUE — Warehouse robots used in a distribution hub are capital goods even when leased and even when people work beside them. Manual pickers are labour; the robots remain capital. The statement is true.', 'FALSE — Renting premises does not erase capital inside the building. Tools, machines, and fittings used in production still count as capital whether the shell is rented or owned. The statement is false.', 'FALSE — Hire-purchase machines are capital equipment being paid for over time. Standing in a workshop does not turn them into land; land is the natural-resource site or endowment, not the machines on it. The statement is false.', 'FALSE — Seasonal leasing of machinery does not convert equipment into land. Outdoor use describes location, not factor type; the machines remain capital. The statement is false.'] WHERE case_id = 'CASE 3.1.12' AND tier = 'full';
-UPDATE public.economics_cases SET tactical_explanations = ARRAY['TRUE — Crew members who operate chainsaws and harvesters supply human effort to fell timber, which is labour. The machines are capital; the operators are labour. The statement is true.', 'FALSE — Supervision can include labour (directing tasks) and, at higher organising levels, entrepreneurship (planning extraction under uncertainty, combining crew and machines). Saying supervision is “labour only and never entrepreneurship” overclaims. The statement is false.', 'FALSE — Logging uses land (the forest resource), labour (the crew), capital (harvesters and tools), and entrepreneurial organisation. Natural growth of trees does not make land the sole factor. The statement is false.', 'FALSE — Harvesters are machines — capital — even when they operate on forest terrain. The terrain is land; the equipment is not. The statement is false.', 'FALSE — Forests remain natural-resource land; cutting trees does not turn the forest endowment into capital. Harvested logs become materials; harvesters are capital; the standing forest resource is still land. The statement is false.'] WHERE case_id = 'CASE 3.1.13' AND tier = 'full';
-UPDATE public.economics_cases SET tactical_explanations = ARRAY['TRUE — Working capital that finances payroll between invoices is financial capital used to keep production staffed. It is a funds input, not land or a consumer want. The statement is true.', 'TRUE — Borrowed funds spent on diagnostic tools apply financial resources to acquire capital goods for production. The financing is capital in the financial sense directed into productive use. The statement is true.', 'TRUE — Capital in this business sense includes physical equipment and the financial resources used to run production. Both support creating goods or services. The statement is true.', 'FALSE — Manufacturers use many capital forms: equipment, inventories, working cash, borrowed funds, and equity among them. Share capital is one financing source, not the only capital a manufacturer may use. The statement is false.', 'FALSE — Emergency cash reserves are financial capital, not land. Storing cash on the premises does not make money a natural resource. The statement is false.'] WHERE case_id = 'CASE 3.1.14' AND tier = 'full';
-UPDATE public.economics_cases SET tactical_explanations = ARRAY['TRUE — Manufacturing-floor workers are a central illustration of labour in goods production, and the statement identifies that shop-floor human-resource role as labour. Read together with the service examples in the other letters, the item’s keyed answer treats this manufacturing emphasis as a true starting characterisation of the factor. The statement is true.', 'TRUE — Technical support staff who troubleshoot home networks apply human skill to deliver a service. That is labour in a knowledge-intensive service setting. The statement is true.', 'TRUE — Freelance trainers delivering coaching still supply human resources to the studio’s service production. Employment status (freelance versus payroll) does not remove them from labour while they work. The statement is true.', 'TRUE — Installing software for a client is skilled human work used to produce the service, so it counts as labour. The intangibility of software does not move the installer out of human resources. The statement is true.', 'TRUE — Labour as human resources covers specialists and general staff whenever the firm deploys people in production. Skill level changes the type of labour, not whether the factor applies. The statement is true.'] WHERE case_id = 'CASE 3.1.15' AND tier = 'full';
-UPDATE public.economics_cases SET tactical_explanations = ARRAY['TRUE — Fabric for client orders is a material input that the tailor combines with apprentices’ labour and sewing machines (capital). Materials sit alongside other factors rather than replacing them. The statement is true.', 'TRUE — Selecting machines and scheduling orders are organising decisions that commit resources under business risk — entrepreneurship. The tailor’s coordination role is distinct from the stitching labour alone. The statement is true.', 'TRUE — Apprentices who cut patterns and stitch garments supply labour: human effort creating the garments. Training status does not remove them from the labour factor. The statement is true.', 'FALSE — Tailoring still needs fabric (materials), machines (capital), and organising choices (entrepreneurship), even when designs exist in the tailor’s head. Know-how does not make labour the sole factor. The statement is false.', 'FALSE — Hire-purchase sewing machines are capital equipment. Occupying floor space does not reclassify them as land; the workshop site may involve land or premises, but the machines remain capital. The statement is false.'] WHERE case_id = 'CASE 3.1.16' AND tier = 'full';
-UPDATE public.economics_cases SET tactical_explanations = ARRAY['TRUE — Clean-room tools and testing equipment are produced means of production in manufacturing, hence capital in secondary production. The statement is true.', 'TRUE — Engineering teams monitoring batches supply skilled labour applied to process control and quality. The statement is true.', 'TRUE — Fabrication needs people (labour), materials, and capital equipment together; omitting any of these typically stops production. The statement is true.', 'TRUE — A components manufacturer combines workforce, materials, equipment, and entrepreneurial direction — the standard factor mix in industrial production. The statement is true.', 'TRUE — Process-specification knowledge applied on the line is a production factor (knowledge) that shapes how labour and capital are used. The statement is true.'] WHERE case_id = 'CASE 3.1.17' AND tier = 'full';
-UPDATE public.economics_cases SET tactical_explanations = ARRAY['TRUE — Replacing a screen uses the technician’s labour, capital parts (the screen), and often technology tools (diagnostics). Service repair routinely combines those inputs. The statement is true.', 'TRUE — A refurbished-laptop workshop needs tools and spare parts (capital) plus working capital to fund stocks and operations, used together in the service process. The statement is true.', 'FALSE — Tools are capital, but repairs still require labour to use them and often technology (software, methods). Capital-only is an overclaim. The statement is false.', 'FALSE — Intangible services still use technology: diagnostic apps, information systems, and techniques. Intangibility of the output does not exclude technology as a factor. The statement is false.', 'FALSE — Software licences used to diagnose or repair are production technology for the firm, not merely household consumer subscriptions. Business use in the repair process is the factor test. The statement is false.'] WHERE case_id = 'CASE 3.1.18' AND tier = 'full';
-UPDATE public.economics_cases SET tactical_explanations = ARRAY['TRUE — Knowledge-intensive startups often emphasise skills and technology relative to heavy land use, while still using some capital and entrepreneurship. Dominant-factor patterns differ by industry. The statement is true.', 'TRUE — Even when manufacturing weights capital heavily, entrepreneurship still coordinates what is produced, how capacity is used, and what risks are taken. Capital intensity does not delete organisation. The statement is true.', 'TRUE — Land-heavy farming still needs labour, equipment (capital), and management/entrepreneurship. Land dominance is relative, not exclusive. The statement is true.', 'TRUE — Factor mixes vary by industry — land in farming, capital in heavy industry, knowledge in software — yet firms typically combine several inputs rather than one alone. The statement is true.', 'FALSE — Automation can shrink some labour roles, but oversight, maintenance, programming, and entrepreneurial planning remain. Capital-intensive plants do not remove all labour and entrepreneurship. The statement is false.'] WHERE case_id = 'CASE 3.1.19' AND tier = 'full';
-UPDATE public.economics_cases SET tactical_explanations = ARRAY['TRUE — Claims handlers who learn and then use the new case software still supply labour: human resources delivering insurance services in the branch. Training prepares labour; it does not replace it. The statement is true.', 'FALSE — Calendars do not perform labour. People schedule and deliver training; the calendar is only a tool. Labour requires human effort. The statement is false.', 'FALSE — Premises may involve land or property inputs, but computers are produced capital (and may embody technology), not land. Location inside a building does not turn equipment into land. The statement is false.', 'FALSE — Insurance software is a technology/capital-type input used inside a tertiary (service) firm; it is not “the tertiary sector itself.” Sector describes the firm’s activity; the software is a factor used in that activity. The statement is false.', 'FALSE — Insurance services also use capital (systems, premises), technology (case software), and entrepreneurship (organising the branch), not labour alone. Intangible policies do not imply a single-factor business. The statement is false.'] WHERE case_id = 'CASE 3.1.20' AND tier = 'full';
-UPDATE public.economics_cases SET tactical_explanations = ARRAY['TRUE — Entrepreneurship organises land, labour, and capital under uncertainty. Coordinating orders, suppliers, and staffing is that organising role; buying capital or hiring labour does not erase it.
+UPDATE public.economics_cases SET tactical_explanations = ARRAY['Labour is the human-resources factor: paid effort that helps produce goods or services. Managers who set schedules are deploying that effort, even when the same people also organise other factors. Coordination duties do not strip the human input out of the labour category.
 
-Strategic coordination of capital investment is entrepreneurial activity.
+The statement is true.', 'In a service firm, processing insurance claims is production of a service. Handlers apply human effort to policies and customers, so that work is labour just as clearly as shop-floor tasks are.
 
-In the case setting — a Carinthian dairy co-op upgrades cooling tanks to handle higher daily milk volumes — that reading fits the facts given.
+The statement is true.', 'Labour covers all human resources used in production, not only physical shop-floor jobs. Planners and accountants still supply labour when they contribute paid effort to the firm''s output. Restricting the factor to manual work alone is too narrow.
 
-Under that classification the assertion describes the situation correctly.
+The statement is false.', 'Installing software is skilled work that uses human resources to deliver a service. Intangibility does not turn the work into a mere want; wants are goods or services households desire, while labour is the human input that produces them. The installation remains labour.
 
-The statement is true.
-', 'TRUE — Land as a factor covers natural resources used in production — soil, vineyards, forests, fisheries, minerals, water rights — not only fenced factory plots.
+The statement is false.', 'Seasonal pickers are paid human resources for the weeks they work. Duration of the contract does not remove them from the labour factor. Short employment still counts as labour while it is used in production.
 
-Farm output draws on natural resources and primary activity.
+The statement is false.'] WHERE case_id = 'CASE 3.1.01' AND tier = 'full';
+UPDATE public.economics_cases SET tactical_explanations = ARRAY['Land is the natural-resources factor: soil, climate, water, and sites that production draws on. Hillside vineyards are natural growing sites, so they sit in land rather than in equipment or labour.
 
-The scenario (a Carinthian dairy co-op upgrades cooling tanks to handle higher daily milk volumes) supports that classification.
+The statement is true.', 'Labour is every human resource applied to production. Seasonal pickers and a permanent cellar master both supply human effort to the winery, so both belong in labour.
 
-Under that classification the assertion describes the situation correctly.
+The statement is true.', 'Capital is productive equipment and related resources used in operations. Ownership is not the test: a leased bottling line is still capital while the winery uses it to bottle wine.
 
-The statement is true.
-', 'TRUE — Labour is the human-resources factor: time and skill deployed to create goods or services, whether the output is physical or intangible. Capital covers produced means of production used in operations: machinery, plant, vehicles, stocks of parts, and financial resources committed to the process. Land as a factor covers natural resources used in production — soil, vineyards, forests, fisheries, minerals, water rights — not only fenced factory plots. Entrepreneurship organises land, labour, and capital under uncertainty. Coordinating orders, suppliers, and staffing is that organising role; buying capital or hiring labour does not erase it. Businesses combine several factors; one may dominate by industry, but dominance does not delete the others. Services still use capital and organisation; automation still leaves oversight and entrepreneurship.
+The statement is true.', 'Knowledge is the know-how applied in production. Fermentation technique used in blending is applied experience, so it draws on knowledge as a production factor alongside land, labour, and capital.
 
-Processing integrates multiple factors beyond land alone.
+The statement is true.', 'Ordering barrels is a capital purchase, but choosing suppliers, timing contracts, and coordinating the other factors is entrepreneurship. Capital decisions do not erase the entrepreneurial role that organises production.
 
-In the case setting — a Carinthian dairy co-op upgrades cooling tanks to handle higher daily milk volumes — that reading fits the facts given.
+The statement is false.'] WHERE case_id = 'CASE 3.1.02' AND tier = 'full';
+UPDATE public.economics_cases SET tactical_explanations = ARRAY['Land includes natural resources used in production, not only surface plots. River water drawn for irrigation is a natural input, so it belongs in the land factor.
 
-Nothing in the keyed reading contradicts the chapter framing used here, so the claim holds.
+The statement is true.', 'Standing forests are land as natural resources. Timber already cut and ready for milling is a processed material input, not the land factor itself. Origin in trees does not keep milled logs inside land.
 
-The statement is true.
-', 'TRUE — Capital covers produced means of production used in operations: machinery, plant, vehicles, stocks of parts, and financial resources committed to the process.
+The statement is false.', 'Unextracted minerals and mineral rights over natural deposits are natural resources within land. The fact that rights can be bought and sold does not reclassify them as capital equipment.
 
-Processing machinery is part of the capital factor.
+The statement is false.', 'Oak comes from forests, but barrels are manufactured equipment used in ageing. Once wood has been processed into barrels for production, those barrels are capital, not land.
 
-The scenario (a Carinthian dairy co-op upgrades cooling tanks to handle higher daily milk volumes) supports that classification.
+The statement is false.', 'Land covers natural resources broadly: sites, forests, fisheries, minerals, and similar inputs. Limiting the factor to fenced factory plots leaves out those natural resources.
 
-Nothing in the keyed reading contradicts the chapter framing used here, so the claim holds.
+The statement is false.'] WHERE case_id = 'CASE 3.1.03' AND tier = 'full';
+UPDATE public.economics_cases SET tactical_explanations = ARRAY['Capital is equipment and related resources used in production, whether owned or leased. Diagnostic tools that technicians use on the job still function as capital while they support service delivery.
 
-The statement is true.
-', 'TRUE — Labour is the human-resources factor: time and skill deployed to create goods or services, whether the output is physical or intangible. Capital covers produced means of production used in operations: machinery, plant, vehicles, stocks of parts, and financial resources committed to the process.
+The statement is true.', 'Inventories held so the firm can deliver its service are part of capital. Spare parts kept for same-day repairs are productive stocks supporting operations, so they count as capital.
 
-Processing staff are human resources classified as labour.
+The statement is true.', 'In this framing, capital takes in machinery, plant, vehicles, and the financial resources applied to run production. Those items are the capital factor when they are committed to operations.
 
-In the case setting — a Carinthian dairy co-op upgrades cooling tanks to handle higher daily milk volumes — that reading fits the facts given.
+The statement is true.', 'Financial resources used to keep the business running belong to capital. Cash held to meet payroll between invoice cycles is working finance applied to production, so it forms part of capital.
 
-Nothing in the keyed reading contradicts the chapter framing used here, so the claim holds.
+The statement is true.', 'Vehicles used to move finished goods are productive equipment. A delivery fleet shipping output is capital in the distribution stage of production.
 
-The statement is true.
-'] WHERE case_id = 'CASE 3.1.21' AND tier = 'full';
-UPDATE public.economics_cases SET tactical_explanations = ARRAY['TRUE — Labour is the human-resources factor: time and skill deployed to create goods or services, whether the output is physical or intangible. Knowledge and technology count as production factors when applied to raise what the firm can produce — methods, licences, experience, and systems in services as well as manufacturing. Businesses combine several factors; one may dominate by industry, but dominance does not delete the others. Services still use capital and organisation; automation still leaves oversight and entrepreneurship.
+The statement is true.'] WHERE case_id = 'CASE 3.1.04' AND tier = 'full';
+UPDATE public.economics_cases SET tactical_explanations = ARRAY['Secondary production turns materials into goods with plant and tools. Production tools and testing equipment on the line are that plant and equipment, so they are capital.
 
-Training deploys human resources plus knowledge and technology.
+The statement is true.', 'Engineers who monitor quality apply skilled human effort to the manufacturing process. That specialised human input is labour.
 
-The sentence therefore reports the concept accurately for this item.
+The statement is true.', 'Entrepreneurship organises the other factors and bears business uncertainty. Plant management that coordinates materials, staff, and orders is performing that organising role.
 
-The statement is true.
-', 'FALSE — Entrepreneurship organises land, labour, and capital under uncertainty. Coordinating orders, suppliers, and staffing is that organising role; buying capital or hiring labour does not erase it. Knowledge and technology count as production factors when applied to raise what the firm can produce — methods, licences, experience, and systems in services as well as manufacturing.
+The statement is true.', 'Copper may be mined from the earth, but materials on the factory floor are inputs combined with labour and capital, not the land factor itself. Land is the natural-resource base; processed or purchased materials are a separate input category.
 
-Their model combines multiple production factors.
+The statement is false.', 'Knowledge applied in production is a recognised factor whether or not the firm holds patents. Patent registration is a legal protection, not the condition that creates the knowledge factor.
 
-One clear counterexample under the right criterion is enough to reject the sentence.
+The statement is false.'] WHERE case_id = 'CASE 3.1.05' AND tier = 'full';
+UPDATE public.economics_cases SET tactical_explanations = ARRAY['Entrepreneurship is the organising factor that brings land, labour, and capital together and directs them toward production. That coordinating role is exactly what the factor describes.
 
-The statement is false.
-', 'FALSE — Capital covers produced means of production used in operations: machinery, plant, vehicles, stocks of parts, and financial resources committed to the process. Land as a factor covers natural resources used in production — soil, vineyards, forests, fisheries, minerals, water rights — not only fenced factory plots. Knowledge and technology count as production factors when applied to raise what the firm can produce — methods, licences, experience, and systems in services as well as manufacturing.
+The statement is true.', 'Lenders supply finance, but entrepreneurs organise production and bear business uncertainty about whether the venture succeeds. Uncertainty is not shifted entirely onto lenders.
 
-Know-how applied to production is knowledge regardless of storage medium.
+The statement is false.', 'Financial resources are capital when they fund operations or assets. Entrepreneurship is the separate function that coordinates factors and bears organisational risk; finance does not become entrepreneurship by involving decisions.
 
-Once the defining feature is restored, the assertion falls away.
+The statement is false.', 'Hiring staff adds labour, but someone still chooses who to hire, how to combine factors, and what risks to take. Those coordination and risk-bearing tasks remain entrepreneurship.
 
-The statement is false.
-', 'FALSE — Knowledge and technology count as production factors when applied to raise what the firm can produce — methods, licences, experience, and systems in services as well as manufacturing.
+The statement is false.', 'Choosing equipment allocates capital, yet the act of selecting and organising inputs is entrepreneurial. Capital allocation does not remove entrepreneurship from the picture.
 
-Applied know-how is a factor without patents.
+The statement is false.'] WHERE case_id = 'CASE 3.1.06' AND tier = 'full';
+UPDATE public.economics_cases SET tactical_explanations = ARRAY['Technology is tools, systems, and techniques applied in production. Diagnostic software licences that repair technicians use to deliver services are technology in a service setting.
 
-Those restricting words stretch a limited idea past what the definition allows.
+The statement is true.', 'Knowledge is applied know-how and experience in production. Fermentation technique used in winemaking is exactly that kind of production knowledge.
 
-The statement is false.
-', 'FALSE — Entrepreneurship organises land, labour, and capital under uncertainty. Coordinating orders, suppliers, and staffing is that organising role; buying capital or hiring labour does not erase it.
+The statement is true.', 'A repair bench is a service workplace. Technology used there to diagnose and fix equipment is still a production factor; services are not exempt from the technology factor.
 
-Initiative on tasks is still labour; coordinating the firm is entrepreneurship.
+The statement is true.', 'Technology matters wherever it is applied to produce goods or services. Limiting it to firms that manufacture hardware leaves out service uses such as diagnostic systems and software tools.
 
-The mislabelled category or reversed comparison is enough to reject the claim.
+The statement is false.', 'Storing designs on servers does not turn know-how into capital. Capital is equipment and financial resources; design know-how applied in production remains knowledge.
 
-The statement is false.
-'] WHERE case_id = 'CASE 3.1.22' AND tier = 'full';
-UPDATE public.economics_cases SET tactical_explanations = ARRAY['TRUE — Labour classification turns on whether people supply effort to production, not on contract length. Seasonal and freelance workers still count as labour while they work.
+The statement is false.'] WHERE case_id = 'CASE 3.1.07' AND tier = 'full';
+UPDATE public.economics_cases SET tactical_explanations = ARRAY['Refurbishing laptops and billing support calls draws on skills, tools, finance, and organisation together. That mix is knowledge, labour, technology, capital, and entrepreneurship combined in one service venture.
 
-All human resources in production are classified as labour.
+The statement is true.', 'Entrepreneurship organises resources and bears business uncertainty. Coordinating bookings, parts orders, and repair work is that organising function for the IT-support venture.
 
-The sentence therefore reports the concept accurately for this item.
+The statement is true.', 'Repair kits and licensed diagnostic apps are techniques and systems used to perform the service. They form the technology layer of the offer alongside labour and capital stocks.
 
-The statement is true.
-', 'TRUE — Labour classification turns on whether people supply effort to production, not on contract length. Seasonal and freelance workers still count as labour while they work.
+The statement is true.', 'Spare screens and batteries held for repairs are inventories that enable service delivery. Inventories used in operations belong to capital.
 
-On this stem (labour), the keyed answer treats the sentence as a correct application of that idea: «Seasonal pickers are volunteers outside the labour factor because pay is temporary».
+The statement is true.', 'Diagnosing faults is paid human effort in production of a repair service. Staff time on diagnosis is therefore the labour input.
 
-Under that classification the assertion describes the situation correctly.
+The statement is true.'] WHERE case_id = 'CASE 3.1.08' AND tier = 'full';
+UPDATE public.economics_cases SET tactical_explanations = ARRAY['Service firms still need premises, tools, systems, and someone to organise the offer. Labour works with capital, technology, and entrepreneurship rather than standing alone.
 
-The statement is true.
-', 'TRUE — Labour is the human-resources factor: time and skill deployed to create goods or services, whether the output is physical or intangible. Capital covers produced means of production used in operations: machinery, plant, vehicles, stocks of parts, and financial resources committed to the process. Land as a factor covers natural resources used in production — soil, vineyards, forests, fisheries, minerals, water rights — not only fenced factory plots.
+The statement is true.', 'A business exists by combining production factors to create goods, services, or both for customers. That combination is the basic production story.
 
-Processing tasks performed by workers are labour.
+The statement is true.', 'One factor may dominate in a given industry, but production still needs complementary inputs. Dominance does not cancel the need to combine other factors.
 
-The sentence therefore reports the concept accurately for this item.
+The statement is false.', 'Manufacturing and services both combine multiple factors. Services use labour with capital, technology, and coordination, not labour in isolation.
 
-The statement is true.
-', 'TRUE — Labour is the human-resources factor: time and skill deployed to create goods or services, whether the output is physical or intangible. Entrepreneurship organises land, labour, and capital under uncertainty. Coordinating orders, suppliers, and staffing is that organising role; buying capital or hiring labour does not erase it.
+The statement is false.', 'Automated lines raise the weight of capital, but people still operate, maintain, and direct the plant, and knowledge still guides processes. Automation does not wipe labour and knowledge out of manufacturing.
 
-Supervisors and pickers both deploy human resources as labour.
+The statement is false.'] WHERE case_id = 'CASE 3.1.09' AND tier = 'full';
+UPDATE public.economics_cases SET tactical_explanations = ARRAY['Oak barrels used to age wine are equipment and inventories in the production process. Assets used that way belong to capital.
 
-Nothing in the keyed reading contradicts the chapter framing used here, so the claim holds.
+The statement is true.', 'Fermentation experience is applied know-how. That knowledge sits beside land, labour, and capital in winemaking rather than replacing them.
 
-The statement is true.
-', 'FALSE — Labour classification turns on whether people supply effort to production, not on contract length. Seasonal and freelance workers still count as labour while they work.
+The statement is true.', 'Large vineyards supply natural resources (land), workers supply labour, equipment and stocks supply capital, and management organises the mix. Winemaking with substantial vineyards therefore combines those factors, including entrepreneurship.
 
-Short-term paid workers still supply labour.
+The statement is true.', 'Soil fertility is a natural-resource land input. Bottling machinery on the same property is productive equipment, so it is capital. Location on one site does not merge the two factors.
 
-Once the defining feature is restored, the assertion falls away.
+The statement is true.', 'Labour includes all human resources used in production. Seasonal staff supply labour for the harvest period just as permanent employees do year-round.
 
-The statement is false.
-'] WHERE case_id = 'CASE 3.1.23' AND tier = 'full';
-UPDATE public.economics_cases SET tactical_explanations = ARRAY['TRUE — Capital covers produced means of production used in operations: machinery, plant, vehicles, stocks of parts, and financial resources committed to the process.
+The statement is false.'] WHERE case_id = 'CASE 3.1.10' AND tier = 'full';
+UPDATE public.economics_cases SET tactical_explanations = ARRAY['Capital is the stock of resources used in production. Entrepreneurship is the separate function that organises those resources and bears business uncertainty. The two factors are not the same thing.
 
-Vehicles used for production-related delivery are capital.
+The statement is true.', 'Planning hours are human effort spent organising production. Digital storage of plans is just a recording medium; the productive content of those hours is still the people who plan.
 
-The sentence therefore reports the concept accurately for this item.
+The statement is true.', 'An owner who also repairs can supply both factors at once: task work is labour, and running the shop, coordinating suppliers, and bearing risk is entrepreneurship. One person can wear both roles.
 
-The statement is true.
-', 'TRUE — Labour is the human-resources factor: time and skill deployed to create goods or services, whether the output is physical or intangible. Capital covers produced means of production used in operations: machinery, plant, vehicles, stocks of parts, and financial resources committed to the process. Entrepreneurship organises land, labour, and capital under uncertainty. Coordinating orders, suppliers, and staffing is that organising role; buying capital or hiring labour does not erase it. Businesses combine several factors; one may dominate by industry, but dominance does not delete the others. Services still use capital and organisation; automation still leaves oversight and entrepreneurship.
+The statement is true.', 'Founder work that lines up suppliers and staff is organising production factors. That coordination is entrepreneurship and stays distinct from the physical or routine task work labelled labour.
 
-Distribution integrates vehicles, drivers, and management.
+The statement is true.', 'Risk-bearing and organising resources is the entrepreneurial function. Hours spent on that work do not turn uncertainty-bearing into labour merely because time is used.
 
-The sentence therefore reports the concept accurately for this item.
+The statement is false.'] WHERE case_id = 'CASE 3.1.11' AND tier = 'full';
+UPDATE public.economics_cases SET tactical_explanations = ARRAY['Capital is productive equipment used in operations. A leased bottling line is still that equipment for the winery while it runs, so lease status does not remove it from capital.
 
-The statement is true.
-', 'FALSE — Capital is defined by productive use of produced means of production (and operating finance), not by ownership title. Leased or hire-purchase equipment still functions as capital while in use.
+The statement is true.', 'Warehouse robots used in picking and packing are machinery in distribution. Leased or owned, they remain capital beside any manual pickers.
 
-Leased vehicles used in operations are capital.
+The statement is true.', 'Renting the building does not reclassify tools installed or used inside it. Those tools stay capital when they support production or distribution.
 
-Once the defining feature is restored, the assertion falls away.
+The statement is false.', 'Hire-purchase is a financing path for equipment. Machines standing in a workshop are capital assets used in production, not land.
 
-The statement is false.
-', 'FALSE — Capital covers produced means of production used in operations: machinery, plant, vehicles, stocks of parts, and financial resources committed to the process.
+The statement is false.', 'Outdoor use does not turn machinery into land. Leased harvesters remain capital; land is the natural resource or site, not the machine that works on it.
 
-Human operators are labour; vehicles remain capital.
+The statement is false.'] WHERE case_id = 'CASE 3.1.12' AND tier = 'full';
+UPDATE public.economics_cases SET tactical_explanations = ARRAY['Crew members running chainsaws and harvesters apply human effort to extraction. That human input is labour.
 
-Once the defining feature is restored, the assertion falls away.
+The statement is true.', 'Supervision can include scheduling crews, haulage, and timing access before winter. Those organising choices are entrepreneurship, so supervision is not locked forever into labour alone.
 
-The statement is false.
-', 'FALSE — Land as a factor covers natural resources used in production — soil, vineyards, forests, fisheries, minerals, water rights — not only fenced factory plots.
+The statement is false.', 'Trees are a land-based natural resource, but logging still needs workers, machines, and someone to coordinate the cut. Land alone does not extract timber.
 
-Fuel consumed in operations is an operating cost tied to capital use.
+The statement is false.', 'Harvesters are machinery used to fell timber. Operating on forest terrain does not make the machines land; they remain capital.
 
-The mislabelled category or reversed comparison is enough to reject the claim.
+The statement is false.', 'Standing forests stay in the land factor as natural resources. Cutting with harvesters does not convert the forest into capital; the harvesters themselves are the capital.
 
-The statement is false.
-'] WHERE case_id = 'CASE 3.1.24' AND tier = 'full';
-UPDATE public.economics_cases SET tactical_explanations = ARRAY['TRUE — Capital is defined by productive use of produced means of production (and operating finance), not by ownership title. Leased or hire-purchase equipment still functions as capital while in use. Knowledge and technology count as production factors when applied to raise what the firm can produce — methods, licences, experience, and systems in services as well as manufacturing.
+The statement is false.'] WHERE case_id = 'CASE 3.1.13' AND tier = 'full';
+UPDATE public.economics_cases SET tactical_explanations = ARRAY['Working capital that funds payroll between invoices is finance applied to keep production running. That financial resource is part of capital.
 
-Facilities and tools used to deliver services are capital and technology.
+The statement is true.', 'Borrowed funds used to buy diagnostic tools are finance committed to productive assets. Finance used that way is capital applied to production.
 
-In the case setting — an Innsbruck coaching studio rents studio space and pays freelance trainers each month — that reading fits the facts given.
+The statement is true.', 'Capital covers both physical equipment and the financial resources used in operations. The factor is not limited to machines alone.
 
-Nothing in the keyed reading contradicts the chapter framing used here, so the claim holds.
+The statement is true.', 'Share capital is one financing form, not the whole capital factor. Manufacturers also use equipment, inventories, and other financial resources in production.
 
-The statement is true.
-', 'TRUE — Labour is the human-resources factor: time and skill deployed to create goods or services, whether the output is physical or intangible. Entrepreneurship organises land, labour, and capital under uncertainty. Coordinating orders, suppliers, and staffing is that organising role; buying capital or hiring labour does not erase it. Businesses combine several factors; one may dominate by industry, but dominance does not delete the others. Services still use capital and organisation; automation still leaves oversight and entrepreneurship.
+The statement is false.', 'Cash held for operations is a financial capital resource. Storage on the premises does not turn emergency cash into land.
 
-Service delivery integrates multiple factors.
+The statement is false.'] WHERE case_id = 'CASE 3.1.14' AND tier = 'full';
+UPDATE public.economics_cases SET tactical_explanations = ARRAY['Labour is human resources used to produce goods or services. Service staff apply that effort when they handle clients, claims, or coaching, so they sit inside labour with other paid roles.
 
-In the case setting — an Innsbruck coaching studio rents studio space and pays freelance trainers each month — that reading fits the facts given.
+The statement is true.', 'Technical support staff troubleshooting home networks apply human effort to a service. That work is labour in a knowledge-intensive setting.
 
-Under that classification the assertion describes the situation correctly.
+The statement is true.', 'Freelance trainers still supply human resources when they deliver coaching for the studio. Contract form does not remove them from labour while they produce the service.
 
-The statement is true.
-', 'TRUE — Labour classification turns on whether people supply effort to production, not on contract length. Seasonal and freelance workers still count as labour while they work.
+The statement is true.', 'Installing software for a client uses skilled human effort. Those human skills are labour in service production.
 
-Trainers provide human resources classified as labour.
+The statement is true.', 'Labour covers specialists and general staff alike whenever human resources are deployed in production. Skill level does not create a separate factor outside labour.
 
-The scenario (an Innsbruck coaching studio rents studio space and pays freelance trainers each month) supports that classification.
+The statement is true.'] WHERE case_id = 'CASE 3.1.15' AND tier = 'full';
+UPDATE public.economics_cases SET tactical_explanations = ARRAY['Fabric bought for client orders is a material input. Tailoring combines those materials with labour (apprentices and the tailor) and capital (sewing machines), not materials alone.
 
-Under that classification the assertion describes the situation correctly.
+The statement is true.', 'Selecting machines and scheduling orders organises inputs and timing for the workshop. That organising role is entrepreneurship.
 
-The statement is true.
-', 'FALSE — Labour is the human-resources factor: time and skill deployed to create goods or services, whether the output is physical or intangible.
+The statement is true.', 'Apprentices who cut patterns and stitch garments supply human effort to garment production. That effort is labour.
 
-Organising offerings and bookings is entrepreneurship.
+The statement is true.', 'Designs in the tailor''s head are knowledge, but the workshop still needs machines, fabric, and coordination. Labour alone does not produce finished garments.
 
-In the case setting — an Innsbruck coaching studio rents studio space and pays freelance trainers each month — the sentence mislabels the category or overreaches.
+The statement is false.', 'Hire-purchase machines occupy space, yet they are productive equipment. Workshop floor space does not reclassify sewing machines as land.
 
-Once the defining feature is restored, the assertion falls away.
+The statement is false.'] WHERE case_id = 'CASE 3.1.16' AND tier = 'full';
+UPDATE public.economics_cases SET tactical_explanations = ARRAY['Clean-room tools and testing gear are manufacturing equipment. In secondary production those assets are capital.
 
-The statement is false.
-', 'FALSE — Labour classification turns on whether people supply effort to production, not on contract length. Seasonal and freelance workers still count as labour while they work. Entrepreneurship organises land, labour, and capital under uncertainty. Coordinating orders, suppliers, and staffing is that organising role; buying capital or hiring labour does not erase it.
+The statement is true.', 'Engineering teams that monitor batches apply skilled human effort to the process. That inspection and engineering work is skilled labour.
 
-Organisers still provide entrepreneurship alongside contractor labour.
+The statement is true.', 'Fabrication needs people, materials, and machines together. Labour and materials sit beside capital equipment rather than being optional extras.
 
-In the case setting — an Innsbruck coaching studio rents studio space and pays freelance trainers each month — the sentence mislabels the category or overreaches.
+The statement is true.', 'A components manufacturer runs a workforce, buys materials, uses equipment, and needs direction of the whole mix. That combination is labour, materials, capital, and entrepreneurship.
 
-The mislabelled category or reversed comparison is enough to reject the claim.
+The statement is true.', 'Process specifications applied on the line are technical know-how used in production. That applied knowledge is a production factor.
 
-The statement is false.
-'] WHERE case_id = 'CASE 3.1.25' AND tier = 'full';
+The statement is true.'] WHERE case_id = 'CASE 3.1.17' AND tier = 'full';
+UPDATE public.economics_cases SET tactical_explanations = ARRAY['Screen replacement uses technician effort (labour), spare parts stock (capital), and often diagnostic software or tools (technology). The job combines those factors rather than relying on one alone.
+
+The statement is true.', 'A refurbished-laptop workshop needs tools and spares plus cash to fund stock and operations. Those are capital and technology resources working with labour in the service.
+
+The statement is true.', 'Tools raise the capital and technology content of repairs, but technicians still supply labour and diagnostic systems still supply technology. Tools do not make the job capital-only.
+
+The statement is false.', 'Intangible services still use software, diagnostic apps, and other techniques. Technology remains a factor when it is applied to deliver the service.
+
+The statement is false.', 'Licences used to run diagnostic or repair software are production technology for the workshop. Calling them consumer subscriptions misses their role as tools of service delivery.
+
+The statement is false.'] WHERE case_id = 'CASE 3.1.18' AND tier = 'full';
+UPDATE public.economics_cases SET tactical_explanations = ARRAY['Knowledge-intensive startups often weight skills and technology heavily and use little land. Factor mixes can lean that way without dropping the other inputs entirely.
+
+The statement is true.', 'Heavy capital in manufacturing still needs someone to organise plant, materials, and schedules. Entrepreneurship continues to coordinate production in capital-weighted settings.
+
+The statement is true.', 'Farming uses land intensively, but it still needs workers, equipment, and management. Land dominance does not mean labour, capital, and entrepreneurship disappear.
+
+The statement is true.', 'Industries emphasise different factors, yet viable firms still combine several inputs. Dominant mix and multi-factor combination can both be true.
+
+The statement is true.', 'Automation raises capital intensity, but plants still need operators, maintenance staff, and managerial coordination. Labour and entrepreneurship are reduced in weight, not removed entirely.
+
+The statement is false.'] WHERE case_id = 'CASE 3.1.19' AND tier = 'full';
+UPDATE public.economics_cases SET tactical_explanations = ARRAY['Claims handlers learning and using the new case system apply human effort to insurance services. Training and processing work is labour in the branch.
+
+The statement is true.', 'Calendars are tools; people schedule the training. Managers who plan staff time deploy labour and often entrepreneurship, not an impersonal calendar acting as labour.
+
+The statement is false.', 'Premises may involve a land or property element, but operational computers are equipment used to deliver the service. Those computers are capital, not land by location alone.
+
+The statement is false.', 'Insurance software is a technology input used to process claims. The tertiary sector is the service activity itself; the software is a factor inside that activity, not the sector label.
+
+The statement is false.', 'Policies are intangible, yet the office still needs systems, premises, finance, and coordination. Intangibility does not reduce insurance to labour alone.
+
+The statement is false.'] WHERE case_id = 'CASE 3.1.20' AND tier = 'full';
+UPDATE public.economics_cases SET tactical_explanations = ARRAY['Choosing and approving tank upgrades organises capital investment for higher volumes. That strategic coordination is entrepreneurship at the co-op board.
+
+The statement is true.', 'Member milk comes from farms that use agricultural land and primary production. Upstream dairy supply therefore links the co-op to land-based primary activity.
+
+The statement is true.', 'Processing milk at the co-op uses workers, tanks and plant, and management, while the milk itself traces back to land-based farming. The plant combines labour, capital, and coordination with those upstream land inputs.
+
+The statement is true.', 'Cooling tanks and pasteurisers are processing machinery. Installed equipment of that kind is capital at the co-op.
+
+The statement is true.', 'Operators who watch pasteurisation and tank levels supply human effort to processing. That monitoring work is labour.
+
+The statement is true.'] WHERE case_id = 'CASE 3.1.21' AND tier = 'full';
+UPDATE public.economics_cases SET tactical_explanations = ARRAY['Customer training on new releases uses trainers'' effort, product know-how, and the software or systems being taught. Labour, knowledge, and technology therefore appear together.
+
+The statement is true.', 'A software-related service still needs know-how and tools, not entrepreneurship in isolation. Coordination alone without knowledge or technology does not describe the production mix.
+
+The statement is false.', 'Design stored on servers is still applied know-how. The storage medium does not turn knowledge into capital equipment.
+
+The statement is false.', 'Applied know-how is a production factor when it is used, with or without a patent. Formal registration is optional protection, not the switch that creates the knowledge factor.
+
+The statement is false.', 'Coding skill is skilled labour: human resources applied to writing software. Initiative on tasks does not by itself make the programmer''s work entrepreneurship; entrepreneurship organises the firm and bears its uncertainty.
+
+The statement is false.'] WHERE case_id = 'CASE 3.1.22' AND tier = 'full';
+UPDATE public.economics_cases SET tactical_explanations = ARRAY['A cellar master and seasonal pickers both supply human resources to the winery. Permanent or seasonal status does not change the labour classification.
+
+The statement is true.', 'Seasonal pickers who receive pay for harvest weeks supply human resources for production. Temporary contracts change how long they work, not whether that effort is labour.
+
+The statement is true.', 'Bottling is processing work performed by people during harvest. That human effort is labour used beside land and capital inputs.
+
+The statement is true.', 'Pickers and field supervisors both deploy human resources. Supervisory effort in the harvest remains labour when it is task work within production.
+
+The statement is true.', 'Short-term contracts change duration, not factor class. Paid pickers on seasonal contracts still supply labour.
+
+The statement is false.'] WHERE case_id = 'CASE 3.1.23' AND tier = 'full';
+UPDATE public.economics_cases SET tactical_explanations = ARRAY['Delivery vans that ship finished boards are vehicles used in production-related distribution. Those vehicles are capital in the logistics stage.
+
+The statement is true.', 'Logistics needs vans or trucks, drivers, and someone to organise routes and loads. Capital equipment therefore works with labour and coordination.
+
+The statement is true.', 'Leased trucks used in operations are still productive equipment. Lack of ownership does not remove them from capital.
+
+The statement is false.', 'Drivers supply human effort; that is labour. The vehicles they operate remain capital. Operating a machine does not turn the operator into capital.
+
+The statement is false.', 'Fuel is an operating input consumed when capital equipment runs. Natural origin does not place fuel in the land factor the way unextracted deposits or sites are land.
+
+The statement is false.'] WHERE case_id = 'CASE 3.1.24' AND tier = 'full';
+UPDATE public.economics_cases SET tactical_explanations = ARRAY['Rented studio space is a facility used to deliver coaching, and booking systems are tools for running the service. Together they supply capital and technology supporting the offer.
+
+The statement is true.', 'Coaching sessions use trainers, premises, booking tools, and an owner who organises the studio. Labour therefore sits with capital, technology, and entrepreneurship.
+
+The statement is true.', 'Freelance trainers deliver the sessions as human resources for the studio. Their contractor status does not remove that effort from labour.
+
+The statement is true.', 'Marketing the courses is organising and promoting the studio''s offer. That work belongs to the owner or staff as entrepreneurship and labour, not to customers.
+
+The statement is false.', 'Freelancers supply labour for sessions, but someone still sets the offer, rents space, and bears the studio''s risk. Entrepreneurship remains with the organisers beside contractor labour.
+
+The statement is false.'] WHERE case_id = 'CASE 3.1.25' AND tier = 'full';

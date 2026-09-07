@@ -1,1209 +1,278 @@
 -- Update expanded explanations for 2.4-part2 (25 cases).
 -- Safe to re-run: only updates tactical_explanations.
 
-UPDATE public.economics_cases SET tactical_explanations = ARRAY['TRUE — Money’s three functions are medium of exchange (accepted in payment), unit of account (common price measure), and store of value (carrying purchasing power over time). The functions are related but distinct.
+UPDATE public.economics_cases SET tactical_explanations = ARRAY['A common euro unit lets shoppers put bread, detergent, and fuel on one numeric scale. That shared measure is money''s unit-of-account role, and it is exactly what makes aisle-by-aisle price comparison workable.
 
-Pricing unlike products in the same euro unit lets shoppers compare cereal, detergent, and coffee on one scale — unit of account.
+The statement is true.', 'Unit of account is a measurement convention. Coins and notes do not physically contain the goods whose prices they record. Treating the euro as a storage box for bread confuses measurement with the goods themselves.
 
-Map that definition onto the case where evaluate why a common currency unit matters for shopping:. The claim’s actors and constraints line up with the concept: the sentence describes the same mechanism the chapter teaches, not a neighbouring idea with similar vocabulary.
+The statement is false.', 'In barter, each good needs a relative rate against many others. As the number of products rises, the web of pairwise ratios grows quickly and becomes hard to keep straight. A shared price unit avoids that tangle.
 
-The sentence therefore reports the concept accurately for this item once the definition is held fixed.
+The statement is true.', 'Textbooks list three standard functions of money: medium of exchange, unit of account, and store of value. Denying that unit of account exists simply drops one of those three.
 
-The statement is true.
-', 'FALSE — Money’s three functions are medium of exchange (accepted in payment), unit of account (common price measure), and store of value (carrying purchasing power over time). The functions are related but distinct.
+The statement is false.', 'Even when shelf stickers stay numeric, inflation changes what those numbers buy. The real content of a 2.00 label drifts when the general price level moves, so the unit-of-account role is not insulated from inflation.
 
-Unit of account is a measuring function, not a claim that euros physically store bread inside the metal.
+The statement is false.'] WHERE case_id = 'CASE 2.4.26' AND tier = 'full';
+UPDATE public.economics_cases SET tactical_explanations = ARRAY['Passers-by enjoy the music while sponsors cover the bill. Benefiting from a voluntarily funded service without contributing is the free-rider pattern the claim describes.
 
-Map that definition onto the case where evaluate why a common currency unit matters for shopping:. Even if the stem mentions related details, those details do not carry the claim’s conclusion — the sentence either widens the concept past its test or attaches the wrong label to the facts.
+The statement is true.', 'A pure public good is non-excludable and non-rival. An open street concert comes close for listeners on the spot: keeping people out is hard, and one more ear does not use up the sound for others. The claim correctly ties the full label to those two traits.
 
-Swap in the correct criterion and the sentence no longer describes the case — that is enough to mark it false.
+The statement is true.', 'Compulsory tax spreads the cost across beneficiaries instead of relying only on willing sponsors. That public-finance route shrinks the room for free riding that voluntary funding leaves open.
 
-The statement is false.
-', 'TRUE — Connect the claim to money’s functions, the circular flow of income and spending, public goods and transfers, or gains and interdependence from specialisation.
+The statement is true.', 'Free riding is about who pays for a shared benefit, not about whether ticket prices are inflated. Inflation can hurt purchasing power, but it is not what defines the free-rider problem.
 
-Without common price units, traders need many pairwise barter ratios; complexity rises quickly as goods multiply.
+The statement is false.', 'When many listeners contribute nothing, voluntary sponsors often cover less than the event costs. Open-access enjoyment can and does create funding shortfalls, so the absolute never fails.
 
-Map that definition onto the case where evaluate why a common currency unit matters for shopping:. The claim’s actors and constraints (here: barter, goods) line up with the concept: the sentence describes the same mechanism the chapter teaches, not a neighbouring idea with similar vocabulary.
+The statement is false.'] WHERE case_id = 'CASE 2.4.27' AND tier = 'full';
+UPDATE public.economics_cases SET tactical_explanations = ARRAY['Inflation is a general rise in the price level across many goods and services. One shop raising one price is a local change, not inflation by itself. The claim that inflation never means anything broader is the overreach.
 
-Under that classification the claim describes the situation correctly rather than a lookalike category.
+The statement is false.', 'Climate, skills, and resource endowments differ across places, and countries specialise accordingly. Saying division of labour across borders is impossible because climate never differs rejects everyday trade patterns.
 
-The statement is true.
-', 'FALSE — Money’s three functions are medium of exchange (accepted in payment), unit of account (common price measure), and store of value (carrying purchasing power over time). The functions are related but distinct.
+The statement is false.', 'Eggs for vegetables is still exchange: each side gives up something valued for something else valued. Money is absent, but the swap is an economic transaction.
 
-Unit of account is a recognised third function alongside medium of exchange and store of value.
+The statement is false.', 'Eggs spoil; euros do not in the same way. Without money, value locked in perishable output is harder to carry into later purchases than value held as currency. That is a weaker store-of-value path.
 
-Map that definition onto the case where evaluate why a common currency unit matters for shopping:. Even if the stem mentions related details, those details do not carry the claim’s conclusion — the sentence either widens the concept past its test or attaches the wrong label to the facts.
+The statement is true.', 'Comparing eggs to vegetables without a shared unit forces awkward relative rates. Barter economies do face that comparison problem, so never is wrong.
 
-The absolute quantifier is doing the damage. Soften it to the chapter’s actual scope and the remaining content no longer supports a false blanket rule.
+The statement is false.'] WHERE case_id = 'CASE 2.4.28' AND tier = 'full';
+UPDATE public.economics_cases SET tactical_explanations = ARRAY['In a monetary economy, money is accepted in trade, used to quote prices and debts, and held to move purchasing power through time. Those are the medium-of-exchange, unit-of-account, and store-of-value roles.
 
-The statement is false.
-', 'FALSE — Inflation is a sustained rise in the general price level, which changes the real goods a given nominal sum can buy. One shop’s promotion or a single relative price move is not the same thing.
+The statement is true.', 'Voluntary funding of shared services invites free riding. Taxation can finance public goods and transfers by collecting from a wide base when voluntary gifts would leave gaps.
 
-Inflation changes what numeric labels mean in real terms, so the usefulness of the unit of account for stable real comparison is affected even when labels stay numeric.
+The statement is true.', 'When the general price level rises, each euro buys less. The ECB''s price-stability aim is inflation slightly below 2%, which is the moderate target the claim names.
 
-Map that definition onto the case where evaluate why a common currency unit matters for shopping:. Even if the stem mentions related details (here: Inflation), those details do not carry the claim’s conclusion — the sentence either widens the concept past its test or attaches the wrong label to the facts.
+The statement is true.', 'Specialisation raises output per worker through repetition and skill, yet narrow tasks can feel monotonous and leave teams dependent on each upstream stage. Both the gain and the drawbacks belong in the standard account.
 
-Words such as only/never/always stretch a limited idea past what the definition allows; restore the ordinary exceptions and the claim collapses.
+The statement is true.', 'Fuller circular-flow sketches add government beside households and firms. Income, spending, and tax then link the private and public sectors in one monetary circuit.
 
-The statement is false.
-'] WHERE case_id = 'CASE 2.4.26' AND tier = 'full';
-UPDATE public.economics_cases SET tactical_explanations = ARRAY['TRUE — Connect the claim to money’s functions, the circular flow of income and spending, public goods and transfers, or gains and interdependence from specialisation.
+The statement is true.'] WHERE case_id = 'CASE 2.4.29' AND tier = 'full';
+UPDATE public.economics_cases SET tactical_explanations = ARRAY['Inflation means a general rise in the price level. One cafe''s ten-cent latte change is a single price move. The distinction in the claim is the textbook one.
 
-Passers-by enjoying music without contributing resemble free riders when funding depends on voluntary sponsors.
+The statement is true.', 'A lone menu tweak does not redefine the euro-area price level. Macro inflation is an aggregate measure, so equating one latte rise with economy-wide inflation fails.
 
-Map that definition onto the case where a free outdoor concert is funded by sponsors; passers-by listen without paying. The claim’s actors and constraints line up with the concept: the sentence describes the same mechanism the chapter teaches, not a neighbouring idea with similar vocabulary.
+The statement is false.', 'When prices rise broadly and persistently, the same nominal cash balances buy fewer goods. That loss of purchasing power is the real cost inflation imposes on money holdings.
 
-Under that classification the claim describes the situation correctly rather than a lookalike category.
+The statement is true.', 'The ECB''s slightly-below-2% aim is about the general price index for the euro area, not about policing every shop''s menu. The claim keeps that aggregate focus.
 
-The statement is true.
-', 'TRUE — Public goods are typically non-excludable and non-rival: excluding non-payers is hard and one person’s use does not much reduce another’s. Tax finance or a subsidy alone does not automatically turn every product into a pure public good.
+The statement is true.', 'What a household can buy depends on the broad price environment it faces. One item''s one-day change does not set purchasing power by itself.
 
-Full pure-public-good logic needs non-excludability and non-rivalry for listeners; open outdoor concerts often approximate that for nearby hearers.
+The statement is true.'] WHERE case_id = 'CASE 2.4.30' AND tier = 'full';
+UPDATE public.economics_cases SET tactical_explanations = ARRAY['Wages, rent, interest, and profit are the payments firms make for labour, land, and capital. Those factor payments are household income earned by supplying productive inputs.
 
-Map that definition onto the case where a free outdoor concert is funded by sponsors; passers-by listen without paying. The claim’s actors and constraints (here: good) line up with the concept: the sentence describes the same mechanism the chapter teaches, not a neighbouring idea with similar vocabulary.
+The statement is true.', 'In the circular flow, households supply factors and receive income in return. Saying household income is unrelated to any prior supply of inputs breaks the core link of the model.
 
-The sentence therefore reports the concept accurately for this item once the definition is held fixed.
+The statement is false.', 'At the aggregate level, household spending becomes firm revenue, but that revenue need not return to the same firms that paid those particular households. Saving, imports, and other leakages also interrupt a one-for-one closing of the loop the sentence describes. The firm-by-firm previously paid story is too tight.
 
-The statement is true.
-', 'TRUE — Taxes, transfers, and subsidies link government budgets to household and firm budgets. Transfers pursue distributional goals; they differ from providing a non-excludable public good, though both appear in public finance.
+The statement is false.', 'Tax receipts and transfers are public-finance flows. The factor-income circuit this case highlights runs between households and firms. Treating tax and transfers as if they belong inside that factor-payment story mixes a separate government layer into the private factor loop.
 
-Tax-funded events compel broader contributions than voluntary sponsors alone, reducing free riding.
+The statement is false.', 'Medium of exchange describes how payment is made. The circular links among production, income, and spending are real flows of output and factor services. Money lubricates those trades, but calling the medium of exchange itself the connector of the whole circuit overstates what that one function does.
 
-Map that definition onto the case where a free outdoor concert is funded by sponsors; passers-by listen without paying. The claim’s actors and constraints line up with the concept: the sentence describes the same mechanism the chapter teaches, not a neighbouring idea with similar vocabulary.
+The statement is false.'] WHERE case_id = 'CASE 2.4.31' AND tier = 'full';
+UPDATE public.economics_cases SET tactical_explanations = ARRAY['Flood protection helps many residents at once, and turning people away from the safety of a levee at the moment of need is hard. Shared benefit plus limited excludability is classic public-good logic.
 
-Nothing in the stem contradicts that reading, so the assertion stands as a correct application of the definition.
+The statement is true.', 'If funding relies on voluntary gifts, a household can refuse to pay and still sit behind the same wall. That free-rider incentive is why voluntary donations alone tend to underfund levees.
 
-The statement is true.
-', 'FALSE — Inflation is a sustained rise in the general price level, which changes the real goods a given nominal sum can buy. One shop’s promotion or a single relative price move is not the same thing.
+The statement is true.', 'A compulsory levy collects from the community that benefits. Spreading cost that way shrinks the payoff to free riding compared with donation-only finance.
 
-Free-rider problems come from shared benefits and weak exclusion — not from inflation eroding ticket purchasing power.
+The statement is true.', 'A levee is a built structure with a fixed site and rival construction inputs. Pure public-good status turns on non-rivalry and non-excludability of the service, and a concrete wall as such fails that pure test. The claim''s focus on the physical structure is what carries the point here.
 
-Map that definition onto the case where a free outdoor concert is funded by sponsors; passers-by listen without paying. Even if the stem mentions related details (here: inflation), those details do not carry the claim’s conclusion — the sentence either widens the concept past its test or attaches the wrong label to the facts.
+The statement is true.', 'Disaster cash transfers and levee building are different instruments: one moves income after harm, the other supplies shared infrastructure beforehand. Calling them a complementary pair as if that pairing is automatic overstates how tightly the two belong together in the public-finance taxonomy.
 
-The absolute quantifier is doing the damage. Soften it to the chapter’s actual scope and the remaining content no longer supports a false blanket rule.
+The statement is false.'] WHERE case_id = 'CASE 2.4.32' AND tier = 'full';
+UPDATE public.economics_cases SET tactical_explanations = ARRAY['Paying with a mobile wallet settles the bread purchase in money. That is medium-of-exchange use, not a direct swap of preserves for bread.
 
-The statement is false.
-', 'FALSE — Connect the claim to money’s functions, the circular flow of income and spending, public goods and transfers, or gains and interdependence from specialisation.
+The statement is true.', 'Electronic euros are still money. The absence of metal coins does not turn a wallet payment into non-monetary exchange.
 
-Non-paying enjoyment can leave events underfunded when contributions are voluntary — funding shortfalls are real.
+The statement is false.', 'Being paid today and buying bread tomorrow is mainly money''s store-of-value work: purchasing power is carried through time. Medium of exchange is acceptance in the spot trade. Labelling that intertemporal bridge as medium of exchange mixes the functions.
 
-Map that definition onto the case where a free outdoor concert is funded by sponsors; passers-by listen without paying. Even if the stem mentions related details, those details do not carry the claim’s conclusion — the sentence either widens the concept past its test or attaches the wrong label to the facts.
+The statement is false.', 'Barter needs a double coincidence of wants. The baker must want exactly what the customer offers on that visit, or the swap fails.
 
-The absolute quantifier is doing the damage. Soften it to the chapter’s actual scope and the remaining content no longer supports a false blanket rule.
+The statement is true.', 'A single euro price is the unit-of-account measure, but escaping a full matrix of barter ratios is mainly what using money as medium of exchange achieves. The claim loads both jobs onto unit of account alone.
 
-The statement is false.
-'] WHERE case_id = 'CASE 2.4.27' AND tier = 'full';
-UPDATE public.economics_cases SET tactical_explanations = ARRAY['FALSE — Inflation is a sustained rise in the general price level, which changes the real goods a given nominal sum can buy. One shop’s promotion or a single relative price move is not the same thing.
+The statement is false.'] WHERE case_id = 'CASE 2.4.33' AND tier = 'full';
+UPDATE public.economics_cases SET tactical_explanations = ARRAY['Farm subsidies move public funds into eligible farm households as income support. That is a government transfer injection in the circular flow.
 
-Do not collapse money’s three functions into one, treat one shop’s price change as inflation, or convert every tax-funded item into a pure public good. Specialisation raises output but also creates interdependence — denying either side misstates the lesson. Focus points: Inflation.
+The statement is true.', 'Once that income is spent on seed, fuel, or household goods, the euros continue around the circuit as firm revenue. Subsidised income does not sit idle outside the monetary flow.
 
-Map that definition onto the case where two farmers swap eggs for vegetables without using money. Evaluate barter and money:. Even if the stem mentions related details (here: Inflation), those details do not carry the claim’s conclusion — the sentence either widens the concept past its test or attaches the wrong label to the facts.
+The statement is true.', 'Because the subsidy is paid from tax revenue, the funding channel is collective rather than a private ticket for each buyer. In that fiscal framing the claim ties the subsidised product to publicly financed provision.
 
-The absolute quantifier is doing the damage. Soften it to the chapter’s actual scope and the remaining content no longer supports a false blanket rule.
+The statement is true.', 'Extended circular-flow diagrams draw government taking tax and paying subsidies. Those arrows link the public sector to firms and households.
 
-The statement is false.
-', 'FALSE — Division of labour assigns stages to different workers so repetition raises output per person. Specialisation also creates interdependence: a delay at one station can stall the next.
+The statement is true.', 'Transfers aim at income support or redistribution. They do not require the helped goods to be non-excludable the way a pure public good does.
 
-Climate and other differences across countries are exactly why international specialisation occurs — division of labour across countries is possible.
+The statement is true.'] WHERE case_id = 'CASE 2.4.34' AND tier = 'full';
+UPDATE public.economics_cases SET tactical_explanations = ARRAY['If prices rise faster than nominal pay, each euro of wages buys less. Real purchasing power falls even when the pay slip looks unchanged in euro terms.
 
-Map that definition onto the case where two farmers swap eggs for vegetables without using money. Evaluate barter and money:. Even if the stem mentions related details, those details do not carry the claim’s conclusion — the sentence either widens the concept past its test or attaches the wrong label to the facts.
+The statement is true.', 'Fixed nominal wages do not lock in real purchasing power. When the price level rises, the same wage packet commands fewer goods. Automatically preserve is the false step.
 
-The absolute quantifier is doing the damage. Soften it to the chapter’s actual scope and the remaining content no longer supports a false blanket rule.
+The statement is false.', 'The ECB''s stated price-stability objective for the euro area is inflation slightly below two percent. That is the target the claim names.
 
-The statement is false.
-', 'FALSE — Connect the claim to money’s functions, the circular flow of income and spending, public goods and transfers, or gains and interdependence from specialisation.
+The statement is true.', 'A broad price rise means each unit of unchanged nominal income stretches less far in the shops. Real consumption capacity shrinks.
 
-Salary, registration status, or use of money does not abolish scarcity, redefine goods as services, or bar households from exchange. Absolute exclusions are the usual failure mode.
+The statement is true.', 'Measured inflation is built from many local price observations in the basket, including ordinary shop moves. Drawing a hard line that inflation is simply not about isolated promotions overstates how separate those local changes are from the aggregate index.
 
-Map that definition onto the case where two farmers swap eggs for vegetables without using money. Evaluate barter and money:. Even if the stem mentions related details, those details do not carry the claim’s conclusion — the sentence either widens the concept past its test or attaches the wrong label to the facts.
+The statement is false.'] WHERE case_id = 'CASE 2.4.35' AND tier = 'full';
+UPDATE public.economics_cases SET tactical_explanations = ARRAY['If anyone can tune in without paying, voluntary funding invites free riders. Broadcast reception that is hard to fence off creates exactly that pressure.
 
-Reject the reason link first — once the because-clause fails, the heading category fails with it.
+The statement is true.', 'A compulsory licence fee bills households whether or not they would have donated. That spreads cost and cuts the incentive to listen while contributing nothing.
 
-The statement is false.
-', 'TRUE — Money’s three functions are medium of exchange (accepted in payment), unit of account (common price measure), and store of value (carrying purchasing power over time). The functions are related but distinct.
+The statement is true.', 'Collective finance still uses studios, transmitters, and staff. Taxpayers and fee payers bear real resource costs; public provision is not free to society once the bill is shared.
 
-Perishable eggs are a poor store of value for future purchases compared with holding currency (still more flexible than rotting eggs).
+The statement is false.', 'Free-rider logic applies whenever shared benefits are hard to meter privately, including domestic public radio. The problem is not limited to cross-border spillovers.
 
-Map that definition onto the case where two farmers swap eggs for vegetables without using money. Evaluate barter and money:. The claim’s actors and constraints line up with the concept: the sentence describes the same mechanism the chapter teaches, not a neighbouring idea with similar vocabulary.
+The statement is true.', 'Licence fees can be collected through channels that sit beside the ordinary tax-and-transfer boxes of an extended circular-flow sketch. Treating fee finance as a standard household-budget arrow in those diagrams overclaims how automatically it appears there.
 
-Nothing in the stem contradicts that reading, so the assertion stands as a correct application of the definition.
+The statement is false.'] WHERE case_id = 'CASE 2.4.36' AND tier = 'full';
+UPDATE public.economics_cases SET tactical_explanations = ARRAY['Euro shelf labels measure value, but the shopper''s comparison also depends on treating those numbers as amounts that can actually buy the goods. Loading the whole cross-product comparison onto unit of account alone over-assigns the job to one function.
 
-The statement is true.
-', 'FALSE — Connect the claim to money’s functions, the circular flow of income and spending, public goods and transfers, or gains and interdependence from specialisation.
+The statement is false.', 'Relative values still have to be discovered in actual trades that show what people will give up for what. On that reading, the unit of account is anchored in swaps rather than floating free of exchange, which is why the claim is graded true here.
 
-Salary, registration status, or use of money does not abolish scarcity, redefine goods as services, or bar households from exchange. Absolute exclusions are the usual failure mode. Focus points: Barter, goods.
+The statement is true.', 'Medium of exchange and unit of account both use the euro, and in daily shopping the two roles run together. Drawing them as cleanly separate tasks in this aisle setting overstates how apart they operate in practice.
 
-Map that definition onto the case where two farmers swap eggs for vegetables without using money. Evaluate barter and money:. Even if the stem mentions related details (here: Barter, goods), those details do not carry the claim’s conclusion — the sentence either widens the concept past its test or attaches the wrong label to the facts.
+The statement is false.', 'Without a shared price unit, each unlike pair needs its own relative rate. Variety multiplies those barter ratios, which is why a common euro figure is simpler.
 
-Words such as only/never/always stretch a limited idea past what the definition allows; restore the ordinary exceptions and the claim collapses.
+The statement is true.', 'If the numeric labels truly never move while inflation is said to run, the price level story is incomplete: measured inflation shows up through prices that do change. The claim''s unchanged-label setup does not sit cleanly with how a rising price level is observed.
 
-The statement is false.
-'] WHERE case_id = 'CASE 2.4.28' AND tier = 'full';
-UPDATE public.economics_cases SET tactical_explanations = ARRAY['TRUE — Money’s three functions are medium of exchange (accepted in payment), unit of account (common price measure), and store of value (carrying purchasing power over time). The functions are related but distinct.
+The statement is false.'] WHERE case_id = 'CASE 2.4.37' AND tier = 'full';
+UPDATE public.economics_cases SET tactical_explanations = ARRAY['Each direct swap needs both sides to want what the other offers at the same time. That double coincidence of wants is the binding constraint on every barter pair.
 
-Medium of exchange, unit of account, and store of value are money''s three functions in a monetary economy.
+The statement is true.', 'With euros as medium of exchange, a trader can sell to one person and buy from another. Matching wants on every pairwise craft swap is no longer required.
 
-Held against the chapter test, each operative word earns its place: the category, the comparison, and the mechanism survive when checked one by one.
+The statement is true.', 'Craft for craft still fulfils wants on both sides. Missing currency does not erase the fact of exchange.
 
-Under that classification the claim describes the situation correctly rather than a lookalike category.
+The statement is true.', 'More unlike goods mean more relative rates to juggle and more coincidence problems to solve. Coordination gets harder as variety grows.
 
-The statement is true.
-', 'TRUE — Public goods are typically non-excludable and non-rival: excluding non-payers is hard and one person’s use does not much reduce another’s. Tax finance or a subsidy alone does not automatically turn every product into a pure public good.
+The statement is true.', 'Holding perishable crafts between trades risks spoilage and thin resale markets. Currency is a sturdier store of value across time than that inventory.
 
-Taxation funds public goods and transfers when free riders would underfund voluntary provision.
+The statement is true.'] WHERE case_id = 'CASE 2.4.38' AND tier = 'full';
+UPDATE public.economics_cases SET tactical_explanations = ARRAY['Station specialisation can raise speed when tasks fit capacity, but a mis-sized station or a weak handoff can also slow the line. Often work faster is not a reliable enough claim for every busy service.
 
-Held against the chapter test (here: goods), each operative word earns its place: the category, the comparison, and the mechanism survive when checked one by one.
+The statement is false.', 'Prep, line, and pastry feed one another. If one station falls behind, plates wait downstream. That bottleneck risk is a recognised cost of specialised sequencing.
 
-The sentence therefore reports the concept accurately for this item once the definition is held fixed.
+The statement is true.', 'Restaurants routinely split prep, grill, and pastry roles. Division of labour is not confined to factory assembly lines.
 
-The statement is true.
-', 'TRUE — Inflation is a sustained rise in the general price level, which changes the real goods a given nominal sum can buy. One shop’s promotion or a single relative price move is not the same thing.
+The statement is false.', 'A sauce delay can slow many mains, but it need not postpone every plate leaving the pass if other tickets are ready or courses are reordered. The word every is the overclaim.
 
-Anchor the claim in money’s functions, the circular flow of income and spending, public-good properties, transfers versus pure public provision, or gains from specialisation. Focus points: Inflation, 2%.
+The statement is false.', 'Output per cook rises only when handoffs stay smooth. During peak chaos, coordination failures can erase the usual productivity edge, so typically raises output overstates the busy-service case.
 
-Held against the chapter test (here: Inflation, 2%), each operative word earns its place: the category, the comparison, and the mechanism survive when checked one by one.
+The statement is false.'] WHERE case_id = 'CASE 2.4.39' AND tier = 'full';
+UPDATE public.economics_cases SET tactical_explanations = ARRAY['The ECB''s price-stability target for the euro area is inflation slightly below two percent. That is the objective the claim states.
 
-The sentence therefore reports the concept accurately for this item once the definition is held fixed.
+The statement is true.', 'When inflation is moderate and fairly predictable, households and firms can plan real budgets with less noise. Price stability supports that planning.
 
-The statement is true.
-', 'TRUE — Division of labour assigns stages to different workers so repetition raises output per person. Specialisation also creates interdependence: a delay at one station can stall the next.
+The statement is true.', 'Slightly-below-2% inflation is a stability aim. Hyperinflation is a collapse of purchasing power at extreme rates. Equating the ECB target with runaway hyperinflation fails.
 
-Division of labour raises productivity but can bring monotony and interdependence drawbacks.
+The statement is false.', 'If prices keep rising faster than incomes, fixed nominal cash buys fewer goods. Real consumption falls for holders of unchanged cash balances.
 
-Held against the chapter test, each operative word earns its place: the category, the comparison, and the mechanism survive when checked one by one.
+The statement is true.', 'Central-bank targets concern the general price level, not one retailer''s weekend sale. The claim keeps that aggregate focus.
 
-Nothing in the stem contradicts that reading, so the assertion stands as a correct application of the definition.
+The statement is true.'] WHERE case_id = 'CASE 2.4.40' AND tier = 'full';
+UPDATE public.economics_cases SET tactical_explanations = ARRAY['Medium of exchange, unit of account, and store of value are the three standard functions of money in a monetary economy.
 
-The statement is true.
-', 'TRUE — In the circular flow, firms pay households for factor services and households return spending as consumption revenue to firms. Extended diagrams add taxes, transfers, and government purchases without erasing that loop.
+The statement is true.', 'When benefits are shared and hard to meter privately, voluntary payment underprovides. Taxation can fund public goods by compelling broad contribution.
 
-Tie the claim to limited means versus unlimited ends, to goods versus services, or to the household/entrepreneur role actually performing the action in the stem. Focus points: government.
+The statement is true.', 'General price rises cut the real value of money. The ECB seeks stability with inflation slightly below two percent.
 
-Held against the chapter test (here: government), each operative word earns its place: the category, the comparison, and the mechanism survive when checked one by one.
+The statement is true.', 'Specialisation lifts productivity through focused skill, yet it can leave work monotonous and make each stage dependent on the one before it. Both sides belong in the account.
 
-The sentence therefore reports the concept accurately for this item once the definition is held fixed.
+The statement is true.', 'Extended diagrams differ in how finely they draw public flows. Some stress tax and government spending without spelling transfers out as a separate link. The claim''s tidy full list overstates how uniformly every extended model is drawn.
 
-The statement is true.
-'] WHERE case_id = 'CASE 2.4.29' AND tier = 'full';
-UPDATE public.economics_cases SET tactical_explanations = ARRAY['TRUE — Inflation is a sustained rise in the general price level, which changes the real goods a given nominal sum can buy. One shop’s promotion or a single relative price move is not the same thing.
+The statement is false.'] WHERE case_id = 'CASE 2.4.41' AND tier = 'full';
+UPDATE public.economics_cases SET tactical_explanations = ARRAY['Repeating picks in one category builds speed on those motions. Focused assignment is a standard productivity gain from specialisation.
 
-Anchor the claim in money’s functions, the circular flow of income and spending, public-good properties, transfers versus pure public provision, or gains from specialisation. Focus points: Inflation.
+The statement is true.', 'A pick delay can pressure packing, but buffers, parallel lanes, or reordered waves can absorb a local lag. Claiming that packing and dispatch for the whole shift must stall overstates the interdependence.
 
-Map that definition onto the case where one café raises latte price ten cents; national inflation stays near ECB target. The claim’s actors and constraints (here: Inflation) line up with the concept: the sentence describes the same mechanism the chapter teaches, not a neighbouring idea with similar vocabulary.
+The statement is false.', 'In this layout every order still needs both picking and packing, so the stages stay jointly necessary. Read that way, the claim treats the joint workflow as ruling out neat separation of roles across the shift.
 
-Nothing in the stem contradicts that reading, so the assertion stands as a correct application of the definition.
+The statement is true.', 'Narrow, repetitive category picking can raise output while dulling the job. Lower satisfaction despite productivity gains is a recognised drawback of specialisation.
 
-The statement is true.
-', 'FALSE — Inflation is a sustained rise in the general price level, which changes the real goods a given nominal sum can buy. One shop’s promotion or a single relative price move is not the same thing.
+The statement is true.', 'Fulfilment cost falls when stages stay balanced. When coordination slips, extra handling and idle time can erase the usual cost advantage, so the claim''s smooth-running cost cut is not guaranteed.
 
-One ten-cent latte rise is a micro price change; it does not equal economy-wide inflation by definition.
+The statement is false.'] WHERE case_id = 'CASE 2.4.42' AND tier = 'full';
+UPDATE public.economics_cases SET tactical_explanations = ARRAY['A shared euro measure lets unlike goods carry comparable shelf prices. That common yardstick is the unit-of-account function.
 
-Map that definition onto the case where one café raises latte price ten cents; national inflation stays near ECB target. Even if the stem mentions related details (here: inflation), those details do not carry the claim’s conclusion — the sentence either widens the concept past its test or attaches the wrong label to the facts.
+The statement is true.', 'A unit of account is precisely a device for quoting numeric prices. It does not remove the need for prices or make goods exchange themselves without measurement.
 
-Restore the textbook test and the assertion falls away: it mislabels the category or reverses the comparison the chapter actually teaches.
+The statement is false.', 'Unit of account is a measurement role. Coins do not contain bread, and shoppers still need bakeries. The physical-storage reading is wrong.
 
-The statement is false.
-', 'TRUE — Money’s three functions are medium of exchange (accepted in payment), unit of account (common price measure), and store of value (carrying purchasing power over time). The functions are related but distinct.
+The statement is false.', 'Both functions use the same currency in ordinary trade, so the clean classroom split between medium of exchange and price measurement is sharper than daily use. The claim''s hard separation overstates how apart the roles run.
 
-Anchor the claim in money’s functions, the circular flow of income and spending, public-good properties, transfers versus pure public provision, or gains from specialisation.
+The statement is false.', 'If sticker numbers are literally unchanged, those particular labels are not the rising prices that make up measured inflation. The claim''s long-run unchanged numeric labels story does not match how a rising price level shows up in the data.
 
-Map that definition onto the case where one café raises latte price ten cents; national inflation stays near ECB target. The claim’s actors and constraints line up with the concept: the sentence describes the same mechanism the chapter teaches, not a neighbouring idea with similar vocabulary.
+The statement is false.'] WHERE case_id = 'CASE 2.4.43' AND tier = 'full';
+UPDATE public.economics_cases SET tactical_explanations = ARRAY['In extended circular-flow diagrams, saving is a withdrawal: part of household income is not spent on current consumption. That leakage is standard.
 
-The sentence therefore reports the concept accurately for this item once the definition is held fixed.
+The statement is true.', 'Tax moves purchasing power from households and firms to government. In the flow model that is a transfer of command over resources to the public sector.
 
-The statement is true.
-', 'TRUE — Inflation is a sustained rise in the general price level, which changes the real goods a given nominal sum can buy. One shop’s promotion or a single relative price move is not the same thing.
+The statement is true.', 'Government can send purchasing power back through transfers and public spending. Those injections re-enter the circuit after tax has been collected.
 
-Anchor the claim in money’s functions, the circular flow of income and spending, public-good properties, transfers versus pure public provision, or gains from specialisation. Focus points: inflation, 2%.
+The statement is true.', 'The simplest two-sector picture is often drawn as income and spending arrows with money left implicit rather than shown as its own medium-of-exchange box. The claim matches that stripped diagram.
 
-Map that definition onto the case where one café raises latte price ten cents; national inflation stays near ECB target. The claim’s actors and constraints (here: inflation, 2%) line up with the concept: the sentence describes the same mechanism the chapter teaches, not a neighbouring idea with similar vocabulary.
+The statement is true.', 'Leakages such as saving and tax, and injections such as investment and government spending, are how fuller models connect public finance to private income and expenditure.
 
-The sentence therefore reports the concept accurately for this item once the definition is held fixed.
+The statement is true.'] WHERE case_id = 'CASE 2.4.44' AND tier = 'full';
+UPDATE public.economics_cases SET tactical_explanations = ARRAY['An energy-bill subsidy uses public funds to lower what households pay for metered power. Electricity remains rival in use and excludable by connection, so the subsidy is a transfer on a private-type service.
 
-The statement is true.
-', 'TRUE — Connect the claim to money’s functions, the circular flow of income and spending, public goods and transfers, or gains and interdependence from specialisation.
+The statement is true.', 'Pure public goods are non-excludable and non-rival. Metered electricity fails both tests. A subsidy does not change that classification.
 
-Walk the definition onto the stem’s actors and constraints, then confirm the sentence’s category and reason both survive that check.
+The statement is true.', 'Energy subsidies are often booked as price supports or firm-side measures rather than a clean household-transfer arrow. Treating every tax-funded energy subsidy as a direct household-budget link in the circular flow overclaims how the books are drawn.
 
-Map that definition onto the case where one café raises latte price ten cents; national inflation stays near ECB target. The claim’s actors and constraints line up with the concept: the sentence describes the same mechanism the chapter teaches, not a neighbouring idea with similar vocabulary.
+The statement is false.', 'Public-good status depends on rivalry and excludability, not on whether government pays. A subsidy does not turn metered energy into a non-excludable public good.
 
-The sentence therefore reports the concept accurately for this item once the definition is held fixed.
+The statement is false.', 'Large subsidy schemes can reshape supplier margins and entry, so rivalry among private firms is not safely guaranteed to survive unchanged. The claim that social-protection transfers leave competition untouched is too strong.
 
-The statement is true.
-'] WHERE case_id = 'CASE 2.4.30' AND tier = 'full';
-UPDATE public.economics_cases SET tactical_explanations = ARRAY['TRUE — Connect the claim to money’s functions, the circular flow of income and spending, public goods and transfers, or gains and interdependence from specialisation.
+The statement is false.'] WHERE case_id = 'CASE 2.4.45' AND tier = 'full';
+UPDATE public.economics_cases SET tactical_explanations = ARRAY['Workers who stay in spinning, weaving, or dyeing build deeper task-specific skill. Focused departments commonly raise output per worker on those repeated tasks.
 
-Factor payments (wages, rent, profit) are income for supplying labour, land, or capital to production.
+The statement is true.', 'Dyeing feeds finishing; weaving feeds dyeing. A dye-house stoppage can leave downstream lines idle. That knock-on effect is the interdependence drawback of staged specialisation.
 
-Held against the chapter test, each operative word earns its place: the category, the comparison, and the mechanism survive when checked one by one.
+The statement is true.', 'Textile plants routinely split spinning, weaving, dyeing, and finishing. Saying specialisation never occurs because every worker must do every stage personally rejects how those plants actually run.
 
-The sentence therefore reports the concept accurately for this item once the definition is held fixed.
+The statement is false.', 'Repetitive single-stage work can raise output while lowering job satisfaction. Always increases satisfaction with no possible drawbacks is an overclaim.
 
-The statement is true.
-', 'FALSE — In the circular flow, firms pay households for factor services and households return spending as consumption revenue to firms. Extended diagrams add taxes, transfers, and government purchases without erasing that loop.
+The statement is false.', 'When specialised lines run smoothly, higher output per worker usually lowers unit cost. Claiming that coordinated specialisation always raises average cost despite productivity gains reverses the usual efficiency result.
 
-Household income in the circular flow comes from supplying productive inputs to firms — it is not unrelated to that supply.
+The statement is false.'] WHERE case_id = 'CASE 2.4.46' AND tier = 'full';
+UPDATE public.economics_cases SET tactical_explanations = ARRAY['Barter stalls unless each party wants exactly what the other offers at the same moment. Money relaxes that double coincidence requirement.
 
-Held against the chapter test (here: Household, supply), the familiar vocabulary may sound economic, but the operative restriction or reason fails — so the sentence mislabels the situation.
+The statement is true.', 'A general rise in prices cuts purchasing power. The ECB aims for inflation slightly below two percent as its stability target.
 
-Swap in the correct criterion and the sentence no longer describes the case — that is enough to mark it false.
+The statement is true.', 'Shared services invite free riding under voluntary pay. Taxation can fund public goods by collecting from a broad base of beneficiaries.
 
-The statement is false.
-', 'FALSE — In the circular flow, firms pay households for factor services and households return spending as consumption revenue to firms. Extended diagrams add taxes, transfers, and government purchases without erasing that loop.
+The statement is true.', 'Specialisation raises productivity through focused skill, yet it can make work monotonous and leave each stage dependent on the one before it.
 
-Salary, registration status, or use of money does not abolish scarcity, redefine goods as services, or bar households from exchange. Absolute exclusions are the usual failure mode.
+The statement is true.', 'Circular-flow models connect household factor supply, firm production, income, spending, and government tax and transfers in one monetary picture.
 
-Held against the chapter test, the familiar vocabulary may sound economic, but the operative restriction or reason fails — so the sentence mislabels the situation.
+The statement is true.'] WHERE case_id = 'CASE 2.4.47' AND tier = 'full';
+UPDATE public.economics_cases SET tactical_explanations = ARRAY['Even moderate positive inflation means unchanged nominal cash buys a little less over time. Real purchasing power of idle notes drifts down.
 
-The mismatch is in the defining feature, not in a missing buzzword; fix the feature and the claim disappears.
+The statement is true.', 'Store of value means carrying purchasing power into the future. When prices rise faster than the nominal amount held, that real bridge weakens.
 
-This item’s published answer key marks the claim as shown; score the letter to that key while keeping the chapter definition clear for revision.
+The statement is true.', 'Slightly-below-2% inflation is still positive inflation. Cash holders lose a little real purchasing power each year unless something else compensates; they do not gain purchasing power without exception.
 
-The statement is false.
-', 'FALSE — In the circular flow, firms pay households for factor services and households return spending as consumption revenue to firms. Extended diagrams add taxes, transfers, and government purchases without erasing that loop.
+The statement is false.', 'A low, stable target is meant to keep money usable for planning. Very high inflation rapidly destroys real balances. The contrast in the claim is the right one.
 
-Do not collapse money’s three functions into one, treat one shop’s price change as inflation, or convert every tax-funded item into a pure public good. Specialisation raises output but also creates interdependence — denying either side misstates the lesson. Focus points: Government, transfer.
+The statement is true.', 'What euro cash buys at home depends mainly on domestic prices. Local general price trends set the real value of those savings.
 
-Held against the chapter test (here: Government, transfer), the familiar vocabulary may sound economic, but the operative restriction or reason fails — so the sentence mislabels the situation.
+The statement is true.'] WHERE case_id = 'CASE 2.4.48' AND tier = 'full';
+UPDATE public.economics_cases SET tactical_explanations = ARRAY['Child benefit is a government transfer that adds purchasing power to eligible family accounts by design.
 
-Swap in the correct criterion and the sentence no longer describes the case — that is enough to mark it false.
+The statement is true.', 'Households may save part of the benefit, pay down debt, or spend on imports. Spending on groceries and clothing can feed firm revenue, but the clean continuation the claim describes is not guaranteed for every euro transferred.
 
-This item’s published answer key marks the claim as shown; score the letter to that key while keeping the chapter definition clear for revision.
+The statement is false.', 'Eligibility rules exclude non-recipients. Child benefit is a targeted transfer, not a pure public good defined by non-excludable shared consumption.
 
-The statement is false.
-', 'FALSE — Money’s three functions are medium of exchange (accepted in payment), unit of account (common price measure), and store of value (carrying purchasing power over time). The functions are related but distinct.
+The statement is false.', 'Both transfers and defence are public-budget outlays. Drawing a bright line that distributional transfers are wholly distinct from non-excludable services overstates how separately they sit inside one public-finance framework.
 
-Salary, registration status, or use of money does not abolish scarcity, redefine goods as services, or bar households from exchange. Absolute exclusions are the usual failure mode.
+The statement is false.', 'Extended circular-flow sketches vary in how they draw transfer arrows beside tax. Treating every such diagram as automatically showing transfers alongside tax receipts overclaims a uniform layout.
 
-Held against the chapter test, the familiar vocabulary may sound economic, but the operative restriction or reason fails — so the sentence mislabels the situation.
+The statement is false.'] WHERE case_id = 'CASE 2.4.49' AND tier = 'full';
+UPDATE public.economics_cases SET tactical_explanations = ARRAY['Street cameras that deter crime create safer surroundings many residents share. Excluding non-payers from that ambient safety is hard. The shared, hard-to-exclude benefit matches local public-good logic.
 
-Restore the textbook test and the assertion falls away: it mislabels the category or reverses the comparison the chapter actually teaches.
+The statement is true.', 'A neighbour who skips the subscription still gains if nearby cameras deter offenders. Voluntary funding therefore invites free riding and can leave cameras underprovided.
 
-This item’s published answer key marks the claim as shown; score the letter to that key while keeping the chapter definition clear for revision.
+The statement is true.', 'Tax finance bills a wide base instead of relying on willing subscribers. That reduces the free-rider underfunding problem voluntary payment faces.
 
-The statement is false.
-'] WHERE case_id = 'CASE 2.4.31' AND tier = 'full';
-UPDATE public.economics_cases SET tactical_explanations = ARRAY['TRUE — Connect the claim to money’s functions, the circular flow of income and spending, public goods and transfers, or gains and interdependence from specialisation.
+The statement is true.', 'Perfect excludability would mean non-payers get no safety spillover. Ambient deterrence on public streets leaks to non-subscribers, so cameras are not pure private goods in every neighbourhood setting.
 
-Flood protection benefits many at once and is hard to exclude when waters rise — shared-defence features.
+The statement is false.', 'Local camera schemes may be funded by earmarked fees, partnerships, or other pots rather than the general household-tax arrow in a circular-flow sketch. Treating public safety finance as that standard tax link overclaims how the funding always appears in the diagram.
 
-Map that definition onto the case where a riverside municipality funds flood defences through a compulsory local levy rather than voluntary household donations. The claim’s actors and constraints line up with the concept: the sentence describes the same mechanism the chapter teaches, not a neighbouring idea with similar vocabulary.
-
-Nothing in the stem contradicts that reading, so the assertion stands as a correct application of the definition.
-
-The statement is true.
-', 'TRUE — Public goods are typically non-excludable and non-rival: excluding non-payers is hard and one person’s use does not much reduce another’s. Tax finance or a subsidy alone does not automatically turn every product into a pure public good.
-
-Non-payers still benefit from levees, so voluntary donations alone tend to underfund — free-rider logic.
-
-Map that definition onto the case where a riverside municipality funds flood defences through a compulsory local levy rather than voluntary household donations. The claim’s actors and constraints line up with the concept: the sentence describes the same mechanism the chapter teaches, not a neighbouring idea with similar vocabulary.
-
-Keep the reason clause: it names why the classification holds (forgone alternative, scope of analysis, price signal, or institutional rule) rather than restating the conclusion alone.
-
-The statement is true.
-', 'TRUE — Public goods are typically non-excludable and non-rival: excluding non-payers is hard and one person’s use does not much reduce another’s. Tax finance or a subsidy alone does not automatically turn every product into a pure public good.
-
-A compulsory levy spreads costs and reduces free-rider incentives relative to voluntary funding.
-
-Map that definition onto the case where a riverside municipality funds flood defences through a compulsory local levy rather than voluntary household donations. The claim’s actors and constraints line up with the concept: the sentence describes the same mechanism the chapter teaches, not a neighbouring idea with similar vocabulary.
-
-The sentence therefore reports the concept accurately for this item once the definition is held fixed.
-
-The statement is true.
-', 'TRUE — Public goods are typically non-excludable and non-rival: excluding non-payers is hard and one person’s use does not much reduce another’s. Tax finance or a subsidy alone does not automatically turn every product into a pure public good.
-
-Walk the definition onto the stem’s actors and constraints, then confirm the sentence’s category and reason both survive that check. Focus points: good.
-
-Map that definition onto the case where a riverside municipality funds flood defences through a compulsory local levy rather than voluntary household donations. The claim’s actors and constraints (here: good) line up with the concept: the sentence describes the same mechanism the chapter teaches, not a neighbouring idea with similar vocabulary.
-
-The causal link is doing the teaching work — strip it out and the remaining label would be too thin to judge.
-
-This item’s published answer key marks the claim as shown; score the letter to that key while keeping the chapter definition clear for revision.
-
-The statement is true.
-', 'FALSE — Public goods are typically non-excludable and non-rival: excluding non-payers is hard and one person’s use does not much reduce another’s. Tax finance or a subsidy alone does not automatically turn every product into a pure public good.
-
-Salary, registration status, or use of money does not abolish scarcity, redefine goods as services, or bar households from exchange. Absolute exclusions are the usual failure mode.
-
-Map that definition onto the case where a riverside municipality funds flood defences through a compulsory local levy rather than voluntary household donations. Even if the stem mentions related details, those details do not carry the claim’s conclusion — the sentence either widens the concept past its test or attaches the wrong label to the facts.
-
-Swap in the correct criterion and the sentence no longer describes the case — that is enough to mark it false.
-
-This item’s published answer key marks the claim as shown; score the letter to that key while keeping the chapter definition clear for revision.
-
-The statement is false.
-'] WHERE case_id = 'CASE 2.4.32' AND tier = 'full';
-UPDATE public.economics_cases SET tactical_explanations = ARRAY['TRUE — Money’s three functions are medium of exchange (accepted in payment), unit of account (common price measure), and store of value (carrying purchasing power over time). The functions are related but distinct.
-
-A mobile wallet pays euros for bread — money as medium of exchange, not direct barter of preserves.
-
-Map that definition onto the case where a customer paying for bread with a mobile wallet rather than trading homemade preserves directly with the baker. The claim’s actors and constraints (here: barter) line up with the concept: the sentence describes the same mechanism the chapter teaches, not a neighbouring idea with similar vocabulary.
-
-Nothing in the stem contradicts that reading, so the assertion stands as a correct application of the definition.
-
-The statement is true.
-', 'FALSE — Connect the claim to money’s functions, the circular flow of income and spending, public goods and transfers, or gains and interdependence from specialisation.
-
-Salary, registration status, or use of money does not abolish scarcity, redefine goods as services, or bar households from exchange. Absolute exclusions are the usual failure mode.
-
-Map that definition onto the case where a customer paying for bread with a mobile wallet rather than trading homemade preserves directly with the baker. Even if the stem mentions related details, those details do not carry the claim’s conclusion — the sentence either widens the concept past its test or attaches the wrong label to the facts.
-
-The because-clause attaches the wrong reason to the label. A real detail (a national programme, a zero wage, shared premises, use of money) does not justify the over-broad conclusion.
-
-The statement is false.
-', 'FALSE — Money’s three functions are medium of exchange (accepted in payment), unit of account (common price measure), and store of value (carrying purchasing power over time). The functions are related but distinct.
-
-Salary, registration status, or use of money does not abolish scarcity, redefine goods as services, or bar households from exchange. Absolute exclusions are the usual failure mode.
-
-Map that definition onto the case where a customer paying for bread with a mobile wallet rather than trading homemade preserves directly with the baker. Even if the stem mentions related details, those details do not carry the claim’s conclusion — the sentence either widens the concept past its test or attaches the wrong label to the facts.
-
-Restore the textbook test and the assertion falls away: it mislabels the category or reverses the comparison the chapter actually teaches.
-
-This item’s published answer key marks the claim as shown; score the letter to that key while keeping the chapter definition clear for revision.
-
-The statement is false.
-', 'TRUE — Connect the claim to money’s functions, the circular flow of income and spending, public goods and transfers, or gains and interdependence from specialisation.
-
-Barter needs the baker to want exactly what the customer offers each visit — double coincidence.
-
-Map that definition onto the case where a customer paying for bread with a mobile wallet rather than trading homemade preserves directly with the baker. The claim’s actors and constraints (here: Barter) line up with the concept: the sentence describes the same mechanism the chapter teaches, not a neighbouring idea with similar vocabulary.
-
-Under that classification the claim describes the situation correctly rather than a lookalike category.
-
-The statement is true.
-', 'FALSE — Money’s three functions are medium of exchange (accepted in payment), unit of account (common price measure), and store of value (carrying purchasing power over time). The functions are related but distinct.
-
-Walk the definition onto the stem’s actors and constraints, then spot where the sentence’s category or absolute reason breaks that check. Focus points: barter, good.
-
-Map that definition onto the case where a customer paying for bread with a mobile wallet rather than trading homemade preserves directly with the baker. Even if the stem mentions related details (here: barter, good), those details do not carry the claim’s conclusion — the sentence either widens the concept past its test or attaches the wrong label to the facts.
-
-Swap in the correct criterion and the sentence no longer describes the case — that is enough to mark it false.
-
-This item’s published answer key marks the claim as shown; score the letter to that key while keeping the chapter definition clear for revision.
-
-The statement is false.
-'] WHERE case_id = 'CASE 2.4.33' AND tier = 'full';
-UPDATE public.economics_cases SET tactical_explanations = ARRAY['TRUE — Taxes, transfers, and subsidies link government budgets to household and firm budgets. Transfers pursue distributional goals; they differ from providing a non-excludable public good, though both appear in public finance.
-
-Agricultural subsidies inject government income support into eligible farm households — transfers.
-
-Held against the chapter test (here: government), each operative word earns its place: the category, the comparison, and the mechanism survive when checked one by one.
-
-The sentence therefore reports the concept accurately for this item once the definition is held fixed.
-
-The statement is true.
-', 'TRUE — In the circular flow, firms pay households for factor services and households return spending as consumption revenue to firms. Extended diagrams add taxes, transfers, and government purchases without erasing that loop.
-
-Spending that subsidised income on inputs and consumer goods continues the monetary circular flow.
-
-Held against the chapter test (here: goods), each operative word earns its place: the category, the comparison, and the mechanism survive when checked one by one.
-
-The sentence therefore reports the concept accurately for this item once the definition is held fixed.
-
-The statement is true.
-', 'TRUE — Public goods are typically non-excludable and non-rival: excluding non-payers is hard and one person’s use does not much reduce another’s. Tax finance or a subsidy alone does not automatically turn every product into a pure public good.
-
-Anchor the claim in money’s functions, the circular flow of income and spending, public-good properties, transfers versus pure public provision, or gains from specialisation. Focus points: good.
-
-Held against the chapter test (here: good), each operative word earns its place: the category, the comparison, and the mechanism survive when checked one by one.
-
-Keep the reason clause: it names why the classification holds (forgone alternative, scope of analysis, price signal, or institutional rule) rather than restating the conclusion alone.
-
-This item’s published answer key marks the claim as shown; score the letter to that key while keeping the chapter definition clear for revision.
-
-The statement is true.
-', 'TRUE — Taxes, transfers, and subsidies link government budgets to household and firm budgets. Transfers pursue distributional goals; they differ from providing a non-excludable public good, though both appear in public finance.
-
-Tax receipts and subsidy payments link government to firms and households in flow diagrams.
-
-Held against the chapter test (here: Government, subsidy), each operative word earns its place: the category, the comparison, and the mechanism survive when checked one by one.
-
-The sentence therefore reports the concept accurately for this item once the definition is held fixed.
-
-The statement is true.
-', 'TRUE — Public goods are typically non-excludable and non-rival: excluding non-payers is hard and one person’s use does not much reduce another’s. Tax finance or a subsidy alone does not automatically turn every product into a pure public good.
-
-Transfers can support incomes without requiring the supported goods to be non-excludable public goods.
-
-Held against the chapter test (here: Transfer, goods), each operative word earns its place: the category, the comparison, and the mechanism survive when checked one by one.
-
-The sentence therefore reports the concept accurately for this item once the definition is held fixed.
-
-The statement is true.
-'] WHERE case_id = 'CASE 2.4.34' AND tier = 'full';
-UPDATE public.economics_cases SET tactical_explanations = ARRAY['TRUE — Inflation is a sustained rise in the general price level, which changes the real goods a given nominal sum can buy. One shop’s promotion or a single relative price move is not the same thing.
-
-Separate movements along a curve (own-price) from shifts (costs, income, population, tastes). Equilibrium is where quantity demanded equals quantity supplied; binding floors or ceilings can create surplus or shortage when set away from that price. Focus points: Inflation.
-
-Held against the chapter test (here: Inflation), each operative word earns its place: the category, the comparison, and the mechanism survive when checked one by one.
-
-Under that classification the claim describes the situation correctly rather than a lookalike category.
-
-The statement is true.
-', 'FALSE — Connect the claim to money’s functions, the circular flow of income and spending, public goods and transfers, or gains and interdependence from specialisation.
-
-Unchanged nominal wages buy less when prices rise — real purchasing power is not automatically preserved.
-
-Held against the chapter test, the familiar vocabulary may sound economic, but the operative restriction or reason fails — so the sentence mislabels the situation.
-
-Words such as only/never/always stretch a limited idea past what the definition allows; restore the ordinary exceptions and the claim collapses.
-
-The statement is false.
-', 'TRUE — Inflation is a sustained rise in the general price level, which changes the real goods a given nominal sum can buy. One shop’s promotion or a single relative price move is not the same thing.
-
-Anchor the claim in money’s functions, the circular flow of income and spending, public-good properties, transfers versus pure public provision, or gains from specialisation. Focus points: inflation.
-
-Held against the chapter test (here: inflation), each operative word earns its place: the category, the comparison, and the mechanism survive when checked one by one.
-
-Nothing in the stem contradicts that reading, so the assertion stands as a correct application of the definition.
-
-The statement is true.
-', 'TRUE — Connect the claim to money’s functions, the circular flow of income and spending, public goods and transfers, or gains and interdependence from specialisation.
-
-Tie the claim to limited means versus unlimited ends, to goods versus services, or to the household/entrepreneur role actually performing the action in the stem. Focus points: goods.
-
-Held against the chapter test (here: goods), each operative word earns its place: the category, the comparison, and the mechanism survive when checked one by one.
-
-Nothing in the stem contradicts that reading, so the assertion stands as a correct application of the definition.
-
-The statement is true.
-', 'FALSE — Inflation is a sustained rise in the general price level, which changes the real goods a given nominal sum can buy. One shop’s promotion or a single relative price move is not the same thing.
-
-Do not collapse money’s three functions into one, treat one shop’s price change as inflation, or convert every tax-funded item into a pure public good. Specialisation raises output but also creates interdependence — denying either side misstates the lesson. Focus points: Inflation.
-
-Held against the chapter test (here: Inflation), the familiar vocabulary may sound economic, but the operative restriction or reason fails — so the sentence mislabels the situation.
-
-The absolute quantifier is doing the damage. Soften it to the chapter’s actual scope and the remaining content no longer supports a false blanket rule.
-
-This item’s published answer key marks the claim as shown; score the letter to that key while keeping the chapter definition clear for revision.
-
-The statement is false.
-'] WHERE case_id = 'CASE 2.4.35' AND tier = 'full';
-UPDATE public.economics_cases SET tactical_explanations = ARRAY['TRUE — Public goods are typically non-excludable and non-rival: excluding non-payers is hard and one person’s use does not much reduce another’s. Tax finance or a subsidy alone does not automatically turn every product into a pure public good.
-
-Walk the definition onto the stem’s actors and constraints, then confirm the sentence’s category and reason both survive that check.
-
-Map that definition onto the case where a country funds national public radio through a compulsory household licence fee rather than per-listener tickets. The claim’s actors and constraints line up with the concept: the sentence describes the same mechanism the chapter teaches, not a neighbouring idea with similar vocabulary.
-
-Under that classification the claim describes the situation correctly rather than a lookalike category.
-
-The statement is true.
-', 'TRUE — Connect the claim to money’s functions, the circular flow of income and spending, public goods and transfers, or gains and interdependence from specialisation.
-
-Tie the claim to limited means versus unlimited ends, to goods versus services, or to the household/entrepreneur role actually performing the action in the stem.
-
-Map that definition onto the case where a country funds national public radio through a compulsory household licence fee rather than per-listener tickets. The claim’s actors and constraints line up with the concept: the sentence describes the same mechanism the chapter teaches, not a neighbouring idea with similar vocabulary.
-
-The sentence therefore reports the concept accurately for this item once the definition is held fixed.
-
-The statement is true.
-', 'FALSE — Public goods are typically non-excludable and non-rival: excluding non-payers is hard and one person’s use does not much reduce another’s. Tax finance or a subsidy alone does not automatically turn every product into a pure public good.
-
-Collective finance still uses real resources (studios, staff, transmitters). Zero resource cost to taxpayers is false.
-
-Map that definition onto the case where a country funds national public radio through a compulsory household licence fee rather than per-listener tickets. Even if the stem mentions related details (here: goods), those details do not carry the claim’s conclusion — the sentence either widens the concept past its test or attaches the wrong label to the facts.
-
-Words such as only/never/always stretch a limited idea past what the definition allows; restore the ordinary exceptions and the claim collapses.
-
-The statement is false.
-', 'TRUE — Connect the claim to money’s functions, the circular flow of income and spending, public goods and transfers, or gains and interdependence from specialisation.
-
-Free-rider logic applies to shared domestic broadcast benefits, not only to cross-border cases.
-
-Map that definition onto the case where a country funds national public radio through a compulsory household licence fee rather than per-listener tickets. The claim’s actors and constraints (here: service) line up with the concept: the sentence describes the same mechanism the chapter teaches, not a neighbouring idea with similar vocabulary.
-
-Under that classification the claim describes the situation correctly rather than a lookalike category.
-
-The statement is true.
-', 'FALSE — In the circular flow, firms pay households for factor services and households return spending as consumption revenue to firms. Extended diagrams add taxes, transfers, and government purchases without erasing that loop.
-
-Salary, registration status, or use of money does not abolish scarcity, redefine goods as services, or bar households from exchange. Absolute exclusions are the usual failure mode. Focus points: government, household.
-
-Map that definition onto the case where a country funds national public radio through a compulsory household licence fee rather than per-listener tickets. Even if the stem mentions related details (here: government, household), those details do not carry the claim’s conclusion — the sentence either widens the concept past its test or attaches the wrong label to the facts.
-
-Swap in the correct criterion and the sentence no longer describes the case — that is enough to mark it false.
-
-This item’s published answer key marks the claim as shown; score the letter to that key while keeping the chapter definition clear for revision.
-
-The statement is false.
-'] WHERE case_id = 'CASE 2.4.36' AND tier = 'full';
-UPDATE public.economics_cases SET tactical_explanations = ARRAY['FALSE — Money’s three functions are medium of exchange (accepted in payment), unit of account (common price measure), and store of value (carrying purchasing power over time). The functions are related but distinct.
-
-Do not collapse money’s three functions into one, treat one shop’s price change as inflation, or convert every tax-funded item into a pure public good. Specialisation raises output but also creates interdependence — denying either side misstates the lesson.
-
-Map that definition onto the case where a shopper comparing cereal, detergent, and coffee prices labelled in euros on one aisle. Even if the stem mentions related details, those details do not carry the claim’s conclusion — the sentence either widens the concept past its test or attaches the wrong label to the facts.
-
-Swap in the correct criterion and the sentence no longer describes the case — that is enough to mark it false.
-
-This item’s published answer key marks the claim as shown; score the letter to that key while keeping the chapter definition clear for revision.
-
-The statement is false.
-', 'TRUE — Money’s three functions are medium of exchange (accepted in payment), unit of account (common price measure), and store of value (carrying purchasing power over time). The functions are related but distinct.
-
-Tie the claim to limited means versus unlimited ends, to goods versus services, or to the household/entrepreneur role actually performing the action in the stem. Focus points: barter, goods.
-
-Map that definition onto the case where a shopper comparing cereal, detergent, and coffee prices labelled in euros on one aisle. The claim’s actors and constraints (here: barter, goods) line up with the concept: the sentence describes the same mechanism the chapter teaches, not a neighbouring idea with similar vocabulary.
-
-The causal link is doing the teaching work — strip it out and the remaining label would be too thin to judge.
-
-This item’s published answer key marks the claim as shown; score the letter to that key while keeping the chapter definition clear for revision.
-
-The statement is true.
-', 'FALSE — Money’s three functions are medium of exchange (accepted in payment), unit of account (common price measure), and store of value (carrying purchasing power over time). The functions are related but distinct.
-
-Salary, registration status, or use of money does not abolish scarcity, redefine goods as services, or bar households from exchange. Absolute exclusions are the usual failure mode.
-
-Map that definition onto the case where a shopper comparing cereal, detergent, and coffee prices labelled in euros on one aisle. Even if the stem mentions related details, those details do not carry the claim’s conclusion — the sentence either widens the concept past its test or attaches the wrong label to the facts.
-
-Swap in the correct criterion and the sentence no longer describes the case — that is enough to mark it false.
-
-This item’s published answer key marks the claim as shown; score the letter to that key while keeping the chapter definition clear for revision.
-
-The statement is false.
-', 'TRUE — Connect the claim to money’s functions, the circular flow of income and spending, public goods and transfers, or gains and interdependence from specialisation.
-
-Without a common unit, unlike products need many barter ratios instead of one euro figure.
-
-Map that definition onto the case where a shopper comparing cereal, detergent, and coffee prices labelled in euros on one aisle. The claim’s actors and constraints (here: barter) line up with the concept: the sentence describes the same mechanism the chapter teaches, not a neighbouring idea with similar vocabulary.
-
-Nothing in the stem contradicts that reading, so the assertion stands as a correct application of the definition.
-
-The statement is true.
-', 'FALSE — Inflation is a sustained rise in the general price level, which changes the real goods a given nominal sum can buy. One shop’s promotion or a single relative price move is not the same thing.
-
-Salary, registration status, or use of money does not abolish scarcity, redefine goods as services, or bar households from exchange. Absolute exclusions are the usual failure mode. Focus points: Inflation, goods.
-
-Map that definition onto the case where a shopper comparing cereal, detergent, and coffee prices labelled in euros on one aisle. Even if the stem mentions related details (here: Inflation, goods), those details do not carry the claim’s conclusion — the sentence either widens the concept past its test or attaches the wrong label to the facts.
-
-The mismatch is in the defining feature, not in a missing buzzword; fix the feature and the claim disappears.
-
-This item’s published answer key marks the claim as shown; score the letter to that key while keeping the chapter definition clear for revision.
-
-The statement is false.
-'] WHERE case_id = 'CASE 2.4.37' AND tier = 'full';
-UPDATE public.economics_cases SET tactical_explanations = ARRAY['TRUE — Connect the claim to money’s functions, the circular flow of income and spending, public goods and transfers, or gains and interdependence from specialisation.
-
-Tie the claim to limited means versus unlimited ends, to goods versus services, or to the household/entrepreneur role actually performing the action in the stem. Focus points: barter.
-
-Map that definition onto the case where a community fair where traders swap crafts through direct barter without using euros. The claim’s actors and constraints (here: barter) line up with the concept: the sentence describes the same mechanism the chapter teaches, not a neighbouring idea with similar vocabulary.
-
-Under that classification the claim describes the situation correctly rather than a lookalike category.
-
-The statement is true.
-', 'TRUE — Money’s three functions are medium of exchange (accepted in payment), unit of account (common price measure), and store of value (carrying purchasing power over time). The functions are related but distinct.
-
-Tie the claim to limited means versus unlimited ends, to goods versus services, or to the household/entrepreneur role actually performing the action in the stem.
-
-Map that definition onto the case where a community fair where traders swap crafts through direct barter without using euros. The claim’s actors and constraints line up with the concept: the sentence describes the same mechanism the chapter teaches, not a neighbouring idea with similar vocabulary.
-
-Nothing in the stem contradicts that reading, so the assertion stands as a correct application of the definition.
-
-The statement is true.
-', 'TRUE — Connect the claim to money’s functions, the circular flow of income and spending, public goods and transfers, or gains and interdependence from specialisation.
-
-Tie the claim to limited means versus unlimited ends, to goods versus services, or to the household/entrepreneur role actually performing the action in the stem.
-
-Map that definition onto the case where a community fair where traders swap crafts through direct barter without using euros. The claim’s actors and constraints line up with the concept: the sentence describes the same mechanism the chapter teaches, not a neighbouring idea with similar vocabulary.
-
-Under that classification the claim describes the situation correctly rather than a lookalike category.
-
-The statement is true.
-', 'TRUE — Connect the claim to money’s functions, the circular flow of income and spending, public goods and transfers, or gains and interdependence from specialisation.
-
-Coordinating barter among many unlike goods is harder than trading with money as product variety grows.
-
-Map that definition onto the case where a community fair where traders swap crafts through direct barter without using euros. The claim’s actors and constraints (here: Barter, goods) line up with the concept: the sentence describes the same mechanism the chapter teaches, not a neighbouring idea with similar vocabulary.
-
-Nothing in the stem contradicts that reading, so the assertion stands as a correct application of the definition.
-
-The statement is true.
-', 'TRUE — Connect the claim to money’s functions, the circular flow of income and spending, public goods and transfers, or gains and interdependence from specialisation.
-
-Holding perishable crafts as a store of value is weaker than holding currency between transactions.
-
-Map that definition onto the case where a community fair where traders swap crafts through direct barter without using euros. The claim’s actors and constraints (here: goods) line up with the concept: the sentence describes the same mechanism the chapter teaches, not a neighbouring idea with similar vocabulary.
-
-The sentence therefore reports the concept accurately for this item once the definition is held fixed.
-
-The statement is true.
-'] WHERE case_id = 'CASE 2.4.38' AND tier = 'full';
-UPDATE public.economics_cases SET tactical_explanations = ARRAY['FALSE — Division of labour assigns stages to different workers so repetition raises output per person. Specialisation also creates interdependence: a delay at one station can stall the next.
-
-Do not collapse money’s three functions into one, treat one shop’s price change as inflation, or convert every tax-funded item into a pure public good. Specialisation raises output but also creates interdependence — denying either side misstates the lesson.
-
-Map that definition onto the case where a restaurant splitting prep, line cooking, and pastry work among separate stations during service. Even if the stem mentions related details, those details do not carry the claim’s conclusion — the sentence either widens the concept past its test or attaches the wrong label to the facts.
-
-Restore the textbook test and the assertion falls away: it mislabels the category or reverses the comparison the chapter actually teaches.
-
-This item’s published answer key marks the claim as shown; score the letter to that key while keeping the chapter definition clear for revision.
-
-The statement is false.
-', 'TRUE — Division of labour assigns stages to different workers so repetition raises output per person. Specialisation also creates interdependence: a delay at one station can stall the next.
-
-One slow station can bottleneck plating downstream — a specialisation interdependence drawback.
-
-Map that definition onto the case where a restaurant splitting prep, line cooking, and pastry work among separate stations during service. The claim’s actors and constraints line up with the concept: the sentence describes the same mechanism the chapter teaches, not a neighbouring idea with similar vocabulary.
-
-The sentence therefore reports the concept accurately for this item once the definition is held fixed.
-
-The statement is true.
-', 'FALSE — Division of labour assigns stages to different workers so repetition raises output per person. Specialisation also creates interdependence: a delay at one station can stall the next.
-
-Do not collapse money’s three functions into one, treat one shop’s price change as inflation, or convert every tax-funded item into a pure public good. Specialisation raises output but also creates interdependence — denying either side misstates the lesson.
-
-Map that definition onto the case where a restaurant splitting prep, line cooking, and pastry work among separate stations during service. Even if the stem mentions related details, those details do not carry the claim’s conclusion — the sentence either widens the concept past its test or attaches the wrong label to the facts.
-
-Absolute wording is the trap: economics definitions leave room for counterexamples — another actor, another scope, a non-money cost, or a public function that still exists. One clear counterexample rejects the sentence.
-
-The statement is false.
-', 'FALSE — Division of labour assigns stages to different workers so repetition raises output per person. Specialisation also creates interdependence: a delay at one station can stall the next.
-
-Walk the definition onto the stem’s actors and constraints, then spot where the sentence’s category or absolute reason breaks that check.
-
-Map that definition onto the case where a restaurant splitting prep, line cooking, and pastry work among separate stations during service. Even if the stem mentions related details, those details do not carry the claim’s conclusion — the sentence either widens the concept past its test or attaches the wrong label to the facts.
-
-Words such as only/never/always stretch a limited idea past what the definition allows; restore the ordinary exceptions and the claim collapses.
-
-This item’s published answer key marks the claim as shown; score the letter to that key while keeping the chapter definition clear for revision.
-
-The statement is false.
-', 'FALSE — Division of labour assigns stages to different workers so repetition raises output per person. Specialisation also creates interdependence: a delay at one station can stall the next.
-
-Salary, registration status, or use of money does not abolish scarcity, redefine goods as services, or bar households from exchange. Absolute exclusions are the usual failure mode. Focus points: service.
-
-Map that definition onto the case where a restaurant splitting prep, line cooking, and pastry work among separate stations during service. Even if the stem mentions related details (here: service), those details do not carry the claim’s conclusion — the sentence either widens the concept past its test or attaches the wrong label to the facts.
-
-Swap in the correct criterion and the sentence no longer describes the case — that is enough to mark it false.
-
-This item’s published answer key marks the claim as shown; score the letter to that key while keeping the chapter definition clear for revision.
-
-The statement is false.
-'] WHERE case_id = 'CASE 2.4.39' AND tier = 'full';
-UPDATE public.economics_cases SET tactical_explanations = ARRAY['TRUE — Inflation is a sustained rise in the general price level, which changes the real goods a given nominal sum can buy. One shop’s promotion or a single relative price move is not the same thing.
-
-Anchor the claim in money’s functions, the circular flow of income and spending, public-good properties, transfers versus pure public provision, or gains from specialisation. Focus points: inflation.
-
-Held against the chapter test (here: inflation), each operative word earns its place: the category, the comparison, and the mechanism survive when checked one by one.
-
-Nothing in the stem contradicts that reading, so the assertion stands as a correct application of the definition.
-
-The statement is true.
-', 'TRUE — Inflation is a sustained rise in the general price level, which changes the real goods a given nominal sum can buy. One shop’s promotion or a single relative price move is not the same thing.
-
-Tie the claim to limited means versus unlimited ends, to goods versus services, or to the household/entrepreneur role actually performing the action in the stem. Focus points: inflation.
-
-Held against the chapter test (here: inflation), each operative word earns its place: the category, the comparison, and the mechanism survive when checked one by one.
-
-Nothing in the stem contradicts that reading, so the assertion stands as a correct application of the definition.
-
-The statement is true.
-', 'FALSE — Inflation is a sustained rise in the general price level, which changes the real goods a given nominal sum can buy. One shop’s promotion or a single relative price move is not the same thing.
-
-Do not collapse money’s three functions into one, treat one shop’s price change as inflation, or convert every tax-funded item into a pure public good. Specialisation raises output but also creates interdependence — denying either side misstates the lesson.
-
-Held against the chapter test, the familiar vocabulary may sound economic, but the operative restriction or reason fails — so the sentence mislabels the situation.
-
-Swap in the correct criterion and the sentence no longer describes the case — that is enough to mark it false.
-
-The statement is false.
-', 'TRUE — Inflation is a sustained rise in the general price level, which changes the real goods a given nominal sum can buy. One shop’s promotion or a single relative price move is not the same thing.
-
-Inflation persistently above income growth cuts real consumption for unchanged nominal cash.
-
-Held against the chapter test (here: Inflation), each operative word earns its place: the category, the comparison, and the mechanism survive when checked one by one.
-
-Under that classification the claim describes the situation correctly rather than a lookalike category.
-
-The statement is true.
-', 'TRUE — Connect the claim to money’s functions, the circular flow of income and spending, public goods and transfers, or gains and interdependence from specialisation.
-
-Walk the definition onto the stem’s actors and constraints, then confirm the sentence’s category and reason both survive that check.
-
-Held against the chapter test, each operative word earns its place: the category, the comparison, and the mechanism survive when checked one by one.
-
-The sentence therefore reports the concept accurately for this item once the definition is held fixed.
-
-The statement is true.
-'] WHERE case_id = 'CASE 2.4.40' AND tier = 'full';
-UPDATE public.economics_cases SET tactical_explanations = ARRAY['TRUE — Money’s three functions are medium of exchange (accepted in payment), unit of account (common price measure), and store of value (carrying purchasing power over time). The functions are related but distinct.
-
-Tie the claim to limited means versus unlimited ends, to goods versus services, or to the household/entrepreneur role actually performing the action in the stem.
-
-Held against the chapter test, each operative word earns its place: the category, the comparison, and the mechanism survive when checked one by one.
-
-The sentence therefore reports the concept accurately for this item once the definition is held fixed.
-
-The statement is true.
-', 'TRUE — Public goods are typically non-excludable and non-rival: excluding non-payers is hard and one person’s use does not much reduce another’s. Tax finance or a subsidy alone does not automatically turn every product into a pure public good.
-
-Tie the claim to limited means versus unlimited ends, to goods versus services, or to the household/entrepreneur role actually performing the action in the stem. Focus points: goods.
-
-Held against the chapter test (here: goods), each operative word earns its place: the category, the comparison, and the mechanism survive when checked one by one.
-
-Under that classification the claim describes the situation correctly rather than a lookalike category.
-
-The statement is true.
-', 'TRUE — Inflation is a sustained rise in the general price level, which changes the real goods a given nominal sum can buy. One shop’s promotion or a single relative price move is not the same thing.
-
-Anchor the claim in money’s functions, the circular flow of income and spending, public-good properties, transfers versus pure public provision, or gains from specialisation. Focus points: Inflation.
-
-Held against the chapter test (here: Inflation), each operative word earns its place: the category, the comparison, and the mechanism survive when checked one by one.
-
-The sentence therefore reports the concept accurately for this item once the definition is held fixed.
-
-The statement is true.
-', 'TRUE — Division of labour assigns stages to different workers so repetition raises output per person. Specialisation also creates interdependence: a delay at one station can stall the next.
-
-Division of labour raises productivity but may bring monotony and interdependent bottlenecks.
-
-Held against the chapter test, each operative word earns its place: the category, the comparison, and the mechanism survive when checked one by one.
-
-Nothing in the stem contradicts that reading, so the assertion stands as a correct application of the definition.
-
-The statement is true.
-', 'FALSE — In the circular flow, firms pay households for factor services and households return spending as consumption revenue to firms. Extended diagrams add taxes, transfers, and government purchases without erasing that loop.
-
-Salary, registration status, or use of money does not abolish scarcity, redefine goods as services, or bar households from exchange. Absolute exclusions are the usual failure mode. Focus points: government.
-
-Held against the chapter test (here: government), the familiar vocabulary may sound economic, but the operative restriction or reason fails — so the sentence mislabels the situation.
-
-Restore the textbook test and the assertion falls away: it mislabels the category or reverses the comparison the chapter actually teaches.
-
-This item’s published answer key marks the claim as shown; score the letter to that key while keeping the chapter definition clear for revision.
-
-The statement is false.
-'] WHERE case_id = 'CASE 2.4.41' AND tier = 'full';
-UPDATE public.economics_cases SET tactical_explanations = ARRAY['TRUE — Division of labour assigns stages to different workers so repetition raises output per person. Specialisation also creates interdependence: a delay at one station can stall the next.
-
-Anchor the claim in money’s functions, the circular flow of income and spending, public-good properties, transfers versus pure public provision, or gains from specialisation.
-
-Map that definition onto the case where a logistics warehouse where pickers handle one product category while packers work downstream. The claim’s actors and constraints line up with the concept: the sentence describes the same mechanism the chapter teaches, not a neighbouring idea with similar vocabulary.
-
-Under that classification the claim describes the situation correctly rather than a lookalike category.
-
-The statement is true.
-', 'FALSE — Division of labour assigns stages to different workers so repetition raises output per person. Specialisation also creates interdependence: a delay at one station can stall the next.
-
-The claim confuses a shift with a movement, or misreads surplus/shortage signs. Cutting price raises quantity demanded; vacant stock at a sticky asking price usually signals the price is too high, not too low. Focus points: shift.
-
-Map that definition onto the case where a logistics warehouse where pickers handle one product category while packers work downstream. Even if the stem mentions related details (here: shift), those details do not carry the claim’s conclusion — the sentence either widens the concept past its test or attaches the wrong label to the facts.
-
-The mismatch is in the defining feature, not in a missing buzzword; fix the feature and the claim disappears.
-
-This item’s published answer key marks the claim as shown; score the letter to that key while keeping the chapter definition clear for revision.
-
-The statement is false.
-', 'TRUE — Division of labour assigns stages to different workers so repetition raises output per person. Specialisation also creates interdependence: a delay at one station can stall the next.
-
-Anchor the claim in money’s functions, the circular flow of income and spending, public-good properties, transfers versus pure public provision, or gains from specialisation.
-
-Map that definition onto the case where a logistics warehouse where pickers handle one product category while packers work downstream. The claim’s actors and constraints line up with the concept: the sentence describes the same mechanism the chapter teaches, not a neighbouring idea with similar vocabulary.
-
-Keep the reason clause: it names why the classification holds (forgone alternative, scope of analysis, price signal, or institutional rule) rather than restating the conclusion alone.
-
-This item’s published answer key marks the claim as shown; score the letter to that key while keeping the chapter definition clear for revision.
-
-The statement is true.
-', 'TRUE — Connect the claim to money’s functions, the circular flow of income and spending, public goods and transfers, or gains and interdependence from specialisation.
-
-Walk the definition onto the stem’s actors and constraints, then confirm the sentence’s category and reason both survive that check.
-
-Map that definition onto the case where a logistics warehouse where pickers handle one product category while packers work downstream. The claim’s actors and constraints line up with the concept: the sentence describes the same mechanism the chapter teaches, not a neighbouring idea with similar vocabulary.
-
-Nothing in the stem contradicts that reading, so the assertion stands as a correct application of the definition.
-
-The statement is true.
-', 'FALSE — Division of labour assigns stages to different workers so repetition raises output per person. Specialisation also creates interdependence: a delay at one station can stall the next.
-
-Do not collapse money’s three functions into one, treat one shop’s price change as inflation, or convert every tax-funded item into a pure public good. Specialisation raises output but also creates interdependence — denying either side misstates the lesson.
-
-Map that definition onto the case where a logistics warehouse where pickers handle one product category while packers work downstream. Even if the stem mentions related details, those details do not carry the claim’s conclusion — the sentence either widens the concept past its test or attaches the wrong label to the facts.
-
-Absolute wording is the trap: economics definitions leave room for counterexamples — another actor, another scope, a non-money cost, or a public function that still exists. One clear counterexample rejects the sentence.
-
-This item’s published answer key marks the claim as shown; score the letter to that key while keeping the chapter definition clear for revision.
-
-The statement is false.
-'] WHERE case_id = 'CASE 2.4.42' AND tier = 'full';
-UPDATE public.economics_cases SET tactical_explanations = ARRAY['TRUE — Money’s three functions are medium of exchange (accepted in payment), unit of account (common price measure), and store of value (carrying purchasing power over time). The functions are related but distinct.
-
-Walk the definition onto the stem’s actors and constraints, then confirm the sentence’s category and reason both survive that check.
-
-Held against the chapter test, each operative word earns its place: the category, the comparison, and the mechanism survive when checked one by one.
-
-Nothing in the stem contradicts that reading, so the assertion stands as a correct application of the definition.
-
-The statement is true.
-', 'FALSE — Money’s three functions are medium of exchange (accepted in payment), unit of account (common price measure), and store of value (carrying purchasing power over time). The functions are related but distinct.
-
-A unit of account is precisely about numeric measurement of value; it does not eliminate prices.
-
-Held against the chapter test (here: goods), the familiar vocabulary may sound economic, but the operative restriction or reason fails — so the sentence mislabels the situation.
-
-The because-clause attaches the wrong reason to the label. A real detail (a national programme, a zero wage, shared premises, use of money) does not justify the over-broad conclusion.
-
-The statement is false.
-', 'FALSE — Money’s three functions are medium of exchange (accepted in payment), unit of account (common price measure), and store of value (carrying purchasing power over time). The functions are related but distinct.
-
-Salary, registration status, or use of money does not abolish scarcity, redefine goods as services, or bar households from exchange. Absolute exclusions are the usual failure mode.
-
-Held against the chapter test, the familiar vocabulary may sound economic, but the operative restriction or reason fails — so the sentence mislabels the situation.
-
-Restore the textbook test and the assertion falls away: it mislabels the category or reverses the comparison the chapter actually teaches.
-
-The statement is false.
-', 'FALSE — Money’s three functions are medium of exchange (accepted in payment), unit of account (common price measure), and store of value (carrying purchasing power over time). The functions are related but distinct.
-
-Salary, registration status, or use of money does not abolish scarcity, redefine goods as services, or bar households from exchange. Absolute exclusions are the usual failure mode.
-
-Held against the chapter test, the familiar vocabulary may sound economic, but the operative restriction or reason fails — so the sentence mislabels the situation.
-
-The mismatch is in the defining feature, not in a missing buzzword; fix the feature and the claim disappears.
-
-The statement is false.
-', 'FALSE — Inflation is a sustained rise in the general price level, which changes the real goods a given nominal sum can buy. One shop’s promotion or a single relative price move is not the same thing.
-
-Do not collapse money’s three functions into one, treat one shop’s price change as inflation, or convert every tax-funded item into a pure public good. Specialisation raises output but also creates interdependence — denying either side misstates the lesson. Focus points: Inflation.
-
-Held against the chapter test (here: Inflation), the familiar vocabulary may sound economic, but the operative restriction or reason fails — so the sentence mislabels the situation.
-
-Swap in the correct criterion and the sentence no longer describes the case — that is enough to mark it false.
-
-The statement is false.
-'] WHERE case_id = 'CASE 2.4.43' AND tier = 'full';
-UPDATE public.economics_cases SET tactical_explanations = ARRAY['TRUE — In the circular flow, firms pay households for factor services and households return spending as consumption revenue to firms. Extended diagrams add taxes, transfers, and government purchases without erasing that loop.
-
-Household saving withdraws part of income from immediate consumption in extended flow diagrams.
-
-Held against the chapter test (here: Household), each operative word earns its place: the category, the comparison, and the mechanism survive when checked one by one.
-
-Under that classification the claim describes the situation correctly rather than a lookalike category.
-
-The statement is true.
-', 'TRUE — Taxes, transfers, and subsidies link government budgets to household and firm budgets. Transfers pursue distributional goals; they differ from providing a non-excludable public good, though both appear in public finance.
-
-Sort the system by who decides output: central directives and quotas versus private decisions and price signals, with social-market or eco-social overlays adding labour and environmental institutions without erasing competition. Focus points: transfer, government.
-
-Held against the chapter test (here: transfer, government), each operative word earns its place: the category, the comparison, and the mechanism survive when checked one by one.
-
-Nothing in the stem contradicts that reading, so the assertion stands as a correct application of the definition.
-
-The statement is true.
-', 'TRUE — In the circular flow, firms pay households for factor services and households return spending as consumption revenue to firms. Extended diagrams add taxes, transfers, and government purchases without erasing that loop.
-
-Anchor the claim in money’s functions, the circular flow of income and spending, public-good properties, transfers versus pure public provision, or gains from specialisation. Focus points: Government.
-
-Held against the chapter test (here: Government), each operative word earns its place: the category, the comparison, and the mechanism survive when checked one by one.
-
-The sentence therefore reports the concept accurately for this item once the definition is held fixed.
-
-The statement is true.
-', 'TRUE — In the circular flow, firms pay households for factor services and households return spending as consumption revenue to firms. Extended diagrams add taxes, transfers, and government purchases without erasing that loop.
-
-Tie the claim to limited means versus unlimited ends, to goods versus services, or to the household/entrepreneur role actually performing the action in the stem.
-
-Held against the chapter test, each operative word earns its place: the category, the comparison, and the mechanism survive when checked one by one.
-
-Nothing in the stem contradicts that reading, so the assertion stands as a correct application of the definition.
-
-This item’s published answer key marks the claim as shown; score the letter to that key while keeping the chapter definition clear for revision.
-
-The statement is true.
-', 'TRUE — Taxes, transfers, and subsidies link government budgets to household and firm budgets. Transfers pursue distributional goals; they differ from providing a non-excludable public good, though both appear in public finance.
-
-Leakages and injections frame how public finance connects to private income and expenditure.
-
-Held against the chapter test, each operative word earns its place: the category, the comparison, and the mechanism survive when checked one by one.
-
-Under that classification the claim describes the situation correctly rather than a lookalike category.
-
-The statement is true.
-'] WHERE case_id = 'CASE 2.4.44' AND tier = 'full';
-UPDATE public.economics_cases SET tactical_explanations = ARRAY['TRUE — Taxes, transfers, and subsidies link government budgets to household and firm budgets. Transfers pursue distributional goals; they differ from providing a non-excludable public good, though both appear in public finance.
-
-Energy bill subsidies lower what households pay for a rival, excludable metered service — transfers/support, not a pure public good.
-
-Held against the chapter test (here: government, service), each operative word earns its place: the category, the comparison, and the mechanism survive when checked one by one.
-
-The sentence therefore reports the concept accurately for this item once the definition is held fixed.
-
-The statement is true.
-', 'TRUE — Public goods are typically non-excludable and non-rival: excluding non-payers is hard and one person’s use does not much reduce another’s. Tax finance or a subsidy alone does not automatically turn every product into a pure public good.
-
-Tie the claim to limited means versus unlimited ends, to goods versus services, or to the household/entrepreneur role actually performing the action in the stem. Focus points: goods.
-
-Held against the chapter test (here: goods), each operative word earns its place: the category, the comparison, and the mechanism survive when checked one by one.
-
-Keep the reason clause: it names why the classification holds (forgone alternative, scope of analysis, price signal, or institutional rule) rather than restating the conclusion alone.
-
-The statement is true.
-', 'FALSE — In the circular flow, firms pay households for factor services and households return spending as consumption revenue to firms. Extended diagrams add taxes, transfers, and government purchases without erasing that loop.
-
-Salary, registration status, or use of money does not abolish scarcity, redefine goods as services, or bar households from exchange. Absolute exclusions are the usual failure mode. Focus points: Subsidy, government, household.
-
-Held against the chapter test (here: Subsidy, government, household), the familiar vocabulary may sound economic, but the operative restriction or reason fails — so the sentence mislabels the situation.
-
-Swap in the correct criterion and the sentence no longer describes the case — that is enough to mark it false.
-
-This item’s published answer key marks the claim as shown; score the letter to that key while keeping the chapter definition clear for revision.
-
-The statement is false.
-', 'FALSE — Public goods are typically non-excludable and non-rival: excluding non-payers is hard and one person’s use does not much reduce another’s. Tax finance or a subsidy alone does not automatically turn every product into a pure public good.
-
-Government payment does not automatically make energy non-excludable; meters still exclude non-payers.
-
-Held against the chapter test (here: government, good), the familiar vocabulary may sound economic, but the operative restriction or reason fails — so the sentence mislabels the situation.
-
-The mismatch is in the defining feature, not in a missing buzzword; fix the feature and the claim disappears.
-
-The statement is false.
-', 'FALSE — Taxes, transfers, and subsidies link government budgets to household and firm budgets. Transfers pursue distributional goals; they differ from providing a non-excludable public good, though both appear in public finance.
-
-Market systems still keep courts and defence; planned systems still face scarcity; using money does not make coordination mechanisms identical. Absolute bans or “never/always” transition claims overreach. Focus points: Transfer.
-
-Held against the chapter test (here: Transfer), the familiar vocabulary may sound economic, but the operative restriction or reason fails — so the sentence mislabels the situation.
-
-Restore the textbook test and the assertion falls away: it mislabels the category or reverses the comparison the chapter actually teaches.
-
-This item’s published answer key marks the claim as shown; score the letter to that key while keeping the chapter definition clear for revision.
-
-The statement is false.
-'] WHERE case_id = 'CASE 2.4.45' AND tier = 'full';
-UPDATE public.economics_cases SET tactical_explanations = ARRAY['TRUE — Division of labour assigns stages to different workers so repetition raises output per person. Specialisation also creates interdependence: a delay at one station can stall the next.
-
-Anchor the claim in money’s functions, the circular flow of income and spending, public-good properties, transfers versus pure public provision, or gains from specialisation.
-
-Map that definition onto the case where a textile plant where spinning, weaving, dyeing, and finishing operate as separate specialised departments. The claim’s actors and constraints line up with the concept: the sentence describes the same mechanism the chapter teaches, not a neighbouring idea with similar vocabulary.
-
-Nothing in the stem contradicts that reading, so the assertion stands as a correct application of the definition.
-
-The statement is true.
-', 'TRUE — Division of labour assigns stages to different workers so repetition raises output per person. Specialisation also creates interdependence: a delay at one station can stall the next.
-
-Walk the definition onto the stem’s actors and constraints, then confirm the sentence’s category and reason both survive that check.
-
-Map that definition onto the case where a textile plant where spinning, weaving, dyeing, and finishing operate as separate specialised departments. The claim’s actors and constraints line up with the concept: the sentence describes the same mechanism the chapter teaches, not a neighbouring idea with similar vocabulary.
-
-The sentence therefore reports the concept accurately for this item once the definition is held fixed.
-
-The statement is true.
-', 'FALSE — Division of labour assigns stages to different workers so repetition raises output per person. Specialisation also creates interdependence: a delay at one station can stall the next.
-
-Textile production is classically specialised by stage; workers need not personally do every stage.
-
-Map that definition onto the case where a textile plant where spinning, weaving, dyeing, and finishing operate as separate specialised departments. Even if the stem mentions related details, those details do not carry the claim’s conclusion — the sentence either widens the concept past its test or attaches the wrong label to the facts.
-
-The absolute quantifier is doing the damage. Soften it to the chapter’s actual scope and the remaining content no longer supports a false blanket rule.
-
-The statement is false.
-', 'FALSE — Connect the claim to money’s functions, the circular flow of income and spending, public goods and transfers, or gains and interdependence from specialisation.
-
-Walk the definition onto the stem’s actors and constraints, then spot where the sentence’s category or absolute reason breaks that check.
-
-Map that definition onto the case where a textile plant where spinning, weaving, dyeing, and finishing operate as separate specialised departments. Even if the stem mentions related details, those details do not carry the claim’s conclusion — the sentence either widens the concept past its test or attaches the wrong label to the facts.
-
-Words such as only/never/always stretch a limited idea past what the definition allows; restore the ordinary exceptions and the claim collapses.
-
-The statement is false.
-', 'FALSE — Division of labour assigns stages to different workers so repetition raises output per person. Specialisation also creates interdependence: a delay at one station can stall the next.
-
-Coordinated specialisation typically lowers average cost when productivity rises — it does not always raise cost despite gains.
-
-Map that definition onto the case where a textile plant where spinning, weaving, dyeing, and finishing operate as separate specialised departments. Even if the stem mentions related details, those details do not carry the claim’s conclusion — the sentence either widens the concept past its test or attaches the wrong label to the facts.
-
-The absolute quantifier is doing the damage. Soften it to the chapter’s actual scope and the remaining content no longer supports a false blanket rule.
-
-The statement is false.
-'] WHERE case_id = 'CASE 2.4.46' AND tier = 'full';
-UPDATE public.economics_cases SET tactical_explanations = ARRAY['TRUE — Money’s three functions are medium of exchange (accepted in payment), unit of account (common price measure), and store of value (carrying purchasing power over time). The functions are related but distinct.
-
-Tie the claim to limited means versus unlimited ends, to goods versus services, or to the household/entrepreneur role actually performing the action in the stem. Focus points: barter.
-
-Held against the chapter test (here: barter), each operative word earns its place: the category, the comparison, and the mechanism survive when checked one by one.
-
-Under that classification the claim describes the situation correctly rather than a lookalike category.
-
-The statement is true.
-', 'TRUE — Inflation is a sustained rise in the general price level, which changes the real goods a given nominal sum can buy. One shop’s promotion or a single relative price move is not the same thing.
-
-Anchor the claim in money’s functions, the circular flow of income and spending, public-good properties, transfers versus pure public provision, or gains from specialisation. Focus points: Inflation.
-
-Held against the chapter test (here: Inflation), each operative word earns its place: the category, the comparison, and the mechanism survive when checked one by one.
-
-Under that classification the claim describes the situation correctly rather than a lookalike category.
-
-The statement is true.
-', 'TRUE — Public goods are typically non-excludable and non-rival: excluding non-payers is hard and one person’s use does not much reduce another’s. Tax finance or a subsidy alone does not automatically turn every product into a pure public good.
-
-Tie the claim to limited means versus unlimited ends, to goods versus services, or to the household/entrepreneur role actually performing the action in the stem. Focus points: goods, services.
-
-Held against the chapter test (here: goods, services), each operative word earns its place: the category, the comparison, and the mechanism survive when checked one by one.
-
-The sentence therefore reports the concept accurately for this item once the definition is held fixed.
-
-The statement is true.
-', 'TRUE — Division of labour assigns stages to different workers so repetition raises output per person. Specialisation also creates interdependence: a delay at one station can stall the next.
-
-Anchor the claim in money’s functions, the circular flow of income and spending, public-good properties, transfers versus pure public provision, or gains from specialisation.
-
-Held against the chapter test, each operative word earns its place: the category, the comparison, and the mechanism survive when checked one by one.
-
-Nothing in the stem contradicts that reading, so the assertion stands as a correct application of the definition.
-
-The statement is true.
-', 'TRUE — In the circular flow, firms pay households for factor services and households return spending as consumption revenue to firms. Extended diagrams add taxes, transfers, and government purchases without erasing that loop.
-
-Circular-flow models link factor supply, production, income, spending, and government tax and transfers.
-
-Held against the chapter test (here: household, supply, firm, government), each operative word earns its place: the category, the comparison, and the mechanism survive when checked one by one.
-
-Nothing in the stem contradicts that reading, so the assertion stands as a correct application of the definition.
-
-The statement is true.
-'] WHERE case_id = 'CASE 2.4.47' AND tier = 'full';
-UPDATE public.economics_cases SET tactical_explanations = ARRAY['TRUE — Inflation is a sustained rise in the general price level, which changes the real goods a given nominal sum can buy. One shop’s promotion or a single relative price move is not the same thing.
-
-Anchor the claim in money’s functions, the circular flow of income and spending, public-good properties, transfers versus pure public provision, or gains from specialisation. Focus points: inflation.
-
-Held against the chapter test (here: inflation), each operative word earns its place: the category, the comparison, and the mechanism survive when checked one by one.
-
-Under that classification the claim describes the situation correctly rather than a lookalike category.
-
-The statement is true.
-', 'TRUE — Money’s three functions are medium of exchange (accepted in payment), unit of account (common price measure), and store of value (carrying purchasing power over time). The functions are related but distinct.
-
-Anchor the claim in money’s functions, the circular flow of income and spending, public-good properties, transfers versus pure public provision, or gains from specialisation.
-
-Held against the chapter test, each operative word earns its place: the category, the comparison, and the mechanism survive when checked one by one.
-
-Under that classification the claim describes the situation correctly rather than a lookalike category.
-
-The statement is true.
-', 'FALSE — Inflation is a sustained rise in the general price level, which changes the real goods a given nominal sum can buy. One shop’s promotion or a single relative price move is not the same thing.
-
-Slightly-below-two-percent inflation is still positive; cash holders do not gain real purchasing power every year without exception.
-
-Held against the chapter test (here: inflation), the familiar vocabulary may sound economic, but the operative restriction or reason fails — so the sentence mislabels the situation.
-
-Words such as only/never/always stretch a limited idea past what the definition allows; restore the ordinary exceptions and the claim collapses.
-
-The statement is false.
-', 'TRUE — Inflation is a sustained rise in the general price level, which changes the real goods a given nominal sum can buy. One shop’s promotion or a single relative price move is not the same thing.
-
-The ECB stability target contrasts with very high inflation that rapidly destroys real balances.
-
-Held against the chapter test (here: inflation), each operative word earns its place: the category, the comparison, and the mechanism survive when checked one by one.
-
-Nothing in the stem contradicts that reading, so the assertion stands as a correct application of the definition.
-
-The statement is true.
-', 'TRUE — Connect the claim to money’s functions, the circular flow of income and spending, public goods and transfers, or gains and interdependence from specialisation.
-
-Walk the definition onto the stem’s actors and constraints, then confirm the sentence’s category and reason both survive that check.
-
-Held against the chapter test, each operative word earns its place: the category, the comparison, and the mechanism survive when checked one by one.
-
-Nothing in the stem contradicts that reading, so the assertion stands as a correct application of the definition.
-
-The statement is true.
-'] WHERE case_id = 'CASE 2.4.48' AND tier = 'full';
-UPDATE public.economics_cases SET tactical_explanations = ARRAY['TRUE — Taxes, transfers, and subsidies link government budgets to household and firm budgets. Transfers pursue distributional goals; they differ from providing a non-excludable public good, though both appear in public finance.
-
-Tie the claim to limited means versus unlimited ends, to goods versus services, or to the household/entrepreneur role actually performing the action in the stem. Focus points: government, transfer.
-
-Held against the chapter test (here: government, transfer), each operative word earns its place: the category, the comparison, and the mechanism survive when checked one by one.
-
-The sentence therefore reports the concept accurately for this item once the definition is held fixed.
-
-The statement is true.
-', 'FALSE — Taxes, transfers, and subsidies link government budgets to household and firm budgets. Transfers pursue distributional goals; they differ from providing a non-excludable public good, though both appear in public finance.
-
-Salary, registration status, or use of money does not abolish scarcity, redefine goods as services, or bar households from exchange. Absolute exclusions are the usual failure mode. Focus points: Transfer.
-
-Held against the chapter test (here: Transfer), the familiar vocabulary may sound economic, but the operative restriction or reason fails — so the sentence mislabels the situation.
-
-Restore the textbook test and the assertion falls away: it mislabels the category or reverses the comparison the chapter actually teaches.
-
-This item’s published answer key marks the claim as shown; score the letter to that key while keeping the chapter definition clear for revision.
-
-The statement is false.
-', 'FALSE — Public goods are typically non-excludable and non-rival: excluding non-payers is hard and one person’s use does not much reduce another’s. Tax finance or a subsidy alone does not automatically turn every product into a pure public good.
-
-Tax funding does not make child benefit a pure public good; it is a targeted transfer of purchasing power.
-
-Held against the chapter test (here: household, good), the familiar vocabulary may sound economic, but the operative restriction or reason fails — so the sentence mislabels the situation.
-
-The absolute quantifier is doing the damage. Soften it to the chapter’s actual scope and the remaining content no longer supports a false blanket rule.
-
-The statement is false.
-', 'FALSE — Public goods are typically non-excludable and non-rival: excluding non-payers is hard and one person’s use does not much reduce another’s. Tax finance or a subsidy alone does not automatically turn every product into a pure public good.
-
-Salary, registration status, or use of money does not abolish scarcity, redefine goods as services, or bar households from exchange. Absolute exclusions are the usual failure mode. Focus points: services, defence.
-
-Held against the chapter test (here: services, defence), the familiar vocabulary may sound economic, but the operative restriction or reason fails — so the sentence mislabels the situation.
-
-The mismatch is in the defining feature, not in a missing buzzword; fix the feature and the claim disappears.
-
-This item’s published answer key marks the claim as shown; score the letter to that key while keeping the chapter definition clear for revision.
-
-The statement is false.
-', 'FALSE — In the circular flow, firms pay households for factor services and households return spending as consumption revenue to firms. Extended diagrams add taxes, transfers, and government purchases without erasing that loop.
-
-Do not collapse money’s three functions into one, treat one shop’s price change as inflation, or convert every tax-funded item into a pure public good. Specialisation raises output but also creates interdependence — denying either side misstates the lesson. Focus points: Government.
-
-Held against the chapter test (here: Government), the familiar vocabulary may sound economic, but the operative restriction or reason fails — so the sentence mislabels the situation.
-
-Restore the textbook test and the assertion falls away: it mislabels the category or reverses the comparison the chapter actually teaches.
-
-This item’s published answer key marks the claim as shown; score the letter to that key while keeping the chapter definition clear for revision.
-
-The statement is false.
-'] WHERE case_id = 'CASE 2.4.49' AND tier = 'full';
-UPDATE public.economics_cases SET tactical_explanations = ARRAY['TRUE — Connect the claim to money’s functions, the circular flow of income and spending, public goods and transfers, or gains and interdependence from specialisation.
-
-Street camera coverage benefits many residents who are hard to exclude from safer surroundings.
-
-Map that definition onto the case where a city council debates funding street security cameras through general taxation versus private subscriptions only. The claim’s actors and constraints line up with the concept: the sentence describes the same mechanism the chapter teaches, not a neighbouring idea with similar vocabulary.
-
-Under that classification the claim describes the situation correctly rather than a lookalike category.
-
-The statement is true.
-', 'TRUE — Connect the claim to money’s functions, the circular flow of income and spending, public goods and transfers, or gains and interdependence from specialisation.
-
-Subscription-only funding underprovides when non-subscribers still gain from nearby deterrence — free-rider pressure.
-
-Map that definition onto the case where a city council debates funding street security cameras through general taxation versus private subscriptions only. The claim’s actors and constraints line up with the concept: the sentence describes the same mechanism the chapter teaches, not a neighbouring idea with similar vocabulary.
-
-Keep the reason clause: it names why the classification holds (forgone alternative, scope of analysis, price signal, or institutional rule) rather than restating the conclusion alone.
-
-The statement is true.
-', 'TRUE — Taxes, transfers, and subsidies link government budgets to household and firm budgets. Transfers pursue distributional goals; they differ from providing a non-excludable public good, though both appear in public finance.
-
-Walk the definition onto the stem’s actors and constraints, then confirm the sentence’s category and reason both survive that check.
-
-Map that definition onto the case where a city council debates funding street security cameras through general taxation versus private subscriptions only. The claim’s actors and constraints line up with the concept: the sentence describes the same mechanism the chapter teaches, not a neighbouring idea with similar vocabulary.
-
-The sentence therefore reports the concept accurately for this item once the definition is held fixed.
-
-The statement is true.
-', 'FALSE — Connect the claim to money’s functions, the circular flow of income and spending, public goods and transfers, or gains and interdependence from specialisation.
-
-Shared street safety from cameras often lacks perfect excludability — not pure private goods in every neighbourhood context.
-
-Map that definition onto the case where a city council debates funding street security cameras through general taxation versus private subscriptions only. Even if the stem mentions related details (here: goods), those details do not carry the claim’s conclusion — the sentence either widens the concept past its test or attaches the wrong label to the facts.
-
-The absolute quantifier is doing the damage. Soften it to the chapter’s actual scope and the remaining content no longer supports a false blanket rule.
-
-The statement is false.
-', 'FALSE — In the circular flow, firms pay households for factor services and households return spending as consumption revenue to firms. Extended diagrams add taxes, transfers, and government purchases without erasing that loop.
-
-Salary, registration status, or use of money does not abolish scarcity, redefine goods as services, or bar households from exchange. Absolute exclusions are the usual failure mode. Focus points: government, household.
-
-Map that definition onto the case where a city council debates funding street security cameras through general taxation versus private subscriptions only. Even if the stem mentions related details (here: government, household), those details do not carry the claim’s conclusion — the sentence either widens the concept past its test or attaches the wrong label to the facts.
-
-Swap in the correct criterion and the sentence no longer describes the case — that is enough to mark it false.
-
-This item’s published answer key marks the claim as shown; score the letter to that key while keeping the chapter definition clear for revision.
-
-The statement is false.
-'] WHERE case_id = 'CASE 2.4.50' AND tier = 'full';
+The statement is false.'] WHERE case_id = 'CASE 2.4.50' AND tier = 'full';

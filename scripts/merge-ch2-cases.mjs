@@ -49,9 +49,9 @@ for (const c of cases) {
       // soft: prefer ending punctuation
       if (typeof s === "string" && s.length < 40) errors.push(`${c.case_id}[${i}]: statement too short`);
     }
-    const pref = c.answer_key[i] ? "TRUE —" : "FALSE —";
-    if (!String(c.tactical_explanations[i] || "").startsWith(pref)) {
-      errors.push(`${c.case_id}[${i}]: explanation prefix mismatch`);
+    const body = String(c.tactical_explanations[i] || "").trim();
+    if (!body || /^(TRUE|FALSE)\s*[—–-]/.test(body)) {
+      errors.push(`${c.case_id}[${i}]: explanation must be teacher prose without TRUE/FALSE dash lead`);
     }
     const fp = s.trim().toLowerCase();
     if (statementFingerprints.has(fp)) {

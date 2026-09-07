@@ -6,6 +6,7 @@ import { ExplanationProse } from "@/components/ExplanationProse";
 import { ExplanationText } from "@/components/ExplanationText";
 import { FlashcardMath } from "@/components/FlashcardMath";
 import { scrubStatementHints } from "@/lib/case-context";
+import { cleanExplanation } from "@/lib/clean-explanation";
 import type { ExamQuestion } from "@/lib/mock-exams";
 import { ZoomableImage } from "@/components/ZoomableImage";
 import { cn } from "@/lib/utils";
@@ -95,10 +96,11 @@ export function ExamExplanationText({
       </p>
     );
   }
+  const cleaned = cleanExplanation(text);
   if (q.subject === "english") {
-    return <ExplanationProse text={text} className={className} />;
+    return <ExplanationProse text={cleaned} className={className} />;
   }
-  return <ExplanationText text={text} className={className} />;
+  return <ExplanationText text={cleaned} className={className} />;
 }
 
 export function ExamSolutionOverview({
