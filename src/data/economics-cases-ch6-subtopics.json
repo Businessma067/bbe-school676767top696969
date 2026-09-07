@@ -2666,7 +2666,7 @@
       "FALSE — Market-cap change uses the same shares at first and last prices (equals the price change).\n\n$$\n€13.42m \\to €17.33m = 29.2\\%\n$$\n\nThreshold more than 34.2%. Actual 29.2%.\n\nThe statement is false.",
       "TRUE — Percentage change from first to last closing price.\n\n$$\n\\frac{31 - 24}{24} = 29.2\\%\n$$\n\nThreshold more than 19.6%. Actual 29.2%.\n\nThe statement is true.",
       "FALSE — Compare the month of peak price with the month of peak volume.\n\nPeak price month: May (€31).\nPeak volume month: January (89,000 shares).\nThese differ.\n\nThe statement is false.",
-      "FALSE — Compare first and last closing prices.\n\n$$\n24 \\to 31\n$$\n\nThe statement is false."
+      "FALSE — Compare the first and last closing prices in the six-month series.\n\nFirst month close = €24; last month close = €31.\n\n$$\nP_{\\text{last}} - P_{\\text{first}} = 31 - 24 = 7\n$$\n\nThe last price is not below the first, so the claim does not hold.\n\nThe statement is false."
     ]
   },
   {
@@ -8483,7 +8483,7 @@
     ],
     "tactical_explanations": [
       "FALSE — Single-year statements need cautious reading: policies, estimates, and one-offs matter.\n\nThe claim states: Buying software with cash always increases total assets. The reason — a new asset is added without reducing any other asset. — does not support that label under the chapter definitions. Single-year statements need cautious reading: policies, estimates, and one-offs matter. Ratios (liquidity, gearing, margins, returns) put line items in context. Financial accounting serves external users; audits give reasonable, not absolute, assurance.\n\nThe statement is false.",
-      "FALSE — ROE here = operating result ÷ total equity.\n\n$$\n\\frac{192}{736} = 26.1\\%\n$$\n\nThe statement is false.",
+      "FALSE — On this extract, return on equity is operating result ÷ total equity.\n\n$$\nROE = \\frac{192}{736} = 26.1\\%\n$$\n\nThe statement claims ROE exceeds 35.1%. Actual ROE is 26.1%, which is not above that threshold.\n\nThe statement is false.",
       "FALSE — Operating cash flow ÷ operating result.\n\n$$\n91.7\\%\\text{; threshold less than }78.6\\%\n$$\n\nThe statement is false.",
       "FALSE — Form the percentage share of Inventory in total assets from the extract.\n\n$$\n\\frac{223}{1,235} = 18.1\\%\n$$\n\nThreshold: more than 25.7%. Actual 18.1%.\n\nThe statement is false.",
       "TRUE — ROCE = operating result ÷ (equity + non-current liabilities).\n\n$$\n\\frac{192}{1,042} = 18.4\\%\n$$\n\nThe statement is true."
@@ -8726,7 +8726,7 @@
       "FALSE — Equity ratio = equity ÷ total assets.\n\n$$\n\\frac{543}{1,149} = 47.3\\%\n$$\n\nClaimed: exceeds 47.3%. Actual 47.3%.\n\nThe statement is false.",
       "FALSE — Operating cash flow ÷ operating result.\n\n$$\n102.2\\%\\text{; threshold less than }82.1\\%\n$$\n\nThe statement is false.",
       "TRUE — Non-current assets are held for use beyond one accounting period.\n\nUseful life beyond one year plus operating intent (not ordinary resale) define the category.\n\nThe statement is true.",
-      "TRUE — ROE here = operating result ÷ total equity.\n\n$$\n\\frac{227}{543} = 41.8\\%\n$$\n\nThe statement is true."
+      "TRUE — On this extract, return on equity is operating result ÷ total equity.\n\n$$\nROE = \\frac{227}{543} = 41.8\\%\n$$\n\nThe statement claims ROE exceeds 24.6%. Actual ROE is 41.8%, which is above that threshold.\n\nThe statement is true."
     ]
   },
   {
@@ -8903,7 +8903,7 @@
     ],
     "tactical_explanations": [
       "TRUE — Single-year statements need cautious reading: policies, estimates, and one-offs matter.\n\nThe wording matches the relevant rule for \"Return and Cash Flow Extract 17\". Single-year statements need cautious reading: policies, estimates, and one-offs matter. Ratios (liquidity, gearing, margins, returns) put line items in context. Financial accounting serves external users; audits give reasonable, not absolute, assurance. Applied here: \"Purchase of a plant, machinery or other long-term asset for cash is classified as cash flow from investing activities.\"\n\nThe statement is true.",
-      "TRUE — ROE here = operating result ÷ total equity.\n\n$$\n\\frac{171}{508} = 33.7\\%\n$$\n\nThe statement is true.",
+      "TRUE — On this extract, return on equity is operating result ÷ total equity.\n\n$$\nROE = \\frac{171}{508} = 33.7\\%\n$$\n\nThe statement claims ROE exceeds 31.3%. Actual ROE is 33.7%, which is above that threshold.\n\nThe statement is true.",
       "TRUE — Form the percentage share of Inventory in total assets from the extract.\n\n$$\n\\frac{257}{1,071} = 24.0\\%\n$$\n\nThreshold: more than 10.2%. Actual 24.0%.\n\nThe statement is true.",
       "TRUE — Working capital = current assets − current liabilities.\n\n$$\nWC = 448 - 225 = 223\n$$\n\nWorking capital is positive.\n\nThe statement is true.",
       "TRUE — Single-year statements need cautious reading: policies, estimates, and one-offs matter.\n\nThe wording matches the relevant rule for \"Return and Cash Flow Extract 17\". Single-year statements need cautious reading: policies, estimates, and one-offs matter. Ratios (liquidity, gearing, margins, returns) put line items in context. Financial accounting serves external users; audits give reasonable, not absolute, assurance. Applied here: \"Cash flow from investing activities was an outflow this year.\"\n\nThe statement is true."
@@ -9442,10 +9442,10 @@
       false
     ],
     "tactical_explanations": [
-      "FALSE — ROE here = operating result ÷ total equity.\n\n$$\n\\frac{201}{626} = 32.1\\%\n$$\n\nThe statement is false.",
+      "FALSE — On this extract, return on equity is operating result ÷ total equity.\n\n$$\nROE = \\frac{201}{626} = 32.1\\%\n$$\n\nThe statement claims ROE exceeds 41.4%. Actual ROE is 32.1%, which is not above that threshold.\n\nThe statement is false.",
       "FALSE — ROCE = operating result ÷ (equity + non-current liabilities).\n\n$$\n\\frac{201}{1,100} = 18.3\\%\n$$\n\nThe statement is false.",
       "TRUE — Equity ratio = equity ÷ total assets.\n\n$$\n\\frac{626}{1,253} = 50.0\\%\n$$\n\nClaimed: exceeds 47%. Actual 50.0%.\n\nThe statement is true.",
-      "FALSE — Operating cash flow ÷ operating result.\n\n$$\n99.0\\%\\text{; threshold less than }87\\%\n$$\n\nThe statement is false.",
+      "FALSE — Divide operating cash flow by the operating result to see how fully profit is backed by cash.\n\n$$\n\\frac{199}{201} = 99.0\\%\n$$\n\nThreshold: less than 87%. Actual conversion 99.0%, so the claim does not hold.\n\nThe statement is false.",
       "FALSE — Form the percentage share of Inventory in total assets from the extract.\n\n$$\n\\frac{273}{1,253} = 21.8\\%\n$$\n\nThreshold: more than 27.6%. Actual 21.8%.\n\nThe statement is false."
     ]
   },
@@ -10672,7 +10672,7 @@
       false
     ],
     "tactical_explanations": [
-      "FALSE — ROE here = operating result ÷ total equity.\n\n$$\n\\frac{153}{527} = 29.0\\%\n$$\n\nThe statement is false.",
+      "FALSE — On this extract, return on equity is operating result ÷ total equity.\n\n$$\nROE = \\frac{153}{527} = 29.0\\%\n$$\n\nThe statement claims ROE exceeds 32.1%. Actual ROE is 29.0%, which is not above that threshold.\n\nThe statement is false.",
       "FALSE — ROCE = operating result ÷ (equity + non-current liabilities).\n\n$$\n\\frac{153}{930} = 16.5\\%\n$$\n\nThe statement is false.",
       "FALSE — Operating cash flow ÷ operating result.\n\n$$\n92.8\\%\\text{; threshold less than }81.5\\%\n$$\n\nThe statement is false.",
       "TRUE — Equity ratio = equity ÷ total assets.\n\n$$\n\\frac{527}{1,183} = 44.5\\%\n$$\n\nClaimed: exceeds 36.5%. Actual 44.5%.\n\nThe statement is true.",
@@ -14216,7 +14216,7 @@
       "TRUE — Higher inventory turnover means stock sells and is replaced faster, tying up less cash in inventory.\n\n$$\nIT = \\frac{766}{151} = 5.07\n$$\n\nThat interpretation matches the definition.\n\nThe statement is true.",
       "FALSE — Asset turnover = revenue ÷ average total assets.\n\n$$\n\\text{Avg assets} = 868.5, \\quad AT = \\frac{1,116}{868.5} = 1.2850\n$$\n\nClaimed above 1.51. Actual 1.28.\n\nThe statement is false.",
       "TRUE — Read revenue from the extract.\n\nRevenue = €1,116 thousand; threshold exceeds €1,106 thousand.\n\nThe statement is true.",
-      "TRUE — Compare beginning and ending total assets.\n\n$$\n804 \\to 933\n$$\n\nThe statement is true."
+      "TRUE — Compare beginning and ending total assets on the extract.\n\n$$\n\\text{Assets}_{\\text{beg}} = 804, \\quad\n\\text{Assets}_{\\text{end}} = 933\n$$\n\nEnding assets are higher, so total assets grew during the year.\n\nThe statement is true."
     ]
   },
   {
@@ -16013,7 +16013,7 @@
     ],
     "tactical_explanations": [
       "TRUE — ROCE = operating result ÷ (equity + non-current liabilities).\n\n$$\n\\frac{184}{872} = 21.1\\%\n$$\n\nThe statement is true.",
-      "FALSE — ROE here = operating result ÷ total equity.\n\n$$\n\\frac{184}{503} = 36.6\\%\n$$\n\nThe statement is false.",
+      "FALSE — On this extract, return on equity is operating result ÷ total equity.\n\n$$\nROE = \\frac{184}{503} = 36.6\\%\n$$\n\nThe statement claims ROE exceeds 39.5%. Actual ROE is 36.6%, which is not above that threshold.\n\nThe statement is false.",
       "FALSE — Operating cash flow ÷ operating result.\n\n$$\n113.0\\%\\text{; threshold less than }103.3\\%\n$$\n\nThe statement is false.",
       "FALSE — Form the percentage share of Inventory in total assets from the extract.\n\n$$\n\\frac{84}{1,139} = 7.4\\%\n$$\n\nThreshold: more than 14.2%. Actual 7.4%.\n\nThe statement is false.",
       "TRUE — Equity ratio = equity ÷ total assets.\n\n$$\n\\frac{503}{1,139} = 44.2\\%\n$$\n\nClaimed: exceeds 35.4%. Actual 44.2%.\n\nThe statement is true."
@@ -16762,7 +16762,7 @@
       false
     ],
     "tactical_explanations": [
-      "TRUE — ROE here = operating result ÷ total equity.\n\n$$\n\\frac{240}{610} = 39.3\\%\n$$\n\nThe statement is true.",
+      "TRUE — On this extract, return on equity is operating result ÷ total equity.\n\n$$\nROE = \\frac{240}{610} = 39.3\\%\n$$\n\nThe statement claims ROE exceeds 29.7%. Actual ROE is 39.3%, which is above that threshold.\n\nThe statement is true.",
       "FALSE — Operating cash flow ÷ operating result.\n\n$$\n100.0\\%\\text{; threshold less than }82.5\\%\n$$\n\nThe statement is false.",
       "TRUE — ROCE = operating result ÷ (equity + non-current liabilities).\n\n$$\n\\frac{240}{1,025} = 23.4\\%\n$$\n\nThe statement is true.",
       "TRUE — Equity ratio = equity ÷ total assets.\n\n$$\n\\frac{610}{1,270} = 48.0\\%\n$$\n\nClaimed: exceeds 44.5%. Actual 48.0%.\n\nThe statement is true.",
