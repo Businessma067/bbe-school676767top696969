@@ -27,6 +27,7 @@ import {
   MatchingModeArt,
   TutorModeArt,
 } from "@/components/study-modes/ModeArt";
+import { StudyToolsModeNav } from "@/components/study-modes/StudyToolsModeNav";
 import { RequireFullCourse } from "@/components/RequireFullCourse";
 import {
   BookOpen,
@@ -556,6 +557,7 @@ function GamesTab() {
           Practice tools to reinforce Economics, Math, and English for the BBE exam.
         </p>
       </div>
+      <StudyToolsModeNav className="w-full sm:w-auto" />
       <div className="grid gap-3 sm:grid-cols-2 lg:grid-cols-3">
         <Link
           to="/flashcards"
