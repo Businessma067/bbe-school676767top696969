@@ -74,7 +74,7 @@ export function AuthNav() {
     <div className="flex items-center gap-2">
       {auth.role === "admin" && (
         <Link
-          to="/admin"
+          to="/admin/users"
           className="hidden rounded-md border border-border bg-card px-3 py-1.5 text-xs font-semibold text-foreground transition-all hover:bg-secondary sm:inline-flex"
         >
           Admin panel
@@ -124,7 +124,7 @@ export function AuthNav() {
           </LocalizedLink>
           {auth.role === "admin" && (
             <Link
-              to="/admin"
+              to="/admin/users"
               onClick={() => setOpen(false)}
               tabIndex={open ? 0 : -1}
               className="block rounded-md px-3 py-2 text-sm font-semibold text-foreground hover:bg-secondary"

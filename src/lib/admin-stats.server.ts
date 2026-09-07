@@ -173,6 +173,7 @@ export async function fetchUserBundle(
   userId: string,
   email: string,
   registeredAt: string,
+  phone: string | null = null,
 ): Promise<AdminUserDetail> {
   const [
     profileRes,
@@ -300,6 +301,7 @@ export async function fetchUserBundle(
       userId,
       email,
       displayName,
+      phone,
       registeredAt: profileRes.data?.created_at ?? registeredAt,
       lastSeenAt: presenceRes.data?.last_seen_at ?? null,
       lastPath: presenceRes.data?.last_path ?? null,

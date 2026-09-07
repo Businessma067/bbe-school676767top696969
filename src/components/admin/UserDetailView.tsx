@@ -31,6 +31,12 @@ export function UserDetailView({ detail }: { detail: AdminUserDetail }) {
           {p.email || "—"}
         </h2>
         <p className="mt-1 text-sm text-muted-foreground">{p.displayName}</p>
+        {p.phone ? (
+          <p className="mt-1 text-sm text-foreground">
+            <span className="text-muted-foreground">Phone · </span>
+            <span className="font-mono">{p.phone}</span>
+          </p>
+        ) : null}
         <div className="mt-3 flex flex-wrap gap-1.5">
           {detail.enrollments.map((e) => (
             <span

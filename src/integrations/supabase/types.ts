@@ -348,6 +348,7 @@ export type Database = {
           payment_type: string
           product_name: string
           product_slug: string
+          promo_code: string | null
           status: string
           tier: string
           updated_at: string
@@ -372,6 +373,7 @@ export type Database = {
           payment_type?: string
           product_name: string
           product_slug: string
+          promo_code?: string | null
           status?: string
           tier: string
           updated_at?: string
@@ -396,6 +398,7 @@ export type Database = {
           payment_type?: string
           product_name?: string
           product_slug?: string
+          promo_code?: string | null
           status?: string
           tier?: string
           updated_at?: string
@@ -512,11 +515,57 @@ export type Database = {
         }
         Relationships: []
       }
+      promo_usages: {
+        Row: {
+          id: string
+          promocode_id: string
+          code: string
+          user_id: string | null
+          user_email: string | null
+          product_slug: string
+          payment_id: string | null
+          created_at: string
+        }
+        Insert: {
+          id?: string
+          promocode_id: string
+          code: string
+          user_id?: string | null
+          user_email?: string | null
+          product_slug: string
+          payment_id?: string | null
+          created_at?: string
+        }
+        Update: {
+          id?: string
+          promocode_id?: string
+          code?: string
+          user_id?: string | null
+          user_email?: string | null
+          product_slug?: string
+          payment_id?: string | null
+          created_at?: string
+        }
+        Relationships: [
+          {
+            foreignKeyName: "promo_usages_promocode_id_fkey"
+            columns: ["promocode_id"]
+            isOneToOne: false
+            referencedRelation: "promocodes"
+            referencedColumns: ["id"]
+          },
+        ]
+      }
       promocodes: {
         Row: {
           code: string
           created_at: string
+          discount_pct: number | null
+          expires_at: string | null
           id: string
+          kind: string
+          max_uses: number | null
+          name: string | null
           product_slug: string
           used_at: string | null
           used_by: string | null
@@ -525,7 +574,12 @@ export type Database = {
         Insert: {
           code: string
           created_at?: string
+          discount_pct?: number | null
+          expires_at?: string | null
           id?: string
+          kind?: string
+          max_uses?: number | null
+          name?: string | null
           product_slug?: string
           used_at?: string | null
           used_by?: string | null
@@ -534,7 +588,12 @@ export type Database = {
         Update: {
           code?: string
           created_at?: string
+          discount_pct?: number | null
+          expires_at?: string | null
           id?: string
+          kind?: string
+          max_uses?: number | null
+          name?: string | null
           product_slug?: string
           used_at?: string | null
           used_by?: string | null

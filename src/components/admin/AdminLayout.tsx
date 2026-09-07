@@ -73,7 +73,6 @@ export function AdminLayout({ children, title, wide }: Props) {
         <aside className="lg:w-52 lg:shrink-0">
           <p className="text-xs font-semibold uppercase tracking-[0.2em] text-taupe">Admin</p>
           <nav className="mt-3 flex flex-row flex-wrap gap-2 lg:flex-col lg:gap-1">
-            <AdminNavLink to="/admin">Accounts</AdminNavLink>
             <AdminNavLink to="/admin/users">Users</AdminNavLink>
             <AdminNavLink to="/admin/promocodes">Promocodes</AdminNavLink>
           </nav>
@@ -93,14 +92,14 @@ function AdminNavLink({
   to,
   children,
 }: {
-  to: "/admin" | "/admin/users" | "/admin/promocodes";
+  to: "/admin/users" | "/admin/promocodes";
   children: ReactNode;
 }) {
   return (
     <Link
       to={to}
       className="rounded-lg border border-border bg-card px-3 py-2 text-sm font-semibold text-foreground hover:bg-secondary [&.active]:border-primary [&.active]:bg-primary/10 [&.active]:text-primary"
-      activeOptions={{ exact: to === "/admin" }}
+      activeOptions={{ exact: false }}
     >
       {children}
     </Link>

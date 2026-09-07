@@ -11,14 +11,9 @@ import {
 import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs";
 import { AuthModal } from "@/components/AuthModal";
 import { supabase } from "@/integrations/supabase/client";
-import { redeemPromocode } from "@/lib/promo.functions";
+import { redeemPromocode, validateDiscountCode } from "@/lib/promo.functions";
 import { createCheckout } from "@/lib/payments.functions";
-import {
-  DISCOUNT_CODE,
-  DISCOUNT_PCT,
-  PAID_PRODUCTS,
-  type PaidProductSlug,
-} from "@/lib/checkout-catalog";
+import { PAID_PRODUCTS, type PaidProductSlug } from "@/lib/checkout-catalog";
 
 const ORANGE = "#C2643A";
 
@@ -40,24 +35,27 @@ export function PaymentModal({
   const navigate = useNavigate();
   const [method, setMethod] = useState("card");
   const [promoCode, setPromoCode] = useState("");
+  const [appliedPromoCode, setAppliedPromoCode] = useState<string | null>(null);
+  const [discountPct, setDiscountPct] = useState(0);
   const [loading, setLoading] = useState(false);
   const [error, setError] = useState<string | null>(null);
   const [promoUnlocked, setPromoUnlocked] = useState(false);
-  const [discountApplied, setDiscountApplied] = useState(false);
   const [authOpen, setAuthOpen] = useState(false);
 
   const product = PAID_PRODUCTS[productSlug];
-  const uahPrice = Math.round(product.priceUah * (discountApplied ? 1 - DISCOUNT_PCT / 100 : 1));
-  const eurPrice = Math.round(priceEuros * (discountApplied ? 1 - DISCOUNT_PCT / 100 : 1));
+  const discountApplied = discountPct > 0 && !!appliedPromoCode;
+  const uahPrice = Math.round(product.priceUah * (discountApplied ? 1 - discountPct / 100 : 1));
+  const eurPrice = Math.round(priceEuros * (discountApplied ? 1 - discountPct / 100 : 1));
 
   useEffect(() => {
     if (!open) return;
     setMethod("card");
     setPromoCode("");
+    setAppliedPromoCode(null);
+    setDiscountPct(0);
     setLoading(false);
     setError(null);
     setPromoUnlocked(false);
-    setDiscountApplied(false);
     setAuthOpen(false);
 
     // Buying requires an account first.
@@ -84,7 +82,7 @@ export function PaymentModal({
       const result = await createCheckout({
         data: {
           productSlug,
-          ...(discountApplied ? { promoCode: DISCOUNT_CODE } : {}),
+          ...(appliedPromoCode ? { promoCode: appliedPromoCode } : {}),
         },
       });
       if (!result.ok) {
@@ -111,23 +109,38 @@ export function PaymentModal({
       return;
     }
 
-    // Discount-only code: applies 15% off, nothing else.
-    if (code.toLowerCase() === DISCOUNT_CODE.toLowerCase()) {
-      setDiscountApplied(true);
-      setMethod("card");
-      return;
-    }
-    setDiscountApplied(false);
-
     const { data } = await supabase.auth.getSession();
     if (!data.session) {
       setAuthOpen(true);
-      setError("Sign in to redeem a promocode and unlock full access.");
+      setError("Sign in to redeem a promocode.");
       return;
     }
 
     setLoading(true);
     try {
+      // Try percent-off discount codes first.
+      const discount = await validateDiscountCode({
+        data: { code, productSlug },
+      });
+      if (discount.ok) {
+        setAppliedPromoCode(discount.code);
+        setDiscountPct(discount.discountPct);
+        setMethod("card");
+        return;
+      }
+
+      const discountOnlyError =
+        /expired|use limit|does not apply|percent off|% off/i.test(discount.error) &&
+        !/unlock/i.test(discount.error);
+      if (discountOnlyError) {
+        setError(discount.error);
+        return;
+      }
+
+      // Otherwise attempt a one-time unlock code.
+      setAppliedPromoCode(null);
+      setDiscountPct(0);
+
       const result = await redeemPromocode({ data: { code } });
       if (!result.ok) {
         setError(result.error);
@@ -145,7 +158,7 @@ export function PaymentModal({
       const message = err instanceof Error ? err.message : "Could not redeem promocode.";
       if (/unauthorized/i.test(message)) {
         setAuthOpen(true);
-        setError("Sign in to redeem a promocode and unlock full access.");
+        setError("Sign in to redeem a promocode.");
       } else {
         setError(message);
       }
@@ -229,7 +242,7 @@ export function PaymentModal({
                         color: ORANGE,
                       }}
                     >
-                      {DISCOUNT_PCT}% discount applied
+                      {discountPct}% discount applied ({appliedPromoCode})
                     </p>
                   )}
 
@@ -266,8 +279,8 @@ export function PaymentModal({
               <TabsContent value="promo" className="mt-4">
                 <form onSubmit={handlePromoRedeem} className="space-y-4">
                   <p className="text-sm leading-relaxed text-muted-foreground">
-                    Have a one-time promocode? Redeem it while signed in to unlock full course
-                    access instantly — no payment needed.
+                    Enter a discount code for 15% off Lite or Full, or a one-time unlock code for
+                    free access.
                   </p>
                   <div>
                     <label className="mb-1 block text-xs font-medium text-foreground">
@@ -277,7 +290,7 @@ export function PaymentModal({
                       type="text"
                       value={promoCode}
                       onChange={(e) => setPromoCode(e.target.value)}
-                      placeholder="BBE-FREE-……"
+                      placeholder="BBE-15-……"
                       autoComplete="off"
                       spellCheck={false}
                       className="w-full rounded-md border border-border bg-background px-3 py-2 font-mono text-sm uppercase outline-none focus:ring-2 focus:ring-ring"
@@ -301,7 +314,7 @@ export function PaymentModal({
                     ) : (
                       <>
                         <Ticket className="h-4 w-4" />
-                        Redeem &amp; unlock
+                        Apply promocode
                       </>
                     )}
                   </button>
