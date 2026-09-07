@@ -37,6 +37,12 @@ _PCT_TOKEN_RE = re.compile(
 )
 
 
+def _fmt_num(n: float) -> str:
+    if abs(n - round(n)) < 1e-9:
+        return f"{int(round(n)):,}"
+    return f"{n:.6g}"
+
+
 def _parse_pct_token(token: str) -> float | None:
     t = token.lower()
     if t in WORD_NUM:
@@ -109,8 +115,8 @@ def expand_numeric(statement: str, mid: str, truth: bool) -> str | None:
                 "(all businesses' sales of the product), usually shown as a percentage."
             )
             paras.append(
-                f"Take firm sales {firm:g} over market volume {market:g}:\n\n"
-                f"$$\n\\frac{{{firm:g}}}{{{market:g}}} = {firm / market:.6g}\n$$\n\n"
+                f"Take firm sales {_fmt_num(firm)} over market volume {_fmt_num(market)}:\n\n"
+                f"$$\n\\frac{{{_fmt_num(firm)}}}{{{_fmt_num(market)}}} = {firm / market:.6g}\n$$\n\n"
                 f"Convert to a percentage:\n\n"
                 f"$$\n{firm / market:.6g} \\times 100 = {share:.4g}\\%\n$$"
             )
