@@ -1259,8 +1259,6 @@ Reuse this derivative setup for every letter: simplify first, evaluate at named 
 
 Maintenance time per effective unit is the quotient $T(n)=\\dfrac{2n^{2}+8n}{n+1}$. Apply the quotient rule with numerator $u=2n^{2}+8n$ and denominator $v=n+1$:
 
-Name the numerator and denominator, differentiate each, then apply the quotient rule before simplifying.
-
 $$
 T(n) = \\dfrac{2n^{2}+8n}{n+1}
 $$
@@ -2076,8 +2074,6 @@ so curvature changes from negative to positive across $q=\\dfrac{3}{2}$. That is
       `**A.** → True
 
 The complaint index is the quotient $K(t)=\\dfrac{t+4}{t+1}$. The quotient rule simplifies at once to
-
-Name the numerator and denominator, differentiate each, then apply the quotient rule before simplifying.
 
 $$
 K(t) = \\dfrac{t+4}{t+1}
@@ -4155,8 +4151,6 @@ Reuse this derivative setup for every letter: simplify first, evaluate at named 
 
 The intensity ratio is the quotient $K(x)=\\dfrac{(2x-1)^{3}}{x+4}$. The quotient rule writes numerator derivative times denominator minus numerator times denominator derivative:
 
-Name the numerator and denominator, differentiate each, then apply the quotient rule before simplifying.
-
 $$
 K(x) = \\dfrac{(2x-1)^{3}}{x+4}
 $$
@@ -5569,8 +5563,6 @@ So the statement is True.`,
 Average cost is the quotient $A(Q)=\\dfrac{C(Q)}{Q}$, and differentiating that quotient tracks how the average itself moves with output.
 
 Marginal cost is defined as the derivative of total cost:
-
-Name the numerator and denominator, differentiate each, then apply the quotient rule before simplifying.
 
 $$
 A(Q) = \\dfrac{C(Q)}{Q}
@@ -10800,8 +10792,6 @@ A small extra item therefore raises profit at the café ($P^{\\prime}=1>0$) and 
     tactical_explanations: [
       `**A.** → True
 
-Name the objective, find where its slope is flat, then classify with the bend (or a sign chart) before matching the claim.
-
 To read how profit changes with lamps sold, differentiate the given daily-profit rule term by term. Starting from
 
 $$
@@ -10825,8 +10815,6 @@ which matches the claim.
 So the statement is True.`,
       `**B.** → True
 
-Name the objective, find where its slope is flat, then classify with the bend (or a sign chart) before matching the claim.
-
 An interior peak of a smooth profit curve can occur only where the graph is momentarily flat, so set the slope to zero and solve for output:
 
 $$
@@ -10845,8 +10833,6 @@ On the domain $Q\\ge 0$ this linear equation has exactly one root. There is no s
 
 So the statement is True.`,
       `**C.** → True
-
-Name the objective, find where its slope is flat, then classify with the bend (or a sign chart) before matching the claim.
 
 A flat slope alone does not yet say peak versus trough. The second derivative reads the bend of the profit curve at that critical output:
 
@@ -10868,8 +10854,6 @@ which matches the claim.
 
 So the statement is True.`,
       `**D.** → True
-
-Name the objective, find where its slope is flat, then classify with the bend (or a sign chart) before matching the claim.
 
 Once the critical output is known, evaluate the *profit level* $P$ there — not the slope $P'$. Substitute $Q=6$ into the original quadratic:
 
@@ -10950,8 +10934,6 @@ so six lamps yield $16$ euros of daily profit. A zero slope never forces the pro
     tactical_explanations: [
       `**A.** → True
 
-Name the objective, find where its slope is flat, then classify with the bend (or a sign chart) before matching the claim.
-
 Profit is defined as revenue minus cost. Expand carefully, watching the minus sign distribute over every cost term:
 
 $$
@@ -10977,8 +10959,6 @@ That simplified quadratic matches the claim exactly.
 So the statement is True.`,
       `**B.** → True
 
-Name the objective, find where its slope is flat, then classify with the bend (or a sign chart) before matching the claim.
-
 Marginal profit is the slope of the profit function. Differentiate the simplified rule term by term:
 
 $$
@@ -10989,14 +10969,10 @@ $$
 P'(Q) = -4Q+24.
 $$
 
-(The constant $-40$ disappears under differentiation.) That slope is exactly the claimed marginal-profit formula
-
-An interior candidate for a smooth extremum must make the first derivative vanish; that flat-slope equation only produces candidates, not finished labels.
+(The constant $-40$ disappears under differentiation.) That slope is exactly the claimed marginal-profit formula.
 
 So the statement is True.`,
       `**C.** → True
-
-Name the objective, find where its slope is flat, then classify with the bend (or a sign chart) before matching the claim.
 
 An interior profit peak requires a flat slope, so set marginal profit to zero and solve:
 
@@ -11012,14 +10988,10 @@ $$
 Q = 6.
 $$
 
-For $Q>0$ this is the unique root. Six lunch boxes is therefore the unique positive flat-slope output
-
-An interior candidate for a smooth extremum must make the first derivative vanish; that flat-slope equation only produces candidates, not finished labels.
+For $Q>0$ this is the unique root. Six lunch boxes is therefore the unique positive flat-slope output.
 
 So the statement is True.`,
       `**D.** → True
-
-Name the objective, find where its slope is flat, then classify with the bend (or a sign chart) before matching the claim.
 
 At a profit peak one also has $R'=C'$ (because $P'=R'-C'$). Compute the separate marginals and evaluate at six boxes:
 
@@ -11148,8 +11120,6 @@ and the bend $P''=-4<0$ confirms a local profit peak. The *levels* at six boxes 
     tactical_explanations: [
       `**A.** → True
 
-Name the objective, find where its slope is flat, then classify with the bend (or a sign chart) before matching the claim.
-
 To find candidate cost-minimising fleets, differentiate the cost model and set the slope to zero:
 
 $$
@@ -11169,8 +11139,6 @@ This linear equation has exactly one root, and that root lies in $Q\\ge 0$. So t
 So the statement is True.`,
       `**B.** → True
 
-Name the objective, find where its slope is flat, then classify with the bend (or a sign chart) before matching the claim.
-
 Classify the critical fleet with the second derivative. Differentiating the slope once more gives a constant bend:
 
 $$
@@ -11181,8 +11149,6 @@ everywhere, including at $Q=5$. A positive second derivative means the cost curv
 
 So the statement is True.`,
       `**C.** → True
-
-Name the objective, find where its slope is flat, then classify with the bend (or a sign chart) before matching the claim.
 
 Evaluate cost at the trough fleet size — use the level $C$, not the slope $C'$:
 
@@ -11210,9 +11176,7 @@ $$
 C(5) = 15.
 $$
 
-The trough cost is $15$ (hundreds of euros), matching the claim
-
-Pause on the classification step: $f''<0$ at a critical point marks a local peak, $f''>0$ marks a local trough, and $f''=0$ makes the usual bend test inconclusive.
+The trough cost is $15$ (hundreds of euros), matching the claim.
 
 So the statement is True.`,
       `**D.** → False
@@ -11278,8 +11242,6 @@ and since the parabola opens upward with its vertex already inside $Q\\ge 0$, th
     tactical_explanations: [
       `**A.** → True
 
-Name the objective, find where its slope is flat, then classify with the bend (or a sign chart) before matching the claim.
-
 Differentiate each score twice and evaluate at intensity zero. For $A(x)=x^{4}$:
 
 $$
@@ -11305,8 +11267,6 @@ so $B'(0)=0$ and $B''(0)=0$. Both scores therefore have a flat slope *and* a fla
 So the statement is True.`,
       `**B.** → True
 
-Name the objective, find where its slope is flat, then classify with the bend (or a sign chart) before matching the claim.
-
 The usual second-derivative test needs a strictly negative bend (local peak) or a strictly positive bend (local trough). Here
 
 $$
@@ -11321,8 +11281,6 @@ so neither bend is strictly signed. The bend test alone therefore cannot classif
 
 So the statement is True.`,
       `**C.** → True
-
-Name the objective, find where its slope is flat, then classify with the bend (or a sign chart) before matching the claim.
 
 Even though $A''(0)=0$, the fourth-power shape still settles the local picture by direct comparison. For every $x\\neq 0$,
 
@@ -11344,8 +11302,6 @@ which matches the claim.
 
 So the statement is True.`,
       `**D.** → True
-
-Name the objective, find where its slope is flat, then classify with the bend (or a sign chart) before matching the claim.
 
 Likewise for the opposite-sign fourth power: for every $x\\neq 0$,
 
@@ -11404,8 +11360,6 @@ so zero is a strict local trough of $A$ and a strict local peak of $B$. Vanishin
     tactical_explanations: [
       `**A.** → True
 
-Name the objective, find where its slope is flat, then classify with the bend (or a sign chart) before matching the claim.
-
 Differentiate each café's profit and evaluate the slopes at ten covers:
 
 $$
@@ -11449,8 +11403,6 @@ Both slopes are flat at $Q=10$. Sharing a critical output does not yet say anyth
 So the statement is True.`,
       `**B.** → True
 
-Name the objective, find where its slope is flat, then classify with the bend (or a sign chart) before matching the claim.
-
 Read the bend of Café A's profit at the shared flat spot. Differentiating the slope once more gives
 
 $$
@@ -11466,8 +11418,6 @@ A downward bend at a flat slope is the second-derivative test for a local maximu
 So the statement is True.`,
       `**C.** → True
 
-Name the objective, find where its slope is flat, then classify with the bend (or a sign chart) before matching the claim.
-
 Read the bend of Café B's profit at the same output:
 
 $$
@@ -11480,8 +11430,6 @@ $$
 
 An upward bend at a flat slope is the second-derivative test for a local minimum. Therefore ten covers is a local profit trough for B — the opposite label from A's —
 
-An interior candidate for a smooth extremum must make the first derivative vanish; that flat-slope equation only produces candidates, not finished labels.
-
 So the statement is True.`,
       `**D.** → False
 
@@ -11491,8 +11439,6 @@ Both cafés have a flat slope at ten covers, but the bends tell opposite stories
 
 So the statement is False.`,
       `**E.** → True
-
-Name the objective, find where its slope is flat, then classify with the bend (or a sign chart) before matching the claim.
 
 Evaluate each profit *level* at ten covers (not the slopes):
 
@@ -11532,9 +11478,7 @@ $$
 P_B(10) = -10.
 $$
 
-Café A's profit is $50$ euros and Café B's is $-10$ euros, matching the claim exactly
-
-An interior candidate for a smooth extremum must make the first derivative vanish; that flat-slope equation only produces candidates, not finished labels.
+Café A's profit is $50$ euros and Café B's is $-10$ euros, matching the claim exactly.
 
 So the statement is True.`
     ],
@@ -11574,8 +11518,6 @@ so flat slope alone does not mean both cafés are maximising profit.`,
     tactical_explanations: [
       `**A.** → True
 
-Name the objective, find where its slope is flat, then classify with the bend (or a sign chart) before matching the claim.
-
 Differentiate the cubic profit and set the slope to zero inside $(0,5)$:
 
 $$
@@ -11590,14 +11532,10 @@ $$
 P'(Q) = 3(Q-1)(Q-3).
 $$
 
-The roots are $Q=1$ and $Q=3$, both strictly inside $(0,5)$. Those are exactly the interior flat-slope pack counts
-
-An interior candidate for a smooth extremum must make the first derivative vanish; that flat-slope equation only produces candidates, not finished labels.
+The roots are $Q=1$ and $Q=3$, both strictly inside $(0,5)$. Those are exactly the interior flat-slope pack counts.
 
 So the statement is True.`,
       `**B.** → True
-
-Name the objective, find where its slope is flat, then classify with the bend (or a sign chart) before matching the claim.
 
 Classify the two critical packs with the second derivative:
 
@@ -11637,14 +11575,10 @@ $$
 18 - 12 = 6 = 6>0.
 $$
 
-A downward bend at $Q=1$ marks a local profit peak; an upward bend at $Q=3$ marks a local profit trough. The labels match the claim
-
-Pause on the classification step: $f''<0$ at a critical point marks a local peak, $f''>0$ marks a local trough, and $f''=0$ makes the usual bend test inconclusive.
+A downward bend at $Q=1$ marks a local profit peak; an upward bend at $Q=3$ marks a local profit trough. The labels match the claim.
 
 So the statement is True.`,
       `**C.** → True
-
-Name the objective, find where its slope is flat, then classify with the bend (or a sign chart) before matching the claim.
 
 Evaluate profit at the two critical packs and at both endpoints — global comparison needs all four values:
 
@@ -11724,9 +11658,7 @@ $$
 20 + 10 = 30 = 30.
 $$
 
-Those four values match the claim exactly
-
-Pause on the classification step: $f''<0$ at a critical point marks a local peak, $f''>0$ marks a local trough, and $f''=0$ makes the usual bend test inconclusive.
+Those four values match the claim exactly.
 
 So the statement is True.`,
       `**D.** → False
@@ -11749,8 +11681,6 @@ So the statement is False.`,
 Global comparison on a restricted domain needs every candidate value — interior critical points and endpoints — not just the first flat-slope output you meet.
 
 Among $P(0)=10$, $P(1)=14$, $P(3)=10$, and $P(5)=30$, the largest value is $30$ at five packs. That endpoint is therefore the global profit maximum on $[0,5]$. The local peak at one pack loses the global comparison
-
-Pause on the classification step: $f''<0$ at a critical point marks a local peak, $f''>0$ marks a local trough, and $f''=0$ makes the usual bend test inconclusive.
 
 $$
 P(0) = 10
@@ -11804,8 +11734,6 @@ shows the global maximum on $[0,5]$ is the endpoint $Q=5$, not the local peak at
     tactical_explanations: [
       `**A.** → True
 
-Name the objective, find where its slope is flat, then classify with the bend (or a sign chart) before matching the claim.
-
 Differentiate the stall's profit rule term by term. From
 
 $$
@@ -11820,8 +11748,6 @@ $$
 
 That slope matches the claim exactly
 
-An interior candidate for a smooth extremum must make the first derivative vanish; that flat-slope equation only produces candidates, not finished labels.
-
 $$
 P'(Q) = 5-\\dfrac{Q}{5}
 $$
@@ -11830,8 +11756,6 @@ which matches the claim.
 
 So the statement is True.`,
       `**B.** → True
-
-Name the objective, find where its slope is flat, then classify with the bend (or a sign chart) before matching the claim.
 
 Inside $(0,8)$ check whether the slope can hit zero. Solving $5-\\dfrac{Q}{5}=0$ would give $Q=25$, which lies far outside $[0,8]$. At the right endpoint itself
 
@@ -11851,8 +11775,6 @@ and for every smaller positive $Q$ the slope is even larger. So there is no inte
 
 So the statement is True.`,
       `**C.** → True
-
-Name the objective, find where its slope is flat, then classify with the bend (or a sign chart) before matching the claim.
 
 Because $P'(Q)>0$ throughout $[0,8]$, profit is strictly increasing on the interval. A strictly increasing continuous function on a closed bounded interval attains its maximum at the right endpoint $Q=8$ and its minimum at the left endpoint $Q=0$. No interior critical point is needed for that conclusion.
 
@@ -11884,8 +11806,6 @@ The maximum sits at the boundary because the feasible set ends, not because the 
 So the statement is False.`,
       `**E.** → True
 
-Name the objective, find where its slope is flat, then classify with the bend (or a sign chart) before matching the claim.
-
 Evaluate profit at the right endpoint where the maximum must occur:
 
 $$
@@ -11908,9 +11828,7 @@ $$
 P(8) = 36.6.
 $$
 
-Maximal profit on the interval is $36.6$ euros, matching the claim
-
-Pause on the classification step: $f''<0$ at a critical point marks a local peak, $f''>0$ marks a local trough, and $f''=0$ makes the usual bend test inconclusive.
+Maximal profit on the interval is $36.6$ euros, matching the claim.
 
 So the statement is True.`
     ],
@@ -11948,8 +11866,6 @@ Endpoint maxima need not be critical points.`,
     tactical_explanations: [
       `**A.** → True
 
-Name the objective, find where its slope is flat, then classify with the bend (or a sign chart) before matching the claim.
-
 Differentiate net benefit and set the slope to zero:
 
 $$
@@ -11964,14 +11880,10 @@ $$
 B'(x) = 3(x-1)(x-3).
 $$
 
-The roots are $x=1$ and $x=3$, both in the domain $x\\ge 0$. Those are exactly the flat-slope advertising intensities
-
-An interior candidate for a smooth extremum must make the first derivative vanish; that flat-slope equation only produces candidates, not finished labels.
+The roots are $x=1$ and $x=3$, both in the domain $x\\ge 0$. Those are exactly the flat-slope advertising intensities.
 
 So the statement is True.`,
       `**B.** → True
-
-Name the objective, find where its slope is flat, then classify with the bend (or a sign chart) before matching the claim.
 
 Factor the slope and read its sign chart around $x=1$:
 
@@ -11990,11 +11902,7 @@ which matches the claim.
 So the statement is True.`,
       `**C.** → True
 
-Name the objective, find where its slope is flat, then classify with the bend (or a sign chart) before matching the claim.
-
 Around $x=3$ the same factored slope changes the other way. Just left of $3$ one has $B'<0$ (as in the interval $(1,3)$). Just right of $3$ both factors are positive, so $B'>0$. The change from negative to positive marks a local trough at intensity $3$ by the first-derivative test
-
-Pause on the classification step: $f''<0$ at a critical point marks a local peak, $f''>0$ marks a local trough, and $f''=0$ makes the usual bend test inconclusive.
 
 $$
 x = 3
@@ -12002,8 +11910,6 @@ $$
 
 So the statement is True.`,
       `**D.** → True
-
-Name the objective, find where its slope is flat, then classify with the bend (or a sign chart) before matching the claim.
 
 The second-derivative bend test confirms the same labels independently of the sign chart:
 
@@ -12043,9 +11949,7 @@ $$
 18 - 12 = 6 = 6>0.
 $$
 
-So intensity $1$ is a local peak and intensity $3$ is a local trough, matching the first-derivative sign reading
-
-An interior candidate for a smooth extremum must make the first derivative vanish; that flat-slope equation only produces candidates, not finished labels.
+So intensity $1$ is a local peak and intensity $3$ is a local trough, matching the first-derivative sign reading.
 
 So the statement is True.`,
       `**E.** → False
@@ -12086,8 +11990,6 @@ Flat slopes sit at $x=1$ and $x=3$. The sign chart of $B'$ changes from positive
     tactical_explanations: [
       `**A.** → True
 
-Name the objective, find where its slope is flat, then classify with the bend (or a sign chart) before matching the claim.
-
 Differentiate daily profit and set the slope to zero inside $(0,6)$:
 
 $$
@@ -12102,14 +12004,10 @@ $$
 P'(Q) = -3(Q-2)(Q-4).
 $$
 
-The roots are $Q=2$ and $Q=4$, both strictly inside $(0,6)$. Those are the interior flat-slope oven counts
-
-An interior candidate for a smooth extremum must make the first derivative vanish; that flat-slope equation only produces candidates, not finished labels.
+The roots are $Q=2$ and $Q=4$, both strictly inside $(0,6)$. Those are the interior flat-slope oven counts.
 
 So the statement is True.`,
       `**B.** → True
-
-Name the objective, find where its slope is flat, then classify with the bend (or a sign chart) before matching the claim.
 
 Classify two ovens with the second derivative:
 
@@ -12129,14 +12027,10 @@ $$
 P''(2) = 6 = 6>0.
 $$
 
-An upward bend at a flat slope is the second-derivative test for a local minimum. Therefore two ovens is a local profit trough
-
-Pause on the classification step: $f''<0$ at a critical point marks a local peak, $f''>0$ marks a local trough, and $f''=0$ makes the usual bend test inconclusive.
+An upward bend at a flat slope is the second-derivative test for a local minimum. Therefore two ovens is a local profit trough.
 
 So the statement is True.`,
       `**C.** → True
-
-Name the objective, find where its slope is flat, then classify with the bend (or a sign chart) before matching the claim.
 
 Classify four ovens the same way:
 
@@ -12156,9 +12050,7 @@ $$
 P''(4) = -6<0.
 $$
 
-A downward bend at a flat slope is the second-derivative test for a local maximum. Therefore four ovens is a local profit peak
-
-Pause on the classification step: $f''<0$ at a critical point marks a local peak, $f''>0$ marks a local trough, and $f''=0$ makes the usual bend test inconclusive.
+A downward bend at a flat slope is the second-derivative test for a local maximum. Therefore four ovens is a local profit peak.
 
 So the statement is True.`,
       `**D.** → True
@@ -12288,8 +12180,6 @@ shows the global maximum on $[0,6]$ is at zero ovens. Listing the flat-slope out
     tactical_explanations: [
       `**A.** → True
 
-Name the objective, find where its slope is flat, then classify with the bend (or a sign chart) before matching the claim.
-
 Form profit as revenue minus cost, distribute the minus carefully, then differentiate:
 
 $$
@@ -12304,14 +12194,10 @@ $$
 P'(Q) = -6Q+36.
 $$
 
-Both the simplified profit quadratic and its slope match the claim
-
-An interior candidate for a smooth extremum must make the first derivative vanish; that flat-slope equation only produces candidates, not finished labels.
+Both the simplified profit quadratic and its slope match the claim.
 
 So the statement is True.`,
       `**B.** → True
-
-Name the objective, find where its slope is flat, then classify with the bend (or a sign chart) before matching the claim.
 
 Set marginal profit to zero, then check that marginal revenue equals marginal cost there:
 
@@ -12361,12 +12247,8 @@ $$
 
 Flat profit at six jobs coincides with $R'=C'=16$
 
-An interior candidate for a smooth extremum must make the first derivative vanish; that flat-slope equation only produces candidates, not finished labels.
-
 So the statement is True.`,
       `**C.** → True
-
-Name the objective, find where its slope is flat, then classify with the bend (or a sign chart) before matching the claim.
 
 Read the bend of profit at six jobs. Differentiating the slope once more gives the constant
 
@@ -12378,20 +12260,10 @@ $$
 P''(6) = -6<0.
 $$
 
-A downward bend at a flat slope means a local profit peak by the second-derivative test
-
-Pause on the classification step: $f''<0$ at a critical point marks a local peak, $f''>0$ marks a local trough, and $f''=0$ makes the usual bend test inconclusive.
-
-$$
-f'' = 0
-$$
-
-which matches the claim.
+A downward bend at a flat slope means a local profit peak by the second-derivative test.
 
 So the statement is True.`,
       `**D.** → True
-
-Name the objective, find where its slope is flat, then classify with the bend (or a sign chart) before matching the claim.
 
 Evaluate profit at the peak output — use the level $P$, not the slope:
 
@@ -12415,9 +12287,7 @@ $$
 P(6) = 98
 $$
 
-Peak profit is $98$ euros, matching the claim
-
-Pause on the classification step: $f''<0$ at a critical point marks a local peak, $f''>0$ marks a local trough, and $f''=0$ makes the usual bend test inconclusive.
+Peak profit is $98$ euros, matching the claim.
 
 So the statement is True.`,
       `**E.** → False
@@ -12470,8 +12340,6 @@ Matching $R'=C'$ only finds a critical point of profit; without a bend check (or
     tactical_explanations: [
       `**A.** → True
 
-Name the objective, find where its slope is flat, then classify with the bend (or a sign chart) before matching the claim.
-
 Differentiate each bakery's profit and evaluate at eight loaves:
 
 $$
@@ -12515,8 +12383,6 @@ Both slopes are flat at $Q=8$. Sharing a critical output is only the first step 
 So the statement is True.`,
       `**B.** → True
 
-Name the objective, find where its slope is flat, then classify with the bend (or a sign chart) before matching the claim.
-
 Read North's bend at the shared flat spot:
 
 $$
@@ -12527,14 +12393,10 @@ $$
 P_N''(8) = -2<0.
 $$
 
-A downward bend at a flat slope is the second-derivative test for a local maximum. Therefore eight loaves is a local profit peak for North
-
-An interior candidate for a smooth extremum must make the first derivative vanish; that flat-slope equation only produces candidates, not finished labels.
+A downward bend at a flat slope is the second-derivative test for a local maximum. Therefore eight loaves is a local profit peak for North.
 
 So the statement is True.`,
       `**C.** → True
-
-Name the objective, find where its slope is flat, then classify with the bend (or a sign chart) before matching the claim.
 
 Read South's bend at the same output:
 
@@ -12548,12 +12410,8 @@ $$
 
 An upward bend at a flat slope is the second-derivative test for a local minimum. Therefore eight loaves is a local profit trough for South — opposite to North's label —
 
-An interior candidate for a smooth extremum must make the first derivative vanish; that flat-slope equation only produces candidates, not finished labels.
-
 So the statement is True.`,
       `**D.** → True
-
-Name the objective, find where its slope is flat, then classify with the bend (or a sign chart) before matching the claim.
 
 Evaluate each profit level at eight loaves:
 
@@ -12593,9 +12451,7 @@ $$
 P_S(8) = 6.
 $$
 
-North's peak profit is $34$ euros, while South's profit at the same output is only $6$ euros. Both numbers match the claim
-
-An interior candidate for a smooth extremum must make the first derivative vanish; that flat-slope equation only produces candidates, not finished labels.
+North's peak profit is $34$ euros, while South's profit at the same output is only $6$ euros. Both numbers match the claim.
 
 So the statement is True.`,
       `**E.** → False
@@ -12642,8 +12498,6 @@ Equal flat-slope outputs do not mean both bakeries are maximising profit. Shared
     tactical_explanations: [
       `**A.** → True
 
-Name the objective, find where its slope is flat, then classify with the bend (or a sign chart) before matching the claim.
-
 Differentiate the loyalty index twice and evaluate at intensity zero:
 
 $$
@@ -12654,18 +12508,12 @@ $$
 L''(x) = -12x^{2}.
 $$
 
-At $x=0$ one has $L'(0)=0$ and $L''(0)=0$. Both the slope and the second derivative are flat at intensity zero, matching the claim
-
-An interior candidate for a smooth extremum must make the first derivative vanish; that flat-slope equation only produces candidates, not finished labels.
+At $x=0$ one has $L'(0)=0$ and $L''(0)=0$. Both the slope and the second derivative are flat at intensity zero, matching the claim.
 
 So the statement is True.`,
       `**B.** → True
 
-Name the objective, find where its slope is flat, then classify with the bend (or a sign chart) before matching the claim.
-
 The usual sufficient test for a strict local peak asks for $L''(x^{\\ast})<0$ at a critical point. Here $L''(0)=0$, so that strict inequality fails. The usual downward-bend test therefore does not apply at intensity zero — the check is inconclusive rather than affirmative —
-
-Pause on the classification step: $f''<0$ at a critical point marks a local peak, $f''>0$ marks a local trough, and $f''=0$ makes the usual bend test inconclusive.
 
 $$
 L''(0) = 0
@@ -12712,8 +12560,6 @@ $$
 So the statement is False.`,
       `**E.** → True
 
-Name the objective, find where its slope is flat, then classify with the bend (or a sign chart) before matching the claim.
-
 At an interior local peak a necessary condition is $L''\\le 0$ (the curve cannot bend strictly upward there). Here $L''(0)=0$, which satisfies $L''\\le 0$. The necessary condition therefore still holds, even though the stricter sufficient test $L''<0$ fails. The claim is carefully worded and correct.
 
 $$
@@ -12756,8 +12602,6 @@ so zero is a strict global maximum. Vanishing of $L''$ does not forbid a peak. A
     tactical_explanations: [
       `**A.** → True
 
-Name the objective, find where its slope is flat, then classify with the bend (or a sign chart) before matching the claim.
-
 Differentiate cost and classify the critical output:
 
 $$
@@ -12776,8 +12620,6 @@ Flat slope at four units together with an upward bend means a local cost minimum
 
 So the statement is True.`,
       `**B.** → True
-
-Name the objective, find where its slope is flat, then classify with the bend (or a sign chart) before matching the claim.
 
 Form profit as revenue minus cost and simplify:
 
@@ -12799,14 +12641,10 @@ $$
 Q = 7.
 $$
 
-Profit therefore has a flat slope at seven units, matching both parts of the claim
-
-An interior candidate for a smooth extremum must make the first derivative vanish; that flat-slope equation only produces candidates, not finished labels.
+Profit therefore has a flat slope at seven units, matching both parts of the claim.
 
 So the statement is True.`,
       `**C.** → True
-
-Name the objective, find where its slope is flat, then classify with the bend (or a sign chart) before matching the claim.
 
 Read the bend of profit at seven units:
 
@@ -12818,15 +12656,7 @@ $$
 P''(7) = -4<0.
 $$
 
-A downward bend at a flat slope is the second-derivative test for a local maximum. Therefore seven units is a local profit peak
-
-Pause on the classification step: $f''<0$ at a critical point marks a local peak, $f''>0$ marks a local trough, and $f''=0$ makes the usual bend test inconclusive.
-
-$$
-f'' = 0
-$$
-
-which matches the claim.
+A downward bend at a flat slope is the second-derivative test for a local maximum. Therefore seven units is a local profit peak.
 
 So the statement is True.`,
       `**D.** → False
@@ -12845,8 +12675,6 @@ $$
 
 So the statement is False.`,
       `**E.** → True
-
-Name the objective, find where its slope is flat, then classify with the bend (or a sign chart) before matching the claim.
 
 Evaluate the two levels at their respective critical outputs:
 
@@ -12890,9 +12718,7 @@ $$
 C(4) = 14.
 $$
 
-At the profit peak, profit equals $68$ euros; at the cost trough, cost equals $14$ euros. Both figures match the claim
-
-Pause on the classification step: $f''<0$ at a critical point marks a local peak, $f''>0$ marks a local trough, and $f''=0$ makes the usual bend test inconclusive.
+At the profit peak, profit equals $68$ euros; at the cost trough, cost equals $14$ euros. Both figures match the claim.
 
 So the statement is True.`
     ],
@@ -12925,8 +12751,6 @@ Cost has slope $C'=2Q-8$ and bend $C''=2>0$, so the cost trough is at $Q=4$ with
     answer_key: [true, true, true, true, false],
     tactical_explanations: [
       `**A.** → True
-
-Name the objective, find where its slope is flat, then classify with the bend (or a sign chart) before matching the claim.
 
 Differentiate each hiker's utility and evaluate at five hours:
 
@@ -12971,8 +12795,6 @@ Both slopes are flat at $t=5$. Sharing a critical hour is only the first step �
 So the statement is True.`,
       `**B.** → True
 
-Name the objective, find where its slope is flat, then classify with the bend (or a sign chart) before matching the claim.
-
 Read A's bend at the shared flat hour:
 
 $$
@@ -12983,14 +12805,10 @@ $$
 U_A''(5) = -2<0.
 $$
 
-A downward bend at a flat slope is the second-derivative test for a local maximum. Therefore five hours maximises A's satisfaction locally
-
-An interior candidate for a smooth extremum must make the first derivative vanish; that flat-slope equation only produces candidates, not finished labels.
+A downward bend at a flat slope is the second-derivative test for a local maximum. Therefore five hours maximises A's satisfaction locally.
 
 So the statement is True.`,
       `**C.** → True
-
-Name the objective, find where its slope is flat, then classify with the bend (or a sign chart) before matching the claim.
 
 Read B's bend at the same hour:
 
@@ -13004,12 +12822,8 @@ $$
 
 An upward bend at a flat slope is the second-derivative test for a local minimum. Therefore five hours minimises B's satisfaction locally — the opposite label from A's —
 
-An interior candidate for a smooth extremum must make the first derivative vanish; that flat-slope equation only produces candidates, not finished labels.
-
 So the statement is True.`,
       `**D.** → True
-
-Name the objective, find where its slope is flat, then classify with the bend (or a sign chart) before matching the claim.
 
 Evaluate each utility level at five hours:
 
@@ -13045,9 +12859,7 @@ $$
 U_B(5) = 5.
 $$
 
-A's peak utility is $25$, while B's utility at the same hour is only $5$. Both numbers match the claim
-
-An interior candidate for a smooth extremum must make the first derivative vanish; that flat-slope equation only produces candidates, not finished labels.
+A's peak utility is $25$, while B's utility at the same hour is only $5$. Both numbers match the claim.
 
 So the statement is True.`,
       `**E.** → False
@@ -13094,8 +12906,6 @@ Equal flat-slope hours do not mean both hikers are maximising satisfaction. Shar
     tactical_explanations: [
       `**A.** → True
 
-Name the objective, find where its slope is flat, then classify with the bend (or a sign chart) before matching the claim.
-
 Differentiate the payoff and set the slope to zero:
 
 $$
@@ -13110,14 +12920,10 @@ $$
 f'(x) = 4x(x-2)(x+2).
 $$
 
-The roots are $x=-2$, $x=0$, and $x=2$. Those are exactly the flat-slope staffing intensities
-
-An interior candidate for a smooth extremum must make the first derivative vanish; that flat-slope equation only produces candidates, not finished labels.
+The roots are $x=-2$, $x=0$, and $x=2$. Those are exactly the flat-slope staffing intensities.
 
 So the statement is True.`,
       `**B.** → True
-
-Name the objective, find where its slope is flat, then classify with the bend (or a sign chart) before matching the claim.
 
 Compute the second derivative and evaluate at the three critical intensities:
 
@@ -13133,14 +12939,10 @@ $$
 f''(0) = -16<0.
 $$
 
-So the second derivative is positive at $\\pm 2$ and negative at $0$, matching the claim
-
-An interior candidate for a smooth extremum must make the first derivative vanish; that flat-slope equation only produces candidates, not finished labels.
+So the second derivative is positive at $\\pm 2$ and negative at $0$, matching the claim.
 
 So the statement is True.`,
       `**C.** → True
-
-Name the objective, find where its slope is flat, then classify with the bend (or a sign chart) before matching the claim.
 
 Combine flat slopes with bend signs. At $\\pm 2$ one has $f'>0$ wait — rather $f'=0$ with $f''>0$, which is the second-derivative test for local minima (troughs). At $0$ one has $f'=0$ with $f''<0$, which is a local maximum (peak). Therefore $\\pm 2$ are local troughs and $0$ is a local peak.
 
@@ -13150,8 +12952,6 @@ $$
 
 So the statement is True.`,
       `**D.** → True
-
-Name the objective, find where its slope is flat, then classify with the bend (or a sign chart) before matching the claim.
 
 Evaluate payoff at the local peak and at either trough:
 
@@ -13179,9 +12979,7 @@ $$
 f(-2) = 0
 $$
 
-(same even function). The local peak value is $16$, while each local trough has value $0$, matching the claim
-
-Pause on the classification step: $f''<0$ at a critical point marks a local peak, $f''>0$ marks a local trough, and $f''=0$ makes the usual bend test inconclusive.
+(same even function). The local peak value is $16$, while each local trough has value $0$, matching the claim.
 
 So the statement is True.`,
       `**E.** → False
@@ -13226,8 +13024,6 @@ Flat slopes sit at $x=-2$, $x=0$, and $x=2$. The bend test gives $f''(\\pm 2)=32
     tactical_explanations: [
       `**A.** → True
 
-Name the objective, find where its slope is flat, then classify with the bend (or a sign chart) before matching the claim.
-
 Differentiate cost and set the slope to zero:
 
 $$
@@ -13242,14 +13038,10 @@ $$
 h = 6.
 $$
 
-For $h>0$ this is the unique root. The slope of cost is therefore flat at six open hours
-
-An interior candidate for a smooth extremum must make the first derivative vanish; that flat-slope equation only produces candidates, not finished labels.
+For $h>0$ this is the unique root. The slope of cost is therefore flat at six open hours.
 
 So the statement is True.`,
       `**B.** → True
-
-Name the objective, find where its slope is flat, then classify with the bend (or a sign chart) before matching the claim.
 
 Classify six hours with the second derivative:
 
@@ -13257,18 +13049,12 @@ $$
 C''(h) = 4>0
 $$
 
-everywhere, including at $h=6$. A positive bend at a flat slope is the second-derivative test for a local minimum. Therefore six hours is a local cost trough
-
-An interior candidate for a smooth extremum must make the first derivative vanish; that flat-slope equation only produces candidates, not finished labels.
+everywhere, including at $h=6$. A positive bend at a flat slope is the second-derivative test for a local minimum. Therefore six hours is a local cost trough.
 
 So the statement is True.`,
       `**C.** → True
 
-Name the objective, find where its slope is flat, then classify with the bend (or a sign chart) before matching the claim.
-
 For a cost-minimisation goal, a flat slope plus an upward bend is exactly the calculus certificate of a local cost trough. Here $C'(6)=0$ and $C''(6)=4>0$, so calling six hours optimal for cost control is justified by the bend test. The statement is True
-
-An interior candidate for a smooth extremum must make the first derivative vanish; that flat-slope equation only produces candidates, not finished labels.
 
 $$
 C'(6) = 0
@@ -13281,11 +13067,7 @@ $$
 So the statement is True.`,
       `**D.** → True
 
-Name the objective, find where its slope is flat, then classify with the bend (or a sign chart) before matching the claim.
-
-If the clinic's goal were instead to *maximise* cost, one would need a local peak: flat slope with a *downward* bend. At six hours the bend is upward ($C''>0$), so the same critical point is a trough, not a peak. It would be the wrong type of extremum for a maximisation goal
-
-An interior candidate for a smooth extremum must make the first derivative vanish; that flat-slope equation only produces candidates, not finished labels.
+If the clinic's goal were instead to *maximise* cost, one would need a local peak: flat slope with a *downward* bend. At six hours the bend is upward ($C''>0$), so the same critical point is a trough, not a peak. It would be the wrong type of extremum for a maximisation goal.
 
 So the statement is True.`,
       `**E.** → False
@@ -13326,8 +13108,6 @@ Flat slope at $h=6$ together with $C''>0$ marks a local cost *trough*, so callin
     tactical_explanations: [
       `**A.** → True
 
-Name the objective, find where its slope is flat, then classify with the bend (or a sign chart) before matching the claim.
-
 Differentiate each cinema's profit and evaluate at three screenings:
 
 $$
@@ -13351,8 +13131,6 @@ Both slopes are flat at $Q=3$. Sharing a critical output does not yet classify p
 So the statement is True.`,
       `**B.** → True
 
-Name the objective, find where its slope is flat, then classify with the bend (or a sign chart) before matching the claim.
-
 Classify Cinema A with the second derivative:
 
 $$
@@ -13365,12 +13143,8 @@ $$
 
 A downward bend at a flat slope is the second-derivative test for a local maximum. Therefore three screenings is a local profit peak for A
 
-An interior candidate for a smooth extremum must make the first derivative vanish; that flat-slope equation only produces candidates, not finished labels.
-
 So the statement is True.`,
       `**C.** → True
-
-Name the objective, find where its slope is flat, then classify with the bend (or a sign chart) before matching the claim.
 
 For Cinema B, differentiate the slope once more:
 
@@ -13386,8 +13160,6 @@ The usual bend test needs a strictly signed second derivative. Here the bend is 
 
 So the statement is True.`,
       `**D.** → True
-
-Name the objective, find where its slope is flat, then classify with the bend (or a sign chart) before matching the claim.
 
 Read the sign of Cinema B's slope around three screenings:
 
@@ -13438,8 +13210,6 @@ For A: $P_A'=-2(Q-3)$ and $P_A''=-2<0$, so $Q=3$ is a local profit peak. For B: 
     tactical_explanations: [
       `**A.** → True
 
-Name the objective, find where its slope is flat, then classify with the bend (or a sign chart) before matching the claim.
-
 Differentiate and set the slope to zero:
 
 $$
@@ -13454,14 +13224,10 @@ $$
 f'(x) = 0.
 $$
 
-The roots really are $x=0$ and $x=2$. The student's list of flat-slope outputs is therefore correct as a list of critical points
-
-An interior candidate for a smooth extremum must make the first derivative vanish; that flat-slope equation only produces candidates, not finished labels.
+The roots really are $x=0$ and $x=2$. The student's list of flat-slope outputs is therefore correct as a list of critical points.
 
 So the statement is True.`,
       `**B.** → True
-
-Name the objective, find where its slope is flat, then classify with the bend (or a sign chart) before matching the claim.
 
 Classify $x=0$ with the second derivative:
 
@@ -13475,8 +13241,6 @@ $$
 
 A downward bend at a flat slope is the second-derivative test for a local maximum. Therefore $x=0$ is a local peak
 
-An interior candidate for a smooth extremum must make the first derivative vanish; that flat-slope equation only produces candidates, not finished labels.
-
 $$
 x = 0
 $$
@@ -13485,8 +13249,6 @@ which matches the claim.
 
 So the statement is True.`,
       `**C.** → True
-
-Name the objective, find where its slope is flat, then classify with the bend (or a sign chart) before matching the claim.
 
 Classify $x=2$ the same way:
 
@@ -13506,9 +13268,7 @@ $$
 f''(2) = 6>0.
 $$
 
-An upward bend at a flat slope is the second-derivative test for a local minimum. Therefore $x=2$ is a local trough, *not* a peak. The claim correctly refuses to call it a maximum
-
-An interior candidate for a smooth extremum must make the first derivative vanish; that flat-slope equation only produces candidates, not finished labels.
+An upward bend at a flat slope is the second-derivative test for a local minimum. Therefore $x=2$ is a local trough, *not* a peak. The claim correctly refuses to call it a maximum.
 
 So the statement is True.`,
       `**D.** → True
@@ -13516,8 +13276,6 @@ So the statement is True.`,
 Global comparison on a restricted domain needs every candidate value — interior critical points and endpoints — not just the first flat-slope output you meet.
 
 On the whole real line, watch the end behaviour. As $x\\to\\infty$, the cubic's leading term $x^{3}$ drives $f(x)\\to\\infty$. Values eventually exceed any candidate height such as $f(0)=5$. Therefore there is no global maximum on $\\mathbb{R}$
-
-An interior candidate for a smooth extremum must make the first derivative vanish; that flat-slope equation only produces candidates, not finished labels.
 
 $$
 f(0) = 5
@@ -13570,8 +13328,6 @@ Flat slopes at $x=0$ and $x=2$ are only candidates. The bend test labels $x=0$ a
     tactical_explanations: [
       `**A.** → True
 
-Name the objective, find where its slope is flat, then classify with the bend (or a sign chart) before matching the claim.
-
 Differentiate profit and set the slope to zero:
 
 $$
@@ -13586,14 +13342,10 @@ $$
 Q = 5.
 $$
 
-For $Q>0$ this is the unique root. Profit therefore has a flat slope at five bikes
-
-An interior candidate for a smooth extremum must make the first derivative vanish; that flat-slope equation only produces candidates, not finished labels.
+For $Q>0$ this is the unique root. Profit therefore has a flat slope at five bikes.
 
 So the statement is True.`,
       `**B.** → True
-
-Name the objective, find where its slope is flat, then classify with the bend (or a sign chart) before matching the claim.
 
 Classify five bikes with the second derivative:
 
@@ -13605,14 +13357,10 @@ $$
 P''(5) = -6<0.
 $$
 
-A downward bend at a flat slope is the second-derivative test for a local maximum. Therefore five bikes is a local profit peak
-
-An interior candidate for a smooth extremum must make the first derivative vanish; that flat-slope equation only produces candidates, not finished labels.
+A downward bend at a flat slope is the second-derivative test for a local maximum. Therefore five bikes is a local profit peak.
 
 So the statement is True.`,
       `**C.** → True
-
-Name the objective, find where its slope is flat, then classify with the bend (or a sign chart) before matching the claim.
 
 By definition, a strict local maximum at $Q^{\\ast}=5$ means there exists a neighbourhood of five bikes in which every other feasible output $Q$ satisfies $P(Q)<P(5)$. That is exactly what “local profit peak” asserts — a local comparison, not yet a claim about the whole domain $Q>0$. The wording matches the definition.
 
@@ -13646,8 +13394,6 @@ $$
 So the statement is False.`,
       `**E.** → True
 
-Name the objective, find where its slope is flat, then classify with the bend (or a sign chart) before matching the claim.
-
 Evaluate profit at the peak output — use the level $P$, not the slope:
 
 $$
@@ -13670,9 +13416,7 @@ $$
 P(5) = 35
 $$
 
-Profit at five bikes is $35$ euros, matching the claim
-
-An interior candidate for a smooth extremum must make the first derivative vanish; that flat-slope equation only produces candidates, not finished labels.
+Profit at five bikes is $35$ euros, matching the claim.
 
 So the statement is True.`
     ],
@@ -13726,9 +13470,7 @@ $$
 P_W''(Q) = -2<0.
 $$
 
-Flat slope at seven units with a downward bend means a local profit peak for West. Both parts of the claim hold
-
-An interior candidate for a smooth extremum must make the first derivative vanish; that flat-slope equation only produces candidates, not finished labels.
+Flat slope at seven units with a downward bend means a local profit peak for West. Both parts of the claim hold.
 
 So the statement is True.`,
       `**B.** → True
@@ -13749,9 +13491,7 @@ $$
 P_E''(Q) = 2>0.
 $$
 
-Flat slope at five units with an upward bend means a local profit *trough* for East, not a peak. The claim correctly labels it a trough
-
-An interior candidate for a smooth extremum must make the first derivative vanish; that flat-slope equation only produces candidates, not finished labels.
+Flat slope at five units with an upward bend means a local profit *trough* for East, not a peak. The claim correctly labels it a trough.
 
 So the statement is True.`,
       `**C.** → False
@@ -13762,8 +13502,6 @@ The memo claims both flat-slope outputs are local profit maxima. West's seven is
 
 So the statement is False.`,
       `**D.** → True
-
-Name the objective, find where its slope is flat, then classify with the bend (or a sign chart) before matching the claim.
 
 Evaluate each plant's profit at its own critical output:
 
@@ -13803,9 +13541,7 @@ $$
 P_E(5) = 15.
 $$
 
-West's peak profit is $29$ euros, while East's profit at five units is $15$ euros. Both figures match the claim
-
-An interior candidate for a smooth extremum must make the first derivative vanish; that flat-slope equation only produces candidates, not finished labels.
+West's peak profit is $29$ euros, while East's profit at five units is $15$ euros. Both figures match the claim.
 
 So the statement is True.`,
       `**E.** → False
@@ -13850,8 +13586,6 @@ West: $P_W'=-2Q+14$ vanishes at $Q=7$, and $P_W''=-2<0$, so seven is a local pro
     tactical_explanations: [
       `**A.** → True
 
-Name the objective, find where its slope is flat, then classify with the bend (or a sign chart) before matching the claim.
-
 To read how profit changes with crates sold, differentiate the given daily-profit rule term by term:
 
 $$
@@ -13864,8 +13598,6 @@ $$
 
 That derivative is the slope of daily profit. It matches the claimed formula exactly
 
-An interior candidate for a smooth extremum must make the first derivative vanish; that flat-slope equation only produces candidates, not finished labels.
-
 $$
 P'(Q) = -2Q+18
 $$
@@ -13874,8 +13606,6 @@ which matches the claim.
 
 So the statement is True.`,
       `**B.** → True
-
-Name the objective, find where its slope is flat, then classify with the bend (or a sign chart) before matching the claim.
 
 An interior peak requires a flat slope, so set $P'$ to zero and solve:
 
@@ -13891,14 +13621,10 @@ $$
 Q = 9.
 $$
 
-On $Q\\ge 0$ this linear equation has exactly one root. Nine crates is the unique flat-slope daily output
-
-An interior candidate for a smooth extremum must make the first derivative vanish; that flat-slope equation only produces candidates, not finished labels.
+On $Q\\ge 0$ this linear equation has exactly one root. Nine crates is the unique flat-slope daily output.
 
 So the statement is True.`,
       `**C.** → True
-
-Name the objective, find where its slope is flat, then classify with the bend (or a sign chart) before matching the claim.
 
 Classify nine crates with the second derivative:
 
@@ -13910,20 +13636,10 @@ $$
 P''(9) = -2<0.
 $$
 
-A downward bend at a flat slope is the second-derivative test for a local maximum. Therefore nine crates is a local profit peak
-
-Pause on the classification step: $f''<0$ at a critical point marks a local peak, $f''>0$ marks a local trough, and $f''=0$ makes the usual bend test inconclusive.
-
-$$
-f'' = 0
-$$
-
-which matches the claim.
+A downward bend at a flat slope is the second-derivative test for a local maximum. Therefore nine crates is a local profit peak.
 
 So the statement is True.`,
       `**D.** → True
-
-Name the objective, find where its slope is flat, then classify with the bend (or a sign chart) before matching the claim.
 
 Evaluate profit at the peak output — use the level $P$, not the slope:
 
@@ -13947,9 +13663,7 @@ $$
 P(9) = 36
 $$
 
-Peak daily profit is $36$ euros, matching the claim
-
-Pause on the classification step: $f''<0$ at a critical point marks a local peak, $f''>0$ marks a local trough, and $f''=0$ makes the usual bend test inconclusive.
+Peak daily profit is $36$ euros, matching the claim.
 
 So the statement is True.`,
       `**E.** → False
@@ -14006,8 +13720,6 @@ A zero slope never forces the profit level itself to be zero — slope and heigh
     tactical_explanations: [
       `**A.** → True
 
-Name the objective, find where its slope is flat, then classify with the bend (or a sign chart) before matching the claim.
-
 Form profit as revenue minus cost and collect like terms carefully:
 
 $$
@@ -14020,8 +13732,6 @@ $$
 
 That simplified quadratic matches the claim exactly
 
-Pause on the classification step: $f''<0$ at a critical point marks a local peak, $f''>0$ marks a local trough, and $f''=0$ makes the usual bend test inconclusive.
-
 $$
 P(Q) = -2Q^{2}+40Q-20
 $$
@@ -14030,8 +13740,6 @@ which matches the claim.
 
 So the statement is True.`,
       `**B.** → True
-
-Name the objective, find where its slope is flat, then classify with the bend (or a sign chart) before matching the claim.
 
 Set the slope of profit to zero and solve for daily output:
 
@@ -14047,14 +13755,10 @@ $$
 Q = 10.
 $$
 
-For $Q>0$ this is the unique root. Profit has a flat slope at ten boxes a day
-
-An interior candidate for a smooth extremum must make the first derivative vanish; that flat-slope equation only produces candidates, not finished labels.
+For $Q>0$ this is the unique root. Profit has a flat slope at ten boxes a day.
 
 So the statement is True.`,
       `**C.** → True
-
-Name the objective, find where its slope is flat, then classify with the bend (or a sign chart) before matching the claim.
 
 At a profit peak one also has $R'=C'$. Compute the separate marginals at ten boxes:
 
@@ -14094,14 +13798,10 @@ $$
 20 + 10 = 30 = 30.
 $$
 
-Both equal $30$ euros at ten boxes
-
-Pause on the classification step: $f''<0$ at a critical point marks a local peak, $f''>0$ marks a local trough, and $f''=0$ makes the usual bend test inconclusive.
+Both equal $30$ euros at ten boxes.
 
 So the statement is True.`,
       `**D.** → True
-
-Name the objective, find where its slope is flat, then classify with the bend (or a sign chart) before matching the claim.
 
 Read the bend and evaluate the peak level:
 
@@ -14133,9 +13833,7 @@ $$
 P(10) = 180
 $$
 
-Ten boxes is a local profit peak with peak profit $180$ euros
-
-Pause on the classification step: $f''<0$ at a critical point marks a local peak, $f''>0$ marks a local trough, and $f''=0$ makes the usual bend test inconclusive.
+Ten boxes is a local profit peak with peak profit $180$ euros.
 
 So the statement is True.`,
       `**E.** → False
@@ -14210,8 +13908,6 @@ Matching $R'=C'$ only finds a critical point; it does not force the *levels* $R$
     tactical_explanations: [
       `**A.** → True
 
-Name the objective, find where its slope is flat, then classify with the bend (or a sign chart) before matching the claim.
-
 For truck A, set the slope to zero and read the bend:
 
 $$
@@ -14226,14 +13922,10 @@ $$
 P_A''(Q) = -2<0.
 $$
 
-Flat slope at twelve meals with a downward bend means a local profit maximum for A. The claim holds
-
-An interior candidate for a smooth extremum must make the first derivative vanish; that flat-slope equation only produces candidates, not finished labels.
+Flat slope at twelve meals with a downward bend means a local profit maximum for A. The claim holds.
 
 So the statement is True.`,
       `**B.** → True
-
-Name the objective, find where its slope is flat, then classify with the bend (or a sign chart) before matching the claim.
 
 For truck B, set the slope to zero and read the bend:
 
@@ -14249,14 +13941,10 @@ $$
 P_B''(Q) = -4<0.
 $$
 
-Flat slope at eight meals with a downward bend means a local profit maximum for B. The claim holds
-
-An interior candidate for a smooth extremum must make the first derivative vanish; that flat-slope equation only produces candidates, not finished labels.
+Flat slope at eight meals with a downward bend means a local profit maximum for B. The claim holds.
 
 So the statement is True.`,
       `**C.** → True
-
-Name the objective, find where its slope is flat, then classify with the bend (or a sign chart) before matching the claim.
 
 Evaluate each truck's profit at its own peak output:
 
@@ -14296,9 +13984,7 @@ $$
 P_B(8) = 68
 $$
 
-Peak profits are $64$ euros for A and $68$ euros for B, matching the claim
-
-An interior candidate for a smooth extremum must make the first derivative vanish; that flat-slope equation only produces candidates, not finished labels.
+Peak profits are $64$ euros for A and $68$ euros for B, matching the claim.
 
 So the statement is True.`,
       `**D.** → False
@@ -14318,11 +14004,7 @@ $$
 So the statement is False.`,
       `**E.** → True
 
-Name the objective, find where its slope is flat, then classify with the bend (or a sign chart) before matching the claim.
-
 Comparing the peak levels already computed, $P_B(8)=68>P_A(12)=64$. Truck B's peak profit is larger even though B's optimal meal count $8$ is smaller than A's $12$. Peak height and peak location are independent comparisons
-
-An interior candidate for a smooth extremum must make the first derivative vanish; that flat-slope equation only produces candidates, not finished labels.
 
 $$
 P_B(8) = 68>P_A(12) = 64
@@ -14356,8 +14038,6 @@ Truck A: $P_A'=-2Q+24$ vanishes at $Q=12$, and $P_A''=-2<0$, so twelve is a loca
     tactical_explanations: [
       `**A.** → True
 
-Name the objective, find where its slope is flat, then classify with the bend (or a sign chart) before matching the claim.
-
 Differentiate weekly cost and set the slope to zero:
 
 $$
@@ -14372,14 +14052,10 @@ $$
 C'(Q) = 3(Q-2)(Q-4).
 $$
 
-The roots are $Q=2$ and $Q=4$, both positive. Those are the flat-slope batch counts
-
-An interior candidate for a smooth extremum must make the first derivative vanish; that flat-slope equation only produces candidates, not finished labels.
+The roots are $Q=2$ and $Q=4$, both positive. Those are the flat-slope batch counts.
 
 So the statement is True.`,
       `**B.** → True
-
-Name the objective, find where its slope is flat, then classify with the bend (or a sign chart) before matching the claim.
 
 Classify both critical batches with the second derivative:
 
@@ -14419,18 +14095,12 @@ $$
 24 - 18 = 6 = 6>0.
 $$
 
-So at two batches the cost curve bends downward, while at four batches it bends upward, matching the claim
-
-An interior candidate for a smooth extremum must make the first derivative vanish; that flat-slope equation only produces candidates, not finished labels.
+So at two batches the cost curve bends downward, while at four batches it bends upward, matching the claim.
 
 So the statement is True.`,
       `**C.** → True
 
-Name the objective, find where its slope is flat, then classify with the bend (or a sign chart) before matching the claim.
-
 Combine flat slopes with bend signs. Downward bend at $Q=2$ means a local cost *peak*; upward bend at $Q=4$ means a local cost *trough*. Therefore two batches is a local cost peak and four batches is a local cost trough
-
-An interior candidate for a smooth extremum must make the first derivative vanish; that flat-slope equation only produces candidates, not finished labels.
 
 $$
 Q = 2
@@ -14442,8 +14112,6 @@ $$
 
 So the statement is True.`,
       `**D.** → True
-
-Name the objective, find where its slope is flat, then classify with the bend (or a sign chart) before matching the claim.
 
 Evaluate cost at the local trough $Q=4$:
 
@@ -14471,9 +14139,7 @@ $$
 C(4) = 21.
 $$
 
-The local trough cost value is $21$ (hundreds of euros), matching the claim
-
-An interior candidate for a smooth extremum must make the first derivative vanish; that flat-slope equation only produces candidates, not finished labels.
+The local trough cost value is $21$ (hundreds of euros), matching the claim.
 
 So the statement is True.`,
       `**E.** → False
@@ -14518,8 +14184,6 @@ A flat slope at two batches marks a local cost peak, not a minimum — bend clas
     tactical_explanations: [
       `**A.** → True
 
-Name the objective, find where its slope is flat, then classify with the bend (or a sign chart) before matching the claim.
-
 Differentiate cost and set the slope to zero inside $(0,8)$:
 
 $$
@@ -14530,14 +14194,10 @@ $$
 Q = 5.
 $$
 
-The unique root $Q=5$ lies strictly inside $(0,8)$. There is no other interior critical schedule
-
-An interior candidate for a smooth extremum must make the first derivative vanish; that flat-slope equation only produces candidates, not finished labels.
+The unique root $Q=5$ lies strictly inside $(0,8)$. There is no other interior critical schedule.
 
 So the statement is True.`,
       `**B.** → True
-
-Name the objective, find where its slope is flat, then classify with the bend (or a sign chart) before matching the claim.
 
 Classify five shifts with the second derivative:
 
@@ -14549,15 +14209,7 @@ $$
 C''(5) = 2>0.
 $$
 
-An upward bend at a flat slope is the second-derivative test for a local minimum. Therefore five shifts is a local cost trough
-
-Pause on the classification step: $f''<0$ at a critical point marks a local peak, $f''>0$ marks a local trough, and $f''=0$ makes the usual bend test inconclusive.
-
-$$
-f'' = 0
-$$
-
-which matches the claim.
+An upward bend at a flat slope is the second-derivative test for a local minimum. Therefore five shifts is a local cost trough.
 
 So the statement is True.`,
       `**C.** → True
@@ -14610,9 +14262,7 @@ $$
 C(8) = 24.
 $$
 
-Endpoint costs are $40$ at zero shifts and $24$ at eight shifts, while cost at five shifts is $15$, matching the claim
-
-Pause on the classification step: $f''<0$ at a critical point marks a local peak, $f''>0$ marks a local trough, and $f''=0$ makes the usual bend test inconclusive.
+Endpoint costs are $40$ at zero shifts and $24$ at eight shifts, while cost at five shifts is $15$, matching the claim.
 
 So the statement is True.`,
       `**D.** → False
@@ -14639,8 +14289,6 @@ So the statement is False.`,
 Global comparison on a restricted domain needs every candidate value — interior critical points and endpoints — not just the first flat-slope output you meet.
 
 Among $C(0)=40$, $C(5)=15$, and $C(8)=24$, the minimum is $15$ at the interior trough. On $[0,8]$ the global cost minimum is therefore at five shifts. The local trough wins the global comparison against both endpoints
-
-Pause on the classification step: $f''<0$ at a critical point marks a local peak, $f''>0$ marks a local trough, and $f''=0$ makes the usual bend test inconclusive.
 
 $$
 C(0) = 40
@@ -14690,8 +14338,6 @@ The only interior flat-slope schedule is $Q=5$, and the upward bend marks a loca
     tactical_explanations: [
       `**A.** → True
 
-Name the objective, find where its slope is flat, then classify with the bend (or a sign chart) before matching the claim.
-
 Using the fencing fully, the perimeter constraint is $2x+2y=40$, so $x+y=20$ and $y=20-x$. Enclosed area becomes a function of one side alone:
 
 $$
@@ -14709,8 +14355,6 @@ Under a linear or product constraint, eliminate one variable, write a single-var
 So the statement is True.`,
       `**B.** → True
 
-Name the objective, find where its slope is flat, then classify with the bend (or a sign chart) before matching the claim.
-
 Maximise the reduced area by setting its slope to zero:
 
 $$
@@ -14721,14 +14365,10 @@ $$
 x = 10
 $$
 
-hence $y=20-10=10$. The area-maximising bed is the $10$ by $10$ metre square. The critical-point calculation matches the claim
-
-Pause on the classification step: $f''<0$ at a critical point marks a local peak, $f''>0$ marks a local trough, and $f''=0$ makes the usual bend test inconclusive.
+hence $y=20-10=10$. The area-maximising bed is the $10$ by $10$ metre square. The critical-point calculation matches the claim.
 
 So the statement is True.`,
       `**C.** → True
-
-Name the objective, find where its slope is flat, then classify with the bend (or a sign chart) before matching the claim.
 
 Evaluate area at the critical square:
 
@@ -14744,14 +14384,10 @@ $$
 A(10) = 100.
 $$
 
-Maximal planting area is $100$ square metres. (As a check, $A''(10)=-2<0$ confirms a maximum.) The level matches the claim
-
-Pause on the classification step: $f''<0$ at a critical point marks a local peak, $f''>0$ marks a local trough, and $f''=0$ makes the usual bend test inconclusive.
+Maximal planting area is $100$ square metres. (As a check, $A''(10)=-2<0$ confirms a maximum.) The level matches the claim.
 
 So the statement is True.`,
       `**D.** → True
-
-Name the objective, find where its slope is flat, then classify with the bend (or a sign chart) before matching the claim.
 
 Read the bend of area at the square layout:
 
@@ -14764,14 +14400,6 @@ A''(10) = -2<0.
 $$
 
 A downward bend at a flat slope is the second-derivative test for a local maximum. The square therefore maximises area locally (and, on $(0,20)$, globally)
-
-Pause on the classification step: $f''<0$ at a critical point marks a local peak, $f''>0$ marks a local trough, and $f''=0$ makes the usual bend test inconclusive.
-
-$$
-f'' = 0
-$$
-
-which matches the claim.
 
 So the statement is True.`,
       `**E.** → False
@@ -14812,8 +14440,6 @@ Flat slope at $x=10$ gives the square $10\\times 10$ with $A(10)=100$. The downw
     tactical_explanations: [
       `**A.** → True
 
-Name the objective, find where its slope is flat, then classify with the bend (or a sign chart) before matching the claim.
-
 Printed area $36$ forces printed height $36/x$ when width is $x$. Adding a $1$ cm margin on every side enlarges each dimension by $2$, so total paper area is
 
 $$
@@ -14822,12 +14448,8 @@ $$
 
 That is exactly the claimed one-variable formula for $x>0$
 
-Pause on the classification step: $f''<0$ at a critical point marks a local peak, $f''>0$ marks a local trough, and $f''=0$ makes the usual bend test inconclusive.
-
 So the statement is True.`,
       `**B.** → True
-
-Name the objective, find where its slope is flat, then classify with the bend (or a sign chart) before matching the claim.
 
 Expand the product carefully:
 
@@ -14843,14 +14465,10 @@ $$
 A(x) = 36+2x+\\dfrac{72}{x}+4.
 $$
 
-Collecting constants, $A(x)=40+2x+\\dfrac{72}{x}$, matching the claim
-
-Pause on the classification step: $f''<0$ at a critical point marks a local peak, $f''>0$ marks a local trough, and $f''=0$ makes the usual bend test inconclusive.
+Collecting constants, $A(x)=40+2x+\\dfrac{72}{x}$, matching the claim.
 
 So the statement is True.`,
       `**C.** → True
-
-Name the objective, find where its slope is flat, then classify with the bend (or a sign chart) before matching the claim.
 
 Differentiate the expanded area and set the slope to zero for $x>0$:
 
@@ -14872,12 +14490,8 @@ $$
 
 (the positive root). Paper area has a flat slope at printed width $x=6$
 
-An interior candidate for a smooth extremum must make the first derivative vanish; that flat-slope equation only produces candidates, not finished labels.
-
 So the statement is True.`,
       `**D.** → True
-
-Name the objective, find where its slope is flat, then classify with the bend (or a sign chart) before matching the claim.
 
 At $x=6$ the printed height is $36/6=6$, so the printed region is a $6\\times 6$ square. Total paper area is
 
@@ -14905,9 +14519,7 @@ $$
 A(6) = 64.
 $$
 
-The bend $A''(6)=144/216>0$ confirms a local minimum. All three parts of the claim hold
-
-Pause on the classification step: $f''<0$ at a critical point marks a local peak, $f''>0$ marks a local trough, and $f''=0$ makes the usual bend test inconclusive.
+The bend $A''(6)=144/216>0$ confirms a local minimum. All three parts of the claim hold.
 
 So the statement is True.`,
       `**E.** → False
@@ -14948,8 +14560,6 @@ Flat slope at $x=6$ (taking $x>0$) gives a $6\\times 6$ printed square with tota
     tactical_explanations: [
       `**A.** → True
 
-Name the objective, find where its slope is flat, then classify with the bend (or a sign chart) before matching the claim.
-
 Let $x$ be the wire length for the square, so $60-x$ goes to the circle. The square's side is $x/4$ and the circle's circumference $2\\pi r=60-x$ gives radius $r=(60-x)/(2\\pi)$. Total enclosed area as a function of $x$ alone is
 
 $$
@@ -14964,8 +14574,6 @@ That reduction matches the setup behind the claim.
 
 So the statement is True.`,
       `**B.** → True
-
-Name the objective, find where its slope is flat, then classify with the bend (or a sign chart) before matching the claim.
 
 Differentiate the reduced area (product and chain rules on the circle term):
 
@@ -14984,8 +14592,6 @@ which matches the claim.
 So the statement is True.`,
       `**C.** → True
 
-Name the objective, find where its slope is flat, then classify with the bend (or a sign chart) before matching the claim.
-
 At that interior critical cut, compute the second derivative. Differentiating $A'(x)$ again gives
 
 $$
@@ -15003,11 +14609,7 @@ which matches the claim.
 So the statement is True.`,
       `**D.** → True
 
-Name the objective, find where its slope is flat, then classify with the bend (or a sign chart) before matching the claim.
-
-Because $A''>0$ at the critical cut, the second-derivative test labels it a local *minimum* of total enclosed area — a trough of $A$, not a peak. The claim states exactly that classification
-
-Pause on the classification step: $f''<0$ at a critical point marks a local peak, $f''>0$ marks a local trough, and $f''=0$ makes the usual bend test inconclusive.
+Because $A''>0$ at the critical cut, the second-derivative test labels it a local *minimum* of total enclosed area — a trough of $A$, not a peak. The claim states exactly that classification.
 
 So the statement is True.`,
       `**E.** → False
@@ -15093,12 +14695,8 @@ $$
 
 The unique critical point in $(0,10)$ is $x=5$. The reduced utility therefore has a flat slope at $x=5$
 
-An interior candidate for a smooth extremum must make the first derivative vanish; that flat-slope equation only produces candidates, not finished labels.
-
 So the statement is True.`,
       `**C.** → True
-
-Name the objective, find where its slope is flat, then classify with the bend (or a sign chart) before matching the claim.
 
 At $x=5$ the budget gives
 
@@ -15124,14 +14722,10 @@ $$
 U = 50.
 $$
 
-(Alternatively $u(5)=20\\cdot 5-2\\cdot 25=100-50=50$.) Bundle $(5,10)$ with utility level $50$ matches the claim
-
-Pause on the classification step: $f''<0$ at a critical point marks a local peak, $f''>0$ marks a local trough, and $f''=0$ makes the usual bend test inconclusive.
+(Alternatively $u(5)=20\\cdot 5-2\\cdot 25=100-50=50$.) Bundle $(5,10)$ with utility level $50$ matches the claim.
 
 So the statement is True.`,
       `**D.** → True
-
-Name the objective, find where its slope is flat, then classify with the bend (or a sign chart) before matching the claim.
 
 Read the bend of reduced utility at $x=5$:
 
@@ -15145,17 +14739,9 @@ $$
 
 A downward bend at a flat slope is the second-derivative test for a local maximum. That bundle therefore maximises utility locally on the budget line
 
-Pause on the classification step: $f''<0$ at a critical point marks a local peak, $f''>0$ marks a local trough, and $f''=0$ makes the usual bend test inconclusive.
-
 $$
 x = 5
 $$
-
-$$
-f'' = 0
-$$
-
-which matches the claim.
 
 So the statement is True.`,
       `**E.** → False
@@ -15218,14 +14804,10 @@ $$
 q'(x) = 10-2x.
 $$
 
-The reduced output has slope $10-2x$, matching the claim
-
-An interior candidate for a smooth extremum must make the first derivative vanish; that flat-slope equation only produces candidates, not finished labels.
+The reduced output has slope $10-2x$, matching the claim.
 
 So the statement is True.`,
       `**B.** → True
-
-Name the objective, find where its slope is flat, then classify with the bend (or a sign chart) before matching the claim.
 
 Set the slope to zero inside $(0,10)$:
 
@@ -15239,12 +14821,8 @@ $$
 
 hence $y=5$ and $Q=5\\cdot 5=25$. That is the unique positive flat-slope candidate, with output $25$
 
-An interior candidate for a smooth extremum must make the first derivative vanish; that flat-slope equation only produces candidates, not finished labels.
-
 So the statement is True.`,
       `**C.** → True
-
-Name the objective, find where its slope is flat, then classify with the bend (or a sign chart) before matching the claim.
 
 Read the bend at the equal split:
 
@@ -15256,14 +14834,10 @@ $$
 q''(5) = -2<0.
 $$
 
-A downward bend at a flat slope confirms a local maximum of output. The equal split maximises $Q$ locally on the constraint
-
-Pause on the classification step: $f''<0$ at a critical point marks a local peak, $f''>0$ marks a local trough, and $f''=0$ makes the usual bend test inconclusive.
+A downward bend at a flat slope confirms a local maximum of output. The equal split maximises $Q$ locally on the constraint.
 
 So the statement is True.`,
       `**D.** → True
-
-Name the objective, find where its slope is flat, then classify with the bend (or a sign chart) before matching the claim.
 
 For any other split with $x+y=10$ and $x\\neq 5$, the reduced area satisfies
 
@@ -15276,8 +14850,6 @@ q(x) = 25-(x-5)^{2}<25.
 $$
 
 Equivalently, $xy=((x+y)^{2}-(x-y)^{2})/4=25-(x-y)^{2}/4<25$ unless $x=y$. Every other feasible pair yields strictly smaller output than $25$
-
-Pause on the classification step: $f''<0$ at a critical point marks a local peak, $f''>0$ marks a local trough, and $f''=0$ makes the usual bend test inconclusive.
 
 $$
 x+y = 10
@@ -15299,8 +14871,6 @@ $$, while $5+5$ gives
 $$
 25
 $$. The constraint does not force output $25$ for every feasible pair
-
-Pause on the classification step: $f''<0$ at a critical point marks a local peak, $f''>0$ marks a local trough, and $f''=0$ makes the usual bend test inconclusive.
 
 $$
 x+y = 10
@@ -15514,8 +15084,6 @@ so $\\varepsilon(25)=-1$ (unit elastic). At $p=20$, $|\\varepsilon|<1$ (inelasti
     tactical_explanations: [
       `**A.** → True
 
-Name the objective, find where its slope is flat, then classify with the bend (or a sign chart) before matching the claim.
-
 Ticket revenue is price times audience:
 
 $$
@@ -15536,9 +15104,7 @@ $$
 p = 20.
 $$
 
-Revenue expands to the claimed quadratic and has a flat slope at $20$ euros
-
-An interior candidate for a smooth extremum must make the first derivative vanish; that flat-slope equation only produces candidates, not finished labels.
+Revenue expands to the claimed quadratic and has a flat slope at $20$ euros.
 
 So the statement is True.`,
       `**B.** → True
@@ -15565,14 +15131,10 @@ $$
 \\varepsilon(20) = -1.
 $$
 
-Demand is unit elastic at $20$ euros
-
-Pause on the classification step: $f''<0$ at a critical point marks a local peak, $f''>0$ marks a local trough, and $f''=0$ makes the usual bend test inconclusive.
+Demand is unit elastic at $20$ euros.
 
 So the statement is True.`,
       `**C.** → True
-
-Name the objective, find where its slope is flat, then classify with the bend (or a sign chart) before matching the claim.
 
 Read the bend of revenue at $20$ euros:
 
@@ -15584,20 +15146,10 @@ $$
 R''(20) = -6<0.
 $$
 
-A downward bend at a flat slope is the second-derivative test for a local maximum. That fare is a local revenue peak
-
-Pause on the classification step: $f''<0$ at a critical point marks a local peak, $f''>0$ marks a local trough, and $f''=0$ makes the usual bend test inconclusive.
-
-$$
-f'' = 0
-$$
-
-which matches the claim.
+A downward bend at a flat slope is the second-derivative test for a local maximum. That fare is a local revenue peak.
 
 So the statement is True.`,
       `**D.** → True
-
-Name the objective, find where its slope is flat, then classify with the bend (or a sign chart) before matching the claim.
 
 At $p=20$, audience size and revenue are
 
@@ -15621,9 +15173,7 @@ $$
 20\\times 60 = 1200 = 1200.
 $$
 
-The theatre sells $60$ tickets and earns $1200$ euros, matching the claim
-
-Pause on the classification step: $f''<0$ at a critical point marks a local peak, $f''>0$ marks a local trough, and $f''=0$ makes the usual bend test inconclusive.
+The theatre sells $60$ tickets and earns $1200$ euros, matching the claim.
 
 So the statement is True.`,
       `**E.** → False
@@ -15733,8 +15283,6 @@ Marginal revenue equals $-10$ euros per extra gadget.
 
 So the statement is True.`,
       `**C.** → True
-
-Name the objective, find where its slope is flat, then classify with the bend (or a sign chart) before matching the claim.
 
 Invert demand to $p=(100-Q)/2$ and write revenue as a function of quantity:
 
@@ -15908,8 +15456,6 @@ $$
 
 Larger absolute elasticity means greater price sensitivity. Cart B's customers are more price-sensitive than Cart A's at $p=20$
 
-An interior candidate for a smooth extremum must make the first derivative vanish; that flat-slope equation only produces candidates, not finished labels.
-
 $$
 p = 20
 $$
@@ -16033,12 +15579,8 @@ $$
 
 (The critical point lies in $[0,10]$.) The reduced profit has a flat slope at $x=7.5$
 
-An interior candidate for a smooth extremum must make the first derivative vanish; that flat-slope equation only produces candidates, not finished labels.
-
 So the statement is True.`,
       `**C.** → True
-
-Name the objective, find where its slope is flat, then classify with the bend (or a sign chart) before matching the claim.
 
 At $x=7.5$ one has $y=10-7.5=2.5$. The bend of reduced profit is
 
@@ -16047,8 +15589,6 @@ p''(x) = -4<0,
 $$
 
 so the flat spot is a local profit peak by the second-derivative test. Both the complementary output and the downward bend match the claim
-
-Pause on the classification step: $f''<0$ at a critical point marks a local peak, $f''>0$ marks a local trough, and $f''=0$ makes the usual bend test inconclusive.
 
 $$
 y = 2.5
@@ -16062,16 +15602,8 @@ $$
 y = 10-7.5 = 2.5
 $$
 
-$$
-f'' = 0
-$$
-
-which matches the claim.
-
 So the statement is True.`,
       `**D.** → True
-
-Name the objective, find where its slope is flat, then classify with the bend (or a sign chart) before matching the claim.
 
 Evaluate reduced profit at the peak:
 
@@ -16095,9 +15627,7 @@ $$
 p(7.5) = 212.5.
 $$
 
-Maximised constrained profit equals $212.5$, matching the claim
-
-Pause on the classification step: $f''<0$ at a critical point marks a local peak, $f''>0$ marks a local trough, and $f''=0$ makes the usual bend test inconclusive.
+Maximised constrained profit equals $212.5$, matching the claim.
 
 So the statement is True.`,
       `**E.** → False
@@ -16162,8 +15692,6 @@ Ignoring the constraint and optimising $x,y$ separately yields a different uncon
     tactical_explanations: [
       `**A.** → True
 
-Name the objective, find where its slope is flat, then classify with the bend (or a sign chart) before matching the claim.
-
 With the river as one side, fencing covers two perpendicular sides $x$ and the parallel side $40-2x$. Enclosed area becomes a function of the perpendicular side alone:
 
 $$
@@ -16174,14 +15702,10 @@ $$
 0<x<20.
 $$
 
-That single-variable reduction is exactly what the claim asserts
-
-Pause on the classification step: $f''<0$ at a critical point marks a local peak, $f''>0$ marks a local trough, and $f''=0$ makes the usual bend test inconclusive.
+That single-variable reduction is exactly what the claim asserts.
 
 So the statement is True.`,
       `**B.** → True
-
-Name the objective, find where its slope is flat, then classify with the bend (or a sign chart) before matching the claim.
 
 Maximise area by setting its slope to zero:
 
@@ -16193,14 +15717,10 @@ $$
 x = 10.
 $$
 
-Area has a flat slope when each perpendicular side is $10$ metres
-
-An interior candidate for a smooth extremum must make the first derivative vanish; that flat-slope equation only produces candidates, not finished labels.
+Area has a flat slope when each perpendicular side is $10$ metres.
 
 So the statement is True.`,
       `**C.** → True
-
-Name the objective, find where its slope is flat, then classify with the bend (or a sign chart) before matching the claim.
 
 At $x=10$ the riverside side is $40-20=20$ metres. The bend
 
@@ -16214,8 +15734,6 @@ $$
 
 confirms a local maximum. Layout $10$–$20$–$10$ maximises area locally, matching the claim
 
-Pause on the classification step: $f''<0$ at a critical point marks a local peak, $f''>0$ marks a local trough, and $f''=0$ makes the usual bend test inconclusive.
-
 $$
 x = 10
 $$
@@ -16228,8 +15746,6 @@ which matches the claim.
 
 So the statement is True.`,
       `**D.** → True
-
-Name the objective, find where its slope is flat, then classify with the bend (or a sign chart) before matching the claim.
 
 Evaluate area at the critical layout:
 
@@ -16245,9 +15761,7 @@ $$
 A(10) = 200.
 $$
 
-Maximal area is $200$ square metres, matching the claim
-
-Pause on the classification step: $f''<0$ at a critical point marks a local peak, $f''>0$ marks a local trough, and $f''=0$ makes the usual bend test inconclusive.
+Maximal area is $200$ square metres, matching the claim.
 
 So the statement is True.`,
       `**E.** → False
@@ -16302,8 +15816,6 @@ $$
 
 That is exactly the claimed one-variable cost function
 
-Pause on the classification step: $f''<0$ at a critical point marks a local peak, $f''>0$ marks a local trough, and $f''=0$ makes the usual bend test inconclusive.
-
 $$
 y = \\dfrac{16}{x}
 $$
@@ -16325,8 +15837,6 @@ which matches the claim.
 So the statement is True.`,
       `**B.** → True
 
-Name the objective, find where its slope is flat, then classify with the bend (or a sign chart) before matching the claim.
-
 Differentiate and set the slope to zero for $x>0$:
 
 $$
@@ -16347,12 +15857,8 @@ $$
 
 Cost has a flat slope at $x=8$
 
-An interior candidate for a smooth extremum must make the first derivative vanish; that flat-slope equation only produces candidates, not finished labels.
-
 So the statement is True.`,
       `**C.** → True
-
-Name the objective, find where its slope is flat, then classify with the bend (or a sign chart) before matching the claim.
 
 At $x=8$ one has $y=16/8=2$ and total cost
 
@@ -16376,18 +15882,12 @@ $$
 C(8) = 32.
 $$
 
-The bend $C''(8)=256/512>0$ confirms a local cost trough. All three parts of the claim hold
-
-Pause on the classification step: $f''<0$ at a critical point marks a local peak, $f''>0$ marks a local trough, and $f''=0$ makes the usual bend test inconclusive.
+The bend $C''(8)=256/512>0$ confirms a local cost trough. All three parts of the claim hold.
 
 So the statement is True.`,
       `**D.** → True
 
-Name the objective, find where its slope is flat, then classify with the bend (or a sign chart) before matching the claim.
-
 Along $xy=16$, a cost-minimising interior point balances relative input prices against the technical trade-off. Here $C_x=2$, $C_y=8$, so $C_x/C_y=1/4$, and at $(8,2)$ one has $y/x=2/8=1/4$. The balance condition holds at that point, matching the claim
-
-Pause on the classification step: $f''<0$ at a critical point marks a local peak, $f''>0$ marks a local trough, and $f''=0$ makes the usual bend test inconclusive.
 
 $$
 xy = 16
@@ -16472,8 +15972,6 @@ Flat slope at $x=8$ gives $y=2$, total cost $C(8)=16+16=32$, and $C''(8)>0$ conf
     tactical_explanations: [
       `**A.** → True
 
-Name the objective, find where its slope is flat, then classify with the bend (or a sign chart) before matching the claim.
-
 Ticket revenue is fare times passengers:
 
 $$
@@ -16494,9 +15992,7 @@ $$
 p = 45.
 $$
 
-Peak revenue is $R(45)=90\\cdot 45-45^{2}=4050-2025=2025$. Fare, revenue function, and peak level all match the claim
-
-Pause on the classification step: $f''<0$ at a critical point marks a local peak, $f''>0$ marks a local trough, and $f''=0$ makes the usual bend test inconclusive.
+Peak revenue is $R(45)=90\\cdot 45-45^{2}=4050-2025=2025$. Fare, revenue function, and peak level all match the claim.
 
 So the statement is True.`,
       `**B.** → True
@@ -16530,8 +16026,6 @@ For ordinary downward-sloping demand, revenue peaks where point elasticity equal
 So the statement is True.`,
       `**C.** → True
 
-Name the objective, find where its slope is flat, then classify with the bend (or a sign chart) before matching the claim.
-
 At $p=30$, marginal revenue is still positive:
 
 $$
@@ -16556,8 +16050,6 @@ For ordinary downward-sloping demand, revenue peaks where point elasticity equal
 
 So the statement is True.`,
       `**D.** → True
-
-Name the objective, find where its slope is flat, then classify with the bend (or a sign chart) before matching the claim.
 
 At $p=60$, marginal revenue is already negative:
 
@@ -16620,8 +16112,6 @@ with $R'(p)=90-2p$ and $R''(p)=-2<0$. Flat revenue at $p=45$ gives $R(45)=2025$.
     tactical_explanations: [
       `**A.** → True
 
-Name the objective, find where its slope is flat, then classify with the bend (or a sign chart) before matching the claim.
-
 After cutting squares of side $x$ from each corner and folding, the box has height $x$ and square base of side $12-2x$. Volume is therefore
 
 $$
@@ -16632,14 +16122,10 @@ $$
 0<x<6.
 $$
 
-That geometric description matches the claim exactly
-
-Pause on the classification step: $f''<0$ at a critical point marks a local peak, $f''>0$ marks a local trough, and $f''=0$ makes the usual bend test inconclusive.
+That geometric description matches the claim exactly.
 
 So the statement is True.`,
       `**B.** → True
-
-Name the objective, find where its slope is flat, then classify with the bend (or a sign chart) before matching the claim.
 
 Expand and differentiate. First
 
@@ -16657,14 +16143,10 @@ $$
 V'(x) = 144-96x+12x^{2}.
 $$
 
-Expanding produces a cubic volume whose slope is a quadratic in $x$, matching the claim
-
-An interior candidate for a smooth extremum must make the first derivative vanish; that flat-slope equation only produces candidates, not finished labels.
+Expanding produces a cubic volume whose slope is a quadratic in $x$, matching the claim.
 
 So the statement is True.`,
       `**C.** → True
-
-Name the objective, find where its slope is flat, then classify with the bend (or a sign chart) before matching the claim.
 
 Factor the slope and find roots inside $(0,6)$:
 
@@ -16678,8 +16160,6 @@ $$
 
 The roots are $x=2$ and $x=6$. Only $x=2$ lies strictly inside $(0,6)$; $x=6$ is the excluded right endpoint where the base collapses. The only interior flat-slope cut is $x=2$
 
-An interior candidate for a smooth extremum must make the first derivative vanish; that flat-slope equation only produces candidates, not finished labels.
-
 $$
 x = 2
 $$
@@ -16692,8 +16172,6 @@ which matches the claim.
 
 So the statement is True.`,
       `**D.** → True
-
-Name the objective, find where its slope is flat, then classify with the bend (or a sign chart) before matching the claim.
 
 At $x=2$, volume and bend are
 
@@ -16709,9 +16187,7 @@ and differentiating $V'(x)=12(x-2)(x-6)$ (or using $V''(x)=24x-96$) gives
 
 $$
 V''(2) = -48<0
-$$. Downward bend plus volume $128$ means that cut maximises volume locally
-
-Pause on the classification step: $f''<0$ at a critical point marks a local peak, $f''>0$ marks a local trough, and $f''=0$ makes the usual bend test inconclusive.
+$$. Downward bend plus volume $128$ means that cut maximises volume locally.
 
 So the statement is True.`,
       `**E.** → False
