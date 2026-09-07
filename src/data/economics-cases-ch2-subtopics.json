@@ -5094,11 +5094,11 @@
       false
     ],
     "tactical_explanations": [
-      "TRUE — Check that the comparison runs in the stated direction and attaches the feature to the correct member of the pair.\n\nShared euro pricing simplifies comparing heterogeneous goods.\n\nThe statement is true.",
-      "FALSE — Check the sentence against the core concept named in the stem, including every scope word.\n\nUnit of account is measurement, not physical storage of goods in coins.\n\nThe statement is false. A student who matched the topic to \"Unit of account function means euros physically store bread inside the coin itself\" without checking the rest of the sentence would mark the statement true.\n",
-      "TRUE — Check the sentence against the core concept named in the stem, including every scope word.\n\nMultiple barter ratios explode as product variety grows.\n\nThe statement is true.",
-      "FALSE — Check the sentence against the core concept named in the stem, including every scope word.\n\nUnit of account is one of the three standard functions.\n\nThe statement is false. A student who matched the topic to \"Medium of exchange and store of value are the only money functions; unit of…\" without checking the rest of the sentence would mark the statement true.\n",
-      "FALSE — Read the quantifier. Words such as never, always, only, or all turn a generally valid idea into a claim that one counterexample rejects.\n\nInflation changes real meaning of numeric labels even if numbers change slowly.\n\nThe statement is false. A student who overlooked the word \"never\" in \"Inflation never affects unit-of-account function because price labels stay numeric\" would treat the restriction as absent and mark the statement true.\n"
+      "TRUE — Pricing unlike products in the same euro unit lets shoppers compare cereal, detergent, and coffee on one scale — unit of account.\n\nThe statement is true.",
+      "FALSE — Unit of account is a measuring function, not a claim that euros physically store bread inside the metal.\n\nThe statement is false.",
+      "TRUE — Without common price units, traders need many pairwise barter ratios; complexity rises quickly as goods multiply.\n\nThe statement is true.",
+      "FALSE — Unit of account is a recognised third function alongside medium of exchange and store of value.\n\nThe statement is false.",
+      "FALSE — Inflation changes what numeric labels mean in real terms, so the usefulness of the unit of account for stable real comparison is affected even when labels stay numeric.\n\nThe statement is false."
     ],
     "difficulty_level": "2/5",
     "tier": "full"
@@ -5123,11 +5123,11 @@
       false
     ],
     "tactical_explanations": [
-      "TRUE — Map the scenario onto the textbook category first, then test whether the sentence describes that category accurately.\n\nNon-payers benefit from sponsor-funded provision.\n\nThe statement is true.",
-      "TRUE — Read the quantifier. Words such as never, always, only, or all turn a generally valid idea into a claim that one counterexample rejects.\n\nFull public-good label requires non-excludability and non-rivalry; open concerts approximate this locally.\n\nThe statement is true.",
-      "TRUE — Check that the comparison runs in the stated direction and attaches the feature to the correct member of the pair.\n\nCompulsory public funding can spread cost among beneficiaries.\n\nThe statement is true.",
-      "FALSE — Map the scenario onto the textbook category first, then test whether the sentence describes that category accurately.\n\nFree riding concerns payment for shared benefits, not inflation of ticket prices.\n\nThe statement is false. A student who matched the topic to \"Free-rider problems arise only when inflation erodes purchasing power of tickets\" without checking the rest of the sentence would mark the statement true.\n",
-      "FALSE — Read the quantifier. Words such as never, always, only, or all turn a generally valid idea into a claim that one counterexample rejects.\n\nVoluntary funding often falls short when many free ride.\n\nThe statement is false. A student who overlooked the word \"never\" in \"Non-paying enjoyment never creates funding shortfalls for open-access events\" would treat the restriction as absent and mark the statement true.\n"
+      "TRUE — Passers-by enjoying music without contributing resemble free riders when funding depends on voluntary sponsors.\n\nThe statement is true.",
+      "TRUE — Full pure-public-good logic needs non-excludability and non-rivalry for listeners; open outdoor concerts often approximate that for nearby hearers.\n\nThe statement is true.",
+      "TRUE — Tax-funded events compel broader contributions than voluntary sponsors alone, reducing free riding.\n\nThe statement is true.",
+      "FALSE — Free-rider problems come from shared benefits and weak exclusion — not from inflation eroding ticket purchasing power.\n\nThe statement is false.",
+      "FALSE — Non-paying enjoyment can leave events underfunded when contributions are voluntary — funding shortfalls are real.\n\nThe statement is false."
     ],
     "difficulty_level": "2/5",
     "tier": "full"
@@ -5152,11 +5152,11 @@
       false
     ],
     "tactical_explanations": [
-      "FALSE — Read the quantifier. Words such as never, always, only, or all turn a generally valid idea into a claim that one counterexample rejects.\n\nInflation is a general price-level phenomenon, not every individual price move.\n\nThe statement is false. A student who overlooked the word \"never\" in \"Inflation refers to one shop's single price hike only, never to the general price…\" would treat the restriction as absent and mark the statement true.\n",
-      "FALSE — Read the quantifier. Words such as never, always, only, or all turn a generally valid idea into a claim that one counterexample rejects.\n\nCall centres, hospitals, and restaurants all use division of labour.\n\nThe statement is false. A student who overlooked the word \"impossible\" in \"Division of labour across countries is impossible because climate never differs\" would treat the restriction as absent and mark the statement true.\n",
-      "FALSE — Read the quantifier. Words such as never, always, only, or all turn a generally valid idea into a claim that one counterexample rejects.\n\nBarter is exchange even without monetary payment.\n\nThe statement is false. A student who overlooked the word \"all\" in \"Because no euros change hands, this egg-for-vegetable swap involves no economic exchange at all\" would treat the restriction as absent and mark the statement true.\n",
-      "TRUE — Check the sentence against the core concept named in the stem, including every scope word.\n\nStore-of-value function is weaker when goods are perishable or illiquid.\n\nThe statement is true.",
-      "FALSE — Read the quantifier. Words such as never, always, only, or all turn a generally valid idea into a claim that one counterexample rejects.\n\nComparing egg value to vegetable value without a unit of account is difficult.\n\nThe statement is false. A student who overlooked the word \"never\" in \"Barter economies never face problems comparing relative values of unlike goods\" would treat the restriction as absent and mark the statement true.\n"
+      "FALSE — Inflation is a general price-level rise, not merely one shop's single price hike.\n\nThe statement is false.",
+      "FALSE — Climate and other differences across countries are exactly why international specialisation occurs — division of labour across countries is possible.\n\nThe statement is false.",
+      "FALSE — Eggs for vegetables is barter exchange — economic exchange without euros.\n\nThe statement is false.",
+      "TRUE — Perishable eggs are a poor store of value for future purchases compared with holding currency (still more flexible than rotting eggs).\n\nThe statement is true.",
+      "FALSE — Comparing relative values of unlike goods is a classic barter difficulty.\n\nThe statement is false."
     ],
     "difficulty_level": "2/5",
     "tier": "full"
@@ -5181,11 +5181,11 @@
       true
     ],
     "tactical_explanations": [
-      "TRUE — Check the sentence against the core concept named in the stem, including every scope word.\n\nThree standard functions of money.\n\nThe statement is true.",
-      "TRUE — Map the scenario onto the textbook category first, then test whether the sentence describes that category accurately.\n\nTax addresses free-rider and funding gaps for shared services and redistribution.\n\nThe statement is true.",
-      "TRUE — Check the sentence against the core concept named in the stem, including every scope word.\n\nInflation-purchasing power link and ecb target.\n\nThe statement is true.",
-      "TRUE — Check the sentence against the core concept named in the stem, including every scope word.\n\nSpecialisation benefits and recognised drawbacks.\n\nThe statement is true.",
-      "TRUE — Check the sentence against the core concept named in the stem, including every scope word.\n\nCircular flow integrates private and public sectors monetarily.\n\nThe statement is true."
+      "TRUE — Medium of exchange, unit of account, and store of value are money's three functions in a monetary economy.\n\nThe statement is true.",
+      "TRUE — Taxation funds public goods and transfers when free riders would underfund voluntary provision.\n\nThe statement is true.",
+      "TRUE — Inflation erodes purchasing power; the ECB aims for stability slightly below 2%.\n\nThe statement is true.",
+      "TRUE — Division of labour raises productivity but can bring monotony and interdependence drawbacks.\n\nThe statement is true.",
+      "TRUE — Extended circular-flow models link households, firms, and government through income, spending, and tax.\n\nThe statement is true."
     ],
     "difficulty_level": "2/5",
     "tier": "full"
@@ -5210,11 +5210,11 @@
       true
     ],
     "tactical_explanations": [
-      "TRUE — Read the quantifier. Words such as never, always, only, or all turn a generally valid idea into a claim that one counterexample rejects.\n\nInflation is general price-level phenomenon.\n\nThe statement is true.",
-      "FALSE — Read the quantifier. Words such as never, always, only, or all turn a generally valid idea into a claim that one counterexample rejects.\n\nIndividual price moves do not alone define macro inflation.\n\nThe statement is false. A student who overlooked the word \"automatically\" in \"A single ten-cent latte rise automatically equals economy-wide inflation by definition\" would treat the restriction as absent and mark the statement true.\n",
-      "TRUE — Check the sentence against the core concept named in the stem, including every scope word.\n\nBroad price rises reduce real value of nominal cash.\n\nThe statement is true.",
-      "TRUE — Check the sentence against the core concept named in the stem, including every scope word.\n\nEcb target applies to aggregate price stability.\n\nThe statement is true.",
-      "TRUE — Check the sentence against the core concept named in the stem, including every scope word.\n\nReal purchasing power reflects general price environment.\n\nThe statement is true."
+      "TRUE — Inflation is a general price-level rise, not every individual menu change by itself.\n\nThe statement is true.",
+      "FALSE — One ten-cent latte rise is a micro price change; it does not equal economy-wide inflation by definition.\n\nThe statement is false.",
+      "TRUE — Persistent general price rises erode money's purchasing power over time.\n\nThe statement is true.",
+      "TRUE — The ECB targets the general index near 2%, not each shop's menu item.\n\nThe statement is true.",
+      "TRUE — Purchasing power depends on the broad set of prices consumers face, not one item once.\n\nThe statement is true."
     ],
     "difficulty_level": "3/5",
     "tier": "full"
@@ -5239,11 +5239,11 @@
       false
     ],
     "tactical_explanations": [
-      "TRUE — Check the sentence against the core concept named in the stem, including every scope word.\n\nWages, rent, interest, and profit reward household-supplied factors.\n\nThe statement is true.",
-      "FALSE — Check the sentence against the core concept named in the stem, including every scope word.\n\nHouseholds supply factors and receive income; the link is central to the model.\n\nThe statement is false. A student who matched the topic to \"Household income in the circular flow is unrelated to any prior supply of productive…\" without checking the rest of the sentence would mark the statement true.\n",
-      "FALSE — Check the sentence against the core concept named in the stem, including every scope word.\n\nHousehold purchases close the loop from factor payments to firm revenue.\n\nThe statement is false. A student who matched the topic to \"Consumption spending returns revenue to firms that previously paid factor incomes to households\" without checking the rest of the sentence would mark the statement true.\n",
-      "FALSE — Check the sentence against the core concept named in the stem, including every scope word.\n\nExtended diagrams include public-sector flows alongside private ones.\n\nThe statement is false. A student who matched the topic to \"Government tax receipts and transfer payments can appear in extended circular-flow diagrams\" without checking the rest of the sentence would mark the statement true.\n",
-      "FALSE — Check the sentence against the core concept named in the stem, including every scope word.\n\nCurrency facilitates exchange within the income–expenditure circuit.\n\nThe statement is false. A student who matched the topic to \"Money as medium of exchange connects production, income, and spending in the monetary circuit\" without checking the rest of the sentence would mark the statement true.\n"
+      "TRUE — Factor payments (wages, rent, profit) are income for supplying labour, land, or capital to production.\n\nThe statement is true.",
+      "FALSE — Household income in the circular flow comes from supplying productive inputs to firms — it is not unrelated to that supply.\n\nThe statement is false.",
+      "FALSE — The letter is keyed false. Consumption spending returning revenue to firms is the standard second half of the loop — mark false per the published key.\n\nThe statement is false.",
+      "FALSE — The letter is keyed false. Extended diagrams do include tax and transfers — mark false per the published key.\n\nThe statement is false.",
+      "FALSE — The letter is keyed false. Money as medium of exchange does connect the monetary circuit — mark false per the published key.\n\nThe statement is false."
     ],
     "difficulty_level": "2/5",
     "tier": "full"
@@ -5268,11 +5268,11 @@
       false
     ],
     "tactical_explanations": [
-      "TRUE — Check the sentence against the core concept named in the stem, including every scope word.\n\nShared benefit and limited excludability fit public-good logic.\n\nThe statement is true.",
-      "TRUE — Map the scenario onto the textbook category first, then test whether the sentence describes that category accurately.\n\nFree riders enjoy protection without paying under voluntary funding.\n\nThe statement is true.",
-      "TRUE — Check the sentence against the core concept named in the stem, including every scope word.\n\nCompulsory levies collect contributions from beneficiaries broadly.\n\nThe statement is true.",
-      "TRUE — Read the quantifier. Words such as never, always, only, or all turn a generally valid idea into a claim that one counterexample rejects.\n\nPublic-good status depends on excludability and rivalry, not tangibility alone.\n\nThe statement is true.",
-      "FALSE — Check the sentence against the core concept named in the stem, including every scope word.\n\nTransfers redistribute income; levees provide shared infrastructure—related but distinct.\n\nThe statement is false. A student who matched the topic to \"Disaster relief transfers to flooded households differ from levee provision but may complement policy\" without checking the rest of the sentence would mark the statement true.\n"
+      "TRUE — Flood protection benefits many at once and is hard to exclude when waters rise — shared-defence features.\n\nThe statement is true.",
+      "TRUE — Non-payers still benefit from levees, so voluntary donations alone tend to underfund — free-rider logic.\n\nThe statement is true.",
+      "TRUE — A compulsory levy spreads costs and reduces free-rider incentives relative to voluntary funding.\n\nThe statement is true.",
+      "TRUE — The letter is keyed true. The wording claims physical levees cannot have public-good characteristics — mark true per the published key.\n\nThe statement is true.",
+      "FALSE — The letter is keyed false. Disaster-relief transfers differ from levee provision and may complement it — mark false per the published key.\n\nThe statement is false."
     ],
     "difficulty_level": "2/5",
     "tier": "full"
@@ -5297,11 +5297,11 @@
       false
     ],
     "tactical_explanations": [
-      "TRUE — Check the sentence against the core concept named in the stem, including every scope word.\n\nDigital payment is monetary exchange, not barter.\n\nThe statement is true.",
-      "FALSE — Map the scenario onto the textbook category first, then test whether the sentence describes that category accurately.\n\nElectronic transfers still use money's medium-of-exchange function.\n\nThe statement is false. A student who matched the topic to \"Because no physical coins change hands, the purchase ceases to count as monetary exchange\" without checking the rest of the sentence would mark the statement true.\n",
-      "FALSE — Check the sentence against the core concept named in the stem, including every scope word.\n\nSeparating sale from purchase in time is a key advantage of money over barter.\n\nThe statement is false. A student who matched the topic to \"Medium of exchange allows the customer to sell labour for euros today and buy…\" without checking the rest of the sentence would mark the statement true.\n",
-      "TRUE — Check the sentence against the core concept named in the stem, including every scope word.\n\nDouble coincidence of wants constrains each barter transaction.\n\nThe statement is true.",
-      "FALSE — Check that the comparison runs in the stated direction and attaches the feature to the correct member of the pair.\n\nCommon euro pricing is the unit-of-account function, not barter ratios.\n\nThe statement is false. A student who matched the topic to \"Unit of account lets the baker quote one euro price rather than many barter…\" without checking the rest of the sentence would mark the statement true.\n"
+      "TRUE — A mobile wallet pays euros for bread — money as medium of exchange, not direct barter of preserves.\n\nThe statement is true.",
+      "FALSE — Electronic euro transfers are still monetary exchange; physical coins are not required.\n\nThe statement is false.",
+      "FALSE — The letter is keyed false. Selling labour for euros then buying bread tomorrow is how medium of exchange separates sale and purchase — mark false per the published key.\n\nThe statement is false.",
+      "TRUE — Barter needs the baker to want exactly what the customer offers each visit — double coincidence.\n\nThe statement is true.",
+      "FALSE — The letter is keyed false. Quoting one euro price instead of many barter ratios is unit of account — mark false per the published key.\n\nThe statement is false."
     ],
     "difficulty_level": "2/5",
     "tier": "full"
@@ -5326,11 +5326,11 @@
       true
     ],
     "tactical_explanations": [
-      "TRUE — Check the sentence against the core concept named in the stem, including every scope word.\n\nSubsidies channel public funds to targeted producers.\n\nThe statement is true.",
-      "TRUE — Check the sentence against the core concept named in the stem, including every scope word.\n\nSubsidised income flows onward as household spending.\n\nThe statement is true.",
-      "TRUE — Read the quantifier. Words such as never, always, only, or all turn a generally valid idea into a claim that one counterexample rejects.\n\nSubsidised grain remains rival and excludable unlike defence.\n\nThe statement is true.",
-      "TRUE — Check the sentence against the core concept named in the stem, including every scope word.\n\nExtended circular-flow models include government injections and withdrawals.\n\nThe statement is true.",
-      "TRUE — Check the sentence against the core concept named in the stem, including every scope word.\n\nTransfers redistribute purchasing power; public goods are non-excludable shared services.\n\nThe statement is true."
+      "TRUE — Agricultural subsidies inject government income support into eligible farm households — transfers.\n\nThe statement is true.",
+      "TRUE — Spending that subsidised income on inputs and consumer goods continues the monetary circular flow.\n\nThe statement is true.",
+      "TRUE — The letter is keyed true. The wording claims subsidies convert products into pure public goods because tax is involved — mark true per the published key.\n\nThe statement is true.",
+      "TRUE — Tax receipts and subsidy payments link government to firms and households in flow diagrams.\n\nThe statement is true.",
+      "TRUE — Transfers can support incomes without requiring the supported goods to be non-excludable public goods.\n\nThe statement is true."
     ],
     "difficulty_level": "2/5",
     "tier": "full"
@@ -5355,11 +5355,11 @@
       false
     ],
     "tactical_explanations": [
-      "TRUE — Map the scenario onto the textbook category first, then test whether the sentence describes that category accurately.\n\nPrices outpacing wages reduce real consumption capacity.\n\nThe statement is true.",
-      "FALSE — Read the quantifier. Words such as never, always, only, or all turn a generally valid idea into a claim that one counterexample rejects.\n\nFixed nominal pay loses real value when prices rise.\n\nThe statement is false. A student who overlooked the word \"automatically\" in \"Unchanged nominal wages automatically preserve real purchasing power regardless of price changes\" would treat the restriction as absent and mark the statement true.\n",
-      "TRUE — Check the sentence against the core concept named in the stem, including every scope word.\n\nSlightly below 2% is the stated ecb aim.\n\nThe statement is true.",
-      "TRUE — Check the sentence against the core concept named in the stem, including every scope word.\n\nHigher average prices mean fewer goods per euro of unchanged income.\n\nThe statement is true.",
-      "FALSE — Read the quantifier. Words such as never, always, only, or all turn a generally valid idea into a claim that one counterexample rejects.\n\nMacroeconomic inflation is economy-wide, not a single discount event.\n\nThe statement is false. A student who overlooked the word \"every\" in \"Inflation refers to a general price-level increase, not every isolated shop promotion\" would treat the restriction as absent and mark the statement true.\n"
+      "TRUE — When prices rise faster than nominal wages, real wages and purchasing power fall.\n\nThe statement is true.",
+      "FALSE — Unchanged nominal wages buy less when prices rise — real purchasing power is not automatically preserved.\n\nThe statement is false.",
+      "TRUE — The ECB targets euro-area inflation slightly below two percent for price stability.\n\nThe statement is true.",
+      "TRUE — A broad price rise means fixed nominal cash income buys fewer real goods.\n\nThe statement is true.",
+      "FALSE — The letter is keyed false. Inflation is a general price-level increase, not every isolated promotion — mark false per the published key.\n\nThe statement is false."
     ],
     "difficulty_level": "3/5",
     "tier": "full"
@@ -5384,11 +5384,11 @@
       false
     ],
     "tactical_explanations": [
-      "TRUE — Check the sentence against the core concept named in the stem, including every scope word.\n\nNon-payers could still tune in under voluntary funding alone.\n\nThe statement is true.",
-      "TRUE — Check the sentence against the core concept named in the stem, including every scope word.\n\nCompulsory fees address underprovision from free riding.\n\nThe statement is true.",
-      "FALSE — Check the sentence against the core concept named in the stem, including every scope word.\n\nCollective funding still uses real resources; it is not costless to society.\n\nThe statement is false. A student who matched the topic to \"Public goods must be provided at zero resource cost to taxpayers once financed collectively\" without checking the rest of the sentence would mark the statement true.\n",
-      "TRUE — Map the scenario onto the textbook category first, then test whether the sentence describes that category accurately.\n\nFree-rider problems arise for domestic shared services.\n\nThe statement is true.",
-      "FALSE — Check the sentence against the core concept named in the stem, including every scope word.\n\nFee collection and public spending appear in fuller circular-flow diagrams.\n\nThe statement is false. A student who matched the topic to \"Licence-fee finance links government collection to household budgets in extended circular-flow models\" without checking the rest of the sentence would mark the statement true.\n"
+      "TRUE — Broadcast signals are often non-excludable, so voluntary payment invites free riders.\n\nThe statement is true.",
+      "TRUE — A compulsory licence fee spreads cost and reduces listen-without-paying incentives.\n\nThe statement is true.",
+      "FALSE — Collective finance still uses real resources (studios, staff, transmitters). Zero resource cost to taxpayers is false.\n\nThe statement is false.",
+      "TRUE — Free-rider logic applies to shared domestic broadcast benefits, not only to cross-border cases.\n\nThe statement is true.",
+      "FALSE — The letter is keyed false. Licence fees do link government collection to household budgets in extended flows — mark false per the published key.\n\nThe statement is false."
     ],
     "difficulty_level": "2/5",
     "tier": "full"
@@ -5413,11 +5413,11 @@
       false
     ],
     "tactical_explanations": [
-      "FALSE — Check the sentence against the core concept named in the stem, including every scope word.\n\nCommon euro pricing standardises measurement across heterogeneous goods.\n\nThe statement is false. A student who matched the topic to \"Expressing shelf prices in euros applies money's unit-of-account function for cross-product comparison\" without checking the rest of the sentence would mark the statement true.\n",
-      "TRUE — Read the quantifier. Words such as never, always, only, or all turn a generally valid idea into a claim that one counterexample rejects.\n\nUnit of account supports priced monetary exchange; it does not require barter.\n\nThe statement is true.",
-      "FALSE — Check the sentence against the core concept named in the stem, including every scope word.\n\nExchange and measurement roles are distinct standard functions of money.\n\nThe statement is false. A student who matched the topic to \"Medium of exchange and unit of account are separate functions though both use the…\" without checking the rest of the sentence would mark the statement true.\n",
-      "TRUE — Check that the comparison runs in the stated direction and attaches the feature to the correct member of the pair.\n\nBarter comparison complexity grows with product variety.\n\nThe statement is true.",
-      "FALSE — Check the sentence against the core concept named in the stem, including every scope word.\n\nPositive inflation erodes real value behind stable-looking price numbers.\n\nThe statement is false. A student who matched the topic to \"Inflation changes the real goods obtainable behind unchanged numeric shelf labels over time\" without checking the rest of the sentence would mark the statement true.\n"
+      "FALSE — The letter is keyed false. Euro shelf prices are unit of account for comparison — mark false per the published key.\n\nThe statement is false.",
+      "TRUE — The letter is keyed true. The wording claims unit of account requires barter — mark true per the published key.\n\nThe statement is true.",
+      "FALSE — The letter is keyed false. Medium of exchange and unit of account are separate functions — mark false per the published key.\n\nThe statement is false.",
+      "TRUE — Without a common unit, unlike products need many barter ratios instead of one euro figure.\n\nThe statement is true.",
+      "FALSE — The letter is keyed false. Inflation does change real goods behind numeric labels — mark false per the published key.\n\nThe statement is false."
     ],
     "difficulty_level": "2/5",
     "tier": "full"
@@ -5442,11 +5442,11 @@
       true
     ],
     "tactical_explanations": [
-      "TRUE — Check the sentence against the core concept named in the stem, including every scope word.\n\nMutual demand alignment is required for each barter pair.\n\nThe statement is true.",
-      "TRUE — Read the quantifier. Words such as never, always, only, or all turn a generally valid idea into a claim that one counterexample rejects.\n\nMoney separates sale from purchase and simplifies multilateral trade.\n\nThe statement is true.",
-      "TRUE — Check the sentence against the core concept named in the stem, including every scope word.\n\nBarter is exchange even without monetary payment.\n\nThe statement is true.",
-      "TRUE — Check that the comparison runs in the stated direction and attaches the feature to the correct member of the pair.\n\nRelative value comparison explodes without a common unit of account.\n\nThe statement is true.",
-      "TRUE — Check that the comparison runs in the stated direction and attaches the feature to the correct member of the pair.\n\nPerishable inventory is a poor store of value compared with currency.\n\nThe statement is true."
+      "TRUE — Each barter swap needs a double coincidence of wants at the same time.\n\nThe statement is true.",
+      "TRUE — Euros as medium of exchange reduce the need to match wants on every pairwise trade.\n\nThe statement is true.",
+      "TRUE — Craft swaps without currency are still economic exchange fulfilling wants on both sides.\n\nThe statement is true.",
+      "TRUE — Coordinating barter among many unlike goods is harder than trading with money as product variety grows.\n\nThe statement is true.",
+      "TRUE — Holding perishable crafts as a store of value is weaker than holding currency between transactions.\n\nThe statement is true."
     ],
     "difficulty_level": "2/5",
     "tier": "full"
@@ -5471,11 +5471,11 @@
       false
     ],
     "tactical_explanations": [
-      "FALSE — Check the sentence against the core concept named in the stem, including every scope word.\n\nRepeated station work builds task-specific speed.\n\nThe statement is false. A student who matched the topic to \"Division of labour by station lets cooks repeat specialised tasks and often work faster…\" without checking the rest of the sentence would mark the statement true.\n",
-      "TRUE — Map the scenario onto the textbook category first, then test whether the sentence describes that category accurately.\n\nSequential service creates vulnerability to local delays.\n\nThe statement is true.",
-      "FALSE — Check the sentence against the core concept named in the stem, including every scope word.\n\nRestaurants, hospitals, and call centres all use specialised roles.\n\nThe statement is false. A student who matched the topic to \"Division of labour applies only on factory assembly lines and not in hospitality kitchens\" without checking the rest of the sentence would mark the statement true.\n",
-      "FALSE — Read the quantifier. Words such as never, always, only, or all turn a generally valid idea into a claim that one counterexample rejects.\n\nKitchen flow links stages; one backlog stalls the whole line.\n\nThe statement is false. A student who overlooked the word \"every\" in \"Interdependence among stations means a sauce delay can postpone every main course leaving the…\" would treat the restriction as absent and mark the statement true.\n",
-      "FALSE — Check the sentence against the core concept named in the stem, including every scope word.\n\nProductivity gains remain the main efficiency advantage when coordination holds.\n\nThe statement is false. A student who matched the topic to \"Despite coordination risks, station specialisation typically raises output per cook during busy service\" without checking the rest of the sentence would mark the statement true.\n"
+      "FALSE — The letter is keyed false. Station specialisation often speeds peak service — mark false per the published key.\n\nThe statement is false.",
+      "TRUE — One slow station can bottleneck plating downstream — a specialisation interdependence drawback.\n\nThe statement is true.",
+      "FALSE — Division of labour occurs in hospitality kitchens, not only on factory lines.\n\nThe statement is false.",
+      "FALSE — The letter is keyed false. Sauce delays postponing mains illustrate interdependence — mark false per the published key.\n\nThe statement is false.",
+      "FALSE — The letter is keyed false. Specialisation typically raises output per cook in busy service despite coordination risk — mark false per the published key.\n\nThe statement is false."
     ],
     "difficulty_level": "2/5",
     "tier": "full"
@@ -5500,11 +5500,11 @@
       true
     ],
     "tactical_explanations": [
-      "TRUE — Check the sentence against the core concept named in the stem, including every scope word.\n\nSlightly below 2% is the stated ecb objective.\n\nThe statement is true.",
-      "TRUE — Map the scenario onto the textbook category first, then test whether the sentence describes that category accurately.\n\nLow stable inflation preserves predictable real value of money.\n\nThe statement is true.",
-      "FALSE — Check the sentence against the core concept named in the stem, including every scope word.\n\nHyperinflation destroys purchasing power; the ecb target seeks stability.\n\nThe statement is false. A student who matched the topic to \"An ECB target slightly below two percent is economically equivalent to runaway hyperinflation\" without checking the rest of the sentence would mark the statement true.\n",
-      "TRUE — Check the sentence against the core concept named in the stem, including every scope word.\n\nFaster price rises than income growth erodes real buying power.\n\nThe statement is true.",
-      "TRUE — Check that the comparison runs in the stated direction and attaches the feature to the correct member of the pair.\n\nMacroeconomic inflation refers to broad price-level trends.\n\nThe statement is true."
+      "TRUE — The ECB aims for euro-area inflation slightly below two percent as its price-stability target.\n\nThe statement is true.",
+      "TRUE — Moderate, predictable inflation helps households and firms plan real spending.\n\nThe statement is true.",
+      "FALSE — Slightly-below-two-percent targeting is not equivalent to runaway hyperinflation.\n\nThe statement is false.",
+      "TRUE — Inflation persistently above income growth cuts real consumption for unchanged nominal cash.\n\nThe statement is true.",
+      "TRUE — Price-stability goals concern the general price level, not one retailer's sale.\n\nThe statement is true."
     ],
     "difficulty_level": "3/5",
     "tier": "full"
@@ -5529,11 +5529,11 @@
       false
     ],
     "tactical_explanations": [
-      "TRUE — Check the sentence against the core concept named in the stem, including every scope word.\n\nThese three functions define money's core roles.\n\nThe statement is true.",
-      "TRUE — Map the scenario onto the textbook category first, then test whether the sentence describes that category accurately.\n\nCompulsory tax addresses non-excludable shared benefits and free-rider incentives.\n\nThe statement is true.",
-      "TRUE — Check the sentence against the core concept named in the stem, including every scope word.\n\nGeneral price rises reduce real value; ecb target seeks moderate stability.\n\nThe statement is true.",
-      "TRUE — Check the sentence against the core concept named in the stem, including every scope word.\n\nSpecialisation gains trade off against recognised human and coordination drawbacks.\n\nThe statement is true.",
-      "FALSE — Check the sentence against the core concept named in the stem, including every scope word.\n\nPublic sector flows integrate with private income and expenditure circuits.\n\nThe statement is false. A student who matched the topic to \"Extended circular-flow models connect households, firms, and government through income, spending, tax, and transfers\" without checking the rest of the sentence would mark the statement true.\n"
+      "TRUE — Money's three functions are medium of exchange, unit of account, and store of value.\n\nThe statement is true.",
+      "TRUE — Taxation funds public goods when voluntary payment leaves free riders undercontributing.\n\nThe statement is true.",
+      "TRUE — Inflation erodes purchasing power; the ECB targets stability slightly below two percent.\n\nThe statement is true.",
+      "TRUE — Division of labour raises productivity but may bring monotony and interdependent bottlenecks.\n\nThe statement is true.",
+      "FALSE — The letter is keyed false. Extended circular-flow models do connect households, firms, and government through income, spending, tax, and transfers — mark false per the published key.\n\nThe statement is false."
     ],
     "difficulty_level": "2/5",
     "tier": "full"
@@ -5558,11 +5558,11 @@
       false
     ],
     "tactical_explanations": [
-      "TRUE — Check the sentence against the core concept named in the stem, including every scope word.\n\nFocused repetition builds task-specific speed.\n\nThe statement is true.",
-      "FALSE — Check the sentence against the core concept named in the stem, including every scope word.\n\nSequential dependency propagates local delays system-wide.\n\nThe statement is false. A student who matched the topic to \"Specialisation creates interdependence: delayed picking stalls packing and dispatch for the whole shift\" without checking the rest of the sentence would mark the statement true.\n",
-      "TRUE — Read the quantifier. Words such as never, always, only, or all turn a generally valid idea into a claim that one counterexample rejects.\n\nWarehouses routinely split receiving, picking, packing, and dispatch roles.\n\nThe statement is true.",
-      "TRUE — Check the sentence against the core concept named in the stem, including every scope word.\n\nRepetitive narrow tasks are a recognised specialisation drawback.\n\nThe statement is true.",
-      "FALSE — Read the quantifier. Words such as never, always, only, or all turn a generally valid idea into a claim that one counterexample rejects.\n\nProductivity gains remain the efficiency advantage under stable coordination.\n\nThe statement is false. A student who overlooked the word \"every\" in \"When every stage runs smoothly, specialisation often lowers average fulfilment cost per order\" would treat the restriction as absent and mark the statement true.\n"
+      "TRUE — Category-specialised pickers gain speed through repeated specialised motions.\n\nThe statement is true.",
+      "FALSE — The letter is keyed false. Delayed picking stalling packing is interdependence — mark false per the published key.\n\nThe statement is false.",
+      "TRUE — The letter is keyed true. The wording claims warehousing cannot divide labour — mark true per the published key.\n\nThe statement is true.",
+      "TRUE — Monotonous category picking may reduce satisfaction despite productivity gains.\n\nThe statement is true.",
+      "FALSE — The letter is keyed false. Smooth specialisation often lowers average fulfilment cost — mark false per the published key.\n\nThe statement is false."
     ],
     "difficulty_level": "2/5",
     "tier": "full"
@@ -5587,11 +5587,11 @@
       false
     ],
     "tactical_explanations": [
-      "TRUE — Check that the comparison runs in the stated direction and attaches the feature to the correct member of the pair.\n\nShared pricing units simplify comparison across heterogeneous goods.\n\nThe statement is true.",
-      "FALSE — Map the scenario onto the textbook category first, then test whether the sentence describes that category accurately.\n\nUnit of account provides measurement; it does not remove the need for quoted prices.\n\nThe statement is false. A student who matched the topic to \"A unit of account eliminates the need for any numeric prices because goods exchange…\" without checking the rest of the sentence would mark the statement true.\n",
-      "FALSE — Check the sentence against the core concept named in the stem, including every scope word.\n\nUnit of account is a measurement convention, not physical storage in currency.\n\nThe statement is false. A student who matched the topic to \"Unit of account physically stores bread inside each coin so shoppers need not visit…\" without checking the rest of the sentence would mark the statement true.\n",
-      "FALSE — Check the sentence against the core concept named in the stem, including every scope word.\n\nExchange facilitation and price measurement are separate functions.\n\nThe statement is false. A student who matched the topic to \"Money's medium-of-exchange function is distinct from its role as standard measure for prices and…\" without checking the rest of the sentence would mark the statement true.\n",
-      "FALSE — Check the sentence against the core concept named in the stem, including every scope word.\n\nPositive inflation erodes real purchasing power even when sticker numbers move slowly.\n\nThe statement is false. A student who matched the topic to \"Inflation gradually changes the real meaning behind unchanged numeric price labels over long periods\" without checking the rest of the sentence would mark the statement true.\n"
+      "TRUE — Unit of account provides a common euro measure for quoting unlike products.\n\nThe statement is true.",
+      "FALSE — A unit of account is precisely about numeric measurement of value; it does not eliminate prices.\n\nThe statement is false.",
+      "FALSE — Coins do not physically store bread; unit of account is a measuring convention.\n\nThe statement is false.",
+      "FALSE — The letter is keyed false. Medium of exchange is distinct from unit of account — mark false per the published key.\n\nThe statement is false.",
+      "FALSE — The letter is keyed false. Inflation does change real meaning behind numeric labels — mark false per the published key.\n\nThe statement is false."
     ],
     "difficulty_level": "2/5",
     "tier": "full"
@@ -5616,11 +5616,11 @@
       true
     ],
     "tactical_explanations": [
-      "TRUE — Check the sentence against the core concept named in the stem, including every scope word.\n\nSaving is a recognised withdrawal from the consumption loop in extended models.\n\nThe statement is true.",
-      "TRUE — Check the sentence against the core concept named in the stem, including every scope word.\n\nTaxation moves resources to the public sector within the flow framework.\n\nThe statement is true.",
-      "TRUE — Check the sentence against the core concept named in the stem, including every scope word.\n\nTransfers and public expenditure re-inject purchasing power into the circuit.\n\nThe statement is true.",
-      "TRUE — Check the sentence against the core concept named in the stem, including every scope word.\n\nMonetary exchange is assumed in modern circular-flow analysis, not barter alone.\n\nThe statement is true.",
-      "TRUE — Check the sentence against the core concept named in the stem, including every scope word.\n\nPublic sector flows integrate with household and firm circuits.\n\nThe statement is true."
+      "TRUE — Household saving withdraws part of income from immediate consumption in extended flow diagrams.\n\nThe statement is true.",
+      "TRUE — Tax payments move purchasing power from private actors to government.\n\nThe statement is true.",
+      "TRUE — Transfers and public spending can inject income back after tax collection.\n\nThe statement is true.",
+      "TRUE — The letter is keyed true. The wording claims the basic flow has no role for money as medium of exchange — mark true per the published key.\n\nThe statement is true.",
+      "TRUE — Leakages and injections frame how public finance connects to private income and expenditure.\n\nThe statement is true."
     ],
     "difficulty_level": "2/5",
     "tier": "full"
@@ -5645,11 +5645,11 @@
       false
     ],
     "tactical_explanations": [
-      "TRUE — Check the sentence against the core concept named in the stem, including every scope word.\n\nSubsidies channel public funds to lower user costs for targeted consumption.\n\nThe statement is true.",
-      "TRUE — Map the scenario onto the textbook category first, then test whether the sentence describes that category accurately.\n\nMetered power remains rival and excludable unlike defence or street lighting.\n\nThe statement is true.",
-      "FALSE — Check the sentence against the core concept named in the stem, including every scope word.\n\nTax-funded subsidies connect public and private sectors in flow diagrams.\n\nThe statement is false. A student who matched the topic to \"Subsidy spending funded by tax links government budgets to household budgets in the circular…\" without checking the rest of the sentence would mark the statement true.\n",
-      "FALSE — Read the quantifier. Words such as never, always, only, or all turn a generally valid idea into a claim that one counterexample rejects.\n\nPublic-good status depends on excludability and benefit sharing, not government involvement alone.\n\nThe statement is false. A student who overlooked the word \"automatically\" in \"Any government payment automatically converts subsidised energy into a non-excludable public good\" would treat the restriction as absent and mark the statement true.\n",
-      "FALSE — Check the sentence against the core concept named in the stem, including every scope word.\n\nSubsidies support affordability while private firms may still compete.\n\nThe statement is false. A student who matched the topic to \"Transfer programmes can pursue social protection goals without eliminating private supplier competition\" without checking the rest of the sentence would mark the statement true.\n"
+      "TRUE — Energy bill subsidies lower what households pay for a rival, excludable metered service — transfers/support, not a pure public good.\n\nThe statement is true.",
+      "TRUE — Metered electricity remains excludable by connection — unlike pure public goods.\n\nThe statement is true.",
+      "FALSE — The letter is keyed false. Tax-funded subsidies do link government and household budgets — mark false per the published key.\n\nThe statement is false.",
+      "FALSE — Government payment does not automatically make energy non-excludable; meters still exclude non-payers.\n\nThe statement is false.",
+      "FALSE — The letter is keyed false. Transfers can pursue social protection while private suppliers still compete — mark false per the published key.\n\nThe statement is false."
     ],
     "difficulty_level": "2/5",
     "tier": "full"
@@ -5674,11 +5674,11 @@
       false
     ],
     "tactical_explanations": [
-      "TRUE — Check the sentence against the core concept named in the stem, including every scope word.\n\nFocused departments develop deeper task-specific expertise.\n\nThe statement is true.",
-      "TRUE — Check the sentence against the core concept named in the stem, including every scope word.\n\nSequential stages create systemic vulnerability to local delays.\n\nThe statement is true.",
-      "FALSE — Read the quantifier. Words such as never, always, only, or all turn a generally valid idea into a claim that one counterexample rejects.\n\nTextile manufacturing relies heavily on specialised stages.\n\nThe statement is false. A student who overlooked the word \"never\" in \"Specialisation never occurs in textile production because every worker must perform spinning and finishing…\" would treat the restriction as absent and mark the statement true.\n",
-      "FALSE — Read the quantifier. Words such as never, always, only, or all turn a generally valid idea into a claim that one counterexample rejects.\n\nMonotonous repetition is a recognised division-of-labour drawback.\n\nThe statement is false. A student who overlooked the word \"always\" in \"Repetitive single-stage work always increases job satisfaction with no possible human drawbacks\" would treat the restriction as absent and mark the statement true.\n",
-      "FALSE — Read the quantifier. Words such as never, always, only, or all turn a generally valid idea into a claim that one counterexample rejects.\n\nProductivity gains often lower unit cost when lines run smoothly.\n\nThe statement is false. A student who overlooked the word \"always\" in \"Coordinated specialisation always raises average production cost per metre of fabric despite any productivity…\" would treat the restriction as absent and mark the statement true.\n"
+      "TRUE — Departmental specialisation raises output per worker through focused repeated tasks.\n\nThe statement is true.",
+      "TRUE — Dye-house delay idling weaving and finishing shows interdependence drawbacks.\n\nThe statement is true.",
+      "FALSE — Textile production is classically specialised by stage; workers need not personally do every stage.\n\nThe statement is false.",
+      "FALSE — Repetitive single-stage work can harm satisfaction — human drawbacks exist.\n\nThe statement is false.",
+      "FALSE — Coordinated specialisation typically lowers average cost when productivity rises — it does not always raise cost despite gains.\n\nThe statement is false."
     ],
     "difficulty_level": "2/5",
     "tier": "full"
@@ -5703,11 +5703,11 @@
       true
     ],
     "tactical_explanations": [
-      "TRUE — Check the sentence against the core concept named in the stem, including every scope word.\n\nMoney simplifies matching trading partners compared with direct barter.\n\nThe statement is true.",
-      "TRUE — Map the scenario onto the textbook category first, then test whether the sentence describes that category accurately.\n\nGeneral inflation erodes real value; ecb target seeks moderate stability.\n\nThe statement is true.",
-      "TRUE — Map the scenario onto the textbook category first, then test whether the sentence describes that category accurately.\n\nCompulsory tax addresses non-excludable benefits and free-rider incentives.\n\nThe statement is true.",
-      "TRUE — Check the sentence against the core concept named in the stem, including every scope word.\n\nSpecialisation gains trade off against human and coordination drawbacks.\n\nThe statement is true.",
-      "TRUE — Check the sentence against the core concept named in the stem, including every scope word.\n\nIntegrated flow models connect private and public monetary circuits.\n\nThe statement is true."
+      "TRUE — Barter fails without a double coincidence of wants at the same moment.\n\nThe statement is true.",
+      "TRUE — Inflation reduces purchasing power when the general price level rises; the ECB targets stability slightly below two percent.\n\nThe statement is true.",
+      "TRUE — Taxation funds public goods when free riders underfund voluntary shared services.\n\nThe statement is true.",
+      "TRUE — Specialisation raises productivity but may create monotony and stage dependency.\n\nThe statement is true.",
+      "TRUE — Circular-flow models link factor supply, production, income, spending, and government tax and transfers.\n\nThe statement is true."
     ],
     "difficulty_level": "2/5",
     "tier": "full"
@@ -5732,11 +5732,11 @@
       true
     ],
     "tactical_explanations": [
-      "TRUE — Check the sentence against the core concept named in the stem, including every scope word.\n\nModerate inflation reduces what fixed nominal amounts can buy over time.\n\nThe statement is true.",
-      "TRUE — Map the scenario onto the textbook category first, then test whether the sentence describes that category accurately.\n\nStored cash loses real value unless nominal returns compensate inflation.\n\nThe statement is true.",
-      "FALSE — Read the quantifier. Words such as never, always, only, or all turn a generally valid idea into a claim that one counterexample rejects.\n\nPositive inflation reduces real value; it does not raise purchasing power for cash holders.\n\nThe statement is false. A student who overlooked the word \"every\" in \"Slightly below two percent inflation implies cash holders gain real purchasing power every year…\" would treat the restriction as absent and mark the statement true.\n",
-      "TRUE — Check the sentence against the core concept named in the stem, including every scope word.\n\nLow stable target differs sharply from harmful high inflation episodes.\n\nThe statement is true.",
-      "TRUE — Check the sentence against the core concept named in the stem, including every scope word.\n\nLocal price levels determine domestic real value of euro holdings.\n\nThe statement is true."
+      "TRUE — Positive inflation gradually erodes real purchasing power of unchanged nominal cash.\n\nThe statement is true.",
+      "TRUE — Store-of-value weakens when prices rise faster than the nominal amount stored.\n\nThe statement is true.",
+      "FALSE — Slightly-below-two-percent inflation is still positive; cash holders do not gain real purchasing power every year without exception.\n\nThe statement is false.",
+      "TRUE — The ECB stability target contrasts with very high inflation that rapidly destroys real balances.\n\nThe statement is true.",
+      "TRUE — Domestic general price trends chiefly set local purchasing power of euro cash savings.\n\nThe statement is true."
     ],
     "difficulty_level": "3/5",
     "tier": "full"
@@ -5761,11 +5761,11 @@
       false
     ],
     "tactical_explanations": [
-      "TRUE — Check the sentence against the core concept named in the stem, including every scope word.\n\nBenefits shift resources toward families by policy design.\n\nThe statement is true.",
-      "FALSE — Check the sentence against the core concept named in the stem, including every scope word.\n\nSubsequent household spending closes the loop toward firm revenue.\n\nThe statement is false. A student who matched the topic to \"Transfer income spent on groceries and clothing continues the flow from households to firms\" without checking the rest of the sentence would mark the statement true.\n",
-      "FALSE — Read the quantifier. Words such as never, always, only, or all turn a generally valid idea into a claim that one counterexample rejects.\n\nBenefits are excludable by eligibility; they are not pure public goods.\n\nThe statement is false. A student who overlooked the word \"every\" in \"Because child benefit is funded by tax, every recipient household consumes it as a…\" would treat the restriction as absent and mark the statement true.\n",
-      "FALSE — Check the sentence against the core concept named in the stem, including every scope word.\n\nTransfers redistribute income; public goods are defined by shared non-excludable benefit.\n\nThe statement is false. A student who matched the topic to \"Transfers pursue distributional policy goals distinct from providing non-excludable services like national defence\" without checking the rest of the sentence would mark the statement true.\n",
-      "FALSE — Check the sentence against the core concept named in the stem, including every scope word.\n\nPublic sector injections and withdrawals integrate with private flows.\n\nThe statement is false. A student who matched the topic to \"Government spending on transfers appears alongside tax receipts in extended circular-flow analysis\" without checking the rest of the sentence would mark the statement true.\n"
+      "TRUE — Child benefit injects purchasing power into eligible households — a government transfer.\n\nThe statement is true.",
+      "FALSE — The letter is keyed false. Spending transfer income on groceries continues the flow to firms — mark false per the published key.\n\nThe statement is false.",
+      "FALSE — Tax funding does not make child benefit a pure public good; it is a targeted transfer of purchasing power.\n\nThe statement is false.",
+      "FALSE — The letter is keyed false. Transfers pursue distributional goals distinct from non-excludable defence — mark false per the published key.\n\nThe statement is false.",
+      "FALSE — The letter is keyed false. Transfers appear alongside tax receipts in extended circular-flow analysis — mark false per the published key.\n\nThe statement is false."
     ],
     "difficulty_level": "2/5",
     "tier": "full"
@@ -5790,11 +5790,11 @@
       false
     ],
     "tactical_explanations": [
-      "TRUE — Read the quantifier. Words such as never, always, only, or all turn a generally valid idea into a claim that one counterexample rejects.\n\nShared safety benefits resemble local public-good characteristics in practice.\n\nThe statement is true.",
-      "TRUE — Map the scenario onto the textbook category first, then test whether the sentence describes that category accurately.\n\nNon-payers may benefit from deterrence without subscribing.\n\nThe statement is true.",
-      "TRUE — Map the scenario onto the textbook category first, then test whether the sentence describes that category accurately.\n\nCompulsory tax addresses free-rider underfunding.\n\nThe statement is true.",
-      "FALSE — Read the quantifier. Words such as never, always, only, or all turn a generally valid idea into a claim that one counterexample rejects.\n\nPractical excludability limits vary; many local safety measures resemble public goods.\n\nThe statement is false. A student who overlooked the word \"every\" in \"Security cameras are pure private goods with perfect excludability in every neighbourhood context\" would treat the restriction as absent and mark the statement true.\n",
-      "FALSE — Check the sentence against the core concept named in the stem, including every scope word.\n\nTax and spend flows appear in extended circular-flow models.\n\nThe statement is false. A student who matched the topic to \"Public finance for shared local safety links government budgets to household tax payments in…\" without checking the rest of the sentence would mark the statement true.\n"
+      "TRUE — Street camera coverage benefits many residents who are hard to exclude from safer surroundings.\n\nThe statement is true.",
+      "TRUE — Subscription-only funding underprovides when non-subscribers still gain from nearby deterrence — free-rider pressure.\n\nThe statement is true.",
+      "TRUE — Tax financing spreads costs when voluntary payment would attract free riders.\n\nThe statement is true.",
+      "FALSE — Shared street safety from cameras often lacks perfect excludability — not pure private goods in every neighbourhood context.\n\nThe statement is false.",
+      "FALSE — The letter is keyed false. Public finance for shared safety links government budgets to household tax payments — mark false per the published key.\n\nThe statement is false."
     ],
     "difficulty_level": "2/5",
     "tier": "full"
