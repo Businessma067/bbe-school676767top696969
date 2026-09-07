@@ -77,7 +77,9 @@ function saveProgress(p: Progress) {
 
 function phantomCountFor(tier: MathTasksTier): number {
   // Demo already has locked real placeholder slots past the free limit.
+  // Lite shows a short locked teaser after the unlock cap.
   if (tier === "demo") return 0;
+  if (tier === "lite") return 3;
   return 0;
 }
 
@@ -87,7 +89,12 @@ function isLocked(
   idx: number,
   tasks: MathTask[],
 ) {
-  if (tier !== "demo") return false;
+  if (tier === "full") return false;
+  if (tier === "lite") {
+    // Keep ~60% of each chapter for Lite (matches English Lite caps).
+    const unlockCount = Math.max(1, Math.floor(tasks.length * 0.6));
+    return idx >= unlockCount;
+  }
   return isDemoMathTaskLocked(chapter, idx, tasks);
 }
 
@@ -397,7 +404,7 @@ export function MathTasksPage({ tier }: Props) {
     resetCaseIds(list.map((c) => c.id));
   };
 
-  const showTheory = tier !== "demo";
+  const showTheory = tier === "full";
 
   const closeChapterSubtopics = (chapterNum: number) => {
     const prefix = `${chapterNum}:`;

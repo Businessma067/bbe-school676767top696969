@@ -20,8 +20,6 @@ import {
   fetchInProgressMockSession,
   upsertMockExamProgress,
 } from "@/lib/user-progress";
-import { userOwnsFullCourse } from "@/lib/full-course-access";
-import { DEMO_ONLY_HREF } from "@/lib/site-access";
 import { AnnotationLayer } from "@/components/mock-exam/AnnotationLayer";
 import { ExamAnswerSheet } from "@/components/mock-exam/ExamAnswerSheet";
 import { ExamNotesPanel } from "@/components/mock-exam/ExamNotesPanel";
@@ -121,10 +119,19 @@ function TakeExamPage() {
         return;
       }
       if (resolved.summary.tier === "full") {
-        const owns = await userOwnsFullCourse();
+        const { userOwnsFullTier } = await import("@/lib/full-course-access");
+        const ownsFull = await userOwnsFullTier();
         if (cancelled) return;
-        if (!owns) {
-          navigate({ to: DEMO_ONLY_HREF });
+        if (!ownsFull) {
+          navigate({ to: "/products/full-course" });
+          return;
+        }
+      } else if (resolved.summary.tier === "lite") {
+        const { userOwnsPaidCourse } = await import("@/lib/full-course-access");
+        const ownsPaid = await userOwnsPaidCourse();
+        if (cancelled) return;
+        if (!ownsPaid) {
+          navigate({ to: "/products/lite-bbe-course" });
           return;
         }
       }

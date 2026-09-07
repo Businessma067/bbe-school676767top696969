@@ -83,6 +83,11 @@ export async function enrollInCourse(slug: CourseSlug): Promise<boolean> {
   const userId = await currentUserId();
   if (!userId) return false;
   const meta = COURSE_CATALOG[slug];
+  // Paid tiers are granted only by Monobank checkout or promocode (service role).
+  if (meta.tier === "full" || meta.tier === "lite") {
+    console.error("enrollInCourse: paid tiers require checkout or promocode");
+    return false;
+  }
   const { error } = await supabase
     .from("enrollments")
     .upsert(

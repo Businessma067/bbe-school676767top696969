@@ -1,10 +1,13 @@
 import { useEffect, useState } from "react";
 import { supabase } from "@/integrations/supabase/client";
-import { userOwnsFullCourse } from "@/lib/full-course-access";
+import { fetchAccessState, tierAtLeast } from "@/lib/entitlements";
 
 export type FullCourseAccessState = {
   ready: boolean;
   signedIn: boolean;
+  /** Paid access (Lite or Full). */
+  ownsPaidCourse: boolean;
+  /** Full Course tier only. */
   ownsFullCourse: boolean;
   refresh: () => Promise<void>;
 };
@@ -12,6 +15,7 @@ export type FullCourseAccessState = {
 export function useFullCourseAccess(): FullCourseAccessState {
   const [ready, setReady] = useState(false);
   const [signedIn, setSignedIn] = useState(false);
+  const [ownsPaidCourse, setOwnsPaidCourse] = useState(false);
   const [ownsFullCourse, setOwnsFullCourse] = useState(false);
 
   const refresh = async () => {
@@ -19,12 +23,14 @@ export function useFullCourseAccess(): FullCourseAccessState {
     const session = !!data.session;
     setSignedIn(session);
     if (!session) {
+      setOwnsPaidCourse(false);
       setOwnsFullCourse(false);
       setReady(true);
       return;
     }
-    const owns = await userOwnsFullCourse();
-    setOwnsFullCourse(owns);
+    const state = await fetchAccessState({ refresh: true });
+    setOwnsPaidCourse(tierAtLeast(state.tier, "lite"));
+    setOwnsFullCourse(state.tier === "full");
     setReady(true);
   };
 
@@ -54,5 +60,5 @@ export function useFullCourseAccess(): FullCourseAccessState {
     };
   }, []);
 
-  return { ready, signedIn, ownsFullCourse, refresh };
+  return { ready, signedIn, ownsPaidCourse, ownsFullCourse, refresh };
 }

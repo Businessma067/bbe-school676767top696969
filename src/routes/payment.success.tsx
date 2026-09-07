@@ -2,6 +2,7 @@ import { createFileRoute, useRouterState } from "@tanstack/react-router";
 import { CheckCircle2 } from "lucide-react";
 import { LocalizedLink } from "@/components/LocalizedLink";
 import { useLocalizedNavigate } from "@/hooks/use-localized-navigate";
+import { PAID_PRODUCTS, isPaidProductSlug } from "@/lib/checkout-catalog";
 import { hreflangLinks, isLocalizablePath } from "@/lib/i18n/locale-path";
 
 type SuccessSearch = {
@@ -17,6 +18,21 @@ function parseSuccessSearch(search: Record<string, unknown>): SuccessSearch {
     promo:
       search.promo === true || search.promo === "1" || search.promo === "true" ? true : undefined,
   };
+}
+
+/** Only allow post-checkout deep links into known product destinations. */
+function safeStartHref(href: string | undefined, productSlug: string | undefined): string {
+  if (productSlug && isPaidProductSlug(productSlug)) {
+    return PAID_PRODUCTS[productSlug].href;
+  }
+  if (href) {
+    for (const product of Object.values(PAID_PRODUCTS)) {
+      if (href === product.href || href.startsWith(`${product.href}/`)) {
+        return product.href;
+      }
+    }
+  }
+  return "/dashboard";
 }
 
 export const Route = createFileRoute("/payment/success")({
@@ -50,7 +66,13 @@ export function PaymentSuccessPage() {
   const { product, href, promo } = useRouterState({
     select: (s) => parseSuccessSearch(s.location.search as Record<string, unknown>),
   });
-  const startHref = href ?? "/dashboard";
+  const productSlug =
+    typeof product === "string" && isPaidProductSlug(product) ? product : undefined;
+  const startHref = safeStartHref(href, productSlug);
+  const productLabel =
+    (productSlug ? PAID_PRODUCTS[productSlug].name : null) ??
+    (typeof product === "string" && product.trim() ? product : null) ??
+    "Your course";
 
   return (
     <div className="flex min-h-screen items-center justify-center bg-background px-6 py-16">
@@ -60,7 +82,7 @@ export function PaymentSuccessPage() {
           {promo ? "Promocode redeemed" : "Payment received"}
         </h1>
         <p className="mt-2 text-sm text-muted-foreground">
-          {product ?? "Your course"} is unlocked on your account
+          {productLabel} is unlocked on your account
           {promo ? " — no payment needed." : "."}
         </p>
         <button

@@ -62,6 +62,8 @@ function PaymentResultPage() {
           return;
         }
         if (result.paid) {
+          const { clearAccessStateCache } = await import("@/lib/entitlements");
+          clearAccessStateCache();
           void navigate({
             to: "/payment/success",
             search: {
