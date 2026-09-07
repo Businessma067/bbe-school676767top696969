@@ -17,7 +17,6 @@ import {
   practiceExplanationToggleClass,
   practiceInlineAiButtonClass,
   practicePanelSectionLabelClass,
-  practicePanelSubsectionLabelClass,
   practiceSubmitButtonClass,
   practiceTryAgainButtonClass,
 } from "@/lib/practice-button-styles";
@@ -1067,6 +1066,21 @@ function AllExplanationsPanel({
   onRetryAi: () => void;
 }) {
   const letters = "ABCDEF";
+  const body = task.statements
+    .flatMap((_, i) => {
+      const letter = letters[i] ?? String(i + 1);
+      const verdict = task.answer_key[i] ? "True" : "False";
+      let expl = (task.tactical_explanations[i] ?? "").trim();
+      if (expl) {
+        expl = expl.replace(/^(TRUE|FALSE)\s*[—–-]\s*/i, "").trim();
+        expl = expl.replace(/^\*\*[A-F]\.\*\*\s*→\s*(?:True|False)\s*/i, "").trim();
+      }
+      const prose = expl || scrubStatementHints(task.statements[i]);
+      return [`**${letter}.** → ${verdict}\n\n${prose}`, ""];
+    })
+    .join("\n")
+    .replace(/\n{3,}/g, "\n\n")
+    .trim();
 
   return (
     <div className="practice-fade-in flex h-full flex-col overflow-hidden rounded-2xl border border-border bg-card shadow-sm" data-practice-surface>
@@ -1085,58 +1099,35 @@ function AllExplanationsPanel({
           Close
         </button>
       </div>
-      <div className="practice-scroll min-h-0 flex-1 overflow-y-auto bg-white px-5 py-6 sm:px-7 sm:py-7">
+      <div className="practice-scroll min-h-0 flex-1 overflow-y-auto bg-white px-7 py-7 sm:px-9 sm:py-8">
         <EconAnswerKeyTable answerKey={task.answer_key} />
-        <div className="space-y-8">
+        <div className="mb-6 flex flex-wrap gap-2">
           {task.statements.map((_, i) => {
             const letter = letters[i] ?? String(i + 1);
-            const verdict = task.answer_key[i] ? "True" : "False";
-            let expl = (task.tactical_explanations[i] ?? "").trim();
-            if (expl) {
-              expl = expl.replace(/^(TRUE|FALSE)\s*[—–-]\s*/i, "").trim();
-            }
-            const prose = expl || scrubStatementHints(task.statements[i]);
             const aiOpen = aiState?.statementIndex === i;
-
             return (
-              <section key={i} className="min-w-0 border-b border-border/60 pb-8 last:border-b-0 last:pb-0">
-                <div className="mb-3 flex flex-wrap items-center justify-between gap-2">
-                  <p className="font-expl text-[15.5px] font-bold leading-snug text-[#111] sm:text-[16.5px]">
-                    {letter}. → {verdict}
-                  </p>
-                  <button
-                    type="button"
-                    onClick={() => (aiOpen ? onCloseAi() : onRequestAi(i))}
-                    className={practiceInlineAiButtonClass(!!aiOpen)}
-                    aria-label={`AI explanation for statement ${letter}`}
-                  >
-                    {aiOpen ? "Hide AI" : "AI explanation"}
-                  </button>
-                </div>
-                <div
-                  className={cn(
-                    "grid gap-4",
-                    aiOpen && "lg:grid-cols-2 lg:gap-5",
-                  )}
-                >
-                  <div className="min-w-0 rounded-xl border border-border bg-secondary/30 p-4">
-                    <p className={practicePanelSubsectionLabelClass}>Statement explanation</p>
-                    <div className="mt-3">
-                      <ExplanationProse text={prose} />
-                    </div>
-                  </div>
-                  {aiOpen && aiState ? (
-                    <InlineAiBesideStatement
-                      state={aiState}
-                      onClose={onCloseAi}
-                      onRetry={onRetryAi}
-                    />
-                  ) : null}
-                </div>
-              </section>
+              <button
+                key={i}
+                type="button"
+                onClick={() => (aiOpen ? onCloseAi() : onRequestAi(i))}
+                className={practiceInlineAiButtonClass(!!aiOpen)}
+                aria-label={`AI explanation for statement ${letter}`}
+              >
+                {aiOpen ? `Hide AI · ${letter}` : `AI · ${letter}`}
+              </button>
             );
           })}
         </div>
+        {aiState ? (
+          <div className="mb-6">
+            <InlineAiBesideStatement
+              state={aiState}
+              onClose={onCloseAi}
+              onRetry={onRetryAi}
+            />
+          </div>
+        ) : null}
+        <ExplanationProse text={body} />
       </div>
     </div>
   );
