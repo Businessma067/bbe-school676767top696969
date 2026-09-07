@@ -113,7 +113,8 @@ export const Route = createRootRouteWithContext<{ queryClient: QueryClient }>()(
       { property: "og:site_name", content: "BBE School" },
     ],
     links: [
-      { rel: "icon", type: "image/png", href: "/favicon.png?v=4" },
+      { rel: "icon", type: "image/png", sizes: "192x192", href: "/favicon.png?v=5" },
+      { rel: "apple-touch-icon", sizes: "180x180", href: "/apple-touch-icon.png?v=5" },
       {
         rel: "stylesheet",
         href: appCss,
@@ -135,7 +136,12 @@ export const Route = createRootRouteWithContext<{ queryClient: QueryClient }>()(
           "@type": "Organization",
           name: "BBE School",
           url: "https://bbe-school.com",
-          logo: "https://bbe-school.com/favicon.png",
+          logo: {
+            "@type": "ImageObject",
+            url: "https://bbe-school.com/logo.png",
+            width: 1024,
+            height: 1024,
+          },
           image: "https://bbe-school.com/og-image.jpg",
           description:
             "Interactive exam simulator and preparation course for the WU Vienna BBE entrance exam.",

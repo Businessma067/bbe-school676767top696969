@@ -13,6 +13,7 @@ const PROVIDER = {
   "@type": "Organization",
   name: "BBE School",
   url: "https://bbe-school.com",
+  logo: "https://bbe-school.com/logo.png",
 } as const;
 
 /** Course structured data for the three offerings listed on this page. */
