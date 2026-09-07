@@ -110,7 +110,7 @@ export function Index() {
               </div>
             </div>
 
-            <div className="mt-6 sm:mt-8 lg:mt-9">
+            <div className="mt-10 sm:mt-12 lg:mt-14">
               <PrepJourneyRoadmap />
             </div>
           </div>
