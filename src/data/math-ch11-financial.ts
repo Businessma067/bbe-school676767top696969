@@ -9677,14 +9677,12 @@ The five-year growth factor is
 
 $$1.10^5 = 1.61051$$
 
-$$s_5 = 50\\frac{1.61051-1}{0.10}$$
-
 $$
-= 50 \\times 6.1051 = 305.255
-$$
-
-$$
-= 50 \\times 6.1051 \\approx 305.26
+\begin{aligned}
+s_5 &= 50\\frac{1.61051-1}{0.10} \\
+&= 50 \\times 6.1051 = 305.255 \\
+&= 50 \\times 6.1051 \\approx 305.26
+\end{aligned}
 $$`,
   },
   {
@@ -9869,14 +9867,13 @@ So the statement is True.`,
 
 The partial sum of the first $n$ terms of a geometric series is:
 
-$$
-s_n = a\\frac{1-k^n}{1-k}
-$$
-
 Substitute the stem numbers:
 
 $$
-= 800 \\times 6.513215599 = 5,210.57
+\begin{aligned}
+s_n &= a\\frac{1-k^n}{1-k} \\
+&= 800 \\times 6.513215599 = 5,210.57
+\end{aligned}
 $$
 
 The computed value is approximately \\$5,210.57, which matches the claim.
@@ -9945,9 +9942,12 @@ $$
 
 $$0.90^{10} = 0.3486784401$$
 
-$$s_{10} = 800\\frac{1-0.3486784401}{0.10}$$
-
-$$= 800 \\times 6.513215599 = 5,210.57$$`,
+$$
+\begin{aligned}
+s_{10} &= 800\\frac{1-0.3486784401}{0.10} \\
+&= 800 \\times 6.513215599 = 5,210.57
+\end{aligned}
+$$`,
   },
   {
     id: `math-11-64`,
@@ -13080,9 +13080,12 @@ $$
 
 The ten-year future value is
 
-$$F_{10} = \\frac{3,500}{0.08}\\left[(1.08)^{10}-1\\right]$$
-
-$$= 43,750 \\times 1.158925 \\approx 50,702.97$$`,
+$$
+\begin{aligned}
+F_{10} &= \\frac{3,500}{0.08}\\left[(1.08)^{10}-1\\right] \\
+&= 43,750 \\times 1.158925 \\approx 50,702.97
+\end{aligned}
+$$`,
   },
   {
     id: `math-11-85`,
@@ -13265,9 +13268,12 @@ $$
 
 The required deposit today is
 
-$$P_{15} = \\frac{2,400}{0.045}\\left[1-\\frac{1}{(1.045)^{15}}\\right]$$
-
-$$= 53,333.33 \\times 0.483284 = 25,775.15$$`,
+$$
+\begin{aligned}
+P_{15} &= \\frac{2,400}{0.045}\\left[1-\\frac{1}{(1.045)^{15}}\\right] \\
+&= 53,333.33 \\times 0.483284 = 25,775.15
+\end{aligned}
+$$`,
   },
   {
     id: `math-11-86`,
@@ -13418,9 +13424,12 @@ $$
 
 The 20-year fund and the perpetuity are
 
-$$P_{20} = \\frac{5,000}{0.06}\\left[1-\\frac{1}{(1.06)^{20}}\\right]$$
-
-$$= 83,333.33 \\times 0.688195 = 57,349.67$$
+$$
+\begin{aligned}
+P_{20} &= \\frac{5,000}{0.06}\\left[1-\\frac{1}{(1.06)^{20}}\\right] \\
+&= 83,333.33 \\times 0.688195 = 57,349.67
+\end{aligned}
+$$
 
 $$
 P = \\frac{5,000}{0.06}
@@ -13449,14 +13458,13 @@ $$`,
 
 Discounting Option 2 at 7% gives:
 
-$$
-\\mathrm{PDV} = K(1+r)^{-t}
-$$
-
 Substitute the stem numbers:
 
 $$
-= 35,714.29 \\times 0.456069 = 16,288.18
+\begin{aligned}
+\\mathrm{PDV} &= K(1+r)^{-t} \\
+&= 35,714.29 \\times 0.456069 = 16,288.18
+\end{aligned}
 $$
 
 The computed value is approximately \\$16,288.18, which matches the claim.
@@ -13587,9 +13595,12 @@ $$
 
 Discounting Option 2 at 7% gives
 
-$$P_9 = \\frac{2,500}{0.07}\\left[1-\\frac{1}{(1.07)^9}\\right]$$
-
-$$= 35,714.29 \\times 0.456069 = 16,288.18$$`,
+$$
+\begin{aligned}
+P_9 &= \\frac{2,500}{0.07}\\left[1-\\frac{1}{(1.07)^9}\\right] \\
+&= 35,714.29 \\times 0.456069 = 16,288.18
+\end{aligned}
+$$`,
   },
   {
     id: `math-11-88`,
@@ -18570,9 +18581,12 @@ $$
 
 At $r=15\\%$,
 
-$$A = -40,000 + \\frac{22,000}{1.15} + \\frac{27,600}{1.3225}$$
-
-$$= -40,000 + 19,130.43 + 20,869.57 = 0$$
+$$
+\begin{aligned}
+A &= -40,000 + \\frac{22,000}{1.15} + \\frac{27,600}{1.3225} \\
+&= -40,000 + 19,130.43 + 20,869.57 = 0
+\end{aligned}
+$$
 
 so $15\\%$ is the internal rate of return.`,
   },
