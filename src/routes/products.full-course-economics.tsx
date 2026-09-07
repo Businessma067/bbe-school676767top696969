@@ -1147,7 +1147,11 @@ function AllExplanationsPanel({
           {task.statements.map((_, i) => {
             const letter = letters[i] ?? String(i + 1);
             const verdict = task.answer_key[i] ? "True" : "False";
-            const expl = (task.tactical_explanations[i] ?? "").trim();
+            let expl = (task.tactical_explanations[i] ?? "").trim();
+            // Match math panel: letter verdict lives in the header; strip stored truth prefix.
+            if (expl) {
+              expl = expl.replace(/^(TRUE|FALSE)\s*[—–-]\s*/i, "").trim();
+            }
             const prose = expl || scrubStatementHints(task.statements[i]);
             const aiOpen = aiState?.statementIndex === i;
 
