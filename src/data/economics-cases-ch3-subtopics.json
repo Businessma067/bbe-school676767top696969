@@ -4079,11 +4079,11 @@
       false
     ],
     "tactical_explanations": [
-      "TRUE — Map the scenario onto the textbook category first, then test whether the sentence describes that category accurately.\n\nNpo healthcare must cover operating costs.\n\nThe statement is true.",
-      "TRUE — Check the sentence against the core concept named in the stem, including every scope word.\n\nNpo healthcare aims to cover costs while serving patients.\n\nThe statement is true.",
-      "TRUE — Check the sentence against the core concept named in the stem, including every scope word.\n\nNpo surpluses are not owner dividends.\n\nThe statement is true.",
-      "TRUE — Check that the comparison runs in the stated direction and attaches the feature to the correct member of the pair.\n\nNpo surpluses reinvest in mission delivery.\n\nThe statement is true.",
-      "FALSE — Check the sentence against the core concept named in the stem, including every scope word.\n\nCovering costs differs from profit-maximisation for owners.\n\nThe statement is false. A student who matched the topic to \"Billing insurers proves maximising owner profit like a corporation\" without checking the rest of the sentence would mark the statement true.\n"
+      "TRUE — Profit emerges when revenue exceeds total costs and expenses in a period. Cost control matters alongside sales; revenue without expense control does not satisfy the profit objective.\n\nNpo healthcare must cover operating costs.\n\nThe sentence therefore reports the concept accurately for this item.\n\nThe statement is true.\n",
+      "TRUE — Not-for-profit organisations pursue a mission rather than owner profit, but they still need funding inflows. Surpluses are typically ploughed back into the mission; a cost-recovery fee alone does not convert an NPO into a profit-maximising firm.\n\nNpo healthcare aims to cover costs while serving patients.\n\nUnder that classification the assertion describes the situation correctly.\n\nThe statement is true.\n",
+      "TRUE — Profit emerges when revenue exceeds total costs and expenses in a period. Cost control matters alongside sales; revenue without expense control does not satisfy the profit objective.\n\nNpo surpluses are not owner dividends.\n\nThe sentence therefore reports the concept accurately for this item.\n\nThe statement is true.\n",
+      "TRUE — Profit emerges when revenue exceeds total costs and expenses in a period. Cost control matters alongside sales; revenue without expense control does not satisfy the profit objective.\n\nNpo surpluses reinvest in mission delivery.\n\nUnder that classification the assertion describes the situation correctly.\n\nThe statement is true.\n",
+      "FALSE — Profit emerges when revenue exceeds total costs and expenses in a period. Cost control matters alongside sales; revenue without expense control does not satisfy the profit objective.\n\nCovering costs differs from profit-maximisation for owners.\n\nThe mislabelled category or reversed comparison is enough to reject the claim.\n\nThe statement is false.\n"
     ],
     "difficulty_level": "2/5",
     "tier": "full"
@@ -4108,11 +4108,11 @@
       false
     ],
     "tactical_explanations": [
-      "TRUE — Check the sentence against the core concept named in the stem, including every scope word.\n\nNpos need resources to deliver goods and services.\n\nThe statement is true.",
-      "TRUE — Check the sentence against the core concept named in the stem, including every scope word.\n\nPrior surpluses and donations enable ongoing services.\n\nThe statement is true.",
-      "TRUE — Check the sentence against the core concept named in the stem, including every scope word.\n\nRelief delivery requires secured inflows.\n\nThe statement is true.",
-      "FALSE — Read the quantifier. Words such as never, always, only, or all turn a generally valid idea into a claim that one counterexample rejects.\n\nFunding remains necessary even in urgent relief.\n\nThe statement is false. A student who overlooked the word \"all\" in \"Disaster urgency bypasses all cost coverage requirements\" would treat the restriction as absent and mark the statement true.\n",
-      "FALSE — Read the quantifier. Words such as never, always, only, or all turn a generally valid idea into a claim that one counterexample rejects.\n\nHumanitarian delivery requires funded materials and logistics.\n\nThe statement is false. A student who overlooked the word \"all\" in \"Volunteers remove all material costs from relief kits\" would treat the restriction as absent and mark the statement true.\n"
+      "TRUE — Not-for-profit organisations pursue a mission rather than owner profit, but they still need funding inflows. Surpluses are typically ploughed back into the mission; a cost-recovery fee alone does not convert an NPO into a profit-maximising firm.\n\nNpos need resources to deliver goods and services.\n\nUnder that classification the assertion describes the situation correctly.\n\nThe statement is true.\n",
+      "TRUE — Not-for-profit organisations pursue a mission rather than owner profit, but they still need funding inflows. Surpluses are typically ploughed back into the mission; a cost-recovery fee alone does not convert an NPO into a profit-maximising firm.\n\nPrior surpluses and donations enable ongoing services.\n\nNothing in the keyed reading contradicts the chapter framing used here, so the claim holds.\n\nThe statement is true.\n",
+      "TRUE — Not-for-profit organisations pursue a mission rather than owner profit, but they still need funding inflows. Surpluses are typically ploughed back into the mission; a cost-recovery fee alone does not convert an NPO into a profit-maximising firm.\n\nRelief delivery requires secured inflows.\n\nUnder that classification the assertion describes the situation correctly.\n\nThe statement is true.\n",
+      "FALSE — Profit emerges when revenue exceeds total costs and expenses in a period. Cost control matters alongside sales; revenue without expense control does not satisfy the profit objective.\n\nFunding remains necessary even in urgent relief.\n\nSwap in the textbook criterion and the sentence no longer describes the case.\n\nThe statement is false.\n",
+      "FALSE — Not-for-profit organisations pursue a mission rather than owner profit, but they still need funding inflows. Surpluses are typically ploughed back into the mission; a cost-recovery fee alone does not convert an NPO into a profit-maximising firm.\n\nHumanitarian delivery requires funded materials and logistics.\n\nSwap in the textbook criterion and the sentence no longer describes the case.\n\nThe statement is false.\n"
     ],
     "difficulty_level": "1/5",
     "tier": "full"
@@ -4137,11 +4137,11 @@
       true
     ],
     "tactical_explanations": [
-      "TRUE — Check the sentence against the core concept named in the stem, including every scope word.\n\nProfit funds reinvestment such as new equipment.\n\nThe statement is true.",
-      "TRUE — Check the sentence against the core concept named in the stem, including every scope word.\n\nProfit emerges when revenue exceeds costs.\n\nThe statement is true.",
-      "TRUE — Check the sentence against the core concept named in the stem, including every scope word.\n\nProfit-oriented firms target surplus above costs.\n\nThe statement is true.",
-      "TRUE — Check the sentence against the core concept named in the stem, including every scope word.\n\nProfit rewards owners for bearing business risk.\n\nThe statement is true.",
-      "TRUE — Check the sentence against the core concept named in the stem, including every scope word.\n\nProfit-oriented firms seek surplus above costs.\n\nThe statement is true."
+      "TRUE — Profit emerges when revenue exceeds total costs and expenses in a period. Cost control matters alongside sales; revenue without expense control does not satisfy the profit objective.\n\nProfit funds reinvestment such as new equipment.\n\nNothing in the keyed reading contradicts the chapter framing used here, so the claim holds.\n\nThe statement is true.\n",
+      "TRUE — Profit emerges when revenue exceeds total costs and expenses in a period. Cost control matters alongside sales; revenue without expense control does not satisfy the profit objective.\n\nProfit emerges when revenue exceeds costs.\n\nNothing in the keyed reading contradicts the chapter framing used here, so the claim holds.\n\nThe statement is true.\n",
+      "TRUE — Profit-oriented firms seek a surplus of revenue over total costs, not merely break-even. Covering costs alone is a floor, not the usual long-run commercial goal.\n\nProfit-oriented firms target surplus above costs.\n\nUnder that classification the assertion describes the situation correctly.\n\nThe statement is true.\n",
+      "TRUE — Profit emerges when revenue exceeds total costs and expenses in a period. Cost control matters alongside sales; revenue without expense control does not satisfy the profit objective.\n\nProfit rewards owners for bearing business risk.\n\nUnder that classification the assertion describes the situation correctly.\n\nThe statement is true.\n",
+      "TRUE — Commercial profit can be retained and reinvested in equipment, capacity, and durability. Distributing every euro immediately is not required for profit orientation.\n\nProfit-oriented firms seek surplus above costs.\n\nNothing in the keyed reading contradicts the chapter framing used here, so the claim holds.\n\nThe statement is true.\n"
     ],
     "difficulty_level": "1/5",
     "tier": "full"
@@ -4166,11 +4166,11 @@
       false
     ],
     "tactical_explanations": [
-      "TRUE — Check the sentence against the core concept named in the stem, including every scope word.\n\nCommercial firms target profit above mere cost coverage.\n\nThe statement is true.",
-      "FALSE — Check the sentence against the core concept named in the stem, including every scope word.\n\nProfit supports long-run survival and growth.\n\nThe statement is false. A student who matched the topic to \"Longevity requires only break-even in profit-oriented firms\" without checking the rest of the sentence would mark the statement true.\n",
-      "FALSE — Check the sentence against the core concept named in the stem, including every scope word.\n\nProfit-oriented firms target revenue above costs.\n\nThe statement is false. A student who matched the topic to \"Commercial thrive logic rejects any surplus above costs\" without checking the rest of the sentence would mark the statement true.\n",
-      "FALSE — Check the sentence against the core concept named in the stem, including every scope word.\n\nNpos aim to cover costs and reinvest surplus for the mission.\n\nThe statement is false. A student who matched the topic to \"Thriving requires NPOs to maximise dividends to investors\" without checking the rest of the sentence would mark the statement true.\n",
-      "FALSE — Check the sentence against the core concept named in the stem, including every scope word.\n\nCommercial expansion relies on profit.\n\nThe statement is false. A student who matched the topic to \"Retailers expand while keeping revenues below operating costs\" without checking the rest of the sentence would mark the statement true.\n"
+      "TRUE — Profit-oriented firms seek a surplus of revenue over total costs, not merely break-even. Covering costs alone is a floor, not the usual long-run commercial goal.\n\nCommercial firms target profit above mere cost coverage.\n\nThe sentence therefore reports the concept accurately for this item.\n\nThe statement is true.\n",
+      "FALSE — Profit-oriented firms seek a surplus of revenue over total costs, not merely break-even. Covering costs alone is a floor, not the usual long-run commercial goal.\n\nProfit supports long-run survival and growth.\n\nThe absolute wording is what breaks the claim once the correct test is applied.\n\nThe statement is false.\n",
+      "FALSE — Profit emerges when revenue exceeds total costs and expenses in a period. Cost control matters alongside sales; revenue without expense control does not satisfy the profit objective.\n\nProfit-oriented firms target revenue above costs.\n\nSwap in the textbook criterion and the sentence no longer describes the case.\n\nThe statement is false.\n",
+      "FALSE — Not-for-profit organisations pursue a mission rather than owner profit, but they still need funding inflows. Surpluses are typically ploughed back into the mission; a cost-recovery fee alone does not convert an NPO into a profit-maximising firm.\n\nNpos aim to cover costs and reinvest surplus for the mission.\n\nSwap in the textbook criterion and the sentence no longer describes the case.\n\nThe statement is false.\n",
+      "FALSE — Profit emerges when revenue exceeds total costs and expenses in a period. Cost control matters alongside sales; revenue without expense control does not satisfy the profit objective.\n\nCommercial expansion relies on profit.\n\nThe mislabelled category or reversed comparison is enough to reject the claim.\n\nThe statement is false.\n"
     ],
     "difficulty_level": "2/5",
     "tier": "full"
@@ -4195,11 +4195,11 @@
       false
     ],
     "tactical_explanations": [
-      "TRUE — Check the sentence against the core concept named in the stem, including every scope word.\n\nNpo surpluses reinvest in mission; commercial profit may reward owners.\n\nThe statement is true.",
-      "TRUE — Check that the comparison runs in the stated direction and attaches the feature to the correct member of the pair.\n\nNpo surpluses support mission, not owner payouts.\n\nThe statement is true.",
-      "FALSE — Check the sentence against the core concept named in the stem, including every scope word.\n\nTicket revenue may fund mission reinvestment.\n\nThe statement is false. A student who matched the topic to \"Ticket income must be profit distributed to owners\" without checking the rest of the sentence would mark the statement true.\n",
-      "FALSE — Check the sentence against the core concept named in the stem, including every scope word.\n\nReinvested surplus broadens mission capacity.\n\nThe statement is false. A student who matched the topic to \"Undistributed surplus proves the NPO failed financially\" without checking the rest of the sentence would mark the statement true.\n",
-      "FALSE — Map the scenario onto the textbook category first, then test whether the sentence describes that category accurately.\n\nNpo surpluses are typically reinvested into the mission.\n\nThe statement is false. A student who matched the topic to \"Mission reinvestment is forbidden when an NPO earns surplus\" without checking the rest of the sentence would mark the statement true.\n"
+      "TRUE — Not-for-profit organisations pursue a mission rather than owner profit, but they still need funding inflows. Surpluses are typically ploughed back into the mission; a cost-recovery fee alone does not convert an NPO into a profit-maximising firm.\n\nNpo surpluses reinvest in mission; commercial profit may reward owners.\n\nNothing in the keyed reading contradicts the chapter framing used here, so the claim holds.\n\nThe statement is true.\n",
+      "TRUE — Not-for-profit organisations pursue a mission rather than owner profit, but they still need funding inflows. Surpluses are typically ploughed back into the mission; a cost-recovery fee alone does not convert an NPO into a profit-maximising firm.\n\nNpo surpluses support mission, not owner payouts.\n\nThe sentence therefore reports the concept accurately for this item.\n\nThe statement is true.\n",
+      "FALSE — Profit emerges when revenue exceeds total costs and expenses in a period. Cost control matters alongside sales; revenue without expense control does not satisfy the profit objective.\n\nTicket revenue may fund mission reinvestment.\n\nSwap in the textbook criterion and the sentence no longer describes the case.\n\nThe statement is false.\n",
+      "FALSE — Not-for-profit organisations pursue a mission rather than owner profit, but they still need funding inflows. Surpluses are typically ploughed back into the mission; a cost-recovery fee alone does not convert an NPO into a profit-maximising firm.\n\nReinvested surplus broadens mission capacity.\n\nThe mislabelled category or reversed comparison is enough to reject the claim.\n\nThe statement is false.\n",
+      "FALSE — Not-for-profit organisations pursue a mission rather than owner profit, but they still need funding inflows. Surpluses are typically ploughed back into the mission; a cost-recovery fee alone does not convert an NPO into a profit-maximising firm.\n\nNpo surpluses are typically reinvested into the mission.\n\nSwap in the textbook criterion and the sentence no longer describes the case.\n\nThe statement is false.\n"
     ],
     "difficulty_level": "2/5",
     "tier": "full"
@@ -4224,11 +4224,11 @@
       true
     ],
     "tactical_explanations": [
-      "TRUE — Check the sentence against the core concept named in the stem, including every scope word.\n\nMost businesses aim to make profit to thrive over time.\n\nThe statement is true.",
-      "TRUE — Check the sentence against the core concept named in the stem, including every scope word.\n\nRetained profit funds capital renewal.\n\nThe statement is true.",
-      "TRUE — Check the sentence against the core concept named in the stem, including every scope word.\n\nReinvested profit strengthens long-run capacity.\n\nThe statement is true.",
-      "TRUE — Check the sentence against the core concept named in the stem, including every scope word.\n\nProfit-oriented firms target revenue above costs.\n\nThe statement is true.",
-      "TRUE — Check the sentence against the core concept named in the stem, including every scope word.\n\nProfit funds capital renewal in commercial firms.\n\nThe statement is true."
+      "TRUE — Profit emerges when revenue exceeds total costs and expenses in a period. Cost control matters alongside sales; revenue without expense control does not satisfy the profit objective.\n\nMost businesses aim to make profit to thrive over time.\n\nUnder that classification the assertion describes the situation correctly.\n\nThe statement is true.\n",
+      "TRUE — Commercial profit can be retained and reinvested in equipment, capacity, and durability. Distributing every euro immediately is not required for profit orientation.\n\nRetained profit funds capital renewal.\n\nThe sentence therefore reports the concept accurately for this item.\n\nThe statement is true.\n",
+      "TRUE — Commercial profit can be retained and reinvested in equipment, capacity, and durability. Distributing every euro immediately is not required for profit orientation.\n\nReinvested profit strengthens long-run capacity.\n\nNothing in the keyed reading contradicts the chapter framing used here, so the claim holds.\n\nThe statement is true.\n",
+      "TRUE — Profit emerges when revenue exceeds total costs and expenses in a period. Cost control matters alongside sales; revenue without expense control does not satisfy the profit objective.\n\nProfit-oriented firms target revenue above costs.\n\nNothing in the keyed reading contradicts the chapter framing used here, so the claim holds.\n\nThe statement is true.\n",
+      "TRUE — Commercial profit can be retained and reinvested in equipment, capacity, and durability. Distributing every euro immediately is not required for profit orientation.\n\nProfit funds capital renewal in commercial firms.\n\nThe sentence therefore reports the concept accurately for this item.\n\nThe statement is true.\n"
     ],
     "difficulty_level": "1/5",
     "tier": "full"
@@ -4253,11 +4253,11 @@
       false
     ],
     "tactical_explanations": [
-      "TRUE — Check the sentence against the core concept named in the stem, including every scope word.\n\nPrior surpluses and donations can fund later projects.\n\nThe statement is true.",
-      "FALSE — Check the sentence against the core concept named in the stem, including every scope word.\n\nNpos combine inflows to cover mission costs.\n\nThe statement is false. A student who matched the topic to \"Mixed inflows must be paid out as owner dividends\" without checking the rest of the sentence would mark the statement true.\n",
-      "FALSE — Map the scenario onto the textbook category first, then test whether the sentence describes that category accurately.\n\nProjects require financed staff and materials.\n\nThe statement is false. A student who matched the topic to \"Project funding ignores operating costs because missions are voluntary\" without checking the rest of the sentence would mark the statement true.\n",
-      "FALSE — Check the sentence against the core concept named in the stem, including every scope word.\n\nGrants must cover real project and staff costs.\n\nThe statement is false. A student who matched the topic to \"Grant awards are ceremonial and require no cost coverage\" without checking the rest of the sentence would mark the statement true.\n",
-      "FALSE — Read the quantifier. Words such as never, always, only, or all turn a generally valid idea into a claim that one counterexample rejects.\n\nOperations still require funded inflows.\n\nThe statement is false. A student who overlooked the word \"all\" in \"Volunteer recruitment removes all revenue requirements\" would treat the restriction as absent and mark the statement true.\n"
+      "TRUE — Profit emerges when revenue exceeds total costs and expenses in a period. Cost control matters alongside sales; revenue without expense control does not satisfy the profit objective.\n\nPrior surpluses and donations can fund later projects.\n\nThe sentence therefore reports the concept accurately for this item.\n\nThe statement is true.\n",
+      "FALSE — Profit emerges when revenue exceeds total costs and expenses in a period. Cost control matters alongside sales; revenue without expense control does not satisfy the profit objective.\n\nNpos combine inflows to cover mission costs.\n\nSwap in the textbook criterion and the sentence no longer describes the case.\n\nThe statement is false.\n",
+      "FALSE — Profit emerges when revenue exceeds total costs and expenses in a period. Cost control matters alongside sales; revenue without expense control does not satisfy the profit objective.\n\nProjects require financed staff and materials.\n\nThe mislabelled category or reversed comparison is enough to reject the claim.\n\nThe statement is false.\n",
+      "FALSE — Profit emerges when revenue exceeds total costs and expenses in a period. Cost control matters alongside sales; revenue without expense control does not satisfy the profit objective.\n\nGrants must cover real project and staff costs.\n\nSwap in the textbook criterion and the sentence no longer describes the case.\n\nThe statement is false.\n",
+      "FALSE — Profit emerges when revenue exceeds total costs and expenses in a period. Cost control matters alongside sales; revenue without expense control does not satisfy the profit objective.\n\nOperations still require funded inflows.\n\nSwap in the textbook criterion and the sentence no longer describes the case.\n\nThe statement is false.\n"
     ],
     "difficulty_level": "1/5",
     "tier": "full"
@@ -4282,11 +4282,11 @@
       false
     ],
     "tactical_explanations": [
-      "TRUE — Read the quantifier. Words such as never, always, only, or all turn a generally valid idea into a claim that one counterexample rejects.\n\nProfits can be reinvested in the business.\n\nThe statement is true.",
-      "TRUE — Check the sentence against the core concept named in the stem, including every scope word.\n\nCommercial firms reinvest profit into equipment.\n\nThe statement is true.",
-      "TRUE — Check the sentence against the core concept named in the stem, including every scope word.\n\nProfit commonly funds reinvestment in commercial firms.\n\nThe statement is true.",
-      "TRUE — Check the sentence against the core concept named in the stem, including every scope word.\n\nReinvested profit strengthens capacity.\n\nThe statement is true.",
-      "FALSE — Read the quantifier. Words such as never, always, only, or all turn a generally valid idea into a claim that one counterexample rejects.\n\nProfits can be reinvested in the business.\n\nThe statement is false. A student who overlooked the word \"cannot\" in \"Commercial profit must be distributed immediately and cannot fund new equipment\" would treat the restriction as absent and mark the statement true.\n"
+      "TRUE — Commercial profit can be retained and reinvested in equipment, capacity, and durability. Distributing every euro immediately is not required for profit orientation.\n\nProfits can be reinvested in the business.\n\nThe sentence therefore reports the concept accurately for this item.\n\nThe statement is true.\n",
+      "TRUE — Commercial profit can be retained and reinvested in equipment, capacity, and durability. Distributing every euro immediately is not required for profit orientation.\n\nCommercial firms reinvest profit into equipment.\n\nUnder that classification the assertion describes the situation correctly.\n\nThe statement is true.\n",
+      "TRUE — Profit emerges when revenue exceeds total costs and expenses in a period. Cost control matters alongside sales; revenue without expense control does not satisfy the profit objective.\n\nProfit commonly funds reinvestment in commercial firms.\n\nThe sentence therefore reports the concept accurately for this item.\n\nThe statement is true.\n",
+      "TRUE — Commercial profit can be retained and reinvested in equipment, capacity, and durability. Distributing every euro immediately is not required for profit orientation.\n\nReinvested profit strengthens capacity.\n\nUnder that classification the assertion describes the situation correctly.\n\nThe statement is true.\n",
+      "FALSE — Profit emerges when revenue exceeds total costs and expenses in a period. Cost control matters alongside sales; revenue without expense control does not satisfy the profit objective.\n\nProfits can be reinvested in the business.\n\nThose restricting words stretch a limited idea past what the definition allows.\n\nThe statement is false.\n"
     ],
     "difficulty_level": "2/5",
     "tier": "full"
@@ -4311,11 +4311,11 @@
       false
     ],
     "tactical_explanations": [
-      "TRUE — Check the sentence against the core concept named in the stem, including every scope word.\n\nLogistics and materials must be funded.\n\nThe statement is true.",
-      "TRUE — Check the sentence against the core concept named in the stem, including every scope word.\n\nPrior surplus can support later mission delivery.\n\nThe statement is true.",
-      "FALSE — Check the sentence against the core concept named in the stem, including every scope word.\n\nNpos still plan and manage funding.\n\nThe statement is false. A student who matched the topic to \"Not-for-profit status removes the need for any inflow planning\" without checking the rest of the sentence would mark the statement true.\n",
-      "FALSE — Check the sentence against the core concept named in the stem, including every scope word.\n\nContinuous delivery needs ongoing inflows.\n\nThe statement is false. A student who matched the topic to \"Relief can be delivered indefinitely without donations or other inflows\" without checking the rest of the sentence would mark the statement true.\n",
-      "FALSE — Check the sentence against the core concept named in the stem, including every scope word.\n\nMission surplus is not private owner profit.\n\nThe statement is false. A student who matched the topic to \"Any surplus in relief work must become private owner profit\" without checking the rest of the sentence would mark the statement true.\n"
+      "TRUE — Not-for-profit organisations pursue a mission rather than owner profit, but they still need funding inflows. Surpluses are typically ploughed back into the mission; a cost-recovery fee alone does not convert an NPO into a profit-maximising firm.\n\nLogistics and materials must be funded.\n\nNothing in the keyed reading contradicts the chapter framing used here, so the claim holds.\n\nThe statement is true.\n",
+      "TRUE — Profit emerges when revenue exceeds total costs and expenses in a period. Cost control matters alongside sales; revenue without expense control does not satisfy the profit objective.\n\nPrior surplus can support later mission delivery.\n\nNothing in the keyed reading contradicts the chapter framing used here, so the claim holds.\n\nThe statement is true.\n",
+      "FALSE — Not-for-profit organisations pursue a mission rather than owner profit, but they still need funding inflows. Surpluses are typically ploughed back into the mission; a cost-recovery fee alone does not convert an NPO into a profit-maximising firm.\n\nNpos still plan and manage funding.\n\nSwap in the textbook criterion and the sentence no longer describes the case.\n\nThe statement is false.\n",
+      "FALSE — Not-for-profit organisations pursue a mission rather than owner profit, but they still need funding inflows. Surpluses are typically ploughed back into the mission; a cost-recovery fee alone does not convert an NPO into a profit-maximising firm.\n\nContinuous delivery needs ongoing inflows.\n\nOnce the defining feature is restored, the assertion falls away.\n\nThe statement is false.\n",
+      "FALSE — Not-for-profit organisations pursue a mission rather than owner profit, but they still need funding inflows. Surpluses are typically ploughed back into the mission; a cost-recovery fee alone does not convert an NPO into a profit-maximising firm.\n\nMission surplus is not private owner profit.\n\nThe mislabelled category or reversed comparison is enough to reject the claim.\n\nThe statement is false.\n"
     ],
     "difficulty_level": "2/5",
     "tier": "full"
@@ -4340,11 +4340,11 @@
       false
     ],
     "tactical_explanations": [
-      "TRUE — Check that the comparison runs in the stated direction and attaches the feature to the correct member of the pair.\n\nMission aim distinguishes npos from profit-oriented firms.\n\nThe statement is true.",
-      "TRUE — Check the sentence against the core concept named in the stem, including every scope word.\n\nMission reinvestment of surplus is standard npo behaviour.\n\nThe statement is true.",
-      "TRUE — Check the sentence against the core concept named in the stem, including every scope word.\n\nDifferent mission types can share npo characteristics.\n\nThe statement is true.",
-      "FALSE — Read the quantifier. Words such as never, always, only, or all turn a generally valid idea into a claim that one counterexample rejects.\n\nTrading for mission funding does not redefine the organisation as profit-maximising.\n\nThe statement is false. A student who overlooked the word \"always\" in \"Selling goods always converts an NPO into a profit-maximising corporation\" would treat the restriction as absent and mark the statement true.\n",
-      "FALSE — Check the sentence against the core concept named in the stem, including every scope word.\n\nOperations require donations, fees, grants, or trading income.\n\nThe statement is false. A student who matched the topic to \"NPOs can operate indefinitely with no inflows of any kind\" without checking the rest of the sentence would mark the statement true.\n"
+      "TRUE — Not-for-profit organisations pursue a mission rather than owner profit, but they still need funding inflows. Surpluses are typically ploughed back into the mission; a cost-recovery fee alone does not convert an NPO into a profit-maximising firm.\n\nMission aim distinguishes npos from profit-oriented firms.\n\nThe sentence therefore reports the concept accurately for this item.\n\nThe statement is true.\n",
+      "TRUE — Not-for-profit organisations pursue a mission rather than owner profit, but they still need funding inflows. Surpluses are typically ploughed back into the mission; a cost-recovery fee alone does not convert an NPO into a profit-maximising firm.\n\nMission reinvestment of surplus is standard npo behaviour.\n\nNothing in the keyed reading contradicts the chapter framing used here, so the claim holds.\n\nThe statement is true.\n",
+      "TRUE — Not-for-profit organisations pursue a mission rather than owner profit, but they still need funding inflows. Surpluses are typically ploughed back into the mission; a cost-recovery fee alone does not convert an NPO into a profit-maximising firm.\n\nDifferent mission types can share npo characteristics.\n\nUnder that classification the assertion describes the situation correctly.\n\nThe statement is true.\n",
+      "FALSE — Not-for-profit organisations pursue a mission rather than owner profit, but they still need funding inflows. Surpluses are typically ploughed back into the mission; a cost-recovery fee alone does not convert an NPO into a profit-maximising firm.\n\nTrading for mission funding does not redefine the organisation as profit-maximising.\n\nOne clear counterexample under the right criterion is enough to reject the sentence.\n\nThe statement is false.\n",
+      "FALSE — Not-for-profit organisations pursue a mission rather than owner profit, but they still need funding inflows. Surpluses are typically ploughed back into the mission; a cost-recovery fee alone does not convert an NPO into a profit-maximising firm.\n\nOperations require donations, fees, grants, or trading income.\n\nOnce the defining feature is restored, the assertion falls away.\n\nThe statement is false.\n"
     ],
     "difficulty_level": "2/5",
     "tier": "full"
