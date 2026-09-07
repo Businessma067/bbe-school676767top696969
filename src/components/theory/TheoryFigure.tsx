@@ -2099,6 +2099,256 @@ function IneqCompoundIntersection() {
   );
 }
 
+/* ── Chapter 10: Exponential and logarithmic graphs ─ */
+
+function ExpLogAxesFrame({
+  title,
+  children,
+  hint,
+  xLabel = "t",
+  yLabel = "y",
+}: {
+  title: string;
+  children: ReactNode;
+  hint?: string;
+  xLabel?: string;
+  yLabel?: string;
+}) {
+  return (
+    <div>
+      <ChartFrame title={title} height="h-[280px] sm:h-[320px]">
+        <svg viewBox="0 0 520 300" className="h-full w-full" role="img" aria-label={title}>
+          <rect x="0" y="0" width="520" height="300" fill="#fff" />
+          <line x1="48" y1="250" x2="500" y2="250" stroke={INK} strokeWidth="1.5" />
+          <line x1="48" y1="250" x2="48" y2="24" stroke={INK} strokeWidth="1.5" />
+          <polygon points="500,250 492,246 492,254" fill={INK} />
+          <polygon points="48,24 44,32 52,32" fill={INK} />
+          <text x="505" y="254" fontSize="13" fill={MUTED}>
+            {xLabel}
+          </text>
+          <text x="56" y="36" fontSize="13" fill={MUTED}>
+            {yLabel}
+          </text>
+          {children}
+        </svg>
+      </ChartFrame>
+      {hint ? <Hint>{hint}</Hint> : null}
+    </div>
+  );
+}
+
+/** Map math (t,y) with t≥0 into the exp/log frame (origin at bottom-left). */
+function expPoint(t: number, y: number, tMax = 4, yMax = 8) {
+  return {
+    cx: 48 + (t / tMax) * 430,
+    cy: 250 - (y / yMax) * 210,
+  };
+}
+
+function expCurve(
+  f: (t: number) => number,
+  from: number,
+  to: number,
+  n = 70,
+  tMax = 4,
+  yMax = 8,
+) {
+  const pts: string[] = [];
+  for (let i = 0; i <= n; i++) {
+    const t = from + (i / n) * (to - from);
+    let y = f(t);
+    if (y > yMax) y = yMax;
+    if (y < 0) y = 0;
+    const p = expPoint(t, y, tMax, yMax);
+    pts.push(`${p.cx.toFixed(1)},${p.cy.toFixed(1)}`);
+  }
+  return pts.join(" ");
+}
+
+function LogAxesFrame({
+  title,
+  children,
+  hint,
+}: {
+  title: string;
+  children: ReactNode;
+  hint?: string;
+}) {
+  return (
+    <div>
+      <ChartFrame title={title} height="h-[280px] sm:h-[320px]">
+        <svg viewBox="0 0 520 300" className="h-full w-full" role="img" aria-label={title}>
+          <rect x="0" y="0" width="520" height="300" fill="#fff" />
+          <line x1="40" y1="150" x2="500" y2="150" stroke={INK} strokeWidth="1.5" />
+          <line x1="80" y1="20" x2="80" y2="280" stroke={INK} strokeWidth="1.5" />
+          <polygon points="500,150 492,146 492,154" fill={INK} />
+          <polygon points="80,20 76,28 84,28" fill={INK} />
+          <text x="505" y="154" fontSize="13" fill={MUTED}>
+            x
+          </text>
+          <text x="88" y="32" fontSize="13" fill={MUTED}>
+            y
+          </text>
+          {children}
+        </svg>
+      </ChartFrame>
+      {hint ? <Hint>{hint}</Hint> : null}
+    </div>
+  );
+}
+
+/** Log window: x in (0, 8], y in [-3, 3], vertical axis at x=0 drawn at svg x=80. */
+function logPoint(x: number, y: number) {
+  return {
+    cx: 80 + x * 50,
+    cy: 150 - y * 40,
+  };
+}
+
+function logCurve(f: (x: number) => number, from: number, to: number, n = 80) {
+  const pts: string[] = [];
+  for (let i = 0; i <= n; i++) {
+    const x = from + (i / n) * (to - from);
+    if (x <= 0) continue;
+    let y = f(x);
+    if (y > 3.2) y = 3.2;
+    if (y < -3.2) y = -3.2;
+    const p = logPoint(x, y);
+    pts.push(`${p.cx.toFixed(1)},${p.cy.toFixed(1)}`);
+  }
+  return pts.join(" ");
+}
+
+/** Growth base > 1 versus decay base between 0 and 1. */
+function ExpGrowthDecay() {
+  const growth = expCurve((t) => Math.pow(2, t), 0, 3.2, 70, 4, 10);
+  const decay = expCurve((t) => 4 * Math.pow(0.5, t), 0, 3.2, 70, 4, 10);
+  const pGrow = expPoint(2, 4, 4, 10);
+  const pDec = expPoint(2, 1, 4, 10);
+  return (
+    <ExpLogAxesFrame
+      title="Growth versus decay"
+      hint="Base bigger than 1: the curve rises (growth). Base between 0 and 1: the curve falls (decay)."
+    >
+      <polyline points={growth} fill="none" stroke={ACCENT} strokeWidth="2.6" />
+      <polyline points={decay} fill="none" stroke={MUTED} strokeWidth="2.4" strokeDasharray="6 4" />
+      <text x={pGrow.cx + 8} y={pGrow.cy} fontSize="12" fill={ACCENT} fontWeight={700}>
+        y = 2ᵗ (growth)
+      </text>
+      <text x={pDec.cx + 8} y={pDec.cy + 4} fontSize="12" fill={MUTED} fontWeight={700}>
+        y = 4·(½)ᵗ (decay)
+      </text>
+      <text x="56" y="262" fontSize="11" fill={MUTED}>
+        0
+      </text>
+    </ExpLogAxesFrame>
+  );
+}
+
+/** Same force, different starting levels P₀. */
+function ExpStartLevel() {
+  const low = expCurve((t) => Math.exp(0.35 * t), 0, 3.5, 70, 4, 6);
+  const high = expCurve((t) => 2 * Math.exp(0.35 * t), 0, 3.5, 70, 4, 6);
+  const a = expPoint(0, 1, 4, 6);
+  const b = expPoint(0, 2, 4, 6);
+  return (
+    <ExpLogAxesFrame
+      title="Changing the start P₀"
+      hint="A larger start lifts the whole curve up. The shape stays the same because the force k is unchanged."
+    >
+      <polyline points={high} fill="none" stroke={ACCENT} strokeWidth="2.6" />
+      <polyline points={low} fill="none" stroke={MUTED} strokeWidth="2.4" strokeDasharray="6 4" />
+      <circle cx={a.cx} cy={a.cy} r="3.5" fill={MUTED} />
+      <circle cx={b.cx} cy={b.cy} r="3.5" fill={ACCENT} />
+      <text x={b.cx + 10} y={b.cy + 4} fontSize="12" fill={ACCENT} fontWeight={700}>
+        P₀ = 2
+      </text>
+      <text x={a.cx + 10} y={a.cy + 4} fontSize="12" fill={MUTED} fontWeight={700}>
+        P₀ = 1
+      </text>
+    </ExpLogAxesFrame>
+  );
+}
+
+/** Same start, different continuous forces k. */
+function ExpForce() {
+  const slow = expCurve((t) => Math.exp(0.2 * t), 0, 4, 70, 4, 6);
+  const fast = expCurve((t) => Math.exp(0.5 * t), 0, 4, 70, 4, 6);
+  const pSlow = expPoint(3.2, Math.exp(0.64), 4, 6);
+  const pFast = expPoint(2.2, Math.exp(1.1), 4, 6);
+  return (
+    <ExpLogAxesFrame
+      title="Changing the force k"
+      hint="A larger positive k makes the curve rise faster. Both curves still start at the same height when t = 0."
+    >
+      <polyline points={fast} fill="none" stroke={ACCENT} strokeWidth="2.6" />
+      <polyline points={slow} fill="none" stroke={MUTED} strokeWidth="2.4" strokeDasharray="6 4" />
+      <text x={Math.min(pFast.cx, 360)} y={pFast.cy} fontSize="12" fill={ACCENT} fontWeight={700}>
+        larger k
+      </text>
+      <text x={Math.min(pSlow.cx, 380)} y={pSlow.cy + 6} fontSize="12" fill={MUTED} fontWeight={700}>
+        smaller k
+      </text>
+    </ExpLogAxesFrame>
+  );
+}
+
+/** Basic log graph with asymptote and key points. */
+function LogBasic() {
+  const curve = logCurve((x) => Math.log2(x), 0.12, 7.5, 100);
+  const p1 = logPoint(1, 0);
+  const p2 = logPoint(2, 1);
+  const pHalf = logPoint(0.5, -1);
+  return (
+    <LogAxesFrame
+      title="Graph of y = log₂(x)"
+      hint="The curve crosses the x-axis at 1. It never touches the vertical line x = 0 (asymptote). Values only exist for x > 0."
+    >
+      <line x1="80" y1="20" x2="80" y2="280" stroke={GRID} strokeWidth="1.5" strokeDasharray="4 4" />
+      <polyline points={curve} fill="none" stroke={ACCENT} strokeWidth="2.6" />
+      <circle cx={p1.cx} cy={p1.cy} r="3.5" fill={ACCENT} />
+      <circle cx={p2.cx} cy={p2.cy} r="3.5" fill={ACCENT} />
+      <circle cx={pHalf.cx} cy={pHalf.cy} r="3.5" fill={MUTED} />
+      <text x={p1.cx + 8} y={p1.cy - 8} fontSize="12" fill={INK} fontWeight={700}>
+        (1, 0)
+      </text>
+      <text x={p2.cx + 8} y={p2.cy - 6} fontSize="12" fill={INK} fontWeight={700}>
+        (2, 1)
+      </text>
+      <text x={pHalf.cx + 8} y={pHalf.cy + 14} fontSize="12" fill={MUTED} fontWeight={700}>
+        (½, −1)
+      </text>
+      <text x="88" y="48" fontSize="11" fill={MUTED}>
+        asymptote x = 0
+      </text>
+    </LogAxesFrame>
+  );
+}
+
+/** Larger base grows more slowly on (1, ∞). */
+function LogBases() {
+  const log2 = logCurve((x) => Math.log2(x), 0.15, 7.5, 100);
+  const log10 = logCurve((x) => Math.log10(x), 0.15, 7.5, 100);
+  const a = logPoint(4, Math.log2(4));
+  const b = logPoint(4, Math.log10(4));
+  return (
+    <LogAxesFrame
+      title="Different bases: log₂ versus log₁₀"
+      hint="Both pass through (1, 0). For x > 1, a larger base gives a lower log value, so log₁₀ rises more slowly than log₂."
+    >
+      <line x1="80" y1="20" x2="80" y2="280" stroke={GRID} strokeWidth="1.5" strokeDasharray="4 4" />
+      <polyline points={log2} fill="none" stroke={ACCENT} strokeWidth="2.6" />
+      <polyline points={log10} fill="none" stroke={MUTED} strokeWidth="2.4" strokeDasharray="6 4" />
+      <text x={a.cx + 6} y={a.cy - 4} fontSize="12" fill={ACCENT} fontWeight={700}>
+        log₂
+      </text>
+      <text x={b.cx + 6} y={b.cy + 14} fontSize="12" fill={MUTED} fontWeight={700}>
+        log₁₀
+      </text>
+    </LogAxesFrame>
+  );
+}
+
 /* ── Chapter 9: Polynomial end behaviour, turns, horizontal meetings ─ */
 
 function PolyAxesFrame({
@@ -2540,6 +2790,11 @@ const FIGURES: Record<string, () => ReactNode> = {
   "poly-ends-even": PolyEndsEven,
   "poly-turning-points": PolyTurningPoints,
   "poly-horizontal-line": PolyHorizontalLine,
+  "exp-growth-decay": ExpGrowthDecay,
+  "exp-start-level": ExpStartLevel,
+  "exp-force": ExpForce,
+  "log-basic": LogBasic,
+  "log-bases": LogBases,
 
 };
 
