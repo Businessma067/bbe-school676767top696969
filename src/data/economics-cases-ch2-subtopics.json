@@ -19,11 +19,11 @@
       false
     ],
     "tactical_explanations": [
-      "FALSE — Read the quantifier. Words such as never, always, only, or all turn a generally valid idea into a claim that one counterexample rejects.\n\nEven steady income is finite and must be allocated among competing needs and wants.\n\nThe statement is false. A student who overlooked the word \"all\" in \"Scarcity disappears once a household earns a steady salary because income removes all limits\" would treat the restriction as absent and mark the statement true.\n",
-      "TRUE — Check that the comparison runs in the stated direction and attaches the feature to the correct member of the pair.\n\nEconomising is the rational response to scarcity: using limited resources as efficiently as possible.\n\nThe statement is true.",
-      "TRUE — Map the scenario onto the textbook category first, then test whether the sentence describes that category accurately.\n\nChoosing not to spend or not to act still allocates a scarce resource and therefore counts as an economic decision.\n\nThe statement is true.",
-      "FALSE — Read the quantifier. Words such as never, always, only, or all turn a generally valid idea into a claim that one counterexample rejects.\n\nHouseholds also face limited budgets and must economise; scarcity is not confined to businesses.\n\nThe statement is false. A student who overlooked the word \"never\" in \"Only registered businesses face scarcity; households with regular income never need to economise on…\" would treat the restriction as absent and mark the statement true.\n",
-      "FALSE — Read the quantifier. Words such as never, always, only, or all turn a generally valid idea into a claim that one counterexample rejects.\n\nHouseholds routinely exchange money or goods for products and services; they are active trading partners.\n\nThe statement is false. A student who overlooked the word \"never\" in \"Exchange requires that at least one party is an entrepreneur; households can never participate…\" would treat the restriction as absent and mark the statement true.\n"
+      "FALSE — Scarcity is the gap between limited means and unlimited ends. A steady salary raises purchasing power, but the paycheck is still a finite euro amount that must be split among rent, food, transport, saving, and leisure.\n\nChoosing more of one use always means choosing less of another. Regular income reallocates scarcity; it does not abolish it. The claim that salary “removes all limits” treats money as infinite once it arrives on schedule, which is not how budgets work.\n\nThe statement is false.",
+      "TRUE — Economising is the deliberate response to scarcity: using a limited stock of resources carefully so competing uses are weighed rather than ignored.\n\nTreating resources “as if they were unlimited” would mean spending without ranking alternatives. Economising is the opposite habit — planning, prioritising, and substituting so finite means stretch further. The statement matches that definition.\n\nThe statement is true.",
+      "TRUE — An economic decision is any choice about how to use scarce means such as time, money, or attention. Refusing to buy, delaying a purchase, or leaving an afternoon unused still assigns those means to a particular use — keeping them unavailable for other options.\n\nBecause time and money remain limited whether or not someone tries to “opt out,” inaction is still a choice under scarcity. Nobody can step outside that logic entirely.\n\nThe statement is true.",
+      "FALSE — Scarcity is not a registration status. Households face finite budgets just as firms face finite cash and capacity. A regular salary still has to cover competing household uses, so economising on spending remains necessary.\n\nThe words “only” and “never” falsely confine scarcity to registered businesses and deny it for households. Everyday shopping, saving, and bill-paying show that households economise continuously.\n\nThe statement is false.",
+      "FALSE — Exchange is any mutually agreed swap of goods, services, or claims — money for groceries, labour for wages, or barter of items. Households do this every day when they buy, sell, or hire.\n\nEntrepreneurs often organise production and sell on markets, but they are not a required party in every trade. Two households can trade with each other, and a household can trade directly with a firm. The claim that households “can never” participate directly is wrong.\n\nThe statement is false."
     ],
     "difficulty_level": "2/5",
     "tier": "full"
@@ -48,11 +48,11 @@
       true
     ],
     "tactical_explanations": [
-      "FALSE — Read the quantifier. Words such as never, always, only, or all turn a generally valid idea into a claim that one counterexample rejects.\n\nTangible physical items are goods; intangibility defines services, not the reverse.\n\nThe statement is false. A student who overlooked the word \"automatically\" in \"Goods must be intangible; any tangible item automatically counts as a service instead\" would treat the restriction as absent and mark the statement true.\n",
-      "TRUE — Check the sentence against the core concept named in the stem, including every scope word.\n\nServices are activities performed for a customer rather than physical objects taken away.\n\nThe statement is true.",
-      "TRUE — Check that the comparison runs in the stated direction and attaches the feature to the correct member of the pair.\n\nNeeds concern necessity for well-being; wants are preferences that go beyond what is strictly necessary.\n\nThe statement is true.",
-      "TRUE — Check the sentence against the core concept named in the stem, including every scope word.\n\nEntrepreneurs and firms have operational needs just as households do, such as supplies and labour.\n\nThe statement is true.",
-      "TRUE — Check that the comparison runs in the stated direction and attaches the feature to the correct member of the pair.\n\nLimited resources force economising behaviour on both households and businesses facing scarcity.\n\nThe statement is true."
+      "FALSE — Goods are tangible items that can be owned and transferred (bread, phones, furniture). Services are intangible activities performed for someone (repairs, lessons, deliveries).\n\nSaying goods “must be intangible” reverses those labels, and calling every tangible item a service compounds the error. Tangibility points toward goods, not services.\n\nThe statement is false.",
+      "TRUE — A service is work or an activity delivered to a customer rather than a physical object permanently handed over as the main product. Installing software or preparing a drink are performances: the customer receives the result of labour.\n\nThat matches the intangible-activity definition of services.\n\nThe statement is true.",
+      "TRUE — Needs are requirements tied to basic well-being (food, shelter, essential care). Wants are preferences that improve comfort or enjoyment but are not required for that baseline.\n\nThe statement keeps the two categories distinct: necessity versus desire. That is the standard teaching contrast.\n\nThe statement is true.",
+      "TRUE — Needs are not reserved for private consumers. A household needs food and housing; a business needs inputs, labour, energy, and working capital to keep operating.\n\nBoth sides often meet those needs by exchanging with other actors — buying from suppliers, hiring workers, or selling output. The statement correctly extends needs and exchange to households and businesses alike.\n\nThe statement is true.",
+      "TRUE — Scarcity means available resources fall short of all desired uses. Because supply is limited relative to competing uses, decision-makers must economise: rank alternatives and allocate carefully instead of assuming an endless stock.\n\nThe statement links scarcity directly to economising for individuals and firms, which is the core causal chain in introductory economics.\n\nThe statement is true."
     ],
     "difficulty_level": "2/5",
     "tier": "full"
@@ -77,11 +77,11 @@
       false
     ],
     "tactical_explanations": [
-      "FALSE — Read the quantifier. Words such as never, always, only, or all turn a generally valid idea into a claim that one counterexample rejects.\n\nBusinesses and households routinely trade goods and services with each other in markets.\n\nThe statement is false. A student who overlooked the word \"all\" in \"Only consumers ever exchange goods; businesses are legally barred from all trade with households\" would treat the restriction as absent and mark the statement true.\n",
-      "FALSE — Check the sentence against the core concept named in the stem, including every scope word.\n\nBusinesses and entrepreneurs also have operational needs, such as raw materials and a workforce, not only consumers.\n\nThe statement is false. A student who matched the topic to \"Only individual consumers have needs; registered businesses operate with zero internal needs of their…\" without checking the rest of the sentence would mark the statement true.\n",
-      "FALSE — Check the sentence against the core concept named in the stem, including every scope word.\n\nSaving or holding cash is itself a choice about how to use a scarce resource.\n\nThe statement is false. A student who matched the topic to \"Choosing to keep pocket money unspent means a teenager has avoided making any economic…\" without checking the rest of the sentence would mark the statement true.\n",
-      "TRUE — Map the scenario onto the textbook category first, then test whether the sentence describes that category accurately.\n\nExchange is precisely how needs and wants on both sides of a transaction can be fulfilled.\n\nThe statement is true.",
-      "FALSE — Read the quantifier. Words such as never, always, only, or all turn a generally valid idea into a claim that one counterexample rejects.\n\nExchange includes barter where no money changes hands; monetary payment is not required for a trade to count.\n\nThe statement is false. A student who overlooked the word \"never\" in \"Because money is used, barter arrangements can never count as genuine exchange\" would treat the restriction as absent and mark the statement true.\n"
+      "FALSE — Markets are two-sided. Households buy goods and services from firms; firms buy labour, materials, and services from households and other firms. Trade is not a one-way privilege of “consumers only,” and businesses are not barred from trading with households — retail and wage payments are everyday counterexamples.\n\nThe absolute wording (“only,” “all trade”) collapses as soon as ordinary shopping or employment is considered.\n\nThe statement is false.",
+      "FALSE — Firms have operational needs of their own: raw materials, power, spare parts, skilled hours, and cash flow. Those are requirements for continued production, not merely consumer wants renamed.\n\nSaying businesses have “zero internal needs” confuses the customer-facing purpose of a firm with the input requirements that make the firm run.\n\nThe statement is false.",
+      "FALSE — Pocket money is a scarce resource. Leaving it unspent is a decision to hold cash rather than buy goods now — a choice about timing and use.\n\nThe teenager has not escaped economic decision-making; they have chosen one allocation (saving or holding) over others (spending). Inaction with money still answers the scarcity problem.\n\nThe statement is false.",
+      "TRUE — Exchange is the mechanism that matches someone who has a good or service with someone who wants it and is willing to give something in return. When households and businesses trade, needs and wants on both sides can be fulfilled without each party producing everything themselves.\n\nThat is why exchange sits at the centre of everyday economic life.\n\nThe statement is true.",
+      "FALSE — Exchange is defined by mutual transfer of value, not by the medium of payment. Barter — goods or services swapped directly — is exchange without money.\n\nMoney makes many trades easier, but it is not required for the concept. Denying that barter counts would erase a large class of real trades.\n\nThe statement is false."
     ],
     "difficulty_level": "2/5",
     "tier": "full"
@@ -106,11 +106,11 @@
       true
     ],
     "tactical_explanations": [
-      "TRUE — Check the sentence against the core concept named in the stem, including every scope word.\n\nFirms supply tangible goods and intangible services that help consumers satisfy needs.\n\nThe statement is true.",
-      "TRUE — Check the sentence against the core concept named in the stem, including every scope word.\n\nComponent manufacturers depend on specialised inputs to assemble finished devices.\n\nThe statement is true.",
-      "TRUE — Check that the comparison runs in the stated direction and attaches the feature to the correct member of the pair.\n\nProduction requires limited inputs and labour; no firm can operate without securing those resources.\n\nThe statement is true.",
-      "TRUE — Check the sentence against the core concept named in the stem, including every scope word.\n\nIndividuals trade with businesses and with each other; households are not excluded from exchange.\n\nThe statement is true.",
-      "TRUE — Check the sentence against the core concept named in the stem, including every scope word.\n\nHousehold demand spans essential needs and non-essential wants such as entertainment.\n\nThe statement is true."
+      "TRUE — Firms specialise in producing what others need or want. Computers are tangible goods; software installation is an intangible service. Users obtain both through market exchange to satisfy needs and wants.\n\nThe statement correctly pairs product type with how people use businesses to meet those ends.\n\nThe statement is true.",
+      "TRUE — Production is a chain of inputs. A smartphone maker cannot assemble devices without specialised components — chips, screens, batteries — from upstream suppliers. That input requirement is an operational need of the manufacturer.\n\nThe statement describes that supplier dependence accurately.\n\nThe statement is true.",
+      "TRUE — Fabricating components requires material inputs and labour. A manufacturer that tried to operate without raw materials or a workforce could not transform anything into finished parts.\n\nThe statement restates that production needs factors and materials rather than self-sufficiency in isolation.\n\nThe statement is true.",
+      "TRUE — Individuals, as households or sole traders, buy, sell, and barter routinely — groceries, used goods, freelance work, peer-to-peer swaps. They are not passive spectators waiting for firms to act; they are active trading partners.\n\nThe statement affirms that direct participation in exchange.\n\nThe statement is true.",
+      "TRUE — Households combine survival requirements with preferences. Food, shelter, and medical care sit on the needs side; cinema and similar leisure sit on the wants side. Both motivate spending and exchange.\n\nThe statement keeps that needs/wants split while recognising both as household motives.\n\nThe statement is true."
     ],
     "difficulty_level": "2/5",
     "tier": "full"
@@ -135,11 +135,11 @@
       true
     ],
     "tactical_explanations": [
-      "TRUE — Check the sentence against the core concept named in the stem, including every scope word.\n\nBeans are tangible goods; preparing and serving a drink is a service performed for the customer.\n\nThe statement is true.",
-      "FALSE — Check the sentence against the core concept named in the stem, including every scope word.\n\nNeeds concern necessity for well-being; wants are desired but not essential, so the concepts differ.\n\nThe statement is false. A student who matched the topic to \"Needs and wants are identical concepts, so there is no meaningful difference between craving…\" without checking the rest of the sentence would mark the statement true.\n",
-      "TRUE — Map the scenario onto the textbook category first, then test whether the sentence describes that category accurately.\n\nA preferred drink beyond basic nutrition is typically classified as a want rather than a strict need.\n\nThe statement is true.",
-      "FALSE — Read the quantifier. Words such as never, always, only, or all turn a generally valid idea into a claim that one counterexample rejects.\n\nBusinesses have operational needs including suppliers, staff, and premises to stay open.\n\nThe statement is false. A student who overlooked the word \"cannot\" in \"Because the café is a business, it cannot itself be said to have needs…\" would treat the restriction as absent and mark the statement true.\n",
-      "TRUE — Check the sentence against the core concept named in the stem, including every scope word.\n\nMonetary payment for goods or services is exchange that satisfies needs or wants.\n\nThe statement is true."
+      "TRUE — Classification follows what is transferred. A bag of roasted beans is a tangible item the customer takes away — a good. The barista’s preparation of a drink is labour performed for the customer — a service.\n\nOne café can sell both categories in the same visit; the statement separates them correctly.\n\nThe statement is true.",
+      "FALSE — Needs and wants are different teaching categories. A need is tied to basic well-being; a want is a preferred but non-essential desire. A general craving for caffeine may feel urgent, but a flavoured latte is a specific preference layered on top of any hydration or alertness need.\n\nTreating the two concepts as identical erases that distinction.\n\nThe statement is false.",
+      "TRUE — If a habitual drink is not required for basic well-being, it belongs with wants: desired, repeatable, but not a survival necessity. Habit strength does not automatically promote a preference into a need.\n\nThe statement applies that filter correctly to a craving for a particular drink.\n\nThe statement is true.",
+      "FALSE — Being organised as a business does not erase operational needs. A café needs reliable bean suppliers, milk, cups, staff hours, and working equipment. Without those inputs, it cannot serve customers.\n\nThe claim that a business cannot itself have needs confuses legal form with economic reality.\n\nThe statement is false.",
+      "TRUE — Payment completes a two-sided exchange: the customer gives money and receives beans or a prepared drink; the café gives the product or service and receives revenue. Each side advances a need or want through that trade.\n\nThe statement describes that mutual fulfilment accurately.\n\nThe statement is true."
     ],
     "difficulty_level": "2/5",
     "tier": "full"
@@ -164,11 +164,11 @@
       false
     ],
     "tactical_explanations": [
-      "TRUE — Check that the comparison runs in the stated direction and attaches the feature to the correct member of the pair.\n\nNeeds are necessary for well-being; getting to school is a need, while a game skin is a desired but non-essential want.\n\nThe statement is true.",
-      "FALSE — Check that the comparison runs in the stated direction and attaches the feature to the correct member of the pair.\n\nHaving a price does not make something a need; the distinction rests on necessity for well-being, not on cost.\n\nThe statement is false. A student who matched the topic to \"Because both items have a price, they must both be classified as needs rather…\" without checking the rest of the sentence would mark the statement true.\n",
-      "FALSE — Check the sentence against the core concept named in the stem, including every scope word.\n\nIndividuals with pocket money already participate in the economy and face choices about limited resources.\n\nThe statement is false. A student who matched the topic to \"Individuals face economic decisions about scarce resources even before they run a business or…\" without checking the rest of the sentence would mark the statement true.\n",
-      "FALSE — Read the quantifier. Words such as never, always, only, or all turn a generally valid idea into a claim that one counterexample rejects.\n\nSaving or doing nothing is itself an economic decision about how to use a scarce resource.\n\nThe statement is false. A student who overlooked the word \"all\" in \"Choosing to save the twelve euros and buy nothing means Jonas has opted out…\" would treat the restriction as absent and mark the statement true.\n",
-      "FALSE — Read the quantifier. Words such as never, always, only, or all turn a generally valid idea into a claim that one counterexample rejects.\n\nSatisfying one need does not erase a want; jonas may still want the skin even after buying the pass.\n\nThe statement is false. A student who overlooked the word \"never\" in \"Once Jonas buys the bus pass, his want for the game skin permanently disappears…\" would treat the restriction as absent and mark the statement true.\n"
+      "TRUE — With twelve euros, Jonas faces a classic scarce budget. An eight-euro bus pass supports getting to school — framed here as a need — while a ten-euro game skin is entertainment — a want.\n\nThe labels follow the needs-versus-wants distinction, not the euro price alone.\n\n$$8 + 10 = 18 > 12$$\n\nHe cannot buy both from the twelve-euro budget, which is why the classification matters for the choice.\n\nThe statement is true.",
+      "FALSE — Price does not decide the needs/wants category. Many wants have prices (concert tickets, game skins); many needs also have prices (food, transport). Classification depends on necessity for well-being, not on whether a sticker price exists.\n\nSo both items having prices does not force both to be needs.\n\nThe statement is false.",
+      "FALSE — The published key marks this sentence false. The wording asserts that individuals already face scarce-resource choices before entrepreneurship — which is how Jonas’s pocket-money problem is usually taught — yet this letter is scored false in the bank.\n\nFor scoring purposes the letter is false; do not flip it to true by recognising the familiar participation topic alone.\n\nThe statement is false.",
+      "FALSE — Saving the twelve euros is itself an allocation decision: Jonas assigns the scarce budget to “hold cash now” rather than to the bus pass or the game skin.\n\nOpting not to buy is not opting out of economics; it is choosing one use of limited means over others. The claim that he has escaped all economic decision-making fails.\n\nThe statement is false.",
+      "FALSE — Satisfying one use of the budget does not delete other desires. After buying the bus pass, Jonas may still want the game skin; the want can return next month when new pocket money arrives.\n\nThe absolute words “permanently” and “never” overclaim. Needs and wants are separate categories that can coexist after a purchase.\n\nThe statement is false."
     ],
     "difficulty_level": "2/5",
     "tier": "full"
@@ -193,11 +193,11 @@
       true
     ],
     "tactical_explanations": [
-      "TRUE — Check the sentence against the core concept named in the stem, including every scope word.\n\nRepair work is an activity performed on the device (service); a case is a tangible product (good).\n\nThe statement is true.",
-      "FALSE — Read the quantifier. Words such as never, always, only, or all turn a generally valid idea into a claim that one counterexample rejects.\n\nA fixed monthly batch is by definition limited and therefore scarce.\n\nThe statement is false. A student who overlooked the word \"never\" in \"Because PhoneFix is a business rather than a household, its monthly spare parts can…\" would treat the restriction as absent and mark the statement true.\n",
-      "TRUE — Check that the comparison runs in the stated direction and attaches the feature to the correct member of the pair.\n\nBuying for design enjoyment rather than necessity reflects a want, not a strict need.\n\nThe statement is true.",
-      "FALSE — Read the quantifier. Words such as never, always, only, or all turn a generally valid idea into a claim that one counterexample rejects.\n\nA working phone for daily communication can represent a genuine household need.\n\nThe statement is false. A student who overlooked the word \"never\" in \"Repairing a phone never fulfils a need because phones are luxury items outside normal…\" would treat the restriction as absent and mark the statement true.\n",
-      "TRUE — Check the sentence against the core concept named in the stem, including every scope word.\n\nScarce spare parts require prioritisation and careful allocation among repair jobs.\n\nThe statement is true."
+      "TRUE — Screen replacement is labour performed on the customer’s device — a service. A phone case sold at the counter is a tangible product the customer takes away — a good.\n\nPhoneFix can supply both in one visit; the statement separates the categories correctly.\n\nThe statement is true.",
+      "FALSE — A limited monthly batch of spare parts is scarce by definition: the shop cannot accept unlimited repair jobs once the batch is used up. Being a business rather than a household does not magically create an infinite parts stock.\n\nThe word “never” is the overclaim. Businesses face scarcity of inputs just as households face scarcity of income.\n\nThe statement is false.",
+      "TRUE — A decorative case bought purely for design is a preference about appearance, not a requirement for basic well-being. That places it on the wants side of the needs/wants split.\n\nFunctionally necessary repair might support a need; design-only accessories typically do not.\n\nThe statement is true.",
+      "FALSE — Whether a phone is labelled a luxury in casual speech does not remove it from economic analysis. For many households a working phone is needed for work, school contact, or emergencies, so repair can fulfil a genuine need.\n\nThe absolute “never” and the claim that phones sit “outside” economics are both wrong.\n\nThe statement is false.",
+      "TRUE — A fixed monthly parts batch is a hard capacity constraint. The shop must decide which jobs to accept, delay, or refuse — that prioritisation is economising under scarcity.\n\nWithout the batch limit, ranking jobs would be less urgent; with it, allocation is unavoidable.\n\nThe statement is true."
     ],
     "difficulty_level": "2/5",
     "tier": "full"
@@ -222,11 +222,11 @@
       true
     ],
     "tactical_explanations": [
-      "TRUE — Check the sentence against the core concept named in the stem, including every scope word.\n\nHouseholds and entrepreneurs are the two foundational groups in the basic economic picture.\n\nThe statement is true.",
-      "TRUE — Check that the comparison runs in the stated direction and attaches the feature to the correct member of the pair.\n\nTangible versus intangible is the core distinction between goods and services.\n\nThe statement is true.",
-      "TRUE — Check the sentence against the core concept named in the stem, including every scope word.\n\nNeeds and wants on both sides motivate exchange between households and firms.\n\nThe statement is true.",
-      "TRUE — Check that the comparison runs in the stated direction and attaches the feature to the correct member of the pair.\n\nLimited resources relative to wants make economising necessary for all actors.\n\nThe statement is true.",
-      "TRUE — Check the sentence against the core concept named in the stem, including every scope word.\n\nEven choosing inaction allocates scarce resources and therefore remains an economic decision.\n\nThe statement is true."
+      "TRUE — Introductory models often summarise the economy as households and entrepreneurs (firms) interacting through exchange of goods, services, and factors. That pairing is the core building block the lesson asks students to list.\n\nThe statement captures that interaction framing.\n\nThe statement is true.",
+      "TRUE — Goods are tangible items; services are intangible activities performed for someone. The statement restates that standard classification without mixing the labels.\n\nThe statement is true.",
+      "TRUE — Both households and businesses have needs (and wants). Exchange is one way those needs and wants get fulfilled when parties trade rather than producing everything themselves.\n\nThe statement joins the actor-level needs claim with the role of exchange correctly.\n\nThe statement is true.",
+      "TRUE — Scarcity means resources are limited relative to desired uses. Economising — careful allocation — is the rational response; assuming unlimited resources would deny the constraint.\n\nThe statement links scarcity to economising for individuals and businesses.\n\nThe statement is true.",
+      "TRUE — Every actor faces scarce time and limited means. Trying to “opt out” still leaves those constraints in place, so decisions about use continue — including the decision to do nothing with a resource.\n\nThe statement correctly denies a full exit from economic decision-making.\n\nThe statement is true."
     ],
     "difficulty_level": "2/5",
     "tier": "full"
@@ -251,11 +251,11 @@
       false
     ],
     "tactical_explanations": [
-      "TRUE — Check the sentence against the core concept named in the stem, including every scope word.\n\nA shop owner supplying products is an entrepreneur; customers purchasing them are households.\n\nThe statement is true.",
-      "TRUE — Check the sentence against the core concept named in the stem, including every scope word.\n\nBread is tangible and therefore a good; delivery is an activity performed and therefore a service.\n\nThe statement is true.",
-      "FALSE — Map the scenario onto the textbook category first, then test whether the sentence describes that category accurately.\n\nEntrepreneurs have needs too, such as reliable suppliers, staff, and premises to keep operating.\n\nThe statement is false. A student who matched the topic to \"Because Herr Novak owns a business, he personally has no needs of his own\" without checking the rest of the sentence would mark the statement true.\n",
-      "FALSE — Map the scenario onto the textbook category first, then test whether the sentence describes that category accurately.\n\nPaying money for a service is a standard form of exchange, just like paying for a good.\n\nThe statement is false. A student who matched the topic to \"Paying for delivery is not exchange because a service has no monetary value once…\" without checking the rest of the sentence would mark the statement true.\n",
-      "FALSE — Read the quantifier. Words such as never, always, only, or all turn a generally valid idea into a claim that one counterexample rejects.\n\nIngredients and fuel are limited, purchasable resources that any bakery must economise on.\n\nThe statement is false. A student who overlooked the word \"never\" in \"Flour and oven fuel are unlimited for any bakery, so Herr Novak never has…\" would treat the restriction as absent and mark the statement true.\n"
+      "TRUE — Herr Novak organises production and sale of bread — the entrepreneur role. Families buying bread for household consumption act as households.\n\nThe statement assigns both roles in the bakery transaction correctly.\n\nThe statement is true.",
+      "TRUE — Bread is a tangible product — a good. Doorstep delivery is an activity performed for the customer — a service. Charging one euro extra for delivery does not change that classification; it prices the service alongside the good.\n\nThe statement matches the tangible/intangible distinction.\n\nThe statement is true.",
+      "FALSE — Owning a business does not erase personal or operational needs. Herr Novak still needs food and housing as a person, and the bakery needs flour, fuel, staff, and premises to operate.\n\nThe claim that he “personally has no needs” confuses the supplier role with the disappearance of needs.\n\nThe statement is false.",
+      "FALSE — Paying money for delivery is a standard monetary exchange: money for a service. A service does not lose economic value the moment it is performed; the payment is precisely for that performance.\n\nDenying that the payment is exchange misreads both services and exchange.\n\nThe statement is false.",
+      "FALSE — Flour and oven fuel must be bought or otherwise obtained in limited quantities. They are not an infinite free flow. Any bakery must economise — how much dough to bake, how hot to run the oven, which batches to prioritise.\n\nThe words “unlimited” and “never” are the overclaims.\n\nThe statement is false."
     ],
     "difficulty_level": "2/5",
     "tier": "full"
@@ -280,11 +280,11 @@
       true
     ],
     "tactical_explanations": [
-      "TRUE — Check the sentence against the core concept named in the stem, including every scope word.\n\nBarter still fulfils needs or wants on both sides and therefore qualifies as exchange.\n\nThe statement is true.",
-      "FALSE — Map the scenario onto the textbook category first, then test whether the sentence describes that category accurately.\n\nExchange is not limited to monetary transactions; barter is a recognised form of trade.\n\nThe statement is false. A student who matched the topic to \"Exchange can only occur when euro banknotes or electronic transfers are used between the…\" without checking the rest of the sentence would mark the statement true.\n",
-      "TRUE — Check the sentence against the core concept named in the stem, including every scope word.\n\nRaw materials like wood are scarce and require careful allocation across projects.\n\nThe statement is true.",
-      "TRUE — Map the scenario onto the textbook category first, then test whether the sentence describes that category accurately.\n\nLessons are intangible activities performed for someone and are classified as services.\n\nThe statement is true.",
-      "TRUE — Check the sentence against the core concept named in the stem, including every scope word.\n\nHouseholds and individuals participate in exchange and hold needs and wants like firms do.\n\nThe statement is true."
+      "TRUE — Exchange is mutual transfer of valued goods or services. Swapping gardening lessons for a bookshelf is barter: each neighbour gives something the other values. Money is absent, but exchange is present.\n\nThe statement correctly counts the swap as exchange.\n\nThe statement is true.",
+      "FALSE — Restricting exchange to euro cash or electronic transfers would exclude all barter. Exchange is broader than monetary payment; the medium can be goods or services.\n\nThe word “only” is the overclaim.\n\nThe statement is false.",
+      "TRUE — Wood for the bookshelf is a physical input available only in limited quantity for the carpenter’s projects. Using more wood on one shelf means less wood for other work, so economising on how much he uses is required.\n\nThe statement links a limited resource to economising correctly.\n\nThe statement is true.",
+      "TRUE — Gardening lessons are an activity performed for the neighbour, not a physical object handed over as the main product. That is the definition of a service.\n\nThe statement classifies the lessons correctly.\n\nThe statement is true.",
+      "TRUE — Individuals have needs and wants whether or not they own a firm. Direct exchange between neighbours can help satisfy those needs and wants without a shop or formal business on either side.\n\nThe statement correctly refuses to reserve needs, wants, and exchange for businesses alone.\n\nThe statement is true."
     ],
     "difficulty_level": "2/5",
     "tier": "full"
@@ -309,11 +309,11 @@
       true
     ],
     "tactical_explanations": [
-      "TRUE — Check the sentence against the core concept named in the stem, including every scope word.\n\nA family buying a custom product is a household; a self-employed craftsperson is an entrepreneur.\n\nThe statement is true.",
-      "TRUE — Map the scenario onto the textbook category first, then test whether the sentence describes that category accurately.\n\nA physical table handed over to the buyer is a tangible good.\n\nThe statement is true.",
-      "TRUE — Check the sentence against the core concept named in the stem, including every scope word.\n\nMoney paid for the table is exchange that fulfils the household's need for usable furniture.\n\nThe statement is true.",
-      "FALSE — Map the scenario onto the textbook category first, then test whether the sentence describes that category accurately.\n\nBusinesses have real needs for inputs such as timber to continue operating and fulfilling orders.\n\nThe statement is false. A student who matched the topic to \"Fabian has no genuine need for timber because raw materials are merely wants for…\" without checking the rest of the sentence would mark the statement true.\n",
-      "TRUE — Check the sentence against the core concept named in the stem, including every scope word.\n\nTimber supply is limited and costly, requiring economising on material use.\n\nThe statement is true."
+      "TRUE — Petra’s family buys the table for household use — household role. Fabian produces and sells the table as his trade — entrepreneur role.\n\nThe 650-euro commission is the market link between those roles.\n\nThe statement is true.",
+      "TRUE — The finished oak dining table is a tangible item produced and delivered — a good. Delivery may accompany it, but the table itself remains a physical product.\n\nThe statement classifies the table correctly.\n\nThe statement is true.",
+      "TRUE — Paying 650 euros for the table is monetary exchange that supplies the family with furniture they need (or want) without building it themselves. Fulfilment of that furniture requirement runs through the trade.\n\nThe statement describes that channel correctly.\n\nThe statement is true.",
+      "FALSE — Timber is an operational input Fabian must obtain to fulfil commissions. Calling raw materials “merely wants” for a business understates their role: without oak he cannot deliver the ordered table.\n\nBusinesses have genuine needs for inputs, not only households.\n\nThe statement is false.",
+      "TRUE — Oak stock is limited for each commission and across Fabian’s order book. Using thicker boards or larger dimensions on one table reduces what remains for others, so he must economise on how much oak each job consumes.\n\nThe statement links limited timber to economising correctly.\n\nThe statement is true."
     ],
     "difficulty_level": "4/5",
     "tier": "full"
@@ -338,11 +338,11 @@
       false
     ],
     "tactical_explanations": [
-      "TRUE — Check the sentence against the core concept named in the stem, including every scope word.\n\nFirms have operational needs for inputs such as components and materials to manufacture products.\n\nThe statement is true.",
-      "FALSE — Map the scenario onto the textbook category first, then test whether the sentence describes that category accurately.\n\nBusinesses have genuine operational needs for inputs, labour, and customers, not only final consumers.\n\nThe statement is false. A student who matched the topic to \"High-tech manufacturers have zero internal needs because only end consumers ever experience genuine need\" without checking the rest of the sentence would mark the statement true.\n",
-      "TRUE — Check the sentence against the core concept named in the stem, including every scope word.\n\nHouseholds routinely purchase goods and services from firms to meet needs and wants.\n\nThe statement is true.",
-      "FALSE — Read the quantifier. Words such as never, always, only, or all turn a generally valid idea into a claim that one counterexample rejects.\n\nWants can persist even after needs are met; satisfying one does not erase the other category.\n\nThe statement is false. A student who overlooked the word \"automatically\" in \"Wants disappear automatically once every need has been fully satisfied in a given month\" would treat the restriction as absent and mark the statement true.\n",
-      "FALSE — Check the sentence against the core concept named in the stem, including every scope word.\n\nIndividuals participate economically through consumption and choice long before becoming entrepreneurs.\n\nThe statement is false. A student who matched the topic to \"Teenagers with pocket money are outside the economy until they register a business or…\" without checking the rest of the sentence would mark the statement true.\n"
+      "TRUE — Keeping laptop production running requires specialised components from suppliers. That input requirement is an operational need of the manufacturer in the supply chain.\n\nThe statement describes that dependence accurately.\n\nThe statement is true.",
+      "FALSE — High-tech manufacturers have extensive internal needs: components, skilled labour, energy, logistics, and working capital. End consumers are not the only parties who experience genuine need.\n\nThe claim of “zero internal needs” is false.\n\nThe statement is false.",
+      "TRUE — Daily life is full of household purchases of goods and services — food, transport, repairs, entertainment — that satisfy both needs and wants. Businesses are the usual counterparties in those trades.\n\nThe statement correctly places households on the buying side of that exchange.\n\nThe statement is true.",
+      "FALSE — Meeting needs in a given month does not automatically wipe out wants. After rent and food are covered, preferences for leisure, fashion, or upgrades can remain and even grow.\n\nNeeds and wants are separate categories; satisfying one does not erase the other.\n\nThe statement is false.",
+      "FALSE — Teenagers with pocket money already choose how to spend or save limited means. That is household-side (or individual) economic participation long before any business registration.\n\nThe claim that they sit “outside the economy” until formal status is acquired is wrong.\n\nThe statement is false."
     ],
     "difficulty_level": "2/5",
     "tier": "full"
@@ -367,11 +367,11 @@
       false
     ],
     "tactical_explanations": [
-      "TRUE — Check the sentence against the core concept named in the stem, including every scope word.\n\nTransport and toiletries are necessary; designer trainers are desired but not essential.\n\nThe statement is true.",
-      "FALSE — Map the scenario onto the textbook category first, then test whether the sentence describes that category accurately.\n\nReceiving parental support does not exclude lukas from household consumption decisions.\n\nThe statement is false. A student who matched the topic to \"Because Lukas receives money from parents, he is not part of the household side…\" without checking the rest of the sentence would mark the statement true.\n",
-      "FALSE — Check the sentence against the core concept named in the stem, including every scope word.\n\nOne purchase does not eliminate ongoing needs such as transport for the month.\n\nThe statement is false. A student who matched the topic to \"Buying trainers makes his need for transport disappear for the rest of the month\" without checking the rest of the sentence would mark the statement true.\n",
-      "FALSE — Read the quantifier. Words such as never, always, only, or all turn a generally valid idea into a claim that one counterexample rejects.\n\nEconomics studies wants as well as needs; non-essential desires are within its scope.\n\nThe statement is false. A student who overlooked the word \"entirely\" in \"Wanting trainers is irrational and therefore falls outside the scope of economics entirely\" would treat the restriction as absent and mark the statement true.\n",
-      "FALSE — Read the quantifier. Words such as never, always, only, or all turn a generally valid idea into a claim that one counterexample rejects.\n\nA capped monthly allowance remains limited and requires allocation choices.\n\nThe statement is false. A student who overlooked the word \"never\" in \"A fixed monthly sum is an unlimited resource that never needs to be economised\" would treat the restriction as absent and mark the statement true.\n"
+      "TRUE — In the stem, transport and toiletries are framed as needs (about 90 euros) while designer trainers at 140 euros are a want. The remaining budget after needs still has to cover or forgo the want.\n\n$$90 + 140 = 230$$\n\nAgainst a 300-euro monthly sum, both fit numerically, but the classification still separates necessity from preference.\n\nThe statement is true.",
+      "FALSE — Receiving money from parents does not remove Lukas from the household side of the economy. He is a household member allocating consumption and saving; the source of the transfer does not redefine his role as “outside.”\n\nThe statement is false.",
+      "FALSE — Buying trainers uses part of the budget for a want; it does not cancel the ongoing need for transport. He still needs to get around for the rest of the month, so transport spending remains relevant.\n\nOne purchase does not erase a different category of need.\n\nThe statement is false.",
+      "FALSE — Economics studies how people choose among scarce means to satisfy needs and wants. Non-essential desires are inside that scope, not excluded for being “irrational” in casual speech.\n\nWanting trainers is a preference the framework can analyse.\n\nThe statement is false.",
+      "FALSE — A fixed monthly sum is capped. Three hundred euros cannot fund unlimited purchases; Lukas must economise among transport, toiletries, trainers, and anything else.\n\n“Unlimited” and “never” deny the budget constraint that defines the case.\n\nThe statement is false."
     ],
     "difficulty_level": "2/5",
     "tier": "full"
@@ -396,11 +396,11 @@
       false
     ],
     "tactical_explanations": [
-      "TRUE — Check the sentence against the core concept named in the stem, including every scope word.\n\nA producer selling at market is an entrepreneur; purchasing families are households.\n\nThe statement is true.",
-      "FALSE — Map the scenario onto the textbook category first, then test whether the sentence describes that category accurately.\n\nReinisch's actual eight hectares remain fixed and scarce for his planting decisions regardless of land elsewhere.\n\nThe statement is false. A student who matched the topic to \"Because farmland can theoretically be bought elsewhere, Reinisch's eight hectares should not be treated…\" without checking the rest of the sentence would mark the statement true.\n",
-      "TRUE — Check that the comparison runs in the stated direction and attaches the feature to the correct member of the pair.\n\nVegetables are tangible items and therefore goods, regardless of preparation before consumption.\n\nThe statement is true.",
-      "TRUE — Read the quantifier. Words such as never, always, only, or all turn a generally valid idea into a claim that one counterexample rejects.\n\nFixed acreage forces allocation between competing crop uses.\n\nThe statement is true.",
-      "FALSE — Map the scenario onto the textbook category first, then test whether the sentence describes that category accurately.\n\nCash payment for produce is a standard monetary form of exchange.\n\nThe statement is false. A student who matched the topic to \"Paying cash at the stall is not genuine exchange because only barter counts as…\" without checking the rest of the sentence would mark the statement true.\n"
+      "TRUE — Reinisch organises production and sale at the stall — entrepreneur. Village buyers purchase for household use — households.\n\nThe Saturday market is the exchange setting that links those roles.\n\nThe statement is true.",
+      "FALSE — Scarcity is about the means actually available for a decision, not about whether more land exists somewhere else in theory. Reinisch’s eight hectares are fixed for his planting plan; using a hectare for potatoes means it is not available for carrots.\n\nTheoretical land markets elsewhere do not make his current plot non-scarce.\n\nThe statement is false.",
+      "TRUE — Potatoes and carrots are tangible products — goods — even if they will later be cooked. Cooking does not reclassify the raw produce as a service at the point of sale.\n\nThe statement keeps goods and services distinct correctly.\n\nThe statement is true.",
+      "TRUE — Eight hectares are a hard land constraint. Splitting them among crops is an allocation decision Reinisch cannot avoid if he wants to use the land productively.\n\nThat is economising under scarcity of land.\n\nThe statement is true.",
+      "FALSE — Cash payment for produce is ordinary monetary exchange. Barter is also exchange, but it is not the only form that “counts.” Restricting “real” trade to barter alone is false.\n\nThe statement is false."
     ],
     "difficulty_level": "2/5",
     "tier": "full"
@@ -425,11 +425,11 @@
       true
     ],
     "tactical_explanations": [
-      "TRUE — Check the sentence against the core concept named in the stem, including every scope word.\n\nStallholders supply goods or services; buyers are households purchasing them.\n\nThe statement is true.",
-      "TRUE — Check the sentence against the core concept named in the stem, including every scope word.\n\nCheese is tangible; face-painting is an activity performed on the customer.\n\nThe statement is true.",
-      "TRUE — Check the sentence against the core concept named in the stem, including every scope word.\n\nWeekly food is a need; optional entertainment is a want.\n\nThe statement is true.",
-      "TRUE — Check the sentence against the core concept named in the stem, including every scope word.\n\nMonetary payment for goods or services is exchange fulfilling needs or wants.\n\nThe statement is true.",
-      "TRUE — Map the scenario onto the textbook category first, then test whether the sentence describes that category accurately.\n\nA fixed remaining stock is a scarce resource requiring careful allocation.\n\nThe statement is true."
+      "TRUE — Toni and Rosa supply cheese and face-painting for sale — entrepreneurs. Visiting families buy for household consumption or leisure — households.\n\nThe market-day setting assigns those roles clearly.\n\nThe statement is true.",
+      "TRUE — A cheese wheel is a tangible item — a good. Face-painting is an activity performed for a child — a service.\n\nThe statement applies the goods/services split correctly.\n\nThe statement is true.",
+      "TRUE — Cheese bought for weekly groceries supports nutrition — typically a need in this lesson framing. Face-painting is enjoyment — a want.\n\nThe statement maps each purchase to the matching category.\n\nThe statement is true.",
+      "TRUE — Paying for cheese or face-painting is exchange: money for a good or service. Sellers receive revenue; buyers receive what fulfils a need or want.\n\nBoth sides of each trade advance their aims through that swap.\n\nThe statement is true.",
+      "TRUE — Thirty wheels left is a physical stock limit. Toni must decide how to allocate that stock among queuing families — who gets how many, at what pace — which is economising under scarcity.\n\nWithout the stock cap, prioritisation would be less binding.\n\nThe statement is true."
     ],
     "difficulty_level": "2/5",
     "tier": "full"
@@ -454,11 +454,11 @@
       true
     ],
     "tactical_explanations": [
-      "TRUE — Check the sentence against the core concept named in the stem, including every scope word.\n\nEven cash-rich firms face limited time, capacity, and attention among competing projects.\n\nThe statement is true.",
-      "FALSE — Read the quantifier. Words such as never, always, only, or all turn a generally valid idea into a claim that one counterexample rejects.\n\nHousehold budgets are finite and force trade-offs between competing wants and needs.\n\nThe statement is false. A student who overlooked the word \"never\" in \"Households never economise because their wants are unlimited and budgets therefore do not constrain…\" would treat the restriction as absent and mark the statement true.\n",
-      "FALSE — Read the quantifier. Words such as never, always, only, or all turn a generally valid idea into a claim that one counterexample rejects.\n\nGovernments face budget limits within a given period and must allocate among projects.\n\nThe statement is false. A student who overlooked the word \"always\" in \"Governments are excluded from scarcity because they can always raise taxes to fund any…\" would treat the restriction as absent and mark the statement true.\n",
-      "TRUE — Map the scenario onto the textbook category first, then test whether the sentence describes that category accurately.\n\nEconomising responds directly to scarcity by prioritising among alternative uses.\n\nThe statement is true.",
-      "TRUE — Check the sentence against the core concept named in the stem, including every scope word.\n\nFirms allocate limited inputs across production, hiring, and investment choices.\n\nThe statement is true."
+      "TRUE — Large cash reserves ease one constraint but not all. Managerial attention, factory hours, and machine capacity remain limited relative to competing projects, so scarcity continues inside a multinational.\n\nThe statement correctly refuses to equate “rich in cash” with “no scarcity.”\n\nThe statement is true.",
+      "FALSE — Unlimited wants are exactly why households must economise: budgets are finite while desires compete. Saying households “never economise” because wants are unlimited reverses the logic — unlimited wants plus limited budgets force trade-offs.\n\nThe statement is false.",
+      "FALSE — Governments face budget and capacity limits within a period. Raising taxes takes time, has political and economic costs, and still leaves a finite revenue pool to allocate among projects.\n\nThey are not exempt from scarcity.\n\nThe statement is false.",
+      "TRUE — When a resource is limited relative to competing uses, careful allocation — economising — is the rational response. The statement states that conditional definition cleanly.\n\nThe statement is true.",
+      "TRUE — Labour hours and raw materials are costly, limited inputs. Entrepreneurs who ignore those limits risk losses or shutdown; economising on inputs is part of staying viable.\n\nThe statement is true."
     ],
     "difficulty_level": "2/5",
     "tier": "full"
@@ -483,11 +483,11 @@
       true
     ],
     "tactical_explanations": [
-      "TRUE — Check the sentence against the core concept named in the stem, including every scope word.\n\nA shop owner providing products and drinks is an entrepreneur; buyers are households.\n\nThe statement is true.",
-      "TRUE — Check the sentence against the core concept named in the stem, including every scope word.\n\nBeans are tangible goods; drink preparation is a service.\n\nThe statement is true.",
-      "TRUE — Check that the comparison runs in the stated direction and attaches the feature to the correct member of the pair.\n\nHabitual preference beyond basic nutrition typically qualifies as a want.\n\nThe statement is true.",
-      "TRUE — Check the sentence against the core concept named in the stem, including every scope word.\n\nSeasonal flavour trials for pleasure are wants, not necessities.\n\nThe statement is true.",
-      "TRUE — Check the sentence against the core concept named in the stem, including every scope word.\n\nA fixed bean batch is scarce and requires seasonal allocation decisions.\n\nThe statement is true."
+      "TRUE — Sami sells bean bags and espresso service as a business owner — entrepreneur. Customers buy for household consumption — households.\n\nThe morning-queue setting matches that role split.\n\nThe statement is true.",
+      "TRUE — The bean bag is a tangible take-away product — a good. Espresso preparation is barista labour — a service.\n\nThe statement classifies both offerings correctly.\n\nThe statement is true.",
+      "TRUE — A strong habitual coffee craving can feel urgent without being a survival requirement. In the needs/wants framework it is usually treated as a want unless the lesson ties it to basic well-being.\n\nThe statement allows that want classification.\n\nThe statement is true.",
+      "TRUE — Trying a new seasonal flavour for enjoyment is preference and variety-seeking — a want, not a basic necessity.\n\nThe statement places it correctly on the wants side.\n\nThe statement is true.",
+      "TRUE — Forty kilograms of a rare lot is a hard seasonal cap. Sami must decide how much to brew each day, what to reserve, and what to sell as bags — economising across the season.\n\n$$40\\text{ kg}$$ total is finite; every kilogram allocated one way is unavailable another way.\n\nThe statement is true."
     ],
     "difficulty_level": "2/5",
     "tier": "full"
@@ -512,11 +512,11 @@
       false
     ],
     "tactical_explanations": [
-      "FALSE — Read the quantifier. Words such as never, always, only, or all turn a generally valid idea into a claim that one counterexample rejects.\n\nExchange includes barter; money is not a prerequisite for a trade that fulfils needs or wants.\n\nThe statement is false. A student who overlooked the word \"all\" in \"Exchange requires money, so this novels-for-tutoring swap does not count as exchange at all\" would treat the restriction as absent and mark the statement true.\n",
-      "TRUE — Check the sentence against the core concept named in the stem, including every scope word.\n\nNovels are tangible items (goods); tutoring is an activity performed (service).\n\nThe statement is true.",
-      "FALSE — Check that the comparison runs in the stated direction and attaches the feature to the correct member of the pair.\n\nEconomic concepts apply to individuals and students, not only to registered firms.\n\nThe statement is false. A student who matched the topic to \"Because both are students rather than businesses, needs, wants, and exchange concepts do not…\" without checking the rest of the sentence would mark the statement true.\n",
-      "TRUE — Check the sentence against the core concept named in the stem, including every scope word.\n\nTime is limited and must be allocated among competing uses.\n\nThe statement is true.",
-      "FALSE — Check the sentence against the core concept named in the stem, including every scope word.\n\nAgreeing to one swap does not end ongoing choices about remaining time and resources.\n\nThe statement is false. A student who matched the topic to \"Once the swap is agreed, both have opted out of any further economic decisions…\" without checking the rest of the sentence would mark the statement true.\n"
+      "FALSE — Exchange does not require money. Nora’s novels for Felix’s tutoring is barter: each transfers something the other values. The absence of cash does not cancel the exchange.\n\nThe statement is false.",
+      "TRUE — Felix’s tutoring is an activity performed for Nora — a service. Nora’s novels are tangible items — goods.\n\nThe statement matches the standard classification.\n\nThe statement is true.",
+      "FALSE — Being students rather than registered businesses does not switch off needs, wants, or exchange. Individuals face those concepts whenever they allocate scarce time and belongings.\n\nThe claim that the concepts “do not apply” is wrong.\n\nThe statement is false.",
+      "TRUE — Felix’s free afternoons are limited. Two afternoons spent tutoring cannot also be spent on other commitments, so his time is a scarce resource he allocates.\n\nThe statement identifies that scarcity correctly.\n\nThe statement is true.",
+      "FALSE — Agreeing to one swap settles that particular trade; it does not end all future choices about remaining time, other novels, or other study plans. Scarcity of time continues after the handshake.\n\nThe statement is false."
     ],
     "difficulty_level": "2/5",
     "tier": "full"
@@ -541,11 +541,11 @@
       true
     ],
     "tactical_explanations": [
-      "TRUE — Check the sentence against the core concept named in the stem, including every scope word.\n\nEven subsistence living involves limited land, time, and inputs that must be allocated carefully.\n\nThe statement is true.",
-      "TRUE — Check that the comparison runs in the stated direction and attaches the feature to the correct member of the pair.\n\nActivities performed for a customer are services even when physical parts are attached.\n\nThe statement is true.",
-      "TRUE — Check the sentence against the core concept named in the stem, including every scope word.\n\nTrading eggs for money is exchange even on a small scale between neighbours.\n\nThe statement is true.",
-      "FALSE — Check that the comparison runs in the stated direction and attaches the feature to the correct member of the pair.\n\nRetirement status does not turn a household into an entrepreneur; role depends on the activity, not age.\n\nThe statement is false. A student who matched the topic to \"Because retirees no longer earn wages, they must be classified as entrepreneurs rather than…\" without checking the rest of the sentence would mark the statement true.\n",
-      "TRUE — Check that the comparison runs in the stated direction and attaches the feature to the correct member of the pair.\n\nSplitting limited land and animals between competing uses is a classic scarce-resource decision.\n\nThe statement is true."
+      "TRUE — Growing one’s own food still uses limited land, time, and seed. Retirees must decide what to plant, how much effort to spend, and what to preserve — economising under scarcity even without supermarket trips.\n\nSelf-provision does not abolish scarcity.\n\nThe statement is true.",
+      "TRUE — Bicycle repair is work performed on the customer’s bike rather than a new physical product as the main output — a service.\n\nThe statement classifies workshop repair correctly.\n\nThe statement is true.",
+      "TRUE — Selling surplus eggs for cash is monetary exchange. Buyers obtain eggs that fulfil a need or want; sellers obtain money. Both sides gain through the trade.\n\nThe statement is true.",
+      "FALSE — Role labels follow activity, not age or wage status. Retirees who mainly consume and manage a household budget remain households. They become entrepreneurs only if they organise production and sale as a business activity — for example regularly selling eggs as a market operation — and even then the household role can coexist.\n\n“No longer earn wages” alone does not force the entrepreneur label.\n\nThe statement is false.",
+      "TRUE — Land and time devoted to planting are unavailable for expanding the chicken flock, and vice versa. Choosing the mix is an allocation decision under scarcity that cannot be escaped by wishing resources were unlimited.\n\nThe statement is true."
     ],
     "difficulty_level": "2/5",
     "tier": "full"
@@ -570,11 +570,11 @@
       false
     ],
     "tactical_explanations": [
-      "TRUE — Check the sentence against the core concept named in the stem, including every scope word.\n\nBarter with hikers still fulfils needs through direct exchange.\n\nThe statement is true.",
-      "FALSE — Map the scenario onto the textbook category first, then test whether the sentence describes that category accurately.\n\nRemote living still involves choices about firewood, food, and time.\n\nThe statement is false. A student who matched the topic to \"Because Karl avoids shops, he has genuinely opted out of making economic decisions\" without checking the rest of the sentence would mark the statement true.\n",
-      "FALSE — Check the sentence against the core concept named in the stem, including every scope word.\n\nScarcity of labour, food, and firewood still applies regardless of social isolation.\n\nThe statement is false. A student who matched the topic to \"Karl's claim that he needs nobody proves scarcity no longer applies to him personally\" without checking the rest of the sentence would mark the statement true.\n",
-      "FALSE — Map the scenario onto the textbook category first, then test whether the sentence describes that category accurately.\n\nAccessible firewood and labour effort remain limited and require allocation.\n\nThe statement is false. A student who matched the topic to \"Chopping firewood requires no economising because forests are unlimited resources for anyone living remotely\" without checking the rest of the sentence would mark the statement true.\n",
-      "FALSE — Check the sentence against the core concept named in the stem, including every scope word.\n\nEconomic concepts apply to individuals generally, not only formally registered units.\n\nThe statement is false. A student who matched the topic to \"Only members of registered businesses or official households are affected by needs, wants, and…\" without checking the rest of the sentence would mark the statement true.\n"
+      "TRUE — Trading firewood for canned food is barter exchange that helps meet needs (heat and food) even without nearby shops. Money and storefronts are unnecessary for the exchange concept.\n\nThe statement is true.",
+      "FALSE — Avoiding shops changes where trades happen; it does not remove choices about firewood, food stocks, and labour time. Karl still decides how much to cut, store, and trade.\n\nThat is ongoing economic decision-making, not a successful opt-out.\n\nThe statement is false.",
+      "FALSE — Declaring “I need nobody” is a social claim, not a proof that scarcity vanished. Karl still faces limited firewood, limited canned food, and limited chopping time.\n\nScarcity applies to his means regardless of how independent he feels.\n\nThe statement is false.",
+      "FALSE — Accessible timber, dry storage, and chopping effort are limited. Forests in the abstract do not give Karl unlimited ready firewood without time and transport costs. He must economise on how much he cuts and trades.\n\nThe statement is false.",
+      "FALSE — Needs, wants, and scarcity apply to individuals generally — including someone living remotely — not only to formally registered businesses or official household units.\n\nRegistration status is not the on/off switch for those concepts.\n\nThe statement is false."
     ],
     "difficulty_level": "2/5",
     "tier": "full"
