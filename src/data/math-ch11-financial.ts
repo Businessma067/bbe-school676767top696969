@@ -119,11 +119,7 @@ Substitute the recovered periodic rate and compounding count:
 Annual compounding at the same nominal rate uses $n=1$, so the effective rate equals the quote:
 
 $$
-R_{\\mathrm{ann}} = 0.072
-$$
-
-$$
-= 7.20\\%
+R_{\\mathrm{ann}} = 0.072 = 7.20\\%
 $$
 
 Monthly compounding gives
@@ -153,9 +149,9 @@ $$R = (1.006)^{12} - 1$$
 
 $$\\approx 7.44\\%$$
 
-$$7.44\\% - 7.20\\%$$
-
-$$= 0.24$$
+$$
+7.44\\% - 7.20\\% = 0.24
+$$
 
 The claim needs more than $1.00$ percentage point. We have $0.24 < 1.00$.
 
@@ -336,9 +332,9 @@ $$\\approx 9,650.61$$
 
 $$\\frac{9,650.61-6,000}{6,000}$$
 
-$$\\approx 0.6084$$
-
-$$= 60.84\\%$$
+$$
+\\approx 0.6084 = 60.84\\%
+$$
 
 The claim needs more than $65\\%$. We have $60.84\\% < 65\\%$.
 
@@ -410,11 +406,7 @@ $$`,
 Offer (i) splits the quarterly quote, then compounds four times:
 
 $$
-i_i = \\frac{0.064}{4}
-$$
-
-$$
-= 0.016
+i_i = \\frac{0.064}{4} = 0.016
 $$
 
 $$R_i = (1.016)^{4} - 1$$
@@ -437,18 +429,14 @@ So the statement is True.`,
 Offer (ii) splits the semi-annual quote, then compounds twice:
 
 $$
-i_{ii} = \\frac{0.065}{2}
-$$
-
-$$
-= 0.0325
+i_{ii} = \\frac{0.065}{2} = 0.0325
 $$
 
 $$R_{ii} = (1.0325)^{2} - 1$$
 
-$$(1.0325)^{2}$$
-
-$$= 1.066056$$
+$$
+(1.0325)^{2} = 1.066056
+$$
 
 $$R_{ii} = 0.066056$$
 
@@ -462,11 +450,7 @@ So the statement is True.`,
 The better one-year offer is the one with the higher effective annual rate.
 
 $$
-i_i = \\frac{0.064}{4}
-$$
-
-$$
-= 0.016
+i_i = \\frac{0.064}{4} = 0.016
 $$
 
 $$R_i = (1.016)^{4}-1$$
@@ -474,11 +458,7 @@ $$R_i = (1.016)^{4}-1$$
 $$\\approx 6.55\\%$$
 
 $$
-i_{ii} = \\frac{0.065}{2}
-$$
-
-$$
-= 0.0325
+i_{ii} = \\frac{0.065}{2} = 0.0325
 $$
 
 $$R_{ii} = (1.0325)^{2}-1$$
@@ -516,19 +496,11 @@ Substitute the recovered periodic rate and compounding count:
 One-year interest on Offer (ii) is the principal times that offer's effective annual rate:
 
 $$
-R_{ii} = (1.0325)^{2}-1
+R_{ii} = (1.0325)^{2}-1 = 0.066056
 $$
 
 $$
-= 0.066056
-$$
-
-$$
-I_{ii} = 10,000 \\times 0.066056
-$$
-
-$$
-= 660.56
+I_{ii} = 10,000 \\times 0.066056 = 660.56
 $$
 
 The claim needs more than \\$660. We have $660.56 > 660$.
@@ -597,11 +569,7 @@ $$`,
 The nominal annual rate annualizes the monthly quote without compounding:
 
 $$
-r_{\\mathrm{nom}} = 12 \\times 1.75\\%
-$$
-
-$$
-= 21.00\\%
+r_{\\mathrm{nom}} = 12 \\times 1.75\\% = 21.00\\%
 $$
 
 Compare the computed value with the claim ($22.00\\%$). The computed value is
@@ -694,20 +662,16 @@ Substitute the recovered periodic rate and compounding count:
 The gap is the effective annual rate minus the nominal annual rate.
 
 $$
-r_{\\mathrm{nom}} = 12 \\times 1.75\\%
-$$
-
-$$
-= 21.00\\%
+r_{\\mathrm{nom}} = 12 \\times 1.75\\% = 21.00\\%
 $$
 
 $$R = (1.0175)^{12}-1$$
 
 $$\\approx 23.14\\%$$
 
-$$23.14\\% - 21.00\\%$$
-
-$$= 2.14$$
+$$
+23.14\\% - 21.00\\% = 2.14
+$$
 
 The claim needs more than $2.00$ percentage points. We have $2.14 > 2.00$.
 
@@ -885,9 +849,9 @@ $$R = (1.014)^{4}-1$$
 
 $$\\approx 5.72\\%$$
 
-$$5.72\\% - 5.60\\%$$
-
-$$= 0.12$$
+$$
+5.72\\% - 5.60\\% = 0.12
+$$
 
 The claim needs more than $0.20$ percentage points. We have $0.12 < 0.20$.
 
@@ -1158,18 +1122,14 @@ Substitute the recovered inputs:
 Semi-annual compounding splits the quote in two, then squares:
 
 $$
-i = \\frac{0.15}{2}
-$$
-
-$$
-= 0.075
+i = \\frac{0.15}{2} = 0.075
 $$
 
 $$R = (1.075)^{2} - 1$$
 
-$$(1.075)^{2}$$
-
-$$= 1.155625$$
+$$
+(1.075)^{2} = 1.155625
+$$
 
 $$R = 0.155625$$
 
@@ -1183,11 +1143,7 @@ So the statement is True.`,
 Quarterly compounding splits the quote in four, then raises to the fourth:
 
 $$
-i = \\frac{0.15}{4}
-$$
-
-$$
-= 0.0375
+i = \\frac{0.15}{4} = 0.0375
 $$
 
 $$R = (1.0375)^{4} - 1$$
@@ -1210,11 +1166,7 @@ So the statement is True.`,
 Monthly compounding splits the quote in twelve, then raises to the twelfth:
 
 $$
-i = \\frac{0.15}{12}
-$$
-
-$$
-= 0.0125
+i = \\frac{0.15}{12} = 0.0125
 $$
 
 $$R = (1.0125)^{12} - 1$$
@@ -1267,13 +1219,13 @@ $$R_{12} = (1.0125)^{12}-1$$
 
 $$\\approx 16.08\\%$$
 
-$$15.87\\% - 15.56\\%$$
+$$
+15.87\\% - 15.56\\% = 0.31
+$$
 
-$$= 0.31$$
-
-$$16.08\\% - 15.87\\%$$
-
-$$= 0.21$$
+$$
+16.08\\% - 15.87\\% = 0.21
+$$
 
 The claim needs $0.31 < 0.21$. We have $0.31 > 0.21$.
 
@@ -1483,9 +1435,9 @@ $$`,
 
 Eight years of quarterly compounding give $nt=32$ periods and a growth factor of $1.6$:
 
-$$\\frac{80,000}{50,000}$$
-
-$$= 1.6$$
+$$
+\\frac{80,000}{50,000} = 1.6
+$$
 
 $$1+\\frac{r}{4} = (1.6)^{\\frac{1}{32}}$$
 
@@ -1493,9 +1445,9 @@ $$\\approx 1.014796$$
 
 $$r$$
 
-$$\\approx 4 \\times 0.014796$$
-
-$$= 0.05918$$
+$$
+\\approx 4 \\times 0.014796 = 0.05918
+$$
 
 $$\\approx 5.92\\%$$
 
@@ -1565,12 +1517,8 @@ So the statement is False.`,
 
 Dollar growth relative to the opening investment is
 
-$$\\frac{80,000-50,000}{50,000}$$
-
-$$= 0.60$$
-
 $$
-= 60\\%
+\\frac{80,000-50,000}{50,000} = 0.60 = 60\\%
 $$
 
 The claim needs more than $65\\%$. We have $60\\% < 65\\%$.
@@ -1625,11 +1573,7 @@ $$R_a = 10.80\\%$$
 Option (b) splits $10.40\\%$ across four quarters:
 
 $$
-i_b = \\frac{0.104}{4}
-$$
-
-$$
-= 0.026
+i_b = \\frac{0.104}{4} = 0.026
 $$
 
 $$R_b = (1.026)^{4}-1$$
@@ -1646,11 +1590,7 @@ So the statement is False.`,
 Option (b) splits $10.40\\%$ across four quarters, then compounds:
 
 $$
-i_b = \\frac{0.104}{4}
-$$
-
-$$
-= 0.026
+i_b = \\frac{0.104}{4} = 0.026
 $$
 
 $$R_b = (1.026)^{4} - 1$$
@@ -1843,9 +1783,9 @@ $$S_0 = \\frac{40,000}{(1.045)^{6}}$$
 
 $$\\approx 30,715.86$$
 
-$$40,000 - 30,715.86$$
-
-$$= 9,284.14$$
+$$
+40,000 - 30,715.86 = 9,284.14
+$$
 
 Compare the computed value with the claim (\\$9,284.14). The two sides agree.
 
@@ -2213,9 +2153,9 @@ $$R = \\left(1+\\frac{0.0425}{365}\\right)^{365}-1$$
 
 $$\\approx 4.34\\%$$
 
-$$4.34\\% - 4.25\\%$$
-
-$$= 0.09$$
+$$
+4.34\\% - 4.25\\% = 0.09
+$$
 
 The claim needs more than $0.20$ percentage points. We have $0.09 < 0.20$.
 
@@ -2279,11 +2219,7 @@ $$`,
 The nominal annual rate annualizes the monthly quote without compounding:
 
 $$
-r_{\\mathrm{nom}} = 12 \\times 1.9\\%
-$$
-
-$$
-= 22.80\\%
+r_{\\mathrm{nom}} = 12 \\times 1.9\\% = 22.80\\%
 $$
 
 Compare the computed value with the claim ($22.80\\%$). The two sides agree.
@@ -2329,11 +2265,7 @@ Substitute the recovered periodic rate and compounding count:
 The effective annual rate compounds; the nominal rate does not:
 
 $$
-r_{\\mathrm{nom}} = 12 \\times 1.9\\%
-$$
-
-$$
-= 22.80\\%
+r_{\\mathrm{nom}} = 12 \\times 1.9\\% = 22.80\\%
 $$
 
 $$R = (1.019)^{12}-1$$
@@ -2395,20 +2327,16 @@ Substitute the recovered periodic rate and compounding count:
 The gap is the effective annual rate minus the nominal annual rate.
 
 $$
-r_{\\mathrm{nom}} = 12 \\times 1.9\\%
-$$
-
-$$
-= 22.80\\%
+r_{\\mathrm{nom}} = 12 \\times 1.9\\% = 22.80\\%
 $$
 
 $$R = (1.019)^{12}-1$$
 
 $$\\approx 25.34\\%$$
 
-$$25.34\\% - 22.80\\%$$
-
-$$= 2.54$$
+$$
+25.34\\% - 22.80\\% = 2.54
+$$
 
 The claim needs more than $3.00$ percentage points. We have $2.54 < 3.00$.
 
@@ -2460,25 +2388,17 @@ Substitute the recovered inputs:
 Semi-annual compounding splits the quote in two, then squares:
 
 $$
-i = \\frac{0.10}{2}
-$$
-
-$$
-= 0.05
+i = \\frac{0.10}{2} = 0.05
 $$
 
 $$R = (1.05)^{2} - 1$$
 
-$$(1.05)^{2}$$
-
-$$= 1.1025$$
-
 $$
-R = 0.1025
+(1.05)^{2} = 1.1025
 $$
 
 $$
-= 10.25\\%
+R = 0.1025 = 10.25\\%
 $$
 
 The claim is about $10.25\\%$.
@@ -2489,11 +2409,7 @@ So the statement is True.`,
 Quarterly compounding splits the quote in four, then raises to the fourth:
 
 $$
-i = \\frac{0.10}{4}
-$$
-
-$$
-= 0.025
+i = \\frac{0.10}{4} = 0.025
 $$
 
 $$R = (1.025)^{4} - 1$$
@@ -2516,11 +2432,7 @@ So the statement is True.`,
 Monthly compounding splits the quote in twelve, then raises to the twelfth:
 
 $$
-i = \\frac{0.10}{12}
-$$
-
-$$
-= \\frac{1}{120}
+i = \\frac{0.10}{12} = \\frac{1}{120}
 $$
 
 $$R = \\left(1+\\frac{0.10}{12}\\right)^{12} - 1$$
@@ -2543,11 +2455,7 @@ So the statement is True.`,
 The three frequencies at the same $r=0.10$ give
 
 $$
-R_2 = (1.05)^{2}-1
-$$
-
-$$
-= 10.25\\%
+R_2 = (1.05)^{2}-1 = 10.25\\%
 $$
 
 $$R_4 = (1.025)^{4}-1$$
@@ -2566,11 +2474,7 @@ So the statement is True.`,
 Semi-annual, quarterly, and monthly compounding at the same $10\\%$ give
 
 $$
-R_2 = (1.05)^{2}-1
-$$
-
-$$
-= 10.25\\%
+R_2 = (1.05)^{2}-1 = 10.25\\%
 $$
 
 $$R_4 = (1.025)^{4}-1$$
@@ -2581,13 +2485,13 @@ $$R_{12} = \\left(1+\\frac{0.10}{12}\\right)^{12}-1$$
 
 $$\\approx 10.47\\%$$
 
-$$10.38\\% - 10.25\\%$$
+$$
+10.38\\% - 10.25\\% = 0.13
+$$
 
-$$= 0.13$$
-
-$$10.47\\% - 10.38\\%$$
-
-$$= 0.09$$
+$$
+10.47\\% - 10.38\\% = 0.09
+$$
 
 The claim needs $0.13 < 0.09$. We have $0.13 > 0.09$.
 
@@ -2705,16 +2609,8 @@ So the statement is False.`,
 
 Extending the horizon from $80$ years to $160$ years at the same rate squares the original growth factor:
 
-$$(1.050116)^{160}$$
-
-$$= \\bigl(50^{\\frac{1}{80}}\\bigr)^{160}$$
-
 $$
-= 50^{2}
-$$
-
-$$
-= 2,500
+(1.050116)^{160} = \\bigl(50^{\\frac{1}{80}}\\bigr)^{160} = 50^{2} = 2,500
 $$
 
 The claim needs a factor of $100$. The computed value is
@@ -2978,9 +2874,9 @@ $$S_0 = \\frac{60,000}{(1.011)^{36}}$$
 
 $$\\approx 40,467.83$$
 
-$$60,000 - 40,467.83$$
-
-$$= 19,532.17$$
+$$
+60,000 - 40,467.83 = 19,532.17
+$$
 
 The claim needs more than \\$20,000. We have $19,532.17 < 20,000$.
 
@@ -3048,11 +2944,7 @@ $$`,
 CD1 splits the monthly quote, then compounds twelve times:
 
 $$
-i_1 = \\frac{0.063}{12}
-$$
-
-$$
-= 0.00525
+i_1 = \\frac{0.063}{12} = 0.00525
 $$
 
 $$R_1 = (1.00525)^{12} - 1$$
@@ -3075,11 +2967,7 @@ So the statement is True.`,
 CD2 splits the quarterly quote, then compounds four times:
 
 $$
-i_2 = \\frac{0.064}{4}
-$$
-
-$$
-= 0.016
+i_2 = \\frac{0.064}{4} = 0.016
 $$
 
 $$R_2 = (1.016)^{4} - 1$$
@@ -3110,18 +2998,14 @@ Substitute the recovered periodic rate and compounding count:
 CD3 splits the semi-annual quote, then squares:
 
 $$
-i_3 = \\frac{0.0645}{2}
-$$
-
-$$
-= 0.03225
+i_3 = \\frac{0.0645}{2} = 0.03225
 $$
 
 $$R_3 = (1.03225)^{2} - 1$$
 
-$$(1.03225)^{2}$$
-
-$$= 1.065540$$
+$$
+(1.03225)^{2} = 1.065540
+$$
 
 $$R_3 = 0.065540$$
 
@@ -3177,9 +3061,9 @@ $$I_2 = 20,000 \\times 0.065533$$
 
 $$\\approx 1,310.66$$
 
-$$1,310.66 - 1,297.04$$
-
-$$= 13.62$$
+$$
+1,310.66 - 1,297.04 = 13.62
+$$
 
 The claim is approximately \\$13.61.
 
@@ -3261,11 +3145,7 @@ $$`,
 Account M splits the $6\\%$ quote across twelve months:
 
 $$
-i_M = \\frac{0.06}{12}
-$$
-
-$$
-= 0.005
+i_M = \\frac{0.06}{12} = 0.005
 $$
 
 $$t_M = \\frac{\\ln\\bigl(\\frac{22,000}{15,000}\\bigr)}{\\ln 1.005}$$
@@ -3285,9 +3165,9 @@ $$
 t_M = \\frac{\\ln\\bigl(\\frac{22,000}{15,000}\\bigr)}{\\ln 1.005}
 $$
 
-$$\\frac{22000}{15000}$$
-
-$$= 1.466667$$
+$$
+\\frac{22000}{15000} = 1.466667
+$$
 
 $$\\ln(1.466667)$$
 
@@ -3309,9 +3189,9 @@ $$
 t_Q = \\frac{\\ln\\bigl(\\frac{22,000}{15,000}\\bigr)}{\\ln 1.015375}
 $$
 
-$$\\frac{22000}{15000}$$
-
-$$= 1.466667$$
+$$
+\\frac{22000}{15000} = 1.466667
+$$
 
 $$\\ln(1.466667)$$
 
@@ -3348,9 +3228,9 @@ $$
 t_M = \\frac{\\ln\\bigl(\\frac{22,000}{15,000}\\bigr)}{\\ln 1.005}
 $$
 
-$$\\frac{22000}{15000}$$
-
-$$= 1.466667$$
+$$
+\\frac{22000}{15000} = 1.466667
+$$
 
 $$\\ln(1.466667)$$
 
@@ -3372,9 +3252,9 @@ $$
 t_Q = \\frac{\\ln\\bigl(\\frac{22,000}{15,000}\\bigr)}{\\ln 1.015375}
 $$
 
-$$\\frac{22000}{15000}$$
-
-$$= 1.466667$$
+$$
+\\frac{22000}{15000} = 1.466667
+$$
 
 $$\\ln(1.466667)$$
 
