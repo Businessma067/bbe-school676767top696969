@@ -638,19 +638,44 @@ function ShareholderStructure() {
   ];
   const colors = [ACCENT, MUTED, "#A67C52"];
   return (
-    <ChartFrame title="Shareholder structure (illustrative listed AG)" height="h-[240px] sm:h-[280px]">
-      <ResponsiveContainer width="100%" height="100%">
-        <PieChart>
-          <Pie data={data} dataKey="value" nameKey="name" innerRadius={48} outerRadius={88} paddingAngle={2}>
-            {data.map((_, i) => (
-              <Cell key={i} fill={colors[i]!} stroke="transparent" />
-            ))}
-          </Pie>
-          <Tooltip />
-          <Legend />
-        </PieChart>
-      </ResponsiveContainer>
-    </ChartFrame>
+    <div className="w-full">
+      <div className="mb-2 text-sm font-bold text-primary">Shareholder structure (illustrative listed AG)</div>
+      <div className="h-[200px] w-full sm:h-[230px]">
+        <ResponsiveContainer width="100%" height="100%">
+          <PieChart>
+            <Pie
+              data={data}
+              dataKey="value"
+              nameKey="name"
+              innerRadius={44}
+              outerRadius={78}
+              paddingAngle={2}
+              labelLine={false}
+            >
+              {data.map((_, i) => (
+                <Cell key={i} fill={colors[i]!} stroke="transparent" />
+              ))}
+            </Pie>
+            <Tooltip />
+          </PieChart>
+        </ResponsiveContainer>
+      </div>
+      <ul className="mt-2 flex flex-wrap justify-center gap-x-3 gap-y-1.5 px-1">
+        {data.map((d, i) => (
+          <li
+            key={d.name}
+            className="inline-flex max-w-[16rem] items-start gap-1.5 text-[10px] leading-snug text-muted-foreground"
+          >
+            <span
+              className="mt-[3px] h-2 w-2 shrink-0 rounded-[2px]"
+              style={{ backgroundColor: colors[i] }}
+              aria-hidden
+            />
+            <span className="text-foreground/85">{d.name}</span>
+          </li>
+        ))}
+      </ul>
+    </div>
   );
 }
 

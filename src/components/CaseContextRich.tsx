@@ -36,6 +36,89 @@ const CHART_ANIM = {
   isAnimationActive: false,
 };
 
+const PIE_RADIAN = Math.PI / 180;
+
+/** Percent inside larger slices only — never emit long category names around the pie. */
+function pieSlicePercentLabel({
+  cx,
+  cy,
+  midAngle,
+  innerRadius,
+  outerRadius,
+  percent,
+}: {
+  cx?: number;
+  cy?: number;
+  midAngle?: number;
+  innerRadius?: number;
+  outerRadius?: number;
+  percent?: number;
+}) {
+  if (
+    cx == null ||
+    cy == null ||
+    midAngle == null ||
+    innerRadius == null ||
+    outerRadius == null ||
+    percent == null ||
+    percent < 0.09
+  ) {
+    return null;
+  }
+  const radius = innerRadius + (outerRadius - innerRadius) * 0.55;
+  const x = cx + radius * Math.cos(-midAngle * PIE_RADIAN);
+  const y = cy + radius * Math.sin(-midAngle * PIE_RADIAN);
+  return (
+    <text
+      x={x}
+      y={y}
+      fill="#fff"
+      textAnchor="middle"
+      dominantBaseline="central"
+      fontSize={11}
+      fontWeight={600}
+      style={{ paintOrder: "stroke", stroke: "rgba(42,31,23,0.45)", strokeWidth: 2.5 }}
+    >
+      {`${Math.round(percent * 100)}%`}
+    </text>
+  );
+}
+
+/** HTML legend under the pie — wraps cleanly; avoids Recharts default overlap. */
+function PieHtmlLegend({
+  data,
+}: {
+  data: Array<Record<string, string | number>>;
+}) {
+  const total = data.reduce((sum, row) => sum + (Number(row.value) || 0), 0);
+  if (data.length === 0) return null;
+  return (
+    <ul className="mt-3 flex flex-wrap justify-center gap-x-3 gap-y-1.5 px-0.5">
+      {data.map((row, i) => {
+        const name = String(row.name ?? "");
+        const value = Number(row.value) || 0;
+        const pct = total > 0 ? Math.round((value / total) * 100) : 0;
+        return (
+          <li
+            key={`${name}-${i}`}
+            className="inline-flex max-w-[min(100%,15rem)] items-start gap-1.5 text-[10px] leading-snug text-muted-foreground sm:max-w-[17rem]"
+          >
+            <span
+              className="mt-[3px] h-2 w-2 shrink-0 rounded-[2px]"
+              style={{ backgroundColor: CHART_COLORS[i % CHART_COLORS.length] }}
+              aria-hidden
+            />
+            <span className="min-w-0">
+              <span className="text-foreground/85">{name}</span>
+              <span className="whitespace-nowrap"> · {pct}%</span>
+            </span>
+          </li>
+        );
+      })}
+    </ul>
+  );
+}
+
 function cleanCell(cell: string): string {
   return cell.replace(/\*\*/g, "").trim();
 }
@@ -108,7 +191,9 @@ function CaseTable({ rows }: { rows: string[][] }) {
 
 const CaseChart = memo(function CaseChart({ chart }: { chart: CaseChartSpec }) {
   const title = chart.title?.trim();
-  const height = 260;
+  const isPie = chart.type === "pie";
+  /** Pie plot is shorter; category names live in the HTML legend below (no collision). */
+  const height = isPie ? 200 : 260;
 
   return (
     <div className="my-4 w-full rounded-lg border border-border bg-card/40 p-3 sm:p-4">
@@ -117,25 +202,30 @@ const CaseChart = memo(function CaseChart({ chart }: { chart: CaseChartSpec }) {
       ) : null}
       <div className="w-full" style={{ height }}>
         <ResponsiveContainer width="100%" height="100%" debounce={80}>
-          {chart.type === "pie" ? (
-            <PieChart>
+          {isPie ? (
+            <PieChart margin={{ top: 4, right: 4, bottom: 4, left: 4 }}>
               <Pie
                 data={chart.data}
                 dataKey="value"
                 nameKey="name"
                 cx="50%"
                 cy="50%"
-                outerRadius={90}
+                outerRadius={78}
+                paddingAngle={1}
                 {...CHART_ANIM}
                 labelLine={false}
-                label={({ name, percent }) => `${name} ${Math.round((percent ?? 0) * 100)}%`}
+                label={pieSlicePercentLabel}
               >
                 {chart.data.map((_, i) => (
                   <Cell key={`slice-${i}`} fill={CHART_COLORS[i % CHART_COLORS.length]} />
                 ))}
               </Pie>
-              <Tooltip />
-              <Legend />
+              <Tooltip
+                formatter={(value) => {
+                  const n = typeof value === "number" ? value : Number(value);
+                  return Number.isFinite(n) ? n.toLocaleString("en-US") : String(value ?? "");
+                }}
+              />
             </PieChart>
           ) : chart.type === "line" ? (
             <LineChart data={chart.data} margin={{ top: 8, right: 12, left: 0, bottom: 4 }}>
@@ -176,6 +266,7 @@ const CaseChart = memo(function CaseChart({ chart }: { chart: CaseChartSpec }) {
           )}
         </ResponsiveContainer>
       </div>
+      {isPie ? <PieHtmlLegend data={chart.data} /> : null}
     </div>
   );
 });
