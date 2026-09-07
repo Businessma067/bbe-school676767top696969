@@ -1,13 +1,17 @@
 /**
- * Server-only Full Course banks for Custom Mock Builder (Math / English).
+ * Server-only Full Course banks for Custom Mock Builder (Economics / Math / English).
  * Keep this module off the builder page so the client does not download
- * the entire course JSON. Math banks are loaded on demand via dynamic import.
+ * the entire course JSON. Banks are loaded on demand via dynamic import.
  */
 
 import {
   ENGLISH_CHAPTERS,
   type EnglishTask,
 } from "@/data/english-chapters";
+import {
+  loadAllEconomicsChapterTasks,
+  type EconomicsTask,
+} from "@/data/economics-chapters";
 import {
   loadAllMathChapterTasks,
   type MathTask,
@@ -24,6 +28,7 @@ export type CustomMockBankTask = {
   figure?: string;
   tables_markdown?: string;
   solution_overview?: string;
+  case_id?: string;
 };
 
 function mathTaskToBank(chNum: number, t: MathTask): CustomMockBankTask | null {
@@ -54,14 +59,30 @@ function englishTaskToBank(t: EnglishTask): CustomMockBankTask {
   };
 }
 
+function economicsTaskToBank(t: EconomicsTask): CustomMockBankTask {
+  return {
+    id: t.id,
+    case_id: t.case_id,
+    subsection: t.subsection,
+    context: t.context ?? "",
+    statements: t.statements ?? [],
+    answer_key: t.answer_key ?? [],
+    tactical_explanations: t.tactical_explanations ?? [],
+  };
+}
+
 export async function getLocalBuilderTasks(
-  subject: "math" | "english",
+  subject: "economics" | "math" | "english",
 ): Promise<CustomMockBankTask[]> {
   if (subject === "math") {
     const loaded = await loadAllMathChapterTasks();
     return loaded.flatMap(({ num, tasks }) =>
       tasks.map((t) => mathTaskToBank(num, t)).filter((t): t is CustomMockBankTask => t != null),
     );
+  }
+  if (subject === "economics") {
+    const loaded = await loadAllEconomicsChapterTasks();
+    return loaded.flatMap(({ tasks }) => tasks.map(economicsTaskToBank));
   }
   return ENGLISH_CHAPTERS.flatMap((ch) => ch.tasks.map(englishTaskToBank));
 }

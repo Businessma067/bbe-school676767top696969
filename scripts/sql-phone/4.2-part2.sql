@@ -1,818 +1,1151 @@
 -- Update expanded explanations for 4.2-part2 (25 cases).
 -- Safe to re-run: only updates tactical_explanations.
 
-UPDATE public.economics_cases SET tactical_explanations = ARRAY['FALSE — This statement is false. Limited liability applies to all partners because partnerships are incorporated business forms.
+UPDATE public.economics_cases SET tactical_explanations = ARRAY['FALSE — The unincorporated/incorporated split turns on legal personality. Unincorporated firms (sole traders, partnerships) are not legal entities of their own; incorporated companies are legal persons. Pooling capital, filing personal tax, listing shares, or enjoying limited liability must be attached to the correct side of that split — limited liability marks incorporated forms, and listing is not the sole criterion of incorporation.
 
-The topic is partnerships and partner liability, but the decisive skill here is reading quantifiers. Words such as never, always, only, or all turn a generally true idea into a claim that can be rejected by one routine counterexample.
+Partnerships are not incorporated forms granting limited liability to all partners.
 
-The statement overreaches because partnerships are not incorporated forms granting limited liability to all partners. The trap is to agree with the topic while missing the one detail that breaks the logic.
+That misclassification is enough to reject the claim.
 
-Watch the absolute wording "all": exam statements often sound plausible until a single scope word turns an otherwise familiar idea into an overclaim.
+The statement is false.
+', 'TRUE — Under unlimited liability in a general partnership, each partner can be solely liable for all debts of the business: creditors need not split claims proportionally before pursuing one partner''s private assets.
 
-Because the decisive detail is wrong, mark the statement false.', 'TRUE — This statement is correct. Each partner remains solely liable for all debts under unlimited liability despite unequal ownership shares in the agreement.
+Unequal ownership shares do not cap unlimited liability for general partners.
 
-The topic is partnerships and partner liability, but the decisive skill here is reading quantifiers. Words such as never, always, only, or all turn a generally true idea into a claim that can be rejected by one routine counterexample.
+Apply the chapter mechanism to the exact wording: name the ownership form or finance source correctly, then check whether the claimed tax, liability, repayment, or matching consequence actually follows from that category.
 
-Applied carefully, unequal ownership shares do not cap unlimited liability for general partners. Nothing in the sentence stretches the concept beyond its standard use.
+On that basis the assertion matches the ownership or finance rule being tested.
 
-Every part of the claim aligns with the standard concept, so the statement stands.', 'FALSE — Evaluated against the textbook standard, this assertion is false. A limited partner who manages the firm retains liability limited to the capital contributed.
+The statement is true.
+', 'FALSE — Limited partners who take part in management risk losing the liability shield that limited status provides. Limited liability is not a free add-on to active control; the non-management rule is structural.
 
-The relevant theory comes from partnerships and partner liability. Identify which definition or relationship the sentence is trying to test before deciding true or false.
+A partner who manages cannot retain liability limited only to contributed capital.
 
-The statement overreaches because a partner who manages cannot retain liability limited only to contributed capital. The trap is to agree with the topic while missing the one detail that breaks the logic.
+Limited partners trade a liability cap for staying out of management. If they take part in running the firm, they risk losing that shield; general partners continue with management and typically unlimited liability.
 
-The statement sounds plausible but fails on precision, so it is false.', 'TRUE — This statement is correct. Partners may share tasks and specialise while equal responsibilities continue to apply in management.
+That misclassification is enough to reject the claim.
 
-The relevant theory comes from partnerships and partner liability. Identify which definition or relationship the sentence is trying to test before deciding true or false.
+The statement is false.
+', 'TRUE — Partners can divide tasks and specialise — one in sales, another in operations — while still sharing ownership. Specialisation is an operational advantage of multi-person ownership.
 
-Applied carefully, specialisation is compatible with equal overall responsibilities in a general partnership. Nothing in the sentence stretches the concept beyond its standard use.
+Specialisation is compatible with equal overall responsibilities in a general partnership.
 
-Every part of the claim aligns with the standard concept, so the statement stands.', 'FALSE — Evaluated against the textbook standard, this assertion is false. Decision-making rules recorded in the agreement eliminate unlimited liability for managing partners.
+Apply the chapter mechanism to the exact wording: name the ownership form or finance source correctly, then check whether the claimed tax, liability, repayment, or matching consequence actually follows from that category.
 
-The relevant theory comes from partnerships and partner liability. Identify which definition or relationship the sentence is trying to test before deciding true or false.
+So the sentence is a correct description of the mechanism at work in this case.
 
-The statement overreaches because governance clauses do not remove unlimited liability from managing partners. The trap is to agree with the topic while missing the one detail that breaks the logic.
+The statement is true.
+', 'FALSE — Under unlimited liability in a general partnership, each partner can be solely liable for all debts of the business: creditors need not split claims proportionally before pursuing one partner''s private assets.
 
-The statement sounds plausible but fails on precision, so it is false.'] WHERE case_id = 'CASE 4.2.26' AND tier = 'full';
-UPDATE public.economics_cases SET tactical_explanations = ARRAY['TRUE — On the Fuhrmann definition used in the entrance exam, the sentence is correct. General partners may share tasks and specialise while retaining unlimited liability for all business debts.
+Governance clauses do not remove unlimited liability from managing partners.
 
-Although the subject matter is partnerships and partner liability, this is really a logic check on overstatement. Non-profit surpluses, mixed economies, and partial market failure are classic cases where absolute wording fails.
+Apply the chapter mechanism to the exact wording: name the ownership form or finance source correctly, then check whether the claimed tax, liability, repayment, or matching consequence actually follows from that category.
 
-In this setting, specialisation does not reduce a general partner''s unlimited liability exposure. The wording matches the textbook relationship without adding extra conditions.
+So the sentence does not survive once the correct mechanism is applied.
 
-Every part of the claim aligns with the standard concept, so the statement stands.', 'TRUE — Evaluated against the textbook standard, this assertion is correct. A limited partner who takes an active role in daily management faces unlimited liability for all partnership obligations.
+The statement is false.
+'] WHERE case_id = 'CASE 4.2.26' AND tier = 'full';
+UPDATE public.economics_cases SET tactical_explanations = ARRAY['TRUE — Under unlimited liability in a general partnership, each partner can be solely liable for all debts of the business: creditors need not split claims proportionally before pursuing one partner''s private assets.
 
-The topic is partnerships and partner liability, but the decisive skill here is reading quantifiers. Words such as never, always, only, or all turn a generally true idea into a claim that can be rejected by one routine counterexample.
+Partners can divide tasks and specialise — one in sales, another in operations — while still sharing ownership. Specialisation is an operational advantage of multi-person ownership.
 
-Applied carefully, a partner involved in management faces unlimited liability rather than capped contribution liability. Nothing in the sentence stretches the concept beyond its standard use.
+Specialisation does not reduce a general partner''s unlimited liability exposure.
 
-The reasoning chain is complete, so mark the statement true.', 'TRUE — The claim is correct. A partnership agreement may specify ownership percentages together with decision-making and dispute-resolution procedures.
+On that basis the assertion matches the ownership or finance rule being tested.
 
-This statement draws on partnerships and partner liability. Treat it as a checklist against the core concept named in the stem, not as a general opinion about business.
+The statement is true.
+', 'TRUE — In a limited partnership, limited partners'' liability is capped at what they contributed, and they normally must not take part in management — that is the price of the liability cap. General partners continue to manage and usually retain unlimited liability.
 
-In this setting, ownership shares and governance procedures are recorded in the partnership agreement. The wording matches the textbook relationship without adding extra conditions.
+Under unlimited liability in a general partnership, each partner can be solely liable for all debts of the business: creditors need not split claims proportionally before pursuing one partner''s private assets.
 
-No qualifying word breaks the definition or scenario, so the answer is true.', 'FALSE — This statement is false. Limited liability for all partners is the default rule in every general partnership.
+A partner involved in management faces unlimited liability rather than capped contribution liability.
 
-The topic is partnerships and partner liability, but the decisive skill here is reading quantifiers. Words such as never, always, only, or all turn a generally true idea into a claim that can be rejected by one routine counterexample.
+That is why the claim stands for this form of business or source of finance.
 
-The statement overreaches because default general partnership rules impose unlimited rather than limited liability. The trap is to agree with the topic while missing the one detail that breaks the logic.
+The statement is true.
+', 'TRUE — Partners need a partnership agreement to settle ownership shares, decision rights, responsibilities, and how profits and losses are divided. Without clear terms, disputes over control and residual claims are harder to resolve.
 
-Watch the absolute wording "all": exam statements often sound plausible until a single scope word turns an otherwise familiar idea into an overclaim.
+Ownership shares and governance procedures are recorded in the partnership agreement.
 
-The statement sounds plausible but fails on precision, so it is false.', 'FALSE — On the Fuhrmann definition used in the entrance exam, the sentence is false. Silent non-managing status alone is enough to cap a partner''s liability without forming a limited partnership.
+Apply the chapter mechanism to the exact wording: name the ownership form or finance source correctly, then check whether the claimed tax, liability, repayment, or matching consequence actually follows from that category.
 
-This statement draws on partnerships and partner liability. Treat it as a checklist against the core concept named in the stem, not as a general opinion about business.
+So the sentence is a correct description of the mechanism at work in this case.
 
-Applied to this claim, simply staying silent does not cap liability unless limited partnership rules apply. That is why the sentence does not survive careful reading.
+The statement is true.
+', 'FALSE — In a general partnership, partners typically share equal rights, liabilities, and responsibilities unless varied by agreement. Unlimited liability means each partner can be pursued for the firm''s debts.
 
-Because the decisive detail is wrong, mark the statement false.'] WHERE case_id = 'CASE 4.2.27' AND tier = 'full';
-UPDATE public.economics_cases SET tactical_explanations = ARRAY['FALSE — On the Fuhrmann definition used in the entrance exam, the sentence is false. A partnership agreement replaces the need for two or more persons to jointly found the business.
+Default general partnership rules impose unlimited rather than limited liability.
 
-This statement draws on partnerships and partner liability. Treat it as a checklist against the core concept named in the stem, not as a general opinion about business.
+Apply the chapter mechanism to the exact wording: name the ownership form or finance source correctly, then check whether the claimed tax, liability, repayment, or matching consequence actually follows from that category.
 
-Applied to this claim, the agreement formalises rights but does not replace joint founding by two or more persons. That is why the sentence does not survive careful reading.
+So the sentence does not survive once the correct mechanism is applied.
 
-Once the overclaim or mislabel is exposed, the only consistent answer is false.', 'FALSE — The claim is false. A clause in the agreement assigning one partner to finance and another to sales eliminates joint liability for business debts.
+The statement is false.
+', 'FALSE — Limited partners who take part in management risk losing the liability shield that limited status provides. Limited liability is not a free add-on to active control; the non-management rule is structural.
 
-This statement draws on partnerships and partner liability. Treat it as a checklist against the core concept named in the stem, not as a general opinion about business.
+Simply staying silent does not cap liability unless limited partnership rules apply.
 
-Applied to this claim, specialised role assignment does not eliminate joint liability among general partners. That is why the sentence does not survive careful reading.
+Limited partners trade a liability cap for staying out of management. If they take part in running the firm, they risk losing that shield; general partners continue with management and typically unlimited liability.
 
-Once the overclaim or mislabel is exposed, the only consistent answer is false.', 'FALSE — Evaluated against the textbook standard, this assertion is false. Partners in a general partnership are forbidden from specialising because equal responsibilities require identical daily tasks.
+On that basis the assertion attaches the wrong legal, tax, liability, or finance label.
 
-Here you must apply ideas from partnerships and partner liability to a concrete situation rather than recite a definition from memory. Ownership, customer type, stakeholder group, or country of production usually decides the verdict.
+The statement is false.
+'] WHERE case_id = 'CASE 4.2.27' AND tier = 'full';
+UPDATE public.economics_cases SET tactical_explanations = ARRAY['FALSE — When two or more persons jointly found a business, the ownership form is a partnership. Joint founding — shared ownership intent — is the defining step that distinguishes it from a sole proprietorship.
 
-The statement overreaches because specialisation is permitted alongside equal partnership responsibilities. The trap is to agree with the topic while missing the one detail that breaks the logic.
+Partners need a partnership agreement to settle ownership shares, decision rights, responsibilities, and how profits and losses are divided. Without clear terms, disputes over control and residual claims are harder to resolve.
 
-Once the overclaim or mislabel is exposed, the only consistent answer is false.', 'TRUE — On the Fuhrmann definition used in the entrance exam, the sentence is correct. Rights and responsibilities of partners must be settled through the partnership agreement.
+The agreement formalises rights but does not replace joint founding by two or more persons.
 
-This statement draws on partnerships and partner liability. Treat it as a checklist against the core concept named in the stem, not as a general opinion about business.
+So the sentence does not survive once the correct mechanism is applied.
 
-In this setting, partner rights and responsibilities are settled in the agreement. The wording matches the textbook relationship without adding extra conditions.
+The statement is false.
+', 'FALSE — Keep the partnership triad in view: multi-person ownership, an agreement governing rights and profit shares, and unlimited liability for general partners (with limited partners capped only if they stay out of management).
 
-Every part of the claim aligns with the standard concept, so the statement stands.', 'FALSE — This statement is false. A limited partner who refrains from management still carries unlimited liability for all partnership debts.
+Specialised role assignment does not eliminate joint liability among general partners.
 
-The topic is partnerships and partner liability, but the decisive skill here is reading quantifiers. Words such as never, always, only, or all turn a generally true idea into a claim that can be rejected by one routine counterexample.
+Apply the chapter mechanism to the exact wording: name the ownership form or finance source correctly, then check whether the claimed tax, liability, repayment, or matching consequence actually follows from that category.
 
-The statement overreaches because refraining from management preserves capped liability, not unlimited liability. The trap is to agree with the topic while missing the one detail that breaks the logic.
+That misclassification is enough to reject the claim.
 
-Watch the absolute wording "all": exam statements often sound plausible until a single scope word turns an otherwise familiar idea into an overclaim.
+The statement is false.
+', 'FALSE — In a general partnership, partners typically share equal rights, liabilities, and responsibilities unless varied by agreement. Unlimited liability means each partner can be pursued for the firm''s debts.
 
-Because the decisive detail is wrong, mark the statement false.'] WHERE case_id = 'CASE 4.2.28' AND tier = 'full';
-UPDATE public.economics_cases SET tactical_explanations = ARRAY['TRUE — Evaluated against the textbook standard, this assertion is correct. Partners who jointly found a business need a partnership agreement to formalise their arrangement.
+Partners can divide tasks and specialise — one in sales, another in operations — while still sharing ownership. Specialisation is an operational advantage of multi-person ownership.
 
-The relevant theory comes from partnerships and partner liability. Identify which definition or relationship the sentence is trying to test before deciding true or false.
+Specialisation is permitted alongside equal partnership responsibilities.
 
-Applied carefully, founders need an agreement to settle rights, responsibilities, and profit-loss division. Nothing in the sentence stretches the concept beyond its standard use.
+So the sentence does not survive once the correct mechanism is applied.
 
-Every part of the claim aligns with the standard concept, so the statement stands.', 'TRUE — Evaluated against the textbook standard, this assertion is correct. Two partners may possibly invest more savings and raise more financial funds than one sole proprietor alone.
+The statement is false.
+', 'TRUE — Partners need a partnership agreement to settle ownership shares, decision rights, responsibilities, and how profits and losses are divided. Without clear terms, disputes over control and residual claims are harder to resolve.
 
-The relevant theory comes from partnerships and partner liability. Identify which definition or relationship the sentence is trying to test before deciding true or false.
+Partner rights and responsibilities are settled in the agreement.
 
-Applied carefully, several partners can pool savings and raise more funds than a lone proprietor. Nothing in the sentence stretches the concept beyond its standard use.
+Apply the chapter mechanism to the exact wording: name the ownership form or finance source correctly, then check whether the claimed tax, liability, repayment, or matching consequence actually follows from that category.
 
-The reasoning chain is complete, so mark the statement true.', 'TRUE — This statement is correct. Partnership financial arrangements are in general similar to the financial aspects faced by sole proprietors.
+That is why the claim stands for this form of business or source of finance.
 
-The relevant theory comes from partnerships and partner liability. Identify which definition or relationship the sentence is trying to test before deciding true or false.
+The statement is true.
+', 'FALSE — Limited partners who take part in management risk losing the liability shield that limited status provides. Limited liability is not a free add-on to active control; the non-management rule is structural.
 
-Applied carefully, partnership finance broadly resembles sole proprietorship finance. Nothing in the sentence stretches the concept beyond its standard use.
+Under unlimited liability in a general partnership, each partner can be solely liable for all debts of the business: creditors need not split claims proportionally before pursuing one partner''s private assets.
 
-The reasoning chain is complete, so mark the statement true.', 'TRUE — On the Fuhrmann definition used in the entrance exam, the sentence is correct. Pooling private assets from several partners can strengthen collateral offered when applying for credit.
+Refraining from management preserves capped liability, not unlimited liability.
 
-The scenario is a worked example of partnerships and partner liability. Translate the story into the textbook category first; only then judge whether the sentence describes that category accurately.
+That misclassification is enough to reject the claim.
 
-In this setting, combined partner assets typically improve collateral for loan applications. The wording matches the textbook relationship without adding extra conditions.
+The statement is false.
+'] WHERE case_id = 'CASE 4.2.28' AND tier = 'full';
+UPDATE public.economics_cases SET tactical_explanations = ARRAY['TRUE — When two or more persons jointly found a business, the ownership form is a partnership. Joint founding — shared ownership intent — is the defining step that distinguishes it from a sole proprietorship.
 
-The reasoning chain is complete, so mark the statement true.', 'FALSE — On the Fuhrmann definition used in the entrance exam, the sentence is false. Partnership financial aspects differ so completely from sole proprietors that personal savings cannot be invested similarly.
+Partners need a partnership agreement to settle ownership shares, decision rights, responsibilities, and how profits and losses are divided. Without clear terms, disputes over control and residual claims are harder to resolve.
 
-Although the subject matter is partnerships and partner liability, this is really a logic check on overstatement. Non-profit surpluses, mixed economies, and partial market failure are classic cases where absolute wording fails.
+Founders need an agreement to settle rights, responsibilities, and profit-loss division.
 
-Applied to this claim, personal savings can be invested similarly in partnerships and sole proprietorships. That is why the sentence does not survive careful reading.
+On that basis the assertion matches the ownership or finance rule being tested.
 
-Watch the absolute wording "cannot": exam statements often sound plausible until a single scope word turns an otherwise familiar idea into an overclaim.
+The statement is true.
+', 'TRUE — Keep the partnership triad in view: multi-person ownership, an agreement governing rights and profit shares, and unlimited liability for general partners (with limited partners capped only if they stay out of management).
 
-Once the overclaim or mislabel is exposed, the only consistent answer is false.'] WHERE case_id = 'CASE 4.2.29' AND tier = 'full';
-UPDATE public.economics_cases SET tactical_explanations = ARRAY['TRUE — This statement is correct. Partners can exchange ideas in difficult situations and may thereby make better decisions than isolated managers.
+Several partners can pool savings and raise more funds than a lone proprietor.
 
-The relevant theory comes from partnerships and partner liability. Identify which definition or relationship the sentence is trying to test before deciding true or false.
+Sole proprietorship unites ownership and control in one person, has no separate legal personality (personal tax on profits), and carries unlimited liability so private assets can be reached if business resources fall short.
 
-Applied carefully, joint discussion in difficult situations can improve decision quality among partners. Nothing in the sentence stretches the concept beyond its standard use.
+On that basis the assertion matches the ownership or finance rule being tested.
 
-No qualifying word breaks the definition or scenario, so the answer is true.', 'FALSE — This statement is false. Each partner''s unlimited liability for all debts reduces the total collateral lenders accept compared with a sole trader''s pledge.
+The statement is true.
+', 'TRUE — Keep the partnership triad in view: multi-person ownership, an agreement governing rights and profit shares, and unlimited liability for general partners (with limited partners capped only if they stay out of management).
 
-The topic is partnerships and partner liability, but the decisive skill here is reading quantifiers. Words such as never, always, only, or all turn a generally true idea into a claim that can be rejected by one routine counterexample.
+Partnership finance broadly resembles sole proprietorship finance.
 
-The statement overreaches because unlimited liability does not prevent offering more combined collateral than a sole trader. The trap is to agree with the topic while missing the one detail that breaks the logic.
+Sole proprietorship unites ownership and control in one person, has no separate legal personality (personal tax on profits), and carries unlimited liability so private assets can be reached if business resources fall short.
 
-Watch the absolute wording "all": exam statements often sound plausible until a single scope word turns an otherwise familiar idea into an overclaim.
+So the sentence is a correct description of the mechanism at work in this case.
 
-Once the overclaim or mislabel is exposed, the only consistent answer is false.', 'TRUE — On the Fuhrmann definition used in the entrance exam, the sentence is correct. Each partner in a general partnership is solely liable for all debts of the business.
+The statement is true.
+', 'TRUE — Long-term lenders commonly require pledgeable assets — often land and property via a mortgage — as security. Collateral backs repayment; the loan remains a liability. If private property was pledged and the business cannot repay, that property remains at stake.
 
-Although the subject matter is partnerships and partner liability, this is really a logic check on overstatement. Non-profit surpluses, mixed economies, and partial market failure are classic cases where absolute wording fails.
+Combined partner assets typically improve collateral for loan applications.
 
-In this setting, unlimited liability applies individually to each general partner. The wording matches the textbook relationship without adding extra conditions.
+Apply the chapter mechanism to the exact wording: name the ownership form or finance source correctly, then check whether the claimed tax, liability, repayment, or matching consequence actually follows from that category.
 
-The reasoning chain is complete, so mark the statement true.', 'TRUE — On the Fuhrmann definition used in the entrance exam, the sentence is correct. A partnership agreement settles rights and responsibilities as well as the division of profits and losses.
+On that basis the assertion matches the ownership or finance rule being tested.
 
-This statement draws on partnerships and partner liability. Treat it as a checklist against the core concept named in the stem, not as a general opinion about business.
+The statement is true.
+', 'FALSE — Keep the partnership triad in view: multi-person ownership, an agreement governing rights and profit shares, and unlimited liability for general partners (with limited partners capped only if they stay out of management).
 
-In this setting, rights, responsibilities, and profit-loss division are core agreement matters. The wording matches the textbook relationship without adding extra conditions.
+Personal savings can be invested similarly in partnerships and sole proprietorships.
 
-Every part of the claim aligns with the standard concept, so the statement stands.', 'FALSE — On the Fuhrmann definition used in the entrance exam, the sentence is false. One person operating alone with hired staff meets the definition of a partnership.
+Sole proprietorship unites ownership and control in one person, has no separate legal personality (personal tax on profits), and carries unlimited liability so private assets can be reached if business resources fall short.
 
-The question tests a precise definition from the section on partnerships and partner liability. Entrance-exam statements often copy a definition almost correctly; one altered phrase is enough to make the whole sentence wrong.
+On that basis the assertion attaches the wrong legal, tax, liability, or finance label.
 
-Applied to this claim, a single owner with employees is not a partnership. That is why the sentence does not survive careful reading.
+The statement is false.
+'] WHERE case_id = 'CASE 4.2.29' AND tier = 'full';
+UPDATE public.economics_cases SET tactical_explanations = ARRAY['TRUE — Keep the partnership triad in view: multi-person ownership, an agreement governing rights and profit shares, and unlimited liability for general partners (with limited partners capped only if they stay out of management).
 
-A common mistake is to recognise the topic word (GDP, NPO, SME, liability) and stop reading. The exam rewards checking every qualifier in the definition.
+Joint discussion in difficult situations can improve decision quality among partners.
 
-The statement sounds plausible but fails on precision, so it is false.'] WHERE case_id = 'CASE 4.2.30' AND tier = 'full';
-UPDATE public.economics_cases SET tactical_explanations = ARRAY['TRUE — On the Fuhrmann definition used in the entrance exam, the sentence is correct. Partners still set up a partnership agreement settling rights, responsibilities, and profit-loss division in a limited partnership.
+Apply the chapter mechanism to the exact wording: name the ownership form or finance source correctly, then check whether the claimed tax, liability, repayment, or matching consequence actually follows from that category.
 
-This statement draws on partnerships and partner liability. Treat it as a checklist against the core concept named in the stem, not as a general opinion about business.
+That is why the claim stands for this form of business or source of finance.
 
-In this setting, founders still need an agreement to settle rights and profit division in a limited partnership. The wording matches the textbook relationship without adding extra conditions.
+The statement is true.
+', 'FALSE — Limited liability would wall off private assets once business assets are exhausted; sole proprietors do not enjoy that wall. Collateral pledged to a lender secures that lender''s claim — it does not convert the firm into a limited company or erase unlimited liability for remaining shortfalls.
 
-No qualifying word breaks the definition or scenario, so the answer is true.', 'TRUE — This statement is correct. Each partner is solely liable for all debts even when the partnership pools more collateral than one owner could.
+Pledging collateral secures the lender; it does not waive all interest, exclude the loan from liabilities, incorporate the firm, or remove unlimited liability for any remaining shortfall. Short-term supplier trade credit also does not typically demand a mortgage over the home.
 
-The topic is partnerships and partner liability, but the decisive skill here is reading quantifiers. Words such as never, always, only, or all turn a generally true idea into a claim that can be rejected by one routine counterexample.
+Under unlimited liability in a general partnership, each partner can be solely liable for all debts of the business: creditors need not split claims proportionally before pursuing one partner''s private assets.
 
-Applied carefully, unlimited liability applies to each partner regardless of pooled collateral. Nothing in the sentence stretches the concept beyond its standard use.
+Unlimited liability does not prevent offering more combined collateral than a sole trader.
 
-No qualifying word breaks the definition or scenario, so the answer is true.', 'TRUE — The claim is correct. Limited partners who avoid management still contribute capital that may help the partnership raise funds.
+So the sentence does not survive once the correct mechanism is applied.
 
-This statement draws on partnerships and partner liability. Treat it as a checklist against the core concept named in the stem, not as a general opinion about business.
+The statement is false.
+', 'TRUE — In a general partnership, partners typically share equal rights, liabilities, and responsibilities unless varied by agreement. Unlimited liability means each partner can be pursued for the firm''s debts.
 
-In this setting, limited partners may supply capital without managing while liability stays capped at contribution. The wording matches the textbook relationship without adding extra conditions.
+Under unlimited liability in a general partnership, each partner can be solely liable for all debts of the business: creditors need not split claims proportionally before pursuing one partner''s private assets.
 
-The reasoning chain is complete, so mark the statement true.', 'TRUE — This statement is correct. Resolving disputes between partners is among the matters partners address in the partnership agreement.
+Unlimited liability applies individually to each general partner.
 
-The relevant theory comes from partnerships and partner liability. Identify which definition or relationship the sentence is trying to test before deciding true or false.
+So the sentence is a correct description of the mechanism at work in this case.
 
-Applied carefully, dispute resolution belongs in the partnership agreement. Nothing in the sentence stretches the concept beyond its standard use.
+The statement is true.
+', 'TRUE — Partners need a partnership agreement to settle ownership shares, decision rights, responsibilities, and how profits and losses are divided. Without clear terms, disputes over control and residual claims are harder to resolve.
 
-No qualifying word breaks the definition or scenario, so the answer is true.', 'TRUE — This statement is correct. A partnership agreement records each partner''s percentage of ownership alongside profit-loss division.
+Rights, responsibilities, and profit-loss division are core agreement matters.
 
-The relevant theory comes from partnerships and partner liability. Identify which definition or relationship the sentence is trying to test before deciding true or false.
+Apply the chapter mechanism to the exact wording: name the ownership form or finance source correctly, then check whether the claimed tax, liability, repayment, or matching consequence actually follows from that category.
 
-Applied carefully, ownership shares and profit-loss division are agreement topics. Nothing in the sentence stretches the concept beyond its standard use.
+So the sentence is a correct description of the mechanism at work in this case.
 
-The reasoning chain is complete, so mark the statement true.'] WHERE case_id = 'CASE 4.2.31' AND tier = 'full';
-UPDATE public.economics_cases SET tactical_explanations = ARRAY['TRUE — The claim is correct. Terms of the partnership and decision-making procedures may also be documented in the partnership agreement.
+The statement is true.
+', 'FALSE — Keep the partnership triad in view: multi-person ownership, an agreement governing rights and profit shares, and unlimited liability for general partners (with limited partners capped only if they stay out of management).
 
-This statement draws on partnerships and partner liability. Treat it as a checklist against the core concept named in the stem, not as a general opinion about business.
+A single owner with employees is not a partnership.
 
-In this setting, partnership terms and decision making belong in the agreement. The wording matches the textbook relationship without adding extra conditions.
+Apply the chapter mechanism to the exact wording: name the ownership form or finance source correctly, then check whether the claimed tax, liability, repayment, or matching consequence actually follows from that category.
 
-The reasoning chain is complete, so mark the statement true.', 'TRUE — This statement is correct. Unlimited liability for business debts applies to every partner in a general partnership.
+That misclassification is enough to reject the claim.
 
-The topic is partnerships and partner liability, but the decisive skill here is reading quantifiers. Words such as never, always, only, or all turn a generally true idea into a claim that can be rejected by one routine counterexample.
+The statement is false.
+'] WHERE case_id = 'CASE 4.2.30' AND tier = 'full';
+UPDATE public.economics_cases SET tactical_explanations = ARRAY['TRUE — Partners need a partnership agreement to settle ownership shares, decision rights, responsibilities, and how profits and losses are divided. Without clear terms, disputes over control and residual claims are harder to resolve.
 
-Applied carefully, general partners face unlimited liability for all business debts. Nothing in the sentence stretches the concept beyond its standard use.
+In a limited partnership, limited partners'' liability is capped at what they contributed, and they normally must not take part in management — that is the price of the liability cap. General partners continue to manage and usually retain unlimited liability.
 
-The reasoning chain is complete, so mark the statement true.', 'TRUE — On the Fuhrmann definition used in the entrance exam, the sentence is correct. Joint founding by two or more persons establishes a partnership even before a written agreement is finalised.
+Founders still need an agreement to settle rights and profit division in a limited partnership.
 
-This statement draws on partnerships and partner liability. Treat it as a checklist against the core concept named in the stem, not as a general opinion about business.
+On that basis the assertion matches the ownership or finance rule being tested.
 
-In this setting, two or more joint founders create a partnership; the agreement settles detailed rights. The wording matches the textbook relationship without adding extra conditions.
+The statement is true.
+', 'TRUE — Long-term lenders commonly require pledgeable assets — often land and property via a mortgage — as security. Collateral backs repayment; the loan remains a liability. If private property was pledged and the business cannot repay, that property remains at stake.
 
-The reasoning chain is complete, so mark the statement true.', 'TRUE — This statement is correct. A partnership agreement specifies ownership percentages even when partners share equal management rights.
+Under unlimited liability in a general partnership, each partner can be solely liable for all debts of the business: creditors need not split claims proportionally before pursuing one partner''s private assets.
 
-Here you must apply ideas from partnerships and partner liability to a concrete situation rather than recite a definition from memory. Ownership, customer type, stakeholder group, or country of production usually decides the verdict.
+Unlimited liability applies to each partner regardless of pooled collateral.
 
-Applied carefully, the agreement records ownership percentages alongside equal management rights. Nothing in the sentence stretches the concept beyond its standard use.
+On that basis the assertion matches the ownership or finance rule being tested.
 
-No qualifying word breaks the definition or scenario, so the answer is true.', 'TRUE — This statement is correct. Partners who specialise in different tasks remain jointly liable for all debts under unlimited liability.
+The statement is true.
+', 'TRUE — In a limited partnership, limited partners'' liability is capped at what they contributed, and they normally must not take part in management — that is the price of the liability cap. General partners continue to manage and usually retain unlimited liability.
 
-The topic is partnerships and partner liability, but the decisive skill here is reading quantifiers. Words such as never, always, only, or all turn a generally true idea into a claim that can be rejected by one routine counterexample.
+Limited partners may supply capital without managing while liability stays capped at contribution.
 
-Applied carefully, specialisation does not limit each partner''s unlimited liability exposure. Nothing in the sentence stretches the concept beyond its standard use.
+On that basis the assertion matches the ownership or finance rule being tested.
 
-Every part of the claim aligns with the standard concept, so the statement stands.'] WHERE case_id = 'CASE 4.2.32' AND tier = 'full';
-UPDATE public.economics_cases SET tactical_explanations = ARRAY['FALSE — This statement is false. A general partnership automatically grants limited liability to partners who manage the firm.
+The statement is true.
+', 'TRUE — Partners need a partnership agreement to settle ownership shares, decision rights, responsibilities, and how profits and losses are divided. Without clear terms, disputes over control and residual claims are harder to resolve.
 
-The topic is partnerships and partner liability, but the decisive skill here is reading quantifiers. Words such as never, always, only, or all turn a generally true idea into a claim that can be rejected by one routine counterexample.
+Dispute resolution belongs in the partnership agreement.
 
-The statement overreaches because general partnership management comes with unlimited liability, not limited protection. The trap is to agree with the topic while missing the one detail that breaks the logic.
+Apply the chapter mechanism to the exact wording: name the ownership form or finance source correctly, then check whether the claimed tax, liability, repayment, or matching consequence actually follows from that category.
 
-Watch the absolute wording "automatically": exam statements often sound plausible until a single scope word turns an otherwise familiar idea into an overclaim.
+So the sentence is a correct description of the mechanism at work in this case.
 
-Once the overclaim or mislabel is exposed, the only consistent answer is false.', 'TRUE — Evaluated against the textbook standard, this assertion is correct. When facing difficult situations partners can exchange ideas and perhaps reach better joint decisions.
+The statement is true.
+', 'TRUE — Partners need a partnership agreement to settle ownership shares, decision rights, responsibilities, and how profits and losses are divided. Without clear terms, disputes over control and residual claims are harder to resolve.
 
-Here you must apply ideas from partnerships and partner liability to a concrete situation rather than recite a definition from memory. Ownership, customer type, stakeholder group, or country of production usually decides the verdict.
+Ownership shares and profit-loss division are agreement topics.
 
-Applied carefully, joint discussion during difficult situations can improve partnership decisions. Nothing in the sentence stretches the concept beyond its standard use.
+Apply the chapter mechanism to the exact wording: name the ownership form or finance source correctly, then check whether the claimed tax, liability, repayment, or matching consequence actually follows from that category.
 
-No qualifying word breaks the definition or scenario, so the answer is true.', 'FALSE — This statement is false. Limited partners who manage daily operations retain liability capped at their ownership percentage.
+So the sentence is a correct description of the mechanism at work in this case.
 
-The relevant theory comes from partnerships and partner liability. Identify which definition or relationship the sentence is trying to test before deciding true or false.
+The statement is true.
+'] WHERE case_id = 'CASE 4.2.31' AND tier = 'full';
+UPDATE public.economics_cases SET tactical_explanations = ARRAY['TRUE — Partners need a partnership agreement to settle ownership shares, decision rights, responsibilities, and how profits and losses are divided. Without clear terms, disputes over control and residual claims are harder to resolve.
 
-The statement overreaches because daily management removes capped liability regardless of ownership percentage. The trap is to agree with the topic while missing the one detail that breaks the logic.
+Partnership terms and decision making belong in the agreement.
 
-The statement sounds plausible but fails on precision, so it is false.', 'FALSE — The claim is false. A general partner''s liability is restricted to the proportion of ownership stated in the partnership agreement.
+Apply the chapter mechanism to the exact wording: name the ownership form or finance source correctly, then check whether the claimed tax, liability, repayment, or matching consequence actually follows from that category.
 
-This statement draws on partnerships and partner liability. Treat it as a checklist against the core concept named in the stem, not as a general opinion about business.
+That is why the claim stands for this form of business or source of finance.
 
-Applied to this claim, general partners face unlimited liability, not ownership-proportional caps. That is why the sentence does not survive careful reading.
+The statement is true.
+', 'TRUE — In a general partnership, partners typically share equal rights, liabilities, and responsibilities unless varied by agreement. Unlimited liability means each partner can be pursued for the firm''s debts.
 
-The statement sounds plausible but fails on precision, so it is false.', 'TRUE — On the Fuhrmann definition used in the entrance exam, the sentence is correct. At least one partner in a limited partnership is not involved in the management of the business.
+Under unlimited liability in a general partnership, each partner can be solely liable for all debts of the business: creditors need not split claims proportionally before pursuing one partner''s private assets.
 
-This statement draws on partnerships and partner liability. Treat it as a checklist against the core concept named in the stem, not as a general opinion about business.
+General partners face unlimited liability for all business debts.
 
-In this setting, limited partnerships require at least one partner outside management. The wording matches the textbook relationship without adding extra conditions.
+On that basis the assertion matches the ownership or finance rule being tested.
 
-No qualifying word breaks the definition or scenario, so the answer is true.'] WHERE case_id = 'CASE 4.2.33' AND tier = 'full';
-UPDATE public.economics_cases SET tactical_explanations = ARRAY['TRUE — On the Fuhrmann definition used in the entrance exam, the sentence is correct. The limited partner''s liability is limited to the amount of money contributed to the business.
+The statement is true.
+', 'TRUE — When two or more persons jointly found a business, the ownership form is a partnership. Joint founding — shared ownership intent — is the defining step that distinguishes it from a sole proprietorship.
 
-This statement draws on partnerships and partner liability. Treat it as a checklist against the core concept named in the stem, not as a general opinion about business.
+Two or more joint founders create a partnership; the agreement settles detailed rights.
 
-In this setting, limited partner exposure stops at the contributed capital amount. The wording matches the textbook relationship without adding extra conditions.
+Apply the chapter mechanism to the exact wording: name the ownership form or finance source correctly, then check whether the claimed tax, liability, repayment, or matching consequence actually follows from that category.
 
-Every part of the claim aligns with the standard concept, so the statement stands.', 'TRUE — The claim is correct. General managing partners in a limited partnership remain subject to unlimited liability for firm debts.
+That is why the claim stands for this form of business or source of finance.
 
-This statement draws on partnerships and partner liability. Treat it as a checklist against the core concept named in the stem, not as a general opinion about business.
+The statement is true.
+', 'TRUE — Partners need a partnership agreement to settle ownership shares, decision rights, responsibilities, and how profits and losses are divided. Without clear terms, disputes over control and residual claims are harder to resolve.
 
-In this setting, managing partners still face unlimited liability for all business debts. The wording matches the textbook relationship without adding extra conditions.
+The agreement records ownership percentages alongside equal management rights.
 
-No qualifying word breaks the definition or scenario, so the answer is true.', 'TRUE — On the Fuhrmann definition used in the entrance exam, the sentence is correct. Partners still document ownership shares and profit-loss division among all partners in a limited partnership agreement.
+Apply the chapter mechanism to the exact wording: name the ownership form or finance source correctly, then check whether the claimed tax, liability, repayment, or matching consequence actually follows from that category.
 
-Although the subject matter is partnerships and partner liability, this is really a logic check on overstatement. Non-profit surpluses, mixed economies, and partial market failure are classic cases where absolute wording fails.
+So the sentence is a correct description of the mechanism at work in this case.
 
-In this setting, ownership and profit-loss rules are settled in the partnership agreement. The wording matches the textbook relationship without adding extra conditions.
+The statement is true.
+', 'TRUE — Under unlimited liability in a general partnership, each partner can be solely liable for all debts of the business: creditors need not split claims proportionally before pursuing one partner''s private assets.
 
-No qualifying word breaks the definition or scenario, so the answer is true.', 'TRUE — On the Fuhrmann definition used in the entrance exam, the sentence is correct. Each general partner remains solely liable for all debts regardless of the profit-loss split in the agreement.
+Partners can divide tasks and specialise — one in sales, another in operations — while still sharing ownership. Specialisation is an operational advantage of multi-person ownership.
 
-Although the subject matter is partnerships and partner liability, this is really a logic check on overstatement. Non-profit surpluses, mixed economies, and partial market failure are classic cases where absolute wording fails.
+Specialisation does not limit each partner''s unlimited liability exposure.
 
-In this setting, profit-loss division does not limit each partner''s liability to their profit share. The wording matches the textbook relationship without adding extra conditions.
+On that basis the assertion matches the ownership or finance rule being tested.
 
-No qualifying word breaks the definition or scenario, so the answer is true.', 'FALSE — This statement is false. In a limited partnership all partners enjoy liability capped at the capital each one invested.
+The statement is true.
+'] WHERE case_id = 'CASE 4.2.32' AND tier = 'full';
+UPDATE public.economics_cases SET tactical_explanations = ARRAY['FALSE — In a general partnership, partners typically share equal rights, liabilities, and responsibilities unless varied by agreement. Unlimited liability means each partner can be pursued for the firm''s debts.
 
-The topic is partnerships and partner liability, but the decisive skill here is reading quantifiers. Words such as never, always, only, or all turn a generally true idea into a claim that can be rejected by one routine counterexample.
+General partnership management comes with unlimited liability, not limited protection.
 
-The statement overreaches because managing partners still face unlimited liability in a limited partnership. The trap is to agree with the topic while missing the one detail that breaks the logic.
+Apply the chapter mechanism to the exact wording: name the ownership form or finance source correctly, then check whether the claimed tax, liability, repayment, or matching consequence actually follows from that category.
 
-Watch the absolute wording "all": exam statements often sound plausible until a single scope word turns an otherwise familiar idea into an overclaim.
+On that basis the assertion attaches the wrong legal, tax, liability, or finance label.
 
-Because the decisive detail is wrong, mark the statement false.'] WHERE case_id = 'CASE 4.2.34' AND tier = 'full';
-UPDATE public.economics_cases SET tactical_explanations = ARRAY['TRUE — The claim is correct. Equal rights in a general partnership refer to management standing rather than identical ownership percentages.
+The statement is false.
+', 'TRUE — Keep the partnership triad in view: multi-person ownership, an agreement governing rights and profit shares, and unlimited liability for general partners (with limited partners capped only if they stay out of management).
 
-The section on partnerships and partner liability frequently contrasts two similar ideas side by side. A comparison statement is true only if the relationship is stated in the right direction and applies to the right concept pair.
+Joint discussion during difficult situations can improve partnership decisions.
 
-In this setting, equal rights coexist with possibly unequal ownership percentages in the agreement. The wording matches the textbook relationship without adding extra conditions.
+Apply the chapter mechanism to the exact wording: name the ownership form or finance source correctly, then check whether the claimed tax, liability, repayment, or matching consequence actually follows from that category.
 
-The reasoning chain is complete, so mark the statement true.', 'TRUE — On the Fuhrmann definition used in the entrance exam, the sentence is correct. Division of profit and loss must be settled within the partnership agreement.
+So the sentence is a correct description of the mechanism at work in this case.
 
-This statement draws on partnerships and partner liability. Treat it as a checklist against the core concept named in the stem, not as a general opinion about business.
+The statement is true.
+', 'FALSE — Limited partners who take part in management risk losing the liability shield that limited status provides. Limited liability is not a free add-on to active control; the non-management rule is structural.
 
-In this setting, profit-loss division is a required agreement topic. The wording matches the textbook relationship without adding extra conditions.
+Daily management removes capped liability regardless of ownership percentage.
 
-No qualifying word breaks the definition or scenario, so the answer is true.', 'TRUE — Evaluated against the textbook standard, this assertion is correct. Recording each partner''s percentage of ownership is part of setting up the partnership agreement.
+Limited partners trade a liability cap for staying out of management. If they take part in running the firm, they risk losing that shield; general partners continue with management and typically unlimited liability.
 
-The relevant theory comes from partnerships and partner liability. Identify which definition or relationship the sentence is trying to test before deciding true or false.
+That misclassification is enough to reject the claim.
 
-Applied carefully, ownership percentages are documented when setting up the agreement. Nothing in the sentence stretches the concept beyond its standard use.
+The statement is false.
+', 'FALSE — Partners need a partnership agreement to settle ownership shares, decision rights, responsibilities, and how profits and losses are divided. Without clear terms, disputes over control and residual claims are harder to resolve.
 
-No qualifying word breaks the definition or scenario, so the answer is true.', 'TRUE — Evaluated against the textbook standard, this assertion is correct. Managing partners in a limited partnership retain unlimited liability even when a silent partner invests most of the capital.
+General partners face unlimited liability, not ownership-proportional caps.
 
-Here you must apply ideas from partnerships and partner liability to a concrete situation rather than recite a definition from memory. Ownership, customer type, stakeholder group, or country of production usually decides the verdict.
+Apply the chapter mechanism to the exact wording: name the ownership form or finance source correctly, then check whether the claimed tax, liability, repayment, or matching consequence actually follows from that category.
 
-Applied carefully, managers face unlimited liability regardless of how much capital silent partners contribute. Nothing in the sentence stretches the concept beyond its standard use.
+So the sentence does not survive once the correct mechanism is applied.
 
-No qualifying word breaks the definition or scenario, so the answer is true.', 'TRUE — Evaluated against the textbook standard, this assertion is correct. Two or more persons must jointly found a business before either general or limited partnership rules apply.
+The statement is false.
+', 'TRUE — In a limited partnership, limited partners'' liability is capped at what they contributed, and they normally must not take part in management — that is the price of the liability cap. General partners continue to manage and usually retain unlimited liability.
 
-The relevant theory comes from partnerships and partner liability. Identify which definition or relationship the sentence is trying to test before deciding true or false.
+Limited partnerships require at least one partner outside management.
 
-Applied carefully, joint founding by two or more persons underpins both partnership types. Nothing in the sentence stretches the concept beyond its standard use.
+Limited partners trade a liability cap for staying out of management. If they take part in running the firm, they risk losing that shield; general partners continue with management and typically unlimited liability.
 
-Every part of the claim aligns with the standard concept, so the statement stands.'] WHERE case_id = 'CASE 4.2.35' AND tier = 'full';
-UPDATE public.economics_cases SET tactical_explanations = ARRAY['TRUE — This statement is correct. Unlimited liability does not stop partners from combining personal savings to fund the business.
+On that basis the assertion matches the ownership or finance rule being tested.
 
-The relevant theory comes from partnerships and partner liability. Identify which definition or relationship the sentence is trying to test before deciding true or false.
+The statement is true.
+'] WHERE case_id = 'CASE 4.2.33' AND tier = 'full';
+UPDATE public.economics_cases SET tactical_explanations = ARRAY['TRUE — In a limited partnership, limited partners'' liability is capped at what they contributed, and they normally must not take part in management — that is the price of the liability cap. General partners continue to manage and usually retain unlimited liability.
 
-Applied carefully, unlimited liability coexists with pooling partner savings for investment. Nothing in the sentence stretches the concept beyond its standard use.
+Limited partner exposure stops at the contributed capital amount.
 
-No qualifying word breaks the definition or scenario, so the answer is true.', 'TRUE — The claim is correct. Equal rights, liabilities, and responsibilities apply to every partner in a general partnership structure.
+Limited partners trade a liability cap for staying out of management. If they take part in running the firm, they risk losing that shield; general partners continue with management and typically unlimited liability.
 
-Although the subject matter is partnerships and partner liability, this is really a logic check on overstatement. Non-profit surpluses, mixed economies, and partial market failure are classic cases where absolute wording fails.
+So the sentence is a correct description of the mechanism at work in this case.
 
-In this setting, general partnerships assign equal rights, liabilities, and responsibilities to all partners. The wording matches the textbook relationship without adding extra conditions.
+The statement is true.
+', 'TRUE — In a limited partnership, limited partners'' liability is capped at what they contributed, and they normally must not take part in management — that is the price of the liability cap. General partners continue to manage and usually retain unlimited liability.
 
-No qualifying word breaks the definition or scenario, so the answer is true.', 'TRUE — On the Fuhrmann definition used in the entrance exam, the sentence is correct. Equal rights allow each partner to participate in management even when ownership percentages differ in the agreement.
+Under unlimited liability in a general partnership, each partner can be solely liable for all debts of the business: creditors need not split claims proportionally before pursuing one partner''s private assets.
 
-The scenario is a worked example of partnerships and partner liability. Translate the story into the textbook category first; only then judge whether the sentence describes that category accurately.
+Managing partners still face unlimited liability for all business debts.
 
-In this setting, equal management rights can coexist with unequal ownership percentages. The wording matches the textbook relationship without adding extra conditions.
+That is why the claim stands for this form of business or source of finance.
 
-No qualifying word breaks the definition or scenario, so the answer is true.', 'FALSE — Evaluated against the textbook standard, this assertion is false. Because liability is unlimited, partners cannot combine private assets when applying for credit.
+The statement is true.
+', 'TRUE — Partners need a partnership agreement to settle ownership shares, decision rights, responsibilities, and how profits and losses are divided. Without clear terms, disputes over control and residual claims are harder to resolve.
 
-The topic is partnerships and partner liability, but the decisive skill here is reading quantifiers. Words such as never, always, only, or all turn a generally true idea into a claim that can be rejected by one routine counterexample.
+In a limited partnership, limited partners'' liability is capped at what they contributed, and they normally must not take part in management — that is the price of the liability cap. General partners continue to manage and usually retain unlimited liability.
 
-The statement overreaches because unlimited liability does not block partners from combining private assets for credit. The trap is to agree with the topic while missing the one detail that breaks the logic.
+Ownership and profit-loss rules are settled in the partnership agreement.
 
-Watch the absolute wording "cannot": exam statements often sound plausible until a single scope word turns an otherwise familiar idea into an overclaim.
+On that basis the assertion matches the ownership or finance rule being tested.
 
-The statement sounds plausible but fails on precision, so it is false.', 'TRUE — The claim is correct. Partners can share tasks and specialise while equal responsibilities continue to apply overall.
+The statement is true.
+', 'TRUE — Under unlimited liability in a general partnership, each partner can be solely liable for all debts of the business: creditors need not split claims proportionally before pursuing one partner''s private assets.
 
-This statement draws on partnerships and partner liability. Treat it as a checklist against the core concept named in the stem, not as a general opinion about business.
+Profit-loss division does not limit each partner''s liability to their profit share.
 
-In this setting, specialisation is compatible with equal overall responsibilities. The wording matches the textbook relationship without adding extra conditions.
+Apply the chapter mechanism to the exact wording: name the ownership form or finance source correctly, then check whether the claimed tax, liability, repayment, or matching consequence actually follows from that category.
 
-Every part of the claim aligns with the standard concept, so the statement stands.'] WHERE case_id = 'CASE 4.2.36' AND tier = 'full';
-UPDATE public.economics_cases SET tactical_explanations = ARRAY['FALSE — Evaluated against the textbook standard, this assertion is false. All partners in a limited partnership face equal unlimited liability because the firm is unincorporated.
+That is why the claim stands for this form of business or source of finance.
 
-The topic is partnerships and partner liability, but the decisive skill here is reading quantifiers. Words such as never, always, only, or all turn a generally true idea into a claim that can be rejected by one routine counterexample.
+The statement is true.
+', 'FALSE — Limited partners who take part in management risk losing the liability shield that limited status provides. Limited liability is not a free add-on to active control; the non-management rule is structural.
 
-The statement overreaches because unincorporated status does not impose unlimited liability on every limited partner. The trap is to agree with the topic while missing the one detail that breaks the logic.
+Managing partners still face unlimited liability in a limited partnership.
 
-Watch the absolute wording "all": exam statements often sound plausible until a single scope word turns an otherwise familiar idea into an overclaim.
+Limited partners trade a liability cap for staying out of management. If they take part in running the firm, they risk losing that shield; general partners continue with management and typically unlimited liability.
 
-The statement sounds plausible but fails on precision, so it is false.', 'FALSE — Evaluated against the textbook standard, this assertion is false. Unequal ownership percentages in the agreement reduce each general partner''s maximum liability to that percentage of total debt.
+That misclassification is enough to reject the claim.
 
-The relevant theory comes from partnerships and partner liability. Identify which definition or relationship the sentence is trying to test before deciding true or false.
+The statement is false.
+'] WHERE case_id = 'CASE 4.2.34' AND tier = 'full';
+UPDATE public.economics_cases SET tactical_explanations = ARRAY['TRUE — In a general partnership, partners typically share equal rights, liabilities, and responsibilities unless varied by agreement. Unlimited liability means each partner can be pursued for the firm''s debts.
 
-The statement overreaches because liability is not reduced to ownership percentage for general partners. The trap is to agree with the topic while missing the one detail that breaks the logic.
+Equal rights coexist with possibly unequal ownership percentages in the agreement.
 
-The statement sounds plausible but fails on precision, so it is false.', 'TRUE — On the Fuhrmann definition used in the entrance exam, the sentence is correct. Unlimited liability extends to every general partner even when the partnership agreement assigns unequal profit shares.
+Apply the chapter mechanism to the exact wording: name the ownership form or finance source correctly, then check whether the claimed tax, liability, repayment, or matching consequence actually follows from that category.
 
-Although the subject matter is partnerships and partner liability, this is really a logic check on overstatement. Non-profit surpluses, mixed economies, and partial market failure are classic cases where absolute wording fails.
+On that basis the assertion matches the ownership or finance rule being tested.
 
-In this setting, profit share does not cap each general partner''s liability for the entire debt. The wording matches the textbook relationship without adding extra conditions.
+The statement is true.
+', 'TRUE — Partners need a partnership agreement to settle ownership shares, decision rights, responsibilities, and how profits and losses are divided. Without clear terms, disputes over control and residual claims are harder to resolve.
 
-The reasoning chain is complete, so mark the statement true.', 'FALSE — The claim is false. Specialisation in operations shields a managing partner from liability for debts created by another partner''s department.
+Profit-loss division is a required agreement topic.
 
-This statement draws on partnerships and partner liability. Treat it as a checklist against the core concept named in the stem, not as a general opinion about business.
+Apply the chapter mechanism to the exact wording: name the ownership form or finance source correctly, then check whether the claimed tax, liability, repayment, or matching consequence actually follows from that category.
 
-Applied to this claim, departmental specialisation does not shield general partners from firm-wide debts. That is why the sentence does not survive careful reading.
+That is why the claim stands for this form of business or source of finance.
 
-Because the decisive detail is wrong, mark the statement false.', 'TRUE — Evaluated against the textbook standard, this assertion is correct. Limited partners who refrain from management have liability limited to their contributed capital.
+The statement is true.
+', 'TRUE — Partners need a partnership agreement to settle ownership shares, decision rights, responsibilities, and how profits and losses are divided. Without clear terms, disputes over control and residual claims are harder to resolve.
 
-The relevant theory comes from partnerships and partner liability. Identify which definition or relationship the sentence is trying to test before deciding true or false.
+Ownership percentages are documented when setting up the agreement.
 
-Applied carefully, non-managing limited partners face liability capped at their contribution. Nothing in the sentence stretches the concept beyond its standard use.
+Apply the chapter mechanism to the exact wording: name the ownership form or finance source correctly, then check whether the claimed tax, liability, repayment, or matching consequence actually follows from that category.
 
-The reasoning chain is complete, so mark the statement true.'] WHERE case_id = 'CASE 4.2.37' AND tier = 'full';
-UPDATE public.economics_cases SET tactical_explanations = ARRAY['TRUE — On the Fuhrmann definition used in the entrance exam, the sentence is correct. Financial aspects of the partnership remain in general similar to those of a sole proprietor.
+So the sentence is a correct description of the mechanism at work in this case.
 
-This statement draws on partnerships and partner liability. Treat it as a checklist against the core concept named in the stem, not as a general opinion about business.
+The statement is true.
+', 'TRUE — In a limited partnership, limited partners'' liability is capped at what they contributed, and they normally must not take part in management — that is the price of the liability cap. General partners continue to manage and usually retain unlimited liability.
 
-In this setting, partnership finance broadly resembles sole proprietorship finance. The wording matches the textbook relationship without adding extra conditions.
+Under unlimited liability in a general partnership, each partner can be solely liable for all debts of the business: creditors need not split claims proportionally before pursuing one partner''s private assets.
 
-The reasoning chain is complete, so mark the statement true.', 'FALSE — Evaluated against the textbook standard, this assertion is false. Partners who jointly found a business need not settle rights and responsibilities if they agree informally over coffee.
+Managers face unlimited liability regardless of how much capital silent partners contribute.
 
-Here you must apply ideas from partnerships and partner liability to a concrete situation rather than recite a definition from memory. Ownership, customer type, stakeholder group, or country of production usually decides the verdict.
+On that basis the assertion matches the ownership or finance rule being tested.
 
-The statement overreaches because informal agreement does not replace the required partnership agreement. The trap is to agree with the topic while missing the one detail that breaks the logic.
+The statement is true.
+', 'TRUE — When two or more persons jointly found a business, the ownership form is a partnership. Joint founding — shared ownership intent — is the defining step that distinguishes it from a sole proprietorship.
 
-Once the overclaim or mislabel is exposed, the only consistent answer is false.', 'TRUE — On the Fuhrmann definition used in the entrance exam, the sentence is correct. Combined private assets from partners may provide more collateral when the partnership seeks credit.
+In a limited partnership, limited partners'' liability is capped at what they contributed, and they normally must not take part in management — that is the price of the liability cap. General partners continue to manage and usually retain unlimited liability.
 
-The scenario is a worked example of partnerships and partner liability. Translate the story into the textbook category first; only then judge whether the sentence describes that category accurately.
+Joint founding by two or more persons underpins both partnership types.
 
-In this setting, more partners typically mean more combined collateral for credit applications. The wording matches the textbook relationship without adding extra conditions.
+So the sentence is a correct description of the mechanism at work in this case.
 
-The reasoning chain is complete, so mark the statement true.', 'FALSE — Evaluated against the textbook standard, this assertion is false. Because partnerships have multiple owners, they automatically qualify for limited liability like corporations.
+The statement is true.
+'] WHERE case_id = 'CASE 4.2.35' AND tier = 'full';
+UPDATE public.economics_cases SET tactical_explanations = ARRAY['TRUE — Under unlimited liability in a general partnership, each partner can be solely liable for all debts of the business: creditors need not split claims proportionally before pursuing one partner''s private assets.
 
-The topic is partnerships and partner liability, but the decisive skill here is reading quantifiers. Words such as never, always, only, or all turn a generally true idea into a claim that can be rejected by one routine counterexample.
+Unlimited liability coexists with pooling partner savings for investment.
 
-The statement overreaches because multiple owners do not automatically grant corporate-style limited liability. The trap is to agree with the topic while missing the one detail that breaks the logic.
+Apply the chapter mechanism to the exact wording: name the ownership form or finance source correctly, then check whether the claimed tax, liability, repayment, or matching consequence actually follows from that category.
 
-Watch the absolute wording "automatically": exam statements often sound plausible until a single scope word turns an otherwise familiar idea into an overclaim.
+So the sentence is a correct description of the mechanism at work in this case.
 
-The statement sounds plausible but fails on precision, so it is false.', 'TRUE — This statement is correct. A written partnership agreement is used to define partners'' rights, duties, and how profit and loss are shared.
+The statement is true.
+', 'TRUE — In a general partnership, partners typically share equal rights, liabilities, and responsibilities unless varied by agreement. Unlimited liability means each partner can be pursued for the firm''s debts.
 
-The relevant theory comes from partnerships and partner liability. Identify which definition or relationship the sentence is trying to test before deciding true or false.
+General partnerships assign equal rights, liabilities, and responsibilities to all partners.
 
-Applied carefully, founders require an agreement covering rights, responsibilities, and profit sharing. Nothing in the sentence stretches the concept beyond its standard use.
+Apply the chapter mechanism to the exact wording: name the ownership form or finance source correctly, then check whether the claimed tax, liability, repayment, or matching consequence actually follows from that category.
 
-No qualifying word breaks the definition or scenario, so the answer is true.'] WHERE case_id = 'CASE 4.2.38' AND tier = 'full';
-UPDATE public.economics_cases SET tactical_explanations = ARRAY['TRUE — On the Fuhrmann definition used in the entrance exam, the sentence is correct. Two or more partners should possibly be able to invest more savings than a sole proprietor alone.
+That is why the claim stands for this form of business or source of finance.
 
-This statement draws on partnerships and partner liability. Treat it as a checklist against the core concept named in the stem, not as a general opinion about business.
+The statement is true.
+', 'TRUE — In a general partnership, partners typically share equal rights, liabilities, and responsibilities unless varied by agreement. Unlimited liability means each partner can be pursued for the firm''s debts.
 
-In this setting, multiple partners can pool savings beyond one proprietor''s capacity. The wording matches the textbook relationship without adding extra conditions.
+Equal management rights can coexist with unequal ownership percentages.
 
-No qualifying word breaks the definition or scenario, so the answer is true.', 'TRUE — This statement is correct. Partners together may offer more private assets as collateral when seeking a business loan.
+Apply the chapter mechanism to the exact wording: name the ownership form or finance source correctly, then check whether the claimed tax, liability, repayment, or matching consequence actually follows from that category.
 
-Here you must apply ideas from partnerships and partner liability to a concrete situation rather than recite a definition from memory. Ownership, customer type, stakeholder group, or country of production usually decides the verdict.
+On that basis the assertion matches the ownership or finance rule being tested.
 
-Applied carefully, combined private assets strengthen loan collateral for partnerships. Nothing in the sentence stretches the concept beyond its standard use.
+The statement is true.
+', 'FALSE — Keep the partnership triad in view: multi-person ownership, an agreement governing rights and profit shares, and unlimited liability for general partners (with limited partners capped only if they stay out of management).
 
-Every part of the claim aligns with the standard concept, so the statement stands.', 'TRUE — This statement is correct. Partners in a general partnership can exchange ideas in difficult situations and perhaps reach stronger collective decisions.
+Unlimited liability does not block partners from combining private assets for credit.
 
-The relevant theory comes from partnerships and partner liability. Identify which definition or relationship the sentence is trying to test before deciding true or false.
+Apply the chapter mechanism to the exact wording: name the ownership form or finance source correctly, then check whether the claimed tax, liability, repayment, or matching consequence actually follows from that category.
 
-Applied carefully, joint discussion in difficult situations can improve partnership decision quality. Nothing in the sentence stretches the concept beyond its standard use.
+So the sentence does not survive once the correct mechanism is applied.
 
-No qualifying word breaks the definition or scenario, so the answer is true.', 'TRUE — This statement is correct. Setting up a partnership agreement is necessary to settle rights and responsibilities among the founders.
+The statement is false.
+', 'TRUE — Partners can divide tasks and specialise — one in sales, another in operations — while still sharing ownership. Specialisation is an operational advantage of multi-person ownership.
 
-The relevant theory comes from partnerships and partner liability. Identify which definition or relationship the sentence is trying to test before deciding true or false.
+Specialisation is compatible with equal overall responsibilities.
 
-Applied carefully, founders need an agreement to settle rights, responsibilities, and profit-loss division. Nothing in the sentence stretches the concept beyond its standard use.
+Apply the chapter mechanism to the exact wording: name the ownership form or finance source correctly, then check whether the claimed tax, liability, repayment, or matching consequence actually follows from that category.
 
-Every part of the claim aligns with the standard concept, so the statement stands.', 'TRUE — Evaluated against the textbook standard, this assertion is correct. The partnership agreement records rights and responsibilities together with the division of profits and losses.
+So the sentence is a correct description of the mechanism at work in this case.
 
-The relevant theory comes from partnerships and partner liability. Identify which definition or relationship the sentence is trying to test before deciding true or false.
+The statement is true.
+'] WHERE case_id = 'CASE 4.2.36' AND tier = 'full';
+UPDATE public.economics_cases SET tactical_explanations = ARRAY['FALSE — Limited partners who take part in management risk losing the liability shield that limited status provides. Limited liability is not a free add-on to active control; the non-management rule is structural.
 
-Applied carefully, rights, responsibilities, and profit-loss division belong in the agreement. Nothing in the sentence stretches the concept beyond its standard use.
+Under unlimited liability in a general partnership, each partner can be solely liable for all debts of the business: creditors need not split claims proportionally before pursuing one partner''s private assets.
 
-Every part of the claim aligns with the standard concept, so the statement stands.'] WHERE case_id = 'CASE 4.2.39' AND tier = 'full';
-UPDATE public.economics_cases SET tactical_explanations = ARRAY['TRUE — The claim is correct. Managing partners in a limited partnership remain subject to unlimited liability for business debts.
+The unincorporated/incorporated split turns on legal personality. Unincorporated firms (sole traders, partnerships) are not legal entities of their own; incorporated companies are legal persons. Pooling capital, filing personal tax, listing shares, or enjoying limited liability must be attached to the correct side of that split — limited liability marks incorporated forms, and listing is not the sole criterion of incorporation.
 
-This statement draws on partnerships and partner liability. Treat it as a checklist against the core concept named in the stem, not as a general opinion about business.
+Unincorporated status does not impose unlimited liability on every limited partner.
 
-In this setting, managing general partners still face unlimited liability for partnership obligations. The wording matches the textbook relationship without adding extra conditions.
+That misclassification is enough to reject the claim.
 
-The reasoning chain is complete, so mark the statement true.', 'FALSE — The claim is false. Assigning one partner to handle suppliers in the agreement removes unlimited liability from the remaining general partners.
+The statement is false.
+', 'FALSE — Keep the partnership triad in view: multi-person ownership, an agreement governing rights and profit shares, and unlimited liability for general partners (with limited partners capped only if they stay out of management).
 
-This statement draws on partnerships and partner liability. Treat it as a checklist against the core concept named in the stem, not as a general opinion about business.
+Liability is not reduced to ownership percentage for general partners.
 
-Applied to this claim, role assignment for suppliers does not eliminate joint unlimited liability. That is why the sentence does not survive careful reading.
+Apply the chapter mechanism to the exact wording: name the ownership form or finance source correctly, then check whether the claimed tax, liability, repayment, or matching consequence actually follows from that category.
 
-Because the decisive detail is wrong, mark the statement false.', 'TRUE — This statement is correct. Relative to a sole trader, several partners can usually contribute a larger pool of personal funds at start-up.
+On that basis the assertion attaches the wrong legal, tax, liability, or finance label.
 
-The relevant theory comes from partnerships and partner liability. Identify which definition or relationship the sentence is trying to test before deciding true or false.
+The statement is false.
+', 'TRUE — Partners need a partnership agreement to settle ownership shares, decision rights, responsibilities, and how profits and losses are divided. Without clear terms, disputes over control and residual claims are harder to resolve.
 
-Applied carefully, multiple partners often invest more combined savings than one proprietor. Nothing in the sentence stretches the concept beyond its standard use.
+Under unlimited liability in a general partnership, each partner can be solely liable for all debts of the business: creditors need not split claims proportionally before pursuing one partner''s private assets.
 
-No qualifying word breaks the definition or scenario, so the answer is true.', 'FALSE — On the Fuhrmann definition used in the entrance exam, the sentence is false. A partnership agreement need not record how disputes between partners will be resolved.
+Profit share does not cap each general partner''s liability for the entire debt.
 
-This statement draws on partnerships and partner liability. Treat it as a checklist against the core concept named in the stem, not as a general opinion about business.
+On that basis the assertion matches the ownership or finance rule being tested.
 
-Applied to this claim, methods for resolving disputes belong in the partnership agreement. That is why the sentence does not survive careful reading.
+The statement is true.
+', 'FALSE — Partners can divide tasks and specialise — one in sales, another in operations — while still sharing ownership. Specialisation is an operational advantage of multi-person ownership.
 
-The statement sounds plausible but fails on precision, so it is false.', 'TRUE — The claim is correct. When seeking bank credit, partners may collectively pledge more private property as security than a lone owner could.
+Departmental specialisation does not shield general partners from firm-wide debts.
 
-The scenario is a worked example of partnerships and partner liability. Translate the story into the textbook category first; only then judge whether the sentence describes that category accurately.
+Apply the chapter mechanism to the exact wording: name the ownership form or finance source correctly, then check whether the claimed tax, liability, repayment, or matching consequence actually follows from that category.
 
-In this setting, combined collateral from partners can support larger loans. The wording matches the textbook relationship without adding extra conditions.
+That misclassification is enough to reject the claim.
 
-The reasoning chain is complete, so mark the statement true.'] WHERE case_id = 'CASE 4.2.40' AND tier = 'full';
-UPDATE public.economics_cases SET tactical_explanations = ARRAY['TRUE — Evaluated against the textbook standard, this assertion is correct. Each partner is solely liable for all debts of the business even when partners share tasks and specialise.
+The statement is false.
+', 'TRUE — In a limited partnership, limited partners'' liability is capped at what they contributed, and they normally must not take part in management — that is the price of the liability cap. General partners continue to manage and usually retain unlimited liability.
 
-The topic is partnerships and partner liability, but the decisive skill here is reading quantifiers. Words such as never, always, only, or all turn a generally true idea into a claim that can be rejected by one routine counterexample.
+Non-managing limited partners face liability capped at their contribution.
 
-Applied carefully, task sharing and specialisation do not remove unlimited liability for each partner. Nothing in the sentence stretches the concept beyond its standard use.
+Limited partners trade a liability cap for staying out of management. If they take part in running the firm, they risk losing that shield; general partners continue with management and typically unlimited liability.
 
-No qualifying word breaks the definition or scenario, so the answer is true.', 'FALSE — On the Fuhrmann definition used in the entrance exam, the sentence is false. Terms of the partnership, decision making, and resolving disputes are excluded from the partnership agreement.
+On that basis the assertion matches the ownership or finance rule being tested.
 
-This statement draws on partnerships and partner liability. Treat it as a checklist against the core concept named in the stem, not as a general opinion about business.
+The statement is true.
+'] WHERE case_id = 'CASE 4.2.37' AND tier = 'full';
+UPDATE public.economics_cases SET tactical_explanations = ARRAY['TRUE — Keep the partnership triad in view: multi-person ownership, an agreement governing rights and profit shares, and unlimited liability for general partners (with limited partners capped only if they stay out of management).
 
-Applied to this claim, partnership terms and governance details belong in the agreement. That is why the sentence does not survive careful reading.
+Partnership finance broadly resembles sole proprietorship finance.
 
-The statement sounds plausible but fails on precision, so it is false.', 'FALSE — On the Fuhrmann definition used in the entrance exam, the sentence is false. Partners may not specify each partner''s percentage of ownership within the partnership agreement.
+Sole proprietorship unites ownership and control in one person, has no separate legal personality (personal tax on profits), and carries unlimited liability so private assets can be reached if business resources fall short.
 
-This statement draws on partnerships and partner liability. Treat it as a checklist against the core concept named in the stem, not as a general opinion about business.
+So the sentence is a correct description of the mechanism at work in this case.
 
-Applied to this claim, each partner''s ownership share is documented in the agreement. That is why the sentence does not survive careful reading.
+The statement is true.
+', 'FALSE — When two or more persons jointly found a business, the ownership form is a partnership. Joint founding — shared ownership intent — is the defining step that distinguishes it from a sole proprietorship.
 
-Once the overclaim or mislabel is exposed, the only consistent answer is false.', 'FALSE — Evaluated against the textbook standard, this assertion is false. Limited liability for business debts applies to every partner in a general partnership.
+Informal agreement does not replace the required partnership agreement.
 
-The topic is partnerships and partner liability, but the decisive skill here is reading quantifiers. Words such as never, always, only, or all turn a generally true idea into a claim that can be rejected by one routine counterexample.
+Apply the chapter mechanism to the exact wording: name the ownership form or finance source correctly, then check whether the claimed tax, liability, repayment, or matching consequence actually follows from that category.
 
-The statement overreaches because unlimited liability applies to general partners rather than limited liability for all. The trap is to agree with the topic while missing the one detail that breaks the logic.
+That misclassification is enough to reject the claim.
 
-Watch the absolute wording "every": exam statements often sound plausible until a single scope word turns an otherwise familiar idea into an overclaim.
+The statement is false.
+', 'TRUE — Long-term lenders commonly require pledgeable assets — often land and property via a mortgage — as security. Collateral backs repayment; the loan remains a liability. If private property was pledged and the business cannot repay, that property remains at stake.
 
-Once the overclaim or mislabel is exposed, the only consistent answer is false.', 'FALSE — Evaluated against the textbook standard, this assertion is false. Partners who specialise in different tasks are liable only for debts arising within their own specialised area.
+More partners typically mean more combined collateral for credit applications.
 
-The relevant theory comes from partnerships and partner liability. Identify which definition or relationship the sentence is trying to test before deciding true or false.
+On that basis the assertion matches the ownership or finance rule being tested.
 
-The statement overreaches because general partners remain liable for all firm debts regardless of specialisation. The trap is to agree with the topic while missing the one detail that breaks the logic.
+The statement is true.
+', 'FALSE — Shareholders'' financial exposure is generally limited to what they invested in share capital. Creditors claim against the company as legal person; they do not automatically seize shareholders'' private homes for ordinary company debts.
 
-Once the overclaim or mislabel is exposed, the only consistent answer is false.'] WHERE case_id = 'CASE 4.2.41' AND tier = 'full';
-UPDATE public.economics_cases SET tactical_explanations = ARRAY['FALSE — The claim is false. A general partnership requires no written agreement when founders intend equal management involvement from the outset.
+Multiple owners do not automatically grant corporate-style limited liability.
 
-The scenario is a worked example of partnerships and partner liability. Translate the story into the textbook category first; only then judge whether the sentence describes that category accurately.
+Apply the chapter mechanism to the exact wording: name the ownership form or finance source correctly, then check whether the claimed tax, liability, repayment, or matching consequence actually follows from that category.
 
-Applied to this claim, equal management intent does not remove the need for a partnership agreement. That is why the sentence does not survive careful reading.
+On that basis the assertion attaches the wrong legal, tax, liability, or finance label.
 
-Because the decisive detail is wrong, mark the statement false.', 'TRUE — On the Fuhrmann definition used in the entrance exam, the sentence is correct. Partners specify terms of the partnership, decision making, and resolving disputes within the agreement.
+The statement is false.
+', 'TRUE — Partners need a partnership agreement to settle ownership shares, decision rights, responsibilities, and how profits and losses are divided. Without clear terms, disputes over control and residual claims are harder to resolve.
 
-This statement draws on partnerships and partner liability. Treat it as a checklist against the core concept named in the stem, not as a general opinion about business.
+Founders require an agreement covering rights, responsibilities, and profit sharing.
 
-In this setting, terms, decision making, and dispute resolution are documented in the partnership agreement. The wording matches the textbook relationship without adding extra conditions.
+Apply the chapter mechanism to the exact wording: name the ownership form or finance source correctly, then check whether the claimed tax, liability, repayment, or matching consequence actually follows from that category.
 
-No qualifying word breaks the definition or scenario, so the answer is true.', 'FALSE — Evaluated against the textbook standard, this assertion is false. Limited-partnership status by itself caps every partner''s exposure at capital contributed, including managing partners.
+On that basis the assertion matches the ownership or finance rule being tested.
 
-The topic is partnerships and partner liability, but the decisive skill here is reading quantifiers. Words such as never, always, only, or all turn a generally true idea into a claim that can be rejected by one routine counterexample.
+The statement is true.
+'] WHERE case_id = 'CASE 4.2.38' AND tier = 'full';
+UPDATE public.economics_cases SET tactical_explanations = ARRAY['TRUE — When two or more persons jointly found a business, the ownership form is a partnership. Joint founding — shared ownership intent — is the defining step that distinguishes it from a sole proprietorship.
 
-The statement overreaches because managing partners retain unlimited liability; only non-managing limited partners are capped. The trap is to agree with the topic while missing the one detail that breaks the logic.
+Multiple partners can pool savings beyond one proprietor''s capacity.
 
-Watch the absolute wording "every": exam statements often sound plausible until a single scope word turns an otherwise familiar idea into an overclaim.
+Sole proprietorship unites ownership and control in one person, has no separate legal personality (personal tax on profits), and carries unlimited liability so private assets can be reached if business resources fall short.
 
-Once the overclaim or mislabel is exposed, the only consistent answer is false.', 'FALSE — The claim is false. Partnerships cannot use personal savings because their financial aspects differ entirely from sole proprietors.
+On that basis the assertion matches the ownership or finance rule being tested.
 
-Although the subject matter is partnerships and partner liability, this is really a logic check on overstatement. Non-profit surpluses, mixed economies, and partial market failure are classic cases where absolute wording fails.
+The statement is true.
+', 'TRUE — Long-term lenders commonly require pledgeable assets — often land and property via a mortgage — as security. Collateral backs repayment; the loan remains a liability. If private property was pledged and the business cannot repay, that property remains at stake.
 
-Applied to this claim, partners may invest personal savings much like sole proprietors do. That is why the sentence does not survive careful reading.
+Combined private assets strengthen loan collateral for partnerships.
 
-Watch the absolute wording "cannot": exam statements often sound plausible until a single scope word turns an otherwise familiar idea into an overclaim.
+Apply the chapter mechanism to the exact wording: name the ownership form or finance source correctly, then check whether the claimed tax, liability, repayment, or matching consequence actually follows from that category.
 
-Because the decisive detail is wrong, mark the statement false.', 'TRUE — This statement is correct. General partners who specialise in operations remain fully exposed to liability for debts incurred anywhere in the firm.
+That is why the claim stands for this form of business or source of finance.
 
-The relevant theory comes from partnerships and partner liability. Identify which definition or relationship the sentence is trying to test before deciding true or false.
+The statement is true.
+', 'TRUE — In a general partnership, partners typically share equal rights, liabilities, and responsibilities unless varied by agreement. Unlimited liability means each partner can be pursued for the firm''s debts.
 
-Applied carefully, specialisation does not limit a general partner''s exposure to firm-wide debts. Nothing in the sentence stretches the concept beyond its standard use.
+Joint discussion in difficult situations can improve partnership decision quality.
 
-No qualifying word breaks the definition or scenario, so the answer is true.'] WHERE case_id = 'CASE 4.2.42' AND tier = 'full';
-UPDATE public.economics_cases SET tactical_explanations = ARRAY['TRUE — Evaluated against the textbook standard, this assertion is correct. Partners who jointly found a business must settle the division of profits and losses in a partnership agreement.
+Apply the chapter mechanism to the exact wording: name the ownership form or finance source correctly, then check whether the claimed tax, liability, repayment, or matching consequence actually follows from that category.
 
-The relevant theory comes from partnerships and partner liability. Identify which definition or relationship the sentence is trying to test before deciding true or false.
+That is why the claim stands for this form of business or source of finance.
 
-Applied carefully, profit-loss division is settled through the partnership agreement. Nothing in the sentence stretches the concept beyond its standard use.
+The statement is true.
+', 'TRUE — Partners need a partnership agreement to settle ownership shares, decision rights, responsibilities, and how profits and losses are divided. Without clear terms, disputes over control and residual claims are harder to resolve.
 
-No qualifying word breaks the definition or scenario, so the answer is true.', 'TRUE — This statement is correct. Silent limited partners supply capital without managing while their liability remains capped at the contribution amount.
+Founders need an agreement to settle rights, responsibilities, and profit-loss division.
 
-The relevant theory comes from partnerships and partner liability. Identify which definition or relationship the sentence is trying to test before deciding true or false.
+Apply the chapter mechanism to the exact wording: name the ownership form or finance source correctly, then check whether the claimed tax, liability, repayment, or matching consequence actually follows from that category.
 
-Applied carefully, non-managing limited partners face liability limited to contributed capital. Nothing in the sentence stretches the concept beyond its standard use.
+So the sentence is a correct description of the mechanism at work in this case.
 
-Every part of the claim aligns with the standard concept, so the statement stands.', 'TRUE — Evaluated against the textbook standard, this assertion is correct. Rights, responsibilities, decision making, and resolving disputes are settled through the partnership agreement.
+The statement is true.
+', 'TRUE — Partners need a partnership agreement to settle ownership shares, decision rights, responsibilities, and how profits and losses are divided. Without clear terms, disputes over control and residual claims are harder to resolve.
 
-The relevant theory comes from partnerships and partner liability. Identify which definition or relationship the sentence is trying to test before deciding true or false.
+Rights, responsibilities, and profit-loss division belong in the agreement.
 
-Applied carefully, the agreement covers rights, responsibilities, governance, and dispute resolution. Nothing in the sentence stretches the concept beyond its standard use.
+Apply the chapter mechanism to the exact wording: name the ownership form or finance source correctly, then check whether the claimed tax, liability, repayment, or matching consequence actually follows from that category.
 
-No qualifying word breaks the definition or scenario, so the answer is true.', 'TRUE — On the Fuhrmann definition used in the entrance exam, the sentence is correct. All partners in a general partnership have equal rights, liabilities, and responsibilities despite task specialisation.
+So the sentence is a correct description of the mechanism at work in this case.
 
-Although the subject matter is partnerships and partner liability, this is really a logic check on overstatement. Non-profit surpluses, mixed economies, and partial market failure are classic cases where absolute wording fails.
+The statement is true.
+'] WHERE case_id = 'CASE 4.2.39' AND tier = 'full';
+UPDATE public.economics_cases SET tactical_explanations = ARRAY['TRUE — In a limited partnership, limited partners'' liability is capped at what they contributed, and they normally must not take part in management — that is the price of the liability cap. General partners continue to manage and usually retain unlimited liability.
 
-In this setting, equal rights, liabilities, and responsibilities persist even when partners specialise. The wording matches the textbook relationship without adding extra conditions.
+Under unlimited liability in a general partnership, each partner can be solely liable for all debts of the business: creditors need not split claims proportionally before pursuing one partner''s private assets.
 
-Every part of the claim aligns with the standard concept, so the statement stands.', 'TRUE — The claim is correct. Partners may document other details of the partnership beyond ownership percentages and profit-loss division.
+Managing general partners still face unlimited liability for partnership obligations.
 
-This statement draws on partnerships and partner liability. Treat it as a checklist against the core concept named in the stem, not as a general opinion about business.
+On that basis the assertion matches the ownership or finance rule being tested.
 
-In this setting, additional partnership details may appear in the agreement beyond core financial terms. The wording matches the textbook relationship without adding extra conditions.
+The statement is true.
+', 'FALSE — Under unlimited liability in a general partnership, each partner can be solely liable for all debts of the business: creditors need not split claims proportionally before pursuing one partner''s private assets.
 
-No qualifying word breaks the definition or scenario, so the answer is true.'] WHERE case_id = 'CASE 4.2.43' AND tier = 'full';
-UPDATE public.economics_cases SET tactical_explanations = ARRAY['TRUE — On the Fuhrmann definition used in the entrance exam, the sentence is correct. Two consultants jointly founding a firm with equal management intent illustrate a general partnership arrangement.
+Role assignment for suppliers does not eliminate joint unlimited liability.
 
-This statement draws on partnerships and partner liability. Treat it as a checklist against the core concept named in the stem, not as a general opinion about business.
+Apply the chapter mechanism to the exact wording: name the ownership form or finance source correctly, then check whether the claimed tax, liability, repayment, or matching consequence actually follows from that category.
 
-In this setting, joint founding with equal management involvement fits a general partnership. The wording matches the textbook relationship without adding extra conditions.
+That misclassification is enough to reject the claim.
 
-No qualifying word breaks the definition or scenario, so the answer is true.', 'FALSE — This statement is false. A partnership formed by two founders requires no agreement when they verbally agree to share profits equally.
+The statement is false.
+', 'TRUE — Keep the partnership triad in view: multi-person ownership, an agreement governing rights and profit shares, and unlimited liability for general partners (with limited partners capped only if they stay out of management).
 
-Here you must apply ideas from partnerships and partner liability to a concrete situation rather than recite a definition from memory. Ownership, customer type, stakeholder group, or country of production usually decides the verdict.
+Multiple partners often invest more combined savings than one proprietor.
 
-The statement overreaches because verbal profit-sharing promises do not replace the partnership agreement. The trap is to agree with the topic while missing the one detail that breaks the logic.
+Sole proprietorship unites ownership and control in one person, has no separate legal personality (personal tax on profits), and carries unlimited liability so private assets can be reached if business resources fall short.
 
-The statement sounds plausible but fails on precision, so it is false.', 'FALSE — This statement is false. In a general partnership minority partners lose equal rights automatically when ownership percentages differ in the agreement.
+On that basis the assertion matches the ownership or finance rule being tested.
 
-The topic is partnerships and partner liability, but the decisive skill here is reading quantifiers. Words such as never, always, only, or all turn a generally true idea into a claim that can be rejected by one routine counterexample.
+The statement is true.
+', 'FALSE — Partners need a partnership agreement to settle ownership shares, decision rights, responsibilities, and how profits and losses are divided. Without clear terms, disputes over control and residual claims are harder to resolve.
 
-The statement overreaches because ownership percentages do not automatically remove equal partnership rights. The trap is to agree with the topic while missing the one detail that breaks the logic.
+Methods for resolving disputes belong in the partnership agreement.
 
-Watch the absolute wording "automatically": exam statements often sound plausible until a single scope word turns an otherwise familiar idea into an overclaim.
+Apply the chapter mechanism to the exact wording: name the ownership form or finance source correctly, then check whether the claimed tax, liability, repayment, or matching consequence actually follows from that category.
 
-Because the decisive detail is wrong, mark the statement false.', 'FALSE — The claim is false. Limited partners who attend weekly strategy meetings retain capped liability even when they vote on major contracts.
+On that basis the assertion attaches the wrong legal, tax, liability, or finance label.
 
-The scenario is a worked example of partnerships and partner liability. Translate the story into the textbook category first; only then judge whether the sentence describes that category accurately.
+The statement is false.
+', 'TRUE — Keep the partnership triad in view: multi-person ownership, an agreement governing rights and profit shares, and unlimited liability for general partners (with limited partners capped only if they stay out of management).
 
-Applied to this claim, voting on major contracts can constitute management involvement that removes capped liability. That is why the sentence does not survive careful reading.
+Combined collateral from partners can support larger loans.
 
-Once the overclaim or mislabel is exposed, the only consistent answer is false.', 'FALSE — The claim is false. A creditor under unlimited liability must sue all partners jointly and collect equal shares from each one.
+Apply the chapter mechanism to the exact wording: name the ownership form or finance source correctly, then check whether the claimed tax, liability, repayment, or matching consequence actually follows from that category.
 
-Although the subject matter is partnerships and partner liability, this is really a logic check on overstatement. Non-profit surpluses, mixed economies, and partial market failure are classic cases where absolute wording fails.
+So the sentence is a correct description of the mechanism at work in this case.
 
-Applied to this claim, recovery is not limited to equal shares collected jointly from every partner. That is why the sentence does not survive careful reading.
+The statement is true.
+'] WHERE case_id = 'CASE 4.2.40' AND tier = 'full';
+UPDATE public.economics_cases SET tactical_explanations = ARRAY['TRUE — Under unlimited liability in a general partnership, each partner can be solely liable for all debts of the business: creditors need not split claims proportionally before pursuing one partner''s private assets.
 
-Watch the absolute wording "all": exam statements often sound plausible until a single scope word turns an otherwise familiar idea into an overclaim.
+Partners can divide tasks and specialise — one in sales, another in operations — while still sharing ownership. Specialisation is an operational advantage of multi-person ownership.
 
-Because the decisive detail is wrong, mark the statement false.'] WHERE case_id = 'CASE 4.2.44' AND tier = 'full';
-UPDATE public.economics_cases SET tactical_explanations = ARRAY['TRUE — The claim is correct. Limited partnerships combine at least one non-managing partner with capped liability and managing partners with unlimited liability.
+Task sharing and specialisation do not remove unlimited liability for each partner.
 
-This statement draws on partnerships and partner liability. Treat it as a checklist against the core concept named in the stem, not as a general opinion about business.
+On that basis the assertion matches the ownership or finance rule being tested.
 
-In this setting, limited partnerships mix capped liability for non-managers with unlimited liability for managers. The wording matches the textbook relationship without adding extra conditions.
+The statement is true.
+', 'FALSE — Partners need a partnership agreement to settle ownership shares, decision rights, responsibilities, and how profits and losses are divided. Without clear terms, disputes over control and residual claims are harder to resolve.
 
-The reasoning chain is complete, so mark the statement true.', 'FALSE — Evaluated against the textbook standard, this assertion is false. Joint founding by two or more persons is optional because a partnership agreement alone creates the business form.
+Partnership terms and governance details belong in the agreement.
 
-Here you must apply ideas from partnerships and partner liability to a concrete situation rather than recite a definition from memory. Ownership, customer type, stakeholder group, or country of production usually decides the verdict.
+Apply the chapter mechanism to the exact wording: name the ownership form or finance source correctly, then check whether the claimed tax, liability, repayment, or matching consequence actually follows from that category.
 
-The statement overreaches because the agreement does not replace joint founding by two or more persons. The trap is to agree with the topic while missing the one detail that breaks the logic.
+That misclassification is enough to reject the claim.
 
-Because the decisive detail is wrong, mark the statement false.', 'FALSE — This statement is false. Partnership financial aspects are unrelated to sole proprietorship finance and follow separate investment rules.
+The statement is false.
+', 'FALSE — Partners need a partnership agreement to settle ownership shares, decision rights, responsibilities, and how profits and losses are divided. Without clear terms, disputes over control and residual claims are harder to resolve.
 
-The relevant theory comes from partnerships and partner liability. Identify which definition or relationship the sentence is trying to test before deciding true or false.
+Each partner''s ownership share is documented in the agreement.
 
-The statement overreaches because partnership finance broadly resembles sole proprietorship finance. The trap is to agree with the topic while missing the one detail that breaks the logic.
+Apply the chapter mechanism to the exact wording: name the ownership form or finance source correctly, then check whether the claimed tax, liability, repayment, or matching consequence actually follows from that category.
 
-The statement sounds plausible but fails on precision, so it is false.', 'FALSE — On the Fuhrmann definition used in the entrance exam, the sentence is false. A limited partnership can operate with every partner participating in management while all retain capped liability.
+On that basis the assertion attaches the wrong legal, tax, liability, or finance label.
 
-Although the subject matter is partnerships and partner liability, this is really a logic check on overstatement. Non-profit surpluses, mixed economies, and partial market failure are classic cases where absolute wording fails.
+The statement is false.
+', 'FALSE — In a general partnership, partners typically share equal rights, liabilities, and responsibilities unless varied by agreement. Unlimited liability means each partner can be pursued for the firm''s debts.
 
-Applied to this claim, all partners cannot both manage and retain capped liability in a limited partnership. That is why the sentence does not survive careful reading.
+Unlimited liability applies to general partners rather than limited liability for all.
 
-Watch the absolute wording "every": exam statements often sound plausible until a single scope word turns an otherwise familiar idea into an overclaim.
+Apply the chapter mechanism to the exact wording: name the ownership form or finance source correctly, then check whether the claimed tax, liability, repayment, or matching consequence actually follows from that category.
 
-Because the decisive detail is wrong, mark the statement false.', 'TRUE — On the Fuhrmann definition used in the entrance exam, the sentence is correct. Partners together can raise more financial funds by combining savings than a single sole proprietor typically can.
+So the sentence does not survive once the correct mechanism is applied.
 
-This statement draws on partnerships and partner liability. Treat it as a checklist against the core concept named in the stem, not as a general opinion about business.
+The statement is false.
+', 'FALSE — Partners can divide tasks and specialise — one in sales, another in operations — while still sharing ownership. Specialisation is an operational advantage of multi-person ownership.
 
-In this setting, combined savings from partners can raise more financial funds than one proprietor alone. The wording matches the textbook relationship without adding extra conditions.
+General partners remain liable for all firm debts regardless of specialisation.
 
-The reasoning chain is complete, so mark the statement true.'] WHERE case_id = 'CASE 4.2.45' AND tier = 'full';
-UPDATE public.economics_cases SET tactical_explanations = ARRAY['TRUE — On the Fuhrmann definition used in the entrance exam, the sentence is correct. The partnership agreement should specify decision making together with methods for resolving disputes between partners.
+Apply the chapter mechanism to the exact wording: name the ownership form or finance source correctly, then check whether the claimed tax, liability, repayment, or matching consequence actually follows from that category.
 
-This statement draws on partnerships and partner liability. Treat it as a checklist against the core concept named in the stem, not as a general opinion about business.
+That misclassification is enough to reject the claim.
 
-In this setting, decision making and dispute resolution belong in the partnership agreement. The wording matches the textbook relationship without adding extra conditions.
+The statement is false.
+'] WHERE case_id = 'CASE 4.2.41' AND tier = 'full';
+UPDATE public.economics_cases SET tactical_explanations = ARRAY['FALSE — In a general partnership, partners typically share equal rights, liabilities, and responsibilities unless varied by agreement. Unlimited liability means each partner can be pursued for the firm''s debts.
 
-No qualifying word breaks the definition or scenario, so the answer is true.', 'TRUE — On the Fuhrmann definition used in the entrance exam, the sentence is correct. Financial funds available to partnerships may exceed those of a sole proprietor because several partners can combine savings.
+Equal management intent does not remove the need for a partnership agreement.
 
-The scenario is a worked example of partnerships and partner liability. Translate the story into the textbook category first; only then judge whether the sentence describes that category accurately.
+Apply the chapter mechanism to the exact wording: name the ownership form or finance source correctly, then check whether the claimed tax, liability, repayment, or matching consequence actually follows from that category.
 
-In this setting, several partners may invest more savings together than one sole proprietor. The wording matches the textbook relationship without adding extra conditions.
+That misclassification is enough to reject the claim.
 
-Every part of the claim aligns with the standard concept, so the statement stands.', 'TRUE — This statement is correct. Each general partner remains exposed to unlimited liability even when the partnership pools more collateral than one owner could.
+The statement is false.
+', 'TRUE — Keep the partnership triad in view: multi-person ownership, an agreement governing rights and profit shares, and unlimited liability for general partners (with limited partners capped only if they stay out of management).
 
-Here you must apply ideas from partnerships and partner liability to a concrete situation rather than recite a definition from memory. Ownership, customer type, stakeholder group, or country of production usually decides the verdict.
+Terms, decision making, and dispute resolution are documented in the partnership agreement.
 
-Applied carefully, pooling collateral does not remove unlimited liability for each general partner. Nothing in the sentence stretches the concept beyond its standard use.
+Apply the chapter mechanism to the exact wording: name the ownership form or finance source correctly, then check whether the claimed tax, liability, repayment, or matching consequence actually follows from that category.
 
-Every part of the claim aligns with the standard concept, so the statement stands.', 'TRUE — The claim is correct. Partners set up a partnership agreement in which they specify ownership percentages, profit-loss division, and dispute resolution.
+On that basis the assertion matches the ownership or finance rule being tested.
 
-This statement draws on partnerships and partner liability. Treat it as a checklist against the core concept named in the stem, not as a general opinion about business.
+The statement is true.
+', 'FALSE — Keep the partnership triad in view: multi-person ownership, an agreement governing rights and profit shares, and unlimited liability for general partners (with limited partners capped only if they stay out of management).
 
-In this setting, the agreement specifies ownership, profit-loss division, and dispute resolution among other details. The wording matches the textbook relationship without adding extra conditions.
+Managing partners retain unlimited liability; only non-managing limited partners are capped.
 
-The reasoning chain is complete, so mark the statement true.', 'TRUE — The claim is correct. In a limited partnership the limited partner''s liability is limited to the amount of money contributed to the business.
+Apply the chapter mechanism to the exact wording: name the ownership form or finance source correctly, then check whether the claimed tax, liability, repayment, or matching consequence actually follows from that category.
 
-This statement draws on partnerships and partner liability. Treat it as a checklist against the core concept named in the stem, not as a general opinion about business.
+So the sentence does not survive once the correct mechanism is applied.
 
-In this setting, limited partner liability stops at the contributed amount. The wording matches the textbook relationship without adding extra conditions.
+The statement is false.
+', 'FALSE — Keep the partnership triad in view: multi-person ownership, an agreement governing rights and profit shares, and unlimited liability for general partners (with limited partners capped only if they stay out of management).
 
-No qualifying word breaks the definition or scenario, so the answer is true.'] WHERE case_id = 'CASE 4.2.46' AND tier = 'full';
-UPDATE public.economics_cases SET tactical_explanations = ARRAY['FALSE — On the Fuhrmann definition used in the entrance exam, the sentence is false. General partners escape unlimited liability once a limited partner joins the firm and contributes most of the capital.
+Partners may invest personal savings much like sole proprietors do.
 
-This statement draws on partnerships and partner liability. Treat it as a checklist against the core concept named in the stem, not as a general opinion about business.
+Sole proprietorship unites ownership and control in one person, has no separate legal personality (personal tax on profits), and carries unlimited liability so private assets can be reached if business resources fall short.
 
-Applied to this claim, limited partner capital does not remove unlimited liability from managing partners. That is why the sentence does not survive careful reading.
+That misclassification is enough to reject the claim.
 
-Once the overclaim or mislabel is exposed, the only consistent answer is false.', 'TRUE — Evaluated against the textbook standard, this assertion is correct. Partners can share the tasks, specialise, and in difficult situations exchange ideas to improve decision quality.
+The statement is false.
+', 'TRUE — Partners can divide tasks and specialise — one in sales, another in operations — while still sharing ownership. Specialisation is an operational advantage of multi-person ownership.
 
-The relevant theory comes from partnerships and partner liability. Identify which definition or relationship the sentence is trying to test before deciding true or false.
+Specialisation does not limit a general partner''s exposure to firm-wide debts.
 
-Applied carefully, task sharing, specialisation, and joint discussion are features of partnership operation. Nothing in the sentence stretches the concept beyond its standard use.
+Apply the chapter mechanism to the exact wording: name the ownership form or finance source correctly, then check whether the claimed tax, liability, repayment, or matching consequence actually follows from that category.
 
-The reasoning chain is complete, so mark the statement true.', 'TRUE — The claim is correct. General managing partners remain solely liable for all debts of the business in both general and limited partnerships.
+On that basis the assertion matches the ownership or finance rule being tested.
 
-Although the subject matter is partnerships and partner liability, this is really a logic check on overstatement. Non-profit surpluses, mixed economies, and partial market failure are classic cases where absolute wording fails.
+The statement is true.
+'] WHERE case_id = 'CASE 4.2.42' AND tier = 'full';
+UPDATE public.economics_cases SET tactical_explanations = ARRAY['TRUE — When two or more persons jointly found a business, the ownership form is a partnership. Joint founding — shared ownership intent — is the defining step that distinguishes it from a sole proprietorship.
 
-In this setting, managing partners face unlimited liability for all firm debts in either partnership type. The wording matches the textbook relationship without adding extra conditions.
+Partners need a partnership agreement to settle ownership shares, decision rights, responsibilities, and how profits and losses are divided. Without clear terms, disputes over control and residual claims are harder to resolve.
 
-The reasoning chain is complete, so mark the statement true.', 'TRUE — This statement is correct. Partnership founders document each partner''s percentage of ownership when they set up the partnership agreement.
+Profit-loss division is settled through the partnership agreement.
 
-Here you must apply ideas from partnerships and partner liability to a concrete situation rather than recite a definition from memory. Ownership, customer type, stakeholder group, or country of production usually decides the verdict.
+So the sentence is a correct description of the mechanism at work in this case.
 
-Applied carefully, ownership percentages are recorded when partners set up the agreement. Nothing in the sentence stretches the concept beyond its standard use.
+The statement is true.
+', 'TRUE — In a limited partnership, limited partners'' liability is capped at what they contributed, and they normally must not take part in management — that is the price of the liability cap. General partners continue to manage and usually retain unlimited liability.
 
-No qualifying word breaks the definition or scenario, so the answer is true.', 'TRUE — On the Fuhrmann definition used in the entrance exam, the sentence is correct. Multiple partners may combine private assets so the partnership can offer more collateral than a sole trader when seeking credit.
+Non-managing limited partners face liability limited to contributed capital.
 
-The scenario is a worked example of partnerships and partner liability. Translate the story into the textbook category first; only then judge whether the sentence describes that category accurately.
+Limited partners trade a liability cap for staying out of management. If they take part in running the firm, they risk losing that shield; general partners continue with management and typically unlimited liability.
 
-In this setting, combined partner assets can offer more collateral than a sole trader typically pledges. The wording matches the textbook relationship without adding extra conditions.
+So the sentence is a correct description of the mechanism at work in this case.
 
-The reasoning chain is complete, so mark the statement true.'] WHERE case_id = 'CASE 4.2.47' AND tier = 'full';
-UPDATE public.economics_cases SET tactical_explanations = ARRAY['FALSE — The claim is false. Profit division recorded in the agreement automatically limits each partner''s liability to that profit share.
+The statement is true.
+', 'TRUE — Partners need a partnership agreement to settle ownership shares, decision rights, responsibilities, and how profits and losses are divided. Without clear terms, disputes over control and residual claims are harder to resolve.
 
-Although the subject matter is partnerships and partner liability, this is really a logic check on overstatement. Non-profit surpluses, mixed economies, and partial market failure are classic cases where absolute wording fails.
+The agreement covers rights, responsibilities, governance, and dispute resolution.
 
-Applied to this claim, legal liability is not automatically limited to profit share proportions. That is why the sentence does not survive careful reading.
+Apply the chapter mechanism to the exact wording: name the ownership form or finance source correctly, then check whether the claimed tax, liability, repayment, or matching consequence actually follows from that category.
 
-Watch the absolute wording "automatically": exam statements often sound plausible until a single scope word turns an otherwise familiar idea into an overclaim.
+On that basis the assertion matches the ownership or finance rule being tested.
 
-Because the decisive detail is wrong, mark the statement false.', 'TRUE — Evaluated against the textbook standard, this assertion is correct. Partners in a general partnership retain equal liabilities even when they assign different specialised roles in the agreement.
+The statement is true.
+', 'TRUE — In a general partnership, partners typically share equal rights, liabilities, and responsibilities unless varied by agreement. Unlimited liability means each partner can be pursued for the firm''s debts.
 
-Here you must apply ideas from partnerships and partner liability to a concrete situation rather than recite a definition from memory. Ownership, customer type, stakeholder group, or country of production usually decides the verdict.
+Partners can divide tasks and specialise — one in sales, another in operations — while still sharing ownership. Specialisation is an operational advantage of multi-person ownership.
 
-Applied carefully, equal liabilities continue despite specialised role assignment among partners. Nothing in the sentence stretches the concept beyond its standard use.
+Equal rights, liabilities, and responsibilities persist even when partners specialise.
 
-No qualifying word breaks the definition or scenario, so the answer is true.', 'TRUE — On the Fuhrmann definition used in the entrance exam, the sentence is correct. The division of profit and loss is among the financial matters settled in the partnership agreement.
+So the sentence is a correct description of the mechanism at work in this case.
 
-This statement draws on partnerships and partner liability. Treat it as a checklist against the core concept named in the stem, not as a general opinion about business.
+The statement is true.
+', 'TRUE — Keep the partnership triad in view: multi-person ownership, an agreement governing rights and profit shares, and unlimited liability for general partners (with limited partners capped only if they stay out of management).
 
-In this setting, profit-loss division is settled in the partnership agreement. The wording matches the textbook relationship without adding extra conditions.
+Additional partnership details may appear in the agreement beyond core financial terms.
 
-The reasoning chain is complete, so mark the statement true.', 'TRUE — Evaluated against the textbook standard, this assertion is correct. At least one partner in a limited partnership stays outside management while liability remains capped at that partner''s contribution.
+Apply the chapter mechanism to the exact wording: name the ownership form or finance source correctly, then check whether the claimed tax, liability, repayment, or matching consequence actually follows from that category.
 
-The relevant theory comes from partnerships and partner liability. Identify which definition or relationship the sentence is trying to test before deciding true or false.
+That is why the claim stands for this form of business or source of finance.
 
-Applied carefully, non-managing limited partners have capped liability at their contribution. Nothing in the sentence stretches the concept beyond its standard use.
+The statement is true.
+'] WHERE case_id = 'CASE 4.2.43' AND tier = 'full';
+UPDATE public.economics_cases SET tactical_explanations = ARRAY['TRUE — When two or more persons jointly found a business, the ownership form is a partnership. Joint founding — shared ownership intent — is the defining step that distinguishes it from a sole proprietorship.
 
-Every part of the claim aligns with the standard concept, so the statement stands.', 'TRUE — On the Fuhrmann definition used in the entrance exam, the sentence is correct. Partnership agreements may record terms of the partnership alongside rights, responsibilities, and profit-loss division.
+In a general partnership, partners typically share equal rights, liabilities, and responsibilities unless varied by agreement. Unlimited liability means each partner can be pursued for the firm''s debts.
 
-This statement draws on partnerships and partner liability. Treat it as a checklist against the core concept named in the stem, not as a general opinion about business.
+Joint founding with equal management involvement fits a general partnership.
 
-In this setting, partnership terms may be recorded together with rights and profit-loss rules. The wording matches the textbook relationship without adding extra conditions.
+On that basis the assertion matches the ownership or finance rule being tested.
 
-Every part of the claim aligns with the standard concept, so the statement stands.'] WHERE case_id = 'CASE 4.2.48' AND tier = 'full';
-UPDATE public.economics_cases SET tactical_explanations = ARRAY['TRUE — This statement is correct. Unlimited liability applies to each partner individually in a general partnership rather than strictly by ownership share.
+The statement is true.
+', 'FALSE — Keep the partnership triad in view: multi-person ownership, an agreement governing rights and profit shares, and unlimited liability for general partners (with limited partners capped only if they stay out of management).
 
-This tests discrimination within partnerships and partner liability: local versus international scope, equity versus debt, product versus market orientation, and similar pairs.
+Verbal profit-sharing promises do not replace the partnership agreement.
 
-Applied carefully, each general partner faces unlimited liability individually, not merely proportionally by ownership. Nothing in the sentence stretches the concept beyond its standard use.
+Apply the chapter mechanism to the exact wording: name the ownership form or finance source correctly, then check whether the claimed tax, liability, repayment, or matching consequence actually follows from that category.
 
-Every part of the claim aligns with the standard concept, so the statement stands.', 'TRUE — This statement is correct. Partners who exchange ideas in difficult situations may make better decisions through shared judgment.
+On that basis the assertion attaches the wrong legal, tax, liability, or finance label.
 
-The relevant theory comes from partnerships and partner liability. Identify which definition or relationship the sentence is trying to test before deciding true or false.
+The statement is false.
+', 'FALSE — In a general partnership, partners typically share equal rights, liabilities, and responsibilities unless varied by agreement. Unlimited liability means each partner can be pursued for the firm''s debts.
 
-Applied carefully, shared judgment in difficult situations can improve partnership decisions. Nothing in the sentence stretches the concept beyond its standard use.
+Ownership percentages do not automatically remove equal partnership rights.
 
-The reasoning chain is complete, so mark the statement true.', 'TRUE — This statement is correct. Joint founders use the partnership agreement to settle rights, responsibilities, ownership shares, and dispute resolution.
+Apply the chapter mechanism to the exact wording: name the ownership form or finance source correctly, then check whether the claimed tax, liability, repayment, or matching consequence actually follows from that category.
 
-The relevant theory comes from partnerships and partner liability. Identify which definition or relationship the sentence is trying to test before deciding true or false.
+So the sentence does not survive once the correct mechanism is applied.
 
-Applied carefully, the agreement settles rights, responsibilities, ownership, and dispute resolution. Nothing in the sentence stretches the concept beyond its standard use.
+The statement is false.
+', 'FALSE — Limited partners who take part in management risk losing the liability shield that limited status provides. Limited liability is not a free add-on to active control; the non-management rule is structural.
 
-No qualifying word breaks the definition or scenario, so the answer is true.', 'FALSE — The claim is false. Partners need not settle rights and responsibilities because equal founders always share identical implicit understanding.
+Voting on major contracts can constitute management involvement that removes capped liability.
 
-Although the subject matter is partnerships and partner liability, this is really a logic check on overstatement. Non-profit surpluses, mixed economies, and partial market failure are classic cases where absolute wording fails.
+Limited partners trade a liability cap for staying out of management. If they take part in running the firm, they risk losing that shield; general partners continue with management and typically unlimited liability.
 
-Applied to this claim, implicit understanding does not replace settling rights in a partnership agreement. That is why the sentence does not survive careful reading.
+That misclassification is enough to reject the claim.
 
-Watch the absolute wording "always": exam statements often sound plausible until a single scope word turns an otherwise familiar idea into an overclaim.
+The statement is false.
+', 'FALSE — Under unlimited liability in a general partnership, each partner can be solely liable for all debts of the business: creditors need not split claims proportionally before pursuing one partner''s private assets.
 
-Once the overclaim or mislabel is exposed, the only consistent answer is false.', 'FALSE — Evaluated against the textbook standard, this assertion is false. Unlimited liability means each partner is liable only for debts they personally authorised or signed.
+Recovery is not limited to equal shares collected jointly from every partner.
 
-The relevant theory comes from partnerships and partner liability. Identify which definition or relationship the sentence is trying to test before deciding true or false.
+Apply the chapter mechanism to the exact wording: name the ownership form or finance source correctly, then check whether the claimed tax, liability, repayment, or matching consequence actually follows from that category.
 
-The statement overreaches because unlimited liability covers all firm debts, not only personally authorised obligations. The trap is to agree with the topic while missing the one detail that breaks the logic.
+So the sentence does not survive once the correct mechanism is applied.
 
-Because the decisive detail is wrong, mark the statement false.'] WHERE case_id = 'CASE 4.2.49' AND tier = 'full';
-UPDATE public.economics_cases SET tactical_explanations = ARRAY['TRUE — The claim is correct. Partners who jointly found a business are required to settle rights, responsibilities, and profit-loss division through a partnership agreement.
+The statement is false.
+'] WHERE case_id = 'CASE 4.2.44' AND tier = 'full';
+UPDATE public.economics_cases SET tactical_explanations = ARRAY['TRUE — In a limited partnership, limited partners'' liability is capped at what they contributed, and they normally must not take part in management — that is the price of the liability cap. General partners continue to manage and usually retain unlimited liability.
 
-This statement draws on partnerships and partner liability. Treat it as a checklist against the core concept named in the stem, not as a general opinion about business.
+Under unlimited liability in a general partnership, each partner can be solely liable for all debts of the business: creditors need not split claims proportionally before pursuing one partner''s private assets.
 
-In this setting, the partnership agreement settles rights, responsibilities, and profit-loss division among joint founders. The wording matches the textbook relationship without adding extra conditions.
+Limited partnerships mix capped liability for non-managers with unlimited liability for managers.
 
-The reasoning chain is complete, so mark the statement true.', 'TRUE — This statement is correct. General partners remain jointly responsible for all partnership debts even when they divide operational tasks among themselves.
+So the sentence is a correct description of the mechanism at work in this case.
 
-The topic is partnerships and partner liability, but the decisive skill here is reading quantifiers. Words such as never, always, only, or all turn a generally true idea into a claim that can be rejected by one routine counterexample.
+The statement is true.
+', 'FALSE — When two or more persons jointly found a business, the ownership form is a partnership. Joint founding — shared ownership intent — is the defining step that distinguishes it from a sole proprietorship.
 
-Applied carefully, task division does not remove joint unlimited liability for all partnership debts. Nothing in the sentence stretches the concept beyond its standard use.
+Partners need a partnership agreement to settle ownership shares, decision rights, responsibilities, and how profits and losses are divided. Without clear terms, disputes over control and residual claims are harder to resolve.
 
-Every part of the claim aligns with the standard concept, so the statement stands.', 'TRUE — On the Fuhrmann definition used in the entrance exam, the sentence is correct. Founders of a partnership use their agreement to settle ownership percentages, profit-loss shares, and governance rules.
+The agreement does not replace joint founding by two or more persons.
 
-This statement draws on partnerships and partner liability. Treat it as a checklist against the core concept named in the stem, not as a general opinion about business.
+That misclassification is enough to reject the claim.
 
-In this setting, the agreement settles ownership percentages, profit-loss division, and governance among founders. The wording matches the textbook relationship without adding extra conditions.
+The statement is false.
+', 'FALSE — Partnership finance broadly resembles sole-proprietorship finance (owner capital, retained profit, bank and trade credit) but can draw on several partners'' savings and collateral, often expanding capacity.
 
-The reasoning chain is complete, so mark the statement true.', 'FALSE — The claim is false. Equal responsibilities in a general partnership require every partner to perform the same daily tasks without variation.
+Partnership finance broadly resembles sole proprietorship finance.
 
-Although the subject matter is partnerships and partner liability, this is really a logic check on overstatement. Non-profit surpluses, mixed economies, and partial market failure are classic cases where absolute wording fails.
+Sole proprietorship unites ownership and control in one person, has no separate legal personality (personal tax on profits), and carries unlimited liability so private assets can be reached if business resources fall short.
 
-Applied to this claim, equal responsibilities coexist with divided and specialised duties. That is why the sentence does not survive careful reading.
+On that basis the assertion attaches the wrong legal, tax, liability, or finance label.
 
-Watch the absolute wording "every": exam statements often sound plausible until a single scope word turns an otherwise familiar idea into an overclaim.
+The statement is false.
+', 'FALSE — Limited partners who take part in management risk losing the liability shield that limited status provides. Limited liability is not a free add-on to active control; the non-management rule is structural.
 
-Because the decisive detail is wrong, mark the statement false.', 'TRUE — Evaluated against the textbook standard, this assertion is correct. Sharing management duties in a general partnership does not reduce each partner''s unlimited liability for firm debts.
+All partners cannot both manage and retain capped liability in a limited partnership.
 
-The relevant theory comes from partnerships and partner liability. Identify which definition or relationship the sentence is trying to test before deciding true or false.
+Limited partners trade a liability cap for staying out of management. If they take part in running the firm, they risk losing that shield; general partners continue with management and typically unlimited liability.
 
-Applied carefully, shared management duties coexist with each partner''s unlimited liability for all firm debts. Nothing in the sentence stretches the concept beyond its standard use.
+So the sentence does not survive once the correct mechanism is applied.
 
-No qualifying word breaks the definition or scenario, so the answer is true.'] WHERE case_id = 'CASE 4.2.50' AND tier = 'full';
+The statement is false.
+', 'TRUE — Keep the partnership triad in view: multi-person ownership, an agreement governing rights and profit shares, and unlimited liability for general partners (with limited partners capped only if they stay out of management).
+
+Combined savings from partners can raise more financial funds than one proprietor alone.
+
+Sole proprietorship unites ownership and control in one person, has no separate legal personality (personal tax on profits), and carries unlimited liability so private assets can be reached if business resources fall short.
+
+So the sentence is a correct description of the mechanism at work in this case.
+
+The statement is true.
+'] WHERE case_id = 'CASE 4.2.45' AND tier = 'full';
+UPDATE public.economics_cases SET tactical_explanations = ARRAY['TRUE — Partners need a partnership agreement to settle ownership shares, decision rights, responsibilities, and how profits and losses are divided. Without clear terms, disputes over control and residual claims are harder to resolve.
+
+Decision making and dispute resolution belong in the partnership agreement.
+
+Apply the chapter mechanism to the exact wording: name the ownership form or finance source correctly, then check whether the claimed tax, liability, repayment, or matching consequence actually follows from that category.
+
+On that basis the assertion matches the ownership or finance rule being tested.
+
+The statement is true.
+', 'TRUE — Keep the partnership triad in view: multi-person ownership, an agreement governing rights and profit shares, and unlimited liability for general partners (with limited partners capped only if they stay out of management).
+
+Several partners may invest more savings together than one sole proprietor.
+
+Sole proprietorship unites ownership and control in one person, has no separate legal personality (personal tax on profits), and carries unlimited liability so private assets can be reached if business resources fall short.
+
+That is why the claim stands for this form of business or source of finance.
+
+The statement is true.
+', 'TRUE — Long-term lenders commonly require pledgeable assets — often land and property via a mortgage — as security. Collateral backs repayment; the loan remains a liability. If private property was pledged and the business cannot repay, that property remains at stake.
+
+Under unlimited liability in a general partnership, each partner can be solely liable for all debts of the business: creditors need not split claims proportionally before pursuing one partner''s private assets.
+
+Pooling collateral does not remove unlimited liability for each general partner.
+
+So the sentence is a correct description of the mechanism at work in this case.
+
+The statement is true.
+', 'TRUE — Partners need a partnership agreement to settle ownership shares, decision rights, responsibilities, and how profits and losses are divided. Without clear terms, disputes over control and residual claims are harder to resolve.
+
+The agreement specifies ownership, profit-loss division, and dispute resolution among other details.
+
+Apply the chapter mechanism to the exact wording: name the ownership form or finance source correctly, then check whether the claimed tax, liability, repayment, or matching consequence actually follows from that category.
+
+So the sentence is a correct description of the mechanism at work in this case.
+
+The statement is true.
+', 'TRUE — In a limited partnership, limited partners'' liability is capped at what they contributed, and they normally must not take part in management — that is the price of the liability cap. General partners continue to manage and usually retain unlimited liability.
+
+Limited partner liability stops at the contributed amount.
+
+Limited partners trade a liability cap for staying out of management. If they take part in running the firm, they risk losing that shield; general partners continue with management and typically unlimited liability.
+
+On that basis the assertion matches the ownership or finance rule being tested.
+
+The statement is true.
+'] WHERE case_id = 'CASE 4.2.46' AND tier = 'full';
+UPDATE public.economics_cases SET tactical_explanations = ARRAY['FALSE — Limited partners who take part in management risk losing the liability shield that limited status provides. Limited liability is not a free add-on to active control; the non-management rule is structural.
+
+Under unlimited liability in a general partnership, each partner can be solely liable for all debts of the business: creditors need not split claims proportionally before pursuing one partner''s private assets.
+
+Limited partner capital does not remove unlimited liability from managing partners.
+
+That misclassification is enough to reject the claim.
+
+The statement is false.
+', 'TRUE — Partners can divide tasks and specialise — one in sales, another in operations — while still sharing ownership. Specialisation is an operational advantage of multi-person ownership.
+
+Task sharing, specialisation, and joint discussion are features of partnership operation.
+
+Apply the chapter mechanism to the exact wording: name the ownership form or finance source correctly, then check whether the claimed tax, liability, repayment, or matching consequence actually follows from that category.
+
+So the sentence is a correct description of the mechanism at work in this case.
+
+The statement is true.
+', 'TRUE — In a limited partnership, limited partners'' liability is capped at what they contributed, and they normally must not take part in management — that is the price of the liability cap. General partners continue to manage and usually retain unlimited liability.
+
+Under unlimited liability in a general partnership, each partner can be solely liable for all debts of the business: creditors need not split claims proportionally before pursuing one partner''s private assets.
+
+Managing partners face unlimited liability for all firm debts in either partnership type.
+
+That is why the claim stands for this form of business or source of finance.
+
+The statement is true.
+', 'TRUE — Partners need a partnership agreement to settle ownership shares, decision rights, responsibilities, and how profits and losses are divided. Without clear terms, disputes over control and residual claims are harder to resolve.
+
+Ownership percentages are recorded when partners set up the agreement.
+
+Apply the chapter mechanism to the exact wording: name the ownership form or finance source correctly, then check whether the claimed tax, liability, repayment, or matching consequence actually follows from that category.
+
+So the sentence is a correct description of the mechanism at work in this case.
+
+The statement is true.
+', 'TRUE — Unlimited liability means repayment is not capped at assets labelled as business property. If business resources cannot cover debts, creditors may reach the proprietor''s private assets. That personal exposure is the risk counterpart of undivided control.
+
+Long-term lenders commonly require pledgeable assets — often land and property via a mortgage — as security. Collateral backs repayment; the loan remains a liability. If private property was pledged and the business cannot repay, that property remains at stake.
+
+Combined partner assets can offer more collateral than a sole trader typically pledges.
+
+On that basis the assertion matches the ownership or finance rule being tested.
+
+The statement is true.
+'] WHERE case_id = 'CASE 4.2.47' AND tier = 'full';
+UPDATE public.economics_cases SET tactical_explanations = ARRAY['FALSE — Keep the partnership triad in view: multi-person ownership, an agreement governing rights and profit shares, and unlimited liability for general partners (with limited partners capped only if they stay out of management).
+
+Legal liability is not automatically limited to profit share proportions.
+
+Apply the chapter mechanism to the exact wording: name the ownership form or finance source correctly, then check whether the claimed tax, liability, repayment, or matching consequence actually follows from that category.
+
+That misclassification is enough to reject the claim.
+
+The statement is false.
+', 'TRUE — In a general partnership, partners typically share equal rights, liabilities, and responsibilities unless varied by agreement. Unlimited liability means each partner can be pursued for the firm''s debts.
+
+Partners can divide tasks and specialise — one in sales, another in operations — while still sharing ownership. Specialisation is an operational advantage of multi-person ownership.
+
+Equal liabilities continue despite specialised role assignment among partners.
+
+That is why the claim stands for this form of business or source of finance.
+
+The statement is true.
+', 'TRUE — Partners need a partnership agreement to settle ownership shares, decision rights, responsibilities, and how profits and losses are divided. Without clear terms, disputes over control and residual claims are harder to resolve.
+
+Profit-loss division is settled in the partnership agreement.
+
+Apply the chapter mechanism to the exact wording: name the ownership form or finance source correctly, then check whether the claimed tax, liability, repayment, or matching consequence actually follows from that category.
+
+That is why the claim stands for this form of business or source of finance.
+
+The statement is true.
+', 'TRUE — In a limited partnership, limited partners'' liability is capped at what they contributed, and they normally must not take part in management — that is the price of the liability cap. General partners continue to manage and usually retain unlimited liability.
+
+Non-managing limited partners have capped liability at their contribution.
+
+Limited partners trade a liability cap for staying out of management. If they take part in running the firm, they risk losing that shield; general partners continue with management and typically unlimited liability.
+
+That is why the claim stands for this form of business or source of finance.
+
+The statement is true.
+', 'TRUE — Partners need a partnership agreement to settle ownership shares, decision rights, responsibilities, and how profits and losses are divided. Without clear terms, disputes over control and residual claims are harder to resolve.
+
+Partnership terms may be recorded together with rights and profit-loss rules.
+
+Apply the chapter mechanism to the exact wording: name the ownership form or finance source correctly, then check whether the claimed tax, liability, repayment, or matching consequence actually follows from that category.
+
+So the sentence is a correct description of the mechanism at work in this case.
+
+The statement is true.
+'] WHERE case_id = 'CASE 4.2.48' AND tier = 'full';
+UPDATE public.economics_cases SET tactical_explanations = ARRAY['TRUE — In a general partnership, partners typically share equal rights, liabilities, and responsibilities unless varied by agreement. Unlimited liability means each partner can be pursued for the firm''s debts.
+
+Under unlimited liability in a general partnership, each partner can be solely liable for all debts of the business: creditors need not split claims proportionally before pursuing one partner''s private assets.
+
+Each general partner faces unlimited liability individually, not merely proportionally by ownership.
+
+On that basis the assertion matches the ownership or finance rule being tested.
+
+The statement is true.
+', 'TRUE — Keep the partnership triad in view: multi-person ownership, an agreement governing rights and profit shares, and unlimited liability for general partners (with limited partners capped only if they stay out of management).
+
+Shared judgment in difficult situations can improve partnership decisions.
+
+Apply the chapter mechanism to the exact wording: name the ownership form or finance source correctly, then check whether the claimed tax, liability, repayment, or matching consequence actually follows from that category.
+
+On that basis the assertion matches the ownership or finance rule being tested.
+
+The statement is true.
+', 'TRUE — Partners need a partnership agreement to settle ownership shares, decision rights, responsibilities, and how profits and losses are divided. Without clear terms, disputes over control and residual claims are harder to resolve.
+
+The agreement settles rights, responsibilities, ownership, and dispute resolution.
+
+Apply the chapter mechanism to the exact wording: name the ownership form or finance source correctly, then check whether the claimed tax, liability, repayment, or matching consequence actually follows from that category.
+
+On that basis the assertion matches the ownership or finance rule being tested.
+
+The statement is true.
+', 'FALSE — Keep the partnership triad in view: multi-person ownership, an agreement governing rights and profit shares, and unlimited liability for general partners (with limited partners capped only if they stay out of management).
+
+Implicit understanding does not replace settling rights in a partnership agreement.
+
+Apply the chapter mechanism to the exact wording: name the ownership form or finance source correctly, then check whether the claimed tax, liability, repayment, or matching consequence actually follows from that category.
+
+On that basis the assertion attaches the wrong legal, tax, liability, or finance label.
+
+The statement is false.
+', 'FALSE — Under unlimited liability in a general partnership, each partner can be solely liable for all debts of the business: creditors need not split claims proportionally before pursuing one partner''s private assets.
+
+Unlimited liability covers all firm debts, not only personally authorised obligations.
+
+Apply the chapter mechanism to the exact wording: name the ownership form or finance source correctly, then check whether the claimed tax, liability, repayment, or matching consequence actually follows from that category.
+
+So the sentence does not survive once the correct mechanism is applied.
+
+The statement is false.
+'] WHERE case_id = 'CASE 4.2.49' AND tier = 'full';
+UPDATE public.economics_cases SET tactical_explanations = ARRAY['TRUE — When two or more persons jointly found a business, the ownership form is a partnership. Joint founding — shared ownership intent — is the defining step that distinguishes it from a sole proprietorship.
+
+Partners need a partnership agreement to settle ownership shares, decision rights, responsibilities, and how profits and losses are divided. Without clear terms, disputes over control and residual claims are harder to resolve.
+
+The partnership agreement settles rights, responsibilities, and profit-loss division among joint founders.
+
+On that basis the assertion matches the ownership or finance rule being tested.
+
+The statement is true.
+', 'TRUE — Keep the partnership triad in view: multi-person ownership, an agreement governing rights and profit shares, and unlimited liability for general partners (with limited partners capped only if they stay out of management).
+
+Task division does not remove joint unlimited liability for all partnership debts.
+
+Apply the chapter mechanism to the exact wording: name the ownership form or finance source correctly, then check whether the claimed tax, liability, repayment, or matching consequence actually follows from that category.
+
+So the sentence is a correct description of the mechanism at work in this case.
+
+The statement is true.
+', 'TRUE — Keep the partnership triad in view: multi-person ownership, an agreement governing rights and profit shares, and unlimited liability for general partners (with limited partners capped only if they stay out of management).
+
+The agreement settles ownership percentages, profit-loss division, and governance among founders.
+
+Apply the chapter mechanism to the exact wording: name the ownership form or finance source correctly, then check whether the claimed tax, liability, repayment, or matching consequence actually follows from that category.
+
+So the sentence is a correct description of the mechanism at work in this case.
+
+The statement is true.
+', 'FALSE — In a general partnership, partners typically share equal rights, liabilities, and responsibilities unless varied by agreement. Unlimited liability means each partner can be pursued for the firm''s debts.
+
+Equal responsibilities coexist with divided and specialised duties.
+
+Apply the chapter mechanism to the exact wording: name the ownership form or finance source correctly, then check whether the claimed tax, liability, repayment, or matching consequence actually follows from that category.
+
+On that basis the assertion attaches the wrong legal, tax, liability, or finance label.
+
+The statement is false.
+', 'TRUE — In a general partnership, partners typically share equal rights, liabilities, and responsibilities unless varied by agreement. Unlimited liability means each partner can be pursued for the firm''s debts.
+
+Under unlimited liability in a general partnership, each partner can be solely liable for all debts of the business: creditors need not split claims proportionally before pursuing one partner''s private assets.
+
+Shared management duties coexist with each partner''s unlimited liability for all firm debts.
+
+On that basis the assertion matches the ownership or finance rule being tested.
+
+The statement is true.
+'] WHERE case_id = 'CASE 4.2.50' AND tier = 'full';

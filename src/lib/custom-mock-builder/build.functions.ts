@@ -94,8 +94,7 @@ function cleanTopicCounts(
 
 /**
  * Build a Custom Mock from Full Course material (no AI).
- * Economics: Full Course cases in the database, tagged by book subtopic.
- * Math / English: local Full Course banks (same tasks as the practice pages).
+ * Economics / Math / English: local Full Course banks (same tasks as the practice pages).
  */
 export const buildCustomMock = createServerFn({ method: "POST" })
   .middleware([requireSupabaseAuth])
@@ -125,26 +124,9 @@ export const buildCustomMock = createServerFn({ method: "POST" })
     const topicCounts = cleanTopicCounts(data.topicCounts, subtopics, questionCount);
     const subjectLabel = CUSTOM_MOCK_SUBJECTS[subject].label;
 
-    let pool: CaseRow[] = [];
-
-    if (subject === "economics") {
-      const subsectionKeys = [...new Set([...subtopics, ...chapters.map(String)])];
-      const { data: caseRows, error: caseError } = await context.supabase
-        .from("economics_cases")
-        .select("id, case_id, context, statements, answer_key, tactical_explanations, subsection")
-        .eq("tier", "full")
-        .in("subsection", subsectionKeys)
-        .order("sort_order", { ascending: true });
-
-      if (caseError) throw new Error(`Failed to load Full Course cases: ${caseError.message}`);
-      const allRows = (caseRows ?? []) as CaseRow[];
-      const tagged = allRows.filter((c) => subtopics.includes(c.subsection));
-      pool = tagged.length >= questionCount ? tagged : allRows;
-    } else {
-      pool = (await getLocalBuilderTasks(subject)).filter((t) =>
-        subtopics.includes(t.subsection),
-      );
-    }
+    const pool: CaseRow[] = (await getLocalBuilderTasks(subject)).filter((t) =>
+      subtopics.includes(t.subsection),
+    );
 
     if (pool.length === 0) {
       throw new Error("No Full Course questions found for the selected subtopics yet.");

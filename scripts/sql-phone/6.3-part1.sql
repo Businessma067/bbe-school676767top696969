@@ -1,788 +1,1280 @@
 -- Update expanded explanations for 6.3-part1 (25 cases).
 -- Safe to re-run: only updates tactical_explanations.
 
-UPDATE public.economics_cases SET tactical_explanations = ARRAY['TRUE — The claim is correct. A business''s balance sheet and income statement for a single year should be read cautiously, since one year''s figures alone can create a misleading impression of overall performance.
+UPDATE public.economics_cases SET tactical_explanations = ARRAY['TRUE — Single-year statements need cautious reading: policies, estimates, and one-offs matter.
 
-The task tests reading balance sheets and income statements for structure and risk. Financial statements distinguish stocks (balance sheet at a date) from flows (income and cash over a period); many false statements swap those roles.
+The wording matches the relevant rule for "Reading Financial Statements With Caution in Practice". Single-year statements need cautious reading: policies, estimates, and one-offs matter. Ratios (liquidity, gearing, margins, returns) put line items in context. Financial accounting serves external users; audits give reasonable, not absolute, assurance. Applied here: "A business''s balance sheet and income statement for a single year should be read cautiously, since one year''s figures alone can create a misleading impression of overall performance."
 
-Apply the case evidence: One year''s figures alone can mislead, so cautious reading is required before drawing conclusions. Check whether the direction of change (higher/lower, above/below the threshold) matches what the statement asserts.
+The statement is true.', 'TRUE — Single-year statements need cautious reading: policies, estimates, and one-offs matter.
 
-No qualifying word breaks the definition or scenario, so the answer is true.', 'TRUE — This statement is correct. Because a balance sheet and income statement summarise a whole year of trading into a limited set of totals, important detail can be lost and should be sought elsewhere before conclusions are drawn.
+The wording matches the relevant rule for "Reading Financial Statements With Caution in Practice". Single-year statements need cautious reading: policies, estimates, and one-offs matter. Ratios (liquidity, gearing, margins, returns) put line items in context. Financial accounting serves external users; audits give reasonable, not absolute, assurance. Applied here: "Because a balance sheet and income statement summarise a whole year of trading into a limited set of totals, important detail can be lost and should be sought elsewhere before conclusions are drawn."
 
-This is an accounting reasoning item on reading balance sheets and income statements for structure and risk. Decide whether the sentence correctly describes how a transaction, balance-sheet line, or period result affects assets, liabilities, or equity.
+The statement is true.', 'TRUE — Single-year statements need cautious reading: policies, estimates, and one-offs matter.
 
-From the figures or classification rule involved, summarising a year''s trading into totals can hide detail that matters for a fair conclusion. Accounting statements fail when a loss is treated as increasing equity, when a flow is placed on the balance sheet, or when a ratio inequality is reversed.
+The wording matches the relevant rule for "Reading Financial Statements With Caution in Practice". Single-year statements need cautious reading: policies, estimates, and one-offs matter. Ratios (liquidity, gearing, margins, returns) put line items in context. Financial accounting serves external users; audits give reasonable, not absolute, assurance. Applied here: "An improvement in profit for the year need not reflect stronger underlying trading, since it could instead result from a one-off event that will not repeat."
 
-No qualifying word breaks the definition or scenario, so the answer is true.', 'TRUE — The claim is correct. An improvement in profit for the year need not reflect stronger underlying trading, since it could instead result from a one-off event that will not repeat.
+The statement is true.', 'TRUE — Single-year statements need cautious reading: policies, estimates, and one-offs matter.
 
-The task tests reading balance sheets and income statements for structure and risk. Financial statements distinguish stocks (balance sheet at a date) from flows (income and cash over a period); many false statements swap those roles.
+The wording matches the relevant rule for "Reading Financial Statements With Caution in Practice". Single-year statements need cautious reading: policies, estimates, and one-offs matter. Ratios (liquidity, gearing, margins, returns) put line items in context. Financial accounting serves external users; audits give reasonable, not absolute, assurance. Applied here: "Reading the explanatory notes that accompany a balance sheet and income statement can clarify movements that the main statements alone leave unexplained."
 
-Apply the case evidence: A profit improvement can come from a non-recurring event rather than better ongoing trading. Check whether the direction of change (higher/lower, above/below the threshold) matches what the statement asserts.
+The statement is true.', 'FALSE — Single-year statements need cautious reading: policies, estimates, and one-offs matter.
 
-No qualifying word breaks the definition or scenario, so the answer is true.', 'TRUE — On the Fuhrmann definition used in the entrance exam, the sentence is correct. Reading the explanatory notes that accompany a balance sheet and income statement can clarify movements that the main statements alone leave unexplained.
+Absolute or misapplied wording conflicts with the rule for "Reading Financial Statements With Caution in Practice". Single-year statements need cautious reading: policies, estimates, and one-offs matter. Ratios (liquidity, gearing, margins, returns) put line items in context. Financial accounting serves external users; audits give reasonable, not absolute, assurance. Rejected claim: "A business''s balance sheet and income statement for a single year can always be trusted on their own, since one year''s figures alone give a complete impression of overall performance."
 
-The task tests reading balance sheets and income statements for structure and risk. Financial statements distinguish stocks (balance sheet at a date) from flows (income and cash over a period); many false statements swap those roles.
+The statement is false.'] WHERE case_id = 'CASE 6.3.001' AND tier = 'full';
+UPDATE public.economics_cases SET tactical_explanations = ARRAY['TRUE — Single-year statements need cautious reading: policies, estimates, and one-offs matter.
 
-Apply the case evidence: Explanatory notes often clarify what the main financial statements alone cannot fully explain. Check whether the direction of change (higher/lower, above/below the threshold) matches what the statement asserts.
+The wording matches the relevant rule for "Reading Financial Statements With Caution Explained". Single-year statements need cautious reading: policies, estimates, and one-offs matter. Ratios (liquidity, gearing, margins, returns) put line items in context. Financial accounting serves external users; audits give reasonable, not absolute, assurance. Applied here: "A cautious reader treats any single figure drawn from the financial statements as a starting point for further inquiry rather than as a final conclusion in itself."
 
-Every part of the claim aligns with the standard concept, so the statement stands.', 'FALSE — Evaluated against the textbook standard, this assertion is false. A business''s balance sheet and income statement for a single year can always be trusted on their own, since one year''s figures alone give a complete impression of overall performance.
+The statement is true.', 'TRUE — Single-year statements need cautious reading: policies, estimates, and one-offs matter.
 
-This is an accounting reasoning item on reading balance sheets and income statements for structure and risk. Decide whether the sentence correctly describes how a transaction, balance-sheet line, or period result affects assets, liabilities, or equity.
+The wording matches the relevant rule for "Reading Financial Statements With Caution Explained". Single-year statements need cautious reading: policies, estimates, and one-offs matter. Ratios (liquidity, gearing, margins, returns) put line items in context. Financial accounting serves external users; audits give reasonable, not absolute, assurance. Applied here: "Placing several years of a business''s balance sheets and income statements side by side reveals directional trends that cannot be seen from any single year."
 
-From the figures or classification rule involved, one year''s figures alone can mislead; caution and wider context are needed before drawing conclusions. Accounting statements fail when a loss is treated as increasing equity, when a flow is placed on the balance sheet, or when a ratio inequality is reversed.
+The statement is true.', 'TRUE — Single-year statements need cautious reading: policies, estimates, and one-offs matter.
 
-Watch the absolute wording "always": exam statements often sound plausible until a single scope word turns an otherwise familiar idea into an overclaim.
+The wording matches the relevant rule for "Reading Financial Statements With Caution Explained". Single-year statements need cautious reading: policies, estimates, and one-offs matter. Ratios (liquidity, gearing, margins, returns) put line items in context. Financial accounting serves external users; audits give reasonable, not absolute, assurance. Applied here: "Following revenue, cost of sales and profit for the year across several reporting periods helps show the direction in which a business''s performance is heading."
 
-Once the overclaim or mislabel is exposed, the only consistent answer is false.'] WHERE case_id = 'CASE 6.3.001' AND tier = 'full';
-UPDATE public.economics_cases SET tactical_explanations = ARRAY['TRUE — On the Fuhrmann definition used in the entrance exam, the sentence is correct. A cautious reader treats any single figure drawn from the financial statements as a starting point for further inquiry rather than as a final conclusion in itself.
+The statement is true.', 'TRUE — Single-year statements need cautious reading: policies, estimates, and one-offs matter.
 
-The task tests reading balance sheets and income statements for structure and risk. Financial statements distinguish stocks (balance sheet at a date) from flows (income and cash over a period); many false statements swap those roles.
+The wording matches the relevant rule for "Reading Financial Statements With Caution Explained". Single-year statements need cautious reading: policies, estimates, and one-offs matter. Ratios (liquidity, gearing, margins, returns) put line items in context. Financial accounting serves external users; audits give reasonable, not absolute, assurance. Applied here: "Comparing successive balance sheets shows whether a business''s asset base and its sources of finance are expanding, contracting or holding steady over time."
 
-Apply the case evidence: A single figure should prompt further inquiry rather than serve as a final conclusion. Check whether the direction of change (higher/lower, above/below the threshold) matches what the statement asserts.
+The statement is true.', 'FALSE — Single-year statements need cautious reading: policies, estimates, and one-offs matter.
 
-The reasoning chain is complete, so mark the statement true.', 'TRUE — This statement is correct. Placing several years of a business''s balance sheets and income statements side by side reveals directional trends that cannot be seen from any single year.
+Absolute or misapplied wording conflicts with the rule for "Reading Financial Statements With Caution Explained". Single-year statements need cautious reading: policies, estimates, and one-offs matter. Ratios (liquidity, gearing, margins, returns) put line items in context. Financial accounting serves external users; audits give reasonable, not absolute, assurance. Rejected claim: "Because a balance sheet and income statement summarise a whole year of trading into a limited set of totals, no detail is ever lost and nothing further needs to be sought."
 
-This is an accounting reasoning item on reading balance sheets and income statements for structure and risk. Decide whether the sentence correctly describes how a transaction, balance-sheet line, or period result affects assets, liabilities, or equity.
+The statement is false.'] WHERE case_id = 'CASE 6.3.002' AND tier = 'full';
+UPDATE public.economics_cases SET tactical_explanations = ARRAY['FALSE — Single-year statements need cautious reading: policies, estimates, and one-offs matter.
 
-From the figures or classification rule involved, multi-year comparison reveals trends invisible within any one year''s figures alone. Accounting statements fail when a loss is treated as increasing equity, when a flow is placed on the balance sheet, or when a ratio inequality is reversed.
+The claim states: Buying software with cash always increases total assets. The reason — a new asset is added without reducing any other asset. — does not support that label under the chapter definitions. Single-year statements need cautious reading: policies, estimates, and one-offs matter. Ratios (liquidity, gearing, margins, returns) put line items in context. Financial accounting serves external users; audits give reasonable, not absolute, assurance.
 
-Every part of the claim aligns with the standard concept, so the statement stands.', 'TRUE — The claim is correct. Following revenue, cost of sales and profit for the year across several reporting periods helps show the direction in which a business''s performance is heading.
+The statement is false.', 'FALSE — ROE on this extract is operating result divided by total equity.
 
-The task tests reading balance sheets and income statements for structure and risk. Financial statements distinguish stocks (balance sheet at a date) from flows (income and cash over a period); many false statements swap those roles.
+Name the identity in words: ROE = operating result ÷ total equity.
 
-Apply the case evidence: Multi-period tracking of key results shows the direction of a business''s performance. Check whether the direction of change (higher/lower, above/below the threshold) matches what the statement asserts.
+From the extract, operating result = 192 and total equity = 736. Plug the figures step by step:
 
-The reasoning chain is complete, so mark the statement true.', 'TRUE — The claim is correct. Comparing successive balance sheets shows whether a business''s asset base and its sources of finance are expanding, contracting or holding steady over time.
+$$
+ROE = \frac{\text{operating result}}{\text{total equity}}
+$$
 
-The task tests reading balance sheets and income statements for structure and risk. Financial statements distinguish stocks (balance sheet at a date) from flows (income and cash over a period); many false statements swap those roles.
+$$
+ROE = \frac{192}{736}
+$$
 
-Apply the case evidence: Successive balance sheet comparison shows whether assets and financing are expanding, contracting or stable. Check whether the direction of change (higher/lower, above/below the threshold) matches what the statement asserts.
+$$
+ROE = 26.1\%
+$$
 
-No qualifying word breaks the definition or scenario, so the answer is true.', 'FALSE — Evaluated against the textbook standard, this assertion is false. Because a balance sheet and income statement summarise a whole year of trading into a limited set of totals, no detail is ever lost and nothing further needs to be sought.
+Threshold: exceeds 35.1%. Actual 26.1%.
 
-This is an accounting reasoning item on reading balance sheets and income statements for structure and risk. Decide whether the sentence correctly describes how a transaction, balance-sheet line, or period result affects assets, liabilities, or equity.
+Reading the arithmetic against the claim: ROE 26.1% does not exceed 35.1% so the statement does not hold.
 
-From the figures or classification rule involved, summarising into totals can hide detail, so additional information is often still needed. Accounting statements fail when a loss is treated as increasing equity, when a flow is placed on the balance sheet, or when a ratio inequality is reversed.
+The statement is false.', 'FALSE — Operating-cash conversion here is cash flow from operating activities as a percentage of operating result.
 
-The statement sounds plausible but fails on precision, so it is false.'] WHERE case_id = 'CASE 6.3.002' AND tier = 'full';
-UPDATE public.economics_cases SET tactical_explanations = ARRAY['FALSE — The claim is false. Buying software with cash always increases total assets because a new asset is added without reducing any other asset.
+Name the identity in words: conversion = operating cash flow ÷ operating result.
 
-The task tests reading balance sheets and income statements for structure and risk. Financial statements distinguish stocks (balance sheet at a date) from flows (income and cash over a period); many false statements swap those roles.
+From the extract, operating cash flow = 176 and operating result = 192. Plug the figures step by step:
 
-Apply the case evidence: Cash falls by the same amount as the software rises, so total assets stay unchanged. Check whether the direction of change (higher/lower, above/below the threshold) matches what the statement asserts.
+$$
+Conv = \frac{\text{operating cash flow}}{\text{operating result}}
+$$
 
-Watch the absolute wording "always": exam statements often sound plausible until a single scope word turns an otherwise familiar idea into an overclaim.
+$$
+Conv = \frac{176}{192}
+$$
 
-Because the decisive detail is wrong, mark the statement false.', 'FALSE — This statement is false. Return on equity, the operating result taken as a percentage of total equity, exceeds 35.1%.
+$$
+Conv = 91.7\%
+$$
 
-This item belongs to the accounting block on reading balance sheets and income statements for structure and risk. Ratio and classification questions ask you to connect a figure or comparison in the case with the correct statement category, not merely to recognise a number.
+Threshold: less than 78.6%. Actual 91.7%.
 
-From the figures or classification rule involved, return on equity ≈ 26.1%. Accounting statements fail when a loss is treated as increasing equity, when a flow is placed on the balance sheet, or when a ratio inequality is reversed.
+Reading the arithmetic against the claim: conversion 91.7% is not less than 78.6% so the statement does not hold.
 
-Because the decisive detail is wrong, mark the statement false.', 'FALSE — The claim is false. Cash flow from operating activities amounts to less than 78.6% of the operating result, indicating profit is only partly backed by cash.
+The statement is false.', 'FALSE — This is a composition claim: express Inventory as a percentage of total assets.
 
-The underlying topic is reading balance sheets and income statements for structure and risk. When figures appear, the exam checks whether you can interpret them in accounting terms—what increased, what ratio is implied, and whether the label (current, non-current, equity, and so on) fits.
+Name the identity in words: Inventory share of total assets = Inventory ÷ total assets.
 
-Apply the case evidence: Cash conversion ≈ 91.7% of the operating result. Check whether the direction of change (higher/lower, above/below the threshold) matches what the statement asserts.
+From the extract, Inventory = 223 and total assets = 1,235. Plug the figures step by step:
 
-Because the decisive detail is wrong, mark the statement false.', 'FALSE — Evaluated against the textbook standard, this assertion is false. Inventory make up more than 25.7% of total assets.
+$$
+Share = \frac{\text{Inventory}}{\text{total assets}}
+$$
 
-This item belongs to the accounting block on reading balance sheets and income statements for structure and risk. Ratio and classification questions ask you to connect a figure or comparison in the case with the correct statement category, not merely to recognise a number.
+$$
+Share = \frac{223}{1,235}
+$$
 
-From the figures or classification rule involved, inventory are about 18.1% of total assets. Accounting statements fail when a loss is treated as increasing equity, when a flow is placed on the balance sheet, or when a ratio inequality is reversed.
+$$
+Share = 18.1\%
+$$
 
-Once the overclaim or mislabel is exposed, the only consistent answer is false.', 'TRUE — The claim is correct. Return on capital employed, the operating result taken relative to equity plus non-current liabilities, exceeds 15.5%.
+Threshold: more than 25.7%. Actual 18.1%.
 
-The underlying topic is reading balance sheets and income statements for structure and risk. When figures appear, the exam checks whether you can interpret them in accounting terms—what increased, what ratio is implied, and whether the label (current, non-current, equity, and so on) fits.
+Reading the arithmetic against the claim: actual share 18.1% does not match ''more than 25.7%'' so the statement does not hold.
 
-Apply the case evidence: Return on capital employed ≈ 18.4%. Check whether the direction of change (higher/lower, above/below the threshold) matches what the statement asserts.
+The statement is false.', 'TRUE — ROCE relates operating result to capital employed: equity plus non-current liabilities.
 
-No qualifying word breaks the definition or scenario, so the answer is true.'] WHERE case_id = 'CASE 6.3.003' AND tier = 'full';
-UPDATE public.economics_cases SET tactical_explanations = ARRAY['TRUE — On the Fuhrmann definition used in the entrance exam, the sentence is correct. Looking at several consecutive years of results makes it easier to tell whether an unusual figure was a temporary blip or the start of a lasting change.
+Name the identity in words: ROCE = operating result ÷ (equity + non-current liabilities).
 
-The task tests reading balance sheets and income statements for structure and risk. Financial statements distinguish stocks (balance sheet at a date) from flows (income and cash over a period); many false statements swap those roles.
+$$
+\text{Capital employed} = 736 + 227 + 79 = 1,042
+$$
 
-Apply the case evidence: Several consecutive years help distinguish a temporary blip from a lasting change. Check whether the direction of change (higher/lower, above/below the threshold) matches what the statement asserts.
+$$
+ROCE = \frac{192}{1,042} = 18.4\%
+$$
 
-No qualifying word breaks the definition or scenario, so the answer is true.', 'TRUE — On the Fuhrmann definition used in the entrance exam, the sentence is correct. A trend that persists across three or more reporting periods carries more weight than a single period''s outcome when judging a business''s direction of travel.
+Threshold: exceeds 15.5%. Actual 18.4%.
 
-The task tests reading balance sheets and income statements for structure and risk. Financial statements distinguish stocks (balance sheet at a date) from flows (income and cash over a period); many false statements swap those roles.
+Reading the arithmetic against the claim: ROCE 18.4% exceeds 15.5% so the statement holds.
 
-Apply the case evidence: A trend persisting across several periods is more meaningful than one period''s outcome alone. Check whether the direction of change (higher/lower, above/below the threshold) matches what the statement asserts.
+The statement is true.'] WHERE case_id = 'CASE 6.3.003' AND tier = 'full';
+UPDATE public.economics_cases SET tactical_explanations = ARRAY['TRUE — Single-year statements need cautious reading: policies, estimates, and one-offs matter.
 
-Every part of the claim aligns with the standard concept, so the statement stands.', 'TRUE — On the Fuhrmann definition used in the entrance exam, the sentence is correct. Judging whether a business''s results are strong or weak is more reliable when its figures are set alongside those of comparable businesses in the same industry.
+The wording matches the relevant rule for "Reading Financial Statements With Caution for Analysts". Single-year statements need cautious reading: policies, estimates, and one-offs matter. Ratios (liquidity, gearing, margins, returns) put line items in context. Financial accounting serves external users; audits give reasonable, not absolute, assurance. Applied here: "Looking at several consecutive years of results makes it easier to tell whether an unusual figure was a temporary blip or the start of a lasting change."
 
-The task tests reading balance sheets and income statements for structure and risk. Financial statements distinguish stocks (balance sheet at a date) from flows (income and cash over a period); many false statements swap those roles.
+The statement is true.', 'TRUE — Single-year statements need cautious reading: policies, estimates, and one-offs matter.
 
-Apply the case evidence: Comparable industry figures provide the benchmark for judging whether results are strong or weak. Check whether the direction of change (higher/lower, above/below the threshold) matches what the statement asserts.
+The wording matches the relevant rule for "Reading Financial Statements With Caution for Analysts". Single-year statements need cautious reading: policies, estimates, and one-offs matter. Ratios (liquidity, gearing, margins, returns) put line items in context. Financial accounting serves external users; audits give reasonable, not absolute, assurance. Applied here: "A trend that persists across three or more reporting periods carries more weight than a single period''s outcome when judging a business''s direction of travel."
 
-No qualifying word breaks the definition or scenario, so the answer is true.', 'TRUE — This statement is correct. A profit margin that appears strong when viewed in isolation may turn out to be unremarkable once measured against the margins earned by similar businesses.
+The statement is true.', 'TRUE — Single-year statements need cautious reading: policies, estimates, and one-offs matter.
 
-This is an accounting reasoning item on reading balance sheets and income statements for structure and risk. Decide whether the sentence correctly describes how a transaction, balance-sheet line, or period result affects assets, liabilities, or equity.
+The wording matches the relevant rule for "Reading Financial Statements With Caution for Analysts". Single-year statements need cautious reading: policies, estimates, and one-offs matter. Ratios (liquidity, gearing, margins, returns) put line items in context. Financial accounting serves external users; audits give reasonable, not absolute, assurance. Applied here: "Judging whether a business''s results are strong or weak is more reliable when its figures are set alongside those of comparable businesses in the same industry."
 
-From the figures or classification rule involved, an apparently strong margin can look unremarkable once benchmarked against similar businesses. Accounting statements fail when a loss is treated as increasing equity, when a flow is placed on the balance sheet, or when a ratio inequality is reversed.
+The statement is true.', 'TRUE — Single-year statements need cautious reading: policies, estimates, and one-offs matter.
 
-No qualifying word breaks the definition or scenario, so the answer is true.', 'TRUE — The claim is correct. Sector-wide benchmarks help determine whether an individual business''s asset structure or profitability is ordinary for its industry or genuinely stands out.
+The wording matches the relevant rule for "Reading Financial Statements With Caution for Analysts". Single-year statements need cautious reading: policies, estimates, and one-offs matter. Ratios (liquidity, gearing, margins, returns) put line items in context. Financial accounting serves external users; audits give reasonable, not absolute, assurance. Applied here: "A profit margin that appears strong when viewed in isolation may turn out to be unremarkable once measured against the margins earned by similar businesses."
 
-The task tests reading balance sheets and income statements for structure and risk. Financial statements distinguish stocks (balance sheet at a date) from flows (income and cash over a period); many false statements swap those roles.
+The statement is true.', 'TRUE — Single-year statements need cautious reading: policies, estimates, and one-offs matter.
 
-Apply the case evidence: Sector benchmarks reveal whether a business''s results are ordinary or exceptional for its industry. Check whether the direction of change (higher/lower, above/below the threshold) matches what the statement asserts.
+The wording matches the relevant rule for "Reading Financial Statements With Caution for Analysts". Single-year statements need cautious reading: policies, estimates, and one-offs matter. Ratios (liquidity, gearing, margins, returns) put line items in context. Financial accounting serves external users; audits give reasonable, not absolute, assurance. Applied here: "Sector-wide benchmarks help determine whether an individual business''s asset structure or profitability is ordinary for its industry or genuinely stands out."
 
-Every part of the claim aligns with the standard concept, so the statement stands.'] WHERE case_id = 'CASE 6.3.004' AND tier = 'full';
-UPDATE public.economics_cases SET tactical_explanations = ARRAY['FALSE — On the Fuhrmann definition used in the entrance exam, the sentence is false. The gross profit margin, gross profit taken as a share of revenue, is more than 4.6 percentage points higher in Year 2 than in Year 1.
+The statement is true.'] WHERE case_id = 'CASE 6.3.004' AND tier = 'full';
+UPDATE public.economics_cases SET tactical_explanations = ARRAY['FALSE — Gross margin is gross profit divided by revenue; the claim compares the Year-2 margin with Year 1 in percentage points.
 
-The underlying topic is reading balance sheets and income statements for structure and risk. When figures appear, the exam checks whether you can interpret them in accounting terms—what increased, what ratio is implied, and whether the label (current, non-current, equity, and so on) fits.
+Name the identity in words: gross margin = gross profit ÷ revenue; Δ = GPM₂ − GPM₁.
 
-Apply the case evidence: Gross margins were 40.1% then 40.1%. Check whether the direction of change (higher/lower, above/below the threshold) matches what the statement asserts.
+$$
+GPM_{1} = \frac{318}{794} = 40.1\%
+$$
 
-Once the overclaim or mislabel is exposed, the only consistent answer is false.', 'TRUE — The claim is correct. Purchase of a plant, machinery or other long-term asset for cash is classified as cash flow from investing activities.
+$$
+GPM_{2} = \frac{388}{968} = 40.1\%
+$$
 
-The task tests reading balance sheets and income statements for structure and risk. Financial statements distinguish stocks (balance sheet at a date) from flows (income and cash over a period); many false statements swap those roles.
+$$
+\Delta = 0.0\text{ percentage points}
+$$
 
-Apply the case evidence: Long-term asset purchases are investing outflows. Check whether the direction of change (higher/lower, above/below the threshold) matches what the statement asserts.
+Threshold: more than 4.6 pp higher in Year 2. Actual Δ = 0.0 pp.
 
-The reasoning chain is complete, so mark the statement true.', 'FALSE — On the Fuhrmann definition used in the entrance exam, the sentence is false. The operating result grew by more than 39.7% between Year 1 and Year 2.
+Reading the arithmetic against the claim: margin rose by 0.0 pp versus more than 4.6 pp so the statement does not hold.
 
-The underlying topic is reading balance sheets and income statements for structure and risk. When figures appear, the exam checks whether you can interpret them in accounting terms—what increased, what ratio is implied, and whether the label (current, non-current, equity, and so on) fits.
+The statement is false.', 'TRUE — Single-year statements need cautious reading: policies, estimates, and one-offs matter.
 
-Apply the case evidence: The operating result changed by about 20.1% between the two years. Check whether the direction of change (higher/lower, above/below the threshold) matches what the statement asserts.
+The wording matches the relevant rule for "Revenue and Operating Result Chart 5". Single-year statements need cautious reading: policies, estimates, and one-offs matter. Ratios (liquidity, gearing, margins, returns) put line items in context. Financial accounting serves external users; audits give reasonable, not absolute, assurance. Applied here: "Purchase of a plant, machinery or other long-term asset for cash is classified as cash flow from investing activities."
 
-Because the decisive detail is wrong, mark the statement false.', 'FALSE — The claim is false. Finance costs grew by more than 43.6% between Year 1 and Year 2, outpacing the growth in the operating result.
+The statement is true.', 'FALSE — Use the case figures for The operating result and compute the percentage change between Year 1 and Year 2 before comparing it with the claimed threshold.
 
-The underlying topic is reading balance sheets and income statements for structure and risk. When figures appear, the exam checks whether you can interpret them in accounting terms—what increased, what ratio is implied, and whether the label (current, non-current, equity, and so on) fits.
+From the extract:
 
-Apply the case evidence: Finance costs moved from 21 to 23; operating result moved from 244 to 293. Check whether the direction of change (higher/lower, above/below the threshold) matches what the statement asserts.
+$$
+\text{The operating result}_{\text{Y1}} = 244, \quad
+\text{The operating result}_{\text{Y2}} = 293
+$$
 
-Because the decisive detail is wrong, mark the statement false.', 'FALSE — On the Fuhrmann definition used in the entrance exam, the sentence is false. The operating result covers finance costs less than 12.48 times over in Year 2.
+$$
+\frac{293 - 244}{244} = 20.1\%
+$$
 
-The underlying topic is reading balance sheets and income statements for structure and risk. When figures appear, the exam checks whether you can interpret them in accounting terms—what increased, what ratio is implied, and whether the label (current, non-current, equity, and so on) fits.
+$$
+20.1\% \le  39.7\%
+$$
 
-Apply the case evidence: Interest coverage in Year 2 ≈ 12.7 times. Check whether the direction of change (higher/lower, above/below the threshold) matches what the statement asserts.
+The actual growth is 20.1%, which is not more than the claimed 39.7%.
 
-Because the decisive detail is wrong, mark the statement false.'] WHERE case_id = 'CASE 6.3.005' AND tier = 'full';
-UPDATE public.economics_cases SET tactical_explanations = ARRAY['TRUE — The claim is correct. Comparing a business''s statements with those of its direct competitors can reveal whether a change in results reflects conditions across the whole industry or is specific to that one business.
+The statement is false.', 'FALSE — Compare finance-cost growth with operating-result growth; the claim needs both a finance-cost rise above the threshold and outpacing of operating result.
 
-The task tests reading balance sheets and income statements for structure and risk. Financial statements distinguish stocks (balance sheet at a date) from flows (income and cash over a period); many false statements swap those roles.
+Name the identity in words: growth = (Year 2 − Year 1) ÷ Year 1 for each line.
 
-Apply the case evidence: Competitor comparison distinguishes industry-wide changes from company-specific ones. Check whether the direction of change (higher/lower, above/below the threshold) matches what the statement asserts.
+$$
+\text{FC growth} = 9.5\%
+$$
 
-No qualifying word breaks the definition or scenario, so the answer is true.', 'FALSE — The claim is false. An improvement in profit for the year always reflects stronger underlying trading, since one-off events never affect the reported profit figure.
+$$
+\text{OR growth} = 20.1\%
+$$
 
-The task tests reading balance sheets and income statements for structure and risk. Financial statements distinguish stocks (balance sheet at a date) from flows (income and cash over a period); many false statements swap those roles.
+Finance costs did not grow by more than 43.6%; they do not outpace operating result.
 
-Apply the case evidence: One-off events can and do affect reported profit, so an improvement need not reflect better trading. Check whether the direction of change (higher/lower, above/below the threshold) matches what the statement asserts.
+Reading the arithmetic against the claim: FC growth 9.5% vs threshold 43.6% and OR growth 20.1% so the statement does not hold.
 
-Watch the absolute wording "always": exam statements often sound plausible until a single scope word turns an otherwise familiar idea into an overclaim.
+The statement is false.', 'FALSE — Single-year statements need cautious reading: policies, estimates, and one-offs matter.
 
-The statement sounds plausible but fails on precision, so it is false.', 'FALSE — The claim is false. Reading the explanatory notes that accompany a balance sheet and income statement never adds anything beyond what the main statements alone already show.
+Absolute or misapplied wording conflicts with the rule for "Revenue and Operating Result Chart 5". Single-year statements need cautious reading: policies, estimates, and one-offs matter. Ratios (liquidity, gearing, margins, returns) put line items in context. Financial accounting serves external users; audits give reasonable, not absolute, assurance. Rejected claim: "The operating result covers finance costs less than 12.48 times over in Year 2."
 
-The task tests reading balance sheets and income statements for structure and risk. Financial statements distinguish stocks (balance sheet at a date) from flows (income and cash over a period); many false statements swap those roles.
+The statement is false.'] WHERE case_id = 'CASE 6.3.005' AND tier = 'full';
+UPDATE public.economics_cases SET tactical_explanations = ARRAY['TRUE — Single-year statements need cautious reading: policies, estimates, and one-offs matter.
 
-Apply the case evidence: Explanatory notes frequently add clarification that the main statements alone do not provide. Check whether the direction of change (higher/lower, above/below the threshold) matches what the statement asserts.
+The wording matches the relevant rule for "Reading Financial Statements With Caution Over Time". Single-year statements need cautious reading: policies, estimates, and one-offs matter. Ratios (liquidity, gearing, margins, returns) put line items in context. Financial accounting serves external users; audits give reasonable, not absolute, assurance. Applied here: "Comparing a business''s statements with those of its direct competitors can reveal whether a change in results reflects conditions across the whole industry or is specific to that one business."
 
-Watch the absolute wording "never": exam statements often sound plausible until a single scope word turns an otherwise familiar idea into an overclaim.
+The statement is true.', 'FALSE — Single-year statements need cautious reading: policies, estimates, and one-offs matter.
 
-Because the decisive detail is wrong, mark the statement false.', 'TRUE — Evaluated against the textbook standard, this assertion is correct. Without a suitable point of comparison, a reader has no reliable way of judging whether a given profit margin counts as good or poor performance.
+Absolute or misapplied wording conflicts with the rule for "Reading Financial Statements With Caution Over Time". Single-year statements need cautious reading: policies, estimates, and one-offs matter. Ratios (liquidity, gearing, margins, returns) put line items in context. Financial accounting serves external users; audits give reasonable, not absolute, assurance. Rejected claim: "An improvement in profit for the year always reflects stronger underlying trading, since one-off events never affect the reported profit figure."
 
-This is an accounting reasoning item on reading balance sheets and income statements for structure and risk. Decide whether the sentence correctly describes how a transaction, balance-sheet line, or period result affects assets, liabilities, or equity.
+The statement is false.', 'FALSE — Single-year statements need cautious reading: policies, estimates, and one-offs matter.
 
-From the figures or classification rule involved, without a comparison point, judging whether a margin is good or poor is unreliable. Accounting statements fail when a loss is treated as increasing equity, when a flow is placed on the balance sheet, or when a ratio inequality is reversed.
+Absolute or misapplied wording conflicts with the rule for "Reading Financial Statements With Caution Over Time". Single-year statements need cautious reading: policies, estimates, and one-offs matter. Ratios (liquidity, gearing, margins, returns) put line items in context. Financial accounting serves external users; audits give reasonable, not absolute, assurance. Rejected claim: "Reading the explanatory notes that accompany a balance sheet and income statement never adds anything beyond what the main statements alone already show."
 
-No qualifying word breaks the definition or scenario, so the answer is true.', 'TRUE — Evaluated against the textbook standard, this assertion is correct. The relative weight of non-current assets against current assets on a business''s balance sheet gives an indication of how capital-intensive its operations are.
+The statement is false.', 'TRUE — Single-year statements need cautious reading: policies, estimates, and one-offs matter.
 
-This item belongs to the accounting block on reading balance sheets and income statements for structure and risk. Ratio and classification questions ask you to connect a figure or comparison in the case with the correct statement category, not merely to recognise a number.
+The wording matches the relevant rule for "Reading Financial Statements With Caution Over Time". Single-year statements need cautious reading: policies, estimates, and one-offs matter. Ratios (liquidity, gearing, margins, returns) put line items in context. Financial accounting serves external users; audits give reasonable, not absolute, assurance. Applied here: "Without a suitable point of comparison, a reader has no reliable way of judging whether a given profit margin counts as good or poor performance."
 
-From the figures or classification rule involved, the non-current versus current asset balance indicates the capital intensity of operations. Accounting statements fail when a loss is treated as increasing equity, when a flow is placed on the balance sheet, or when a ratio inequality is reversed.
+The statement is true.', 'TRUE — Single-year statements need cautious reading: policies, estimates, and one-offs matter.
 
-No qualifying word breaks the definition or scenario, so the answer is true.'] WHERE case_id = 'CASE 6.3.006' AND tier = 'full';
-UPDATE public.economics_cases SET tactical_explanations = ARRAY['TRUE — On the Fuhrmann definition used in the entrance exam, the sentence is correct. A business holding a larger share of its resources in current assets typically has more of its wealth available for conversion into cash within the coming year.
+The wording matches the relevant rule for "Reading Financial Statements With Caution Over Time". Single-year statements need cautious reading: policies, estimates, and one-offs matter. Ratios (liquidity, gearing, margins, returns) put line items in context. Financial accounting serves external users; audits give reasonable, not absolute, assurance. Applied here: "The relative weight of non-current assets against current assets on a business''s balance sheet gives an indication of how capital-intensive its operations are."
 
-The task tests reading balance sheets and income statements for structure and risk. Financial statements distinguish stocks (balance sheet at a date) from flows (income and cash over a period); many false statements swap those roles.
+The statement is true.'] WHERE case_id = 'CASE 6.3.006' AND tier = 'full';
+UPDATE public.economics_cases SET tactical_explanations = ARRAY['TRUE — Single-year statements need cautious reading: policies, estimates, and one-offs matter.
 
-Apply the case evidence: More current assets relative to non-current assets means more resources convertible into cash soon. Check whether the direction of change (higher/lower, above/below the threshold) matches what the statement asserts.
+The wording matches the relevant rule for "Reading Financial Statements With Caution in Context". Single-year statements need cautious reading: policies, estimates, and one-offs matter. Ratios (liquidity, gearing, margins, returns) put line items in context. Financial accounting serves external users; audits give reasonable, not absolute, assurance. Applied here: "A business holding a larger share of its resources in current assets typically has more of its wealth available for conversion into cash within the coming year."
 
-The reasoning chain is complete, so mark the statement true.', 'TRUE — This statement is correct. Studying how the balance between current and non-current assets shifts over time helps explain how a business is choosing to deploy its resources.
+The statement is true.', 'TRUE — Single-year statements need cautious reading: policies, estimates, and one-offs matter.
 
-This is an accounting reasoning item on reading balance sheets and income statements for structure and risk. Decide whether the sentence correctly describes how a transaction, balance-sheet line, or period result affects assets, liabilities, or equity.
+The wording matches the relevant rule for "Reading Financial Statements With Caution in Context". Single-year statements need cautious reading: policies, estimates, and one-offs matter. Ratios (liquidity, gearing, margins, returns) put line items in context. Financial accounting serves external users; audits give reasonable, not absolute, assurance. Applied here: "Studying how the balance between current and non-current assets shifts over time helps explain how a business is choosing to deploy its resources."
 
-From the figures or classification rule involved, shifts in the current versus non-current asset balance reveal how resources are being deployed. Accounting statements fail when a loss is treated as increasing equity, when a flow is placed on the balance sheet, or when a ratio inequality is reversed.
+The statement is true.', 'FALSE — Single-year statements need cautious reading: policies, estimates, and one-offs matter.
 
-Every part of the claim aligns with the standard concept, so the statement stands.', 'FALSE — The claim is false. A cautious reader treats any single figure drawn from the financial statements as a final conclusion in itself, with no need for further inquiry.
+Absolute or misapplied wording conflicts with the rule for "Reading Financial Statements With Caution in Context". Single-year statements need cautious reading: policies, estimates, and one-offs matter. Ratios (liquidity, gearing, margins, returns) put line items in context. Financial accounting serves external users; audits give reasonable, not absolute, assurance. Rejected claim: "A cautious reader treats any single figure drawn from the financial statements as a final conclusion in itself, with no need for further inquiry."
 
-The task tests reading balance sheets and income statements for structure and risk. Financial statements distinguish stocks (balance sheet at a date) from flows (income and cash over a period); many false statements swap those roles.
+The statement is false.', 'TRUE — Single-year statements need cautious reading: policies, estimates, and one-offs matter.
 
-Apply the case evidence: A single figure is a starting point for inquiry, not a final conclusion on its own. Check whether the direction of change (higher/lower, above/below the threshold) matches what the statement asserts.
+The wording matches the relevant rule for "Reading Financial Statements With Caution in Context". Single-year statements need cautious reading: policies, estimates, and one-offs matter. Ratios (liquidity, gearing, margins, returns) put line items in context. Financial accounting serves external users; audits give reasonable, not absolute, assurance. Applied here: "An increasing share of non-current assets over successive years can point to a business committing more heavily to long-term productive capacity."
 
-Once the overclaim or mislabel is exposed, the only consistent answer is false.', 'TRUE — On the Fuhrmann definition used in the entrance exam, the sentence is correct. An increasing share of non-current assets over successive years can point to a business committing more heavily to long-term productive capacity.
+The statement is true.', 'TRUE — Single-year statements need cautious reading: policies, estimates, and one-offs matter.
 
-The task tests reading balance sheets and income statements for structure and risk. Financial statements distinguish stocks (balance sheet at a date) from flows (income and cash over a period); many false statements swap those roles.
+The wording matches the relevant rule for "Reading Financial Statements With Caution in Context". Single-year statements need cautious reading: policies, estimates, and one-offs matter. Ratios (liquidity, gearing, margins, returns) put line items in context. Financial accounting serves external users; audits give reasonable, not absolute, assurance. Applied here: "Businesses in capital-intensive industries tend to carry a heavier weighting of non-current assets relative to current assets than businesses that trade mainly in quickly turned-over stock."
 
-Apply the case evidence: A rising non-current asset share can signal greater commitment to long-term capacity. Check whether the direction of change (higher/lower, above/below the threshold) matches what the statement asserts.
+The statement is true.'] WHERE case_id = 'CASE 6.3.007' AND tier = 'full';
+UPDATE public.economics_cases SET tactical_explanations = ARRAY['TRUE — Single-year statements need cautious reading: policies, estimates, and one-offs matter.
 
-The reasoning chain is complete, so mark the statement true.', 'TRUE — Evaluated against the textbook standard, this assertion is correct. Businesses in capital-intensive industries tend to carry a heavier weighting of non-current assets relative to current assets than businesses that trade mainly in quickly turned-over stock.
+The wording matches the relevant rule for "Two-Year Balance Sheet Review 8". Single-year statements need cautious reading: policies, estimates, and one-offs matter. Ratios (liquidity, gearing, margins, returns) put line items in context. Financial accounting serves external users; audits give reasonable, not absolute, assurance. Applied here: "Equity usually does not have to be repaid on a fixed schedule, helps the business stay relatively independent from creditors, and cushions losses."
 
-This is an accounting reasoning item on reading balance sheets and income statements for structure and risk. Decide whether the sentence correctly describes how a transaction, balance-sheet line, or period result affects assets, liabilities, or equity.
+The statement is true.', 'TRUE — Use the case figures for Total assets and compute the percentage change between Year 1 and Year 2 before comparing it with the claimed threshold.
 
-From the figures or classification rule involved, capital-intensive industries tend to carry more non-current assets relative to current assets. Accounting statements fail when a loss is treated as increasing equity, when a flow is placed on the balance sheet, or when a ratio inequality is reversed.
+From the extract:
 
-The reasoning chain is complete, so mark the statement true.'] WHERE case_id = 'CASE 6.3.007' AND tier = 'full';
-UPDATE public.economics_cases SET tactical_explanations = ARRAY['TRUE — This statement is correct. Equity usually does not have to be repaid on a fixed schedule, helps the business stay relatively independent from creditors, and cushions losses.
+$$
+\text{Total assets}_{\text{Y1}} = 1,185, \quad
+\text{Total assets}_{\text{Y2}} = 1,312
+$$
 
-This is an accounting reasoning item on reading balance sheets and income statements for structure and risk. Decide whether the sentence correctly describes how a transaction, balance-sheet line, or period result affects assets, liabilities, or equity.
+$$
+\frac{1,312 - 1,185}{1,185} = 10.7\%
+$$
 
-From the figures or classification rule involved, these are textbook advantages of equity finance. Accounting statements fail when a loss is treated as increasing equity, when a flow is placed on the balance sheet, or when a ratio inequality is reversed.
+$$
+10.7\% > 10.6\%
+$$
 
-The reasoning chain is complete, so mark the statement true.', 'TRUE — This statement is correct. Total assets grew by more than 10.6% between Year 1 and Year 2.
+The actual growth is 10.7%, which is more than the claimed 10.6%.
 
-This item belongs to the accounting block on reading balance sheets and income statements for structure and risk. Ratio and classification questions ask you to connect a figure or comparison in the case with the correct statement category, not merely to recognise a number.
+The statement is true.', 'TRUE — Non-current liabilities are the long-term funding claims; here they are long-term bank loan plus bonds payable, compared with total equity.
 
-From the figures or classification rule involved, total assets changed by about 10.7% between the two years. Accounting statements fail when a loss is treated as increasing equity, when a flow is placed on the balance sheet, or when a ratio inequality is reversed.
+Name the identity in words: NCL-to-equity share = (long-term bank loan + bonds payable) ÷ total equity.
 
-Every part of the claim aligns with the standard concept, so the statement stands.', 'TRUE — On the Fuhrmann definition used in the entrance exam, the sentence is correct. Non-current liabilities amount to less than 80.2% of total equity in Year 2.
+$$
+\text{NCL} = 253 + 95 = 348
+$$
 
-The underlying topic is reading balance sheets and income statements for structure and risk. When figures appear, the exam checks whether you can interpret them in accounting terms—what increased, what ratio is implied, and whether the label (current, non-current, equity, and so on) fits.
+$$
+\text{Equity} = 654
+$$
 
-Apply the case evidence: Non-current liabilities are about 53.2% of equity in Year 2. Check whether the direction of change (higher/lower, above/below the threshold) matches what the statement asserts.
+$$
+\frac{348}{654} = 53.2\%
+$$
 
-No qualifying word breaks the definition or scenario, so the answer is true.', 'TRUE — Evaluated against the textbook standard, this assertion is correct. Non-current assets make up more than 61.8% of total assets in Year 2.
+Threshold: less than 80.2% in Year 2. Actual 53.2%.
 
-This item belongs to the accounting block on reading balance sheets and income statements for structure and risk. Ratio and classification questions ask you to connect a figure or comparison in the case with the correct statement category, not merely to recognise a number.
+Reading the arithmetic against the claim: Year 2 NCL/equity is 53.2%, which is consistent with ''less than 80.2%'' so the statement holds.
 
-From the figures or classification rule involved, non-current assets are about 68.7% of total assets in year 2. Accounting statements fail when a loss is treated as increasing equity, when a flow is placed on the balance sheet, or when a ratio inequality is reversed.
+The statement is true.', 'TRUE — This is a composition claim: express Non-current assets as a percentage of total assets in Year 2.
 
-Every part of the claim aligns with the standard concept, so the statement stands.', 'TRUE — This statement is correct. Current liabilities are covered by current assets less than 2.01 times over in Year 2.
+Name the identity in words: Non-current assets share of total assets in Year 2 = Non-current assets ÷ total assets in Year 2.
 
-This item belongs to the accounting block on reading balance sheets and income statements for structure and risk. Ratio and classification questions ask you to connect a figure or comparison in the case with the correct statement category, not merely to recognise a number.
+From the extract, Non-current assets = 901 and total assets in Year 2 = 1,312. Plug the figures step by step:
 
-From the figures or classification rule involved, current ratio in year 2 is about 1.33. Accounting statements fail when a loss is treated as increasing equity, when a flow is placed on the balance sheet, or when a ratio inequality is reversed.
+$$
+Share = \frac{\text{Non-current assets}}{\text{total assets in Year 2}}
+$$
 
-Every part of the claim aligns with the standard concept, so the statement stands.'] WHERE case_id = 'CASE 6.3.008' AND tier = 'full';
-UPDATE public.economics_cases SET tactical_explanations = ARRAY['FALSE — On the Fuhrmann definition used in the entrance exam, the sentence is false. The current ratio is below 1.22.
+$$
+Share = \frac{901}{1,312}
+$$
 
-The underlying topic is reading balance sheets and income statements for structure and risk. When figures appear, the exam checks whether you can interpret them in accounting terms—what increased, what ratio is implied, and whether the label (current, non-current, equity, and so on) fits.
+$$
+Share = 68.7\%
+$$
 
-Apply the case evidence: Current ratio ≈ 1.63. Check whether the direction of change (higher/lower, above/below the threshold) matches what the statement asserts.
+Threshold: more than 61.8%. Actual 68.7%.
 
-Because the decisive detail is wrong, mark the statement false.', 'TRUE — The claim is correct. The balance sheet identity requires that total assets always equal the sum of total liabilities and total equity, which is why any increase in assets must be matched by an increase in either liabilities or equity.
+Reading the arithmetic against the claim: actual share 68.7% matches ''more than 61.8%'' so the statement holds.
 
-The underlying topic is reading balance sheets and income statements for structure and risk. When figures appear, the exam checks whether you can interpret them in accounting terms—what increased, what ratio is implied, and whether the label (current, non-current, equity, and so on) fits.
+The statement is true.', 'TRUE — This is the Year 2 current ratio read as coverage of current liabilities.
 
-Apply the case evidence: Assets = liabilities + equity is the fundamental balance sheet equation. Check whether the direction of change (higher/lower, above/below the threshold) matches what the statement asserts.
+Name the identity in words: coverage = current assets ÷ current liabilities.
 
-Every part of the claim aligns with the standard concept, so the statement stands.', 'TRUE — On the Fuhrmann definition used in the entrance exam, the sentence is correct. The current ratio exceeds 1.57.
+$$
+\frac{411}{310} = 1.3258
+$$
 
-The underlying topic is reading balance sheets and income statements for structure and risk. When figures appear, the exam checks whether you can interpret them in accounting terms—what increased, what ratio is implied, and whether the label (current, non-current, equity, and so on) fits.
+Threshold: less than 2.01. Actual 1.33.
 
-Apply the case evidence: Current ratio ≈ 1.63. Check whether the direction of change (higher/lower, above/below the threshold) matches what the statement asserts.
+Reading the arithmetic against the claim: actual coverage 1.33 is less than 2.01 so the statement holds.
 
-No qualifying word breaks the definition or scenario, so the answer is true.', 'FALSE — Evaluated against the textbook standard, this assertion is false. After excluding inventory, the remaining current assets still cover current liabilities more than 0.71 times over.
+The statement is true.'] WHERE case_id = 'CASE 6.3.008' AND tier = 'full';
+UPDATE public.economics_cases SET tactical_explanations = ARRAY['FALSE — The current ratio is the standard liquidity cover of current assets over current liabilities.
 
-This item belongs to the accounting block on reading balance sheets and income statements for structure and risk. Ratio and classification questions ask you to connect a figure or comparison in the case with the correct statement category, not merely to recognise a number.
+Name the identity in words: current ratio = current assets ÷ current liabilities.
 
-From the figures or classification rule involved, acid-test ratio ≈ 0.62. Accounting statements fail when a loss is treated as increasing equity, when a flow is placed on the balance sheet, or when a ratio inequality is reversed.
+Build current assets and current liabilities from the extract:
 
-The statement sounds plausible but fails on precision, so it is false.', 'TRUE — Evaluated against the textbook standard, this assertion is correct. Inventory make up more than 52.1% of current assets.
+$$
+CA = 265 + 71 + 93 = 429
+$$
 
-This item belongs to the accounting block on reading balance sheets and income statements for structure and risk. Ratio and classification questions ask you to connect a figure or comparison in the case with the correct statement category, not merely to recognise a number.
+$$
+CL = 225 + 38 = 263
+$$
 
-From the figures or classification rule involved, inventory are about 61.8% of current assets. Accounting statements fail when a loss is treated as increasing equity, when a flow is placed on the balance sheet, or when a ratio inequality is reversed.
+$$
+\text{Current ratio} = \frac{429}{263} = 1.6312
+$$
 
-No qualifying word breaks the definition or scenario, so the answer is true.'] WHERE case_id = 'CASE 6.3.009' AND tier = 'full';
-UPDATE public.economics_cases SET tactical_explanations = ARRAY['FALSE — This statement is false. Placing several years of a business''s balance sheets and income statements side by side reveals nothing beyond what a single year''s figures already show.
+Claimed: is below 1.22. Actual 1.63.
 
-This is an accounting reasoning item on reading balance sheets and income statements for structure and risk. Decide whether the sentence correctly describes how a transaction, balance-sheet line, or period result affects assets, liabilities, or equity.
+Reading the arithmetic against the claim: actual current ratio 1.63 versus ''is below 1.22'' so the statement does not hold.
 
-From the figures or classification rule involved, multi-year comparison reveals trends that a single year''s figures cannot show. Accounting statements fail when a loss is treated as increasing equity, when a flow is placed on the balance sheet, or when a ratio inequality is reversed.
+The statement is false.', 'TRUE — Single-year statements need cautious reading: policies, estimates, and one-offs matter.
 
-Once the overclaim or mislabel is exposed, the only consistent answer is false.', 'FALSE — Evaluated against the textbook standard, this assertion is false. Following revenue, cost of sales and profit for the year across several reporting periods provides no indication of the direction in which a business''s performance is heading.
+The wording matches the relevant rule for "Liquidity From the Balance Sheet 9". Single-year statements need cautious reading: policies, estimates, and one-offs matter. Ratios (liquidity, gearing, margins, returns) put line items in context. Financial accounting serves external users; audits give reasonable, not absolute, assurance. Applied here: "The balance sheet identity requires that total assets always equal the sum of total liabilities and total equity, which is why any increase in assets must be matched by an increase in either liabil…"
 
-This is an accounting reasoning item on reading balance sheets and income statements for structure and risk. Decide whether the sentence correctly describes how a transaction, balance-sheet line, or period result affects assets, liabilities, or equity.
+The statement is true.', 'TRUE — The current ratio is the standard liquidity cover of current assets over current liabilities.
 
-From the figures or classification rule involved, tracking key results over several periods is exactly how a performance direction is identified. Accounting statements fail when a loss is treated as increasing equity, when a flow is placed on the balance sheet, or when a ratio inequality is reversed.
+Name the identity in words: current ratio = current assets ÷ current liabilities.
 
-Once the overclaim or mislabel is exposed, the only consistent answer is false.', 'TRUE — The claim is correct. When a business''s equity rises mainly because retained earnings have grown while share capital stays the same, that growth has been funded internally out of past profit.
+Build current assets and current liabilities from the extract:
 
-The task tests reading balance sheets and income statements for structure and risk. Financial statements distinguish stocks (balance sheet at a date) from flows (income and cash over a period); many false statements swap those roles.
+$$
+CA = 265 + 71 + 93 = 429
+$$
 
-Apply the case evidence: Equity growth from rising retained earnings with static share capital reflects internal funding. Check whether the direction of change (higher/lower, above/below the threshold) matches what the statement asserts.
+$$
+CL = 225 + 38 = 263
+$$
 
-The reasoning chain is complete, so mark the statement true.', 'TRUE — This statement is correct. Tracking share capital and retained earnings separately over successive years shows whether a business''s equity growth has come from owner contributions or from accumulated profit.
+$$
+\text{Current ratio} = \frac{429}{263} = 1.6312
+$$
 
-This is an accounting reasoning item on reading balance sheets and income statements for structure and risk. Decide whether the sentence correctly describes how a transaction, balance-sheet line, or period result affects assets, liabilities, or equity.
+Claimed: exceeds 1.57. Actual 1.63.
 
-From the figures or classification rule involved, separate tracking of share capital and retained earnings reveals the source of equity growth. Accounting statements fail when a loss is treated as increasing equity, when a flow is placed on the balance sheet, or when a ratio inequality is reversed.
+Reading the arithmetic against the claim: actual current ratio 1.63 versus ''exceeds 1.57'' so the statement holds.
 
-The reasoning chain is complete, so mark the statement true.', 'FALSE — The claim is false. Comparing successive balance sheets provides no way of telling whether a business''s asset base or sources of finance are expanding, contracting or holding steady.
+The statement is true.', 'FALSE — The acid-test (quick) ratio is a stricter liquidity test: inventory is removed from current assets before dividing by current liabilities.
 
-The task tests reading balance sheets and income statements for structure and risk. Financial statements distinguish stocks (balance sheet at a date) from flows (income and cash over a period); many false statements swap those roles.
+Name the identity in words: acid-test ratio = (current assets − inventory) ÷ current liabilities.
 
-Apply the case evidence: Successive balance sheet comparison is precisely how such changes are detected. Check whether the direction of change (higher/lower, above/below the threshold) matches what the statement asserts.
+$$
+CA = 429, \quad \text{Inventory} = 265, \quad CL = 263
+$$
 
-Because the decisive detail is wrong, mark the statement false.'] WHERE case_id = 'CASE 6.3.010' AND tier = 'full';
-UPDATE public.economics_cases SET tactical_explanations = ARRAY['FALSE — This statement is false. Return on capital employed, the operating result taken relative to equity plus non-current liabilities, exceeds 25.8%.
+$$
+CA - \text{Inventory} = 429 - 265 = 164
+$$
 
-This item belongs to the accounting block on reading balance sheets and income statements for structure and risk. Ratio and classification questions ask you to connect a figure or comparison in the case with the correct statement category, not merely to recognise a number.
+$$
+\text{Acid-test} = \frac{164}{263} = 0.6236
+$$
 
-From the figures or classification rule involved, return on capital employed ≈ 22.6%. Accounting statements fail when a loss is treated as increasing equity, when a flow is placed on the balance sheet, or when a ratio inequality is reversed.
+Threshold: more than 0.71. Actual 0.62.
 
-Because the decisive detail is wrong, mark the statement false.', 'FALSE — Evaluated against the textbook standard, this assertion is false. The equity ratio exceeds 47.3%.
+Reading the arithmetic against the claim: acid-test 0.62 is not more than 0.71 so the statement does not hold.
 
-This item belongs to the accounting block on reading balance sheets and income statements for structure and risk. Ratio and classification questions ask you to connect a figure or comparison in the case with the correct statement category, not merely to recognise a number.
+The statement is false.', 'TRUE — This is a composition claim: express Inventory as a percentage of current assets.
 
-From the figures or classification rule involved, equity ratio ≈ 47.3%. Accounting statements fail when a loss is treated as increasing equity, when a flow is placed on the balance sheet, or when a ratio inequality is reversed.
+Name the identity in words: Inventory share of current assets = Inventory ÷ current assets.
 
-The statement sounds plausible but fails on precision, so it is false.', 'FALSE — Evaluated against the textbook standard, this assertion is false. Cash flow from operating activities amounts to less than 82.1% of the operating result, indicating profit is only partly backed by cash.
+From the extract, Inventory = 265 and current assets = 429. Plug the figures step by step:
 
-This item belongs to the accounting block on reading balance sheets and income statements for structure and risk. Ratio and classification questions ask you to connect a figure or comparison in the case with the correct statement category, not merely to recognise a number.
+$$
+Share = \frac{\text{Inventory}}{\text{current assets}}
+$$
 
-From the figures or classification rule involved, cash conversion ≈ 102.2% of the operating result. Accounting statements fail when a loss is treated as increasing equity, when a flow is placed on the balance sheet, or when a ratio inequality is reversed.
+$$
+Share = \frac{265}{429}
+$$
 
-Because the decisive detail is wrong, mark the statement false.', 'TRUE — This statement is correct. Non-current assets normally have a useful life of more than one year and are intended to be used in the business for longer than one year.
+$$
+Share = 61.8\%
+$$
 
-This is an accounting reasoning item on reading balance sheets and income statements for structure and risk. Decide whether the sentence correctly describes how a transaction, balance-sheet line, or period result affects assets, liabilities, or equity.
+Threshold: more than 52.1%. Actual 61.8%.
 
-From the figures or classification rule involved, this matches the textbook distinction between non-current and current assets. Accounting statements fail when a loss is treated as increasing equity, when a flow is placed on the balance sheet, or when a ratio inequality is reversed.
+Reading the arithmetic against the claim: actual share 61.8% matches ''more than 52.1%'' so the statement holds.
 
-The reasoning chain is complete, so mark the statement true.', 'TRUE — Evaluated against the textbook standard, this assertion is correct. Return on equity, the operating result taken as a percentage of total equity, exceeds 24.6%.
+The statement is true.'] WHERE case_id = 'CASE 6.3.009' AND tier = 'full';
+UPDATE public.economics_cases SET tactical_explanations = ARRAY['FALSE — Single-year statements need cautious reading: policies, estimates, and one-offs matter.
 
-This item belongs to the accounting block on reading balance sheets and income statements for structure and risk. Ratio and classification questions ask you to connect a figure or comparison in the case with the correct statement category, not merely to recognise a number.
+Absolute or misapplied wording conflicts with the rule for "Comparing Results Across Several Years in Practice". Single-year statements need cautious reading: policies, estimates, and one-offs matter. Ratios (liquidity, gearing, margins, returns) put line items in context. Financial accounting serves external users; audits give reasonable, not absolute, assurance. Rejected claim: "Placing several years of a business''s balance sheets and income statements side by side reveals nothing beyond what a single year''s figures already show."
 
-From the figures or classification rule involved, return on equity ≈ 41.8%. Accounting statements fail when a loss is treated as increasing equity, when a flow is placed on the balance sheet, or when a ratio inequality is reversed.
+The statement is false.', 'FALSE — Single-year statements need cautious reading: policies, estimates, and one-offs matter.
 
-No qualifying word breaks the definition or scenario, so the answer is true.'] WHERE case_id = 'CASE 6.3.011' AND tier = 'full';
-UPDATE public.economics_cases SET tactical_explanations = ARRAY['FALSE — On the Fuhrmann definition used in the entrance exam, the sentence is false. The gross profit margin, gross profit taken as a share of revenue, is more than 3.2 percentage points higher in Year 2 than in Year 1.
+Absolute or misapplied wording conflicts with the rule for "Comparing Results Across Several Years in Practice". Single-year statements need cautious reading: policies, estimates, and one-offs matter. Ratios (liquidity, gearing, margins, returns) put line items in context. Financial accounting serves external users; audits give reasonable, not absolute, assurance. Rejected claim: "Following revenue, cost of sales and profit for the year across several reporting periods provides no indication of the direction in which a business''s performance is heading."
 
-The underlying topic is reading balance sheets and income statements for structure and risk. When figures appear, the exam checks whether you can interpret them in accounting terms—what increased, what ratio is implied, and whether the label (current, non-current, equity, and so on) fits.
+The statement is false.', 'TRUE — Single-year statements need cautious reading: policies, estimates, and one-offs matter.
 
-Apply the case evidence: Gross margins were 37.6% then 36.7%. Check whether the direction of change (higher/lower, above/below the threshold) matches what the statement asserts.
+The claim states: When a business''s equity rises mainly. The reason given — retained earnings have grown while share capital stays the same, that growth has been funded internally out of past profit. — fits the chapter rule. Single-year statements need cautious reading: policies, estimates, and one-offs matter. Ratios (liquidity, gearing, margins, returns) put line items in context. Financial accounting serves external users; audits give reasonable, not absolute, assurance.
 
-Once the overclaim or mislabel is exposed, the only consistent answer is false.', 'FALSE — On the Fuhrmann definition used in the entrance exam, the sentence is false. The operating result grew by more than 42.2% between Year 1 and Year 2.
+The statement is true.', 'TRUE — Single-year statements need cautious reading: policies, estimates, and one-offs matter.
 
-The underlying topic is reading balance sheets and income statements for structure and risk. When figures appear, the exam checks whether you can interpret them in accounting terms—what increased, what ratio is implied, and whether the label (current, non-current, equity, and so on) fits.
+The wording matches the relevant rule for "Comparing Results Across Several Years in Practice". Single-year statements need cautious reading: policies, estimates, and one-offs matter. Ratios (liquidity, gearing, margins, returns) put line items in context. Financial accounting serves external users; audits give reasonable, not absolute, assurance. Applied here: "Tracking share capital and retained earnings separately over successive years shows whether a business''s equity growth has come from owner contributions or from accumulated profit."
 
-Apply the case evidence: The operating result changed by about 17.2% between the two years. Check whether the direction of change (higher/lower, above/below the threshold) matches what the statement asserts.
+The statement is true.', 'FALSE — Single-year statements need cautious reading: policies, estimates, and one-offs matter.
 
-Once the overclaim or mislabel is exposed, the only consistent answer is false.', 'TRUE — Evaluated against the textbook standard, this assertion is correct. Profit for the year increases equity through retained earnings, while a loss decreases equity.
+Absolute or misapplied wording conflicts with the rule for "Comparing Results Across Several Years in Practice". Single-year statements need cautious reading: policies, estimates, and one-offs matter. Ratios (liquidity, gearing, margins, returns) put line items in context. Financial accounting serves external users; audits give reasonable, not absolute, assurance. Rejected claim: "Comparing successive balance sheets provides no way of telling whether a business''s asset base or sources of finance are expanding, contracting or holding steady."
 
-This is an accounting reasoning item on reading balance sheets and income statements for structure and risk. Decide whether the sentence correctly describes how a transaction, balance-sheet line, or period result affects assets, liabilities, or equity.
+The statement is false.'] WHERE case_id = 'CASE 6.3.010' AND tier = 'full';
+UPDATE public.economics_cases SET tactical_explanations = ARRAY['FALSE — ROCE relates operating result to capital employed: equity plus non-current liabilities.
 
-From the figures or classification rule involved, the income statement links to the balance sheet via retained earnings. Accounting statements fail when a loss is treated as increasing equity, when a flow is placed on the balance sheet, or when a ratio inequality is reversed.
+Name the identity in words: ROCE = operating result ÷ (equity + non-current liabilities).
 
-No qualifying word breaks the definition or scenario, so the answer is true.', 'FALSE — Evaluated against the textbook standard, this assertion is false. Revenue grew by more than 21% between Year 1 and Year 2.
+$$
+\text{Capital employed} = 543 + 417 + 44 = 1,004
+$$
 
-This item belongs to the accounting block on reading balance sheets and income statements for structure and risk. Ratio and classification questions ask you to connect a figure or comparison in the case with the correct statement category, not merely to recognise a number.
+$$
+ROCE = \frac{227}{1,004} = 22.6\%
+$$
 
-From the figures or classification rule involved, revenue changed by about 17.0% between the two years. Accounting statements fail when a loss is treated as increasing equity, when a flow is placed on the balance sheet, or when a ratio inequality is reversed.
+Threshold: exceeds 25.8%. Actual 22.6%.
 
-Because the decisive detail is wrong, mark the statement false.', 'FALSE — The claim is false. Profit for the year grew by more than 27.7% between Year 1 and Year 2.
+Reading the arithmetic against the claim: ROCE 22.6% does not exceed 25.8% so the statement does not hold.
 
-The underlying topic is reading balance sheets and income statements for structure and risk. When figures appear, the exam checks whether you can interpret them in accounting terms—what increased, what ratio is implied, and whether the label (current, non-current, equity, and so on) fits.
+The statement is false.', 'FALSE — The equity ratio places equity against total assets so the financing structure can be judged on one balance sheet.
 
-Apply the case evidence: Profit for the year changed by about 11.6% between the two years. Check whether the direction of change (higher/lower, above/below the threshold) matches what the statement asserts.
+Name the identity in words: equity ratio = equity ÷ total assets.
 
-Because the decisive detail is wrong, mark the statement false.'] WHERE case_id = 'CASE 6.3.012' AND tier = 'full';
-UPDATE public.economics_cases SET tactical_explanations = ARRAY['TRUE — This statement is correct. A business that grows its equity mostly through retained earnings is relying less on outside investors than one whose equity growth comes mainly from new share issues.
+From the extract, equity = 543 and total assets = 1,149. Plug the figures step by step:
 
-This is an accounting reasoning item on reading balance sheets and income statements for structure and risk. Decide whether the sentence correctly describes how a transaction, balance-sheet line, or period result affects assets, liabilities, or equity.
+$$
+ER = \frac{\text{equity}}{\text{total assets}}
+$$
 
-From the figures or classification rule involved, retained-earnings-driven equity growth relies less on outside investors than share-issue-driven growth. Accounting statements fail when a loss is treated as increasing equity, when a flow is placed on the balance sheet, or when a ratio inequality is reversed.
+$$
+ER = \frac{543}{1,149}
+$$
 
-No qualifying word breaks the definition or scenario, so the answer is true.', 'TRUE — On the Fuhrmann definition used in the entrance exam, the sentence is correct. The pattern of a business''s equity growth over several years, whether driven by retained profit or fresh capital, reveals something about its underlying financing strategy.
+$$
+ER = 47.3\%
+$$
 
-The task tests reading balance sheets and income statements for structure and risk. Financial statements distinguish stocks (balance sheet at a date) from flows (income and cash over a period); many false statements swap those roles.
+Claimed: exceeds 47.3%. Actual 47.3%.
 
-Apply the case evidence: The pattern of equity growth over time reveals a business''s financing strategy. Check whether the direction of change (higher/lower, above/below the threshold) matches what the statement asserts.
+Reading the arithmetic against the claim: actual equity ratio 47.3% does not match ''exceeds 47.3%'' so the statement does not hold.
 
-The reasoning chain is complete, so mark the statement true.', 'TRUE — The claim is correct. If share capital has remained unchanged for several years while equity has still grown, retained earnings must account for the entire increase.
+The statement is false.', 'FALSE — Operating-cash conversion here is cash flow from operating activities as a percentage of operating result.
 
-The task tests reading balance sheets and income statements for structure and risk. Financial statements distinguish stocks (balance sheet at a date) from flows (income and cash over a period); many false statements swap those roles.
+Name the identity in words: conversion = operating cash flow ÷ operating result.
 
-Apply the case evidence: Unchanged share capital plus rising equity means retained earnings account for the increase. Check whether the direction of change (higher/lower, above/below the threshold) matches what the statement asserts.
+From the extract, operating cash flow = 232 and operating result = 227. Plug the figures step by step:
 
-The reasoning chain is complete, so mark the statement true.', 'TRUE — On the Fuhrmann definition used in the entrance exam, the sentence is correct. A business is considered to be financing its non-current assets soundly when their total value does not exceed the combined total of equity and non-current liabilities.
+$$
+Conv = \frac{\text{operating cash flow}}{\text{operating result}}
+$$
 
-The underlying topic is reading balance sheets and income statements for structure and risk. When figures appear, the exam checks whether you can interpret them in accounting terms—what increased, what ratio is implied, and whether the label (current, non-current, equity, and so on) fits.
+$$
+Conv = \frac{232}{227}
+$$
 
-Apply the case evidence: Non-current assets covered by equity plus non-current liabilities reflects sound long-term financing. Check whether the direction of change (higher/lower, above/below the threshold) matches what the statement asserts.
+$$
+Conv = 102.2\%
+$$
 
-Every part of the claim aligns with the standard concept, so the statement stands.', 'TRUE — On the Fuhrmann definition used in the entrance exam, the sentence is correct. Relying on long-term sources of finance, rather than short-term borrowing that must soon be renewed, is regarded as the prudent way to fund long-lived assets.
+Threshold: less than 82.1%. Actual 102.2%.
 
-The task tests reading balance sheets and income statements for structure and risk. Financial statements distinguish stocks (balance sheet at a date) from flows (income and cash over a period); many false statements swap those roles.
+Reading the arithmetic against the claim: conversion 102.2% is not less than 82.1% so the statement does not hold.
 
-Apply the case evidence: Long-term financing of long-lived assets is regarded as the financially prudent approach. Check whether the direction of change (higher/lower, above/below the threshold) matches what the statement asserts.
+The statement is false.', 'TRUE — Non-current assets are held for use beyond one accounting period.
 
-Every part of the claim aligns with the standard concept, so the statement stands.'] WHERE case_id = 'CASE 6.3.013' AND tier = 'full';
-UPDATE public.economics_cases SET tactical_explanations = ARRAY['FALSE — This statement is false. Looking at several consecutive years of results makes it harder to tell whether an unusual figure was a temporary blip or the start of a lasting change.
+Useful life beyond one year plus operating intent (not ordinary resale) define the category.
 
-This is an accounting reasoning item on reading balance sheets and income statements for structure and risk. Decide whether the sentence correctly describes how a transaction, balance-sheet line, or period result affects assets, liabilities, or equity.
+Using the stem facts: "Non-current assets normally have a useful life of more than one year and are intended to be used in the business for longer than one year."
 
-From the figures or classification rule involved, more years of data make this distinction easier, not harder, to draw. Accounting statements fail when a loss is treated as increasing equity, when a flow is placed on the balance sheet, or when a ratio inequality is reversed.
+Single-year statements need cautious reading: policies, estimates, and one-offs matter. Ratios (liquidity, gearing, margins, returns) put line items in context. Financial accounting serves external users; audits give reasonable, not absolute, assurance.
 
-The statement sounds plausible but fails on precision, so it is false.', 'FALSE — The claim is false. A trend that persists across three or more reporting periods carries no more weight than a single period''s outcome when judging a business''s direction of travel.
+The statement is true.', 'TRUE — ROE on this extract is operating result divided by total equity.
 
-The task tests reading balance sheets and income statements for structure and risk. Financial statements distinguish stocks (balance sheet at a date) from flows (income and cash over a period); many false statements swap those roles.
+Name the identity in words: ROE = operating result ÷ total equity.
 
-Apply the case evidence: A persistent multi-period trend is more meaningful than a single period''s outcome. Check whether the direction of change (higher/lower, above/below the threshold) matches what the statement asserts.
+From the extract, operating result = 227 and total equity = 543. Plug the figures step by step:
 
-The statement sounds plausible but fails on precision, so it is false.', 'TRUE — The claim is correct. When non-current assets exceed the sum of equity and non-current liabilities, part of those long-term assets must be financed by current liabilities, which increases financial risk.
+$$
+ROE = \frac{\text{operating result}}{\text{total equity}}
+$$
 
-The underlying topic is reading balance sheets and income statements for structure and risk. When figures appear, the exam checks whether you can interpret them in accounting terms—what increased, what ratio is implied, and whether the label (current, non-current, equity, and so on) fits.
+$$
+ROE = \frac{227}{543}
+$$
 
-Apply the case evidence: Non-current assets exceeding equity plus non-current liabilities implies risky reliance on current liabilities. Check whether the direction of change (higher/lower, above/below the threshold) matches what the statement asserts.
+$$
+ROE = 41.8\%
+$$
 
-No qualifying word breaks the definition or scenario, so the answer is true.', 'FALSE — Evaluated against the textbook standard, this assertion is false. Judging whether a business''s results are strong or weak is unaffected by whether its figures are set alongside those of comparable businesses in the same industry.
+Threshold: exceeds 24.6%. Actual 41.8%.
 
-This is an accounting reasoning item on reading balance sheets and income statements for structure and risk. Decide whether the sentence correctly describes how a transaction, balance-sheet line, or period result affects assets, liabilities, or equity.
+Reading the arithmetic against the claim: ROE 41.8% exceeds 24.6% so the statement holds.
 
-From the figures or classification rule involved, comparison with comparable businesses is exactly what allows strong or weak results to be identified. Accounting statements fail when a loss is treated as increasing equity, when a flow is placed on the balance sheet, or when a ratio inequality is reversed.
+The statement is true.'] WHERE case_id = 'CASE 6.3.011' AND tier = 'full';
+UPDATE public.economics_cases SET tactical_explanations = ARRAY['FALSE — Gross margin is gross profit divided by revenue; the claim compares the Year-2 margin with Year 1 in percentage points.
 
-The statement sounds plausible but fails on precision, so it is false.', 'TRUE — Evaluated against the textbook standard, this assertion is correct. Matching the expected life of an asset with the maturity of the finance used to fund it is a widely accepted principle of sound financial management.
+Name the identity in words: gross margin = gross profit ÷ revenue; Δ = GPM₂ − GPM₁.
 
-This is an accounting reasoning item on reading balance sheets and income statements for structure and risk. Decide whether the sentence correctly describes how a transaction, balance-sheet line, or period result affects assets, liabilities, or equity.
+$$
+GPM_{1} = \frac{284}{755} = 37.6\%
+$$
 
-From the figures or classification rule involved, matching asset life to financing maturity is a widely accepted sound-finance principle. Accounting statements fail when a loss is treated as increasing equity, when a flow is placed on the balance sheet, or when a ratio inequality is reversed.
+$$
+GPM_{2} = \frac{324}{883} = 36.7\%
+$$
 
-The reasoning chain is complete, so mark the statement true.'] WHERE case_id = 'CASE 6.3.014' AND tier = 'full';
-UPDATE public.economics_cases SET tactical_explanations = ARRAY['FALSE — Evaluated against the textbook standard, this assertion is false. Total assets grew by more than 23.4% between Year 1 and Year 2.
+$$
+\Delta = -0.9\text{ percentage points}
+$$
 
-This item belongs to the accounting block on reading balance sheets and income statements for structure and risk. Ratio and classification questions ask you to connect a figure or comparison in the case with the correct statement category, not merely to recognise a number.
+Threshold: more than 3.2 pp higher in Year 2. Actual Δ = -0.9 pp.
 
-From the figures or classification rule involved, total assets changed by about 11.5% between the two years. Accounting statements fail when a loss is treated as increasing equity, when a flow is placed on the balance sheet, or when a ratio inequality is reversed.
+Reading the arithmetic against the claim: margin rose by -0.9 pp versus more than 3.2 pp so the statement does not hold.
 
-The statement sounds plausible but fails on precision, so it is false.', 'FALSE — The claim is false. Inventory grew by more than 27.1% between Year 1 and Year 2.
+The statement is false.', 'FALSE — Use the case figures for The operating result and compute the percentage change between Year 1 and Year 2 before comparing it with the claimed threshold.
 
-The underlying topic is reading balance sheets and income statements for structure and risk. When figures appear, the exam checks whether you can interpret them in accounting terms—what increased, what ratio is implied, and whether the label (current, non-current, equity, and so on) fits.
+From the extract:
 
-Apply the case evidence: Inventory changed by about 10.5% between the two years. Check whether the direction of change (higher/lower, above/below the threshold) matches what the statement asserts.
+$$
+\text{The operating result}_{\text{Y1}} = 203, \quad
+\text{The operating result}_{\text{Y2}} = 238
+$$
 
-Once the overclaim or mislabel is exposed, the only consistent answer is false.', 'TRUE — Evaluated against the textbook standard, this assertion is correct. The balance sheet shows assets, liabilities and equity at a point in time, while the income statement summarises revenues, costs and expenses over a period.
+$$
+\frac{238 - 203}{203} = 17.2\%
+$$
 
-This item belongs to the accounting block on reading balance sheets and income statements for structure and risk. Ratio and classification questions ask you to connect a figure or comparison in the case with the correct statement category, not merely to recognise a number.
+$$
+17.2\% \le  42.2\%
+$$
 
-From the figures or classification rule involved, snapshot versus period statement. Accounting statements fail when a loss is treated as increasing equity, when a flow is placed on the balance sheet, or when a ratio inequality is reversed.
+The actual growth is 17.2%, which is not more than the claimed 42.2%.
 
-No qualifying word breaks the definition or scenario, so the answer is true.', 'FALSE — Evaluated against the textbook standard, this assertion is false. Trade payables grew by more than 17.6% between Year 1 and Year 2.
+The statement is false.', 'TRUE — Single-year statements need cautious reading: policies, estimates, and one-offs matter.
 
-This item belongs to the accounting block on reading balance sheets and income statements for structure and risk. Ratio and classification questions ask you to connect a figure or comparison in the case with the correct statement category, not merely to recognise a number.
+The wording matches the relevant rule for "Profit and Loss Over Two Years 12". Single-year statements need cautious reading: policies, estimates, and one-offs matter. Ratios (liquidity, gearing, margins, returns) put line items in context. Financial accounting serves external users; audits give reasonable, not absolute, assurance. Applied here: "Profit for the year increases equity through retained earnings, while a loss decreases equity."
 
-From the figures or classification rule involved, trade payables changed by about 9.5% between the two years. Accounting statements fail when a loss is treated as increasing equity, when a flow is placed on the balance sheet, or when a ratio inequality is reversed.
+The statement is true.', 'FALSE — Use the case figures for Revenue and compute the percentage change between Year 1 and Year 2 before comparing it with the claimed threshold.
 
-The statement sounds plausible but fails on precision, so it is false.', 'FALSE — This statement is false. Cash and cash equivalents fell by more than 12.1% between Year 1 and Year 2.
+From the extract:
 
-This item belongs to the accounting block on reading balance sheets and income statements for structure and risk. Ratio and classification questions ask you to connect a figure or comparison in the case with the correct statement category, not merely to recognise a number.
+$$
+\text{Revenue}_{\text{Y1}} = 755, \quad
+\text{Revenue}_{\text{Y2}} = 883
+$$
 
-From the figures or classification rule involved, cash and cash equivalents changed by about 9.7% between the two years. Accounting statements fail when a loss is treated as increasing equity, when a flow is placed on the balance sheet, or when a ratio inequality is reversed.
+$$
+\frac{883 - 755}{755} = 17.0\%
+$$
 
-The statement sounds plausible but fails on precision, so it is false.'] WHERE case_id = 'CASE 6.3.015' AND tier = 'full';
-UPDATE public.economics_cases SET tactical_explanations = ARRAY['TRUE — This statement is correct. The balance sheet identity requires that total assets always equal the sum of total liabilities and total equity, which is why any increase in assets must be matched by an increase in either liabilities or equity.
+$$
+17.0\% \le  21\%
+$$
 
-This item belongs to the accounting block on reading balance sheets and income statements for structure and risk. Ratio and classification questions ask you to connect a figure or comparison in the case with the correct statement category, not merely to recognise a number.
+The actual growth is 17.0%, which is not more than the claimed 21%.
 
-From the figures or classification rule involved, assets = liabilities + equity is the fundamental balance sheet equation. Accounting statements fail when a loss is treated as increasing equity, when a flow is placed on the balance sheet, or when a ratio inequality is reversed.
+The statement is false.', 'FALSE — Use the case figures for Profit for the year and compute the percentage change between Year 1 and Year 2 before comparing it with the claimed threshold.
 
-The reasoning chain is complete, so mark the statement true.', 'TRUE — On the Fuhrmann definition used in the entrance exam, the sentence is correct. Trade receivables make up less than 36.9% of current assets.
+From the extract:
 
-The underlying topic is reading balance sheets and income statements for structure and risk. When figures appear, the exam checks whether you can interpret them in accounting terms—what increased, what ratio is implied, and whether the label (current, non-current, equity, and so on) fits.
+$$
+\text{Profit for the year}_{\text{Y1}} = 146, \quad
+\text{Profit for the year}_{\text{Y2}} = 163
+$$
 
-Apply the case evidence: Trade receivables are about 33.3% of current assets. Check whether the direction of change (higher/lower, above/below the threshold) matches what the statement asserts.
+$$
+\frac{163 - 146}{146} = 11.6\%
+$$
 
-Every part of the claim aligns with the standard concept, so the statement stands.', 'TRUE — The claim is correct. Cash and cash equivalents make up more than 30.7% of current assets.
+$$
+11.6\% \le  27.7\%
+$$
 
-The underlying topic is reading balance sheets and income statements for structure and risk. When figures appear, the exam checks whether you can interpret them in accounting terms—what increased, what ratio is implied, and whether the label (current, non-current, equity, and so on) fits.
+The actual growth is 11.6%, which is not more than the claimed 27.7%.
 
-Apply the case evidence: Cash and cash equivalents are about 37.2% of current assets. Check whether the direction of change (higher/lower, above/below the threshold) matches what the statement asserts.
+The statement is false.'] WHERE case_id = 'CASE 6.3.012' AND tier = 'full';
+UPDATE public.economics_cases SET tactical_explanations = ARRAY['TRUE — Single-year statements need cautious reading: policies, estimates, and one-offs matter.
 
-No qualifying word breaks the definition or scenario, so the answer is true.', 'TRUE — The claim is correct. Inventory of €84 thousand is correctly classified as a current asset rather than a non-current intangible asset.
+The wording matches the relevant rule for "Comparing Results Across Several Years Explained". Single-year statements need cautious reading: policies, estimates, and one-offs matter. Ratios (liquidity, gearing, margins, returns) put line items in context. Financial accounting serves external users; audits give reasonable, not absolute, assurance. Applied here: "A business that grows its equity mostly through retained earnings is relying less on outside investors than one whose equity growth comes mainly from new share issues."
 
-The underlying topic is reading balance sheets and income statements for structure and risk. When figures appear, the exam checks whether you can interpret them in accounting terms—what increased, what ratio is implied, and whether the label (current, non-current, equity, and so on) fits.
+The statement is true.', 'TRUE — Single-year statements need cautious reading: policies, estimates, and one-offs matter.
 
-Apply the case evidence: Inventory is always a current asset. Check whether the direction of change (higher/lower, above/below the threshold) matches what the statement asserts.
+The wording matches the relevant rule for "Comparing Results Across Several Years Explained". Single-year statements need cautious reading: policies, estimates, and one-offs matter. Ratios (liquidity, gearing, margins, returns) put line items in context. Financial accounting serves external users; audits give reasonable, not absolute, assurance. Applied here: "The pattern of a business''s equity growth over several years, whether driven by retained profit or fresh capital, reveals something about its underlying financing strategy."
 
-The reasoning chain is complete, so mark the statement true.', 'TRUE — On the Fuhrmann definition used in the entrance exam, the sentence is correct. Total assets of €1,025 thousand equal total equity plus total liabilities.
+The statement is true.', 'TRUE — Single-year statements need cautious reading: policies, estimates, and one-offs matter.
 
-The underlying topic is reading balance sheets and income statements for structure and risk. When figures appear, the exam checks whether you can interpret them in accounting terms—what increased, what ratio is implied, and whether the label (current, non-current, equity, and so on) fits.
+The wording matches the relevant rule for "Comparing Results Across Several Years Explained". Single-year statements need cautious reading: policies, estimates, and one-offs matter. Ratios (liquidity, gearing, margins, returns) put line items in context. Financial accounting serves external users; audits give reasonable, not absolute, assurance. Applied here: "If share capital has remained unchanged for several years while equity has still grown, retained earnings must account for the entire increase."
 
-Apply the case evidence: The balance sheet balances at 1025. Check whether the direction of change (higher/lower, above/below the threshold) matches what the statement asserts.
+The statement is true.', 'TRUE — Single-year statements need cautious reading: policies, estimates, and one-offs matter.
 
-The reasoning chain is complete, so mark the statement true.'] WHERE case_id = 'CASE 6.3.016' AND tier = 'full';
-UPDATE public.economics_cases SET tactical_explanations = ARRAY['TRUE — This statement is correct. Purchase of a plant, machinery or other long-term asset for cash is classified as cash flow from investing activities.
+The wording matches the relevant rule for "Comparing Results Across Several Years Explained". Single-year statements need cautious reading: policies, estimates, and one-offs matter. Ratios (liquidity, gearing, margins, returns) put line items in context. Financial accounting serves external users; audits give reasonable, not absolute, assurance. Applied here: "A business is considered to be financing its non-current assets soundly when their total value does not exceed the combined total of equity and non-current liabilities."
 
-This is an accounting reasoning item on reading balance sheets and income statements for structure and risk. Decide whether the sentence correctly describes how a transaction, balance-sheet line, or period result affects assets, liabilities, or equity.
+The statement is true.', 'TRUE — Single-year statements need cautious reading: policies, estimates, and one-offs matter.
 
-From the figures or classification rule involved, long-term asset purchases are investing outflows. Accounting statements fail when a loss is treated as increasing equity, when a flow is placed on the balance sheet, or when a ratio inequality is reversed.
+The wording matches the relevant rule for "Comparing Results Across Several Years Explained". Single-year statements need cautious reading: policies, estimates, and one-offs matter. Ratios (liquidity, gearing, margins, returns) put line items in context. Financial accounting serves external users; audits give reasonable, not absolute, assurance. Applied here: "Relying on long-term sources of finance, rather than short-term borrowing that must soon be renewed, is regarded as the prudent way to fund long-lived assets."
 
-No qualifying word breaks the definition or scenario, so the answer is true.', 'TRUE — The claim is correct. Return on equity, the operating result taken as a percentage of total equity, exceeds 31.3%.
+The statement is true.'] WHERE case_id = 'CASE 6.3.013' AND tier = 'full';
+UPDATE public.economics_cases SET tactical_explanations = ARRAY['FALSE — Single-year statements need cautious reading: policies, estimates, and one-offs matter.
 
-The underlying topic is reading balance sheets and income statements for structure and risk. When figures appear, the exam checks whether you can interpret them in accounting terms—what increased, what ratio is implied, and whether the label (current, non-current, equity, and so on) fits.
+Absolute or misapplied wording conflicts with the rule for "Comparing Results Across Several Years for Analysts". Single-year statements need cautious reading: policies, estimates, and one-offs matter. Ratios (liquidity, gearing, margins, returns) put line items in context. Financial accounting serves external users; audits give reasonable, not absolute, assurance. Rejected claim: "Looking at several consecutive years of results makes it harder to tell whether an unusual figure was a temporary blip or the start of a lasting change."
 
-Apply the case evidence: Return on equity ≈ 33.7%. Check whether the direction of change (higher/lower, above/below the threshold) matches what the statement asserts.
+The statement is false.', 'FALSE — Single-year statements need cautious reading: policies, estimates, and one-offs matter.
 
-The reasoning chain is complete, so mark the statement true.', 'TRUE — This statement is correct. Inventory make up more than 10.2% of total assets.
+Absolute or misapplied wording conflicts with the rule for "Comparing Results Across Several Years for Analysts". Single-year statements need cautious reading: policies, estimates, and one-offs matter. Ratios (liquidity, gearing, margins, returns) put line items in context. Financial accounting serves external users; audits give reasonable, not absolute, assurance. Rejected claim: "A trend that persists across three or more reporting periods carries no more weight than a single period''s outcome when judging a business''s direction of travel."
 
-This item belongs to the accounting block on reading balance sheets and income statements for structure and risk. Ratio and classification questions ask you to connect a figure or comparison in the case with the correct statement category, not merely to recognise a number.
+The statement is false.', 'TRUE — Single-year statements need cautious reading: policies, estimates, and one-offs matter.
 
-From the figures or classification rule involved, inventory are about 24.0% of total assets. Accounting statements fail when a loss is treated as increasing equity, when a flow is placed on the balance sheet, or when a ratio inequality is reversed.
+The wording matches the relevant rule for "Comparing Results Across Several Years for Analysts". Single-year statements need cautious reading: policies, estimates, and one-offs matter. Ratios (liquidity, gearing, margins, returns) put line items in context. Financial accounting serves external users; audits give reasonable, not absolute, assurance. Applied here: "When non-current assets exceed the sum of equity and non-current liabilities, part of those long-term assets must be financed by current liabilities, which increases financial risk."
 
-The reasoning chain is complete, so mark the statement true.', 'TRUE — This statement is correct. Working capital is positive on this extract.
+The statement is true.', 'FALSE — Single-year statements need cautious reading: policies, estimates, and one-offs matter.
 
-This is an accounting reasoning item on reading balance sheets and income statements for structure and risk. Decide whether the sentence correctly describes how a transaction, balance-sheet line, or period result affects assets, liabilities, or equity.
+Absolute or misapplied wording conflicts with the rule for "Comparing Results Across Several Years for Analysts". Single-year statements need cautious reading: policies, estimates, and one-offs matter. Ratios (liquidity, gearing, margins, returns) put line items in context. Financial accounting serves external users; audits give reasonable, not absolute, assurance. Rejected claim: "Judging whether a business''s results are strong or weak is unaffected by whether its figures are set alongside those of comparable businesses in the same industry."
 
-From the figures or classification rule involved, working capital = 223. Accounting statements fail when a loss is treated as increasing equity, when a flow is placed on the balance sheet, or when a ratio inequality is reversed.
+The statement is false.', 'TRUE — Single-year statements need cautious reading: policies, estimates, and one-offs matter.
 
-No qualifying word breaks the definition or scenario, so the answer is true.', 'TRUE — Evaluated against the textbook standard, this assertion is correct. Cash flow from investing activities was an outflow this year.
+The wording matches the relevant rule for "Comparing Results Across Several Years for Analysts". Single-year statements need cautious reading: policies, estimates, and one-offs matter. Ratios (liquidity, gearing, margins, returns) put line items in context. Financial accounting serves external users; audits give reasonable, not absolute, assurance. Applied here: "Matching the expected life of an asset with the maturity of the finance used to fund it is a widely accepted principle of sound financial management."
 
-This is an accounting reasoning item on reading balance sheets and income statements for structure and risk. Decide whether the sentence correctly describes how a transaction, balance-sheet line, or period result affects assets, liabilities, or equity.
+The statement is true.'] WHERE case_id = 'CASE 6.3.014' AND tier = 'full';
+UPDATE public.economics_cases SET tactical_explanations = ARRAY['FALSE — Use the case figures for Total assets and compute the percentage change between Year 1 and Year 2 before comparing it with the claimed threshold.
 
-From the figures or classification rule involved, investing cash flow = -280. Accounting statements fail when a loss is treated as increasing equity, when a flow is placed on the balance sheet, or when a ratio inequality is reversed.
+From the extract:
 
-No qualifying word breaks the definition or scenario, so the answer is true.'] WHERE case_id = 'CASE 6.3.017' AND tier = 'full';
-UPDATE public.economics_cases SET tactical_explanations = ARRAY['FALSE — The claim is false. A profit margin that appears strong when viewed in isolation remains equally strong once measured against the margins earned by similar businesses.
+$$
+\text{Total assets}_{\text{Y1}} = 922, \quad
+\text{Total assets}_{\text{Y2}} = 1,028
+$$
 
-The task tests reading balance sheets and income statements for structure and risk. Financial statements distinguish stocks (balance sheet at a date) from flows (income and cash over a period); many false statements swap those roles.
+$$
+\frac{1,028 - 922}{922} = 11.5\%
+$$
 
-Apply the case evidence: Benchmarking against similar businesses can turn an apparently strong margin into an unremarkable one. Check whether the direction of change (higher/lower, above/below the threshold) matches what the statement asserts.
+$$
+11.5\% \le  23.4\%
+$$
 
-The statement sounds plausible but fails on precision, so it is false.', 'FALSE — Evaluated against the textbook standard, this assertion is false. Sector-wide benchmarks provide no basis for determining whether an individual business''s asset structure or profitability is ordinary for its industry or genuinely stands out.
+The actual growth is 11.5%, which is not more than the claimed 23.4%.
 
-This is an accounting reasoning item on reading balance sheets and income statements for structure and risk. Decide whether the sentence correctly describes how a transaction, balance-sheet line, or period result affects assets, liabilities, or equity.
+The statement is false.', 'FALSE — Use the case figures for Inventory and compute the percentage change between Year 1 and Year 2 before comparing it with the claimed threshold.
 
-From the figures or classification rule involved, sector benchmarks are precisely what shows whether results are ordinary or exceptional. Accounting statements fail when a loss is treated as increasing equity, when a flow is placed on the balance sheet, or when a ratio inequality is reversed.
+From the extract:
 
-Because the decisive detail is wrong, mark the statement false.', 'TRUE — On the Fuhrmann definition used in the entrance exam, the sentence is correct. Financing long-lived production assets through short-term credit that must be repaid within a year exposes a business to the risk of needing to refinance repeatedly.
+$$
+\text{Inventory}_{\text{Y1}} = 133, \quad
+\text{Inventory}_{\text{Y2}} = 147
+$$
 
-The task tests reading balance sheets and income statements for structure and risk. Financial statements distinguish stocks (balance sheet at a date) from flows (income and cash over a period); many false statements swap those roles.
+$$
+\frac{147 - 133}{133} = 10.5\%
+$$
 
-Apply the case evidence: Short-term financing of long-lived assets creates repeated refinancing risk. Check whether the direction of change (higher/lower, above/below the threshold) matches what the statement asserts.
+$$
+10.5\% \le  27.1\%
+$$
 
-No qualifying word breaks the definition or scenario, so the answer is true.', 'TRUE — The claim is correct. Cost of sales is confined to the direct costs incurred in producing or acquiring the goods a business has actually sold during the period.
+The actual growth is 10.5%, which is not more than the claimed 27.1%.
 
-The task tests reading balance sheets and income statements for structure and risk. Financial statements distinguish stocks (balance sheet at a date) from flows (income and cash over a period); many false statements swap those roles.
+The statement is false.', 'TRUE — Single-year statements need cautious reading: policies, estimates, and one-offs matter.
 
-Apply the case evidence: Cost of sales captures only the direct costs of producing or acquiring the goods sold. Check whether the direction of change (higher/lower, above/below the threshold) matches what the statement asserts.
+The wording matches the relevant rule for "Comparative Balance Sheet Analysis 15". Single-year statements need cautious reading: policies, estimates, and one-offs matter. Ratios (liquidity, gearing, margins, returns) put line items in context. Financial accounting serves external users; audits give reasonable, not absolute, assurance. Applied here: "The balance sheet shows assets, liabilities and equity at a point in time, while the income statement summarises revenues, costs and expenses over a period."
 
-The reasoning chain is complete, so mark the statement true.', 'FALSE — On the Fuhrmann definition used in the entrance exam, the sentence is false. Comparing a business''s statements with those of its direct competitors can never reveal whether a change in results reflects conditions across the whole industry or is specific to that one business.
+The statement is true.', 'FALSE — Use the case figures for Trade payables and compute the percentage change between Year 1 and Year 2 before comparing it with the claimed threshold.
 
-The task tests reading balance sheets and income statements for structure and risk. Financial statements distinguish stocks (balance sheet at a date) from flows (income and cash over a period); many false statements swap those roles.
+From the extract:
 
-Apply the case evidence: Competitor comparison is exactly how industry-wide effects are separated from company-specific ones. Check whether the direction of change (higher/lower, above/below the threshold) matches what the statement asserts.
+$$
+\text{Trade payables}_{\text{Y1}} = 211, \quad
+\text{Trade payables}_{\text{Y2}} = 231
+$$
 
-Watch the absolute wording "never": exam statements often sound plausible until a single scope word turns an otherwise familiar idea into an overclaim.
+$$
+\frac{231 - 211}{211} = 9.5\%
+$$
 
-Once the overclaim or mislabel is exposed, the only consistent answer is false.'] WHERE case_id = 'CASE 6.3.018' AND tier = 'full';
-UPDATE public.economics_cases SET tactical_explanations = ARRAY['TRUE — On the Fuhrmann definition used in the entrance exam, the sentence is correct. Only costs that can be traced directly to manufacturing or acquiring the units a business has sold belong within cost of sales.
+$$
+9.5\% \le  17.6\%
+$$
 
-The task tests reading balance sheets and income statements for structure and risk. Financial statements distinguish stocks (balance sheet at a date) from flows (income and cash over a period); many false statements swap those roles.
+The actual growth is 9.5%, which is not more than the claimed 17.6%.
 
-Apply the case evidence: Only directly traceable production or acquisition costs belong within cost of sales. Check whether the direction of change (higher/lower, above/below the threshold) matches what the statement asserts.
+The statement is false.', 'FALSE — Use the case figures for Cash and cash equivalents and compute the percentage change between Year 1 and Year 2 before comparing it with the claimed threshold.
 
-No qualifying word breaks the definition or scenario, so the answer is true.', 'TRUE — The claim is correct. Materials physically consumed in manufacturing the units sold form part of cost of sales, while costs incurred once production is finished generally do not.
+From the extract:
 
-The task tests reading balance sheets and income statements for structure and risk. Financial statements distinguish stocks (balance sheet at a date) from flows (income and cash over a period); many false statements swap those roles.
+$$
+\text{Cash and cash equivalents}_{\text{Y1}} = 103, \quad
+\text{Cash and cash equivalents}_{\text{Y2}} = 113
+$$
 
-Apply the case evidence: Materials consumed in production belong in cost of sales; post-production costs generally do not. Check whether the direction of change (higher/lower, above/below the threshold) matches what the statement asserts.
+$$
+\frac{113 - 103}{103} = 9.7\%
+$$
 
-No qualifying word breaks the definition or scenario, so the answer is true.', 'TRUE — This statement is correct. Because cost of sales is restricted to direct production costs, functions such as administration and distribution are reported in separate lines of the income statement.
+$$
+-9.7\% \le  12.1\%
+$$
 
-This item belongs to the accounting block on reading balance sheets and income statements for structure and risk. Ratio and classification questions ask you to connect a figure or comparison in the case with the correct statement category, not merely to recognise a number.
+The actual decline is -9.7%, which is not more than the claimed 12.1%.
 
-From the figures or classification rule involved, direct-cost-only cost of sales means administration and distribution appear as separate lines. Accounting statements fail when a loss is treated as increasing equity, when a flow is placed on the balance sheet, or when a ratio inequality is reversed.
+The statement is false.'] WHERE case_id = 'CASE 6.3.015' AND tier = 'full';
+UPDATE public.economics_cases SET tactical_explanations = ARRAY['TRUE — Single-year statements need cautious reading: policies, estimates, and one-offs matter.
 
-Every part of the claim aligns with the standard concept, so the statement stands.', 'TRUE — Evaluated against the textbook standard, this assertion is correct. Direct labour spent physically producing the goods sold is treated as part of cost of sales, unlike labour spent on functions unrelated to production.
+The wording matches the relevant rule for "Asset Composition Chart 16". Single-year statements need cautious reading: policies, estimates, and one-offs matter. Ratios (liquidity, gearing, margins, returns) put line items in context. Financial accounting serves external users; audits give reasonable, not absolute, assurance. Applied here: "The balance sheet identity requires that total assets always equal the sum of total liabilities and total equity, which is why any increase in assets must be matched by an increase in either liabil…"
 
-This is an accounting reasoning item on reading balance sheets and income statements for structure and risk. Decide whether the sentence correctly describes how a transaction, balance-sheet line, or period result affects assets, liabilities, or equity.
+The statement is true.', 'TRUE — This is a composition claim: express Trade receivables as a percentage of current assets.
 
-From the figures or classification rule involved, direct production labour belongs in cost of sales; labour on unrelated functions does not. Accounting statements fail when a loss is treated as increasing equity, when a flow is placed on the balance sheet, or when a ratio inequality is reversed.
+Name the identity in words: Trade receivables share of current assets = Trade receivables ÷ current assets.
 
-No qualifying word breaks the definition or scenario, so the answer is true.', 'TRUE — Evaluated against the textbook standard, this assertion is correct. Gross profit is arrived at by deducting cost of sales from revenue, before any operating expenses such as distribution or administrative costs are taken into account.
+From the extract, Trade receivables = 95 and current assets = 285. Plug the figures step by step:
 
-This is an accounting reasoning item on reading balance sheets and income statements for structure and risk. Decide whether the sentence correctly describes how a transaction, balance-sheet line, or period result affects assets, liabilities, or equity.
+$$
+Share = \frac{\text{Trade receivables}}{\text{current assets}}
+$$
 
-From the figures or classification rule involved, gross profit equals revenue minus cost of sales, calculated ahead of operating expenses. Accounting statements fail when a loss is treated as increasing equity, when a flow is placed on the balance sheet, or when a ratio inequality is reversed.
+$$
+Share = \frac{95}{285}
+$$
 
-The reasoning chain is complete, so mark the statement true.'] WHERE case_id = 'CASE 6.3.019' AND tier = 'full';
-UPDATE public.economics_cases SET tactical_explanations = ARRAY['TRUE — The claim is correct. Non-current assets normally have a useful life of more than one year and are intended to be used in the business for longer than one year.
+$$
+Share = 33.3\%
+$$
 
-The task tests reading balance sheets and income statements for structure and risk. Financial statements distinguish stocks (balance sheet at a date) from flows (income and cash over a period); many false statements swap those roles.
+Threshold: less than 36.9%. Actual 33.3%.
 
-Apply the case evidence: This matches the textbook distinction between non-current and current assets. Check whether the direction of change (higher/lower, above/below the threshold) matches what the statement asserts.
+Reading the arithmetic against the claim: actual share 33.3% matches ''less than 36.9%'' so the statement holds.
 
-No qualifying word breaks the definition or scenario, so the answer is true.', 'TRUE — This statement is correct. Revenue grew by more than 15.1% between Year 1 and Year 2.
+The statement is true.', 'TRUE — This is a composition claim: express Cash and cash equivalents as a percentage of current assets.
 
-This item belongs to the accounting block on reading balance sheets and income statements for structure and risk. Ratio and classification questions ask you to connect a figure or comparison in the case with the correct statement category, not merely to recognise a number.
+Name the identity in words: Cash and cash equivalents share of current assets = Cash and cash equivalents ÷ current assets.
 
-From the figures or classification rule involved, revenue changed by about 19.5% between the two years. Accounting statements fail when a loss is treated as increasing equity, when a flow is placed on the balance sheet, or when a ratio inequality is reversed.
+From the extract, Cash and cash equivalents = 106 and current assets = 285. Plug the figures step by step:
 
-The reasoning chain is complete, so mark the statement true.', 'FALSE — On the Fuhrmann definition used in the entrance exam, the sentence is false. The gross profit margin, gross profit taken as a share of revenue, is more than 2.3 percentage points higher in Year 2 than in Year 1.
+$$
+Share = \frac{\text{Cash and cash equivalents}}{\text{current assets}}
+$$
 
-The underlying topic is reading balance sheets and income statements for structure and risk. When figures appear, the exam checks whether you can interpret them in accounting terms—what increased, what ratio is implied, and whether the label (current, non-current, equity, and so on) fits.
+$$
+Share = \frac{106}{285}
+$$
 
-Apply the case evidence: Gross margins were 35.9% then 36.1%. Check whether the direction of change (higher/lower, above/below the threshold) matches what the statement asserts.
+$$
+Share = 37.2\%
+$$
 
-Once the overclaim or mislabel is exposed, the only consistent answer is false.', 'FALSE — The claim is false. The operating result grew by more than 41.1% between Year 1 and Year 2.
+Threshold: more than 30.7%. Actual 37.2%.
 
-The underlying topic is reading balance sheets and income statements for structure and risk. When figures appear, the exam checks whether you can interpret them in accounting terms—what increased, what ratio is implied, and whether the label (current, non-current, equity, and so on) fits.
+Reading the arithmetic against the claim: actual share 37.2% matches ''more than 30.7%'' so the statement holds.
 
-Apply the case evidence: The operating result changed by about 22.2% between the two years. Check whether the direction of change (higher/lower, above/below the threshold) matches what the statement asserts.
+The statement is true.', 'TRUE — Inventory is held for sale or for consumption in the operating cycle.
 
-The statement sounds plausible but fails on precision, so it is false.', 'TRUE — The claim is correct. The operating result covers finance costs less than 11.41 times over in Year 2.
+On the balance sheet that places inventory among current assets. It is not an intangible (no physical stock for sale) and not a non-current operating asset (those are used in the business beyond one year rather than turned over as stock).
 
-The underlying topic is reading balance sheets and income statements for structure and risk. When figures appear, the exam checks whether you can interpret them in accounting terms—what increased, what ratio is implied, and whether the label (current, non-current, equity, and so on) fits.
+Applied to this stem: "Inventory of €84 thousand is correctly classified as a current asset rather than a non-current intangible asset."
 
-Apply the case evidence: Interest coverage in Year 2 ≈ 10.3 times. Check whether the direction of change (higher/lower, above/below the threshold) matches what the statement asserts.
+The statement is true.', 'TRUE — Single-year statements need cautious reading: policies, estimates, and one-offs matter.
 
-The reasoning chain is complete, so mark the statement true.'] WHERE case_id = 'CASE 6.3.020' AND tier = 'full';
-UPDATE public.economics_cases SET tactical_explanations = ARRAY['TRUE — On the Fuhrmann definition used in the entrance exam, the sentence is correct. Current assets such as inventory, trade receivables and cash normally have higher liquidity and are not expected to be used longer than a year.
+The wording matches the relevant rule for "Asset Composition Chart 16". Single-year statements need cautious reading: policies, estimates, and one-offs matter. Ratios (liquidity, gearing, margins, returns) put line items in context. Financial accounting serves external users; audits give reasonable, not absolute, assurance. Applied here: "Total assets of €1,025 thousand equal total equity plus total liabilities."
 
-The underlying topic is reading balance sheets and income statements for structure and risk. When figures appear, the exam checks whether you can interpret them in accounting terms—what increased, what ratio is implied, and whether the label (current, non-current, equity, and so on) fits.
+The statement is true.'] WHERE case_id = 'CASE 6.3.016' AND tier = 'full';
+UPDATE public.economics_cases SET tactical_explanations = ARRAY['TRUE — Single-year statements need cautious reading: policies, estimates, and one-offs matter.
 
-Apply the case evidence: Current assets turn into cash within the normal operating cycle. Check whether the direction of change (higher/lower, above/below the threshold) matches what the statement asserts.
+The wording matches the relevant rule for "Return and Cash Flow Extract 17". Single-year statements need cautious reading: policies, estimates, and one-offs matter. Ratios (liquidity, gearing, margins, returns) put line items in context. Financial accounting serves external users; audits give reasonable, not absolute, assurance. Applied here: "Purchase of a plant, machinery or other long-term asset for cash is classified as cash flow from investing activities."
 
-Every part of the claim aligns with the standard concept, so the statement stands.', 'TRUE — This statement is correct. Total assets grew by more than 6.2% between Year 1 and Year 2.
+The statement is true.', 'TRUE — ROE on this extract is operating result divided by total equity.
 
-This item belongs to the accounting block on reading balance sheets and income statements for structure and risk. Ratio and classification questions ask you to connect a figure or comparison in the case with the correct statement category, not merely to recognise a number.
+Name the identity in words: ROE = operating result ÷ total equity.
 
-From the figures or classification rule involved, total assets changed by about 12.7% between the two years. Accounting statements fail when a loss is treated as increasing equity, when a flow is placed on the balance sheet, or when a ratio inequality is reversed.
+From the extract, operating result = 171 and total equity = 508. Plug the figures step by step:
 
-Every part of the claim aligns with the standard concept, so the statement stands.', 'TRUE — Evaluated against the textbook standard, this assertion is correct. The equity ratio improved by more than 3.1 percentage points between Year 1 and Year 2.
+$$
+ROE = \frac{\text{operating result}}{\text{total equity}}
+$$
 
-This item belongs to the accounting block on reading balance sheets and income statements for structure and risk. Ratio and classification questions ask you to connect a figure or comparison in the case with the correct statement category, not merely to recognise a number.
+$$
+ROE = \frac{171}{508}
+$$
 
-From the figures or classification rule involved, equity ratio moved from 26.5% to 30.2%. Accounting statements fail when a loss is treated as increasing equity, when a flow is placed on the balance sheet, or when a ratio inequality is reversed.
+$$
+ROE = 33.7\%
+$$
 
-No qualifying word breaks the definition or scenario, so the answer is true.', 'TRUE — Evaluated against the textbook standard, this assertion is correct. The debt ratio fell by more than 3.2 percentage points between Year 1 and Year 2.
+Threshold: exceeds 31.3%. Actual 33.7%.
 
-This item belongs to the accounting block on reading balance sheets and income statements for structure and risk. Ratio and classification questions ask you to connect a figure or comparison in the case with the correct statement category, not merely to recognise a number.
+Reading the arithmetic against the claim: ROE 33.7% exceeds 31.3% so the statement holds.
 
-From the figures or classification rule involved, debt ratio moved from 73.5% to 69.8%. Accounting statements fail when a loss is treated as increasing equity, when a flow is placed on the balance sheet, or when a ratio inequality is reversed.
+The statement is true.', 'TRUE — This is a composition claim: express Inventory as a percentage of total assets.
 
-No qualifying word breaks the definition or scenario, so the answer is true.', 'TRUE — The claim is correct. Non-current liabilities amount to more than 66.8% of total equity in Year 1.
+Name the identity in words: Inventory share of total assets = Inventory ÷ total assets.
 
-The underlying topic is reading balance sheets and income statements for structure and risk. When figures appear, the exam checks whether you can interpret them in accounting terms—what increased, what ratio is implied, and whether the label (current, non-current, equity, and so on) fits.
+From the extract, Inventory = 257 and total assets = 1,071. Plug the figures step by step:
 
-Apply the case evidence: Non-current liabilities are about 170.9% of equity in Year 1. Check whether the direction of change (higher/lower, above/below the threshold) matches what the statement asserts.
+$$
+Share = \frac{\text{Inventory}}{\text{total assets}}
+$$
 
-No qualifying word breaks the definition or scenario, so the answer is true.'] WHERE case_id = 'CASE 6.3.021' AND tier = 'full';
-UPDATE public.economics_cases SET tactical_explanations = ARRAY['TRUE — On the Fuhrmann definition used in the entrance exam, the sentence is correct. Collecting payment on a trade receivable is cash from operating activities because it comes from the core trading cycle.
+$$
+Share = \frac{257}{1,071}
+$$
 
-The task tests reading balance sheets and income statements for structure and risk. Financial statements distinguish stocks (balance sheet at a date) from flows (income and cash over a period); many false statements swap those roles.
+$$
+Share = 24.0\%
+$$
 
-Apply the case evidence: Customer collections belong in operating cash flow. Check whether the direction of change (higher/lower, above/below the threshold) matches what the statement asserts.
+Threshold: more than 10.2%. Actual 24.0%.
 
-No qualifying word breaks the definition or scenario, so the answer is true.', 'TRUE — On the Fuhrmann definition used in the entrance exam, the sentence is correct. The current ratio exceeds 1.77.
+Reading the arithmetic against the claim: actual share 24.0% matches ''more than 10.2%'' so the statement holds.
 
-The underlying topic is reading balance sheets and income statements for structure and risk. When figures appear, the exam checks whether you can interpret them in accounting terms—what increased, what ratio is implied, and whether the label (current, non-current, equity, and so on) fits.
+The statement is true.', 'TRUE — Working capital is the euro surplus (or deficit) of current assets over current liabilities on this balance sheet.
 
-Apply the case evidence: Current ratio ≈ 3.47. Check whether the direction of change (higher/lower, above/below the threshold) matches what the statement asserts.
+Name the identity in words: working capital = current assets − current liabilities.
 
-Every part of the claim aligns with the standard concept, so the statement stands.', 'TRUE — Evaluated against the textbook standard, this assertion is correct. Working capital of €378 thousand is positive on this balance sheet.
+From the extract, current assets total 448 and current liabilities total 225:
 
-This item belongs to the accounting block on reading balance sheets and income statements for structure and risk. Ratio and classification questions ask you to connect a figure or comparison in the case with the correct statement category, not merely to recognise a number.
+$$
+WC = CA - CL
+$$
 
-From the figures or classification rule involved, working capital = 378. Accounting statements fail when a loss is treated as increasing equity, when a flow is placed on the balance sheet, or when a ratio inequality is reversed.
+$$
+CA = 448, \quad CL = 225
+$$
 
-No qualifying word breaks the definition or scenario, so the answer is true.', 'TRUE — On the Fuhrmann definition used in the entrance exam, the sentence is correct. After excluding inventory, the remaining current assets still cover current liabilities more than 1.05 times over.
+$$
+WC = 448 - 225 = 223
+$$
 
-The underlying topic is reading balance sheets and income statements for structure and risk. When figures appear, the exam checks whether you can interpret them in accounting terms—what increased, what ratio is implied, and whether the label (current, non-current, equity, and so on) fits.
+Calculated WC is 223, which is positive.
 
-Apply the case evidence: Acid-test ratio ≈ 1.80. Check whether the direction of change (higher/lower, above/below the threshold) matches what the statement asserts.
+Reading the arithmetic against the claim: WC = 223 is positive as claimed so the statement holds.
 
-Every part of the claim aligns with the standard concept, so the statement stands.', 'TRUE — The claim is correct. Inventory make up more than 39% of current assets.
+The statement is true.', 'TRUE — Single-year statements need cautious reading: policies, estimates, and one-offs matter.
 
-The underlying topic is reading balance sheets and income statements for structure and risk. When figures appear, the exam checks whether you can interpret them in accounting terms—what increased, what ratio is implied, and whether the label (current, non-current, equity, and so on) fits.
+The wording matches the relevant rule for "Return and Cash Flow Extract 17". Single-year statements need cautious reading: policies, estimates, and one-offs matter. Ratios (liquidity, gearing, margins, returns) put line items in context. Financial accounting serves external users; audits give reasonable, not absolute, assurance. Applied here: "Cash flow from investing activities was an outflow this year."
 
-Apply the case evidence: Inventory are about 48.0% of current assets. Check whether the direction of change (higher/lower, above/below the threshold) matches what the statement asserts.
+The statement is true.'] WHERE case_id = 'CASE 6.3.017' AND tier = 'full';
+UPDATE public.economics_cases SET tactical_explanations = ARRAY['FALSE — Single-year statements need cautious reading: policies, estimates, and one-offs matter.
 
-Every part of the claim aligns with the standard concept, so the statement stands.'] WHERE case_id = 'CASE 6.3.022' AND tier = 'full';
-UPDATE public.economics_cases SET tactical_explanations = ARRAY['FALSE — On the Fuhrmann definition used in the entrance exam, the sentence is false. Even without a suitable point of comparison, a reader can still judge reliably whether a given profit margin counts as good or poor performance.
+Absolute or misapplied wording conflicts with the rule for "Comparing Results Across Several Years Over Time". Single-year statements need cautious reading: policies, estimates, and one-offs matter. Ratios (liquidity, gearing, margins, returns) put line items in context. Financial accounting serves external users; audits give reasonable, not absolute, assurance. Rejected claim: "A profit margin that appears strong when viewed in isolation remains equally strong once measured against the margins earned by similar businesses."
 
-The task tests reading balance sheets and income statements for structure and risk. Financial statements distinguish stocks (balance sheet at a date) from flows (income and cash over a period); many false statements swap those roles.
+The statement is false.', 'FALSE — Single-year statements need cautious reading: policies, estimates, and one-offs matter.
 
-Apply the case evidence: Without a comparison point, judging a margin as good or poor is unreliable. Check whether the direction of change (higher/lower, above/below the threshold) matches what the statement asserts.
+Absolute or misapplied wording conflicts with the rule for "Comparing Results Across Several Years Over Time". Single-year statements need cautious reading: policies, estimates, and one-offs matter. Ratios (liquidity, gearing, margins, returns) put line items in context. Financial accounting serves external users; audits give reasonable, not absolute, assurance. Rejected claim: "Sector-wide benchmarks provide no basis for determining whether an individual business''s asset structure or profitability is ordinary for its industry or genuinely stands out."
 
-Once the overclaim or mislabel is exposed, the only consistent answer is false.', 'FALSE — The claim is false. The relative weight of non-current assets against current assets on a business''s balance sheet gives no indication of how capital-intensive its operations are.
+The statement is false.', 'TRUE — Single-year statements need cautious reading: policies, estimates, and one-offs matter.
 
-The underlying topic is reading balance sheets and income statements for structure and risk. When figures appear, the exam checks whether you can interpret them in accounting terms—what increased, what ratio is implied, and whether the label (current, non-current, equity, and so on) fits.
+The wording matches the relevant rule for "Comparing Results Across Several Years Over Time". Single-year statements need cautious reading: policies, estimates, and one-offs matter. Ratios (liquidity, gearing, margins, returns) put line items in context. Financial accounting serves external users; audits give reasonable, not absolute, assurance. Applied here: "Financing long-lived production assets through short-term credit that must be repaid within a year exposes a business to the risk of needing to refinance repeatedly."
 
-Apply the case evidence: This balance is exactly what indicates how capital-intensive operations are. Check whether the direction of change (higher/lower, above/below the threshold) matches what the statement asserts.
+The statement is true.', 'TRUE — Single-year statements need cautious reading: policies, estimates, and one-offs matter.
 
-The statement sounds plausible but fails on precision, so it is false.', 'TRUE — On the Fuhrmann definition used in the entrance exam, the sentence is correct. The margin represented by gross profit reflects how much a business earns from producing and selling its goods before overhead costs such as administration are considered.
+The wording matches the relevant rule for "Comparing Results Across Several Years Over Time". Single-year statements need cautious reading: policies, estimates, and one-offs matter. Ratios (liquidity, gearing, margins, returns) put line items in context. Financial accounting serves external users; audits give reasonable, not absolute, assurance. Applied here: "Cost of sales is confined to the direct costs incurred in producing or acquiring the goods a business has actually sold during the period."
 
-The underlying topic is reading balance sheets and income statements for structure and risk. When figures appear, the exam checks whether you can interpret them in accounting terms—what increased, what ratio is implied, and whether the label (current, non-current, equity, and so on) fits.
+The statement is true.', 'FALSE — Single-year statements need cautious reading: policies, estimates, and one-offs matter.
 
-Apply the case evidence: Gross profit reflects the production and selling margin before overhead costs are considered. Check whether the direction of change (higher/lower, above/below the threshold) matches what the statement asserts.
+Absolute or misapplied wording conflicts with the rule for "Comparing Results Across Several Years Over Time". Single-year statements need cautious reading: policies, estimates, and one-offs matter. Ratios (liquidity, gearing, margins, returns) put line items in context. Financial accounting serves external users; audits give reasonable, not absolute, assurance. Rejected claim: "Comparing a business''s statements with those of its direct competitors can never reveal whether a change in results reflects conditions across the whole industry or is specific to that one business."
 
-No qualifying word breaks the definition or scenario, so the answer is true.', 'TRUE — The claim is correct. Distribution costs and administrative expenses are deducted from gross profit, not from revenue directly, on the way to arriving at the operating result.
+The statement is false.'] WHERE case_id = 'CASE 6.3.018' AND tier = 'full';
+UPDATE public.economics_cases SET tactical_explanations = ARRAY['TRUE — Single-year statements need cautious reading: policies, estimates, and one-offs matter.
 
-The task tests reading balance sheets and income statements for structure and risk. Financial statements distinguish stocks (balance sheet at a date) from flows (income and cash over a period); many false statements swap those roles.
+The wording matches the relevant rule for "Comparing Results Across Several Years in Context". Single-year statements need cautious reading: policies, estimates, and one-offs matter. Ratios (liquidity, gearing, margins, returns) put line items in context. Financial accounting serves external users; audits give reasonable, not absolute, assurance. Applied here: "Only costs that can be traced directly to manufacturing or acquiring the units a business has sold belong within cost of sales."
 
-Apply the case evidence: Distribution and administrative costs are deducted after gross profit, on the way to the operating result. Check whether the direction of change (higher/lower, above/below the threshold) matches what the statement asserts.
+The statement is true.', 'TRUE — Single-year statements need cautious reading: policies, estimates, and one-offs matter.
 
-No qualifying word breaks the definition or scenario, so the answer is true.', 'TRUE — The claim is correct. Two businesses can report identical gross profit yet end up with very different operating results if their distribution and administrative costs differ.
+The wording matches the relevant rule for "Comparing Results Across Several Years in Context". Single-year statements need cautious reading: policies, estimates, and one-offs matter. Ratios (liquidity, gearing, margins, returns) put line items in context. Financial accounting serves external users; audits give reasonable, not absolute, assurance. Applied here: "Materials physically consumed in manufacturing the units sold form part of cost of sales, while costs incurred once production is finished generally do not."
 
-The task tests reading balance sheets and income statements for structure and risk. Financial statements distinguish stocks (balance sheet at a date) from flows (income and cash over a period); many false statements swap those roles.
+The statement is true.', 'TRUE — Single-year statements need cautious reading: policies, estimates, and one-offs matter.
 
-Apply the case evidence: Identical gross profit can still yield different operating results depending on subsequent operating expenses. Check whether the direction of change (higher/lower, above/below the threshold) matches what the statement asserts.
+The wording matches the relevant rule for "Comparing Results Across Several Years in Context". Single-year statements need cautious reading: policies, estimates, and one-offs matter. Ratios (liquidity, gearing, margins, returns) put line items in context. Financial accounting serves external users; audits give reasonable, not absolute, assurance. Applied here: "Because cost of sales is restricted to direct production costs, functions such as administration and distribution are reported in separate lines of the income statement."
 
-The reasoning chain is complete, so mark the statement true.'] WHERE case_id = 'CASE 6.3.023' AND tier = 'full';
-UPDATE public.economics_cases SET tactical_explanations = ARRAY['TRUE — This statement is correct. A widening gap between revenue and cost of sales, expressed as a proportion of revenue, indicates that gross profit margin is improving.
+The statement is true.', 'TRUE — Single-year statements need cautious reading: policies, estimates, and one-offs matter.
 
-This is an accounting reasoning item on reading balance sheets and income statements for structure and risk. Decide whether the sentence correctly describes how a transaction, balance-sheet line, or period result affects assets, liabilities, or equity.
+The wording matches the relevant rule for "Comparing Results Across Several Years in Context". Single-year statements need cautious reading: policies, estimates, and one-offs matter. Ratios (liquidity, gearing, margins, returns) put line items in context. Financial accounting serves external users; audits give reasonable, not absolute, assurance. Applied here: "Direct labour spent physically producing the goods sold is treated as part of cost of sales, unlike labour spent on functions unrelated to production."
 
-From the figures or classification rule involved, a widening revenue-to-cost-of-sales gap, relative to revenue, means gross profit margin is improving. Accounting statements fail when a loss is treated as increasing equity, when a flow is placed on the balance sheet, or when a ratio inequality is reversed.
+The statement is true.', 'TRUE — Single-year statements need cautious reading: policies, estimates, and one-offs matter.
 
-No qualifying word breaks the definition or scenario, so the answer is true.', 'FALSE — This statement is false. A business holding a larger share of its resources in current assets typically has less of its wealth available for conversion into cash within the coming year.
+The wording matches the relevant rule for "Comparing Results Across Several Years in Context". Single-year statements need cautious reading: policies, estimates, and one-offs matter. Ratios (liquidity, gearing, margins, returns) put line items in context. Financial accounting serves external users; audits give reasonable, not absolute, assurance. Applied here: "Gross profit is arrived at by deducting cost of sales from revenue, before any operating expenses such as distribution or administrative costs are taken into account."
 
-This is an accounting reasoning item on reading balance sheets and income statements for structure and risk. Decide whether the sentence correctly describes how a transaction, balance-sheet line, or period result affects assets, liabilities, or equity.
+The statement is true.'] WHERE case_id = 'CASE 6.3.019' AND tier = 'full';
+UPDATE public.economics_cases SET tactical_explanations = ARRAY['TRUE — Non-current assets are held for use beyond one accounting period.
 
-From the figures or classification rule involved, a larger current-asset share means more, not less, of a business''s resources are readily convertible to cash. Accounting statements fail when a loss is treated as increasing equity, when a flow is placed on the balance sheet, or when a ratio inequality is reversed.
+Useful life beyond one year plus operating intent (not ordinary resale) define the category.
 
-Once the overclaim or mislabel is exposed, the only consistent answer is false.', 'FALSE — Evaluated against the textbook standard, this assertion is false. Studying how the balance between current and non-current assets shifts over time reveals nothing about how a business is choosing to deploy its resources.
+Using the stem facts: "Non-current assets normally have a useful life of more than one year and are intended to be used in the business for longer than one year."
 
-This is an accounting reasoning item on reading balance sheets and income statements for structure and risk. Decide whether the sentence correctly describes how a transaction, balance-sheet line, or period result affects assets, liabilities, or equity.
+Single-year statements need cautious reading: policies, estimates, and one-offs matter. Ratios (liquidity, gearing, margins, returns) put line items in context. Financial accounting serves external users; audits give reasonable, not absolute, assurance.
 
-From the figures or classification rule involved, such shifts are precisely what reveal changing resource deployment. Accounting statements fail when a loss is treated as increasing equity, when a flow is placed on the balance sheet, or when a ratio inequality is reversed.
+The statement is true.', 'TRUE — Use the case figures for Revenue and compute the percentage change between Year 1 and Year 2 before comparing it with the claimed threshold.
 
-Once the overclaim or mislabel is exposed, the only consistent answer is false.', 'FALSE — Evaluated against the textbook standard, this assertion is false. An increasing share of non-current assets over successive years can only point to a business reducing its commitment to long-term productive capacity.
+From the extract:
 
-This is an accounting reasoning item on reading balance sheets and income statements for structure and risk. Decide whether the sentence correctly describes how a transaction, balance-sheet line, or period result affects assets, liabilities, or equity.
+$$
+\text{Revenue}_{\text{Y1}} = 763, \quad
+\text{Revenue}_{\text{Y2}} = 912
+$$
 
-From the figures or classification rule involved, a rising non-current asset share typically signals greater, not reduced, long-term commitment. Accounting statements fail when a loss is treated as increasing equity, when a flow is placed on the balance sheet, or when a ratio inequality is reversed.
+$$
+\frac{912 - 763}{763} = 19.5\%
+$$
 
-Once the overclaim or mislabel is exposed, the only consistent answer is false.', 'FALSE — This statement is false. Businesses in capital-intensive industries tend to carry a lighter weighting of non-current assets relative to current assets than businesses that trade mainly in quickly turned-over stock.
+$$
+19.5\% > 15.1\%
+$$
 
-This is an accounting reasoning item on reading balance sheets and income statements for structure and risk. Decide whether the sentence correctly describes how a transaction, balance-sheet line, or period result affects assets, liabilities, or equity.
+The actual growth is 19.5%, which is more than the claimed 15.1%.
 
-From the figures or classification rule involved, capital-intensive businesses tend to carry heavier, not lighter, non-current asset weightings. Accounting statements fail when a loss is treated as increasing equity, when a flow is placed on the balance sheet, or when a ratio inequality is reversed.
+The statement is true.', 'FALSE — Gross margin is gross profit divided by revenue; the claim compares the Year-2 margin with Year 1 in percentage points.
 
-Once the overclaim or mislabel is exposed, the only consistent answer is false.'] WHERE case_id = 'CASE 6.3.024' AND tier = 'full';
-UPDATE public.economics_cases SET tactical_explanations = ARRAY['TRUE — This statement is correct. Current assets such as inventory, trade receivables and cash normally have higher liquidity and are not expected to be used longer than a year.
+Name the identity in words: gross margin = gross profit ÷ revenue; Δ = GPM₂ − GPM₁.
 
-This item belongs to the accounting block on reading balance sheets and income statements for structure and risk. Ratio and classification questions ask you to connect a figure or comparison in the case with the correct statement category, not merely to recognise a number.
+$$
+GPM_{1} = \frac{274}{763} = 35.9\%
+$$
 
-From the figures or classification rule involved, current assets turn into cash within the normal operating cycle. Accounting statements fail when a loss is treated as increasing equity, when a flow is placed on the balance sheet, or when a ratio inequality is reversed.
+$$
+GPM_{2} = \frac{329}{912} = 36.1\%
+$$
 
-The reasoning chain is complete, so mark the statement true.', 'FALSE — On the Fuhrmann definition used in the entrance exam, the sentence is false. The gross profit margin, gross profit taken as a share of revenue, is more than 2.6 percentage points higher in Year 2 than in Year 1.
+$$
+\Delta = 0.2\text{ percentage points}
+$$
 
-The underlying topic is reading balance sheets and income statements for structure and risk. When figures appear, the exam checks whether you can interpret them in accounting terms—what increased, what ratio is implied, and whether the label (current, non-current, equity, and so on) fits.
+Threshold: more than 2.3 pp higher in Year 2. Actual Δ = 0.2 pp.
 
-Apply the case evidence: Gross margins were 39.9% then 39.9%. Check whether the direction of change (higher/lower, above/below the threshold) matches what the statement asserts.
+Reading the arithmetic against the claim: margin rose by 0.2 pp versus more than 2.3 pp so the statement does not hold.
 
-The statement sounds plausible but fails on precision, so it is false.', 'FALSE — The claim is false. The operating result grew by more than 56.6% between Year 1 and Year 2.
+The statement is false.', 'FALSE — Use the case figures for The operating result and compute the percentage change between Year 1 and Year 2 before comparing it with the claimed threshold.
 
-The underlying topic is reading balance sheets and income statements for structure and risk. When figures appear, the exam checks whether you can interpret them in accounting terms—what increased, what ratio is implied, and whether the label (current, non-current, equity, and so on) fits.
+From the extract:
 
-Apply the case evidence: The operating result changed by about 18.0% between the two years. Check whether the direction of change (higher/lower, above/below the threshold) matches what the statement asserts.
+$$
+\text{The operating result}_{\text{Y1}} = 194, \quad
+\text{The operating result}_{\text{Y2}} = 237
+$$
 
-Once the overclaim or mislabel is exposed, the only consistent answer is false.', 'FALSE — This statement is false. Profit for the year grew by more than 33.6% between Year 1 and Year 2.
+$$
+\frac{237 - 194}{194} = 22.2\%
+$$
 
-This item belongs to the accounting block on reading balance sheets and income statements for structure and risk. Ratio and classification questions ask you to connect a figure or comparison in the case with the correct statement category, not merely to recognise a number.
+$$
+22.2\% \le  41.1\%
+$$
 
-From the figures or classification rule involved, profit for the year changed by about 15.0% between the two years. Accounting statements fail when a loss is treated as increasing equity, when a flow is placed on the balance sheet, or when a ratio inequality is reversed.
+The actual growth is 22.2%, which is not more than the claimed 41.1%.
 
-Because the decisive detail is wrong, mark the statement false.', 'FALSE — This statement is false. Finance costs grew by more than 36.5% between Year 1 and Year 2, outpacing the growth in the operating result.
+The statement is false.', 'TRUE — Single-year statements need cautious reading: policies, estimates, and one-offs matter.
 
-This item belongs to the accounting block on reading balance sheets and income statements for structure and risk. Ratio and classification questions ask you to connect a figure or comparison in the case with the correct statement category, not merely to recognise a number.
+The wording matches the relevant rule for "Profit and Loss Over Two Years 20". Single-year statements need cautious reading: policies, estimates, and one-offs matter. Ratios (liquidity, gearing, margins, returns) put line items in context. Financial accounting serves external users; audits give reasonable, not absolute, assurance. Applied here: "The operating result covers finance costs less than 11.41 times over in Year 2."
 
-From the figures or classification rule involved, finance costs moved from 18 to 24; operating result moved from 338 to 399. Accounting statements fail when a loss is treated as increasing equity, when a flow is placed on the balance sheet, or when a ratio inequality is reversed.
+The statement is true.'] WHERE case_id = 'CASE 6.3.020' AND tier = 'full';
+UPDATE public.economics_cases SET tactical_explanations = ARRAY['TRUE — Single-year statements need cautious reading: policies, estimates, and one-offs matter.
 
-Once the overclaim or mislabel is exposed, the only consistent answer is false.'] WHERE case_id = 'CASE 6.3.025' AND tier = 'full';
+The wording matches the relevant rule for "Comparative Balance Sheet Analysis 21". Single-year statements need cautious reading: policies, estimates, and one-offs matter. Ratios (liquidity, gearing, margins, returns) put line items in context. Financial accounting serves external users; audits give reasonable, not absolute, assurance. Applied here: "Current assets such as inventory, trade receivables and cash normally have higher liquidity and are not expected to be used longer than a year."
+
+The statement is true.', 'TRUE — Use the case figures for Total assets and compute the percentage change between Year 1 and Year 2 before comparing it with the claimed threshold.
+
+From the extract:
+
+$$
+\text{Total assets}_{\text{Y1}} = 1,092, \quad
+\text{Total assets}_{\text{Y2}} = 1,231
+$$
+
+$$
+\frac{1,231 - 1,092}{1,092} = 12.7\%
+$$
+
+$$
+12.7\% > 6.2\%
+$$
+
+The actual growth is 12.7%, which is more than the claimed 6.2%.
+
+The statement is true.', 'TRUE — Compute each year''s equity ratio from the balance-sheet totals, then the change in percentage points.
+
+$$
+R_{Y1} = \frac{289}{1,092} = 26.5\%
+$$
+
+$$
+R_{Y2} = \frac{372}{1,231} = 30.2\%
+$$
+
+$$
+\Delta = +3.8\text{ percentage points}
+$$
+
+Required: improved by more than 3.1 pp. Actual change +3.8 pp.
+
+The statement is true.', 'TRUE — Compute each year''s debt ratio from the balance-sheet totals, then the change in percentage points.
+
+$$
+R_{Y1} = \frac{803}{1,092} = 73.5\%
+$$
+
+$$
+R_{Y2} = \frac{859}{1,231} = 69.8\%
+$$
+
+$$
+\Delta = -3.8\text{ percentage points}
+$$
+
+Required: fell by more than 3.2 pp. Actual change -3.8 pp.
+
+The statement is true.', 'TRUE — Non-current liabilities are the long-term funding claims; here they are long-term bank loan plus bonds payable, compared with total equity.
+
+Name the identity in words: NCL-to-equity share = (long-term bank loan + bonds payable) ÷ total equity.
+
+$$
+\text{NCL} = 425 + 69 = 494
+$$
+
+$$
+\text{Equity} = 289
+$$
+
+$$
+\frac{494}{289} = 170.9\%
+$$
+
+Threshold: more than 66.8% in Year 1. Actual 170.9%.
+
+Reading the arithmetic against the claim: Year 1 NCL/equity is 170.9%, which is consistent with ''more than 66.8%'' so the statement holds.
+
+The statement is true.'] WHERE case_id = 'CASE 6.3.021' AND tier = 'full';
+UPDATE public.economics_cases SET tactical_explanations = ARRAY['TRUE — Single-year statements need cautious reading: policies, estimates, and one-offs matter.
+
+The claim states: Collecting payment on a trade receivable is cash from operating activities. The reason given — it comes from the core trading cycle. — fits the chapter rule. Single-year statements need cautious reading: policies, estimates, and one-offs matter. Ratios (liquidity, gearing, margins, returns) put line items in context. Financial accounting serves external users; audits give reasonable, not absolute, assurance.
+
+The statement is true.', 'TRUE — The current ratio is the standard liquidity cover of current assets over current liabilities.
+
+Name the identity in words: current ratio = current assets ÷ current liabilities.
+
+Build current assets and current liabilities from the extract:
+
+$$
+CA = 255 + 171 + 105 = 531
+$$
+
+$$
+CL = 76 + 77 = 153
+$$
+
+$$
+\text{Current ratio} = \frac{531}{153} = 3.4706
+$$
+
+Claimed: exceeds 1.77. Actual 3.47.
+
+Reading the arithmetic against the claim: actual current ratio 3.47 versus ''exceeds 1.77'' so the statement holds.
+
+The statement is true.', 'TRUE — Working capital is the euro surplus (or deficit) of current assets over current liabilities on this balance sheet.
+
+Name the identity in words: working capital = current assets − current liabilities.
+
+From the extract, current assets total 531 and current liabilities total 153:
+
+$$
+WC = CA - CL
+$$
+
+$$
+CA = 531, \quad CL = 153
+$$
+
+$$
+WC = 531 - 153 = 378
+$$
+
+The statement cites working capital of €378 thousand and that it is positive. Calculated WC is 378, which is positive.
+
+Reading the arithmetic against the claim: WC = 378 is positive as claimed so the statement holds.
+
+The statement is true.', 'TRUE — The acid-test (quick) ratio is a stricter liquidity test: inventory is removed from current assets before dividing by current liabilities.
+
+Name the identity in words: acid-test ratio = (current assets − inventory) ÷ current liabilities.
+
+$$
+CA = 531, \quad \text{Inventory} = 255, \quad CL = 153
+$$
+
+$$
+CA - \text{Inventory} = 531 - 255 = 276
+$$
+
+$$
+\text{Acid-test} = \frac{276}{153} = 1.8039
+$$
+
+Threshold: more than 1.05. Actual 1.80.
+
+Reading the arithmetic against the claim: acid-test 1.80 is more than 1.05 so the statement holds.
+
+The statement is true.', 'TRUE — This is a composition claim: express Inventory as a percentage of current assets.
+
+Name the identity in words: Inventory share of current assets = Inventory ÷ current assets.
+
+From the extract, Inventory = 255 and current assets = 531. Plug the figures step by step:
+
+$$
+Share = \frac{\text{Inventory}}{\text{current assets}}
+$$
+
+$$
+Share = \frac{255}{531}
+$$
+
+$$
+Share = 48.0\%
+$$
+
+Threshold: more than 39%. Actual 48.0%.
+
+Reading the arithmetic against the claim: actual share 48.0% matches ''more than 39%'' so the statement holds.
+
+The statement is true.'] WHERE case_id = 'CASE 6.3.022' AND tier = 'full';
+UPDATE public.economics_cases SET tactical_explanations = ARRAY['FALSE — Single-year statements need cautious reading: policies, estimates, and one-offs matter.
+
+Absolute or misapplied wording conflicts with the rule for "Benchmarking Against Industry Peers in Practice". Single-year statements need cautious reading: policies, estimates, and one-offs matter. Ratios (liquidity, gearing, margins, returns) put line items in context. Financial accounting serves external users; audits give reasonable, not absolute, assurance. Rejected claim: "Even without a suitable point of comparison, a reader can still judge reliably whether a given profit margin counts as good or poor performance."
+
+The statement is false.', 'FALSE — Single-year statements need cautious reading: policies, estimates, and one-offs matter.
+
+Absolute or misapplied wording conflicts with the rule for "Benchmarking Against Industry Peers in Practice". Single-year statements need cautious reading: policies, estimates, and one-offs matter. Ratios (liquidity, gearing, margins, returns) put line items in context. Financial accounting serves external users; audits give reasonable, not absolute, assurance. Rejected claim: "The relative weight of non-current assets against current assets on a business''s balance sheet gives no indication of how capital-intensive its operations are."
+
+The statement is false.', 'TRUE — Single-year statements need cautious reading: policies, estimates, and one-offs matter.
+
+The wording matches the relevant rule for "Benchmarking Against Industry Peers in Practice". Single-year statements need cautious reading: policies, estimates, and one-offs matter. Ratios (liquidity, gearing, margins, returns) put line items in context. Financial accounting serves external users; audits give reasonable, not absolute, assurance. Applied here: "The margin represented by gross profit reflects how much a business earns from producing and selling its goods before overhead costs such as administration are considered."
+
+The statement is true.', 'TRUE — Single-year statements need cautious reading: policies, estimates, and one-offs matter.
+
+The wording matches the relevant rule for "Benchmarking Against Industry Peers in Practice". Single-year statements need cautious reading: policies, estimates, and one-offs matter. Ratios (liquidity, gearing, margins, returns) put line items in context. Financial accounting serves external users; audits give reasonable, not absolute, assurance. Applied here: "Distribution costs and administrative expenses are deducted from gross profit, not from revenue directly, on the way to arriving at the operating result."
+
+The statement is true.', 'TRUE — Single-year statements need cautious reading: policies, estimates, and one-offs matter.
+
+The wording matches the relevant rule for "Benchmarking Against Industry Peers in Practice". Single-year statements need cautious reading: policies, estimates, and one-offs matter. Ratios (liquidity, gearing, margins, returns) put line items in context. Financial accounting serves external users; audits give reasonable, not absolute, assurance. Applied here: "Two businesses can report identical gross profit yet end up with very different operating results if their distribution and administrative costs differ."
+
+The statement is true.'] WHERE case_id = 'CASE 6.3.023' AND tier = 'full';
+UPDATE public.economics_cases SET tactical_explanations = ARRAY['TRUE — Single-year statements need cautious reading: policies, estimates, and one-offs matter.
+
+The wording matches the relevant rule for "Benchmarking Against Industry Peers Explained". Single-year statements need cautious reading: policies, estimates, and one-offs matter. Ratios (liquidity, gearing, margins, returns) put line items in context. Financial accounting serves external users; audits give reasonable, not absolute, assurance. Applied here: "A widening gap between revenue and cost of sales, expressed as a proportion of revenue, indicates that gross profit margin is improving."
+
+The statement is true.', 'FALSE — Single-year statements need cautious reading: policies, estimates, and one-offs matter.
+
+Absolute or misapplied wording conflicts with the rule for "Benchmarking Against Industry Peers Explained". Single-year statements need cautious reading: policies, estimates, and one-offs matter. Ratios (liquidity, gearing, margins, returns) put line items in context. Financial accounting serves external users; audits give reasonable, not absolute, assurance. Rejected claim: "A business holding a larger share of its resources in current assets typically has less of its wealth available for conversion into cash within the coming year."
+
+The statement is false.', 'FALSE — Single-year statements need cautious reading: policies, estimates, and one-offs matter.
+
+Absolute or misapplied wording conflicts with the rule for "Benchmarking Against Industry Peers Explained". Single-year statements need cautious reading: policies, estimates, and one-offs matter. Ratios (liquidity, gearing, margins, returns) put line items in context. Financial accounting serves external users; audits give reasonable, not absolute, assurance. Rejected claim: "Studying how the balance between current and non-current assets shifts over time reveals nothing about how a business is choosing to deploy its resources."
+
+The statement is false.', 'FALSE — Single-year statements need cautious reading: policies, estimates, and one-offs matter.
+
+Absolute or misapplied wording conflicts with the rule for "Benchmarking Against Industry Peers Explained". Single-year statements need cautious reading: policies, estimates, and one-offs matter. Ratios (liquidity, gearing, margins, returns) put line items in context. Financial accounting serves external users; audits give reasonable, not absolute, assurance. Rejected claim: "An increasing share of non-current assets over successive years can only point to a business reducing its commitment to long-term productive capacity."
+
+The statement is false.', 'FALSE — Single-year statements need cautious reading: policies, estimates, and one-offs matter.
+
+Absolute or misapplied wording conflicts with the rule for "Benchmarking Against Industry Peers Explained". Single-year statements need cautious reading: policies, estimates, and one-offs matter. Ratios (liquidity, gearing, margins, returns) put line items in context. Financial accounting serves external users; audits give reasonable, not absolute, assurance. Rejected claim: "Businesses in capital-intensive industries tend to carry a lighter weighting of non-current assets relative to current assets than businesses that trade mainly in quickly turned-over stock."
+
+The statement is false.'] WHERE case_id = 'CASE 6.3.024' AND tier = 'full';
+UPDATE public.economics_cases SET tactical_explanations = ARRAY['TRUE — Single-year statements need cautious reading: policies, estimates, and one-offs matter.
+
+The wording matches the relevant rule for "Revenue and Operating Result Chart 25". Single-year statements need cautious reading: policies, estimates, and one-offs matter. Ratios (liquidity, gearing, margins, returns) put line items in context. Financial accounting serves external users; audits give reasonable, not absolute, assurance. Applied here: "Current assets such as inventory, trade receivables and cash normally have higher liquidity and are not expected to be used longer than a year."
+
+The statement is true.', 'FALSE — Gross margin is gross profit divided by revenue; the claim compares the Year-2 margin with Year 1 in percentage points.
+
+Name the identity in words: gross margin = gross profit ÷ revenue; Δ = GPM₂ − GPM₁.
+
+$$
+GPM_{1} = \frac{420}{1,053} = 39.9\%
+$$
+
+$$
+GPM_{2} = \frac{493}{1,235} = 39.9\%
+$$
+
+$$
+\Delta = 0.0\text{ percentage points}
+$$
+
+Threshold: more than 2.6 pp higher in Year 2. Actual Δ = 0.0 pp.
+
+Reading the arithmetic against the claim: margin rose by 0.0 pp versus more than 2.6 pp so the statement does not hold.
+
+The statement is false.', 'FALSE — Use the case figures for The operating result and compute the percentage change between Year 1 and Year 2 before comparing it with the claimed threshold.
+
+From the extract:
+
+$$
+\text{The operating result}_{\text{Y1}} = 338, \quad
+\text{The operating result}_{\text{Y2}} = 399
+$$
+
+$$
+\frac{399 - 338}{338} = 18.0\%
+$$
+
+$$
+18.0\% \le  56.6\%
+$$
+
+The actual growth is 18.0%, which is not more than the claimed 56.6%.
+
+The statement is false.', 'FALSE — Use the case figures for Profit for the year and compute the percentage change between Year 1 and Year 2 before comparing it with the claimed threshold.
+
+From the extract:
+
+$$
+\text{Profit for the year}_{\text{Y1}} = 246, \quad
+\text{Profit for the year}_{\text{Y2}} = 283
+$$
+
+$$
+\frac{283 - 246}{246} = 15.0\%
+$$
+
+$$
+15.0\% \le  33.6\%
+$$
+
+The actual growth is 15.0%, which is not more than the claimed 33.6%.
+
+The statement is false.', 'FALSE — Compare finance-cost growth with operating-result growth; the claim needs both a finance-cost rise above the threshold and outpacing of operating result.
+
+Name the identity in words: growth = (Year 2 − Year 1) ÷ Year 1 for each line.
+
+$$
+\text{FC growth} = 33.3\%
+$$
+
+$$
+\text{OR growth} = 18.0\%
+$$
+
+Finance costs did not grow by more than 36.5%; they do outpace operating result.
+
+Reading the arithmetic against the claim: FC growth 33.3% vs threshold 36.5% and OR growth 18.0% so the statement does not hold.
+
+The statement is false.'] WHERE case_id = 'CASE 6.3.025' AND tier = 'full';

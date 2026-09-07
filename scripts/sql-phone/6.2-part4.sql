@@ -1,788 +1,1258 @@
 -- Update expanded explanations for 6.2-part4 (25 cases).
 -- Safe to re-run: only updates tactical_explanations.
 
-UPDATE public.economics_cases SET tactical_explanations = ARRAY['FALSE — This statement is false. When a logistics company collects payment from a customer who owed money on an overdue invoice, the resulting cash inflow belongs in cash flow from financing activities.
+UPDATE public.economics_cases SET tactical_explanations = ARRAY['FALSE — The income statement reports period performance (revenue, costs, profit).
 
-This is an accounting reasoning item on income statement, cash flow statement, and financial statement timing. Decide whether the sentence correctly describes how a transaction, balance-sheet line, or period result affects assets, liabilities, or equity.
+Absolute or misapplied wording conflicts with the rule for "Electronics Retailer Till Upgrade". The income statement reports period performance (revenue, costs, profit). The cash-flow statement splits operating, investing, and financing cash movements. Profit is an accrual measure; depreciation is a non-cash expense; collecting receivables is operating cash, not new revenue. Rejected claim: "When a logistics company collects payment from a customer who owed money on an overdue invoice, the resulting cash inflow belongs in cash flow from financing activities."
 
-From the figures or classification rule involved, collecting money from a customer relates to core trading, so it belongs in the operating section, not the financing section. Accounting statements fail when a loss is treated as increasing equity, when a flow is placed on the balance sheet, or when a ratio inequality is reversed.
+The statement is false.', 'TRUE — The income statement reports period performance (revenue, costs, profit).
 
-Once the overclaim or mislabel is exposed, the only consistent answer is false.', 'TRUE — The claim is correct. Accumulated depreciation is deducted from the original cost of a fixed asset to arrive at its carrying value, also called its carrying value.
+The wording matches the relevant rule for "Electronics Retailer Till Upgrade". The income statement reports period performance (revenue, costs, profit). The cash-flow statement splits operating, investing, and financing cash movements. Profit is an accrual measure; depreciation is a non-cash expense; collecting receivables is operating cash, not new revenue. Applied here: "Accumulated depreciation is deducted from the original cost of a fixed asset to arrive at its carrying value, also called its carrying value."
 
-The task tests income statement, cash flow statement, and financial statement timing. Financial statements distinguish stocks (balance sheet at a date) from flows (income and cash over a period); many false statements swap those roles.
+The statement is true.', 'TRUE — The income statement reports period performance (revenue, costs, profit).
 
-Apply the case evidence: Carrying value equals original cost less the depreciation built up against the asset since it was acquired. Check whether the direction of change (higher/lower, above/below the threshold) matches what the statement asserts.
+The wording matches the relevant rule for "Electronics Retailer Till Upgrade". The income statement reports period performance (revenue, costs, profit). The cash-flow statement splits operating, investing, and financing cash movements. Profit is an accrual measure; depreciation is a non-cash expense; collecting receivables is operating cash, not new revenue. Applied here: "A rise in inventory or trade receivables during the year uses cash but does not by itself reduce the profit reported for the period, which helps explain why profit and operating cash flow can differ."
 
-No qualifying word breaks the definition or scenario, so the answer is true.', 'TRUE — Evaluated against the textbook standard, this assertion is correct. A rise in inventory or trade receivables during the year uses cash but does not by itself reduce the profit reported for the period, which helps explain why profit and operating cash flow can differ.
+The statement is true.', 'FALSE — The income statement reports period performance (revenue, costs, profit).
 
-This item belongs to the accounting block on income statement, cash flow statement, and financial statement timing. Ratio and classification questions ask you to connect a figure or comparison in the case with the correct statement category, not merely to recognise a number.
+Absolute or misapplied wording conflicts with the rule for "Electronics Retailer Till Upgrade". The income statement reports period performance (revenue, costs, profit). The cash-flow statement splits operating, investing, and financing cash movements. Profit is an accrual measure; depreciation is a non-cash expense; collecting receivables is operating cash, not new revenue. Rejected claim: "When a dairy processor repays part of a long-term bank loan, that cash outflow belongs in cash flow from operating activities."
 
-From the figures or classification rule involved, working capital movements affect cash without moving through the statement of profit and loss in the same way, creating a gap between profit and operating cash flow. Accounting statements fail when a loss is treated as increasing equity, when a flow is placed on the balance sheet, or when a ratio inequality is reversed.
+The statement is false.', 'FALSE — The income statement reports period performance (revenue, costs, profit).
 
-No qualifying word breaks the definition or scenario, so the answer is true.', 'FALSE — This statement is false. When a dairy processor repays part of a long-term bank loan, that cash outflow belongs in cash flow from operating activities.
+Absolute or misapplied wording conflicts with the rule for "Electronics Retailer Till Upgrade". The income statement reports period performance (revenue, costs, profit). The cash-flow statement splits operating, investing, and financing cash movements. Profit is an accrual measure; depreciation is a non-cash expense; collecting receivables is operating cash, not new revenue. Rejected claim: "When a pharmacy chain purchases new dispensing equipment for use in the business, the resulting cash outflow belongs in cash flow from operating activities."
 
-This is an accounting reasoning item on income statement, cash flow statement, and financial statement timing. Decide whether the sentence correctly describes how a transaction, balance-sheet line, or period result affects assets, liabilities, or equity.
+The statement is false.'] WHERE case_id = 'CASE 6.2.076' AND tier = 'full';
+UPDATE public.economics_cases SET tactical_explanations = ARRAY['FALSE — The income statement reports period performance (revenue, costs, profit).
 
-From the figures or classification rule involved, loan repayments relate to how the business is financed, so they belong in the financing section, not the operating section. Accounting statements fail when a loss is treated as increasing equity, when a flow is placed on the balance sheet, or when a ratio inequality is reversed.
+Absolute or misapplied wording conflicts with the rule for "Balance Sheet Structure Review 77". The income statement reports period performance (revenue, costs, profit). The cash-flow statement splits operating, investing, and financing cash movements. Profit is an accrual measure; depreciation is a non-cash expense; collecting receivables is operating cash, not new revenue. Rejected claim: "Depreciation each year requires an equal cash payment to an outside party when the charge is recorded."
 
-The statement sounds plausible but fails on precision, so it is false.', 'FALSE — The claim is false. When a pharmacy chain purchases new dispensing equipment for use in the business, the resulting cash outflow belongs in cash flow from operating activities.
+The statement is false.', 'FALSE — The current ratio is the standard liquidity cover of current assets over current liabilities.
 
-The task tests income statement, cash flow statement, and financial statement timing. Financial statements distinguish stocks (balance sheet at a date) from flows (income and cash over a period); many false statements swap those roles.
+Name the identity in words: current ratio = current assets ÷ current liabilities.
 
-Apply the case evidence: Buying long-term assets such as dispensing equipment is an investing decision, so the outflow belongs in the investing section, not the operating section. Check whether the direction of change (higher/lower, above/below the threshold) matches what the statement asserts.
+Build current assets and current liabilities from the extract:
 
-Once the overclaim or mislabel is exposed, the only consistent answer is false.'] WHERE case_id = 'CASE 6.2.076' AND tier = 'full';
-UPDATE public.economics_cases SET tactical_explanations = ARRAY['FALSE — On the Fuhrmann definition used in the entrance exam, the sentence is false. Depreciation each year requires an equal cash payment to an outside party when the charge is recorded.
+$$
+CA = 185 + 65 + 37 = 287
+$$
 
-The task tests income statement, cash flow statement, and financial statement timing. Financial statements distinguish stocks (balance sheet at a date) from flows (income and cash over a period); many false statements swap those roles.
+$$
+CL = 115 + 43 = 158
+$$
 
-Apply the case evidence: Depreciation is non-cash; the cash was usually paid when the asset was bought. Check whether the direction of change (higher/lower, above/below the threshold) matches what the statement asserts.
+$$
+\text{Current ratio} = \frac{287}{158} = 1.8165
+$$
 
-Because the decisive detail is wrong, mark the statement false.', 'FALSE — This statement is false. The current ratio is below 0.84.
+Claimed: is below 0.84. Actual 1.82.
 
-This item belongs to the accounting block on income statement, cash flow statement, and financial statement timing. Ratio and classification questions ask you to connect a figure or comparison in the case with the correct statement category, not merely to recognise a number.
+Reading the arithmetic against the claim: actual current ratio 1.82 versus ''is below 0.84'' so the statement does not hold.
 
-From the figures or classification rule involved, current ratio ≈ 1.82. Accounting statements fail when a loss is treated as increasing equity, when a flow is placed on the balance sheet, or when a ratio inequality is reversed.
+The statement is false.', 'TRUE — Working capital is the euro surplus (or deficit) of current assets over current liabilities on this balance sheet.
 
-Because the decisive detail is wrong, mark the statement false.', 'TRUE — Evaluated against the textbook standard, this assertion is correct. Working capital of €129 thousand is positive on this balance sheet.
+Name the identity in words: working capital = current assets − current liabilities.
 
-This item belongs to the accounting block on income statement, cash flow statement, and financial statement timing. Ratio and classification questions ask you to connect a figure or comparison in the case with the correct statement category, not merely to recognise a number.
+From the extract, current assets total 287 and current liabilities total 158:
 
-From the figures or classification rule involved, working capital = 129. Accounting statements fail when a loss is treated as increasing equity, when a flow is placed on the balance sheet, or when a ratio inequality is reversed.
+$$
+WC = CA - CL
+$$
 
-The reasoning chain is complete, so mark the statement true.', 'TRUE — This statement is correct. Inventory make up more than 51.9% of current assets.
+$$
+CA = 287, \quad CL = 158
+$$
 
-This item belongs to the accounting block on income statement, cash flow statement, and financial statement timing. Ratio and classification questions ask you to connect a figure or comparison in the case with the correct statement category, not merely to recognise a number.
+$$
+WC = 287 - 158 = 129
+$$
 
-From the figures or classification rule involved, inventory are about 64.5% of current assets. Accounting statements fail when a loss is treated as increasing equity, when a flow is placed on the balance sheet, or when a ratio inequality is reversed.
+The statement cites working capital of €129 thousand and that it is positive. Calculated WC is 129, which is positive.
 
-No qualifying word breaks the definition or scenario, so the answer is true.', 'TRUE — Evaluated against the textbook standard, this assertion is correct. Trade receivables make up less than 38.8% of current assets.
+Reading the arithmetic against the claim: WC = 129 is positive as claimed so the statement holds.
 
-This item belongs to the accounting block on income statement, cash flow statement, and financial statement timing. Ratio and classification questions ask you to connect a figure or comparison in the case with the correct statement category, not merely to recognise a number.
+The statement is true.', 'TRUE — This is a composition claim: express Inventory as a percentage of current assets.
 
-From the figures or classification rule involved, trade receivables are about 22.6% of current assets. Accounting statements fail when a loss is treated as increasing equity, when a flow is placed on the balance sheet, or when a ratio inequality is reversed.
+Name the identity in words: Inventory share of current assets = Inventory ÷ current assets.
 
-The reasoning chain is complete, so mark the statement true.'] WHERE case_id = 'CASE 6.2.077' AND tier = 'full';
-UPDATE public.economics_cases SET tactical_explanations = ARRAY['FALSE — The claim is false. When a fitness club chain collects payment from a customer who owed money on an overdue invoice, the resulting cash inflow belongs in cash flow from financing activities.
+From the extract, Inventory = 185 and current assets = 287. Plug the figures step by step:
 
-The task tests income statement, cash flow statement, and financial statement timing. Financial statements distinguish stocks (balance sheet at a date) from flows (income and cash over a period); many false statements swap those roles.
+$$
+Share = \frac{\text{Inventory}}{\text{current assets}}
+$$
 
-Apply the case evidence: Collecting money from a customer relates to core trading, so it belongs in the operating section, not the financing section. Check whether the direction of change (higher/lower, above/below the threshold) matches what the statement asserts.
+$$
+Share = \frac{185}{287}
+$$
 
-The statement sounds plausible but fails on precision, so it is false.', 'FALSE — Evaluated against the textbook standard, this assertion is false. When a restaurant chain repays part of a long-term bank loan, that cash outflow belongs in cash flow from operating activities.
+$$
+Share = 64.5\%
+$$
 
-This is an accounting reasoning item on income statement, cash flow statement, and financial statement timing. Decide whether the sentence correctly describes how a transaction, balance-sheet line, or period result affects assets, liabilities, or equity.
+Threshold: more than 51.9%. Actual 64.5%.
 
-From the figures or classification rule involved, loan repayments relate to how the business is financed, so they belong in the financing section, not the operating section. Accounting statements fail when a loss is treated as increasing equity, when a flow is placed on the balance sheet, or when a ratio inequality is reversed.
+Reading the arithmetic against the claim: actual share 64.5% matches ''more than 51.9%'' so the statement holds.
 
-The statement sounds plausible but fails on precision, so it is false.', 'FALSE — This statement is false. When a IT consultancy purchases new laptop computers for use in the business, the resulting cash outflow belongs in cash flow from operating activities.
+The statement is true.', 'TRUE — This is a composition claim: express Trade receivables as a percentage of current assets.
 
-This is an accounting reasoning item on income statement, cash flow statement, and financial statement timing. Decide whether the sentence correctly describes how a transaction, balance-sheet line, or period result affects assets, liabilities, or equity.
+Name the identity in words: Trade receivables share of current assets = Trade receivables ÷ current assets.
 
-From the figures or classification rule involved, buying long-term assets such as laptop computers is an investing decision, so the outflow belongs in the investing section, not the operating section. Accounting statements fail when a loss is treated as increasing equity, when a flow is placed on the balance sheet, or when a ratio inequality is reversed.
+From the extract, Trade receivables = 65 and current assets = 287. Plug the figures step by step:
 
-Because the decisive detail is wrong, mark the statement false.', 'TRUE — Evaluated against the textbook standard, this assertion is correct. A business can report a profit for the year in its statement of profit and loss while still seeing its cash and cash equivalents fall, because profit and cash movement are not the same thing.
+$$
+Share = \frac{\text{Trade receivables}}{\text{current assets}}
+$$
 
-This is an accounting reasoning item on income statement, cash flow statement, and financial statement timing. Decide whether the sentence correctly describes how a transaction, balance-sheet line, or period result affects assets, liabilities, or equity.
+$$
+Share = \frac{65}{287}
+$$
 
-From the figures or classification rule involved, non-cash charges and the timing of cash receipts and payments mean a profitable year can still coincide with a falling cash balance. Accounting statements fail when a loss is treated as increasing equity, when a flow is placed on the balance sheet, or when a ratio inequality is reversed.
+$$
+Share = 22.6\%
+$$
 
-No qualifying word breaks the definition or scenario, so the answer is true.', 'FALSE — Evaluated against the textbook standard, this assertion is false. The balance sheet of a bakery reports the revenue earned and costs incurred across the whole accounting period, while its statement of profit and loss shows assets, equity and liabilities on one specific date.
+Threshold: less than 38.8%. Actual 22.6%.
 
-This item belongs to the accounting block on income statement, cash flow statement, and financial statement timing. Ratio and classification questions ask you to connect a figure or comparison in the case with the correct statement category, not merely to recognise a number.
+Reading the arithmetic against the claim: actual share 22.6% matches ''less than 38.8%'' so the statement holds.
 
-From the figures or classification rule involved, this reverses the two statements: the balance sheet is the point-in-time snapshot, and the statement of profit and loss covers the period. Accounting statements fail when a loss is treated as increasing equity, when a flow is placed on the balance sheet, or when a ratio inequality is reversed.
+The statement is true.'] WHERE case_id = 'CASE 6.2.077' AND tier = 'full';
+UPDATE public.economics_cases SET tactical_explanations = ARRAY['FALSE — The income statement reports period performance (revenue, costs, profit).
 
-Once the overclaim or mislabel is exposed, the only consistent answer is false.'] WHERE case_id = 'CASE 6.2.078' AND tier = 'full';
-UPDATE public.economics_cases SET tactical_explanations = ARRAY['FALSE — On the Fuhrmann definition used in the entrance exam, the sentence is false. For this printing company, the dividends paid line of (20100) euros belongs in investing activities.
+Absolute or misapplied wording conflicts with the rule for "Overstated Assets Without Depreciation". The income statement reports period performance (revenue, costs, profit). The cash-flow statement splits operating, investing, and financing cash movements. Profit is an accrual measure; depreciation is a non-cash expense; collecting receivables is operating cash, not new revenue. Rejected claim: "When a fitness club chain collects payment from a customer who owed money on an overdue invoice, the resulting cash inflow belongs in cash flow from financing activities."
 
-The task tests income statement, cash flow statement, and financial statement timing. Financial statements distinguish stocks (balance sheet at a date) from flows (income and cash over a period); many false statements swap those roles.
+The statement is false.', 'FALSE — The income statement reports period performance (revenue, costs, profit).
 
-Apply the case evidence: Dividends are financing outflows, not investing. Check whether the direction of change (higher/lower, above/below the threshold) matches what the statement asserts.
+Absolute or misapplied wording conflicts with the rule for "Overstated Assets Without Depreciation". The income statement reports period performance (revenue, costs, profit). The cash-flow statement splits operating, investing, and financing cash movements. Profit is an accrual measure; depreciation is a non-cash expense; collecting receivables is operating cash, not new revenue. Rejected claim: "When a restaurant chain repays part of a long-term bank loan, that cash outflow belongs in cash flow from operating activities."
 
-Because the decisive detail is wrong, mark the statement false.', 'TRUE — Evaluated against the textbook standard, this assertion is correct. For this printing company, dividends paid to shareholders sit in financing activities, not operating activities.
+The statement is false.', 'FALSE — The income statement reports period performance (revenue, costs, profit).
 
-This is an accounting reasoning item on income statement, cash flow statement, and financial statement timing. Decide whether the sentence correctly describes how a transaction, balance-sheet line, or period result affects assets, liabilities, or equity.
+Absolute or misapplied wording conflicts with the rule for "Overstated Assets Without Depreciation". The income statement reports period performance (revenue, costs, profit). The cash-flow statement splits operating, investing, and financing cash movements. Profit is an accrual measure; depreciation is a non-cash expense; collecting receivables is operating cash, not new revenue. Rejected claim: "When a IT consultancy purchases new laptop computers for use in the business, the resulting cash outflow belongs in cash flow from operating activities."
 
-From the figures or classification rule involved, dividend payments are a financing activity. Accounting statements fail when a loss is treated as increasing equity, when a flow is placed on the balance sheet, or when a ratio inequality is reversed.
+The statement is false.', 'TRUE — Profit and cash movement are different measures.
 
-Every part of the claim aligns with the standard concept, so the statement stands.', 'FALSE — This statement is false. For this printing company, the investing outflow of 68,400 euros means the business must be failing.
+A firm can be profitable on an accrual basis while cash falls (e.g. heavy investment or slower collections).
 
-This is an accounting reasoning item on income statement, cash flow statement, and financial statement timing. Decide whether the sentence correctly describes how a transaction, balance-sheet line, or period result affects assets, liabilities, or equity.
+Using the stem facts: "A business can report a profit for the year in its statement of profit and loss while still seeing its cash and cash equivalents fall, because profit and cash movement are not the same thing."
 
-From the figures or classification rule involved, negative investing cash flow often just means assets were purchased. Accounting statements fail when a loss is treated as increasing equity, when a flow is placed on the balance sheet, or when a ratio inequality is reversed.
+The income statement reports period performance (revenue, costs, profit). The cash-flow statement splits operating, investing, and financing cash movements. Profit is an accrual measure; depreciation is a non-cash expense; collecting receivables is operating cash, not new revenue.
 
-Once the overclaim or mislabel is exposed, the only consistent answer is false.', 'TRUE — On the Fuhrmann definition used in the entrance exam, the sentence is correct. For this printing company, an investing outflow and a dividend payment can appear in the same year because investing and financing are separate sections.
+The statement is true.', 'FALSE — The income statement reports period performance (revenue, costs, profit).
 
-The task tests income statement, cash flow statement, and financial statement timing. Financial statements distinguish stocks (balance sheet at a date) from flows (income and cash over a period); many false statements swap those roles.
+Absolute or misapplied wording conflicts with the rule for "Overstated Assets Without Depreciation". The income statement reports period performance (revenue, costs, profit). The cash-flow statement splits operating, investing, and financing cash movements. Profit is an accrual measure; depreciation is a non-cash expense; collecting receivables is operating cash, not new revenue. Rejected claim: "The balance sheet of a bakery reports the revenue earned and costs incurred across the whole accounting period, while its statement of profit and loss shows assets, equity and liabilities on one sp…"
 
-Apply the case evidence: Investing and financing are recorded separately. Check whether the direction of change (higher/lower, above/below the threshold) matches what the statement asserts.
+The statement is false.'] WHERE case_id = 'CASE 6.2.078' AND tier = 'full';
+UPDATE public.economics_cases SET tactical_explanations = ARRAY['FALSE — The income statement reports period performance (revenue, costs, profit).
 
-The reasoning chain is complete, so mark the statement true.', 'FALSE — This statement is false. For this printing company, repayments of borrowed money count as operating cash outflows.
+Absolute or misapplied wording conflicts with the rule for "Understanding the Three Cash Flow Sections". The income statement reports period performance (revenue, costs, profit). The cash-flow statement splits operating, investing, and financing cash movements. Profit is an accrual measure; depreciation is a non-cash expense; collecting receivables is operating cash, not new revenue. Rejected claim: "For this printing company, the dividends paid line of (20100) euros belongs in investing activities."
 
-This is an accounting reasoning item on income statement, cash flow statement, and financial statement timing. Decide whether the sentence correctly describes how a transaction, balance-sheet line, or period result affects assets, liabilities, or equity.
+The statement is false.', 'TRUE — The income statement reports period performance (revenue, costs, profit).
 
-From the figures or classification rule involved, loan repayments are financing, not operating. Accounting statements fail when a loss is treated as increasing equity, when a flow is placed on the balance sheet, or when a ratio inequality is reversed.
+The wording matches the relevant rule for "Understanding the Three Cash Flow Sections". The income statement reports period performance (revenue, costs, profit). The cash-flow statement splits operating, investing, and financing cash movements. Profit is an accrual measure; depreciation is a non-cash expense; collecting receivables is operating cash, not new revenue. Applied here: "For this printing company, dividends paid to shareholders sit in financing activities, not operating activities."
 
-Because the decisive detail is wrong, mark the statement false.'] WHERE case_id = 'CASE 6.2.079' AND tier = 'full';
-UPDATE public.economics_cases SET tactical_explanations = ARRAY['TRUE — Evaluated against the textbook standard, this assertion is correct. Cash flow from operating activities grew by more than 8% from Year 1 to Year 2.
+The statement is true.', 'FALSE — The income statement reports period performance (revenue, costs, profit).
 
-This item belongs to the accounting block on income statement, cash flow statement, and financial statement timing. Ratio and classification questions ask you to connect a figure or comparison in the case with the correct statement category, not merely to recognise a number.
+Absolute or misapplied wording conflicts with the rule for "Understanding the Three Cash Flow Sections". The income statement reports period performance (revenue, costs, profit). The cash-flow statement splits operating, investing, and financing cash movements. Profit is an accrual measure; depreciation is a non-cash expense; collecting receivables is operating cash, not new revenue. Rejected claim: "For this printing company, the investing outflow of 68,400 euros means the business must be failing."
 
-From the figures or classification rule involved, operating cash flow rose by about 13.1%. Accounting statements fail when a loss is treated as increasing equity, when a flow is placed on the balance sheet, or when a ratio inequality is reversed.
+The statement is false.', 'TRUE — The income statement reports period performance (revenue, costs, profit).
 
-Every part of the claim aligns with the standard concept, so the statement stands.', 'FALSE — The claim is false. Customer collections of receivables are classified as financing cash inflows.
+The claim states: For this printing company, an investing outflow and a dividend payment can appear in the same year. The reason given — investing and financing are separate sections. — fits the chapter rule. The income statement reports period performance (revenue, costs, profit). The cash-flow statement splits operating, investing, and financing cash movements. Profit is an accrual measure; depreciation is a non-cash expense; collecting receivables is operating cash, not new revenue.
 
-The underlying topic is income statement, cash flow statement, and financial statement timing. When figures appear, the exam checks whether you can interpret them in accounting terms—what increased, what ratio is implied, and whether the label (current, non-current, equity, and so on) fits.
+The statement is true.', 'FALSE — The income statement reports period performance (revenue, costs, profit).
 
-Apply the case evidence: They are operating inflows. Check whether the direction of change (higher/lower, above/below the threshold) matches what the statement asserts.
+Absolute or misapplied wording conflicts with the rule for "Understanding the Three Cash Flow Sections". The income statement reports period performance (revenue, costs, profit). The cash-flow statement splits operating, investing, and financing cash movements. Profit is an accrual measure; depreciation is a non-cash expense; collecting receivables is operating cash, not new revenue. Rejected claim: "For this printing company, repayments of borrowed money count as operating cash outflows."
 
-The statement sounds plausible but fails on precision, so it is false.', 'TRUE — This statement is correct. Repaying a bank loan is classified as a financing cash outflow, not an operating cash outflow.
+The statement is false.'] WHERE case_id = 'CASE 6.2.079' AND tier = 'full';
+UPDATE public.economics_cases SET tactical_explanations = ARRAY['TRUE — Use the case figures for Cash flow from operating activities and compute the percentage change between Year 1 and Year 2 before comparing it with the claimed threshold.
 
-This is an accounting reasoning item on income statement, cash flow statement, and financial statement timing. Decide whether the sentence correctly describes how a transaction, balance-sheet line, or period result affects assets, liabilities, or equity.
+From the extract:
 
-From the figures or classification rule involved, debt repayments sit in financing activities. Accounting statements fail when a loss is treated as increasing equity, when a flow is placed on the balance sheet, or when a ratio inequality is reversed.
+$$
+\text{Cash flow from operating activities}_{\text{Y1}} = 297, \quad
+\text{Cash flow from operating activities}_{\text{Y2}} = 336
+$$
 
-The reasoning chain is complete, so mark the statement true.', 'TRUE — Evaluated against the textbook standard, this assertion is correct. Under the straight-line method, the depreciable cost is spread evenly over the expected useful life, giving the same depreciation charge each year.
+$$
+\frac{336 - 297}{297} = 13.1\%
+$$
 
-This is an accounting reasoning item on income statement, cash flow statement, and financial statement timing. Decide whether the sentence correctly describes how a transaction, balance-sheet line, or period result affects assets, liabilities, or equity.
+$$
+13.1\% > 8\%
+$$
 
-From the figures or classification rule involved, straight-line yields equal annual charges. Accounting statements fail when a loss is treated as increasing equity, when a flow is placed on the balance sheet, or when a ratio inequality is reversed.
+The actual growth is 13.1%, which is more than the claimed 8%.
 
-No qualifying word breaks the definition or scenario, so the answer is true.', 'FALSE — On the Fuhrmann definition used in the entrance exam, the sentence is false. Purchase of office equipment for cash is classified as an operating cash outflow.
+The statement is true.', 'FALSE — The income statement reports period performance (revenue, costs, profit).
 
-The task tests income statement, cash flow statement, and financial statement timing. Financial statements distinguish stocks (balance sheet at a date) from flows (income and cash over a period); many false statements swap those roles.
+Absolute or misapplied wording conflicts with the rule for "Cash Flow Statement Over Two Years 80". The income statement reports period performance (revenue, costs, profit). The cash-flow statement splits operating, investing, and financing cash movements. Profit is an accrual measure; depreciation is a non-cash expense; collecting receivables is operating cash, not new revenue. Rejected claim: "Customer collections of receivables are classified as financing cash inflows."
 
-Apply the case evidence: Long-term equipment purchases are investing activities. Check whether the direction of change (higher/lower, above/below the threshold) matches what the statement asserts.
+The statement is false.', 'TRUE — The income statement reports period performance (revenue, costs, profit).
 
-Because the decisive detail is wrong, mark the statement false.'] WHERE case_id = 'CASE 6.2.080' AND tier = 'full';
-UPDATE public.economics_cases SET tactical_explanations = ARRAY['TRUE — Evaluated against the textbook standard, this assertion is correct. When a construction firm purchases new heavy construction machinery for use in the business, the resulting cash outflow belongs in cash flow from investing activities.
+The wording matches the relevant rule for "Cash Flow Statement Over Two Years 80". The income statement reports period performance (revenue, costs, profit). The cash-flow statement splits operating, investing, and financing cash movements. Profit is an accrual measure; depreciation is a non-cash expense; collecting receivables is operating cash, not new revenue. Applied here: "Repaying a bank loan is classified as a financing cash outflow, not an operating cash outflow."
 
-This is an accounting reasoning item on income statement, cash flow statement, and financial statement timing. Decide whether the sentence correctly describes how a transaction, balance-sheet line, or period result affects assets, liabilities, or equity.
+The statement is true.', 'TRUE — The income statement reports period performance (revenue, costs, profit).
 
-From the figures or classification rule involved, buying long-term assets such as heavy construction machinery is an investing decision, so the outflow is classified as an investing cash flow. Accounting statements fail when a loss is treated as increasing equity, when a flow is placed on the balance sheet, or when a ratio inequality is reversed.
+The wording matches the relevant rule for "Cash Flow Statement Over Two Years 80". The income statement reports period performance (revenue, costs, profit). The cash-flow statement splits operating, investing, and financing cash movements. Profit is an accrual measure; depreciation is a non-cash expense; collecting receivables is operating cash, not new revenue. Applied here: "Under the straight-line method, the depreciable cost is spread evenly over the expected useful life, giving the same depreciation charge each year."
 
-The reasoning chain is complete, so mark the statement true.', 'TRUE — The claim is correct. When a hotel chain collects payment from a customer who owed money on an overdue invoice, the resulting cash inflow belongs in cash flow from operating activities.
+The statement is true.', 'FALSE — The income statement reports period performance (revenue, costs, profit).
 
-The task tests income statement, cash flow statement, and financial statement timing. Financial statements distinguish stocks (balance sheet at a date) from flows (income and cash over a period); many false statements swap those roles.
+Absolute or misapplied wording conflicts with the rule for "Cash Flow Statement Over Two Years 80". The income statement reports period performance (revenue, costs, profit). The cash-flow statement splits operating, investing, and financing cash movements. Profit is an accrual measure; depreciation is a non-cash expense; collecting receivables is operating cash, not new revenue. Rejected claim: "Purchase of office equipment for cash is classified as an operating cash outflow."
 
-Apply the case evidence: Collecting money owed by a customer relates to core trading activity, so it is classified as an operating cash flow. Check whether the direction of change (higher/lower, above/below the threshold) matches what the statement asserts.
+The statement is false.'] WHERE case_id = 'CASE 6.2.080' AND tier = 'full';
+UPDATE public.economics_cases SET tactical_explanations = ARRAY['TRUE — The income statement reports period performance (revenue, costs, profit).
 
-Every part of the claim aligns with the standard concept, so the statement stands.', 'TRUE — The claim is correct. When a software developer repays part of a long-term bank loan, that cash outflow belongs in cash flow from financing activities.
+The wording matches the relevant rule for "Operating Cash Flow and Core Trading". The income statement reports period performance (revenue, costs, profit). The cash-flow statement splits operating, investing, and financing cash movements. Profit is an accrual measure; depreciation is a non-cash expense; collecting receivables is operating cash, not new revenue. Applied here: "When a construction firm purchases new heavy construction machinery for use in the business, the resulting cash outflow belongs in cash flow from investing activities."
 
-The task tests income statement, cash flow statement, and financial statement timing. Financial statements distinguish stocks (balance sheet at a date) from flows (income and cash over a period); many false statements swap those roles.
+The statement is true.', 'TRUE — The income statement reports period performance (revenue, costs, profit).
 
-Apply the case evidence: Repaying borrowed funds relates to how the business is financed, so it is classified as a financing cash flow. Check whether the direction of change (higher/lower, above/below the threshold) matches what the statement asserts.
+The wording matches the relevant rule for "Operating Cash Flow and Core Trading". The income statement reports period performance (revenue, costs, profit). The cash-flow statement splits operating, investing, and financing cash movements. Profit is an accrual measure; depreciation is a non-cash expense; collecting receivables is operating cash, not new revenue. Applied here: "When a hotel chain collects payment from a customer who owed money on an overdue invoice, the resulting cash inflow belongs in cash flow from operating activities."
 
-No qualifying word breaks the definition or scenario, so the answer is true.', 'FALSE — Evaluated against the textbook standard, this assertion is false. When a construction firm earns a profit for the year, that profit is deducted from retained earnings and therefore reduces the equity shown on its balance sheet.
+The statement is true.', 'TRUE — The income statement reports period performance (revenue, costs, profit).
 
-This is an accounting reasoning item on income statement, cash flow statement, and financial statement timing. Decide whether the sentence correctly describes how a transaction, balance-sheet line, or period result affects assets, liabilities, or equity.
+The wording matches the relevant rule for "Operating Cash Flow and Core Trading". The income statement reports period performance (revenue, costs, profit). The cash-flow statement splits operating, investing, and financing cash movements. Profit is an accrual measure; depreciation is a non-cash expense; collecting receivables is operating cash, not new revenue. Applied here: "When a software developer repays part of a long-term bank loan, that cash outflow belongs in cash flow from financing activities."
 
-From the figures or classification rule involved, profit adds to retained earnings and increases equity; it does not reduce it. Accounting statements fail when a loss is treated as increasing equity, when a flow is placed on the balance sheet, or when a ratio inequality is reversed.
+The statement is true.', 'FALSE — The income statement reports period performance (revenue, costs, profit).
 
-The statement sounds plausible but fails on precision, so it is false.', 'FALSE — On the Fuhrmann definition used in the entrance exam, the sentence is false. When a hotel chain makes a loss for the year, that loss is added to retained earnings and therefore increases the equity shown on its balance sheet.
+Absolute or misapplied wording conflicts with the rule for "Operating Cash Flow and Core Trading". The income statement reports period performance (revenue, costs, profit). The cash-flow statement splits operating, investing, and financing cash movements. Profit is an accrual measure; depreciation is a non-cash expense; collecting receivables is operating cash, not new revenue. Rejected claim: "When a construction firm earns a profit for the year, that profit is deducted from retained earnings and therefore reduces the equity shown on its balance sheet."
 
-The task tests income statement, cash flow statement, and financial statement timing. Financial statements distinguish stocks (balance sheet at a date) from flows (income and cash over a period); many false statements swap those roles.
+The statement is false.', 'FALSE — The income statement reports period performance (revenue, costs, profit).
 
-Apply the case evidence: A loss lowers retained earnings and reduces equity; it does not increase it. Check whether the direction of change (higher/lower, above/below the threshold) matches what the statement asserts.
+Absolute or misapplied wording conflicts with the rule for "Operating Cash Flow and Core Trading". The income statement reports period performance (revenue, costs, profit). The cash-flow statement splits operating, investing, and financing cash movements. Profit is an accrual measure; depreciation is a non-cash expense; collecting receivables is operating cash, not new revenue. Rejected claim: "When a hotel chain makes a loss for the year, that loss is added to retained earnings and therefore increases the equity shown on its balance sheet."
 
-The statement sounds plausible but fails on precision, so it is false.'] WHERE case_id = 'CASE 6.2.081' AND tier = 'full';
-UPDATE public.economics_cases SET tactical_explanations = ARRAY['TRUE — On the Fuhrmann definition used in the entrance exam, the sentence is correct. After depreciation, the carrying value of an asset on the balance sheet is lower than its original cost.
+The statement is false.'] WHERE case_id = 'CASE 6.2.081' AND tier = 'full';
+UPDATE public.economics_cases SET tactical_explanations = ARRAY['TRUE — The income statement reports period performance (revenue, costs, profit).
 
-The task tests income statement, cash flow statement, and financial statement timing. Financial statements distinguish stocks (balance sheet at a date) from flows (income and cash over a period); many false statements swap those roles.
+The wording matches the relevant rule for "Profit and Loss Over Two Years 82". The income statement reports period performance (revenue, costs, profit). The cash-flow statement splits operating, investing, and financing cash movements. Profit is an accrual measure; depreciation is a non-cash expense; collecting receivables is operating cash, not new revenue. Applied here: "After depreciation, the carrying value of an asset on the balance sheet is lower than its original cost."
 
-Apply the case evidence: Carrying value equals cost less accumulated depreciation. Check whether the direction of change (higher/lower, above/below the threshold) matches what the statement asserts.
+The statement is true.', 'TRUE — Interest coverage in Year 1 is operating result divided by finance costs.
 
-Every part of the claim aligns with the standard concept, so the statement stands.', 'TRUE — On the Fuhrmann definition used in the entrance exam, the sentence is correct. The operating result covers finance costs more than 7.88 times over in Year 1.
+Name the identity in words: interest coverage = operating result ÷ finance costs.
 
-The underlying topic is income statement, cash flow statement, and financial statement timing. When figures appear, the exam checks whether you can interpret them in accounting terms—what increased, what ratio is implied, and whether the label (current, non-current, equity, and so on) fits.
+From the extract, operating result = 234 and finance costs = 21. Plug the figures step by step:
 
-Apply the case evidence: Interest coverage in Year 1 ≈ 11.1 times. Check whether the direction of change (higher/lower, above/below the threshold) matches what the statement asserts.
+$$
+Coverage = \frac{\text{operating result}}{\text{finance costs}}
+$$
 
-Every part of the claim aligns with the standard concept, so the statement stands.', 'TRUE — This statement is correct. The operating margin, operating result taken as a share of revenue, exceeds 16.1% in Year 2.
+$$
+Coverage = \frac{234}{21}
+$$
 
-This item belongs to the accounting block on income statement, cash flow statement, and financial statement timing. Ratio and classification questions ask you to connect a figure or comparison in the case with the correct statement category, not merely to recognise a number.
+$$
+Coverage = 11.1429
+$$
 
-From the figures or classification rule involved, operating margin in year 2 ≈ 26.0%. Accounting statements fail when a loss is treated as increasing equity, when a flow is placed on the balance sheet, or when a ratio inequality is reversed.
+Threshold: more than 7.88. Actual 11.14.
 
-Every part of the claim aligns with the standard concept, so the statement stands.', 'FALSE — This statement is false. The gross profit margin, gross profit taken as a share of revenue, is more than 5.9 percentage points higher in Year 2 than in Year 1.
+Reading the arithmetic against the claim: coverage 11.14 exceeds 7.88 so the statement holds.
 
-This item belongs to the accounting block on income statement, cash flow statement, and financial statement timing. Ratio and classification questions ask you to connect a figure or comparison in the case with the correct statement category, not merely to recognise a number.
+The statement is true.', 'TRUE — Operating margin in Year 2 is operating result divided by revenue.
 
-From the figures or classification rule involved, gross margins were 34.3% then 34.5%. Accounting statements fail when a loss is treated as increasing equity, when a flow is placed on the balance sheet, or when a ratio inequality is reversed.
+Name the identity in words: operating margin = operating result ÷ revenue.
 
-Once the overclaim or mislabel is exposed, the only consistent answer is false.', 'TRUE — On the Fuhrmann definition used in the entrance exam, the sentence is correct. The effective tax rate, income taxes taken as a share of profit before tax, is below 30.7% in Year 1.
+From the extract, operating result = 261 and revenue = 1,002. Plug the figures step by step:
 
-The underlying topic is income statement, cash flow statement, and financial statement timing. When figures appear, the exam checks whether you can interpret them in accounting terms—what increased, what ratio is implied, and whether the label (current, non-current, equity, and so on) fits.
+$$
+OM = \frac{\text{operating result}}{\text{revenue}}
+$$
 
-Apply the case evidence: Effective tax rate in Year 1 ≈ 21.3%. Check whether the direction of change (higher/lower, above/below the threshold) matches what the statement asserts.
+$$
+OM = \frac{261}{1,002}
+$$
 
-No qualifying word breaks the definition or scenario, so the answer is true.'] WHERE case_id = 'CASE 6.2.082' AND tier = 'full';
-UPDATE public.economics_cases SET tactical_explanations = ARRAY['TRUE — Evaluated against the textbook standard, this assertion is correct. Unlike wages or energy costs, depreciation does not cause an actual cash payment in the period when it is charged.
+$$
+OM = 26.0\%
+$$
 
-This is an accounting reasoning item on income statement, cash flow statement, and financial statement timing. Decide whether the sentence correctly describes how a transaction, balance-sheet line, or period result affects assets, liabilities, or equity.
+Threshold: exceeds 16.1% in Year 2. Actual 26.0%.
 
-From the figures or classification rule involved, depreciation is a non-cash expense. Accounting statements fail when a loss is treated as increasing equity, when a flow is placed on the balance sheet, or when a ratio inequality is reversed.
+Reading the arithmetic against the claim: operating margin 26.0% exceeds 16.1% so the statement holds.
 
-Every part of the claim aligns with the standard concept, so the statement stands.', 'TRUE — The claim is correct. Combined annual depreciation for the three assets is €30,167.
+The statement is true.', 'FALSE — Gross margin is gross profit divided by revenue; the claim compares the Year-2 margin with Year 1 in percentage points.
 
-The underlying topic is income statement, cash flow statement, and financial statement timing. When figures appear, the exam checks whether you can interpret them in accounting terms—what increased, what ratio is implied, and whether the label (current, non-current, equity, and so on) fits.
+Name the identity in words: gross margin = gross profit ÷ revenue; Δ = GPM₂ − GPM₁.
 
-Apply the case evidence: Sum of annual charges ≈ €30,167. Check whether the direction of change (higher/lower, above/below the threshold) matches what the statement asserts.
+$$
+GPM_{1} = \frac{301}{878} = 34.3\%
+$$
 
-No qualifying word breaks the definition or scenario, so the answer is true.', 'FALSE — This statement is false. After three years, more than 34.5% of the machinery''s purchase price has been depreciated.
+$$
+GPM_{2} = \frac{346}{1,002} = 34.5\%
+$$
 
-This item belongs to the accounting block on income statement, cash flow statement, and financial statement timing. Ratio and classification questions ask you to connect a figure or comparison in the case with the correct statement category, not merely to recognise a number.
+$$
+\Delta = 0.2\text{ percentage points}
+$$
 
-From the figures or classification rule involved, about 25.0% of the machinery''s cost is depreciated after three years. Accounting statements fail when a loss is treated as increasing equity, when a flow is placed on the balance sheet, or when a ratio inequality is reversed.
+Threshold: more than 5.9 pp higher in Year 2. Actual Δ = 0.2 pp.
 
-Once the overclaim or mislabel is exposed, the only consistent answer is false.', 'FALSE — On the Fuhrmann definition used in the entrance exam, the sentence is false. The delivery truck''s annual depreciation charge is more than 78.8% higher than the computer equipment''s annual depreciation charge.
+Reading the arithmetic against the claim: margin rose by 0.2 pp versus more than 5.9 pp so the statement does not hold.
 
-The underlying topic is income statement, cash flow statement, and financial statement timing. When figures appear, the exam checks whether you can interpret them in accounting terms—what increased, what ratio is implied, and whether the label (current, non-current, equity, and so on) fits.
+The statement is false.', 'TRUE — Effective tax rate in Year 1 is income taxes divided by profit before tax.
 
-Apply the case evidence: Delivery truck ≈ €8,167 a year versus computer equipment ≈ €7,667 a year. Check whether the direction of change (higher/lower, above/below the threshold) matches what the statement asserts.
+Name the identity in words: effective tax rate = income taxes ÷ profit before tax.
 
-Because the decisive detail is wrong, mark the statement false.', 'FALSE — Evaluated against the textbook standard, this assertion is false. The machinery accounts for more than 59.5% of the combined annual depreciation charge.
+From the extract, income taxes = 46 and profit before tax = 216. Plug the figures step by step:
 
-This item belongs to the accounting block on income statement, cash flow statement, and financial statement timing. Ratio and classification questions ask you to connect a figure or comparison in the case with the correct statement category, not merely to recognise a number.
+$$
+ETR = \frac{\text{income taxes}}{\text{profit before tax}}
+$$
 
-From the figures or classification rule involved, machinery''s share of the combined charge ≈ 47.5%. Accounting statements fail when a loss is treated as increasing equity, when a flow is placed on the balance sheet, or when a ratio inequality is reversed.
+$$
+ETR = \frac{46}{216}
+$$
 
-The statement sounds plausible but fails on precision, so it is false.'] WHERE case_id = 'CASE 6.2.083' AND tier = 'full';
-UPDATE public.economics_cases SET tactical_explanations = ARRAY['TRUE — On the Fuhrmann definition used in the entrance exam, the sentence is correct. Cash flow from operating activities grew by more than 10.6% from Year 1 to Year 2.
+$$
+ETR = 21.3\%
+$$
 
-The underlying topic is income statement, cash flow statement, and financial statement timing. When figures appear, the exam checks whether you can interpret them in accounting terms—what increased, what ratio is implied, and whether the label (current, non-current, equity, and so on) fits.
+Threshold: below 30.7% in Year 1. Actual 21.3%.
 
-Apply the case evidence: Operating cash flow rose by about 21.0%. Check whether the direction of change (higher/lower, above/below the threshold) matches what the statement asserts.
+Reading the arithmetic against the claim: ETR 21.3% is below 30.7% so the statement holds.
 
-The reasoning chain is complete, so mark the statement true.', 'TRUE — The claim is correct. Profit for the year is reported in the income statement and increases retained earnings on the balance sheet, but it does not appear as a separate line item in the cash flow statement, which instead records actual cash inflows and outflows.
+The statement is true.'] WHERE case_id = 'CASE 6.2.082' AND tier = 'full';
+UPDATE public.economics_cases SET tactical_explanations = ARRAY['TRUE — Depreciation is a non-cash allocation of a past capital outlay.
 
-The task tests income statement, cash flow statement, and financial statement timing. Financial statements distinguish stocks (balance sheet at a date) from flows (income and cash over a period); many false statements swap those roles.
+Cash left the business when the asset was acquired. The annual depreciation charge merely allocates that past outlay across useful life; recording the charge does not require a fresh cash payment to an outside party in the year of the expense.
 
-Apply the case evidence: The three statements serve different purposes and link through retained earnings and cash, not by repeating profit as a cash-flow line. Check whether the direction of change (higher/lower, above/below the threshold) matches what the statement asserts.
+Applied to this stem: "Unlike wages or energy costs, depreciation does not cause an actual cash payment in the period when it is charged."
 
-The reasoning chain is complete, so mark the statement true.', 'TRUE — The claim is correct. Repaying a bank loan is classified as a financing cash outflow, not an operating cash outflow.
+The statement is true.', 'TRUE — Straight-line annual charge for each asset is (cost − residual) ÷ useful life; sum the three charges.
 
-The task tests income statement, cash flow statement, and financial statement timing. Financial statements distinguish stocks (balance sheet at a date) from flows (income and cash over a period); many false statements swap those roles.
+Name the identity in words: annual charge = (cost − residual) ÷ life; combined = sum of charges.
 
-Apply the case evidence: Debt repayments sit in financing activities. Check whether the direction of change (higher/lower, above/below the threshold) matches what the statement asserts.
+$$
+\text{Asset A – Machinery}: \frac{172,000 - 0}{12} = 14,333
+$$
 
-No qualifying word breaks the definition or scenario, so the answer is true.', 'TRUE — Evaluated against the textbook standard, this assertion is correct. Unlike wages or energy costs, depreciation does not cause an actual cash payment in the period when it is charged.
+$$
+\text{Asset B – Delivery truck}: \frac{57,000 - 8,000}{6} = 8,167
+$$
 
-This is an accounting reasoning item on income statement, cash flow statement, and financial statement timing. Decide whether the sentence correctly describes how a transaction, balance-sheet line, or period result affects assets, liabilities, or equity.
+$$
+\text{Asset C – Computer equipment}: \frac{23,000 - 0}{3} = 7,667
+$$
 
-From the figures or classification rule involved, depreciation is a non-cash expense. Accounting statements fail when a loss is treated as increasing equity, when a flow is placed on the balance sheet, or when a ratio inequality is reversed.
+$$
+\text{Combined} = 30,167
+$$
 
-The reasoning chain is complete, so mark the statement true.', 'TRUE — On the Fuhrmann definition used in the entrance exam, the sentence is correct. The balance sheet shows assets, liabilities and equity at a point in time, while the income statement summarises revenues, costs and expenses over a period.
+Claimed €30,167. Actual ≈ €30,167.
 
-The underlying topic is income statement, cash flow statement, and financial statement timing. When figures appear, the exam checks whether you can interpret them in accounting terms—what increased, what ratio is implied, and whether the label (current, non-current, equity, and so on) fits.
+Reading the arithmetic against the claim: combined charge ≈ €30,167 versus claimed €30,167 so the statement holds.
 
-Apply the case evidence: Snapshot versus period statement. Check whether the direction of change (higher/lower, above/below the threshold) matches what the statement asserts.
+The statement is true.', 'FALSE — Depreciated share of machinery cost after three years is three charges over purchase price.
 
-Every part of the claim aligns with the standard concept, so the statement stands.'] WHERE case_id = 'CASE 6.2.084' AND tier = 'full';
-UPDATE public.economics_cases SET tactical_explanations = ARRAY['TRUE — Evaluated against the textbook standard, this assertion is correct. The balance sheet shows assets, liabilities and equity at a point in time, while the income statement summarises revenues, costs and expenses over a period.
+Name the identity in words: depreciated share = (3 × annual charge) ÷ cost.
 
-This item belongs to the accounting block on income statement, cash flow statement, and financial statement timing. Ratio and classification questions ask you to connect a figure or comparison in the case with the correct statement category, not merely to recognise a number.
+$$
+\text{Annual} = 14,333, \quad \text{Cost} = 172,000
+$$
 
-From the figures or classification rule involved, snapshot versus period statement. Accounting statements fail when a loss is treated as increasing equity, when a flow is placed on the balance sheet, or when a ratio inequality is reversed.
+$$
+\frac{3 \times 14,333}{172,000} = 25.0\%
+$$
 
-Every part of the claim aligns with the standard concept, so the statement stands.', 'TRUE — The claim is correct. The current ratio exceeds 1.5.
+Threshold: more than 34.5%. Actual 25.0%.
 
-The underlying topic is income statement, cash flow statement, and financial statement timing. When figures appear, the exam checks whether you can interpret them in accounting terms—what increased, what ratio is implied, and whether the label (current, non-current, equity, and so on) fits.
+Reading the arithmetic against the claim: depreciated share 25.0% does not exceed 34.5% so the statement does not hold.
 
-Apply the case evidence: Current ratio ≈ 1.62. Check whether the direction of change (higher/lower, above/below the threshold) matches what the statement asserts.
+The statement is false.', 'FALSE — Compare the truck''s straight-line annual charge with the computer''s.
 
-No qualifying word breaks the definition or scenario, so the answer is true.', 'TRUE — On the Fuhrmann definition used in the entrance exam, the sentence is correct. Working capital of €155 thousand is positive on this balance sheet.
+$$
+\text{Truck annual} = 8,167, \quad \text{Computer annual} = 7,667
+$$
 
-The underlying topic is income statement, cash flow statement, and financial statement timing. When figures appear, the exam checks whether you can interpret them in accounting terms—what increased, what ratio is implied, and whether the label (current, non-current, equity, and so on) fits.
+$$
+\frac{8,167 - 7,667}{7,667} = 6.5\%
+$$
 
-Apply the case evidence: Working capital = 155. Check whether the direction of change (higher/lower, above/below the threshold) matches what the statement asserts.
+Threshold: more than 78.8% higher. Actual premium 6.5%.
 
-The reasoning chain is complete, so mark the statement true.', 'TRUE — Evaluated against the textbook standard, this assertion is correct. The debt ratio exceeds 57.3%.
+Reading the arithmetic against the claim: premium 6.5% versus more than 78.8% so the statement does not hold.
 
-This item belongs to the accounting block on income statement, cash flow statement, and financial statement timing. Ratio and classification questions ask you to connect a figure or comparison in the case with the correct statement category, not merely to recognise a number.
+The statement is false.', 'FALSE — Machinery''s share of combined annual depreciation is its charge over the total of all charges.
 
-From the figures or classification rule involved, debt ratio ≈ 57.4%. Accounting statements fail when a loss is treated as increasing equity, when a flow is placed on the balance sheet, or when a ratio inequality is reversed.
+Name the identity in words: machinery share = machinery annual charge ÷ combined annual charges.
 
-No qualifying word breaks the definition or scenario, so the answer is true.', 'TRUE — This statement is correct. Inventory make up more than 51.3% of current assets.
+From the extract, machinery charge = 14333.3333 and combined charges = 30166.6667. Plug the figures step by step:
 
-This item belongs to the accounting block on income statement, cash flow statement, and financial statement timing. Ratio and classification questions ask you to connect a figure or comparison in the case with the correct statement category, not merely to recognise a number.
+$$
+Share = \frac{\text{machinery charge}}{\text{combined charges}}
+$$
 
-From the figures or classification rule involved, inventory are about 57.9% of current assets. Accounting statements fail when a loss is treated as increasing equity, when a flow is placed on the balance sheet, or when a ratio inequality is reversed.
+$$
+Share = \frac{14333.3333}{30166.6667}
+$$
 
-The reasoning chain is complete, so mark the statement true.'] WHERE case_id = 'CASE 6.2.085' AND tier = 'full';
-UPDATE public.economics_cases SET tactical_explanations = ARRAY['TRUE — On the Fuhrmann definition used in the entrance exam, the sentence is correct. Land is not subject to depreciation because it does not wear out through use the way buildings and machinery do.
+$$
+Share = 47.5\%
+$$
 
-The task tests income statement, cash flow statement, and financial statement timing. Financial statements distinguish stocks (balance sheet at a date) from flows (income and cash over a period); many false statements swap those roles.
+Threshold: more than 59.5%. Actual 47.5%.
 
-Apply the case evidence: Land is normally excluded from depreciation. Check whether the direction of change (higher/lower, above/below the threshold) matches what the statement asserts.
+Reading the arithmetic against the claim: share 47.5% does not exceed 59.5% so the statement does not hold.
 
-Every part of the claim aligns with the standard concept, so the statement stands.', 'TRUE — This statement is correct. A negative cash flow from investing activities does not necessarily indicate a problem; it often means the business invested in long-term assets.
+The statement is false.'] WHERE case_id = 'CASE 6.2.083' AND tier = 'full';
+UPDATE public.economics_cases SET tactical_explanations = ARRAY['TRUE — Use the case figures for Cash flow from operating activities and compute the percentage change between Year 1 and Year 2 before comparing it with the claimed threshold.
 
-This is an accounting reasoning item on income statement, cash flow statement, and financial statement timing. Decide whether the sentence correctly describes how a transaction, balance-sheet line, or period result affects assets, liabilities, or equity.
+From the extract:
 
-From the figures or classification rule involved, investing outflows frequently reflect growth spending. Accounting statements fail when a loss is treated as increasing equity, when a flow is placed on the balance sheet, or when a ratio inequality is reversed.
+$$
+\text{Cash flow from operating activities}_{\text{Y1}} = 314, \quad
+\text{Cash flow from operating activities}_{\text{Y2}} = 380
+$$
 
-Every part of the claim aligns with the standard concept, so the statement stands.', 'TRUE — This statement is correct. Depreciation recognises that the value of fixed assets decreases as they are used up over time, so without it asset values in the accounts would be overstated.
+$$
+\frac{380 - 314}{314} = 21.0\%
+$$
 
-This is an accounting reasoning item on income statement, cash flow statement, and financial statement timing. Decide whether the sentence correctly describes how a transaction, balance-sheet line, or period result affects assets, liabilities, or equity.
+$$
+21.0\% > 10.6\%
+$$
 
-From the figures or classification rule involved, depreciation spreads the cost of use over time. Accounting statements fail when a loss is treated as increasing equity, when a flow is placed on the balance sheet, or when a ratio inequality is reversed.
+The actual growth is 21.0%, which is more than the claimed 10.6%.
 
-The reasoning chain is complete, so mark the statement true.', 'TRUE — This statement is correct. After depreciation, the carrying value of an asset on the balance sheet is lower than its original cost.
+The statement is true.', 'TRUE — The income statement reports period performance (revenue, costs, profit).
 
-This is an accounting reasoning item on income statement, cash flow statement, and financial statement timing. Decide whether the sentence correctly describes how a transaction, balance-sheet line, or period result affects assets, liabilities, or equity.
+The wording matches the relevant rule for "Cash Flow Statement Over Two Years 84". The income statement reports period performance (revenue, costs, profit). The cash-flow statement splits operating, investing, and financing cash movements. Profit is an accrual measure; depreciation is a non-cash expense; collecting receivables is operating cash, not new revenue. Applied here: "Profit for the year is reported in the income statement and increases retained earnings on the balance sheet, but it does not appear as a separate line item in the cash flow statement, which instea…"
 
-From the figures or classification rule involved, carrying value equals cost less accumulated depreciation. Accounting statements fail when a loss is treated as increasing equity, when a flow is placed on the balance sheet, or when a ratio inequality is reversed.
+The statement is true.', 'TRUE — The income statement reports period performance (revenue, costs, profit).
 
-Every part of the claim aligns with the standard concept, so the statement stands.', 'TRUE — On the Fuhrmann definition used in the entrance exam, the sentence is correct. Collecting payment on a trade receivable is cash from operating activities because it comes from the core trading cycle.
+The wording matches the relevant rule for "Cash Flow Statement Over Two Years 84". The income statement reports period performance (revenue, costs, profit). The cash-flow statement splits operating, investing, and financing cash movements. Profit is an accrual measure; depreciation is a non-cash expense; collecting receivables is operating cash, not new revenue. Applied here: "Repaying a bank loan is classified as a financing cash outflow, not an operating cash outflow."
 
-The task tests income statement, cash flow statement, and financial statement timing. Financial statements distinguish stocks (balance sheet at a date) from flows (income and cash over a period); many false statements swap those roles.
+The statement is true.', 'TRUE — The income statement reports period performance (revenue, costs, profit).
 
-Apply the case evidence: Customer collections belong in operating cash flow. Check whether the direction of change (higher/lower, above/below the threshold) matches what the statement asserts.
+The wording matches the relevant rule for "Cash Flow Statement Over Two Years 84". The income statement reports period performance (revenue, costs, profit). The cash-flow statement splits operating, investing, and financing cash movements. Profit is an accrual measure; depreciation is a non-cash expense; collecting receivables is operating cash, not new revenue. Applied here: "Unlike wages or energy costs, depreciation does not cause an actual cash payment in the period when it is charged."
 
-The reasoning chain is complete, so mark the statement true.'] WHERE case_id = 'CASE 6.2.086' AND tier = 'full';
-UPDATE public.economics_cases SET tactical_explanations = ARRAY['FALSE — On the Fuhrmann definition used in the entrance exam, the sentence is false. When a software developer earns a profit for the year, that profit is deducted from retained earnings and therefore reduces the equity shown on its balance sheet.
+The statement is true.', 'TRUE — The income statement reports period performance (revenue, costs, profit).
 
-The task tests income statement, cash flow statement, and financial statement timing. Financial statements distinguish stocks (balance sheet at a date) from flows (income and cash over a period); many false statements swap those roles.
+The wording matches the relevant rule for "Cash Flow Statement Over Two Years 84". The income statement reports period performance (revenue, costs, profit). The cash-flow statement splits operating, investing, and financing cash movements. Profit is an accrual measure; depreciation is a non-cash expense; collecting receivables is operating cash, not new revenue. Applied here: "The balance sheet shows assets, liabilities and equity at a point in time, while the income statement summarises revenues, costs and expenses over a period."
 
-Apply the case evidence: Profit adds to retained earnings and increases equity; it does not reduce it. Check whether the direction of change (higher/lower, above/below the threshold) matches what the statement asserts.
+The statement is true.'] WHERE case_id = 'CASE 6.2.084' AND tier = 'full';
+UPDATE public.economics_cases SET tactical_explanations = ARRAY['TRUE — The income statement reports period performance (revenue, costs, profit).
 
-Once the overclaim or mislabel is exposed, the only consistent answer is false.', 'TRUE — The claim is correct. When a garage purchases new diagnostic equipment for use in the business, the resulting cash outflow belongs in cash flow from investing activities.
+The wording matches the relevant rule for "Asset Composition Chart 85". The income statement reports period performance (revenue, costs, profit). The cash-flow statement splits operating, investing, and financing cash movements. Profit is an accrual measure; depreciation is a non-cash expense; collecting receivables is operating cash, not new revenue. Applied here: "The balance sheet shows assets, liabilities and equity at a point in time, while the income statement summarises revenues, costs and expenses over a period."
 
-The task tests income statement, cash flow statement, and financial statement timing. Financial statements distinguish stocks (balance sheet at a date) from flows (income and cash over a period); many false statements swap those roles.
+The statement is true.', 'TRUE — The current ratio is the standard liquidity cover of current assets over current liabilities.
 
-Apply the case evidence: Buying long-term assets such as diagnostic equipment is an investing decision, so the outflow is classified as an investing cash flow. Check whether the direction of change (higher/lower, above/below the threshold) matches what the statement asserts.
+Name the identity in words: current ratio = current assets ÷ current liabilities.
 
-Every part of the claim aligns with the standard concept, so the statement stands.', 'FALSE — Evaluated against the textbook standard, this assertion is false. When a garage makes a loss for the year, that loss is added to retained earnings and therefore increases the equity shown on its balance sheet.
+Build current assets and current liabilities from the extract:
 
-This is an accounting reasoning item on income statement, cash flow statement, and financial statement timing. Decide whether the sentence correctly describes how a transaction, balance-sheet line, or period result affects assets, liabilities, or equity.
+$$
+CA = 234 + 128 + 42 = 404
+$$
 
-From the figures or classification rule involved, a loss lowers retained earnings and reduces equity; it does not increase it. Accounting statements fail when a loss is treated as increasing equity, when a flow is placed on the balance sheet, or when a ratio inequality is reversed.
+$$
+CL = 215 + 34 = 249
+$$
 
-The statement sounds plausible but fails on precision, so it is false.', 'FALSE — On the Fuhrmann definition used in the entrance exam, the sentence is false. Land owned by a bakery is depreciated in exactly the same way as its commercial ovens, because all fixed assets wear out identically through use.
+$$
+\text{Current ratio} = \frac{404}{249} = 1.6225
+$$
 
-The task tests income statement, cash flow statement, and financial statement timing. Financial statements distinguish stocks (balance sheet at a date) from flows (income and cash over a period); many false statements swap those roles.
+Claimed: exceeds 1.5. Actual 1.62.
 
-Apply the case evidence: Land does not wear out through use the way equipment does, so it is normally excluded from depreciation. Check whether the direction of change (higher/lower, above/below the threshold) matches what the statement asserts.
+Reading the arithmetic against the claim: actual current ratio 1.62 versus ''exceeds 1.5'' so the statement holds.
 
-Watch the absolute wording "all": exam statements often sound plausible until a single scope word turns an otherwise familiar idea into an overclaim.
+The statement is true.', 'TRUE — Working capital is the euro surplus (or deficit) of current assets over current liabilities on this balance sheet.
 
-The statement sounds plausible but fails on precision, so it is false.', 'FALSE — The claim is false. The depreciation that a courier firm charges on its delivery vans each year is a cash expense that directly reduces its bank balance at the time it is recorded.
+Name the identity in words: working capital = current assets − current liabilities.
 
-The task tests income statement, cash flow statement, and financial statement timing. Financial statements distinguish stocks (balance sheet at a date) from flows (income and cash over a period); many false statements swap those roles.
+From the extract, current assets total 404 and current liabilities total 249:
 
-Apply the case evidence: Depreciation does not itself cause a cash payment; the related cash was already paid when the delivery vans was purchased. Check whether the direction of change (higher/lower, above/below the threshold) matches what the statement asserts.
+$$
+WC = CA - CL
+$$
 
-The statement sounds plausible but fails on precision, so it is false.'] WHERE case_id = 'CASE 6.2.087' AND tier = 'full';
-UPDATE public.economics_cases SET tactical_explanations = ARRAY['TRUE — This statement is correct. For this logistics company, dividends paid to shareholders sit in financing activities, not operating activities.
+$$
+CA = 404, \quad CL = 249
+$$
 
-This is an accounting reasoning item on income statement, cash flow statement, and financial statement timing. Decide whether the sentence correctly describes how a transaction, balance-sheet line, or period result affects assets, liabilities, or equity.
+$$
+WC = 404 - 249 = 155
+$$
 
-From the figures or classification rule involved, dividend payments are a financing activity. Accounting statements fail when a loss is treated as increasing equity, when a flow is placed on the balance sheet, or when a ratio inequality is reversed.
+The statement cites working capital of €155 thousand and that it is positive. Calculated WC is 155, which is positive.
 
-The reasoning chain is complete, so mark the statement true.', 'FALSE — The claim is false. For this logistics company, the dividends paid line of (25200) euros belongs in investing activities.
+Reading the arithmetic against the claim: WC = 155 is positive as claimed so the statement holds.
 
-The task tests income statement, cash flow statement, and financial statement timing. Financial statements distinguish stocks (balance sheet at a date) from flows (income and cash over a period); many false statements swap those roles.
+The statement is true.', 'TRUE — The debt ratio places debt against total assets so the financing structure can be judged on one balance sheet.
 
-Apply the case evidence: Dividends are financing outflows, not investing. Check whether the direction of change (higher/lower, above/below the threshold) matches what the statement asserts.
+Name the identity in words: debt ratio = debt ÷ total assets.
 
-The statement sounds plausible but fails on precision, so it is false.', 'TRUE — Evaluated against the textbook standard, this assertion is correct. For this logistics company, an investing outflow and a dividend payment can appear in the same year because investing and financing are separate sections.
+From the extract, debt = 591 and total assets = 1,030. Plug the figures step by step:
 
-This is an accounting reasoning item on income statement, cash flow statement, and financial statement timing. Decide whether the sentence correctly describes how a transaction, balance-sheet line, or period result affects assets, liabilities, or equity.
+$$
+DR = \frac{\text{debt}}{\text{total assets}}
+$$
 
-From the figures or classification rule involved, investing and financing are recorded separately. Accounting statements fail when a loss is treated as increasing equity, when a flow is placed on the balance sheet, or when a ratio inequality is reversed.
+$$
+DR = \frac{591}{1,030}
+$$
 
-The reasoning chain is complete, so mark the statement true.', 'TRUE — On the Fuhrmann definition used in the entrance exam, the sentence is correct. For this logistics company, collecting payment on a trade receivable is an operating cash inflow from the core trading cycle.
+$$
+DR = 57.4\%
+$$
 
-The task tests income statement, cash flow statement, and financial statement timing. Financial statements distinguish stocks (balance sheet at a date) from flows (income and cash over a period); many false statements swap those roles.
+Claimed: exceeds 57.3%. Actual 57.4%.
 
-Apply the case evidence: Customer collections belong in operating cash flow. Check whether the direction of change (higher/lower, above/below the threshold) matches what the statement asserts.
+Reading the arithmetic against the claim: actual debt ratio 57.4% matches ''exceeds 57.3%'' so the statement holds.
 
-Every part of the claim aligns with the standard concept, so the statement stands.', 'TRUE — The claim is correct. For this logistics company, buying new forklift trucks is classified as an investing cash outflow.
+The statement is true.', 'TRUE — This is a composition claim: express Inventory as a percentage of current assets.
 
-The task tests income statement, cash flow statement, and financial statement timing. Financial statements distinguish stocks (balance sheet at a date) from flows (income and cash over a period); many false statements swap those roles.
+Name the identity in words: Inventory share of current assets = Inventory ÷ current assets.
 
-Apply the case evidence: Long-term asset purchases are investing outflows. Check whether the direction of change (higher/lower, above/below the threshold) matches what the statement asserts.
+From the extract, Inventory = 234 and current assets = 404. Plug the figures step by step:
 
-The reasoning chain is complete, so mark the statement true.'] WHERE case_id = 'CASE 6.2.088' AND tier = 'full';
-UPDATE public.economics_cases SET tactical_explanations = ARRAY['TRUE — Evaluated against the textbook standard, this assertion is correct. After depreciation, the carrying value of an asset on the balance sheet is lower than its original cost.
+$$
+Share = \frac{\text{Inventory}}{\text{current assets}}
+$$
 
-This is an accounting reasoning item on income statement, cash flow statement, and financial statement timing. Decide whether the sentence correctly describes how a transaction, balance-sheet line, or period result affects assets, liabilities, or equity.
+$$
+Share = \frac{234}{404}
+$$
 
-From the figures or classification rule involved, carrying value equals cost less accumulated depreciation. Accounting statements fail when a loss is treated as increasing equity, when a flow is placed on the balance sheet, or when a ratio inequality is reversed.
+$$
+Share = 57.9\%
+$$
 
-Every part of the claim aligns with the standard concept, so the statement stands.', 'FALSE — The claim is false. The operating result grew by more than 57% between Year 1 and Year 2.
+Threshold: more than 51.3%. Actual 57.9%.
 
-The underlying topic is income statement, cash flow statement, and financial statement timing. When figures appear, the exam checks whether you can interpret them in accounting terms—what increased, what ratio is implied, and whether the label (current, non-current, equity, and so on) fits.
+Reading the arithmetic against the claim: actual share 57.9% matches ''more than 51.3%'' so the statement holds.
 
-Apply the case evidence: The operating result changed by about 10.2% between the two years. Check whether the direction of change (higher/lower, above/below the threshold) matches what the statement asserts.
+The statement is true.'] WHERE case_id = 'CASE 6.2.085' AND tier = 'full';
+UPDATE public.economics_cases SET tactical_explanations = ARRAY['TRUE — The income statement reports period performance (revenue, costs, profit).
 
-The statement sounds plausible but fails on precision, so it is false.', 'FALSE — Evaluated against the textbook standard, this assertion is false. Profit for the year grew by more than 17.2% between Year 1 and Year 2.
+The claim states: Land is not subject to depreciation. The reason given — it does not wear out through use the way buildings and machinery do. — fits the chapter rule. The income statement reports period performance (revenue, costs, profit). The cash-flow statement splits operating, investing, and financing cash movements. Profit is an accrual measure; depreciation is a non-cash expense; collecting receivables is operating cash, not new revenue.
 
-This item belongs to the accounting block on income statement, cash flow statement, and financial statement timing. Ratio and classification questions ask you to connect a figure or comparison in the case with the correct statement category, not merely to recognise a number.
+The statement is true.', 'TRUE — The income statement reports period performance (revenue, costs, profit).
 
-From the figures or classification rule involved, profit for the year changed by about 8.7% between the two years. Accounting statements fail when a loss is treated as increasing equity, when a flow is placed on the balance sheet, or when a ratio inequality is reversed.
+The wording matches the relevant rule for "Cash Flow Statement Over Two Years 86". The income statement reports period performance (revenue, costs, profit). The cash-flow statement splits operating, investing, and financing cash movements. Profit is an accrual measure; depreciation is a non-cash expense; collecting receivables is operating cash, not new revenue. Applied here: "A negative cash flow from investing activities does not necessarily indicate a problem; it often means the business invested in long-term assets."
 
-Once the overclaim or mislabel is exposed, the only consistent answer is false.', 'TRUE — This statement is correct. Revenue grew by more than 8.6% between Year 1 and Year 2.
+The statement is true.', 'TRUE — The income statement reports period performance (revenue, costs, profit).
 
-This item belongs to the accounting block on income statement, cash flow statement, and financial statement timing. Ratio and classification questions ask you to connect a figure or comparison in the case with the correct statement category, not merely to recognise a number.
+The wording matches the relevant rule for "Cash Flow Statement Over Two Years 86". The income statement reports period performance (revenue, costs, profit). The cash-flow statement splits operating, investing, and financing cash movements. Profit is an accrual measure; depreciation is a non-cash expense; collecting receivables is operating cash, not new revenue. Applied here: "Depreciation recognises that the value of fixed assets decreases as they are used up over time, so without it asset values in the accounts would be overstated."
 
-From the figures or classification rule involved, revenue changed by about 13.4% between the two years. Accounting statements fail when a loss is treated as increasing equity, when a flow is placed on the balance sheet, or when a ratio inequality is reversed.
+The statement is true.', 'TRUE — The income statement reports period performance (revenue, costs, profit).
 
-No qualifying word breaks the definition or scenario, so the answer is true.', 'TRUE — The claim is correct. Finance costs grew by more than 12.7% between Year 1 and Year 2, outpacing the growth in the operating result.
+The wording matches the relevant rule for "Cash Flow Statement Over Two Years 86". The income statement reports period performance (revenue, costs, profit). The cash-flow statement splits operating, investing, and financing cash movements. Profit is an accrual measure; depreciation is a non-cash expense; collecting receivables is operating cash, not new revenue. Applied here: "After depreciation, the carrying value of an asset on the balance sheet is lower than its original cost."
 
-The underlying topic is income statement, cash flow statement, and financial statement timing. When figures appear, the exam checks whether you can interpret them in accounting terms—what increased, what ratio is implied, and whether the label (current, non-current, equity, and so on) fits.
+The statement is true.', 'TRUE — The income statement reports period performance (revenue, costs, profit).
 
-Apply the case evidence: Finance costs moved from 19 to 24; operating result moved from 313 to 345. Check whether the direction of change (higher/lower, above/below the threshold) matches what the statement asserts.
+The claim states: Collecting payment on a trade receivable is cash from operating activities. The reason given — it comes from the core trading cycle. — fits the chapter rule. The income statement reports period performance (revenue, costs, profit). The cash-flow statement splits operating, investing, and financing cash movements. Profit is an accrual measure; depreciation is a non-cash expense; collecting receivables is operating cash, not new revenue.
 
-No qualifying word breaks the definition or scenario, so the answer is true.'] WHERE case_id = 'CASE 6.2.089' AND tier = 'full';
-UPDATE public.economics_cases SET tactical_explanations = ARRAY['TRUE — This statement is correct. Collecting payment on a trade receivable is cash from operating activities because it comes from the core trading cycle.
+The statement is true.'] WHERE case_id = 'CASE 6.2.086' AND tier = 'full';
+UPDATE public.economics_cases SET tactical_explanations = ARRAY['FALSE — The income statement reports period performance (revenue, costs, profit).
 
-This is an accounting reasoning item on income statement, cash flow statement, and financial statement timing. Decide whether the sentence correctly describes how a transaction, balance-sheet line, or period result affects assets, liabilities, or equity.
+Absolute or misapplied wording conflicts with the rule for "Investing Cash Flow and Fixed Assets". The income statement reports period performance (revenue, costs, profit). The cash-flow statement splits operating, investing, and financing cash movements. Profit is an accrual measure; depreciation is a non-cash expense; collecting receivables is operating cash, not new revenue. Rejected claim: "When a software developer earns a profit for the year, that profit is deducted from retained earnings and therefore reduces the equity shown on its balance sheet."
 
-From the figures or classification rule involved, customer collections belong in operating cash flow. Accounting statements fail when a loss is treated as increasing equity, when a flow is placed on the balance sheet, or when a ratio inequality is reversed.
+The statement is false.', 'TRUE — The income statement reports period performance (revenue, costs, profit).
 
-The reasoning chain is complete, so mark the statement true.', 'FALSE — Evaluated against the textbook standard, this assertion is false. Combined annual depreciation for the three assets is €32,549.
+The wording matches the relevant rule for "Investing Cash Flow and Fixed Assets". The income statement reports period performance (revenue, costs, profit). The cash-flow statement splits operating, investing, and financing cash movements. Profit is an accrual measure; depreciation is a non-cash expense; collecting receivables is operating cash, not new revenue. Applied here: "When a garage purchases new diagnostic equipment for use in the business, the resulting cash outflow belongs in cash flow from investing activities."
 
-This item belongs to the accounting block on income statement, cash flow statement, and financial statement timing. Ratio and classification questions ask you to connect a figure or comparison in the case with the correct statement category, not merely to recognise a number.
+The statement is true.', 'FALSE — The income statement reports period performance (revenue, costs, profit).
 
-From the figures or classification rule involved, sum of annual charges ≈ €31,458. Accounting statements fail when a loss is treated as increasing equity, when a flow is placed on the balance sheet, or when a ratio inequality is reversed.
+Absolute or misapplied wording conflicts with the rule for "Investing Cash Flow and Fixed Assets". The income statement reports period performance (revenue, costs, profit). The cash-flow statement splits operating, investing, and financing cash movements. Profit is an accrual measure; depreciation is a non-cash expense; collecting receivables is operating cash, not new revenue. Rejected claim: "When a garage makes a loss for the year, that loss is added to retained earnings and therefore increases the equity shown on its balance sheet."
 
-Once the overclaim or mislabel is exposed, the only consistent answer is false.', 'TRUE — This statement is correct. After three years, the computer equipment, originally costing €23,000, is fully written down to nil.
+The statement is false.', 'FALSE — The income statement reports period performance (revenue, costs, profit).
 
-This item belongs to the accounting block on income statement, cash flow statement, and financial statement timing. Ratio and classification questions ask you to connect a figure or comparison in the case with the correct statement category, not merely to recognise a number.
+The claim states: Land owned by a bakery is depreciated in exactly the same way as its commercial ovens,. The reason — all fixed assets wear out identically through use. — does not support that label under the chapter definitions. The income statement reports period performance (revenue, costs, profit). The cash-flow statement splits operating, investing, and financing cash movements. Profit is an accrual measure; depreciation is a non-cash expense; collecting receivables is operating cash, not new revenue.
 
-From the figures or classification rule involved, useful life is 3 years with no residual value. Accounting statements fail when a loss is treated as increasing equity, when a flow is placed on the balance sheet, or when a ratio inequality is reversed.
+The statement is false.', 'FALSE — The income statement reports period performance (revenue, costs, profit).
 
-The reasoning chain is complete, so mark the statement true.', 'FALSE — On the Fuhrmann definition used in the entrance exam, the sentence is false. After three years, the delivery truck''s carrying value is €34,424.
+Absolute or misapplied wording conflicts with the rule for "Investing Cash Flow and Fixed Assets". The income statement reports period performance (revenue, costs, profit). The cash-flow statement splits operating, investing, and financing cash movements. Profit is an accrual measure; depreciation is a non-cash expense; collecting receivables is operating cash, not new revenue. Rejected claim: "The depreciation that a courier firm charges on its delivery vans each year is a cash expense that directly reduces its bank balance at the time it is recorded."
 
-The underlying topic is income statement, cash flow statement, and financial statement timing. When figures appear, the exam checks whether you can interpret them in accounting terms—what increased, what ratio is implied, and whether the label (current, non-current, equity, and so on) fits.
+The statement is false.'] WHERE case_id = 'CASE 6.2.087' AND tier = 'full';
+UPDATE public.economics_cases SET tactical_explanations = ARRAY['TRUE — The income statement reports period performance (revenue, costs, profit).
 
-Apply the case evidence: Carrying value ≈ €31,500. Check whether the direction of change (higher/lower, above/below the threshold) matches what the statement asserts.
+The wording matches the relevant rule for "Financing Cash Flow and Borrowing". The income statement reports period performance (revenue, costs, profit). The cash-flow statement splits operating, investing, and financing cash movements. Profit is an accrual measure; depreciation is a non-cash expense; collecting receivables is operating cash, not new revenue. Applied here: "For this logistics company, dividends paid to shareholders sit in financing activities, not operating activities."
 
-Because the decisive detail is wrong, mark the statement false.', 'TRUE — Evaluated against the textbook standard, this assertion is correct. After three years, the combined carrying value of all three assets exceeds €100,238.
+The statement is true.', 'FALSE — The income statement reports period performance (revenue, costs, profit).
 
-This item belongs to the accounting block on income statement, cash flow statement, and financial statement timing. Ratio and classification questions ask you to connect a figure or comparison in the case with the correct statement category, not merely to recognise a number.
+Absolute or misapplied wording conflicts with the rule for "Financing Cash Flow and Borrowing". The income statement reports period performance (revenue, costs, profit). The cash-flow statement splits operating, investing, and financing cash movements. Profit is an accrual measure; depreciation is a non-cash expense; collecting receivables is operating cash, not new revenue. Rejected claim: "For this logistics company, the dividends paid line of (25200) euros belongs in investing activities."
 
-From the figures or classification rule involved, combined carrying value ≈ €109,625. Accounting statements fail when a loss is treated as increasing equity, when a flow is placed on the balance sheet, or when a ratio inequality is reversed.
+The statement is false.', 'TRUE — The income statement reports period performance (revenue, costs, profit).
 
-No qualifying word breaks the definition or scenario, so the answer is true.'] WHERE case_id = 'CASE 6.2.090' AND tier = 'full';
-UPDATE public.economics_cases SET tactical_explanations = ARRAY['TRUE — On the Fuhrmann definition used in the entrance exam, the sentence is correct. Cash flow from operating activities grew by more than 8.4% between Year 1 and Year 2.
+The claim states: For this logistics company, an investing outflow and a dividend payment can appear in the same year. The reason given — investing and financing are separate sections. — fits the chapter rule. The income statement reports period performance (revenue, costs, profit). The cash-flow statement splits operating, investing, and financing cash movements. Profit is an accrual measure; depreciation is a non-cash expense; collecting receivables is operating cash, not new revenue.
 
-The underlying topic is income statement, cash flow statement, and financial statement timing. When figures appear, the exam checks whether you can interpret them in accounting terms—what increased, what ratio is implied, and whether the label (current, non-current, equity, and so on) fits.
+The statement is true.', 'TRUE — The income statement reports period performance (revenue, costs, profit).
 
-Apply the case evidence: Cash flow from operating activities changed by about 9.4% between the two years. Check whether the direction of change (higher/lower, above/below the threshold) matches what the statement asserts.
+The wording matches the relevant rule for "Financing Cash Flow and Borrowing". The income statement reports period performance (revenue, costs, profit). The cash-flow statement splits operating, investing, and financing cash movements. Profit is an accrual measure; depreciation is a non-cash expense; collecting receivables is operating cash, not new revenue. Applied here: "For this logistics company, collecting payment on a trade receivable is an operating cash inflow from the core trading cycle."
 
-No qualifying word breaks the definition or scenario, so the answer is true.', 'TRUE — Evaluated against the textbook standard, this assertion is correct. Depreciation recognises that the value of fixed assets decreases as they are used up over time, so without it asset values in the accounts would be overstated.
+The statement is true.', 'TRUE — The income statement reports period performance (revenue, costs, profit).
 
-This is an accounting reasoning item on income statement, cash flow statement, and financial statement timing. Decide whether the sentence correctly describes how a transaction, balance-sheet line, or period result affects assets, liabilities, or equity.
+The wording matches the relevant rule for "Financing Cash Flow and Borrowing". The income statement reports period performance (revenue, costs, profit). The cash-flow statement splits operating, investing, and financing cash movements. Profit is an accrual measure; depreciation is a non-cash expense; collecting receivables is operating cash, not new revenue. Applied here: "For this logistics company, buying new forklift trucks is classified as an investing cash outflow."
 
-From the figures or classification rule involved, depreciation spreads the cost of use over time. Accounting statements fail when a loss is treated as increasing equity, when a flow is placed on the balance sheet, or when a ratio inequality is reversed.
+The statement is true.'] WHERE case_id = 'CASE 6.2.088' AND tier = 'full';
+UPDATE public.economics_cases SET tactical_explanations = ARRAY['TRUE — The income statement reports period performance (revenue, costs, profit).
 
-Every part of the claim aligns with the standard concept, so the statement stands.', 'FALSE — Evaluated against the textbook standard, this assertion is false. Depreciation each year requires an equal cash payment to an outside party when the charge is recorded.
+The wording matches the relevant rule for "Revenue and Operating Result Chart 89". The income statement reports period performance (revenue, costs, profit). The cash-flow statement splits operating, investing, and financing cash movements. Profit is an accrual measure; depreciation is a non-cash expense; collecting receivables is operating cash, not new revenue. Applied here: "After depreciation, the carrying value of an asset on the balance sheet is lower than its original cost."
 
-This is an accounting reasoning item on income statement, cash flow statement, and financial statement timing. Decide whether the sentence correctly describes how a transaction, balance-sheet line, or period result affects assets, liabilities, or equity.
+The statement is true.', 'FALSE — Use the case figures for The operating result and compute the percentage change between Year 1 and Year 2 before comparing it with the claimed threshold.
 
-From the figures or classification rule involved, depreciation is non-cash; the cash was usually paid when the asset was bought. Accounting statements fail when a loss is treated as increasing equity, when a flow is placed on the balance sheet, or when a ratio inequality is reversed.
+From the extract:
 
-The statement sounds plausible but fails on precision, so it is false.', 'FALSE — On the Fuhrmann definition used in the entrance exam, the sentence is false. Purchase of office equipment for cash is classified as an operating cash outflow.
+$$
+\text{The operating result}_{\text{Y1}} = 313, \quad
+\text{The operating result}_{\text{Y2}} = 345
+$$
 
-The task tests income statement, cash flow statement, and financial statement timing. Financial statements distinguish stocks (balance sheet at a date) from flows (income and cash over a period); many false statements swap those roles.
+$$
+\frac{345 - 313}{313} = 10.2\%
+$$
 
-Apply the case evidence: Long-term equipment purchases are investing activities. Check whether the direction of change (higher/lower, above/below the threshold) matches what the statement asserts.
+$$
+10.2\% \le  57\%
+$$
 
-The statement sounds plausible but fails on precision, so it is false.', 'TRUE — Evaluated against the textbook standard, this assertion is correct. A negative cash flow from investing activities does not necessarily indicate a problem; it often means the business invested in long-term assets.
+The actual growth is 10.2%, which is not more than the claimed 57%.
 
-This is an accounting reasoning item on income statement, cash flow statement, and financial statement timing. Decide whether the sentence correctly describes how a transaction, balance-sheet line, or period result affects assets, liabilities, or equity.
+The statement is false.', 'FALSE — Use the case figures for Profit for the year and compute the percentage change between Year 1 and Year 2 before comparing it with the claimed threshold.
 
-From the figures or classification rule involved, investing outflows frequently reflect growth spending. Accounting statements fail when a loss is treated as increasing equity, when a flow is placed on the balance sheet, or when a ratio inequality is reversed.
+From the extract:
 
-Every part of the claim aligns with the standard concept, so the statement stands.'] WHERE case_id = 'CASE 6.2.091' AND tier = 'full';
-UPDATE public.economics_cases SET tactical_explanations = ARRAY['FALSE — On the Fuhrmann definition used in the entrance exam, the sentence is false. Every corporation must distribute a cash dividend to shareholders in each financial year by law.
+$$
+\text{Profit for the year}_{\text{Y1}} = 230, \quad
+\text{Profit for the year}_{\text{Y2}} = 250
+$$
 
-The underlying topic is income statement, cash flow statement, and financial statement timing. When figures appear, the exam checks whether you can interpret them in accounting terms—what increased, what ratio is implied, and whether the label (current, non-current, equity, and so on) fits.
+$$
+\frac{250 - 230}{230} = 8.7\%
+$$
 
-Apply the case evidence: There is no universal legal duty to pay a dividend every year. Check whether the direction of change (higher/lower, above/below the threshold) matches what the statement asserts.
+$$
+8.7\% \le  17.2\%
+$$
 
-Watch the absolute wording "every": exam statements often sound plausible until a single scope word turns an otherwise familiar idea into an overclaim.
+The actual growth is 8.7%, which is not more than the claimed 17.2%.
 
-Once the overclaim or mislabel is exposed, the only consistent answer is false.', 'TRUE — Evaluated against the textbook standard, this assertion is correct. Market capitalisation at the last month exceeds €20.3 million.
+The statement is false.', 'TRUE — Use the case figures for Revenue and compute the percentage change between Year 1 and Year 2 before comparing it with the claimed threshold.
 
-This item belongs to the accounting block on income statement, cash flow statement, and financial statement timing. Ratio and classification questions ask you to connect a figure or comparison in the case with the correct statement category, not merely to recognise a number.
+From the extract:
 
-From the figures or classification rule involved, market capitalisation ≈ €26.6 million. Accounting statements fail when a loss is treated as increasing equity, when a flow is placed on the balance sheet, or when a ratio inequality is reversed.
+$$
+\text{Revenue}_{\text{Y1}} = 958, \quad
+\text{Revenue}_{\text{Y2}} = 1,086
+$$
 
-No qualifying word breaks the definition or scenario, so the answer is true.', 'TRUE — The claim is correct. Highest closing price is more than 14.3% above the lowest.
+$$
+\frac{1,086 - 958}{958} = 13.4\%
+$$
 
-The underlying topic is income statement, cash flow statement, and financial statement timing. When figures appear, the exam checks whether you can interpret them in accounting terms—what increased, what ratio is implied, and whether the label (current, non-current, equity, and so on) fits.
+$$
+13.4\% > 8.6\%
+$$
 
-Apply the case evidence: Range €35–€44. Check whether the direction of change (higher/lower, above/below the threshold) matches what the statement asserts.
+The actual growth is 13.4%, which is more than the claimed 8.6%.
 
-Every part of the claim aligns with the standard concept, so the statement stands.', 'TRUE — This statement is correct. Total shares traded over six months exceed 28% of shares outstanding.
+The statement is true.', 'TRUE — Compare finance-cost growth with operating-result growth; the claim needs both a finance-cost rise above the threshold and outpacing of operating result.
 
-This item belongs to the accounting block on income statement, cash flow statement, and financial statement timing. Ratio and classification questions ask you to connect a figure or comparison in the case with the correct statement category, not merely to recognise a number.
+Name the identity in words: growth = (Year 2 − Year 1) ÷ Year 1 for each line.
 
-From the figures or classification rule involved, turnover ≈ 62.3% of shares outstanding. Accounting statements fail when a loss is treated as increasing equity, when a flow is placed on the balance sheet, or when a ratio inequality is reversed.
+$$
+\text{FC growth} = 26.3\%
+$$
 
-No qualifying word breaks the definition or scenario, so the answer is true.', 'TRUE — The claim is correct. Peak monthly share turnover exceeds 65,605 shares.
+$$
+\text{OR growth} = 10.2\%
+$$
 
-The underlying topic is income statement, cash flow statement, and financial statement timing. When figures appear, the exam checks whether you can interpret them in accounting terms—what increased, what ratio is implied, and whether the label (current, non-current, equity, and so on) fits.
+Finance costs did grow by more than 12.7%; they do outpace operating result.
 
-Apply the case evidence: Peak monthly volume = 89,000. Check whether the direction of change (higher/lower, above/below the threshold) matches what the statement asserts.
+Reading the arithmetic against the claim: FC growth 26.3% vs threshold 12.7% and OR growth 10.2% so the statement holds.
 
-The reasoning chain is complete, so mark the statement true.'] WHERE case_id = 'CASE 6.2.092' AND tier = 'full';
-UPDATE public.economics_cases SET tactical_explanations = ARRAY['FALSE — On the Fuhrmann definition used in the entrance exam, the sentence is false. The depreciation that a hotel chain charges on its kitchen equipment each year is a cash expense that directly reduces its bank balance at the time it is recorded.
+The statement is true.'] WHERE case_id = 'CASE 6.2.089' AND tier = 'full';
+UPDATE public.economics_cases SET tactical_explanations = ARRAY['TRUE — The income statement reports period performance (revenue, costs, profit).
 
-The task tests income statement, cash flow statement, and financial statement timing. Financial statements distinguish stocks (balance sheet at a date) from flows (income and cash over a period); many false statements swap those roles.
+The claim states: Collecting payment on a trade receivable is cash from operating activities. The reason given — it comes from the core trading cycle. — fits the chapter rule. The income statement reports period performance (revenue, costs, profit). The cash-flow statement splits operating, investing, and financing cash movements. Profit is an accrual measure; depreciation is a non-cash expense; collecting receivables is operating cash, not new revenue.
 
-Apply the case evidence: Depreciation does not itself cause a cash payment; the related cash was already paid when the kitchen equipment was purchased. Check whether the direction of change (higher/lower, above/below the threshold) matches what the statement asserts.
+The statement is true.', 'FALSE — Straight-line annual charge for each asset is (cost − residual) ÷ useful life; sum the three charges.
 
-The statement sounds plausible but fails on precision, so it is false.', 'FALSE — On the Fuhrmann definition used in the entrance exam, the sentence is false. Land owned by a software developer is depreciated in exactly the same way as its office computer equipment, because all fixed assets wear out identically through use.
+Name the identity in words: annual charge = (cost − residual) ÷ life; combined = sum of charges.
 
-The task tests income statement, cash flow statement, and financial statement timing. Financial statements distinguish stocks (balance sheet at a date) from flows (income and cash over a period); many false statements swap those roles.
+$$
+\text{Asset A – Machinery}: \frac{125,000 - 0}{8} = 15,625
+$$
 
-Apply the case evidence: Land does not wear out through use the way equipment does, so it is normally excluded from depreciation. Check whether the direction of change (higher/lower, above/below the threshold) matches what the statement asserts.
+$$
+\text{Asset B – Delivery truck}: \frac{56,000 - 7,000}{6} = 8,167
+$$
 
-Watch the absolute wording "all": exam statements often sound plausible until a single scope word turns an otherwise familiar idea into an overclaim.
+$$
+\text{Asset C – Computer equipment}: \frac{23,000 - 0}{3} = 7,667
+$$
 
-The statement sounds plausible but fails on precision, so it is false.', 'FALSE — This statement is false. The depreciation that a electronics retailer charges on its point-of-sale tills each year is a cash expense that directly reduces its bank balance at the time it is recorded.
+$$
+\text{Combined} = 31,458
+$$
 
-This is an accounting reasoning item on income statement, cash flow statement, and financial statement timing. Decide whether the sentence correctly describes how a transaction, balance-sheet line, or period result affects assets, liabilities, or equity.
+Claimed €32,549. Actual ≈ €31,458.
 
-From the figures or classification rule involved, depreciation does not itself cause a cash payment; the related cash was already paid when the point-of-sale tills was purchased. Accounting statements fail when a loss is treated as increasing equity, when a flow is placed on the balance sheet, or when a ratio inequality is reversed.
+Reading the arithmetic against the claim: combined charge ≈ €31,458 versus claimed €32,549 so the statement does not hold.
 
-Because the decisive detail is wrong, mark the statement false.', 'TRUE — The claim is correct. When a logistics company collects payment from a customer who owed money on an overdue invoice, the resulting cash inflow belongs in cash flow from operating activities.
+The statement is false.', 'TRUE — With nil residual, the asset is fully written down once elapsed years reach useful life.
 
-The task tests income statement, cash flow statement, and financial statement timing. Financial statements distinguish stocks (balance sheet at a date) from flows (income and cash over a period); many false statements swap those roles.
+$$
+\text{Cost} = €23,000, \quad \text{Life} = 3\text{ years}, \quad \text{Residual} = €0
+$$
 
-Apply the case evidence: Collecting money owed by a customer relates to core trading activity, so it is classified as an operating cash flow. Check whether the direction of change (higher/lower, above/below the threshold) matches what the statement asserts.
+After 3 years: fully written down to nil.
 
-No qualifying word breaks the definition or scenario, so the answer is true.', 'TRUE — The claim is correct. When a dairy processor repays part of a long-term bank loan, that cash outflow belongs in cash flow from financing activities.
+Reading the arithmetic against the claim: 3 years ≥ life 3 with residual 0 so the statement holds.
 
-The task tests income statement, cash flow statement, and financial statement timing. Financial statements distinguish stocks (balance sheet at a date) from flows (income and cash over a period); many false statements swap those roles.
+The statement is true.', 'FALSE — Carrying value after three years subtracts three annual charges from cost.
 
-Apply the case evidence: Repaying borrowed funds relates to how the business is financed, so it is classified as a financing cash flow. Check whether the direction of change (higher/lower, above/below the threshold) matches what the statement asserts.
+Name the identity in words: carrying value = cost − years elapsed × annual charge.
 
-No qualifying word breaks the definition or scenario, so the answer is true.'] WHERE case_id = 'CASE 6.2.093' AND tier = 'full';
-UPDATE public.economics_cases SET tactical_explanations = ARRAY['TRUE — On the Fuhrmann definition used in the entrance exam, the sentence is correct. Once shares are already trading on a stock exchange, a rise in their market price does not itself provide the issuing company with additional funds; only shareholders who sell benefit from the higher price.
+$$
+\text{Annual charge} = \frac{56,000 - 7,000}{6} = 8,167
+$$
 
-The task tests income statement, cash flow statement, and financial statement timing. Financial statements distinguish stocks (balance sheet at a date) from flows (income and cash over a period); many false statements swap those roles.
+$$
+BV_{3} = 56,000 - 3 \times 8,167 = 31,500
+$$
 
-Apply the case evidence: Secondary-market price rises do not raise new company cash. Check whether the direction of change (higher/lower, above/below the threshold) matches what the statement asserts.
+Claimed €34,424. Actual ≈ €31,500.
 
-The reasoning chain is complete, so mark the statement true.', 'TRUE — The claim is correct. The closing share price rose by more than 16.8% from first to last month.
+Reading the arithmetic against the claim: carrying value ≈ €31,500 versus claimed €34,424 so the statement does not hold.
 
-The underlying topic is income statement, cash flow statement, and financial statement timing. When figures appear, the exam checks whether you can interpret them in accounting terms—what increased, what ratio is implied, and whether the label (current, non-current, equity, and so on) fits.
+The statement is false.', 'TRUE — Sum each asset''s carrying value after three years (floored at residual once fully depreciated).
 
-Apply the case evidence: Price change ≈ 25.0%. Check whether the direction of change (higher/lower, above/below the threshold) matches what the statement asserts.
+Name the identity in words: combined BV = sum of each asset''s cost − min(3, life) × annual charge (at residual if fully depreciated).
 
-Every part of the claim aligns with the standard concept, so the statement stands.', 'TRUE — The claim is correct. Market capitalisation at the last month exceeds €12.6 million.
+$$
+\text{Asset A – Machinery}\ BV_{3} = 78,125
+$$
+$$
+\text{Asset B – Delivery truck}\ BV_{3} = 31,500
+$$
+$$
+\text{Asset C – Computer equipment}\ BV_{3} = 0
+$$
 
-The underlying topic is income statement, cash flow statement, and financial statement timing. When figures appear, the exam checks whether you can interpret them in accounting terms—what increased, what ratio is implied, and whether the label (current, non-current, equity, and so on) fits.
+$$
+\text{Combined BV} \approx €109,625
+$$
 
-Apply the case evidence: Market capitalisation ≈ €16.4 million. Check whether the direction of change (higher/lower, above/below the threshold) matches what the statement asserts.
+Threshold: exceeds €100,238.
 
-The reasoning chain is complete, so mark the statement true.', 'TRUE — This statement is correct. Total shares traded over six months exceed 26.4% of shares outstanding.
+Reading the arithmetic against the claim: combined BV ≈ €109,625 versus exceeds €100,238 so the statement holds.
 
-This item belongs to the accounting block on income statement, cash flow statement, and financial statement timing. Ratio and classification questions ask you to connect a figure or comparison in the case with the correct statement category, not merely to recognise a number.
+The statement is true.'] WHERE case_id = 'CASE 6.2.090' AND tier = 'full';
+UPDATE public.economics_cases SET tactical_explanations = ARRAY['TRUE — Use the case figures for Cash flow from operating activities and compute the percentage change between Year 1 and Year 2 before comparing it with the claimed threshold.
 
-From the figures or classification rule involved, turnover ≈ 55.9% of shares outstanding. Accounting statements fail when a loss is treated as increasing equity, when a flow is placed on the balance sheet, or when a ratio inequality is reversed.
+From the extract:
 
-The reasoning chain is complete, so mark the statement true.', 'TRUE — On the Fuhrmann definition used in the entrance exam, the sentence is correct. Peak monthly share turnover exceeds 56,226 shares.
+$$
+\text{Cash flow from operating activities}_{\text{Y1}} = 318, \quad
+\text{Cash flow from operating activities}_{\text{Y2}} = 348
+$$
 
-The underlying topic is income statement, cash flow statement, and financial statement timing. When figures appear, the exam checks whether you can interpret them in accounting terms—what increased, what ratio is implied, and whether the label (current, non-current, equity, and so on) fits.
+$$
+\frac{348 - 318}{318} = 9.4\%
+$$
 
-Apply the case evidence: Peak monthly volume = 93,000. Check whether the direction of change (higher/lower, above/below the threshold) matches what the statement asserts.
+$$
+9.4\% > 8.4\%
+$$
 
-The reasoning chain is complete, so mark the statement true.'] WHERE case_id = 'CASE 6.2.094' AND tier = 'full';
-UPDATE public.economics_cases SET tactical_explanations = ARRAY['TRUE — This statement is correct. Working capital should be positive, meaning current assets should be higher than current liabilities.
+The actual growth is 9.4%, which is more than the claimed 8.4%.
 
-This item belongs to the accounting block on income statement, cash flow statement, and financial statement timing. Ratio and classification questions ask you to connect a figure or comparison in the case with the correct statement category, not merely to recognise a number.
+The statement is true.', 'TRUE — The income statement reports period performance (revenue, costs, profit).
 
-From the figures or classification rule involved, positive working capital supports day-to-day payment capacity. Accounting statements fail when a loss is treated as increasing equity, when a flow is placed on the balance sheet, or when a ratio inequality is reversed.
+The wording matches the relevant rule for "Cash Flow Mix Over Two Years 91". The income statement reports period performance (revenue, costs, profit). The cash-flow statement splits operating, investing, and financing cash movements. Profit is an accrual measure; depreciation is a non-cash expense; collecting receivables is operating cash, not new revenue. Applied here: "Depreciation recognises that the value of fixed assets decreases as they are used up over time, so without it asset values in the accounts would be overstated."
 
-The reasoning chain is complete, so mark the statement true.', 'FALSE — Evaluated against the textbook standard, this assertion is false. Market capitalisation rose by more than 23.2% over the period.
+The statement is true.', 'FALSE — The income statement reports period performance (revenue, costs, profit).
 
-This item belongs to the accounting block on income statement, cash flow statement, and financial statement timing. Ratio and classification questions ask you to connect a figure or comparison in the case with the correct statement category, not merely to recognise a number.
+Absolute or misapplied wording conflicts with the rule for "Cash Flow Mix Over Two Years 91". The income statement reports period performance (revenue, costs, profit). The cash-flow statement splits operating, investing, and financing cash movements. Profit is an accrual measure; depreciation is a non-cash expense; collecting receivables is operating cash, not new revenue. Rejected claim: "Depreciation each year requires an equal cash payment to an outside party when the charge is recorded."
 
-From the figures or classification rule involved, €10.2m → €12.2m. Accounting statements fail when a loss is treated as increasing equity, when a flow is placed on the balance sheet, or when a ratio inequality is reversed.
+The statement is false.', 'FALSE — The income statement reports period performance (revenue, costs, profit).
 
-Because the decisive detail is wrong, mark the statement false.', 'TRUE — On the Fuhrmann definition used in the entrance exam, the sentence is correct. The closing share price rose by more than 15.9% from first to last month.
+Absolute or misapplied wording conflicts with the rule for "Cash Flow Mix Over Two Years 91". The income statement reports period performance (revenue, costs, profit). The cash-flow statement splits operating, investing, and financing cash movements. Profit is an accrual measure; depreciation is a non-cash expense; collecting receivables is operating cash, not new revenue. Rejected claim: "Purchase of office equipment for cash is classified as an operating cash outflow."
 
-The underlying topic is income statement, cash flow statement, and financial statement timing. When figures appear, the exam checks whether you can interpret them in accounting terms—what increased, what ratio is implied, and whether the label (current, non-current, equity, and so on) fits.
+The statement is false.', 'TRUE — The income statement reports period performance (revenue, costs, profit).
 
-Apply the case evidence: Price change ≈ 20.0%. Check whether the direction of change (higher/lower, above/below the threshold) matches what the statement asserts.
+The wording matches the relevant rule for "Cash Flow Mix Over Two Years 91". The income statement reports period performance (revenue, costs, profit). The cash-flow statement splits operating, investing, and financing cash movements. Profit is an accrual measure; depreciation is a non-cash expense; collecting receivables is operating cash, not new revenue. Applied here: "A negative cash flow from investing activities does not necessarily indicate a problem; it often means the business invested in long-term assets."
 
-No qualifying word breaks the definition or scenario, so the answer is true.', 'TRUE — This statement is correct. Market capitalisation at the last month exceeds €11.5 million.
+The statement is true.'] WHERE case_id = 'CASE 6.2.091' AND tier = 'full';
+UPDATE public.economics_cases SET tactical_explanations = ARRAY['FALSE — The income statement reports period performance (revenue, costs, profit).
 
-This item belongs to the accounting block on income statement, cash flow statement, and financial statement timing. Ratio and classification questions ask you to connect a figure or comparison in the case with the correct statement category, not merely to recognise a number.
+Absolute or misapplied wording conflicts with the rule for "Earnings Per Share From Reported Figures 92". The income statement reports period performance (revenue, costs, profit). The cash-flow statement splits operating, investing, and financing cash movements. Profit is an accrual measure; depreciation is a non-cash expense; collecting receivables is operating cash, not new revenue. Rejected claim: "Every corporation must distribute a cash dividend to shareholders in each financial year by law."
 
-From the figures or classification rule involved, market capitalisation ≈ €12.2 million. Accounting statements fail when a loss is treated as increasing equity, when a flow is placed on the balance sheet, or when a ratio inequality is reversed.
+The statement is false.', 'TRUE — Market capitalisation values the equity at the latest closing price times shares outstanding.
 
-The reasoning chain is complete, so mark the statement true.', 'TRUE — This statement is correct. Total shares traded over six months exceed 10.4% of shares outstanding.
+Name the identity in words: market capitalisation = last closing price × shares outstanding.
 
-This item belongs to the accounting block on income statement, cash flow statement, and financial statement timing. Ratio and classification questions ask you to connect a figure or comparison in the case with the correct statement category, not merely to recognise a number.
+$$
+P_{\text{last}} = 44, \quad \text{Shares} = 604,000
+$$
 
-From the figures or classification rule involved, turnover ≈ 71.2% of shares outstanding. Accounting statements fail when a loss is treated as increasing equity, when a flow is placed on the balance sheet, or when a ratio inequality is reversed.
+$$
+\text{MCap} = 44 \times 604,000 = €26.58\text{ million}
+$$
 
-The reasoning chain is complete, so mark the statement true.'] WHERE case_id = 'CASE 6.2.095' AND tier = 'full';
-UPDATE public.economics_cases SET tactical_explanations = ARRAY['FALSE — Evaluated against the textbook standard, this assertion is false. Land owned by a logistics company is depreciated in exactly the same way as its forklift trucks, because all fixed assets wear out identically through use.
+Threshold: exceeds €20.3 million. Actual €26.58 million.
 
-This is an accounting reasoning item on income statement, cash flow statement, and financial statement timing. Decide whether the sentence correctly describes how a transaction, balance-sheet line, or period result affects assets, liabilities, or equity.
+Reading the arithmetic against the claim: market cap €26.58m exceeds €20.3m so the statement holds.
 
-From the figures or classification rule involved, land does not wear out through use the way equipment does, so it is normally excluded from depreciation. Accounting statements fail when a loss is treated as increasing equity, when a flow is placed on the balance sheet, or when a ratio inequality is reversed.
+The statement is true.', 'TRUE — The high–low gap is the percentage by which the peak closing price exceeds the trough closing price in the table.
 
-Watch the absolute wording "all": exam statements often sound plausible until a single scope word turns an otherwise familiar idea into an overclaim.
+Name the identity in words: high–low gap = (highest close − lowest close) ÷ lowest close.
 
-Because the decisive detail is wrong, mark the statement false.', 'FALSE — This statement is false. The depreciation that a dairy processor charges on its refrigerated trucks each year is a cash expense that directly reduces its bank balance at the time it is recorded.
+$$
+P_{\max} = 44, \quad P_{\min} = 35
+$$
 
-This is an accounting reasoning item on income statement, cash flow statement, and financial statement timing. Decide whether the sentence correctly describes how a transaction, balance-sheet line, or period result affects assets, liabilities, or equity.
+$$
+\frac{44 - 35}{35} = 25.7\%
+$$
 
-From the figures or classification rule involved, depreciation does not itself cause a cash payment; the related cash was already paid when the refrigerated trucks was purchased. Accounting statements fail when a loss is treated as increasing equity, when a flow is placed on the balance sheet, or when a ratio inequality is reversed.
+Threshold: more than 14.3%. Actual 25.7%.
 
-Because the decisive detail is wrong, mark the statement false.', 'FALSE — Evaluated against the textbook standard, this assertion is false. The depreciation that a fitness club chain charges on its exercise equipment each year is a cash expense that directly reduces its bank balance at the time it is recorded.
+Reading the arithmetic against the claim: the gap is 25.7%, which exceeds 14.3% so the statement holds.
 
-This is an accounting reasoning item on income statement, cash flow statement, and financial statement timing. Decide whether the sentence correctly describes how a transaction, balance-sheet line, or period result affects assets, liabilities, or equity.
+The statement is true.', 'TRUE — Six-month share turnover compares cumulative volume traded with the number of shares outstanding.
 
-From the figures or classification rule involved, depreciation does not itself cause a cash payment; the related cash was already paid when the exercise equipment was purchased. Accounting statements fail when a loss is treated as increasing equity, when a flow is placed on the balance sheet, or when a ratio inequality is reversed.
+Name the identity in words: turnover = six-month volume ÷ shares outstanding.
 
-Because the decisive detail is wrong, mark the statement false.', 'FALSE — The claim is false. The depreciation that a car parts manufacturer charges on its stamping presses each year is a cash expense that directly reduces its bank balance at the time it is recorded.
+$$
+\text{Volume} = 376,000, \quad \text{Shares} = 604,000
+$$
 
-The task tests income statement, cash flow statement, and financial statement timing. Financial statements distinguish stocks (balance sheet at a date) from flows (income and cash over a period); many false statements swap those roles.
+$$
+\frac{376,000}{604,000} = 62.3\%
+$$
 
-Apply the case evidence: Depreciation does not itself cause a cash payment; the related cash was already paid when the stamping presses was purchased. Check whether the direction of change (higher/lower, above/below the threshold) matches what the statement asserts.
+Threshold: exceed 28%. Actual 62.3%.
 
-Once the overclaim or mislabel is exposed, the only consistent answer is false.', 'TRUE — The claim is correct. When a pharmacy chain purchases new dispensing equipment for use in the business, the resulting cash outflow belongs in cash flow from investing activities.
+Reading the arithmetic against the claim: turnover 62.3% exceeds 28% so the statement holds.
 
-The task tests income statement, cash flow statement, and financial statement timing. Financial statements distinguish stocks (balance sheet at a date) from flows (income and cash over a period); many false statements swap those roles.
+The statement is true.', 'TRUE — Peak monthly turnover is simply the largest shares-traded figure among the months in the table.
 
-Apply the case evidence: Buying long-term assets such as dispensing equipment is an investing decision, so the outflow is classified as an investing cash flow. Check whether the direction of change (higher/lower, above/below the threshold) matches what the statement asserts.
+Scan each month''s volume and take the maximum.
 
-No qualifying word breaks the definition or scenario, so the answer is true.'] WHERE case_id = 'CASE 6.2.096' AND tier = 'full';
-UPDATE public.economics_cases SET tactical_explanations = ARRAY['FALSE — This statement is false. Holders of preferred shares always vote at meetings, while common shareholders hold equity without voting rights.
+$$
+\text{Peak volume} = 89,000 \quad (March)
+$$
 
-This is an accounting reasoning item on income statement, cash flow statement, and financial statement timing. Decide whether the sentence correctly describes how a transaction, balance-sheet line, or period result affects assets, liabilities, or equity.
+Threshold: exceeds 65,605. Actual 89,000.
 
-From the figures or classification rule involved, that reverses the usual voting rights of common versus preferred shares. Accounting statements fail when a loss is treated as increasing equity, when a flow is placed on the balance sheet, or when a ratio inequality is reversed.
+Reading the arithmetic against the claim: peak volume 89,000 exceeds 65,605 so the statement holds.
 
-Watch the absolute wording "always": exam statements often sound plausible until a single scope word turns an otherwise familiar idea into an overclaim.
+The statement is true.'] WHERE case_id = 'CASE 6.2.092' AND tier = 'full';
+UPDATE public.economics_cases SET tactical_explanations = ARRAY['FALSE — The income statement reports period performance (revenue, costs, profit).
 
-The statement sounds plausible but fails on precision, so it is false.', 'TRUE — Evaluated against the textbook standard, this assertion is correct. Market capitalisation at the last month exceeds €23.7 million.
+Absolute or misapplied wording conflicts with the rule for "Retained Earnings and Equity Growth". The income statement reports period performance (revenue, costs, profit). The cash-flow statement splits operating, investing, and financing cash movements. Profit is an accrual measure; depreciation is a non-cash expense; collecting receivables is operating cash, not new revenue. Rejected claim: "The depreciation that a hotel chain charges on its kitchen equipment each year is a cash expense that directly reduces its bank balance at the time it is recorded."
 
-This item belongs to the accounting block on income statement, cash flow statement, and financial statement timing. Ratio and classification questions ask you to connect a figure or comparison in the case with the correct statement category, not merely to recognise a number.
+The statement is false.', 'FALSE — The income statement reports period performance (revenue, costs, profit).
 
-From the figures or classification rule involved, market capitalisation ≈ €28.8 million. Accounting statements fail when a loss is treated as increasing equity, when a flow is placed on the balance sheet, or when a ratio inequality is reversed.
+The claim states: Land owned by a software developer is depreciated in exactly the same way as its office computer equipment,. The reason — all fixed assets wear out identically through use. — does not support that label under the chapter definitions. The income statement reports period performance (revenue, costs, profit). The cash-flow statement splits operating, investing, and financing cash movements. Profit is an accrual measure; depreciation is a non-cash expense; collecting receivables is operating cash, not new revenue.
 
-Every part of the claim aligns with the standard concept, so the statement stands.', 'TRUE — The claim is correct. Market capitalisation rose by more than 14.6% over the period.
+The statement is false.', 'FALSE — The income statement reports period performance (revenue, costs, profit).
 
-The underlying topic is income statement, cash flow statement, and financial statement timing. When figures appear, the exam checks whether you can interpret them in accounting terms—what increased, what ratio is implied, and whether the label (current, non-current, equity, and so on) fits.
+Absolute or misapplied wording conflicts with the rule for "Retained Earnings and Equity Growth". The income statement reports period performance (revenue, costs, profit). The cash-flow statement splits operating, investing, and financing cash movements. Profit is an accrual measure; depreciation is a non-cash expense; collecting receivables is operating cash, not new revenue. Rejected claim: "The depreciation that a electronics retailer charges on its point-of-sale tills each year is a cash expense that directly reduces its bank balance at the time it is recorded."
 
-Apply the case evidence: €23.0m → €28.8m. Check whether the direction of change (higher/lower, above/below the threshold) matches what the statement asserts.
+The statement is false.', 'TRUE — The income statement reports period performance (revenue, costs, profit).
 
-Every part of the claim aligns with the standard concept, so the statement stands.', 'FALSE — This statement is false. Highest closing price is more than 31.3% above the lowest.
+The wording matches the relevant rule for "Retained Earnings and Equity Growth". The income statement reports period performance (revenue, costs, profit). The cash-flow statement splits operating, investing, and financing cash movements. Profit is an accrual measure; depreciation is a non-cash expense; collecting receivables is operating cash, not new revenue. Applied here: "When a logistics company collects payment from a customer who owed money on an overdue invoice, the resulting cash inflow belongs in cash flow from operating activities."
 
-This item belongs to the accounting block on income statement, cash flow statement, and financial statement timing. Ratio and classification questions ask you to connect a figure or comparison in the case with the correct statement category, not merely to recognise a number.
+The statement is true.', 'TRUE — The income statement reports period performance (revenue, costs, profit).
 
-From the figures or classification rule involved, range €36–€45. Accounting statements fail when a loss is treated as increasing equity, when a flow is placed on the balance sheet, or when a ratio inequality is reversed.
+The wording matches the relevant rule for "Retained Earnings and Equity Growth". The income statement reports period performance (revenue, costs, profit). The cash-flow statement splits operating, investing, and financing cash movements. Profit is an accrual measure; depreciation is a non-cash expense; collecting receivables is operating cash, not new revenue. Applied here: "When a dairy processor repays part of a long-term bank loan, that cash outflow belongs in cash flow from financing activities."
 
-The statement sounds plausible but fails on precision, so it is false.', 'FALSE — Evaluated against the textbook standard, this assertion is false. Peak monthly share turnover exceeds 63,979 shares.
+The statement is true.'] WHERE case_id = 'CASE 6.2.093' AND tier = 'full';
+UPDATE public.economics_cases SET tactical_explanations = ARRAY['TRUE — The income statement reports period performance (revenue, costs, profit).
 
-This item belongs to the accounting block on income statement, cash flow statement, and financial statement timing. Ratio and classification questions ask you to connect a figure or comparison in the case with the correct statement category, not merely to recognise a number.
+The wording matches the relevant rule for "Listed Company Performance Charts 94". The income statement reports period performance (revenue, costs, profit). The cash-flow statement splits operating, investing, and financing cash movements. Profit is an accrual measure; depreciation is a non-cash expense; collecting receivables is operating cash, not new revenue. Applied here: "Once shares are already trading on a stock exchange, a rise in their market price does not itself provide the issuing company with additional funds; only shareholders who sell benefit from the high…"
 
-From the figures or classification rule involved, peak monthly volume = 63,000. Accounting statements fail when a loss is treated as increasing equity, when a flow is placed on the balance sheet, or when a ratio inequality is reversed.
+The statement is true.', 'TRUE — Price appreciation from the first listed month to the last is a simple percentage change on the closing prices.
 
-Because the decisive detail is wrong, mark the statement false.'] WHERE case_id = 'CASE 6.2.097' AND tier = 'full';
-UPDATE public.economics_cases SET tactical_explanations = ARRAY['TRUE — The claim is correct. For this fitness club chain, dividends paid to shareholders sit in financing activities, not operating activities.
+Name the identity in words: price rise = (last closing price − first closing price) ÷ first closing price.
 
-The task tests income statement, cash flow statement, and financial statement timing. Financial statements distinguish stocks (balance sheet at a date) from flows (income and cash over a period); many false statements swap those roles.
+$$
+P_{\text{first}} = 20, \quad P_{\text{last}} = 25
+$$
 
-Apply the case evidence: Dividend payments are a financing activity. Check whether the direction of change (higher/lower, above/below the threshold) matches what the statement asserts.
+$$
+\frac{25 - 20}{20} = 25.0\%
+$$
 
-Every part of the claim aligns with the standard concept, so the statement stands.', 'TRUE — Evaluated against the textbook standard, this assertion is correct. For this fitness club chain, an investing outflow and a dividend payment can appear in the same year because investing and financing are separate sections.
+Threshold: more than 16.8%. Actual 25.0%.
 
-This is an accounting reasoning item on income statement, cash flow statement, and financial statement timing. Decide whether the sentence correctly describes how a transaction, balance-sheet line, or period result affects assets, liabilities, or equity.
+Reading the arithmetic against the claim: the rise is 25.0%, which exceeds 16.8% so the statement holds.
 
-From the figures or classification rule involved, investing and financing are recorded separately. Accounting statements fail when a loss is treated as increasing equity, when a flow is placed on the balance sheet, or when a ratio inequality is reversed.
+The statement is true.', 'TRUE — Market capitalisation values the equity at the latest closing price times shares outstanding.
 
-Every part of the claim aligns with the standard concept, so the statement stands.', 'TRUE — On the Fuhrmann definition used in the entrance exam, the sentence is correct. For this fitness club chain, collecting payment on a trade receivable is an operating cash inflow from the core trading cycle.
+Name the identity in words: market capitalisation = last closing price × shares outstanding.
 
-The task tests income statement, cash flow statement, and financial statement timing. Financial statements distinguish stocks (balance sheet at a date) from flows (income and cash over a period); many false statements swap those roles.
+$$
+P_{\text{last}} = 25, \quad \text{Shares} = 656,000
+$$
 
-Apply the case evidence: Customer collections belong in operating cash flow. Check whether the direction of change (higher/lower, above/below the threshold) matches what the statement asserts.
+$$
+\text{MCap} = 25 \times 656,000 = €16.40\text{ million}
+$$
 
-No qualifying word breaks the definition or scenario, so the answer is true.', 'TRUE — The claim is correct. For this fitness club chain, buying new exercise equipment is classified as an investing cash outflow.
+Threshold: exceeds €12.6 million. Actual €16.40 million.
 
-The task tests income statement, cash flow statement, and financial statement timing. Financial statements distinguish stocks (balance sheet at a date) from flows (income and cash over a period); many false statements swap those roles.
+Reading the arithmetic against the claim: market cap €16.40m exceeds €12.6m so the statement holds.
 
-Apply the case evidence: Long-term asset purchases are investing outflows. Check whether the direction of change (higher/lower, above/below the threshold) matches what the statement asserts.
+The statement is true.', 'TRUE — Six-month share turnover compares cumulative volume traded with the number of shares outstanding.
 
-Every part of the claim aligns with the standard concept, so the statement stands.', 'TRUE — Evaluated against the textbook standard, this assertion is correct. For this fitness club chain, a positive cash figure is still not the same thing as a profit, because profit includes non-cash charges and accruals.
+Name the identity in words: turnover = six-month volume ÷ shares outstanding.
 
-This is an accounting reasoning item on income statement, cash flow statement, and financial statement timing. Decide whether the sentence correctly describes how a transaction, balance-sheet line, or period result affects assets, liabilities, or equity.
+$$
+\text{Volume} = 367,000, \quad \text{Shares} = 656,000
+$$
 
-From the figures or classification rule involved, profit and cash movement are different concepts. Accounting statements fail when a loss is treated as increasing equity, when a flow is placed on the balance sheet, or when a ratio inequality is reversed.
+$$
+\frac{367,000}{656,000} = 55.9\%
+$$
 
-No qualifying word breaks the definition or scenario, so the answer is true.'] WHERE case_id = 'CASE 6.2.098' AND tier = 'full';
-UPDATE public.economics_cases SET tactical_explanations = ARRAY['TRUE — Evaluated against the textbook standard, this assertion is correct. Return on equity and return on capital employed are most meaningful when comparing similar businesses or the same business over time, not as isolated absolute numbers.
+Threshold: exceed 26.4%. Actual 55.9%.
 
-This item belongs to the accounting block on income statement, cash flow statement, and financial statement timing. Ratio and classification questions ask you to connect a figure or comparison in the case with the correct statement category, not merely to recognise a number.
+Reading the arithmetic against the claim: turnover 55.9% exceeds 26.4% so the statement holds.
 
-From the figures or classification rule involved, comparative context matters for return ratios. Accounting statements fail when a loss is treated as increasing equity, when a flow is placed on the balance sheet, or when a ratio inequality is reversed.
+The statement is true.', 'TRUE — Peak monthly turnover is simply the largest shares-traded figure among the months in the table.
 
-The reasoning chain is complete, so mark the statement true.', 'TRUE — This statement is correct. The closing share price rose by more than 15.7% from first to last month.
+Scan each month''s volume and take the maximum.
 
-This item belongs to the accounting block on income statement, cash flow statement, and financial statement timing. Ratio and classification questions ask you to connect a figure or comparison in the case with the correct statement category, not merely to recognise a number.
+$$
+\text{Peak volume} = 93,000 \quad (April)
+$$
 
-From the figures or classification rule involved, price change ≈ 25.0%. Accounting statements fail when a loss is treated as increasing equity, when a flow is placed on the balance sheet, or when a ratio inequality is reversed.
+Threshold: exceeds 56,226. Actual 93,000.
 
-Every part of the claim aligns with the standard concept, so the statement stands.', 'TRUE — This statement is correct. Market capitalisation at the last month exceeds €22 million.
+Reading the arithmetic against the claim: peak volume 93,000 exceeds 56,226 so the statement holds.
 
-This item belongs to the accounting block on income statement, cash flow statement, and financial statement timing. Ratio and classification questions ask you to connect a figure or comparison in the case with the correct statement category, not merely to recognise a number.
+The statement is true.'] WHERE case_id = 'CASE 6.2.094' AND tier = 'full';
+UPDATE public.economics_cases SET tactical_explanations = ARRAY['TRUE — The income statement reports period performance (revenue, costs, profit).
 
-From the figures or classification rule involved, market capitalisation ≈ €27.9 million. Accounting statements fail when a loss is treated as increasing equity, when a flow is placed on the balance sheet, or when a ratio inequality is reversed.
+The wording matches the relevant rule for "Earnings Per Share From Reported Figures 95". The income statement reports period performance (revenue, costs, profit). The cash-flow statement splits operating, investing, and financing cash movements. Profit is an accrual measure; depreciation is a non-cash expense; collecting receivables is operating cash, not new revenue. Applied here: "Working capital should be positive, meaning current assets should be higher than current liabilities."
 
-Every part of the claim aligns with the standard concept, so the statement stands.', 'TRUE — This statement is correct. Market capitalisation rose by more than 23.5% over the period.
+The statement is true.', 'FALSE — With shares outstanding unchanged, market-cap growth equals the percentage change in the share price between first and last month.
 
-This item belongs to the accounting block on income statement, cash flow statement, and financial statement timing. Ratio and classification questions ask you to connect a figure or comparison in the case with the correct statement category, not merely to recognise a number.
+Name the identity in words: market-cap change = (last MCap − first MCap) ÷ first MCap.
 
-From the figures or classification rule involved, €22.3m → €27.9m. Accounting statements fail when a loss is treated as increasing equity, when a flow is placed on the balance sheet, or when a ratio inequality is reversed.
+$$
+\text{MCap}_{\text{first}} = 20 \times 510,000 = €10.20\text{m}
+$$
 
-Every part of the claim aligns with the standard concept, so the statement stands.', 'TRUE — On the Fuhrmann definition used in the entrance exam, the sentence is correct. Total shares traded over six months exceed 28.1% of shares outstanding.
+$$
+\text{MCap}_{\text{last}} = 24 \times 510,000 = €12.24\text{m}
+$$
 
-The underlying topic is income statement, cash flow statement, and financial statement timing. When figures appear, the exam checks whether you can interpret them in accounting terms—what increased, what ratio is implied, and whether the label (current, non-current, equity, and so on) fits.
+$$
+\frac{12.24 - 10.20}{10.20} = 20.0\%
+$$
 
-Apply the case evidence: Turnover ≈ 45.7% of shares outstanding. Check whether the direction of change (higher/lower, above/below the threshold) matches what the statement asserts.
+Threshold: more than 23.2%. Actual 20.0%.
 
-No qualifying word breaks the definition or scenario, so the answer is true.'] WHERE case_id = 'CASE 6.2.099' AND tier = 'full';
-UPDATE public.economics_cases SET tactical_explanations = ARRAY['TRUE — This statement is correct. Market capitalisation is the total market value of a company''s outstanding shares and is often used to gauge size, but it is not necessarily a meaningful measure of fundamental value.
+Reading the arithmetic against the claim: MCap rose 20.0%, which does not exceed 23.2% so the statement does not hold.
 
-This is an accounting reasoning item on income statement, cash flow statement, and financial statement timing. Decide whether the sentence correctly describes how a transaction, balance-sheet line, or period result affects assets, liabilities, or equity.
+The statement is false.', 'TRUE — Price appreciation from the first listed month to the last is a simple percentage change on the closing prices.
 
-From the figures or classification rule involved, market capitalisation = shares × price; price can move for reasons unrelated to value. Accounting statements fail when a loss is treated as increasing equity, when a flow is placed on the balance sheet, or when a ratio inequality is reversed.
+Name the identity in words: price rise = (last closing price − first closing price) ÷ first closing price.
 
-The reasoning chain is complete, so mark the statement true.', 'TRUE — Evaluated against the textbook standard, this assertion is correct. The closing share price rose by more than 15% from first to last month.
+$$
+P_{\text{first}} = 20, \quad P_{\text{last}} = 24
+$$
 
-This item belongs to the accounting block on income statement, cash flow statement, and financial statement timing. Ratio and classification questions ask you to connect a figure or comparison in the case with the correct statement category, not merely to recognise a number.
+$$
+\frac{24 - 20}{20} = 20.0\%
+$$
 
-From the figures or classification rule involved, price change ≈ 21.7%. Accounting statements fail when a loss is treated as increasing equity, when a flow is placed on the balance sheet, or when a ratio inequality is reversed.
+Threshold: more than 15.9%. Actual 20.0%.
 
-Every part of the claim aligns with the standard concept, so the statement stands.', 'TRUE — The claim is correct. Market capitalisation at the last month exceeds €10.4 million.
+Reading the arithmetic against the claim: the rise is 20.0%, which exceeds 15.9% so the statement holds.
 
-The underlying topic is income statement, cash flow statement, and financial statement timing. When figures appear, the exam checks whether you can interpret them in accounting terms—what increased, what ratio is implied, and whether the label (current, non-current, equity, and so on) fits.
+The statement is true.', 'TRUE — Market capitalisation values the equity at the latest closing price times shares outstanding.
 
-Apply the case evidence: Market capitalisation ≈ €13.3 million. Check whether the direction of change (higher/lower, above/below the threshold) matches what the statement asserts.
+Name the identity in words: market capitalisation = last closing price × shares outstanding.
 
-No qualifying word breaks the definition or scenario, so the answer is true.', 'TRUE — The claim is correct. Market capitalisation rose by more than 13.4% over the period.
+$$
+P_{\text{last}} = 24, \quad \text{Shares} = 510,000
+$$
 
-The underlying topic is income statement, cash flow statement, and financial statement timing. When figures appear, the exam checks whether you can interpret them in accounting terms—what increased, what ratio is implied, and whether the label (current, non-current, equity, and so on) fits.
+$$
+\text{MCap} = 24 \times 510,000 = €12.24\text{ million}
+$$
 
-Apply the case evidence: €10.9m → €13.3m. Check whether the direction of change (higher/lower, above/below the threshold) matches what the statement asserts.
+Threshold: exceeds €11.5 million. Actual €12.24 million.
 
-The reasoning chain is complete, so mark the statement true.', 'TRUE — The claim is correct. Highest closing price is more than 20.6% above the lowest.
+Reading the arithmetic against the claim: market cap €12.24m exceeds €11.5m so the statement holds.
 
-The underlying topic is income statement, cash flow statement, and financial statement timing. When figures appear, the exam checks whether you can interpret them in accounting terms—what increased, what ratio is implied, and whether the label (current, non-current, equity, and so on) fits.
+The statement is true.', 'TRUE — Six-month share turnover compares cumulative volume traded with the number of shares outstanding.
 
-Apply the case evidence: Range €22–€28. Check whether the direction of change (higher/lower, above/below the threshold) matches what the statement asserts.
+Name the identity in words: turnover = six-month volume ÷ shares outstanding.
 
-Every part of the claim aligns with the standard concept, so the statement stands.'] WHERE case_id = 'CASE 6.2.100' AND tier = 'full';
+$$
+\text{Volume} = 363,000, \quad \text{Shares} = 510,000
+$$
+
+$$
+\frac{363,000}{510,000} = 71.2\%
+$$
+
+Threshold: exceed 10.4%. Actual 71.2%.
+
+Reading the arithmetic against the claim: turnover 71.2% exceeds 10.4% so the statement holds.
+
+The statement is true.'] WHERE case_id = 'CASE 6.2.095' AND tier = 'full';
+UPDATE public.economics_cases SET tactical_explanations = ARRAY['FALSE — The income statement reports period performance (revenue, costs, profit).
+
+The claim states: Land owned by a logistics company is depreciated in exactly the same way as its forklift trucks,. The reason — all fixed assets wear out identically through use. — does not support that label under the chapter definitions. The income statement reports period performance (revenue, costs, profit). The cash-flow statement splits operating, investing, and financing cash movements. Profit is an accrual measure; depreciation is a non-cash expense; collecting receivables is operating cash, not new revenue.
+
+The statement is false.', 'FALSE — The income statement reports period performance (revenue, costs, profit).
+
+Absolute or misapplied wording conflicts with the rule for "Loss and Retained Earnings Decline". The income statement reports period performance (revenue, costs, profit). The cash-flow statement splits operating, investing, and financing cash movements. Profit is an accrual measure; depreciation is a non-cash expense; collecting receivables is operating cash, not new revenue. Rejected claim: "The depreciation that a dairy processor charges on its refrigerated trucks each year is a cash expense that directly reduces its bank balance at the time it is recorded."
+
+The statement is false.', 'FALSE — The income statement reports period performance (revenue, costs, profit).
+
+Absolute or misapplied wording conflicts with the rule for "Loss and Retained Earnings Decline". The income statement reports period performance (revenue, costs, profit). The cash-flow statement splits operating, investing, and financing cash movements. Profit is an accrual measure; depreciation is a non-cash expense; collecting receivables is operating cash, not new revenue. Rejected claim: "The depreciation that a fitness club chain charges on its exercise equipment each year is a cash expense that directly reduces its bank balance at the time it is recorded."
+
+The statement is false.', 'FALSE — The income statement reports period performance (revenue, costs, profit).
+
+Absolute or misapplied wording conflicts with the rule for "Loss and Retained Earnings Decline". The income statement reports period performance (revenue, costs, profit). The cash-flow statement splits operating, investing, and financing cash movements. Profit is an accrual measure; depreciation is a non-cash expense; collecting receivables is operating cash, not new revenue. Rejected claim: "The depreciation that a car parts manufacturer charges on its stamping presses each year is a cash expense that directly reduces its bank balance at the time it is recorded."
+
+The statement is false.', 'TRUE — The income statement reports period performance (revenue, costs, profit).
+
+The wording matches the relevant rule for "Loss and Retained Earnings Decline". The income statement reports period performance (revenue, costs, profit). The cash-flow statement splits operating, investing, and financing cash movements. Profit is an accrual measure; depreciation is a non-cash expense; collecting receivables is operating cash, not new revenue. Applied here: "When a pharmacy chain purchases new dispensing equipment for use in the business, the resulting cash outflow belongs in cash flow from investing activities."
+
+The statement is true.'] WHERE case_id = 'CASE 6.2.096' AND tier = 'full';
+UPDATE public.economics_cases SET tactical_explanations = ARRAY['FALSE — The income statement reports period performance (revenue, costs, profit).
+
+Absolute or misapplied wording conflicts with the rule for "Listed Company Performance Charts 97". The income statement reports period performance (revenue, costs, profit). The cash-flow statement splits operating, investing, and financing cash movements. Profit is an accrual measure; depreciation is a non-cash expense; collecting receivables is operating cash, not new revenue. Rejected claim: "Holders of preferred shares always vote at meetings, while common shareholders hold equity without voting rights."
+
+The statement is false.', 'TRUE — Market capitalisation values the equity at the latest closing price times shares outstanding.
+
+Name the identity in words: market capitalisation = last closing price × shares outstanding.
+
+$$
+P_{\text{last}} = 45, \quad \text{Shares} = 639,000
+$$
+
+$$
+\text{MCap} = 45 \times 639,000 = €28.75\text{ million}
+$$
+
+Threshold: exceeds €23.7 million. Actual €28.75 million.
+
+Reading the arithmetic against the claim: market cap €28.75m exceeds €23.7m so the statement holds.
+
+The statement is true.', 'TRUE — With shares outstanding unchanged, market-cap growth equals the percentage change in the share price between first and last month.
+
+Name the identity in words: market-cap change = (last MCap − first MCap) ÷ first MCap.
+
+$$
+\text{MCap}_{\text{first}} = 36 \times 639,000 = €23.00\text{m}
+$$
+
+$$
+\text{MCap}_{\text{last}} = 45 \times 639,000 = €28.75\text{m}
+$$
+
+$$
+\frac{28.75 - 23.00}{23.00} = 25.0\%
+$$
+
+Threshold: more than 14.6%. Actual 25.0%.
+
+Reading the arithmetic against the claim: MCap rose 25.0%, which exceeds 14.6% so the statement holds.
+
+The statement is true.', 'FALSE — The high–low gap is the percentage by which the peak closing price exceeds the trough closing price in the table.
+
+Name the identity in words: high–low gap = (highest close − lowest close) ÷ lowest close.
+
+$$
+P_{\max} = 45, \quad P_{\min} = 36
+$$
+
+$$
+\frac{45 - 36}{36} = 25.0\%
+$$
+
+Threshold: more than 31.3%. Actual 25.0%.
+
+Reading the arithmetic against the claim: the gap is 25.0%, which does not exceed 31.3% so the statement does not hold.
+
+The statement is false.', 'FALSE — Peak monthly turnover is simply the largest shares-traded figure among the months in the table.
+
+Scan each month''s volume and take the maximum.
+
+$$
+\text{Peak volume} = 63,000 \quad (April)
+$$
+
+Threshold: exceeds 63,979. Actual 63,000.
+
+Reading the arithmetic against the claim: peak volume 63,000 does not exceed 63,979 so the statement does not hold.
+
+The statement is false.'] WHERE case_id = 'CASE 6.2.097' AND tier = 'full';
+UPDATE public.economics_cases SET tactical_explanations = ARRAY['TRUE — The income statement reports period performance (revenue, costs, profit).
+
+The wording matches the relevant rule for "Reading a Statement of Profit and Loss". The income statement reports period performance (revenue, costs, profit). The cash-flow statement splits operating, investing, and financing cash movements. Profit is an accrual measure; depreciation is a non-cash expense; collecting receivables is operating cash, not new revenue. Applied here: "For this fitness club chain, dividends paid to shareholders sit in financing activities, not operating activities."
+
+The statement is true.', 'TRUE — The income statement reports period performance (revenue, costs, profit).
+
+The claim states: For this fitness club chain, an investing outflow and a dividend payment can appear in the same year. The reason given — investing and financing are separate sections. — fits the chapter rule. The income statement reports period performance (revenue, costs, profit). The cash-flow statement splits operating, investing, and financing cash movements. Profit is an accrual measure; depreciation is a non-cash expense; collecting receivables is operating cash, not new revenue.
+
+The statement is true.', 'TRUE — The income statement reports period performance (revenue, costs, profit).
+
+The wording matches the relevant rule for "Reading a Statement of Profit and Loss". The income statement reports period performance (revenue, costs, profit). The cash-flow statement splits operating, investing, and financing cash movements. Profit is an accrual measure; depreciation is a non-cash expense; collecting receivables is operating cash, not new revenue. Applied here: "For this fitness club chain, collecting payment on a trade receivable is an operating cash inflow from the core trading cycle."
+
+The statement is true.', 'TRUE — The income statement reports period performance (revenue, costs, profit).
+
+The wording matches the relevant rule for "Reading a Statement of Profit and Loss". The income statement reports period performance (revenue, costs, profit). The cash-flow statement splits operating, investing, and financing cash movements. Profit is an accrual measure; depreciation is a non-cash expense; collecting receivables is operating cash, not new revenue. Applied here: "For this fitness club chain, buying new exercise equipment is classified as an investing cash outflow."
+
+The statement is true.', 'TRUE — The income statement reports period performance (revenue, costs, profit).
+
+The claim states: For this fitness club chain, a positive cash figure is still not the same thing as a profit,. The reason given — profit includes non-cash charges and accruals. — fits the chapter rule. The income statement reports period performance (revenue, costs, profit). The cash-flow statement splits operating, investing, and financing cash movements. Profit is an accrual measure; depreciation is a non-cash expense; collecting receivables is operating cash, not new revenue.
+
+The statement is true.'] WHERE case_id = 'CASE 6.2.098' AND tier = 'full';
+UPDATE public.economics_cases SET tactical_explanations = ARRAY['TRUE — The income statement reports period performance (revenue, costs, profit).
+
+The wording matches the relevant rule for "Share Price and Market Capitalisation 99". The income statement reports period performance (revenue, costs, profit). The cash-flow statement splits operating, investing, and financing cash movements. Profit is an accrual measure; depreciation is a non-cash expense; collecting receivables is operating cash, not new revenue. Applied here: "Return on equity and return on capital employed are most meaningful when comparing similar businesses or the same business over time, not as isolated absolute numbers."
+
+The statement is true.', 'TRUE — Price appreciation from the first listed month to the last is a simple percentage change on the closing prices.
+
+Name the identity in words: price rise = (last closing price − first closing price) ÷ first closing price.
+
+$$
+P_{\text{first}} = 28, \quad P_{\text{last}} = 35
+$$
+
+$$
+\frac{35 - 28}{28} = 25.0\%
+$$
+
+Threshold: more than 15.7%. Actual 25.0%.
+
+Reading the arithmetic against the claim: the rise is 25.0%, which exceeds 15.7% so the statement holds.
+
+The statement is true.', 'TRUE — Market capitalisation values the equity at the latest closing price times shares outstanding.
+
+Name the identity in words: market capitalisation = last closing price × shares outstanding.
+
+$$
+P_{\text{last}} = 35, \quad \text{Shares} = 796,000
+$$
+
+$$
+\text{MCap} = 35 \times 796,000 = €27.86\text{ million}
+$$
+
+Threshold: exceeds €22 million. Actual €27.86 million.
+
+Reading the arithmetic against the claim: market cap €27.86m exceeds €22m so the statement holds.
+
+The statement is true.', 'TRUE — With shares outstanding unchanged, market-cap growth equals the percentage change in the share price between first and last month.
+
+Name the identity in words: market-cap change = (last MCap − first MCap) ÷ first MCap.
+
+$$
+\text{MCap}_{\text{first}} = 28 \times 796,000 = €22.29\text{m}
+$$
+
+$$
+\text{MCap}_{\text{last}} = 35 \times 796,000 = €27.86\text{m}
+$$
+
+$$
+\frac{27.86 - 22.29}{22.29} = 25.0\%
+$$
+
+Threshold: more than 23.5%. Actual 25.0%.
+
+Reading the arithmetic against the claim: MCap rose 25.0%, which exceeds 23.5% so the statement holds.
+
+The statement is true.', 'TRUE — Six-month share turnover compares cumulative volume traded with the number of shares outstanding.
+
+Name the identity in words: turnover = six-month volume ÷ shares outstanding.
+
+$$
+\text{Volume} = 364,000, \quad \text{Shares} = 796,000
+$$
+
+$$
+\frac{364,000}{796,000} = 45.7\%
+$$
+
+Threshold: exceed 28.1%. Actual 45.7%.
+
+Reading the arithmetic against the claim: turnover 45.7% exceeds 28.1% so the statement holds.
+
+The statement is true.'] WHERE case_id = 'CASE 6.2.099' AND tier = 'full';
+UPDATE public.economics_cases SET tactical_explanations = ARRAY['TRUE — The income statement reports period performance (revenue, costs, profit).
+
+The wording matches the relevant rule for "Listed Company Performance Charts 100". The income statement reports period performance (revenue, costs, profit). The cash-flow statement splits operating, investing, and financing cash movements. Profit is an accrual measure; depreciation is a non-cash expense; collecting receivables is operating cash, not new revenue. Applied here: "Market capitalisation is the total market value of a company''s outstanding shares and is often used to gauge size, but it is not necessarily a meaningful measure of fundamental value."
+
+The statement is true.', 'TRUE — Price appreciation from the first listed month to the last is a simple percentage change on the closing prices.
+
+Name the identity in words: price rise = (last closing price − first closing price) ÷ first closing price.
+
+$$
+P_{\text{first}} = 23, \quad P_{\text{last}} = 28
+$$
+
+$$
+\frac{28 - 23}{23} = 21.7\%
+$$
+
+Threshold: more than 15%. Actual 21.7%.
+
+Reading the arithmetic against the claim: the rise is 21.7%, which exceeds 15% so the statement holds.
+
+The statement is true.', 'TRUE — Market capitalisation values the equity at the latest closing price times shares outstanding.
+
+Name the identity in words: market capitalisation = last closing price × shares outstanding.
+
+$$
+P_{\text{last}} = 28, \quad \text{Shares} = 474,000
+$$
+
+$$
+\text{MCap} = 28 \times 474,000 = €13.27\text{ million}
+$$
+
+Threshold: exceeds €10.4 million. Actual €13.27 million.
+
+Reading the arithmetic against the claim: market cap €13.27m exceeds €10.4m so the statement holds.
+
+The statement is true.', 'TRUE — With shares outstanding unchanged, market-cap growth equals the percentage change in the share price between first and last month.
+
+Name the identity in words: market-cap change = (last MCap − first MCap) ÷ first MCap.
+
+$$
+\text{MCap}_{\text{first}} = 23 \times 474,000 = €10.90\text{m}
+$$
+
+$$
+\text{MCap}_{\text{last}} = 28 \times 474,000 = €13.27\text{m}
+$$
+
+$$
+\frac{13.27 - 10.90}{10.90} = 21.7\%
+$$
+
+Threshold: more than 13.4%. Actual 21.7%.
+
+Reading the arithmetic against the claim: MCap rose 21.7%, which exceeds 13.4% so the statement holds.
+
+The statement is true.', 'TRUE — The high–low gap is the percentage by which the peak closing price exceeds the trough closing price in the table.
+
+Name the identity in words: high–low gap = (highest close − lowest close) ÷ lowest close.
+
+$$
+P_{\max} = 28, \quad P_{\min} = 22
+$$
+
+$$
+\frac{28 - 22}{22} = 27.3\%
+$$
+
+Threshold: more than 20.6%. Actual 27.3%.
+
+Reading the arithmetic against the claim: the gap is 27.3%, which exceeds 20.6% so the statement holds.
+
+The statement is true.'] WHERE case_id = 'CASE 6.2.100' AND tier = 'full';

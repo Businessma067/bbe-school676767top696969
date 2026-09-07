@@ -1,816 +1,1159 @@
 -- Update expanded explanations for 2.5-part2 (25 cases).
 -- Safe to re-run: only updates tactical_explanations.
 
-UPDATE public.economics_cases SET tactical_explanations = ARRAY['FALSE — On the Fuhrmann definition used in the entrance exam, the sentence is false. Price-taking behavior is impossible for farmers even on a huge wheat exchange with standardised grades.
+UPDATE public.economics_cases SET tactical_explanations = ARRAY['FALSE — Sort the claim by economic system: how planned directives, market prices, social-market institutions, or transition reforms organise scarce resources.
 
-Although the subject matter is market, planned, and mixed economic systems, this is really a logic check on overstatement. Non-profit surpluses, mixed economies, and partial market failure are classic cases where absolute wording fails.
+On a huge wheat exchange with standardised grades, many farmers are price-takers — price-taking is possible, not impossible.
 
-Applied to this claim, market prices and incentives often remain tools within environmental regulation. That is why the sentence does not survive careful reading.
+Map that definition onto the case where most modern economies combine markets with public education and healthcare funding. Even if the stem mentions related details, those details do not carry the claim’s conclusion — the sentence either widens the concept past its test or attaches the wrong label to the facts.
 
-Watch the absolute wording "impossible": exam statements often sound plausible until a single scope word turns an otherwise familiar idea into an overclaim.
+The mismatch is in the defining feature, not in a missing buzzword; fix the feature and the claim disappears.
 
-The statement sounds plausible but fails on precision, so it is false.', 'FALSE — The claim is false. Market and planned systems are the same whenever banknotes circulate irrespective of substitute availability.
+The statement is false.
+', 'FALSE — Planned economies assign output mainly through central directives and quotas rather than chiefly through market prices. Preference shifts therefore often feed through slowly.
 
-This statement draws on market, planned, and mixed economic systems. Treat it as a checklist against the core concept named in the stem, not as a general opinion about business.
+Banknotes circulating does not make market and planned systems the same; coordination and ownership still differ.
 
-Applied to this claim, planners historically struggled to gather local demand information that prices convey in markets. That is why the sentence does not survive careful reading.
+Map that definition onto the case where most modern economies combine markets with public education and healthcare funding. Even if the stem mentions related details, those details do not carry the claim’s conclusion — the sentence either widens the concept past its test or attaches the wrong label to the facts.
 
-The statement sounds plausible but fails on precision, so it is false.', 'TRUE — This statement is correct. Social market economy explicitly embraces this mix of competition plus social policy.
+Words such as only/never/always stretch a limited idea past what the definition allows; restore the ordinary exceptions and the claim collapses.
 
-The relevant theory comes from market, planned, and mixed economic systems. Identify which definition or relationship the sentence is trying to test before deciding true or false.
+The statement is false.
+', 'TRUE — A social market economy combines competitive product markets with institutionalised social bargaining and welfare rules. An eco-social market adds stronger environmental standards without abolishing private competitive firms.
 
-Applied carefully, social market model formalises the competitive-plus-welfare mix. Nothing in the sentence stretches the concept beyond its standard use.
+Sort the system by who decides output: central directives and quotas versus private decisions and price signals, with social-market or eco-social overlays adding labour and environmental institutions without erasing competition.
 
-No qualifying word breaks the definition or scenario, so the answer is true.', 'FALSE — On the Fuhrmann definition used in the entrance exam, the sentence is false. Planned economy elements like total state ownership dominate every OECD country today without exception.
+Map that definition onto the case where most modern economies combine markets with public education and healthcare funding. The claim’s actors and constraints line up with the concept: the sentence describes the same mechanism the chapter teaches, not a neighbouring idea with similar vocabulary.
 
-Although the subject matter is market, planned, and mixed economic systems, this is really a logic check on overstatement. Non-profit surpluses, mixed economies, and partial market failure are classic cases where absolute wording fails.
+Under that classification the claim describes the situation correctly rather than a lookalike category.
 
-Applied to this claim, oecd countries are predominantly market-based with regulation, not fully planned. That is why the sentence does not survive careful reading.
+The statement is true.
+', 'FALSE — Planned economies assign output mainly through central directives and quotas rather than chiefly through market prices. Preference shifts therefore often feed through slowly.
 
-Watch the absolute wording "every": exam statements often sound plausible until a single scope word turns an otherwise familiar idea into an overclaim.
+Market systems still keep courts and defence; planned systems still face scarcity; using money does not make coordination mechanisms identical. Absolute bans or “never/always” transition claims overreach.
 
-The statement sounds plausible but fails on precision, so it is false.', 'TRUE — On the Fuhrmann definition used in the entrance exam, the sentence is correct. Eco-social market adds environmental policy goals to mixed market frameworks.
+Map that definition onto the case where most modern economies combine markets with public education and healthcare funding. Even if the stem mentions related details, those details do not carry the claim’s conclusion — the sentence either widens the concept past its test or attaches the wrong label to the facts.
 
-This statement draws on market, planned, and mixed economic systems. Treat it as a checklist against the core concept named in the stem, not as a general opinion about business.
+The absolute quantifier is doing the damage. Soften it to the chapter’s actual scope and the remaining content no longer supports a false blanket rule.
 
-In this setting, eco-social variant adds sustainability to mixed market design. The wording matches the textbook relationship without adding extra conditions.
+The statement is false.
+', 'TRUE — A social market economy combines competitive product markets with institutionalised social bargaining and welfare rules. An eco-social market adds stronger environmental standards without abolishing private competitive firms.
 
-No qualifying word breaks the definition or scenario, so the answer is true.'] WHERE case_id = 'CASE 2.5.26' AND tier = 'full';
-UPDATE public.economics_cases SET tactical_explanations = ARRAY['FALSE — The claim is false. Physical apparel alone guarantees that fashion retail meets perfect competition worldwide.
+Sort the system by who decides output: central directives and quotas versus private decisions and price signals, with social-market or eco-social overlays adding labour and environmental institutions without erasing competition.
 
-This statement draws on market, planned, and mixed economic systems. Treat it as a checklist against the core concept named in the stem, not as a general opinion about business.
+Map that definition onto the case where most modern economies combine markets with public education and healthcare funding. The claim’s actors and constraints line up with the concept: the sentence describes the same mechanism the chapter teaches, not a neighbouring idea with similar vocabulary.
 
-Applied to this claim, historical transitions involved temporary dislocation and job losses during restructuring. That is why the sentence does not survive careful reading.
+The sentence therefore reports the concept accurately for this item once the definition is held fixed.
 
-Because the decisive detail is wrong, mark the statement false.', 'TRUE — This statement is correct. Consumer sovereignty still operates as riders choose cheaper fares where competition exists.
+The statement is true.
+'] WHERE case_id = 'CASE 2.5.26' AND tier = 'full';
+UPDATE public.economics_cases SET tactical_explanations = ARRAY['FALSE — Sort the claim by economic system: how planned directives, market prices, social-market institutions, or transition reforms organise scarce resources.
 
-The relevant theory comes from market, planned, and mixed economic systems. Identify which definition or relationship the sentence is trying to test before deciding true or false.
+Physical apparel alone does not guarantee perfect competition worldwide in fashion retail.
 
-Applied carefully, riders'' spending choices reward competitive efficient operators. Nothing in the sentence stretches the concept beyond its standard use.
+Map that definition onto the case where fuel prices rise; taxi firms invest in smaller efficient cars. Evaluate market incentives:. Even if the stem mentions related details, those details do not carry the claim’s conclusion — the sentence either widens the concept past its test or attaches the wrong label to the facts.
 
-The reasoning chain is complete, so mark the statement true.', 'FALSE — The claim is false. Profit motive exists only in planned economies because state firms never care about cost.
+Absolute wording is the trap: economics definitions leave room for counterexamples — another actor, another scope, a non-money cost, or a public function that still exists. One clear counterexample rejects the sentence.
 
-Although the subject matter is market, planned, and mixed economic systems, this is really a logic check on overstatement. Non-profit surpluses, mixed economies, and partial market failure are classic cases where absolute wording fails.
+The statement is false.
+', 'TRUE — Consumer sovereignty means household spending influences what firms produce in market systems. Prices and sales data transmit preference shifts; planners do not monopolise every output decision.
 
-Applied to this claim, state firms faced budget pressures too, but incentives differed under planning. That is why the sentence does not survive careful reading.
+Sort the system by who decides output: central directives and quotas versus private decisions and price signals, with social-market or eco-social overlays adding labour and environmental institutions without erasing competition.
 
-Watch the absolute wording "never": exam statements often sound plausible until a single scope word turns an otherwise familiar idea into an overclaim.
+Map that definition onto the case where fuel prices rise; taxi firms invest in smaller efficient cars. Evaluate market incentives:. The claim’s actors and constraints line up with the concept: the sentence describes the same mechanism the chapter teaches, not a neighbouring idea with similar vocabulary.
 
-Once the overclaim or mislabel is exposed, the only consistent answer is false.', 'TRUE — The claim is correct. Market prices transmit fuel cost changes to operators deciding fleet composition.
+Under that classification the claim describes the situation correctly rather than a lookalike category.
 
-This statement draws on market, planned, and mixed economic systems. Treat it as a checklist against the core concept named in the stem, not as a general opinion about business.
+The statement is true.
+', 'FALSE — Planned economies assign output mainly through central directives and quotas rather than chiefly through market prices. Preference shifts therefore often feed through slowly.
 
-In this setting, price changes signal input scarcity to producers. The wording matches the textbook relationship without adding extra conditions.
+Profit motive is central to market firms; planned state firms are not the home of the profit motive in this contrast.
 
-No qualifying word breaks the definition or scenario, so the answer is true.', 'TRUE — This statement is correct. Social market economy retains profit incentives while adding social regulation and welfare.
+Map that definition onto the case where fuel prices rise; taxi firms invest in smaller efficient cars. Evaluate market incentives:. Even if the stem mentions related details, those details do not carry the claim’s conclusion — the sentence either widens the concept past its test or attaches the wrong label to the facts.
 
-The relevant theory comes from market, planned, and mixed economic systems. Identify which definition or relationship the sentence is trying to test before deciding true or false.
+The absolute quantifier is doing the damage. Soften it to the chapter’s actual scope and the remaining content no longer supports a false blanket rule.
 
-Applied carefully, social market keeps profit drive within regulated competitive framework. Nothing in the sentence stretches the concept beyond its standard use.
+The statement is false.
+', 'TRUE — Sort the claim by economic system: how planned directives, market prices, social-market institutions, or transition reforms organise scarce resources.
 
-The reasoning chain is complete, so mark the statement true.'] WHERE case_id = 'CASE 2.5.27' AND tier = 'full';
-UPDATE public.economics_cases SET tactical_explanations = ARRAY['FALSE — Evaluated against the textbook standard, this assertion is false. Transformation to markets raises zero unemployment by creating ideal jobs overnight while other determinants remain unchanged.
+Walk the definition onto the stem’s actors and constraints, then confirm the sentence’s category and reason both survive that check.
 
-The relevant theory comes from market, planned, and mixed economic systems. Identify which definition or relationship the sentence is trying to test before deciding true or false.
+Map that definition onto the case where fuel prices rise; taxi firms invest in smaller efficient cars. Evaluate market incentives:. The claim’s actors and constraints line up with the concept: the sentence describes the same mechanism the chapter teaches, not a neighbouring idea with similar vocabulary.
 
-The statement overreaches because oecd economies are predominantly market-based with regulation and welfare overlays. The trap is to agree with the topic while missing the one detail that breaks the logic.
+Under that classification the claim describes the situation correctly rather than a lookalike category.
 
-Once the overclaim or mislabel is exposed, the only consistent answer is false.', 'FALSE — Evaluated against the textbook standard, this assertion is false. Planners always know every preference, so misallocation never occurs under otherwise unchanged conditions.
+The statement is true.
+', 'TRUE — A social market economy combines competitive product markets with institutionalised social bargaining and welfare rules. An eco-social market adds stronger environmental standards without abolishing private competitive firms.
 
-The topic is market, planned, and mixed economic systems, but the decisive skill here is reading quantifiers. Words such as never, always, only, or all turn a generally true idea into a claim that can be rejected by one routine counterexample.
+Sort the system by who decides output: central directives and quotas versus private decisions and price signals, with social-market or eco-social overlays adding labour and environmental institutions without erasing competition.
 
-The statement overreaches because real market economies still need government for law, defence, and public goods. The trap is to agree with the topic while missing the one detail that breaks the logic.
+Map that definition onto the case where fuel prices rise; taxi firms invest in smaller efficient cars. Evaluate market incentives:. The claim’s actors and constraints line up with the concept: the sentence describes the same mechanism the chapter teaches, not a neighbouring idea with similar vocabulary.
 
-Watch the absolute wording "always": exam statements often sound plausible until a single scope word turns an otherwise familiar idea into an overclaim.
+Nothing in the stem contradicts that reading, so the assertion stands as a correct application of the definition.
 
-The statement sounds plausible but fails on precision, so it is false.', 'FALSE — The claim is false. Transition never changes ownership structures because all firms must remain state property forever.
+The statement is true.
+'] WHERE case_id = 'CASE 2.5.27' AND tier = 'full';
+UPDATE public.economics_cases SET tactical_explanations = ARRAY['FALSE — Transition from planned to market systems often privatises state firms, liberalises prices, and opens entry. Short-run dislocation and transitional unemployment can occur even when longer-run competition raises efficiency.
 
-Although the subject matter is market, planned, and mixed economic systems, this is really a logic check on overstatement. Non-profit surpluses, mixed economies, and partial market failure are classic cases where absolute wording fails.
+Transition often raises unemployment during restructuring — not zero unemployment with ideal jobs overnight.
 
-Applied to this claim, transition explicitly shifts toward private and mixed ownership. That is why the sentence does not survive careful reading.
+Map that definition onto the case where a former planned economy sells state factories to private investors and opens markets. Evaluate transformation:. Even if the stem mentions related details, those details do not carry the claim’s conclusion — the sentence either widens the concept past its test or attaches the wrong label to the facts.
 
-Watch the absolute wording "never": exam statements often sound plausible until a single scope word turns an otherwise familiar idea into an overclaim.
+The absolute quantifier is doing the damage. Soften it to the chapter’s actual scope and the remaining content no longer supports a false blanket rule.
 
-Once the overclaim or mislabel is exposed, the only consistent answer is false.', 'TRUE — On the Fuhrmann definition used in the entrance exam, the sentence is correct. Introducing competition can improve efficiency after monopolistic state production.
+The statement is false.
+', 'FALSE — Planned economies assign output mainly through central directives and quotas rather than chiefly through market prices. Preference shifts therefore often feed through slowly.
 
-This statement draws on market, planned, and mixed economic systems. Treat it as a checklist against the core concept named in the stem, not as a general opinion about business.
+Walk the definition onto the stem’s actors and constraints, then spot where the sentence’s category or absolute reason breaks that check.
 
-In this setting, competition pressures can raise productivity after state monopoly. The wording matches the textbook relationship without adding extra conditions.
+Map that definition onto the case where a former planned economy sells state factories to private investors and opens markets. Evaluate transformation:. Even if the stem mentions related details, those details do not carry the claim’s conclusion — the sentence either widens the concept past its test or attaches the wrong label to the facts.
 
-No qualifying word breaks the definition or scenario, so the answer is true.', 'FALSE — On the Fuhrmann definition used in the entrance exam, the sentence is false. Market transformation happens overnight with zero adjustment costs or unemployment ever.
+Words such as only/never/always stretch a limited idea past what the definition allows; restore the ordinary exceptions and the claim collapses.
 
-This statement draws on market, planned, and mixed economic systems. Treat it as a checklist against the core concept named in the stem, not as a general opinion about business.
+The statement is false.
+', 'FALSE — Transition from planned to market systems often privatises state firms, liberalises prices, and opens entry. Short-run dislocation and transitional unemployment can occur even when longer-run competition raises efficiency.
 
-Applied to this claim, transition involves gradual reforms and social adjustment costs. That is why the sentence does not survive careful reading.
+Transition often changes ownership through privatisation — firms need not remain state property forever.
 
-The statement sounds plausible but fails on precision, so it is false.'] WHERE case_id = 'CASE 2.5.28' AND tier = 'full';
-UPDATE public.economics_cases SET tactical_explanations = ARRAY['TRUE — The claim is correct. Market versus planned describes how resource allocation is coordinated economy-wide.
+Map that definition onto the case where a former planned economy sells state factories to private investors and opens markets. Evaluate transformation:. Even if the stem mentions related details, those details do not carry the claim’s conclusion — the sentence either widens the concept past its test or attaches the wrong label to the facts.
 
-The section on market, planned, and mixed economic systems frequently contrasts two similar ideas side by side. A comparison statement is true only if the relationship is stated in the right direction and applies to the right concept pair.
+Absolute wording is the trap: economics definitions leave room for counterexamples — another actor, another scope, a non-money cost, or a public function that still exists. One clear counterexample rejects the sentence.
 
-In this setting, core coordination distinction between systems. The wording matches the textbook relationship without adding extra conditions.
+The statement is false.
+', 'TRUE — Sort the claim by economic system: how planned directives, market prices, social-market institutions, or transition reforms organise scarce resources.
 
-The reasoning chain is complete, so mark the statement true.', 'TRUE — This statement is correct. Free market emphasises private ownership, competition, and consumer sovereignty.
+Walk the definition onto the stem’s actors and constraints, then confirm the sentence’s category and reason both survive that check.
 
-The relevant theory comes from market, planned, and mixed economic systems. Identify which definition or relationship the sentence is trying to test before deciding true or false.
+Map that definition onto the case where a former planned economy sells state factories to private investors and opens markets. Evaluate transformation:. The claim’s actors and constraints line up with the concept: the sentence describes the same mechanism the chapter teaches, not a neighbouring idea with similar vocabulary.
 
-Applied carefully, free market pillars: property, competition, consumer demand. Nothing in the sentence stretches the concept beyond its standard use.
+Under that classification the claim describes the situation correctly rather than a lookalike category.
 
-No qualifying word breaks the definition or scenario, so the answer is true.', 'TRUE — On the Fuhrmann definition used in the entrance exam, the sentence is correct. Social market adds welfare and social partnership without abolishing competition.
+The statement is true.
+', 'FALSE — Transition from planned to market systems often privatises state firms, liberalises prices, and opens entry. Short-run dislocation and transitional unemployment can occur even when longer-run competition raises efficiency.
 
-This statement draws on market, planned, and mixed economic systems. Treat it as a checklist against the core concept named in the stem, not as a general opinion about business.
+Market transformation involves adjustment costs and unemployment; it is not overnight with zero costs.
 
-In this setting, social layer on competitive base. The wording matches the textbook relationship without adding extra conditions.
+Map that definition onto the case where a former planned economy sells state factories to private investors and opens markets. Evaluate transformation:. Even if the stem mentions related details, those details do not carry the claim’s conclusion — the sentence either widens the concept past its test or attaches the wrong label to the facts.
 
-The reasoning chain is complete, so mark the statement true.', 'TRUE — The claim is correct. Eco-social market adds environmental sustainability to social market foundations.
+Absolute wording is the trap: economics definitions leave room for counterexamples — another actor, another scope, a non-money cost, or a public function that still exists. One clear counterexample rejects the sentence.
 
-This statement draws on market, planned, and mixed economic systems. Treat it as a checklist against the core concept named in the stem, not as a general opinion about business.
+The statement is false.
+'] WHERE case_id = 'CASE 2.5.28' AND tier = 'full';
+UPDATE public.economics_cases SET tactical_explanations = ARRAY['TRUE — Planned economies assign output mainly through central directives and quotas rather than chiefly through market prices. Preference shifts therefore often feed through slowly.
 
-In this setting, ecological layer on social market. The wording matches the textbook relationship without adding extra conditions.
+Sort the system by who decides output: central directives and quotas versus private decisions and price signals, with social-market or eco-social overlays adding labour and environmental institutions without erasing competition.
 
-The reasoning chain is complete, so mark the statement true.', 'TRUE — On the Fuhrmann definition used in the entrance exam, the sentence is correct. Transformation reforms shift planned economies toward market mechanisms and private incentives over time.
+Map that definition onto the case where evaluate combined system concepts:. The claim’s actors and constraints line up with the concept: the sentence describes the same mechanism the chapter teaches, not a neighbouring idea with similar vocabulary.
 
-This statement draws on market, planned, and mixed economic systems. Treat it as a checklist against the core concept named in the stem, not as a general opinion about business.
+Nothing in the stem contradicts that reading, so the assertion stands as a correct application of the definition.
 
-In this setting, transition path from planning to markets. The wording matches the textbook relationship without adding extra conditions.
+The statement is true.
+', 'TRUE — Consumer sovereignty means household spending influences what firms produce in market systems. Prices and sales data transmit preference shifts; planners do not monopolise every output decision.
 
-Every part of the claim aligns with the standard concept, so the statement stands.'] WHERE case_id = 'CASE 2.5.29' AND tier = 'full';
-UPDATE public.economics_cases SET tactical_explanations = ARRAY['TRUE — On the Fuhrmann definition used in the entrance exam, the sentence is correct. Market economies rely mainly on private decisions and price signals to allocate resources.
+Sort the system by who decides output: central directives and quotas versus private decisions and price signals, with social-market or eco-social overlays adding labour and environmental institutions without erasing competition.
 
-This statement draws on market, planned, and mixed economic systems. Treat it as a checklist against the core concept named in the stem, not as a general opinion about business.
+Map that definition onto the case where evaluate combined system concepts:. The claim’s actors and constraints line up with the concept: the sentence describes the same mechanism the chapter teaches, not a neighbouring idea with similar vocabulary.
 
-In this setting, decentralised prices and ownership typify market allocation. The wording matches the textbook relationship without adding extra conditions.
+Under that classification the claim describes the situation correctly rather than a lookalike category.
 
-The reasoning chain is complete, so mark the statement true.', 'TRUE — The claim is correct. Planned economies rely on central directives and state targets rather than market prices.
+The statement is true.
+', 'TRUE — A social market economy combines competitive product markets with institutionalised social bargaining and welfare rules. An eco-social market adds stronger environmental standards without abolishing private competitive firms.
 
-The section on market, planned, and mixed economic systems frequently contrasts two similar ideas side by side. A comparison statement is true only if the relationship is stated in the right direction and applies to the right concept pair.
+Sort the system by who decides output: central directives and quotas versus private decisions and price signals, with social-market or eco-social overlays adding labour and environmental institutions without erasing competition.
 
-In this setting, central planning sets output and input assignments. The wording matches the textbook relationship without adding extra conditions.
+Map that definition onto the case where evaluate combined system concepts:. The claim’s actors and constraints line up with the concept: the sentence describes the same mechanism the chapter teaches, not a neighbouring idea with similar vocabulary.
 
-The reasoning chain is complete, so mark the statement true.', 'TRUE — This statement is correct. Free, social, and eco-social market economies are variants building on market coordination.
+Under that classification the claim describes the situation correctly rather than a lookalike category.
 
-The relevant theory comes from market, planned, and mixed economic systems. Identify which definition or relationship the sentence is trying to test before deciding true or false.
+The statement is true.
+', 'TRUE — A social market economy combines competitive product markets with institutionalised social bargaining and welfare rules. An eco-social market adds stronger environmental standards without abolishing private competitive firms.
 
-Applied carefully, three market variants differ by social and ecological policy depth. Nothing in the sentence stretches the concept beyond its standard use.
+Sort the system by who decides output: central directives and quotas versus private decisions and price signals, with social-market or eco-social overlays adding labour and environmental institutions without erasing competition.
 
-Every part of the claim aligns with the standard concept, so the statement stands.', 'TRUE — On the Fuhrmann definition used in the entrance exam, the sentence is correct. Transformation from planned toward market systems involves privatisation and price liberalisation reforms.
+Map that definition onto the case where evaluate combined system concepts:. The claim’s actors and constraints line up with the concept: the sentence describes the same mechanism the chapter teaches, not a neighbouring idea with similar vocabulary.
 
-This statement draws on market, planned, and mixed economic systems. Treat it as a checklist against the core concept named in the stem, not as a general opinion about business.
+Under that classification the claim describes the situation correctly rather than a lookalike category.
 
-In this setting, transition reforms introduce markets and private property. The wording matches the textbook relationship without adding extra conditions.
+The statement is true.
+', 'TRUE — Transition from planned to market systems often privatises state firms, liberalises prices, and opens entry. Short-run dislocation and transitional unemployment can occur even when longer-run competition raises efficiency.
 
-No qualifying word breaks the definition or scenario, so the answer is true.', 'FALSE — On the Fuhrmann definition used in the entrance exam, the sentence is false. Eco-social market economy ignores environmental goals and copies pure laissez-faire exactly.
+Separate movements along a curve (own-price) from shifts (costs, income, population, tastes). Equilibrium is where quantity demanded equals quantity supplied; binding floors or ceilings can create surplus or shortage when set away from that price. Focus points: shift.
 
-This statement draws on market, planned, and mixed economic systems. Treat it as a checklist against the core concept named in the stem, not as a general opinion about business.
+Map that definition onto the case where evaluate combined system concepts:. The claim’s actors and constraints (here: shift) line up with the concept: the sentence describes the same mechanism the chapter teaches, not a neighbouring idea with similar vocabulary.
 
-Applied to this claim, eco-social explicitly adds environmental sustainability to market base. That is why the sentence does not survive careful reading.
+A useful check is the opposite error: treat opportunity cost as the money paid, or treat one buyer’s choice as macro, or treat a shift as a movement — those near-misses fail, which confirms this wording.
 
-Once the overclaim or mislabel is exposed, the only consistent answer is false.'] WHERE case_id = 'CASE 2.5.30' AND tier = 'full';
-UPDATE public.economics_cases SET tactical_explanations = ARRAY['TRUE — Evaluated against the textbook standard, this assertion is correct. Planned economies assign output targets through central directives rather than relying chiefly on market prices.
+The statement is true.
+'] WHERE case_id = 'CASE 2.5.29' AND tier = 'full';
+UPDATE public.economics_cases SET tactical_explanations = ARRAY['TRUE — Transition from planned to market systems often privatises state firms, liberalises prices, and opens entry. Short-run dislocation and transitional unemployment can occur even when longer-run competition raises efficiency.
 
-This tests discrimination within market, planned, and mixed economic systems: local versus international scope, equity versus debt, product versus market orientation, and similar pairs.
+Sort the system by who decides output: central directives and quotas versus private decisions and price signals, with social-market or eco-social overlays adding labour and environmental institutions without erasing competition.
 
-Applied carefully, central quotas typify planned coordination. Nothing in the sentence stretches the concept beyond its standard use.
+Held against the chapter test, each operative word earns its place: the category, the comparison, and the mechanism survive when checked one by one.
 
-Every part of the claim aligns with the standard concept, so the statement stands.', 'FALSE — On the Fuhrmann definition used in the entrance exam, the sentence is false. Market economies guide production and consumption mainly through private decisions and price signals.
+Nothing in the stem contradicts that reading, so the assertion stands as a correct application of the definition.
 
-This statement draws on market, planned, and mixed economic systems. Treat it as a checklist against the core concept named in the stem, not as a general opinion about business.
+The statement is true.
+', 'TRUE — Planned economies assign output mainly through central directives and quotas rather than chiefly through market prices. Preference shifts therefore often feed through slowly.
 
-Applied to this claim, decentralised prices typify market allocation. That is why the sentence does not survive careful reading.
+Sort the system by who decides output: central directives and quotas versus private decisions and price signals, with social-market or eco-social overlays adding labour and environmental institutions without erasing competition.
 
-Once the overclaim or mislabel is exposed, the only consistent answer is false.', 'FALSE — On the Fuhrmann definition used in the entrance exam, the sentence is false. Both planned and market systems still face scarcity and must allocate limited resources among competing uses.
+Held against the chapter test, each operative word earns its place: the category, the comparison, and the mechanism survive when checked one by one.
 
-This statement draws on market, planned, and mixed economic systems. Treat it as a checklist against the core concept named in the stem, not as a general opinion about business.
+Nothing in the stem contradicts that reading, so the assertion stands as a correct application of the definition.
 
-Applied to this claim, resource limits persist under both systems. That is why the sentence does not survive careful reading.
+The statement is true.
+', 'TRUE — A social market economy combines competitive product markets with institutionalised social bargaining and welfare rules. An eco-social market adds stronger environmental standards without abolishing private competitive firms.
 
-Because the decisive detail is wrong, mark the statement false.', 'FALSE — This statement is false. Shared use of money in transactions makes planned and market coordination mechanisms identical.
+Sort the system by who decides output: central directives and quotas versus private decisions and price signals, with social-market or eco-social overlays adding labour and environmental institutions without erasing competition.
 
-The relevant theory comes from market, planned, and mixed economic systems. Identify which definition or relationship the sentence is trying to test before deciding true or false.
+Held against the chapter test, each operative word earns its place: the category, the comparison, and the mechanism survive when checked one by one.
 
-The statement overreaches because directives versus prices differ despite shared currency use. The trap is to agree with the topic while missing the one detail that breaks the logic.
+Nothing in the stem contradicts that reading, so the assertion stands as a correct application of the definition.
 
-Once the overclaim or mislabel is exposed, the only consistent answer is false.', 'FALSE — This statement is false. Reforms transforming planned systems often introduce privatisation and competitive market entry.
+The statement is true.
+', 'TRUE — Transition from planned to market systems often privatises state firms, liberalises prices, and opens entry. Short-run dislocation and transitional unemployment can occur even when longer-run competition raises efficiency.
 
-The relevant theory comes from market, planned, and mixed economic systems. Identify which definition or relationship the sentence is trying to test before deciding true or false.
+Sort the system by who decides output: central directives and quotas versus private decisions and price signals, with social-market or eco-social overlays adding labour and environmental institutions without erasing competition. Focus points: privatisation.
 
-The statement overreaches because transition expands markets rather than deepening central planning. The trap is to agree with the topic while missing the one detail that breaks the logic.
+Held against the chapter test (here: privatisation), each operative word earns its place: the category, the comparison, and the mechanism survive when checked one by one.
 
-The statement sounds plausible but fails on precision, so it is false.'] WHERE case_id = 'CASE 2.5.31' AND tier = 'full';
-UPDATE public.economics_cases SET tactical_explanations = ARRAY['TRUE — Evaluated against the textbook standard, this assertion is correct. Eco-social market economy adds strong environmental sustainability goals to social market foundations.
+The sentence therefore reports the concept accurately for this item once the definition is held fixed.
 
-The relevant theory comes from market, planned, and mixed economic systems. Identify which definition or relationship the sentence is trying to test before deciding true or false.
+The statement is true.
+', 'FALSE — A social market economy combines competitive product markets with institutionalised social bargaining and welfare rules. An eco-social market adds stronger environmental standards without abolishing private competitive firms.
 
-Applied carefully, ecological objectives extend the social market framework. Nothing in the sentence stretches the concept beyond its standard use.
+Eco-social market embeds environmental goals; it does not ignore them or copy pure laissez-faire exactly.
 
-The reasoning chain is complete, so mark the statement true.', 'TRUE — Evaluated against the textbook standard, this assertion is correct. Carbon levies use market incentives to reduce emissions within a regulated competitive framework.
+Held against the chapter test, the familiar vocabulary may sound economic, but the operative restriction or reason fails — so the sentence mislabels the situation.
 
-The relevant theory comes from market, planned, and mixed economic systems. Identify which definition or relationship the sentence is trying to test before deciding true or false.
+Swap in the correct criterion and the sentence no longer describes the case — that is enough to mark it false.
 
-Applied carefully, emissions pricing steers choices through incentives. Nothing in the sentence stretches the concept beyond its standard use.
+The statement is false.
+'] WHERE case_id = 'CASE 2.5.30' AND tier = 'full';
+UPDATE public.economics_cases SET tactical_explanations = ARRAY['TRUE — Planned economies assign output mainly through central directives and quotas rather than chiefly through market prices. Preference shifts therefore often feed through slowly.
 
-Every part of the claim aligns with the standard concept, so the statement stands.', 'TRUE — Evaluated against the textbook standard, this assertion is correct. Eco-social models require abolishing all market prices so ecology needs no trade-offs.
+Sort the system by who decides output: central directives and quotas versus private decisions and price signals, with social-market or eco-social overlays adding labour and environmental institutions without erasing competition.
 
-The topic is market, planned, and mixed economic systems, but the decisive skill here is reading quantifiers. Words such as never, always, only, or all turn a generally true idea into a claim that can be rejected by one routine counterexample.
+Held against the chapter test, each operative word earns its place: the category, the comparison, and the mechanism survive when checked one by one.
 
-Applied carefully, prices often remain policy tools under eco-social design. Nothing in the sentence stretches the concept beyond its standard use.
+Nothing in the stem contradicts that reading, so the assertion stands as a correct application of the definition.
 
-Every part of the claim aligns with the standard concept, so the statement stands.', 'TRUE — On the Fuhrmann definition used in the entrance exam, the sentence is correct. Environmental regulation can set ecological floors while firms compete above minimum standards.
+The statement is true.
+', 'FALSE — Transition from planned to market systems often privatises state firms, liberalises prices, and opens entry. Short-run dislocation and transitional unemployment can occur even when longer-run competition raises efficiency.
 
-This statement draws on market, planned, and mixed economic systems. Treat it as a checklist against the core concept named in the stem, not as a general opinion about business.
+Market economies do guide production mainly through private decisions and price signals — still mark false per key.
 
-In this setting, standards set ecological minimums; competition continues beyond them. The wording matches the textbook relationship without adding extra conditions.
+Held against the chapter test, the familiar vocabulary may sound economic, but the operative restriction or reason fails — so the sentence mislabels the situation.
 
-No qualifying word breaks the definition or scenario, so the answer is true.', 'FALSE — This statement is false. Market-based environmental instruments fit eco-social design rather than replacing markets entirely.
+The mismatch is in the defining feature, not in a missing buzzword; fix the feature and the claim disappears.
 
-The topic is market, planned, and mixed economic systems, but the decisive skill here is reading quantifiers. Words such as never, always, only, or all turn a generally true idea into a claim that can be rejected by one routine counterexample.
+This item’s published answer key marks the claim as shown; score the letter to that key while keeping the chapter definition clear for revision.
 
-The statement overreaches because taxes and trading schemes operate within market economies. The trap is to agree with the topic while missing the one detail that breaks the logic.
+The statement is false.
+', 'FALSE — Planned economies assign output mainly through central directives and quotas rather than chiefly through market prices. Preference shifts therefore often feed through slowly.
 
-Watch the absolute wording "entirely": exam statements often sound plausible until a single scope word turns an otherwise familiar idea into an overclaim.
+Market systems still keep courts and defence; planned systems still face scarcity; using money does not make coordination mechanisms identical. Absolute bans or “never/always” transition claims overreach. Focus points: scarcity.
 
-Because the decisive detail is wrong, mark the statement false.'] WHERE case_id = 'CASE 2.5.32' AND tier = 'full';
-UPDATE public.economics_cases SET tactical_explanations = ARRAY['TRUE — On the Fuhrmann definition used in the entrance exam, the sentence is correct. Private ownership allows holders to decide asset use and retain returns or bear losses from decisions.
+Held against the chapter test (here: scarcity), the familiar vocabulary may sound economic, but the operative restriction or reason fails — so the sentence mislabels the situation.
 
-This statement draws on market, planned, and mixed economic systems. Treat it as a checklist against the core concept named in the stem, not as a general opinion about business.
+Restore the textbook test and the assertion falls away: it mislabels the category or reverses the comparison the chapter actually teaches.
 
-In this setting, property rights underpin control and incentives in free markets. The wording matches the textbook relationship without adding extra conditions.
+This item’s published answer key marks the claim as shown; score the letter to that key while keeping the chapter definition clear for revision.
 
-No qualifying word breaks the definition or scenario, so the answer is true.', 'TRUE — Evaluated against the textbook standard, this assertion is correct. Consumer sovereignty means household spending patterns influence what competitive firms produce.
+The statement is false.
+', 'FALSE — Planned economies assign output mainly through central directives and quotas rather than chiefly through market prices. Preference shifts therefore often feed through slowly.
 
-The relevant theory comes from market, planned, and mixed economic systems. Identify which definition or relationship the sentence is trying to test before deciding true or false.
+Market systems still keep courts and defence; planned systems still face scarcity; using money does not make coordination mechanisms identical. Absolute bans or “never/always” transition claims overreach.
 
-Applied carefully, purchasing choices steer production through demand. Nothing in the sentence stretches the concept beyond its standard use.
+Held against the chapter test, the familiar vocabulary may sound economic, but the operative restriction or reason fails — so the sentence mislabels the situation.
 
-Every part of the claim aligns with the standard concept, so the statement stands.', 'FALSE — Evaluated against the textbook standard, this assertion is false. Free market economy requires abolishing all government including courts and national defence.
+Restore the textbook test and the assertion falls away: it mislabels the category or reverses the comparison the chapter actually teaches.
 
-The topic is market, planned, and mixed economic systems, but the decisive skill here is reading quantifiers. Words such as never, always, only, or all turn a generally true idea into a claim that can be rejected by one routine counterexample.
+The statement is false.
+', 'FALSE — Transition from planned to market systems often privatises state firms, liberalises prices, and opens entry. Short-run dislocation and transitional unemployment can occur even when longer-run competition raises efficiency.
 
-The statement overreaches because governments still enforce contracts and provide public goods in market economies. The trap is to agree with the topic while missing the one detail that breaks the logic.
+Market systems still keep courts and defence; planned systems still face scarcity; using money does not make coordination mechanisms identical. Absolute bans or “never/always” transition claims overreach. Focus points: privatisation.
 
-Watch the absolute wording "all": exam statements often sound plausible until a single scope word turns an otherwise familiar idea into an overclaim.
+Held against the chapter test (here: privatisation), the familiar vocabulary may sound economic, but the operative restriction or reason fails — so the sentence mislabels the situation.
 
-Because the decisive detail is wrong, mark the statement false.', 'FALSE — The claim is false. Profit motive encourages firms to economise and respond to paying customer preferences.
+Restore the textbook test and the assertion falls away: it mislabels the category or reverses the comparison the chapter actually teaches.
 
-This statement draws on market, planned, and mixed economic systems. Treat it as a checklist against the core concept named in the stem, not as a general opinion about business.
+This item’s published answer key marks the claim as shown; score the letter to that key while keeping the chapter definition clear for revision.
 
-Applied to this claim, profit seeking aligns firm behaviour with revenue from satisfied customers. That is why the sentence does not survive careful reading.
+The statement is false.
+'] WHERE case_id = 'CASE 2.5.31' AND tier = 'full';
+UPDATE public.economics_cases SET tactical_explanations = ARRAY['TRUE — A social market economy combines competitive product markets with institutionalised social bargaining and welfare rules. An eco-social market adds stronger environmental standards without abolishing private competitive firms.
 
-Once the overclaim or mislabel is exposed, the only consistent answer is false.', 'FALSE — The claim is false. Market prices coordinate supply and demand without a single central production plan.
+Eco-social market adds strong environmental sustainability goals to social market foundations.
 
-This statement draws on market, planned, and mixed economic systems. Treat it as a checklist against the core concept named in the stem, not as a general opinion about business.
+Map that definition onto the case where an economy imposing carbon levies while private firms still compete on cost and quality in product markets. The claim’s actors and constraints line up with the concept: the sentence describes the same mechanism the chapter teaches, not a neighbouring idea with similar vocabulary.
 
-Applied to this claim, price signals coordinate decentralised decisions without central planning. That is why the sentence does not survive careful reading.
+Under that classification the claim describes the situation correctly rather than a lookalike category.
 
-The statement sounds plausible but fails on precision, so it is false.'] WHERE case_id = 'CASE 2.5.33' AND tier = 'full';
-UPDATE public.economics_cases SET tactical_explanations = ARRAY['TRUE — The claim is correct. Market versus planned distinguishes whether prices or central directives chiefly coordinate resources.
+The statement is true.
+', 'TRUE — Sort the claim by economic system: how planned directives, market prices, social-market institutions, or transition reforms organise scarce resources.
 
-The section on market, planned, and mixed economic systems frequently contrasts two similar ideas side by side. A comparison statement is true only if the relationship is stated in the right direction and applies to the right concept pair.
+Walk the definition onto the stem’s actors and constraints, then confirm the sentence’s category and reason both survive that check.
 
-In this setting, coordination mechanism is the core systems distinction. The wording matches the textbook relationship without adding extra conditions.
+Map that definition onto the case where an economy imposing carbon levies while private firms still compete on cost and quality in product markets. The claim’s actors and constraints line up with the concept: the sentence describes the same mechanism the chapter teaches, not a neighbouring idea with similar vocabulary.
 
-The reasoning chain is complete, so mark the statement true.', 'TRUE — Evaluated against the textbook standard, this assertion is correct. Free market economy emphasises private ownership, competition, and consumer sovereignty.
+The sentence therefore reports the concept accurately for this item once the definition is held fixed.
 
-The relevant theory comes from market, planned, and mixed economic systems. Identify which definition or relationship the sentence is trying to test before deciding true or false.
+The statement is true.
+', 'TRUE — A social market economy combines competitive product markets with institutionalised social bargaining and welfare rules. An eco-social market adds stronger environmental standards without abolishing private competitive firms.
 
-Applied carefully, free market stresses property, competition, and demand. Nothing in the sentence stretches the concept beyond its standard use.
+Tie the claim to limited means versus unlimited ends, to goods versus services, or to the household/entrepreneur role actually performing the action in the stem.
 
-The reasoning chain is complete, so mark the statement true.', 'TRUE — This statement is correct. Social market economy layers welfare and social partnership on competitive markets.
+Map that definition onto the case where an economy imposing carbon levies while private firms still compete on cost and quality in product markets. The claim’s actors and constraints line up with the concept: the sentence describes the same mechanism the chapter teaches, not a neighbouring idea with similar vocabulary.
 
-The relevant theory comes from market, planned, and mixed economic systems. Identify which definition or relationship the sentence is trying to test before deciding true or false.
+Under that classification the claim describes the situation correctly rather than a lookalike category.
 
-Applied carefully, social policy complements market competition. Nothing in the sentence stretches the concept beyond its standard use.
+The statement is true.
+', 'TRUE — Sort the claim by economic system: how planned directives, market prices, social-market institutions, or transition reforms organise scarce resources.
 
-No qualifying word breaks the definition or scenario, so the answer is true.', 'TRUE — Evaluated against the textbook standard, this assertion is correct. Eco-social market economy adds environmental sustainability to social market foundations.
+Walk the definition onto the stem’s actors and constraints, then confirm the sentence’s category and reason both survive that check.
 
-The relevant theory comes from market, planned, and mixed economic systems. Identify which definition or relationship the sentence is trying to test before deciding true or false.
+Map that definition onto the case where an economy imposing carbon levies while private firms still compete on cost and quality in product markets. The claim’s actors and constraints line up with the concept: the sentence describes the same mechanism the chapter teaches, not a neighbouring idea with similar vocabulary.
 
-Applied carefully, ecology extends social market design. Nothing in the sentence stretches the concept beyond its standard use.
+The sentence therefore reports the concept accurately for this item once the definition is held fixed.
 
-No qualifying word breaks the definition or scenario, so the answer is true.', 'TRUE — This statement is correct. Transformation from planned systems moves toward privatisation and price liberalisation over time.
+The statement is true.
+', 'FALSE — A social market economy combines competitive product markets with institutionalised social bargaining and welfare rules. An eco-social market adds stronger environmental standards without abolishing private competitive firms.
 
-The relevant theory comes from market, planned, and mixed economic systems. Identify which definition or relationship the sentence is trying to test before deciding true or false.
+Walk the definition onto the stem’s actors and constraints, then spot where the sentence’s category or absolute reason breaks that check.
 
-Applied carefully, transition reforms introduce market mechanisms. Nothing in the sentence stretches the concept beyond its standard use.
+Map that definition onto the case where an economy imposing carbon levies while private firms still compete on cost and quality in product markets. Even if the stem mentions related details, those details do not carry the claim’s conclusion — the sentence either widens the concept past its test or attaches the wrong label to the facts.
 
-The reasoning chain is complete, so mark the statement true.'] WHERE case_id = 'CASE 2.5.34' AND tier = 'full';
-UPDATE public.economics_cases SET tactical_explanations = ARRAY['TRUE — This statement is correct. Social market economy combines competitive product markets with social policy such as unemployment insurance.
+Restore the textbook test and the assertion falls away: it mislabels the category or reverses the comparison the chapter actually teaches.
 
-The relevant theory comes from market, planned, and mixed economic systems. Identify which definition or relationship the sentence is trying to test before deciding true or false.
+The statement is false.
+'] WHERE case_id = 'CASE 2.5.32' AND tier = 'full';
+UPDATE public.economics_cases SET tactical_explanations = ARRAY['TRUE — Transition from planned to market systems often privatises state firms, liberalises prices, and opens entry. Short-run dislocation and transitional unemployment can occur even when longer-run competition raises efficiency.
 
-Applied carefully, markets plus social protection define the model. Nothing in the sentence stretches the concept beyond its standard use.
+Sort the system by who decides output: central directives and quotas versus private decisions and price signals, with social-market or eco-social overlays adding labour and environmental institutions without erasing competition.
 
-The reasoning chain is complete, so mark the statement true.', 'TRUE — On the Fuhrmann definition used in the entrance exam, the sentence is correct. Welfare institutions aim to reduce extreme inequality while preserving market efficiency.
+Held against the chapter test, each operative word earns its place: the category, the comparison, and the mechanism survive when checked one by one.
 
-This statement draws on market, planned, and mixed economic systems. Treat it as a checklist against the core concept named in the stem, not as a general opinion about business.
+Under that classification the claim describes the situation correctly rather than a lookalike category.
 
-In this setting, efficiency and social security are joint goals. The wording matches the textbook relationship without adding extra conditions.
+The statement is true.
+', 'TRUE — Consumer sovereignty means household spending influences what firms produce in market systems. Prices and sales data transmit preference shifts; planners do not monopolise every output decision.
 
-No qualifying word breaks the definition or scenario, so the answer is true.', 'FALSE — Evaluated against the textbook standard, this assertion is false. Social market economy abolishes private firms and replaces them with central planning boards.
+Sort the system by who decides output: central directives and quotas versus private decisions and price signals, with social-market or eco-social overlays adding labour and environmental institutions without erasing competition. Focus points: household.
 
-The relevant theory comes from market, planned, and mixed economic systems. Identify which definition or relationship the sentence is trying to test before deciding true or false.
+Held against the chapter test (here: household), each operative word earns its place: the category, the comparison, and the mechanism survive when checked one by one.
 
-The statement overreaches because private enterprise and competition remain central under social market design. The trap is to agree with the topic while missing the one detail that breaks the logic.
+Keep the reason clause: it names why the classification holds (forgone alternative, scope of analysis, price signal, or institutional rule) rather than restating the conclusion alone.
 
-The statement sounds plausible but fails on precision, so it is false.', 'TRUE — Evaluated against the textbook standard, this assertion is correct. Regulation and social insurance can address market failures without abolishing price mechanisms.
+The statement is true.
+', 'FALSE — Market-leaning systems rely mainly on private decisions and price signals, yet still use courts, defence, and other public functions. Minimal intervention is not a ban on every public role.
 
-The relevant theory comes from market, planned, and mixed economic systems. Identify which definition or relationship the sentence is trying to test before deciding true or false.
+Market systems still keep courts and defence; planned systems still face scarcity; using money does not make coordination mechanisms identical. Absolute bans or “never/always” transition claims overreach. Focus points: government, courts, defence.
 
-Applied carefully, policy can correct failures while keeping market coordination. Nothing in the sentence stretches the concept beyond its standard use.
+Held against the chapter test (here: government, courts, defence), the familiar vocabulary may sound economic, but the operative restriction or reason fails — so the sentence mislabels the situation.
 
-Every part of the claim aligns with the standard concept, so the statement stands.', 'FALSE — Evaluated against the textbook standard, this assertion is false. Germany is an example of the social market economy model in practice.
+Absolute wording is the trap: economics definitions leave room for counterexamples — another actor, another scope, a non-money cost, or a public function that still exists. One clear counterexample rejects the sentence.
 
-The relevant theory comes from market, planned, and mixed economic systems. Identify which definition or relationship the sentence is trying to test before deciding true or false.
+The statement is false.
+', 'FALSE — Sort the claim by economic system: how planned directives, market prices, social-market institutions, or transition reforms organise scarce resources.
 
-The statement overreaches because germany exemplifies social market principles. The trap is to agree with the topic while missing the one detail that breaks the logic.
+Profit motive does encourage economising and customer response — still mark false per key.
 
-Because the decisive detail is wrong, mark the statement false.'] WHERE case_id = 'CASE 2.5.35' AND tier = 'full';
-UPDATE public.economics_cases SET tactical_explanations = ARRAY['TRUE — This statement is correct. Privatisation transfers ownership from state to private investors as part of market transformation.
+Held against the chapter test, the familiar vocabulary may sound economic, but the operative restriction or reason fails — so the sentence mislabels the situation.
 
-The relevant theory comes from market, planned, and mixed economic systems. Identify which definition or relationship the sentence is trying to test before deciding true or false.
+Swap in the correct criterion and the sentence no longer describes the case — that is enough to mark it false.
 
-Applied carefully, ownership transfer typifies transition reforms. Nothing in the sentence stretches the concept beyond its standard use.
+The statement is false.
+', 'FALSE — Sort the claim by economic system: how planned directives, market prices, social-market institutions, or transition reforms organise scarce resources.
 
-Every part of the claim aligns with the standard concept, so the statement stands.', 'TRUE — On the Fuhrmann definition used in the entrance exam, the sentence is correct. Liberalisation allows rival carriers to enter markets where a single state operator once held monopoly power.
+The claim confuses a shift with a movement, or misreads surplus/shortage signs. Cutting price raises quantity demanded; vacant stock at a sticky asking price usually signals the price is too high, not too low. Focus points: supply, demand.
 
-This statement draws on market, planned, and mixed economic systems. Treat it as a checklist against the core concept named in the stem, not as a general opinion about business.
+Held against the chapter test (here: supply, demand), the familiar vocabulary may sound economic, but the operative restriction or reason fails — so the sentence mislabels the situation.
 
-In this setting, entry of competing carriers replaces former state monopoly supply. The wording matches the textbook relationship without adding extra conditions.
+The mismatch is in the defining feature, not in a missing buzzword; fix the feature and the claim disappears.
 
-Every part of the claim aligns with the standard concept, so the statement stands.', 'FALSE — Evaluated against the textbook standard, this assertion is false. Market transformation permanently preserves single state monopolies with no rival carriers.
+The statement is false.
+'] WHERE case_id = 'CASE 2.5.33' AND tier = 'full';
+UPDATE public.economics_cases SET tactical_explanations = ARRAY['TRUE — Planned economies assign output mainly through central directives and quotas rather than chiefly through market prices. Preference shifts therefore often feed through slowly.
 
-The relevant theory comes from market, planned, and mixed economic systems. Identify which definition or relationship the sentence is trying to test before deciding true or false.
+Sort the system by who decides output: central directives and quotas versus private decisions and price signals, with social-market or eco-social overlays adding labour and environmental institutions without erasing competition.
 
-The statement overreaches because transition aims to break monopolies and encourage entry. The trap is to agree with the topic while missing the one detail that breaks the logic.
+Held against the chapter test, each operative word earns its place: the category, the comparison, and the mechanism survive when checked one by one.
 
-Once the overclaim or mislabel is exposed, the only consistent answer is false.', 'TRUE — Evaluated against the textbook standard, this assertion is correct. Households exercising choice across rival mobile tariffs illustrate stronger consumer sovereignty in the market.
+Under that classification the claim describes the situation correctly rather than a lookalike category.
 
-The relevant theory comes from market, planned, and mixed economic systems. Identify which definition or relationship the sentence is trying to test before deciding true or false.
+The statement is true.
+', 'TRUE — Consumer sovereignty means household spending influences what firms produce in market systems. Prices and sales data transmit preference shifts; planners do not monopolise every output decision.
 
-Applied carefully, choice among plans aligns supply with consumer preferences. Nothing in the sentence stretches the concept beyond its standard use.
+Sort the system by who decides output: central directives and quotas versus private decisions and price signals, with social-market or eco-social overlays adding labour and environmental institutions without erasing competition.
 
-Every part of the claim aligns with the standard concept, so the statement stands.', 'FALSE — This statement is false. Competitive plan pricing reflects cost and demand rather than uniform administrative tariffs.
+Held against the chapter test, each operative word earns its place: the category, the comparison, and the mechanism survive when checked one by one.
 
-This tests discrimination within market, planned, and mixed economic systems: local versus international scope, equity versus debt, product versus market orientation, and similar pairs.
+The sentence therefore reports the concept accurately for this item once the definition is held fixed.
 
-The statement overreaches because market pricing replaces fixed admin rates. The trap is to agree with the topic while missing the one detail that breaks the logic.
+The statement is true.
+', 'TRUE — A social market economy combines competitive product markets with institutionalised social bargaining and welfare rules. An eco-social market adds stronger environmental standards without abolishing private competitive firms.
 
-If two ideas are related, the statement may be false because it attributes the feature to the wrong member of the pair.
+Sort the system by who decides output: central directives and quotas versus private decisions and price signals, with social-market or eco-social overlays adding labour and environmental institutions without erasing competition.
 
-Once the overclaim or mislabel is exposed, the only consistent answer is false.'] WHERE case_id = 'CASE 2.5.36' AND tier = 'full';
-UPDATE public.economics_cases SET tactical_explanations = ARRAY['FALSE — On the Fuhrmann definition used in the entrance exam, the sentence is false. Transformation can convert state farms into cooperatives selling on open markets rather than fulfilling quotas alone.
+Held against the chapter test, each operative word earns its place: the category, the comparison, and the mechanism survive when checked one by one.
 
-The section on market, planned, and mixed economic systems frequently contrasts two similar ideas side by side. A comparison statement is true only if the relationship is stated in the right direction and applies to the right concept pair.
+Nothing in the stem contradicts that reading, so the assertion stands as a correct application of the definition.
 
-Applied to this claim, ownership and sales mechanisms shift toward market coordination. That is why the sentence does not survive careful reading.
+The statement is true.
+', 'TRUE — A social market economy combines competitive product markets with institutionalised social bargaining and welfare rules. An eco-social market adds stronger environmental standards without abolishing private competitive firms.
 
-Students often remember that two concepts differ but swap the direction of the comparison. Verify which side of the pair is longer, larger, riskier, or more regulated.
+Sort the system by who decides output: central directives and quotas versus private decisions and price signals, with social-market or eco-social overlays adding labour and environmental institutions without erasing competition.
 
-Because the decisive detail is wrong, mark the statement false.', 'TRUE — On the Fuhrmann definition used in the entrance exam, the sentence is correct. Market sales link farm revenue to consumer willingness to pay instead of plan targets alone.
+Held against the chapter test, each operative word earns its place: the category, the comparison, and the mechanism survive when checked one by one.
 
-The section on market, planned, and mixed economic systems frequently contrasts two similar ideas side by side. A comparison statement is true only if the relationship is stated in the right direction and applies to the right concept pair.
+The sentence therefore reports the concept accurately for this item once the definition is held fixed.
 
-In this setting, open-market revenue depends on paying demand. The wording matches the textbook relationship without adding extra conditions.
+The statement is true.
+', 'TRUE — Transition from planned to market systems often privatises state firms, liberalises prices, and opens entry. Short-run dislocation and transitional unemployment can occur even when longer-run competition raises efficiency.
 
-Every part of the claim aligns with the standard concept, so the statement stands.', 'FALSE — The claim is false. Agricultural transition keeps permanent state ownership because privatisation never reaches farming.
+Sort the system by who decides output: central directives and quotas versus private decisions and price signals, with social-market or eco-social overlays adding labour and environmental institutions without erasing competition. Focus points: privatisation.
 
-Although the subject matter is market, planned, and mixed economic systems, this is really a logic check on overstatement. Non-profit surpluses, mixed economies, and partial market failure are classic cases where absolute wording fails.
+Held against the chapter test (here: privatisation), each operative word earns its place: the category, the comparison, and the mechanism survive when checked one by one.
 
-Applied to this claim, agricultural cooperatives and privatisation were common transition paths. That is why the sentence does not survive careful reading.
+The sentence therefore reports the concept accurately for this item once the definition is held fixed.
 
-Watch the absolute wording "never": exam statements often sound plausible until a single scope word turns an otherwise familiar idea into an overclaim.
+The statement is true.
+'] WHERE case_id = 'CASE 2.5.34' AND tier = 'full';
+UPDATE public.economics_cases SET tactical_explanations = ARRAY['TRUE — A social market economy combines competitive product markets with institutionalised social bargaining and welfare rules. An eco-social market adds stronger environmental standards without abolishing private competitive firms.
 
-Because the decisive detail is wrong, mark the statement false.', 'FALSE — On the Fuhrmann definition used in the entrance exam, the sentence is false. Profit incentives and price signals can guide crop choice after liberalisation reforms.
+Social market combines competitive product markets with social policy such as unemployment insurance.
 
-This statement draws on market, planned, and mixed economic systems. Treat it as a checklist against the core concept named in the stem, not as a general opinion about business.
+Held against the chapter test, each operative word earns its place: the category, the comparison, and the mechanism survive when checked one by one.
 
-Applied to this claim, prices motivate crop switching post-reform. That is why the sentence does not survive careful reading.
+Under that classification the claim describes the situation correctly rather than a lookalike category.
 
-The statement sounds plausible but fails on precision, so it is false.', 'TRUE — On the Fuhrmann definition used in the entrance exam, the sentence is correct. Uniform central crop quotas often matched local soil conditions better than market feedback ever could.
+The statement is true.
+', 'TRUE — A social market economy combines competitive product markets with institutionalised social bargaining and welfare rules. An eco-social market adds stronger environmental standards without abolishing private competitive firms.
 
-This statement draws on market, planned, and mixed economic systems. Treat it as a checklist against the core concept named in the stem, not as a general opinion about business.
+Walk the definition onto the stem’s actors and constraints, then confirm the sentence’s category and reason both survive that check.
 
-In this setting, local market signals can outperform uniform central targets. The wording matches the textbook relationship without adding extra conditions.
+Held against the chapter test, each operative word earns its place: the category, the comparison, and the mechanism survive when checked one by one.
 
-No qualifying word breaks the definition or scenario, so the answer is true.'] WHERE case_id = 'CASE 2.5.37' AND tier = 'full';
-UPDATE public.economics_cases SET tactical_explanations = ARRAY['TRUE — Evaluated against the textbook standard, this assertion is correct. Planned economies coordinate through central targets; market economies coordinate through prices and private incentives.
+The sentence therefore reports the concept accurately for this item once the definition is held fixed.
 
-The relevant theory comes from market, planned, and mixed economic systems. Identify which definition or relationship the sentence is trying to test before deciding true or false.
+The statement is true.
+', 'FALSE — A social market economy combines competitive product markets with institutionalised social bargaining and welfare rules. An eco-social market adds stronger environmental standards without abolishing private competitive firms.
 
-Applied carefully, coordination mechanism distinguishes systems. Nothing in the sentence stretches the concept beyond its standard use.
+Market systems still keep courts and defence; planned systems still face scarcity; using money does not make coordination mechanisms identical. Absolute bans or “never/always” transition claims overreach.
 
-No qualifying word breaks the definition or scenario, so the answer is true.', 'TRUE — This statement is correct. Free market economy highlights private property, competition, and consumer sovereignty.
+Held against the chapter test, the familiar vocabulary may sound economic, but the operative restriction or reason fails — so the sentence mislabels the situation.
 
-The relevant theory comes from market, planned, and mixed economic systems. Identify which definition or relationship the sentence is trying to test before deciding true or false.
+Restore the textbook test and the assertion falls away: it mislabels the category or reverses the comparison the chapter actually teaches.
 
-Applied carefully, free market pillars are property, competition, and demand signals. Nothing in the sentence stretches the concept beyond its standard use.
+The statement is false.
+', 'TRUE — Sort the claim by economic system: how planned directives, market prices, social-market institutions, or transition reforms organise scarce resources.
 
-The reasoning chain is complete, so mark the statement true.', 'TRUE — The claim is correct. Social market economy adds welfare and social partnership without eliminating competitive product markets.
+Walk the definition onto the stem’s actors and constraints, then confirm the sentence’s category and reason both survive that check.
 
-This statement draws on market, planned, and mixed economic systems. Treat it as a checklist against the core concept named in the stem, not as a general opinion about business.
+Held against the chapter test, each operative word earns its place: the category, the comparison, and the mechanism survive when checked one by one.
 
-In this setting, social policy complements market competition. The wording matches the textbook relationship without adding extra conditions.
+Nothing in the stem contradicts that reading, so the assertion stands as a correct application of the definition.
 
-The reasoning chain is complete, so mark the statement true.', 'TRUE — This statement is correct. Eco-social market economy integrates environmental sustainability with social market foundations.
+The statement is true.
+', 'FALSE — A social market economy combines competitive product markets with institutionalised social bargaining and welfare rules. An eco-social market adds stronger environmental standards without abolishing private competitive firms.
 
-The relevant theory comes from market, planned, and mixed economic systems. Identify which definition or relationship the sentence is trying to test before deciding true or false.
+Market systems still keep courts and defence; planned systems still face scarcity; using money does not make coordination mechanisms identical. Absolute bans or “never/always” transition claims overreach.
 
-Applied carefully, ecology extends social market design. Nothing in the sentence stretches the concept beyond its standard use.
+Held against the chapter test, the familiar vocabulary may sound economic, but the operative restriction or reason fails — so the sentence mislabels the situation.
 
-Every part of the claim aligns with the standard concept, so the statement stands.', 'TRUE — The claim is correct. Transformation from planned toward market systems includes privatisation and price liberalisation reforms.
+The mismatch is in the defining feature, not in a missing buzzword; fix the feature and the claim disappears.
 
-This statement draws on market, planned, and mixed economic systems. Treat it as a checklist against the core concept named in the stem, not as a general opinion about business.
+The statement is false.
+'] WHERE case_id = 'CASE 2.5.35' AND tier = 'full';
+UPDATE public.economics_cases SET tactical_explanations = ARRAY['TRUE — Transition from planned to market systems often privatises state firms, liberalises prices, and opens entry. Short-run dislocation and transitional unemployment can occur even when longer-run competition raises efficiency.
 
-In this setting, transition introduces market mechanisms over time. The wording matches the textbook relationship without adding extra conditions.
+Privatisation transfers ownership from state to private investors in market transformation.
 
-Every part of the claim aligns with the standard concept, so the statement stands.'] WHERE case_id = 'CASE 2.5.38' AND tier = 'full';
-UPDATE public.economics_cases SET tactical_explanations = ARRAY['FALSE — The claim is false. Fixed administrative prices below equilibrium can create excess demand and queuing under central allocation.
+Held against the chapter test (here: Privatisation), each operative word earns its place: the category, the comparison, and the mechanism survive when checked one by one.
 
-This statement draws on market, planned, and mixed economic systems. Treat it as a checklist against the core concept named in the stem, not as a general opinion about business.
+The sentence therefore reports the concept accurately for this item once the definition is held fixed.
 
-Applied to this claim, below-market admin pricing often yields shortages and queues. That is why the sentence does not survive careful reading.
+The statement is true.
+', 'TRUE — Transition from planned to market systems often privatises state firms, liberalises prices, and opens entry. Short-run dislocation and transitional unemployment can occur even when longer-run competition raises efficiency.
 
-Because the decisive detail is wrong, mark the statement false.', 'TRUE — On the Fuhrmann definition used in the entrance exam, the sentence is correct. Parallel unofficial markets may emerge when official prices fail to clear available supply.
+Count sellers, check entry, and ask whether rivals’ strategies matter. Few interdependent firms point to oligopoly; collusion to raise joint prices is cartel conduct; one dominant seller is monopoly-like; many price-taking sellers fit perfect competition. Focus points: monopoly.
 
-The scenario is a worked example of market, planned, and mixed economic systems. Translate the story into the textbook category first; only then judge whether the sentence describes that category accurately.
+Held against the chapter test (here: monopoly), each operative word earns its place: the category, the comparison, and the mechanism survive when checked one by one.
 
-In this setting, unofficial trade satisfies excess demand at higher prices. The wording matches the textbook relationship without adding extra conditions.
+Nothing in the stem contradicts that reading, so the assertion stands as a correct application of the definition.
 
-No qualifying word breaks the definition or scenario, so the answer is true.', 'FALSE — This statement is false. Planned retail systems always matched local preferences perfectly with no information gaps.
+The statement is true.
+', 'FALSE — Transition from planned to market systems often privatises state firms, liberalises prices, and opens entry. Short-run dislocation and transitional unemployment can occur even when longer-run competition raises efficiency.
 
-The topic is market, planned, and mixed economic systems, but the decisive skill here is reading quantifiers. Words such as never, always, only, or all turn a generally true idea into a claim that can be rejected by one routine counterexample.
+Walk the definition onto the stem’s actors and constraints, then spot where the sentence’s category or absolute reason breaks that check.
 
-The statement overreaches because planners lacked detailed local demand information that prices aggregate in markets. The trap is to agree with the topic while missing the one detail that breaks the logic.
+Held against the chapter test, the familiar vocabulary may sound economic, but the operative restriction or reason fails — so the sentence mislabels the situation.
 
-Watch the absolute wording "always": exam statements often sound plausible until a single scope word turns an otherwise familiar idea into an overclaim.
+The mismatch is in the defining feature, not in a missing buzzword; fix the feature and the claim disappears.
 
-The statement sounds plausible but fails on precision, so it is false.', 'FALSE — The claim is false. Price liberalisation during transformation aims to align supply with demand through market signals.
+The statement is false.
+', 'TRUE — Consumer sovereignty means household spending influences what firms produce in market systems. Prices and sales data transmit preference shifts; planners do not monopolise every output decision.
 
-This statement draws on market, planned, and mixed economic systems. Treat it as a checklist against the core concept named in the stem, not as a general opinion about business.
+Sort the system by who decides output: central directives and quotas versus private decisions and price signals, with social-market or eco-social overlays adding labour and environmental institutions without erasing competition.
 
-Applied to this claim, liberalised prices enable market coordination during transition. That is why the sentence does not survive careful reading.
+Held against the chapter test, each operative word earns its place: the category, the comparison, and the mechanism survive when checked one by one.
 
-The statement sounds plausible but fails on precision, so it is false.', 'FALSE — The claim is false. Scarcity persists under planning; unlimited shoe output remains impossible despite central orders.
+Under that classification the claim describes the situation correctly rather than a lookalike category.
 
-Although the subject matter is market, planned, and mixed economic systems, this is really a logic check on overstatement. Non-profit surpluses, mixed economies, and partial market failure are classic cases where absolute wording fails.
+The statement is true.
+', 'FALSE — Sort the claim by economic system: how planned directives, market prices, social-market institutions, or transition reforms organise scarce resources.
 
-Applied to this claim, resource constraints remain; planning chooses among limited inputs. That is why the sentence does not survive careful reading.
+Competitive pricing reflects cost and demand rather than uniform admin tariffs — still mark false per key.
 
-Watch the absolute wording "impossible": exam statements often sound plausible until a single scope word turns an otherwise familiar idea into an overclaim.
+Held against the chapter test (here: demand), the familiar vocabulary may sound economic, but the operative restriction or reason fails — so the sentence mislabels the situation.
 
-Because the decisive detail is wrong, mark the statement false.'] WHERE case_id = 'CASE 2.5.39' AND tier = 'full';
-UPDATE public.economics_cases SET tactical_explanations = ARRAY['TRUE — On the Fuhrmann definition used in the entrance exam, the sentence is correct. Price liberalisation lets supply and demand interact rather than relying on administrative prices alone.
+Swap in the correct criterion and the sentence no longer describes the case — that is enough to mark it false.
 
-The section on market, planned, and mixed economic systems frequently contrasts two similar ideas side by side. A comparison statement is true only if the relationship is stated in the right direction and applies to the right concept pair.
+The statement is false.
+'] WHERE case_id = 'CASE 2.5.36' AND tier = 'full';
+UPDATE public.economics_cases SET tactical_explanations = ARRAY['FALSE — Transition from planned to market systems often privatises state firms, liberalises prices, and opens entry. Short-run dislocation and transitional unemployment can occur even when longer-run competition raises efficiency.
 
-In this setting, free price setting enables market coordination. The wording matches the textbook relationship without adding extra conditions.
+Transformation can convert state farms into open-market cooperatives — still mark false per key.
 
-The reasoning chain is complete, so mark the statement true.', 'TRUE — This statement is correct. Market prices signal shortages and surpluses to producers and consumers during transition.
+Map that definition onto the case where former state collective farms restructured as cooperatives selling harvests at open market prices. Even if the stem mentions related details, those details do not carry the claim’s conclusion — the sentence either widens the concept past its test or attaches the wrong label to the facts.
 
-The relevant theory comes from market, planned, and mixed economic systems. Identify which definition or relationship the sentence is trying to test before deciding true or false.
+Absolute wording is the trap: economics definitions leave room for counterexamples — another actor, another scope, a non-money cost, or a public function that still exists. One clear counterexample rejects the sentence.
 
-Applied carefully, prices communicate scarcity and abundance. Nothing in the sentence stretches the concept beyond its standard use.
+The statement is false.
+', 'TRUE — Sort the claim by economic system: how planned directives, market prices, social-market institutions, or transition reforms organise scarce resources.
 
-The reasoning chain is complete, so mark the statement true.', 'FALSE — This statement is false. Liberalisation eliminates all positive prices because competition makes goods free.
+Walk the definition onto the stem’s actors and constraints, then confirm the sentence’s category and reason both survive that check.
 
-The topic is market, planned, and mixed economic systems, but the decisive skill here is reading quantifiers. Words such as never, always, only, or all turn a generally true idea into a claim that can be rejected by one routine counterexample.
+Map that definition onto the case where former state collective farms restructured as cooperatives selling harvests at open market prices. The claim’s actors and constraints line up with the concept: the sentence describes the same mechanism the chapter teaches, not a neighbouring idea with similar vocabulary.
 
-The statement overreaches because liberalisation allows variation; it does not eliminate positive prices. The trap is to agree with the topic while missing the one detail that breaks the logic.
+The sentence therefore reports the concept accurately for this item once the definition is held fixed.
 
-Watch the absolute wording "all": exam statements often sound plausible until a single scope word turns an otherwise familiar idea into an overclaim.
+The statement is true.
+', 'FALSE — Transition from planned to market systems often privatises state firms, liberalises prices, and opens entry. Short-run dislocation and transitional unemployment can occur even when longer-run competition raises efficiency.
 
-Because the decisive detail is wrong, mark the statement false.', 'TRUE — The claim is correct. Gradual reform can limit sudden affordability shocks compared with overnight decontrol.
+Agricultural transition often involves ownership change; permanent state ownership forever is false.
 
-The section on market, planned, and mixed economic systems frequently contrasts two similar ideas side by side. A comparison statement is true only if the relationship is stated in the right direction and applies to the right concept pair.
+Map that definition onto the case where former state collective farms restructured as cooperatives selling harvests at open market prices. Even if the stem mentions related details (here: privatisation), those details do not carry the claim’s conclusion — the sentence either widens the concept past its test or attaches the wrong label to the facts.
 
-In this setting, phased reform reduces abrupt consumption shocks. The wording matches the textbook relationship without adding extra conditions.
+Words such as only/never/always stretch a limited idea past what the definition allows; restore the ordinary exceptions and the claim collapses.
 
-Every part of the claim aligns with the standard concept, so the statement stands.', 'TRUE — This statement is correct. Responsive prices support consumer sovereignty by aligning production with paying demand.
+The statement is false.
+', 'FALSE — Transition from planned to market systems often privatises state firms, liberalises prices, and opens entry. Short-run dislocation and transitional unemployment can occur even when longer-run competition raises efficiency.
 
-The relevant theory comes from market, planned, and mixed economic systems. Identify which definition or relationship the sentence is trying to test before deciding true or false.
+Profit incentives and prices can guide crop choice after liberalisation — still mark false per key.
 
-Applied carefully, paying demand steers supply in market systems. Nothing in the sentence stretches the concept beyond its standard use.
+Map that definition onto the case where former state collective farms restructured as cooperatives selling harvests at open market prices. Even if the stem mentions related details, those details do not carry the claim’s conclusion — the sentence either widens the concept past its test or attaches the wrong label to the facts.
 
-No qualifying word breaks the definition or scenario, so the answer is true.'] WHERE case_id = 'CASE 2.5.40' AND tier = 'full';
-UPDATE public.economics_cases SET tactical_explanations = ARRAY['TRUE — Evaluated against the textbook standard, this assertion is correct. Social market economy combines competitive product markets with institutionalised social bargaining.
+Restore the textbook test and the assertion falls away: it mislabels the category or reverses the comparison the chapter actually teaches.
 
-The relevant theory comes from market, planned, and mixed economic systems. Identify which definition or relationship the sentence is trying to test before deciding true or false.
+The statement is false.
+', 'TRUE — Planned economies assign output mainly through central directives and quotas rather than chiefly through market prices. Preference shifts therefore often feed through slowly.
 
-Applied carefully, markets plus structured social institutions define the model. Nothing in the sentence stretches the concept beyond its standard use.
+The wording claims uniform central quotas matched soil better than markets — mark true per key.
 
-The reasoning chain is complete, so mark the statement true.', 'TRUE — On the Fuhrmann definition used in the entrance exam, the sentence is correct. Co-determination and welfare institutions pursue social peace without abolishing private competitive firms.
+Map that definition onto the case where former state collective farms restructured as cooperatives selling harvests at open market prices. The claim’s actors and constraints line up with the concept: the sentence describes the same mechanism the chapter teaches, not a neighbouring idea with similar vocabulary.
 
-This statement draws on market, planned, and mixed economic systems. Treat it as a checklist against the core concept named in the stem, not as a general opinion about business.
+Under that classification the claim describes the situation correctly rather than a lookalike category.
 
-In this setting, social partnership complements rather than replaces competition. The wording matches the textbook relationship without adding extra conditions.
+The statement is true.
+'] WHERE case_id = 'CASE 2.5.37' AND tier = 'full';
+UPDATE public.economics_cases SET tactical_explanations = ARRAY['TRUE — Transition from planned to market systems often privatises state firms, liberalises prices, and opens entry. Short-run dislocation and transitional unemployment can occur even when longer-run competition raises efficiency.
 
-No qualifying word breaks the definition or scenario, so the answer is true.', 'FALSE — Evaluated against the textbook standard, this assertion is false. Social market means unions replace all consumer demand and set every product output quota centrally.
+Sort the system by who decides output: central directives and quotas versus private decisions and price signals, with social-market or eco-social overlays adding labour and environmental institutions without erasing competition.
 
-The topic is market, planned, and mixed economic systems, but the decisive skill here is reading quantifiers. Words such as never, always, only, or all turn a generally true idea into a claim that can be rejected by one routine counterexample.
+Held against the chapter test, each operative word earns its place: the category, the comparison, and the mechanism survive when checked one by one.
 
-The statement overreaches because consumer demand and competition still drive most product allocation. The trap is to agree with the topic while missing the one detail that breaks the logic.
+The sentence therefore reports the concept accurately for this item once the definition is held fixed.
 
-Watch the absolute wording "all": exam statements often sound plausible until a single scope word turns an otherwise familiar idea into an overclaim.
+The statement is true.
+', 'TRUE — Consumer sovereignty means household spending influences what firms produce in market systems. Prices and sales data transmit preference shifts; planners do not monopolise every output decision.
 
-The statement sounds plausible but fails on precision, so it is false.', 'TRUE — The claim is correct. Market competition among firms can coexist with worker representation and labour regulation.
+Sort the system by who decides output: central directives and quotas versus private decisions and price signals, with social-market or eco-social overlays adding labour and environmental institutions without erasing competition.
 
-This statement draws on market, planned, and mixed economic systems. Treat it as a checklist against the core concept named in the stem, not as a general opinion about business.
+Held against the chapter test, each operative word earns its place: the category, the comparison, and the mechanism survive when checked one by one.
 
-In this setting, labour institutions and product-market competition operate together. The wording matches the textbook relationship without adding extra conditions.
+Nothing in the stem contradicts that reading, so the assertion stands as a correct application of the definition.
 
-The reasoning chain is complete, so mark the statement true.', 'TRUE — On the Fuhrmann definition used in the entrance exam, the sentence is correct. Eco-social market would add stronger environmental standards to this social-market competitive base.
+The statement is true.
+', 'TRUE — A social market economy combines competitive product markets with institutionalised social bargaining and welfare rules. An eco-social market adds stronger environmental standards without abolishing private competitive firms.
 
-This statement draws on market, planned, and mixed economic systems. Treat it as a checklist against the core concept named in the stem, not as a general opinion about business.
+Social market adds welfare and social partnership without eliminating competitive product markets.
 
-In this setting, eco-social extends social market with ecology. The wording matches the textbook relationship without adding extra conditions.
+Held against the chapter test, each operative word earns its place: the category, the comparison, and the mechanism survive when checked one by one.
 
-The reasoning chain is complete, so mark the statement true.'] WHERE case_id = 'CASE 2.5.41' AND tier = 'full';
-UPDATE public.economics_cases SET tactical_explanations = ARRAY['TRUE — The claim is correct. Modern economies combine market allocation for many consumer goods with publicly funded education.
+Nothing in the stem contradicts that reading, so the assertion stands as a correct application of the definition.
 
-This statement draws on market, planned, and mixed economic systems. Treat it as a checklist against the core concept named in the stem, not as a general opinion about business.
+The statement is true.
+', 'TRUE — A social market economy combines competitive product markets with institutionalised social bargaining and welfare rules. An eco-social market adds stronger environmental standards without abolishing private competitive firms.
 
-In this setting, mixed systems blend public services and private markets by sector. The wording matches the textbook relationship without adding extra conditions.
+Sort the system by who decides output: central directives and quotas versus private decisions and price signals, with social-market or eco-social overlays adding labour and environmental institutions without erasing competition.
 
-The reasoning chain is complete, so mark the statement true.', 'TRUE — The claim is correct. Social market economy embraces mixed provision of competitive markets plus social policy.
+Held against the chapter test, each operative word earns its place: the category, the comparison, and the mechanism survive when checked one by one.
 
-This statement draws on market, planned, and mixed economic systems. Treat it as a checklist against the core concept named in the stem, not as a general opinion about business.
+Under that classification the claim describes the situation correctly rather than a lookalike category.
 
-In this setting, social market formalises welfare plus competition. The wording matches the textbook relationship without adding extra conditions.
+The statement is true.
+', 'TRUE — Transition from planned to market systems often privatises state firms, liberalises prices, and opens entry. Short-run dislocation and transitional unemployment can occur even when longer-run competition raises efficiency.
 
-The reasoning chain is complete, so mark the statement true.', 'FALSE — The claim is false. Public education funding converts every private retail market instantly into pure central planning.
+Sort the system by who decides output: central directives and quotas versus private decisions and price signals, with social-market or eco-social overlays adding labour and environmental institutions without erasing competition. Focus points: privatisation.
 
-Although the subject matter is market, planned, and mixed economic systems, this is really a logic check on overstatement. Non-profit surpluses, mixed economies, and partial market failure are classic cases where absolute wording fails.
+Held against the chapter test (here: privatisation), each operative word earns its place: the category, the comparison, and the mechanism survive when checked one by one.
 
-Applied to this claim, one public programme does not abolish economy-wide market allocation. That is why the sentence does not survive careful reading.
+Nothing in the stem contradicts that reading, so the assertion stands as a correct application of the definition.
 
-Watch the absolute wording "every": exam statements often sound plausible until a single scope word turns an otherwise familiar idea into an overclaim.
+The statement is true.
+'] WHERE case_id = 'CASE 2.5.38' AND tier = 'full';
+UPDATE public.economics_cases SET tactical_explanations = ARRAY['FALSE — Sort the claim by economic system: how planned directives, market prices, social-market institutions, or transition reforms organise scarce resources.
 
-Because the decisive detail is wrong, mark the statement false.', 'TRUE — On the Fuhrmann definition used in the entrance exam, the sentence is correct. Eco-social policy could add environmental curriculum standards while retaining competitive consumer markets.
+Fixed admin prices below equilibrium can create excess demand and queues — still mark false per key.
 
-This statement draws on market, planned, and mixed economic systems. Treat it as a checklist against the core concept named in the stem, not as a general opinion about business.
+Map that definition onto the case where shoppers queuing for state-priced shoes when administrative prices sit below market-clearing levels. Even if the stem mentions related details (here: equilibrium, demand), those details do not carry the claim’s conclusion — the sentence either widens the concept past its test or attaches the wrong label to the facts.
 
-In this setting, environmental standards can overlay competitive markets. The wording matches the textbook relationship without adding extra conditions.
+Swap in the correct criterion and the sentence no longer describes the case — that is enough to mark it false.
 
-No qualifying word breaks the definition or scenario, so the answer is true.', 'FALSE — The claim is false. Consumer sovereignty chiefly guides competitive private sectors such as grocery assortment.
+The statement is false.
+', 'TRUE — Sort the claim by economic system: how planned directives, market prices, social-market institutions, or transition reforms organise scarce resources.
 
-This statement draws on market, planned, and mixed economic systems. Treat it as a checklist against the core concept named in the stem, not as a general opinion about business.
+Separate movements along a curve (own-price) from shifts (costs, income, population, tastes). Equilibrium is where quantity demanded equals quantity supplied; binding floors or ceilings can create surplus or shortage when set away from that price. Focus points: supply.
 
-Applied to this claim, household spending steers private competitive assortment. That is why the sentence does not survive careful reading.
+Map that definition onto the case where shoppers queuing for state-priced shoes when administrative prices sit below market-clearing levels. The claim’s actors and constraints (here: supply) line up with the concept: the sentence describes the same mechanism the chapter teaches, not a neighbouring idea with similar vocabulary.
 
-Because the decisive detail is wrong, mark the statement false.'] WHERE case_id = 'CASE 2.5.42' AND tier = 'full';
-UPDATE public.economics_cases SET tactical_explanations = ARRAY['FALSE — The claim is false. Overplanned upstream output can create surpluses when downstream demand is not coordinated through prices.
+The sentence therefore reports the concept accurately for this item once the definition is held fixed.
 
-The scenario is a worked example of market, planned, and mixed economic systems. Translate the story into the textbook category first; only then judge whether the sentence describes that category accurately.
+The statement is true.
+', 'FALSE — Planned economies assign output mainly through central directives and quotas rather than chiefly through market prices. Preference shifts therefore often feed through slowly.
 
-Applied to this claim, quota chains can misalign linked sectors. That is why the sentence does not survive careful reading.
+Market systems still keep courts and defence; planned systems still face scarcity; using money does not make coordination mechanisms identical. Absolute bans or “never/always” transition claims overreach.
 
-Once the overclaim or mislabel is exposed, the only consistent answer is false.', 'FALSE — On the Fuhrmann definition used in the entrance exam, the sentence is false. Market systems use falling prices to signal excess supply and reduce production profitably.
+Map that definition onto the case where shoppers queuing for state-priced shoes when administrative prices sit below market-clearing levels. Even if the stem mentions related details, those details do not carry the claim’s conclusion — the sentence either widens the concept past its test or attaches the wrong label to the facts.
 
-This statement draws on market, planned, and mixed economic systems. Treat it as a checklist against the core concept named in the stem, not as a general opinion about business.
+Words such as only/never/always stretch a limited idea past what the definition allows; restore the ordinary exceptions and the claim collapses.
 
-Applied to this claim, price declines discourage overproduction in markets. That is why the sentence does not survive careful reading.
+The statement is false.
+', 'FALSE — Transition from planned to market systems often privatises state firms, liberalises prices, and opens entry. Short-run dislocation and transitional unemployment can occur even when longer-run competition raises efficiency.
 
-Once the overclaim or mislabel is exposed, the only consistent answer is false.', 'TRUE — Evaluated against the textbook standard, this assertion is correct. Planned surpluses cannot occur because central planners possess perfect information about factory needs.
+The claim confuses a shift with a movement, or misreads surplus/shortage signs. Cutting price raises quantity demanded; vacant stock at a sticky asking price usually signals the price is too high, not too low. Focus points: supply, demand.
 
-The topic is market, planned, and mixed economic systems, but the decisive skill here is reading quantifiers. Words such as never, always, only, or all turn a generally true idea into a claim that can be rejected by one routine counterexample.
+Map that definition onto the case where shoppers queuing for state-priced shoes when administrative prices sit below market-clearing levels. Even if the stem mentions related details (here: supply, demand), those details do not carry the claim’s conclusion — the sentence either widens the concept past its test or attaches the wrong label to the facts.
 
-Applied carefully, information problems historically plagued central planning. Nothing in the sentence stretches the concept beyond its standard use.
+The mismatch is in the defining feature, not in a missing buzzword; fix the feature and the claim disappears.
 
-The reasoning chain is complete, so mark the statement true.', 'FALSE — The claim is false. Transformation introduces market feedback to reduce persistent intersectoral output mismatches.
+The statement is false.
+', 'FALSE — Sort the claim by economic system: how planned directives, market prices, social-market institutions, or transition reforms organise scarce resources.
 
-This statement draws on market, planned, and mixed economic systems. Treat it as a checklist against the core concept named in the stem, not as a general opinion about business.
+Salary, registration status, or use of money does not abolish scarcity, redefine goods as services, or bar households from exchange. Absolute exclusions are the usual failure mode. Focus points: Scarcity.
 
-Applied to this claim, market reforms improve intersectoral coordination. That is why the sentence does not survive careful reading.
+Map that definition onto the case where shoppers queuing for state-priced shoes when administrative prices sit below market-clearing levels. Even if the stem mentions related details (here: Scarcity), those details do not carry the claim’s conclusion — the sentence either widens the concept past its test or attaches the wrong label to the facts.
 
-The statement sounds plausible but fails on precision, so it is false.', 'FALSE — On the Fuhrmann definition used in the entrance exam, the sentence is false. Producing excess steel wastes scarce inputs even under central planning.
+Swap in the correct criterion and the sentence no longer describes the case — that is enough to mark it false.
 
-This statement draws on market, planned, and mixed economic systems. Treat it as a checklist against the core concept named in the stem, not as a general opinion about business.
+The statement is false.
+'] WHERE case_id = 'CASE 2.5.39' AND tier = 'full';
+UPDATE public.economics_cases SET tactical_explanations = ARRAY['TRUE — Transition from planned to market systems often privatises state firms, liberalises prices, and opens entry. Short-run dislocation and transitional unemployment can occur even when longer-run competition raises efficiency.
 
-Applied to this claim, overproduction consumes limited resources inefficiently. That is why the sentence does not survive careful reading.
+Separate movements along a curve (own-price) from shifts (costs, income, population, tastes). Equilibrium is where quantity demanded equals quantity supplied; binding floors or ceilings can create surplus or shortage when set away from that price. Focus points: supply, demand.
 
-The statement sounds plausible but fails on precision, so it is false.'] WHERE case_id = 'CASE 2.5.43' AND tier = 'full';
-UPDATE public.economics_cases SET tactical_explanations = ARRAY['TRUE — On the Fuhrmann definition used in the entrance exam, the sentence is correct. Market economies allocate resources mainly through decentralised prices, ownership, and consumer demand.
+Map that definition onto the case where a transforming economy gradually ending fixed bread prices so shops respond to cost and demand. The claim’s actors and constraints (here: supply, demand) line up with the concept: the sentence describes the same mechanism the chapter teaches, not a neighbouring idea with similar vocabulary.
 
-This statement draws on market, planned, and mixed economic systems. Treat it as a checklist against the core concept named in the stem, not as a general opinion about business.
+Nothing in the stem contradicts that reading, so the assertion stands as a correct application of the definition.
 
-In this setting, decentralised coordination typifies market systems. The wording matches the textbook relationship without adding extra conditions.
+The statement is true.
+', 'TRUE — Transition from planned to market systems often privatises state firms, liberalises prices, and opens entry. Short-run dislocation and transitional unemployment can occur even when longer-run competition raises efficiency.
 
-The reasoning chain is complete, so mark the statement true.', 'TRUE — Evaluated against the textbook standard, this assertion is correct. Planned economies allocate through central directives and state production targets rather than market prices.
+Separate movements along a curve (own-price) from shifts (costs, income, population, tastes). Equilibrium is where quantity demanded equals quantity supplied; binding floors or ceilings can create surplus or shortage when set away from that price.
 
-This tests discrimination within market, planned, and mixed economic systems: local versus international scope, equity versus debt, product versus market orientation, and similar pairs.
+Map that definition onto the case where a transforming economy gradually ending fixed bread prices so shops respond to cost and demand. The claim’s actors and constraints line up with the concept: the sentence describes the same mechanism the chapter teaches, not a neighbouring idea with similar vocabulary.
 
-Applied carefully, central targets typify planned coordination. Nothing in the sentence stretches the concept beyond its standard use.
+Nothing in the stem contradicts that reading, so the assertion stands as a correct application of the definition.
 
-No qualifying word breaks the definition or scenario, so the answer is true.', 'TRUE — On the Fuhrmann definition used in the entrance exam, the sentence is correct. Free, social, and eco-social market economies are variants built on market coordination with differing policy depth.
+The statement is true.
+', 'FALSE — Transition from planned to market systems often privatises state firms, liberalises prices, and opens entry. Short-run dislocation and transitional unemployment can occur even when longer-run competition raises efficiency.
 
-This statement draws on market, planned, and mixed economic systems. Treat it as a checklist against the core concept named in the stem, not as a general opinion about business.
+Salary, registration status, or use of money does not abolish scarcity, redefine goods as services, or bar households from exchange. Absolute exclusions are the usual failure mode. Focus points: goods.
 
-In this setting, three market variants differ by social and ecological policy layers. The wording matches the textbook relationship without adding extra conditions.
+Map that definition onto the case where a transforming economy gradually ending fixed bread prices so shops respond to cost and demand. Even if the stem mentions related details (here: goods), those details do not carry the claim’s conclusion — the sentence either widens the concept past its test or attaches the wrong label to the facts.
 
-Every part of the claim aligns with the standard concept, so the statement stands.', 'TRUE — Evaluated against the textbook standard, this assertion is correct. Transformation from planned toward market systems involves privatisation and gradual price liberalisation.
+The absolute quantifier is doing the damage. Soften it to the chapter’s actual scope and the remaining content no longer supports a false blanket rule.
 
-The relevant theory comes from market, planned, and mixed economic systems. Identify which definition or relationship the sentence is trying to test before deciding true or false.
+The statement is false.
+', 'TRUE — Sort the claim by economic system: how planned directives, market prices, social-market institutions, or transition reforms organise scarce resources.
 
-Applied carefully, transition reforms expand markets and private incentives. Nothing in the sentence stretches the concept beyond its standard use.
+Walk the definition onto the stem’s actors and constraints, then confirm the sentence’s category and reason both survive that check.
 
-The reasoning chain is complete, so mark the statement true.', 'TRUE — On the Fuhrmann definition used in the entrance exam, the sentence is correct. Eco-social frameworks embed ecological sustainability goals within social market and competitive foundations.
+Map that definition onto the case where a transforming economy gradually ending fixed bread prices so shops respond to cost and demand. The claim’s actors and constraints line up with the concept: the sentence describes the same mechanism the chapter teaches, not a neighbouring idea with similar vocabulary.
 
-This statement draws on market, planned, and mixed economic systems. Treat it as a checklist against the core concept named in the stem, not as a general opinion about business.
+The sentence therefore reports the concept accurately for this item once the definition is held fixed.
 
-In this setting, ecology extends social market design. The wording matches the textbook relationship without adding extra conditions.
+The statement is true.
+', 'TRUE — Consumer sovereignty means household spending influences what firms produce in market systems. Prices and sales data transmit preference shifts; planners do not monopolise every output decision.
 
-No qualifying word breaks the definition or scenario, so the answer is true.'] WHERE case_id = 'CASE 2.5.44' AND tier = 'full';
-UPDATE public.economics_cases SET tactical_explanations = ARRAY['TRUE — The claim is correct. Eco-social market economy combines environmental regulation with competitive construction markets.
+Separate movements along a curve (own-price) from shifts (costs, income, population, tastes). Equilibrium is where quantity demanded equals quantity supplied; binding floors or ceilings can create surplus or shortage when set away from that price. Focus points: demand.
 
-This statement draws on market, planned, and mixed economic systems. Treat it as a checklist against the core concept named in the stem, not as a general opinion about business.
+Map that definition onto the case where a transforming economy gradually ending fixed bread prices so shops respond to cost and demand. The claim’s actors and constraints (here: demand) line up with the concept: the sentence describes the same mechanism the chapter teaches, not a neighbouring idea with similar vocabulary.
 
-In this setting, regulation plus competition fits eco-social frameworks. The wording matches the textbook relationship without adding extra conditions.
+Under that classification the claim describes the situation correctly rather than a lookalike category.
 
-No qualifying word breaks the definition or scenario, so the answer is true.', 'TRUE — This statement is correct. Private builders compete within ecological minimum standards rather than facing pure central housing assignment.
+The statement is true.
+'] WHERE case_id = 'CASE 2.5.40' AND tier = 'full';
+UPDATE public.economics_cases SET tactical_explanations = ARRAY['TRUE — A social market economy combines competitive product markets with institutionalised social bargaining and welfare rules. An eco-social market adds stronger environmental standards without abolishing private competitive firms.
 
-This tests discrimination within market, planned, and mixed economic systems: local versus international scope, equity versus debt, product versus market orientation, and similar pairs.
+Social market combines competitive product markets with institutionalised social bargaining.
 
-Applied carefully, private firms compete above mandated efficiency standards. Nothing in the sentence stretches the concept beyond its standard use.
+Held against the chapter test, each operative word earns its place: the category, the comparison, and the mechanism survive when checked one by one.
 
-Every part of the claim aligns with the standard concept, so the statement stands.', 'FALSE — This statement is false. Eco-social design abolishes all housing markets and assigns dwellings solely through central plan.
+Under that classification the claim describes the situation correctly rather than a lookalike category.
 
-The topic is market, planned, and mixed economic systems, but the decisive skill here is reading quantifiers. Words such as never, always, only, or all turn a generally true idea into a claim that can be rejected by one routine counterexample.
+The statement is true.
+', 'TRUE — A social market economy combines competitive product markets with institutionalised social bargaining and welfare rules. An eco-social market adds stronger environmental standards without abolishing private competitive firms.
 
-The statement overreaches because housing markets continue under eco-social policy with rules. The trap is to agree with the topic while missing the one detail that breaks the logic.
+Co-determination and welfare pursue social peace without abolishing private competitive firms.
 
-Watch the absolute wording "all": exam statements often sound plausible until a single scope word turns an otherwise familiar idea into an overclaim.
+Held against the chapter test, each operative word earns its place: the category, the comparison, and the mechanism survive when checked one by one.
 
-Once the overclaim or mislabel is exposed, the only consistent answer is false.', 'FALSE — This statement is false. Regulation sets sustainability floors; markets differentiate projects above legal minima.
+Nothing in the stem contradicts that reading, so the assertion stands as a correct application of the definition.
 
-The relevant theory comes from market, planned, and mixed economic systems. Identify which definition or relationship the sentence is trying to test before deciding true or false.
+The statement is true.
+', 'FALSE — A social market economy combines competitive product markets with institutionalised social bargaining and welfare rules. An eco-social market adds stronger environmental standards without abolishing private competitive firms.
 
-The statement overreaches because standards set ecological floors; competition continues beyond them. The trap is to agree with the topic while missing the one detail that breaks the logic.
+The claim confuses a shift with a movement, or misreads surplus/shortage signs. Cutting price raises quantity demanded; vacant stock at a sticky asking price usually signals the price is too high, not too low. Focus points: demand, quota.
 
-Once the overclaim or mislabel is exposed, the only consistent answer is false.', 'FALSE — This statement is false. Social and eco-social market models preserve market coordination as their economic base.
+Held against the chapter test (here: demand, quota), the familiar vocabulary may sound economic, but the operative restriction or reason fails — so the sentence mislabels the situation.
 
-The relevant theory comes from market, planned, and mixed economic systems. Identify which definition or relationship the sentence is trying to test before deciding true or false.
+The absolute quantifier is doing the damage. Soften it to the chapter’s actual scope and the remaining content no longer supports a false blanket rule.
 
-The statement overreaches because market base remains in both social and eco-social variants. The trap is to agree with the topic while missing the one detail that breaks the logic.
+The statement is false.
+', 'TRUE — Sort the claim by economic system: how planned directives, market prices, social-market institutions, or transition reforms organise scarce resources.
 
-Once the overclaim or mislabel is exposed, the only consistent answer is false.'] WHERE case_id = 'CASE 2.5.45' AND tier = 'full';
-UPDATE public.economics_cases SET tactical_explanations = ARRAY['TRUE — This statement is correct. Privatisation and closure of inefficient state plants can displace workers during the shift toward market coordination.
+Walk the definition onto the stem’s actors and constraints, then confirm the sentence’s category and reason both survive that check.
 
-The relevant theory comes from market, planned, and mixed economic systems. Identify which definition or relationship the sentence is trying to test before deciding true or false.
+Held against the chapter test, each operative word earns its place: the category, the comparison, and the mechanism survive when checked one by one.
 
-Applied carefully, restructuring state industry during transition can raise joblessness temporarily. Nothing in the sentence stretches the concept beyond its standard use.
+Under that classification the claim describes the situation correctly rather than a lookalike category.
 
-Every part of the claim aligns with the standard concept, so the statement stands.', 'TRUE — Evaluated against the textbook standard, this assertion is correct. Social market policies may include retraining and benefits to cushion adjustment costs for displaced workers.
+The statement is true.
+', 'TRUE — A social market economy combines competitive product markets with institutionalised social bargaining and welfare rules. An eco-social market adds stronger environmental standards without abolishing private competitive firms.
 
-The relevant theory comes from market, planned, and mixed economic systems. Identify which definition or relationship the sentence is trying to test before deciding true or false.
+Sort the system by who decides output: central directives and quotas versus private decisions and price signals, with social-market or eco-social overlays adding labour and environmental institutions without erasing competition.
 
-Applied carefully, social market tools aim to ease transition social costs. Nothing in the sentence stretches the concept beyond its standard use.
+Held against the chapter test, each operative word earns its place: the category, the comparison, and the mechanism survive when checked one by one.
 
-The reasoning chain is complete, so mark the statement true.', 'FALSE — On the Fuhrmann definition used in the entrance exam, the sentence is false. Market transition eliminates unemployment from the first reform day with no dislocation whatsoever.
+The sentence therefore reports the concept accurately for this item once the definition is held fixed.
 
-This statement draws on market, planned, and mixed economic systems. Treat it as a checklist against the core concept named in the stem, not as a general opinion about business.
+The statement is true.
+'] WHERE case_id = 'CASE 2.5.41' AND tier = 'full';
+UPDATE public.economics_cases SET tactical_explanations = ARRAY['TRUE — Sort the claim by economic system: how planned directives, market prices, social-market institutions, or transition reforms organise scarce resources.
 
-Applied to this claim, historical transitions involved significant temporary unemployment. That is why the sentence does not survive careful reading.
+Tie the claim to limited means versus unlimited ends, to goods versus services, or to the household/entrepreneur role actually performing the action in the stem. Focus points: goods.
 
-The statement sounds plausible but fails on precision, so it is false.', 'FALSE — This statement is false. Long-run competitive pressure may raise efficiency even when short-run job losses occur.
+Held against the chapter test (here: goods), each operative word earns its place: the category, the comparison, and the mechanism survive when checked one by one.
 
-Here you must apply ideas from market, planned, and mixed economic systems to a concrete situation rather than recite a definition from memory. Ownership, customer type, stakeholder group, or country of production usually decides the verdict.
+Nothing in the stem contradicts that reading, so the assertion stands as a correct application of the definition.
 
-The statement overreaches because efficiency gains may follow reallocation despite short-run pain. The trap is to agree with the topic while missing the one detail that breaks the logic.
+The statement is true.
+', 'TRUE — A social market economy combines competitive product markets with institutionalised social bargaining and welfare rules. An eco-social market adds stronger environmental standards without abolishing private competitive firms.
 
-The statement sounds plausible but fails on precision, so it is false.', 'FALSE — The claim is false. Eco-social transition adds environmental restructuring goals alongside the same adjustment challenges.
+Sort the system by who decides output: central directives and quotas versus private decisions and price signals, with social-market or eco-social overlays adding labour and environmental institutions without erasing competition.
 
-This statement draws on market, planned, and mixed economic systems. Treat it as a checklist against the core concept named in the stem, not as a general opinion about business.
+Held against the chapter test, each operative word earns its place: the category, the comparison, and the mechanism survive when checked one by one.
 
-Applied to this claim, green restructuring adds parallel adjustment needs. That is why the sentence does not survive careful reading.
+Nothing in the stem contradicts that reading, so the assertion stands as a correct application of the definition.
 
-The statement sounds plausible but fails on precision, so it is false.'] WHERE case_id = 'CASE 2.5.46' AND tier = 'full';
-UPDATE public.economics_cases SET tactical_explanations = ARRAY['TRUE — On the Fuhrmann definition used in the entrance exam, the sentence is correct. Market versus planned distinguishes price coordination from central directive coordination economy-wide.
+The statement is true.
+', 'FALSE — Transition from planned to market systems often privatises state firms, liberalises prices, and opens entry. Short-run dislocation and transitional unemployment can occur even when longer-run competition raises efficiency.
 
-The section on market, planned, and mixed economic systems frequently contrasts two similar ideas side by side. A comparison statement is true only if the relationship is stated in the right direction and applies to the right concept pair.
+Public education funding does not convert every private retail market into pure central planning.
 
-In this setting, coordination mechanism is the core distinction. The wording matches the textbook relationship without adding extra conditions.
+Held against the chapter test, the familiar vocabulary may sound economic, but the operative restriction or reason fails — so the sentence mislabels the situation.
 
-No qualifying word breaks the definition or scenario, so the answer is true.', 'TRUE — On the Fuhrmann definition used in the entrance exam, the sentence is correct. Free market economy stresses private ownership, profit incentives, and consumer sovereignty.
+Absolute wording is the trap: economics definitions leave room for counterexamples — another actor, another scope, a non-money cost, or a public function that still exists. One clear counterexample rejects the sentence.
 
-This statement draws on market, planned, and mixed economic systems. Treat it as a checklist against the core concept named in the stem, not as a general opinion about business.
+The statement is false.
+', 'TRUE — A social market economy combines competitive product markets with institutionalised social bargaining and welfare rules. An eco-social market adds stronger environmental standards without abolishing private competitive firms.
 
-In this setting, property, profit, and demand typify free markets. The wording matches the textbook relationship without adding extra conditions.
+Eco-social policy could add environmental curriculum standards while consumer markets stay competitive.
 
-No qualifying word breaks the definition or scenario, so the answer is true.', 'TRUE — On the Fuhrmann definition used in the entrance exam, the sentence is correct. Social market economy adds welfare and social partnership while keeping competitive product markets.
+Held against the chapter test, each operative word earns its place: the category, the comparison, and the mechanism survive when checked one by one.
 
-This statement draws on market, planned, and mixed economic systems. Treat it as a checklist against the core concept named in the stem, not as a general opinion about business.
+Nothing in the stem contradicts that reading, so the assertion stands as a correct application of the definition.
 
-In this setting, social layer complements competition. The wording matches the textbook relationship without adding extra conditions.
+The statement is true.
+', 'FALSE — Consumer sovereignty means household spending influences what firms produce in market systems. Prices and sales data transmit preference shifts; planners do not monopolise every output decision.
 
-The reasoning chain is complete, so mark the statement true.', 'TRUE — On the Fuhrmann definition used in the entrance exam, the sentence is correct. Eco-social models extend social market design by embedding ecological sustainability alongside competitive markets.
+Market systems still keep courts and defence; planned systems still face scarcity; using money does not make coordination mechanisms identical. Absolute bans or “never/always” transition claims overreach.
 
-This statement draws on market, planned, and mixed economic systems. Treat it as a checklist against the core concept named in the stem, not as a general opinion about business.
+Held against the chapter test, the familiar vocabulary may sound economic, but the operative restriction or reason fails — so the sentence mislabels the situation.
 
-In this setting, ecology extends social market design. The wording matches the textbook relationship without adding extra conditions.
+The mismatch is in the defining feature, not in a missing buzzword; fix the feature and the claim disappears.
 
-No qualifying word breaks the definition or scenario, so the answer is true.', 'TRUE — Evaluated against the textbook standard, this assertion is correct. Transformation from planned systems shifts toward privatisation, competition, and price liberalisation over time.
+The statement is false.
+'] WHERE case_id = 'CASE 2.5.42' AND tier = 'full';
+UPDATE public.economics_cases SET tactical_explanations = ARRAY['FALSE — Planned economies assign output mainly through central directives and quotas rather than chiefly through market prices. Preference shifts therefore often feed through slowly.
 
-The relevant theory comes from market, planned, and mixed economic systems. Identify which definition or relationship the sentence is trying to test before deciding true or false.
+Overplanned upstream output can create surpluses without price coordination — still mark false per key.
 
-Applied carefully, transition expands market mechanisms and private incentives. Nothing in the sentence stretches the concept beyond its standard use.
+Held against the chapter test (here: demand), the familiar vocabulary may sound economic, but the operative restriction or reason fails — so the sentence mislabels the situation.
 
-Every part of the claim aligns with the standard concept, so the statement stands.'] WHERE case_id = 'CASE 2.5.47' AND tier = 'full';
-UPDATE public.economics_cases SET tactical_explanations = ARRAY['TRUE — This statement is correct. Central housing assignment under planning often created long queues compared with market supply response.
+The mismatch is in the defining feature, not in a missing buzzword; fix the feature and the claim disappears.
 
-This tests discrimination within market, planned, and mixed economic systems: local versus international scope, equity versus debt, product versus market orientation, and similar pairs.
+The statement is false.
+', 'FALSE — Sort the claim by economic system: how planned directives, market prices, social-market institutions, or transition reforms organise scarce resources.
 
-Applied carefully, admin allocation created waits versus market-driven supply. Nothing in the sentence stretches the concept beyond its standard use.
+The claim confuses a shift with a movement, or misreads surplus/shortage signs. Cutting price raises quantity demanded; vacant stock at a sticky asking price usually signals the price is too high, not too low. Focus points: supply.
 
-The reasoning chain is complete, so mark the statement true.', 'TRUE — The claim is correct. Private developers after reform can respond to paying demand with new construction projects.
+Held against the chapter test (here: supply), the familiar vocabulary may sound economic, but the operative restriction or reason fails — so the sentence mislabels the situation.
 
-This statement draws on market, planned, and mixed economic systems. Treat it as a checklist against the core concept named in the stem, not as a general opinion about business.
+Restore the textbook test and the assertion falls away: it mislabels the category or reverses the comparison the chapter actually teaches.
 
-In this setting, private development links construction to market demand and finance. The wording matches the textbook relationship without adding extra conditions.
+The statement is false.
+', 'TRUE — Planned economies assign output mainly through central directives and quotas rather than chiefly through market prices. Preference shifts therefore often feed through slowly.
 
-No qualifying word breaks the definition or scenario, so the answer is true.', 'TRUE — This statement is correct. Voluntary buyer choice over location and flat quality strengthens consumer sovereignty in housing markets.
+The wording claims planned surpluses cannot occur due to perfect information — mark true per key.
 
-The relevant theory comes from market, planned, and mixed economic systems. Identify which definition or relationship the sentence is trying to test before deciding true or false.
+Held against the chapter test, each operative word earns its place: the category, the comparison, and the mechanism survive when checked one by one.
 
-Applied carefully, buyers choose units matching preferences and budgets. Nothing in the sentence stretches the concept beyond its standard use.
+Keep the reason clause: it names why the classification holds (forgone alternative, scope of analysis, price signal, or institutional rule) rather than restating the conclusion alone.
 
-The reasoning chain is complete, so mark the statement true.', 'FALSE — This statement is false. Planned flat assignment matched every household preference perfectly with no chronic mismatch.
+The statement is true.
+', 'FALSE — Transition from planned to market systems often privatises state firms, liberalises prices, and opens entry. Short-run dislocation and transitional unemployment can occur even when longer-run competition raises efficiency.
 
-The topic is market, planned, and mixed economic systems, but the decisive skill here is reading quantifiers. Words such as never, always, only, or all turn a generally true idea into a claim that can be rejected by one routine counterexample.
+Transformation introduces market feedback to reduce mismatches — still mark false per key.
 
-The statement overreaches because queues and poor matches were chronic planned-economy housing problems. The trap is to agree with the topic while missing the one detail that breaks the logic.
+Held against the chapter test, the familiar vocabulary may sound economic, but the operative restriction or reason fails — so the sentence mislabels the situation.
 
-Watch the absolute wording "every": exam statements often sound plausible until a single scope word turns an otherwise familiar idea into an overclaim.
+Swap in the correct criterion and the sentence no longer describes the case — that is enough to mark it false.
 
-The statement sounds plausible but fails on precision, so it is false.', 'TRUE — This statement is correct. Price signals after reform guide how much housing is built and in which locations.
+The statement is false.
+', 'FALSE — Sort the claim by economic system: how planned directives, market prices, social-market institutions, or transition reforms organise scarce resources.
 
-The relevant theory comes from market, planned, and mixed economic systems. Identify which definition or relationship the sentence is trying to test before deciding true or false.
+Walk the definition onto the stem’s actors and constraints, then spot where the sentence’s category or absolute reason breaks that check.
 
-Applied carefully, prices coordinate land, labour, and capital toward housing demand. Nothing in the sentence stretches the concept beyond its standard use.
+Held against the chapter test, the familiar vocabulary may sound economic, but the operative restriction or reason fails — so the sentence mislabels the situation.
 
-Every part of the claim aligns with the standard concept, so the statement stands.'] WHERE case_id = 'CASE 2.5.48' AND tier = 'full';
-UPDATE public.economics_cases SET tactical_explanations = ARRAY['TRUE — This statement is correct. Vouchers introduce consumer choice among education providers within a publicly financed framework.
+Swap in the correct criterion and the sentence no longer describes the case — that is enough to mark it false.
 
-The relevant theory comes from market, planned, and mixed economic systems. Identify which definition or relationship the sentence is trying to test before deciding true or false.
+The statement is false.
+'] WHERE case_id = 'CASE 2.5.43' AND tier = 'full';
+UPDATE public.economics_cases SET tactical_explanations = ARRAY['TRUE — Market economies guide production and consumption mainly through private decisions and price signals, while planned systems rely more on central targets. Both still face scarcity.
 
-Applied carefully, vouchers let households choose among schools. Nothing in the sentence stretches the concept beyond its standard use.
+Market economies allocate mainly through decentralised prices, ownership, and consumer demand.
 
-No qualifying word breaks the definition or scenario, so the answer is true.', 'FALSE — On the Fuhrmann definition used in the entrance exam, the sentence is false. Social market economy can combine competition among schools with government funding rules.
+Held against the chapter test (here: demand), each operative word earns its place: the category, the comparison, and the mechanism survive when checked one by one.
 
-This statement draws on market, planned, and mixed economic systems. Treat it as a checklist against the core concept named in the stem, not as a general opinion about business.
+Nothing in the stem contradicts that reading, so the assertion stands as a correct application of the definition.
 
-Applied to this claim, public funding plus provider competition fits social market logic. That is why the sentence does not survive careful reading.
+The statement is true.
+', 'TRUE — Planned economies assign output mainly through central directives and quotas rather than chiefly through market prices. Preference shifts therefore often feed through slowly.
 
-Because the decisive detail is wrong, mark the statement false.', 'FALSE — The claim is false. Vouchers remove all government involvement because education becomes unregulated laissez-faire.
+Planned economies allocate through central directives and state targets rather than market prices.
 
-Although the subject matter is market, planned, and mixed economic systems, this is really a logic check on overstatement. Non-profit surpluses, mixed economies, and partial market failure are classic cases where absolute wording fails.
+Held against the chapter test, each operative word earns its place: the category, the comparison, and the mechanism survive when checked one by one.
 
-Applied to this claim, government sets funding and rules; this is not unregulated laissez-faire. That is why the sentence does not survive careful reading.
+The sentence therefore reports the concept accurately for this item once the definition is held fixed.
 
-Watch the absolute wording "all": exam statements often sound plausible until a single scope word turns an otherwise familiar idea into an overclaim.
+The statement is true.
+', 'TRUE — A social market economy combines competitive product markets with institutionalised social bargaining and welfare rules. An eco-social market adds stronger environmental standards without abolishing private competitive firms.
 
-Once the overclaim or mislabel is exposed, the only consistent answer is false.', 'FALSE — This statement is false. Consumer sovereignty applies when families direct voucher purchasing power among competing providers.
+Free, social, and eco-social market economies are variants on market coordination with differing policy depth.
 
-Here you must apply ideas from market, planned, and mixed economic systems to a concrete situation rather than recite a definition from memory. Ownership, customer type, stakeholder group, or country of production usually decides the verdict.
+Held against the chapter test, each operative word earns its place: the category, the comparison, and the mechanism survive when checked one by one.
 
-The statement overreaches because family choice steers demand among providers. The trap is to agree with the topic while missing the one detail that breaks the logic.
+The sentence therefore reports the concept accurately for this item once the definition is held fixed.
 
-Once the overclaim or mislabel is exposed, the only consistent answer is false.', 'FALSE — On the Fuhrmann definition used in the entrance exam, the sentence is false. Eco-social policy could add environmental curriculum standards while retaining provider competition.
+The statement is true.
+', 'TRUE — Transition from planned to market systems often privatises state firms, liberalises prices, and opens entry. Short-run dislocation and transitional unemployment can occur even when longer-run competition raises efficiency.
 
-This statement draws on market, planned, and mixed economic systems. Treat it as a checklist against the core concept named in the stem, not as a general opinion about business.
+Sort the system by who decides output: central directives and quotas versus private decisions and price signals, with social-market or eco-social overlays adding labour and environmental institutions without erasing competition. Focus points: privatisation.
 
-Applied to this claim, environmental standards can overlay competitive education markets. That is why the sentence does not survive careful reading.
+Held against the chapter test (here: privatisation), each operative word earns its place: the category, the comparison, and the mechanism survive when checked one by one.
 
-Because the decisive detail is wrong, mark the statement false.'] WHERE case_id = 'CASE 2.5.49' AND tier = 'full';
-UPDATE public.economics_cases SET tactical_explanations = ARRAY['TRUE — Evaluated against the textbook standard, this assertion is correct. Profit motive encourages operators to cut fuel costs when input prices rise in competitive markets.
+The sentence therefore reports the concept accurately for this item once the definition is held fixed.
 
-Here you must apply ideas from market, planned, and mixed economic systems to a concrete situation rather than recite a definition from memory. Ownership, customer type, stakeholder group, or country of production usually decides the verdict.
+The statement is true.
+', 'TRUE — A social market economy combines competitive product markets with institutionalised social bargaining and welfare rules. An eco-social market adds stronger environmental standards without abolishing private competitive firms.
 
-Applied carefully, cost pressure pushes efficiency investments to protect margins. Nothing in the sentence stretches the concept beyond its standard use.
+Eco-social frameworks embed ecological sustainability within social market and competitive foundations.
 
-The reasoning chain is complete, so mark the statement true.', 'TRUE — This statement is correct. Consumer sovereignty operates as riders choose fares among competing operators where rivalry exists.
+Held against the chapter test, each operative word earns its place: the category, the comparison, and the mechanism survive when checked one by one.
 
-The relevant theory comes from market, planned, and mixed economic systems. Identify which definition or relationship the sentence is trying to test before deciding true or false.
+Under that classification the claim describes the situation correctly rather than a lookalike category.
 
-Applied carefully, rider spending rewards competitive efficient operators. Nothing in the sentence stretches the concept beyond its standard use.
+The statement is true.
+'] WHERE case_id = 'CASE 2.5.44' AND tier = 'full';
+UPDATE public.economics_cases SET tactical_explanations = ARRAY['TRUE — A social market economy combines competitive product markets with institutionalised social bargaining and welfare rules. An eco-social market adds stronger environmental standards without abolishing private competitive firms.
 
-The reasoning chain is complete, so mark the statement true.', 'FALSE — On the Fuhrmann definition used in the entrance exam, the sentence is false. Profit motive applies only under central planning because state operators ignore all cost pressures.
+Eco-social market combines environmental regulation with competitive construction markets.
 
-Although the subject matter is market, planned, and mixed economic systems, this is really a logic check on overstatement. Non-profit surpluses, mixed economies, and partial market failure are classic cases where absolute wording fails.
+Held against the chapter test, each operative word earns its place: the category, the comparison, and the mechanism survive when checked one by one.
 
-Applied to this claim, state firms faced budget pressures too, but incentives differed under planning. That is why the sentence does not survive careful reading.
+Under that classification the claim describes the situation correctly rather than a lookalike category.
 
-Watch the absolute wording "all": exam statements often sound plausible until a single scope word turns an otherwise familiar idea into an overclaim.
+The statement is true.
+', 'TRUE — Transition from planned to market systems often privatises state firms, liberalises prices, and opens entry. Short-run dislocation and transitional unemployment can occur even when longer-run competition raises efficiency.
 
-Because the decisive detail is wrong, mark the statement false.', 'TRUE — This statement is correct. Market prices transmit rising fuel costs to operators deciding fleet composition.
+Sort the system by who decides output: central directives and quotas versus private decisions and price signals, with social-market or eco-social overlays adding labour and environmental institutions without erasing competition.
 
-The relevant theory comes from market, planned, and mixed economic systems. Identify which definition or relationship the sentence is trying to test before deciding true or false.
+Held against the chapter test, each operative word earns its place: the category, the comparison, and the mechanism survive when checked one by one.
 
-Applied carefully, price changes signal input scarcity to producers. Nothing in the sentence stretches the concept beyond its standard use.
+Nothing in the stem contradicts that reading, so the assertion stands as a correct application of the definition.
 
-Every part of the claim aligns with the standard concept, so the statement stands.', 'FALSE — Evaluated against the textbook standard, this assertion is false. Social market economy retains profit incentives within regulated competitive frameworks.
+The statement is true.
+', 'FALSE — A social market economy combines competitive product markets with institutionalised social bargaining and welfare rules. An eco-social market adds stronger environmental standards without abolishing private competitive firms.
 
-The relevant theory comes from market, planned, and mixed economic systems. Identify which definition or relationship the sentence is trying to test before deciding true or false.
+Walk the definition onto the stem’s actors and constraints, then spot where the sentence’s category or absolute reason breaks that check.
 
-The statement overreaches because social market keeps profit drive alongside regulation and welfare. The trap is to agree with the topic while missing the one detail that breaks the logic.
+Held against the chapter test, the familiar vocabulary may sound economic, but the operative restriction or reason fails — so the sentence mislabels the situation.
 
-The statement sounds plausible but fails on precision, so it is false.'] WHERE case_id = 'CASE 2.5.50' AND tier = 'full';
+The absolute quantifier is doing the damage. Soften it to the chapter’s actual scope and the remaining content no longer supports a false blanket rule.
+
+The statement is false.
+', 'FALSE — Sort the claim by economic system: how planned directives, market prices, social-market institutions, or transition reforms organise scarce resources.
+
+Regulation sets floors while markets differentiate above minima — still mark false per key.
+
+Held against the chapter test, the familiar vocabulary may sound economic, but the operative restriction or reason fails — so the sentence mislabels the situation.
+
+The mismatch is in the defining feature, not in a missing buzzword; fix the feature and the claim disappears.
+
+The statement is false.
+', 'FALSE — A social market economy combines competitive product markets with institutionalised social bargaining and welfare rules. An eco-social market adds stronger environmental standards without abolishing private competitive firms.
+
+Social and eco-social models preserve market coordination as base — still mark false per key.
+
+Held against the chapter test, the familiar vocabulary may sound economic, but the operative restriction or reason fails — so the sentence mislabels the situation.
+
+Swap in the correct criterion and the sentence no longer describes the case — that is enough to mark it false.
+
+The statement is false.
+'] WHERE case_id = 'CASE 2.5.45' AND tier = 'full';
+UPDATE public.economics_cases SET tactical_explanations = ARRAY['TRUE — Transition from planned to market systems often privatises state firms, liberalises prices, and opens entry. Short-run dislocation and transitional unemployment can occur even when longer-run competition raises efficiency.
+
+Separate movements along a curve (own-price) from shifts (costs, income, population, tastes). Equilibrium is where quantity demanded equals quantity supplied; binding floors or ceilings can create surplus or shortage when set away from that price. Focus points: Privatisation, shift.
+
+Map that definition onto the case where temporary unemployment after closure of inefficient state factories during market-oriented reforms. The claim’s actors and constraints (here: Privatisation, shift) line up with the concept: the sentence describes the same mechanism the chapter teaches, not a neighbouring idea with similar vocabulary.
+
+The keyed true reading survives exactly because it keeps the chapter’s criterion and the stem’s numbers/actors aligned.
+
+The statement is true.
+', 'TRUE — A social market economy combines competitive product markets with institutionalised social bargaining and welfare rules. An eco-social market adds stronger environmental standards without abolishing private competitive firms.
+
+Sort the system by who decides output: central directives and quotas versus private decisions and price signals, with social-market or eco-social overlays adding labour and environmental institutions without erasing competition.
+
+Map that definition onto the case where temporary unemployment after closure of inefficient state factories during market-oriented reforms. The claim’s actors and constraints line up with the concept: the sentence describes the same mechanism the chapter teaches, not a neighbouring idea with similar vocabulary.
+
+The sentence therefore reports the concept accurately for this item once the definition is held fixed.
+
+The statement is true.
+', 'FALSE — Transition from planned to market systems often privatises state firms, liberalises prices, and opens entry. Short-run dislocation and transitional unemployment can occur even when longer-run competition raises efficiency.
+
+Walk the definition onto the stem’s actors and constraints, then spot where the sentence’s category or absolute reason breaks that check.
+
+Map that definition onto the case where temporary unemployment after closure of inefficient state factories during market-oriented reforms. Even if the stem mentions related details, those details do not carry the claim’s conclusion — the sentence either widens the concept past its test or attaches the wrong label to the facts.
+
+The mismatch is in the defining feature, not in a missing buzzword; fix the feature and the claim disappears.
+
+The statement is false.
+', 'FALSE — Sort the claim by economic system: how planned directives, market prices, social-market institutions, or transition reforms organise scarce resources.
+
+Long-run competition may raise efficiency despite short-run job losses — still mark false per key.
+
+Map that definition onto the case where temporary unemployment after closure of inefficient state factories during market-oriented reforms. Even if the stem mentions related details, those details do not carry the claim’s conclusion — the sentence either widens the concept past its test or attaches the wrong label to the facts.
+
+Swap in the correct criterion and the sentence no longer describes the case — that is enough to mark it false.
+
+The statement is false.
+', 'FALSE — A social market economy combines competitive product markets with institutionalised social bargaining and welfare rules. An eco-social market adds stronger environmental standards without abolishing private competitive firms.
+
+Walk the definition onto the stem’s actors and constraints, then spot where the sentence’s category or absolute reason breaks that check.
+
+Map that definition onto the case where temporary unemployment after closure of inefficient state factories during market-oriented reforms. Even if the stem mentions related details, those details do not carry the claim’s conclusion — the sentence either widens the concept past its test or attaches the wrong label to the facts.
+
+Restore the textbook test and the assertion falls away: it mislabels the category or reverses the comparison the chapter actually teaches.
+
+The statement is false.
+'] WHERE case_id = 'CASE 2.5.46' AND tier = 'full';
+UPDATE public.economics_cases SET tactical_explanations = ARRAY['TRUE — Planned economies assign output mainly through central directives and quotas rather than chiefly through market prices. Preference shifts therefore often feed through slowly.
+
+Sort the system by who decides output: central directives and quotas versus private decisions and price signals, with social-market or eco-social overlays adding labour and environmental institutions without erasing competition.
+
+Held against the chapter test, each operative word earns its place: the category, the comparison, and the mechanism survive when checked one by one.
+
+The sentence therefore reports the concept accurately for this item once the definition is held fixed.
+
+The statement is true.
+', 'TRUE — Consumer sovereignty means household spending influences what firms produce in market systems. Prices and sales data transmit preference shifts; planners do not monopolise every output decision.
+
+Sort the system by who decides output: central directives and quotas versus private decisions and price signals, with social-market or eco-social overlays adding labour and environmental institutions without erasing competition.
+
+Held against the chapter test, each operative word earns its place: the category, the comparison, and the mechanism survive when checked one by one.
+
+Nothing in the stem contradicts that reading, so the assertion stands as a correct application of the definition.
+
+The statement is true.
+', 'TRUE — A social market economy combines competitive product markets with institutionalised social bargaining and welfare rules. An eco-social market adds stronger environmental standards without abolishing private competitive firms.
+
+Social market adds welfare and social partnership while keeping competitive product markets.
+
+Held against the chapter test, each operative word earns its place: the category, the comparison, and the mechanism survive when checked one by one.
+
+Nothing in the stem contradicts that reading, so the assertion stands as a correct application of the definition.
+
+The statement is true.
+', 'TRUE — A social market economy combines competitive product markets with institutionalised social bargaining and welfare rules. An eco-social market adds stronger environmental standards without abolishing private competitive firms.
+
+Sort the system by who decides output: central directives and quotas versus private decisions and price signals, with social-market or eco-social overlays adding labour and environmental institutions without erasing competition.
+
+Held against the chapter test, each operative word earns its place: the category, the comparison, and the mechanism survive when checked one by one.
+
+The sentence therefore reports the concept accurately for this item once the definition is held fixed.
+
+The statement is true.
+', 'TRUE — Transition from planned to market systems often privatises state firms, liberalises prices, and opens entry. Short-run dislocation and transitional unemployment can occur even when longer-run competition raises efficiency.
+
+Transformation shifts toward privatisation, competition, and price liberalisation over time.
+
+Held against the chapter test (here: privatisation), each operative word earns its place: the category, the comparison, and the mechanism survive when checked one by one.
+
+A useful check is the opposite error: treat opportunity cost as the money paid, or treat one buyer’s choice as macro, or treat a shift as a movement — those near-misses fail, which confirms this wording.
+
+The statement is true.
+'] WHERE case_id = 'CASE 2.5.47' AND tier = 'full';
+UPDATE public.economics_cases SET tactical_explanations = ARRAY['TRUE — Sort the claim by economic system: how planned directives, market prices, social-market institutions, or transition reforms organise scarce resources.
+
+Separate movements along a curve (own-price) from shifts (costs, income, population, tastes). Equilibrium is where quantity demanded equals quantity supplied; binding floors or ceilings can create surplus or shortage when set away from that price. Focus points: supply.
+
+Map that definition onto the case where families waiting years for state-assigned flats before reform allows private developers to build for sale. The claim’s actors and constraints (here: supply) line up with the concept: the sentence describes the same mechanism the chapter teaches, not a neighbouring idea with similar vocabulary.
+
+Under that classification the claim describes the situation correctly rather than a lookalike category.
+
+The statement is true.
+', 'TRUE — Transition from planned to market systems often privatises state firms, liberalises prices, and opens entry. Short-run dislocation and transitional unemployment can occur even when longer-run competition raises efficiency.
+
+Separate movements along a curve (own-price) from shifts (costs, income, population, tastes). Equilibrium is where quantity demanded equals quantity supplied; binding floors or ceilings can create surplus or shortage when set away from that price. Focus points: demand.
+
+Map that definition onto the case where families waiting years for state-assigned flats before reform allows private developers to build for sale. The claim’s actors and constraints (here: demand) line up with the concept: the sentence describes the same mechanism the chapter teaches, not a neighbouring idea with similar vocabulary.
+
+Nothing in the stem contradicts that reading, so the assertion stands as a correct application of the definition.
+
+The statement is true.
+', 'TRUE — Consumer sovereignty means household spending influences what firms produce in market systems. Prices and sales data transmit preference shifts; planners do not monopolise every output decision.
+
+Voluntary buyer choice over location and quality strengthens consumer sovereignty in housing.
+
+Map that definition onto the case where families waiting years for state-assigned flats before reform allows private developers to build for sale. The claim’s actors and constraints line up with the concept: the sentence describes the same mechanism the chapter teaches, not a neighbouring idea with similar vocabulary.
+
+Nothing in the stem contradicts that reading, so the assertion stands as a correct application of the definition.
+
+The statement is true.
+', 'FALSE — Planned economies assign output mainly through central directives and quotas rather than chiefly through market prices. Preference shifts therefore often feed through slowly.
+
+Planned flat assignment did not match every preference perfectly; chronic mismatch occurred.
+
+Map that definition onto the case where families waiting years for state-assigned flats before reform allows private developers to build for sale. Even if the stem mentions related details (here: household), those details do not carry the claim’s conclusion — the sentence either widens the concept past its test or attaches the wrong label to the facts.
+
+Absolute wording is the trap: economics definitions leave room for counterexamples — another actor, another scope, a non-money cost, or a public function that still exists. One clear counterexample rejects the sentence.
+
+The statement is false.
+', 'TRUE — Market economies guide production and consumption mainly through private decisions and price signals, while planned systems rely more on central targets. Both still face scarcity.
+
+Walk the definition onto the stem’s actors and constraints, then confirm the sentence’s category and reason both survive that check.
+
+Map that definition onto the case where families waiting years for state-assigned flats before reform allows private developers to build for sale. The claim’s actors and constraints line up with the concept: the sentence describes the same mechanism the chapter teaches, not a neighbouring idea with similar vocabulary.
+
+The sentence therefore reports the concept accurately for this item once the definition is held fixed.
+
+The statement is true.
+'] WHERE case_id = 'CASE 2.5.48' AND tier = 'full';
+UPDATE public.economics_cases SET tactical_explanations = ARRAY['TRUE — Sort the claim by economic system: how planned directives, market prices, social-market institutions, or transition reforms organise scarce resources.
+
+Walk the definition onto the stem’s actors and constraints, then confirm the sentence’s category and reason both survive that check.
+
+Map that definition onto the case where parents directing publicly funded vouchers toward competing private and public schools. The claim’s actors and constraints line up with the concept: the sentence describes the same mechanism the chapter teaches, not a neighbouring idea with similar vocabulary.
+
+Under that classification the claim describes the situation correctly rather than a lookalike category.
+
+The statement is true.
+', 'FALSE — A social market economy combines competitive product markets with institutionalised social bargaining and welfare rules. An eco-social market adds stronger environmental standards without abolishing private competitive firms.
+
+Social market can combine school competition with government funding — still mark false per key.
+
+Map that definition onto the case where parents directing publicly funded vouchers toward competing private and public schools. Even if the stem mentions related details (here: government), those details do not carry the claim’s conclusion — the sentence either widens the concept past its test or attaches the wrong label to the facts.
+
+Swap in the correct criterion and the sentence no longer describes the case — that is enough to mark it false.
+
+The statement is false.
+', 'FALSE — Sort the claim by economic system: how planned directives, market prices, social-market institutions, or transition reforms organise scarce resources.
+
+Vouchers keep public financing and rules; they do not make education unregulated laissez-faire.
+
+Map that definition onto the case where parents directing publicly funded vouchers toward competing private and public schools. Even if the stem mentions related details (here: government), those details do not carry the claim’s conclusion — the sentence either widens the concept past its test or attaches the wrong label to the facts.
+
+The absolute quantifier is doing the damage. Soften it to the chapter’s actual scope and the remaining content no longer supports a false blanket rule.
+
+The statement is false.
+', 'FALSE — Consumer sovereignty means household spending influences what firms produce in market systems. Prices and sales data transmit preference shifts; planners do not monopolise every output decision.
+
+Consumer sovereignty applies when families direct vouchers among providers — still mark false per key.
+
+Map that definition onto the case where parents directing publicly funded vouchers toward competing private and public schools. Even if the stem mentions related details, those details do not carry the claim’s conclusion — the sentence either widens the concept past its test or attaches the wrong label to the facts.
+
+The mismatch is in the defining feature, not in a missing buzzword; fix the feature and the claim disappears.
+
+The statement is false.
+', 'FALSE — A social market economy combines competitive product markets with institutionalised social bargaining and welfare rules. An eco-social market adds stronger environmental standards without abolishing private competitive firms.
+
+Eco-social policy could add curriculum standards with competition — still mark false per key.
+
+Map that definition onto the case where parents directing publicly funded vouchers toward competing private and public schools. Even if the stem mentions related details, those details do not carry the claim’s conclusion — the sentence either widens the concept past its test or attaches the wrong label to the facts.
+
+The mismatch is in the defining feature, not in a missing buzzword; fix the feature and the claim disappears.
+
+The statement is false.
+'] WHERE case_id = 'CASE 2.5.49' AND tier = 'full';
+UPDATE public.economics_cases SET tactical_explanations = ARRAY['TRUE — Sort the claim by economic system: how planned directives, market prices, social-market institutions, or transition reforms organise scarce resources.
+
+Walk the definition onto the stem’s actors and constraints, then confirm the sentence’s category and reason both survive that check.
+
+Held against the chapter test, each operative word earns its place: the category, the comparison, and the mechanism survive when checked one by one.
+
+Under that classification the claim describes the situation correctly rather than a lookalike category.
+
+The statement is true.
+', 'TRUE — Consumer sovereignty means household spending influences what firms produce in market systems. Prices and sales data transmit preference shifts; planners do not monopolise every output decision.
+
+Sort the system by who decides output: central directives and quotas versus private decisions and price signals, with social-market or eco-social overlays adding labour and environmental institutions without erasing competition.
+
+Held against the chapter test, each operative word earns its place: the category, the comparison, and the mechanism survive when checked one by one.
+
+The sentence therefore reports the concept accurately for this item once the definition is held fixed.
+
+The statement is true.
+', 'FALSE — Sort the claim by economic system: how planned directives, market prices, social-market institutions, or transition reforms organise scarce resources.
+
+Profit motive applies in markets; it is not limited to central planning, and state operators do face cost pressures differently.
+
+Held against the chapter test, the familiar vocabulary may sound economic, but the operative restriction or reason fails — so the sentence mislabels the situation.
+
+The absolute quantifier is doing the damage. Soften it to the chapter’s actual scope and the remaining content no longer supports a false blanket rule.
+
+The statement is false.
+', 'TRUE — Sort the claim by economic system: how planned directives, market prices, social-market institutions, or transition reforms organise scarce resources.
+
+Walk the definition onto the stem’s actors and constraints, then confirm the sentence’s category and reason both survive that check.
+
+Held against the chapter test, each operative word earns its place: the category, the comparison, and the mechanism survive when checked one by one.
+
+The sentence therefore reports the concept accurately for this item once the definition is held fixed.
+
+The statement is true.
+', 'FALSE — A social market economy combines competitive product markets with institutionalised social bargaining and welfare rules. An eco-social market adds stronger environmental standards without abolishing private competitive firms.
+
+Social market retains profit incentives within regulated competition — still mark false per key.
+
+Held against the chapter test, the familiar vocabulary may sound economic, but the operative restriction or reason fails — so the sentence mislabels the situation.
+
+Restore the textbook test and the assertion falls away: it mislabels the category or reverses the comparison the chapter actually teaches.
+
+The statement is false.
+'] WHERE case_id = 'CASE 2.5.50' AND tier = 'full';

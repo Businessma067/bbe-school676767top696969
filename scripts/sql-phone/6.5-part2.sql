@@ -1,798 +1,1646 @@
 -- Update expanded explanations for 6.5-part2 (25 cases).
 -- Safe to re-run: only updates tactical_explanations.
 
-UPDATE public.economics_cases SET tactical_explanations = ARRAY['TRUE — The claim is correct. Secondary-market trading changes who owns the shares; it does not, by itself, inject fresh equity cash into the issuing company.
+UPDATE public.economics_cases SET tactical_explanations = ARRAY['TRUE — On a stock exchange, existing shares change hands between investors.
 
-The task tests financial ratios and analysis of statements. Financial statements distinguish stocks (balance sheet at a date) from flows (income and cash over a period); many false statements swap those roles.
+That transfer does not raise new capital for the issuer; fresh equity cash comes only from primary issues or similar company transactions.
 
-Apply the case evidence: Secondary trading does not raise new company funds. Check whether the direction of change (higher/lower, above/below the threshold) matches what the statement asserts.
+Using the stem facts: "Secondary-market trading changes who owns the shares; it does not, by itself, inject fresh equity cash into the issuing company."
 
-The reasoning chain is complete, so mark the statement true.', 'FALSE — On the Fuhrmann definition used in the entrance exam, the sentence is false. The current ratio is below 1.21.
+Activity ratios use averages: asset turnover = revenue / average assets; inventory turnover = cost of sales / average inventory; receivables turnover = revenue / average receivables; days ≈ 365 / turnover. Market capitalisation = price × shares; EPS relates earnings to shares outstanding.
 
-The underlying topic is financial ratios and analysis of statements. When figures appear, the exam checks whether you can interpret them in accounting terms—what increased, what ratio is implied, and whether the label (current, non-current, equity, and so on) fits.
+The statement is true.', 'FALSE — The current ratio is the standard liquidity cover of current assets over current liabilities.
 
-Apply the case evidence: Current ratio ≈ 2.02. Check whether the direction of change (higher/lower, above/below the threshold) matches what the statement asserts.
+Name the identity in words: current ratio = current assets ÷ current liabilities.
 
-The statement sounds plausible but fails on precision, so it is false.', 'FALSE — The claim is false. The equity ratio is below 21%.
+Build current assets and current liabilities from the extract:
 
-The underlying topic is financial ratios and analysis of statements. When figures appear, the exam checks whether you can interpret them in accounting terms—what increased, what ratio is implied, and whether the label (current, non-current, equity, and so on) fits.
+$$
+CA = 107 + 135 + 96 = 338
+$$
 
-Apply the case evidence: Equity ratio ≈ 41.5%. Check whether the direction of change (higher/lower, above/below the threshold) matches what the statement asserts.
+$$
+CL = 135 + 32 = 167
+$$
 
-Because the decisive detail is wrong, mark the statement false.', 'FALSE — The claim is false. Buildings make up more than 45.6% of total assets.
+$$
+\text{Current ratio} = \frac{338}{167} = 2.0240
+$$
 
-The underlying topic is financial ratios and analysis of statements. When figures appear, the exam checks whether you can interpret them in accounting terms—what increased, what ratio is implied, and whether the label (current, non-current, equity, and so on) fits.
+Claimed: is below 1.21. Actual 2.02.
 
-Apply the case evidence: Buildings are about 35.0% of total assets. Check whether the direction of change (higher/lower, above/below the threshold) matches what the statement asserts.
+Reading the arithmetic against the claim: actual current ratio 2.02 versus ''is below 1.21'' so the statement does not hold.
 
-Once the overclaim or mislabel is exposed, the only consistent answer is false.', 'FALSE — Evaluated against the textbook standard, this assertion is false. Inventory make up more than 47.1% of current assets.
+The statement is false.', 'FALSE — The equity ratio places equity against total assets so the financing structure can be judged on one balance sheet.
 
-This item belongs to the accounting block on financial ratios and analysis of statements. Ratio and classification questions ask you to connect a figure or comparison in the case with the correct statement category, not merely to recognise a number.
+Name the identity in words: equity ratio = equity ÷ total assets.
 
-From the figures or classification rule involved, inventory are about 31.7% of current assets. Accounting statements fail when a loss is treated as increasing equity, when a flow is placed on the balance sheet, or when a ratio inequality is reversed.
+From the extract, equity = 426 and total assets = 1,027. Plug the figures step by step:
 
-Once the overclaim or mislabel is exposed, the only consistent answer is false.'] WHERE case_id = 'CASE 6.5.026' AND tier = 'full';
-UPDATE public.economics_cases SET tactical_explanations = ARRAY['TRUE — This statement is correct. Asset turnover, revenue taken relative to average total assets, is above 1.06.
+$$
+ER = \frac{\text{equity}}{\text{total assets}}
+$$
 
-This item belongs to the accounting block on financial ratios and analysis of statements. Ratio and classification questions ask you to connect a figure or comparison in the case with the correct statement category, not merely to recognise a number.
+$$
+ER = \frac{426}{1,027}
+$$
 
-From the figures or classification rule involved, asset turnover ≈ 1.34. Accounting statements fail when a loss is treated as increasing equity, when a flow is placed on the balance sheet, or when a ratio inequality is reversed.
+$$
+ER = 41.5\%
+$$
 
-No qualifying word breaks the definition or scenario, so the answer is true.', 'FALSE — The claim is false. On average, revenue remains outstanding in trade receivables for more than 43 days.
+Claimed: is below 21%. Actual 41.5%.
 
-The underlying topic is financial ratios and analysis of statements. When figures appear, the exam checks whether you can interpret them in accounting terms—what increased, what ratio is implied, and whether the label (current, non-current, equity, and so on) fits.
+Reading the arithmetic against the claim: actual equity ratio 41.5% does not match ''is below 21%'' so the statement does not hold.
 
-Apply the case evidence: Average collection period ≈ 33 days. Check whether the direction of change (higher/lower, above/below the threshold) matches what the statement asserts.
+The statement is false.', 'FALSE — This is a composition claim: express Buildings as a percentage of total assets.
 
-The statement sounds plausible but fails on precision, so it is false.', 'FALSE — This statement is false. Average inventory make up less than 13.4% of average total assets.
+Name the identity in words: Buildings share of total assets = Buildings ÷ total assets.
 
-This item belongs to the accounting block on financial ratios and analysis of statements. Ratio and classification questions ask you to connect a figure or comparison in the case with the correct statement category, not merely to recognise a number.
+From the extract, Buildings = 359 and total assets = 1,027. Plug the figures step by step:
 
-From the figures or classification rule involved, average inventory are about 18.9% of average total assets. Accounting statements fail when a loss is treated as increasing equity, when a flow is placed on the balance sheet, or when a ratio inequality is reversed.
+$$
+Share = \frac{\text{Buildings}}{\text{total assets}}
+$$
 
-Because the decisive detail is wrong, mark the statement false.', 'FALSE — The claim is false. Cost of sales amounts to more than 68% of revenue.
+$$
+Share = \frac{359}{1,027}
+$$
 
-The underlying topic is financial ratios and analysis of statements. When figures appear, the exam checks whether you can interpret them in accounting terms—what increased, what ratio is implied, and whether the label (current, non-current, equity, and so on) fits.
+$$
+Share = 35.0\%
+$$
 
-Apply the case evidence: Cost of sales is about 63.5% of revenue. Check whether the direction of change (higher/lower, above/below the threshold) matches what the statement asserts.
+Threshold: more than 45.6%. Actual 35.0%.
 
-The statement sounds plausible but fails on precision, so it is false.', 'TRUE — The claim is correct. Inventory turnover, cost of sales taken relative to average inventory, is below 6.15 times per year.
+Reading the arithmetic against the claim: actual share 35.0% does not match ''more than 45.6%'' so the statement does not hold.
 
-The underlying topic is financial ratios and analysis of statements. When figures appear, the exam checks whether you can interpret them in accounting terms—what increased, what ratio is implied, and whether the label (current, non-current, equity, and so on) fits.
+The statement is false.', 'FALSE — This is a composition claim: express Inventory as a percentage of current assets.
 
-Apply the case evidence: Inventory turnover ≈ 4.50. Check whether the direction of change (higher/lower, above/below the threshold) matches what the statement asserts.
+Name the identity in words: Inventory share of current assets = Inventory ÷ current assets.
 
-The reasoning chain is complete, so mark the statement true.'] WHERE case_id = 'CASE 6.5.027' AND tier = 'full';
-UPDATE public.economics_cases SET tactical_explanations = ARRAY['TRUE — The claim is correct. Asset turnover, revenue taken relative to average total assets, is above 1.23.
+From the extract, Inventory = 107 and current assets = 338. Plug the figures step by step:
 
-The underlying topic is financial ratios and analysis of statements. When figures appear, the exam checks whether you can interpret them in accounting terms—what increased, what ratio is implied, and whether the label (current, non-current, equity, and so on) fits.
+$$
+Share = \frac{\text{Inventory}}{\text{current assets}}
+$$
 
-Apply the case evidence: Asset turnover ≈ 1.34. Check whether the direction of change (higher/lower, above/below the threshold) matches what the statement asserts.
+$$
+Share = \frac{107}{338}
+$$
 
-The reasoning chain is complete, so mark the statement true.', 'TRUE — This statement is correct. Inventory turnover, cost of sales taken relative to average inventory, is below 5.8 times per year.
+$$
+Share = 31.7\%
+$$
 
-This item belongs to the accounting block on financial ratios and analysis of statements. Ratio and classification questions ask you to connect a figure or comparison in the case with the correct statement category, not merely to recognise a number.
+Threshold: more than 47.1%. Actual 31.7%.
 
-From the figures or classification rule involved, inventory turnover ≈ 4.85. Accounting statements fail when a loss is treated as increasing equity, when a flow is placed on the balance sheet, or when a ratio inequality is reversed.
+Reading the arithmetic against the claim: actual share 31.7% does not match ''more than 47.1%'' so the statement does not hold.
 
-Every part of the claim aligns with the standard concept, so the statement stands.', 'TRUE — The claim is correct. Trade receivables turnover, revenue taken relative to average trade receivables, exceeds 10.76 times per year.
+The statement is false.'] WHERE case_id = 'CASE 6.5.026' AND tier = 'full';
+UPDATE public.economics_cases SET tactical_explanations = ARRAY['TRUE — Asset turnover shows how many times revenue covers average total assets over the year.
 
-The underlying topic is financial ratios and analysis of statements. When figures appear, the exam checks whether you can interpret them in accounting terms—what increased, what ratio is implied, and whether the label (current, non-current, equity, and so on) fits.
+Name the identity in words: asset turnover = revenue ÷ average total assets.
 
-Apply the case evidence: Receivables turnover ≈ 10.81. Check whether the direction of change (higher/lower, above/below the threshold) matches what the statement asserts.
+$$
+\text{Avg assets} = \frac{830 + 1,039}{2} = 934.5
+$$
 
-The reasoning chain is complete, so mark the statement true.', 'TRUE — This statement is correct. With inventory turnover of about 4.8 times a year on this extract, a higher figure would generally mean stock is sold and replaced more quickly, tying up less money in inventory.
+$$
+AT = \frac{1,252}{934.5} = 1.3398
+$$
 
-This item belongs to the accounting block on financial ratios and analysis of statements. Ratio and classification questions ask you to connect a figure or comparison in the case with the correct statement category, not merely to recognise a number.
+Claimed above 1.06. Actual 1.34.
 
-From the figures or classification rule involved, high turnover signals faster stock rotation. Accounting statements fail when a loss is treated as increasing equity, when a flow is placed on the balance sheet, or when a ratio inequality is reversed.
+Reading the arithmetic against the claim: asset turnover 1.34 versus ''above 1.06'' so the statement holds.
 
-The reasoning chain is complete, so mark the statement true.', 'TRUE — This statement is correct. Revenue exceeds €1,145 thousand.
+The statement is true.', 'FALSE — Collection days convert receivables turnover into an approximate outstanding period.
 
-This item belongs to the accounting block on financial ratios and analysis of statements. Ratio and classification questions ask you to connect a figure or comparison in the case with the correct statement category, not merely to recognise a number.
+Name the identity in words: collection days ≈ 365 ÷ receivables turnover.
 
-From the figures or classification rule involved, revenue = 1,249. Accounting statements fail when a loss is treated as increasing equity, when a flow is placed on the balance sheet, or when a ratio inequality is reversed.
+$$
+RT = \frac{1,252}{114} = 10.9825
+$$
 
-The reasoning chain is complete, so mark the statement true.'] WHERE case_id = 'CASE 6.5.028' AND tier = 'full';
-UPDATE public.economics_cases SET tactical_explanations = ARRAY['TRUE — Evaluated against the textbook standard, this assertion is correct. The current ratio exceeds 1.55.
+$$
+\text{Days} = \frac{365}{10.9825} = 33.2
+$$
 
-This item belongs to the accounting block on financial ratios and analysis of statements. Ratio and classification questions ask you to connect a figure or comparison in the case with the correct statement category, not merely to recognise a number.
+Threshold: more than 43 days. Actual 33 days.
 
-From the figures or classification rule involved, current ratio ≈ 3.62. Accounting statements fail when a loss is treated as increasing equity, when a flow is placed on the balance sheet, or when a ratio inequality is reversed.
+Reading the arithmetic against the claim: collection days 33 do not exceed 43 so the statement does not hold.
 
-The reasoning chain is complete, so mark the statement true.', 'FALSE — On the Fuhrmann definition used in the entrance exam, the sentence is false. The equity ratio is below 28.7%.
+The statement is false.', 'FALSE — Average inventory and average assets are midpoints of the beginning and ending balances on the extract.
 
-The underlying topic is financial ratios and analysis of statements. When figures appear, the exam checks whether you can interpret them in accounting terms—what increased, what ratio is implied, and whether the label (current, non-current, equity, and so on) fits.
+Name the identity in words: average-inventory share = average inventory ÷ average total assets.
 
-Apply the case evidence: Equity ratio ≈ 65.5%. Check whether the direction of change (higher/lower, above/below the threshold) matches what the statement asserts.
+$$
+\text{Avg inventory} = \frac{158 + 195}{2} = 176.5
+$$
 
-Because the decisive detail is wrong, mark the statement false.', 'FALSE — The claim is false. The debt ratio exceeds 76.4%.
+$$
+\text{Avg assets} = \frac{830 + 1,039}{2} = 934.5
+$$
 
-The underlying topic is financial ratios and analysis of statements. When figures appear, the exam checks whether you can interpret them in accounting terms—what increased, what ratio is implied, and whether the label (current, non-current, equity, and so on) fits.
+$$
+\frac{176.5}{934.5} = 18.9\%
+$$
 
-Apply the case evidence: Debt ratio ≈ 34.5%. Check whether the direction of change (higher/lower, above/below the threshold) matches what the statement asserts.
+Threshold: less than 13.4%. Actual 18.9%.
 
-Because the decisive detail is wrong, mark the statement false.', 'TRUE — Evaluated against the textbook standard, this assertion is correct. Working capital of €335 thousand is positive on this balance sheet.
+Reading the arithmetic against the claim: the share is 18.9% versus ''less than 13.4%'' so the statement does not hold.
 
-This item belongs to the accounting block on financial ratios and analysis of statements. Ratio and classification questions ask you to connect a figure or comparison in the case with the correct statement category, not merely to recognise a number.
+The statement is false.', 'FALSE — Cost of sales as a share of revenue is the COS-to-revenue ratio.
 
-From the figures or classification rule involved, working capital = 335. Accounting statements fail when a loss is treated as increasing equity, when a flow is placed on the balance sheet, or when a ratio inequality is reversed.
+Name the identity in words: COS share = cost of sales ÷ revenue.
 
-The reasoning chain is complete, so mark the statement true.', 'FALSE — This statement is false. Buildings make up more than 50.7% of total assets.
+From the extract, cost of sales = 795 and revenue = 1,252. Plug the figures step by step:
 
-This item belongs to the accounting block on financial ratios and analysis of statements. Ratio and classification questions ask you to connect a figure or comparison in the case with the correct statement category, not merely to recognise a number.
+$$
+COS\% = \frac{\text{cost of sales}}{\text{revenue}}
+$$
 
-From the figures or classification rule involved, buildings are about 36.0% of total assets. Accounting statements fail when a loss is treated as increasing equity, when a flow is placed on the balance sheet, or when a ratio inequality is reversed.
+$$
+COS\% = \frac{795}{1,252}
+$$
 
-The statement sounds plausible but fails on precision, so it is false.'] WHERE case_id = 'CASE 6.5.029' AND tier = 'full';
-UPDATE public.economics_cases SET tactical_explanations = ARRAY['TRUE — The claim is correct. Return on equity for a supermarket chain relates the profit before interest and tax generated during the period to the equity that owners have invested in the business.
+$$
+COS\% = 63.5\%
+$$
 
-The task tests financial ratios and analysis of statements. Financial statements distinguish stocks (balance sheet at a date) from flows (income and cash over a period); many false statements swap those roles.
+Threshold: more than 68%. Actual 63.5%.
 
-Apply the case evidence: Return on equity for a supermarket chain links profit before interest and tax to owners'' equity. Check whether the direction of change (higher/lower, above/below the threshold) matches what the statement asserts.
+Reading the arithmetic against the claim: COS share 63.5% does not exceed 68% so the statement does not hold.
 
-No qualifying word breaks the definition or scenario, so the answer is true.', 'FALSE — On the Fuhrmann definition used in the entrance exam, the sentence is false. A rising debt ratio always reduces financial risk for the owners of a business regardless of how the additional funds are used.
+The statement is false.', 'TRUE — Inventory turnover relates cost of sales to average inventory held.
 
-The underlying topic is financial ratios and analysis of statements. When figures appear, the exam checks whether you can interpret them in accounting terms—what increased, what ratio is implied, and whether the label (current, non-current, equity, and so on) fits.
+Name the identity in words: inventory turnover = cost of sales ÷ average inventory.
 
-Apply the case evidence: A rising debt ratio generally signals greater reliance on borrowing and higher, not lower, financial risk for owners. Check whether the direction of change (higher/lower, above/below the threshold) matches what the statement asserts.
+$$
+\text{Avg inventory} = \frac{158 + 195}{2} = 176.5
+$$
 
-Watch the absolute wording "always": exam statements often sound plausible until a single scope word turns an otherwise familiar idea into an overclaim.
+$$
+IT = \frac{795}{176.5} = 4.5042
+$$
 
-The statement sounds plausible but fails on precision, so it is false.', 'FALSE — The claim is false. Financial statement analysis is concerned only with profitability and has no established framework for examining liquidity, efficiency or structure.
+Claimed below 6.15. Actual 4.50.
 
-The task tests financial ratios and analysis of statements. Financial statements distinguish stocks (balance sheet at a date) from flows (income and cash over a period); many false statements swap those roles.
+Reading the arithmetic against the claim: inventory turnover 4.50 versus ''below 6.15'' so the statement holds.
 
-Apply the case evidence: Financial statement analysis is commonly organised around liquidity, profitability, efficiency and structure together, not profitability alone. Check whether the direction of change (higher/lower, above/below the threshold) matches what the statement asserts.
+The statement is true.'] WHERE case_id = 'CASE 6.5.027' AND tier = 'full';
+UPDATE public.economics_cases SET tactical_explanations = ARRAY['TRUE — Asset turnover shows how many times revenue covers average total assets over the year.
 
-Once the overclaim or mislabel is exposed, the only consistent answer is false.', 'TRUE — Evaluated against the textbook standard, this assertion is correct. A return on capital employed figure for a supermarket chain carries more weight when read alongside the business''s own results from earlier years or against similar firms in its industry.
+Name the identity in words: asset turnover = revenue ÷ average total assets.
 
-This is an accounting reasoning item on financial ratios and analysis of statements. Decide whether the sentence correctly describes how a transaction, balance-sheet line, or period result affects assets, liabilities, or equity.
+$$
+\text{Avg assets} = \frac{900 + 961}{2} = 930.5
+$$
 
-From the figures or classification rule involved, return on capital employed for a supermarket chain is most useful in comparison rather than in isolation. Accounting statements fail when a loss is treated as increasing equity, when a flow is placed on the balance sheet, or when a ratio inequality is reversed.
+$$
+AT = \frac{1,249}{930.5} = 1.3423
+$$
 
-Every part of the claim aligns with the standard concept, so the statement stands.', 'TRUE — This statement is correct. Asset turnover for a supermarket chain relates revenue earned during the period to the average total assets employed to generate that revenue.
+Claimed above 1.23. Actual 1.34.
 
-This item belongs to the accounting block on financial ratios and analysis of statements. Ratio and classification questions ask you to connect a figure or comparison in the case with the correct statement category, not merely to recognise a number.
+Reading the arithmetic against the claim: asset turnover 1.34 versus ''above 1.23'' so the statement holds.
 
-From the figures or classification rule involved, asset turnover measures how much revenue a supermarket chain generates per unit of average assets. Accounting statements fail when a loss is treated as increasing equity, when a flow is placed on the balance sheet, or when a ratio inequality is reversed.
+The statement is true.', 'TRUE — Inventory turnover relates cost of sales to average inventory held.
 
-No qualifying word breaks the definition or scenario, so the answer is true.'] WHERE case_id = 'CASE 6.5.030' AND tier = 'full';
-UPDATE public.economics_cases SET tactical_explanations = ARRAY['TRUE — Evaluated against the textbook standard, this assertion is correct. The equity ratio for a supermarket chain expresses the proportion of total assets financed by owners'' equity rather than by borrowed funds.
+Name the identity in words: inventory turnover = cost of sales ÷ average inventory.
 
-This item belongs to the accounting block on financial ratios and analysis of statements. Ratio and classification questions ask you to connect a figure or comparison in the case with the correct statement category, not merely to recognise a number.
+$$
+\text{Avg inventory} = \frac{145 + 178}{2} = 161.5
+$$
 
-From the figures or classification rule involved, equity ratio analysis for a supermarket chain expresses equity as a share of total assets. Accounting statements fail when a loss is treated as increasing equity, when a flow is placed on the balance sheet, or when a ratio inequality is reversed.
+$$
+IT = \frac{783}{161.5} = 4.8483
+$$
 
-Every part of the claim aligns with the standard concept, so the statement stands.', 'TRUE — On the Fuhrmann definition used in the entrance exam, the sentence is correct. If a supermarket chain draws on a short-term facility to settle supplier invoices, its cash position may improve while its working capital can simultaneously weaken because current liabilities rise.
+Claimed below 5.8. Actual 4.85.
 
-The underlying topic is financial ratios and analysis of statements. When figures appear, the exam checks whether you can interpret them in accounting terms—what increased, what ratio is implied, and whether the label (current, non-current, equity, and so on) fits.
+Reading the arithmetic against the claim: inventory turnover 4.85 versus ''below 5.8'' so the statement holds.
 
-Apply the case evidence: Short-term borrowing can boost cash yet reduce working capital for a supermarket chain. Check whether the direction of change (higher/lower, above/below the threshold) matches what the statement asserts.
+The statement is true.', 'TRUE — Receivables turnover shows how many times revenue covers average trade receivables.
 
-Every part of the claim aligns with the standard concept, so the statement stands.', 'TRUE — The claim is correct. Working capital for a consulting firm is found by subtracting current liabilities from current assets, so a widening gap in favour of current assets raises working capital.
+Name the identity in words: receivables turnover = revenue ÷ average trade receivables.
 
-The underlying topic is financial ratios and analysis of statements. When figures appear, the exam checks whether you can interpret them in accounting terms—what increased, what ratio is implied, and whether the label (current, non-current, equity, and so on) fits.
+$$
+\text{Avg receivables} = \frac{110 + 121}{2} = 115.5
+$$
 
-Apply the case evidence: The standard working capital definition applies to a consulting firm: current assets minus current liabilities. Check whether the direction of change (higher/lower, above/below the threshold) matches what the statement asserts.
+$$
+RT = \frac{1,249}{115.5} = 10.8139
+$$
 
-The reasoning chain is complete, so mark the statement true.', 'TRUE — The claim is correct. A consulting firm is generally better placed with positive working capital, since current assets then exceed current liabilities once short-term obligations are taken into account.
+Threshold: exceeds 10.76. Actual 10.81.
 
-The underlying topic is financial ratios and analysis of statements. When figures appear, the exam checks whether you can interpret them in accounting terms—what increased, what ratio is implied, and whether the label (current, non-current, equity, and so on) fits.
+Reading the arithmetic against the claim: receivables turnover 10.81 exceeds 10.76 so the statement holds.
 
-Apply the case evidence: Positive working capital is generally preferable for a consulting firm as a cushion over short-term obligations. Check whether the direction of change (higher/lower, above/below the threshold) matches what the statement asserts.
+The statement is true.', 'TRUE — Inventory turnover = cost of sales ÷ average inventory; a higher figure means stock moves faster and ties up less cash.
 
-No qualifying word breaks the definition or scenario, so the answer is true.', 'TRUE — On the Fuhrmann definition used in the entrance exam, the sentence is correct. The current ratio for a consulting firm sets total current assets against total current liabilities to judge whether short-term resources comfortably cover short-term obligations.
+Name the identity in words: inventory turnover = cost of sales ÷ average inventory.
 
-The underlying topic is financial ratios and analysis of statements. When figures appear, the exam checks whether you can interpret them in accounting terms—what increased, what ratio is implied, and whether the label (current, non-current, equity, and so on) fits.
+$$
+\text{Avg inventory} = \frac{145 + 178}{2} = 161.5
+$$
 
-Apply the case evidence: Current ratio analysis for a consulting firm compares current assets with current liabilities. Check whether the direction of change (higher/lower, above/below the threshold) matches what the statement asserts.
+$$
+IT = \frac{783}{161.5} = 4.85
+$$
 
-The reasoning chain is complete, so mark the statement true.'] WHERE case_id = 'CASE 6.5.031' AND tier = 'full';
-UPDATE public.economics_cases SET tactical_explanations = ARRAY['TRUE — The claim is correct. Return on equity for a consulting firm relates the profit before interest and tax generated during the period to the equity that owners have invested in the business.
+That reading matches the definition used in the claim.
 
-The task tests financial ratios and analysis of statements. Financial statements distinguish stocks (balance sheet at a date) from flows (income and cash over a period); many false statements swap those roles.
+Reading the arithmetic against the claim: inventory turnover is about 4.85, consistent with the stated interpretation so the statement holds.
 
-Apply the case evidence: Return on equity for a consulting firm links profit before interest and tax to owners'' equity. Check whether the direction of change (higher/lower, above/below the threshold) matches what the statement asserts.
+The statement is true.', 'TRUE — Revenue is read directly from the extract and compared with the stated euro-thousand threshold — a level check, not a ratio.
 
-The reasoning chain is complete, so mark the statement true.', 'TRUE — The claim is correct. A return on capital employed figure for a consulting firm carries more weight when read alongside the business''s own results from earlier years or against similar firms in its industry.
+From the extract:
 
-The task tests financial ratios and analysis of statements. Financial statements distinguish stocks (balance sheet at a date) from flows (income and cash over a period); many false statements swap those roles.
+$$
+\text{Revenue} = €1,249\text{ thousand}
+$$
 
-Apply the case evidence: Return on capital employed for a consulting firm is most useful in comparison rather than in isolation. Check whether the direction of change (higher/lower, above/below the threshold) matches what the statement asserts.
+The statement claims revenue exceeds €1,145 thousand. Actual revenue is €1,249 thousand, which exceeds that level.
 
-The reasoning chain is complete, so mark the statement true.', 'TRUE — The claim is correct. Asset turnover for a consulting firm relates revenue earned during the period to the average total assets employed to generate that revenue.
+Reading the arithmetic against the claim: revenue €1,249k exceeds €1,145k so the statement holds.
 
-The underlying topic is financial ratios and analysis of statements. When figures appear, the exam checks whether you can interpret them in accounting terms—what increased, what ratio is implied, and whether the label (current, non-current, equity, and so on) fits.
+The statement is true.'] WHERE case_id = 'CASE 6.5.028' AND tier = 'full';
+UPDATE public.economics_cases SET tactical_explanations = ARRAY['TRUE — The current ratio is the standard liquidity cover of current assets over current liabilities.
 
-Apply the case evidence: Asset turnover measures how much revenue a consulting firm generates per unit of average assets. Check whether the direction of change (higher/lower, above/below the threshold) matches what the statement asserts.
+Name the identity in words: current ratio = current assets ÷ current liabilities.
 
-No qualifying word breaks the definition or scenario, so the answer is true.', 'TRUE — On the Fuhrmann definition used in the entrance exam, the sentence is correct. The equity ratio for a consulting firm expresses the proportion of total assets financed by owners'' equity rather than by borrowed funds.
+Build current assets and current liabilities from the extract:
 
-The underlying topic is financial ratios and analysis of statements. When figures appear, the exam checks whether you can interpret them in accounting terms—what increased, what ratio is implied, and whether the label (current, non-current, equity, and so on) fits.
+$$
+CA = 273 + 145 + 45 = 463
+$$
 
-Apply the case evidence: Equity ratio analysis for a consulting firm expresses equity as a share of total assets. Check whether the direction of change (higher/lower, above/below the threshold) matches what the statement asserts.
+$$
+CL = 80 + 48 = 128
+$$
 
-The reasoning chain is complete, so mark the statement true.', 'TRUE — This statement is correct. If a consulting firm draws on a short-term facility to settle supplier invoices, its cash position may improve while its working capital can simultaneously weaken because current liabilities rise.
+$$
+\text{Current ratio} = \frac{463}{128} = 3.6172
+$$
 
-This item belongs to the accounting block on financial ratios and analysis of statements. Ratio and classification questions ask you to connect a figure or comparison in the case with the correct statement category, not merely to recognise a number.
+Claimed: exceeds 1.55. Actual 3.62.
 
-From the figures or classification rule involved, short-term borrowing can boost cash yet reduce working capital for a consulting firm. Accounting statements fail when a loss is treated as increasing equity, when a flow is placed on the balance sheet, or when a ratio inequality is reversed.
+Reading the arithmetic against the claim: actual current ratio 3.62 versus ''exceeds 1.55'' so the statement holds.
 
-The reasoning chain is complete, so mark the statement true.'] WHERE case_id = 'CASE 6.5.032' AND tier = 'full';
-UPDATE public.economics_cases SET tactical_explanations = ARRAY['FALSE — On the Fuhrmann definition used in the entrance exam, the sentence is false. Liquidity analysis is primarily concerned with long-term profitability rather than whether short-term obligations can be met.
+The statement is true.', 'FALSE — The equity ratio places equity against total assets so the financing structure can be judged on one balance sheet.
 
-The task tests financial ratios and analysis of statements. Financial statements distinguish stocks (balance sheet at a date) from flows (income and cash over a period); many false statements swap those roles.
+Name the identity in words: equity ratio = equity ÷ total assets.
 
-Apply the case evidence: Liquidity analysis focuses on meeting short-term obligations, not long-term profitability. Check whether the direction of change (higher/lower, above/below the threshold) matches what the statement asserts.
+From the extract, equity = 882 and total assets = 1,347. Plug the figures step by step:
 
-Because the decisive detail is wrong, mark the statement false.', 'FALSE — On the Fuhrmann definition used in the entrance exam, the sentence is false. Profitability analysis judges profit in absolute currency terms alone, without ever relating it to equity or capital employed.
+$$
+ER = \frac{\text{equity}}{\text{total assets}}
+$$
 
-The task tests financial ratios and analysis of statements. Financial statements distinguish stocks (balance sheet at a date) from flows (income and cash over a period); many false statements swap those roles.
+$$
+ER = \frac{882}{1,347}
+$$
 
-Apply the case evidence: Profitability analysis relates profit to the equity or capital employed that generated it, not just its absolute size. Check whether the direction of change (higher/lower, above/below the threshold) matches what the statement asserts.
+$$
+ER = 65.5\%
+$$
 
-The statement sounds plausible but fails on precision, so it is false.', 'TRUE — On the Fuhrmann definition used in the entrance exam, the sentence is correct. Working capital for a manufacturer is found by subtracting current liabilities from current assets, so a widening gap in favour of current assets raises working capital.
+Claimed: is below 28.7%. Actual 65.5%.
 
-The underlying topic is financial ratios and analysis of statements. When figures appear, the exam checks whether you can interpret them in accounting terms—what increased, what ratio is implied, and whether the label (current, non-current, equity, and so on) fits.
+Reading the arithmetic against the claim: actual equity ratio 65.5% does not match ''is below 28.7%'' so the statement does not hold.
 
-Apply the case evidence: The standard working capital definition applies to a manufacturer: current assets minus current liabilities. Check whether the direction of change (higher/lower, above/below the threshold) matches what the statement asserts.
+The statement is false.', 'FALSE — The debt ratio places debt against total assets so the financing structure can be judged on one balance sheet.
 
-Every part of the claim aligns with the standard concept, so the statement stands.', 'FALSE — The claim is false. Financial efficiency analysis has nothing to do with how assets are used to generate revenue.
+Name the identity in words: debt ratio = debt ÷ total assets.
 
-The task tests financial ratios and analysis of statements. Financial statements distinguish stocks (balance sheet at a date) from flows (income and cash over a period); many false statements swap those roles.
+From the extract, debt = 465 and total assets = 1,347. Plug the figures step by step:
 
-Apply the case evidence: Financial efficiency analysis is specifically about how effectively assets generate revenue. Check whether the direction of change (higher/lower, above/below the threshold) matches what the statement asserts.
+$$
+DR = \frac{\text{debt}}{\text{total assets}}
+$$
 
-Once the overclaim or mislabel is exposed, the only consistent answer is false.', 'FALSE — Evaluated against the textbook standard, this assertion is false. Financial structure analysis focuses exclusively on inventory levels rather than the balance between equity and borrowed funds.
+$$
+DR = \frac{465}{1,347}
+$$
 
-This item belongs to the accounting block on financial ratios and analysis of statements. Ratio and classification questions ask you to connect a figure or comparison in the case with the correct statement category, not merely to recognise a number.
+$$
+DR = 34.5\%
+$$
 
-From the figures or classification rule involved, financial structure analysis examines the equity-versus-borrowing balance, not inventory levels. Accounting statements fail when a loss is treated as increasing equity, when a flow is placed on the balance sheet, or when a ratio inequality is reversed.
+Claimed: exceeds 76.4%. Actual 34.5%.
 
-Watch the absolute wording "exclusively": exam statements often sound plausible until a single scope word turns an otherwise familiar idea into an overclaim.
+Reading the arithmetic against the claim: actual debt ratio 34.5% does not match ''exceeds 76.4%'' so the statement does not hold.
 
-Because the decisive detail is wrong, mark the statement false.'] WHERE case_id = 'CASE 6.5.033' AND tier = 'full';
-UPDATE public.economics_cases SET tactical_explanations = ARRAY['TRUE — On the Fuhrmann definition used in the entrance exam, the sentence is correct. Inventory turnover, cost of sales taken relative to average inventory, is below 6.87 times per year.
+The statement is false.', 'TRUE — Working capital is the euro surplus (or deficit) of current assets over current liabilities on this balance sheet.
 
-The underlying topic is financial ratios and analysis of statements. When figures appear, the exam checks whether you can interpret them in accounting terms—what increased, what ratio is implied, and whether the label (current, non-current, equity, and so on) fits.
+Name the identity in words: working capital = current assets − current liabilities.
 
-Apply the case evidence: Inventory turnover ≈ 3.87. Check whether the direction of change (higher/lower, above/below the threshold) matches what the statement asserts.
+From the extract, current assets total 463 and current liabilities total 128:
 
-Every part of the claim aligns with the standard concept, so the statement stands.', 'FALSE — On the Fuhrmann definition used in the entrance exam, the sentence is false. Asset turnover, revenue taken relative to average total assets, is above 1.48.
+$$
+WC = CA - CL
+$$
 
-The underlying topic is financial ratios and analysis of statements. When figures appear, the exam checks whether you can interpret them in accounting terms—what increased, what ratio is implied, and whether the label (current, non-current, equity, and so on) fits.
+$$
+CA = 463, \quad CL = 128
+$$
 
-Apply the case evidence: Asset turnover ≈ 1.10. Check whether the direction of change (higher/lower, above/below the threshold) matches what the statement asserts.
+$$
+WC = 463 - 128 = 335
+$$
 
-Because the decisive detail is wrong, mark the statement false.', 'TRUE — This statement is correct. With inventory turnover of about 3.9 times a year on this extract, a higher figure would generally mean stock is sold and replaced more quickly, tying up less money in inventory.
+The statement cites working capital of €335 thousand and that it is positive. Calculated WC is 335, which is positive.
 
-This item belongs to the accounting block on financial ratios and analysis of statements. Ratio and classification questions ask you to connect a figure or comparison in the case with the correct statement category, not merely to recognise a number.
+Reading the arithmetic against the claim: WC = 335 is positive as claimed so the statement holds.
 
-From the figures or classification rule involved, high turnover signals faster stock rotation. Accounting statements fail when a loss is treated as increasing equity, when a flow is placed on the balance sheet, or when a ratio inequality is reversed.
+The statement is true.', 'FALSE — This is a composition claim: express Buildings as a percentage of total assets.
 
-No qualifying word breaks the definition or scenario, so the answer is true.', 'TRUE — The claim is correct. Revenue exceeds €999 thousand.
+Name the identity in words: Buildings share of total assets = Buildings ÷ total assets.
 
-The underlying topic is financial ratios and analysis of statements. When figures appear, the exam checks whether you can interpret them in accounting terms—what increased, what ratio is implied, and whether the label (current, non-current, equity, and so on) fits.
+From the extract, Buildings = 485 and total assets = 1,347. Plug the figures step by step:
 
-Apply the case evidence: Revenue = 1,019. Check whether the direction of change (higher/lower, above/below the threshold) matches what the statement asserts.
+$$
+Share = \frac{\text{Buildings}}{\text{total assets}}
+$$
 
-The reasoning chain is complete, so mark the statement true.', 'FALSE — This statement is false. Trade receivables turnover, revenue taken relative to average trade receivables, exceeds 10.4 times per year.
+$$
+Share = \frac{485}{1,347}
+$$
 
-This item belongs to the accounting block on financial ratios and analysis of statements. Ratio and classification questions ask you to connect a figure or comparison in the case with the correct statement category, not merely to recognise a number.
+$$
+Share = 36.0\%
+$$
 
-From the figures or classification rule involved, receivables turnover ≈ 8.42. Accounting statements fail when a loss is treated as increasing equity, when a flow is placed on the balance sheet, or when a ratio inequality is reversed.
+Threshold: more than 50.7%. Actual 36.0%.
 
-Because the decisive detail is wrong, mark the statement false.'] WHERE case_id = 'CASE 6.5.034' AND tier = 'full';
-UPDATE public.economics_cases SET tactical_explanations = ARRAY['TRUE — On the Fuhrmann definition used in the entrance exam, the sentence is correct. Working capital of €50 thousand is positive on this balance sheet.
+Reading the arithmetic against the claim: actual share 36.0% does not match ''more than 50.7%'' so the statement does not hold.
 
-The underlying topic is financial ratios and analysis of statements. When figures appear, the exam checks whether you can interpret them in accounting terms—what increased, what ratio is implied, and whether the label (current, non-current, equity, and so on) fits.
+The statement is false.'] WHERE case_id = 'CASE 6.5.029' AND tier = 'full';
+UPDATE public.economics_cases SET tactical_explanations = ARRAY['TRUE — Activity ratios use averages: asset turnover = revenue / average assets; inventory turnover = cost of sales / average inventory; receivables turnover = revenue / average receivables; days ≈ 365 / turnover.
 
-Apply the case evidence: Working capital = 50. Check whether the direction of change (higher/lower, above/below the threshold) matches what the statement asserts.
+The wording matches the relevant rule for "The Acid-Test Liquidity Check in Context". Activity ratios use averages: asset turnover = revenue / average assets; inventory turnover = cost of sales / average inventory; receivables turnover = revenue / average receivables; days ≈ 365 / turnover. Market capitalisation = price × shares; EPS relates earnings to shares outstanding. Applied here: "Return on equity for a supermarket chain relates the profit before interest and tax generated during the period to the equity that owners have invested in the business."
 
-Every part of the claim aligns with the standard concept, so the statement stands.', 'FALSE — Evaluated against the textbook standard, this assertion is false. The equity ratio is below 16.6%.
+The statement is true.', 'FALSE — Activity ratios use averages: asset turnover = revenue / average assets; inventory turnover = cost of sales / average inventory; receivables turnover = revenue / average receivables; days ≈ 365 / turnover.
 
-This item belongs to the accounting block on financial ratios and analysis of statements. Ratio and classification questions ask you to connect a figure or comparison in the case with the correct statement category, not merely to recognise a number.
+Absolute or misapplied wording conflicts with the rule for "The Acid-Test Liquidity Check in Context". Activity ratios use averages: asset turnover = revenue / average assets; inventory turnover = cost of sales / average inventory; receivables turnover = revenue / average receivables; days ≈ 365 / turnover. Market capitalisation = price × shares; EPS relates earnings to shares outstanding. Rejected claim: "A rising debt ratio always reduces financial risk for the owners of a business regardless of how the additional funds are used."
 
-From the figures or classification rule involved, equity ratio ≈ 50.6%. Accounting statements fail when a loss is treated as increasing equity, when a flow is placed on the balance sheet, or when a ratio inequality is reversed.
+The statement is false.', 'FALSE — Activity ratios use averages: asset turnover = revenue / average assets; inventory turnover = cost of sales / average inventory; receivables turnover = revenue / average receivables; days ≈ 365 / turnover.
 
-The statement sounds plausible but fails on precision, so it is false.', 'FALSE — Evaluated against the textbook standard, this assertion is false. The debt ratio exceeds 51.3%.
+Absolute or misapplied wording conflicts with the rule for "The Acid-Test Liquidity Check in Context". Activity ratios use averages: asset turnover = revenue / average assets; inventory turnover = cost of sales / average inventory; receivables turnover = revenue / average receivables; days ≈ 365 / turnover. Market capitalisation = price × shares; EPS relates earnings to shares outstanding. Rejected claim: "Financial statement analysis is concerned only with profitability and has no established framework for examining liquidity, efficiency or structure."
 
-This item belongs to the accounting block on financial ratios and analysis of statements. Ratio and classification questions ask you to connect a figure or comparison in the case with the correct statement category, not merely to recognise a number.
+The statement is false.', 'TRUE — Activity ratios use averages: asset turnover = revenue / average assets; inventory turnover = cost of sales / average inventory; receivables turnover = revenue / average receivables; days ≈ 365 / turnover.
 
-From the figures or classification rule involved, debt ratio ≈ 49.4%. Accounting statements fail when a loss is treated as increasing equity, when a flow is placed on the balance sheet, or when a ratio inequality is reversed.
+The wording matches the relevant rule for "The Acid-Test Liquidity Check in Context". Activity ratios use averages: asset turnover = revenue / average assets; inventory turnover = cost of sales / average inventory; receivables turnover = revenue / average receivables; days ≈ 365 / turnover. Market capitalisation = price × shares; EPS relates earnings to shares outstanding. Applied here: "A return on capital employed figure for a supermarket chain carries more weight when read alongside the business''s own results from earlier years or against similar firms in its industry."
 
-Because the decisive detail is wrong, mark the statement false.', 'FALSE — On the Fuhrmann definition used in the entrance exam, the sentence is false. Buildings make up more than 52.2% of total assets.
+The statement is true.', 'TRUE — Activity ratios use averages: asset turnover = revenue / average assets; inventory turnover = cost of sales / average inventory; receivables turnover = revenue / average receivables; days ≈ 365 / turnover.
 
-The underlying topic is financial ratios and analysis of statements. When figures appear, the exam checks whether you can interpret them in accounting terms—what increased, what ratio is implied, and whether the label (current, non-current, equity, and so on) fits.
+The wording matches the relevant rule for "The Acid-Test Liquidity Check in Context". Activity ratios use averages: asset turnover = revenue / average assets; inventory turnover = cost of sales / average inventory; receivables turnover = revenue / average receivables; days ≈ 365 / turnover. Market capitalisation = price × shares; EPS relates earnings to shares outstanding. Applied here: "Asset turnover for a supermarket chain relates revenue earned during the period to the average total assets employed to generate that revenue."
 
-Apply the case evidence: Buildings are about 41.7% of total assets. Check whether the direction of change (higher/lower, above/below the threshold) matches what the statement asserts.
+The statement is true.'] WHERE case_id = 'CASE 6.5.030' AND tier = 'full';
+UPDATE public.economics_cases SET tactical_explanations = ARRAY['TRUE — Activity ratios use averages: asset turnover = revenue / average assets; inventory turnover = cost of sales / average inventory; receivables turnover = revenue / average receivables; days ≈ 365 / turnover.
 
-The statement sounds plausible but fails on precision, so it is false.', 'TRUE — This statement is correct. Trade receivables make up less than 47.9% of current assets.
+The wording matches the relevant rule for "Short-Term Borrowing and Working Capital in Practice". Activity ratios use averages: asset turnover = revenue / average assets; inventory turnover = cost of sales / average inventory; receivables turnover = revenue / average receivables; days ≈ 365 / turnover. Market capitalisation = price × shares; EPS relates earnings to shares outstanding. Applied here: "The equity ratio for a supermarket chain expresses the proportion of total assets financed by owners'' equity rather than by borrowed funds."
 
-This item belongs to the accounting block on financial ratios and analysis of statements. Ratio and classification questions ask you to connect a figure or comparison in the case with the correct statement category, not merely to recognise a number.
+The statement is true.', 'TRUE — Activity ratios use averages: asset turnover = revenue / average assets; inventory turnover = cost of sales / average inventory; receivables turnover = revenue / average receivables; days ≈ 365 / turnover.
 
-From the figures or classification rule involved, trade receivables are about 36.5% of current assets. Accounting statements fail when a loss is treated as increasing equity, when a flow is placed on the balance sheet, or when a ratio inequality is reversed.
+The claim states: If a supermarket chain draws on a short-term facility to settle supplier invoices, its cash position may improve while its working capital can simultaneously weaken. The reason given — current liabilities rise. — fits the chapter rule. Activity ratios use averages: asset turnover = revenue / average assets; inventory turnover = cost of sales / average inventory; receivables turnover = revenue / average receivables; days ≈ 365 / turnover. Market capitalisation = price × shares; EPS relates earnings to shares outstanding.
 
-No qualifying word breaks the definition or scenario, so the answer is true.'] WHERE case_id = 'CASE 6.5.035' AND tier = 'full';
-UPDATE public.economics_cases SET tactical_explanations = ARRAY['FALSE — This statement is false. On average, revenue remains outstanding in trade receivables for more than 50 days.
+The statement is true.', 'TRUE — Activity ratios use averages: asset turnover = revenue / average assets; inventory turnover = cost of sales / average inventory; receivables turnover = revenue / average receivables; days ≈ 365 / turnover.
 
-This item belongs to the accounting block on financial ratios and analysis of statements. Ratio and classification questions ask you to connect a figure or comparison in the case with the correct statement category, not merely to recognise a number.
+The wording matches the relevant rule for "Short-Term Borrowing and Working Capital in Practice". Activity ratios use averages: asset turnover = revenue / average assets; inventory turnover = cost of sales / average inventory; receivables turnover = revenue / average receivables; days ≈ 365 / turnover. Market capitalisation = price × shares; EPS relates earnings to shares outstanding. Applied here: "Working capital for a consulting firm is found by subtracting current liabilities from current assets, so a widening gap in favour of current assets raises working capital."
 
-From the figures or classification rule involved, average collection period ≈ 37 days. Accounting statements fail when a loss is treated as increasing equity, when a flow is placed on the balance sheet, or when a ratio inequality is reversed.
+The statement is true.', 'TRUE — Activity ratios use averages: asset turnover = revenue / average assets; inventory turnover = cost of sales / average inventory; receivables turnover = revenue / average receivables; days ≈ 365 / turnover.
 
-Once the overclaim or mislabel is exposed, the only consistent answer is false.', 'FALSE — This statement is false. Average inventory make up less than 17.5% of average total assets.
+The wording matches the relevant rule for "Short-Term Borrowing and Working Capital in Practice". Activity ratios use averages: asset turnover = revenue / average assets; inventory turnover = cost of sales / average inventory; receivables turnover = revenue / average receivables; days ≈ 365 / turnover. Market capitalisation = price × shares; EPS relates earnings to shares outstanding. Applied here: "A consulting firm is generally better placed with positive working capital, since current assets then exceed current liabilities once short-term obligations are taken into account."
 
-This item belongs to the accounting block on financial ratios and analysis of statements. Ratio and classification questions ask you to connect a figure or comparison in the case with the correct statement category, not merely to recognise a number.
+The statement is true.', 'TRUE — Activity ratios use averages: asset turnover = revenue / average assets; inventory turnover = cost of sales / average inventory; receivables turnover = revenue / average receivables; days ≈ 365 / turnover.
 
-From the figures or classification rule involved, average inventory are about 20.7% of average total assets. Accounting statements fail when a loss is treated as increasing equity, when a flow is placed on the balance sheet, or when a ratio inequality is reversed.
+The wording matches the relevant rule for "Short-Term Borrowing and Working Capital in Practice". Activity ratios use averages: asset turnover = revenue / average assets; inventory turnover = cost of sales / average inventory; receivables turnover = revenue / average receivables; days ≈ 365 / turnover. Market capitalisation = price × shares; EPS relates earnings to shares outstanding. Applied here: "The current ratio for a consulting firm sets total current assets against total current liabilities to judge whether short-term resources comfortably cover short-term obligations."
 
-Once the overclaim or mislabel is exposed, the only consistent answer is false.', 'TRUE — On the Fuhrmann definition used in the entrance exam, the sentence is correct. Inventory turnover, cost of sales taken relative to average inventory, is below 6.78 times per year.
+The statement is true.'] WHERE case_id = 'CASE 6.5.031' AND tier = 'full';
+UPDATE public.economics_cases SET tactical_explanations = ARRAY['TRUE — Activity ratios use averages: asset turnover = revenue / average assets; inventory turnover = cost of sales / average inventory; receivables turnover = revenue / average receivables; days ≈ 365 / turnover.
 
-The underlying topic is financial ratios and analysis of statements. When figures appear, the exam checks whether you can interpret them in accounting terms—what increased, what ratio is implied, and whether the label (current, non-current, equity, and so on) fits.
+The wording matches the relevant rule for "Short-Term Borrowing and Working Capital Explained". Activity ratios use averages: asset turnover = revenue / average assets; inventory turnover = cost of sales / average inventory; receivables turnover = revenue / average receivables; days ≈ 365 / turnover. Market capitalisation = price × shares; EPS relates earnings to shares outstanding. Applied here: "Return on equity for a consulting firm relates the profit before interest and tax generated during the period to the equity that owners have invested in the business."
 
-Apply the case evidence: Inventory turnover ≈ 3.69. Check whether the direction of change (higher/lower, above/below the threshold) matches what the statement asserts.
+The statement is true.', 'TRUE — Activity ratios use averages: asset turnover = revenue / average assets; inventory turnover = cost of sales / average inventory; receivables turnover = revenue / average receivables; days ≈ 365 / turnover.
 
-Every part of the claim aligns with the standard concept, so the statement stands.', 'FALSE — On the Fuhrmann definition used in the entrance exam, the sentence is false. Inventory grew by more than 31.4% between Year 1 and Year 2.
+The wording matches the relevant rule for "Short-Term Borrowing and Working Capital Explained". Activity ratios use averages: asset turnover = revenue / average assets; inventory turnover = cost of sales / average inventory; receivables turnover = revenue / average receivables; days ≈ 365 / turnover. Market capitalisation = price × shares; EPS relates earnings to shares outstanding. Applied here: "A return on capital employed figure for a consulting firm carries more weight when read alongside the business''s own results from earlier years or against similar firms in its industry."
 
-The underlying topic is financial ratios and analysis of statements. When figures appear, the exam checks whether you can interpret them in accounting terms—what increased, what ratio is implied, and whether the label (current, non-current, equity, and so on) fits.
+The statement is true.', 'TRUE — Activity ratios use averages: asset turnover = revenue / average assets; inventory turnover = cost of sales / average inventory; receivables turnover = revenue / average receivables; days ≈ 365 / turnover.
 
-Apply the case evidence: Inventory changed by about 15.9% between the two years. Check whether the direction of change (higher/lower, above/below the threshold) matches what the statement asserts.
+The wording matches the relevant rule for "Short-Term Borrowing and Working Capital Explained". Activity ratios use averages: asset turnover = revenue / average assets; inventory turnover = cost of sales / average inventory; receivables turnover = revenue / average receivables; days ≈ 365 / turnover. Market capitalisation = price × shares; EPS relates earnings to shares outstanding. Applied here: "Asset turnover for a consulting firm relates revenue earned during the period to the average total assets employed to generate that revenue."
 
-Because the decisive detail is wrong, mark the statement false.', 'FALSE — Evaluated against the textbook standard, this assertion is false. Trade receivables grew by more than 13.4% between the beginning and the end of the year.
+The statement is true.', 'TRUE — Activity ratios use averages: asset turnover = revenue / average assets; inventory turnover = cost of sales / average inventory; receivables turnover = revenue / average receivables; days ≈ 365 / turnover.
 
-This item belongs to the accounting block on financial ratios and analysis of statements. Ratio and classification questions ask you to connect a figure or comparison in the case with the correct statement category, not merely to recognise a number.
+The wording matches the relevant rule for "Short-Term Borrowing and Working Capital Explained". Activity ratios use averages: asset turnover = revenue / average assets; inventory turnover = cost of sales / average inventory; receivables turnover = revenue / average receivables; days ≈ 365 / turnover. Market capitalisation = price × shares; EPS relates earnings to shares outstanding. Applied here: "The equity ratio for a consulting firm expresses the proportion of total assets financed by owners'' equity rather than by borrowed funds."
 
-From the figures or classification rule involved, trade receivables moved from 111 to 103. Accounting statements fail when a loss is treated as increasing equity, when a flow is placed on the balance sheet, or when a ratio inequality is reversed.
+The statement is true.', 'TRUE — Activity ratios use averages: asset turnover = revenue / average assets; inventory turnover = cost of sales / average inventory; receivables turnover = revenue / average receivables; days ≈ 365 / turnover.
 
-Because the decisive detail is wrong, mark the statement false.'] WHERE case_id = 'CASE 6.5.036' AND tier = 'full';
-UPDATE public.economics_cases SET tactical_explanations = ARRAY['FALSE — The claim is false. The current ratio is below 1.07.
+The claim states: If a consulting firm draws on a short-term facility to settle supplier invoices, its cash position may improve while its working capital can simultaneously weaken. The reason given — current liabilities rise. — fits the chapter rule. Activity ratios use averages: asset turnover = revenue / average assets; inventory turnover = cost of sales / average inventory; receivables turnover = revenue / average receivables; days ≈ 365 / turnover. Market capitalisation = price × shares; EPS relates earnings to shares outstanding.
 
-The underlying topic is financial ratios and analysis of statements. When figures appear, the exam checks whether you can interpret them in accounting terms—what increased, what ratio is implied, and whether the label (current, non-current, equity, and so on) fits.
+The statement is true.'] WHERE case_id = 'CASE 6.5.032' AND tier = 'full';
+UPDATE public.economics_cases SET tactical_explanations = ARRAY['FALSE — Activity ratios use averages: asset turnover = revenue / average assets; inventory turnover = cost of sales / average inventory; receivables turnover = revenue / average receivables; days ≈ 365 / turnover.
 
-Apply the case evidence: Current ratio ≈ 2.43. Check whether the direction of change (higher/lower, above/below the threshold) matches what the statement asserts.
+Absolute or misapplied wording conflicts with the rule for "Short-Term Borrowing and Working Capital for Analysts". Activity ratios use averages: asset turnover = revenue / average assets; inventory turnover = cost of sales / average inventory; receivables turnover = revenue / average receivables; days ≈ 365 / turnover. Market capitalisation = price × shares; EPS relates earnings to shares outstanding. Rejected claim: "Liquidity analysis is primarily concerned with long-term profitability rather than whether short-term obligations can be met."
 
-Once the overclaim or mislabel is exposed, the only consistent answer is false.', 'FALSE — This statement is false. The equity ratio is below 41.1%.
+The statement is false.', 'FALSE — Activity ratios use averages: asset turnover = revenue / average assets; inventory turnover = cost of sales / average inventory; receivables turnover = revenue / average receivables; days ≈ 365 / turnover.
 
-This item belongs to the accounting block on financial ratios and analysis of statements. Ratio and classification questions ask you to connect a figure or comparison in the case with the correct statement category, not merely to recognise a number.
+Absolute or misapplied wording conflicts with the rule for "Short-Term Borrowing and Working Capital for Analysts". Activity ratios use averages: asset turnover = revenue / average assets; inventory turnover = cost of sales / average inventory; receivables turnover = revenue / average receivables; days ≈ 365 / turnover. Market capitalisation = price × shares; EPS relates earnings to shares outstanding. Rejected claim: "Profitability analysis judges profit in absolute currency terms alone, without ever relating it to equity or capital employed."
 
-From the figures or classification rule involved, equity ratio ≈ 53.7%. Accounting statements fail when a loss is treated as increasing equity, when a flow is placed on the balance sheet, or when a ratio inequality is reversed.
+The statement is false.', 'TRUE — Activity ratios use averages: asset turnover = revenue / average assets; inventory turnover = cost of sales / average inventory; receivables turnover = revenue / average receivables; days ≈ 365 / turnover.
 
-The statement sounds plausible but fails on precision, so it is false.', 'FALSE — This statement is false. The debt ratio exceeds 64.2%.
+The wording matches the relevant rule for "Short-Term Borrowing and Working Capital for Analysts". Activity ratios use averages: asset turnover = revenue / average assets; inventory turnover = cost of sales / average inventory; receivables turnover = revenue / average receivables; days ≈ 365 / turnover. Market capitalisation = price × shares; EPS relates earnings to shares outstanding. Applied here: "Working capital for a manufacturer is found by subtracting current liabilities from current assets, so a widening gap in favour of current assets raises working capital."
 
-This item belongs to the accounting block on financial ratios and analysis of statements. Ratio and classification questions ask you to connect a figure or comparison in the case with the correct statement category, not merely to recognise a number.
+The statement is true.', 'FALSE — Activity ratios use averages: asset turnover = revenue / average assets; inventory turnover = cost of sales / average inventory; receivables turnover = revenue / average receivables; days ≈ 365 / turnover.
 
-From the figures or classification rule involved, debt ratio ≈ 46.3%. Accounting statements fail when a loss is treated as increasing equity, when a flow is placed on the balance sheet, or when a ratio inequality is reversed.
+Absolute or misapplied wording conflicts with the rule for "Short-Term Borrowing and Working Capital for Analysts". Activity ratios use averages: asset turnover = revenue / average assets; inventory turnover = cost of sales / average inventory; receivables turnover = revenue / average receivables; days ≈ 365 / turnover. Market capitalisation = price × shares; EPS relates earnings to shares outstanding. Rejected claim: "Financial efficiency analysis has nothing to do with how assets are used to generate revenue."
 
-Once the overclaim or mislabel is exposed, the only consistent answer is false.', 'FALSE — This statement is false. Buildings make up more than 42.5% of total assets.
+The statement is false.', 'FALSE — Activity ratios use averages: asset turnover = revenue / average assets; inventory turnover = cost of sales / average inventory; receivables turnover = revenue / average receivables; days ≈ 365 / turnover.
 
-This item belongs to the accounting block on financial ratios and analysis of statements. Ratio and classification questions ask you to connect a figure or comparison in the case with the correct statement category, not merely to recognise a number.
+Absolute or misapplied wording conflicts with the rule for "Short-Term Borrowing and Working Capital for Analysts". Activity ratios use averages: asset turnover = revenue / average assets; inventory turnover = cost of sales / average inventory; receivables turnover = revenue / average receivables; days ≈ 365 / turnover. Market capitalisation = price × shares; EPS relates earnings to shares outstanding. Rejected claim: "Financial structure analysis focuses exclusively on inventory levels rather than the balance between equity and borrowed funds."
 
-From the figures or classification rule involved, buildings are about 29.3% of total assets. Accounting statements fail when a loss is treated as increasing equity, when a flow is placed on the balance sheet, or when a ratio inequality is reversed.
+The statement is false.'] WHERE case_id = 'CASE 6.5.033' AND tier = 'full';
+UPDATE public.economics_cases SET tactical_explanations = ARRAY['TRUE — Inventory turnover relates cost of sales to average inventory held.
 
-The statement sounds plausible but fails on precision, so it is false.', 'TRUE — The claim is correct. After excluding inventory, the remaining current assets still cover current liabilities more than 0.92 times over.
+Name the identity in words: inventory turnover = cost of sales ÷ average inventory.
 
-The underlying topic is financial ratios and analysis of statements. When figures appear, the exam checks whether you can interpret them in accounting terms—what increased, what ratio is implied, and whether the label (current, non-current, equity, and so on) fits.
+$$
+\text{Avg inventory} = \frac{169 + 179}{2} = 174
+$$
 
-Apply the case evidence: Acid-test ratio ≈ 1.13. Check whether the direction of change (higher/lower, above/below the threshold) matches what the statement asserts.
+$$
+IT = \frac{674}{174} = 3.8736
+$$
 
-Every part of the claim aligns with the standard concept, so the statement stands.'] WHERE case_id = 'CASE 6.5.037' AND tier = 'full';
-UPDATE public.economics_cases SET tactical_explanations = ARRAY['FALSE — On the Fuhrmann definition used in the entrance exam, the sentence is false. The equity ratio is below 34.9%.
+Claimed below 6.87. Actual 3.87.
 
-The underlying topic is financial ratios and analysis of statements. When figures appear, the exam checks whether you can interpret them in accounting terms—what increased, what ratio is implied, and whether the label (current, non-current, equity, and so on) fits.
+Reading the arithmetic against the claim: inventory turnover 3.87 versus ''below 6.87'' so the statement holds.
 
-Apply the case evidence: Equity ratio ≈ 63.1%. Check whether the direction of change (higher/lower, above/below the threshold) matches what the statement asserts.
+The statement is true.', 'FALSE — Asset turnover shows how many times revenue covers average total assets over the year.
 
-Because the decisive detail is wrong, mark the statement false.', 'TRUE — The claim is correct. Working capital of €284 thousand is positive on this balance sheet.
+Name the identity in words: asset turnover = revenue ÷ average total assets.
 
-The underlying topic is financial ratios and analysis of statements. When figures appear, the exam checks whether you can interpret them in accounting terms—what increased, what ratio is implied, and whether the label (current, non-current, equity, and so on) fits.
+$$
+\text{Avg assets} = \frac{823 + 1,028}{2} = 925.5
+$$
 
-Apply the case evidence: Working capital = 284. Check whether the direction of change (higher/lower, above/below the threshold) matches what the statement asserts.
+$$
+AT = \frac{1,019}{925.5} = 1.1010
+$$
 
-No qualifying word breaks the definition or scenario, so the answer is true.', 'FALSE — This statement is false. Cash and cash equivalents make up more than 31% of current assets.
+Claimed above 1.48. Actual 1.10.
 
-This item belongs to the accounting block on financial ratios and analysis of statements. Ratio and classification questions ask you to connect a figure or comparison in the case with the correct statement category, not merely to recognise a number.
+Reading the arithmetic against the claim: asset turnover 1.10 versus ''above 1.48'' so the statement does not hold.
 
-From the figures or classification rule involved, cash and cash equivalents are about 25.7% of current assets. Accounting statements fail when a loss is treated as increasing equity, when a flow is placed on the balance sheet, or when a ratio inequality is reversed.
+The statement is false.', 'TRUE — Inventory turnover = cost of sales ÷ average inventory; a higher figure means stock moves faster and ties up less cash.
 
-The statement sounds plausible but fails on precision, so it is false.', 'FALSE — This statement is false. The long-term bank loan of €244 thousand should be classified within equity rather than liabilities.
+Name the identity in words: inventory turnover = cost of sales ÷ average inventory.
 
-This item belongs to the accounting block on financial ratios and analysis of statements. Ratio and classification questions ask you to connect a figure or comparison in the case with the correct statement category, not merely to recognise a number.
+$$
+\text{Avg inventory} = \frac{169 + 179}{2} = 174
+$$
 
-From the figures or classification rule involved, a bank loan is a liability, not equity, regardless of its size. Accounting statements fail when a loss is treated as increasing equity, when a flow is placed on the balance sheet, or when a ratio inequality is reversed.
+$$
+IT = \frac{674}{174} = 3.87
+$$
 
-The statement sounds plausible but fails on precision, so it is false.', 'FALSE — Evaluated against the textbook standard, this assertion is false. The bank overdraft of €35 thousand belongs under non-current liabilities because overdrafts usually run for several years.
+That reading matches the definition used in the claim.
 
-This item belongs to the accounting block on financial ratios and analysis of statements. Ratio and classification questions ask you to connect a figure or comparison in the case with the correct statement category, not merely to recognise a number.
+Reading the arithmetic against the claim: inventory turnover is about 3.87, consistent with the stated interpretation so the statement holds.
 
-From the figures or classification rule involved, a bank overdraft is a current liability. Accounting statements fail when a loss is treated as increasing equity, when a flow is placed on the balance sheet, or when a ratio inequality is reversed.
+The statement is true.', 'TRUE — Revenue is read directly from the extract and compared with the stated euro-thousand threshold — a level check, not a ratio.
 
-Once the overclaim or mislabel is exposed, the only consistent answer is false.'] WHERE case_id = 'CASE 6.5.038' AND tier = 'full';
-UPDATE public.economics_cases SET tactical_explanations = ARRAY['TRUE — On the Fuhrmann definition used in the entrance exam, the sentence is correct. Asset turnover, revenue taken relative to average total assets, is above 1.19.
+From the extract:
 
-The underlying topic is financial ratios and analysis of statements. When figures appear, the exam checks whether you can interpret them in accounting terms—what increased, what ratio is implied, and whether the label (current, non-current, equity, and so on) fits.
+$$
+\text{Revenue} = €1,019\text{ thousand}
+$$
 
-Apply the case evidence: Asset turnover ≈ 1.33. Check whether the direction of change (higher/lower, above/below the threshold) matches what the statement asserts.
+The statement claims revenue exceeds €999 thousand. Actual revenue is €1,019 thousand, which exceeds that level.
 
-No qualifying word breaks the definition or scenario, so the answer is true.', 'TRUE — The claim is correct. Inventory turnover, cost of sales taken relative to average inventory, is below 7.42 times per year.
+Reading the arithmetic against the claim: revenue €1,019k exceeds €999k so the statement holds.
 
-The underlying topic is financial ratios and analysis of statements. When figures appear, the exam checks whether you can interpret them in accounting terms—what increased, what ratio is implied, and whether the label (current, non-current, equity, and so on) fits.
+The statement is true.', 'FALSE — Receivables turnover shows how many times revenue covers average trade receivables.
 
-Apply the case evidence: Inventory turnover ≈ 5.51. Check whether the direction of change (higher/lower, above/below the threshold) matches what the statement asserts.
+Name the identity in words: receivables turnover = revenue ÷ average trade receivables.
 
-Every part of the claim aligns with the standard concept, so the statement stands.', 'TRUE — On the Fuhrmann definition used in the entrance exam, the sentence is correct. Average inventory make up less than 16.3% of average total assets.
+$$
+\text{Avg receivables} = \frac{135 + 107}{2} = 121
+$$
 
-The underlying topic is financial ratios and analysis of statements. When figures appear, the exam checks whether you can interpret them in accounting terms—what increased, what ratio is implied, and whether the label (current, non-current, equity, and so on) fits.
+$$
+RT = \frac{1,019}{121} = 8.4215
+$$
 
-Apply the case evidence: Average inventory are about 16.2% of average total assets. Check whether the direction of change (higher/lower, above/below the threshold) matches what the statement asserts.
+Threshold: exceeds 10.4. Actual 8.42.
 
-No qualifying word breaks the definition or scenario, so the answer is true.', 'FALSE — Evaluated against the textbook standard, this assertion is false. Trade receivables turnover, revenue taken relative to average trade receivables, exceeds 10.99 times per year.
+Reading the arithmetic against the claim: receivables turnover 8.42 does not exceed 10.4 so the statement does not hold.
 
-This item belongs to the accounting block on financial ratios and analysis of statements. Ratio and classification questions ask you to connect a figure or comparison in the case with the correct statement category, not merely to recognise a number.
+The statement is false.'] WHERE case_id = 'CASE 6.5.034' AND tier = 'full';
+UPDATE public.economics_cases SET tactical_explanations = ARRAY['TRUE — Working capital is the euro surplus (or deficit) of current assets over current liabilities on this balance sheet.
 
-From the figures or classification rule involved, receivables turnover ≈ 9.65. Accounting statements fail when a loss is treated as increasing equity, when a flow is placed on the balance sheet, or when a ratio inequality is reversed.
+Name the identity in words: working capital = current assets − current liabilities.
 
-Because the decisive detail is wrong, mark the statement false.', 'TRUE — Evaluated against the textbook standard, this assertion is correct. With inventory turnover of about 5.5 times a year on this extract, a higher figure would generally mean stock is sold and replaced more quickly, tying up less money in inventory.
+From the extract, current assets total 274 and current liabilities total 224:
 
-This item belongs to the accounting block on financial ratios and analysis of statements. Ratio and classification questions ask you to connect a figure or comparison in the case with the correct statement category, not merely to recognise a number.
+$$
+WC = CA - CL
+$$
 
-From the figures or classification rule involved, high turnover signals faster stock rotation. Accounting statements fail when a loss is treated as increasing equity, when a flow is placed on the balance sheet, or when a ratio inequality is reversed.
+$$
+CA = 274, \quad CL = 224
+$$
 
-Every part of the claim aligns with the standard concept, so the statement stands.'] WHERE case_id = 'CASE 6.5.039' AND tier = 'full';
-UPDATE public.economics_cases SET tactical_explanations = ARRAY['TRUE — On the Fuhrmann definition used in the entrance exam, the sentence is correct. A manufacturer is generally better placed with positive working capital, since current assets then exceed current liabilities once short-term obligations are taken into account.
+$$
+WC = 274 - 224 = 50
+$$
 
-The underlying topic is financial ratios and analysis of statements. When figures appear, the exam checks whether you can interpret them in accounting terms—what increased, what ratio is implied, and whether the label (current, non-current, equity, and so on) fits.
+The statement cites working capital of €50 thousand and that it is positive. Calculated WC is 50, which is positive.
 
-Apply the case evidence: Positive working capital is generally preferable for a manufacturer as a cushion over short-term obligations. Check whether the direction of change (higher/lower, above/below the threshold) matches what the statement asserts.
+Reading the arithmetic against the claim: WC = 50 is positive as claimed so the statement holds.
 
-Every part of the claim aligns with the standard concept, so the statement stands.', 'TRUE — Evaluated against the textbook standard, this assertion is correct. The current ratio for a manufacturer sets total current assets against total current liabilities to judge whether short-term resources comfortably cover short-term obligations.
+The statement is true.', 'FALSE — The equity ratio places equity against total assets so the financing structure can be judged on one balance sheet.
 
-This item belongs to the accounting block on financial ratios and analysis of statements. Ratio and classification questions ask you to connect a figure or comparison in the case with the correct statement category, not merely to recognise a number.
+Name the identity in words: equity ratio = equity ÷ total assets.
 
-From the figures or classification rule involved, current ratio analysis for a manufacturer compares current assets with current liabilities. Accounting statements fail when a loss is treated as increasing equity, when a flow is placed on the balance sheet, or when a ratio inequality is reversed.
+From the extract, equity = 586 and total assets = 1,157. Plug the figures step by step:
 
-The reasoning chain is complete, so mark the statement true.', 'TRUE — On the Fuhrmann definition used in the entrance exam, the sentence is correct. Return on equity for a manufacturer relates the profit before interest and tax generated during the period to the equity that owners have invested in the business.
+$$
+ER = \frac{\text{equity}}{\text{total assets}}
+$$
 
-The task tests financial ratios and analysis of statements. Financial statements distinguish stocks (balance sheet at a date) from flows (income and cash over a period); many false statements swap those roles.
+$$
+ER = \frac{586}{1,157}
+$$
 
-Apply the case evidence: Return on equity for a manufacturer links profit before interest and tax to owners'' equity. Check whether the direction of change (higher/lower, above/below the threshold) matches what the statement asserts.
+$$
+ER = 50.6\%
+$$
 
-No qualifying word breaks the definition or scenario, so the answer is true.', 'FALSE — Evaluated against the textbook standard, this assertion is false. Comparing a business''s ratios with unrelated competitors in a completely different industry always produces the most reliable benchmark.
+Claimed: is below 16.6%. Actual 50.6%.
 
-This item belongs to the accounting block on financial ratios and analysis of statements. Ratio and classification questions ask you to connect a figure or comparison in the case with the correct statement category, not merely to recognise a number.
+Reading the arithmetic against the claim: actual equity ratio 50.6% does not match ''is below 16.6%'' so the statement does not hold.
 
-From the figures or classification rule involved, same-industry peers, not unrelated competitors, provide the most reliable ratio benchmark. Accounting statements fail when a loss is treated as increasing equity, when a flow is placed on the balance sheet, or when a ratio inequality is reversed.
+The statement is false.', 'FALSE — The debt ratio places debt against total assets so the financing structure can be judged on one balance sheet.
 
-Watch the absolute wording "always": exam statements often sound plausible until a single scope word turns an otherwise familiar idea into an overclaim.
+Name the identity in words: debt ratio = debt ÷ total assets.
 
-Because the decisive detail is wrong, mark the statement false.', 'FALSE — Evaluated against the textbook standard, this assertion is false. Tracking the same ratio for a business over several years reveals nothing beyond what a single year''s figure already shows.
+From the extract, debt = 571 and total assets = 1,157. Plug the figures step by step:
 
-This item belongs to the accounting block on financial ratios and analysis of statements. Ratio and classification questions ask you to connect a figure or comparison in the case with the correct statement category, not merely to recognise a number.
+$$
+DR = \frac{\text{debt}}{\text{total assets}}
+$$
 
-From the figures or classification rule involved, multi-year tracking reveals trends that a single year''s figure cannot show on its own. Accounting statements fail when a loss is treated as increasing equity, when a flow is placed on the balance sheet, or when a ratio inequality is reversed.
+$$
+DR = \frac{571}{1,157}
+$$
 
-Once the overclaim or mislabel is exposed, the only consistent answer is false.'] WHERE case_id = 'CASE 6.5.040' AND tier = 'full';
-UPDATE public.economics_cases SET tactical_explanations = ARRAY['FALSE — Evaluated against the textbook standard, this assertion is false. The current ratio is below 0.87.
+$$
+DR = 49.4\%
+$$
 
-This item belongs to the accounting block on financial ratios and analysis of statements. Ratio and classification questions ask you to connect a figure or comparison in the case with the correct statement category, not merely to recognise a number.
+Claimed: exceeds 51.3%. Actual 49.4%.
 
-From the figures or classification rule involved, current ratio ≈ 1.84. Accounting statements fail when a loss is treated as increasing equity, when a flow is placed on the balance sheet, or when a ratio inequality is reversed.
+Reading the arithmetic against the claim: actual debt ratio 49.4% does not match ''exceeds 51.3%'' so the statement does not hold.
 
-The statement sounds plausible but fails on precision, so it is false.', 'FALSE — This statement is false. The equity ratio is below 36.9%.
+The statement is false.', 'FALSE — This is a composition claim: express Buildings as a percentage of total assets.
 
-This item belongs to the accounting block on financial ratios and analysis of statements. Ratio and classification questions ask you to connect a figure or comparison in the case with the correct statement category, not merely to recognise a number.
+Name the identity in words: Buildings share of total assets = Buildings ÷ total assets.
 
-From the figures or classification rule involved, equity ratio ≈ 47.5%. Accounting statements fail when a loss is treated as increasing equity, when a flow is placed on the balance sheet, or when a ratio inequality is reversed.
+From the extract, Buildings = 482 and total assets = 1,157. Plug the figures step by step:
 
-Because the decisive detail is wrong, mark the statement false.', 'FALSE — The claim is false. The debt ratio exceeds 54.2%.
+$$
+Share = \frac{\text{Buildings}}{\text{total assets}}
+$$
 
-The underlying topic is financial ratios and analysis of statements. When figures appear, the exam checks whether you can interpret them in accounting terms—what increased, what ratio is implied, and whether the label (current, non-current, equity, and so on) fits.
+$$
+Share = \frac{482}{1,157}
+$$
 
-Apply the case evidence: Debt ratio ≈ 52.5%. Check whether the direction of change (higher/lower, above/below the threshold) matches what the statement asserts.
+$$
+Share = 41.7\%
+$$
 
-The statement sounds plausible but fails on precision, so it is false.', 'TRUE — This statement is correct. The current ratio exceeds 1.68.
+Threshold: more than 52.2%. Actual 41.7%.
 
-This item belongs to the accounting block on financial ratios and analysis of statements. Ratio and classification questions ask you to connect a figure or comparison in the case with the correct statement category, not merely to recognise a number.
+Reading the arithmetic against the claim: actual share 41.7% does not match ''more than 52.2%'' so the statement does not hold.
 
-From the figures or classification rule involved, current ratio ≈ 1.84. Accounting statements fail when a loss is treated as increasing equity, when a flow is placed on the balance sheet, or when a ratio inequality is reversed.
+The statement is false.', 'TRUE — This is a composition claim: express Trade receivables as a percentage of current assets.
 
-No qualifying word breaks the definition or scenario, so the answer is true.', 'FALSE — On the Fuhrmann definition used in the entrance exam, the sentence is false. Buildings make up more than 55.6% of total assets.
+Name the identity in words: Trade receivables share of current assets = Trade receivables ÷ current assets.
 
-The underlying topic is financial ratios and analysis of statements. When figures appear, the exam checks whether you can interpret them in accounting terms—what increased, what ratio is implied, and whether the label (current, non-current, equity, and so on) fits.
+From the extract, Trade receivables = 100 and current assets = 274. Plug the figures step by step:
 
-Apply the case evidence: Buildings are about 45.1% of total assets. Check whether the direction of change (higher/lower, above/below the threshold) matches what the statement asserts.
+$$
+Share = \frac{\text{Trade receivables}}{\text{current assets}}
+$$
 
-Because the decisive detail is wrong, mark the statement false.'] WHERE case_id = 'CASE 6.5.041' AND tier = 'full';
-UPDATE public.economics_cases SET tactical_explanations = ARRAY['FALSE — Evaluated against the textbook standard, this assertion is false. Average inventory make up less than 14.7% of average total assets.
+$$
+Share = \frac{100}{274}
+$$
 
-This item belongs to the accounting block on financial ratios and analysis of statements. Ratio and classification questions ask you to connect a figure or comparison in the case with the correct statement category, not merely to recognise a number.
+$$
+Share = 36.5\%
+$$
 
-From the figures or classification rule involved, average inventory are about 16.7% of average total assets. Accounting statements fail when a loss is treated as increasing equity, when a flow is placed on the balance sheet, or when a ratio inequality is reversed.
+Threshold: less than 47.9%. Actual 36.5%.
 
-The statement sounds plausible but fails on precision, so it is false.', 'TRUE — On the Fuhrmann definition used in the entrance exam, the sentence is correct. Asset turnover, revenue taken relative to average total assets, is above 1.09.
+Reading the arithmetic against the claim: actual share 36.5% matches ''less than 47.9%'' so the statement holds.
 
-The underlying topic is financial ratios and analysis of statements. When figures appear, the exam checks whether you can interpret them in accounting terms—what increased, what ratio is implied, and whether the label (current, non-current, equity, and so on) fits.
+The statement is true.'] WHERE case_id = 'CASE 6.5.035' AND tier = 'full';
+UPDATE public.economics_cases SET tactical_explanations = ARRAY['FALSE — Collection days convert receivables turnover into an approximate outstanding period.
 
-Apply the case evidence: Asset turnover ≈ 1.28. Check whether the direction of change (higher/lower, above/below the threshold) matches what the statement asserts.
+Name the identity in words: collection days ≈ 365 ÷ receivables turnover.
 
-The reasoning chain is complete, so mark the statement true.', 'FALSE — The claim is false. Cost of sales amounts to more than 70.6% of revenue.
+$$
+RT = \frac{1,043}{107} = 9.7477
+$$
 
-The underlying topic is financial ratios and analysis of statements. When figures appear, the exam checks whether you can interpret them in accounting terms—what increased, what ratio is implied, and whether the label (current, non-current, equity, and so on) fits.
+$$
+\text{Days} = \frac{365}{9.7477} = 37.4
+$$
 
-Apply the case evidence: Cost of sales is about 66.9% of revenue. Check whether the direction of change (higher/lower, above/below the threshold) matches what the statement asserts.
+Threshold: more than 50 days. Actual 37 days.
 
-The statement sounds plausible but fails on precision, so it is false.', 'FALSE — Evaluated against the textbook standard, this assertion is false. Trade receivables grew by more than 17% between the beginning and the end of the year.
+Reading the arithmetic against the claim: collection days 37 do not exceed 50 so the statement does not hold.
 
-This item belongs to the accounting block on financial ratios and analysis of statements. Ratio and classification questions ask you to connect a figure or comparison in the case with the correct statement category, not merely to recognise a number.
+The statement is false.', 'FALSE — Average inventory and average assets are midpoints of the beginning and ending balances on the extract.
 
-From the figures or classification rule involved, trade receivables moved from 129 to 150. Accounting statements fail when a loss is treated as increasing equity, when a flow is placed on the balance sheet, or when a ratio inequality is reversed.
+Name the identity in words: average-inventory share = average inventory ÷ average total assets.
 
-Once the overclaim or mislabel is exposed, the only consistent answer is false.', 'TRUE — On the Fuhrmann definition used in the entrance exam, the sentence is correct. Inventory turnover, cost of sales taken relative to average inventory, is below 6.73 times per year.
+$$
+\text{Avg inventory} = \frac{170 + 197}{2} = 183.5
+$$
 
-The underlying topic is financial ratios and analysis of statements. When figures appear, the exam checks whether you can interpret them in accounting terms—what increased, what ratio is implied, and whether the label (current, non-current, equity, and so on) fits.
+$$
+\text{Avg assets} = \frac{813 + 961}{2} = 887
+$$
 
-Apply the case evidence: Inventory turnover ≈ 5.13. Check whether the direction of change (higher/lower, above/below the threshold) matches what the statement asserts.
+$$
+\frac{183.5}{887} = 20.7\%
+$$
 
-No qualifying word breaks the definition or scenario, so the answer is true.'] WHERE case_id = 'CASE 6.5.042' AND tier = 'full';
-UPDATE public.economics_cases SET tactical_explanations = ARRAY['FALSE — On the Fuhrmann definition used in the entrance exam, the sentence is false. Benchmarks drawn from any industry can be applied to any other industry without adjustment and will always remain reliable.
+Threshold: less than 17.5%. Actual 20.7%.
 
-The task tests financial ratios and analysis of statements. Financial statements distinguish stocks (balance sheet at a date) from flows (income and cash over a period); many false statements swap those roles.
+Reading the arithmetic against the claim: the share is 20.7% versus ''less than 17.5%'' so the statement does not hold.
 
-Apply the case evidence: Cross-industry benchmarks require adjustment for differing business models to remain reliable. Check whether the direction of change (higher/lower, above/below the threshold) matches what the statement asserts.
+The statement is false.', 'TRUE — Inventory turnover relates cost of sales to average inventory held.
 
-Watch the absolute wording "always": exam statements often sound plausible until a single scope word turns an otherwise familiar idea into an overclaim.
+Name the identity in words: inventory turnover = cost of sales ÷ average inventory.
 
-Because the decisive detail is wrong, mark the statement false.', 'TRUE — This statement is correct. A return on capital employed figure for a manufacturer carries more weight when read alongside the business''s own results from earlier years or against similar firms in its industry.
+$$
+\text{Avg inventory} = \frac{170 + 197}{2} = 183.5
+$$
 
-This is an accounting reasoning item on financial ratios and analysis of statements. Decide whether the sentence correctly describes how a transaction, balance-sheet line, or period result affects assets, liabilities, or equity.
+$$
+IT = \frac{677}{183.5} = 3.6894
+$$
 
-From the figures or classification rule involved, return on capital employed for a manufacturer is most useful in comparison rather than in isolation. Accounting statements fail when a loss is treated as increasing equity, when a flow is placed on the balance sheet, or when a ratio inequality is reversed.
+Claimed below 6.78. Actual 3.69.
 
-Every part of the claim aligns with the standard concept, so the statement stands.', 'FALSE — The claim is false. A rounded assessment of a business can rely entirely on a single liquidity ratio without any need to consider profitability, efficiency or structure.
+Reading the arithmetic against the claim: inventory turnover 3.69 versus ''below 6.78'' so the statement holds.
 
-The underlying topic is financial ratios and analysis of statements. When figures appear, the exam checks whether you can interpret them in accounting terms—what increased, what ratio is implied, and whether the label (current, non-current, equity, and so on) fits.
+The statement is true.', 'FALSE — Activity ratios use averages: asset turnover = revenue / average assets; inventory turnover = cost of sales / average inventory; receivables turnover = revenue / average receivables; days ≈ 365 / turnover.
 
-Apply the case evidence: A rounded assessment draws on liquidity, profitability, efficiency and structure together, not one ratio alone. Check whether the direction of change (higher/lower, above/below the threshold) matches what the statement asserts.
+Absolute or misapplied wording conflicts with the rule for "Turnover and Liquidity Extract 36". Activity ratios use averages: asset turnover = revenue / average assets; inventory turnover = cost of sales / average inventory; receivables turnover = revenue / average receivables; days ≈ 365 / turnover. Market capitalisation = price × shares; EPS relates earnings to shares outstanding. Rejected claim: "Inventory grew by more than 31.4% between Year 1 and Year 2."
 
-Watch the absolute wording "entirely": exam statements often sound plausible until a single scope word turns an otherwise familiar idea into an overclaim.
+The statement is false.', 'FALSE — Receivables growth compares ending with beginning trade receivables.
 
-Because the decisive detail is wrong, mark the statement false.', 'FALSE — Evaluated against the textbook standard, this assertion is false. Return on equity and return on capital employed are calculated in exactly the same way and always produce identical results for the same business.
+Name the identity in words: growth = (ending − beginning) ÷ beginning.
 
-This is an accounting reasoning item on financial ratios and analysis of statements. Decide whether the sentence correctly describes how a transaction, balance-sheet line, or period result affects assets, liabilities, or equity.
+$$
+R_{0} = 111, \quad R_{1} = 103
+$$
 
-From the figures or classification rule involved, the two measures use the same profit figure but divide it by different capital bases, so they generally differ. Accounting statements fail when a loss is treated as increasing equity, when a flow is placed on the balance sheet, or when a ratio inequality is reversed.
+$$
+\frac{103 - 111}{111} = -7.2\%
+$$
 
-Watch the absolute wording "always": exam statements often sound plausible until a single scope word turns an otherwise familiar idea into an overclaim.
+Threshold: more than 13.4%. Actual -7.2%.
 
-The statement sounds plausible but fails on precision, so it is false.', 'FALSE — Evaluated against the textbook standard, this assertion is false. Inventory turnover and asset turnover must always move in the same direction within a given year for any business.
+Reading the arithmetic against the claim: growth -7.2% does not exceed 13.4% so the statement does not hold.
 
-This item belongs to the accounting block on financial ratios and analysis of statements. Ratio and classification questions ask you to connect a figure or comparison in the case with the correct statement category, not merely to recognise a number.
+The statement is false.'] WHERE case_id = 'CASE 6.5.036' AND tier = 'full';
+UPDATE public.economics_cases SET tactical_explanations = ARRAY['FALSE — The current ratio is the standard liquidity cover of current assets over current liabilities.
 
-From the figures or classification rule involved, inventory turnover and asset turnover relate to different parts of the asset base and can move independently. Accounting statements fail when a loss is treated as increasing equity, when a flow is placed on the balance sheet, or when a ratio inequality is reversed.
+Name the identity in words: current ratio = current assets ÷ current liabilities.
 
-Watch the absolute wording "always": exam statements often sound plausible until a single scope word turns an otherwise familiar idea into an overclaim.
+Build current assets and current liabilities from the extract:
 
-Because the decisive detail is wrong, mark the statement false.'] WHERE case_id = 'CASE 6.5.043' AND tier = 'full';
-UPDATE public.economics_cases SET tactical_explanations = ARRAY['FALSE — This statement is false. Trade receivables turnover, revenue taken relative to average trade receivables, exceeds 9.96 times per year.
+$$
+CA = 219 + 99 + 91 = 409
+$$
 
-This item belongs to the accounting block on financial ratios and analysis of statements. Ratio and classification questions ask you to connect a figure or comparison in the case with the correct statement category, not merely to recognise a number.
+$$
+CL = 120 + 48 = 168
+$$
 
-From the figures or classification rule involved, receivables turnover ≈ 9.94. Accounting statements fail when a loss is treated as increasing equity, when a flow is placed on the balance sheet, or when a ratio inequality is reversed.
+$$
+\text{Current ratio} = \frac{409}{168} = 2.4345
+$$
 
-The statement sounds plausible but fails on precision, so it is false.', 'TRUE — This statement is correct. Asset turnover, revenue taken relative to average total assets, is above 1.05.
+Claimed: is below 1.07. Actual 2.43.
 
-This item belongs to the accounting block on financial ratios and analysis of statements. Ratio and classification questions ask you to connect a figure or comparison in the case with the correct statement category, not merely to recognise a number.
+Reading the arithmetic against the claim: actual current ratio 2.43 versus ''is below 1.07'' so the statement does not hold.
 
-From the figures or classification rule involved, asset turnover ≈ 1.20. Accounting statements fail when a loss is treated as increasing equity, when a flow is placed on the balance sheet, or when a ratio inequality is reversed.
+The statement is false.', 'FALSE — The equity ratio places equity against total assets so the financing structure can be judged on one balance sheet.
 
-Every part of the claim aligns with the standard concept, so the statement stands.', 'FALSE — The claim is false. On average, revenue remains outstanding in trade receivables for more than 39 days.
+Name the identity in words: equity ratio = equity ÷ total assets.
 
-The underlying topic is financial ratios and analysis of statements. When figures appear, the exam checks whether you can interpret them in accounting terms—what increased, what ratio is implied, and whether the label (current, non-current, equity, and so on) fits.
+From the extract, equity = 567 and total assets = 1,056. Plug the figures step by step:
 
-Apply the case evidence: Average collection period ≈ 37 days. Check whether the direction of change (higher/lower, above/below the threshold) matches what the statement asserts.
+$$
+ER = \frac{\text{equity}}{\text{total assets}}
+$$
 
-Because the decisive detail is wrong, mark the statement false.', 'TRUE — Evaluated against the textbook standard, this assertion is correct. Inventory turnover, cost of sales taken relative to average inventory, is below 6.79 times per year.
+$$
+ER = \frac{567}{1,056}
+$$
 
-This item belongs to the accounting block on financial ratios and analysis of statements. Ratio and classification questions ask you to connect a figure or comparison in the case with the correct statement category, not merely to recognise a number.
+$$
+ER = 53.7\%
+$$
 
-From the figures or classification rule involved, inventory turnover ≈ 5.31. Accounting statements fail when a loss is treated as increasing equity, when a flow is placed on the balance sheet, or when a ratio inequality is reversed.
+Claimed: is below 41.1%. Actual 53.7%.
 
-Every part of the claim aligns with the standard concept, so the statement stands.', 'TRUE — This statement is correct. Average inventory make up less than 15.9% of average total assets.
+Reading the arithmetic against the claim: actual equity ratio 53.7% does not match ''is below 41.1%'' so the statement does not hold.
 
-This item belongs to the accounting block on financial ratios and analysis of statements. Ratio and classification questions ask you to connect a figure or comparison in the case with the correct statement category, not merely to recognise a number.
+The statement is false.', 'FALSE — The debt ratio places debt against total assets so the financing structure can be judged on one balance sheet.
 
-From the figures or classification rule involved, average inventory are about 15.8% of average total assets. Accounting statements fail when a loss is treated as increasing equity, when a flow is placed on the balance sheet, or when a ratio inequality is reversed.
+Name the identity in words: debt ratio = debt ÷ total assets.
 
-Every part of the claim aligns with the standard concept, so the statement stands.'] WHERE case_id = 'CASE 6.5.044' AND tier = 'full';
-UPDATE public.economics_cases SET tactical_explanations = ARRAY['TRUE — On the Fuhrmann definition used in the entrance exam, the sentence is correct. Trade receivables make up less than 46% of current assets.
+From the extract, debt = 489 and total assets = 1,056. Plug the figures step by step:
 
-The underlying topic is financial ratios and analysis of statements. When figures appear, the exam checks whether you can interpret them in accounting terms—what increased, what ratio is implied, and whether the label (current, non-current, equity, and so on) fits.
+$$
+DR = \frac{\text{debt}}{\text{total assets}}
+$$
 
-Apply the case evidence: Trade receivables are about 35.2% of current assets. Check whether the direction of change (higher/lower, above/below the threshold) matches what the statement asserts.
+$$
+DR = \frac{489}{1,056}
+$$
 
-Every part of the claim aligns with the standard concept, so the statement stands.', 'TRUE — The claim is correct. Inventory of €111 thousand is correctly classified as a current asset rather than a non-current intangible asset.
+$$
+DR = 46.3\%
+$$
 
-The underlying topic is financial ratios and analysis of statements. When figures appear, the exam checks whether you can interpret them in accounting terms—what increased, what ratio is implied, and whether the label (current, non-current, equity, and so on) fits.
+Claimed: exceeds 64.2%. Actual 46.3%.
 
-Apply the case evidence: Inventory is always a current asset. Check whether the direction of change (higher/lower, above/below the threshold) matches what the statement asserts.
+Reading the arithmetic against the claim: actual debt ratio 46.3% does not match ''exceeds 64.2%'' so the statement does not hold.
 
-The reasoning chain is complete, so mark the statement true.', 'TRUE — On the Fuhrmann definition used in the entrance exam, the sentence is correct. The equity ratio exceeds 34%.
+The statement is false.', 'FALSE — This is a composition claim: express Buildings as a percentage of total assets.
 
-The underlying topic is financial ratios and analysis of statements. When figures appear, the exam checks whether you can interpret them in accounting terms—what increased, what ratio is implied, and whether the label (current, non-current, equity, and so on) fits.
+Name the identity in words: Buildings share of total assets = Buildings ÷ total assets.
 
-Apply the case evidence: Equity ratio ≈ 43.0%. Check whether the direction of change (higher/lower, above/below the threshold) matches what the statement asserts.
+From the extract, Buildings = 309 and total assets = 1,056. Plug the figures step by step:
 
-The reasoning chain is complete, so mark the statement true.', 'TRUE — This statement is correct. Total assets of €969 thousand equal total equity plus total liabilities.
+$$
+Share = \frac{\text{Buildings}}{\text{total assets}}
+$$
 
-This item belongs to the accounting block on financial ratios and analysis of statements. Ratio and classification questions ask you to connect a figure or comparison in the case with the correct statement category, not merely to recognise a number.
+$$
+Share = \frac{309}{1,056}
+$$
 
-From the figures or classification rule involved, the balance sheet balances at 969. Accounting statements fail when a loss is treated as increasing equity, when a flow is placed on the balance sheet, or when a ratio inequality is reversed.
+$$
+Share = 29.3\%
+$$
 
-The reasoning chain is complete, so mark the statement true.', 'TRUE — The claim is correct. On a balance sheet with total assets of €969 thousand, the acid-test ratio is more conservative than the current ratio because it leaves inventory out of current assets.
+Threshold: more than 42.5%. Actual 29.3%.
 
-The underlying topic is financial ratios and analysis of statements. When figures appear, the exam checks whether you can interpret them in accounting terms—what increased, what ratio is implied, and whether the label (current, non-current, equity, and so on) fits.
+Reading the arithmetic against the claim: actual share 29.3% does not match ''more than 42.5%'' so the statement does not hold.
 
-Apply the case evidence: Excluding inventory always makes the acid-test ratio no higher than the current ratio. Check whether the direction of change (higher/lower, above/below the threshold) matches what the statement asserts.
+The statement is false.', 'TRUE — The acid-test (quick) ratio is a stricter liquidity test: inventory is removed from current assets before dividing by current liabilities.
 
-Every part of the claim aligns with the standard concept, so the statement stands.'] WHERE case_id = 'CASE 6.5.045' AND tier = 'full';
-UPDATE public.economics_cases SET tactical_explanations = ARRAY['TRUE — On the Fuhrmann definition used in the entrance exam, the sentence is correct. Asset turnover for a manufacturer relates revenue earned during the period to the average total assets employed to generate that revenue.
+Name the identity in words: acid-test ratio = (current assets − inventory) ÷ current liabilities.
 
-The underlying topic is financial ratios and analysis of statements. When figures appear, the exam checks whether you can interpret them in accounting terms—what increased, what ratio is implied, and whether the label (current, non-current, equity, and so on) fits.
+$$
+CA = 409, \quad \text{Inventory} = 219, \quad CL = 168
+$$
 
-Apply the case evidence: Asset turnover measures how much revenue a manufacturer generates per unit of average assets. Check whether the direction of change (higher/lower, above/below the threshold) matches what the statement asserts.
+$$
+CA - \text{Inventory} = 409 - 219 = 190
+$$
 
-No qualifying word breaks the definition or scenario, so the answer is true.', 'TRUE — This statement is correct. The equity ratio for a manufacturer expresses the proportion of total assets financed by owners'' equity rather than by borrowed funds.
+$$
+\text{Acid-test} = \frac{190}{168} = 1.1310
+$$
 
-This item belongs to the accounting block on financial ratios and analysis of statements. Ratio and classification questions ask you to connect a figure or comparison in the case with the correct statement category, not merely to recognise a number.
+Threshold: more than 0.92. Actual 1.13.
 
-From the figures or classification rule involved, equity ratio analysis for a manufacturer expresses equity as a share of total assets. Accounting statements fail when a loss is treated as increasing equity, when a flow is placed on the balance sheet, or when a ratio inequality is reversed.
+Reading the arithmetic against the claim: acid-test 1.13 is more than 0.92 so the statement holds.
 
-The reasoning chain is complete, so mark the statement true.', 'FALSE — The claim is false. Working capital for a supermarket chain is calculated by subtracting current assets from current liabilities.
+The statement is true.'] WHERE case_id = 'CASE 6.5.037' AND tier = 'full';
+UPDATE public.economics_cases SET tactical_explanations = ARRAY['FALSE — The equity ratio places equity against total assets so the financing structure can be judged on one balance sheet.
 
-The underlying topic is financial ratios and analysis of statements. When figures appear, the exam checks whether you can interpret them in accounting terms—what increased, what ratio is implied, and whether the label (current, non-current, equity, and so on) fits.
+Name the identity in words: equity ratio = equity ÷ total assets.
 
-Apply the case evidence: Working capital is current assets minus current liabilities, not the reverse. Check whether the direction of change (higher/lower, above/below the threshold) matches what the statement asserts.
+From the extract, equity = 821 and total assets = 1,301. Plug the figures step by step:
 
-Once the overclaim or mislabel is exposed, the only consistent answer is false.', 'FALSE — Evaluated against the textbook standard, this assertion is false. A supermarket chain reporting negative working capital always holds more cash than it needs for its daily operations.
+$$
+ER = \frac{\text{equity}}{\text{total assets}}
+$$
 
-This item belongs to the accounting block on financial ratios and analysis of statements. Ratio and classification questions ask you to connect a figure or comparison in the case with the correct statement category, not merely to recognise a number.
+$$
+ER = \frac{821}{1,301}
+$$
 
-From the figures or classification rule involved, negative working capital means current liabilities exceed current assets and does not imply excess cash. Accounting statements fail when a loss is treated as increasing equity, when a flow is placed on the balance sheet, or when a ratio inequality is reversed.
+$$
+ER = 63.1\%
+$$
 
-Watch the absolute wording "always": exam statements often sound plausible until a single scope word turns an otherwise familiar idea into an overclaim.
+Claimed: is below 34.9%. Actual 63.1%.
 
-Because the decisive detail is wrong, mark the statement false.', 'FALSE — Evaluated against the textbook standard, this assertion is false. The acid-test ratio for a supermarket chain includes inventory within current assets before comparing the total with current liabilities.
+Reading the arithmetic against the claim: actual equity ratio 63.1% does not match ''is below 34.9%'' so the statement does not hold.
 
-This item belongs to the accounting block on financial ratios and analysis of statements. Ratio and classification questions ask you to connect a figure or comparison in the case with the correct statement category, not merely to recognise a number.
+The statement is false.', 'TRUE — Working capital is the euro surplus (or deficit) of current assets over current liabilities on this balance sheet.
 
-From the figures or classification rule involved, the acid-test ratio excludes inventory to provide a stricter liquidity test. Accounting statements fail when a loss is treated as increasing equity, when a flow is placed on the balance sheet, or when a ratio inequality is reversed.
+Name the identity in words: working capital = current assets − current liabilities.
 
-Because the decisive detail is wrong, mark the statement false.'] WHERE case_id = 'CASE 6.5.046' AND tier = 'full';
-UPDATE public.economics_cases SET tactical_explanations = ARRAY['TRUE — Evaluated against the textbook standard, this assertion is correct. The debt ratio for a manufacturer expresses the proportion of total assets financed through liabilities rather than through owners'' equity.
+From the extract, current assets total 436 and current liabilities total 152:
 
-This item belongs to the accounting block on financial ratios and analysis of statements. Ratio and classification questions ask you to connect a figure or comparison in the case with the correct statement category, not merely to recognise a number.
+$$
+WC = CA - CL
+$$
 
-From the figures or classification rule involved, debt ratio analysis for a manufacturer expresses total liabilities relative to total assets. Accounting statements fail when a loss is treated as increasing equity, when a flow is placed on the balance sheet, or when a ratio inequality is reversed.
+$$
+CA = 436, \quad CL = 152
+$$
 
-The reasoning chain is complete, so mark the statement true.', 'TRUE — Evaluated against the textbook standard, this assertion is correct. If a manufacturer draws on a short-term facility to settle supplier invoices, its cash position may improve while its working capital can simultaneously weaken because current liabilities rise.
+$$
+WC = 436 - 152 = 284
+$$
 
-This item belongs to the accounting block on financial ratios and analysis of statements. Ratio and classification questions ask you to connect a figure or comparison in the case with the correct statement category, not merely to recognise a number.
+The statement cites working capital of €284 thousand and that it is positive. Calculated WC is 284, which is positive.
 
-From the figures or classification rule involved, short-term borrowing can boost cash yet reduce working capital for a manufacturer. Accounting statements fail when a loss is treated as increasing equity, when a flow is placed on the balance sheet, or when a ratio inequality is reversed.
+Reading the arithmetic against the claim: WC = 284 is positive as claimed so the statement holds.
 
-Every part of the claim aligns with the standard concept, so the statement stands.', 'TRUE — On the Fuhrmann definition used in the entrance exam, the sentence is correct. Working capital for a construction group is found by subtracting current liabilities from current assets, so a widening gap in favour of current assets raises working capital.
+The statement is true.', 'FALSE — This is a composition claim: express Cash and cash equivalents as a percentage of current assets.
 
-The underlying topic is financial ratios and analysis of statements. When figures appear, the exam checks whether you can interpret them in accounting terms—what increased, what ratio is implied, and whether the label (current, non-current, equity, and so on) fits.
+Name the identity in words: Cash and cash equivalents share of current assets = Cash and cash equivalents ÷ current assets.
 
-Apply the case evidence: The standard working capital definition applies to a construction group: current assets minus current liabilities. Check whether the direction of change (higher/lower, above/below the threshold) matches what the statement asserts.
+From the extract, Cash and cash equivalents = 112 and current assets = 436. Plug the figures step by step:
 
-No qualifying word breaks the definition or scenario, so the answer is true.', 'TRUE — This statement is correct. A construction group is generally better placed with positive working capital, since current assets then exceed current liabilities once short-term obligations are taken into account.
+$$
+Share = \frac{\text{Cash and cash equivalents}}{\text{current assets}}
+$$
 
-This item belongs to the accounting block on financial ratios and analysis of statements. Ratio and classification questions ask you to connect a figure or comparison in the case with the correct statement category, not merely to recognise a number.
+$$
+Share = \frac{112}{436}
+$$
 
-From the figures or classification rule involved, positive working capital is generally preferable for a construction group as a cushion over short-term obligations. Accounting statements fail when a loss is treated as increasing equity, when a flow is placed on the balance sheet, or when a ratio inequality is reversed.
+$$
+Share = 25.7\%
+$$
 
-No qualifying word breaks the definition or scenario, so the answer is true.', 'TRUE — On the Fuhrmann definition used in the entrance exam, the sentence is correct. The current ratio for a construction group sets total current assets against total current liabilities to judge whether short-term resources comfortably cover short-term obligations.
+Threshold: more than 31%. Actual 25.7%.
 
-The underlying topic is financial ratios and analysis of statements. When figures appear, the exam checks whether you can interpret them in accounting terms—what increased, what ratio is implied, and whether the label (current, non-current, equity, and so on) fits.
+Reading the arithmetic against the claim: actual share 25.7% does not match ''more than 31%'' so the statement does not hold.
 
-Apply the case evidence: Current ratio analysis for a construction group compares current assets with current liabilities. Check whether the direction of change (higher/lower, above/below the threshold) matches what the statement asserts.
+The statement is false.', 'FALSE — Borrowed funds are liabilities; equity is the owners'' residual interest.
 
-No qualifying word breaks the definition or scenario, so the answer is true.'] WHERE case_id = 'CASE 6.5.047' AND tier = 'full';
-UPDATE public.economics_cases SET tactical_explanations = ARRAY['FALSE — The claim is false. Asset turnover, revenue taken relative to average total assets, is above 1.4.
+A bank loan creates an obligation to a lender and cannot be classified as equity.
 
-The underlying topic is financial ratios and analysis of statements. When figures appear, the exam checks whether you can interpret them in accounting terms—what increased, what ratio is implied, and whether the label (current, non-current, equity, and so on) fits.
+Using the stem facts: "The long-term bank loan of €244 thousand should be classified within equity rather than liabilities."
 
-Apply the case evidence: Asset turnover ≈ 1.34. Check whether the direction of change (higher/lower, above/below the threshold) matches what the statement asserts.
+Activity ratios use averages: asset turnover = revenue / average assets; inventory turnover = cost of sales / average inventory; receivables turnover = revenue / average receivables; days ≈ 365 / turnover. Market capitalisation = price × shares; EPS relates earnings to shares outstanding.
 
-The statement sounds plausible but fails on precision, so it is false.', 'FALSE — On the Fuhrmann definition used in the entrance exam, the sentence is false. On average, revenue remains outstanding in trade receivables for more than 56 days.
+The statement is false.', 'FALSE — Bank overdrafts are current liabilities.
 
-The underlying topic is financial ratios and analysis of statements. When figures appear, the exam checks whether you can interpret them in accounting terms—what increased, what ratio is implied, and whether the label (current, non-current, equity, and so on) fits.
+Even if renewed in practice, overdrafts are presented as current, not with long-term debt.
 
-Apply the case evidence: Average collection period ≈ 34 days. Check whether the direction of change (higher/lower, above/below the threshold) matches what the statement asserts.
+Using the stem facts: "The bank overdraft of €35 thousand belongs under non-current liabilities because overdrafts usually run for several years."
 
-Because the decisive detail is wrong, mark the statement false.', 'TRUE — This statement is correct. Inventory turnover, cost of sales taken relative to average inventory, is below 6.06 times per year.
+Activity ratios use averages: asset turnover = revenue / average assets; inventory turnover = cost of sales / average inventory; receivables turnover = revenue / average receivables; days ≈ 365 / turnover. Market capitalisation = price × shares; EPS relates earnings to shares outstanding.
 
-This item belongs to the accounting block on financial ratios and analysis of statements. Ratio and classification questions ask you to connect a figure or comparison in the case with the correct statement category, not merely to recognise a number.
+The statement is false.'] WHERE case_id = 'CASE 6.5.038' AND tier = 'full';
+UPDATE public.economics_cases SET tactical_explanations = ARRAY['TRUE — Asset turnover shows how many times revenue covers average total assets over the year.
 
-From the figures or classification rule involved, inventory turnover ≈ 4.48. Accounting statements fail when a loss is treated as increasing equity, when a flow is placed on the balance sheet, or when a ratio inequality is reversed.
+Name the identity in words: asset turnover = revenue ÷ average total assets.
 
-The reasoning chain is complete, so mark the statement true.', 'TRUE — The claim is correct. Trade receivables turnover, revenue taken relative to average trade receivables, exceeds 9.87 times per year.
+$$
+\text{Avg assets} = \frac{761 + 1,015}{2} = 888
+$$
 
-The underlying topic is financial ratios and analysis of statements. When figures appear, the exam checks whether you can interpret them in accounting terms—what increased, what ratio is implied, and whether the label (current, non-current, equity, and so on) fits.
+$$
+AT = \frac{1,177}{888} = 1.3255
+$$
 
-Apply the case evidence: Receivables turnover ≈ 10.78. Check whether the direction of change (higher/lower, above/below the threshold) matches what the statement asserts.
+Claimed above 1.19. Actual 1.33.
 
-Every part of the claim aligns with the standard concept, so the statement stands.', 'FALSE — The claim is false. Average inventory make up less than 18.8% of average total assets.
+Reading the arithmetic against the claim: asset turnover 1.33 versus ''above 1.19'' so the statement holds.
 
-The underlying topic is financial ratios and analysis of statements. When figures appear, the exam checks whether you can interpret them in accounting terms—what increased, what ratio is implied, and whether the label (current, non-current, equity, and so on) fits.
+The statement is true.', 'TRUE — Inventory turnover relates cost of sales to average inventory held.
 
-Apply the case evidence: Average inventory are about 19.4% of average total assets. Check whether the direction of change (higher/lower, above/below the threshold) matches what the statement asserts.
+Name the identity in words: inventory turnover = cost of sales ÷ average inventory.
 
-Once the overclaim or mislabel is exposed, the only consistent answer is false.'] WHERE case_id = 'CASE 6.5.048' AND tier = 'full';
-UPDATE public.economics_cases SET tactical_explanations = ARRAY['TRUE — Evaluated against the textbook standard, this assertion is correct. Return on equity for a construction group relates the profit before interest and tax generated during the period to the equity that owners have invested in the business.
+$$
+\text{Avg inventory} = \frac{128 + 160}{2} = 144
+$$
 
-This is an accounting reasoning item on financial ratios and analysis of statements. Decide whether the sentence correctly describes how a transaction, balance-sheet line, or period result affects assets, liabilities, or equity.
+$$
+IT = \frac{793}{144} = 5.5069
+$$
 
-From the figures or classification rule involved, return on equity for a construction group links profit before interest and tax to owners'' equity. Accounting statements fail when a loss is treated as increasing equity, when a flow is placed on the balance sheet, or when a ratio inequality is reversed.
+Claimed below 7.42. Actual 5.51.
 
-The reasoning chain is complete, so mark the statement true.', 'FALSE — On the Fuhrmann definition used in the entrance exam, the sentence is false. A single return on capital employed figure for a supermarket chain is always fully meaningful on its own, without any need to compare it against other years or similar businesses.
+Reading the arithmetic against the claim: inventory turnover 5.51 versus ''below 7.42'' so the statement holds.
 
-The task tests financial ratios and analysis of statements. Financial statements distinguish stocks (balance sheet at a date) from flows (income and cash over a period); many false statements swap those roles.
+The statement is true.', 'TRUE — Average inventory and average assets are midpoints of the beginning and ending balances on the extract.
 
-Apply the case evidence: Return on capital employed gains meaning chiefly from comparisons over time or with peers. Check whether the direction of change (higher/lower, above/below the threshold) matches what the statement asserts.
+Name the identity in words: average-inventory share = average inventory ÷ average total assets.
 
-Watch the absolute wording "always": exam statements often sound plausible until a single scope word turns an otherwise familiar idea into an overclaim.
+$$
+\text{Avg inventory} = \frac{128 + 160}{2} = 144
+$$
 
-The statement sounds plausible but fails on precision, so it is false.', 'FALSE — On the Fuhrmann definition used in the entrance exam, the sentence is false. Return on equity for a supermarket chain is calculated by comparing the cash balance on the balance sheet with total liabilities rather than relating profit to equity.
+$$
+\text{Avg assets} = \frac{761 + 1,015}{2} = 888
+$$
 
-The underlying topic is financial ratios and analysis of statements. When figures appear, the exam checks whether you can interpret them in accounting terms—what increased, what ratio is implied, and whether the label (current, non-current, equity, and so on) fits.
+$$
+\frac{144}{888} = 16.2\%
+$$
 
-Apply the case evidence: Return on equity relates profit before interest and tax to equity, not cash to liabilities. Check whether the direction of change (higher/lower, above/below the threshold) matches what the statement asserts.
+Threshold: less than 16.3%. Actual 16.2%.
 
-The statement sounds plausible but fails on precision, so it is false.', 'FALSE — On the Fuhrmann definition used in the entrance exam, the sentence is false. Inventory turnover for a supermarket chain is calculated by dividing revenue by average inventory rather than by relating cost of sales to average inventory.
+Reading the arithmetic against the claim: the share is 16.2% versus ''less than 16.3%'' so the statement holds.
 
-The underlying topic is financial ratios and analysis of statements. When figures appear, the exam checks whether you can interpret them in accounting terms—what increased, what ratio is implied, and whether the label (current, non-current, equity, and so on) fits.
+The statement is true.', 'FALSE — Receivables turnover shows how many times revenue covers average trade receivables.
 
-Apply the case evidence: Inventory turnover uses cost of sales relative to average inventory, not revenue. Check whether the direction of change (higher/lower, above/below the threshold) matches what the statement asserts.
+Name the identity in words: receivables turnover = revenue ÷ average trade receivables.
 
-Once the overclaim or mislabel is exposed, the only consistent answer is false.', 'FALSE — On the Fuhrmann definition used in the entrance exam, the sentence is false. The current ratio and the acid-test ratio for a supermarket chain always produce identical results, regardless of how much inventory the business holds.
+$$
+\text{Avg receivables} = \frac{134 + 110}{2} = 122
+$$
 
-The underlying topic is financial ratios and analysis of statements. When figures appear, the exam checks whether you can interpret them in accounting terms—what increased, what ratio is implied, and whether the label (current, non-current, equity, and so on) fits.
+$$
+RT = \frac{1,177}{122} = 9.6475
+$$
 
-Apply the case evidence: When inventory is material, the acid-test ratio differs from the current ratio. Check whether the direction of change (higher/lower, above/below the threshold) matches what the statement asserts.
+Threshold: exceeds 10.99. Actual 9.65.
 
-Watch the absolute wording "always": exam statements often sound plausible until a single scope word turns an otherwise familiar idea into an overclaim.
+Reading the arithmetic against the claim: receivables turnover 9.65 does not exceed 10.99 so the statement does not hold.
 
-The statement sounds plausible but fails on precision, so it is false.'] WHERE case_id = 'CASE 6.5.049' AND tier = 'full';
-UPDATE public.economics_cases SET tactical_explanations = ARRAY['TRUE — Evaluated against the textbook standard, this assertion is correct. After excluding inventory, the remaining current assets still cover current liabilities more than 0.98 times over.
+The statement is false.', 'TRUE — Inventory turnover = cost of sales ÷ average inventory; a higher figure means stock moves faster and ties up less cash.
 
-This item belongs to the accounting block on financial ratios and analysis of statements. Ratio and classification questions ask you to connect a figure or comparison in the case with the correct statement category, not merely to recognise a number.
+Name the identity in words: inventory turnover = cost of sales ÷ average inventory.
 
-From the figures or classification rule involved, acid-test ratio ≈ 1.08. Accounting statements fail when a loss is treated as increasing equity, when a flow is placed on the balance sheet, or when a ratio inequality is reversed.
+$$
+\text{Avg inventory} = \frac{128 + 160}{2} = 144
+$$
 
-The reasoning chain is complete, so mark the statement true.', 'FALSE — On the Fuhrmann definition used in the entrance exam, the sentence is false. The current ratio is below 0.66.
+$$
+IT = \frac{793}{144} = 5.51
+$$
 
-The underlying topic is financial ratios and analysis of statements. When figures appear, the exam checks whether you can interpret them in accounting terms—what increased, what ratio is implied, and whether the label (current, non-current, equity, and so on) fits.
+That reading matches the definition used in the claim.
 
-Apply the case evidence: Current ratio ≈ 2.37. Check whether the direction of change (higher/lower, above/below the threshold) matches what the statement asserts.
+Reading the arithmetic against the claim: inventory turnover is about 5.51, consistent with the stated interpretation so the statement holds.
 
-Once the overclaim or mislabel is exposed, the only consistent answer is false.', 'TRUE — The claim is correct. The equity ratio is below 40.5%.
+The statement is true.'] WHERE case_id = 'CASE 6.5.039' AND tier = 'full';
+UPDATE public.economics_cases SET tactical_explanations = ARRAY['TRUE — Activity ratios use averages: asset turnover = revenue / average assets; inventory turnover = cost of sales / average inventory; receivables turnover = revenue / average receivables; days ≈ 365 / turnover.
 
-The underlying topic is financial ratios and analysis of statements. When figures appear, the exam checks whether you can interpret them in accounting terms—what increased, what ratio is implied, and whether the label (current, non-current, equity, and so on) fits.
+The wording matches the relevant rule for "Short-Term Borrowing and Working Capital Across Sectors". Activity ratios use averages: asset turnover = revenue / average assets; inventory turnover = cost of sales / average inventory; receivables turnover = revenue / average receivables; days ≈ 365 / turnover. Market capitalisation = price × shares; EPS relates earnings to shares outstanding. Applied here: "A manufacturer is generally better placed with positive working capital, since current assets then exceed current liabilities once short-term obligations are taken into account."
 
-Apply the case evidence: Equity ratio ≈ 36.3%. Check whether the direction of change (higher/lower, above/below the threshold) matches what the statement asserts.
+The statement is true.', 'TRUE — Activity ratios use averages: asset turnover = revenue / average assets; inventory turnover = cost of sales / average inventory; receivables turnover = revenue / average receivables; days ≈ 365 / turnover.
 
-The reasoning chain is complete, so mark the statement true.', 'TRUE — On the Fuhrmann definition used in the entrance exam, the sentence is correct. Inventory make up more than 37.8% of current assets.
+The wording matches the relevant rule for "Short-Term Borrowing and Working Capital Across Sectors". Activity ratios use averages: asset turnover = revenue / average assets; inventory turnover = cost of sales / average inventory; receivables turnover = revenue / average receivables; days ≈ 365 / turnover. Market capitalisation = price × shares; EPS relates earnings to shares outstanding. Applied here: "The current ratio for a manufacturer sets total current assets against total current liabilities to judge whether short-term resources comfortably cover short-term obligations."
 
-The underlying topic is financial ratios and analysis of statements. When figures appear, the exam checks whether you can interpret them in accounting terms—what increased, what ratio is implied, and whether the label (current, non-current, equity, and so on) fits.
+The statement is true.', 'TRUE — Activity ratios use averages: asset turnover = revenue / average assets; inventory turnover = cost of sales / average inventory; receivables turnover = revenue / average receivables; days ≈ 365 / turnover.
 
-Apply the case evidence: Inventory are about 54.3% of current assets. Check whether the direction of change (higher/lower, above/below the threshold) matches what the statement asserts.
+The wording matches the relevant rule for "Short-Term Borrowing and Working Capital Across Sectors". Activity ratios use averages: asset turnover = revenue / average assets; inventory turnover = cost of sales / average inventory; receivables turnover = revenue / average receivables; days ≈ 365 / turnover. Market capitalisation = price × shares; EPS relates earnings to shares outstanding. Applied here: "Return on equity for a manufacturer relates the profit before interest and tax generated during the period to the equity that owners have invested in the business."
 
-The reasoning chain is complete, so mark the statement true.', 'TRUE — This statement is correct. Trade receivables make up less than 44.5% of current assets.
+The statement is true.', 'FALSE — Activity ratios use averages: asset turnover = revenue / average assets; inventory turnover = cost of sales / average inventory; receivables turnover = revenue / average receivables; days ≈ 365 / turnover.
 
-This item belongs to the accounting block on financial ratios and analysis of statements. Ratio and classification questions ask you to connect a figure or comparison in the case with the correct statement category, not merely to recognise a number.
+Absolute or misapplied wording conflicts with the rule for "Short-Term Borrowing and Working Capital Across Sectors". Activity ratios use averages: asset turnover = revenue / average assets; inventory turnover = cost of sales / average inventory; receivables turnover = revenue / average receivables; days ≈ 365 / turnover. Market capitalisation = price × shares; EPS relates earnings to shares outstanding. Rejected claim: "Comparing a business''s ratios with unrelated competitors in a completely different industry always produces the most reliable benchmark."
 
-From the figures or classification rule involved, trade receivables are about 21.4% of current assets. Accounting statements fail when a loss is treated as increasing equity, when a flow is placed on the balance sheet, or when a ratio inequality is reversed.
+The statement is false.', 'FALSE — Activity ratios use averages: asset turnover = revenue / average assets; inventory turnover = cost of sales / average inventory; receivables turnover = revenue / average receivables; days ≈ 365 / turnover.
 
-The reasoning chain is complete, so mark the statement true.'] WHERE case_id = 'CASE 6.5.050' AND tier = 'full';
+Absolute or misapplied wording conflicts with the rule for "Short-Term Borrowing and Working Capital Across Sectors". Activity ratios use averages: asset turnover = revenue / average assets; inventory turnover = cost of sales / average inventory; receivables turnover = revenue / average receivables; days ≈ 365 / turnover. Market capitalisation = price × shares; EPS relates earnings to shares outstanding. Rejected claim: "Tracking the same ratio for a business over several years reveals nothing beyond what a single year''s figure already shows."
+
+The statement is false.'] WHERE case_id = 'CASE 6.5.040' AND tier = 'full';
+UPDATE public.economics_cases SET tactical_explanations = ARRAY['FALSE — The current ratio is the standard liquidity cover of current assets over current liabilities.
+
+Name the identity in words: current ratio = current assets ÷ current liabilities.
+
+Build current assets and current liabilities from the extract:
+
+$$
+CA = 113 + 64 + 91 = 268
+$$
+
+$$
+CL = 96 + 50 = 146
+$$
+
+$$
+\text{Current ratio} = \frac{268}{146} = 1.8356
+$$
+
+Claimed: is below 0.87. Actual 1.84.
+
+Reading the arithmetic against the claim: actual current ratio 1.84 versus ''is below 0.87'' so the statement does not hold.
+
+The statement is false.', 'FALSE — The equity ratio places equity against total assets so the financing structure can be judged on one balance sheet.
+
+Name the identity in words: equity ratio = equity ÷ total assets.
+
+From the extract, equity = 520 and total assets = 1,094. Plug the figures step by step:
+
+$$
+ER = \frac{\text{equity}}{\text{total assets}}
+$$
+
+$$
+ER = \frac{520}{1,094}
+$$
+
+$$
+ER = 47.5\%
+$$
+
+Claimed: is below 36.9%. Actual 47.5%.
+
+Reading the arithmetic against the claim: actual equity ratio 47.5% does not match ''is below 36.9%'' so the statement does not hold.
+
+The statement is false.', 'FALSE — The debt ratio places debt against total assets so the financing structure can be judged on one balance sheet.
+
+Name the identity in words: debt ratio = debt ÷ total assets.
+
+From the extract, debt = 574 and total assets = 1,094. Plug the figures step by step:
+
+$$
+DR = \frac{\text{debt}}{\text{total assets}}
+$$
+
+$$
+DR = \frac{574}{1,094}
+$$
+
+$$
+DR = 52.5\%
+$$
+
+Claimed: exceeds 54.2%. Actual 52.5%.
+
+Reading the arithmetic against the claim: actual debt ratio 52.5% does not match ''exceeds 54.2%'' so the statement does not hold.
+
+The statement is false.', 'TRUE — The current ratio is the standard liquidity cover of current assets over current liabilities.
+
+Name the identity in words: current ratio = current assets ÷ current liabilities.
+
+Build current assets and current liabilities from the extract:
+
+$$
+CA = 113 + 64 + 91 = 268
+$$
+
+$$
+CL = 96 + 50 = 146
+$$
+
+$$
+\text{Current ratio} = \frac{268}{146} = 1.8356
+$$
+
+Claimed: exceeds 1.68. Actual 1.84.
+
+Reading the arithmetic against the claim: actual current ratio 1.84 versus ''exceeds 1.68'' so the statement holds.
+
+The statement is true.', 'FALSE — This is a composition claim: express Buildings as a percentage of total assets.
+
+Name the identity in words: Buildings share of total assets = Buildings ÷ total assets.
+
+From the extract, Buildings = 493 and total assets = 1,094. Plug the figures step by step:
+
+$$
+Share = \frac{\text{Buildings}}{\text{total assets}}
+$$
+
+$$
+Share = \frac{493}{1,094}
+$$
+
+$$
+Share = 45.1\%
+$$
+
+Threshold: more than 55.6%. Actual 45.1%.
+
+Reading the arithmetic against the claim: actual share 45.1% does not match ''more than 55.6%'' so the statement does not hold.
+
+The statement is false.'] WHERE case_id = 'CASE 6.5.041' AND tier = 'full';
+UPDATE public.economics_cases SET tactical_explanations = ARRAY['FALSE — Average inventory and average assets are midpoints of the beginning and ending balances on the extract.
+
+Name the identity in words: average-inventory share = average inventory ÷ average total assets.
+
+$$
+\text{Avg inventory} = \frac{139 + 177}{2} = 158
+$$
+
+$$
+\text{Avg assets} = \frac{846 + 1,049}{2} = 947.5
+$$
+
+$$
+\frac{158}{947.5} = 16.7\%
+$$
+
+Threshold: less than 14.7%. Actual 16.7%.
+
+Reading the arithmetic against the claim: the share is 16.7% versus ''less than 14.7%'' so the statement does not hold.
+
+The statement is false.', 'TRUE — Asset turnover shows how many times revenue covers average total assets over the year.
+
+Name the identity in words: asset turnover = revenue ÷ average total assets.
+
+$$
+\text{Avg assets} = \frac{846 + 1,049}{2} = 947.5
+$$
+
+$$
+AT = \frac{1,212}{947.5} = 1.2792
+$$
+
+Claimed above 1.09. Actual 1.28.
+
+Reading the arithmetic against the claim: asset turnover 1.28 versus ''above 1.09'' so the statement holds.
+
+The statement is true.', 'FALSE — Cost of sales as a share of revenue is the COS-to-revenue ratio.
+
+Name the identity in words: COS share = cost of sales ÷ revenue.
+
+From the extract, cost of sales = 811 and revenue = 1,212. Plug the figures step by step:
+
+$$
+COS\% = \frac{\text{cost of sales}}{\text{revenue}}
+$$
+
+$$
+COS\% = \frac{811}{1,212}
+$$
+
+$$
+COS\% = 66.9\%
+$$
+
+Threshold: more than 70.6%. Actual 66.9%.
+
+Reading the arithmetic against the claim: COS share 66.9% does not exceed 70.6% so the statement does not hold.
+
+The statement is false.', 'FALSE — Receivables growth compares ending with beginning trade receivables.
+
+Name the identity in words: growth = (ending − beginning) ÷ beginning.
+
+$$
+R_{0} = 129, \quad R_{1} = 150
+$$
+
+$$
+\frac{150 - 129}{129} = 16.3\%
+$$
+
+Threshold: more than 17%. Actual 16.3%.
+
+Reading the arithmetic against the claim: growth 16.3% does not exceed 17% so the statement does not hold.
+
+The statement is false.', 'TRUE — Inventory turnover relates cost of sales to average inventory held.
+
+Name the identity in words: inventory turnover = cost of sales ÷ average inventory.
+
+$$
+\text{Avg inventory} = \frac{139 + 177}{2} = 158
+$$
+
+$$
+IT = \frac{811}{158} = 5.1329
+$$
+
+Claimed below 6.73. Actual 5.13.
+
+Reading the arithmetic against the claim: inventory turnover 5.13 versus ''below 6.73'' so the statement holds.
+
+The statement is true.'] WHERE case_id = 'CASE 6.5.042' AND tier = 'full';
+UPDATE public.economics_cases SET tactical_explanations = ARRAY['FALSE — Activity ratios use averages: asset turnover = revenue / average assets; inventory turnover = cost of sales / average inventory; receivables turnover = revenue / average receivables; days ≈ 365 / turnover.
+
+Absolute or misapplied wording conflicts with the rule for "Short-Term Borrowing and Working Capital in Context". Activity ratios use averages: asset turnover = revenue / average assets; inventory turnover = cost of sales / average inventory; receivables turnover = revenue / average receivables; days ≈ 365 / turnover. Market capitalisation = price × shares; EPS relates earnings to shares outstanding. Rejected claim: "Benchmarks drawn from any industry can be applied to any other industry without adjustment and will always remain reliable."
+
+The statement is false.', 'TRUE — Activity ratios use averages: asset turnover = revenue / average assets; inventory turnover = cost of sales / average inventory; receivables turnover = revenue / average receivables; days ≈ 365 / turnover.
+
+The wording matches the relevant rule for "Short-Term Borrowing and Working Capital in Context". Activity ratios use averages: asset turnover = revenue / average assets; inventory turnover = cost of sales / average inventory; receivables turnover = revenue / average receivables; days ≈ 365 / turnover. Market capitalisation = price × shares; EPS relates earnings to shares outstanding. Applied here: "A return on capital employed figure for a manufacturer carries more weight when read alongside the business''s own results from earlier years or against similar firms in its industry."
+
+The statement is true.', 'FALSE — Activity ratios use averages: asset turnover = revenue / average assets; inventory turnover = cost of sales / average inventory; receivables turnover = revenue / average receivables; days ≈ 365 / turnover.
+
+Absolute or misapplied wording conflicts with the rule for "Short-Term Borrowing and Working Capital in Context". Activity ratios use averages: asset turnover = revenue / average assets; inventory turnover = cost of sales / average inventory; receivables turnover = revenue / average receivables; days ≈ 365 / turnover. Market capitalisation = price × shares; EPS relates earnings to shares outstanding. Rejected claim: "A rounded assessment of a business can rely entirely on a single liquidity ratio without any need to consider profitability, efficiency or structure."
+
+The statement is false.', 'FALSE — Activity ratios use averages: asset turnover = revenue / average assets; inventory turnover = cost of sales / average inventory; receivables turnover = revenue / average receivables; days ≈ 365 / turnover.
+
+Absolute or misapplied wording conflicts with the rule for "Short-Term Borrowing and Working Capital in Context". Activity ratios use averages: asset turnover = revenue / average assets; inventory turnover = cost of sales / average inventory; receivables turnover = revenue / average receivables; days ≈ 365 / turnover. Market capitalisation = price × shares; EPS relates earnings to shares outstanding. Rejected claim: "Return on equity and return on capital employed are calculated in exactly the same way and always produce identical results for the same business."
+
+The statement is false.', 'FALSE — Activity ratios use averages: asset turnover = revenue / average assets; inventory turnover = cost of sales / average inventory; receivables turnover = revenue / average receivables; days ≈ 365 / turnover.
+
+Absolute or misapplied wording conflicts with the rule for "Short-Term Borrowing and Working Capital in Context". Activity ratios use averages: asset turnover = revenue / average assets; inventory turnover = cost of sales / average inventory; receivables turnover = revenue / average receivables; days ≈ 365 / turnover. Market capitalisation = price × shares; EPS relates earnings to shares outstanding. Rejected claim: "Inventory turnover and asset turnover must always move in the same direction within a given year for any business."
+
+The statement is false.'] WHERE case_id = 'CASE 6.5.043' AND tier = 'full';
+UPDATE public.economics_cases SET tactical_explanations = ARRAY['FALSE — Receivables turnover shows how many times revenue covers average trade receivables.
+
+Name the identity in words: receivables turnover = revenue ÷ average trade receivables.
+
+$$
+\text{Avg receivables} = \frac{96 + 127}{2} = 111.5
+$$
+
+$$
+RT = \frac{1,108}{111.5} = 9.9372
+$$
+
+Threshold: exceeds 9.96. Actual 9.94.
+
+Reading the arithmetic against the claim: receivables turnover 9.94 does not exceed 9.96 so the statement does not hold.
+
+The statement is false.', 'TRUE — Asset turnover shows how many times revenue covers average total assets over the year.
+
+Name the identity in words: asset turnover = revenue ÷ average total assets.
+
+$$
+\text{Avg assets} = \frac{886 + 967}{2} = 926.5
+$$
+
+$$
+AT = \frac{1,108}{926.5} = 1.1959
+$$
+
+Claimed above 1.05. Actual 1.20.
+
+Reading the arithmetic against the claim: asset turnover 1.20 versus ''above 1.05'' so the statement holds.
+
+The statement is true.', 'FALSE — Collection days convert receivables turnover into an approximate outstanding period.
+
+Name the identity in words: collection days ≈ 365 ÷ receivables turnover.
+
+$$
+RT = \frac{1,108}{111.5} = 9.9372
+$$
+
+$$
+\text{Days} = \frac{365}{9.9372} = 36.7
+$$
+
+Threshold: more than 39 days. Actual 37 days.
+
+Reading the arithmetic against the claim: collection days 37 do not exceed 39 so the statement does not hold.
+
+The statement is false.', 'TRUE — Inventory turnover relates cost of sales to average inventory held.
+
+Name the identity in words: inventory turnover = cost of sales ÷ average inventory.
+
+$$
+\text{Avg inventory} = \frac{134 + 158}{2} = 146
+$$
+
+$$
+IT = \frac{775}{146} = 5.3082
+$$
+
+Claimed below 6.79. Actual 5.31.
+
+Reading the arithmetic against the claim: inventory turnover 5.31 versus ''below 6.79'' so the statement holds.
+
+The statement is true.', 'TRUE — Average inventory and average assets are midpoints of the beginning and ending balances on the extract.
+
+Name the identity in words: average-inventory share = average inventory ÷ average total assets.
+
+$$
+\text{Avg inventory} = \frac{134 + 158}{2} = 146
+$$
+
+$$
+\text{Avg assets} = \frac{886 + 967}{2} = 926.5
+$$
+
+$$
+\frac{146}{926.5} = 15.8\%
+$$
+
+Threshold: less than 15.9%. Actual 15.8%.
+
+Reading the arithmetic against the claim: the share is 15.8% versus ''less than 15.9%'' so the statement holds.
+
+The statement is true.'] WHERE case_id = 'CASE 6.5.044' AND tier = 'full';
+UPDATE public.economics_cases SET tactical_explanations = ARRAY['TRUE — This is a composition claim: express Trade receivables as a percentage of current assets.
+
+Name the identity in words: Trade receivables share of current assets = Trade receivables ÷ current assets.
+
+From the extract, Trade receivables = 80 and current assets = 227. Plug the figures step by step:
+
+$$
+Share = \frac{\text{Trade receivables}}{\text{current assets}}
+$$
+
+$$
+Share = \frac{80}{227}
+$$
+
+$$
+Share = 35.2\%
+$$
+
+Threshold: less than 46%. Actual 35.2%.
+
+Reading the arithmetic against the claim: actual share 35.2% matches ''less than 46%'' so the statement holds.
+
+The statement is true.', 'TRUE — Inventory is held for sale or for consumption in the operating cycle.
+
+On the balance sheet that places inventory among current assets. It is not an intangible (no physical stock for sale) and not a non-current operating asset (those are used in the business beyond one year rather than turned over as stock).
+
+Applied to this stem: "Inventory of €111 thousand is correctly classified as a current asset rather than a non-current intangible asset."
+
+The statement is true.', 'TRUE — The equity ratio places equity against total assets so the financing structure can be judged on one balance sheet.
+
+Name the identity in words: equity ratio = equity ÷ total assets.
+
+From the extract, equity = 417 and total assets = 969. Plug the figures step by step:
+
+$$
+ER = \frac{\text{equity}}{\text{total assets}}
+$$
+
+$$
+ER = \frac{417}{969}
+$$
+
+$$
+ER = 43.0\%
+$$
+
+Claimed: exceeds 34%. Actual 43.0%.
+
+Reading the arithmetic against the claim: actual equity ratio 43.0% matches ''exceeds 34%'' so the statement holds.
+
+The statement is true.', 'TRUE — Activity ratios use averages: asset turnover = revenue / average assets; inventory turnover = cost of sales / average inventory; receivables turnover = revenue / average receivables; days ≈ 365 / turnover.
+
+The wording matches the relevant rule for "Liquidity From the Balance Sheet 45". Activity ratios use averages: asset turnover = revenue / average assets; inventory turnover = cost of sales / average inventory; receivables turnover = revenue / average receivables; days ≈ 365 / turnover. Market capitalisation = price × shares; EPS relates earnings to shares outstanding. Applied here: "Total assets of €969 thousand equal total equity plus total liabilities."
+
+The statement is true.', 'TRUE — The acid-test excludes inventory from current assets before dividing by current liabilities.
+
+Leaving inventory out makes the quick ratio less than or equal to the current ratio, so it is the more conservative liquidity test on the same balance sheet.
+
+The statement is true.'] WHERE case_id = 'CASE 6.5.045' AND tier = 'full';
+UPDATE public.economics_cases SET tactical_explanations = ARRAY['TRUE — Activity ratios use averages: asset turnover = revenue / average assets; inventory turnover = cost of sales / average inventory; receivables turnover = revenue / average receivables; days ≈ 365 / turnover.
+
+The wording matches the relevant rule for "Return on Equity Explained in Practice". Activity ratios use averages: asset turnover = revenue / average assets; inventory turnover = cost of sales / average inventory; receivables turnover = revenue / average receivables; days ≈ 365 / turnover. Market capitalisation = price × shares; EPS relates earnings to shares outstanding. Applied here: "Asset turnover for a manufacturer relates revenue earned during the period to the average total assets employed to generate that revenue."
+
+The statement is true.', 'TRUE — Activity ratios use averages: asset turnover = revenue / average assets; inventory turnover = cost of sales / average inventory; receivables turnover = revenue / average receivables; days ≈ 365 / turnover.
+
+The wording matches the relevant rule for "Return on Equity Explained in Practice". Activity ratios use averages: asset turnover = revenue / average assets; inventory turnover = cost of sales / average inventory; receivables turnover = revenue / average receivables; days ≈ 365 / turnover. Market capitalisation = price × shares; EPS relates earnings to shares outstanding. Applied here: "The equity ratio for a manufacturer expresses the proportion of total assets financed by owners'' equity rather than by borrowed funds."
+
+The statement is true.', 'FALSE — Activity ratios use averages: asset turnover = revenue / average assets; inventory turnover = cost of sales / average inventory; receivables turnover = revenue / average receivables; days ≈ 365 / turnover.
+
+Absolute or misapplied wording conflicts with the rule for "Return on Equity Explained in Practice". Activity ratios use averages: asset turnover = revenue / average assets; inventory turnover = cost of sales / average inventory; receivables turnover = revenue / average receivables; days ≈ 365 / turnover. Market capitalisation = price × shares; EPS relates earnings to shares outstanding. Rejected claim: "Working capital for a supermarket chain is calculated by subtracting current assets from current liabilities."
+
+The statement is false.', 'FALSE — Activity ratios use averages: asset turnover = revenue / average assets; inventory turnover = cost of sales / average inventory; receivables turnover = revenue / average receivables; days ≈ 365 / turnover.
+
+Absolute or misapplied wording conflicts with the rule for "Return on Equity Explained in Practice". Activity ratios use averages: asset turnover = revenue / average assets; inventory turnover = cost of sales / average inventory; receivables turnover = revenue / average receivables; days ≈ 365 / turnover. Market capitalisation = price × shares; EPS relates earnings to shares outstanding. Rejected claim: "A supermarket chain reporting negative working capital always holds more cash than it needs for its daily operations."
+
+The statement is false.', 'FALSE — Activity ratios use averages: asset turnover = revenue / average assets; inventory turnover = cost of sales / average inventory; receivables turnover = revenue / average receivables; days ≈ 365 / turnover.
+
+Absolute or misapplied wording conflicts with the rule for "Return on Equity Explained in Practice". Activity ratios use averages: asset turnover = revenue / average assets; inventory turnover = cost of sales / average inventory; receivables turnover = revenue / average receivables; days ≈ 365 / turnover. Market capitalisation = price × shares; EPS relates earnings to shares outstanding. Rejected claim: "The acid-test ratio for a supermarket chain includes inventory within current assets before comparing the total with current liabilities."
+
+The statement is false.'] WHERE case_id = 'CASE 6.5.046' AND tier = 'full';
+UPDATE public.economics_cases SET tactical_explanations = ARRAY['TRUE — Activity ratios use averages: asset turnover = revenue / average assets; inventory turnover = cost of sales / average inventory; receivables turnover = revenue / average receivables; days ≈ 365 / turnover.
+
+The wording matches the relevant rule for "Return on Equity Explained Explained". Activity ratios use averages: asset turnover = revenue / average assets; inventory turnover = cost of sales / average inventory; receivables turnover = revenue / average receivables; days ≈ 365 / turnover. Market capitalisation = price × shares; EPS relates earnings to shares outstanding. Applied here: "The debt ratio for a manufacturer expresses the proportion of total assets financed through liabilities rather than through owners'' equity."
+
+The statement is true.', 'TRUE — Activity ratios use averages: asset turnover = revenue / average assets; inventory turnover = cost of sales / average inventory; receivables turnover = revenue / average receivables; days ≈ 365 / turnover.
+
+The claim states: If a manufacturer draws on a short-term facility to settle supplier invoices, its cash position may improve while its working capital can simultaneously weaken. The reason given — current liabilities rise. — fits the chapter rule. Activity ratios use averages: asset turnover = revenue / average assets; inventory turnover = cost of sales / average inventory; receivables turnover = revenue / average receivables; days ≈ 365 / turnover. Market capitalisation = price × shares; EPS relates earnings to shares outstanding.
+
+The statement is true.', 'TRUE — Activity ratios use averages: asset turnover = revenue / average assets; inventory turnover = cost of sales / average inventory; receivables turnover = revenue / average receivables; days ≈ 365 / turnover.
+
+The wording matches the relevant rule for "Return on Equity Explained Explained". Activity ratios use averages: asset turnover = revenue / average assets; inventory turnover = cost of sales / average inventory; receivables turnover = revenue / average receivables; days ≈ 365 / turnover. Market capitalisation = price × shares; EPS relates earnings to shares outstanding. Applied here: "Working capital for a construction group is found by subtracting current liabilities from current assets, so a widening gap in favour of current assets raises working capital."
+
+The statement is true.', 'TRUE — Activity ratios use averages: asset turnover = revenue / average assets; inventory turnover = cost of sales / average inventory; receivables turnover = revenue / average receivables; days ≈ 365 / turnover.
+
+The wording matches the relevant rule for "Return on Equity Explained Explained". Activity ratios use averages: asset turnover = revenue / average assets; inventory turnover = cost of sales / average inventory; receivables turnover = revenue / average receivables; days ≈ 365 / turnover. Market capitalisation = price × shares; EPS relates earnings to shares outstanding. Applied here: "A construction group is generally better placed with positive working capital, since current assets then exceed current liabilities once short-term obligations are taken into account."
+
+The statement is true.', 'TRUE — Activity ratios use averages: asset turnover = revenue / average assets; inventory turnover = cost of sales / average inventory; receivables turnover = revenue / average receivables; days ≈ 365 / turnover.
+
+The wording matches the relevant rule for "Return on Equity Explained Explained". Activity ratios use averages: asset turnover = revenue / average assets; inventory turnover = cost of sales / average inventory; receivables turnover = revenue / average receivables; days ≈ 365 / turnover. Market capitalisation = price × shares; EPS relates earnings to shares outstanding. Applied here: "The current ratio for a construction group sets total current assets against total current liabilities to judge whether short-term resources comfortably cover short-term obligations."
+
+The statement is true.'] WHERE case_id = 'CASE 6.5.047' AND tier = 'full';
+UPDATE public.economics_cases SET tactical_explanations = ARRAY['FALSE — Asset turnover shows how many times revenue covers average total assets over the year.
+
+Name the identity in words: asset turnover = revenue ÷ average total assets.
+
+$$
+\text{Avg assets} = \frac{847 + 983}{2} = 915
+$$
+
+$$
+AT = \frac{1,223}{915} = 1.3366
+$$
+
+Claimed above 1.4. Actual 1.34.
+
+Reading the arithmetic against the claim: asset turnover 1.34 versus ''above 1.4'' so the statement does not hold.
+
+The statement is false.', 'FALSE — Collection days convert receivables turnover into an approximate outstanding period.
+
+Name the identity in words: collection days ≈ 365 ÷ receivables turnover.
+
+$$
+RT = \frac{1,223}{113.5} = 10.7753
+$$
+
+$$
+\text{Days} = \frac{365}{10.7753} = 33.9
+$$
+
+Threshold: more than 56 days. Actual 34 days.
+
+Reading the arithmetic against the claim: collection days 34 do not exceed 56 so the statement does not hold.
+
+The statement is false.', 'TRUE — Inventory turnover relates cost of sales to average inventory held.
+
+Name the identity in words: inventory turnover = cost of sales ÷ average inventory.
+
+$$
+\text{Avg inventory} = \frac{156 + 199}{2} = 177.5
+$$
+
+$$
+IT = \frac{795}{177.5} = 4.4789
+$$
+
+Claimed below 6.06. Actual 4.48.
+
+Reading the arithmetic against the claim: inventory turnover 4.48 versus ''below 6.06'' so the statement holds.
+
+The statement is true.', 'TRUE — Receivables turnover shows how many times revenue covers average trade receivables.
+
+Name the identity in words: receivables turnover = revenue ÷ average trade receivables.
+
+$$
+\text{Avg receivables} = \frac{96 + 131}{2} = 113.5
+$$
+
+$$
+RT = \frac{1,223}{113.5} = 10.7753
+$$
+
+Threshold: exceeds 9.87. Actual 10.78.
+
+Reading the arithmetic against the claim: receivables turnover 10.78 exceeds 9.87 so the statement holds.
+
+The statement is true.', 'FALSE — Average inventory and average assets are midpoints of the beginning and ending balances on the extract.
+
+Name the identity in words: average-inventory share = average inventory ÷ average total assets.
+
+$$
+\text{Avg inventory} = \frac{156 + 199}{2} = 177.5
+$$
+
+$$
+\text{Avg assets} = \frac{847 + 983}{2} = 915
+$$
+
+$$
+\frac{177.5}{915} = 19.4\%
+$$
+
+Threshold: less than 18.8%. Actual 19.4%.
+
+Reading the arithmetic against the claim: the share is 19.4% versus ''less than 18.8%'' so the statement does not hold.
+
+The statement is false.'] WHERE case_id = 'CASE 6.5.048' AND tier = 'full';
+UPDATE public.economics_cases SET tactical_explanations = ARRAY['TRUE — Activity ratios use averages: asset turnover = revenue / average assets; inventory turnover = cost of sales / average inventory; receivables turnover = revenue / average receivables; days ≈ 365 / turnover.
+
+The wording matches the relevant rule for "Return on Equity Explained for Analysts". Activity ratios use averages: asset turnover = revenue / average assets; inventory turnover = cost of sales / average inventory; receivables turnover = revenue / average receivables; days ≈ 365 / turnover. Market capitalisation = price × shares; EPS relates earnings to shares outstanding. Applied here: "Return on equity for a construction group relates the profit before interest and tax generated during the period to the equity that owners have invested in the business."
+
+The statement is true.', 'FALSE — Activity ratios use averages: asset turnover = revenue / average assets; inventory turnover = cost of sales / average inventory; receivables turnover = revenue / average receivables; days ≈ 365 / turnover.
+
+Absolute or misapplied wording conflicts with the rule for "Return on Equity Explained for Analysts". Activity ratios use averages: asset turnover = revenue / average assets; inventory turnover = cost of sales / average inventory; receivables turnover = revenue / average receivables; days ≈ 365 / turnover. Market capitalisation = price × shares; EPS relates earnings to shares outstanding. Rejected claim: "A single return on capital employed figure for a supermarket chain is always fully meaningful on its own, without any need to compare it against other years or similar businesses."
+
+The statement is false.', 'FALSE — Activity ratios use averages: asset turnover = revenue / average assets; inventory turnover = cost of sales / average inventory; receivables turnover = revenue / average receivables; days ≈ 365 / turnover.
+
+Absolute or misapplied wording conflicts with the rule for "Return on Equity Explained for Analysts". Activity ratios use averages: asset turnover = revenue / average assets; inventory turnover = cost of sales / average inventory; receivables turnover = revenue / average receivables; days ≈ 365 / turnover. Market capitalisation = price × shares; EPS relates earnings to shares outstanding. Rejected claim: "Return on equity for a supermarket chain is calculated by comparing the cash balance on the balance sheet with total liabilities rather than relating profit to equity."
+
+The statement is false.', 'FALSE — Activity ratios use averages: asset turnover = revenue / average assets; inventory turnover = cost of sales / average inventory; receivables turnover = revenue / average receivables; days ≈ 365 / turnover.
+
+Absolute or misapplied wording conflicts with the rule for "Return on Equity Explained for Analysts". Activity ratios use averages: asset turnover = revenue / average assets; inventory turnover = cost of sales / average inventory; receivables turnover = revenue / average receivables; days ≈ 365 / turnover. Market capitalisation = price × shares; EPS relates earnings to shares outstanding. Rejected claim: "Inventory turnover for a supermarket chain is calculated by dividing revenue by average inventory rather than by relating cost of sales to average inventory."
+
+The statement is false.', 'FALSE — Activity ratios use averages: asset turnover = revenue / average assets; inventory turnover = cost of sales / average inventory; receivables turnover = revenue / average receivables; days ≈ 365 / turnover.
+
+Absolute or misapplied wording conflicts with the rule for "Return on Equity Explained for Analysts". Activity ratios use averages: asset turnover = revenue / average assets; inventory turnover = cost of sales / average inventory; receivables turnover = revenue / average receivables; days ≈ 365 / turnover. Market capitalisation = price × shares; EPS relates earnings to shares outstanding. Rejected claim: "The current ratio and the acid-test ratio for a supermarket chain always produce identical results, regardless of how much inventory the business holds."
+
+The statement is false.'] WHERE case_id = 'CASE 6.5.049' AND tier = 'full';
+UPDATE public.economics_cases SET tactical_explanations = ARRAY['TRUE — The acid-test (quick) ratio is a stricter liquidity test: inventory is removed from current assets before dividing by current liabilities.
+
+Name the identity in words: acid-test ratio = (current assets − inventory) ÷ current liabilities.
+
+$$
+CA = 341, \quad \text{Inventory} = 185, \quad CL = 144
+$$
+
+$$
+CA - \text{Inventory} = 341 - 185 = 156
+$$
+
+$$
+\text{Acid-test} = \frac{156}{144} = 1.0833
+$$
+
+Threshold: more than 0.98. Actual 1.08.
+
+Reading the arithmetic against the claim: acid-test 1.08 is more than 0.98 so the statement holds.
+
+The statement is true.', 'FALSE — The current ratio is the standard liquidity cover of current assets over current liabilities.
+
+Name the identity in words: current ratio = current assets ÷ current liabilities.
+
+Build current assets and current liabilities from the extract:
+
+$$
+CA = 185 + 73 + 83 = 341
+$$
+
+$$
+CL = 62 + 82 = 144
+$$
+
+$$
+\text{Current ratio} = \frac{341}{144} = 2.3681
+$$
+
+Claimed: is below 0.66. Actual 2.37.
+
+Reading the arithmetic against the claim: actual current ratio 2.37 versus ''is below 0.66'' so the statement does not hold.
+
+The statement is false.', 'TRUE — The equity ratio places equity against total assets so the financing structure can be judged on one balance sheet.
+
+Name the identity in words: equity ratio = equity ÷ total assets.
+
+From the extract, equity = 364 and total assets = 1,004. Plug the figures step by step:
+
+$$
+ER = \frac{\text{equity}}{\text{total assets}}
+$$
+
+$$
+ER = \frac{364}{1,004}
+$$
+
+$$
+ER = 36.3\%
+$$
+
+Claimed: is below 40.5%. Actual 36.3%.
+
+Reading the arithmetic against the claim: actual equity ratio 36.3% matches ''is below 40.5%'' so the statement holds.
+
+The statement is true.', 'TRUE — This is a composition claim: express Inventory as a percentage of current assets.
+
+Name the identity in words: Inventory share of current assets = Inventory ÷ current assets.
+
+From the extract, Inventory = 185 and current assets = 341. Plug the figures step by step:
+
+$$
+Share = \frac{\text{Inventory}}{\text{current assets}}
+$$
+
+$$
+Share = \frac{185}{341}
+$$
+
+$$
+Share = 54.3\%
+$$
+
+Threshold: more than 37.8%. Actual 54.3%.
+
+Reading the arithmetic against the claim: actual share 54.3% matches ''more than 37.8%'' so the statement holds.
+
+The statement is true.', 'TRUE — This is a composition claim: express Trade receivables as a percentage of current assets.
+
+Name the identity in words: Trade receivables share of current assets = Trade receivables ÷ current assets.
+
+From the extract, Trade receivables = 73 and current assets = 341. Plug the figures step by step:
+
+$$
+Share = \frac{\text{Trade receivables}}{\text{current assets}}
+$$
+
+$$
+Share = \frac{73}{341}
+$$
+
+$$
+Share = 21.4\%
+$$
+
+Threshold: less than 44.5%. Actual 21.4%.
+
+Reading the arithmetic against the claim: actual share 21.4% matches ''less than 44.5%'' so the statement holds.
+
+The statement is true.'] WHERE case_id = 'CASE 6.5.050' AND tier = 'full';

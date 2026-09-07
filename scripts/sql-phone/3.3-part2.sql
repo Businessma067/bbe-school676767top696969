@@ -1,812 +1,933 @@
 -- Update expanded explanations for 3.3-part2 (25 cases).
 -- Safe to re-run: only updates tactical_explanations.
 
-UPDATE public.economics_cases SET tactical_explanations = ARRAY['TRUE — This statement is correct. Investors in expanding firms view profit as compensation for capital exposed to market risk.
+UPDATE public.economics_cases SET tactical_explanations = ARRAY['TRUE — Profit emerges when revenue exceeds total costs and expenses in a period. Cost control matters alongside sales; revenue without expense control does not satisfy the profit objective.
 
-The relevant theory comes from profit-oriented businesses versus not-for-profit organisations. Identify which definition or relationship the sentence is trying to test before deciding true or false.
+Investors receive profit as reward for risk taken.
 
-Applied carefully, investors receive profit as reward for risk taken. Nothing in the sentence stretches the concept beyond its standard use.
+Under that classification the assertion describes the situation correctly.
 
-No qualifying word breaks the definition or scenario, so the answer is true.', 'FALSE — On the Fuhrmann definition used in the entrance exam, the sentence is false. Retained profit must be unrelated to investor risk because it stays in the firm.
+The statement is true.
+', 'FALSE — Commercial profit can be retained and reinvested in equipment, capacity, and durability. Distributing every euro immediately is not required for profit orientation.
 
-The scenario is a worked example of profit-oriented businesses versus not-for-profit organisations. Translate the story into the textbook category first; only then judge whether the sentence describes that category accurately.
+Retained profit reflects returns on capital at risk.
 
-Applied to this claim, retained profit reflects returns on capital at risk. That is why the sentence does not survive careful reading.
+The mislabelled category or reversed comparison is enough to reject the claim.
 
-Once the overclaim or mislabel is exposed, the only consistent answer is false.', 'FALSE — On the Fuhrmann definition used in the entrance exam, the sentence is false. Commercial investors view break-even as the ideal long-run outcome.
+The statement is false.
+', 'FALSE — Profit-oriented firms seek a surplus of revenue over total costs, not merely break-even. Covering costs alone is a floor, not the usual long-run commercial goal.
 
-This statement draws on profit-oriented businesses versus not-for-profit organisations. Treat it as a checklist against the core concept named in the stem, not as a general opinion about business.
+Investors typically expect profit above costs.
 
-Applied to this claim, investors typically expect profit above costs. That is why the sentence does not survive careful reading.
+The mislabelled category or reversed comparison is enough to reject the claim.
 
-Once the overclaim or mislabel is exposed, the only consistent answer is false.', 'FALSE — The claim is false. Investors treat profit as a salary unrelated to capital committed to the firm.
+The statement is false.
+', 'FALSE — Profit emerges when revenue exceeds total costs and expenses in a period. Cost control matters alongside sales; revenue without expense control does not satisfy the profit objective.
 
-This statement draws on profit-oriented businesses versus not-for-profit organisations. Treat it as a checklist against the core concept named in the stem, not as a general opinion about business.
+Profit rewards capital providers for risk taken.
 
-Applied to this claim, profit rewards capital providers for risk taken. That is why the sentence does not survive careful reading.
+Swap in the textbook criterion and the sentence no longer describes the case.
 
-Once the overclaim or mislabel is exposed, the only consistent answer is false.', 'FALSE — The claim is false. Owner return logic rejects any link between profit and capital at risk.
+The statement is false.
+', 'FALSE — Profit emerges when revenue exceeds total costs and expenses in a period. Cost control matters alongside sales; revenue without expense control does not satisfy the profit objective.
 
-This statement draws on profit-oriented businesses versus not-for-profit organisations. Treat it as a checklist against the core concept named in the stem, not as a general opinion about business.
+Profit compensates owners for capital placed at risk.
 
-Applied to this claim, profit compensates owners for capital placed at risk. That is why the sentence does not survive careful reading.
+The mislabelled category or reversed comparison is enough to reject the claim.
 
-Once the overclaim or mislabel is exposed, the only consistent answer is false.'] WHERE case_id = 'CASE 3.3.26' AND tier = 'full';
-UPDATE public.economics_cases SET tactical_explanations = ARRAY['TRUE — This statement is correct. A conservation NPO illustrates environmental mission focus within an NPO model.
+The statement is false.
+'] WHERE case_id = 'CASE 3.3.26' AND tier = 'full';
+UPDATE public.economics_cases SET tactical_explanations = ARRAY['TRUE — Not-for-profit organisations pursue a mission rather than owner profit, but they still need funding inflows. Surpluses are typically ploughed back into the mission; a cost-recovery fee alone does not convert an NPO into a profit-maximising firm.
 
-The relevant theory comes from profit-oriented businesses versus not-for-profit organisations. Identify which definition or relationship the sentence is trying to test before deciding true or false.
+Conservation work can be organised as an npo mission.
 
-Applied carefully, conservation work can be organised as an npo mission. Nothing in the sentence stretches the concept beyond its standard use.
+The sentence therefore reports the concept accurately for this item.
 
-No qualifying word breaks the definition or scenario, so the answer is true.', 'TRUE — The claim is correct. A humanitarian NPO illustrates humanitarian mission delivery within an NPO model.
+The statement is true.
+', 'TRUE — Not-for-profit organisations pursue a mission rather than owner profit, but they still need funding inflows. Surpluses are typically ploughed back into the mission; a cost-recovery fee alone does not convert an NPO into a profit-maximising firm.
 
-This statement draws on profit-oriented businesses versus not-for-profit organisations. Treat it as a checklist against the core concept named in the stem, not as a general opinion about business.
+Humanitarian delivery can be organised as an npo mission.
 
-In this setting, humanitarian delivery can be organised as an npo mission. The wording matches the textbook relationship without adding extra conditions.
+Under that classification the assertion describes the situation correctly.
 
-The reasoning chain is complete, so mark the statement true.', 'TRUE — This statement is correct. An environmental campaign NPO illustrates a mission-driven non-profit organisation.
+The statement is true.
+', 'TRUE — Not-for-profit organisations pursue a mission rather than owner profit, but they still need funding inflows. Surpluses are typically ploughed back into the mission; a cost-recovery fee alone does not convert an NPO into a profit-maximising firm.
 
-The relevant theory comes from profit-oriented businesses versus not-for-profit organisations. Identify which definition or relationship the sentence is trying to test before deciding true or false.
+Campaign advocacy can be organised as an npo mission.
 
-Applied carefully, campaign advocacy can be organised as an npo mission. Nothing in the sentence stretches the concept beyond its standard use.
+Nothing in the keyed reading contradicts the chapter framing used here, so the claim holds.
 
-Every part of the claim aligns with the standard concept, so the statement stands.', 'FALSE — This statement is false. Different mission labels remove the shared need to fund operations.
+The statement is true.
+', 'FALSE — Profit emerges when revenue exceeds total costs and expenses in a period. Cost control matters alongside sales; revenue without expense control does not satisfy the profit objective.
 
-The relevant theory comes from profit-oriented businesses versus not-for-profit organisations. Identify which definition or relationship the sentence is trying to test before deciding true or false.
+All npos still need resources to operate.
 
-The statement overreaches because all npos still need resources to operate. The trap is to agree with the topic while missing the one detail that breaks the logic.
+Once the defining feature is restored, the assertion falls away.
 
-Because the decisive detail is wrong, mark the statement false.', 'FALSE — Evaluated against the textbook standard, this assertion is false. Mission type alone turns an NPO into a profit-maximising corporation.
+The statement is false.
+', 'FALSE — Not-for-profit organisations pursue a mission rather than owner profit, but they still need funding inflows. Surpluses are typically ploughed back into the mission; a cost-recovery fee alone does not convert an NPO into a profit-maximising firm.
 
-The relevant theory comes from profit-oriented businesses versus not-for-profit organisations. Identify which definition or relationship the sentence is trying to test before deciding true or false.
+Mission type does not redefine the organisation as profit-maximising.
 
-The statement overreaches because mission type does not redefine the organisation as profit-maximising. The trap is to agree with the topic while missing the one detail that breaks the logic.
+Those restricting words stretch a limited idea past what the definition allows.
 
-The statement sounds plausible but fails on precision, so it is false.'] WHERE case_id = 'CASE 3.3.27' AND tier = 'full';
-UPDATE public.economics_cases SET tactical_explanations = ARRAY['TRUE — This statement is correct. Covering costs allows NPOs to reinvest any surplus into mission activities.
+The statement is false.
+'] WHERE case_id = 'CASE 3.3.27' AND tier = 'full';
+UPDATE public.economics_cases SET tactical_explanations = ARRAY['TRUE — Not-for-profit organisations pursue a mission rather than owner profit, but they still need funding inflows. Surpluses are typically ploughed back into the mission; a cost-recovery fee alone does not convert an NPO into a profit-maximising firm.
 
-The relevant theory comes from profit-oriented businesses versus not-for-profit organisations. Identify which definition or relationship the sentence is trying to test before deciding true or false.
+Surplus can be reinvested to enhance mission delivery.
 
-Applied carefully, surplus can be reinvested to enhance mission delivery. Nothing in the sentence stretches the concept beyond its standard use.
+Under that classification the assertion describes the situation correctly.
 
-Every part of the claim aligns with the standard concept, so the statement stands.', 'TRUE — On the Fuhrmann definition used in the entrance exam, the sentence is correct. Cost coverage allows NPOs to operate without donations or fees.
+The statement is true.
+', 'TRUE — Not-for-profit organisations pursue a mission rather than owner profit, but they still need funding inflows. Surpluses are typically ploughed back into the mission; a cost-recovery fee alone does not convert an NPO into a profit-maximising firm.
 
-This statement draws on profit-oriented businesses versus not-for-profit organisations. Treat it as a checklist against the core concept named in the stem, not as a general opinion about business.
+Inflows are still required to meet costs.
 
-In this setting, inflows are still required to meet costs. The wording matches the textbook relationship without adding extra conditions.
+The sentence therefore reports the concept accurately for this item.
 
-The reasoning chain is complete, so mark the statement true.', 'FALSE — The claim is false. NPOs and commercial firms share identical primary goals for owner profit.
+The statement is true.
+', 'FALSE — Not-for-profit organisations pursue a mission rather than owner profit, but they still need funding inflows. Surpluses are typically ploughed back into the mission; a cost-recovery fee alone does not convert an NPO into a profit-maximising firm.
 
-This statement draws on profit-oriented businesses versus not-for-profit organisations. Treat it as a checklist against the core concept named in the stem, not as a general opinion about business.
+Commercial firms target owner profit; npos focus on mission cost coverage.
 
-Applied to this claim, commercial firms target owner profit; npos focus on mission cost coverage. That is why the sentence does not survive careful reading.
+Swap in the textbook criterion and the sentence no longer describes the case.
 
-Once the overclaim or mislabel is exposed, the only consistent answer is false.', 'FALSE — On the Fuhrmann definition used in the entrance exam, the sentence is false. Clinics need no revenue because treatment is a mission service.
+The statement is false.
+', 'FALSE — Profit emerges when revenue exceeds total costs and expenses in a period. Cost control matters alongside sales; revenue without expense control does not satisfy the profit objective.
 
-The scenario is a worked example of profit-oriented businesses versus not-for-profit organisations. Translate the story into the textbook category first; only then judge whether the sentence describes that category accurately.
+Npo healthcare must cover operating costs.
 
-Applied to this claim, npo healthcare must cover operating costs. That is why the sentence does not survive careful reading.
+The mislabelled category or reversed comparison is enough to reject the claim.
 
-Once the overclaim or mislabel is exposed, the only consistent answer is false.', 'FALSE — On the Fuhrmann definition used in the entrance exam, the sentence is false. Maximising owner profit is the primary financial goal of not-for-profit organisations.
+The statement is false.
+', 'FALSE — Not-for-profit organisations pursue a mission rather than owner profit, but they still need funding inflows. Surpluses are typically ploughed back into the mission; a cost-recovery fee alone does not convert an NPO into a profit-maximising firm.
 
-This statement draws on profit-oriented businesses versus not-for-profit organisations. Treat it as a checklist against the core concept named in the stem, not as a general opinion about business.
+Npos prioritise mission cost coverage over owner profit.
 
-Applied to this claim, npos prioritise mission cost coverage over owner profit. That is why the sentence does not survive careful reading.
+Swap in the textbook criterion and the sentence no longer describes the case.
 
-Because the decisive detail is wrong, mark the statement false.'] WHERE case_id = 'CASE 3.3.28' AND tier = 'full';
-UPDATE public.economics_cases SET tactical_explanations = ARRAY['TRUE — The claim is correct. Achieving revenue above costs can finance additional mission capacity.
+The statement is false.
+'] WHERE case_id = 'CASE 3.3.28' AND tier = 'full';
+UPDATE public.economics_cases SET tactical_explanations = ARRAY['TRUE — Profit emerges when revenue exceeds total costs and expenses in a period. Cost control matters alongside sales; revenue without expense control does not satisfy the profit objective.
 
-This statement draws on profit-oriented businesses versus not-for-profit organisations. Treat it as a checklist against the core concept named in the stem, not as a general opinion about business.
+Margin above costs enables reinvestment.
 
-In this setting, margin above costs enables reinvestment. The wording matches the textbook relationship without adding extra conditions.
+In the case setting — a social enterprise cafe seeks a margin to open a second training kitchen — that reading fits the facts given.
 
-Every part of the claim aligns with the standard concept, so the statement stands.', 'TRUE — This statement is correct. Seeking margin to fund a training kitchen targets surplus for mission-related expansion.
+Nothing in the keyed reading contradicts the chapter framing used here, so the claim holds.
 
-The relevant theory comes from profit-oriented businesses versus not-for-profit organisations. Identify which definition or relationship the sentence is trying to test before deciding true or false.
+The statement is true.
+', 'TRUE — Profit emerges when revenue exceeds total costs and expenses in a period. Cost control matters alongside sales; revenue without expense control does not satisfy the profit objective.
 
-Applied carefully, surplus can fund expanded mission-related projects. Nothing in the sentence stretches the concept beyond its standard use.
+Surplus can fund expanded mission-related projects.
 
-No qualifying word breaks the definition or scenario, so the answer is true.', 'TRUE — Evaluated against the textbook standard, this assertion is correct. Mission-related expansion can be financed from earned margin above costs.
+The scenario (a social enterprise cafe seeks a margin to open a second training kitchen) supports that classification.
 
-The relevant theory comes from profit-oriented businesses versus not-for-profit organisations. Identify which definition or relationship the sentence is trying to test before deciding true or false.
+The sentence therefore reports the concept accurately for this item.
 
-Applied carefully, surplus above costs enables reinvestment. Nothing in the sentence stretches the concept beyond its standard use.
+The statement is true.
+', 'TRUE — Profit emerges when revenue exceeds total costs and expenses in a period. Cost control matters alongside sales; revenue without expense control does not satisfy the profit objective.
 
-No qualifying word breaks the definition or scenario, so the answer is true.', 'TRUE — Evaluated against the textbook standard, this assertion is correct. Seeking margin proves the cafe abandoned its social mission entirely.
+Surplus above costs enables reinvestment.
 
-The topic is profit-oriented businesses versus not-for-profit organisations, but the decisive skill here is reading quantifiers. Words such as never, always, only, or all turn a generally true idea into a claim that can be rejected by one routine counterexample.
+In the case setting — a social enterprise cafe seeks a margin to open a second training kitchen — that reading fits the facts given.
 
-Applied carefully, margin can fund mission expansion within a social enterprise. Nothing in the sentence stretches the concept beyond its standard use.
+Nothing in the keyed reading contradicts the chapter framing used here, so the claim holds.
 
-Every part of the claim aligns with the standard concept, so the statement stands.', 'TRUE — This statement is correct. The cafe treats surplus as fuel for a second training kitchen rather than owner dividends.
+The statement is true.
+', 'TRUE — Profit emerges when revenue exceeds total costs and expenses in a period. Cost control matters alongside sales; revenue without expense control does not satisfy the profit objective.
 
-This tests discrimination within profit-oriented businesses versus not-for-profit organisations: local versus international scope, equity versus debt, product versus market orientation, and similar pairs.
+Margin can fund mission expansion within a social enterprise.
 
-Applied carefully, surplus can fund mission-related expansion. Nothing in the sentence stretches the concept beyond its standard use.
+In the case setting — a social enterprise cafe seeks a margin to open a second training kitchen — that reading fits the facts given.
 
-Every part of the claim aligns with the standard concept, so the statement stands.'] WHERE case_id = 'CASE 3.3.29' AND tier = 'full';
-UPDATE public.economics_cases SET tactical_explanations = ARRAY['TRUE — On the Fuhrmann definition used in the entrance exam, the sentence is correct. Prior surplus can fund later aid shipments for humanitarian organisations.
+Under that classification the assertion describes the situation correctly.
 
-This statement draws on profit-oriented businesses versus not-for-profit organisations. Treat it as a checklist against the core concept named in the stem, not as a general opinion about business.
+The statement is true.
+', 'TRUE — Profit emerges when revenue exceeds total costs and expenses in a period. Cost control matters alongside sales; revenue without expense control does not satisfy the profit objective.
 
-In this setting, surpluses can be carried forward for mission use. The wording matches the textbook relationship without adding extra conditions.
+Surplus can fund mission-related expansion.
 
-No qualifying word breaks the definition or scenario, so the answer is true.', 'TRUE — Evaluated against the textbook standard, this assertion is correct. Aid parcels reflect humanitarian mission delivery rather than owner profit-maximisation.
+The scenario (a social enterprise cafe seeks a margin to open a second training kitchen) supports that classification.
 
-This tests discrimination within profit-oriented businesses versus not-for-profit organisations: local versus international scope, equity versus debt, product versus market orientation, and similar pairs.
+Nothing in the keyed reading contradicts the chapter framing used here, so the claim holds.
 
-Applied carefully, parcel packing serves the humanitarian mission. Nothing in the sentence stretches the concept beyond its standard use.
+The statement is true.
+'] WHERE case_id = 'CASE 3.3.29' AND tier = 'full';
+UPDATE public.economics_cases SET tactical_explanations = ARRAY['TRUE — Not-for-profit organisations pursue a mission rather than owner profit, but they still need funding inflows. Surpluses are typically ploughed back into the mission; a cost-recovery fee alone does not convert an NPO into a profit-maximising firm.
 
-No qualifying word breaks the definition or scenario, so the answer is true.', 'FALSE — On the Fuhrmann definition used in the entrance exam, the sentence is false. Using prior surplus for later aid proves the organisation maximises private owner wealth.
+Surpluses can be carried forward for mission use.
 
-This statement draws on profit-oriented businesses versus not-for-profit organisations. Treat it as a checklist against the core concept named in the stem, not as a general opinion about business.
+The scenario (how a humanitarian NPO uses prior-year donation surplus to pack aid parcels) supports that classification.
 
-Applied to this claim, mission use of surplus is not owner profit-maximisation. That is why the sentence does not survive careful reading.
+Nothing in the keyed reading contradicts the chapter framing used here, so the claim holds.
 
-Once the overclaim or mislabel is exposed, the only consistent answer is false.', 'FALSE — Evaluated against the textbook standard, this assertion is false. Humanitarian NPOs cannot retain unused funds from one period to the next.
+The statement is true.
+', 'TRUE — Not-for-profit organisations pursue a mission rather than owner profit, but they still need funding inflows. Surpluses are typically ploughed back into the mission; a cost-recovery fee alone does not convert an NPO into a profit-maximising firm.
 
-The topic is profit-oriented businesses versus not-for-profit organisations, but the decisive skill here is reading quantifiers. Words such as never, always, only, or all turn a generally true idea into a claim that can be rejected by one routine counterexample.
+Parcel packing serves the humanitarian mission.
 
-The statement overreaches because unused inflows may be retained for later mission spending. The trap is to agree with the topic while missing the one detail that breaks the logic.
+In the case setting — how a humanitarian NPO uses prior-year donation surplus to pack aid parcels — that reading fits the facts given.
 
-Watch the absolute wording "cannot": exam statements often sound plausible until a single scope word turns an otherwise familiar idea into an overclaim.
+Under that classification the assertion describes the situation correctly.
 
-Because the decisive detail is wrong, mark the statement false.', 'FALSE — On the Fuhrmann definition used in the entrance exam, the sentence is false. Mission delivery requires no logistics funding if volunteers pack parcels.
+The statement is true.
+', 'FALSE — Profit emerges when revenue exceeds total costs and expenses in a period. Cost control matters alongside sales; revenue without expense control does not satisfy the profit objective.
 
-The scenario is a worked example of profit-oriented businesses versus not-for-profit organisations. Translate the story into the textbook category first; only then judge whether the sentence describes that category accurately.
+Mission use of surplus is not owner profit-maximisation.
 
-Applied to this claim, materials and logistics still require funded inputs. That is why the sentence does not survive careful reading.
+In the case setting — how a humanitarian NPO uses prior-year donation surplus to pack aid parcels — the sentence mislabels the category or overreaches.
 
-Because the decisive detail is wrong, mark the statement false.'] WHERE case_id = 'CASE 3.3.30' AND tier = 'full';
-UPDATE public.economics_cases SET tactical_explanations = ARRAY['TRUE — Evaluated against the textbook standard, this assertion is correct. Founders treat retained profit as funding for long-run service capacity.
+The mislabelled category or reversed comparison is enough to reject the claim.
 
-The relevant theory comes from profit-oriented businesses versus not-for-profit organisations. Identify which definition or relationship the sentence is trying to test before deciding true or false.
+The statement is false.
+', 'FALSE — Not-for-profit organisations pursue a mission rather than owner profit, but they still need funding inflows. Surpluses are typically ploughed back into the mission; a cost-recovery fee alone does not convert an NPO into a profit-maximising firm.
 
-Applied carefully, retained profit strengthens durability. Nothing in the sentence stretches the concept beyond its standard use.
+Unused inflows may be retained for later mission spending.
 
-The reasoning chain is complete, so mark the statement true.', 'TRUE — Evaluated against the textbook standard, this assertion is correct. Diagnostic tool purchases from profit illustrate durability through reinvest.
+Against the scenario (how a humanitarian NPO uses prior-year donation surplus to pack aid parcels), the claim attaches the wrong label.
 
-The relevant theory comes from profit-oriented businesses versus not-for-profit organisations. Identify which definition or relationship the sentence is trying to test before deciding true or false.
+The absolute wording is what breaks the claim once the correct test is applied.
 
-Applied carefully, reinvested profit strengthens long-run capacity. Nothing in the sentence stretches the concept beyond its standard use.
+The statement is false.
+', 'FALSE — Profit emerges when revenue exceeds total costs and expenses in a period. Cost control matters alongside sales; revenue without expense control does not satisfy the profit objective.
 
-Every part of the claim aligns with the standard concept, so the statement stands.', 'FALSE — On the Fuhrmann definition used in the entrance exam, the sentence is false. Tool purchases must come from donations rather than business profit.
+Materials and logistics still require funded inputs.
 
-The section on profit-oriented businesses versus not-for-profit organisations frequently contrasts two similar ideas side by side. A comparison statement is true only if the relationship is stated in the right direction and applies to the right concept pair.
+In the case setting — how a humanitarian NPO uses prior-year donation surplus to pack aid parcels — the sentence mislabels the category or overreaches.
 
-Applied to this claim, commercial firms reinvest profit into equipment. That is why the sentence does not survive careful reading.
+Once the defining feature is restored, the assertion falls away.
 
-Students often remember that two concepts differ but swap the direction of the comparison. Verify which side of the pair is longer, larger, riskier, or more regulated.
+The statement is false.
+'] WHERE case_id = 'CASE 3.3.30' AND tier = 'full';
+UPDATE public.economics_cases SET tactical_explanations = ARRAY['TRUE — Commercial profit can be retained and reinvested in equipment, capacity, and durability. Distributing every euro immediately is not required for profit orientation.
 
-Because the decisive detail is wrong, mark the statement false.', 'FALSE — Evaluated against the textbook standard, this assertion is false. Reinvesting profit adopts not-for-profit dividend rules.
+Retained profit strengthens durability.
 
-The relevant theory comes from profit-oriented businesses versus not-for-profit organisations. Identify which definition or relationship the sentence is trying to test before deciding true or false.
+The scenario (how founders of a repair shop reinvest last year''s profit into diagnostic tools) supports that classification.
 
-The statement overreaches because commercial reinvestment differs from npo mission surplus use. The trap is to agree with the topic while missing the one detail that breaks the logic.
+Under that classification the assertion describes the situation correctly.
 
-The statement sounds plausible but fails on precision, so it is false.', 'FALSE — On the Fuhrmann definition used in the entrance exam, the sentence is false. Repair shops must distribute all profit immediately to owners.
+The statement is true.
+', 'TRUE — Commercial profit can be retained and reinvested in equipment, capacity, and durability. Distributing every euro immediately is not required for profit orientation.
 
-Although the subject matter is profit-oriented businesses versus not-for-profit organisations, this is really a logic check on overstatement. Non-profit surpluses, mixed economies, and partial market failure are classic cases where absolute wording fails.
+Reinvested profit strengthens long-run capacity.
 
-Applied to this claim, profits can be reinvested in the business. That is why the sentence does not survive careful reading.
+In the case setting — how founders of a repair shop reinvest last year''s profit into diagnostic tools — that reading fits the facts given.
 
-Watch the absolute wording "all": exam statements often sound plausible until a single scope word turns an otherwise familiar idea into an overclaim.
+Nothing in the keyed reading contradicts the chapter framing used here, so the claim holds.
 
-The statement sounds plausible but fails on precision, so it is false.'] WHERE case_id = 'CASE 3.3.31' AND tier = 'full';
-UPDATE public.economics_cases SET tactical_explanations = ARRAY['TRUE — Evaluated against the textbook standard, this assertion is correct. Profit compares total revenue with total costs and expenses.
+The statement is true.
+', 'FALSE — Not-for-profit organisations pursue a mission rather than owner profit, but they still need funding inflows. Surpluses are typically ploughed back into the mission; a cost-recovery fee alone does not convert an NPO into a profit-maximising firm.
 
-The relevant theory comes from profit-oriented businesses versus not-for-profit organisations. Identify which definition or relationship the sentence is trying to test before deciding true or false.
+Commercial firms reinvest profit into equipment.
 
-Applied carefully, both sides of the account determine profit. Nothing in the sentence stretches the concept beyond its standard use.
+Against the scenario (how founders of a repair shop reinvest last year''s profit into diagnostic tools), the claim attaches the wrong label.
 
-The reasoning chain is complete, so mark the statement true.', 'TRUE — Evaluated against the textbook standard, this assertion is correct. Profit-oriented firms compare inflows with total expenses rather than counting revenue alone.
+The mislabelled category or reversed comparison is enough to reject the claim.
 
-This tests discrimination within profit-oriented businesses versus not-for-profit organisations: local versus international scope, equity versus debt, product versus market orientation, and similar pairs.
+The statement is false.
+', 'FALSE — Not-for-profit organisations pursue a mission rather than owner profit, but they still need funding inflows. Surpluses are typically ploughed back into the mission; a cost-recovery fee alone does not convert an NPO into a profit-maximising firm.
 
-Applied carefully, profit emerges only when total revenues exceed total expenses. Nothing in the sentence stretches the concept beyond its standard use.
+Commercial reinvestment differs from npo mission surplus use.
 
-Every part of the claim aligns with the standard concept, so the statement stands.', 'TRUE — This statement is correct. Margin appears only when revenue exceeds costs.
+Against the scenario (how founders of a repair shop reinvest last year''s profit into diagnostic tools), the claim attaches the wrong label.
 
-Here you must apply ideas from profit-oriented businesses versus not-for-profit organisations to a concrete situation rather than recite a definition from memory. Ownership, customer type, stakeholder group, or country of production usually decides the verdict.
+The mislabelled category or reversed comparison is enough to reject the claim.
 
-Applied carefully, a positive margin requires inflows to surpass combined operating costs. Nothing in the sentence stretches the concept beyond its standard use.
+The statement is false.
+', 'FALSE — Profit emerges when revenue exceeds total costs and expenses in a period. Cost control matters alongside sales; revenue without expense control does not satisfy the profit objective.
 
-No qualifying word breaks the definition or scenario, so the answer is true.', 'TRUE — This statement is correct. Strong sales do not guarantee profit when expenses rise faster than revenue.
+Profits can be reinvested in the business.
 
-Here you must apply ideas from profit-oriented businesses versus not-for-profit organisations to a concrete situation rather than recite a definition from memory. Ownership, customer type, stakeholder group, or country of production usually decides the verdict.
+In the case setting — how founders of a repair shop reinvest last year''s profit into diagnostic tools — the sentence mislabels the category or overreaches.
 
-Applied carefully, rising costs can erase profit despite revenue. Nothing in the sentence stretches the concept beyond its standard use.
+Once the defining feature is restored, the assertion falls away.
 
-The reasoning chain is complete, so mark the statement true.', 'TRUE — The claim is correct. Cost control remains essential to achieving profit.
+The statement is false.
+'] WHERE case_id = 'CASE 3.3.31' AND tier = 'full';
+UPDATE public.economics_cases SET tactical_explanations = ARRAY['TRUE — Profit emerges when revenue exceeds total costs and expenses in a period. Cost control matters alongside sales; revenue without expense control does not satisfy the profit objective.
 
-This statement draws on profit-oriented businesses versus not-for-profit organisations. Treat it as a checklist against the core concept named in the stem, not as a general opinion about business.
+Both sides of the account determine profit.
 
-In this setting, both revenue and costs determine profit outcomes. The wording matches the textbook relationship without adding extra conditions.
+Under that classification the assertion describes the situation correctly.
 
-Every part of the claim aligns with the standard concept, so the statement stands.'] WHERE case_id = 'CASE 3.3.32' AND tier = 'full';
-UPDATE public.economics_cases SET tactical_explanations = ARRAY['TRUE — Evaluated against the textbook standard, this assertion is correct. A conservation NPO combining merchandise sales and donations illustrates mixed NPO revenue.
+The statement is true.
+', 'TRUE — Profit emerges when revenue exceeds total costs and expenses in a period. Cost control matters alongside sales; revenue without expense control does not satisfy the profit objective.
 
-The relevant theory comes from profit-oriented businesses versus not-for-profit organisations. Identify which definition or relationship the sentence is trying to test before deciding true or false.
+Profit emerges only when total revenues exceed total expenses.
 
-Applied carefully, npos may combine donations and trading income. Nothing in the sentence stretches the concept beyond its standard use.
+Nothing in the keyed reading contradicts the chapter framing used here, so the claim holds.
 
-No qualifying word breaks the definition or scenario, so the answer is true.', 'TRUE — The claim is correct. Surplus at an environmental campaign NPO can support more campaigns rather than shareholder dividends.
+The statement is true.
+', 'TRUE — Profit emerges when revenue exceeds total costs and expenses in a period. Cost control matters alongside sales; revenue without expense control does not satisfy the profit objective.
 
-The section on profit-oriented businesses versus not-for-profit organisations frequently contrasts two similar ideas side by side. A comparison statement is true only if the relationship is stated in the right direction and applies to the right concept pair.
+On this stem, the keyed answer treats the sentence as a correct application of that idea: «Margin appears only when revenue exceeds costs».
 
-In this setting, mission reinvestment replaces owner dividends. The wording matches the textbook relationship without adding extra conditions.
+The sentence therefore reports the concept accurately for this item.
 
-Every part of the claim aligns with the standard concept, so the statement stands.', 'TRUE — This statement is correct. Merchandise surplus at a conservation NPO can fund habitat work within the NPO model.
+The statement is true.
+', 'TRUE — Profit emerges when revenue exceeds total costs and expenses in a period. Cost control matters alongside sales; revenue without expense control does not satisfy the profit objective.
 
-The relevant theory comes from profit-oriented businesses versus not-for-profit organisations. Identify which definition or relationship the sentence is trying to test before deciding true or false.
+Rising costs can erase profit despite revenue.
 
-Applied carefully, trading surplus can finance conservation work. Nothing in the sentence stretches the concept beyond its standard use.
+Under that classification the assertion describes the situation correctly.
 
-Every part of the claim aligns with the standard concept, so the statement stands.', 'FALSE — This statement is false. Mixed revenue automatically converts every NPO into a profit-maximising firm.
+The statement is true.
+', 'TRUE — Profit emerges when revenue exceeds total costs and expenses in a period. Cost control matters alongside sales; revenue without expense control does not satisfy the profit objective.
 
-The topic is profit-oriented businesses versus not-for-profit organisations, but the decisive skill here is reading quantifiers. Words such as never, always, only, or all turn a generally true idea into a claim that can be rejected by one routine counterexample.
+Both revenue and costs determine profit outcomes.
 
-The statement overreaches because revenue mix does not redefine the primary npo aim. The trap is to agree with the topic while missing the one detail that breaks the logic.
+Under that classification the assertion describes the situation correctly.
 
-Watch the absolute wording "automatically": exam statements often sound plausible until a single scope word turns an otherwise familiar idea into an overclaim.
+The statement is true.
+'] WHERE case_id = 'CASE 3.3.32' AND tier = 'full';
+UPDATE public.economics_cases SET tactical_explanations = ARRAY['TRUE — Not-for-profit organisations pursue a mission rather than owner profit, but they still need funding inflows. Surpluses are typically ploughed back into the mission; a cost-recovery fee alone does not convert an NPO into a profit-maximising firm.
 
-Because the decisive detail is wrong, mark the statement false.', 'FALSE — This statement is false. Donations alone are the only lawful NPO funding source.
+Npos may combine donations and trading income.
 
-The relevant theory comes from profit-oriented businesses versus not-for-profit organisations. Identify which definition or relationship the sentence is trying to test before deciding true or false.
+Nothing in the keyed reading contradicts the chapter framing used here, so the claim holds.
 
-The statement overreaches because trading and fees can also fund npo activity. The trap is to agree with the topic while missing the one detail that breaks the logic.
+The statement is true.
+', 'TRUE — Not-for-profit organisations pursue a mission rather than owner profit, but they still need funding inflows. Surpluses are typically ploughed back into the mission; a cost-recovery fee alone does not convert an NPO into a profit-maximising firm.
 
-Once the overclaim or mislabel is exposed, the only consistent answer is false.'] WHERE case_id = 'CASE 3.3.33' AND tier = 'full';
-UPDATE public.economics_cases SET tactical_explanations = ARRAY['TRUE — On the Fuhrmann definition used in the entrance exam, the sentence is correct. Improved services require distributing surplus to private owners.
+Mission reinvestment replaces owner dividends.
 
-This statement draws on profit-oriented businesses versus not-for-profit organisations. Treat it as a checklist against the core concept named in the stem, not as a general opinion about business.
+The sentence therefore reports the concept accurately for this item.
 
-In this setting, npo surplus reinvests in mission, not owner payouts. The wording matches the textbook relationship without adding extra conditions.
+The statement is true.
+', 'TRUE — Not-for-profit organisations pursue a mission rather than owner profit, but they still need funding inflows. Surpluses are typically ploughed back into the mission; a cost-recovery fee alone does not convert an NPO into a profit-maximising firm.
 
-No qualifying word breaks the definition or scenario, so the answer is true.', 'FALSE — This statement is false. Clinic upgrades must be paid to external shareholders.
+Trading surplus can finance conservation work.
 
-The relevant theory comes from profit-oriented businesses versus not-for-profit organisations. Identify which definition or relationship the sentence is trying to test before deciding true or false.
+Nothing in the keyed reading contradicts the chapter framing used here, so the claim holds.
 
-The statement overreaches because npo surplus reinvests in mission activities. The trap is to agree with the topic while missing the one detail that breaks the logic.
+The statement is true.
+', 'FALSE — Not-for-profit organisations pursue a mission rather than owner profit, but they still need funding inflows. Surpluses are typically ploughed back into the mission; a cost-recovery fee alone does not convert an NPO into a profit-maximising firm.
 
-The statement sounds plausible but fails on precision, so it is false.', 'FALSE — Evaluated against the textbook standard, this assertion is false. Spending surplus on better services shows an NPO failed to distribute donor funds.
+Revenue mix does not redefine the primary npo aim.
 
-The relevant theory comes from profit-oriented businesses versus not-for-profit organisations. Identify which definition or relationship the sentence is trying to test before deciding true or false.
+Swap in the textbook criterion and the sentence no longer describes the case.
 
-The statement overreaches because improving services aligns with npo aims. The trap is to agree with the topic while missing the one detail that breaks the logic.
+The statement is false.
+', 'FALSE — Not-for-profit organisations pursue a mission rather than owner profit, but they still need funding inflows. Surpluses are typically ploughed back into the mission; a cost-recovery fee alone does not convert an NPO into a profit-maximising firm.
 
-Once the overclaim or mislabel is exposed, the only consistent answer is false.', 'FALSE — The claim is false. Beneficiary gains prove the NPO switched to profit-maximisation.
+Trading and fees can also fund npo activity.
 
-This statement draws on profit-oriented businesses versus not-for-profit organisations. Treat it as a checklist against the core concept named in the stem, not as a general opinion about business.
+Those restricting words stretch a limited idea past what the definition allows.
 
-Applied to this claim, service improvement aligns with mission reinvestment. That is why the sentence does not survive careful reading.
+The statement is false.
+'] WHERE case_id = 'CASE 3.3.33' AND tier = 'full';
+UPDATE public.economics_cases SET tactical_explanations = ARRAY['TRUE — Profit emerges when revenue exceeds total costs and expenses in a period. Cost control matters alongside sales; revenue without expense control does not satisfy the profit objective.
 
-Once the overclaim or mislabel is exposed, the only consistent answer is false.', 'FALSE — The claim is false. Theatre outreach funded from surplus converts the NGO into a commercial cinema.
+Npo surplus reinvests in mission, not owner payouts.
 
-This statement draws on profit-oriented businesses versus not-for-profit organisations. Treat it as a checklist against the core concept named in the stem, not as a general opinion about business.
+Under that classification the assertion describes the situation correctly.
 
-Applied to this claim, surplus can fund expanded outreach programmes. That is why the sentence does not survive careful reading.
+The statement is true.
+', 'FALSE — Profit emerges when revenue exceeds total costs and expenses in a period. Cost control matters alongside sales; revenue without expense control does not satisfy the profit objective.
 
-Once the overclaim or mislabel is exposed, the only consistent answer is false.'] WHERE case_id = 'CASE 3.3.34' AND tier = 'full';
-UPDATE public.economics_cases SET tactical_explanations = ARRAY['TRUE — On the Fuhrmann definition used in the entrance exam, the sentence is correct. Profit returns reflect capital placed at risk in the venture.
+Npo surplus reinvests in mission activities.
 
-This statement draws on profit-oriented businesses versus not-for-profit organisations. Treat it as a checklist against the core concept named in the stem, not as a general opinion about business.
+Once the defining feature is restored, the assertion falls away.
 
-In this setting, profit compensates capital providers for risk taken. The wording matches the textbook relationship without adding extra conditions.
+The statement is false.
+', 'FALSE — Not-for-profit organisations pursue a mission rather than owner profit, but they still need funding inflows. Surpluses are typically ploughed back into the mission; a cost-recovery fee alone does not convert an NPO into a profit-maximising firm.
 
-Every part of the claim aligns with the standard concept, so the statement stands.', 'TRUE — This statement is correct. Commercial owners expect some return when revenues exceed expenses.
+Improving services aligns with npo aims.
 
-Here you must apply ideas from profit-oriented businesses versus not-for-profit organisations to a concrete situation rather than recite a definition from memory. Ownership, customer type, stakeholder group, or country of production usually decides the verdict.
+Swap in the textbook criterion and the sentence no longer describes the case.
 
-Applied carefully, owners and investors expect profit as reward for risk. Nothing in the sentence stretches the concept beyond its standard use.
+The statement is false.
+', 'FALSE — Not-for-profit organisations pursue a mission rather than owner profit, but they still need funding inflows. Surpluses are typically ploughed back into the mission; a cost-recovery fee alone does not convert an NPO into a profit-maximising firm.
 
-Every part of the claim aligns with the standard concept, so the statement stands.', 'TRUE — On the Fuhrmann definition used in the entrance exam, the sentence is correct. Fixed salaries to investors replace profit regardless of business performance.
+Service improvement aligns with mission reinvestment.
 
-This statement draws on profit-oriented businesses versus not-for-profit organisations. Treat it as a checklist against the core concept named in the stem, not as a general opinion about business.
+Once the defining feature is restored, the assertion falls away.
 
-In this setting, profit provides variable return linked to performance and risk. The wording matches the textbook relationship without adding extra conditions.
+The statement is false.
+', 'FALSE — Profit emerges when revenue exceeds total costs and expenses in a period. Cost control matters alongside sales; revenue without expense control does not satisfy the profit objective.
 
-The reasoning chain is complete, so mark the statement true.', 'TRUE — This statement is correct. Higher revenue than expenses allows owners to be rewarded for risk-bearing.
+Surplus can fund expanded outreach programmes.
 
-The relevant theory comes from profit-oriented businesses versus not-for-profit organisations. Identify which definition or relationship the sentence is trying to test before deciding true or false.
+The mislabelled category or reversed comparison is enough to reject the claim.
 
-Applied carefully, profit orientation links surplus to owner and investor reward. Nothing in the sentence stretches the concept beyond its standard use.
+The statement is false.
+'] WHERE case_id = 'CASE 3.3.34' AND tier = 'full';
+UPDATE public.economics_cases SET tactical_explanations = ARRAY['TRUE — Profit emerges when revenue exceeds total costs and expenses in a period. Cost control matters alongside sales; revenue without expense control does not satisfy the profit objective.
 
-No qualifying word breaks the definition or scenario, so the answer is true.', 'FALSE — The claim is false. Profit and capital risk-bearing are unrelated in all firms.
+Profit compensates capital providers for risk taken.
 
-Although the subject matter is profit-oriented businesses versus not-for-profit organisations, this is really a logic check on overstatement. Non-profit surpluses, mixed economies, and partial market failure are classic cases where absolute wording fails.
+Nothing in the keyed reading contradicts the chapter framing used here, so the claim holds.
 
-Applied to this claim, profit rewards capital placed at risk. That is why the sentence does not survive careful reading.
+The statement is true.
+', 'TRUE — Profit emerges when revenue exceeds total costs and expenses in a period. Cost control matters alongside sales; revenue without expense control does not satisfy the profit objective.
 
-Watch the absolute wording "all": exam statements often sound plausible until a single scope word turns an otherwise familiar idea into an overclaim.
+Owners and investors expect profit as reward for risk.
 
-Because the decisive detail is wrong, mark the statement false.'] WHERE case_id = 'CASE 3.3.35' AND tier = 'full';
-UPDATE public.economics_cases SET tactical_explanations = ARRAY['TRUE — Evaluated against the textbook standard, this assertion is correct. Most businesses aim to operate longer by earning profit rather than merely breaking even.
+Under that classification the assertion describes the situation correctly.
 
-This tests discrimination within profit-oriented businesses versus not-for-profit organisations: local versus international scope, equity versus debt, product versus market orientation, and similar pairs.
+The statement is true.
+', 'TRUE — Profit emerges when revenue exceeds total costs and expenses in a period. Cost control matters alongside sales; revenue without expense control does not satisfy the profit objective.
 
-Applied carefully, profit supports long-run survival and growth. Nothing in the sentence stretches the concept beyond its standard use.
+Profit provides variable return linked to performance and risk.
 
-The reasoning chain is complete, so mark the statement true.', 'TRUE — Evaluated against the textbook standard, this assertion is correct. Commercial durability often relies on reinvested profit.
+The sentence therefore reports the concept accurately for this item.
 
-The relevant theory comes from profit-oriented businesses versus not-for-profit organisations. Identify which definition or relationship the sentence is trying to test before deciding true or false.
+The statement is true.
+', 'TRUE — Profit emerges when revenue exceeds total costs and expenses in a period. Cost control matters alongside sales; revenue without expense control does not satisfy the profit objective.
 
-Applied carefully, reinvestment supports long-run commercial survival. Nothing in the sentence stretches the concept beyond its standard use.
+Profit orientation links surplus to owner and investor reward.
 
-The reasoning chain is complete, so mark the statement true.', 'TRUE — The claim is correct. Mission organisations need ongoing cost coverage to continue delivery.
+Nothing in the keyed reading contradicts the chapter framing used here, so the claim holds.
 
-This statement draws on profit-oriented businesses versus not-for-profit organisations. Treat it as a checklist against the core concept named in the stem, not as a general opinion about business.
+The statement is true.
+', 'FALSE — Profit emerges when revenue exceeds total costs and expenses in a period. Cost control matters alongside sales; revenue without expense control does not satisfy the profit objective.
 
-In this setting, npos require ongoing revenues to remain viable. The wording matches the textbook relationship without adding extra conditions.
+Profit rewards capital placed at risk.
 
-The reasoning chain is complete, so mark the statement true.', 'FALSE — The claim is false. Profit above costs is irrelevant to commercial longevity.
+Once the defining feature is restored, the assertion falls away.
 
-This statement draws on profit-oriented businesses versus not-for-profit organisations. Treat it as a checklist against the core concept named in the stem, not as a general opinion about business.
+The statement is false.
+'] WHERE case_id = 'CASE 3.3.35' AND tier = 'full';
+UPDATE public.economics_cases SET tactical_explanations = ARRAY['TRUE — Profit emerges when revenue exceeds total costs and expenses in a period. Cost control matters alongside sales; revenue without expense control does not satisfy the profit objective.
 
-Applied to this claim, profit supports reinvestment and long-run survival. That is why the sentence does not survive careful reading.
+Profit supports long-run survival and growth.
 
-Once the overclaim or mislabel is exposed, the only consistent answer is false.', 'FALSE — On the Fuhrmann definition used in the entrance exam, the sentence is false. Once established, both firm types can ignore finance after a successful year.
+The sentence therefore reports the concept accurately for this item.
 
-This statement draws on profit-oriented businesses versus not-for-profit organisations. Treat it as a checklist against the core concept named in the stem, not as a general opinion about business.
+The statement is true.
+', 'TRUE — Commercial profit can be retained and reinvested in equipment, capacity, and durability. Distributing every euro immediately is not required for profit orientation.
 
-Applied to this claim, ongoing inflows remain necessary. That is why the sentence does not survive careful reading.
+Reinvestment supports long-run commercial survival.
 
-Because the decisive detail is wrong, mark the statement false.'] WHERE case_id = 'CASE 3.3.36' AND tier = 'full';
-UPDATE public.economics_cases SET tactical_explanations = ARRAY['TRUE — The claim is correct. Humanitarian, conservation, and environmental campaign organisations can all operate as NPOs.
+The sentence therefore reports the concept accurately for this item.
 
-Although the subject matter is profit-oriented businesses versus not-for-profit organisations, this is really a logic check on overstatement. Non-profit surpluses, mixed economies, and partial market failure are classic cases where absolute wording fails.
+The statement is true.
+', 'TRUE — Profit emerges when revenue exceeds total costs and expenses in a period. Cost control matters alongside sales; revenue without expense control does not satisfy the profit objective.
 
-In this setting, different missions can share not-for-profit organisation status. The wording matches the textbook relationship without adding extra conditions.
+Npos require ongoing revenues to remain viable.
 
-Every part of the claim aligns with the standard concept, so the statement stands.', 'TRUE — The claim is correct. Mission-driven organisations still face scarcity of funds and staff capacity.
+Under that classification the assertion describes the situation correctly.
 
-This statement draws on profit-oriented businesses versus not-for-profit organisations. Treat it as a checklist against the core concept named in the stem, not as a general opinion about business.
+The statement is true.
+', 'FALSE — Profit emerges when revenue exceeds total costs and expenses in a period. Cost control matters alongside sales; revenue without expense control does not satisfy the profit objective.
 
-In this setting, scarcity still constrains npo resources. The wording matches the textbook relationship without adding extra conditions.
+Profit supports reinvestment and long-run survival.
 
-No qualifying word breaks the definition or scenario, so the answer is true.', 'FALSE — This statement is false. NPO status abolishes all operating costs.
+Once the defining feature is restored, the assertion falls away.
 
-The topic is profit-oriented businesses versus not-for-profit organisations, but the decisive skill here is reading quantifiers. Words such as never, always, only, or all turn a generally true idea into a claim that can be rejected by one routine counterexample.
+The statement is false.
+', 'FALSE — Profit emerges when revenue exceeds total costs and expenses in a period. Cost control matters alongside sales; revenue without expense control does not satisfy the profit objective.
 
-The statement overreaches because npos still incur operating costs. The trap is to agree with the topic while missing the one detail that breaks the logic.
+Ongoing inflows remain necessary.
 
-Watch the absolute wording "all": exam statements often sound plausible until a single scope word turns an otherwise familiar idea into an overclaim.
+The mislabelled category or reversed comparison is enough to reject the claim.
 
-Because the decisive detail is wrong, mark the statement false.', 'FALSE — On the Fuhrmann definition used in the entrance exam, the sentence is false. An NPO may ignore inflow management because there are never wages to pay.
+The statement is false.
+'] WHERE case_id = 'CASE 3.3.36' AND tier = 'full';
+UPDATE public.economics_cases SET tactical_explanations = ARRAY['TRUE — Not-for-profit organisations pursue a mission rather than owner profit, but they still need funding inflows. Surpluses are typically ploughed back into the mission; a cost-recovery fee alone does not convert an NPO into a profit-maximising firm.
 
-Although the subject matter is profit-oriented businesses versus not-for-profit organisations, this is really a logic check on overstatement. Non-profit surpluses, mixed economies, and partial market failure are classic cases where absolute wording fails.
+Different missions can share not-for-profit organisation status.
 
-Applied to this claim, many npos employ staff and manage payroll. That is why the sentence does not survive careful reading.
+Under that classification the assertion describes the situation correctly.
 
-Watch the absolute wording "never": exam statements often sound plausible until a single scope word turns an otherwise familiar idea into an overclaim.
+The statement is true.
+', 'TRUE — Profit emerges when revenue exceeds total costs and expenses in a period. Cost control matters alongside sales; revenue without expense control does not satisfy the profit objective.
 
-Because the decisive detail is wrong, mark the statement false.', 'FALSE — This statement is false. Any organisation with a mission must be classified as primary-sector production.
+Scarcity still constrains npo resources.
 
-Start from the textbook definition in profit-oriented businesses versus not-for-profit organisations. A statement is true only if every scope word in the definition is respected—location, purpose, distribution rule, or time horizon.
+Under that classification the assertion describes the situation correctly.
 
-The statement overreaches because sector classification depends on activity, not mission label alone. The trap is to agree with the topic while missing the one detail that breaks the logic.
+The statement is true.
+', 'FALSE — Not-for-profit organisations pursue a mission rather than owner profit, but they still need funding inflows. Surpluses are typically ploughed back into the mission; a cost-recovery fee alone does not convert an NPO into a profit-maximising firm.
 
-Near-miss definitions are deliberately written to sound familiar. Compare the statement phrase by phrase with the book version instead of trusting the overall topic.
+Npos still incur operating costs.
 
-Because the decisive detail is wrong, mark the statement false.'] WHERE case_id = 'CASE 3.3.37' AND tier = 'full';
-UPDATE public.economics_cases SET tactical_explanations = ARRAY['TRUE — The claim is correct. Long-run commercial survival often depends on profitable operations over time.
+Once the defining feature is restored, the assertion falls away.
 
-This statement draws on profit-oriented businesses versus not-for-profit organisations. Treat it as a checklist against the core concept named in the stem, not as a general opinion about business.
+The statement is false.
+', 'FALSE — Not-for-profit organisations pursue a mission rather than owner profit, but they still need funding inflows. Surpluses are typically ploughed back into the mission; a cost-recovery fee alone does not convert an NPO into a profit-maximising firm.
 
-In this setting, most businesses aim to make profit to thrive over time. The wording matches the textbook relationship without adding extra conditions.
+Many npos employ staff and manage payroll.
 
-No qualifying word breaks the definition or scenario, so the answer is true.', 'TRUE — Evaluated against the textbook standard, this assertion is correct. Margin above break-even helps commercial firms expand and renew capital.
+One clear counterexample under the right criterion is enough to reject the sentence.
 
-The relevant theory comes from profit-oriented businesses versus not-for-profit organisations. Identify which definition or relationship the sentence is trying to test before deciding true or false.
+The statement is false.
+', 'FALSE — Profit emerges when revenue exceeds total costs and expenses in a period. Cost control matters alongside sales; revenue without expense control does not satisfy the profit objective.
 
-Applied carefully, profit above costs enables reinvestment and growth. Nothing in the sentence stretches the concept beyond its standard use.
+Sector classification depends on activity, not mission label alone.
 
-Every part of the claim aligns with the standard concept, so the statement stands.', 'FALSE — Evaluated against the textbook standard, this assertion is false. New ovens must be funded only by donations, not business profit.
+The mislabelled category or reversed comparison is enough to reject the claim.
 
-The relevant theory comes from profit-oriented businesses versus not-for-profit organisations. Identify which definition or relationship the sentence is trying to test before deciding true or false.
+The statement is false.
+'] WHERE case_id = 'CASE 3.3.37' AND tier = 'full';
+UPDATE public.economics_cases SET tactical_explanations = ARRAY['TRUE — Profit emerges when revenue exceeds total costs and expenses in a period. Cost control matters alongside sales; revenue without expense control does not satisfy the profit objective.
 
-The statement overreaches because commercial firms reinvest profit into equipment. The trap is to agree with the topic while missing the one detail that breaks the logic.
+Most businesses aim to make profit to thrive over time.
 
-Because the decisive detail is wrong, mark the statement false.', 'FALSE — This statement is false. Commercial sustainability requires distributing all earnings immediately.
+Under that classification the assertion describes the situation correctly.
 
-The topic is profit-oriented businesses versus not-for-profit organisations, but the decisive skill here is reading quantifiers. Words such as never, always, only, or all turn a generally true idea into a claim that can be rejected by one routine counterexample.
+The statement is true.
+', 'TRUE — Profit-oriented firms seek a surplus of revenue over total costs, not merely break-even. Covering costs alone is a floor, not the usual long-run commercial goal.
 
-The statement overreaches because reinvestment also supports sustainability. The trap is to agree with the topic while missing the one detail that breaks the logic.
+Profit above costs enables reinvestment and growth.
 
-Watch the absolute wording "all": exam statements often sound plausible until a single scope word turns an otherwise familiar idea into an overclaim.
+The sentence therefore reports the concept accurately for this item.
 
-The statement sounds plausible but fails on precision, so it is false.', 'FALSE — Evaluated against the textbook standard, this assertion is false. Profit reduces sustainability because it always leaves firms underinvested.
+The statement is true.
+', 'FALSE — Not-for-profit organisations pursue a mission rather than owner profit, but they still need funding inflows. Surpluses are typically ploughed back into the mission; a cost-recovery fee alone does not convert an NPO into a profit-maximising firm.
 
-The topic is profit-oriented businesses versus not-for-profit organisations, but the decisive skill here is reading quantifiers. Words such as never, always, only, or all turn a generally true idea into a claim that can be rejected by one routine counterexample.
+Commercial firms reinvest profit into equipment.
 
-The statement overreaches because reinvestment supports long-run capacity. The trap is to agree with the topic while missing the one detail that breaks the logic.
+The absolute wording is what breaks the claim once the correct test is applied.
 
-Watch the absolute wording "always": exam statements often sound plausible until a single scope word turns an otherwise familiar idea into an overclaim.
+The statement is false.
+', 'FALSE — Profit emerges when revenue exceeds total costs and expenses in a period. Cost control matters alongside sales; revenue without expense control does not satisfy the profit objective.
 
-Because the decisive detail is wrong, mark the statement false.'] WHERE case_id = 'CASE 3.3.38' AND tier = 'full';
-UPDATE public.economics_cases SET tactical_explanations = ARRAY['TRUE — On the Fuhrmann definition used in the entrance exam, the sentence is correct. Humanitarian relief depends on donations alongside any earned income.
+Reinvestment also supports sustainability.
 
-This statement draws on profit-oriented businesses versus not-for-profit organisations. Treat it as a checklist against the core concept named in the stem, not as a general opinion about business.
+Once the defining feature is restored, the assertion falls away.
 
-In this setting, donations are essential revenue for many npos. The wording matches the textbook relationship without adding extra conditions.
+The statement is false.
+', 'FALSE — Profit emerges when revenue exceeds total costs and expenses in a period. Cost control matters alongside sales; revenue without expense control does not satisfy the profit objective.
 
-No qualifying word breaks the definition or scenario, so the answer is true.', 'FALSE — On the Fuhrmann definition used in the entrance exam, the sentence is false. Mixed donations and fees cannot sustain an NPO.
+Reinvestment supports long-run capacity.
 
-Although the subject matter is profit-oriented businesses versus not-for-profit organisations, this is really a logic check on overstatement. Non-profit surpluses, mixed economies, and partial market failure are classic cases where absolute wording fails.
+The absolute wording is what breaks the claim once the correct test is applied.
 
-Applied to this claim, npos may combine multiple inflow types. That is why the sentence does not survive careful reading.
+The statement is false.
+'] WHERE case_id = 'CASE 3.3.38' AND tier = 'full';
+UPDATE public.economics_cases SET tactical_explanations = ARRAY['TRUE — Not-for-profit organisations pursue a mission rather than owner profit, but they still need funding inflows. Surpluses are typically ploughed back into the mission; a cost-recovery fee alone does not convert an NPO into a profit-maximising firm.
 
-Watch the absolute wording "cannot": exam statements often sound plausible until a single scope word turns an otherwise familiar idea into an overclaim.
+Donations are essential revenue for many npos.
 
-Because the decisive detail is wrong, mark the statement false.', 'FALSE — On the Fuhrmann definition used in the entrance exam, the sentence is false. Donor income replaces all need for earned revenue at NPOs.
+Under that classification the assertion describes the situation correctly.
 
-Although the subject matter is profit-oriented businesses versus not-for-profit organisations, this is really a logic check on overstatement. Non-profit surpluses, mixed economies, and partial market failure are classic cases where absolute wording fails.
+The statement is true.
+', 'FALSE — Not-for-profit organisations pursue a mission rather than owner profit, but they still need funding inflows. Surpluses are typically ploughed back into the mission; a cost-recovery fee alone does not convert an NPO into a profit-maximising firm.
 
-Applied to this claim, npos may combine donations with fees and other inflows. That is why the sentence does not survive careful reading.
+Npos may combine multiple inflow types.
 
-Watch the absolute wording "all": exam statements often sound plausible until a single scope word turns an otherwise familiar idea into an overclaim.
+One clear counterexample under the right criterion is enough to reject the sentence.
 
-Because the decisive detail is wrong, mark the statement false.', 'FALSE — The claim is false. Donor income eliminates cost coverage discipline.
+The statement is false.
+', 'FALSE — Not-for-profit organisations pursue a mission rather than owner profit, but they still need funding inflows. Surpluses are typically ploughed back into the mission; a cost-recovery fee alone does not convert an NPO into a profit-maximising firm.
 
-This statement draws on profit-oriented businesses versus not-for-profit organisations. Treat it as a checklist against the core concept named in the stem, not as a general opinion about business.
+Npos may combine donations with fees and other inflows.
 
-Applied to this claim, npos must still manage costs responsibly. That is why the sentence does not survive careful reading.
+The mislabelled category or reversed comparison is enough to reject the claim.
 
-Once the overclaim or mislabel is exposed, the only consistent answer is false.', 'FALSE — Evaluated against the textbook standard, this assertion is false. Food banks need not track costs when donations arrive.
+The statement is false.
+', 'FALSE — Profit emerges when revenue exceeds total costs and expenses in a period. Cost control matters alongside sales; revenue without expense control does not satisfy the profit objective.
 
-Here you must apply ideas from profit-oriented businesses versus not-for-profit organisations to a concrete situation rather than recite a definition from memory. Ownership, customer type, stakeholder group, or country of production usually decides the verdict.
+Npos must still manage costs responsibly.
 
-The statement overreaches because npos must ensure operating costs are covered. The trap is to agree with the topic while missing the one detail that breaks the logic.
+Swap in the textbook criterion and the sentence no longer describes the case.
 
-Once the overclaim or mislabel is exposed, the only consistent answer is false.'] WHERE case_id = 'CASE 3.3.39' AND tier = 'full';
-UPDATE public.economics_cases SET tactical_explanations = ARRAY['TRUE — This statement is correct. Beneficiaries gain when surplus funds improved outreach or care.
+The statement is false.
+', 'FALSE — Not-for-profit organisations pursue a mission rather than owner profit, but they still need funding inflows. Surpluses are typically ploughed back into the mission; a cost-recovery fee alone does not convert an NPO into a profit-maximising firm.
 
-Here you must apply ideas from profit-oriented businesses versus not-for-profit organisations to a concrete situation rather than recite a definition from memory. Ownership, customer type, stakeholder group, or country of production usually decides the verdict.
+Npos must ensure operating costs are covered.
 
-Applied carefully, mission reinvestment can broaden or improve services. Nothing in the sentence stretches the concept beyond its standard use.
+Once the defining feature is restored, the assertion falls away.
 
-No qualifying word breaks the definition or scenario, so the answer is true.', 'TRUE — The claim is correct. Ticket surplus at an NGO theatre can fund outreach programmes.
+The statement is false.
+'] WHERE case_id = 'CASE 3.3.39' AND tier = 'full';
+UPDATE public.economics_cases SET tactical_explanations = ARRAY['TRUE — Profit emerges when revenue exceeds total costs and expenses in a period. Cost control matters alongside sales; revenue without expense control does not satisfy the profit objective.
 
-This statement draws on profit-oriented businesses versus not-for-profit organisations. Treat it as a checklist against the core concept named in the stem, not as a general opinion about business.
+Mission reinvestment can broaden or improve services.
 
-In this setting, surplus can fund expanded outreach programmes. The wording matches the textbook relationship without adding extra conditions.
+Under that classification the assertion describes the situation correctly.
 
-The reasoning chain is complete, so mark the statement true.', 'TRUE — This statement is correct. Using surplus to improve beneficiary services aligns with NPO aims.
+The statement is true.
+', 'TRUE — Profit emerges when revenue exceeds total costs and expenses in a period. Cost control matters alongside sales; revenue without expense control does not satisfy the profit objective.
 
-The relevant theory comes from profit-oriented businesses versus not-for-profit organisations. Identify which definition or relationship the sentence is trying to test before deciding true or false.
+Surplus can fund expanded outreach programmes.
 
-Applied carefully, reinvested surplus can enhance services for customers. Nothing in the sentence stretches the concept beyond its standard use.
+Nothing in the keyed reading contradicts the chapter framing used here, so the claim holds.
 
-The reasoning chain is complete, so mark the statement true.', 'TRUE — On the Fuhrmann definition used in the entrance exam, the sentence is correct. Clinic service upgrades from surplus reflect mission reinvestment.
+The statement is true.
+', 'TRUE — Not-for-profit organisations pursue a mission rather than owner profit, but they still need funding inflows. Surpluses are typically ploughed back into the mission; a cost-recovery fee alone does not convert an NPO into a profit-maximising firm.
 
-This statement draws on profit-oriented businesses versus not-for-profit organisations. Treat it as a checklist against the core concept named in the stem, not as a general opinion about business.
+Reinvested surplus can enhance services for customers.
 
-In this setting, surplus can improve mission delivery quality. The wording matches the textbook relationship without adding extra conditions.
+Under that classification the assertion describes the situation correctly.
 
-Every part of the claim aligns with the standard concept, so the statement stands.', 'TRUE — The claim is correct. Service enhancement surplus must be paid to external shareholders.
+The statement is true.
+', 'TRUE — Commercial profit can be retained and reinvested in equipment, capacity, and durability. Distributing every euro immediately is not required for profit orientation.
 
-This statement draws on profit-oriented businesses versus not-for-profit organisations. Treat it as a checklist against the core concept named in the stem, not as a general opinion about business.
+Surplus can improve mission delivery quality.
 
-In this setting, npo surplus reinvests in mission activities. The wording matches the textbook relationship without adding extra conditions.
+Nothing in the keyed reading contradicts the chapter framing used here, so the claim holds.
 
-No qualifying word breaks the definition or scenario, so the answer is true.'] WHERE case_id = 'CASE 3.3.40' AND tier = 'full';
-UPDATE public.economics_cases SET tactical_explanations = ARRAY['TRUE — This statement is correct. Treating patients can continue only when operating costs are covered.
+The statement is true.
+', 'TRUE — Profit emerges when revenue exceeds total costs and expenses in a period. Cost control matters alongside sales; revenue without expense control does not satisfy the profit objective.
 
-Here you must apply ideas from profit-oriented businesses versus not-for-profit organisations to a concrete situation rather than recite a definition from memory. Ownership, customer type, stakeholder group, or country of production usually decides the verdict.
+Npo surplus reinvests in mission activities.
 
-Applied carefully, npo healthcare must cover operating costs. Nothing in the sentence stretches the concept beyond its standard use.
+The sentence therefore reports the concept accurately for this item.
 
-The reasoning chain is complete, so mark the statement true.', 'TRUE — On the Fuhrmann definition used in the entrance exam, the sentence is correct. Community clinics pursuing cost coverage while treating patients reflect NPO priorities.
+The statement is true.
+'] WHERE case_id = 'CASE 3.3.40' AND tier = 'full';
+UPDATE public.economics_cases SET tactical_explanations = ARRAY['TRUE — Profit emerges when revenue exceeds total costs and expenses in a period. Cost control matters alongside sales; revenue without expense control does not satisfy the profit objective.
 
-This statement draws on profit-oriented businesses versus not-for-profit organisations. Treat it as a checklist against the core concept named in the stem, not as a general opinion about business.
+Npo healthcare must cover operating costs.
 
-In this setting, npo healthcare aims to cover costs while serving patients. The wording matches the textbook relationship without adding extra conditions.
+The sentence therefore reports the concept accurately for this item.
 
-Every part of the claim aligns with the standard concept, so the statement stands.', 'TRUE — Evaluated against the textbook standard, this assertion is correct. Community clinics distribute dividends like corporations.
+The statement is true.
+', 'TRUE — Not-for-profit organisations pursue a mission rather than owner profit, but they still need funding inflows. Surpluses are typically ploughed back into the mission; a cost-recovery fee alone does not convert an NPO into a profit-maximising firm.
 
-The relevant theory comes from profit-oriented businesses versus not-for-profit organisations. Identify which definition or relationship the sentence is trying to test before deciding true or false.
+Npo healthcare aims to cover costs while serving patients.
 
-Applied carefully, npo surpluses are not owner dividends. Nothing in the sentence stretches the concept beyond its standard use.
+Under that classification the assertion describes the situation correctly.
 
-No qualifying word breaks the definition or scenario, so the answer is true.', 'TRUE — The claim is correct. Any clinic surplus should improve patient services rather than owner payouts.
+The statement is true.
+', 'TRUE — Profit emerges when revenue exceeds total costs and expenses in a period. Cost control matters alongside sales; revenue without expense control does not satisfy the profit objective.
 
-The section on profit-oriented businesses versus not-for-profit organisations frequently contrasts two similar ideas side by side. A comparison statement is true only if the relationship is stated in the right direction and applies to the right concept pair.
+Npo surpluses are not owner dividends.
 
-In this setting, npo surpluses reinvest in mission delivery. The wording matches the textbook relationship without adding extra conditions.
+The sentence therefore reports the concept accurately for this item.
 
-Every part of the claim aligns with the standard concept, so the statement stands.', 'FALSE — On the Fuhrmann definition used in the entrance exam, the sentence is false. Billing insurers proves maximising owner profit like a corporation.
+The statement is true.
+', 'TRUE — Profit emerges when revenue exceeds total costs and expenses in a period. Cost control matters alongside sales; revenue without expense control does not satisfy the profit objective.
 
-This statement draws on profit-oriented businesses versus not-for-profit organisations. Treat it as a checklist against the core concept named in the stem, not as a general opinion about business.
+Npo surpluses reinvest in mission delivery.
 
-Applied to this claim, covering costs differs from profit-maximisation for owners. That is why the sentence does not survive careful reading.
+Under that classification the assertion describes the situation correctly.
 
-Once the overclaim or mislabel is exposed, the only consistent answer is false.'] WHERE case_id = 'CASE 3.3.41' AND tier = 'full';
-UPDATE public.economics_cases SET tactical_explanations = ARRAY['TRUE — Evaluated against the textbook standard, this assertion is correct. Relief organisations need secured funding before dispatching kits to disaster zones.
+The statement is true.
+', 'FALSE — Profit emerges when revenue exceeds total costs and expenses in a period. Cost control matters alongside sales; revenue without expense control does not satisfy the profit objective.
 
-The relevant theory comes from profit-oriented businesses versus not-for-profit organisations. Identify which definition or relationship the sentence is trying to test before deciding true or false.
+Covering costs differs from profit-maximisation for owners.
 
-Applied carefully, npos need resources to deliver goods and services. Nothing in the sentence stretches the concept beyond its standard use.
+The mislabelled category or reversed comparison is enough to reject the claim.
 
-No qualifying word breaks the definition or scenario, so the answer is true.', 'TRUE — On the Fuhrmann definition used in the entrance exam, the sentence is correct. Prior surplus can complement donations for later relief operations.
+The statement is false.
+'] WHERE case_id = 'CASE 3.3.41' AND tier = 'full';
+UPDATE public.economics_cases SET tactical_explanations = ARRAY['TRUE — Not-for-profit organisations pursue a mission rather than owner profit, but they still need funding inflows. Surpluses are typically ploughed back into the mission; a cost-recovery fee alone does not convert an NPO into a profit-maximising firm.
 
-This statement draws on profit-oriented businesses versus not-for-profit organisations. Treat it as a checklist against the core concept named in the stem, not as a general opinion about business.
+Npos need resources to deliver goods and services.
 
-In this setting, prior surpluses and donations enable ongoing services. The wording matches the textbook relationship without adding extra conditions.
+Under that classification the assertion describes the situation correctly.
 
-The reasoning chain is complete, so mark the statement true.', 'TRUE — Evaluated against the textbook standard, this assertion is correct. Collecting donations before dispatch illustrates prior funding need for relief.
+The statement is true.
+', 'TRUE — Not-for-profit organisations pursue a mission rather than owner profit, but they still need funding inflows. Surpluses are typically ploughed back into the mission; a cost-recovery fee alone does not convert an NPO into a profit-maximising firm.
 
-The relevant theory comes from profit-oriented businesses versus not-for-profit organisations. Identify which definition or relationship the sentence is trying to test before deciding true or false.
+Prior surpluses and donations enable ongoing services.
 
-Applied carefully, relief delivery requires secured inflows. Nothing in the sentence stretches the concept beyond its standard use.
+Nothing in the keyed reading contradicts the chapter framing used here, so the claim holds.
 
-The reasoning chain is complete, so mark the statement true.', 'FALSE — On the Fuhrmann definition used in the entrance exam, the sentence is false. Disaster urgency bypasses all cost coverage requirements.
+The statement is true.
+', 'TRUE — Not-for-profit organisations pursue a mission rather than owner profit, but they still need funding inflows. Surpluses are typically ploughed back into the mission; a cost-recovery fee alone does not convert an NPO into a profit-maximising firm.
 
-Although the subject matter is profit-oriented businesses versus not-for-profit organisations, this is really a logic check on overstatement. Non-profit surpluses, mixed economies, and partial market failure are classic cases where absolute wording fails.
+Relief delivery requires secured inflows.
 
-Applied to this claim, funding remains necessary even in urgent relief. That is why the sentence does not survive careful reading.
+Under that classification the assertion describes the situation correctly.
 
-Watch the absolute wording "all": exam statements often sound plausible until a single scope word turns an otherwise familiar idea into an overclaim.
+The statement is true.
+', 'FALSE — Profit emerges when revenue exceeds total costs and expenses in a period. Cost control matters alongside sales; revenue without expense control does not satisfy the profit objective.
 
-The statement sounds plausible but fails on precision, so it is false.', 'FALSE — Evaluated against the textbook standard, this assertion is false. Volunteers remove all material costs from relief kits.
+Funding remains necessary even in urgent relief.
 
-The topic is profit-oriented businesses versus not-for-profit organisations, but the decisive skill here is reading quantifiers. Words such as never, always, only, or all turn a generally true idea into a claim that can be rejected by one routine counterexample.
+Swap in the textbook criterion and the sentence no longer describes the case.
 
-The statement overreaches because humanitarian delivery requires funded materials and logistics. The trap is to agree with the topic while missing the one detail that breaks the logic.
+The statement is false.
+', 'FALSE — Not-for-profit organisations pursue a mission rather than owner profit, but they still need funding inflows. Surpluses are typically ploughed back into the mission; a cost-recovery fee alone does not convert an NPO into a profit-maximising firm.
 
-Watch the absolute wording "all": exam statements often sound plausible until a single scope word turns an otherwise familiar idea into an overclaim.
+Humanitarian delivery requires funded materials and logistics.
 
-Once the overclaim or mislabel is exposed, the only consistent answer is false.'] WHERE case_id = 'CASE 3.3.42' AND tier = 'full';
-UPDATE public.economics_cases SET tactical_explanations = ARRAY['TRUE — The claim is correct. Margin above expenses funds new equipment in profit-oriented firms.
+Swap in the textbook criterion and the sentence no longer describes the case.
 
-This statement draws on profit-oriented businesses versus not-for-profit organisations. Treat it as a checklist against the core concept named in the stem, not as a general opinion about business.
+The statement is false.
+'] WHERE case_id = 'CASE 3.3.42' AND tier = 'full';
+UPDATE public.economics_cases SET tactical_explanations = ARRAY['TRUE — Profit emerges when revenue exceeds total costs and expenses in a period. Cost control matters alongside sales; revenue without expense control does not satisfy the profit objective.
 
-In this setting, profit funds reinvestment such as new equipment. The wording matches the textbook relationship without adding extra conditions.
+Profit funds reinvestment such as new equipment.
 
-No qualifying word breaks the definition or scenario, so the answer is true.', 'TRUE — Evaluated against the textbook standard, this assertion is correct. Profit requires comparing revenue with total costs.
+Nothing in the keyed reading contradicts the chapter framing used here, so the claim holds.
 
-The relevant theory comes from profit-oriented businesses versus not-for-profit organisations. Identify which definition or relationship the sentence is trying to test before deciding true or false.
+The statement is true.
+', 'TRUE — Profit emerges when revenue exceeds total costs and expenses in a period. Cost control matters alongside sales; revenue without expense control does not satisfy the profit objective.
 
-Applied carefully, profit emerges when revenue exceeds costs. Nothing in the sentence stretches the concept beyond its standard use.
+Profit emerges when revenue exceeds costs.
 
-Every part of the claim aligns with the standard concept, so the statement stands.', 'TRUE — This statement is correct. Break-even matching is sufficient for commercial firms seeking to thrive.
+Nothing in the keyed reading contradicts the chapter framing used here, so the claim holds.
 
-The relevant theory comes from profit-oriented businesses versus not-for-profit organisations. Identify which definition or relationship the sentence is trying to test before deciding true or false.
+The statement is true.
+', 'TRUE — Profit-oriented firms seek a surplus of revenue over total costs, not merely break-even. Covering costs alone is a floor, not the usual long-run commercial goal.
 
-Applied carefully, profit-oriented firms target surplus above costs. Nothing in the sentence stretches the concept beyond its standard use.
+Profit-oriented firms target surplus above costs.
 
-The reasoning chain is complete, so mark the statement true.', 'TRUE — Evaluated against the textbook standard, this assertion is correct. Surplus above costs can support owner reward for risk-bearing.
+Under that classification the assertion describes the situation correctly.
 
-The relevant theory comes from profit-oriented businesses versus not-for-profit organisations. Identify which definition or relationship the sentence is trying to test before deciding true or false.
+The statement is true.
+', 'TRUE — Profit emerges when revenue exceeds total costs and expenses in a period. Cost control matters alongside sales; revenue without expense control does not satisfy the profit objective.
 
-Applied carefully, profit rewards owners for bearing business risk. Nothing in the sentence stretches the concept beyond its standard use.
+Profit rewards owners for bearing business risk.
 
-The reasoning chain is complete, so mark the statement true.', 'TRUE — On the Fuhrmann definition used in the entrance exam, the sentence is correct. Commercial firms target revenue above costs to reward risk and reinvest.
+Under that classification the assertion describes the situation correctly.
 
-This statement draws on profit-oriented businesses versus not-for-profit organisations. Treat it as a checklist against the core concept named in the stem, not as a general opinion about business.
+The statement is true.
+', 'TRUE — Commercial profit can be retained and reinvested in equipment, capacity, and durability. Distributing every euro immediately is not required for profit orientation.
 
-In this setting, profit-oriented firms seek surplus above costs. The wording matches the textbook relationship without adding extra conditions.
+Profit-oriented firms seek surplus above costs.
 
-The reasoning chain is complete, so mark the statement true.'] WHERE case_id = 'CASE 3.3.43' AND tier = 'full';
-UPDATE public.economics_cases SET tactical_explanations = ARRAY['TRUE — The claim is correct. Break-even alone is insufficient for most profit-oriented firms seeking to thrive.
+Nothing in the keyed reading contradicts the chapter framing used here, so the claim holds.
 
-This statement draws on profit-oriented businesses versus not-for-profit organisations. Treat it as a checklist against the core concept named in the stem, not as a general opinion about business.
+The statement is true.
+'] WHERE case_id = 'CASE 3.3.43' AND tier = 'full';
+UPDATE public.economics_cases SET tactical_explanations = ARRAY['TRUE — Profit-oriented firms seek a surplus of revenue over total costs, not merely break-even. Covering costs alone is a floor, not the usual long-run commercial goal.
 
-In this setting, commercial firms target profit above mere cost coverage. The wording matches the textbook relationship without adding extra conditions.
+Commercial firms target profit above mere cost coverage.
 
-No qualifying word breaks the definition or scenario, so the answer is true.', 'FALSE — On the Fuhrmann definition used in the entrance exam, the sentence is false. Longevity requires only break-even in profit-oriented firms.
+The sentence therefore reports the concept accurately for this item.
 
-This statement draws on profit-oriented businesses versus not-for-profit organisations. Treat it as a checklist against the core concept named in the stem, not as a general opinion about business.
+The statement is true.
+', 'FALSE — Profit-oriented firms seek a surplus of revenue over total costs, not merely break-even. Covering costs alone is a floor, not the usual long-run commercial goal.
 
-Applied to this claim, profit supports long-run survival and growth. That is why the sentence does not survive careful reading.
+Profit supports long-run survival and growth.
 
-Because the decisive detail is wrong, mark the statement false.', 'FALSE — The claim is false. Commercial thrive logic rejects any surplus above costs.
+The absolute wording is what breaks the claim once the correct test is applied.
 
-This statement draws on profit-oriented businesses versus not-for-profit organisations. Treat it as a checklist against the core concept named in the stem, not as a general opinion about business.
+The statement is false.
+', 'FALSE — Profit emerges when revenue exceeds total costs and expenses in a period. Cost control matters alongside sales; revenue without expense control does not satisfy the profit objective.
 
-Applied to this claim, profit-oriented firms target revenue above costs. That is why the sentence does not survive careful reading.
+Profit-oriented firms target revenue above costs.
 
-Once the overclaim or mislabel is exposed, the only consistent answer is false.', 'FALSE — On the Fuhrmann definition used in the entrance exam, the sentence is false. Thriving requires NPOs to maximise dividends to investors.
+Swap in the textbook criterion and the sentence no longer describes the case.
 
-This statement draws on profit-oriented businesses versus not-for-profit organisations. Treat it as a checklist against the core concept named in the stem, not as a general opinion about business.
+The statement is false.
+', 'FALSE — Not-for-profit organisations pursue a mission rather than owner profit, but they still need funding inflows. Surpluses are typically ploughed back into the mission; a cost-recovery fee alone does not convert an NPO into a profit-maximising firm.
 
-Applied to this claim, npos aim to cover costs and reinvest surplus for the mission. That is why the sentence does not survive careful reading.
+Npos aim to cover costs and reinvest surplus for the mission.
 
-The statement sounds plausible but fails on precision, so it is false.', 'FALSE — This statement is false. Retailers expand while keeping revenues below operating costs.
+Swap in the textbook criterion and the sentence no longer describes the case.
 
-The relevant theory comes from profit-oriented businesses versus not-for-profit organisations. Identify which definition or relationship the sentence is trying to test before deciding true or false.
+The statement is false.
+', 'FALSE — Profit emerges when revenue exceeds total costs and expenses in a period. Cost control matters alongside sales; revenue without expense control does not satisfy the profit objective.
 
-The statement overreaches because commercial expansion relies on profit. The trap is to agree with the topic while missing the one detail that breaks the logic.
+Commercial expansion relies on profit.
 
-Because the decisive detail is wrong, mark the statement false.'] WHERE case_id = 'CASE 3.3.44' AND tier = 'full';
-UPDATE public.economics_cases SET tactical_explanations = ARRAY['TRUE — This statement is correct. Commercial profit and NPO surplus follow different uses above costs.
+The mislabelled category or reversed comparison is enough to reject the claim.
 
-The relevant theory comes from profit-oriented businesses versus not-for-profit organisations. Identify which definition or relationship the sentence is trying to test before deciding true or false.
+The statement is false.
+'] WHERE case_id = 'CASE 3.3.44' AND tier = 'full';
+UPDATE public.economics_cases SET tactical_explanations = ARRAY['TRUE — Not-for-profit organisations pursue a mission rather than owner profit, but they still need funding inflows. Surpluses are typically ploughed back into the mission; a cost-recovery fee alone does not convert an NPO into a profit-maximising firm.
 
-Applied carefully, npo surpluses reinvest in mission; commercial profit may reward owners. Nothing in the sentence stretches the concept beyond its standard use.
+Npo surpluses reinvest in mission; commercial profit may reward owners.
 
-No qualifying word breaks the definition or scenario, so the answer is true.', 'TRUE — On the Fuhrmann definition used in the entrance exam, the sentence is correct. NPO surplus is reinvested for mission rather than paid as owner dividends.
+Nothing in the keyed reading contradicts the chapter framing used here, so the claim holds.
 
-The section on profit-oriented businesses versus not-for-profit organisations frequently contrasts two similar ideas side by side. A comparison statement is true only if the relationship is stated in the right direction and applies to the right concept pair.
+The statement is true.
+', 'TRUE — Not-for-profit organisations pursue a mission rather than owner profit, but they still need funding inflows. Surpluses are typically ploughed back into the mission; a cost-recovery fee alone does not convert an NPO into a profit-maximising firm.
 
-In this setting, npo surpluses support mission, not owner payouts. The wording matches the textbook relationship without adding extra conditions.
+Npo surpluses support mission, not owner payouts.
 
-No qualifying word breaks the definition or scenario, so the answer is true.', 'FALSE — On the Fuhrmann definition used in the entrance exam, the sentence is false. Ticket income must be profit distributed to owners.
+The sentence therefore reports the concept accurately for this item.
 
-This statement draws on profit-oriented businesses versus not-for-profit organisations. Treat it as a checklist against the core concept named in the stem, not as a general opinion about business.
+The statement is true.
+', 'FALSE — Profit emerges when revenue exceeds total costs and expenses in a period. Cost control matters alongside sales; revenue without expense control does not satisfy the profit objective.
 
-Applied to this claim, ticket revenue may fund mission reinvestment. That is why the sentence does not survive careful reading.
+Ticket revenue may fund mission reinvestment.
 
-Because the decisive detail is wrong, mark the statement false.', 'FALSE — Evaluated against the textbook standard, this assertion is false. Undistributed surplus proves the NPO failed financially.
+Swap in the textbook criterion and the sentence no longer describes the case.
 
-The relevant theory comes from profit-oriented businesses versus not-for-profit organisations. Identify which definition or relationship the sentence is trying to test before deciding true or false.
+The statement is false.
+', 'FALSE — Not-for-profit organisations pursue a mission rather than owner profit, but they still need funding inflows. Surpluses are typically ploughed back into the mission; a cost-recovery fee alone does not convert an NPO into a profit-maximising firm.
 
-The statement overreaches because reinvested surplus broadens mission capacity. The trap is to agree with the topic while missing the one detail that breaks the logic.
+Reinvested surplus broadens mission capacity.
 
-Because the decisive detail is wrong, mark the statement false.', 'FALSE — The claim is false. Mission reinvestment is forbidden when an NPO earns surplus.
+The mislabelled category or reversed comparison is enough to reject the claim.
 
-The scenario is a worked example of profit-oriented businesses versus not-for-profit organisations. Translate the story into the textbook category first; only then judge whether the sentence describes that category accurately.
+The statement is false.
+', 'FALSE — Not-for-profit organisations pursue a mission rather than owner profit, but they still need funding inflows. Surpluses are typically ploughed back into the mission; a cost-recovery fee alone does not convert an NPO into a profit-maximising firm.
 
-Applied to this claim, npo surpluses are typically reinvested into the mission. That is why the sentence does not survive careful reading.
+Npo surpluses are typically reinvested into the mission.
 
-Because the decisive detail is wrong, mark the statement false.'] WHERE case_id = 'CASE 3.3.45' AND tier = 'full';
-UPDATE public.economics_cases SET tactical_explanations = ARRAY['TRUE — The claim is correct. Long-run survival for most firms depends on profitable operations.
+Swap in the textbook criterion and the sentence no longer describes the case.
 
-This statement draws on profit-oriented businesses versus not-for-profit organisations. Treat it as a checklist against the core concept named in the stem, not as a general opinion about business.
+The statement is false.
+'] WHERE case_id = 'CASE 3.3.45' AND tier = 'full';
+UPDATE public.economics_cases SET tactical_explanations = ARRAY['TRUE — Profit emerges when revenue exceeds total costs and expenses in a period. Cost control matters alongside sales; revenue without expense control does not satisfy the profit objective.
 
-In this setting, most businesses aim to make profit to thrive over time. The wording matches the textbook relationship without adding extra conditions.
+Most businesses aim to make profit to thrive over time.
 
-The reasoning chain is complete, so mark the statement true.', 'TRUE — Evaluated against the textbook standard, this assertion is correct. Retained profit supports renewal of tools, premises, or systems over time.
+Under that classification the assertion describes the situation correctly.
 
-The relevant theory comes from profit-oriented businesses versus not-for-profit organisations. Identify which definition or relationship the sentence is trying to test before deciding true or false.
+The statement is true.
+', 'TRUE — Commercial profit can be retained and reinvested in equipment, capacity, and durability. Distributing every euro immediately is not required for profit orientation.
 
-Applied carefully, retained profit funds capital renewal. Nothing in the sentence stretches the concept beyond its standard use.
+Retained profit funds capital renewal.
 
-No qualifying word breaks the definition or scenario, so the answer is true.', 'TRUE — On the Fuhrmann definition used in the entrance exam, the sentence is correct. Profit enables reinvestment that supports commercial durability.
+The sentence therefore reports the concept accurately for this item.
 
-This statement draws on profit-oriented businesses versus not-for-profit organisations. Treat it as a checklist against the core concept named in the stem, not as a general opinion about business.
+The statement is true.
+', 'TRUE — Commercial profit can be retained and reinvested in equipment, capacity, and durability. Distributing every euro immediately is not required for profit orientation.
 
-In this setting, reinvested profit strengthens long-run capacity. The wording matches the textbook relationship without adding extra conditions.
+Reinvested profit strengthens long-run capacity.
 
-No qualifying word breaks the definition or scenario, so the answer is true.', 'TRUE — The claim is correct. Commercial firms thrive long term by merely matching costs with no margin.
+Nothing in the keyed reading contradicts the chapter framing used here, so the claim holds.
 
-This statement draws on profit-oriented businesses versus not-for-profit organisations. Treat it as a checklist against the core concept named in the stem, not as a general opinion about business.
+The statement is true.
+', 'TRUE — Profit emerges when revenue exceeds total costs and expenses in a period. Cost control matters alongside sales; revenue without expense control does not satisfy the profit objective.
 
-In this setting, profit-oriented firms target revenue above costs. The wording matches the textbook relationship without adding extra conditions.
+Profit-oriented firms target revenue above costs.
 
-The reasoning chain is complete, so mark the statement true.', 'TRUE — On the Fuhrmann definition used in the entrance exam, the sentence is correct. Bakeries funding new ovens from surplus illustrate commercial durability logic.
+Nothing in the keyed reading contradicts the chapter framing used here, so the claim holds.
 
-This statement draws on profit-oriented businesses versus not-for-profit organisations. Treat it as a checklist against the core concept named in the stem, not as a general opinion about business.
+The statement is true.
+', 'TRUE — Commercial profit can be retained and reinvested in equipment, capacity, and durability. Distributing every euro immediately is not required for profit orientation.
 
-In this setting, profit funds capital renewal in commercial firms. The wording matches the textbook relationship without adding extra conditions.
+Profit funds capital renewal in commercial firms.
 
-Every part of the claim aligns with the standard concept, so the statement stands.'] WHERE case_id = 'CASE 3.3.46' AND tier = 'full';
-UPDATE public.economics_cases SET tactical_explanations = ARRAY['TRUE — Evaluated against the textbook standard, this assertion is correct. Prior fundraising surplus can fund later NGO projects.
+The sentence therefore reports the concept accurately for this item.
 
-The relevant theory comes from profit-oriented businesses versus not-for-profit organisations. Identify which definition or relationship the sentence is trying to test before deciding true or false.
+The statement is true.
+'] WHERE case_id = 'CASE 3.3.46' AND tier = 'full';
+UPDATE public.economics_cases SET tactical_explanations = ARRAY['TRUE — Profit emerges when revenue exceeds total costs and expenses in a period. Cost control matters alongside sales; revenue without expense control does not satisfy the profit objective.
 
-Applied carefully, prior surpluses and donations can fund later projects. Nothing in the sentence stretches the concept beyond its standard use.
+Prior surpluses and donations can fund later projects.
 
-No qualifying word breaks the definition or scenario, so the answer is true.', 'FALSE — The claim is false. Mixed inflows must be paid out as owner dividends.
+The sentence therefore reports the concept accurately for this item.
 
-This statement draws on profit-oriented businesses versus not-for-profit organisations. Treat it as a checklist against the core concept named in the stem, not as a general opinion about business.
+The statement is true.
+', 'FALSE — Profit emerges when revenue exceeds total costs and expenses in a period. Cost control matters alongside sales; revenue without expense control does not satisfy the profit objective.
 
-Applied to this claim, npos combine inflows to cover mission costs. That is why the sentence does not survive careful reading.
+Npos combine inflows to cover mission costs.
 
-Once the overclaim or mislabel is exposed, the only consistent answer is false.', 'FALSE — The claim is false. Project funding ignores operating costs because missions are voluntary.
+Swap in the textbook criterion and the sentence no longer describes the case.
 
-The scenario is a worked example of profit-oriented businesses versus not-for-profit organisations. Translate the story into the textbook category first; only then judge whether the sentence describes that category accurately.
+The statement is false.
+', 'FALSE — Profit emerges when revenue exceeds total costs and expenses in a period. Cost control matters alongside sales; revenue without expense control does not satisfy the profit objective.
 
-Applied to this claim, projects require financed staff and materials. That is why the sentence does not survive careful reading.
+Projects require financed staff and materials.
 
-Because the decisive detail is wrong, mark the statement false.', 'FALSE — The claim is false. Grant awards are ceremonial and require no cost coverage.
+The mislabelled category or reversed comparison is enough to reject the claim.
 
-This statement draws on profit-oriented businesses versus not-for-profit organisations. Treat it as a checklist against the core concept named in the stem, not as a general opinion about business.
+The statement is false.
+', 'FALSE — Profit emerges when revenue exceeds total costs and expenses in a period. Cost control matters alongside sales; revenue without expense control does not satisfy the profit objective.
 
-Applied to this claim, grants must cover real project and staff costs. That is why the sentence does not survive careful reading.
+Grants must cover real project and staff costs.
 
-The statement sounds plausible but fails on precision, so it is false.', 'FALSE — This statement is false. Volunteer recruitment removes all revenue requirements.
+Swap in the textbook criterion and the sentence no longer describes the case.
 
-The topic is profit-oriented businesses versus not-for-profit organisations, but the decisive skill here is reading quantifiers. Words such as never, always, only, or all turn a generally true idea into a claim that can be rejected by one routine counterexample.
+The statement is false.
+', 'FALSE — Profit emerges when revenue exceeds total costs and expenses in a period. Cost control matters alongside sales; revenue without expense control does not satisfy the profit objective.
 
-The statement overreaches because operations still require funded inflows. The trap is to agree with the topic while missing the one detail that breaks the logic.
+Operations still require funded inflows.
 
-Watch the absolute wording "all": exam statements often sound plausible until a single scope word turns an otherwise familiar idea into an overclaim.
+Swap in the textbook criterion and the sentence no longer describes the case.
 
-Once the overclaim or mislabel is exposed, the only consistent answer is false.'] WHERE case_id = 'CASE 3.3.47' AND tier = 'full';
-UPDATE public.economics_cases SET tactical_explanations = ARRAY['TRUE — Evaluated against the textbook standard, this assertion is correct. Owners may reinvest rather than withdraw all profit in a growing repair shop.
+The statement is false.
+'] WHERE case_id = 'CASE 3.3.47' AND tier = 'full';
+UPDATE public.economics_cases SET tactical_explanations = ARRAY['TRUE — Commercial profit can be retained and reinvested in equipment, capacity, and durability. Distributing every euro immediately is not required for profit orientation.
 
-The topic is profit-oriented businesses versus not-for-profit organisations, but the decisive skill here is reading quantifiers. Words such as never, always, only, or all turn a generally true idea into a claim that can be rejected by one routine counterexample.
+Profits can be reinvested in the business.
 
-Applied carefully, profits can be reinvested in the business. Nothing in the sentence stretches the concept beyond its standard use.
+The sentence therefore reports the concept accurately for this item.
 
-Every part of the claim aligns with the standard concept, so the statement stands.', 'TRUE — Evaluated against the textbook standard, this assertion is correct. Capital renewal in commercial firms commonly draws on retained profit.
+The statement is true.
+', 'TRUE — Commercial profit can be retained and reinvested in equipment, capacity, and durability. Distributing every euro immediately is not required for profit orientation.
 
-The relevant theory comes from profit-oriented businesses versus not-for-profit organisations. Identify which definition or relationship the sentence is trying to test before deciding true or false.
+Commercial firms reinvest profit into equipment.
 
-Applied carefully, commercial firms reinvest profit into equipment. Nothing in the sentence stretches the concept beyond its standard use.
+Under that classification the assertion describes the situation correctly.
 
-Every part of the claim aligns with the standard concept, so the statement stands.', 'TRUE — The claim is correct. Renewal spending and profit orientation are linked in commercial firms.
+The statement is true.
+', 'TRUE — Profit emerges when revenue exceeds total costs and expenses in a period. Cost control matters alongside sales; revenue without expense control does not satisfy the profit objective.
 
-This statement draws on profit-oriented businesses versus not-for-profit organisations. Treat it as a checklist against the core concept named in the stem, not as a general opinion about business.
+Profit commonly funds reinvestment in commercial firms.
 
-In this setting, profit commonly funds reinvestment in commercial firms. The wording matches the textbook relationship without adding extra conditions.
+The sentence therefore reports the concept accurately for this item.
 
-No qualifying word breaks the definition or scenario, so the answer is true.', 'TRUE — The claim is correct. Reinvesting profit into tools improves future production or service capacity.
+The statement is true.
+', 'TRUE — Commercial profit can be retained and reinvested in equipment, capacity, and durability. Distributing every euro immediately is not required for profit orientation.
 
-This statement draws on profit-oriented businesses versus not-for-profit organisations. Treat it as a checklist against the core concept named in the stem, not as a general opinion about business.
+Reinvested profit strengthens capacity.
 
-In this setting, reinvested profit strengthens capacity. The wording matches the textbook relationship without adding extra conditions.
+Under that classification the assertion describes the situation correctly.
 
-Every part of the claim aligns with the standard concept, so the statement stands.', 'FALSE — On the Fuhrmann definition used in the entrance exam, the sentence is false. Commercial profit must be distributed immediately and cannot fund new equipment.
+The statement is true.
+', 'FALSE — Profit emerges when revenue exceeds total costs and expenses in a period. Cost control matters alongside sales; revenue without expense control does not satisfy the profit objective.
 
-Although the subject matter is profit-oriented businesses versus not-for-profit organisations, this is really a logic check on overstatement. Non-profit surpluses, mixed economies, and partial market failure are classic cases where absolute wording fails.
+Profits can be reinvested in the business.
 
-Applied to this claim, profits can be reinvested in the business. That is why the sentence does not survive careful reading.
+Those restricting words stretch a limited idea past what the definition allows.
 
-Watch the absolute wording "cannot": exam statements often sound plausible until a single scope word turns an otherwise familiar idea into an overclaim.
+The statement is false.
+'] WHERE case_id = 'CASE 3.3.48' AND tier = 'full';
+UPDATE public.economics_cases SET tactical_explanations = ARRAY['TRUE — Not-for-profit organisations pursue a mission rather than owner profit, but they still need funding inflows. Surpluses are typically ploughed back into the mission; a cost-recovery fee alone does not convert an NPO into a profit-maximising firm.
 
-The statement sounds plausible but fails on precision, so it is false.'] WHERE case_id = 'CASE 3.3.48' AND tier = 'full';
-UPDATE public.economics_cases SET tactical_explanations = ARRAY['TRUE — This statement is correct. Disaster relief requires funding for materials, transport, and staff or volunteers'' support costs.
+Logistics and materials must be funded.
 
-The relevant theory comes from profit-oriented businesses versus not-for-profit organisations. Identify which definition or relationship the sentence is trying to test before deciding true or false.
+Nothing in the keyed reading contradicts the chapter framing used here, so the claim holds.
 
-Applied carefully, logistics and materials must be funded. Nothing in the sentence stretches the concept beyond its standard use.
+The statement is true.
+', 'TRUE — Profit emerges when revenue exceeds total costs and expenses in a period. Cost control matters alongside sales; revenue without expense control does not satisfy the profit objective.
 
-Every part of the claim aligns with the standard concept, so the statement stands.', 'TRUE — Evaluated against the textbook standard, this assertion is correct. Surplus from earlier fundraising can finance later shipments.
+Prior surplus can support later mission delivery.
 
-The relevant theory comes from profit-oriented businesses versus not-for-profit organisations. Identify which definition or relationship the sentence is trying to test before deciding true or false.
+Nothing in the keyed reading contradicts the chapter framing used here, so the claim holds.
 
-Applied carefully, prior surplus can support later mission delivery. Nothing in the sentence stretches the concept beyond its standard use.
+The statement is true.
+', 'FALSE — Not-for-profit organisations pursue a mission rather than owner profit, but they still need funding inflows. Surpluses are typically ploughed back into the mission; a cost-recovery fee alone does not convert an NPO into a profit-maximising firm.
 
-Every part of the claim aligns with the standard concept, so the statement stands.', 'FALSE — This statement is false. Not-for-profit status removes the need for any inflow planning.
+Npos still plan and manage funding.
 
-The relevant theory comes from profit-oriented businesses versus not-for-profit organisations. Identify which definition or relationship the sentence is trying to test before deciding true or false.
+Swap in the textbook criterion and the sentence no longer describes the case.
 
-The statement overreaches because npos still plan and manage funding. The trap is to agree with the topic while missing the one detail that breaks the logic.
+The statement is false.
+', 'FALSE — Not-for-profit organisations pursue a mission rather than owner profit, but they still need funding inflows. Surpluses are typically ploughed back into the mission; a cost-recovery fee alone does not convert an NPO into a profit-maximising firm.
 
-The statement sounds plausible but fails on precision, so it is false.', 'FALSE — On the Fuhrmann definition used in the entrance exam, the sentence is false. Relief can be delivered indefinitely without donations or other inflows.
+Continuous delivery needs ongoing inflows.
 
-This statement draws on profit-oriented businesses versus not-for-profit organisations. Treat it as a checklist against the core concept named in the stem, not as a general opinion about business.
+Once the defining feature is restored, the assertion falls away.
 
-Applied to this claim, continuous delivery needs ongoing inflows. That is why the sentence does not survive careful reading.
+The statement is false.
+', 'FALSE — Not-for-profit organisations pursue a mission rather than owner profit, but they still need funding inflows. Surpluses are typically ploughed back into the mission; a cost-recovery fee alone does not convert an NPO into a profit-maximising firm.
 
-Because the decisive detail is wrong, mark the statement false.', 'FALSE — This statement is false. Any surplus in relief work must become private owner profit.
+Mission surplus is not private owner profit.
 
-The relevant theory comes from profit-oriented businesses versus not-for-profit organisations. Identify which definition or relationship the sentence is trying to test before deciding true or false.
+The mislabelled category or reversed comparison is enough to reject the claim.
 
-The statement overreaches because mission surplus is not private owner profit. The trap is to agree with the topic while missing the one detail that breaks the logic.
+The statement is false.
+'] WHERE case_id = 'CASE 3.3.49' AND tier = 'full';
+UPDATE public.economics_cases SET tactical_explanations = ARRAY['TRUE — Not-for-profit organisations pursue a mission rather than owner profit, but they still need funding inflows. Surpluses are typically ploughed back into the mission; a cost-recovery fee alone does not convert an NPO into a profit-maximising firm.
 
-The statement sounds plausible but fails on precision, so it is false.'] WHERE case_id = 'CASE 3.3.49' AND tier = 'full';
-UPDATE public.economics_cases SET tactical_explanations = ARRAY['TRUE — The claim is correct. NPOs pursue a mission rather than maximising private owner profit.
+Mission aim distinguishes npos from profit-oriented firms.
 
-The section on profit-oriented businesses versus not-for-profit organisations frequently contrasts two similar ideas side by side. A comparison statement is true only if the relationship is stated in the right direction and applies to the right concept pair.
+The sentence therefore reports the concept accurately for this item.
 
-In this setting, mission aim distinguishes npos from profit-oriented firms. The wording matches the textbook relationship without adding extra conditions.
+The statement is true.
+', 'TRUE — Not-for-profit organisations pursue a mission rather than owner profit, but they still need funding inflows. Surpluses are typically ploughed back into the mission; a cost-recovery fee alone does not convert an NPO into a profit-maximising firm.
 
-The reasoning chain is complete, so mark the statement true.', 'TRUE — This statement is correct. Surpluses in NPOs typically return to mission delivery.
+Mission reinvestment of surplus is standard npo behaviour.
 
-The relevant theory comes from profit-oriented businesses versus not-for-profit organisations. Identify which definition or relationship the sentence is trying to test before deciding true or false.
+Nothing in the keyed reading contradicts the chapter framing used here, so the claim holds.
 
-Applied carefully, mission reinvestment of surplus is standard npo behaviour. Nothing in the sentence stretches the concept beyond its standard use.
+The statement is true.
+', 'TRUE — Not-for-profit organisations pursue a mission rather than owner profit, but they still need funding inflows. Surpluses are typically ploughed back into the mission; a cost-recovery fee alone does not convert an NPO into a profit-maximising firm.
 
-Every part of the claim aligns with the standard concept, so the statement stands.', 'TRUE — The claim is correct. Humanitarian, conservation, and environmental campaign groups can illustrate NPO forms.
+Different mission types can share npo characteristics.
 
-This statement draws on profit-oriented businesses versus not-for-profit organisations. Treat it as a checklist against the core concept named in the stem, not as a general opinion about business.
+Under that classification the assertion describes the situation correctly.
 
-In this setting, different mission types can share npo characteristics. The wording matches the textbook relationship without adding extra conditions.
+The statement is true.
+', 'FALSE — Not-for-profit organisations pursue a mission rather than owner profit, but they still need funding inflows. Surpluses are typically ploughed back into the mission; a cost-recovery fee alone does not convert an NPO into a profit-maximising firm.
 
-No qualifying word breaks the definition or scenario, so the answer is true.', 'FALSE — Evaluated against the textbook standard, this assertion is false. Selling goods always converts an NPO into a profit-maximising corporation.
+Trading for mission funding does not redefine the organisation as profit-maximising.
 
-The topic is profit-oriented businesses versus not-for-profit organisations, but the decisive skill here is reading quantifiers. Words such as never, always, only, or all turn a generally true idea into a claim that can be rejected by one routine counterexample.
+One clear counterexample under the right criterion is enough to reject the sentence.
 
-The statement overreaches because trading for mission funding does not redefine the organisation as profit-maximising. The trap is to agree with the topic while missing the one detail that breaks the logic.
+The statement is false.
+', 'FALSE — Not-for-profit organisations pursue a mission rather than owner profit, but they still need funding inflows. Surpluses are typically ploughed back into the mission; a cost-recovery fee alone does not convert an NPO into a profit-maximising firm.
 
-Watch the absolute wording "always": exam statements often sound plausible until a single scope word turns an otherwise familiar idea into an overclaim.
+Operations require donations, fees, grants, or trading income.
 
-Once the overclaim or mislabel is exposed, the only consistent answer is false.', 'FALSE — This statement is false. NPOs can operate indefinitely with no inflows of any kind.
+Once the defining feature is restored, the assertion falls away.
 
-The relevant theory comes from profit-oriented businesses versus not-for-profit organisations. Identify which definition or relationship the sentence is trying to test before deciding true or false.
-
-The statement overreaches because operations require donations, fees, grants, or trading income. The trap is to agree with the topic while missing the one detail that breaks the logic.
-
-The statement sounds plausible but fails on precision, so it is false.'] WHERE case_id = 'CASE 3.3.50' AND tier = 'full';
+The statement is false.
+'] WHERE case_id = 'CASE 3.3.50' AND tier = 'full';

@@ -1,796 +1,943 @@
 -- Update expanded explanations for 3.5-part2 (25 cases).
 -- Safe to re-run: only updates tactical_explanations.
 
-UPDATE public.economics_cases SET tactical_explanations = ARRAY['TRUE — This statement is correct. Manufacturing in Austria and selling in Germany satisfies the multinational make-or-sell criterion.
+UPDATE public.economics_cases SET tactical_explanations = ARRAY['TRUE — International or multinational firms make and/or sell in more than one country. That brings longer supply chains and multiple cultures, languages, currencies, and legal systems.
 
-The relevant theory comes from local, national, and international business scope. Identify which definition or relationship the sentence is trying to test before deciding true or false.
+Production in one country and sales in another indicate international scope.
 
-Applied carefully, production in one country and sales in another indicate international scope. Nothing in the sentence stretches the concept beyond its standard use.
+The sentence therefore reports the concept accurately for this item.
 
-The reasoning chain is complete, so mark the statement true.', 'TRUE — On the Fuhrmann definition used in the entrance exam, the sentence is correct. Limited capital makes it harder for small-area firms to scale marketing or stock levels.
+The statement is true.
+', 'TRUE — Geographic scope classifies firms by the area in which they operate and serve customers — local/regional, national, or international.
 
-This statement draws on local, national, and international business scope. Treat it as a checklist against the core concept named in the stem, not as a general opinion about business.
+Undercapitalisation constrains growth for geographically focused businesses.
 
-In this setting, undercapitalisation constrains growth for geographically focused businesses. The wording matches the textbook relationship without adding extra conditions.
+The sentence therefore reports the concept accurately for this item.
 
-No qualifying word breaks the definition or scenario, so the answer is true.', 'TRUE — On the Fuhrmann definition used in the entrance exam, the sentence is correct. Globalisation is associated with multinational firms rather than purely local street traders.
+The statement is true.
+', 'TRUE — Local and regional firms operate in a limited geographic area with customers nearby. Scope is about territory and customer reach, not staff count alone. International or multinational firms make and/or sell in more than one country. That brings longer supply chains and multiple cultures, languages, currencies, and legal systems.
 
-The section on local, national, and international business scope frequently contrasts two similar ideas side by side. A comparison statement is true only if the relationship is stated in the right direction and applies to the right concept pair.
+Globalisation centres on rising cross-border enterprise activity.
 
-In this setting, globalisation centres on rising cross-border enterprise activity. The wording matches the textbook relationship without adding extra conditions.
+Under that classification the assertion describes the situation correctly.
 
-The reasoning chain is complete, so mark the statement true.', 'FALSE — The claim is false. Local scope is established when the owner walks to work regardless of customer location.
+The statement is true.
+', 'FALSE — Local and regional firms operate in a limited geographic area with customers nearby. Scope is about territory and customer reach, not staff count alone.
 
-The scenario is a worked example of local, national, and international business scope. Translate the story into the textbook category first; only then judge whether the sentence describes that category accurately.
+Scope follows customer and operating geography, not owner commuting.
 
-Applied to this claim, scope follows customer and operating geography, not owner commuting. That is why the sentence does not survive careful reading.
+One clear counterexample under the right criterion is enough to reject the sentence.
 
-Once the overclaim or mislabel is exposed, the only consistent answer is false.', 'TRUE — This statement is correct. National scope excludes routine foreign production even when imports supply raw materials.
+The statement is false.
+', 'TRUE — National scope means operating within the home country rather than across foreign markets. It is wider than a single district but not continental or worldwide by definition.
 
-Here you must apply ideas from local, national, and international business scope to a concrete situation rather than recite a definition from memory. Ownership, customer type, stakeholder group, or country of production usually decides the verdict.
+Using imported inputs domestically does not by itself make a firm multinational.
 
-Applied carefully, using imported inputs domestically does not by itself make a firm multinational. Nothing in the sentence stretches the concept beyond its standard use.
+The sentence therefore reports the concept accurately for this item.
 
-No qualifying word breaks the definition or scenario, so the answer is true.'] WHERE case_id = 'CASE 3.5.26' AND tier = 'full';
-UPDATE public.economics_cases SET tactical_explanations = ARRAY['TRUE — On the Fuhrmann definition used in the entrance exam, the sentence is correct. A district repair shop with walk-in local trade operates at local geographic scope.
+The statement is true.
+'] WHERE case_id = 'CASE 3.5.26' AND tier = 'full';
+UPDATE public.economics_cases SET tactical_explanations = ARRAY['TRUE — Local and regional firms operate in a limited geographic area with customers nearby. Scope is about territory and customer reach, not staff count alone.
 
-This statement draws on local, national, and international business scope. Treat it as a checklist against the core concept named in the stem, not as a general opinion about business.
+Nearby walk-in customers within a small area fit local classification.
 
-In this setting, nearby walk-in customers within a small area fit local classification. The wording matches the textbook relationship without adding extra conditions.
+Under that classification the assertion describes the situation correctly.
 
-Every part of the claim aligns with the standard concept, so the statement stands.', 'TRUE — This statement is correct. International firms must manage communication across language differences with customers and staff.
+The statement is true.
+', 'TRUE — International or multinational firms make and/or sell in more than one country. That brings longer supply chains and multiple cultures, languages, currencies, and legal systems.
 
-The relevant theory comes from local, national, and international business scope. Identify which definition or relationship the sentence is trying to test before deciding true or false.
+Language barriers are part of international business complexity.
 
-Applied carefully, language barriers are part of international business complexity. Nothing in the sentence stretches the concept beyond its standard use.
+The sentence therefore reports the concept accurately for this item.
 
-The reasoning chain is complete, so mark the statement true.', 'TRUE — This statement is correct. Selling mobile contracts nationwide within Austria alone fits national scope.
+The statement is true.
+', 'TRUE — National scope means operating within the home country rather than across foreign markets. It is wider than a single district but not continental or worldwide by definition.
 
-The relevant theory comes from local, national, and international business scope. Identify which definition or relationship the sentence is trying to test before deciding true or false.
+Country-wide domestic sales without foreign markets align with national classification.
 
-Applied carefully, country-wide domestic sales without foreign markets align with national classification. Nothing in the sentence stretches the concept beyond its standard use.
+The sentence therefore reports the concept accurately for this item.
 
-Every part of the claim aligns with the standard concept, so the statement stands.', 'TRUE — Evaluated against the textbook standard, this assertion is correct. Joint production abroad signals international activity even if finished goods return home.
+The statement is true.
+', 'TRUE — International or multinational firms make and/or sell in more than one country. That brings longer supply chains and multiple cultures, languages, currencies, and legal systems.
 
-Here you must apply ideas from local, national, and international business scope to a concrete situation rather than recite a definition from memory. Ownership, customer type, stakeholder group, or country of production usually decides the verdict.
+Foreign production partnerships exceed purely national scope.
 
-Applied carefully, foreign production partnerships exceed purely national scope. Nothing in the sentence stretches the concept beyond its standard use.
+Nothing in the keyed reading contradicts the chapter framing used here, so the claim holds.
 
-Every part of the claim aligns with the standard concept, so the statement stands.', 'TRUE — This statement is correct. Regional seasonal hotels depend on visitors drawn from a limited geographic catchment.
+The statement is true.
+', 'TRUE — Local and regional firms operate in a limited geographic area with customers nearby. Scope is about territory and customer reach, not staff count alone.
 
-The relevant theory comes from local, national, and international business scope. Identify which definition or relationship the sentence is trying to test before deciding true or false.
+Seasonal regional tourism reflects bounded customer geography.
 
-Applied carefully, seasonal regional tourism reflects bounded customer geography. Nothing in the sentence stretches the concept beyond its standard use.
+Under that classification the assertion describes the situation correctly.
 
-No qualifying word breaks the definition or scenario, so the answer is true.'] WHERE case_id = 'CASE 3.5.27' AND tier = 'full';
-UPDATE public.economics_cases SET tactical_explanations = ARRAY['TRUE — The claim is correct. Local grocers rely on residents and workers living close to the store for most sales.
+The statement is true.
+'] WHERE case_id = 'CASE 3.5.27' AND tier = 'full';
+UPDATE public.economics_cases SET tactical_explanations = ARRAY['TRUE — Local and regional firms operate in a limited geographic area with customers nearby. Scope is about territory and customer reach, not staff count alone.
 
-This statement draws on local, national, and international business scope. Treat it as a checklist against the core concept named in the stem, not as a general opinion about business.
+Dependence on nearby communities indicates local/regional scope.
 
-In this setting, dependence on nearby communities indicates local/regional scope. The wording matches the textbook relationship without adding extra conditions.
+The sentence therefore reports the concept accurately for this item.
 
-Every part of the claim aligns with the standard concept, so the statement stands.', 'TRUE — This statement is correct. National airlines flying domestic routes reflect national operating scope.
+The statement is true.
+', 'TRUE — National scope means operating within the home country rather than across foreign markets. It is wider than a single district but not continental or worldwide by definition.
 
-The relevant theory comes from local, national, and international business scope. Identify which definition or relationship the sentence is trying to test before deciding true or false.
+Country-wide domestic networks align with national classification.
 
-Applied carefully, country-wide domestic networks align with national classification. Nothing in the sentence stretches the concept beyond its standard use.
+Nothing in the keyed reading contradicts the chapter framing used here, so the claim holds.
 
-No qualifying word breaks the definition or scenario, so the answer is true.', 'TRUE — Evaluated against the textbook standard, this assertion is correct. Compliance with several countries'' regulations raises costs for international operators.
+The statement is true.
+', 'TRUE — International or multinational firms make and/or sell in more than one country. That brings longer supply chains and multiple cultures, languages, currencies, and legal systems.
 
-The relevant theory comes from local, national, and international business scope. Identify which definition or relationship the sentence is trying to test before deciding true or false.
+Multiple jurisdictions increase international compliance burdens.
 
-Applied carefully, multiple jurisdictions increase international compliance burdens. Nothing in the sentence stretches the concept beyond its standard use.
+Under that classification the assertion describes the situation correctly.
 
-No qualifying word breaks the definition or scenario, so the answer is true.', 'TRUE — Evaluated against the textbook standard, this assertion is correct. Undercapitalisation is highlighted for local/regional firms but can also constrain ambitious national start-ups.
+The statement is true.
+', 'TRUE — Local and regional firms operate in a limited geographic area with customers nearby. Scope is about territory and customer reach, not staff count alone. National scope means operating within the home country rather than across foreign markets. It is wider than a single district but not continental or worldwide by definition.
 
-The relevant theory comes from local, national, and international business scope. Identify which definition or relationship the sentence is trying to test before deciding true or false.
+Capital shortage is emphasised for small-area firms yet not limited to them alone.
 
-Applied carefully, capital shortage is emphasised for small-area firms yet not limited to them alone. Nothing in the sentence stretches the concept beyond its standard use.
+Under that classification the assertion describes the situation correctly.
 
-No qualifying word breaks the definition or scenario, so the answer is true.', 'TRUE — On the Fuhrmann definition used in the entrance exam, the sentence is correct. Multinational status follows cross-border make-or-sell activity rather than logo design.
+The statement is true.
+', 'TRUE — International or multinational firms make and/or sell in more than one country. That brings longer supply chains and multiple cultures, languages, currencies, and legal systems.
 
-The section on local, national, and international business scope frequently contrasts two similar ideas side by side. A comparison statement is true only if the relationship is stated in the right direction and applies to the right concept pair.
+Scope classification depends on geographic activity, not branding alone.
 
-In this setting, scope classification depends on geographic activity, not branding alone. The wording matches the textbook relationship without adding extra conditions.
+Under that classification the assertion describes the situation correctly.
 
-Every part of the claim aligns with the standard concept, so the statement stands.'] WHERE case_id = 'CASE 3.5.28' AND tier = 'full';
-UPDATE public.economics_cases SET tactical_explanations = ARRAY['TRUE — The claim is correct. Regional development support often targets firms serving limited local or regional markets.
+The statement is true.
+'] WHERE case_id = 'CASE 3.5.28' AND tier = 'full';
+UPDATE public.economics_cases SET tactical_explanations = ARRAY['TRUE — Local and regional firms operate in a limited geographic area with customers nearby. Scope is about territory and customer reach, not staff count alone.
 
-This statement draws on local, national, and international business scope. Treat it as a checklist against the core concept named in the stem, not as a general opinion about business.
+Policy programmes frequently aim at geographically bounded operators.
 
-In this setting, policy programmes frequently aim at geographically bounded operators. The wording matches the textbook relationship without adding extra conditions.
+Under that classification the assertion describes the situation correctly.
 
-The reasoning chain is complete, so mark the statement true.', 'TRUE — The claim is correct. A national manufacturer sourcing nationwide has a longer chain than a town-based workshop.
+The statement is true.
+', 'TRUE — National scope means operating within the home country rather than across foreign markets. It is wider than a single district but not continental or worldwide by definition.
 
-This statement draws on local, national, and international business scope. Treat it as a checklist against the core concept named in the stem, not as a general opinion about business.
+National scale lengthens supply chains relative to very local producers.
 
-In this setting, national scale lengthens supply chains relative to very local producers. The wording matches the textbook relationship without adding extra conditions.
+Under that classification the assertion describes the situation correctly.
 
-The reasoning chain is complete, so mark the statement true.', 'TRUE — Evaluated against the textbook standard, this assertion is correct. Cultural differences influence management and customer relations in multinational subsidiaries.
+The statement is true.
+', 'TRUE — International or multinational firms make and/or sell in more than one country. That brings longer supply chains and multiple cultures, languages, currencies, and legal systems.
 
-The relevant theory comes from local, national, and international business scope. Identify which definition or relationship the sentence is trying to test before deciding true or false.
+Culture is among the international factors named.
 
-Applied carefully, culture is among the international factors named. Nothing in the sentence stretches the concept beyond its standard use.
+Nothing in the keyed reading contradicts the chapter framing used here, so the claim holds.
 
-The reasoning chain is complete, so mark the statement true.', 'FALSE — On the Fuhrmann definition used in the entrance exam, the sentence is false. International firms share one worldwide currency once they join the WTO.
+The statement is true.
+', 'FALSE — International or multinational firms make and/or sell in more than one country. That brings longer supply chains and multiple cultures, languages, currencies, and legal systems.
 
-This statement draws on local, national, and international business scope. Treat it as a checklist against the core concept named in the stem, not as a general opinion about business.
+Multiple currencies remain in cross-border business.
 
-Applied to this claim, multiple currencies remain in cross-border business. That is why the sentence does not survive careful reading.
+The mislabelled category or reversed comparison is enough to reject the claim.
 
-The statement sounds plausible but fails on precision, so it is false.', 'TRUE — The claim is correct. Export sales to neighbouring countries cross national boundaries and affect scope labels.
+The statement is false.
+', 'TRUE — National scope means operating within the home country rather than across foreign markets. It is wider than a single district but not continental or worldwide by definition.
 
-This statement draws on local, national, and international business scope. Treat it as a checklist against the core concept named in the stem, not as a general opinion about business.
+Foreign sales contribute to international rather than purely domestic scope.
 
-In this setting, foreign sales contribute to international rather than purely domestic scope. The wording matches the textbook relationship without adding extra conditions.
+Nothing in the keyed reading contradicts the chapter framing used here, so the claim holds.
 
-Every part of the claim aligns with the standard concept, so the statement stands.'] WHERE case_id = 'CASE 3.5.29' AND tier = 'full';
-UPDATE public.economics_cases SET tactical_explanations = ARRAY['TRUE — The claim is correct. A firm visible online but shipping only within one city remains local/regional in scope.
+The statement is true.
+'] WHERE case_id = 'CASE 3.5.29' AND tier = 'full';
+UPDATE public.economics_cases SET tactical_explanations = ARRAY['TRUE — Local and regional firms operate in a limited geographic area with customers nearby. Scope is about territory and customer reach, not staff count alone.
 
-This statement draws on local, national, and international business scope. Treat it as a checklist against the core concept named in the stem, not as a general opinion about business.
+Limited delivery geography indicates local/regional rather than international reach.
 
-In this setting, limited delivery geography indicates local/regional rather than international reach. The wording matches the textbook relationship without adding extra conditions.
+The sentence therefore reports the concept accurately for this item.
 
-The reasoning chain is complete, so mark the statement true.', 'FALSE — This statement is false. A national supermarket chain is local because each store serves a neighbourhood.
+The statement is true.
+', 'FALSE — Local and regional firms operate in a limited geographic area with customers nearby. Scope is about territory and customer reach, not staff count alone. National scope means operating within the home country rather than across foreign markets. It is wider than a single district but not continental or worldwide by definition.
 
-Here you must apply ideas from local, national, and international business scope to a concrete situation rather than recite a definition from memory. Ownership, customer type, stakeholder group, or country of production usually decides the verdict.
+Country-wide domestic retail networks reflect national scope.
 
-The statement overreaches because country-wide domestic retail networks reflect national scope. The trap is to agree with the topic while missing the one detail that breaks the logic.
+Swap in the textbook criterion and the sentence no longer describes the case.
 
-The statement sounds plausible but fails on precision, so it is false.', 'FALSE — This statement is false. Regional branding across provinces makes a firm multinational.
+The statement is false.
+', 'FALSE — Local and regional firms operate in a limited geographic area with customers nearby. Scope is about territory and customer reach, not staff count alone. International or multinational firms make and/or sell in more than one country. That brings longer supply chains and multiple cultures, languages, currencies, and legal systems.
 
-The relevant theory comes from local, national, and international business scope. Identify which definition or relationship the sentence is trying to test before deciding true or false.
+Intra-country regional branding differs from cross-border operations.
 
-The statement overreaches because intra-country regional branding differs from cross-border operations. The trap is to agree with the topic while missing the one detail that breaks the logic.
+The mislabelled category or reversed comparison is enough to reject the claim.
 
-Once the overclaim or mislabel is exposed, the only consistent answer is false.', 'FALSE — The claim is false. Supply chains shorten when a firm expands from local to national scope.
+The statement is false.
+', 'FALSE — Local and regional firms operate in a limited geographic area with customers nearby. Scope is about territory and customer reach, not staff count alone. National scope means operating within the home country rather than across foreign markets. It is wider than a single district but not continental or worldwide by definition.
 
-The scenario is a worked example of local, national, and international business scope. Translate the story into the textbook category first; only then judge whether the sentence describes that category accurately.
+States national chains are longer than local ones.
 
-Applied to this claim, states national chains are longer than local ones. That is why the sentence does not survive careful reading.
+Once the defining feature is restored, the assertion falls away.
 
-The statement sounds plausible but fails on precision, so it is false.', 'FALSE — Evaluated against the textbook standard, this assertion is false. A components manufacturer counts as regional because its Austrian roots define scope permanently.
+The statement is false.
+', 'FALSE — Local and regional firms operate in a limited geographic area with customers nearby. Scope is about territory and customer reach, not staff count alone.
 
-Here you must apply ideas from local, national, and international business scope to a concrete situation rather than recite a definition from memory. Ownership, customer type, stakeholder group, or country of production usually decides the verdict.
+A components manufacturer operates internationally with cross-border production and sales.
 
-The statement overreaches because a components manufacturer operates internationally with cross-border production and sales. The trap is to agree with the topic while missing the one detail that breaks the logic.
+Once the defining feature is restored, the assertion falls away.
 
-The statement sounds plausible but fails on precision, so it is false.'] WHERE case_id = 'CASE 3.5.30' AND tier = 'full';
-UPDATE public.economics_cases SET tactical_explanations = ARRAY['FALSE — This statement is false. Local firms need not find customers because word of mouth fills every nearby home.
+The statement is false.
+'] WHERE case_id = 'CASE 3.5.30' AND tier = 'full';
+UPDATE public.economics_cases SET tactical_explanations = ARRAY['FALSE — Local and regional firms operate in a limited geographic area with customers nearby. Scope is about territory and customer reach, not staff count alone.
 
-The topic is local, national, and international business scope, but the decisive skill here is reading quantifiers. Words such as never, always, only, or all turn a generally true idea into a claim that can be rejected by one routine counterexample.
+Finding enough customers remains a challenge for local/regional firms.
 
-The statement overreaches because finding enough customers remains a challenge for local/regional firms. The trap is to agree with the topic while missing the one detail that breaks the logic.
+In the case setting — a plumber that serves households within one town only — the sentence mislabels the category or overreaches.
 
-Watch the absolute wording "every": exam statements often sound plausible until a single scope word turns an otherwise familiar idea into an overclaim.
+The mislabelled category or reversed comparison is enough to reject the claim.
 
-Because the decisive detail is wrong, mark the statement false.', 'TRUE — Evaluated against the textbook standard, this assertion is correct. International operations require awareness of differing economic systems in each market.
+The statement is false.
+', 'TRUE — International or multinational firms make and/or sell in more than one country. That brings longer supply chains and multiple cultures, languages, currencies, and legal systems.
 
-The relevant theory comes from local, national, and international business scope. Identify which definition or relationship the sentence is trying to test before deciding true or false.
+Economic systems vary across countries in international business.
 
-Applied carefully, economic systems vary across countries in international business. Nothing in the sentence stretches the concept beyond its standard use.
+In the case setting — a plumber that serves households within one town only — that reading fits the facts given.
 
-The reasoning chain is complete, so mark the statement true.', 'TRUE — This statement is correct. Local market saturation can occur when most proximate customers already purchase from the firm.
+Under that classification the assertion describes the situation correctly.
 
-Here you must apply ideas from local, national, and international business scope to a concrete situation rather than recite a definition from memory. Ownership, customer type, stakeholder group, or country of production usually decides the verdict.
+The statement is true.
+', 'TRUE — Local and regional firms operate in a limited geographic area with customers nearby. Scope is about territory and customer reach, not staff count alone.
 
-Applied carefully, nearby customer pools can become saturated for local operators. Nothing in the sentence stretches the concept beyond its standard use.
+Nearby customer pools can become saturated for local operators.
 
-The reasoning chain is complete, so mark the statement true.', 'FALSE — The claim is false. Selling domestically online nationwide is local scope because the website is small.
+In the case setting — a plumber that serves households within one town only — that reading fits the facts given.
 
-The scenario is a worked example of local, national, and international business scope. Translate the story into the textbook category first; only then judge whether the sentence describes that category accurately.
+Nothing in the keyed reading contradicts the chapter framing used here, so the claim holds.
 
-Applied to this claim, nationwide domestic online sales indicate national scope. That is why the sentence does not survive careful reading.
+The statement is true.
+', 'FALSE — Local and regional firms operate in a limited geographic area with customers nearby. Scope is about territory and customer reach, not staff count alone.
 
-Once the overclaim or mislabel is exposed, the only consistent answer is false.', 'FALSE — On the Fuhrmann definition used in the entrance exam, the sentence is false. International business faces one uniform culture if staff speak English.
+Nationwide domestic online sales indicate national scope.
 
-The scenario is a worked example of local, national, and international business scope. Translate the story into the textbook category first; only then judge whether the sentence describes that category accurately.
+Against the scenario (a plumber that serves households within one town only), the claim attaches the wrong label.
 
-Applied to this claim, cultural differences persist internationally despite a common working language. That is why the sentence does not survive careful reading.
+Once the defining feature is restored, the assertion falls away.
 
-Because the decisive detail is wrong, mark the statement false.'] WHERE case_id = 'CASE 3.5.31' AND tier = 'full';
-UPDATE public.economics_cases SET tactical_explanations = ARRAY['FALSE — On the Fuhrmann definition used in the entrance exam, the sentence is false. National telecom operators are multinationals when callers use roaming abroad.
+The statement is false.
+', 'FALSE — International or multinational firms make and/or sell in more than one country. That brings longer supply chains and multiple cultures, languages, currencies, and legal systems.
 
-The scenario is a worked example of local, national, and international business scope. Translate the story into the textbook category first; only then judge whether the sentence describes that category accurately.
+Cultural differences persist internationally despite a common working language.
 
-Applied to this claim, customer roaming abroad does not make a domestic operator multinational. That is why the sentence does not survive careful reading.
+Against the scenario (a plumber that serves households within one town only), the claim attaches the wrong label.
 
-Once the overclaim or mislabel is exposed, the only consistent answer is false.', 'TRUE — The claim is correct. Currency exposure arises when invoicing and receiving payment in more than one monetary unit.
+Swap in the textbook criterion and the sentence no longer describes the case.
 
-The section on local, national, and international business scope frequently contrasts two similar ideas side by side. A comparison statement is true only if the relationship is stated in the right direction and applies to the right concept pair.
+The statement is false.
+'] WHERE case_id = 'CASE 3.5.31' AND tier = 'full';
+UPDATE public.economics_cases SET tactical_explanations = ARRAY['FALSE — International or multinational firms make and/or sell in more than one country. That brings longer supply chains and multiple cultures, languages, currencies, and legal systems.
 
-In this setting, multiple currencies complicate international transactions. The wording matches the textbook relationship without adding extra conditions.
+Customer roaming abroad does not make a domestic operator multinational.
 
-Every part of the claim aligns with the standard concept, so the statement stands.', 'TRUE — The claim is correct. Globalisation and multinational growth are linked trends.
+The mislabelled category or reversed comparison is enough to reject the claim.
 
-This statement draws on local, national, and international business scope. Treat it as a checklist against the core concept named in the stem, not as a general opinion about business.
+The statement is false.
+', 'TRUE — Geographic scope classifies firms by the area in which they operate and serve customers — local/regional, national, or international.
 
-In this setting, the course connects globalisation to spreading multinational activity. The wording matches the textbook relationship without adding extra conditions.
+Multiple currencies complicate international transactions.
 
-No qualifying word breaks the definition or scenario, so the answer is true.', 'TRUE — This statement is correct. Regional hauliers confined to one territory do not qualify as multinationals.
+The sentence therefore reports the concept accurately for this item.
 
-The relevant theory comes from local, national, and international business scope. Identify which definition or relationship the sentence is trying to test before deciding true or false.
+The statement is true.
+', 'TRUE — International or multinational firms make and/or sell in more than one country. That brings longer supply chains and multiple cultures, languages, currencies, and legal systems.
 
-Applied carefully, territory-limited haulage within one country is regional, not international. Nothing in the sentence stretches the concept beyond its standard use.
+The course connects globalisation to spreading multinational activity.
 
-Every part of the claim aligns with the standard concept, so the statement stands.', 'TRUE — This statement is correct. National public procurement within one country does not establish multinational scope.
+The sentence therefore reports the concept accurately for this item.
 
-The relevant theory comes from local, national, and international business scope. Identify which definition or relationship the sentence is trying to test before deciding true or false.
+The statement is true.
+', 'TRUE — Local and regional firms operate in a limited geographic area with customers nearby. Scope is about territory and customer reach, not staff count alone. International or multinational firms make and/or sell in more than one country. That brings longer supply chains and multiple cultures, languages, currencies, and legal systems.
 
-Applied carefully, domestic tendering remains national activity. Nothing in the sentence stretches the concept beyond its standard use.
+Territory-limited haulage within one country is regional, not international.
 
-The reasoning chain is complete, so mark the statement true.'] WHERE case_id = 'CASE 3.5.32' AND tier = 'full';
-UPDATE public.economics_cases SET tactical_explanations = ARRAY['FALSE — On the Fuhrmann definition used in the entrance exam, the sentence is false. Cross-border manufacturing is national when products are shipped back to the home market only.
+Under that classification the assertion describes the situation correctly.
 
-The scenario is a worked example of local, national, and international business scope. Translate the story into the textbook category first; only then judge whether the sentence describes that category accurately.
+The statement is true.
+', 'TRUE — International or multinational firms make and/or sell in more than one country. That brings longer supply chains and multiple cultures, languages, currencies, and legal systems.
 
-Applied to this claim, foreign production contributes to international/multinational scope. That is why the sentence does not survive careful reading.
+Domestic tendering remains national activity.
 
-Once the overclaim or mislabel is exposed, the only consistent answer is false.', 'TRUE — Evaluated against the textbook standard, this assertion is correct. International scope can arise from foreign sales alone when domestic production continues at home.
+The sentence therefore reports the concept accurately for this item.
 
-Here you must apply ideas from local, national, and international business scope to a concrete situation rather than recite a definition from memory. Ownership, customer type, stakeholder group, or country of production usually decides the verdict.
+The statement is true.
+'] WHERE case_id = 'CASE 3.5.32' AND tier = 'full';
+UPDATE public.economics_cases SET tactical_explanations = ARRAY['FALSE — National scope means operating within the home country rather than across foreign markets. It is wider than a single district but not continental or worldwide by definition.
 
-Applied carefully, make-or-sell logic allows international classification through cross-border sales. Nothing in the sentence stretches the concept beyond its standard use.
+Foreign production contributes to international/multinational scope.
 
-No qualifying word breaks the definition or scenario, so the answer is true.', 'TRUE — Evaluated against the textbook standard, this assertion is correct. Local cafés may struggle to raise expansion capital despite steady neighbourhood footfall.
+Those restricting words stretch a limited idea past what the definition allows.
 
-The relevant theory comes from local, national, and international business scope. Identify which definition or relationship the sentence is trying to test before deciding true or false.
+The statement is false.
+', 'TRUE — International or multinational firms make and/or sell in more than one country. That brings longer supply chains and multiple cultures, languages, currencies, and legal systems.
 
-Applied carefully, undercapitalisation can limit local firms even with regular nearby customers. Nothing in the sentence stretches the concept beyond its standard use.
+Make-or-sell logic allows international classification through cross-border sales.
 
-Every part of the claim aligns with the standard concept, so the statement stands.', 'TRUE — This statement is correct. A home-country publisher distributing only domestically fits national scope despite foreign-language titles.
+Under that classification the assertion describes the situation correctly.
 
-The relevant theory comes from local, national, and international business scope. Identify which definition or relationship the sentence is trying to test before deciding true or false.
+The statement is true.
+', 'TRUE — Local and regional firms operate in a limited geographic area with customers nearby. Scope is about territory and customer reach, not staff count alone.
 
-Applied carefully, translation without foreign sales or production does not establish international scope. Nothing in the sentence stretches the concept beyond its standard use.
+Undercapitalisation can limit local firms even with regular nearby customers.
 
-Every part of the claim aligns with the standard concept, so the statement stands.', 'TRUE — This statement is correct. Multinational enterprises coordinate activities across borders under varied legal rules.
+The sentence therefore reports the concept accurately for this item.
 
-The relevant theory comes from local, national, and international business scope. Identify which definition or relationship the sentence is trying to test before deciding true or false.
+The statement is true.
+', 'TRUE — National scope means operating within the home country rather than across foreign markets. It is wider than a single district but not continental or worldwide by definition.
 
-Applied carefully, cross-border operations encounter multiple legal systems. Nothing in the sentence stretches the concept beyond its standard use.
+Translation without foreign sales or production does not establish international scope.
 
-Every part of the claim aligns with the standard concept, so the statement stands.'] WHERE case_id = 'CASE 3.5.33' AND tier = 'full';
-UPDATE public.economics_cases SET tactical_explanations = ARRAY['FALSE — Evaluated against the textbook standard, this assertion is false. International scope is limited to firms that sell in more than ten countries.
+Under that classification the assertion describes the situation correctly.
 
-This tests discrimination within local, national, and international business scope: local versus international scope, equity versus debt, product versus market orientation, and similar pairs.
+The statement is true.
+', 'TRUE — International or multinational firms make and/or sell in more than one country. That brings longer supply chains and multiple cultures, languages, currencies, and legal systems.
 
-The statement overreaches because more than one country in make-or-sell suffices for international classification. The trap is to agree with the topic while missing the one detail that breaks the logic.
+Cross-border operations encounter multiple legal systems.
 
-If two ideas are related, the statement may be false because it attributes the feature to the wrong member of the pair.
+Nothing in the keyed reading contradicts the chapter framing used here, so the claim holds.
 
-Because the decisive detail is wrong, mark the statement false.', 'FALSE — The claim is false. Globalisation requires every national firm to open a foreign subsidiary.
+The statement is true.
+'] WHERE case_id = 'CASE 3.5.33' AND tier = 'full';
+UPDATE public.economics_cases SET tactical_explanations = ARRAY['FALSE — International or multinational firms make and/or sell in more than one country. That brings longer supply chains and multiple cultures, languages, currencies, and legal systems.
 
-Although the subject matter is local, national, and international business scope, this is really a logic check on overstatement. Non-profit surpluses, mixed economies, and partial market failure are classic cases where absolute wording fails.
+More than one country in make-or-sell suffices for international classification.
 
-Applied to this claim, globalisation describes a trend of rising multinationals, not mandatory foreign units. That is why the sentence does not survive careful reading.
+Swap in the textbook criterion and the sentence no longer describes the case.
 
-Watch the absolute wording "every": exam statements often sound plausible until a single scope word turns an otherwise familiar idea into an overclaim.
+The statement is false.
+', 'FALSE — National scope means operating within the home country rather than across foreign markets. It is wider than a single district but not continental or worldwide by definition. International or multinational firms make and/or sell in more than one country. That brings longer supply chains and multiple cultures, languages, currencies, and legal systems.
 
-Because the decisive detail is wrong, mark the statement false.', 'FALSE — Evaluated against the textbook standard, this assertion is false. Regional hauliers become international by crossing a motorway border sign within one country.
+Globalisation describes a trend of rising multinationals, not mandatory foreign units.
 
-The relevant theory comes from local, national, and international business scope. Identify which definition or relationship the sentence is trying to test before deciding true or false.
+Swap in the textbook criterion and the sentence no longer describes the case.
 
-The statement overreaches because motorway routing within one country does not create international scope. The trap is to agree with the topic while missing the one detail that breaks the logic.
+The statement is false.
+', 'FALSE — Local and regional firms operate in a limited geographic area with customers nearby. Scope is about territory and customer reach, not staff count alone. International or multinational firms make and/or sell in more than one country. That brings longer supply chains and multiple cultures, languages, currencies, and legal systems.
 
-Because the decisive detail is wrong, mark the statement false.', 'FALSE — On the Fuhrmann definition used in the entrance exam, the sentence is false. Undercapitalisation disappears for local firms that join a trade association.
+Motorway routing within one country does not create international scope.
 
-This statement draws on local, national, and international business scope. Treat it as a checklist against the core concept named in the stem, not as a general opinion about business.
+Once the defining feature is restored, the assertion falls away.
 
-Applied to this claim, membership does not remove capital constraints on geographic expansion. That is why the sentence does not survive careful reading.
+The statement is false.
+', 'FALSE — Local and regional firms operate in a limited geographic area with customers nearby. Scope is about territory and customer reach, not staff count alone.
 
-Because the decisive detail is wrong, mark the statement false.', 'TRUE — The claim is correct. Regional exporters shipping to nearby foreign markets cross into international scope.
+Membership does not remove capital constraints on geographic expansion.
 
-This statement draws on local, national, and international business scope. Treat it as a checklist against the core concept named in the stem, not as a general opinion about business.
+The mislabelled category or reversed comparison is enough to reject the claim.
 
-In this setting, sales beyond the home country contribute to international classification. The wording matches the textbook relationship without adding extra conditions.
+The statement is false.
+', 'TRUE — Local and regional firms operate in a limited geographic area with customers nearby. Scope is about territory and customer reach, not staff count alone. International or multinational firms make and/or sell in more than one country. That brings longer supply chains and multiple cultures, languages, currencies, and legal systems.
 
-Every part of the claim aligns with the standard concept, so the statement stands.'] WHERE case_id = 'CASE 3.5.34' AND tier = 'full';
-UPDATE public.economics_cases SET tactical_explanations = ARRAY['TRUE — This statement is correct. Stakeholder geography widens when production and sales spread across countries.
+Sales beyond the home country contribute to international classification.
 
-Here you must apply ideas from local, national, and international business scope to a concrete situation rather than recite a definition from memory. Ownership, customer type, stakeholder group, or country of production usually decides the verdict.
+Under that classification the assertion describes the situation correctly.
 
-Applied carefully, multinational activity spreads stakeholders internationally. Nothing in the sentence stretches the concept beyond its standard use.
+The statement is true.
+'] WHERE case_id = 'CASE 3.5.34' AND tier = 'full';
+UPDATE public.economics_cases SET tactical_explanations = ARRAY['TRUE — Geographic scope classifies firms by the area in which they operate and serve customers — local/regional, national, or international.
 
-Every part of the claim aligns with the standard concept, so the statement stands.', 'TRUE — The claim is correct. Globalisation refers to increasing cross-border business activity led by multinationals.
+Multinational activity spreads stakeholders internationally.
 
-The question tests a precise definition from the section on local, national, and international business scope. Entrance-exam statements often copy a definition almost correctly; one altered phrase is enough to make the whole sentence wrong.
+In the case setting — a local grocer that depends on nearby residents for most revenue — that reading fits the facts given.
 
-In this setting, defines globalisation through multinational enterprise growth. The wording matches the textbook relationship without adding extra conditions.
+Under that classification the assertion describes the situation correctly.
 
-No qualifying word breaks the definition or scenario, so the answer is true.', 'TRUE — On the Fuhrmann definition used in the entrance exam, the sentence is correct. National distribution networks span the home country and lengthen logistics chains.
+The statement is true.
+', 'TRUE — International or multinational firms make and/or sell in more than one country. That brings longer supply chains and multiple cultures, languages, currencies, and legal systems.
 
-This statement draws on local, national, and international business scope. Treat it as a checklist against the core concept named in the stem, not as a general opinion about business.
+Defines globalisation through multinational enterprise growth.
 
-In this setting, country-wide distribution extends domestic supply chains. The wording matches the textbook relationship without adding extra conditions.
+The scenario (a local grocer that depends on nearby residents for most revenue) supports that classification.
 
-Every part of the claim aligns with the standard concept, so the statement stands.', 'TRUE — On the Fuhrmann definition used in the entrance exam, the sentence is correct. Local enterprises serve customers who chiefly live or work within easy reach of the firm.
+Nothing in the keyed reading contradicts the chapter framing used here, so the claim holds.
 
-This statement draws on local, national, and international business scope. Treat it as a checklist against the core concept named in the stem, not as a general opinion about business.
+The statement is true.
+', 'TRUE — National scope means operating within the home country rather than across foreign markets. It is wider than a single district but not continental or worldwide by definition.
 
-In this setting, easy physical reach defines local customer proximity. The wording matches the textbook relationship without adding extra conditions.
+Country-wide distribution extends domestic supply chains.
 
-Every part of the claim aligns with the standard concept, so the statement stands.', 'TRUE — On the Fuhrmann definition used in the entrance exam, the sentence is correct. Undercapitalisation makes fund raising harder for firms tied to small geographic markets.
+In the case setting — a local grocer that depends on nearby residents for most revenue — that reading fits the facts given.
 
-This statement draws on local, national, and international business scope. Treat it as a checklist against the core concept named in the stem, not as a general opinion about business.
+The sentence therefore reports the concept accurately for this item.
 
-In this setting, limited catchments compound capital-raising difficulty for local/regional firms. The wording matches the textbook relationship without adding extra conditions.
+The statement is true.
+', 'TRUE — Local and regional firms operate in a limited geographic area with customers nearby. Scope is about territory and customer reach, not staff count alone.
 
-The reasoning chain is complete, so mark the statement true.'] WHERE case_id = 'CASE 3.5.35' AND tier = 'full';
-UPDATE public.economics_cases SET tactical_explanations = ARRAY['TRUE — This statement is correct. A provincial dairy delivering within one province remains regional rather than multinational.
+Easy physical reach defines local customer proximity.
 
-This tests discrimination within local, national, and international business scope: local versus international scope, equity versus debt, product versus market orientation, and similar pairs.
+The scenario (a local grocer that depends on nearby residents for most revenue) supports that classification.
 
-Applied carefully, intraprovincial delivery stays within regional scope. Nothing in the sentence stretches the concept beyond its standard use.
+Under that classification the assertion describes the situation correctly.
 
-Every part of the claim aligns with the standard concept, so the statement stands.', 'TRUE — The claim is correct. Operating in three countries with separate contract laws illustrates international legal complexity.
+The statement is true.
+', 'TRUE — Geographic scope classifies firms by the area in which they operate and serve customers — local/regional, national, or international.
 
-This statement draws on local, national, and international business scope. Treat it as a checklist against the core concept named in the stem, not as a general opinion about business.
+Limited catchments compound capital-raising difficulty for local/regional firms.
 
-In this setting, multiple legal systems accompany multi-country operations. The wording matches the textbook relationship without adding extra conditions.
+In the case setting — a local grocer that depends on nearby residents for most revenue — that reading fits the facts given.
 
-No qualifying word breaks the definition or scenario, so the answer is true.', 'TRUE — On the Fuhrmann definition used in the entrance exam, the sentence is correct. National retailers remain national when all stores and sales stay inside the home country.
+Nothing in the keyed reading contradicts the chapter framing used here, so the claim holds.
 
-Although the subject matter is local, national, and international business scope, this is really a logic check on overstatement. Non-profit surpluses, mixed economies, and partial market failure are classic cases where absolute wording fails.
+The statement is true.
+'] WHERE case_id = 'CASE 3.5.35' AND tier = 'full';
+UPDATE public.economics_cases SET tactical_explanations = ARRAY['TRUE — Local and regional firms operate in a limited geographic area with customers nearby. Scope is about territory and customer reach, not staff count alone. International or multinational firms make and/or sell in more than one country. That brings longer supply chains and multiple cultures, languages, currencies, and legal systems.
 
-In this setting, domestic store networks without foreign sales fit national scope. The wording matches the textbook relationship without adding extra conditions.
+Intraprovincial delivery stays within regional scope.
 
-Every part of the claim aligns with the standard concept, so the statement stands.', 'TRUE — The claim is correct. International firms face both longer supply chains and diverse legal environments.
+Under that classification the assertion describes the situation correctly.
 
-This statement draws on local, national, and international business scope. Treat it as a checklist against the core concept named in the stem, not as a general opinion about business.
+The statement is true.
+', 'TRUE — International or multinational firms make and/or sell in more than one country. That brings longer supply chains and multiple cultures, languages, currencies, and legal systems.
 
-In this setting, international scope combines chain length with legal complexity. The wording matches the textbook relationship without adding extra conditions.
+Multiple legal systems accompany multi-country operations.
 
-No qualifying word breaks the definition or scenario, so the answer is true.', 'TRUE — The claim is correct. Regional branding across neighbouring counties does not equate to multinational scope.
+Nothing in the keyed reading contradicts the chapter framing used here, so the claim holds.
 
-This statement draws on local, national, and international business scope. Treat it as a checklist against the core concept named in the stem, not as a general opinion about business.
+The statement is true.
+', 'TRUE — National scope means operating within the home country rather than across foreign markets. It is wider than a single district but not continental or worldwide by definition.
 
-In this setting, regional identity within one country differs from cross-border operations. The wording matches the textbook relationship without adding extra conditions.
+Domestic store networks without foreign sales fit national scope.
 
-No qualifying word breaks the definition or scenario, so the answer is true.'] WHERE case_id = 'CASE 3.5.36' AND tier = 'full';
-UPDATE public.economics_cases SET tactical_explanations = ARRAY['TRUE — On the Fuhrmann definition used in the entrance exam, the sentence is correct. Regional tour operators serving neighbouring counties only fit regional geographic scope.
+The sentence therefore reports the concept accurately for this item.
 
-This statement draws on local, national, and international business scope. Treat it as a checklist against the core concept named in the stem, not as a general opinion about business.
+The statement is true.
+', 'TRUE — International or multinational firms make and/or sell in more than one country. That brings longer supply chains and multiple cultures, languages, currencies, and legal systems.
 
-In this setting, cross-county service within one country remains regional. The wording matches the textbook relationship without adding extra conditions.
+International scope combines chain length with legal complexity.
 
-No qualifying word breaks the definition or scenario, so the answer is true.', 'TRUE — On the Fuhrmann definition used in the entrance exam, the sentence is correct. Multinational classification requires activity in more than one country through making and/or selling.
+Under that classification the assertion describes the situation correctly.
 
-The section on local, national, and international business scope frequently contrasts two similar ideas side by side. A comparison statement is true only if the relationship is stated in the right direction and applies to the right concept pair.
+The statement is true.
+', 'TRUE — Local and regional firms operate in a limited geographic area with customers nearby. Scope is about territory and customer reach, not staff count alone. International or multinational firms make and/or sell in more than one country. That brings longer supply chains and multiple cultures, languages, currencies, and legal systems.
 
-In this setting, either cross-border production or sales can establish international scope. The wording matches the textbook relationship without adding extra conditions.
+Regional identity within one country differs from cross-border operations.
 
-The reasoning chain is complete, so mark the statement true.', 'TRUE — Evaluated against the textbook standard, this assertion is correct. Cross-border assembly in one country and packaging in another indicates international production scope.
+Nothing in the keyed reading contradicts the chapter framing used here, so the claim holds.
 
-The relevant theory comes from local, national, and international business scope. Identify which definition or relationship the sentence is trying to test before deciding true or false.
+The statement is true.
+'] WHERE case_id = 'CASE 3.5.36' AND tier = 'full';
+UPDATE public.economics_cases SET tactical_explanations = ARRAY['TRUE — Local and regional firms operate in a limited geographic area with customers nearby. Scope is about territory and customer reach, not staff count alone.
 
-Applied carefully, splitting production stages across countries exceeds national boundaries. Nothing in the sentence stretches the concept beyond its standard use.
+Cross-county service within one country remains regional.
 
-No qualifying word breaks the definition or scenario, so the answer is true.', 'TRUE — The claim is correct. Local/regional businesses may find customer numbers insufficient for rapid growth.
+Under that classification the assertion describes the situation correctly.
 
-This statement draws on local, national, and international business scope. Treat it as a checklist against the core concept named in the stem, not as a general opinion about business.
+The statement is true.
+', 'TRUE — International or multinational firms make and/or sell in more than one country. That brings longer supply chains and multiple cultures, languages, currencies, and legal systems.
 
-In this setting, finding enough customers is a stated challenge for geographically focused firms. The wording matches the textbook relationship without adding extra conditions.
+Either cross-border production or sales can establish international scope.
 
-Every part of the claim aligns with the standard concept, so the statement stands.', 'TRUE — The claim is correct. National food brands with country-wide sourcing face longer domestic supply chains than corner shops.
+The sentence therefore reports the concept accurately for this item.
 
-This statement draws on local, national, and international business scope. Treat it as a checklist against the core concept named in the stem, not as a general opinion about business.
+The statement is true.
+', 'TRUE — International or multinational firms make and/or sell in more than one country. That brings longer supply chains and multiple cultures, languages, currencies, and legal systems.
 
-In this setting, national sourcing extends chains beyond neighbourhood suppliers. The wording matches the textbook relationship without adding extra conditions.
+Splitting production stages across countries exceeds national boundaries.
 
-Every part of the claim aligns with the standard concept, so the statement stands.'] WHERE case_id = 'CASE 3.5.37' AND tier = 'full';
-UPDATE public.economics_cases SET tactical_explanations = ARRAY['TRUE — Evaluated against the textbook standard, this assertion is correct. International business crosses cultures as well as legal and economic systems.
+Under that classification the assertion describes the situation correctly.
 
-The relevant theory comes from local, national, and international business scope. Identify which definition or relationship the sentence is trying to test before deciding true or false.
+The statement is true.
+', 'TRUE — Local and regional firms operate in a limited geographic area with customers nearby. Scope is about territory and customer reach, not staff count alone.
 
-Applied carefully, culture joins legal, economic, language, and currency factors internationally. Nothing in the sentence stretches the concept beyond its standard use.
+Finding enough customers is a stated challenge for geographically focused firms.
 
-Every part of the claim aligns with the standard concept, so the statement stands.', 'FALSE — This statement is false. Multinational HR policies are identical worldwide by definition.
+Under that classification the assertion describes the situation correctly.
 
-Start from the textbook definition in local, national, and international business scope. A statement is true only if every scope word in the definition is respected—location, purpose, distribution rule, or time horizon.
+The statement is true.
+', 'TRUE — National scope means operating within the home country rather than across foreign markets. It is wider than a single district but not continental or worldwide by definition.
 
-The statement overreaches because subsidiaries often adapt hr to local legal and cultural conditions. The trap is to agree with the topic while missing the one detail that breaks the logic.
+National sourcing extends chains beyond neighbourhood suppliers.
 
-Near-miss definitions are deliberately written to sound familiar. Compare the statement phrase by phrase with the book version instead of trusting the overall topic.
+Nothing in the keyed reading contradicts the chapter framing used here, so the claim holds.
 
-Because the decisive detail is wrong, mark the statement false.', 'TRUE — The claim is correct. Globalisation highlights growth of firms operating beyond a single country.
+The statement is true.
+'] WHERE case_id = 'CASE 3.5.37' AND tier = 'full';
+UPDATE public.economics_cases SET tactical_explanations = ARRAY['TRUE — International or multinational firms make and/or sell in more than one country. That brings longer supply chains and multiple cultures, languages, currencies, and legal systems.
 
-This statement draws on local, national, and international business scope. Treat it as a checklist against the core concept named in the stem, not as a general opinion about business.
+Culture joins legal, economic, language, and currency factors internationally.
 
-In this setting, cross-border enterprise expansion defines globalisation. The wording matches the textbook relationship without adding extra conditions.
+The sentence therefore reports the concept accurately for this item.
 
-Every part of the claim aligns with the standard concept, so the statement stands.', 'FALSE — This statement is false. Local/regional firms have longer supply chains than national manufacturers.
+The statement is true.
+', 'FALSE — International or multinational firms make and/or sell in more than one country. That brings longer supply chains and multiple cultures, languages, currencies, and legal systems.
 
-The relevant theory comes from local, national, and international business scope. Identify which definition or relationship the sentence is trying to test before deciding true or false.
+Subsidiaries often adapt hr to local legal and cultural conditions.
 
-The statement overreaches because national operations typically involve longer chains than very local producers. The trap is to agree with the topic while missing the one detail that breaks the logic.
+Swap in the textbook criterion and the sentence no longer describes the case.
 
-The statement sounds plausible but fails on precision, so it is false.', 'TRUE — This statement is correct. Limited capital restricts a local firm''s ability to widen its customer catchment.
+The statement is false.
+', 'TRUE — International or multinational firms make and/or sell in more than one country. That brings longer supply chains and multiple cultures, languages, currencies, and legal systems.
 
-The relevant theory comes from local, national, and international business scope. Identify which definition or relationship the sentence is trying to test before deciding true or false.
+Cross-border enterprise expansion defines globalisation.
 
-Applied carefully, undercapitalisation constrains geographic expansion for small-area firms. Nothing in the sentence stretches the concept beyond its standard use.
+The sentence therefore reports the concept accurately for this item.
 
-Every part of the claim aligns with the standard concept, so the statement stands.'] WHERE case_id = 'CASE 3.5.38' AND tier = 'full';
-UPDATE public.economics_cases SET tactical_explanations = ARRAY['TRUE — On the Fuhrmann definition used in the entrance exam, the sentence is correct. A components manufacturer demonstrates multinational scope through foreign plants and international customers.
+The statement is true.
+', 'FALSE — Local and regional firms operate in a limited geographic area with customers nearby. Scope is about territory and customer reach, not staff count alone. National scope means operating within the home country rather than across foreign markets. It is wider than a single district but not continental or worldwide by definition.
 
-This statement draws on local, national, and international business scope. Treat it as a checklist against the core concept named in the stem, not as a general opinion about business.
+National operations typically involve longer chains than very local producers.
 
-In this setting, the course uses a components manufacturer as a cross-border enterprise example. The wording matches the textbook relationship without adding extra conditions.
+Swap in the textbook criterion and the sentence no longer describes the case.
 
-No qualifying word breaks the definition or scenario, so the answer is true.', 'FALSE — Evaluated against the textbook standard, this assertion is false. National airlines are local because passengers board at nearby airports.
+The statement is false.
+', 'TRUE — Local and regional firms operate in a limited geographic area with customers nearby. Scope is about territory and customer reach, not staff count alone.
 
-Here you must apply ideas from local, national, and international business scope to a concrete situation rather than recite a definition from memory. Ownership, customer type, stakeholder group, or country of production usually decides the verdict.
+Undercapitalisation constrains geographic expansion for small-area firms.
 
-The statement overreaches because domestic airport networks reflect national operating scope. The trap is to agree with the topic while missing the one detail that breaks the logic.
+Under that classification the assertion describes the situation correctly.
 
-Once the overclaim or mislabel is exposed, the only consistent answer is false.', 'FALSE — Evaluated against the textbook standard, this assertion is false. Regional seasonal tourism proves multinational scope because visitors hold foreign passports.
+The statement is true.
+'] WHERE case_id = 'CASE 3.5.38' AND tier = 'full';
+UPDATE public.economics_cases SET tactical_explanations = ARRAY['TRUE — International or multinational firms make and/or sell in more than one country. That brings longer supply chains and multiple cultures, languages, currencies, and legal systems.
 
-Here you must apply ideas from local, national, and international business scope to a concrete situation rather than recite a definition from memory. Ownership, customer type, stakeholder group, or country of production usually decides the verdict.
+The course uses a components manufacturer as a cross-border enterprise example.
 
-The statement overreaches because foreign passport holders visiting a regional hotel do not make the hotel multinational. The trap is to agree with the topic while missing the one detail that breaks the logic.
+Under that classification the assertion describes the situation correctly.
 
-The statement sounds plausible but fails on precision, so it is false.', 'FALSE — Evaluated against the textbook standard, this assertion is false. A firm importing components for domestic assembly is a manufacturer in the supplier''s country.
+The statement is true.
+', 'FALSE — Local and regional firms operate in a limited geographic area with customers nearby. Scope is about territory and customer reach, not staff count alone. National scope means operating within the home country rather than across foreign markets. It is wider than a single district but not continental or worldwide by definition.
 
-The relevant theory comes from local, national, and international business scope. Identify which definition or relationship the sentence is trying to test before deciding true or false.
+Domestic airport networks reflect national operating scope.
 
-The statement overreaches because using imported inputs domestically differs from producing abroad. The trap is to agree with the topic while missing the one detail that breaks the logic.
+Swap in the textbook criterion and the sentence no longer describes the case.
 
-The statement sounds plausible but fails on precision, so it is false.', 'TRUE — The claim is correct. A telecom restricted to domestic mobile plans within one country fits national scope.
+The statement is false.
+', 'FALSE — Local and regional firms operate in a limited geographic area with customers nearby. Scope is about territory and customer reach, not staff count alone. International or multinational firms make and/or sell in more than one country. That brings longer supply chains and multiple cultures, languages, currencies, and legal systems.
 
-This statement draws on local, national, and international business scope. Treat it as a checklist against the core concept named in the stem, not as a general opinion about business.
+Foreign passport holders visiting a regional hotel do not make the hotel multinational.
 
-In this setting, domestic-only service plans align with national classification. The wording matches the textbook relationship without adding extra conditions.
+Once the defining feature is restored, the assertion falls away.
 
-Every part of the claim aligns with the standard concept, so the statement stands.'] WHERE case_id = 'CASE 3.5.39' AND tier = 'full';
-UPDATE public.economics_cases SET tactical_explanations = ARRAY['TRUE — The claim is correct. Local scope follows where customers are served, not where company directors live.
+The statement is false.
+', 'FALSE — Geographic scope classifies firms by the area in which they operate and serve customers — local/regional, national, or international.
 
-This statement draws on local, national, and international business scope. Treat it as a checklist against the core concept named in the stem, not as a general opinion about business.
+Using imported inputs domestically differs from producing abroad.
 
-In this setting, activity geography determines scope rather than owner residence. The wording matches the textbook relationship without adding extra conditions.
+The mislabelled category or reversed comparison is enough to reject the claim.
 
-No qualifying word breaks the definition or scenario, so the answer is true.', 'TRUE — On the Fuhrmann definition used in the entrance exam, the sentence is correct. Selling nationwide online from one town still indicates national scope rather than local.
+The statement is false.
+', 'TRUE — National scope means operating within the home country rather than across foreign markets. It is wider than a single district but not continental or worldwide by definition.
 
-The section on local, national, and international business scope frequently contrasts two similar ideas side by side. A comparison statement is true only if the relationship is stated in the right direction and applies to the right concept pair.
+Domestic-only service plans align with national classification.
 
-In this setting, country-wide domestic sales exceed local scope despite owner location. The wording matches the textbook relationship without adding extra conditions.
+Under that classification the assertion describes the situation correctly.
 
-No qualifying word breaks the definition or scenario, so the answer is true.', 'TRUE — On the Fuhrmann definition used in the entrance exam, the sentence is correct. Foreign subsidiaries subject HR policy to local legal and cultural conditions.
+The statement is true.
+'] WHERE case_id = 'CASE 3.5.39' AND tier = 'full';
+UPDATE public.economics_cases SET tactical_explanations = ARRAY['TRUE — Local and regional firms operate in a limited geographic area with customers nearby. Scope is about territory and customer reach, not staff count alone.
 
-This statement draws on local, national, and international business scope. Treat it as a checklist against the core concept named in the stem, not as a general opinion about business.
+Activity geography determines scope rather than owner residence.
 
-In this setting, multinational hr must adapt to country-specific contexts. The wording matches the textbook relationship without adding extra conditions.
+In the case setting — a regional exporter that sends forty percent of output to neighbouring countries — that reading fits the facts given.
 
-No qualifying word breaks the definition or scenario, so the answer is true.', 'TRUE — On the Fuhrmann definition used in the entrance exam, the sentence is correct. National wholesalers routing goods through domestic warehouses operate at national scope.
+Under that classification the assertion describes the situation correctly.
 
-This statement draws on local, national, and international business scope. Treat it as a checklist against the core concept named in the stem, not as a general opinion about business.
+The statement is true.
+', 'TRUE — Local and regional firms operate in a limited geographic area with customers nearby. Scope is about territory and customer reach, not staff count alone. National scope means operating within the home country rather than across foreign markets. It is wider than a single district but not continental or worldwide by definition.
 
-In this setting, country-wide domestic logistics align with national classification. The wording matches the textbook relationship without adding extra conditions.
+Country-wide domestic sales exceed local scope despite owner location.
 
-No qualifying word breaks the definition or scenario, so the answer is true.', 'TRUE — On the Fuhrmann definition used in the entrance exam, the sentence is correct. Regional seasonal demand shows how customer bases can be geographically bounded.
+The scenario (a regional exporter that sends forty percent of output to neighbouring countries) supports that classification.
 
-This statement draws on local, national, and international business scope. Treat it as a checklist against the core concept named in the stem, not as a general opinion about business.
+The sentence therefore reports the concept accurately for this item.
 
-In this setting, seasonality within a limited area reflects regional market limits. The wording matches the textbook relationship without adding extra conditions.
+The statement is true.
+', 'TRUE — Local and regional firms operate in a limited geographic area with customers nearby. Scope is about territory and customer reach, not staff count alone.
 
-The reasoning chain is complete, so mark the statement true.'] WHERE case_id = 'CASE 3.5.40' AND tier = 'full';
-UPDATE public.economics_cases SET tactical_explanations = ARRAY['TRUE — On the Fuhrmann definition used in the entrance exam, the sentence is correct. Local firms compete chiefly for nearby residents and workers as customers.
+Multinational hr must adapt to country-specific contexts.
 
-This statement draws on local, national, and international business scope. Treat it as a checklist against the core concept named in the stem, not as a general opinion about business.
+The scenario (a regional exporter that sends forty percent of output to neighbouring countries) supports that classification.
 
-In this setting, local markets centre on proximate customer pools. The wording matches the textbook relationship without adding extra conditions.
+Nothing in the keyed reading contradicts the chapter framing used here, so the claim holds.
 
-No qualifying word breaks the definition or scenario, so the answer is true.', 'FALSE — This statement is false. Globalisation and multinational activity are separate unrelated concepts.
+The statement is true.
+', 'TRUE — National scope means operating within the home country rather than across foreign markets. It is wider than a single district but not continental or worldwide by definition.
 
-The relevant theory comes from local, national, and international business scope. Identify which definition or relationship the sentence is trying to test before deciding true or false.
+Country-wide domestic logistics align with national classification.
 
-The statement overreaches because the course links globalisation to the rise of multinationals. The trap is to agree with the topic while missing the one detail that breaks the logic.
+The scenario (a regional exporter that sends forty percent of output to neighbouring countries) supports that classification.
 
-Once the overclaim or mislabel is exposed, the only consistent answer is false.', 'FALSE — Evaluated against the textbook standard, this assertion is false. International legal complexity disappears when contracts are written in English.
+The sentence therefore reports the concept accurately for this item.
 
-Here you must apply ideas from local, national, and international business scope to a concrete situation rather than recite a definition from memory. Ownership, customer type, stakeholder group, or country of production usually decides the verdict.
+The statement is true.
+', 'TRUE — Local and regional firms operate in a limited geographic area with customers nearby. Scope is about territory and customer reach, not staff count alone.
 
-The statement overreaches because multiple legal systems still apply across countries. The trap is to agree with the topic while missing the one detail that breaks the logic.
+Seasonality within a limited area reflects regional market limits.
 
-The statement sounds plausible but fails on precision, so it is false.', 'TRUE — This statement is correct. International compliance grows when a firm must meet rules in each country of operation.
+The scenario (a regional exporter that sends forty percent of output to neighbouring countries) supports that classification.
 
-Here you must apply ideas from local, national, and international business scope to a concrete situation rather than recite a definition from memory. Ownership, customer type, stakeholder group, or country of production usually decides the verdict.
+Under that classification the assertion describes the situation correctly.
 
-Applied carefully, each operating country adds compliance obligations internationally. Nothing in the sentence stretches the concept beyond its standard use.
+The statement is true.
+'] WHERE case_id = 'CASE 3.5.40' AND tier = 'full';
+UPDATE public.economics_cases SET tactical_explanations = ARRAY['TRUE — Local and regional firms operate in a limited geographic area with customers nearby. Scope is about territory and customer reach, not staff count alone.
 
-No qualifying word breaks the definition or scenario, so the answer is true.', 'FALSE — This statement is false. Local market saturation cannot occur where a firm offers unique products.
+Local markets centre on proximate customer pools.
 
-The topic is local, national, and international business scope, but the decisive skill here is reading quantifiers. Words such as never, always, only, or all turn a generally true idea into a claim that can be rejected by one routine counterexample.
+Under that classification the assertion describes the situation correctly.
 
-The statement overreaches because uniqueness does not prevent nearby customer pools from becoming saturated. The trap is to agree with the topic while missing the one detail that breaks the logic.
+The statement is true.
+', 'FALSE — International or multinational firms make and/or sell in more than one country. That brings longer supply chains and multiple cultures, languages, currencies, and legal systems.
 
-Watch the absolute wording "cannot": exam statements often sound plausible until a single scope word turns an otherwise familiar idea into an overclaim.
+The course links globalisation to the rise of multinationals.
 
-The statement sounds plausible but fails on precision, so it is false.'] WHERE case_id = 'CASE 3.5.41' AND tier = 'full';
-UPDATE public.economics_cases SET tactical_explanations = ARRAY['TRUE — This statement is correct. Globalisation is not limited to manufacturing and applies to cross-border enterprise generally.
+The mislabelled category or reversed comparison is enough to reject the claim.
 
-The relevant theory comes from local, national, and international business scope. Identify which definition or relationship the sentence is trying to test before deciding true or false.
+The statement is false.
+', 'FALSE — International or multinational firms make and/or sell in more than one country. That brings longer supply chains and multiple cultures, languages, currencies, and legal systems.
 
-Applied carefully, globalisation concerns multinational activity broadly, not factories alone. Nothing in the sentence stretches the concept beyond its standard use.
+Multiple legal systems still apply across countries.
 
-Every part of the claim aligns with the standard concept, so the statement stands.', 'TRUE — Evaluated against the textbook standard, this assertion is correct. Undercapitalisation remains a risk when local firms cannot finance wider marketing campaigns.
+The mislabelled category or reversed comparison is enough to reject the claim.
 
-The topic is local, national, and international business scope, but the decisive skill here is reading quantifiers. Words such as never, always, only, or all turn a generally true idea into a claim that can be rejected by one routine counterexample.
+The statement is false.
+', 'TRUE — International or multinational firms make and/or sell in more than one country. That brings longer supply chains and multiple cultures, languages, currencies, and legal systems.
 
-Applied carefully, limited funds restrict outreach beyond immediate markets. Nothing in the sentence stretches the concept beyond its standard use.
+Each operating country adds compliance obligations internationally.
 
-The reasoning chain is complete, so mark the statement true.', 'FALSE — This statement is false. Regional development grants convert recipients into multinationals.
+The sentence therefore reports the concept accurately for this item.
 
-The relevant theory comes from local, national, and international business scope. Identify which definition or relationship the sentence is trying to test before deciding true or false.
+The statement is true.
+', 'FALSE — Local and regional firms operate in a limited geographic area with customers nearby. Scope is about territory and customer reach, not staff count alone.
 
-The statement overreaches because regional grants support limited-area firms without establishing cross-border scope. The trap is to agree with the topic while missing the one detail that breaks the logic.
+Uniqueness does not prevent nearby customer pools from becoming saturated.
 
-The statement sounds plausible but fails on precision, so it is false.', 'TRUE — On the Fuhrmann definition used in the entrance exam, the sentence is correct. Regional hauliers moving goods within a defined territory stay below international scope.
+Those restricting words stretch a limited idea past what the definition allows.
 
-This statement draws on local, national, and international business scope. Treat it as a checklist against the core concept named in the stem, not as a general opinion about business.
+The statement is false.
+'] WHERE case_id = 'CASE 3.5.41' AND tier = 'full';
+UPDATE public.economics_cases SET tactical_explanations = ARRAY['TRUE — International or multinational firms make and/or sell in more than one country. That brings longer supply chains and multiple cultures, languages, currencies, and legal systems.
 
-In this setting, territory-bound haulage without cross-border routes is regional. The wording matches the textbook relationship without adding extra conditions.
+Globalisation concerns multinational activity broadly, not factories alone.
 
-The reasoning chain is complete, so mark the statement true.', 'TRUE — This statement is correct. Manufacturing abroad while selling at home still involves international production scope.
+The sentence therefore reports the concept accurately for this item.
 
-The relevant theory comes from local, national, and international business scope. Identify which definition or relationship the sentence is trying to test before deciding true or false.
+The statement is true.
+', 'TRUE — Local and regional firms operate in a limited geographic area with customers nearby. Scope is about territory and customer reach, not staff count alone.
 
-Applied carefully, foreign manufacturing crosses national boundaries in the make-or-sell framework. Nothing in the sentence stretches the concept beyond its standard use.
+Limited funds restrict outreach beyond immediate markets.
 
-The reasoning chain is complete, so mark the statement true.'] WHERE case_id = 'CASE 3.5.42' AND tier = 'full';
-UPDATE public.economics_cases SET tactical_explanations = ARRAY['FALSE — Evaluated against the textbook standard, this assertion is false. Undercapitalisation is irrelevant once a local firm obtains a bank overdraft.
+The sentence therefore reports the concept accurately for this item.
 
-The relevant theory comes from local, national, and international business scope. Identify which definition or relationship the sentence is trying to test before deciding true or false.
+The statement is true.
+', 'FALSE — Local and regional firms operate in a limited geographic area with customers nearby. Scope is about territory and customer reach, not staff count alone. International or multinational firms make and/or sell in more than one country. That brings longer supply chains and multiple cultures, languages, currencies, and legal systems.
 
-The statement overreaches because overdraft access does not fully remove structural capital constraints. The trap is to agree with the topic while missing the one detail that breaks the logic.
+Regional grants support limited-area firms without establishing cross-border scope.
 
-Once the overclaim or mislabel is exposed, the only consistent answer is false.', 'TRUE — The claim is correct. National rail freight on domestic routes reflects national operating scope.
+Once the defining feature is restored, the assertion falls away.
 
-This statement draws on local, national, and international business scope. Treat it as a checklist against the core concept named in the stem, not as a general opinion about business.
+The statement is false.
+', 'TRUE — Local and regional firms operate in a limited geographic area with customers nearby. Scope is about territory and customer reach, not staff count alone. International or multinational firms make and/or sell in more than one country. That brings longer supply chains and multiple cultures, languages, currencies, and legal systems.
 
-In this setting, domestic route networks fit national classification. The wording matches the textbook relationship without adding extra conditions.
+Territory-bound haulage without cross-border routes is regional.
 
-Every part of the claim aligns with the standard concept, so the statement stands.', 'FALSE — Evaluated against the textbook standard, this assertion is false. International firms avoid currency issues by invoicing only in the home currency abroad.
+The sentence therefore reports the concept accurately for this item.
 
-The relevant theory comes from local, national, and international business scope. Identify which definition or relationship the sentence is trying to test before deciding true or false.
+The statement is true.
+', 'TRUE — International or multinational firms make and/or sell in more than one country. That brings longer supply chains and multiple cultures, languages, currencies, and legal systems.
 
-The statement overreaches because cross-border trade still involves currency conversion and exposure. The trap is to agree with the topic while missing the one detail that breaks the logic.
+Foreign manufacturing crosses national boundaries in the make-or-sell framework.
 
-Because the decisive detail is wrong, mark the statement false.', 'FALSE — This statement is false. Selling in two countries is still national if both countries share a border.
+The sentence therefore reports the concept accurately for this item.
 
-Here you must apply ideas from local, national, and international business scope to a concrete situation rather than recite a definition from memory. Ownership, customer type, stakeholder group, or country of production usually decides the verdict.
+The statement is true.
+'] WHERE case_id = 'CASE 3.5.42' AND tier = 'full';
+UPDATE public.economics_cases SET tactical_explanations = ARRAY['FALSE — Local and regional firms operate in a limited geographic area with customers nearby. Scope is about territory and customer reach, not staff count alone.
 
-The statement overreaches because cross-border sales indicate international scope regardless of adjacency. The trap is to agree with the topic while missing the one detail that breaks the logic.
+Overdraft access does not fully remove structural capital constraints.
 
-The statement sounds plausible but fails on precision, so it is false.', 'FALSE — The claim is false. National wholesalers are local because each warehouse serves nearby shops.
+In the case setting — limited capital makes it harder for a local firm to expand its market area — the sentence mislabels the category or overreaches.
 
-The scenario is a worked example of local, national, and international business scope. Translate the story into the textbook category first; only then judge whether the sentence describes that category accurately.
+The mislabelled category or reversed comparison is enough to reject the claim.
 
-Applied to this claim, country-wide domestic logistics align with national scope. That is why the sentence does not survive careful reading.
+The statement is false.
+', 'TRUE — National scope means operating within the home country rather than across foreign markets. It is wider than a single district but not continental or worldwide by definition.
 
-The statement sounds plausible but fails on precision, so it is false.'] WHERE case_id = 'CASE 3.5.43' AND tier = 'full';
-UPDATE public.economics_cases SET tactical_explanations = ARRAY['TRUE — The claim is correct. International joint ventures abroad signal cross-border enterprise activity.
+Domestic route networks fit national classification.
 
-This statement draws on local, national, and international business scope. Treat it as a checklist against the core concept named in the stem, not as a general opinion about business.
+The scenario (limited capital makes it harder for a local firm to expand its market area) supports that classification.
 
-In this setting, foreign production alliances exceed purely national scope. The wording matches the textbook relationship without adding extra conditions.
+Nothing in the keyed reading contradicts the chapter framing used here, so the claim holds.
 
-The reasoning chain is complete, so mark the statement true.', 'FALSE — On the Fuhrmann definition used in the entrance exam, the sentence is false. A provincial dairy is national because it supplies an entire province.
+The statement is true.
+', 'FALSE — International or multinational firms make and/or sell in more than one country. That brings longer supply chains and multiple cultures, languages, currencies, and legal systems.
 
-The scenario is a worked example of local, national, and international business scope. Translate the story into the textbook category first; only then judge whether the sentence describes that category accurately.
+Cross-border trade still involves currency conversion and exposure.
 
-Applied to this claim, provincial reach within one country fits regional scope, not national country-wide scope alone. That is why the sentence does not survive careful reading.
+Against the scenario (limited capital makes it harder for a local firm to expand its market area), the claim attaches the wrong label.
 
-The statement sounds plausible but fails on precision, so it is false.', 'FALSE — This statement is false. Multinational scope requires identical products in every foreign market.
+The absolute wording is what breaks the claim once the correct test is applied.
 
-The topic is local, national, and international business scope, but the decisive skill here is reading quantifiers. Words such as never, always, only, or all turn a generally true idea into a claim that can be rejected by one routine counterexample.
+The statement is false.
+', 'FALSE — National scope means operating within the home country rather than across foreign markets. It is wider than a single district but not continental or worldwide by definition.
 
-The statement overreaches because make-or-sell in more than one country suffices without uniform product lines. The trap is to agree with the topic while missing the one detail that breaks the logic.
+Cross-border sales indicate international scope regardless of adjacency.
 
-Watch the absolute wording "every": exam statements often sound plausible until a single scope word turns an otherwise familiar idea into an overclaim.
+Against the scenario (limited capital makes it harder for a local firm to expand its market area), the claim attaches the wrong label.
 
-Because the decisive detail is wrong, mark the statement false.', 'TRUE — The claim is correct. Local grocers depending on nearby residents illustrate customer proximity in local scope.
+The mislabelled category or reversed comparison is enough to reject the claim.
 
-This statement draws on local, national, and international business scope. Treat it as a checklist against the core concept named in the stem, not as a general opinion about business.
+The statement is false.
+', 'FALSE — Local and regional firms operate in a limited geographic area with customers nearby. Scope is about territory and customer reach, not staff count alone. National scope means operating within the home country rather than across foreign markets. It is wider than a single district but not continental or worldwide by definition.
 
-In this setting, most revenue from proximate residents indicates local/regional scope. The wording matches the textbook relationship without adding extra conditions.
+Country-wide domestic logistics align with national scope.
 
-The reasoning chain is complete, so mark the statement true.', 'TRUE — On the Fuhrmann definition used in the entrance exam, the sentence is correct. Multinational groups coordinate languages and currencies across border-spanning operations.
+In the case setting — limited capital makes it harder for a local firm to expand its market area — the sentence mislabels the category or overreaches.
 
-This statement draws on local, national, and international business scope. Treat it as a checklist against the core concept named in the stem, not as a general opinion about business.
+Once the defining feature is restored, the assertion falls away.
 
-In this setting, language and currency management intensify with cross-border activity. The wording matches the textbook relationship without adding extra conditions.
+The statement is false.
+'] WHERE case_id = 'CASE 3.5.43' AND tier = 'full';
+UPDATE public.economics_cases SET tactical_explanations = ARRAY['TRUE — International or multinational firms make and/or sell in more than one country. That brings longer supply chains and multiple cultures, languages, currencies, and legal systems.
 
-The reasoning chain is complete, so mark the statement true.'] WHERE case_id = 'CASE 3.5.44' AND tier = 'full';
-UPDATE public.economics_cases SET tactical_explanations = ARRAY['TRUE — The claim is correct. National procurement rules applying within one country support national scope labelling.
+Foreign production alliances exceed purely national scope.
 
-This statement draws on local, national, and international business scope. Treat it as a checklist against the core concept named in the stem, not as a general opinion about business.
+Nothing in the keyed reading contradicts the chapter framing used here, so the claim holds.
 
-In this setting, domestic-only tender rules align with national activity. The wording matches the textbook relationship without adding extra conditions.
+The statement is true.
+', 'FALSE — National scope means operating within the home country rather than across foreign markets. It is wider than a single district but not continental or worldwide by definition.
 
-The reasoning chain is complete, so mark the statement true.', 'TRUE — Evaluated against the textbook standard, this assertion is correct. Local service radius confined to one town defines local geographic scope.
+Provincial reach within one country fits regional scope, not national country-wide scope alone.
 
-The relevant theory comes from local, national, and international business scope. Identify which definition or relationship the sentence is trying to test before deciding true or false.
+The mislabelled category or reversed comparison is enough to reject the claim.
 
-Applied carefully, town-limited service fits local classification. Nothing in the sentence stretches the concept beyond its standard use.
+The statement is false.
+', 'FALSE — International or multinational firms make and/or sell in more than one country. That brings longer supply chains and multiple cultures, languages, currencies, and legal systems.
 
-The reasoning chain is complete, so mark the statement true.', 'TRUE — Evaluated against the textbook standard, this assertion is correct. Globalisation and multinational expansion are presented as connected developments.
+Make-or-sell in more than one country suffices without uniform product lines.
 
-The relevant theory comes from local, national, and international business scope. Identify which definition or relationship the sentence is trying to test before deciding true or false.
+Once the defining feature is restored, the assertion falls away.
 
-Applied carefully, pairs globalisation with rising multinationals. Nothing in the sentence stretches the concept beyond its standard use.
+The statement is false.
+', 'TRUE — Local and regional firms operate in a limited geographic area with customers nearby. Scope is about territory and customer reach, not staff count alone.
 
-No qualifying word breaks the definition or scenario, so the answer is true.', 'TRUE — This statement is correct. Regional exporters with substantial foreign sales cross into international scope.
+Most revenue from proximate residents indicates local/regional scope.
 
-The relevant theory comes from local, national, and international business scope. Identify which definition or relationship the sentence is trying to test before deciding true or false.
+The sentence therefore reports the concept accurately for this item.
 
-Applied carefully, meaningful export sales beyond the home country affect international classification. Nothing in the sentence stretches the concept beyond its standard use.
+The statement is true.
+', 'TRUE — International or multinational firms make and/or sell in more than one country. That brings longer supply chains and multiple cultures, languages, currencies, and legal systems.
 
-No qualifying word breaks the definition or scenario, so the answer is true.', 'TRUE — Evaluated against the textbook standard, this assertion is correct. Cross-border currency use complicates international pricing and settlement.
+Language and currency management intensify with cross-border activity.
 
-The relevant theory comes from local, national, and international business scope. Identify which definition or relationship the sentence is trying to test before deciding true or false.
+Nothing in the keyed reading contradicts the chapter framing used here, so the claim holds.
 
-Applied carefully, currency differences are integral to international trade. Nothing in the sentence stretches the concept beyond its standard use.
+The statement is true.
+'] WHERE case_id = 'CASE 3.5.44' AND tier = 'full';
+UPDATE public.economics_cases SET tactical_explanations = ARRAY['TRUE — National scope means operating within the home country rather than across foreign markets. It is wider than a single district but not continental or worldwide by definition.
 
-The reasoning chain is complete, so mark the statement true.'] WHERE case_id = 'CASE 3.5.45' AND tier = 'full';
-UPDATE public.economics_cases SET tactical_explanations = ARRAY['TRUE — Evaluated against the textbook standard, this assertion is correct. Regional firms within one province share geographically limited customer pools.
+Domestic-only tender rules align with national activity.
 
-The relevant theory comes from local, national, and international business scope. Identify which definition or relationship the sentence is trying to test before deciding true or false.
+Under that classification the assertion describes the situation correctly.
 
-Applied carefully, provincial operators draw from bounded regional markets. Nothing in the sentence stretches the concept beyond its standard use.
+The statement is true.
+', 'TRUE — Local and regional firms operate in a limited geographic area with customers nearby. Scope is about territory and customer reach, not staff count alone.
 
-The reasoning chain is complete, so mark the statement true.', 'TRUE — Evaluated against the textbook standard, this assertion is correct. International firms encounter multiple economic systems alongside legal differences.
+Town-limited service fits local classification.
 
-The relevant theory comes from local, national, and international business scope. Identify which definition or relationship the sentence is trying to test before deciding true or false.
+Nothing in the keyed reading contradicts the chapter framing used here, so the claim holds.
 
-Applied carefully, economic and legal variation accompanies cross-border operations. Nothing in the sentence stretches the concept beyond its standard use.
+The statement is true.
+', 'TRUE — International or multinational firms make and/or sell in more than one country. That brings longer supply chains and multiple cultures, languages, currencies, and legal systems.
 
-Every part of the claim aligns with the standard concept, so the statement stands.', 'TRUE — The claim is correct. National airlines depending on domestic airports operate at national scope.
+Pairs globalisation with rising multinationals.
 
-This statement draws on local, national, and international business scope. Treat it as a checklist against the core concept named in the stem, not as a general opinion about business.
+Nothing in the keyed reading contradicts the chapter framing used here, so the claim holds.
 
-In this setting, domestic airport networks reflect national geographic reach. The wording matches the textbook relationship without adding extra conditions.
+The statement is true.
+', 'TRUE — Local and regional firms operate in a limited geographic area with customers nearby. Scope is about territory and customer reach, not staff count alone. International or multinational firms make and/or sell in more than one country. That brings longer supply chains and multiple cultures, languages, currencies, and legal systems.
 
-Every part of the claim aligns with the standard concept, so the statement stands.', 'FALSE — This statement is false. Globalisation means local businesses cease to exist in the home economy.
+Meaningful export sales beyond the home country affect international classification.
 
-The relevant theory comes from local, national, and international business scope. Identify which definition or relationship the sentence is trying to test before deciding true or false.
+Under that classification the assertion describes the situation correctly.
 
-The statement overreaches because local firms continue alongside rising multinationals. The trap is to agree with the topic while missing the one detail that breaks the logic.
+The statement is true.
+', 'TRUE — International or multinational firms make and/or sell in more than one country. That brings longer supply chains and multiple cultures, languages, currencies, and legal systems.
 
-The statement sounds plausible but fails on precision, so it is false.', 'FALSE — On the Fuhrmann definition used in the entrance exam, the sentence is false. Local scope excludes service businesses because services have no geography.
+Currency differences are integral to international trade.
 
-The scenario is a worked example of local, national, and international business scope. Translate the story into the textbook category first; only then judge whether the sentence describes that category accurately.
+Under that classification the assertion describes the situation correctly.
 
-Applied to this claim, service firms can operate locally with nearby customers. That is why the sentence does not survive careful reading.
+The statement is true.
+'] WHERE case_id = 'CASE 3.5.45' AND tier = 'full';
+UPDATE public.economics_cases SET tactical_explanations = ARRAY['TRUE — Local and regional firms operate in a limited geographic area with customers nearby. Scope is about territory and customer reach, not staff count alone.
 
-The statement sounds plausible but fails on precision, so it is false.'] WHERE case_id = 'CASE 3.5.46' AND tier = 'full';
-UPDATE public.economics_cases SET tactical_explanations = ARRAY['FALSE — The claim is false. National procurement rules prove international scope because governments are global actors.
+Provincial operators draw from bounded regional markets.
 
-The scenario is a worked example of local, national, and international business scope. Translate the story into the textbook category first; only then judge whether the sentence describes that category accurately.
+The sentence therefore reports the concept accurately for this item.
 
-Applied to this claim, domestic-only tendering within one country remains national scope. That is why the sentence does not survive careful reading.
+The statement is true.
+', 'TRUE — International or multinational firms make and/or sell in more than one country. That brings longer supply chains and multiple cultures, languages, currencies, and legal systems.
 
-The statement sounds plausible but fails on precision, so it is false.', 'FALSE — On the Fuhrmann definition used in the entrance exam, the sentence is false. International supply chains are shorter than local ones due to container shipping.
+Economic and legal variation accompanies cross-border operations.
 
-The section on local, national, and international business scope frequently contrasts two similar ideas side by side. A comparison statement is true only if the relationship is stated in the right direction and applies to the right concept pair.
+Under that classification the assertion describes the situation correctly.
 
-Applied to this claim, states international operations lengthen supply chains. That is why the sentence does not survive careful reading.
+The statement is true.
+', 'TRUE — National scope means operating within the home country rather than across foreign markets. It is wider than a single district but not continental or worldwide by definition.
 
-Students often remember that two concepts differ but swap the direction of the comparison. Verify which side of the pair is longer, larger, riskier, or more regulated.
+Domestic airport networks reflect national geographic reach.
 
-The statement sounds plausible but fails on precision, so it is false.', 'TRUE — The claim is correct. Local market saturation limits growth when nearby demand is largely met.
+Under that classification the assertion describes the situation correctly.
 
-The scenario is a worked example of local, national, and international business scope. Translate the story into the textbook category first; only then judge whether the sentence describes that category accurately.
+The statement is true.
+', 'FALSE — Local and regional firms operate in a limited geographic area with customers nearby. Scope is about territory and customer reach, not staff count alone. International or multinational firms make and/or sell in more than one country. That brings longer supply chains and multiple cultures, languages, currencies, and legal systems.
 
-In this setting, exhausted proximate demand constrains local expansion. The wording matches the textbook relationship without adding extra conditions.
+Local firms continue alongside rising multinationals.
 
-No qualifying word breaks the definition or scenario, so the answer is true.', 'FALSE — Evaluated against the textbook standard, this assertion is false. A components manufacturer is classified as national because most staff work in Austria.
+Swap in the textbook criterion and the sentence no longer describes the case.
 
-Start from the textbook definition in local, national, and international business scope. A statement is true only if every scope word in the definition is respected—location, purpose, distribution rule, or time horizon.
+The statement is false.
+', 'FALSE — Local and regional firms operate in a limited geographic area with customers nearby. Scope is about territory and customer reach, not staff count alone.
 
-The statement overreaches because cross-border production and sales make a components manufacturer a multinational example. The trap is to agree with the topic while missing the one detail that breaks the logic.
+Service firms can operate locally with nearby customers.
 
-Near-miss definitions are deliberately written to sound familiar. Compare the statement phrase by phrase with the book version instead of trusting the overall topic.
+Swap in the textbook criterion and the sentence no longer describes the case.
 
-Because the decisive detail is wrong, mark the statement false.', 'FALSE — On the Fuhrmann definition used in the entrance exam, the sentence is false. Regional competitors prove multinational scope because rivalry crosses town boundaries.
+The statement is false.
+'] WHERE case_id = 'CASE 3.5.46' AND tier = 'full';
+UPDATE public.economics_cases SET tactical_explanations = ARRAY['FALSE — International or multinational firms make and/or sell in more than one country. That brings longer supply chains and multiple cultures, languages, currencies, and legal systems.
 
-The scenario is a worked example of local, national, and international business scope. Translate the story into the textbook category first; only then judge whether the sentence describes that category accurately.
+Domestic-only tendering within one country remains national scope.
 
-Applied to this claim, regional rivalry within a limited area does not establish international scope. That is why the sentence does not survive careful reading.
+Once the defining feature is restored, the assertion falls away.
 
-Because the decisive detail is wrong, mark the statement false.'] WHERE case_id = 'CASE 3.5.47' AND tier = 'full';
-UPDATE public.economics_cases SET tactical_explanations = ARRAY['TRUE — Evaluated against the textbook standard, this assertion is correct. Multinational operations distribute stakeholders across several countries.
+The statement is false.
+', 'FALSE — Local and regional firms operate in a limited geographic area with customers nearby. Scope is about territory and customer reach, not staff count alone. International or multinational firms make and/or sell in more than one country. That brings longer supply chains and multiple cultures, languages, currencies, and legal systems.
 
-The relevant theory comes from local, national, and international business scope. Identify which definition or relationship the sentence is trying to test before deciding true or false.
+States international operations lengthen supply chains.
 
-Applied carefully, stakeholder geography spreads with cross-border enterprise activity. Nothing in the sentence stretches the concept beyond its standard use.
+Swap in the textbook criterion and the sentence no longer describes the case.
 
-Every part of the claim aligns with the standard concept, so the statement stands.', 'FALSE — The claim is false. Culture differences matter only to consumer brands and not to B2B multinationals.
+The statement is false.
+', 'TRUE — Local and regional firms operate in a limited geographic area with customers nearby. Scope is about territory and customer reach, not staff count alone.
 
-This statement draws on local, national, and international business scope. Treat it as a checklist against the core concept named in the stem, not as a general opinion about business.
+Exhausted proximate demand constrains local expansion.
 
-Applied to this claim, cultural factors apply to international business broadly. That is why the sentence does not survive careful reading.
+Under that classification the assertion describes the situation correctly.
 
-Once the overclaim or mislabel is exposed, the only consistent answer is false.', 'FALSE — On the Fuhrmann definition used in the entrance exam, the sentence is false. Local cafés are national when they appear on a city-wide delivery app.
+The statement is true.
+', 'FALSE — National scope means operating within the home country rather than across foreign markets. It is wider than a single district but not continental or worldwide by definition.
 
-The scenario is a worked example of local, national, and international business scope. Translate the story into the textbook category first; only then judge whether the sentence describes that category accurately.
+Cross-border production and sales make a components manufacturer a multinational example.
 
-Applied to this claim, city-wide delivery may still be local/regional unless sales span the country. That is why the sentence does not survive careful reading.
+Once the defining feature is restored, the assertion falls away.
 
-Because the decisive detail is wrong, mark the statement false.', 'FALSE — Evaluated against the textbook standard, this assertion is false. Undercapitalisation is confined to micro firms with fewer than five employees.
+The statement is false.
+', 'FALSE — Local and regional firms operate in a limited geographic area with customers nearby. Scope is about territory and customer reach, not staff count alone. International or multinational firms make and/or sell in more than one country. That brings longer supply chains and multiple cultures, languages, currencies, and legal systems.
 
-The relevant theory comes from local, national, and international business scope. Identify which definition or relationship the sentence is trying to test before deciding true or false.
+Regional rivalry within a limited area does not establish international scope.
 
-The statement overreaches because geographic focus rather than headcount alone links undercapitalisation to local/regional firms. The trap is to agree with the topic while missing the one detail that breaks the logic.
+The mislabelled category or reversed comparison is enough to reject the claim.
 
-Because the decisive detail is wrong, mark the statement false.', 'TRUE — This statement is correct. Undercapitalisation can hinder regional firms seeking to expand beyond their territory.
+The statement is false.
+'] WHERE case_id = 'CASE 3.5.47' AND tier = 'full';
+UPDATE public.economics_cases SET tactical_explanations = ARRAY['TRUE — International or multinational firms make and/or sell in more than one country. That brings longer supply chains and multiple cultures, languages, currencies, and legal systems.
 
-The relevant theory comes from local, national, and international business scope. Identify which definition or relationship the sentence is trying to test before deciding true or false.
+Stakeholder geography spreads with cross-border enterprise activity.
 
-Applied carefully, capital limits affect geographically bounded firms beyond purely local ones. Nothing in the sentence stretches the concept beyond its standard use.
+Nothing in the keyed reading contradicts the chapter framing used here, so the claim holds.
 
-The reasoning chain is complete, so mark the statement true.'] WHERE case_id = 'CASE 3.5.48' AND tier = 'full';
-UPDATE public.economics_cases SET tactical_explanations = ARRAY['FALSE — This statement is false. International joint ventures are national when the partner is from a neighbouring country.
+The statement is true.
+', 'FALSE — International or multinational firms make and/or sell in more than one country. That brings longer supply chains and multiple cultures, languages, currencies, and legal systems.
 
-Here you must apply ideas from local, national, and international business scope to a concrete situation rather than recite a definition from memory. Ownership, customer type, stakeholder group, or country of production usually decides the verdict.
+Cultural factors apply to international business broadly.
 
-The statement overreaches because foreign production partnerships indicate international activity. The trap is to agree with the topic while missing the one detail that breaks the logic.
+One clear counterexample under the right criterion is enough to reject the sentence.
 
-The statement sounds plausible but fails on precision, so it is false.', 'FALSE — This statement is false. Regional export shares below fifty percent mean the firm remains purely national.
+The statement is false.
+', 'FALSE — Local and regional firms operate in a limited geographic area with customers nearby. Scope is about territory and customer reach, not staff count alone. National scope means operating within the home country rather than across foreign markets. It is wider than a single district but not continental or worldwide by definition.
 
-The relevant theory comes from local, national, and international business scope. Identify which definition or relationship the sentence is trying to test before deciding true or false.
+City-wide delivery may still be local/regional unless sales span the country.
 
-The statement overreaches because any meaningful foreign sales contribute to international scope analysis. The trap is to agree with the topic while missing the one detail that breaks the logic.
+The mislabelled category or reversed comparison is enough to reject the claim.
 
-Once the overclaim or mislabel is exposed, the only consistent answer is false.', 'FALSE — On the Fuhrmann definition used in the entrance exam, the sentence is false. National scope excludes firms with foreign shareholders.
+The statement is false.
+', 'FALSE — Geographic scope classifies firms by the area in which they operate and serve customers — local/regional, national, or international.
 
-This statement draws on local, national, and international business scope. Treat it as a checklist against the core concept named in the stem, not as a general opinion about business.
+Geographic focus rather than headcount alone links undercapitalisation to local/regional firms.
 
-Applied to this claim, shareholder nationality does not determine geographic operating scope. That is why the sentence does not survive careful reading.
+Once the defining feature is restored, the assertion falls away.
 
-Once the overclaim or mislabel is exposed, the only consistent answer is false.', 'FALSE — The claim is false. Globalisation is defined as free internet access in every country.
+The statement is false.
+', 'TRUE — Local and regional firms operate in a limited geographic area with customers nearby. Scope is about territory and customer reach, not staff count alone.
 
-Although the subject matter is local, national, and international business scope, this is really a logic check on overstatement. Non-profit surpluses, mixed economies, and partial market failure are classic cases where absolute wording fails.
+Capital limits affect geographically bounded firms beyond purely local ones.
 
-Applied to this claim, defines globalisation through multinational enterprise growth. That is why the sentence does not survive careful reading.
+Nothing in the keyed reading contradicts the chapter framing used here, so the claim holds.
 
-Watch the absolute wording "every": exam statements often sound plausible until a single scope word turns an otherwise familiar idea into an overclaim.
+The statement is true.
+'] WHERE case_id = 'CASE 3.5.48' AND tier = 'full';
+UPDATE public.economics_cases SET tactical_explanations = ARRAY['FALSE — International or multinational firms make and/or sell in more than one country. That brings longer supply chains and multiple cultures, languages, currencies, and legal systems.
 
-The statement sounds plausible but fails on precision, so it is false.', 'TRUE — Evaluated against the textbook standard, this assertion is correct. Selling in the home country only, with no foreign production or sales, fits national scope.
+Foreign production partnerships indicate international activity.
 
-The relevant theory comes from local, national, and international business scope. Identify which definition or relationship the sentence is trying to test before deciding true or false.
+Swap in the textbook criterion and the sentence no longer describes the case.
 
-Applied carefully, purely domestic make-and-sell activity aligns with national classification. Nothing in the sentence stretches the concept beyond its standard use.
+The statement is false.
+', 'FALSE — Local and regional firms operate in a limited geographic area with customers nearby. Scope is about territory and customer reach, not staff count alone. National scope means operating within the home country rather than across foreign markets. It is wider than a single district but not continental or worldwide by definition.
 
-The reasoning chain is complete, so mark the statement true.'] WHERE case_id = 'CASE 3.5.49' AND tier = 'full';
-UPDATE public.economics_cases SET tactical_explanations = ARRAY['TRUE — On the Fuhrmann definition used in the entrance exam, the sentence is correct. International scope brings language management needs for customer-facing staff.
+Any meaningful foreign sales contribute to international scope analysis.
 
-This statement draws on local, national, and international business scope. Treat it as a checklist against the core concept named in the stem, not as a general opinion about business.
+Once the defining feature is restored, the assertion falls away.
 
-In this setting, language differences matter in cross-border customer contact. The wording matches the textbook relationship without adding extra conditions.
+The statement is false.
+', 'FALSE — National scope means operating within the home country rather than across foreign markets. It is wider than a single district but not continental or worldwide by definition.
 
-Every part of the claim aligns with the standard concept, so the statement stands.', 'TRUE — Evaluated against the textbook standard, this assertion is correct. Regional development grants targeting limited-area firms reflect regional policy focus.
+Shareholder nationality does not determine geographic operating scope.
 
-The relevant theory comes from local, national, and international business scope. Identify which definition or relationship the sentence is trying to test before deciding true or false.
+Swap in the textbook criterion and the sentence no longer describes the case.
 
-Applied carefully, regional support programmes aim at geographically bounded businesses. Nothing in the sentence stretches the concept beyond its standard use.
+The statement is false.
+', 'FALSE — International or multinational firms make and/or sell in more than one country. That brings longer supply chains and multiple cultures, languages, currencies, and legal systems.
 
-No qualifying word breaks the definition or scenario, so the answer is true.', 'TRUE — Evaluated against the textbook standard, this assertion is correct. Globalisation describes increasing multinational presence in the world economy.
+Defines globalisation through multinational enterprise growth.
 
-The relevant theory comes from local, national, and international business scope. Identify which definition or relationship the sentence is trying to test before deciding true or false.
+Swap in the textbook criterion and the sentence no longer describes the case.
 
-Applied carefully, rising multinationals underpin the course globalisation concept. Nothing in the sentence stretches the concept beyond its standard use.
+The statement is false.
+', 'TRUE — National scope means operating within the home country rather than across foreign markets. It is wider than a single district but not continental or worldwide by definition.
 
-Every part of the claim aligns with the standard concept, so the statement stands.', 'TRUE — The claim is correct. Local/regional scope combines limited operating area with chiefly nearby customers.
+Purely domestic make-and-sell activity aligns with national classification.
 
-This statement draws on local, national, and international business scope. Treat it as a checklist against the core concept named in the stem, not as a general opinion about business.
+The sentence therefore reports the concept accurately for this item.
 
-In this setting, both area and customer proximity define local/regional classification. The wording matches the textbook relationship without adding extra conditions.
+The statement is true.
+'] WHERE case_id = 'CASE 3.5.49' AND tier = 'full';
+UPDATE public.economics_cases SET tactical_explanations = ARRAY['TRUE — International or multinational firms make and/or sell in more than one country. That brings longer supply chains and multiple cultures, languages, currencies, and legal systems.
 
-Every part of the claim aligns with the standard concept, so the statement stands.', 'TRUE — Evaluated against the textbook standard, this assertion is correct. National scale lengthens supply chains relative to neighbourhood producers.
+Language differences matter in cross-border customer contact.
 
-The relevant theory comes from local, national, and international business scope. Identify which definition or relationship the sentence is trying to test before deciding true or false.
+Nothing in the keyed reading contradicts the chapter framing used here, so the claim holds.
 
-Applied carefully, country-wide activity extends chains beyond local suppliers. Nothing in the sentence stretches the concept beyond its standard use.
+The statement is true.
+', 'TRUE — Local and regional firms operate in a limited geographic area with customers nearby. Scope is about territory and customer reach, not staff count alone.
 
-The reasoning chain is complete, so mark the statement true.'] WHERE case_id = 'CASE 3.5.50' AND tier = 'full';
+Regional support programmes aim at geographically bounded businesses.
+
+The sentence therefore reports the concept accurately for this item.
+
+The statement is true.
+', 'TRUE — International or multinational firms make and/or sell in more than one country. That brings longer supply chains and multiple cultures, languages, currencies, and legal systems.
+
+Rising multinationals underpin the course globalisation concept.
+
+Nothing in the keyed reading contradicts the chapter framing used here, so the claim holds.
+
+The statement is true.
+', 'TRUE — Local and regional firms operate in a limited geographic area with customers nearby. Scope is about territory and customer reach, not staff count alone.
+
+Both area and customer proximity define local/regional classification.
+
+Under that classification the assertion describes the situation correctly.
+
+The statement is true.
+', 'TRUE — National scope means operating within the home country rather than across foreign markets. It is wider than a single district but not continental or worldwide by definition.
+
+Country-wide activity extends chains beyond local suppliers.
+
+Nothing in the keyed reading contradicts the chapter framing used here, so the claim holds.
+
+The statement is true.
+'] WHERE case_id = 'CASE 3.5.50' AND tier = 'full';

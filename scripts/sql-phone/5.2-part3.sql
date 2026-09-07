@@ -1,820 +1,903 @@
 -- Update expanded explanations for 5.2-part3 (25 cases).
 -- Safe to re-run: only updates tactical_explanations.
 
-UPDATE public.economics_cases SET tactical_explanations = ARRAY['FALSE — On the Fuhrmann definition used in the entrance exam, the sentence is false. Market share is unchanged when a firm''s sales double and all rivals'' sales double.
+UPDATE public.economics_cases SET tactical_explanations = ARRAY['FALSE — Market share is the firm''s relative weight in a market compared with competitors. Gaining and keeping share is a core marketing objective because it signals competitiveness.
 
-Although the subject matter is objectives of marketing, this is really a logic check on overstatement. Non-profit surpluses, mixed economies, and partial market failure are classic cases where absolute wording fails.
+On this stem (Market share): equal proportional growth leaves share unchanged.
 
-Applied to this claim, equal proportional growth leaves share unchanged. That is why the sentence does not survive careful reading.
+Swap in the textbook criterion and the sentence no longer describes the case.
 
-Watch the absolute wording "all": exam statements often sound plausible until a single scope word turns an otherwise familiar idea into an overclaim.
+The statement is false.
+', 'TRUE — A unique selling proposition (USP) makes a product — or the way it is promoted and perceived — stand out from similar rivals. Branding supports that differentiation so the offer seems special, unique, or better, which helps attract loyal customers.
 
-Once the overclaim or mislabel is exposed, the only consistent answer is false.', 'TRUE — Evaluated against the textbook standard, this assertion is correct. Market share maintenance is harder when differentiated rivals win satisfied loyal buyers.
+On this stem (Market share): rival differentiation and loyalty challenge share maintenance.
 
-Here you must apply ideas from objectives of marketing to a concrete situation rather than recite a definition from memory. Ownership, customer type, stakeholder group, or country of production usually decides the verdict.
+The sentence therefore reports the concept accurately for this case.
 
-Applied carefully, rival differentiation and loyalty challenge share maintenance. Nothing in the sentence stretches the concept beyond its standard use.
+The statement is true.
+', 'FALSE — Sales generate the revenues a business needs to cover production costs and to support profit. Maintaining or increasing sales is therefore a standard marketing objective.
 
-The reasoning chain is complete, so mark the statement true.', 'FALSE — This statement is false. Maintaining share is unnecessary when absolute sales targets are met.
+Share adds relative competitiveness information beyond absolute sales.
 
-Here you must apply ideas from objectives of marketing to a concrete situation rather than recite a definition from memory. Ownership, customer type, stakeholder group, or country of production usually decides the verdict.
+Once the defining feature is restored, the assertion falls away.
 
-The statement overreaches because share adds relative competitiveness information beyond absolute sales. The trap is to agree with the topic while missing the one detail that breaks the logic.
+The statement is false.
+', 'TRUE — Sales generate the revenues a business needs to cover production costs and to support profit. Maintaining or increasing sales is therefore a standard marketing objective.
 
-Once the overclaim or mislabel is exposed, the only consistent answer is false.', 'TRUE — The claim is correct. Share objectives encourage attention to competitor actions, not only internal sales.
+Share focus requires competitor awareness.
 
-This statement draws on objectives of marketing. Treat it as a checklist against the core concept named in the stem, not as a general opinion about business.
+Nothing in the wording contradicts that marketing test, so the claim is sound.
 
-In this setting, share focus requires competitor awareness. The wording matches the textbook relationship without adding extra conditions.
+The statement is true.
+', 'TRUE — Marketing objectives guide how a firm analyses its markets and tries to fulfil customer wishes and needs — including satisfaction, USP, share, sales, and profitability.
 
-The reasoning chain is complete, so mark the statement true.', 'TRUE — On the Fuhrmann definition used in the entrance exam, the sentence is correct. A market leader''s share position signals its relative importance among industry firms.
+Leaders'' share shows relative industry importance.
 
-This statement draws on objectives of marketing. Treat it as a checklist against the core concept named in the stem, not as a general opinion about business.
+Under that definition the assertion is the right description of the situation.
 
-In this setting, leaders'' share shows relative industry importance. The wording matches the textbook relationship without adding extra conditions.
+The statement is true.
+'] WHERE case_id = 'CASE 5.2.51' AND tier = 'full';
+UPDATE public.economics_cases SET tactical_explanations = ARRAY['TRUE — Profitability reimburses owners for invested capital and can be retained for reinvestment. Higher sales often support higher profit, though not without limits on costs and margins.
 
-Every part of the claim aligns with the standard concept, so the statement stands.'] WHERE case_id = 'CASE 5.2.51' AND tier = 'full';
-UPDATE public.economics_cases SET tactical_explanations = ARRAY['TRUE — Evaluated against the textbook standard, this assertion is correct. Marketing plans may set share targets alongside volume and profit goals.
+Share sits alongside volume and profit in planning.
 
-The relevant theory comes from objectives of marketing. Identify which definition or relationship the sentence is trying to test before deciding true or false.
+Under that definition the assertion is the right description of the situation.
 
-Applied carefully, share sits alongside volume and profit in planning. Nothing in the sentence stretches the concept beyond its standard use.
+The statement is true.
+', 'FALSE — Market share is the firm''s relative weight in a market compared with competitors. Gaining and keeping share is a core marketing objective because it signals competitiveness.
 
-No qualifying word breaks the definition or scenario, so the answer is true.', 'FALSE — The claim is false. Market share is measured in currency of production costs rather than sales.
+On this stem (Market share): share relates to portion of market sales, not production cost currency.
 
-The section on objectives of marketing frequently contrasts two similar ideas side by side. A comparison statement is true only if the relationship is stated in the right direction and applies to the right concept pair.
+Once the defining feature is restored, the assertion falls away.
 
-Applied to this claim, share relates to portion of market sales, not production cost currency. That is why the sentence does not survive careful reading.
+The statement is false.
+', 'FALSE — Market share is the firm''s relative weight in a market compared with competitors. Gaining and keeping share is a core marketing objective because it signals competitiveness.
 
-Students often remember that two concepts differ but swap the direction of the comparison. Verify which side of the pair is longer, larger, riskier, or more regulated.
+On this stem (market share): share decline indicates weakened relative competitiveness.
 
-Once the overclaim or mislabel is exposed, the only consistent answer is false.', 'FALSE — This statement is false. Competitiveness improves automatically when a firm reduces its market share.
+The mislabelled category or reversed comparison is enough to reject the claim.
 
-The topic is objectives of marketing, but the decisive skill here is reading quantifiers. Words such as never, always, only, or all turn a generally true idea into a claim that can be rejected by one routine counterexample.
+The statement is false.
+', 'FALSE — Market share is the firm''s relative weight in a market compared with competitors. Gaining and keeping share is a core marketing objective because it signals competitiveness.
 
-The statement overreaches because share decline indicates weakened relative competitiveness. The trap is to agree with the topic while missing the one detail that breaks the logic.
+On this stem (Market share): firms of any size may pursue share objectives.
 
-Watch the absolute wording "automatically": exam statements often sound plausible until a single scope word turns an otherwise familiar idea into an overclaim.
+One clear counterexample under the right criterion is enough to reject the sentence.
 
-Because the decisive detail is wrong, mark the statement false.', 'FALSE — This statement is false. Market share objectives apply only when the firm is the smallest competitor.
+The statement is false.
+', 'TRUE — Sales generate the revenues a business needs to cover production costs and to support profit. Maintaining or increasing sales is therefore a standard marketing objective.
 
-Here you must apply ideas from objectives of marketing to a concrete situation rather than recite a definition from memory. Ownership, customer type, stakeholder group, or country of production usually decides the verdict.
+Fast market growth can lower share even as sales rise.
 
-The statement overreaches because firms of any size may pursue share objectives. The trap is to agree with the topic while missing the one detail that breaks the logic.
+Under that definition the assertion is the right description of the situation.
 
-Because the decisive detail is wrong, mark the statement false.', 'TRUE — Evaluated against the textbook standard, this assertion is correct. Declining share despite rising sales can occur if the overall market grows faster.
+The statement is true.
+'] WHERE case_id = 'CASE 5.2.52' AND tier = 'full';
+UPDATE public.economics_cases SET tactical_explanations = ARRAY['TRUE — Marketing objectives guide how a firm analyses its markets and tries to fulfil customer wishes and needs — including satisfaction, USP, share, sales, and profitability.
 
-Here you must apply ideas from objectives of marketing to a concrete situation rather than recite a definition from memory. Ownership, customer type, stakeholder group, or country of production usually decides the verdict.
+Steady share against rivals indicates competitive holding.
 
-Applied carefully, fast market growth can lower share even as sales rise. Nothing in the sentence stretches the concept beyond its standard use.
+The sentence therefore reports the concept accurately for this case.
 
-The reasoning chain is complete, so mark the statement true.'] WHERE case_id = 'CASE 5.2.52' AND tier = 'full';
-UPDATE public.economics_cases SET tactical_explanations = ARRAY['TRUE — The claim is correct. Competitiveness indicators include whether share is holding steady against key rivals.
+The statement is true.
+', 'FALSE — Customer satisfaction matters because dissatisfied buyers will not return. Satisfied customers often become loyal and buy again, so this objective interlocks with sales, share, and profit aims.
 
-This statement draws on objectives of marketing. Treat it as a checklist against the core concept named in the stem, not as a general opinion about business.
+Share gains typically reflect competitive success, not rivals'' dissatisfaction alone.
 
-In this setting, steady share against rivals indicates competitive holding. The wording matches the textbook relationship without adding extra conditions.
+Those restricting words stretch a limited idea past what marketing allows.
 
-No qualifying word breaks the definition or scenario, so the answer is true.', 'FALSE — The claim is false. A rising share always results from improved customer dissatisfaction among rivals'' buyers.
+The statement is false.
+', 'TRUE — Marketing objectives guide how a firm analyses its markets and tries to fulfil customer wishes and needs — including satisfaction, USP, share, sales, and profitability.
 
-Although the subject matter is objectives of marketing, this is really a logic check on overstatement. Non-profit surpluses, mixed economies, and partial market failure are classic cases where absolute wording fails.
+Market analysis informs realistic share targets.
 
-Applied to this claim, share gains typically reflect competitive success, not rivals'' dissatisfaction alone. That is why the sentence does not survive careful reading.
+Nothing in the wording contradicts that marketing test, so the claim is sound.
 
-Watch the absolute wording "always": exam statements often sound plausible until a single scope word turns an otherwise familiar idea into an overclaim.
+The statement is true.
+', 'FALSE — Market share is the firm''s relative weight in a market compared with competitors. Gaining and keeping share is a core marketing objective because it signals competitiveness.
 
-The statement sounds plausible but fails on precision, so it is false.', 'TRUE — On the Fuhrmann definition used in the entrance exam, the sentence is correct. Businesses analyse markets partly to estimate achievable share objectives.
+On this stem (Market share): share derives from sales within the defined market.
 
-This statement draws on objectives of marketing. Treat it as a checklist against the core concept named in the stem, not as a general opinion about business.
+Once the defining feature is restored, the assertion falls away.
 
-In this setting, market analysis informs realistic share targets. The wording matches the textbook relationship without adding extra conditions.
+The statement is false.
+', 'FALSE — Marketing objectives guide how a firm analyses its markets and tries to fulfil customer wishes and needs — including satisfaction, USP, share, sales, and profitability.
 
-No qualifying word breaks the definition or scenario, so the answer is true.', 'FALSE — The claim is false. Market share is unrelated to sales because share excludes revenue entirely.
+Share is gained by competing within the market.
 
-Although the subject matter is objectives of marketing, this is really a logic check on overstatement. Non-profit surpluses, mixed economies, and partial market failure are classic cases where absolute wording fails.
+Swap in the textbook criterion and the sentence no longer describes the case.
 
-Applied to this claim, share derives from sales within the defined market. That is why the sentence does not survive careful reading.
+The statement is false.
+'] WHERE case_id = 'CASE 5.2.53' AND tier = 'full';
+UPDATE public.economics_cases SET tactical_explanations = ARRAY['FALSE — Market share is the firm''s relative weight in a market compared with competitors. Gaining and keeping share is a core marketing objective because it signals competitiveness.
 
-Watch the absolute wording "entirely": exam statements often sound plausible until a single scope word turns an otherwise familiar idea into an overclaim.
+On this stem (Market share): single-product firms still compete for share in their market.
 
-Once the overclaim or mislabel is exposed, the only consistent answer is false.', 'FALSE — The claim is false. Gaining share requires exiting the market temporarily.
+One clear counterexample under the right criterion is enough to reject the sentence.
 
-This statement draws on objectives of marketing. Treat it as a checklist against the core concept named in the stem, not as a general opinion about business.
+The statement is false.
+', 'FALSE — Marketing objectives guide how a firm analyses its markets and tries to fulfil customer wishes and needs — including satisfaction, USP, share, sales, and profitability.
 
-Applied to this claim, share is gained by competing within the market. That is why the sentence does not survive careful reading.
+Share comparisons with rivals assess relative position.
 
-Because the decisive detail is wrong, mark the statement false.'] WHERE case_id = 'CASE 5.2.53' AND tier = 'full';
-UPDATE public.economics_cases SET tactical_explanations = ARRAY['FALSE — On the Fuhrmann definition used in the entrance exam, the sentence is false. Market share indicators are irrelevant when the firm sells only one product.
+Swap in the textbook criterion and the sentence no longer describes the case.
 
-The scenario is a worked example of objectives of marketing. Translate the story into the textbook category first; only then judge whether the sentence describes that category accurately.
+The statement is false.
+', 'FALSE — Market share is the firm''s relative weight in a market compared with competitors. Gaining and keeping share is a core marketing objective because it signals competitiveness.
 
-Applied to this claim, single-product firms still compete for share in their market. That is why the sentence does not survive careful reading.
+On this stem (Market share): share objectives do not require acquiring all competitors.
 
-Once the overclaim or mislabel is exposed, the only consistent answer is false.', 'FALSE — The claim is false. Relative market position is assessed through share compared with competitors'' positions.
+Swap in the textbook criterion and the sentence no longer describes the case.
 
-The section on objectives of marketing frequently contrasts two similar ideas side by side. A comparison statement is true only if the relationship is stated in the right direction and applies to the right concept pair.
+The statement is false.
+', 'TRUE — Marketing objectives guide how a firm analyses its markets and tries to fulfil customer wishes and needs — including satisfaction, USP, share, sales, and profitability.
 
-Applied to this claim, share comparisons with rivals assess relative position. That is why the sentence does not survive careful reading.
+Entrant gains redistribute relative share.
 
-Students often remember that two concepts differ but swap the direction of the comparison. Verify which side of the pair is longer, larger, riskier, or more regulated.
+Nothing in the wording contradicts that marketing test, so the claim is sound.
 
-Once the overclaim or mislabel is exposed, the only consistent answer is false.', 'FALSE — On the Fuhrmann definition used in the entrance exam, the sentence is false. Market share objectives mean the firm must acquire every competitor.
+The statement is true.
+', 'FALSE — Sales generate the revenues a business needs to cover production costs and to support profit. Maintaining or increasing sales is therefore a standard marketing objective.
 
-Although the subject matter is objectives of marketing, this is really a logic check on overstatement. Non-profit surpluses, mixed economies, and partial market failure are classic cases where absolute wording fails.
+Stable share in a growing market can coincide with rising absolute sales.
 
-Applied to this claim, share objectives do not require acquiring all competitors. That is why the sentence does not survive careful reading.
+The mislabelled category or reversed comparison is enough to reject the claim.
 
-Watch the absolute wording "every": exam statements often sound plausible until a single scope word turns an otherwise familiar idea into an overclaim.
+The statement is false.
+'] WHERE case_id = 'CASE 5.2.54' AND tier = 'full';
+UPDATE public.economics_cases SET tactical_explanations = ARRAY['TRUE — Market share is the firm''s relative weight in a market compared with competitors. Gaining and keeping share is a core marketing objective because it signals competitiveness.
 
-Once the overclaim or mislabel is exposed, the only consistent answer is false.', 'TRUE — On the Fuhrmann definition used in the entrance exam, the sentence is correct. A new entrant''s share gain comes at the expense of incumbents'' relative positions.
+On this stem (Market share): share comparisons use the same market boundary.
 
-This statement draws on objectives of marketing. Treat it as a checklist against the core concept named in the stem, not as a general opinion about business.
+Under that definition the assertion is the right description of the situation.
 
-In this setting, entrant gains redistribute relative share. The wording matches the textbook relationship without adding extra conditions.
+The statement is true.
+', 'FALSE — Market share is the firm''s relative weight in a market compared with competitors. Gaining and keeping share is a core marketing objective because it signals competitiveness.
 
-Every part of the claim aligns with the standard concept, so the statement stands.', 'FALSE — Evaluated against the textbook standard, this assertion is false. A stable share in a growing market implies falling absolute sales.
+On this stem (Market share): share indicates relative sales position, not profit margin.
 
-The relevant theory comes from objectives of marketing. Identify which definition or relationship the sentence is trying to test before deciding true or false.
+The mislabelled category or reversed comparison is enough to reject the claim.
 
-The statement overreaches because stable share in a growing market can coincide with rising absolute sales. The trap is to agree with the topic while missing the one detail that breaks the logic.
+The statement is false.
+', 'FALSE — Sales generate the revenues a business needs to cover production costs and to support profit. Maintaining or increasing sales is therefore a standard marketing objective.
 
-The statement sounds plausible but fails on precision, so it is false.'] WHERE case_id = 'CASE 5.2.54' AND tier = 'full';
-UPDATE public.economics_cases SET tactical_explanations = ARRAY['TRUE — Evaluated against the textbook standard, this assertion is correct. Market share is compared among firms serving the same customer base.
+Sales revenue is needed to cover production costs.
 
-The relevant theory comes from objectives of marketing. Identify which definition or relationship the sentence is trying to test before deciding true or false.
+Swap in the textbook criterion and the sentence no longer describes the case.
 
-Applied carefully, share comparisons use the same market boundary. Nothing in the sentence stretches the concept beyond its standard use.
+The statement is false.
+', 'TRUE — Sales generate the revenues a business needs to cover production costs and to support profit. Maintaining or increasing sales is therefore a standard marketing objective.
 
-The reasoning chain is complete, so mark the statement true.', 'FALSE — Evaluated against the textbook standard, this assertion is false. Market share is a profitability measure identical to net margin.
+Shrinking markets make share defence demanding.
 
-The relevant theory comes from objectives of marketing. Identify which definition or relationship the sentence is trying to test before deciding true or false.
+Nothing in the wording contradicts that marketing test, so the claim is sound.
 
-The statement overreaches because share indicates relative sales position, not profit margin. The trap is to agree with the topic while missing the one detail that breaks the logic.
+The statement is true.
+', 'FALSE — Sales generate the revenues a business needs to cover production costs and to support profit. Maintaining or increasing sales is therefore a standard marketing objective.
 
-The statement sounds plausible but fails on precision, so it is false.', 'FALSE — Evaluated against the textbook standard, this assertion is false. Sales are unimportant to businesses because production costs are funded from share capital alone.
+Sales maintenance and growth are listed marketing objectives.
 
-Here you must apply ideas from objectives of marketing to a concrete situation rather than recite a definition from memory. Ownership, customer type, stakeholder group, or country of production usually decides the verdict.
+Once the defining feature is restored, the assertion falls away.
 
-The statement overreaches because sales revenue is needed to cover production costs. The trap is to agree with the topic while missing the one detail that breaks the logic.
+The statement is false.
+'] WHERE case_id = 'CASE 5.2.55' AND tier = 'full';
+UPDATE public.economics_cases SET tactical_explanations = ARRAY['TRUE — Marketing objectives guide how a firm analyses its markets and tries to fulfil customer wishes and needs — including satisfaction, USP, share, sales, and profitability.
 
-The statement sounds plausible but fails on precision, so it is false.', 'TRUE — This statement is correct. Holding share in a declining market may require gaining sales while the total shrinks.
+Rival moves matter for share objectives.
 
-The relevant theory comes from objectives of marketing. Identify which definition or relationship the sentence is trying to test before deciding true or false.
+The sentence therefore reports the concept accurately for this case.
 
-Applied carefully, shrinking markets make share defence demanding. Nothing in the sentence stretches the concept beyond its standard use.
+The statement is true.
+', 'TRUE — Market share is the firm''s relative weight in a market compared with competitors. Gaining and keeping share is a core marketing objective because it signals competitiveness.
 
-Every part of the claim aligns with the standard concept, so the statement stands.', 'FALSE — The claim is false. Maintaining or increasing sales is excluded from marketing objectives.
+On this stem (market share): share decline reduces indicated relative importance.
 
-This statement draws on objectives of marketing. Treat it as a checklist against the core concept named in the stem, not as a general opinion about business.
+Nothing in the wording contradicts that marketing test, so the claim is sound.
 
-Applied to this claim, sales maintenance and growth are listed marketing objectives. That is why the sentence does not survive careful reading.
+The statement is true.
+', 'FALSE — A unique selling proposition (USP) makes a product — or the way it is promoted and perceived — stand out from similar rivals. Branding supports that differentiation so the offer seems special, unique, or better, which helps attract loyal customers.
 
-Because the decisive detail is wrong, mark the statement false.'] WHERE case_id = 'CASE 5.2.55' AND tier = 'full';
-UPDATE public.economics_cases SET tactical_explanations = ARRAY['TRUE — On the Fuhrmann definition used in the entrance exam, the sentence is correct. Share objectives motivate firms to monitor rival promotional and pricing moves.
+On this stem (brand): sales provide revenues that must cover production costs.
 
-This statement draws on objectives of marketing. Treat it as a checklist against the core concept named in the stem, not as a general opinion about business.
+The mislabelled category or reversed comparison is enough to reject the claim.
 
-In this setting, rival moves matter for share objectives. The wording matches the textbook relationship without adding extra conditions.
+The statement is false.
+', 'FALSE — Sales generate the revenues a business needs to cover production costs and to support profit. Maintaining or increasing sales is therefore a standard marketing objective.
 
-No qualifying word breaks the definition or scenario, so the answer is true.', 'TRUE — Evaluated against the textbook standard, this assertion is correct. A firm''s relative importance falls when its market share declines.
+The text notes limitations on the sales-profit relationship.
 
-Here you must apply ideas from objectives of marketing to a concrete situation rather than recite a definition from memory. Ownership, customer type, stakeholder group, or country of production usually decides the verdict.
+Those restricting words stretch a limited idea past what marketing allows.
 
-Applied carefully, share decline reduces indicated relative importance. Nothing in the sentence stretches the concept beyond its standard use.
+The statement is false.
+', 'TRUE — Marketing objectives guide how a firm analyses its markets and tries to fulfil customer wishes and needs — including satisfaction, USP, share, sales, and profitability.
 
-Every part of the claim aligns with the standard concept, so the statement stands.', 'FALSE — Evaluated against the textbook standard, this assertion is false. Revenue from sales is unnecessary for covering production costs if the brand is strong.
+Share charts communicate competitiveness trends.
 
-Here you must apply ideas from objectives of marketing to a concrete situation rather than recite a definition from memory. Ownership, customer type, stakeholder group, or country of production usually decides the verdict.
+Under that definition the assertion is the right description of the situation.
 
-The statement overreaches because sales provide revenues that must cover production costs. The trap is to agree with the topic while missing the one detail that breaks the logic.
+The statement is true.
+'] WHERE case_id = 'CASE 5.2.56' AND tier = 'full';
+UPDATE public.economics_cases SET tactical_explanations = ARRAY['FALSE — Sales generate the revenues a business needs to cover production costs and to support profit. Maintaining or increasing sales is therefore a standard marketing objective.
 
-Because the decisive detail is wrong, mark the statement false.', 'FALSE — This statement is false. Higher sales always guarantee higher profit with no limitations whatsoever.
+Sales objectives concern units or revenue sold, not impressions alone.
 
-The topic is objectives of marketing, but the decisive skill here is reading quantifiers. Words such as never, always, only, or all turn a generally true idea into a claim that can be rejected by one routine counterexample.
+Once the defining feature is restored, the assertion falls away.
 
-The statement overreaches because the text notes limitations on the sales-profit relationship. The trap is to agree with the topic while missing the one detail that breaks the logic.
+The statement is false.
+', 'TRUE — Marketing objectives guide how a firm analyses its markets and tries to fulfil customer wishes and needs — including satisfaction, USP, share, sales, and profitability.
 
-Watch the absolute wording "always": exam statements often sound plausible until a single scope word turns an otherwise familiar idea into an overclaim.
+Higher share can improve channel negotiating position.
 
-The statement sounds plausible but fails on precision, so it is false.', 'TRUE — This statement is correct. Marketing staff may present share charts to show competitiveness trends to management.
+Nothing in the wording contradicts that marketing test, so the claim is sound.
 
-The relevant theory comes from objectives of marketing. Identify which definition or relationship the sentence is trying to test before deciding true or false.
+The statement is true.
+', 'FALSE — Sales generate the revenues a business needs to cover production costs and to support profit. Maintaining or increasing sales is therefore a standard marketing objective.
 
-Applied carefully, share charts communicate competitiveness trends. Nothing in the sentence stretches the concept beyond its standard use.
+Costs are covered from sales revenue, not inventory holdings alone.
 
-The reasoning chain is complete, so mark the statement true.'] WHERE case_id = 'CASE 5.2.56' AND tier = 'full';
-UPDATE public.economics_cases SET tactical_explanations = ARRAY['FALSE — On the Fuhrmann definition used in the entrance exam, the sentence is false. Sales objectives are met when promotional impressions reach a target audience count.
+The mislabelled category or reversed comparison is enough to reject the claim.
 
-The scenario is a worked example of objectives of marketing. Translate the story into the textbook category first; only then judge whether the sentence describes that category accurately.
+The statement is false.
+', 'FALSE — Sales generate the revenues a business needs to cover production costs and to support profit. Maintaining or increasing sales is therefore a standard marketing objective.
 
-Applied to this claim, sales objectives concern units or revenue sold, not impressions alone. That is why the sentence does not survive careful reading.
+Sales and profit objectives are interrelated.
 
-The statement sounds plausible but fails on precision, so it is false.', 'TRUE — The claim is correct. Gaining share can strengthen negotiating power with distributors in some industries.
+Swap in the textbook criterion and the sentence no longer describes the case.
 
-This statement draws on objectives of marketing. Treat it as a checklist against the core concept named in the stem, not as a general opinion about business.
+The statement is false.
+', 'FALSE — Market share is the firm''s relative weight in a market compared with competitors. Gaining and keeping share is a core marketing objective because it signals competitiveness.
 
-In this setting, higher share can improve channel negotiating position. The wording matches the textbook relationship without adding extra conditions.
+On this stem (market share): sales and share objectives can coexist.
 
-The reasoning chain is complete, so mark the statement true.', 'FALSE — The claim is false. A business can cover production costs without any sales if inventory is high.
+The absolute wording is what breaks the claim once the correct test is applied.
 
-The scenario is a worked example of objectives of marketing. Translate the story into the textbook category first; only then judge whether the sentence describes that category accurately.
+The statement is false.
+'] WHERE case_id = 'CASE 5.2.57' AND tier = 'full';
+UPDATE public.economics_cases SET tactical_explanations = ARRAY['FALSE — Sales generate the revenues a business needs to cover production costs and to support profit. Maintaining or increasing sales is therefore a standard marketing objective.
 
-Applied to this claim, costs are covered from sales revenue, not inventory holdings alone. That is why the sentence does not survive careful reading.
+Costs must be compared to revenue; low prices may fail to cover costs.
 
-The statement sounds plausible but fails on precision, so it is false.', 'FALSE — The claim is false. Increasing sales is unrelated to marketing objectives on profitability.
+Swap in the textbook criterion and the sentence no longer describes the case.
 
-This statement draws on objectives of marketing. Treat it as a checklist against the core concept named in the stem, not as a general opinion about business.
+The statement is false.
+', 'FALSE — Sales generate the revenues a business needs to cover production costs and to support profit. Maintaining or increasing sales is therefore a standard marketing objective.
 
-Applied to this claim, sales and profit objectives are interrelated. That is why the sentence does not survive careful reading.
+On this stem (targeting): sales objectives require actual sales, not awareness alone.
 
-Because the decisive detail is wrong, mark the statement false.', 'FALSE — Evaluated against the textbook standard, this assertion is false. Sales volume objectives apply only to firms that do not pursue market share.
+The mislabelled category or reversed comparison is enough to reject the claim.
 
-The relevant theory comes from objectives of marketing. Identify which definition or relationship the sentence is trying to test before deciding true or false.
+The statement is false.
+', 'TRUE — Marketing objectives guide how a firm analyses its markets and tries to fulfil customer wishes and needs — including satisfaction, USP, share, sales, and profitability.
 
-The statement overreaches because sales and share objectives can coexist. The trap is to agree with the topic while missing the one detail that breaks the logic.
+Share summarises competitive standing.
 
-Because the decisive detail is wrong, mark the statement false.'] WHERE case_id = 'CASE 5.2.57' AND tier = 'full';
-UPDATE public.economics_cases SET tactical_explanations = ARRAY['FALSE — The claim is false. Revenue from sales exceeds production costs automatically at any positive unit price.
+The sentence therefore reports the concept accurately for this case.
 
-Although the subject matter is objectives of marketing, this is really a logic check on overstatement. Non-profit surpluses, mixed economies, and partial market failure are classic cases where absolute wording fails.
+The statement is true.
+', 'FALSE — Sales generate the revenues a business needs to cover production costs and to support profit. Maintaining or increasing sales is therefore a standard marketing objective.
 
-Applied to this claim, costs must be compared to revenue; low prices may fail to cover costs. That is why the sentence does not survive careful reading.
+Sales matter to businesses needing revenue to cover costs and profit.
 
-Watch the absolute wording "automatically": exam statements often sound plausible until a single scope word turns an otherwise familiar idea into an overclaim.
+One clear counterexample under the right criterion is enough to reject the sentence.
 
-The statement sounds plausible but fails on precision, so it is false.', 'FALSE — The claim is false. Marketing campaigns targeting awareness alone fulfil sales volume objectives without selling.
+The statement is false.
+', 'TRUE — Market share is the firm''s relative weight in a market compared with competitors. Gaining and keeping share is a core marketing objective because it signals competitiveness.
 
-This statement draws on objectives of marketing. Treat it as a checklist against the core concept named in the stem, not as a general opinion about business.
+On this stem (market share): loyal satisfied buyers support share maintenance.
 
-Applied to this claim, sales objectives require actual sales, not awareness alone. That is why the sentence does not survive careful reading.
+The sentence therefore reports the concept accurately for this case.
 
-Because the decisive detail is wrong, mark the statement false.', 'TRUE — The claim is correct. Share is an objective because it summarises standing versus competitors.
+The statement is true.
+'] WHERE case_id = 'CASE 5.2.58' AND tier = 'full';
+UPDATE public.economics_cases SET tactical_explanations = ARRAY['FALSE — Sales generate the revenues a business needs to cover production costs and to support profit. Maintaining or increasing sales is therefore a standard marketing objective.
 
-The section on objectives of marketing frequently contrasts two similar ideas side by side. A comparison statement is true only if the relationship is stated in the right direction and applies to the right concept pair.
+Sales maintenance concerns customer purchases, not production output alone.
 
-In this setting, share summarises competitive standing. The wording matches the textbook relationship without adding extra conditions.
+Once the defining feature is restored, the assertion falls away.
 
-The reasoning chain is complete, so mark the statement true.', 'FALSE — On the Fuhrmann definition used in the entrance exam, the sentence is false. Sales are important only to not-for-profit organisations, not to profit-seeking firms.
+The statement is false.
+', 'TRUE — A unique selling proposition (USP) makes a product — or the way it is promoted and perceived — stand out from similar rivals. Branding supports that differentiation so the offer seems special, unique, or better, which helps attract loyal customers.
 
-This statement draws on objectives of marketing. Treat it as a checklist against the core concept named in the stem, not as a general opinion about business.
+On this stem (USP / market share): usp-driven loyalty can underpin share gains or defence.
 
-Applied to this claim, sales matter to businesses needing revenue to cover costs and profit. That is why the sentence does not survive careful reading.
+The sentence therefore reports the concept accurately for this case.
 
-Once the overclaim or mislabel is exposed, the only consistent answer is false.', 'TRUE — This statement is correct. Satisfied loyal customers help a firm maintain its market share against rivals.
+The statement is true.
+', 'TRUE — Market share is the firm''s relative weight in a market compared with competitors. Gaining and keeping share is a core marketing objective because it signals competitiveness.
 
-The relevant theory comes from objectives of marketing. Identify which definition or relationship the sentence is trying to test before deciding true or false.
+On this stem (Market share): share benchmarks performance within the competitive set.
 
-Applied carefully, loyal satisfied buyers support share maintenance. Nothing in the sentence stretches the concept beyond its standard use.
+Under that definition the assertion is the right description of the situation.
 
-Every part of the claim aligns with the standard concept, so the statement stands.'] WHERE case_id = 'CASE 5.2.58' AND tier = 'full';
-UPDATE public.economics_cases SET tactical_explanations = ARRAY['FALSE — The claim is false. Maintaining sales volume means keeping production output constant regardless of demand.
+The statement is true.
+', 'FALSE — Sales generate the revenues a business needs to cover production costs and to support profit. Maintaining or increasing sales is therefore a standard marketing objective.
 
-This statement draws on objectives of marketing. Treat it as a checklist against the core concept named in the stem, not as a general opinion about business.
+On this stem (decline / growth): declining unit sales indicate failure on sales objectives.
 
-Applied to this claim, sales maintenance concerns customer purchases, not production output alone. That is why the sentence does not survive careful reading.
+Once the defining feature is restored, the assertion falls away.
 
-The statement sounds plausible but fails on precision, so it is false.', 'TRUE — This statement is correct. A USP that attracts loyal buyers can support market share objectives.
+The statement is false.
+', 'FALSE — Sales generate the revenues a business needs to cover production costs and to support profit. Maintaining or increasing sales is therefore a standard marketing objective.
 
-The relevant theory comes from objectives of marketing. Identify which definition or relationship the sentence is trying to test before deciding true or false.
+Sales revenue must cover production costs before profit.
 
-Applied carefully, usp-driven loyalty can underpin share gains or defence. Nothing in the sentence stretches the concept beyond its standard use.
+Swap in the textbook criterion and the sentence no longer describes the case.
 
-The reasoning chain is complete, so mark the statement true.', 'TRUE — On the Fuhrmann definition used in the entrance exam, the sentence is correct. Market share data is used to benchmark performance against the competitive set.
+The statement is false.
+'] WHERE case_id = 'CASE 5.2.59' AND tier = 'full';
+UPDATE public.economics_cases SET tactical_explanations = ARRAY['FALSE — Customer satisfaction matters because dissatisfied buyers will not return. Satisfied customers often become loyal and buy again, so this objective interlocks with sales, share, and profit aims.
 
-This statement draws on objectives of marketing. Treat it as a checklist against the core concept named in the stem, not as a general opinion about business.
+Satisfaction supports sustainable sales; cutting satisfaction undermines repeat purchase.
 
-In this setting, share benchmarks performance within the competitive set. The wording matches the textbook relationship without adding extra conditions.
+The mislabelled category or reversed comparison is enough to reject the claim.
 
-The reasoning chain is complete, so mark the statement true.', 'FALSE — On the Fuhrmann definition used in the entrance exam, the sentence is false. A decline in unit sales indicates success on sales growth objectives.
+The statement is false.
+', 'TRUE — Sales generate the revenues a business needs to cover production costs and to support profit. Maintaining or increasing sales is therefore a standard marketing objective.
 
-This statement draws on objectives of marketing. Treat it as a checklist against the core concept named in the stem, not as a general opinion about business.
+Competitiveness assessment uses relative share.
 
-Applied to this claim, declining unit sales indicate failure on sales objectives. That is why the sentence does not survive careful reading.
+Nothing in the wording contradicts that marketing test, so the claim is sound.
 
-The statement sounds plausible but fails on precision, so it is false.', 'FALSE — The claim is false. Sales revenue and production costs are unrelated in the marketing framework.
+The statement is true.
+', 'TRUE — Profitability reimburses owners for invested capital and can be retained for reinvestment. Higher sales often support higher profit, though not without limits on costs and margins.
 
-This statement draws on objectives of marketing. Treat it as a checklist against the core concept named in the stem, not as a general opinion about business.
+Share investment may temporarily reduce profit.
 
-Applied to this claim, sales revenue must cover production costs before profit. That is why the sentence does not survive careful reading.
+Nothing in the wording contradicts that marketing test, so the claim is sound.
 
-Once the overclaim or mislabel is exposed, the only consistent answer is false.'] WHERE case_id = 'CASE 5.2.59' AND tier = 'full';
-UPDATE public.economics_cases SET tactical_explanations = ARRAY['FALSE — Evaluated against the textbook standard, this assertion is false. Increasing sales requires reducing customer satisfaction to push quick transactions.
+The statement is true.
+', 'TRUE — A unique selling proposition (USP) makes a product — or the way it is promoted and perceived — stand out from similar rivals. Branding supports that differentiation so the offer seems special, unique, or better, which helps attract loyal customers.
 
-The relevant theory comes from objectives of marketing. Identify which definition or relationship the sentence is trying to test before deciding true or false.
+On this stem (USP): share loss to a differentiated rival signals competitive pressure.
 
-The statement overreaches because satisfaction supports sustainable sales; cutting satisfaction undermines repeat purchase. The trap is to agree with the topic while missing the one detail that breaks the logic.
+Nothing in the wording contradicts that marketing test, so the claim is sound.
 
-The statement sounds plausible but fails on precision, so it is false.', 'TRUE — On the Fuhrmann definition used in the entrance exam, the sentence is correct. Relative share comparisons matter more than isolated internal sales figures for competitiveness.
+The statement is true.
+', 'TRUE — Sales generate the revenues a business needs to cover production costs and to support profit. Maintaining or increasing sales is therefore a standard marketing objective.
 
-The section on objectives of marketing frequently contrasts two similar ideas side by side. A comparison statement is true only if the relationship is stated in the right direction and applies to the right concept pair.
+Share maintenance differs from absolute sales growth alone.
 
-In this setting, competitiveness assessment uses relative share. The wording matches the textbook relationship without adding extra conditions.
+Under that definition the assertion is the right description of the situation.
 
-No qualifying word breaks the definition or scenario, so the answer is true.', 'TRUE — The claim is correct. A business may sacrifice short-term profit to invest in share gains.
+The statement is true.
+'] WHERE case_id = 'CASE 5.2.60' AND tier = 'full';
+UPDATE public.economics_cases SET tactical_explanations = ARRAY['TRUE — Market share is the firm''s relative weight in a market compared with competitors. Gaining and keeping share is a core marketing objective because it signals competitiveness.
 
-This statement draws on objectives of marketing. Treat it as a checklist against the core concept named in the stem, not as a general opinion about business.
+On this stem (Market share): captured portion of market sales defines share.
 
-In this setting, share investment may temporarily reduce profit. The wording matches the textbook relationship without adding extra conditions.
+Nothing in the wording contradicts that marketing test, so the claim is sound.
 
-Every part of the claim aligns with the standard concept, so the statement stands.', 'TRUE — On the Fuhrmann definition used in the entrance exam, the sentence is correct. Share erosion to a rival with a stronger USP signals differentiation weakness.
+The statement is true.
+', 'TRUE — Marketing objectives guide how a firm analyses its markets and tries to fulfil customer wishes and needs — including satisfaction, USP, share, sales, and profitability.
 
-This statement draws on objectives of marketing. Treat it as a checklist against the core concept named in the stem, not as a general opinion about business.
+Relative share shift indicates improved competitiveness.
 
-In this setting, share loss to a differentiated rival signals competitive pressure. The wording matches the textbook relationship without adding extra conditions.
+The sentence therefore reports the concept accurately for this case.
 
-The reasoning chain is complete, so mark the statement true.', 'TRUE — On the Fuhrmann definition used in the entrance exam, the sentence is correct. Maintaining share is a marketing objective distinct from merely raising absolute sales.
+The statement is true.
+', 'TRUE — Marketing objectives guide how a firm analyses its markets and tries to fulfil customer wishes and needs — including satisfaction, USP, share, sales, and profitability.
 
-This statement draws on objectives of marketing. Treat it as a checklist against the core concept named in the stem, not as a general opinion about business.
+Market analysis precedes share objective setting.
 
-In this setting, share maintenance differs from absolute sales growth alone. The wording matches the textbook relationship without adding extra conditions.
+Nothing in the wording contradicts that marketing test, so the claim is sound.
 
-The reasoning chain is complete, so mark the statement true.'] WHERE case_id = 'CASE 5.2.60' AND tier = 'full';
-UPDATE public.economics_cases SET tactical_explanations = ARRAY['TRUE — Evaluated against the textbook standard, this assertion is correct. Market share reflects how much of the market''s total sales the firm captures.
+The statement is true.
+', 'TRUE — Market share is the firm''s relative weight in a market compared with competitors. Gaining and keeping share is a core marketing objective because it signals competitiveness.
 
-The relevant theory comes from objectives of marketing. Identify which definition or relationship the sentence is trying to test before deciding true or false.
+On this stem (market share): dissatisfaction-driven switching reduces share.
 
-Applied carefully, captured portion of market sales defines share. Nothing in the sentence stretches the concept beyond its standard use.
+The sentence therefore reports the concept accurately for this case.
 
-The reasoning chain is complete, so mark the statement true.', 'TRUE — Evaluated against the textbook standard, this assertion is correct. Competitiveness improves when a firm gains share while rivals lose ground.
+The statement is true.
+', 'TRUE — Sales generate the revenues a business needs to cover production costs and to support profit. Maintaining or increasing sales is therefore a standard marketing objective.
 
-Here you must apply ideas from objectives of marketing to a concrete situation rather than recite a definition from memory. Ownership, customer type, stakeholder group, or country of production usually decides the verdict.
+Share objectives express desired market portion.
 
-Applied carefully, relative share shift indicates improved competitiveness. Nothing in the sentence stretches the concept beyond its standard use.
+Nothing in the wording contradicts that marketing test, so the claim is sound.
 
-The reasoning chain is complete, so mark the statement true.', 'TRUE — This statement is correct. Share targets are set after analysing the market the business wants to operate in.
+The statement is true.
+'] WHERE case_id = 'CASE 5.2.61' AND tier = 'full';
+UPDATE public.economics_cases SET tactical_explanations = ARRAY['TRUE — Marketing objectives guide how a firm analyses its markets and tries to fulfil customer wishes and needs — including satisfaction, USP, share, sales, and profitability.
 
-The relevant theory comes from objectives of marketing. Identify which definition or relationship the sentence is trying to test before deciding true or false.
+Share rankings show relative importance among firms.
 
-Applied carefully, market analysis precedes share objective setting. Nothing in the sentence stretches the concept beyond its standard use.
+Nothing in the wording contradicts that marketing test, so the claim is sound.
 
-The reasoning chain is complete, so mark the statement true.', 'TRUE — This statement is correct. A firm with declining satisfaction may see market share fall as customers switch.
+The statement is true.
+', 'FALSE — Sales generate the revenues a business needs to cover production costs and to support profit. Maintaining or increasing sales is therefore a standard marketing objective.
 
-The relevant theory comes from objectives of marketing. Identify which definition or relationship the sentence is trying to test before deciding true or false.
+Market analysis informs realistic sales objectives.
 
-Applied carefully, dissatisfaction-driven switching reduces share. Nothing in the sentence stretches the concept beyond its standard use.
+Swap in the textbook criterion and the sentence no longer describes the case.
 
-The reasoning chain is complete, so mark the statement true.', 'TRUE — This statement is correct. Marketing objectives on share align with wanting a certain portion of market sales.
+The statement is false.
+', 'FALSE — Sales generate the revenues a business needs to cover production costs and to support profit. Maintaining or increasing sales is therefore a standard marketing objective.
 
-The relevant theory comes from objectives of marketing. Identify which definition or relationship the sentence is trying to test before deciding true or false.
+Rising sales still require cost monitoring for profit objectives.
 
-Applied carefully, share objectives express desired market portion. Nothing in the sentence stretches the concept beyond its standard use.
+Those restricting words stretch a limited idea past what marketing allows.
 
-The reasoning chain is complete, so mark the statement true.'] WHERE case_id = 'CASE 5.2.61' AND tier = 'full';
-UPDATE public.economics_cases SET tactical_explanations = ARRAY['TRUE — Evaluated against the textbook standard, this assertion is correct. Industry reports ranking firms by share illustrate relative importance.
+The statement is false.
+', 'FALSE — Sales generate the revenues a business needs to cover production costs and to support profit. Maintaining or increasing sales is therefore a standard marketing objective.
 
-The relevant theory comes from objectives of marketing. Identify which definition or relationship the sentence is trying to test before deciding true or false.
+Stock levels do not equal sales to customers.
 
-Applied carefully, share rankings show relative importance among firms. Nothing in the sentence stretches the concept beyond its standard use.
+Swap in the textbook criterion and the sentence no longer describes the case.
 
-The reasoning chain is complete, so mark the statement true.', 'FALSE — The claim is false. Sales objectives are independent of market analysis of wishes and needs.
+The statement is false.
+', 'FALSE — A unique selling proposition (USP) makes a product — or the way it is promoted and perceived — stand out from similar rivals. Branding supports that differentiation so the offer seems special, unique, or better, which helps attract loyal customers.
 
-This statement draws on objectives of marketing. Treat it as a checklist against the core concept named in the stem, not as a general opinion about business.
+Sales revenue remains necessary to cover costs alongside differentiation.
 
-Applied to this claim, market analysis informs realistic sales objectives. That is why the sentence does not survive careful reading.
+Once the defining feature is restored, the assertion falls away.
 
-Once the overclaim or mislabel is exposed, the only consistent answer is false.', 'FALSE — This statement is false. A firm with rising sales never needs to monitor production costs.
+The statement is false.
+'] WHERE case_id = 'CASE 5.2.62' AND tier = 'full';
+UPDATE public.economics_cases SET tactical_explanations = ARRAY['TRUE — Marketing objectives guide how a firm analyses its markets and tries to fulfil customer wishes and needs — including satisfaction, USP, share, sales, and profitability.
 
-The topic is objectives of marketing, but the decisive skill here is reading quantifiers. Words such as never, always, only, or all turn a generally true idea into a claim that can be rejected by one routine counterexample.
+Defensive efforts target share stabilisation.
 
-The statement overreaches because rising sales still require cost monitoring for profit objectives. The trap is to agree with the topic while missing the one detail that breaks the logic.
+Under that definition the assertion is the right description of the situation.
 
-Watch the absolute wording "never": exam statements often sound plausible until a single scope word turns an otherwise familiar idea into an overclaim.
+The statement is true.
+', 'TRUE — Sales generate the revenues a business needs to cover production costs and to support profit. Maintaining or increasing sales is therefore a standard marketing objective.
 
-Once the overclaim or mislabel is exposed, the only consistent answer is false.', 'FALSE — On the Fuhrmann definition used in the entrance exam, the sentence is false. Sales volume objectives are achieved when warehouse stock levels peak.
+Sales and share provide complementary performance lenses.
 
-The scenario is a worked example of objectives of marketing. Translate the story into the textbook category first; only then judge whether the sentence describes that category accurately.
+Under that definition the assertion is the right description of the situation.
 
-Applied to this claim, stock levels do not equal sales to customers. That is why the sentence does not survive careful reading.
+The statement is true.
+', 'TRUE — Market share is the firm''s relative weight in a market compared with competitors. Gaining and keeping share is a core marketing objective because it signals competitiveness.
 
-Once the overclaim or mislabel is exposed, the only consistent answer is false.', 'FALSE — The claim is false. Revenue coverage of costs is irrelevant when pursuing differentiation objectives.
+On this stem (market share): competitiveness reviews include share and rival data.
 
-The scenario is a worked example of objectives of marketing. Translate the story into the textbook category first; only then judge whether the sentence describes that category accurately.
+Under that definition the assertion is the right description of the situation.
 
-Applied to this claim, sales revenue remains necessary to cover costs alongside differentiation. That is why the sentence does not survive careful reading.
+The statement is true.
+', 'TRUE — Marketing objectives guide how a firm analyses its markets and tries to fulfil customer wishes and needs — including satisfaction, USP, share, sales, and profitability.
 
-Once the overclaim or mislabel is exposed, the only consistent answer is false.'] WHERE case_id = 'CASE 5.2.62' AND tier = 'full';
-UPDATE public.economics_cases SET tactical_explanations = ARRAY['TRUE — Evaluated against the textbook standard, this assertion is correct. Defensive marketing aims to stop share loss to aggressive competitors.
+Mature markets require share taken from incumbents.
 
-The relevant theory comes from objectives of marketing. Identify which definition or relationship the sentence is trying to test before deciding true or false.
+Nothing in the wording contradicts that marketing test, so the claim is sound.
 
-Applied carefully, defensive efforts target share stabilisation. Nothing in the sentence stretches the concept beyond its standard use.
+The statement is true.
+', 'TRUE — Market share is the firm''s relative weight in a market compared with competitors. Gaining and keeping share is a core marketing objective because it signals competitiveness.
 
-Every part of the claim aligns with the standard concept, so the statement stands.', 'TRUE — The claim is correct. Share and sales objectives together give absolute and relative performance views.
+On this stem (Market share): share indicates competitiveness but does not replace profit analysis.
 
-This statement draws on objectives of marketing. Treat it as a checklist against the core concept named in the stem, not as a general opinion about business.
+Nothing in the wording contradicts that marketing test, so the claim is sound.
 
-In this setting, sales and share provide complementary performance lenses. The wording matches the textbook relationship without adding extra conditions.
+The statement is true.
+'] WHERE case_id = 'CASE 5.2.63' AND tier = 'full';
+UPDATE public.economics_cases SET tactical_explanations = ARRAY['FALSE — Customer satisfaction matters because dissatisfied buyers will not return. Satisfied customers often become loyal and buy again, so this objective interlocks with sales, share, and profit aims.
 
-Every part of the claim aligns with the standard concept, so the statement stands.', 'TRUE — Evaluated against the textbook standard, this assertion is correct. A competitiveness review typically examines market share alongside rival trends.
+On this stem (growth): dissatisfied buyers will not sustain long-run sales through repeat purchase.
 
-The relevant theory comes from objectives of marketing. Identify which definition or relationship the sentence is trying to test before deciding true or false.
+Once the defining feature is restored, the assertion falls away.
 
-Applied carefully, competitiveness reviews include share and rival data. Nothing in the sentence stretches the concept beyond its standard use.
+The statement is false.
+', 'TRUE — Marketing objectives guide how a firm analyses its markets and tries to fulfil customer wishes and needs — including satisfaction, USP, share, sales, and profitability.
 
-No qualifying word breaks the definition or scenario, so the answer is true.', 'TRUE — This statement is correct. Gaining share in a mature market often requires taking customers from established rivals.
+Share shows position relative to rivals.
 
-The relevant theory comes from objectives of marketing. Identify which definition or relationship the sentence is trying to test before deciding true or false.
+Nothing in the wording contradicts that marketing test, so the claim is sound.
 
-Applied carefully, mature markets require share taken from incumbents. Nothing in the sentence stretches the concept beyond its standard use.
+The statement is true.
+', 'FALSE — Sales generate the revenues a business needs to cover production costs and to support profit. Maintaining or increasing sales is therefore a standard marketing objective.
 
-The reasoning chain is complete, so mark the statement true.', 'TRUE — On the Fuhrmann definition used in the entrance exam, the sentence is correct. Market share is an indicator, not a substitute for profitability analysis.
+Quarterly plans commonly include unit sales targets.
 
-This statement draws on objectives of marketing. Treat it as a checklist against the core concept named in the stem, not as a general opinion about business.
+The mislabelled category or reversed comparison is enough to reject the claim.
 
-In this setting, share indicates competitiveness but does not replace profit analysis. The wording matches the textbook relationship without adding extra conditions.
+The statement is false.
+', 'FALSE — Sales generate the revenues a business needs to cover production costs and to support profit. Maintaining or increasing sales is therefore a standard marketing objective.
 
-Every part of the claim aligns with the standard concept, so the statement stands.'] WHERE case_id = 'CASE 5.2.63' AND tier = 'full';
-UPDATE public.economics_cases SET tactical_explanations = ARRAY['FALSE — This statement is false. Sales growth from dissatisfied one-time buyers is a sustainable long-run strategy.
+Profit in the framework comes from sales revenue minus costs.
 
-The relevant theory comes from objectives of marketing. Identify which definition or relationship the sentence is trying to test before deciding true or false.
+The absolute wording is what breaks the claim once the correct test is applied.
 
-The statement overreaches because dissatisfied buyers will not sustain long-run sales through repeat purchase. The trap is to agree with the topic while missing the one detail that breaks the logic.
+The statement is false.
+', 'FALSE — Sales generate the revenues a business needs to cover production costs and to support profit. Maintaining or increasing sales is therefore a standard marketing objective.
 
-The statement sounds plausible but fails on precision, so it is false.', 'TRUE — Evaluated against the textbook standard, this assertion is correct. Businesses monitor share because it shows position relative to competitors'' positions.
+Sales maintenance concerns volume sold, not mandatory monthly price rises.
 
-Here you must apply ideas from objectives of marketing to a concrete situation rather than recite a definition from memory. Ownership, customer type, stakeholder group, or country of production usually decides the verdict.
+Swap in the textbook criterion and the sentence no longer describes the case.
 
-Applied carefully, share shows position relative to rivals. Nothing in the sentence stretches the concept beyond its standard use.
+The statement is false.
+'] WHERE case_id = 'CASE 5.2.64' AND tier = 'full';
+UPDATE public.economics_cases SET tactical_explanations = ARRAY['TRUE — Marketing objectives guide how a firm analyses its markets and tries to fulfil customer wishes and needs — including satisfaction, USP, share, sales, and profitability.
 
-Every part of the claim aligns with the standard concept, so the statement stands.', 'FALSE — Evaluated against the textbook standard, this assertion is false. Unit sales targets are unrelated to quarterly marketing planning.
+Share growth means relative outperformance.
 
-The relevant theory comes from objectives of marketing. Identify which definition or relationship the sentence is trying to test before deciding true or false.
+Nothing in the wording contradicts that marketing test, so the claim is sound.
 
-The statement overreaches because quarterly plans commonly include unit sales targets. The trap is to agree with the topic while missing the one detail that breaks the logic.
+The statement is true.
+', 'FALSE — Sales generate the revenues a business needs to cover production costs and to support profit. Maintaining or increasing sales is therefore a standard marketing objective.
 
-Once the overclaim or mislabel is exposed, the only consistent answer is false.', 'FALSE — This statement is false. Sales are unconnected to profitability because profit comes only from asset sales.
+Sales objectives require purchases generating revenue.
 
-Here you must apply ideas from objectives of marketing to a concrete situation rather than recite a definition from memory. Ownership, customer type, stakeholder group, or country of production usually decides the verdict.
+The mislabelled category or reversed comparison is enough to reject the claim.
 
-The statement overreaches because profit in the framework comes from sales revenue minus costs. The trap is to agree with the topic while missing the one detail that breaks the logic.
+The statement is false.
+', 'FALSE — Sales generate the revenues a business needs to cover production costs and to support profit. Maintaining or increasing sales is therefore a standard marketing objective.
 
-The statement sounds plausible but fails on precision, so it is false.', 'FALSE — Evaluated against the textbook standard, this assertion is false. Maintaining sales means prices must rise every month regardless of demand.
+Sales volume reflects customer purchases, not headcount.
 
-The topic is objectives of marketing, but the decisive skill here is reading quantifiers. Words such as never, always, only, or all turn a generally true idea into a claim that can be rejected by one routine counterexample.
+Once the defining feature is restored, the assertion falls away.
 
-The statement overreaches because sales maintenance concerns volume sold, not mandatory monthly price rises. The trap is to agree with the topic while missing the one detail that breaks the logic.
+The statement is false.
+', 'TRUE — Customer satisfaction matters because dissatisfied buyers will not return. Satisfied customers often become loyal and buy again, so this objective interlocks with sales, share, and profit aims.
 
-Watch the absolute wording "every": exam statements often sound plausible until a single scope word turns an otherwise familiar idea into an overclaim.
+Loyalty from satisfaction aids share defence.
 
-Once the overclaim or mislabel is exposed, the only consistent answer is false.'] WHERE case_id = 'CASE 5.2.64' AND tier = 'full';
-UPDATE public.economics_cases SET tactical_explanations = ARRAY['TRUE — This statement is correct. A marketing objective to grow share implies outperforming rivals in relative terms.
+Nothing in the wording contradicts that marketing test, so the claim is sound.
 
-The relevant theory comes from objectives of marketing. Identify which definition or relationship the sentence is trying to test before deciding true or false.
+The statement is true.
+', 'TRUE — Market share is the firm''s relative weight in a market compared with competitors. Gaining and keeping share is a core marketing objective because it signals competitiveness.
 
-Applied carefully, share growth means relative outperformance. Nothing in the sentence stretches the concept beyond its standard use.
+On this stem (market share): share conveys relative market importance.
 
-The reasoning chain is complete, so mark the statement true.', 'FALSE — The claim is false. A promotional campaign that raises awareness but not purchases meets sales objectives.
+The sentence therefore reports the concept accurately for this case.
 
-This statement draws on objectives of marketing. Treat it as a checklist against the core concept named in the stem, not as a general opinion about business.
+The statement is true.
+'] WHERE case_id = 'CASE 5.2.65' AND tier = 'full';
+UPDATE public.economics_cases SET tactical_explanations = ARRAY['TRUE — Sales generate the revenues a business needs to cover production costs and to support profit. Maintaining or increasing sales is therefore a standard marketing objective.
 
-Applied to this claim, sales objectives require purchases generating revenue. That is why the sentence does not survive careful reading.
+Sales objectives exist because sales produce revenue.
 
-Once the overclaim or mislabel is exposed, the only consistent answer is false.', 'FALSE — This statement is false. Sales volume is measured by the number of employees rather than customer purchases.
+Under that definition the assertion is the right description of the situation.
 
-This tests discrimination within objectives of marketing: local versus international scope, equity versus debt, product versus market orientation, and similar pairs.
+The statement is true.
+', 'FALSE — Customer satisfaction matters because dissatisfied buyers will not return. Satisfied customers often become loyal and buy again, so this objective interlocks with sales, share, and profit aims.
 
-The statement overreaches because sales volume reflects customer purchases, not headcount. The trap is to agree with the topic while missing the one detail that breaks the logic.
+Satisfaction supports repeat sales; the objectives interrelate.
 
-If two ideas are related, the statement may be false because it attributes the feature to the wrong member of the pair.
+Swap in the textbook criterion and the sentence no longer describes the case.
 
-Because the decisive detail is wrong, mark the statement false.', 'TRUE — Evaluated against the textbook standard, this assertion is correct. Share maintenance can be supported by customer loyalty built through satisfaction.
+The statement is false.
+', 'FALSE — A unique selling proposition (USP) makes a product — or the way it is promoted and perceived — stand out from similar rivals. Branding supports that differentiation so the offer seems special, unique, or better, which helps attract loyal customers.
 
-The relevant theory comes from objectives of marketing. Identify which definition or relationship the sentence is trying to test before deciding true or false.
+Differentiated products still require sales revenue to cover costs.
 
-Applied carefully, loyalty from satisfaction aids share defence. Nothing in the sentence stretches the concept beyond its standard use.
+One clear counterexample under the right criterion is enough to reject the sentence.
 
-Every part of the claim aligns with the standard concept, so the statement stands.', 'TRUE — On the Fuhrmann definition used in the entrance exam, the sentence is correct. Relative importance in the market is the concept market share is meant to convey.
+The statement is false.
+', 'TRUE — Sales generate the revenues a business needs to cover production costs and to support profit. Maintaining or increasing sales is therefore a standard marketing objective.
 
-This statement draws on objectives of marketing. Treat it as a checklist against the core concept named in the stem, not as a general opinion about business.
+Revenue from sales must cover production costs.
 
-In this setting, share conveys relative market importance. The wording matches the textbook relationship without adding extra conditions.
+The sentence therefore reports the concept accurately for this case.
 
-Every part of the claim aligns with the standard concept, so the statement stands.'] WHERE case_id = 'CASE 5.2.65' AND tier = 'full';
-UPDATE public.economics_cases SET tactical_explanations = ARRAY['TRUE — On the Fuhrmann definition used in the entrance exam, the sentence is correct. Maintaining or increasing sales is a marketing objective because sales generate revenue.
+The statement is true.
+', 'FALSE — Sales generate the revenues a business needs to cover production costs and to support profit. Maintaining or increasing sales is therefore a standard marketing objective.
 
-The scenario is a worked example of objectives of marketing. Translate the story into the textbook category first; only then judge whether the sentence describes that category accurately.
+Objectives require actual sales performance, not forecasts alone.
 
-In this setting, sales objectives exist because sales produce revenue. The wording matches the textbook relationship without adding extra conditions.
+Once the defining feature is restored, the assertion falls away.
 
-No qualifying word breaks the definition or scenario, so the answer is true.', 'FALSE — This statement is false. Increasing sales is impossible when pursuing customer satisfaction objectives.
+The statement is false.
+'] WHERE case_id = 'CASE 5.2.66' AND tier = 'full';
+UPDATE public.economics_cases SET tactical_explanations = ARRAY['TRUE — Sales generate the revenues a business needs to cover production costs and to support profit. Maintaining or increasing sales is therefore a standard marketing objective.
 
-The topic is objectives of marketing, but the decisive skill here is reading quantifiers. Words such as never, always, only, or all turn a generally true idea into a claim that can be rejected by one routine counterexample.
+After covering costs, sales revenue enables profit.
 
-The statement overreaches because satisfaction supports repeat sales; the objectives interrelate. The trap is to agree with the topic while missing the one detail that breaks the logic.
+Nothing in the wording contradicts that marketing test, so the claim is sound.
 
-Watch the absolute wording "impossible": exam statements often sound plausible until a single scope word turns an otherwise familiar idea into an overclaim.
+The statement is true.
+', 'TRUE — Sales generate the revenues a business needs to cover production costs and to support profit. Maintaining or increasing sales is therefore a standard marketing objective.
 
-Because the decisive detail is wrong, mark the statement false.', 'FALSE — This statement is false. Sales revenue cannot fund production costs if the product is differentiated.
+Higher sales strengthen revenue inflow.
 
-The topic is objectives of marketing, but the decisive skill here is reading quantifiers. Words such as never, always, only, or all turn a generally true idea into a claim that can be rejected by one routine counterexample.
+Under that definition the assertion is the right description of the situation.
 
-The statement overreaches because differentiated products still require sales revenue to cover costs. The trap is to agree with the topic while missing the one detail that breaks the logic.
+The statement is true.
+', 'TRUE — Sales generate the revenues a business needs to cover production costs and to support profit. Maintaining or increasing sales is therefore a standard marketing objective.
 
-Watch the absolute wording "cannot": exam statements often sound plausible until a single scope word turns an otherwise familiar idea into an overclaim.
+Campaigns commonly set period sales volume targets.
 
-The statement sounds plausible but fails on precision, so it is false.', 'TRUE — Evaluated against the textbook standard, this assertion is correct. Sales are important to businesses because revenues must cover production costs.
+Nothing in the wording contradicts that marketing test, so the claim is sound.
 
-Here you must apply ideas from objectives of marketing to a concrete situation rather than recite a definition from memory. Ownership, customer type, stakeholder group, or country of production usually decides the verdict.
+The statement is true.
+', 'FALSE — Sales generate the revenues a business needs to cover production costs and to support profit. Maintaining or increasing sales is therefore a standard marketing objective.
 
-Applied carefully, revenue from sales must cover production costs. Nothing in the sentence stretches the concept beyond its standard use.
+Sales support but do not replace profitability objectives.
 
-The reasoning chain is complete, so mark the statement true.', 'FALSE — The claim is false. A business with zero sales can still meet sales volume objectives through forecasts.
+The mislabelled category or reversed comparison is enough to reject the claim.
 
-This statement draws on objectives of marketing. Treat it as a checklist against the core concept named in the stem, not as a general opinion about business.
+The statement is false.
+', 'TRUE — Sales generate the revenues a business needs to cover production costs and to support profit. Maintaining or increasing sales is therefore a standard marketing objective.
 
-Applied to this claim, objectives require actual sales performance, not forecasts alone. That is why the sentence does not survive careful reading.
+Volume can be measured in units or revenue.
 
-Because the decisive detail is wrong, mark the statement false.'] WHERE case_id = 'CASE 5.2.66' AND tier = 'full';
-UPDATE public.economics_cases SET tactical_explanations = ARRAY['TRUE — The claim is correct. Sales revenue contributes to the ability to make a profit after costs are met.
+The sentence therefore reports the concept accurately for this case.
 
-This statement draws on objectives of marketing. Treat it as a checklist against the core concept named in the stem, not as a general opinion about business.
+The statement is true.
+'] WHERE case_id = 'CASE 5.2.67' AND tier = 'full';
+UPDATE public.economics_cases SET tactical_explanations = ARRAY['TRUE — Sales generate the revenues a business needs to cover production costs and to support profit. Maintaining or increasing sales is therefore a standard marketing objective.
 
-In this setting, after covering costs, sales revenue enables profit. The wording matches the textbook relationship without adding extra conditions.
+Insufficient sales leave costs uncovered by revenue.
 
-No qualifying word breaks the definition or scenario, so the answer is true.', 'TRUE — This statement is correct. A business pursuing higher sales aims to strengthen its revenue inflow.
+Nothing in the wording contradicts that marketing test, so the claim is sound.
 
-The relevant theory comes from objectives of marketing. Identify which definition or relationship the sentence is trying to test before deciding true or false.
+The statement is true.
+', 'TRUE — Sales generate the revenues a business needs to cover production costs and to support profit. Maintaining or increasing sales is therefore a standard marketing objective.
 
-Applied carefully, higher sales strengthen revenue inflow. Nothing in the sentence stretches the concept beyond its standard use.
+Sales growth is a recognised marketing objective.
 
-Every part of the claim aligns with the standard concept, so the statement stands.', 'TRUE — The claim is correct. Marketing campaigns often target a sales volume increase in a defined period.
+Nothing in the wording contradicts that marketing test, so the claim is sound.
 
-This statement draws on objectives of marketing. Treat it as a checklist against the core concept named in the stem, not as a general opinion about business.
+The statement is true.
+', 'TRUE — Sales generate the revenues a business needs to cover production costs and to support profit. Maintaining or increasing sales is therefore a standard marketing objective.
 
-In this setting, campaigns commonly set period sales volume targets. The wording matches the textbook relationship without adding extra conditions.
+Seasonal peaks contribute to annual volume objectives.
 
-Every part of the claim aligns with the standard concept, so the statement stands.', 'FALSE — This statement is false. Sales objectives replace the need for any profitability analysis.
+Under that definition the assertion is the right description of the situation.
 
-The relevant theory comes from objectives of marketing. Identify which definition or relationship the sentence is trying to test before deciding true or false.
+The statement is true.
+', 'FALSE — Sales generate the revenues a business needs to cover production costs and to support profit. Maintaining or increasing sales is therefore a standard marketing objective.
 
-The statement overreaches because sales support but do not replace profitability objectives. The trap is to agree with the topic while missing the one detail that breaks the logic.
+Export sales contribute to total sales volume.
 
-Because the decisive detail is wrong, mark the statement false.', 'TRUE — On the Fuhrmann definition used in the entrance exam, the sentence is correct. Sales objectives may be stated in units sold or in revenue terms.
+Once the defining feature is restored, the assertion falls away.
 
-This statement draws on objectives of marketing. Treat it as a checklist against the core concept named in the stem, not as a general opinion about business.
+The statement is false.
+', 'TRUE — Sales generate the revenues a business needs to cover production costs and to support profit. Maintaining or increasing sales is therefore a standard marketing objective.
 
-In this setting, volume can be measured in units or revenue. The wording matches the textbook relationship without adding extra conditions.
+On this stem (growth): higher sales improve operational cash inflows.
 
-The reasoning chain is complete, so mark the statement true.'] WHERE case_id = 'CASE 5.2.67' AND tier = 'full';
-UPDATE public.economics_cases SET tactical_explanations = ARRAY['TRUE — Evaluated against the textbook standard, this assertion is correct. Without adequate sales, a business cannot cover its production costs from revenue.
+Nothing in the wording contradicts that marketing test, so the claim is sound.
 
-The topic is objectives of marketing, but the decisive skill here is reading quantifiers. Words such as never, always, only, or all turn a generally true idea into a claim that can be rejected by one routine counterexample.
+The statement is true.
+'] WHERE case_id = 'CASE 5.2.68' AND tier = 'full';
+UPDATE public.economics_cases SET tactical_explanations = ARRAY['FALSE — Sales generate the revenues a business needs to cover production costs and to support profit. Maintaining or increasing sales is therefore a standard marketing objective.
 
-Applied carefully, insufficient sales leave costs uncovered by revenue. Nothing in the sentence stretches the concept beyond its standard use.
+Higher sales do not automatically eliminate unit costs.
 
-No qualifying word breaks the definition or scenario, so the answer is true.', 'TRUE — Evaluated against the textbook standard, this assertion is correct. Increasing sales is listed among marketing objectives businesses may pursue.
+The absolute wording is what breaks the claim once the correct test is applied.
 
-The relevant theory comes from objectives of marketing. Identify which definition or relationship the sentence is trying to test before deciding true or false.
+The statement is false.
+', 'TRUE — Sales generate the revenues a business needs to cover production costs and to support profit. Maintaining or increasing sales is therefore a standard marketing objective.
 
-Applied carefully, sales growth is a recognised marketing objective. Nothing in the sentence stretches the concept beyond its standard use.
+Discounts can temporarily raise sales volume.
 
-No qualifying word breaks the definition or scenario, so the answer is true.', 'TRUE — The claim is correct. Seasonal sales peaks may still align with an overall objective to increase annual volume.
+The sentence therefore reports the concept accurately for this case.
 
-This statement draws on objectives of marketing. Treat it as a checklist against the core concept named in the stem, not as a general opinion about business.
+The statement is true.
+', 'FALSE — Customer satisfaction matters because dissatisfied buyers will not return. Satisfied customers often become loyal and buy again, so this objective interlocks with sales, share, and profit aims.
 
-In this setting, seasonal peaks contribute to annual volume objectives. The wording matches the textbook relationship without adding extra conditions.
+Loyal satisfied customers contribute to sales growth.
 
-The reasoning chain is complete, so mark the statement true.', 'FALSE — Evaluated against the textbook standard, this assertion is false. Revenue from exports does not count toward sales volume objectives.
+Once the defining feature is restored, the assertion falls away.
 
-The relevant theory comes from objectives of marketing. Identify which definition or relationship the sentence is trying to test before deciding true or false.
+The statement is false.
+', 'FALSE — Customer satisfaction matters because dissatisfied buyers will not return. Satisfied customers often become loyal and buy again, so this objective interlocks with sales, share, and profit aims.
 
-The statement overreaches because export sales contribute to total sales volume. The trap is to agree with the topic while missing the one detail that breaks the logic.
+Failed products with unsatisfied buyers do not sustain long-term sales.
 
-Once the overclaim or mislabel is exposed, the only consistent answer is false.', 'TRUE — Evaluated against the textbook standard, this assertion is correct. Sales growth supports cash inflows needed for day-to-day operations.
+Once the defining feature is restored, the assertion falls away.
 
-The relevant theory comes from objectives of marketing. Identify which definition or relationship the sentence is trying to test before deciding true or false.
+The statement is false.
+', 'TRUE — Sales generate the revenues a business needs to cover production costs and to support profit. Maintaining or increasing sales is therefore a standard marketing objective.
 
-Applied carefully, higher sales improve operational cash inflows. Nothing in the sentence stretches the concept beyond its standard use.
+Market analysis informs sales target setting.
 
-Every part of the claim aligns with the standard concept, so the statement stands.'] WHERE case_id = 'CASE 5.2.68' AND tier = 'full';
-UPDATE public.economics_cases SET tactical_explanations = ARRAY['FALSE — The claim is false. Higher sales figures always reduce production costs per unit to zero.
+Nothing in the wording contradicts that marketing test, so the claim is sound.
 
-Although the subject matter is objectives of marketing, this is really a logic check on overstatement. Non-profit surpluses, mixed economies, and partial market failure are classic cases where absolute wording fails.
+The statement is true.
+'] WHERE case_id = 'CASE 5.2.69' AND tier = 'full';
+UPDATE public.economics_cases SET tactical_explanations = ARRAY['TRUE — Sales generate the revenues a business needs to cover production costs and to support profit. Maintaining or increasing sales is therefore a standard marketing objective.
 
-Applied to this claim, higher sales do not automatically eliminate unit costs. That is why the sentence does not survive careful reading.
+Profit requires sales revenue above production costs.
 
-Watch the absolute wording "always": exam statements often sound plausible until a single scope word turns an otherwise familiar idea into an overclaim.
+The sentence therefore reports the concept accurately for this case.
 
-The statement sounds plausible but fails on precision, so it is false.', 'TRUE — This statement is correct. A promotional discount may be used to lift short-term sales volume.
+The statement is true.
+', 'TRUE — Sales generate the revenues a business needs to cover production costs and to support profit. Maintaining or increasing sales is therefore a standard marketing objective.
 
-The relevant theory comes from objectives of marketing. Identify which definition or relationship the sentence is trying to test before deciding true or false.
+Mature markets may emphasise volume maintenance.
 
-Applied carefully, discounts can temporarily raise sales volume. Nothing in the sentence stretches the concept beyond its standard use.
+Nothing in the wording contradicts that marketing test, so the claim is sound.
 
-Every part of the claim aligns with the standard concept, so the statement stands.', 'FALSE — The claim is false. Sales growth objectives are unrelated to customer loyalty from satisfaction.
+The statement is true.
+', 'TRUE — Sales generate the revenues a business needs to cover production costs and to support profit. Maintaining or increasing sales is therefore a standard marketing objective.
 
-This statement draws on objectives of marketing. Treat it as a checklist against the core concept named in the stem, not as a general opinion about business.
+Sales monitoring tracks objective progress.
 
-Applied to this claim, loyal satisfied customers contribute to sales growth. That is why the sentence does not survive careful reading.
+Under that definition the assertion is the right description of the situation.
 
-The statement sounds plausible but fails on precision, so it is false.', 'FALSE — This statement is false. A temporary sales spike from a failed product satisfies long-term sales objectives.
+The statement is true.
+', 'TRUE — Sales generate the revenues a business needs to cover production costs and to support profit. Maintaining or increasing sales is therefore a standard marketing objective.
 
-The relevant theory comes from objectives of marketing. Identify which definition or relationship the sentence is trying to test before deciding true or false.
+On this stem (decline): falling unit sales indicate missed sales objectives.
 
-The statement overreaches because failed products with unsatisfied buyers do not sustain long-term sales. The trap is to agree with the topic while missing the one detail that breaks the logic.
+The sentence therefore reports the concept accurately for this case.
 
-The statement sounds plausible but fails on precision, so it is false.', 'TRUE — This statement is correct. Sales targets are set after analysing the market the firm wishes to serve.
+The statement is true.
+', 'TRUE — Sales generate the revenues a business needs to cover production costs and to support profit. Maintaining or increasing sales is therefore a standard marketing objective.
 
-The relevant theory comes from objectives of marketing. Identify which definition or relationship the sentence is trying to test before deciding true or false.
+Higher sales generally support profit with noted limitations.
 
-Applied carefully, market analysis informs sales target setting. Nothing in the sentence stretches the concept beyond its standard use.
+Under that definition the assertion is the right description of the situation.
 
-Every part of the claim aligns with the standard concept, so the statement stands.'] WHERE case_id = 'CASE 5.2.69' AND tier = 'full';
-UPDATE public.economics_cases SET tactical_explanations = ARRAY['TRUE — This statement is correct. Revenue from sales must exceed production costs for profit to be possible.
+The statement is true.
+'] WHERE case_id = 'CASE 5.2.70' AND tier = 'full';
+UPDATE public.economics_cases SET tactical_explanations = ARRAY['TRUE — Customer satisfaction matters because dissatisfied buyers will not return. Satisfied customers often become loyal and buy again, so this objective interlocks with sales, share, and profit aims.
 
-The relevant theory comes from objectives of marketing. Identify which definition or relationship the sentence is trying to test before deciding true or false.
+Repeat buyers from satisfaction add to sales volume.
 
-Applied carefully, profit requires sales revenue above production costs. Nothing in the sentence stretches the concept beyond its standard use.
+Nothing in the wording contradicts that marketing test, so the claim is sound.
 
-No qualifying word breaks the definition or scenario, so the answer is true.', 'TRUE — This statement is correct. Maintaining sales volume can be an objective when a market matures.
+The statement is true.
+', 'TRUE — Sales generate the revenues a business needs to cover production costs and to support profit. Maintaining or increasing sales is therefore a standard marketing objective.
 
-Here you must apply ideas from objectives of marketing to a concrete situation rather than recite a definition from memory. Ownership, customer type, stakeholder group, or country of production usually decides the verdict.
+Geographic expansion can raise sales volume.
 
-Applied carefully, mature markets may emphasise volume maintenance. Nothing in the sentence stretches the concept beyond its standard use.
+The sentence therefore reports the concept accurately for this case.
 
-The reasoning chain is complete, so mark the statement true.', 'TRUE — Evaluated against the textbook standard, this assertion is correct. Sales performance is monitored to assess progress toward marketing objectives.
+The statement is true.
+', 'TRUE — Sales generate the revenues a business needs to cover production costs and to support profit. Maintaining or increasing sales is therefore a standard marketing objective.
 
-The relevant theory comes from objectives of marketing. Identify which definition or relationship the sentence is trying to test before deciding true or false.
+Quarterly targets operationalise sales objectives.
 
-Applied carefully, sales monitoring tracks objective progress. Nothing in the sentence stretches the concept beyond its standard use.
+The sentence therefore reports the concept accurately for this case.
 
-The reasoning chain is complete, so mark the statement true.', 'TRUE — On the Fuhrmann definition used in the entrance exam, the sentence is correct. A decline in unit sales may signal failure on sales-related marketing objectives.
+The statement is true.
+', 'FALSE — Market share is the firm''s relative weight in a market compared with competitors. Gaining and keeping share is a core marketing objective because it signals competitiveness.
 
-This statement draws on objectives of marketing. Treat it as a checklist against the core concept named in the stem, not as a general opinion about business.
+On this stem (market share): sales complement share objectives; they do not eliminate share relevance.
 
-In this setting, falling unit sales indicate missed sales objectives. The wording matches the textbook relationship without adding extra conditions.
+Once the defining feature is restored, the assertion falls away.
 
-Every part of the claim aligns with the standard concept, so the statement stands.', 'TRUE — This statement is correct. Higher sales figures usually support profitability, subject to stated limitations.
+The statement is false.
+', 'TRUE — Sales generate the revenues a business needs to cover production costs and to support profit. Maintaining or increasing sales is therefore a standard marketing objective.
 
-The relevant theory comes from objectives of marketing. Identify which definition or relationship the sentence is trying to test before deciding true or false.
+Launch campaigns often target volume growth.
 
-Applied carefully, higher sales generally support profit with noted limitations. Nothing in the sentence stretches the concept beyond its standard use.
+Nothing in the wording contradicts that marketing test, so the claim is sound.
 
-No qualifying word breaks the definition or scenario, so the answer is true.'] WHERE case_id = 'CASE 5.2.70' AND tier = 'full';
-UPDATE public.economics_cases SET tactical_explanations = ARRAY['TRUE — This statement is correct. Sales objectives interrelate with customer satisfaction because repeat buyers add volume.
+The statement is true.
+'] WHERE case_id = 'CASE 5.2.71' AND tier = 'full';
+UPDATE public.economics_cases SET tactical_explanations = ARRAY['FALSE — Sales generate the revenues a business needs to cover production costs and to support profit. Maintaining or increasing sales is therefore a standard marketing objective.
 
-Here you must apply ideas from objectives of marketing to a concrete situation rather than recite a definition from memory. Ownership, customer type, stakeholder group, or country of production usually decides the verdict.
+Sales maintenance typically requires continued marketing activity.
 
-Applied carefully, repeat buyers from satisfaction add to sales volume. Nothing in the sentence stretches the concept beyond its standard use.
+Swap in the textbook criterion and the sentence no longer describes the case.
 
-The reasoning chain is complete, so mark the statement true.', 'TRUE — On the Fuhrmann definition used in the entrance exam, the sentence is correct. Distribution expansion may be pursued to increase sales to new geographic areas.
+The statement is false.
+', 'FALSE — Sales generate the revenues a business needs to cover production costs and to support profit. Maintaining or increasing sales is therefore a standard marketing objective.
 
-This statement draws on objectives of marketing. Treat it as a checklist against the core concept named in the stem, not as a general opinion about business.
+Revenue derives from volume and price together.
 
-In this setting, geographic expansion can raise sales volume. The wording matches the textbook relationship without adding extra conditions.
+Swap in the textbook criterion and the sentence no longer describes the case.
 
-No qualifying word breaks the definition or scenario, so the answer is true.', 'TRUE — On the Fuhrmann definition used in the entrance exam, the sentence is correct. A firm may set quarterly sales targets as part of its marketing plan.
+The statement is false.
+', 'FALSE — Sales generate the revenues a business needs to cover production costs and to support profit. Maintaining or increasing sales is therefore a standard marketing objective.
 
-This statement draws on objectives of marketing. Treat it as a checklist against the core concept named in the stem, not as a general opinion about business.
+Sales revenue covers production costs in the standard business model described.
 
-In this setting, quarterly targets operationalise sales objectives. The wording matches the textbook relationship without adding extra conditions.
+Swap in the textbook criterion and the sentence no longer describes the case.
 
-Every part of the claim aligns with the standard concept, so the statement stands.', 'FALSE — On the Fuhrmann definition used in the entrance exam, the sentence is false. Sales are important because they allow the firm to ignore market share completely.
+The statement is false.
+', 'TRUE — Sales generate the revenues a business needs to cover production costs and to support profit. Maintaining or increasing sales is therefore a standard marketing objective.
 
-The scenario is a worked example of objectives of marketing. Translate the story into the textbook category first; only then judge whether the sentence describes that category accurately.
+Sales matter because they fund cost coverage.
 
-Applied to this claim, sales complement share objectives; they do not eliminate share relevance. That is why the sentence does not survive careful reading.
+The sentence therefore reports the concept accurately for this case.
 
-The statement sounds plausible but fails on precision, so it is false.', 'TRUE — Evaluated against the textbook standard, this assertion is correct. Sales volume growth in a new product launch is a common marketing objective.
+The statement is true.
+', 'TRUE — Sales generate the revenues a business needs to cover production costs and to support profit. Maintaining or increasing sales is therefore a standard marketing objective.
 
-The relevant theory comes from objectives of marketing. Identify which definition or relationship the sentence is trying to test before deciding true or false.
+Channel sales aggregate into total volume.
 
-Applied carefully, launch campaigns often target volume growth. Nothing in the sentence stretches the concept beyond its standard use.
+Nothing in the wording contradicts that marketing test, so the claim is sound.
 
-No qualifying word breaks the definition or scenario, so the answer is true.'] WHERE case_id = 'CASE 5.2.71' AND tier = 'full';
-UPDATE public.economics_cases SET tactical_explanations = ARRAY['FALSE — On the Fuhrmann definition used in the entrance exam, the sentence is false. Maintaining sales requires shutting down marketing expenditure entirely.
+The statement is true.
+'] WHERE case_id = 'CASE 5.2.72' AND tier = 'full';
+UPDATE public.economics_cases SET tactical_explanations = ARRAY['FALSE — Sales generate the revenues a business needs to cover production costs and to support profit. Maintaining or increasing sales is therefore a standard marketing objective.
 
-Although the subject matter is objectives of marketing, this is really a logic check on overstatement. Non-profit surpluses, mixed economies, and partial market failure are classic cases where absolute wording fails.
+Profit remains a distinct objective even with rising sales.
 
-Applied to this claim, sales maintenance typically requires continued marketing activity. That is why the sentence does not survive careful reading.
+Once the defining feature is restored, the assertion falls away.
 
-Watch the absolute wording "entirely": exam statements often sound plausible until a single scope word turns an otherwise familiar idea into an overclaim.
+The statement is false.
+', 'TRUE — Sales generate the revenues a business needs to cover production costs and to support profit. Maintaining or increasing sales is therefore a standard marketing objective.
 
-Because the decisive detail is wrong, mark the statement false.', 'FALSE — This statement is false. Sales volume and revenue are unrelated concepts in the marketing objectives framework.
+On this stem (growth): supply limits can shift focus to maintenance.
 
-The relevant theory comes from objectives of marketing. Identify which definition or relationship the sentence is trying to test before deciding true or false.
+Nothing in the wording contradicts that marketing test, so the claim is sound.
 
-The statement overreaches because revenue derives from volume and price together. The trap is to agree with the topic while missing the one detail that breaks the logic.
+The statement is true.
+', 'FALSE — Sales generate the revenues a business needs to cover production costs and to support profit. Maintaining or increasing sales is therefore a standard marketing objective.
 
-Once the overclaim or mislabel is exposed, the only consistent answer is false.', 'FALSE — Evaluated against the textbook standard, this assertion is false. Production costs are covered from government grants rather than sales revenue.
+Sell-through to customers defines sales achievement.
 
-This tests discrimination within objectives of marketing: local versus international scope, equity versus debt, product versus market orientation, and similar pairs.
+Once the defining feature is restored, the assertion falls away.
 
-The statement overreaches because sales revenue covers production costs in the standard business model described. The trap is to agree with the topic while missing the one detail that breaks the logic.
+The statement is false.
+', 'TRUE — Sales generate the revenues a business needs to cover production costs and to support profit. Maintaining or increasing sales is therefore a standard marketing objective.
 
-If two ideas are related, the statement may be false because it attributes the feature to the wrong member of the pair.
+On this stem (product line): advertising can target line-level sales increases.
 
-The statement sounds plausible but fails on precision, so it is false.', 'TRUE — On the Fuhrmann definition used in the entrance exam, the sentence is correct. Revenue coverage of costs is why sales matter beyond mere activity measures.
+The sentence therefore reports the concept accurately for this case.
 
-This statement draws on objectives of marketing. Treat it as a checklist against the core concept named in the stem, not as a general opinion about business.
+The statement is true.
+', 'FALSE — Customer satisfaction matters because dissatisfied buyers will not return. Satisfied customers often become loyal and buy again, so this objective interlocks with sales, share, and profit aims.
 
-In this setting, sales matter because they fund cost coverage. The wording matches the textbook relationship without adding extra conditions.
+Profit requires sales revenue exceeding costs; satisfaction alone does not replace sales.
 
-No qualifying word breaks the definition or scenario, so the answer is true.', 'TRUE — Evaluated against the textbook standard, this assertion is correct. Wholesale and retail channels both contribute to the firm''s total sales volume.
+The mislabelled category or reversed comparison is enough to reject the claim.
 
-The relevant theory comes from objectives of marketing. Identify which definition or relationship the sentence is trying to test before deciding true or false.
+The statement is false.
+'] WHERE case_id = 'CASE 5.2.73' AND tier = 'full';
+UPDATE public.economics_cases SET tactical_explanations = ARRAY['TRUE — Sales generate the revenues a business needs to cover production costs and to support profit. Maintaining or increasing sales is therefore a standard marketing objective.
 
-Applied carefully, channel sales aggregate into total volume. Nothing in the sentence stretches the concept beyond its standard use.
+Unit growth enlarges the revenue pool for costs.
 
-No qualifying word breaks the definition or scenario, so the answer is true.'] WHERE case_id = 'CASE 5.2.72' AND tier = 'full';
-UPDATE public.economics_cases SET tactical_explanations = ARRAY['FALSE — On the Fuhrmann definition used in the entrance exam, the sentence is false. Increasing sales means profitability objectives become unnecessary.
+The sentence therefore reports the concept accurately for this case.
 
-This statement draws on objectives of marketing. Treat it as a checklist against the core concept named in the stem, not as a general opinion about business.
+The statement is true.
+', 'FALSE — Sales generate the revenues a business needs to cover production costs and to support profit. Maintaining or increasing sales is therefore a standard marketing objective.
 
-Applied to this claim, profit remains a distinct objective even with rising sales. That is why the sentence does not survive careful reading.
+Profits arise from sales revenue relative to costs, not borrowing alone.
 
-Because the decisive detail is wrong, mark the statement false.', 'TRUE — This statement is correct. A sales objective to maintain volume may apply when supply constraints cap growth.
+The absolute wording is what breaks the claim once the correct test is applied.
 
-Here you must apply ideas from objectives of marketing to a concrete situation rather than recite a definition from memory. Ownership, customer type, stakeholder group, or country of production usually decides the verdict.
+The statement is false.
+', 'FALSE — Sales generate the revenues a business needs to cover production costs and to support profit. Maintaining or increasing sales is therefore a standard marketing objective.
 
-Applied carefully, supply limits can shift focus to maintenance. Nothing in the sentence stretches the concept beyond its standard use.
+Higher sales usually increase profit subject to limitations, not infinite cost rises.
 
-No qualifying word breaks the definition or scenario, so the answer is true.', 'FALSE — The claim is false. Sales objectives are fulfilled when distribution centres are built, regardless of sell-through.
+The absolute wording is what breaks the claim once the correct test is applied.
 
-The scenario is a worked example of objectives of marketing. Translate the story into the textbook category first; only then judge whether the sentence describes that category accurately.
+The statement is false.
+', 'FALSE — Profitability reimburses owners for invested capital and can be retained for reinvestment. Higher sales often support higher profit, though not without limits on costs and margins.
 
-Applied to this claim, sell-through to customers defines sales achievement. That is why the sentence does not survive careful reading.
+Profits can be retained and reinvested per the text.
 
-Because the decisive detail is wrong, mark the statement false.', 'TRUE — Evaluated against the textbook standard, this assertion is correct. Marketing spend on advertising may aim to raise sales of a specific product line.
+The absolute wording is what breaks the claim once the correct test is applied.
 
-The relevant theory comes from objectives of marketing. Identify which definition or relationship the sentence is trying to test before deciding true or false.
+The statement is false.
+', 'TRUE — Sales generate the revenues a business needs to cover production costs and to support profit. Maintaining or increasing sales is therefore a standard marketing objective.
 
-Applied carefully, advertising can target line-level sales increases. Nothing in the sentence stretches the concept beyond its standard use.
+Sales data indicates objective achievement.
 
-The reasoning chain is complete, so mark the statement true.', 'FALSE — Evaluated against the textbook standard, this assertion is false. A firm can make a profit without any sales if customer satisfaction is high.
+Nothing in the wording contradicts that marketing test, so the claim is sound.
 
-Here you must apply ideas from objectives of marketing to a concrete situation rather than recite a definition from memory. Ownership, customer type, stakeholder group, or country of production usually decides the verdict.
+The statement is true.
+'] WHERE case_id = 'CASE 5.2.74' AND tier = 'full';
+UPDATE public.economics_cases SET tactical_explanations = ARRAY['TRUE — Sales generate the revenues a business needs to cover production costs and to support profit. Maintaining or increasing sales is therefore a standard marketing objective.
 
-The statement overreaches because profit requires sales revenue exceeding costs; satisfaction alone does not replace sales. The trap is to agree with the topic while missing the one detail that breaks the logic.
+Sales growth does not guarantee profit if costs rise.
 
-Once the overclaim or mislabel is exposed, the only consistent answer is false.'] WHERE case_id = 'CASE 5.2.73' AND tier = 'full';
-UPDATE public.economics_cases SET tactical_explanations = ARRAY['TRUE — This statement is correct. Unit sales growth contributes to the revenue pool from which costs are paid.
+Under that definition the assertion is the right description of the situation.
 
-The relevant theory comes from objectives of marketing. Identify which definition or relationship the sentence is trying to test before deciding true or false.
+The statement is true.
+', 'FALSE — Profitability reimburses owners for invested capital and can be retained for reinvestment. Higher sales often support higher profit, though not without limits on costs and margins.
 
-Applied carefully, unit growth enlarges the revenue pool for costs. Nothing in the sentence stretches the concept beyond its standard use.
+Profits reimburse owners for invested money.
 
-Every part of the claim aligns with the standard concept, so the statement stands.', 'FALSE — Evaluated against the textbook standard, this assertion is false. Profitability is unrelated to sales because profits come only from borrowed funds.
+Swap in the textbook criterion and the sentence no longer describes the case.
 
-Here you must apply ideas from objectives of marketing to a concrete situation rather than recite a definition from memory. Ownership, customer type, stakeholder group, or country of production usually decides the verdict.
+The statement is false.
+', 'FALSE — Profitability reimburses owners for invested capital and can be retained for reinvestment. Higher sales often support higher profit, though not without limits on costs and margins.
 
-The statement overreaches because profits arise from sales revenue relative to costs, not borrowing alone. The trap is to agree with the topic while missing the one detail that breaks the logic.
+Profitability is listed among marketing objectives.
 
-The statement sounds plausible but fails on precision, so it is false.', 'FALSE — Evaluated against the textbook standard, this assertion is false. Higher sales always reduce profit because production costs rise infinitely with volume.
+One clear counterexample under the right criterion is enough to reject the sentence.
 
-The topic is objectives of marketing, but the decisive skill here is reading quantifiers. Words such as never, always, only, or all turn a generally true idea into a claim that can be rejected by one routine counterexample.
+The statement is false.
+', 'FALSE — Sales generate the revenues a business needs to cover production costs and to support profit. Maintaining or increasing sales is therefore a standard marketing objective.
 
-The statement overreaches because higher sales usually increase profit subject to limitations, not infinite cost rises. The trap is to agree with the topic while missing the one detail that breaks the logic.
+Profit typically depends on sales and cost performance together.
 
-Watch the absolute wording "always": exam statements often sound plausible until a single scope word turns an otherwise familiar idea into an overclaim.
+The absolute wording is what breaks the claim once the correct test is applied.
 
-Because the decisive detail is wrong, mark the statement false.', 'FALSE — Evaluated against the textbook standard, this assertion is false. Profits cannot be retained in the business for reinvestment under any circumstances.
+The statement is false.
+', 'FALSE — Profitability reimburses owners for invested capital and can be retained for reinvestment. Higher sales often support higher profit, though not without limits on costs and margins.
 
-The topic is objectives of marketing, but the decisive skill here is reading quantifiers. Words such as never, always, only, or all turn a generally true idea into a claim that can be rejected by one routine counterexample.
+Retained profit is internal equity from undistributed profit, not supplier credit.
 
-The statement overreaches because profits can be retained and reinvested per the text. The trap is to agree with the topic while missing the one detail that breaks the logic.
+Swap in the textbook criterion and the sentence no longer describes the case.
 
-Watch the absolute wording "cannot": exam statements often sound plausible until a single scope word turns an otherwise familiar idea into an overclaim.
-
-The statement sounds plausible but fails on precision, so it is false.', 'TRUE — The claim is correct. Sales data helps managers see whether marketing objectives are being achieved.
-
-This statement draws on objectives of marketing. Treat it as a checklist against the core concept named in the stem, not as a general opinion about business.
-
-In this setting, sales data indicates objective achievement. The wording matches the textbook relationship without adding extra conditions.
-
-The reasoning chain is complete, so mark the statement true.'] WHERE case_id = 'CASE 5.2.74' AND tier = 'full';
-UPDATE public.economics_cases SET tactical_explanations = ARRAY['TRUE — The claim is correct. A business with rising sales but rising costs may still miss profit objectives.
-
-This statement draws on objectives of marketing. Treat it as a checklist against the core concept named in the stem, not as a general opinion about business.
-
-In this setting, sales growth does not guarantee profit if costs rise. The wording matches the textbook relationship without adding extra conditions.
-
-No qualifying word breaks the definition or scenario, so the answer is true.', 'FALSE — This statement is false. Profitability objectives exclude owner reimbursement for invested capital.
-
-The relevant theory comes from objectives of marketing. Identify which definition or relationship the sentence is trying to test before deciding true or false.
-
-The statement overreaches because profits reimburse owners for invested money. The trap is to agree with the topic while missing the one detail that breaks the logic.
-
-Because the decisive detail is wrong, mark the statement false.', 'FALSE — On the Fuhrmann definition used in the entrance exam, the sentence is false. Marketing objectives never include profitability because marketing only targets awareness.
-
-Although the subject matter is objectives of marketing, this is really a logic check on overstatement. Non-profit surpluses, mixed economies, and partial market failure are classic cases where absolute wording fails.
-
-Applied to this claim, profitability is listed among marketing objectives. That is why the sentence does not survive careful reading.
-
-Watch the absolute wording "never": exam statements often sound plausible until a single scope word turns an otherwise familiar idea into an overclaim.
-
-Once the overclaim or mislabel is exposed, the only consistent answer is false.', 'FALSE — Evaluated against the textbook standard, this assertion is false. A firm with falling sales can always increase profit without any cost changes.
-
-The topic is objectives of marketing, but the decisive skill here is reading quantifiers. Words such as never, always, only, or all turn a generally true idea into a claim that can be rejected by one routine counterexample.
-
-The statement overreaches because profit typically depends on sales and cost performance together. The trap is to agree with the topic while missing the one detail that breaks the logic.
-
-Watch the absolute wording "always": exam statements often sound plausible until a single scope word turns an otherwise familiar idea into an overclaim.
-
-The statement sounds plausible but fails on precision, so it is false.', 'FALSE — The claim is false. Retained profit is identical to short-term trade credit from suppliers.
-
-This statement draws on objectives of marketing. Treat it as a checklist against the core concept named in the stem, not as a general opinion about business.
-
-Applied to this claim, retained profit is internal equity from undistributed profit, not supplier credit. That is why the sentence does not survive careful reading.
-
-The statement sounds plausible but fails on precision, so it is false.'] WHERE case_id = 'CASE 5.2.75' AND tier = 'full';
+The statement is false.
+'] WHERE case_id = 'CASE 5.2.75' AND tier = 'full';

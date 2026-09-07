@@ -1,319 +1,553 @@
 -- Update expanded explanations for 6.5-part7 (10 cases).
 -- Safe to re-run: only updates tactical_explanations.
 
-UPDATE public.economics_cases SET tactical_explanations = ARRAY['TRUE — Evaluated against the textbook standard, this assertion is correct. Earnings per share exceeds €0.73.
+UPDATE public.economics_cases SET tactical_explanations = ARRAY['TRUE — EPS here links the operating result (in € thousands) to shares outstanding (scaled to thousands of shares).
 
-This item belongs to the accounting block on financial ratios and analysis of statements. Ratio and classification questions ask you to connect a figure or comparison in the case with the correct statement category, not merely to recognise a number.
+Name the identity in words: EPS = operating result (€ thousands) ÷ (shares outstanding ÷ 1,000).
 
-From the figures or classification rule involved, earnings per share ≈ €0.77. Accounting statements fail when a loss is treated as increasing equity, when a flow is placed on the balance sheet, or when a ratio inequality is reversed.
+$$
+\text{Operating result} = 315, \quad \frac{\text{Shares}}{1,000} = 408
+$$
 
-Every part of the claim aligns with the standard concept, so the statement stands.', 'TRUE — Evaluated against the textbook standard, this assertion is correct. Total shares traded over six months exceed 25% of shares outstanding.
+$$
+EPS = \frac{315}{408} = €0.7721
+$$
 
-This item belongs to the accounting block on financial ratios and analysis of statements. Ratio and classification questions ask you to connect a figure or comparison in the case with the correct statement category, not merely to recognise a number.
+Threshold: exceeds €0.73. Actual ≈ €0.77.
 
-From the figures or classification rule involved, turnover ≈ 85.8% of shares outstanding. Accounting statements fail when a loss is treated as increasing equity, when a flow is placed on the balance sheet, or when a ratio inequality is reversed.
+Reading the arithmetic against the claim: EPS €0.77 exceeds €0.73 so the statement holds.
 
-Every part of the claim aligns with the standard concept, so the statement stands.', 'TRUE — This statement is correct. Peak monthly share turnover exceeds 67,570 shares.
+The statement is true.', 'TRUE — Six-month share turnover compares cumulative volume traded with the number of shares outstanding.
 
-This item belongs to the accounting block on financial ratios and analysis of statements. Ratio and classification questions ask you to connect a figure or comparison in the case with the correct statement category, not merely to recognise a number.
+Name the identity in words: turnover = six-month volume ÷ shares outstanding.
 
-From the figures or classification rule involved, peak monthly volume = 74,000. Accounting statements fail when a loss is treated as increasing equity, when a flow is placed on the balance sheet, or when a ratio inequality is reversed.
+$$
+\text{Volume} = 350,000, \quad \text{Shares} = 408,000
+$$
 
-No qualifying word breaks the definition or scenario, so the answer is true.', 'FALSE — The claim is false. Highest closing price is more than 29.8% above the lowest.
+$$
+\frac{350,000}{408,000} = 85.8\%
+$$
 
-The underlying topic is financial ratios and analysis of statements. When figures appear, the exam checks whether you can interpret them in accounting terms—what increased, what ratio is implied, and whether the label (current, non-current, equity, and so on) fits.
+Threshold: exceed 25%. Actual 85.8%.
 
-Apply the case evidence: Range €22–€28. Check whether the direction of change (higher/lower, above/below the threshold) matches what the statement asserts.
+Reading the arithmetic against the claim: turnover 85.8% exceeds 25% so the statement holds.
 
-Because the decisive detail is wrong, mark the statement false.', 'TRUE — This statement is correct. Shares outstanding equal 408,000.
+The statement is true.', 'TRUE — Peak monthly turnover is simply the largest shares-traded figure among the months in the table.
 
-This is an accounting reasoning item on financial ratios and analysis of statements. Decide whether the sentence correctly describes how a transaction, balance-sheet line, or period result affects assets, liabilities, or equity.
+Scan each month''s volume and take the maximum.
 
-From the figures or classification rule involved, shares outstanding = 408,000. Accounting statements fail when a loss is treated as increasing equity, when a flow is placed on the balance sheet, or when a ratio inequality is reversed.
+$$
+\text{Peak volume} = 74,000 \quad (June)
+$$
 
-The reasoning chain is complete, so mark the statement true.'] WHERE case_id = 'CASE 6.5.151' AND tier = 'full';
-UPDATE public.economics_cases SET tactical_explanations = ARRAY['TRUE — The claim is correct. The closing share price rose by more than 13.6% from first to last month.
+Threshold: exceeds 67,570. Actual 74,000.
 
-The underlying topic is financial ratios and analysis of statements. When figures appear, the exam checks whether you can interpret them in accounting terms—what increased, what ratio is implied, and whether the label (current, non-current, equity, and so on) fits.
+Reading the arithmetic against the claim: peak volume 74,000 exceeds 67,570 so the statement holds.
 
-Apply the case evidence: Price change ≈ 25.0%. Check whether the direction of change (higher/lower, above/below the threshold) matches what the statement asserts.
+The statement is true.', 'FALSE — The high–low gap is the percentage by which the peak closing price exceeds the trough closing price in the table.
 
-No qualifying word breaks the definition or scenario, so the answer is true.', 'TRUE — On the Fuhrmann definition used in the entrance exam, the sentence is correct. Market capitalisation at the last month exceeds €19.3 million.
+Name the identity in words: high–low gap = (highest close − lowest close) ÷ lowest close.
 
-The underlying topic is financial ratios and analysis of statements. When figures appear, the exam checks whether you can interpret them in accounting terms—what increased, what ratio is implied, and whether the label (current, non-current, equity, and so on) fits.
+$$
+P_{\max} = 28, \quad P_{\min} = 22
+$$
 
-Apply the case evidence: Market capitalisation ≈ €22.5 million. Check whether the direction of change (higher/lower, above/below the threshold) matches what the statement asserts.
+$$
+\frac{28 - 22}{22} = 27.3\%
+$$
 
-No qualifying word breaks the definition or scenario, so the answer is true.', 'FALSE — On the Fuhrmann definition used in the entrance exam, the sentence is false. Peak monthly share turnover exceeds 93,396 shares.
+Threshold: more than 29.8%. Actual 27.3%.
 
-The underlying topic is financial ratios and analysis of statements. When figures appear, the exam checks whether you can interpret them in accounting terms—what increased, what ratio is implied, and whether the label (current, non-current, equity, and so on) fits.
+Reading the arithmetic against the claim: the gap is 27.3%, which does not exceed 29.8% so the statement does not hold.
 
-Apply the case evidence: Peak monthly volume = 87,000. Check whether the direction of change (higher/lower, above/below the threshold) matches what the statement asserts.
+The statement is false.', 'TRUE — Shares outstanding are an annual stock figure reported beside the price table; the claim is simply whether that figure equals the stated count.
 
-The statement sounds plausible but fails on precision, so it is false.', 'TRUE — The claim is correct. Highest closing price is more than 17.6% above the lowest.
+Read shares outstanding from the annual figures attached to the extract:
 
-The underlying topic is financial ratios and analysis of statements. When figures appear, the exam checks whether you can interpret them in accounting terms—what increased, what ratio is implied, and whether the label (current, non-current, equity, and so on) fits.
+$$
+\text{Shares outstanding} = 408,000
+$$
 
-Apply the case evidence: Range €28–€35. Check whether the direction of change (higher/lower, above/below the threshold) matches what the statement asserts.
+The statement claims exactly 408,000. The extract reports 408,000, which matches the claim.
 
-No qualifying word breaks the definition or scenario, so the answer is true.', 'TRUE — This statement is correct. Total shares traded over six months exceed 27.3% of shares outstanding.
+Reading the arithmetic against the claim: extract reports 408,000 versus claimed 408,000 so the statement holds.
 
-This item belongs to the accounting block on financial ratios and analysis of statements. Ratio and classification questions ask you to connect a figure or comparison in the case with the correct statement category, not merely to recognise a number.
+The statement is true.'] WHERE case_id = 'CASE 6.5.151' AND tier = 'full';
+UPDATE public.economics_cases SET tactical_explanations = ARRAY['TRUE — Price appreciation from the first listed month to the last is a simple percentage change on the closing prices.
 
-From the figures or classification rule involved, turnover ≈ 59.6% of shares outstanding. Accounting statements fail when a loss is treated as increasing equity, when a flow is placed on the balance sheet, or when a ratio inequality is reversed.
+Name the identity in words: price rise = (last closing price − first closing price) ÷ first closing price.
 
-The reasoning chain is complete, so mark the statement true.'] WHERE case_id = 'CASE 6.5.152' AND tier = 'full';
-UPDATE public.economics_cases SET tactical_explanations = ARRAY['TRUE — The claim is correct. The current ratio for a publishing house sets total current assets against total current liabilities to judge whether short-term resources comfortably cover short-term obligations.
+$$
+P_{\text{first}} = 28, \quad P_{\text{last}} = 35
+$$
 
-The underlying topic is financial ratios and analysis of statements. When figures appear, the exam checks whether you can interpret them in accounting terms—what increased, what ratio is implied, and whether the label (current, non-current, equity, and so on) fits.
+$$
+\frac{35 - 28}{28} = 25.0\%
+$$
 
-Apply the case evidence: Current ratio analysis for a publishing house compares current assets with current liabilities. Check whether the direction of change (higher/lower, above/below the threshold) matches what the statement asserts.
+Threshold: more than 13.6%. Actual 25.0%.
 
-The reasoning chain is complete, so mark the statement true.', 'FALSE — On the Fuhrmann definition used in the entrance exam, the sentence is false. A transport operator reporting negative working capital always holds more cash than it needs for its daily operations.
+Reading the arithmetic against the claim: the rise is 25.0%, which exceeds 13.6% so the statement holds.
 
-The underlying topic is financial ratios and analysis of statements. When figures appear, the exam checks whether you can interpret them in accounting terms—what increased, what ratio is implied, and whether the label (current, non-current, equity, and so on) fits.
+The statement is true.', 'TRUE — Market capitalisation values the equity at the latest closing price times shares outstanding.
 
-Apply the case evidence: Negative working capital means current liabilities exceed current assets and does not imply excess cash. Check whether the direction of change (higher/lower, above/below the threshold) matches what the statement asserts.
+Name the identity in words: market capitalisation = last closing price × shares outstanding.
 
-Watch the absolute wording "always": exam statements often sound plausible until a single scope word turns an otherwise familiar idea into an overclaim.
+$$
+P_{\text{last}} = 35, \quad \text{Shares} = 644,000
+$$
 
-The statement sounds plausible but fails on precision, so it is false.', 'FALSE — This statement is false. The acid-test ratio for a transport operator includes inventory within current assets before comparing the total with current liabilities.
+$$
+\text{MCap} = 35 \times 644,000 = €22.54\text{ million}
+$$
 
-This item belongs to the accounting block on financial ratios and analysis of statements. Ratio and classification questions ask you to connect a figure or comparison in the case with the correct statement category, not merely to recognise a number.
+Threshold: exceeds €19.3 million. Actual €22.54 million.
 
-From the figures or classification rule involved, the acid-test ratio excludes inventory to provide a stricter liquidity test. Accounting statements fail when a loss is treated as increasing equity, when a flow is placed on the balance sheet, or when a ratio inequality is reversed.
+Reading the arithmetic against the claim: market cap €22.54m exceeds €19.3m so the statement holds.
 
-Once the overclaim or mislabel is exposed, the only consistent answer is false.', 'FALSE — On the Fuhrmann definition used in the entrance exam, the sentence is false. A single return on capital employed figure for a transport operator is always fully meaningful on its own, without any need to compare it against other years or similar businesses.
+The statement is true.', 'FALSE — Peak monthly turnover is simply the largest shares-traded figure among the months in the table.
 
-The task tests financial ratios and analysis of statements. Financial statements distinguish stocks (balance sheet at a date) from flows (income and cash over a period); many false statements swap those roles.
+Scan each month''s volume and take the maximum.
 
-Apply the case evidence: Return on capital employed gains meaning chiefly from comparisons over time or with peers. Check whether the direction of change (higher/lower, above/below the threshold) matches what the statement asserts.
+$$
+\text{Peak volume} = 87,000 \quad (June)
+$$
 
-Watch the absolute wording "always": exam statements often sound plausible until a single scope word turns an otherwise familiar idea into an overclaim.
+Threshold: exceeds 93,396. Actual 87,000.
 
-The statement sounds plausible but fails on precision, so it is false.', 'FALSE — On the Fuhrmann definition used in the entrance exam, the sentence is false. Return on equity for a transport operator is calculated by comparing the cash balance on the balance sheet with total liabilities rather than relating profit to equity.
+Reading the arithmetic against the claim: peak volume 87,000 does not exceed 93,396 so the statement does not hold.
 
-The underlying topic is financial ratios and analysis of statements. When figures appear, the exam checks whether you can interpret them in accounting terms—what increased, what ratio is implied, and whether the label (current, non-current, equity, and so on) fits.
+The statement is false.', 'TRUE — The high–low gap is the percentage by which the peak closing price exceeds the trough closing price in the table.
 
-Apply the case evidence: Return on equity relates profit before interest and tax to equity, not cash to liabilities. Check whether the direction of change (higher/lower, above/below the threshold) matches what the statement asserts.
+Name the identity in words: high–low gap = (highest close − lowest close) ÷ lowest close.
 
-Because the decisive detail is wrong, mark the statement false.'] WHERE case_id = 'CASE 6.5.153' AND tier = 'full';
-UPDATE public.economics_cases SET tactical_explanations = ARRAY['FALSE — On the Fuhrmann definition used in the entrance exam, the sentence is false. The closing share price rose by more than 27% from first to last month.
+$$
+P_{\max} = 35, \quad P_{\min} = 28
+$$
 
-The underlying topic is financial ratios and analysis of statements. When figures appear, the exam checks whether you can interpret them in accounting terms—what increased, what ratio is implied, and whether the label (current, non-current, equity, and so on) fits.
+$$
+\frac{35 - 28}{28} = 25.0\%
+$$
 
-Apply the case evidence: Price change ≈ 6.1%. Check whether the direction of change (higher/lower, above/below the threshold) matches what the statement asserts.
+Threshold: more than 17.6%. Actual 25.0%.
 
-The statement sounds plausible but fails on precision, so it is false.', 'FALSE — On the Fuhrmann definition used in the entrance exam, the sentence is false. Market capitalisation rose by more than 11.8% over the period.
+Reading the arithmetic against the claim: the gap is 25.0%, which exceeds 17.6% so the statement holds.
 
-The underlying topic is financial ratios and analysis of statements. When figures appear, the exam checks whether you can interpret them in accounting terms—what increased, what ratio is implied, and whether the label (current, non-current, equity, and so on) fits.
+The statement is true.', 'TRUE — Six-month share turnover compares cumulative volume traded with the number of shares outstanding.
 
-Apply the case evidence: €19.2m → €20.4m. Check whether the direction of change (higher/lower, above/below the threshold) matches what the statement asserts.
+Name the identity in words: turnover = six-month volume ÷ shares outstanding.
 
-The statement sounds plausible but fails on precision, so it is false.', 'FALSE — On the Fuhrmann definition used in the entrance exam, the sentence is false. Highest closing price is more than 28.8% above the lowest.
+$$
+\text{Volume} = 384,000, \quad \text{Shares} = 644,000
+$$
 
-The underlying topic is financial ratios and analysis of statements. When figures appear, the exam checks whether you can interpret them in accounting terms—what increased, what ratio is implied, and whether the label (current, non-current, equity, and so on) fits.
+$$
+\frac{384,000}{644,000} = 59.6\%
+$$
 
-Apply the case evidence: Range €30–€35. Check whether the direction of change (higher/lower, above/below the threshold) matches what the statement asserts.
+Threshold: exceed 27.3%. Actual 59.6%.
 
-Because the decisive detail is wrong, mark the statement false.', 'TRUE — This statement is correct. Total shares traded over six months exceed 18.9% of shares outstanding.
+Reading the arithmetic against the claim: turnover 59.6% exceeds 27.3% so the statement holds.
 
-This item belongs to the accounting block on financial ratios and analysis of statements. Ratio and classification questions ask you to connect a figure or comparison in the case with the correct statement category, not merely to recognise a number.
+The statement is true.'] WHERE case_id = 'CASE 6.5.152' AND tier = 'full';
+UPDATE public.economics_cases SET tactical_explanations = ARRAY['TRUE — Activity ratios use averages: asset turnover = revenue / average assets; inventory turnover = cost of sales / average inventory; receivables turnover = revenue / average receivables; days ≈ 365 / turnover.
 
-From the figures or classification rule involved, turnover ≈ 61.5% of shares outstanding. Accounting statements fail when a loss is treated as increasing equity, when a flow is placed on the balance sheet, or when a ratio inequality is reversed.
+The wording matches the relevant rule for "The Four Pillars of Ratio Analysis in Practice". Activity ratios use averages: asset turnover = revenue / average assets; inventory turnover = cost of sales / average inventory; receivables turnover = revenue / average receivables; days ≈ 365 / turnover. Market capitalisation = price × shares; EPS relates earnings to shares outstanding. Applied here: "The current ratio for a publishing house sets total current assets against total current liabilities to judge whether short-term resources comfortably cover short-term obligations."
 
-No qualifying word breaks the definition or scenario, so the answer is true.', 'FALSE — This statement is false. Peak monthly share turnover exceeds 96,788 shares.
+The statement is true.', 'FALSE — Activity ratios use averages: asset turnover = revenue / average assets; inventory turnover = cost of sales / average inventory; receivables turnover = revenue / average receivables; days ≈ 365 / turnover.
 
-This item belongs to the accounting block on financial ratios and analysis of statements. Ratio and classification questions ask you to connect a figure or comparison in the case with the correct statement category, not merely to recognise a number.
+Absolute or misapplied wording conflicts with the rule for "The Four Pillars of Ratio Analysis in Practice". Activity ratios use averages: asset turnover = revenue / average assets; inventory turnover = cost of sales / average inventory; receivables turnover = revenue / average receivables; days ≈ 365 / turnover. Market capitalisation = price × shares; EPS relates earnings to shares outstanding. Rejected claim: "A transport operator reporting negative working capital always holds more cash than it needs for its daily operations."
 
-From the figures or classification rule involved, peak monthly volume = 94,000. Accounting statements fail when a loss is treated as increasing equity, when a flow is placed on the balance sheet, or when a ratio inequality is reversed.
+The statement is false.', 'FALSE — Activity ratios use averages: asset turnover = revenue / average assets; inventory turnover = cost of sales / average inventory; receivables turnover = revenue / average receivables; days ≈ 365 / turnover.
 
-The statement sounds plausible but fails on precision, so it is false.'] WHERE case_id = 'CASE 6.5.154' AND tier = 'full';
-UPDATE public.economics_cases SET tactical_explanations = ARRAY['FALSE — On the Fuhrmann definition used in the entrance exam, the sentence is false. Highest closing price is more than 24.3% above the lowest.
+Absolute or misapplied wording conflicts with the rule for "The Four Pillars of Ratio Analysis in Practice". Activity ratios use averages: asset turnover = revenue / average assets; inventory turnover = cost of sales / average inventory; receivables turnover = revenue / average receivables; days ≈ 365 / turnover. Market capitalisation = price × shares; EPS relates earnings to shares outstanding. Rejected claim: "The acid-test ratio for a transport operator includes inventory within current assets before comparing the total with current liabilities."
 
-The underlying topic is financial ratios and analysis of statements. When figures appear, the exam checks whether you can interpret them in accounting terms—what increased, what ratio is implied, and whether the label (current, non-current, equity, and so on) fits.
+The statement is false.', 'FALSE — Activity ratios use averages: asset turnover = revenue / average assets; inventory turnover = cost of sales / average inventory; receivables turnover = revenue / average receivables; days ≈ 365 / turnover.
 
-Apply the case evidence: Range €33–€41. Check whether the direction of change (higher/lower, above/below the threshold) matches what the statement asserts.
+Absolute or misapplied wording conflicts with the rule for "The Four Pillars of Ratio Analysis in Practice". Activity ratios use averages: asset turnover = revenue / average assets; inventory turnover = cost of sales / average inventory; receivables turnover = revenue / average receivables; days ≈ 365 / turnover. Market capitalisation = price × shares; EPS relates earnings to shares outstanding. Rejected claim: "A single return on capital employed figure for a transport operator is always fully meaningful on its own, without any need to compare it against other years or similar businesses."
 
-Because the decisive detail is wrong, mark the statement false.', 'TRUE — On the Fuhrmann definition used in the entrance exam, the sentence is correct. Market capitalisation rose by more than 23.8% over the period.
+The statement is false.', 'FALSE — Activity ratios use averages: asset turnover = revenue / average assets; inventory turnover = cost of sales / average inventory; receivables turnover = revenue / average receivables; days ≈ 365 / turnover.
 
-The underlying topic is financial ratios and analysis of statements. When figures appear, the exam checks whether you can interpret them in accounting terms—what increased, what ratio is implied, and whether the label (current, non-current, equity, and so on) fits.
+Absolute or misapplied wording conflicts with the rule for "The Four Pillars of Ratio Analysis in Practice". Activity ratios use averages: asset turnover = revenue / average assets; inventory turnover = cost of sales / average inventory; receivables turnover = revenue / average receivables; days ≈ 365 / turnover. Market capitalisation = price × shares; EPS relates earnings to shares outstanding. Rejected claim: "Return on equity for a transport operator is calculated by comparing the cash balance on the balance sheet with total liabilities rather than relating profit to equity."
 
-Apply the case evidence: €14.4m → €17.8m. Check whether the direction of change (higher/lower, above/below the threshold) matches what the statement asserts.
+The statement is false.'] WHERE case_id = 'CASE 6.5.153' AND tier = 'full';
+UPDATE public.economics_cases SET tactical_explanations = ARRAY['FALSE — Price appreciation from the first listed month to the last is a simple percentage change on the closing prices.
 
-The reasoning chain is complete, so mark the statement true.', 'TRUE — The claim is correct. Total shares traded over six months exceed 34.3% of shares outstanding.
+Name the identity in words: price rise = (last closing price − first closing price) ÷ first closing price.
 
-The underlying topic is financial ratios and analysis of statements. When figures appear, the exam checks whether you can interpret them in accounting terms—what increased, what ratio is implied, and whether the label (current, non-current, equity, and so on) fits.
+$$
+P_{\text{first}} = 33, \quad P_{\text{last}} = 35
+$$
 
-Apply the case evidence: Turnover ≈ 80.5% of shares outstanding. Check whether the direction of change (higher/lower, above/below the threshold) matches what the statement asserts.
+$$
+\frac{35 - 33}{33} = 6.1\%
+$$
 
-Every part of the claim aligns with the standard concept, so the statement stands.', 'FALSE — Evaluated against the textbook standard, this assertion is false. Operating result is below €221 thousand.
+Threshold: more than 27%. Actual 6.1%.
 
-This item belongs to the accounting block on financial ratios and analysis of statements. Ratio and classification questions ask you to connect a figure or comparison in the case with the correct statement category, not merely to recognise a number.
+Reading the arithmetic against the claim: the rise is 6.1%, which does not exceed 27% so the statement does not hold.
 
-From the figures or classification rule involved, operating result = 256. Accounting statements fail when a loss is treated as increasing equity, when a flow is placed on the balance sheet, or when a ratio inequality is reversed.
+The statement is false.', 'FALSE — With shares outstanding unchanged, market-cap growth equals the percentage change in the share price between first and last month.
 
-Once the overclaim or mislabel is exposed, the only consistent answer is false.', 'TRUE — Evaluated against the textbook standard, this assertion is correct. Peak monthly share turnover exceeds 58,884 shares.
+Name the identity in words: market-cap change = (last MCap − first MCap) ÷ first MCap.
 
-This item belongs to the accounting block on financial ratios and analysis of statements. Ratio and classification questions ask you to connect a figure or comparison in the case with the correct statement category, not merely to recognise a number.
+$$
+\text{MCap}_{\text{first}} = 33 \times 582,000 = €19.21\text{m}
+$$
 
-From the figures or classification rule involved, peak monthly volume = 88,000. Accounting statements fail when a loss is treated as increasing equity, when a flow is placed on the balance sheet, or when a ratio inequality is reversed.
+$$
+\text{MCap}_{\text{last}} = 35 \times 582,000 = €20.37\text{m}
+$$
 
-The reasoning chain is complete, so mark the statement true.'] WHERE case_id = 'CASE 6.5.155' AND tier = 'full';
-UPDATE public.economics_cases SET tactical_explanations = ARRAY['TRUE — This statement is correct. Return on equity for a publishing house relates the profit before interest and tax generated during the period to the equity that owners have invested in the business.
+$$
+\frac{20.37 - 19.21}{19.21} = 6.1\%
+$$
 
-This is an accounting reasoning item on financial ratios and analysis of statements. Decide whether the sentence correctly describes how a transaction, balance-sheet line, or period result affects assets, liabilities, or equity.
+Threshold: more than 11.8%. Actual 6.1%.
 
-From the figures or classification rule involved, return on equity for a publishing house links profit before interest and tax to owners'' equity. Accounting statements fail when a loss is treated as increasing equity, when a flow is placed on the balance sheet, or when a ratio inequality is reversed.
+Reading the arithmetic against the claim: MCap rose 6.1%, which does not exceed 11.8% so the statement does not hold.
 
-The reasoning chain is complete, so mark the statement true.', 'TRUE — The claim is correct. A return on capital employed figure for a publishing house carries more weight when read alongside the business''s own results from earlier years or against similar firms in its industry.
+The statement is false.', 'FALSE — The high–low gap is the percentage by which the peak closing price exceeds the trough closing price in the table.
 
-The task tests financial ratios and analysis of statements. Financial statements distinguish stocks (balance sheet at a date) from flows (income and cash over a period); many false statements swap those roles.
+Name the identity in words: high–low gap = (highest close − lowest close) ÷ lowest close.
 
-Apply the case evidence: Return on capital employed for a publishing house is most useful in comparison rather than in isolation. Check whether the direction of change (higher/lower, above/below the threshold) matches what the statement asserts.
+$$
+P_{\max} = 35, \quad P_{\min} = 30
+$$
 
-Every part of the claim aligns with the standard concept, so the statement stands.', 'TRUE — Evaluated against the textbook standard, this assertion is correct. Asset turnover for a publishing house relates revenue earned during the period to the average total assets employed to generate that revenue.
+$$
+\frac{35 - 30}{30} = 16.7\%
+$$
 
-This item belongs to the accounting block on financial ratios and analysis of statements. Ratio and classification questions ask you to connect a figure or comparison in the case with the correct statement category, not merely to recognise a number.
+Threshold: more than 28.8%. Actual 16.7%.
 
-From the figures or classification rule involved, asset turnover measures how much revenue a publishing house generates per unit of average assets. Accounting statements fail when a loss is treated as increasing equity, when a flow is placed on the balance sheet, or when a ratio inequality is reversed.
+Reading the arithmetic against the claim: the gap is 16.7%, which does not exceed 28.8% so the statement does not hold.
 
-Every part of the claim aligns with the standard concept, so the statement stands.', 'TRUE — The claim is correct. The equity ratio for a publishing house expresses the proportion of total assets financed by owners'' equity rather than by borrowed funds.
+The statement is false.', 'TRUE — Six-month share turnover compares cumulative volume traded with the number of shares outstanding.
 
-The underlying topic is financial ratios and analysis of statements. When figures appear, the exam checks whether you can interpret them in accounting terms—what increased, what ratio is implied, and whether the label (current, non-current, equity, and so on) fits.
+Name the identity in words: turnover = six-month volume ÷ shares outstanding.
 
-Apply the case evidence: Equity ratio analysis for a publishing house expresses equity as a share of total assets. Check whether the direction of change (higher/lower, above/below the threshold) matches what the statement asserts.
+$$
+\text{Volume} = 358,000, \quad \text{Shares} = 582,000
+$$
 
-The reasoning chain is complete, so mark the statement true.', 'TRUE — This statement is correct. If a publishing house draws on a short-term facility to settle supplier invoices, its cash position may improve while its working capital can simultaneously weaken because current liabilities rise.
+$$
+\frac{358,000}{582,000} = 61.5\%
+$$
 
-This item belongs to the accounting block on financial ratios and analysis of statements. Ratio and classification questions ask you to connect a figure or comparison in the case with the correct statement category, not merely to recognise a number.
+Threshold: exceed 18.9%. Actual 61.5%.
 
-From the figures or classification rule involved, short-term borrowing can boost cash yet reduce working capital for a publishing house. Accounting statements fail when a loss is treated as increasing equity, when a flow is placed on the balance sheet, or when a ratio inequality is reversed.
+Reading the arithmetic against the claim: turnover 61.5% exceeds 18.9% so the statement holds.
 
-No qualifying word breaks the definition or scenario, so the answer is true.'] WHERE case_id = 'CASE 6.5.156' AND tier = 'full';
-UPDATE public.economics_cases SET tactical_explanations = ARRAY['TRUE — This statement is correct. Working capital for a telecommunications provider is found by subtracting current liabilities from current assets, so a widening gap in favour of current assets raises working capital.
+The statement is true.', 'FALSE — Peak monthly turnover is simply the largest shares-traded figure among the months in the table.
 
-This item belongs to the accounting block on financial ratios and analysis of statements. Ratio and classification questions ask you to connect a figure or comparison in the case with the correct statement category, not merely to recognise a number.
+Scan each month''s volume and take the maximum.
 
-From the figures or classification rule involved, the standard working capital definition applies to a telecommunications provider: current assets minus current liabilities. Accounting statements fail when a loss is treated as increasing equity, when a flow is placed on the balance sheet, or when a ratio inequality is reversed.
+$$
+\text{Peak volume} = 94,000 \quad (February)
+$$
 
-No qualifying word breaks the definition or scenario, so the answer is true.', 'TRUE — On the Fuhrmann definition used in the entrance exam, the sentence is correct. A telecommunications provider is generally better placed with positive working capital, since current assets then exceed current liabilities once short-term obligations are taken into account.
+Threshold: exceeds 96,788. Actual 94,000.
 
-The underlying topic is financial ratios and analysis of statements. When figures appear, the exam checks whether you can interpret them in accounting terms—what increased, what ratio is implied, and whether the label (current, non-current, equity, and so on) fits.
+Reading the arithmetic against the claim: peak volume 94,000 does not exceed 96,788 so the statement does not hold.
 
-Apply the case evidence: Positive working capital is generally preferable for a telecommunications provider as a cushion over short-term obligations. Check whether the direction of change (higher/lower, above/below the threshold) matches what the statement asserts.
+The statement is false.'] WHERE case_id = 'CASE 6.5.154' AND tier = 'full';
+UPDATE public.economics_cases SET tactical_explanations = ARRAY['FALSE — The high–low gap is the percentage by which the peak closing price exceeds the trough closing price in the table.
 
-The reasoning chain is complete, so mark the statement true.', 'TRUE — On the Fuhrmann definition used in the entrance exam, the sentence is correct. The current ratio for a telecommunications provider sets total current assets against total current liabilities to judge whether short-term resources comfortably cover short-term obligations.
+Name the identity in words: high–low gap = (highest close − lowest close) ÷ lowest close.
 
-The underlying topic is financial ratios and analysis of statements. When figures appear, the exam checks whether you can interpret them in accounting terms—what increased, what ratio is implied, and whether the label (current, non-current, equity, and so on) fits.
+$$
+P_{\max} = 41, \quad P_{\min} = 33
+$$
 
-Apply the case evidence: Current ratio analysis for a telecommunications provider compares current assets with current liabilities. Check whether the direction of change (higher/lower, above/below the threshold) matches what the statement asserts.
+$$
+\frac{41 - 33}{33} = 24.2\%
+$$
 
-No qualifying word breaks the definition or scenario, so the answer is true.', 'FALSE — Evaluated against the textbook standard, this assertion is false. Inventory turnover for a transport operator is calculated by dividing revenue by average inventory rather than by relating cost of sales to average inventory.
+Threshold: more than 24.3%. Actual 24.2%.
 
-This item belongs to the accounting block on financial ratios and analysis of statements. Ratio and classification questions ask you to connect a figure or comparison in the case with the correct statement category, not merely to recognise a number.
+Reading the arithmetic against the claim: the gap is 24.2%, which does not exceed 24.3% so the statement does not hold.
 
-From the figures or classification rule involved, inventory turnover uses cost of sales relative to average inventory, not revenue. Accounting statements fail when a loss is treated as increasing equity, when a flow is placed on the balance sheet, or when a ratio inequality is reversed.
+The statement is false.', 'TRUE — With shares outstanding unchanged, market-cap growth equals the percentage change in the share price between first and last month.
 
-Because the decisive detail is wrong, mark the statement false.', 'TRUE — The claim is correct. Return on equity for a telecommunications provider relates the profit before interest and tax generated during the period to the equity that owners have invested in the business.
+Name the identity in words: market-cap change = (last MCap − first MCap) ÷ first MCap.
 
-The task tests financial ratios and analysis of statements. Financial statements distinguish stocks (balance sheet at a date) from flows (income and cash over a period); many false statements swap those roles.
+$$
+\text{MCap}_{\text{first}} = 33 \times 435,000 = €14.36\text{m}
+$$
 
-Apply the case evidence: Return on equity for a telecommunications provider links profit before interest and tax to owners'' equity. Check whether the direction of change (higher/lower, above/below the threshold) matches what the statement asserts.
+$$
+\text{MCap}_{\text{last}} = 41 \times 435,000 = €17.84\text{m}
+$$
 
-The reasoning chain is complete, so mark the statement true.'] WHERE case_id = 'CASE 6.5.157' AND tier = 'full';
-UPDATE public.economics_cases SET tactical_explanations = ARRAY['TRUE — The claim is correct. Market capitalisation at the last month exceeds €8.7 million.
+$$
+\frac{17.84 - 14.36}{14.36} = 24.2\%
+$$
 
-The underlying topic is financial ratios and analysis of statements. When figures appear, the exam checks whether you can interpret them in accounting terms—what increased, what ratio is implied, and whether the label (current, non-current, equity, and so on) fits.
+Threshold: more than 23.8%. Actual 24.2%.
 
-Apply the case evidence: Market capitalisation ≈ €10.8 million. Check whether the direction of change (higher/lower, above/below the threshold) matches what the statement asserts.
+Reading the arithmetic against the claim: MCap rose 24.2%, which exceeds 23.8% so the statement holds.
 
-No qualifying word breaks the definition or scenario, so the answer is true.', 'TRUE — On the Fuhrmann definition used in the entrance exam, the sentence is correct. Highest closing price is more than 39.6% above the lowest.
+The statement is true.', 'TRUE — Six-month share turnover compares cumulative volume traded with the number of shares outstanding.
 
-The underlying topic is financial ratios and analysis of statements. When figures appear, the exam checks whether you can interpret them in accounting terms—what increased, what ratio is implied, and whether the label (current, non-current, equity, and so on) fits.
+Name the identity in words: turnover = six-month volume ÷ shares outstanding.
 
-Apply the case evidence: Range €14–€21. Check whether the direction of change (higher/lower, above/below the threshold) matches what the statement asserts.
+$$
+\text{Volume} = 350,000, \quad \text{Shares} = 435,000
+$$
 
-Every part of the claim aligns with the standard concept, so the statement stands.', 'FALSE — This statement is false. Market capitalisation rose by more than 16.6% over the period.
+$$
+\frac{350,000}{435,000} = 80.5\%
+$$
 
-This item belongs to the accounting block on financial ratios and analysis of statements. Ratio and classification questions ask you to connect a figure or comparison in the case with the correct statement category, not merely to recognise a number.
+Threshold: exceed 34.3%. Actual 80.5%.
 
-From the figures or classification rule involved, €16.1m → €10.8m. Accounting statements fail when a loss is treated as increasing equity, when a flow is placed on the balance sheet, or when a ratio inequality is reversed.
+Reading the arithmetic against the claim: turnover 80.5% exceeds 34.3% so the statement holds.
 
-Because the decisive detail is wrong, mark the statement false.', 'TRUE — The claim is correct. Total shares traded over six months exceed 20.4% of shares outstanding.
+The statement is true.', 'FALSE — Operating result is taken from the annual figures beside the share table and compared with the stated euro-thousand threshold.
 
-The underlying topic is financial ratios and analysis of statements. When figures appear, the exam checks whether you can interpret them in accounting terms—what increased, what ratio is implied, and whether the label (current, non-current, equity, and so on) fits.
+Read the operating result from the extract:
 
-Apply the case evidence: Turnover ≈ 46.7% of shares outstanding. Check whether the direction of change (higher/lower, above/below the threshold) matches what the statement asserts.
+$$
+\text{Operating result} = €256\text{ thousand}
+$$
 
-Every part of the claim aligns with the standard concept, so the statement stands.', 'TRUE — On the Fuhrmann definition used in the entrance exam, the sentence is correct. Peak monthly share turnover exceeds 57,679 shares.
+The statement claims this amount is below €221 thousand. Actual €256 thousand is not below that threshold.
 
-The underlying topic is financial ratios and analysis of statements. When figures appear, the exam checks whether you can interpret them in accounting terms—what increased, what ratio is implied, and whether the label (current, non-current, equity, and so on) fits.
+Reading the arithmetic against the claim: operating result €256k is not below €221k so the statement does not hold.
 
-Apply the case evidence: Peak monthly volume = 87,000. Check whether the direction of change (higher/lower, above/below the threshold) matches what the statement asserts.
+The statement is false.', 'TRUE — Peak monthly turnover is simply the largest shares-traded figure among the months in the table.
 
-The reasoning chain is complete, so mark the statement true.'] WHERE case_id = 'CASE 6.5.158' AND tier = 'full';
-UPDATE public.economics_cases SET tactical_explanations = ARRAY['TRUE — On the Fuhrmann definition used in the entrance exam, the sentence is correct. A return on capital employed figure for a telecommunications provider carries more weight when read alongside the business''s own results from earlier years or against similar firms in its industry.
+Scan each month''s volume and take the maximum.
 
-The task tests financial ratios and analysis of statements. Financial statements distinguish stocks (balance sheet at a date) from flows (income and cash over a period); many false statements swap those roles.
+$$
+\text{Peak volume} = 88,000 \quad (January)
+$$
 
-Apply the case evidence: Return on capital employed for a telecommunications provider is most useful in comparison rather than in isolation. Check whether the direction of change (higher/lower, above/below the threshold) matches what the statement asserts.
+Threshold: exceeds 58,884. Actual 88,000.
 
-The reasoning chain is complete, so mark the statement true.', 'FALSE — The claim is false. The current ratio and the acid-test ratio for a transport operator always produce identical results, regardless of how much inventory the business holds.
+Reading the arithmetic against the claim: peak volume 88,000 exceeds 58,884 so the statement holds.
 
-The underlying topic is financial ratios and analysis of statements. When figures appear, the exam checks whether you can interpret them in accounting terms—what increased, what ratio is implied, and whether the label (current, non-current, equity, and so on) fits.
+The statement is true.'] WHERE case_id = 'CASE 6.5.155' AND tier = 'full';
+UPDATE public.economics_cases SET tactical_explanations = ARRAY['TRUE — Activity ratios use averages: asset turnover = revenue / average assets; inventory turnover = cost of sales / average inventory; receivables turnover = revenue / average receivables; days ≈ 365 / turnover.
 
-Apply the case evidence: When inventory is material, the acid-test ratio differs from the current ratio. Check whether the direction of change (higher/lower, above/below the threshold) matches what the statement asserts.
+The wording matches the relevant rule for "The Four Pillars of Ratio Analysis Explained". Activity ratios use averages: asset turnover = revenue / average assets; inventory turnover = cost of sales / average inventory; receivables turnover = revenue / average receivables; days ≈ 365 / turnover. Market capitalisation = price × shares; EPS relates earnings to shares outstanding. Applied here: "Return on equity for a publishing house relates the profit before interest and tax generated during the period to the equity that owners have invested in the business."
 
-Watch the absolute wording "always": exam statements often sound plausible until a single scope word turns an otherwise familiar idea into an overclaim.
+The statement is true.', 'TRUE — Activity ratios use averages: asset turnover = revenue / average assets; inventory turnover = cost of sales / average inventory; receivables turnover = revenue / average receivables; days ≈ 365 / turnover.
 
-The statement sounds plausible but fails on precision, so it is false.', 'TRUE — This statement is correct. Asset turnover for a telecommunications provider relates revenue earned during the period to the average total assets employed to generate that revenue.
+The wording matches the relevant rule for "The Four Pillars of Ratio Analysis Explained". Activity ratios use averages: asset turnover = revenue / average assets; inventory turnover = cost of sales / average inventory; receivables turnover = revenue / average receivables; days ≈ 365 / turnover. Market capitalisation = price × shares; EPS relates earnings to shares outstanding. Applied here: "A return on capital employed figure for a publishing house carries more weight when read alongside the business''s own results from earlier years or against similar firms in its industry."
 
-This item belongs to the accounting block on financial ratios and analysis of statements. Ratio and classification questions ask you to connect a figure or comparison in the case with the correct statement category, not merely to recognise a number.
+The statement is true.', 'TRUE — Activity ratios use averages: asset turnover = revenue / average assets; inventory turnover = cost of sales / average inventory; receivables turnover = revenue / average receivables; days ≈ 365 / turnover.
 
-From the figures or classification rule involved, asset turnover measures how much revenue a telecommunications provider generates per unit of average assets. Accounting statements fail when a loss is treated as increasing equity, when a flow is placed on the balance sheet, or when a ratio inequality is reversed.
+The wording matches the relevant rule for "The Four Pillars of Ratio Analysis Explained". Activity ratios use averages: asset turnover = revenue / average assets; inventory turnover = cost of sales / average inventory; receivables turnover = revenue / average receivables; days ≈ 365 / turnover. Market capitalisation = price × shares; EPS relates earnings to shares outstanding. Applied here: "Asset turnover for a publishing house relates revenue earned during the period to the average total assets employed to generate that revenue."
 
-The reasoning chain is complete, so mark the statement true.', 'TRUE — On the Fuhrmann definition used in the entrance exam, the sentence is correct. The equity ratio for a telecommunications provider expresses the proportion of total assets financed by owners'' equity rather than by borrowed funds.
+The statement is true.', 'TRUE — Activity ratios use averages: asset turnover = revenue / average assets; inventory turnover = cost of sales / average inventory; receivables turnover = revenue / average receivables; days ≈ 365 / turnover.
 
-The underlying topic is financial ratios and analysis of statements. When figures appear, the exam checks whether you can interpret them in accounting terms—what increased, what ratio is implied, and whether the label (current, non-current, equity, and so on) fits.
+The wording matches the relevant rule for "The Four Pillars of Ratio Analysis Explained". Activity ratios use averages: asset turnover = revenue / average assets; inventory turnover = cost of sales / average inventory; receivables turnover = revenue / average receivables; days ≈ 365 / turnover. Market capitalisation = price × shares; EPS relates earnings to shares outstanding. Applied here: "The equity ratio for a publishing house expresses the proportion of total assets financed by owners'' equity rather than by borrowed funds."
 
-Apply the case evidence: Equity ratio analysis for a telecommunications provider expresses equity as a share of total assets. Check whether the direction of change (higher/lower, above/below the threshold) matches what the statement asserts.
+The statement is true.', 'TRUE — Activity ratios use averages: asset turnover = revenue / average assets; inventory turnover = cost of sales / average inventory; receivables turnover = revenue / average receivables; days ≈ 365 / turnover.
 
-Every part of the claim aligns with the standard concept, so the statement stands.', 'TRUE — This statement is correct. If a telecommunications provider draws on a short-term facility to settle supplier invoices, its cash position may improve while its working capital can simultaneously weaken because current liabilities rise.
+The claim states: If a publishing house draws on a short-term facility to settle supplier invoices, its cash position may improve while its working capital can simultaneously weaken. The reason given — current liabilities rise. — fits the chapter rule. Activity ratios use averages: asset turnover = revenue / average assets; inventory turnover = cost of sales / average inventory; receivables turnover = revenue / average receivables; days ≈ 365 / turnover. Market capitalisation = price × shares; EPS relates earnings to shares outstanding.
 
-This item belongs to the accounting block on financial ratios and analysis of statements. Ratio and classification questions ask you to connect a figure or comparison in the case with the correct statement category, not merely to recognise a number.
+The statement is true.'] WHERE case_id = 'CASE 6.5.156' AND tier = 'full';
+UPDATE public.economics_cases SET tactical_explanations = ARRAY['TRUE — Activity ratios use averages: asset turnover = revenue / average assets; inventory turnover = cost of sales / average inventory; receivables turnover = revenue / average receivables; days ≈ 365 / turnover.
 
-From the figures or classification rule involved, short-term borrowing can boost cash yet reduce working capital for a telecommunications provider. Accounting statements fail when a loss is treated as increasing equity, when a flow is placed on the balance sheet, or when a ratio inequality is reversed.
+The wording matches the relevant rule for "The Four Pillars of Ratio Analysis for Analysts". Activity ratios use averages: asset turnover = revenue / average assets; inventory turnover = cost of sales / average inventory; receivables turnover = revenue / average receivables; days ≈ 365 / turnover. Market capitalisation = price × shares; EPS relates earnings to shares outstanding. Applied here: "Working capital for a telecommunications provider is found by subtracting current liabilities from current assets, so a widening gap in favour of current assets raises working capital."
 
-The reasoning chain is complete, so mark the statement true.'] WHERE case_id = 'CASE 6.5.159' AND tier = 'full';
-UPDATE public.economics_cases SET tactical_explanations = ARRAY['TRUE — On the Fuhrmann definition used in the entrance exam, the sentence is correct. Earnings per share exceeds €0.61.
+The statement is true.', 'TRUE — Activity ratios use averages: asset turnover = revenue / average assets; inventory turnover = cost of sales / average inventory; receivables turnover = revenue / average receivables; days ≈ 365 / turnover.
 
-The underlying topic is financial ratios and analysis of statements. When figures appear, the exam checks whether you can interpret them in accounting terms—what increased, what ratio is implied, and whether the label (current, non-current, equity, and so on) fits.
+The wording matches the relevant rule for "The Four Pillars of Ratio Analysis for Analysts". Activity ratios use averages: asset turnover = revenue / average assets; inventory turnover = cost of sales / average inventory; receivables turnover = revenue / average receivables; days ≈ 365 / turnover. Market capitalisation = price × shares; EPS relates earnings to shares outstanding. Applied here: "A telecommunications provider is generally better placed with positive working capital, since current assets then exceed current liabilities once short-term obligations are taken into account."
 
-Apply the case evidence: Earnings per share ≈ €0.67. Check whether the direction of change (higher/lower, above/below the threshold) matches what the statement asserts.
+The statement is true.', 'TRUE — Activity ratios use averages: asset turnover = revenue / average assets; inventory turnover = cost of sales / average inventory; receivables turnover = revenue / average receivables; days ≈ 365 / turnover.
 
-Every part of the claim aligns with the standard concept, so the statement stands.', 'TRUE — On the Fuhrmann definition used in the entrance exam, the sentence is correct. Total shares traded over six months exceed 16.1% of shares outstanding.
+The wording matches the relevant rule for "The Four Pillars of Ratio Analysis for Analysts". Activity ratios use averages: asset turnover = revenue / average assets; inventory turnover = cost of sales / average inventory; receivables turnover = revenue / average receivables; days ≈ 365 / turnover. Market capitalisation = price × shares; EPS relates earnings to shares outstanding. Applied here: "The current ratio for a telecommunications provider sets total current assets against total current liabilities to judge whether short-term resources comfortably cover short-term obligations."
 
-The underlying topic is financial ratios and analysis of statements. When figures appear, the exam checks whether you can interpret them in accounting terms—what increased, what ratio is implied, and whether the label (current, non-current, equity, and so on) fits.
+The statement is true.', 'FALSE — Activity ratios use averages: asset turnover = revenue / average assets; inventory turnover = cost of sales / average inventory; receivables turnover = revenue / average receivables; days ≈ 365 / turnover.
 
-Apply the case evidence: Turnover ≈ 61.7% of shares outstanding. Check whether the direction of change (higher/lower, above/below the threshold) matches what the statement asserts.
+Absolute or misapplied wording conflicts with the rule for "The Four Pillars of Ratio Analysis for Analysts". Activity ratios use averages: asset turnover = revenue / average assets; inventory turnover = cost of sales / average inventory; receivables turnover = revenue / average receivables; days ≈ 365 / turnover. Market capitalisation = price × shares; EPS relates earnings to shares outstanding. Rejected claim: "Inventory turnover for a transport operator is calculated by dividing revenue by average inventory rather than by relating cost of sales to average inventory."
 
-Every part of the claim aligns with the standard concept, so the statement stands.', 'FALSE — Evaluated against the textbook standard, this assertion is false. Market capitalisation rose by more than 28.5% over the period.
+The statement is false.', 'TRUE — Activity ratios use averages: asset turnover = revenue / average assets; inventory turnover = cost of sales / average inventory; receivables turnover = revenue / average receivables; days ≈ 365 / turnover.
 
-This item belongs to the accounting block on financial ratios and analysis of statements. Ratio and classification questions ask you to connect a figure or comparison in the case with the correct statement category, not merely to recognise a number.
+The wording matches the relevant rule for "The Four Pillars of Ratio Analysis for Analysts". Activity ratios use averages: asset turnover = revenue / average assets; inventory turnover = cost of sales / average inventory; receivables turnover = revenue / average receivables; days ≈ 365 / turnover. Market capitalisation = price × shares; EPS relates earnings to shares outstanding. Applied here: "Return on equity for a telecommunications provider relates the profit before interest and tax generated during the period to the equity that owners have invested in the business."
 
-From the figures or classification rule involved, €15.2m → €19.2m. Accounting statements fail when a loss is treated as increasing equity, when a flow is placed on the balance sheet, or when a ratio inequality is reversed.
+The statement is true.'] WHERE case_id = 'CASE 6.5.157' AND tier = 'full';
+UPDATE public.economics_cases SET tactical_explanations = ARRAY['TRUE — Market capitalisation values the equity at the latest closing price times shares outstanding.
 
-The statement sounds plausible but fails on precision, so it is false.', 'FALSE — The claim is false. Operating result is below €251 thousand.
+Name the identity in words: market capitalisation = last closing price × shares outstanding.
 
-The underlying topic is financial ratios and analysis of statements. When figures appear, the exam checks whether you can interpret them in accounting terms—what increased, what ratio is implied, and whether the label (current, non-current, equity, and so on) fits.
+$$
+P_{\text{last}} = 14, \quad \text{Shares} = 769,000
+$$
 
-Apply the case evidence: Operating result = 298. Check whether the direction of change (higher/lower, above/below the threshold) matches what the statement asserts.
+$$
+\text{MCap} = 14 \times 769,000 = €10.77\text{ million}
+$$
 
-The statement sounds plausible but fails on precision, so it is false.', 'TRUE — The claim is correct. Peak monthly share turnover exceeds 51,658 shares.
+Threshold: exceeds €8.7 million. Actual €10.77 million.
 
-The underlying topic is financial ratios and analysis of statements. When figures appear, the exam checks whether you can interpret them in accounting terms—what increased, what ratio is implied, and whether the label (current, non-current, equity, and so on) fits.
+Reading the arithmetic against the claim: market cap €10.77m exceeds €8.7m so the statement holds.
 
-Apply the case evidence: Peak monthly volume = 79,000. Check whether the direction of change (higher/lower, above/below the threshold) matches what the statement asserts.
+The statement is true.', 'TRUE — The high–low gap is the percentage by which the peak closing price exceeds the trough closing price in the table.
 
-Every part of the claim aligns with the standard concept, so the statement stands.'] WHERE case_id = 'CASE 6.5.160' AND tier = 'full';
+Name the identity in words: high–low gap = (highest close − lowest close) ÷ lowest close.
+
+$$
+P_{\max} = 21, \quad P_{\min} = 14
+$$
+
+$$
+\frac{21 - 14}{14} = 50.0\%
+$$
+
+Threshold: more than 39.6%. Actual 50.0%.
+
+Reading the arithmetic against the claim: the gap is 50.0%, which exceeds 39.6% so the statement holds.
+
+The statement is true.', 'FALSE — With shares outstanding unchanged, market-cap growth equals the percentage change in the share price between first and last month.
+
+Name the identity in words: market-cap change = (last MCap − first MCap) ÷ first MCap.
+
+$$
+\text{MCap}_{\text{first}} = 21 \times 769,000 = €16.15\text{m}
+$$
+
+$$
+\text{MCap}_{\text{last}} = 14 \times 769,000 = €10.77\text{m}
+$$
+
+$$
+\frac{10.77 - 16.15}{16.15} = -33.3\%
+$$
+
+Threshold: more than 16.6%. Actual -33.3%.
+
+Reading the arithmetic against the claim: MCap rose -33.3%, which does not exceed 16.6% so the statement does not hold.
+
+The statement is false.', 'TRUE — Six-month share turnover compares cumulative volume traded with the number of shares outstanding.
+
+Name the identity in words: turnover = six-month volume ÷ shares outstanding.
+
+$$
+\text{Volume} = 359,000, \quad \text{Shares} = 769,000
+$$
+
+$$
+\frac{359,000}{769,000} = 46.7\%
+$$
+
+Threshold: exceed 20.4%. Actual 46.7%.
+
+Reading the arithmetic against the claim: turnover 46.7% exceeds 20.4% so the statement holds.
+
+The statement is true.', 'TRUE — Peak monthly turnover is simply the largest shares-traded figure among the months in the table.
+
+Scan each month''s volume and take the maximum.
+
+$$
+\text{Peak volume} = 87,000 \quad (February)
+$$
+
+Threshold: exceeds 57,679. Actual 87,000.
+
+Reading the arithmetic against the claim: peak volume 87,000 exceeds 57,679 so the statement holds.
+
+The statement is true.'] WHERE case_id = 'CASE 6.5.158' AND tier = 'full';
+UPDATE public.economics_cases SET tactical_explanations = ARRAY['TRUE — Activity ratios use averages: asset turnover = revenue / average assets; inventory turnover = cost of sales / average inventory; receivables turnover = revenue / average receivables; days ≈ 365 / turnover.
+
+The wording matches the relevant rule for "The Four Pillars of Ratio Analysis Across Sectors". Activity ratios use averages: asset turnover = revenue / average assets; inventory turnover = cost of sales / average inventory; receivables turnover = revenue / average receivables; days ≈ 365 / turnover. Market capitalisation = price × shares; EPS relates earnings to shares outstanding. Applied here: "A return on capital employed figure for a telecommunications provider carries more weight when read alongside the business''s own results from earlier years or against similar firms in its industry."
+
+The statement is true.', 'FALSE — Activity ratios use averages: asset turnover = revenue / average assets; inventory turnover = cost of sales / average inventory; receivables turnover = revenue / average receivables; days ≈ 365 / turnover.
+
+Absolute or misapplied wording conflicts with the rule for "The Four Pillars of Ratio Analysis Across Sectors". Activity ratios use averages: asset turnover = revenue / average assets; inventory turnover = cost of sales / average inventory; receivables turnover = revenue / average receivables; days ≈ 365 / turnover. Market capitalisation = price × shares; EPS relates earnings to shares outstanding. Rejected claim: "The current ratio and the acid-test ratio for a transport operator always produce identical results, regardless of how much inventory the business holds."
+
+The statement is false.', 'TRUE — Activity ratios use averages: asset turnover = revenue / average assets; inventory turnover = cost of sales / average inventory; receivables turnover = revenue / average receivables; days ≈ 365 / turnover.
+
+The wording matches the relevant rule for "The Four Pillars of Ratio Analysis Across Sectors". Activity ratios use averages: asset turnover = revenue / average assets; inventory turnover = cost of sales / average inventory; receivables turnover = revenue / average receivables; days ≈ 365 / turnover. Market capitalisation = price × shares; EPS relates earnings to shares outstanding. Applied here: "Asset turnover for a telecommunications provider relates revenue earned during the period to the average total assets employed to generate that revenue."
+
+The statement is true.', 'TRUE — Activity ratios use averages: asset turnover = revenue / average assets; inventory turnover = cost of sales / average inventory; receivables turnover = revenue / average receivables; days ≈ 365 / turnover.
+
+The wording matches the relevant rule for "The Four Pillars of Ratio Analysis Across Sectors". Activity ratios use averages: asset turnover = revenue / average assets; inventory turnover = cost of sales / average inventory; receivables turnover = revenue / average receivables; days ≈ 365 / turnover. Market capitalisation = price × shares; EPS relates earnings to shares outstanding. Applied here: "The equity ratio for a telecommunications provider expresses the proportion of total assets financed by owners'' equity rather than by borrowed funds."
+
+The statement is true.', 'TRUE — Activity ratios use averages: asset turnover = revenue / average assets; inventory turnover = cost of sales / average inventory; receivables turnover = revenue / average receivables; days ≈ 365 / turnover.
+
+The claim states: If a telecommunications provider draws on a short-term facility to settle supplier invoices, its cash position may improve while its working capital can simultaneously weaken. The reason given — current liabilities rise. — fits the chapter rule. Activity ratios use averages: asset turnover = revenue / average assets; inventory turnover = cost of sales / average inventory; receivables turnover = revenue / average receivables; days ≈ 365 / turnover. Market capitalisation = price × shares; EPS relates earnings to shares outstanding.
+
+The statement is true.'] WHERE case_id = 'CASE 6.5.159' AND tier = 'full';
+UPDATE public.economics_cases SET tactical_explanations = ARRAY['TRUE — EPS here links the operating result (in € thousands) to shares outstanding (scaled to thousands of shares).
+
+Name the identity in words: EPS = operating result (€ thousands) ÷ (shares outstanding ÷ 1,000).
+
+$$
+\text{Operating result} = 298, \quad \frac{\text{Shares}}{1,000} = 447
+$$
+
+$$
+EPS = \frac{298}{447} = €0.6667
+$$
+
+Threshold: exceeds €0.61. Actual ≈ €0.67.
+
+Reading the arithmetic against the claim: EPS €0.67 exceeds €0.61 so the statement holds.
+
+The statement is true.', 'TRUE — Six-month share turnover compares cumulative volume traded with the number of shares outstanding.
+
+Name the identity in words: turnover = six-month volume ÷ shares outstanding.
+
+$$
+\text{Volume} = 276,000, \quad \text{Shares} = 447,000
+$$
+
+$$
+\frac{276,000}{447,000} = 61.7\%
+$$
+
+Threshold: exceed 16.1%. Actual 61.7%.
+
+Reading the arithmetic against the claim: turnover 61.7% exceeds 16.1% so the statement holds.
+
+The statement is true.', 'FALSE — With shares outstanding unchanged, market-cap growth equals the percentage change in the share price between first and last month.
+
+Name the identity in words: market-cap change = (last MCap − first MCap) ÷ first MCap.
+
+$$
+\text{MCap}_{\text{first}} = 34 \times 447,000 = €15.20\text{m}
+$$
+
+$$
+\text{MCap}_{\text{last}} = 43 \times 447,000 = €19.22\text{m}
+$$
+
+$$
+\frac{19.22 - 15.20}{15.20} = 26.5\%
+$$
+
+Threshold: more than 28.5%. Actual 26.5%.
+
+Reading the arithmetic against the claim: MCap rose 26.5%, which does not exceed 28.5% so the statement does not hold.
+
+The statement is false.', 'FALSE — Operating result is taken from the annual figures beside the share table and compared with the stated euro-thousand threshold.
+
+Read the operating result from the extract:
+
+$$
+\text{Operating result} = €298\text{ thousand}
+$$
+
+The statement claims this amount is below €251 thousand. Actual €298 thousand is not below that threshold.
+
+Reading the arithmetic against the claim: operating result €298k is not below €251k so the statement does not hold.
+
+The statement is false.', 'TRUE — Peak monthly turnover is simply the largest shares-traded figure among the months in the table.
+
+Scan each month''s volume and take the maximum.
+
+$$
+\text{Peak volume} = 79,000 \quad (January)
+$$
+
+Threshold: exceeds 51,658. Actual 79,000.
+
+Reading the arithmetic against the claim: peak volume 79,000 exceeds 51,658 so the statement holds.
+
+The statement is true.'] WHERE case_id = 'CASE 6.5.160' AND tier = 'full';

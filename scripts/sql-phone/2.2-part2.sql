@@ -1,806 +1,1153 @@
 -- Update expanded explanations for 2.2-part2 (25 cases).
 -- Safe to re-run: only updates tactical_explanations.
 
-UPDATE public.economics_cases SET tactical_explanations = ARRAY['TRUE — On the Fuhrmann definition used in the entrance exam, the sentence is correct. Choosing a free concert over paid overtime forfeits wage income as opportunity cost.
+UPDATE public.economics_cases SET tactical_explanations = ARRAY['TRUE — Opportunity cost is the value of the best alternative given up when a choice is made. It is not the cash outlay on the chosen option; it is the tutoring income, experience, leisure, or other project that the choice prevents.
 
-This statement draws on scarcity of resources, opportunity cost, and trade-offs. Treat it as a checklist against the core concept named in the stem, not as a general opinion about business.
+Choosing a free concert over paid overtime forgoes the wage those overtime hours would have paid — money opportunity cost of the concert.
 
-In this setting, forgone overtime wages are the next-best alternative when the free concert is chosen. The wording matches the textbook relationship without adding extra conditions.
+Held against the chapter test (here: wage, opportunity cost), each operative word earns its place: the category, the comparison, and the mechanism survive when checked one by one.
 
-The reasoning chain is complete, so mark the statement true.', 'FALSE — On the Fuhrmann definition used in the entrance exam, the sentence is false. Opportunity cost applies only when both alternatives have explicit price tags attached.
+A useful check is the opposite error: treat opportunity cost as the money paid, or treat one buyer’s choice as macro, or treat a shift as a movement — those near-misses fail, which confirms this wording.
 
-The scenario is a worked example of scarcity of resources, opportunity cost, and trade-offs. Translate the story into the textbook category first; only then judge whether the sentence describes that category accurately.
+The statement is true.
+', 'FALSE — Opportunity cost is the value of the best alternative given up when a choice is made. It is not the cash outlay on the chosen option; it is the tutoring income, experience, leisure, or other project that the choice prevents.
 
-Applied to this claim, time and non-monetary benefits also define forgone alternatives. That is why the sentence does not survive careful reading.
+Opportunity cost applies when the forgone alternative has value even without a price tag — leisure, experience, unpaid help. Explicit prices are not required on both sides.
 
-The statement sounds plausible but fails on precision, so it is false.', 'TRUE — On the Fuhrmann definition used in the entrance exam, the sentence is correct. Leisure time spent volunteering forfeits paid work hours that could have been chosen instead.
+Held against the chapter test (here: Opportunity cost), the familiar vocabulary may sound economic, but the operative restriction or reason fails — so the sentence mislabels the situation.
 
-This statement draws on scarcity of resources, opportunity cost, and trade-offs. Treat it as a checklist against the core concept named in the stem, not as a general opinion about business.
+Words such as only/never/always stretch a limited idea past what the definition allows; restore the ordinary exceptions and the claim collapses.
 
-In this setting, volunteer hours could have been sold as paid labour instead. The wording matches the textbook relationship without adding extra conditions.
+The statement is false.
+', 'TRUE — When a resource can serve only one use at a time — a person’s hours, a crew, a machine, a maintenance window — it must be allocated among competing uses. That allocation problem is what economising answers, for households, firms, and governments alike.
 
-No qualifying word breaks the definition or scenario, so the answer is true.', 'FALSE — Evaluated against the textbook standard, this assertion is false. Non-financial enjoyment never enters opportunity-cost reasoning under any circumstances.
+Volunteering uses hours that could have been paid work. Forgone wage hours are the opportunity cost of that leisure-for-others time.
 
-The topic is scarcity of resources, opportunity cost, and trade-offs, but the decisive skill here is reading quantifiers. Words such as never, always, only, or all turn a generally true idea into a claim that can be rejected by one routine counterexample.
+Held against the chapter test, each operative word earns its place: the category, the comparison, and the mechanism survive when checked one by one.
 
-The statement overreaches because enjoyment and experience can be part of what is given up or gained. The trap is to agree with the topic while missing the one detail that breaks the logic.
+Nothing in the stem contradicts that reading, so the assertion stands as a correct application of the definition.
 
-Watch the absolute wording "never": exam statements often sound plausible until a single scope word turns an otherwise familiar idea into an overclaim.
+The statement is true.
+', 'FALSE — This topic centres on allocating scarce resources among competing uses and measuring opportunity cost as the best forgone alternative.
 
-The statement sounds plausible but fails on precision, so it is false.', 'TRUE — The claim is correct. Scarce time creates opportunity cost while other determinants remain unchanged.
+Non-financial enjoyment can be the benefit forgone (or the benefit gained) in opportunity-cost reasoning. Banning non-financial elements is too narrow.
 
-This statement draws on scarcity of resources, opportunity cost, and trade-offs. Treat it as a checklist against the core concept named in the stem, not as a general opinion about business.
+Held against the chapter test, the familiar vocabulary may sound economic, but the operative restriction or reason fails — so the sentence mislabels the situation.
 
-In this setting, zero price does not mean zero opportunity cost when time is scarce. The wording matches the textbook relationship without adding extra conditions.
+Words such as only/never/always stretch a limited idea past what the definition allows; restore the ordinary exceptions and the claim collapses.
 
-The reasoning chain is complete, so mark the statement true.'] WHERE case_id = 'CASE 2.2.26' AND tier = 'full';
-UPDATE public.economics_cases SET tactical_explanations = ARRAY['TRUE — Evaluated against the textbook standard, this assertion is correct. A family choosing debt repayment versus a home extension faces the same allocation problem as government, smaller scale.
+The statement is false.
+', 'TRUE — Opportunity cost is the value of the best alternative given up when a choice is made. It is not the cash outlay on the chosen option; it is the tutoring income, experience, leisure, or other project that the choice prevents.
 
-This tests discrimination within scarcity of resources, opportunity cost, and trade-offs: local versus international scope, equity versus debt, product versus market orientation, and similar pairs.
+When time is the binding scarce resource, choosing one use forgoes another even if money and other factors stay unchanged — time-based opportunity cost.
 
-Applied carefully, households face scarce budgets and forgone alternatives just like governments. Nothing in the sentence stretches the concept beyond its standard use.
+Held against the chapter test (here: opportunity cost), each operative word earns its place: the category, the comparison, and the mechanism survive when checked one by one.
 
-Every part of the claim aligns with the standard concept, so the statement stands.', 'FALSE — This statement is false. Scarcity affects only governments, never households or firms, by definition.
+If you replaced the key term with its neighbour (accounting outlay, micro/macro swap, movement vs shift), the sentence would stop matching the stem — that contrast locks the idea.
 
-The topic is scarcity of resources, opportunity cost, and trade-offs, but the decisive skill here is reading quantifiers. Words such as never, always, only, or all turn a generally true idea into a claim that can be rejected by one routine counterexample.
+The statement is true.
+'] WHERE case_id = 'CASE 2.2.26' AND tier = 'full';
+UPDATE public.economics_cases SET tactical_explanations = ARRAY['TRUE — When a resource can serve only one use at a time — a person’s hours, a crew, a machine, a maintenance window — it must be allocated among competing uses. That allocation problem is what economising answers, for households, firms, and governments alike.
 
-The statement overreaches because scarcity applies to households and firms as well as governments. The trap is to agree with the topic while missing the one detail that breaks the logic.
+A family choosing debt repayment versus a home extension allocates a limited budget among competing uses — the same problem governments face, at smaller scale.
 
-Watch the absolute wording "never": exam statements often sound plausible until a single scope word turns an otherwise familiar idea into an overclaim.
+Map that definition onto the case where tobias claims scarce resources matter only for governments managing huge budgets. The claim’s actors and constraints (here: government) line up with the concept: the sentence describes the same mechanism the chapter teaches, not a neighbouring idea with similar vocabulary.
 
-Because the decisive detail is wrong, mark the statement false.', 'FALSE — The claim is false. Smaller money amounts mean families face no genuine opportunity cost in their decisions.
+Under that classification the claim describes the situation correctly rather than a lookalike category.
 
-This statement draws on scarcity of resources, opportunity cost, and trade-offs. Treat it as a checklist against the core concept named in the stem, not as a general opinion about business.
+The statement is true.
+', 'FALSE — This topic centres on allocating scarce resources among competing uses and measuring opportunity cost as the best forgone alternative.
 
-Applied to this claim, opportunity cost depends on alternatives forgone, not on budget size alone. That is why the sentence does not survive careful reading.
+Scarcity affects households and firms as well as governments. It is not defined as “governments only.”.
 
-Once the overclaim or mislabel is exposed, the only consistent answer is false.', 'FALSE — Evaluated against the textbook standard, this assertion is false. Debt repayment opportunity cost exists only if the family is also a registered business.
+Map that definition onto the case where tobias claims scarce resources matter only for governments managing huge budgets. Even if the stem mentions related details (here: Scarcity), those details do not carry the claim’s conclusion — the sentence either widens the concept past its test or attaches the wrong label to the facts.
 
-Here you must apply ideas from scarcity of resources, opportunity cost, and trade-offs to a concrete situation rather than recite a definition from memory. Ownership, customer type, stakeholder group, or country of production usually decides the verdict.
+Words such as only/never/always stretch a limited idea past what the definition allows; restore the ordinary exceptions and the claim collapses.
 
-The statement overreaches because household financial choices carry opportunity cost without business registration. The trap is to agree with the topic while missing the one detail that breaks the logic.
+The statement is false.
+', 'FALSE — Opportunity cost is the value of the best alternative given up when a choice is made. It is not the cash outlay on the chosen option; it is the tutoring income, experience, leisure, or other project that the choice prevents.
 
-Because the decisive detail is wrong, mark the statement false.', 'FALSE — The claim is false. Only decisions involving millions of people can be analysed with opportunity cost.
+Opportunity cost exists at any scale: forgoing one use of limited means for another. Smaller euro amounts do not make forgone benefits unreal.
 
-This statement draws on scarcity of resources, opportunity cost, and trade-offs. Treat it as a checklist against the core concept named in the stem, not as a general opinion about business.
+Map that definition onto the case where tobias claims scarce resources matter only for governments managing huge budgets. Even if the stem mentions related details (here: opportunity cost), those details do not carry the claim’s conclusion — the sentence either widens the concept past its test or attaches the wrong label to the facts.
 
-Applied to this claim, opportunity cost applies at any scale where resources are limited. That is why the sentence does not survive careful reading.
+Restore the textbook test and the assertion falls away: it mislabels the category or reverses the comparison the chapter actually teaches.
 
-The statement sounds plausible but fails on precision, so it is false.'] WHERE case_id = 'CASE 2.2.27' AND tier = 'full';
-UPDATE public.economics_cases SET tactical_explanations = ARRAY['TRUE — The claim is correct. The last ICU bed is a scarce resource allocated between scheduled and emergency use.
+The statement is false.
+', 'FALSE — Opportunity cost is the value of the best alternative given up when a choice is made. It is not the cash outlay on the chosen option; it is the tutoring income, experience, leisure, or other project that the choice prevents.
 
-This statement draws on scarcity of resources, opportunity cost, and trade-offs. Treat it as a checklist against the core concept named in the stem, not as a general opinion about business.
+The trap is treating a zero price, shared premises, or an accounting outlay as if that erased opportunity cost. The forgone alternative’s value remains even when no cash changes hands on the chosen option. Focus points: opportunity cost.
 
-In this setting, one bed, two patients: scarce medical capacity. The wording matches the textbook relationship without adding extra conditions.
+Map that definition onto the case where tobias claims scarce resources matter only for governments managing huge budgets. Even if the stem mentions related details (here: opportunity cost), those details do not carry the claim’s conclusion — the sentence either widens the concept past its test or attaches the wrong label to the facts.
 
-No qualifying word breaks the definition or scenario, so the answer is true.', 'TRUE — This statement is correct. Assigning emergency means opportunity cost is scheduled surgery health benefit forgone.
+The absolute quantifier is doing the damage. Soften it to the chapter’s actual scope and the remaining content no longer supports a false blanket rule.
 
-The relevant theory comes from scarcity of resources, opportunity cost, and trade-offs. Identify which definition or relationship the sentence is trying to test before deciding true or false.
+The statement is false.
+', 'FALSE — Opportunity cost is the value of the best alternative given up when a choice is made. It is not the cash outlay on the chosen option; it is the tutoring income, experience, leisure, or other project that the choice prevents.
 
-Applied carefully, scheduled surgery benefit is forgone when emergency gets the bed. Nothing in the sentence stretches the concept beyond its standard use.
+Opportunity cost analyses individual, firm, and government choices — not only decisions involving millions of people.
 
-No qualifying word breaks the definition or scenario, so the answer is true.', 'TRUE — The claim is correct. Assigning scheduled means opportunity cost is emergency patient''s treatment benefit forgone.
+Map that definition onto the case where tobias claims scarce resources matter only for governments managing huge budgets. Even if the stem mentions related details (here: opportunity cost), those details do not carry the claim’s conclusion — the sentence either widens the concept past its test or attaches the wrong label to the facts.
 
-This statement draws on scarcity of resources, opportunity cost, and trade-offs. Treat it as a checklist against the core concept named in the stem, not as a general opinion about business.
+Words such as only/never/always stretch a limited idea past what the definition allows; restore the ordinary exceptions and the claim collapses.
 
-In this setting, emergency treatment benefit is forgone when scheduled patient gets the bed. The wording matches the textbook relationship without adding extra conditions.
+The statement is false.
+'] WHERE case_id = 'CASE 2.2.27' AND tier = 'full';
+UPDATE public.economics_cases SET tactical_explanations = ARRAY['TRUE — When a resource can serve only one use at a time — a person’s hours, a crew, a machine, a maintenance window — it must be allocated among competing uses. That allocation problem is what economising answers, for households, firms, and governments alike.
 
-Every part of the claim aligns with the standard concept, so the statement stands.', 'FALSE — On the Fuhrmann definition used in the entrance exam, the sentence is false. Healthcare rationing never involves opportunity cost because medical ethics override economics.
+One remaining ICU bed cannot serve both the scheduled surgery patient and the emergency admission fully at once. The bed is scarce between those uses.
 
-Although the subject matter is scarcity of resources, opportunity cost, and trade-offs, this is really a logic check on overstatement. Non-profit surpluses, mixed economies, and partial market failure are classic cases where absolute wording fails.
+Map that definition onto the case where a ward has one ICU bed left for either a scheduled surgery patient or an emergency admission arriving tonight. The claim’s actors and constraints line up with the concept: the sentence describes the same mechanism the chapter teaches, not a neighbouring idea with similar vocabulary.
 
-Applied to this claim, limited beds force trade-offs even in healthcare settings. That is why the sentence does not survive careful reading.
+Nothing in the stem contradicts that reading, so the assertion stands as a correct application of the definition.
 
-Watch the absolute wording "never": exam statements often sound plausible until a single scope word turns an otherwise familiar idea into an overclaim.
+The statement is true.
+', 'TRUE — Opportunity cost is the value of the best alternative given up when a choice is made. It is not the cash outlay on the chosen option; it is the tutoring income, experience, leisure, or other project that the choice prevents.
 
-The statement sounds plausible but fails on precision, so it is false.', 'TRUE — The claim is correct. Even non-monetary life-saving benefits can represent opportunity cost between patients.
+Assigning the bed to emergency forgoes the scheduled surgery’s health benefit — opportunity cost of the emergency assignment.
 
-This statement draws on scarcity of resources, opportunity cost, and trade-offs. Treat it as a checklist against the core concept named in the stem, not as a general opinion about business.
+Map that definition onto the case where a ward has one ICU bed left for either a scheduled surgery patient or an emergency admission arriving tonight. The claim’s actors and constraints (here: opportunity cost) line up with the concept: the sentence describes the same mechanism the chapter teaches, not a neighbouring idea with similar vocabulary.
 
-In this setting, forgone treatment outcomes can define opportunity cost without euro pricing. The wording matches the textbook relationship without adding extra conditions.
+The causal link is doing the teaching work — strip it out and the remaining label would be too thin to judge.
 
-Every part of the claim aligns with the standard concept, so the statement stands.'] WHERE case_id = 'CASE 2.2.28' AND tier = 'full';
-UPDATE public.economics_cases SET tactical_explanations = ARRAY['TRUE — This statement is correct. Opportunity cost always refers to the next-best alternative not chosen, not all rejected options combined.
+The statement is true.
+', 'TRUE — Opportunity cost is the value of the best alternative given up when a choice is made. It is not the cash outlay on the chosen option; it is the tutoring income, experience, leisure, or other project that the choice prevents.
 
-The topic is scarcity of resources, opportunity cost, and trade-offs, but the decisive skill here is reading quantifiers. Words such as never, always, only, or all turn a generally true idea into a claim that can be rejected by one routine counterexample.
+Assigning the bed to the scheduled case forgoes the emergency patient’s treatment benefit — opportunity cost of the scheduled assignment.
 
-Applied carefully, only the single highest-value forgone alternative counts. Nothing in the sentence stretches the concept beyond its standard use.
+Map that definition onto the case where a ward has one ICU bed left for either a scheduled surgery patient or an emergency admission arriving tonight. The claim’s actors and constraints (here: opportunity cost) line up with the concept: the sentence describes the same mechanism the chapter teaches, not a neighbouring idea with similar vocabulary.
 
-Every part of the claim aligns with the standard concept, so the statement stands.', 'FALSE — The claim is false. Opportunity cost is identical for both sides of a trade because both parties give something up.
+Keep the reason clause: it names why the classification holds (forgone alternative, scope of analysis, price signal, or institutional rule) rather than restating the conclusion alone.
 
-The scenario is a worked example of scarcity of resources, opportunity cost, and trade-offs. Translate the story into the textbook category first; only then judge whether the sentence describes that category accurately.
+The statement is true.
+', 'FALSE — Opportunity cost is the value of the best alternative given up when a choice is made. It is not the cash outlay on the chosen option; it is the tutoring income, experience, leisure, or other project that the choice prevents.
 
-Applied to this claim, each party''s next-best alternative differs; the concept is not automatically symmetric in amount. That is why the sentence does not survive careful reading.
+Medical ethics guide how to weigh benefits; they do not erase the fact that one bed forces a forgone alternative. Rationing under scarcity involves opportunity cost.
 
-The statement sounds plausible but fails on precision, so it is false.', 'FALSE — Evaluated against the textbook standard, this assertion is false. If no measurable financial benefit exists, opportunity cost is always zero by definition.
+Map that definition onto the case where a ward has one ICU bed left for either a scheduled surgery patient or an emergency admission arriving tonight. Even if the stem mentions related details (here: opportunity cost), those details do not carry the claim’s conclusion — the sentence either widens the concept past its test or attaches the wrong label to the facts.
 
-The topic is scarcity of resources, opportunity cost, and trade-offs, but the decisive skill here is reading quantifiers. Words such as never, always, only, or all turn a generally true idea into a claim that can be rejected by one routine counterexample.
+Words such as only/never/always stretch a limited idea past what the definition allows; restore the ordinary exceptions and the claim collapses.
 
-The statement overreaches because non-financial benefits can still represent forgone alternatives. The trap is to agree with the topic while missing the one detail that breaks the logic.
+The statement is false.
+', 'TRUE — Opportunity cost is the value of the best alternative given up when a choice is made. It is not the cash outlay on the chosen option; it is the tutoring income, experience, leisure, or other project that the choice prevents.
 
-Watch the absolute wording "always": exam statements often sound plausible until a single scope word turns an otherwise familiar idea into an overclaim.
+Opportunity cost can be measured in health outcomes and lives affected, not only in euros. Non-monetary life-saving benefits forgone still count.
 
-Once the overclaim or mislabel is exposed, the only consistent answer is false.', 'FALSE — This statement is false. Choosing the lower-return option means opportunity cost is zero because the better option was available.
+Map that definition onto the case where a ward has one ICU bed left for either a scheduled surgery patient or an emergency admission arriving tonight. The claim’s actors and constraints (here: opportunity cost) line up with the concept: the sentence describes the same mechanism the chapter teaches, not a neighbouring idea with similar vocabulary.
 
-Here you must apply ideas from scarcity of resources, opportunity cost, and trade-offs to a concrete situation rather than recite a definition from memory. Ownership, customer type, stakeholder group, or country of production usually decides the verdict.
+A useful check is the opposite error: treat opportunity cost as the money paid, or treat one buyer’s choice as macro, or treat a shift as a movement — those near-misses fail, which confirms this wording.
 
-The statement overreaches because choosing lower return still forgoes the higher-return alternative as opportunity cost. The trap is to agree with the topic while missing the one detail that breaks the logic.
+The statement is true.
+'] WHERE case_id = 'CASE 2.2.28' AND tier = 'full';
+UPDATE public.economics_cases SET tactical_explanations = ARRAY['TRUE — Opportunity cost is the value of the best alternative given up when a choice is made. It is not the cash outlay on the chosen option; it is the tutoring income, experience, leisure, or other project that the choice prevents.
 
-Once the overclaim or mislabel is exposed, the only consistent answer is false.', 'TRUE — This statement is correct. Households, firms, and governments all face opportunity cost when allocating scarce resources.
+Opportunity cost is the next-best alternative not chosen — not the sum of every rejected option. That precision is the standard definition.
 
-The topic is scarcity of resources, opportunity cost, and trade-offs, but the decisive skill here is reading quantifiers. Words such as never, always, only, or all turn a generally true idea into a claim that can be rejected by one routine counterexample.
+Held against the chapter test (here: Opportunity cost), each operative word earns its place: the category, the comparison, and the mechanism survive when checked one by one.
 
-Applied carefully, universal application across actor types is standard. Nothing in the sentence stretches the concept beyond its standard use.
+A useful check is the opposite error: treat opportunity cost as the money paid, or treat one buyer’s choice as macro, or treat a shift as a movement — those near-misses fail, which confirms this wording.
 
-The reasoning chain is complete, so mark the statement true.'] WHERE case_id = 'CASE 2.2.29' AND tier = 'full';
-UPDATE public.economics_cases SET tactical_explanations = ARRAY['TRUE — On the Fuhrmann definition used in the entrance exam, the sentence is correct. Limited resources relative to wants force households, firms, and governments to make choices.
+The statement is true.
+', 'FALSE — Opportunity cost is the value of the best alternative given up when a choice is made. It is not the cash outlay on the chosen option; it is the tutoring income, experience, leisure, or other project that the choice prevents.
 
-This statement draws on scarcity of resources, opportunity cost, and trade-offs. Treat it as a checklist against the core concept named in the stem, not as a general opinion about business.
+Each party to a trade has its own forgone alternative. Opportunity costs need not be identical just because both give something up; what each forgoes can differ.
 
-In this setting, universal scarcity creates choices for all actor types. The wording matches the textbook relationship without adding extra conditions.
+Held against the chapter test (here: Opportunity cost), the familiar vocabulary may sound economic, but the operative restriction or reason fails — so the sentence mislabels the situation.
 
-No qualifying word breaks the definition or scenario, so the answer is true.', 'TRUE — This statement is correct. Allocation means deciding how to distribute scarce resources among competing uses.
+The because-clause attaches the wrong reason to the label. A real detail (a national programme, a zero wage, shared premises, use of money) does not justify the over-broad conclusion.
 
-The relevant theory comes from scarcity of resources, opportunity cost, and trade-offs. Identify which definition or relationship the sentence is trying to test before deciding true or false.
+The statement is false.
+', 'FALSE — Opportunity cost is the value of the best alternative given up when a choice is made. It is not the cash outlay on the chosen option; it is the tutoring income, experience, leisure, or other project that the choice prevents.
 
-Applied carefully, allocation is the act of distributing limited resources among alternatives. Nothing in the sentence stretches the concept beyond its standard use.
+Missing a clean financial metric does not force opportunity cost to zero. Forgone time, health, or enjoyment can still be real opportunity costs.
 
-Every part of the claim aligns with the standard concept, so the statement stands.', 'TRUE — The claim is correct. Choosing one course of action means forgoing the benefit that the next-best feasible alternative would have delivered.
+Held against the chapter test (here: opportunity cost), the familiar vocabulary may sound economic, but the operative restriction or reason fails — so the sentence mislabels the situation.
 
-This statement draws on scarcity of resources, opportunity cost, and trade-offs. Treat it as a checklist against the core concept named in the stem, not as a general opinion about business.
+Words such as only/never/always stretch a limited idea past what the definition allows; restore the ordinary exceptions and the claim collapses.
 
-In this setting, standard definition of opportunity cost across contexts. The wording matches the textbook relationship without adding extra conditions.
+The statement is false.
+', 'FALSE — Opportunity cost is the value of the best alternative given up when a choice is made. It is not the cash outlay on the chosen option; it is the tutoring income, experience, leisure, or other project that the choice prevents.
 
-The reasoning chain is complete, so mark the statement true.', 'TRUE — On the Fuhrmann definition used in the entrance exam, the sentence is correct. Economising is necessary whenever resources are scarce rather than unlimited.
+Choosing a lower-return option means forgoing the higher-return option — opportunity cost is typically larger, not zero, when a better alternative was available.
 
-The section on scarcity of resources, opportunity cost, and trade-offs frequently contrasts two similar ideas side by side. A comparison statement is true only if the relationship is stated in the right direction and applies to the right concept pair.
+Held against the chapter test (here: opportunity cost), the familiar vocabulary may sound economic, but the operative restriction or reason fails — so the sentence mislabels the situation.
 
-In this setting, economising responds to scarcity for any resource type. The wording matches the textbook relationship without adding extra conditions.
+The absolute quantifier is doing the damage. Soften it to the chapter’s actual scope and the remaining content no longer supports a false blanket rule.
 
-The reasoning chain is complete, so mark the statement true.', 'TRUE — This statement is correct. The same logic applies whether the scarce resource is money, land, labour hours, or hospital beds.
+The statement is false.
+', 'TRUE — Opportunity cost is the value of the best alternative given up when a choice is made. It is not the cash outlay on the chosen option; it is the tutoring income, experience, leisure, or other project that the choice prevents.
 
-The relevant theory comes from scarcity of resources, opportunity cost, and trade-offs. Identify which definition or relationship the sentence is trying to test before deciding true or false.
+Households, firms, and governments all forgo next-best uses when they allocate scarce resources — opportunity cost is universal across those actors.
 
-Applied carefully, scarcity is resource-general, not limited to cash budgets. Nothing in the sentence stretches the concept beyond its standard use.
+Held against the chapter test (here: opportunity cost), each operative word earns its place: the category, the comparison, and the mechanism survive when checked one by one.
 
-No qualifying word breaks the definition or scenario, so the answer is true.'] WHERE case_id = 'CASE 2.2.30' AND tier = 'full';
-UPDATE public.economics_cases SET tactical_explanations = ARRAY['TRUE — On the Fuhrmann definition used in the entrance exam, the sentence is correct. The owner economises by scheduling shorter setup times between runs to fit both queues partially.
+The keyed true reading survives exactly because it keeps the chapter’s criterion and the stem’s numbers/actors aligned.
 
-This statement draws on scarcity of resources, opportunity cost, and trade-offs. Treat it as a checklist against the core concept named in the stem, not as a general opinion about business.
+The statement is true.
+'] WHERE case_id = 'CASE 2.2.29' AND tier = 'full';
+UPDATE public.economics_cases SET tactical_explanations = ARRAY['TRUE — This topic centres on allocating scarce resources among competing uses and measuring opportunity cost as the best forgone alternative.
 
-In this setting, careful scheduling under capacity limits reflects economising. The wording matches the textbook relationship without adding extra conditions.
+Limited resources relative to wants force choices by households, firms, and governments — the basic economic problem.
 
-Every part of the claim aligns with the standard concept, so the statement stands.', 'TRUE — This statement is correct. Households, firms, and governments all allocate scarce resources among competing uses.
+Held against the chapter test, each operative word earns its place: the category, the comparison, and the mechanism survive when checked one by one.
 
-The topic is scarcity of resources, opportunity cost, and trade-offs, but the decisive skill here is reading quantifiers. Words such as never, always, only, or all turn a generally true idea into a claim that can be rejected by one routine counterexample.
+Under that classification the claim describes the situation correctly rather than a lookalike category.
 
-Applied carefully, universal scarcity creates allocation choices for all actor types. Nothing in the sentence stretches the concept beyond its standard use.
+The statement is true.
+', 'TRUE — When a resource can serve only one use at a time — a person’s hours, a crew, a machine, a maintenance window — it must be allocated among competing uses. That allocation problem is what economising answers, for households, firms, and governments alike.
 
-No qualifying word breaks the definition or scenario, so the answer is true.', 'TRUE — The claim is correct. Choosing wedding jobs means opportunity cost is the workbook contract income forgone instead.
+Walk the definition onto the stem’s actors and constraints, then confirm the sentence’s category and reason both survive that check.
 
-This statement draws on scarcity of resources, opportunity cost, and trade-offs. Treat it as a checklist against the core concept named in the stem, not as a general opinion about business.
+Held against the chapter test, each operative word earns its place: the category, the comparison, and the mechanism survive when checked one by one.
 
-In this setting, workbook income is the next-best alternative when weddings are prioritised. The wording matches the textbook relationship without adding extra conditions.
+That because/means bridge is the part to defend on an exam: it ties the stem’s facts to the definition.
 
-Every part of the claim aligns with the standard concept, so the statement stands.', 'TRUE — The claim is correct. One press for one week is a scarce resource split between workbook runs and wedding jobs.
+The statement is true.
+', 'TRUE — Opportunity cost is the value of the best alternative given up when a choice is made. It is not the cash outlay on the chosen option; it is the tutoring income, experience, leisure, or other project that the choice prevents.
 
-This statement draws on scarcity of resources, opportunity cost, and trade-offs. Treat it as a checklist against the core concept named in the stem, not as a general opinion about business.
+Choosing one course forgoes the benefit the next-best feasible alternative would have delivered — opportunity cost in plain language.
 
-In this setting, fixed machine time forces a choice among print queues. The wording matches the textbook relationship without adding extra conditions.
+Held against the chapter test, each operative word earns its place: the category, the comparison, and the mechanism survive when checked one by one.
 
-The reasoning chain is complete, so mark the statement true.', 'FALSE — This statement is false. Opportunity cost equals the electricity bill for the press rather than forgone wedding revenue.
+Keep the reason clause: it names why the classification holds (forgone alternative, scope of analysis, price signal, or institutional rule) rather than restating the conclusion alone.
 
-This tests discrimination within scarcity of resources, opportunity cost, and trade-offs: local versus international scope, equity versus debt, product versus market orientation, and similar pairs.
+The statement is true.
+', 'TRUE — When a resource can serve only one use at a time — a person’s hours, a crew, a machine, a maintenance window — it must be allocated among competing uses. That allocation problem is what economising answers, for households, firms, and governments alike.
 
-The statement overreaches because opportunity cost is the alternative''s benefit, not the chosen job''s operating cost. The trap is to agree with the topic while missing the one detail that breaks the logic.
+Economising is the careful response to scarcity; it is unnecessary only in the imaginary case of unlimited resources.
 
-If two ideas are related, the statement may be false because it attributes the feature to the wrong member of the pair.
+Held against the chapter test, each operative word earns its place: the category, the comparison, and the mechanism survive when checked one by one.
 
-The statement sounds plausible but fails on precision, so it is false.'] WHERE case_id = 'CASE 2.2.31' AND tier = 'full';
-UPDATE public.economics_cases SET tactical_explanations = ARRAY['TRUE — The claim is correct. Tuesday evening hours are scarce because Lena cannot fully attend class and babysit at once.
+The sentence therefore reports the concept accurately for this item once the definition is held fixed.
 
-Although the subject matter is scarcity of resources, opportunity cost, and trade-offs, this is really a logic check on overstatement. Non-profit surpluses, mixed economies, and partial market failure are classic cases where absolute wording fails.
+The statement is true.
+', 'TRUE — When a resource can serve only one use at a time — a person’s hours, a crew, a machine, a maintenance window — it must be allocated among competing uses. That allocation problem is what economising answers, for households, firms, and governments alike.
 
-In this setting, one evening slot creates a binary time allocation. The wording matches the textbook relationship without adding extra conditions.
+The same scarcity–choice–opportunity-cost logic applies to money, land, labour hours, hospital beds, and other limited means.
 
-The reasoning chain is complete, so mark the statement true.', 'TRUE — The claim is correct. Enjoyment of babysitting would not remove forgone classroom benefits from the decision.
+Held against the chapter test, each operative word earns its place: the category, the comparison, and the mechanism survive when checked one by one.
 
-This statement draws on scarcity of resources, opportunity cost, and trade-offs. Treat it as a checklist against the core concept named in the stem, not as a general opinion about business.
+Under that classification the claim describes the situation correctly rather than a lookalike category.
 
-In this setting, satisfaction and opportunity cost can coexist. The wording matches the textbook relationship without adding extra conditions.
+The statement is true.
+'] WHERE case_id = 'CASE 2.2.30' AND tier = 'full';
+UPDATE public.economics_cases SET tactical_explanations = ARRAY['TRUE — When a resource can serve only one use at a time — a person’s hours, a crew, a machine, a maintenance window — it must be allocated among competing uses. That allocation problem is what economising answers, for households, firms, and governments alike.
 
-Every part of the claim aligns with the standard concept, so the statement stands.', 'FALSE — This statement is false. Only cash income can ever appear in opportunity-cost reasoning.
+Shorter setup times between runs free scarce press minutes so both workbook and wedding queues get partial capacity. That scheduling discipline is economising on one press.
 
-The relevant theory comes from scarcity of resources, opportunity cost, and trade-offs. Identify which definition or relationship the sentence is trying to test before deciding true or false.
+Held against the chapter test, each operative word earns its place: the category, the comparison, and the mechanism survive when checked one by one.
 
-The statement overreaches because non-financial learning benefits can represent forgone alternatives. The trap is to agree with the topic while missing the one detail that breaks the logic.
+Under that classification the claim describes the situation correctly rather than a lookalike category.
 
-Because the decisive detail is wrong, mark the statement false.', 'FALSE — On the Fuhrmann definition used in the entrance exam, the sentence is false. Educational courses eliminate opportunity cost because skills are valuable.
+The statement is true.
+', 'TRUE — When a resource can serve only one use at a time — a person’s hours, a crew, a machine, a maintenance window — it must be allocated among competing uses. That allocation problem is what economising answers, for households, firms, and governments alike.
 
-The scenario is a worked example of scarcity of resources, opportunity cost, and trade-offs. Translate the story into the textbook category first; only then judge whether the sentence describes that category accurately.
+Tie the claim to limited means versus unlimited ends, to goods versus services, or to the household/entrepreneur role actually performing the action in the stem.
 
-Applied to this claim, forgone wage income remains even when education is chosen. That is why the sentence does not survive careful reading.
+Held against the chapter test, each operative word earns its place: the category, the comparison, and the mechanism survive when checked one by one.
 
-Because the decisive detail is wrong, mark the statement false.', 'FALSE — The claim is false. Personal schedules are unrelated to government budget allocation.
+Nothing in the stem contradicts that reading, so the assertion stands as a correct application of the definition.
 
-This statement draws on scarcity of resources, opportunity cost, and trade-offs. Treat it as a checklist against the core concept named in the stem, not as a general opinion about business.
+The statement is true.
+', 'TRUE — Opportunity cost is the value of the best alternative given up when a choice is made. It is not the cash outlay on the chosen option; it is the tutoring income, experience, leisure, or other project that the choice prevents.
 
-Applied to this claim, both split limited resources among competing uses. That is why the sentence does not survive careful reading.
+Taking wedding jobs means workbook contract income is forgone — the opportunity cost of prioritising weddings.
 
-Once the overclaim or mislabel is exposed, the only consistent answer is false.'] WHERE case_id = 'CASE 2.2.32' AND tier = 'full';
-UPDATE public.economics_cases SET tactical_explanations = ARRAY['TRUE — This statement is correct. Prioritising hydropower means opportunity cost is the crop yield benefit forgone downstream.
+Held against the chapter test (here: opportunity cost), each operative word earns its place: the category, the comparison, and the mechanism survive when checked one by one.
 
-The relevant theory comes from scarcity of resources, opportunity cost, and trade-offs. Identify which definition or relationship the sentence is trying to test before deciding true or false.
+Keep the reason clause: it names why the classification holds (forgone alternative, scope of analysis, price signal, or institutional rule) rather than restating the conclusion alone.
 
-Applied carefully, forgone crop yield is the next-best alternative when power wins. Nothing in the sentence stretches the concept beyond its standard use.
+The statement is true.
+', 'TRUE — When a resource can serve only one use at a time — a person’s hours, a crew, a machine, a maintenance window — it must be allocated among competing uses. That allocation problem is what economising answers, for households, firms, and governments alike.
 
-No qualifying word breaks the definition or scenario, so the answer is true.', 'TRUE — Evaluated against the textbook standard, this assertion is correct. Economising appears when managers time releases to limit evaporation losses during heatwaves.
+One press for one week cannot run unlimited workbook and wedding jobs at once. That press-week is scarce between the two queues.
 
-Here you must apply ideas from scarcity of resources, opportunity cost, and trade-offs to a concrete situation rather than recite a definition from memory. Ownership, customer type, stakeholder group, or country of production usually decides the verdict.
+Held against the chapter test (here: press), each operative word earns its place: the category, the comparison, and the mechanism survive when checked one by one.
 
-Applied carefully, reducing waste under scarcity reflects economising. Nothing in the sentence stretches the concept beyond its standard use.
+Under that classification the claim describes the situation correctly rather than a lookalike category.
 
-The reasoning chain is complete, so mark the statement true.', 'TRUE — Evaluated against the textbook standard, this assertion is correct. Prioritising irrigation means opportunity cost is the electricity revenue forgone from reduced turbine flow.
+The statement is true.
+', 'FALSE — Opportunity cost is the value of the best alternative given up when a choice is made. It is not the cash outlay on the chosen option; it is the tutoring income, experience, leisure, or other project that the choice prevents.
 
-The relevant theory comes from scarcity of resources, opportunity cost, and trade-offs. Identify which definition or relationship the sentence is trying to test before deciding true or false.
+The electricity bill is an operating outlay for using the press. Opportunity cost is the forgone alternative use’s benefit (for example workbook income forgone when wedding jobs fill the week) — not the power invoice by itself.
 
-Applied carefully, forgone power revenue is the next-best alternative. Nothing in the sentence stretches the concept beyond its standard use.
+Held against the chapter test (here: Opportunity cost, press), the familiar vocabulary may sound economic, but the operative restriction or reason fails — so the sentence mislabels the situation.
 
-The reasoning chain is complete, so mark the statement true.', 'TRUE — The claim is correct. Governments managing dams face the same scarce-resource problem described for households and firms.
+Restore the textbook test and the assertion falls away: it mislabels the category or reverses the comparison the chapter actually teaches.
 
-This statement draws on scarcity of resources, opportunity cost, and trade-offs. Treat it as a checklist against the core concept named in the stem, not as a general opinion about business.
+The statement is false.
+'] WHERE case_id = 'CASE 2.2.31' AND tier = 'full';
+UPDATE public.economics_cases SET tactical_explanations = ARRAY['TRUE — When a resource can serve only one use at a time — a person’s hours, a crew, a machine, a maintenance window — it must be allocated among competing uses. That allocation problem is what economising answers, for households, firms, and governments alike.
 
-In this setting, public agencies also split limited inputs among goals. The wording matches the textbook relationship without adding extra conditions.
+Tuesday evening cannot be fully spent in language class and fully spent babysitting. Those hours are scarce between the two activities.
 
-The reasoning chain is complete, so mark the statement true.', 'TRUE — Evaluated against the textbook standard, this assertion is correct. Reservoir releases this season are a scarce resource allocated between power and irrigation.
+Map that definition onto the case where lena, who can attend a paid language course or pick up a babysitting shift on the same Tuesday evening. The claim’s actors and constraints line up with the concept: the sentence describes the same mechanism the chapter teaches, not a neighbouring idea with similar vocabulary.
 
-The relevant theory comes from scarcity of resources, opportunity cost, and trade-offs. Identify which definition or relationship the sentence is trying to test before deciding true or false.
+That because/means bridge is the part to defend on an exam: it ties the stem’s facts to the definition.
 
-Applied carefully, fixed water volume forces prioritisation among uses. Nothing in the sentence stretches the concept beyond its standard use.
+The statement is true.
+', 'TRUE — Opportunity cost is the value of the best alternative given up when a choice is made. It is not the cash outlay on the chosen option; it is the tutoring income, experience, leisure, or other project that the choice prevents.
 
-Every part of the claim aligns with the standard concept, so the statement stands.'] WHERE case_id = 'CASE 2.2.33' AND tier = 'full';
-UPDATE public.economics_cases SET tactical_explanations = ARRAY['TRUE — Evaluated against the textbook standard, this assertion is correct. Opportunity cost is the benefit of the next-best alternative given up, not the fee for the chosen shoot.
+Enjoying babysitting is a benefit of that option; it does not erase the classroom learning forgone. Opportunity cost remains the unchosen course’s benefits.
 
-The relevant theory comes from scarcity of resources, opportunity cost, and trade-offs. Identify which definition or relationship the sentence is trying to test before deciding true or false.
+Map that definition onto the case where lena, who can attend a paid language course or pick up a babysitting shift on the same Tuesday evening. The claim’s actors and constraints line up with the concept: the sentence describes the same mechanism the chapter teaches, not a neighbouring idea with similar vocabulary.
 
-Applied carefully, standard definition applies to studio booking. Nothing in the sentence stretches the concept beyond its standard use.
+If you replaced the key term with its neighbour (accounting outlay, micro/macro swap, movement vs shift), the sentence would stop matching the stem — that contrast locks the idea.
 
-Every part of the claim aligns with the standard concept, so the statement stands.', 'FALSE — The claim is false. Creative projects have no opportunity cost because art is non-financial.
+The statement is true.
+', 'FALSE — This topic centres on allocating scarce resources among competing uses and measuring opportunity cost as the best forgone alternative.
 
-The scenario is a worked example of scarcity of resources, opportunity cost, and trade-offs. Translate the story into the textbook category first; only then judge whether the sentence describes that category accurately.
+Opportunity cost can include learning, leisure, and other non-cash benefits forgone — not only cash income.
 
-Applied to this claim, forgone hire fees count as financial opportunity cost. That is why the sentence does not survive careful reading.
+Map that definition onto the case where lena, who can attend a paid language course or pick up a babysitting shift on the same Tuesday evening. Even if the stem mentions related details, those details do not carry the claim’s conclusion — the sentence either widens the concept past its test or attaches the wrong label to the facts.
 
-The statement sounds plausible but fails on precision, so it is false.', 'FALSE — Evaluated against the textbook standard, this assertion is false. Studios with waiting lists face no scarcity because demand is strong.
+Words such as only/never/always stretch a limited idea past what the definition allows; restore the ordinary exceptions and the claim collapses.
 
-Here you must apply ideas from scarcity of resources, opportunity cost, and trade-offs to a concrete situation rather than recite a definition from memory. Ownership, customer type, stakeholder group, or country of production usually decides the verdict.
+The statement is false.
+', 'FALSE — Opportunity cost is the value of the best alternative given up when a choice is made. It is not the cash outlay on the chosen option; it is the tutoring income, experience, leisure, or other project that the choice prevents.
 
-The statement overreaches because physical stage time remains limited even with strong demand. The trap is to agree with the topic while missing the one detail that breaks the logic.
+Valuable skills make the course attractive; they do not eliminate the opportunity cost of missing babysitting pay or other uses of Tuesday evening.
 
-The statement sounds plausible but fails on precision, so it is false.', 'FALSE — Evaluated against the textbook standard, this assertion is false. Corporate booking systems follow different laws from household budgets.
+Map that definition onto the case where lena, who can attend a paid language course or pick up a babysitting shift on the same Tuesday evening. Even if the stem mentions related details (here: opportunity cost), those details do not carry the claim’s conclusion — the sentence either widens the concept past its test or attaches the wrong label to the facts.
 
-The relevant theory comes from scarcity of resources, opportunity cost, and trade-offs. Identify which definition or relationship the sentence is trying to test before deciding true or false.
+The because-clause attaches the wrong reason to the label. A real detail (a national programme, a zero wage, shared premises, use of money) does not justify the over-broad conclusion.
 
-The statement overreaches because both involve choosing among alternatives under limits. The trap is to agree with the topic while missing the one detail that breaks the logic.
+The statement is false.
+', 'FALSE — When a resource can serve only one use at a time — a person’s hours, a crew, a machine, a maintenance window — it must be allocated among competing uses. That allocation problem is what economising answers, for households, firms, and governments alike.
 
-The statement sounds plausible but fails on precision, so it is false.', 'FALSE — Evaluated against the textbook standard, this assertion is false. Commercial shoots always dominate, so documentaries carry zero forgone value.
+Personal schedule trade-offs and government budget trade-offs share the same allocation logic under scarcity. They are related as instances of one economic problem, not unrelated domains.
 
-The topic is scarcity of resources, opportunity cost, and trade-offs, but the decisive skill here is reading quantifiers. Words such as never, always, only, or all turn a generally true idea into a claim that can be rejected by one routine counterexample.
+Map that definition onto the case where lena, who can attend a paid language course or pick up a babysitting shift on the same Tuesday evening. Even if the stem mentions related details (here: government), those details do not carry the claim’s conclusion — the sentence either widens the concept past its test or attaches the wrong label to the facts.
 
-The statement overreaches because each booking direction forgoes the other''s benefits. The trap is to agree with the topic while missing the one detail that breaks the logic.
+The mismatch is in the defining feature, not in a missing buzzword; fix the feature and the claim disappears.
 
-Watch the absolute wording "always": exam statements often sound plausible until a single scope word turns an otherwise familiar idea into an overclaim.
+The statement is false.
+'] WHERE case_id = 'CASE 2.2.32' AND tier = 'full';
+UPDATE public.economics_cases SET tactical_explanations = ARRAY['TRUE — Opportunity cost is the value of the best alternative given up when a choice is made. It is not the cash outlay on the chosen option; it is the tutoring income, experience, leisure, or other project that the choice prevents.
 
-Because the decisive detail is wrong, mark the statement false.'] WHERE case_id = 'CASE 2.2.34' AND tier = 'full';
-UPDATE public.economics_cases SET tactical_explanations = ARRAY['TRUE — The claim is correct. If Maya picks a 300-euro tablet over a 450-euro bike, opportunity cost is the bike''s benefit forgone, not 750 euros combined.
+Prioritising hydropower reduces water available for irrigation, so crop-yield benefits downstream are forgone — opportunity cost of power priority.
 
-The scenario is a worked example of scarcity of resources, opportunity cost, and trade-offs. Translate the story into the textbook category first; only then judge whether the sentence describes that category accurately.
+Held against the chapter test (here: opportunity cost), each operative word earns its place: the category, the comparison, and the mechanism survive when checked one by one.
 
-In this setting, combined prices overstate opportunity cost. The wording matches the textbook relationship without adding extra conditions.
+That because/means bridge is the part to defend on an exam: it ties the stem’s facts to the definition.
 
-Every part of the claim aligns with the standard concept, so the statement stands.', 'TRUE — This statement is correct. Two alternatives are sufficient for opportunity cost; a third option is not required.
+The statement is true.
+', 'TRUE — When a resource can serve only one use at a time — a person’s hours, a crew, a machine, a maintenance window — it must be allocated among competing uses. That allocation problem is what economising answers, for households, firms, and governments alike.
 
-The relevant theory comes from scarcity of resources, opportunity cost, and trade-offs. Identify which definition or relationship the sentence is trying to test before deciding true or false.
+Timing releases to limit evaporation during heatwaves stretches limited reservoir water further — economising on a scarce seasonal stock.
 
-Applied carefully, binary choices still create forgone alternatives. Nothing in the sentence stretches the concept beyond its standard use.
+Held against the chapter test, each operative word earns its place: the category, the comparison, and the mechanism survive when checked one by one.
 
-No qualifying word breaks the definition or scenario, so the answer is true.', 'TRUE — On the Fuhrmann definition used in the entrance exam, the sentence is correct. Households, firms, and governments all encounter opportunity cost when allocating scarce resources.
+The sentence therefore reports the concept accurately for this item once the definition is held fixed.
 
-Although the subject matter is scarcity of resources, opportunity cost, and trade-offs, this is really a logic check on overstatement. Non-profit surpluses, mixed economies, and partial market failure are classic cases where absolute wording fails.
+The statement is true.
+', 'TRUE — Opportunity cost is the value of the best alternative given up when a choice is made. It is not the cash outlay on the chosen option; it is the tutoring income, experience, leisure, or other project that the choice prevents.
 
-In this setting, universal application is standard. The wording matches the textbook relationship without adding extra conditions.
+Prioritising irrigation reduces turbine flow, so electricity revenue (and power output) is forgone — opportunity cost of irrigation priority.
 
-No qualifying word breaks the definition or scenario, so the answer is true.', 'FALSE — The claim is false. Adding all rejected prices is the standard textbook definition.
+Held against the chapter test (here: opportunity cost), each operative word earns its place: the category, the comparison, and the mechanism survive when checked one by one.
 
-Although the subject matter is scarcity of resources, opportunity cost, and trade-offs, this is really a logic check on overstatement. Non-profit surpluses, mixed economies, and partial market failure are classic cases where absolute wording fails.
+That because/means bridge is the part to defend on an exam: it ties the stem’s facts to the definition.
 
-Applied to this claim, definition requires one forgone alternative, not combined totals. That is why the sentence does not survive careful reading.
+The statement is true.
+', 'TRUE — This topic centres on allocating scarce resources among competing uses and measuring opportunity cost as the best forgone alternative.
 
-Watch the absolute wording "all": exam statements often sound plausible until a single scope word turns an otherwise familiar idea into an overclaim.
+Dam managers in government face limited water and competing uses — the same scarce-resource problem households and firms face with their own limited means.
 
-Once the overclaim or mislabel is exposed, the only consistent answer is false.', 'FALSE — Evaluated against the textbook standard, this assertion is false. Liking the chosen item sets opportunity cost to zero.
+Held against the chapter test, each operative word earns its place: the category, the comparison, and the mechanism survive when checked one by one.
 
-The relevant theory comes from scarcity of resources, opportunity cost, and trade-offs. Identify which definition or relationship the sentence is trying to test before deciding true or false.
+The sentence therefore reports the concept accurately for this item once the definition is held fixed.
 
-The statement overreaches because forgone bike benefit remains even when the tablet is preferred. The trap is to agree with the topic while missing the one detail that breaks the logic.
+The statement is true.
+', 'TRUE — When a resource can serve only one use at a time — a person’s hours, a crew, a machine, a maintenance window — it must be allocated among competing uses. That allocation problem is what economising answers, for households, firms, and governments alike.
 
-The statement sounds plausible but fails on precision, so it is false.'] WHERE case_id = 'CASE 2.2.35' AND tier = 'full';
-UPDATE public.economics_cases SET tactical_explanations = ARRAY['TRUE — The claim is correct. Staff hours this quarter are a scarce resource split between longer weekdays and weekend sessions.
+This season’s reservoir releases are finite and split between power generation and irrigation — a scarce resource allocation.
 
-This statement draws on scarcity of resources, opportunity cost, and trade-offs. Treat it as a checklist against the core concept named in the stem, not as a general opinion about business.
+Held against the chapter test, each operative word earns its place: the category, the comparison, and the mechanism survive when checked one by one.
 
-In this setting, finite librarian time forces prioritisation. The wording matches the textbook relationship without adding extra conditions.
+Nothing in the stem contradicts that reading, so the assertion stands as a correct application of the definition.
 
-Every part of the claim aligns with the standard concept, so the statement stands.', 'TRUE — This statement is correct. Launching the weekend programme means opportunity cost is the extra weekday access benefit forgone.
+The statement is true.
+'] WHERE case_id = 'CASE 2.2.33' AND tier = 'full';
+UPDATE public.economics_cases SET tactical_explanations = ARRAY['TRUE — Opportunity cost is the value of the best alternative given up when a choice is made. It is not the cash outlay on the chosen option; it is the tutoring income, experience, leisure, or other project that the choice prevents.
 
-The relevant theory comes from scarcity of resources, opportunity cost, and trade-offs. Identify which definition or relationship the sentence is trying to test before deciding true or false.
+Opportunity cost is the next-best alternative’s benefit forgone (documentary vs commercial), not the fee charged for the shoot you actually book. Fee = outlay/revenue of the chosen use; opportunity cost = forgone alternative.
 
-Applied carefully, weekday access benefit is forgone when weekends are chosen. Nothing in the sentence stretches the concept beyond its standard use.
+Map that definition onto the case where a studio booking its only sound stage either to a documentary crew or a commercial shoot on Friday. The claim’s actors and constraints (here: Opportunity cost) line up with the concept: the sentence describes the same mechanism the chapter teaches, not a neighbouring idea with similar vocabulary.
 
-No qualifying word breaks the definition or scenario, so the answer is true.', 'TRUE — The claim is correct. The council faces the same allocation problem as a family choosing between roof repair and a holiday.
+A useful check is the opposite error: treat opportunity cost as the money paid, or treat one buyer’s choice as macro, or treat a shift as a movement — those near-misses fail, which confirms this wording.
 
-This statement draws on scarcity of resources, opportunity cost, and trade-offs. Treat it as a checklist against the core concept named in the stem, not as a general opinion about business.
+The statement is true.
+', 'FALSE — Opportunity cost is the value of the best alternative given up when a choice is made. It is not the cash outlay on the chosen option; it is the tutoring income, experience, leisure, or other project that the choice prevents.
 
-In this setting, both split limited resources among competing goals. The wording matches the textbook relationship without adding extra conditions.
+Art and documentaries still use scarce stage time. Non-financial motives do not zero opportunity cost.
 
-No qualifying word breaks the definition or scenario, so the answer is true.', 'TRUE — On the Fuhrmann definition used in the entrance exam, the sentence is correct. Economising appears when managers cross-train staff to cover both tasks with the same team.
+Map that definition onto the case where a studio booking its only sound stage either to a documentary crew or a commercial shoot on Friday. Even if the stem mentions related details (here: opportunity cost), those details do not carry the claim’s conclusion — the sentence either widens the concept past its test or attaches the wrong label to the facts.
 
-The scenario is a worked example of scarcity of resources, opportunity cost, and trade-offs. Translate the story into the textbook category first; only then judge whether the sentence describes that category accurately.
+Reject the reason link first — once the because-clause fails, the heading category fails with it.
 
-In this setting, using staff flexibly under scarcity reflects economising. The wording matches the textbook relationship without adding extra conditions.
+The statement is false.
+', 'FALSE — This topic centres on allocating scarce resources among competing uses and measuring opportunity cost as the best forgone alternative.
 
-No qualifying word breaks the definition or scenario, so the answer is true.', 'TRUE — This statement is correct. Extending weekday hours means opportunity cost is the children''s programme benefit forgone.
+Strong demand and waiting lists intensify scarcity of the single Friday stage; they do not remove it.
 
-The relevant theory comes from scarcity of resources, opportunity cost, and trade-offs. Identify which definition or relationship the sentence is trying to test before deciding true or false.
+Map that definition onto the case where a studio booking its only sound stage either to a documentary crew or a commercial shoot on Friday. Even if the stem mentions related details (here: scarcity, demand), those details do not carry the claim’s conclusion — the sentence either widens the concept past its test or attaches the wrong label to the facts.
 
-Applied carefully, programme benefit is the next-best alternative. Nothing in the sentence stretches the concept beyond its standard use.
+The because-clause attaches the wrong reason to the label. A real detail (a national programme, a zero wage, shared premises, use of money) does not justify the over-broad conclusion.
 
-No qualifying word breaks the definition or scenario, so the answer is true.'] WHERE case_id = 'CASE 2.2.36' AND tier = 'full';
-UPDATE public.economics_cases SET tactical_explanations = ARRAY['TRUE — This statement is correct. Buying the measuring set means opportunity cost is the storage and mobility benefit forgone from lacking the chest.
+The statement is false.
+', 'FALSE — This topic centres on allocating scarce resources among competing uses and measuring opportunity cost as the best forgone alternative.
 
-The relevant theory comes from scarcity of resources, opportunity cost, and trade-offs. Identify which definition or relationship the sentence is trying to test before deciding true or false.
+Corporate booking systems still allocate limited rooms and slots under the same scarcity logic as household budgets — different software, same economic problem.
 
-Applied carefully, tool chest benefit is the next-best alternative. Nothing in the sentence stretches the concept beyond its standard use.
+Map that definition onto the case where a studio booking its only sound stage either to a documentary crew or a commercial shoot on Friday. Even if the stem mentions related details (here: household), those details do not carry the claim’s conclusion — the sentence either widens the concept past its test or attaches the wrong label to the facts.
 
-No qualifying word breaks the definition or scenario, so the answer is true.', 'TRUE — The claim is correct. Scarcity of money here parallels scarcity of time when the apprentice chooses overtime or study.
+Swap in the correct criterion and the sentence no longer describes the case — that is enough to mark it false.
 
-The scenario is a worked example of scarcity of resources, opportunity cost, and trade-offs. Translate the story into the textbook category first; only then judge whether the sentence describes that category accurately.
+The statement is false.
+', 'FALSE — Opportunity cost is the value of the best alternative given up when a choice is made. It is not the cash outlay on the chosen option; it is the tutoring income, experience, leisure, or other project that the choice prevents.
 
-In this setting, multiple resource types create allocation trade-offs. The wording matches the textbook relationship without adding extra conditions.
+Even if commercials often pay more, documentaries can carry cultural, contractual, or strategic value. Declaring their forgone value always zero is false.
 
-No qualifying word breaks the definition or scenario, so the answer is true.', 'TRUE — The claim is correct. One hundred eighty euros is a limited budget allocated between measuring tools and a tool chest.
+Map that definition onto the case where a studio booking its only sound stage either to a documentary crew or a commercial shoot on Friday. Even if the stem mentions related details, those details do not carry the claim’s conclusion — the sentence either widens the concept past its test or attaches the wrong label to the facts.
 
-This statement draws on scarcity of resources, opportunity cost, and trade-offs. Treat it as a checklist against the core concept named in the stem, not as a general opinion about business.
+Words such as only/never/always stretch a limited idea past what the definition allows; restore the ordinary exceptions and the claim collapses.
 
-In this setting, fixed apprentice funds force a binary choice. The wording matches the textbook relationship without adding extra conditions.
+The statement is false.
+'] WHERE case_id = 'CASE 2.2.34' AND tier = 'full';
+UPDATE public.economics_cases SET tactical_explanations = ARRAY['TRUE — Opportunity cost is the value of the best alternative given up when a choice is made. It is not the cash outlay on the chosen option; it is the tutoring income, experience, leisure, or other project that the choice prevents.
 
-The reasoning chain is complete, so mark the statement true.', 'FALSE — The claim is false. Storage furniture is a need and therefore costless to choose.
+Picking the 300-euro tablet forgoes the bike’s benefit — not the combined sticker sum: $$300 + 450 = 750$$ Opportunity cost is the next-best option forgone, not both prices added.
 
-This statement draws on scarcity of resources, opportunity cost, and trade-offs. Treat it as a checklist against the core concept named in the stem, not as a general opinion about business.
+Held against the chapter test (here: opportunity cost, 300, 450, 750 euros), each operative word earns its place: the category, the comparison, and the mechanism survive when checked one by one.
 
-Applied to this claim, forgone measurement capability remains opportunity cost. That is why the sentence does not survive careful reading.
+A useful check is the opposite error: treat opportunity cost as the money paid, or treat one buyer’s choice as macro, or treat a shift as a movement — those near-misses fail, which confirms this wording.
 
-Once the overclaim or mislabel is exposed, the only consistent answer is false.', 'FALSE — This statement is false. Opportunity cost begins only after incorporation as a business.
+The statement is true.
+', 'TRUE — Opportunity cost is the value of the best alternative given up when a choice is made. It is not the cash outlay on the chosen option; it is the tutoring income, experience, leisure, or other project that the choice prevents.
 
-The relevant theory comes from scarcity of resources, opportunity cost, and trade-offs. Identify which definition or relationship the sentence is trying to test before deciding true or false.
+Two alternatives suffice: choose one, forgo the other. A third option is not required for opportunity cost to exist.
 
-The statement overreaches because personal tool budgets carry opportunity cost like firm budgets. The trap is to agree with the topic while missing the one detail that breaks the logic.
+Held against the chapter test (here: opportunity cost), each operative word earns its place: the category, the comparison, and the mechanism survive when checked one by one.
 
-Once the overclaim or mislabel is exposed, the only consistent answer is false.'] WHERE case_id = 'CASE 2.2.37' AND tier = 'full';
-UPDATE public.economics_cases SET tactical_explanations = ARRAY['TRUE — Evaluated against the textbook standard, this assertion is correct. Firms and households are not the only actors allocating scarce resources; research labs do too.
+If you replaced the key term with its neighbour (accounting outlay, micro/macro swap, movement vs shift), the sentence would stop matching the stem — that contrast locks the idea.
 
-The relevant theory comes from scarcity of resources, opportunity cost, and trade-offs. Identify which definition or relationship the sentence is trying to test before deciding true or false.
+The statement is true.
+', 'TRUE — Opportunity cost is the value of the best alternative given up when a choice is made. It is not the cash outlay on the chosen option; it is the tutoring income, experience, leisure, or other project that the choice prevents.
 
-Applied carefully, lab equipment time is a scarce resource. Nothing in the sentence stretches the concept beyond its standard use.
+Households, firms, and governments all forgo next-best uses when allocating scarce resources — opportunity cost is shared across actors.
 
-Every part of the claim aligns with the standard concept, so the statement stands.', 'FALSE — This statement is false. Medical samples override economics, so opportunity cost is zero.
+Held against the chapter test (here: opportunity cost), each operative word earns its place: the category, the comparison, and the mechanism survive when checked one by one.
 
-The relevant theory comes from scarcity of resources, opportunity cost, and trade-offs. Identify which definition or relationship the sentence is trying to test before deciding true or false.
+A useful check is the opposite error: treat opportunity cost as the money paid, or treat one buyer’s choice as macro, or treat a shift as a movement — those near-misses fail, which confirms this wording.
 
-The statement overreaches because forgone research results remain opportunity cost. The trap is to agree with the topic while missing the one detail that breaks the logic.
+The statement is true.
+', 'FALSE — This topic centres on allocating scarce resources among competing uses and measuring opportunity cost as the best forgone alternative.
 
-The statement sounds plausible but fails on precision, so it is false.', 'FALSE — The claim is false. Research labs never face trade-offs because science is funded.
+Adding all rejected prices is Robin-style overcounting, not the standard textbook definition (next-best alternative forgone).
 
-Although the subject matter is scarcity of resources, opportunity cost, and trade-offs, this is really a logic check on overstatement. Non-profit surpluses, mixed economies, and partial market failure are classic cases where absolute wording fails.
+Held against the chapter test, the familiar vocabulary may sound economic, but the operative restriction or reason fails — so the sentence mislabels the situation.
 
-Applied to this claim, funded labs still forgo alternative experiment benefits. That is why the sentence does not survive careful reading.
+The absolute quantifier is doing the damage. Soften it to the chapter’s actual scope and the remaining content no longer supports a false blanket rule.
 
-Watch the absolute wording "never": exam statements often sound plausible until a single scope word turns an otherwise familiar idea into an overclaim.
+The statement is false.
+', 'FALSE — Opportunity cost is the value of the best alternative given up when a choice is made. It is not the cash outlay on the chosen option; it is the tutoring income, experience, leisure, or other project that the choice prevents.
 
-Once the overclaim or mislabel is exposed, the only consistent answer is false.', 'FALSE — This statement is false. Different experiments in one building never compete for equipment.
+Liking the chosen item explains why you picked it; it does not set opportunity cost to zero. You still forwent the bike’s benefit.
 
-The topic is scarcity of resources, opportunity cost, and trade-offs, but the decisive skill here is reading quantifiers. Words such as never, always, only, or all turn a generally true idea into a claim that can be rejected by one routine counterexample.
+Held against the chapter test (here: opportunity cost), the familiar vocabulary may sound economic, but the operative restriction or reason fails — so the sentence mislabels the situation.
 
-The statement overreaches because same machine-hour pool creates forgone alternatives. The trap is to agree with the topic while missing the one detail that breaks the logic.
+The absolute quantifier is doing the damage. Soften it to the chapter’s actual scope and the remaining content no longer supports a false blanket rule.
 
-Watch the absolute wording "never": exam statements often sound plausible until a single scope word turns an otherwise familiar idea into an overclaim.
+The statement is false.
+'] WHERE case_id = 'CASE 2.2.35' AND tier = 'full';
+UPDATE public.economics_cases SET tactical_explanations = ARRAY['TRUE — When a resource can serve only one use at a time — a person’s hours, a crew, a machine, a maintenance window — it must be allocated among competing uses. That allocation problem is what economising answers, for households, firms, and governments alike.
 
-Because the decisive detail is wrong, mark the statement false.', 'FALSE — On the Fuhrmann definition used in the entrance exam, the sentence is false. Labs with multiple machines never queue samples.
+Limited staff hours this quarter cannot fully extend weekdays and fully launch weekend children’s sessions without trade-offs. Hours are scarce between those uses.
 
-Although the subject matter is scarcity of resources, opportunity cost, and trade-offs, this is really a logic check on overstatement. Non-profit surpluses, mixed economies, and partial market failure are classic cases where absolute wording fails.
+Held against the chapter test, each operative word earns its place: the category, the comparison, and the mechanism survive when checked one by one.
 
-Applied to this claim, even well-equipped labs face scheduling limits on each machine. That is why the sentence does not survive careful reading.
+Under that classification the claim describes the situation correctly rather than a lookalike category.
 
-Watch the absolute wording "never": exam statements often sound plausible until a single scope word turns an otherwise familiar idea into an overclaim.
+The statement is true.
+', 'TRUE — Opportunity cost is the value of the best alternative given up when a choice is made. It is not the cash outlay on the chosen option; it is the tutoring income, experience, leisure, or other project that the choice prevents.
 
-The statement sounds plausible but fails on precision, so it is false.'] WHERE case_id = 'CASE 2.2.38' AND tier = 'full';
-UPDATE public.economics_cases SET tactical_explanations = ARRAY['TRUE — Evaluated against the textbook standard, this assertion is correct. Economising appears when loaders optimise placement to fit maximum safe tonnage on the deck.
+Launching the weekend programme uses hours that could have extended weekday access — that forgone weekday benefit is the opportunity cost.
 
-Here you must apply ideas from scarcity of resources, opportunity cost, and trade-offs to a concrete situation rather than recite a definition from memory. Ownership, customer type, stakeholder group, or country of production usually decides the verdict.
+Held against the chapter test (here: opportunity cost), each operative word earns its place: the category, the comparison, and the mechanism survive when checked one by one.
 
-Applied carefully, efficient stowage under space limits reflects economising. Nothing in the sentence stretches the concept beyond its standard use.
+The causal link is doing the teaching work — strip it out and the remaining label would be too thin to judge.
 
-Every part of the claim aligns with the standard concept, so the statement stands.', 'TRUE — Evaluated against the textbook standard, this assertion is correct. The operator allocates scarce resources like a government splitting transport investment between rail and road.
+The statement is true.
+', 'TRUE — When a resource can serve only one use at a time — a person’s hours, a crew, a machine, a maintenance window — it must be allocated among competing uses. That allocation problem is what economising answers, for households, firms, and governments alike.
 
-The relevant theory comes from scarcity of resources, opportunity cost, and trade-offs. Identify which definition or relationship the sentence is trying to test before deciding true or false.
+Council library staffing and a family choosing roof repair versus holiday both allocate limited means among competing uses — same problem, different scale.
 
-Applied carefully, both choose among alternatives with fixed capacity or budget. Nothing in the sentence stretches the concept beyond its standard use.
+Held against the chapter test, each operative word earns its place: the category, the comparison, and the mechanism survive when checked one by one.
 
-The reasoning chain is complete, so mark the statement true.', 'TRUE — Evaluated against the textbook standard, this assertion is correct. Loading freight means opportunity cost is the passenger-ticket revenue forgone from cars left ashore.
+The sentence therefore reports the concept accurately for this item once the definition is held fixed.
 
-The relevant theory comes from scarcity of resources, opportunity cost, and trade-offs. Identify which definition or relationship the sentence is trying to test before deciding true or false.
+The statement is true.
+', 'TRUE — When a resource can serve only one use at a time — a person’s hours, a crew, a machine, a maintenance window — it must be allocated among competing uses. That allocation problem is what economising answers, for households, firms, and governments alike.
 
-Applied carefully, passenger revenue is the next-best alternative. Nothing in the sentence stretches the concept beyond its standard use.
+Cross-training so one team covers more tasks stretches scarce staff capacity — economising on labour hours.
 
-The reasoning chain is complete, so mark the statement true.', 'TRUE — On the Fuhrmann definition used in the entrance exam, the sentence is correct. Deck space on one sailing is a scarce resource split between freight and passenger vehicles.
+Held against the chapter test, each operative word earns its place: the category, the comparison, and the mechanism survive when checked one by one.
 
-This statement draws on scarcity of resources, opportunity cost, and trade-offs. Treat it as a checklist against the core concept named in the stem, not as a general opinion about business.
+Under that classification the claim describes the situation correctly rather than a lookalike category.
 
-In this setting, fixed deck area forces loading choices. The wording matches the textbook relationship without adding extra conditions.
+The statement is true.
+', 'TRUE — Opportunity cost is the value of the best alternative given up when a choice is made. It is not the cash outlay on the chosen option; it is the tutoring income, experience, leisure, or other project that the choice prevents.
 
-Every part of the claim aligns with the standard concept, so the statement stands.', 'FALSE — Evaluated against the textbook standard, this assertion is false. Passenger cars are needs for travellers, so freight income disappears.
+Extending weekday hours uses staff time that could have run the children’s programme — forgone programme benefit is the opportunity cost.
 
-The relevant theory comes from scarcity of resources, opportunity cost, and trade-offs. Identify which definition or relationship the sentence is trying to test before deciding true or false.
+Held against the chapter test (here: opportunity cost), each operative word earns its place: the category, the comparison, and the mechanism survive when checked one by one.
 
-The statement overreaches because forgone freight income remains when cars are prioritised. The trap is to agree with the topic while missing the one detail that breaks the logic.
+The causal link is doing the teaching work — strip it out and the remaining label would be too thin to judge.
 
-Because the decisive detail is wrong, mark the statement false.'] WHERE case_id = 'CASE 2.2.39' AND tier = 'full';
-UPDATE public.economics_cases SET tactical_explanations = ARRAY['TRUE — Evaluated against the textbook standard, this assertion is correct. Buying cinema tickets means opportunity cost is the repeated home entertainment benefit forgone from lacking the game.
+The statement is true.
+'] WHERE case_id = 'CASE 2.2.36' AND tier = 'full';
+UPDATE public.economics_cases SET tactical_explanations = ARRAY['TRUE — Opportunity cost is the value of the best alternative given up when a choice is made. It is not the cash outlay on the chosen option; it is the tutoring income, experience, leisure, or other project that the choice prevents.
 
-The relevant theory comes from scarcity of resources, opportunity cost, and trade-offs. Identify which definition or relationship the sentence is trying to test before deciding true or false.
+Buying the measuring set means not buying the tool chest, so storage and mobility benefits of the chest are forgone — opportunity cost of the measuring set.
 
-Applied carefully, board-game benefit is the next-best alternative. Nothing in the sentence stretches the concept beyond its standard use.
+Map that definition onto the case where an apprentice who can spend 180 euros on either a precision measuring set or a portable tool chest, not both this month. The claim’s actors and constraints (here: opportunity cost) line up with the concept: the sentence describes the same mechanism the chapter teaches, not a neighbouring idea with similar vocabulary.
 
-No qualifying word breaks the definition or scenario, so the answer is true.', 'TRUE — This statement is correct. Households face opportunity cost even when the amount involved is small.
+The causal link is doing the teaching work — strip it out and the remaining label would be too thin to judge.
 
-Here you must apply ideas from scarcity of resources, opportunity cost, and trade-offs to a concrete situation rather than recite a definition from memory. Ownership, customer type, stakeholder group, or country of production usually decides the verdict.
+The statement is true.
+', 'TRUE — This topic centres on allocating scarce resources among competing uses and measuring opportunity cost as the best forgone alternative.
 
-Applied carefully, forgone alternatives depend on choices, not on large budgets alone. Nothing in the sentence stretches the concept beyond its standard use.
+Scarce money for tools and scarce time for overtime versus study are parallel constraints: limited means, competing uses, opportunity cost in both.
 
-The reasoning chain is complete, so mark the statement true.', 'FALSE — On the Fuhrmann definition used in the entrance exam, the sentence is false. Sibling pools are unlimited because parents may add coins later.
+Map that definition onto the case where an apprentice who can spend 180 euros on either a precision measuring set or a portable tool chest, not both this month. The claim’s actors and constraints (here: Scarcity) line up with the concept: the sentence describes the same mechanism the chapter teaches, not a neighbouring idea with similar vocabulary.
 
-The scenario is a worked example of scarcity of resources, opportunity cost, and trade-offs. Translate the story into the textbook category first; only then judge whether the sentence describes that category accurately.
+Under that classification the claim describes the situation correctly rather than a lookalike category.
 
-Applied to this claim, even with top-ups possible, this month''s agreed jar remains fixed. That is why the sentence does not survive careful reading.
+The statement is true.
+', 'TRUE — When a resource can serve only one use at a time — a person’s hours, a crew, a machine, a maintenance window — it must be allocated among competing uses. That allocation problem is what economising answers, for households, firms, and governments alike.
 
-Once the overclaim or mislabel is exposed, the only consistent answer is false.', 'FALSE — Evaluated against the textbook standard, this assertion is false. Games last longer, so cinema benefits vanish permanently.
+One hundred eighty euros funds one option this month, not both: $$180\text{ euros}$$ That limited budget is allocated between measuring tools and the chest.
 
-The relevant theory comes from scarcity of resources, opportunity cost, and trade-offs. Identify which definition or relationship the sentence is trying to test before deciding true or false.
+Map that definition onto the case where an apprentice who can spend 180 euros on either a precision measuring set or a portable tool chest, not both this month. The claim’s actors and constraints line up with the concept: the sentence describes the same mechanism the chapter teaches, not a neighbouring idea with similar vocabulary.
 
-The statement overreaches because forgone cinema outing benefit remains opportunity cost. The trap is to agree with the topic while missing the one detail that breaks the logic.
+Nothing in the stem contradicts that reading, so the assertion stands as a correct application of the definition.
 
-Because the decisive detail is wrong, mark the statement false.', 'FALSE — The claim is false. Children never economise because parents should fund every wish.
+The statement is true.
+', 'FALSE — This topic centres on allocating scarce resources among competing uses and measuring opportunity cost as the best forgone alternative.
 
-Although the subject matter is scarcity of resources, opportunity cost, and trade-offs, this is really a logic check on overstatement. Non-profit surpluses, mixed economies, and partial market failure are classic cases where absolute wording fails.
+Even if storage helps the apprentice’s work, choosing the chest still forgoes the measuring set. Calling something a need does not make it costless in opportunity-cost terms.
 
-Applied to this claim, comparing prices with a fixed jar is economising. That is why the sentence does not survive careful reading.
+Map that definition onto the case where an apprentice who can spend 180 euros on either a precision measuring set or a portable tool chest, not both this month. Even if the stem mentions related details, those details do not carry the claim’s conclusion — the sentence either widens the concept past its test or attaches the wrong label to the facts.
 
-Watch the absolute wording "never": exam statements often sound plausible until a single scope word turns an otherwise familiar idea into an overclaim.
+Swap in the correct criterion and the sentence no longer describes the case — that is enough to mark it false.
 
-Because the decisive detail is wrong, mark the statement false.'] WHERE case_id = 'CASE 2.2.40' AND tier = 'full';
-UPDATE public.economics_cases SET tactical_explanations = ARRAY['TRUE — This statement is correct. Economising appears when planners bundle tasks that share the same crane setup to save scarce hoist time.
+The statement is false.
+', 'FALSE — Opportunity cost is the value of the best alternative given up when a choice is made. It is not the cash outlay on the chosen option; it is the tutoring income, experience, leisure, or other project that the choice prevents.
 
-Here you must apply ideas from scarcity of resources, opportunity cost, and trade-offs to a concrete situation rather than recite a definition from memory. Ownership, customer type, stakeholder group, or country of production usually decides the verdict.
+Opportunity cost applies to individuals before any business incorporation — including apprentices buying tools.
 
-Applied carefully, bundling reduces waste of limited equipment time. Nothing in the sentence stretches the concept beyond its standard use.
+Map that definition onto the case where an apprentice who can spend 180 euros on either a precision measuring set or a portable tool chest, not both this month. Even if the stem mentions related details (here: Opportunity cost), those details do not carry the claim’s conclusion — the sentence either widens the concept past its test or attaches the wrong label to the facts.
 
-The reasoning chain is complete, so mark the statement true.', 'FALSE — On the Fuhrmann definition used in the entrance exam, the sentence is false. Technicians can work unlimited hours because wind stops.
+Absolute wording is the trap: economics definitions leave room for counterexamples — another actor, another scope, a non-money cost, or a public function that still exists. One clear counterexample rejects the sentence.
 
-The scenario is a worked example of scarcity of resources, opportunity cost, and trade-offs. Translate the story into the textbook category first; only then judge whether the sentence describes that category accurately.
+The statement is false.
+'] WHERE case_id = 'CASE 2.2.37' AND tier = 'full';
+UPDATE public.economics_cases SET tactical_explanations = ARRAY['TRUE — When a resource can serve only one use at a time — a person’s hours, a crew, a machine, a maintenance window — it must be allocated among competing uses. That allocation problem is what economising answers, for households, firms, and governments alike.
 
-Applied to this claim, crew fatigue and daylight still cap usable hours. That is why the sentence does not survive careful reading.
+Research labs allocate scarce centrifuge slots, reagents, and technician time. Scarce-resource allocation is not limited to firms and households.
 
-Because the decisive detail is wrong, mark the statement false.', 'FALSE — Evaluated against the textbook standard, this assertion is false. Energy firms are exempt from opportunity-cost reasoning.
+Held against the chapter test, each operative word earns its place: the category, the comparison, and the mechanism survive when checked one by one.
 
-The relevant theory comes from scarcity of resources, opportunity cost, and trade-offs. Identify which definition or relationship the sentence is trying to test before deciding true or false.
+Nothing in the stem contradicts that reading, so the assertion stands as a correct application of the definition.
 
-The statement overreaches because technician scheduling is a firm allocation problem. The trap is to agree with the topic while missing the one detail that breaks the logic.
+The statement is true.
+', 'FALSE — Opportunity cost is the value of the best alternative given up when a choice is made. It is not the cash outlay on the chosen option; it is the tutoring income, experience, leisure, or other project that the choice prevents.
 
-Once the overclaim or mislabel is exposed, the only consistent answer is false.', 'FALSE — This statement is false. Safety rules remove all opportunity cost from maintenance planning.
+Medical importance raises the stakes of prioritisation; it does not set opportunity cost to zero. Choosing blood samples forgoes protein-culture runs in the same overnight slot.
 
-The topic is scarcity of resources, opportunity cost, and trade-offs, but the decisive skill here is reading quantifiers. Words such as never, always, only, or all turn a generally true idea into a claim that can be rejected by one routine counterexample.
+Held against the chapter test (here: opportunity cost), the familiar vocabulary may sound economic, but the operative restriction or reason fails — so the sentence mislabels the situation.
 
-The statement overreaches because delayed inspections still forgo compliance benefits. The trap is to agree with the topic while missing the one detail that breaks the logic.
+The absolute quantifier is doing the damage. Soften it to the chapter’s actual scope and the remaining content no longer supports a false blanket rule.
 
-Watch the absolute wording "all": exam statements often sound plausible until a single scope word turns an otherwise familiar idea into an overclaim.
+The statement is false.
+', 'FALSE — This topic centres on allocating scarce resources among competing uses and measuring opportunity cost as the best forgone alternative.
 
-Once the overclaim or mislabel is exposed, the only consistent answer is false.', 'FALSE — Evaluated against the textbook standard, this assertion is false. Inspections are regulatory needs, so repairs carry zero forgone value.
+Funding does not create infinite overnight slots. Labs still face equipment and time trade-offs.
 
-The relevant theory comes from scarcity of resources, opportunity cost, and trade-offs. Identify which definition or relationship the sentence is trying to test before deciding true or false.
+Held against the chapter test, the familiar vocabulary may sound economic, but the operative restriction or reason fails — so the sentence mislabels the situation.
 
-The statement overreaches because both tasks offer measurable forgone benefits. The trap is to agree with the topic while missing the one detail that breaks the logic.
+Absolute wording is the trap: economics definitions leave room for counterexamples — another actor, another scope, a non-money cost, or a public function that still exists. One clear counterexample rejects the sentence.
 
-The statement sounds plausible but fails on precision, so it is false.'] WHERE case_id = 'CASE 2.2.41' AND tier = 'full';
-UPDATE public.economics_cases SET tactical_explanations = ARRAY['TRUE — Evaluated against the textbook standard, this assertion is correct. One staff week is a scarce resource allocated between the housing grant application and the arts grant application.
+The statement is false.
+', 'FALSE — This topic centres on allocating scarce resources among competing uses and measuring opportunity cost as the best forgone alternative.
 
-The relevant theory comes from scarcity of resources, opportunity cost, and trade-offs. Identify which definition or relationship the sentence is trying to test before deciding true or false.
+Different experiments in one building routinely compete for shared machines, cold storage, and technician hours.
 
-Applied carefully, limited writer time forces one major proposal this week. Nothing in the sentence stretches the concept beyond its standard use.
+Held against the chapter test, the familiar vocabulary may sound economic, but the operative restriction or reason fails — so the sentence mislabels the situation.
 
-The reasoning chain is complete, so mark the statement true.', 'TRUE — This statement is correct. Pursuing the arts grant means opportunity cost is the housing programme benefit forgone.
+Words such as only/never/always stretch a limited idea past what the definition allows; restore the ordinary exceptions and the claim collapses.
 
-The relevant theory comes from scarcity of resources, opportunity cost, and trade-offs. Identify which definition or relationship the sentence is trying to test before deciding true or false.
+The statement is false.
+', 'FALSE — This topic centres on allocating scarce resources among competing uses and measuring opportunity cost as the best forgone alternative.
 
-Applied carefully, housing programme benefit is forgone when arts wins. Nothing in the sentence stretches the concept beyond its standard use.
+Multiple machines reduce queues; they do not eliminate them when demand exceeds capacity. Labs still sequence samples.
 
-No qualifying word breaks the definition or scenario, so the answer is true.', 'TRUE — The claim is correct. Pursuing the housing grant means opportunity cost is the arts funding benefit forgone if that proposal is skipped.
+Held against the chapter test, the familiar vocabulary may sound economic, but the operative restriction or reason fails — so the sentence mislabels the situation.
 
-The scenario is a worked example of scarcity of resources, opportunity cost, and trade-offs. Translate the story into the textbook category first; only then judge whether the sentence describes that category accurately.
+The absolute quantifier is doing the damage. Soften it to the chapter’s actual scope and the remaining content no longer supports a false blanket rule.
 
-In this setting, arts funding benefit is the next-best alternative. The wording matches the textbook relationship without adding extra conditions.
+The statement is false.
+'] WHERE case_id = 'CASE 2.2.38' AND tier = 'full';
+UPDATE public.economics_cases SET tactical_explanations = ARRAY['TRUE — When a resource can serve only one use at a time — a person’s hours, a crew, a machine, a maintenance window — it must be allocated among competing uses. That allocation problem is what economising answers, for households, firms, and governments alike.
 
-Every part of the claim aligns with the standard concept, so the statement stands.', 'FALSE — Evaluated against the textbook standard, this assertion is false. Opportunity cost equals the salary paid to the grant writer.
+Optimising placement to fit maximum safe tonnage stretches limited deck capacity — economising on scarce sailing space.
 
-The relevant theory comes from scarcity of resources, opportunity cost, and trade-offs. Identify which definition or relationship the sentence is trying to test before deciding true or false.
+Map that definition onto the case where a ferry operator allocating limited deck space on one sailing between extra freight trailers and additional passenger cars. The claim’s actors and constraints line up with the concept: the sentence describes the same mechanism the chapter teaches, not a neighbouring idea with similar vocabulary.
 
-The statement overreaches because writer salary is a cost of chosen work, not the forgone proposal''s benefit. The trap is to agree with the topic while missing the one detail that breaks the logic.
+Under that classification the claim describes the situation correctly rather than a lookalike category.
 
-The statement sounds plausible but fails on precision, so it is false.', 'FALSE — On the Fuhrmann definition used in the entrance exam, the sentence is false. Only profit-seeking firms allocate scarce resources.
+The statement is true.
+', 'TRUE — When a resource can serve only one use at a time — a person’s hours, a crew, a machine, a maintenance window — it must be allocated among competing uses. That allocation problem is what economising answers, for households, firms, and governments alike.
 
-This statement draws on scarcity of resources, opportunity cost, and trade-offs. Treat it as a checklist against the core concept named in the stem, not as a general opinion about business.
+Splitting deck space between freight and cars mirrors a government splitting transport investment between rail and road — scarce capacity, competing uses.
 
-Applied to this claim, charitable organisations also forgo alternative projects. That is why the sentence does not survive careful reading.
+Map that definition onto the case where a ferry operator allocating limited deck space on one sailing between extra freight trailers and additional passenger cars. The claim’s actors and constraints (here: government) line up with the concept: the sentence describes the same mechanism the chapter teaches, not a neighbouring idea with similar vocabulary.
 
-Once the overclaim or mislabel is exposed, the only consistent answer is false.'] WHERE case_id = 'CASE 2.2.42' AND tier = 'full';
-UPDATE public.economics_cases SET tactical_explanations = ARRAY['TRUE — Evaluated against the textbook standard, this assertion is correct. Clearing schools first means opportunity cost is the emergency-access benefit forgone on hospital roads.
+Under that classification the claim describes the situation correctly rather than a lookalike category.
 
-The relevant theory comes from scarcity of resources, opportunity cost, and trade-offs. Identify which definition or relationship the sentence is trying to test before deciding true or false.
+The statement is true.
+', 'TRUE — Opportunity cost is the value of the best alternative given up when a choice is made. It is not the cash outlay on the chosen option; it is the tutoring income, experience, leisure, or other project that the choice prevents.
 
-Applied carefully, hospital access benefit is the next-best alternative. Nothing in the sentence stretches the concept beyond its standard use.
+Loading extra freight trailers means fewer passenger cars aboard, so ticket revenue from cars left ashore is forgone — opportunity cost of freight priority.
 
-Every part of the claim aligns with the standard concept, so the statement stands.', 'TRUE — Evaluated against the textbook standard, this assertion is correct. Clearing hospital roads first means opportunity cost is the pupil transport benefit forgone on school routes.
+Map that definition onto the case where a ferry operator allocating limited deck space on one sailing between extra freight trailers and additional passenger cars. The claim’s actors and constraints (here: opportunity cost) line up with the concept: the sentence describes the same mechanism the chapter teaches, not a neighbouring idea with similar vocabulary.
 
-The relevant theory comes from scarcity of resources, opportunity cost, and trade-offs. Identify which definition or relationship the sentence is trying to test before deciding true or false.
+The causal link is doing the teaching work — strip it out and the remaining label would be too thin to judge.
 
-Applied carefully, school transport benefit is forgone when hospitals are prioritised. Nothing in the sentence stretches the concept beyond its standard use.
+The statement is true.
+', 'TRUE — When a resource can serve only one use at a time — a person’s hours, a crew, a machine, a maintenance window — it must be allocated among competing uses. That allocation problem is what economising answers, for households, firms, and governments alike.
 
-Every part of the claim aligns with the standard concept, so the statement stands.', 'TRUE — The claim is correct. Local governments allocate scarce resources among competing uses like households splitting a monthly budget.
+Deck space on one sailing is finite and split between freight trailers and passenger cars — a scarce resource.
 
-This statement draws on scarcity of resources, opportunity cost, and trade-offs. Treat it as a checklist against the core concept named in the stem, not as a general opinion about business.
+Map that definition onto the case where a ferry operator allocating limited deck space on one sailing between extra freight trailers and additional passenger cars. The claim’s actors and constraints line up with the concept: the sentence describes the same mechanism the chapter teaches, not a neighbouring idea with similar vocabulary.
 
-In this setting, municipal storm budgets and hours mirror household trade-offs. The wording matches the textbook relationship without adding extra conditions.
+Under that classification the claim describes the situation correctly rather than a lookalike category.
 
-No qualifying word breaks the definition or scenario, so the answer is true.', 'TRUE — Evaluated against the textbook standard, this assertion is correct. Economising appears when dispatchers sequence routes to minimise return-to-depot deadhead mileage.
+The statement is true.
+', 'FALSE — This topic centres on allocating scarce resources among competing uses and measuring opportunity cost as the best forgone alternative.
 
-Here you must apply ideas from scarcity of resources, opportunity cost, and trade-offs to a concrete situation rather than recite a definition from memory. Ownership, customer type, stakeholder group, or country of production usually decides the verdict.
+Travellers may need cars, but that does not make freight income “disappear” as an economic category. Freight still earns revenue and still competes for deck space.
 
-Applied carefully, route sequencing saves scarce fuel and hour resources. Nothing in the sentence stretches the concept beyond its standard use.
+Map that definition onto the case where a ferry operator allocating limited deck space on one sailing between extra freight trailers and additional passenger cars. Even if the stem mentions related details, those details do not carry the claim’s conclusion — the sentence either widens the concept past its test or attaches the wrong label to the facts.
 
-The reasoning chain is complete, so mark the statement true.', 'TRUE — The claim is correct. Available plough hours after the storm are a scarce resource allocated between school routes and hospital roads.
+The mismatch is in the defining feature, not in a missing buzzword; fix the feature and the claim disappears.
 
-This statement draws on scarcity of resources, opportunity cost, and trade-offs. Treat it as a checklist against the core concept named in the stem, not as a general opinion about business.
+The statement is false.
+'] WHERE case_id = 'CASE 2.2.39' AND tier = 'full';
+UPDATE public.economics_cases SET tactical_explanations = ARRAY['TRUE — Opportunity cost is the value of the best alternative given up when a choice is made. It is not the cash outlay on the chosen option; it is the tutoring income, experience, leisure, or other project that the choice prevents.
 
-In this setting, storm response capacity is finite in the first shift. The wording matches the textbook relationship without adding extra conditions.
+Cinema tickets use the jar so the board game is not bought; repeated home-entertainment benefit from the game is forgone — opportunity cost of cinema.
 
-No qualifying word breaks the definition or scenario, so the answer is true.'] WHERE case_id = 'CASE 2.2.43' AND tier = 'full';
-UPDATE public.economics_cases SET tactical_explanations = ARRAY['TRUE — This statement is correct. Full-time summer weeks are scarce and allocated between the paid placement and the museum internship.
+Held against the chapter test (here: opportunity cost), each operative word earns its place: the category, the comparison, and the mechanism survive when checked one by one.
 
-The relevant theory comes from scarcity of resources, opportunity cost, and trade-offs. Identify which definition or relationship the sentence is trying to test before deciding true or false.
+Keep the reason clause: it names why the classification holds (forgone alternative, scope of analysis, price signal, or institutional rule) rather than restating the conclusion alone.
 
-Applied carefully, one person cannot pursue two full-time paths simultaneously. Nothing in the sentence stretches the concept beyond its standard use.
+The statement is true.
+', 'TRUE — Opportunity cost is the value of the best alternative given up when a choice is made. It is not the cash outlay on the chosen option; it is the tutoring income, experience, leisure, or other project that the choice prevents.
 
-The reasoning chain is complete, so mark the statement true.', 'TRUE — Evaluated against the textbook standard, this assertion is correct. Individuals face the same scarce-resource problem as firms choosing between two training programmes.
+Sixty euros is small but still limited. Forgoing the game for tickets is real opportunity cost at household scale. $$60\text{ euros}$$ still binds.
 
-The relevant theory comes from scarcity of resources, opportunity cost, and trade-offs. Identify which definition or relationship the sentence is trying to test before deciding true or false.
+Held against the chapter test (here: opportunity cost), each operative word earns its place: the category, the comparison, and the mechanism survive when checked one by one.
 
-Applied carefully, time and opportunity constraints parallel firm choices. Nothing in the sentence stretches the concept beyond its standard use.
+A useful check is the opposite error: treat opportunity cost as the money paid, or treat one buyer’s choice as macro, or treat a shift as a movement — those near-misses fail, which confirms this wording.
 
-The reasoning chain is complete, so mark the statement true.', 'TRUE — On the Fuhrmann definition used in the entrance exam, the sentence is correct. Higher expected enjoyment at the museum would not erase forgone wages from the decision.
+The statement is true.
+', 'FALSE — This topic centres on allocating scarce resources among competing uses and measuring opportunity cost as the best forgone alternative.
 
-This statement draws on scarcity of resources, opportunity cost, and trade-offs. Treat it as a checklist against the core concept named in the stem, not as a general opinion about business.
+Parents might add coins later; that possibility does not make this month’s jar unlimited. The current 60 euros remains a scarce pool for this choice.
 
-In this setting, enjoyment and forgone pay can coexist. The wording matches the textbook relationship without adding extra conditions.
+Held against the chapter test, the familiar vocabulary may sound economic, but the operative restriction or reason fails — so the sentence mislabels the situation.
 
-No qualifying word breaks the definition or scenario, so the answer is true.', 'TRUE — Evaluated against the textbook standard, this assertion is correct. Accepting the museum internship means opportunity cost is the paid placement wages forgone.
+Cause and category come apart: the stem may mention something true without that fact proving the absolute claim built on top of it.
 
-The relevant theory comes from scarcity of resources, opportunity cost, and trade-offs. Identify which definition or relationship the sentence is trying to test before deciding true or false.
+The statement is false.
+', 'FALSE — This topic centres on allocating scarce resources among competing uses and measuring opportunity cost as the best forgone alternative.
 
-Applied carefully, forgone wages are the financial next-best alternative. Nothing in the sentence stretches the concept beyond its standard use.
+Games lasting longer does not make cinema benefits “vanish permanently” as a category — nor does durability erase cinema’s opportunity cost when the jar buys tickets instead.
 
-No qualifying word breaks the definition or scenario, so the answer is true.', 'FALSE — On the Fuhrmann definition used in the entrance exam, the sentence is false. Only euro amounts may define opportunity cost for graduates.
+Held against the chapter test, the familiar vocabulary may sound economic, but the operative restriction or reason fails — so the sentence mislabels the situation.
 
-This statement draws on scarcity of resources, opportunity cost, and trade-offs. Treat it as a checklist against the core concept named in the stem, not as a general opinion about business.
+Restore the textbook test and the assertion falls away: it mislabels the category or reverses the comparison the chapter actually teaches.
 
-Applied to this claim, experience and contacts can represent forgone benefits. That is why the sentence does not survive careful reading.
+The statement is false.
+', 'FALSE — When a resource can serve only one use at a time — a person’s hours, a crew, a machine, a maintenance window — it must be allocated among competing uses. That allocation problem is what economising answers, for households, firms, and governments alike.
 
-Once the overclaim or mislabel is exposed, the only consistent answer is false.'] WHERE case_id = 'CASE 2.2.44' AND tier = 'full';
-UPDATE public.economics_cases SET tactical_explanations = ARRAY['TRUE — This statement is correct. Personal satisfaction from volunteering does not cancel forgone income or leisure from the unchosen option.
+Children economise with limited toys, time, and shared jars. Parents funding every wish is a wish, not a fact that removes economising.
 
-The relevant theory comes from scarcity of resources, opportunity cost, and trade-offs. Identify which definition or relationship the sentence is trying to test before deciding true or false.
+Held against the chapter test, the familiar vocabulary may sound economic, but the operative restriction or reason fails — so the sentence mislabels the situation.
 
-Applied carefully, satisfaction and opportunity cost can coexist. Nothing in the sentence stretches the concept beyond its standard use.
+Absolute wording is the trap: economics definitions leave room for counterexamples — another actor, another scope, a non-money cost, or a public function that still exists. One clear counterexample rejects the sentence.
 
-No qualifying word breaks the definition or scenario, so the answer is true.', 'TRUE — This statement is correct. Volunteering on Saturday can forfeit paid shift income that could have been earned instead.
+The statement is false.
+'] WHERE case_id = 'CASE 2.2.40' AND tier = 'full';
+UPDATE public.economics_cases SET tactical_explanations = ARRAY['TRUE — When a resource can serve only one use at a time — a person’s hours, a crew, a machine, a maintenance window — it must be allocated among competing uses. That allocation problem is what economising answers, for households, firms, and governments alike.
 
-The relevant theory comes from scarcity of resources, opportunity cost, and trade-offs. Identify which definition or relationship the sentence is trying to test before deciding true or false.
+Bundling tasks that share one crane setup saves scarce hoist time in the low-wind window — economising on a binding maintenance resource.
 
-Applied carefully, forgone wage income is a financial opportunity cost. Nothing in the sentence stretches the concept beyond its standard use.
+Held against the chapter test, each operative word earns its place: the category, the comparison, and the mechanism survive when checked one by one.
 
-No qualifying word breaks the definition or scenario, so the answer is true.', 'FALSE — This statement is false. Only priced activities create opportunity cost.
+Under that classification the claim describes the situation correctly rather than a lookalike category.
 
-The relevant theory comes from scarcity of resources, opportunity cost, and trade-offs. Identify which definition or relationship the sentence is trying to test before deciding true or false.
+The statement is true.
+', 'FALSE — When a resource can serve only one use at a time — a person’s hours, a crew, a machine, a maintenance window — it must be allocated among competing uses. That allocation problem is what economising answers, for households, firms, and governments alike.
 
-The statement overreaches because free activities still forgo other uses of the same hours. The trap is to agree with the topic while missing the one detail that breaks the logic.
+Low wind creates a maintenance window; it does not grant technicians unlimited hours. Fatigue, crew size, and the window’s length still bind.
 
-Once the overclaim or mislabel is exposed, the only consistent answer is false.', 'FALSE — On the Fuhrmann definition used in the entrance exam, the sentence is false. Volunteering is charitable and therefore exempt from economics.
+Held against the chapter test, the familiar vocabulary may sound economic, but the operative restriction or reason fails — so the sentence mislabels the situation.
 
-This statement draws on scarcity of resources, opportunity cost, and trade-offs. Treat it as a checklist against the core concept named in the stem, not as a general opinion about business.
+Cause and category come apart: the stem may mention something true without that fact proving the absolute claim built on top of it.
 
-Applied to this claim, charitable choices still forgo alternatives. That is why the sentence does not survive careful reading.
+The statement is false.
+', 'FALSE — This topic centres on allocating scarce resources among competing uses and measuring opportunity cost as the best forgone alternative.
 
-Because the decisive detail is wrong, mark the statement false.', 'FALSE — The claim is false. Opportunity cost equals how happy the volunteer feels afterward.
+Energy firms allocate scarce windows, cranes, and crews under opportunity cost like other firms.
 
-This statement draws on scarcity of resources, opportunity cost, and trade-offs. Treat it as a checklist against the core concept named in the stem, not as a general opinion about business.
+Held against the chapter test, the familiar vocabulary may sound economic, but the operative restriction or reason fails — so the sentence mislabels the situation.
 
-Applied to this claim, emotional value of chosen activity is separate from forgone alternative. That is why the sentence does not survive careful reading.
+Restore the textbook test and the assertion falls away: it mislabels the category or reverses the comparison the chapter actually teaches.
 
-Once the overclaim or mislabel is exposed, the only consistent answer is false.'] WHERE case_id = 'CASE 2.2.45' AND tier = 'full';
-UPDATE public.economics_cases SET tactical_explanations = ARRAY['TRUE — Evaluated against the textbook standard, this assertion is correct. Hosting internal training means opportunity cost is the client hire fee and relationship benefit forgone.
+The statement is false.
+', 'FALSE — Opportunity cost is the value of the best alternative given up when a choice is made. It is not the cash outlay on the chosen option; it is the tutoring income, experience, leisure, or other project that the choice prevents.
 
-The relevant theory comes from scarcity of resources, opportunity cost, and trade-offs. Identify which definition or relationship the sentence is trying to test before deciding true or false.
+Safety rules constrain how work is done; they do not remove trade-offs between inspections and blade repairs inside a limited window.
 
-Applied carefully, client hire benefit is the next-best alternative. Nothing in the sentence stretches the concept beyond its standard use.
+Held against the chapter test (here: opportunity cost), the familiar vocabulary may sound economic, but the operative restriction or reason fails — so the sentence mislabels the situation.
 
-No qualifying word breaks the definition or scenario, so the answer is true.', 'TRUE — On the Fuhrmann definition used in the entrance exam, the sentence is correct. Economising appears when staff foldable walls split the room only if both groups accept reduced capacity.
+Absolute wording is the trap: economics definitions leave room for counterexamples — another actor, another scope, a non-money cost, or a public function that still exists. One clear counterexample rejects the sentence.
 
-The scenario is a worked example of scarcity of resources, opportunity cost, and trade-offs. Translate the story into the textbook category first; only then judge whether the sentence describes that category accurately.
+The statement is false.
+', 'FALSE — Opportunity cost is the value of the best alternative given up when a choice is made. It is not the cash outlay on the chosen option; it is the tutoring income, experience, leisure, or other project that the choice prevents.
 
-In this setting, partial splitting stretches scarce space efficiently. The wording matches the textbook relationship without adding extra conditions.
+Regulatory need for inspections raises their priority; it does not set the forgone value of delayed blade repairs to zero.
 
-The reasoning chain is complete, so mark the statement true.', 'TRUE — This statement is correct. The large meeting room for one morning is a scarce resource between the client workshop and internal training.
+Held against the chapter test, the familiar vocabulary may sound economic, but the operative restriction or reason fails — so the sentence mislabels the situation.
 
-The relevant theory comes from scarcity of resources, opportunity cost, and trade-offs. Identify which definition or relationship the sentence is trying to test before deciding true or false.
+Absolute wording is the trap: economics definitions leave room for counterexamples — another actor, another scope, a non-money cost, or a public function that still exists. One clear counterexample rejects the sentence.
 
-Applied carefully, one room cannot host both events at once. Nothing in the sentence stretches the concept beyond its standard use.
+The statement is false.
+'] WHERE case_id = 'CASE 2.2.41' AND tier = 'full';
+UPDATE public.economics_cases SET tactical_explanations = ARRAY['TRUE — When a resource can serve only one use at a time — a person’s hours, a crew, a machine, a maintenance window — it must be allocated among competing uses. That allocation problem is what economising answers, for households, firms, and governments alike.
 
-Every part of the claim aligns with the standard concept, so the statement stands.', 'TRUE — Evaluated against the textbook standard, this assertion is correct. The hub operator allocates scarce resources like a firm choosing between two marketing channels.
+One staff week cannot fully write both grant applications at once. That week is scarce between housing and arts proposals.
 
-The relevant theory comes from scarcity of resources, opportunity cost, and trade-offs. Identify which definition or relationship the sentence is trying to test before deciding true or false.
+Map that definition onto the case where a nonprofit choosing to write either a housing grant or an arts grant with the same limited staff week. The claim’s actors and constraints line up with the concept: the sentence describes the same mechanism the chapter teaches, not a neighbouring idea with similar vocabulary.
 
-Applied carefully, room time is allocated among competing uses. Nothing in the sentence stretches the concept beyond its standard use.
+Nothing in the stem contradicts that reading, so the assertion stands as a correct application of the definition.
 
-The reasoning chain is complete, so mark the statement true.', 'FALSE — This statement is false. Client revenue overrides all internal benefits automatically.
+The statement is true.
+', 'TRUE — Opportunity cost is the value of the best alternative given up when a choice is made. It is not the cash outlay on the chosen option; it is the tutoring income, experience, leisure, or other project that the choice prevents.
 
-The topic is scarcity of resources, opportunity cost, and trade-offs, but the decisive skill here is reading quantifiers. Words such as never, always, only, or all turn a generally true idea into a claim that can be rejected by one routine counterexample.
+Pursuing the arts grant forgoes the housing programme benefit that a successful housing proposal might have brought — opportunity cost of the arts focus.
 
-The statement overreaches because internal training benefits remain forgone when clients book. The trap is to agree with the topic while missing the one detail that breaks the logic.
+Map that definition onto the case where a nonprofit choosing to write either a housing grant or an arts grant with the same limited staff week. The claim’s actors and constraints (here: opportunity cost) line up with the concept: the sentence describes the same mechanism the chapter teaches, not a neighbouring idea with similar vocabulary.
 
-Watch the absolute wording "all": exam statements often sound plausible until a single scope word turns an otherwise familiar idea into an overclaim.
+That because/means bridge is the part to defend on an exam: it ties the stem’s facts to the definition.
 
-The statement sounds plausible but fails on precision, so it is false.'] WHERE case_id = 'CASE 2.2.46' AND tier = 'full';
-UPDATE public.economics_cases SET tactical_explanations = ARRAY['TRUE — On the Fuhrmann definition used in the entrance exam, the sentence is correct. Sending the crew to cherries means opportunity cost is the storm-damage reduction benefit forgone from delayed trellis repairs.
+The statement is true.
+', 'TRUE — Opportunity cost is the value of the best alternative given up when a choice is made. It is not the cash outlay on the chosen option; it is the tutoring income, experience, leisure, or other project that the choice prevents.
 
-This statement draws on scarcity of resources, opportunity cost, and trade-offs. Treat it as a checklist against the core concept named in the stem, not as a general opinion about business.
+Pursuing housing forgoes arts-funding benefits if the arts proposal is skipped — opportunity cost of the housing focus.
 
-In this setting, repair benefit is the next-best alternative. The wording matches the textbook relationship without adding extra conditions.
+Map that definition onto the case where a nonprofit choosing to write either a housing grant or an arts grant with the same limited staff week. The claim’s actors and constraints (here: opportunity cost) line up with the concept: the sentence describes the same mechanism the chapter teaches, not a neighbouring idea with similar vocabulary.
 
-No qualifying word breaks the definition or scenario, so the answer is true.', 'FALSE — On the Fuhrmann definition used in the entrance exam, the sentence is false. Opportunity cost must always be measured only in euros.
+The causal link is doing the teaching work — strip it out and the remaining label would be too thin to judge.
 
-Although the subject matter is scarcity of resources, opportunity cost, and trade-offs, this is really a logic check on overstatement. Non-profit surpluses, mixed economies, and partial market failure are classic cases where absolute wording fails.
+The statement is true.
+', 'FALSE — Opportunity cost is the value of the best alternative given up when a choice is made. It is not the cash outlay on the chosen option; it is the tutoring income, experience, leisure, or other project that the choice prevents.
 
-Applied to this claim, spoilage avoided or caused can represent forgone benefits. That is why the sentence does not survive careful reading.
+Grant-writer salary is the outlay for labour. Opportunity cost is the forgone alternative grant’s expected programme benefit — not the salary figure itself.
 
-Watch the absolute wording "always": exam statements often sound plausible until a single scope word turns an otherwise familiar idea into an overclaim.
+Map that definition onto the case where a nonprofit choosing to write either a housing grant or an arts grant with the same limited staff week. Even if the stem mentions related details (here: Opportunity cost), those details do not carry the claim’s conclusion — the sentence either widens the concept past its test or attaches the wrong label to the facts.
 
-The statement sounds plausible but fails on precision, so it is false.', 'FALSE — Evaluated against the textbook standard, this assertion is false. Weather makes fruit worthless, so revenue opportunity cost is zero.
+The mismatch is in the defining feature, not in a missing buzzword; fix the feature and the claim disappears.
 
-The relevant theory comes from scarcity of resources, opportunity cost, and trade-offs. Identify which definition or relationship the sentence is trying to test before deciding true or false.
+The statement is false.
+', 'FALSE — When a resource can serve only one use at a time — a person’s hours, a crew, a machine, a maintenance window — it must be allocated among competing uses. That allocation problem is what economising answers, for households, firms, and governments alike.
 
-The statement overreaches because unpicked fruit still represents forgone revenue before spoilage. The trap is to agree with the topic while missing the one detail that breaks the logic.
+Nonprofits allocate scarce staff time and funds too. Profit-seeking is not required for scarce-resource allocation.
 
-The statement sounds plausible but fails on precision, so it is false.', 'FALSE — On the Fuhrmann definition used in the entrance exam, the sentence is false. Rain removes scarcity because work stops anyway.
+Map that definition onto the case where a nonprofit choosing to write either a housing grant or an arts grant with the same limited staff week. Even if the stem mentions related details, those details do not carry the claim’s conclusion — the sentence either widens the concept past its test or attaches the wrong label to the facts.
 
-The scenario is a worked example of scarcity of resources, opportunity cost, and trade-offs. Translate the story into the textbook category first; only then judge whether the sentence describes that category accurately.
+Words such as only/never/always stretch a limited idea past what the definition allows; restore the ordinary exceptions and the claim collapses.
 
-Applied to this claim, even with weather risk, assignable crew hours remain finite. That is why the sentence does not survive careful reading.
+The statement is false.
+'] WHERE case_id = 'CASE 2.2.42' AND tier = 'full';
+UPDATE public.economics_cases SET tactical_explanations = ARRAY['TRUE — Opportunity cost is the value of the best alternative given up when a choice is made. It is not the cash outlay on the chosen option; it is the tutoring income, experience, leisure, or other project that the choice prevents.
 
-The statement sounds plausible but fails on precision, so it is false.', 'FALSE — Evaluated against the textbook standard, this assertion is false. Agricultural decisions are biological only, not economic.
+Clearing schools first delays hospital-road clearing, so emergency-access benefits on those roads are forgone — opportunity cost of school priority.
 
-The relevant theory comes from scarcity of resources, opportunity cost, and trade-offs. Identify which definition or relationship the sentence is trying to test before deciding true or false.
+Held against the chapter test (here: opportunity cost), each operative word earns its place: the category, the comparison, and the mechanism survive when checked one by one.
 
-The statement overreaches because urgent farm tasks mirror urgent household budget splits. The trap is to agree with the topic while missing the one detail that breaks the logic.
+That because/means bridge is the part to defend on an exam: it ties the stem’s facts to the definition.
 
-Once the overclaim or mislabel is exposed, the only consistent answer is false.'] WHERE case_id = 'CASE 2.2.47' AND tier = 'full';
-UPDATE public.economics_cases SET tactical_explanations = ARRAY['TRUE — This statement is correct. Economising appears when the trainee schedules shorter breaks to fit both tasks partially into one day.
+The statement is true.
+', 'TRUE — Opportunity cost is the value of the best alternative given up when a choice is made. It is not the cash outlay on the chosen option; it is the tutoring income, experience, leisure, or other project that the choice prevents.
 
-Here you must apply ideas from scarcity of resources, opportunity cost, and trade-offs to a concrete situation rather than recite a definition from memory. Ownership, customer type, stakeholder group, or country of production usually decides the verdict.
+Clearing hospital roads first delays school routes, so pupil-transport benefits are forgone — opportunity cost of hospital priority.
 
-Applied carefully, careful time use under scarcity reflects economising behaviour. Nothing in the sentence stretches the concept beyond its standard use.
+Held against the chapter test (here: opportunity cost), each operative word earns its place: the category, the comparison, and the mechanism survive when checked one by one.
 
-Every part of the claim aligns with the standard concept, so the statement stands.', 'TRUE — The claim is correct. Choosing the shift means opportunity cost includes improved exam readiness forgone from lost revision time.
+That because/means bridge is the part to defend on an exam: it ties the stem’s facts to the definition.
 
-This statement draws on scarcity of resources, opportunity cost, and trade-offs. Treat it as a checklist against the core concept named in the stem, not as a general opinion about business.
+The statement is true.
+', 'TRUE — When a resource can serve only one use at a time — a person’s hours, a crew, a machine, a maintenance window — it must be allocated among competing uses. That allocation problem is what economising answers, for households, firms, and governments alike.
 
-In this setting, forgone revision benefit is the next-best alternative when working. The wording matches the textbook relationship without adding extra conditions.
+Limited plough hours after a storm are allocated like a household monthly budget — scarce means, competing uses.
 
-No qualifying word breaks the definition or scenario, so the answer is true.', 'FALSE — On the Fuhrmann definition used in the entrance exam, the sentence is false. Opportunity cost applies only inside registered companies, not to trainees.
+Held against the chapter test, each operative word earns its place: the category, the comparison, and the mechanism survive when checked one by one.
 
-This statement draws on scarcity of resources, opportunity cost, and trade-offs. Treat it as a checklist against the core concept named in the stem, not as a general opinion about business.
+Under that classification the claim describes the situation correctly rather than a lookalike category.
 
-Applied to this claim, personal time allocation mirrors firm project selection under scarcity. That is why the sentence does not survive careful reading.
+The statement is true.
+', 'TRUE — When a resource can serve only one use at a time — a person’s hours, a crew, a machine, a maintenance window — it must be allocated among competing uses. That allocation problem is what economising answers, for households, firms, and governments alike.
 
-Once the overclaim or mislabel is exposed, the only consistent answer is false.', 'FALSE — This statement is false. Exam preparation has zero opportunity cost because licensing is a need.
+Sequencing routes to cut return-to-depot deadhead mileage stretches scarce plough hours — economising on the fleet’s time.
 
-Here you must apply ideas from scarcity of resources, opportunity cost, and trade-offs to a concrete situation rather than recite a definition from memory. Ownership, customer type, stakeholder group, or country of production usually decides the verdict.
+Held against the chapter test, each operative word earns its place: the category, the comparison, and the mechanism survive when checked one by one.
 
-The statement overreaches because forgone paid income remains opportunity cost even when study is essential. The trap is to agree with the topic while missing the one detail that breaks the logic.
+Nothing in the stem contradicts that reading, so the assertion stands as a correct application of the definition.
 
-Because the decisive detail is wrong, mark the statement false.', 'FALSE — On the Fuhrmann definition used in the entrance exam, the sentence is false. Weekends repeat weekly, so Sunday hours are unlimited for scheduling.
+The statement is true.
+', 'TRUE — When a resource can serve only one use at a time — a person’s hours, a crew, a machine, a maintenance window — it must be allocated among competing uses. That allocation problem is what economising answers, for households, firms, and governments alike.
 
-This statement draws on scarcity of resources, opportunity cost, and trade-offs. Treat it as a checklist against the core concept named in the stem, not as a general opinion about business.
+Available plough hours are finite and split between school routes and hospital roads — a scarce resource.
 
-Applied to this claim, each calendar day contains finite hours requiring allocation. That is why the sentence does not survive careful reading.
+Held against the chapter test, each operative word earns its place: the category, the comparison, and the mechanism survive when checked one by one.
 
-The statement sounds plausible but fails on precision, so it is false.'] WHERE case_id = 'CASE 2.2.48' AND tier = 'full';
-UPDATE public.economics_cases SET tactical_explanations = ARRAY['TRUE — On the Fuhrmann definition used in the entrance exam, the sentence is correct. Choosing free park recreation over a paid part-time shift forfeits wage income as opportunity cost.
+Nothing in the stem contradicts that reading, so the assertion stands as a correct application of the definition.
 
-This statement draws on scarcity of resources, opportunity cost, and trade-offs. Treat it as a checklist against the core concept named in the stem, not as a general opinion about business.
+The statement is true.
+'] WHERE case_id = 'CASE 2.2.43' AND tier = 'full';
+UPDATE public.economics_cases SET tactical_explanations = ARRAY['TRUE — When a resource can serve only one use at a time — a person’s hours, a crew, a machine, a maintenance window — it must be allocated among competing uses. That allocation problem is what economising answers, for households, firms, and governments alike.
 
-In this setting, forgone wages define financial opportunity cost of leisure. The wording matches the textbook relationship without adding extra conditions.
+Full-time summer weeks cannot cover both the paid placement and the museum internship. Those weeks are scarce between the offers.
 
-Every part of the claim aligns with the standard concept, so the statement stands.', 'TRUE — The claim is correct. Smaller budgets still produce genuine opportunity cost when alternatives are forgone.
+Map that definition onto the case where a graduate who can accept either a paid industry placement or an unpaid museum internship, but not both full-time. The claim’s actors and constraints (here: internship) line up with the concept: the sentence describes the same mechanism the chapter teaches, not a neighbouring idea with similar vocabulary.
 
-The scenario is a worked example of scarcity of resources, opportunity cost, and trade-offs. Translate the story into the textbook category first; only then judge whether the sentence describes that category accurately.
+Under that classification the claim describes the situation correctly rather than a lookalike category.
 
-In this setting, scale does not eliminate forgone benefits. The wording matches the textbook relationship without adding extra conditions.
+The statement is true.
+', 'TRUE — This topic centres on allocating scarce resources among competing uses and measuring opportunity cost as the best forgone alternative.
 
-The reasoning chain is complete, so mark the statement true.', 'TRUE — Evaluated against the textbook standard, this assertion is correct. A family''s fixed garden area allocated between vegetables and flowers illustrates scarce land rather than scarce cash alone.
+Individuals choosing training paths and firms choosing training programmes both allocate scarce time (and related resources) among alternatives.
 
-This tests discrimination within scarcity of resources, opportunity cost, and trade-offs: local versus international scope, equity versus debt, product versus market orientation, and similar pairs.
+Map that definition onto the case where a graduate who can accept either a paid industry placement or an unpaid museum internship, but not both full-time. The claim’s actors and constraints line up with the concept: the sentence describes the same mechanism the chapter teaches, not a neighbouring idea with similar vocabulary.
 
-Applied carefully, land area is a non-monetary scarce resource. Nothing in the sentence stretches the concept beyond its standard use.
+The sentence therefore reports the concept accurately for this item once the definition is held fixed.
 
-Every part of the claim aligns with the standard concept, so the statement stands.', 'TRUE — Evaluated against the textbook standard, this assertion is correct. Economising is necessary whenever resources are scarce rather than unlimited, regardless of resource type.
+The statement is true.
+', 'TRUE — Opportunity cost is the value of the best alternative given up when a choice is made. It is not the cash outlay on the chosen option; it is the tutoring income, experience, leisure, or other project that the choice prevents.
 
-This tests discrimination within scarcity of resources, opportunity cost, and trade-offs: local versus international scope, equity versus debt, product versus market orientation, and similar pairs.
+Higher enjoyment at the museum is a benefit of that option; it does not erase forgone wages from the paid placement in the comparison.
 
-Applied carefully, careful use responds to finite land, time, or money. Nothing in the sentence stretches the concept beyond its standard use.
+Map that definition onto the case where a graduate who can accept either a paid industry placement or an unpaid museum internship, but not both full-time. The claim’s actors and constraints line up with the concept: the sentence describes the same mechanism the chapter teaches, not a neighbouring idea with similar vocabulary.
 
-The reasoning chain is complete, so mark the statement true.', 'TRUE — This statement is correct. Hospital administrators allocating the last specialist nurse between wards face time scarcity and opportunity cost.
+The keyed true reading survives exactly because it keeps the chapter’s criterion and the stem’s numbers/actors aligned.
 
-The relevant theory comes from scarcity of resources, opportunity cost, and trade-offs. Identify which definition or relationship the sentence is trying to test before deciding true or false.
+The statement is true.
+', 'TRUE — Opportunity cost is the value of the best alternative given up when a choice is made. It is not the cash outlay on the chosen option; it is the tutoring income, experience, leisure, or other project that the choice prevents.
 
-Applied carefully, specialist nurse hours are scarce across wards. Nothing in the sentence stretches the concept beyond its standard use.
+Accepting the unpaid museum internship forgoes paid-placement wages — the money opportunity cost of the museum path.
 
-No qualifying word breaks the definition or scenario, so the answer is true.'] WHERE case_id = 'CASE 2.2.49' AND tier = 'full';
-UPDATE public.economics_cases SET tactical_explanations = ARRAY['TRUE — On the Fuhrmann definition used in the entrance exam, the sentence is correct. Nine hundred euros is a limited club fund allocated between sports kits and fridge repair.
+Map that definition onto the case where a graduate who can accept either a paid industry placement or an unpaid museum internship, but not both full-time. The claim’s actors and constraints (here: internship, opportunity cost) line up with the concept: the sentence describes the same mechanism the chapter teaches, not a neighbouring idea with similar vocabulary.
 
-This statement draws on scarcity of resources, opportunity cost, and trade-offs. Treat it as a checklist against the core concept named in the stem, not as a general opinion about business.
+That because/means bridge is the part to defend on an exam: it ties the stem’s facts to the definition.
 
-In this setting, fixed treasurer funds force a choice among projects. The wording matches the textbook relationship without adding extra conditions.
+The statement is true.
+', 'FALSE — Opportunity cost is the value of the best alternative given up when a choice is made. It is not the cash outlay on the chosen option; it is the tutoring income, experience, leisure, or other project that the choice prevents.
 
-No qualifying word breaks the definition or scenario, so the answer is true.', 'TRUE — This statement is correct. Buying kits means opportunity cost is the food-storage benefit forgone from a broken fridge.
+Opportunity cost for graduates can include experience, networks, and career options forgone — not euro amounts only.
 
-The relevant theory comes from scarcity of resources, opportunity cost, and trade-offs. Identify which definition or relationship the sentence is trying to test before deciding true or false.
+Map that definition onto the case where a graduate who can accept either a paid industry placement or an unpaid museum internship, but not both full-time. Even if the stem mentions related details (here: opportunity cost), those details do not carry the claim’s conclusion — the sentence either widens the concept past its test or attaches the wrong label to the facts.
 
-Applied carefully, fridge repair benefit is the next-best alternative. Nothing in the sentence stretches the concept beyond its standard use.
+Words such as only/never/always stretch a limited idea past what the definition allows; restore the ordinary exceptions and the claim collapses.
 
-The reasoning chain is complete, so mark the statement true.', 'TRUE — The claim is correct. Repairing the fridge means opportunity cost is the training benefit forgone from lacking new kits.
+The statement is false.
+'] WHERE case_id = 'CASE 2.2.44' AND tier = 'full';
+UPDATE public.economics_cases SET tactical_explanations = ARRAY['TRUE — Opportunity cost is the value of the best alternative given up when a choice is made. It is not the cash outlay on the chosen option; it is the tutoring income, experience, leisure, or other project that the choice prevents.
 
-This statement draws on scarcity of resources, opportunity cost, and trade-offs. Treat it as a checklist against the core concept named in the stem, not as a general opinion about business.
+Satisfaction is a benefit of volunteering; it does not cancel forgone income or leisure from the option not chosen. Those forgone benefits remain opportunity cost.
 
-In this setting, kit purchase benefit is forgone when the fridge wins. The wording matches the textbook relationship without adding extra conditions.
+Held against the chapter test, each operative word earns its place: the category, the comparison, and the mechanism survive when checked one by one.
 
-Every part of the claim aligns with the standard concept, so the statement stands.', 'FALSE — Evaluated against the textbook standard, this assertion is false. Nonprofit budgets are charitable and therefore non-economic.
+If you replaced the key term with its neighbour (accounting outlay, micro/macro swap, movement vs shift), the sentence would stop matching the stem — that contrast locks the idea.
 
-The relevant theory comes from scarcity of resources, opportunity cost, and trade-offs. Identify which definition or relationship the sentence is trying to test before deciding true or false.
+The statement is true.
+', 'TRUE — This topic centres on allocating scarce resources among competing uses and measuring opportunity cost as the best forgone alternative.
 
-The statement overreaches because charitable funds still require allocation among alternatives. The trap is to agree with the topic while missing the one detail that breaks the logic.
+Saturday volunteering can mean not working a paid shift, so wage income is forfeited — opportunity cost in money terms.
 
-Because the decisive detail is wrong, mark the statement false.', 'FALSE — This statement is false. Opportunity cost equals the invoice total for the chosen item.
+Held against the chapter test (here: shift), each operative word earns its place: the category, the comparison, and the mechanism survive when checked one by one.
 
-The relevant theory comes from scarcity of resources, opportunity cost, and trade-offs. Identify which definition or relationship the sentence is trying to test before deciding true or false.
+If you replaced the key term with its neighbour (accounting outlay, micro/macro swap, movement vs shift), the sentence would stop matching the stem — that contrast locks the idea.
 
-The statement overreaches because chosen purchase price is not the forgone alternative''s benefit. The trap is to agree with the topic while missing the one detail that breaks the logic.
+The statement is true.
+', 'FALSE — Opportunity cost is the value of the best alternative given up when a choice is made. It is not the cash outlay on the chosen option; it is the tutoring income, experience, leisure, or other project that the choice prevents.
 
-Once the overclaim or mislabel is exposed, the only consistent answer is false.'] WHERE case_id = 'CASE 2.2.50' AND tier = 'full';
+Unpriced alternatives (leisure, unpaid help, learning) still create opportunity cost when forgone. Price tags are not required.
+
+Held against the chapter test (here: opportunity cost), the familiar vocabulary may sound economic, but the operative restriction or reason fails — so the sentence mislabels the situation.
+
+The absolute quantifier is doing the damage. Soften it to the chapter’s actual scope and the remaining content no longer supports a false blanket rule.
+
+The statement is false.
+', 'FALSE — This topic centres on allocating scarce resources among competing uses and measuring opportunity cost as the best forgone alternative.
+
+Charitable motive does not exempt an activity from scarce-time economics. Volunteering still uses hours that had other uses.
+
+Held against the chapter test, the familiar vocabulary may sound economic, but the operative restriction or reason fails — so the sentence mislabels the situation.
+
+The mismatch is in the defining feature, not in a missing buzzword; fix the feature and the claim disappears.
+
+The statement is false.
+', 'FALSE — Opportunity cost is the value of the best alternative given up when a choice is made. It is not the cash outlay on the chosen option; it is the tutoring income, experience, leisure, or other project that the choice prevents.
+
+How happy the volunteer feels is a benefit measure, not the definition of opportunity cost. Opportunity cost is what was forgone, not post-activity happiness.
+
+Held against the chapter test (here: Opportunity cost), the familiar vocabulary may sound economic, but the operative restriction or reason fails — so the sentence mislabels the situation.
+
+Restore the textbook test and the assertion falls away: it mislabels the category or reverses the comparison the chapter actually teaches.
+
+The statement is false.
+'] WHERE case_id = 'CASE 2.2.45' AND tier = 'full';
+UPDATE public.economics_cases SET tactical_explanations = ARRAY['TRUE — Opportunity cost is the value of the best alternative given up when a choice is made. It is not the cash outlay on the chosen option; it is the tutoring income, experience, leisure, or other project that the choice prevents.
+
+Using the room for internal training forgoes client hire fees and relationship benefits from a workshop — opportunity cost of internal use.
+
+Map that definition onto the case where a coworking hub assigning its only large meeting room either to a client workshop or to an internal training session. The claim’s actors and constraints (here: opportunity cost) line up with the concept: the sentence describes the same mechanism the chapter teaches, not a neighbouring idea with similar vocabulary.
+
+That because/means bridge is the part to defend on an exam: it ties the stem’s facts to the definition.
+
+The statement is true.
+', 'TRUE — When a resource can serve only one use at a time — a person’s hours, a crew, a machine, a maintenance window — it must be allocated among competing uses. That allocation problem is what economising answers, for households, firms, and governments alike.
+
+Split walls that let both groups meet at reduced capacity stretch one room’s morning — economising when both accept less space.
+
+Map that definition onto the case where a coworking hub assigning its only large meeting room either to a client workshop or to an internal training session. The claim’s actors and constraints line up with the concept: the sentence describes the same mechanism the chapter teaches, not a neighbouring idea with similar vocabulary.
+
+Nothing in the stem contradicts that reading, so the assertion stands as a correct application of the definition.
+
+The statement is true.
+', 'TRUE — When a resource can serve only one use at a time — a person’s hours, a crew, a machine, a maintenance window — it must be allocated among competing uses. That allocation problem is what economising answers, for households, firms, and governments alike.
+
+One large room for one morning cannot fully host both the client workshop and internal training without trade-offs — a scarce resource.
+
+Map that definition onto the case where a coworking hub assigning its only large meeting room either to a client workshop or to an internal training session. The claim’s actors and constraints line up with the concept: the sentence describes the same mechanism the chapter teaches, not a neighbouring idea with similar vocabulary.
+
+The sentence therefore reports the concept accurately for this item once the definition is held fixed.
+
+The statement is true.
+', 'TRUE — When a resource can serve only one use at a time — a person’s hours, a crew, a machine, a maintenance window — it must be allocated among competing uses. That allocation problem is what economising answers, for households, firms, and governments alike.
+
+Assigning the room mirrors a firm choosing between two marketing channels: limited capacity, competing uses, opportunity cost.
+
+Map that definition onto the case where a coworking hub assigning its only large meeting room either to a client workshop or to an internal training session. The claim’s actors and constraints (here: firm) line up with the concept: the sentence describes the same mechanism the chapter teaches, not a neighbouring idea with similar vocabulary.
+
+The sentence therefore reports the concept accurately for this item once the definition is held fixed.
+
+The statement is true.
+', 'FALSE — This topic centres on allocating scarce resources among competing uses and measuring opportunity cost as the best forgone alternative.
+
+Client revenue often weighs heavily, but internal training can have real benefits. Revenue does not “automatically” override all internal benefits in every case.
+
+Map that definition onto the case where a coworking hub assigning its only large meeting room either to a client workshop or to an internal training session. Even if the stem mentions related details, those details do not carry the claim’s conclusion — the sentence either widens the concept past its test or attaches the wrong label to the facts.
+
+Absolute wording is the trap: economics definitions leave room for counterexamples — another actor, another scope, a non-money cost, or a public function that still exists. One clear counterexample rejects the sentence.
+
+The statement is false.
+'] WHERE case_id = 'CASE 2.2.46' AND tier = 'full';
+UPDATE public.economics_cases SET tactical_explanations = ARRAY['TRUE — Opportunity cost is the value of the best alternative given up when a choice is made. It is not the cash outlay on the chosen option; it is the tutoring income, experience, leisure, or other project that the choice prevents.
+
+Sending the crew to cherries delays trellis repairs, so storm-damage reduction from timely repairs is forgone — opportunity cost of cherry priority.
+
+Held against the chapter test (here: crew, opportunity cost), each operative word earns its place: the category, the comparison, and the mechanism survive when checked one by one.
+
+The causal link is doing the teaching work — strip it out and the remaining label would be too thin to judge.
+
+The statement is true.
+', 'FALSE — Opportunity cost is the value of the best alternative given up when a choice is made. It is not the cash outlay on the chosen option; it is the tutoring income, experience, leisure, or other project that the choice prevents.
+
+Opportunity cost can be measured in crop saved, risk reduced, or other non-euro benefits — not euros only.
+
+Held against the chapter test (here: Opportunity cost), the familiar vocabulary may sound economic, but the operative restriction or reason fails — so the sentence mislabels the situation.
+
+Absolute wording is the trap: economics definitions leave room for counterexamples — another actor, another scope, a non-money cost, or a public function that still exists. One clear counterexample rejects the sentence.
+
+The statement is false.
+', 'FALSE — Opportunity cost is the value of the best alternative given up when a choice is made. It is not the cash outlay on the chosen option; it is the tutoring income, experience, leisure, or other project that the choice prevents.
+
+Weather may reduce fruit value; it does not automatically make revenue opportunity cost zero in every harvest decision. Early picking can still protect value relative to delay.
+
+Held against the chapter test (here: opportunity cost), the familiar vocabulary may sound economic, but the operative restriction or reason fails — so the sentence mislabels the situation.
+
+Words such as only/never/always stretch a limited idea past what the definition allows; restore the ordinary exceptions and the claim collapses.
+
+The statement is false.
+', 'FALSE — This topic centres on allocating scarce resources among competing uses and measuring opportunity cost as the best forgone alternative.
+
+Rain changes which tasks are feasible; it does not remove scarcity of crew hours before the rain arrives. Pre-rain allocation still matters.
+
+Held against the chapter test (here: scarcity), the familiar vocabulary may sound economic, but the operative restriction or reason fails — so the sentence mislabels the situation.
+
+The because-clause attaches the wrong reason to the label. A real detail (a national programme, a zero wage, shared premises, use of money) does not justify the over-broad conclusion.
+
+The statement is false.
+', 'FALSE — This topic centres on allocating scarce resources among competing uses and measuring opportunity cost as the best forgone alternative.
+
+Farming combines biology with economic allocation of labour, land, and timing. Agricultural decisions are economic as well as biological.
+
+Held against the chapter test, the familiar vocabulary may sound economic, but the operative restriction or reason fails — so the sentence mislabels the situation.
+
+The absolute quantifier is doing the damage. Soften it to the chapter’s actual scope and the remaining content no longer supports a false blanket rule.
+
+The statement is false.
+'] WHERE case_id = 'CASE 2.2.47' AND tier = 'full';
+UPDATE public.economics_cases SET tactical_explanations = ARRAY['TRUE — When a resource can serve only one use at a time — a person’s hours, a crew, a machine, a maintenance window — it must be allocated among competing uses. That allocation problem is what economising answers, for households, firms, and governments alike.
+
+Shorter breaks that free minutes for both ward work and revision stretch a scarce day — economising on time when both tasks matter.
+
+Map that definition onto the case where a trainee nurse choosing between an extra paid ward shift and a revision day before licensing exams. The claim’s actors and constraints line up with the concept: the sentence describes the same mechanism the chapter teaches, not a neighbouring idea with similar vocabulary.
+
+Nothing in the stem contradicts that reading, so the assertion stands as a correct application of the definition.
+
+The statement is true.
+', 'TRUE — Opportunity cost is the value of the best alternative given up when a choice is made. It is not the cash outlay on the chosen option; it is the tutoring income, experience, leisure, or other project that the choice prevents.
+
+Taking the paid shift uses hours that could have been revision, so improved exam readiness from that study time is forgone — opportunity cost of the shift.
+
+Map that definition onto the case where a trainee nurse choosing between an extra paid ward shift and a revision day before licensing exams. The claim’s actors and constraints (here: shift, opportunity cost) line up with the concept: the sentence describes the same mechanism the chapter teaches, not a neighbouring idea with similar vocabulary.
+
+The causal link is doing the teaching work — strip it out and the remaining label would be too thin to judge.
+
+The statement is true.
+', 'FALSE — Opportunity cost is the value of the best alternative given up when a choice is made. It is not the cash outlay on the chosen option; it is the tutoring income, experience, leisure, or other project that the choice prevents.
+
+Trainees face opportunity cost on personal time without company registration being required.
+
+Map that definition onto the case where a trainee nurse choosing between an extra paid ward shift and a revision day before licensing exams. Even if the stem mentions related details (here: Opportunity cost), those details do not carry the claim’s conclusion — the sentence either widens the concept past its test or attaches the wrong label to the facts.
+
+Absolute wording is the trap: economics definitions leave room for counterexamples — another actor, another scope, a non-money cost, or a public function that still exists. One clear counterexample rejects the sentence.
+
+The statement is false.
+', 'FALSE — Opportunity cost is the value of the best alternative given up when a choice is made. It is not the cash outlay on the chosen option; it is the tutoring income, experience, leisure, or other project that the choice prevents.
+
+Licensing may be a professional need, but exam prep still forgoes paid-shift income (or leisure). Need status does not zero opportunity cost.
+
+Map that definition onto the case where a trainee nurse choosing between an extra paid ward shift and a revision day before licensing exams. Even if the stem mentions related details (here: opportunity cost), those details do not carry the claim’s conclusion — the sentence either widens the concept past its test or attaches the wrong label to the facts.
+
+Absolute wording is the trap: economics definitions leave room for counterexamples — another actor, another scope, a non-money cost, or a public function that still exists. One clear counterexample rejects the sentence.
+
+The statement is false.
+', 'FALSE — When a resource can serve only one use at a time — a person’s hours, a crew, a machine, a maintenance window — it must be allocated among competing uses. That allocation problem is what economising answers, for households, firms, and governments alike.
+
+Sundays recur on the calendar; each Sunday’s hours remain finite. Recurrence does not make hours unlimited.
+
+Map that definition onto the case where a trainee nurse choosing between an extra paid ward shift and a revision day before licensing exams. Even if the stem mentions related details, those details do not carry the claim’s conclusion — the sentence either widens the concept past its test or attaches the wrong label to the facts.
+
+Restore the textbook test and the assertion falls away: it mislabels the category or reverses the comparison the chapter actually teaches.
+
+The statement is false.
+'] WHERE case_id = 'CASE 2.2.48' AND tier = 'full';
+UPDATE public.economics_cases SET tactical_explanations = ARRAY['TRUE — Opportunity cost is the value of the best alternative given up when a choice is made. It is not the cash outlay on the chosen option; it is the tutoring income, experience, leisure, or other project that the choice prevents.
+
+Choosing free park time over a paid shift forgoes wages those hours could have earned — opportunity cost without a park ticket price.
+
+Held against the chapter test (here: shift, wage, opportunity cost), each operative word earns its place: the category, the comparison, and the mechanism survive when checked one by one.
+
+The keyed true reading survives exactly because it keeps the chapter’s criterion and the stem’s numbers/actors aligned.
+
+The statement is true.
+', 'TRUE — Opportunity cost is the value of the best alternative given up when a choice is made. It is not the cash outlay on the chosen option; it is the tutoring income, experience, leisure, or other project that the choice prevents.
+
+Name the chosen option and the next-best option side by side; the opportunity cost is whatever benefit sits with the option not taken — income, experience, output, or leisure — not the invoice paid for the chosen path. Focus points: opportunity cost.
+
+Held against the chapter test (here: opportunity cost), each operative word earns its place: the category, the comparison, and the mechanism survive when checked one by one.
+
+If you replaced the key term with its neighbour (accounting outlay, micro/macro swap, movement vs shift), the sentence would stop matching the stem — that contrast locks the idea.
+
+The statement is true.
+', 'TRUE — When a resource can serve only one use at a time — a person’s hours, a crew, a machine, a maintenance window — it must be allocated among competing uses. That allocation problem is what economising answers, for households, firms, and governments alike.
+
+A fixed garden area split between vegetables and flowers is scarce land allocation — scarcity of space, not only of cash.
+
+Held against the chapter test, each operative word earns its place: the category, the comparison, and the mechanism survive when checked one by one.
+
+Under that classification the claim describes the situation correctly rather than a lookalike category.
+
+The statement is true.
+', 'TRUE — When a resource can serve only one use at a time — a person’s hours, a crew, a machine, a maintenance window — it must be allocated among competing uses. That allocation problem is what economising answers, for households, firms, and governments alike.
+
+Economising is required whenever resources are scarce, whatever the resource type — money, land, time, or beds.
+
+Held against the chapter test, each operative word earns its place: the category, the comparison, and the mechanism survive when checked one by one.
+
+The sentence therefore reports the concept accurately for this item once the definition is held fixed.
+
+The statement is true.
+', 'TRUE — Opportunity cost is the value of the best alternative given up when a choice is made. It is not the cash outlay on the chosen option; it is the tutoring income, experience, leisure, or other project that the choice prevents.
+
+One specialist nurse cannot cover two wards fully at once. Administrators face time scarcity and opportunity cost between wards.
+
+Held against the chapter test (here: scarcity, opportunity cost), each operative word earns its place: the category, the comparison, and the mechanism survive when checked one by one.
+
+If you replaced the key term with its neighbour (accounting outlay, micro/macro swap, movement vs shift), the sentence would stop matching the stem — that contrast locks the idea.
+
+The statement is true.
+'] WHERE case_id = 'CASE 2.2.49' AND tier = 'full';
+UPDATE public.economics_cases SET tactical_explanations = ARRAY['TRUE — When a resource can serve only one use at a time — a person’s hours, a crew, a machine, a maintenance window — it must be allocated among competing uses. That allocation problem is what economising answers, for households, firms, and governments alike.
+
+Nine hundred euros cannot fully fund new kits and fridge repair if both claim the whole sum. The club fund is limited between those uses. $$900\text{ euros}$$ binds.
+
+Map that definition onto the case where a youth club treasurer allocating 900 euros between new football kits and repairing the kitchen fridge. The claim’s actors and constraints line up with the concept: the sentence describes the same mechanism the chapter teaches, not a neighbouring idea with similar vocabulary.
+
+The sentence therefore reports the concept accurately for this item once the definition is held fixed.
+
+The statement is true.
+', 'TRUE — Opportunity cost is the value of the best alternative given up when a choice is made. It is not the cash outlay on the chosen option; it is the tutoring income, experience, leisure, or other project that the choice prevents.
+
+Buying kits leaves the fridge broken, so food-storage benefits from repair are forgone — opportunity cost of kits.
+
+Map that definition onto the case where a youth club treasurer allocating 900 euros between new football kits and repairing the kitchen fridge. The claim’s actors and constraints (here: opportunity cost) line up with the concept: the sentence describes the same mechanism the chapter teaches, not a neighbouring idea with similar vocabulary.
+
+Keep the reason clause: it names why the classification holds (forgone alternative, scope of analysis, price signal, or institutional rule) rather than restating the conclusion alone.
+
+The statement is true.
+', 'TRUE — Opportunity cost is the value of the best alternative given up when a choice is made. It is not the cash outlay on the chosen option; it is the tutoring income, experience, leisure, or other project that the choice prevents.
+
+Repairing the fridge forgoes training benefits from new kits — opportunity cost of repair.
+
+Map that definition onto the case where a youth club treasurer allocating 900 euros between new football kits and repairing the kitchen fridge. The claim’s actors and constraints (here: opportunity cost) line up with the concept: the sentence describes the same mechanism the chapter teaches, not a neighbouring idea with similar vocabulary.
+
+Keep the reason clause: it names why the classification holds (forgone alternative, scope of analysis, price signal, or institutional rule) rather than restating the conclusion alone.
+
+The statement is true.
+', 'FALSE — This topic centres on allocating scarce resources among competing uses and measuring opportunity cost as the best forgone alternative.
+
+Nonprofit and charitable clubs still allocate limited euros under scarcity. Charitable purpose does not make budgets non-economic.
+
+Map that definition onto the case where a youth club treasurer allocating 900 euros between new football kits and repairing the kitchen fridge. Even if the stem mentions related details, those details do not carry the claim’s conclusion — the sentence either widens the concept past its test or attaches the wrong label to the facts.
+
+Restore the textbook test and the assertion falls away: it mislabels the category or reverses the comparison the chapter actually teaches.
+
+The statement is false.
+', 'FALSE — Opportunity cost is the value of the best alternative given up when a choice is made. It is not the cash outlay on the chosen option; it is the tutoring income, experience, leisure, or other project that the choice prevents.
+
+The invoice total is the outlay for the chosen item. Opportunity cost is the benefit of the option not funded — not the invoice itself.
+
+Map that definition onto the case where a youth club treasurer allocating 900 euros between new football kits and repairing the kitchen fridge. Even if the stem mentions related details (here: Opportunity cost), those details do not carry the claim’s conclusion — the sentence either widens the concept past its test or attaches the wrong label to the facts.
+
+Restore the textbook test and the assertion falls away: it mislabels the category or reverses the comparison the chapter actually teaches.
+
+The statement is false.
+'] WHERE case_id = 'CASE 2.2.50' AND tier = 'full';

@@ -1,794 +1,1180 @@
 -- Update expanded explanations for 6.4-part1 (25 cases).
 -- Safe to re-run: only updates tactical_explanations.
 
-UPDATE public.economics_cases SET tactical_explanations = ARRAY['FALSE — This statement is false. Depreciation each year requires an equal cash payment to an outside party when the charge is recorded.
+UPDATE public.economics_cases SET tactical_explanations = ARRAY['FALSE — Short extracts still obey the same classification and measurement rules: current ratio, equity ratio, working capital, and straight-line depreciation (cost minus residual, spread over useful life).
 
-This is an accounting reasoning item on financial versus management accounting. Decide whether the sentence correctly describes how a transaction, balance-sheet line, or period result affects assets, liabilities, or equity.
+Absolute or misapplied wording conflicts with the rule for "Short Balance Sheet Extract 1". Short extracts still obey the same classification and measurement rules: current ratio, equity ratio, working capital, and straight-line depreciation (cost minus residual, spread over useful life). Rejected claim: "Depreciation each year requires an equal cash payment to an outside party when the charge is recorded."
 
-From the figures or classification rule involved, depreciation is non-cash; the cash was usually paid when the asset was bought. Accounting statements fail when a loss is treated as increasing equity, when a flow is placed on the balance sheet, or when a ratio inequality is reversed.
+The statement is false.', 'TRUE — The current ratio is the standard liquidity cover of current assets over current liabilities.
 
-Once the overclaim or mislabel is exposed, the only consistent answer is false.', 'TRUE — On the Fuhrmann definition used in the entrance exam, the sentence is correct. The current ratio exceeds 1.27.
+Name the identity in words: current ratio = current assets ÷ current liabilities.
 
-The underlying topic is financial versus management accounting. When figures appear, the exam checks whether you can interpret them in accounting terms—what increased, what ratio is implied, and whether the label (current, non-current, equity, and so on) fits.
+Build current assets and current liabilities from the extract:
 
-Apply the case evidence: Current ratio ≈ 3.75. Check whether the direction of change (higher/lower, above/below the threshold) matches what the statement asserts.
+$$
+CA = 65 + 0 + 55 = 120
+$$
 
-Every part of the claim aligns with the standard concept, so the statement stands.', 'TRUE — This statement is correct. Inventory of €65 thousand is correctly classified as a current asset.
+$$
+CL = 32 + 0 = 32
+$$
 
-This item belongs to the accounting block on financial versus management accounting. Ratio and classification questions ask you to connect a figure or comparison in the case with the correct statement category, not merely to recognise a number.
+$$
+\text{Current ratio} = \frac{120}{32} = 3.7500
+$$
 
-From the figures or classification rule involved, inventory is always current. Accounting statements fail when a loss is treated as increasing equity, when a flow is placed on the balance sheet, or when a ratio inequality is reversed.
+Claimed: exceeds 1.27. Actual 3.75.
 
-Every part of the claim aligns with the standard concept, so the statement stands.', 'TRUE — This statement is correct. A published version of the extract above, showing total assets of €320 thousand, is an example of external financial reporting that a lender might study before extending credit.
+Reading the arithmetic against the claim: actual current ratio 3.75 versus ''exceeds 1.27'' so the statement holds.
 
-This item belongs to the accounting block on financial versus management accounting. Ratio and classification questions ask you to connect a figure or comparison in the case with the correct statement category, not merely to recognise a number.
+The statement is true.', 'TRUE — Inventory is held for sale or for consumption in the operating cycle.
 
-From the figures or classification rule involved, financial accounting reports are prepared for external users such as lenders and shareholders. Accounting statements fail when a loss is treated as increasing equity, when a flow is placed on the balance sheet, or when a ratio inequality is reversed.
+On the balance sheet that places inventory among current assets. It is not an intangible (no physical stock for sale) and not a non-current operating asset (those are used in the business beyond one year rather than turned over as stock).
 
-The reasoning chain is complete, so mark the statement true.', 'TRUE — This statement is correct. An independent audit of the extract above, including the total assets of €320 thousand, aims to give reasonable assurance that the figures are free from material misstatement, not an absolute guarantee.
+Applied to this stem: "Inventory of €65 thousand is correctly classified as a current asset."
 
-This item belongs to the accounting block on financial versus management accounting. Ratio and classification questions ask you to connect a figure or comparison in the case with the correct statement category, not merely to recognise a number.
+The statement is true.', 'TRUE — Financial accounting reports for external users; management accounting is internal.
 
-From the figures or classification rule involved, audits provide reasonable, not absolute, assurance. Accounting statements fail when a loss is treated as increasing equity, when a flow is placed on the balance sheet, or when a ratio inequality is reversed.
+A published extract for lenders or shareholders is financial accounting by purpose and audience.
 
-The reasoning chain is complete, so mark the statement true.'] WHERE case_id = 'CASE 6.4.001' AND tier = 'full';
-UPDATE public.economics_cases SET tactical_explanations = ARRAY['TRUE — The claim is correct. Owners of a manufacturer are users outside day-to-day management, so they mainly rely on the business''s published financial accounting statements.
+Using the stem facts: "A published version of the extract above, showing total assets of €320 thousand, is an example of external financial reporting that a lender might study before extending credit."
 
-The task tests financial versus management accounting. Financial statements distinguish stocks (balance sheet at a date) from flows (income and cash over a period); many false statements swap those roles.
+Short extracts still obey the same classification and measurement rules: current ratio, equity ratio, working capital, and straight-line depreciation (cost minus residual, spread over useful life).
 
-Apply the case evidence: Owners sit outside daily management and depend on financial accounting rather than internal management reports. Check whether the direction of change (higher/lower, above/below the threshold) matches what the statement asserts.
+The statement is true.', 'TRUE — Audits provide reasonable assurance, not absolute certainty.
 
-The reasoning chain is complete, so mark the statement true.', 'FALSE — This statement is false. Owners of a manufacturer are internal users who receive management accounting reports every week, in the same way as its own managers.
+The auditor''s opinion addresses the risk of material misstatement in the financial statements. It is not a guarantee that every figure is exact or that the business will prosper.
 
-This is an accounting reasoning item on financial versus management accounting. Decide whether the sentence correctly describes how a transaction, balance-sheet line, or period result affects assets, liabilities, or equity.
+Applied to this stem: "An independent audit of the extract above, including the total assets of €320 thousand, aims to give reasonable assurance that the figures are free from material misstatement, not an absolute guarantee."
 
-From the figures or classification rule involved, owners are external users who rely on annual financial accounting, not weekly internal management reports. Accounting statements fail when a loss is treated as increasing equity, when a flow is placed on the balance sheet, or when a ratio inequality is reversed.
+The statement is true.'] WHERE case_id = 'CASE 6.4.001' AND tier = 'full';
+UPDATE public.economics_cases SET tactical_explanations = ARRAY['TRUE — Short extracts still obey the same classification and measurement rules: current ratio, equity ratio, working capital, and straight-line depreciation (cost minus residual, spread over useful life).
 
-Watch the absolute wording "every": exam statements often sound plausible until a single scope word turns an otherwise familiar idea into an overclaim.
+The wording matches the relevant rule for "Financial Accounting and External Users". Short extracts still obey the same classification and measurement rules: current ratio, equity ratio, working capital, and straight-line depreciation (cost minus residual, spread over useful life). Applied here: "Owners of a manufacturer are users outside day-to-day management, so they mainly rely on the business''s published financial accounting statements."
 
-The statement sounds plausible but fails on precision, so it is false.', 'TRUE — Evaluated against the textbook standard, this assertion is correct. Owners of a manufacturer normally receive formal accounting information no more often than once a year, when the financial accounting statements are published.
+The statement is true.', 'FALSE — Short extracts still obey the same classification and measurement rules: current ratio, equity ratio, working capital, and straight-line depreciation (cost minus residual, spread over useful life).
 
-This is an accounting reasoning item on financial versus management accounting. Decide whether the sentence correctly describes how a transaction, balance-sheet line, or period result affects assets, liabilities, or equity.
+Absolute or misapplied wording conflicts with the rule for "Financial Accounting and External Users". Short extracts still obey the same classification and measurement rules: current ratio, equity ratio, working capital, and straight-line depreciation (cost minus residual, spread over useful life). Rejected claim: "Owners of a manufacturer are internal users who receive management accounting reports every week, in the same way as its own managers."
 
-From the figures or classification rule involved, financial accounting statements reach external users such as owners on the statutory annual cycle. Accounting statements fail when a loss is treated as increasing equity, when a flow is placed on the balance sheet, or when a ratio inequality is reversed.
+The statement is false.', 'TRUE — Short extracts still obey the same classification and measurement rules: current ratio, equity ratio, working capital, and straight-line depreciation (cost minus residual, spread over useful life).
 
-Every part of the claim aligns with the standard concept, so the statement stands.', 'FALSE — Evaluated against the textbook standard, this assertion is false. Owners of a manufacturer base their judgement mainly on informal notes prepared for its managers rather than on the published financial statements.
+The wording matches the relevant rule for "Financial Accounting and External Users". Short extracts still obey the same classification and measurement rules: current ratio, equity ratio, working capital, and straight-line depreciation (cost minus residual, spread over useful life). Applied here: "Owners of a manufacturer normally receive formal accounting information no more often than once a year, when the financial accounting statements are published."
 
-This is an accounting reasoning item on financial versus management accounting. Decide whether the sentence correctly describes how a transaction, balance-sheet line, or period result affects assets, liabilities, or equity.
+The statement is true.', 'FALSE — Short extracts still obey the same classification and measurement rules: current ratio, equity ratio, working capital, and straight-line depreciation (cost minus residual, spread over useful life).
 
-From the figures or classification rule involved, owners typically rely on published financial accounting statements, not informal internal notes. Accounting statements fail when a loss is treated as increasing equity, when a flow is placed on the balance sheet, or when a ratio inequality is reversed.
+Absolute or misapplied wording conflicts with the rule for "Financial Accounting and External Users". Short extracts still obey the same classification and measurement rules: current ratio, equity ratio, working capital, and straight-line depreciation (cost minus residual, spread over useful life). Rejected claim: "Owners of a manufacturer base their judgement mainly on informal notes prepared for its managers rather than on the published financial statements."
 
-The statement sounds plausible but fails on precision, so it is false.', 'FALSE — On the Fuhrmann definition used in the entrance exam, the sentence is false. Managers of a manufacturer are not allowed to see any accounting information more often than the once-a-year published financial statements.
+The statement is false.', 'FALSE — Short extracts still obey the same classification and measurement rules: current ratio, equity ratio, working capital, and straight-line depreciation (cost minus residual, spread over useful life).
 
-The task tests financial versus management accounting. Financial statements distinguish stocks (balance sheet at a date) from flows (income and cash over a period); many false statements swap those roles.
+Absolute or misapplied wording conflicts with the rule for "Financial Accounting and External Users". Short extracts still obey the same classification and measurement rules: current ratio, equity ratio, working capital, and straight-line depreciation (cost minus residual, spread over useful life). Rejected claim: "Managers of a manufacturer are not allowed to see any accounting information more often than the once-a-year published financial statements."
 
-Apply the case evidence: Internal users such as managers can receive management accounting far more often than the annual financial statements. Check whether the direction of change (higher/lower, above/below the threshold) matches what the statement asserts.
+The statement is false.'] WHERE case_id = 'CASE 6.4.002' AND tier = 'full';
+UPDATE public.economics_cases SET tactical_explanations = ARRAY['TRUE — Land has an indefinite useful life and is not depreciated.
 
-Because the decisive detail is wrong, mark the statement false.'] WHERE case_id = 'CASE 6.4.002' AND tier = 'full';
-UPDATE public.economics_cases SET tactical_explanations = ARRAY['TRUE — The claim is correct. Land is not subject to depreciation because it does not wear out through use the way buildings and machinery do.
+Unlike buildings and machinery, land does not wear out through ordinary use. Therefore land stays at cost (subject to impairment rules) without a systematic depreciation charge each year.
 
-The task tests financial versus management accounting. Financial statements distinguish stocks (balance sheet at a date) from flows (income and cash over a period); many false statements swap those roles.
+Applied to this stem: "Land is not subject to depreciation because it does not wear out through use the way buildings and machinery do."
 
-Apply the case evidence: Land is normally excluded from depreciation. Check whether the direction of change (higher/lower, above/below the threshold) matches what the statement asserts.
+The statement is true.', 'TRUE — Depreciable amount = cost − residual value.
 
-No qualifying word breaks the definition or scenario, so the answer is true.', 'TRUE — The claim is correct. Residual value reduces the amount of Asset B''s cost that is spread as depreciation.
+A positive residual reduces what is spread over useful life, so annual straight-line charges are lower than if residual were nil. That is why residual is deducted before dividing by life.
 
-The task tests financial versus management accounting. Financial statements distinguish stocks (balance sheet at a date) from flows (income and cash over a period); many false statements swap those roles.
+Applied to this stem: "Residual value reduces the amount of Asset B''s cost that is spread as depreciation."
 
-Apply the case evidence: Depreciable amount = cost minus residual value. Check whether the direction of change (higher/lower, above/below the threshold) matches what the statement asserts.
+The statement is true.', 'TRUE — Nil residual means carrying value reaches zero at the end of useful life.
 
-No qualifying word breaks the definition or scenario, so the answer is true.', 'TRUE — On the Fuhrmann definition used in the entrance exam, the sentence is correct. Asset A will be fully written down to nil residual value at the end of its useful life.
+Once the full cost has been allocated over the asset''s life, book value is nil when residual is nil. That is the accounting end-state of straight-line depreciation with a zero residual.
 
-The task tests financial versus management accounting. Financial statements distinguish stocks (balance sheet at a date) from flows (income and cash over a period); many false statements swap those roles.
+Applied to this stem: "Asset A will be fully written down to nil residual value at the end of its useful life."
 
-Apply the case evidence: Asset A has no residual value. Check whether the direction of change (higher/lower, above/below the threshold) matches what the statement asserts.
+The statement is true.', 'FALSE — Single-year statements are routinely used, often with comparatives.
 
-The reasoning chain is complete, so mark the statement true.', 'FALSE — Evaluated against the textbook standard, this assertion is false. Because the extract above (the combined asset cost of €99,000 thousand) covers only one financial year, external users such as shareholders could not rely on it at all.
+One year limits trends but does not make the extract useless to external users.
 
-This item belongs to the accounting block on financial versus management accounting. Ratio and classification questions ask you to connect a figure or comparison in the case with the correct statement category, not merely to recognise a number.
+Using the stem facts: "Because the extract above (the combined asset cost of €99,000 thousand) covers only one financial year, external users such as shareholders could not rely on it at all."
 
-From the figures or classification rule involved, external users routinely rely on single-year financial statements, often alongside prior-year comparatives. Accounting statements fail when a loss is treated as increasing equity, when a flow is placed on the balance sheet, or when a ratio inequality is reversed.
+Short extracts still obey the same classification and measurement rules: current ratio, equity ratio, working capital, and straight-line depreciation (cost minus residual, spread over useful life).
 
-Watch the absolute wording "all": exam statements often sound plausible until a single scope word turns an otherwise familiar idea into an overclaim.
+The statement is false.', 'FALSE — Management reports are not bound to the statutory published format.
 
-Once the overclaim or mislabel is exposed, the only consistent answer is false.', 'FALSE — The claim is false. Internal management reports covering the same period as the extract above (the combined asset cost of €99,000 thousand) must follow the identical statutory format shown here.
+Internal management accounts may use whatever layout, detail, and frequency managers need. Statutory formats govern published financial statements, not internal packs.
 
-The underlying topic is financial versus management accounting. When figures appear, the exam checks whether you can interpret them in accounting terms—what increased, what ratio is implied, and whether the label (current, non-current, equity, and so on) fits.
+Applied to this stem: "Internal management reports covering the same period as the extract above (the combined asset cost of €99,000 thousand) must follow the identical statutory format shown here."
 
-Apply the case evidence: Management accounting reports are flexible and internal; they are not bound by the statutory format of published financial statements. Check whether the direction of change (higher/lower, above/below the threshold) matches what the statement asserts.
+The statement is false.'] WHERE case_id = 'CASE 6.4.003' AND tier = 'full';
+UPDATE public.economics_cases SET tactical_explanations = ARRAY['FALSE — Short extracts still obey the same classification and measurement rules: current ratio, equity ratio, working capital, and straight-line depreciation (cost minus residual, spread over useful life).
 
-The statement sounds plausible but fails on precision, so it is false.'] WHERE case_id = 'CASE 6.4.003' AND tier = 'full';
-UPDATE public.economics_cases SET tactical_explanations = ARRAY['FALSE — This statement is false. Management accounting reports prepared for managers of a manufacturer must use exactly the same statutory format as the published financial statements.
+Absolute or misapplied wording conflicts with the rule for "Management Accounting for Internal Users". Short extracts still obey the same classification and measurement rules: current ratio, equity ratio, working capital, and straight-line depreciation (cost minus residual, spread over useful life). Rejected claim: "Management accounting reports prepared for managers of a manufacturer must use exactly the same statutory format as the published financial statements."
 
-This is an accounting reasoning item on financial versus management accounting. Decide whether the sentence correctly describes how a transaction, balance-sheet line, or period result affects assets, liabilities, or equity.
+The statement is false.', 'TRUE — Short extracts still obey the same classification and measurement rules: current ratio, equity ratio, working capital, and straight-line depreciation (cost minus residual, spread over useful life).
 
-From the figures or classification rule involved, management accounting for internal users such as managers is not tied to the statutory format used for financial accounting. Accounting statements fail when a loss is treated as increasing equity, when a flow is placed on the balance sheet, or when a ratio inequality is reversed.
+The wording matches the relevant rule for "Management Accounting for Internal Users". Short extracts still obey the same classification and measurement rules: current ratio, equity ratio, working capital, and straight-line depreciation (cost minus residual, spread over useful life). Applied here: "Lenders of a manufacturer are users outside day-to-day management, so they mainly rely on the business''s published financial accounting statements."
 
-Because the decisive detail is wrong, mark the statement false.', 'TRUE — Evaluated against the textbook standard, this assertion is correct. Lenders of a manufacturer are users outside day-to-day management, so they mainly rely on the business''s published financial accounting statements.
+The statement is true.', 'TRUE — Short extracts still obey the same classification and measurement rules: current ratio, equity ratio, working capital, and straight-line depreciation (cost minus residual, spread over useful life).
 
-This is an accounting reasoning item on financial versus management accounting. Decide whether the sentence correctly describes how a transaction, balance-sheet line, or period result affects assets, liabilities, or equity.
+The wording matches the relevant rule for "Management Accounting for Internal Users". Short extracts still obey the same classification and measurement rules: current ratio, equity ratio, working capital, and straight-line depreciation (cost minus residual, spread over useful life). Applied here: "Lenders of a manufacturer normally receive formal accounting information no more often than once a year, when the financial accounting statements are published."
 
-From the figures or classification rule involved, lenders sit outside daily management and depend on financial accounting rather than internal management reports. Accounting statements fail when a loss is treated as increasing equity, when a flow is placed on the balance sheet, or when a ratio inequality is reversed.
+The statement is true.', 'FALSE — Short extracts still obey the same classification and measurement rules: current ratio, equity ratio, working capital, and straight-line depreciation (cost minus residual, spread over useful life).
 
-No qualifying word breaks the definition or scenario, so the answer is true.', 'TRUE — Evaluated against the textbook standard, this assertion is correct. Lenders of a manufacturer normally receive formal accounting information no more often than once a year, when the financial accounting statements are published.
+Absolute or misapplied wording conflicts with the rule for "Management Accounting for Internal Users". Short extracts still obey the same classification and measurement rules: current ratio, equity ratio, working capital, and straight-line depreciation (cost minus residual, spread over useful life). Rejected claim: "Employees of a manufacturer are not allowed to see any accounting information more often than the once-a-year published financial statements."
 
-This is an accounting reasoning item on financial versus management accounting. Decide whether the sentence correctly describes how a transaction, balance-sheet line, or period result affects assets, liabilities, or equity.
+The statement is false.', 'TRUE — Short extracts still obey the same classification and measurement rules: current ratio, equity ratio, working capital, and straight-line depreciation (cost minus residual, spread over useful life).
 
-From the figures or classification rule involved, financial accounting statements reach external users such as lenders on the statutory annual cycle. Accounting statements fail when a loss is treated as increasing equity, when a flow is placed on the balance sheet, or when a ratio inequality is reversed.
+The wording matches the relevant rule for "Management Accounting for Internal Users". Short extracts still obey the same classification and measurement rules: current ratio, equity ratio, working capital, and straight-line depreciation (cost minus residual, spread over useful life). Applied here: "Managers of a manufacturer work inside the business and can be given management accounting reports designed around their own questions."
 
-The reasoning chain is complete, so mark the statement true.', 'FALSE — Evaluated against the textbook standard, this assertion is false. Employees of a manufacturer are not allowed to see any accounting information more often than the once-a-year published financial statements.
+The statement is true.'] WHERE case_id = 'CASE 6.4.004' AND tier = 'full';
+UPDATE public.economics_cases SET tactical_explanations = ARRAY['FALSE — Short extracts still obey the same classification and measurement rules: current ratio, equity ratio, working capital, and straight-line depreciation (cost minus residual, spread over useful life).
 
-This is an accounting reasoning item on financial versus management accounting. Decide whether the sentence correctly describes how a transaction, balance-sheet line, or period result affects assets, liabilities, or equity.
+Absolute or misapplied wording conflicts with the rule for "Owners Weighing Return Against Risk". Short extracts still obey the same classification and measurement rules: current ratio, equity ratio, working capital, and straight-line depreciation (cost minus residual, spread over useful life). Rejected claim: "Management accounting reports prepared for employees of a manufacturer must use exactly the same statutory format as the published financial statements."
 
-From the figures or classification rule involved, internal users such as employees can receive management accounting far more often than the annual financial statements. Accounting statements fail when a loss is treated as increasing equity, when a flow is placed on the balance sheet, or when a ratio inequality is reversed.
+The statement is false.', 'TRUE — Short extracts still obey the same classification and measurement rules: current ratio, equity ratio, working capital, and straight-line depreciation (cost minus residual, spread over useful life).
 
-Because the decisive detail is wrong, mark the statement false.', 'TRUE — Evaluated against the textbook standard, this assertion is correct. Managers of a manufacturer work inside the business and can be given management accounting reports designed around their own questions.
+The wording matches the relevant rule for "Owners Weighing Return Against Risk". Short extracts still obey the same classification and measurement rules: current ratio, equity ratio, working capital, and straight-line depreciation (cost minus residual, spread over useful life). Applied here: "Managers of a manufacturer can be supplied with management accounting figures weekly or monthly, well before the annual financial accounting statements are finalised."
 
-This is an accounting reasoning item on financial versus management accounting. Decide whether the sentence correctly describes how a transaction, balance-sheet line, or period result affects assets, liabilities, or equity.
+The statement is true.', 'TRUE — Short extracts still obey the same classification and measurement rules: current ratio, equity ratio, working capital, and straight-line depreciation (cost minus residual, spread over useful life).
 
-From the figures or classification rule involved, managers are internal users who can receive management accounting tailored to their needs. Accounting statements fail when a loss is treated as increasing equity, when a flow is placed on the balance sheet, or when a ratio inequality is reversed.
+The wording matches the relevant rule for "Owners Weighing Return Against Risk". Short extracts still obey the same classification and measurement rules: current ratio, equity ratio, working capital, and straight-line depreciation (cost minus residual, spread over useful life). Applied here: "Reports prepared for managers of a manufacturer can be laid out however suits the decision at hand, unlike the standardised format required of financial accounting statements."
 
-The reasoning chain is complete, so mark the statement true.'] WHERE case_id = 'CASE 6.4.004' AND tier = 'full';
-UPDATE public.economics_cases SET tactical_explanations = ARRAY['FALSE — On the Fuhrmann definition used in the entrance exam, the sentence is false. Management accounting reports prepared for employees of a manufacturer must use exactly the same statutory format as the published financial statements.
+The statement is true.', 'TRUE — Short extracts still obey the same classification and measurement rules: current ratio, equity ratio, working capital, and straight-line depreciation (cost minus residual, spread over useful life).
 
-The task tests financial versus management accounting. Financial statements distinguish stocks (balance sheet at a date) from flows (income and cash over a period); many false statements swap those roles.
+The wording matches the relevant rule for "Owners Weighing Return Against Risk". Short extracts still obey the same classification and measurement rules: current ratio, equity ratio, working capital, and straight-line depreciation (cost minus residual, spread over useful life). Applied here: "Employees of a manufacturer work inside the business and can be given management accounting reports designed around their own questions."
 
-Apply the case evidence: Management accounting for internal users such as employees is not tied to the statutory format used for financial accounting. Check whether the direction of change (higher/lower, above/below the threshold) matches what the statement asserts.
+The statement is true.', 'TRUE — Short extracts still obey the same classification and measurement rules: current ratio, equity ratio, working capital, and straight-line depreciation (cost minus residual, spread over useful life).
 
-Because the decisive detail is wrong, mark the statement false.', 'TRUE — On the Fuhrmann definition used in the entrance exam, the sentence is correct. Managers of a manufacturer can be supplied with management accounting figures weekly or monthly, well before the annual financial accounting statements are finalised.
+The wording matches the relevant rule for "Owners Weighing Return Against Risk". Short extracts still obey the same classification and measurement rules: current ratio, equity ratio, working capital, and straight-line depreciation (cost minus residual, spread over useful life). Applied here: "Owners of a manufacturer look at accounting information mainly to judge the return earned on the capital they have invested."
 
-The task tests financial versus management accounting. Financial statements distinguish stocks (balance sheet at a date) from flows (income and cash over a period); many false statements swap those roles.
+The statement is true.'] WHERE case_id = 'CASE 6.4.005' AND tier = 'full';
+UPDATE public.economics_cases SET tactical_explanations = ARRAY['TRUE — Short extracts still obey the same classification and measurement rules: current ratio, equity ratio, working capital, and straight-line depreciation (cost minus residual, spread over useful life).
 
-Apply the case evidence: Management accounting can reach internal users such as managers far more frequently than annual financial accounting. Check whether the direction of change (higher/lower, above/below the threshold) matches what the statement asserts.
+The wording matches the relevant rule for "Liquidity From the Balance Sheet 6". Short extracts still obey the same classification and measurement rules: current ratio, equity ratio, working capital, and straight-line depreciation (cost minus residual, spread over useful life). Applied here: "Managerial accounting focuses on providing information for the management of the business to support decisions such as where to cut costs and how to calculate prices."
 
-Every part of the claim aligns with the standard concept, so the statement stands.', 'TRUE — On the Fuhrmann definition used in the entrance exam, the sentence is correct. Reports prepared for managers of a manufacturer can be laid out however suits the decision at hand, unlike the standardised format required of financial accounting statements.
+The statement is true.', 'TRUE — The current ratio is the standard liquidity cover of current assets over current liabilities.
 
-The task tests financial versus management accounting. Financial statements distinguish stocks (balance sheet at a date) from flows (income and cash over a period); many false statements swap those roles.
+Name the identity in words: current ratio = current assets ÷ current liabilities.
 
-Apply the case evidence: Management accounting for internal users such as managers is flexible in format, unlike statutory financial accounting. Check whether the direction of change (higher/lower, above/below the threshold) matches what the statement asserts.
+Build current assets and current liabilities from the extract:
 
-No qualifying word breaks the definition or scenario, so the answer is true.', 'TRUE — On the Fuhrmann definition used in the entrance exam, the sentence is correct. Employees of a manufacturer work inside the business and can be given management accounting reports designed around their own questions.
+$$
+CA = 192 + 115 + 102 = 409
+$$
 
-The task tests financial versus management accounting. Financial statements distinguish stocks (balance sheet at a date) from flows (income and cash over a period); many false statements swap those roles.
+$$
+CL = 170 + 35 = 205
+$$
 
-Apply the case evidence: Employees are internal users who can receive management accounting tailored to their needs. Check whether the direction of change (higher/lower, above/below the threshold) matches what the statement asserts.
+$$
+\text{Current ratio} = \frac{409}{205} = 1.9951
+$$
 
-No qualifying word breaks the definition or scenario, so the answer is true.', 'TRUE — This statement is correct. Owners of a manufacturer look at accounting information mainly to judge the return earned on the capital they have invested.
+Claimed: exceeds 1.34. Actual 2.00.
 
-This is an accounting reasoning item on financial versus management accounting. Decide whether the sentence correctly describes how a transaction, balance-sheet line, or period result affects assets, liabilities, or equity.
+Reading the arithmetic against the claim: actual current ratio 2.00 versus ''exceeds 1.34'' so the statement holds.
 
-From the figures or classification rule involved, owners focus on the return earned on the capital they have invested when they use accounting information. Accounting statements fail when a loss is treated as increasing equity, when a flow is placed on the balance sheet, or when a ratio inequality is reversed.
+The statement is true.', 'TRUE — Working capital is the euro surplus (or deficit) of current assets over current liabilities on this balance sheet.
 
-Every part of the claim aligns with the standard concept, so the statement stands.'] WHERE case_id = 'CASE 6.4.005' AND tier = 'full';
-UPDATE public.economics_cases SET tactical_explanations = ARRAY['TRUE — This statement is correct. Managerial accounting focuses on providing information for the management of the business to support decisions such as where to cut costs and how to calculate prices.
+Name the identity in words: working capital = current assets − current liabilities.
 
-This is an accounting reasoning item on financial versus management accounting. Decide whether the sentence correctly describes how a transaction, balance-sheet line, or period result affects assets, liabilities, or equity.
+From the extract, current assets total 409 and current liabilities total 205:
 
-From the figures or classification rule involved, management accounting serves internal decision makers. Accounting statements fail when a loss is treated as increasing equity, when a flow is placed on the balance sheet, or when a ratio inequality is reversed.
+$$
+WC = CA - CL
+$$
 
-The reasoning chain is complete, so mark the statement true.', 'TRUE — This statement is correct. The current ratio exceeds 1.34.
+$$
+CA = 409, \quad CL = 205
+$$
 
-This item belongs to the accounting block on financial versus management accounting. Ratio and classification questions ask you to connect a figure or comparison in the case with the correct statement category, not merely to recognise a number.
+$$
+WC = 409 - 205 = 204
+$$
 
-From the figures or classification rule involved, current ratio ≈ 2.00. Accounting statements fail when a loss is treated as increasing equity, when a flow is placed on the balance sheet, or when a ratio inequality is reversed.
+The statement cites working capital of €204 thousand and that it is positive. Calculated WC is 204, which is positive.
 
-Every part of the claim aligns with the standard concept, so the statement stands.', 'TRUE — On the Fuhrmann definition used in the entrance exam, the sentence is correct. Working capital of €204 thousand is positive on this balance sheet.
+Reading the arithmetic against the claim: WC = 204 is positive as claimed so the statement holds.
 
-The underlying topic is financial versus management accounting. When figures appear, the exam checks whether you can interpret them in accounting terms—what increased, what ratio is implied, and whether the label (current, non-current, equity, and so on) fits.
+The statement is true.', 'FALSE — The equity ratio places equity against total assets so the financing structure can be judged on one balance sheet.
 
-Apply the case evidence: Working capital = 204. Check whether the direction of change (higher/lower, above/below the threshold) matches what the statement asserts.
+Name the identity in words: equity ratio = equity ÷ total assets.
 
-The reasoning chain is complete, so mark the statement true.', 'FALSE — The claim is false. The equity ratio is below 20%.
+From the extract, equity = 265 and total assets = 964. Plug the figures step by step:
 
-The underlying topic is financial versus management accounting. When figures appear, the exam checks whether you can interpret them in accounting terms—what increased, what ratio is implied, and whether the label (current, non-current, equity, and so on) fits.
+$$
+ER = \frac{\text{equity}}{\text{total assets}}
+$$
 
-Apply the case evidence: Equity ratio ≈ 27.5%. Check whether the direction of change (higher/lower, above/below the threshold) matches what the statement asserts.
+$$
+ER = \frac{265}{964}
+$$
 
-Because the decisive detail is wrong, mark the statement false.', 'TRUE — This statement is correct. The debt ratio exceeds 63.6%.
+$$
+ER = 27.5\%
+$$
 
-This item belongs to the accounting block on financial versus management accounting. Ratio and classification questions ask you to connect a figure or comparison in the case with the correct statement category, not merely to recognise a number.
+Claimed: is below 20%. Actual 27.5%.
 
-From the figures or classification rule involved, debt ratio ≈ 72.5%. Accounting statements fail when a loss is treated as increasing equity, when a flow is placed on the balance sheet, or when a ratio inequality is reversed.
+Reading the arithmetic against the claim: actual equity ratio 27.5% does not match ''is below 20%'' so the statement does not hold.
 
-The reasoning chain is complete, so mark the statement true.'] WHERE case_id = 'CASE 6.4.006' AND tier = 'full';
-UPDATE public.economics_cases SET tactical_explanations = ARRAY['TRUE — The claim is correct. Lenders of a manufacturer look at accounting information mainly to judge whether the business will be able to repay what it owes.
+The statement is false.', 'TRUE — The debt ratio places debt against total assets so the financing structure can be judged on one balance sheet.
 
-The task tests financial versus management accounting. Financial statements distinguish stocks (balance sheet at a date) from flows (income and cash over a period); many false statements swap those roles.
+Name the identity in words: debt ratio = debt ÷ total assets.
 
-Apply the case evidence: Lenders focus on whether the business will be able to repay what it owes when they use accounting information. Check whether the direction of change (higher/lower, above/below the threshold) matches what the statement asserts.
+From the extract, debt = 699 and total assets = 964. Plug the figures step by step:
 
-The reasoning chain is complete, so mark the statement true.', 'TRUE — On the Fuhrmann definition used in the entrance exam, the sentence is correct. Tax authorities of a manufacturer look at accounting information mainly to judge how much tax is due on the business''s profit.
+$$
+DR = \frac{\text{debt}}{\text{total assets}}
+$$
 
-The task tests financial versus management accounting. Financial statements distinguish stocks (balance sheet at a date) from flows (income and cash over a period); many false statements swap those roles.
+$$
+DR = \frac{699}{964}
+$$
 
-Apply the case evidence: Tax authorities focus on how much tax is due on the business''s profit when they use accounting information. Check whether the direction of change (higher/lower, above/below the threshold) matches what the statement asserts.
+$$
+DR = 72.5\%
+$$
 
-No qualifying word breaks the definition or scenario, so the answer is true.', 'TRUE — This statement is correct. Investors of a manufacturer look at accounting information mainly to judge the likely return and risk before committing further capital.
+Claimed: exceeds 63.6%. Actual 72.5%.
 
-This is an accounting reasoning item on financial versus management accounting. Decide whether the sentence correctly describes how a transaction, balance-sheet line, or period result affects assets, liabilities, or equity.
+Reading the arithmetic against the claim: actual debt ratio 72.5% matches ''exceeds 63.6%'' so the statement holds.
 
-From the figures or classification rule involved, investors focus on the likely return and risk before committing further capital when they use accounting information. Accounting statements fail when a loss is treated as increasing equity, when a flow is placed on the balance sheet, or when a ratio inequality is reversed.
+The statement is true.'] WHERE case_id = 'CASE 6.4.006' AND tier = 'full';
+UPDATE public.economics_cases SET tactical_explanations = ARRAY['TRUE — Short extracts still obey the same classification and measurement rules: current ratio, equity ratio, working capital, and straight-line depreciation (cost minus residual, spread over useful life).
 
-Every part of the claim aligns with the standard concept, so the statement stands.', 'TRUE — On the Fuhrmann definition used in the entrance exam, the sentence is correct. Managers of a manufacturer look at accounting information mainly to judge controlling costs and choosing between courses of action.
+The wording matches the relevant rule for "Lenders and Repayment Capacity". Short extracts still obey the same classification and measurement rules: current ratio, equity ratio, working capital, and straight-line depreciation (cost minus residual, spread over useful life). Applied here: "Lenders of a manufacturer look at accounting information mainly to judge whether the business will be able to repay what it owes."
 
-The task tests financial versus management accounting. Financial statements distinguish stocks (balance sheet at a date) from flows (income and cash over a period); many false statements swap those roles.
+The statement is true.', 'TRUE — Short extracts still obey the same classification and measurement rules: current ratio, equity ratio, working capital, and straight-line depreciation (cost minus residual, spread over useful life).
 
-Apply the case evidence: Managers focus on controlling costs and choosing between courses of action when they use accounting information. Check whether the direction of change (higher/lower, above/below the threshold) matches what the statement asserts.
+The wording matches the relevant rule for "Lenders and Repayment Capacity". Short extracts still obey the same classification and measurement rules: current ratio, equity ratio, working capital, and straight-line depreciation (cost minus residual, spread over useful life). Applied here: "Tax authorities of a manufacturer look at accounting information mainly to judge how much tax is due on the business''s profit."
 
-No qualifying word breaks the definition or scenario, so the answer is true.', 'TRUE — The claim is correct. Employees of a manufacturer look at accounting information mainly to judge how secure their jobs and future pay are likely to be.
+The statement is true.', 'TRUE — Short extracts still obey the same classification and measurement rules: current ratio, equity ratio, working capital, and straight-line depreciation (cost minus residual, spread over useful life).
 
-The task tests financial versus management accounting. Financial statements distinguish stocks (balance sheet at a date) from flows (income and cash over a period); many false statements swap those roles.
+The wording matches the relevant rule for "Lenders and Repayment Capacity". Short extracts still obey the same classification and measurement rules: current ratio, equity ratio, working capital, and straight-line depreciation (cost minus residual, spread over useful life). Applied here: "Investors of a manufacturer look at accounting information mainly to judge the likely return and risk before committing further capital."
 
-Apply the case evidence: Employees focus on how secure their jobs and future pay are likely to be when they use accounting information. Check whether the direction of change (higher/lower, above/below the threshold) matches what the statement asserts.
+The statement is true.', 'TRUE — Short extracts still obey the same classification and measurement rules: current ratio, equity ratio, working capital, and straight-line depreciation (cost minus residual, spread over useful life).
 
-The reasoning chain is complete, so mark the statement true.'] WHERE case_id = 'CASE 6.4.007' AND tier = 'full';
-UPDATE public.economics_cases SET tactical_explanations = ARRAY['TRUE — Evaluated against the textbook standard, this assertion is correct. Managerial accounting focuses on providing information for the management of the business to support decisions such as where to cut costs and how to calculate prices.
+The wording matches the relevant rule for "Lenders and Repayment Capacity". Short extracts still obey the same classification and measurement rules: current ratio, equity ratio, working capital, and straight-line depreciation (cost minus residual, spread over useful life). Applied here: "Managers of a manufacturer look at accounting information mainly to judge controlling costs and choosing between courses of action."
 
-This is an accounting reasoning item on financial versus management accounting. Decide whether the sentence correctly describes how a transaction, balance-sheet line, or period result affects assets, liabilities, or equity.
+The statement is true.', 'TRUE — Short extracts still obey the same classification and measurement rules: current ratio, equity ratio, working capital, and straight-line depreciation (cost minus residual, spread over useful life).
 
-From the figures or classification rule involved, management accounting serves internal decision makers. Accounting statements fail when a loss is treated as increasing equity, when a flow is placed on the balance sheet, or when a ratio inequality is reversed.
+The wording matches the relevant rule for "Lenders and Repayment Capacity". Short extracts still obey the same classification and measurement rules: current ratio, equity ratio, working capital, and straight-line depreciation (cost minus residual, spread over useful life). Applied here: "Employees of a manufacturer look at accounting information mainly to judge how secure their jobs and future pay are likely to be."
 
-No qualifying word breaks the definition or scenario, so the answer is true.', 'TRUE — Evaluated against the textbook standard, this assertion is correct. Inventory of €116 thousand is correctly classified as a current asset.
+The statement is true.'] WHERE case_id = 'CASE 6.4.007' AND tier = 'full';
+UPDATE public.economics_cases SET tactical_explanations = ARRAY['TRUE — Short extracts still obey the same classification and measurement rules: current ratio, equity ratio, working capital, and straight-line depreciation (cost minus residual, spread over useful life).
 
-This item belongs to the accounting block on financial versus management accounting. Ratio and classification questions ask you to connect a figure or comparison in the case with the correct statement category, not merely to recognise a number.
+The wording matches the relevant rule for "Short Balance Sheet Extract 8". Short extracts still obey the same classification and measurement rules: current ratio, equity ratio, working capital, and straight-line depreciation (cost minus residual, spread over useful life). Applied here: "Managerial accounting focuses on providing information for the management of the business to support decisions such as where to cut costs and how to calculate prices."
 
-From the figures or classification rule involved, inventory is always current. Accounting statements fail when a loss is treated as increasing equity, when a flow is placed on the balance sheet, or when a ratio inequality is reversed.
+The statement is true.', 'TRUE — Inventory is held for sale or for consumption in the operating cycle.
 
-No qualifying word breaks the definition or scenario, so the answer is true.', 'TRUE — On the Fuhrmann definition used in the entrance exam, the sentence is correct. A published version of the extract above, showing total assets of €511 thousand, is an example of external financial reporting that a lender might study before extending credit.
+On the balance sheet that places inventory among current assets. It is not an intangible (no physical stock for sale) and not a non-current operating asset (those are used in the business beyond one year rather than turned over as stock).
 
-The underlying topic is financial versus management accounting. When figures appear, the exam checks whether you can interpret them in accounting terms—what increased, what ratio is implied, and whether the label (current, non-current, equity, and so on) fits.
+Applied to this stem: "Inventory of €116 thousand is correctly classified as a current asset."
 
-Apply the case evidence: Financial accounting reports are prepared for external users such as lenders and shareholders. Check whether the direction of change (higher/lower, above/below the threshold) matches what the statement asserts.
+The statement is true.', 'TRUE — Financial accounting reports for external users; management accounting is internal.
 
-No qualifying word breaks the definition or scenario, so the answer is true.', 'TRUE — The claim is correct. An independent audit of the extract above, including the total assets of €511 thousand, aims to give reasonable assurance that the figures are free from material misstatement, not an absolute guarantee.
+A published extract for lenders or shareholders is financial accounting by purpose and audience.
 
-The underlying topic is financial versus management accounting. When figures appear, the exam checks whether you can interpret them in accounting terms—what increased, what ratio is implied, and whether the label (current, non-current, equity, and so on) fits.
+Using the stem facts: "A published version of the extract above, showing total assets of €511 thousand, is an example of external financial reporting that a lender might study before extending credit."
 
-Apply the case evidence: Audits provide reasonable, not absolute, assurance. Check whether the direction of change (higher/lower, above/below the threshold) matches what the statement asserts.
+Short extracts still obey the same classification and measurement rules: current ratio, equity ratio, working capital, and straight-line depreciation (cost minus residual, spread over useful life).
 
-Every part of the claim aligns with the standard concept, so the statement stands.', 'TRUE — This statement is correct. Because the extract above discloses total assets of €511 thousand to outside parties, it is best described as financial accounting rather than management accounting.
+The statement is true.', 'TRUE — Audits provide reasonable assurance, not absolute certainty.
 
-This item belongs to the accounting block on financial versus management accounting. Ratio and classification questions ask you to connect a figure or comparison in the case with the correct statement category, not merely to recognise a number.
+The auditor''s opinion addresses the risk of material misstatement in the financial statements. It is not a guarantee that every figure is exact or that the business will prosper.
 
-From the figures or classification rule involved, reports aimed at external parties fall under financial accounting. Accounting statements fail when a loss is treated as increasing equity, when a flow is placed on the balance sheet, or when a ratio inequality is reversed.
+Applied to this stem: "An independent audit of the extract above, including the total assets of €511 thousand, aims to give reasonable assurance that the figures are free from material misstatement, not an absolute guarantee."
 
-The reasoning chain is complete, so mark the statement true.'] WHERE case_id = 'CASE 6.4.008' AND tier = 'full';
-UPDATE public.economics_cases SET tactical_explanations = ARRAY['TRUE — This statement is correct. Unlike wages or energy costs, depreciation does not cause an actual cash payment in the period when it is charged.
+The statement is true.', 'TRUE — Financial accounting reports for external users; management accounting is internal.
 
-This is an accounting reasoning item on financial versus management accounting. Decide whether the sentence correctly describes how a transaction, balance-sheet line, or period result affects assets, liabilities, or equity.
+A published extract for lenders or shareholders is financial accounting by purpose and audience.
 
-From the figures or classification rule involved, depreciation is a non-cash expense. Accounting statements fail when a loss is treated as increasing equity, when a flow is placed on the balance sheet, or when a ratio inequality is reversed.
+Using the stem facts: "Because the extract above discloses total assets of €511 thousand to outside parties, it is best described as financial accounting rather than management accounting."
 
-No qualifying word breaks the definition or scenario, so the answer is true.', 'TRUE — On the Fuhrmann definition used in the entrance exam, the sentence is correct. Asset A''s annual depreciation charge is more than 29.9% higher than Asset B''s annual depreciation charge.
+Short extracts still obey the same classification and measurement rules: current ratio, equity ratio, working capital, and straight-line depreciation (cost minus residual, spread over useful life).
 
-The underlying topic is financial versus management accounting. When figures appear, the exam checks whether you can interpret them in accounting terms—what increased, what ratio is implied, and whether the label (current, non-current, equity, and so on) fits.
+The statement is true.'] WHERE case_id = 'CASE 6.4.008' AND tier = 'full';
+UPDATE public.economics_cases SET tactical_explanations = ARRAY['TRUE — Depreciation is a non-cash allocation of a past capital outlay.
 
-Apply the case evidence: Asset A ≈ €9,286 a year versus Asset B ≈ €4,200 a year. Check whether the direction of change (higher/lower, above/below the threshold) matches what the statement asserts.
+Cash left the business when the asset was acquired. The annual depreciation charge merely allocates that past outlay across useful life; recording the charge does not require a fresh cash payment to an outside party in the year of the expense.
 
-Every part of the claim aligns with the standard concept, so the statement stands.', 'TRUE — Evaluated against the textbook standard, this assertion is correct. A published version of the extract above, showing the combined asset cost of €89,000 thousand, is an example of external financial reporting that a lender might study before extending credit.
+Applied to this stem: "Unlike wages or energy costs, depreciation does not cause an actual cash payment in the period when it is charged."
 
-This item belongs to the accounting block on financial versus management accounting. Ratio and classification questions ask you to connect a figure or comparison in the case with the correct statement category, not merely to recognise a number.
+The statement is true.', 'TRUE — Compare Asset A''s and Asset B''s straight-line annual charges.
 
-From the figures or classification rule involved, financial accounting reports are prepared for external users such as lenders and shareholders. Accounting statements fail when a loss is treated as increasing equity, when a flow is placed on the balance sheet, or when a ratio inequality is reversed.
+$$
+A = 9,286, \quad B = 4,200
+$$
 
-Every part of the claim aligns with the standard concept, so the statement stands.', 'TRUE — On the Fuhrmann definition used in the entrance exam, the sentence is correct. An independent audit of the extract above, including the the combined asset cost of €89,000 thousand, aims to give reasonable assurance that the figures are free from material misstatement, not an absolute guarantee.
+$$
+\frac{9,286 - 4,200}{4,200} = 121.1\%
+$$
 
-The underlying topic is financial versus management accounting. When figures appear, the exam checks whether you can interpret them in accounting terms—what increased, what ratio is implied, and whether the label (current, non-current, equity, and so on) fits.
+Threshold: more than 29.9% higher. Actual premium 121.1%.
 
-Apply the case evidence: Audits provide reasonable, not absolute, assurance. Check whether the direction of change (higher/lower, above/below the threshold) matches what the statement asserts.
+Reading the arithmetic against the claim: premium 121.1% versus more than 29.9% so the statement holds.
 
-No qualifying word breaks the definition or scenario, so the answer is true.', 'TRUE — The claim is correct. Because the extract above discloses the combined asset cost of €89,000 thousand to outside parties, it is best described as financial accounting rather than management accounting.
+The statement is true.', 'TRUE — Financial accounting reports for external users; management accounting is internal.
 
-The underlying topic is financial versus management accounting. When figures appear, the exam checks whether you can interpret them in accounting terms—what increased, what ratio is implied, and whether the label (current, non-current, equity, and so on) fits.
+A published extract for lenders or shareholders is financial accounting by purpose and audience.
 
-Apply the case evidence: Reports aimed at external parties fall under financial accounting. Check whether the direction of change (higher/lower, above/below the threshold) matches what the statement asserts.
+Using the stem facts: "A published version of the extract above, showing the combined asset cost of €89,000 thousand, is an example of external financial reporting that a lender might study before extending credit."
 
-Every part of the claim aligns with the standard concept, so the statement stands.'] WHERE case_id = 'CASE 6.4.009' AND tier = 'full';
-UPDATE public.economics_cases SET tactical_explanations = ARRAY['TRUE — Evaluated against the textbook standard, this assertion is correct. Financial accounting information such as the balance sheet and the income statement is also of interest to decision makers outside the business, for example tax authorities or banks.
+Short extracts still obey the same classification and measurement rules: current ratio, equity ratio, working capital, and straight-line depreciation (cost minus residual, spread over useful life).
 
-This is an accounting reasoning item on financial versus management accounting. Decide whether the sentence correctly describes how a transaction, balance-sheet line, or period result affects assets, liabilities, or equity.
+The statement is true.', 'TRUE — Audits provide reasonable assurance, not absolute certainty.
 
-From the figures or classification rule involved, financial accounting serves external as well as internal users. Accounting statements fail when a loss is treated as increasing equity, when a flow is placed on the balance sheet, or when a ratio inequality is reversed.
+The auditor''s opinion addresses the risk of material misstatement in the financial statements. It is not a guarantee that every figure is exact or that the business will prosper.
 
-No qualifying word breaks the definition or scenario, so the answer is true.', 'TRUE — This statement is correct. Working capital of €133 thousand is positive on this balance sheet.
+Applied to this stem: "An independent audit of the extract above, including the the combined asset cost of €89,000 thousand, aims to give reasonable assurance that the figures are free from material misstatement, not an absolute guarantee."
 
-This item belongs to the accounting block on financial versus management accounting. Ratio and classification questions ask you to connect a figure or comparison in the case with the correct statement category, not merely to recognise a number.
+The statement is true.', 'TRUE — Financial accounting reports for external users; management accounting is internal.
 
-From the figures or classification rule involved, working capital = 133. Accounting statements fail when a loss is treated as increasing equity, when a flow is placed on the balance sheet, or when a ratio inequality is reversed.
+A published extract for lenders or shareholders is financial accounting by purpose and audience.
 
-Every part of the claim aligns with the standard concept, so the statement stands.', 'TRUE — The claim is correct. The debt ratio exceeds 56%.
+Using the stem facts: "Because the extract above discloses the combined asset cost of €89,000 thousand to outside parties, it is best described as financial accounting rather than management accounting."
 
-The underlying topic is financial versus management accounting. When figures appear, the exam checks whether you can interpret them in accounting terms—what increased, what ratio is implied, and whether the label (current, non-current, equity, and so on) fits.
+Short extracts still obey the same classification and measurement rules: current ratio, equity ratio, working capital, and straight-line depreciation (cost minus residual, spread over useful life).
 
-Apply the case evidence: Debt ratio ≈ 59.5%. Check whether the direction of change (higher/lower, above/below the threshold) matches what the statement asserts.
+The statement is true.'] WHERE case_id = 'CASE 6.4.009' AND tier = 'full';
+UPDATE public.economics_cases SET tactical_explanations = ARRAY['TRUE — Short extracts still obey the same classification and measurement rules: current ratio, equity ratio, working capital, and straight-line depreciation (cost minus residual, spread over useful life).
 
-The reasoning chain is complete, so mark the statement true.', 'TRUE — The claim is correct. Trade receivables make up less than 48.5% of current assets.
+The wording matches the relevant rule for "Asset Composition Chart 10". Short extracts still obey the same classification and measurement rules: current ratio, equity ratio, working capital, and straight-line depreciation (cost minus residual, spread over useful life). Applied here: "Financial accounting information such as the balance sheet and the income statement is also of interest to decision makers outside the business, for example tax authorities or banks."
 
-The underlying topic is financial versus management accounting. When figures appear, the exam checks whether you can interpret them in accounting terms—what increased, what ratio is implied, and whether the label (current, non-current, equity, and so on) fits.
+The statement is true.', 'TRUE — Working capital is the euro surplus (or deficit) of current assets over current liabilities on this balance sheet.
 
-Apply the case evidence: Trade receivables are about 22.8% of current assets. Check whether the direction of change (higher/lower, above/below the threshold) matches what the statement asserts.
+Name the identity in words: working capital = current assets − current liabilities.
 
-Every part of the claim aligns with the standard concept, so the statement stands.', 'TRUE — Evaluated against the textbook standard, this assertion is correct. Cash and cash equivalents make up more than 23.1% of current assets.
+From the extract, current assets total 356 and current liabilities total 223:
 
-This item belongs to the accounting block on financial versus management accounting. Ratio and classification questions ask you to connect a figure or comparison in the case with the correct statement category, not merely to recognise a number.
+$$
+WC = CA - CL
+$$
 
-From the figures or classification rule involved, cash and cash equivalents are about 33.4% of current assets. Accounting statements fail when a loss is treated as increasing equity, when a flow is placed on the balance sheet, or when a ratio inequality is reversed.
+$$
+CA = 356, \quad CL = 223
+$$
 
-The reasoning chain is complete, so mark the statement true.'] WHERE case_id = 'CASE 6.4.010' AND tier = 'full';
-UPDATE public.economics_cases SET tactical_explanations = ARRAY['FALSE — Evaluated against the textbook standard, this assertion is false. Only external users need accounting information; owners and managers do not.
+$$
+WC = 356 - 223 = 133
+$$
 
-This is an accounting reasoning item on financial versus management accounting. Decide whether the sentence correctly describes how a transaction, balance-sheet line, or period result affects assets, liabilities, or equity.
+The statement cites working capital of €133 thousand and that it is positive. Calculated WC is 133, which is positive.
 
-From the figures or classification rule involved, internal users include owners, managers and employees. Accounting statements fail when a loss is treated as increasing equity, when a flow is placed on the balance sheet, or when a ratio inequality is reversed.
+Reading the arithmetic against the claim: WC = 133 is positive as claimed so the statement holds.
 
-The statement sounds plausible but fails on precision, so it is false.', 'FALSE — The claim is false. The equity ratio is below 29.8%.
+The statement is true.', 'TRUE — The debt ratio places debt against total assets so the financing structure can be judged on one balance sheet.
 
-The underlying topic is financial versus management accounting. When figures appear, the exam checks whether you can interpret them in accounting terms—what increased, what ratio is implied, and whether the label (current, non-current, equity, and so on) fits.
+Name the identity in words: debt ratio = debt ÷ total assets.
 
-Apply the case evidence: Equity ratio ≈ 61.7%. Check whether the direction of change (higher/lower, above/below the threshold) matches what the statement asserts.
+From the extract, debt = 703 and total assets = 1,181. Plug the figures step by step:
 
-Once the overclaim or mislabel is exposed, the only consistent answer is false.', 'TRUE — This statement is correct. A published version of the extract above, showing total assets of €517 thousand, is an example of external financial reporting that a lender might study before extending credit.
+$$
+DR = \frac{\text{debt}}{\text{total assets}}
+$$
 
-This item belongs to the accounting block on financial versus management accounting. Ratio and classification questions ask you to connect a figure or comparison in the case with the correct statement category, not merely to recognise a number.
+$$
+DR = \frac{703}{1,181}
+$$
 
-From the figures or classification rule involved, financial accounting reports are prepared for external users such as lenders and shareholders. Accounting statements fail when a loss is treated as increasing equity, when a flow is placed on the balance sheet, or when a ratio inequality is reversed.
+$$
+DR = 59.5\%
+$$
 
-No qualifying word breaks the definition or scenario, so the answer is true.', 'FALSE — This statement is false. The long-term bank loan of €120 thousand is correctly classified within equity.
+Claimed: exceeds 56%. Actual 59.5%.
 
-This item belongs to the accounting block on financial versus management accounting. Ratio and classification questions ask you to connect a figure or comparison in the case with the correct statement category, not merely to recognise a number.
+Reading the arithmetic against the claim: actual debt ratio 59.5% matches ''exceeds 56%'' so the statement holds.
 
-From the figures or classification rule involved, a loan is a liability, never equity. Accounting statements fail when a loss is treated as increasing equity, when a flow is placed on the balance sheet, or when a ratio inequality is reversed.
+The statement is true.', 'TRUE — This is a composition claim: express Trade receivables as a percentage of current assets.
 
-Because the decisive detail is wrong, mark the statement false.', 'FALSE — On the Fuhrmann definition used in the entrance exam, the sentence is false. Because the extract above (total assets of €517 thousand) covers only one financial year, external users such as shareholders could not rely on it at all.
+Name the identity in words: Trade receivables share of current assets = Trade receivables ÷ current assets.
 
-The underlying topic is financial versus management accounting. When figures appear, the exam checks whether you can interpret them in accounting terms—what increased, what ratio is implied, and whether the label (current, non-current, equity, and so on) fits.
+From the extract, Trade receivables = 81 and current assets = 356. Plug the figures step by step:
 
-Apply the case evidence: External users routinely rely on single-year financial statements, often alongside prior-year comparatives. Check whether the direction of change (higher/lower, above/below the threshold) matches what the statement asserts.
+$$
+Share = \frac{\text{Trade receivables}}{\text{current assets}}
+$$
 
-Watch the absolute wording "all": exam statements often sound plausible until a single scope word turns an otherwise familiar idea into an overclaim.
+$$
+Share = \frac{81}{356}
+$$
 
-The statement sounds plausible but fails on precision, so it is false.'] WHERE case_id = 'CASE 6.4.011' AND tier = 'full';
-UPDATE public.economics_cases SET tactical_explanations = ARRAY['FALSE — This statement is false. Owners of a manufacturer have no interest in the return earned on the capital they have invested when they look at accounting information.
+$$
+Share = 22.8\%
+$$
 
-This is an accounting reasoning item on financial versus management accounting. Decide whether the sentence correctly describes how a transaction, balance-sheet line, or period result affects assets, liabilities, or equity.
+Threshold: less than 48.5%. Actual 22.8%.
 
-From the figures or classification rule involved, owners are typically concerned with the return earned on the capital they have invested. Accounting statements fail when a loss is treated as increasing equity, when a flow is placed on the balance sheet, or when a ratio inequality is reversed.
+Reading the arithmetic against the claim: actual share 22.8% matches ''less than 48.5%'' so the statement holds.
 
-The statement sounds plausible but fails on precision, so it is false.', 'FALSE — This statement is false. Lenders of a manufacturer have no interest in whether the business will be able to repay what it owes when they look at accounting information.
+The statement is true.', 'TRUE — This is a composition claim: express Cash and cash equivalents as a percentage of current assets.
 
-This is an accounting reasoning item on financial versus management accounting. Decide whether the sentence correctly describes how a transaction, balance-sheet line, or period result affects assets, liabilities, or equity.
+Name the identity in words: Cash and cash equivalents share of current assets = Cash and cash equivalents ÷ current assets.
 
-From the figures or classification rule involved, lenders are typically concerned with whether the business will be able to repay what it owes. Accounting statements fail when a loss is treated as increasing equity, when a flow is placed on the balance sheet, or when a ratio inequality is reversed.
+From the extract, Cash and cash equivalents = 119 and current assets = 356. Plug the figures step by step:
 
-Once the overclaim or mislabel is exposed, the only consistent answer is false.', 'TRUE — This statement is correct. Owners of a retailer are users outside day-to-day management, so they mainly rely on the business''s published financial accounting statements.
+$$
+Share = \frac{\text{Cash and cash equivalents}}{\text{current assets}}
+$$
 
-This is an accounting reasoning item on financial versus management accounting. Decide whether the sentence correctly describes how a transaction, balance-sheet line, or period result affects assets, liabilities, or equity.
+$$
+Share = \frac{119}{356}
+$$
 
-From the figures or classification rule involved, owners sit outside daily management and depend on financial accounting rather than internal management reports. Accounting statements fail when a loss is treated as increasing equity, when a flow is placed on the balance sheet, or when a ratio inequality is reversed.
+$$
+Share = 33.4\%
+$$
 
-No qualifying word breaks the definition or scenario, so the answer is true.', 'TRUE — This statement is correct. Owners of a retailer normally receive formal accounting information no more often than once a year, when the financial accounting statements are published.
+Threshold: more than 23.1%. Actual 33.4%.
 
-This is an accounting reasoning item on financial versus management accounting. Decide whether the sentence correctly describes how a transaction, balance-sheet line, or period result affects assets, liabilities, or equity.
+Reading the arithmetic against the claim: actual share 33.4% matches ''more than 23.1%'' so the statement holds.
 
-From the figures or classification rule involved, financial accounting statements reach external users such as owners on the statutory annual cycle. Accounting statements fail when a loss is treated as increasing equity, when a flow is placed on the balance sheet, or when a ratio inequality is reversed.
+The statement is true.'] WHERE case_id = 'CASE 6.4.010' AND tier = 'full';
+UPDATE public.economics_cases SET tactical_explanations = ARRAY['FALSE — Short extracts still obey the same classification and measurement rules: current ratio, equity ratio, working capital, and straight-line depreciation (cost minus residual, spread over useful life).
 
-No qualifying word breaks the definition or scenario, so the answer is true.', 'FALSE — This statement is false. Tax authorities of a manufacturer have no interest in how much tax is due on the business''s profit when they look at accounting information.
+Absolute or misapplied wording conflicts with the rule for "Short Balance Sheet Extract 11". Short extracts still obey the same classification and measurement rules: current ratio, equity ratio, working capital, and straight-line depreciation (cost minus residual, spread over useful life). Rejected claim: "Only external users need accounting information; owners and managers do not."
 
-This is an accounting reasoning item on financial versus management accounting. Decide whether the sentence correctly describes how a transaction, balance-sheet line, or period result affects assets, liabilities, or equity.
+The statement is false.', 'FALSE — The equity ratio places equity against total assets so the financing structure can be judged on one balance sheet.
 
-From the figures or classification rule involved, tax authorities are typically concerned with how much tax is due on the business''s profit. Accounting statements fail when a loss is treated as increasing equity, when a flow is placed on the balance sheet, or when a ratio inequality is reversed.
+Name the identity in words: equity ratio = equity ÷ total assets.
 
-Once the overclaim or mislabel is exposed, the only consistent answer is false.'] WHERE case_id = 'CASE 6.4.012' AND tier = 'full';
-UPDATE public.economics_cases SET tactical_explanations = ARRAY['FALSE — Evaluated against the textbook standard, this assertion is false. Managerial accounting exists mainly to satisfy tax authorities rather than to support internal decisions.
+From the extract, equity = 319 and total assets = 517. Plug the figures step by step:
 
-This is an accounting reasoning item on financial versus management accounting. Decide whether the sentence correctly describes how a transaction, balance-sheet line, or period result affects assets, liabilities, or equity.
+$$
+ER = \frac{\text{equity}}{\text{total assets}}
+$$
 
-From the figures or classification rule involved, management accounting primarily supports internal decisions. Accounting statements fail when a loss is treated as increasing equity, when a flow is placed on the balance sheet, or when a ratio inequality is reversed.
+$$
+ER = \frac{319}{517}
+$$
 
-Once the overclaim or mislabel is exposed, the only consistent answer is false.', 'FALSE — Evaluated against the textbook standard, this assertion is false. Because the extract above (the combined asset cost of €98,000 thousand) covers only one financial year, external users such as shareholders could not rely on it at all.
+$$
+ER = 61.7\%
+$$
 
-This item belongs to the accounting block on financial versus management accounting. Ratio and classification questions ask you to connect a figure or comparison in the case with the correct statement category, not merely to recognise a number.
+Claimed: is below 29.8%. Actual 61.7%.
 
-From the figures or classification rule involved, external users routinely rely on single-year financial statements, often alongside prior-year comparatives. Accounting statements fail when a loss is treated as increasing equity, when a flow is placed on the balance sheet, or when a ratio inequality is reversed.
+Reading the arithmetic against the claim: actual equity ratio 61.7% does not match ''is below 29.8%'' so the statement does not hold.
 
-Watch the absolute wording "all": exam statements often sound plausible until a single scope word turns an otherwise familiar idea into an overclaim.
+The statement is false.', 'TRUE — Financial accounting reports for external users; management accounting is internal.
 
-Once the overclaim or mislabel is exposed, the only consistent answer is false.', 'TRUE — This statement is correct. Asset A''s annual depreciation charge is more than 39.5% higher than Asset B''s annual depreciation charge.
+A published extract for lenders or shareholders is financial accounting by purpose and audience.
 
-This item belongs to the accounting block on financial versus management accounting. Ratio and classification questions ask you to connect a figure or comparison in the case with the correct statement category, not merely to recognise a number.
+Using the stem facts: "A published version of the extract above, showing total assets of €517 thousand, is an example of external financial reporting that a lender might study before extending credit."
 
-From the figures or classification rule involved, asset a ≈ €9,250 a year versus asset b ≈ €4,400 a year. Accounting statements fail when a loss is treated as increasing equity, when a flow is placed on the balance sheet, or when a ratio inequality is reversed.
+Short extracts still obey the same classification and measurement rules: current ratio, equity ratio, working capital, and straight-line depreciation (cost minus residual, spread over useful life).
 
-Every part of the claim aligns with the standard concept, so the statement stands.', 'FALSE — This statement is false. Internal management reports covering the same period as the extract above (the combined asset cost of €98,000 thousand) must follow the identical statutory format shown here.
+The statement is true.', 'FALSE — Borrowed funds are liabilities; equity is the owners'' residual interest.
 
-This item belongs to the accounting block on financial versus management accounting. Ratio and classification questions ask you to connect a figure or comparison in the case with the correct statement category, not merely to recognise a number.
+A bank loan creates an obligation to a lender and cannot be classified as equity.
 
-From the figures or classification rule involved, management accounting reports are flexible and internal; they are not bound by the statutory format of published financial statements. Accounting statements fail when a loss is treated as increasing equity, when a flow is placed on the balance sheet, or when a ratio inequality is reversed.
+Using the stem facts: "The long-term bank loan of €120 thousand is correctly classified within equity."
 
-Once the overclaim or mislabel is exposed, the only consistent answer is false.', 'FALSE — On the Fuhrmann definition used in the entrance exam, the sentence is false. The the combined asset cost of €98,000 thousand shown above would never be disclosed to any party outside the business under any circumstances.
+Short extracts still obey the same classification and measurement rules: current ratio, equity ratio, working capital, and straight-line depreciation (cost minus residual, spread over useful life).
 
-The underlying topic is financial versus management accounting. When figures appear, the exam checks whether you can interpret them in accounting terms—what increased, what ratio is implied, and whether the label (current, non-current, equity, and so on) fits.
+The statement is false.', 'FALSE — Single-year statements are routinely used, often with comparatives.
 
-Apply the case evidence: Figures such as this are routinely published for external users like tax authorities and shareholders. Check whether the direction of change (higher/lower, above/below the threshold) matches what the statement asserts.
+One year limits trends but does not make the extract useless to external users.
 
-Watch the absolute wording "never": exam statements often sound plausible until a single scope word turns an otherwise familiar idea into an overclaim.
+Using the stem facts: "Because the extract above (total assets of €517 thousand) covers only one financial year, external users such as shareholders could not rely on it at all."
 
-Because the decisive detail is wrong, mark the statement false.'] WHERE case_id = 'CASE 6.4.013' AND tier = 'full';
-UPDATE public.economics_cases SET tactical_explanations = ARRAY['FALSE — On the Fuhrmann definition used in the entrance exam, the sentence is false. Only external users need accounting information; owners and managers do not.
+Short extracts still obey the same classification and measurement rules: current ratio, equity ratio, working capital, and straight-line depreciation (cost minus residual, spread over useful life).
 
-The task tests financial versus management accounting. Financial statements distinguish stocks (balance sheet at a date) from flows (income and cash over a period); many false statements swap those roles.
+The statement is false.'] WHERE case_id = 'CASE 6.4.011' AND tier = 'full';
+UPDATE public.economics_cases SET tactical_explanations = ARRAY['FALSE — Short extracts still obey the same classification and measurement rules: current ratio, equity ratio, working capital, and straight-line depreciation (cost minus residual, spread over useful life).
 
-Apply the case evidence: Internal users include owners, managers and employees. Check whether the direction of change (higher/lower, above/below the threshold) matches what the statement asserts.
+Absolute or misapplied wording conflicts with the rule for "Tax Authorities and Filed Accounts". Short extracts still obey the same classification and measurement rules: current ratio, equity ratio, working capital, and straight-line depreciation (cost minus residual, spread over useful life). Rejected claim: "Owners of a manufacturer have no interest in the return earned on the capital they have invested when they look at accounting information."
 
-The statement sounds plausible but fails on precision, so it is false.', 'TRUE — Evaluated against the textbook standard, this assertion is correct. The current ratio exceeds 1.35.
+The statement is false.', 'FALSE — Short extracts still obey the same classification and measurement rules: current ratio, equity ratio, working capital, and straight-line depreciation (cost minus residual, spread over useful life).
 
-This item belongs to the accounting block on financial versus management accounting. Ratio and classification questions ask you to connect a figure or comparison in the case with the correct statement category, not merely to recognise a number.
+Absolute or misapplied wording conflicts with the rule for "Tax Authorities and Filed Accounts". Short extracts still obey the same classification and measurement rules: current ratio, equity ratio, working capital, and straight-line depreciation (cost minus residual, spread over useful life). Rejected claim: "Lenders of a manufacturer have no interest in whether the business will be able to repay what it owes when they look at accounting information."
 
-From the figures or classification rule involved, current ratio ≈ 1.78. Accounting statements fail when a loss is treated as increasing equity, when a flow is placed on the balance sheet, or when a ratio inequality is reversed.
+The statement is false.', 'TRUE — Short extracts still obey the same classification and measurement rules: current ratio, equity ratio, working capital, and straight-line depreciation (cost minus residual, spread over useful life).
 
-The reasoning chain is complete, so mark the statement true.', 'FALSE — On the Fuhrmann definition used in the entrance exam, the sentence is false. The current ratio is below 0.9.
+The wording matches the relevant rule for "Tax Authorities and Filed Accounts". Short extracts still obey the same classification and measurement rules: current ratio, equity ratio, working capital, and straight-line depreciation (cost minus residual, spread over useful life). Applied here: "Owners of a retailer are users outside day-to-day management, so they mainly rely on the business''s published financial accounting statements."
 
-The underlying topic is financial versus management accounting. When figures appear, the exam checks whether you can interpret them in accounting terms—what increased, what ratio is implied, and whether the label (current, non-current, equity, and so on) fits.
+The statement is true.', 'TRUE — Short extracts still obey the same classification and measurement rules: current ratio, equity ratio, working capital, and straight-line depreciation (cost minus residual, spread over useful life).
 
-Apply the case evidence: Current ratio ≈ 1.78. Check whether the direction of change (higher/lower, above/below the threshold) matches what the statement asserts.
+The wording matches the relevant rule for "Tax Authorities and Filed Accounts". Short extracts still obey the same classification and measurement rules: current ratio, equity ratio, working capital, and straight-line depreciation (cost minus residual, spread over useful life). Applied here: "Owners of a retailer normally receive formal accounting information no more often than once a year, when the financial accounting statements are published."
 
-The statement sounds plausible but fails on precision, so it is false.', 'TRUE — On the Fuhrmann definition used in the entrance exam, the sentence is correct. The debt ratio exceeds 47.9%.
+The statement is true.', 'FALSE — Short extracts still obey the same classification and measurement rules: current ratio, equity ratio, working capital, and straight-line depreciation (cost minus residual, spread over useful life).
 
-The underlying topic is financial versus management accounting. When figures appear, the exam checks whether you can interpret them in accounting terms—what increased, what ratio is implied, and whether the label (current, non-current, equity, and so on) fits.
+Absolute or misapplied wording conflicts with the rule for "Tax Authorities and Filed Accounts". Short extracts still obey the same classification and measurement rules: current ratio, equity ratio, working capital, and straight-line depreciation (cost minus residual, spread over useful life). Rejected claim: "Tax authorities of a manufacturer have no interest in how much tax is due on the business''s profit when they look at accounting information."
 
-Apply the case evidence: Debt ratio ≈ 52.6%. Check whether the direction of change (higher/lower, above/below the threshold) matches what the statement asserts.
+The statement is false.'] WHERE case_id = 'CASE 6.4.012' AND tier = 'full';
+UPDATE public.economics_cases SET tactical_explanations = ARRAY['FALSE — Short extracts still obey the same classification and measurement rules: current ratio, equity ratio, working capital, and straight-line depreciation (cost minus residual, spread over useful life).
 
-The reasoning chain is complete, so mark the statement true.', 'TRUE — Evaluated against the textbook standard, this assertion is correct. Inventory make up more than 54% of current assets.
+Absolute or misapplied wording conflicts with the rule for "Short Depreciation Extract 13". Short extracts still obey the same classification and measurement rules: current ratio, equity ratio, working capital, and straight-line depreciation (cost minus residual, spread over useful life). Rejected claim: "Managerial accounting exists mainly to satisfy tax authorities rather than to support internal decisions."
 
-This item belongs to the accounting block on financial versus management accounting. Ratio and classification questions ask you to connect a figure or comparison in the case with the correct statement category, not merely to recognise a number.
+The statement is false.', 'FALSE — Single-year statements are routinely used, often with comparatives.
 
-From the figures or classification rule involved, inventory are about 56.3% of current assets. Accounting statements fail when a loss is treated as increasing equity, when a flow is placed on the balance sheet, or when a ratio inequality is reversed.
+One year limits trends but does not make the extract useless to external users.
 
-No qualifying word breaks the definition or scenario, so the answer is true.'] WHERE case_id = 'CASE 6.4.014' AND tier = 'full';
-UPDATE public.economics_cases SET tactical_explanations = ARRAY['TRUE — Evaluated against the textbook standard, this assertion is correct. Land is not subject to depreciation because it does not wear out through use the way buildings and machinery do.
+Using the stem facts: "Because the extract above (the combined asset cost of €98,000 thousand) covers only one financial year, external users such as shareholders could not rely on it at all."
 
-This is an accounting reasoning item on financial versus management accounting. Decide whether the sentence correctly describes how a transaction, balance-sheet line, or period result affects assets, liabilities, or equity.
+Short extracts still obey the same classification and measurement rules: current ratio, equity ratio, working capital, and straight-line depreciation (cost minus residual, spread over useful life).
 
-From the figures or classification rule involved, land is normally excluded from depreciation. Accounting statements fail when a loss is treated as increasing equity, when a flow is placed on the balance sheet, or when a ratio inequality is reversed.
+The statement is false.', 'TRUE — Compare Asset A''s and Asset B''s straight-line annual charges.
 
-The reasoning chain is complete, so mark the statement true.', 'TRUE — The claim is correct. The current ratio exceeds 1.3.
+$$
+A = 9,250, \quad B = 4,400
+$$
 
-The underlying topic is financial versus management accounting. When figures appear, the exam checks whether you can interpret them in accounting terms—what increased, what ratio is implied, and whether the label (current, non-current, equity, and so on) fits.
+$$
+\frac{9,250 - 4,400}{4,400} = 110.2\%
+$$
 
-Apply the case evidence: Current ratio ≈ 4.47. Check whether the direction of change (higher/lower, above/below the threshold) matches what the statement asserts.
+Threshold: more than 39.5% higher. Actual premium 110.2%.
 
-Every part of the claim aligns with the standard concept, so the statement stands.', 'FALSE — Evaluated against the textbook standard, this assertion is false. The equity ratio is below 25.2%.
+Reading the arithmetic against the claim: premium 110.2% versus more than 39.5% so the statement holds.
 
-This item belongs to the accounting block on financial versus management accounting. Ratio and classification questions ask you to connect a figure or comparison in the case with the correct statement category, not merely to recognise a number.
+The statement is true.', 'FALSE — Management reports are not bound to the statutory published format.
 
-From the figures or classification rule involved, equity ratio ≈ 67.1%. Accounting statements fail when a loss is treated as increasing equity, when a flow is placed on the balance sheet, or when a ratio inequality is reversed.
+Internal management accounts may use whatever layout, detail, and frequency managers need. Statutory formats govern published financial statements, not internal packs.
 
-The statement sounds plausible but fails on precision, so it is false.', 'TRUE — Evaluated against the textbook standard, this assertion is correct. Inventory of €85 thousand is correctly classified as a current asset.
+Applied to this stem: "Internal management reports covering the same period as the extract above (the combined asset cost of €98,000 thousand) must follow the identical statutory format shown here."
 
-This item belongs to the accounting block on financial versus management accounting. Ratio and classification questions ask you to connect a figure or comparison in the case with the correct statement category, not merely to recognise a number.
+The statement is false.', 'FALSE — Published figures exist for outside readers.
 
-From the figures or classification rule involved, inventory is always current. Accounting statements fail when a loss is treated as increasing equity, when a flow is placed on the balance sheet, or when a ratio inequality is reversed.
+Shareholders, lenders, and tax authorities routinely see such amounts.
 
-No qualifying word breaks the definition or scenario, so the answer is true.', 'FALSE — This statement is false. The long-term bank loan of €101 thousand is correctly classified within equity.
+Using the stem facts: "The the combined asset cost of €98,000 thousand shown above would never be disclosed to any party outside the business under any circumstances."
 
-This item belongs to the accounting block on financial versus management accounting. Ratio and classification questions ask you to connect a figure or comparison in the case with the correct statement category, not merely to recognise a number.
+Short extracts still obey the same classification and measurement rules: current ratio, equity ratio, working capital, and straight-line depreciation (cost minus residual, spread over useful life).
 
-From the figures or classification rule involved, a loan is a liability, never equity. Accounting statements fail when a loss is treated as increasing equity, when a flow is placed on the balance sheet, or when a ratio inequality is reversed.
+The statement is false.'] WHERE case_id = 'CASE 6.4.013' AND tier = 'full';
+UPDATE public.economics_cases SET tactical_explanations = ARRAY['FALSE — Short extracts still obey the same classification and measurement rules: current ratio, equity ratio, working capital, and straight-line depreciation (cost minus residual, spread over useful life).
 
-Once the overclaim or mislabel is exposed, the only consistent answer is false.'] WHERE case_id = 'CASE 6.4.015' AND tier = 'full';
-UPDATE public.economics_cases SET tactical_explanations = ARRAY['FALSE — On the Fuhrmann definition used in the entrance exam, the sentence is false. Managerial accounting exists mainly to satisfy tax authorities rather than to support internal decisions.
+Absolute or misapplied wording conflicts with the rule for "Balance Sheet Structure Review 14". Short extracts still obey the same classification and measurement rules: current ratio, equity ratio, working capital, and straight-line depreciation (cost minus residual, spread over useful life). Rejected claim: "Only external users need accounting information; owners and managers do not."
 
-The task tests financial versus management accounting. Financial statements distinguish stocks (balance sheet at a date) from flows (income and cash over a period); many false statements swap those roles.
+The statement is false.', 'TRUE — The current ratio is the standard liquidity cover of current assets over current liabilities.
 
-Apply the case evidence: Management accounting primarily supports internal decisions. Check whether the direction of change (higher/lower, above/below the threshold) matches what the statement asserts.
+Name the identity in words: current ratio = current assets ÷ current liabilities.
 
-The statement sounds plausible but fails on precision, so it is false.', 'TRUE — On the Fuhrmann definition used in the entrance exam, the sentence is correct. Asset A''s annual depreciation charge is more than 32.4% higher than Asset B''s annual depreciation charge.
+Build current assets and current liabilities from the extract:
 
-The underlying topic is financial versus management accounting. When figures appear, the exam checks whether you can interpret them in accounting terms—what increased, what ratio is implied, and whether the label (current, non-current, equity, and so on) fits.
+$$
+CA = 263 + 166 + 38 = 467
+$$
 
-Apply the case evidence: Asset A ≈ €9,750 a year versus Asset B ≈ €7,000 a year. Check whether the direction of change (higher/lower, above/below the threshold) matches what the statement asserts.
+$$
+CL = 237 + 26 = 263
+$$
 
-The reasoning chain is complete, so mark the statement true.', 'TRUE — Evaluated against the textbook standard, this assertion is correct. A published version of the extract above, showing the combined asset cost of €117,000 thousand, is an example of external financial reporting that a lender might study before extending credit.
+$$
+\text{Current ratio} = \frac{467}{263} = 1.7757
+$$
 
-This item belongs to the accounting block on financial versus management accounting. Ratio and classification questions ask you to connect a figure or comparison in the case with the correct statement category, not merely to recognise a number.
+Claimed: exceeds 1.35. Actual 1.78.
 
-From the figures or classification rule involved, financial accounting reports are prepared for external users such as lenders and shareholders. Accounting statements fail when a loss is treated as increasing equity, when a flow is placed on the balance sheet, or when a ratio inequality is reversed.
+Reading the arithmetic against the claim: actual current ratio 1.78 versus ''exceeds 1.35'' so the statement holds.
 
-No qualifying word breaks the definition or scenario, so the answer is true.', 'TRUE — Evaluated against the textbook standard, this assertion is correct. An independent audit of the extract above, including the the combined asset cost of €117,000 thousand, aims to give reasonable assurance that the figures are free from material misstatement, not an absolute guarantee.
+The statement is true.', 'FALSE — The current ratio is the standard liquidity cover of current assets over current liabilities.
 
-This item belongs to the accounting block on financial versus management accounting. Ratio and classification questions ask you to connect a figure or comparison in the case with the correct statement category, not merely to recognise a number.
+Name the identity in words: current ratio = current assets ÷ current liabilities.
 
-From the figures or classification rule involved, audits provide reasonable, not absolute, assurance. Accounting statements fail when a loss is treated as increasing equity, when a flow is placed on the balance sheet, or when a ratio inequality is reversed.
+Build current assets and current liabilities from the extract:
 
-No qualifying word breaks the definition or scenario, so the answer is true.', 'TRUE — This statement is correct. Because the extract above discloses the combined asset cost of €117,000 thousand to outside parties, it is best described as financial accounting rather than management accounting.
+$$
+CA = 263 + 166 + 38 = 467
+$$
 
-This item belongs to the accounting block on financial versus management accounting. Ratio and classification questions ask you to connect a figure or comparison in the case with the correct statement category, not merely to recognise a number.
+$$
+CL = 237 + 26 = 263
+$$
 
-From the figures or classification rule involved, reports aimed at external parties fall under financial accounting. Accounting statements fail when a loss is treated as increasing equity, when a flow is placed on the balance sheet, or when a ratio inequality is reversed.
+$$
+\text{Current ratio} = \frac{467}{263} = 1.7757
+$$
 
-The reasoning chain is complete, so mark the statement true.'] WHERE case_id = 'CASE 6.4.016' AND tier = 'full';
-UPDATE public.economics_cases SET tactical_explanations = ARRAY['TRUE — On the Fuhrmann definition used in the entrance exam, the sentence is correct. Unlike wages or energy costs, depreciation does not cause an actual cash payment in the period when it is charged.
+Claimed: is below 0.9. Actual 1.78.
 
-The task tests financial versus management accounting. Financial statements distinguish stocks (balance sheet at a date) from flows (income and cash over a period); many false statements swap those roles.
+Reading the arithmetic against the claim: actual current ratio 1.78 versus ''is below 0.9'' so the statement does not hold.
 
-Apply the case evidence: Depreciation is a non-cash expense. Check whether the direction of change (higher/lower, above/below the threshold) matches what the statement asserts.
+The statement is false.', 'TRUE — The debt ratio places debt against total assets so the financing structure can be judged on one balance sheet.
 
-Every part of the claim aligns with the standard concept, so the statement stands.', 'FALSE — The claim is false. The current ratio is below 0.83.
+Name the identity in words: debt ratio = debt ÷ total assets.
 
-The underlying topic is financial versus management accounting. When figures appear, the exam checks whether you can interpret them in accounting terms—what increased, what ratio is implied, and whether the label (current, non-current, equity, and so on) fits.
+From the extract, debt = 690 and total assets = 1,313. Plug the figures step by step:
 
-Apply the case evidence: Current ratio ≈ 1.33. Check whether the direction of change (higher/lower, above/below the threshold) matches what the statement asserts.
+$$
+DR = \frac{\text{debt}}{\text{total assets}}
+$$
 
-The statement sounds plausible but fails on precision, so it is false.', 'TRUE — The claim is correct. The current ratio exceeds 1.14.
+$$
+DR = \frac{690}{1,313}
+$$
 
-The underlying topic is financial versus management accounting. When figures appear, the exam checks whether you can interpret them in accounting terms—what increased, what ratio is implied, and whether the label (current, non-current, equity, and so on) fits.
+$$
+DR = 52.6\%
+$$
 
-Apply the case evidence: Current ratio ≈ 1.33. Check whether the direction of change (higher/lower, above/below the threshold) matches what the statement asserts.
+Claimed: exceeds 47.9%. Actual 52.6%.
 
-No qualifying word breaks the definition or scenario, so the answer is true.', 'FALSE — On the Fuhrmann definition used in the entrance exam, the sentence is false. After excluding inventory, the remaining current assets still cover current liabilities more than 1.17 times over.
+Reading the arithmetic against the claim: actual debt ratio 52.6% matches ''exceeds 47.9%'' so the statement holds.
 
-The underlying topic is financial versus management accounting. When figures appear, the exam checks whether you can interpret them in accounting terms—what increased, what ratio is implied, and whether the label (current, non-current, equity, and so on) fits.
+The statement is true.', 'TRUE — This is a composition claim: express Inventory as a percentage of current assets.
 
-Apply the case evidence: Acid-test ratio ≈ 1.00. Check whether the direction of change (higher/lower, above/below the threshold) matches what the statement asserts.
+Name the identity in words: Inventory share of current assets = Inventory ÷ current assets.
 
-Once the overclaim or mislabel is exposed, the only consistent answer is false.', 'TRUE — Evaluated against the textbook standard, this assertion is correct. Working capital of €83 thousand is positive on this balance sheet.
+From the extract, Inventory = 263 and current assets = 467. Plug the figures step by step:
 
-This item belongs to the accounting block on financial versus management accounting. Ratio and classification questions ask you to connect a figure or comparison in the case with the correct statement category, not merely to recognise a number.
+$$
+Share = \frac{\text{Inventory}}{\text{current assets}}
+$$
 
-From the figures or classification rule involved, working capital = 83. Accounting statements fail when a loss is treated as increasing equity, when a flow is placed on the balance sheet, or when a ratio inequality is reversed.
+$$
+Share = \frac{263}{467}
+$$
 
-Every part of the claim aligns with the standard concept, so the statement stands.'] WHERE case_id = 'CASE 6.4.017' AND tier = 'full';
-UPDATE public.economics_cases SET tactical_explanations = ARRAY['TRUE — This statement is correct. Auditing is the independent checking of accounts for authenticity by an auditing company.
+$$
+Share = 56.3\%
+$$
 
-This is an accounting reasoning item on financial versus management accounting. Decide whether the sentence correctly describes how a transaction, balance-sheet line, or period result affects assets, liabilities, or equity.
+Threshold: more than 54%. Actual 56.3%.
 
-From the figures or classification rule involved, auditing is an independent verification of the accounts. Accounting statements fail when a loss is treated as increasing equity, when a flow is placed on the balance sheet, or when a ratio inequality is reversed.
+Reading the arithmetic against the claim: actual share 56.3% matches ''more than 54%'' so the statement holds.
 
-The reasoning chain is complete, so mark the statement true.', 'FALSE — The claim is false. The equity ratio is below 31.3%.
+The statement is true.'] WHERE case_id = 'CASE 6.4.014' AND tier = 'full';
+UPDATE public.economics_cases SET tactical_explanations = ARRAY['TRUE — Short extracts still obey the same classification and measurement rules: current ratio, equity ratio, working capital, and straight-line depreciation (cost minus residual, spread over useful life).
 
-The underlying topic is financial versus management accounting. When figures appear, the exam checks whether you can interpret them in accounting terms—what increased, what ratio is implied, and whether the label (current, non-current, equity, and so on) fits.
+The claim states: Land is not subject to depreciation. The reason given — it does not wear out through use the way buildings and machinery do. — fits the chapter rule. Short extracts still obey the same classification and measurement rules: current ratio, equity ratio, working capital, and straight-line depreciation (cost minus residual, spread over useful life).
 
-Apply the case evidence: Equity ratio ≈ 57.1%. Check whether the direction of change (higher/lower, above/below the threshold) matches what the statement asserts.
+The statement is true.', 'TRUE — The current ratio is the standard liquidity cover of current assets over current liabilities.
 
-Once the overclaim or mislabel is exposed, the only consistent answer is false.', 'FALSE — Evaluated against the textbook standard, this assertion is false. The long-term bank loan of €144 thousand is correctly classified within equity.
+Name the identity in words: current ratio = current assets ÷ current liabilities.
 
-This item belongs to the accounting block on financial versus management accounting. Ratio and classification questions ask you to connect a figure or comparison in the case with the correct statement category, not merely to recognise a number.
+Build current assets and current liabilities from the extract:
 
-From the figures or classification rule involved, a loan is a liability, never equity. Accounting statements fail when a loss is treated as increasing equity, when a flow is placed on the balance sheet, or when a ratio inequality is reversed.
+$$
+CA = 85 + 0 + 76 = 161
+$$
 
-Because the decisive detail is wrong, mark the statement false.', 'FALSE — On the Fuhrmann definition used in the entrance exam, the sentence is false. Because the extract above (total assets of €504 thousand) covers only one financial year, external users such as shareholders could not rely on it at all.
+$$
+CL = 36 + 0 = 36
+$$
 
-The underlying topic is financial versus management accounting. When figures appear, the exam checks whether you can interpret them in accounting terms—what increased, what ratio is implied, and whether the label (current, non-current, equity, and so on) fits.
+$$
+\text{Current ratio} = \frac{161}{36} = 4.4722
+$$
 
-Apply the case evidence: External users routinely rely on single-year financial statements, often alongside prior-year comparatives. Check whether the direction of change (higher/lower, above/below the threshold) matches what the statement asserts.
+Claimed: exceeds 1.3. Actual 4.47.
 
-Watch the absolute wording "all": exam statements often sound plausible until a single scope word turns an otherwise familiar idea into an overclaim.
+Reading the arithmetic against the claim: actual current ratio 4.47 versus ''exceeds 1.3'' so the statement holds.
 
-Because the decisive detail is wrong, mark the statement false.', 'TRUE — Evaluated against the textbook standard, this assertion is correct. Inventory of €145 thousand is correctly classified as a current asset.
+The statement is true.', 'FALSE — The equity ratio places equity against total assets so the financing structure can be judged on one balance sheet.
 
-This item belongs to the accounting block on financial versus management accounting. Ratio and classification questions ask you to connect a figure or comparison in the case with the correct statement category, not merely to recognise a number.
+Name the identity in words: equity ratio = equity ÷ total assets.
 
-From the figures or classification rule involved, inventory is always current. Accounting statements fail when a loss is treated as increasing equity, when a flow is placed on the balance sheet, or when a ratio inequality is reversed.
+From the extract, equity = 279 and total assets = 416. Plug the figures step by step:
 
-No qualifying word breaks the definition or scenario, so the answer is true.'] WHERE case_id = 'CASE 6.4.018' AND tier = 'full';
-UPDATE public.economics_cases SET tactical_explanations = ARRAY['TRUE — This statement is correct. Lenders of a retailer are users outside day-to-day management, so they mainly rely on the business''s published financial accounting statements.
+$$
+ER = \frac{\text{equity}}{\text{total assets}}
+$$
 
-This is an accounting reasoning item on financial versus management accounting. Decide whether the sentence correctly describes how a transaction, balance-sheet line, or period result affects assets, liabilities, or equity.
+$$
+ER = \frac{279}{416}
+$$
 
-From the figures or classification rule involved, lenders sit outside daily management and depend on financial accounting rather than internal management reports. Accounting statements fail when a loss is treated as increasing equity, when a flow is placed on the balance sheet, or when a ratio inequality is reversed.
+$$
+ER = 67.1\%
+$$
 
-The reasoning chain is complete, so mark the statement true.', 'TRUE — The claim is correct. Lenders of a retailer normally receive formal accounting information no more often than once a year, when the financial accounting statements are published.
+Claimed: is below 25.2%. Actual 67.1%.
 
-The task tests financial versus management accounting. Financial statements distinguish stocks (balance sheet at a date) from flows (income and cash over a period); many false statements swap those roles.
+Reading the arithmetic against the claim: actual equity ratio 67.1% does not match ''is below 25.2%'' so the statement does not hold.
 
-Apply the case evidence: Financial accounting statements reach external users such as lenders on the statutory annual cycle. Check whether the direction of change (higher/lower, above/below the threshold) matches what the statement asserts.
+The statement is false.', 'TRUE — Inventory is held for sale or for consumption in the operating cycle.
 
-Every part of the claim aligns with the standard concept, so the statement stands.', 'TRUE — Evaluated against the textbook standard, this assertion is correct. Managers of a retailer work inside the business and can be given management accounting reports designed around their own questions.
+On the balance sheet that places inventory among current assets. It is not an intangible (no physical stock for sale) and not a non-current operating asset (those are used in the business beyond one year rather than turned over as stock).
 
-This is an accounting reasoning item on financial versus management accounting. Decide whether the sentence correctly describes how a transaction, balance-sheet line, or period result affects assets, liabilities, or equity.
+Applied to this stem: "Inventory of €85 thousand is correctly classified as a current asset."
 
-From the figures or classification rule involved, managers are internal users who can receive management accounting tailored to their needs. Accounting statements fail when a loss is treated as increasing equity, when a flow is placed on the balance sheet, or when a ratio inequality is reversed.
+The statement is true.', 'FALSE — Borrowed funds are liabilities; equity is the owners'' residual interest.
 
-The reasoning chain is complete, so mark the statement true.', 'TRUE — On the Fuhrmann definition used in the entrance exam, the sentence is correct. Managers of a retailer can be supplied with management accounting figures weekly or monthly, well before the annual financial accounting statements are finalised.
+A bank loan creates an obligation to a lender and cannot be classified as equity.
 
-The task tests financial versus management accounting. Financial statements distinguish stocks (balance sheet at a date) from flows (income and cash over a period); many false statements swap those roles.
+Using the stem facts: "The long-term bank loan of €101 thousand is correctly classified within equity."
 
-Apply the case evidence: Management accounting can reach internal users such as managers far more frequently than annual financial accounting. Check whether the direction of change (higher/lower, above/below the threshold) matches what the statement asserts.
+Short extracts still obey the same classification and measurement rules: current ratio, equity ratio, working capital, and straight-line depreciation (cost minus residual, spread over useful life).
 
-No qualifying word breaks the definition or scenario, so the answer is true.', 'TRUE — The claim is correct. Reports prepared for managers of a retailer can be laid out however suits the decision at hand, unlike the standardised format required of financial accounting statements.
+The statement is false.'] WHERE case_id = 'CASE 6.4.015' AND tier = 'full';
+UPDATE public.economics_cases SET tactical_explanations = ARRAY['FALSE — Short extracts still obey the same classification and measurement rules: current ratio, equity ratio, working capital, and straight-line depreciation (cost minus residual, spread over useful life).
 
-The task tests financial versus management accounting. Financial statements distinguish stocks (balance sheet at a date) from flows (income and cash over a period); many false statements swap those roles.
+Absolute or misapplied wording conflicts with the rule for "Short Depreciation Extract 16". Short extracts still obey the same classification and measurement rules: current ratio, equity ratio, working capital, and straight-line depreciation (cost minus residual, spread over useful life). Rejected claim: "Managerial accounting exists mainly to satisfy tax authorities rather than to support internal decisions."
 
-Apply the case evidence: Management accounting for internal users such as managers is flexible in format, unlike statutory financial accounting. Check whether the direction of change (higher/lower, above/below the threshold) matches what the statement asserts.
+The statement is false.', 'TRUE — Compare Asset A''s and Asset B''s straight-line annual charges.
 
-Every part of the claim aligns with the standard concept, so the statement stands.'] WHERE case_id = 'CASE 6.4.019' AND tier = 'full';
-UPDATE public.economics_cases SET tactical_explanations = ARRAY['FALSE — Evaluated against the textbook standard, this assertion is false. Only external users need accounting information; owners and managers do not.
+$$
+A = 9,750, \quad B = 7,000
+$$
 
-This is an accounting reasoning item on financial versus management accounting. Decide whether the sentence correctly describes how a transaction, balance-sheet line, or period result affects assets, liabilities, or equity.
+$$
+\frac{9,750 - 7,000}{7,000} = 39.3\%
+$$
 
-From the figures or classification rule involved, internal users include owners, managers and employees. Accounting statements fail when a loss is treated as increasing equity, when a flow is placed on the balance sheet, or when a ratio inequality is reversed.
+Threshold: more than 32.4% higher. Actual premium 39.3%.
 
-Once the overclaim or mislabel is exposed, the only consistent answer is false.', 'TRUE — Evaluated against the textbook standard, this assertion is correct. Asset A''s annual depreciation charge is more than 17.2% higher than Asset B''s annual depreciation charge.
+Reading the arithmetic against the claim: premium 39.3% versus more than 32.4% so the statement holds.
 
-This item belongs to the accounting block on financial versus management accounting. Ratio and classification questions ask you to connect a figure or comparison in the case with the correct statement category, not merely to recognise a number.
+The statement is true.', 'TRUE — Financial accounting reports for external users; management accounting is internal.
 
-From the figures or classification rule involved, asset a ≈ €22,500 a year versus asset b ≈ €4,000 a year. Accounting statements fail when a loss is treated as increasing equity, when a flow is placed on the balance sheet, or when a ratio inequality is reversed.
+A published extract for lenders or shareholders is financial accounting by purpose and audience.
 
-Every part of the claim aligns with the standard concept, so the statement stands.', 'TRUE — The claim is correct. A published version of the extract above, showing the combined asset cost of €114,000 thousand, is an example of external financial reporting that a lender might study before extending credit.
+Using the stem facts: "A published version of the extract above, showing the combined asset cost of €117,000 thousand, is an example of external financial reporting that a lender might study before extending credit."
 
-The underlying topic is financial versus management accounting. When figures appear, the exam checks whether you can interpret them in accounting terms—what increased, what ratio is implied, and whether the label (current, non-current, equity, and so on) fits.
+Short extracts still obey the same classification and measurement rules: current ratio, equity ratio, working capital, and straight-line depreciation (cost minus residual, spread over useful life).
 
-Apply the case evidence: Financial accounting reports are prepared for external users such as lenders and shareholders. Check whether the direction of change (higher/lower, above/below the threshold) matches what the statement asserts.
+The statement is true.', 'TRUE — Audits provide reasonable assurance, not absolute certainty.
 
-The reasoning chain is complete, so mark the statement true.', 'TRUE — This statement is correct. An independent audit of the extract above, including the the combined asset cost of €114,000 thousand, aims to give reasonable assurance that the figures are free from material misstatement, not an absolute guarantee.
+The auditor''s opinion addresses the risk of material misstatement in the financial statements. It is not a guarantee that every figure is exact or that the business will prosper.
 
-This item belongs to the accounting block on financial versus management accounting. Ratio and classification questions ask you to connect a figure or comparison in the case with the correct statement category, not merely to recognise a number.
+Applied to this stem: "An independent audit of the extract above, including the the combined asset cost of €117,000 thousand, aims to give reasonable assurance that the figures are free from material misstatement, not an absolute guarantee."
 
-From the figures or classification rule involved, audits provide reasonable, not absolute, assurance. Accounting statements fail when a loss is treated as increasing equity, when a flow is placed on the balance sheet, or when a ratio inequality is reversed.
+The statement is true.', 'TRUE — Financial accounting reports for external users; management accounting is internal.
 
-Every part of the claim aligns with the standard concept, so the statement stands.', 'FALSE — The claim is false. Because the extract above (the combined asset cost of €114,000 thousand) covers only one financial year, external users such as shareholders could not rely on it at all.
+A published extract for lenders or shareholders is financial accounting by purpose and audience.
 
-The underlying topic is financial versus management accounting. When figures appear, the exam checks whether you can interpret them in accounting terms—what increased, what ratio is implied, and whether the label (current, non-current, equity, and so on) fits.
+Using the stem facts: "Because the extract above discloses the combined asset cost of €117,000 thousand to outside parties, it is best described as financial accounting rather than management accounting."
 
-Apply the case evidence: External users routinely rely on single-year financial statements, often alongside prior-year comparatives. Check whether the direction of change (higher/lower, above/below the threshold) matches what the statement asserts.
+Short extracts still obey the same classification and measurement rules: current ratio, equity ratio, working capital, and straight-line depreciation (cost minus residual, spread over useful life).
 
-Watch the absolute wording "all": exam statements often sound plausible until a single scope word turns an otherwise familiar idea into an overclaim.
+The statement is true.'] WHERE case_id = 'CASE 6.4.016' AND tier = 'full';
+UPDATE public.economics_cases SET tactical_explanations = ARRAY['TRUE — Short extracts still obey the same classification and measurement rules: current ratio, equity ratio, working capital, and straight-line depreciation (cost minus residual, spread over useful life).
 
-Once the overclaim or mislabel is exposed, the only consistent answer is false.'] WHERE case_id = 'CASE 6.4.020' AND tier = 'full';
-UPDATE public.economics_cases SET tactical_explanations = ARRAY['TRUE — This statement is correct. Employees of a retailer work inside the business and can be given management accounting reports designed around their own questions.
+The wording matches the relevant rule for "Balance Sheet Structure Review 17". Short extracts still obey the same classification and measurement rules: current ratio, equity ratio, working capital, and straight-line depreciation (cost minus residual, spread over useful life). Applied here: "Unlike wages or energy costs, depreciation does not cause an actual cash payment in the period when it is charged."
 
-This is an accounting reasoning item on financial versus management accounting. Decide whether the sentence correctly describes how a transaction, balance-sheet line, or period result affects assets, liabilities, or equity.
+The statement is true.', 'FALSE — The current ratio is the standard liquidity cover of current assets over current liabilities.
 
-From the figures or classification rule involved, employees are internal users who can receive management accounting tailored to their needs. Accounting statements fail when a loss is treated as increasing equity, when a flow is placed on the balance sheet, or when a ratio inequality is reversed.
+Name the identity in words: current ratio = current assets ÷ current liabilities.
 
-The reasoning chain is complete, so mark the statement true.', 'FALSE — Evaluated against the textbook standard, this assertion is false. Investors of a manufacturer have no interest in the likely return and risk before committing further capital when they look at accounting information.
+Build current assets and current liabilities from the extract:
 
-This is an accounting reasoning item on financial versus management accounting. Decide whether the sentence correctly describes how a transaction, balance-sheet line, or period result affects assets, liabilities, or equity.
+$$
+CA = 82 + 161 + 92 = 335
+$$
 
-From the figures or classification rule involved, investors are typically concerned with the likely return and risk before committing further capital. Accounting statements fail when a loss is treated as increasing equity, when a flow is placed on the balance sheet, or when a ratio inequality is reversed.
+$$
+CL = 227 + 25 = 252
+$$
 
-Because the decisive detail is wrong, mark the statement false.', 'TRUE — This statement is correct. Employees of a retailer can be supplied with management accounting figures weekly or monthly, well before the annual financial accounting statements are finalised.
+$$
+\text{Current ratio} = \frac{335}{252} = 1.3294
+$$
 
-This is an accounting reasoning item on financial versus management accounting. Decide whether the sentence correctly describes how a transaction, balance-sheet line, or period result affects assets, liabilities, or equity.
+Claimed: is below 0.83. Actual 1.33.
 
-From the figures or classification rule involved, management accounting can reach internal users such as employees far more frequently than annual financial accounting. Accounting statements fail when a loss is treated as increasing equity, when a flow is placed on the balance sheet, or when a ratio inequality is reversed.
+Reading the arithmetic against the claim: actual current ratio 1.33 versus ''is below 0.83'' so the statement does not hold.
 
-No qualifying word breaks the definition or scenario, so the answer is true.', 'TRUE — The claim is correct. Reports prepared for employees of a retailer can be laid out however suits the decision at hand, unlike the standardised format required of financial accounting statements.
+The statement is false.', 'TRUE — The current ratio is the standard liquidity cover of current assets over current liabilities.
 
-The task tests financial versus management accounting. Financial statements distinguish stocks (balance sheet at a date) from flows (income and cash over a period); many false statements swap those roles.
+Name the identity in words: current ratio = current assets ÷ current liabilities.
 
-Apply the case evidence: Management accounting for internal users such as employees is flexible in format, unlike statutory financial accounting. Check whether the direction of change (higher/lower, above/below the threshold) matches what the statement asserts.
+Build current assets and current liabilities from the extract:
 
-No qualifying word breaks the definition or scenario, so the answer is true.', 'TRUE — The claim is correct. Owners of a retailer look at accounting information mainly to judge the return earned on the capital they have invested.
+$$
+CA = 82 + 161 + 92 = 335
+$$
 
-The task tests financial versus management accounting. Financial statements distinguish stocks (balance sheet at a date) from flows (income and cash over a period); many false statements swap those roles.
+$$
+CL = 227 + 25 = 252
+$$
 
-Apply the case evidence: Owners focus on the return earned on the capital they have invested when they use accounting information. Check whether the direction of change (higher/lower, above/below the threshold) matches what the statement asserts.
+$$
+\text{Current ratio} = \frac{335}{252} = 1.3294
+$$
 
-The reasoning chain is complete, so mark the statement true.'] WHERE case_id = 'CASE 6.4.021' AND tier = 'full';
-UPDATE public.economics_cases SET tactical_explanations = ARRAY['FALSE — This statement is false. Managerial accounting exists mainly to satisfy tax authorities rather than to support internal decisions.
+Claimed: exceeds 1.14. Actual 1.33.
 
-This is an accounting reasoning item on financial versus management accounting. Decide whether the sentence correctly describes how a transaction, balance-sheet line, or period result affects assets, liabilities, or equity.
+Reading the arithmetic against the claim: actual current ratio 1.33 versus ''exceeds 1.14'' so the statement holds.
 
-From the figures or classification rule involved, management accounting primarily supports internal decisions. Accounting statements fail when a loss is treated as increasing equity, when a flow is placed on the balance sheet, or when a ratio inequality is reversed.
+The statement is true.', 'FALSE — The acid-test (quick) ratio is a stricter liquidity test: inventory is removed from current assets before dividing by current liabilities.
 
-The statement sounds plausible but fails on precision, so it is false.', 'TRUE — The claim is correct. The current ratio exceeds 1.63.
+Name the identity in words: acid-test ratio = (current assets − inventory) ÷ current liabilities.
 
-The underlying topic is financial versus management accounting. When figures appear, the exam checks whether you can interpret them in accounting terms—what increased, what ratio is implied, and whether the label (current, non-current, equity, and so on) fits.
+$$
+CA = 335, \quad \text{Inventory} = 82, \quad CL = 252
+$$
 
-Apply the case evidence: Current ratio ≈ 1.68. Check whether the direction of change (higher/lower, above/below the threshold) matches what the statement asserts.
+$$
+CA - \text{Inventory} = 335 - 82 = 253
+$$
 
-Every part of the claim aligns with the standard concept, so the statement stands.', 'TRUE — Evaluated against the textbook standard, this assertion is correct. Working capital of €131 thousand is positive on this balance sheet.
+$$
+\text{Acid-test} = \frac{253}{252} = 1.0040
+$$
 
-This item belongs to the accounting block on financial versus management accounting. Ratio and classification questions ask you to connect a figure or comparison in the case with the correct statement category, not merely to recognise a number.
+Threshold: more than 1.17. Actual 1.00.
 
-From the figures or classification rule involved, working capital = 131. Accounting statements fail when a loss is treated as increasing equity, when a flow is placed on the balance sheet, or when a ratio inequality is reversed.
+Reading the arithmetic against the claim: acid-test 1.00 is not more than 1.17 so the statement does not hold.
 
-Every part of the claim aligns with the standard concept, so the statement stands.', 'FALSE — The claim is false. The equity ratio is below 39.8%.
+The statement is false.', 'TRUE — Working capital is the euro surplus (or deficit) of current assets over current liabilities on this balance sheet.
 
-The underlying topic is financial versus management accounting. When figures appear, the exam checks whether you can interpret them in accounting terms—what increased, what ratio is implied, and whether the label (current, non-current, equity, and so on) fits.
+Name the identity in words: working capital = current assets − current liabilities.
 
-Apply the case evidence: Equity ratio ≈ 40.8%. Check whether the direction of change (higher/lower, above/below the threshold) matches what the statement asserts.
+From the extract, current assets total 335 and current liabilities total 252:
 
-Because the decisive detail is wrong, mark the statement false.', 'TRUE — Evaluated against the textbook standard, this assertion is correct. The debt ratio exceeds 48.3%.
+$$
+WC = CA - CL
+$$
 
-This item belongs to the accounting block on financial versus management accounting. Ratio and classification questions ask you to connect a figure or comparison in the case with the correct statement category, not merely to recognise a number.
+$$
+CA = 335, \quad CL = 252
+$$
 
-From the figures or classification rule involved, debt ratio ≈ 59.2%. Accounting statements fail when a loss is treated as increasing equity, when a flow is placed on the balance sheet, or when a ratio inequality is reversed.
+$$
+WC = 335 - 252 = 83
+$$
 
-The reasoning chain is complete, so mark the statement true.'] WHERE case_id = 'CASE 6.4.022' AND tier = 'full';
-UPDATE public.economics_cases SET tactical_explanations = ARRAY['FALSE — On the Fuhrmann definition used in the entrance exam, the sentence is false. Only external users need accounting information; owners and managers do not.
+The statement cites working capital of €83 thousand and that it is positive. Calculated WC is 83, which is positive.
 
-The task tests financial versus management accounting. Financial statements distinguish stocks (balance sheet at a date) from flows (income and cash over a period); many false statements swap those roles.
+Reading the arithmetic against the claim: WC = 83 is positive as claimed so the statement holds.
 
-Apply the case evidence: Internal users include owners, managers and employees. Check whether the direction of change (higher/lower, above/below the threshold) matches what the statement asserts.
+The statement is true.'] WHERE case_id = 'CASE 6.4.017' AND tier = 'full';
+UPDATE public.economics_cases SET tactical_explanations = ARRAY['TRUE — Short extracts still obey the same classification and measurement rules: current ratio, equity ratio, working capital, and straight-line depreciation (cost minus residual, spread over useful life).
 
-Once the overclaim or mislabel is exposed, the only consistent answer is false.', 'FALSE — This statement is false. The equity ratio is below 39.6%.
+The wording matches the relevant rule for "Short Balance Sheet Extract 18". Short extracts still obey the same classification and measurement rules: current ratio, equity ratio, working capital, and straight-line depreciation (cost minus residual, spread over useful life). Applied here: "Auditing is the independent checking of accounts for authenticity by an auditing company."
 
-This item belongs to the accounting block on financial versus management accounting. Ratio and classification questions ask you to connect a figure or comparison in the case with the correct statement category, not merely to recognise a number.
+The statement is true.', 'FALSE — The equity ratio places equity against total assets so the financing structure can be judged on one balance sheet.
 
-From the figures or classification rule involved, equity ratio ≈ 68.4%. Accounting statements fail when a loss is treated as increasing equity, when a flow is placed on the balance sheet, or when a ratio inequality is reversed.
+Name the identity in words: equity ratio = equity ÷ total assets.
 
-The statement sounds plausible but fails on precision, so it is false.', 'TRUE — On the Fuhrmann definition used in the entrance exam, the sentence is correct. The current ratio exceeds 1.43.
+From the extract, equity = 288 and total assets = 504. Plug the figures step by step:
 
-The underlying topic is financial versus management accounting. When figures appear, the exam checks whether you can interpret them in accounting terms—what increased, what ratio is implied, and whether the label (current, non-current, equity, and so on) fits.
+$$
+ER = \frac{\text{equity}}{\text{total assets}}
+$$
 
-Apply the case evidence: Current ratio ≈ 2.51. Check whether the direction of change (higher/lower, above/below the threshold) matches what the statement asserts.
+$$
+ER = \frac{288}{504}
+$$
 
-No qualifying word breaks the definition or scenario, so the answer is true.', 'TRUE — This statement is correct. Inventory of €121 thousand is correctly classified as a current asset.
+$$
+ER = 57.1\%
+$$
 
-This item belongs to the accounting block on financial versus management accounting. Ratio and classification questions ask you to connect a figure or comparison in the case with the correct statement category, not merely to recognise a number.
+Claimed: is below 31.3%. Actual 57.1%.
 
-From the figures or classification rule involved, inventory is always current. Accounting statements fail when a loss is treated as increasing equity, when a flow is placed on the balance sheet, or when a ratio inequality is reversed.
+Reading the arithmetic against the claim: actual equity ratio 57.1% does not match ''is below 31.3%'' so the statement does not hold.
 
-No qualifying word breaks the definition or scenario, so the answer is true.', 'FALSE — Evaluated against the textbook standard, this assertion is false. The long-term bank loan of €96 thousand is correctly classified within equity.
+The statement is false.', 'FALSE — Borrowed funds are liabilities; equity is the owners'' residual interest.
 
-This item belongs to the accounting block on financial versus management accounting. Ratio and classification questions ask you to connect a figure or comparison in the case with the correct statement category, not merely to recognise a number.
+A bank loan creates an obligation to a lender and cannot be classified as equity.
 
-From the figures or classification rule involved, a loan is a liability, never equity. Accounting statements fail when a loss is treated as increasing equity, when a flow is placed on the balance sheet, or when a ratio inequality is reversed.
+Using the stem facts: "The long-term bank loan of €144 thousand is correctly classified within equity."
 
-The statement sounds plausible but fails on precision, so it is false.'] WHERE case_id = 'CASE 6.4.023' AND tier = 'full';
-UPDATE public.economics_cases SET tactical_explanations = ARRAY['FALSE — The claim is false. Managerial accounting exists mainly to satisfy tax authorities rather than to support internal decisions.
+Short extracts still obey the same classification and measurement rules: current ratio, equity ratio, working capital, and straight-line depreciation (cost minus residual, spread over useful life).
 
-The task tests financial versus management accounting. Financial statements distinguish stocks (balance sheet at a date) from flows (income and cash over a period); many false statements swap those roles.
+The statement is false.', 'FALSE — Single-year statements are routinely used, often with comparatives.
 
-Apply the case evidence: Management accounting primarily supports internal decisions. Check whether the direction of change (higher/lower, above/below the threshold) matches what the statement asserts.
+One year limits trends but does not make the extract useless to external users.
 
-Because the decisive detail is wrong, mark the statement false.', 'TRUE — The claim is correct. Asset A''s annual depreciation charge is more than 38.4% higher than Asset B''s annual depreciation charge.
+Using the stem facts: "Because the extract above (total assets of €504 thousand) covers only one financial year, external users such as shareholders could not rely on it at all."
 
-The underlying topic is financial versus management accounting. When figures appear, the exam checks whether you can interpret them in accounting terms—what increased, what ratio is implied, and whether the label (current, non-current, equity, and so on) fits.
+Short extracts still obey the same classification and measurement rules: current ratio, equity ratio, working capital, and straight-line depreciation (cost minus residual, spread over useful life).
 
-Apply the case evidence: Asset A ≈ €16,400 a year versus Asset B ≈ €7,200 a year. Check whether the direction of change (higher/lower, above/below the threshold) matches what the statement asserts.
+The statement is false.', 'TRUE — Inventory is held for sale or for consumption in the operating cycle.
 
-The reasoning chain is complete, so mark the statement true.', 'FALSE — Evaluated against the textbook standard, this assertion is false. Because the extract above (the combined asset cost of €120,000 thousand) covers only one financial year, external users such as shareholders could not rely on it at all.
+On the balance sheet that places inventory among current assets. It is not an intangible (no physical stock for sale) and not a non-current operating asset (those are used in the business beyond one year rather than turned over as stock).
 
-This item belongs to the accounting block on financial versus management accounting. Ratio and classification questions ask you to connect a figure or comparison in the case with the correct statement category, not merely to recognise a number.
+Applied to this stem: "Inventory of €145 thousand is correctly classified as a current asset."
 
-From the figures or classification rule involved, external users routinely rely on single-year financial statements, often alongside prior-year comparatives. Accounting statements fail when a loss is treated as increasing equity, when a flow is placed on the balance sheet, or when a ratio inequality is reversed.
+The statement is true.'] WHERE case_id = 'CASE 6.4.018' AND tier = 'full';
+UPDATE public.economics_cases SET tactical_explanations = ARRAY['TRUE — Short extracts still obey the same classification and measurement rules: current ratio, equity ratio, working capital, and straight-line depreciation (cost minus residual, spread over useful life).
 
-Watch the absolute wording "all": exam statements often sound plausible until a single scope word turns an otherwise familiar idea into an overclaim.
+The wording matches the relevant rule for "Investors and Published Statements". Short extracts still obey the same classification and measurement rules: current ratio, equity ratio, working capital, and straight-line depreciation (cost minus residual, spread over useful life). Applied here: "Lenders of a retailer are users outside day-to-day management, so they mainly rely on the business''s published financial accounting statements."
 
-Once the overclaim or mislabel is exposed, the only consistent answer is false.', 'TRUE — Evaluated against the textbook standard, this assertion is correct. A published version of the extract above, showing the combined asset cost of €120,000 thousand, is an example of external financial reporting that a lender might study before extending credit.
+The statement is true.', 'TRUE — Short extracts still obey the same classification and measurement rules: current ratio, equity ratio, working capital, and straight-line depreciation (cost minus residual, spread over useful life).
 
-This item belongs to the accounting block on financial versus management accounting. Ratio and classification questions ask you to connect a figure or comparison in the case with the correct statement category, not merely to recognise a number.
+The wording matches the relevant rule for "Investors and Published Statements". Short extracts still obey the same classification and measurement rules: current ratio, equity ratio, working capital, and straight-line depreciation (cost minus residual, spread over useful life). Applied here: "Lenders of a retailer normally receive formal accounting information no more often than once a year, when the financial accounting statements are published."
 
-From the figures or classification rule involved, financial accounting reports are prepared for external users such as lenders and shareholders. Accounting statements fail when a loss is treated as increasing equity, when a flow is placed on the balance sheet, or when a ratio inequality is reversed.
+The statement is true.', 'TRUE — Short extracts still obey the same classification and measurement rules: current ratio, equity ratio, working capital, and straight-line depreciation (cost minus residual, spread over useful life).
 
-The reasoning chain is complete, so mark the statement true.', 'FALSE — This statement is false. Internal management reports covering the same period as the extract above (the combined asset cost of €120,000 thousand) must follow the identical statutory format shown here.
+The wording matches the relevant rule for "Investors and Published Statements". Short extracts still obey the same classification and measurement rules: current ratio, equity ratio, working capital, and straight-line depreciation (cost minus residual, spread over useful life). Applied here: "Managers of a retailer work inside the business and can be given management accounting reports designed around their own questions."
 
-This item belongs to the accounting block on financial versus management accounting. Ratio and classification questions ask you to connect a figure or comparison in the case with the correct statement category, not merely to recognise a number.
+The statement is true.', 'TRUE — Short extracts still obey the same classification and measurement rules: current ratio, equity ratio, working capital, and straight-line depreciation (cost minus residual, spread over useful life).
 
-From the figures or classification rule involved, management accounting reports are flexible and internal; they are not bound by the statutory format of published financial statements. Accounting statements fail when a loss is treated as increasing equity, when a flow is placed on the balance sheet, or when a ratio inequality is reversed.
+The wording matches the relevant rule for "Investors and Published Statements". Short extracts still obey the same classification and measurement rules: current ratio, equity ratio, working capital, and straight-line depreciation (cost minus residual, spread over useful life). Applied here: "Managers of a retailer can be supplied with management accounting figures weekly or monthly, well before the annual financial accounting statements are finalised."
 
-The statement sounds plausible but fails on precision, so it is false.'] WHERE case_id = 'CASE 6.4.024' AND tier = 'full';
-UPDATE public.economics_cases SET tactical_explanations = ARRAY['TRUE — The claim is correct. Lenders of a retailer look at accounting information mainly to judge whether the business will be able to repay what it owes.
+The statement is true.', 'TRUE — Short extracts still obey the same classification and measurement rules: current ratio, equity ratio, working capital, and straight-line depreciation (cost minus residual, spread over useful life).
 
-The task tests financial versus management accounting. Financial statements distinguish stocks (balance sheet at a date) from flows (income and cash over a period); many false statements swap those roles.
+The wording matches the relevant rule for "Investors and Published Statements". Short extracts still obey the same classification and measurement rules: current ratio, equity ratio, working capital, and straight-line depreciation (cost minus residual, spread over useful life). Applied here: "Reports prepared for managers of a retailer can be laid out however suits the decision at hand, unlike the standardised format required of financial accounting statements."
 
-Apply the case evidence: Lenders focus on whether the business will be able to repay what it owes when they use accounting information. Check whether the direction of change (higher/lower, above/below the threshold) matches what the statement asserts.
+The statement is true.'] WHERE case_id = 'CASE 6.4.019' AND tier = 'full';
+UPDATE public.economics_cases SET tactical_explanations = ARRAY['FALSE — Short extracts still obey the same classification and measurement rules: current ratio, equity ratio, working capital, and straight-line depreciation (cost minus residual, spread over useful life).
 
-No qualifying word breaks the definition or scenario, so the answer is true.', 'TRUE — The claim is correct. Tax authorities of a retailer look at accounting information mainly to judge how much tax is due on the business''s profit.
+Absolute or misapplied wording conflicts with the rule for "Short Depreciation Extract 20". Short extracts still obey the same classification and measurement rules: current ratio, equity ratio, working capital, and straight-line depreciation (cost minus residual, spread over useful life). Rejected claim: "Only external users need accounting information; owners and managers do not."
 
-The task tests financial versus management accounting. Financial statements distinguish stocks (balance sheet at a date) from flows (income and cash over a period); many false statements swap those roles.
+The statement is false.', 'TRUE — Compare Asset A''s and Asset B''s straight-line annual charges.
 
-Apply the case evidence: Tax authorities focus on how much tax is due on the business''s profit when they use accounting information. Check whether the direction of change (higher/lower, above/below the threshold) matches what the statement asserts.
+$$
+A = 22,500, \quad B = 4,000
+$$
 
-The reasoning chain is complete, so mark the statement true.', 'TRUE — This statement is correct. Investors of a retailer look at accounting information mainly to judge the likely return and risk before committing further capital.
+$$
+\frac{22,500 - 4,000}{4,000} = 462.5\%
+$$
 
-This is an accounting reasoning item on financial versus management accounting. Decide whether the sentence correctly describes how a transaction, balance-sheet line, or period result affects assets, liabilities, or equity.
+Threshold: more than 17.2% higher. Actual premium 462.5%.
 
-From the figures or classification rule involved, investors focus on the likely return and risk before committing further capital when they use accounting information. Accounting statements fail when a loss is treated as increasing equity, when a flow is placed on the balance sheet, or when a ratio inequality is reversed.
+Reading the arithmetic against the claim: premium 462.5% versus more than 17.2% so the statement holds.
 
-Every part of the claim aligns with the standard concept, so the statement stands.', 'FALSE — The claim is false. Managers of a manufacturer have no interest in controlling costs and choosing between courses of action when they look at accounting information.
+The statement is true.', 'TRUE — Financial accounting reports for external users; management accounting is internal.
 
-The task tests financial versus management accounting. Financial statements distinguish stocks (balance sheet at a date) from flows (income and cash over a period); many false statements swap those roles.
+A published extract for lenders or shareholders is financial accounting by purpose and audience.
 
-Apply the case evidence: Managers are typically concerned with controlling costs and choosing between courses of action. Check whether the direction of change (higher/lower, above/below the threshold) matches what the statement asserts.
+Using the stem facts: "A published version of the extract above, showing the combined asset cost of €114,000 thousand, is an example of external financial reporting that a lender might study before extending credit."
 
-Because the decisive detail is wrong, mark the statement false.', 'TRUE — On the Fuhrmann definition used in the entrance exam, the sentence is correct. Managers of a retailer look at accounting information mainly to judge controlling costs and choosing between courses of action.
+Short extracts still obey the same classification and measurement rules: current ratio, equity ratio, working capital, and straight-line depreciation (cost minus residual, spread over useful life).
 
-The task tests financial versus management accounting. Financial statements distinguish stocks (balance sheet at a date) from flows (income and cash over a period); many false statements swap those roles.
+The statement is true.', 'TRUE — Audits provide reasonable assurance, not absolute certainty.
 
-Apply the case evidence: Managers focus on controlling costs and choosing between courses of action when they use accounting information. Check whether the direction of change (higher/lower, above/below the threshold) matches what the statement asserts.
+The auditor''s opinion addresses the risk of material misstatement in the financial statements. It is not a guarantee that every figure is exact or that the business will prosper.
 
-No qualifying word breaks the definition or scenario, so the answer is true.'] WHERE case_id = 'CASE 6.4.025' AND tier = 'full';
+Applied to this stem: "An independent audit of the extract above, including the the combined asset cost of €114,000 thousand, aims to give reasonable assurance that the figures are free from material misstatement, not an absolute guarantee."
+
+The statement is true.', 'FALSE — Single-year statements are routinely used, often with comparatives.
+
+One year limits trends but does not make the extract useless to external users.
+
+Using the stem facts: "Because the extract above (the combined asset cost of €114,000 thousand) covers only one financial year, external users such as shareholders could not rely on it at all."
+
+Short extracts still obey the same classification and measurement rules: current ratio, equity ratio, working capital, and straight-line depreciation (cost minus residual, spread over useful life).
+
+The statement is false.'] WHERE case_id = 'CASE 6.4.020' AND tier = 'full';
+UPDATE public.economics_cases SET tactical_explanations = ARRAY['TRUE — Short extracts still obey the same classification and measurement rules: current ratio, equity ratio, working capital, and straight-line depreciation (cost minus residual, spread over useful life).
+
+The wording matches the relevant rule for "Managers Controlling Costs Internally". Short extracts still obey the same classification and measurement rules: current ratio, equity ratio, working capital, and straight-line depreciation (cost minus residual, spread over useful life). Applied here: "Employees of a retailer work inside the business and can be given management accounting reports designed around their own questions."
+
+The statement is true.', 'FALSE — Short extracts still obey the same classification and measurement rules: current ratio, equity ratio, working capital, and straight-line depreciation (cost minus residual, spread over useful life).
+
+Absolute or misapplied wording conflicts with the rule for "Managers Controlling Costs Internally". Short extracts still obey the same classification and measurement rules: current ratio, equity ratio, working capital, and straight-line depreciation (cost minus residual, spread over useful life). Rejected claim: "Investors of a manufacturer have no interest in the likely return and risk before committing further capital when they look at accounting information."
+
+The statement is false.', 'TRUE — Short extracts still obey the same classification and measurement rules: current ratio, equity ratio, working capital, and straight-line depreciation (cost minus residual, spread over useful life).
+
+The wording matches the relevant rule for "Managers Controlling Costs Internally". Short extracts still obey the same classification and measurement rules: current ratio, equity ratio, working capital, and straight-line depreciation (cost minus residual, spread over useful life). Applied here: "Employees of a retailer can be supplied with management accounting figures weekly or monthly, well before the annual financial accounting statements are finalised."
+
+The statement is true.', 'TRUE — Short extracts still obey the same classification and measurement rules: current ratio, equity ratio, working capital, and straight-line depreciation (cost minus residual, spread over useful life).
+
+The wording matches the relevant rule for "Managers Controlling Costs Internally". Short extracts still obey the same classification and measurement rules: current ratio, equity ratio, working capital, and straight-line depreciation (cost minus residual, spread over useful life). Applied here: "Reports prepared for employees of a retailer can be laid out however suits the decision at hand, unlike the standardised format required of financial accounting statements."
+
+The statement is true.', 'TRUE — Short extracts still obey the same classification and measurement rules: current ratio, equity ratio, working capital, and straight-line depreciation (cost minus residual, spread over useful life).
+
+The wording matches the relevant rule for "Managers Controlling Costs Internally". Short extracts still obey the same classification and measurement rules: current ratio, equity ratio, working capital, and straight-line depreciation (cost minus residual, spread over useful life). Applied here: "Owners of a retailer look at accounting information mainly to judge the return earned on the capital they have invested."
+
+The statement is true.'] WHERE case_id = 'CASE 6.4.021' AND tier = 'full';
+UPDATE public.economics_cases SET tactical_explanations = ARRAY['FALSE — Short extracts still obey the same classification and measurement rules: current ratio, equity ratio, working capital, and straight-line depreciation (cost minus residual, spread over useful life).
+
+Absolute or misapplied wording conflicts with the rule for "Asset Composition Chart 22". Short extracts still obey the same classification and measurement rules: current ratio, equity ratio, working capital, and straight-line depreciation (cost minus residual, spread over useful life). Rejected claim: "Managerial accounting exists mainly to satisfy tax authorities rather than to support internal decisions."
+
+The statement is false.', 'TRUE — The current ratio is the standard liquidity cover of current assets over current liabilities.
+
+Name the identity in words: current ratio = current assets ÷ current liabilities.
+
+Build current assets and current liabilities from the extract:
+
+$$
+CA = 175 + 83 + 66 = 324
+$$
+
+$$
+CL = 141 + 52 = 193
+$$
+
+$$
+\text{Current ratio} = \frac{324}{193} = 1.6788
+$$
+
+Claimed: exceeds 1.63. Actual 1.68.
+
+Reading the arithmetic against the claim: actual current ratio 1.68 versus ''exceeds 1.63'' so the statement holds.
+
+The statement is true.', 'TRUE — Working capital is the euro surplus (or deficit) of current assets over current liabilities on this balance sheet.
+
+Name the identity in words: working capital = current assets − current liabilities.
+
+From the extract, current assets total 324 and current liabilities total 193:
+
+$$
+WC = CA - CL
+$$
+
+$$
+CA = 324, \quad CL = 193
+$$
+
+$$
+WC = 324 - 193 = 131
+$$
+
+The statement cites working capital of €131 thousand and that it is positive. Calculated WC is 131, which is positive.
+
+Reading the arithmetic against the claim: WC = 131 is positive as claimed so the statement holds.
+
+The statement is true.', 'FALSE — The equity ratio places equity against total assets so the financing structure can be judged on one balance sheet.
+
+Name the identity in words: equity ratio = equity ÷ total assets.
+
+From the extract, equity = 379 and total assets = 929. Plug the figures step by step:
+
+$$
+ER = \frac{\text{equity}}{\text{total assets}}
+$$
+
+$$
+ER = \frac{379}{929}
+$$
+
+$$
+ER = 40.8\%
+$$
+
+Claimed: is below 39.8%. Actual 40.8%.
+
+Reading the arithmetic against the claim: actual equity ratio 40.8% does not match ''is below 39.8%'' so the statement does not hold.
+
+The statement is false.', 'TRUE — The debt ratio places debt against total assets so the financing structure can be judged on one balance sheet.
+
+Name the identity in words: debt ratio = debt ÷ total assets.
+
+From the extract, debt = 550 and total assets = 929. Plug the figures step by step:
+
+$$
+DR = \frac{\text{debt}}{\text{total assets}}
+$$
+
+$$
+DR = \frac{550}{929}
+$$
+
+$$
+DR = 59.2\%
+$$
+
+Claimed: exceeds 48.3%. Actual 59.2%.
+
+Reading the arithmetic against the claim: actual debt ratio 59.2% matches ''exceeds 48.3%'' so the statement holds.
+
+The statement is true.'] WHERE case_id = 'CASE 6.4.022' AND tier = 'full';
+UPDATE public.economics_cases SET tactical_explanations = ARRAY['FALSE — Short extracts still obey the same classification and measurement rules: current ratio, equity ratio, working capital, and straight-line depreciation (cost minus residual, spread over useful life).
+
+Absolute or misapplied wording conflicts with the rule for "Short Balance Sheet Extract 23". Short extracts still obey the same classification and measurement rules: current ratio, equity ratio, working capital, and straight-line depreciation (cost minus residual, spread over useful life). Rejected claim: "Only external users need accounting information; owners and managers do not."
+
+The statement is false.', 'FALSE — The equity ratio places equity against total assets so the financing structure can be judged on one balance sheet.
+
+Name the identity in words: equity ratio = equity ÷ total assets.
+
+From the extract, equity = 359 and total assets = 525. Plug the figures step by step:
+
+$$
+ER = \frac{\text{equity}}{\text{total assets}}
+$$
+
+$$
+ER = \frac{359}{525}
+$$
+
+$$
+ER = 68.4\%
+$$
+
+Claimed: is below 39.6%. Actual 68.4%.
+
+Reading the arithmetic against the claim: actual equity ratio 68.4% does not match ''is below 39.6%'' so the statement does not hold.
+
+The statement is false.', 'TRUE — The current ratio is the standard liquidity cover of current assets over current liabilities.
+
+Name the identity in words: current ratio = current assets ÷ current liabilities.
+
+Build current assets and current liabilities from the extract:
+
+$$
+CA = 121 + 0 + 55 = 176
+$$
+
+$$
+CL = 70 + 0 = 70
+$$
+
+$$
+\text{Current ratio} = \frac{176}{70} = 2.5143
+$$
+
+Claimed: exceeds 1.43. Actual 2.51.
+
+Reading the arithmetic against the claim: actual current ratio 2.51 versus ''exceeds 1.43'' so the statement holds.
+
+The statement is true.', 'TRUE — Inventory is held for sale or for consumption in the operating cycle.
+
+On the balance sheet that places inventory among current assets. It is not an intangible (no physical stock for sale) and not a non-current operating asset (those are used in the business beyond one year rather than turned over as stock).
+
+Applied to this stem: "Inventory of €121 thousand is correctly classified as a current asset."
+
+The statement is true.', 'FALSE — Borrowed funds are liabilities; equity is the owners'' residual interest.
+
+A bank loan creates an obligation to a lender and cannot be classified as equity.
+
+Using the stem facts: "The long-term bank loan of €96 thousand is correctly classified within equity."
+
+Short extracts still obey the same classification and measurement rules: current ratio, equity ratio, working capital, and straight-line depreciation (cost minus residual, spread over useful life).
+
+The statement is false.'] WHERE case_id = 'CASE 6.4.023' AND tier = 'full';
+UPDATE public.economics_cases SET tactical_explanations = ARRAY['FALSE — Short extracts still obey the same classification and measurement rules: current ratio, equity ratio, working capital, and straight-line depreciation (cost minus residual, spread over useful life).
+
+Absolute or misapplied wording conflicts with the rule for "Short Depreciation Extract 24". Short extracts still obey the same classification and measurement rules: current ratio, equity ratio, working capital, and straight-line depreciation (cost minus residual, spread over useful life). Rejected claim: "Managerial accounting exists mainly to satisfy tax authorities rather than to support internal decisions."
+
+The statement is false.', 'TRUE — Compare Asset A''s and Asset B''s straight-line annual charges.
+
+$$
+A = 16,400, \quad B = 7,200
+$$
+
+$$
+\frac{16,400 - 7,200}{7,200} = 127.8\%
+$$
+
+Threshold: more than 38.4% higher. Actual premium 127.8%.
+
+Reading the arithmetic against the claim: premium 127.8% versus more than 38.4% so the statement holds.
+
+The statement is true.', 'FALSE — Single-year statements are routinely used, often with comparatives.
+
+One year limits trends but does not make the extract useless to external users.
+
+Using the stem facts: "Because the extract above (the combined asset cost of €120,000 thousand) covers only one financial year, external users such as shareholders could not rely on it at all."
+
+Short extracts still obey the same classification and measurement rules: current ratio, equity ratio, working capital, and straight-line depreciation (cost minus residual, spread over useful life).
+
+The statement is false.', 'TRUE — Financial accounting reports for external users; management accounting is internal.
+
+A published extract for lenders or shareholders is financial accounting by purpose and audience.
+
+Using the stem facts: "A published version of the extract above, showing the combined asset cost of €120,000 thousand, is an example of external financial reporting that a lender might study before extending credit."
+
+Short extracts still obey the same classification and measurement rules: current ratio, equity ratio, working capital, and straight-line depreciation (cost minus residual, spread over useful life).
+
+The statement is true.', 'FALSE — Management reports are not bound to the statutory published format.
+
+Internal management accounts may use whatever layout, detail, and frequency managers need. Statutory formats govern published financial statements, not internal packs.
+
+Applied to this stem: "Internal management reports covering the same period as the extract above (the combined asset cost of €120,000 thousand) must follow the identical statutory format shown here."
+
+The statement is false.'] WHERE case_id = 'CASE 6.4.024' AND tier = 'full';
+UPDATE public.economics_cases SET tactical_explanations = ARRAY['TRUE — Short extracts still obey the same classification and measurement rules: current ratio, equity ratio, working capital, and straight-line depreciation (cost minus residual, spread over useful life).
+
+The wording matches the relevant rule for "Employees and Job Security". Short extracts still obey the same classification and measurement rules: current ratio, equity ratio, working capital, and straight-line depreciation (cost minus residual, spread over useful life). Applied here: "Lenders of a retailer look at accounting information mainly to judge whether the business will be able to repay what it owes."
+
+The statement is true.', 'TRUE — Short extracts still obey the same classification and measurement rules: current ratio, equity ratio, working capital, and straight-line depreciation (cost minus residual, spread over useful life).
+
+The wording matches the relevant rule for "Employees and Job Security". Short extracts still obey the same classification and measurement rules: current ratio, equity ratio, working capital, and straight-line depreciation (cost minus residual, spread over useful life). Applied here: "Tax authorities of a retailer look at accounting information mainly to judge how much tax is due on the business''s profit."
+
+The statement is true.', 'TRUE — Short extracts still obey the same classification and measurement rules: current ratio, equity ratio, working capital, and straight-line depreciation (cost minus residual, spread over useful life).
+
+The wording matches the relevant rule for "Employees and Job Security". Short extracts still obey the same classification and measurement rules: current ratio, equity ratio, working capital, and straight-line depreciation (cost minus residual, spread over useful life). Applied here: "Investors of a retailer look at accounting information mainly to judge the likely return and risk before committing further capital."
+
+The statement is true.', 'FALSE — Short extracts still obey the same classification and measurement rules: current ratio, equity ratio, working capital, and straight-line depreciation (cost minus residual, spread over useful life).
+
+Absolute or misapplied wording conflicts with the rule for "Employees and Job Security". Short extracts still obey the same classification and measurement rules: current ratio, equity ratio, working capital, and straight-line depreciation (cost minus residual, spread over useful life). Rejected claim: "Managers of a manufacturer have no interest in controlling costs and choosing between courses of action when they look at accounting information."
+
+The statement is false.', 'TRUE — Short extracts still obey the same classification and measurement rules: current ratio, equity ratio, working capital, and straight-line depreciation (cost minus residual, spread over useful life).
+
+The wording matches the relevant rule for "Employees and Job Security". Short extracts still obey the same classification and measurement rules: current ratio, equity ratio, working capital, and straight-line depreciation (cost minus residual, spread over useful life). Applied here: "Managers of a retailer look at accounting information mainly to judge controlling costs and choosing between courses of action."
+
+The statement is true.'] WHERE case_id = 'CASE 6.4.025' AND tier = 'full';

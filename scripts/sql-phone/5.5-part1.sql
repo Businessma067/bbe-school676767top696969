@@ -1,806 +1,933 @@
 -- Update expanded explanations for 5.5-part1 (25 cases).
 -- Safe to re-run: only updates tactical_explanations.
 
-UPDATE public.economics_cases SET tactical_explanations = ARRAY['TRUE — On the Fuhrmann definition used in the entrance exam, the sentence is correct. Primary market research may gather information through questionnaires administered to hundreds of respondents designed for the specific interests of the business.
+UPDATE public.economics_cases SET tactical_explanations = ARRAY['TRUE — Primary market research collects new data for the firm''s own questions — questionnaires, interviews, online surveys, or studies run by a research institute — tailored but often costly.
 
-This statement draws on market research methods and interpretation. Treat it as a checklist against the core concept named in the stem, not as a general opinion about business.
+On this stem (Primary market research): primary research uses tailored empirical methods such as questionnaires administered to hundreds of respondents to collect data for the firm. Under that definition the assertion is the right description of the situation.
 
-In this setting, primary research uses tailored empirical methods such as questionnaires administered to hundreds of respondents to collect data for the firm. The wording matches the textbook relationship without adding extra conditions.
+Under that definition the assertion is the right description of the situation.
 
-The reasoning chain is complete, so mark the statement true.', 'FALSE — On the Fuhrmann definition used in the entrance exam, the sentence is false. Secondary information is gathered by administering a new questionnaire programme designed solely for the commissioning business.
+The statement is true.
+', 'FALSE — Secondary information reuses research already produced by others (government, associations, published reports). It is often cheaper or free, but usually more general and less tailored.
 
-This statement draws on market research methods and interpretation. Treat it as a checklist against the core concept named in the stem, not as a general opinion about business.
+On this stem (Secondary information): new bespoke questionnaires produce primary information, not secondary data. The mislabelled category or reversed comparison is enough to reject the claim.
 
-Applied to this claim, new bespoke questionnaires produce primary information, not secondary data. That is why the sentence does not survive careful reading.
+The mislabelled category or reversed comparison is enough to reject the claim.
 
-The statement sounds plausible but fails on precision, so it is false.', 'TRUE — This statement is correct. Primary market research may gather information through personal interviews with selected buyers designed for the specific interests of the business.
+The statement is false.
+', 'TRUE — Primary market research collects new data for the firm''s own questions — questionnaires, interviews, online surveys, or studies run by a research institute — tailored but often costly.
 
-The relevant theory comes from market research methods and interpretation. Identify which definition or relationship the sentence is trying to test before deciding true or false.
+On this stem (Primary market research): primary research uses tailored empirical methods such as personal interviews with selected buyers to collect data for the firm. Nothing in the wording contradicts that marketing test, so the claim is sound.
 
-Applied carefully, primary research uses tailored empirical methods such as personal interviews with selected buyers to collect data for the firm. Nothing in the sentence stretches the concept beyond its standard use.
+Nothing in the wording contradicts that marketing test, so the claim is sound.
 
-Every part of the claim aligns with the standard concept, so the statement stands.', 'TRUE — On the Fuhrmann definition used in the entrance exam, the sentence is correct. Primary market research may gather information through online surveys distributed to a defined sample designed for the specific interests of the business.
+The statement is true.
+', 'TRUE — Primary market research collects new data for the firm''s own questions — questionnaires, interviews, online surveys, or studies run by a research institute — tailored but often costly.
 
-This statement draws on market research methods and interpretation. Treat it as a checklist against the core concept named in the stem, not as a general opinion about business.
+On this stem (Primary market research): primary research uses tailored empirical methods such as online surveys distributed to a defined sample to collect data for the firm. Nothing in the wording contradicts that marketing test, so the claim is sound.
 
-In this setting, primary research uses tailored empirical methods such as online surveys distributed to a defined sample to collect data for the firm. The wording matches the textbook relationship without adding extra conditions.
+Nothing in the wording contradicts that marketing test, so the claim is sound.
 
-The reasoning chain is complete, so mark the statement true.', 'TRUE — Evaluated against the textbook standard, this assertion is correct. Primary market research may gather information through empirical studies commissioned from a market research institute designed for the specific interests of the business.
+The statement is true.
+', 'TRUE — Primary market research collects new data for the firm''s own questions — questionnaires, interviews, online surveys, or studies run by a research institute — tailored but often costly.
 
-The relevant theory comes from market research methods and interpretation. Identify which definition or relationship the sentence is trying to test before deciding true or false.
+On this stem (Primary market research): primary research uses tailored empirical methods such as empirical studies commissioned from a market research institute to collect data for the firm. Nothing in the wording contradicts that marketing test, so the claim is sound.
 
-Applied carefully, primary research uses tailored empirical methods such as empirical studies commissioned from a market research institute to collect data for the firm. Nothing in the sentence stretches the concept beyond its standard use.
+Nothing in the wording contradicts that marketing test, so the claim is sound.
 
-No qualifying word breaks the definition or scenario, so the answer is true.'] WHERE case_id = 'CASE 5.5.01' AND tier = 'full';
-UPDATE public.economics_cases SET tactical_explanations = ARRAY['TRUE — On the Fuhrmann definition used in the entrance exam, the sentence is correct. Primary information is gained by conducting an empirical study or having data collected by a market research institute.
+The statement is true.
+'] WHERE case_id = 'CASE 5.5.01' AND tier = 'full';
+UPDATE public.economics_cases SET tactical_explanations = ARRAY['TRUE — Primary market research collects new data for the firm''s own questions — questionnaires, interviews, online surveys, or studies run by a research institute — tailored but often costly.
 
-This statement draws on market research methods and interpretation. Treat it as a checklist against the core concept named in the stem, not as a general opinion about business.
+The textbook defines primary information as data from a new empirical study or institute collection. The sentence therefore reports the concept accurately for this case.
 
-In this setting, the textbook defines primary information as data from a new empirical study or institute collection. The wording matches the textbook relationship without adding extra conditions.
+The sentence therefore reports the concept accurately for this case.
 
-Every part of the claim aligns with the standard concept, so the statement stands.', 'TRUE — This statement is correct. A primary study can be tailored to the needs and interests of the business commissioning the research.
+The statement is true.
+', 'TRUE — Primary market research collects new data for the firm''s own questions — questionnaires, interviews, online surveys, or studies run by a research institute — tailored but often costly.
 
-The relevant theory comes from market research methods and interpretation. Identify which definition or relationship the sentence is trying to test before deciding true or false.
+Primary research is designed around the commissioning firm''s specific questions and interests. The sentence therefore reports the concept accurately for this case.
 
-Applied carefully, primary research is designed around the commissioning firm''s specific questions and interests. Nothing in the sentence stretches the concept beyond its standard use.
+The sentence therefore reports the concept accurately for this case.
 
-The reasoning chain is complete, so mark the statement true.', 'TRUE — On the Fuhrmann definition used in the entrance exam, the sentence is correct. Administering large questionnaire programmes and analysing the responses is a major cost of primary market research.
+The statement is true.
+', 'TRUE — Primary market research collects new data for the firm''s own questions — questionnaires, interviews, online surveys, or studies run by a research institute — tailored but often costly.
 
-This statement draws on market research methods and interpretation. Treat it as a checklist against the core concept named in the stem, not as a general opinion about business.
+On this stem (primary market research): questionnaire administration and data analysis contribute to the high cost of primary research. Under that definition the assertion is the right description of the situation.
 
-In this setting, questionnaire administration and data analysis contribute to the high cost of primary research. The wording matches the textbook relationship without adding extra conditions.
+Under that definition the assertion is the right description of the situation.
 
-Every part of the claim aligns with the standard concept, so the statement stands.', 'TRUE — On the Fuhrmann definition used in the entrance exam, the sentence is correct. Conducting personal or telephone interviews as part of market research requires substantial expenditure on data collection.
+The statement is true.
+', 'TRUE — Market research supplies evidence on customers, competitors, and the industry so the firm can judge position and prospects.
 
-This statement draws on market research methods and interpretation. Treat it as a checklist against the core concept named in the stem, not as a general opinion about business.
+Interview-based primary research involves significant collection and processing costs. Nothing in the wording contradicts that marketing test, so the claim is sound.
 
-In this setting, interview-based primary research involves significant collection and processing costs. The wording matches the textbook relationship without adding extra conditions.
+Nothing in the wording contradicts that marketing test, so the claim is sound.
 
-No qualifying word breaks the definition or scenario, so the answer is true.', 'TRUE — Evaluated against the textbook standard, this assertion is correct. Setting up and interpreting an online survey still involves analysis costs that make primary research expensive.
+The statement is true.
+', 'TRUE — Primary market research collects new data for the firm''s own questions — questionnaires, interviews, online surveys, or studies run by a research institute — tailored but often costly.
 
-The relevant theory comes from market research methods and interpretation. Identify which definition or relationship the sentence is trying to test before deciding true or false.
+Online surveys remain primary research and carry analysis costs noted in the chapter. Nothing in the wording contradicts that marketing test, so the claim is sound.
 
-Applied carefully, online surveys remain primary research and carry analysis costs noted in the chapter. Nothing in the sentence stretches the concept beyond its standard use.
+Nothing in the wording contradicts that marketing test, so the claim is sound.
 
-Every part of the claim aligns with the standard concept, so the statement stands.'] WHERE case_id = 'CASE 5.5.02' AND tier = 'full';
-UPDATE public.economics_cases SET tactical_explanations = ARRAY['TRUE — Evaluated against the textbook standard, this assertion is correct. Small businesses often cannot afford extensive primary market research because of the cost of large-scale data collection.
+The statement is true.
+'] WHERE case_id = 'CASE 5.5.02' AND tier = 'full';
+UPDATE public.economics_cases SET tactical_explanations = ARRAY['TRUE — Primary market research collects new data for the firm''s own questions — questionnaires, interviews, online surveys, or studies run by a research institute — tailored but often costly.
 
-The topic is market research methods and interpretation, but the decisive skill here is reading quantifiers. Words such as never, always, only, or all turn a generally true idea into a claim that can be rejected by one routine counterexample.
+On this stem (primary market research): the chapter notes that especially small businesses struggle to fund costly primary studies. Nothing in the wording contradicts that marketing test, so the claim is sound.
 
-Applied carefully, the chapter notes that especially small businesses struggle to fund costly primary studies. Nothing in the sentence stretches the concept beyond its standard use.
+Nothing in the wording contradicts that marketing test, so the claim is sound.
 
-Every part of the claim aligns with the standard concept, so the statement stands.', 'TRUE — The claim is correct. Primary research allows a business to ask who its customers are and which products they buy in a study designed for that firm.
+The statement is true.
+', 'TRUE — Primary market research collects new data for the firm''s own questions — questionnaires, interviews, online surveys, or studies run by a research institute — tailored but often costly.
 
-This statement draws on market research methods and interpretation. Treat it as a checklist against the core concept named in the stem, not as a general opinion about business.
+On this stem (Primary research): tailored primary studies can target firm-specific who and what customer questions. Under that definition the assertion is the right description of the situation.
 
-In this setting, tailored primary studies can target firm-specific who and what customer questions. The wording matches the textbook relationship without adding extra conditions.
+Under that definition the assertion is the right description of the situation.
 
-The reasoning chain is complete, so mark the statement true.', 'FALSE — Evaluated against the textbook standard, this assertion is false. Primary market research reuses published government statistics without collecting any new empirical data.
+The statement is true.
+', 'FALSE — Primary market research collects new data for the firm''s own questions — questionnaires, interviews, online surveys, or studies run by a research institute — tailored but often costly.
 
-The relevant theory comes from market research methods and interpretation. Identify which definition or relationship the sentence is trying to test before deciding true or false.
+On this stem (Primary market research): reusing published statistics is secondary research; primary requires new empirical collection. Once the defining feature is restored, the assertion falls away.
 
-The statement overreaches because reusing published statistics is secondary research; primary requires new empirical collection. The trap is to agree with the topic while missing the one detail that breaks the logic.
+Once the defining feature is restored, the assertion falls away.
 
-The statement sounds plausible but fails on precision, so it is false.', 'TRUE — On the Fuhrmann definition used in the entrance exam, the sentence is correct. Primary research can investigate how much customers are willing to pay and what support they expect from a supplier.
+The statement is false.
+', 'TRUE — Primary market research collects new data for the firm''s own questions — questionnaires, interviews, online surveys, or studies run by a research institute — tailored but often costly.
 
-This statement draws on market research methods and interpretation. Treat it as a checklist against the core concept named in the stem, not as a general opinion about business.
+Willingness to pay and support needs are examples of questions primary research can address. Under that definition the assertion is the right description of the situation.
 
-In this setting, willingness to pay and support needs are examples of questions primary research can address. The wording matches the textbook relationship without adding extra conditions.
+Under that definition the assertion is the right description of the situation.
 
-The reasoning chain is complete, so mark the statement true.', 'FALSE — On the Fuhrmann definition used in the entrance exam, the sentence is false. Market share is calculated by dividing total market sales by the sales of one business.
+The statement is true.
+', 'FALSE — Market research supplies evidence on customers, competitors, and the industry so the firm can judge position and prospects.
 
-This statement draws on market research methods and interpretation. Treat it as a checklist against the core concept named in the stem, not as a general opinion about business.
+Market share divides business sales by total market sales, not the reverse. The mislabelled category or reversed comparison is enough to reject the claim.
 
-Applied to this claim, market share divides business sales by total market sales, not the reverse. That is why the sentence does not survive careful reading.
+The mislabelled category or reversed comparison is enough to reject the claim.
 
-The statement sounds plausible but fails on precision, so it is false.'] WHERE case_id = 'CASE 5.5.03' AND tier = 'full';
-UPDATE public.economics_cases SET tactical_explanations = ARRAY['FALSE — Evaluated against the textbook standard, this assertion is false. Absolute market share equals the largest competitor''s sales divided by the firm''s own sales volume.
+The statement is false.
+'] WHERE case_id = 'CASE 5.5.03' AND tier = 'full';
+UPDATE public.economics_cases SET tactical_explanations = ARRAY['FALSE — Absolute market share equals one business''s (or brand''s) sales divided by total market volume. It informs the firm and investors but says little alone about rivals'' relative strength.
 
-The relevant theory comes from market research methods and interpretation. Identify which definition or relationship the sentence is trying to test before deciding true or false.
+On this stem (market share): absolute share uses firm sales over market volume, not rival sales over firm sales. The mislabelled category or reversed comparison is enough to reject the claim.
 
-The statement overreaches because absolute share uses firm sales over market volume, not rival sales over firm sales. The trap is to agree with the topic while missing the one detail that breaks the logic.
+The mislabelled category or reversed comparison is enough to reject the claim.
 
-Once the overclaim or mislabel is exposed, the only consistent answer is false.', 'TRUE — On the Fuhrmann definition used in the entrance exam, the sentence is correct. Primary research can compare answers from different customer groups such as older and younger users or men and women.
+The statement is false.
+', 'TRUE — Primary market research collects new data for the firm''s own questions — questionnaires, interviews, online surveys, or studies run by a research institute — tailored but often costly.
 
-This statement draws on market research methods and interpretation. Treat it as a checklist against the core concept named in the stem, not as a general opinion about business.
+On this stem (Primary research): demographic comparisons within a tailored primary study are part of customer analysis. The sentence therefore reports the concept accurately for this case.
 
-In this setting, demographic comparisons within a tailored primary study are part of customer analysis. The wording matches the textbook relationship without adding extra conditions.
+The sentence therefore reports the concept accurately for this case.
 
-Every part of the claim aligns with the standard concept, so the statement stands.', 'FALSE — On the Fuhrmann definition used in the entrance exam, the sentence is false. Relative market share equals the firm''s sales volume divided by total market volume expressed as a percentage.
+The statement is true.
+', 'FALSE — Relative market share equals the firm''s market share divided by the largest competitor''s market share, putting own performance in competitive context.
 
-This statement draws on market research methods and interpretation. Treat it as a checklist against the core concept named in the stem, not as a general opinion about business.
+On this stem (market share): that formula describes absolute share; relative share compares with the leader''s share. Once the defining feature is restored, the assertion falls away.
 
-Applied to this claim, that formula describes absolute share; relative share compares with the leader''s share. That is why the sentence does not survive careful reading.
+Once the defining feature is restored, the assertion falls away.
 
-Once the overclaim or mislabel is exposed, the only consistent answer is false.', 'TRUE — This statement is correct. Primary data collection through interviews lets a firm explore why customers prefer one product over close substitutes.
+The statement is false.
+', 'TRUE — Primary market research collects new data for the firm''s own questions — questionnaires, interviews, online surveys, or studies run by a research institute — tailored but often costly.
 
-The relevant theory comes from market research methods and interpretation. Identify which definition or relationship the sentence is trying to test before deciding true or false.
+Why-customer motives can be explored through primary interview research. The sentence therefore reports the concept accurately for this case.
 
-Applied carefully, why-customer motives can be explored through primary interview research. Nothing in the sentence stretches the concept beyond its standard use.
+The sentence therefore reports the concept accurately for this case.
 
-Every part of the claim aligns with the standard concept, so the statement stands.', 'TRUE — On the Fuhrmann definition used in the entrance exam, the sentence is correct. An empirical primary study can be shaped around the distribution channels a business wishes to evaluate.
+The statement is true.
+', 'TRUE — Primary market research collects new data for the firm''s own questions — questionnaires, interviews, online surveys, or studies run by a research institute — tailored but often costly.
 
-This statement draws on market research methods and interpretation. Treat it as a checklist against the core concept named in the stem, not as a general opinion about business.
+Primary research can be tailored to test where customers prefer to buy. Nothing in the wording contradicts that marketing test, so the claim is sound.
 
-In this setting, primary research can be tailored to test where customers prefer to buy. The wording matches the textbook relationship without adding extra conditions.
+Nothing in the wording contradicts that marketing test, so the claim is sound.
 
-Every part of the claim aligns with the standard concept, so the statement stands.'] WHERE case_id = 'CASE 5.5.04' AND tier = 'full';
-UPDATE public.economics_cases SET tactical_explanations = ARRAY['TRUE — On the Fuhrmann definition used in the entrance exam, the sentence is correct. Primary research may track when customers purchase so that seasonal patterns are identified from newly collected data.
+The statement is true.
+'] WHERE case_id = 'CASE 5.5.04' AND tier = 'full';
+UPDATE public.economics_cases SET tactical_explanations = ARRAY['TRUE — Primary market research collects new data for the firm''s own questions — questionnaires, interviews, online surveys, or studies run by a research institute — tailored but often costly.
 
-The scenario is a worked example of market research methods and interpretation. Translate the story into the textbook category first; only then judge whether the sentence describes that category accurately.
+On this stem (Primary research): when-customer timing can be captured directly in a primary empirical study. The sentence therefore reports the concept accurately for this case.
 
-In this setting, when-customer timing can be captured directly in a primary empirical study. The wording matches the textbook relationship without adding extra conditions.
+The sentence therefore reports the concept accurately for this case.
 
-No qualifying word breaks the definition or scenario, so the answer is true.', 'FALSE — Evaluated against the textbook standard, this assertion is false. Market size refers only to the sales volume of one business rather than all businesses in the market.
+The statement is true.
+', 'FALSE — Market size/volume is total sales of all firms (value or quantity). Market potential adds still-unserved buyers; a firm''s sales potential exceeds its current sales volume when further gains are possible.
 
-The topic is market research methods and interpretation, but the decisive skill here is reading quantifiers. Words such as never, always, only, or all turn a generally true idea into a claim that can be rejected by one routine counterexample.
+Market size is total sales of all firms in the market, not one firm alone. One clear counterexample under the right criterion is enough to reject the sentence.
 
-The statement overreaches because market size is total sales of all firms in the market, not one firm alone. The trap is to agree with the topic while missing the one detail that breaks the logic.
+One clear counterexample under the right criterion is enough to reject the sentence.
 
-Watch the absolute wording "all": exam statements often sound plausible until a single scope word turns an otherwise familiar idea into an overclaim.
+The statement is false.
+', 'FALSE — Market size/volume is total sales of all firms (value or quantity). Market potential adds still-unserved buyers; a firm''s sales potential exceeds its current sales volume when further gains are possible.
 
-Because the decisive detail is wrong, mark the statement false.', 'FALSE — Evaluated against the textbook standard, this assertion is false. Market potential is always equal to current market volume because every customer already purchases in the market.
+The chapter assumes potential can exceed volume when unconverted customers remain. Those restricting words stretch a limited idea past what marketing allows.
 
-The topic is market research methods and interpretation, but the decisive skill here is reading quantifiers. Words such as never, always, only, or all turn a generally true idea into a claim that can be rejected by one routine counterexample.
+Those restricting words stretch a limited idea past what marketing allows.
 
-The statement overreaches because the chapter assumes potential can exceed volume when unconverted customers remain. The trap is to agree with the topic while missing the one detail that breaks the logic.
+The statement is false.
+', 'FALSE — Market size/volume is total sales of all firms (value or quantity). Market potential adds still-unserved buyers; a firm''s sales potential exceeds its current sales volume when further gains are possible.
 
-Watch the absolute wording "always": exam statements often sound plausible until a single scope word turns an otherwise familiar idea into an overclaim.
+Sales potential may exceed current sales volume through gains and market growth. One clear counterexample under the right criterion is enough to reject the sentence.
 
-Once the overclaim or mislabel is exposed, the only consistent answer is false.', 'FALSE — This statement is false. Sales potential cannot exceed current sales volume once the firm has published its annual revenue figure.
+One clear counterexample under the right criterion is enough to reject the sentence.
 
-The topic is market research methods and interpretation, but the decisive skill here is reading quantifiers. Words such as never, always, only, or all turn a generally true idea into a claim that can be rejected by one routine counterexample.
+The statement is false.
+', 'FALSE — Secondary information reuses research already produced by others (government, associations, published reports). It is often cheaper or free, but usually more general and less tailored.
 
-The statement overreaches because sales potential may exceed current sales volume through gains and market growth. The trap is to agree with the topic while missing the one detail that breaks the logic.
+On this stem (Secondary research): secondary information is usually general and not tailored to one firm. The absolute wording is what breaks the claim once the correct test is applied.
 
-Watch the absolute wording "cannot": exam statements often sound plausible until a single scope word turns an otherwise familiar idea into an overclaim.
+The absolute wording is what breaks the claim once the correct test is applied.
 
-The statement sounds plausible but fails on precision, so it is false.', 'FALSE — On the Fuhrmann definition used in the entrance exam, the sentence is false. Secondary research is always tailored to the specific interests of the business that reads the report.
+The statement is false.
+'] WHERE case_id = 'CASE 5.5.05' AND tier = 'full';
+UPDATE public.economics_cases SET tactical_explanations = ARRAY['TRUE — Primary market research collects new data for the firm''s own questions — questionnaires, interviews, online surveys, or studies run by a research institute — tailored but often costly.
 
-Although the subject matter is market research methods and interpretation, this is really a logic check on overstatement. Non-profit surpluses, mixed economies, and partial market failure are classic cases where absolute wording fails.
+Institute collection on behalf of the business is primary information in the textbook framework. Nothing in the wording contradicts that marketing test, so the claim is sound.
 
-Applied to this claim, secondary information is usually general and not tailored to one firm. That is why the sentence does not survive careful reading.
+Nothing in the wording contradicts that marketing test, so the claim is sound.
 
-Watch the absolute wording "always": exam statements often sound plausible until a single scope word turns an otherwise familiar idea into an overclaim.
+The statement is true.
+', 'TRUE — Primary market research collects new data for the firm''s own questions — questionnaires, interviews, online surveys, or studies run by a research institute — tailored but often costly.
 
-The statement sounds plausible but fails on precision, so it is false.'] WHERE case_id = 'CASE 5.5.05' AND tier = 'full';
-UPDATE public.economics_cases SET tactical_explanations = ARRAY['TRUE — On the Fuhrmann definition used in the entrance exam, the sentence is correct. Commissioning a market research institute to collect data is a recognised way of obtaining primary information.
+Tailored primary research fills gaps left by non-specific secondary data. Under that definition the assertion is the right description of the situation.
 
-This statement draws on market research methods and interpretation. Treat it as a checklist against the core concept named in the stem, not as a general opinion about business.
+Under that definition the assertion is the right description of the situation.
 
-In this setting, institute collection on behalf of the business is primary information in the textbook framework. The wording matches the textbook relationship without adding extra conditions.
+The statement is true.
+', 'TRUE — Primary market research collects new data for the firm''s own questions — questionnaires, interviews, online surveys, or studies run by a research institute — tailored but often costly.
 
-No qualifying word breaks the definition or scenario, so the answer is true.', 'TRUE — This statement is correct. Primary research is appropriate when a business needs buyer-specific detail that general published statistics cannot supply.
+Large-scale questionnaires produce primary information when gathered for the firm''s study. Under that definition the assertion is the right description of the situation.
 
-The topic is market research methods and interpretation, but the decisive skill here is reading quantifiers. Words such as never, always, only, or all turn a generally true idea into a claim that can be rejected by one routine counterexample.
+Under that definition the assertion is the right description of the situation.
 
-Applied carefully, tailored primary research fills gaps left by non-specific secondary data. Nothing in the sentence stretches the concept beyond its standard use.
+The statement is true.
+', 'FALSE — Primary market research collects new data for the firm''s own questions — questionnaires, interviews, online surveys, or studies run by a research institute — tailored but often costly.
 
-Every part of the claim aligns with the standard concept, so the statement stands.', 'TRUE — This statement is correct. Questionnaires distributed to thousands of respondents represent primary data because they are collected for the commissioning study.
+Primary research is costly due to collection and analysis, especially for small firms. Once the defining feature is restored, the assertion falls away.
 
-Here you must apply ideas from market research methods and interpretation to a concrete situation rather than recite a definition from memory. Ownership, customer type, stakeholder group, or country of production usually decides the verdict.
+Once the defining feature is restored, the assertion falls away.
 
-Applied carefully, large-scale questionnaires produce primary information when gathered for the firm''s study. Nothing in the sentence stretches the concept beyond its standard use.
+The statement is false.
+', 'FALSE — Customer analysis asks who buys (and who influences), what buyers do with the product, where and when they buy, and why they prefer one offer — guiding distribution, seasonality, development, and share strategy.
 
-The reasoning chain is complete, so mark the statement true.', 'FALSE — Evaluated against the textbook standard, this assertion is false. Primary research is free of charge because the business designs the questions itself.
+Why-customers choose is an explicit customer-analysis dimension. The mislabelled category or reversed comparison is enough to reject the claim.
 
-Here you must apply ideas from market research methods and interpretation to a concrete situation rather than recite a definition from memory. Ownership, customer type, stakeholder group, or country of production usually decides the verdict.
+The mislabelled category or reversed comparison is enough to reject the claim.
 
-The statement overreaches because primary research is costly due to collection and analysis, especially for small firms. The trap is to agree with the topic while missing the one detail that breaks the logic.
+The statement is false.
+'] WHERE case_id = 'CASE 5.5.06' AND tier = 'full';
+UPDATE public.economics_cases SET tactical_explanations = ARRAY['FALSE — Customer analysis asks who buys (and who influences), what buyers do with the product, where and when they buy, and why they prefer one offer — guiding distribution, seasonality, development, and share strategy.
 
-The statement sounds plausible but fails on precision, so it is false.', 'FALSE — This statement is false. Customer analysis excludes the question of why customers prefer one product over another.
+Customer analysis includes who, what, where, when, and why. Those restricting words stretch a limited idea past what marketing allows.
 
-The relevant theory comes from market research methods and interpretation. Identify which definition or relationship the sentence is trying to test before deciding true or false.
+Those restricting words stretch a limited idea past what marketing allows.
 
-The statement overreaches because why-customers choose is an explicit customer-analysis dimension. The trap is to agree with the topic while missing the one detail that breaks the logic.
+The statement is false.
+', 'TRUE — Primary market research collects new data for the firm''s own questions — questionnaires, interviews, online surveys, or studies run by a research institute — tailored but often costly.
 
-Because the decisive detail is wrong, mark the statement false.'] WHERE case_id = 'CASE 5.5.06' AND tier = 'full';
-UPDATE public.economics_cases SET tactical_explanations = ARRAY['FALSE — On the Fuhrmann definition used in the entrance exam, the sentence is false. Customer analysis covers only who customers are and excludes what, where, when, and why dimensions.
+Competitive purchasing behaviour can be investigated through tailored primary research. The sentence therefore reports the concept accurately for this case.
 
-The scenario is a worked example of market research methods and interpretation. Translate the story into the textbook category first; only then judge whether the sentence describes that category accurately.
+The sentence therefore reports the concept accurately for this case.
 
-Applied to this claim, customer analysis includes who, what, where, when, and why. That is why the sentence does not survive careful reading.
+The statement is true.
+', 'FALSE — Market research supplies evidence on customers, competitors, and the industry so the firm can judge position and prospects.
 
-The statement sounds plausible but fails on precision, so it is false.', 'TRUE — Evaluated against the textbook standard, this assertion is correct. Primary research supports learning whether customers also buy similar products from competing businesses.
+B2c markets have consumers as customers; business customers indicate b2b. Swap in the textbook criterion and the sentence no longer describes the case.
 
-The relevant theory comes from market research methods and interpretation. Identify which definition or relationship the sentence is trying to test before deciding true or false.
+Swap in the textbook criterion and the sentence no longer describes the case.
 
-Applied carefully, competitive purchasing behaviour can be investigated through tailored primary research. Nothing in the sentence stretches the concept beyond its standard use.
+The statement is false.
+', 'FALSE — Market research supplies evidence on customers, competitors, and the industry so the firm can judge position and prospects.
 
-No qualifying word breaks the definition or scenario, so the answer is true.', 'FALSE — This statement is false. In a business-to-consumer market the customers are other businesses purchasing for production use.
+On this stem (household): b2b markets involve business customers, not final consumers. The absolute wording is what breaks the claim once the correct test is applied.
 
-The relevant theory comes from market research methods and interpretation. Identify which definition or relationship the sentence is trying to test before deciding true or false.
+The absolute wording is what breaks the claim once the correct test is applied.
 
-The statement overreaches because b2c markets have consumers as customers; business customers indicate b2b. The trap is to agree with the topic while missing the one detail that breaks the logic.
+The statement is false.
+', 'TRUE — Primary market research collects new data for the firm''s own questions — questionnaires, interviews, online surveys, or studies run by a research institute — tailored but often costly.
 
-Once the overclaim or mislabel is exposed, the only consistent answer is false.', 'FALSE — Evaluated against the textbook standard, this assertion is false. In a business-to-business market the customers are always final household consumers.
+On this stem (Primary research / product line): product opinion questions in a tailored study are primary customer insight. Nothing in the wording contradicts that marketing test, so the claim is sound.
 
-The topic is market research methods and interpretation, but the decisive skill here is reading quantifiers. Words such as never, always, only, or all turn a generally true idea into a claim that can be rejected by one routine counterexample.
+Nothing in the wording contradicts that marketing test, so the claim is sound.
 
-The statement overreaches because b2b markets involve business customers, not final consumers. The trap is to agree with the topic while missing the one detail that breaks the logic.
+The statement is true.
+'] WHERE case_id = 'CASE 5.5.07' AND tier = 'full';
+UPDATE public.economics_cases SET tactical_explanations = ARRAY['TRUE — Primary market research collects new data for the firm''s own questions — questionnaires, interviews, online surveys, or studies run by a research institute — tailored but often costly.
 
-Watch the absolute wording "always": exam statements often sound plausible until a single scope word turns an otherwise familiar idea into an overclaim.
+On this stem (primary research / secondary sources): analysis and interpretation costs contribute to primary research expense for smaller businesses. Nothing in the wording contradicts that marketing test, so the claim is sound.
 
-Once the overclaim or mislabel is exposed, the only consistent answer is false.', 'TRUE — The claim is correct. Primary research can reveal what customers think about a product through questions designed for that product line.
+Nothing in the wording contradicts that marketing test, so the claim is sound.
 
-This statement draws on market research methods and interpretation. Treat it as a checklist against the core concept named in the stem, not as a general opinion about business.
+The statement is true.
+', 'FALSE — Market research supplies evidence on customers, competitors, and the industry so the firm can judge position and prospects.
 
-In this setting, product opinion questions in a tailored study are primary customer insight. The wording matches the textbook relationship without adding extra conditions.
+The chapter notes buyer and user may differ. The absolute wording is what breaks the claim once the correct test is applied.
 
-Every part of the claim aligns with the standard concept, so the statement stands.'] WHERE case_id = 'CASE 5.5.07' AND tier = 'full';
-UPDATE public.economics_cases SET tactical_explanations = ARRAY['TRUE — On the Fuhrmann definition used in the entrance exam, the sentence is correct. The cost of interpreting primary research data is part of why small firms may rely on cheaper secondary sources instead.
+The absolute wording is what breaks the claim once the correct test is applied.
 
-This statement draws on market research methods and interpretation. Treat it as a checklist against the core concept named in the stem, not as a general opinion about business.
+The statement is false.
+', 'FALSE — Market research supplies evidence on customers, competitors, and the industry so the firm can judge position and prospects.
 
-In this setting, analysis and interpretation costs contribute to primary research expense for smaller businesses. The wording matches the textbook relationship without adding extra conditions.
+Children may influence choices even when adults pay. The absolute wording is what breaks the claim once the correct test is applied.
 
-Every part of the claim aligns with the standard concept, so the statement stands.', 'FALSE — The claim is false. The buyer and user of a product must always be the same person in every market.
+The absolute wording is what breaks the claim once the correct test is applied.
 
-Although the subject matter is market research methods and interpretation, this is really a logic check on overstatement. Non-profit surpluses, mixed economies, and partial market failure are classic cases where absolute wording fails.
+The statement is false.
+', 'FALSE — Customer analysis asks who buys (and who influences), what buyers do with the product, where and when they buy, and why they prefer one offer — guiding distribution, seasonality, development, and share strategy.
 
-Applied to this claim, the chapter notes buyer and user may differ. That is why the sentence does not survive careful reading.
+Where customers buy helps identify distribution channels. The mislabelled category or reversed comparison is enough to reject the claim.
 
-Watch the absolute wording "always": exam statements often sound plausible until a single scope word turns an otherwise familiar idea into an overclaim.
+The mislabelled category or reversed comparison is enough to reject the claim.
 
-Once the overclaim or mislabel is exposed, the only consistent answer is false.', 'FALSE — On the Fuhrmann definition used in the entrance exam, the sentence is false. Children can never influence purchasing decisions because only adults hold payment cards.
+The statement is false.
+', 'FALSE — Customer analysis asks who buys (and who influences), what buyers do with the product, where and when they buy, and why they prefer one offer — guiding distribution, seasonality, development, and share strategy.
 
-Although the subject matter is market research methods and interpretation, this is really a logic check on overstatement. Non-profit surpluses, mixed economies, and partial market failure are classic cases where absolute wording fails.
+When customers buy can reveal seasonal patterns. One clear counterexample under the right criterion is enough to reject the sentence.
 
-Applied to this claim, children may influence choices even when adults pay. That is why the sentence does not survive careful reading.
+One clear counterexample under the right criterion is enough to reject the sentence.
 
-Watch the absolute wording "never": exam statements often sound plausible until a single scope word turns an otherwise familiar idea into an overclaim.
+The statement is false.
+'] WHERE case_id = 'CASE 5.5.08' AND tier = 'full';
+UPDATE public.economics_cases SET tactical_explanations = ARRAY['FALSE — Customer analysis asks who buys (and who influences), what buyers do with the product, where and when they buy, and why they prefer one offer — guiding distribution, seasonality, development, and share strategy.
 
-The statement sounds plausible but fails on precision, so it is false.', 'FALSE — Evaluated against the textbook standard, this assertion is false. Where-customer analysis is unrelated to identifying preferred distribution channels.
+On this stem (growth): motives and preferences matter for development and share enhancement. The mislabelled category or reversed comparison is enough to reject the claim.
 
-The relevant theory comes from market research methods and interpretation. Identify which definition or relationship the sentence is trying to test before deciding true or false.
+The mislabelled category or reversed comparison is enough to reject the claim.
 
-The statement overreaches because where customers buy helps identify distribution channels. The trap is to agree with the topic while missing the one detail that breaks the logic.
+The statement is false.
+', 'TRUE — Primary market research collects new data for the firm''s own questions — questionnaires, interviews, online surveys, or studies run by a research institute — tailored but often costly.
 
-Once the overclaim or mislabel is exposed, the only consistent answer is false.', 'FALSE — This statement is false. When-customer analysis cannot reveal seasonal fluctuations because purchase dates are never recorded.
+Primary data are gathered for the current empirical study rather than reused unchanged. Nothing in the wording contradicts that marketing test, so the claim is sound.
 
-The topic is market research methods and interpretation, but the decisive skill here is reading quantifiers. Words such as never, always, only, or all turn a generally true idea into a claim that can be rejected by one routine counterexample.
+Nothing in the wording contradicts that marketing test, so the claim is sound.
 
-The statement overreaches because when customers buy can reveal seasonal patterns. The trap is to agree with the topic while missing the one detail that breaks the logic.
+The statement is true.
+', 'FALSE — Customer analysis asks who buys (and who influences), what buyers do with the product, where and when they buy, and why they prefer one offer — guiding distribution, seasonality, development, and share strategy.
 
-Watch the absolute wording "cannot": exam statements often sound plausible until a single scope word turns an otherwise familiar idea into an overclaim.
+Market research covers customers, competitors, and industry conditions. Those restricting words stretch a limited idea past what marketing allows.
 
-Once the overclaim or mislabel is exposed, the only consistent answer is false.'] WHERE case_id = 'CASE 5.5.08' AND tier = 'full';
-UPDATE public.economics_cases SET tactical_explanations = ARRAY['FALSE — On the Fuhrmann definition used in the entrance exam, the sentence is false. Why-customer analysis is irrelevant to product development and market-share growth.
+Those restricting words stretch a limited idea past what marketing allows.
 
-This statement draws on market research methods and interpretation. Treat it as a checklist against the core concept named in the stem, not as a general opinion about business.
+The statement is false.
+', 'TRUE — Primary market research collects new data for the firm''s own questions — questionnaires, interviews, online surveys, or studies run by a research institute — tailored but often costly.
 
-Applied to this claim, motives and preferences matter for development and share enhancement. That is why the sentence does not survive careful reading.
+On this stem (primary research): primary studies can target prospective as well as existing customers. The sentence therefore reports the concept accurately for this case.
 
-Once the overclaim or mislabel is exposed, the only consistent answer is false.', 'TRUE — Evaluated against the textbook standard, this assertion is correct. Primary information is newly collected for the study rather than taken unchanged from earlier publications.
+The sentence therefore reports the concept accurately for this case.
 
-This tests discrimination within market research methods and interpretation: local versus international scope, equity versus debt, product versus market orientation, and similar pairs.
+The statement is true.
+', 'TRUE — Primary market research collects new data for the firm''s own questions — questionnaires, interviews, online surveys, or studies run by a research institute — tailored but often costly.
 
-Applied carefully, primary data are gathered for the current empirical study rather than reused unchanged. Nothing in the sentence stretches the concept beyond its standard use.
+On this stem (Primary research): what-customer use patterns can be captured through primary interviews. Nothing in the wording contradicts that marketing test, so the claim is sound.
 
-No qualifying word breaks the definition or scenario, so the answer is true.', 'FALSE — Evaluated against the textbook standard, this assertion is false. Market research provides information only about competitors and excludes customer analysis.
+Nothing in the wording contradicts that marketing test, so the claim is sound.
 
-The relevant theory comes from market research methods and interpretation. Identify which definition or relationship the sentence is trying to test before deciding true or false.
+The statement is true.
+'] WHERE case_id = 'CASE 5.5.09' AND tier = 'full';
+UPDATE public.economics_cases SET tactical_explanations = ARRAY['FALSE — Absolute market share equals one business''s (or brand''s) sales divided by total market volume. It informs the firm and investors but says little alone about rivals'' relative strength.
 
-The statement overreaches because market research covers customers, competitors, and industry conditions. The trap is to agree with the topic while missing the one detail that breaks the logic.
+On this stem (market share): relative share is a ratio against the leader''s share, not 100% minus absolute share. Once the defining feature is restored, the assertion falls away.
 
-The statement sounds plausible but fails on precision, so it is false.', 'TRUE — This statement is correct. A business may design primary research around prospective customers it has not yet converted to buyers.
+Once the defining feature is restored, the assertion falls away.
 
-The relevant theory comes from market research methods and interpretation. Identify which definition or relationship the sentence is trying to test before deciding true or false.
+The statement is false.
+', 'FALSE — Absolute market share equals one business''s (or brand''s) sales divided by total market volume. It informs the firm and investors but says little alone about rivals'' relative strength.
 
-Applied carefully, primary studies can target prospective as well as existing customers. Nothing in the sentence stretches the concept beyond its standard use.
+On this stem (market share): absolute share uses firm sales over market volume, not rival over firm. Once the defining feature is restored, the assertion falls away.
 
-Every part of the claim aligns with the standard concept, so the statement stands.', 'TRUE — This statement is correct. Primary research through personal interviews can explore preferred product use in the customer''s own words.
+Once the defining feature is restored, the assertion falls away.
 
-The relevant theory comes from market research methods and interpretation. Identify which definition or relationship the sentence is trying to test before deciding true or false.
+The statement is false.
+', 'TRUE — Primary market research collects new data for the firm''s own questions — questionnaires, interviews, online surveys, or studies run by a research institute — tailored but often costly.
 
-Applied carefully, what-customer use patterns can be captured through primary interviews. Nothing in the sentence stretches the concept beyond its standard use.
+On this stem (primary research): primary studies can include pricing questions tailored to the firm''s product. Under that definition the assertion is the right description of the situation.
 
-Every part of the claim aligns with the standard concept, so the statement stands.'] WHERE case_id = 'CASE 5.5.09' AND tier = 'full';
-UPDATE public.economics_cases SET tactical_explanations = ARRAY['FALSE — On the Fuhrmann definition used in the entrance exam, the sentence is false. Relative market share is found by subtracting the firm''s absolute share from one hundred per cent.
+Under that definition the assertion is the right description of the situation.
 
-This statement draws on market research methods and interpretation. Treat it as a checklist against the core concept named in the stem, not as a general opinion about business.
+The statement is true.
+', 'TRUE — Primary market research collects new data for the firm''s own questions — questionnaires, interviews, online surveys, or studies run by a research institute — tailored but often costly.
 
-Applied to this claim, relative share is a ratio against the leader''s share, not 100% minus absolute share. That is why the sentence does not survive careful reading.
+Where-customer preferences can be collected in a tailored primary survey. Under that definition the assertion is the right description of the situation.
 
-The statement sounds plausible but fails on precision, so it is false.', 'FALSE — On the Fuhrmann definition used in the entrance exam, the sentence is false. Absolute market share is found by dividing the largest competitor''s share by the firm''s share.
+Under that definition the assertion is the right description of the situation.
 
-This statement draws on market research methods and interpretation. Treat it as a checklist against the core concept named in the stem, not as a general opinion about business.
+The statement is true.
+', 'TRUE — Primary market research collects new data for the firm''s own questions — questionnaires, interviews, online surveys, or studies run by a research institute — tailored but often costly.
 
-Applied to this claim, absolute share uses firm sales over market volume, not rival over firm. That is why the sentence does not survive careful reading.
+On this stem (primary research): institute-run bespoke studies supply primary information to the commissioning business. The sentence therefore reports the concept accurately for this case.
 
-Once the overclaim or mislabel is exposed, the only consistent answer is false.', 'TRUE — The claim is correct. Tailored primary research can test alternative pricing levels by asking willingness-to-pay questions directly.
+The sentence therefore reports the concept accurately for this case.
 
-This statement draws on market research methods and interpretation. Treat it as a checklist against the core concept named in the stem, not as a general opinion about business.
+The statement is true.
+'] WHERE case_id = 'CASE 5.5.10' AND tier = 'full';
+UPDATE public.economics_cases SET tactical_explanations = ARRAY['TRUE — Secondary information reuses research already produced by others (government, associations, published reports). It is often cheaper or free, but usually more general and less tailored.
 
-In this setting, primary studies can include pricing questions tailored to the firm''s product. The wording matches the textbook relationship without adding extra conditions.
+On this stem (Secondary information): secondary data come from prior research conducted by others. Under that definition the assertion is the right description of the situation.
 
-No qualifying word breaks the definition or scenario, so the answer is true.', 'TRUE — On the Fuhrmann definition used in the entrance exam, the sentence is correct. Primary data from a bespoke survey can inform channel strategy when respondents state where they prefer to shop.
+Under that definition the assertion is the right description of the situation.
 
-The scenario is a worked example of market research methods and interpretation. Translate the story into the textbook category first; only then judge whether the sentence describes that category accurately.
+The statement is true.
+', 'TRUE — Secondary information reuses research already produced by others (government, associations, published reports). It is often cheaper or free, but usually more general and less tailored.
 
-In this setting, where-customer preferences can be collected in a tailored primary survey. The wording matches the textbook relationship without adding extra conditions.
+On this stem (secondary information): government publications are listed as sources of secondary market information. The sentence therefore reports the concept accurately for this case.
 
-The reasoning chain is complete, so mark the statement true.', 'TRUE — On the Fuhrmann definition used in the entrance exam, the sentence is correct. Empirical primary research remains the source when a firm pays an institute to design and run the entire study.
+The sentence therefore reports the concept accurately for this case.
 
-The scenario is a worked example of market research methods and interpretation. Translate the story into the textbook category first; only then judge whether the sentence describes that category accurately.
+The statement is true.
+', 'TRUE — Secondary information reuses research already produced by others (government, associations, published reports). It is often cheaper or free, but usually more general and less tailored.
 
-In this setting, institute-run bespoke studies supply primary information to the commissioning business. The wording matches the textbook relationship without adding extra conditions.
+Association research can supply secondary information to firms in the sector. Under that definition the assertion is the right description of the situation.
 
-Every part of the claim aligns with the standard concept, so the statement stands.'] WHERE case_id = 'CASE 5.5.10' AND tier = 'full';
-UPDATE public.economics_cases SET tactical_explanations = ARRAY['TRUE — The claim is correct. Secondary information is based on existing research that has already been completed by another organisation.
+Under that definition the assertion is the right description of the situation.
 
-This statement draws on market research methods and interpretation. Treat it as a checklist against the core concept named in the stem, not as a general opinion about business.
+The statement is true.
+', 'TRUE — Secondary information reuses research already produced by others (government, associations, published reports). It is often cheaper or free, but usually more general and less tailored.
 
-In this setting, secondary data come from prior research conducted by others. The wording matches the textbook relationship without adding extra conditions.
+On this stem (secondary sources): research published by other businesses can be used as secondary information. Under that definition the assertion is the right description of the situation.
 
-The reasoning chain is complete, so mark the statement true.', 'TRUE — The claim is correct. Government agencies may publish market research that businesses can use as a secondary information source.
+Under that definition the assertion is the right description of the situation.
 
-This statement draws on market research methods and interpretation. Treat it as a checklist against the core concept named in the stem, not as a general opinion about business.
+The statement is true.
+', 'TRUE — Secondary information reuses research already produced by others (government, associations, published reports). It is often cheaper or free, but usually more general and less tailored.
 
-In this setting, government publications are listed as sources of secondary market information. The wording matches the textbook relationship without adding extra conditions.
+Free secondary data are noted in the chapter though they may be general. The sentence therefore reports the concept accurately for this case.
 
-The reasoning chain is complete, so mark the statement true.', 'TRUE — On the Fuhrmann definition used in the entrance exam, the sentence is correct. Trade and industry associations sometimes conduct research that is available to member businesses as secondary data.
+The sentence therefore reports the concept accurately for this case.
 
-This statement draws on market research methods and interpretation. Treat it as a checklist against the core concept named in the stem, not as a general opinion about business.
+The statement is true.
+'] WHERE case_id = 'CASE 5.5.11' AND tier = 'full';
+UPDATE public.economics_cases SET tactical_explanations = ARRAY['TRUE — Secondary information reuses research already produced by others (government, associations, published reports). It is often cheaper or free, but usually more general and less tailored.
 
-In this setting, association research can supply secondary information to firms in the sector. The wording matches the textbook relationship without adding extra conditions.
+On this stem (Secondary research): the textbook states secondary information is typically general rather than firm-specific. The sentence therefore reports the concept accurately for this case.
 
-Every part of the claim aligns with the standard concept, so the statement stands.', 'TRUE — The claim is correct. Other businesses may publish research findings that serve as secondary sources for firms studying the market.
+The sentence therefore reports the concept accurately for this case.
 
-This statement draws on market research methods and interpretation. Treat it as a checklist against the core concept named in the stem, not as a general opinion about business.
+The statement is true.
+', 'TRUE — Primary market research collects new data for the firm''s own questions — questionnaires, interviews, online surveys, or studies run by a research institute — tailored but often costly.
 
-In this setting, research published by other businesses can be used as secondary information. The wording matches the textbook relationship without adding extra conditions.
+On this stem (primary research): published association statistics are secondary information gathered earlier by others. Nothing in the wording contradicts that marketing test, so the claim is sound.
 
-No qualifying word breaks the definition or scenario, so the answer is true.', 'TRUE — On the Fuhrmann definition used in the entrance exam, the sentence is correct. Secondary market information is often available free of charge although it may not match a firm''s specific interests.
+Nothing in the wording contradicts that marketing test, so the claim is sound.
 
-This statement draws on market research methods and interpretation. Treat it as a checklist against the core concept named in the stem, not as a general opinion about business.
+The statement is true.
+', 'TRUE — Primary market research collects new data for the firm''s own questions — questionnaires, interviews, online surveys, or studies run by a research institute — tailored but often costly.
 
-In this setting, free secondary data are noted in the chapter though they may be general. The wording matches the textbook relationship without adding extra conditions.
+On this stem (Secondary sources): secondary data can provide general context ahead of primary research. Under that definition the assertion is the right description of the situation.
 
-No qualifying word breaks the definition or scenario, so the answer is true.'] WHERE case_id = 'CASE 5.5.11' AND tier = 'full';
-UPDATE public.economics_cases SET tactical_explanations = ARRAY['TRUE — On the Fuhrmann definition used in the entrance exam, the sentence is correct. Secondary research data are usually general and not tailored to the specific interests of one business.
+Under that definition the assertion is the right description of the situation.
 
-This statement draws on market research methods and interpretation. Treat it as a checklist against the core concept named in the stem, not as a general opinion about business.
+The statement is true.
+', 'TRUE — Secondary information reuses research already produced by others (government, associations, published reports). It is often cheaper or free, but usually more general and less tailored.
 
-In this setting, the textbook states secondary information is typically general rather than firm-specific. The wording matches the textbook relationship without adding extra conditions.
+Reused published forecasts are secondary data in the market-research framework. The sentence therefore reports the concept accurately for this case.
 
-No qualifying word breaks the definition or scenario, so the answer is true.', 'TRUE — This statement is correct. A firm using industry consumption statistics from a trade body is relying on secondary rather than primary research.
+The sentence therefore reports the concept accurately for this case.
 
-This tests discrimination within market research methods and interpretation: local versus international scope, equity versus debt, product versus market orientation, and similar pairs.
+The statement is true.
+', 'TRUE — Secondary information reuses research already produced by others (government, associations, published reports). It is often cheaper or free, but usually more general and less tailored.
 
-Applied carefully, published association statistics are secondary information gathered earlier by others. Nothing in the sentence stretches the concept beyond its standard use.
+Secondary research done for other aims can still inform general market learning. Nothing in the wording contradicts that marketing test, so the claim is sound.
 
-Every part of the claim aligns with the standard concept, so the statement stands.', 'TRUE — This statement is correct. Secondary sources are useful when a business needs broad market background before designing a tailored primary study.
+Nothing in the wording contradicts that marketing test, so the claim is sound.
 
-Here you must apply ideas from market research methods and interpretation to a concrete situation rather than recite a definition from memory. Ownership, customer type, stakeholder group, or country of production usually decides the verdict.
+The statement is true.
+'] WHERE case_id = 'CASE 5.5.12' AND tier = 'full';
+UPDATE public.economics_cases SET tactical_explanations = ARRAY['FALSE — Market size/volume is total sales of all firms (value or quantity). Market potential adds still-unserved buyers; a firm''s sales potential exceeds its current sales volume when further gains are possible.
 
-Applied carefully, secondary data can provide general context ahead of primary research. Nothing in the sentence stretches the concept beyond its standard use.
+Potential can exceed volume when unconverted customers remain. Swap in the textbook criterion and the sentence no longer describes the case.
 
-The reasoning chain is complete, so mark the statement true.', 'TRUE — The claim is correct. Forecasts published by research firms and reused by a manufacturer count as secondary market information.
+Swap in the textbook criterion and the sentence no longer describes the case.
 
-This statement draws on market research methods and interpretation. Treat it as a checklist against the core concept named in the stem, not as a general opinion about business.
+The statement is false.
+', 'TRUE — Secondary information reuses research already produced by others (government, associations, published reports). It is often cheaper or free, but usually more general and less tailored.
 
-In this setting, reused published forecasts are secondary data in the market-research framework. The wording matches the textbook relationship without adding extra conditions.
+On this stem (secondary research): government industry reviews are secondary sources of market information. Under that definition the assertion is the right description of the situation.
 
-No qualifying word breaks the definition or scenario, so the answer is true.', 'TRUE — On the Fuhrmann definition used in the entrance exam, the sentence is correct. Secondary data compiled for another purpose may still help a business learn about overall industry development.
+Under that definition the assertion is the right description of the situation.
 
-This statement draws on market research methods and interpretation. Treat it as a checklist against the core concept named in the stem, not as a general opinion about business.
+The statement is true.
+', 'TRUE — Secondary information reuses research already produced by others (government, associations, published reports). It is often cheaper or free, but usually more general and less tailored.
 
-In this setting, secondary research done for other aims can still inform general market learning. The wording matches the textbook relationship without adding extra conditions.
+On this stem (Secondary information): secondary data reuse existing studies rather than new firm-administered questionnaires. The sentence therefore reports the concept accurately for this case.
 
-The reasoning chain is complete, so mark the statement true.'] WHERE case_id = 'CASE 5.5.12' AND tier = 'full';
-UPDATE public.economics_cases SET tactical_explanations = ARRAY['FALSE — Evaluated against the textbook standard, this assertion is false. Market volume and market potential are identical terms with no difference in meaning.
+The sentence therefore reports the concept accurately for this case.
 
-The relevant theory comes from market research methods and interpretation. Identify which definition or relationship the sentence is trying to test before deciding true or false.
+The statement is true.
+', 'TRUE — Secondary information reuses research already produced by others (government, associations, published reports). It is often cheaper or free, but usually more general and less tailored.
 
-The statement overreaches because potential can exceed volume when unconverted customers remain. The trap is to agree with the topic while missing the one detail that breaks the logic.
+National statistics published elsewhere are secondary information. The sentence therefore reports the concept accurately for this case.
 
-The statement sounds plausible but fails on precision, so it is false.', 'TRUE — On the Fuhrmann definition used in the entrance exam, the sentence is correct. Reading an annual industry review prepared by a government department is an example of using secondary research.
+The sentence therefore reports the concept accurately for this case.
 
-This statement draws on market research methods and interpretation. Treat it as a checklist against the core concept named in the stem, not as a general opinion about business.
+The statement is true.
+', 'TRUE — Secondary information reuses research already produced by others (government, associations, published reports). It is often cheaper or free, but usually more general and less tailored.
 
-In this setting, government industry reviews are secondary sources of market information. The wording matches the textbook relationship without adding extra conditions.
+On this stem (Secondary research): broad segment coverage is a feature of general secondary data. The sentence therefore reports the concept accurately for this case.
 
-The reasoning chain is complete, so mark the statement true.', 'TRUE — Evaluated against the textbook standard, this assertion is correct. Secondary information does not require the business to administer its own questionnaire programme to obtain the data.
+The sentence therefore reports the concept accurately for this case.
 
-The relevant theory comes from market research methods and interpretation. Identify which definition or relationship the sentence is trying to test before deciding true or false.
+The statement is true.
+'] WHERE case_id = 'CASE 5.5.13' AND tier = 'full';
+UPDATE public.economics_cases SET tactical_explanations = ARRAY['TRUE — Primary market research collects new data for the firm''s own questions — questionnaires, interviews, online surveys, or studies run by a research institute — tailored but often costly.
 
-Applied carefully, secondary data reuse existing studies rather than new firm-administered questionnaires. Nothing in the sentence stretches the concept beyond its standard use.
+On this stem (secondary research): different original purposes limit how tailored secondary data can be. Nothing in the wording contradicts that marketing test, so the claim is sound.
 
-Every part of the claim aligns with the standard concept, so the statement stands.', 'TRUE — On the Fuhrmann definition used in the entrance exam, the sentence is correct. A retailer consulting freely available national retail-sales statistics is using secondary market research.
+Nothing in the wording contradicts that marketing test, so the claim is sound.
 
-This statement draws on market research methods and interpretation. Treat it as a checklist against the core concept named in the stem, not as a general opinion about business.
+The statement is true.
+', 'TRUE — Secondary information reuses research already produced by others (government, associations, published reports). It is often cheaper or free, but usually more general and less tailored.
 
-In this setting, national statistics published elsewhere are secondary information. The wording matches the textbook relationship without adding extra conditions.
+Association output reports are secondary sources for size measures. The sentence therefore reports the concept accurately for this case.
 
-Every part of the claim aligns with the standard concept, so the statement stands.', 'TRUE — This statement is correct. Secondary research may cover entire market segments even when it lacks detail on one firm''s customers.
+The sentence therefore reports the concept accurately for this case.
 
-Here you must apply ideas from market research methods and interpretation to a concrete situation rather than recite a definition from memory. Ownership, customer type, stakeholder group, or country of production usually decides the verdict.
+The statement is true.
+', 'TRUE — Secondary information reuses research already produced by others (government, associations, published reports). It is often cheaper or free, but usually more general and less tailored.
 
-Applied carefully, broad segment coverage is a feature of general secondary data. Nothing in the sentence stretches the concept beyond its standard use.
+On this stem (secondary research): published market forecasts reused by the firm are secondary information. Nothing in the wording contradicts that marketing test, so the claim is sound.
 
-The reasoning chain is complete, so mark the statement true.'] WHERE case_id = 'CASE 5.5.13' AND tier = 'full';
-UPDATE public.economics_cases SET tactical_explanations = ARRAY['TRUE — The claim is correct. Because secondary research was conducted for another purpose, it may omit questions a business would ask in primary work.
+Nothing in the wording contradicts that marketing test, so the claim is sound.
 
-The scenario is a worked example of market research methods and interpretation. Translate the story into the textbook category first; only then judge whether the sentence describes that category accurately.
+The statement is true.
+', 'TRUE — Secondary information reuses research already produced by others (government, associations, published reports). It is often cheaper or free, but usually more general and less tailored.
 
-In this setting, different original purposes limit how tailored secondary data can be. The wording matches the textbook relationship without adding extra conditions.
+On this stem (Secondary sources): reusing existing research avoids the cost of a new primary collection programme. Under that definition the assertion is the right description of the situation.
 
-Every part of the claim aligns with the standard concept, so the statement stands.', 'TRUE — This statement is correct. Industry association reports on total sector output provide secondary context for estimating market size.
+Under that definition the assertion is the right description of the situation.
 
-The relevant theory comes from market research methods and interpretation. Identify which definition or relationship the sentence is trying to test before deciding true or false.
+The statement is true.
+', 'TRUE — Secondary information reuses research already produced by others (government, associations, published reports). It is often cheaper or free, but usually more general and less tailored.
 
-Applied carefully, association output reports are secondary sources for size measures. Nothing in the sentence stretches the concept beyond its standard use.
+Other firms'' published reports function as secondary sources. The sentence therefore reports the concept accurately for this case.
 
-The reasoning chain is complete, so mark the statement true.', 'TRUE — On the Fuhrmann definition used in the entrance exam, the sentence is correct. A components manufacturer reading published electronics-market forecasts is consuming secondary research data.
+The sentence therefore reports the concept accurately for this case.
 
-This statement draws on market research methods and interpretation. Treat it as a checklist against the core concept named in the stem, not as a general opinion about business.
+The statement is true.
+'] WHERE case_id = 'CASE 5.5.14' AND tier = 'full';
+UPDATE public.economics_cases SET tactical_explanations = ARRAY['FALSE — Market size/volume is total sales of all firms (value or quantity). Market potential adds still-unserved buyers; a firm''s sales potential exceeds its current sales volume when further gains are possible.
 
-In this setting, published market forecasts reused by the firm are secondary information. The wording matches the textbook relationship without adding extra conditions.
+Sales potential can exceed current sales volume. Those restricting words stretch a limited idea past what marketing allows.
 
-No qualifying word breaks the definition or scenario, so the answer is true.', 'TRUE — On the Fuhrmann definition used in the entrance exam, the sentence is correct. Secondary sources reduce data-collection cost because the business does not pay for a full bespoke empirical programme.
+Those restricting words stretch a limited idea past what marketing allows.
 
-The scenario is a worked example of market research methods and interpretation. Translate the story into the textbook category first; only then judge whether the sentence describes that category accurately.
+The statement is false.
+', 'FALSE — Primary market research collects new data for the firm''s own questions — questionnaires, interviews, online surveys, or studies run by a research institute — tailored but often costly.
 
-In this setting, reusing existing research avoids the cost of a new primary collection programme. The wording matches the textbook relationship without adding extra conditions.
+Tailored questionnaires still produce primary information. The mislabelled category or reversed comparison is enough to reject the claim.
 
-No qualifying word breaks the definition or scenario, so the answer is true.', 'TRUE — This statement is correct. Market reports sold or shared by other businesses can supplement a firm''s understanding as secondary data.
+The mislabelled category or reversed comparison is enough to reject the claim.
 
-The relevant theory comes from market research methods and interpretation. Identify which definition or relationship the sentence is trying to test before deciding true or false.
+The statement is false.
+', 'TRUE — Secondary information reuses research already produced by others (government, associations, published reports). It is often cheaper or free, but usually more general and less tailored.
 
-Applied carefully, other firms'' published reports function as secondary sources. Nothing in the sentence stretches the concept beyond its standard use.
+On this stem (Secondary information): government secondary data tend to be aggregate and general. Nothing in the wording contradicts that marketing test, so the claim is sound.
 
-The reasoning chain is complete, so mark the statement true.'] WHERE case_id = 'CASE 5.5.14' AND tier = 'full';
-UPDATE public.economics_cases SET tactical_explanations = ARRAY['FALSE — Evaluated against the textbook standard, this assertion is false. Sales volume and sales potential must always be equal for a mature business.
+Nothing in the wording contradicts that marketing test, so the claim is sound.
 
-The topic is market research methods and interpretation, but the decisive skill here is reading quantifiers. Words such as never, always, only, or all turn a generally true idea into a claim that can be rejected by one routine counterexample.
+The statement is true.
+', 'TRUE — Customer analysis asks who buys (and who influences), what buyers do with the product, where and when they buy, and why they prefer one offer — guiding distribution, seasonality, development, and share strategy.
 
-The statement overreaches because sales potential can exceed current sales volume. The trap is to agree with the topic while missing the one detail that breaks the logic.
+Who-customers are a core dimension of customer analysis in the chapter. Under that definition the assertion is the right description of the situation.
 
-Watch the absolute wording "always": exam statements often sound plausible until a single scope word turns an otherwise familiar idea into an overclaim.
+Under that definition the assertion is the right description of the situation.
 
-Because the decisive detail is wrong, mark the statement false.', 'FALSE — This statement is false. Primary data are secondary when the survey questions were written by the commissioning firm.
+The statement is true.
+', 'FALSE — Primary market research collects new data for the firm''s own questions — questionnaires, interviews, online surveys, or studies run by a research institute — tailored but often costly.
 
-Here you must apply ideas from market research methods and interpretation to a concrete situation rather than recite a definition from memory. Ownership, customer type, stakeholder group, or country of production usually decides the verdict.
+Reading published data does not convert secondary information into primary. Once the defining feature is restored, the assertion falls away.
 
-The statement overreaches because tailored questionnaires still produce primary information. The trap is to agree with the topic while missing the one detail that breaks the logic.
+Once the defining feature is restored, the assertion falls away.
 
-Because the decisive detail is wrong, mark the statement false.', 'TRUE — This statement is correct. Secondary information from government agencies may describe industry trends without naming individual customer accounts.
+The statement is false.
+'] WHERE case_id = 'CASE 5.5.15' AND tier = 'full';
+UPDATE public.economics_cases SET tactical_explanations = ARRAY['FALSE — Secondary information reuses research already produced by others (government, associations, published reports). It is often cheaper or free, but usually more general and less tailored.
 
-The relevant theory comes from market research methods and interpretation. Identify which definition or relationship the sentence is trying to test before deciding true or false.
+On this stem (secondary research): electronic collection does not make a new survey secondary. Once the defining feature is restored, the assertion falls away.
 
-Applied carefully, government secondary data tend to be aggregate and general. Nothing in the sentence stretches the concept beyond its standard use.
+Once the defining feature is restored, the assertion falls away.
 
-Every part of the claim aligns with the standard concept, so the statement stands.', 'TRUE — On the Fuhrmann definition used in the entrance exam, the sentence is correct. Customer analysis often asks who current and potential customers are as part of market research.
+The statement is false.
+', 'TRUE — Market research supplies evidence on customers, competitors, and the industry so the firm can judge position and prospects.
 
-This statement draws on market research methods and interpretation. Treat it as a checklist against the core concept named in the stem, not as a general opinion about business.
+B2c markets serve consumers as customers in the textbook classification. Under that definition the assertion is the right description of the situation.
 
-In this setting, who-customers are a core dimension of customer analysis in the chapter. The wording matches the textbook relationship without adding extra conditions.
+Under that definition the assertion is the right description of the situation.
 
-Every part of the claim aligns with the standard concept, so the statement stands.', 'FALSE — On the Fuhrmann definition used in the entrance exam, the sentence is false. Government statistics become primary data when a manager reads them in a board meeting.
+The statement is true.
+', 'TRUE — Market research supplies evidence on customers, competitors, and the industry so the firm can judge position and prospects.
 
-The scenario is a worked example of market research methods and interpretation. Translate the story into the textbook category first; only then judge whether the sentence describes that category accurately.
+B2b markets involve business customers purchasing from the firm. The sentence therefore reports the concept accurately for this case.
 
-Applied to this claim, reading published data does not convert secondary information into primary. That is why the sentence does not survive careful reading.
+The sentence therefore reports the concept accurately for this case.
 
-Because the decisive detail is wrong, mark the statement false.'] WHERE case_id = 'CASE 5.5.15' AND tier = 'full';
-UPDATE public.economics_cases SET tactical_explanations = ARRAY['FALSE — On the Fuhrmann definition used in the entrance exam, the sentence is false. An online survey counts as secondary research because responses are stored electronically.
+The statement is true.
+', 'TRUE — Customer analysis asks who buys (and who influences), what buyers do with the product, where and when they buy, and why they prefer one offer — guiding distribution, seasonality, development, and share strategy.
 
-The scenario is a worked example of market research methods and interpretation. Translate the story into the textbook category first; only then judge whether the sentence describes that category accurately.
+The chapter distinguishes buyer and user roles among customers. Under that definition the assertion is the right description of the situation.
 
-Applied to this claim, electronic collection does not make a new survey secondary. That is why the sentence does not survive careful reading.
+Under that definition the assertion is the right description of the situation.
 
-The statement sounds plausible but fails on precision, so it is false.', 'TRUE — On the Fuhrmann definition used in the entrance exam, the sentence is correct. If customers are final consumers, the business operates in a business-to-consumer market.
+The statement is true.
+', 'TRUE — Customer analysis asks who buys (and who influences), what buyers do with the product, where and when they buy, and why they prefer one offer — guiding distribution, seasonality, development, and share strategy.
 
-The scenario is a worked example of market research methods and interpretation. Translate the story into the textbook category first; only then judge whether the sentence describes that category accurately.
+Influencers can shape decisions without being the paying buyer. Under that definition the assertion is the right description of the situation.
 
-In this setting, b2c markets serve consumers as customers in the textbook classification. The wording matches the textbook relationship without adding extra conditions.
+Under that definition the assertion is the right description of the situation.
 
-The reasoning chain is complete, so mark the statement true.', 'TRUE — This statement is correct. If customers are other businesses rather than final consumers, the firm operates in a business-to-business market.
+The statement is true.
+'] WHERE case_id = 'CASE 5.5.16' AND tier = 'full';
+UPDATE public.economics_cases SET tactical_explanations = ARRAY['TRUE — Market research supplies evidence on customers, competitors, and the industry so the firm can judge position and prospects.
 
-This tests discrimination within market research methods and interpretation: local versus international scope, equity versus debt, product versus market orientation, and similar pairs.
+The textbook gives children influencing purchases paid for by parents as an example. Under that definition the assertion is the right description of the situation.
 
-Applied carefully, b2b markets involve business customers purchasing from the firm. Nothing in the sentence stretches the concept beyond its standard use.
+Under that definition the assertion is the right description of the situation.
 
-No qualifying word breaks the definition or scenario, so the answer is true.', 'TRUE — The claim is correct. The buyer of a product and the user of the product may not be the same person in customer analysis.
+The statement is true.
+', 'TRUE — Customer analysis asks who buys (and who influences), what buyers do with the product, where and when they buy, and why they prefer one offer — guiding distribution, seasonality, development, and share strategy.
 
-This statement draws on market research methods and interpretation. Treat it as a checklist against the core concept named in the stem, not as a general opinion about business.
+What-customers do with products supports need-based development. Nothing in the wording contradicts that marketing test, so the claim is sound.
 
-In this setting, the chapter distinguishes buyer and user roles among customers. The wording matches the textbook relationship without adding extra conditions.
+Nothing in the wording contradicts that marketing test, so the claim is sound.
 
-The reasoning chain is complete, so mark the statement true.', 'TRUE — This statement is correct. Some people influence buying decisions even when another person completes the purchase payment.
+The statement is true.
+', 'TRUE — Market research supplies evidence on customers, competitors, and the industry so the firm can judge position and prospects.
 
-Here you must apply ideas from market research methods and interpretation to a concrete situation rather than recite a definition from memory. Ownership, customer type, stakeholder group, or country of production usually decides the verdict.
+Preferred-use knowledge feeds product improvement in customer analysis. Nothing in the wording contradicts that marketing test, so the claim is sound.
 
-Applied carefully, influencers can shape decisions without being the paying buyer. Nothing in the sentence stretches the concept beyond its standard use.
+Nothing in the wording contradicts that marketing test, so the claim is sound.
 
-The reasoning chain is complete, so mark the statement true.'] WHERE case_id = 'CASE 5.5.16' AND tier = 'full';
-UPDATE public.economics_cases SET tactical_explanations = ARRAY['TRUE — The claim is correct. Children may influence product choices while parents or grandparents complete the actual purchase.
+The statement is true.
+', 'TRUE — Customer analysis asks who buys (and who influences), what buyers do with the product, where and when they buy, and why they prefer one offer — guiding distribution, seasonality, development, and share strategy.
 
-This statement draws on market research methods and interpretation. Treat it as a checklist against the core concept named in the stem, not as a general opinion about business.
+Where-customers buy links to channel identification. Nothing in the wording contradicts that marketing test, so the claim is sound.
 
-In this setting, the textbook gives children influencing purchases paid for by parents as an example. The wording matches the textbook relationship without adding extra conditions.
+Nothing in the wording contradicts that marketing test, so the claim is sound.
 
-No qualifying word breaks the definition or scenario, so the answer is true.', 'TRUE — Evaluated against the textbook standard, this assertion is correct. Customer analysis examines what customers do with products to guide development according to needs.
+The statement is true.
+', 'TRUE — Market research supplies evidence on customers, competitors, and the industry so the firm can judge position and prospects.
 
-The relevant theory comes from market research methods and interpretation. Identify which definition or relationship the sentence is trying to test before deciding true or false.
+Where-customer data can expose channel weaknesses noted in the chapter. The sentence therefore reports the concept accurately for this case.
 
-Applied carefully, what-customers do with products supports need-based development. Nothing in the sentence stretches the concept beyond its standard use.
+The sentence therefore reports the concept accurately for this case.
 
-The reasoning chain is complete, so mark the statement true.', 'TRUE — Evaluated against the textbook standard, this assertion is correct. The more a business knows about preferred product use, the more it can improve the product for customers.
+The statement is true.
+'] WHERE case_id = 'CASE 5.5.17' AND tier = 'full';
+UPDATE public.economics_cases SET tactical_explanations = ARRAY['TRUE — Customer analysis asks who buys (and who influences), what buyers do with the product, where and when they buy, and why they prefer one offer — guiding distribution, seasonality, development, and share strategy.
 
-The relevant theory comes from market research methods and interpretation. Identify which definition or relationship the sentence is trying to test before deciding true or false.
+Channel analysis can prompt alternative channel strategies. Nothing in the wording contradicts that marketing test, so the claim is sound.
 
-Applied carefully, preferred-use knowledge feeds product improvement in customer analysis. Nothing in the sentence stretches the concept beyond its standard use.
+Nothing in the wording contradicts that marketing test, so the claim is sound.
 
-No qualifying word breaks the definition or scenario, so the answer is true.', 'TRUE — This statement is correct. Customer analysis considers where customers buy products to identify preferred distribution channels.
+The statement is true.
+', 'FALSE — Secondary information reuses research already produced by others (government, associations, published reports). It is often cheaper or free, but usually more general and less tailored.
 
-The relevant theory comes from market research methods and interpretation. Identify which definition or relationship the sentence is trying to test before deciding true or false.
+On this stem (secondary research): institute-conducted interviews for the study are primary collection. The mislabelled category or reversed comparison is enough to reject the claim.
 
-Applied carefully, where-customers buy links to channel identification. Nothing in the sentence stretches the concept beyond its standard use.
+The mislabelled category or reversed comparison is enough to reject the claim.
 
-Every part of the claim aligns with the standard concept, so the statement stands.', 'TRUE — On the Fuhrmann definition used in the entrance exam, the sentence is correct. Analysis of purchase location can reveal weaknesses in current distribution channels.
+The statement is false.
+', 'FALSE — Primary market research collects new data for the firm''s own questions — questionnaires, interviews, online surveys, or studies run by a research institute — tailored but often costly.
 
-This statement draws on market research methods and interpretation. Treat it as a checklist against the core concept named in the stem, not as a general opinion about business.
+Outside publisher does not make prior research primary. Swap in the textbook criterion and the sentence no longer describes the case.
 
-In this setting, where-customer data can expose channel weaknesses noted in the chapter. The wording matches the textbook relationship without adding extra conditions.
+Swap in the textbook criterion and the sentence no longer describes the case.
 
-Every part of the claim aligns with the standard concept, so the statement stands.'] WHERE case_id = 'CASE 5.5.17' AND tier = 'full';
-UPDATE public.economics_cases SET tactical_explanations = ARRAY['TRUE — Evaluated against the textbook standard, this assertion is correct. Where-customer findings may encourage a business to use alternative distribution channels.
+The statement is false.
+', 'FALSE — Market research supplies evidence on customers, competitors, and the industry so the firm can judge position and prospects.
 
-The relevant theory comes from market research methods and interpretation. Identify which definition or relationship the sentence is trying to test before deciding true or false.
+Market share is the firm''s proportion, not total industry sales. Swap in the textbook criterion and the sentence no longer describes the case.
 
-Applied carefully, channel analysis can prompt alternative channel strategies. Nothing in the sentence stretches the concept beyond its standard use.
+Swap in the textbook criterion and the sentence no longer describes the case.
 
-Every part of the claim aligns with the standard concept, so the statement stands.', 'FALSE — This statement is false. Telephone interviews count as secondary research when the interviewer works for a research institute.
+The statement is false.
+', 'FALSE — Absolute market share is the firm''s sales divided by total market volume (all businesses'' sales of the product), usually shown as a percentage.
 
-Here you must apply ideas from market research methods and interpretation to a concrete situation rather than recite a definition from memory. Ownership, customer type, stakeholder group, or country of production usually decides the verdict.
+Take firm sales 50,000 over market volume 1,000,000:
 
-The statement overreaches because institute-conducted interviews for the study are primary collection. The trap is to agree with the topic while missing the one detail that breaks the logic.
+$$
+\frac{50,000}{1,000,000} = 0.05
+$$
 
-Once the overclaim or mislabel is exposed, the only consistent answer is false.', 'FALSE — The claim is false. Trade-association reports are primary because associations are outside the requesting business.
+Convert to a percentage:
 
-The scenario is a worked example of market research methods and interpretation. Translate the story into the textbook category first; only then judge whether the sentence describes that category accurately.
+$$
+0.05 \times 100 = 5\%
+$$
 
-Applied to this claim, outside publisher does not make prior research primary. That is why the sentence does not survive careful reading.
+The statement claims about 50%, which does not equal 5% from this division.
 
-The statement sounds plausible but fails on precision, so it is false.', 'FALSE — This statement is false. Market share measures total industry sales rather than one firm''s proportion of those sales.
+The statement is false.
+'] WHERE case_id = 'CASE 5.5.18' AND tier = 'full';
+UPDATE public.economics_cases SET tactical_explanations = ARRAY['TRUE — Customer analysis asks who buys (and who influences), what buyers do with the product, where and when they buy, and why they prefer one offer — guiding distribution, seasonality, development, and share strategy.
 
-This tests discrimination within market research methods and interpretation: local versus international scope, equity versus debt, product versus market orientation, and similar pairs.
+When-customers buy reveals seasonal patterns for planning. Under that definition the assertion is the right description of the situation.
 
-The statement overreaches because market share is the firm''s proportion, not total industry sales. The trap is to agree with the topic while missing the one detail that breaks the logic.
+Under that definition the assertion is the right description of the situation.
 
-If two ideas are related, the statement may be false because it attributes the feature to the wrong member of the pair.
+The statement is true.
+', 'FALSE — Absolute market share is the firm''s sales divided by total market volume (all businesses'' sales of the product), usually shown as a percentage.
 
-The statement sounds plausible but fails on precision, so it is false.', 'FALSE — Evaluated against the textbook standard, this assertion is false. A firm with sales of 50,000 euros in a 1,000,000 euro market holds a fifty per cent absolute share.
+Take firm sales 150,000 over market volume 1,000,000:
 
-The relevant theory comes from market research methods and interpretation. Identify which definition or relationship the sentence is trying to test before deciding true or false.
+$$
+\frac{150,000}{1,000,000} = 0.15
+$$
 
-The statement overreaches because 50,000/1,000,000 is 5%, not 50%. The trap is to agree with the topic while missing the one detail that breaks the logic.
+Convert to a percentage:
 
-The statement sounds plausible but fails on precision, so it is false.'] WHERE case_id = 'CASE 5.5.18' AND tier = 'full';
-UPDATE public.economics_cases SET tactical_explanations = ARRAY['TRUE — This statement is correct. Customer analysis records when customers buy to identify seasonal fluctuations in demand.
+$$
+0.15 \times 100 = 15\%
+$$
 
-Here you must apply ideas from market research methods and interpretation to a concrete situation rather than recite a definition from memory. Ownership, customer type, stakeholder group, or country of production usually decides the verdict.
+The statement claims about 1.5%, which does not equal 15% from this division.
 
-Applied carefully, when-customers buy reveals seasonal patterns for planning. Nothing in the sentence stretches the concept beyond its standard use.
+The statement is false.
+', 'FALSE — Relative market share equals the firm''s absolute share divided by the largest competitor''s absolute share — a pure ratio, not a percentage of the whole market.
 
-No qualifying word breaks the definition or scenario, so the answer is true.', 'FALSE — This statement is false. A firm with sales of 150,000 euros in a 1,000,000 euro market holds a one point five per cent absolute share.
+With own share 15% and leader share 30%:
 
-The relevant theory comes from market research methods and interpretation. Identify which definition or relationship the sentence is trying to test before deciding true or false.
+$$
+\frac{15}{30} = 0.5
+$$
 
-The statement overreaches because 150,000/1,000,000 is 15%, not 1.5%. The trap is to agree with the topic while missing the one detail that breaks the logic.
+A relative share of 0.5 means the firm holds half the leader''s percentage of the market — not a 50% absolute share, and not half of a geographic area.
 
-Once the overclaim or mislabel is exposed, the only consistent answer is false.', 'FALSE — Evaluated against the textbook standard, this assertion is false. If absolute share is fifteen per cent and the leader has thirty per cent, relative share equals forty-five per cent.
+Adding the two percentage points (or otherwise treating them as one combined absolute figure) is not the relative-share formula.
 
-Here you must apply ideas from market research methods and interpretation to a concrete situation rather than recite a definition from memory. Ownership, customer type, stakeholder group, or country of production usually decides the verdict.
+The statement is false.
+', 'FALSE — Relative market share equals the firm''s absolute share divided by the largest competitor''s absolute share — a pure ratio, not a percentage of the whole market.
 
-The statement overreaches because relative share is 15/30 = 0.5, not 45%. The trap is to agree with the topic while missing the one detail that breaks the logic.
+With own share 20% and leader share 20%:
 
-Because the decisive detail is wrong, mark the statement false.', 'FALSE — This statement is false. If absolute share is twenty per cent and the leader has twenty per cent, relative share equals zero.
+$$
+\frac{20}{20} = 1
+$$
 
-Here you must apply ideas from market research methods and interpretation to a concrete situation rather than recite a definition from memory. Ownership, customer type, stakeholder group, or country of production usually decides the verdict.
+Equal absolute shares give relative share 1, not 0.
 
-The statement overreaches because equal shares give relative share of 1.0, not zero. The trap is to agree with the topic while missing the one detail that breaks the logic.
+The statement is false.
+', 'TRUE — Customer analysis asks who buys (and who influences), what buyers do with the product, where and when they buy, and why they prefer one offer — guiding distribution, seasonality, development, and share strategy.
 
-Once the overclaim or mislabel is exposed, the only consistent answer is false.', 'TRUE — The claim is correct. Knowing when customers purchase helps plan production ahead of predictable demand peaks.
+Timing analysis supports forward production planning. Under that definition the assertion is the right description of the situation.
 
-The scenario is a worked example of market research methods and interpretation. Translate the story into the textbook category first; only then judge whether the sentence describes that category accurately.
+Under that definition the assertion is the right description of the situation.
 
-In this setting, timing analysis supports forward production planning. The wording matches the textbook relationship without adding extra conditions.
+The statement is true.
+'] WHERE case_id = 'CASE 5.5.19' AND tier = 'full';
+UPDATE public.economics_cases SET tactical_explanations = ARRAY['TRUE — Customer analysis asks who buys (and who influences), what buyers do with the product, where and when they buy, and why they prefer one offer — guiding distribution, seasonality, development, and share strategy.
 
-No qualifying word breaks the definition or scenario, so the answer is true.'] WHERE case_id = 'CASE 5.5.19' AND tier = 'full';
-UPDATE public.economics_cases SET tactical_explanations = ARRAY['TRUE — This statement is correct. When-customer analysis can support price differentiation across different periods of the year.
+Seasonal timing links to differentiated pricing over the year. The sentence therefore reports the concept accurately for this case.
 
-Here you must apply ideas from market research methods and interpretation to a concrete situation rather than recite a definition from memory. Ownership, customer type, stakeholder group, or country of production usually decides the verdict.
+The sentence therefore reports the concept accurately for this case.
 
-Applied carefully, seasonal timing links to differentiated pricing over the year. Nothing in the sentence stretches the concept beyond its standard use.
+The statement is true.
+', 'TRUE — Customer analysis asks who buys (and who influences), what buyers do with the product, where and when they buy, and why they prefer one offer — guiding distribution, seasonality, development, and share strategy.
 
-The reasoning chain is complete, so mark the statement true.', 'TRUE — This statement is correct. Customer analysis investigates why customers choose one product or prefer another.
+Why-customers choose addresses motives and preferences. Under that definition the assertion is the right description of the situation.
 
-The relevant theory comes from market research methods and interpretation. Identify which definition or relationship the sentence is trying to test before deciding true or false.
+Under that definition the assertion is the right description of the situation.
 
-Applied carefully, why-customers choose addresses motives and preferences. Nothing in the sentence stretches the concept beyond its standard use.
+The statement is true.
+', 'TRUE — Market research supplies evidence on customers, competitors, and the industry so the firm can judge position and prospects.
 
-The reasoning chain is complete, so mark the statement true.', 'TRUE — This statement is correct. Learning customer motives and preferences is important for product development and enhancing market share.
+On this stem (market share): why-customer insight supports development and share growth. Nothing in the wording contradicts that marketing test, so the claim is sound.
 
-The relevant theory comes from market research methods and interpretation. Identify which definition or relationship the sentence is trying to test before deciding true or false.
+Nothing in the wording contradicts that marketing test, so the claim is sound.
 
-Applied carefully, why-customer insight supports development and share growth. Nothing in the sentence stretches the concept beyond its standard use.
+The statement is true.
+', 'TRUE — Market research supplies evidence on customers, competitors, and the industry so the firm can judge position and prospects.
 
-Every part of the claim aligns with the standard concept, so the statement stands.', 'TRUE — The claim is correct. Market research provides information about existing customers and prospective buyers of a firm''s products.
+Research covers both current and potential customers in the chapter overview. The sentence therefore reports the concept accurately for this case.
 
-This statement draws on market research methods and interpretation. Treat it as a checklist against the core concept named in the stem, not as a general opinion about business.
+The sentence therefore reports the concept accurately for this case.
 
-In this setting, research covers both current and potential customers in the chapter overview. The wording matches the textbook relationship without adding extra conditions.
+The statement is true.
+', 'TRUE — Market research supplies evidence on customers, competitors, and the industry so the firm can judge position and prospects.
 
-The reasoning chain is complete, so mark the statement true.', 'TRUE — Evaluated against the textbook standard, this assertion is correct. Market research also covers competition and general industry conditions beyond customer profiles alone.
+Competitors and industry context are within market research scope. Nothing in the wording contradicts that marketing test, so the claim is sound.
 
-The relevant theory comes from market research methods and interpretation. Identify which definition or relationship the sentence is trying to test before deciding true or false.
+Nothing in the wording contradicts that marketing test, so the claim is sound.
 
-Applied carefully, competitors and industry context are within market research scope. Nothing in the sentence stretches the concept beyond its standard use.
+The statement is true.
+'] WHERE case_id = 'CASE 5.5.20' AND tier = 'full';
+UPDATE public.economics_cases SET tactical_explanations = ARRAY['TRUE — Customer analysis asks who buys (and who influences), what buyers do with the product, where and when they buy, and why they prefer one offer — guiding distribution, seasonality, development, and share strategy.
 
-The reasoning chain is complete, so mark the statement true.'] WHERE case_id = 'CASE 5.5.20' AND tier = 'full';
-UPDATE public.economics_cases SET tactical_explanations = ARRAY['TRUE — On the Fuhrmann definition used in the entrance exam, the sentence is correct. Who-customer research distinguishes consumer markets from business markets for the same product category.
+Customer type determines b2c versus b2b classification. Under that definition the assertion is the right description of the situation.
 
-This statement draws on market research methods and interpretation. Treat it as a checklist against the core concept named in the stem, not as a general opinion about business.
+Under that definition the assertion is the right description of the situation.
 
-In this setting, customer type determines b2c versus b2b classification. The wording matches the textbook relationship without adding extra conditions.
+The statement is true.
+', 'FALSE — Absolute market share equals one business''s (or brand''s) sales divided by total market volume. It informs the firm and investors but says little alone about rivals'' relative strength.
 
-Every part of the claim aligns with the standard concept, so the statement stands.', 'FALSE — The claim is false. Relative market share is expressed as the same percentage figure as absolute market share.
+On this stem (market share): relative share is a ratio against the leader, not the same percentage. Swap in the textbook criterion and the sentence no longer describes the case.
 
-This statement draws on market research methods and interpretation. Treat it as a checklist against the core concept named in the stem, not as a general opinion about business.
+Swap in the textbook criterion and the sentence no longer describes the case.
 
-Applied to this claim, relative share is a ratio against the leader, not the same percentage. That is why the sentence does not survive careful reading.
+The statement is false.
+', 'TRUE — Customer analysis asks who buys (and who influences), what buyers do with the product, where and when they buy, and why they prefer one offer — guiding distribution, seasonality, development, and share strategy.
 
-Once the overclaim or mislabel is exposed, the only consistent answer is false.', 'TRUE — On the Fuhrmann definition used in the entrance exam, the sentence is correct. What-customer analysis can show whether buyers use a product at home, at work, or in industrial processes.
+Preferred use settings are part of what-customer research. The sentence therefore reports the concept accurately for this case.
 
-This statement draws on market research methods and interpretation. Treat it as a checklist against the core concept named in the stem, not as a general opinion about business.
+The sentence therefore reports the concept accurately for this case.
 
-In this setting, preferred use settings are part of what-customer research. The wording matches the textbook relationship without adding extra conditions.
+The statement is true.
+', 'TRUE — Customer analysis asks who buys (and who influences), what buyers do with the product, where and when they buy, and why they prefer one offer — guiding distribution, seasonality, development, and share strategy.
 
-Every part of the claim aligns with the standard concept, so the statement stands.', 'TRUE — On the Fuhrmann definition used in the entrance exam, the sentence is correct. Customer analysis involving hospital procurement teams illustrates business-to-business purchasing of medical supplies within market research.
+The example shows how who-customer research maps to market type and roles. The statement is true. This letter tests the claim: Customer analysis involving hospital procurement teams illustrates business-to-business purchasing of medical supplies within market research. Under that definition the assertion is the right description of the situation.
 
-This statement draws on market research methods and interpretation. Treat it as a checklist against the core concept named in the stem, not as a general opinion about business.
+Under that definition the assertion is the right description of the situation.
 
-In this setting, the example shows how who-customer research maps to market type and roles. The wording matches the textbook relationship without adding extra conditions.
+The statement is true.
+', 'TRUE — Customer analysis asks who buys (and who influences), what buyers do with the product, where and when they buy, and why they prefer one offer — guiding distribution, seasonality, development, and share strategy.
 
-No qualifying word breaks the definition or scenario, so the answer is true.', 'TRUE — Evaluated against the textbook standard, this assertion is correct. Customer analysis involving household shoppers illustrates business-to-consumer retail purchases within market research.
+The example shows how who-customer research maps to market type and roles. The statement is true. This letter tests the claim: Customer analysis involving household shoppers illustrates business-to-consumer retail purchases within market research. Nothing in the wording contradicts that marketing test, so the claim is sound.
 
-The relevant theory comes from market research methods and interpretation. Identify which definition or relationship the sentence is trying to test before deciding true or false.
+Nothing in the wording contradicts that marketing test, so the claim is sound.
 
-Applied carefully, the example shows how who-customer research maps to market type and roles. Nothing in the sentence stretches the concept beyond its standard use.
+The statement is true.
+'] WHERE case_id = 'CASE 5.5.21' AND tier = 'full';
+UPDATE public.economics_cases SET tactical_explanations = ARRAY['TRUE — Customer analysis asks who buys (and who influences), what buyers do with the product, where and when they buy, and why they prefer one offer — guiding distribution, seasonality, development, and share strategy.
 
-The reasoning chain is complete, so mark the statement true.'] WHERE case_id = 'CASE 5.5.21' AND tier = 'full';
-UPDATE public.economics_cases SET tactical_explanations = ARRAY['TRUE — The claim is correct. Customer analysis involving fleet managers illustrates business-to-business acquisition of commercial vehicles within market research.
+The example shows how who-customer research maps to market type and roles. The statement is true. This letter tests the claim: Customer analysis involving fleet managers illustrates business-to-business acquisition of commercial vehicles within market research. Under that definition the assertion is the right description of the situation.
 
-This statement draws on market research methods and interpretation. Treat it as a checklist against the core concept named in the stem, not as a general opinion about business.
+Under that definition the assertion is the right description of the situation.
 
-In this setting, the example shows how who-customer research maps to market type and roles. The wording matches the textbook relationship without adding extra conditions.
+The statement is true.
+', 'TRUE — Customer analysis asks who buys (and who influences), what buyers do with the product, where and when they buy, and why they prefer one offer — guiding distribution, seasonality, development, and share strategy.
 
-Every part of the claim aligns with the standard concept, so the statement stands.', 'TRUE — On the Fuhrmann definition used in the entrance exam, the sentence is correct. Customer analysis involving teenagers recommending apps illustrates influence on purchases paid for by parents within market research.
+The example shows how who-customer research maps to market type and roles. The statement is true. This letter tests the claim: Customer analysis involving teenagers recommending apps illustrates influence on purchases paid for by parents within market research. Under that definition the assertion is the right description of the situation.
 
-This statement draws on market research methods and interpretation. Treat it as a checklist against the core concept named in the stem, not as a general opinion about business.
+Under that definition the assertion is the right description of the situation.
 
-In this setting, the example shows how who-customer research maps to market type and roles. The wording matches the textbook relationship without adding extra conditions.
+The statement is true.
+', 'TRUE — Customer analysis asks who buys (and who influences), what buyers do with the product, where and when they buy, and why they prefer one offer — guiding distribution, seasonality, development, and share strategy.
 
-The reasoning chain is complete, so mark the statement true.', 'TRUE — This statement is correct. Customer analysis involving factory maintenance staff illustrates actual users of industrial components bought by managers within market research.
+The example shows how who-customer research maps to market type and roles. The statement is true. This letter tests the claim: Customer analysis involving factory maintenance staff illustrates actual users of industrial components bought by managers within market research. The sentence therefore reports the concept accurately for this case.
 
-The relevant theory comes from market research methods and interpretation. Identify which definition or relationship the sentence is trying to test before deciding true or false.
+The sentence therefore reports the concept accurately for this case.
 
-Applied carefully, the example shows how who-customer research maps to market type and roles. Nothing in the sentence stretches the concept beyond its standard use.
+The statement is true.
+', 'TRUE — Customer analysis asks who buys (and who influences), what buyers do with the product, where and when they buy, and why they prefer one offer — guiding distribution, seasonality, development, and share strategy.
 
-Every part of the claim aligns with the standard concept, so the statement stands.', 'TRUE — This statement is correct. Where-customer research may show that buyers increasingly prefer retail stores for certain product categories.
+Purchase-location analysis identifies channel preferences such as retail stores. Nothing in the wording contradicts that marketing test, so the claim is sound.
 
-The relevant theory comes from market research methods and interpretation. Identify which definition or relationship the sentence is trying to test before deciding true or false.
+Nothing in the wording contradicts that marketing test, so the claim is sound.
 
-Applied carefully, purchase-location analysis identifies channel preferences such as retail stores. Nothing in the sentence stretches the concept beyond its standard use.
+The statement is true.
+', 'FALSE — Market size/volume is total sales of all firms (value or quantity). Market potential adds still-unserved buyers; a firm''s sales potential exceeds its current sales volume when further gains are possible.
 
-No qualifying word breaks the definition or scenario, so the answer is true.', 'FALSE — Evaluated against the textbook standard, this assertion is false. Market size can only be measured in euros and never as a quantity of pieces sold.
+Market size may be expressed as value or quantity. One clear counterexample under the right criterion is enough to reject the sentence.
 
-The topic is market research methods and interpretation, but the decisive skill here is reading quantifiers. Words such as never, always, only, or all turn a generally true idea into a claim that can be rejected by one routine counterexample.
+One clear counterexample under the right criterion is enough to reject the sentence.
 
-The statement overreaches because market size may be expressed as value or quantity. The trap is to agree with the topic while missing the one detail that breaks the logic.
+The statement is false.
+'] WHERE case_id = 'CASE 5.5.22' AND tier = 'full';
+UPDATE public.economics_cases SET tactical_explanations = ARRAY['TRUE — Customer analysis asks who buys (and who influences), what buyers do with the product, where and when they buy, and why they prefer one offer — guiding distribution, seasonality, development, and share strategy.
 
-Watch the absolute wording "never": exam statements often sound plausible until a single scope word turns an otherwise familiar idea into an overclaim.
+Purchase-location analysis identifies channel preferences such as online platforms. The sentence therefore reports the concept accurately for this case.
 
-The statement sounds plausible but fails on precision, so it is false.'] WHERE case_id = 'CASE 5.5.22' AND tier = 'full';
-UPDATE public.economics_cases SET tactical_explanations = ARRAY['TRUE — On the Fuhrmann definition used in the entrance exam, the sentence is correct. Where-customer research may show that buyers increasingly prefer online platforms for certain product categories.
+The sentence therefore reports the concept accurately for this case.
 
-This statement draws on market research methods and interpretation. Treat it as a checklist against the core concept named in the stem, not as a general opinion about business.
+The statement is true.
+', 'FALSE — Market size/volume is total sales of all firms (value or quantity). Market potential adds still-unserved buyers; a firm''s sales potential exceeds its current sales volume when further gains are possible.
 
-In this setting, purchase-location analysis identifies channel preferences such as online platforms. The wording matches the textbook relationship without adding extra conditions.
+Market size may be expressed as quantity or value. One clear counterexample under the right criterion is enough to reject the sentence.
 
-No qualifying word breaks the definition or scenario, so the answer is true.', 'FALSE — This statement is false. Market size can only be measured as units sold and never as a euro value total.
+One clear counterexample under the right criterion is enough to reject the sentence.
 
-The topic is market research methods and interpretation, but the decisive skill here is reading quantifiers. Words such as never, always, only, or all turn a generally true idea into a claim that can be rejected by one routine counterexample.
+The statement is false.
+', 'TRUE — Customer analysis asks who buys (and who influences), what buyers do with the product, where and when they buy, and why they prefer one offer — guiding distribution, seasonality, development, and share strategy.
 
-The statement overreaches because market size may be expressed as quantity or value. The trap is to agree with the topic while missing the one detail that breaks the logic.
+On this stem (product lines): timing research identifies seasonal peaks such as winter holiday periods. Nothing in the wording contradicts that marketing test, so the claim is sound.
 
-Watch the absolute wording "never": exam statements often sound plausible until a single scope word turns an otherwise familiar idea into an overclaim.
+Nothing in the wording contradicts that marketing test, so the claim is sound.
 
-Because the decisive detail is wrong, mark the statement false.', 'TRUE — This statement is correct. When-customer analysis may reveal higher purchase volumes during winter holiday periods for relevant product lines.
+The statement is true.
+', 'TRUE — Customer analysis asks who buys (and who influences), what buyers do with the product, where and when they buy, and why they prefer one offer — guiding distribution, seasonality, development, and share strategy.
 
-Here you must apply ideas from market research methods and interpretation to a concrete situation rather than recite a definition from memory. Ownership, customer type, stakeholder group, or country of production usually decides the verdict.
+Motive analysis can identify preferences such as lower total cost of ownership. The sentence therefore reports the concept accurately for this case.
 
-Applied carefully, timing research identifies seasonal peaks such as winter holiday periods. Nothing in the sentence stretches the concept beyond its standard use.
+The sentence therefore reports the concept accurately for this case.
 
-Every part of the claim aligns with the standard concept, so the statement stands.', 'TRUE — On the Fuhrmann definition used in the entrance exam, the sentence is correct. Why-customer research may show that buyers select a supplier because of lower total cost of ownership.
+The statement is true.
+', 'TRUE — Customer analysis asks who buys (and who influences), what buyers do with the product, where and when they buy, and why they prefer one offer — guiding distribution, seasonality, development, and share strategy.
 
-The scenario is a worked example of market research methods and interpretation. Translate the story into the textbook category first; only then judge whether the sentence describes that category accurately.
+Motive analysis can identify preferences such as perceived product reliability. Under that definition the assertion is the right description of the situation.
 
-In this setting, motive analysis can identify preferences such as lower total cost of ownership. The wording matches the textbook relationship without adding extra conditions.
+Under that definition the assertion is the right description of the situation.
 
-Every part of the claim aligns with the standard concept, so the statement stands.', 'TRUE — This statement is correct. Why-customer research may show that buyers select a supplier because of perceived product reliability.
+The statement is true.
+'] WHERE case_id = 'CASE 5.5.23' AND tier = 'full';
+UPDATE public.economics_cases SET tactical_explanations = ARRAY['TRUE — Customer analysis asks who buys (and who influences), what buyers do with the product, where and when they buy, and why they prefer one offer — guiding distribution, seasonality, development, and share strategy.
 
-Here you must apply ideas from market research methods and interpretation to a concrete situation rather than recite a definition from memory. Ownership, customer type, stakeholder group, or country of production usually decides the verdict.
+Motive analysis can identify preferences such as faster delivery performance. Nothing in the wording contradicts that marketing test, so the claim is sound.
 
-Applied carefully, motive analysis can identify preferences such as perceived product reliability. Nothing in the sentence stretches the concept beyond its standard use.
+Nothing in the wording contradicts that marketing test, so the claim is sound.
 
-Every part of the claim aligns with the standard concept, so the statement stands.'] WHERE case_id = 'CASE 5.5.23' AND tier = 'full';
-UPDATE public.economics_cases SET tactical_explanations = ARRAY['TRUE — The claim is correct. Why-customer research may show that buyers select a supplier because of faster delivery performance.
+The statement is true.
+', 'FALSE — Customer analysis asks who buys (and who influences), what buyers do with the product, where and when they buy, and why they prefer one offer — guiding distribution, seasonality, development, and share strategy.
 
-The scenario is a worked example of market research methods and interpretation. Translate the story into the textbook category first; only then judge whether the sentence describes that category accurately.
+Where-customer analysis concerns purchase location, not factory location. The mislabelled category or reversed comparison is enough to reject the claim.
 
-In this setting, motive analysis can identify preferences such as faster delivery performance. The wording matches the textbook relationship without adding extra conditions.
+The mislabelled category or reversed comparison is enough to reject the claim.
 
-Every part of the claim aligns with the standard concept, so the statement stands.', 'FALSE — The claim is false. Customer analysis asks where products are manufactured rather than where customers buy them.
+The statement is false.
+', 'TRUE — Customer analysis asks who buys (and who influences), what buyers do with the product, where and when they buy, and why they prefer one offer — guiding distribution, seasonality, development, and share strategy.
 
-The section on market research methods and interpretation frequently contrasts two similar ideas side by side. A comparison statement is true only if the relationship is stated in the right direction and applies to the right concept pair.
+Motive analysis can identify preferences such as environmental reputation of the brand. The sentence therefore reports the concept accurately for this case.
 
-Applied to this claim, where-customer analysis concerns purchase location, not factory location. That is why the sentence does not survive careful reading.
+The sentence therefore reports the concept accurately for this case.
 
-Students often remember that two concepts differ but swap the direction of the comparison. Verify which side of the pair is longer, larger, riskier, or more regulated.
+The statement is true.
+', 'FALSE — Customer analysis asks who buys (and who influences), what buyers do with the product, where and when they buy, and why they prefer one offer — guiding distribution, seasonality, development, and share strategy.
 
-Because the decisive detail is wrong, mark the statement false.', 'TRUE — The claim is correct. Why-customer research may show that buyers select a supplier because of environmental reputation of the brand.
+When-customer analysis concerns purchase timing, not design timing. Once the defining feature is restored, the assertion falls away.
 
-The scenario is a worked example of market research methods and interpretation. Translate the story into the textbook category first; only then judge whether the sentence describes that category accurately.
+Once the defining feature is restored, the assertion falls away.
 
-In this setting, motive analysis can identify preferences such as environmental reputation of the brand. The wording matches the textbook relationship without adding extra conditions.
+The statement is false.
+', 'TRUE — Customer analysis asks who buys (and who influences), what buyers do with the product, where and when they buy, and why they prefer one offer — guiding distribution, seasonality, development, and share strategy.
 
-No qualifying word breaks the definition or scenario, so the answer is true.', 'FALSE — On the Fuhrmann definition used in the entrance exam, the sentence is false. Customer analysis asks when products are designed rather than when customers purchase them.
+Motive analysis can identify preferences such as availability of after-sales support. The sentence therefore reports the concept accurately for this case.
 
-The section on market research methods and interpretation frequently contrasts two similar ideas side by side. A comparison statement is true only if the relationship is stated in the right direction and applies to the right concept pair.
+The sentence therefore reports the concept accurately for this case.
 
-Applied to this claim, when-customer analysis concerns purchase timing, not design timing. That is why the sentence does not survive careful reading.
+The statement is true.
+'] WHERE case_id = 'CASE 5.5.24' AND tier = 'full';
+UPDATE public.economics_cases SET tactical_explanations = ARRAY['TRUE — Market size/volume is total sales of all firms (value or quantity). Market potential adds still-unserved buyers; a firm''s sales potential exceeds its current sales volume when further gains are possible.
 
-Students often remember that two concepts differ but swap the direction of the comparison. Verify which side of the pair is longer, larger, riskier, or more regulated.
+Market size or volume is total industry sales in the textbook definition. The sentence therefore reports the concept accurately for this case.
 
-Once the overclaim or mislabel is exposed, the only consistent answer is false.', 'TRUE — This statement is correct. Why-customer research may show that buyers select a supplier because of availability of after-sales support.
+The sentence therefore reports the concept accurately for this case.
 
-Here you must apply ideas from market research methods and interpretation to a concrete situation rather than recite a definition from memory. Ownership, customer type, stakeholder group, or country of production usually decides the verdict.
+The statement is true.
+', 'TRUE — Market size/volume is total sales of all firms (value or quantity). Market potential adds still-unserved buyers; a firm''s sales potential exceeds its current sales volume when further gains are possible.
 
-Applied carefully, motive analysis can identify preferences such as availability of after-sales support. Nothing in the sentence stretches the concept beyond its standard use.
+Value expression of market size uses currency totals. Nothing in the wording contradicts that marketing test, so the claim is sound.
 
-No qualifying word breaks the definition or scenario, so the answer is true.'] WHERE case_id = 'CASE 5.5.24' AND tier = 'full';
-UPDATE public.economics_cases SET tactical_explanations = ARRAY['TRUE — The claim is correct. Market size, also called market volume, is the total sales of a product by all businesses in the market.
+Nothing in the wording contradicts that marketing test, so the claim is sound.
 
-Although the subject matter is market research methods and interpretation, this is really a logic check on overstatement. Non-profit surpluses, mixed economies, and partial market failure are classic cases where absolute wording fails.
+The statement is true.
+', 'TRUE — Market size/volume is total sales of all firms (value or quantity). Market potential adds still-unserved buyers; a firm''s sales potential exceeds its current sales volume when further gains are possible.
 
-In this setting, market size or volume is total industry sales in the textbook definition. The wording matches the textbook relationship without adding extra conditions.
+Quantity expression counts units sold across the market. Under that definition the assertion is the right description of the situation.
 
-The reasoning chain is complete, so mark the statement true.', 'TRUE — On the Fuhrmann definition used in the entrance exam, the sentence is correct. Market size can be expressed as a monetary value such as total euro sales across the market.
+Under that definition the assertion is the right description of the situation.
 
-This statement draws on market research methods and interpretation. Treat it as a checklist against the core concept named in the stem, not as a general opinion about business.
+The statement is true.
+', 'TRUE — Market research supplies evidence on customers, competitors, and the industry so the firm can judge position and prospects.
 
-In this setting, value expression of market size uses currency totals. The wording matches the textbook relationship without adding extra conditions.
+On this stem (Market share / brand): market share is defined as the firm''s proportion of total market sales. Nothing in the wording contradicts that marketing test, so the claim is sound.
 
-No qualifying word breaks the definition or scenario, so the answer is true.', 'TRUE — This statement is correct. Market size can also be expressed as a quantity such as the number of pieces sold in the market.
+Nothing in the wording contradicts that marketing test, so the claim is sound.
 
-The relevant theory comes from market research methods and interpretation. Identify which definition or relationship the sentence is trying to test before deciding true or false.
+The statement is true.
+', 'TRUE — Market research supplies evidence on customers, competitors, and the industry so the firm can judge position and prospects.
 
-Applied carefully, quantity expression counts units sold across the market. Nothing in the sentence stretches the concept beyond its standard use.
+On this stem (Market share): share equals business sales divided by all market sales. The sentence therefore reports the concept accurately for this case.
 
-The reasoning chain is complete, so mark the statement true.', 'TRUE — The claim is correct. Market share is the proportion of market sales held by a business, product, or brand.
+The sentence therefore reports the concept accurately for this case.
 
-This statement draws on market research methods and interpretation. Treat it as a checklist against the core concept named in the stem, not as a general opinion about business.
-
-In this setting, market share is defined as the firm''s proportion of total market sales. The wording matches the textbook relationship without adding extra conditions.
-
-Every part of the claim aligns with the standard concept, so the statement stands.', 'TRUE — This statement is correct. Market share is calculated by dividing the sales of a business by total sales in the market.
-
-The relevant theory comes from market research methods and interpretation. Identify which definition or relationship the sentence is trying to test before deciding true or false.
-
-Applied carefully, share equals business sales divided by all market sales. Nothing in the sentence stretches the concept beyond its standard use.
-
-Every part of the claim aligns with the standard concept, so the statement stands.'] WHERE case_id = 'CASE 5.5.25' AND tier = 'full';
+The statement is true.
+'] WHERE case_id = 'CASE 5.5.25' AND tier = 'full';
