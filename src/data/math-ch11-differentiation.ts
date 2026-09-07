@@ -40,11 +40,7 @@ $$
 $$
 
 $$
-\\dfrac{2ah+h^{2}-4h}{h}
-$$
-
-$$
-= 2a+h-4
+\\dfrac{2ah+h^{2}-4h}{h} = 2a+h-4
 $$
 
 A common trap is dropping the $-4h$ from the linear term; keeping every contribution yields exactly the claimed simplification.
@@ -88,39 +84,7 @@ $$
 $$
 
 $$
-P(3) = 4
-$$
-
-$$
-9 - 12 = -3
-$$
-
-$$
--3 + 7 = 4
-$$
-
-$$
-P(3) = 4
-$$
-
-$$
-= 4
-$$
-
-$$
-9 - 12 = -3
-$$
-
-$$
--3 + 7 = 4
-$$
-
-$$
-9 - 12 = -3
-$$
-
-$$
--3 + 7 = 4
+P(3) = 4 = 4
 $$
 
 $$
@@ -157,14 +121,6 @@ A stationary point solves $P'(x)=0$:
 
 $$
 2x-4 = 0
-$$
-
-$$
-2x = 4
-$$
-
-$$
-x = 2
 $$
 
 $$
@@ -251,23 +207,7 @@ $$
 $$
 
 $$
-C'(100) = 18
-$$
-
-$$
-12 + 6 = 18
-$$
-
-$$
-C'(100) = 18
-$$
-
-$$
-= 18
-$$
-
-$$
-12 + 6 = 18
+C'(100) = 18 = 18
 $$
 
 $$
@@ -310,11 +250,7 @@ So the statement is False.`,
 First record the point and slope at $q=100$:
 
 $$
-C(100) = 200+12\\cdot 100+\\dfrac{3}{100}\\cdot 10000
-$$
-
-$$
-= 1700
+C(100) = 200+12\\cdot 100+\\dfrac{3}{100}\\cdot 10000 = 1700
 $$
 
 $$
@@ -556,23 +492,7 @@ $$
 $$
 
 $$
-R'(10) = 40
-$$
-
-$$
-80 - 40 = 40
-$$
-
-$$
-R'(10) = 40
-$$
-
-$$
-= 40
-$$
-
-$$
-80 - 40 = 40
+R'(10) = 40 = 40
 $$
 
 $$
@@ -610,11 +530,7 @@ So the statement is False.`,
 First evaluate both the height and the slope at $q=10$:
 
 $$
-R(10) = 80\\cdot 10-2\\cdot 100
-$$
-
-$$
-= 600
+R(10) = 80\\cdot 10-2\\cdot 100 = 600
 $$
 
 $$
@@ -1156,19 +1072,11 @@ So the statement is False.`,
 Compare the derivative at the two advertising levels:
 
 $$
-D'(16) = \\dfrac{7}{2\\sqrt{25}}
+D'(16) = \\dfrac{7}{2\\sqrt{25}} = \\dfrac{7}{10}
 $$
 
 $$
-= \\dfrac{7}{10}
-$$
-
-$$
-D'(0) = \\dfrac{7}{2\\sqrt{9}}
-$$
-
-$$
-= \\dfrac{7}{6}
+D'(0) = \\dfrac{7}{2\\sqrt{9}} = \\dfrac{7}{6}
 $$
 
 Since $\\dfrac{7}{10}<\\dfrac{7}{6}$, the derivative is smaller at $a=16$ than at $a=0$. That is diminishing returns in action.
@@ -1769,23 +1677,7 @@ $$
 $$
 
 $$
-R'(20) = 10
-$$
-
-$$
-50 - 40 = 10
-$$
-
-$$
-R'(20) = 10
-$$
-
-$$
-= 10
-$$
-
-$$
-50 - 40 = 10
+R'(20) = 10 = 10
 $$
 
 $$
@@ -1812,23 +1704,7 @@ $$
 $$
 
 $$
-R(20) = 600
-$$
-
-$$
-1000 - 400 = 600
-$$
-
-$$
-R(20) = 600
-$$
-
-$$
-= 600
-$$
-
-$$
-1000 - 400 = 600
+R(20) = 600 = 600
 $$
 
 $$
@@ -2015,30 +1891,6 @@ $$
 $$
 
 $$
-30\\times 64 = 1920
-$$
-
-$$
-1920\\times 4 = 7680
-$$
-
-$$
-30\\times 64 = 1920
-$$
-
-$$
-1920\\times 4 = 7680
-$$
-
-$$
-30\\times 64 = 1920
-$$
-
-$$
-1920\\times 4 = 7680
-$$
-
-$$
 G''(0) = 7680
 $$
 
@@ -2132,11 +1984,7 @@ C''\\!\\left(\\dfrac{3}{2}\\right) = 24\\cdot\\dfrac{3}{2}-36
 $$
 
 $$
-24\\cdot\\dfrac{3}{2}-36 = 36-36
-$$
-
-$$
-= 0
+24\\cdot\\dfrac{3}{2}-36 = 36-36 = 0
 $$
 
 $$
@@ -2159,23 +2007,7 @@ $$
 $$
 
 $$
-C''(1) = -12
-$$
-
-$$
-24 - 36 = -12
-$$
-
-$$
-C''(1) = -12
-$$
-
-$$
-= -12
-$$
-
-$$
-24 - 36 = -12
+C''(1) = -12 = -12
 $$
 
 $$
@@ -2198,23 +2030,7 @@ $$
 $$
 
 $$
-C''(2) = 12
-$$
-
-$$
-48 - 36 = 12
-$$
-
-$$
-C''(2) = 12
-$$
-
-$$
-= 12
-$$
-
-$$
-48 - 36 = 12
+C''(2) = 12 = 12
 $$
 
 $$
@@ -3030,18 +2846,6 @@ $$
 \\pi'(1) = 0
 $$
 
-$$
--3 + 24 = 21
-$$
-
-$$
-21 - 21 = 0
-$$
-
-$$
-\\pi'(1) = 0
-$$
-
 so the derivative vanishes at that output. The three terms cancel exactly: $-3+24=21$, then $21-21=0$.
 
 So the statement is True.`,
@@ -3066,14 +2870,6 @@ $$
 
 $$
 \\pi''(3) = -18+24
-$$
-
-$$
--18 + 24 = 6
-$$
-
-$$
-\\pi''(3) = 6
 $$
 
 $$
@@ -3404,23 +3200,7 @@ $$
 $$
 
 $$
-R'(20) = 40
-$$
-
-$$
-60 - 20 = 40
-$$
-
-$$
-R'(20) = 40
-$$
-
-$$
-= 40
-$$
-
-$$
-60 - 20 = 40
+R'(20) = 40 = 40
 $$
 
 $$
@@ -3454,11 +3234,7 @@ So the statement is False.`,
 First evaluate both height and slope at $q=20$:
 
 $$
-R(20) = 60\\cdot 20-\\dfrac{1}{2}\\cdot 400
-$$
-
-$$
-= 1000
+R(20) = 60\\cdot 20-\\dfrac{1}{2}\\cdot 400 = 1000
 $$
 
 $$
@@ -3969,23 +3745,7 @@ $$
 $$
 
 $$
-U'(2) = 8
-$$
-
-$$
-12 - 4 = 8
-$$
-
-$$
-U'(2) = 8
-$$
-
-$$
-= 8
-$$
-
-$$
-12 - 4 = 8
+U'(2) = 8 = 8
 $$
 
 $$
@@ -5280,23 +5040,7 @@ $$
 $$
 
 $$
-C''(2) = 0
-$$
-
-$$
-12 - 12 = 0
-$$
-
-$$
-C''(2) = 0
-$$
-
-$$
-= 0
-$$
-
-$$
-12 - 12 = 0
+C''(2) = 0 = 0
 $$
 
 $$
@@ -5319,23 +5063,7 @@ $$
 $$
 
 $$
-C''(1) = -6
-$$
-
-$$
-6 - 12 = -6
-$$
-
-$$
-C''(1) = -6
-$$
-
-$$
-= -6
-$$
-
-$$
-6 - 12 = -6
+C''(1) = -6 = -6
 $$
 
 $$
@@ -5368,39 +5096,7 @@ $$
 $$
 
 $$
-C'(2) = 8
-$$
-
-$$
-12 - 24 = -12
-$$
-
-$$
--12 + 20 = 8
-$$
-
-$$
-C'(2) = 8
-$$
-
-$$
-= 8
-$$
-
-$$
-12 - 24 = -12
-$$
-
-$$
--12 + 20 = 8
-$$
-
-$$
-12 - 24 = -12
-$$
-
-$$
--12 + 20 = 8
+C'(2) = 8 = 8
 $$
 
 $$
@@ -7656,15 +7352,7 @@ $$
 $$
 
 $$
-P^{\\prime}(80) = -3
-$$
-
-$$
-= -3
-$$
-
-$$
-12 - 15 = -3
+P^{\\prime}(80) = -3 = -3
 $$
 
 $$
@@ -7691,15 +7379,7 @@ $$
 $$
 
 $$
-P^{\\prime}(80) = 3
-$$
-
-$$
-= 3
-$$
-
-$$
-12 - 9 = 3
+P^{\\prime}(80) = 3 = 3
 $$
 
 $$
@@ -8143,15 +7823,7 @@ $$
 $$
 
 $$
-P^{\\prime}(Q) = -7
-$$
-
-$$
-= -7
-$$
-
-$$
-11 - 18 = -7
+P^{\\prime}(Q) = -7 = -7
 $$
 
 $$
@@ -8211,15 +7883,7 @@ $$
 $$
 
 $$
-P_A^{\\prime}(10) = 3
-$$
-
-$$
-= 3
-$$
-
-$$
-9 - 6 = 3
+P_A^{\\prime}(10) = 3 = 3
 $$
 
 $$
@@ -8250,15 +7914,7 @@ $$
 $$
 
 $$
-P_B^{\\prime}(10) = -2
-$$
-
-$$
-= -2
-$$
-
-$$
-5 - 7 = -2
+P_B^{\\prime}(10) = -2 = -2
 $$
 
 $$
@@ -8417,15 +8073,7 @@ $$
 $$
 
 $$
-R^{\\prime}(Q)-C^{\\prime}(Q) = -4
-$$
-
-$$
-= -4
-$$
-
-$$
-16 - 20 = -4
+R^{\\prime}(Q)-C^{\\prime}(Q) = -4 = -4
 $$
 
 $$
@@ -8456,15 +8104,7 @@ $$
 $$
 
 $$
-P^{\\prime}(40) = 4
-$$
-
-$$
-= 4
-$$
-
-$$
-16 - 12 = 4
+P^{\\prime}(40) = 4 = 4
 $$
 
 $$
@@ -8540,15 +8180,7 @@ $$
 $$
 
 $$
-R^{\\prime}(Q) = 15
-$$
-
-$$
-= 15
-$$
-
-$$
-4 + 11 = 15
+R^{\\prime}(Q) = 15 = 15
 $$
 
 $$
@@ -8589,7 +8221,9 @@ Even if someone writes $p(Q)=30-\\dfrac{Q}{10}$, under a downward-sloping price 
 
 $$
 R^{\\prime}(Q) = p(Q)+Q\\,p^{\\prime}(Q)<p(Q)
-$$, and price and marginal revenue are different objects. The whiteboard does not force $p(Q)=R^{\\prime}(Q)$
+$$
+
+, and price and marginal revenue are different objects. The whiteboard does not force $p(Q)=R^{\\prime}(Q)$
 
 Even evaluating the invented $p$ at some $Q$ would generally fail to match $R^{\\prime}=15$; price and MR are different objects.
 
@@ -8599,10 +8233,6 @@ $$
 
 $$
 p(Q) = 30-\\dfrac{Q}{10}
-$$
-
-$$
-R^{\\prime}(Q) = p(Q)+Q\\,p^{\\prime}(Q)<p(Q)
 $$
 
 $$
@@ -8712,11 +8342,7 @@ R^{\\prime}(Q) = p(Q)
 $$
 
 $$
-R_B^{\\prime}(Q_B) = 10
-$$
-
-$$
-= p_B
+R_B^{\\prime}(Q_B) = 10 = p_B
 $$
 
 $$
@@ -8745,15 +8371,7 @@ $$
 $$
 
 $$
-P_A^{\\prime}(Q_A) = -1
-$$
-
-$$
-= -1
-$$
-
-$$
-7 - 8 = -1
+P_A^{\\prime}(Q_A) = -1 = -1
 $$
 
 $$
@@ -8784,15 +8402,7 @@ $$
 $$
 
 $$
-P_B^{\\prime}(Q_B) = 2
-$$
-
-$$
-= 2
-$$
-
-$$
-10 - 8 = 2
+P_B^{\\prime}(Q_B) = 2 = 2
 $$
 
 $$
@@ -8819,15 +8429,7 @@ $$
 $$
 
 $$
-P_A^{\\prime}(Q_A) = -1
-$$
-
-$$
-= -1
-$$
-
-$$
-7 - 8 = -1
+P_A^{\\prime}(Q_A) = -1 = -1
 $$
 
 $$
@@ -8843,15 +8445,7 @@ $$
 $$
 
 $$
-P_B^{\\prime}(Q_B) = 2
-$$
-
-$$
-= 2
-$$
-
-$$
-10 - 8 = 2
+P_B^{\\prime}(Q_B) = 2 = 2
 $$
 
 $$
@@ -8953,15 +8547,7 @@ $$
 $$
 
 $$
-P^{\\prime}(12) = 5
-$$
-
-$$
-= 5
-$$
-
-$$
-15 - 10 = 5
+P^{\\prime}(12) = 5 = 5
 $$
 
 $$
@@ -8988,15 +8574,7 @@ $$
 $$
 
 $$
-P^{\\prime}(25) = -2
-$$
-
-$$
-= -2
-$$
-
-$$
-8 - 10 = -2
+P^{\\prime}(25) = -2 = -2
 $$
 
 $$
@@ -9161,15 +8739,7 @@ $$
 $$
 
 $$
-P^{\\prime}\\text{ via Plant 1} = 2
-$$
-
-$$
-= 2
-$$
-
-$$
-11 - 9 = 2
+P^{\\prime}\\text{ via Plant 1} = 2 = 2
 $$
 
 $$
@@ -9217,11 +8787,7 @@ With a common $R'$, minimizing marginal cost across plants is exactly the profit
 Matching the claim against that reasoning confirms the verdict is True once the right derivative (or the right expand-or-not comparison) is in view.
 
 $$
-C_1^{\\prime} = 9<13
-$$
-
-$$
-= C_2^{\\prime}
+C_1^{\\prime} = 9<13 = C_2^{\\prime}
 $$
 
 So the statement is True.`,
@@ -9358,15 +8924,7 @@ $$
 $$
 
 $$
-T(1500) = 400
-$$
-
-$$
-= 400
-$$
-
-$$
-200 + 200 = 400
+T(1500) = 400 = 400
 $$
 
 $$
@@ -9403,11 +8961,7 @@ y = 1500
 $$
 
 $$
-T^{\\prime}(y) = \\dfrac{2}{5}
-$$
-
-$$
-= 0.4
+T^{\\prime}(y) = \\dfrac{2}{5} = 0.4
 $$
 
 $$
@@ -9619,15 +9173,7 @@ $$
 $$
 
 $$
-P_S^{\\prime}(15) = 5
-$$
-
-$$
-= 5
-$$
-
-$$
-20 - 15 = 5
+P_S^{\\prime}(15) = 5 = 5
 $$
 
 $$
@@ -9654,15 +9200,7 @@ $$
 $$
 
 $$
-P_S^{\\prime}(25) = -5
-$$
-
-$$
-= -5
-$$
-
-$$
-20 - 25 = -5
+P_S^{\\prime}(25) = -5 = -5
 $$
 
 $$
@@ -9687,11 +9225,7 @@ North's stock is $P_N(15)=12\\cdot 15-40=140$, but South's stock is unidentified
 Matching the claim against that reasoning confirms the verdict is False once the right derivative (or the right expand-or-not comparison) is in view.
 
 $$
-P_N(15) = 12\\cdot 15-40
-$$
-
-$$
-= 140
+P_N(15) = 12\\cdot 15-40 = 140
 $$
 
 So the statement is False.`,
@@ -9712,15 +9246,7 @@ $$
 $$
 
 $$
-P_N^{\\prime}(Q) = 12
-$$
-
-$$
-= 12
-$$
-
-$$
-30 - 18 = 12
+P_N^{\\prime}(Q) = 12 = 12
 $$
 
 $$
@@ -9801,15 +9327,7 @@ $$
 $$
 
 $$
-U^{\\prime}(6) = 4
-$$
-
-$$
-= 4
-$$
-
-$$
-10 - 6 = 4
+U^{\\prime}(6) = 4 = 4
 $$
 
 $$
@@ -9857,15 +9375,7 @@ $$
 $$
 
 $$
-U^{\\prime}(8^{-}) = 2
-$$
-
-$$
-= 2
-$$
-
-$$
-10 - 8 = 2
+U^{\\prime}(8^{-}) = 2 = 2
 $$
 
 $$
@@ -9985,15 +9495,7 @@ $$
 $$
 
 $$
-P^{\\prime}(Q) = 0
-$$
-
-$$
-= 0
-$$
-
-$$
-16 - 16 = 0
+P^{\\prime}(Q) = 0 = 0
 $$
 
 $$
@@ -10091,15 +9593,7 @@ $$
 $$
 
 $$
-P^{\\prime}(Q) = 4
-$$
-
-$$
-= 4
-$$
-
-$$
-14 - 10 = 4
+P^{\\prime}(Q) = 4 = 4
 $$
 
 $$
@@ -10130,15 +9624,7 @@ $$
 $$
 
 $$
-\\widetilde{C}^{\\prime}(Q) = 15
-$$
-
-$$
-= 15
-$$
-
-$$
-10 + 5 = 15
+\\widetilde{C}^{\\prime}(Q) = 15 = 15
 $$
 
 $$
@@ -10169,15 +9655,7 @@ $$
 $$
 
 $$
-P^{\\prime}(Q) = -1
-$$
-
-$$
-= -1
-$$
-
-$$
-14 - 15 = -1
+P^{\\prime}(Q) = -1 = -1
 $$
 
 $$
@@ -10307,15 +9785,7 @@ $$
 $$
 
 $$
-R^{\\prime}(12) = 16
-$$
-
-$$
-= 16
-$$
-
-$$
-40 - 24 = 16
+R^{\\prime}(12) = 16 = 16
 $$
 
 $$
@@ -10333,15 +9803,7 @@ $$
 $$
 
 $$
-P^{\\prime}(12) = 4
-$$
-
-$$
-= 4
-$$
-
-$$
-16 - 12 = 4
+P^{\\prime}(12) = 4 = 4
 $$
 
 $$
@@ -10368,15 +9830,7 @@ $$
 $$
 
 $$
-R^{\\prime}(35)-C^{\\prime}(35) = -2
-$$
-
-$$
-= -2
-$$
-
-$$
-10 - 12 = -2
+R^{\\prime}(35)-C^{\\prime}(35) = -2 = -2
 $$
 
 $$
@@ -10403,15 +9857,7 @@ $$
 $$
 
 $$
-p(12) = 28
-$$
-
-$$
-= 28
-$$
-
-$$
-40 - 12 = 28
+p(12) = 28 = 28
 $$
 
 $$
@@ -10563,15 +10009,7 @@ $$
 $$
 
 $$
-P_A^{\\prime} = 2
-$$
-
-$$
-= 2
-$$
-
-$$
-7 - 5 = 2
+P_A^{\\prime} = 2 = 2
 $$
 
 $$
@@ -10587,15 +10025,7 @@ $$
 $$
 
 $$
-P_B^{\\prime} = -2
-$$
-
-$$
-= -2
-$$
-
-$$
-7 - 9 = -2
+P_B^{\\prime} = -2 = -2
 $$
 
 $$
@@ -10823,15 +10253,7 @@ $$
 $$
 
 $$
-P^{\\prime}(Q) = 3
-$$
-
-$$
-= 3
-$$
-
-$$
-15 - 12 = 3
+P^{\\prime}(Q) = 3 = 3
 $$
 
 $$
@@ -10862,15 +10284,7 @@ $$
 $$
 
 $$
-P^{\\prime}(Q) = -5
-$$
-
-$$
-= -5
-$$
-
-$$
-15 - 20 = -5
+P^{\\prime}(Q) = -5 = -5
 $$
 
 $$
@@ -10983,11 +10397,7 @@ At M, extra revenue exceeds extra cost, which is the opposite of "extra revenue 
 Matching the claim against that reasoning confirms the verdict is True once the right derivative (or the right expand-or-not comparison) is in view.
 
 $$
-R_M^{\\prime}(Q) = 9>6
-$$
-
-$$
-= C_M^{\\prime}(Q)
+R_M^{\\prime}(Q) = 9>6 = C_M^{\\prime}(Q)
 $$
 
 So the statement is True.`,
@@ -11004,15 +10414,7 @@ $$
 $$
 
 $$
-P_M^{\\prime}(Q) = 3
-$$
-
-$$
-= 3
-$$
-
-$$
-9 - 6 = 3
+P_M^{\\prime}(Q) = 3 = 3
 $$
 
 $$
@@ -11134,15 +10536,7 @@ $$
 $$
 
 $$
-P^{\\prime}(20) = 4
-$$
-
-$$
-= 4
-$$
-
-$$
-8 - 4 = 4
+P^{\\prime}(20) = 4 = 4
 $$
 
 $$
@@ -11223,15 +10617,7 @@ $$
 $$
 
 $$
-P^{\\prime}(30^{-}) = 2
-$$
-
-$$
-= 2
-$$
-
-$$
-8 - 6 = 2
+P^{\\prime}(30^{-}) = 2 = 2
 $$
 
 $$
@@ -11318,15 +10704,7 @@ $$
 $$
 
 $$
-P^{\\prime}(40) = -2
-$$
-
-$$
-= -2
-$$
-
-$$
-3 - 5 = -2
+P^{\\prime}(40) = -2 = -2
 $$
 
 $$
@@ -11452,11 +10830,7 @@ Name the objective, find where its slope is flat, then classify with the bend (o
 An interior peak of a smooth profit curve can occur only where the graph is momentarily flat, so set the slope to zero and solve for output:
 
 $$
-P'(Q) = -2Q+12
-$$
-
-$$
-= 0
+P'(Q) = -2Q+12 = 0
 $$
 
 $$
@@ -11517,10 +10891,6 @@ $$
 
 $$
 P(6) = 16
-$$
-
-$$
-P(6) = 16.
 $$
 
 Daily profit at six lamps is therefore $16$ euros. The calculation uses the level function, which is what the claim asks for.
@@ -11631,11 +11001,7 @@ Name the objective, find where its slope is flat, then classify with the bend (o
 An interior profit peak requires a flat slope, so set marginal profit to zero and solve:
 
 $$
-P'(Q) = -4Q+24
-$$
-
-$$
-= 0
+P'(Q) = -4Q+24 = 0
 $$
 
 $$
@@ -11674,15 +11040,7 @@ $$
 $$
 
 $$
-R'(6) = 18
-$$
-
-$$
-= 18
-$$
-
-$$
-30 - 12 = 18
+R'(6) = 18 = 18
 $$
 
 $$
@@ -11694,19 +11052,11 @@ $$
 $$
 
 $$
-C'(6) = 18
+C'(6) = 18 = 18
 $$
 
 $$
-= 18
-$$
-
-$$
-12 + 6 = 18
-$$
-
-$$
-= 18.
+12 + 6 = 18 = 18.
 $$
 
 Both equal $18$ euros at six boxes, matching the claim
@@ -11741,10 +11091,6 @@ P(6) = 32
 $$
 
 $$
-P(6) = 32,
-$$
-
-$$
 C(6) = 36+36+40
 $$
 
@@ -11757,27 +11103,7 @@ $$
 $$
 
 $$
-C(6) = 112
-$$
-
-$$
-= 112
-$$
-
-$$
-36 + 36 = 72
-$$
-
-$$
-72 + 40 = 112
-$$
-
-$$
-36 + 36 = 72
-$$
-
-$$
-72 + 40 = 112
+C(6) = 112 = 112
 $$
 
 $$
@@ -11827,11 +11153,7 @@ Name the objective, find where its slope is flat, then classify with the bend (o
 To find candidate cost-minimising fleets, differentiate the cost model and set the slope to zero:
 
 $$
-C'(Q) = 2Q-10
-$$
-
-$$
-= 0
+C'(Q) = 2Q-10 = 0
 $$
 
 $$
@@ -11881,27 +11203,7 @@ $$
 $$
 
 $$
-C(5) = 15
-$$
-
-$$
-= 15
-$$
-
-$$
-25 - 50 = -25
-$$
-
-$$
--25 + 40 = 15
-$$
-
-$$
-25 - 50 = -25
-$$
-
-$$
--25 + 40 = 15
+C(5) = 15 = 15
 $$
 
 $$
@@ -12123,11 +11425,7 @@ $$
 $$
 
 $$
-P_A'(10) = 0
-$$
-
-$$
-= 0
+P_A'(10) = 0 = 0
 $$
 
 $$
@@ -12139,19 +11437,11 @@ $$
 $$
 
 $$
-P_B'(10) = 0
+P_B'(10) = 0 = 0
 $$
 
 $$
-= 0
-$$
-
-$$
-20 - 20 = 0
-$$
-
-$$
-= 0.
+20 - 20 = 0 = 0.
 $$
 
 Both slopes are flat at $Q=10$. Sharing a critical output does not yet say anything about peaks versus troughs — that comes from the bends — but the flat-slope claim itself holds.
@@ -12223,10 +11513,6 @@ P_A(10) = 50
 $$
 
 $$
-P_A(10) = 50,
-$$
-
-$$
 P_B(10) = 100-200+90
 $$
 
@@ -12239,27 +11525,7 @@ $$
 $$
 
 $$
-P_B(10) = -10
-$$
-
-$$
-= -10
-$$
-
-$$
-100 - 200 = -100
-$$
-
-$$
--100 + 90 = -10
-$$
-
-$$
-100 - 200 = -100
-$$
-
-$$
--100 + 90 = -10
+P_B(10) = -10 = -10
 $$
 
 $$
@@ -12348,19 +11614,11 @@ $$
 $$
 
 $$
-P''(1) = -6
+P''(1) = -6 = -6
 $$
 
 $$
-= -6
-$$
-
-$$
-6 - 12 = -6
-$$
-
-$$
-= -6<0
+6 - 12 = -6 = -6<0
 $$
 
 $$
@@ -12372,19 +11630,11 @@ $$
 $$
 
 $$
-P''(3) = 6
+P''(3) = 6 = 6
 $$
 
 $$
-= 6
-$$
-
-$$
-18 - 12 = 6
-$$
-
-$$
-= 6>0.
+18 - 12 = 6 = 6>0.
 $$
 
 A downward bend at $Q=1$ marks a local profit peak; an upward bend at $Q=3$ marks a local profit trough. The labels match the claim
@@ -12415,35 +11665,7 @@ $$
 $$
 
 $$
-P(1) = 14
-$$
-
-$$
-= 14
-$$
-
-$$
-1 - 6 = -5
-$$
-
-$$
--5 + 9 = 4
-$$
-
-$$
-4 + 10 = 14
-$$
-
-$$
-1 - 6 = -5
-$$
-
-$$
--5 + 9 = 4
-$$
-
-$$
-4 + 10 = 14
+P(1) = 14 = 14
 $$
 
 $$
@@ -12467,35 +11689,7 @@ $$
 $$
 
 $$
-P(3) = 10
-$$
-
-$$
-= 10
-$$
-
-$$
-27 - 54 = -27
-$$
-
-$$
--27 + 27 = 0
-$$
-
-$$
-0 + 10 = 10
-$$
-
-$$
-27 - 54 = -27
-$$
-
-$$
--27 + 27 = 0
-$$
-
-$$
-0 + 10 = 10
+P(3) = 10 = 10
 $$
 
 $$
@@ -12523,39 +11717,11 @@ $$
 $$
 
 $$
-P(5) = 30
+P(5) = 30 = 30
 $$
 
 $$
-= 30
-$$
-
-$$
-125 - 150 = -25
-$$
-
-$$
--25 + 45 = 20
-$$
-
-$$
-20 + 10 = 30
-$$
-
-$$
-125 - 150 = -25
-$$
-
-$$
--25 + 45 = 20
-$$
-
-$$
-20 + 10 = 30
-$$
-
-$$
-= 30.
+20 + 10 = 30 = 30.
 $$
 
 Those four values match the claim exactly
@@ -12727,19 +11893,7 @@ P(8) = 5\\cdot 8-\\dfrac{64}{10}+3
 $$
 
 $$
-P(8) = 40-6.4+3
-$$
-
-$$
-= 36.6
-$$
-
-$$
-40 - 6.4 = 33.6
-$$
-
-$$
-33.6 + 3 = 36.6
+P(8) = 40-6.4+3 = 36.6
 $$
 
 $$
@@ -12866,19 +12020,11 @@ $$
 $$
 
 $$
-B''(1) = -6
+B''(1) = -6 = -6
 $$
 
 $$
-= -6
-$$
-
-$$
-6 - 12 = -6
-$$
-
-$$
-= -6<0
+6 - 12 = -6 = -6<0
 $$
 
 $$
@@ -12890,19 +12036,11 @@ $$
 $$
 
 $$
-B''(3) = 6
+B''(3) = 6 = 6
 $$
 
 $$
-= 6
-$$
-
-$$
-18 - 12 = 6
-$$
-
-$$
-= 6>0.
+18 - 12 = 6 = 6>0.
 $$
 
 So intensity $1$ is a local peak and intensity $3$ is a local trough, matching the first-derivative sign reading
@@ -12988,11 +12126,7 @@ $$
 $$
 
 $$
-P''(2) = 6
-$$
-
-$$
-= 6>0.
+P''(2) = 6 = 6>0.
 $$
 
 An upward bend at a flat slope is the second-derivative test for a local minimum. Therefore two ovens is a local profit trough
@@ -13058,10 +12192,6 @@ P(2) = 10
 $$
 
 $$
-P(2) = 10,
-$$
-
-$$
 P(4) = -64+144-96+30
 $$
 
@@ -13082,10 +12212,6 @@ P(4) = 14
 $$
 
 $$
-P(4) = 14,
-$$
-
-$$
 P(6) = -216+324-144+30
 $$
 
@@ -13103,10 +12229,6 @@ $$
 
 $$
 P(6) = -6
-$$
-
-$$
-P(6) = -6.
 $$
 
 The largest value on $[0,6]$ is $P(0)=30$, so the global maximum is at zero ovens.
@@ -13194,11 +12316,7 @@ Name the objective, find where its slope is flat, then classify with the bend (o
 Set marginal profit to zero, then check that marginal revenue equals marginal cost there:
 
 $$
-P'(Q) = -6Q+36
-$$
-
-$$
-= 0
+P'(Q) = -6Q+36 = 0
 $$
 
 $$
@@ -13222,15 +12340,7 @@ $$
 $$
 
 $$
-R'(6) = 16
-$$
-
-$$
-= 16
-$$
-
-$$
-40 - 24 = 16
+R'(6) = 16 = 16
 $$
 
 $$
@@ -13242,19 +12352,11 @@ $$
 $$
 
 $$
-C'(6) = 16
+C'(6) = 16 = 16
 $$
 
 $$
-= 16
-$$
-
-$$
-12 + 4 = 16
-$$
-
-$$
-= 16.
+12 + 4 = 16 = 16.
 $$
 
 Flat profit at six jobs coincides with $R'=C'=16$
@@ -13311,10 +12413,6 @@ $$
 
 $$
 P(6) = 98
-$$
-
-$$
-P(6) = 98.
 $$
 
 Peak profit is $98$ euros, matching the claim
@@ -13393,11 +12491,7 @@ $$
 $$
 
 $$
-P_N'(8) = 0
-$$
-
-$$
-= 0
+P_N'(8) = 0 = 0
 $$
 
 $$
@@ -13409,19 +12503,11 @@ $$
 $$
 
 $$
-P_S'(8) = 0
+P_S'(8) = 0 = 0
 $$
 
 $$
-= 0
-$$
-
-$$
-16 - 16 = 0
-$$
-
-$$
-= 0.
+16 - 16 = 0 = 0.
 $$
 
 Both slopes are flat at $Q=8$. Sharing a critical output is only the first step — bends still decide peak versus trough — but the flat-slope claim holds.
@@ -13488,10 +12574,6 @@ P_N(8) = 34
 $$
 
 $$
-P_N(8) = 34,
-$$
-
-$$
 P_S(8) = 64-128+70
 $$
 
@@ -13504,27 +12586,7 @@ $$
 $$
 
 $$
-P_S(8) = 6
-$$
-
-$$
-= 6
-$$
-
-$$
-64 - 128 = -64
-$$
-
-$$
--64 + 70 = 6
-$$
-
-$$
-64 - 128 = -64
-$$
-
-$$
--64 + 70 = 6
+P_S(8) = 6 = 6
 $$
 
 $$
@@ -13699,11 +12761,7 @@ Name the objective, find where its slope is flat, then classify with the bend (o
 Differentiate cost and classify the critical output:
 
 $$
-C'(Q) = 2Q-8
-$$
-
-$$
-= 0
+C'(Q) = 2Q-8 = 0
 $$
 
 $$
@@ -13734,11 +12792,7 @@ $$
 Set the slope to zero:
 
 $$
-P'(Q) = -4Q+28
-$$
-
-$$
-= 0
+P'(Q) = -4Q+28 = 0
 $$
 
 $$
@@ -13817,10 +12871,6 @@ P(7) = 68
 $$
 
 $$
-P(7) = 68,
-$$
-
-$$
 C(4) = 16-32+30
 $$
 
@@ -13833,27 +12883,7 @@ $$
 $$
 
 $$
-C(4) = 14
-$$
-
-$$
-= 14
-$$
-
-$$
-16 - 32 = -16
-$$
-
-$$
--16 + 30 = 14
-$$
-
-$$
-16 - 32 = -16
-$$
-
-$$
--16 + 30 = 14
+C(4) = 14 = 14
 $$
 
 $$
@@ -13917,11 +12947,7 @@ $$
 $$
 
 $$
-U_A'(5) = 0
-$$
-
-$$
-= 0
+U_A'(5) = 0 = 0
 $$
 
 $$
@@ -13933,19 +12959,11 @@ $$
 $$
 
 $$
-U_B'(5) = 0
+U_B'(5) = 0 = 0
 $$
 
 $$
-= 0
-$$
-
-$$
-10 - 10 = 0
-$$
-
-$$
-= 0.
+10 - 10 = 0 = 0.
 $$
 
 Both slopes are flat at $t=5$. Sharing a critical hour is only the first step — bends still decide peak versus trough — but the flat-slope claim itself holds.
@@ -14008,10 +13026,6 @@ U_A(5) = 25
 $$
 
 $$
-U_A(5) = 25,
-$$
-
-$$
 U_B(5) = 25-50+30
 $$
 
@@ -14024,27 +13038,7 @@ $$
 $$
 
 $$
-U_B(5) = 5
-$$
-
-$$
-= 5
-$$
-
-$$
-25 - 50 = -25
-$$
-
-$$
--25 + 30 = 5
-$$
-
-$$
-25 - 50 = -25
-$$
-
-$$
--25 + 30 = 5
+U_B(5) = 5 = 5
 $$
 
 $$
@@ -14132,11 +13126,7 @@ f''(x) = 12x^{2}-16,
 $$
 
 $$
-f''(\\pm 2) = 12\\cdot 4-16
-$$
-
-$$
-= 32>0
+f''(\\pm 2) = 12\\cdot 4-16 = 32>0
 $$
 
 $$
@@ -14182,27 +13172,7 @@ $$
 $$
 
 $$
-f(2) = 0
-$$
-
-$$
-= 0
-$$
-
-$$
-16 - 32 = -16
-$$
-
-$$
--16 + 16 = 0
-$$
-
-$$
-16 - 32 = -16
-$$
-
-$$
--16 + 16 = 0
+f(2) = 0 = 0
 $$
 
 $$
@@ -14261,11 +13231,7 @@ Name the objective, find where its slope is flat, then classify with the bend (o
 Differentiate cost and set the slope to zero:
 
 $$
-C'(h) = 4h-24
-$$
-
-$$
-= 0
+C'(h) = 4h-24 = 0
 $$
 
 $$
@@ -14533,15 +13499,7 @@ $$
 $$
 
 $$
-f''(2) = 6
-$$
-
-$$
-= 6
-$$
-
-$$
-12 - 6 = 6
+f''(2) = 6 = 6
 $$
 
 $$
@@ -14617,11 +13575,7 @@ Name the objective, find where its slope is flat, then classify with the bend (o
 Differentiate profit and set the slope to zero:
 
 $$
-P'(Q) = -6Q+30
-$$
-
-$$
-= 0
+P'(Q) = -6Q+30 = 0
 $$
 
 $$
@@ -14716,10 +13670,6 @@ $$
 P(5) = 35
 $$
 
-$$
-P(5) = 35.
-$$
-
 Profit at five bikes is $35$ euros, matching the claim
 
 An interior candidate for a smooth extremum must make the first derivative vanish; that flat-slope equation only produces candidates, not finished labels.
@@ -14765,11 +13715,7 @@ Flat slope finds a candidate; the bend (or a sign chart) then classifies peak ve
 For West, set the slope to zero and read the bend:
 
 $$
-P_W'(Q) = -2Q+14
-$$
-
-$$
-= 0
+P_W'(Q) = -2Q+14 = 0
 $$
 
 $$
@@ -14792,11 +13738,7 @@ Flat slope finds a candidate; the bend (or a sign chart) then classifies peak ve
 For East, set the slope to zero and read the bend:
 
 $$
-P_E'(Q) = 2Q-10
-$$
-
-$$
-= 0
+P_E'(Q) = 2Q-10 = 0
 $$
 
 $$
@@ -14842,10 +13784,6 @@ P_W(7) = 29
 $$
 
 $$
-P_W(7) = 29,
-$$
-
-$$
 P_E(5) = 25-50+40
 $$
 
@@ -14858,27 +13796,7 @@ $$
 $$
 
 $$
-P_E(5) = 15
-$$
-
-$$
-= 15
-$$
-
-$$
-25 - 50 = -25
-$$
-
-$$
--25 + 40 = 15
-$$
-
-$$
-25 - 50 = -25
-$$
-
-$$
--25 + 40 = 15
+P_E(5) = 15 = 15
 $$
 
 $$
@@ -14962,11 +13880,7 @@ Name the objective, find where its slope is flat, then classify with the bend (o
 An interior peak requires a flat slope, so set $P'$ to zero and solve:
 
 $$
-P'(Q) = -2Q+18
-$$
-
-$$
-= 0
+P'(Q) = -2Q+18 = 0
 $$
 
 $$
@@ -15031,10 +13945,6 @@ $$
 
 $$
 P(9) = 36
-$$
-
-$$
-P(9) = 36.
 $$
 
 Peak daily profit is $36$ euros, matching the claim
@@ -15126,11 +14036,7 @@ Name the objective, find where its slope is flat, then classify with the bend (o
 Set the slope of profit to zero and solve for daily output:
 
 $$
-P'(Q) = -4Q+40
-$$
-
-$$
-= 0
+P'(Q) = -4Q+40 = 0
 $$
 
 $$
@@ -15169,15 +14075,7 @@ $$
 $$
 
 $$
-R'(10) = 30
-$$
-
-$$
-= 30
-$$
-
-$$
-50 - 20 = 30
+R'(10) = 30 = 30
 $$
 
 $$
@@ -15189,19 +14087,11 @@ $$
 $$
 
 $$
-C'(10) = 30
+C'(10) = 30 = 30
 $$
 
 $$
-= 30
-$$
-
-$$
-20 + 10 = 30
-$$
-
-$$
-= 30.
+20 + 10 = 30 = 30.
 $$
 
 Both equal $30$ euros at ten boxes
@@ -15243,10 +14133,6 @@ $$
 P(10) = 180
 $$
 
-$$
-P(10) = 180.
-$$
-
 Ten boxes is a local profit peak with peak profit $180$ euros
 
 Pause on the classification step: $f''<0$ at a critical point marks a local peak, $f''>0$ marks a local trough, and $f''=0$ makes the usual bend test inconclusive.
@@ -15267,15 +14153,7 @@ $$
 $$
 
 $$
-R(10) = 400
-$$
-
-$$
-= 400
-$$
-
-$$
-500 - 100 = 400
+R(10) = 400 = 400
 $$
 
 $$
@@ -15291,27 +14169,7 @@ $$
 $$
 
 $$
-C(10) = 220
-$$
-
-$$
-= 220
-$$
-
-$$
-100 + 100 = 200
-$$
-
-$$
-200 + 20 = 220
-$$
-
-$$
-100 + 100 = 200
-$$
-
-$$
-200 + 20 = 220
+C(10) = 220 = 220
 $$
 
 so revenue and cost differ (profit is their gap $180$). Confusing equal marginals with equal levels is the trap.
@@ -15357,11 +14215,7 @@ Name the objective, find where its slope is flat, then classify with the bend (o
 For truck A, set the slope to zero and read the bend:
 
 $$
-P_A'(Q) = -2Q+24
-$$
-
-$$
-= 0
+P_A'(Q) = -2Q+24 = 0
 $$
 
 $$
@@ -15384,11 +14238,7 @@ Name the objective, find where its slope is flat, then classify with the bend (o
 For truck B, set the slope to zero and read the bend:
 
 $$
-P_B'(Q) = -4Q+32
-$$
-
-$$
-= 0
+P_B'(Q) = -4Q+32 = 0
 $$
 
 $$
@@ -15427,10 +14277,6 @@ P_A(12) = 64
 $$
 
 $$
-P_A(12) = 64,
-$$
-
-$$
 P_B(8) = -2\\cdot 64+32\\cdot 8-60
 $$
 
@@ -15448,10 +14294,6 @@ $$
 
 $$
 P_B(8) = 68
-$$
-
-$$
-P_B(8) = 68.
 $$
 
 Peak profits are $64$ euros for A and $68$ euros for B, matching the claim
@@ -15483,11 +14325,7 @@ Comparing the peak levels already computed, $P_B(8)=68>P_A(12)=64$. Truck B's pe
 An interior candidate for a smooth extremum must make the first derivative vanish; that flat-slope equation only produces candidates, not finished labels.
 
 $$
-P_B(8) = 68>P_A(12)
-$$
-
-$$
-= 64
+P_B(8) = 68>P_A(12) = 64
 $$
 
 So the statement is True.`
@@ -15558,19 +14396,11 @@ $$
 $$
 
 $$
-C''(2) = -6
+C''(2) = -6 = -6
 $$
 
 $$
-= -6
-$$
-
-$$
-12 - 18 = -6
-$$
-
-$$
-= -6<0
+12 - 18 = -6 = -6<0
 $$
 
 $$
@@ -15582,19 +14412,11 @@ $$
 $$
 
 $$
-C''(4) = 6
+C''(4) = 6 = 6
 $$
 
 $$
-= 6
-$$
-
-$$
-24 - 18 = 6
-$$
-
-$$
-= 6>0.
+24 - 18 = 6 = 6>0.
 $$
 
 So at two batches the cost curve bends downward, while at four batches it bends upward, matching the claim
@@ -15642,35 +14464,7 @@ $$
 $$
 
 $$
-C(4) = 21
-$$
-
-$$
-= 21
-$$
-
-$$
-64 - 144 = -80
-$$
-
-$$
--80 + 96 = 16
-$$
-
-$$
-16 + 5 = 21
-$$
-
-$$
-64 - 144 = -80
-$$
-
-$$
--80 + 96 = 16
-$$
-
-$$
-16 + 5 = 21
+C(4) = 21 = 21
 $$
 
 $$
@@ -15729,11 +14523,7 @@ Name the objective, find where its slope is flat, then classify with the bend (o
 Differentiate cost and set the slope to zero inside $(0,8)$:
 
 $$
-C'(Q) = 2Q-10
-$$
-
-$$
-= 0
+C'(Q) = 2Q-10 = 0
 $$
 
 $$
@@ -15793,27 +14583,7 @@ $$
 $$
 
 $$
-C(5) = 15
-$$
-
-$$
-= 15
-$$
-
-$$
-25 - 50 = -25
-$$
-
-$$
--25 + 40 = 15
-$$
-
-$$
-25 - 50 = -25
-$$
-
-$$
--25 + 40 = 15
+C(5) = 15 = 15
 $$
 
 $$
@@ -15833,27 +14603,7 @@ $$
 $$
 
 $$
-C(8) = 24
-$$
-
-$$
-= 24
-$$
-
-$$
-64 - 80 = -16
-$$
-
-$$
--16 + 40 = 24
-$$
-
-$$
-64 - 80 = -16
-$$
-
-$$
--16 + 40 = 24
+C(8) = 24 = 24
 $$
 
 $$
@@ -15945,11 +14695,7 @@ Name the objective, find where its slope is flat, then classify with the bend (o
 Using the fencing fully, the perimeter constraint is $2x+2y=40$, so $x+y=20$ and $y=20-x$. Enclosed area becomes a function of one side alone:
 
 $$
-A(x) = x(20-x)
-$$
-
-$$
-= 20x-x^{2}
+A(x) = x(20-x) = 20x-x^{2}
 $$
 
 $$
@@ -15968,11 +14714,7 @@ Name the objective, find where its slope is flat, then classify with the bend (o
 Maximise the reduced area by setting its slope to zero:
 
 $$
-A'(x) = 20-2x
-$$
-
-$$
-= 0
+A'(x) = 20-2x = 0
 $$
 
 $$
@@ -16113,11 +14855,7 @@ Name the objective, find where its slope is flat, then classify with the bend (o
 Differentiate the expanded area and set the slope to zero for $x>0$:
 
 $$
-A'(x) = 2-\\dfrac{72}{x^{2}}
-$$
-
-$$
-= 0
+A'(x) = 2-\\dfrac{72}{x^{2}} = 0
 $$
 
 $$
@@ -16160,27 +14898,7 @@ $$
 $$
 
 $$
-A(6) = 64
-$$
-
-$$
-= 64
-$$
-
-$$
-40 + 12 = 52
-$$
-
-$$
-52 + 12 = 64
-$$
-
-$$
-40 + 12 = 52
-$$
-
-$$
-52 + 12 = 64
+A(6) = 64 = 64
 $$
 
 $$
@@ -16260,10 +14978,6 @@ A'(x) = \\dfrac{x}{8}-\\dfrac{60-x}{2\\pi}.
 $$
 
 Setting $A'(x)=0$ and solving in $(0,60)$ yields a unique critical cut. The slope of total area is therefore a well-defined single-variable derivative with an interior flat point.
-
-$$
-A'(x) = \\dfrac{x}{8}-\\dfrac{60-x}{2\\pi}
-$$
 
 which matches the claim.
 
@@ -16366,11 +15080,7 @@ Reduce the constrained problem to one free variable, then differentiate the redu
 Differentiate the reduced utility and set the slope to zero:
 
 $$
-u'(x) = 20-4x
-$$
-
-$$
-= 0
+u'(x) = 20-4x = 0
 $$
 
 $$
@@ -16393,12 +15103,10 @@ Name the objective, find where its slope is flat, then classify with the bend (o
 At $x=5$ the budget gives
 
 $$
-y = 20-2\\cdot 5
+y = 20-2\\cdot 5 = 10
 $$
 
-$$
-= 10
-$$, and utility is the product
+, and utility is the product
 
 $$
 U = xy
@@ -16497,11 +15205,7 @@ Reduce the constrained problem to one free variable, then differentiate the redu
 Substitute $y=10-x$ into $Q=xy$ to get a function of $x$ alone:
 
 $$
-q(x) = x(10-x)
-$$
-
-$$
-= 10x-x^{2}
+q(x) = x(10-x) = 10x-x^{2}
 $$
 
 $$
@@ -16526,11 +15230,7 @@ Name the objective, find where its slope is flat, then classify with the bend (o
 Set the slope to zero inside $(0,10)$:
 
 $$
-q'(x) = 10-2x
-$$
-
-$$
-= 0
+q'(x) = 10-2x = 0
 $$
 
 $$
@@ -16670,11 +15370,7 @@ Relate the revenue slope to demand sensitivity: unit elasticity sits at the reve
 Maximise revenue by setting its slope to zero:
 
 $$
-R'(p) = 100-4p
-$$
-
-$$
-= 0
+R'(p) = 100-4p = 0
 $$
 
 $$
@@ -16696,15 +15392,7 @@ $$
 $$
 
 $$
-R(25) = 1250
-$$
-
-$$
-= 1250
-$$
-
-$$
-2500 - 1250 = 1250
+R(25) = 1250 = 1250
 $$
 
 $$
@@ -16758,15 +15446,7 @@ $$
 $$
 
 $$
-R'(20) = 20
-$$
-
-$$
-= 20
-$$
-
-$$
-100 - 80 = 20
+R'(20) = 20 = 20
 $$
 
 $$
@@ -16849,11 +15529,7 @@ $$
 Set the slope to zero:
 
 $$
-R'(p) = 120-6p
-$$
-
-$$
-= 0
+R'(p) = 120-6p = 0
 $$
 
 $$
@@ -16934,15 +15610,7 @@ $$
 $$
 
 $$
-D(20) = 60
-$$
-
-$$
-= 60
-$$
-
-$$
-120 - 60 = 60
+D(20) = 60 = 60
 $$
 
 $$
@@ -16950,11 +15618,7 @@ R(20) = 20\\cdot 60
 $$
 
 $$
-20\\times 60 = 1200
-$$
-
-$$
-= 1200.
+20\\times 60 = 1200 = 1200.
 $$
 
 The theatre sells $60$ tickets and earns $1200$ euros, matching the claim
@@ -17031,11 +15695,7 @@ p = 20
 $$
 
 $$
-D(20) = 100-40
-$$
-
-$$
-= 60
+D(20) = 100-40 = 60
 $$
 
 which matches the claim.
@@ -17105,19 +15765,11 @@ $$
 $$
 
 $$
-R'(60) = -10
+R'(60) = -10 = -10
 $$
 
 $$
-= -10
-$$
-
-$$
-50 - 60 = -10
-$$
-
-$$
-= -10.
+50 - 60 = -10 = -10.
 $$
 
 Direct differentiation also gives marginal revenue $-10$ at sixty gadgets.
@@ -17211,11 +15863,7 @@ p = 20
 $$
 
 $$
-D_A(20) = 80-20
-$$
-
-$$
-= 60
+D_A(20) = 80-20 = 60
 $$
 
 which matches the claim.
@@ -17286,11 +15934,7 @@ $$
 A positive marginal revenue means a small price increase from $20$ euros still raises A's cup revenue (consistent with inelastic demand).
 
 $$
-R_A(p) = p(80-p)
-$$
-
-$$
-= 80p-p^{2}
+R_A(p) = p(80-p) = 80p-p^{2}
 $$
 
 which matches the claim.
@@ -17376,11 +16020,7 @@ Reduce the constrained problem to one free variable, then differentiate the redu
 Differentiate the reduced profit and set the slope to zero:
 
 $$
-p'(x) = 30-4x
-$$
-
-$$
-= 0
+p'(x) = 30-4x = 0
 $$
 
 $$
@@ -17419,11 +16059,7 @@ x = 7.5
 $$
 
 $$
-y = 10-7.5
-$$
-
-$$
-= 2.5
+y = 10-7.5 = 2.5
 $$
 
 $$
@@ -17448,11 +16084,7 @@ p(7.5) = 225+100-2\\cdot 56.25
 $$
 
 $$
-p(7.5) = 325-112.5
-$$
-
-$$
-= 212.5
+p(7.5) = 325-112.5 = 212.5
 $$
 
 $$
@@ -17476,22 +16108,16 @@ Ignoring the constraint, one would set $\\partial P/\\partial x=30-2x=0$ and $\\
 
 $$
 (x,y) = (15,10)
-$$, which violates $x+y=10$. The unconstrained critical point is not feasible, and the constrained optimum $(7.5,2.5)$ is different. Treating $x$ and $y$ as unrelated does *not* give the same answer.
-
-$$
-\\partial P/\\partial x = 30-2x
 $$
 
-$$
-= 0
-$$
+, which violates $x+y=10$. The unconstrained critical point is not feasible, and the constrained optimum $(7.5,2.5)$ is different. Treating $x$ and $y$ as unrelated does *not* give the same answer.
 
 $$
-\\partial P/\\partial y = 20-2y
+\\partial P/\\partial x = 30-2x = 0
 $$
 
 $$
-= 0
+\\partial P/\\partial y = 20-2y = 0
 $$
 
 $$
@@ -17541,11 +16167,7 @@ Name the objective, find where its slope is flat, then classify with the bend (o
 With the river as one side, fencing covers two perpendicular sides $x$ and the parallel side $40-2x$. Enclosed area becomes a function of the perpendicular side alone:
 
 $$
-A(x) = x(40-2x)
-$$
-
-$$
-= 40x-2x^{2}
+A(x) = x(40-2x) = 40x-2x^{2}
 $$
 
 $$
@@ -17564,11 +16186,7 @@ Name the objective, find where its slope is flat, then classify with the bend (o
 Maximise area by setting its slope to zero:
 
 $$
-A'(x) = 40-4x
-$$
-
-$$
-= 0
+A'(x) = 40-4x = 0
 $$
 
 $$
@@ -17712,11 +16330,7 @@ Name the objective, find where its slope is flat, then classify with the bend (o
 Differentiate and set the slope to zero for $x>0$:
 
 $$
-C'(x) = 2-\\dfrac{128}{x^{2}}
-$$
-
-$$
-= 0
+C'(x) = 2-\\dfrac{128}{x^{2}} = 0
 $$
 
 $$
@@ -17755,15 +16369,7 @@ $$
 $$
 
 $$
-C(8) = 32
-$$
-
-$$
-= 32
-$$
-
-$$
-16 + 16 = 32
+C(8) = 32 = 32
 $$
 
 $$
@@ -17800,11 +16406,7 @@ C_x/C_y = 1/4
 $$
 
 $$
-y/x = 2/8
-$$
-
-$$
-= 1/4
+y/x = 2/8 = 1/4
 $$
 
 $$
@@ -17831,11 +16433,7 @@ $$
 $$
 
 $$
-C = 40
-$$
-
-$$
-= 40>32
+C = 40 = 40>32
 $$
 
 $$
@@ -17889,11 +16487,7 @@ $$
 Set the slope to zero:
 
 $$
-R'(p) = 90-2p
-$$
-
-$$
-= 0
+R'(p) = 90-2p = 0
 $$
 
 $$
@@ -17949,15 +16543,7 @@ $$
 $$
 
 $$
-R'(30) = 30
-$$
-
-$$
-= 30
-$$
-
-$$
-90 - 60 = 30
+R'(30) = 30 = 30
 $$
 
 $$
@@ -17984,15 +16570,7 @@ $$
 $$
 
 $$
-R'(60) = -30
-$$
-
-$$
-= -30
-$$
-
-$$
-90 - 120 = -30
+R'(60) = -30 = -30
 $$
 
 $$
@@ -22618,11 +21196,7 @@ On the shared plane, match each colour to its named derivative, then read height
 Purple is brown shifted down by $2$, so it meets the axis where brown has height $2$:
 
 $$
-f'-2 = 0\\quad\\Leftrightarrow\\quad f'
-$$
-
-$$
-= 2
+f'-2 = 0\\quad\\Leftrightarrow\\quad f' = 2
 $$
 
 Those zeros are at different $x$-values from brown's zeros ($f'=0$), which is what the figure shows

@@ -119,11 +119,7 @@ Substitute the recovered periodic rate and compounding count:
 Annual compounding at the same nominal rate uses $n=1$, so the effective rate equals the quote:
 
 $$
-R_{\\mathrm{ann}} = 0.072
-$$
-
-$$
-= 7.20\\%
+R_{\\mathrm{ann}} = 0.072 = 7.20\\%
 $$
 
 Monthly compounding gives
@@ -153,9 +149,9 @@ $$R = (1.006)^{12} - 1$$
 
 $$\\approx 7.44\\%$$
 
-$$7.44\\% - 7.20\\%$$
-
-$$= 0.24$$
+$$
+7.44\\% - 7.20\\% = 0.24
+$$
 
 The claim needs more than $1.00$ percentage point. We have $0.24 < 1.00$.
 
@@ -336,9 +332,9 @@ $$\\approx 9,650.61$$
 
 $$\\frac{9,650.61-6,000}{6,000}$$
 
-$$\\approx 0.6084$$
-
-$$= 60.84\\%$$
+$$
+\\approx 0.6084 = 60.84\\%
+$$
 
 The claim needs more than $65\\%$. We have $60.84\\% < 65\\%$.
 
@@ -410,11 +406,7 @@ $$`,
 Offer (i) splits the quarterly quote, then compounds four times:
 
 $$
-i_i = \\frac{0.064}{4}
-$$
-
-$$
-= 0.016
+i_i = \\frac{0.064}{4} = 0.016
 $$
 
 $$R_i = (1.016)^{4} - 1$$
@@ -437,18 +429,14 @@ So the statement is True.`,
 Offer (ii) splits the semi-annual quote, then compounds twice:
 
 $$
-i_{ii} = \\frac{0.065}{2}
-$$
-
-$$
-= 0.0325
+i_{ii} = \\frac{0.065}{2} = 0.0325
 $$
 
 $$R_{ii} = (1.0325)^{2} - 1$$
 
-$$(1.0325)^{2}$$
-
-$$= 1.066056$$
+$$
+(1.0325)^{2} = 1.066056
+$$
 
 $$R_{ii} = 0.066056$$
 
@@ -462,11 +450,7 @@ So the statement is True.`,
 The better one-year offer is the one with the higher effective annual rate.
 
 $$
-i_i = \\frac{0.064}{4}
-$$
-
-$$
-= 0.016
+i_i = \\frac{0.064}{4} = 0.016
 $$
 
 $$R_i = (1.016)^{4}-1$$
@@ -474,11 +458,7 @@ $$R_i = (1.016)^{4}-1$$
 $$\\approx 6.55\\%$$
 
 $$
-i_{ii} = \\frac{0.065}{2}
-$$
-
-$$
-= 0.0325
+i_{ii} = \\frac{0.065}{2} = 0.0325
 $$
 
 $$R_{ii} = (1.0325)^{2}-1$$
@@ -516,19 +496,11 @@ Substitute the recovered periodic rate and compounding count:
 One-year interest on Offer (ii) is the principal times that offer's effective annual rate:
 
 $$
-R_{ii} = (1.0325)^{2}-1
+R_{ii} = (1.0325)^{2}-1 = 0.066056
 $$
 
 $$
-= 0.066056
-$$
-
-$$
-I_{ii} = 10,000 \\times 0.066056
-$$
-
-$$
-= 660.56
+I_{ii} = 10,000 \\times 0.066056 = 660.56
 $$
 
 The claim needs more than \\$660. We have $660.56 > 660$.
@@ -597,11 +569,7 @@ $$`,
 The nominal annual rate annualizes the monthly quote without compounding:
 
 $$
-r_{\\mathrm{nom}} = 12 \\times 1.75\\%
-$$
-
-$$
-= 21.00\\%
+r_{\\mathrm{nom}} = 12 \\times 1.75\\% = 21.00\\%
 $$
 
 Compare the computed value with the claim ($22.00\\%$). The computed value is
@@ -694,20 +662,16 @@ Substitute the recovered periodic rate and compounding count:
 The gap is the effective annual rate minus the nominal annual rate.
 
 $$
-r_{\\mathrm{nom}} = 12 \\times 1.75\\%
-$$
-
-$$
-= 21.00\\%
+r_{\\mathrm{nom}} = 12 \\times 1.75\\% = 21.00\\%
 $$
 
 $$R = (1.0175)^{12}-1$$
 
 $$\\approx 23.14\\%$$
 
-$$23.14\\% - 21.00\\%$$
-
-$$= 2.14$$
+$$
+23.14\\% - 21.00\\% = 2.14
+$$
 
 The claim needs more than $2.00$ percentage points. We have $2.14 > 2.00$.
 
@@ -885,9 +849,9 @@ $$R = (1.014)^{4}-1$$
 
 $$\\approx 5.72\\%$$
 
-$$5.72\\% - 5.60\\%$$
-
-$$= 0.12$$
+$$
+5.72\\% - 5.60\\% = 0.12
+$$
 
 The claim needs more than $0.20$ percentage points. We have $0.12 < 0.20$.
 
@@ -1158,18 +1122,14 @@ Substitute the recovered inputs:
 Semi-annual compounding splits the quote in two, then squares:
 
 $$
-i = \\frac{0.15}{2}
-$$
-
-$$
-= 0.075
+i = \\frac{0.15}{2} = 0.075
 $$
 
 $$R = (1.075)^{2} - 1$$
 
-$$(1.075)^{2}$$
-
-$$= 1.155625$$
+$$
+(1.075)^{2} = 1.155625
+$$
 
 $$R = 0.155625$$
 
@@ -1183,11 +1143,7 @@ So the statement is True.`,
 Quarterly compounding splits the quote in four, then raises to the fourth:
 
 $$
-i = \\frac{0.15}{4}
-$$
-
-$$
-= 0.0375
+i = \\frac{0.15}{4} = 0.0375
 $$
 
 $$R = (1.0375)^{4} - 1$$
@@ -1210,11 +1166,7 @@ So the statement is True.`,
 Monthly compounding splits the quote in twelve, then raises to the twelfth:
 
 $$
-i = \\frac{0.15}{12}
-$$
-
-$$
-= 0.0125
+i = \\frac{0.15}{12} = 0.0125
 $$
 
 $$R = (1.0125)^{12} - 1$$
@@ -1267,13 +1219,13 @@ $$R_{12} = (1.0125)^{12}-1$$
 
 $$\\approx 16.08\\%$$
 
-$$15.87\\% - 15.56\\%$$
+$$
+15.87\\% - 15.56\\% = 0.31
+$$
 
-$$= 0.31$$
-
-$$16.08\\% - 15.87\\%$$
-
-$$= 0.21$$
+$$
+16.08\\% - 15.87\\% = 0.21
+$$
 
 The claim needs $0.31 < 0.21$. We have $0.31 > 0.21$.
 
@@ -1483,9 +1435,9 @@ $$`,
 
 Eight years of quarterly compounding give $nt=32$ periods and a growth factor of $1.6$:
 
-$$\\frac{80,000}{50,000}$$
-
-$$= 1.6$$
+$$
+\\frac{80,000}{50,000} = 1.6
+$$
 
 $$1+\\frac{r}{4} = (1.6)^{\\frac{1}{32}}$$
 
@@ -1493,9 +1445,9 @@ $$\\approx 1.014796$$
 
 $$r$$
 
-$$\\approx 4 \\times 0.014796$$
-
-$$= 0.05918$$
+$$
+\\approx 4 \\times 0.014796 = 0.05918
+$$
 
 $$\\approx 5.92\\%$$
 
@@ -1565,12 +1517,8 @@ So the statement is False.`,
 
 Dollar growth relative to the opening investment is
 
-$$\\frac{80,000-50,000}{50,000}$$
-
-$$= 0.60$$
-
 $$
-= 60\\%
+\\frac{80,000-50,000}{50,000} = 0.60 = 60\\%
 $$
 
 The claim needs more than $65\\%$. We have $60\\% < 65\\%$.
@@ -1625,11 +1573,7 @@ $$R_a = 10.80\\%$$
 Option (b) splits $10.40\\%$ across four quarters:
 
 $$
-i_b = \\frac{0.104}{4}
-$$
-
-$$
-= 0.026
+i_b = \\frac{0.104}{4} = 0.026
 $$
 
 $$R_b = (1.026)^{4}-1$$
@@ -1646,11 +1590,7 @@ So the statement is False.`,
 Option (b) splits $10.40\\%$ across four quarters, then compounds:
 
 $$
-i_b = \\frac{0.104}{4}
-$$
-
-$$
-= 0.026
+i_b = \\frac{0.104}{4} = 0.026
 $$
 
 $$R_b = (1.026)^{4} - 1$$
@@ -1843,9 +1783,9 @@ $$S_0 = \\frac{40,000}{(1.045)^{6}}$$
 
 $$\\approx 30,715.86$$
 
-$$40,000 - 30,715.86$$
-
-$$= 9,284.14$$
+$$
+40,000 - 30,715.86 = 9,284.14
+$$
 
 Compare the computed value with the claim (\\$9,284.14). The two sides agree.
 
@@ -2213,9 +2153,9 @@ $$R = \\left(1+\\frac{0.0425}{365}\\right)^{365}-1$$
 
 $$\\approx 4.34\\%$$
 
-$$4.34\\% - 4.25\\%$$
-
-$$= 0.09$$
+$$
+4.34\\% - 4.25\\% = 0.09
+$$
 
 The claim needs more than $0.20$ percentage points. We have $0.09 < 0.20$.
 
@@ -2279,11 +2219,7 @@ $$`,
 The nominal annual rate annualizes the monthly quote without compounding:
 
 $$
-r_{\\mathrm{nom}} = 12 \\times 1.9\\%
-$$
-
-$$
-= 22.80\\%
+r_{\\mathrm{nom}} = 12 \\times 1.9\\% = 22.80\\%
 $$
 
 Compare the computed value with the claim ($22.80\\%$). The two sides agree.
@@ -2329,11 +2265,7 @@ Substitute the recovered periodic rate and compounding count:
 The effective annual rate compounds; the nominal rate does not:
 
 $$
-r_{\\mathrm{nom}} = 12 \\times 1.9\\%
-$$
-
-$$
-= 22.80\\%
+r_{\\mathrm{nom}} = 12 \\times 1.9\\% = 22.80\\%
 $$
 
 $$R = (1.019)^{12}-1$$
@@ -2395,20 +2327,16 @@ Substitute the recovered periodic rate and compounding count:
 The gap is the effective annual rate minus the nominal annual rate.
 
 $$
-r_{\\mathrm{nom}} = 12 \\times 1.9\\%
-$$
-
-$$
-= 22.80\\%
+r_{\\mathrm{nom}} = 12 \\times 1.9\\% = 22.80\\%
 $$
 
 $$R = (1.019)^{12}-1$$
 
 $$\\approx 25.34\\%$$
 
-$$25.34\\% - 22.80\\%$$
-
-$$= 2.54$$
+$$
+25.34\\% - 22.80\\% = 2.54
+$$
 
 The claim needs more than $3.00$ percentage points. We have $2.54 < 3.00$.
 
@@ -2460,25 +2388,17 @@ Substitute the recovered inputs:
 Semi-annual compounding splits the quote in two, then squares:
 
 $$
-i = \\frac{0.10}{2}
-$$
-
-$$
-= 0.05
+i = \\frac{0.10}{2} = 0.05
 $$
 
 $$R = (1.05)^{2} - 1$$
 
-$$(1.05)^{2}$$
-
-$$= 1.1025$$
-
 $$
-R = 0.1025
+(1.05)^{2} = 1.1025
 $$
 
 $$
-= 10.25\\%
+R = 0.1025 = 10.25\\%
 $$
 
 The claim is about $10.25\\%$.
@@ -2489,11 +2409,7 @@ So the statement is True.`,
 Quarterly compounding splits the quote in four, then raises to the fourth:
 
 $$
-i = \\frac{0.10}{4}
-$$
-
-$$
-= 0.025
+i = \\frac{0.10}{4} = 0.025
 $$
 
 $$R = (1.025)^{4} - 1$$
@@ -2516,11 +2432,7 @@ So the statement is True.`,
 Monthly compounding splits the quote in twelve, then raises to the twelfth:
 
 $$
-i = \\frac{0.10}{12}
-$$
-
-$$
-= \\frac{1}{120}
+i = \\frac{0.10}{12} = \\frac{1}{120}
 $$
 
 $$R = \\left(1+\\frac{0.10}{12}\\right)^{12} - 1$$
@@ -2543,11 +2455,7 @@ So the statement is True.`,
 The three frequencies at the same $r=0.10$ give
 
 $$
-R_2 = (1.05)^{2}-1
-$$
-
-$$
-= 10.25\\%
+R_2 = (1.05)^{2}-1 = 10.25\\%
 $$
 
 $$R_4 = (1.025)^{4}-1$$
@@ -2566,11 +2474,7 @@ So the statement is True.`,
 Semi-annual, quarterly, and monthly compounding at the same $10\\%$ give
 
 $$
-R_2 = (1.05)^{2}-1
-$$
-
-$$
-= 10.25\\%
+R_2 = (1.05)^{2}-1 = 10.25\\%
 $$
 
 $$R_4 = (1.025)^{4}-1$$
@@ -2581,13 +2485,13 @@ $$R_{12} = \\left(1+\\frac{0.10}{12}\\right)^{12}-1$$
 
 $$\\approx 10.47\\%$$
 
-$$10.38\\% - 10.25\\%$$
+$$
+10.38\\% - 10.25\\% = 0.13
+$$
 
-$$= 0.13$$
-
-$$10.47\\% - 10.38\\%$$
-
-$$= 0.09$$
+$$
+10.47\\% - 10.38\\% = 0.09
+$$
 
 The claim needs $0.13 < 0.09$. We have $0.13 > 0.09$.
 
@@ -2705,16 +2609,8 @@ So the statement is False.`,
 
 Extending the horizon from $80$ years to $160$ years at the same rate squares the original growth factor:
 
-$$(1.050116)^{160}$$
-
-$$= \\bigl(50^{\\frac{1}{80}}\\bigr)^{160}$$
-
 $$
-= 50^{2}
-$$
-
-$$
-= 2,500
+(1.050116)^{160} = \\bigl(50^{\\frac{1}{80}}\\bigr)^{160} = 50^{2} = 2,500
 $$
 
 The claim needs a factor of $100$. The computed value is
@@ -2978,9 +2874,9 @@ $$S_0 = \\frac{60,000}{(1.011)^{36}}$$
 
 $$\\approx 40,467.83$$
 
-$$60,000 - 40,467.83$$
-
-$$= 19,532.17$$
+$$
+60,000 - 40,467.83 = 19,532.17
+$$
 
 The claim needs more than \\$20,000. We have $19,532.17 < 20,000$.
 
@@ -3048,11 +2944,7 @@ $$`,
 CD1 splits the monthly quote, then compounds twelve times:
 
 $$
-i_1 = \\frac{0.063}{12}
-$$
-
-$$
-= 0.00525
+i_1 = \\frac{0.063}{12} = 0.00525
 $$
 
 $$R_1 = (1.00525)^{12} - 1$$
@@ -3075,11 +2967,7 @@ So the statement is True.`,
 CD2 splits the quarterly quote, then compounds four times:
 
 $$
-i_2 = \\frac{0.064}{4}
-$$
-
-$$
-= 0.016
+i_2 = \\frac{0.064}{4} = 0.016
 $$
 
 $$R_2 = (1.016)^{4} - 1$$
@@ -3110,18 +2998,14 @@ Substitute the recovered periodic rate and compounding count:
 CD3 splits the semi-annual quote, then squares:
 
 $$
-i_3 = \\frac{0.0645}{2}
-$$
-
-$$
-= 0.03225
+i_3 = \\frac{0.0645}{2} = 0.03225
 $$
 
 $$R_3 = (1.03225)^{2} - 1$$
 
-$$(1.03225)^{2}$$
-
-$$= 1.065540$$
+$$
+(1.03225)^{2} = 1.065540
+$$
 
 $$R_3 = 0.065540$$
 
@@ -3177,9 +3061,9 @@ $$I_2 = 20,000 \\times 0.065533$$
 
 $$\\approx 1,310.66$$
 
-$$1,310.66 - 1,297.04$$
-
-$$= 13.62$$
+$$
+1,310.66 - 1,297.04 = 13.62
+$$
 
 The claim is approximately \\$13.61.
 
@@ -3261,11 +3145,7 @@ $$`,
 Account M splits the $6\\%$ quote across twelve months:
 
 $$
-i_M = \\frac{0.06}{12}
-$$
-
-$$
-= 0.005
+i_M = \\frac{0.06}{12} = 0.005
 $$
 
 $$t_M = \\frac{\\ln\\bigl(\\frac{22,000}{15,000}\\bigr)}{\\ln 1.005}$$
@@ -3285,9 +3165,9 @@ $$
 t_M = \\frac{\\ln\\bigl(\\frac{22,000}{15,000}\\bigr)}{\\ln 1.005}
 $$
 
-$$\\frac{22000}{15000}$$
-
-$$= 1.466667$$
+$$
+\\frac{22000}{15000} = 1.466667
+$$
 
 $$\\ln(1.466667)$$
 
@@ -3309,9 +3189,9 @@ $$
 t_Q = \\frac{\\ln\\bigl(\\frac{22,000}{15,000}\\bigr)}{\\ln 1.015375}
 $$
 
-$$\\frac{22000}{15000}$$
-
-$$= 1.466667$$
+$$
+\\frac{22000}{15000} = 1.466667
+$$
 
 $$\\ln(1.466667)$$
 
@@ -3348,9 +3228,9 @@ $$
 t_M = \\frac{\\ln\\bigl(\\frac{22,000}{15,000}\\bigr)}{\\ln 1.005}
 $$
 
-$$\\frac{22000}{15000}$$
-
-$$= 1.466667$$
+$$
+\\frac{22000}{15000} = 1.466667
+$$
 
 $$\\ln(1.466667)$$
 
@@ -3372,9 +3252,9 @@ $$
 t_Q = \\frac{\\ln\\bigl(\\frac{22,000}{15,000}\\bigr)}{\\ln 1.015375}
 $$
 
-$$\\frac{22000}{15000}$$
-
-$$= 1.466667$$
+$$
+\\frac{22000}{15000} = 1.466667
+$$
 
 $$\\ln(1.466667)$$
 
@@ -3536,9 +3416,9 @@ $$4,500 \\times 1.051271$$
 
 $$\\approx 4,730.72$$
 
-$$4,730.72 - 4,500$$
-
-$$= 230.72$$
+$$
+4,730.72 - 4,500 = 230.72
+$$
 
 Compare the computed value with the claim (\\$230.72). The two sides agree.
 
@@ -3548,11 +3428,7 @@ So the statement is True.`,
 Annual compounding at the same 5% nominal rate uses $n=1$:
 
 $$
-S_{\\mathrm{ann}} = 4,500 \\times 1.05
-$$
-
-$$
-= 4,725.00
+S_{\\mathrm{ann}} = 4,500 \\times 1.05 = 4,725.00
 $$
 
 Compare the computed value with the claim (\\$4,735.00). The computed value is
@@ -3581,16 +3457,12 @@ $$4,500 \\times 1.051271$$
 $$\\approx 4,730.72$$
 
 $$
-S_{\\mathrm{ann}} = 4,500 \\times 1.05
+S_{\\mathrm{ann}} = 4,500 \\times 1.05 = 4,725.00
 $$
 
 $$
-= 4,725.00
+4,730.72 - 4,725.00 = 5.72
 $$
-
-$$4,730.72 - 4,725.00$$
-
-$$= 5.72$$
 
 Compare the computed value with the claim (\\$5.72). The two sides agree.
 
@@ -3649,11 +3521,7 @@ $$`,
 Six years of continuous $8\\%$ carry the exponent $0.48$:
 
 $$
-S(6) = 3,200 \\times e^{0.08 \\times 6}
-$$
-
-$$
-= 3,200 \\times e^{0.48}
+S(6) = 3,200 \\times e^{0.08 \\times 6} = 3,200 \\times e^{0.48}
 $$
 
 $$e^{0.48}$$
@@ -3670,11 +3538,7 @@ So the statement is True.`,
 Three years of the same continuous rate give
 
 $$
-S(3) = 3,200 \\times e^{0.08 \\times 3}
-$$
-
-$$
-= 3,200 \\times e^{0.24}
+S(3) = 3,200 \\times e^{0.08 \\times 3} = 3,200 \\times e^{0.24}
 $$
 
 $$e^{0.24}$$
@@ -3722,9 +3586,9 @@ $$3,200 \\times 1.616074$$
 
 $$\\approx 5,171.44$$
 
-$$5,171.44 - 3,200$$
-
-$$= 1,971.44$$
+$$
+5,171.44 - 3,200 = 1,971.44
+$$
 
 The claim is approximately \\$2,000.00. The computed value is
 
@@ -3742,11 +3606,7 @@ So the statement is False.`,
 Twelve years of the same continuous rate double the six-year exponent:
 
 $$
-S(12) = 3,200 \\times e^{0.08 \\times 12}
-$$
-
-$$
-= 3,200 \\times e^{0.96}
+S(12) = 3,200 \\times e^{0.08 \\times 12} = 3,200 \\times e^{0.96}
 $$
 
 $$e^{0.96}$$
@@ -3757,9 +3617,9 @@ $$S(12) \\approx 8,357.43$$
 
 $$2 \\times S(6)$$
 
-$$\\approx 2 \\times 5,171.44$$
-
-$$= 10,342.88$$
+$$
+\\approx 2 \\times 5,171.44 = 10,342.88
+$$
 
 The claim needs $S(12)=2\\,S(6)$. The computed value is
 
@@ -3879,9 +3739,9 @@ $$R = e^{0.09} - 1$$
 
 $$\\approx 9.42\\%$$
 
-$$9.42\\% - 9.00\\%$$
-
-$$= 0.42$$
+$$
+9.42\\% - 9.00\\% = 0.42
+$$
 
 The claim needs more than $0.75$ percentage points. We have $0.42 < 0.75$.
 
@@ -3908,9 +3768,9 @@ $$R = e^{0.09} - 1$$
 
 $$\\approx 9.42\\%$$
 
-$$2 \\times 9.42\\%$$
-
-$$= 18.84\\%$$
+$$
+2 \\times 9.42\\% = 18.84\\%
+$$
 
 The claim needs $R_{18} > 2R$. We have $19.72\\% > 18.84\\%$.
 
@@ -3966,12 +3826,8 @@ $$
 K_{\\mathrm{y}} = 1 + 0.10
 $$
 
-$$1 + 0.10$$
-
-$$= 1.1$$
-
 $$
-= 1.1000
+1 + 0.10 = 1.1 = 1.1000
 $$
 
 Compare the computed value with the claim ($1.1000$). The two sides agree.
@@ -3982,15 +3838,7 @@ So the statement is True.`,
 Semi-annual compounding splits the quote in two, then squares:
 
 $$
-K_{\\mathrm{s}} = \\left(1+\\frac{0.10}{2}\\right)^{2}
-$$
-
-$$
-= (1.05)^{2}
-$$
-
-$$
-= 1.1025
+K_{\\mathrm{s}} = \\left(1+\\frac{0.10}{2}\\right)^{2} = (1.05)^{2} = 1.1025
 $$
 
 Compare the computed value with the claim ($1.1025$). The two sides agree.
@@ -4044,27 +3892,21 @@ $$
 K_{\\mathrm{s}} - K_{\\mathrm{y}} = 1.1025 - 1.1000
 $$
 
-$$1.1025 - 1.1000$$
-
-$$= 0.0025$$
-
 $$
-= 0.0025
+1.1025 - 1.1000 = 0.0025
 $$
 
 $$
 K_{\\mathrm{c}} - K_{\\mathrm{s}} = e^{0.10} - 1.1025
 $$
 
-$$\\approx 1.105171 - 1.1025$$
-
 $$
-= 0.002671
+\\approx 1.105171 - 1.1025 = 0.002671
 $$
 
-$$75,000 \\times 0.0025$$
-
-$$= 187.50$$
+$$
+75,000 \\times 0.0025 = 187.50
+$$
 
 $$75,000 \\times 0.002671$$
 
@@ -4141,11 +3983,7 @@ So the statement is False.`,
 Two years of continuous $4.5\\%$ carry the exponent $0.09$:
 
 $$
-S(2) = 95,000 \\times e^{0.045 \\times 2}
-$$
-
-$$
-= 95,000 \\times e^{0.09}
+S(2) = 95,000 \\times e^{0.045 \\times 2} = 95,000 \\times e^{0.09}
 $$
 
 $$e^{0.09}$$
@@ -4209,9 +4047,9 @@ Double the original factor would be
 
 $$2 \\times e^{0.045}$$
 
-$$\\approx 2 \\times 1.046028$$
-
-$$= 2.092056$$
+$$
+\\approx 2 \\times 1.046028 = 2.092056
+$$
 
 The claim needs $e^{0.09}=2e^{0.045}$. The computed value is
 
@@ -4265,11 +4103,7 @@ Each additional year multiplies the balance by the same factor $e^{r}$, and over
 Four years of continuous $10\\%$ depreciation carry the exponent $-0.40$:
 
 $$
-v(4) = 60,000 \\times e^{-0.10 \\times 4}
-$$
-
-$$
-= 60,000 \\times e^{-0.40}
+v(4) = 60,000 \\times e^{-0.10 \\times 4} = 60,000 \\times e^{-0.40}
 $$
 
 $$e^{-0.40}$$
@@ -4286,11 +4120,7 @@ So the statement is True.`,
 Seven years of continuous $10\\%$ depreciation carry the exponent $-0.70$:
 
 $$
-v(7) = 60,000 \\times e^{-0.10 \\times 7}
-$$
-
-$$
-= 60,000 \\times e^{-0.70}
+v(7) = 60,000 \\times e^{-0.10 \\times 7} = 60,000 \\times e^{-0.70}
 $$
 
 $$e^{-0.70}$$
@@ -4318,9 +4148,9 @@ $$\\approx 40,219.20$$
 
 $$\\frac{40,219.20}{60,000}$$
 
-$$\\approx 0.6703$$
-
-$$= 67.03\\%$$
+$$
+\\approx 0.6703 = 67.03\\%
+$$
 
 Compare the computed value with the claim (about $67.03\\%$). The two sides agree.
 
@@ -4330,11 +4160,7 @@ So the statement is True.`,
 At a doubled $20\\%$ depreciation rate the four-year value is
 
 $$
-v(4) = 60,000 \\times e^{-0.20 \\times 4}
-$$
-
-$$
-= 60,000 \\times e^{-0.80}
+v(4) = 60,000 \\times e^{-0.20 \\times 4} = 60,000 \\times e^{-0.80}
 $$
 
 $$e^{-0.80}$$
@@ -4439,11 +4265,7 @@ So the statement is True.`,
 At the rounded doubling time $t=12.60$ years,
 
 $$
-S(12.60) = 18,000 \\times e^{0.055 \\times 12.60}
-$$
-
-$$
-= 18,000 \\times e^{0.693}
+S(12.60) = 18,000 \\times e^{0.055 \\times 12.60} = 18,000 \\times e^{0.693}
 $$
 
 $$e^{0.693}$$
@@ -4484,9 +4306,9 @@ So the statement is False.`,
 
 Each doubling multiplies the balance by $2$. Three full doubling periods therefore multiply by
 
-$$2^{3}$$
-
-$$= 8$$
+$$
+2^{3} = 8
+$$
 
 Compare the computed value with the claim (a factor of $6$). The computed value is
 
@@ -4592,9 +4414,9 @@ So the statement is True.`,
 
 Retaining $40\\%$ of the original \\$120,000 leaves
 
-$$0.40 \\times 120,000$$
-
-$$= 48,000$$
+$$
+0.40 \\times 120,000 = 48,000
+$$
 
 Compare the computed value with the claim (approximately \\$48,000.00). The two sides agree.
 
@@ -4621,10 +4443,8 @@ So the statement is True.`,
 Losing $80\\%$ of value means retaining $20\\%$, so
 
 $$
-t_{80} = \\frac{\\ln\\bigl(\\frac{1}{0.20}\\bigr)}{0.18}
+t_{80} = \\frac{\\ln\\bigl(\\frac{1}{0.20}\\bigr)}{0.18} = \\frac{\\ln 5}{0.18}
 $$
-
-$$= \\frac{\\ln 5}{0.18}$$
 
 $$\\ln 5$$
 
@@ -4997,13 +4817,13 @@ So the statement is True.`,
 
 A straight-line extension of the observed three-year dollar gain is
 
-$$\\frac{34,200-28,000}{3}$$
+$$
+\\frac{34,200-28,000}{3} = 2,066.67
+$$
 
-$$= 2,066.67$$
-
-$$34,200 + 2 \\times 2,066.67$$
-
-$$= 38,333.33$$
+$$
+34,200 + 2 \\times 2,066.67 = 38,333.33
+$$
 
 The exponential projection was $S(5) \\approx 39,078.52$. The claim needs these to match. The computed value is
 
@@ -5046,11 +4866,7 @@ So the statement is False.`,
 If the implied rate had been $6.00\\%$, the three-year value would be
 
 $$
-S(3) = 28,000 \\times e^{0.06 \\times 3}
-$$
-
-$$
-= 28,000 \\times e^{0.18}
+S(3) = 28,000 \\times e^{0.06 \\times 3} = 28,000 \\times e^{0.18}
 $$
 
 $$e^{0.18}$$
@@ -5115,11 +4931,7 @@ A later value at time $T$ is $S(T)=S_0 e^{rT}$.`,
 Bank X compounds continuously at $6.8\\%$ for two years:
 
 $$
-S_X = 60,000 \\times e^{0.068 \\times 2}
-$$
-
-$$
-= 60,000 \\times e^{0.136}
+S_X = 60,000 \\times e^{0.068 \\times 2} = 60,000 \\times e^{0.136}
 $$
 
 $$e^{0.136}$$
@@ -5193,11 +5005,7 @@ So the statement is True.`,
 Raising Bank X to a $7.0\\%$ continuous quote for two years gives
 
 $$
-S_X' = 60,000 \\times e^{0.07 \\times 2}
-$$
-
-$$
-= 60,000 \\times e^{0.14}
+S_X' = 60,000 \\times e^{0.07 \\times 2} = 60,000 \\times e^{0.14}
 $$
 
 $$e^{0.14}$$
@@ -5293,16 +5101,8 @@ $$
 r_{\\mathrm{net}} = 0.09 - 0.02
 $$
 
-$$0.09 - 0.02$$
-
-$$= 0.07$$
-
 $$
-= 0.07
-$$
-
-$$
-= 7\\%
+0.09 - 0.02 = 0.07 = 7\\%
 $$
 
 The claim asserts $11\\%$ by adding the fee instead. The computed value is
@@ -5321,11 +5121,7 @@ So the statement is False.`,
 Six years at the recovered $7\\%$ net rate give
 
 $$
-S(6) = 2,000,000 \\times e^{0.07 \\times 6}
-$$
-
-$$
-= 2,000,000 \\times e^{0.42}
+S(6) = 2,000,000 \\times e^{0.07 \\times 6} = 2,000,000 \\times e^{0.42}
 $$
 
 $$e^{0.42}$$
@@ -5375,11 +5171,7 @@ So the statement is False.`,
 A $3.5\\%$ fee leaves a net rate of $9\\% - 3.5\\% = 5.5\\%$:
 
 $$
-S(6) = 2,000,000 \\times e^{0.055 \\times 6}
-$$
-
-$$
-= 2,000,000 \\times e^{0.33}
+S(6) = 2,000,000 \\times e^{0.055 \\times 6} = 2,000,000 \\times e^{0.33}
 $$
 
 $$e^{0.33}$$
@@ -5488,11 +5280,7 @@ So the statement is True.`,
 Substituting the recovered opening values and rates gives
 
 $$
-t = \\frac{\\ln\\bigl(\\frac{250,000}{50,000}\\bigr)}{0.04+0.12}
-$$
-
-$$
-= \\frac{\\ln 5}{0.16}
+t = \\frac{\\ln\\bigl(\\frac{250,000}{50,000}\\bigr)}{0.04+0.12} = \\frac{\\ln 5}{0.16}
 $$
 
 $$\\ln 5$$
@@ -5515,18 +5303,14 @@ So the statement is True.`,
 At exactly $t=10$ the two values are
 
 $$
-A(10) = 50,000 \\times e^{0.04 \\times 10}
+A(10) = 50,000 \\times e^{0.04 \\times 10} = 50,000 \\times e^{0.40}
 $$
-
-$$= 50,000 \\times e^{0.40}$$
 
 $$\\approx 74,591.23$$
 
 $$
-B(10) = 250,000 \\times e^{-0.12 \\times 10}
+B(10) = 250,000 \\times e^{-0.12 \\times 10} = 250,000 \\times e^{-1.20}
 $$
-
-$$= 250,000 \\times e^{-1.20}$$
 
 $$\\approx 75,298.55$$
 
@@ -5626,11 +5410,7 @@ The two paths are $A(t)=A_0 e^{r_A t}$ and $B(t)=B_0 e^{-\\delta_B t}$. Setting 
 Annual compounding is a single $7\\%$ credit:
 
 $$
-S_1 = 40,000 \\times 1.07
-$$
-
-$$
-= 42,800.00
+S_1 = 40,000 \\times 1.07 = 42,800.00
 $$
 
 Compare the computed value with the claim (\\$42,800.00). The two sides agree.
@@ -5664,11 +5444,7 @@ So the statement is True.`,
 The four one-year values at the same $7\\%$ quote are
 
 $$
-S_1 = 40,000 \\times 1.07
-$$
-
-$$
-= 42,800.00
+S_1 = 40,000 \\times 1.07 = 42,800.00
 $$
 
 $$S_4 = 40,000 \\times (1.0175)^{4}$$
@@ -5696,15 +5472,15 @@ The two successive dollar gaps are
 
 $$S_{12} - S_4$$
 
-$$\\approx 42,891.60 - 42,874.36$$
-
-$$= 17.24$$
+$$
+\\approx 42,891.60 - 42,874.36 = 17.24
+$$
 
 $$S_{\\mathrm{c}} - S_{12}$$
 
-$$\\approx 42,900.33 - 42,891.60$$
-
-$$= 8.73$$
+$$
+\\approx 42,900.33 - 42,891.60 = 8.73
+$$
 
 The claim needs $17.24 < 8.73$. We have $17.24 > 8.73$.
 
@@ -5775,11 +5551,7 @@ $$`,
 Option 1 discounts \\$100,000 continuously at $4.5\\%$ for eight years:
 
 $$
-S_{0,1} = 100,000 \\times e^{-0.045 \\times 8}
-$$
-
-$$
-= 100,000 \\times e^{-0.36}
+S_{0,1} = 100,000 \\times e^{-0.045 \\times 8} = 100,000 \\times e^{-0.36}
 $$
 
 $$e^{-0.36}$$
@@ -5796,11 +5568,7 @@ So the statement is True.`,
 Option 2 discounts \\$100,000 continuously at $6.0\\%$ for eight years:
 
 $$
-S_{0,2} = 100,000 \\times e^{-0.06 \\times 8}
-$$
-
-$$
-= 100,000 \\times e^{-0.48}
+S_{0,2} = 100,000 \\times e^{-0.06 \\times 8} = 100,000 \\times e^{-0.48}
 $$
 
 $$e^{-0.48}$$
@@ -5839,9 +5607,9 @@ The gap in required deposits is
 
 $$S_{0,1} - S_{0,2}$$
 
-$$\\approx 69,767.63 - 61,878.34$$
-
-$$= 7,889.29$$
+$$
+\\approx 69,767.63 - 61,878.34 = 7,889.29
+$$
 
 Option 2 requires the smaller deposit. The claim is about \\$9,000.00 with Option 2 larger. The computed value is
 
@@ -5859,11 +5627,7 @@ So the statement is False.`,
 The same \\$100,000 target in only four years under Option 1 requires
 
 $$
-S_0' = 100,000 \\times e^{-0.045 \\times 4}
-$$
-
-$$
-= 100,000 \\times e^{-0.18}
+S_0' = 100,000 \\times e^{-0.045 \\times 4} = 100,000 \\times e^{-0.18}
 $$
 
 $$e^{-0.18}$$
@@ -5940,11 +5704,7 @@ The required deposit is the continuous present value`,
 Four years of continuous $10\\%$ carry the exponent $0.40$:
 
 $$
-S(4) = 1,800,000 \\times e^{0.10 \\times 4}
-$$
-
-$$
-= 1,800,000 \\times e^{0.40}
+S(4) = 1,800,000 \\times e^{0.10 \\times 4} = 1,800,000 \\times e^{0.40}
 $$
 
 $$e^{0.40}$$
@@ -5961,11 +5721,7 @@ So the statement is True.`,
 The maturity phase then applies three years of continuous $4\\%$:
 
 $$
-S(7) = 1,800,000 \\times e^{0.40 + 0.04 \\times 3}
-$$
-
-$$
-= 1,800,000 \\times e^{0.52}
+S(7) = 1,800,000 \\times e^{0.40 + 0.04 \\times 3} = 1,800,000 \\times e^{0.52}
 $$
 
 $$e^{0.52}$$
@@ -5982,15 +5738,11 @@ So the statement is True.`,
 The single constant rate matching the seven-year outcome is the time-weighted average of the two phase rates:
 
 $$
-r_* = \\frac{0.10 \\times 4 + 0.04 \\times 3}{7}
+r_* = \\frac{0.10 \\times 4 + 0.04 \\times 3}{7} = \\frac{0.52}{7}
 $$
 
-$$= \\frac{0.52}{7}$$
-
-$$\\approx 0.07429$$
-
 $$
-= 7.43\\%
+\\approx 0.07429 = 7.43\\%
 $$
 
 Compare the computed value with the claim (about $7.43\\%$). The two sides agree.
@@ -6000,12 +5752,8 @@ So the statement is True.`,
 
 The effective seven-year rate is $r_* \\approx 7.43\\%$. The plain average of the two phase rates is
 
-$$\\frac{0.10+0.04}{2}$$
-
-$$= 0.07$$
-
 $$
-= 7\\%
+\\frac{0.10+0.04}{2} = 0.07 = 7\\%
 $$
 
 The claim needs $r_* > 7\\%$. We have $7.43\\% > 7\\%$.
@@ -6019,32 +5767,16 @@ $$
 S_{\\mathrm{rev}}(7) = 1,800,000 \\times e^{0.04 \\times 3 + 0.10 \\times 4}
 $$
 
-$$0.04 \\times 3$$
-
-$$= 0.12$$
-
-$$0.10 \\times 4$$
-
-$$= 0.4$$
-
-$$0.12 + 0.4$$
-
-$$= 0.52$$
-
-$$0.04 \\times 3$$
-
-$$= 0.12$$
-
-$$0.10 \\times 4$$
-
-$$= 0.4$$
-
-$$0.12 + 0.4$$
-
-$$= 0.52$$
+$$
+0.04 \\times 3 = 0.12
+$$
 
 $$
-= 1,800,000 \\times e^{0.52}
+0.10 \\times 4 = 0.4
+$$
+
+$$
+0.12 + 0.4 = 0.52 = 1,800,000 \\times e^{0.52}
 $$
 
 That equals the original $S(7)$. The year-7 revenue is unchanged.
@@ -6141,10 +5873,8 @@ $$
 \\delta = \\frac{1}{6}\\ln\\bigl(\\frac{85,000}{32,000}\\bigr)
 $$
 
-$$\\approx 0.1628$$
-
 $$
-= 16.28\\%
+\\approx 0.1628 = 16.28\\%
 $$
 
 The computed value is approximately 16.28%, which matches the claim.
@@ -6155,11 +5885,7 @@ So the statement is True.`,
 The second crane depreciates continuously at $15\\%$ for six years:
 
 $$
-v_2(6) = 85,000 \\times e^{-0.15 \\times 6}
-$$
-
-$$
-= 85,000 \\times e^{-0.90}
+v_2(6) = 85,000 \\times e^{-0.15 \\times 6} = 85,000 \\times e^{-0.90}
 $$
 
 $$e^{-0.90}$$
@@ -6200,10 +5926,8 @@ $$
 \\delta' = \\frac{1}{6}\\ln\\bigl(\\frac{85,000}{40,000}\\bigr)
 $$
 
-$$\\approx 0.1256$$
-
 $$
-= 12.56\\%
+\\approx 0.1256 = 12.56\\%
 $$
 
 The original implied rate was $16.28\\%$. The claim needs $\\delta'>16.28\\%$. We have $12.56\\% < 16.28\\%$.
@@ -6293,18 +6017,14 @@ So the statement is True.`,
 
 Quadrupling is the multiple
 
-$$M = 4$$
-
-$$= 2^{2}$$
+$$
+M = 4 = 2^{2}
+$$
 
 :
 
 $$
-t_4 = \\frac{\\ln 4}{0.065}
-$$
-
-$$
-= \\frac{2\\ln 2}{0.065}
+t_4 = \\frac{\\ln 4}{0.065} = \\frac{2\\ln 2}{0.065}
 $$
 
 $$t_4 \\approx 21.33$$
@@ -6326,9 +6046,9 @@ So the statement is True.`,
 
 Quadrupling the \\$12,000 deposit gives
 
-$$4 \\times 12,000$$
-
-$$= 48,000$$
+$$
+4 \\times 12,000 = 48,000
+$$
 
 At the quadrupling time the fund is worth exactly \\$48,000.00.
 
@@ -6413,11 +6133,7 @@ The balance follows $S(t)=S_0 e^{rt}$. Reaching a multiple $M$ of the deposit ta
 Asset A grows continuously at $6\\%$ for five years:
 
 $$
-A(5) = 150,000 \\times e^{0.06 \\times 5}
-$$
-
-$$
-= 150,000 \\times e^{0.30}
+A(5) = 150,000 \\times e^{0.06 \\times 5} = 150,000 \\times e^{0.30}
 $$
 
 $$e^{0.30}$$
@@ -6434,11 +6150,7 @@ So the statement is True.`,
 Asset B depreciates continuously at $9\\%$ for five years:
 
 $$
-B(5) = 220,000 \\times e^{-0.09 \\times 5}
-$$
-
-$$
-= 220,000 \\times e^{-0.45}
+B(5) = 220,000 \\times e^{-0.09 \\times 5} = 220,000 \\times e^{-0.45}
 $$
 
 $$e^{-0.45}$$
@@ -6458,32 +6170,16 @@ $$
 C(5) = 100,000 \\times e^{0.08 \\times 3 + 0.03 \\times 2}
 $$
 
-$$0.08 \\times 3$$
-
-$$= 0.24$$
-
-$$0.03 \\times 2$$
-
-$$= 0.06$$
-
-$$0.24 + 0.06$$
-
-$$= 0.3$$
-
-$$0.08 \\times 3$$
-
-$$= 0.24$$
-
-$$0.03 \\times 2$$
-
-$$= 0.06$$
-
-$$0.24 + 0.06$$
-
-$$= 0.3$$
+$$
+0.08 \\times 3 = 0.24
+$$
 
 $$
-= 100,000 \\times e^{0.30}
+0.03 \\times 2 = 0.06
+$$
+
+$$
+0.24 + 0.06 = 0.3 = 100,000 \\times e^{0.30}
 $$
 
 $$e^{0.30}$$
@@ -6537,11 +6233,7 @@ So the statement is False.`,
 If Asset B instead grew continuously at $9\\%$ for five years:
 
 $$
-B^{+}(5) = 220,000 \\times e^{0.09 \\times 5}
-$$
-
-$$
-= 220,000 \\times e^{0.45}
+B^{+}(5) = 220,000 \\times e^{0.09 \\times 5} = 220,000 \\times e^{0.45}
 $$
 
 $$e^{0.45}$$
@@ -6621,9 +6313,9 @@ $$
 
 Substitute the stem numbers:
 
-$$(1.05)^{-1}$$
-
-$$= \\frac{1}{1.05}$$
+$$
+(1.05)^{-1} = \\frac{1}{1.05}
+$$
 
 $$\\approx 0.9524$$
 
@@ -6659,9 +6351,9 @@ $$r = 0.05,$$
 
 $$t = 1$$
 
-$$(1.05)^{-1}$$
-
-$$= \\frac{1}{1.05}$$
+$$
+(1.05)^{-1} = \\frac{1}{1.05}
+$$
 
 $$(1.05)^{-1}$$
 
@@ -6690,9 +6382,9 @@ $$r = 0.05,$$
 
 $$t = 1$$
 
-$$(1.05)^{-1}$$
-
-$$= \\frac{1}{1.05}$$
+$$
+(1.05)^{-1} = \\frac{1}{1.05}
+$$
 
 $$(1.05)^{-1}$$
 
@@ -6704,9 +6396,9 @@ $$\\mathrm{PDV} \\approx 7,619.05$$
 
 The overview recovered $\\mathrm{PDV}\\approx 7,619.05$. Face value minus present value is
 
-$$8,000-7,619.05$$
-
-$$= 380.95$$
+$$
+8,000-7,619.05 = 380.95
+$$
 
 The claim is \\$423.81.
 
@@ -6716,11 +6408,7 @@ So the statement is False.`,
 At $r=0$ the discount factor is $1$:
 
 $$
-\\mathrm{PDV} = 8,000\\times 1
-$$
-
-$$
-= 8,000
+\\mathrm{PDV} = 8,000\\times 1 = 8,000
 $$
 
 Compare the computed value with the claim (\\$7,500). The two sides do not agree.
@@ -6865,9 +6553,9 @@ $$\\approx 10023.24$$
 
 $$\\mathrm{PDV} \\approx 10,023.24$$
 
-$$10,075.43-10,023.24$$
-
-$$= 52.19$$
+$$
+10,075.43-10,023.24 = 52.19
+$$
 
 Compare the computed value with the claim (\\$60.00). The two sides do not agree.
 
@@ -6905,11 +6593,7 @@ $$\\approx 10023.24$$
 $$\\mathrm{PDV} \\approx 10,023.24$$
 
 $$
-rt = 0.06\\times 6
-$$
-
-$$
-= 0.36
+rt = 0.06\\times 6 = 0.36
 $$
 
 $$\\mathrm{PDV} = 12,000\\,e^{-0.36}$$
@@ -7062,9 +6746,9 @@ $$\\mathrm{PDV}_{\\mathrm{ann}} \\approx 26,190.41$$
 
 $$rt = 0.07 \\times 8$$
 
-$$26,190.41-25,704.41$$
-
-$$= 486.00$$
+$$
+26,190.41-25,704.41 = 486.00
+$$
 
 Compare the computed value with the claim (\\$650.00). The two sides do not agree.
 
@@ -7074,11 +6758,7 @@ So the statement is False.`,
 At $r=0$ both discount factors equal $1$:
 
 $$
-\\mathrm{PDV} = 45,000\\times 1
-$$
-
-$$
-= 45,000
+\\mathrm{PDV} = 45,000\\times 1 = 45,000
 $$
 
 Compare the computed value with the claim (\\$40,000). The two sides do not agree.
@@ -7251,10 +6931,8 @@ So the statement is False.`,
 At a $10$-year horizon,
 
 $$
-A = 150,000\\,e^{-0.045\\times 10}
+A = 150,000\\,e^{-0.045\\times 10} = 150,000\\,e^{-0.45}
 $$
-
-$$= 150,000\\,e^{-0.45}$$
 
 $$\\approx 95,644.22$$
 
@@ -7396,10 +7074,8 @@ $$\\approx 0.05827$$
 $$t = \\frac{0.3011}{0.05827}$$
 
 $$
-\\frac{25,000}{20,000} = 1.25, \\qquad t
+\\frac{25,000}{20,000} = 1.25, \\qquad t = \\frac{\\ln(1.25)}{\\ln(1.06)}
 $$
-
-$$= \\frac{\\ln(1.25)}{\\ln(1.06)}$$
 
 $$\\ln 1.25$$
 
@@ -7521,11 +7197,7 @@ $$
 Substitute the stem numbers:
 
 $$
-\\frac{\\mathrm{PDV}}{K} = \\frac{27,000}{60,000}
-$$
-
-$$
-= 0.45
+\\frac{\\mathrm{PDV}}{K} = \\frac{27,000}{60,000} = 0.45
 $$
 
 The computed value is approximately 0.45, which matches the claim.
@@ -7542,15 +7214,11 @@ $$
 Substitute the stem numbers:
 
 $$
-r = -\\frac{\\ln(0.45)}{12}
+r = -\\frac{\\ln(0.45)}{12} = \\frac{0.798508}{12}
 $$
 
-$$= \\frac{0.798508}{12}$$
-
-$$\\approx 0.0665$$
-
 $$
-= 6.65\\%
+\\approx 0.0665 = 6.65\\%
 $$
 
 The computed value is approximately 6.65%, which matches the claim.
@@ -7579,10 +7247,8 @@ $$r = \\frac{0.798508}{12}$$
 $$r \\approx 0.0665 = 6.65\\%$$
 
 $$
-\\mathrm{PDV} = 60,000\\,e^{-0.0665\\times 6}
+\\mathrm{PDV} = 60,000\\,e^{-0.0665\\times 6} = 60,000\\,e^{-0.399}
 $$
-
-$$= 60,000\\,e^{-0.399}$$
 
 $$\\approx 40,249.20$$
 
@@ -7612,10 +7278,8 @@ $$r = \\frac{0.798508}{12}$$
 $$r \\approx 0.0665 = 6.65\\%$$
 
 $$
-r = -\\frac{\\ln\\!\\left(\\frac{30,000}{60,000}\\right)}{12}
+r = -\\frac{\\ln\\!\\left(\\frac{30,000}{60,000}\\right)}{12} = -\\frac{\\ln(0.5)}{12}
 $$
-
-$$= -\\frac{\\ln(0.5)}{12}$$
 
 $$\\ln 0.5$$
 
@@ -7623,10 +7287,8 @@ $$\\approx -0.693147$$
 
 $$\\frac{-0.693147}{12}$$
 
-$$\\approx -0.06$$
-
 $$
-= 5.78\\%
+\\approx -0.06 = 5.78\\%
 $$
 
 The overview recovered $6.65\\%$ at \\$27,000. We have $5.78\\%<6.65\\%$.
@@ -7637,15 +7299,11 @@ So the statement is False.`,
 At a $24$-year horizon with the same discount factor $0.45$,
 
 $$
-r = -\\frac{\\ln(0.45)}{24}
+r = -\\frac{\\ln(0.45)}{24} = \\frac{0.798508}{24}
 $$
 
-$$= \\frac{0.798508}{24}$$
-
-$$\\approx 0.0333$$
-
 $$
-= 3.33\\%
+\\approx 0.0333 = 3.33\\%
 $$
 
 Compare the computed value with the claim ($3.33\\%$). The two sides agree.
@@ -7720,10 +7378,8 @@ $$
 Substitute the stem numbers:
 
 $$
-\\mathrm{PDV}_1 = \\frac{40,000}{(1.05)^{2}}
+\\mathrm{PDV}_1 = \\frac{40,000}{(1.05)^{2}} = \\frac{40,000}{1.1025}
 $$
-
-$$= \\frac{40,000}{1.1025}$$
 
 $$\\approx 36,281.18$$
 
@@ -7946,9 +7602,9 @@ So the statement is False.`,
 
 At $r=0.05$,
 
-$$(1.05)^{3}$$
-
-$$= 1.157625$$
+$$
+(1.05)^{3} = 1.157625
+$$
 
 $$\\mathrm{PDV}_B = \\frac{25,500}{1.157625}$$
 
@@ -8026,19 +7682,7 @@ $$
 Substitute the stem numbers:
 
 $$
-10,000 = 400(t+2), \\qquad t+2
-$$
-
-$$
-= \\frac{2}{r}
-$$
-
-$$
-= 25, \\qquad t^{*}
-$$
-
-$$
-= 23
+10,000 = 400(t+2), \\qquad t+2 = \\frac{2}{r} = 25, \\qquad t^{*} = 23
 $$
 
 The computed value is approximately 23, which matches the claim.
@@ -8096,10 +7740,8 @@ $$f(23) = 3,125,000\\,e^{-1.84}$$
 $$f(23) \\approx 496,304.46$$
 
 $$
-f(25) = 5,000(27)^{2}e^{-0.08\\times 25}
+f(25) = 5,000(27)^{2}e^{-0.08\\times 25} = 3,645,000\\,e^{-2}
 $$
-
-$$= 3,645,000\\,e^{-2}$$
 
 $$\\approx 493,297.11$$
 
@@ -8223,11 +7865,7 @@ So the statement is False.`,
 At $r=0$ each discount factor is $1$:
 
 $$
-\\mathrm{PDV} = 18,000+30,000
-$$
-
-$$
-= 48,000
+\\mathrm{PDV} = 18,000+30,000 = 48,000
 $$
 
 Compare the computed value with the claim (\\$48,000). The two sides agree.
@@ -8377,10 +8015,8 @@ $$\\mathrm{PDV} \\approx 35,234.40$$
 $$1+r_a = e^{0.05}$$
 
 $$
-\\mathrm{PDV} = 50,000\\,e^{-0.05\\times 3}
+\\mathrm{PDV} = 50,000\\,e^{-0.05\\times 3} = 50,000\\,e^{-0.15}
 $$
-
-$$= 50,000\\,e^{-0.15}$$
 
 $$\\approx 43,035.40$$
 
@@ -8413,9 +8049,9 @@ $$1+r_a = e^{0.05}$$
 
 The overview recovered $r_a\\approx 5.13\\%$. The gap from the continuous quote is
 
-$$5.13\\%-5.00\\%$$
-
-$$= 0.13$$
+$$
+5.13\\%-5.00\\% = 0.13
+$$
 
 The claim needs a gap above $1.00$ percentage point. We have $0.13<1.00$.
 
@@ -8495,10 +8131,8 @@ $$
 Substitute the stem numbers:
 
 $$
-\\mathrm{PV}_1 = \\frac{42,000}{(1.06)^{3}}
+\\mathrm{PV}_1 = \\frac{42,000}{(1.06)^{3}} = \\frac{42,000}{1.191016}
 $$
-
-$$= \\frac{42,000}{1.191016}$$
 
 $$\\approx 35,264.01$$
 
@@ -8516,11 +8150,7 @@ $$
 Substitute the stem numbers:
 
 $$
-\\mathrm{PV}_2 = 100,000-35,264.01
-$$
-
-$$
-= 64,735.99
+\\mathrm{PV}_2 = 100,000-35,264.01 = 64,735.99
 $$
 
 The computed value is approximately \\$64,735.99, which matches the claim.
@@ -8721,9 +8351,9 @@ $$K = \\frac{35,000}{0.7711}$$
 
 $$K \\approx 45,392.55$$
 
-$$45,392.55-35,000$$
-
-$$= 10,392.55$$
+$$
+45,392.55-35,000 = 10,392.55
+$$
 
 The claim needs an excess above \\$11,000. We have $10,392.55<11,000$.
 
@@ -8753,10 +8383,8 @@ $$K = \\frac{35,000}{0.7711}$$
 $$K \\approx 45,392.55$$
 
 $$
-K = 35,000\\,e^{0.09\\times 4}
+K = 35,000\\,e^{0.09\\times 4} = 35,000\\,e^{0.36}
 $$
-
-$$= 35,000\\,e^{0.36}$$
 
 $$\\approx 50,166.53$$
 
@@ -8796,10 +8424,8 @@ $$K = \\frac{35,000}{0.7711}$$
 $$K \\approx 45,392.55$$
 
 $$
-K = 35,000\\,e^{0.065\\times 2}
+K = 35,000\\,e^{0.065\\times 2} = 35,000\\,e^{0.13}
 $$
-
-$$= 35,000\\,e^{0.13}$$
 
 $$\\approx 39,858.99$$
 
@@ -8884,15 +8510,7 @@ So the statement is True.`,
 The interior condition would need $0.05P(t^{*})=0.08P(t^{*})$, which is impossible for $P>0$. The exponent $-0.03t$ makes $f$ strictly decreasing for $t\\ge 0$, so the maximum is at the boundary:
 
 $$
-t^{*} = 0, \\qquad f(0)
-$$
-
-$$
-= P(0)
-$$
-
-$$
-= 40,000
+t^{*} = 0, \\qquad f(0) = P(0) = 40,000
 $$
 
 The computed value is approximately \\$40,000, which matches the claim.
@@ -8903,10 +8521,8 @@ So the statement is True.`,
 At $t=10$,
 
 $$
-f(10) = 40,000e^{-0.03\\times 10}
+f(10) = 40,000e^{-0.03\\times 10} = 40,000e^{-0.3}
 $$
-
-$$= 40,000e^{-0.3}$$
 
 $$\\approx 29,632.73$$
 
@@ -8929,11 +8545,7 @@ So the statement is False.`,
 The overview recovered the critical holding time $t^{*}$ from the first-order condition. Compare that time with half of the original optimum:At $r=0.04$,
 
 $$
-f(t) = 40,000e^{(0.05-0.04)t}
-$$
-
-$$
-= 40,000e^{0.01t}
+f(t) = 40,000e^{(0.05-0.04)t} = 40,000e^{0.01t}
 $$
 
 This rises with $t$, so the optimum is not $t^{*}=0$.
@@ -9003,15 +8615,7 @@ $$
 Substitute the stem numbers:
 
 $$
-P''(t^{*})-rP'(t^{*}) = 3,120-0.09\\times 46,800
-$$
-
-$$
-= 3,120-4,212
-$$
-
-$$
-= -1,092
+P''(t^{*})-rP'(t^{*}) = 3,120-0.09\\times 46,800 = 3,120-4,212 = -1,092
 $$
 
 That computed value matches the claim.
@@ -9036,7 +8640,9 @@ The computed value is approximately -476.19, which matches the claim.
 So the statement is True.`,
       `**D.** → False
 
-The overview recovered the critical holding time $t^{*}$ from the first-order condition. Compare that time with half of the original optimum:$$\\frac{dt^{*}}{dr}$$
+The overview recovered the critical holding time $t^{*}$ from the first-order condition. Compare that time with half of the original optimum:
+
+$$\\frac{dt^{*}}{dr}$$
 
 Substitute the recovered stem inputs:
 
@@ -9048,9 +8654,9 @@ $$P''(t^{*})=3,120,$$
 
 $$r=0.09$$
 
-$$0.09\\times 520,000$$
-
-$$= 46,800$$
+$$
+0.09\\times 520,000 = 46,800
+$$
 
 $$P''(t^{*})-rP'(t^{*}) = 3,120-0.09\\times 46,800$$
 
@@ -9074,15 +8680,7 @@ $$
 Substitute the stem numbers:
 
 $$
-P''(t^{*})-rP'(t^{*}) = 3,120-0.09\\times 46,800
-$$
-
-$$
-= 3,120-4,212
-$$
-
-$$
-= -1,092
+P''(t^{*})-rP'(t^{*}) = 3,120-0.09\\times 46,800 = 3,120-4,212 = -1,092
 $$
 
 The computed figure matches the claim.
@@ -9165,10 +8763,8 @@ $$
 Substitute the stem numbers:
 
 $$
-t+4 = \\frac{2}{r}\\approx 22.22, \\qquad t^{*}
+t+4 = \\frac{2}{r}\\approx 22.22, \\qquad t^{*} = \\frac{2}{r}-4
 $$
-
-$$= \\frac{2}{r}-4$$
 
 $$\\approx 18.22$$
 
@@ -9280,10 +8876,8 @@ The overview recovered $t^{*}=\\frac{2}{r}-4$. At $r=0.045$,
 
 $$t^{*} = \\frac{2}{0.045}-4$$
 
-$$\\approx 44.44-4$$
-
 $$
-= 40.44
+\\approx 44.44-4 = 40.44
 $$
 
 Double the original $18.22$ would be $36.44$. The computed value is
@@ -9418,9 +9012,9 @@ The overview recovered $\\mathrm{PV}_2\\approx 37,513.95$. The haircut from face
 
 $$\\frac{40,000-37,513.95}{40,000}$$
 
-$$\\approx 0.062$$
-
-$$= 6.2\\%$$
+$$
+\\approx 0.062 = 6.2\\%
+$$
 
 The claim needs a haircut above $10\\%$. We have $6.2\\%<10\\%$.
 
@@ -9430,11 +9024,7 @@ So the statement is False.`,
 At $r=0$ each discount factor is $1$:
 
 $$
-\\mathrm{PDV} = 250,000+40,000
-$$
-
-$$
-= 290,000
+\\mathrm{PDV} = 250,000+40,000 = 290,000
 $$
 
 Compare the computed value with the claim (\\$290,000). The two sides agree.
@@ -9545,11 +9135,7 @@ $$
 Substitute the stem numbers:
 
 $$
-\\frac{\\mathrm{PDV}}{K} = \\frac{2,000,000}{3,200,000}
-$$
-
-$$
-= 0.625
+\\frac{\\mathrm{PDV}}{K} = \\frac{2,000,000}{3,200,000} = 0.625
 $$
 
 The computed value is approximately 0.625, which matches the claim.
@@ -9566,15 +9152,11 @@ $$
 Substitute the stem numbers:
 
 $$
-r = -\\frac{\\ln(0.625)}{4.5}
+r = -\\frac{\\ln(0.625)}{4.5} = \\frac{0.470004}{4.5}
 $$
 
-$$= \\frac{0.470004}{4.5}$$
-
-$$\\approx 0.1044$$
-
 $$
-= 10.44\\%
+\\approx 0.1044 = 10.44\\%
 $$
 
 The computed value is approximately 10.44%, which matches the claim.
@@ -9608,10 +9190,8 @@ $$
 r = -\\frac{\\ln\\!\\left(\\frac{2,000,000}{3,600,000}\\right)}{4.5}
 $$
 
-$$\\approx 0.1306$$
-
 $$
-= 13.06\\%
+\\approx 0.1306 = 13.06\\%
 $$
 
 The overview recovered $10.44\\%$ at \\$3,200,000. We have $13.06\\%>10.44\\%$.
@@ -9642,15 +9222,11 @@ $$r = \\frac{0.470004}{4.5}$$
 $$r \\approx 0.1044 = 10.44\\%$$
 
 $$
-r = -\\frac{\\ln(0.625)}{3}
+r = -\\frac{\\ln(0.625)}{3} = \\frac{0.470004}{3}
 $$
 
-$$= \\frac{0.470004}{3}$$
-
-$$\\approx 0.1567$$
-
 $$
-= 15.67\\%
+\\approx 0.1567 = 15.67\\%
 $$
 
 The overview recovered $10.44\\%$ at $4.5$ years. We have $15.67\\%>10.44\\%$.
@@ -9661,15 +9237,11 @@ So the statement is False.`,
 At a $9$-year horizon with the same discount factor $0.625$,
 
 $$
-r = -\\frac{\\ln(0.625)}{9}
+r = -\\frac{\\ln(0.625)}{9} = \\frac{0.470004}{9}
 $$
 
-$$= \\frac{0.470004}{9}$$
-
-$$\\approx 0.0522$$
-
 $$
-= 5.22\\%
+\\approx 0.0522 = 5.22\\%
 $$
 
 Compare the computed value with the claim ($5.22\\%$). The two sides agree.
@@ -9744,10 +9316,8 @@ $$
 Substitute the stem numbers:
 
 $$
-t^{*} = \\frac{2}{0.075}-5
+t^{*} = \\frac{2}{0.075}-5 = 26.67-5
 $$
-
-$$= 26.67-5$$
 
 $$\\approx 21.67$$
 
@@ -9765,10 +9335,8 @@ $$
 Substitute the stem numbers:
 
 $$
-t^{*} = \\frac{2}{0.075}-5
+t^{*} = \\frac{2}{0.075}-5 = 26.67-5
 $$
-
-$$= 26.67-5$$
 
 $$\\approx 21.67$$
 
@@ -10062,11 +9630,7 @@ $$`,
 Year 2 is one growth step past the opening term:
 
 $$
-a_2 = 50 \\times 1.10
-$$
-
-$$
-= 55.00
+a_2 = 50 \\times 1.10 = 55.00
 $$
 
 Compare the computed value with the claim (\\$55.00 million). The two sides agree.
@@ -10078,15 +9642,13 @@ Year 5 carries four growth steps past the opening term:
 
 $$a_5 = 50 \\times (1.10)^4$$
 
-$$(1.10)^4$$
-
-$$= 1.4641$$
-
 $$
-a_5 = 50 \\times 1.4641
+(1.10)^4 = 1.4641
 $$
 
-$$= 73.205$$
+$$
+a_5 = 50 \\times 1.4641 = 73.205
+$$
 
 $$\\approx 73.21$$
 
@@ -10103,13 +9665,9 @@ $$
 
 Substitute the recovered stem inputs:
 
-$$s_5 = 50\\frac{1.61051-1}{0.10}$$
-
-$$= 50 \\times 6.1051$$
-
-$$= 305.255$$
-
-$$= 50 \\times 6.1051$$
+$$
+s_5 = 50\\frac{1.61051-1}{0.10} = 50 \\times 6.1051 = 305.255 = 50 \\times 6.1051
+$$
 
 $$\\approx 305.26$$
 
@@ -10134,29 +9692,25 @@ $$k = 1.10,$$
 
 $$n = 5$$
 
-$$1.10^5$$
+$$
+1.10^5 = 1.61051
+$$
 
-$$= 1.61051$$
-
-$$s_5 = 50\\frac{1.61051-1}{0.10}$$
-
-$$= 50 \\times 6.1051$$
-
-$$= 305.255$$
-
-$$= 50 \\times 6.1051$$
+$$
+s_5 = 50\\frac{1.61051-1}{0.10} = 50 \\times 6.1051 = 305.255 = 50 \\times 6.1051
+$$
 
 $$\\approx 305.26$$
 
-$$50 \\times 5$$
-
-$$= 250$$
+$$
+50 \\times 5 = 250
+$$
 
 The overview recovered $s_5 \\approx 305.26$. Growth adds
 
-$$305.26 - 250$$
-
-$$= 55.26$$
+$$
+305.26 - 250 = 55.26
+$$
 
 The claim is an extra of exactly \\$60.00 million. The extra is \\$55.26 million.
 
@@ -10248,15 +9802,7 @@ $$
 Substitute the stem numbers:
 
 $$
-s_{\\infty} = \\frac{2,000}{1-0.5}
-$$
-
-$$
-= \\frac{2,000}{0.5}
-$$
-
-$$
-= 4,000
+s_{\\infty} = \\frac{2,000}{1-0.5} = \\frac{2,000}{0.5} = 4,000
 $$
 
 The computed value is approximately \\$4,000.00, which matches the claim.
@@ -10273,11 +9819,7 @@ $$
 Substitute the stem numbers:
 
 $$
-s_4 = 2,000+1,000+500+250
-$$
-
-$$
-= 3,750
+s_4 = 2,000+1,000+500+250 = 3,750
 $$
 
 The computed value is approximately \\$3,750.00, which matches the claim.
@@ -10397,15 +9939,7 @@ $$
 Substitute the stem numbers:
 
 $$
-s_{\\infty} = \\frac{800}{1-0.90}
-$$
-
-$$
-= \\frac{800}{0.10}
-$$
-
-$$
-= 8,000
+s_{\\infty} = \\frac{800}{1-0.90} = \\frac{800}{0.10} = 8,000
 $$
 
 The computed value is approximately \\$8,000.00, which matches the claim.
@@ -10421,9 +9955,9 @@ $$
 
 Substitute the stem numbers:
 
-$$= 800 \\times 6.513215599$$
-
-$$= 5,210.57$$
+$$
+= 800 \\times 6.513215599 = 5,210.57
+$$
 
 The computed value is approximately \\$5,210.57, which matches the claim.
 
@@ -10515,11 +10049,7 @@ $$= 800 \\times 6.513215599 = 5,210.57$$`,
 At a constant $300,000$ tons per year, the exhaustion time is
 
 $$
-t = \\frac{18,000,000}{300,000}
-$$
-
-$$
-= 60
+t = \\frac{18,000,000}{300,000} = 60
 $$
 
 Compare the computed value with the claim ($60$ years). The two sides agree.
@@ -10530,11 +10060,7 @@ So the statement is True.`,
 At a constant $500,000$ tons per year, the exhaustion time is
 
 $$
-t = \\frac{18,000,000}{500,000}
-$$
-
-$$
-= 36
+t = \\frac{18,000,000}{500,000} = 36
 $$
 
 Compare the computed value with the claim ($36$ years). The two sides agree.
@@ -10554,17 +10080,17 @@ $$k = 1.05,$$
 
 $$n = 10$$
 
-$$1.05^{10}$$
-
-$$= 1.628894627$$
+$$
+1.05^{10} = 1.628894627
+$$
 
 $$s_{10} = 300,000\\frac{1.628894627-1}{0.05}$$
 
 $$s_{10} = 3,773,367.76$$
 
-$$300,000 \\times 10$$
-
-$$= 3,000,000$$
+$$
+300,000 \\times 10 = 3,000,000
+$$
 
 The overview already identified constant extraction as the $k=1$ case, where the $n$-year total is $an$. The claim is that identity.
 
@@ -10594,21 +10120,21 @@ $$k = 1.05,$$
 
 $$n = 10$$
 
-$$1.05^{10}$$
-
-$$= 1.628894627$$
+$$
+1.05^{10} = 1.628894627
+$$
 
 $$s_{10} = 300,000\\frac{1.628894627-1}{0.05}$$
 
 $$s_{10} = 3,773,367.76$$
 
-$$300,000 \\times 10$$
+$$
+300,000 \\times 10 = 3,000,000
+$$
 
-$$= 3,000,000$$
-
-$$3,773,368-3,000,000$$
-
-$$= 773,368$$
+$$
+3,773,368-3,000,000 = 773,368
+$$
 
 $$773,368 < 1,000,000$$
 
@@ -10678,11 +10204,7 @@ $$300,000 \\times 10 = 3,000,000$$`,
 Year 2 is one decline step past this year's output:
 
 $$
-a_2 = 180 \\times 0.97
-$$
-
-$$
-= 174.6
+a_2 = 180 \\times 0.97 = 174.6
 $$
 
 Compare the computed value with the claim ($174.6$ million tons). The two sides agree.
@@ -10699,15 +10221,7 @@ $$
 Substitute the stem numbers:
 
 $$
-s_{\\infty} = \\frac{180}{1-0.97}
-$$
-
-$$
-= \\frac{180}{0.03}
-$$
-
-$$
-= 6,000
+s_{\\infty} = \\frac{180}{1-0.97} = \\frac{180}{0.03} = 6,000
 $$
 
 That computed value matches the claim.
@@ -10733,22 +10247,14 @@ So the statement is True.`,
 Under a $5\\%$ decline,
 
 $$
-s_{\\infty} = \\frac{180}{1-0.95}
-$$
-
-$$
-= \\frac{180}{0.05}
-$$
-
-$$
-= 3,600
+s_{\\infty} = \\frac{180}{1-0.95} = \\frac{180}{0.05} = 3,600
 $$
 
 The stranded reserve is then
 
-$$9,000-3,600$$
-
-$$= 5,400$$
+$$
+9,000-3,600 = 5,400
+$$
 
 The overview recovered $3,000$ million tons stranded under the $3\\%$ decline. A $5\\%$ decline strands more coal, not less.
 
@@ -10773,9 +10279,9 @@ $$s_{\\infty} = \\frac{180}{0.03}$$
 
 $$s_{\\infty} = 6,000$$
 
-$$9,000-6,000$$
-
-$$= 3,000$$
+$$
+9,000-6,000 = 3,000
+$$
 
 $$0.97^{20}$$
 
@@ -10855,11 +10361,7 @@ $$9,000-6,000 = 3,000$$`,
 The adjustments form an infinite geometric series:
 
 $$
-|k| = |-0.5|
-$$
-
-$$
-= 0.5 < 1
+|k| = |-0.5| = 0.5 < 1
 $$
 
 The computed figure matches the claim.
@@ -10878,10 +10380,8 @@ $$
 Substitute the stem numbers:
 
 $$
-s_{\\infty} = \\frac{4,000}{1-(-0.5)}
+s_{\\infty} = \\frac{4,000}{1-(-0.5)} = \\frac{4,000}{1.5}
 $$
-
-$$= \\frac{4,000}{1.5}$$
 
 $$\\approx 2,666.67$$
 
@@ -10895,19 +10395,11 @@ The first four adjustments are
 $$4,000, \\qquad 4,000(-0.5)=-2,000$$
 
 $$
-4,000(0.25) = 1,000, \\qquad 4,000(-0.125)
+4,000(0.25) = 1,000, \\qquad 4,000(-0.125) = -500
 $$
 
 $$
-= -500
-$$
-
-$$
-s_4 = 4,000-2,000+1,000-500
-$$
-
-$$
-= 2,500
+s_4 = 4,000-2,000+1,000-500 = 2,500
 $$
 
 The claim is \\$3,000.00. The four-term sum is \\$2,500.00.
@@ -10929,19 +10421,7 @@ So the statement is False.`,
 At $k=-1$ the terms alternate between $4,000$ and $-4,000$. The partial sums are then
 
 $$
-s_1 = 4,000, \\qquad s_2
-$$
-
-$$
-= 0, \\qquad s_3
-$$
-
-$$
-= 4,000, \\qquad s_4
-$$
-
-$$
-= 0
+s_1 = 4,000, \\qquad s_2 = 0, \\qquad s_3 = 4,000, \\qquad s_4 = 0
 $$
 
 Odd $n$ returns \\$4,000 and even $n$ returns \\$0, forever. The claim is that oscillation.
@@ -11037,10 +10517,8 @@ $$
 Substitute the stem numbers:
 
 $$
-s_{15} = 12\\frac{1.800944-1}{0.04}
+s_{15} = 12\\frac{1.800944-1}{0.04} = 12 \\times 20.0236
 $$
-
-$$= 12 \\times 20.0236$$
 
 $$\\approx 240.28$$
 
@@ -11078,9 +10556,9 @@ $$s_{15} = 12 \\times 20.0236$$
 
 $$s_{15} \\approx 240.28$$
 
-$$240.28-180.00$$
-
-$$= 60.28$$
+$$
+240.28-180.00 = 60.28
+$$
 
 $$60.28 < 65.00$$
 
@@ -11169,11 +10647,7 @@ $$`,
 The second payment is one decay step past the first:
 
 $$
-a_2 = 15,000 \\times 0.88
-$$
-
-$$
-= 13,200
+a_2 = 15,000 \\times 0.88 = 13,200
 $$
 
 Compare the computed value with the claim (\\$13,200.00). The two sides agree.
@@ -11184,10 +10658,8 @@ So the statement is True.`,
 Apply the financial identity that produces the quantity named in the claim:
 
 $$
-s_8 = 15,000\\frac{1-0.359635}{0.12}
+s_8 = 15,000\\frac{1-0.359635}{0.12} = 15,000 \\times 5.336379
 $$
-
-$$= 15,000 \\times 5.336379$$
 
 $$\\approx 80,045.68$$
 
@@ -11251,15 +10723,7 @@ $$s_8 \\approx 80,045.68$$
 $$s_{\\infty} = \\frac{15,000}{1-0.88}$$
 
 $$
-s_{\\infty} = \\frac{15,000}{1-0.95}
-$$
-
-$$
-= \\frac{15,000}{0.05}
-$$
-
-$$
-= 300,000
+s_{\\infty} = \\frac{15,000}{1-0.95} = \\frac{15,000}{0.05} = 300,000
 $$
 
 The overview recovered \\$125,000 at $k=0.88$. Since $300,000>125,000$, a less steep decline makes the infinite total larger, not smaller.
@@ -11401,13 +10865,13 @@ $$s_{12} = 9,000 \\times 18.977128$$
 
 $$s_{12} \\approx 170,794.15$$
 
-$$9,000 \\times 12$$
+$$
+9,000 \\times 12 = 108,000
+$$
 
-$$= 108,000$$
-
-$$170,794.15-108,000$$
-
-$$= 62,794.15$$
+$$
+170,794.15-108,000 = 62,794.15
+$$
 
 Compare the computed value with the claim (that the flat total sits \\$62,794.15 below the growing total). The two sides agree.
 
@@ -11473,15 +10937,7 @@ $$9,000 \\times 12 = 108,000$$`,
 When $|k_T|<1$, the terminal perpetuity is $T=\\frac{a_6}{1-k_T}$:
 
 $$
-s_6 = 4\\frac{2.985984-1}{0.20}
-$$
-
-$$
-= 4 \\times 9.92992
-$$
-
-$$
-= 39.72
+s_6 = 4\\frac{2.985984-1}{0.20} = 4 \\times 9.92992 = 39.72
 $$
 
 The computed value is approximately \\$39.72, which matches the claim.
@@ -11494,14 +10950,8 @@ So the statement is True.`,
 When $|k_T|<1$, the terminal perpetuity is $T=\\frac{a_6}{1-k_T}$:
 
 $$
-1.20^5 = 2.48832, \\qquad a_6
+1.20^5 = 2.48832, \\qquad a_6 = 4 \\times 2.48832 = 9.95328
 $$
-
-$$
-= 4 \\times 2.48832
-$$
-
-$$= 9.95328$$
 
 $$\\approx 9.95$$
 
@@ -11533,9 +10983,9 @@ $$n = 6,$$
 
 $$k_T = 0.85$$
 
-$$1.20^6$$
-
-$$= 2.985984$$
+$$
+1.20^6 = 2.985984
+$$
 
 $$s_6 = 4\\frac{2.985984-1}{0.20}$$
 
@@ -11544,10 +10994,8 @@ $$s_6 = 4 \\times 9.92992$$
 $$s_6 = 39.72$$
 
 $$
-T = \\frac{9.95328}{1-0.85}
+T = \\frac{9.95328}{1-0.85} = \\frac{9.95328}{0.15}
 $$
-
-$$= \\frac{9.95328}{0.15}$$
 
 $$\\approx 66.36$$
 
@@ -11568,9 +11016,9 @@ $$n = 6,$$
 
 $$k_T = 0.85$$
 
-$$1.20^6$$
-
-$$= 2.985984$$
+$$
+1.20^6 = 2.985984
+$$
 
 $$s_6 = 4\\frac{2.985984-1}{0.20}$$
 
@@ -11578,9 +11026,9 @@ $$s_6 = 4 \\times 9.92992$$
 
 $$s_6 = 39.72$$
 
-$$39.72+66.36$$
-
-$$= 106.08$$
+$$
+39.72+66.36 = 106.08
+$$
 
 $$106.08 > 100$$
 
@@ -11667,9 +11115,9 @@ $$`,
 
 If month $1$ were \\$1,000, month $2$ would be one growth step later:
 
-$$1,000 \\times 1.15$$
-
-$$= 1,150$$
+$$
+1,000 \\times 1.15 = 1,150
+$$
 
 Compare the computed value with the claim (\\$1,150.00). The two sides agree.
 
@@ -11685,10 +11133,8 @@ $$
 Substitute the stem numbers:
 
 $$
-a = 58,000\\frac{0.15}{2.313060766-1}
+a = 58,000\\frac{0.15}{2.313060766-1} = \\frac{8,700}{1.313060766}
 $$
-
-$$= \\frac{8,700}{1.313060766}$$
 
 $$\\approx 6,625.74$$
 
@@ -11699,9 +11145,9 @@ So the statement is True.`,
 
 Month $6$ uses five growth steps past the recovered $a\\approx 6,625.74$:
 
-$$1.15^5$$
-
-$$= 2.011357188$$
+$$
+1.15^5 = 2.011357188
+$$
 
 $$a_6 = 6,625.74 \\times 2.011357188$$
 
@@ -11714,12 +11160,8 @@ So the statement is True.`,
 
 Months $4$ through $6$ are $a k^3$, $a k^4$, and $a k^5$:
 
-$$1.15^3+1.15^4+1.15^5$$
-
-$$= 1.520875+1.749006+2.011357$$
-
 $$
-= 5.281239
+1.15^3+1.15^4+1.15^5 = 1.520875+1.749006+2.011357 = 5.281239
 $$
 
 $$6,625.74 \\times 5.281239$$
@@ -11741,9 +11183,9 @@ $$k = 1.15,$$
 
 $$n = 6$$
 
-$$1.15^6$$
-
-$$= 2.313060766$$
+$$
+1.15^6 = 2.313060766
+$$
 
 $$a = 58,000\\frac{0.15}{2.313060766-1}$$
 
@@ -11815,11 +11257,7 @@ $$`,
 Year 2 is one decline step past this year's payout:
 
 $$
-a_2 = 500,000 \\times 0.98
-$$
-
-$$
-= 490,000
+a_2 = 500,000 \\times 0.98 = 490,000
 $$
 
 Compare the computed value with the claim (\\$490,000.00). The two sides agree.
@@ -11836,15 +11274,7 @@ $$
 Substitute the stem numbers:
 
 $$
-s_{\\infty} = \\frac{500,000}{1-0.98}
-$$
-
-$$
-= \\frac{500,000}{0.02}
-$$
-
-$$
-= 25,000,000
+s_{\\infty} = \\frac{500,000}{1-0.98} = \\frac{500,000}{0.02} = 25,000,000
 $$
 
 That computed value matches the claim.
@@ -11883,22 +11313,14 @@ So the statement is True.`,
 At $k=0.95$,
 
 $$
-s_{\\infty} = \\frac{500,000}{1-0.95}
-$$
-
-$$
-= \\frac{500,000}{0.05}
-$$
-
-$$
-= 10,000,000
+s_{\\infty} = \\frac{500,000}{1-0.95} = \\frac{500,000}{0.05} = 10,000,000
 $$
 
 Half of the original infinite total is
 
-$$\\frac{25,000,000}{2}$$
-
-$$= 12,500,000$$
+$$
+\\frac{25,000,000}{2} = 12,500,000
+$$
 
 $$10,000,000 < 12,500,000$$
 
@@ -11980,11 +11402,7 @@ $$`,
 Year 2 is one growth step past the opening budget:
 
 $$
-a_2 = 200,000 \\times 1.12
-$$
-
-$$
-= 224,000
+a_2 = 200,000 \\times 1.12 = 224,000
 $$
 
 Compare the computed value with the claim (\\$224,000.00). The two sides agree.
@@ -12000,9 +11418,9 @@ $$a = 200,000,$$
 
 $$k = 1.12$$
 
-$$1.12^9$$
-
-$$= 2.773078757$$
+$$
+1.12^9 = 2.773078757
+$$
 
 $$s_9 = 200,000\\frac{2.773078757-1}{0.12}$$
 
@@ -12010,9 +11428,9 @@ $$s_9 = 200,000 \\times 14.775656$$
 
 $$s_9 \\approx 2,955,131.26$$
 
-$$1.12^{10}$$
-
-$$= 3.105848289$$
+$$
+1.12^{10} = 3.105848289
+$$
 
 $$s_{10} = 200,000\\frac{3.105848289-1}{0.12}$$
 
@@ -12049,15 +11467,13 @@ So the statement is False.`,
 
 At $8\\%$ growth,
 
-$$1.08^{10}$$
-
-$$= 2.158924997$$
-
 $$
-s_{10} = 200,000\\frac{2.158924997-1}{0.08}
+1.08^{10} = 2.158924997
 $$
 
-$$= 200,000 \\times 14.486562$$
+$$
+s_{10} = 200,000\\frac{2.158924997-1}{0.08} = 200,000 \\times 14.486562
+$$
 
 $$\\approx 2,897,312.49$$
 
@@ -12133,11 +11549,7 @@ $$`,
 The second grant is one decline step past the first:
 
 $$
-a_2 = 50,000 \\times 0.96
-$$
-
-$$
-= 48,000
+a_2 = 50,000 \\times 0.96 = 48,000
 $$
 
 Compare the computed value with the claim (\\$48,000.00). The two sides agree.
@@ -12154,15 +11566,7 @@ $$
 Substitute the stem numbers:
 
 $$
-s_{\\infty} = \\frac{50,000}{1-0.96}
-$$
-
-$$
-= \\frac{50,000}{0.04}
-$$
-
-$$
-= 1,250,000
+s_{\\infty} = \\frac{50,000}{1-0.96} = \\frac{50,000}{0.04} = 1,250,000
 $$
 
 The computed value is approximately \\$1,250,000.00, which matches the claim.
@@ -12179,10 +11583,8 @@ $$
 Substitute the stem numbers:
 
 $$
-s_{15} = 50,000\\frac{1-0.542086380}{0.04}
+s_{15} = 50,000\\frac{1-0.542086380}{0.04} = 50,000 \\times 11.447840
 $$
-
-$$= 50,000 \\times 11.447840$$
 
 $$\\approx 572,392.03$$
 
@@ -12215,22 +11617,14 @@ So the statement is False.`,
 At $k=0.90$,
 
 $$
-s_{\\infty} = \\frac{50,000}{1-0.90}
-$$
-
-$$
-= \\frac{50,000}{0.10}
-$$
-
-$$
-= 500,000
+s_{\\infty} = \\frac{50,000}{1-0.90} = \\frac{50,000}{0.10} = 500,000
 $$
 
 Half of the original infinite total is
 
-$$\\frac{1,250,000}{2}$$
-
-$$= 625,000$$
+$$
+\\frac{1,250,000}{2} = 625,000
+$$
 
 $$500,000 < 625,000$$
 
@@ -12312,11 +11706,7 @@ $$`,
 Quarter $2$ is one decline step past the first quarter:
 
 $$
-a_2 = 10,000 \\times 0.98
-$$
-
-$$
-= 9,800
+a_2 = 10,000 \\times 0.98 = 9,800
 $$
 
 Compare the computed value with the claim ($9,800.00$ lbs). The two sides agree.
@@ -12351,20 +11741,12 @@ So the statement is True.`,
 
 Substituting $n=5$ instead of $n=20$ gives
 
-$$0.98^5$$
-
-$$= 0.903920800$$
-
 $$
-s_5 = 10,000\\frac{1-0.903920800}{0.02}
+0.98^5 = 0.903920800
 $$
 
 $$
-= 10,000 \\times 4.80396
-$$
-
-$$
-= 48,039.60
+s_5 = 10,000\\frac{1-0.903920800}{0.02} = 10,000 \\times 4.80396 = 48,039.60
 $$
 
 That figure is the first five quarters, not five years. Five years are $20$ quarters, whose total the overview recovered as $166,196.01$ lbs. Using $n=5$ is not the correct five-year total.
@@ -12397,9 +11779,9 @@ $$k = 0.98,$$
 
 $$n = 20$$
 
-$$0.98^{20}$$
-
-$$= 0.667607972$$
+$$
+0.98^{20} = 0.667607972
+$$
 
 $$s_{20} = 10,000\\frac{1-0.667607972}{0.02}$$
 
@@ -12408,15 +11790,7 @@ $$s_{20} = 10,000 \\times 16.619601$$
 $$s_{20} = 166,196.01$$
 
 $$
-s_{\\infty} = \\frac{10,000}{1-0.98}
-$$
-
-$$
-= \\frac{10,000}{0.02}
-$$
-
-$$
-= 500,000
+s_{\\infty} = \\frac{10,000}{1-0.98} = \\frac{10,000}{0.02} = 500,000
 $$
 
 The overview recovered $s_{20}=166,196.01$. Since $500,000>166,196.01$, the infinite total is larger than the $20$-quarter total, not smaller.
@@ -12483,10 +11857,8 @@ $$
 Substitute the stem numbers:
 
 $$
-s_{A,8} = 80,000\\frac{1.593848075-1}{0.06}
+s_{A,8} = 80,000\\frac{1.593848075-1}{0.06} = 80,000 \\times 9.897468
 $$
-
-$$= 80,000 \\times 9.897468$$
 
 $$\\approx 791,797.43$$
 
@@ -12504,10 +11876,8 @@ $$
 Substitute the stem numbers:
 
 $$
-s_{B,8} = 95,000\\frac{1.171659381-1}{0.02}
+s_{B,8} = 95,000\\frac{1.171659381-1}{0.02} = 95,000 \\times 8.582969
 $$
-
-$$= 95,000 \\times 8.582969$$
 
 $$\\approx 815,382.06$$
 
@@ -12548,9 +11918,9 @@ Using the recovered solution values $s_{B,8}\\approx 815,382.06$ and $s_{A,8}\\a
 
 Territory B's lead is
 
-$$815,382.06-791,797.43$$
-
-$$= 23,584.63$$
+$$
+815,382.06-791,797.43 = 23,584.63
+$$
 
 $$23,584.63 < 30,000$$
 
@@ -12635,20 +12005,12 @@ At $p=1.5$ the fourth batch is
 
 $$a_4 = \\frac{5,000}{4^{1.5}}$$
 
-$$4^{1.5}$$
-
-$$= 4 \\times \\sqrt{4}$$
-
 $$
-= 8
+4^{1.5} = 4 \\times \\sqrt{4} = 8
 $$
 
 $$
-a_4 = \\frac{5,000}{8}
-$$
-
-$$
-= 625
+a_4 = \\frac{5,000}{8} = 625
 $$
 
 Compare the computed value with the claim (about \\$650.00). The fourth benefit is \\$625.00. The two sides do not agree.
@@ -12677,15 +12039,7 @@ So the statement is False.`,
 At $p=1.5$ and $n=100$,
 
 $$
-a_{100} = \\frac{5,000}{100^{1.5}}
-$$
-
-$$
-= \\frac{5,000}{1,000}
-$$
-
-$$
-= 5
+a_{100} = \\frac{5,000}{100^{1.5}} = \\frac{5,000}{1,000} = 5
 $$
 
 so the named term \\$5.00 is correct. Terms tending to $0$ is necessary for convergence, not sufficient. The harmonic case $p=1$ also has $a_n\\to 0$ and still diverges. One small term does not guarantee a finite sum.
@@ -12767,11 +12121,7 @@ So the statement is True.`,
 Apply the financial identity that produces the quantity named in the claim:
 
 $$
-\\Pi_{12} = 1,902,375.45-1,703,043.55
-$$
-
-$$
-= 199,331.90
+\\Pi_{12} = 1,902,375.45-1,703,043.55 = 199,331.90
 $$
 
 The computed value is approximately \\$199,331.90, which matches the claim.
@@ -12789,9 +12139,9 @@ $$a_{C,12} = 120,000 \\times 1.03^{11}$$
 
 $$\\approx 166,108.06$$
 
-$$167,350.25-166,108.06$$
-
-$$= 1,242.19$$
+$$
+167,350.25-166,108.06 = 1,242.19
+$$
 
 Revenue still exceeds maintenance in year $12$ by about \\$1,242.19.
 
@@ -12809,11 +12159,7 @@ $$s_{C,20} = 120,000\\frac{1.03^{20}-1}{0.03}$$
 $$\\approx 3,224,444.94$$
 
 $$
-\\Pi_{20} = 3,302,850.60-3,224,444.94
-$$
-
-$$
-= 78,405.66
+\\Pi_{20} = 3,302,850.60-3,224,444.94 = 78,405.66
 $$
 
 The overview recovered $\\Pi_{12}=199,331.90$. Since $78,405.66<199,331.90$, the $20$-year profit sits below the $12$-year profit.
@@ -12896,15 +12242,7 @@ $$
 Substitute the stem numbers:
 
 $$
-s_{\\infty} = \\frac{2,400,000}{1-0.94}
-$$
-
-$$
-= \\frac{2,400,000}{0.06}
-$$
-
-$$
-= 40,000,000
+s_{\\infty} = \\frac{2,400,000}{1-0.94} = \\frac{2,400,000}{0.06} = 40,000,000
 $$
 
 That computed value matches the claim.
@@ -12944,15 +12282,13 @@ So the statement is False.`,
 
 Under the recovery scenario,
 
-$$1.06^7$$
-
-$$= 1.503630259$$
-
 $$
-s_7 = 2,400,000\\frac{1.503630259-1}{0.06}
+1.06^7 = 1.503630259
 $$
 
-$$= 2,400,000 \\times 8.393838$$
+$$
+s_7 = 2,400,000\\frac{1.503630259-1}{0.06} = 2,400,000 \\times 8.393838
+$$
 
 $$\\approx 20,145,210.36$$
 
@@ -13051,11 +12387,7 @@ $$`,
 For $k=1$, $s_n=an$. For finite $k\\ne 1$, $s_n=a\\frac{k^n-1}{k-1}$. When $|k|<1$, $s_{\\infty}=\\frac{a}{1-k}$. Terms tending to $0$ are necessary but not sufficient for convergence:
 
 $$
-s_1 = 25,000 \\times 9
-$$
-
-$$
-= 225,000
+s_1 = 25,000 \\times 9 = 225,000
 $$
 
 The computed value is approximately \\$225,000.00, which matches the claim.
@@ -13083,15 +12415,7 @@ $$
 Substitute the stem numbers:
 
 $$
-s_3 = \\frac{30,000}{1-0.92}
-$$
-
-$$
-= \\frac{30,000}{0.08}
-$$
-
-$$
-= 375,000
+s_3 = \\frac{30,000}{1-0.92} = \\frac{30,000}{0.08} = 375,000
 $$
 
 That computed value matches the claim.
@@ -13119,9 +12443,9 @@ $$a_3 = 30,000,$$
 
 $$k_3 = 0.92$$
 
-$$225,000+215,603.80+375,000$$
-
-$$= 815,603.80$$
+$$
+225,000+215,603.80+375,000 = 815,603.80
+$$
 
 The claim excludes Tranche 3 and stops at \\$440,603.80. The combined portfolio is \\$815,603.80.
 
@@ -13131,11 +12455,7 @@ So the statement is False.`,
 The fee in period $100$ is
 
 $$
-f_{100} = \\frac{1,000}{100}
-$$
-
-$$
-= 10
+f_{100} = \\frac{1,000}{100} = 10
 $$
 
 so the named term \\$10.00 is correct. The full stream is $1,000$ times the harmonic series, and $p=1$ fails the $p$-series test $p>1$. Terms tending to $0$ do not guarantee convergence.
@@ -13254,9 +12574,9 @@ So the statement is True.`,
 
 A lower rate uses a smaller three-year factor, so more must be deposited today to reach the same \\$5,000:
 
-$$(1.05)^3$$
-
-$$= 1.157625$$
+$$
+(1.05)^3 = 1.157625
+$$
 
 $$x_{5\\%} = \\frac{5,000}{1.157625}$$
 
@@ -13269,9 +12589,9 @@ So the statement is False.`,
 
 Interest is the \\$5,000 target minus the recovered deposit:
 
-$$5,000 - 4,081.49$$
-
-$$= 918.51$$
+$$
+5,000 - 4,081.49 = 918.51
+$$
 
 Compare the computed value with the claim (\\$928.51). The computed value is
 
@@ -13298,17 +12618,17 @@ $$r = 0.07,$$
 
 $$n = 3$$
 
-$$(1.07)^3$$
-
-$$= 1.225043$$
+$$
+(1.07)^3 = 1.225043
+$$
 
 $$x = \\frac{5,000}{1.225043}$$
 
 $$x \\approx 4,081.49$$
 
-$$2 \\times 4,081.49$$
-
-$$= 8,162.98$$
+$$
+2 \\times 4,081.49 = 8,162.98
+$$
 
 Compare the computed value with the claim (\\$8,162.98). The two sides agree.
 
@@ -13323,9 +12643,9 @@ $$\\approx 3,331.71$$
 
 Half of the three-year deposit is
 
-$$\\frac{4,081.49}{2}$$
-
-$$= 2,040.75$$
+$$
+\\frac{4,081.49}{2} = 2,040.75
+$$
 
 The claim needs $x_6 = 2,040.75$. The computed value is
 
@@ -13415,9 +12735,9 @@ So the statement is True.`,
 
 Interest over the first five years is the recovered five-year balance minus the \\$6,500 deposit:
 
-$$8,698.47 - 6,500$$
-
-$$= 2,198.47$$
+$$
+8,698.47 - 6,500 = 2,198.47
+$$
 
 Compare the computed value with the claim (\\$2,198.47). The two sides agree.
 
@@ -13430,9 +12750,9 @@ Using the recovered solution values $F(5)\\approx 8,698.47$ and $F(10)\\approx 1
 
 Double the five-year balance is
 
-$$2 \\times 8,698.47$$
-
-$$= 17,396.94$$
+$$
+2 \\times 8,698.47 = 17,396.94
+$$
 
 The claim needs $F(10)=17,396.94$. The computed value is
 
@@ -13461,23 +12781,23 @@ $$n = 5,$$
 
 $$n = 10$$
 
-$$(1.06)^5$$
-
-$$= 1.338226$$
+$$
+(1.06)^5 = 1.338226
+$$
 
 $$F(5) = 6,500 \\times 1.338226$$
 
 $$F(5) \\approx 8,698.47$$
 
-$$11,640.51 - 8,698.47$$
-
-$$= 2,942.04$$
+$$
+11,640.51 - 8,698.47 = 2,942.04
+$$
 
 The first five years earn
 
-$$8,698.47 - 6,500$$
-
-$$= 2,198.47$$
+$$
+8,698.47 - 6,500 = 2,198.47
+$$
 
 The claim needs $2,942.04 < 2,198.47$. We have $2,942.04 > 2,198.47$.
 
@@ -13492,9 +12812,9 @@ $$\\approx 7,535.28$$
 
 Half of the 6% five-year balance is
 
-$$\\frac{8,698.47}{2}$$
-
-$$= 4,349.24$$
+$$
+\\frac{8,698.47}{2} = 4,349.24
+$$
 
 The claim needs $F_{3\\%}(5)=4,349.24$. The computed value is
 
@@ -13600,13 +12920,13 @@ So the statement is True.`,
 
 Interest is the recovered future value minus the six deposits of \\$2,000:
 
-$$2,000 \\times 6$$
+$$
+2,000 \\times 6 = 12,000
+$$
 
-$$= 12,000$$
-
-$$13,603.84 - 12,000$$
-
-$$= 1,603.84$$
+$$
+13,603.84 - 12,000 = 1,603.84
+$$
 
 Compare the computed value with the claim (\\$1,703.84). The computed value is
 
@@ -13656,9 +12976,9 @@ $$F_6 = \\frac{2,000}{0.05}\\left[(1.05)^6-1\\right]$$
 
 $$F_6 \\approx 13,603.84$$
 
-$$13,603.84 \\times 1.5$$
-
-$$= 20,405.76$$
+$$
+13,603.84 \\times 1.5 = 20,405.76
+$$
 
 The claim is \\$21,405.76. The computed value is
 
@@ -13683,9 +13003,9 @@ $$\\approx 31,834.24$$
 
 Double the six-year future value is
 
-$$2 \\times 13,603.84$$
-
-$$= 27,207.68$$
+$$
+2 \\times 13,603.84 = 27,207.68
+$$
 
 The claim needs $F_{12} < 27,207.68$. We have $31,834.24 > 27,207.68$.
 
@@ -13751,10 +13071,8 @@ $$
 Substitute the recovered stem inputs:
 
 $$
-F_{10} = \\frac{3,500}{0.08}\\left[(1.08)^{10}-1\\right]
+F_{10} = \\frac{3,500}{0.08}\\left[(1.08)^{10}-1\\right] = 43,750 \\times 1.158925
 $$
-
-$$= 43,750 \\times 1.158925$$
 
 $$\\approx 50,702.97$$
 
@@ -13771,13 +13089,13 @@ So the statement is True.`,
 
 Interest is the recovered future value minus the ten deposits of \\$3,500:
 
-$$3,500 \\times 10$$
+$$
+3,500 \\times 10 = 35,000
+$$
 
-$$= 35,000$$
-
-$$50,702.97 - 35,000$$
-
-$$= 15,702.97$$
+$$
+50,702.97 - 35,000 = 15,702.97
+$$
 
 Compare the computed value with the claim (\\$15,702.97). The two sides agree.
 
@@ -13794,9 +13112,9 @@ $$\\approx 160,166.87$$
 
 Double the ten-year future value is
 
-$$2 \\times 50,702.97$$
-
-$$= 101,405.94$$
+$$
+2 \\times 50,702.97 = 101,405.94
+$$
 
 The claim needs $F_{20} < 101,405.94$. We have $160,166.87 > 101,405.94$.
 
@@ -13816,16 +13134,14 @@ $$r = 0.08,$$
 $$n = 10$$
 
 $$
-F_{10} = \\frac{3,500}{0.08}\\left[(1.08)^{10}-1\\right]
+F_{10} = \\frac{3,500}{0.08}\\left[(1.08)^{10}-1\\right] = 43,750 \\times 1.158925
 $$
-
-$$= 43,750 \\times 1.158925$$
 
 $$\\approx 50,702.97$$
 
-$$50,702.97 - 35,000$$
-
-$$= 15,702.97$$
+$$
+50,702.97 - 35,000 = 15,702.97
+$$
 
 The claim needs $15,702.97 > 35,000$. We have $15,702.97 < 35,000$.
 
@@ -13898,12 +13214,8 @@ $$
 Substitute the recovered stem inputs:
 
 $$
-P_{15} = \\frac{2,400}{0.045}\\left[1-\\frac{1}{(1.045)^{15}}\\right]
+P_{15} = \\frac{2,400}{0.045}\\left[1-\\frac{1}{(1.045)^{15}}\\right] = 53,333.33 \\times 0.483284 = 25,775.15
 $$
-
-$$= 53,333.33 \\times 0.483284$$
-
-$$= 25,775.15$$
 
 The claim asserts
 
@@ -13929,16 +13241,12 @@ $$r = 0.045,$$
 $$n = 15$$
 
 $$
-P_{15} = \\frac{2,400}{0.045}\\left[1-\\frac{1}{(1.045)^{15}}\\right]
+P_{15} = \\frac{2,400}{0.045}\\left[1-\\frac{1}{(1.045)^{15}}\\right] = 53,333.33 \\times 0.483284 = 25,775.15
 $$
 
-$$= 53,333.33 \\times 0.483284$$
-
-$$= 25,775.15$$
-
-$$2,400 \\times 15$$
-
-$$= 36,000$$
+$$
+2,400 \\times 15 = 36,000
+$$
 
 The overview recovered $P_{15}=25,775.15$. Then $36,000 > 25,775.15$.
 
@@ -13959,19 +13267,19 @@ $$1 - (1.045)^{-30}$$
 
 $$\\approx 0.73299998$$
 
-$$\\frac{2,400}{0.045}$$
+$$
+\\frac{2,400}{0.045} = 53333.3333
+$$
 
-$$= 53333.3333$$
-
-$$53333.3333 \\times 0.73299998$$
-
-$$= 39,091.65$$
+$$
+53333.3333 \\times 0.73299998 = 39,091.65
+$$
 
 Double the fifteen-year present value is
 
-$$2 \\times 25,775.15$$
-
-$$= 51,550.30$$
+$$
+2 \\times 25,775.15 = 51,550.30
+$$
 
 The claim needs $P_{30}=51,550.30$. The computed value is
 
@@ -13990,13 +13298,13 @@ The percentage-point gap is the effective annual rate minus the nominal quote. F
 
 The gap is the nominal withdrawal total minus the recovered deposit:
 
-$$2,400 \\times 15$$
+$$
+2,400 \\times 15 = 36,000
+$$
 
-$$= 36,000$$
-
-$$36,000 - 25,775.15$$
-
-$$= 10,224.85$$
+$$
+36,000 - 25,775.15 = 10,224.85
+$$
 
 The claim is \\$11,224.85. The computed value is
 
@@ -14025,13 +13333,13 @@ $$1 - (1.06)^{-15}$$
 
 $$\\approx 0.58273494$$
 
-$$\\frac{2,400}{0.06}$$
+$$
+\\frac{2,400}{0.06} = 40000
+$$
 
-$$= 40000$$
-
-$$40000 \\times 0.58273494$$
-
-$$= 23,309.40$$
+$$
+40000 \\times 0.58273494 = 23,309.40
+$$
 
 The claim needs $23,309.40 > 25,775.15$. We have $23,309.40 < 25,775.15$.
 
@@ -14091,12 +13399,8 @@ $$
 Substitute the recovered stem inputs:
 
 $$
-P_{20} = \\frac{5,000}{0.06}\\left[1-\\frac{1}{(1.06)^{20}}\\right]
+P_{20} = \\frac{5,000}{0.06}\\left[1-\\frac{1}{(1.06)^{20}}\\right] = 83,333.33 \\times 0.688195 = 57,349.67
 $$
-
-$$= 83,333.33 \\times 0.688195$$
-
-$$= 57,349.67$$
 
 The claim asserts
 
@@ -14119,9 +13423,9 @@ Using the recovered solution values $P=83,333.33$ and $P_{20}=57,349.67$ as inpu
 
 The extra cost of the perpetuity is
 
-$$83,333.33 - 57,349.67$$
-
-$$= 25,983.66$$
+$$
+83,333.33 - 57,349.67 = 25,983.66
+$$
 
 The claim is that same gap.
 
@@ -14134,9 +13438,9 @@ The 20-year share of the perpetuity is
 
 $$\\frac{57,349.67}{83,333.33}$$
 
-$$\\approx 0.6882$$
-
-$$= 68.82\\%$$
+$$
+\\approx 0.6882 = 68.82\\%
+$$
 
 Compare the computed value with the claim (about $72.82\\%$). The computed value is
 
@@ -14165,19 +13469,19 @@ $$1 - (1.06)^{-40}$$
 
 $$\\approx 0.90277781$$
 
-$$\\frac{5,000}{0.06}$$
+$$
+\\frac{5,000}{0.06} = 83333.3333
+$$
 
-$$= 83333.3333$$
-
-$$83333.3333 \\times 0.90277781$$
-
-$$= 75,231.50$$
+$$
+83333.3333 \\times 0.90277781 = 75,231.50
+$$
 
 $$\\frac{75,231.50}{83,333.33}$$
 
-$$\\approx 0.9028$$
-
-$$= 90.28\\%$$
+$$
+\\approx 0.9028 = 90.28\\%
+$$
 
 The claim needs a share above $95\\%$. We have $90.28\\% < 95\\%$.
 
@@ -14255,9 +13559,9 @@ $$
 
 Substitute the stem numbers:
 
-$$= 35,714.29 \\times 0.456069$$
-
-$$= 16,288.18$$
+$$
+= 35,714.29 \\times 0.456069 = 16,288.18
+$$
 
 The computed value is approximately \\$16,288.18, which matches the claim.
 
@@ -14277,16 +13581,12 @@ $$r = 0.07,$$
 $$n = 9$$
 
 $$
-P_9 = \\frac{2,500}{0.07}\\left[1-\\frac{1}{(1.07)^9}\\right]
+P_9 = \\frac{2,500}{0.07}\\left[1-\\frac{1}{(1.07)^9}\\right] = 35,714.29 \\times 0.456069 = 16,288.18
 $$
 
-$$= 35,714.29 \\times 0.456069$$
-
-$$= 16,288.18$$
-
-$$18,000 - 16,288.18$$
-
-$$= 1,711.82$$
+$$
+18,000 - 16,288.18 = 1,711.82
+$$
 
 Compare the computed value with the claim (a saving of \\$1,811.82). The computed value is
 
@@ -14315,13 +13615,13 @@ $$1 - (1.04)^{-9}$$
 
 $$\\approx 0.29741326$$
 
-$$\\frac{2,500}{0.04}$$
+$$
+\\frac{2,500}{0.04} = 62500
+$$
 
-$$= 62500$$
-
-$$62500 \\times 0.29741326$$
-
-$$= 18,588.31$$
+$$
+62500 \\times 0.29741326 = 18,588.31
+$$
 
 The claim needs $18,588.31 < 16,288.18$. We have $18,588.31 > 16,288.18$.
 
@@ -14330,15 +13630,15 @@ So the statement is False.`,
 
 Nine payments of \\$2,500 total
 
-$$2,500 \\times 9$$
-
-$$= 22,500$$
+$$
+2,500 \\times 9 = 22,500
+$$
 
 The excess over Option 1 is
 
-$$22,500 - 18,000$$
-
-$$= 4,500$$
+$$
+22,500 - 18,000 = 4,500
+$$
 
 Compare the computed value with the claim (\\$4,600). The computed value is
 
@@ -14468,9 +13768,9 @@ Using the recovered solution values $F_A=19,126.18$ and $F_B=13,856.46$ as input
 
 Strategy A finishes ahead. The gap is
 
-$$19,126.18 - 13,856.46$$
-
-$$= 5,269.72$$
+$$
+19,126.18 - 13,856.46 = 5,269.72
+$$
 
 The claim is a gap of \\$5,769.72. The computed value is
 
@@ -14487,9 +13787,9 @@ So the statement is False.`,
 
 Strategy B commits eight deposits of \\$1,400:
 
-$$1,400 \\times 8$$
-
-$$= 11,200$$
+$$
+1,400 \\times 8 = 11,200
+$$
 
 The claim needs $11,200 > 12,000$. We have $11,200 < 12,000$.
 
@@ -14499,11 +13799,7 @@ So the statement is False.`,
 Raising Strategy B to \\$1,500 a year uses the same eight-year factor at the new deposit:
 
 $$
-F_B' = \\frac{1,500}{0.06}\\left[(1.06)^8-1\\right]
-$$
-
-$$
-= 14,846.20
+F_B' = \\frac{1,500}{0.06}\\left[(1.06)^8-1\\right] = 14,846.20
 $$
 
 The claim needs $F_B' < 19,126.18$. We have $14,846.20 < 19,126.18$.
@@ -14619,9 +13915,9 @@ So the statement is True.`,
 
 The dollar gap is the due pile minus the ordinary pile:
 
-$$21,426.05 - 20,405.76$$
-
-$$= 1,020.29$$
+$$
+21,426.05 - 20,405.76 = 1,020.29
+$$
 
 Compare the computed value with the claim (\\$1,120.29). The computed value is
 
@@ -14639,26 +13935,18 @@ So the statement is False.`,
 Twelve years of due deposits give
 
 $$
-F_{\\mathrm{ordinary}}(12) = \\frac{3,000}{0.05}\\left[(1.05)^{12}-1\\right]
+F_{\\mathrm{ordinary}}(12) = \\frac{3,000}{0.05}\\left[(1.05)^{12}-1\\right] = 47,751.36
 $$
 
 $$
-= 47,751.36
-$$
-
-$$
-F_{\\mathrm{due}}(12) = 47,751.36 \\times 1.05
-$$
-
-$$
-= 50,138.93
+F_{\\mathrm{due}}(12) = 47,751.36 \\times 1.05 = 50,138.93
 $$
 
 Double the six-year due value is
 
-$$2 \\times 21,426.05$$
-
-$$= 42,852.10$$
+$$
+2 \\times 21,426.05 = 42,852.10
+$$
 
 The claim needs $F_{\\mathrm{due}}(12)=42,852.10$. The computed value is
 
@@ -14682,11 +13970,7 @@ $$
 Substitute the stem numbers:
 
 $$
-F_{\\mathrm{due}} = 20,405.76 \\times 1.05
-$$
-
-$$
-= 21,426.05
+F_{\\mathrm{due}} = 20,405.76 \\times 1.05 = 21,426.05
 $$
 
 The computed figure matches the claim.
@@ -14792,9 +14076,9 @@ So the statement is True.`,
 
 The dollar gap is the due present value minus the ordinary present value:
 
-$$107,162.61 - 101,096.80$$
-
-$$= 6,065.81$$
+$$
+107,162.61 - 101,096.80 = 6,065.81
+$$
 
 Compare the computed value with the claim (\\$7,065.81). The computed value is
 
@@ -14823,27 +14107,23 @@ $$1 - (1.06)^{-10}$$
 
 $$\\approx 0.44160522$$
 
-$$\\frac{24,000}{0.06}$$
-
-$$= 400000$$
-
-$$400000 \\times 0.44160522$$
-
-$$= 176,642.00$$
-
 $$
-P_{\\mathrm{due}}(10) = 176,642.00 \\times 1.06
+\\frac{24,000}{0.06} = 400000
 $$
 
 $$
-= 187,240.52
+400000 \\times 0.44160522 = 176,642.00
+$$
+
+$$
+P_{\\mathrm{due}}(10) = 176,642.00 \\times 1.06 = 187,240.52
 $$
 
 Double the five-year due value is
 
-$$2 \\times 107,162.61$$
-
-$$= 214,325.22$$
+$$
+2 \\times 107,162.61 = 214,325.22
+$$
 
 The claim needs $P_{\\mathrm{due}}(10)=214,325.22$. The computed value is
 
@@ -14872,17 +14152,17 @@ $$1 - (1.06)^{-4}$$
 
 $$\\approx 0.20790634$$
 
-$$\\frac{24,000}{0.06}$$
+$$
+\\frac{24,000}{0.06} = 400000
+$$
 
-$$= 400000$$
+$$
+400000 \\times 0.20790634 = 83,162.40
+$$
 
-$$400000 \\times 0.20790634$$
-
-$$= 83,162.40$$
-
-$$24,000 + 83,162.40$$
-
-$$= 107,162.40$$
+$$
+24,000 + 83,162.40 = 107,162.40
+$$
 
 That matches the recovered $P_{\\mathrm{due}}=107,162.61$ within rounding.
 
@@ -14954,11 +14234,7 @@ $$
 Substitute the stem numbers:
 
 $$
-V = \\frac{10,000}{0.06}
-$$
-
-$$
-= 166,666.67
+V = \\frac{10,000}{0.06} = 166,666.67
 $$
 
 The computed value is approximately \\$166,666.67, which matches the claim.
@@ -14993,9 +14269,9 @@ So the statement is True.`,
 
 If the first payment begins at the end of year 1, the perpetuity is worth $\\frac{a}{r}$ today:
 
-$$\\frac{10,000}{0.06}$$
-
-$$= 166,666.67$$
+$$
+\\frac{10,000}{0.06} = 166,666.67
+$$
 
 The claim needs $166,666.67 < 132,015.61$. We have $166,666.67 > 132,015.61$.
 
@@ -15010,9 +14286,9 @@ $$\\approx 104,568.80$$
 
 Half of the original deferred value is
 
-$$\\frac{132,015.61}{2}$$
-
-$$= 66,007.81$$
+$$
+\\frac{132,015.61}{2} = 66,007.81
+$$
 
 The claim needs $PV_0' < 66,007.81$. We have $104,568.80 > 66,007.81$.
 
@@ -15147,11 +14423,7 @@ So the statement is False.`,
 At a 4% required return,
 
 $$
-P' = \\frac{4.25}{0.04}
-$$
-
-$$
-= 106.25
+P' = \\frac{4.25}{0.04} = 106.25
 $$
 
 Compare the computed value with the claim (\\$116.25). The computed value is
@@ -15169,12 +14441,8 @@ So the statement is False.`,
 
 The move from 7% to 4% raises the recovered $P\\approx 60.714286$ to $106.25$:
 
-$$\\frac{106.25-60.714286}{60.714286}$$
-
-$$= 0.75$$
-
 $$
-= 75\\%
+\\frac{106.25-60.714286}{60.714286} = 0.75 = 75\\%
 $$
 
 The claim needs an increase of more than $75\\%$. We have exactly $75\\%$.
@@ -15184,9 +14452,9 @@ So the statement is False.`,
 
 A 20% dividend cut leaves
 
-$$a' = 4.25\\times 0.80$$
-
-$$= 3.40$$
+$$
+a' = 4.25\\times 0.80 = 3.40
+$$
 
 . At the same 7%,
 
@@ -15294,16 +14562,12 @@ So the statement is True.`,
 At 6% the perpetuity falls and the renovation is unchanged:
 
 $$
-P' = \\frac{15,000}{0.06}
+P' = \\frac{15,000}{0.06} = 250,000
 $$
 
 $$
-= 250,000
+50,000 + 250,000 = 300,000
 $$
-
-$$50,000 + 250,000$$
-
-$$= 300,000$$
 
 Compare the computed value with the claim (\\$300,000.00). The two sides agree.
 
@@ -15312,15 +14576,15 @@ So the statement is True.`,
 
 The rate increase cuts the combined total from \\$383,333.33 to \\$300,000:
 
-$$383,333.33 - 300,000$$
-
-$$= 83,333.33$$
+$$
+383,333.33 - 300,000 = 83,333.33
+$$
 
 $$\\frac{83,333.33}{383,333.33}$$
 
-$$\\approx 0.2174$$
-
-$$= 21.74\\%$$
+$$
+\\approx 0.2174 = 21.74\\%
+$$
 
 The claim needs more than $25\\%$. We have $21.74\\% < 25\\%$.
 
@@ -15329,9 +14593,9 @@ So the statement is False.`,
 
 At 6% the perpetuity alone is \\$250,000. Half of the original combined 4.5% total is
 
-$$\\frac{383,333.33}{2}$$
-
-$$= 191,666.67$$
+$$
+\\frac{383,333.33}{2} = 191,666.67
+$$
 
 The claim needs $250,000 < 191,666.67$. We have $250,000 > 191,666.67$.
 
@@ -15412,15 +14676,7 @@ So the statement is True.`,
 With no growth the same first cash flow is a level perpetuity at 8%:
 
 $$
-P_{g = 0}
-$$
-
-$$
-= \\frac{24,000}{0.08}
-$$
-
-$$
-= 300,000
+P_{g = 0} = \\frac{24,000}{0.08} = 300,000
 $$
 
 The claim needs $300,000 > 436,363.64$. We have $300,000 < 436,363.64$.
@@ -15431,18 +14687,14 @@ So the statement is False.`,
 At 4% growth,
 
 $$
-P' = \\frac{24,000}{0.08-0.04}
-$$
-
-$$
-= 600,000
+P' = \\frac{24,000}{0.08-0.04} = 600,000
 $$
 
 Double the original fair value is
 
-$$2 \\times 436,363.64$$
-
-$$= 872,727.28$$
+$$
+2 \\times 436,363.64 = 872,727.28
+$$
 
 The claim needs $P'>872,727.28$. We have $600,000 < 872,727.28$.
 
@@ -15452,15 +14704,7 @@ So the statement is False.`,
 At a 6% required return,
 
 $$
-P'' = \\frac{24,000}{0.06-0.025}
-$$
-
-$$
-= \\frac{24,000}{0.035}
-$$
-
-$$
-= 685,714.29
+P'' = \\frac{24,000}{0.06-0.025} = \\frac{24,000}{0.035} = 685,714.29
 $$
 
 Compare the computed value with the claim (\\$715,714.29). The computed value is
@@ -15566,11 +14810,7 @@ $$
 Substitute the stem numbers:
 
 $$
-D_1 = 3.00 \\times 1.03
-$$
-
-$$
-= 3.09
+D_1 = 3.00 \\times 1.03 = 3.09
 $$
 
 The computed value is approximately \\$3.09, which matches the claim.
@@ -15605,19 +14845,15 @@ So the statement is False.`,
 
 Using the just-paid dividend by mistake gives
 
-$$\\frac{3.00}{0.09-0.03}$$
-
-$$= \\frac{3.00}{0.06}$$
-
 $$
-= 50.00
+\\frac{3.00}{0.09-0.03} = \\frac{3.00}{0.06} = 50.00
 $$
 
 The understatement is
 
-$$51.50 - 50.00$$
-
-$$= 1.50$$
+$$
+51.50 - 50.00 = 1.50
+$$
 
 Compare the computed value with the claim (\\$2.50). The computed value is
 
@@ -15634,22 +14870,14 @@ So the statement is False.`,
 
 At 5% growth, next year's dividend is
 
-$$D_1' = 3.00\\times 1.05$$
-
-$$= 3.15$$
+$$
+D_1' = 3.00\\times 1.05 = 3.15
+$$
 
 , so
 
 $$
-P' = \\frac{3.15}{0.09-0.05}
-$$
-
-$$
-= \\frac{3.15}{0.04}
-$$
-
-$$
-= 78.75
+P' = \\frac{3.15}{0.09-0.05} = \\frac{3.15}{0.04} = 78.75
 $$
 
 Double the original \\$51.50 is $103.00$. The claim needs $P'>103.00$. We have $78.75 < 103.00$.
@@ -15789,9 +15017,9 @@ $$P_2 = \\frac{14,000}{0.10-0.04}$$
 
 $$P_2 = \\frac{14,000}{0.06}$$
 
-$$233,333.33 - 170,000$$
-
-$$= 63,333.33$$
+$$
+233,333.33 - 170,000 = 63,333.33
+$$
 
 The claim needs more than \\$60,000. We have $63,333.33 > 60,000$.
 
@@ -15824,10 +15052,8 @@ So the statement is False.`,
 At 1% growth, Deal 2 is worth
 
 $$
-P_2' = \\frac{14,000}{0.10-0.01}
+P_2' = \\frac{14,000}{0.10-0.01} = \\frac{14,000}{0.09}
 $$
-
-$$= \\frac{14,000}{0.09}$$
 
 $$\\approx 155,555.56$$
 
@@ -15953,9 +15179,9 @@ The percentage-point gap is the effective annual rate minus the nominal quote. F
 
 The gap is the annual-compounding present value minus the recovered continuous present value:
 
-$$131,495.10 - 129,213.75$$
-
-$$= 2,281.35$$
+$$
+131,495.10 - 129,213.75 = 2,281.35
+$$
 
 The claim is \\$4,280.35. The computed value is
 
@@ -15973,11 +15199,7 @@ So the statement is False.`,
 Six years of continuous discounting gives
 
 $$
--rt = -0.055 \\times 6
-$$
-
-$$
-= -0.33
+-rt = -0.055 \\times 6 = -0.33
 $$
 
 $$S_0' = 250,000 e^{-0.33}$$
@@ -15986,9 +15208,9 @@ $$\\approx 179,731.00$$
 
 Half of the 12-year present value is
 
-$$\\frac{129,213.75}{2}$$
-
-$$= 64,606.88$$
+$$
+\\frac{129,213.75}{2} = 64,606.88
+$$
 
 The claim needs $S_0' < 64,606.88$. We have $179,731.00 > 64,606.88$.
 
@@ -16001,12 +15223,8 @@ $$e^{-0.055}$$
 
 $$\\approx 0.9465$$
 
-$$1-0.9465$$
-
-$$= 0.0535$$
-
 $$
-= 5.35\\%
+1-0.9465 = 0.0535 = 5.35\\%
 $$
 
 Compare the computed value with the claim (that same factor and that same one-year loss). The two sides agree.
@@ -16124,9 +15342,9 @@ So the statement is True.`,
 
 The lump-sum lead is
 
-$$131,629.13 - 96,757.60$$
-
-$$= 34,871.53$$
+$$
+131,629.13 - 96,757.60 = 34,871.53
+$$
 
 The claim needs more than \\$30,000. We have $34,871.53 > 30,000$.
 
@@ -16255,11 +15473,7 @@ So the statement is True.`,
 The due future value scales the ordinary future value by one extra period:
 
 $$
-F_{\\mathrm{due}} = \\frac{4,200}{0.08}\\left[(1.08)^5-1\\right](1.08)
-$$
-
-$$
-= 26,610.90
+F_{\\mathrm{due}} = \\frac{4,200}{0.08}\\left[(1.08)^5-1\\right](1.08) = 26,610.90
 $$
 
 Compare the computed value with the claim (\\$27,610.90). The computed value is
@@ -16318,9 +15532,9 @@ Using the recovered solution values $P_{\\mathrm{perp}}=37,500$ and $P_{\\mathrm
 
 Double the lease present value is
 
-$$2 \\times 18,110.94$$
-
-$$= 36,221.88$$
+$$
+2 \\times 18,110.94 = 36,221.88
+$$
 
 The claim needs $37,500 < 36,221.88$. We have $37,500 > 36,221.88$.
 
@@ -16526,17 +15740,17 @@ So the statement is True.`,
 
 Present-day resources are Component 1's opening \\$150,000, plus the recovered $x$, $P_{12}$, and $P$:
 
-$$150,000 + 56,396.85$$
+$$
+150,000 + 56,396.85 = 206,396.85
+$$
 
-$$= 206,396.85$$
+$$
+206,396.85 + 79,429.40 = 285,826.25
+$$
 
-$$206,396.85 + 79,429.40$$
-
-$$= 285,826.25$$
-
-$$285,826.25 + 100,000$$
-
-$$= 385,826.25$$
+$$
+285,826.25 + 100,000 = 385,826.25
+$$
 
 The claim needs a total above \\$500,000. We have $385,826.25 < 500,000$.
 
@@ -16667,20 +15881,16 @@ $$a = \\frac{7,200}{0.493369}$$
 
 $$a \\approx 14,593.54$$
 
-$$0.12 \\times 60,000$$
-
-$$= 7,200$$
-
-$$14,593.54 - 7,200$$
-
-$$= 7,393.54$$
-
 $$
-I_1 = 60,000 \\times 0.12
+0.12 \\times 60,000 = 7,200
 $$
 
 $$
-= 7,200
+14,593.54 - 7,200 = 7,393.54
+$$
+
+$$
+I_1 = 60,000 \\times 0.12 = 7,200
 $$
 
 The overview recovered that same first-year interest figure. The claim is \\$7,200.00.
@@ -16704,19 +15914,19 @@ $$a = \\frac{7,200}{0.493369}$$
 
 $$a \\approx 14,593.54$$
 
-$$0.12 \\times 60,000$$
+$$
+0.12 \\times 60,000 = 7,200
+$$
 
-$$= 7,200$$
-
-$$14,593.54 - 7,200$$
-
-$$= 7,393.54$$
+$$
+14,593.54 - 7,200 = 7,393.54
+$$
 
 The overview recovered first-year principal as $7,393.54$. Half the payment is
 
-$$\\frac{14,593.54}{2}$$
-
-$$= 7,296.77$$
+$$
+\\frac{14,593.54}{2} = 7,296.77
+$$
 
 Then $7,393.54 > 7,296.77$.
 
@@ -16725,19 +15935,19 @@ So the statement is True.`,
 
 The overview recovered the balance after payment 1 as $52,606.46$. Year-2 interest and principal are
 
-$$0.12 \\times 52,606.46$$
+$$
+0.12 \\times 52,606.46 = 6,312.77
+$$
 
-$$= 6,312.77$$
-
-$$14,593.54 - 6,312.77$$
-
-$$= 8,280.77$$
+$$
+14,593.54 - 6,312.77 = 8,280.77
+$$
 
 The balance after payment 2 is
 
-$$52,606.46 - 8,280.77$$
-
-$$= 44,325.69$$
+$$
+52,606.46 - 8,280.77 = 44,325.69
+$$
 
 The claim is \\$45,000.00. We have about \\$44,325.69.
 
@@ -16855,9 +16065,9 @@ So the statement is False.`,
 
 Total interest is total paid minus principal. Using the $48$-payment outlay about \\$28,667.57,
 
-$$28,667.57 - 24,000$$
-
-$$= 4,667.57$$
+$$
+28,667.57 - 24,000 = 4,667.57
+$$
 
 Compare the computed value with the claim (\\$4,667.57). The two sides agree.
 
@@ -16867,11 +16077,7 @@ So the statement is True.`,
 Four equal annual instalments at the same nominal $9\\%$ use $r=0.09$ and $n=4$:
 
 $$
-a = \\frac{0.09 \\times 24,000}{1-(1.09)^{-4}}
-$$
-
-$$
-= \\frac{2,160}{0.291676}
+a = \\frac{0.09 \\times 24,000}{1-(1.09)^{-4}} = \\frac{2,160}{0.291676}
 $$
 
 $$a \\approx 7,408.05$$
@@ -17016,13 +16222,13 @@ $$a = \\frac{4,500}{0.379079}$$
 
 $$a \\approx 11,870.89$$
 
-$$0.10 \\times 20,602.37$$
+$$
+0.10 \\times 20,602.37 = 2,060.24
+$$
 
-$$= 2,060.24$$
-
-$$11,870.89 - 2,060.24$$
-
-$$= 9,810.65$$
+$$
+11,870.89 - 2,060.24 = 9,810.65
+$$
 
 Then $2,060.24 < 9,810.65$.
 
@@ -17280,9 +16486,9 @@ So the statement is True.`,
 
 The first four payments are the committed \\$10,000 each:
 
-$$4 \\times 10,000$$
-
-$$= 40,000$$
+$$
+4 \\times 10,000 = 40,000
+$$
 
 Compare the computed value with the claim (that same total). The two sides agree.
 
@@ -17300,10 +16506,8 @@ $$r = 0.13,$$
 $$a = 10,000$$
 
 $$
-\\frac{\\ln(10,000)-\\ln(10,000-0.13 \\times 35,000)}{\\ln(1.13)}
+\\frac{\\ln(10,000)-\\ln(10,000-0.13 \\times 35,000)}{\\ln(1.13)} = \\frac{\\ln(10,000)-\\ln(5,450)}{\\ln(1.13)}
 $$
-
-$$= \\frac{\\ln(10,000)-\\ln(5,450)}{\\ln(1.13)}$$
 
 $$
 \\frac{\\ln(10,000)-\\ln(10,000-0.13 \\times 35,000)}{\\ln(1.13)}
@@ -17315,9 +16519,9 @@ $$\\frac{10,000}{0.13}\\bigl[(1.13)^{4}-1\\bigr]$$
 
 $$\\approx 48,497.97$$
 
-$$8,568.61 \\times 1.13$$
-
-$$= 9,682.53$$
+$$
+8,568.61 \\times 1.13 = 9,682.53
+$$
 
 The overview recovered the fifth and final payment as \\$9,682.53. The claim is that same figure.
 
@@ -17326,9 +16530,9 @@ So the statement is True.`,
 
 Total paid is four full payments plus the recovered final instalment:
 
-$$40,000 + 9,682.53$$
-
-$$= 49,682.53$$
+$$
+40,000 + 9,682.53 = 49,682.53
+$$
 
 Compare the computed value with the claim (\\$49,682.53). The two sides agree.
 
@@ -17337,9 +16541,9 @@ So the statement is True.`,
 
 Total interest is total paid minus principal:
 
-$$49,682.53 - 35,000$$
-
-$$= 14,682.53$$
+$$
+49,682.53 - 35,000 = 14,682.53
+$$
 
 Then $14,682.53 < 35,000$.
 
@@ -17574,11 +16778,7 @@ a = 250(4 + 1.5 \\times 0.08)
 $$
 
 $$
-a = 250 \\times 4.12
-$$
-
-$$
-= 1,030
+a = 250 \\times 4.12 = 1,030
 $$
 
 The claim is \\$1,100.00. We have \\$1,030, so the figures do not agree.
@@ -17719,10 +16919,8 @@ $$
 Substitute the stem numbers:
 
 $$
-a = \\frac{0.005 \\times 200,000}{1-(1.005)^{-240}}
+a = \\frac{0.005 \\times 200,000}{1-(1.005)^{-240}} = \\frac{1,000}{1-(1.005)^{-240}}
 $$
-
-$$= \\frac{1,000}{1-(1.005)^{-240}}$$
 
 $$\\approx 1,432.86$$
 
@@ -17748,16 +16946,12 @@ So the statement is True.`,
 
 The overview recovered $B_{60} \\approx 169,799.20$. Principal repaid after five years is
 
-$$200,000 - 169,799.20$$
-
-$$= 30,200.80$$
-
-$$\\frac{30,200.80}{200,000}$$
-
-$$= 0.1510$$
+$$
+200,000 - 169,799.20 = 30,200.80
+$$
 
 $$
-= 15.10\\%
+\\frac{30,200.80}{200,000} = 0.1510 = 15.10\\%
 $$
 
 The claim needs more than $25\\%$. We have about $15.10\\%$.
@@ -17787,9 +16981,9 @@ $$
 a = \\frac{0.005 \\times 200,000}{1-(1.005)^{-240}}
 $$
 
-$$200,000 - 169,799.20$$
-
-$$= 30,200.80$$
+$$
+200,000 - 169,799.20 = 30,200.80
+$$
 
 Sixty payments total $60 \\times 1,432.86 \\approx 85,971.60$, so interest is
 
@@ -17935,15 +17129,15 @@ So the statement is True.`,
 
 Eight full payments plus the recovered final instalment total
 
-$$8 \\times 25,000 + 13,100.16$$
-
-$$= 213,100.16$$
+$$
+8 \\times 25,000 + 13,100.16 = 213,100.16
+$$
 
 Interest is that total minus principal:
 
-$$213,100.16 - 120,000$$
-
-$$= 93,100.16$$
+$$
+213,100.16 - 120,000 = 93,100.16
+$$
 
 The claim is \\$105,000.00. We have about \\$93,100.16.
 
@@ -17952,9 +17146,9 @@ So the statement is False.`,
 
 Total paid is eight full payments plus the recovered final instalment:
 
-$$200,000 + 13,100.16$$
-
-$$= 213,100.16$$
+$$
+200,000 + 13,100.16 = 213,100.16
+$$
 
 Compare the computed value with the claim (\\$210,000.00). We have about \\$213,100.16. The two sides do not agree.
 
@@ -17963,9 +17157,9 @@ So the statement is False.`,
 
 Nine full payments would be \\$225,000. Against the recovered total \\$213,100.16,
 
-$$225,000 - 213,100.16$$
-
-$$= 11,899.84$$
+$$
+225,000 - 213,100.16 = 11,899.84
+$$
 
 Then $11,899.84 > 10,000$.
 
@@ -18098,9 +17292,9 @@ So the statement is True.`,
 
 Three due loan payments total
 
-$$3 \\times 16,176.12$$
-
-$$= 48,528.36$$
+$$
+3 \\times 16,176.12 = 48,528.36
+$$
 
 The reserve after three years is about \\$4,066.48. Then $48,528.36 > 4,066.48$.
 
@@ -18667,15 +17861,7 @@ $$
 Substitute the stem numbers:
 
 $$
-r = \\frac{9,600}{8,000} - 1
-$$
-
-$$
-= 0.20
-$$
-
-$$
-= 20\\%
+r = \\frac{9,600}{8,000} - 1 = 0.20 = 20\\%
 $$
 
 The computed value is approximately 20%, which matches the claim.
@@ -18686,15 +17872,7 @@ So the statement is True.`,
 Net present value is the discounted cash inflow total minus the initial outlay. The decision rule accepts the project when that difference is positive. Fifteen percent sits below the recovered $20\\%$ IRR. NPV at $15\\%$ is
 
 $$
-A = -8,000 + \\frac{9,600}{1.15}
-$$
-
-$$
-= -8,000 + 8,347.83
-$$
-
-$$
-= 347.83
+A = -8,000 + \\frac{9,600}{1.15} = -8,000 + 8,347.83 = 347.83
 $$
 
 Then $347.83 > 0$.
@@ -18705,15 +17883,7 @@ So the statement is True.`,
 Twenty-five percent sits above the recovered $20\\%$ IRR. NPV at $25\\%$ is
 
 $$
-A = -8,000 + \\frac{9,600}{1.25}
-$$
-
-$$
-= -8,000 + 7,680
-$$
-
-$$
-= -320
+A = -8,000 + \\frac{9,600}{1.25} = -8,000 + 7,680 = -320
 $$
 
 Then $-320 < 0$. The claim needs a positive NPV.
@@ -18724,15 +17894,7 @@ So the statement is False.`,
 With payoff \\$10,000 on the same \\$8,000 outlay, the one-year rate is
 
 $$
-r = \\frac{10,000}{8,000} - 1
-$$
-
-$$
-= 0.25
-$$
-
-$$
-= 25\\%
+r = \\frac{10,000}{8,000} - 1 = 0.25 = 25\\%
 $$
 
 Then $25\\% > 24\\%$.
@@ -18828,11 +17990,9 @@ So the statement is True.`,
 
 Eight percent sits below the recovered $10.92\\%$ IRR. NPV at $8\\%$ is
 
-$$-12,000 + \\frac{7,000}{1.08} + \\frac{7,000}{1.1664}$$
-
-$$= -12,000 + 6,481.48 + 6,001.37$$
-
-$$= 482.85$$
+$$
+-12,000 + \\frac{7,000}{1.08} + \\frac{7,000}{1.1664} = -12,000 + 6,481.48 + 6,001.37 = 482.85
+$$
 
 Then $482.85 > 0$.
 
@@ -18841,11 +18001,9 @@ So the statement is True.`,
 
 Twelve percent sits above the recovered $10.92\\%$ IRR. NPV at $12\\%$ is
 
-$$-12,000 + \\frac{7,000}{1.12} + \\frac{7,000}{1.2544}$$
-
-$$= -12,000 + 6,250.00 + 5,580.36$$
-
-$$= -169.64$$
+$$
+-12,000 + \\frac{7,000}{1.12} + \\frac{7,000}{1.2544} = -12,000 + 6,250.00 + 5,580.36 = -169.64
+$$
 
 Then $-169.64 < 0$. The claim needs a positive NPV.
 
@@ -18971,11 +18129,9 @@ So the statement is True.`,
 
 Ten percent sits below the recovered $11.98\\%$ IRR. NPV at $10\\%$ is
 
-$$-20,000 + \\frac{9,000}{1.10} + \\frac{15,000}{1.21}$$
-
-$$= -20,000 + 8,181.82 + 12,396.69$$
-
-$$= 578.51$$
+$$
+-20,000 + \\frac{9,000}{1.10} + \\frac{15,000}{1.21} = -20,000 + 8,181.82 + 12,396.69 = 578.51
+$$
 
 Then $578.51 > 0$.
 
@@ -18984,11 +18140,9 @@ So the statement is True.`,
 
 Fourteen percent sits above the recovered $11.98\\%$ IRR. NPV at $14\\%$ is
 
-$$-20,000 + \\frac{9,000}{1.14} + \\frac{15,000}{1.2996}$$
-
-$$= -20,000 + 7,894.74 + 11,542.01$$
-
-$$= -563.25$$
+$$
+-20,000 + \\frac{9,000}{1.14} + \\frac{15,000}{1.2996} = -20,000 + 7,894.74 + 11,542.01 = -563.25
+$$
 
 Then $-563.25 < 0$. The claim needs a positive NPV.
 
@@ -19014,9 +18168,9 @@ So the statement is True.`,
 
 The undiscounted sum of the three cash flows is
 
-$$-20,000 + 9,000 + 15,000$$
-
-$$= 4,000$$
+$$
+-20,000 + 9,000 + 15,000 = 4,000
+$$
 
 Compare the computed value with the claim (\\$4,000). The two sides agree.
 
@@ -19137,19 +18291,11 @@ So the statement is False.`,
 Eleven percent sits below both recovered IRRs. NPV at $11\\%$ is
 
 $$
-NPV_X = -15,000 + \\frac{17,250}{1.11}
+NPV_X = -15,000 + \\frac{17,250}{1.11} = 540.54
 $$
 
 $$
-= 540.54
-$$
-
-$$
-NPV_Y = -22,000 + \\frac{24,750}{1.11}
-$$
-
-$$
-= 297.30
+NPV_Y = -22,000 + \\frac{24,750}{1.11} = 297.30
 $$
 
 Both are positive. The claim needs Y negative.
@@ -19161,10 +18307,8 @@ With Y's payoff raised to \\$25,000,
 
 $$r_Y = \\frac{25,000}{22,000} - 1$$
 
-$$\\approx 0.1364$$
-
 $$
-= 13.64\\%
+\\approx 0.1364 = 13.64\\%
 $$
 
 Then $13.64\\% < 15\\%$.
@@ -19422,11 +18566,9 @@ So the statement is False.`,
 
 Nine percent sits below the recovered $10.78\\%$ IRR. NPV at $9\\%$ is
 
-$$-34,000 + \\frac{16,000}{1.09} + \\frac{24,000}{1.1881}$$
-
-$$= -34,000 + 14,678.90 + 20,200.32$$
-
-$$= 879.22$$
+$$
+-34,000 + \\frac{16,000}{1.09} + \\frac{24,000}{1.1881} = -34,000 + 14,678.90 + 20,200.32 = 879.22
+$$
 
 Then $879.22 > 0$. The claim needs a negative NPV.
 
@@ -19435,11 +18577,9 @@ So the statement is False.`,
 
 Thirteen percent sits above the recovered $10.78\\%$ IRR. NPV at $13\\%$ is
 
-$$-34,000 + \\frac{16,000}{1.13} + \\frac{24,000}{1.2769}$$
-
-$$= -34,000 + 14,159.29 + 18,795.52$$
-
-$$= -1,045.19$$
+$$
+-34,000 + \\frac{16,000}{1.13} + \\frac{24,000}{1.2769} = -34,000 + 14,159.29 + 18,795.52 = -1,045.19
+$$
 
 Then $-1,045.19 < 0$.
 
@@ -19468,15 +18608,7 @@ A smaller outlay on the same returns raises the internal rate. With $a_0 = -30,0
 $$12s^{2} + 8s - 15 = 0$$
 
 $$
-s = \\frac{-8 + 28}{24}
-$$
-
-$$
-= \\frac{5}{6}, \\qquad r
-$$
-
-$$
-= 20\\%
+s = \\frac{-8 + 28}{24} = \\frac{5}{6}, \\qquad r = 20\\%
 $$
 
 Then $20\\% > 10.78\\%$. The IRR rises, it does not fall.
@@ -19569,11 +18701,9 @@ So the statement is True.`,
 
 Ten percent sits below the recovered $15\\%$ IRR. NPV at $10\\%$ is
 
-$$-40,000 + \\frac{22,000}{1.10} + \\frac{27,600}{1.21}$$
-
-$$= -40,000 + 20,000.00 + 22,809.92$$
-
-$$= 2,809.92$$
+$$
+-40,000 + \\frac{22,000}{1.10} + \\frac{27,600}{1.21} = -40,000 + 20,000.00 + 22,809.92 = 2,809.92
+$$
 
 Then $2,809.92 > 0$.
 
@@ -19582,11 +18712,9 @@ So the statement is True.`,
 
 Twenty percent sits above the recovered $15\\%$ IRR. NPV at $20\\%$ is
 
-$$-40,000 + \\frac{22,000}{1.20} + \\frac{27,600}{1.44}$$
-
-$$= -40,000 + 18,333.33 + 19,166.67$$
-
-$$= -2,500$$
+$$
+-40,000 + \\frac{22,000}{1.20} + \\frac{27,600}{1.44} = -40,000 + 18,333.33 + 19,166.67 = -2,500
+$$
 
 Then $-2,500 < 0$.
 
@@ -19595,9 +18723,9 @@ So the statement is True.`,
 
 The undiscounted sum of the three cash flows is
 
-$$-40,000 + 22,000 + 27,600$$
-
-$$= 9,600$$
+$$
+-40,000 + 22,000 + 27,600 = 9,600
+$$
 
 Compare the computed value with the claim (\\$9,600). The two sides agree.
 
@@ -19617,12 +18745,8 @@ $$a_2 = 27,600,$$
 $$n = 2$$
 
 $$
-A = -40,000 + \\frac{22,000}{1.15} + \\frac{27,600}{1.3225}
+A = -40,000 + \\frac{22,000}{1.15} + \\frac{27,600}{1.3225} = -40,000 + 19,130.43 + 20,869.57 = 0
 $$
-
-$$= -40,000 + 19,130.43 + 20,869.57$$
-
-$$= 0$$
 
 So the statement is True.`,
     ],
@@ -19694,15 +18818,13 @@ NPV subtracts the upfront outlay from the discounted inflow total.
 
 Net present value at the named rate uses the overview's cash-flow formula. At $9\\%$:
 
-$$(1.09)^2$$
+$$
+(1.09)^2 = 1.1881
+$$
 
-$$= 1.1881$$
-
-$$NPV = -65,000 + \\frac{34,000}{1.09} + \\frac{42,000}{1.1881}$$
-
-$$= -65,000 + 31,192.66 + 35,350.56$$
-
-$$= 1,543.22$$
+$$
+NPV = -65,000 + \\frac{34,000}{1.09} + \\frac{42,000}{1.1881} = -65,000 + 31,192.66 + 35,350.56 = 1,543.22
+$$
 
 The claim needs $NPV > 0$. We have $1,543.22 > 0$.
 
@@ -19713,15 +18835,13 @@ Form NPV as discounted inflows minus the initial cost.
 
 Net present value at the named rate uses the overview's cash-flow formula. At $12\\%$:
 
-$$(1.12)^2$$
+$$
+(1.12)^2 = 1.2544
+$$
 
-$$= 1.2544$$
-
-$$NPV = -65,000 + \\frac{34,000}{1.12} + \\frac{42,000}{1.2544}$$
-
-$$= -65,000 + 30,357.14 + 33,482.14$$
-
-$$= -1,160.72$$
+$$
+NPV = -65,000 + \\frac{34,000}{1.12} + \\frac{42,000}{1.2544} = -65,000 + 30,357.14 + 33,482.14 = -1,160.72
+$$
 
 The claim needs $NPV > 0$. We have $-1,160.72 < 0$.
 
@@ -19738,12 +18858,8 @@ $$84s^2 + 68s - 65 = 0$$
 
 The discriminant is
 
-$$68^2 + 4 \\cdot 84 \\cdot 65$$
-
-$$= 4,624 + 21,840$$
-
 $$
-= 26,464
+68^2 + 4 \\cdot 84 \\cdot 65 = 4,624 + 21,840 = 26,464
 $$
 
 $$\\sqrt{26,464} \\approx 162.678$$
@@ -19760,9 +18876,9 @@ $$\\approx 77.4\\%$$
 
 The overview recovered the original rate $10.69\\%$. Twice that rate is
 
-$$2 \\times 10.69\\%$$
-
-$$= 21.38\\%$$
+$$
+2 \\times 10.69\\% = 21.38\\%
+$$
 
 Since $77.4\\% > 21.38\\%$, the new internal rate more than doubles.
 
@@ -19775,33 +18891,19 @@ $$42s^2 + 34s - 60 = 0$$
 
 The discriminant is
 
-$$34^2 + 4 \\cdot 42 \\cdot 60$$
-
-$$= 1,156 + 10,080$$
-
 $$
-= 11,236
+34^2 + 4 \\cdot 42 \\cdot 60 = 1,156 + 10,080 = 11,236
 $$
 
 $$\\sqrt{11,236} = 106$$
 
 $$
-s = \\frac{-34 + 106}{84}
+s = \\frac{-34 + 106}{84} = \\frac{72}{84} = \\frac{6}{7}
 $$
 
 $$
-= \\frac{72}{84}
+r = \\frac{7}{6} - 1 = \\frac{1}{6}
 $$
-
-$$
-= \\frac{6}{7}
-$$
-
-$$
-r = \\frac{7}{6} - 1
-$$
-
-$$= \\frac{1}{6}$$
 
 $$\\approx 16.67\\%$$
 
@@ -19899,15 +19001,7 @@ $$
 Substitute the stem numbers:
 
 $$
-r = \\frac{6,000}{50,000}
-$$
-
-$$
-= 0.12
-$$
-
-$$
-= 12\\%
+r = \\frac{6,000}{50,000} = 0.12 = 12\\%
 $$
 
 The computed value is approximately 12%, which matches the claim.
@@ -19925,10 +19019,8 @@ Substitute the stem numbers:
 
 $$r = \\frac{1}{2.4297} - 1$$
 
-$$\\approx -0.5884$$
-
 $$
-= -58.84\\%
+\\approx -0.5884 = -58.84\\%
 $$
 
 The computed value is approximately -58.84%, which matches the claim.
@@ -19946,10 +19038,8 @@ Substitute the stem numbers:
 
 $$r = \\frac{1}{2.4297} - 1$$
 
-$$\\approx -0.5884$$
-
 $$
-= -58.84\\%
+\\approx -0.5884 = -58.84\\%
 $$
 
 The computed figure matches the claim.
@@ -19959,9 +19049,9 @@ So the statement is True.`,
 
 The overview recovered Option 2's cash flows $a_0=-50,000$ and
 
-$$a_1 = a_2$$
-
-$$= 6,000$$
+$$
+a_1 = a_2 = 6,000
+$$
 
 . Their undiscounted sum is
 
@@ -19981,13 +19071,13 @@ $$6,000 s^2 + 6,000 s - 50,000 = 0$$
 
 $$3s^2 + 3s - 25 = 0$$
 
-$$3^2 + 4 \\cdot 3 \\cdot 25$$
+$$
+3^2 + 4 \\cdot 3 \\cdot 25 = 309
+$$
 
-$$= 309$$
-
-$$-50,000 + 6,000 + 6,000$$
-
-$$= -38,000$$
+$$
+-50,000 + 6,000 + 6,000 = -38,000
+$$
 
 Compare the computed value with the claim (-\\$40,000). We have -\\$38,000. The two sides do not agree.
 
@@ -20010,18 +19100,14 @@ $$6,000 s^2 + 6,000 s - 50,000 = 0$$
 
 $$3s^2 + 3s - 25 = 0$$
 
-$$3^2 + 4 \\cdot 3 \\cdot 25$$
-
-$$= 309$$
+$$
+3^2 + 4 \\cdot 3 \\cdot 25 = 309
+$$
 
 $$r = \\frac{6,000}{50,000} - 1$$
 
-$$0.12 - 1$$
-
-$$= -0.88$$
-
 $$
-= -88\\%
+0.12 - 1 = -0.88 = -88\\%
 $$
 
 The overview recovered Option 2's two-year rate $r \\approx -58.84\\%$. Since $-88\\% < -58.84\\%$, the truncated project has an even lower internal rate.
@@ -20135,15 +19221,7 @@ So the statement is True.`,
 Apply the financial identity that produces the quantity named in the claim:
 
 $$
-r_B = \\frac{81,200}{70,000} - 1
-$$
-
-$$
-= 0.16
-$$
-
-$$
-= 16\\%
+r_B = \\frac{81,200}{70,000} - 1 = 0.16 = 16\\%
 $$
 
 The computed value is approximately 16%, which matches the claim.
@@ -20169,13 +19247,13 @@ $$88,000 s^2 + 54,000 s - 120,000 = 0$$
 
 $$44s^2 + 27s - 60 = 0$$
 
-$$27^2 + 4 \\cdot 44 \\cdot 60$$
+$$
+27^2 + 4 \\cdot 44 \\cdot 60 = 729 + 10,560
+$$
 
-$$= 729 + 10,560$$
-
-$$27^2 + 4 \\cdot 44 \\cdot 60$$
-
-$$= 11,289$$
+$$
+27^2 + 4 \\cdot 44 \\cdot 60 = 11,289
+$$
 
 $$16\\% > 11.04\\%$$
 
@@ -20186,23 +19264,19 @@ So the statement is True.`,
 
 Net present value discounts each design's cash flows at $13\\%$. For Design A:
 
-$$(1.13)^2$$
+$$
+(1.13)^2 = 1.2769
+$$
 
-$$= 1.2769$$
-
-$$NPV_A = -120,000 + \\frac{54,000}{1.13} + \\frac{88,000}{1.2769}$$
-
-$$= -120,000 + 47,787.61 + 68,916.91$$
-
-$$= -3,295.48$$
+$$
+NPV_A = -120,000 + \\frac{54,000}{1.13} + \\frac{88,000}{1.2769} = -120,000 + 47,787.61 + 68,916.91 = -3,295.48
+$$
 
 For Design B:
 
-$$NPV_B = -70,000 + \\frac{81,200}{1.13}$$
-
-$$= -70,000 + 71,858.41$$
-
-$$= 1,858.41$$
+$$
+NPV_B = -70,000 + \\frac{81,200}{1.13} = -70,000 + 71,858.41 = 1,858.41
+$$
 
 The claim needs $NPV_A < 0$ and $NPV_B > 0$. We have $-3,295.48 < 0$ and $1,858.41 > 0$.
 
@@ -20215,12 +19289,8 @@ $$22s^2 + 11s - 30 = 0$$
 
 The discriminant is
 
-$$11^2 + 4 \\cdot 22 \\cdot 30$$
-
-$$= 121 + 2,640$$
-
 $$
-= 2,761
+11^2 + 4 \\cdot 22 \\cdot 30 = 121 + 2,640 = 2,761
 $$
 
 $$\\sqrt{2,761} \\approx 52.545$$

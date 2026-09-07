@@ -606,9 +606,9 @@ $$4^{\\frac{1}{2}}=2$$
 
 $$2^{1}=2$$
 
-$$\\frac{(2A)(4s)^{\\frac{1}{2}}}{(2A)s^{\\frac{1}{2}}}=2$$
-
-$$=2$$
+$$
+\\frac{(2A)(4s)^{\\frac{1}{2}}}{(2A)s^{\\frac{1}{2}}}=2 =2
+$$
 
 The ratio stays $2$. Doubling $A$ would double every output, not this scale factor.
 
@@ -889,9 +889,9 @@ $$x=0$$
 
  the denominator is
 
-$$\\sqrt{0}=0,$$ and division by zero is undefined. The transform has no value at
+$$\\sqrt{0}=0,$$
 
-$$x=0.$$
+ and division by zero is undefined. The transform has no value at
 
 The computed figure disagrees with the claim.
 
@@ -12709,7 +12709,9 @@ Read the exponent from the overview before comparing growth rates.
 
 Upkeep overtakes benefit when
 
-$$12n^{\\frac{1}{2}}=2n,$$ so
+$$12n^{\\frac{1}{2}}=2n,$$
+
+ so
 
 $$n=36$$
 
@@ -12719,7 +12721,7 @@ $$N'(n)=6n^{-\\frac{1}{2}}-2$$
 
 which is negative for every $n>9$. Past the crossing at
 
-$$n=36,$$ the net is already negative and still falling, so planting more trees cannot restore a positive net.
+ the net is already negative and still falling, so planting more trees cannot restore a positive net.
 
 The net stays negative after upkeep overtakes benefit.
 
