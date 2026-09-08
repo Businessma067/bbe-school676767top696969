@@ -2920,9 +2920,9 @@
     ],
     "tactical_explanations": [
       "Unhappy buyers walk away. If the product disappointed them, the next purchase usually goes to someone else — or nowhere at all.\n\nSo the statement is True.",
-      "When a purchase meets expectations, many customers stick with the brand and buy again. That is the loyalty path the objective set relies on.\n\nSo the statement is True.",
+      "Satisfied customers often stick and buy again — that is the loyalty path.\n\nSo the statement is True.",
       "Satisfaction and repurchase are tightly linked. Calling them unrelated cuts the main reason firms chase satisfaction objectives in the first place.\n\nA dairy buyer who hated the last carton rarely returns for another.\n\nSo the statement is False.",
-      "Satisfaction sits in the same objective pack as sales and loyalty, not in a sealed box of its own.\n\nHappy customers buy again (sales) and stay (loyalty); miss satisfaction and those targets wobble together.\n\nSo the statement is True.",
+      "Satisfaction sits in the same objective pack as sales and loyalty, not in a sealed box of its own.\n\nHappy customers buy again (sales) and stay (loyalty). Miss satisfaction and those targets wobble together — a sportswear line that fits poorly will not keep reorder volume no matter how polished the loyalty app looks.\n\nThe objectives reinforce one another rather than competing for a single slot on the plan.\n\nSo the statement is True.",
       "Marketing objectives only make sense once you know what customers want. Wishes-and-needs analysis comes first; then you can set targets that actually fit the market.\n\nSo the statement is True."
     ],
     "difficulty_level": "5/5",
@@ -3006,8 +3006,8 @@
       false
     ],
     "tactical_explanations": [
-      "Repeat purchase does not make satisfaction optional — it is often the result of satisfaction working. Treating repurchase as proof that satisfaction targets are unnecessary misreads the objective set.\n\nSo the statement is False.",
-      "Among marketing objectives is making sure customers are content enough to think about buying again. That contentment target is explicit, not optional fluff.\n\nSo the statement is True.",
+      "Repeat purchase does not make satisfaction optional — it is often the result of satisfaction working.\n\nTreating repurchase as proof that satisfaction targets are unnecessary misreads the objective set. A dairy buyer who keeps buying only while the milk stays good is evidence for satisfaction, not against chasing it.\n\nSo the statement is False.",
+      "Marketing objectives include making customers content enough to consider buying again.\n\nSo the statement is True.",
       "Rising dissatisfaction is a warning light: delivery or marketing may be missing the stated aims. Ignore the signal and share and sales usually follow downward.\n\nSo the statement is True.",
       "Prioritising profit does not kick satisfaction out of the objective set. Profitability and satisfaction are pursued together, not as substitutes.\n\nSo the statement is False.",
       "A small price cut rarely converts a dissatisfied buyer into a repeater. Disappointment about quality or fit tends to outweigh a modest discount.\n\nSo the statement is False."
@@ -3124,8 +3124,8 @@
     "tactical_explanations": [
       "One purchase does not tick the satisfaction box. The hardware buyer who never returns has not fulfilled that objective for the chain.\n\nSo the statement is False.",
       "Habit does not make dissatisfaction harmless. Unhappy customers eventually leave, so satisfaction objectives are not optional.\n\nSo the statement is False.",
-      "Satisfaction and profitability can coexist. Loyal, happy buyers support revenue; the objectives are complementary, not mutually exclusive.\n\nSo the statement is False.",
-      "A rising complaint trend is evidence the satisfaction objective is slipping. Managers treat that as a miss, not noise.\n\nSo the statement is True.",
+      "Satisfaction and profitability can coexist. Loyal, happy hardware buyers support revenue; the objectives are complementary, not mutually exclusive.\n\nWarehouse costs still need covering, and retained customers help do that without treating satisfaction as the enemy of profit.\n\nSo the statement is False.",
+      "Rising complaints mean the satisfaction objective is slipping.\n\nSo the statement is True.",
       "Satisfaction surveys are a standard way to judge whether marketing objectives are working. Calling them irrelevant ignores a core feedback loop.\n\nSo the statement is False."
     ],
     "difficulty_level": "5/5",
@@ -3240,9 +3240,9 @@
     "tactical_explanations": [
       "Satisfied customers buy again by choice, not because a contract forces them. Legal compulsion is not the driver.\n\nSo the statement is False.",
       "Market analysis of needs lets the firm align the product with satisfaction goals. That alignment is how objectives stay realistic.\n\nSo the statement is True.",
-      "Sales are not advertising-only. Satisfaction shapes repeat volume; calling the two unrelated ignores that channel.\n\nSo the statement is False.",
+      "Sales are not advertising-only. Satisfaction shapes repeat volume; calling the two unrelated ignores that channel.\n\nA bakery can spend heavily on ads and still lose sales if the last loaf disappointed — spend does not replace experience.\n\nSo the statement is False.",
       "High satisfaction does not license ignoring share. Competitors still move, and share remains a separate competitiveness check.\n\nSo the statement is False.",
-      "Dissatisfaction pushes buyers toward rivals, not toward more of your range. It harms long-run sales rather than improving them.\n\nSo the statement is False."
+      "Dissatisfaction pushes buyers toward rivals, not toward more of your range.\n\nSo the statement is False."
     ],
     "difficulty_level": "2/5",
     "tier": "full"
@@ -3354,10 +3354,10 @@
       true
     ],
     "tactical_explanations": [
-      "Even a satisfied bakery customer may switch if a rival’s USP is stronger. Satisfaction lowers the risk of exit; it does not lock buyers forever.\n\nSo the statement is False.",
+      "Even a satisfied bakery customer may switch if a rival’s USP is stronger. Satisfaction lowers exit risk; it does not lock buyers forever.\n\nA craftsmanship claim from a neighbour can still pull a happy regular across the street.\n\nSo the statement is False.",
       "Maxing production volume is not the same as hitting satisfaction objectives. Making more loaves does not mean buyers are content.\n\nSo the statement is False.",
       "A USP means the product stands out as different — not that it is identical to every similar item on every feature.\n\nSo the statement is False.",
-      "A trial promotion can spike sales, then collapse if the product disappoints. Dissatisfaction after the trial undoes the short-term gain.\n\nSo the statement is True.",
+      "A trial promotion can spike sales, then collapse if the product disappoints.\n\nSo the statement is True.",
       "Satisfaction objectives push the firm to deliver what differentiation messaging promised. The claim and the experience have to match.\n\nSo the statement is True."
     ],
     "difficulty_level": "3/5",
@@ -3470,10 +3470,10 @@
       false
     ],
     "tactical_explanations": [
-      "Promotion and customer perception can absolutely help build a USP. How the product is presented shapes uniqueness in buyers’ minds.\n\nSo the statement is False.",
+      "Promotion and perception help build a USP. How the product is presented shapes uniqueness in buyers’ minds.\n\nSo the statement is False.",
       "A USP is not “worse but cheaper.” It is about standing out as different or better in a way customers value — price alone is not the definition.\n\nSo the statement is False.",
       "Firms create USPs to attract loyal customers, not to avoid them. The claim that businesses avoid USPs for that reason is backwards.\n\nSo the statement is False.",
-      "When satisfaction is high, buyers are less tempted by rivals’ price cuts. That stabilises sales under promotional attack.\n\nSo the statement is True.",
+      "When satisfaction is high, buyers are less tempted by rivals’ price cuts. That stabilises sales under promotional attack — the furniture shopper who trusts the craftsmanship guarantee is harder to peel away with a weekend discount elsewhere.\n\nSo the statement is True.",
       "Brand-building supports differentiation; it does not make every product look the same. The statement reverses the role of branding.\n\nSo the statement is False."
     ],
     "difficulty_level": "5/5",
@@ -3644,11 +3644,11 @@
       true
     ],
     "tactical_explanations": [
-      "Biggest advertising spend does not equal a USP. The message and the perceived difference matter; raw media budget alone does not meet the objective.\n\nSo the statement is False.",
+      "Biggest advertising spend does not equal a USP. The message and the perceived difference matter; raw media budget alone does not meet the objective.\n\nA cosmetics launch can outspend rivals and still feel generic if the story never names what makes the range different.\n\nSo the statement is False.",
       "Differentiation joins sales and profit on the objective list — it does not replace them. Firms still need volume and margins.\n\nSo the statement is False.",
       "A USP does not require a patent. Perceived uniqueness from design, service, or promotion can be valid without an invention filing.\n\nSo the statement is False.",
       "Brand loyalty and USP aims work together. Attracting loyal buyers through uniqueness is complementary, not mutually exclusive.\n\nSo the statement is False.",
-      "With a USP, customers may see the product as special, unique, or better than the rest. That customer perception is exactly what the objective seeks.\n\nSo the statement is True."
+      "With a USP, customers may see the product as special, unique, or better than the rest.\n\nSo the statement is True."
     ],
     "difficulty_level": "2/5",
     "tier": "full"
@@ -3818,9 +3818,9 @@
       true
     ],
     "tactical_explanations": [
-      "Even with a legal monopoly, brand-building can still matter for trust and recognition. Calling it unnecessary is too absolute.\n\nSo the statement is False.",
+      "Even with a legal monopoly, brand-building can still matter for trust and recognition. Calling it unnecessary is too absolute — buyers still need to know why the offer exists and what it stands for.\n\nSo the statement is False.",
       "Differentiation objectives push customers to see the offer as unlike substitutes. That “unlike” perception is the goal.\n\nSo the statement is True.",
-      "A strong brand can convince customers the product is better than the rest. Belief and preference follow recognition.\n\nSo the statement is True.",
+      "A strong brand can convince customers the product is better than the rest.\n\nSo the statement is True.",
       "A firm can emphasise both delivery speed and quality. Multiple USP angles can coexist rather than cancel each other.\n\nSo the statement is False.",
       "Creating a USP is listed among recognised marketing objectives in the textbook overview.\n\nSo the statement is True."
     ],
@@ -4139,9 +4139,9 @@
     "tactical_explanations": [
       "Market share and satisfaction percentage are different measures. Share is relative sales weight; satisfaction is experience quality.\n\nSo the statement is False.",
       "Share objectives are set with competitors in view. Ignoring rivals empties the meaning of relative share.\n\nSo the statement is False.",
-      "During intense rivalry, maintaining share can be an explicit marketing objective for the hotel group and similar firms.\n\nSo the statement is True.",
+      "During intense rivalry, maintaining share can be an explicit marketing objective.\n\nSo the statement is True.",
       "Share is the firm’s portion of total sales in the defined market. That slice definition is standard.\n\nSo the statement is True.",
-      "Share can fall while absolute sales rise if the total market grows faster. Declining share does not always mean falling absolute sales.\n\nSo the statement is False."
+      "Share can fall while absolute sales rise if the total market grows faster. Declining share does not always mean falling absolute sales — a boutique hotel chain can book more nights and still lose slice when the whole city tourism market expands faster.\n\nSo the statement is False."
     ],
     "difficulty_level": "5/5",
     "tier": "full"
@@ -4284,8 +4284,8 @@
     "tactical_explanations": [
       "Share and sales volume often move together, not always in opposite directions. The claim of permanent opposition is wrong.\n\nSo the statement is False.",
       "Competitiveness indicators include market share; staff headcount alone does not replace it.\n\nSo the statement is False.",
-      "Losing share to a rival suggests satisfaction or differentiation problems — not that satisfaction objectives were exceeded.\n\nSo the statement is False.",
-      "Plans may set a minimum share threshold to stay competitive. That floor is a concrete marketing objective.\n\nSo the statement is True.",
+      "Losing share to a rival suggests satisfaction or differentiation problems — not that satisfaction objectives were exceeded.\n\nIf guests migrate to a competitor’s personalised service story, that is a miss on holding the experience edge, not proof you over-delivered on satisfaction.\n\nSo the statement is False.",
+      "Plans may set a minimum share threshold to stay competitive.\n\nSo the statement is True.",
       "Share objectives are for commercial firms as well as other organisations — not only government agencies.\n\nSo the statement is False."
     ],
     "difficulty_level": "3/5",
@@ -4398,11 +4398,11 @@
       true
     ],
     "tactical_explanations": [
-      "Marketing plans routinely set share targets next to volume and profit goals. The three sit on one planning sheet.\n\nSo the statement is True.",
+      "Plans set share targets next to volume and profit goals.\n\nSo the statement is True.",
       "Share is measured from sales in the market, not from production-cost currency. Cost is an input; share is a sales-based slice.\n\nSo the statement is False.",
       "Shrinking your own share does not automatically improve competitiveness. Competitiveness usually tracks holding or gaining relative weight.\n\nSo the statement is False.",
       "Share objectives apply to large and small competitors alike — not only when the firm is the smallest.\n\nSo the statement is False.",
-      "If the whole market grows faster than you do, share can fall even while your sales rise. That divergence is common in expanding categories.\n\nSo the statement is True."
+      "If the whole market grows faster than you do, share can fall even while your sales rise. That divergence is common in expanding skincare categories where every brand is growing and relative weight still slips.\n\nSo the statement is True."
     ],
     "difficulty_level": "4/5",
     "tier": "full"
@@ -4543,8 +4543,8 @@
       false
     ],
     "tactical_explanations": [
-      "Awareness impressions alone do not meet sales objectives. Sales require actual purchases, not only reach counts.\n\nSo the statement is False.",
-      "Gaining share can strengthen distributor negotiating power in some industries. Relative weight brings commercial leverage.\n\nSo the statement is True.",
+      "Awareness impressions alone do not meet sales objectives. Sales require actual purchases, not only reach counts.\n\nA bakery can hit impression targets on social media and still miss volume if trays stay unsold.\n\nSo the statement is False.",
+      "Gaining share can strengthen distributor negotiating power in some industries.\n\nSo the statement is True.",
       "High inventory without sales does not cover production costs from revenue. Costs are covered by selling, not by stock sitting in the warehouse.\n\nSo the statement is False.",
       "Increasing sales is tightly related to profitability objectives — revenue is the path toward covering costs and earning profit.\n\nSo the statement is False.",
       "Sales volume objectives apply whether or not the firm also pursues share. The two can travel together.\n\nSo the statement is False."
@@ -4804,10 +4804,10 @@
       false
     ],
     "tactical_explanations": [
-      "Maintaining or increasing sales is a marketing objective because sales generate the revenue the business needs.\n\nSo the statement is True.",
+      "Maintaining or increasing sales is a marketing objective because sales generate revenue.\n\nSo the statement is True.",
       "Satisfaction and sales growth are compatible. Raising sales does not become impossible when satisfaction is pursued.\n\nSo the statement is False.",
       "Differentiated products still need sales revenue to fund production costs. Differentiation does not block that funding role.\n\nSo the statement is False.",
-      "Sales matter because revenues must cover production costs. That coverage role is why volume sits among the objectives.\n\nSo the statement is True.",
+      "Sales matter because revenues must cover production costs. That coverage role is why volume sits among the objectives — without sell-through, roasting and packaging outlays have no revenue offset.\n\nSo the statement is True.",
       "Forecasts without actual sales do not meet sales volume objectives. Objectives are judged on realised volume.\n\nSo the statement is False."
     ],
     "difficulty_level": "5/5",
@@ -4891,8 +4891,8 @@
       true
     ],
     "tactical_explanations": [
-      "Higher sales do not drive production costs per unit to zero. Unit costs may fall with scale, but they do not vanish.\n\nSo the statement is False.",
-      "A promotional discount is a common tool to lift short-term sales volume. Price incentives move units now.\n\nSo the statement is True.",
+      "Higher sales do not drive production costs per unit to zero. Unit costs may fall with scale, but they do not vanish — beans, energy, and labour still sit on the cost sheet.\n\nSo the statement is False.",
+      "A promotional discount can lift short-term sales volume.\n\nSo the statement is True.",
       "Sales growth objectives link to loyalty from satisfaction — repeat buyers add volume. Calling them unrelated cuts that path.\n\nSo the statement is False.",
       "A temporary spike from a failed product does not satisfy long-term sales objectives. Sustainability matters.\n\nSo the statement is False.",
       "Sales targets are set after analysing the market the firm wishes to serve. Analysis precedes the numbers.\n\nSo the statement is True."
@@ -5007,10 +5007,10 @@
       false
     ],
     "tactical_explanations": [
-      "Rising sales does not make profitability objectives unnecessary. Costs and margins still need managing.\n\nSo the statement is False.",
+      "Rising sales does not make profitability objectives unnecessary. Costs and margins still need managing — occupancy can climb while discounting wipes out the surplus the hotel group wanted.\n\nSo the statement is False.",
       "When supply constraints cap growth, a maintain-volume sales objective can still apply. Hold what you can sell.\n\nSo the statement is True.",
       "Building distribution centres without sell-through does not fulfil sales objectives. Capacity is not purchases.\n\nSo the statement is False.",
-      "Advertising spend may aim to raise sales of a specific product line. That line-level volume aim is standard.\n\nSo the statement is True.",
+      "Advertising may aim to raise sales of a specific product line.\n\nSo the statement is True.",
       "High satisfaction without sales does not create profit. Profit needs revenue after costs, not goodwill alone.\n\nSo the statement is False."
     ],
     "difficulty_level": "2/5",
@@ -5065,11 +5065,11 @@
       false
     ],
     "tactical_explanations": [
-      "Rising sales with rising costs can still miss profit objectives. Volume without margin control fails the profit aim.\n\nSo the statement is True.",
+      "Rising sales with rising costs can still miss profit objectives. Volume without margin control fails the profit aim — more bags roasted at a loss do not reimburse owners.\n\nSo the statement is True.",
       "Profitability objectives include reimbursing owners for invested capital. Excluding that reimbursement misreads the aim.\n\nSo the statement is False.",
       "Marketing objectives do include profitability — not awareness alone. Profit sits in the objective set.\n\nSo the statement is False.",
       "Falling sales does not let a firm raise profit without cost changes. Shrinking revenue usually pressures profit unless costs fall too.\n\nSo the statement is False.",
-      "Retained profit is earnings kept in the business, not short-term trade credit from suppliers. Those are different financing ideas.\n\nSo the statement is False."
+      "Retained profit is earnings kept in the business, not short-term trade credit from suppliers.\n\nSo the statement is False."
     ],
     "difficulty_level": "4/5",
     "tier": "full"
